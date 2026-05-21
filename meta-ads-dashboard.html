@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meta Ads Dashboard · Creatomate</title>
+  <style>
+    /* ── Reset & Base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --surface2: #22263a;
+      --border: #2e3248;
+      --accent: #5b6af0;
+      --accent-hover: #6e7cf5;
+      --success: #22c55e;
+      --warning: #f59e0b;
+      --error: #ef4444;
+      --text: #e8eaf6;
+      --muted: #8b8fa8;
+      --radius: 10px;
+    }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* ── Layout ── */
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 32px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    header .logo { font-size: 20px; font-weight: 700; }
+    header .logo span { color: var(--accent); }
+    header .badge {
+      background: var(--accent);
+      color: #fff;
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 20px;
+      font-weight: 600;
+    }
+    header .spacer { flex: 1; }
+    header .api-status {
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--muted);
+    }
+    header .dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--muted);
+    }
+    header .dot.ok { background: var(--success); }
+
+    main { display: grid; grid-template-columns: 340px 1fr; min-height: calc(100vh - 57px); }
+
+    /* ── Sidebar ── */
+    .sidebar {
+      background: var(--surface);
+      border-right: 1px solid var(--border);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      overflow-y: auto;
+    }
+    .section-title {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+    label { display: block; font-size: 13px; color: var(--muted); margin-bottom: 5px; }
+    input[type=text], input[type=password], input[type=url], textarea, select {
+      width: 100%;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      color: var(--text);
+      padding: 9px 12px;
+      font-size: 14px;
+      outline: none;
+      transition: border-color .2s;
+    }
+    input:focus, textarea:focus, select:focus { border-color: var(--accent); }
+    textarea { resize: vertical; min-height: 80px; }
+    .api-key-wrap { position: relative; }
+    .api-key-wrap input { padding-right: 44px; }
+    .toggle-vis {
+      position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
+      background: none; border: none; cursor: pointer; color: var(--muted);
+      font-size: 16px; padding: 2px;
+    }
+    .toggle-vis:hover { color: var(--text); }
+
+    /* Format cards */
+    .format-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+    .format-card {
+      border: 2px solid var(--border);
+      border-radius: var(--radius);
+      padding: 10px 6px;
+      text-align: center;
+      cursor: pointer;
+      transition: all .2s;
+      background: var(--surface2);
+    }
+    .format-card:hover { border-color: var(--accent); }
+    .format-card.active { border-color: var(--accent); background: rgba(91,106,240,.12); }
+    .format-card .icon {
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 6px;
+      background: var(--border);
+      border-radius: 4px;
+    }
+    .format-card .label { font-size: 11px; color: var(--muted); }
+    .format-card.active .label { color: var(--accent); }
+
+    /* Color picker row */
+    .color-row { display: flex; gap: 8px; align-items: center; }
+    .color-row input[type=color] {
+      width: 40px; height: 38px;
+      padding: 2px 4px;
+      border-radius: var(--radius);
+      cursor: pointer;
+    }
+    .color-row input[type=text] { flex: 1; }
+
+    /* ── Generate button ── */
+    .btn {
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      width: 100%; padding: 12px;
+      border: none; border-radius: var(--radius);
+      font-size: 15px; font-weight: 600; cursor: pointer;
+      transition: all .2s;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+    }
+    .btn-primary:hover:not(:disabled) { background: var(--accent-hover); transform: translateY(-1px); }
+    .btn-primary:disabled { opacity: .5; cursor: not-allowed; transform: none; }
+    .btn-secondary {
+      background: var(--surface2);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .btn-secondary:hover:not(:disabled) { border-color: var(--accent); }
+
+    /* ── Content area ── */
+    .content {
+      padding: 28px 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      overflow-y: auto;
+    }
+    .page-title { font-size: 22px; font-weight: 700; }
+    .page-subtitle { font-size: 14px; color: var(--muted); margin-top: 4px; }
+
+    /* ── Renders grid ── */
+    .renders-header {
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .renders-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+    }
+    .render-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: border-color .2s;
+    }
+    .render-card:hover { border-color: var(--accent); }
+    .render-thumb {
+      width: 100%; aspect-ratio: 1;
+      background: var(--surface2);
+      display: flex; align-items: center; justify-content: center;
+      position: relative;
+    }
+    .render-thumb video {
+      width: 100%; height: 100%; object-fit: cover;
+    }
+    .render-thumb .overlay {
+      position: absolute; inset: 0;
+      background: rgba(0,0,0,.5);
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; transition: opacity .2s;
+    }
+    .render-card:hover .overlay { opacity: 1; }
+    .play-btn {
+      width: 48px; height: 48px;
+      background: rgba(255,255,255,.9);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; border: none;
+      font-size: 18px;
+    }
+    .render-info { padding: 12px; }
+    .render-info .name {
+      font-size: 13px; font-weight: 600;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .render-info .meta { font-size: 11px; color: var(--muted); margin-top: 4px; display: flex; gap: 8px; }
+    .status-pill {
+      display: inline-flex; align-items: center; gap: 4px;
+      font-size: 11px; padding: 2px 8px; border-radius: 20px;
+    }
+    .status-pill.queued { background: rgba(245,158,11,.15); color: var(--warning); }
+    .status-pill.rendering { background: rgba(91,106,240,.15); color: var(--accent); }
+    .status-pill.succeeded { background: rgba(34,197,94,.15); color: var(--success); }
+    .status-pill.failed { background: rgba(239,68,68,.15); color: var(--error); }
+
+    .render-actions { display: flex; gap: 8px; padding: 0 12px 12px; }
+    .render-actions a, .render-actions button {
+      flex: 1; text-align: center; font-size: 12px;
+      padding: 6px; border-radius: 6px;
+      text-decoration: none; cursor: pointer; border: none;
+      transition: background .2s;
+    }
+    .btn-download {
+      background: var(--accent); color: #fff;
+    }
+    .btn-download:hover { background: var(--accent-hover); }
+    .btn-copy {
+      background: var(--surface2); color: var(--text);
+      border: 1px solid var(--border) !important;
+    }
+    .btn-copy:hover { border-color: var(--accent) !important; }
+
+    /* Loading spinner */
+    .spinner {
+      width: 36px; height: 36px;
+      border: 3px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin .7s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* Progress bar */
+    .progress-bar {
+      height: 3px; background: var(--border); border-radius: 2px; margin-top: 6px; overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%; background: var(--accent);
+      border-radius: 2px;
+      transition: width .4s ease;
+    }
+
+    /* Empty state */
+    .empty-state {
+      grid-column: 1 / -1;
+      text-align: center; padding: 60px 20px;
+      color: var(--muted);
+    }
+    .empty-state .icon { font-size: 48px; margin-bottom: 12px; }
+    .empty-state p { font-size: 14px; }
+
+    /* Toast */
+    #toast-container {
+      position: fixed; bottom: 24px; right: 24px;
+      display: flex; flex-direction: column; gap: 8px; z-index: 9999;
+    }
+    .toast {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 12px 16px;
+      font-size: 13px;
+      min-width: 240px;
+      animation: slide-in .3s ease;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .toast.success { border-color: var(--success); }
+    .toast.error { border-color: var(--error); }
+    @keyframes slide-in { from { opacity: 0; transform: translateY(8px); } }
+
+    /* Modal (video preview) */
+    .modal-backdrop {
+      display: none;
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,.8);
+      z-index: 1000;
+      align-items: center; justify-content: center;
+    }
+    .modal-backdrop.open { display: flex; }
+    .modal {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      max-width: 90vw;
+      display: flex; flex-direction: column; gap: 12px;
+    }
+    .modal video { max-width: 80vw; max-height: 70vh; border-radius: 6px; }
+    .modal-close {
+      align-self: flex-end;
+      background: none; border: none; color: var(--muted);
+      font-size: 20px; cursor: pointer;
+    }
+    .modal-close:hover { color: var(--text); }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      main { grid-template-columns: 1fr; }
+      .sidebar { border-right: none; border-bottom: 1px solid var(--border); }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── Header ── -->
+<header>
+  <div class="logo">Meta Ads <span>Dashboard</span></div>
+  <div class="badge">Creatomate</div>
+  <div class="spacer"></div>
+  <div class="api-status">
+    <div class="dot" id="api-dot"></div>
+    <span id="api-status-text">Sin conectar</span>
+  </div>
+</header>
+
+<main>
+  <!-- ── Sidebar ── -->
+  <aside class="sidebar">
+
+    <!-- API Key -->
+    <div>
+      <div class="section-title">Configuración API</div>
+      <label for="api-key">Creatomate API Key</label>
+      <div class="api-key-wrap">
+        <input type="password" id="api-key" placeholder="xxxxxxxxxxxxxxxxxxxxxxxx" />
+        <button class="toggle-vis" onclick="toggleApiVis()" title="Mostrar/ocultar">👁</button>
+      </div>
+      <small style="color:var(--muted);font-size:11px;margin-top:6px;display:block">
+        Obtén tu key en <strong>creatomate.com → Settings → API</strong>
+      </small>
+    </div>
+
+    <!-- Format -->
+    <div>
+      <div class="section-title">Formato del video</div>
+      <div class="format-grid">
+        <div class="format-card active" data-format="1:1" onclick="selectFormat(this,'1:1')">
+          <div class="icon" style="width:32px;height:32px;"></div>
+          <div class="label">1:1<br>Feed</div>
+        </div>
+        <div class="format-card" data-format="9:16" onclick="selectFormat(this,'9:16')">
+          <div class="icon" style="width:20px;height:36px;"></div>
+          <div class="label">9:16<br>Reels</div>
+        </div>
+        <div class="format-card" data-format="16:9" onclick="selectFormat(this,'16:9')">
+          <div class="icon" style="width:40px;height:24px;"></div>
+          <div class="label">16:9<br>Landscape</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Template ID -->
+    <div>
+      <div class="section-title">Template</div>
+      <label for="template-id">Template ID <em style="font-style:normal;color:var(--muted)">(opcional)</em></label>
+      <input type="text" id="template-id" placeholder="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" />
+      <small style="color:var(--muted);font-size:11px;margin-top:6px;display:block">
+        Deja vacío para usar la plantilla de texto básico
+      </small>
+    </div>
+
+    <!-- Content -->
+    <div>
+      <div class="section-title">Contenido del anuncio</div>
+      <label for="headline">Titular</label>
+      <input type="text" id="headline" placeholder="Ej: 50% de descuento hoy" value="¡Oferta especial!" />
+
+      <label for="subtext" style="margin-top:12px">Subtexto</label>
+      <input type="text" id="subtext" placeholder="Ej: Solo por tiempo limitado" value="Solo por tiempo limitado" />
+
+      <label for="cta" style="margin-top:12px">Call to Action</label>
+      <input type="text" id="cta" placeholder="Ej: Comprar ahora" value="Comprar ahora" />
+
+      <label for="media-url" style="margin-top:12px">URL de imagen/video de fondo</label>
+      <input type="url" id="media-url" placeholder="https://..." />
+    </div>
+
+    <!-- Colors -->
+    <div>
+      <div class="section-title">Colores</div>
+      <label>Color primario</label>
+      <div class="color-row">
+        <input type="color" id="color-primary" value="#5b6af0" oninput="syncColor('primary')" />
+        <input type="text" id="color-primary-hex" value="#5b6af0" oninput="syncColorHex('primary')" maxlength="7" />
+      </div>
+      <label style="margin-top:10px">Color de texto</label>
+      <div class="color-row">
+        <input type="color" id="color-text" value="#ffffff" oninput="syncColor('text')" />
+        <input type="text" id="color-text-hex" value="#ffffff" oninput="syncColorHex('text')" maxlength="7" />
+      </div>
+    </div>
+
+    <!-- Duration -->
+    <div>
+      <label for="duration">Duración (segundos)</label>
+      <select id="duration">
+        <option value="5">5s</option>
+        <option value="10" selected>10s</option>
+        <option value="15">15s</option>
+        <option value="30">30s</option>
+      </select>
+    </div>
+
+    <!-- Generate -->
+    <button class="btn btn-primary" id="generate-btn" onclick="generateVideo()">
+      <span>▶</span> Generar video
+    </button>
+
+  </aside>
+
+  <!-- ── Content ── -->
+  <section class="content">
+    <div>
+      <div class="page-title">Videos generados</div>
+      <div class="page-subtitle">Los renders aparecen aquí. El estado se actualiza automáticamente.</div>
+    </div>
+
+    <div class="renders-header">
+      <span id="render-count" style="font-size:13px;color:var(--muted)">0 renders</span>
+      <button class="btn btn-secondary" style="width:auto;padding:8px 16px;font-size:13px" onclick="clearRenders()">
+        Limpiar lista
+      </button>
+    </div>
+
+    <div class="renders-grid" id="renders-grid">
+      <div class="empty-state">
+        <div class="icon">🎬</div>
+        <p>Aún no hay renders.<br>Completa el formulario y pulsa <strong>Generar video</strong>.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ── Video modal ── -->
+<div class="modal-backdrop" id="modal" onclick="closeModal(event)">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <video id="modal-video" controls></video>
+  </div>
+</div>
+
+<!-- ── Toast container ── -->
+<div id="toast-container"></div>
+
+<script>
+  /* ─────────────────────────────────────────────
+     State
+  ───────────────────────────────────────────── */
+  const CREATOMATE_API = 'https://api.creatomate.com/v1';
+  let renders = [];
+  let pollingTimers = {};
+  let selectedFormat = '1:1';
+
+  /* ─────────────────────────────────────────────
+     Helpers
+  ───────────────────────────────────────────── */
+  function apiKey() { return document.getElementById('api-key').value.trim(); }
+
+  function toast(msg, type = 'info') {
+    const el = document.createElement('div');
+    el.className = `toast ${type}`;
+    const icons = { success: '✅', error: '❌', info: 'ℹ️' };
+    el.innerHTML = `<span>${icons[type] || ''}</span><span>${msg}</span>`;
+    document.getElementById('toast-container').appendChild(el);
+    setTimeout(() => el.remove(), 4000);
+  }
+
+  function toggleApiVis() {
+    const inp = document.getElementById('api-key');
+    inp.type = inp.type === 'password' ? 'text' : 'password';
+  }
+
+  function selectFormat(card, fmt) {
+    document.querySelectorAll('.format-card').forEach(c => c.classList.remove('active'));
+    card.classList.add('active');
+    selectedFormat = fmt;
+  }
+
+  function syncColor(name) {
+    const val = document.getElementById(`color-${name}`).value;
+    document.getElementById(`color-${name}-hex`).value = val;
+  }
+
+  function syncColorHex(name) {
+    const val = document.getElementById(`color-${name}-hex`).value;
+    if (/^#[0-9a-fA-F]{6}$/.test(val))
+      document.getElementById(`color-${name}`).value = val;
+  }
+
+  function setApiStatus(ok) {
+    document.getElementById('api-dot').className = 'dot' + (ok ? ' ok' : '');
+    document.getElementById('api-status-text').textContent = ok ? 'Conectado' : 'Sin conectar';
+  }
+
+  /* ─────────────────────────────────────────────
+     Format → output size
+  ───────────────────────────────────────────── */
+  function formatToSize(fmt) {
+    return { '1:1': [1080, 1080], '9:16': [1080, 1920], '16:9': [1920, 1080] }[fmt] || [1080, 1080];
+  }
+
+  /* ─────────────────────────────────────────────
+     Build Creatomate render payload
+  ───────────────────────────────────────────── */
+  function buildPayload() {
+    const headline   = document.getElementById('headline').value   || 'Titular';
+    const subtext    = document.getElementById('subtext').value    || '';
+    const cta        = document.getElementById('cta').value        || 'Más info';
+    const mediaUrl   = document.getElementById('media-url').value  || '';
+    const colorPri   = document.getElementById('color-primary-hex').value || '#5b6af0';
+    const colorTxt   = document.getElementById('color-text-hex').value   || '#ffffff';
+    const duration   = parseInt(document.getElementById('duration').value, 10);
+    const templateId = document.getElementById('template-id').value.trim();
+    const [w, h]     = formatToSize(selectedFormat);
+
+    // If user has a template, use template-based render
+    if (templateId) {
+      return {
+        template_id: templateId,
+        modifications: {
+          'Headline': headline,
+          'Subtext': subtext,
+          'CTA': cta,
+          ...(mediaUrl ? { 'Background': mediaUrl } : {}),
+          'PrimaryColor': colorPri,
+          'TextColor': colorTxt,
+        }
+      };
+    }
+
+    // Otherwise, build a dynamic scene from scratch
+    const elements = [
+      // Background
+      {
+        type: 'rectangle',
+        width: '100%',
+        height: '100%',
+        fill_color: colorPri,
+        ...(mediaUrl ? { type: 'video', source: mediaUrl, fit: 'cover', width: '100%', height: '100%' } : {}),
+      },
+      // Headline text
+      {
+        type: 'text',
+        track: 1,
+        time: 0,
+        duration: duration,
+        text: headline,
+        width: '85%',
+        x_anchor: '50%',
+        y_anchor: '50%',
+        x: '50%',
+        y: '45%',
+        font_size: w > 1000 ? 72 : 54,
+        font_weight: '700',
+        fill_color: colorTxt,
+        text_alignment: 'center',
+        animations: [{ time: 'start', duration: 0.5, easing: 'quadratic-out', type: 'text-slide', direction: 'up' }],
+      },
+      // Subtext
+      {
+        type: 'text',
+        track: 2,
+        time: 0.3,
+        duration: duration - 0.3,
+        text: subtext,
+        width: '80%',
+        x_anchor: '50%',
+        y_anchor: '50%',
+        x: '50%',
+        y: '60%',
+        font_size: w > 1000 ? 36 : 28,
+        fill_color: colorTxt,
+        text_alignment: 'center',
+        opacity: 0.85,
+      },
+      // CTA button (rectangle + text)
+      {
+        type: 'rectangle',
+        track: 3,
+        time: 0.5,
+        duration: duration - 0.5,
+        x: '50%',
+        y: '78%',
+        x_anchor: '50%',
+        y_anchor: '50%',
+        width: 320,
+        height: 72,
+        border_radius: 36,
+        fill_color: colorTxt,
+        animations: [{ time: 'start', duration: 0.4, easing: 'back-out', type: 'scale', fade: false }],
+      },
+      {
+        type: 'text',
+        track: 4,
+        time: 0.5,
+        duration: duration - 0.5,
+        text: cta,
+        x: '50%',
+        y: '78%',
+        x_anchor: '50%',
+        y_anchor: '50%',
+        width: 300,
+        font_size: 32,
+        font_weight: '700',
+        fill_color: colorPri,
+        text_alignment: 'center',
+      },
+    ];
+
+    return {
+      output_format: 'mp4',
+      width: w,
+      height: h,
+      duration: duration,
+      elements,
+    };
+  }
+
+  /* ─────────────────────────────────────────────
+     Generate video
+  ───────────────────────────────────────────── */
+  async function generateVideo() {
+    if (!apiKey()) { toast('Ingresa tu API key de Creatomate', 'error'); return; }
+
+    const btn = document.getElementById('generate-btn');
+    btn.disabled = true;
+    btn.innerHTML = '<div class="spinner" style="width:20px;height:20px;border-width:2px"></div> Generando…';
+
+    try {
+      const payload = buildPayload();
+      const res = await fetch(`${CREATOMATE_API}/renders`, {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${apiKey()}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (res.status === 401) { toast('API key inválida o sin permisos', 'error'); setApiStatus(false); return; }
+      if (!res.ok) {
+        const err = await res.json().catch(() => ({}));
+        toast(`Error ${res.status}: ${err.message || res.statusText}`, 'error');
+        return;
+      }
+
+      setApiStatus(true);
+      const data = await res.json();
+      // API may return array or single object
+      const list = Array.isArray(data) ? data : [data];
+      list.forEach(addRender);
+      toast(`Render enviado (${list.length} video${list.length > 1 ? 's' : ''})`, 'success');
+    } catch (e) {
+      toast(`Error de red: ${e.message}`, 'error');
+    } finally {
+      btn.disabled = false;
+      btn.innerHTML = '<span>▶</span> Generar video';
+    }
+  }
+
+  /* ─────────────────────────────────────────────
+     Render card management
+  ───────────────────────────────────────────── */
+  function addRender(render) {
+    renders.unshift(render);
+    refreshGrid();
+    if (!['succeeded', 'failed'].includes(render.status)) startPolling(render.id);
+  }
+
+  function refreshGrid() {
+    const grid = document.getElementById('renders-grid');
+    document.getElementById('render-count').textContent = `${renders.length} render${renders.length !== 1 ? 's' : ''}`;
+
+    if (renders.length === 0) {
+      grid.innerHTML = `<div class="empty-state"><div class="icon">🎬</div><p>Aún no hay renders.<br>Completa el formulario y pulsa <strong>Generar video</strong>.</p></div>`;
+      return;
+    }
+
+    grid.innerHTML = renders.map(r => renderCard(r)).join('');
+  }
+
+  function renderCard(r) {
+    const statusHtml = statusPill(r.status);
+    const progress = r.progress ? `<div class="progress-bar"><div class="progress-fill" style="width:${r.progress * 100}%"></div></div>` : '';
+    const thumbHtml = r.url
+      ? `<video src="${r.url}" muted loop preload="metadata" style="width:100%;height:100%;object-fit:cover"></video>`
+      : `<div class="spinner"></div>`;
+    const actions = r.url
+      ? `<div class="render-actions">
+           <a class="btn-download" href="${r.url}" download target="_blank">⬇ Descargar</a>
+           <button class="btn-copy" onclick="copyUrl('${r.url}')">🔗 Copiar URL</button>
+         </div>`
+      : '';
+    const formatLabel = r.width && r.height ? `${r.width}×${r.height}` : '';
+
+    return `
+      <div class="render-card" id="card-${r.id}">
+        <div class="render-thumb" ${r.url ? `onclick="openModal('${r.url}')" style="cursor:pointer"` : ''}>
+          ${thumbHtml}
+          ${r.url ? `<div class="overlay"><button class="play-btn">▶</button></div>` : ''}
+        </div>
+        <div class="render-info">
+          <div class="name">${r.id}</div>
+          <div class="meta">
+            ${statusHtml}
+            ${formatLabel ? `<span>${formatLabel}</span>` : ''}
+          </div>
+          ${progress}
+        </div>
+        ${actions}
+      </div>`;
+  }
+
+  function statusPill(status) {
+    const labels = { queued: '⏳ En cola', rendering: '⚙ Renderizando', succeeded: '✅ Listo', failed: '❌ Error' };
+    return `<span class="status-pill ${status}">${labels[status] || status}</span>`;
+  }
+
+  /* ─────────────────────────────────────────────
+     Polling
+  ───────────────────────────────────────────── */
+  function startPolling(id) {
+    let attempt = 0;
+    pollingTimers[id] = setInterval(async () => {
+      attempt++;
+      try {
+        const res = await fetch(`${CREATOMATE_API}/renders/${id}`, {
+          headers: { 'Authorization': `Bearer ${apiKey()}` }
+        });
+        if (!res.ok) return;
+        const updated = await res.json();
+        const idx = renders.findIndex(r => r.id === id);
+        if (idx !== -1) renders[idx] = updated;
+        refreshGrid();
+        if (['succeeded', 'failed'].includes(updated.status)) {
+          clearInterval(pollingTimers[id]);
+          delete pollingTimers[id];
+          const msg = updated.status === 'succeeded' ? '¡Video listo para descargar!' : 'El render falló.';
+          toast(msg, updated.status === 'succeeded' ? 'success' : 'error');
+        }
+      } catch (_) { /* ignore transient network errors */ }
+      if (attempt > 60) { clearInterval(pollingTimers[id]); delete pollingTimers[id]; }
+    }, 5000); // poll every 5 s
+  }
+
+  /* ─────────────────────────────────────────────
+     UI Actions
+  ───────────────────────────────────────────── */
+  function copyUrl(url) {
+    navigator.clipboard.writeText(url).then(() => toast('URL copiada', 'success'));
+  }
+
+  function clearRenders() {
+    Object.values(pollingTimers).forEach(clearInterval);
+    pollingTimers = {};
+    renders = [];
+    refreshGrid();
+  }
+
+  function openModal(url) {
+    document.getElementById('modal-video').src = url;
+    document.getElementById('modal').classList.add('open');
+  }
+
+  function closeModal(e) {
+    if (!e || e.target === document.getElementById('modal') || e.currentTarget.classList.contains('modal-close')) {
+      document.getElementById('modal').classList.remove('open');
+      document.getElementById('modal-video').pause();
+      document.getElementById('modal-video').src = '';
+    }
+  }
+</script>
+</body>
+</html>
