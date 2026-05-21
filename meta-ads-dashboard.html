@@ -424,6 +424,20 @@
     document.getElementById('json-preview').textContent = JSON.stringify(payload, null, 2);
   }
 
+  /* ── Google Drive URL converter ── */
+  function convertMediaUrl(url) {
+    if (!url) return url;
+    // https://drive.google.com/file/d/FILE_ID/view  →  direct download
+    const fileMatch = url.match(/drive\.google\.com\/file\/d\/([^\/]+)/);
+    if (fileMatch) return `https://drive.google.com/uc?export=download&id=${fileMatch[1]}`;
+    // https://drive.google.com/open?id=FILE_ID
+    const openMatch = url.match(/drive\.google\.com\/open\?id=([^&]+)/);
+    if (openMatch) return `https://drive.google.com/uc?export=download&id=${openMatch[1]}`;
+    return url;
+  }
+
+  function isGoogleDrive(url) { return url && url.includes('drive.google.com'); }
+
   /* ── Payload builder ── */
   function formatToSize(fmt) { return {'1:1':[1080,1080],'9:16':[1080,1920],'16:9':[1920,1080]}[fmt]||[1080,1080]; }
 
@@ -435,23 +449,26 @@
     }
 
     // Dynamic
-    const headline = document.getElementById('headline').value || 'Titular';
-    const subtext  = document.getElementById('subtext').value  || '';
-    const cta      = document.getElementById('cta').value      || 'Más info';
-    const mediaUrl = document.getElementById('media-url').value || '';
-    const colorPri = document.getElementById('color-primary-hex').value || '#5b6af0';
-    const colorTxt = document.getElementById('color-text-hex').value   || '#ffffff';
-    const duration = parseInt(document.getElementById('duration').value, 10);
-    const [w, h]   = formatToSize(selectedFormat);
+    const headline  = document.getElementById('headline').value || 'Titular';
+    const subtext   = document.getElementById('subtext').value  || '';
+    const cta       = document.getElementById('cta').value      || 'Más info';
+    const rawUrl    = document.getElementById('media-url').value.trim();
+    const mediaUrl  = convertMediaUrl(rawUrl);
+    const colorPri  = document.getElementById('color-primary-hex').value || '#5b6af0';
+    const colorTxt  = document.getElementById('color-text-hex').value   || '#ffffff';
+    const duration  = parseInt(document.getElementById('duration').value, 10);
+    const [w, h]    = formatToSize(selectedFormat);
+
+    const bg = mediaUrl
+      ? { track: 0, type: 'image', source: mediaUrl, fit: 'cover', width: '100%', height: '100%' }
+      : { track: 0, type: 'rectangle', width: '100%', height: '100%', fill_color: colorPri };
 
     const elements = [
-      mediaUrl
-        ? { type: 'video', source: mediaUrl, fit: 'cover', width: '100%', height: '100%' }
-        : { type: 'rectangle', width: '100%', height: '100%', fill_color: colorPri },
-      { type: 'text', track: 1, time: 0, duration, text: headline, width: '85%', x: '50%', y: '45%', x_anchor: '50%', y_anchor: '50%', font_size: w > 1000 ? 72 : 54, font_weight: '700', fill_color: colorTxt, text_alignment: 'center', animations: [{ time: 'start', duration: 0.5, easing: 'quadratic-out', type: 'text-slide', direction: 'up' }] },
-      { type: 'text', track: 2, time: 0.3, duration: duration - 0.3, text: subtext, width: '80%', x: '50%', y: '60%', x_anchor: '50%', y_anchor: '50%', font_size: w > 1000 ? 36 : 28, fill_color: colorTxt, text_alignment: 'center', opacity: 0.85 },
-      { type: 'rectangle', track: 3, time: 0.5, duration: duration - 0.5, x: '50%', y: '78%', x_anchor: '50%', y_anchor: '50%', width: 320, height: 72, border_radius: 36, fill_color: colorTxt, animations: [{ time: 'start', duration: 0.4, easing: 'back-out', type: 'scale', fade: false }] },
-      { type: 'text', track: 4, time: 0.5, duration: duration - 0.5, text: cta, x: '50%', y: '78%', x_anchor: '50%', y_anchor: '50%', width: 300, font_size: 32, font_weight: '700', fill_color: colorPri, text_alignment: 'center' },
+      bg,
+      { track: 1, type: 'text', time: 0, duration, text: headline, width: '85%', x: '50%', y: '42%', x_anchor: '50%', y_anchor: '50%', font_size: w > 1000 ? 68 : 52, font_weight: '700', fill_color: colorTxt, text_alignment: 'center', animations: [{ time: 'start', duration: 0.5, easing: 'quadratic-out', type: 'text-slide', direction: 'up' }] },
+      { track: 2, type: 'text', time: 0.3, duration: duration - 0.3, text: subtext, width: '80%', x: '50%', y: '58%', x_anchor: '50%', y_anchor: '50%', font_size: w > 1000 ? 34 : 26, fill_color: colorTxt, text_alignment: 'center', opacity: 0.85 },
+      { track: 3, type: 'shape', shape: 'rectangle', time: 0.5, duration: duration - 0.5, x: '50%', y: '78%', x_anchor: '50%', y_anchor: '50%', width: '40%', height: '8%', border_radius: '50%', fill_color: colorTxt, animations: [{ time: 'start', duration: 0.4, easing: 'back-out', type: 'scale', fade: false }] },
+      { track: 4, type: 'text', time: 0.5, duration: duration - 0.5, text: cta, x: '50%', y: '78%', x_anchor: '50%', y_anchor: '50%', width: '38%', font_size: w > 1000 ? 30 : 24, font_weight: '700', fill_color: colorPri, text_alignment: 'center' },
     ];
 
     return { output_format: 'mp4', width: w, height: h, duration, elements };
@@ -465,6 +482,14 @@
     if (!payload) {
       toast(currentMode === 'template' ? 'Ingresa el Template ID' : 'Completa los campos', 'error');
       return;
+    }
+
+    // Warn about Google Drive URLs (converted but may still fail on large files)
+    if (currentMode === 'dynamic') {
+      const rawUrl = document.getElementById('media-url').value.trim();
+      if (isGoogleDrive(rawUrl)) {
+        toast('URL de Google Drive convertida automáticamente. Si falla, sube la imagen a Imgur, Cloudinary o un link directo.', 'info');
+      }
     }
 
     const btn = document.getElementById('generate-btn');
@@ -517,10 +542,13 @@
 
   function renderCard(r) {
     const statusHtml = `<span class="status-pill ${r.status}">${{queued:'⏳ En cola',rendering:'⚙ Renderizando',succeeded:'✅ Listo',failed:'❌ Error'}[r.status]||r.status}</span>`;
-    const progress = r.progress ? `<div class="progress-bar"><div class="progress-fill" style="width:${r.progress*100}%"></div></div>` : '';
+    const progress = (r.status === 'rendering' && r.progress != null)
+      ? `<div class="progress-bar"><div class="progress-fill" style="width:${r.progress*100}%"></div></div>` : '';
     const thumb = r.url
       ? `<video src="${r.url}" muted loop preload="metadata" style="width:100%;height:100%;object-fit:cover"></video>`
-      : `<div class="spinner"></div>`;
+      : r.status === 'failed'
+        ? `<div style="font-size:32px">❌</div>`
+        : `<div class="spinner"></div>`;
     const overlay = r.url ? `<div class="overlay"><button class="play-btn">▶</button></div>` : '';
     const actions = r.url
       ? `<div class="render-actions">
@@ -529,6 +557,9 @@
          </div>` : '';
     const size = r.width && r.height ? `${r.width}×${r.height}` : '';
     const tmplLabel = r.template_id ? r.template_id.slice(0,8) + '…' : 'Dinámico';
+    const errorMsg = r.status === 'failed' && r.error
+      ? `<div style="font-size:11px;color:var(--error);margin-top:6px;padding:6px 8px;background:rgba(239,68,68,.08);border-radius:6px;word-break:break-word">${r.error}</div>`
+      : '';
 
     return `<div class="render-card" id="card-${r.id}">
       <div class="render-thumb" ${r.url ? `onclick="openModal('${r.url}')" style="cursor:pointer"` : ''}>${thumb}${overlay}</div>
@@ -537,6 +568,7 @@
         <div class="name">${r.id}</div>
         <div class="meta">${statusHtml}${size ? `<span>${size}</span>` : ''}</div>
         ${progress}
+        ${errorMsg}
       </div>
       ${actions}
     </div>`;
