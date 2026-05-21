@@ -596,8 +596,8 @@
     const overlay = r.url ? `<div class="overlay"><button class="play-btn">▶</button></div>` : '';
     const actions = r.url
       ? `<div class="render-actions">
-           <a class="btn-download" href="${r.url}" download target="_blank">⬇ Descargar</a>
-           <button class="btn-copy-url" onclick="copyUrl('${r.url}')">🔗 URL</button>
+           <a class="btn-download" href="${r.url}" target="_blank" rel="noopener">⬇ Abrir video</a>
+           <button class="btn-copy-url" onclick="copyUrl('${r.url}')">🔗 Copiar URL</button>
          </div>` : '';
     const size = r.width && r.height ? `${r.width}×${r.height}` : '';
     const tmplLabel = r.template_id ? r.template_id.slice(0,8) + '…' : 'Dinámico';
