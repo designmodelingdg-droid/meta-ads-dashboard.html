@@ -459,59 +459,71 @@
     const duration  = parseInt(document.getElementById('duration').value, 10);
     const [w, h]    = formatToSize(selectedFormat);
 
+    // Build elements with Creatomate v2 compatible structure
     const elements = [];
 
-    // Track 0: background (color or image)
+    // Background
     if (mediaUrl) {
-      elements.push({ track: 0, type: 'image', source: mediaUrl, width: w, height: h, fit: 'cover' });
-    } else {
-      elements.push({ track: 0, type: 'rectangle', width: w, height: h, fill_color: colorPri });
-    }
-
-    // Track 1: dark overlay so text is readable over any image
-    if (mediaUrl) {
-      elements.push({ track: 1, type: 'rectangle', width: w, height: h, fill_color: '#000000', opacity: 0.45 });
-    }
-
-    // Track 2: headline
-    elements.push({
-      track: 2, type: 'text', time: 0, duration,
-      text: headline,
-      width: Math.round(w * 0.85), x: Math.round(w / 2), y: Math.round(h * 0.42),
-      x_anchor: '50%', y_anchor: '50%',
-      font_size: Math.round(w * 0.065), font_weight: '700',
-      fill_color: colorTxt, text_alignment: 'center',
-    });
-
-    // Track 3: subtext
-    if (subtext) {
       elements.push({
-        track: 3, type: 'text', time: 0.3, duration: duration - 0.3,
-        text: subtext,
-        width: Math.round(w * 0.80), x: Math.round(w / 2), y: Math.round(h * 0.58),
-        x_anchor: '50%', y_anchor: '50%',
-        font_size: Math.round(w * 0.032), fill_color: colorTxt, text_alignment: 'center', opacity: 0.9,
+        type: 'image', track: 1,
+        source: mediaUrl,
+        width: '100%', height: '100%', fit: 'cover',
+      });
+      // Dark overlay for text readability
+      elements.push({
+        type: 'rectangle', track: 2,
+        width: '100%', height: '100%',
+        fill_color: '#000000', opacity: 0.4,
+      });
+    } else {
+      elements.push({
+        type: 'rectangle', track: 1,
+        width: '100%', height: '100%',
+        fill_color: colorPri,
       });
     }
 
-    // Track 4: CTA button (rectangle)
+    // Headline
     elements.push({
-      track: 4, type: 'rectangle',
-      time: 0.4, duration: duration - 0.4,
-      width: Math.round(w * 0.55), height: Math.round(h * 0.07),
-      x: Math.round(w / 2), y: Math.round(h * 0.78),
+      type: 'text', track: 3,
+      text: headline,
+      width: '80%',
+      x: '50%', y: '40%',
       x_anchor: '50%', y_anchor: '50%',
-      border_radius: 60, fill_color: colorTxt,
+      font_size: '6 vmin', font_weight: '700',
+      fill_color: colorTxt, text_alignment: 'center',
     });
 
-    // Track 5: CTA text
+    // Subtext
+    if (subtext) {
+      elements.push({
+        type: 'text', track: 4,
+        text: subtext,
+        width: '75%',
+        x: '50%', y: '57%',
+        x_anchor: '50%', y_anchor: '50%',
+        font_size: '3 vmin',
+        fill_color: colorTxt, text_alignment: 'center', opacity: 0.9,
+      });
+    }
+
+    // CTA pill background
     elements.push({
-      track: 5, type: 'text',
-      time: 0.4, duration: duration - 0.4,
-      text: cta,
-      width: Math.round(w * 0.52), x: Math.round(w / 2), y: Math.round(h * 0.78),
+      type: 'rectangle', track: 5,
+      width: '50%', height: '7%',
+      x: '50%', y: '77%',
       x_anchor: '50%', y_anchor: '50%',
-      font_size: Math.round(w * 0.03), font_weight: '700',
+      border_radius: 100, fill_color: colorTxt,
+    });
+
+    // CTA text
+    elements.push({
+      type: 'text', track: 6,
+      text: cta,
+      width: '48%',
+      x: '50%', y: '77%',
+      x_anchor: '50%', y_anchor: '50%',
+      font_size: '2.8 vmin', font_weight: '700',
       fill_color: colorPri, text_alignment: 'center',
     });
 
@@ -594,7 +606,7 @@
         ? `<div style="font-size:32px">❌</div>`
         : `<div class="spinner"></div>`;
     const overlay = r.url ? `<div class="overlay"><button class="play-btn">▶</button></div>` : '';
-    const actions = r.url
+    const actions = r.status === 'succeeded' && r.url
       ? `<div class="render-actions">
            <a class="btn-download" href="${r.url}" target="_blank" rel="noopener">⬇ Abrir video</a>
            <button class="btn-copy-url" onclick="copyUrl('${r.url}')">🔗 Copiar URL</button>
