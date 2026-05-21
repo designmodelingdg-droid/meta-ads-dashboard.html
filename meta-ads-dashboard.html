@@ -459,17 +459,61 @@
     const duration  = parseInt(document.getElementById('duration').value, 10);
     const [w, h]    = formatToSize(selectedFormat);
 
-    const bg = mediaUrl
-      ? { track: 0, type: 'image', source: mediaUrl, fit: 'cover', width: '100%', height: '100%' }
-      : { track: 0, type: 'rectangle', width: '100%', height: '100%', fill_color: colorPri };
+    const elements = [];
 
-    const elements = [
-      bg,
-      { track: 1, type: 'text', time: 0, duration, text: headline, width: '85%', x: '50%', y: '42%', x_anchor: '50%', y_anchor: '50%', font_size: w > 1000 ? 68 : 52, font_weight: '700', fill_color: colorTxt, text_alignment: 'center', animations: [{ time: 'start', duration: 0.5, easing: 'quadratic-out', type: 'text-slide', direction: 'up' }] },
-      { track: 2, type: 'text', time: 0.3, duration: duration - 0.3, text: subtext, width: '80%', x: '50%', y: '58%', x_anchor: '50%', y_anchor: '50%', font_size: w > 1000 ? 34 : 26, fill_color: colorTxt, text_alignment: 'center', opacity: 0.85 },
-      { track: 3, type: 'shape', shape: 'rectangle', time: 0.5, duration: duration - 0.5, x: '50%', y: '78%', x_anchor: '50%', y_anchor: '50%', width: '40%', height: '8%', border_radius: '50%', fill_color: colorTxt, animations: [{ time: 'start', duration: 0.4, easing: 'back-out', type: 'scale', fade: false }] },
-      { track: 4, type: 'text', time: 0.5, duration: duration - 0.5, text: cta, x: '50%', y: '78%', x_anchor: '50%', y_anchor: '50%', width: '38%', font_size: w > 1000 ? 30 : 24, font_weight: '700', fill_color: colorPri, text_alignment: 'center' },
-    ];
+    // Track 0: background (color or image)
+    if (mediaUrl) {
+      elements.push({ track: 0, type: 'image', source: mediaUrl, width: w, height: h, fit: 'cover' });
+    } else {
+      elements.push({ track: 0, type: 'rectangle', width: w, height: h, fill_color: colorPri });
+    }
+
+    // Track 1: dark overlay so text is readable over any image
+    if (mediaUrl) {
+      elements.push({ track: 1, type: 'rectangle', width: w, height: h, fill_color: '#000000', opacity: 0.45 });
+    }
+
+    // Track 2: headline
+    elements.push({
+      track: 2, type: 'text', time: 0, duration,
+      text: headline,
+      width: Math.round(w * 0.85), x: Math.round(w / 2), y: Math.round(h * 0.42),
+      x_anchor: '50%', y_anchor: '50%',
+      font_size: Math.round(w * 0.065), font_weight: '700',
+      fill_color: colorTxt, text_alignment: 'center',
+    });
+
+    // Track 3: subtext
+    if (subtext) {
+      elements.push({
+        track: 3, type: 'text', time: 0.3, duration: duration - 0.3,
+        text: subtext,
+        width: Math.round(w * 0.80), x: Math.round(w / 2), y: Math.round(h * 0.58),
+        x_anchor: '50%', y_anchor: '50%',
+        font_size: Math.round(w * 0.032), fill_color: colorTxt, text_alignment: 'center', opacity: 0.9,
+      });
+    }
+
+    // Track 4: CTA button (rectangle)
+    elements.push({
+      track: 4, type: 'rectangle',
+      time: 0.4, duration: duration - 0.4,
+      width: Math.round(w * 0.55), height: Math.round(h * 0.07),
+      x: Math.round(w / 2), y: Math.round(h * 0.78),
+      x_anchor: '50%', y_anchor: '50%',
+      border_radius: 60, fill_color: colorTxt,
+    });
+
+    // Track 5: CTA text
+    elements.push({
+      track: 5, type: 'text',
+      time: 0.4, duration: duration - 0.4,
+      text: cta,
+      width: Math.round(w * 0.52), x: Math.round(w / 2), y: Math.round(h * 0.78),
+      x_anchor: '50%', y_anchor: '50%',
+      font_size: Math.round(w * 0.03), font_weight: '700',
+      fill_color: colorPri, text_alignment: 'center',
+    });
 
     return { output_format: 'mp4', width: w, height: h, duration, elements };
   }
@@ -557,8 +601,11 @@
          </div>` : '';
     const size = r.width && r.height ? `${r.width}×${r.height}` : '';
     const tmplLabel = r.template_id ? r.template_id.slice(0,8) + '…' : 'Dinámico';
-    const errorMsg = r.status === 'failed' && r.error
-      ? `<div style="font-size:11px;color:var(--error);margin-top:6px;padding:6px 8px;background:rgba(239,68,68,.08);border-radius:6px;word-break:break-word">${r.error}</div>`
+    const errorMsg = r.status === 'failed'
+      ? `<div style="font-size:11px;color:var(--error);margin-top:6px;padding:6px 8px;background:rgba(239,68,68,.08);border-radius:6px;word-break:break-word">
+           ${r.error || 'Error desconocido'}
+           <br><button onclick="fetchErrorDetail('${r.id}')" style="margin-top:4px;background:none;border:none;color:var(--accent);font-size:11px;cursor:pointer;padding:0;text-decoration:underline">Ver detalle completo</button>
+         </div>`
       : '';
 
     return `<div class="render-card" id="card-${r.id}">
@@ -594,6 +641,18 @@
       } catch (_) {}
       if (attempt > 72) { clearInterval(pollingTimers[id]); delete pollingTimers[id]; }
     }, 5000);
+  }
+
+  /* ── Fetch error detail ── */
+  async function fetchErrorDetail(id) {
+    try {
+      const res = await fetch(`${API_BASE}/renders/${id}`, { headers: { 'Authorization': `Bearer ${apiKey()}` } });
+      const r = await res.json();
+      const detail = r.error || JSON.stringify(r, null, 2);
+      alert(`Error del render ${id.slice(0,8)}:\n\n${detail}`);
+    } catch (e) {
+      alert('No se pudo obtener el detalle: ' + e.message);
+    }
   }
 
   /* ── UI actions ── */
