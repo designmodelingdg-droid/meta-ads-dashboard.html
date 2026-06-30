@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design Modeling Academy — Propuesta Home (con IA)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f6f6f5; --ink:#0d0d0d; --muted:#5b5b5b; --line:#e2e2e0;
+    --card:#ffffff; --accent:#3b35e0; --accent-soft:#eceaff; --radius:18px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Poppins',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+  section{padding:84px 0;border-bottom:1px solid var(--line)}
+  .eyebrow{font-size:.82rem;font-weight:600;letter-spacing:.06em;color:var(--muted);text-transform:capitalize;margin-bottom:14px}
+  h1{font-size:clamp(2.1rem,5vw,3.5rem);font-weight:800;line-height:1.08;letter-spacing:-.02em}
+  h2{font-size:clamp(1.6rem,3.4vw,2.4rem);font-weight:700;letter-spacing:-.01em;line-height:1.15}
+  h3{font-size:1.06rem;font-weight:600}
+  p.lead{color:var(--muted);font-size:1.05rem;max-width:760px}
+  .muted{color:var(--muted)}
+  .center{text-align:center}
+  .center p.lead{margin-left:auto;margin-right:auto}
+  /* buttons */
+  .btn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--ink);background:transparent;color:var(--ink);
+       padding:13px 24px;border-radius:12px;font-family:inherit;font-size:.95rem;font-weight:500;cursor:pointer;text-decoration:none;transition:.18s}
+  .btn:hover{background:var(--ink);color:#fff}
+  .btn.primary{background:var(--ink);color:#fff}
+  .btn.primary:hover{opacity:.85}
+  .btn.accent{background:var(--accent);border-color:var(--accent);color:#fff}
+  .btn.accent:hover{opacity:.9}
+  .btn-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+  .btn-row.center{justify-content:center}
+  /* nav */
+  header.nav{position:sticky;top:0;z-index:50;background:rgba(246,246,245,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+  .logo{font-weight:800;letter-spacing:-.02em;font-size:1.05rem}
+  .logo span{color:var(--accent)}
+  .nav nav{display:flex;gap:26px;font-size:.9rem}
+  .nav nav a{color:var(--ink);text-decoration:none;opacity:.8}
+  .nav nav a:hover{opacity:1}
+  @media(max-width:820px){.nav nav{display:none}}
+  /* hero */
+  .hero{padding:90px 0 70px}
+  .hero .tag{display:inline-flex;align-items:center;gap:8px;background:var(--accent-soft);color:var(--accent);font-weight:600;font-size:.8rem;padding:7px 14px;border-radius:999px;margin-bottom:22px}
+  .hero h1{max-width:14ch}
+  .hero p.lead{margin-top:22px}
+  .trust{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:40px;padding-top:26px;border-top:1px solid var(--line)}
+  .trust span{font-size:.84rem;color:var(--muted);display:flex;align-items:center;gap:7px}
+  .trust span::before{content:"✔";color:var(--accent);font-weight:700}
+  /* stats */
+  .stats{display:grid;grid-template-columns:repeat(5,1fr);gap:24px;text-align:center}
+  .stats .n{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800}
+  .stats .l{font-size:.85rem;color:var(--muted);margin-top:6px}
+  @media(max-width:820px){.stats{grid-template-columns:repeat(2,1fr)}}
+  /* grids */
+  .grid{display:grid;gap:18px;margin-top:46px}
+  .g3{grid-template-columns:repeat(3,1fr)}
+  .g4{grid-template-columns:repeat(4,1fr)}
+  @media(max-width:980px){.g3,.g4{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.g3,.g4{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;transition:.18s}
+  .card:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(0,0,0,.06)}
+  .card .ico{width:42px;height:42px;border-radius:11px;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:1.1rem}
+  .card h3{margin-bottom:8px}
+  .card p{font-size:.92rem;color:var(--muted)}
+  .card .more{display:inline-block;margin-top:14px;font-size:.85rem;font-weight:600;color:var(--accent);text-decoration:none}
+  /* AI section */
+  .ai{background:var(--ink);color:#fff;border-bottom:none}
+  .ai .eyebrow{color:#b9b6ff}
+  .ai h2{max-width:20ch}
+  .ai p.lead{color:#bdbdbd}
+  .ai .card{background:#161616;border-color:#262626}
+  .ai .card h3{color:#fff}
+  .ai .card p{color:#a9a9a9}
+  .ai .card .ico{border-color:#333;background:#0d0d0d}
+  .ai .badge{display:inline-block;background:var(--accent);color:#fff;font-size:.72rem;font-weight:600;padding:5px 11px;border-radius:999px;margin-bottom:18px;letter-spacing:.04em}
+  /* split */
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  @media(max-width:820px){.split{grid-template-columns:1fr;gap:28px}}
+  .ph{background:#ededec;border:1px solid var(--line);border-radius:var(--radius);min-height:300px;display:flex;align-items:center;justify-content:center;color:#b3b3b3;font-size:.85rem}
+  .benefits{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:14px 24px;margin-top:6px}
+  @media(max-width:560px){.benefits{grid-template-columns:1fr}}
+  .benefits li{font-size:.92rem;font-weight:500;display:flex;gap:10px;align-items:flex-start}
+  .benefits li::before{content:"›";color:var(--accent);font-weight:800}
+  .benefits li.ai-b::after{content:"IA";font-size:.62rem;background:var(--accent-soft);color:var(--accent);padding:2px 7px;border-radius:999px;margin-left:6px;font-weight:700}
+  /* master band */
+  .band{background:var(--accent-soft);border:1px solid #ddd9ff;border-radius:var(--radius);padding:24px 28px;margin-top:22px;display:flex;gap:16px;align-items:center}
+  .band .bico{font-size:1.5rem}
+  .band b{color:var(--accent)}
+  /* credentials */
+  .creds{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:46px}
+  @media(max-width:980px){.creds{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.creds{grid-template-columns:1fr}}
+  .cred{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;text-align:center}
+  .cred .clogo{height:60px;display:flex;align-items:center;justify-content:center;color:#bdbdbd;font-size:.8rem;border:1px dashed var(--line);border-radius:10px;margin-bottom:14px}
+  .cred p{font-size:.86rem;font-weight:600}
+  .digital{margin-top:24px;background:var(--ink);color:#fff;border-radius:var(--radius);padding:30px;display:flex;gap:18px;align-items:center}
+  .digital .bico{font-size:1.8rem}
+  .digital p{color:#bdbdbd;font-size:.95rem;margin-top:4px}
+  .digital b{color:#fff}
+  /* faq */
+  .faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 28px;margin-top:40px}
+  @media(max-width:820px){.faq-grid{grid-template-columns:1fr}}
+  details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 20px}
+  details[open]{box-shadow:0 8px 22px rgba(0,0,0,.05)}
+  summary{font-weight:600;font-size:.95rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";font-size:1.3rem;color:var(--accent)}
+  details[open] summary::after{content:"–"}
+  details p{margin-top:12px;font-size:.9rem;color:var(--muted)}
+  .new-tag{font-size:.62rem;background:var(--accent);color:#fff;padding:2px 8px;border-radius:999px;margin-left:8px;vertical-align:middle;font-weight:700}
+  /* final cta */
+  .final{text-align:center;background:#fff}
+  .final h2{max-width:18ch;margin:0 auto}
+  /* footer note */
+  .note{background:#fffbe6;border:1px solid #f0e4a8;border-radius:12px;padding:14px 18px;font-size:.82rem;color:#7a6a16;margin-bottom:30px}
+  footer{padding:40px 0;text-align:center;color:var(--muted);font-size:.85rem}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap">
+    <div class="logo">Design Modeling <span>Academy</span></div>
+    <nav>
+      <a href="#areas">Áreas</a>
+      <a href="#ia">Soluciones IA</a>
+      <a href="#academia">Programas</a>
+      <a href="#credenciales">Credenciales</a>
+      <a href="#empresas">Empresas</a>
+    </nav>
+    <a href="#contacto" class="btn primary" style="padding:9px 18px">Solicitar asesoría</a>
+  </div>
+</header>
+
+<div class="wrap" style="padding-top:24px">
+  <div class="note">📝 <b>Preview de propuesta</b> — Maqueta navegable con los textos revisados y el tema de <b>IA</b> y <b>credenciales</b> integrados (enfoque equilibrado). Las zonas grises son imágenes/logos pendientes de reemplazar.</div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <span class="tag">✦ Formación + Inteligencia Artificial aplicada</span>
+    <h1>Formación profesional e inteligencia artificial aplicada a la Ingeniería, la Arquitectura y el BIM</h1>
+    <p class="lead">Aprende con instructores certificados, obtén credenciales internacionales y domina las soluciones con IA que ya están transformando la industria. Conocimiento aplicable a proyectos reales, desde cualquier parte del mundo.</p>
+    <div class="btn-row">
+      <a href="#academia" class="btn primary">Explorar cursos</a>
+      <a href="#contacto" class="btn">Solicitar asesoría</a>
+      <a href="#ia" class="btn accent">Ver soluciones con IA →</a>
+    </div>
+    <div class="trust">
+      <span>Centro Autorizado de Entrenamiento Autodesk</span>
+      <span>Autodesk Learning Partner</span>
+      <span>Certiport Authorized Testing Center</span>
+      <span>Certificaciones CYPE</span>
+      <span>Diploma Universitario Internacional</span>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section>
+  <div class="wrap">
+    <div class="stats">
+      <div><div class="n">+5.000</div><div class="l">Profesionales capacitados en todo el mundo</div></div>
+      <div><div class="n">+30</div><div class="l">Países confían en nuestra metodología</div></div>
+      <div><div class="n">+60</div><div class="l">Cursos y programas especializados</div></div>
+      <div><div class="n">5</div><div class="l">Acreditaciones internacionales</div></div>
+      <div><div class="n">100%</div><div class="l">Formación online con acompañamiento real</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- AREAS -->
+<section id="areas">
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow">Áreas de formación</div>
+      <h2>Encuentra el programa ideal según tu perfil profesional</h2>
+      <p class="lead">Explora nuestras áreas de especialización y desarrolla las competencias que hoy demanda la industria de la construcción, la ingeniería, la arquitectura y la transformación digital.</p>
+    </div>
+    <div class="grid g3">
+      <div class="card"><div class="ico">▦</div><h3>Diseño y Cálculo Estructural</h3><p>Domina el análisis, diseño y cálculo de estructuras de hormigón, acero, cimentaciones, puentes, tanques, edificios y proyectos industriales con software especializado.</p><a class="more" href="#">Ver cursos →</a></div>
+      <div class="card"><div class="ico">◫</div><h3>Modelado BIM y Arquitectura</h3><p>Desarrolla proyectos BIM desde la concepción hasta la documentación técnica con metodologías colaborativas y las herramientas líderes del mercado.</p><a class="more" href="#">Ver cursos →</a></div>
+      <div class="card"><div class="ico">⚙</div><h3>Instalaciones y MEP</h3><p>Especialízate en el modelado, coordinación y documentación de instalaciones mecánicas, eléctricas e hidrosanitarias bajo estándares BIM.</p><a class="more" href="#">Ver cursos →</a></div>
+      <div class="card"><div class="ico">▤</div><h3>Gestión, Costos y Planificación</h3><p>Optimiza la administración de proyectos con presupuestos, cronogramas, control de obra y metodologías de gestión eficiente.</p><a class="more" href="#">Ver cursos →</a></div>
+      <div class="card"><div class="ico">◷</div><h3>Diseño Mecánico e Industrial</h3><p>Desarrolla componentes, productos y soluciones industriales con herramientas avanzadas de diseño mecánico y modelado 3D.</p><a class="more" href="#">Ver cursos →</a></div>
+      <div class="card"><div class="ico">◎</div><h3>Marketing y Gestión Comercial</h3><p>Fortalece tus estrategias digitales, automatización comercial y gestión empresarial para impulsar tu crecimiento.</p><a class="more" href="#">Ver cursos →</a></div>
+      <div class="card" style="border-color:var(--accent);background:var(--accent-soft)"><div class="ico" style="border-color:var(--accent);color:var(--accent)">✦</div><h3>IA Aplicada a la Ingeniería y Arquitectura <span class="new-tag">Nuevo</span></h3><p>Integra inteligencia artificial, automatización y herramientas generativas en tus flujos de trabajo de diseño, cálculo, documentación y gestión de proyectos.</p><a class="more" href="#">Ver cursos →</a></div>
+    </div>
+    <div class="btn-row center"><a href="#" class="btn">Explorar todas las áreas</a></div>
+  </div>
+</section>
+
+<!-- AI SOLUTIONS -->
+<section id="ia" class="ai">
+  <div class="wrap">
+    <div class="badge">Soluciones inteligentes con IA</div>
+    <h2>No solo formamos profesionales: creamos las herramientas con IA que usan para trabajar</h2>
+    <p class="lead">Desarrollamos apps y soluciones inteligentes que aplican inteligencia artificial a los retos reales de ingenieros y arquitectos. Automatiza cálculos, acelera el modelado BIM, optimiza presupuestos y documenta proyectos en una fracción del tiempo, con herramientas creadas por quienes conocen la industria.</p>
+    <div class="grid g3">
+      <div class="card"><div class="ico">∑</div><h3>Cálculo estructural asistido por IA</h3><p>Predimensiona, verifica y documenta elementos estructurales con asistentes orientados a la normativa vigente.</p></div>
+      <div class="card"><div class="ico">◫</div><h3>Documentación BIM automática</h3><p>Genera planos, cómputos y memorias a partir de tu modelo y reduce horas de trabajo repetitivo.</p></div>
+      <div class="card"><div class="ico">$</div><h3>Presupuestos y cuantificación inteligente</h3><p>Estima costos, metrados y cronogramas con IA a partir de tus planos y modelos.</p></div>
+      <div class="card"><div class="ico">⚖</div><h3>Asistente normativo IA</h3><p>Consulta normas, reglamentos y criterios de diseño con un copiloto especializado en construcción, ingeniería y arquitectura.</p></div>
+      <div class="card"><div class="ico">✦</div><h3>Diseño generativo</h3><p>Explora cientos de alternativas de diseño optimizadas según tus restricciones de proyecto.</p></div>
+      <div class="card" style="display:flex;flex-direction:column;justify-content:center;align-items:flex-start;background:transparent;border-style:dashed">
+        <h3 style="margin-bottom:14px">¿Tienes un reto técnico?</h3>
+        <a href="#contacto" class="btn accent">Solicitar una demo</a>
+      </div>
+    </div>
+    <div class="btn-row"><a href="#contacto" class="btn accent">Descubrir nuestras soluciones IA</a></div>
+  </div>
+</section>
+
+<!-- ACADEMIA / PROGRAMAS -->
+<section id="academia">
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow">Academia</div>
+      <h2>Una formación diseñada para acompañarte en cada etapa de tu desarrollo profesional</h2>
+      <p class="lead">Nuestra academia organiza sus programas de forma progresiva para que comiences desde los fundamentos y avances hacia niveles de especialización internacional.</p>
+    </div>
+    <div class="grid g4">
+      <div class="card"><h3>Cursos</h3><p>Capacitación práctica enfocada en una habilidad o software específico para empezar a desarrollar competencias profesionales.</p></div>
+      <div class="card"><h3>Especializaciones</h3><p>Programas que integran varios cursos para profundizar en un área concreta y fortalecer tu perfil.</p></div>
+      <div class="card"><h3>Diplomados</h3><p>Formaciones completas orientadas al desarrollo integral de competencias técnicas y estratégicas, con reconocimiento académico.</p></div>
+      <div class="card" style="border-color:var(--ink)"><h3>Master</h3><p>Conocimientos avanzados, metodologías internacionales <b>e inteligencia artificial aplicada</b> a la ingeniería y la arquitectura, con acompañamiento especializado.</p></div>
+    </div>
+    <div class="band">
+      <div class="bico">✦</div>
+      <div><b>IA aplicada en cada Master.</b> Aprende a usar copilotos, automatizar flujos de trabajo y multiplicar tu productividad con las mismas herramientas de IA que la industria ya está adoptando.</div>
+    </div>
+    <div class="btn-row center"><a href="#" class="btn">Descubrir nuestros programas</a></div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section>
+  <div class="wrap split">
+    <div>
+      <div class="eyebrow">¿Por qué estudiar con Design Modeling Academy?</div>
+      <h2>Mucho más que una plataforma de cursos</h2>
+      <p class="lead" style="margin-top:18px">Formamos profesionales preparados para enfrentar los desafíos actuales de la industria mediante formación práctica, certificaciones reconocidas, herramientas con IA y acompañamiento continuo.</p>
+      <div class="btn-row"><a href="#contacto" class="btn">Contactar a un asesor</a></div>
+    </div>
+    <ul class="benefits">
+      <li>Formación basada en proyectos reales</li>
+      <li>Instructores certificados internacionalmente</li>
+      <li>Actualización permanente de contenidos</li>
+      <li>Acceso desde cualquier país</li>
+      <li>Material descargable</li>
+      <li>Comunidad profesional</li>
+      <li>Credenciales internacionales</li>
+      <li>Mentorías especializadas</li>
+      <li class="ai-b">Herramientas y soluciones con IA aplicadas</li>
+    </ul>
+  </div>
+</section>
+
+<!-- NOSOTROS -->
+<section>
+  <div class="wrap split">
+    <div class="ph">Imagen institucional</div>
+    <div>
+      <div class="eyebrow">Nosotros</div>
+      <h2>Formamos profesionales preparados para liderar la transformación digital de la industria</h2>
+      <p class="lead" style="margin-top:18px">Design Modeling Academy nace con el propósito de acercar educación técnica de alto nivel a profesionales de Latinoamérica y el mundo. Combinamos experiencia, alianzas internacionales, metodología práctica y desarrollo de soluciones con IA para ofrecer programas alineados con las necesidades reales del mercado laboral.</p>
+      <div class="btn-row"><a href="#" class="btn">Conoce nuestra historia</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- CREDENCIALES -->
+<section id="credenciales">
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow">Acreditaciones y credenciales</div>
+      <h2>Credenciales internacionales que respaldan tu crecimiento profesional</h2>
+      <p class="lead">Obtén credenciales reconocidas internacionalmente que fortalecen tu perfil y aumentan tus oportunidades laborales. Además, cada programa entrega credenciales digitales verificables que puedes compartir en LinkedIn y validar con un solo clic.</p>
+    </div>
+    <div class="creds">
+      <div class="cred"><div class="clogo">LOGO</div><p>Certificado Autodesk (ACU / ACC)</p></div>
+      <div class="cred"><div class="clogo">LOGO</div><p>Certificación Certiport</p></div>
+      <div class="cred"><div class="clogo">LOGO</div><p>Certificación oficial CYPE · avalada por CYPE España</p></div>
+      <div class="cred"><div class="clogo">LOGO</div><p>Diploma Universitario · Sabal University (EE. UU.)</p></div>
+      <div class="cred"><div class="clogo">LOGO</div><p>Certificado Internacional Design Modeling Academy</p></div>
+    </div>
+    <div class="digital">
+      <div class="bico">🔗</div>
+      <div><b>Credenciales digitales verificables.</b><p>Al finalizar recibes una insignia digital con verificación en línea: compártela en LinkedIn, tu CV o tu firma de correo, y deja que cualquier empleador confirme tu logro al instante.</p></div>
+    </div>
+    <div class="btn-row center"><a href="#" class="btn">Conocer las credenciales</a></div>
+  </div>
+</section>
+
+<!-- CTA BENEFICIOS -->
+<section class="final">
+  <div class="wrap">
+    <h2>Tu próxima oportunidad profesional comienza hoy</h2>
+    <p class="lead center" style="margin-top:18px">Accede a formación especializada, instructores certificados, credenciales internacionales, herramientas con IA y una comunidad que te acompañará en todo tu crecimiento profesional.</p>
+    <div class="btn-row center"><a href="#academia" class="btn primary">Comenzar ahora</a><a href="#contacto" class="btn">Hablar con un asesor</a></div>
+  </div>
+</section>
+
+<!-- EMPRESAS -->
+<section id="empresas">
+  <div class="wrap split">
+    <div>
+      <div class="eyebrow">Formación para empresas</div>
+      <h2>Capacitación corporativa adaptada a las necesidades de tu organización</h2>
+      <p class="lead" style="margin-top:18px">Diseñamos programas personalizados para empresas que buscan fortalecer las competencias técnicas de sus equipos mediante formación especializada, certificaciones, adopción de herramientas con IA y acompañamiento profesional.</p>
+      <div class="btn-row"><a href="#contacto" class="btn">Solicitar propuesta empresarial</a></div>
+    </div>
+    <ul class="benefits">
+      <li>Capacitaciones In Company</li>
+      <li>Programas personalizados</li>
+      <li>Seguimiento del aprendizaje</li>
+      <li>Certificaciones para colaboradores</li>
+      <li>Reportes de avance</li>
+      <li class="ai-b">Implementación de soluciones con IA</li>
+    </ul>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="wrap">
+    <div class="center"><h2>Preguntas frecuentes</h2></div>
+    <div class="faq-grid">
+      <details><summary>¿Qué modalidad tienen los cursos?</summary><p>100% online, con acompañamiento profesional y acceso desde cualquier país.</p></details>
+      <details><summary>¿Qué software necesito?</summary><p>Cada curso indica el software requerido; te guiamos en la instalación y configuración.</p></details>
+      <details><summary>¿Las clases quedan grabadas?</summary><p>Sí, tendrás acceso a las grabaciones para repasar a tu ritmo.</p></details>
+      <details><summary>¿Ofrecen acompañamiento durante la formación?</summary><p>Sí, a través de mentorías y seguimiento personalizado.</p></details>
+      <details><summary>¿Qué certificado recibiré al finalizar?</summary><p>Credenciales internacionales según el programa, además de una credencial digital verificable.</p></details>
+      <details><summary>¿Cómo funcionan las mentorías?</summary><p>Sesiones de orientación personalizada para resolver dudas técnicas y aplicar lo aprendido en proyectos reales.</p></details>
+      <details><summary>¿Qué herramientas o soluciones con IA usaré durante mi formación? <span class="new-tag">Nuevo</span></summary><p>En los másters y áreas de IA trabajarás con copilotos y herramientas que automatizan cálculo, modelado BIM, documentación y presupuestos aplicados a casos reales.</p></details>
+      <details><summary>¿Las credenciales que entregan son verificables y reconocidas? <span class="new-tag">Nuevo</span></summary><p>Sí. Emitimos acreditaciones internacionales (Autodesk, Certiport, CYPE, diploma universitario) y credenciales digitales verificables en línea.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section id="contacto" class="final" style="border-bottom:none">
+  <div class="wrap">
+    <h2>Da el siguiente paso hacia una carrera con mayores oportunidades</h2>
+    <p class="lead center" style="margin-top:18px">Habla con uno de nuestros asesores y descubre la ruta de aprendizaje que mejor se adapta a tu perfil profesional y objetivos.</p>
+    <div class="btn-row center"><a href="#" class="btn primary">Solicitar asesoría personalizada</a><a href="#academia" class="btn">Explorar cursos</a></div>
+  </div>
+</section>
+
+<footer>Design Modeling Academy — Preview de propuesta de Home (textos + IA + credenciales). Diseño de referencia, no final.</footer>
+
+</body>
+</html>
