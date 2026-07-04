@@ -35,4 +35,4 @@
 | SAP2000 Profesional | 1) Edificios hormigón residencial (10 ses.) · 2) Instalaciones industriales PRO (14 ses.) · 3) Edificios sismorresistentes (9 ses.) | 3 | 2 | Avanzado | DMA 70h académicas |
 | ETABS Profesional | 1) Viviendas unifamiliares en acero (12 ses.) · 2) Edificaciones industriales en acero (10 ses.) · 3) Cimentaciones profundas (6 ses.) | 3 | ~2 | Avanzado | DMA 70h académicas |
 
-*Todas: $199.99 (antes $499.99, 60% dcto.) · Acceso ilimitado de por vida · Modalidad asincrónica.*
+*Todas: $199.99 (antes $499.99, 60% dcto.) · Acceso durante la duración del programa · Modalidad asincrónica.*

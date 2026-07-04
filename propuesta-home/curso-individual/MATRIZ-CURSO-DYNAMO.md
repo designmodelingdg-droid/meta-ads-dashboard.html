@@ -57,7 +57,7 @@ La automatización se ha convertido en una de las competencias más demandadas d
 | 5 | ¿Cómo accedo al contenido? | Al inscribirte recibes acceso inmediato a nuestra plataforma, donde encontrarás las clases en video, los recursos descargables y los ejercicios aplicados de cada módulo. |
 | 6 | ¿Puedo realizar consultas técnicas? | Sí. Cuentas con acompañamiento profesional para resolver dudas técnicas durante tu formación, incluyendo consultas personalizadas con el instructor. |
 | 7 | ¿El curso incluye certificado? | Sí. Al completarlo recibes un certificado internacional de Design Modeling Academy y, al ser Centro Autorizado de Entrenamiento Autodesk, puedes optar por el certificado oficial de Autodesk y preparar tu certificación ACU / Autodesk Certified Professional. |
-| 8 | ¿Cuánto tiempo tendré acceso? | Tendrás acceso de por vida al contenido del curso y a sus actualizaciones, para que repases el material cuando lo necesites. |
+| 8 | ¿Cuánto tiempo tendré acceso? | Tendrás acceso a la plataforma y a todo el contenido durante el tiempo de duración del programa. |
 
 ---
 
