@@ -56,7 +56,7 @@ Ser la academia de referencia en Iberoamérica en **formación BIM e inteligenci
 ### ⭐ FUNDACIÓN (tarjetas destacadas)
 
 **Dayana Calderón Brunetti** — *CEO y Fundadora*
-Fundadora y directora ejecutiva de Design Modeling Academy. Lidera la visión, la estrategia y el crecimiento internacional de la academia, impulsando la unión entre formación técnica de alto nivel, metodología BIM e inteligencia artificial aplicada a la ingeniería y la arquitectura.
+Ingeniera Química graduada en 2018 por la Universidad Central de Venezuela, apasionada por la optimización de procesos empresariales, la automatización y el marketing. Fundó Design Modeling Academy con una misión clara: que ingenieros y arquitectos puedan certificarse, mejorar sus ingresos, apostar por la era de la inteligencia artificial y crecer profesionalmente. Lidera la visión, la estrategia y el crecimiento internacional de la academia.
 *(Tarjeta destacada · badge "CEO y Fundadora" · primera posición)*
 
 **Ing. Gabriel Pantoja** — *Co-fundador y Director de Proyectos Estructurales y Académicos*
@@ -83,11 +83,7 @@ Profesional en metodologías y protocolos BIM, con experiencia en la implementac
 **Ing. Pablo Sandoya** — *Instructor*
 Especialista certificado en Autodesk Revit y Navisworks, con más de 10 años gestionando proyectos BIM complejos y automatización de procesos mediante Dynamo. Instructor de automatización, costos y BIM.
 
-### 🤝 ALIADO ESTRATÉGICO
-
-**Olympus** — *Marketing*
-Nuestra empresa aliada de marketing, encargada de la estrategia y difusión de la academia.
-*(Mostrar como aliado/partner, no como docente. Confirmar si va en esta página o en una sección de aliados.)*
+> **Nota:** el equipo son las 7 personas de arriba. **Olympus no es parte del equipo interno**: va como aliado en la sección de Partners (punto 6b).
 
 ---
 
@@ -103,8 +99,39 @@ Nuestra empresa aliada de marketing, encargada de la estrategia y difusión de l
 
 ---
 
-## 6. ACREDITACIONES (banda de logos)
-Centro Autorizado de Entrenamiento Autodesk · Autodesk Learning Partner · Certiport Authorized Testing Center · Certificaciones CYPE · Diploma Universitario Internacional (Sabal University)
+## 6. ACREDITACIONES Y CERTIFICACIONES (banda de logos + destacar)
+
+**H2:** Acreditaciones que respaldan cada programa
+
+Estas son las acreditaciones que nos permiten certificar internacionalmente. Conviene **destacarlas** con sus logos:
+
+**Certificaciones técnicas y de software**
+- **Centro Autorizado de Entrenamiento Autodesk (ATC)** — certificamos Autodesk ACU / ACC y Autodesk Certified Professional.
+- **Autodesk Learning Partner**
+- **Certiport Authorized Testing Center**
+- **Centro Autorizado CYPE** — primer *Authorized Partner* de CYPE en Latinoamérica y Centro de Certificación Profesional (desde noviembre de 2023).
+- **Partner educativo Microsoft**
+- **Partner educativo Adobe**
+
+**Titulación universitaria internacional** *(avalada por Doctrina Qualitas – DQ, con reconocimiento en Europa, Latinoamérica y EE. UU.)*
+- **Universidad de las Naciones**
+- **Sabal University (Estados Unidos)** — diploma validable (Senescyt en Ecuador)
+- **Círculo de Universidades Hispanoamericanas – UAIII** — incluye programa de movilidad a España
+
+**Certificado propio**
+- **Certificado Internacional Design Modeling Academy** — con código QR verificable en línea.
+
+---
+
+## 6b. PARTNERS Y ALIADOS
+
+**H2:** Nuestros aliados
+
+- **HumanTech** — *Socio académico.*
+- **Doctrina Qualitas (DQ)** — *Socio académico* que respalda nuestra titulación universitaria internacional (Universidad de las Naciones, Sabal University y UAIII).
+- **Olympus** — *Aliado de marketing*, encargado de la estrategia y difusión de la academia.
+
+*(Mostrar como grilla de logos de "Partners / Aliados", separada de las acreditaciones. ⚠️ Confirmar logos de HumanTech, DQ y Olympus.)*
 
 ---
 
@@ -119,8 +146,8 @@ Centro Autorizado de Entrenamiento Autodesk · Autodesk Learning Partner · Cert
 ---
 
 ## Pendientes para la dirección
-- [ ] Apellido y foto de **Aylin**.
-- [ ] Foto y (opcional) mini-bio de **Dayana Calderón Brunetti**.
+- [ ] **Aylin:** apellido, cargo confirmado y foto.
+- [ ] **Foto de Dayana** (bio ya redactada ✔).
 - [ ] Fotos de Gabriel, Ester, Mijail, Manuel y Pablo.
-- [ ] Confirmar si **Olympus** va en esta página (como aliado) o en una sección aparte.
+- [ ] Logos de **HumanTech, Doctrina Qualitas y Olympus** para la grilla de Partners.
 - [ ] Confirmar mini-bios de Ester, Mijail, Manuel y Pablo (redactadas a partir de sus perfiles públicos).
