@@ -10,8 +10,9 @@
 - [x] Instagram de `@bimpure`: 19 reels con transcripción (~$0.96).
 - [x] Instagram de `@design_modeling_dg`: 17 reels con transcripción (~$1.10).
 - [ ] TikTok, YouTube, Facebook — pendientes para ambas cuentas.
-- [ ] Matriz de Contenido Viral — en construcción con los 36 reels de Instagram ya recolectados.
-- [ ] Guiones simulados — pendiente de la matriz.
+- [x] Matriz de Contenido Viral: `matriz/matriz-contenido-viral.md` (36 reels) + `matriz/patrones-de-viralidad.md` (4 pilares, hallazgo central: BIM+IA es un vacío que ninguna de las 2 cuentas llena bien).
+- [x] 5 guiones simulados en `guiones/` con ranking y calendario propuesto en `guiones/README.md`.
+- [ ] Publicar y correr la rutina semanal (comparar rendimiento real vs. estimación) — pendiente de que Dayana publique las piezas.
 
 ## Por qué la recolección no corrió desde este entorno
 
