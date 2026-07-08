@@ -3,16 +3,19 @@
 ## Lo que ya está listo
 
 - [x] Interview completada: cuenta propia `design_modeling_dg`, redes IG/TikTok/YouTube/Facebook, tema BIM+IA, tono cercano y técnico, 3-4 piezas/semana.
-- [x] Referentes investigados: Dana de Filippi y BIM Pure (Nicolas Catellier) — ver `CLAUDE.md`.
+- [x] Referentes investigados: BIM Pure (Nicolas Catellier) confirmado. Dana de Filippi descartada — no se confirmó su handle público.
 - [x] Estructura de carpetas creada: `fuentes/`, `transcripciones/`, `matriz/`, `guiones/`.
 - [x] `CLAUDE.md` con reglas, actores y rutina semanal.
-- [ ] **Recolección real (Apify) — bloqueada, ver abajo.**
-- [ ] Matriz de Contenido Viral — pendiente de recolección.
+- [x] **Recolección real (Apify) — corrida en local**, ver abajo. Este entorno remoto sigue bloqueado para `api.apify.com`; toda la recolección se hizo desde Claude Code local de Dayana.
+- [x] Instagram de `@bimpure`: 19 reels con transcripción (~$0.96).
+- [x] Instagram de `@design_modeling_dg`: 17 reels con transcripción (~$1.10).
+- [ ] TikTok, YouTube, Facebook — pendientes para ambas cuentas.
+- [ ] Matriz de Contenido Viral — en construcción con los 36 reels de Instagram ya recolectados.
 - [ ] Guiones simulados — pendiente de la matriz.
 
-## Por qué no corrió la recolección todavía
+## Por qué la recolección no corrió desde este entorno
 
-Esta sesión corre en un entorno remoto (Claude Code on the web) cuya política de red **no permite salir a `api.apify.com`** (la puerta de enlace responde 403 — bloqueo de política, no un error de token). Ni el MCP de Apify ni una llamada directa por API funcionan desde aquí mientras esa política siga así. El token que compartiste está guardado solo en esta sesión (no en el repo, no en git).
+Esta sesión corre en un entorno remoto (Claude Code on the web) cuya política de red **no permite salir a `api.apify.com`** (la puerta de enlace responde 403 — bloqueo de política, no un error de token), confirmado en más de un intento. Ni el MCP de Apify ni una llamada directa por API funcionan desde aquí mientras esa política siga así. El token que se compartió en el chat está guardado solo en esa sesión (no en este repo, no en git) — la recolección real se resolvió corriéndola en Claude Code local, con el token cargado ahí vía `claude mcp add --header`.
 
 ## Dos caminos para completar la recolección
 

@@ -13,10 +13,11 @@ Este archivo es mi memoria permanente para este sistema. Lo leo antes de empezar
 
 | Referente | Por qué | Cuentas confirmadas |
 |---|---|---|
-| Dana de Filippi | Dynamo, automatización y BIM computacional — el ángulo más cercano a "IA aplicada a BIM" con audiencia propia | Instagram `@danadefilippi`, YouTube "DanamoBIM" |
 | BIM Pure (Nicolas Catellier) | Ex-Revit Pure, formación BIM masiva + contenido reciente sobre IA en Revit | Instagram `@bimpure`, X `@nicocatellier`, YouTube "BIM Pure" |
 
-Sin confirmar todavía: TikTok de ambos referentes, y presencia de cualquiera de los dos en Facebook. Se verifica en la corrida de recolección (si el actor no encuentra la cuenta en esa red, se anota y se sigue sin ella — regla de "solo cuentas públicas").
+Dana de Filippi se descartó como referente: no se pudo confirmar un handle de Instagram público que le perteneciera (`@danadefilippi` devolvió vacío/privado, `@danamobim` no existe en Instagram — "DanamoBIM" es su canal de YouTube, no verificado en la corrida). Si en el futuro se confirma su cuenta real, se puede sumar en una rutina semanal.
+
+Sin confirmar todavía: TikTok de BIM Pure, y su presencia en Facebook. Se verifica en una corrida posterior (si el actor no encuentra la cuenta en esa red, se anota y se sigue sin ella — regla de "solo cuentas públicas").
 
 ## Reglas fijas
 
