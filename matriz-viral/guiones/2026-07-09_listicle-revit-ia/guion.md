@@ -19,7 +19,7 @@
 >
 > Tres: generación de opciones de distribución en planta a partir de un programa arquitectónico — le das los metros cuadrados que necesitas y te da tres layouts posibles en segundos.
 >
-> Ninguna de las tres te entrega el proyecto terminado. Te entregan el primer borrador. Vos pones el criterio."
+> Ninguna de las tres te entrega el proyecto terminado. Te entregan el primer borrador. Tú pones el criterio."
 
 **CIERRE + CTA (32-38s):**
 > "¿Cuál de las tres no conocías? Comenta 'BIM' o 'IA' y te mando cómo activarlas paso a paso."

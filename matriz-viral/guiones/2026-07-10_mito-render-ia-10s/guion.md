@@ -7,7 +7,7 @@
 
 ---
 
-## Guion palabra por parte
+## Guion palabra por palabra
 
 **HOOK (0-3s):**
 > "Esto parece un render de arquitecto con horas de trabajo. Lo hizo una inteligencia artificial en diez segundos."
