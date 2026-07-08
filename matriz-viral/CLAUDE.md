@@ -19,6 +19,16 @@ Dana de Filippi se descartó como referente: no se pudo confirmar un handle de I
 
 Sin confirmar todavía: TikTok de BIM Pure, y su presencia en Facebook. Se verifica en una corrida posterior (si el actor no encuentra la cuenta en esa red, se anota y se sigue sin ella — regla de "solo cuentas públicas").
 
+## El producto que el contenido debe vender
+
+**Máster Internacional en BIM Management e Inteligencia Artificial para la Construcción.** No es un curso más — es el producto ancla del negocio, y el contenido orgánico existe para llevar gente hacia él.
+
+- **Diferenciador real:** microcredenciales progresivas (Modelador BIM → Coordinador BIM → BIM Manager 4D-5D → Especialista BIM+IA) avaladas por **Silicon Valley Futures Institute** (exclusivo del Máster, ninguna Especialización lo tiene) + **DMA Engineering Suite** (apps de IA propias, 1 nueva al mes, el alumno se gradúa con su propio kit). Además: 12 certificaciones Autodesk, títulos universitarios (Sabal University EE.UU., aval SENESCYT Ecuador, ISTE/DQ Europa).
+- **Precio real:** $2,699.99 USD (oferta desde $500 entrada, o $499.99 matrícula + $160/mes × 12). **El Máster NUNCA se vende ni se cotiza por contenido/chat** — el único objetivo de cualquier pieza sobre el Máster es generar conversación (comentario/DM), nunca cerrar la venta en el video.
+- **CTA de conversión real:** pedir que comenten la palabra **"BIM"** o **"IA"** — no "sígueme", no "guarda este video". Ese comentario dispara el seguimiento automático (bot de ventas vía WhatsApp/GoHighLevel). Todo guion orientado a Máster debe terminar con esta CTA, no con una genérica.
+- **Prueba social:** página de testimonios (`https://funnel.dgdesignmodeling.com/testimonio-estudiantes-egresados-diplomado`) y página de acreditaciones (`https://funnel.dgdesignmodeling.com/design-modeling-acreditaciones`) — usarlas como referencia de contenido (mostrar capturas, citar casos) cuando el guion necesite reforzar autoridad/confianza, no solo como link a mandar.
+- **Diagnóstico de cuenta (de la matriz real):** los reels de la cuenta generan views pero casi cero comentarios (ver `matriz/patrones-de-viralidad.md` §5) y las piezas de venta directa (DM13, DM17) son las de peor rendimiento de toda la muestra. El problema no es de alcance, es de que el contenido no invita a comentar ni conecta con el Máster.
+
 ## Reglas fijas
 
 1. **Nunca inventar métricas ni transcripciones.** Lo que no venga del scraper se marca `s/d`. Una matriz con huecos honestos vale más que una llena de suposiciones.

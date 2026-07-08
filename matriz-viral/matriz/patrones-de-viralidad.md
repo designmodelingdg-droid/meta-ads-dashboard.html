@@ -178,10 +178,46 @@ Todo el análisis mide views/likes/comments — no revenue. **Un reel con 20k vi
 
 ---
 
-## 5. Cómo se usa este archivo
+## 5. Diagnóstico de conversión: la cuenta genera views, no conversación
+
+Este análisis nació de una pregunta directa de Dayana: "mi cuenta sigue apagada, nadie comenta ni da like para la cantidad de seguidores que tengo, y necesito vender el Máster BIM+IA." Los datos de la matriz confirman el diagnóstico y lo hacen más específico.
+
+### 5.1. Los comentarios están cerca de cero en TODA la cuenta, no solo en las piezas débiles
+
+| Reel | Views | Comentarios |
+|---|---|---|
+| DM1 (top, humor CC) | 19,934 | 4 |
+| DM2 (mito poliurea) | 19,486 | 11 |
+| DM13 (promo Curso IA+BIM) | 3,349 | 4 |
+| DM17 (FAQ SAP2000) | 413 | 0 |
+
+Incluso el reel de mejor rendimiento (19,934 views) solo generó 4 comentarios — una tasa de conversación de 0.02%. **El problema no es de alcance, es de que ningún guion actual invita a comentar.** Ninguno de los 17 reels de DMA tiene un CTA de comentario específico; todos terminan en "sígueme", pregunta retórica sin gancho, o promo directa.
+
+### 5.2. Las piezas de venta directa son las de PEOR rendimiento de toda la muestra
+
+- **DM13** (curso IA+BIM, 3,349 views, ratio likes/views 0.66% — el más bajo de la cuenta después de DM17).
+- **DM17** (FAQ SAP2000, 413 views, 0 comentarios, 0 likes/views efectivo).
+
+Esto confirma lo que la sección 2.2 ya diagnosticó (promos directas rinden mal) pero con una implicación de negocio directa: **el contenido que hoy existe para vender cursos es exactamente el que el algoritmo y la audiencia menos quieren ver.** Vender no puede seguir significando "grabar un video sobre el curso" — tiene que significar "grabar el contenido de mejor patrón (humor, mito, pregunta) y llevar la conversación hacia el Máster con el CTA correcto".
+
+### 5.3. El CTA real de DMA no se está usando en los guiones
+
+Según el contexto de negocio, el CTA de conversión real es pedir que comenten la palabra **"BIM"** o **"IA"** — eso dispara el seguimiento automático del bot de ventas por WhatsApp. Los 5 guiones de la primera ronda (ver `guiones/`) usaban CTAs genéricos ("sígueme", "guarda el video", "comenta el número"). Se corrigieron para terminar todos con la CTA real: **comentar BIM o IA**, que además resuelve directamente el problema de la sección 5.1 (cero comentarios) porque el CTA en sí mismo pide comentar.
+
+### 5.4. Recomendación operativa
+
+- Todo guion que toque el tema Máster/certificación/BIM+IA debe cerrar con "comenta BIM o IA" — nunca con CTA genérico.
+- El contenido de humor/mito/pregunta (Pilares 1-2 de la sección 3) sigue siendo el vehículo de alcance; el CTA hacia el Máster va montado ahí, no en piezas de promo separadas y débiles.
+- Nunca mencionar precio ni "inscríbete" en el reel — igual que la regla del bot de ventas, el contenido abre la conversación, la venta se cierra en DM/llamada.
+- Usar prueba social (testimonios, acreditaciones) como *contenido* en sí mismo cuando tenga sentido (ej. reaccionar a un testimonio real, mostrar la página de acreditaciones en pantalla) — no solo como link de respaldo.
+
+---
+
+## 6. Cómo se usa este archivo
 
 Este documento alimenta directamente el paso 3 del flujo (`simular`) y el paso 4 (`guionizar`):
 
 - **Al escribir un guión nuevo** en `guiones/YYYY-MM-DD_slug/guion.md`, revisar los 4 pilares de la sección 3 y forzar que el guión cumpla al menos 3 de 4.
 - **Al escribir la simulación** en `guiones/YYYY-MM-DD_slug/simulacion.md`, comparar el hook contra los 3 tipos del Pilar 1, la duración contra el Pilar 2, y el tema contra el Pilar 3.
 - **Antes de decidir formato**, recordar los unknowns de la sección 4 — no confundir patrones estadísticos con leyes.
+- **Todo guion con intención de venta** debe seguir el diagnóstico de la sección 5: CTA real ("comenta BIM o IA"), nunca precio en el video, prueba social como contenido cuando aplique.

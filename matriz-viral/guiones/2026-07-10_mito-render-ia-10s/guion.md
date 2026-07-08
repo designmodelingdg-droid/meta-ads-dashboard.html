@@ -18,7 +18,7 @@
 > "Le subí este boceto a una IA de render arquitectónico, le puse el estilo que quería, y esto fue lo que devolvió. Sin modelar, sin texturas manuales, sin horas de V-Ray."
 
 **CIERRE + CTA (16-20s):**
-> "No reemplaza tu diseño — reemplaza las horas de renderizar tu diseño. Guárdalo si haces presentaciones de proyecto."
+> "No reemplaza tu diseño — reemplaza las horas de renderizar tu diseño. Si quieres dominar estas herramientas de IA aplicadas a BIM, comenta 'BIM' o 'IA' y te cuento cómo."
 
 ## Notas de entrega
 

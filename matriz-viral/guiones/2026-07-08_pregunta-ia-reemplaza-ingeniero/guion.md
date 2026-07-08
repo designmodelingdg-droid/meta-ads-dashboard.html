@@ -26,7 +26,7 @@
 > La IA es una calculadora extremadamente rápida. El ingeniero sigue siendo el que decide qué calcular, y qué hacer cuando la realidad no calza con el cálculo."
 
 **CIERRE + CTA (52-62s):**
-> "Esto no significa que la ignores — significa que la uses para lo que sirve: velocidad. Sígueme si quieres ver cómo integro IA en mis proyectos de BIM sin perder el criterio técnico."
+> "Esto no significa que la ignores — significa que la uses para lo que sirve: velocidad. Si quieres aprender a integrar IA en tus proyectos BIM sin perder el criterio técnico, comenta 'BIM' o 'IA' y te cuento cómo."
 
 ## Notas de entrega
 

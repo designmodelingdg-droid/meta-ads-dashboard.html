@@ -2,6 +2,8 @@
 
 5 guiones nuevos BIM+IA, simulados contra `matriz/patrones-de-viralidad.md`. Ranking por estimación, no por orden de creación — **todos se publican**, incluidos los de estimación media, siguiendo la regla de oro de la guía: el algoritmo es impredecible, y el de menor puntaje también puede pegar.
 
+> **Actualización 2026-07-08:** los 5 CTAs se corrigieron de genéricos ("sígueme", "guarda el video", "etiqueta a un amigo") a **"comenta BIM o IA"** — el CTA real de conversión del negocio, que dispara el seguimiento automático del bot de ventas por WhatsApp. Esto también ataca directo el problema diagnosticado en `matriz/patrones-de-viralidad.md` §5: la cuenta genera views pero casi cero comentarios en toda la muestra (hasta el reel de 19,934 views tiene solo 4). Nunca se menciona precio ni "inscríbete" en el reel — el video abre la conversación, la venta se cierra en DM/llamada, igual que la regla del bot de ventas.
+
 ## Ranking
 
 | # | Guion | Estructura | Duración | Estimación | Confianza |

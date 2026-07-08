@@ -20,7 +20,7 @@
 > La IA no se equivocó en la fórmula. Se equivocó en el criterio."
 
 **CIERRE + CTA (24-30s):**
-> "La IA te da un punto de partida en segundos. El criterio técnico sigue siendo tuyo. Guárdate este video si trabajas con BIM + IA — en la serie te muestro cómo verificar cada resultado antes de confiar en él."
+> "La IA te da un punto de partida en segundos. El criterio técnico sigue siendo tuyo. Si quieres aprender a usar la IA con criterio en tus proyectos BIM, comenta 'BIM' o 'IA' y te cuento cómo."
 
 ## Notas de entrega
 

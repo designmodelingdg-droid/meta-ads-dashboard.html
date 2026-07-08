@@ -22,7 +22,7 @@
 > Ninguna de las tres te entrega el proyecto terminado. Te entregan el primer borrador. Vos pones el criterio."
 
 **CIERRE + CTA (32-38s):**
-> "¿Cuál de las tres no conocías? Comenta el número. En mi próxima serie de BIM+IA te muestro cómo activarlas paso a paso."
+> "¿Cuál de las tres no conocías? Comenta 'BIM' o 'IA' y te mando cómo activarlas paso a paso."
 
 ## Notas de entrega
 

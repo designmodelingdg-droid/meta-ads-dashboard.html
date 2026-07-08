@@ -20,7 +20,7 @@
 > **INGE:** "Porque a ti te reemplaza cualquier plantilla de Pinterest."
 
 **CIERRE + CTA (15-18s):**
-> *(texto en pantalla, sin narración adicional)*: "Etiqueta a tu arqui/inge favorito 👇"
+> *(texto en pantalla, sin narración adicional)*: "¿Tú de qué lado estás? Comenta BIM o IA 👇"
 
 ## Notas de entrega
 
