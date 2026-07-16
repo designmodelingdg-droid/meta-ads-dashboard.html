@@ -27,3 +27,24 @@
 ## Confianza
 
 **Media.** Hay evidencia fuerte de que el patrón "mito revelado + demo visual" funciona en esta cuenta (DM2), pero cero piezas previas mezclan ese patrón con el tema BIM+IA específicamente — es una extrapolación razonable, no una repetición confirmada.
+
+---
+
+## Resultado real (2026-07-16)
+
+Publicado **2026-07-15** como reel `Da1ABdbJ7ji` (= **DM18** en la matriz). Medido ~16 h después con `apify/instagram-reel-scraper`.
+
+| Métrica | Estimación | Real (≈16 h) | Veredicto |
+|---|---|---|---|
+| Views | ALTA-MEDIA (análogos DM2 19.5k / DM3 17k) | **1,453** | ⚠️ **Provisional** — muy por debajo de los análogos, pero el reel tenía <24 h al medir; no es número maduro |
+| Comentarios | (no se estimó número; el fix de CTA buscaba subirlos) | **27** | ✅ **Acierto rotundo — récord de toda la matriz** (top previo 11) |
+| Likes/views | rango cuenta 0.2–2.8% | 32/1,453 = **2.2%** | ✅ Top-3 de la cuenta |
+| Duración | 28–32s | **39.5s** | ➖ Salió ~25% más larga; sigue dentro del Pilar 2 (15–75s) |
+
+**Lectura — acierto parcial con un giro importante:**
+
+- **En alcance (views): fallo provisional.** La estimación ALTA-MEDIA se anclaba en DM2/DM3 (17–19k). A las 16 h el reel va en 1,453 — tracción baja. Pero es prematuro cerrarlo: el reel es de <1 día y los análogos son cifras maduras. Hay que re-medir en la rutina semanal antes de declararlo fallo definitivo. Riesgo que ya se había anotado en "Señales en contra": el público de "¿la IA se equivocó?" es más nicho que el humor general que impulsó a DM1.
+- **En conversación (comentarios): acierto que importa más que las views.** El objetivo real del rediseño de este guion (ver `patrones-de-viralidad.md` §5) no era ganar views crudas — era **romper el patrón de cero-comentarios de la cuenta**. Lo logró: **27 comentarios**, cuando el reel de 19,934 views histórico solo generó 4. Es la primera prueba de que el CTA "comenta BIM o IA" convierte views en conversación (y en disparos del bot de ventas). 1.86% de tasa de comentario vs. ~0.02% histórico.
+- **Implicación:** este guion valida el pilar de negocio (conversación → Máster) aunque todavía no el pilar de alcance viral. Para la próxima iteración: mantener el CTA que claramente funciona, y probar acortar a 20–30s + un hook visual más fuerte en los primeros 3 s para atacar el alcance sin perder la conversación.
+
+*Pendiente de la rutina semanal: re-medir views de DM18 con el reel ya maduro (≥7 días) y confirmar si el fallo de alcance es real o solo efecto de medir demasiado pronto.*

@@ -1,9 +1,9 @@
 # Matriz de Contenido Viral — Design Modeling Academy
 
-**Actualizada:** 2026-07-08
+**Actualizada:** 2026-07-08 (base) · 2026-07-16 (+DM18 y re-medición de 10 reels — ver §"Actualización 2026-07-16")
 **Cuentas analizadas:** 2 en Instagram (`@bimpure`, `@design_modeling_dg`)
-**Reels totales:** 36 (BIM Pure: 19 · DMA: 17)
-**Fuente cruda:** `fuentes/ig_bimpure.json` + `fuentes/ig_design_modeling_dg.json`
+**Reels totales:** 37 (BIM Pure: 19 · DMA: 18)
+**Fuente cruda:** `fuentes/ig_bimpure.json` + `fuentes/ig_design_modeling_dg.json` + `fuentes/ig_design_modeling_dg_reel_Da1ABdbJ7ji_2026-07-16.json` + `fuentes/ig_design_modeling_dg_ultimos10_2026-07-16.json`
 **Referente descartado:** Dana de Filippi (`@danadefilippi` privada/sin reels visibles, `@danamobim` no existe). No se pudo confirmar handle. Se sigue el análisis con solo 2 cuentas.
 
 ---
@@ -42,6 +42,7 @@
 | BP1 | @bimpure | 2026-03-09 | 32s | 3,611 | 97 | 1 | s/d | Historia Slantis (arquitectura tech) | STORY-DOCUMENTAL | "Are we rolling? Hola, what does that mean? I traveled to Uruguay and Argentina to meet Slantis..." | Top view de BIM Pure. Humor bilingual + travel + "detrás de la empresa". Idioma inglés |
 | DM13 | @design_modeling_dg | 2026-01-06 | 120s | 3,349 | 22 | 4 | s/d | Curso IA aplicada a BIM (BIM Manager) | PROMO-CURSO | "La continuidad de cómo se va a conectar directamente con el módulo 1..." | Máxima duración de la matriz (120s). Promo directa con engagement bajo (likes/views 0.66%) |
 | DM14 | @design_modeling_dg | 2026-06-17 | 73s | 1,544 | 17 | 8 | s/d | Análisis estructural: derivas y deformaciones | TUTORIAL-TÉCNICO | "va a indicarnos cuáles son las deformaciones, cuáles son las derivas..." | Muy nicho (ing. estructural). Hook comienza en medio de frase — mala edición del inicio |
+| DM18 | @design_modeling_dg | 2026-07-15 | 40s | 1,453 | 32 | 27 | s/d | ChatGPT diseña una losa → la IA falla en el criterio, no en la fórmula (BIM+IA original) | MITO/EXPECTATIVA-VS-REALIDAD | "Le pedí a ChatGPT que me diseñara una losa de entrepiso y esto fue lo que pasó." | ⭐ **27 comentarios — récord absoluto de la matriz** (top previo: DM2 con 11). Primer reel con CTA real "comenta BIM o IA" → validó el fix de §5 (cuenta genera views, no conversación). Views 1,453 pero medido a <24h de publicado. Likes/views 2.2% (top-3 de la cuenta). Sh `s/d`: `includeSharesCount` no está disponible en plan free de Apify. Datos al 2026-07-16 |
 | BP2 | @bimpure | 2025-05-05 | 42s | 1,221 | 24 | 0 | s/d | Recurso gratis: colección de íconos Revit | PROMO-RECURSO | "This is the brand new Revit's icon collection by Beam Pure, which includes different colors for different yearly release." | Regalo gratis + soporte multilenguaje. Palabra clave "free download" |
 | BP3 | @bimpure | 2025-05-20 | 65s | 1,204 | 22 | 1 | s/d | Curso D5 render con líder de KPF | PROMO-CURSO | "Hi everybody, my name is Andy Crisoforo. I lead the visualization and AI efforts at KPF" | Autoridad de firma top (KPF) + promesa "amazing renders" |
 | BP4 | @bimpure | 2024-09-19 | 16s | 1,177 | 43 | 1 | s/d | Lanzamiento revista BIM & BEYOND | NOTICIA-LANZAMIENTO | "Hello, how may I help you?" ⚠️ transcript sospechosa | Corto (16s), announcement. Transcript claramente incompleto — bandera manual |
@@ -63,6 +64,36 @@
 | BP18 | @bimpure | 2024-09-23 | 105s | 516 | 8 | 0 | s/d | IA para autogenerar detalles Revit | ENTREVISTA-IA | "So the idea is that you could upload your own details and then the AI would match the Revit model, the simple Revit model, to an actual detail from your own firm, right?" | Feature futurista (AI + arch details) + nicho AECtech. Larga (105s) |
 | BP19 | @bimpure | 2024-10-18 | 79s | 504 | 12 | 1 | s/d | Claude vs ChatGPT para Revit API | ENTREVISTA-COMPARACIÓN | "I find Claude's interface is a lot sort of user-friendly. ChatGPT has custom GPTs. Claude has what are called projects." | AI-tool tribalism (Claude vs GPT) + Revit API dev |
 | DM17 | @design_modeling_dg | 2026-07-07 | 53s | 413 | 4 | 0 | s/d | FAQ curso SAP2000 Naves Industriales | PROMO-FAQ | "Las tres preguntas más frecuentes que me hacen sobre SAP 2000 las respondo rápido y sin rodeos." | Formato FAQ + promo curso. Recién publicada (7 jul) — muestra pequeña, aún no medible |
+
+---
+
+## Actualización 2026-07-16 (corrida Apify — reel DM18 + re-medición de 10 reels)
+
+Corrida real de `apify/instagram-reel-scraper` (plan free, ~$0.004). Se agregó el reel nuevo **DM18** (`Da1ABdbJ7ji`) y se re-midieron 10 reels de `@design_modeling_dg` para ver cómo evolucionaron desde el snapshot del 2026-07-08. `includeSharesCount` sigue devolviendo `s/d` — **el add-on de shares no está disponible en el plan free de Apify** (lo confirmó el log: `includeSharesCount is not supported for free users`), no es decisión de costo esta vez.
+
+### El reel nuevo — DM18 (ChatGPT diseña una losa)
+
+- **Views 1,453 · Likes 32 · Comentarios 27 · Sh s/d.** Publicado 2026-07-15 21:11, medido 2026-07-16 (~16 h de vida).
+- **27 comentarios rompe el techo histórico de toda la matriz** (máximo previo: DM2 con 11; el top de views DM1 tenía 4). Es el primer reel con el CTA real "comenta BIM o IA" y es evidencia directa de que el fix de §5 (la cuenta genera views, no conversación) funciona.
+- Tasa de conversación: 27/1,453 = **1.86%** vs. el ~0.02% del reel top histórico. ~90× la media de la cuenta.
+- Ver comparación completa contra la estimación en `guiones/2026-07-08_chatgpt-losa-revit/simulacion.md` → §"Resultado real".
+
+### Re-medición de reels ya en la matriz (07-08 → 07-16)
+
+| ID | shortCode | Fecha pub | Views 07-08 → 07-16 | Likes → | Comm → | Lectura |
+|---|---|---|---|---|---|---|
+| DM4 | DaNg_igD_LC | 2026-06-30 | 7,926 → **8,989** | 222 → 248 | 0 → 0 | Sigue creciendo; humor 14s confirma top-tier (ratio likes 2.76%) |
+| DM5 | DJwlI94tck3 | 2025-05-17 | 7,688 → 7,709 | 72 → 72 | 5 → 5 | Plano — reel viejo, fuera de feed (confirma §4.6) |
+| DM7 | C6rnuz7upu7 | 2024-05-07 | 6,847 → 6,869 | 60 → 61 | 11 → 11 | Plano — maduro |
+| DM12 | DaTwRB3pCN1 | 2026-07-02 | 3,619 → **4,992** | 63 → 83 | 0 → 3 | Buen crecimiento (+38%); hook-pregunta sigue tirando |
+| DM13 | DTJlMHiCczr | 2026-01-06 | 3,349 → 3,370 | 22 → 22 | 4 → 4 | Plano — promo larga sin recorrido |
+| DM16 | Daa2ZnORqWR | 2026-07-05 | 997 → **1,341** | 9 → 11 | 2 → 2 | Subió pero sigue en tier bajo (educativo puro) |
+| DM15 | DaQ71d0peMU | 2026-07-01 | 1,067 → 1,308 | 2 → 4 | 0 → 0 | Serie nueva sigue sin despegar (confirma §2.5) |
+| DM17 | Daglc57JSrQ | 2026-07-07 | 413 → **1,071** | 4 → 4 | 0 → 0 | Se estabilizó ×2.6, pero sigue tier bajo (promo-FAQ) |
+
+**Reel detectado que NO estaba en el snapshot 2026-07-08:** `DaWCI-cJn8i` (2026-07-03, 63s, 1,193 views / 4 L / 1 C, "¿Sabías que una tabla de Revit puede decirte…?"). Quedó fuera de la recolección original; se anota aquí como hueco a integrar en la próxima pasada completa, no se le asignó ID todavía.
+
+> Nota de medición: la corrida dedicada al reel y la de perfil se lanzaron con ~30 s de diferencia; DM18 aparece como 1,455/28 en la de perfil y 1,453/27 en la dedicada (números vivos que suben minuto a minuto). Se usa la corrida dedicada como valor de registro.
 
 ---
 

@@ -12,7 +12,16 @@
 - [ ] TikTok, YouTube, Facebook — pendientes para ambas cuentas.
 - [x] Matriz de Contenido Viral: `matriz/matriz-contenido-viral.md` (36 reels) + `matriz/patrones-de-viralidad.md` (4 pilares, hallazgo central: BIM+IA es un vacío que ninguna de las 2 cuentas llena bien).
 - [x] 5 guiones simulados en `guiones/` con ranking y calendario propuesto en `guiones/README.md`.
-- [ ] Publicar y correr la rutina semanal (comparar rendimiento real vs. estimación) — pendiente de que Dayana publique las piezas.
+- [x] **Apify ya alcanzable desde el entorno remoto (2026-07-16).** Se desbloqueó `api.apify.com` en la red del entorno; `run-sync-get-dataset-items` responde 201 desde aquí (antes 403). Ver corrida de abajo.
+- [~] Rutina semanal — primera medición real hecha: reel **DM18** (`Da1ABdbJ7ji`, "ChatGPT diseña una losa") publicado 2026-07-15, más re-medición de 10 reels. Agregado a la matriz + comparado contra su estimación (§"Resultado real" en `guiones/2026-07-08_chatgpt-losa-revit/simulacion.md`). Falta re-medir DM18 ya maduro (≥7 días) para cerrar el veredicto de alcance.
+
+## Corrida Apify 2026-07-16
+
+- Actor `apify/instagram-reel-scraper`, plan free, costo ~$0.004.
+- **DM18 `Da1ABdbJ7ji`:** 1,453 views · 32 likes · **27 comentarios** (récord de la matriz) · shares `s/d`.
+- **Shares no disponibles en free:** el log devolvió `includeSharesCount is not supported for free users` — todos los `Sh` siguen `s/d` por límite de plan, no por regla de costo.
+- **Transcripción + descarga de audio** dispara el "max data limit" del plan free y aborta el push del dataset: para el barrido de perfil se corrió con `includeTranscript:false` (transcripción solo en la corrida de 1 reel).
+- Datos crudos: `fuentes/ig_design_modeling_dg_reel_Da1ABdbJ7ji_2026-07-16.json` y `fuentes/ig_design_modeling_dg_ultimos10_2026-07-16.json`.
 
 ## Por qué la recolección no corrió desde este entorno
 
