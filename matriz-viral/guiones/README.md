@@ -27,4 +27,4 @@ Día/hora exactos: **no hay evidencia en la matriz** para recomendar una franja 
 
 ## Recordatorio
 
-La simulación es una **estimación sobre patrones pasados de 36 reels de Instagram, no una predicción**. Ver `matriz/patrones-de-viralidad.md` §4 para los límites del análisis (sin shares, sin retención, sin datos de TikTok/YouTube/Facebook, sin conversión a curso). Publica también los guiones #4 y #5 si los grabas — a veces el de menor estimación es el que pega.
+La simulación es una **estimación sobre patrones pasados, no una predicción**. (Nota 2026-07-16: las simulaciones originales se hicieron contra 36 reels; el barrido completo reveló 124 reels de DMA y `matriz/patrones-de-viralidad.md` se reescribió — el motor viral real es la REVELACIÓN-TÉCNICA, no el humor con techo de 20k. Las próximas simulaciones deben usar los patrones reconstruidos.) Ver `matriz/patrones-de-viralidad.md` §4 para los límites del análisis (sin shares, sin retención, sin datos de TikTok/YouTube/Facebook, sin conversión a curso). Publica también los guiones #4 y #5 si los grabas — a veces el de menor estimación es el que pega.

@@ -1,223 +1,149 @@
 # Patrones de Viralidad — BIM+IA en Instagram
 
-**Fecha del análisis:** 2026-07-08
-**Base de datos:** 36 reels (19 @bimpure + 17 @design_modeling_dg)
-**Fuente:** `matriz/matriz-contenido-viral.md` → `fuentes/ig_bimpure.json` + `fuentes/ig_design_modeling_dg.json`
+**Fecha del análisis:** 2026-07-16 (reconstruido sobre el barrido completo)
+**Base de datos:** 143 reels — **124 de @design_modeling_dg** + 19 de @bimpure
+**Fuente:** `matriz/matriz-contenido-viral.md` → `fuentes/ig_design_modeling_dg_barrido-completo_2026-07-16.json` + `fuentes/ig_bimpure.json`
 
-Este archivo destila la matriz en 4 secciones: **qué funciona**, **qué no funciona**, **el patrón de viralidad**, y **lo que no sabemos**. Es la fuente que alimenta los guiones nuevos en `guiones/`.
+> ⚠️ **Esta es una reescritura.** La versión del 2026-07-08 se basaba en 17 reels de DMA (~14% de la cuenta) y **no incluía ningún reel viral real**. Concluía que DMA "topa en ~20k views". El barrido completo mostró **4 reels sobre 1M de views y 13 sobre 100k**. Todo el análisis de "qué funciona" cambió; se conserva y se refuerza el §5 (conversión), que el muestreo chico ya había detectado bien.
+
+Estadística base de DMA (124 reels): mediana **5,743** views · media 105,694 (sesgada por virales) · p90 120,784 · **máximo 4,720,794**.
 
 ---
 
 ## 1. Qué funciona
 
-### 1.1. Duración corta + hook de humor o revelación (los picos absolutos)
+### 1.1. REVELACIÓN-TÉCNICA — el verdadero motor viral de la cuenta
 
-En @design_modeling_dg, los 3 tops absolutos comparten dos rasgos:
+Los picos absolutos **no** son humor: son revelaciones de técnica/material/proceso de obra que el gremio no conocía, con visual satisfactorio y un gancho tipo "¿sabías que…?" o "ya no es como antes".
 
-- **DM1** (19,934 views, 19s) — DIÁLOGO-HUMOR ("¿estás dentro o fuera?")
-- **DM2** (19,486 views, 19s) — REVELACIÓN-MITO ("parece concreto pero se dobla")
-- **DM3** (17,031 views, 73s) — PREGUNTA-REVELACIÓN ("si el concreto es tan fuerte, ¿por qué le ponen varillas?")
+- **DM42** (4,720,794 views, 10s) — encofrado modular ("ya no significa tablas y clavos")
+- **DM32** (1,701,819 views, 72s) — columnas de acero enterradas como cimentación
+- **DM45** (1,116,938 views, 34s) — aislamiento sísmico ("edificios que se mueven con el sismo")
+- **DM49** (1,113,670 views, 19s) — camino temporal de tierra para intervenir un río
+- **DM21** (752,713 views, 60s) — pasajuntas, los "palitos milagrosos" de las losas
+- **DM29** (708,870 views, 64s) — anclaje de tierra con tornillo (**759 comentarios: el conteo más alto de la cuenta**)
 
-**Regla observada:** en tu cuenta, **todos los reels de menos de 20s superan las 4,700 views** (DM1, DM2, DM4, DM6, DM9, DM10 — 6 de 6). No hay excepción en la muestra. La brevedad es el factor de fuerza cruda más consistente.
+**Regla observada:** un dato técnico contraintuitivo + demostración visual + tono cercano (no acartonado) escala a cientos de miles / millones, **sin depender de humor ni de audio importado**. Esta es la ventaja diferencial de DMA sobre BIM Pure: profundidad técnica *contada de forma masticable*.
 
-### 1.2. Reciclaje de humor de TikTok (CC) con audio importado
+### 1.2. DIÁLOGO-HUMOR relatable — el segundo motor, el de mejor cariño
 
-Cinco reels de tu cuenta son CC de otros creadores de TikTok con humor de la industria (arqui vs inge, cliente vs profesional, chisme en obra):
+El humor de roles del gremio (arqui vs inge, jefe/practicante, chisme de obra) es el segundo motor de reach y **el de mejor ratio de likes**:
 
-- DM1 (19,934) · DM4 (7,926) · DM6 (7,577) · DM9 (5,273) · DM10 (4,768)
+- **DM60** (676,227 views, 15s, **9.6% likes/views — el más querido**) — "ingenieros a las 11:47pm viendo Bob the Builder"
+- **DM28** (396,977 views, 11s) — "primer día como residente de obra"
+- DM1 (20,263), DM4 (8,989), DM6 (7,638)… — la veta CC-humor del snapshot original, ahora en su lugar real: buena pero **un escalón debajo** de los reveals técnicos.
 
-**Todos entre 4.7k y 20k views.** Es el patrón más consistente y de menor costo de producción de la cuenta. No requiere guion original ni grabación técnica.
+**Regla observada:** el humor genera afinidad (likes altos, sensación de comunidad) pero rara vez pasa de ~700k; los reveals técnicos son los que rompen el millón.
 
-### 1.3. Hook de pregunta común de la industria
+### 1.3. La brevedad sube el piso, pero no es requisito de viralidad
 
-Los 4 reels con hook de pregunta directa a una duda universal del gremio superan las 3,600 views:
+Mediana de views por duración: **<15s = 9,637** · 15-30s = 7,994 · 30-60s = 3,392 · 60-90s = 5,246 · >90s = 1,996.
 
-- DM3 (17,031) — "si el concreto es tan fuerte, ¿por qué le ponen varillas?"
-- DM5 (7,688) — "¿para qué sirven realmente las certificaciones internacionales?"
-- DM8 (5,660) — "¿has visto este tipo de losas? te cuento cómo se construyen"
-- DM12 (3,619) — "¿sabes cómo se fija una estructura de acero al concreto?"
+- Lo corto tiene el **piso más alto** (menos riesgo de caída).
+- Pero el top absoluto (DM42, 4.7M) dura 10s **y** el segundo (DM32, 1.7M) dura 72s. **Un reveal técnico fuerte escala a cualquier duración**; lo que mata a los largos no es el largo en sí, es la falta de gancho (ver §2).
 
-**Regla observada:** la pregunta debe ser algo que el viewer ya se hizo alguna vez (curiosidad latente), no una pregunta que le presentas por primera vez.
+### 1.4. El idioma español como palanca de escala
 
-### 1.4. En @bimpure: pain point directo + solución con autoridad
+DMA (español, LATAM) llega a millones; BIM Pure (inglés, nicho B2B) topa ~3.6k. En el nicho BIM hispano hay menos competencia y los picos son ~1000× más altos. Es la ventaja estructural de la cuenta.
 
-BIM Pure tiene techo de views mucho más bajo (~3.6k) pero el patrón que más consistentemente supera 800 views combina:
+### 1.5. En @bimpure: pain point + autoridad (contexto de referente)
 
-- **Dolor concreto de BIM Manager/coordinador** (worksets manuales, renders lentos, plantillas)
-- **Solución con nombre y firma** (plugin, curso, invitado con credencial)
-
-Ejemplos: BP9 (Guardian worksets), BP3 (Andy de KPF), BP8 (D5 vs Enscape), BP7 (Content Catalog Autodesk).
-
-**Regla observada:** el viewer de BIM Pure quiere herramientas y autoridades, no humor. Su ratio de likes por view es más alto (1.5-3%) que el de DMA (0.2-2.8%) porque la audiencia es más chica pero más comprometida.
-
-### 1.5. Publicar en el idioma correcto del nicho
-
-- BIM Pure (inglés) → techo ~3.6k views, audiencia global tech
-- DMA (español) → techo ~20k views, audiencia LATAM masiva
-
-Tu ventaja natural es el idioma. En el nicho BIM hispano hay menos competencia, y los picos virales son 5-6× más altos que en el equivalente en inglés.
+BIM Pure sigue con techo ~3.6k y patrón entrevista/experto + promo-curso. Su valor como referente es el **ángulo BIM+IA con autoridad** (BP5 vibe-coding, BP6 ChatGPT, BP19 Claude vs GPT), no el formato — que en español conviene traducir a reveal técnico + humor.
 
 ---
 
 ## 2. Qué NO funciona
 
-### 2.1. Contenido puramente técnico sin humor ni hook fuerte
+### 2.1. Promos directas de cursos (PROMO-CURSO)
+9 reels PROMO-CURSO, casi todos **por debajo de la mediana** de la cuenta. Excepción: ángulos fuertes por sí mismos (título internacional). La venta directa repele al algoritmo y a la audiencia.
 
-- **DM14** (1,544 views, 73s) — análisis estructural derivas. Nicho ing. estructural, hook arranca a mitad de frase.
-- **DM16** (997 views, 45s) — Revit + Power BI + IA. Combo perfecto en teoría, hook con "¿sabía que...?" pero engagement bajo.
+### 2.2. Educativo largo sin gancho de revelación
+Un tutorial que explica sin sorprender (no abre con dato contraintuitivo) se queda en la audiencia orgánica. El tema técnico **no** es el problema — DM42/DM32 son técnicos y explotan. El problema es abrir sin gancho.
 
-**Diagnóstico:** el contenido educativo puro sin gancho emocional o narrativo se queda en la audiencia orgánica ya consolidada, no penetra el algoritmo. La brecha es de hook, no de tema.
+### 2.3. Series nuevas sin audiencia establecida
+DM15 ("Noticias BIM que SÍ importan") arrancó con reach bajo. Una serie tarda 2-3 episodios en estabilizar; no es problema de hook sino de continuidad.
 
-### 2.2. Promos directas de cursos (rendimiento inconsistente)
-
-- **DM13** (3,349 views, 120s) — curso IA+BIM. Duración máxima de la matriz. Ratio likes/views: 0.66%.
-- **DM17** (413 views, 53s) — FAQ curso SAP2000. Recién publicada; muestra chica pero baja partida.
-- Excepción: **DM7** (6,847 views, 70s) — promo título US. Funcionó, probablemente por el ángulo "título internacional" que es fuerte por sí solo.
-
-**Diagnóstico:** promos que no vienen envueltas en revelación, humor o pregunta pierden alcance. La promo debe estar disfrazada de contenido de valor (como DM5 con las certificaciones Autodesk).
-
-### 2.3. Duración larga (>90s) sin razón narrativa
-
-- BP5 (102s), BP18 (105s), DM13 (120s), DM11 (83s) — 4 reels de más de 80s.
-- Solo DM11 (mampostería reforzada, 4,180 views) funciona porque tiene un hook de tensión ("pasó lo que no debía pasar").
-- Los otros 3 quedan bajo 3.5k views.
-
-**Diagnóstico:** en Instagram la duración larga tiene que estar justificada por tensión narrativa o una revelación que se cocina lento. Un tutorial explicativo largo pierde al viewer.
-
-### 2.4. Hooks estilo "hi everybody, my name is X" (BIM Pure)
-
-Casi todos los reels de BIM Pure abren con presentación tipo "Hi, my name is X. Welcome to this course...". Esto es formal y no engancha en scroll. La única pieza de BIM Pure que rompe este molde (**BP1**, "Are we rolling? Hola, what does that mean?") es la que tiene más views (3,611).
-
-**Diagnóstico:** presentarse antes de dar valor tira el hook. El hook tiene que ser el valor.
-
-### 2.5. Nuevos formatos sin serie establecida
-
-- **DM15** (1,067 views, 53s) — "Serie: Noticias BIM que SÍ importan". Hook fuerte pero solo 2 likes.
-
-**Diagnóstico:** lanzar una serie nueva sin audiencia previa toma 2-3 episodios en estabilizarse. No es problema del hook, es problema de continuidad.
+### 2.4. Hooks tibios "¿sabía que…?" sin promesa concreta
+Cuando el "¿sabías que…?" no va seguido de algo visualmente demostrable o contraintuitivo, no engancha (DM16 Power BI). El gancho tiene que prometer una revelación, no solo introducir un tema.
 
 ---
 
-## 3. El patrón de viralidad (síntesis)
+## 3. El patrón de viralidad (síntesis) — 4 pilares corregidos
 
-Cruzando lo que funciona y lo que no, el patrón de viralidad para DMA en Instagram se sostiene sobre **4 pilares**:
+### Pilar 1 — El HOOK: revelar algo, en los primeros 3s
+Tres ganchos, en este orden de potencia de reach:
+1. **REVELACIÓN-TÉCNICA** — "mira esta técnica/material/dato de obra que no conocías" + visual (el motor: DM42, DM32, DM45, DM29).
+2. **DIÁLOGO-HUMOR** — conflicto de roles del gremio, relatable (el de más cariño: DM60, DM28).
+3. **PREGUNTA-REVELACIÓN** — duda universal del gremio que el viewer ya se hizo (DM45 "¿edificios que se mueven con el sismo?").
 
-### Pilar 1 — El HOOK vive en los primeros 3 segundos
+Nunca abrir con presentación personal, contexto extendido o promo.
 
-El hook tiene que ser uno de estos 3 tipos, sin ambigüedad:
+### Pilar 2 — La DURACIÓN óptima es 10-75s (con gancho)
+- 10-25s: piso más alto, ideal para humor y reveals de un solo dato.
+- 30-75s: cabe un reveal técnico de dos partes (DM32 a 72s hizo 1.7M).
+- >90s: solo con tensión narrativa sostenida; si no, cae.
 
-- **MITO REVELADO:** "Parece X pero es Y" (DM2 poliurea) — mostrar lo inesperado en pantalla + audio
-- **PREGUNTA UNIVERSAL:** "¿Por qué X hace Y?" donde X e Y son cosas que el gremio ya vio (DM3 concreto+varillas, DM8 losas deck, DM12 pernos anclaje)
-- **DIÁLOGO DE HUMOR:** conflicto entre roles del gremio (arqui vs inge, profesional vs cliente) — repetible con CC de TikTok
+### Pilar 3 — El TEMA técnico de obra ES el activo; BIM+IA es el vacío a llenar
+El reach vive en la técnica de obra/construcción. **BIM+IA sigue siendo marginal en volumen y reach**, pero es el puente hacia el Máster. La jugada: envolver BIM+IA en el formato que ya explota (reveal técnico o pregunta-revelación), como intenta DM18. Ejemplos:
+- "¿Sabías que la IA puede detectar interferencias en tu modelo BIM antes que tú?" (pregunta-revelación + demo)
+- "Le pedí a ChatGPT que diseñara una losa. Falló en el criterio, no en la fórmula." (DM18 — mito/expectativa vs realidad)
 
-Nunca abrir con presentación personal, contexto extendido, o promo directa. El hook es la promesa, todo lo demás va después.
-
-### Pilar 2 — La DURACIÓN óptima es 15-75s
-
-- **15-25s:** máximo alcance viral posible en humor y revelación de mito.
-- **50-75s:** cabe una revelación técnica con pregunta común como hook (DM3, DM8, DM11 son la evidencia).
-- **>90s:** solo si hay tensión narrativa sostenida o un giro; si no, baja el alcance.
-
-### Pilar 3 — El TEMA BIM+IA es un vacío para llenar
-
-En la muestra de DMA hay 3 piezas BIM+IA (DM13 curso, DM15 noticias, DM16 Power BI+IA) y las 3 tienen engagement bajo. **Pero no porque el tema no funcione — porque están mal empacadas** (promo directa o hook tibio).
-
-En BIM Pure hay 4 piezas BIM+IA (BP5 vibe-coding, BP6 ChatGPT BIM Managers, BP18 AI details, BP19 Claude vs ChatGPT). Los formatos que ellos usan (entrevista con experto, comparación de herramientas, tutorial vibe-coding) son replicables en español con humor y brevedad — un espacio que ninguno de los dos ocupa.
-
-**Recomendación operativa:** producir piezas BIM+IA con hooks del Pilar 1 (mito revelado o pregunta común) en duración del Pilar 2 (15-75s). Ejemplos posibles:
-
-- "¿Cómo hace la IA para dibujar detalles constructivos en Revit?" (pregunta común, formato explicación con demo, 50-70s)
-- "Le pedí a ChatGPT que me hiciera un plano en Revit. Esto pasó." (mito/expectativa vs realidad, 20-40s)
-- "3 cosas que tu Revit ya hace con IA y no sabías" (listicle + revelación, 30-45s)
-- "Arqui: 'La IA me va a quitar el trabajo.' Inge: 'A ti te reemplaza cualquier plantilla.'" (diálogo humor + IA, 15-20s)
-
-### Pilar 4 — El HUMOR CC de TikTok es rentable pero no debe pasarse de rosca
-
-5 reels CC = 5 tops de tu cuenta. Bajo esfuerzo de producción, alta consistencia. **Pero solo humor CC hace que la cuenta pierda su valor de autoridad** — es content de entretenimiento, no de decisión de compra para cursos.
-
-**Recomendación operativa:** mantener un ratio de aproximadamente **1 CC-humor por cada 2 educativos originales**. Los CC-humor tiran las views semanales; los educativos con hook fuerte tiran las conversiones a cursos.
+### Pilar 4 — La CONVERSACIÓN se diseña con el CTA, no se espera
+El reach ya existe. Lo que no existe es la conversación (§5). El CTA "comenta BIM o IA" es el único mecanismo probado que la genera (DM18: 1.90% vs. 0.013% de la cuenta). Va montado sobre los Pilares 1-2, nunca en una pieza de promo separada.
 
 ---
 
 ## 4. Lo que NO sabemos (unknowns)
 
-Esta sección es honestidad sobre los límites del análisis. Toda decisión que se apoye en la matriz tiene que reconocer estos vacíos.
+### 4.1. Hooks de audio de DM19–DM124
+Hoy los hooks de la cola vienen del **caption**, no de la transcripción de audio (el plan free aborta las corridas con transcript). En reels educativos suelen coincidir; en humor CC el hook real es el texto en pantalla. Pendiente: transcribir en lotes o subir de plan.
 
-### 4.1. No tenemos shares
+### 4.2. Shares
+`includeSharesCount` no está disponible en el plan free (no es decisión de costo). Todos los `Sh` = `s/d`. No sabemos qué reels se compartieron de verdad — indicador clave de viralidad real vs. empuje algorítmico.
 
-El add-on `includeSharesCount` de Apify está OFF por regla de costo. Todos los "Sh" de la matriz son `s/d`. **No sabemos qué tanto se compartieron los reels tops**, lo cual es un indicador clave de viralidad real (vs. plays inflados por el algoritmo). Si un reel tiene 20k plays y 0 shares, el efecto viral es solo del algoritmo. Si tiene 20k plays y 500 shares, hay tracción real.
+### 4.3. Retención por segundo, origen de las views y conversión a curso
+Apify no trae % de retención, ni si las views vienen de followers vs. descubrimiento, ni cuántos alumnos convirtió cada reel. Todo el análisis es de "viralidad de plataforma", no de "viralidad de negocio".
 
-### 4.2. No tenemos retención por segundo
+### 4.4. Clasificación `⟨auto⟩` de la cola
+Los reels marcados `⟨auto⟩` se clasificaron por heurística sobre el caption; el top ~13 está curado a mano, la cola no. Refinable.
 
-Instagram tiene una métrica interna de "% viewed" o gráfico de retención por segundo que no viene en el scrape de Apify. **No sabemos si los reels largos (>75s) se ven completos o si el viewer se cae a los 20s.** Toda inferencia sobre "duración óptima" es basada en views totales, no en retención real.
-
-### 4.3. No tenemos el algoritmo de recomendación
-
-Instagram sirve reels a audiencias no-follower y a followers de forma distinta. **No sabemos qué porcentaje de las views de DM1 (19,934) vinieron de followers actuales vs. de descubrimiento algorítmico.** Un reel puede ser "viral solo con followers" (bueno para retención) o "viral fuera de la burbuja" (bueno para crecimiento).
-
-### 4.4. La transcripción tiene lagunas
-
-- **BP4** devolvió solo "Hello, how may I help you?" para un reel de 16s. Es imposible que sea el hook real. Bandera flotante para verificar manualmente.
-- **DM4, DM6, DM9** son CC-humor con audio importado; el transcript captura fragmentos de la canción de fondo, no el hook. El **hook real es el texto en pantalla del reel**, que Apify no scrapea. Para estos reels el análisis es incompleto.
-
-### 4.5. Solo tenemos Instagram
-
-- La cuenta DMA también publica en YouTube, TikTok y Facebook. **No sabemos si los reels virales de IG replicaron performance en TikTok o quedaron dormidos** — el mismo humor CC-tiktok pudo tener 100k plays en TikTok y no lo estamos midiendo.
-- Descartar Dana de Filippi como referente elimina la referencia "Dynamo y BIM computacional" del análisis. El eje BIM+IA queda cubierto por BIM Pure, pero el eje BIM+programación queda sin referente.
-
-### 4.6. La muestra es de una ventana temporal específica
-
-- @bimpure: agosto 2024 → junio 2025 (10 meses).
-- @design_modeling_dg: mayo 2024 → julio 2026 (26 meses, pero muy sesgado a los últimos 2 meses de 2026 con 12 de 17 reels ahí).
-
-**Riesgo:** los patrones que vemos en DMA pueden ser específicos del ciclo actual (junio-julio 2026) y no representar la media histórica. Los reels muy antiguos (DM7, DM5) tuvieron menos oportunidades de acumular views porque están fuera del feed reciente.
-
-### 4.7. No tenemos data de conversión a curso
-
-Todo el análisis mide views/likes/comments — no revenue. **Un reel con 20k views puede convertir 0 alumnos y un reel con 3k views puede convertir 15.** Sin el dato de dónde llega el tráfico y qué convierte, los patrones son de "viralidad de plataforma", no de "viralidad de negocio".
+### 4.5. Solo Instagram
+Falta TikTok/YouTube/Facebook de DMA. El mismo reveal técnico pudo tener otro orden de magnitud en TikTok y no lo estamos midiendo.
 
 ---
 
-## 5. Diagnóstico de conversión: la cuenta genera views, no conversación
+## 5. Diagnóstico de conversión: la cuenta genera views a MILLONES, no conversación
 
-Este análisis nació de una pregunta directa de Dayana: "mi cuenta sigue apagada, nadie comenta ni da like para la cantidad de seguidores que tengo, y necesito vender el Máster BIM+IA." Los datos de la matriz confirman el diagnóstico y lo hacen más específico.
+El barrido completo **refuerza** este diagnóstico en vez de suavizarlo. La cuenta no tiene un problema de alcance — tiene reels de millones. Tiene un problema de **conversación**, y por lo tanto de venta del Máster.
 
-### 5.1. Los comentarios están cerca de cero en TODA la cuenta, no solo en las piezas débiles
+### 5.1. La tasa de comentarios es ~cero incluso en los mega-virales
 
-| Reel | Views | Comentarios |
-|---|---|---|
-| DM1 (top, humor CC) | 19,934 | 4 |
-| DM2 (mito poliurea) | 19,486 | 11 |
-| DM13 (promo Curso IA+BIM) | 3,349 | 4 |
-| DM17 (FAQ SAP2000) | 413 | 0 |
+| Reel | Views | Comentarios | Tasa |
+|---|---|---|---|
+| DM42 (top, encofrado) | 4,720,794 | 470 | 0.010% |
+| DM26 (mármol) | 504,603 | 6 | 0.001% |
+| DM29 (anclaje — récord de conteo) | 708,870 | 759 | 0.107% |
+| **DM18 (ChatGPT + CTA "comenta BIM/IA")** | **1,453** | **27** | **1.90%** |
 
-Incluso el reel de mejor rendimiento (19,934 views) solo generó 4 comentarios — una tasa de conversación de 0.02%. **El problema no es de alcance, es de que ningún guion actual invita a comentar.** Ninguno de los 17 reels de DMA tiene un CTA de comentario específico; todos terminan en "sígueme", pregunta retórica sin gancho, o promo directa.
+Mediana de la cuenta: **0.013%**. Promedio del top-15 viral: 0.026%. **DM18 la supera ~100×.** El único reel que rompe el patrón es el único con CTA de comentario real. El problema no es el alcance: es que casi ningún guion pide comentar.
 
-### 5.2. Las piezas de venta directa son las de PEOR rendimiento de toda la muestra
+### 5.2. Las promos directas son de las peores de la muestra
+Confirmado a escala: PROMO-CURSO rinde bajo la mediana. Vender no puede seguir siendo "grabar un video sobre el curso" — tiene que ser "grabar el reveal técnico o el humor que ya explota, y llevar la conversación al Máster con el CTA correcto".
 
-- **DM13** (curso IA+BIM, 3,349 views, ratio likes/views 0.66% — el más bajo de la cuenta después de DM17).
-- **DM17** (FAQ SAP2000, 413 views, 0 comentarios, 0 likes/views efectivo).
-
-Esto confirma lo que la sección 2.2 ya diagnosticó (promos directas rinden mal) pero con una implicación de negocio directa: **el contenido que hoy existe para vender cursos es exactamente el que el algoritmo y la audiencia menos quieren ver.** Vender no puede seguir significando "grabar un video sobre el curso" — tiene que significar "grabar el contenido de mejor patrón (humor, mito, pregunta) y llevar la conversación hacia el Máster con el CTA correcto".
-
-### 5.3. El CTA real de DMA no se está usando en los guiones
-
-Según el contexto de negocio, el CTA de conversión real es pedir que comenten la palabra **"BIM"** o **"IA"** — eso dispara el seguimiento automático del bot de ventas por WhatsApp. Los 5 guiones de la primera ronda (ver `guiones/`) usaban CTAs genéricos ("sígueme", "guarda el video", "comenta el número"). Se corrigieron para terminar todos con la CTA real: **comentar BIM o IA**, que además resuelve directamente el problema de la sección 5.1 (cero comentarios) porque el CTA en sí mismo pide comentar.
+### 5.3. El CTA real no se está usando (salvo DM18)
+El CTA de conversión es pedir que comenten **"BIM"** o **"IA"** (dispara el bot de ventas por WhatsApp/GoHighLevel). De 124 reels, prácticamente solo DM18 lo usa — y es el de mejor tasa de conversación de toda la historia de la cuenta.
 
 ### 5.4. Recomendación operativa
-
-- Todo guion que toque el tema Máster/certificación/BIM+IA debe cerrar con "comenta BIM o IA" — nunca con CTA genérico.
-- El contenido de humor/mito/pregunta (Pilares 1-2 de la sección 3) sigue siendo el vehículo de alcance; el CTA hacia el Máster va montado ahí, no en piezas de promo separadas y débiles.
-- Nunca mencionar precio ni "inscríbete" en el reel — igual que la regla del bot de ventas, el contenido abre la conversación, la venta se cierra en DM/llamada.
-- Usar prueba social (testimonios, acreditaciones) como *contenido* en sí mismo cuando tenga sentido (ej. reaccionar a un testimonio real, mostrar la página de acreditaciones en pantalla) — no solo como link de respaldo.
+- Montar el CTA "comenta BIM o IA" sobre el motor que ya funciona: **reveals técnicos** (Pilar 1.1) y **humor relatable** (Pilar 1.2) — no sobre piezas de promo.
+- Priorizar contenido **BIM+IA en formato reveal técnico** — es el cruce entre lo que la cuenta sabe hacer viral y lo que vende el Máster.
+- Nunca precio ni "inscríbete" en el video; la venta se cierra en DM/llamada.
+- Usar prueba social (testimonios, acreditaciones) como contenido, no solo como link.
 
 ---
 
 ## 6. Cómo se usa este archivo
 
-Este documento alimenta directamente el paso 3 del flujo (`simular`) y el paso 4 (`guionizar`):
-
-- **Al escribir un guión nuevo** en `guiones/YYYY-MM-DD_slug/guion.md`, revisar los 4 pilares de la sección 3 y forzar que el guión cumpla al menos 3 de 4.
-- **Al escribir la simulación** en `guiones/YYYY-MM-DD_slug/simulacion.md`, comparar el hook contra los 3 tipos del Pilar 1, la duración contra el Pilar 2, y el tema contra el Pilar 3.
-- **Antes de decidir formato**, recordar los unknowns de la sección 4 — no confundir patrones estadísticos con leyes.
-- **Todo guion con intención de venta** debe seguir el diagnóstico de la sección 5: CTA real ("comenta BIM o IA"), nunca precio en el video, prueba social como contenido cuando aplique.
+Alimenta el paso `simular` (guiones/*/simulacion.md) y `guionizar`:
+- Todo guion nuevo debe cumplir ≥3 de los 4 pilares del §3, priorizando REVELACIÓN-TÉCNICA o DIÁLOGO-HUMOR como vehículo.
+- Todo guion con intención de venta debe cerrar con el CTA real ("comenta BIM o IA"), nunca precio en el video.
+- Reconocer los unknowns del §4 — no confundir patrón con ley, sobre todo mientras la clasificación de la cola siga `⟨auto⟩` y falten shares/retención.

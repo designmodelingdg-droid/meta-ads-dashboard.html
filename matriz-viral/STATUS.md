@@ -15,13 +15,15 @@
 - [x] **Apify ya alcanzable desde el entorno remoto (2026-07-16).** Se desbloqueó `api.apify.com` en la red del entorno; `run-sync-get-dataset-items` responde 201 desde aquí (antes 403). Ver corrida de abajo.
 - [~] Rutina semanal — primera medición real hecha: reel **DM18** (`Da1ABdbJ7ji`, "ChatGPT diseña una losa") publicado 2026-07-15, más re-medición de 10 reels. Agregado a la matriz + comparado contra su estimación (§"Resultado real" en `guiones/2026-07-08_chatgpt-losa-revit/simulacion.md`). Falta re-medir DM18 ya maduro (≥7 días) para cerrar el veredicto de alcance.
 
-## Corrida Apify 2026-07-16
+## Corrida Apify 2026-07-16 — barrido completo
 
-- Actor `apify/instagram-reel-scraper`, plan free, costo ~$0.004.
-- **DM18 `Da1ABdbJ7ji`:** 1,453 views · 32 likes · **27 comentarios** (récord de la matriz) · shares `s/d`.
+- Actor `apify/instagram-reel-scraper`, plan free, costo ~$0.02 total (varias corridas).
+- **Hallazgo mayor:** la cuenta tiene **124 reels**, no 17. El snapshot original analizaba el ~14% y **omitía todos los virales reales** (4 reels >1M views, top absoluto **4,720,794**). La matriz y `patrones-de-viralidad.md` se **reconstruyeron** sobre los 124 reels.
+- **DM18 `Da1ABdbJ7ji`:** 1,453 views · 32 likes · **27 comentarios** (tasa 1.90%, ~100× la mediana de la cuenta — el reel con mejor conversación de la historia por el CTA "comenta BIM o IA").
 - **Shares no disponibles en free:** el log devolvió `includeSharesCount is not supported for free users` — todos los `Sh` siguen `s/d` por límite de plan, no por regla de costo.
-- **Transcripción + descarga de audio** dispara el "max data limit" del plan free y aborta el push del dataset: para el barrido de perfil se corrió con `includeTranscript:false` (transcripción solo en la corrida de 1 reel).
-- Datos crudos: `fuentes/ig_design_modeling_dg_reel_Da1ABdbJ7ji_2026-07-16.json` y `fuentes/ig_design_modeling_dg_ultimos10_2026-07-16.json`.
+- **Transcripción:** descargar audio dispara el "max data limit" del plan free y aborta el dataset. El barrido se corrió con `includeTranscript:false`; los hooks de DM19–DM124 vienen del caption (marcados `⟨caption⟩`). Transcribir la cola queda pendiente (~30-40 corriditas por lotes, o subir de plan).
+- Datos crudos: `fuentes/ig_design_modeling_dg_barrido-completo_2026-07-16.json` (124 reels), `..._reel_Da1ABdbJ7ji_2026-07-16.json`, `..._ultimos10_2026-07-16.json`.
+- **Pendiente:** transcripción real de la cola, notas curadas de los reels `⟨auto⟩`, re-medir DM18 maduro, y ampliar a TikTok/YouTube/Facebook.
 
 ## Por qué la recolección no corrió desde este entorno
 
