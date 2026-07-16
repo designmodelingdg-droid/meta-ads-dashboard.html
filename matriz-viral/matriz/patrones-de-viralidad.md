@@ -8,6 +8,8 @@
 
 Estadística base de DMA (124 reels): mediana **5,743** views · media 105,694 (sesgada por virales) · p90 120,784 · **máximo 4,720,794**.
 
+> 🎯 **El hallazgo que manda sobre todos los demás (2026-07-16): el alcance está en el eje equivocado.** El **NÚCLEO del negocio (BIM + IA)** es el 35% de las piezas pero solo el **1.2% del alcance**; la **OBRA/construcción es el 99%**. La cuenta viraliza con contenido de obra que trae público que **no compra** un Máster BIM+IA. Todo lo de "qué funciona" abajo describe el **formato** que sí pega — la tarea es aplicar ese formato al **núcleo BIM/IA**, no a más obra. Detalle y tabla en `matriz-contenido-viral.md` §"Diagnóstico de alineación de negocio".
+
 ---
 
 ## 1. Qué funciona
@@ -83,10 +85,16 @@ Nunca abrir con presentación personal, contexto extendido o promo.
 - 30-75s: cabe un reveal técnico de dos partes (DM32 a 72s hizo 1.7M).
 - >90s: solo con tensión narrativa sostenida; si no, cae.
 
-### Pilar 3 — El TEMA técnico de obra ES el activo; BIM+IA es el vacío a llenar
-El reach vive en la técnica de obra/construcción. **BIM+IA sigue siendo marginal en volumen y reach**, pero es el puente hacia el Máster. La jugada: envolver BIM+IA en el formato que ya explota (reveal técnico o pregunta-revelación), como intenta DM18. Ejemplos:
-- "¿Sabías que la IA puede detectar interferencias en tu modelo BIM antes que tú?" (pregunta-revelación + demo)
-- "Le pedí a ChatGPT que diseñara una losa. Falló en el criterio, no en la fórmula." (DM18 — mito/expectativa vs realidad)
+### Pilar 3 — El TEMA debe migrar de la OBRA al NÚCLEO (BIM/IA), con el mismo formato
+Aquí está la corrección estratégica de fondo. Hoy el reach vive en **técnica de obra/construcción física** — y ese es justamente el problema: trae público que no compra (§diagnóstico de alineación). El formato de REVELACIÓN-TÉCNICA es oro, pero se está gastando en el tema equivocado.
+
+**La jugada no es hacer más obra viral; es hacer el NÚCLEO (modelado/coordinación/BIM/IA "desde la computadora") con el formato que ya explota.** Traducir el reveal técnico del sitio de obra a la pantalla:
+- "¿Sabías que Revit detecta este choque de instalaciones antes de que llegue a obra y cueste miles?" (reveal técnico, pero digital)
+- "Le pedí a la IA que coordinara un modelo BIM. Mira dónde falló." (mito IA + criterio — línea de DM18)
+- "Coordinador BIM vs. el que sigue modelando a mano" (diálogo-humor, pero del núcleo)
+- "3 cosas que tu Revit ya hace con IA y no sabías" (listicle-revelación digital)
+
+Meta de mezcla: **≥60% NÚCLEO**; la obra solo como gancho ocasional que *puentea* al núcleo, nunca como fin.
 
 ### Pilar 4 — La CONVERSACIÓN se diseña con el CTA, no se espera
 El reach ya existe. Lo que no existe es la conversación (§5). El CTA "comenta BIM o IA" es el único mecanismo probado que la genera (DM18: 1.90% vs. 0.013% de la cuenta). Va montado sobre los Pilares 1-2, nunca en una pieza de promo separada.
