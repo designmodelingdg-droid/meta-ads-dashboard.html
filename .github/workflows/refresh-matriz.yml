@@ -1,0 +1,52 @@
+name: Refrescar matriz.json (Apify)
+
+# Corre el scraper de Apify una vez por semana (y a mano cuando quieras),
+# actualiza matriz-viral/matriz/matriz.json con las métricas frescas y los
+# posts nuevos, y hace commit si algo cambió. Así la matriz queda siempre al
+# día en git y la app (que lee matriz.json) ve datos nuevos sin intervención.
+#
+# REQUISITO: agregar el secreto del repo APIFY_TOKEN
+#   Settings → Secrets and variables → Actions → New repository secret
+#   Name: APIFY_TOKEN   Value: (tu token de Apify)
+#
+# NOTA: en el plan free de Apify el crédito es mensual y limitado; por eso la
+# cadencia es SEMANAL. Si el crédito se acaba, la corrida sale limpia sin tocar
+# la matriz (no rompe). Para refrescos más seguidos, sube de plan en Apify.
+
+on:
+  schedule:
+    - cron: "0 13 * * 1"      # lunes 13:00 UTC (~08:00 Ecuador)
+  workflow_dispatch: {}        # correr a mano desde la pestaña Actions
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-matriz
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Refrescar matriz.json
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          LIMIT: "40"
+        run: python3 scripts/refresh_matriz.py
+
+      - name: Commit si cambió
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- matriz-viral/matriz/matriz.json; then
+            echo "Sin cambios en la matriz."
+            exit 0
+          fi
+          git config user.name  "matriz-bot"
+          git config user.email "actions@github.com"
+          git add matriz-viral/matriz/matriz.json
+          git commit -m "Refresco automático de la matriz (Apify)"
+          git push
