@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculadora de Zapatas · Design Modeling Academy</title>
+<meta name="description" content="Calcula y verifica una zapata aislada paso a paso: área en planta, cortante, punzonamiento y acero de refuerzo. Por Design Modeling Academy.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0E2438; --navy2:#0A1B2B; --orange:#EE8A3C; --orange-d:#d97427;
+    --card:#ffffff; --ink:#132433; --ink2:#5a6b7b; --line:#e3e9ef;
+    --ok:#1e9e6a; --bad:#d64545; --chip-ok:#e4f6ee; --chip-bad:#fdeaea;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Poppins',system-ui,sans-serif;background:linear-gradient(160deg,var(--navy) 0%,var(--navy2) 100%);min-height:100vh;color:var(--ink)}
+  .wrap{max-width:1080px;margin:0 auto;padding:24px 16px 64px}
+  header{color:#fff;text-align:center;padding:18px 0 26px}
+  header .logo{font-weight:800;letter-spacing:.12em;font-size:.8rem;color:var(--orange);text-transform:uppercase}
+  header h1{font-size:clamp(1.5rem,4vw,2.2rem);font-weight:700;margin-top:6px}
+  header p{color:#b9c6d2;margin-top:6px;font-size:.95rem}
+  .grid{display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:20px;align-items:start}
+  @media (max-width:900px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--card);border-radius:14px;padding:20px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+  .card h2{font-size:1rem;font-weight:700;color:var(--navy);display:flex;align-items:center;gap:8px;margin-bottom:14px}
+  .card h2 .n{background:var(--orange);color:#fff;border-radius:8px;width:26px;height:26px;display:inline-flex;align-items:center;justify-content:center;font-size:.85rem;flex:none}
+  .f{display:grid;grid-template-columns:1fr 110px 54px;gap:6px 8px;align-items:center;margin-bottom:8px}
+  .f label{font-size:.82rem;color:var(--ink2)}
+  .f input,.f select{width:100%;padding:7px 9px;border:1px solid var(--line);border-radius:8px;font:inherit;font-size:.9rem;background:#fbfcfe}
+  .f input:focus,.f select:focus{outline:2px solid var(--orange);border-color:var(--orange)}
+  .f .u{font-size:.78rem;color:var(--ink2)}
+  .f.wide{grid-template-columns:1fr 164px 0px}
+  .seg{display:flex;gap:6px;margin-bottom:12px;flex-wrap:wrap}
+  .seg button{flex:1;padding:8px 10px;border:1px solid var(--line);background:#f4f7fa;border-radius:9px;font:inherit;font-size:.82rem;cursor:pointer;color:var(--ink2)}
+  .seg button.on{background:var(--navy);color:#fff;border-color:var(--navy);font-weight:600}
+  .hint{font-size:.78rem;color:var(--ink2);background:#f2f6fa;border-left:3px solid var(--orange);padding:8px 10px;border-radius:0 8px 8px 0;margin:10px 0}
+  .btn{display:inline-block;width:100%;padding:12px;border:0;border-radius:10px;background:var(--orange);color:#fff;font:inherit;font-weight:700;font-size:.95rem;cursor:pointer;margin-top:6px}
+  .btn:hover{background:var(--orange-d)}
+  .btn.ghost{background:#eef2f6;color:var(--navy);font-weight:600}
+  .sec{border-top:1px solid var(--line);margin-top:14px;padding-top:14px}
+  .sec h3{font-size:.85rem;font-weight:700;color:var(--navy);margin-bottom:10px}
+  /* resultados */
+  .res .row{display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-bottom:1px dashed var(--line);font-size:.88rem}
+  .res .row b{color:var(--navy)}
+  .res .row span{color:var(--ink2)}
+  .chip{display:inline-flex;align-items:center;gap:6px;font-size:.78rem;font-weight:700;padding:3px 10px;border-radius:99px}
+  .chip.ok{background:var(--chip-ok);color:var(--ok)}
+  .chip.bad{background:var(--chip-bad);color:var(--bad)}
+  .final{background:linear-gradient(135deg,var(--navy),#16344e);color:#fff;border-radius:12px;padding:16px;margin-top:14px}
+  .final h3{color:var(--orange);font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px}
+  .final .big{font-size:1.05rem;font-weight:700;line-height:1.6}
+  .final small{color:#b9c6d2}
+  svg text{font-family:'Poppins',system-ui,sans-serif}
+  .sketch{margin-top:10px;background:#f7fafc;border:1px solid var(--line);border-radius:12px;padding:8px}
+  footer{color:#8fa2b3;text-align:center;font-size:.78rem;margin-top:34px}
+  footer a{color:var(--orange)}
+  /* candado */
+  #lock{position:fixed;inset:0;background:rgba(10,27,43,.96);z-index:50;display:flex;align-items:center;justify-content:center;padding:20px}
+  #lock[hidden]{display:none}
+  #lock .card{max-width:420px;text-align:center}
+  #lock h2{justify-content:center}
+  .warn{font-size:.75rem;color:var(--ink2);margin-top:12px;line-height:1.5}
+</style>
+</head>
+<body>
+<div id="lock" hidden>
+  <div class="card">
+    <h2>🔒 Acceso a la calculadora</h2>
+    <p style="font-size:.9rem;color:var(--ink2);margin-bottom:14px">Para usar la Calculadora de Zapatas de <b>Design Modeling Academy</b> primero regístrate gratis — te toma 20 segundos.</p>
+    <a class="btn" id="lockBtn" href="./index.html" style="text-decoration:none;text-align:center">Registrarme y entrar</a>
+  </div>
+</div>
+
+<div class="wrap">
+  <header>
+    <div class="logo">Design Modeling Academy</div>
+    <h1>Calculadora de Zapata Aislada</h1>
+    <p>Dimensiona y verifica tu zapata paso a paso: presiones, cortante, punzonamiento y acero.</p>
+  </header>
+
+  <div class="grid">
+    <!-- ============ ENTRADAS ============ -->
+    <div>
+      <div class="card">
+        <h2><span class="n">1</span> Cargas de la columna</h2>
+        <div class="seg" id="modoSeg">
+          <button data-modo="directo" class="on">Ingresar cargas</button>
+          <button data-modo="metrados">Calcular por metrados</button>
+        </div>
+        <div id="modoDirecto">
+          <div class="f"><label>Carga muerta PD</label><input id="PD" type="number" step="0.01" value="63.70"><span class="u">ton</span></div>
+          <div class="f"><label>Carga viva PV</label><input id="PV" type="number" step="0.01" value="0.13"><span class="u">ton</span></div>
+        </div>
+        <div id="modoMetrados" hidden>
+          <div class="f"><label>Área tributaria M</label><input id="mM" type="number" step="0.01" value="2.39"><span class="u">m</span></div>
+          <div class="f"><label>Área tributaria N</label><input id="mN" type="number" step="0.01" value="1.54"><span class="u">m</span></div>
+          <div class="f"><label>Número de pisos</label><input id="mPisos" type="number" step="1" value="1"><span class="u">u</span></div>
+          <div class="f"><label>Carga muerta</label><input id="mCM" type="number" step="10" value="300"><span class="u">kg/m²</span></div>
+          <div class="f"><label>Carga viva</label><input id="mCV" type="number" step="10" value="100"><span class="u">kg/m²</span></div>
+          <div class="hint">PD = M · N · pisos · CM / 1000 &nbsp;·&nbsp; PV = M · N · pisos · CV / 1000</div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px">
+        <h2><span class="n">2</span> Suelo y materiales</h2>
+        <div class="f"><label>Capacidad admisible σt</label><input id="sigmaT" type="number" step="0.01" value="1.00"><span class="u">kg/cm²</span></div>
+        <div class="f"><label>Profundidad de desplante Df</label><input id="Df" type="number" step="0.05" value="1.45"><span class="u">m</span></div>
+        <div class="f"><label>Altura de relleno hf</label><input id="hf" type="number" step="0.05" value="1.45"><span class="u">m</span></div>
+        <div class="f"><label>Sobrecarga de piso S/C</label><input id="SC" type="number" step="10" value="0"><span class="u">kg/m²</span></div>
+        <div class="f"><label>Peso esp. suelo γs</label><input id="gS" type="number" step="0.1" value="1.8"><span class="u">t/m³</span></div>
+        <div class="f"><label>Peso esp. concreto γc</label><input id="gC" type="number" step="0.1" value="2.4"><span class="u">t/m³</span></div>
+        <div class="f"><label>Resistencia concreto f'c</label><input id="fc" type="number" step="10" value="210"><span class="u">kg/cm²</span></div>
+        <div class="f"><label>Fluencia del acero fy</label><input id="fy" type="number" step="100" value="4200"><span class="u">kg/cm²</span></div>
+      </div>
+
+      <div class="card" style="margin-top:16px">
+        <h2><span class="n">3</span> Columna</h2>
+        <div class="f"><label>Lado mayor a</label><input id="colA" type="number" step="0.05" value="0.45"><span class="u">m</span></div>
+        <div class="f"><label>Lado menor b</label><input id="colB" type="number" step="0.05" value="0.45"><span class="u">m</span></div>
+        <div class="f wide"><label>Posición de la columna</label>
+          <select id="pos">
+            <option value="interior" selected>Interior (αs = 40)</option>
+            <option value="borde">De borde (αs = 30)</option>
+            <option value="esquina">De esquina (αs = 20)</option>
+          </select><span></span>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px">
+        <h2><span class="n">4</span> Dimensiones de la zapata</h2>
+        <button class="btn ghost" id="sugerir" type="button" style="margin:0 0 12px">✨ Sugerir dimensiones (T, S y h)</button>
+        <div class="f"><label>Largo T (paralelo al lado a)</label><input id="dimT" type="number" step="0.05" value="3.25"><span class="u">m</span></div>
+        <div class="f"><label>Ancho S (paralelo al lado b)</label><input id="dimS" type="number" step="0.05" value="3.25"><span class="u">m</span></div>
+        <div class="f"><label>Altura de zapata h</label><input id="dimH" type="number" step="0.05" value="0.50"><span class="u">m</span></div>
+        <div class="f"><label>Recubrimiento</label><input id="rec" type="number" step="0.5" value="7.5"><span class="u">cm</span></div>
+        <div class="sec">
+          <h3>Acero de refuerzo</h3>
+          <div class="f wide"><label>Varilla dirección T</label><select id="barX"></select><span></span></div>
+          <div class="f wide"><label>Varilla dirección S</label><select id="barY"></select><span></span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ RESULTADOS ============ -->
+    <div>
+      <div class="card res" id="resCard">
+        <h2><span class="n">✓</span> Resultados del diseño</h2>
+        <div id="resBody"></div>
+        <div class="sketch"><svg id="sketch" viewBox="0 0 590 330" width="100%" role="img" aria-label="Esquema de la zapata"></svg></div>
+        <p class="warn">⚠️ Herramienta educativa de <b>Design Modeling Academy</b> basada en el método clásico de diseño por resistencia (unidades: ton, m, kg/cm²). Los resultados son referenciales: todo diseño definitivo debe ser verificado y firmado por un ingeniero responsable conforme a la norma aplicable de tu país.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © Design Modeling Academy · BIM + IA para construcción ·
+    <a href="./index.html">¿Cómo funciona esta calculadora?</a>
+  </footer>
+</div>
+
+<script>
+/* ============ CONFIGURACIÓN DE ACCESO ============
+   La calculadora se "desbloquea" cuando la persona llega desde la landing
+   (index.html) tras dejar sus datos. La landing agrega ?acceso=TOKEN y
+   guarda una marca en localStorage. Cambia el TOKEN aquí y en index.html
+   si quieres invalidar enlaces compartidos. Pon REQUIERE_REGISTRO=false
+   para desactivar el candado (p. ej. si la página ya vive detrás de un
+   formulario de GoHighLevel). */
+const REQUIERE_REGISTRO = true;
+const TOKEN_ACCESO = 'dm2026';
+const URL_LANDING = './index.html';
+
+(function gate(){
+  if(!REQUIERE_REGISTRO) return;
+  const p = new URLSearchParams(location.search);
+  if(p.get('acceso') === TOKEN_ACCESO){ try{localStorage.setItem('dm_zapatas_acceso', TOKEN_ACCESO);}catch(e){} return; }
+  try{ if(localStorage.getItem('dm_zapatas_acceso') === TOKEN_ACCESO) return; }catch(e){}
+  const lock = document.getElementById('lock');
+  lock.hidden = false;
+  document.getElementById('lockBtn').href = URL_LANDING;
+})();
+
+/* ============ TABLA DE VARILLAS (de la hoja DM) ============ */
+const BARRAS = [
+  {n:'8 mm',  db:0.80, ab:0.50},
+  {n:'3/8"',  db:0.95, ab:0.71},
+  {n:'1/2"',  db:1.27, ab:1.29},
+  {n:'5/8"',  db:1.59, ab:2.00},
+  {n:'3/4"',  db:1.91, ab:2.84},
+  {n:'7/8"',  db:2.22, ab:3.87},
+  {n:'1"',    db:2.54, ab:5.10},
+  {n:'1 3/8"',db:3.58, ab:10.06},
+];
+
+/* CALC-START */
+/* ============ NÚCLEO DE CÁLCULO ============
+   Réplica del flujo de la hoja "Z-1 · Diseño de zapata aislada"
+   (Curso Design Modeling). Unidades: ton, m; f'c y fy en kg/cm². */
+function calcularZapata(inp){
+  const r = {};
+  // 2. Datos derivados
+  r.gammaM = (inp.gS + inp.gC) / 2;                       // t/m³
+  // 3. Esfuerzo neto del suelo  σn = σt·10 − γm·hf − S/C/1000  [t/m²]
+  r.sigmaN = inp.sigmaT*10 - r.gammaM*inp.hf - inp.SC/1000;
+  // 4. Área requerida en planta
+  r.Pserv = inp.PD + inp.PV;                              // ton
+  r.Az = r.Pserv / r.sigmaN;                              // m²
+  // Sugerencia de dimensiones (hoja CÁLCULO AUXILIAR):
+  //   L = √Az + 0.5(a−b) ; B = √Az − 0.5(a−b), redondeadas a 5 cm
+  const raiz = Math.sqrt(r.Az);
+  r.Tsug = Math.max(inp.a + 0.30, Math.ceil((raiz + 0.5*(inp.a - inp.b))*20)/20);
+  r.Ssug = Math.max(inp.b + 0.30, Math.ceil((raiz - 0.5*(inp.a - inp.b))*20)/20);
+  r.areaColoc = inp.T * inp.S;
+  r.okArea = r.areaColoc >= r.Az;
+  // 5. Reacción neta última  Pu = 1.4·PD + 1.7·PV ; Wnu = Pu/(T·S)
+  r.Pu = 1.4*inp.PD + 1.7*inp.PV;                         // ton
+  r.Wnu = r.Pu / (inp.T*inp.S);                           // t/m²
+  // 6. Peralte efectivo
+  r.d = inp.h - 0.075;                                    // m
+  // Volados
+  r.LvX = (inp.T - inp.a)/2;                              // m (dirección T)
+  r.LvY = (inp.S - inp.b)/2;                              // m (dirección S)
+  // 7. Verificación por cortante (φ = 0.85), en cada dirección
+  const phiV = 0.85, sqf = Math.sqrt(inp.fc);
+  r.phiVcX = phiV*0.53*sqf*inp.S*r.d*10;                  // ton (ancho S)
+  r.VuX = Math.max(0, r.Wnu*inp.S*(r.LvX - r.d));         // ton
+  r.phiVcY = phiV*0.53*sqf*inp.T*r.d*10;                  // ton (ancho T)
+  r.VuY = Math.max(0, r.Wnu*inp.T*(r.LvY - r.d));         // ton
+  r.okCorte = r.VuX <= r.phiVcX && r.VuY <= r.phiVcY;
+  // 8. Verificación por punzonamiento (φ = 0.85)
+  r.m = r.d + inp.a;  r.n = r.d + inp.b;                  // m
+  r.bo = 2*(r.m + r.n);                                   // m
+  const beta = inp.a/inp.b;
+  r.betaU = beta >= 2 ? 2 : beta;                         // tope de la hoja
+  r.alphaS = inp.pos === 'esquina' ? 20 : inp.pos === 'borde' ? 30 : 40;
+  r.phiVc1 = phiV*0.27*(2 + 4/r.betaU)*sqf*r.bo*r.d*10;   // ton
+  r.phiVc2 = phiV*1.06*sqf*r.bo*r.d*10;                   // ton
+  r.phiVc3 = phiV*0.27*(2 + r.alphaS*r.d/r.bo)*sqf*r.bo*r.d*10;
+  r.phiVcP = Math.min(r.phiVc1, r.phiVc2, r.phiVc3);
+  r.VuP = r.Pu - r.Wnu*r.m*r.n;                           // ton
+  r.okPunz = r.VuP <= r.phiVcP;
+  // 9. Diseño por flexión (φ = 0.9) — cada dirección
+  //    w = 0.8475 − √(0.7182 − 1.695·Mu·10⁵/(φ·f'c·b·d²))   [b, d en cm]
+  function flexion(Lv, ancho){
+    const f = {};
+    f.Mu = r.Wnu * ancho * Lv*Lv/2;                       // t·m
+    const bcm = ancho*100, dcm = r.d*100;
+    const rad = 0.7182 - 1.695*f.Mu*1e5/(0.9*inp.fc*bcm*dcm*dcm);
+    f.ok = rad >= 0;
+    f.w = f.ok ? 0.8475 - Math.sqrt(rad) : NaN;
+    f.rho = f.w*inp.fc/inp.fy;
+    f.AsReq = f.rho*bcm*dcm;                              // cm²
+    f.AsMin = 0.0018*bcm*dcm;                             // cm²
+    f.As = f.ok ? Math.max(f.AsReq, f.AsMin) : NaN;
+    return f;
+  }
+  // Acero paralelo a T resiste el volado LvX y se distribuye a lo ancho S
+  r.flexX = flexion(r.LvX, inp.S);
+  // Acero paralelo a S resiste el volado LvY y se distribuye a lo largo T
+  r.flexY = flexion(r.LvY, inp.T);
+  // Distribución de varillas: N = As/Ab ; esp = (ancho−2·rec−db)/(N−1)
+  function varillas(As, barra, anchoDist){
+    const v = {barra};
+    v.N = Math.max(2, Math.ceil(As/barra.ab));
+    v.esp = (anchoDist*100 - 2*inp.rec - barra.db)/(v.N - 1); // cm
+    v.espUsar = Math.floor(v.esp/2.5)*2.5;                    // redondeo a 2.5 cm
+    return v;
+  }
+  r.aceroX = r.flexX.ok ? varillas(r.flexX.As, inp.barX, inp.S) : null;
+  r.aceroY = r.flexY.ok ? varillas(r.flexY.As, inp.barY, inp.T) : null;
+  r.okFlex = r.flexX.ok && r.flexY.ok;
+  r.okTodo = r.okArea && r.okCorte && r.okPunz && r.okFlex && r.sigmaN > 0;
+  return r;
+}
+/* CALC-END */
+
+/* ============ UI ============ */
+const $ = id => document.getElementById(id);
+let modo = 'directo';
+
+document.querySelectorAll('#modoSeg button').forEach(b=>{
+  b.onclick = ()=>{
+    modo = b.dataset.modo;
+    document.querySelectorAll('#modoSeg button').forEach(x=>x.classList.toggle('on', x===b));
+    $('modoDirecto').hidden = modo!=='directo';
+    $('modoMetrados').hidden = modo!=='metrados';
+    run();
+  };
+});
+
+BARRAS.forEach((b,i)=>{
+  const o1 = new Option(`${b.n}  (Ab = ${b.ab.toFixed(2)} cm²)`, i);
+  const o2 = new Option(`${b.n}  (Ab = ${b.ab.toFixed(2)} cm²)`, i);
+  $('barX').add(o1); $('barY').add(o2);
+});
+$('barX').value = 3; $('barY').value = 3; // 5/8" por defecto
+
+function leer(){
+  let PD, PV;
+  if(modo==='metrados'){
+    const M=+$('mM').value, N=+$('mN').value, p=+$('mPisos').value;
+    PD = M*N*p*(+$('mCM').value)/1000;
+    PV = M*N*p*(+$('mCV').value)/1000;
+  }else{
+    PD = +$('PD').value; PV = +$('PV').value;
+  }
+  return {
+    PD, PV,
+    sigmaT:+$('sigmaT').value, Df:+$('Df').value, hf:+$('hf').value,
+    SC:+$('SC').value, gS:+$('gS').value, gC:+$('gC').value,
+    fc:+$('fc').value, fy:+$('fy').value,
+    a:Math.max(+$('colA').value, +$('colB').value),
+    b:Math.min(+$('colA').value, +$('colB').value),
+    pos:$('pos').value,
+    T:+$('dimT').value, S:+$('dimS').value, h:+$('dimH').value,
+    rec:+$('rec').value,
+    barX:BARRAS[+$('barX').value], barY:BARRAS[+$('barY').value],
+  };
+}
+
+const f2 = x => (Math.round(x*100)/100).toLocaleString('es', {minimumFractionDigits:2, maximumFractionDigits:2});
+const chip = ok => `<span class="chip ${ok?'ok':'bad'}">${ok?'✔ CUMPLE':'✖ VERIFICAR'}</span>`;
+
+function run(){
+  const inp = leer();
+  if(!(inp.PD>0) || !(inp.T>0) || !(inp.S>0) || !(inp.h>0.075) || !(inp.fc>0)){
+    $('resBody').innerHTML = '<p class="hint">Completa los datos de entrada para ver el diseño.</p>'; return;
+  }
+  const r = calcularZapata(inp);
+  if(r.sigmaN <= 0){
+    $('resBody').innerHTML = '<p class="hint" style="border-left-color:var(--bad)">El esfuerzo neto del suelo resulta ≤ 0. Revisa σt, hf y la sobrecarga: el suelo no alcanza a soportar el relleno.</p>'; return;
+  }
+  const rows = [];
+  rows.push(`<div class="row"><span>Esfuerzo neto del suelo σn</span><b>${f2(r.sigmaN)} t/m²</b></div>`);
+  rows.push(`<div class="row"><span>Carga de servicio P = PD + PV</span><b>${f2(r.Pserv)} ton</b></div>`);
+  rows.push(`<div class="row"><span>Área requerida Az</span><b>${f2(r.Az)} m²</b></div>`);
+  rows.push(`<div class="row"><span>Área colocada T×S = ${f2(inp.T)} × ${f2(inp.S)}</span><b>${f2(r.areaColoc)} m² ${chip(r.okArea)}</b></div>`);
+  rows.push(`<div class="row"><span>Carga última Pu = 1.4PD + 1.7PV</span><b>${f2(r.Pu)} ton</b></div>`);
+  rows.push(`<div class="row"><span>Reacción neta última Wnu</span><b>${f2(r.Wnu)} t/m²</b></div>`);
+  rows.push(`<div class="row"><span>Peralte efectivo d = h − 0.075</span><b>${f2(r.d)} m</b></div>`);
+  rows.push(`<div class="row"><span>Cortante dir. T: Vu ${f2(r.VuX)} ≤ φVc ${f2(r.phiVcX)} t</span><b>${chip(r.VuX<=r.phiVcX)}</b></div>`);
+  rows.push(`<div class="row"><span>Cortante dir. S: Vu ${f2(r.VuY)} ≤ φVc ${f2(r.phiVcY)} t</span><b>${chip(r.VuY<=r.phiVcY)}</b></div>`);
+  rows.push(`<div class="row"><span>Punzonamiento: Vu ${f2(r.VuP)} ≤ φVc ${f2(r.phiVcP)} t <small>(mín. de ${f2(r.phiVc1)} / ${f2(r.phiVc2)} / ${f2(r.phiVc3)})</small></span><b>${chip(r.okPunz)}</b></div>`);
+
+  let aceroHTML = '';
+  if(r.okFlex){
+    rows.push(`<div class="row"><span>Flexión dir. T: Mu ${f2(r.flexX.Mu)} t·m → As ${f2(r.flexX.As)} cm² <small>(mín ${f2(r.flexX.AsMin)})</small></span><b>${chip(true)}</b></div>`);
+    rows.push(`<div class="row"><span>Flexión dir. S: Mu ${f2(r.flexY.Mu)} t·m → As ${f2(r.flexY.As)} cm² <small>(mín ${f2(r.flexY.AsMin)})</small></span><b>${chip(true)}</b></div>`);
+    aceroHTML = `
+      <div class="final">
+        <h3>Diseño final</h3>
+        <div class="big">
+          🧱 Zapata de <b>${f2(inp.T)} × ${f2(inp.S)} m</b>, altura <b>h = ${f2(inp.h)} m</b><br>
+          ➡ Dirección T: <b>${r.aceroX.N} ф ${r.aceroX.barra.n} @ ${f2(r.aceroX.espUsar)} cm</b><br>
+          ⬆ Dirección S: <b>${r.aceroY.N} ф ${r.aceroY.barra.n} @ ${f2(r.aceroY.espUsar)} cm</b>
+        </div>
+        <small>${r.okTodo ? 'Todas las verificaciones cumplen. ✔' : 'Hay verificaciones pendientes: ajusta dimensiones o altura. ⚠'}</small>
+      </div>`;
+  }else{
+    aceroHTML = `<div class="hint" style="border-left-color:var(--bad)">La sección no alcanza para el momento actuante (radicando negativo en la fórmula de w). <b>Aumenta la altura h</b> o las dimensiones en planta.</div>`;
+  }
+  $('resBody').innerHTML = rows.join('') + aceroHTML;
+  dibujar(inp, r);
+}
+
+/* Sugerir T, S (área requerida) y h (menor múltiplo de 5 cm que cumple) */
+$('sugerir').onclick = ()=>{
+  const base = leer();
+  const pre = calcularZapata(base);
+  $('dimT').value = pre.Tsug.toFixed(2);
+  $('dimS').value = pre.Ssug.toFixed(2);
+  let h = 0.30;
+  for(let i=0;i<40;i++){
+    const inp = leer(); inp.T = pre.Tsug; inp.S = pre.Ssug; inp.h = h;
+    const r = calcularZapata(inp);
+    if(r.okCorte && r.okPunz && r.okFlex) break;
+    h += 0.05;
+  }
+  $('dimH').value = h.toFixed(2);
+  run();
+};
+
+/* ============ ESQUEMA SVG ============ */
+function dibujar(inp, r){
+  const svg = $('sketch');
+  const esc = 200/Math.max(inp.T, inp.S);
+  const W = inp.T*esc, H = inp.S*esc, cx = 130, cy = 165;
+  const ca = inp.a*esc, cb = inp.b*esc;
+  const px = cx - W/2, py = cy - H/2;
+  // corte
+  const sx = 330, sw = 200, sh = Math.max(26, inp.h*90), sy = 200;
+  const colW = Math.max(14, inp.a/inp.T*sw);
+  svg.innerHTML = `
+    <text x="${cx}" y="28" text-anchor="middle" font-size="12" font-weight="700" fill="#0E2438">PLANTA</text>
+    <rect x="${px}" y="${py}" width="${W}" height="${H}" fill="#fdf3ea" stroke="#EE8A3C" stroke-width="2"/>
+    <rect x="${cx-ca/2}" y="${cy-cb/2}" width="${ca}" height="${cb}" fill="#0E2438"/>
+    ${r.aceroX ? Array.from({length:Math.min(r.aceroX.N,14)}, (_,i)=>{
+      const y = py+8 + i*(H-16)/(Math.min(r.aceroX.N,14)-1);
+      return `<line x1="${px+5}" y1="${y}" x2="${px+W-5}" y2="${y}" stroke="#b45a12" stroke-width="1" opacity=".55"/>`;
+    }).join('') : ''}
+    ${r.aceroY ? Array.from({length:Math.min(r.aceroY.N,14)}, (_,i)=>{
+      const x = px+8 + i*(W-16)/(Math.min(r.aceroY.N,14)-1);
+      return `<line x1="${x}" y1="${py+5}" x2="${x}" y2="${py+H-5}" stroke="#8a4a10" stroke-width="1" opacity=".4"/>`;
+    }).join('') : ''}
+    <text x="${cx}" y="${py+H+18}" text-anchor="middle" font-size="11" fill="#5a6b7b">T = ${f2(inp.T)} m</text>
+    <text x="${px-8}" y="${cy}" text-anchor="middle" font-size="11" fill="#5a6b7b" transform="rotate(-90 ${px-8} ${cy})">S = ${f2(inp.S)} m</text>
+    <text x="${cx}" y="${cy+cb/2+13}" text-anchor="middle" font-size="9" fill="#0E2438">Col. ${f2(inp.a)}×${f2(inp.b)}</text>
+
+    <text x="${sx+sw/2}" y="28" text-anchor="middle" font-size="12" font-weight="700" fill="#0E2438">CORTE</text>
+    <line x1="${sx-10}" y1="${sy-sh-inp.Df*40}" x2="${sx+sw+10}" y2="${sy-sh-inp.Df*40}" stroke="#5a6b7b" stroke-dasharray="4 3"/>
+    <text x="${sx+sw+8}" y="${sy-sh-inp.Df*40-5}" font-size="9" fill="#5a6b7b" text-anchor="end">N.T. ±0.00</text>
+    <rect x="${sx+sw/2-colW/2}" y="${sy-sh-inp.Df*40}" width="${colW}" height="${inp.Df*40}" fill="#0E2438"/>
+    <rect x="${sx}" y="${sy-sh}" width="${sw}" height="${sh}" fill="#fdf3ea" stroke="#EE8A3C" stroke-width="2"/>
+    <line x1="${sx+8}" y1="${sy-8}" x2="${sx+sw-8}" y2="${sy-8}" stroke="#b45a12" stroke-width="2"/>
+    ${Array.from({length:9},(_,i)=>`<circle cx="${sx+16+i*(sw-32)/8}" cy="${sy-12}" r="2" fill="#8a4a10"/>`).join('')}
+    <text x="${sx+sw+8}" y="${sy-sh/2+3}" font-size="10" fill="#5a6b7b">h = ${f2(inp.h)}</text>
+    <text x="${sx-8}" y="${sy-sh-inp.Df*20}" font-size="11" fill="#5a6b7b" text-anchor="end">Df = ${f2(inp.Df)} m</text>
+    <line x1="${sx-30}" y1="${sy-sh-inp.Df*40}" x2="${sx-30}" y2="${sy}" stroke="#5a6b7b" stroke-width="1"/>
+    <line x1="${sx-34}" y1="${sy-sh-inp.Df*40}" x2="${sx-26}" y2="${sy-sh-inp.Df*40}" stroke="#5a6b7b"/>
+    <line x1="${sx-34}" y1="${sy}" x2="${sx-26}" y2="${sy}" stroke="#5a6b7b"/>
+    <text x="${sx+sw/2}" y="${sy+22}" text-anchor="middle" font-size="10" fill="#5a6b7b">${r.aceroX?`${r.aceroX.N} ф ${r.aceroX.barra.n} @ ${f2(r.aceroX.espUsar)} · ${r.aceroY?`${r.aceroY.N} ф ${r.aceroY.barra.n} @ ${f2(r.aceroY.espUsar)}`:''}`:''}</text>`;
+}
+
+document.querySelectorAll('input, select').forEach(el=> el.addEventListener('input', run));
+run();
+</script>
+</body>
+</html>
