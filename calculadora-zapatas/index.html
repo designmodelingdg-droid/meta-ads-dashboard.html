@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculadora de Zapatas GRATIS · Design Modeling Academy</title>
+<meta name="description" content="Descarga gratis la Calculadora de Zapatas de Design Modeling Academy: dimensiona y verifica una zapata aislada paso a paso (área, cortante, punzonamiento y acero).">
+<meta property="og:title" content="Calculadora de Zapatas GRATIS · Design Modeling Academy">
+<meta property="og:description" content="Dimensiona y verifica tu zapata aislada en minutos: presiones del suelo, cortante, punzonamiento y acero de refuerzo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#0E2438;--navy2:#0A1B2B;--orange:#EE8A3C;--orange-d:#d97427;--ink:#132433;--ink2:#5a6b7b;--line:#e3e9ef}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Poppins',system-ui,sans-serif;background:linear-gradient(160deg,var(--navy) 0%,var(--navy2) 100%);color:#fff}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 18px}
+  .logo{font-weight:800;letter-spacing:.12em;font-size:.78rem;color:var(--orange);text-transform:uppercase;text-align:center;padding-top:28px}
+  /* HERO */
+  .hero{display:grid;grid-template-columns:1.15fr 1fr;gap:36px;align-items:center;padding:34px 0 50px}
+  @media(max-width:860px){.hero{grid-template-columns:1fr}}
+  .hero h1{font-size:clamp(1.7rem,4.5vw,2.6rem);font-weight:800;line-height:1.2}
+  .hero h1 em{color:var(--orange);font-style:normal}
+  .hero p.sub{color:#b9c6d2;margin:16px 0 22px;font-size:1.02rem;line-height:1.6}
+  .bullets{list-style:none;display:grid;gap:10px;margin-bottom:8px}
+  .bullets li{display:flex;gap:10px;align-items:flex-start;color:#dce6ee;font-size:.95rem}
+  .bullets li b{color:#fff}
+  .bullets .tick{color:var(--orange);font-weight:800;flex:none}
+  /* FORM CARD */
+  .formcard{background:#fff;color:var(--ink);border-radius:16px;padding:26px;box-shadow:0 18px 50px rgba(0,0,0,.35)}
+  .formcard h2{font-size:1.15rem;font-weight:700;color:var(--navy)}
+  .formcard p.small{color:var(--ink2);font-size:.85rem;margin:6px 0 16px}
+  .formcard label{display:block;font-size:.82rem;font-weight:600;color:var(--navy);margin:12px 0 4px}
+  .formcard input,.formcard select{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:10px;font:inherit;font-size:.95rem;background:#fbfcfe}
+  .formcard input:focus,.formcard select:focus{outline:2px solid var(--orange);border-color:var(--orange)}
+  .btn{display:block;width:100%;padding:14px;border:0;border-radius:11px;background:var(--orange);color:#fff;font:inherit;font-weight:800;font-size:1rem;cursor:pointer;margin-top:18px}
+  .btn:hover{background:var(--orange-d)}
+  .btn[disabled]{opacity:.6;cursor:wait}
+  .legal{font-size:.72rem;color:var(--ink2);margin-top:10px;line-height:1.5;text-align:center}
+  .err{display:none;background:#fdeaea;color:#d64545;font-size:.82rem;border-radius:8px;padding:9px 12px;margin-top:12px}
+  /* SECCIONES */
+  section.light{background:#f5f8fb;color:var(--ink);padding:56px 0}
+  section.dark{padding:56px 0}
+  h2.title{font-size:clamp(1.3rem,3vw,1.7rem);font-weight:800;text-align:center;margin-bottom:8px}
+  section.light h2.title{color:var(--navy)}
+  p.center{text-align:center;color:var(--ink2);max-width:640px;margin:0 auto 34px;font-size:.95rem}
+  section.dark p.center{color:#b9c6d2}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  @media(max-width:860px){.steps{grid-template-columns:1fr}}
+  .step{background:#fff;border-radius:13px;padding:20px;border-top:4px solid var(--orange);box-shadow:0 6px 18px rgba(14,36,56,.08)}
+  .step .num{font-size:.75rem;font-weight:800;color:var(--orange);letter-spacing:.1em}
+  .step h3{color:var(--navy);font-size:.98rem;margin:6px 0 8px}
+  .step p{color:var(--ink2);font-size:.86rem;line-height:1.55}
+  .step code{background:#f2f6fa;color:var(--navy);padding:1px 6px;border-radius:6px;font-size:.8rem}
+  .cta2{display:inline-block;background:var(--orange);color:#fff;font-weight:800;text-decoration:none;padding:14px 34px;border-radius:11px;margin-top:26px}
+  .cta2:hover{background:var(--orange-d)}
+  .centered{text-align:center}
+  footer{color:#8fa2b3;text-align:center;font-size:.78rem;padding:30px 0 42px}
+</style>
+</head>
+<body>
+
+<div class="logo">Design Modeling Academy</div>
+
+<div class="wrap">
+  <div class="hero">
+    <div>
+      <h1>Calcula tu <em>zapata aislada</em> en minutos, no en horas</h1>
+      <p class="sub">Accede <b>gratis</b> a la calculadora que usamos en nuestro curso de Diseño de Cimentaciones: dimensiona la zapata, verifica cortante y punzonamiento, y obtén el acero de refuerzo listo para dibujar.</p>
+      <ul class="bullets">
+        <li><span class="tick">✔</span><span><b>Dimensionamiento en planta</b> a partir de la capacidad del suelo (T × S sugeridos automáticamente).</span></li>
+        <li><span class="tick">✔</span><span><b>Verificaciones al instante</b>: cortante en una dirección y punzonamiento con sus tres límites.</span></li>
+        <li><span class="tick">✔</span><span><b>Acero de refuerzo</b> en ambas direcciones: número de varillas, diámetro y espaciamiento.</span></li>
+        <li><span class="tick">✔</span><span><b>Esquema de planta y corte</b> que se actualiza con tus datos.</span></li>
+      </ul>
+    </div>
+
+    <!-- ==================== FORMULARIO ==================== -->
+    <div class="formcard" id="form">
+      <h2>Accede gratis a la calculadora</h2>
+      <p class="small">Déjanos tus datos y entra de inmediato. Sin costo.</p>
+
+      <!-- Si configuras GHL_FORM_IFRAME_URL, este formulario se reemplaza
+           por tu formulario nativo de GoHighLevel -->
+      <div id="ghlIframe" hidden></div>
+
+      <form id="leadForm" novalidate>
+        <label for="nombre">Nombre completo *</label>
+        <input id="nombre" name="nombre" type="text" autocomplete="name" required placeholder="Ej. María Fernanda López">
+        <label for="email">Correo electrónico *</label>
+        <input id="email" name="email" type="email" autocomplete="email" required placeholder="tucorreo@ejemplo.com">
+        <label for="telefono">Número de WhatsApp *</label>
+        <input id="telefono" name="telefono" type="tel" autocomplete="tel" required placeholder="+593 99 999 9999">
+        <label for="perfil">¿A qué te dedicas? *</label>
+        <select id="perfil" name="perfil" required>
+          <option value="" selected disabled>Selecciona una opción…</option>
+          <option>Estudiante de ingeniería / arquitectura</option>
+          <option>Ingeniero(a) o arquitecto(a) independiente</option>
+          <option>Trabajo en constructora / consultora</option>
+          <option>Docente</option>
+          <option>Otro</option>
+        </select>
+        <div class="err" id="errBox">Revisa los campos marcados: necesitamos tu nombre, un correo válido y tu WhatsApp.</div>
+        <button class="btn" id="submitBtn" type="submit">QUIERO MI CALCULADORA →</button>
+        <p class="legal">Al enviar aceptas recibir información de Design Modeling Academy. Tus datos están seguros y puedes darte de baja cuando quieras.</p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== CÓMO FUNCIONA ==================== -->
+<section class="light">
+  <div class="wrap">
+    <h2 class="title">¿Cómo se calcula una zapata aislada?</h2>
+    <p class="center">La calculadora sigue el mismo paso a paso que enseñamos en el curso de Diseño de Cimentaciones. Esto es lo que hace por ti:</p>
+    <div class="steps">
+      <div class="step"><div class="num">PASO 1</div><h3>Cargas de la columna</h3><p>Ingresas la carga muerta y viva (PD, PV) directamente, o las calculas por metrados con el área tributaria, número de pisos y cargas por m².</p></div>
+      <div class="step"><div class="num">PASO 2</div><h3>Esfuerzo neto del suelo</h3><p>Con la capacidad admisible del estudio de suelos se descuenta el peso del relleno y la sobrecarga: <code>σn = σt·10 − γm·hf − S/C</code>.</p></div>
+      <div class="step"><div class="num">PASO 3</div><h3>Área en planta</h3><p>El área requerida es <code>Az = (PD+PV)/σn</code>. La calculadora te sugiere dimensiones T × S considerando la forma de la columna.</p></div>
+      <div class="step"><div class="num">PASO 4</div><h3>Reacción última</h3><p>Se amplifican las cargas <code>Pu = 1.4·PD + 1.7·PV</code> y se obtiene la presión última de diseño <code>Wnu = Pu/(T·S)</code>.</p></div>
+      <div class="step"><div class="num">PASO 5</div><h3>Cortante y punzonamiento</h3><p>Se verifica el cortante en cada dirección y el punzonamiento alrededor de la columna con sus tres límites (β, αs y el límite general).</p></div>
+      <div class="step"><div class="num">PASO 6</div><h3>Acero de refuerzo</h3><p>Se diseña por flexión el acero en ambas direcciones, se compara con la cuantía mínima (0.0018) y te entrega varillas, cantidad y espaciamiento.</p></div>
+    </div>
+    <div class="centered"><a class="cta2" href="#form">ACCEDER GRATIS AHORA →</a></div>
+  </div>
+</section>
+
+<!-- ==================== PARA QUIÉN ==================== -->
+<section class="dark">
+  <div class="wrap">
+    <h2 class="title">¿Para quién es esta herramienta?</h2>
+    <p class="center">Para estudiantes y profesionales de ingeniería civil y arquitectura que quieren <b>entender y verificar</b> el diseño de cimentaciones superficiales sin perderse en hojas de cálculo. Es la puerta de entrada al mundo <b>BIM + IA</b> que enseñamos en Design Modeling Academy.</p>
+    <div class="centered"><a class="cta2" href="#form">QUIERO MI CALCULADORA →</a></div>
+  </div>
+</section>
+
+<footer>© Design Modeling Academy · Quito, Ecuador · BIM + IA para construcción<br>Herramienta educativa: el diseño definitivo debe ser validado por un ingeniero responsable.</footer>
+
+<script>
+/* ==================== CONFIGURACIÓN GOHIGHLEVEL ====================
+   Elige UNA de las dos vías de integración:
+
+   A) WEBHOOK (recomendada si alojas esta página fuera de GHL):
+      En GoHighLevel crea un Workflow con disparador "Inbound Webhook",
+      copia la URL y pégala en GHL_WEBHOOK_URL. Cada envío llega como JSON
+      {nombre, email, telefono, perfil, fuente} y en el workflow lo mapeas
+      a un contacto + etiqueta "lead-calculadora-zapatas".
+
+   B) FORMULARIO NATIVO DE GHL:
+      Crea el formulario en GHL (Sites → Forms), copia la URL del embed
+      (https://api.leadconnectorhq.com/widget/form/XXXX) y pégala en
+      GHL_FORM_IFRAME_URL. El formulario nativo reemplaza al de esta página;
+      configura en GHL la redirección al terminar hacia URL_CALCULADORA
+      incluyendo ?acceso=dm2026.
+
+   Si ambas quedan vacías, el formulario igual desbloquea la calculadora
+   (modo prueba, los leads no se guardan). */
+const GHL_WEBHOOK_URL     = '';   // ← pega aquí tu URL de Inbound Webhook de GHL
+const GHL_FORM_IFRAME_URL = '';   // ← o pega aquí la URL del form nativo de GHL
+const URL_CALCULADORA     = './app.html';
+const TOKEN_ACCESO        = 'dm2026'; // debe coincidir con app.html
+
+/* ==================== LÓGICA ==================== */
+if(GHL_FORM_IFRAME_URL){
+  document.getElementById('leadForm').hidden = true;
+  const box = document.getElementById('ghlIframe');
+  box.hidden = false;
+  box.innerHTML = `<iframe src="${GHL_FORM_IFRAME_URL}" style="width:100%;min-height:460px;border:none;border-radius:10px" title="Formulario de registro"></iframe>`;
+}
+
+document.getElementById('leadForm').addEventListener('submit', async (e)=>{
+  e.preventDefault();
+  const $ = id => document.getElementById(id);
+  const datos = {
+    nombre:   $('nombre').value.trim(),
+    email:    $('email').value.trim(),
+    telefono: $('telefono').value.trim(),
+    perfil:   $('perfil').value,
+    fuente:   'calculadora-zapatas',
+    pagina:   location.href,
+  };
+  const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(datos.email);
+  const telOk = datos.telefono.replace(/\D/g,'').length >= 7;
+  if(!datos.nombre || !emailOk || !telOk || !datos.perfil){
+    document.getElementById('errBox').style.display = 'block';
+    return;
+  }
+  document.getElementById('errBox').style.display = 'none';
+  const btn = document.getElementById('submitBtn');
+  btn.disabled = true; btn.textContent = 'Enviando…';
+
+  if(GHL_WEBHOOK_URL){
+    try{
+      await fetch(GHL_WEBHOOK_URL, {
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify(datos),
+        // GHL acepta el POST aunque la respuesta no sea legible desde el navegador
+        mode:'no-cors',
+      });
+    }catch(err){ /* no bloqueamos el acceso si el webhook falla */ }
+  }
+  try{ localStorage.setItem('dm_zapatas_acceso', TOKEN_ACCESO); }catch(err){}
+  location.href = URL_CALCULADORA + '?acceso=' + TOKEN_ACCESO;
+});
+</script>
+</body>
+</html>
