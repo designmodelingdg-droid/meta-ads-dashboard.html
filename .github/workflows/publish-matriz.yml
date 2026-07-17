@@ -1,14 +1,14 @@
 name: Publicar matriz.json (GitHub Pages)
 
-# Publica matriz-viral/matriz/matriz.json a GitHub Pages para que la app de
-# contenido (dg-contenido-ia.vercel.app) lea SIEMPRE la versión fresca desde
-# una URL pública, sin que el repo deje de ser privado.
+# Publica matriz-viral/matriz/matriz.json y el lead magnet (calculadora de
+# zapatas) a GitHub Pages, empujando el contenido a la rama gh-pages.
+# Esta vía activa Pages automáticamente y NO requiere ningún paso manual en
+# Settings (el método anterior, "Source: GitHub Actions", fallaba porque el
+# token del workflow no puede habilitar Pages por sí mismo).
 #
-# URL pública resultante:
+# URLs públicas resultantes:
 #   https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/matriz.json
-#
-# Requisito de una sola vez: Settings → Pages → "Build and deployment" →
-# Source: "GitHub Actions". (Ver .github/workflows/README.md)
+#   https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/calculadora-zapatas/
 
 on:
   push:
@@ -21,11 +21,9 @@ on:
       - calculadora-zapatas/**
   workflow_dispatch: {}                      # permite correrla a mano desde la pestaña Actions
 
-# Permisos mínimos para desplegar a Pages con el token integrado (sin PAT)
+# El token integrado solo necesita poder escribir en la rama gh-pages
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 # Un solo despliegue a la vez; no cancela el que está en curso
 concurrency:
@@ -35,9 +33,6 @@ concurrency:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -49,6 +44,8 @@ jobs:
           cp matriz-viral/matriz/matriz.json public/matriz.json
           # Lead magnet: landing + calculadora de zapatas
           cp -r calculadora-zapatas public/calculadora-zapatas
+          # Sin procesamiento Jekyll
+          touch public/.nojekyll
           # index mínimo para que la raíz no dé 404 y sirva de estado
           cat > public/index.html <<'HTML'
           <!doctype html><meta charset="utf-8">
@@ -63,17 +60,9 @@ jobs:
           HTML
           echo "Publicando $(python3 -c "import json;print(len(json.load(open('public/matriz.json'))['reels']))") reels."
 
-      - name: Configurar Pages
-        uses: actions/configure-pages@v5
+      - name: Publicar en la rama gh-pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          # Activa Pages automáticamente si aún no está habilitado en Settings
-          enablement: true
-
-      - name: Subir artefacto
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: public
-
-      - name: Desplegar a Pages
-        id: deploy
-        uses: actions/deploy-pages@v4
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: public
+          commit_message: 'Publicar sitio (matriz + calculadora de zapatas)'
