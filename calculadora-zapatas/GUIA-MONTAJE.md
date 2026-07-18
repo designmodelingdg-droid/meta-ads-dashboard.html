@@ -8,8 +8,10 @@ Diseño de Cimentaciones (hoja `Z-1`).
 
 | Archivo | Qué es |
 |---|---|
-| `index.html` | **Landing de captura**: explica cómo se calcula una zapata y pide nombre, correo, WhatsApp y pregunta de calificación ("¿A qué te dedicas?"). Al enviar, redirige a la calculadora. |
+| `index.html` | **Landing de captura**: explica cómo se calcula la zapata y cómo se usa la app, y pide nombre, correo, WhatsApp y pregunta de calificación ("¿A qué te dedicas?"). Al enviar, redirige a la calculadora. **El Inbound Webhook de GHL ya está conectado.** |
 | `app.html` | **La calculadora** (autocontenida, sin servidores). Incluye un "candado": si alguien llega sin registrarse, le muestra un aviso y lo manda a la landing. |
+| `ghl-landing.html` | **La misma landing lista para GoHighLevel**: pega el archivo completo en un elemento *Custom Code* de tu funnel (sección de ancho completo). Se genera desde `index.html` con URLs absolutas. |
+| `img/vista-calculadora.png` | Captura de la calculadora usada en la sección "Así se usa". |
 | `GUIA-MONTAJE.md` | Esta guía. |
 
 ## URLs públicas (GitHub Pages)
@@ -29,15 +31,20 @@ la opción C más abajo.)
 En `index.html`, al inicio del `<script>` final, hay dos constantes. Elige
 **una** de estas vías:
 
-### Opción A — Inbound Webhook (recomendada, 5 minutos)
+### Opción A — Inbound Webhook (YA CONECTADA)
 
-1. En GHL: **Automation → Workflows → Create Workflow → Inbound Webhook** como disparador.
-2. Copia la URL del webhook y pégala en `GHL_WEBHOOK_URL` de `index.html`.
-3. Envía un registro de prueba desde la landing para que GHL "aprenda" el JSON
-   (`nombre`, `email`, `telefono`, `perfil`, `fuente`).
-4. En el workflow: acción **Create/Update Contact** mapeando esos campos, más
-   una etiqueta tipo `lead-calculadora-zapatas`, y de ahí tu secuencia de
-   seguimiento (WhatsApp/email del bot de ventas).
+El webhook del workflow "Webhook Entrante" ya está pegado en
+`GHL_WEBHOOK_URL` de `index.html` (y por tanto en `ghl-landing.html`).
+Pasos que quedan en GHL, una sola vez:
+
+1. Con el disparador abierto, pulsa **"Recuperar solicitudes de muestra"** —
+   ya se envió un registro de prueba con el JSON
+   (`nombre`, `email`, `telefono`, `perfil`, `fuente`, `pagina`).
+2. Mapea los campos en la acción **Create/Update Contact**
+   (nombre → Full Name, email → Email, telefono → Phone, perfil → campo
+   personalizado), agrega una etiqueta tipo `lead-calculadora-zapatas`,
+   **guarda el trigger y publica el workflow**.
+3. Encadena tu secuencia de seguimiento (WhatsApp/email del bot de ventas).
 
 ### Opción B — Formulario nativo de GHL
 
