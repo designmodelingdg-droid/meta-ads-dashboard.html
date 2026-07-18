@@ -1,14 +1,12 @@
-<!doctype html>
-<html lang="es">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Calculadora de Zapatas GRATIS · Design Modeling Academy</title>
-<meta name="description" content="Descarga gratis la Calculadora de Zapatas de Design Modeling Academy: dimensiona y verifica una zapata aislada paso a paso (área, cortante, punzonamiento y acero).">
-<meta property="og:title" content="Calculadora de Zapatas GRATIS · Design Modeling Academy">
-<meta property="og:description" content="Dimensiona y verifica tu zapata aislada en minutos: presiones del suelo, cortante, punzonamiento y acero de refuerzo.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- ============================================================
+  LANDING CALCULADORA DE ZAPATAS · Design Modeling Academy
+  Versión para GoHighLevel: pega TODO este archivo dentro de un
+  elemento "Custom Code / HTML" de tu funnel, en una sección de
+  ancho completo y sin padding. Ocupa la página entera.
+  - El formulario envía los leads a tu Inbound Webhook de GHL.
+  - Al enviar, redirige a la calculadora ya desbloqueada.
+  Generado desde index.html (no editar a mano: ver GUIA-MONTAJE.md).
+============================================================ -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{--navy:#0E2438;--navy2:#0A1B2B;--orange:#EE8A3C;--orange-d:#d97427;--ink:#132433;--ink2:#5a6b7b;--line:#e3e9ef}
@@ -64,8 +62,6 @@
   .centered{text-align:center}
   footer{color:#8fa2b3;text-align:center;font-size:.78rem;padding:30px 0 42px}
 </style>
-</head>
-<body>
 
 <div class="logo">Design Modeling Academy</div>
 
@@ -138,7 +134,7 @@
     <h2 class="title">Así de fácil se usa</h2>
     <p class="center">No necesitas instalar nada: funciona desde el navegador de tu celular o computador. En 4 pasos tienes tu zapata diseñada:</p>
     <div class="uso">
-      <img src="./img/vista-calculadora.png" alt="Vista de la Calculadora de Zapatas de Design Modeling Academy" loading="lazy">
+      <img src="https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/calculadora-zapatas/img/vista-calculadora.png" alt="Vista de la Calculadora de Zapatas de Design Modeling Academy" loading="lazy">
       <ol class="usolist">
         <li><span><b>Ingresa las cargas</b> de tu columna (PD y PV en toneladas) o calcúlalas por metrados con el área tributaria.</span></li>
         <li><span><b>Copia los datos del estudio de suelos</b>: capacidad admisible, profundidad de desplante y materiales (f'c, fy).</span></li>
@@ -182,7 +178,7 @@
    (modo prueba, los leads no se guardan). */
 const GHL_WEBHOOK_URL     = 'https://services.leadconnectorhq.com/hooks/nkKbOarn5IwHeMv48uY9/webhook-trigger/ed7611f9-9e5a-46e9-ae57-dda3742220c2';
 const GHL_FORM_IFRAME_URL = '';   // ← o pega aquí la URL del form nativo de GHL
-const URL_CALCULADORA     = './app.html';
+const URL_CALCULADORA     = 'https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/calculadora-zapatas/app.html';
 const TOKEN_ACCESO        = 'dm2026'; // debe coincidir con app.html
 
 /* ==================== LÓGICA ==================== */
@@ -229,5 +225,3 @@ document.getElementById('leadForm').addEventListener('submit', async (e)=>{
   location.href = URL_CALCULADORA + '?acceso=' + TOKEN_ACCESO;
 });
 </script>
-</body>
-</html>
