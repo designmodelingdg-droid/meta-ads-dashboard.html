@@ -4,8 +4,9 @@
   Azul #003e5c · Naranja #ca7520 · Navy #001e30
   PEGAR EN: Sharp CRM/GHL → Sites → Custom Code container
   (sección de ancho completo y sin padding — ocupa la página entera).
-  - El formulario envía los leads a tu Inbound Webhook de GHL.
-  - Al enviar, redirige a la calculadora ya desbloqueada.
+  - Muestra el formulario nativo de GHL "Calculadora de Zapatas -
+    Registro" (omuCtBdv0ZWbP9kAS5TB): los contactos llegan directo al CRM
+    y GHL redirige a la calculadora al enviar.
   Generado desde index.html (no editar a mano: ver GUIA-MONTAJE.md).
 ============================================================ -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -404,16 +405,30 @@ footer .footer-copy { font-size: 13px; max-width: 620px; margin: 0 auto 18px; li
    configura en GHL la redirección al terminar hacia URL_CALCULADORA
    incluyendo ?acceso=dm2026. */
 const GHL_WEBHOOK_URL     = 'https://services.leadconnectorhq.com/hooks/nkKbOarn5IwHeMv48uY9/webhook-trigger/ed7611f9-9e5a-46e9-ae57-dda3742220c2';
-const GHL_FORM_IFRAME_URL = '';
+// Formulario nativo "Calculadora de Zapatas - Registro" (los contactos llegan
+// directo al CRM, sin cargos de webhook). Reemplaza al formulario propio.
+const GHL_FORM_IFRAME_URL = 'https://api.leadconnectorhq.com/widget/form/omuCtBdv0ZWbP9kAS5TB';
 const URL_CALCULADORA     = 'https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/calculadora-zapatas/app.html';
 const TOKEN_ACCESO        = 'dm2026'; // debe coincidir con app.html
 
 /* ==================== LÓGICA ==================== */
 if(GHL_FORM_IFRAME_URL){
+  // Embed oficial de GHL (con form_embed.js para el auto-ajuste de altura)
+  const formId = GHL_FORM_IFRAME_URL.split('/').pop();
   document.getElementById('leadForm').hidden = true;
   const box = document.getElementById('ghlIframe');
   box.hidden = false;
-  box.innerHTML = `<iframe src="${GHL_FORM_IFRAME_URL}" style="width:100%;min-height:460px;border:none;border-radius:10px" title="Formulario de registro"></iframe>`;
+  box.innerHTML = `<iframe src="${GHL_FORM_IFRAME_URL}" id="inline-${formId}"
+    data-layout="{'id':'INLINE'}" data-trigger-type="alwaysShow" data-trigger-value=""
+    data-activation-type="alwaysActivated" data-activation-value=""
+    data-deactivation-type="neverDeactivate" data-deactivation-value=""
+    data-form-name="Calculadora de Zapatas - Registro" data-height="620"
+    data-layout-iframe-id="inline-${formId}" data-form-id="${formId}"
+    style="width:100%;min-height:620px;border:none;border-radius:6px"
+    title="Calculadora de Zapatas - Registro"></iframe>`;
+  const s = document.createElement('script');
+  s.src = 'https://link.msgsndr.com/js/form_embed.js';
+  box.appendChild(s);
 }
 
 document.getElementById('leadForm').addEventListener('submit', async (e)=>{

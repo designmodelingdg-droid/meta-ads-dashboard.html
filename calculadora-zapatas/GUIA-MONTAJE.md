@@ -31,7 +31,14 @@ la opción C más abajo.)
 En `index.html`, al inicio del `<script>` final, hay dos constantes. Elige
 **una** de estas vías:
 
-### Opción A — Inbound Webhook (YA CONECTADA)
+> **ESTADO ACTUAL:** está activa la **Opción B** — el formulario nativo de GHL
+> "Calculadora de Zapatas - Registro" (`omuCtBdv0ZWbP9kAS5TB`) reemplaza al
+> formulario propio en la landing y en `ghl-landing.html`. Los contactos
+> llegan directo al CRM (sin cargos de webhook) y GHL redirige a la
+> calculadora al enviar. El workflow del Inbound Webhook puede eliminarse o
+> reemplazarse por un trigger "Form Submitted" para el bot de seguimiento.
+
+### Opción A — Inbound Webhook (en reserva)
 
 El webhook del workflow "Webhook Entrante" ya está pegado en
 `GHL_WEBHOOK_URL` de `index.html` (y por tanto en `ghl-landing.html`).
