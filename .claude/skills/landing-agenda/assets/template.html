@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{META_TITLE}}</title>
+<meta name="description" content="{{META_DESCRIPTION}}">
+<meta name="robots" content="noindex, nofollow">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@500;600;700;800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --azul-principal: #003e5c;
+  --azul-medio: #0a5a80;
+  --azul-navy: #001e30;
+  --naranja: #ca7520;
+  --naranja-claro: #e8a04a;
+  --naranja-palido: #f7e8cc;
+  --crema: #faf6ef;
+  --blanco: #ffffff;
+  --gris-texto: #2c3e50;
+  --gris-suave: #5b6b7a;
+  --gris-borde: #e5e7eb;
+  --verde: #22a06b;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  background: linear-gradient(180deg, #f4f9fc 0%, #ffffff 100%);
+  color: var(--gris-texto);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3 {
+  font-family: 'Overpass', sans-serif;
+  color: var(--azul-navy);
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+a { color: var(--azul-medio); }
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, var(--azul-principal) 0%, var(--azul-navy) 100%);
+  color: white;
+  padding: 52px 24px 64px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: -1px; left: 0; right: 0;
+  height: 40px;
+  background: linear-gradient(180deg, transparent 0%, #f4f9fc 100%);
+}
+.hero-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.check-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px; height: 80px;
+  background: var(--verde);
+  border-radius: 50%;
+  margin-bottom: 22px;
+  box-shadow: 0 8px 24px rgba(34, 160, 107, 0.35);
+}
+.check-circle svg { width: 42px; height: 42px; }
+.hero h1 {
+  color: white;
+  font-size: clamp(28px, 5.4vw, 42px);
+  font-weight: 800;
+  margin-bottom: 14px;
+  letter-spacing: -0.5px;
+}
+.hero h1 .accent { color: var(--naranja-claro); }
+.hero p {
+  font-size: clamp(16px, 2.6vw, 19px);
+  color: rgba(255,255,255,0.92);
+  max-width: 580px;
+  margin: 0 auto 6px;
+}
+.hero p.lead {
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.hero .badge {
+  display: inline-block;
+  font-family: 'Overpass', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--naranja-claro);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(232, 160, 74, 0.4);
+  padding: 8px 16px;
+  border-radius: 999px;
+  margin-bottom: 22px;
+}
+
+/* SECTION CONTAINER */
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px 40px;
+}
+
+/* INFO CARD */
+.info-card {
+  background: white;
+  border-radius: 16px;
+  padding: 28px 28px 24px;
+  margin: -28px auto 28px;
+  max-width: 720px;
+  box-shadow: 0 8px 32px rgba(0, 62, 92, 0.08);
+  border: 1px solid var(--gris-borde);
+  position: relative;
+  z-index: 2;
+}
+.info-card h2 {
+  font-size: clamp(20px, 3vw, 24px);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.info-card h2 .ico {
+  background: var(--naranja-palido);
+  color: var(--naranja);
+  width: 36px; height: 36px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.info-card h2 .ico svg { width: 20px; height: 20px; }
+.info-card p {
+  color: var(--gris-suave);
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.info-card p strong { color: var(--azul-navy); font-weight: 700; }
+.steps {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 18px 22px;
+  margin-top: 18px;
+}
+.steps-title {
+  font-family: 'Overpass', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: var(--azul-medio);
+  margin-bottom: 10px;
+}
+.step-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 6px 0;
+  font-size: 15px;
+}
+.step-num {
+  background: var(--azul-principal);
+  color: white;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* CALENDAR SECTION */
+.calendar-section {
+  background: white;
+  border-radius: 16px;
+  padding: 28px 22px 16px;
+  max-width: 880px;
+  margin: 0 auto;
+  box-shadow: 0 8px 32px rgba(0, 62, 92, 0.08);
+  border: 1px solid var(--gris-borde);
+}
+.calendar-header {
+  text-align: center;
+  margin-bottom: 18px;
+  padding: 0 6px;
+}
+.calendar-header .label {
+  display: inline-block;
+  font-family: 'Overpass', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--naranja);
+  background: var(--naranja-palido);
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+.calendar-header h2 {
+  font-size: clamp(22px, 3.5vw, 28px);
+  margin-bottom: 8px;
+}
+.calendar-header p {
+  color: var(--gris-suave);
+  font-size: 15px;
+  max-width: 540px;
+  margin: 0 auto;
+}
+.calendar-frame {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 8px;
+  min-height: 600px;
+  position: relative;
+}
+.calendar-frame iframe {
+  width: 100%;
+  border: none;
+  overflow: hidden;
+  min-height: 590px;
+  border-radius: 8px;
+  background: white;
+  display: block;
+}
+.calendar-loading {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--gris-suave);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.calendar-loading::before {
+  content: "";
+  width: 16px; height: 16px;
+  border: 2px solid var(--gris-borde);
+  border-top-color: var(--naranja);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 32px 20px 24px;
+  color: var(--gris-suave);
+  font-size: 14px;
+  border-top: 1px solid var(--gris-borde);
+  margin-top: 32px;
+  background: white;
+}
+footer .brand {
+  font-family: 'Overpass', sans-serif;
+  font-weight: 700;
+  color: var(--azul-navy);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+footer a { color: var(--azul-medio); text-decoration: none; }
+footer a:hover { color: var(--naranja); }
+
+@media (max-width: 600px) {
+  .hero { padding: 40px 20px 56px; }
+  .check-circle { width: 64px; height: 64px; margin-bottom: 18px; }
+  .check-circle svg { width: 34px; height: 34px; }
+  .info-card { padding: 22px 20px; margin: -20px 12px 22px; }
+  .calendar-section { padding: 22px 12px 12px; }
+  .calendar-frame { padding: 4px; min-height: 700px; }
+  .calendar-frame iframe { min-height: 690px; }
+  main { padding: 0 8px 30px; }
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="badge">{{BADGE_TEXT}}</span>
+    <div class="check-circle">
+      <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="20 6 9 17 4 12"></polyline>
+      </svg>
+    </div>
+    <h1>{{HERO_H1_PREFIX}} <span class="accent">{{HERO_ACCENT}}</span>!</h1>
+    <p class="lead">{{HERO_LEAD}}</p>
+    <p>{{HERO_BODY}}</p>
+  </div>
+</section>
+
+<main>
+
+  <div class="info-card">
+    <h2>
+      <span class="ico">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+        </svg>
+      </span>
+      {{WHATSNEXT_TITLE}}
+    </h2>
+    <p>{{WHATSNEXT_BODY}}</p>
+    <div class="steps">
+      <div class="steps-title">El proceso</div>
+      <div class="step-item"><span class="step-num">1</span><span>{{STEP_1}}</span></div>
+      <div class="step-item"><span class="step-num">2</span><span>{{STEP_2}}</span></div>
+      <div class="step-item"><span class="step-num">3</span><span>{{STEP_3}}</span></div>
+    </div>
+  </div>
+
+  <div class="calendar-section">
+    <div class="calendar-header">
+      <span class="label">{{CALENDAR_LABEL}}</span>
+      <h2>{{CALENDAR_H2}}</h2>
+      <p>{{CALENDAR_DESC}}</p>
+    </div>
+    <div class="calendar-frame">
+      <div class="calendar-loading">Cargando calendario…</div>
+      <iframe src="{{CALENDAR_URL}}" style="width: 100%;border:none;overflow: hidden;" scrolling="no"></iframe>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="brand">{{FOOTER_BRAND}}</div>
+  <div>{{FOOTER_DESC}}</div>
+  <div style="margin-top:8px;">
+    <a href="{{FOOTER_URL}}" target="_blank" rel="noopener">{{FOOTER_URL_TEXT}}</a>
+  </div>
+</footer>
+
+<script src="{{CALENDAR_SCRIPT_URL}}" type="text/javascript"></script>
+<script>
+  document.querySelector('.calendar-frame iframe').addEventListener('load', function() {
+    var loader = document.querySelector('.calendar-loading');
+    if (loader) loader.style.display = 'none';
+  });
+  setTimeout(function() {
+    var loader = document.querySelector('.calendar-loading');
+    if (loader) loader.style.display = 'none';
+  }, 4000);
+</script>
+
+</body>
+</html>
