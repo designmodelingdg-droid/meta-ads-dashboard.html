@@ -1,183 +1,410 @@
 <!-- ============================================================
   LANDING CALCULADORA DE ZAPATAS · Design Modeling Academy
-  Versión para GoHighLevel: pega TODO este archivo dentro de un
-  elemento "Custom Code / HTML" de tu funnel, en una sección de
-  ancho completo y sin padding. Ocupa la página entera.
+  Brandkit DMA (skill landing-producto): Overpass + Nunito ·
+  Azul #003e5c · Naranja #ca7520 · Navy #001e30
+  PEGAR EN: Sharp CRM/GHL → Sites → Custom Code container
+  (sección de ancho completo y sin padding — ocupa la página entera).
   - El formulario envía los leads a tu Inbound Webhook de GHL.
   - Al enviar, redirige a la calculadora ya desbloqueada.
   Generado desde index.html (no editar a mano: ver GUIA-MONTAJE.md).
 ============================================================ -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@500;600;700;800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  :root{--navy:#0E2438;--navy2:#0A1B2B;--orange:#EE8A3C;--orange-d:#d97427;--ink:#132433;--ink2:#5a6b7b;--line:#e3e9ef}
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:'Poppins',system-ui,sans-serif;background:linear-gradient(160deg,var(--navy) 0%,var(--navy2) 100%);color:#fff}
-  .wrap{max-width:1040px;margin:0 auto;padding:0 18px}
-  .logo{font-weight:800;letter-spacing:.12em;font-size:.78rem;color:var(--orange);text-transform:uppercase;text-align:center;padding-top:28px}
-  /* HERO */
-  .hero{display:grid;grid-template-columns:1.15fr 1fr;gap:36px;align-items:center;padding:34px 0 50px}
-  @media(max-width:860px){.hero{grid-template-columns:1fr}}
-  .hero h1{font-size:clamp(1.7rem,4.5vw,2.6rem);font-weight:800;line-height:1.2}
-  .hero h1 em{color:var(--orange);font-style:normal}
-  .hero p.sub{color:#b9c6d2;margin:16px 0 22px;font-size:1.02rem;line-height:1.6}
-  .bullets{list-style:none;display:grid;gap:10px;margin-bottom:8px}
-  .bullets li{display:flex;gap:10px;align-items:flex-start;color:#dce6ee;font-size:.95rem}
-  .bullets li b{color:#fff}
-  .bullets .tick{color:var(--orange);font-weight:800;flex:none}
-  /* FORM CARD */
-  .formcard{background:#fff;color:var(--ink);border-radius:16px;padding:26px;box-shadow:0 18px 50px rgba(0,0,0,.35)}
-  .formcard h2{font-size:1.15rem;font-weight:700;color:var(--navy)}
-  .formcard p.small{color:var(--ink2);font-size:.85rem;margin:6px 0 16px}
-  .formcard label{display:block;font-size:.82rem;font-weight:600;color:var(--navy);margin:12px 0 4px}
-  .formcard input,.formcard select{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:10px;font:inherit;font-size:.95rem;background:#fbfcfe}
-  .formcard input:focus,.formcard select:focus{outline:2px solid var(--orange);border-color:var(--orange)}
-  .btn{display:block;width:100%;padding:14px;border:0;border-radius:11px;background:var(--orange);color:#fff;font:inherit;font-weight:800;font-size:1rem;cursor:pointer;margin-top:18px}
-  .btn:hover{background:var(--orange-d)}
-  .btn[disabled]{opacity:.6;cursor:wait}
-  .legal{font-size:.72rem;color:var(--ink2);margin-top:10px;line-height:1.5;text-align:center}
-  .err{display:none;background:#fdeaea;color:#d64545;font-size:.82rem;border-radius:8px;padding:9px 12px;margin-top:12px}
-  /* SECCIONES */
-  section.light{background:#f5f8fb;color:var(--ink);padding:56px 0}
-  section.dark{padding:56px 0}
-  h2.title{font-size:clamp(1.3rem,3vw,1.7rem);font-weight:800;text-align:center;margin-bottom:8px}
-  section.light h2.title{color:var(--navy)}
-  p.center{text-align:center;color:var(--ink2);max-width:640px;margin:0 auto 34px;font-size:.95rem}
-  section.dark p.center{color:#b9c6d2}
-  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-  @media(max-width:860px){.steps{grid-template-columns:1fr}}
-  .step{background:#fff;border-radius:13px;padding:20px;border-top:4px solid var(--orange);box-shadow:0 6px 18px rgba(14,36,56,.08)}
-  .step .num{font-size:.75rem;font-weight:800;color:var(--orange);letter-spacing:.1em}
-  .step h3{color:var(--navy);font-size:.98rem;margin:6px 0 8px}
-  .step p{color:var(--ink2);font-size:.86rem;line-height:1.55}
-  .step code{background:#f2f6fa;color:var(--navy);padding:1px 6px;border-radius:6px;font-size:.8rem}
-  .uso{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;align-items:center}
-  @media(max-width:860px){.uso{grid-template-columns:1fr}}
-  .uso img{width:100%;border-radius:14px;border:1px solid rgba(238,138,60,.35);box-shadow:0 18px 50px rgba(0,0,0,.4)}
-  .usolist{list-style:none;counter-reset:paso;display:grid;gap:14px}
-  .usolist li{counter-increment:paso;display:flex;gap:12px;color:#dce6ee;font-size:.93rem;line-height:1.55}
-  .usolist li::before{content:counter(paso);flex:none;width:28px;height:28px;border-radius:9px;background:var(--orange);color:#fff;font-weight:800;display:inline-flex;align-items:center;justify-content:center;font-size:.9rem}
-  .usolist b{color:#fff}
-  .cta2{display:inline-block;background:var(--orange);color:#fff;font-weight:800;text-decoration:none;padding:14px 34px;border-radius:11px;margin-top:26px}
-  .cta2:hover{background:var(--orange-d)}
-  .centered{text-align:center}
-  footer{color:#8fa2b3;text-align:center;font-size:.78rem;padding:30px 0 42px}
+:root {
+  --azul-principal: #003e5c;
+  --azul-medio: #0a5a80;
+  --azul-navy: #001e30;
+  --azul-palido: #d0eaf5;
+  --naranja: #ca7520;
+  --naranja-claro: #e8a04a;
+  --naranja-palido: #f7e8cc;
+  --gris-sec: #b9b9b9;
+  --gris-texto: #333333;
+  --blanco: #ffffff;
+  --crema: #fafaf7;
+  --border: #e5e7eb;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body { font-family: 'Nunito', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; background: var(--blanco); color: var(--gris-texto); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; }
+h1, h2, h3, h4, h5 { font-family: 'Overpass', sans-serif; font-weight: 700; color: var(--azul-principal); letter-spacing: -0.01em; line-height: 1.15; }
+h1 { font-size: clamp(2rem, 5.2vw, 3.2rem); line-height: 1.08; }
+h2 { font-size: clamp(1.6rem, 3.6vw, 2.4rem); margin-bottom: 14px; }
+h3 { font-size: clamp(1.2rem, 2.4vw, 1.5rem); margin-bottom: 10px; }
+p { margin-bottom: 14px; }
+strong { color: var(--azul-principal); font-weight: 700; }
+.eyebrow { font-family: 'Overpass', sans-serif; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 2.2px; color: var(--naranja); margin-bottom: 14px; display: inline-block; }
+.lead { font-size: clamp(1rem, 1.6vw, 1.125rem); color: #555; line-height: 1.65; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+.container-narrow { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+section { padding: 64px 0; }
+@media (max-width: 768px) { section { padding: 48px 0; } }
+
+/* NAVBAR */
+nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.97); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid #e7eaf0; box-shadow: 0 1px 0 rgba(0,62,92,0.04); }
+.nav-inner { max-width: 1200px; margin: 0 auto; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.nav-logo { height: 44px; width: auto; max-width: 220px; object-fit: contain; display: block; }
+.nav-cta { background: var(--naranja); color: var(--blanco); padding: 10px 20px; border-radius: 8px; font-family: 'Overpass', sans-serif; font-size: 13px; font-weight: 700; border: none; transition: background 0.2s, transform 0.2s; white-space: nowrap; letter-spacing: 0.2px; }
+.nav-cta:hover { background: var(--naranja-claro); transform: translateY(-1px); }
+@media (max-width: 480px) { .nav-cta { padding: 9px 14px; font-size: 12px; } .nav-logo { height: 32px; max-width: 160px; } }
+
+/* HERO */
+.hero { background: linear-gradient(135deg, var(--azul-navy) 0%, var(--azul-principal) 100%); color: var(--blanco); padding: 32px 0 56px; position: relative; overflow: hidden; }
+.hero::before { content: ''; position: absolute; inset: 0; background-image: url('https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6744dde0fe7c8143963b2db5.png'); background-size: cover; background-position: center; opacity: 0.08; pointer-events: none; }
+.hero-grid { position: relative; display: grid; grid-template-columns: 1fr; gap: 28px; align-items: center; }
+@media (min-width: 960px) { .hero { padding: 56px 0 72px; } .hero-grid { grid-template-columns: 1.05fr 1fr; gap: 56px; align-items: start; } }
+.hero-eyebrow { display: inline-block; font-family: 'Overpass', sans-serif; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 2.5px; color: var(--naranja-claro); margin-bottom: 14px; padding: 5px 12px; border: 1px solid rgba(232,160,74,0.4); border-radius: 999px; }
+.hero h1 { color: var(--blanco); margin-bottom: 18px; font-weight: 700; }
+.hero h1 em { font-style: normal; color: var(--naranja-claro); font-weight: 700; }
+.hero .lead { color: rgba(255,255,255,0.86); margin-bottom: 20px; max-width: 540px; }
+.hero .lead strong { color: var(--naranja-claro); font-weight: 700; }
+.hero-quote { font-family: 'Overpass', sans-serif; font-style: italic; color: var(--naranja-claro); font-size: 1rem; border-left: 3px solid var(--naranja); padding: 4px 0 4px 16px; margin: 0 0 24px; max-width: 480px; }
+.hero-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 18px; max-width: 520px; }
+.hero-stat { text-align: center; padding: 10px 4px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; }
+.hero-stat .num { font-family: 'Overpass', sans-serif; font-size: 1.2rem; font-weight: 800; color: var(--naranja-claro); line-height: 1.1; margin-bottom: 4px; }
+.hero-stat .lbl { font-size: 10.5px; color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 0.6px; line-height: 1.3; }
+
+/* FORM CARD */
+.hero-form-card { background: var(--blanco); border-radius: 18px; box-shadow: 0 20px 60px rgba(0,0,0,0.25); overflow: hidden; border: 1px solid rgba(255,255,255,0.08); position: relative; }
+.hero-form-header { background: linear-gradient(135deg, var(--naranja) 0%, var(--naranja-claro) 100%); padding: 16px 22px 14px; color: var(--blanco); }
+.hero-form-header .badge-mini { display: inline-block; font-family: 'Overpass', sans-serif; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; background: rgba(255,255,255,0.22); color: var(--blanco); padding: 3px 9px; border-radius: 4px; margin-bottom: 8px; }
+.hero-form-header h3 { color: var(--blanco); font-size: 1.2rem; margin: 0 0 4px; line-height: 1.2; }
+.hero-form-header p { margin: 0; font-size: 13px; color: rgba(255,255,255,0.92); line-height: 1.4; }
+.hero-form-body { padding: 20px 22px 6px; background: var(--blanco); }
+.hero-form-footer { padding: 10px 18px 14px; background: var(--blanco); border-top: 1px solid var(--border); font-size: 11.5px; color: #777; text-align: center; letter-spacing: 0.2px; }
+.hero-form-body label { display: block; font-family: 'Overpass', sans-serif; font-size: 12px; font-weight: 700; color: var(--azul-principal); margin: 12px 0 5px; letter-spacing: 0.3px; }
+.hero-form-body input, .hero-form-body select { width: 100%; padding: 12px 13px; border: 1px solid var(--border); border-radius: 10px; font-family: 'Nunito', sans-serif; font-size: 15px; background: #fbfcfe; color: var(--gris-texto); }
+.hero-form-body input:focus, .hero-form-body select:focus { outline: 2px solid var(--naranja); border-color: var(--naranja); }
+.btn-submit { display: block; width: 100%; padding: 15px; border: 0; border-radius: 10px; background: var(--naranja); color: var(--blanco); font-family: 'Overpass', sans-serif; font-weight: 800; font-size: 15px; letter-spacing: 0.4px; margin-top: 18px; transition: background 0.2s, transform 0.2s, box-shadow 0.2s; }
+.btn-submit:hover { background: var(--naranja-claro); transform: translateY(-1px); box-shadow: 0 12px 30px rgba(202,117,32,0.35); }
+.btn-submit[disabled] { opacity: 0.6; cursor: wait; }
+.err { display: none; background: #fdeaea; color: #d64545; font-size: 13px; border-radius: 8px; padding: 10px 12px; margin-top: 12px; }
+
+/* AUTHORITY MARQUEE */
+.authority { background: var(--crema); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 28px 0 26px; overflow: hidden; position: relative; }
+.authority-label { text-align: center; font-family: 'Overpass', sans-serif; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 2.5px; color: var(--naranja); margin-bottom: 18px; }
+.authority-marquee { position: relative; overflow: hidden; mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent); -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent); }
+.authority-track { display: flex; gap: 64px; align-items: center; width: max-content; animation: authority-scroll 36s linear infinite; }
+@keyframes authority-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.authority-track:hover { animation-play-state: paused; }
+.authority-track img { height: 50px; width: auto; max-width: 170px; object-fit: contain; opacity: 0.92; flex-shrink: 0; transition: opacity 0.2s, transform 0.2s; }
+.authority-track img:hover { opacity: 1; transform: scale(1.05); }
+@media (max-width: 600px) { .authority-track { gap: 40px; } .authority-track img { height: 36px; max-width: 120px; } }
+@media (prefers-reduced-motion: reduce) { .authority-track { animation: none; flex-wrap: wrap; justify-content: center; width: 100%; } }
+
+/* QUÉ CALCULA (stack) */
+.stack-section { background: linear-gradient(135deg, rgba(0,30,48,0.96) 0%, rgba(0,62,92,0.94) 100%), url('https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6744dde0fe7c8143963b2db5.png'); background-size: cover; background-position: center; color: var(--blanco); }
+.stack-section .eyebrow { color: var(--naranja-claro); }
+.stack-section h2 { color: var(--blanco); }
+.stack-section .lead { color: rgba(255,255,255,0.82); margin-bottom: 36px; }
+.stack-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; max-width: 920px; margin: 0 auto; }
+@media (max-width: 720px) { .stack-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 480px) { .stack-grid { grid-template-columns: repeat(2, 1fr); } }
+.stack-tool { background: rgba(202,117,32,0.1); border: 1px solid rgba(232,160,74,0.3); border-radius: 12px; padding: 22px 10px; text-align: center; transition: transform 0.2s, border-color 0.2s; }
+.stack-tool:hover { transform: translateY(-3px); border-color: var(--naranja-claro); }
+.stack-tool .name { font-family: 'Overpass', sans-serif; font-size: 1.35rem; font-weight: 700; color: var(--naranja-claro); margin-bottom: 4px; }
+.stack-tool .role { font-size: 11px; color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 1px; }
+
+/* CÓMO SE CALCULA (módulos) */
+.curriculum { background: var(--blanco); }
+.module-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 40px; }
+@media (max-width: 900px) { .module-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .module-grid { grid-template-columns: 1fr; } }
+.module { background: var(--crema); border: 1px solid var(--border); padding: 22px 20px; border-radius: 12px; transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s; }
+.module:hover { transform: translateY(-3px); box-shadow: 0 16px 40px rgba(0,62,92,0.08); border-color: var(--azul-medio); }
+.module-num { font-family: 'Overpass', sans-serif; font-size: 0.78rem; font-weight: 800; color: var(--naranja); background: var(--naranja-palido); display: inline-block; padding: 4px 11px; border-radius: 999px; margin-bottom: 10px; letter-spacing: 1px; }
+.module h3 { margin-bottom: 6px; font-size: 1rem; line-height: 1.25; }
+.module p { font-size: 13.5px; line-height: 1.55; color: #4b5563; margin: 0; }
+.module code { font-size: 12px; background: var(--azul-palido); color: var(--azul-principal); padding: 1px 7px; border-radius: 6px; }
+
+/* ASÍ SE USA */
+.uso-section { background: var(--crema); }
+.uso { display: grid; grid-template-columns: 1.15fr 1fr; gap: 32px; align-items: center; margin-top: 40px; }
+@media (max-width: 860px) { .uso { grid-template-columns: 1fr; } }
+.uso img { width: 100%; border-radius: 14px; border: 1px solid var(--border); box-shadow: 0 24px 60px rgba(0,30,48,0.18); }
+.usolist { list-style: none; counter-reset: paso; display: grid; gap: 16px; }
+.usolist li { counter-increment: paso; display: flex; gap: 14px; font-size: 14.5px; line-height: 1.6; color: #4b5563; }
+.usolist li::before { content: counter(paso, decimal-leading-zero); flex: none; width: 38px; height: 38px; border-radius: 10px; background: linear-gradient(135deg, var(--azul-principal) 0%, var(--azul-medio) 100%); color: var(--blanco); font-family: 'Overpass', sans-serif; font-weight: 800; font-size: 14px; display: inline-flex; align-items: center; justify-content: center; }
+.usolist strong { color: var(--azul-principal); }
+
+/* PARA QUIÉN */
+.for-section { background: var(--blanco); }
+.for-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 40px; }
+@media (max-width: 768px) { .for-grid { grid-template-columns: 1fr; } }
+.for-card { background: var(--crema); padding: 28px; border-radius: 14px; border: 1px solid var(--border); }
+.for-card.yes { border-left: 4px solid var(--naranja); }
+.for-card.no { border-left: 4px solid var(--gris-sec); background: #f4f4f2; }
+.for-card h3 { font-size: 1.1rem; margin-bottom: 14px; }
+.for-card.no h3 { color: #6b7280; }
+.for-card ul { list-style: none; }
+.for-card li { padding-left: 24px; position: relative; margin-bottom: 10px; font-size: 14.5px; line-height: 1.55; }
+.for-card.yes li::before { content: "✓"; color: var(--naranja); position: absolute; left: 0; font-weight: 700; }
+.for-card.no li::before { content: "—"; color: var(--gris-sec); position: absolute; left: 0; }
+
+/* FAQ */
+.faq-section { background: var(--crema); }
+.faq-list { margin-top: 36px; }
+.faq-item { background: var(--blanco); border: 1px solid var(--border); border-radius: 10px; margin-bottom: 10px; overflow: hidden; }
+.faq-item summary { cursor: pointer; padding: 16px 48px 16px 18px; font-family: 'Overpass', sans-serif; font-weight: 600; font-size: 15px; color: var(--azul-principal); position: relative; list-style: none; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: "+"; position: absolute; right: 18px; top: 50%; transform: translateY(-50%); font-size: 22px; color: var(--naranja); font-weight: 400; transition: transform 0.2s; }
+.faq-item[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+.faq-item[open] summary { color: var(--naranja); }
+.faq-content { padding: 0 18px 18px; font-size: 14.5px; line-height: 1.65; color: #4b5563; }
+.faq-content strong { color: var(--azul-principal); }
+
+/* FINAL CTA */
+.final-cta { background: linear-gradient(135deg, var(--naranja) 0%, var(--naranja-claro) 100%); color: var(--blanco); text-align: center; padding: 56px 20px; }
+.final-cta h2 { color: var(--blanco); margin-bottom: 14px; }
+.final-cta p { color: rgba(255,255,255,0.94); margin-bottom: 24px; max-width: 580px; margin-left: auto; margin-right: auto; }
+.btn-final { display: inline-block; background: var(--blanco); color: var(--naranja); padding: 14px 30px; border-radius: 10px; font-family: 'Overpass', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: 0.3px; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 10px 30px rgba(0,0,0,0.18); }
+.btn-final:hover { transform: translateY(-2px); box-shadow: 0 14px 36px rgba(0,0,0,0.24); }
+
+/* FOOTER */
+footer { background: var(--crema); color: #4b5563; text-align: center; padding: 44px 20px 28px; border-top: 1px solid var(--border); }
+.footer-logo { height: 48px; width: auto; margin: 0 auto 14px; display: block; }
+footer .product-name { font-family: 'Overpass', sans-serif; font-weight: 700; color: var(--naranja); margin-bottom: 10px; letter-spacing: 0.2px; }
+footer .footer-copy { font-size: 13px; max-width: 620px; margin: 0 auto 18px; line-height: 1.55; color: #6b7280; }
+.footer-fineprint { font-size: 11px; color: #9ca3af; margin-top: 16px; letter-spacing: 0.3px; }
+[id] { scroll-margin-top: 80px; }
 </style>
 
-<div class="logo">Design Modeling Academy</div>
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#acceso"><img class="nav-logo" src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04bbc1fa8afa3be0bb00d8.png" alt="Design Modeling Academy DG" /></a>
+    <a href="#acceso" class="nav-cta">Acceder gratis</a>
+  </div>
+</nav>
 
-<div class="wrap">
-  <div class="hero">
-    <div>
-      <h1>Calcula tu <em>zapata aislada</em> en minutos, no en horas</h1>
-      <p class="sub">Accede <b>gratis</b> a la calculadora que usamos en nuestro curso de Diseño de Cimentaciones: dimensiona la zapata, verifica cortante y punzonamiento, y obtén el acero de refuerzo listo para dibujar.</p>
-      <ul class="bullets">
-        <li><span class="tick">✔</span><span><b>Dimensionamiento en planta</b> a partir de la capacidad del suelo (T × S sugeridos automáticamente).</span></li>
-        <li><span class="tick">✔</span><span><b>Verificaciones al instante</b>: cortante en una dirección y punzonamiento con sus tres límites.</span></li>
-        <li><span class="tick">✔</span><span><b>Acero de refuerzo</b> en ambas direcciones: número de varillas, diámetro y espaciamiento.</span></li>
-        <li><span class="tick">✔</span><span><b>Esquema de planta y corte</b> que se actualiza con tus datos.</span></li>
-      </ul>
+<!-- HERO CON FORM -->
+<section class="hero" id="acceso">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <span class="hero-eyebrow">Herramienta gratuita · Diseño de Cimentaciones</span>
+        <h1>Calcula y verifica tu <em>zapata aislada en minutos</em>, no en horas</h1>
+        <p class="lead">Accede <strong>gratis</strong> a la calculadora que usamos en nuestro curso de Diseño de Cimentaciones: dimensiona la zapata, verifica cortante y punzonamiento, y obtén el <strong>acero de refuerzo listo para dibujar</strong>.</p>
+        <p class="hero-quote">La misma metodología paso a paso que enseñamos en Design Modeling Academy.</p>
+        <div class="hero-stats">
+          <div class="hero-stat"><div class="num">9 pasos</div><div class="lbl">del método del curso</div></div>
+          <div class="hero-stat"><div class="num">2 min</div><div class="lbl">del registro al resultado</div></div>
+          <div class="hero-stat"><div class="num">100%</div><div class="lbl">gratis · sin instalar nada</div></div>
+        </div>
+      </div>
+      <div class="hero-form-card" id="form">
+        <div class="hero-form-header">
+          <span class="badge-mini">Acceso inmediato</span>
+          <h3>Accede gratis a la calculadora</h3>
+          <p>Déjanos tus datos y entra de inmediato. Sin costo.</p>
+        </div>
+        <div class="hero-form-body">
+          <!-- Si configuras GHL_FORM_IFRAME_URL, este formulario se reemplaza
+               por tu formulario nativo de GoHighLevel -->
+          <div id="ghlIframe" hidden></div>
+          <form id="leadForm" novalidate>
+            <label for="nombre">Nombre completo *</label>
+            <input id="nombre" name="nombre" type="text" autocomplete="name" required placeholder="Ej. María Fernanda López">
+            <label for="email">Correo electrónico *</label>
+            <input id="email" name="email" type="email" autocomplete="email" required placeholder="tucorreo@ejemplo.com">
+            <label for="telefono">Número de WhatsApp *</label>
+            <input id="telefono" name="telefono" type="tel" autocomplete="tel" required placeholder="+593 99 999 9999">
+            <label for="perfil">¿A qué te dedicas? *</label>
+            <select id="perfil" name="perfil" required>
+              <option value="" selected disabled>Selecciona una opción…</option>
+              <option>Estudiante de ingeniería / arquitectura</option>
+              <option>Ingeniero(a) o arquitecto(a) independiente</option>
+              <option>Trabajo en constructora / consultora</option>
+              <option>Docente</option>
+              <option>Otro</option>
+            </select>
+            <div class="err" id="errBox">Revisa los campos marcados: necesitamos tu nombre, un correo válido y tu WhatsApp.</div>
+            <button class="btn-submit" id="submitBtn" type="submit">QUIERO MI CALCULADORA →</button>
+          </form>
+        </div>
+        <div class="hero-form-footer">100% gratis · Sin spam · Puedes darte de baja cuando quieras</div>
+      </div>
     </div>
+  </div>
+</section>
 
-    <!-- ==================== FORMULARIO ==================== -->
-    <div class="formcard" id="form">
-      <h2>Accede gratis a la calculadora</h2>
-      <p class="small">Déjanos tus datos y entra de inmediato. Sin costo.</p>
-
-      <!-- Si configuras GHL_FORM_IFRAME_URL, este formulario se reemplaza
-           por tu formulario nativo de GoHighLevel -->
-      <div id="ghlIframe" hidden></div>
-
-      <form id="leadForm" novalidate>
-        <label for="nombre">Nombre completo *</label>
-        <input id="nombre" name="nombre" type="text" autocomplete="name" required placeholder="Ej. María Fernanda López">
-        <label for="email">Correo electrónico *</label>
-        <input id="email" name="email" type="email" autocomplete="email" required placeholder="tucorreo@ejemplo.com">
-        <label for="telefono">Número de WhatsApp *</label>
-        <input id="telefono" name="telefono" type="tel" autocomplete="tel" required placeholder="+593 99 999 9999">
-        <label for="perfil">¿A qué te dedicas? *</label>
-        <select id="perfil" name="perfil" required>
-          <option value="" selected disabled>Selecciona una opción…</option>
-          <option>Estudiante de ingeniería / arquitectura</option>
-          <option>Ingeniero(a) o arquitecto(a) independiente</option>
-          <option>Trabajo en constructora / consultora</option>
-          <option>Docente</option>
-          <option>Otro</option>
-        </select>
-        <div class="err" id="errBox">Revisa los campos marcados: necesitamos tu nombre, un correo válido y tu WhatsApp.</div>
-        <button class="btn" id="submitBtn" type="submit">QUIERO MI CALCULADORA →</button>
-        <p class="legal">Al enviar aceptas recibir información de Design Modeling Academy. Tus datos están seguros y puedes darte de baja cuando quieras.</p>
-      </form>
+<!-- AUTHORITY MARQUEE -->
+<div class="authority">
+  <p class="authority-label">Respaldado por</p>
+  <div class="authority-marquee">
+    <div class="authority-track">
+      <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d173601d54df8246caa4.png" alt="Autodesk Partner" />
+      <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d1738c6475e185dfddb1.png" alt="Autodesk Centro de Entrenamiento" />
+      <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d2928c6475e185e02739.png" alt="Sabal University" />
+      <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d1f0f7d455340c70e652.png" alt="Doctrina Qualitas" />
+      <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d23b51d5d92ddcacf917.png" alt="Universidad de las Naciones" />
+      <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d23b601d54df8246fbf8.webp" alt="ISTE Universidad" />
+      <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d23b601d54df8246fbf7.png" alt="UAIII" />
+      <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d23b8c6475e185e00d3e.png" alt="Sello EQS · IQS" />
+      <!-- Duplicado para loop infinito -->
+      <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d173601d54df8246caa4.png" alt="" aria-hidden="true" />
+      <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d1738c6475e185dfddb1.png" alt="" aria-hidden="true" />
+      <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d2928c6475e185e02739.png" alt="" aria-hidden="true" />
+      <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d1f0f7d455340c70e652.png" alt="" aria-hidden="true" />
+      <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d23b51d5d92ddcacf917.png" alt="" aria-hidden="true" />
+      <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d23b601d54df8246fbf8.webp" alt="" aria-hidden="true" />
+      <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d23b601d54df8246fbf7.png" alt="" aria-hidden="true" />
+      <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d23b8c6475e185e00d3e.png" alt="" aria-hidden="true" />
     </div>
   </div>
 </div>
 
-<!-- ==================== CÓMO FUNCIONA ==================== -->
-<section class="light">
-  <div class="wrap">
-    <h2 class="title">¿Cómo se calcula una zapata aislada?</h2>
-    <p class="center">La calculadora sigue el mismo paso a paso que enseñamos en el curso de Diseño de Cimentaciones. Esto es lo que hace por ti:</p>
-    <div class="steps">
-      <div class="step"><div class="num">PASO 1</div><h3>Cargas de la columna</h3><p>Ingresas la carga muerta y viva (PD, PV) directamente, o las calculas por metrados con el área tributaria, número de pisos y cargas por m².</p></div>
-      <div class="step"><div class="num">PASO 2</div><h3>Esfuerzo neto del suelo</h3><p>Con la capacidad admisible del estudio de suelos se descuenta el peso del relleno y la sobrecarga: <code>σn = σt·10 − γm·hf − S/C</code>.</p></div>
-      <div class="step"><div class="num">PASO 3</div><h3>Área en planta</h3><p>El área requerida es <code>Az = (PD+PV)/σn</code>. La calculadora te sugiere dimensiones T × S considerando la forma de la columna.</p></div>
-      <div class="step"><div class="num">PASO 4</div><h3>Reacción última</h3><p>Se amplifican las cargas <code>Pu = 1.4·PD + 1.7·PV</code> y se obtiene la presión última de diseño <code>Wnu = Pu/(T·S)</code>.</p></div>
-      <div class="step"><div class="num">PASO 5</div><h3>Cortante y punzonamiento</h3><p>Se verifica el cortante en cada dirección y el punzonamiento alrededor de la columna con sus tres límites (β, αs y el límite general).</p></div>
-      <div class="step"><div class="num">PASO 6</div><h3>Acero de refuerzo</h3><p>Se diseña por flexión el acero en ambas direcciones, se compara con la cuantía mínima (0.0018) y te entrega varillas, cantidad y espaciamiento.</p></div>
+<!-- QUÉ CALCULA -->
+<section class="stack-section">
+  <div class="container">
+    <div style="text-align:center; max-width: 760px; margin: 0 auto 8px;">
+      <span class="eyebrow">Qué obtienes</span>
+      <h2>Todo el diseño de tu zapata, en una sola pantalla</h2>
+      <p class="lead">Ingresas tus datos una vez y la calculadora resuelve el diseño completo con verificaciones en vivo.</p>
     </div>
-    <div class="centered"><a class="cta2" href="#form">ACCEDER GRATIS AHORA →</a></div>
+    <div class="stack-grid">
+      <div class="stack-tool"><div class="name">T × S</div><div class="role">Dimensiones en planta</div></div>
+      <div class="stack-tool"><div class="name">σn</div><div class="role">Esfuerzo neto del suelo</div></div>
+      <div class="stack-tool"><div class="name">φVc</div><div class="role">Cortante y punzonamiento</div></div>
+      <div class="stack-tool"><div class="name">As</div><div class="role">Acero en 2 direcciones</div></div>
+      <div class="stack-tool"><div class="name">✓</div><div class="role">Cumple / verificar en vivo</div></div>
+    </div>
   </div>
 </section>
 
-<!-- ==================== CÓMO SE USA ==================== -->
-<section class="dark">
-  <div class="wrap">
-    <h2 class="title">Así de fácil se usa</h2>
-    <p class="center">No necesitas instalar nada: funciona desde el navegador de tu celular o computador. En 4 pasos tienes tu zapata diseñada:</p>
+<!-- CÓMO SE CALCULA -->
+<section class="curriculum">
+  <div class="container">
+    <div style="text-align:center; max-width: 760px; margin: 0 auto;">
+      <span class="eyebrow">La metodología</span>
+      <h2>¿Cómo se calcula una zapata aislada?</h2>
+      <p class="lead">La calculadora sigue el mismo paso a paso que enseñamos en el curso de Diseño de Cimentaciones. Esto es lo que hace por ti:</p>
+    </div>
+    <div class="module-grid">
+      <div class="module"><div class="module-num">Paso 01</div><h3>Cargas de la columna</h3><p>Ingresas la carga muerta y viva (PD, PV) directamente, o las calculas por metrados con el área tributaria, número de pisos y cargas por m².</p></div>
+      <div class="module"><div class="module-num">Paso 02</div><h3>Esfuerzo neto del suelo</h3><p>Con la capacidad admisible del estudio de suelos se descuenta el peso del relleno y la sobrecarga: <code>σn = σt·10 − γm·hf − S/C</code>.</p></div>
+      <div class="module"><div class="module-num">Paso 03</div><h3>Área en planta</h3><p>El área requerida es <code>Az = (PD+PV)/σn</code>. La calculadora te sugiere dimensiones T × S considerando la forma de la columna.</p></div>
+      <div class="module"><div class="module-num">Paso 04</div><h3>Reacción última</h3><p>Se amplifican las cargas <code>Pu = 1.4·PD + 1.7·PV</code> y se obtiene la presión última de diseño <code>Wnu = Pu/(T·S)</code>.</p></div>
+      <div class="module"><div class="module-num">Paso 05</div><h3>Cortante y punzonamiento</h3><p>Se verifica el cortante en cada dirección y el punzonamiento alrededor de la columna con sus tres límites (β, αs y el límite general).</p></div>
+      <div class="module"><div class="module-num">Paso 06</div><h3>Acero de refuerzo</h3><p>Se diseña por flexión el acero en ambas direcciones, se compara con la cuantía mínima (0.0018) y te entrega varillas, cantidad y espaciamiento.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ASÍ SE USA -->
+<section class="uso-section">
+  <div class="container">
+    <div style="text-align:center; max-width: 760px; margin: 0 auto;">
+      <span class="eyebrow">Sin curva de aprendizaje</span>
+      <h2>Así de fácil se usa</h2>
+      <p class="lead">No necesitas instalar nada: funciona desde el navegador de tu celular o computador. En 4 pasos tienes tu zapata diseñada.</p>
+    </div>
     <div class="uso">
       <img src="https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/calculadora-zapatas/img/vista-calculadora.png" alt="Vista de la Calculadora de Zapatas de Design Modeling Academy" loading="lazy">
       <ol class="usolist">
-        <li><span><b>Ingresa las cargas</b> de tu columna (PD y PV en toneladas) o calcúlalas por metrados con el área tributaria.</span></li>
-        <li><span><b>Copia los datos del estudio de suelos</b>: capacidad admisible, profundidad de desplante y materiales (f'c, fy).</span></li>
-        <li><span><b>Presiona "✨ Sugerir dimensiones"</b> y la calculadora te propone el tamaño T × S y la altura h que cumplen.</span></li>
-        <li><span><b>Lee el diseño final</b>: verificaciones en verde (CUMPLE), acero por dirección y el esquema de planta y corte listo para dibujar.</span></li>
+        <li><span><strong>Ingresa las cargas</strong> de tu columna (PD y PV en toneladas) o calcúlalas por metrados con el área tributaria.</span></li>
+        <li><span><strong>Copia los datos del estudio de suelos</strong>: capacidad admisible, profundidad de desplante y materiales (f'c, fy).</span></li>
+        <li><span><strong>Presiona "Sugerir dimensiones"</strong> y la calculadora te propone el tamaño T × S y la altura h que cumplen.</span></li>
+        <li><span><strong>Lee el diseño final</strong>: verificaciones en verde (CUMPLE), acero por dirección y el esquema de planta y corte listo para dibujar.</span></li>
       </ol>
     </div>
-    <div class="centered"><a class="cta2" href="#form">PROBARLA GRATIS →</a></div>
   </div>
 </section>
 
-<!-- ==================== PARA QUIÉN ==================== -->
-<section class="dark">
-  <div class="wrap">
-    <h2 class="title">¿Para quién es esta herramienta?</h2>
-    <p class="center">Para estudiantes y profesionales de ingeniería civil y arquitectura que quieren <b>entender y verificar</b> el diseño de cimentaciones superficiales sin perderse en hojas de cálculo. Es la puerta de entrada al mundo <b>BIM + IA</b> que enseñamos en Design Modeling Academy.</p>
-    <div class="centered"><a class="cta2" href="#form">QUIERO MI CALCULADORA →</a></div>
+<!-- PARA QUIÉN -->
+<section class="for-section">
+  <div class="container">
+    <div style="text-align:center; max-width: 760px; margin: 0 auto;">
+      <span class="eyebrow">¿Es para ti?</span>
+      <h2>Pensada para quienes diseñan y construyen</h2>
+      <p class="lead">Una herramienta educativa para entender y verificar cimentaciones superficiales sin perderse en hojas de cálculo.</p>
+    </div>
+    <div class="for-grid">
+      <div class="for-card yes">
+        <h3>Es para ti si…</h3>
+        <ul>
+          <li>Eres <strong>estudiante de ingeniería civil o arquitectura</strong> y quieres dominar el diseño de zapatas paso a paso.</li>
+          <li>Eres <strong>ingeniero(a) o arquitecto(a) independiente</strong> y necesitas predimensionar cimentaciones rápido.</li>
+          <li>Trabajas en una <strong>constructora o consultora</strong> y quieres verificar diseños al instante.</li>
+          <li>Eres <strong>docente</strong> y buscas una herramienta visual para tus clases.</li>
+          <li>Quieres dar el salto al mundo <strong>BIM + IA</strong> aplicado a estructuras.</li>
+        </ul>
+      </div>
+      <div class="for-card no">
+        <h3>No es para ti si…</h3>
+        <ul>
+          <li>Buscas reemplazar el criterio y la firma de un ingeniero responsable.</li>
+          <li>Necesitas diseñar cimentaciones profundas (pilotes, caissons).</li>
+          <li>Esperas un software de análisis estructural completo.</li>
+          <li>No te interesa entender el porqué detrás de cada verificación.</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
 
-<footer>© Design Modeling Academy · Quito, Ecuador · BIM + IA para construcción<br>Herramienta educativa: el diseño definitivo debe ser validado por un ingeniero responsable.</footer>
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="container-narrow">
+    <div style="text-align:center;">
+      <span class="eyebrow">Preguntas frecuentes</span>
+      <h2>Resolvemos tus dudas</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>¿De verdad es gratis?</summary>
+        <div class="faq-content">Sí, <strong>100% gratis</strong>. Es un regalo de Design Modeling Academy para la comunidad de ingeniería y arquitectura. Solo te pedimos tus datos para darte acceso y compartirte contenido de valor.</div>
+      </details>
+      <details class="faq-item">
+        <summary>¿Funciona en el celular?</summary>
+        <div class="faq-content">Sí. Funciona en <strong>cualquier navegador</strong> — celular, tablet o computador — sin instalar nada.</div>
+      </details>
+      <details class="faq-item">
+        <summary>¿Qué método de cálculo usa?</summary>
+        <div class="faq-content">El <strong>método clásico de diseño por resistencia</strong> para zapata aislada céntrica: esfuerzo neto del suelo, dimensionamiento en planta, verificación de cortante y punzonamiento, y diseño del acero por flexión con cuantía mínima. Es la misma metodología de nuestro curso de Diseño de Cimentaciones.</div>
+      </details>
+      <details class="faq-item">
+        <summary>¿Sirve para zapatas excéntricas o combinadas?</summary>
+        <div class="faq-content">Esta versión cubre la <strong>zapata aislada céntrica</strong>, el caso más común. Las zapatas excéntricas, doble excéntricas y conectadas se estudian a fondo en nuestro curso de Diseño de Cimentaciones.</div>
+      </details>
+      <details class="faq-item">
+        <summary>¿Puedo usar los resultados en un proyecto real?</summary>
+        <div class="faq-content">La calculadora es una <strong>herramienta educativa y de predimensionamiento</strong>. Todo diseño definitivo debe ser verificado y firmado por un ingeniero responsable conforme a la norma aplicable de tu país.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <h2>Tu próxima zapata, diseñada en minutos</h2>
+  <p>Regístrate gratis y entra de inmediato a la calculadora. Sin instalaciones, sin costo, sin excusas.</p>
+  <a href="#acceso" class="btn-final">QUIERO MI CALCULADORA →</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <img class="footer-logo" src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04bbc1fa8afa3be0bb00d8.png" alt="Design Modeling Academy DG" />
+  <p class="product-name">Calculadora de Zapatas · Herramienta gratuita</p>
+  <p class="footer-copy">Design Modeling Academy — Formación en BIM + IA aplicada a la construcción. Quito, Ecuador · Comunidad en LATAM, EE.UU. y Europa.</p>
+  <p class="footer-fineprint">Herramienta educativa: el diseño definitivo debe ser validado por un ingeniero responsable. © Design Modeling Academy.</p>
+</footer>
 
 <script>
 /* ==================== CONFIGURACIÓN GOHIGHLEVEL ====================
-   Elige UNA de las dos vías de integración:
-
-   A) WEBHOOK (recomendada si alojas esta página fuera de GHL):
-      En GoHighLevel crea un Workflow con disparador "Inbound Webhook",
-      copia la URL y pégala en GHL_WEBHOOK_URL. Cada envío llega como JSON
-      {nombre, email, telefono, perfil, fuente} y en el workflow lo mapeas
-      a un contacto + etiqueta "lead-calculadora-zapatas".
-
-   B) FORMULARIO NATIVO DE GHL:
-      Crea el formulario en GHL (Sites → Forms), copia la URL del embed
-      (https://api.leadconnectorhq.com/widget/form/XXXX) y pégala en
-      GHL_FORM_IFRAME_URL. El formulario nativo reemplaza al de esta página;
-      configura en GHL la redirección al terminar hacia URL_CALCULADORA
-      incluyendo ?acceso=dm2026.
-
-   Si ambas quedan vacías, el formulario igual desbloquea la calculadora
-   (modo prueba, los leads no se guardan). */
+   Vía A (activa): el formulario propio envía cada lead como JSON al
+   Inbound Webhook del workflow "Webhook Entrante" en GHL.
+   Vía B (opcional): si pegas la URL de un formulario nativo de GHL en
+   GHL_FORM_IFRAME_URL, ese formulario reemplaza al propio — en ese caso
+   configura en GHL la redirección al terminar hacia URL_CALCULADORA
+   incluyendo ?acceso=dm2026. */
 const GHL_WEBHOOK_URL     = 'https://services.leadconnectorhq.com/hooks/nkKbOarn5IwHeMv48uY9/webhook-trigger/ed7611f9-9e5a-46e9-ae57-dda3742220c2';
-const GHL_FORM_IFRAME_URL = '';   // ← o pega aquí la URL del form nativo de GHL
+const GHL_FORM_IFRAME_URL = '';
 const URL_CALCULADORA     = 'https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/calculadora-zapatas/app.html';
 const TOKEN_ACCESO        = 'dm2026'; // debe coincidir con app.html
 
