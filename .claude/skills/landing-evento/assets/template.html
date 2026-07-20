@@ -1,0 +1,350 @@
+<!-- ═══════════════════════════════════════════════════════════
+     LANDING · Design Modeling Academy · Template maestro
+     Generado por el skill landing-evento
+     Brandkit DMA · Overpass (heading) + Nunito (body)
+     Paleta · Azul #003e5c · Naranja #ca7520 · Navy #001e30
+     PEGAR EN: Sharp CRM → Sites → DMA → Custom Code container
+     ═══════════════════════════════════════════════════════════ -->
+
+<title>{{META_TITLE}}</title>
+<meta name="description" content="{{META_DESCRIPTION}}">
+<meta name="keywords" content="{{META_KEYWORDS}}">
+<meta name="author" content="Design Modeling Academy">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#003e5c">
+<link rel="canonical" href="{{CANONICAL_URL}}">
+
+<meta property="og:type" content="event">
+<meta property="og:title" content="{{OG_TITLE}}">
+<meta property="og:description" content="{{OG_DESCRIPTION}}">
+<meta property="og:image" content="{{OG_IMAGE}}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{OG_IMAGE_ALT}}">
+<meta property="og:url" content="{{OG_URL}}">
+<meta property="og:site_name" content="Design Modeling Academy">
+<meta property="og:locale" content="es">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{OG_TITLE}}">
+<meta name="twitter:description" content="{{OG_DESCRIPTION}}">
+<meta name="twitter:image" content="{{OG_IMAGE}}">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Event",
+  "name":"{{SCHEMA_NAME}}",
+  "startDate":"{{SCHEMA_START}}",
+  "endDate":"{{SCHEMA_END}}",
+  "eventAttendanceMode":"https://schema.org/OnlineEventAttendanceMode",
+  "eventStatus":"https://schema.org/EventScheduled",
+  "location":{"@type":"VirtualLocation","url":"{{SCHEMA_ZOOM_URL}}"},
+  "organizer":{"@type":"Organization","name":"Design Modeling Academy","url":"https://designmodelingacademy.com"},
+  "performer":{"@type":"Person","name":"{{SCHEMA_PERFORMER}}"},
+  "description":"{{SCHEMA_DESCRIPTION}}",
+  "isAccessibleForFree":true,
+  "offers":{"@type":"Offer","price":"0","priceCurrency":"USD","url":"{{CANONICAL_URL}}","availability":"https://schema.org/InStock"}
+}
+</script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;700;800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          heading: ['Overpass', 'sans-serif'],
+          sans: ['Nunito', 'sans-serif']
+        },
+        colors: {
+          'azul':         '#003e5c',
+          'azul-medio':   '#0a5a80',
+          'azul-navy':    '#001e30',
+          'azul-palido':  '#d0eaf5',
+          'naranja':      '#ca7520',
+          'naranja-claro':'#e8a04a',
+          'naranja-pal':  '#f7e8cc',
+          'crema':        '#fafaf7',
+          'gris-sec':     '#b9b9b9',
+          'gris-text':    '#333333'
+        }
+      }
+    }
+  }
+</script>
+
+<style>
+  body, .dma-root { font-family: 'Nunito', sans-serif; background: #fff; color: #333333; }
+  .dma-root h1, .dma-root h2, .dma-root h3, .dma-root h4, .dma-root .heading { font-family: 'Overpass', sans-serif; font-weight: 700; letter-spacing: -0.01em; }
+  html { scroll-behavior: smooth; }
+  @media (max-width: 767px) { .dma-iframe-wrap { min-height: 760px; } }
+  @media (min-width: 768px) { .dma-iframe-wrap { min-height: 800px; } }
+  .dma-hero-bg {
+    background:
+      radial-gradient(ellipse 80% 60% at 10% 20%, rgba(202,117,32,.08) 0%, transparent 55%),
+      radial-gradient(ellipse 60% 50% at 90% 80%, rgba(0,62,92,.08) 0%, transparent 55%),
+      linear-gradient(180deg, #fafaf7 0%, #ffffff 100%);
+  }
+  .dma-lift { transition: transform .35s cubic-bezier(.22,.7,.2,1), box-shadow .35s ease, border-color .35s ease; }
+  .dma-lift:hover { transform: translateY(-4px); box-shadow: 0 18px 44px -18px rgba(0,62,92,0.20); border-color: #ca7520; }
+  @keyframes dma-pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.04); } }
+  .dma-countdown-num { animation: dma-pulse 2s ease-in-out infinite; }
+  .dma-eyebrow { font-family: 'Overpass', sans-serif; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 2.2px; color: #ca7520; }
+</style>
+
+<div class="dma-root antialiased">
+
+  <!-- NAVBAR -->
+  <header class="w-full bg-white/95 backdrop-blur sticky top-0 z-40 border-b border-gris-sec/20 shadow-sm">
+    <div class="max-w-6xl mx-auto px-5 md:px-8 py-3.5 flex items-center justify-between">
+      <a href="#top"><img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04bbc1fa8afa3be0bb00d8.png" alt="Design Modeling Academy DG" class="h-10 md:h-11 w-auto"></a>
+      <a href="#registro" class="inline-flex items-center gap-2 bg-naranja hover:bg-naranja-claro text-white text-xs md:text-sm font-semibold uppercase tracking-wider px-4 md:px-6 py-2.5 md:py-3 rounded-full transition-colors shadow-md">Reservar lugar gratis</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="top" class="dma-hero-bg relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-5 md:px-8 lg:px-10 pt-10 pb-12 md:pt-16 md:pb-20 lg:pt-20">
+      <div class="grid md:grid-cols-12 gap-10 md:gap-14 md:items-start">
+        <div class="md:col-span-6 order-1">
+          <div class="flex flex-wrap items-center gap-2 mb-5 md:mb-6">
+            <span class="inline-flex items-center gap-1.5 bg-azul-palido text-azul border border-azul/20 text-xs font-semibold px-3 py-1.5 rounded-full"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>{{BADGE_DATE}}</span>
+            <span class="inline-flex items-center gap-1.5 bg-naranja-pal text-naranja border border-naranja/30 text-xs font-semibold px-3 py-1.5 rounded-full"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>{{BADGE_TIME}}</span>
+            <span class="inline-flex items-center gap-1.5 bg-crema text-azul border border-azul/15 text-xs font-semibold px-3 py-1.5 rounded-full"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>{{BADGE_TYPE}}</span>
+            <span class="inline-flex items-center bg-azul text-white text-xs font-semibold px-3 py-1.5 rounded-full">GRATIS</span>
+          </div>
+          <p class="dma-eyebrow mb-4">{{EYEBROW_HERO}}</p>
+          <h1 class="font-heading font-bold text-[2rem] sm:text-[2.4rem] md:text-[2.6rem] lg:text-[3rem] leading-[1.05] mb-5 md:mb-6 text-azul">{{H1_MAIN}} <span class="text-naranja">{{H1_HIGHLIGHT}}</span></h1>
+          <p class="text-base md:text-lg text-gris-text leading-relaxed mb-7 md:mb-8 max-w-lg">{{HERO_INTRO}}</p>
+          <div class="mb-6 md:mb-8">
+            <p class="text-xs font-semibold uppercase tracking-widest text-azul/60 mb-3">Comienza en</p>
+            <div id="dma-countdown" class="flex gap-3 md:gap-4">
+              <div class="flex flex-col items-center bg-azul text-white rounded-xl px-4 py-3 md:px-5 md:py-4 min-w-[68px] md:min-w-[78px]"><span class="dma-countdown-num font-heading font-bold text-2xl md:text-3xl leading-none" data-unit="days">--</span><span class="text-[10px] uppercase tracking-wider mt-1 opacity-80">Días</span></div>
+              <div class="flex flex-col items-center bg-azul text-white rounded-xl px-4 py-3 md:px-5 md:py-4 min-w-[68px] md:min-w-[78px]"><span class="dma-countdown-num font-heading font-bold text-2xl md:text-3xl leading-none" data-unit="hours">--</span><span class="text-[10px] uppercase tracking-wider mt-1 opacity-80">Horas</span></div>
+              <div class="flex flex-col items-center bg-azul text-white rounded-xl px-4 py-3 md:px-5 md:py-4 min-w-[68px] md:min-w-[78px]"><span class="dma-countdown-num font-heading font-bold text-2xl md:text-3xl leading-none" data-unit="minutes">--</span><span class="text-[10px] uppercase tracking-wider mt-1 opacity-80">Min</span></div>
+              <div class="flex flex-col items-center bg-naranja text-white rounded-xl px-4 py-3 md:px-5 md:py-4 min-w-[68px] md:min-w-[78px]"><span class="dma-countdown-num font-heading font-bold text-2xl md:text-3xl leading-none" data-unit="seconds">--</span><span class="text-[10px] uppercase tracking-wider mt-1 opacity-80">Seg</span></div>
+            </div>
+          </div>
+          <div class="space-y-4 max-w-md">
+            <div class="bg-crema border border-azul-palido/60 rounded-xl p-4">
+              <div class="flex items-center gap-2 mb-3"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#003e5c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><p class="font-heading font-bold text-sm text-azul uppercase tracking-wide">Horario por país</p></div>
+              <ul class="space-y-1.5 text-xs md:text-sm text-gris-text">{{TIMEZONE_ROWS}}</ul>
+            </div>
+            <div class="flex items-start gap-3 text-sm text-gris-text"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ca7520" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0 mt-0.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg><span><strong class="text-azul" id="dma-registrados">{{REGISTRADOS}}</strong> profesionales BIM ya reservaron su lugar</span></div>
+          </div>
+        </div>
+        <div class="md:col-span-6 order-2">
+          <div id="registro" class="bg-white rounded-2xl shadow-2xl border-2 border-azul-palido p-4 md:p-6 max-w-md w-full mx-auto md:mx-0 md:ml-auto md:max-w-none">
+            <div class="text-center pb-3 mb-4 border-b border-azul-palido">
+              <p class="dma-eyebrow text-naranja mb-2">{{FORM_EYEBROW}}</p>
+              <h2 class="font-heading text-2xl md:text-[1.85rem] font-bold leading-tight text-azul mb-2">{{FORM_TITLE}}</h2>
+              <p class="text-sm text-gris-text">{{FORM_SUBTITLE}}</p>
+            </div>
+            <div class="dma-iframe-wrap rounded-lg overflow-hidden">
+              <iframe src="https://link.apisystem.tech/widget/form/{{FORM_ID}}" style="width:100%;border:none;border-radius:3px;display:block;" id="inline-{{FORM_ID}}" data-layout="{'id':'INLINE'}" data-trigger-type="alwaysShow" data-trigger-value="" data-activation-type="alwaysActivated" data-activation-value="" data-deactivation-type="neverDeactivate" data-deactivation-value="" data-form-name="Registro Evento DMA" data-height="auto" data-layout-iframe-id="inline-{{FORM_ID}}" data-form-id="{{FORM_ID}}" title="Registro Evento DMA"></iframe>
+              <script src="https://link.apisystem.tech/js/form_embed.js"></script>
+            </div>
+          </div>
+          <p class="text-xs text-gris-text/70 mt-3 text-center md:text-left">🔒 100% gratuito · Sin spam · Cancelas cuando quieras</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section id="beneficios" class="py-16 md:py-24 bg-crema">
+    <div class="max-w-6xl mx-auto px-5 md:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12 md:mb-16">
+        <p class="dma-eyebrow mb-4">{{BENEFITS_EYEBROW}}</p>
+        <h2 class="font-heading text-3xl md:text-5xl font-bold text-azul mb-4">{{BENEFITS_TITLE}}</h2>
+        <p class="text-base md:text-lg text-gris-text">{{BENEFITS_SUBTITLE}}</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-5 md:gap-6">
+        <article class="dma-lift bg-white rounded-2xl p-7 md:p-8 border border-gris-sec/15 shadow-md">
+          <div class="w-14 h-14 rounded-2xl bg-azul flex items-center justify-center mb-5"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+          <h3 class="font-heading text-xl md:text-2xl font-bold text-azul mb-3 leading-tight">{{BENEFIT_1_TITLE}}</h3>
+          <p class="text-gris-text leading-relaxed">{{BENEFIT_1_DESC}}</p>
+        </article>
+        <article class="dma-lift bg-white rounded-2xl p-7 md:p-8 border border-gris-sec/15 shadow-md">
+          <div class="w-14 h-14 rounded-2xl bg-naranja flex items-center justify-center mb-5"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
+          <h3 class="font-heading text-xl md:text-2xl font-bold text-azul mb-3 leading-tight">{{BENEFIT_2_TITLE}}</h3>
+          <p class="text-gris-text leading-relaxed">{{BENEFIT_2_DESC}}</p>
+        </article>
+        <article class="dma-lift bg-white rounded-2xl p-7 md:p-8 border border-gris-sec/15 shadow-md">
+          <div class="w-14 h-14 rounded-2xl bg-azul-navy flex items-center justify-center mb-5"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></div>
+          <h3 class="font-heading text-xl md:text-2xl font-bold text-azul mb-3 leading-tight">{{BENEFIT_3_TITLE}}</h3>
+          <p class="text-gris-text leading-relaxed">{{BENEFIT_3_DESC}}</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARACIÓN -->
+  <section id="comparacion" class="py-16 md:py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-5 md:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12 md:mb-16">
+        <p class="dma-eyebrow mb-4">{{COMPARISON_EYEBROW}}</p>
+        <h2 class="font-heading text-3xl md:text-5xl font-bold text-azul">{{COMPARISON_TITLE}}</h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-5 md:gap-7">
+        <div class="bg-gris-sec/10 border-2 border-gris-sec/30 rounded-2xl p-7 md:p-9">
+          <div class="flex items-center gap-3 mb-6"><div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div><h3 class="font-heading text-xl md:text-2xl font-bold text-gris-text">{{COMPARISON_OLD_COL}}</h3></div>
+          <ul class="space-y-4">{{COMPARISON_OLD_BULLETS}}</ul>
+        </div>
+        <div class="bg-gradient-to-br from-azul-palido/60 to-naranja-pal/40 border-2 border-naranja rounded-2xl p-7 md:p-9 relative">
+          <div class="absolute -top-3 right-5 bg-naranja text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-md">{{COMPARISON_NEW_BADGE}}</div>
+          <div class="flex items-center gap-3 mb-6"><div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><h3 class="font-heading text-xl md:text-2xl font-bold text-azul">{{COMPARISON_NEW_COL}}</h3></div>
+          <ul class="space-y-4">{{COMPARISON_NEW_BULLETS}}</ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENIDO -->
+  <section id="contenido" class="py-16 md:py-24 bg-azul text-white relative overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none" aria-hidden="true"><div class="absolute -top-32 -left-32 w-[460px] h-[460px] rounded-full bg-naranja/20 blur-3xl"></div><div class="absolute bottom-0 -right-32 w-[420px] h-[420px] rounded-full bg-azul-palido/15 blur-3xl"></div></div>
+    <div class="relative max-w-5xl mx-auto px-5 md:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12 md:mb-16">
+        <p class="dma-eyebrow mb-4" style="color: #e8a04a;">{{CONTENT_EYEBROW}}</p>
+        <h2 class="font-heading text-3xl md:text-5xl font-bold text-white mb-4">{{CONTENT_TITLE}}</h2>
+        <p class="text-base md:text-lg text-white/80">{{CONTENT_SUBTITLE}}</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-4 md:gap-5">
+        <div class="flex items-start gap-4 bg-white/8 backdrop-blur border border-white/15 rounded-xl p-5"><span class="w-8 h-8 rounded-full bg-naranja flex items-center justify-center text-white font-bold flex-shrink-0 text-sm">1</span><p class="text-white leading-snug">{{CONTENT_1}}</p></div>
+        <div class="flex items-start gap-4 bg-white/8 backdrop-blur border border-white/15 rounded-xl p-5"><span class="w-8 h-8 rounded-full bg-naranja flex items-center justify-center text-white font-bold flex-shrink-0 text-sm">2</span><p class="text-white leading-snug">{{CONTENT_2}}</p></div>
+        <div class="flex items-start gap-4 bg-white/8 backdrop-blur border border-white/15 rounded-xl p-5"><span class="w-8 h-8 rounded-full bg-naranja flex items-center justify-center text-white font-bold flex-shrink-0 text-sm">3</span><p class="text-white leading-snug">{{CONTENT_3}}</p></div>
+        <div class="flex items-start gap-4 bg-white/8 backdrop-blur border border-white/15 rounded-xl p-5"><span class="w-8 h-8 rounded-full bg-naranja flex items-center justify-center text-white font-bold flex-shrink-0 text-sm">4</span><p class="text-white leading-snug">{{CONTENT_4}}</p></div>
+        <div class="flex items-start gap-4 bg-white/8 backdrop-blur border border-white/15 rounded-xl p-5"><span class="w-8 h-8 rounded-full bg-naranja flex items-center justify-center text-white font-bold flex-shrink-0 text-sm">5</span><p class="text-white leading-snug">{{CONTENT_5}}</p></div>
+        <div class="flex items-start gap-4 bg-white/8 backdrop-blur border border-white/15 rounded-xl p-5"><span class="w-8 h-8 rounded-full bg-naranja flex items-center justify-center text-white font-bold flex-shrink-0 text-sm">6</span><p class="text-white leading-snug">{{CONTENT_6}}</p></div>
+        <div class="flex items-start gap-4 bg-white/8 backdrop-blur border border-white/15 rounded-xl p-5"><span class="w-8 h-8 rounded-full bg-naranja flex items-center justify-center text-white font-bold flex-shrink-0 text-sm">7</span><p class="text-white leading-snug">{{CONTENT_7}}</p></div>
+        <div class="flex items-start gap-4 bg-white/8 backdrop-blur border border-white/15 rounded-xl p-5"><span class="w-8 h-8 rounded-full bg-naranja flex items-center justify-center text-white font-bold flex-shrink-0 text-sm">8</span><p class="text-white leading-snug">{{CONTENT_8}}</p></div>
+      </div>
+      <div class="text-center mt-12"><a href="#registro" class="inline-flex items-center gap-2 bg-naranja hover:bg-naranja-claro text-white font-semibold uppercase tracking-wider px-7 py-3.5 rounded-full transition-colors shadow-lg">Reservar mi lugar ahora <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M1 8h13M9 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+    </div>
+  </section>
+
+  <!-- EXPOSITOR -->
+  <section id="expositor" class="py-16 md:py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-5 md:px-8">
+      <div class="grid md:grid-cols-12 gap-10 md:gap-14 items-center">
+        <div class="md:col-span-5 order-2 md:order-1">
+          <div class="relative max-w-sm mx-auto md:mx-0">
+            <div class="absolute -top-3 -right-3 md:-top-4 md:-right-4 bg-naranja text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full shadow-lg z-10">Anfitrión</div>
+            <img src="{{EXPOSITOR_IMAGE}}" alt="{{EXPOSITOR_NAME}}" class="w-full rounded-2xl shadow-2xl" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="md:col-span-7 order-1 md:order-2">
+          <p class="dma-eyebrow mb-4">{{EXPOSITOR_EYEBROW}}</p>
+          <h2 class="font-heading text-3xl md:text-5xl font-bold text-azul mb-2">{{EXPOSITOR_NAME}}</h2>
+          <p class="text-naranja font-semibold uppercase tracking-wider text-sm mb-6">{{EXPOSITOR_TITLE}}</p>
+          <p class="text-base md:text-lg text-gris-text leading-relaxed mb-4">{{EXPOSITOR_BIO_1}}</p>
+          <p class="text-base md:text-lg text-gris-text leading-relaxed mb-8">{{EXPOSITOR_BIO_2}}</p>
+          <div class="grid grid-cols-3 gap-3 md:gap-5">
+            <div class="bg-crema border border-azul-palido rounded-xl p-4 md:p-5 text-center"><div class="font-heading text-2xl md:text-3xl font-bold text-naranja leading-none">{{STAT_1_NUM}}</div><p class="text-xs md:text-sm text-gris-text mt-2 leading-tight">{{STAT_1_LABEL}}</p></div>
+            <div class="bg-crema border border-azul-palido rounded-xl p-4 md:p-5 text-center"><div class="font-heading text-2xl md:text-3xl font-bold text-naranja leading-none">{{STAT_2_NUM}}</div><p class="text-xs md:text-sm text-gris-text mt-2 leading-tight">{{STAT_2_LABEL}}</p></div>
+            <div class="bg-crema border border-azul-palido rounded-xl p-4 md:p-5 text-center"><div class="font-heading text-2xl md:text-3xl font-bold text-naranja leading-none">{{STAT_3_NUM}}</div><p class="text-xs md:text-sm text-gris-text mt-2 leading-tight">{{STAT_3_LABEL}}</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN TEMÁTICA ESPECIAL -->
+  <section id="especial" class="py-16 md:py-24 bg-gradient-to-b from-crema to-white">
+    <div class="max-w-6xl mx-auto px-5 md:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+        <p class="dma-eyebrow mb-4">{{SPECIAL_EYEBROW}}</p>
+        <h2 class="font-heading text-3xl md:text-5xl font-bold text-azul mb-4">{{SPECIAL_TITLE}}<br><span class="text-naranja text-2xl md:text-3xl font-semibold">{{SPECIAL_SUBTITLE_ACCENT}}</span></h2>
+        <p class="text-base md:text-lg text-gris-text mt-6">{{SPECIAL_DESC}}</p>
+      </div>
+      <div class="mb-12 md:mb-16">{{SPECIAL_BADGES_ROW}}</div>
+      <div class="grid md:grid-cols-3 gap-5 md:gap-7">
+        <div class="bg-white border-2 border-azul-palido rounded-2xl p-7 md:p-8 text-center"><div class="w-14 h-14 rounded-full bg-azul flex items-center justify-center mx-auto mb-5"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><h3 class="font-heading text-xl font-bold text-azul mb-3">{{SPECIAL_F1_TITLE}}</h3><p class="text-gris-text leading-relaxed text-sm md:text-base">{{SPECIAL_F1_DESC}}</p></div>
+        <div class="bg-white border-2 border-naranja rounded-2xl p-7 md:p-8 text-center shadow-lg"><div class="w-14 h-14 rounded-full bg-naranja flex items-center justify-center mx-auto mb-5"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10"/></svg></div><h3 class="font-heading text-xl font-bold text-azul mb-3">{{SPECIAL_F2_TITLE}}</h3><p class="text-gris-text leading-relaxed text-sm md:text-base">{{SPECIAL_F2_DESC}}</p></div>
+        <div class="bg-white border-2 border-azul-palido rounded-2xl p-7 md:p-8 text-center"><div class="w-14 h-14 rounded-full bg-azul-navy flex items-center justify-center mx-auto mb-5"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><h3 class="font-heading text-xl font-bold text-azul mb-3">{{SPECIAL_F3_TITLE}}</h3><p class="text-gris-text leading-relaxed text-sm md:text-base">{{SPECIAL_F3_DESC}}</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section id="testimonios" class="py-16 md:py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-5 md:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12 md:mb-16">
+        <p class="dma-eyebrow mb-4">Historias reales, resultados reales</p>
+        <h2 class="font-heading text-3xl md:text-5xl font-bold text-azul">Profesionales BIM que ya<br class="hidden md:block"> tomaron el paso</h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-5 md:gap-6">
+        <article class="dma-lift bg-crema border border-azul-palido/60 rounded-2xl p-7 md:p-8 relative"><div class="font-heading text-6xl text-naranja/30 leading-none absolute top-4 left-5">"</div><p class="text-gris-text leading-relaxed mb-6 relative z-10 pt-5">{{TESTIMONIO_1_QUOTE}}</p><div class="flex items-center gap-4 pt-4 border-t border-azul-palido/60"><img src="{{TESTIMONIO_1_IMAGE}}" alt="{{TESTIMONIO_1_NAME}}" class="w-14 h-14 rounded-full object-cover border-2 border-naranja/30 flex-shrink-0" loading="lazy" decoding="async"><div><p class="font-heading font-bold text-azul">{{TESTIMONIO_1_NAME}}</p><p class="text-xs text-gris-text uppercase tracking-wider font-semibold">{{TESTIMONIO_1_ROLE}}</p></div></div></article>
+        <article class="dma-lift bg-crema border border-azul-palido/60 rounded-2xl p-7 md:p-8 relative"><div class="font-heading text-6xl text-naranja/30 leading-none absolute top-4 left-5">"</div><p class="text-gris-text leading-relaxed mb-6 relative z-10 pt-5">{{TESTIMONIO_2_QUOTE}}</p><div class="flex items-center gap-4 pt-4 border-t border-azul-palido/60"><img src="{{TESTIMONIO_2_IMAGE}}" alt="{{TESTIMONIO_2_NAME}}" class="w-14 h-14 rounded-full object-cover border-2 border-naranja/30 flex-shrink-0" loading="lazy" decoding="async"><div><p class="font-heading font-bold text-azul">{{TESTIMONIO_2_NAME}}</p><p class="text-xs text-gris-text uppercase tracking-wider font-semibold">{{TESTIMONIO_2_ROLE}}</p></div></div></article>
+        <article class="dma-lift bg-crema border border-azul-palido/60 rounded-2xl p-7 md:p-8 relative"><div class="font-heading text-6xl text-naranja/30 leading-none absolute top-4 left-5">"</div><p class="text-gris-text leading-relaxed mb-6 relative z-10 pt-5">{{TESTIMONIO_3_QUOTE}}</p><div class="flex items-center gap-4 pt-4 border-t border-azul-palido/60"><img src="{{TESTIMONIO_3_IMAGE}}" alt="{{TESTIMONIO_3_NAME}}" class="w-14 h-14 rounded-full object-cover border-2 border-naranja/30 flex-shrink-0" loading="lazy" decoding="async"><div><p class="font-heading font-bold text-azul">{{TESTIMONIO_3_NAME}}</p><p class="text-xs text-gris-text uppercase tracking-wider font-semibold">{{TESTIMONIO_3_ROLE}}</p></div></div></article>
+        <article class="dma-lift bg-crema border border-azul-palido/60 rounded-2xl p-7 md:p-8 relative"><div class="font-heading text-6xl text-naranja/30 leading-none absolute top-4 left-5">"</div><p class="text-gris-text leading-relaxed mb-6 relative z-10 pt-5">{{TESTIMONIO_4_QUOTE}}</p><div class="flex items-center gap-4 pt-4 border-t border-azul-palido/60"><img src="{{TESTIMONIO_4_IMAGE}}" alt="{{TESTIMONIO_4_NAME}}" class="w-14 h-14 rounded-full object-cover border-2 border-naranja/30 flex-shrink-0" loading="lazy" decoding="async"><div><p class="font-heading font-bold text-azul">{{TESTIMONIO_4_NAME}}</p><p class="text-xs text-gris-text uppercase tracking-wider font-semibold">{{TESTIMONIO_4_ROLE}}</p></div></div></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="py-16 md:py-24 bg-gradient-to-br from-azul to-azul-navy text-white relative overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none" aria-hidden="true"><div class="absolute -top-32 right-0 w-[420px] h-[420px] rounded-full bg-naranja/20 blur-3xl"></div></div>
+    <div class="relative max-w-3xl mx-auto px-5 md:px-8 text-center">
+      <p class="dma-eyebrow mb-4" style="color: #e8a04a;">{{CTA_EYEBROW}}</p>
+      <h2 class="font-heading text-3xl md:text-5xl font-bold text-white mb-5 leading-tight">{{CTA_TITLE}}</h2>
+      <p class="text-base md:text-lg text-white/85 mb-9 max-w-xl mx-auto">{{CTA_DESC}}</p>
+      <a href="#registro" class="inline-flex items-center gap-2 bg-naranja hover:bg-naranja-claro text-white font-semibold uppercase tracking-wider px-8 py-4 rounded-full transition-colors shadow-2xl text-sm md:text-base">Reservar mi lugar gratis →</a>
+      <p class="text-xs text-white/55 mt-5">Sin spam · Cancelas cuando quieras · Recibes el link de Zoom por email y WhatsApp</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-azul-navy text-white py-12 md:py-16 border-t border-white/10">
+    <div class="max-w-6xl mx-auto px-5 md:px-8">
+      <div class="grid md:grid-cols-3 gap-10 md:gap-14 items-center mb-12 pb-12 border-b border-white/10">
+        <div class="text-center"><p class="text-[10px] font-semibold uppercase tracking-widest text-white/55 mb-4">Producido por</p><img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04bbc1138c806d2dce58f9.png" alt="Design Modeling Academy DG" class="h-14 md:h-16 w-auto mx-auto" style="filter: brightness(0) invert(1);" loading="lazy" decoding="async"></div>
+        <div class="text-center"><p class="text-[10px] font-semibold uppercase tracking-widest text-white/55 mb-4">Acreditado por</p><div class="flex items-center justify-center gap-5 md:gap-7"><img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d1f060b8c350d3e114d7.png" alt="Doctrina Qualitas" class="h-14 md:h-16 w-auto" loading="lazy" decoding="async"><img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d1f0f7d455340c70e652.png" alt="Doctrina Qualitas" class="h-14 md:h-16 w-auto" loading="lazy" decoding="async"></div></div>
+        <div class="text-center"><p class="text-[10px] font-semibold uppercase tracking-widest text-white/55 mb-4">Software oficial</p><img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d1738c6475e185dfddb1.png" alt="Autodesk Authorized Training Center" class="h-10 md:h-12 w-auto mx-auto" style="filter: brightness(0) invert(1);" loading="lazy" decoding="async"></div>
+      </div>
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="text-center md:text-left"><p class="font-heading text-lg font-bold text-white mb-1">Design Modeling Academy</p><p class="text-white/55 text-sm">Formación BIM profesional · LATAM e internacional</p></div>
+        <a href="#registro" class="inline-flex items-center gap-2 bg-naranja hover:bg-naranja-claro text-white text-sm font-semibold uppercase tracking-wider px-6 py-3 rounded-full transition-colors">Aún tienes tiempo · Reserva aquí</a>
+      </div>
+      <div class="border-t border-white/10 mt-10 pt-6 text-xs text-white/40 flex flex-col md:flex-row md:justify-between gap-2 text-center md:text-left">
+        <p>{{FOOTER_COPYRIGHT}}</p>
+        <p>{{FOOTER_EVENT_DATE}}</p>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<!-- COUNTDOWN SCRIPT -->
+<script>
+  (function() {
+    var targetDate = new Date('{{COUNTDOWN_TARGET}}').getTime();
+    var els = {
+      days: document.querySelector('#dma-countdown [data-unit="days"]'),
+      hours: document.querySelector('#dma-countdown [data-unit="hours"]'),
+      minutes: document.querySelector('#dma-countdown [data-unit="minutes"]'),
+      seconds: document.querySelector('#dma-countdown [data-unit="seconds"]')
+    };
+    if (!els.days) return;
+    function tick() {
+      var now = Date.now();
+      var diff = targetDate - now;
+      if (diff <= 0) { els.days.textContent = '00'; els.hours.textContent = '00'; els.minutes.textContent = '00'; els.seconds.textContent = '00'; return; }
+      var d = Math.floor(diff / 86400000);
+      var h = Math.floor((diff % 86400000) / 3600000);
+      var m = Math.floor((diff % 3600000) / 60000);
+      var s = Math.floor((diff % 60000) / 1000);
+      els.days.textContent = String(d).padStart(2, '0');
+      els.hours.textContent = String(h).padStart(2, '0');
+      els.minutes.textContent = String(m).padStart(2, '0');
+      els.seconds.textContent = String(s).padStart(2, '0');
+    }
+    tick();
+    setInterval(tick, 1000);
+  })();
+</script>
