@@ -294,8 +294,27 @@ footer .brand {
 footer a { color: var(--azul-medio); text-decoration: none; }
 footer a:hover { color: var(--naranja); }
 
+/* BOTÓN DE ACCESO DIRECTO A LA CALCULADORA */
+.btn-calc {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--naranja) 0%, var(--naranja-claro) 100%);
+  color: var(--blanco);
+  font-family: 'Overpass', sans-serif;
+  font-weight: 800;
+  font-size: clamp(1rem, 2.4vw, 1.15rem);
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  padding: 17px 34px;
+  border-radius: 12px;
+  margin-top: 22px;
+  box-shadow: 0 14px 36px rgba(202,117,32,0.45);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn-calc:hover { transform: translateY(-2px); box-shadow: 0 18px 44px rgba(202,117,32,0.55); color: var(--blanco); }
+
 @media (max-width: 600px) {
   .hero { padding: 40px 20px 56px; }
+  .btn-calc { display: block; text-align: center; padding: 16px 18px; }
   .check-circle { width: 64px; height: 64px; margin-bottom: 18px; }
   .check-circle svg { width: 34px; height: 34px; }
   .info-card { padding: 22px 20px; margin: -20px 12px 22px; }
@@ -317,8 +336,9 @@ footer a:hover { color: var(--naranja); }
       </svg>
     </div>
     <h1>¡Listo! Ya desbloqueaste tu <span class="accent">Calculadora de Zapatas</span>!</h1>
-    <p class="lead">Te enviamos el acceso a tu correo y WhatsApp.</p>
-    <p>Ábrela cuando quieras desde el celular. Y aquí va el siguiente paso para dar el salto de verdad: agenda una sesión estratégica gratuita con nuestro equipo académico.</p>
+    <p class="lead">Tu acceso está activo desde ya — entra con el botón y úsala cuando quieras, también desde el celular.</p>
+    <a class="btn-calc" href="https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/calculadora-zapatas/app.html?acceso=dm2026" target="_blank" rel="noopener">🧱 ABRIR MI CALCULADORA AHORA →</a>
+    <p style="margin-top:18px;">Y aquí va el siguiente paso para dar el salto de verdad: agenda una sesión estratégica gratuita con nuestro equipo académico. 👇</p>
   </div>
 </section>
 
@@ -333,11 +353,11 @@ footer a:hover { color: var(--naranja); }
       </span>
       Qué sigue ahora
     </h2>
-    <p>Ya puedes <a href="https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/calculadora-zapatas/app.html" target="_blank" rel="noopener"><strong>abrir tu Calculadora de Zapatas aquí</strong></a>. Y para pasar de calcular una zapata a la vez a <strong>automatizar todo tu flujo de proyecto con BIM + IA</strong>, agenda una sesión con nuestro equipo. La tecnología te da la velocidad; el criterio profesional sigue siendo tuyo — y eso es justo lo que enseñamos.</p>
+    <p>Ya puedes <a href="https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/calculadora-zapatas/app.html?acceso=dm2026" target="_blank" rel="noopener"><strong>abrir tu Calculadora de Zapatas aquí</strong></a>. Y para pasar de calcular una zapata a la vez a <strong>automatizar todo tu flujo de proyecto con BIM + IA</strong>, agenda una sesión con nuestro equipo. La tecnología te da la velocidad; el criterio profesional sigue siendo tuyo — y eso es justo lo que enseñamos.</p>
     <div class="steps">
       <div class="steps-title">El proceso</div>
       <div class="step-item"><span class="step-num">1</span><span>Eliges día y horario en el calendario de abajo</span></div>
-      <div class="step-item"><span class="step-num">2</span><span>Recibes confirmación al instante por correo y WhatsApp</span></div>
+      <div class="step-item"><span class="step-num">2</span><span>Confirmas tu sesión ahí mismo, al instante</span></div>
       <div class="step-item"><span class="step-num">3</span><span>Un asesor académico te contacta 5 minutos antes de tu sesión</span></div>
     </div>
   </div>
