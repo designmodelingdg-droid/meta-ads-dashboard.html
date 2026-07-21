@@ -68,3 +68,27 @@ La matriz cambia seguido. Para que tú y la app de contenido nunca trabajen con 
 
 ## Guiones
 En `matriz-viral/guiones/`. Los 5 primeros ya existen; los próximos deben nacer del Pilar 3 corregido (núcleo BIM/IA con formato de reveal/humor + CTA "comenta BIM o IA").
+
+---
+
+## Actualización 2026-07-21 — lectura de los últimos 6 posts
+
+Métricas reales (IG Insights). Confirman y afinan la estrategia:
+
+| Post | Formato | Views | Alcance | Guardados | Comentarios | Interacc/Alcance |
+|---|---|---|---|---|---|---|
+| La IA ya hace 5 tareas de tu trabajo BIM | Carrusel | 3,789 | 1,711 | 46 | 35 | **8.5%** |
+| Le pedí a ChatGPT que diseñe una losa | Reel | 2,982 | 1,751 | 37 | 46 | **8.5%** |
+| Post zapatas (lead magnet) | Post | 1,424 | 428 | 5 | 13 (+22 FB) | 6.5% |
+| De Revit a Power BI | Reel | 1,550 | 1,083 | 8 | 2 | 2% |
+| ¿Por qué la IA no reemplaza a un ing. estructural? | Reel | 1,019 | 502 | 2 | 0 | 1.8% |
+| 3 FAQ Naves SAP2000 | Reel | 5,195 | 886 | 0 | 0 | **0.45%** |
+
+**Qué aprendimos:**
+
+1. **El ángulo "IA vs criterio del ingeniero" es el ganador.** Los dos posts con mejor engagement (8.5%) son núcleo BIM+IA con ese ángulo — muchos guardados y comentarios. Es el formato a repetir.
+2. **Alcance alto ≠ negocio.** "3 FAQ SAP2000" fue el de más views (5,195) pero **0 comentarios, 0 guardados, 0.45%**: atrajo vistas, no conversación ni leads. Promo de curso pura = el patrón que menos convierte (ya diagnosticado en §2.2 / §5).
+3. **El hook/CTA decide, no solo el tema.** El reel "IA no reemplaza al ingeniero" es núcleo BIM+IA (bien) pero tuvo 0 comentarios: la pregunta retórica no invitó a comentar ni mostró algo concreto. En cambio el carrusel y la losa (demos concretas + guardable) sí. **Regla: núcleo + demo concreta + CTA de comentar.**
+4. **El lead magnet conversa.** El post de zapatas generó 35 comentarios (IG+FB) — el CTA "comenta ZAPATA" funciona para abrir conversación/captar.
+
+**Para los próximos guiones:** priorizar núcleo BIM+IA con ángulo "IA vs criterio" + demo concreta + CTA "comenta BIM o IA". Evitar la promo de curso pura sin gancho.
