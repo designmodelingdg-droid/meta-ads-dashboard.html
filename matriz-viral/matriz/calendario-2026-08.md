@@ -54,9 +54,8 @@
 ---
 
 ## Estado de guiones
-- **Listos:** listicle-revit-ia, 5-errores-ia-bim, zapatas, dialogo-arqui-inge, mito-render-ia, ia-coordina-modelo-bim.
-- **Por escribir (ideas):** BIM Manager vs IA (criterio), tip Revit+IA, coordinador vs a mano (humor), 3 señales BIM+IA, blog, comunidad.
-- **A definir (datos tuyos):** proyecto/caso de alumno (Vie 22), conferencia (Sáb 30).
+- **Listos (todos):** listicle-revit-ia · 5-errores-ia-bim · zapatas · dialogo-arqui-inge · mito-render-ia · ia-coordina-modelo-bim · **bim-manager-vs-ia** · **tip-revit-ia** · **3-senales-bim-ia** · **coordinador-vs-a-mano** · **blog-ia-automatizar** · **comunidad-recap**. → El mes está 100% guionizado.
+- **A definir (datos tuyos):** proyecto/caso de alumno (Vie 22) y conferencia (Sáb 30) — me los pasas cuando estén.
 
 ## Recordatorio
 Al publicar cada pieza, registrar en `matriz.json` con `tipo`, `red` y métricas → medimos qué formato/red rinde y ajustamos septiembre sobre evidencia.
