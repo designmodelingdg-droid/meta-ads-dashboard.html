@@ -1,7 +1,7 @@
 {
  "generado": "2026-07-23",
  "nota": "Contenido COMPLETO de cada pieza (hook, slides palabra por palabra, guion de reel, caption y CTA por red). La app debe leer ESTE archivo para generar el post correcto sin inventar.",
- "total": 12,
+ "total": 34,
  "piezas": [
   {
    "id": "jul-mito-render-ia",
@@ -448,6 +448,754 @@
     "youtube": "Link a la calculadora en la descripción."
    },
    "prompt_imagenes": "Carrusel de marca (azul #0E2438 + naranja). Números 01-06. Último slide con captura de la calculadora."
+  },
+  {
+   "id": "ago-dynamo-revit",
+   "titulo": "Cómo usar Dynamo para automatizar tareas repetitivas en Revit",
+   "formato": "reel",
+   "red_principal": "instagram",
+   "eje": "NUCLEO-BIM",
+   "pilar": "Educativo",
+   "hook": "¿Sigues renombrando 200 vistas a mano en Revit? Dynamo lo hace en 30 segundos.",
+   "guion_reel": [
+    {
+     "tiempo": "0-3s",
+     "accion": "Pantalla Revit con lista larga de vistas",
+     "voz": "¿Sigues renombrando vistas una por una? Mira esto."
+    },
+    {
+     "tiempo": "3-18s",
+     "accion": "Correr un script Dynamo simple (renombrar/ordenar)",
+     "voz": "Con Dynamo le das una regla y renombra, ordena o exporta cientos de elementos de golpe. Y no: no necesitas saber programar, hay scripts ya hechos."
+    },
+    {
+     "tiempo": "18-28s",
+     "accion": "Resultado + CTA",
+     "voz": "Lo que te tomaba media hora, en 30 segundos. Comenta ‘BIM’ o ‘IA’ y te paso 3 scripts para empezar."
+    }
+   ],
+   "caption": "Dynamo es la puerta de entrada a automatizar Revit sin escribir código. Renombrar vistas, numerar habitaciones, exportar planos… tareas de media hora en segundos.\n\n💬 Comenta “BIM” o “IA” y te paso 3 scripts listos para empezar.\n\n#Dynamo #Revit #BIM #Automatización #DesignModelingDG",
+   "cta_por_red": {
+    "instagram": "Comenta “BIM” o “IA” y te mando la info por DM.",
+    "tiktok": "Comenta “BIM” o “IA” · link en bio.",
+    "linkedin": "Automatizar Revit con Dynamo no requiere ser programador. ¿Qué tarea repetitiva automatizarían primero?",
+    "youtube": "Paso a paso completo en el video · link en la descripción."
+   }
+  },
+  {
+   "id": "ago-chatgpt-revit",
+   "titulo": "Integración de ChatGPT con Revit para asistencias rápidas",
+   "formato": "reel",
+   "red_principal": "tiktok",
+   "eje": "NUCLEO-IA",
+   "pilar": "Educativo",
+   "hook": "Le pegué un error de Revit a ChatGPT y me ahorró 2 horas de buscar en foros.",
+   "guion_reel": [
+    {
+     "tiempo": "0-3s",
+     "accion": "Pantalla con un error/warning de Revit",
+     "voz": "Me salió este error en Revit. En vez de buscar en foros…"
+    },
+    {
+     "tiempo": "3-16s",
+     "accion": "Copiar el error → ChatGPT → respuesta",
+     "voz": "Se lo pegué a ChatGPT, le di contexto del proyecto, y me explicó la causa y 2 formas de resolverlo. En segundos."
+    },
+    {
+     "tiempo": "16-25s",
+     "accion": "Aplicar la solución + CTA",
+     "voz": "Ojo: verifiqué antes de aplicar — la IA se equivoca. Pero como punto de partida, vuela. Comenta ‘BIM’ o ‘IA’ y te enseño a usarla bien."
+    }
+   ],
+   "caption": "ChatGPT no reemplaza tu criterio, pero como asistente de Revit te ahorra horas: explica errores, sugiere flujos, redacta especificaciones. Siempre verifica antes de aplicar.\n\n💬 Comenta “BIM” o “IA” y te enseño cómo integrarla en tu día a día.\n\n#ChatGPT #Revit #BIM #IA #DesignModelingDG",
+   "cta_por_red": {
+    "instagram": "Comenta “BIM” o “IA” y te mando la info por DM.",
+    "tiktok": "Comenta “BIM” o “IA” · link en bio.",
+    "linkedin": "¿Cómo lo ven en sus proyectos? Coméntenme o escríbanme por DM.",
+    "youtube": "Paso a paso completo en el video · link en la descripción."
+   }
+  },
+  {
+   "id": "ago-python-bim",
+   "titulo": "Usando Python para mejorar la eficiencia en proyectos BIM",
+   "formato": "reel",
+   "red_principal": "tiktok",
+   "eje": "NUCLEO-IA",
+   "pilar": "Educativo",
+   "hook": "No necesitas ser programador. Con 10 líneas de Python automaticé un reporte que me tomaba toda una tarde.",
+   "guion_reel": [
+    {
+     "tiempo": "0-3s",
+     "accion": "Hook a cámara / pantalla",
+     "voz": "No soy programador, pero Python me cambió el flujo BIM."
+    },
+    {
+     "tiempo": "3-18s",
+     "accion": "Mostrar un script corto leyendo datos del modelo → Excel/reporte",
+     "voz": "Con pyRevit o un script simple leo datos del modelo y armo el reporte de cantidades solo. Lo que hacía a mano una tarde, ahora es un clic."
+    },
+    {
+     "tiempo": "18-26s",
+     "accion": "CTA",
+     "voz": "Empezar es más fácil de lo que crees. Comenta ‘BIM’ o ‘IA’ y te digo por dónde."
+    }
+   ],
+   "caption": "Python + BIM = superpoder. No necesitas ser dev: pyRevit y scripts sencillos automatizan reportes, cantidades y chequeos. Empiezas con uno y no paras.\n\n💬 Comenta “BIM” o “IA” y te digo por dónde empezar.\n\n#Python #pyRevit #BIM #Automatización #DesignModelingDG",
+   "cta_por_red": {
+    "instagram": "Comenta “BIM” o “IA” y te mando la info por DM.",
+    "tiktok": "Comenta “BIM” o “IA” · link en bio.",
+    "linkedin": "¿Cómo lo ven en sus proyectos? Coméntenme o escríbanme por DM.",
+    "youtube": "Paso a paso completo en el video · link en la descripción."
+   }
+  },
+  {
+   "id": "ago-mitos-automatizacion",
+   "titulo": "Automatización de tareas BIM con IA: mitos vs realidad",
+   "formato": "reel",
+   "red_principal": "tiktok",
+   "eje": "NUCLEO-IA",
+   "pilar": "Educativo",
+   "hook": "3 mitos sobre automatizar BIM con IA que te están frenando.",
+   "guion_reel": [
+    {
+     "tiempo": "0-3s",
+     "accion": "Hook",
+     "voz": "3 mitos de la IA en BIM que escucho todo el tiempo."
+    },
+    {
+     "tiempo": "3-22s",
+     "accion": "Numerar 1/2/3 en pantalla",
+     "voz": "Mito 1: ‘me va a reemplazar’. Realidad: reemplaza tus tareas, no tu criterio. Mito 2: ‘es solo para expertos’. Realidad: hoy la usas describiendo en palabras. Mito 3: ‘no es confiable’. Realidad: no lo es al 100%, por eso tú validas. Es asistente, no jefe."
+    },
+    {
+     "tiempo": "22-30s",
+     "accion": "CTA",
+     "voz": "¿Cuál creías? Comenta ‘BIM’ o ‘IA’."
+    }
+   ],
+   "caption": "La IA en BIM no viene a reemplazarte ni es magia infalible. Es un asistente que acelera lo repetitivo mientras tú pones el criterio. Rompamos 3 mitos.\n\n💬 ¿Cuál creías? Comenta “BIM” o “IA”.\n\n#BIM #IA #Automatización #DesignModelingDG",
+   "cta_por_red": {
+    "instagram": "Comenta “BIM” o “IA” y te mando la info por DM.",
+    "tiktok": "Comenta “BIM” o “IA” · link en bio.",
+    "linkedin": "¿Cómo lo ven en sus proyectos? Coméntenme o escríbanme por DM.",
+    "youtube": "Paso a paso completo en el video · link en la descripción."
+   }
+  },
+  {
+   "id": "ago-revit-ia-futuro",
+   "titulo": "Revit y la inteligencia artificial: el futuro de los modelos BIM",
+   "formato": "reel",
+   "red_principal": "tiktok",
+   "eje": "NUCLEO-IA",
+   "pilar": "Educativo",
+   "hook": "Así se va a ver modelar en Revit en 2 años (y la IA ya empezó).",
+   "guion_reel": [
+    {
+     "tiempo": "0-3s",
+     "accion": "Hook",
+     "voz": "Modelar en Revit en 2 años no va a ser como hoy."
+    },
+    {
+     "tiempo": "3-20s",
+     "accion": "Mostrar funciones IA emergentes",
+     "voz": "Describes lo que necesitas y la IA arma el primer modelo. Detecta y resuelve choques. Genera documentación sola. El modelador deja de dibujar y pasa a decidir."
+    },
+    {
+     "tiempo": "20-28s",
+     "accion": "CTA",
+     "voz": "El que se adapte hoy, lidera mañana. Comenta ‘BIM’ o ‘IA’."
+    }
+   ],
+   "caption": "La IA está cambiando qué significa modelar en Revit: menos dibujar, más decidir. El profesional BIM que adopte esto hoy, lidera mañana.\n\n💬 Comenta “BIM” o “IA” y te cuento cómo prepararte.\n\n#Revit #BIM #IA #FuturoBIM #DesignModelingDG",
+   "cta_por_red": {
+    "instagram": "Comenta “BIM” o “IA” y te mando la info por DM.",
+    "tiktok": "Comenta “BIM” o “IA” · link en bio.",
+    "linkedin": "¿Cómo lo ven en sus proyectos? Coméntenme o escríbanme por DM.",
+    "youtube": "Paso a paso completo en el video · link en la descripción."
+   }
+  },
+  {
+   "id": "ago-venta-bim-manager",
+   "titulo": "De modelador a BIM Manager (curso)",
+   "formato": "reel",
+   "red_principal": "instagram",
+   "eje": "NUCLEO-IA",
+   "pilar": "Venta",
+   "hook": "De modelador a BIM Manager: las 3 habilidades que te faltan (la 3ª es IA).",
+   "guion_reel": [
+    {
+     "tiempo": "0-3s",
+     "accion": "Hook",
+     "voz": "Modelas bien, pero no despegas a BIM Manager. Te faltan 3 cosas."
+    },
+    {
+     "tiempo": "3-22s",
+     "accion": "Numerar 1/2/3",
+     "voz": "Uno: coordinación entre disciplinas, no solo modelar tu parte. Dos: gestión — estándares, plantillas, entregables. Tres: IA aplicada, para hacer en horas lo que otros hacen en días."
+    },
+    {
+     "tiempo": "22-30s",
+     "accion": "CTA suave",
+     "voz": "Esas 3 se aprenden. Comenta ‘BIM’ o ‘IA’ y te cuento cómo."
+    }
+   ],
+   "caption": "Ser BIM Manager no es modelar más rápido: es coordinar, gestionar y potenciar todo con IA. Estas son las 3 habilidades que marcan la diferencia.\n\n💬 Comenta “BIM” o “IA” y te cuento el camino.\n\n#BIMManager #BIM #IA #DesignModelingDG",
+   "cta_por_red": {
+    "instagram": "Comenta “BIM” o “IA” y te mando la info por DM.",
+    "tiktok": "Comenta “BIM” o “IA” · link en bio.",
+    "linkedin": "¿Qué habilidad creen que separa a un modelador de un BIM Manager?",
+    "youtube": "Paso a paso completo en el video · link en la descripción."
+   }
+  },
+  {
+   "id": "ago-venta-paquete-autodesk",
+   "titulo": "Paquete Autodesk para coordinación BIM",
+   "formato": "reel",
+   "red_principal": "instagram",
+   "eje": "NUCLEO-BIM",
+   "pilar": "Venta",
+   "hook": "4 herramientas de Autodesk que quizá no estás usando en tu coordinación (y deberías).",
+   "guion_reel": [
+    {
+     "tiempo": "0-3s",
+     "accion": "Hook",
+     "voz": "El paquete Autodesk tiene más de lo que usas. 4 que cambian tu coordinación."
+    },
+    {
+     "tiempo": "3-22s",
+     "accion": "Mostrar cada una rápido",
+     "voz": "Revit para el modelo. Navisworks para juntar disciplinas y detectar choques. BIM Collaborate para coordinar en la nube en tiempo real. Y AI Assist para acelerar lo repetitivo."
+    },
+    {
+     "tiempo": "22-30s",
+     "accion": "CTA",
+     "voz": "Bien usadas, coordinas en la mitad del tiempo. Comenta ‘BIM’ o ‘IA’."
+    }
+   ],
+   "caption": "No es tener Autodesk: es saber exprimirlo. Revit + Navisworks + BIM Collaborate + IA = coordinación en la mitad del tiempo. Te muestro cómo encajan.\n\n💬 Comenta “BIM” o “IA” y te cuento el flujo.\n\n#Autodesk #Revit #Navisworks #BIM #DesignModelingDG",
+   "cta_por_red": {
+    "instagram": "Comenta “BIM” o “IA” y te mando la info por DM.",
+    "tiktok": "Comenta “BIM” o “IA” · link en bio.",
+    "linkedin": "¿Cómo lo ven en sus proyectos? Coméntenme o escríbanme por DM.",
+    "youtube": "Paso a paso completo en el video · link en la descripción."
+   }
+  },
+  {
+   "id": "ago-venta-asesoria-carrera",
+   "titulo": "Asesoría para tu carrera BIM con IA",
+   "formato": "reel",
+   "red_principal": "instagram",
+   "eje": "NUCLEO-IA",
+   "pilar": "Venta",
+   "hook": "¿Por dónde empezar con BIM + IA según tu perfil? Te ayudo a trazarlo.",
+   "guion_reel": [
+    {
+     "tiempo": "0-3s",
+     "accion": "Hook",
+     "voz": "No todos empiezan BIM + IA por el mismo lado. Depende de dónde estás."
+    },
+    {
+     "tiempo": "3-20s",
+     "accion": "3 perfiles",
+     "voz": "Si recién empiezas: modelado + Revit. Si ya modelas: coordinación y gestión. Si coordinas: IA y automatización. Saltarte pasos te frena."
+    },
+    {
+     "tiempo": "20-28s",
+     "accion": "CTA",
+     "voz": "¿Quieres tu ruta? Comenta ‘BIM’ o ‘IA’ y te ayudo a trazarla."
+    }
+   ],
+   "caption": "El error #1 en BIM + IA es empezar por donde no toca. Tu ruta depende de tu perfil. Te ayudo a trazar el siguiente paso concreto.\n\n💬 Comenta “BIM” o “IA” y armamos tu ruta.\n\n#BIM #IA #CarreraBIM #DesignModelingDG",
+   "cta_por_red": {
+    "instagram": "Comenta “BIM” o “IA” y te mando la info por DM.",
+    "tiktok": "Comenta “BIM” o “IA” · link en bio.",
+    "linkedin": "¿Cómo lo ven en sus proyectos? Coméntenme o escríbanme por DM.",
+    "youtube": "Paso a paso completo en el video · link en la descripción."
+   }
+  },
+  {
+   "id": "ago-venta-ia-arquitectura",
+   "titulo": "IA para arquitectura (especialización)",
+   "formato": "reel",
+   "red_principal": "instagram",
+   "eje": "NUCLEO-IA",
+   "pilar": "Venta",
+   "hook": "La IA no reemplaza al arquitecto. Pero el arquitecto con IA sí reemplaza al que no la usa.",
+   "guion_reel": [
+    {
+     "tiempo": "0-3s",
+     "accion": "Hook",
+     "voz": "¿La IA reemplaza al arquitecto? No. Pero mira esto."
+    },
+    {
+     "tiempo": "3-20s",
+     "accion": "Mostrar IA en diseño (opciones, render, análisis)",
+     "voz": "Genera opciones de distribución, renderiza en segundos, analiza asoleamiento. El arquitecto que usa esto entrega más y mejor, más rápido."
+    },
+    {
+     "tiempo": "20-28s",
+     "accion": "CTA",
+     "voz": "El futuro no es IA vs arquitecto. Es arquitecto con IA. Comenta ‘BIM’ o ‘IA’."
+    }
+   ],
+   "caption": "La IA no diseña por ti — potencia tu diseño. Opciones, renders y análisis en segundos, para que tú decidas mejor y más rápido. Ese es el arquitecto que gana.\n\n💬 Comenta “BIM” o “IA” y te cuento cómo especializarte.\n\n#Arquitectura #IA #BIM #DesignModelingDG",
+   "cta_por_red": {
+    "instagram": "Comenta “BIM” o “IA” y te mando la info por DM.",
+    "tiktok": "Comenta “BIM” o “IA” · link en bio.",
+    "linkedin": "¿Cómo lo ven en sus proyectos? Coméntenme o escríbanme por DM.",
+    "youtube": "Paso a paso completo en el video · link en la descripción."
+   }
+  },
+  {
+   "id": "ago-errores-modelar-revit",
+   "titulo": "Errores comunes al modelar en Revit y cómo evitarlos",
+   "formato": "carrusel",
+   "red_principal": "facebook",
+   "eje": "NUCLEO-BIM",
+   "pilar": "Educativo",
+   "hook": "5 errores al modelar en Revit que te van a costar caro en obra.",
+   "slides": [
+    {
+     "n": 1,
+     "texto": "5 errores al modelar en Revit que se pagan caro en obra → guárdalo"
+    },
+    {
+     "n": 2,
+     "texto": "01 · Modelar sin plantilla ni estándar. Cada quien nombra distinto = caos de coordinación."
+    },
+    {
+     "n": 3,
+     "texto": "02 · No usar niveles y rejillas como base. Todo lo demás queda mal referenciado."
+    },
+    {
+     "n": 4,
+     "texto": "03 · Familias mal hechas o pesadas. Ralentizan el modelo y meten errores."
+    },
+    {
+     "n": 5,
+     "texto": "04 · Modelar con más detalle del necesario (LOD). Pierdes horas en lo que nadie va a usar."
+    },
+    {
+     "n": 6,
+     "texto": "05 · No revisar interferencias antes de entregar. Los choques salen en obra, y cuestan miles."
+    },
+    {
+     "n": 7,
+     "texto": "¿Cuál cometiste? Comenta “BIM” o “IA” y te mando cómo evitarlos."
+    }
+   ],
+   "caption": "Modelar en Revit bien no es modelar bonito: es modelar coordinado. Estos 5 errores son los que más veo (y los que más caro se pagan en obra).\n\n💬 Comenta “BIM” o “IA” y te mando la guía para evitarlos.\n\n#Revit #BIM #Modelado #DesignModelingDG",
+   "cta_por_red": {
+    "instagram": "Comenta “BIM” o “IA” y te mando la info por DM.",
+    "tiktok": "Comenta “BIM” o “IA” · link en bio.",
+    "linkedin": "5 errores de modelado en Revit que salen caro en obra. ¿Cuál agregarían?",
+    "youtube": "Paso a paso completo en el video · link en la descripción."
+   },
+   "prompt_imagenes": "Carrusel de marca (azul #0E2438 + naranja). Números 01-05. Un slide por mensaje."
+  },
+  {
+   "id": "ago-navisworks-coordinacion",
+   "titulo": "Mejores prácticas para la coordinación en Navisworks",
+   "formato": "carrusel",
+   "red_principal": "facebook",
+   "eje": "NUCLEO-BIM",
+   "pilar": "Educativo",
+   "hook": "Coordinar en Navisworks sin volverte loco: 5 buenas prácticas.",
+   "slides": [
+    {
+     "n": 1,
+     "texto": "Coordinación en Navisworks sin morir en el intento: 5 prácticas →"
+    },
+    {
+     "n": 2,
+     "texto": "01 · Federa bien: junta todas las disciplinas con el mismo origen y coordenadas."
+    },
+    {
+     "n": 3,
+     "texto": "02 · Define reglas de Clash claras por disciplina (estructura vs MEP, etc.), no ‘todo contra todo’."
+    },
+    {
+     "n": 4,
+     "texto": "03 · Prioriza: no todos los choques importan. Filtra los críticos primero."
+    },
+    {
+     "n": 5,
+     "texto": "04 · Documenta cada choque con vista, responsable y estado. Si no se traza, no se resuelve."
+    },
+    {
+     "n": 6,
+     "texto": "05 · Reunión de coordinación con el modelo en vivo, no con PDFs muertos."
+    },
+    {
+     "n": 7,
+     "texto": "¿Coordinas así? Comenta “BIM” o “IA” y te paso mi checklist."
+    }
+   ],
+   "caption": "Navisworks no coordina solo: coordina el criterio de quien lo maneja. 5 prácticas para que la detección de choques no se te vuelva una lista infinita e inútil.\n\n💬 Comenta “BIM” o “IA” y te paso mi checklist de coordinación.\n\n#Navisworks #BIM #CoordinaciónBIM #DesignModelingDG",
+   "cta_por_red": {
+    "instagram": "Comenta “BIM” o “IA” y te mando la info por DM.",
+    "tiktok": "Comenta “BIM” o “IA” · link en bio.",
+    "linkedin": "5 buenas prácticas de coordinación en Navisworks. ¿Cuál es su regla de oro?",
+    "youtube": "Paso a paso completo en el video · link en la descripción."
+   },
+   "prompt_imagenes": "Carrusel de marca. Números 01-05. Un slide por mensaje."
+  },
+  {
+   "id": "ago-plugins-revit",
+   "titulo": "Cómo mejorar la productividad en Revit con plugins",
+   "formato": "carrusel",
+   "red_principal": "facebook",
+   "eje": "NUCLEO-BIM",
+   "pilar": "Educativo",
+   "hook": "5 plugins de Revit que se sienten como hacer trampa (y son gratis o casi).",
+   "slides": [
+    {
+     "n": 1,
+     "texto": "5 plugins de Revit que se sienten como hacer trampa →"
+    },
+    {
+     "n": 2,
+     "texto": "01 · pyRevit — cientos de herramientas de automatización, gratis."
+    },
+    {
+     "n": 3,
+     "texto": "02 · Diroots (varias apps) — exportar/importar datos y planos en lote."
+    },
+    {
+     "n": 4,
+     "texto": "03 · Un plugin de renombrado/gestión masiva de vistas y hojas."
+    },
+    {
+     "n": 5,
+     "texto": "04 · Herramienta de auditoría del modelo (limpiar, detectar basura)."
+    },
+    {
+     "n": 6,
+     "texto": "05 · Un conector a Excel/Power BI para tus datos y cantidades."
+    },
+    {
+     "n": 7,
+     "texto": "¿Cuál usas? Comenta “BIM” o “IA” y te paso la lista con enlaces."
+    }
+   ],
+   "caption": "El Revit de fábrica está bien. El Revit con los plugins correctos vuela. Estos 5 te devuelven horas cada semana.\n\n💬 Comenta “BIM” o “IA” y te paso la lista con enlaces.\n\n#Revit #Plugins #pyRevit #BIM #DesignModelingDG",
+   "cta_por_red": {
+    "instagram": "Comenta “BIM” o “IA” y te mando la info por DM.",
+    "tiktok": "Comenta “BIM” o “IA” · link en bio.",
+    "linkedin": "5 plugins que multiplican la productividad en Revit. ¿Cuál agregarían a la lista?",
+    "youtube": "Paso a paso completo en el video · link en la descripción."
+   },
+   "prompt_imagenes": "Carrusel de marca. Números 01-05. Un slide por mensaje."
+  },
+  {
+   "id": "ago-derivas-deformaciones",
+   "titulo": "Cómo optimizar las derivas y deformaciones en análisis estructural",
+   "formato": "carrusel",
+   "red_principal": "facebook",
+   "eje": "NUCLEO-BIM",
+   "pilar": "Educativo",
+   "hook": "Tu edificio pasa por resistencia pero falla por derivas. 4 formas de controlarlas.",
+   "slides": [
+    {
+     "n": 1,
+     "texto": "Pasa por resistencia, falla por derivas. 4 formas de controlarlas →"
+    },
+    {
+     "n": 2,
+     "texto": "01 · Rigidiza donde importa: muros de corte / arriostramientos bien ubicados, no en cualquier lado."
+    },
+    {
+     "n": 3,
+     "texto": "02 · Controla la torsión: evita plantas asimétricas o compénsalas con rigidez."
+    },
+    {
+     "n": 4,
+     "texto": "03 · Revisa la deriva de entrepiso vs. el límite de la norma, piso por piso."
+    },
+    {
+     "n": 5,
+     "texto": "04 · No sobredimensiones: más sección no siempre baja la deriva; a veces solo suma peso y costo."
+    },
+    {
+     "n": 6,
+     "texto": "El objetivo no es que ‘pase’: es que sea seguro y eficiente. Ahí está el criterio."
+    },
+    {
+     "n": 7,
+     "texto": "¿Cómo las controlas tú? Comenta “BIM” o “IA”."
+    }
+   ],
+   "caption": "Muchas estructuras cumplen resistencia pero se caen en derivas y deformaciones. 4 criterios para controlarlas sin sobredimensionar (ni inflar el costo).\n\n💬 Comenta “BIM” o “IA” y hablamos de tu caso.\n\n#IngenieríaEstructural #AnálisisEstructural #ETABS #DiseñoEstructural #DesignModelingDG",
+   "cta_por_red": {
+    "instagram": "Comenta “BIM” o “IA” y te mando la info por DM.",
+    "tiktok": "Comenta “BIM” o “IA” · link en bio.",
+    "linkedin": "Controlar derivas sin sobredimensionar es puro criterio. ¿Cuál es su estrategia?",
+    "youtube": "Paso a paso completo en el video · link en la descripción."
+   },
+   "prompt_imagenes": "Carrusel de marca. Números 01-04. Un slide por mensaje."
+  },
+  {
+   "id": "ago-venta-especializacion-ia-bim",
+   "titulo": "Especialización en IA aplicada a BIM",
+   "formato": "carrusel",
+   "red_principal": "linkedin",
+   "eje": "NUCLEO-IA",
+   "pilar": "Venta",
+   "hook": "3 tareas de BIM que la IA ya hace por ti (y por qué el criterio sigue siendo tuyo).",
+   "slides": [
+    {
+     "n": 1,
+     "texto": "3 tareas de BIM que la IA ya hace por ti →"
+    },
+    {
+     "n": 2,
+     "texto": "01 · Documentación y cantidades: del modelo a las tablas en minutos."
+    },
+    {
+     "n": 3,
+     "texto": "02 · Detección y solución de choques entre disciplinas."
+    },
+    {
+     "n": 4,
+     "texto": "03 · Primeras versiones de detalles y familias, descritas en palabras."
+    },
+    {
+     "n": 5,
+     "texto": "Ninguna decide por ti. El criterio, la norma y la firma siguen siendo tuyos."
+    },
+    {
+     "n": 6,
+     "texto": "Aprender a usarlas con criterio es la especialización de esta década. Comenta “BIM” o “IA”."
+    }
+   ],
+   "caption": "La IA ya hace parte de tu trabajo BIM. La ventaja no es usarla — es usarla con criterio. Eso es lo que enseña una especialización BIM + IA.\n\n💬 Comenta “BIM” o “IA” y te cuento cómo.\n\n#BIM #IA #Especialización #DesignModelingDG",
+   "cta_por_red": {
+    "instagram": "Comenta “BIM” o “IA” y te mando la info por DM.",
+    "tiktok": "Comenta “BIM” o “IA” · link en bio.",
+    "linkedin": "¿Qué tarea de BIM ya delegaron a la IA — y cuál jamás?",
+    "youtube": "Paso a paso completo en el video · link en la descripción."
+   },
+   "prompt_imagenes": "Carrusel de marca. Números 01/02/03. Formato documento (LinkedIn PDF). Un slide por mensaje."
+  },
+  {
+   "id": "ago-blog-etabs-sap2000",
+   "titulo": "Comparativa ETABS vs SAP2000 para análisis estructural",
+   "formato": "blog",
+   "red_principal": "linkedin",
+   "eje": "NUCLEO-BIM",
+   "pilar": "Educativo",
+   "hook": "La pregunta no es cuál es mejor, sino cuál es mejor PARA TU proyecto.",
+   "blog": {
+    "titulo_seo": "ETABS vs SAP2000: cuál elegir para tu análisis estructural (guía 2026)",
+    "secciones": [
+     "La pregunta no es cuál es mejor, sino cuál es mejor PARA TU proyecto.",
+     "ETABS: pensado para edificaciones (pisos, muros, diafragmas). Flujo rápido para análisis sísmico de edificios.",
+     "SAP2000: propósito general (puentes, estructuras especiales, industriales). Más flexible, menos ‘automático’ para edificios.",
+     "Regla práctica: edificio típico → ETABS; estructura especial/no convencional → SAP2000.",
+     "Ambos conectan con tu flujo BIM: modela en Revit, exporta y analiza. El software no reemplaza el criterio de modelado ni la interpretación de resultados.",
+     "Cierre: en el curso enseñamos a elegir y usar cada uno según el proyecto."
+    ]
+   },
+   "post_linkedin": "¿ETABS o SAP2000? La respuesta honesta: depende del proyecto.\n\nETABS brilla en edificaciones — análisis sísmico de edificios en un flujo rápido. SAP2000 es de propósito general: puentes, estructuras especiales, industriales.\n\nRegla simple: edificio típico → ETABS. Estructura no convencional → SAP2000.\n\nY ojo: ninguno reemplaza el criterio de modelado ni la interpretación de resultados. La herramienta calcula; tú decides.\n\n¿Cuál usan y por qué?",
+   "caption": "Escribimos la comparativa completa ETABS vs SAP2000 para que elijas bien según tu proyecto. Link en bio / comenta “BIM” o “IA”.",
+   "cta_por_red": {
+    "instagram": "Comenta “BIM” o “IA” y te mando la info por DM.",
+    "tiktok": "Comenta “BIM” o “IA” · link en bio.",
+    "linkedin": "¿Cuál usan y por qué?",
+    "youtube": "Paso a paso completo en el video · link en la descripción."
+   }
+  },
+  {
+   "id": "ago-blog-ia-arquitectura",
+   "titulo": "Cómo la IA está revolucionando la arquitectura moderna",
+   "formato": "blog",
+   "red_principal": "linkedin",
+   "eje": "NUCLEO-IA",
+   "pilar": "Educativo",
+   "hook": "La IA no viene a diseñar por el arquitecto; viene a acelerar el proceso creativo y técnico.",
+   "blog": {
+    "titulo_seo": "Cómo la IA está cambiando la arquitectura (sin reemplazar al arquitecto) — 2026",
+    "secciones": [
+     "La IA no viene a diseñar por el arquitecto; viene a acelerar el proceso creativo y técnico.",
+     "Generación de opciones: de un programa arquitectónico a varias distribuciones en segundos.",
+     "Visualización: renders y ambientaciones fotorrealistas en minutos, no horas.",
+     "Análisis: asoleamiento, eficiencia energética y normativa evaluados temprano.",
+     "Lo que NO cambia: la intención de diseño, el criterio y la responsabilidad son del arquitecto.",
+     "Cierre: el arquitecto que integra IA entrega más y mejor. Conoce cómo en nuestros programas."
+    ]
+   },
+   "post_linkedin": "La IA no reemplaza al arquitecto. Reemplaza las horas de tareas repetitivas para que el arquitecto haga lo que ninguna IA puede: decidir con intención.\n\nGenera opciones, renderiza en minutos, analiza asoleamiento temprano. Pero la visión, el criterio y la firma siguen siendo humanos.\n\n¿Ya la aplican en su estudio?",
+   "caption": "Escribimos sobre cómo la IA está cambiando la arquitectura (sin reemplazar al arquitecto). Link en bio / comenta “IA”.",
+   "cta_por_red": {
+    "instagram": "Comenta “BIM” o “IA” y te mando la info por DM.",
+    "tiktok": "Comenta “BIM” o “IA” · link en bio.",
+    "linkedin": "¿Ya la aplican en su estudio?",
+    "youtube": "Paso a paso completo en el video · link en la descripción."
+   }
+  },
+  {
+   "id": "ago-blog-elegir-software-estructuras",
+   "titulo": "Cómo elegir el software de estructuras adecuado",
+   "formato": "blog",
+   "red_principal": "linkedin",
+   "eje": "NUCLEO-BIM",
+   "pilar": "Educativo",
+   "hook": "Elegir software no es elegir el ‘más potente’, sino el que encaja con tu tipo de estructura y tu flujo.",
+   "blog": {
+    "titulo_seo": "Cómo elegir el software de análisis estructural para tu proyecto (2026)",
+    "secciones": [
+     "Elegir software no es elegir el ‘más potente’, sino el que encaja con tu tipo de estructura y tu flujo.",
+     "Define primero: tipo de estructura, normativa, y si necesitas integración BIM.",
+     "Edificaciones: ETABS. Propósito general/especiales: SAP2000. Concreto/detalle: complementos específicos.",
+     "Integración BIM: revisa que exporte/importe bien desde Revit para no re-modelar.",
+     "Curva de aprendizaje y soporte también cuentan: el mejor software es el que tu equipo domina.",
+     "Cierre: te ayudamos a elegir en el curso de diseño estructural."
+    ]
+   },
+   "post_linkedin": "El mejor software de estructuras no es el más caro ni el más potente: es el que encaja con tu tipo de proyecto y tu flujo BIM.\n\nPrimero define estructura, normativa e integración. Después eliges. Y recuerda: el software calcula, tú interpretas.\n\n¿Cuál eligieron para su último proyecto?",
+   "caption": "Guía para elegir tu software de estructuras según el proyecto. Link en bio / comenta “BIM”.",
+   "cta_por_red": {
+    "instagram": "Comenta “BIM” o “IA” y te mando la info por DM.",
+    "tiktok": "Comenta “BIM” o “IA” · link en bio.",
+    "linkedin": "¿Cuál eligieron para su último proyecto?",
+    "youtube": "Paso a paso completo en el video · link en la descripción."
+   }
+  },
+  {
+   "id": "ago-blog-bim-sostenibilidad",
+   "titulo": "Impacto de la tecnología BIM en la sostenibilidad",
+   "formato": "blog",
+   "red_principal": "linkedin",
+   "eje": "NUCLEO-BIM",
+   "pilar": "Educativo",
+   "hook": "Sostenibilidad no es solo ‘materiales verdes’: es decidir bien desde el modelo, y ahí entra el BIM.",
+   "blog": {
+    "titulo_seo": "Cómo el BIM ayuda a construir de forma más sostenible (2026)",
+    "secciones": [
+     "Sostenibilidad no es solo ‘materiales verdes’: es decidir bien desde el modelo, y ahí entra el BIM.",
+     "Análisis energético temprano: simular consumo y asoleamiento antes de construir.",
+     "Menos desperdicio: cantidades exactas del modelo = menos sobrepedido de material.",
+     "Coordinación: menos errores en obra = menos retrabajo, menos residuos, menos huella.",
+     "Ciclo de vida: el modelo sirve para operar y mantener el edificio de forma eficiente.",
+     "Cierre: el BIM bien usado es una herramienta de sostenibilidad, no solo de dibujo."
+    ]
+   },
+   "post_linkedin": "La construcción genera una parte enorme de los residuos y emisiones del mundo. El BIM ayuda a bajarlos: análisis energético temprano, cantidades exactas (menos desperdicio) y menos retrabajo en obra.\n\nSostenibilidad se decide en el modelo, antes de la primera excavación.\n\n¿Cómo miden ese impacto en sus proyectos?",
+   "caption": "Escribimos sobre cómo el BIM ayuda a construir más sostenible. Link en bio / comenta “BIM”.",
+   "cta_por_red": {
+    "instagram": "Comenta “BIM” o “IA” y te mando la info por DM.",
+    "tiktok": "Comenta “BIM” o “IA” · link en bio.",
+    "linkedin": "¿Cómo miden ese impacto en sus proyectos?",
+    "youtube": "Paso a paso completo en el video · link en la descripción."
+   }
+  },
+  {
+   "id": "ago-comu-historia-exito",
+   "titulo": "Historia de éxito: de modelador a BIM Manager",
+   "formato": "post",
+   "red_principal": "facebook",
+   "eje": "COMUNIDAD",
+   "pilar": "Comunidad",
+   "hook": "De modelador a BIM Manager en 6 meses: la historia de [Nombre].",
+   "caption": "De dibujar planos a liderar la coordinación de un proyecto completo. Así fue el salto de [Nombre] 👇\n\nLo que cambió no fue solo el software — fue aprender a coordinar, gestionar y usar IA con criterio.\n\n💬 ¿Te ves en esta historia? Comenta “BIM” o “IA” y te contamos cómo.\n\n#BIMManager #HistoriaDeÉxito #BIM #DesignModelingDG",
+   "cta_por_red": {
+    "instagram": "Comenta “BIM” o “IA” y te mando la info por DM.",
+    "tiktok": "Comenta “BIM” o “IA” · link en bio.",
+    "linkedin": "¿Te sumas a la comunidad BIM+IA?",
+    "youtube": "Paso a paso completo en el video · link en la descripción."
+   },
+   "comunidad_contenido": {
+    "caso": "[Nombre], modelador con 2 años de experiencia, pasó a coordinar un proyecto completo como BIM Manager Jr en 6 meses.",
+    "que_hizo": "Dominó coordinación entre disciplinas, estándares/entregables y automatización con IA.",
+    "cita": "‘Dejé de dibujar mi parte y empecé a ver el proyecto completo. Ese fue el salto.’",
+    "para_la_comunidad": "Compartir el caso completo (antes/después, qué estudió, qué recomienda) e invitar a los miembros a contar su propio camino.",
+    "prompt_conversacion": "¿En qué punto de tu carrera estás y cuál es tu próximo salto: modelador, coordinador o BIM Manager?"
+   }
+  },
+  {
+   "id": "ago-comu-qa-bim-ia",
+   "titulo": "Respondemos tus preguntas sobre BIM e IA",
+   "formato": "post",
+   "red_principal": "instagram",
+   "eje": "COMUNIDAD",
+   "pilar": "Comunidad",
+   "hook": "Ronda de preguntas: pregúntanos lo que sea de BIM + IA 👇",
+   "caption": "Cada mes abrimos una ronda de preguntas de BIM + IA y respondemos las mejores. ¿Qué te gustaría saber?\n\n💬 Deja tu pregunta o comenta “BIM” o “IA” y te leemos.\n\n#BIM #IA #PreguntasYRespuestas #DesignModelingDG",
+   "cta_por_red": {
+    "instagram": "Comenta “BIM” o “IA” y te mando la info por DM.",
+    "tiktok": "Comenta “BIM” o “IA” · link en bio.",
+    "linkedin": "¿Te sumas a la comunidad BIM+IA?",
+    "youtube": "Paso a paso completo en el video · link en la descripción."
+   },
+   "comunidad_contenido": {
+    "formato": "Q&A abierto — la gente comenta preguntas y respondemos en comentarios / stories.",
+    "preguntas_semilla": [
+     "¿Por dónde empiezo con BIM si soy estudiante?",
+     "¿La IA reemplaza al ingeniero?",
+     "¿Qué software aprendo primero?",
+     "¿Necesito programar para automatizar Revit?"
+    ],
+    "respuestas_guia": [
+     "Empieza por modelado en Revit + fundamentos BIM.",
+     "No: reemplaza tareas, no criterio.",
+     "Revit primero; luego coordinación (Navisworks).",
+     "No: con Dynamo/pyRevit automatizas sin código."
+    ],
+    "para_la_comunidad": "Publicar el Q&A también en el grupo/comunidad y recopilar las dudas más repetidas para un futuro contenido.",
+    "prompt_conversacion": "¿Cuál es tu mayor duda ahora mismo sobre BIM + IA?"
+   }
+  },
+  {
+   "id": "ago-comu-opinion-alumnos",
+   "titulo": "Opinión de nuestros alumnos sobre el máster BIM + IA",
+   "formato": "post",
+   "red_principal": "linkedin",
+   "eje": "COMUNIDAD",
+   "pilar": "Comunidad",
+   "hook": "Esto dicen quienes ya pasaron por el Máster BIM + IA 👇",
+   "caption": "No lo decimos nosotros, lo dicen ellos. Testimonios reales de alumnos del Máster BIM + IA sobre su transformación profesional.\n\n💬 ¿Te ves aquí? Escríbenos por DM.\n\n#BIM #IA #Máster #Testimonios #DesignModelingDG",
+   "cta_por_red": {
+    "instagram": "Comenta “BIM” o “IA” y te mando la info por DM.",
+    "tiktok": "Comenta “BIM” o “IA” · link en bio.",
+    "linkedin": "¿Te sumas a la comunidad BIM+IA?",
+    "youtube": "Paso a paso completo en el video · link en la descripción."
+   },
+   "comunidad_contenido": {
+    "formato": "Carrusel/post con 2-3 testimonios reales (con permiso), foto + cita + resultado.",
+    "testimonios_placeholder": [
+     "‘Pasé de buscar trabajo a coordinar proyectos.’ — [Nombre, cargo]",
+     "‘Automaticé la mitad de mis tareas con lo que aprendí.’ — [Nombre, cargo]"
+    ],
+    "para_la_comunidad": "Pedir a egresados que compartan su experiencia en la comunidad; usar como prueba social.",
+    "prompt_conversacion": "Si ya estudiaste con nosotros: ¿cuál fue el mayor cambio en tu trabajo?"
+   }
+  },
+  {
+   "id": "ago-comu-dia-proyecto-internacional",
+   "titulo": "Día a día en un proyecto BIM internacional",
+   "formato": "post",
+   "red_principal": "instagram",
+   "eje": "COMUNIDAD",
+   "pilar": "Comunidad",
+   "hook": "¿Cómo es trabajar en un proyecto BIM internacional? Te llevamos adentro 👇",
+   "caption": "Husos horarios, estándares distintos, coordinación en la nube con equipos de 3 países… así es el día a día en un proyecto BIM internacional.\n\n💬 ¿Te gustaría trabajar así? Comenta “BIM” o “IA”.\n\n#BIM #ProyectoInternacional #AEC #DesignModelingDG",
+   "cta_por_red": {
+    "instagram": "Comenta “BIM” o “IA” y te mando la info por DM.",
+    "tiktok": "Comenta “BIM” o “IA” · link en bio.",
+    "linkedin": "¿Te sumas a la comunidad BIM+IA?",
+    "youtube": "Paso a paso completo en el video · link en la descripción."
+   },
+   "comunidad_contenido": {
+    "formato": "Behind-the-scenes / historia — fotos o capturas del flujo real de trabajo.",
+    "puntos": [
+     "Coordinación en la nube (BIM Collaborate / ACC) entre equipos de distintos países.",
+     "Estándares internacionales (ISO 19650) y entregables definidos.",
+     "Reuniones de coordinación con el modelo federado en vivo.",
+     "La IA acelera la documentación para cumplir plazos ajustados."
+    ],
+    "para_la_comunidad": "Mostrar el detrás de cámara real del mes e invitar a los miembros a preguntar sobre trabajo internacional.",
+    "prompt_conversacion": "¿Te gustaría trabajar en proyectos internacionales? ¿Qué te frena hoy?"
+   }
   }
  ]
 }
