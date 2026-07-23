@@ -1,7 +1,7 @@
 # Guion — "3 cosas que tu Revit ya hace con IA y no sabías"
 
 **Fecha propuesta:** 2026-07-09
-**Red:** Instagram Reels
+**Formato principal (2026-07-21):** Instagram — **CARRUSEL** (los 3 puntos en slides, como el de "5 tareas" que dio 8.5%). El reel queda como versión opcional; ver §Adaptación abajo.
 **Duración objetivo:** 32-40s
 **Estructura:** LISTICLE-REVELACIÓN
 
