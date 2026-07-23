@@ -1,7 +1,7 @@
 # Guion — "Parece que lo dibujó un arquitecto... lo hizo una IA en 10 segundos"
 
 **Fecha propuesta:** 2026-07-10
-**Red:** Instagram Reels
+**Formato principal (2026-07-21):** Instagram — **CARRUSEL** (antes/después en slides). El reel queda como versión opcional; ver §Adaptación abajo.
 **Duración objetivo:** 18-22s
 **Estructura:** REVELACIÓN-MITO
 

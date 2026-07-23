@@ -66,8 +66,14 @@ La matriz cambia seguido. Para que tú y la app de contenido nunca trabajen con 
 
 ---
 
-## Guiones
-En `matriz-viral/guiones/`. Los 5 primeros ya existen; los próximos deben nacer del Pilar 3 corregido (núcleo BIM/IA con formato de reveal/humor + CTA "comenta BIM o IA").
+## Guiones y sistema del mes
+Todo vive en `matriz-viral/` (repo público — siempre la última versión):
+- **`guiones/`** — cada pieza con su guion (reel + post plano + carrusel + adaptación por red).
+- **`matriz/guia-formatos-y-redes.md`** — cómo llevar una idea a los 3 formatos y adaptarla a IG, LinkedIn, YouTube y TikTok; espacios recurrentes (blog, comunidad, empresa/novedades).
+- **`matriz/calendario-2026-08.md`** — el calendario completo del mes.
+- **`matriz/matriz.json`** — datos de rendimiento (lo que lee la app).
+
+Los guiones nuevos nacen del Pilar 3 corregido (núcleo BIM/IA + demo concreta + CTA "comenta BIM o IA").
 
 ---
 

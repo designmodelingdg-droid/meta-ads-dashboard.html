@@ -1,7 +1,7 @@
 # Guion — Diálogo "Arqui vs Inge" sobre IA
 
 **Fecha propuesta:** 2026-07-09
-**Red:** Instagram Reels (formato dos personajes, a cámara o con voz en off + texto)
+**Formato principal (2026-07-21):** Instagram — **POST PLANO** (meme del remate). El reel/diálogo queda como versión opcional; ver §Adaptación abajo.
 **Duración objetivo:** 15-20s
 **Estructura:** DIÁLOGO-HUMOR
 
