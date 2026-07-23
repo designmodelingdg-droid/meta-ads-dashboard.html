@@ -18,6 +18,7 @@ on:
       - claude/zapatas-calculator-leadmagnet-iaj89j # rama del lead magnet (para probar antes del merge)
     paths:
       - matriz-viral/matriz/matriz.json
+      - matriz-viral/matriz/guiones-completos.json
       - calculadora-zapatas/**
   workflow_dispatch: {}                      # permite correrla a mano desde la pestaña Actions
 
@@ -42,6 +43,8 @@ jobs:
           set -euo pipefail
           mkdir -p public
           cp matriz-viral/matriz/matriz.json public/matriz.json
+          # Contenido COMPLETO de cada pieza (para que la app no invente)
+          cp matriz-viral/matriz/guiones-completos.json public/guiones-completos.json
           # Lead magnet: landing + calculadora de zapatas
           cp -r calculadora-zapatas public/calculadora-zapatas
           # Sin procesamiento Jekyll
@@ -53,7 +56,7 @@ jobs:
           <body style="font-family:system-ui;max-width:640px;margin:40px auto;padding:0 16px;color:#132433">
           <h1>Design Modeling · datos de contenido</h1>
           <p>Matriz de contenido viral (JSON, legible por máquina):</p>
-          <p><a href="./matriz.json"><code>matriz.json</code></a></p>
+          <p><a href="./matriz.json"><code>matriz.json</code></a> · <a href="./guiones-completos.json"><code>guiones-completos.json</code></a> (contenido completo de cada pieza)</p>
           <p>Lead magnet: <a href="./calculadora-zapatas/">Calculadora de Zapatas</a></p>
           <p style="color:#5a6b7b">Se actualiza solo cuando cambia la matriz en el repo.</p>
           </body>
