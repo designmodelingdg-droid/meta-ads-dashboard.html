@@ -11,8 +11,8 @@ Refresca matriz-viral/matriz/matriz.json con datos frescos de Apify.
   (código 0) para que la Action no rompa cuando el plan free está sin crédito.
 
 Uso local:  APIFY_TOKEN=xxxx python3 scripts/refresh_matriz.py [--limit 40]
-Variables:  APIFY_TOKEN (obligatoria), USERNAME (def. design_modeling_dg),
-            LIMIT (def. 40)
+Variables:  APIFY_TOKEN (obligatoria), USERNAME_IG (def. design_modeling_dg;
+            no usar USERNAME: esa la define el SO), LIMIT (def. 40)
 """
 import os, sys, json, re, unicodedata, urllib.request, urllib.error
 
