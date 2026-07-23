@@ -71,7 +71,8 @@ Todo vive en `matriz-viral/` (repo público — siempre la última versión):
 - **`guiones/`** — cada pieza con su guion (reel + post plano + carrusel + adaptación por red).
 - **`matriz/guia-formatos-y-redes.md`** — cómo llevar una idea a los 3 formatos y adaptarla a IG, LinkedIn, YouTube y TikTok; espacios recurrentes (blog, comunidad, empresa/novedades).
 - **`matriz/calendario-2026-08.md`** — el calendario completo del mes.
-- **`matriz/matriz.json`** — datos de rendimiento (lo que lee la app).
+- **`matriz/matriz.json`** — datos de rendimiento (métricas de lo publicado).
+- **`matriz/guiones-completos.json`** — ⭐ **contenido COMPLETO de cada pieza** (hook, cada slide palabra por palabra, guion del reel, caption entero, CTA por red y contenido de comunidad). **La app debe leer ESTE archivo para generar el post correcto sin inventar.** URL pública: `https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/guiones-completos.json`
 
 Los guiones nuevos nacen del Pilar 3 corregido (núcleo BIM/IA + demo concreta + CTA "comenta BIM o IA").
 
