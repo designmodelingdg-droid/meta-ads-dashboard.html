@@ -110,6 +110,22 @@ clave del CTA → respuesta pública → DM 1 con la URL de la landing → esper
 DM 2 de calificación → etiquetas (`lead-<tema>` + `origen-bot-<palabra>`) →
 notificación interna. Respetar la ventana de 24 h de Meta.
 
+⚠️ **Incidente conocido — DM que falla en silencio (~35 leads perdidos, jul-2026):**
+cuando el post es de origen Instagram y aparece también en Facebook
+("cross-post"), la gente comenta en la copia de Facebook, pero si la acción
+"Send DM" está atada solo al canal de Instagram, el envío falla en silencio
+(el workflow marca el paso como ejecutado, pero el DM nunca llega — el ID de
+quien comentó es de Facebook, no de Instagram). La respuesta pública sí sale
+siempre, por eso el error pasa desapercibido. **Mitigación obligatoria:**
+1. Configura la acción de envío **por separado para cada disparador**
+   (rama Instagram → Send DM por Instagram; rama Facebook → Send DM por
+   Facebook Messenger). Nunca una sola acción de DM compartida entre ambos.
+2. La respuesta pública **debe incluir siempre el enlace directo**, nunca
+   solo "te escribí al DM" — es la red de seguridad real si el canal falla.
+3. Antes de lanzar el post, probar con un comentario real en **ambas**
+   superficies (Instagram y la copia de Facebook del mismo post), no solo
+   una — es la única forma de detectar esta falla antes de publicar.
+
 ### 9. Contenido
 Brief para la conversación de la matriz viral en
 `matriz-viral/BRIEF-<TEMA>.md` (patrón `BRIEF-CALCULADORA-ZAPATAS.md`):
