@@ -18,13 +18,39 @@ funnel. Los textos están listos para copiar y pegar.
    post/reel del lead magnet cuando esté publicado.
 2. **Facebook → Comment on Post** — mismo filtro.
 
+> ⚠️ **INCIDENTE CONOCIDO (18-jul-2026) — leer antes de montar el workflow:**
+> cuando un post es de **origen Instagram y se muestra también en Facebook**
+> ("cross-post"), la gente puede comentar **en la copia de Facebook**. Si el
+> paso de "Send DM" del workflow está atado al canal de **Instagram** (porque
+> el post "es de Instagram"), el mensaje se intenta enviar al ID equivocado
+> (la persona comentó como usuario de Facebook, no de Instagram) y **falla en
+> silencio**: el workflow marca el paso como ejecutado, la respuesta pública
+> sí sale, pero el DM nunca llega. Así perdimos ~35 leads del primer post.
+> **Mitigación obligatoria** (las dos, no una sola):
+> 1. Separa la acción de envío por rama: el disparador de Instagram debe
+>    enviar el DM por el canal de **Instagram**, y el disparador de Facebook
+>    por **Facebook Messenger** — nunca una sola acción de "Send DM"
+>    compartida entre ambos disparadores.
+> 2. La respuesta pública (Paso 1 abajo) debe **incluir siempre el enlace
+>    directo**, nunca solo "te escribí al DM" — así, aunque el canal del DM
+>    falle, el lead igual recibe el acceso. Es la red de seguridad real.
+> 3. Antes de lanzar cualquier post, **prueba con un comentario real en la
+>    copia de Facebook del post** (no solo en Instagram) — es el caso que
+>    falló y el que hay que confirmar que funciona.
+
 ### Acciones, en este orden
 
-**Paso 1 · Responder al comentario (público)** — acción "Reply in Comment":
+**Paso 1 · Responder al comentario (público)** — acción "Reply in Comment".
+Incluye el enlace directo en la respuesta pública (no solo avisar que se
+mandó el DM — ver incidente arriba):
 
-> ¡Te lo mandé por DM! 📩 Revisa tus mensajes 🧱
+> ¡Aquí tienes tu acceso directo! 🧱 Y por si acaso, también te escribí al DM 📩
+> https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/calculadora-zapatas/
 
-**Paso 2 · DM #1 — entrega del enlace** — acción "Send DM" (IG) / "Messenger" (FB):
+**Paso 2 · DM #1 — entrega del enlace** — acción "Send DM" (IG) / "Messenger" (FB).
+Configura esta acción **por separado para cada disparador** (una rama para
+Instagram → envío por Instagram; otra para Facebook → envío por Facebook
+Messenger), nunca una sola acción compartida:
 
 > ¡Hola! 👋 Soy del equipo de Design Modeling Academy.
 >
@@ -71,9 +97,13 @@ la calificación — revisar conversación".
 
 ## 2. Prueba end-to-end (checklist)
 
-Hacerla con un usuario/correo de prueba real, en este orden:
+Hacerla con un usuario/correo de prueba real, en este orden. **Repetir los
+puntos 1-2 dos veces: una comentando en Instagram y otra comentando en la
+copia de Facebook del mismo post** (ver incidente de arriba — son canales de
+envío distintos y uno puede funcionar mientras el otro falla en silencio).
 
-1. [ ] Comentar `ZAPATA` en un post de prueba de IG → llega respuesta pública + DM #1 con el enlace.
+1. [ ] Comentar `ZAPATA` en Instagram → llega respuesta pública **con el enlace visible** + DM #1 (verificar que el DM llegó de verdad, no solo que el paso "se marcó ejecutado").
+1b. [ ] Comentar `ZAPATA` en la copia de Facebook del mismo post → mismo resultado: respuesta pública con enlace + DM #1 confirmado.
 2. [ ] Esperar el DM #2 (pregunta de calificación) y responder → se agregan las etiquetas y llega la notificación interna.
 3. [ ] Abrir la landing del DM → se ve el diseño DMA y el **formulario nativo** "Calculadora de Zapatas - Registro".
 4. [ ] Enviar el formulario → redirige a la **página de gracias**.
