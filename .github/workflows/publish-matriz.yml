@@ -19,6 +19,7 @@ on:
     paths:
       - matriz-viral/matriz/matriz.json
       - matriz-viral/matriz/guiones-completos.json
+      - matriz-viral/matriz/competencia.json
       - calculadora-zapatas/**
   workflow_dispatch: {}                      # permite correrla a mano desde la pestaña Actions
 
@@ -45,6 +46,8 @@ jobs:
           cp matriz-viral/matriz/matriz.json public/matriz.json
           # Contenido COMPLETO de cada pieza (para que la app no invente)
           cp matriz-viral/matriz/guiones-completos.json public/guiones-completos.json
+          # Radar del sector (competencia)
+          cp matriz-viral/matriz/competencia.json public/competencia.json 2>/dev/null || true
           # Lead magnet: landing + calculadora de zapatas
           cp -r calculadora-zapatas public/calculadora-zapatas
           # Sin procesamiento Jekyll

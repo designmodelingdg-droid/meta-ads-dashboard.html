@@ -74,6 +74,16 @@ Todo vive en `matriz-viral/` (repo público — siempre la última versión):
 - **`matriz/matriz.json`** — datos de rendimiento (métricas de lo publicado).
 - **`matriz/guiones-completos.json`** — ⭐ **contenido COMPLETO de cada pieza** (hook, cada slide palabra por palabra, guion del reel, caption entero, CTA por red y contenido de comunidad). **La app debe leer ESTE archivo para generar el post correcto sin inventar.** URL pública: `https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/guiones-completos.json`
 
+### De dónde salen los datos (automático desde 2026-07-27)
+| Fuente | Para qué | Estado |
+|---|---|---|
+| **Meta Graph API** (token propio, no expira) | **Nuestras métricas** de IG y FB, por publicación | ✅ Automático cada lunes |
+| **Meta `business_discovery`** | **Competencia / sector**: seguidores, likes y comentarios de cuentas públicas | ✅ Automático, gratis |
+| **Apify** | Solo si se necesita estimar views/alcance de cuentas AJENAS (Meta no los da) | Opcional |
+
+Nadie tiene que pegar métricas a mano: la Action `metricas-semanales.yml` corre sola.
+**Único dato aún manual:** las vistas por publicación de **Facebook** (Meta las eliminó de la API).
+
 Los guiones nuevos nacen del Pilar 3 corregido (núcleo BIM/IA + demo concreta + CTA "comenta BIM o IA").
 
 - **`agente-storytelling/`** — formato **historias**: agente para desmenuzar virales (Modo 1) y construir videos con narrativa personal línea por línea (Modo 2). Las transcripciones de virales van en `agente-storytelling/transcripciones/*.txt`.

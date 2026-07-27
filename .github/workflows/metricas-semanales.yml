@@ -1,0 +1,71 @@
+name: Métricas semanales (Meta Graph API)
+
+# Trae las métricas orgánicas de Instagram y Facebook con la API oficial de Meta
+# y actualiza matriz-viral/matriz/matriz.json. Corre solo cada semana: Dayana no
+# tiene que pasar nada a mano.
+#
+# REQUISITO (una sola vez): agregar el secreto del repo META_TOKEN
+#   Settings → Secrets and variables → Actions → New repository secret
+#   Name: META_TOKEN   Value: (el token de System User de "Design Modeling - Ads CLI")
+#   Ese token NO expira, así que se configura una vez y ya.
+#
+# Qué trae:
+#   Instagram → views, alcance, likes, comentarios, guardados, compartidos,
+#               interacciones, visitas al perfil, seguidores nuevos.
+#   Facebook  → comentarios, likes y compartidos por post.
+#   (Las VISTAS por post de Facebook ya no existen en la API de Meta — ese dato
+#    sigue siendo manual si se necesita.)
+
+on:
+  schedule:
+    - cron: "0 13 * * 1"      # lunes 13:00 UTC (~08:00 Ecuador)
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Cuántas publicaciones revisar"
+        required: false
+        default: "30"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: metricas-semanales
+  cancel-in-progress: false
+
+jobs:
+  metricas:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Traer métricas de Meta
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN }}
+        run: |
+          set -euo pipefail
+          if [ -z "${META_TOKEN:-}" ]; then
+            echo "::error::Falta el secreto META_TOKEN. Settings → Secrets and variables → Actions."
+            exit 1
+          fi
+          python3 scripts/meta_organico.py --limit "${{ github.event.inputs.limit || '30' }}"
+
+      - name: Traer datos de la competencia
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN }}
+        continue-on-error: true      # si falla, no rompe la actualización principal
+        run: python3 scripts/competencia.py
+
+      - name: Commit si cambió
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- matriz-viral/matriz/; then
+            echo "Sin cambios en la matriz."
+            exit 0
+          fi
+          git config user.name  "matriz-bot"
+          git config user.email "noreply@anthropic.com"
+          git add matriz-viral/matriz/
+          git commit -m "Métricas semanales automáticas (Meta Graph API)"
+          git push
