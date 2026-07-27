@@ -98,11 +98,23 @@ Una que le escribe a un cliente equivocado, no.
 - Si algo es ambiguo y es irreversible, pregunta. Si es reversible, elige la
   interpretación más probable, hazlo y dile cuál elegiste.
 
+## DÓNDE VA CADA TAREA
+Es la confusión más fácil de cometer, así que no la cometas:
+- Tarea **de Dayana** → `crear_tarea` (Google Tasks, se sincroniza con su móvil).
+- Tarea **para otra persona** → `crear_tarea_equipo` (ClickUp, donde trabaja el equipo).
+Si dice "recuérdame" es de ella. Si dice un nombre, es para esa persona.
+
 ## CONTEXTO DEL NEGOCIO
 Producto ancla: Máster Internacional en BIM Management e IA ($2,699.99 USD).
-Equipo: Patricio (contenido/marketing), Ester Álvarez, Gabriel Pantoja,
-Eber Martínez (Uruguay), Lisette (soporte técnico).
-El CRM es GoHighLevel. Los anuncios son Meta Ads."""
+El CRM es GoHighLevel. Los anuncios son Meta Ads. El equipo trabaja en ClickUp.
+
+Equipo (así los nombra ella, así los reconoces):
+- Ester Álvarez — asistencia general y soporte al cliente
+- Patricio Stagno — contenido y producción audiovisual
+- Gabriel Pantoja — GoHighLevel y configuración técnica
+- Aylin Tapia — redes sociales
+- Eber Martínez — cursos y especializaciones (Uruguay)
+- Lisette — soporte técnico (no está en ClickUp)"""
 
 
 # ── Herramientas ──────────────────────────────────────────────────────────────
@@ -229,6 +241,44 @@ TOOLS = [
             "type": "object",
             "properties": {"texto": {"type": "string"}},
             "required": ["texto"],
+        },
+    },
+
+    # ── Tareas del equipo (ClickUp) ──
+    {
+        "name": "crear_tarea_equipo",
+        "description": (
+            "Crea una tarea en ClickUp y se la asigna a alguien del EQUIPO. "
+            "Úsalo cuando la tarea es para OTRA persona: 'créale una tarea a "
+            "Ester', 'que Patricio grabe el reel', 'asígnale esto a Gabriel'. "
+            "Para tareas de la propia Dayana usa crear_tarea (Google Tasks). "
+            "Equipo: Dayana, Ester, Gabriel, Eber, Patricio, Aylin. "
+            "Reversible: hazlo directo, sin pedir permiso."
+        ),
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "titulo":      {"type": "string", "description": "Qué hay que hacer, en imperativo."},
+                "para":        {"type": "string", "description": "Nombre o correo de la persona. Acepta el nombre tal como se dictó."},
+                "descripcion": {"type": "string", "description": "Detalle o contexto que haya dictado."},
+                "vence":       {"type": "string", "description": "Fecha límite YYYY-MM-DD."},
+                "prioridad":   {"type": "string", "enum": ["urgente", "alta", "normal", "baja"]},
+                "lista":       {"type": "string", "description": "Lista de ClickUp. Omítela y se elige la del área de esa persona."},
+            },
+            "required": ["titulo", "para"],
+        },
+    },
+    {
+        "name": "ver_tareas_equipo",
+        "description": (
+            "Consulta las tareas de ClickUp de alguien del equipo. Para "
+            "'¿qué tiene pendiente Ester?', '¿en qué va Patricio?'."
+        ),
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "quien": {"type": "string", "description": "Nombre o correo. Omítelo para ver las de todos."},
+            },
         },
     },
 
@@ -367,6 +417,32 @@ def ejecutar_tool(nombre: str, args: dict) -> str:
         if nombre == "buscar_nota":
             notas = gcal.buscar_notas(args["texto"])
             return json.dumps(notas, ensure_ascii=False) if notas else "No encontré notas con ese texto."
+
+        # ── Tareas del equipo (ClickUp) ──
+        if nombre == "crear_tarea_equipo":
+            import clickup_client as cu
+            persona = cu.resolver_persona(args["para"])
+            if not persona:
+                return (f"No reconocí a '{args['para']}' en el equipo. "
+                        f"Estas son las personas disponibles:\n{cu.listar_equipo()}")
+            t = cu.crear_tarea(
+                titulo=args["titulo"],
+                para=args["para"],
+                descripcion=args.get("descripcion", ""),
+                vence=args.get("vence", ""),
+                prioridad=args.get("prioridad", ""),
+                lista=args.get("lista", ""),
+            )
+            venc = f", vence {t['vence']}" if t["vence"] else ""
+            return (f"Tarea creada para {t['para']} en la lista '{t['lista']}'{venc}: "
+                    f"{t['titulo']} — {t['link']}")
+
+        if nombre == "ver_tareas_equipo":
+            import clickup_client as cu
+            tareas = cu.tareas_de(args.get("quien", ""))
+            if not tareas:
+                return "Sin tareas abiertas para esa persona."
+            return json.dumps(tareas[:25], ensure_ascii=False)
 
         # ── Panorama ──
         if nombre == "panorama_empresa":

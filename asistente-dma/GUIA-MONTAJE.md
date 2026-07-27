@@ -1,10 +1,16 @@
-# Guía de montaje — credenciales de Google
+# Guía de montaje — credenciales
 
-Es la única parte que no puedo hacer por ti: Google exige que el dueño de la
-cuenta autorice desde su navegador. Son ~15 minutos, una sola vez.
+Es la parte que no puedo hacer por ti: Google y ClickUp exigen que el dueño de
+la cuenta autorice desde su navegador. Son ~20 minutos en total, una sola vez.
 
-Al final tendrás tres valores para pegar en Railway:
-`GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`, `GOOGLE_REFRESH_TOKEN`.
+| Paso | Qué consigues | Cuánto tarda | ¿Obligatorio? |
+|---|---|---|---|
+| 1-5 | Credenciales de Google (agenda, tareas, notas) | ~15 min | **Sí** |
+| 6 | Token de ClickUp (tareas al equipo) | 2 min | Sí, si quieres asignar tareas |
+| 7 | Plantilla de WhatsApp (recordatorios fiables) | 5 min + espera de Meta | Recomendado |
+
+Si te cansas, para después del paso 5: el asistente ya funciona con agenda,
+tareas y notas. Los pasos 6 y 7 suman capacidades, no arreglan nada roto.
 
 > **Por qué OAuth de usuario y no una cuenta de servicio:** Google Tasks y tu
 > calendario personal viven en tu cuenta. Una cuenta de servicio es una identidad
@@ -129,7 +135,50 @@ python obtener_token.py
 
 Sin esto las notas caen sueltas en la raíz de tu Drive y se mezclan con todo.
 
-## 6. Pegar en Railway
+## 6. Token de ClickUp (para crear tareas al equipo)
+
+Esto es rápido — 2 minutos:
+
+1. Entra a [app.clickup.com](https://app.clickup.com) con tu cuenta.
+2. Abajo a la izquierda, click en tu **avatar** → **Settings**.
+3. En el menú lateral: **Apps**.
+4. En *API Token* → **Generate** (o **Regenerate** si ya había uno).
+5. Copia el token. Empieza por `pk_`.
+
+Ese valor va en `CLICKUP_TOKEN`.
+
+> Tu equipo y tus 12 listas ya están escritos dentro de `clickup_client.py`
+> (los leí de tu workspace real). Si más adelante entra alguien nuevo o creas
+> una lista, hay que agregarlo ahí — está todo junto al principio del archivo,
+> comentado y fácil de editar.
+
+## 7. Plantilla de WhatsApp (para que los recordatorios siempre lleguen)
+
+**Este paso es opcional pero importante, y conviene entender por qué.**
+
+WhatsApp solo permite mandarte un mensaje libre si tú escribiste en las últimas
+**24 horas**. Fuera de esa ventana, Meta lo bloquea. Como tú vas a usar el
+asistente a diario, casi siempre estará abierta — pero "casi siempre" no sirve
+para un recordatorio de reunión.
+
+La solución es una plantilla pre-aprobada, que sí puede entrar siempre:
+
+1. Entra a [business.facebook.com](https://business.facebook.com) → tu cuenta.
+2. Menú **WhatsApp Manager** → **Plantillas de mensajes** → **Crear plantilla**.
+3. Configúrala así:
+   - Categoría: **Utilidad**
+   - Nombre: `recordatorio_dma`
+   - Idioma: **Español**
+   - Cuerpo del mensaje: `⏰ Recordatorio: {{1}}`
+   - En el ejemplo de `{{1}}` escribe: `En 30 min: reunión con Patricio`
+4. **Enviar** y esperar la aprobación de Meta (suele tardar de minutos a
+   un par de horas; es categoría Utilidad, se aprueba casi siempre).
+5. Cuando aparezca como **Aprobada**, pon `WA_TEMPLATE_RECORDATORIO=recordatorio_dma`.
+
+Si te saltas este paso, todo funciona igual, pero un recordatorio puede no
+llegar si llevas más de un día sin hablarle al bot.
+
+## 8. Pegar todo en Railway
 
 Proyecto del bot → pestaña **Variables** → agrega:
 
@@ -139,19 +188,22 @@ GOOGLE_CLIENT_SECRET=GOCSPX-...
 GOOGLE_REFRESH_TOKEN=1//0...
 GOOGLE_CALENDAR_PRINCIPAL=designmodelingdg@gmail.com
 GOOGLE_CARPETA_NOTAS=1a2B3c...
+CLICKUP_TOKEN=pk_...
+WA_TEMPLATE_RECORDATORIO=recordatorio_dma
 ASISTENTE_MODEL=claude-sonnet-5
 ASISTENTE_ACTIVO=1
 ```
 
 Railway redespliega solo al guardar.
 
-## 7. Comprobar
+## 9. Comprobar
 
 ```bash
-python -c "import google_client; print(google_client.credenciales_ok())"
+python -c "import google_client, clickup_client as c; \
+print('Google:', google_client.credenciales_ok(), '| ClickUp:', c.credenciales_ok())"
 ```
 
-`True` → listo. Si sale `False`, el log dice cuál de las tres variables falla.
+Los dos en `True` → listo. Si alguno sale `False`, el log dice cuál variable falla.
 
 ---
 
@@ -164,3 +216,7 @@ python -c "import google_client; print(google_client.credenciales_ok())"
 | `403 Google Tasks API has not been used` | Falta habilitar la API del paso 1. |
 | Las notas no aparecen en la carpeta | `GOOGLE_CARPETA_NOTAS` vacío o con el id mal copiado. |
 | El asistente ve clases de Classroom | Se editó `CALENDARIOS_AGENDA` en `google_client.py`. Esa lista blanca existe justo para eso. |
+| `Falta CLICKUP_TOKEN` | No se pegó el token del paso 6 en Railway. |
+| "No reconocí a X en el equipo" | Esa persona no está en `EQUIPO` (`clickup_client.py`). Lisette, por ejemplo, no está en ClickUp. |
+| Un recordatorio no llegó | Pasaron >24 h sin que le escribieras al bot y no hay plantilla aprobada (paso 7). |
+| Llegan recordatorios repetidos | El archivo de estado se borró (vive en `/tmp`, se pierde al redesplegar). Molesto, no grave. |

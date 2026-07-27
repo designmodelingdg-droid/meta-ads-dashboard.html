@@ -26,12 +26,14 @@ puede hacer nada. Es literalmente el hueco donde faltaba el agente.
 
 ---
 
-## Paso 1 — Copiar los tres módulos
+## Paso 1 — Copiar los cinco módulos
 
 ```bash
 cp asistente-dma/asistente_agent.py  <repo dma-sales-assistant>/
 cp asistente-dma/google_client.py    <repo dma-sales-assistant>/
+cp asistente-dma/clickup_client.py   <repo dma-sales-assistant>/
 cp asistente-dma/panorama.py         <repo dma-sales-assistant>/
+cp asistente-dma/recordatorios.py    <repo dma-sales-assistant>/
 ```
 
 ## Paso 2 — El parche de una línea
@@ -96,10 +98,14 @@ Hay un detalle real: `is_admin_message()` exige que el mensaje empiece con `/dma
 En una **nota de voz** eso es un problema — tendrías que decir "barra dma" en voz
 alta y confiar en que Whisper lo transcriba bien.
 
-Dos salidas, elige una:
+**Decisión tomada: se usa "asistente" como disparador** (opción A). Es la que
+permite que el equipo también lo use, porque funciona desde cualquiera de los 6
+números de la whitelist, no solo desde el de Dayana. La opción B queda
+documentada para más adelante.
 
-**A — Decir "asistente" al empezar la nota** (cero cambios de código): agrega el
-disparador a la lista de prefijos aceptados en `server.py:449`:
+**A — Decir "asistente" al empezar la nota** ← *esta es la elegida*. En
+`server.py:449`: 
+
 
 ```python
 PREFIJOS_ADMIN = (ADMIN_PREFIX, "asistente", "oye asistente")
@@ -111,7 +117,7 @@ def is_admin_message(phone: str, message: str) -> bool:
     return is_admin(phone)
 ```
 
-**B — Sin prefijo, solo para tu número personal** (más cómodo, más delicado):
+**B — Sin prefijo, solo para tu número personal** (para más adelante):
 `593983241210` es tuyo y no es un lead, así que todo lo que llegue de ahí puede ir
 directo al asistente:
 
@@ -125,30 +131,34 @@ def is_admin_message(phone: str, message: str) -> bool:
     ...
 ```
 
-Recomiendo **A para arrancar**: es reversible y no cambia el comportamiento de
-ningún otro número de la whitelist. Cuando confíes en el asistente, pasas a B.
+## Paso 4 — Recordatorios proactivos
 
-## Paso 4 — Brief matutino
-
-Al final de `server.py`, junto a los otros `_scheduler.add_job` (`:4466`):
+Una sola línea, junto a los otros `_scheduler.add_job` de `server.py` (`:4466`):
 
 ```python
-def _job_brief_matutino():
-    import panorama, whatsapp_cloud
-    from config import ADMIN_PHONE
-    try:
-        whatsapp_cloud.send_text(ADMIN_PHONE, panorama.brief_matutino())
-    except Exception as e:
-        log.error(f"❌ Brief matutino falló: {e}")
-
-_scheduler.add_job(_job_brief_matutino, "cron", hour=7, minute=0,
-                   timezone=TZ_EC, id="brief_matutino", replace_existing=True)
+import recordatorios
+recordatorios.registrar_jobs(_scheduler)
 ```
 
-> ⚠️ **Ventana de 24 h de WhatsApp.** Si llevas más de 24 h sin escribirle al bot,
-> Meta bloquea el mensaje libre y el brief no llega. Para que sea confiable hay
-> que mandarlo como **plantilla aprobada** con `whatsapp_cloud.send_template()`.
-> Hay que crear esa plantilla en el Business Manager antes de confiar en esto.
+Eso deja corriendo tres trabajos:
+
+| Cuándo | Qué manda |
+|---|---|
+| Cada 15 min | Aviso ~30 min antes de cada reunión de la agenda |
+| 8:00 | La agenda del día y lo que vence (Google Tasks + ClickUp) |
+| 18:00 | Lo que vencía hoy y sigue abierto. Si no hay nada, no escribe |
+
+La ventana de búsqueda mide 15 minutos exactos, igual que el intervalo del
+scheduler: así cada evento cae dentro de la banda **una sola vez**. Más ancha
+avisaría dos veces; más angosta se saltaría eventos. Además hay un
+anti-duplicado en `/tmp/dma_recordatorios.json`, que se reinicia solo cada día.
+
+> ⚠️ **Ventana de 24 h de WhatsApp.** Meta solo deja mandar texto libre si Dayana
+> escribió en las últimas 24 h. Fuera de eso, el recordatorio se bloquea.
+> `recordatorios._enviar()` lo detecta y reintenta como plantilla aprobada
+> (`WA_TEMPLATE_RECORDATORIO`). **Sin esa plantilla, los recordatorios solo son
+> fiables dentro de la ventana.** El paso 7 de `GUIA-MONTAJE.md` explica cómo
+> crearla.
 
 ## Paso 5 — Dependencias y variables
 
@@ -164,6 +174,8 @@ GOOGLE_CLIENT_SECRET
 GOOGLE_REFRESH_TOKEN
 GOOGLE_CALENDAR_PRINCIPAL=designmodelingdg@gmail.com
 GOOGLE_CARPETA_NOTAS          (opcional: id de la carpeta de Drive para notas)
+CLICKUP_TOKEN                 (pk_... — tareas al equipo)
+WA_TEMPLATE_RECORDATORIO      (opcional: plantilla para recordatorios fuera de la ventana de 24 h)
 ASISTENTE_MODEL=claude-sonnet-5
 ASISTENTE_ACTIVO=1
 ```
@@ -174,8 +186,14 @@ ASISTENTE_ACTIVO=1
 
 Probado en el entorno de construcción, sin red hacia Google ni GHL:
 
-- ✅ Los tres módulos compilan e importan en Python 3.11.
-- ✅ Los 12 schemas de herramientas están bien formados.
+- ✅ Los cinco módulos compilan e importan en Python 3.11.
+- ✅ Los 14 schemas de herramientas están bien formados.
+- ✅ **La resolución de nombres del equipo aguanta lo que devuelve Whisper:**
+  "esther", "pato", "gabo", "heber", "aylín" y los correos resuelven a la
+  persona correcta. Un nombre desconocido devuelve la lista del equipo en vez
+  de fallar.
+- ✅ **Cada evento se recuerda exactamente una vez** (banda de 15 min = intervalo
+  del scheduler, más anti-duplicado en disco).
 - ✅ **La guardia de confirmación funciona:** `enviar_mensaje_a_contacto` con
   `confirmado=false` devuelve "PENDIENTE DE CONFIRMACIÓN" sin siquiera importar
   `ghl_client` — no hay forma de que envíe algo por accidente.
@@ -204,7 +222,14 @@ Probado en el entorno de construcción, sin red hacia Google ni GHL:
 6. **Irreversible**: *"escríbele a Carlos que la oferta vence hoy"* → **pide
    confirmación** y no envía nada hasta que respondas "sí".
 7. `asistente ¿cómo vamos?` → panorama comercial.
-8. `status` (comando de siempre) → sigue respondiendo igual que antes. **Esta es
-   la prueba de no-regresión.**
-9. Desde un número que NO sea admin, escribir cualquier cosa → responde el bot de
-   ventas de siempre, sin rastro del asistente.
+8. **Tarea al equipo**: *"asistente, créale una tarea a Ester para que actualice
+   el temario del máster, para el viernes"* → aparece en ClickUp, en la lista
+   *Soporte al Cliente*, asignada a Ester y con fecha.
+9. **Nombre mal transcrito**: *"créale una tarea a esther"* (sin tilde, con h) →
+   igual la asigna bien.
+10. **Recordatorio**: agenda algo dentro de 35 minutos y espera → llega el aviso
+    una sola vez, no dos.
+11. `status` (comando de siempre) → sigue respondiendo igual que antes. **Esta es
+    la prueba de no-regresión.**
+12. Desde un número que NO sea admin, escribir cualquier cosa → responde el bot de
+    ventas de siempre, sin rastro del asistente.

@@ -18,15 +18,17 @@ No es un bot nuevo: es el cerebro que le faltaba al que ya tienes corriendo.
 ## Qué hay aquí
 
 ```
-asistente_agent.py   El cerebro: system prompt + 12 herramientas + loop de tool-use
+asistente_agent.py   El cerebro: system prompt + 14 herramientas + loop de tool-use
 google_client.py     Google Calendar + Tasks + Drive por REST, con OAuth propio
+clickup_client.py    Tareas para el equipo: 6 personas y 12 listas reales
 panorama.py          Agrega agenda, tareas, GHL, Meta Ads y académico en un solo texto
+recordatorios.py     Avisos proactivos por WhatsApp (reuniones, vencimientos)
 BLUEPRINT.md         La especificación completa (metodología de the-architect)
 INTEGRACION.md       El parche exacto sobre server.py y la prueba end-to-end
 GUIA-MONTAJE.md      Los 15 minutos de Google Cloud que solo puedes hacer tú
 ```
 
-Los tres `.py` van a la **raíz** de `designmodelingdg-droid/dma-sales-assistant`,
+Los cinco `.py` van a la **raíz** de `designmodelingdg-droid/dma-sales-assistant`,
 junto a `server.py`. Aquí viven versionados como documentación viva del agente.
 
 ## Cómo se ve usándolo

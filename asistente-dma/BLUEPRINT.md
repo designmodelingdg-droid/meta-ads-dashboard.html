@@ -57,6 +57,7 @@ agenda, crea tareas, guarda notas y le devuelve el panorama real del negocio.
 | Transcripción | Whisper, vía `media_handler.py` | **Ya está construido y probado en producción.** |
 | Canal | WhatsApp a través de GoHighLevel | Ya es el canal del bot. Cero infraestructura nueva. |
 | Agenda / tareas / notas | Google Calendar + Tasks + Drive, REST directo | Es lo que pidió el encargo. REST en vez del SDK de Google para no engordar `requirements.txt`. |
+| Tareas del equipo | ClickUp API v2 | El equipo ya trabaja ahí: 4 espacios, 12 listas, 6 personas. |
 | CRM | GoHighLevel vía `ghl_client.py` | 825 líneas ya escritas y en uso. |
 | Anuncios | Meta Ads vía `meta_ads.py` | Ya existe. |
 | Programación | APScheduler | Ya está en el proceso, `server.py:4466`. |
@@ -76,14 +77,16 @@ agenda, crea tareas, guarda notas y le devuelve el panorama real del negocio.
 
 ## 3. Estructura
 
-Los tres módulos van a la **raíz** de `dma-sales-assistant`, junto a `server.py`:
+Los cinco módulos van a la **raíz** de `dma-sales-assistant`, junto a `server.py`:
 
 ```
 dma-sales-assistant/
 ├── server.py               ← 1 parche en handle_admin_command (línea ~941)
 ├── asistente_agent.py      ← NUEVO · cerebro: system prompt + TOOLS + loop
 ├── google_client.py        ← NUEVO · Calendar + Tasks + Drive (OAuth propio)
+├── clickup_client.py       ← NUEVO · tareas para el equipo (6 personas, 12 listas)
 ├── panorama.py             ← NUEVO · agregador del estado de la empresa
+├── recordatorios.py        ← NUEVO · avisos proactivos por WhatsApp
 ├── media_handler.py        ← sin cambios (ya transcribe)
 ├── ghl_client.py           ← sin cambios (se consume)
 ├── meta_ads.py             ← sin cambios (se consume)
@@ -101,6 +104,8 @@ No hay base de datos. El estado vive donde ya vive el dato real:
 | Eventos | Google Calendar | Es el calendario que ella ya usa. |
 | Tareas | Google Tasks | Sincroniza solo con su móvil. |
 | Notas | Google Docs (Drive) | Buscables, compartibles, editables después. |
+| Tareas del equipo | ClickUp | Es donde el equipo ya trabaja. Google Tasks no puede asignar a otros. |
+| Qué se recordó ya hoy | `/tmp/dma_recordatorios.json` | Solo evita avisos repetidos; perderlo no cuesta nada. |
 | Leads / oportunidades | GoHighLevel | Única fuente de verdad comercial. |
 | Historial de conversación | `_ASISTENTE_HIST` en memoria, últimos 12 turnos | Solo sirve para resolver "sí, mándalo". Perderlo en un reinicio no cuesta nada. |
 
@@ -135,6 +140,8 @@ modelo y el mundo.
 | `buscar_nota` | lectura | Búsqueda por texto en Drive. |
 | `panorama_empresa` | lectura | Secciones a la carta: agenda, tareas, comercial, ads, académico. |
 | `buscar_contacto` | lectura | Ficha de GHL: etiquetas, oportunidad, teléfono. |
+| `crear_tarea_equipo` | ✅ sí | Tarea en ClickUp asignada a alguien del equipo. |
+| `ver_tareas_equipo` | lectura | Pendientes de una persona del equipo. |
 | `enviar_mensaje_a_contacto` | ❌ **NO** | Manda WhatsApp a un contacto. **Exige `confirmado: true`.** |
 
 ### La regla de autonomía
@@ -162,9 +169,13 @@ el modelo nunca se equivoque.
 4. **`asistente_agent.py`** — prompt, TOOLS, dispatcher, loop. *(hecho)*
 5. **Parche en `server.py`** — fallback + historial + prefijo de voz. *(documentado en `INTEGRACION.md`)*
 6. **Credenciales de Google en Railway** — requiere a Dayana. *(`GUIA-MONTAJE.md`)*
-7. **Brief matutino** con APScheduler, y su plantilla de WhatsApp aprobada.
-8. **Segunda tanda:** correo (Gmail), reuniones (Fathom/Zoom ya conectados),
-   delegar tareas al equipo, mover oportunidades en GHL.
+7. **`clickup_client.py`** — tareas para el equipo, con los IDs reales del
+   workspace. *(hecho)*
+8. **`recordatorios.py`** — avisos proactivos por WhatsApp. *(hecho)*
+9. **Plantilla de WhatsApp aprobada**, para que los recordatorios pasen la
+   ventana de 24 h. *(requiere a Dayana)*
+10. **Segunda tanda:** correo (Gmail), reuniones (Fathom/Zoom ya conectados),
+    mover oportunidades en GHL.
 
 ---
 
@@ -195,6 +206,9 @@ importan:
 
 - **Dos órdenes en una sola nota de voz** → se ejecutan las dos. Es lo que la
   arquitectura vieja de `detect_*` no podía hacer.
+- **Un nombre mal transcrito** ("esther", "pato", "gabo") → resuelve a la persona
+  correcta; uno desconocido devuelve la lista del equipo en vez de fallar.
+- **Un evento se recuerda una sola vez**, ni cero ni dos.
 - **Acción irreversible** → pide confirmación y no envía nada sin el "sí".
 - **No-regresión:** `status` y `pausa X` siguen funcionando igual, y un lead
   cualquiera sigue recibiendo el bot de ventas sin cambios.
@@ -216,3 +230,8 @@ importan:
 6. **El asistente no cotiza ni negocia el Máster.** Eso es del bot de ventas;
    mezclarlos rompe el guion comercial.
 7. **Ningún secreto en el repo.** Todo por variables de entorno de Railway.
+8. **La ventana de recordatorios mide lo mismo que el intervalo del scheduler.**
+   Hoy 15 min y 15 min. Si se cambia uno hay que cambiar el otro: más ancha
+   avisa dos veces, más angosta se salta eventos.
+9. **Las tareas de Dayana van a Google Tasks; las del equipo, a ClickUp.**
+   Mezclarlas rompe el sitio donde cada quien mira sus pendientes.
