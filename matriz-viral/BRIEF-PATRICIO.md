@@ -101,3 +101,28 @@ Métricas reales (IG Insights). Confirman y afinan la estrategia:
 4. **El lead magnet conversa.** El post de zapatas generó 35 comentarios (IG+FB) — el CTA "comenta ZAPATA" funciona para abrir conversación/captar.
 
 **Para los próximos guiones:** priorizar núcleo BIM+IA con ángulo "IA vs criterio" + demo concreta + CTA "comenta BIM o IA". Evitar la promo de curso pura sin gancho.
+
+---
+
+## Actualización 2026-07-28 — semana de prueba (4 piezas estáticas)
+
+| Publicación | Formato | Vistas | Alcance | Comentarios | Guardados | Interacc. |
+|---|---|---|---|---|---|---|
+| **Calculadora de Zapatas (lead magnet)** | Post | **11,193** (9,103 de FB) | 1,295 | **37** (+170 FB) | 16 | **90** |
+| ¿Parece un render de 4 horas? (mito IA) | Carrusel | 2,917 | 1,107 | 0 | 8 | 21 |
+| Diálogo Arqui vs Inge | Post (meme) | 1,321 | 687 | 0 | 1 | 6 |
+| Los maestros del BIM | Post | 538 | 237 | 0 | 0 | 4 |
+| **Total** | | **15,969** | 3,326 | 37 | 25 | 121 |
+
+**Las 4 lecciones de la semana:**
+
+1. **El lead magnet arrasó.** El post de la Calculadora se llevó ~70% de las vistas y 74% de las interacciones de toda la semana. **El formato "herramienta gratuita" es el que más resuena** — y el único que generó conversación real (37 comentarios IG + 170 FB) y seguidores nuevos.
+2. **Facebook fue el motor, no Instagram.** 9,103 de las 11,193 vistas vinieron de **Facebook**. Es un canal que estábamos ignorando y que claramente amplifica este tipo de contenido. **Acción: replicar y cuidar FB, no solo IG.**
+3. **Sin pregunta directa no hay comentarios.** Las 3 piezas que no pidieron comentar con fuerza cerraron en **0 comentarios**, aunque el carrusel del render sí tuvo buen reach (2,917) y guardados (8). El reveal engancha; la pregunta abierta es la que hace hablar.
+4. **El humor pierde en formato estático.** El meme Arqui vs Inge (1,321) no replica lo que el humor logra en reel (los humor en video superan 4.7k). **El humor necesita video y ritmo**; en imagen fija se cae el remate. Y "Los maestros del BIM" (538, el peor) confirma que **el hook tipo trivia no funciona**: la pregunta debe ser una duda que el viewer YA tiene, no un acertijo.
+
+**Ajustes para las próximas piezas:**
+- Más **lead magnets / herramientas gratuitas** (es el formato ganador) y publicarlos también en **Facebook**.
+- Todo hook de pregunta debe tocar un **dolor o duda real**, no trivia.
+- El **humor va en reel**, no en post plano.
+- Cerrar SIEMPRE con pregunta directa + CTA de comentar (las de 0 comentarios no lo tenían con fuerza).
