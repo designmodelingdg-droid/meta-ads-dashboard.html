@@ -2,6 +2,7 @@ import {Composition, Folder} from "remotion";
 
 // Compositions
 import {ShowcaseComposition} from "./compositions/Showcase";
+import {CalculadoraZapatasTikTok} from "./compositions/CalculadoraZapatasTikTok";
 
 // Social templates
 import {TikTokVideo} from "./templates/social/TikTokVideo";
@@ -72,6 +73,17 @@ export const RemotionRoot: React.FC = () => {
             title: "Your Title Here",
             subtitle: "Subtitle goes here",
           }}
+        />
+      </Folder>
+
+      <Folder name="DMA">
+        <Composition
+          id="CalculadoraZapatasTikTok"
+          component={CalculadoraZapatasTikTok}
+          durationInFrames={900}
+          fps={30}
+          width={1080}
+          height={1920}
         />
       </Folder>
 
