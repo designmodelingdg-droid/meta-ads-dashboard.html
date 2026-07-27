@@ -10,14 +10,41 @@ description: |
 
 Cierra el ciclo semanal del sistema de contenido: **métricas reales → matriz actualizada → lecciones → ajuste del calendario**.
 
-Pensado para el periodo **sin Apify** (el crédito se reinicia el 10 de agosto de 2026). Los datos los pega Dayana desde Instagram/Facebook Insights.
+**Desde 2026-07-27 la recolección es AUTOMÁTICA** — la Action `metricas-semanales.yml`
+corre cada lunes y actualiza la matriz sola. Dayana ya no tiene que pegar nada.
+
+| Fuente | Para qué | Script |
+|---|---|---|
+| **Meta Graph API** | Nuestras métricas de IG y FB | `scripts/meta_organico.py` |
+| **Meta `business_discovery`** | Competencia / sector (público) | `scripts/competencia.py` |
+| **Apify** | Solo para estimar views/alcance de cuentas AJENAS | `scripts/refresh_matriz.py` |
+| Tabla pegada a mano | Respaldo, o para las vistas de FB | `scripts/matriz_semanal.py` |
+
+Tu trabajo ahora es **leer lo que llegó y sacar conclusiones**, no recolectar.
 
 ---
 
-## Flujo (5 pasos)
+## Flujo automático (lo normal)
+
+1. La Action ya actualizó `matriz.json` y `competencia.json` el lunes.
+2. **Tú lees los cambios** (`git log`/`git diff` de `matriz-viral/matriz/`), completas
+   `eje`/`tipo`/`nota` de las piezas nuevas, sacas las lecciones al brief y ajustas el
+   calendario si un formato ganó claro.
+3. Le resumes a Dayana en 4-5 líneas: ganador, peor, lección y qué cambiar.
+
+Si la Action no corrió (o falta el secreto `META_TOKEN`), córrelo tú:
+```bash
+export META_TOKEN=...   # secreto del repo
+python3 scripts/meta_organico.py --limit 30
+python3 scripts/competencia.py
+```
+
+---
+
+## Flujo manual (respaldo)
 
 ### 1. Recibe la tabla
-Dayana pega una tabla con las métricas de la semana. Columnas típicas (en cualquier orden, con o sin acentos):
+Solo si hace falta (p. ej. vistas de Facebook). Dayana pega una tabla con las métricas de la semana. Columnas típicas (en cualquier orden, con o sin acentos):
 
 `Publicación | Vistas | Alcance | Interacciones | Me gusta | Comentarios | Guardados | Compartidos | Cuentas con interacción | Visitas a perfil | Nuevos seguidores | Vistas en Facebook`
 
