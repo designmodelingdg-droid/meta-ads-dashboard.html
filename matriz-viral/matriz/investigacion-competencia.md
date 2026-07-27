@@ -30,6 +30,8 @@
 
 ## 2. Ecuador — tu mercado local
 
+> ⚠️ **ACTUALIZACIÓN CRÍTICA (misma fecha):** al revisar sus webs se confirmó que Arkadis **ya tiene los mismos avales que nosotros** (Sabal University + CLEA) y **ya vende BIM con IA** ("Diplomado BIM Modeller, AI & ArchViz"). Nuestras credenciales dejaron de ser diferenciador. Ver **`estrategia-diferenciacion.md`**.
+
 ### 🔴 Arkadis (@arkadisoficial) — el competidor #1, y es más grande que tú
 - **120,351 seguidores** (1.5× los tuyos). Posgrados de arquitectura, ingeniería y diseño; **certificador oficial Autodesk**; +55,000 egresados desde 2008.
 - Organiza el **BIM Forum Ecuador** (@bimforumecuador) — construyen comunidad y autoridad de gremio, no solo cursos.
