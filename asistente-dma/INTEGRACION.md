@@ -77,7 +77,7 @@ Y arriba, junto a `ADMIN_STATE` (`server.py:319`):
 
 ```python
 # Historial del asistente ejecutivo, por contacto admin.
-# En memoria: railway.toml fuerza --workers 1, así que hay un solo proceso.
+# En memoria: el Procfile fuerza --workers 1, así que hay un solo proceso.
 # Si algún día se sube a varios workers, esto debe pasar a Redis o a GHL.
 _ASISTENTE_HIST: dict[str, list] = {}
 ```
@@ -166,7 +166,7 @@ anti-duplicado en `/tmp/dma_recordatorios.json`, que se reinicia solo cada día.
 están. `google_client.py` usa REST directo justamente para no meter el SDK de
 Google.
 
-Variables nuevas en Railway (ver `GUIA-MONTAJE.md` para conseguirlas):
+Variables nuevas en **Render** (ver `GUIA-MONTAJE.md` para conseguirlas):
 
 ```
 GOOGLE_CLIENT_ID
@@ -206,7 +206,7 @@ Probado en el entorno de construcción, sin red hacia Google ni GHL:
 **No probado aquí** (no había API key de Anthropic en el entorno de construcción):
 
 - ⚠️ El round-trip real con el modelo: que Claude elija bien las herramientas
-  ante una transcripción sucia. **Esto hay que probarlo en Railway**, con los
+  ante una transcripción sucia. **Esto hay que probarlo en Render**, con los
   casos 3-6 de abajo. Es lo primero que debes verificar tras el despliegue.
 - ⚠️ Las llamadas reales a Google (hacen falta las credenciales del paso 5).
 

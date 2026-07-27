@@ -68,7 +68,7 @@ def _access_token() -> str:
     """
     Devuelve un access token válido, refrescándolo si está por vencer.
 
-    Cachea en memoria del proceso. `railway.toml` fuerza `--workers 1`, así que
+    Cachea en memoria del proceso. El `Procfile` fuerza `--workers 1`, así que
     hay un solo proceso y el caché es coherente. Con varios workers cada uno
     refrescaría por su cuenta — funcionaría igual, solo con llamadas de más.
     """

@@ -64,7 +64,7 @@ tareas y notas. Los pasos 6 y 7 suman capacidades, no arreglan nada roto.
 
 ## 4. Obtener el refresh token
 
-En tu computadora (no en Railway), guarda este archivo como `obtener_token.py`:
+En tu computadora (no en el servidor), guarda este archivo como `obtener_token.py`:
 
 ```python
 """Genera el GOOGLE_REFRESH_TOKEN. Se corre una sola vez, en local."""
@@ -178,9 +178,17 @@ La solución es una plantilla pre-aprobada, que sí puede entrar siempre:
 Si te saltas este paso, todo funciona igual, pero un recordatorio puede no
 llegar si llevas más de un día sin hablarle al bot.
 
-## 8. Pegar todo en Railway
+## 8. Pegar todo en Render
 
-Proyecto del bot → pestaña **Variables** → agrega:
+> **El bot vive en Render, no en Railway.** Si abriste Railway y te salió
+> «0 Projects», estaba bien: ahí no hay nada y no hay que crear nada. El repo
+> tiene un `railway.toml` que nunca se llegó a usar, y por eso lo dije mal antes.
+> El servicio real es `dma-sales-assistant` en Render.
+
+1. Entra a [dashboard.render.com](https://dashboard.render.com).
+2. Abre el servicio **`dma-sales-assistant`**.
+3. En el menú de la izquierda: **Environment**.
+4. **Add Environment Variable** por cada línea (o **Add from .env** para pegarlas todas de una):
 
 ```
 GOOGLE_CLIENT_ID=...apps.googleusercontent.com
@@ -194,7 +202,7 @@ ASISTENTE_MODEL=claude-sonnet-5
 ASISTENTE_ACTIVO=1
 ```
 
-Railway redespliega solo al guardar.
+Pulsa **Save Changes**. Render redespliega solo — tarda un par de minutos.
 
 ## 9. Comprobar
 
@@ -216,7 +224,7 @@ Los dos en `True` → listo. Si alguno sale `False`, el log dice cuál variable 
 | `403 Google Tasks API has not been used` | Falta habilitar la API del paso 1. |
 | Las notas no aparecen en la carpeta | `GOOGLE_CARPETA_NOTAS` vacío o con el id mal copiado. |
 | El asistente ve clases de Classroom | Se editó `CALENDARIOS_AGENDA` en `google_client.py`. Esa lista blanca existe justo para eso. |
-| `Falta CLICKUP_TOKEN` | No se pegó el token del paso 6 en Railway. |
+| `Falta CLICKUP_TOKEN` | No se pegó el token del paso 6 en Render. |
 | "No reconocí a X en el equipo" | Esa persona no está en `EQUIPO` (`clickup_client.py`). Lisette, por ejemplo, no está en ClickUp. |
 | Un recordatorio no llegó | Pasaron >24 h sin que le escribieras al bot y no hay plantilla aprobada (paso 7). |
 | Llegan recordatorios repetidos | El archivo de estado se borró (vive en `/tmp`, se pierde al redesplegar). Molesto, no grave. |

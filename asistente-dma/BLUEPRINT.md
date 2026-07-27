@@ -61,12 +61,12 @@ agenda, crea tareas, guarda notas y le devuelve el panorama real del negocio.
 | CRM | GoHighLevel vía `ghl_client.py` | 825 líneas ya escritas y en uso. |
 | Anuncios | Meta Ads vía `meta_ads.py` | Ya existe. |
 | Programación | APScheduler | Ya está en el proceso, `server.py:4466`. |
-| Despliegue | Railway | Ya está vivo. |
+| Despliegue | Render | Ya está vivo en `dma-sales-assistant.onrender.com`. |
 
 ### Lo que se decidió NO usar
 
 - **Google Tasks SDK** — el REST con `requests` son 40 líneas y evita 6 dependencias.
-- **Base de datos** — `railway.toml` fuerza `--workers 1`; un dict en memoria
+- **Base de datos** — el `Procfile` fuerza `--workers 1`; un dict en memoria
   alcanza para el historial de conversación. Meter Postgres aquí sería
   infraestructura para un problema que no existe todavía.
 - **Número de WhatsApp nuevo** — el webhook y la whitelist de admins ya existen.
@@ -168,7 +168,7 @@ el modelo nunca se equivoque.
 3. **`panorama.py`** componiendo `daily_report`, `meta_ads`, `academico_progreso`. *(hecho)*
 4. **`asistente_agent.py`** — prompt, TOOLS, dispatcher, loop. *(hecho)*
 5. **Parche en `server.py`** — fallback + historial + prefijo de voz. *(documentado en `INTEGRACION.md`)*
-6. **Credenciales de Google en Railway** — requiere a Dayana. *(`GUIA-MONTAJE.md`)*
+6. **Credenciales de Google en Render** — requiere a Dayana. *(`GUIA-MONTAJE.md`)*
 7. **`clickup_client.py`** — tareas para el equipo, con los IDs reales del
    workspace. *(hecho)*
 8. **`recordatorios.py`** — avisos proactivos por WhatsApp. *(hecho)*
@@ -218,7 +218,7 @@ importan:
 ## 9. Reglas no negociables
 
 1. **`--workers 1` se mantiene.** El anti-duplicación del bot de ventas vive en
-   memoria de un proceso (`railway.toml` lo explica). Subir workers manda
+   memoria de un proceso (el `Procfile` y `railway.toml` lo explican). Subir workers manda
    mensajes dobles a clientes reales.
 2. **El asistente nunca responde a un no-admin.** Se activa solo tras
    `is_admin()`. Si falla, falla en silencio hacia el flujo de ventas normal.
@@ -229,7 +229,7 @@ importan:
    el freno de mano.
 6. **El asistente no cotiza ni negocia el Máster.** Eso es del bot de ventas;
    mezclarlos rompe el guion comercial.
-7. **Ningún secreto en el repo.** Todo por variables de entorno de Railway.
+7. **Ningún secreto en el repo.** Todo por variables de entorno de Render.
 8. **La ventana de recordatorios mide lo mismo que el intervalo del scheduler.**
    Hoy 15 min y 15 min. Si se cambia uno hay que cambiar el otro: más ancha
    avisa dos veces, más angosta se salta eventos.
