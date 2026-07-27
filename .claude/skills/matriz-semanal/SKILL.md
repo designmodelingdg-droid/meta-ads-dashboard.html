@@ -69,7 +69,27 @@ Si algo **contradice** una regla, dilo explícitamente — la matriz se corrige 
 - Marca las piezas sin shortcode con `reconciliar_shortcode: true`; cuando Apify vuelva (10 ago), se reconcilian solas corriendo `scripts/refresh_matriz.py`.
 - El resumen para Dayana va **en 4-5 líneas máximo**: el ganador, el peor, la lección accionable y qué cambiar. Nada de reportes largos.
 
-## Cuando Apify vuelva (10 ago 2026)
+## ⭐ Vía preferida: Meta Graph API (ya no hace falta Apify)
+
+Desde 2026-07-27 la recolección es **automática, oficial y gratis** con el token de
+System User de Meta (el mismo de `dma-sales-assistant`, no expira):
+
+```bash
+export META_TOKEN=EAA...        # token de System User de "Design Modeling - Ads CLI"
+python3 scripts/meta_organico.py --limit 30 --dry-run   # revisar
+python3 scripts/meta_organico.py --limit 30             # aplicar
+```
+
+Trae de **Instagram** (@design_modeling_dg, id 17841404048578200): views, alcance,
+likes, comentarios, guardados, compartidos, interacciones, visitas al perfil y
+seguidores nuevos. De **Facebook** (página 101355061550758): comentarios, likes y
+compartidos.
+
+**Límite conocido:** Meta ELIMINÓ las vistas por publicación de Facebook de la API
+(probado hasta v23) — solo se ven en la UI de Insights. Si necesitas ese dato,
+pídeselo a Dayana y cárgalo a mano en `views_facebook`. Todo lo demás es automático.
+
+## Si prefieres Apify (10 ago 2026)
 Este skill sigue sirviendo para las lecturas y el ajuste, pero la recolección pasa a ser automática:
 ```bash
 APIFY_TOKEN=xxx python3 scripts/refresh_matriz.py
