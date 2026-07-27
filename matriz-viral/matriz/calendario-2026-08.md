@@ -1,61 +1,75 @@
 # Calendario de contenido — Agosto 2026 · Design Modeling Academy
 
-**Cadencia:** 3-4 piezas/semana · **Mezcla:** ~60% núcleo BIM/IA · 15% lead magnet · 10% blog · 10% empresa/novedades · 5% comunidad/humor.
-**Fórmula ganadora (de las stats):** núcleo BIM+IA + demo concreta (visual) + CTA "comenta BIM o IA".
-**Nota de producción (2026-07-21):** este mes va **cargado a estático (carrusel / post plano)** — producibles con ChatGPT/Canva, sin depender de grabar video. Pocos reels.
-**Guía de adaptación por red:** ver `guia-formatos-y-redes.md`.
+**Actualizado 2026-07-28** con los aprendizajes de la semana de prueba (ver `BRIEF-PATRICIO.md` §2026-07-28).
 
-**Leyenda:** 🎯 núcleo BIM/IA · 🎁 lead magnet · 📝 blog · 👥 comunidad · 🏛️ empresa/novedades. · *(guion)* = ya tiene guion listo.
+**Cadencia:** 3-4 piezas/semana.
+**Mezcla ajustada:** ~50% núcleo BIM/IA · **25% lead magnet / herramienta gratuita** (subió: es el formato ganador) · 10% blog · 10% empresa-novedades · 5% comunidad.
+
+## Las 4 reglas nuevas (de los datos reales)
+1. **🎁 Más herramientas gratuitas.** El lead magnet se llevó el 70% de las vistas y el 74% de las interacciones de la semana. Subimos su peso en el mes.
+2. **📘 Facebook es canal propio, no espejo.** 9,103 de 11,193 vistas del ganador vinieron de FB. **Cada pieza fuerte se publica también en Facebook**, cuidada (no auto-repost).
+3. **❓ Cerrar SIEMPRE con pregunta directa.** Las 3 piezas sin pregunta clara sacaron 0 comentarios. Nada de trivia: la pregunta debe tocar una **duda o dolor real** del viewer.
+4. **😅 El humor va en REEL, no en post plano.** El meme estático se quedó en 1,321 views; el humor en video supera 4,700. Los guiones de humor vuelven a video.
+
+**Leyenda:** 🎯 núcleo BIM/IA · 🎁 lead magnet · 📝 blog · 👥 comunidad · 🏛️ empresa/novedades · *(guion)* = guion listo.
 
 ---
 
 ## Semana 1 (4–9 ago)
 
-| Fecha | Eje | Formato | Idea / Hook | Otras redes |
+| Fecha | Eje | Formato | Idea / Hook | Redes |
 |---|---|---|---|---|
-| Lun 4 | 🎯 | **Carrusel** | "Tu Revit ya tiene IA adentro y no la activaste. 3 funciones →" *(guion listicle-revit-ia)* | LinkedIn PDF · TikTok |
-| Mié 6 | 🎯 | **Carrusel** | "5 errores al usar IA en tus proyectos BIM" *(guion 5-errores-ia-bim)* | LinkedIn PDF |
-| Vie 8 | 🎁 | **Carrusel + post** | Lanzamiento **Calculadora de Zapatas** (CTA "comenta ZAPATA") *(guion zapatas)* | LinkedIn · TikTok |
-| Sáb 9 | 🎯 | **Post plano** | Meme "—La IA me va a quitar el trabajo. —A ti te reemplaza cualquier plantilla de Pinterest" *(guion dialogo-arqui-inge)* | TikTok |
+| Lun 4 | 🎯 | **Carrusel** | "Tu Revit ya tiene IA adentro. 3 funciones que no activaste" *(guion listicle-revit-ia)* · cierre: "¿Cuál no conocías?" | IG + **FB** · LinkedIn PDF |
+| Mié 6 | 🎯 | **Carrusel** | "5 errores al usar IA en tus proyectos BIM" *(guion 5-errores-ia-bim)* · cierre: "¿Cuál has cometido?" | IG + **FB** · LinkedIn |
+| Vie 8 | 🎁 | **Post + carrusel** | **Calculadora de Zapatas** — relanzamiento con el ángulo que funcionó *(guion zapatas)* · CTA "comenta ZAPATA" | IG + **FB (prioritario)** |
+| Sáb 9 | 🎯 | **REEL (humor)** | Diálogo Arqui vs Inge — **ahora en video** (el meme estático no funcionó) *(guion dialogo-arqui-inge)* | IG + TikTok |
 
 ## Semana 2 (10–16 ago)
 
-| Fecha | Eje | Formato | Idea / Hook | Otras redes |
+| Fecha | Eje | Formato | Idea / Hook | Redes |
 |---|---|---|---|---|
-| Lun 11 | 🎯 | **Carrusel** | "Esto parece un render de 4h. Lo hizo una IA en 10 seg" (antes/después) *(guion mito-render-ia)* | LinkedIn · TikTok |
-| Mié 13 | 🎯 | **Reel** | "Le pedí a la IA que coordinara un modelo BIM. Mira dónde falló." *(guion ia-coordina-modelo-bim)* | TikTok · YT Short |
-| Vie 15 | 📝 | **Post + LinkedIn largo** | Blog "IA en BIM: qué automatizar y qué NO (la línea del criterio)" → link | **LinkedIn post largo** · YT descripción |
-| Sáb 16 | 🎁 | **Post plano** | Calculadora zapatas, ángulo dolor: "¿Sigues dimensionando zapatas 'a ojo'?" | TikTok |
+| Lun 11 | 🎯 | **REEL** | "Le pedí a la IA que coordinara un modelo BIM. Mira dónde falló." *(guion ia-coordina-modelo-bim)* | IG + TikTok + **FB** |
+| Mié 13 | 🎁 | **Post plano** | **Nuevo lead magnet / recurso gratis** — ej. checklist de coordinación BIM o plantilla Revit *(por definir: dime cuál)* · CTA palabra clave | IG + **FB** |
+| Vie 15 | 📝 | **Post + LinkedIn largo** | Blog "IA en BIM: qué automatizar y qué NO" *(guion blog-ia-automatizar)* · cierre con pregunta | **LinkedIn** + IG |
+| Sáb 16 | 🎯 | **Carrusel** | "Esto parece un render de 4h. Lo hizo una IA en 10 seg" *(guion mito-render)* — **re-publicar con pregunta de cierre** ("¿lo usarías en tus entregas?") | IG + **FB** |
 
 ## Semana 3 (17–23 ago)
 
-| Fecha | Eje | Formato | Idea / Hook | Otras redes |
+| Fecha | Eje | Formato | Idea / Hook | Redes |
 |---|---|---|---|---|
-| Lun 18 | 🎯 | **Carrusel** | "¿Qué hace un BIM Manager que la IA nunca podrá?" (el criterio) *(idea)* | LinkedIn documento |
-| Mié 20 | 🎯 | **Post plano** | "Tu Revit ya hace ESTO con IA (y no lo sabías)" — un tip visual *(idea)* | TikTok |
-| Vie 22 | 🏛️ | **Carrusel** | **Proyecto / caso de alumno** — prueba social *(a definir)* | **LinkedIn** |
-| Sáb 23 | ▶️ | **YouTube largo** | Tutorial "Activar la IA de Revit paso a paso (2026)" (del listicle) — título SEO | YT + Short |
+| Lun 18 | 🎯 | **Carrusel** | "¿Qué hace un BIM Manager que la IA nunca podrá?" *(guion bim-manager-vs-ia)* · cierre: "¿De acuerdo?" | IG + **FB** · LinkedIn |
+| Mié 20 | 🎁 | **Post plano** | Calculadora de Zapatas — ángulo dolor: "¿Sigues dimensionando zapatas 'a ojo'?" | IG + **FB** |
+| Vie 22 | 🏛️ | **Carrusel** | **Proyecto / caso de alumno** *(a definir — me pasas los datos)* | **LinkedIn** + IG |
+| Sáb 23 | ▶️ | **YouTube largo** | "Cómo activar la IA de Revit paso a paso (2026)" — título SEO | YouTube + Short |
 
 ## Semana 4 (24–30 ago)
 
-| Fecha | Eje | Formato | Idea / Hook | Otras redes |
+| Fecha | Eje | Formato | Idea / Hook | Redes |
 |---|---|---|---|---|
-| Lun 25 | 🎯 | **Reel (humor)** | "Coordinador BIM vs. el que sigue modelando a mano" *(idea)* | TikTok |
-| Mié 27 | 🎯 | **Carrusel** | "3 señales de que tu oficina ya necesita BIM + IA" *(idea)* | LinkedIn PDF |
-| Vie 29 | 👥 | **Post / reel** | Comunidad: recap del mes + invitación a sumarse *(idea)* | LinkedIn |
-| Sáb 30 | 🏛️ | **Carrusel + reel** | **Conferencia / convención del mes** *(a definir)* | LinkedIn · TikTok |
+| Lun 25 | 🎯 | **REEL (humor)** | "Coordinador BIM vs. el que sigue modelando a mano" *(guion coordinador-vs-a-mano)* — **video, no meme** | IG + TikTok |
+| Mié 27 | 🎯 | **Carrusel** | "3 señales de que tu oficina ya necesita BIM + IA" *(guion 3-senales)* · cierre: "¿Cuántas te pasan?" | IG + **FB** · LinkedIn |
+| Vie 29 | 👥 | **Post** | Comunidad: recap del mes + invitación *(guion comunidad-recap)* | IG + **FB** |
+| Sáb 30 | 🏛️ | **Carrusel + reel** | **Conferencia / convención** *(a definir)* | LinkedIn · IG · TikTok |
 
 ## Cierre de mes (31 ago)
 
-| Fecha | Eje | Formato | Idea / Hook | Otras redes |
+| Fecha | Eje | Formato | Idea | Redes |
 |---|---|---|---|---|
-| Lun 31 | 🏛️ | **Carrusel** | "Lo que hicimos en agosto en Design Modeling" (calculadora + conferencia + proyecto) | **LinkedIn** |
+| Lun 31 | 🏛️ | **Carrusel** | "Lo que hicimos en agosto en Design Modeling" | **LinkedIn** + IG |
 
 ---
 
-## Estado de guiones
-- **Listos (todos):** listicle-revit-ia · 5-errores-ia-bim · zapatas · dialogo-arqui-inge · mito-render-ia · ia-coordina-modelo-bim · **bim-manager-vs-ia** · **tip-revit-ia** · **3-senales-bim-ia** · **coordinador-vs-a-mano** · **blog-ia-automatizar** · **comunidad-recap**. → El mes está 100% guionizado.
-- **A definir (datos tuyos):** proyecto/caso de alumno (Vie 22) y conferencia (Sáb 30) — me los pasas cuando estén.
+## Cambios vs. la versión anterior
+- **Lead magnet sube de 1 a 3 apariciones** (Vie 8, Mié 13, Mié 20) — era el 15% del mes, ahora ~25%.
+- **Los 2 guiones de humor vuelven a REEL** (Sáb 9 y Lun 25); ya no van como post plano.
+- **Facebook marcado explícitamente** en las piezas fuertes (era el canal que más rindió y no lo estábamos trabajando).
+- **Cada pieza lleva su pregunta de cierre** anotada — las de 0 comentarios no la tenían.
+- Se re-publica el carrusel del render (buen reach, 0 comentarios) **corrigiendo el cierre**.
+
+## Pendientes (datos tuyos)
+- **Mié 13:** ¿qué segundo lead magnet? (checklist de coordinación, plantilla Revit, otra calculadora…).
+- **Vie 22:** proyecto / caso de alumno.
+- **Sáb 30:** conferencia / convención.
 
 ## Recordatorio
-Al publicar cada pieza, registrar en `matriz.json` con `tipo`, `red` y métricas → medimos qué formato/red rinde y ajustamos septiembre sobre evidencia.
+Al publicar, registrar cada pieza en `matriz.json` con `tipo`, `red` y métricas — **incluyendo las de Facebook**, que resultaron ser la mitad del alcance real.

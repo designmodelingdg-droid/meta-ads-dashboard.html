@@ -1,6 +1,6 @@
 # Guía de formatos y redes — Sistema de contenido mensual DMA
 
-**Fecha:** 2026-07-21 · **Base:** aprendizajes reales de `matriz-contenido-viral.md` y `patrones-de-viralidad.md`.
+**Fecha:** 2026-07-21 · **Actualizada:** 2026-07-28 (aprendizajes de la semana de prueba) · **Base:** aprendizajes reales de `matriz-contenido-viral.md` y `patrones-de-viralidad.md`.
 
 La idea: **una sola idea núcleo → muchas piezas**, adaptadas a cada formato y a cada red. No republicar lo mismo en todos lados — cada red habla distinto.
 
@@ -20,7 +20,10 @@ La idea: **una sola idea núcleo → muchas piezas**, adaptadas a cada formato y
 |---|---|---|---|
 | **Reel** | Alcance / descubrimiento | Idea con demo en video, humor, reveal | El motor de reach |
 | **Carrusel** | Guardado + autoridad | Listicles, pasos, "cómo se hace" | El de mejor engagement (8.5%, 46 guardados) |
-| **Post plano** | Conversación rápida / lead magnets | Un mensaje fuerte, un regalo, una frase | El post de zapatas: 35 comentarios |
+| **Post plano** | Conversación rápida / **lead magnets** | Un regalo, una herramienta gratis, un mensaje fuerte | ⭐ El post de zapatas: 11,193 views y 70% de las interacciones de la semana |
+
+> ⚠️ **El humor NO va en post plano.** El meme estático se quedó en 1,321 views; el mismo tipo de humor en **reel** supera 4,700. El humor necesita video y ritmo — en imagen fija se cae el remate.
+> ⚠️ **Toda pieza cierra con una pregunta directa** que toque una duda o dolor real (nada de trivia). Las piezas sin pregunta clara sacaron **0 comentarios**, aunque tuvieran buen alcance.
 
 > Regla práctica: **cada idea núcleo se publica en los 3 formatos a lo largo del mes** (no el mismo día). El reel capta, el carrusel da autoridad y guardados, el post plano abre conversación.
 
@@ -33,6 +36,12 @@ La idea: **una sola idea núcleo → muchas piezas**, adaptadas a cada formato y
 - Tono cercano-técnico, español neutro, **subtítulos quemados**.
 - **CTA: "comenta BIM o IA"** (dispara el bot).
 - Hashtags: 8-15, mezcla nicho + amplios.
+
+### 📘 Facebook (el canal subestimado — dato real)
+- **Aprendizaje 2026-07-28:** el post ganador de la semana sacó **9,103 de sus 11,193 vistas en Facebook** (+170 comentarios allá) — más que Instagram.
+- **Trátalo como canal propio, no como espejo automático de IG.** Publica ahí las piezas fuertes (sobre todo **lead magnets / herramientas gratuitas**, que es lo que más viraliza en FB).
+- Formato: post con imagen o carrusel + caption completo. El público de FB comenta más.
+- CTA: igual que IG ("comenta ZAPATA / BIM / IA").
 
 ### 💼 LinkedIn (aquí está el comprador del Máster)
 - **Formato estrella: post de TEXTO largo** (historia/insight profesional en primera persona) + imagen o **carrusel en PDF** (documento). Video nativo sí, pero más "profesional" que casual.
@@ -54,7 +63,9 @@ La idea: **una sola idea núcleo → muchas piezas**, adaptadas a cada formato y
 - **CTA: "link en bio"** (TikTok penaliza links directos) + pedir comentarios.
 - **Úsalo para:** alcance nuevo y futuros estudiantes.
 
-**Resumen del CTA por red:** IG → "comenta BIM/IA" · LinkedIn → pregunta abierta/DM · YouTube → "link en descripción" · TikTok → "link en bio".
+**Resumen del CTA por red:** IG y **Facebook** → "comenta BIM/IA/ZAPATA" · LinkedIn → pregunta abierta/DM · YouTube → "link en descripción" · TikTok → "link en bio".
+
+**Y en TODAS:** cerrar con una **pregunta directa** sobre una duda real del viewer. Sin eso, no hay comentarios (comprobado).
 
 ---
 
@@ -76,12 +87,13 @@ Cadencia objetivo: 3-4 piezas/semana. Semana tipo (se repite ×4):
 |---|---|---|---|
 | Lun | Núcleo BIM+IA (demo/reveal) | **Reel** | TikTok + YT Short + post LinkedIn |
 | Mié | Núcleo / herramienta | **Carrusel** | Documento PDF LinkedIn |
-| Vie | *Rota:* lead magnet · blog · comunidad · empresa-novedades | Post plano / Reel | según la pieza |
-| Sáb (opcional) | Humor-diálogo o post plano rápido | Reel / Post | TikTok |
+| Vie | *Rota:* **lead magnet (prioridad)** · blog · comunidad · empresa-novedades | Post plano / Reel | según la pieza · **siempre también en Facebook** |
+| Sáb (opcional) | Humor-diálogo | **Reel** (nunca post plano) | TikTok |
 
 **Una vez al mes:** carrusel "Resumen del mes en Design Modeling" (proyectos/conferencias/novedades) + su versión LinkedIn.
 
-Distribución mensual objetivo: **~60% núcleo BIM/IA · ~15% lead magnet · ~10% blog · ~10% empresa-novedades · ~5% comunidad/humor.**
+Distribución mensual objetivo (**ajustada 2026-07-28**): **~50% núcleo BIM/IA · ~25% lead magnet / herramienta gratuita · ~10% blog · ~10% empresa-novedades · ~5% comunidad.**
+> El lead magnet subió de 15% a 25% porque se llevó el 70% de las vistas y el 74% de las interacciones de la semana de prueba.
 
 ---
 
