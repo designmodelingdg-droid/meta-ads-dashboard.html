@@ -9,7 +9,7 @@ import {
 } from "remotion";
 import {AnimatedTitle} from "../components/text/AnimatedTitle";
 import {GradientBackground} from "../components/backgrounds/GradientBackground";
-import {GridPattern} from "../components/backgrounds/GridPattern";
+import {FitImage, type KenBurnsDirection} from "../components/media/FitImage";
 import {CallToAction} from "../components/overlays/CallToAction";
 import {ProgressBar} from "../components/overlays/ProgressBar";
 import {Watermark} from "../components/overlays/Watermark";
@@ -24,6 +24,33 @@ const DMA = {
   heading: "'Overpass', sans-serif",
   body: "'Nunito', sans-serif",
 };
+
+// Fondos generados con IA (Higgsfield · Nano Banana Pro), referenciando
+// visualmente la zapata aislada, planos y acero de refuerzo. Hotlinked desde
+// el CDN de Higgsfield: para producción, descargar y servir desde
+// public/assets/ en su lugar.
+const BACKGROUNDS = {
+  hook: "https://d8j0ntlcm91z4.cloudfront.net/user_3DHYHNPN9mWRQrSP8pMrjtnrcPd/hf_20260727_005409_ff78a3b1-c117-4254-8bbe-5ef9c5076274.png",
+  benefit1: "https://d8j0ntlcm91z4.cloudfront.net/user_3DHYHNPN9mWRQrSP8pMrjtnrcPd/hf_20260727_005436_fe98fc84-9388-4029-bb3f-23487769ec35.png",
+  benefit2: "https://d8j0ntlcm91z4.cloudfront.net/user_3DHYHNPN9mWRQrSP8pMrjtnrcPd/hf_20260727_005439_52e9c20f-676e-4db3-9a22-f17fa9a83c57.png",
+  benefit3: "https://d8j0ntlcm91z4.cloudfront.net/user_3DHYHNPN9mWRQrSP8pMrjtnrcPd/hf_20260727_005441_cbfb21a8-79e8-4de3-a16b-bcaa04e1921a.png",
+  cta: "https://d8j0ntlcm91z4.cloudfront.net/user_3DHYHNPN9mWRQrSP8pMrjtnrcPd/hf_20260727_005711_2e9ed930-8fdf-4879-8a07-32712b6bbc92.png",
+};
+
+const SceneBackground: React.FC<{src: string; kenBurns: KenBurnsDirection}> = ({
+  src,
+  kenBurns,
+}) => (
+  <>
+    <FitImage src={src} kenBurns={kenBurns} kenBurnsIntensity={0.14} />
+    <AbsoluteFill
+      style={{
+        background:
+          "linear-gradient(180deg, rgba(0,10,20,0.6) 0%, rgba(0,10,20,0.35) 32%, rgba(0,10,20,0.4) 60%, rgba(0,10,20,0.82) 100%)",
+      }}
+    />
+  </>
+);
 
 const Eyebrow: React.FC<{text: string}> = ({text}) => {
   const frame = useCurrentFrame();
@@ -105,16 +132,12 @@ export const CalculadoraZapatasTikTok: React.FC = () => {
 
   return (
     <AbsoluteFill>
-      <GradientBackground
-        colors={[DMA.navy, DMA.azul]}
-        angle={145}
-        animateAngle
-        animateSpeed={0.12}
-      />
-      <GridPattern type="dots" spacing={44} size={2} color="rgba(255,255,255,0.08)" animate animateSpeed={0.3} />
+      {/* Fallback de marca por si una imagen no carga */}
+      <GradientBackground colors={[DMA.navy, DMA.azul]} angle={145} />
 
       {/* Hook: nombre del producto */}
       <Sequence from={0} durationInFrames={110}>
+        <SceneBackground src={BACKGROUNDS.hook} kenBurns="zoomIn" />
         <SafeArea>
           <AbsoluteFill style={{justifyContent: "center", alignItems: "center"}}>
             <Eyebrow text="HERRAMIENTA GRATUITA" />
@@ -151,6 +174,7 @@ export const CalculadoraZapatasTikTok: React.FC = () => {
 
       {/* Beneficio 1 */}
       <Sequence from={100} durationInFrames={180}>
+        <SceneBackground src={BACKGROUNDS.benefit1} kenBurns="panRight" />
         <SafeArea>
           <BenefitBeat icon="⚡" text={"Diseña tu zapata\nen minutos, no en horas"} />
         </SafeArea>
@@ -158,6 +182,7 @@ export const CalculadoraZapatasTikTok: React.FC = () => {
 
       {/* Beneficio 2 */}
       <Sequence from={270} durationInFrames={180}>
+        <SceneBackground src={BACKGROUNDS.benefit2} kenBurns="zoomIn" />
         <SafeArea>
           <BenefitBeat icon="✅" text={"Verifica cortante y\npunzonamiento automáticamente"} />
         </SafeArea>
@@ -165,6 +190,7 @@ export const CalculadoraZapatasTikTok: React.FC = () => {
 
       {/* Beneficio 3 */}
       <Sequence from={440} durationInFrames={180}>
+        <SceneBackground src={BACKGROUNDS.benefit3} kenBurns="panUp" />
         <SafeArea>
           <BenefitBeat icon="📐" text={"Acero de refuerzo\nlisto para dibujar"} />
         </SafeArea>
@@ -172,6 +198,7 @@ export const CalculadoraZapatasTikTok: React.FC = () => {
 
       {/* CTA final */}
       <Sequence from={600} durationInFrames={300}>
+        <SceneBackground src={BACKGROUNDS.cta} kenBurns="zoomOut" />
         <SafeArea>
           <AbsoluteFill style={{justifyContent: "center", alignItems: "center"}}>
             <AnimatedTitle
