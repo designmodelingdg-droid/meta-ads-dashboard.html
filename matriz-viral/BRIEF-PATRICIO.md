@@ -76,6 +76,8 @@ Todo vive en `matriz-viral/` (repo público — siempre la última versión):
 
 Los guiones nuevos nacen del Pilar 3 corregido (núcleo BIM/IA + demo concreta + CTA "comenta BIM o IA").
 
+- **`agente-storytelling/`** — formato **historias**: agente para desmenuzar virales (Modo 1) y construir videos con narrativa personal línea por línea (Modo 2). Las transcripciones de virales van en `agente-storytelling/transcripciones/*.txt`.
+
 ---
 
 ## Actualización 2026-07-21 — lectura de los últimos 6 posts
