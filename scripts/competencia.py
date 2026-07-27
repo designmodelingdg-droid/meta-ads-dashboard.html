@@ -29,7 +29,21 @@ IG_ID = os.environ.get("META_IG_ID", "17841404048578200")
 # Instagram; si el handle no existe o es personal, Meta devuelve "Invalid user id"
 # y el script simplemente la salta (no rompe).
 # Para sumar una nueva: agrégala aquí, o pruébala antes con --add nombrecuenta
-CUENTAS = ["bimpure", "arquitecturayempresa"]   # verificadas 2026-07-27
+CUENTAS = [
+    # Competencia DIRECTA (verificadas 2026-07-27 — ver investigacion-competencia.md)
+    "arkadisoficial",      # Ecuador — el competidor #1 (120k seguidores)
+    "veraquintanacorp",    # Ecuador — Gold Partner Autodesk
+    "structuralia",        # España/LatAm — másters de ingeniería
+    "ziguratinstitute",    # España/LatAm — másters BIM
+    "academiabim",         # Chile — ATC Autodesk
+    "bimchile",            # Chile
+    "bimschool",           # LatAm — el mejor engagement del sector (1.56%)
+    # Referentes y medios
+    "bimpure",             # Canadá/EEUU — referente BIM+IA
+    "arquitecturayempresa",# España — medio, engagement alto
+    "bimchannel",          # LatAm — medio de noticias
+    "bimforumecuador",     # Ecuador — gremio (ligado a Arkadis)
+]
 POR_CUENTA = 12
 
 
