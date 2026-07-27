@@ -4,6 +4,20 @@
 
 ---
 
+## 0. El historial (contexto de Dayana, 2026-07-27)
+
+**DMA llegó primero.** Arkadis empezó después y siguió este patrón:
+1. Copió las certificaciones que DMA ya ofrecía.
+2. Después fue a **negociar con las mismas entidades que certifican a DMA** (de ahí que hoy compartan aval de Sabal University).
+3. Repite cada cosa nueva que DMA saca.
+
+**Implicación estratégica:** no son un competidor que innova, son un competidor que **replica**. Eso define la jugada:
+- Todo lo que sea **anunciable y contratable** (avales, certificados, partnerships) lo van a copiar en meses. No es defendible.
+- Solo se defiende lo que requiere **construir** algo propio (software, comunidad, criterio acumulado).
+- Y hay una consecuencia táctica: **no anticipar lanzamientos en redes.** Primero se saca, después se cuenta (ver §4).
+
+---
+
 ## 1. La verdad incómoda: hoy NO tenemos diferenciador de producto
 
 Contexto de Dayana: *"Arkadis se hicieron de Autodesk y de las demás certificaciones gracias a nosotros, que lo hicimos primero. Todo lo que sacamos se copian."*
@@ -25,7 +39,12 @@ Los datos confirman que ya nos alcanzaron en TODO lo que anunciamos como diferen
 
 ## 2. Qué SÍ es difícil de copiar (por orden de dificultad)
 
-### 🥇 A. Las herramientas propias (DMA Engineering Suite)
+### 🥇 A. Las herramientas propias / soluciones inteligentes (DMA Engineering Suite)
+
+> **Estado (2026-07-27):** Dayana y su equipo están definiendo las próximas soluciones inteligentes. Cuando estén listas, se traen aquí para convertirlas en contenido. **Esta es la apuesta principal de diferenciación.**
+
+> ⚠️ **Aprendizaje de la Calculadora de Zapatas:** funcionó comercialmente (70% del alcance semanal) pero es de **cálculo estructural**, no de BIM+IA — no refuerza el núcleo que vende el Máster. **Las próximas herramientas deben ser de BIM + IA** (ej. auditor de modelo Revit, chequeo de estándares, asistente de coordinación, extractor de cantidades con IA). Así el lead magnet y el producto apuntan al mismo sitio.
+
 Copiar un aval toma una firma. **Copiar software propio toma un equipo de desarrollo y meses.**
 
 Ya lo tenemos y ya funciona: la **Calculadora de Zapatas** fue el post #1 del mes (11,193 views, 70% de todo el alcance semanal, 37+170 comentarios). Arkadis no tiene nada así.
