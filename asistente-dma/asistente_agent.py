@@ -163,7 +163,7 @@ TOOLS = [
                 "fin":         {"type": "string", "description": "Fin en ISO 8601 con offset. Si no se sabe, inicio + 1 hora."},
                 "descripcion": {"type": "string"},
                 "ubicacion":   {"type": "string", "description": "Lugar o link de la reunión."},
-                "invitados":   {"type": "array", "items": {"type": "string"}, "description": "Correos a invitar. Solo si Dayana los dictó."},
+                "invitados":   {"type": "array", "items": {"type": "string"}, "description": "A quién invitar. Puedes poner el NOMBRE tal como se dictó ('Ester', 'Patricio') — el correo se resuelve solo desde el equipo. Solo si Dayana los mencionó."},
             },
             "required": ["titulo", "inicio", "fin"],
         },
@@ -364,6 +364,41 @@ def _parse_dia(fecha: str) -> datetime.datetime:
         return base
 
 
+def _resolver_invitados(invitados) -> tuple[list, list]:
+    """
+    'Ester' → 'asistencia.generaldg@gmail.com'.
+
+    El modelo recibe nombres dictados, no correos: nadie dice "agéndame con
+    asistencia.generaldg arroba gmail". Sin esta resolución, Google rechaza el
+    invitado y el evento entero falla con "correo no válido" — que es justo lo
+    que pasó la primera vez que Dayana dictó "agéndame con Ester".
+
+    Los correos del equipo ya están en clickup_client.EQUIPO, así que se
+    reutilizan en vez de mantener una segunda lista que se desincronice.
+
+    Devuelve (correos_resueltos, nombres_sin_correo). Un nombre desconocido NO
+    tumba el evento: se agenda igual y se avisa a quién no se pudo invitar.
+    """
+    correos, desconocidos = [], []
+    for quien in (invitados or []):
+        q = (quien or "").strip()
+        if not q:
+            continue
+        if "@" in q:                      # ya es un correo
+            correos.append(q)
+            continue
+        try:
+            import clickup_client as cu
+            persona = cu.resolver_persona(q)
+        except Exception:
+            persona = None
+        if persona and persona.get("email"):
+            correos.append(persona["email"])
+        else:
+            desconocidos.append(q)
+    return correos, desconocidos
+
+
 def ejecutar_tool(nombre: str, args: dict) -> str:
     """
     Ejecuta una herramienta y devuelve texto para el modelo.
@@ -382,15 +417,24 @@ def ejecutar_tool(nombre: str, args: dict) -> str:
             return json.dumps(eventos, ensure_ascii=False)
 
         if nombre == "crear_evento":
+            invitados, sin_correo = _resolver_invitados(args.get("invitados"))
             ev = gcal.crear_evento(
                 titulo=args["titulo"],
                 inicio_iso=args["inicio"],
                 fin_iso=args["fin"],
                 descripcion=args.get("descripcion", ""),
                 ubicacion=args.get("ubicacion", ""),
-                invitados=args.get("invitados") or None,
+                invitados=invitados or None,
             )
-            return f"Evento creado: {ev['titulo']} — {ev['link']}"
+            resp = f"Evento creado: {ev['titulo']} — {ev['link']}"
+            if invitados:
+                resp += f" (invitados: {', '.join(invitados)})"
+            if sin_correo:
+                # El evento SÍ se creó. Se avisa de a quién no se pudo invitar,
+                # en vez de fallar entero: agendar es lo que ella pidió.
+                resp += (f". No se pudo invitar a {', '.join(sin_correo)} — "
+                         f"no tengo su correo, pero el evento quedó agendado.")
+            return resp
 
         if nombre == "mover_evento":
             ev = gcal.mover_evento(

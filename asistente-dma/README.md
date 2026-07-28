@@ -79,9 +79,22 @@ raíz de ese repo y `server.py` ya llama al agente.
 - [x] Token de ClickUp
 - [x] Disparador elegido: **"asistente"** (funciona desde los 6 números del equipo)
 - [x] Parche de `server.py` aplicado y mergeado
+- [x] `MODEL_PROVIDER=openrouter` + `OPENROUTER_API_KEY` en Render
+- [x] Funciona por **texto y por nota de voz**, con la agenda real
 - [ ] Plantilla de WhatsApp aprobada, para que los recordatorios pasen la
       ventana de 24 h de Meta
-- [ ] `MODEL_PROVIDER=openrouter` + `OPENROUTER_API_KEY` en Render
+
+### Lo que se arregló probándolo en producción
+
+El código vivía aquí, pero solo el uso real destapó cuatro fallos, todos ya
+mergeados en el repo del bot:
+
+| Síntoma | Causa |
+|---|---|
+| Ninguna nota de voz respondía | Al transcribir, el mensaje pasa a `"[Nota de voz]: asistente…"` y el disparador dejaba de estar al principio |
+| Tardaba ~6 min en contestar | GHL no entrega los webhooks; respondía el scanner de rescate, que corre cada 5 min. Ahora hay uno de 1 min solo para admins |
+| "No pude agendarte con Ester, su correo no es válido" | Se le pasaba el nombre a Google como si fuera un correo. Ahora se resuelve desde `clickup_client.EQUIPO` |
+| Se quedaba sordo tras preguntar algo | Exigía "asistente" en cada mensaje, así que no oía la respuesta a su propia pregunta. Ahora hay ventana de conversación de 10 min |
 
 > **Diagnóstico.** Si el asistente no responde, `/asistente-diag?secret=XXX`
 > dice si el modelo contesta, si el tool use funciona y si Google y ClickUp
