@@ -69,13 +69,18 @@ Tú: "escríbele a Carlos que la oferta vence hoy"
 Lo reversible lo hace directo. Lo que sale hacia afuera, lo confirma. Esa es toda
 la política de autonomía, y está tanto en el prompt como en el código.
 
-## Estado
+## Estado — desplegado
 
-Construido y listo para montar. Falta lo que solo puedes hacer tú:
+El asistente está **en producción** desde el 28/07/2026.
+La integración se mergeó en `dma-sales-assistant#5`; los 5 módulos viven en la
+raíz de ese repo y `server.py` ya llama al agente.
 
-- [ ] Credenciales de Google (`GUIA-MONTAJE.md`, ~15 min)
-- [ ] Aplicar el parche de `server.py` (`INTEGRACION.md`, 1 línea + 1 dict)
-- [ ] Elegir el disparador de voz: decir "asistente" al empezar, o sin prefijo
-      desde tu número personal
-- [ ] Plantilla de WhatsApp aprobada para que el brief de las 7:00 pase la
+- [x] Credenciales de Google
+- [x] Token de ClickUp
+- [x] Disparador elegido: **"asistente"** (funciona desde los 6 números del equipo)
+- [x] Parche de `server.py` aplicado y mergeado
+- [ ] Plantilla de WhatsApp aprobada, para que los recordatorios pasen la
       ventana de 24 h de Meta
+
+Lo que queda aquí es la fuente y la documentación: si hay que cambiar el agente,
+se cambia primero en esta carpeta y luego se lleva al repo del bot.
