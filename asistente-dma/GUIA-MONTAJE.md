@@ -191,6 +191,8 @@ llegar si llevas más de un día sin hablarle al bot.
 4. **Add Environment Variable** por cada línea (o **Add from .env** para pegarlas todas de una):
 
 ```
+MODEL_PROVIDER=openrouter
+OPENROUTER_API_KEY=sk-or-v1-...
 GOOGLE_CLIENT_ID=...apps.googleusercontent.com
 GOOGLE_CLIENT_SECRET=GOCSPX-...
 GOOGLE_REFRESH_TOKEN=1//0...
@@ -227,4 +229,6 @@ Los dos en `True` → listo. Si alguno sale `False`, el log dice cuál variable 
 | `Falta CLICKUP_TOKEN` | No se pegó el token del paso 6 en Render. |
 | "No reconocí a X en el equipo" | Esa persona no está en `EQUIPO` (`clickup_client.py`). Lisette, por ejemplo, no está en ClickUp. |
 | Un recordatorio no llegó | Pasaron >24 h sin que le escribieras al bot y no hay plantilla aprobada (paso 7). |
+| `credit balance is too low` | La cuenta de Anthropic no tiene saldo. Recarga, o pon `MODEL_PROVIDER=openrouter` con su `OPENROUTER_API_KEY`. |
+| El asistente conversa pero no agenda | El modelo no hace tool calling. Ajusta `OPENROUTER_MODEL_TOOLS` a uno que sí (por defecto `google/gemini-2.5-flash`). |
 | Llegan recordatorios repetidos | El archivo de estado se borró (vive en `/tmp`, se pierde al redesplegar). Molesto, no grave. |

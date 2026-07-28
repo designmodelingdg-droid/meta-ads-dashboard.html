@@ -81,6 +81,11 @@ raíz de ese repo y `server.py` ya llama al agente.
 - [x] Parche de `server.py` aplicado y mergeado
 - [ ] Plantilla de WhatsApp aprobada, para que los recordatorios pasen la
       ventana de 24 h de Meta
+- [ ] `MODEL_PROVIDER=openrouter` + `OPENROUTER_API_KEY` en Render
+
+> **Diagnóstico.** Si el asistente no responde, `/asistente-diag?secret=XXX`
+> dice si el modelo contesta, si el tool use funciona y si Google y ClickUp
+> autentican — sin pasar por WhatsApp. Con `&q=texto` ejecuta el agente entero.
 
 Lo que queda aquí es la fuente y la documentación: si hay que cambiar el agente,
 se cambia primero en esta carpeta y luego se lleva al repo del bot.

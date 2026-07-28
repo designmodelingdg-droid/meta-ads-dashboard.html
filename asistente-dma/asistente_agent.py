@@ -35,15 +35,26 @@ TZ_EC = pytz.timezone("America/Guayaquil")
 MODEL = os.getenv("ASISTENTE_MODEL", "claude-sonnet-5")
 MAX_VUELTAS = 8   # tope duro del loop: sin esto, un error repetido gira sin fin.
 
-# Misma convención que claude_agent.py: la key vive en config.ANTHROPIC_KEY.
-# El fallback a la variable de entorno permite importar este módulo suelto
-# (para pruebas) sin arrastrar todo config.py.
+# El proveedor se elige igual que en claude_agent.py. Esto NO es opcional:
+# si el bot corre con MODEL_PROVIDER=openrouter y el asistente llamara a
+# Anthropic por su cuenta, usaría una cuenta distinta de la que paga el resto
+# del bot — que fue exactamente el fallo de la primera versión.
+#
+# El adaptador de OpenRouter traduce tool use en ambos sentidos; sin eso el
+# asistente no podría agendar ni crear tareas, solo conversar.
 try:
     from config import ANTHROPIC_KEY
 except ImportError:
     ANTHROPIC_KEY = os.getenv("ANTHROPIC_KEY") or os.getenv("ANTHROPIC_API_KEY", "")
 
-_client = anthropic.Anthropic(api_key=ANTHROPIC_KEY)
+PROVIDER = os.getenv("MODEL_PROVIDER", "anthropic").lower()
+
+if PROVIDER == "openrouter":
+    from openrouter_adapter import OpenRouterClient
+    _client = OpenRouterClient()
+    log.info(f"🧠 Asistente vía OpenRouter (modelo solicitado: {MODEL})")
+else:
+    _client = anthropic.Anthropic(api_key=ANTHROPIC_KEY)
 
 
 # ── System prompt ─────────────────────────────────────────────────────────────
