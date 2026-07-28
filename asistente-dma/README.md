@@ -75,20 +75,21 @@ la política de autonomía, y está tanto en el prompt como en el código.
 ## Estado — desplegado
 
 El asistente está **en producción** desde el 28/07/2026.
-La integración se mergeó en `dma-sales-assistant#5`; los 5 módulos viven en la
+La integración se mergeó en `dma-sales-assistant#5`; los 8 módulos viven en la
 raíz de ese repo y `server.py` ya llama al agente.
 
-- [x] Credenciales de Google (agenda, tareas, notas)
+- [x] Credenciales de Google — agenda, tareas, notas **y correo**
 - [x] Token de ClickUp
-- [x] Disparadores: **"asistente"** y **"agente"** (desde los 6 números del equipo)
+- [x] `FATHOM_API_KEY` — resúmenes de reuniones (Zoom, Meet y Teams)
 - [x] Parche de `server.py` aplicado y mergeado
 - [x] `MODEL_PROVIDER=openrouter` + `OPENROUTER_API_KEY` en Render
 - [x] Funciona por **texto y por nota de voz**, con la agenda real
-- [x] Ventas e ingresos (Stripe ya estaba conectado, no hace falta nada)
-- [ ] **Re-autorizar Google con el scope de Gmail** — sin esto el correo no funciona
-      (`GUIA-MONTAJE.md`, paso 4, recuadro naranja)
-- [ ] **`FATHOM_API_KEY` en Render** — sin esto no hay resúmenes de reuniones
-      (`GUIA-MONTAJE.md`, paso 7b)
+- [x] Ventas e ingresos (Stripe ya estaba conectado, no hizo falta nada)
+- [x] El asistente es **solo de Dayana**, y ya no necesita palabra de activación
+- [ ] **Rotar las tres claves que estaban escritas en `config.py`** (GHL,
+      Anthropic, OpenAI). Quitarlas del archivo no las invalida — siguen en el
+      historial de Git. El PR que las quita del código espera a que
+      `/asistente-diag → credenciales.desde_entorno` confirme que están en Render
 - [ ] Plantilla de WhatsApp aprobada, para que los recordatorios pasen la
       ventana de 24 h de Meta
 
