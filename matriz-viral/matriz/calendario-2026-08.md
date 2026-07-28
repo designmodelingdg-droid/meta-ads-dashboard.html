@@ -5,13 +5,25 @@
 **Cadencia:** 3-4 piezas/semana.
 **Mezcla ajustada:** ~50% núcleo BIM/IA · **25% lead magnet / herramienta gratuita** (subió: es el formato ganador) · 10% blog · 10% empresa-novedades · 5% comunidad.
 
+## 🎯 Los CTA del mes (según lo que vende)
+| Producto | Palabra clave | Cuándo |
+|---|---|---|
+| **Especialización en ACERO** | `ACERO` | Piezas de estructuras, acero, conexiones, cálculo |
+| **Máster BIM + IA** | `BIM` o `IA` | Piezas de BIM, Revit, coordinación, IA aplicada |
+
+En LinkedIn: pregunta abierta o DM (nunca "comenta la palabra"). En TikTok: "link en bio".
+
+> **Dato de las campañas (ver `analisis-campanas.md`):** ACERO trae **1,086 leads con CPL $0.45–$0.61** — es el producto que más convierte, pero el orgánico casi no lo cubría. Por eso este mes suma piezas de acero.
+
 ## Las 4 reglas nuevas (de los datos reales)
 1. **🎁 Más herramientas gratuitas.** El lead magnet se llevó el 70% de las vistas y el 74% de las interacciones de la semana. Subimos su peso en el mes.
 2. **📘 Facebook es canal propio, no espejo.** 9,103 de 11,193 vistas del ganador vinieron de FB. **Cada pieza fuerte se publica también en Facebook**, cuidada (no auto-repost).
 3. **❓ Cerrar SIEMPRE con pregunta directa.** Las 3 piezas sin pregunta clara sacaron 0 comentarios. Nada de trivia: la pregunta debe tocar una **duda o dolor real** del viewer.
 4. **😅 El humor va en REEL, no en post plano.** El meme estático se quedó en 1,321 views; el humor en video supera 4,700. Los guiones de humor vuelven a video.
 
-**Leyenda:** 🎯 núcleo BIM/IA · 🎁 lead magnet · 📝 blog · 👥 comunidad · 🏛️ empresa/novedades · *(guion)* = guion listo.
+**Leyenda:** 🎯 núcleo BIM/IA · 🔩 ACERO · 🎁 lead magnet · 📝 blog · 👥 comunidad · 🏛️ empresa/novedades · *(guion)* = guion listo.
+
+📄 **Versión en Word para el equipo:** `matriz-viral/entregables/Matriz-Contenido-Agosto-2026-DMA.docx`
 
 ---
 
@@ -38,8 +50,9 @@
 | Fecha | Eje | Formato | Idea / Hook | Redes |
 |---|---|---|---|---|
 | Lun 18 | 🎯 | **Carrusel** | "¿Qué hace un BIM Manager que la IA nunca podrá?" *(guion bim-manager-vs-ia)* · cierre: "¿De acuerdo?" | IG + **FB** · LinkedIn |
-| Mié 20 | 🎁 | **Post plano** | Calculadora de Zapatas — ángulo dolor: "¿Sigues dimensionando zapatas 'a ojo'?" | IG + **FB** |
+| Mié 20 | 🔩 | **Post plano** | "El error #1 al diseñar conexiones en acero (y cómo evitarlo)" · CTA **ACERO** *(nuevo)* | IG + **FB** · TikTok |
 | Vie 22 | 🏛️ | **Carrusel** | **Proyecto / caso de alumno** *(a definir — me pasas los datos)* | **LinkedIn** + IG |
+| Sáb 23 | 🔩 | **Blog + LinkedIn** | Blog "Acero: 5 verificaciones que no puedes saltarte" · CTA **ACERO** *(nuevo)* | Blog · LinkedIn · IG |
 | Sáb 23 | ▶️ | **YouTube largo** | "Cómo activar la IA de Revit paso a paso (2026)" — título SEO | YouTube + Short |
 
 ## Semana 4 (24–30 ago)
@@ -47,7 +60,7 @@
 | Fecha | Eje | Formato | Idea / Hook | Redes |
 |---|---|---|---|---|
 | Lun 25 | 🎯 | **REEL (humor)** | "Coordinador BIM vs. el que sigue modelando a mano" *(guion coordinador-vs-a-mano)* — **video, no meme** | IG + TikTok |
-| Mié 27 | 🎯 | **Carrusel** | "3 señales de que tu oficina ya necesita BIM + IA" *(guion 3-senales)* · cierre: "¿Cuántas te pasan?" | IG + **FB** · LinkedIn |
+| Mié 27 | 🔩 | **Carrusel** | "3 señales de que tu estructura de acero está sobredimensionada" · CTA **ACERO** *(nuevo)* | IG + **FB** · LinkedIn |
 | Vie 29 | 👥 | **Post** | Comunidad: recap del mes + invitación *(guion comunidad-recap)* | IG + **FB** |
 | Sáb 30 | 🏛️ | **Carrusel + reel** | **Conferencia / convención** *(a definir)* | LinkedIn · IG · TikTok |
 
@@ -65,6 +78,7 @@
 - **Facebook marcado explícitamente** en las piezas fuertes (era el canal que más rindió y no lo estábamos trabajando).
 - **Cada pieza lleva su pregunta de cierre** anotada — las de 0 comentarios no la tenían.
 - Se re-publica el carrusel del render (buen reach, 0 comentarios) **corrigiendo el cierre**.
+- **Se suman 3 piezas de ACERO** (Mié 20, Sáb 23 blog, Mié 27): es el producto que más leads trae (CPL $0.45–$0.61) y el orgánico casi no lo cubría.
 
 ## Pendientes (datos tuyos)
 - **Mié 13:** ¿qué segundo lead magnet? (checklist de coordinación, plantilla Revit, otra calculadora…).
