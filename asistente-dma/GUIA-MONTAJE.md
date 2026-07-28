@@ -5,12 +5,17 @@ la cuenta autorice desde su navegador. Son ~20 minutos en total, una sola vez.
 
 | Paso | Qué consigues | Cuánto tarda | ¿Obligatorio? |
 |---|---|---|---|
-| 1-5 | Credenciales de Google (agenda, tareas, notas) | ~15 min | **Sí** |
+| 1-5 | Credenciales de Google (agenda, tareas, notas **y correo**) | ~15 min | **Sí** |
 | 6 | Token de ClickUp (tareas al equipo) | 2 min | Sí, si quieres asignar tareas |
 | 7 | Plantilla de WhatsApp (recordatorios fiables) | 5 min + espera de Meta | Recomendado |
+| 7b | Clave de Fathom (resúmenes de reuniones) | 2 min | Sí, si quieres los resúmenes |
 
 Si te cansas, para después del paso 5: el asistente ya funciona con agenda,
-tareas y notas. Los pasos 6 y 7 suman capacidades, no arreglan nada roto.
+tareas y notas. Los pasos 6, 7 y 7b suman capacidades, no arreglan nada roto.
+
+> **Si ya montaste esto antes de agosto 2026:** lo único que te falta es
+> volver a generar el token de Google con el permiso de Gmail (paso 4, el
+> recuadro naranja) y sacar la clave de Fathom (paso 7b). Lo demás sigue igual.
 
 > **Por qué OAuth de usuario y no una cuenta de servicio:** Google Tasks y tu
 > calendario personal viven en tu cuenta. Una cuenta de servicio es una identidad
@@ -27,11 +32,12 @@ tareas y notas. Los pasos 6 y 7 suman capacidades, no arreglan nada roto.
 2. Arriba a la izquierda, selector de proyecto → **Proyecto nuevo** →
    nombre: `DMA Asistente` → **Crear**.
 3. Asegúrate de estar dentro de ese proyecto (aparece arriba).
-4. Ve a **APIs y servicios → Biblioteca** y activa **las tres**, una por una
+4. Ve a **APIs y servicios → Biblioteca** y activa **las cuatro**, una por una
    (buscar → **Habilitar**):
    - **Google Calendar API**
    - **Google Tasks API**
    - **Google Drive API**
+   - **Gmail API** ← para leer y escribir correos
 
 ## 2. Pantalla de consentimiento
 
@@ -77,6 +83,7 @@ SCOPES = " ".join([
     "https://www.googleapis.com/auth/calendar",
     "https://www.googleapis.com/auth/tasks",
     "https://www.googleapis.com/auth/drive.file",
+    "https://www.googleapis.com/auth/gmail.modify",   # leer, buscar, borradores y enviar
 ])
 REDIRECT = "http://localhost"
 
@@ -125,6 +132,29 @@ python obtener_token.py
 > se usó o expiró (duran minutos): vuelve a correr el script.
 
 **Borra `obtener_token.py` cuando termines.** No lo subas a ningún repo.
+
+> ### ⚠️ Si ya hiciste este paso antes de agosto 2026, hay que repetirlo
+>
+> El token que tienes puesto en Render se emitió **sin Gmail**. Google no amplía
+> los permisos de un token ya emitido: no hay forma de "añadirle" el correo. Hay
+> que volver a pasar por el consentimiento y generar uno nuevo.
+>
+> Es rápido, porque los pasos 1 a 3 ya están hechos:
+> 1. Activa la **Gmail API** en la Biblioteca (paso 1, punto 4).
+> 2. Vuelve a correr `obtener_token.py` con el `SCOPES` de arriba, que ya
+>    incluye Gmail.
+> 3. En la pantalla de permisos Google te va a pedir **dos cosas nuevas**:
+>    leer y enviar correo. Acéptalas.
+> 4. Reemplaza `GOOGLE_REFRESH_TOKEN` en Render por el nuevo.
+>
+> El token viejo sigue funcionando para agenda y tareas mientras tanto, así que
+> no rompes nada esperando. Simplemente el asistente te dirá *"Gmail todavía no
+> está autorizado"* cada vez que le pidas algo de correo.
+>
+> **Por qué `gmail.modify` y no algo más amplio:** cubre leer, buscar, etiquetar,
+> guardar borradores y enviar — todo lo que necesita. Lo que **no** cubre es
+> borrar definitivamente, y es a propósito: el asistente no tiene por qué poder
+> vaciarte la papelera.
 
 ## 5. Carpeta de notas (opcional pero recomendado)
 
@@ -178,6 +208,32 @@ La solución es una plantilla pre-aprobada, que sí puede entrar siempre:
 Si te saltas este paso, todo funciona igual, pero un recordatorio puede no
 llegar si llevas más de un día sin hablarle al bot.
 
+## 7b. Clave de Fathom (para que te resuma las reuniones)
+
+**Buena noticia primero: no hay que integrar Zoom.**
+
+Fathom ya entra sola a tus reuniones — miré tu cuenta y de tus últimas 10
+grabaciones hay de **Zoom, de Google Meet y de Microsoft Teams**, todas con
+resumen y con las tareas ya sacadas. El que entra es el notetaker de Fathom,
+por su propia conexión con tu calendario. El asistente no entra a ninguna
+reunión: lee lo que Fathom ya dejó hecho.
+
+Para que pueda leerlo:
+
+1. Entra a [fathom.video](https://fathom.video) con tu cuenta.
+2. **Settings** (rueda dentada, abajo a la izquierda) → **Integrations**.
+3. Busca la sección **API** → **Create API key** (o **Generate**).
+4. Copia la clave y ponla en `FATHOM_API_KEY`.
+
+> **Si no ves la opción de API**, es que tu plan de Fathom no la incluye — la
+> API es de los planes de pago. Se sabe sin adivinar: entra a
+> `/asistente-diag?secret=XXX` y mira la línea `fathom`, que te devuelve el
+> error literal de Fathom en vez de un "no funciona".
+
+Si alguna reunión no aparece en los resúmenes, eso se arregla **en Fathom**
+(configurarlo para que se una a todas las reuniones del calendario), no en el
+código del asistente.
+
 ## 8. Pegar todo en Render
 
 > **El bot vive en Render, no en Railway.** Si abriste Railway y te salió
@@ -199,6 +255,7 @@ GOOGLE_REFRESH_TOKEN=1//0...
 GOOGLE_CALENDAR_PRINCIPAL=designmodelingdg@gmail.com
 GOOGLE_CARPETA_NOTAS=1a2B3c...
 CLICKUP_TOKEN=pk_...
+FATHOM_API_KEY=...
 WA_TEMPLATE_RECORDATORIO=recordatorio_dma
 ASISTENTE_MODEL=claude-sonnet-5
 ASISTENTE_ACTIVO=1

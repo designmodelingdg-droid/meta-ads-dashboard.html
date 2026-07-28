@@ -109,11 +109,33 @@ Una que le escribe a un cliente equivocado, no.
 - Si algo es ambiguo y es irreversible, pregunta. Si es reversible, elige la
   interpretación más probable, hazlo y dile cuál elegiste.
 
+## CORREO — la superficie más delicada que tocas
+Leer y buscar en su Gmail es reversible: hazlo directo.
+Escribir NO. Ante la duda, `guardar_borrador`: queda listo en Gmail y ella lo
+revisa. `enviar_correo` solo cuando pida explícitamente mandarlo, y aun así
+primero con `confirmado: false` para que vea el texto exacto.
+Un WhatsApp mal mandado se explica. Un correo mal mandado queda por escrito.
+
+## REUNIONES
+Fathom graba y resume sola sus reuniones de Zoom, Google Meet y Teams. Tú no
+entras a ninguna reunión: lees lo que Fathom ya dejó hecho.
+Si te pide las tareas de una reunión, saca el resumen y ofrécele pasarlas al
+equipo con `crear_tarea_equipo` — pero pregunta a quién antes de asignar nada.
+
 ## DÓNDE VA CADA TAREA
 Es la confusión más fácil de cometer, así que no la cometas:
 - Tarea **de Dayana** → `crear_tarea` (Google Tasks, se sincroniza con su móvil).
 - Tarea **para otra persona** → `crear_tarea_equipo` (ClickUp, donde trabaja el equipo).
 Si dice "recuérdame" es de ella. Si dice un nombre, es para esa persona.
+
+## CUANDO PREGUNTA POR DINERO
+Hay dos fuentes y NO miden lo mismo. Preséntalas separadas, nunca sumadas:
+- **Stripe** = dinero cobrado de verdad, con monto y fecha exactos.
+- **CRM** = inscripciones que el equipo confirmó, incluidas las transferencias
+  y los pagos en efectivo, que Stripe no ve.
+Si Stripe dice 2 y el CRM dice 5, no te lo inventes ni lo cuadres: son 3 pagos
+que entraron por fuera de Stripe. Dilo así.
+Nunca des una cifra de facturación que no venga de una herramienta.
 
 ## CONTEXTO DEL NEGOCIO
 Producto ancla: Máster Internacional en BIM Management e IA ($2,699.99 USD).
@@ -325,6 +347,179 @@ TOOLS = [
         },
     },
 
+    # ── Ventas y dinero ──
+    {
+        "name": "ventas_resumen",
+        "description": (
+            "Cuánto se cobró y cuántos se inscribieron en un periodo. Úsalo para "
+            "'¿cuántas ventas hicimos hoy?', '¿cuánto facturamos esta semana?', "
+            "'¿cómo va el mes?'. Devuelve DOS fuentes separadas: Stripe (dinero "
+            "cobrado de verdad) y el CRM (inscripciones, que incluyen "
+            "transferencias). No las sumes ni las presentes como una sola cifra: "
+            "si no coinciden es porque miden cosas distintas."
+        ),
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "periodo": {
+                    "type": "string",
+                    "description": ("Como lo dijo ella: 'hoy', 'ayer', 'esta semana', "
+                                    "'semana pasada', 'este mes', 'mes pasado', "
+                                    "'últimos 7 días', o una fecha 'AAAA-MM-DD'."),
+                },
+            },
+        },
+    },
+    {
+        "name": "ingresos_por_cliente",
+        "description": (
+            "Cuánto pagó CADA cliente en un periodo, de mayor a menor, juntando "
+            "las cuotas de una misma persona. Para '¿cuánto me ha pagado cada "
+            "cliente esta semana?'. Solo ve Stripe."
+        ),
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "periodo": {"type": "string", "description": "Igual que en ventas_resumen. Por defecto 'semana'."},
+            },
+        },
+    },
+    {
+        "name": "ventas_por_dia",
+        "description": (
+            "Serie diaria de cobros, para ver la tendencia: qué días entra dinero "
+            "y qué días no. Para 'dame las ventas día por día' o '¿cómo viene la "
+            "semana?'."
+        ),
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "dias": {"type": "integer", "description": "Cuántos días hacia atrás, contando hoy. Por defecto 7."},
+            },
+        },
+    },
+    {
+        "name": "progreso_alumno",
+        "description": (
+            "Cuánto ha avanzado un alumno en su curso: porcentaje, fecha de "
+            "inicio, último acceso y número de sesiones. Para '¿cómo va Fulano "
+            "en el máster?' o '¿ha entrado a la plataforma?'. Sale del último "
+            "snapshot académico, no es tiempo real."
+        ),
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "nombre": {"type": "string", "description": "Nombre del alumno."},
+                "email":  {"type": "string", "description": "Su correo, si lo sabes (más fiable)."},
+            },
+        },
+    },
+
+    # ── Correo ──
+    {
+        "name": "buscar_correos",
+        "description": (
+            "Busca en el Gmail de Dayana con la sintaxis de Gmail y devuelve "
+            "remitente, asunto y un resumen de cada uno, con su id. Ejemplos de "
+            "consulta: 'is:unread', 'from:ester', 'newer_than:2d', "
+            "'has:attachment', 'is:unread newer_than:1d'. Para '¿qué correos "
+            "tengo?' usa 'is:unread'."
+        ),
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "consulta": {"type": "string", "description": "Consulta en sintaxis de Gmail."},
+                "limite":   {"type": "integer", "description": "Cuántos traer, máximo 25. Por defecto 10."},
+            },
+        },
+    },
+    {
+        "name": "leer_correo",
+        "description": (
+            "Abre un correo entero por su id y devuelve cabeceras y texto. "
+            "El id sale de buscar_correos — llama a esa primero."
+        ),
+        "input_schema": {
+            "type": "object",
+            "properties": {"mensaje_id": {"type": "string"}},
+            "required": ["mensaje_id"],
+        },
+    },
+    {
+        "name": "guardar_borrador",
+        "description": (
+            "Escribe el correo y lo deja en Borradores SIN enviarlo. Reversible: "
+            "no pide confirmación. Es lo que hay que usar cuando ella dice "
+            "'prepárame una respuesta' o cuando no está claro si quiere mandarlo ya."
+        ),
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "para":           {"type": "string", "description": "Destinatario. Puede ir vacío si es respuesta."},
+                "asunto":         {"type": "string"},
+                "texto":          {"type": "string", "description": "Cuerpo del correo."},
+                "responder_a_id": {"type": "string", "description": "Id del correo al que responde, para que quede en el mismo hilo."},
+            },
+            "required": ["texto"],
+        },
+    },
+    {
+        "name": "enviar_correo",
+        "description": (
+            "Envía un correo de verdad, a nombre de Dayana. IRREVERSIBLE y sale "
+            "hacia afuera: llama primero con confirmado=false para que ella vea "
+            "destinatario, asunto y texto exactos, y solo con su 'sí' explícito "
+            "vuelve a llamar con confirmado=true. Si dudas entre esto y un "
+            "borrador, haz el borrador."
+        ),
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "para":           {"type": "string", "description": "Destinatario. Vacío si es respuesta y sale del original."},
+                "asunto":         {"type": "string"},
+                "texto":          {"type": "string"},
+                "responder_a_id": {"type": "string", "description": "Id del correo al que responde."},
+                "confirmado":     {"type": "boolean", "description": "false para previsualizar, true solo tras el OK de Dayana."},
+            },
+            "required": ["texto", "confirmado"],
+        },
+    },
+
+    # ── Reuniones ──
+    {
+        "name": "ultimas_reuniones",
+        "description": (
+            "Lista las reuniones que grabó Fathom (Zoom, Google Meet y Teams): "
+            "título, fecha, con quién y el enlace. Para '¿qué reuniones tuve "
+            "esta semana?'. No trae el resumen — para eso usa resumen_reunion."
+        ),
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "dias":   {"type": "integer", "description": "Hacia atrás. Por defecto 7."},
+                "limite": {"type": "integer", "description": "Cuántas. Por defecto 10."},
+            },
+        },
+    },
+    {
+        "name": "resumen_reunion",
+        "description": (
+            "El resumen de una reunión y las tareas que salieron de ella. "
+            "'busqueda' es lo que ella diría: el nombre de alguien que estuvo, "
+            "un trozo del título, o vacío para la última. Si salen varias "
+            "candidatas te las devuelve para que preguntes cuál — no elijas al "
+            "azar. Las tareas que devuelve se pueden pasar al equipo con "
+            "crear_tarea_equipo."
+        ),
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "busqueda": {"type": "string", "description": "Persona, título o fecha. Vacío = la última."},
+                "dias":     {"type": "integer", "description": "Ventana de búsqueda hacia atrás. Por defecto 14."},
+            },
+        },
+    },
+
     # ── Acción hacia afuera (requiere confirmación) ──
     {
         "name": "enviar_mensaje_a_contacto",
@@ -527,6 +722,69 @@ def ejecutar_tool(nombre: str, args: dict) -> str:
             except Exception:
                 pass
             return json.dumps(resumen, ensure_ascii=False)
+
+        # ── Ventas ──
+        if nombre == "ventas_resumen":
+            import ventas
+            return ventas.resumen_ventas(args.get("periodo") or "hoy")
+
+        if nombre == "ingresos_por_cliente":
+            import ventas
+            return ventas.ingresos_por_cliente(args.get("periodo") or "semana")
+
+        if nombre == "ventas_por_dia":
+            import ventas
+            return ventas.ventas_por_dia(args.get("dias") or 7)
+
+        if nombre == "progreso_alumno":
+            import academico_progreso as acp
+            info = acp.get_alumno_progress(email=args.get("email", ""),
+                                           nombre=args.get("nombre", ""))
+            if not info:
+                return ("No encontré a esa persona en el snapshot académico. "
+                        "Puede que no esté inscrita o que el snapshot esté viejo.")
+            return json.dumps(info, ensure_ascii=False)
+
+        # ── Correo ──
+        if nombre == "buscar_correos":
+            import gmail_client as gm
+            return gm.buscar_correos(args.get("consulta") or "is:unread",
+                                     args.get("limite") or 10)
+
+        if nombre == "leer_correo":
+            import gmail_client as gm
+            return gm.leer_correo(args.get("mensaje_id", ""))
+
+        if nombre == "guardar_borrador":
+            import gmail_client as gm
+            return gm.guardar_borrador(
+                para=args.get("para", ""),
+                asunto=args.get("asunto", ""),
+                texto=args.get("texto", ""),
+                responder_a_id=args.get("responder_a_id", ""),
+            )
+
+        if nombre == "enviar_correo":
+            import gmail_client as gm
+            # La guardia vive aquí además de en el prompt: si el modelo se
+            # inventa confirmado=true, esto no lo salva — pero si simplemente
+            # lo olvida, sí. Es la misma política que enviar_mensaje_a_contacto.
+            return gm.enviar_correo(
+                para=args.get("para", ""),
+                asunto=args.get("asunto", ""),
+                texto=args.get("texto", ""),
+                confirmado=bool(args.get("confirmado")),
+                responder_a_id=args.get("responder_a_id", ""),
+            )
+
+        # ── Reuniones ──
+        if nombre == "ultimas_reuniones":
+            import fathom_client as fa
+            return fa.ultimas_reuniones(args.get("dias") or 7, args.get("limite") or 10)
+
+        if nombre == "resumen_reunion":
+            import fathom_client as fa
+            return fa.resumen_reunion(args.get("busqueda") or "", args.get("dias") or 14)
 
         # ── Irreversible ──
         if nombre == "enviar_mensaje_a_contacto":
