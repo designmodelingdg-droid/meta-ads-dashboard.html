@@ -24,6 +24,7 @@ gmail_client.py      Correo: buscar, leer, borradores y enviar (mismo OAuth)
 clickup_client.py    Tareas para el equipo: 6 personas y 12 listas reales
 ventas.py            Ventas e ingresos: Stripe (dinero) + GHL (inscritos), sin mezclarlos
 fathom_client.py     Resúmenes y tareas de las reuniones que graba Fathom
+asistente_wa.py      Canal privado por WhatsApp de Meta, sin pasar por GHL
 panorama.py          Agrega agenda, tareas, GHL, Meta Ads y académico en un solo texto
 recordatorios.py     Avisos proactivos por WhatsApp (reuniones, vencimientos)
 BLUEPRINT.md         La especificación completa (metodología de the-architect)
@@ -31,8 +32,25 @@ INTEGRACION.md       El parche exacto sobre server.py y la prueba end-to-end
 GUIA-MONTAJE.md      Los 15 minutos de Google Cloud que solo puedes hacer tú
 ```
 
-Los ocho `.py` van a la **raíz** de `designmodelingdg-droid/dma-sales-assistant`,
+Los nueve `.py` van a la **raíz** de `designmodelingdg-droid/dma-sales-assistant`,
 junto a `server.py`. Aquí viven versionados como documentación viva del agente.
+
+## Dónde vive la conversación — y quién la lee
+
+Vale la pena tenerlo claro, porque no es obvio y tiene consecuencias:
+
+| Canal | Ruta | Quién puede leerla |
+|---|---|---|
+| **Por GHL** (el de hoy) | Dayana → número del bot → GHL → asistente | **Todo el equipo con acceso al CRM** |
+| **Privado** (`asistente_wa.py`) | Dayana → número aparte → Meta → asistente | Solo ella |
+
+El asistente no corre "en" un número: corre en el del bot, y ella le escribe. Por
+eso cambiar de teléfono no cambia nada — el registro lo genera el canal, no quien
+escribe. Y mientras el canal sea GHL, su agenda, su correo y sus cifras quedan
+guardados como una conversación más del CRM.
+
+El canal privado está construido y desplegado, pero **apagado** hasta que exista
+un número dedicado en la WhatsApp Cloud API de Meta.
 
 ## Cómo se ve usándolo
 
@@ -114,6 +132,7 @@ mergeados en el repo del bot:
 | *"el ingreso de cada cliente por día y por semana"* | `ingresos_por_cliente` y `ventas_por_dia` |
 | *"que pueda leer y escribir los correos"* | `gmail_client.py` — ante la duda guarda **borrador**, no envía |
 | *"que entre a las reuniones con Fathom y Zoom y me dé un resumen"* | No hizo falta integrar Zoom: **Fathom ya entra sola** a Zoom, Meet y Teams. Solo faltaba leerla |
+| *"¿no hay forma de que corra con mi número personal y no el de la empresa?"* | `asistente_wa.py` — la pregunta destapó que la conversación entera vivía en GHL a la vista del equipo. Cambiar de teléfono no lo arreglaba; había que salir de GHL |
 
 > **Diagnóstico.** Si el asistente no responde, `/asistente-diag?secret=XXX`
 > dice si el modelo contesta, si el tool use funciona y si Google y ClickUp
