@@ -136,3 +136,28 @@ Métricas reales (IG Insights). Confirman y afinan la estrategia:
 - Todo hook de pregunta debe tocar un **dolor o duda real**, no trivia.
 - El **humor va en reel**, no en post plano.
 - Cerrar SIEMPRE con pregunta directa + CTA de comentar (las de 0 comentarios no lo tenían con fuerza).
+
+---
+
+## Actualización 2026-07-29 — el mes de agosto viene desarrollado pieza por pieza
+
+Hasta ahora el calendario decía *qué* publicar. Desde hoy dice también **exactamente qué escribir y qué mostrar** en cada pieza, para que no haya que inventar nada al momento de producir.
+
+**Qué hay nuevo:**
+
+| Archivo | Qué contiene |
+|---|---|
+| `matriz/calendario-agosto.json` | El orden del mes: fecha → id de la pieza, formato, redes y por qué va ahí. **Es la fuente que debe leer la app.** |
+| `matriz/guiones-completos.json` | El contenido palabra por palabra de las 41 piezas: hook, guion de reel segundo a segundo, texto de cada diapositiva **con su dirección de imagen**, caption completo, CTA por red, prompt para generar las imágenes y copy de los anuncios de pauta. |
+| `entregables/Matriz-Contenido-Agosto-2026-DMA.docx` | Todo lo anterior en Word, listo para el equipo. Se genera con `node scripts/build_matriz_docx.js` — **no se edita a mano**, se regenera. |
+
+**Lo que se sumó de contenido:**
+
+1. **Tres piezas de ACERO** (Mié 20 post de conexiones, Sáb 23 blog de las 5 verificaciones, Mié 27 carrusel de sobredimensionamiento). Motivo: ACERO trae **1,086 leads con CPL $0.45–$0.61** en pauta y el orgánico casi no lo cubría. Ver `analisis-campanas.md`.
+2. **Tres anuncios de pauta con el copy escrito** (réplica del formato IMG2 para ACERO, el geo-split y el Máster por WhatsApp API). Todos a WhatsApp: la única campaña que fue a landing hizo 1 lead a $164.64.
+3. **Un video largo de YouTube** con guion por capítulos, título SEO, descripción y miniatura — de una sola grabación salen el video, el Short y el carrusel del Lun 4.
+4. **Dirección de imagen diapositiva por diapositiva** en los carruseles del mes: ya no dice solo el texto, dice qué se ve en cada slide.
+
+**Regla que se mantiene:** el contenido de valor (~70%) abre conversación y nunca pone precio; la venta y la pauta (~30%) van a WhatsApp y nunca a landing.
+
+**Sigue pendiente de Dayana:** el caso de alumno (Vie 22), los datos de la conferencia (Sáb 30) y el nuevo lead magnet BIM+IA (Mié 13 — mientras tanto va la pieza suplente ya escrita).

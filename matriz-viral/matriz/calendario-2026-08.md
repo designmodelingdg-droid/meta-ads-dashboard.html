@@ -24,6 +24,9 @@ En LinkedIn: pregunta abierta o DM (nunca "comenta la palabra"). En TikTok: "lin
 **Leyenda:** 🎯 núcleo BIM/IA · 🔩 ACERO · 🎁 lead magnet · 📝 blog · 👥 comunidad · 🏛️ empresa/novedades · *(guion)* = guion listo.
 
 📄 **Versión en Word para el equipo:** `matriz-viral/entregables/Matriz-Contenido-Agosto-2026-DMA.docx`
+Desde el **2026-07-29** ese documento trae el **desarrollo completo de cada pieza**: guion segundo a segundo de los reels, texto y dirección de imagen de cada diapositiva de los carruseles, descripción de los posts planos, copy de los anuncios de pauta y adaptación a cada red. Se regenera con `node scripts/build_matriz_docx.js`.
+
+🔗 **Fuente de datos (la que lee la app):** `matriz/calendario-agosto.json` (orden del mes, fecha → id de pieza) + `matriz/guiones-completos.json` (contenido palabra por palabra). El Word se genera de ahí; no se edita a mano.
 
 ---
 
@@ -41,9 +44,9 @@ En LinkedIn: pregunta abierta o DM (nunca "comenta la palabra"). En TikTok: "lin
 | Fecha | Eje | Formato | Idea / Hook | Redes |
 |---|---|---|---|---|
 | Lun 11 | 🎯 | **REEL** | "Le pedí a la IA que coordinara un modelo BIM. Mira dónde falló." *(guion ia-coordina-modelo-bim)* | IG + TikTok + **FB** |
-| Mié 13 | 🎁 | **Post plano** | **Nuevo lead magnet / recurso gratis** — ej. checklist de coordinación BIM o plantilla Revit *(por definir: dime cuál)* · CTA palabra clave | IG + **FB** |
+| Mié 13 | 🎁 | **Post plano** | **Nuevo lead magnet / recurso gratis** — ej. checklist de coordinación BIM o plantilla Revit *(por definir: dime cuál)* · CTA palabra clave · **suplente listo:** reel "De modelador a BIM Manager" *(guion venta-bim-manager)* | IG + **FB** |
 | Vie 15 | 📝 | **Post + LinkedIn largo** | Blog "IA en BIM: qué automatizar y qué NO" *(guion blog-ia-automatizar)* · cierre con pregunta | **LinkedIn** + IG |
-| Sáb 16 | 🎯 | **Carrusel** | "Esto parece un render de 4h. Lo hizo una IA en 10 seg" *(guion mito-render)* — **re-publicar con pregunta de cierre** ("¿lo usarías en tus entregas?") | IG + **FB** |
+| Sáb 16 | 🎯 | **Carrusel** | "Esto parece un render de 4h. Lo hizo una IA en 10 seg" *(guion mito-render)* — **re-publicar con pregunta de cierre** ("¿lo usarías en tus entregas?") | IG + **FB** · LinkedIn · TikTok |
 
 ## Semana 3 (17–23 ago)
 

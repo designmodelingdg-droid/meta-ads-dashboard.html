@@ -19,6 +19,7 @@ on:
     paths:
       - matriz-viral/matriz/matriz.json
       - matriz-viral/matriz/guiones-completos.json
+      - matriz-viral/matriz/calendario-agosto.json
       - matriz-viral/matriz/competencia.json
       - calculadora-zapatas/**
   workflow_dispatch: {}                      # permite correrla a mano desde la pestaña Actions
@@ -46,6 +47,8 @@ jobs:
           cp matriz-viral/matriz/matriz.json public/matriz.json
           # Contenido COMPLETO de cada pieza (para que la app no invente)
           cp matriz-viral/matriz/guiones-completos.json public/guiones-completos.json
+          # Orden de publicación del mes (fecha -> id de pieza)
+          cp matriz-viral/matriz/calendario-agosto.json public/calendario-agosto.json 2>/dev/null || true
           # Radar del sector (competencia)
           cp matriz-viral/matriz/competencia.json public/competencia.json 2>/dev/null || true
           # Lead magnet: landing + calculadora de zapatas
@@ -59,7 +62,7 @@ jobs:
           <body style="font-family:system-ui;max-width:640px;margin:40px auto;padding:0 16px;color:#132433">
           <h1>Design Modeling · datos de contenido</h1>
           <p>Matriz de contenido viral (JSON, legible por máquina):</p>
-          <p><a href="./matriz.json"><code>matriz.json</code></a> · <a href="./guiones-completos.json"><code>guiones-completos.json</code></a> (contenido completo de cada pieza)</p>
+          <p><a href="./matriz.json"><code>matriz.json</code></a> · <a href="./guiones-completos.json"><code>guiones-completos.json</code></a> (contenido completo de cada pieza) · <a href="./calendario-agosto.json"><code>calendario-agosto.json</code></a> (orden de publicación del mes)</p>
           <p>Lead magnet: <a href="./calculadora-zapatas/">Calculadora de Zapatas</a></p>
           <p style="color:#5a6b7b">Se actualiza solo cuando cambia la matriz en el repo.</p>
           </body>
