@@ -1,7 +1,7 @@
 {
- "generado": "2026-07-23",
- "nota": "Contenido COMPLETO de cada pieza (hook, slides palabra por palabra, guion de reel, caption y CTA por red). La app debe leer ESTE archivo para generar el post correcto sin inventar.",
- "total": 34,
+ "generado": "2026-07-29",
+ "nota": "Contenido COMPLETO de cada pieza (hook, slides palabra por palabra con su dirección visual, guion de reel segundo a segundo, caption, CTA por red y copy de pauta). La app debe leer ESTE archivo para generar el post correcto sin inventar.",
+ "total": 41,
  "piezas": [
   {
    "id": "jul-mito-render-ia",
@@ -14,31 +14,38 @@
    "slides": [
     {
      "n": 1,
-     "texto": "Esto parece un render de 4 horas. Lo hizo una IA en 10 segundos. Desliza →"
+     "texto": "Esto parece un render de 4 horas. Lo hizo una IA en 10 segundos. Desliza →",
+     "visual": "Portada. El render final a pantalla completa, con velo azul y el título encima. La imagen tiene que verse cara — ese es el gancho."
     },
     {
      "n": 2,
-     "texto": "Partí de esto: un boceto a mano.  (poner imagen del boceto real)"
+     "texto": "Partí de esto: un boceto a mano.  (poner imagen del boceto real)",
+     "visual": "IMAGEN REAL: foto del boceto a mano sobre la mesa. Sin filtros, que se note que es tuyo. Texto corto arriba."
     },
     {
      "n": 3,
-     "texto": "Le describí a una IA de render el estilo que quería."
+     "texto": "Le describí a una IA de render el estilo que quería.",
+     "visual": "Captura del prompt escrito en la herramienta de IA. Que se lea. Texto explicativo debajo."
     },
     {
      "n": 4,
-     "texto": "Esto devolvió. En 10 segundos.  (poner el render generado)"
+     "texto": "Esto devolvió. En 10 segundos.  (poner el render generado)",
+     "visual": "IMAGEN REAL: el render generado, a pantalla completa. Etiqueta naranja «10 segundos» en una esquina."
     },
     {
      "n": 5,
-     "texto": "Sin modelar. Sin texturas manuales. Sin horas de V-Ray."
+     "texto": "Sin modelar. Sin texturas manuales. Sin horas de V-Ray.",
+     "visual": "Tres tachones en naranja sobre fondo azul: «modelar ❌ · texturas ❌ · V-Ray ❌». Muy visual, poco texto."
     },
     {
      "n": 6,
-     "texto": "La IA NO diseñó. El diseño y el criterio son tuyos. Solo te quitó las horas de render."
+     "texto": "La IA NO diseñó. El diseño y el criterio son tuyos. Solo te quitó las horas de render.",
+     "visual": "Slide de mensaje. Texto grande centrado, «la IA NO diseñó» destacado. Sin imagen."
     },
     {
      "n": 7,
-     "texto": "¿Quieres dominar la IA aplicada a BIM? Comenta “BIM” o “IA”."
+     "texto": "¿Quieres dominar la IA aplicada a BIM? Comenta “BIM” o “IA”.",
+     "visual": "Cierre. Fondo naranja invertido, CTA con BIM/IA en recuadro."
     }
    ],
    "caption": "Le subí un boceto a mano a una IA de render arquitectónico, le puse el estilo que quería, y esto devolvió. En 10 segundos. Sin modelar, sin texturas, sin V-Ray.\n\nOjo: la IA NO diseñó nada. El diseño, la intención y el criterio siguen siendo tuyos. Solo te quitó las horas de renderizar.\n\n💬 Comenta “BIM” o “IA” y te cuento cómo dominar estas herramientas aplicadas a BIM.\n\n#BIM #IA #Revit #RenderIA #Arquitectura #InteligenciaArtificial #DesignModelingDG",
@@ -52,16 +59,12 @@
   },
   {
    "id": "jul-dialogo-arqui-inge",
-   "titulo": "Diálogo Arqui vs Inge sobre la IA (meme)",
-   "formato": "post",
+   "titulo": "Diálogo Arqui vs Inge sobre la IA (humor)",
+   "formato": "reel",
    "red_principal": "instagram",
    "eje": "NUCLEO-IA",
    "pilar": "Educativo",
    "hook": "—La IA me va a quitar el trabajo. —A ti te reemplaza cualquier plantilla de Pinterest.",
-   "imagen": {
-    "texto_en_imagen": "— La IA me va a quitar el trabajo.\n— A ti te reemplaza cualquier plantilla de Pinterest 😅",
-    "concepto": "Dos burbujas de chat (o dos personajes: arquitecto / ingeniero), estilo meme limpio, fondo azul marca."
-   },
    "caption": "El chiste tiene fondo: la IA no reemplaza al que tiene criterio. Reemplaza al que no lo tiene. En BIM+IA pasa igual — la herramienta te da velocidad; el criterio profesional lo pones tú.\n\n💬 ¿De qué lado estás? Comenta “BIM” o “IA” 👇\n\n#BIM #IA #Arquitectura #Ingeniería #InteligenciaArtificial #DesignModelingDG",
    "cta_por_red": {
     "instagram": "Comenta “BIM” o “IA” y te mando la info por DM.",
@@ -69,7 +72,45 @@
     "linkedin": "Escuché este chiste entre un arqui y un inge sobre la IA, y tiene una verdad incómoda para nuestra profesión. ¿Qué opinan?",
     "youtube": "Todo el paso a paso en el video · link en la descripción."
    },
-   "prompt_imagenes": "Imagen vertical 4:5, fondo azul marino #0E2438, acento naranja #EE8A3C, estilo minimalista tipo chat. Dos burbujas con: “— La IA me va a quitar el trabajo.” y “— A ti te reemplaza cualquier plantilla de Pinterest 😅”. Abajo-izq “DG · @design_modeling_dg”. Sin marcas de agua."
+   "prompt_imagenes": "SOLO para la versión meme de Facebook (el principal va en video). Imagen vertical 4:5, fondo azul marino #0E2438, acento naranja #EE8A3C, estilo minimalista tipo chat. Dos burbujas con: “— La IA me va a quitar el trabajo.” y “— A ti te reemplaza cualquier plantilla de Pinterest 😅”. Abajo-izq “DG · @design_modeling_dg”. Sin marcas de agua.",
+   "notas_produccion": "VA EN VIDEO (el meme estático ya se probó: 1,321 views contra 4,700+ del humor en reel). Puede grabarse con Dayana haciendo ambas voces y corte rápido, o con dos personas del equipo. Ritmo ping-pong, sin pausas: el chiste depende de la velocidad del intercambio, no de la explicación. Sin música de fondo que compita con el diálogo — el audio propio ES el hook. Subtítulos quemados obligatorios. Duración total 15-20s.",
+   "guion_reel": [
+    {
+     "tiempo": "0-4s",
+     "accion": "PERSONAJE 1 (arqui) a cámara, plano medio. Corte seco, sin intro.",
+     "voz": "ARQUI: «La inteligencia artificial me va a quitar el trabajo.»"
+    },
+    {
+     "tiempo": "4-7s",
+     "accion": "Corte al PERSONAJE 2 (inge). Cambio de encuadre/fondo para que se lea el cambio.",
+     "voz": "INGE: «A ti no te va a quitar el trabajo la IA.»"
+    },
+    {
+     "tiempo": "7-10s",
+     "accion": "Vuelta al arqui, gesto de extrañeza.",
+     "voz": "ARQUI: «¿En serio? ¿Por qué?»"
+    },
+    {
+     "tiempo": "10-14s",
+     "accion": "Corte al inge. El remate: aquí NO hay pausa antes del chiste.",
+     "voz": "INGE: «Porque a ti te reemplaza cualquier plantilla de Pinterest.»"
+    },
+    {
+     "tiempo": "14-18s",
+     "accion": "Texto en pantalla sobre fondo azul marca, sin narración.",
+     "voz": "TEXTO: «La IA no reemplaza al que tiene criterio. Reemplaza al que no lo tiene.» / «¿Tú de qué lado estás? Comenta BIM o IA 👇»"
+    }
+   ],
+   "meme_alt": {
+    "texto_en_imagen": "— La IA me va a quitar el trabajo.\n— A ti te reemplaza cualquier plantilla de Pinterest 😅",
+    "concepto": "Dos burbujas de chat (o dos personajes 🧑‍🎨 / 👷), estilo meme limpio, fondo azul marca. Solo para Facebook, donde el estático sí circula."
+   },
+   "adaptacion_redes": {
+    "tiktok": "Red ideal para esta pieza: diálogo rápido, audio propio, corte ping-pong. El humor es nativo de TikTok. CTA «link en bio».",
+    "facebook": "Publicar el reel; si se quiere reforzar, acompañar con la versión meme estática (arriba) en un segundo post.",
+    "linkedin": "Menos meme, más insight: «Escuché este chiste entre un arqui y un inge sobre la IA. Y tiene una verdad incómoda para nuestra profesión…» + cierre con pregunta abierta. Sin pedir comentar la palabra.",
+    "youtube": "Short, tal cual el reel. El humor rinde bien en Shorts."
+   }
   },
   {
    "id": "jul-listicle-revit-ia",
@@ -82,27 +123,33 @@
    "slides": [
     {
      "n": 1,
-     "texto": "Tu Revit ya tiene IA adentro. Y probablemente nunca la activaste. 3 funciones →"
+     "texto": "Tu Revit ya tiene IA adentro. Y probablemente nunca la activaste. 3 funciones →",
+     "visual": "Portada. Captura de la interfaz de Revit desenfocada al fondo, velo azul encima. Título en 3 líneas, «IA» en naranja. Flecha «3 funciones →»."
     },
     {
      "n": 2,
-     "texto": "01 · Genera detalles constructivos — con Autodesk AI Assist le describes el detalle y te arma la primera versión."
+     "texto": "01 · Genera detalles constructivos — con Autodesk AI Assist le describes el detalle y te arma la primera versión.",
+     "visual": "Número 01 gigante en naranja. Captura real del panel de Autodesk AI Assist. Texto a la derecha, dos líneas máximo."
     },
     {
      "n": 3,
-     "texto": "02 · Detecta y RESUELVE choques — ya no solo dice “aquí hay un choque”: te sugiere la solución más común según miles de proyectos."
+     "texto": "02 · Detecta y RESUELVE choques — ya no solo dice “aquí hay un choque”: te sugiere la solución más común según miles de proyectos.",
+     "visual": "Número 02. Captura de una vista de coordinación con dos elementos en choque resaltados en rojo/naranja. Texto debajo."
     },
     {
      "n": 4,
-     "texto": "03 · Propone distribución en planta — le das los m² del programa y te da 3 layouts en segundos."
+     "texto": "03 · Propone distribución en planta — le das los m² del programa y te da 3 layouts en segundos.",
+     "visual": "Número 03. Tres miniaturas de planta lado a lado (3 layouts) con un «3 opciones en segundos» encima."
     },
     {
      "n": 5,
-     "texto": "Ninguna te da el proyecto terminado. Te dan el primer borrador. Tú pones el criterio."
+     "texto": "Ninguna te da el proyecto terminado. Te dan el primer borrador. Tú pones el criterio.",
+     "visual": "Slide de mensaje, sin número ni captura. Solo texto grande centrado sobre azul. Es el slide del criterio: tiene que respirar."
     },
     {
      "n": 6,
-     "texto": "¿Cuál no conocías? Comenta “BIM” o “IA” y te mando cómo activarlas paso a paso."
+     "texto": "¿Cuál no conocías? Comenta “BIM” o “IA” y te mando cómo activarlas paso a paso.",
+     "visual": "Cierre. Fondo naranja invertido, texto azul. Palabras BIM e IA en recuadro. Logo DG abajo."
     }
    ],
    "caption": "Tu Revit ya trae IA y poca gente la activó. Estas son 3 funciones que ya podrías usar:\n1. Genera detalles constructivos (Autodesk AI Assist).\n2. Detecta y sugiere la solución a los choques entre disciplinas.\n3. Propone opciones de distribución en planta en segundos.\n\nNinguna te da el proyecto: te da el borrador. El criterio lo pones tú.\n\n💬 ¿Cuál no conocías? Comenta “BIM” o “IA” y te mando cómo activarlas.\n\n#Revit #BIM #IA #Autodesk #InteligenciaArtificial #DesignModelingDG",
@@ -125,31 +172,38 @@
    "slides": [
     {
      "n": 1,
-     "texto": "5 errores al usar IA en tus proyectos BIM. El #3 te puede costar el proyecto → guárdalo."
+     "texto": "5 errores al usar IA en tus proyectos BIM. El #3 te puede costar el proyecto → guárdalo.",
+     "visual": "Portada. Título en 3 líneas, «#3» en naranja grande. Fondo azul liso, sin captura — el hook es el texto."
     },
     {
      "n": 2,
-     "texto": "01 · Confiar en la primera respuesta. La IA te da un borrador, no la verdad. Siempre verifícalo."
+     "texto": "01 · Confiar en la primera respuesta. La IA te da un borrador, no la verdad. Siempre verifícalo.",
+     "visual": "Número 01 en naranja. Ícono/ilustración de un chat de IA con la primera respuesta marcada con ⚠️. Texto a la derecha."
     },
     {
      "n": 3,
-     "texto": "02 · Pedirle criterio en vez de velocidad. La IA acelera las tareas; las decisiones son tuyas."
+     "texto": "02 · Pedirle criterio en vez de velocidad. La IA acelera las tareas; las decisiones son tuyas.",
+     "visual": "Número 02. Split simple: reloj (velocidad) en naranja vs cerebro (criterio) en blanco. Texto debajo."
     },
     {
      "n": 4,
-     "texto": "03 · No revisar contra la norma. La IA no conoce tu normativa local. (Como pasó con la losa: falló en el criterio, no en la fórmula.)"
+     "texto": "03 · No revisar contra la norma. La IA no conoce tu normativa local. (Como pasó con la losa: falló en el criterio, no en la fórmula.)",
+     "visual": "Número 03. Portada estilizada de una norma/código sobre el azul, con un ❌ naranja encima. Este es el slide clave: dale el mayor peso visual."
     },
     {
      "n": 5,
-     "texto": "04 · Meter datos sin contexto. Basura entra, basura sale. Dale el contexto real del proyecto."
+     "texto": "04 · Meter datos sin contexto. Basura entra, basura sale. Dale el contexto real del proyecto.",
+     "visual": "Número 04. Esquema «basura entra → basura sale»: dos cajas conectadas por flecha naranja."
     },
     {
      "n": 6,
-     "texto": "05 · No documentar lo que la IA hizo. Si no puedes trazar la decisión, no es defendible ante un cliente o una revisión."
+     "texto": "05 · No documentar lo que la IA hizo. Si no puedes trazar la decisión, no es defendible ante un cliente o una revisión.",
+     "visual": "Número 05. Ícono de documento/trazabilidad con una firma. Texto sobre la responsabilidad."
     },
     {
      "n": 7,
-     "texto": "¿Cuál has cometido? Comenta “BIM” o “IA” y te mando cómo usar la IA con criterio."
+     "texto": "¿Cuál has cometido? Comenta “BIM” o “IA” y te mando cómo usar la IA con criterio.",
+     "visual": "Cierre. Fondo naranja invertido. La pregunta «¿Cuál has cometido?» arriba y el CTA abajo con BIM/IA en recuadro."
     }
    ],
    "caption": "La IA en BIM es un acelerador brutal… si sabes usarla. Estos son los 5 errores que veo más seguido (y que te pueden costar caro):\n1. Confiar en la primera respuesta.\n2. Pedirle criterio en vez de velocidad.\n3. No revisar contra la norma.\n4. Meter datos sin contexto.\n5. No documentar lo que la IA hizo.\n\nLa regla de fondo: la IA te da el borrador; el criterio profesional lo pones tú.\n\n💬 Comenta “BIM” o “IA” y te mando cómo integrarla con criterio.\n\n#BIM #IA #Revit #BIMManager #InteligenciaArtificial #DesignModelingDG",
@@ -211,31 +265,38 @@
    "slides": [
     {
      "n": 1,
-     "texto": "¿Qué hace un BIM Manager que la IA NUNCA podrá? (spoiler: es lo que te hace irremplazable) →"
+     "texto": "¿Qué hace un BIM Manager que la IA NUNCA podrá? (spoiler: es lo que te hace irremplazable) →",
+     "visual": "Portada. Silueta de una persona frente a una pantalla, en línea naranja. Título en 3 líneas, «NUNCA» destacado."
     },
     {
      "n": 2,
-     "texto": "La IA modela rápido, detecta choques y saca cantidades… pero NO decide."
+     "texto": "La IA modela rápido, detecta choques y saca cantidades… pero NO decide.",
+     "visual": "Slide de contexto. Tres íconos en fila (modelar · detectar · cuantificar) con ✅, y debajo «pero NO decide» en naranja grande."
     },
     {
      "n": 3,
-     "texto": "01 · Prioriza. Qué se resuelve primero cuando todo es ‘urgente’. Eso es criterio, no cálculo."
+     "texto": "01 · Prioriza. Qué se resuelve primero cuando todo es ‘urgente’. Eso es criterio, no cálculo.",
+     "visual": "Número 01 · PRIORIZA. Ilustración de una lista con tres ítems y una mano marcando cuál va primero."
     },
     {
      "n": 4,
-     "texto": "02 · Negocia. Coordina personas y disciplinas con intereses distintos. La IA no se sienta en la reunión."
+     "texto": "02 · Negocia. Coordina personas y disciplinas con intereses distintos. La IA no se sienta en la reunión.",
+     "visual": "Número 02 · NEGOCIA. Mesa de reunión vista desde arriba, tres siluetas. Texto a la derecha."
     },
     {
      "n": 5,
-     "texto": "03 · Responde. Firma, defiende y asume la decisión ante el cliente. La IA no firma nada."
+     "texto": "03 · Responde. Firma, defiende y asume la decisión ante el cliente. La IA no firma nada.",
+     "visual": "Número 03 · RESPONDE. Una firma manuscrita en naranja sobre el azul. Es el slide más fuerte: dale espacio."
     },
     {
      "n": 6,
-     "texto": "La IA es tu mejor asistente. El BIM Manager sigue siendo quien manda."
+     "texto": "La IA es tu mejor asistente. El BIM Manager sigue siendo quien manda.",
+     "visual": "Slide de mensaje. Texto grande centrado. Sin ilustración."
     },
     {
      "n": 7,
-     "texto": "¿De acuerdo? Comenta “BIM” o “IA” y te cuento cómo formarte para ese rol."
+     "texto": "¿De acuerdo? Comenta “BIM” o “IA” y te cuento cómo formarte para ese rol.",
+     "visual": "Cierre. Fondo naranja invertido, «¿De acuerdo?» arriba y el CTA abajo."
     }
    ],
    "caption": "La IA hace en minutos lo que antes tomaba horas en BIM. Entonces… ¿te reemplaza? No. Reemplaza las TAREAS, no el CRITERIO. Un BIM Manager prioriza, negocia y responde — tres cosas que ninguna IA puede firmar por ti.\n\n💬 Comenta “BIM” o “IA” y te cuento cómo dar el salto a ese rol.\n\n#BIMManager #BIM #IA #Liderazgo #DesignModelingDG",
@@ -279,27 +340,33 @@
    "slides": [
     {
      "n": 1,
-     "texto": "3 señales de que tu oficina YA necesita BIM + IA (la #2 te está costando plata) →"
+     "texto": "3 señales de que tu oficina YA necesita BIM + IA (la #2 te está costando plata) →",
+     "visual": "Portada. Fondo azul liso, título en 3 líneas con «3 SEÑALES» grande y «#2» en naranja. Sin imagen: el hook es el texto."
     },
     {
      "n": 2,
-     "texto": "01 · Repites tareas que una máquina haría igual: renders, cantidades, documentación."
+     "texto": "01 · Repites tareas que una máquina haría igual: renders, cantidades, documentación.",
+     "visual": "Número 01 en naranja. Ilustración de un reloj con tres tareas repetidas en bucle (flecha circular). Texto a la derecha."
     },
     {
      "n": 3,
-     "texto": "02 · Descubres los choques en OBRA, no en el modelo. (Eso cuesta miles.)"
+     "texto": "02 · Descubres los choques en OBRA, no en el modelo. (Eso cuesta miles.)",
+     "visual": "Número 02. Split: a la izquierda un modelo con el choque visible; a la derecha una foto de obra con el mismo choque marcado en rojo. Este es el slide que duele: dale el mayor peso."
     },
     {
      "n": 4,
-     "texto": "03 · Tu competencia entrega más rápido y no sabes cómo lo hacen."
+     "texto": "03 · Tu competencia entrega más rápido y no sabes cómo lo hacen.",
+     "visual": "Número 03. Dos barras de tiempo de entrega lado a lado — la de la competencia mucho más corta, en naranja."
     },
     {
      "n": 5,
-     "texto": "Si te pasan 2 de 3, no es falta de gente — es falta de flujo BIM + IA."
+     "texto": "Si te pasan 2 de 3, no es falta de gente — es falta de flujo BIM + IA.",
+     "visual": "Slide de mensaje. Texto grande centrado sobre azul, con «no es falta de gente» tachado y «es falta de flujo» destacado."
     },
     {
      "n": 6,
-     "texto": "¿Cuántas te pasan? Comenta “BIM” o “IA” y te ayudo a cerrarlas."
+     "texto": "¿Cuántas te pasan? Comenta “BIM” o “IA” y te ayudo a cerrarlas.",
+     "visual": "Cierre. Fondo naranja invertido (naranja de fondo, texto azul). «¿Cuántas te pasan?» arriba y el CTA con BIM/IA en recuadro."
     }
    ],
    "caption": "No es que necesites más gente. Necesitas mejor flujo. Estas son las 3 señales de que tu oficina ya está lista para BIM + IA:\n1. Repites tareas que una máquina haría igual.\n2. Descubres los choques en obra, no en el modelo.\n3. La competencia entrega más rápido.\n\n💬 Comenta “BIM” o “IA” y te cuento por dónde empezar.\n\n#BIM #IA #Productividad #Arquitectura #Ingeniería #DesignModelingDG",
@@ -309,7 +376,7 @@
     "linkedin": "3 señales de que una oficina ya necesita BIM + IA. ¿Cuántas ven en la suya?",
     "youtube": "Todo el paso a paso en el video · link en la descripción."
    },
-   "prompt_imagenes": "Carrusel de marca. Números 01/02/03 naranja. Un slide por mensaje."
+   "prompt_imagenes": "Carrusel IG 4:5 (1080×1350), 6 slides. Fondo azul marino #0E2438, acento naranja #EE8A3C, texto blanco. Tipografía sans gruesa. Números 01/02/03 gigantes en naranja. Estética técnica y limpia, sin fotos de stock. Firma abajo-izq «DG · @design_modeling_dg», número de slide arriba-der. Un slide por mensaje. Español, sin marcas de agua."
   },
   {
    "id": "ago-coordinador-vs-a-mano",
@@ -346,7 +413,8 @@
     "tiktok": "Comenta “BIM” o “IA” · link en bio.",
     "linkedin": "Sigo viendo oficinas modelando a mano en 2026… ¿por qué creen que cuesta tanto dar el salto a BIM?",
     "youtube": "Todo el paso a paso en el video · link en la descripción."
-   }
+   },
+   "notas_produccion": "VA EN VIDEO, no meme estático. Split o dos POV con cambio de vestuario/luz: el de «a mano» en penumbra con café y desorden; el coordinador BIM con luz limpia y pantalla ordenada. Subtítulos quemados. 15s. El meme plano queda solo como alternativa para Facebook."
   },
   {
    "id": "ago-blog-ia-automatizar",
@@ -409,35 +477,43 @@
    "slides": [
     {
      "n": 1,
-     "texto": "Cómo se diseña una zapata aislada, bien. En 6 pasos → guárdalo."
+     "texto": "Cómo se diseña una zapata aislada, bien. En 6 pasos → guárdalo.",
+     "visual": "Portada. Esquema en corte de una zapata aislada con la columna, en línea blanca sobre azul. Título grande, «6 pasos» en naranja."
     },
     {
      "n": 2,
-     "texto": "01 · Cargas: empieza por las cargas de la columna (directas o por área tributaria). Todo depende de este número."
+     "texto": "01 · Cargas: empieza por las cargas de la columna (directas o por área tributaria). Todo depende de este número.",
+     "visual": "Número 01. Flechas de carga bajando por la columna. Texto a la derecha."
     },
     {
      "n": 3,
-     "texto": "02 · Suelo: saca el esfuerzo neto del suelo del estudio de suelos. Es tu límite."
+     "texto": "02 · Suelo: saca el esfuerzo neto del suelo del estudio de suelos. Es tu límite.",
+     "visual": "Número 02. Corte del terreno con la zapata apoyada y el esfuerzo del suelo señalado con flechas hacia arriba."
     },
     {
      "n": 4,
-     "texto": "03 · Área en planta: con carga y esfuerzo del suelo obtienes el área requerida → defines T×S y la altura h."
+     "texto": "03 · Área en planta: con carga y esfuerzo del suelo obtienes el área requerida → defines T×S y la altura h.",
+     "visual": "Número 03. Planta de la zapata con las cotas T×S marcadas y la altura h en el corte."
     },
     {
      "n": 5,
-     "texto": "04 · Verificaciones: cortante en 2 direcciones y punzonamiento. Aquí se cae la mayoría."
+     "texto": "04 · Verificaciones: cortante en 2 direcciones y punzonamiento. Aquí se cae la mayoría.",
+     "visual": "Número 04. Los dos mecanismos dibujados: cortante en dos direcciones y el cono de punzonamiento en naranja. Slide técnico: es el que más se guarda."
     },
     {
      "n": 6,
-     "texto": "05 · Acero: varillas, diámetro y espaciamiento en las dos direcciones."
+     "texto": "05 · Acero: varillas, diámetro y espaciamiento en las dos direcciones.",
+     "visual": "Número 05. Planta con las varillas en ambas direcciones, espaciamiento acotado."
     },
     {
      "n": 7,
-     "texto": "06 · Esquema: planta y corte. Sin esto no está diseñada, está adivinada."
+     "texto": "06 · Esquema: planta y corte. Sin esto no está diseñada, está adivinada.",
+     "visual": "Número 06. Planta + corte finales, estilo lámina de plano."
     },
     {
      "n": 8,
-     "texto": "Hicimos una calculadora GRATIS que hace estos 6 pasos en 2 minutos, desde el celular. Comenta “ZAPATA” y te la mando por DM."
+     "texto": "Hicimos una calculadora GRATIS que hace estos 6 pasos en 2 minutos, desde el celular. Comenta “ZAPATA” y te la mando por DM.",
+     "visual": "Cierre. CAPTURA REAL de la calculadora en un celular. La palabra ZAPATA en recuadro naranja. «Gratis» visible."
     }
    ],
    "caption": "🧱 Si todavía dimensionas zapatas ‘a ojo’, esto es para ti.\n\nDiseñar una zapata aislada son 6 pasos: cargas, esfuerzo del suelo, área en planta, verificaciones de cortante y punzonamiento, acero y esquema.\n\nHicimos una calculadora GRATIS que hace esos 6 pasos en 2 minutos, desde el celular. Es la misma metodología de nuestro curso de Diseño de Cimentaciones.\n\n⚠️ Herramienta de predimensionamiento — el diseño definitivo lo firma un ingeniero.\n\n💬 Comenta “ZAPATA” y te mando el enlace por DM.\n\n#Cimentaciones #Zapatas #IngenieríaEstructural #DiseñoEstructural #DesignModelingDG",
@@ -645,7 +721,8 @@
     "tiktok": "Comenta “BIM” o “IA” · link en bio.",
     "linkedin": "¿Qué habilidad creen que separa a un modelador de un BIM Manager?",
     "youtube": "Paso a paso completo en el video · link en la descripción."
-   }
+   },
+   "notas_produccion": "Cámara al frente, plano medio. Numerar 1/2/3 en pantalla grande. Ritmo rápido, nada de intro. NO mencionar precio ni «inscríbete»: el CTA solo abre conversación. 30s."
   },
   {
    "id": "ago-venta-paquete-autodesk",
@@ -757,31 +834,38 @@
    "slides": [
     {
      "n": 1,
-     "texto": "5 errores al modelar en Revit que se pagan caro en obra → guárdalo"
+     "texto": "5 errores al modelar en Revit que se pagan caro en obra → guárdalo",
+     "visual": "Portada. Captura de un modelo Revit con warnings visibles, velo azul encima. Título en 2 líneas."
     },
     {
      "n": 2,
-     "texto": "01 · Modelar sin plantilla ni estándar. Cada quien nombra distinto = caos de coordinación."
+     "texto": "01 · Modelar sin plantilla ni estándar. Cada quien nombra distinto = caos de coordinación.",
+     "visual": "Número 01. Dos árboles de proyecto lado a lado: uno ordenado (✅) y otro con nombres inventados (❌)."
     },
     {
      "n": 3,
-     "texto": "02 · No usar niveles y rejillas como base. Todo lo demás queda mal referenciado."
+     "texto": "02 · No usar niveles y rejillas como base. Todo lo demás queda mal referenciado.",
+     "visual": "Número 02. Vista de niveles y rejillas mal referenciados, con una línea roja marcando el desfase."
     },
     {
      "n": 4,
-     "texto": "03 · Familias mal hechas o pesadas. Ralentizan el modelo y meten errores."
+     "texto": "03 · Familias mal hechas o pesadas. Ralentizan el modelo y meten errores.",
+     "visual": "Número 03. Panel de familias con una marcada como pesada (MB en naranja)."
     },
     {
      "n": 5,
-     "texto": "04 · Modelar con más detalle del necesario (LOD). Pierdes horas en lo que nadie va a usar."
+     "texto": "04 · Modelar con más detalle del necesario (LOD). Pierdes horas en lo que nadie va a usar.",
+     "visual": "Número 04. Comparación de LOD: un elemento simple vs el mismo sobre-detallado."
     },
     {
      "n": 6,
-     "texto": "05 · No revisar interferencias antes de entregar. Los choques salen en obra, y cuestan miles."
+     "texto": "05 · No revisar interferencias antes de entregar. Los choques salen en obra, y cuestan miles.",
+     "visual": "Número 05. Reporte de interferencias con el conteo resaltado en naranja."
     },
     {
      "n": 7,
-     "texto": "¿Cuál cometiste? Comenta “BIM” o “IA” y te mando cómo evitarlos."
+     "texto": "¿Cuál cometiste? Comenta “BIM” o “IA” y te mando cómo evitarlos.",
+     "visual": "Cierre. Fondo naranja invertido, CTA con BIM/IA en recuadro."
     }
    ],
    "caption": "Modelar en Revit bien no es modelar bonito: es modelar coordinado. Estos 5 errores son los que más veo (y los que más caro se pagan en obra).\n\n💬 Comenta “BIM” o “IA” y te mando la guía para evitarlos.\n\n#Revit #BIM #Modelado #DesignModelingDG",
@@ -945,27 +1029,33 @@
    "slides": [
     {
      "n": 1,
-     "texto": "3 tareas de BIM que la IA ya hace por ti →"
+     "texto": "3 tareas de BIM que la IA ya hace por ti →",
+     "visual": "Portada formato documento LinkedIn (1:1 o 4:5). Título grande sobre azul, sin adornos — LinkedIn premia lo sobrio."
     },
     {
      "n": 2,
-     "texto": "01 · Documentación y cantidades: del modelo a las tablas en minutos."
+     "texto": "01 · Documentación y cantidades: del modelo a las tablas en minutos.",
+     "visual": "Número 01. Tabla de cantidades estilizada saliendo de un modelo. Texto corto."
     },
     {
      "n": 3,
-     "texto": "02 · Detección y solución de choques entre disciplinas."
+     "texto": "02 · Detección y solución de choques entre disciplinas.",
+     "visual": "Número 02. Dos elementos en choque resaltados, con una solución sugerida al lado."
     },
     {
      "n": 4,
-     "texto": "03 · Primeras versiones de detalles y familias, descritas en palabras."
+     "texto": "03 · Primeras versiones de detalles y familias, descritas en palabras.",
+     "visual": "Número 03. Un detalle constructivo dibujándose solo desde una línea de texto."
     },
     {
      "n": 5,
-     "texto": "Ninguna decide por ti. El criterio, la norma y la firma siguen siendo tuyos."
+     "texto": "Ninguna decide por ti. El criterio, la norma y la firma siguen siendo tuyos.",
+     "visual": "Slide de mensaje: «Ninguna decide por ti». Texto centrado grande, con la palabra FIRMA destacada."
     },
     {
      "n": 6,
-     "texto": "Aprender a usarlas con criterio es la especialización de esta década. Comenta “BIM” o “IA”."
+     "texto": "Aprender a usarlas con criterio es la especialización de esta década. Comenta “BIM” o “IA”.",
+     "visual": "Cierre sobrio: pregunta abierta + «escríbeme por DM». En LinkedIn NO se pide comentar la palabra."
     }
    ],
    "caption": "La IA ya hace parte de tu trabajo BIM. La ventaja no es usarla — es usarla con criterio. Eso es lo que enseña una especialización BIM + IA.\n\n💬 Comenta “BIM” o “IA” y te cuento cómo.\n\n#BIM #IA #Especialización #DesignModelingDG",
@@ -1195,6 +1285,282 @@
     ],
     "para_la_comunidad": "Mostrar el detrás de cámara real del mes e invitar a los miembros a preguntar sobre trabajo internacional.",
     "prompt_conversacion": "¿Te gustaría trabajar en proyectos internacionales? ¿Qué te frena hoy?"
+   }
+  },
+  {
+   "id": "ago-acero-conexiones",
+   "titulo": "El error #1 al diseñar conexiones en acero",
+   "formato": "post",
+   "red_principal": "instagram",
+   "eje": "NUCLEO-ACERO",
+   "pilar": "Educativo",
+   "hook": "El error #1 al diseñar conexiones en acero: tu modelo dice que está bien… y la conexión no lo sabe.",
+   "imagen": {
+    "texto_en_imagen": "EL ERROR #1 AL DISEÑAR CONEXIONES EN ACERO\n\nModelas el nudo como empotrado.\nLo construyes con dos ángulos al alma.\n\n❌ El modelo reparte momento que la conexión no puede tomar.",
+    "concepto": "Post plano 4:5. Arriba el título grande. Abajo, dos detalles de conexión lado a lado: izquierda ❌ (nudo dibujado como empotramiento perfecto en el modelo) y derecha ✅ (el detalle real: ángulos al alma = articulada). Una flecha naranja marca la diferencia. Fondo azul marca."
+   },
+   "cuerpo_desarrollado": [
+    "El error: definir la conexión DESPUÉS de correr el análisis. Se modela el nudo empotrado porque es el default, y el detalle que llega a taller es una conexión de cortante (dos ángulos o placa al alma) que no toma momento.",
+    "Qué provoca: el modelo reparte a la viga un momento negativo que en la obra nunca aparece. El momento se va al centro del vano, la viga se queda corta, las derivas reales salen mayores que las calculadas y la conexión se plastifica antes que el elemento.",
+    "También pasa al revés: modelas todo articulado y en obra sueldas alas completas. Ahí el pórtico se vuelve rígido, atrae más fuerza sísmica de la prevista y la columna recibe lo que no calculaste.",
+    "Cómo evitarlo (3 pasos): 1) Define el tipo de conexión ANTES de analizar. 2) Asigna las liberaciones en el modelo coherentes con ese detalle. 3) Verifica la rigidez rotacional real de la conexión contra la hipótesis; si queda en el medio, es semi-rígida y hay que modelarla como tal.",
+    "La regla: la conexión no es un detalle de dibujo al final — es una hipótesis de cálculo desde el principio."
+   ],
+   "caption": "El error #1 que veo al diseñar en acero no está en el perfil. Está en el nudo.\n\nSe modela la conexión como empotrada (porque es el default del programa) y en obra se construye con dos ángulos al alma. Resultado: el modelo reparte un momento que la conexión real no puede tomar. El momento se va al centro del vano, las derivas salen mayores que las calculadas y la conexión se plastifica antes que la viga.\n\nY al revés pasa igual: modelas articulado, sueldas alas completas, y el pórtico atrae más sismo del que calculaste.\n\nCómo evitarlo:\n1. Define el tipo de conexión ANTES de analizar.\n2. Asigna las liberaciones del modelo coherentes con ese detalle.\n3. Verifica la rigidez rotacional real contra la hipótesis. Si queda en el medio, es semi-rígida — y se modela así.\n\nLa conexión no es un detalle de dibujo al final. Es una hipótesis de cálculo desde el principio.\n\n💬 ¿Te ha pasado que el detalle de taller no coincidía con tu modelo? Comenta “ACERO” y te mando la guía de verificación de conexiones.\n\n#Acero #EstructurasMetálicas #Conexiones #DiseñoEstructural #IngenieríaEstructural #DesignModelingDG",
+   "cta_por_red": {
+    "instagram": "Comenta “ACERO” y te mando la info por DM.",
+    "tiktok": "Comenta “ACERO” · link en bio.",
+    "linkedin": "Pregunta abierta al gremio (en LinkedIn no se pide comentar la palabra). DM abierto para quien quiera la guía.",
+    "youtube": "Paso a paso completo en el video · link en la descripción."
+   },
+   "prompt_imagenes": "Post 4:5, fondo azul marino #0E2438, acento naranja #EE8A3C, tipografía sans gruesa, español. Título grande arriba: “El error #1 al diseñar conexiones en acero”. Debajo, dos detalles técnicos de conexión viga-columna en línea blanca sobre el azul, lado a lado, etiquetados ❌ MODELO (empotrado) y ✅ REALIDAD (dos ángulos al alma). Firma abajo-izq “DG · @design_modeling_dg”. Sin marcas de agua.",
+   "adaptacion_redes": {
+    "facebook": "Mismo post con el caption completo (Facebook admite texto largo y ahí está la mitad del alcance real).",
+    "linkedin": "Post de texto técnico sin “comenta la palabra”: mismo desarrollo + cierre «¿Ustedes definen la conexión antes o después de correr el análisis? Me interesa cómo lo manejan en sus oficinas.»",
+    "tiktok": "Versión rápida de 20s en video: mostrar el modelo con el nudo empotrado, cortar al detalle real de taller, y el remate «el modelo mintió». CTA “link en bio”.",
+    "youtube": "Encaja como capítulo dentro de un video largo de verificaciones en acero (ver blog del Sáb 23)."
+   }
+  },
+  {
+   "id": "ago-acero-sobredimensionado",
+   "titulo": "3 señales de que tu estructura de acero está sobredimensionada",
+   "formato": "carrusel",
+   "red_principal": "instagram",
+   "eje": "NUCLEO-ACERO",
+   "pilar": "Educativo",
+   "hook": "3 señales de que tu estructura de acero está sobredimensionada (la #3 te la cobra el cliente).",
+   "slides": [
+    {
+     "n": 1,
+     "texto": "3 señales de que tu estructura de acero está SOBREDIMENSIONADA. La #3 te la cobra el cliente → guárdalo",
+     "visual": "Portada. Silueta de un pórtico metálico en línea naranja sobre azul. Título en 3 líneas, la palabra SOBREDIMENSIONADA destacada. Flecha “desliza →” abajo-derecha."
+    },
+    {
+     "n": 2,
+     "texto": "01 · Usas el mismo perfil en toda la estructura. Uniformar por comodidad no es criterio: es no haber revisado la demanda real de cada elemento.",
+     "visual": "Número 01 gigante en naranja arriba-izq. Esquema de pórtico donde TODAS las vigas están marcadas con el mismo perfil (IPE 300, IPE 300, IPE 300…) en gris. Texto a la derecha."
+    },
+    {
+     "n": 3,
+     "texto": "02 · Revisaste resistencia, pero nunca derivas ni servicio. Si tu ratio demanda/capacidad vive en 0.4, no estás seguro — estás pagando acero de más.",
+     "visual": "Número 02. Captura estilizada de una tabla de ratios D/C con valores 0.38, 0.41, 0.35 resaltados en naranja. Al lado, un ícono de billete tachado."
+    },
+    {
+     "n": 4,
+     "texto": "03 · El peso de acero por m² está muy por encima del rango de tu tipo de estructura. Ese exceso lo paga el cliente en material, soldadura, montaje y cimentación.",
+     "visual": "Número 03. Barra comparativa: “tu proyecto” (barra naranja larga) vs “rango típico” (barra gris corta), con la unidad kg/m². Sin cifras inventadas: dejar el eje sin números."
+    },
+    {
+     "n": 5,
+     "texto": "Sobredimensionar también es un error de criterio. Más peso = más soldadura, más montaje, más cimentación. La estructura no es más segura: es más cara.",
+     "visual": "Slide de mensaje, sin número. Texto centrado grande. Debajo, tres íconos en línea: soldadura · grúa · zapata, con un “+$” en naranja sobre cada uno."
+    },
+    {
+     "n": 6,
+     "texto": "Qué hacer: revisa el ratio demanda/capacidad elemento por elemento, agrupa perfiles por familia (no todos iguales), y verifica derivas y servicio antes de cerrar secciones.",
+     "visual": "Checklist de 3 líneas con casillas ✅ en naranja sobre fondo azul. Tipografía más pequeña, ordenada."
+    },
+    {
+     "n": 7,
+     "texto": "¿Cuántas de las 3 te pasan? Comenta “ACERO” y te mando la guía de verificación.",
+     "visual": "Slide de cierre. Fondo naranja invertido (naranja de fondo, texto azul) para romper el patrón. La palabra ACERO en recuadro. Logo DG abajo."
+    }
+   ],
+   "caption": "Sobredimensionar no es “ir por el lado seguro”. Es no haber revisado.\n\n3 señales de que tu estructura de acero está sobredimensionada:\n\n1. Usas el mismo perfil en toda la estructura. Uniformar por comodidad no es criterio.\n2. Revisaste resistencia pero nunca derivas ni servicio. Si tus ratios demanda/capacidad viven en 0.4, no estás seguro: estás pagando acero de más.\n3. El peso de acero por m² está muy por encima del rango típico de tu tipo de estructura.\n\nY ese exceso no se queda en el perfil: se paga en soldadura, en montaje, en transporte y en cimentación. La estructura no queda más segura — queda más cara.\n\nQué hacer: revisa el ratio D/C elemento por elemento, agrupa perfiles por familia (no todos iguales) y verifica derivas y servicio antes de cerrar secciones.\n\n💬 ¿Cuántas de las 3 te pasan? Comenta “ACERO” y te mando la guía de verificación.\n\n#Acero #EstructurasMetálicas #DiseñoEstructural #IngenieríaEstructural #Optimización #DesignModelingDG",
+   "cta_por_red": {
+    "instagram": "Comenta “ACERO” y te mando la info por DM.",
+    "tiktok": "Comenta “ACERO” · link en bio.",
+    "linkedin": "Pregunta abierta al gremio (en LinkedIn no se pide comentar la palabra). DM abierto para quien quiera la guía.",
+    "youtube": "Paso a paso completo en el video · link en la descripción."
+   },
+   "prompt_imagenes": "Carrusel IG 4:5 (1080×1350), 7 slides. Fondo azul marino #0E2438, acento naranja #EE8A3C, blanco para el texto. Tipografía sans gruesa. Números 01/02/03 gigantes en naranja. Estética técnica: líneas de dibujo estructural finas, nada de fotos de stock. Firma abajo-izq “DG · @design_modeling_dg”, número de slide arriba-der (2/7). Genera un slide por mensaje. Español, sin marcas de agua.",
+   "adaptacion_redes": {
+    "facebook": "Mismo carrusel + caption completo. Publicar cuidado, no auto-repost.",
+    "linkedin": "Documento PDF con los mismos 7 slides. Copy de entrada: «Sobredimensionar no es ir por el lado seguro; es no haber revisado.» Cierre: «¿Qué rango de kg/m² manejan ustedes como referencia?» — sin pedir comentar la palabra.",
+    "tiktok": "Versión reel: leer las 3 señales sobre captura de tabla de ratios. Ritmo rápido, números en pantalla. CTA “link en bio”.",
+    "youtube": "Short con las 3 señales · alimenta el video largo de verificaciones en acero."
+   }
+  },
+  {
+   "id": "ago-blog-acero-verificaciones",
+   "titulo": "Acero: 5 verificaciones que no puedes saltarte",
+   "formato": "blog",
+   "red_principal": "linkedin",
+   "eje": "NUCLEO-ACERO",
+   "pilar": "Educativo",
+   "hook": "El perfil pasa por resistencia y aun así la estructura falla. Casi siempre es una de estas 5 verificaciones.",
+   "blog": {
+    "titulo_seo": "Acero: 5 verificaciones que no puedes saltarte (guía 2026)",
+    "estructura": [
+     "Intro: el elemento “pasa” por resistencia y aun así el diseño está mal. Casi siempre falta una de estas cinco.",
+     "01 · Clasificación de la sección y pandeo local. Relación ancho/espesor de ala y alma: si la sección es esbelta, la capacidad no es la del cálculo plástico. Se revisa ANTES de asignar perfiles.",
+     "02 · Pandeo lateral-torsional en vigas. La longitud no arriostrada manda: sin arriostramiento lateral efectivo, la viga falla muy por debajo de su momento nominal. Revisar dónde está el arriostramiento REAL, no el que se supuso.",
+     "03 · Derivas y efectos de segundo orden (P-Δ). El acero es flexible: en muchos edificios metálicos la deriva gobierna sobre la resistencia. Si no se corrió el análisis de segundo orden, el diseño está incompleto.",
+     "04 · Coherencia entre conexión y modelo. La conexión es una hipótesis de cálculo, no un detalle de dibujo. Empotrado en el modelo debe ser empotrado en el taller (y viceversa).",
+     "05 · Placa base y anclajes. Es donde termina la estructura y empieza el hormigón, y donde más se improvisa: espesor de placa, tracción en pernos, longitud de anclaje y aplastamiento del hormigón.",
+     "Cierre: ninguna de las 5 la resuelve el software solo. El programa calcula; el criterio de qué verificar y cómo interpretarlo es del ingeniero.",
+     "CTA: la Especialización en ACERO cubre las cinco con proyectos reales · comenta ACERO."
+    ]
+   },
+   "post_linkedin": "El perfil “pasa” por resistencia y aun así el diseño está mal. Casi siempre falta una de estas cinco verificaciones:\n\n1. Clasificación de la sección y pandeo local. Si la sección es esbelta, la capacidad no es la del cálculo plástico.\n2. Pandeo lateral-torsional. Manda la longitud no arriostrada real, no la que se supuso.\n3. Derivas y efectos de segundo orden (P-Δ). En edificios metálicos la deriva suele gobernar sobre la resistencia.\n4. Coherencia entre la conexión y el modelo. La conexión es una hipótesis de cálculo, no un detalle de dibujo.\n5. Placa base y anclajes. Donde termina el acero y empieza el hormigón es donde más se improvisa.\n\nNinguna la resuelve el software solo. El programa calcula; qué verificar y cómo interpretarlo sigue siendo criterio del ingeniero.\n\n¿Cuál de las cinco es la que más ven saltarse en proyectos que les llegan a revisar?",
+   "caption": "Escribimos la guía completa: las 5 verificaciones en acero que no puedes saltarte — pandeo local, lateral-torsional, derivas y P-Δ, coherencia de conexiones y placa base.\n\nNinguna la resuelve el software solo. El programa calcula; el criterio es tuyo.\n\n💬 Comenta “ACERO” y te mando la guía completa.\n\n#Acero #EstructurasMetálicas #DiseñoEstructural #IngenieríaEstructural #DesignModelingDG",
+   "cta_por_red": {
+    "instagram": "Comenta “ACERO” y te mando la info por DM.",
+    "tiktok": "Comenta “ACERO” · link en bio.",
+    "linkedin": "Pregunta abierta al gremio (en LinkedIn no se pide comentar la palabra). DM abierto para quien quiera la guía.",
+    "youtube": "Paso a paso completo en el video · link en la descripción."
+   },
+   "adaptacion_redes": {
+    "blog": "Artículo largo con el título SEO exacto. Un H2 por verificación, un esquema por punto y un párrafo de “cómo se revisa”. Cierre con CTA a la Especialización en ACERO.",
+    "linkedin": "El post de texto de arriba, sin link en el cuerpo (LinkedIn penaliza enlaces externos): el link va en el primer comentario.",
+    "instagram": "Post plano que remite al blog: título en la imagen + las 5 verificaciones listadas en el caption + «Comenta ACERO».",
+    "facebook": "Mismo post con el link al blog visible; en FB el enlace no penaliza."
+   }
+  },
+  {
+   "id": "ads-acero-img2",
+   "titulo": "PAUTA · ACERO — réplica del formato IMG2 (el anuncio #1)",
+   "formato": "anuncio",
+   "red_principal": "meta-ads",
+   "eje": "NUCLEO-ACERO",
+   "pilar": "Venta",
+   "hook": "¿Diseñas en acero y todavía revisas las conexiones al final?",
+   "anuncio": {
+    "base": "IMG2 (09/02) — 558 leads · CPL $0.58 · CTR 2.96%. Es el anuncio #1 de la cuenta.",
+    "producto": "Especialización en ACERO",
+    "objetivo": "Mensajes (conversación) — NUNCA tráfico a landing",
+    "destino": "WhatsApp (clic para enviar mensaje)",
+    "creativo": "UNA imagen simple. Nada de video ni producción cara — el dato dice que la imagen simple gana. Fondo azul marca, un detalle de conexión metálica, el titular en grande y el sello de la especialización abajo.",
+    "texto_en_imagen": "ESPECIALIZACIÓN EN ACERO\nDiseño, verificación y conexiones\ncon criterio profesional",
+    "texto_principal": "¿Diseñas en acero y todavía dejas las conexiones para el final?\n\nAhí es donde se cae la mayoría: el modelo dice empotrado, el taller construye articulado, y las derivas reales no son las que calculaste.\n\nEn la Especialización en ACERO trabajas las 5 verificaciones que no se pueden saltar — pandeo local, lateral-torsional, derivas y P-Δ, conexiones y placa base — con proyectos reales y criterio, no solo botones.\n\nEscríbenos y te contamos cómo va el programa 👇",
+    "titular": "Especialización en ACERO — cupos abiertos",
+    "descripcion": "Diseño y verificación de estructuras metálicas con criterio profesional.",
+    "boton": "Enviar mensaje (WhatsApp)",
+    "mensaje_precargado": "Hola, quiero información de la Especialización en ACERO.",
+    "publico": "Ingenieros civiles, estructurales y estudiantes de últimos semestres · Ecuador + LatAm · intereses: estructuras metálicas, SAP2000, ETABS, AISC.",
+    "presupuesto_sugerido": "El grueso de la inversión del mes — es el producto de mejor CPL ($0.45–$0.61).",
+    "que_medir": "Leads y CPL. Ignorar el CTR alto sin conversión (la campaña “Tráfico al perfil” tuvo 15% de CTR y CERO leads)."
+   },
+   "cta_por_red": {
+    "meta-ads": "Botón «Enviar mensaje» directo a WhatsApp. Sin landing intermedia."
+   }
+  },
+  {
+   "id": "ads-acero-geosplit",
+   "titulo": "PAUTA · ACERO geo-split (WhatsApp + SMS) — el mejor CPL del mes",
+   "formato": "anuncio",
+   "red_principal": "meta-ads",
+   "eje": "NUCLEO-ACERO",
+   "pilar": "Venta",
+   "hook": "Formación en acero para ingenieros de [CIUDAD].",
+   "anuncio": {
+    "base": "[JUL] ACERO – WSP SMS (geo-split) — 486 leads · CPL $0.45 · el mejor de toda la cuenta.",
+    "producto": "Especialización en ACERO",
+    "objetivo": "Mensajes",
+    "destino": "WhatsApp + SMS",
+    "creativo": "Misma imagen simple del IMG2, con el nombre de la ciudad/zona escrito en la pieza. Una variante por zona.",
+    "texto_en_imagen": "ESPECIALIZACIÓN EN ACERO\nPara ingenieros de [CIUDAD]",
+    "texto_principal": "Ingenieros de [CIUDAD]: si diseñas en acero, esto te toca.\n\nLas 5 verificaciones que más se saltan (y que más caro se pagan): pandeo local, lateral-torsional, derivas y P-Δ, conexiones y placa base.\n\nEspecialización en ACERO — con proyectos reales y acompañamiento.\n\nEscríbenos y te contamos 👇",
+    "titular": "Especialización en ACERO — [CIUDAD]",
+    "descripcion": "Cupos abiertos para esta zona.",
+    "boton": "Enviar mensaje (WhatsApp)",
+    "mensaje_precargado": "Hola, soy de [CIUDAD] y quiero información de la Especialización en ACERO.",
+    "publico": "Mismo perfil que IMG2, pero segmentado por ciudad/zona. Ampliar a las zonas que aún no se han probado.",
+    "presupuesto_sugerido": "Mantener y ampliar zonas — es el CPL más bajo de la cuenta.",
+    "que_medir": "CPL por zona. Apagar las zonas que se salgan del rango $0.45–$0.80."
+   },
+   "cta_por_red": {
+    "meta-ads": "WhatsApp + SMS. Una variante por ciudad."
+   }
+  },
+  {
+   "id": "ads-master-wsp",
+   "titulo": "PAUTA · Máster BIM + IA (WhatsApp API) — el mejor CPL del Máster",
+   "formato": "anuncio",
+   "red_principal": "meta-ads",
+   "eje": "NUCLEO-IA",
+   "pilar": "Venta",
+   "hook": "La IA ya hace parte de tu trabajo BIM. La ventaja no es usarla: es usarla con criterio.",
+   "anuncio": {
+    "base": "[JUL] MÁSTER BIM+IA – WSP API — 125 leads · CPL $0.51 con solo $64 invertidos. Es el mejor CPL del Máster y está sin escalar.",
+    "producto": "Máster Internacional en BIM Management e Inteligencia Artificial",
+    "objetivo": "Mensajes",
+    "destino": "WhatsApp API",
+    "creativo": "Imagen simple (formato IMG2) o creativo de feed reutilizado — el «IG 28/05» reutilizado hizo 222 leads con CPL $0.43. Antes de producir algo nuevo, reutilizar el carrusel orgánico que mejor rindió.",
+    "texto_en_imagen": "MÁSTER BIM + IA\nCoordinar, gestionar y automatizar\ncon criterio profesional",
+    "texto_principal": "La IA ya hace parte de tu trabajo BIM: cantidades, documentación, detección de choques, primeras versiones de detalles.\n\nLa ventaja ya no es usarla. Es saber qué automatizar y qué NO delegar nunca.\n\nEn el Máster BIM + IA aprendes a coordinar, gestionar y automatizar — y te gradúas con tu propio kit de herramientas, no solo con certificados.\n\nEscríbenos y te contamos cómo funciona 👇",
+    "titular": "Máster BIM + IA — cupos abiertos",
+    "descripcion": "Coordinación, gestión y automatización con criterio.",
+    "boton": "Enviar mensaje (WhatsApp)",
+    "mensaje_precargado": "Hola, quiero información del Máster BIM + IA.",
+    "publico": "Arquitectos, ingenieros, modeladores y coordinadores BIM con 1+ año de experiencia · Ecuador + LatAm · intereses: Revit, Navisworks, BIM Management, Autodesk.",
+    "presupuesto_sugerido": "Escalar — tenía el mejor CPL del Máster con presupuesto mínimo ($64).",
+    "que_medir": "Leads y CPL. Comparar contra la campaña de formulario (CPL $0.71): si WhatsApp sigue ganando, mover el presupuesto.",
+    "prohibido": "NUNCA mandar a landing. La campaña de SAP2000 con landing hizo 1 lead a $164.64 — 365 veces peor que el mejor CPL. NUNCA poner precio en el anuncio: el objetivo es abrir conversación."
+   },
+   "cta_por_red": {
+    "meta-ads": "Botón «Enviar mensaje» directo a WhatsApp API."
+   }
+  },
+  {
+   "id": "ago-youtube-revit-ia",
+   "titulo": "Cómo activar la IA de Revit paso a paso (2026) — video largo",
+   "formato": "youtube",
+   "red_principal": "youtube",
+   "eje": "NUCLEO-IA",
+   "pilar": "Educativo",
+   "hook": "Tu Revit ya trae inteligencia artificial. En este video la activamos las tres funciones, en pantalla, paso a paso.",
+   "youtube": {
+    "titulo_seo": "Cómo activar la IA de Revit paso a paso (2026) | 3 funciones que ya tienes",
+    "descripcion": "Revit ya trae funciones de inteligencia artificial y la mayoría no las tiene activadas. En este video las activamos las tres en pantalla, paso a paso, y te muestro qué hace bien cada una y dónde NO hay que confiarse.\n\n⏱ Capítulos:\n00:00 Lo que casi nadie activó\n01:10 Función 1 · Generar detalles constructivos con AI Assist\n05:30 Función 2 · Detectar y resolver choques entre disciplinas\n10:00 Función 3 · Opciones de distribución en planta\n14:00 Dónde falla la IA (el criterio sigue siendo tuyo)\n16:00 Cómo seguir aprendiendo\n\n🔧 Todo esto lo trabajamos a fondo en el Máster BIM + IA de Design Modeling Academy. Link abajo.\n\n#Revit #BIM #InteligenciaArtificial #Autodesk",
+    "tags": "revit ia, inteligencia artificial revit, autodesk ai assist, bim e ia, revit 2026, coordinación bim, detección de choques revit, bim manager",
+    "miniatura": "Fondo azul marca. A la izquierda, captura de Revit con el panel de IA abierto. A la derecha, texto en dos líneas: «REVIT + IA» arriba en blanco y «3 FUNCIONES QUE YA TIENES» abajo en naranja. Una flecha naranja apuntando al panel. Sin cara si no hay buena toma; si la hay, cara con gesto de sorpresa a la izquierda."
+   },
+   "guion_reel": [
+    {
+     "tiempo": "00:00 – 01:10",
+     "accion": "Intro con la pantalla de Revit ya abierta. Nada de presentación larga.",
+     "voz": "Tu Revit ya trae inteligencia artificial adentro y lo más probable es que nunca la hayas activado. En este video te muestro las tres funciones, dónde están, cómo se encienden, y —más importante— dónde NO hay que confiar en ellas."
+    },
+    {
+     "tiempo": "01:10 – 05:30",
+     "accion": "Función 1 en pantalla: generar un detalle constructivo con Autodesk AI Assist. Demo real de principio a fin.",
+     "voz": "La primera: generación de detalles constructivos. Le describes en palabras el detalle que necesitas y te arma la primera versión. Mira: escribo lo que quiero… y esto es lo que devuelve. Fíjate que la geometría está bien, pero las especificaciones las tengo que corregir yo."
+    },
+    {
+     "tiempo": "05:30 – 10:00",
+     "accion": "Función 2: detección de choques que además sugiere solución. Mostrar un choque real y la sugerencia.",
+     "voz": "La segunda ya no solo te dice «aquí hay un choque»: te sugiere la solución más común según miles de proyectos. Aquí encontró una interferencia entre estructura e instalaciones que a mí se me había pasado. Pero mira esta otra: la marca como crítica y en obra se resuelve sola."
+    },
+    {
+     "tiempo": "10:00 – 14:00",
+     "accion": "Función 3: opciones de distribución en planta a partir del programa arquitectónico.",
+     "voz": "La tercera: le das los metros cuadrados del programa y te devuelve tres layouts posibles en segundos. Ninguno es el proyecto final. Son puntos de partida para no arrancar de la hoja en blanco."
+    },
+    {
+     "tiempo": "14:00 – 16:00",
+     "accion": "Cierre a cámara o sobre pantalla, con las tres funciones resumidas en pantalla.",
+     "voz": "Ninguna de las tres te entrega el proyecto terminado. Te entregan el primer borrador. El criterio, la norma y la firma siguen siendo tuyos — y eso no lo va a cambiar ninguna versión de Revit."
+    },
+    {
+     "tiempo": "16:00 – fin",
+     "accion": "CTA final con la tarjeta del Máster en pantalla.",
+     "voz": "Si quieres aprender a usar esto con criterio y no solo apretando botones, te dejo abajo el link del Máster BIM + IA. Y dime en los comentarios cuál de las tres no conocías."
+    }
+   ],
+   "notas_produccion": "Video largo (14-18 min) con grabación de pantalla real de Revit, no diapositivas. Audio limpio con micrófono externo. Capítulos marcados en la descripción para que YouTube los muestre. Del mismo material salen: el Short (función 2, la del choque) y el carrusel del Lun 4. Grabar una vez, publicar tres veces.",
+   "caption": "Nuevo video en el canal: activamos paso a paso las 3 funciones de IA que Revit ya trae — y te muestro dónde falla cada una.\n\nLink en la bio / en la descripción del canal.\n\n💬 Comenta “BIM” o “IA” si quieres que te avise cuando salga la parte 2.\n\n#Revit #BIM #IA #Autodesk #DesignModelingDG",
+   "cta_por_red": {
+    "youtube": "«Suscríbete y dime en los comentarios cuál de las tres no conocías» + link al Máster en la descripción.",
+    "instagram": "Post o story avisando del video: «Comenta “BIM” o “IA” y te mando el link».",
+    "linkedin": "Compartir el video con un párrafo de contexto y pregunta abierta: «¿Están usando estas funciones o siguen desactivadas en sus oficinas?»",
+    "tiktok": "Short vertical con la función 2 (la del choque) · link en bio."
+   },
+   "adaptacion_redes": {
+    "youtube": "Video largo con título SEO exacto. Es el formato que da tráfico de búsqueda a largo plazo.",
+    "instagram": "Del minuto 05:30–07:00 sale el Reel/Short. Subir también como aviso en stories con sticker de link.",
+    "facebook": "Publicar el video nativo (no el link de YouTube): Facebook penaliza el enlace saliente.",
+    "tiktok": "Cortar el momento del choque en 30s con subtítulos quemados."
    }
   }
  ]
