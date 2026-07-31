@@ -55,7 +55,37 @@
     "linkedin": "Renderizar me tomaba 4 horas; una IA lo hizo en 10 segundos. ¿Ya lo probaron en sus flujos?",
     "youtube": "Todo el paso a paso en el video · link en la descripción."
    },
-   "prompt_imagenes": "Carrusel IG 4:5, fondo azul marino #0E2438, acento naranja #EE8A3C, tipografía sans gruesa, minimalista, sin marcas de agua, español. Abajo-izq “DG · @design_modeling_dg”, arriba-der el número (2/7). Genera un slide por mensaje; los slides 2 y 4 llevan imagen (boceto y render)."
+   "prompt_imagenes": "Carrusel IG 4:5, fondo azul marino #0E2438, acento naranja #EE8A3C, tipografía sans gruesa, minimalista, sin marcas de agua, español. Abajo-izq “DG · @design_modeling_dg”, arriba-der el número (2/7). Genera un slide por mensaje; los slides 2 y 4 llevan imagen (boceto y render).",
+   "historias": [
+    {
+     "n": 1,
+     "visual": "El render final a pantalla completa. Sin texto los primeros 2 segundos.",
+     "texto": "(nada)",
+     "sticker": "Ninguno.",
+     "seguimiento": "—"
+    },
+    {
+     "n": 2,
+     "visual": "El mismo render.",
+     "texto": "¿Cuánto crees que tomó esto?",
+     "sticker": "QUIZ: «4 horas» / «1 hora» / «10 segundos»  (respuesta: 10 segundos)",
+     "seguimiento": "El quiz con respuesta sorprendente es el que más se comparte. Los que fallan casi siempre responden algo por DM."
+    },
+    {
+     "n": 3,
+     "visual": "Foto del boceto a mano al lado del render.",
+     "texto": "Partí de esto.",
+     "sticker": "Ninguno.",
+     "seguimiento": "—"
+    },
+    {
+     "n": 4,
+     "visual": "Texto sobre azul.",
+     "texto": "La IA no diseñó.\nSolo me quitó las horas de renderizar.",
+     "sticker": "ENCUESTA: «¿Lo usarías en tus entregas?» → Sí / No me atrevo",
+     "seguimiento": "A los de «No me atrevo»: DM preguntando por qué. Ahí sale la objeción real que después usas en el contenido."
+    }
+   ]
   },
   {
    "id": "jul-dialogo-arqui-inge",
@@ -110,7 +140,30 @@
     "facebook": "Publicar el reel; si se quiere reforzar, acompañar con la versión meme estática (arriba) en un segundo post.",
     "linkedin": "Menos meme, más insight: «Escuché este chiste entre un arqui y un inge sobre la IA. Y tiene una verdad incómoda para nuestra profesión…» + cierre con pregunta abierta. Sin pedir comentar la palabra.",
     "youtube": "Short, tal cual el reel. El humor rinde bien en Shorts."
-   }
+   },
+   "historias": [
+    {
+     "n": 1,
+     "visual": "El reel recortado: solo el remate del chiste.",
+     "texto": "—A ti te reemplaza cualquier plantilla de Pinterest 😅",
+     "sticker": "Ninguno.",
+     "seguimiento": "—"
+    },
+    {
+     "n": 2,
+     "visual": "Fondo azul, texto centrado.",
+     "texto": "El chiste tiene fondo:\nla IA no reemplaza al que tiene criterio.\nReemplaza al que no lo tiene.",
+     "sticker": "ENCUESTA: «Team arqui» / «Team inge»",
+     "seguimiento": "La encuesta de bando es la que más votos saca. Sirve para medir quién te sigue de verdad y para romper el hielo por DM."
+    },
+    {
+     "n": 3,
+     "visual": "Captura del reel publicado.",
+     "texto": "¿De qué lado estás?",
+     "sticker": "ENLACE al reel.",
+     "seguimiento": "—"
+    }
+   ]
   },
   {
    "id": "jul-listicle-revit-ia",
@@ -159,7 +212,44 @@
     "linkedin": "3 funciones de IA que Revit ya trae y deberíamos estar usando. ¿Cuál usan ustedes?",
     "youtube": "Todo el paso a paso en el video · link en la descripción."
    },
-   "prompt_imagenes": "Mismo estilo del carrusel de marca (azul #0E2438 + naranja #EE8A3C). Slides 2-4 con número gigante 01/02/03 en naranja. Un slide por mensaje."
+   "prompt_imagenes": "Mismo estilo del carrusel de marca (azul #0E2438 + naranja #EE8A3C). Slides 2-4 con número gigante 01/02/03 en naranja. Un slide por mensaje.",
+   "historias": [
+    {
+     "n": 1,
+     "visual": "Grabación de pantalla de Revit, moviéndote por el menú sin decir nada. 3 segundos.",
+     "texto": "Tu Revit trae IA adentro.\nY casi nadie la activó.",
+     "sticker": "Ninguno. Este frame solo frena el dedo.",
+     "seguimiento": "—"
+    },
+    {
+     "n": 2,
+     "visual": "Zoom al panel de Autodesk AI Assist, con el cursor encima.",
+     "texto": "Está aquí.\n¿La tenías activada?",
+     "sticker": "ENCUESTA: «Sí, la uso» / «Ni sabía»",
+     "seguimiento": "A los que votan «Ni sabía» les mandas DM: «Vi que no la tenías activada — te paso los 3 pasos.» Ese DM es el que abre la conversación."
+    },
+    {
+     "n": 3,
+     "visual": "Las 3 funciones listadas en pantalla, fondo azul marca.",
+     "texto": "01 Detalles constructivos\n02 Choques (con solución)\n03 Distribución en planta",
+     "sticker": "Ninguno. Es el frame de valor: se guarda o se comparte.",
+     "seguimiento": "—"
+    },
+    {
+     "n": 4,
+     "visual": "Tú a cámara o texto sobre azul.",
+     "texto": "Ninguna te da el proyecto.\nTe da el borrador.\nEl criterio lo pones tú.",
+     "sticker": "CAJA DE PREGUNTAS: «¿Qué tarea de Revit te gustaría automatizar?»",
+     "seguimiento": "Cada respuesta se contesta UNA POR UNA por DM. Ahí es donde se menciona el Máster — nunca en la historia."
+    },
+    {
+     "n": 5,
+     "visual": "Captura del carrusel publicado.",
+     "texto": "Lo dejé completo en el post 👇",
+     "sticker": "ENLACE al post + «Comenta BIM o IA y te mando cómo activarlas».",
+     "seguimiento": "Los que tocan el enlace y comentan entran al bot."
+    }
+   ]
   },
   {
    "id": "ago-5-errores-ia-bim",
@@ -213,7 +303,37 @@
     "linkedin": "5 errores al usar IA en BIM. ¿Cuál ven más en sus equipos?",
     "youtube": "Todo el paso a paso en el video · link en la descripción."
    },
-   "prompt_imagenes": "Carrusel de marca (azul #0E2438 + naranja). Números 01-05 en naranja grande. Un slide por mensaje."
+   "prompt_imagenes": "Carrusel de marca (azul #0E2438 + naranja). Números 01-05 en naranja grande. Un slide por mensaje.",
+   "historias": [
+    {
+     "n": 1,
+     "visual": "Texto grande sobre azul, sin adornos.",
+     "texto": "5 errores al usar IA en BIM.\nEl #3 te cuesta el proyecto.",
+     "sticker": "Ninguno.",
+     "seguimiento": "—"
+    },
+    {
+     "n": 2,
+     "visual": "Pantalla partida: un chat de IA a la izquierda, un plano a la derecha.",
+     "texto": "El #1: confiar en la primera respuesta.",
+     "sticker": "ENCUESTA: «Me ha pasado» / «Siempre reviso»",
+     "seguimiento": "A los del «Me ha pasado»: DM con el error #3 explicado. Es la excusa perfecta para escribirles."
+    },
+    {
+     "n": 3,
+     "visual": "Portada de una norma con un ❌ naranja encima.",
+     "texto": "El #3: no revisar contra la norma.\nLa IA no sabe qué norma aplica en tu país.",
+     "sticker": "QUIZ: «¿La IA conoce tu norma local?» → Sí / No / Depende  (respuesta: No)",
+     "seguimiento": "El quiz te da la lista de quién falló. A esos les mandas el carrusel completo por DM."
+    },
+    {
+     "n": 4,
+     "visual": "Captura del carrusel.",
+     "texto": "Los 5 están en el post.\n¿Cuál has cometido?",
+     "sticker": "ENLACE al post.",
+     "seguimiento": "—"
+    }
+   ]
   },
   {
    "id": "ago-ia-coordina-bim",
@@ -252,7 +372,37 @@
     "tiktok": "Comenta “BIM” o “IA” · link en bio.",
     "linkedin": "Dejé que una IA coordinara un modelo BIM real. Los resultados me sorprendieron (para bien y para mal). ¿La dejarían coordinar sus proyectos?",
     "youtube": "Todo el paso a paso en el video · link en la descripción."
-   }
+   },
+   "historias": [
+    {
+     "n": 1,
+     "visual": "Pantalla del modelo con el choque resaltado.",
+     "texto": "Le pedí a la IA que coordinara un modelo.",
+     "sticker": "Ninguno.",
+     "seguimiento": "—"
+    },
+    {
+     "n": 2,
+     "visual": "El acierto en pantalla.",
+     "texto": "Encontró un choque que a mí se me pasó.",
+     "sticker": "Ninguno.",
+     "seguimiento": "—"
+    },
+    {
+     "n": 3,
+     "visual": "El fallo en pantalla, marcado en naranja.",
+     "texto": "Y marcó como crítico algo que en obra se resuelve solo.",
+     "sticker": "ENCUESTA: «¿Confiarías en ella?» → Sí / No / Solo revisando",
+     "seguimiento": "A los de «Solo revisando» — que son los que piensan bien — mándales DM: son el perfil exacto del Máster."
+    },
+    {
+     "n": 4,
+     "visual": "Tú a cámara.",
+     "texto": "Te ahorra horas.\nNo te ahorra el criterio.",
+     "sticker": "CAJA DE PREGUNTAS: «¿Qué le pedirías tú a la IA en tu próximo proyecto?»",
+     "seguimiento": "Contestar una por una por DM. Es la conversación más fácil de abrir del mes."
+    }
+   ]
   },
   {
    "id": "ago-bim-manager-vs-ia",
@@ -306,7 +456,37 @@
     "linkedin": "¿Qué otra cosa creen que la IA no podrá reemplazar en la gestión BIM?",
     "youtube": "Todo el paso a paso en el video · link en la descripción."
    },
-   "prompt_imagenes": "Carrusel de marca. Números 01/02/03 en naranja. Un slide por mensaje."
+   "prompt_imagenes": "Carrusel de marca. Números 01/02/03 en naranja. Un slide por mensaje.",
+   "historias": [
+    {
+     "n": 1,
+     "visual": "Texto sobre azul.",
+     "texto": "¿Qué hace un BIM Manager que la IA nunca podrá?",
+     "sticker": "CAJA DE PREGUNTAS: «Dime tú primero».",
+     "seguimiento": "Preguntar ANTES de dar la respuesta duplica las respuestas. Las mejores se republican en la siguiente historia con crédito."
+    },
+    {
+     "n": 2,
+     "visual": "Las 3 en pantalla.",
+     "texto": "Prioriza. Negocia. Responde.",
+     "sticker": "Ninguno.",
+     "seguimiento": "—"
+    },
+    {
+     "n": 3,
+     "visual": "Una firma manuscrita en naranja sobre el azul.",
+     "texto": "La IA no firma nada.",
+     "sticker": "ENCUESTA: «¿De acuerdo?» → Sí / No del todo",
+     "seguimiento": "A los de «No del todo» les escribes: la discusión técnica es la mejor puerta de entrada con este perfil."
+    },
+    {
+     "n": 4,
+     "visual": "Republicación de 2-3 respuestas de la caja de preguntas del frame 1.",
+     "texto": "Esto me respondieron ustedes 👇",
+     "sticker": "ENLACE al carrusel.",
+     "seguimiento": "Republicar respuestas hace que la gente participe la próxima vez. Es lo que construye la comunidad."
+    }
+   ]
   },
   {
    "id": "ago-tip-revit-ia",
@@ -414,7 +594,30 @@
     "linkedin": "Sigo viendo oficinas modelando a mano en 2026… ¿por qué creen que cuesta tanto dar el salto a BIM?",
     "youtube": "Todo el paso a paso en el video · link en la descripción."
    },
-   "notas_produccion": "VA EN VIDEO, no meme estático. Split o dos POV con cambio de vestuario/luz: el de «a mano» en penumbra con café y desorden; el coordinador BIM con luz limpia y pantalla ordenada. Subtítulos quemados. 15s. El meme plano queda solo como alternativa para Facebook."
+   "notas_produccion": "VA EN VIDEO, no meme estático. Split o dos POV con cambio de vestuario/luz: el de «a mano» en penumbra con café y desorden; el coordinador BIM con luz limpia y pantalla ordenada. Subtítulos quemados. 15s. El meme plano queda solo como alternativa para Facebook.",
+   "historias": [
+    {
+     "n": 1,
+     "visual": "El reel recortado: solo el POV del que modela a mano.",
+     "texto": "Tres días para un detalle.",
+     "sticker": "Ninguno.",
+     "seguimiento": "—"
+    },
+    {
+     "n": 2,
+     "visual": "El corte al coordinador BIM.",
+     "texto": "20 minutos.",
+     "sticker": "ENCUESTA: «Team a mano» / «Team BIM+IA»",
+     "seguimiento": "A los de «Team a mano» les preguntas por DM qué los frena. Esa respuesta es oro para el contenido del mes siguiente."
+    },
+    {
+     "n": 3,
+     "visual": "Captura del reel.",
+     "texto": "Modelar a mano en 2026 es usar ábaco teniendo Excel.",
+     "sticker": "ENLACE al reel.",
+     "seguimiento": "—"
+    }
+   ]
   },
   {
    "id": "ago-blog-ia-automatizar",
@@ -441,7 +644,30 @@
     "tiktok": "Comenta “BIM” o “IA” · link en bio.",
     "linkedin": "¿Dónde ponen ustedes la línea entre lo que automatizan y lo que no?",
     "youtube": "Todo el paso a paso en el video · link en la descripción."
-   }
+   },
+   "historias": [
+    {
+     "n": 1,
+     "visual": "Fondo azul, texto grande.",
+     "texto": "¿Qué SÍ le delegarías a una IA en tu proyecto?",
+     "sticker": "CAJA DE PREGUNTAS abierta.",
+     "seguimiento": "Las respuestas son material para el próximo contenido. Guárdalas."
+    },
+    {
+     "n": 2,
+     "visual": "Dos columnas: AUTOMATIZA / NO DELEGUES.",
+     "texto": "Automatiza: cantidades, documentación, choques.\nNo delegues: norma, prioridad, la firma.",
+     "sticker": "DESLIZADOR: «¿Cuánto de tu trabajo automatizarías?» (0-100%)",
+     "seguimiento": "El deslizador es el sticker con más participación de todos. Úsalo cuando quieras volumen, no conversación."
+    },
+    {
+     "n": 3,
+     "visual": "Captura del artículo del blog.",
+     "texto": "La guía completa está en el blog.",
+     "sticker": "ENLACE al blog.",
+     "seguimiento": "En historias el enlace SÍ va directo: aquí no aplica la regla de la pauta (esa es para ads)."
+    }
+   ]
   },
   {
    "id": "ago-comunidad-recap",
@@ -464,7 +690,30 @@
     "prompt_de_conversacion": "Pregunta de la semana para la comunidad: ¿Cuál es la primera tarea de tu flujo BIM que le delegarías a una IA — y cuál NO le delegarías nunca? Cuéntanos por qué.",
     "recurso_a_entregar": "Enlace a la Calculadora de Zapatas (gratis) + la guía ‘IA en BIM: qué automatizar y qué no’.",
     "cta_comunidad": "Invita a un colega que esté empezando con BIM + IA. Entre más criterio compartido, mejor comunidad."
-   }
+   },
+   "historias": [
+    {
+     "n": 1,
+     "visual": "Collage de capturas reales de la comunidad (con permiso).",
+     "texto": "Esto pasó este mes adentro 👇",
+     "sticker": "Ninguno.",
+     "seguimiento": "—"
+    },
+    {
+     "n": 2,
+     "visual": "Captura de una duda resuelta.",
+     "texto": "Una pregunta que respondimos entre todos.",
+     "sticker": "ENCUESTA: «¿Te sirve este tipo de comunidad?» → Sí / Cuéntame más",
+     "seguimiento": "A los de «Cuéntame más» les mandas la invitación por DM. Nunca en masa: uno por uno."
+    },
+    {
+     "n": 3,
+     "visual": "Texto sobre azul.",
+     "texto": "No es un grupo de anuncios.\nEs donde se conversa de verdad.",
+     "sticker": "CAJA DE PREGUNTAS: «¿Qué te gustaría que resolviéramos el próximo mes?»",
+     "seguimiento": "Las respuestas arman el calendario del mes siguiente."
+    }
+   ]
   },
   {
    "id": "ago-lead-magnet-zapatas",
@@ -523,7 +772,44 @@
     "linkedin": "Hicimos una calculadora gratis de zapata aislada. ¿Les sirve? Se las paso por DM.",
     "youtube": "Link a la calculadora en la descripción."
    },
-   "prompt_imagenes": "Carrusel de marca (azul #0E2438 + naranja). Números 01-06. Último slide con captura de la calculadora."
+   "prompt_imagenes": "Carrusel de marca (azul #0E2438 + naranja). Números 01-06. Último slide con captura de la calculadora.",
+   "historias": [
+    {
+     "n": 1,
+     "visual": "Tu celular en la mano, con la calculadora abierta. Grabado en vertical, sin edición.",
+     "texto": "Dimensioné una zapata en 2 minutos.\nDesde el celular.",
+     "sticker": "Ninguno.",
+     "seguimiento": "—"
+    },
+    {
+     "n": 2,
+     "visual": "Grabación de pantalla real: metes carga y esfuerzo del suelo, sale el resultado.",
+     "texto": "Metes la carga.\nMetes el esfuerzo del suelo.\nY listo.",
+     "sticker": "Ninguno. Que se vea funcionando — eso es lo que la hizo el post #1 del mes.",
+     "seguimiento": "—"
+    },
+    {
+     "n": 3,
+     "visual": "Fondo azul, texto grande.",
+     "texto": "Es gratis.\n¿La quieres?",
+     "sticker": "ENCUESTA: «Sí, mándamela» / «Ya la tengo»",
+     "seguimiento": "⚠️ ESTE es el frame que convierte. A cada «Sí, mándamela» le contestas por DM con el enlace. No pongas el link en la historia: el DM es lo que te deja seguir la conversación."
+    },
+    {
+     "n": 4,
+     "visual": "Captura del post publicado.",
+     "texto": "También está en el post 👇",
+     "sticker": "ENLACE al post + «Comenta ZAPATA».",
+     "seguimiento": "Los que comentan ZAPATA entran al bot automático."
+    },
+    {
+     "n": 5,
+     "visual": "Captura de los comentarios pidiendo la calculadora (prueba social real, sin inventar nada).",
+     "texto": "Ayer la pidieron 37 personas.",
+     "sticker": "ENLACE al post.",
+     "seguimiento": "Solo se publica si los comentarios existen de verdad. Nunca inventar el número."
+    }
+   ]
   },
   {
    "id": "ago-dynamo-revit",
@@ -722,7 +1008,30 @@
     "linkedin": "¿Qué habilidad creen que separa a un modelador de un BIM Manager?",
     "youtube": "Paso a paso completo en el video · link en la descripción."
    },
-   "notas_produccion": "Cámara al frente, plano medio. Numerar 1/2/3 en pantalla grande. Ritmo rápido, nada de intro. NO mencionar precio ni «inscríbete»: el CTA solo abre conversación. 30s."
+   "notas_produccion": "Cámara al frente, plano medio. Numerar 1/2/3 en pantalla grande. Ritmo rápido, nada de intro. NO mencionar precio ni «inscríbete»: el CTA solo abre conversación. 30s.",
+   "historias": [
+    {
+     "n": 1,
+     "visual": "Texto sobre azul.",
+     "texto": "Modelas bien.\nPero no despegas a BIM Manager.",
+     "sticker": "Ninguno.",
+     "seguimiento": "—"
+    },
+    {
+     "n": 2,
+     "visual": "Las 3 habilidades numeradas.",
+     "texto": "01 Coordinar\n02 Gestionar\n03 IA aplicada",
+     "sticker": "ENCUESTA: «¿Cuál te falta?» → Coordinar / Gestionar / IA",
+     "seguimiento": "La respuesta te dice qué venderle a cada uno. A los de «IA» les hablas del Máster; a los de «Coordinar», del camino previo."
+    },
+    {
+     "n": 3,
+     "visual": "Tú a cámara, tono directo pero sin vender.",
+     "texto": "Las 3 se aprenden.\nNinguna se aprende sola.",
+     "sticker": "CAJA DE PREGUNTAS: «¿En qué punto de tu carrera estás?»",
+     "seguimiento": "⚠️ Nada de precio ni de «inscríbete» en la historia. El objetivo es que escriban. La venta se cierra en el DM, no en pantalla."
+    }
+   ]
   },
   {
    "id": "ago-venta-paquete-autodesk",
@@ -1319,7 +1628,37 @@
     "linkedin": "Post de texto técnico sin “comenta la palabra”: mismo desarrollo + cierre «¿Ustedes definen la conexión antes o después de correr el análisis? Me interesa cómo lo manejan en sus oficinas.»",
     "tiktok": "Versión rápida de 20s en video: mostrar el modelo con el nudo empotrado, cortar al detalle real de taller, y el remate «el modelo mintió». CTA “link en bio”.",
     "youtube": "Encaja como capítulo dentro de un video largo de verificaciones en acero (ver blog del Sáb 23)."
-   }
+   },
+   "historias": [
+    {
+     "n": 1,
+     "visual": "Foto o esquema del nudo dibujado como empotrado en el modelo.",
+     "texto": "Tu modelo dice que esta conexión toma momento.",
+     "sticker": "Ninguno.",
+     "seguimiento": "—"
+    },
+    {
+     "n": 2,
+     "visual": "El detalle real de taller: dos ángulos al alma.",
+     "texto": "Y en obra se construye así.",
+     "sticker": "QUIZ: «¿Esta conexión toma momento?» → Sí / No  (respuesta: No)",
+     "seguimiento": "⚠️ Frame clave para ACERO. A todo el que falla le mandas DM con la explicación — es el lead más calificado del mes."
+    },
+    {
+     "n": 3,
+     "visual": "Texto sobre azul.",
+     "texto": "El momento se va al vano.\nLas derivas no son las que calculaste.",
+     "sticker": "ENCUESTA: «¿Defines la conexión antes o después de analizar?» → Antes / Después",
+     "seguimiento": "A los de «Después» les escribes: es exactamente el error del post."
+    },
+    {
+     "n": 4,
+     "visual": "Captura del post.",
+     "texto": "Los 3 pasos para evitarlo, en el post.",
+     "sticker": "ENLACE + «Comenta ACERO y te mando la guía».",
+     "seguimiento": "Los que comentan ACERO entran al bot de la Especialización."
+    }
+   ]
   },
   {
    "id": "ago-acero-sobredimensionado",
@@ -1379,7 +1718,37 @@
     "linkedin": "Documento PDF con los mismos 7 slides. Copy de entrada: «Sobredimensionar no es ir por el lado seguro; es no haber revisado.» Cierre: «¿Qué rango de kg/m² manejan ustedes como referencia?» — sin pedir comentar la palabra.",
     "tiktok": "Versión reel: leer las 3 señales sobre captura de tabla de ratios. Ritmo rápido, números en pantalla. CTA “link en bio”.",
     "youtube": "Short con las 3 señales · alimenta el video largo de verificaciones en acero."
-   }
+   },
+   "historias": [
+    {
+     "n": 1,
+     "visual": "Esquema de pórtico con todos los perfiles iguales.",
+     "texto": "Si usas el mismo perfil en toda la estructura,\nno estás siendo conservador.",
+     "sticker": "Ninguno.",
+     "seguimiento": "—"
+    },
+    {
+     "n": 2,
+     "visual": "Tabla de ratios D/C con valores en 0.4 resaltados.",
+     "texto": "Estás pagando acero de más.",
+     "sticker": "ENCUESTA: «¿Revisas ratio D/C elemento por elemento?» → Siempre / A veces / Nunca",
+     "seguimiento": "«A veces» y «Nunca» son leads directos de ACERO. DM a cada uno con el carrusel."
+    },
+    {
+     "n": 3,
+     "visual": "Íconos: soldadura · montaje · cimentación, con «+$».",
+     "texto": "El exceso no se queda en el perfil.\nLo paga el cliente 3 veces.",
+     "sticker": "Ninguno.",
+     "seguimiento": "—"
+    },
+    {
+     "n": 4,
+     "visual": "Captura del carrusel.",
+     "texto": "Las 3 señales, en el post.",
+     "sticker": "ENLACE + «Comenta ACERO».",
+     "seguimiento": "—"
+    }
+   ]
   },
   {
    "id": "ago-blog-acero-verificaciones",
@@ -1415,7 +1784,30 @@
     "linkedin": "El post de texto de arriba, sin link en el cuerpo (LinkedIn penaliza enlaces externos): el link va en el primer comentario.",
     "instagram": "Post plano que remite al blog: título en la imagen + las 5 verificaciones listadas en el caption + «Comenta ACERO».",
     "facebook": "Mismo post con el link al blog visible; en FB el enlace no penaliza."
-   }
+   },
+   "historias": [
+    {
+     "n": 1,
+     "visual": "Texto sobre azul.",
+     "texto": "El perfil «pasa» por resistencia.\nY el diseño está mal igual.",
+     "sticker": "Ninguno.",
+     "seguimiento": "—"
+    },
+    {
+     "n": 2,
+     "visual": "Las 5 verificaciones listadas.",
+     "texto": "Pandeo local · Lateral-torsional · Derivas y P-Δ · Conexiones · Placa base",
+     "sticker": "ENCUESTA MÚLTIPLE (una por historia si hace falta): «¿Cuál revisas siempre?»",
+     "seguimiento": "La que menos voten es tu próximo tema de contenido. La historia también es investigación."
+    },
+    {
+     "n": 3,
+     "visual": "Captura del artículo.",
+     "texto": "La guía completa está en el blog.",
+     "sticker": "ENLACE al blog + «Comenta ACERO».",
+     "seguimiento": "—"
+    }
+   ]
   },
   {
    "id": "ads-acero-img2",
@@ -1561,7 +1953,87 @@
     "instagram": "Del minuto 05:30–07:00 sale el Reel/Short. Subir también como aviso en stories con sticker de link.",
     "facebook": "Publicar el video nativo (no el link de YouTube): Facebook penaliza el enlace saliente.",
     "tiktok": "Cortar el momento del choque en 30s con subtítulos quemados."
-   }
+   },
+   "historias": [
+    {
+     "n": 1,
+     "visual": "Grabación tuya montando el video (detrás de cámara, sin producción).",
+     "texto": "Grabando el paso a paso completo.",
+     "sticker": "Ninguno. El detrás de cámara sube la cercanía y no cuesta nada.",
+     "seguimiento": "—"
+    },
+    {
+     "n": 2,
+     "visual": "La miniatura del video.",
+     "texto": "Sale hoy.\n¿Lo quieres ver?",
+     "sticker": "CUENTA REGRESIVA a la hora de publicación.",
+     "seguimiento": "Los que activan la cuenta regresiva reciben aviso solos cuando sale. Es el sticker más subestimado."
+    },
+    {
+     "n": 3,
+     "visual": "Fragmento del video: el momento del choque.",
+     "texto": "Este es el minuto que más te va a servir.",
+     "sticker": "ENLACE al video.",
+     "seguimiento": "—"
+    }
+   ]
   }
- ]
+ ],
+ "historias_rutina": {
+  "nota": "Historias que se publican SIEMPRE, tenga o no pieza de feed ese día. La historia no repite el post: le abre la puerta. Todo sticker existe para abrir un DM.",
+  "reglas": [
+   "El sticker es el CTA. Una historia sin sticker es una historia que no convierte — solo se ve.",
+   "Todo el que responde un sticker recibe DM. Uno por uno, con su nombre. Ahí vive la conversión, no en la historia.",
+   "Nunca poner precio ni «inscríbete» en una historia. El objetivo es que escriban.",
+   "Máximo 5 frames por secuencia. A partir del 6 se cae la mitad de la audiencia.",
+   "El primer frame no explica nada: frena el dedo. La explicación va del segundo en adelante.",
+   "Encuesta = volumen. Caja de preguntas = conversación. Quiz = los que fallan te escriben. Cuenta regresiva = recordatorio automático.",
+   "Guardar las buenas en DESTACADAS por tema (ACERO · BIM+IA · Herramientas · Comunidad · Alumnos): son la portada del perfil para quien llega nuevo.",
+   "Publicar también en Facebook: es la mitad del alcance real de la cuenta."
+  ],
+  "semana_tipo": [
+   {
+    "dia": "Lunes",
+    "historia": "Secuencia de la pieza del día (3-5 frames, ver cada pieza).",
+    "sticker": "El que traiga la pieza."
+   },
+   {
+    "dia": "Martes",
+    "historia": "Detrás de cámara: qué estás grabando, modelando o preparando. Sin producción.",
+    "sticker": "Ninguno o encuesta simple."
+   },
+   {
+    "dia": "Miércoles",
+    "historia": "Secuencia de la pieza del día.",
+    "sticker": "El que traiga la pieza."
+   },
+   {
+    "dia": "Jueves",
+    "historia": "Caja de preguntas abierta: «¿En qué estás atascado esta semana?»",
+    "sticker": "CAJA DE PREGUNTAS. Contestar en historias las 3 mejores al día siguiente."
+   },
+   {
+    "dia": "Viernes",
+    "historia": "Secuencia de la pieza del día + republicar las respuestas del jueves.",
+    "sticker": "Enlace al post."
+   },
+   {
+    "dia": "Sábado",
+    "historia": "Testimonio o avance de un alumno (con permiso). Prueba social, sin vender.",
+    "sticker": "Encuesta: «¿Te ves aquí?»"
+   },
+   {
+    "dia": "Domingo",
+    "historia": "Nada, o una sola de cierre de semana. Descansar también es estrategia.",
+    "sticker": "—"
+   }
+  ],
+  "destacadas": [
+   "🔩 ACERO — las secuencias de conexiones, verificaciones y sobredimensionamiento.",
+   "🎯 BIM + IA — Revit con IA, coordinación, criterio.",
+   "🎁 HERRAMIENTAS — la calculadora y las que vengan.",
+   "👥 COMUNIDAD — recaps y conversaciones.",
+   "⭐ ALUMNOS — testimonios y casos."
+  ]
+ }
 }
