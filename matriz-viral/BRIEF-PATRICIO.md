@@ -161,3 +161,24 @@ Hasta ahora el calendario decía *qué* publicar. Desde hoy dice también **exac
 **Regla que se mantiene:** el contenido de valor (~70%) abre conversación y nunca pone precio; la venta y la pauta (~30%) van a WhatsApp y nunca a landing.
 
 **Sigue pendiente de Dayana:** el caso de alumno (Vie 22), los datos de la conferencia (Sáb 30) y el nuevo lead magnet BIM+IA (Mié 13 — mientras tanto va la pieza suplente ya escrita).
+
+---
+
+## Actualización 2026-07-29 (2) — se suman las HISTORIAS
+
+Faltaba el formato que más convierte y que no estábamos trabajando: **las historias**. El feed hace que te descubran; la historia es donde la gente levanta la mano.
+
+**La lógica:** en el feed el CTA es "comenta ACERO / BIM / IA" y lo recoge el bot. En historias el CTA es **el sticker**, y lo recoges tú por DM. Es el mismo camino — comentario o sticker → DM → conversación → venta.
+
+**Lo que se subió:**
+- **15 secuencias completas**, una por cada pieza del mes, de 3 a 5 frames. Cada frame trae: qué se ve, el texto en pantalla, qué sticker va y **qué hacer con quien responde** (esta última columna es la que convierte).
+- **La tabla de stickers**: cuál usar según si buscas volumen (encuesta), leads calificados (quiz), conversación (caja de preguntas) o recordatorio automático (cuenta regresiva).
+- **La semana tipo** de historias, incluyendo los días sin pieza de feed.
+- **Las 5 destacadas** del perfil por tema, que son la portada para quien llega nuevo.
+
+**Las 3 reglas que no se rompen:**
+1. Historia sin sticker = historia que se ve pero no convierte.
+2. Todo el que responde un sticker recibe DM, uno por uno y con su nombre.
+3. Nunca precio ni "inscríbete" en una historia. El objetivo es que escriban.
+
+Todo está en `matriz/guiones-completos.json` (campo `historias` en cada pieza + bloque `historias_rutina`), en `matriz/guia-formatos-y-redes.md` §2b y en el Word de agosto, sección 6.

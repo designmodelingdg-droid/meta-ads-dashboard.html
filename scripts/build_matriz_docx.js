@@ -199,6 +199,15 @@ function renderPieza(entry,idx){
     if(a.prohibido) out.push(note('⛔ '+a.prohibido));
   }
 
+  /* ── HISTORIAS ── */
+  if(p.historias){
+    out.push(LBL(`Historias — secuencia de ${p.historias.length} frames`));
+    out.push(P('La historia no repite el post: le abre la puerta. El sticker es el CTA, y quien responde recibe DM.',{run:{color:GREY,italics:true,size:19}}));
+    out.push(tbl(['#','Qué se ve','Texto en pantalla','Sticker','Qué hacer con quien responde'],
+      p.historias.map(h=>[String(h.n),h.visual,h.texto,h.sticker,h.seguimiento]),
+      [500,2500,2400,2300,2500]));
+  }
+
   /* ── CAPTION ── */
   if(p.caption){
     out.push(LBL('Descripción / caption completo — listo para copiar'));
@@ -313,9 +322,37 @@ CAL.piezas.forEach((e,i)=>{
   push(renderPieza(e,i));
 });
 
-/* ═══════════════════════════════ 6 · PAUTA ═══════════════════════════════ */
+/* ═══════════════════════════════ 6 · HISTORIAS ═══════════════════════════════ */
 push(pageBreak());
-push(H1("6 · VENTA y PAUTA — los anuncios (copy listo)"));
+push(H1("6 · HISTORIAS — cómo se convierte con stories"));
+const HR=GUI.historias_rutina;
+push(P(HR.nota,{run:{color:GREY,italics:true}}));
+push(H2("Las 8 reglas"));
+HR.reglas.forEach(r=>push(bul(r)));
+push(note("Traducción a tu embudo: en el feed el CTA es «comenta ACERO / BIM / IA» y lo recoge el bot. En historias el CTA es el STICKER, y lo recoges tú por DM. Es el mismo camino — comentario o sticker → DM → conversación → venta."));
+
+push(H2("Qué sticker usar según lo que buscas"));
+push(tbl(["Sticker","Qué te da","Cuándo usarlo","Cómo se cobra"],[
+ ["Encuesta (2 opciones)","Volumen de respuestas","Cuando quieres saber en qué bando está tu gente","DM a los que votan la opción «equivocada» — son los que necesitan lo que vendes"],
+ ["Quiz (con respuesta correcta)","Los que fallan","Cuando hay un dato técnico que sorprende","DM con la explicación a cada uno que falló. Es el lead más calificado"],
+ ["Caja de preguntas","Conversación real","Cuando quieres material y confianza","Contestar UNA POR UNA por DM. Republicar las mejores al día siguiente"],
+ ["Deslizador (0-100%)","Participación fácil","Cuando quieres números, no charla","Poco valor de conversión: úsalo para calentar la cuenta"],
+ ["Cuenta regresiva","Recordatorio automático","Antes de un video, un evento o un lanzamiento","Los que la activan reciben aviso solos. Cero trabajo"],
+ ["Enlace","Tráfico directo","Al blog, al post o al video","En historias el enlace SÍ va directo (la regla de «nunca a landing» es solo para la pauta)"],
+],[1900,1900,2900,3500]));
+
+push(H2("La semana tipo de historias"));
+push(tbl(["Día","Qué se publica","Sticker"],
+  HR.semana_tipo.map(s=>[s.dia,s.historia,s.sticker]),[1400,4900,3900]));
+
+push(H2("Destacadas del perfil"));
+push(P("Las buenas secuencias no se pierden a las 24 horas: se guardan en destacadas. Son la portada del perfil para quien te descubre.",{run:{color:GREY}}));
+HR.destacadas.forEach(x=>push(bul(x)));
+push(note("Cada pieza del mes tiene su secuencia de historias escrita frame por frame — está dentro del desarrollo de la pieza, en la sección 5."));
+
+/* ═══════════════════════════════ 7 · PAUTA ═══════════════════════════════ */
+push(pageBreak());
+push(H1("7 · VENTA y PAUTA — los anuncios (copy listo)"));
 push(P("Estas piezas SÍ venden y van a pauta. Todas llevan a WhatsApp — nunca a landing. El dato es contundente: landing = CPL $164.64 · WhatsApp = CPL $0.45.",{run:{color:RED,bold:true}}));
 push(H2("Cómo se separa el contenido de valor del de venta"));
 push(tbl(["","CONTENIDO DE VALOR (orgánico)","VENTA / PAUTA (ads)"],[
@@ -333,7 +370,7 @@ CAL.pauta.forEach((id,i)=>push(renderPieza({id,fecha:'ANUNCIO '+(i+1),
 
 /* ═══════════════════════════════ 7 · BANCO DE RESERVA ═══════════════════════════════ */
 push(pageBreak());
-push(H1("7 · Banco de reserva (piezas listas por si se cae alguna)"));
+push(H1("8 · Banco de reserva (piezas listas por si se cae alguna)"));
 push(P("Estas piezas ya tienen su contenido completo escrito. Si una fecha se cae o quieres reforzar una red concreta, se toma de aquí sin tener que crear nada.",{run:{color:GREY}}));
 push(tbl(["Pieza","Formato","Red pensada","Hook"],
   CAL.banco_reserva.filter(id=>BY[id]).map(id=>{const p=BY[id];
@@ -342,7 +379,7 @@ push(tbl(["Pieza","Formato","Red pensada","Hook"],
 push(note("El contenido palabra por palabra de todas estas piezas está en el archivo guiones-completos.json del repositorio, que es el mismo que lee la app de contenido."));
 
 /* ═══════════════════════════════ 8 · CIERRE ═══════════════════════════════ */
-push(H1("8 · Resumen operativo y checklist"));
+push(H1("9 · Resumen operativo y checklist"));
 const cuenta={};
 CAL.piezas.forEach(e=>{const f=(e.formato_publicacion.split(' ')[0]||'').toUpperCase();
   cuenta[f]=(cuenta[f]||0)+1;});

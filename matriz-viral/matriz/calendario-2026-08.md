@@ -24,7 +24,9 @@ En LinkedIn: pregunta abierta o DM (nunca "comenta la palabra"). En TikTok: "lin
 **Leyenda:** 🎯 núcleo BIM/IA · 🔩 ACERO · 🎁 lead magnet · 📝 blog · 👥 comunidad · 🏛️ empresa/novedades · *(guion)* = guion listo.
 
 📄 **Versión en Word para el equipo:** `matriz-viral/entregables/Matriz-Contenido-Agosto-2026-DMA.docx`
-Desde el **2026-07-29** ese documento trae el **desarrollo completo de cada pieza**: guion segundo a segundo de los reels, texto y dirección de imagen de cada diapositiva de los carruseles, descripción de los posts planos, copy de los anuncios de pauta y adaptación a cada red. Se regenera con `node scripts/build_matriz_docx.js`.
+Desde el **2026-07-29** ese documento trae el **desarrollo completo de cada pieza**: guion segundo a segundo de los reels, texto y dirección de imagen de cada diapositiva de los carruseles, descripción de los posts planos, **la secuencia de historias frame por frame**, copy de los anuncios de pauta y adaptación a cada red. Se regenera con `node scripts/build_matriz_docx.js`.
+
+📱 **Historias:** cada pieza lleva su secuencia de 3-5 frames con el sticker que la convierte y qué hacer con quien responde. Las reglas y la semana tipo están en `guia-formatos-y-redes.md` §2b.
 
 🔗 **Fuente de datos (la que lee la app):** `matriz/calendario-agosto.json` (orden del mes, fecha → id de pieza) + `matriz/guiones-completos.json` (contenido palabra por palabra). El Word se genera de ahí; no se edita a mano.
 
