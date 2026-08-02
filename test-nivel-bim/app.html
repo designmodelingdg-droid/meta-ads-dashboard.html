@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Test de Nivel BIM · Design Modeling Academy</title>
+<meta name="description" content="Descubre en qué nivel BIM estás — Modelador, Coordinador, BIM Manager 4D-5D o Especialista BIM+IA — y qué te falta para el siguiente. Test gratuito de Design Modeling Academy.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@500;600;700;800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#003e5c; --navy2:#001e30; --azul-medio:#0a5a80;
+    --orange:#ca7520; --orange-d:#e8a04a; --orange-p:#f7e8cc; --crema:#fafaf7;
+    --card:#ffffff; --ink:#333333; --ink2:#5a6b7b; --line:#e5e7eb;
+    --ok:#1e9e6a; --bad:#d64545; --chip-ok:#e4f6ee; --chip-bad:#fdeaea;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Nunito',system-ui,sans-serif;background:linear-gradient(135deg,var(--navy2) 0%,var(--navy) 100%);min-height:100vh;color:var(--ink)}
+  h1,h2,h3{font-family:'Overpass',sans-serif}
+  .wrap{max-width:1080px;margin:0 auto;padding:24px 16px 64px}
+  header{color:#fff;text-align:center;padding:18px 0 22px}
+  header .logo-img{height:52px;width:auto;margin:0 auto 10px;display:block}
+  header .logo{font-family:'Overpass',sans-serif;font-weight:800;letter-spacing:.12em;font-size:.8rem;color:var(--orange-d);text-transform:uppercase}
+  header h1{font-size:clamp(1.5rem,4vw,2.2rem);font-weight:700;margin-top:6px}
+  header p{color:#b9c6d2;margin-top:6px;font-size:.95rem}
+  .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,420px);gap:20px;align-items:start}
+  @media (max-width:900px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--card);border-radius:14px;padding:20px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+  .card h2{font-size:1rem;font-weight:700;color:var(--navy);display:flex;align-items:center;gap:8px;margin-bottom:6px}
+  .card h2 .n{background:var(--orange);color:#fff;border-radius:8px;width:26px;height:26px;display:inline-flex;align-items:center;justify-content:center;font-size:.85rem;flex:none}
+  .card .sub{font-size:.8rem;color:var(--ink2);margin:0 0 14px 34px}
+  /* preguntas */
+  .q{border-top:1px solid var(--line);padding:13px 0}
+  .q:first-of-type{border-top:0;padding-top:4px}
+  .q p{font-size:.9rem;font-weight:600;color:var(--navy);margin-bottom:8px;line-height:1.45}
+  .q p .qn{color:var(--orange);font-weight:800;margin-right:5px}
+  .opts{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+  @media (max-width:620px){.opts{grid-template-columns:1fr 1fr}}
+  .opts button{padding:8px 6px;border:1px solid var(--line);background:#f4f7fa;border-radius:9px;font:inherit;font-size:.74rem;line-height:1.25;cursor:pointer;color:var(--ink2);text-align:center;transition:.12s}
+  .opts button:hover{border-color:var(--orange-d)}
+  .opts button.on{background:var(--navy);color:#fff;border-color:var(--navy);font-weight:700}
+  /* progreso */
+  .prog{position:sticky;top:0;z-index:5;background:var(--card);border-radius:12px;padding:12px 16px;margin-bottom:14px;box-shadow:0 6px 18px rgba(0,0,0,.18)}
+  .prog .bar{height:8px;background:#eef2f6;border-radius:99px;overflow:hidden;margin-top:7px}
+  .prog .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--orange),var(--orange-d));width:0;transition:width .25s}
+  .prog b{font-size:.85rem;color:var(--navy)}
+  .prog span{font-size:.8rem;color:var(--ink2);float:right}
+  /* resultados */
+  .res .row{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px dashed var(--line);font-size:.88rem;align-items:center}
+  .res .row b{color:var(--navy)}
+  .res .row span{color:var(--ink2)}
+  .chip{display:inline-flex;align-items:center;gap:6px;font-size:.75rem;font-weight:700;padding:3px 10px;border-radius:99px;white-space:nowrap}
+  .chip.ok{background:var(--chip-ok);color:var(--ok)}
+  .chip.bad{background:var(--chip-bad);color:var(--bad)}
+  .final{background:linear-gradient(135deg,var(--navy),var(--azul-medio));color:#fff;border-radius:12px;padding:18px;margin-top:14px}
+  .final h3{color:var(--orange-d);font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px}
+  .final .big{font-size:1.25rem;font-weight:800;font-family:'Overpass',sans-serif;line-height:1.35;margin-bottom:8px}
+  .final p{font-size:.88rem;color:#dbe6ef;line-height:1.6}
+  .final small{color:#b9c6d2;display:block;margin-top:10px}
+  .gap{background:#fff7ec;border-left:3px solid var(--orange);border-radius:0 8px 8px 0;padding:11px 13px;margin-top:12px}
+  .gap h4{font-family:'Overpass',sans-serif;font-size:.8rem;color:var(--navy);margin-bottom:7px;text-transform:uppercase;letter-spacing:.05em}
+  .gap ul{margin:0;padding-left:17px}
+  .gap li{font-size:.83rem;color:var(--ink);line-height:1.5;margin-bottom:4px}
+  .next{background:#eef4f8;border-radius:10px;padding:13px;margin-top:12px}
+  .next h4{font-family:'Overpass',sans-serif;font-size:.8rem;color:var(--navy);margin-bottom:6px;text-transform:uppercase;letter-spacing:.05em}
+  .next p{font-size:.85rem;color:var(--ink2);line-height:1.55}
+  .next .kv{font-size:.83rem;color:var(--ink);margin-top:6px}
+  .next .kv b{color:var(--navy)}
+  .btn{display:block;width:100%;padding:12px;border:0;border-radius:10px;background:var(--orange);color:#fff;font:inherit;font-weight:700;font-size:.95rem;cursor:pointer;margin-top:10px;text-align:center;text-decoration:none}
+  .btn:hover{background:var(--orange-d)}
+  .btn.ghost{background:#eef2f6;color:var(--navy);font-weight:600}
+  .hint{font-size:.8rem;color:var(--ink2);background:#f2f6fa;border-left:3px solid var(--orange);padding:9px 11px;border-radius:0 8px 8px 0;margin:10px 0;line-height:1.5}
+  .sketch{margin-top:12px;background:#f7fafc;border:1px solid var(--line);border-radius:12px;padding:8px}
+  svg text{font-family:'Nunito',system-ui,sans-serif}
+  footer{color:#8fa2b3;text-align:center;font-size:.78rem;margin-top:34px}
+  footer a{color:var(--orange-d)}
+  .warn{font-size:.75rem;color:var(--ink2);margin-top:12px;line-height:1.5}
+  /* candado */
+  #lock{position:fixed;inset:0;background:rgba(10,27,43,.96);z-index:50;display:flex;align-items:center;justify-content:center;padding:20px}
+  #lock[hidden]{display:none}
+  #lock .card{max-width:420px;text-align:center}
+  #lock h2{justify-content:center}
+</style>
+</head>
+<body>
+<div id="lock" hidden>
+  <div class="card">
+    <h2>🔒 Acceso al Test de Nivel BIM</h2>
+    <p style="font-size:.9rem;color:var(--ink2);margin-bottom:14px">Para hacer el Test de Nivel BIM de <b>Design Modeling Academy</b> primero regístrate gratis — te toma 20 segundos.</p>
+    <a class="btn" id="lockBtn" href="./index.html" style="text-decoration:none">Registrarme y entrar</a>
+  </div>
+</div>
+
+<div class="wrap">
+  <header>
+    <img class="logo-img" src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04bbc1fa8afa3be0bb00d8.png" alt="Design Modeling Academy DG">
+    <div class="logo">Design Modeling Academy</div>
+    <h1>Test de Nivel BIM</h1>
+    <p>20 preguntas. Descubre si eres Modelador, Coordinador, BIM Manager 4D-5D o Especialista BIM+IA — y qué te falta para el siguiente nivel.</p>
+  </header>
+
+  <div class="grid">
+    <!-- ============ PREGUNTAS ============ -->
+    <div>
+      <div class="prog">
+        <b id="progTxt">0 de 20 respondidas</b><span id="progPct">0%</span>
+        <div class="bar"><i id="progBar"></i></div>
+      </div>
+      <div id="bloques"></div>
+    </div>
+
+    <!-- ============ RESULTADO ============ -->
+    <div>
+      <div class="card res" id="resCard" style="position:sticky;top:78px">
+        <h2><span class="n">✓</span> Tu perfil BIM</h2>
+        <p class="sub">Se actualiza mientras respondes.</p>
+        <div id="resBody"></div>
+        <div class="sketch"><svg id="sketch" viewBox="0 0 400 210" width="100%" role="img" aria-label="Perfil de competencias BIM por bloque"></svg></div>
+        <p class="warn">⚠️ Herramienta educativa y orientativa de <b>Design Modeling Academy</b>. El resultado es una autoevaluación basada en tus propias respuestas: sirve para orientar tu ruta de formación, no constituye una certificación ni una validación oficial de competencias.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © Design Modeling Academy · BIM + IA para construcción ·
+    <a href="./index.html">¿Cómo funciona este test?</a>
+  </footer>
+</div>
+
+<script>
+/* ============ CONFIGURACIÓN DE ACCESO ============
+   El test se "desbloquea" cuando la persona llega desde la landing
+   (index.html) tras dejar sus datos. La landing agrega ?acceso=TOKEN y
+   guarda una marca en localStorage. Cambia el TOKEN aquí y en index.html
+   si quieres invalidar enlaces compartidos. Pon REQUIERE_REGISTRO=false
+   si la página ya vive detrás de un formulario de GoHighLevel. */
+const REQUIERE_REGISTRO = true;
+const TOKEN_ACCESO = 'dmbim26';
+const URL_LANDING = './index.html';
+const URL_AGENDA = 'https://api.leadconnectorhq.com/widget/booking/bIVuNHNojGEgH3gf6yXe';
+
+(function gate(){
+  if(!REQUIERE_REGISTRO) return;
+  const p = new URLSearchParams(location.search);
+  if(p.get('acceso') === TOKEN_ACCESO){ try{localStorage.setItem('dm_nivelbim_acceso', TOKEN_ACCESO);}catch(e){} return; }
+  try{ if(localStorage.getItem('dm_nivelbim_acceso') === TOKEN_ACCESO) return; }catch(e){}
+  const lock = document.getElementById('lock');
+  lock.hidden = false;
+  document.getElementById('lockBtn').href = URL_LANDING;
+})();
+
+/* ============ BANCO DE PREGUNTAS ============
+   20 competencias tomadas del temario del Máster Internacional BIM+IA
+   (12 módulos / 4 bloques trimestrales). 5 competencias por bloque. */
+const OPCIONES = [
+  {v:0, t:'Nunca lo he hecho'},
+  {v:1, t:'Lo he visto / entiendo la idea'},
+  {v:2, t:'Lo hago con ayuda'},
+  {v:3, t:'Lo hago solo y lo enseño'},
+];
+
+const BLOQUES = [
+  {
+    id:'B1', nivel:'Modelador BIM Profesional', meses:'Meses 1–3',
+    entregable:'Modelo arquitectónico y estructural de un proyecto real.',
+    app:'App de IA #1 (mes 3), integrada al rol de Modelador BIM.',
+    modulos:'Módulos 01–03 · Fundamentos BIM, Modelado Arquitectónico y Modelado Estructural + Civil 3D',
+    preguntas:[
+      'Configuro un proyecto desde cero: plantilla, unidades, niveles, rejillas y estándar de nomenclatura.',
+      'Creo familias paramétricas desde cero, con parámetros de tipo y de instancia.',
+      'Modelo la estructura completa (columnas, vigas, losas, cimentación) coherente con la arquitectura.',
+      'Genero planos, cortes, elevaciones y cuadros automáticamente desde el modelo.',
+      'Defino y aplico el LOD/LOI que corresponde a cada entregable del proyecto.',
+    ],
+  },
+  {
+    id:'B2', nivel:'Coordinador BIM', meses:'Meses 4–6',
+    entregable:'Modelo federado coordinado + reporte de interferencias.',
+    app:'App de IA #2 (mes 6), vinculada al rol de Coordinador BIM.',
+    modulos:'Módulos 04–07 · MEP, Federación y Nube, CDE y Clash Detection con Navisworks',
+    preguntas:[
+      'Configuro worksets y trabajo en un central file con varias personas a la vez.',
+      'Federo modelos de varias disciplinas manteniendo coordenadas compartidas.',
+      'Corro clash detection en Navisworks configurando reglas, tolerancias y tipos de clash.',
+      'Gestiono incidencias: reporte, asignación, seguimiento y comunicación por BCF.',
+      'Monto y mantengo un CDE bajo ISO 19650: estructura, versiones y flujos de aprobación.',
+    ],
+  },
+  {
+    id:'B3', nivel:'BIM Manager 4D-5D', meses:'Meses 7–9',
+    entregable:'Simulación 4D + presupuesto 5D.',
+    app:'App de IA #3 (mes 9), especializada en gestión 4D-5D.',
+    modulos:'Módulos 07–09 · Coordinación, Planificación 4D y Costos 5D',
+    preguntas:[
+      'Redacto un BIM Execution Plan (BEP) completo para un proyecto.',
+      'Vinculo el modelo con el cronograma y simulo la secuencia constructiva (4D).',
+      'Extraigo metrados confiables desde el modelo y los valido antes de entregarlos.',
+      'Armo un presupuesto 5D con APUs vinculado al modelo y controlo desviaciones.',
+      'Audito el modelo de un tercero y decido si el entregable se aprueba o se rechaza.',
+    ],
+  },
+  {
+    id:'B4', nivel:'Especialista BIM+IA', meses:'Meses 10–12',
+    entregable:'Proyecto tesis + automatización propia con la DMA Engineering Suite.',
+    app:'App de IA #4 (mes 12): el arsenal completo, entregado con tu título.',
+    modulos:'Módulos 10–12 · Dynamo y Python, IA aplicada y Proyecto Final',
+    preguntas:[
+      'Creo scripts de Dynamo que automatizan tareas repetitivas reales de mis proyectos.',
+      'Escribo Python dentro de Dynamo o contra la Revit API, aunque sea a nivel básico.',
+      'Uso IA para generar documentación o memorias técnicas de mis proyectos.',
+      'Escribo prompts técnicos efectivos y verifico el resultado contra la norma aplicable.',
+      'Diseño mi propia rutina de automatización de punta a punta, sin copiar una plantilla.',
+    ],
+  },
+];
+
+/* CALC-START */
+/* ============ NÚCLEO DE EVALUACIÓN ============
+   Entrada: array de 20 puntajes (0..3) o null si no se respondió.
+   Regla de nivel: un bloque se considera DOMINADO con ≥70% de su puntaje
+   máximo (≥10.5 de 15). El nivel alcanzado es el último bloque dominado
+   de forma CONSECUTIVA desde el bloque 1 — no se puede ser Coordinador
+   sin dominar el modelado, ni BIM Manager sin saber coordinar. */
+const UMBRAL_DOMINIO = 0.70;
+const PREGUNTAS_POR_BLOQUE = 5;
+const PUNTAJE_MAX_PREGUNTA = 3;
+
+function evaluarNivelBIM(respuestas){
+  const r = {};
+  const maxBloque = PREGUNTAS_POR_BLOQUE * PUNTAJE_MAX_PREGUNTA; // 15
+  r.respondidas = respuestas.filter(x => x !== null && x !== undefined).length;
+  r.total = PREGUNTAS_POR_BLOQUE * 4;                            // 20
+  r.completo = r.respondidas === r.total;
+
+  // Puntaje por bloque
+  r.bloques = [0,1,2,3].map(i => {
+    const desde = i * PREGUNTAS_POR_BLOQUE;
+    const trozo = respuestas.slice(desde, desde + PREGUNTAS_POR_BLOQUE);
+    const pts = trozo.reduce((a,x) => a + (x || 0), 0);
+    const pct = pts / maxBloque;
+    return {
+      i, pts, max: maxBloque, pct,
+      dominado: pct >= UMBRAL_DOMINIO,
+      // índices (0..4 dentro del bloque) de las competencias flojas (0 o 1)
+      flojas: trozo.map((x,j) => ({x, j})).filter(o => (o.x || 0) <= 1).map(o => o.j),
+    };
+  });
+
+  // Nivel = último bloque dominado de forma consecutiva desde B1
+  r.nivel = 0;
+  for(let i = 0; i < 4; i++){
+    if(r.bloques[i].dominado) r.nivel = i + 1;
+    else break;
+  }
+
+  // Siguiente bloque a cerrar: el primero NO dominado (o null si domina todo)
+  r.siguiente = r.bloques.findIndex(b => !b.dominado);
+  if(r.siguiente === -1) r.siguiente = null;
+
+  // Puntaje global
+  r.pts = r.bloques.reduce((a,b) => a + b.pts, 0);
+  r.max = maxBloque * 4;                                          // 60
+  r.pct = r.pts / r.max;
+
+  // Bloques dominados sueltos (fuera de la racha) = conocimiento disperso
+  r.dispersos = r.bloques.filter((b,i) => b.dominado && i >= r.nivel).map(b => b.i);
+  return r;
+}
+/* CALC-END */
+
+/* ============ TEXTOS DE RESULTADO POR NIVEL ============ */
+const NIVELES = [
+  {
+    n:0, titulo:'Nivel base · En camino al Modelador BIM',
+    lema:'Estás construyendo los cimientos.',
+    texto:'Todavía no dominas del todo el modelado profesional, y está bien: es exactamente donde empieza todo el mundo. La prioridad ahora es modelar con estándar — plantilla, nomenclatura, familias propias y documentación automática — porque sin eso la coordinación no se sostiene.',
+  },
+  {
+    n:1, titulo:'Nivel 1 · Modelador BIM Profesional',
+    lema:'Modelas bien. Todavía no coordinas.',
+    texto:'Dominas el modelado arquitectónico y estructural con estándar. Tu techo hoy es que trabajas sobre tu propia disciplina: el salto está en integrar las de los demás — federar, detectar interferencias y gestionar la información del proyecto completo.',
+  },
+  {
+    n:2, titulo:'Nivel 2 · Coordinador BIM',
+    lema:'Integras disciplinas. Todavía no gestionas el proyecto.',
+    texto:'Federas modelos, detectas interferencias y manejas el flujo de información entre equipos. Lo que te separa del siguiente nivel no es más software: es el tiempo y el dinero — planificar en 4D, presupuestar en 5D y responder por el entregable.',
+  },
+  {
+    n:3, titulo:'Nivel 3 · BIM Manager 4D-5D',
+    lema:'Gestionas el proyecto. Todavía no lo automatizas.',
+    texto:'Manejas el proyecto de punta a punta: planificas, presupuestas, auditas y decides. El último salto es dejar de hacer a mano lo que una máquina hace mejor — Dynamo, Python e IA aplicada — para multiplicar lo que ya sabes hacer.',
+  },
+  {
+    n:4, titulo:'Nivel 4 · Especialista BIM+IA',
+    lema:'Estás en el nivel más alto de la ruta.',
+    texto:'Modelas, coordinas, gestionas y además automatizas con IA. Estás en el perfil que hoy buscan las empresas y que casi nadie tiene completo. Lo que queda no es aprender más herramientas: es certificar y demostrar lo que ya sabes, y liderar equipos que lo apliquen.',
+  },
+];
+
+/* ============ UI ============ */
+const $ = id => document.getElementById(id);
+const respuestas = new Array(20).fill(null);
+
+// Render de bloques y preguntas
+(function pintarPreguntas(){
+  const cont = $('bloques');
+  BLOQUES.forEach((b, bi) => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    if(bi > 0) card.style.marginTop = '16px';
+    const qs = b.preguntas.map((texto, qi) => {
+      const idx = bi*PREGUNTAS_POR_BLOQUE + qi;
+      const botones = OPCIONES.map(o =>
+        `<button type="button" data-i="${idx}" data-v="${o.v}">${o.t}</button>`).join('');
+      return `<div class="q"><p><span class="qn">${idx+1}.</span>${texto}</p><div class="opts">${botones}</div></div>`;
+    }).join('');
+    card.innerHTML = `<h2><span class="n">${bi+1}</span> ${b.nivel}</h2>
+      <p class="sub">${b.modulos}</p>${qs}`;
+    cont.appendChild(card);
+  });
+  cont.querySelectorAll('.opts button').forEach(btn => {
+    btn.onclick = () => {
+      const i = +btn.dataset.i;
+      respuestas[i] = +btn.dataset.v;
+      btn.parentElement.querySelectorAll('button').forEach(x => x.classList.toggle('on', x === btn));
+      run();
+    };
+  });
+})();
+
+const pct1 = x => Math.round(x*100);
+const chip = ok => `<span class="chip ${ok?'ok':'bad'}">${ok?'✔ DOMINADO':'✖ POR CERRAR'}</span>`;
+
+function run(){
+  const r = evaluarNivelBIM(respuestas);
+
+  // progreso
+  $('progTxt').textContent = `${r.respondidas} de ${r.total} respondidas`;
+  $('progPct').textContent = `${pct1(r.respondidas/r.total)}%`;
+  $('progBar').style.width = `${pct1(r.respondidas/r.total)}%`;
+
+  // filas por bloque
+  const rows = r.bloques.map((b,i) =>
+    `<div class="row"><span>${i+1}. ${BLOQUES[i].nivel}<br><small style="color:#9aa9b6">${b.pts} / ${b.max} pts · ${pct1(b.pct)}%</small></span><b>${chip(b.dominado)}</b></div>`
+  ).join('');
+
+  let cuerpo = rows;
+
+  if(!r.completo){
+    cuerpo += `<div class="hint">Te faltan <b>${r.total - r.respondidas}</b> preguntas para ver tu nivel y tu ruta personalizada.</div>`;
+    $('resBody').innerHTML = cuerpo;
+    dibujar(r);
+    return;
+  }
+
+  const N = NIVELES[r.nivel];
+  cuerpo += `
+    <div class="final">
+      <h3>Tu resultado</h3>
+      <div class="big">${N.titulo}</div>
+      <p><b>${N.lema}</b><br>${N.texto}</p>
+      <small>Puntaje global: ${r.pts} / ${r.max} · ${pct1(r.pct)}%</small>
+    </div>`;
+
+  // brecha concreta: competencias flojas del bloque a cerrar
+  if(r.siguiente !== null){
+    const b = r.bloques[r.siguiente];
+    const bl = BLOQUES[r.siguiente];
+    const items = b.flojas.map(j => `<li>${bl.preguntas[j]}</li>`).join('');
+    if(items){
+      cuerpo += `<div class="gap"><h4>Lo que te falta cerrar para llegar a ${bl.nivel}</h4><ul>${items}</ul></div>`;
+    }
+    cuerpo += `
+      <div class="next">
+        <h4>Tu siguiente paso en la ruta</h4>
+        <p><b>Bloque ${r.siguiente+1} · ${bl.nivel}</b> — ${bl.meses}</p>
+        <div class="kv"><b>Qué construyes:</b> ${bl.entregable}</div>
+        <div class="kv"><b>Qué te llevas:</b> ${bl.app}</div>
+        <div class="kv"><b>Microcredencial:</b> ${bl.nivel}, avalada por el Silicon Valley Futures Institute.</div>
+      </div>`;
+  }else{
+    cuerpo += `
+      <div class="next">
+        <h4>Tu siguiente paso</h4>
+        <p>Dominas los cuatro bloques según tu autoevaluación. El paso que sigue no es aprender otra herramienta: es <b>certificar lo que ya sabes</b> con las 4 microcredenciales avaladas por el Silicon Valley Futures Institute y los diplomas universitarios internacionales.</p>
+      </div>`;
+  }
+
+  // conocimiento disperso
+  if(r.dispersos.length){
+    const nombres = r.dispersos.map(i => BLOQUES[i].nivel).join(' y ');
+    cuerpo += `<div class="hint">Ojo con esto: ya dominas <b>${nombres}</b>, pero tienes un bloque anterior sin cerrar. Es el patrón más común del sector — se aprende la herramienta nueva y se salta la base. En la práctica esa base es la que se te va a caer en el proyecto.</div>`;
+  }
+
+  cuerpo += `<a class="btn" href="${URL_AGENDA}" target="_blank" rel="noopener">Agendar mis 15 min y revisar mi ruta</a>
+    <button class="btn ghost" type="button" id="reiniciar">Volver a hacer el test</button>`;
+
+  $('resBody').innerHTML = cuerpo;
+  const rb = $('reiniciar');
+  if(rb) rb.onclick = () => {
+    respuestas.fill(null);
+    document.querySelectorAll('.opts button.on').forEach(b => b.classList.remove('on'));
+    window.scrollTo({top:0, behavior:'smooth'});
+    run();
+  };
+  dibujar(r);
+}
+
+/* ============ GRÁFICO SVG DE PERFIL ============ */
+function dibujar(r){
+  const svg = $('sketch');
+  const x0 = 106, y0 = 34, ancho = 260, alto = 30, sep = 12;
+  const umbral = x0 + ancho*UMBRAL_DOMINIO;
+  const barras = r.bloques.map((b,i) => {
+    const y = y0 + i*(alto+sep);
+    const w = Math.max(2, ancho*b.pct);
+    const col = b.dominado ? '#1e9e6a' : (b.pct > 0 ? '#ca7520' : '#d7dee5');
+    return `
+      <text x="${x0-8}" y="${y+13}" text-anchor="end" font-size="10" font-weight="700" fill="#003e5c">${i+1}. ${BLOQUES[i].nivel.split(' ')[0]}</text>
+      <text x="${x0-8}" y="${y+24}" text-anchor="end" font-size="8" fill="#8fa2b3">${BLOQUES[i].nivel.split(' ').slice(1).join(' ')}</text>
+      <rect x="${x0}" y="${y}" width="${ancho}" height="${alto-8}" rx="5" fill="#eef2f6"/>
+      <rect x="${x0}" y="${y}" width="${w}" height="${alto-8}" rx="5" fill="${col}"/>
+      <text x="${x0+ancho+6}" y="${y+15}" font-size="9" font-weight="700" fill="#5a6b7b">${pct1(b.pct)}%</text>`;
+  }).join('');
+  svg.innerHTML = `
+    <text x="10" y="18" font-size="11" font-weight="700" fill="#003e5c">PERFIL POR BLOQUE</text>
+    ${barras}
+    <line x1="${umbral}" y1="26" x2="${umbral}" y2="${y0 + 4*(alto+sep) - 6}" stroke="#d64545" stroke-width="1" stroke-dasharray="3 3"/>
+    <text x="${umbral}" y="22" text-anchor="middle" font-size="8" fill="#d64545">dominio 70%</text>`;
+}
+
+run();
+</script>
+</body>
+</html>
