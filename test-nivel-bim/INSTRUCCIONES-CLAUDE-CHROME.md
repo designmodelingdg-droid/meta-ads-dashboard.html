@@ -1,7 +1,7 @@
 # Instrucciones para el Claude del navegador — montaje en GoHighLevel
 
 > **Cómo usar este archivo:** pégaselo completo al Claude de Chrome junto con
-> los archivos `ghl-landing.html` y `gracias-agenda.html`. Está escrito para
+> los archivos `ghl-landing.html` y `ghl-gracias.html`. Está escrito para
 > que lo ejecute él directamente en la cuenta de GHL de Design Modeling.
 
 ---
@@ -71,7 +71,10 @@ respaldo, que **no guarda nada en el CRM**.
    - Importante: el elemento debe ocupar el 100% del ancho y la sección no
      debe tener márgenes, o el diseño se ve encajonado.
 3. **Página 2** — ruta `/test-nivel-bim/gracias`:
-   - Mismo procedimiento con **`gracias-agenda.html`**.
+   - Mismo procedimiento con **`ghl-gracias.html`** (⚠️ ese archivo, no
+     `gracias-agenda.html`: la versión `ghl-` es la que tiene las rutas
+     absolutas hacia el test; la otra apuntaría a un archivo inexistente
+     dentro del dominio de GHL).
    - Esta página tiene el calendario de agenda ya embebido; verifica que carga.
 4. **Publica ambas páginas** y ábrelas desde un móvil para revisar que se ven
    bien (el diseño es responsive, no debería haber scroll horizontal).
