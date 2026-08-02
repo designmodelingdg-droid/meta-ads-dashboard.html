@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Test de Nivel BIM gratuito · Design Modeling Academy</title>
+<meta name="description" content="20 preguntas para saber si eres Modelador BIM, Coordinador BIM, BIM Manager 4D-5D o Especialista BIM+IA — y exactamente qué te falta para el siguiente nivel. Gratis, en 5 minutos.">
+<meta property="og:title" content="Test de Nivel BIM gratuito · Design Modeling Academy">
+<meta property="og:description" content="Descubre en qué nivel BIM estás realmente y qué te falta para el siguiente. 20 preguntas, 5 minutos, resultado inmediato.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@500;600;700;800;900&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#003e5c; --navy2:#001e30; --azul-medio:#0a5a80;
+    --naranja:#ca7520; --naranja-claro:#e8a04a; --naranja-palido:#f7e8cc;
+    --crema:#fafaf7; --ink:#333; --ink2:#5a6b7b; --line:#e5e7eb;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Nunito',system-ui,sans-serif;color:var(--ink);background:var(--crema);line-height:1.6}
+  h1,h2,h3,h4{font-family:'Overpass',sans-serif;line-height:1.2}
+  .container{max-width:1140px;margin:0 auto;padding:0 20px}
+  section{padding:64px 0}
+  /* NAV */
+  nav{background:var(--navy2);padding:12px 0;position:sticky;top:0;z-index:40}
+  nav .container{display:flex;align-items:center;justify-content:space-between;gap:16px}
+  nav img{height:40px}
+  nav a.cta{background:var(--naranja);color:#fff;text-decoration:none;padding:9px 18px;border-radius:8px;font-weight:700;font-size:.85rem;font-family:'Overpass',sans-serif}
+  nav a.cta:hover{background:var(--naranja-claro)}
+  /* HERO */
+  .hero{background:linear-gradient(135deg,var(--navy2) 0%,var(--navy) 60%,var(--azul-medio) 100%);color:#fff;padding:56px 0 64px}
+  .hero .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,430px);gap:44px;align-items:start}
+  @media (max-width:940px){.hero .grid{grid-template-columns:1fr}}
+  .badge{display:inline-block;background:rgba(232,160,74,.16);color:var(--naranja-claro);border:1px solid rgba(232,160,74,.4);padding:6px 14px;border-radius:99px;font-size:.78rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;margin-bottom:18px}
+  .hero h1{font-size:clamp(1.9rem,4.6vw,3rem);font-weight:900;margin-bottom:16px}
+  .hero h1 em{color:var(--naranja-claro);font-style:normal}
+  .hero .lead{font-size:1.05rem;color:#cfdce6;margin-bottom:24px;max-width:56ch}
+  .hero ul{list-style:none;margin-bottom:8px}
+  .hero ul li{padding:7px 0 7px 30px;position:relative;color:#e3ecf3;font-size:.96rem}
+  .hero ul li:before{content:'✓';position:absolute;left:0;top:7px;color:var(--naranja-claro);font-weight:900}
+  /* FORM CARD */
+  .formcard{background:#fff;border-radius:16px;padding:26px;box-shadow:0 18px 50px rgba(0,0,0,.3);color:var(--ink)}
+  .formcard h3{color:var(--navy);font-size:1.2rem;margin-bottom:4px}
+  .formcard .p{font-size:.86rem;color:var(--ink2);margin-bottom:16px}
+  .formcard label{display:block;font-size:.8rem;font-weight:700;color:var(--navy);margin:11px 0 4px}
+  .formcard input,.formcard select{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:9px;font:inherit;font-size:.92rem;background:#fbfcfe}
+  .formcard input:focus,.formcard select:focus{outline:2px solid var(--naranja);border-color:var(--naranja)}
+  .formcard button{width:100%;margin-top:18px;padding:13px;border:0;border-radius:10px;background:var(--naranja);color:#fff;font:inherit;font-family:'Overpass',sans-serif;font-weight:800;font-size:1rem;cursor:pointer}
+  .formcard button:hover{background:var(--naranja-claro)}
+  .formcard button:disabled{opacity:.6;cursor:default}
+  .formcard .fine{font-size:.72rem;color:var(--ink2);margin-top:11px;text-align:center;line-height:1.45}
+  #errBox{display:none;background:#fdeaea;color:#a11;border-radius:8px;padding:9px 11px;font-size:.82rem;margin-top:12px}
+  /* MARQUEE AVALES */
+  .marquee{background:var(--navy2);padding:16px 0;overflow:hidden;white-space:nowrap}
+  .marquee .track{display:inline-flex;gap:44px;animation:slide 28s linear infinite}
+  .marquee span{color:#8fa2b3;font-family:'Overpass',sans-serif;font-size:.82rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;flex:none}
+  @keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @media (prefers-reduced-motion:reduce){.marquee .track{animation:none}}
+  /* SECCIONES */
+  .eyebrow{color:var(--naranja);font-family:'Overpass',sans-serif;font-weight:800;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px}
+  h2.sec{font-size:clamp(1.5rem,3.4vw,2.2rem);color:var(--navy);font-weight:800;margin-bottom:14px}
+  .sub{color:var(--ink2);font-size:1rem;max-width:62ch;margin-bottom:34px}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+  .tool{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;border-top:3px solid var(--naranja)}
+  .tool .n{font-family:'Overpass',sans-serif;font-weight:900;font-size:1.6rem;color:var(--naranja-palido);line-height:1}
+  .tool h4{color:var(--navy);font-size:1rem;margin:6px 0 7px}
+  .tool p{font-size:.88rem;color:var(--ink2)}
+  /* RUTA */
+  .ruta{background:var(--navy);color:#fff}
+  .ruta h2.sec{color:#fff}
+  .ruta .sub{color:#b9c6d2}
+  .paso{display:grid;grid-template-columns:56px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+  .paso:last-child{border-bottom:0}
+  .paso .num{width:44px;height:44px;border-radius:12px;background:var(--naranja);color:#fff;font-family:'Overpass',sans-serif;font-weight:900;font-size:1.15rem;display:flex;align-items:center;justify-content:center}
+  .paso h4{font-size:1.02rem;margin-bottom:3px}
+  .paso .meses{color:var(--naranja-claro);font-size:.76rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:5px}
+  .paso p{color:#c3d2dd;font-size:.9rem}
+  /* ASI SE USA */
+  .shot{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px;box-shadow:0 10px 30px rgba(0,62,92,.08)}
+  .shot img{width:100%;border-radius:9px;display:block}
+  .shot .cap{font-size:.8rem;color:var(--ink2);text-align:center;margin-top:9px}
+  .split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:34px;align-items:center}
+  @media (max-width:860px){.split{grid-template-columns:1fr}}
+  /* PARA QUIEN */
+  .siNo{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  @media (max-width:700px){.siNo{grid-template-columns:1fr}}
+  .siNo div{background:#fff;border-radius:14px;padding:22px;border:1px solid var(--line)}
+  .siNo h4{font-size:1rem;margin-bottom:12px}
+  .siNo.ok h4{color:#1e9e6a}
+  .siNo ul{list-style:none}
+  .siNo li{padding:6px 0 6px 26px;position:relative;font-size:.9rem;color:var(--ink2)}
+  .siNo .si li:before{content:'✓';position:absolute;left:0;color:#1e9e6a;font-weight:900}
+  .siNo .no li:before{content:'✕';position:absolute;left:0;color:#d64545;font-weight:900}
+  .siNo .si h4{color:#1e9e6a}.siNo .no h4{color:#d64545}
+  /* FAQ */
+  details{background:#fff;border:1px solid var(--line);border-radius:11px;padding:15px 18px;margin-bottom:11px}
+  details summary{font-family:'Overpass',sans-serif;font-weight:700;color:var(--navy);cursor:pointer;font-size:.96rem}
+  details p{margin-top:10px;font-size:.9rem;color:var(--ink2)}
+  /* CTA FINAL */
+  .final{background:linear-gradient(135deg,var(--navy2),var(--azul-medio));color:#fff;text-align:center}
+  .final h2{font-size:clamp(1.6rem,3.6vw,2.4rem);font-weight:900;margin-bottom:14px}
+  .final p{color:#c3d2dd;max-width:56ch;margin:0 auto 26px}
+  .final a{display:inline-block;background:var(--naranja);color:#fff;text-decoration:none;padding:15px 38px;border-radius:11px;font-family:'Overpass',sans-serif;font-weight:800;font-size:1.05rem}
+  .final a:hover{background:var(--naranja-claro)}
+  footer{background:var(--navy2);color:#8fa2b3;padding:28px 0;text-align:center;font-size:.82rem}
+  footer a{color:var(--naranja-claro)}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04bbc1fa8afa3be0bb00d8.png" alt="Design Modeling Academy">
+    <a class="cta" href="#registro">Hacer el test gratis</a>
+  </div>
+</nav>
+
+<!-- ==================== HERO ==================== -->
+<div class="hero">
+  <div class="container grid">
+    <div>
+      <span class="badge">Test gratuito · 5 minutos</span>
+      <h1>¿En qué nivel BIM estás <em>realmente</em>?</h1>
+      <p class="lead">20 preguntas sobre lo que sabes hacer de verdad en un proyecto. Al terminar sabes si eres Modelador, Coordinador, BIM Manager 4D-5D o Especialista BIM+IA — y exactamente qué competencias te faltan para el siguiente nivel.</p>
+      <ul>
+        <li>Resultado inmediato, sin esperar correos</li>
+        <li>Tu perfil por bloque, no una nota genérica</li>
+        <li>La lista concreta de lo que te falta cerrar</li>
+        <li>Basado en el temario real del Máster Internacional BIM+IA</li>
+      </ul>
+    </div>
+
+    <div class="formcard" id="registro">
+      <h3>Empieza tu test</h3>
+      <p class="p">Déjanos tus datos y entras al test al instante.</p>
+      <div id="ghlIframe" hidden></div>
+      <form id="leadForm" novalidate>
+        <label for="nombre">Nombre y apellido</label>
+        <input id="nombre" name="nombre" type="text" autocomplete="name" placeholder="Tu nombre">
+        <label for="email">Correo electrónico</label>
+        <input id="email" name="email" type="email" autocomplete="email" placeholder="tu@correo.com">
+        <label for="telefono">WhatsApp (con código de país)</label>
+        <input id="telefono" name="telefono" type="tel" autocomplete="tel" placeholder="+593 99 999 9999">
+        <label for="perfil">¿A qué te dedicas?</label>
+        <select id="perfil" name="perfil">
+          <option value="">Selecciona una opción</option>
+          <option>Estudiante de arquitectura o ingeniería</option>
+          <option>Arquitecto/a</option>
+          <option>Ingeniero/a civil o estructural</option>
+          <option>Modelador/a BIM</option>
+          <option>Coordinador/a BIM</option>
+          <option>BIM Manager</option>
+          <option>Otro</option>
+        </select>
+        <div id="errBox">Revisa los campos: necesitamos nombre, un correo válido, tu WhatsApp y tu perfil.</div>
+        <button id="submitBtn" type="submit">Entrar al test →</button>
+        <p class="fine">Acceso inmediato. Usamos tus datos solo para enviarte contenido de Design Modeling Academy — puedes darte de baja cuando quieras.</p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== MARQUEE DE AVALES ==================== -->
+<div class="marquee">
+  <div class="track">
+    <span>Autodesk · Certificaciones oficiales</span><span>Sabal University · EE.UU.</span>
+    <span>ISTE España</span><span>Silicon Valley Futures Institute</span>
+    <span>Universidad de las Naciones</span><span>Aval SENESCYT Ecuador</span>
+    <span>Doctrinas Qualitas</span>
+    <span>Autodesk · Certificaciones oficiales</span><span>Sabal University · EE.UU.</span>
+    <span>ISTE España</span><span>Silicon Valley Futures Institute</span>
+    <span>Universidad de las Naciones</span><span>Aval SENESCYT Ecuador</span>
+    <span>Doctrinas Qualitas</span>
+  </div>
+</div>
+
+<!-- ==================== QUÉ OBTIENES ==================== -->
+<section>
+  <div class="container">
+    <p class="eyebrow">Qué te llevas</p>
+    <h2 class="sec">No es un quiz de redes. Es un diagnóstico.</h2>
+    <p class="sub">La mayoría de los tests te dan una etiqueta bonita y ya. Este te dice dónde estás parado en una ruta real de 4 niveles, y qué competencia concreta te está frenando.</p>
+    <div class="cards">
+      <div class="tool"><div class="n">01</div><h4>Tu nivel en la ruta</h4><p>Modelador, Coordinador, BIM Manager 4D-5D o Especialista BIM+IA. Con la regla honesta: no se puede coordinar sin saber modelar.</p></div>
+      <div class="tool"><div class="n">02</div><h4>Tu perfil por bloque</h4><p>Un gráfico con tu porcentaje en cada uno de los 4 bloques. Ves de un vistazo dónde estás fuerte y dónde tienes el hueco.</p></div>
+      <div class="tool"><div class="n">03</div><h4>La brecha, con nombre</h4><p>La lista exacta de las competencias que marcaste flojas en el bloque que te toca cerrar. Nada de "estudia más".</p></div>
+      <div class="tool"><div class="n">04</div><h4>Tu siguiente paso</h4><p>Qué bloque sigue, qué construyes en él, qué microcredencial obtienes y qué app de IA te llevas.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== LA RUTA ==================== -->
+<section class="ruta">
+  <div class="container">
+    <p class="eyebrow">Contra qué te mides</p>
+    <h2 class="sec">Los 4 niveles de la ruta BIM</h2>
+    <p class="sub">Las mismas 4 microcredenciales del Máster Internacional BIM+IA, avaladas por el Silicon Valley Futures Institute. Cada una acredita una competencia profesional medible — no horas de asistencia.</p>
+    <div class="paso"><div class="num">1</div><div>
+      <div class="meses">Meses 1–3 · Módulos 01–03</div>
+      <h4>Modelador BIM Profesional</h4>
+      <p>Modelado arquitectónico y estructural multiplataforma con estándar: plantillas, familias paramétricas, LOD/LOI y documentación automática.</p></div></div>
+    <div class="paso"><div class="num">2</div><div>
+      <div class="meses">Meses 4–6 · Módulos 04–07</div>
+      <h4>Coordinador BIM</h4>
+      <p>MEP, worksets, federación con coordenadas compartidas, clash detection en Navisworks, gestión de incidencias por BCF y CDE bajo ISO 19650.</p></div></div>
+    <div class="paso"><div class="num">3</div><div>
+      <div class="meses">Meses 7–9 · Módulos 07–09</div>
+      <h4>BIM Manager 4D-5D</h4>
+      <p>BEP, planificación 4D con TimeLiner, metrados validados, presupuesto 5D con APUs, control de desviaciones y auditoría de modelos de terceros.</p></div></div>
+    <div class="paso"><div class="num">4</div><div>
+      <div class="meses">Meses 10–12 · Módulos 10–12</div>
+      <h4>Especialista BIM+IA</h4>
+      <p>Automatización con Dynamo y Python, IA aplicada al flujo BIM y dominio de la DMA Engineering Suite para generar memorias y automatizar tu propio proceso.</p></div></div>
+  </div>
+</section>
+
+<!-- ==================== ASÍ SE USA ==================== -->
+<section>
+  <div class="container split">
+    <div>
+      <p class="eyebrow">Así funciona</p>
+      <h2 class="sec">Respondes, y el perfil se arma solo</h2>
+      <p class="sub">Cada pregunta tiene 4 opciones honestas: <b>nunca lo he hecho</b>, <b>lo he visto</b>, <b>lo hago con ayuda</b> o <b>lo hago solo y lo enseño</b>. El resultado se recalcula en vivo mientras respondes — no hay que esperar al final para ver cómo va tu perfil.</p>
+      <p class="sub" style="margin-bottom:0">Un bloque se considera dominado a partir del <b>70%</b>. Y el nivel se cuenta de forma consecutiva desde el primero: si dominas 4D-5D pero no sabes federar, el test te lo dice en la cara. Es incómodo, pero es lo útil.</p>
+    </div>
+    <div class="shot">
+      <img src="./img/test-nivel-bim.png" alt="Pantalla del Test de Nivel BIM mostrando el perfil por bloque y el resultado" loading="lazy">
+      <p class="cap">El perfil por bloque y la brecha concreta, en la misma pantalla.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PARA QUIÉN ==================== -->
+<section style="background:#fff">
+  <div class="container">
+    <p class="eyebrow">Sinceridad</p>
+    <h2 class="sec">Para quién sí y para quién no</h2>
+    <div class="siNo">
+      <div class="si"><h4>✓ Te va a servir si…</h4><ul>
+        <li>Modelas en Revit y no sabes cuál es tu siguiente paso real</li>
+        <li>Quieres pasar de modelador a coordinador o a BIM Manager</li>
+        <li>Aprendiste por tu cuenta y sospechas que tienes huecos</li>
+        <li>Vas a contratar o formar un equipo BIM y necesitas medir el nivel</li>
+        <li>Quieres saber qué bloque del Máster te corresponde</li>
+      </ul></div>
+      <div class="no"><h4>✕ No te va a servir si…</h4><ul>
+        <li>Buscas una certificación oficial — esto es una autoevaluación</li>
+        <li>Nunca has abierto un software BIM (empieza por el Bloque 1)</li>
+        <li>Esperas que alguien revise tus modelos: el test no los audita</li>
+        <li>Quieres un resultado que te diga lo que quieres oír</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FAQ ==================== -->
+<section>
+  <div class="container" style="max-width:820px">
+    <p class="eyebrow">Preguntas</p>
+    <h2 class="sec">Lo que suelen preguntarnos</h2>
+    <details open><summary>¿Cuánto toma?</summary><p>Unos 5 minutos. Son 20 preguntas de una sola selección y el resultado sale al instante, en la misma pantalla.</p></details>
+    <details><summary>¿Es realmente gratis?</summary><p>Sí. Dejas tus datos una vez y entras al test inmediatamente — no hay pago ni prueba limitada.</p></details>
+    <details><summary>¿El resultado es una certificación?</summary><p>No. Es una autoevaluación orientativa basada en tus propias respuestas: sirve para ubicarte en la ruta y decidir qué estudiar. Las certificaciones reales (Autodesk, microcredenciales DQ avaladas por el Silicon Valley Futures Institute y los diplomas universitarios) se obtienen cursando y aprobando cada bloque.</p></details>
+    <details><summary>¿Qué pasa si me sale un nivel bajo?</summary><p>Que ya sabes por dónde empezar, que es justamente el punto. El Bloque 1 es la base obligatoria para todos los alumnos del Máster, sin importar la experiencia previa — el test te dice cuánto de esa base ya tienes cubierta.</p></details>
+    <details><summary>¿De dónde salen las preguntas?</summary><p>De las competencias de los 12 módulos del Máster Internacional BIM+IA, agrupadas en sus 4 bloques trimestrales. Cinco competencias por bloque, las que de verdad marcan el salto de un rol al siguiente.</p></details>
+    <details><summary>¿Puedo repetirlo?</summary><p>Las veces que quieras. De hecho es buena idea repetirlo cada cierto tiempo para ver cómo se mueve tu perfil.</p></details>
+  </div>
+</section>
+
+<!-- ==================== CTA FINAL ==================== -->
+<section class="final">
+  <div class="container">
+    <h2>5 minutos para saber dónde estás parado</h2>
+    <p>Y lo más importante: qué competencia concreta te está frenando ahora mismo.</p>
+    <a href="#registro">Hacer el Test de Nivel BIM gratis</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    © Design Modeling Academy · BIM + IA para la construcción<br>
+    <a href="https://funnel.dgdesignmodeling.com/design-modeling-acreditaciones" target="_blank" rel="noopener">Ver acreditaciones</a> ·
+    <a href="https://funnel.dgdesignmodeling.com/lider-bim-internacional" target="_blank" rel="noopener">Máster Internacional BIM+IA</a>
+  </div>
+</footer>
+
+<script>
+/* ==================== CONFIGURACIÓN GOHIGHLEVEL ====================
+   ⚠️ PASO 1 DEL MONTAJE (ver GUIA-MONTAJE.md): mientras estas dos
+   constantes estén vacías el test se abre igual, pero NINGÚN lead llega
+   al CRM. Hay que llenar al menos una.
+
+   Vía A (preferida): crea en GHL el formulario "Test de Nivel BIM -
+   Registro" y pega aquí su URL de embed. Los contactos entran nativos al
+   CRM, sin costo por ejecución. Configura la redirección del formulario a
+   gracias-agenda.html.
+
+   Vía B (respaldo): Inbound Webhook de GHL. ⚠️ es prémium, cobra por
+   ejecución. */
+const GHL_FORM_IFRAME_URL = ''; // ← pega aquí la URL del formulario nativo
+const GHL_WEBHOOK_URL     = ''; // ← o la URL del Inbound Webhook
+const URL_GRACIAS         = './gracias-agenda.html';
+const TOKEN_ACCESO        = 'dmbim26'; // debe coincidir con app.html
+
+/* ==================== LÓGICA ==================== */
+if(GHL_FORM_IFRAME_URL){
+  // Embed oficial de GHL (form_embed.js ajusta la altura solo)
+  const formId = GHL_FORM_IFRAME_URL.split('/').pop();
+  document.getElementById('leadForm').hidden = true;
+  const box = document.getElementById('ghlIframe');
+  box.hidden = false;
+  box.innerHTML = `<iframe src="${GHL_FORM_IFRAME_URL}" id="inline-${formId}"
+    data-layout="{'id':'INLINE'}" data-trigger-type="alwaysShow" data-trigger-value=""
+    data-activation-type="alwaysActivated" data-activation-value=""
+    data-deactivation-type="neverDeactivate" data-deactivation-value=""
+    data-form-name="Test de Nivel BIM - Registro" data-height="620"
+    data-layout-iframe-id="inline-${formId}" data-form-id="${formId}"
+    style="width:100%;min-height:620px;border:none;border-radius:6px"
+    title="Test de Nivel BIM - Registro"></iframe>`;
+  const s = document.createElement('script');
+  s.src = 'https://link.msgsndr.com/js/form_embed.js';
+  box.appendChild(s);
+}else if(!GHL_WEBHOOK_URL){
+  console.warn('[DMA] Test de Nivel BIM: sin GHL_FORM_IFRAME_URL ni GHL_WEBHOOK_URL — los registros NO se están guardando en el CRM. Ver GUIA-MONTAJE.md, paso 1.');
+}
+
+document.getElementById('leadForm').addEventListener('submit', async (e)=>{
+  e.preventDefault();
+  const $ = id => document.getElementById(id);
+  const datos = {
+    nombre:   $('nombre').value.trim(),
+    email:    $('email').value.trim(),
+    telefono: $('telefono').value.trim(),
+    perfil:   $('perfil').value,
+    fuente:   'test-nivel-bim',
+    pagina:   location.href,
+  };
+  const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(datos.email);
+  const telOk   = datos.telefono.replace(/\D/g,'').length >= 7;
+  if(!datos.nombre || !emailOk || !telOk || !datos.perfil){
+    $('errBox').style.display = 'block';
+    return;
+  }
+  $('errBox').style.display = 'none';
+  const btn = $('submitBtn');
+  btn.disabled = true; btn.textContent = 'Entrando…';
+
+  if(GHL_WEBHOOK_URL){
+    try{
+      await fetch(GHL_WEBHOOK_URL, {
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify(datos),
+        mode:'no-cors', // GHL acepta el POST aunque la respuesta no sea legible
+      });
+    }catch(err){ /* nunca bloqueamos el acceso si el webhook falla */ }
+  }
+  try{ localStorage.setItem('dm_nivelbim_acceso', TOKEN_ACCESO); }catch(err){}
+  location.href = URL_GRACIAS + '?acceso=' + TOKEN_ACCESO;
+});
+</script>
+</body>
+</html>

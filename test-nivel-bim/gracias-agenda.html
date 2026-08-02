@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>¡Listo! Tu Test de Nivel BIM te espera · Design Modeling Academy</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@500;600;700;800;900&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#003e5c; --navy2:#001e30; --azul-medio:#0a5a80;
+    --naranja:#ca7520; --naranja-claro:#e8a04a; --naranja-palido:#f7e8cc;
+    --crema:#fafaf7; --ink:#333; --ink2:#5a6b7b; --line:#e5e7eb;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Nunito',system-ui,sans-serif;color:var(--ink);background:var(--crema);line-height:1.6}
+  h1,h2,h3,h4{font-family:'Overpass',sans-serif;line-height:1.2}
+  .container{max-width:900px;margin:0 auto;padding:0 20px}
+  /* HERO */
+  .hero{background:linear-gradient(135deg,var(--navy2) 0%,var(--navy) 60%,var(--azul-medio) 100%);color:#fff;text-align:center;padding:48px 0 54px}
+  .hero img.logo{height:46px;margin-bottom:18px}
+  .tick{width:62px;height:62px;border-radius:50%;background:rgba(30,158,106,.18);border:2px solid #1e9e6a;color:#7ee2b8;display:flex;align-items:center;justify-content:center;font-size:1.9rem;margin:0 auto 16px}
+  .hero h1{font-size:clamp(1.7rem,4.2vw,2.5rem);font-weight:900;margin-bottom:12px}
+  .hero p{color:#cfdce6;max-width:54ch;margin:0 auto}
+  /* ACCESO */
+  .acceso{margin:-32px auto 0;background:#fff;border-radius:16px;padding:30px 26px;box-shadow:0 18px 50px rgba(0,62,92,.18);text-align:center;max-width:640px;position:relative;border-top:4px solid var(--naranja)}
+  .acceso h2{color:var(--navy);font-size:1.35rem;margin-bottom:8px}
+  .acceso p{color:var(--ink2);font-size:.94rem;margin-bottom:20px}
+  .acceso a.big{display:block;background:var(--naranja);color:#fff;text-decoration:none;padding:17px 24px;border-radius:12px;font-family:'Overpass',sans-serif;font-weight:800;font-size:1.12rem}
+  .acceso a.big:hover{background:var(--naranja-claro)}
+  .acceso .nota{font-size:.78rem;color:var(--ink2);margin-top:13px;margin-bottom:0;line-height:1.5}
+  /* SECCIONES */
+  section{padding:52px 0}
+  .eyebrow{color:var(--naranja);font-family:'Overpass',sans-serif;font-weight:800;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:9px;text-align:center}
+  h2.sec{font-size:clamp(1.4rem,3.2vw,2rem);color:var(--navy);font-weight:800;margin-bottom:12px;text-align:center}
+  .sub{color:var(--ink2);font-size:.98rem;max-width:60ch;margin:0 auto 30px;text-align:center}
+  /* PASOS */
+  .pasos{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}
+  .paso{background:#fff;border:1px solid var(--line);border-radius:13px;padding:20px;border-top:3px solid var(--naranja)}
+  .paso .n{font-family:'Overpass',sans-serif;font-weight:900;font-size:1.5rem;color:var(--naranja-palido);line-height:1}
+  .paso h4{color:var(--navy);font-size:.98rem;margin:5px 0 6px}
+  .paso p{font-size:.86rem;color:var(--ink2)}
+  /* AGENDA */
+  .agenda{background:var(--navy);color:#fff}
+  .agenda .eyebrow{color:var(--naranja-claro)}
+  .agenda h2.sec{color:#fff}
+  .agenda .sub{color:#b9c6d2}
+  .cal{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 14px 40px rgba(0,0,0,.25);min-height:640px}
+  .cal iframe{width:100%;min-height:640px;border:none;display:block}
+  .agenda .fine{color:#8fa2b3;font-size:.8rem;text-align:center;margin-top:14px}
+  footer{background:var(--navy2);color:#8fa2b3;padding:26px 0;text-align:center;font-size:.82rem}
+  footer a{color:var(--naranja-claro)}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="container">
+    <img class="logo" src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04bbc1fa8afa3be0bb00d8.png" alt="Design Modeling Academy">
+    <div class="tick">✓</div>
+    <h1>¡Listo! Ya tienes acceso</h1>
+    <p>Tu Test de Nivel BIM está desbloqueado. Son 20 preguntas y unos 5 minutos.</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="acceso">
+    <h2>Entra ahora a tu test</h2>
+    <p>El acceso es inmediato desde este botón — guarda esta página si quieres volver después.</p>
+    <a class="big" id="btnApp" href="./app.html?acceso=dmbim26">Hacer el Test de Nivel BIM →</a>
+    <p class="nota">Consejo: responde con honestidad, no con lo que te gustaría saber hacer. El valor del resultado depende de eso.</p>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <p class="eyebrow">Cómo sacarle provecho</p>
+    <h2 class="sec">Qué hacer con tu resultado</h2>
+    <p class="sub">El test no termina cuando ves tu nivel. Termina cuando sabes qué vas a hacer con él.</p>
+    <div class="pasos">
+      <div class="paso"><div class="n">01</div><h4>Haz el test</h4><p>20 preguntas. El perfil por bloque se arma en vivo mientras respondes.</p></div>
+      <div class="paso"><div class="n">02</div><h4>Mira tu brecha</h4><p>Fíjate en las competencias que marcaste flojas: ahí está tu techo actual.</p></div>
+      <div class="paso"><div class="n">03</div><h4>Guarda la captura</h4><p>Toma pantallazo de tu perfil. Repite el test en 3 meses y compara.</p></div>
+      <div class="paso"><div class="n">04</div><h4>Revisa tu ruta</h4><p>Agenda 15 minutos abajo y revisamos juntos qué bloque te corresponde.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="agenda">
+  <div class="container">
+    <p class="eyebrow">Opcional y gratuito</p>
+    <h2 class="sec">¿Quieres que revisemos tu resultado juntos?</h2>
+    <p class="sub">15 minutos con un asesor académico para interpretar tu perfil, ver qué bloque del Máster te corresponde y resolver dudas. Sin compromiso.</p>
+    <div class="cal">
+      <iframe src="https://api.leadconnectorhq.com/widget/booking/bIVuNHNojGEgH3gf6yXe"
+              scrolling="no" id="bIVuNHNojGEgH3gf6yXe_agenda"
+              title="Agenda tu sesión de 15 minutos"></iframe>
+    </div>
+    <p class="fine">Si el calendario no carga, escríbenos y lo coordinamos por WhatsApp.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    © Design Modeling Academy · BIM + IA para la construcción<br>
+    <a href="./app.html?acceso=dmbim26">Ir al test</a> ·
+    <a href="https://funnel.dgdesignmodeling.com/design-modeling-acreditaciones" target="_blank" rel="noopener">Acreditaciones</a> ·
+    <a href="https://funnel.dgdesignmodeling.com/lider-bim-internacional" target="_blank" rel="noopener">Máster BIM+IA</a>
+  </div>
+</footer>
+
+<script src="https://link.msgsndr.com/js/form_embed.js" defer></script>
+<script>
+/* El token viaja en la URL desde la landing; si por lo que sea no llegó,
+   igual dejamos el enlace con el token por defecto para no dejar a nadie
+   fuera. También lo persistimos para que el candado de app.html no salte. */
+const TOKEN_ACCESO = 'dmbim26';
+(function(){
+  const p = new URLSearchParams(location.search);
+  const t = p.get('acceso') || TOKEN_ACCESO;
+  try{ localStorage.setItem('dm_nivelbim_acceso', t); }catch(e){}
+  document.getElementById('btnApp').href = './app.html?acceso=' + t;
+})();
+</script>
+</body>
+</html>
