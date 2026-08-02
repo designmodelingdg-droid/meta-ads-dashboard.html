@@ -17,7 +17,7 @@ BIM+IA) y le dice qué competencias concretas le faltan para el siguiente.
 | Landing de captura | `https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/test-nivel-bim/` |
 | Página de gracias | `…/test-nivel-bim/gracias-agenda.html` |
 | El test | `…/test-nivel-bim/app.html?acceso=dmbim26` |
-| Versión para GHL | archivo `ghl-landing.html` (se pega, no se enlaza) |
+| Versiones para GHL | archivos `ghl-landing.html` y `ghl-gracias.html` (se pegan, no se enlazan) |
 
 **Token de acceso:** `dmbim26` — debe coincidir en `app.html`, `index.html` y
 `gracias-agenda.html`. Cámbialo en los tres si quieres invalidar enlaces
@@ -63,8 +63,10 @@ Webhook de GHL es **prémium y cobra por ejecución**. Pega la URL en
 1. **Sites → Funnels → New Funnel**: `Test de Nivel BIM`.
 2. **Página 1** (`/test-nivel-bim`): elemento **Custom Code** a ancho completo
    y sin padding. Pega ahí el contenido de `ghl-landing.html`.
-3. **Página 2** (`/test-nivel-bim/gracias`): pega `gracias-agenda.html`.
-   Es a donde redirige el formulario.
+3. **Página 2** (`/test-nivel-bim/gracias`): pega **`ghl-gracias.html`** —
+   esa, no `gracias-agenda.html`. La versión `ghl-` es la que lleva las rutas
+   absolutas hacia el test; la otra apuntaría a un archivo que no existe
+   dentro del dominio de GHL. Es a donde redirige el formulario.
 4. Publica ambas y prueba el recorrido completo en el móvil.
 
 ## PASO 3 — Membresía (opcional pero recomendado)
@@ -128,6 +130,7 @@ Recórrelo entero desde un teléfono que no sea el tuyo:
 - **La regla de nivel** está entre los marcadores `/* CALC-START */` y
   `/* CALC-END */`. Umbral de dominio: 70% por bloque; el nivel se cuenta de
   forma consecutiva desde el Bloque 1.
-- **Nunca editar `ghl-landing.html` a mano** — se regenera desde `index.html`
-  con `python3 scripts/build_ghl_landing.py test-nivel-bim`.
+- **Nunca editar los `ghl-*.html` a mano** — se regeneran desde `index.html` y
+  `gracias-agenda.html` con `python3 scripts/build_ghl_landing.py test-nivel-bim`.
+  El script aborta si alguna ruta relativa se le escapa.
 - Para saltar la caché del CDN de GitHub Pages: añade `?v=2` a la URL.
