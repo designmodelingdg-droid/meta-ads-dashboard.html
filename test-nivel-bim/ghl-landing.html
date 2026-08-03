@@ -28,7 +28,39 @@
   nav a.cta{background:var(--naranja);color:#fff;text-decoration:none;padding:9px 18px;border-radius:8px;font-weight:700;font-size:.85rem;font-family:'Overpass',sans-serif}
   nav a.cta:hover{background:var(--naranja-claro)}
   /* HERO */
-  .hero{background:linear-gradient(135deg,var(--navy2) 0%,var(--navy) 60%,var(--azul-medio) 100%);color:#fff;padding:56px 0 64px}
+  /* ── IMÁGENES DE LA LANDING ─────────────────────────────────────────
+     Pega aquí las 3 URLs (súbelas a la biblioteca de medios de GHL, igual
+     que el logo). Si una queda vacía, esa imagen simplemente no aparece y
+     la sección se ve como antes — no se rompe nada.                      */
+  :root{
+    --img-hero:url('');      /* 1 · textura de estructura, fondo del hero */
+    --img-diagnostico:url('');/* 2 · ingeniero frente al modelo           */
+    --img-ruta:url('');      /* 3 · los 4 niveles, progresión             */
+  }
+
+  .hero{background:linear-gradient(135deg,var(--navy2) 0%,var(--navy) 60%,var(--azul-medio) 100%);color:#fff;padding:56px 0 64px;position:relative;overflow:hidden}
+  /* La textura va MUY bajita: es fondo, no protagonista. El formulario
+     tiene que seguir leyéndose sin esfuerzo. */
+  .hero::before{content:'';position:absolute;inset:0;background-image:var(--img-hero);
+    background-size:cover;background-position:center;opacity:.10;pointer-events:none}
+  .hero .container{position:relative;z-index:1}
+
+  /* Sección del diagnóstico: la foto entra al lado de las 4 tarjetas. */
+  .diag-grid{display:grid;grid-template-columns:1fr;gap:26px;align-items:center}
+  @media(min-width:900px){.diag-grid{grid-template-columns:1fr 0.85fr}}
+  .diag-foto{border-radius:14px;box-shadow:0 12px 34px rgba(0,30,48,.18);
+    background:var(--img-diagnostico) center/cover no-repeat;
+    aspect-ratio:4/3;min-height:260px}
+  @supports not (aspect-ratio:4/3){.diag-foto{min-height:300px}}
+  /* Sin URL cargada el bloque se retira solo (lo hace el script del final),
+     así no queda un rectángulo vacío en la página. */
+  .sin-imagen{display:none}
+
+  /* Los 4 niveles: la ilustración va de fondo, tenue, detrás del texto. */
+  .ruta{position:relative;overflow:hidden}
+  .ruta::before{content:'';position:absolute;inset:0;background-image:var(--img-ruta);
+    background-size:cover;background-position:center;opacity:.16;pointer-events:none}
+  .ruta .container{position:relative;z-index:1}
   .hero .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,430px);gap:44px;align-items:start}
   @media (max-width:940px){.hero .grid{grid-template-columns:1fr}}
   .badge{display:inline-block;background:rgba(232,160,74,.16);color:var(--naranja-claro);border:1px solid rgba(232,160,74,.4);padding:6px 14px;border-radius:99px;font-size:.78rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;margin-bottom:18px}
@@ -179,11 +211,15 @@
     <p class="eyebrow">Qué te llevas</p>
     <h2 class="sec">No es un quiz de redes. Es un diagnóstico.</h2>
     <p class="sub">La mayoría de los tests te dan una etiqueta bonita y ya. Este te dice dónde estás parado en una ruta real de 4 niveles, y qué competencia concreta te está frenando.</p>
-    <div class="cards">
-      <div class="tool"><div class="n">01</div><h4>Tu nivel en la ruta</h4><p>Modelador, Coordinador, BIM Manager 4D-5D o Especialista BIM+IA. Con la regla honesta: no se puede coordinar sin saber modelar.</p></div>
-      <div class="tool"><div class="n">02</div><h4>Tu perfil por bloque</h4><p>Un gráfico con tu porcentaje en cada uno de los 4 bloques. Ves de un vistazo dónde estás fuerte y dónde tienes el hueco.</p></div>
-      <div class="tool"><div class="n">03</div><h4>La brecha, con nombre</h4><p>La lista exacta de las competencias que marcaste flojas en el bloque que te toca cerrar. Nada de "estudia más".</p></div>
-      <div class="tool"><div class="n">04</div><h4>Tu siguiente paso</h4><p>Qué bloque sigue, qué construyes en él, qué microcredencial obtienes y qué app de IA te llevas.</p></div>
+    <div class="diag-grid">
+      <div class="cards">
+        <div class="tool"><div class="n">01</div><h4>Tu nivel en la ruta</h4><p>Modelador, Coordinador, BIM Manager 4D-5D o Especialista BIM+IA. Con la regla honesta: no se puede coordinar sin saber modelar.</p></div>
+        <div class="tool"><div class="n">02</div><h4>Tu perfil por bloque</h4><p>Un gráfico con tu porcentaje en cada uno de los 4 bloques. Ves de un vistazo dónde estás fuerte y dónde tienes el hueco.</p></div>
+        <div class="tool"><div class="n">03</div><h4>La brecha, con nombre</h4><p>La lista exacta de las competencias que marcaste flojas en el bloque que te toca cerrar. Nada de "estudia más".</p></div>
+        <div class="tool"><div class="n">04</div><h4>Tu siguiente paso</h4><p>Qué bloque sigue, qué construyes en él, qué microcredencial obtienes y qué app de IA te llevas.</p></div>
+      </div>
+      <div class="diag-foto" data-img="--img-diagnostico" role="img"
+           aria-label="Ingeniero revisando un modelo estructural BIM en pantalla"></div>
     </div>
   </div>
 </section>
@@ -357,5 +393,17 @@ document.getElementById('leadForm').addEventListener('submit', async (e)=>{
   try{ localStorage.setItem('dm_nivelbim_acceso', TOKEN_ACCESO); }catch(err){}
   location.href = URL_GRACIAS + '?acceso=' + TOKEN_ACCESO;
 });
+</script>
+
+<script>
+/* Si una de las variables de imagen quedó vacía, retiramos el bloque que
+   dependía de ella para no dejar un hueco de color en la página. */
+(function(){
+  var css = getComputedStyle(document.documentElement);
+  document.querySelectorAll('[data-img]').forEach(function(el){
+    var v = (css.getPropertyValue(el.dataset.img) || '').trim();
+    if(!v || v === "url('')" || v === 'url("")' || v === 'url()') el.classList.add('sin-imagen');
+  });
+})();
 </script>
 
