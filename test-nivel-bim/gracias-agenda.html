@@ -20,7 +20,9 @@
   .container{max-width:900px;margin:0 auto;padding:0 20px}
   /* HERO */
   .hero{background:linear-gradient(135deg,var(--navy2) 0%,var(--navy) 60%,var(--azul-medio) 100%);color:#fff;text-align:center;padding:48px 0 54px}
-  .hero img.logo{height:46px;margin-bottom:18px}
+  /* El logo de DMA es la versión oscura; sobre el hero azul no se ve.
+     El filtro lo pinta blanco sin depender de otro archivo. */
+  .hero img.logo{height:46px;margin-bottom:18px;filter:brightness(0) invert(1)}
   .tick{width:62px;height:62px;border-radius:50%;background:rgba(30,158,106,.18);border:2px solid #1e9e6a;color:#7ee2b8;display:flex;align-items:center;justify-content:center;font-size:1.9rem;margin:0 auto 16px}
   .hero h1{font-size:clamp(1.7rem,4.2vw,2.5rem);font-weight:900;margin-bottom:12px}
   .hero p{color:#cfdce6;max-width:54ch;margin:0 auto}
