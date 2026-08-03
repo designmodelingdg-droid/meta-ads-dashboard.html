@@ -40,10 +40,22 @@ enlazan. Se copian en texto plano desde:
 
 ---
 
-## ⚠️ PASO 1 — Sin esto NO se captura ningún lead
+## ✅ PASO 1 — Formulario (HECHO el 3-ago-2026)
 
-Hoy `index.html` tiene vacías las dos constantes de GoHighLevel. **El test se
-abre igual, pero nadie entra al CRM.** Hay que llenar una de las dos:
+El formulario nativo **`Test de Nivel BIM - Registro`** está creado y conectado.
+Su URL de embed ya vive en `index.html`:
+
+```js
+const GHL_FORM_IFRAME_URL = 'https://api.leadconnectorhq.com/widget/form/LeOgkY0epxLXW5LmDWXF';
+```
+
+Verificado de punta a punta: el registro de prueba entró al CRM con el campo
+Perfil relleno, redirigió a `/test-nivel-bim/gracias?acceso=dmbim26` y el test
+abrió sin candado.
+
+Se deja abajo el procedimiento por si hay que rehacerlo o crear otro igual.
+
+<details><summary>Cómo se hizo (o cómo rehacerlo)</summary>
 
 ### Vía A — Formulario nativo de GHL (recomendada)
 
@@ -71,6 +83,8 @@ Ventaja: los contactos llegan nativos al CRM y **no cuesta nada por ejecución**
 Solo si por alguna razón no se puede usar el formulario nativo. ⚠️ El Inbound
 Webhook de GHL es **prémium y cobra por ejecución**. Pega la URL en
 `GHL_WEBHOOK_URL` y listo — el formulario propio de la landing la usará.
+
+</details>
 
 ---
 

@@ -48,9 +48,19 @@ descargan. Seleccionas todo y pegas.
 
 ---
 
-## PASO 1 · Crear el formulario (lo más importante)
+## ✅ PASO 1 · Formulario — HECHO el 3-ago-2026
 
-Sin esto el test funciona pero **ningún contacto entra al CRM**.
+Creado y verificado. Su URL de embed ya está en el repositorio, así que
+`ghl-landing.html` **ya trae el formulario de GHL incrustado**: al pegarlo, la
+landing captura contactos sin ningún ajuste extra a mano.
+
+```
+https://api.leadconnectorhq.com/widget/form/LeOgkY0epxLXW5LmDWXF
+```
+
+Lo de abajo queda solo como referencia por si hay que rehacerlo.
+
+<details><summary>Cómo se creó</summary>
 
 1. Ve a **Sites → Forms → Builder → + Add Form**.
 2. Nómbralo exactamente: `Test de Nivel BIM - Registro`
@@ -78,6 +88,26 @@ Sin esto el test funciona pero **ningún contacto entra al CRM**.
 (`test-nivel-bim/index.html`, constante `GHL_FORM_IFRAME_URL`) y regenerar la
 versión de GHL. Hasta que eso pase, la landing usa su formulario propio de
 respaldo, que **no guarda nada en el CRM**.
+
+</details>
+
+---
+
+## ⚠️ Antes de nada: vuelve a pegar `ghl-landing.html`
+
+Ese archivo **cambió tres veces** desde la primera pegada, y los cambios no se
+notan mirando el logo ni los enlaces (esos son los mismos):
+
+1. El nav pasó a **fondo blanco** — el logo de DMA es la versión oscura y sobre
+   el azul del nav era invisible.
+2. Se sumaron **tres imágenes** de fondo y una foto en la sección del diagnóstico.
+3. Se incrustó el **formulario de GHL**.
+
+El archivo pasó de 22 KB a 25.7 KB. Si al comparar solo se miran las URLs del
+logo y los enlaces, parece idéntico y no lo es — hay que comparar el `<style>`.
+
+`ghl-gracias.html` y `ghl-test.html` también cambiaron con el arreglo del logo,
+así que lo más seguro es volver a pegar los tres.
 
 ---
 
