@@ -18,9 +18,13 @@
   .container{max-width:1140px;margin:0 auto;padding:0 20px}
   section{padding:64px 0}
   /* NAV */
-  nav{background:var(--navy2);padding:12px 0;position:sticky;top:0;z-index:40}
+  /* Nav blanco con el logo oscuro, igual que la landing de la calculadora de
+     zapatas. El logo de DMA es la versión oscura: sobre fondo navy desaparece. */
+  nav{background:rgba(255,255,255,.97);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+      border-bottom:1px solid #e7eaf0;padding:10px 0;position:sticky;top:0;z-index:40}
   nav .container{display:flex;align-items:center;justify-content:space-between;gap:16px}
-  nav img{height:40px}
+  nav img{height:42px;width:auto;max-width:220px;object-fit:contain;display:block}
+  @media(max-width:480px){nav img{height:32px;max-width:160px}}
   nav a.cta{background:var(--naranja);color:#fff;text-decoration:none;padding:9px 18px;border-radius:8px;font-weight:700;font-size:.85rem;font-family:'Overpass',sans-serif}
   nav a.cta:hover{background:var(--naranja-claro)}
   /* HERO */
