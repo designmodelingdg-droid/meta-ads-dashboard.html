@@ -1,0 +1,65 @@
+<!-- ============================================================
+     test-nivel-bim · PÁGINA 3 del funnel — el test bajo tu dominio
+     ESCRITO A MANO (no se genera): no tiene rutas relativas.
+
+     Qué hace: embebe el test a pantalla completa para que el usuario lo
+     use en funnel.dgdesignmodeling.com/test-nivel-bim/test y nunca vea
+     que el contenido se sirve desde GitHub Pages.
+
+     Pegar en: Sites → página /test-nivel-bim/test → Custom Code,
+     a ancho completo y SIN padding (arriba, abajo y a los lados).
+     Si la sección de GHL deja márgenes, aparecerá una doble barra de
+     scroll — quitarlos es lo único crítico de esta página.
+     ============================================================ -->
+<style>
+  /* Neutraliza el padding que GHL suele meter alrededor del Custom Code */
+  .dm-test-wrap{margin:0;padding:0;width:100%;line-height:0}
+  .dm-test-wrap iframe{
+    display:block;width:100%;height:100dvh;min-height:640px;border:0;
+  }
+  /* 100dvh se adapta a la barra del navegador en móvil; 100vh es el
+     respaldo para navegadores que no lo soportan. */
+  @supports not (height:100dvh){
+    .dm-test-wrap iframe{height:100vh}
+  }
+  .dm-test-noscript{
+    font-family:'Nunito',system-ui,sans-serif;line-height:1.6;
+    background:#fff7ec;border-left:4px solid #ca7520;border-radius:0 8px 8px 0;
+    padding:14px 16px;margin:16px;color:#333;font-size:.92rem
+  }
+  .dm-test-noscript a{color:#ca7520;font-weight:700}
+</style>
+
+<div class="dm-test-wrap">
+  <iframe id="dmTestFrame"
+          title="Test de Nivel BIM · Design Modeling Academy"
+          loading="eager"
+          referrerpolicy="no-referrer-when-downgrade"
+          allow="clipboard-write"
+          src="https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/test-nivel-bim/app.html?acceso=dmbim26"></iframe>
+</div>
+
+<noscript>
+  <div class="dm-test-noscript">
+    Para hacer el test necesitas tener JavaScript activado.
+    Si no puedes, ábrelo directamente
+    <a href="https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/test-nivel-bim/app.html?acceso=dmbim26">en esta página</a>.
+  </div>
+</noscript>
+
+<script>
+/* Si la persona llega con ?acceso=XXXX (por ejemplo desde la página de
+   gracias), reenviamos ese token al iframe en vez del que viene por
+   defecto. Así el candado del test se abre igual aunque algún día se
+   cambie el token. */
+(function(){
+  var TOKEN_POR_DEFECTO = 'dmbim26';
+  var APP = 'https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/test-nivel-bim/app.html';
+  try{
+    var t = new URLSearchParams(location.search).get('acceso') || TOKEN_POR_DEFECTO;
+    var frame = document.getElementById('dmTestFrame');
+    var deseada = APP + '?acceso=' + encodeURIComponent(t);
+    if(frame && frame.src !== deseada) frame.src = deseada;
+  }catch(e){ /* si algo falla, el iframe ya trae el token por defecto */ }
+})();
+</script>
