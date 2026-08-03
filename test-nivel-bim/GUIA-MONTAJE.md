@@ -10,28 +10,33 @@ BIM+IA) y le dice qué competencias concretas le faltan para el siguiente.
 
 ---
 
-## URLs (una vez publicado)
+## URLs
 
-| Pieza | URL |
-|---|---|
-| Landing de captura | `https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/test-nivel-bim/` |
-| Página de gracias | `…/test-nivel-bim/gracias-agenda.html` |
-| El test | `…/test-nivel-bim/app.html?acceso=dmbim26` |
-| Versiones para GHL | `ghl-landing.html`, `ghl-gracias.html` y `ghl-test.html` (se pegan, no se enlazan) |
-
-**El funnel vive entero bajo el dominio propio** — el usuario nunca ve github.io:
+**Lo que ve el usuario** — el funnel vive entero bajo el dominio propio, nunca
+aparece github.io en la barra de direcciones:
 
 | Página | Ruta en GHL |
 |---|---|
-| 1 · landing | `funnel.dgdesignmodeling.com/test-nivel-bim` |
-| 2 · gracias | `funnel.dgdesignmodeling.com/test-nivel-bim/gracias` |
-| 3 · el test | `funnel.dgdesignmodeling.com/test-nivel-bim/test` (embebe la app por iframe) |
+| 1 · landing de captura | `https://funnel.dgdesignmodeling.com/test-nivel-bim` |
+| 2 · gracias + agenda | `https://funnel.dgdesignmodeling.com/test-nivel-bim/gracias` |
+| 3 · el test | `https://funnel.dgdesignmodeling.com/test-nivel-bim/test` (embebe la app por iframe) |
 
-Solo las imágenes y la app se sirven desde GitHub Pages, embebidas.
+**Lo que se sirve desde GitHub Pages** (solo por dentro: la app embebida y las
+imágenes; nadie navega a estas URLs directamente):
 
-**Token de acceso:** `dmbim26` — debe coincidir en `app.html`, `index.html` y
-`gracias-agenda.html`. Cámbialo en los tres si quieres invalidar enlaces
-compartidos.
+| Recurso | URL |
+|---|---|
+| La app del test | `https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/test-nivel-bim/app.html?acceso=dmbim26` |
+| Imágenes | `…/test-nivel-bim/img/…` |
+
+**Los tres archivos que se pegan en GHL:** `ghl-landing.html`, `ghl-gracias.html`
+y `ghl-test.html` — se copian y se pegan en contenedores Custom Code, no se
+enlazan. Se copian en texto plano desde:
+`https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/gh-pages/test-nivel-bim/<archivo>`
+
+**Token de acceso:** `dmbim26` — debe coincidir en `app.html`, `index.html`,
+`gracias-agenda.html` y `ghl-test.html`. Cámbialo en los cuatro (y regenera los
+`ghl-*`) si quieres invalidar enlaces compartidos.
 
 ---
 
@@ -46,8 +51,9 @@ abre igual, pero nadie entra al CRM.** Hay que llenar una de las dos:
 2. Campos: `Nombre`, `Email`, `Teléfono` y un desplegable `Perfil` con las
    mismas opciones de la landing (estudiante, arquitecto/a, ingeniero/a,
    modelador/a, coordinador/a, BIM Manager, otro).
-3. En **Settings → On Submit → Redirect URL** pon:
-   `https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/test-nivel-bim/gracias-agenda.html?acceso=dmbim26`
+3. En **Settings → On Submit → Redirect URL** pon exactamente:
+   `https://funnel.dgdesignmodeling.com/test-nivel-bim/gracias?acceso=dmbim26`
+   (la página 2 del funnel, en el dominio propio — **no** la de github.io)
 4. Copia la URL de embed (`https://api.leadconnectorhq.com/widget/form/XXXX`).
 5. Pégala en `index.html`:
    ```js
@@ -87,8 +93,10 @@ Webhook de GHL es **prémium y cobra por ejecución**. Pega la URL en
 Para que el test viva también dentro del portal de alumnos:
 
 1. **Memberships → Products → New**: `Test de Nivel BIM`.
-2. Una lección con un elemento **iframe** apuntando a
-   `…/test-nivel-bim/app.html?acceso=dmbim26`.
+2. Una lección con un elemento **iframe** apuntando a la app en Pages:
+   `https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/test-nivel-bim/app.html?acceso=dmbim26`
+   (aquí sí va la URL de Pages: el portal ya está bajo el dominio propio y solo
+   embebe la app, igual que la página 3 del funnel). Altura sugerida: 1200 px.
 3. Crea una **oferta gratuita** del producto.
 4. Workflow: **Form Submitted → Grant Offer**.
 
@@ -126,8 +134,10 @@ Recórrelo entero desde un teléfono que no sea el tuyo:
 - [ ] 2. El enlace abre la landing y se ve bien en móvil
 - [ ] 3. El formulario valida (probar con un correo mal escrito)
 - [ ] 4. Al enviar, redirige a la página de gracias
-- [ ] 5. El botón grande abre el test **sin candado**
-- [ ] 6. Responder las 20 → sale nivel, brecha y siguiente paso
+- [ ] 5. El botón grande abre el test **sin candado** y la barra de direcciones
+      **sigue mostrando `funnel.dgdesignmodeling.com`**
+- [ ] 6. Responder las 20 → sale nivel, brecha y siguiente paso; sin doble
+      barra de scroll ni márgenes raros en la página del test
 - [ ] 7. El contacto aparece en el CRM con su perfil
 - [ ] 8. La oferta de membresía se otorgó y el login funciona
 - [ ] 9. El calendario de la página de gracias carga y permite agendar
