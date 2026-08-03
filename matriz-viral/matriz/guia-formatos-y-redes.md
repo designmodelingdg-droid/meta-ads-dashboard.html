@@ -27,6 +27,42 @@ La idea: **una sola idea núcleo → muchas piezas**, adaptadas a cada formato y
 
 > Regla práctica: **cada idea núcleo se publica en los 3 formatos a lo largo del mes** (no el mismo día). El reel capta, el carrusel da autoridad y guardados, el post plano abre conversación.
 
+### 2b. El cuarto formato: las HISTORIAS *(añadido 2026-07-29)*
+
+Las historias no son un formato de alcance — son el **canal de conversión**. El feed abre la puerta; la historia es donde la gente levanta la mano.
+
+| | Feed (reel/carrusel/post) | Historias |
+|---|---|---|
+| Trabajo | Que te descubran y te guarden | Que te escriban |
+| CTA | "comenta ACERO / BIM / IA" → lo recoge el bot | **El sticker** → lo recoges tú por DM |
+| Métrica | Views, guardados, comentarios | Respuestas de stickers y DM abiertos |
+| Duración | Permanente | 24 h (o para siempre en **destacadas**) |
+
+**Las reglas:**
+1. **El sticker es el CTA.** Una historia sin sticker se ve pero no convierte.
+2. **Todo el que responde recibe DM**, uno por uno y con su nombre. Ahí vive la venta, no en la historia.
+3. **Nunca precio ni "inscríbete" en una historia.** El objetivo es que escriban.
+4. **Máximo 5 frames.** Del sexto en adelante se cae la mitad de la audiencia.
+5. **El primer frame no explica: frena el dedo.** La explicación arranca en el segundo.
+6. **La historia no repite el post** — le abre la puerta y remata con el enlace.
+7. **Guardar las buenas en destacadas** por tema (🔩 ACERO · 🎯 BIM+IA · 🎁 Herramientas · 👥 Comunidad · ⭐ Alumnos): es la portada del perfil para quien llega nuevo.
+8. **Publicar también en Facebook** — es la mitad del alcance real de la cuenta.
+
+**Qué sticker según lo que buscas:**
+
+| Sticker | Qué te da | Cómo se cobra |
+|---|---|---|
+| **Encuesta** (2 opciones) | Volumen | DM a los que votan la opción "equivocada": son los que necesitan lo que vendes |
+| **Quiz** (con respuesta correcta) | Los que fallan | DM con la explicación a cada uno — es el lead más calificado |
+| **Caja de preguntas** | Conversación real | Contestar una por una por DM; republicar las mejores al día siguiente |
+| **Deslizador** | Participación fácil | Poco valor de conversión: sirve para calentar la cuenta |
+| **Cuenta regresiva** | Recordatorio automático | Los que la activan reciben aviso solos. Cero trabajo |
+| **Enlace** | Tráfico directo | En historias el enlace SÍ va directo (la regla de "nunca a landing" es solo para pauta) |
+
+**Semana tipo:** Lun/Mié/Vie la secuencia de la pieza del día · Mar detrás de cámara · Jue caja de preguntas abierta ("¿en qué estás atascado esta semana?") · Sáb testimonio o avance de alumno · Dom descanso.
+
+La secuencia frame por frame de cada pieza del mes está en `guiones-completos.json` (campo `historias`) y en el Word de agosto.
+
 ---
 
 ## 3. Adaptación por red (misma idea, distinto idioma)

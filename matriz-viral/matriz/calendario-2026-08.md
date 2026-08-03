@@ -21,10 +21,16 @@ En LinkedIn: pregunta abierta o DM (nunca "comenta la palabra"). En TikTok: "lin
 3. **❓ Cerrar SIEMPRE con pregunta directa.** Las 3 piezas sin pregunta clara sacaron 0 comentarios. Nada de trivia: la pregunta debe tocar una **duda o dolor real** del viewer.
 4. **😅 El humor va en REEL, no en post plano.** El meme estático se quedó en 1,321 views; el humor en video supera 4,700. Los guiones de humor vuelven a video.
 
+> **Confirmado el 3-ago (semana 27 jul – 2 ago):** el reel de humor de gremio hizo **8,373 views** — 8x el peor reel y 4x el post institucional del mismo día. Pero cerró **sin pregunta** y sacó solo **3 comentarios**, frente a los **623** del reel de humor del 25-jun que sí preguntaba. Las reglas 3 y 4 van juntas: **humor en reel + pregunta al cierre**. Una sin la otra da alcance sin conversación.
+>
+> Se confirma también que **lo institucional no va en feed**: el post «somos el equipo detrás» sacó 7 likes y 0 guardados con 2,164 views. Ese contenido pasa a **historias/destacadas**.
+
 **Leyenda:** 🎯 núcleo BIM/IA · 🔩 ACERO · 🎁 lead magnet · 📝 blog · 👥 comunidad · 🏛️ empresa/novedades · *(guion)* = guion listo.
 
 📄 **Versión en Word para el equipo:** `matriz-viral/entregables/Matriz-Contenido-Agosto-2026-DMA.docx`
-Desde el **2026-07-29** ese documento trae el **desarrollo completo de cada pieza**: guion segundo a segundo de los reels, texto y dirección de imagen de cada diapositiva de los carruseles, descripción de los posts planos, copy de los anuncios de pauta y adaptación a cada red. Se regenera con `node scripts/build_matriz_docx.js`.
+Desde el **2026-07-29** ese documento trae el **desarrollo completo de cada pieza**: guion segundo a segundo de los reels, texto y dirección de imagen de cada diapositiva de los carruseles, descripción de los posts planos, **la secuencia de historias frame por frame**, copy de los anuncios de pauta y adaptación a cada red. Se regenera con `node scripts/build_matriz_docx.js`.
+
+📱 **Historias:** cada pieza lleva su secuencia de 3-5 frames con el sticker que la convierte y qué hacer con quien responde. Las reglas y la semana tipo están en `guia-formatos-y-redes.md` §2b.
 
 🔗 **Fuente de datos (la que lee la app):** `matriz/calendario-agosto.json` (orden del mes, fecha → id de pieza) + `matriz/guiones-completos.json` (contenido palabra por palabra). El Word se genera de ahí; no se edita a mano.
 
