@@ -21,6 +21,10 @@ En LinkedIn: pregunta abierta o DM (nunca "comenta la palabra"). En TikTok: "lin
 3. **❓ Cerrar SIEMPRE con pregunta directa.** Las 3 piezas sin pregunta clara sacaron 0 comentarios. Nada de trivia: la pregunta debe tocar una **duda o dolor real** del viewer.
 4. **😅 El humor va en REEL, no en post plano.** El meme estático se quedó en 1,321 views; el humor en video supera 4,700. Los guiones de humor vuelven a video.
 
+> **Confirmado el 3-ago (semana 27 jul – 2 ago):** el reel de humor de gremio hizo **8,373 views** — 8x el peor reel y 4x el post institucional del mismo día. Pero cerró **sin pregunta** y sacó solo **3 comentarios**, frente a los **623** del reel de humor del 25-jun que sí preguntaba. Las reglas 3 y 4 van juntas: **humor en reel + pregunta al cierre**. Una sin la otra da alcance sin conversación.
+>
+> Se confirma también que **lo institucional no va en feed**: el post «somos el equipo detrás» sacó 7 likes y 0 guardados con 2,164 views. Ese contenido pasa a **historias/destacadas**.
+
 **Leyenda:** 🎯 núcleo BIM/IA · 🔩 ACERO · 🎁 lead magnet · 📝 blog · 👥 comunidad · 🏛️ empresa/novedades · *(guion)* = guion listo.
 
 📄 **Versión en Word para el equipo:** `matriz-viral/entregables/Matriz-Contenido-Agosto-2026-DMA.docx`

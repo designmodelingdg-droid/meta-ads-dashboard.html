@@ -182,3 +182,32 @@ Faltaba el formato que más convierte y que no estábamos trabajando: **las hist
 3. Nunca precio ni "inscríbete" en una historia. El objetivo es que escriban.
 
 Todo está en `matriz/guiones-completos.json` (campo `historias` en cada pieza + bloque `historias_rutina`), en `matriz/guia-formatos-y-redes.md` §2b y en el Word de agosto, sección 6.
+
+---
+
+## Actualización 2026-08-03 — revisión de la semana 27 jul – 2 ago
+
+Semana corta: **tres piezas**. Métricas traídas directo de la Graph API (no manual).
+
+| Fecha | Pieza | Views | Alcance | Likes | Com. | Guardados |
+|---|---|---|---|---|---|---|
+| 27 jul | **Reel — cliente pide mansión con pasadizos** ⭐ | **8.373** | 5.733 | 183 | 3 | **41** |
+| 27 jul | Post — «somos el equipo detrás de DM» | 2.164 | 1.286 | 7 | 0 | 1 |
+| 31 jul | Reel — «la IA puede hacer muchas cosas, pero…» | 1.047 | 699 | 6 | 0 | 1 |
+
+### Lecciones
+
+1. **El humor de gremio sigue siendo el mejor motor de alcance, y ya van dos semanas seguidas.** La ganadora hizo 8x el peor reel de la semana y 4x el post institucional publicado *el mismo día* — o sea que no fue el algoritmo, fue la pieza. Se confirma la regla que ya teníamos: el humor va en reel, nunca en post plano.
+2. **Pero el humor solo no conversa: 41 guardados y apenas 3 comentarios.** Comparar con el reel del 25 de junio (mismo humor de gremio, *con* pregunta directa): 20.579 views y 623 comentarios en Facebook. La diferencia no es el tema, es que uno cerró preguntando y el otro no. **Sigue siendo la regla que más se nos escapa.**
+3. **Lo institucional no compite en el feed.** El post del equipo sacó 7 likes y 0 guardados con 2.164 views. No es que estuviera mal hecho: es que un post de presentación no le resuelve nada a nadie. Ese contenido va en **historias y destacadas**, no como post de feed.
+4. **Hook vago = piso.** El reel del 31 («la IA puede hacer muchas cosas pero todavía no puede…») abre curiosidad genérica y se quedó en 1.047 views. El del 15 de julio, mismo eje, con hook concreto («le pedí a ChatGPT que diseñara una losa»), hizo 3x con 45 guardados. **El hook tiene que nombrar la tarea, no el tema.**
+
+### Ajustes que se aplican
+
+- Subir el peso del **humor de gremio en reel** en el calendario de agosto — pero **con pregunta obligatoria al cierre**, que es lo que lo convierte en conversación.
+- Mover lo **institucional/equipo** de feed a **historias**.
+- Ningún hook de IA sale sin nombrar la **tarea concreta** del oficio.
+
+### Limitación conocida
+
+Las **vistas por publicación de Facebook** ya no las entrega la API de Meta (probado hasta v23; el error es `(#100) The value must be a valid insights metric`). Solo se ven en la interfaz de Insights. Todo lo demás — Instagram completo y comentarios/likes/compartidos de Facebook — es automático. Si se quiere ese dato, hay que cargarlo a mano en `views_facebook`.
