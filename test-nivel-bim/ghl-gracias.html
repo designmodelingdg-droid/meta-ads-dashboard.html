@@ -66,7 +66,7 @@
   <div class="acceso">
     <h2>Entra ahora a tu test</h2>
     <p>El acceso es inmediato desde este botón — guarda esta página si quieres volver después.</p>
-    <a class="big" id="btnApp" href="https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/test-nivel-bim/app.html?acceso=dmbim26">Hacer el Test de Nivel BIM →</a>
+    <a class="big" id="btnApp" href="https://funnel.dgdesignmodeling.com/test-nivel-bim/test?acceso=dmbim26">Hacer el Test de Nivel BIM →</a>
     <p class="nota">Consejo: responde con honestidad, no con lo que te gustaría saber hacer. El valor del resultado depende de eso.</p>
   </div>
 </div>
@@ -102,7 +102,7 @@
 <footer>
   <div class="container">
     © Design Modeling Academy · BIM + IA para la construcción<br>
-    <a href="https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/test-nivel-bim/app.html?acceso=dmbim26">Ir al test</a> ·
+    <a href="https://funnel.dgdesignmodeling.com/test-nivel-bim/test?acceso=dmbim26">Ir al test</a> ·
     <a href="https://funnel.dgdesignmodeling.com/design-modeling-acreditaciones" target="_blank" rel="noopener">Acreditaciones</a> ·
     <a href="https://funnel.dgdesignmodeling.com/lider-bim-internacional" target="_blank" rel="noopener">Máster BIM+IA</a>
   </div>
@@ -118,7 +118,7 @@ const TOKEN_ACCESO = 'dmbim26';
   const p = new URLSearchParams(location.search);
   const t = p.get('acceso') || TOKEN_ACCESO;
   try{ localStorage.setItem('dm_nivelbim_acceso', t); }catch(e){}
-  document.getElementById('btnApp').href = 'https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/test-nivel-bim/app.html?acceso=' + t;
+  document.getElementById('btnApp').href = 'https://funnel.dgdesignmodeling.com/test-nivel-bim/test?acceso=' + t;
 })();
 </script>
 

@@ -19,6 +19,19 @@ from pathlib import Path
 
 BASE_PAGES = "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html"
 
+# Dominio propio de DMA: las PÁGINAS del funnel viven aquí (GoHighLevel), para
+# que el usuario nunca vea que cambia de dominio. Los ASSETS (imágenes) y la
+# app en sí se siguen sirviendo desde GitHub Pages, embebidos por iframe.
+DOMINIO = "https://funnel.dgdesignmodeling.com"
+
+# Enlaces entre páginas del funnel: se reescriben al dominio propio.
+# Lo que no esté aquí (img/…, app.html dentro de un iframe) se queda en Pages.
+RUTAS_FUNNEL = {
+    "index.html": f"{DOMINIO}/test-nivel-bim",
+    "gracias-agenda.html": f"{DOMINIO}/test-nivel-bim/gracias",
+    "app.html": f"{DOMINIO}/test-nivel-bim/test",
+}
+
 
 # origen → destino
 PAGINAS = [
@@ -44,9 +57,13 @@ def construir(carpeta: str, origen: str, destino: str) -> Path:
 
     css, body = estilo.group(1), cuerpo.group(1)
 
-    # ./algo  →  https://…/<carpeta>/algo   (en href, src y en el JS)
-    # El patrón del JS admite query strings ('./app.html?acceso='), que es
-    # justo el caso que se escapaba antes.
+    # 1) Los enlaces ENTRE PÁGINAS del funnel van al dominio propio, para que
+    #    el usuario no vea nunca que salta a github.io.
+    for pagina, destino in RUTAS_FUNNEL.items():
+        body = body.replace(f'"./{pagina}', f'"{destino}')
+        body = body.replace(f"'./{pagina}", f"'{destino}")
+
+    # 2) Lo que queda relativo son assets (img/…): esos sí van a Pages.
     body = re.sub(r'(href|src)="\./', rf'\1="{base}/', body)
     body = re.sub(r"'\./([\w.\-/?=&%]*)'", rf"'{base}/\1'", body)
 

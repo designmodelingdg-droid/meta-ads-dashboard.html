@@ -17,7 +17,17 @@ BIM+IA) y le dice qué competencias concretas le faltan para el siguiente.
 | Landing de captura | `https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/test-nivel-bim/` |
 | Página de gracias | `…/test-nivel-bim/gracias-agenda.html` |
 | El test | `…/test-nivel-bim/app.html?acceso=dmbim26` |
-| Versiones para GHL | archivos `ghl-landing.html` y `ghl-gracias.html` (se pegan, no se enlazan) |
+| Versiones para GHL | `ghl-landing.html`, `ghl-gracias.html` y `ghl-test.html` (se pegan, no se enlazan) |
+
+**El funnel vive entero bajo el dominio propio** — el usuario nunca ve github.io:
+
+| Página | Ruta en GHL |
+|---|---|
+| 1 · landing | `funnel.dgdesignmodeling.com/test-nivel-bim` |
+| 2 · gracias | `funnel.dgdesignmodeling.com/test-nivel-bim/gracias` |
+| 3 · el test | `funnel.dgdesignmodeling.com/test-nivel-bim/test` (embebe la app por iframe) |
+
+Solo las imágenes y la app se sirven desde GitHub Pages, embebidas.
 
 **Token de acceso:** `dmbim26` — debe coincidir en `app.html`, `index.html` y
 `gracias-agenda.html`. Cámbialo en los tres si quieres invalidar enlaces
@@ -67,7 +77,10 @@ Webhook de GHL es **prémium y cobra por ejecución**. Pega la URL en
    esa, no `gracias-agenda.html`. La versión `ghl-` es la que lleva las rutas
    absolutas hacia el test; la otra apuntaría a un archivo que no existe
    dentro del dominio de GHL. Es a donde redirige el formulario.
-4. Publica ambas y prueba el recorrido completo en el móvil.
+4. **Página 3** (`/test-nivel-bim/test`): pega `ghl-test.html`. Es el test
+   embebido. ⚠️ Ancho completo y **sin padding** — si la sección deja
+   márgenes aparece una doble barra de scroll.
+5. Publica las tres y prueba el recorrido completo en el móvil.
 
 ## PASO 3 — Membresía (opcional pero recomendado)
 
@@ -130,7 +143,12 @@ Recórrelo entero desde un teléfono que no sea el tuyo:
 - **La regla de nivel** está entre los marcadores `/* CALC-START */` y
   `/* CALC-END */`. Umbral de dominio: 70% por bloque; el nivel se cuenta de
   forma consecutiva desde el Bloque 1.
-- **Nunca editar los `ghl-*.html` a mano** — se regeneran desde `index.html` y
-  `gracias-agenda.html` con `python3 scripts/build_ghl_landing.py test-nivel-bim`.
-  El script aborta si alguna ruta relativa se le escapa.
+- **`ghl-landing.html` y `ghl-gracias.html` se generan** desde `index.html` y
+  `gracias-agenda.html` con `python3 scripts/build_ghl_landing.py test-nivel-bim`
+  — no editarlos a mano. El script aborta si alguna ruta relativa se le escapa,
+  y reescribe los enlaces entre páginas al dominio propio (`RUTAS_FUNNEL`).
+- **`ghl-test.html` sí se mantiene a mano** (es el envoltorio del iframe, no
+  tiene fuente ni rutas relativas).
+- Si cambian las rutas del funnel en GHL, actualizar `RUTAS_FUNNEL` en
+  `scripts/build_ghl_landing.py` y regenerar.
 - Para saltar la caché del CDN de GitHub Pages: añade `?v=2` a la URL.

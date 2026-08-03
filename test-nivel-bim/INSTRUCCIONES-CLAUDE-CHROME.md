@@ -10,10 +10,15 @@
 
 Vas a montar en GoHighLevel el funnel de un lead magnet ya construido y
 probado: el **Test de Nivel BIM** de Design Modeling Academy. El test ya está
-publicado y funcionando en GitHub Pages — tu trabajo es **solo la parte de
-GHL**: el formulario, las dos páginas del funnel y la membresía.
+publicado y funcionando — tu trabajo es **solo la parte de GHL**: el
+formulario, las **tres** páginas del funnel y la membresía.
 
-**No hay que escribir ni modificar código HTML.** Los dos archivos que
+**Todo tiene que verse bajo el dominio de Dayana**
+(`funnel.dgdesignmodeling.com`). Por eso el test se embebe en una tercera
+página en vez de enlazarse fuera: el usuario nunca debe ver que cambia de
+dominio.
+
+**No hay que escribir ni modificar código HTML.** Los tres archivos que
 recibes se pegan tal cual en contenedores de Custom Code.
 
 ### Datos fijos que vas a necesitar
@@ -21,10 +26,25 @@ recibes se pegan tal cual en contenedores de Custom Code.
 | Dato | Valor |
 |---|---|
 | Token de acceso | `dmbim26` |
-| URL del test | `https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/test-nivel-bim/app.html?acceso=dmbim26` |
-| URL de la landing publicada | `https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/test-nivel-bim/` |
-| URL de la página de gracias publicada | `https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/test-nivel-bim/gracias-agenda.html` |
+| **Página 1** · landing | `https://funnel.dgdesignmodeling.com/test-nivel-bim` |
+| **Página 2** · gracias | `https://funnel.dgdesignmodeling.com/test-nivel-bim/gracias` |
+| **Página 3** · el test | `https://funnel.dgdesignmodeling.com/test-nivel-bim/test` |
 | Calendario de agenda (ya embebido) | `https://api.leadconnectorhq.com/widget/booking/bIVuNHNojGEgH3gf6yXe` |
+
+⚠️ **Las rutas de las tres páginas tienen que ser exactamente esas.** El HTML ya
+trae los enlaces entre ellas escritos con esas URLs; si cambias una ruta, los
+botones del funnel dejan de funcionar.
+
+### De dónde copias cada HTML
+
+Ábrelas en una pestaña normal: se muestran como **texto plano**, no se
+descargan. Seleccionas todo y pegas.
+
+| Página | URL para copiar el HTML |
+|---|---|
+| 1 · landing | `https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/gh-pages/test-nivel-bim/ghl-landing.html` |
+| 2 · gracias | `https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/gh-pages/test-nivel-bim/ghl-gracias.html` |
+| 3 · el test | `https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/gh-pages/test-nivel-bim/ghl-test.html` |
 
 ---
 
@@ -49,7 +69,7 @@ Sin esto el test funciona pero **ningún contacto entra al CRM**.
 4. Texto del botón: `Entrar al test →`
 5. En **Settings → On Submit** elige **Redirect to URL** y pon exactamente:
    ```
-   https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/test-nivel-bim/gracias-agenda.html?acceso=dmbim26
+   https://funnel.dgdesignmodeling.com/test-nivel-bim/gracias?acceso=dmbim26
    ```
 6. Guarda e **Integrate Form → Embed**. Copia la URL del iframe: se ve como
    `https://api.leadconnectorhq.com/widget/form/XXXXXXXXXXXX`
@@ -61,7 +81,7 @@ respaldo, que **no guarda nada en el CRM**.
 
 ---
 
-## PASO 2 · El funnel de dos páginas
+## PASO 2 · El funnel de tres páginas
 
 1. **Sites → Funnels → + New Funnel**, nómbralo `Test de Nivel BIM`.
 2. **Página 1** — ruta `/test-nivel-bim`:
@@ -71,13 +91,19 @@ respaldo, que **no guarda nada en el CRM**.
    - Importante: el elemento debe ocupar el 100% del ancho y la sección no
      debe tener márgenes, o el diseño se ve encajonado.
 3. **Página 2** — ruta `/test-nivel-bim/gracias`:
-   - Mismo procedimiento con **`ghl-gracias.html`** (⚠️ ese archivo, no
-     `gracias-agenda.html`: la versión `ghl-` es la que tiene las rutas
-     absolutas hacia el test; la otra apuntaría a un archivo inexistente
-     dentro del dominio de GHL).
+   - Mismo procedimiento con **`ghl-gracias.html`**.
    - Esta página tiene el calendario de agenda ya embebido; verifica que carga.
-4. **Publica ambas páginas** y ábrelas desde un móvil para revisar que se ven
-   bien (el diseño es responsive, no debería haber scroll horizontal).
+4. **Página 3** — ruta `/test-nivel-bim/test`:
+   - Pega **`ghl-test.html`**. Es el test embebido, para que se vea bajo el
+     dominio de Dayana.
+   - ⚠️ **Aquí el padding sí es crítico**: la sección y el elemento tienen que
+     ir a ancho completo y **sin padding arriba, abajo ni a los lados**. Si
+     quedan márgenes, aparece una doble barra de scroll y en móvil se vuelve
+     incómodo de usar.
+   - Si GHL añade cabecera o pie a la página, quítalos: esta página debe ser
+     solo el test.
+5. **Publica las tres** y ábrelas desde un móvil (el diseño es responsive; no
+   debería haber scroll horizontal en ninguna).
 
 ---
 
@@ -142,20 +168,22 @@ estuviste configurando:
 - [ ] 2. El formulario rechaza un correo mal escrito
 - [ ] 3. Al enviarlo correctamente, redirige a la página de gracias
 - [ ] 4. El botón grande de la página de gracias abre el test **sin candado**
+        y **la barra de direcciones sigue mostrando funnel.dgdesignmodeling.com**
 - [ ] 5. Se pueden responder las 20 preguntas y sale el resultado con nivel,
         brecha y siguiente paso
 - [ ] 6. El contacto aparece en **Contacts** con su nombre, correo, teléfono y
         el campo Perfil relleno
 - [ ] 7. La oferta de membresía se otorgó y el acceso al portal funciona
 - [ ] 8. El calendario de la página de gracias carga y permite agendar
-- [ ] 9. **Borra el contacto de prueba** del CRM
+- [ ] 9. En la página del test no hay doble barra de scroll ni márgenes raros
+- [ ] 10. **Borra el contacto de prueba** del CRM
 
 ---
 
 ## Qué reportar de vuelta
 
 1. La **URL de embed del formulario** (paso 1) — es lo que falta en el código.
-2. Las **URLs finales** de las dos páginas del funnel ya publicadas.
+2. Las **URLs finales** de las tres páginas del funnel ya publicadas.
 3. Cualquier punto del checklist que **no** haya pasado, con lo que viste.
 4. Si activaste el bot: confirmación de que el DM llega.
 
