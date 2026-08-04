@@ -40,26 +40,47 @@ la ruta BIM y le dice qué competencias concretas le faltan para el siguiente.
 
 ## DM 1 — respuesta inmediata al comentario
 
-> ¡Hola {{contact.first_name}}! 👋 Aquí tienes el Test de Nivel BIM:
+> ¡Hola! 👋 Aquí está tu acceso al Test de Nivel BIM **GRATIS**
 >
 > 👉 https://funnel.dgdesignmodeling.com/test-nivel-bim
 >
-> Son 20 preguntas, unos 5 minutos, y el resultado te sale al instante: en qué
-> nivel estás de los 4 (Modelador, Coordinador, BIM Manager 4D-5D o
-> Especialista BIM+IA) y qué competencias concretas te faltan para el
-> siguiente.
+> Regístrate (20 segundos) y lo haces de inmediato desde el celular: 20
+> preguntas, 5 minutos, y al terminar sabes en cuál de los 4 niveles estás y
+> qué competencias concretas te faltan para el siguiente.
 >
-> Te aviso de una: es honesto. No regala niveles 😉
->
-> Cuando lo hagas, cuéntame qué te salió.
+> Antes de que lo hagas, cuéntame ¿en qué nivel crees que vas a salir? 🙂
+> 1️⃣ Modelador BIM
+> 2️⃣ Coordinador BIM
+> 3️⃣ BIM Manager 4D-5D
+> 4️⃣ Especialista BIM+IA
 
-## DM 2 — a las 24 h, calificación
+**Por qué esta pregunta y no "¿a qué te dedicas?"** — en la calculadora esa
+pregunta funciona porque no sabemos el perfil. En el test **ya lo sabemos**: el
+formulario lo pide antes de entrar, así que volver a preguntarlo se siente a
+interrogatorio.
 
-> {{contact.first_name}}, ¿alcanzaste a hacer el test? 👀
->
-> Me interesa saber qué nivel te salió — sobre todo si fue más bajo de lo que
-> esperabas, porque ahí es donde está lo interesante: ya sabes exactamente por
-> dónde empezar.
+Pedirle que **prediga su nivel antes de hacerlo** hace dos cosas: lo
+compromete (y por eso lo hace), y deja servida la conversación de venta. La
+distancia entre lo que creía y lo que le salió **es** el argumento.
+
+## DM 2 — a las 24 h, aprovechando la predicción
+
+Si respondió con un número, personalizar. Si no, la versión genérica.
+
+> **Si dijo 3 o 4 y le salió 1 o 2:**
+> {{contact.first_name}}, me dijiste que creías salir en {{nivel_predicho}} 👀
+> ¿Qué te salió al final? Te lo pregunto porque cuando la diferencia es de dos
+> niveles casi siempre es por lo mismo, y es más corto de cerrar de lo que
+> parece.
+
+> **Si acertó o no respondió:**
+> {{contact.first_name}}, ¿alcanzaste a hacer el test? Cuéntame qué nivel te
+> salió — sobre todo si fue más bajo de lo que esperabas, porque ahí es donde
+> está lo interesante: ya sabes exactamente por dónde empezar.
+
+**Etiquetar la predicción** (`predijo-nivel-1` … `predijo-nivel-4`): cruzada
+contra el nivel real, es el mejor dato de calificación que vamos a tener. Quien
+se sobreestima por dos niveles es el perfil que más necesita el Máster.
 
 ## Respuestas a lo que suelen preguntar
 
@@ -98,19 +119,25 @@ verificaciones.
 - **No es:** un software de diseño estructural certificado, ni un reemplazo de
   memoria de cálculo.
 
-## DM 1 — respuesta inmediata al comentario
+## DM 1 — el que ya está en producción
 
-> ¡Hola {{contact.first_name}}! 👋 Aquí tienes la Calculadora de Zapatas:
+Este es el texto vivo, tal como lo tiene Dayana en el bot. Es el patrón que
+siguen los demás: saludo → enlace → qué obtiene → **pregunta con opciones
+numeradas**, que es lo que hace que respondan (contestar "2" no cuesta nada, y
+esa respuesta abre la ventana de 24 h y segmenta al contacto).
+
+> Hola! 👋 Aquí está tu acceso a la Calculadora de Zapatas GRATIS
 >
 > 👉 https://funnel.dgdesignmodeling.com/calculadora-zapatas
 >
-> Metes las cargas y los datos del suelo y te devuelve el predimensionamiento
-> con sus verificaciones, al instante y sin instalar nada.
+> Regístrate (20 segundos) y la usas de inmediato desde el celular:
+> dimensiones, verificaciones y acero de tu zapata en 2 minutos.
 >
-> Un apunte importante: es una herramienta de apoyo para predimensionar. El
-> criterio y la verificación con tu norma siguen siendo tuyos 🙂
->
-> Cuéntame para qué proyecto la vas a usar.
+> Mientras la pruebas, cuéntame ¿a qué te dedicas? 🙂
+> 1️⃣ Estudiante de ingeniería/arquitectura
+> 2️⃣ Ingeniero(a) o arquitecto(a) independiente
+> 3️⃣ Trabajo en constructora/consultora
+> 4️⃣ Docente
 
 ## DM 2 — a las 24 h, calificación
 

@@ -73,17 +73,30 @@ son gratuitos, entran en la primera versión; si no, en la segunda.
 
 La fase A y B son de un tirón. Lo que marca el ritmo es C y D.
 
-## 6. Qué hace falta de Dayana
+## 6. Decisiones tomadas (4-ago-2026)
 
-1. **Inventario de lo gratuito**: ¿el ebook BIM, los GPTs y las guías están
-   listos y son de acceso libre? ¿Con qué enlace?
-2. **Los 4-6 artículos del blog** que quiere destacar (o me dice que elija yo
-   por métricas).
-3. **Confirmar la ruta** `/recursos` — o si prefiere `/herramientas`,
-   `/gratis`, etc.
+- **Ruta confirmada:** `/recursos`.
+- **Artículos:** los elige Claude por métricas. Criterio: **guardados**, no
+  vistas. Un guardado significa "esto me sirve, vuelvo" — que es exactamente la
+  intención de un hub. Las vistas miden alcance, no utilidad.
 
-Con eso construyo. Sin eso, puedo montar la versión con las dos herramientas
-y la comunidad, y los demás bloques se suman después.
+  Selección por guardados (de `matriz.json`):
+
+  | Pieza | Vistas | Guardados |
+  |---|---|---|
+  | «La IA ya hace 5 tareas de tu trabajo» (16-jul) | 4.766 | **66** |
+  | «Cómo se fija una estructura de acero» (2-jul) | 4.624 | **45** |
+  | «Le pedí a ChatGPT que diseñara una losa» (15-jul) | 3.020 | **45** ⭐ récord de comentarios |
+  | «Uniones en estructuras de acero» (19-jun) | 11.447 | **71** |
+
+  Dayana confirma qué artículo del blog corresponde a cada una — el blog no es
+  accesible desde el entorno de Claude.
+
+- **Ebook BIM, GPTs y guías:** Dayana pasa los enlaces. Entran en cuanto
+  lleguen; no bloquean la primera versión.
+
+**Se puede empezar ya** con las dos herramientas y la comunidad; los artículos
+y las descargas se suman encima sin rehacer nada.
 
 ## 7. Cómo sabremos si funciona
 
