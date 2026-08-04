@@ -136,6 +136,32 @@ comentarios por cerrar sin preguntar.
 >
 > ¿Qué nivel te salió?
 
+### El CTA cambia según la red
+
+| Red | CTA | Por qué |
+|---|---|---|
+| **Instagram** | `Comenta la palabra NIVEL y te lo envío` | En el feed el enlace no es clicable. El bot de palabra clave ya recoge el comentario y manda el enlace por DM — no hay que montar nada. |
+| **Facebook y comunidades de GHL** | El enlace directo | Ahí el enlace sí es clicable; pedir un comentario añade un paso de más. |
+
+En los dos casos el post **cierra con pregunta** ("¿coincidió con lo que
+creías?"): el CTA sirve para entregar el test, la pregunta sirve para que
+haya conversación. Son cosas distintas y las dos tienen que estar.
+
 **Lo que no se pone, nunca:** precio, "inscríbete", ni la palabra
 "certificación". El objetivo del post es que respondan en los comentarios; de
 ahí sale la conversación por DM.
+
+## 9b. Imágenes de la publicación
+
+Dos piezas, ambas 4:5 (1080×1350), generadas el 3-ago-2026:
+
+| Pieza | Qué muestra | Dónde va |
+|---|---|---|
+| **A · Resultado real** | La pantalla del test con el perfil por bloque y el resultado "Nivel 1 · Modelador BIM Profesional", más los 4 beneficios | Post principal en comunidades y Facebook — muestra el producto |
+| **B · Los 4 niveles** | Estructura en alambre sobre azul, la lista de los 4 niveles con el cuarto encendido | Instagram y post fijado — más limpia, se lee mejor en miniatura |
+
+Las dos llevan el botón `Haz el test gratis →` con
+`COMENTA LA PALABRA NIVEL Y TE LO ENVÍO` y la URL del dominio propio.
+
+> **URLs de las imágenes en la biblioteca de GHL:** ⟨pendiente — Dayana las
+> sube y se pegan aquí, igual que las tres de la landing⟩
