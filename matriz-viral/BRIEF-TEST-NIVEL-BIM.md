@@ -96,16 +96,46 @@ Secuencia sugerida de 4 frames (misma mecánica de la sección 6 del Word):
 
 ## 9. Post para las comunidades
 
-> **Nuevo: Test de Nivel BIM (gratis)**
+**Versión final (3-ago-2026).** Es la única que se publica — si aparece otra
+redacción dando vueltas, esta manda. Cierra con **pregunta directa**, que es la
+lección de la semana del 27-jul: el reel de humor sacó 8.373 vistas y solo 3
+comentarios por cerrar sin preguntar.
+
+> **Nuevo: Test de Nivel BIM — gratis, 5 minutos**
 >
-> 20 preguntas para saber en qué nivel estás realmente —Modelador,
-> Coordinador, BIM Manager 4D-5D o Especialista BIM+IA— y qué competencias
-> concretas te faltan para el siguiente.
+> Casi nadie sabe decir en qué nivel BIM está parado. Decimos "manejo Revit" o
+> "hago coordinación", pero cuando toca sostenerlo en un proyecto real aparecen
+> los huecos.
 >
-> No es un quiz de redes: las preguntas salen del temario real del Máster y el
-> resultado te muestra tu perfil bloque por bloque.
+> Armamos un test de 20 preguntas para responder eso con precisión: te ubica en
+> uno de los 4 niveles de la ruta —**Modelador, Coordinador, BIM Manager 4D-5D
+> o Especialista BIM+IA**— y te dice qué competencias concretas te faltan para
+> el siguiente.
 >
-> 👉 [enlace de la landing]
+> Dos cosas que lo separan de un quiz de redes:
 >
-> Cuéntanos aquí qué nivel te salió. Al que le dé más bajo de lo que esperaba,
-> le tenemos buenas noticias: ya sabes por dónde empezar.
+> • Las preguntas salen del **temario real** del Máster, no de trivia.
+> • Es honesto: si dominas 4D-5D pero no sabes federar modelos, te lo dice y te
+>   marca el hueco. No regala niveles.
+>
+> No es una certificación ni un diploma — es un diagnóstico para saber por
+> dónde seguir.
+>
+> 👉 https://funnel.dgdesignmodeling.com/test-nivel-bim
+>
+> Cuéntanos aquí qué nivel te salió. **¿Coincidió con lo que creías, o te
+> sorprendió?**
+
+### Versión corta (post fijado o DM)
+
+> ¿En qué nivel BIM estás **realmente**? 20 preguntas, 5 minutos, gratis. Te
+> ubica entre Modelador, Coordinador, BIM Manager 4D-5D o Especialista BIM+IA,
+> y te dice qué te falta para el siguiente.
+>
+> 👉 https://funnel.dgdesignmodeling.com/test-nivel-bim
+>
+> ¿Qué nivel te salió?
+
+**Lo que no se pone, nunca:** precio, "inscríbete", ni la palabra
+"certificación". El objetivo del post es que respondan en los comentarios; de
+ahí sale la conversación por DM.
