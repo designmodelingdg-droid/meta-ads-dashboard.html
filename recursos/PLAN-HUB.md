@@ -76,27 +76,83 @@ La fase A y B son de un tirón. Lo que marca el ritmo es C y D.
 ## 6. Decisiones tomadas (4-ago-2026)
 
 - **Ruta confirmada:** `/recursos`.
-- **Artículos:** los elige Claude por métricas. Criterio: **guardados**, no
-  vistas. Un guardado significa "esto me sirve, vuelvo" — que es exactamente la
-  intención de un hub. Las vistas miden alcance, no utilidad.
+- **Ebook BIM, GPTs y guías:** existen y son gratuitos. Dayana pasa los
+  enlaces. No bloquean la primera versión.
 
-  Selección por guardados (de `matriz.json`):
+### Corrección importante sobre los artículos
 
-  | Pieza | Vistas | Guardados |
-  |---|---|---|
-  | «La IA ya hace 5 tareas de tu trabajo» (16-jul) | 4.766 | **66** |
-  | «Cómo se fija una estructura de acero» (2-jul) | 4.624 | **45** |
-  | «Le pedí a ChatGPT que diseñara una losa» (15-jul) | 3.020 | **45** ⭐ récord de comentarios |
-  | «Uniones en estructuras de acero» (19-jun) | 11.447 | **71** |
+Las cuatro piezas que propuse **no son artículos del blog** — son
+publicaciones de redes. Dayana lo aclaró: los artículos del blog todavía **hay
+que crearlos**.
 
-  Dayana confirma qué artículo del blog corresponde a cada una — el blog no es
-  accesible desde el entorno de Claude.
+Eso no invalida la selección, la cambia de sitio: esas cuatro piezas son las
+que **mejor rindieron por guardados**, y un guardado significa "esto me sirve,
+vuelvo" — exactamente la intención de un hub. Así que son los **mejores
+candidatos a convertirse en los primeros artículos**:
 
-- **Ebook BIM, GPTs y guías:** Dayana pasa los enlaces. Entran en cuanto
-  lleguen; no bloquean la primera versión.
+| Tema probado | Vistas | Guardados |
+|---|---|---|
+| Uniones en estructuras de acero (19-jun) | 11.447 | **71** |
+| La IA ya hace 5 tareas de tu trabajo (16-jul) | 4.766 | **66** |
+| Cómo se fija una estructura de acero (2-jul) | 4.624 | **45** |
+| Le pedí a ChatGPT que diseñara una losa (15-jul) | 3.020 | **45** |
 
-**Se puede empezar ya** con las dos herramientas y la comunidad; los artículos
-y las descargas se suman encima sin rehacer nada.
+Se reparten entre **acero y BIM+IA**, que son justo los dos productos. No se
+forzó: salió así. Confirma que la gente guarda lo que le resuelve trabajo.
+
+### 🚫 Bloqueo: no puedo ver el blog
+
+`funnel.dgdesignmodeling.com` está **bloqueado por la política de red** del
+entorno donde corre Claude (`403` del proxy en el CONNECT). No es que el sitio
+falle — es este entorno. No puedo inventariar el blog por mi cuenta.
+
+**Lo que hace falta que traiga Dayana** (cualquiera de las tres sirve):
+
+1. La lista pegada: título, URL y fecha de cada artículo publicado.
+2. Capturas de la página del blog y de un artículo por dentro.
+3. Un export desde GHL, si el blog lo permite.
+
+Con eso puedo decidir qué se destaca, qué se reescribe y qué falta por crear.
+
+## 7. La sesión del jueves — orden de trabajo
+
+Pensado para hacerlo juntos, de lo que no depende de nadie a lo que sí.
+
+| # | Qué | Depende de |
+|---|---|---|
+| 1 | Revisar el inventario del blog que traiga Dayana: qué hay, qué sirve, qué se reescribe | ella |
+| 2 | Decidir los 4-6 destacados y cuáles hay que crear desde cero | los dos |
+| 3 | Enlaces del ebook, los GPTs y las guías | ella |
+| 4 | Construir `recursos/index.html` con el sistema visual de DMA | Claude |
+| 5 | Generar `ghl-recursos.html` y verificarlo en móvil | Claude |
+| 6 | Pegarlo en GHL en `/recursos` y publicar | Claude del navegador |
+| 7 | Enlazarlo desde bio de IG, blog, comunidades y los DM de los dos bots | Claude del navegador |
+| 8 | **Recién ahí**: lanzar el Test de Nivel BIM en redes | — |
+
+**Lo que Claude puede adelantar antes del jueves**, si Dayana lo pide: montar
+la página con lo que ya está confirmado —las dos herramientas y la comunidad—
+para que el jueves sea rellenar y publicar en vez de empezar de cero.
+
+## 8. Estructura de la página
+
+Decidida, para no discutirla el jueves:
+
+```
+1. Cabecera        nav blanco + logo (el sistema de zapatas y del test)
+2. Portada         "Todo lo que tenemos gratis, en un solo sitio"
+                   + la promesa del nivel de acceso
+3. HERRAMIENTAS    2 tarjetas grandes: Test de Nivel BIM · Calculadora
+                   (las que piden registro → son las que llenan el CRM)
+4. DESCARGAS       ebook, GPTs, guías (cuando lleguen los enlaces)
+5. ARTÍCULOS       4-6 tarjetas que enlazan al blog
+6. COMUNIDAD       bloque de cierre: qué encuentras dentro + entrar gratis
+7. Pie             logo, aviso de que las herramientas son de apoyo
+```
+
+**La regla de oro del orden:** las herramientas van **arriba**, antes que los
+artículos. Son las que piden registro y por tanto las que meten gente al CRM;
+los artículos son abiertos y no capturan nada. Un hub que abre con artículos se
+lee como un blog y no convierte.
 
 ## 7. Cómo sabremos si funciona
 

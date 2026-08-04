@@ -166,3 +166,90 @@ Las dos llevan el botón `Haz el test gratis →` con
 **Por qué la A va en el post principal:** es la única que muestra el producto
 de verdad — la captura del resultado es real, no un montaje. En un lanzamiento,
 enseñar lo que la persona va a recibir pesa más que la pieza bonita.
+
+## 9c. Caption del post de lanzamiento
+
+Va con la **pieza A** (la del resultado real). Publicar solo cuando el hub
+exista — decisión de Dayana del 4-ago.
+
+### Instagram (principal)
+
+> Llevo años oyendo la misma frase en entrevistas: **"yo manejo Revit"**.
+>
+> Y casi siempre es verdad. El problema es que "manejar Revit" no dice nada de
+> lo que puedes sostener en un proyecto real. Hay gente que modela precioso y
+> se traba el día que le toca federar tres disciplinas. Y hay gente que
+> coordina bien pero nunca ha tocado 4D.
+>
+> Nadie te dice en qué nivel estás. Te enteras el día que te queda grande algo.
+>
+> Por eso armamos esto: **20 preguntas, 5 minutos**, y al terminar sabes en
+> cuál de los 4 niveles estás de verdad 👇
+>
+> 1️⃣ Modelador BIM
+> 2️⃣ Coordinador BIM
+> 3️⃣ BIM Manager 4D-5D
+> 4️⃣ Especialista BIM+IA
+>
+> Y lo más útil: te dice **qué competencias exactas** te faltan para el
+> siguiente. No "estudia más". La lista, con nombre.
+>
+> Te aviso de una: no regala niveles. Si vas fuerte en 4D pero flojo en
+> coordinación, te lo dice en la cara. Para eso sirve.
+>
+> 📲 **Comenta la palabra NIVEL** y te lo envío al DM.
+>
+> Y antes de hacerlo, dime: **¿en qué nivel crees que vas a salir?** Me
+> interesa ver a cuántos les sale distinto de lo que esperaban 👀
+>
+> #BIM #Revit #BIMManager #IngenieríaCivil #Arquitectura #BIMyIA #Coordinación
+> #ConstrucciónDigital #DesignModeling
+
+### Facebook (mismo texto, otro cierre)
+
+Cambiar los dos últimos bloques por:
+
+> 👉 https://funnel.dgdesignmodeling.com/test-nivel-bim
+>
+> Hazlo y cuéntame en los comentarios qué nivel te salió. **¿Coincidió con lo
+> que creías, o te sorprendió?**
+
+En Facebook el enlace es clicable: pedir un comentario para entregarlo añade
+un paso de más. La pregunta de cierre se mantiene — esa no se negocia.
+
+### LinkedIn (versión sobria, sin emojis de relleno)
+
+> "Manejo Revit" es la frase más común en una entrevista de BIM, y la que menos
+> información aporta.
+>
+> No dice si la persona puede federar tres disciplinas, ni si ha trabajado 4D,
+> ni si sabe entregar información confiable a obra. Son cuatro competencias
+> distintas y solemos meterlas en la misma bolsa.
+>
+> Publicamos un diagnóstico gratuito de 20 preguntas que ubica a la persona en
+> uno de los cuatro niveles de la ruta —Modelador, Coordinador, BIM Manager
+> 4D-5D o Especialista BIM+IA— y devuelve las competencias concretas que le
+> faltan para el siguiente. Las preguntas salen del temario del Máster, no de
+> trivia.
+>
+> Un detalle de diseño que nos importó: los niveles se cuentan en orden. No se
+> puede "saltar" a BIM Manager sin dominar coordinación, y cuando alguien tiene
+> el conocimiento disperso, el test lo señala en vez de premiarlo.
+>
+> https://funnel.dgdesignmodeling.com/test-nivel-bim
+>
+> ¿Qué competencia crees que más se sobreestima en nuestro sector?
+
+### Por qué está escrito así
+
+- **Abre con una escena, no con el producto.** "Yo manejo Revit" es algo que
+  quien contrata ha oído mil veces y quien busca trabajo ha dicho mil veces.
+  Los dos se reconocen en la primera línea.
+- **El CTA y la pregunta de cierre son cosas distintas** y las dos están: el
+  CTA entrega la herramienta, la pregunta genera los comentarios. Es la
+  lección de la semana del 27-jul, donde el reel ganador sacó 8.373 vistas y
+  solo 3 comentarios por cerrar sin preguntar.
+- **La pregunta de cierre es la misma del bot** ("¿en qué nivel crees que vas a
+  salir?"): quien responde en comentarios ya llega predispuesto al DM, y el
+  dato sirve para calificar.
+- **No hay precio, ni "inscríbete", ni la palabra certificación.**
