@@ -155,13 +155,14 @@ ahí sale la conversación por DM.
 
 Dos piezas, ambas 4:5 (1080×1350), generadas el 3-ago-2026:
 
-| Pieza | Qué muestra | Dónde va |
-|---|---|---|
-| **A · Resultado real** | La pantalla del test con el perfil por bloque y el resultado "Nivel 1 · Modelador BIM Profesional", más los 4 beneficios | Post principal en comunidades y Facebook — muestra el producto |
-| **B · Los 4 niveles** | Estructura en alambre sobre azul, la lista de los 4 niveles con el cuarto encendido | Instagram y post fijado — más limpia, se lee mejor en miniatura |
+| Pieza | Qué muestra | Dónde va | Archivo |
+|---|---|---|---|
+| **A · Resultado real** | La pantalla del test con el perfil por bloque y el resultado "Nivel 1 · Modelador BIM Profesional", más los 4 beneficios | Post principal en comunidades y Facebook — muestra el producto | [`6a7144a932db2dd157d031ca.png`](https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a7144a932db2dd157d031ca.png) |
+| **B · Los 4 niveles** | Estructura en alambre sobre azul, la lista de los 4 niveles con el cuarto encendido | Instagram y post fijado — más limpia, se lee mejor en miniatura | [`6a7144a9188345b27ecd80b1.png`](https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a7144a9188345b27ecd80b1.png) |
 
 Las dos llevan el botón `Haz el test gratis →` con
 `COMENTA LA PALABRA NIVEL Y TE LO ENVÍO` y la URL del dominio propio.
 
-> **URLs de las imágenes en la biblioteca de GHL:** ⟨pendiente — Dayana las
-> sube y se pegan aquí, igual que las tres de la landing⟩
+**Por qué la A va en el post principal:** es la única que muestra el producto
+de verdad — la captura del resultado es real, no un montaje. En un lanzamiento,
+enseñar lo que la persona va a recibir pesa más que la pieza bonita.
