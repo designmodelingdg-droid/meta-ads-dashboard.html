@@ -60,9 +60,21 @@
   @media(min-width:1000px){.g3{grid-template-columns:repeat(3,1fr)}}
 
   /* TARJETA DE RECURSO */
-  .card{border:1px solid var(--line);border-radius:14px;background:#fff;padding:24px 22px;
+  .card{border:1px solid var(--line);border-radius:14px;background:#fff;overflow:hidden;
     display:flex;flex-direction:column;text-decoration:none;transition:transform .18s,box-shadow .18s,border-color .18s}
   .card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,62,92,.10);border-color:#cfd8e0}
+  .card .cuerpo{padding:22px;display:flex;flex-direction:column;flex:1}
+
+  /* Imagen de la tarjeta.
+     Cada sección trae una por defecto, para que la página se vea completa
+     desde el primer día. Cuando llegue la imagen propia de un recurso, se
+     le pone en su style="--img:url(...)" y pisa a la de la sección. */
+  .card .foto{
+    display:block;width:100%;aspect-ratio:16/9;background:var(--navy) center/cover no-repeat;
+    background-image:var(--img,var(--img-seccion));border-bottom:1px solid var(--line)
+  }
+  .card:hover .foto{opacity:.94}
+  @supports not (aspect-ratio:16/9){ .card .foto{height:180px} }
   .card .tag{display:inline-block;align-self:flex-start;background:var(--naranja-palido);color:#8a4d0d;
     font-family:'Overpass',sans-serif;font-size:.68rem;font-weight:800;letter-spacing:.08em;
     text-transform:uppercase;padding:5px 11px;border-radius:999px;margin-bottom:13px}
@@ -71,7 +83,8 @@
   .card .go{margin-top:16px;color:var(--naranja);font-family:'Overpass',sans-serif;font-weight:800;font-size:.9rem}
 
   /* HERRAMIENTAS — destacadas, van primero: son las que piden registro */
-  .destacadas .card{border-width:2px;border-color:var(--naranja-palido);padding:28px 26px}
+  .destacadas .card{border-width:2px;border-color:var(--naranja-palido)}
+  .destacadas .card .cuerpo{padding:26px}
   .destacadas .card h3{font-size:1.35rem}
   .destacadas .card .tag{background:var(--naranja);color:#fff}
 
@@ -118,25 +131,31 @@
 </header>
 
 <!-- ============ 1 · HERRAMIENTAS (lo que más convierte, va primero) ============ -->
-<section id="herramientas">
+<section id="herramientas" style="--img-seccion:url('https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/f16e5deb-87b3-4f0f-b270-01e42484b0dc.png')">
   <div class="container">
     <p class="eyebrow">Úsalas ahora mismo</p>
     <h2 class="sec">Herramientas gratuitas</h2>
     <p class="sub">Funcionan en el navegador, también desde el celular. Te registras una vez y las usas siempre.</p>
     <div class="grid g2 destacadas">
 
-      <a class="card" href="https://funnel.dgdesignmodeling.com/test-nivel-bim">
+      <a class="card" style="--img:url('https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a7144a9188345b27ecd80b1.png')" href="https://funnel.dgdesignmodeling.com/test-nivel-bim">
+        <span class="foto"></span>
+        <span class="cuerpo">
         <span class="tag">Nuevo</span>
         <h3>Test de Nivel BIM</h3>
         <p>20 preguntas para saber en cuál de los 4 niveles estás realmente —Modelador, Coordinador, BIM Manager 4D-5D o Especialista BIM+IA— y qué competencias concretas te faltan para el siguiente. Resultado inmediato, en 5 minutos.</p>
         <span class="go">Hacer el test →</span>
+      </span>
       </a>
 
       <a class="card" href="https://funnel.dgdesignmodeling.com/calculadora-zapatas">
+        <span class="foto"></span>
+        <span class="cuerpo">
         <span class="tag">La más usada</span>
         <h3>Calculadora de Zapatas Aisladas</h3>
         <p>Metes las cargas y los datos del suelo y te devuelve dimensiones, acero y verificaciones en 2 minutos. Herramienta de predimensionamiento: la verificación con tu norma sigue siendo tuya.</p>
         <span class="go">Abrir la calculadora →</span>
+      </span>
       </a>
 
     </div>
@@ -144,7 +163,7 @@
 </section>
 
 <!-- ============ 2 · CURSOS Y DESCARGAS ============ -->
-<section class="franja" id="descargas">
+<section class="franja" id="descargas" style="--img-seccion:url('https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/f4f05aec-1d54-4c14-8ae6-417c5ecbe729.png')">
   <div class="container">
     <p class="eyebrow">Para llevarte</p>
     <h2 class="sec">Cursos, guías y descargas</h2>
@@ -152,38 +171,53 @@
     <div class="grid g3">
 
       <a class="card" data-url="cursoIntro" href="https://funnel.dgdesignmodeling.com/acceso-gratis-curso-introductorio-bim-registro304789">
+        <span class="foto"></span>
+        <span class="cuerpo">
         <span class="tag">Curso</span>
         <h3>Curso de Introducción a BIM</h3>
         <p>El punto de partida si estás empezando: qué es BIM de verdad, para qué sirve y cómo encaja en un proyecto real.</p>
         <span class="go">Acceder gratis →</span>
+      </span>
       </a>
 
       <a class="card" data-url="moduloDiplomado" href="https://funnel.dgdesignmodeling.com/acceso-gratis-modulo-diplomado-bim-registro">
+        <span class="foto"></span>
+        <span class="cuerpo">
         <span class="tag">Curso</span>
         <h3>Módulo 1 del Diplomado BIM</h3>
         <p>El primer módulo completo del diplomado, abierto. Para que veas cómo enseñamos antes de decidir nada.</p>
         <span class="go">Acceder gratis →</span>
+      </span>
       </a>
 
       <a class="card" data-url="ebook" href="https://funnel.dgdesignmodeling.com/descarga-gratis-ebook-bim-formulario">
+        <span class="foto"></span>
+        <span class="cuerpo">
         <span class="tag">E-book</span>
         <h3>E-book BIM</h3>
         <p>Los fundamentos de BIM explicados sin humo, con ejemplos de proyectos reales.</p>
         <span class="go">Descargar gratis →</span>
+      </span>
       </a>
 
       <a class="card" data-url="guia" href="https://funnel.dgdesignmodeling.com/descarga-gratis-guia-bim-formulario">
+        <span class="foto"></span>
+        <span class="cuerpo">
         <span class="tag">Guía</span>
         <h3>Guía BIM</h3>
         <p>Guía práctica para ordenar tu flujo de trabajo BIM: qué hacer, en qué orden y qué evitar.</p>
         <span class="go">Descargar gratis →</span>
+      </span>
       </a>
 
       <a class="card" data-url="aipro" href="https://funnel.dgdesignmodeling.com/descarga-gratis-ai-pro">
+        <span class="foto"></span>
+        <span class="cuerpo">
         <span class="tag">IA</span>
         <h3>AI PRO</h3>
         <p>El recurso de inteligencia artificial aplicada: cómo usarla en tareas reales de BIM sin perder el criterio técnico.</p>
         <span class="go">Descargar gratis →</span>
+      </span>
       </a>
 
     </div>
@@ -191,7 +225,7 @@
 </section>
 
 <!-- ============ 3 · ARTÍCULOS ============ -->
-<section id="articulos">
+<section id="articulos" style="--img-seccion:url('https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/955424f4-e1ea-445f-93b6-21a2517b1bcd.png')">
   <div class="container">
     <p class="eyebrow">Para leer</p>
     <h2 class="sec">Del blog</h2>
@@ -199,24 +233,33 @@
     <div class="grid g3">
 
       <a class="card" data-url="art1" href="https://funnel.dgdesignmodeling.com/post/sap2000-etabs-o-robot-cual-elegir-comenta-bim-o-ia">
+        <span class="foto"></span>
+        <span class="cuerpo">
         <span class="tag">Software</span>
         <h3>SAP2000, ETABS o Robot: ¿cuál elegir?</h3>
         <p>Las diferencias reales entre los tres, y en qué tipo de proyecto conviene cada uno.</p>
         <span class="go">Leer el artículo →</span>
+      </span>
       </a>
 
       <a class="card" data-url="art2" href="https://funnel.dgdesignmodeling.com/post/calculadora-de-zapatas-aisladas-gratis-predimensiona-en-2-minutos-desd">
+        <span class="foto"></span>
+        <span class="cuerpo">
         <span class="tag">Herramienta</span>
         <h3>Calculadora de zapatas aisladas: predimensiona en 2 minutos</h3>
         <p>Cómo usar la calculadora paso a paso y qué verificar antes de dar por buena una cimentación.</p>
         <span class="go">Leer el artículo →</span>
+      </span>
       </a>
 
       <a class="card" data-url="art3" href="https://funnel.dgdesignmodeling.com/post/bim-para-todos-mas-alla-de-las-grandes-empresas">
+        <span class="foto"></span>
+        <span class="cuerpo">
         <span class="tag">BIM</span>
         <h3>BIM para todos: más allá de las grandes empresas</h3>
         <p>Por qué BIM no es solo para constructoras grandes, y cómo empezar con un equipo pequeño.</p>
         <span class="go">Leer el artículo →</span>
+      </span>
       </a>
 
     </div>
