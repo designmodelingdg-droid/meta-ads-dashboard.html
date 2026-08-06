@@ -16,12 +16,14 @@ on:
       - claude/remote-control-setup-GUe3f          # rama por defecto (tras merge del PR)
       - claude/matriz-viral-3t356o                 # rama de trabajo (para probar antes del merge)
       - claude/zapatas-calculator-leadmagnet-iaj89j # rama del lead magnet (para probar antes del merge)
+      - claude/dma-custom-agent-google-nmhmsg      # rama del asistente (publica la política de privacidad)
     paths:
       - matriz-viral/matriz/matriz.json
       - matriz-viral/matriz/guiones-completos.json
       - matriz-viral/matriz/calendario-agosto.json
       - matriz-viral/matriz/competencia.json
       - calculadora-zapatas/**
+      - privacidad/**
   workflow_dispatch: {}                      # permite correrla a mano desde la pestaña Actions
 
 # El token integrado solo necesita poder escribir en la rama gh-pages
@@ -53,6 +55,10 @@ jobs:
           cp matriz-viral/matriz/competencia.json public/competencia.json 2>/dev/null || true
           # Lead magnet: landing + calculadora de zapatas
           cp -r calculadora-zapatas public/calculadora-zapatas
+          # Política de privacidad — URL pública que exige Meta para poner la
+          # app "Design Modeling – Ads CLI" en modo Live. Sin app en Live, Meta
+          # NO entrega los webhooks reales de WhatsApp (solo los de prueba).
+          cp -r privacidad public/privacidad
           # Sin procesamiento Jekyll
           touch public/.nojekyll
           # index mínimo para que la raíz no dé 404 y sirva de estado
@@ -64,6 +70,7 @@ jobs:
           <p>Matriz de contenido viral (JSON, legible por máquina):</p>
           <p><a href="./matriz.json"><code>matriz.json</code></a> · <a href="./guiones-completos.json"><code>guiones-completos.json</code></a> (contenido completo de cada pieza) · <a href="./calendario-agosto.json"><code>calendario-agosto.json</code></a> (orden de publicación del mes)</p>
           <p>Lead magnet: <a href="./calculadora-zapatas/">Calculadora de Zapatas</a></p>
+          <p><a href="./privacidad/">Política de privacidad</a></p>
           <p style="color:#5a6b7b">Se actualiza solo cuando cambia la matriz en el repo.</p>
           </body>
           HTML
