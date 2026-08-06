@@ -24,6 +24,7 @@ on:
       - matriz-viral/matriz/competencia.json
       - calculadora-zapatas/**
       - test-nivel-bim/**
+      - recursos/**
   workflow_dispatch: {}                      # permite correrla a mano desde la pestaña Actions
 
 # El token integrado solo necesita poder escribir en la rama gh-pages
@@ -57,6 +58,8 @@ jobs:
           cp -r calculadora-zapatas public/calculadora-zapatas
           # Lead magnet: landing + test de nivel BIM
           cp -r test-nivel-bim public/test-nivel-bim
+          # Hub: todos los recursos gratuitos en un solo sitio
+          cp -r recursos public/recursos
           # Sin procesamiento Jekyll
           touch public/.nojekyll
           # index mínimo para que la raíz no dé 404 y sirva de estado
@@ -67,7 +70,7 @@ jobs:
           <h1>Design Modeling · datos de contenido</h1>
           <p>Matriz de contenido viral (JSON, legible por máquina):</p>
           <p><a href="./matriz.json"><code>matriz.json</code></a> · <a href="./guiones-completos.json"><code>guiones-completos.json</code></a> (contenido completo de cada pieza) · <a href="./calendario-agosto.json"><code>calendario-agosto.json</code></a> (orden de publicación del mes)</p>
-          <p>Lead magnets: <a href="./calculadora-zapatas/">Calculadora de Zapatas</a> · <a href="./test-nivel-bim/">Test de Nivel BIM</a></p>
+          <p>Lead magnets: <a href="./calculadora-zapatas/">Calculadora de Zapatas</a> · <a href="./test-nivel-bim/">Test de Nivel BIM</a> · <a href="./recursos/">Hub de recursos</a></p>
           <p style="color:#5a6b7b">Se actualiza solo cuando cambia la matriz en el repo.</p>
           </body>
           HTML

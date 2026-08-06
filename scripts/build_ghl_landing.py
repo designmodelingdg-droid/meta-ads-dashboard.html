@@ -33,11 +33,22 @@ RUTAS_FUNNEL = {
 }
 
 
-# origen → destino
-PAGINAS = [
-    ("index.html", "ghl-landing.html"),
-    ("gracias-agenda.html", "ghl-gracias.html"),
-]
+# origen → destino, por carpeta. Cada lead magnet tiene sus propias páginas:
+# el hub de recursos, por ejemplo, es una sola.
+PAGINAS_POR_CARPETA = {
+    "test-nivel-bim": [
+        ("index.html", "ghl-landing.html"),
+        ("gracias-agenda.html", "ghl-gracias.html"),
+    ],
+    "calculadora-zapatas": [
+        ("index.html", "ghl-landing.html"),
+        ("gracias-agenda.html", "ghl-gracias.html"),
+    ],
+    "recursos": [
+        ("index.html", "ghl-recursos.html"),
+    ],
+}
+PAGINAS_POR_DEFECTO = [("index.html", "ghl-landing.html")]
 
 
 def construir(carpeta: str, origen: str, destino: str) -> Path:
@@ -96,7 +107,9 @@ def construir(carpeta: str, origen: str, destino: str) -> Path:
 if __name__ == "__main__":
     if len(sys.argv) != 2:
         sys.exit("Uso: python3 scripts/build_ghl_landing.py <carpeta>")
-    for origen_, destino_ in PAGINAS:
-        salida_ = construir(sys.argv[1], origen_, destino_)
+    carpeta_ = sys.argv[1]
+    paginas_ = PAGINAS_POR_CARPETA.get(carpeta_, PAGINAS_POR_DEFECTO)
+    for origen_, destino_ in paginas_:
+        salida_ = construir(carpeta_, origen_, destino_)
         kb = salida_.stat().st_size / 1024
         print(f"OK → {salida_}  ({kb:.0f} KB)")
