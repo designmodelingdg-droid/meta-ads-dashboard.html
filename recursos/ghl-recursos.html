@@ -145,35 +145,35 @@
     <p class="sub">Material completo, gratuito, sin truco. Te registras y te llega el acceso.</p>
     <div class="grid g3">
 
-      <a class="card" data-url="cursoIntro" href="#">
+      <a class="card" data-url="cursoIntro" href="https://funnel.dgdesignmodeling.com/acceso-gratis-curso-introductorio-bim-registro304789">
         <span class="tag">Curso</span>
         <h3>Curso de Introducción a BIM</h3>
         <p>El punto de partida si estás empezando: qué es BIM de verdad, para qué sirve y cómo encaja en un proyecto real.</p>
         <span class="go">Acceder gratis →</span>
       </a>
 
-      <a class="card" data-url="moduloDiplomado" href="#">
+      <a class="card" data-url="moduloDiplomado" href="https://funnel.dgdesignmodeling.com/acceso-gratis-modulo-diplomado-bim-registro">
         <span class="tag">Curso</span>
         <h3>Módulo 1 del Diplomado BIM</h3>
         <p>El primer módulo completo del diplomado, abierto. Para que veas cómo enseñamos antes de decidir nada.</p>
         <span class="go">Acceder gratis →</span>
       </a>
 
-      <a class="card" data-url="ebook" href="#">
+      <a class="card" data-url="ebook" href="https://funnel.dgdesignmodeling.com/descarga-gratis-ebook-bim-formulario">
         <span class="tag">E-book</span>
         <h3>E-book BIM</h3>
         <p>Los fundamentos de BIM explicados sin humo, con ejemplos de proyectos reales.</p>
         <span class="go">Descargar gratis →</span>
       </a>
 
-      <a class="card" data-url="guia" href="#">
+      <a class="card" data-url="guia" href="https://funnel.dgdesignmodeling.com/descarga-gratis-guia-bim-formulario">
         <span class="tag">Guía</span>
         <h3>Guía BIM</h3>
         <p>Guía práctica para ordenar tu flujo de trabajo BIM: qué hacer, en qué orden y qué evitar.</p>
         <span class="go">Descargar gratis →</span>
       </a>
 
-      <a class="card" data-url="aipro" href="#">
+      <a class="card" data-url="aipro" href="https://funnel.dgdesignmodeling.com/descarga-gratis-ai-pro">
         <span class="tag">IA</span>
         <h3>AI PRO</h3>
         <p>El recurso de inteligencia artificial aplicada: cómo usarla en tareas reales de BIM sin perder el criterio técnico.</p>
@@ -192,21 +192,21 @@
     <p class="sub">Lo que publicamos sobre BIM, IA y estructuras. Abierto, sin registro.</p>
     <div class="grid g3">
 
-      <a class="card" data-url="art1" href="#">
+      <a class="card" data-url="art1" href="https://funnel.dgdesignmodeling.com/post/sap2000-etabs-o-robot-cual-elegir-comenta-bim-o-ia">
         <span class="tag">Software</span>
         <h3>SAP2000, ETABS o Robot: ¿cuál elegir?</h3>
         <p>Las diferencias reales entre los tres, y en qué tipo de proyecto conviene cada uno.</p>
         <span class="go">Leer el artículo →</span>
       </a>
 
-      <a class="card" data-url="art2" href="#">
+      <a class="card" data-url="art2" href="https://funnel.dgdesignmodeling.com/post/calculadora-de-zapatas-aisladas-gratis-predimensiona-en-2-minutos-desd">
         <span class="tag">Herramienta</span>
         <h3>Calculadora de zapatas aisladas: predimensiona en 2 minutos</h3>
         <p>Cómo usar la calculadora paso a paso y qué verificar antes de dar por buena una cimentación.</p>
         <span class="go">Leer el artículo →</span>
       </a>
 
-      <a class="card" data-url="art3" href="#">
+      <a class="card" data-url="art3" href="https://funnel.dgdesignmodeling.com/post/bim-para-todos-mas-alla-de-las-grandes-empresas">
         <span class="tag">BIM</span>
         <h3>BIM para todos: más allá de las grandes empresas</h3>
         <p>Por qué BIM no es solo para constructoras grandes, y cómo empezar con un equipo pequeño.</p>
@@ -232,7 +232,7 @@
       <li>Casos reales de proyectos, con sus errores incluidos</li>
       <li>Sesiones y contenido que no publicamos en redes</li>
     </ul>
-    <a class="btn" data-url="comunidad" href="#">Entrar a la comunidad →</a>
+    <a class="btn" data-url="comunidad" href="https://designmodelingacademy.app.clientclub.net/communities/groups/comunidad-design/home">Entrar a la comunidad →</a>
   </div>
 </section>
 
@@ -248,39 +248,26 @@
 /* ====================================================================
    ENLACES DE LOS RECURSOS
 
-   Pega aquí la URL de cada embudo de GoHighLevel. Los que queden vacíos
-   NO se muestran en la página — es preferible una tarjeta menos que un
-   enlace roto en la cara del visitante.
+   Los enlaces van escritos en el HTML, no inyectados aquí: así los ve
+   Google, funcionan con JavaScript desactivado y las vistas previas de
+   WhatsApp los leen bien.
 
-   Las dos herramientas y el blog no están aquí: sus URLs ya son fijas y
-   van escritas directamente en el HTML.
+   Para añadir un recurso nuevo: duplica una tarjeta, pon su href y ya.
+   Si se deja en "#" (todavía sin URL), este script la retira sola — vale
+   más una tarjeta menos que un enlace roto delante de alguien que entra
+   por primera vez.
    ==================================================================== */
-const URLS = {
-  // Embudos de la carpeta "Nutrición - Ebook, Guías, Cursos" en GHL
-  cursoIntro:      '',   // Acceso Gratis Curso Introducción BIM
-  moduloDiplomado: '',   // Acceso Gratis Módulo 1 Diplomado BIM
-  ebook:           '',   // Descargar Gratis el E-book BIM
-  guia:            '',   // Descargar Gratis la Guia BIM
-  aipro:           '',   // Descargar Gratis el AI PRO
-
-  // Artículos del blog
-  art1:            '',   // SAP2000, ETABS o Robot: ¿cuál elegir?
-  art2:            '',   // Calculadora de zapatas aisladas
-  art3:            '',   // BIM para todos: más allá de las grandes empresas
-
-  // Comunidad gratuita
-  comunidad:       '',
-};
-
 (function(){
   var pendientes = [];
   document.querySelectorAll('[data-url]').forEach(function(el){
-    var url = (URLS[el.dataset.url] || '').trim();
-    if(url){ el.setAttribute('href', url); }
-    else   { el.classList.add('sin-enlace'); pendientes.push(el.dataset.url); }
+    var href = (el.getAttribute('href') || '').trim();
+    if(!href || href === '#'){
+      el.classList.add('sin-enlace');
+      pendientes.push(el.dataset.url);
+    }
   });
-  // Si una sección se queda sin tarjetas visibles, se oculta entera para
-  // no dejar un título con un hueco debajo.
+  // Si una sección se queda sin tarjetas visibles, se oculta entera para no
+  // dejar un título con un hueco debajo.
   document.querySelectorAll('section').forEach(function(sec){
     var cards = sec.querySelectorAll('.card');
     if(!cards.length) return;
@@ -288,7 +275,7 @@ const URLS = {
     if(!vivas.length) sec.style.display = 'none';
   });
   if(pendientes.length){
-    console.warn('[DMA] Hub de recursos: faltan URLs y esas tarjetas están ocultas → ' + pendientes.join(', '));
+    console.warn('[DMA] Hub de recursos: sin URL y ocultas → ' + pendientes.join(', '));
   }
 })();
 </script>
