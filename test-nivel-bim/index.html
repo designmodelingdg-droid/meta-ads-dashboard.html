@@ -91,11 +91,31 @@
   .formcard .fine{font-size:.72rem;color:var(--ink2);margin-top:11px;text-align:center;line-height:1.45}
   #errBox{display:none;background:#fdeaea;color:#a11;border-radius:8px;padding:9px 11px;font-size:.82rem;margin-top:12px}
   /* MARQUEE AVALES */
-  .marquee{background:var(--navy2);padding:16px 0;overflow:hidden;white-space:nowrap}
-  .marquee .track{display:inline-flex;gap:44px;animation:slide 28s linear infinite}
-  .marquee span{color:#8fa2b3;font-family:'Overpass',sans-serif;font-size:.82rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;flex:none}
+  /* Franja de avales — mismo sistema que la plantilla de landing-producto.
+     Fondo CREMA, no navy: los logos son las versiones oscuras y sobre azul
+     desaparecen (es el mismo error que tuvo el logo principal). */
+  .marquee{background:var(--crema);border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);padding:26px 0 24px;overflow:hidden}
+  .marquee-label{text-align:center;font-family:'Overpass',sans-serif;font-size:.69rem;
+    font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:var(--naranja);
+    margin-bottom:16px}
+  /* El degradado de los bordes evita que los logos aparezcan "cortados" */
+  .marquee-mask{position:relative;overflow:hidden;
+    -webkit-mask-image:linear-gradient(to right,transparent,#000 8%,#000 92%,transparent);
+    mask-image:linear-gradient(to right,transparent,#000 8%,#000 92%,transparent)}
+  .marquee .track{display:flex;gap:60px;align-items:center;width:max-content;
+    animation:slide 36s linear infinite}
+  .marquee .track:hover{animation-play-state:paused}
+  .marquee .track img{height:48px;width:auto;max-width:165px;object-fit:contain;
+    opacity:.92;flex-shrink:0}
   @keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-  @media (prefers-reduced-motion:reduce){.marquee .track{animation:none}}
+  @media (max-width:600px){
+    .marquee .track{gap:38px}
+    .marquee .track img{height:34px;max-width:115px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .marquee .track{animation:none;flex-wrap:wrap;justify-content:center;width:100%}
+  }
   /* SECCIONES */
   .eyebrow{color:var(--naranja);font-family:'Overpass',sans-serif;font-weight:800;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px}
   h2.sec{font-size:clamp(1.5rem,3.4vw,2.2rem);color:var(--navy);font-weight:800;margin-bottom:14px}
@@ -200,17 +220,30 @@
   </div>
 </div>
 
-<!-- ==================== MARQUEE DE AVALES ==================== -->
+<!-- ==================== MARQUEE DE AVALES ====================
+     Los logos REALES, los mismos de la plantilla de landing-producto.
+     Antes iban como texto, que es justo lo que Dayana reportó que faltaba.
+     Van sobre fondo crema porque son las versiones oscuras del logo. -->
 <div class="marquee">
+  <p class="marquee-label">Respaldado por</p>
+  <div class="marquee-mask">
   <div class="track">
-    <span>Autodesk · Certificaciones oficiales</span><span>Sabal University · EE.UU.</span>
-    <span>ISTE España</span><span>Silicon Valley Futures Institute</span>
-    <span>Universidad de las Naciones</span><span>Aval SENESCYT Ecuador</span>
-    <span>Doctrinas Qualitas</span>
-    <span>Autodesk · Certificaciones oficiales</span><span>Sabal University · EE.UU.</span>
-    <span>ISTE España</span><span>Silicon Valley Futures Institute</span>
-    <span>Universidad de las Naciones</span><span>Aval SENESCYT Ecuador</span>
-    <span>Doctrinas Qualitas</span>
+    <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d173601d54df8246caa4.png" alt="Autodesk Partner">
+    <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d1738c6475e185dfddb1.png" alt="Autodesk · Centro de Entrenamiento Autorizado">
+    <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d2928c6475e185e02739.png" alt="Sabal University · EE.UU.">
+    <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d1f0f7d455340c70e652.png" alt="Doctrina Qualitas">
+    <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d23b51d5d92ddcacf917.png" alt="Universidad de las Naciones">
+    <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d23b601d54df8246fbf8.webp" alt="ISTE España">
+    <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d23b601d54df8246fbf7.png" alt="UAIII">
+    <!-- Duplicado: es lo que hace que el bucle no tenga costura -->
+    <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d173601d54df8246caa4.png" alt="" aria-hidden="true">
+    <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d1738c6475e185dfddb1.png" alt="" aria-hidden="true">
+    <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d2928c6475e185e02739.png" alt="" aria-hidden="true">
+    <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d1f0f7d455340c70e652.png" alt="" aria-hidden="true">
+    <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d23b51d5d92ddcacf917.png" alt="" aria-hidden="true">
+    <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d23b601d54df8246fbf8.webp" alt="" aria-hidden="true">
+    <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d23b601d54df8246fbf7.png" alt="" aria-hidden="true">
+  </div>
   </div>
 </div>
 
