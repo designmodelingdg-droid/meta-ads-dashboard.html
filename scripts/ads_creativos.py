@@ -82,15 +82,31 @@ def main():
             vid = (cr.get("video_id")
                    or cr.get("object_story_spec", {}).get("video_data", {}).get("video_id"))
             if not img_url and vid:
+                # Los covers autogenerados de reels a veces son un degradado
+                # borroso: bajar TODOS los thumbnails del video (más el campo
+                # picture) como candidatos NN-slug-a.jpg, NN-slug-b.jpg…
+                # y se elige a ojo el que sirva.
                 try:
                     th = api(f"{vid}/thumbnails", fields="uri,width,is_preferred")
-                    cands = th.get("data", [])
-                    if cands:
-                        cands.sort(key=lambda t: (not t.get("is_preferred"),
-                                                  -(t.get("width") or 0)))
-                        img_url = cands[0].get("uri") or ""
+                    cands = [c.get("uri") for c in th.get("data", []) if c.get("uri")]
                 except urllib.error.HTTPError as e:
+                    cands = []
                     print(f"  aviso: thumbnails del video de '{nombre}' falló ({e.code})")
+                try:
+                    pic = api(vid, fields="picture").get("picture")
+                    if pic and pic not in cands:
+                        cands.append(pic)
+                except urllib.error.HTTPError:
+                    pass
+                os.makedirs(OUTDIR, exist_ok=True)
+                letra = "abcdefghij"
+                for j, u in enumerate(cands[:10]):
+                    cand_file = f"{i:02d}-{slug(nombre)}-{letra[j]}.jpg"
+                    try:
+                        urllib.request.urlretrieve(u, os.path.join(OUTDIR, cand_file))
+                        print(f"  · candidato {cand_file}")
+                    except Exception:
+                        continue
             if not img_url and cr.get("id"):
                 cr2 = api(cr["id"], fields="thumbnail_url",
                           thumbnail_width="1080", thumbnail_height="1080")
