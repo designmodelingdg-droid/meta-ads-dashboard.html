@@ -42,6 +42,36 @@
   .pill{border:1px solid rgba(232,160,74,.5);color:var(--naranja-claro);border-radius:999px;
     padding:7px 15px;font-size:.8rem;font-weight:700;font-family:'Overpass',sans-serif}
 
+  /* Franja de avales — mismo sistema que la plantilla de landing-producto.
+     Fondo CREMA, no navy: los logos son las versiones oscuras y sobre azul
+     desaparecen (es el mismo error que tuvo el logo principal). */
+  .marquee{background:var(--crema);border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);padding:26px 0 24px;overflow:hidden}
+  .marquee-label{text-align:center;font-family:'Overpass',sans-serif;font-size:.69rem;
+    font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:var(--naranja);
+    margin-bottom:16px}
+  /* El degradado de los bordes evita que los logos aparezcan "cortados" */
+  .marquee-mask{position:relative;overflow:hidden;
+    -webkit-mask-image:linear-gradient(to right,transparent,#000 8%,#000 92%,transparent);
+    mask-image:linear-gradient(to right,transparent,#000 8%,#000 92%,transparent)}
+  .marquee .track{display:flex;gap:60px;align-items:center;width:max-content;
+    animation:slide 36s linear infinite}
+  .marquee .track:hover{animation-play-state:paused}
+  .marquee .track img{height:48px;width:auto;max-width:165px;object-fit:contain;
+    opacity:.92;flex-shrink:0}
+  /* Las microcredenciales son insignias cuadradas, no logos apaisados:
+     un poco más altas para que compensen y se lean a la par. */
+  .marquee .track img.micro{height:62px;max-width:62px}
+  @keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @media (max-width:600px){
+    .marquee .track{gap:38px}
+    .marquee .track img{height:34px;max-width:115px}
+    .marquee .track img.micro{height:46px;max-width:46px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .marquee .track{animation:none;flex-wrap:wrap;justify-content:center;width:100%}
+  }
+
   /* SECCIONES */
   .eyebrow{color:var(--naranja);font-family:'Overpass',sans-serif;font-weight:800;font-size:.78rem;
     letter-spacing:.1em;text-transform:uppercase;margin-bottom:9px}
@@ -123,6 +153,37 @@
     </div>
   </div>
 </header>
+
+<!-- ==================== MARQUEE DE AVALES ====================
+     Los logos REALES, los mismos de la plantilla de landing-producto.
+     Antes iban como texto, que es justo lo que Dayana reportó que faltaba.
+     Van sobre fondo crema porque son las versiones oscuras del logo. -->
+<div class="marquee">
+  <p class="marquee-label">Respaldado por</p>
+  <div class="marquee-mask">
+  <div class="track">
+    <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d173601d54df8246caa4.png" alt="Autodesk Partner">
+    <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d1738c6475e185dfddb1.png" alt="Autodesk · Centro de Entrenamiento Autorizado">
+    <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d2928c6475e185e02739.png" alt="Sabal University · EE.UU.">
+    <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d1f0f7d455340c70e652.png" alt="Doctrina Qualitas">
+    <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d23b51d5d92ddcacf917.png" alt="Universidad de las Naciones">
+    <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d23b601d54df8246fbf8.webp" alt="ISTE España">
+    <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d23b601d54df8246fbf7.png" alt="UAIII">
+    <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a73e8f2329b76ca7b1f5b6e.jpeg" alt="Microcredencial · Configuración de niveles, rejillas y plantillas" class="micro">
+    <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a73e8f2a177d5c2b9b8cf37.jpeg" alt="Microcredencial · BIM Foundations &amp; Project Setup" class="micro">
+    <!-- Duplicado: es lo que hace que el bucle no tenga costura -->
+    <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d173601d54df8246caa4.png" alt="" aria-hidden="true">
+    <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d1738c6475e185dfddb1.png" alt="" aria-hidden="true">
+    <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d2928c6475e185e02739.png" alt="" aria-hidden="true">
+    <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d1f0f7d455340c70e652.png" alt="" aria-hidden="true">
+    <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d23b51d5d92ddcacf917.png" alt="" aria-hidden="true">
+    <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d23b601d54df8246fbf8.webp" alt="" aria-hidden="true">
+    <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d23b601d54df8246fbf7.png" alt="" aria-hidden="true">
+    <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a73e8f2329b76ca7b1f5b6e.jpeg" alt="" aria-hidden="true" class="micro">
+    <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a73e8f2a177d5c2b9b8cf37.jpeg" alt="" aria-hidden="true" class="micro">
+  </div>
+  </div>
+</div>
 
 <!-- ============ 1 · HERRAMIENTAS (lo que más convierte, va primero) ============ -->
 <section id="herramientas" style="--img-seccion:url('https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/f16e5deb-87b3-4f0f-b270-01e42484b0dc.png')">
