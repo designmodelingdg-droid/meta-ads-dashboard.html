@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recursos gratuitos de BIM + IA · Design Modeling Academy</title>
+<meta name="description" content="Herramientas, cursos, guías y artículos gratuitos de BIM e inteligencia artificial para ingenieros y arquitectos. Calculadora de zapatas, test de nivel BIM, e-book y más.">
+<meta property="og:title" content="Recursos gratuitos de BIM + IA · Design Modeling Academy">
+<meta property="og:description" content="Todo lo que tenemos gratis, en un solo sitio: herramientas que usas al momento, cursos y guías para descargar, y artículos del blog.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@500;600;700;800;900&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#003e5c; --navy2:#001e30; --azul-medio:#0a5a80;
+    --naranja:#ca7520; --naranja-claro:#e8a04a; --naranja-palido:#f7e8cc;
+    --crema:#fafaf7; --ink:#333; --ink2:#5a6b7b; --line:#e5e7eb;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Nunito',system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+  h1,h2,h3,h4{font-family:'Overpass',sans-serif;line-height:1.2}
+  a{color:inherit}
+  .container{max-width:1140px;margin:0 auto;padding:0 20px}
+  section{padding:60px 0}
+
+  /* NAV — blanco, con el logo oscuro de DMA (igual que las demás landings) */
+  nav{background:rgba(255,255,255,.97);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+      border-bottom:1px solid var(--line);padding:10px 0;position:sticky;top:0;z-index:40}
+  nav .container{display:flex;align-items:center;justify-content:space-between;gap:16px}
+  nav img{height:42px;width:auto;max-width:220px;object-fit:contain;display:block}
+  nav a.cta{background:var(--naranja);color:#fff;text-decoration:none;padding:9px 18px;border-radius:8px;
+    font-weight:700;font-size:.85rem;font-family:'Overpass',sans-serif;white-space:nowrap}
+  nav a.cta:hover{background:var(--naranja-claro)}
+  @media(max-width:480px){nav img{height:32px;max-width:150px}nav a.cta{padding:8px 13px;font-size:.78rem}}
+
+  /* PORTADA */
+  .hero{background:linear-gradient(135deg,var(--navy2) 0%,var(--navy) 60%,var(--azul-medio) 100%);
+    color:#fff;padding:58px 0 62px;position:relative;overflow:hidden}
+  .hero::before{content:'';position:absolute;inset:0;opacity:.10;pointer-events:none;
+    background:url('https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/f16e5deb-87b3-4f0f-b270-01e42484b0dc.png') center/cover no-repeat}
+  .hero .container{position:relative;z-index:1}
+  .hero h1{font-size:clamp(1.9rem,5vw,3rem);font-weight:800;letter-spacing:-.5px;max-width:17ch}
+  .hero h1 em{font-style:normal;color:var(--naranja-claro)}
+  .hero p.sub{margin-top:16px;font-size:clamp(1rem,2.2vw,1.15rem);color:#c5d6e2;max-width:60ch}
+  .pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+  .pill{border:1px solid rgba(232,160,74,.5);color:var(--naranja-claro);border-radius:999px;
+    padding:7px 15px;font-size:.8rem;font-weight:700;font-family:'Overpass',sans-serif}
+
+  /* SECCIONES */
+  .eyebrow{color:var(--naranja);font-family:'Overpass',sans-serif;font-weight:800;font-size:.78rem;
+    letter-spacing:.1em;text-transform:uppercase;margin-bottom:9px}
+  h2.sec{font-size:clamp(1.45rem,3.4vw,2.1rem);color:var(--navy);font-weight:800;margin-bottom:12px}
+  .sub{color:var(--ink2);font-size:1rem;max-width:64ch;margin-bottom:30px}
+
+  .grid{display:grid;gap:20px}
+  .g2{grid-template-columns:1fr}
+  .g3{grid-template-columns:1fr}
+  @media(min-width:720px){.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:1fr 1fr}}
+  @media(min-width:1000px){.g3{grid-template-columns:repeat(3,1fr)}}
+
+  /* TARJETA DE RECURSO */
+  .card{border:1px solid var(--line);border-radius:14px;background:#fff;padding:24px 22px;
+    display:flex;flex-direction:column;text-decoration:none;transition:transform .18s,box-shadow .18s,border-color .18s}
+  .card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,62,92,.10);border-color:#cfd8e0}
+  .card .tag{display:inline-block;align-self:flex-start;background:var(--naranja-palido);color:#8a4d0d;
+    font-family:'Overpass',sans-serif;font-size:.68rem;font-weight:800;letter-spacing:.08em;
+    text-transform:uppercase;padding:5px 11px;border-radius:999px;margin-bottom:13px}
+  .card h3{color:var(--navy);font-size:1.14rem;margin-bottom:8px}
+  .card p{color:var(--ink2);font-size:.94rem;flex:1}
+  .card .go{margin-top:16px;color:var(--naranja);font-family:'Overpass',sans-serif;font-weight:800;font-size:.9rem}
+
+  /* HERRAMIENTAS — destacadas, van primero: son las que piden registro */
+  .destacadas .card{border-width:2px;border-color:var(--naranja-palido);padding:28px 26px}
+  .destacadas .card h3{font-size:1.35rem}
+  .destacadas .card .tag{background:var(--naranja);color:#fff}
+
+  .franja{background:var(--crema);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+
+  /* COMUNIDAD */
+  .comunidad{background:linear-gradient(135deg,var(--navy2),var(--azul-medio));color:#fff}
+  .comunidad h2.sec{color:#fff}
+  .comunidad .sub{color:#c5d6e2}
+  .comunidad ul{list-style:none;margin:22px 0 28px;display:grid;gap:11px}
+  .comunidad li{padding-left:28px;position:relative;color:#dbe6ee}
+  .comunidad li::before{content:'✓';position:absolute;left:0;color:var(--naranja-claro);font-weight:800}
+  .btn{display:inline-block;background:var(--naranja);color:#fff;text-decoration:none;
+    font-family:'Overpass',sans-serif;font-weight:800;padding:14px 30px;border-radius:10px;font-size:1rem}
+  .btn:hover{background:var(--naranja-claro)}
+
+  footer{background:var(--navy2);color:#8fa2b3;padding:30px 0;text-align:center;font-size:.82rem}
+  footer .aviso{max-width:64ch;margin:12px auto 0;font-size:.78rem;color:#6d8496}
+
+  /* Un recurso sin enlace todavía no se muestra: mejor que un enlace roto. */
+  .sin-enlace{display:none !important}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <a href="https://funnel.dgdesignmodeling.com/recursos"><img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04bbc1fa8afa3be0bb00d8.png" alt="Design Modeling Academy"></a>
+    <a class="cta" href="#herramientas">Ver los recursos</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <h1>Todo lo que tenemos <em>gratis</em>, en un solo sitio</h1>
+    <p class="sub">Herramientas que usas al momento, cursos y guías para descargar, y artículos para aprender. Sin pagar nada y sin instalar nada — hecho por ingenieros que trabajan en obra, no por una agencia.</p>
+    <div class="pills">
+      <span class="pill">Herramientas online</span>
+      <span class="pill">Cursos y guías</span>
+      <span class="pill">Artículos</span>
+      <span class="pill">Comunidad</span>
+    </div>
+  </div>
+</header>
+
+<!-- ============ 1 · HERRAMIENTAS (lo que más convierte, va primero) ============ -->
+<section id="herramientas">
+  <div class="container">
+    <p class="eyebrow">Úsalas ahora mismo</p>
+    <h2 class="sec">Herramientas gratuitas</h2>
+    <p class="sub">Funcionan en el navegador, también desde el celular. Te registras una vez y las usas siempre.</p>
+    <div class="grid g2 destacadas">
+
+      <a class="card" href="https://funnel.dgdesignmodeling.com/test-nivel-bim">
+        <span class="tag">Nuevo</span>
+        <h3>Test de Nivel BIM</h3>
+        <p>20 preguntas para saber en cuál de los 4 niveles estás realmente —Modelador, Coordinador, BIM Manager 4D-5D o Especialista BIM+IA— y qué competencias concretas te faltan para el siguiente. Resultado inmediato, en 5 minutos.</p>
+        <span class="go">Hacer el test →</span>
+      </a>
+
+      <a class="card" href="https://funnel.dgdesignmodeling.com/calculadora-zapatas">
+        <span class="tag">La más usada</span>
+        <h3>Calculadora de Zapatas Aisladas</h3>
+        <p>Metes las cargas y los datos del suelo y te devuelve dimensiones, acero y verificaciones en 2 minutos. Herramienta de predimensionamiento: la verificación con tu norma sigue siendo tuya.</p>
+        <span class="go">Abrir la calculadora →</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2 · CURSOS Y DESCARGAS ============ -->
+<section class="franja" id="descargas">
+  <div class="container">
+    <p class="eyebrow">Para llevarte</p>
+    <h2 class="sec">Cursos, guías y descargas</h2>
+    <p class="sub">Material completo, gratuito, sin truco. Te registras y te llega el acceso.</p>
+    <div class="grid g3">
+
+      <a class="card" data-url="cursoIntro" href="#">
+        <span class="tag">Curso</span>
+        <h3>Curso de Introducción a BIM</h3>
+        <p>El punto de partida si estás empezando: qué es BIM de verdad, para qué sirve y cómo encaja en un proyecto real.</p>
+        <span class="go">Acceder gratis →</span>
+      </a>
+
+      <a class="card" data-url="moduloDiplomado" href="#">
+        <span class="tag">Curso</span>
+        <h3>Módulo 1 del Diplomado BIM</h3>
+        <p>El primer módulo completo del diplomado, abierto. Para que veas cómo enseñamos antes de decidir nada.</p>
+        <span class="go">Acceder gratis →</span>
+      </a>
+
+      <a class="card" data-url="ebook" href="#">
+        <span class="tag">E-book</span>
+        <h3>E-book BIM</h3>
+        <p>Los fundamentos de BIM explicados sin humo, con ejemplos de proyectos reales.</p>
+        <span class="go">Descargar gratis →</span>
+      </a>
+
+      <a class="card" data-url="guia" href="#">
+        <span class="tag">Guía</span>
+        <h3>Guía BIM</h3>
+        <p>Guía práctica para ordenar tu flujo de trabajo BIM: qué hacer, en qué orden y qué evitar.</p>
+        <span class="go">Descargar gratis →</span>
+      </a>
+
+      <a class="card" data-url="aipro" href="#">
+        <span class="tag">IA</span>
+        <h3>AI PRO</h3>
+        <p>El recurso de inteligencia artificial aplicada: cómo usarla en tareas reales de BIM sin perder el criterio técnico.</p>
+        <span class="go">Descargar gratis →</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3 · ARTÍCULOS ============ -->
+<section id="articulos">
+  <div class="container">
+    <p class="eyebrow">Para leer</p>
+    <h2 class="sec">Del blog</h2>
+    <p class="sub">Lo que publicamos sobre BIM, IA y estructuras. Abierto, sin registro.</p>
+    <div class="grid g3">
+
+      <a class="card" data-url="art1" href="#">
+        <span class="tag">Software</span>
+        <h3>SAP2000, ETABS o Robot: ¿cuál elegir?</h3>
+        <p>Las diferencias reales entre los tres, y en qué tipo de proyecto conviene cada uno.</p>
+        <span class="go">Leer el artículo →</span>
+      </a>
+
+      <a class="card" data-url="art2" href="#">
+        <span class="tag">Herramienta</span>
+        <h3>Calculadora de zapatas aisladas: predimensiona en 2 minutos</h3>
+        <p>Cómo usar la calculadora paso a paso y qué verificar antes de dar por buena una cimentación.</p>
+        <span class="go">Leer el artículo →</span>
+      </a>
+
+      <a class="card" data-url="art3" href="#">
+        <span class="tag">BIM</span>
+        <h3>BIM para todos: más allá de las grandes empresas</h3>
+        <p>Por qué BIM no es solo para constructoras grandes, y cómo empezar con un equipo pequeño.</p>
+        <span class="go">Leer el artículo →</span>
+      </a>
+
+    </div>
+    <p style="margin-top:26px">
+      <a href="https://funnel.dgdesignmodeling.com/blog" style="color:var(--naranja);font-family:'Overpass',sans-serif;font-weight:800;text-decoration:none">Ver todos los artículos del blog →</a>
+    </p>
+  </div>
+</section>
+
+<!-- ============ 4 · COMUNIDAD ============ -->
+<section class="comunidad" id="comunidad">
+  <div class="container">
+    <p class="eyebrow" style="color:var(--naranja-claro)">El siguiente paso</p>
+    <h2 class="sec">La comunidad, también gratis</h2>
+    <p class="sub">Las herramientas las usas solo. En la comunidad estás con gente que hace lo mismo que tú.</p>
+    <ul>
+      <li>Preguntas resueltas por ingenieros que trabajan en obra</li>
+      <li>Las herramientas nuevas se estrenan ahí primero</li>
+      <li>Casos reales de proyectos, con sus errores incluidos</li>
+      <li>Sesiones y contenido que no publicamos en redes</li>
+    </ul>
+    <a class="btn" data-url="comunidad" href="#">Entrar a la comunidad →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    © Design Modeling Academy · BIM + IA para la construcción<br>
+    Quito, Ecuador · Comunidad en LATAM, EE.UU. y Europa
+    <p class="aviso">Las herramientas de cálculo son de apoyo para predimensionar. No sustituyen el criterio ni la responsabilidad del profesional que firma: verifica siempre con la norma que aplique a tu proyecto.</p>
+  </div>
+</footer>
+
+<script>
+/* ====================================================================
+   ENLACES DE LOS RECURSOS
+
+   Pega aquí la URL de cada embudo de GoHighLevel. Los que queden vacíos
+   NO se muestran en la página — es preferible una tarjeta menos que un
+   enlace roto en la cara del visitante.
+
+   Las dos herramientas y el blog no están aquí: sus URLs ya son fijas y
+   van escritas directamente en el HTML.
+   ==================================================================== */
+const URLS = {
+  // Embudos de la carpeta "Nutrición - Ebook, Guías, Cursos" en GHL
+  cursoIntro:      '',   // Acceso Gratis Curso Introducción BIM
+  moduloDiplomado: '',   // Acceso Gratis Módulo 1 Diplomado BIM
+  ebook:           '',   // Descargar Gratis el E-book BIM
+  guia:            '',   // Descargar Gratis la Guia BIM
+  aipro:           '',   // Descargar Gratis el AI PRO
+
+  // Artículos del blog
+  art1:            '',   // SAP2000, ETABS o Robot: ¿cuál elegir?
+  art2:            '',   // Calculadora de zapatas aisladas
+  art3:            '',   // BIM para todos: más allá de las grandes empresas
+
+  // Comunidad gratuita
+  comunidad:       '',
+};
+
+(function(){
+  var pendientes = [];
+  document.querySelectorAll('[data-url]').forEach(function(el){
+    var url = (URLS[el.dataset.url] || '').trim();
+    if(url){ el.setAttribute('href', url); }
+    else   { el.classList.add('sin-enlace'); pendientes.push(el.dataset.url); }
+  });
+  // Si una sección se queda sin tarjetas visibles, se oculta entera para
+  // no dejar un título con un hueco debajo.
+  document.querySelectorAll('section').forEach(function(sec){
+    var cards = sec.querySelectorAll('.card');
+    if(!cards.length) return;
+    var vivas = [].filter.call(cards, function(c){ return !c.classList.contains('sin-enlace'); });
+    if(!vivas.length) sec.style.display = 'none';
+  });
+  if(pendientes.length){
+    console.warn('[DMA] Hub de recursos: faltan URLs y esas tarjetas están ocultas → ' + pendientes.join(', '));
+  }
+})();
+</script>
+</body>
+</html>
