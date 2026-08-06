@@ -103,10 +103,14 @@
   .marquee .track:hover{animation-play-state:paused}
   .marquee .track img{height:48px;width:auto;max-width:165px;object-fit:contain;
     opacity:.92;flex-shrink:0}
+  /* Las microcredenciales son insignias cuadradas, no logos apaisados:
+     un poco más altas para que compensen y se lean a la par. */
+  .marquee .track img.micro{height:62px;max-width:62px}
   @keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
   @media (max-width:600px){
     .marquee .track{gap:38px}
     .marquee .track img{height:34px;max-width:115px}
+    .marquee .track img.micro{height:46px;max-width:46px}
   }
   @media (prefers-reduced-motion:reduce){
     .marquee .track{animation:none;flex-wrap:wrap;justify-content:center;width:100%}
@@ -229,6 +233,8 @@
     <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d23b51d5d92ddcacf917.png" alt="Universidad de las Naciones">
     <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d23b601d54df8246fbf8.webp" alt="ISTE España">
     <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d23b601d54df8246fbf7.png" alt="UAIII">
+    <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a73e8f2329b76ca7b1f5b6e.jpeg" alt="Microcredencial · Configuración de niveles, rejillas y plantillas" class="micro">
+    <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a73e8f2a177d5c2b9b8cf37.jpeg" alt="Microcredencial · BIM Foundations &amp; Project Setup" class="micro">
     <!-- Duplicado: es lo que hace que el bucle no tenga costura -->
     <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d173601d54df8246caa4.png" alt="" aria-hidden="true">
     <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d1738c6475e185dfddb1.png" alt="" aria-hidden="true">
@@ -237,6 +243,8 @@
     <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d23b51d5d92ddcacf917.png" alt="" aria-hidden="true">
     <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d23b601d54df8246fbf8.webp" alt="" aria-hidden="true">
     <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d23b601d54df8246fbf7.png" alt="" aria-hidden="true">
+    <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a73e8f2329b76ca7b1f5b6e.jpeg" alt="" aria-hidden="true" class="micro">
+    <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a73e8f2a177d5c2b9b8cf37.jpeg" alt="" aria-hidden="true" class="micro">
   </div>
   </div>
 </div>
