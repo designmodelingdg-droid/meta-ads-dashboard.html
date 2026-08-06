@@ -12,6 +12,11 @@ description: >
 
 # Cierre y apertura de mes — DMA
 
+> **Requisito:** este metodo usa el repo `designmodelingdg-droid/meta-ads-dashboard.html`
+> (workflow de creativos + matriz organica) y los conectores **Windsor.ai** (GHL)
+> y **Gamma**. Si la conversacion no tiene el repo, añadirlo/clonarlo PRIMERO;
+> si falta un conector, avisar a Dayana que lo active en claude.ai antes de seguir.
+
 Método oficial validado con Dayana (agosto 2026). El resultado final es una
 presentación en Gamma + PPTX/PDF con los números REALES del mes.
 
