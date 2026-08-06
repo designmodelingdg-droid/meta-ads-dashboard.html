@@ -73,11 +73,25 @@ def main():
         nombre, gasto, leads = f.get("ad_name", ""), float(f.get("spend") or 0), f["leads"]
         img_url = ""
         try:
-            ad = api(f['ad_id'], fields="creative{id,image_url,thumbnail_url}")
+            ad = api(f['ad_id'],
+                     fields="creative{id,image_url,thumbnail_url,object_story_spec,video_id}")
             cr = ad.get("creative", {})
             img_url = cr.get("image_url") or ""
+            # Anuncio de video: el thumbnail escalado sale borroso; ir al video
+            # y pedir sus thumbnails reales, quedándose con el preferido/más grande.
+            vid = (cr.get("video_id")
+                   or cr.get("object_story_spec", {}).get("video_data", {}).get("video_id"))
+            if not img_url and vid:
+                try:
+                    th = api(f"{vid}/thumbnails", fields="uri,width,is_preferred")
+                    cands = th.get("data", [])
+                    if cands:
+                        cands.sort(key=lambda t: (not t.get("is_preferred"),
+                                                  -(t.get("width") or 0)))
+                        img_url = cands[0].get("uri") or ""
+                except urllib.error.HTTPError as e:
+                    print(f"  aviso: thumbnails del video de '{nombre}' falló ({e.code})")
             if not img_url and cr.get("id"):
-                # thumbnail_url por defecto es de 64px: pedirlo en alta
                 cr2 = api(cr["id"], fields="thumbnail_url",
                           thumbnail_width="1080", thumbnail_height="1080")
                 img_url = cr2.get("thumbnail_url") or cr.get("thumbnail_url") or ""
