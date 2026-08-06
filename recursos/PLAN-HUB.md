@@ -1,6 +1,7 @@
 # Plan — Hub de recursos gratuitos de DMA
 
-**Estado:** plan aprobado, sin construir · **Fecha:** 2026-08-04
+**Estado:** ✅ CONSTRUIDO (`recursos/index.html`) · pendiente solo pegarlo en GHL
+**Fecha:** 2026-08-04 · actualizado 2026-08-06
 **Bloquea a:** el anuncio del Test de Nivel BIM en redes (decisión de Dayana:
 el test no sale a redes hasta que el hub exista).
 
@@ -169,3 +170,23 @@ El calendario de agosto tiene el **Mié 13** marcado como *"nuevo lead magnet,
 por definir"*. **El hub es esa pieza**: en vez de anunciar una herramienta
 suelta, se anuncia el sitio donde viven todas — y el Test de Nivel BIM se
 estrena dentro de él. Un solo anuncio hace las dos cosas.
+
+---
+
+## 9. Cierre — lo verificado el 6-ago
+
+- **Los nueve recursos conectados**, ninguno descartado: los cinco embudos
+  gratuitos, los tres artículos del blog y la comunidad. Los nueve cargan.
+- **Comunidad:** «Comunidad Design Premium» (grupo público, 229 miembros).
+  Verificado en ventana de incógnito: **se entra sin iniciar sesión**. Era el
+  último eslabón y el que más riesgo tenía — un muro de login ahí habría
+  perdido justo a quien ya recorrió toda la página.
+- **Los enlaces van escritos en el HTML**, no inyectados por JavaScript. Este
+  hub va a circular sobre todo por DM y WhatsApp, y las vistas previas de
+  WhatsApp no ejecutan JS. Verificado con JS desactivado: 10 de 10 tarjetas
+  conservan su enlace.
+- **Fuera del hub a propósito:** la Oferta Curso Lowcost + Módulo Revit (es
+  venta, no un recurso gratuito) y el Registro de BlackFriday 2025 (caducado).
+
+**Lo único que falta:** pegarlo en GHL en `/recursos` y enlazarlo desde la bio
+de Instagram, el blog, las comunidades y los DM de los dos bots.
