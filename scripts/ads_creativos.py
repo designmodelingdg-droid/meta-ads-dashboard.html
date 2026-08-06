@@ -21,9 +21,9 @@ BASE = "https://graph.facebook.com/v20.0"
 CUENTA = "act_1159622151150228"
 
 TOKEN = os.environ.get("META_TOKEN", "").strip()
-DESDE = os.environ.get("DESDE", "2026-07-05")
-HASTA = os.environ.get("HASTA", "2026-08-05")
-TOP_N = int(os.environ.get("TOP_N", "6"))
+DESDE = os.environ.get("DESDE") or "2026-07-05"
+HASTA = os.environ.get("HASTA") or "2026-08-05"
+TOP_N = int(os.environ.get("TOP_N") or "6")
 
 LEAD_TYPES = {"lead", "onsite_conversion.lead_grouped",
               "onsite_conversion.messaging_conversation_started_7d"}

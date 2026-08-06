@@ -29,6 +29,14 @@ on:
         description: "true = solo bajar imágenes de anuncios ganadores (scripts/ads_creativos.py)"
         required: false
         default: "false"
+      desde:
+        description: "Ventana de creativos: inicio (YYYY-MM-DD)"
+        required: false
+        default: ""
+      hasta:
+        description: "Ventana de creativos: fin (YYYY-MM-DD)"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -48,6 +56,8 @@ jobs:
       - name: Bajar imágenes de anuncios ganadores
         env:
           META_TOKEN: ${{ secrets.META_TOKEN }}
+          DESDE: ${{ github.event.inputs.desde }}
+          HASTA: ${{ github.event.inputs.hasta }}
         run: |
           set -euo pipefail
           if [ -z "${META_TOKEN:-}" ]; then
