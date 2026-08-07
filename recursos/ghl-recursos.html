@@ -95,8 +95,13 @@
      desde el primer día. Cuando llegue la imagen propia de un recurso, se
      le pone en su style="--img:url(...)" y pisa a la de la sección. */
   .card .foto{
-    display:block;width:100%;aspect-ratio:16/9;background:var(--navy) center/cover no-repeat;
-    background-image:var(--img,var(--img-seccion));border-bottom:1px solid var(--line)
+    display:block;width:100%;aspect-ratio:16/9;border-bottom:1px solid var(--line);
+    /* CONTAIN, no cover: las piezas de DMA llevan titular y logo, y al
+       recortarlas se pierde lo que comunican. Se ven enteras, con el navy
+       de la marca rellenando lo que sobre. */
+    background-color:var(--navy2);
+    background-image:var(--img,var(--img-seccion));
+    background-size:contain;background-position:center;background-repeat:no-repeat
   }
   .card:hover .foto{opacity:.94}
   @supports not (aspect-ratio:16/9){ .card .foto{height:180px} }
@@ -235,7 +240,7 @@
       </span>
       </a>
 
-      <a class="card" data-url="moduloDiplomado" href="https://funnel.dgdesignmodeling.com/acceso-gratis-modulo-diplomado-bim-registro">
+      <a class="card" style="--img:url('https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a74f97dbd6349ece2b5f1f9.png')" data-url="moduloDiplomado" href="https://funnel.dgdesignmodeling.com/acceso-gratis-modulo-diplomado-bim-registro">
         <span class="foto"></span>
         <span class="cuerpo">
         <span class="tag">Curso</span>
@@ -245,7 +250,7 @@
       </span>
       </a>
 
-      <a class="card" data-url="ebook" href="https://funnel.dgdesignmodeling.com/descarga-gratis-ebook-bim-formulario">
+      <a class="card" style="--img:url('https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a74f802f4dee0f60fc597cf.png')" data-url="ebook" href="https://funnel.dgdesignmodeling.com/descarga-gratis-ebook-bim-formulario">
         <span class="foto"></span>
         <span class="cuerpo">
         <span class="tag">E-book</span>
