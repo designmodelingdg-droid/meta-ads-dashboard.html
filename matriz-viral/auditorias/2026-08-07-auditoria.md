@@ -57,7 +57,24 @@ cuenta que está parada.
 
 - **MASTER - FORM V2 va en frecuencia 2,22** con solo 6.641 personas de
   alcance. El reporte lo menciona, y tiene razón: ahí toca creativo nuevo.
-- **Guatemala está cara**: $1,30 por conversación contra $0,46 de Ecuador.
-  Casi el triple. Es la primera semana con el split abierto y ya se ve.
+- **Guatemala está cara en conversación**: $1,30 contra $0,46 de Ecuador,
+  casi el triple. Primera semana con el split abierto y ya se ve.
 - **Ecuador es el más barato** y solo se lleva el 27% del presupuesto de ACERO.
+
+### ⚠️ Regla que corrige Dayana (7-ago) — no repetir el error
+
+**El costo por conversación NO es el criterio para mover presupuesto.**
+
+Ecuador genera conversaciones baratas pero **compra menos** que México y
+Guatemala. Guatemala es cara por conversación y aun así vende. O sea que el
+país "caro" puede ser el rentable.
+
+Lo correcto es **ajustar, no cortar**: bajarle algo a Guatemala y subirle algo
+a Ecuador, sin salirse de Guatemala. Recomendar mover el presupuesto al país
+más barato por conversación es un error, y es el que estuve a punto de
+cometer.
+
+**Lo que falta para decidirlo bien:** costo por VENTA por país. Sin eso
+estamos optimizando la parte barata del embudo y no la que factura. Hay que
+pedirlo al equipo, o sacarlo cruzando el CRM por país.
 
