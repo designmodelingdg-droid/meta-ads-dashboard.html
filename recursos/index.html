@@ -105,13 +105,12 @@
      le pone en su style="--img:url(...)" y pisa a la de la sección. */
   .card .foto{
     display:block;width:100%;aspect-ratio:16/9;border-bottom:1px solid var(--line);
-    /* CONTAIN, y es deliberado. Con cover, cualquier pieza que no sea 16:9
-       EXACTO se recorta, y estas piezas son banners con titular y logo: al
-       cortarlas se pierde lo que comunican (a Dayana le corto la del blog).
-       Con contain no se corta nunca: la que sea 16:9 llena la tarjeta igual
-       que con cover, y la que no lo sea deja una banda del navy de marca,
-       que se ve intencionada. Es la opcion segura para este contenido. */
-    background-color:var(--navy2);
+    /* CONTAIN para no cortar nunca: estas piezas son banners con titular y
+       logo, y recortarlas destruye lo que comunican.
+       El relleno va en BLANCO, no en navy: las piezas de DMA tienen fondo
+       claro, asi que con navy detras la banda parecia un marco negro. En
+       blanco se funde con la propia pieza y no se nota. */
+    background-color:#fff;
     background-image:var(--img,var(--img-seccion));
     background-size:contain;background-position:center;background-repeat:no-repeat
   }
@@ -125,7 +124,7 @@
   .card .go{margin-top:16px;color:var(--naranja);font-family:'Overpass',sans-serif;font-weight:800;font-size:.9rem}
 
   /* HERRAMIENTAS — destacadas, van primero: son las que piden registro */
-  .destacadas .card{border-width:2px;border-color:var(--naranja-palido)}
+  .destacadas .card{border-color:var(--line)}
   .destacadas .card .cuerpo{padding:26px}
   .destacadas .card h3{font-size:1.35rem}
   .destacadas .card .tag{background:var(--naranja);color:#fff}
@@ -315,7 +314,7 @@
       </span>
       </a>
 
-      <a class="card" data-url="art2" href="https://funnel.dgdesignmodeling.com/post/calculadora-de-zapatas-aisladas-gratis-predimensiona-en-2-minutos-desd">
+      <a class="card" style="--img:url('https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a75496713503efed5c8e744.png')" data-url="art2" href="https://funnel.dgdesignmodeling.com/post/calculadora-de-zapatas-aisladas-gratis-predimensiona-en-2-minutos-desd">
         <span class="foto"></span>
         <span class="cuerpo">
         <span class="tag">Herramienta</span>
