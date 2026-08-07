@@ -96,12 +96,15 @@
      le pone en su style="--img:url(...)" y pisa a la de la sección. */
   .card .foto{
     display:block;width:100%;aspect-ratio:16/9;border-bottom:1px solid var(--line);
-    /* COVER: las diez piezas se exportaron a 1600x900, o sea 16:9 exacto,
-       asi que llenan la tarjeta sin recortar nada. El navy detras solo se
-       ve mientras carga. Si alguna se viera recortada, esa no es 16:9. */
+    /* CONTAIN, y es deliberado. Con cover, cualquier pieza que no sea 16:9
+       EXACTO se recorta, y estas piezas son banners con titular y logo: al
+       cortarlas se pierde lo que comunican (a Dayana le corto la del blog).
+       Con contain no se corta nunca: la que sea 16:9 llena la tarjeta igual
+       que con cover, y la que no lo sea deja una banda del navy de marca,
+       que se ve intencionada. Es la opcion segura para este contenido. */
     background-color:var(--navy2);
     background-image:var(--img,var(--img-seccion));
-    background-size:cover;background-position:center;background-repeat:no-repeat
+    background-size:contain;background-position:center;background-repeat:no-repeat
   }
   .card:hover .foto{opacity:.94}
   @supports not (aspect-ratio:16/9){ .card .foto{height:180px} }
