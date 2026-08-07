@@ -105,12 +105,12 @@
      le pone en su style="--img:url(...)" y pisa a la de la sección. */
   .card .foto{
     display:block;width:100%;aspect-ratio:16/9;border-bottom:1px solid var(--line);
-    /* CONTAIN, no cover: las piezas de DMA llevan titular y logo, y al
-       recortarlas se pierde lo que comunican. Se ven enteras, con el navy
-       de la marca rellenando lo que sobre. */
+    /* COVER: las diez piezas se exportaron a 1600x900, o sea 16:9 exacto,
+       asi que llenan la tarjeta sin recortar nada. El navy detras solo se
+       ve mientras carga. Si alguna se viera recortada, esa no es 16:9. */
     background-color:var(--navy2);
     background-image:var(--img,var(--img-seccion));
-    background-size:contain;background-position:center;background-repeat:no-repeat
+    background-size:cover;background-position:center;background-repeat:no-repeat
   }
   .card:hover .foto{opacity:.94}
   @supports not (aspect-ratio:16/9){ .card .foto{height:180px} }
@@ -208,7 +208,7 @@
     <p class="sub">Funcionan en el navegador, también desde el celular. Te registras una vez y las usas siempre.</p>
     <div class="grid g2 destacadas">
 
-      <a class="card" style="--img:url('https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a74b4b3568ec73524d5584a.webp')" href="https://funnel.dgdesignmodeling.com/test-nivel-bim">
+      <a class="card" style="--img:url('https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a75496713503efed5c8e744.png')" href="https://funnel.dgdesignmodeling.com/test-nivel-bim">
         <span class="foto"></span>
         <span class="cuerpo">
         <span class="tag">Nuevo</span>
@@ -218,7 +218,7 @@
       </span>
       </a>
 
-      <a class="card" style="--img:url('https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a74b2e49a9c7792ea2e0bfa.webp')" href="https://funnel.dgdesignmodeling.com/calculadora-zapatas">
+      <a class="card" style="--img:url('https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a75496778cdd940a01c18e9.png')" href="https://funnel.dgdesignmodeling.com/calculadora-zapatas">
         <span class="foto"></span>
         <span class="cuerpo">
         <span class="tag">La más usada</span>
@@ -240,7 +240,7 @@
     <p class="sub">Material completo, gratuito, sin truco. Te registras y te llega el acceso.</p>
     <div class="grid g3">
 
-      <a class="card" style="--img:url('https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/8c8f55df-05e0-43e6-846f-b20c6b5d9ce1.png')" data-url="cursoIntro" href="https://funnel.dgdesignmodeling.com/acceso-gratis-curso-introductorio-bim-registro304789">
+      <a class="card" style="--img:url('https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a7549679a9c7792eaeae386.png')" data-url="cursoIntro" href="https://funnel.dgdesignmodeling.com/acceso-gratis-curso-introductorio-bim-registro304789">
         <span class="foto"></span>
         <span class="cuerpo">
         <span class="tag">Curso</span>
@@ -250,7 +250,7 @@
       </span>
       </a>
 
-      <a class="card" style="--img:url('https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a74f97dbd6349ece2b5f1f9.png')" data-url="moduloDiplomado" href="https://funnel.dgdesignmodeling.com/acceso-gratis-modulo-diplomado-bim-registro">
+      <a class="card" style="--img:url('https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a75496713503efed5c8e730.png')" data-url="moduloDiplomado" href="https://funnel.dgdesignmodeling.com/acceso-gratis-modulo-diplomado-bim-registro">
         <span class="foto"></span>
         <span class="cuerpo">
         <span class="tag">Curso</span>
@@ -260,7 +260,7 @@
       </span>
       </a>
 
-      <a class="card" style="--img:url('https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a74f802f4dee0f60fc597cf.png')" data-url="ebook" href="https://funnel.dgdesignmodeling.com/descarga-gratis-ebook-bim-formulario">
+      <a class="card" style="--img:url('https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a7549679a9c7792eaeae38c.png')" data-url="ebook" href="https://funnel.dgdesignmodeling.com/descarga-gratis-ebook-bim-formulario">
         <span class="foto"></span>
         <span class="cuerpo">
         <span class="tag">E-book</span>
@@ -270,7 +270,7 @@
       </span>
       </a>
 
-      <a class="card" style="--img:url('https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a7514ef9a9c7792eaa4904d.jpg')" data-url="guia" href="https://funnel.dgdesignmodeling.com/descarga-gratis-guia-bim-formulario">
+      <a class="card" style="--img:url('https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a754967888087201997252c.png')" data-url="guia" href="https://funnel.dgdesignmodeling.com/descarga-gratis-guia-bim-formulario">
         <span class="foto"></span>
         <span class="cuerpo">
         <span class="tag">Guía</span>
@@ -280,7 +280,7 @@
       </span>
       </a>
 
-      <a class="card" style="--img:url('https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/67dae49226dbd39ce8a5f0ad.png')" data-url="aipro" href="https://funnel.dgdesignmodeling.com/descarga-gratis-ai-pro">
+      <a class="card" style="--img:url('https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a754967bd6349ece20c81c6.png')" data-url="aipro" href="https://funnel.dgdesignmodeling.com/descarga-gratis-ai-pro">
         <span class="foto"></span>
         <span class="cuerpo">
         <span class="tag">IA</span>
@@ -302,7 +302,7 @@
     <p class="sub">Lo que publicamos sobre BIM, IA y estructuras. Abierto, sin registro.</p>
     <div class="grid g3">
 
-      <a class="card" style="--img:url('https://wykwcbohcsqfojsgkfxp.supabase.co/storage/v1/object/public/brand-assets/blog/4fa617c9-b49a-47a3-a442-f777ffbafb81/cover.png')" data-url="art1" href="https://funnel.dgdesignmodeling.com/post/sap2000-etabs-o-robot-cual-elegir-comenta-bim-o-ia">
+      <a class="card" style="--img:url('https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a7549678880872019972531.png')" data-url="art1" href="https://funnel.dgdesignmodeling.com/post/sap2000-etabs-o-robot-cual-elegir-comenta-bim-o-ia">
         <span class="foto"></span>
         <span class="cuerpo">
         <span class="tag">Software</span>
@@ -312,7 +312,7 @@
       </span>
       </a>
 
-      <a class="card" style="--img:url('https://d2ol7oe51mr4n9.cloudfront.net/user_3DHYHNPN9mWRQrSP8pMrjtnrcPd/ff632f1e-2478-4cd8-9465-3c0a14b84ae7.jpg')" data-url="art2" href="https://funnel.dgdesignmodeling.com/post/calculadora-de-zapatas-aisladas-gratis-predimensiona-en-2-minutos-desd">
+      <a class="card" style="--img:url('https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a7549678880872019972527.png')" data-url="art2" href="https://funnel.dgdesignmodeling.com/post/calculadora-de-zapatas-aisladas-gratis-predimensiona-en-2-minutos-desd">
         <span class="foto"></span>
         <span class="cuerpo">
         <span class="tag">Herramienta</span>
@@ -322,7 +322,7 @@
       </span>
       </a>
 
-      <a class="card" style="--img:url('https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a1f162dbce897da751fbccc.png')" data-url="art3" href="https://funnel.dgdesignmodeling.com/post/bim-para-todos-mas-alla-de-las-grandes-empresas">
+      <a class="card" style="--img:url('https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a7549678880872019972536.png')" data-url="art3" href="https://funnel.dgdesignmodeling.com/post/bim-para-todos-mas-alla-de-las-grandes-empresas">
         <span class="foto"></span>
         <span class="cuerpo">
         <span class="tag">BIM</span>
