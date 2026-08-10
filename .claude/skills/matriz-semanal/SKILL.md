@@ -88,6 +88,15 @@ Si algo **contradice** una regla, dilo explícitamente — la matriz se corrige 
 - Si un formato/tema gana claramente, **súbele el peso** en `matriz/calendario-2026-XX.md` (y en la mezcla objetivo de `matriz/guia-formatos-y-redes.md`).
 - Commit + push + PR + merge a la rama por defecto, para que la app y Patricio vean lo fresco.
 
+### 6. Anota en el tablero
+Siempre, al cerrar: escribe en **`matriz-viral/RECOMENDACIONES.md`**, que es
+donde el equipo entero ve cómo vamos sin entrar a GitHub.
+- una entrada nueva en «Historial» con la fecha y la lección de la semana
+- lo que haya que hacer, en la tabla de arriba, en 🔴 y con responsable
+- mueve a 🟢 lo que ya se hizo y a ⚫ lo descartado, con el motivo
+- si una regla nueva se confirmó **tres semanas seguidas**, súbela a «Reglas
+  permanentes» con su evidencia — deja de discutirse cada lunes
+
 ---
 
 ## Reglas

@@ -120,6 +120,15 @@ cambio.
 
 **El archivo de la semana** en `matriz-viral/auditorias/`, para comparar.
 
+**Y se anota en `matriz-viral/RECOMENDACIONES.md`** — el tablero que ve todo el
+equipo. Al cerrar la auditoría, siempre:
+- una entrada nueva en «Historial» con la fecha y qué se encontró
+- las recomendaciones nuevas en la tabla de arriba, en 🔴, con responsable
+- mover a 🟢 lo que la agencia sí aplicó esta semana, y a ⚫ lo que se descarta
+  (con el motivo)
+
+Sin esto, cada viernes se vuelve a discutir lo mismo desde cero.
+
 ---
 
 ## Reglas

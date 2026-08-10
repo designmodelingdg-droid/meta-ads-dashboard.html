@@ -1,0 +1,103 @@
+<!-- ============================================================
+     PLANTILLA DE CORREO — secuencias de seguimiento DMA
+     Pegar en GHL → Marketing → Emails → New → Code/HTML Editor.
+
+     POR QUÉ ESTA Y NO LA DEL SKILL dma-email-campaign:
+     aquella pesa ~860 KB porque lleva las imágenes en base64. Gmail
+     RECORTA cualquier correo que pase de 102 KB y muestra un "[Mensaje
+     recortado]" justo donde iba el botón. Sirve para un broadcast
+     bonito de una vez; no sirve para una secuencia de 7 correos.
+     Esta pesa menos de 8 KB: tabla de 600 px, estilos en línea, y las
+     dos únicas imágenes se cargan por URL.
+
+     CÓMO SE USA: se guarda UNA sola vez como plantilla en GHL y cada
+     correo de las secuencias solo reemplaza:
+       [[TITULO]]  [[CUERPO]]  [[TEXTO_BOTON]]  [[ENLACE_BOTON]]  [[PD]]
+     Lo demás (cabecera, pie, baja) no se toca nunca.
+
+     LAS 3 REGLAS QUE NO SE ROMPEN:
+     1. {{unsubscribe_url}} va SIEMPRE. Sin eso se quema el dominio.
+     2. Nada de base64. Imágenes por URL o ninguna.
+     3. Estilos EN LÍNEA (style="..."), no en <style>. Gmail borra
+        las hojas de estilo del <head>.
+     ============================================================ -->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#fafaf7;margin:0;padding:0;">
+  <tr>
+    <td align="center" style="padding:24px 12px;">
+
+      <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px;max-width:100%;background-color:#ffffff;border-radius:12px;overflow:hidden;">
+
+        <!-- Cabecera ------------------------------------------------ -->
+        <tr>
+          <td align="center" style="padding:26px 24px 18px;border-bottom:1px solid #e7eaf0;">
+            <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04bbc1fa8afa3be0bb00d8.png"
+                 alt="Design Modeling Academy" width="190"
+                 style="display:block;width:190px;max-width:70%;height:auto;border:0;">
+          </td>
+        </tr>
+
+        <!-- Título -------------------------------------------------- -->
+        <tr>
+          <td style="padding:30px 34px 0;">
+            <h1 style="margin:0;font-family:'Trebuchet MS',Verdana,Arial,sans-serif;font-size:25px;line-height:1.28;font-weight:bold;color:#001e30;">
+              [[TITULO]]
+            </h1>
+          </td>
+        </tr>
+
+        <!-- Cuerpo -------------------------------------------------- -->
+        <tr>
+          <td style="padding:18px 34px 0;font-family:Verdana,Geneva,Arial,sans-serif;font-size:15px;line-height:1.68;color:#33414d;">
+            [[CUERPO]]
+          </td>
+        </tr>
+
+        <!-- Botón (VML para que se vea también en Outlook) ---------- -->
+        <tr>
+          <td align="center" style="padding:28px 34px 6px;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td align="center" bgcolor="#ca7520" style="border-radius:9px;">
+                  <a href="[[ENLACE_BOTON]]"
+                     style="display:inline-block;padding:15px 34px;font-family:'Trebuchet MS',Verdana,Arial,sans-serif;font-size:16px;font-weight:bold;color:#ffffff;text-decoration:none;border-radius:9px;">
+                    [[TEXTO_BOTON]]
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Posdata (opcional: borrar la fila entera si no se usa) -- -->
+        <tr>
+          <td style="padding:22px 34px 0;font-family:Verdana,Geneva,Arial,sans-serif;font-size:13.5px;line-height:1.62;color:#5a6b7b;">
+            [[PD]]
+          </td>
+        </tr>
+
+        <!-- Firma --------------------------------------------------- -->
+        <tr>
+          <td style="padding:24px 34px 30px;font-family:Verdana,Geneva,Arial,sans-serif;font-size:15px;line-height:1.6;color:#33414d;">
+            Un abrazo,<br>
+            <strong style="color:#001e30;">Dayana</strong><br>
+            <span style="font-size:13px;color:#5a6b7b;">Design Modeling Academy</span>
+          </td>
+        </tr>
+
+        <!-- Pie ----------------------------------------------------- -->
+        <tr>
+          <td style="padding:20px 34px 26px;background-color:#001e30;font-family:Verdana,Geneva,Arial,sans-serif;font-size:11.5px;line-height:1.65;color:#9fb3c4;text-align:center;">
+            Recibes este correo porque descargaste un recurso gratuito de
+            Design Modeling Academy.<br>
+            <a href="{{unsubscribe_url}}" style="color:#c5d6e2;text-decoration:underline;">
+              Darme de baja
+            </a>
+            &nbsp;·&nbsp; Quito, Ecuador
+          </td>
+        </tr>
+
+      </table>
+
+    </td>
+  </tr>
+</table>
