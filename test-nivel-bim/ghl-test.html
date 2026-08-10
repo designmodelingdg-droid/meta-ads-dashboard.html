@@ -1,0 +1,122 @@
+<!-- ============================================================
+     test-nivel-bim · PÁGINA 3 del funnel — el test bajo tu dominio
+     ESCRITO A MANO (no se genera): no tiene rutas relativas.
+
+     Qué hace: embebe el test a pantalla completa para que el usuario lo
+     use en funnel.dgdesignmodeling.com/test-nivel-bim/test y nunca vea
+     que el contenido se sirve desde GitHub Pages.
+
+     Pegar en: Sites → página /test-nivel-bim/test → Custom Code,
+     a ancho completo y SIN padding (arriba, abajo y a los lados).
+     Si la sección de GHL deja márgenes, aparecerá una doble barra de
+     scroll — quitarlos es lo único crítico de esta página.
+     ============================================================ -->
+<style>
+  /* Todo el bloque mide una pantalla y el iframe se queda con lo que
+     sobra. Así no hay que adivinar cuánto ocupan la barra y el enlace —
+     restar un número a ojo era lo que dejaba la segunda barra de scroll. */
+  .dm-test-bloque{
+    display:flex;flex-direction:column;height:100dvh;min-height:560px;
+    margin:0;padding:0;width:100%;overflow:hidden
+  }
+  @supports not (height:100dvh){ .dm-test-bloque{height:100vh} }
+
+  /* Neutraliza el padding que GHL suele meter alrededor del Custom Code */
+  .dm-test-wrap{flex:1;min-height:0;margin:0;padding:0;width:100%;line-height:0}
+  .dm-test-wrap iframe{display:block;width:100%;height:100%;border:0}
+
+  /* ── LA SALIDA, SIEMPRE VISIBLE ──────────────────────────────────────
+     Una barra arriba y un enlace abajo. Si el recuadro sale en blanco
+     —GHL a veces bloquea el contenido incrustado— la persona ve cómo
+     salir sin tener que entender qué pasó. Vale más que cambie el
+     dominio a que se quede mirando un rectángulo vacío.                 */
+  .dm-barra{
+    flex:none;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;justify-content:center;
+    background:#001e30;color:#c5d6e2;font-family:'Nunito',system-ui,sans-serif;
+    line-height:1.4;font-size:.83rem;padding:9px 16px;text-align:center
+  }
+  .dm-barra a{
+    color:#fff;background:#ca7520;text-decoration:none;border-radius:7px;
+    font-family:'Overpass',system-ui,sans-serif;font-weight:800;padding:7px 15px;font-size:.82rem
+  }
+  .dm-barra a:hover{background:#e8a04a}
+
+  /* Enlace discreto, SIEMPRE visible: aunque el iframe cargue bien, hay
+     gente que prefiere pantalla completa. */
+  .dm-alt{
+    flex:none;text-align:center;font-family:'Nunito',system-ui,sans-serif;line-height:1.5;
+    font-size:.84rem;padding:10px 16px;background:#fafaf7;border-top:1px solid #e5e7eb;color:#5a6b7b
+  }
+  .dm-alt a{color:#ca7520;font-weight:700}
+  .dm-test-noscript{
+    font-family:'Nunito',system-ui,sans-serif;line-height:1.6;
+    background:#fff7ec;border-left:4px solid #ca7520;border-radius:0 8px 8px 0;
+    padding:14px 16px;margin:16px;color:#333;font-size:.92rem
+  }
+  .dm-test-noscript a{color:#ca7520;font-weight:700}
+</style>
+
+<div class="dm-test-bloque">
+<div class="dm-barra">
+  <span>¿No ves el test aquí abajo?</span>
+  <a id="dmRescateLink" href="https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/test-nivel-bim/app.html?acceso=dmbim26" target="_blank" rel="noopener">Ábrelo en una pestaña →</a>
+</div>
+
+<div class="dm-test-wrap">
+  <iframe id="dmTestFrame"
+          title="Test de Nivel BIM · Design Modeling Academy"
+          loading="eager"
+          referrerpolicy="no-referrer-when-downgrade"
+          allow="clipboard-write"
+          src="https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/test-nivel-bim/app.html?acceso=dmbim26"></iframe>
+
+</div>
+
+<p class="dm-alt">
+  ¿Prefieres verlo a pantalla completa?
+  <a id="dmAltLink" href="https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/test-nivel-bim/app.html?acceso=dmbim26" target="_blank" rel="noopener">Abrir el test en una pestaña nueva →</a>
+</p>
+</div>
+
+<noscript>
+  <div class="dm-test-noscript">
+    Para hacer el test necesitas tener JavaScript activado.
+    Si no puedes, ábrelo directamente
+    <a href="https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/test-nivel-bim/app.html?acceso=dmbim26">en esta página</a>.
+  </div>
+</noscript>
+
+<script>
+/* Si la persona llega con ?acceso=XXXX (por ejemplo desde la página de
+   gracias), reenviamos ese token al iframe en vez del que viene por
+   defecto. Así el candado del test se abre igual aunque algún día se
+   cambie el token. */
+(function(){
+  var TOKEN_POR_DEFECTO = 'dmbim26';
+  var APP = 'https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/test-nivel-bim/app.html';
+  var frame = document.getElementById('dmTestFrame');
+  var deseada = APP + '?acceso=' + TOKEN_POR_DEFECTO;
+
+  try{
+    var t = new URLSearchParams(location.search).get('acceso') || TOKEN_POR_DEFECTO;
+    deseada = APP + '?acceso=' + encodeURIComponent(t);
+    if(frame && frame.src !== deseada) frame.src = deseada;
+  }catch(e){ /* si algo falla, el iframe ya trae el token por defecto */ }
+
+  // Los enlaces de salida llevan el mismo token que el iframe.
+  ['dmRescateLink','dmAltLink'].forEach(function(id){
+    var a = document.getElementById(id);
+    if(a) a.setAttribute('href', deseada);
+  });
+
+  /* NO hay detector de carga, y es a propósito.
+
+     Se probó: cuando el iframe es de otro dominio, leer su dirección da
+     SecurityError TANTO si cargó bien como si el navegador lo bloqueó. No
+     se distinguen. Un detector aquí daría falsa confianza.
+
+     Por eso la salida está SIEMPRE visible, arriba y abajo, en vez de
+     aparecer sola cuando falla. Si el recuadro sale en blanco, la persona
+     ve el enlace sin tener que buscarlo ni entender qué pasó. */
+})();
+</script>
