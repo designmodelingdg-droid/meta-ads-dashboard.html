@@ -211,3 +211,69 @@ Semana corta: **tres piezas**. Métricas traídas directo de la Graph API (no ma
 ### Limitación conocida
 
 Las **vistas por publicación de Facebook** ya no las entrega la API de Meta (probado hasta v23; el error es `(#100) The value must be a valid insights metric`). Solo se ven en la interfaz de Insights. Todo lo demás — Instagram completo y comentarios/likes/compartidos de Facebook — es automático. Si se quiere ese dato, hay que cargarlo a mano en `views_facebook`.
+
+---
+
+## Actualización 2026-08-10 — semana 3 al 9 de agosto · el lanzamiento del test
+
+Cuatro piezas. Métricas de la Graph API.
+
+| Fecha | Pieza | Views | Alcance | Likes | Com. IG | Com. FB | Guard. |
+|---|---|---|---|---|---|---|---|
+| 5 ago | Post — Civil 3D Challenge | **5.469** | 1.915 | 17 | 0 | — | 0 |
+| 7 ago | Reel — Challenge en la UEES | 2.623 | 1.895 | 26 | 2 | — | 2 |
+| 7 ago | **Post — «Manejo Revit» (lanzamiento del test)** ⭐ | 1.456 | 822 | 12 | **12** | **9** | 4 |
+| 9 ago | Post — «¿En qué nivel BIM estás?» | 809 | 444 | 3 | 0 | — | 0 |
+
+### La lección de la semana, y esta vez es medible
+
+**La pieza con menos alcance fue la que más conversación generó.** El post de
+«Manejo Revit» sacó 1.456 views —la cuarta parte del Civil 3D— y aun así
+**21 comentarios entre Instagram y Facebook, contra 0** del que tuvo cuatro
+veces su alcance.
+
+La diferencia es la pregunta de cierre. Y esta vez no es una correlación
+encontrada a posteriori: **la pieza se escribió a propósito para probarlo**,
+tras la lección del 27-jul (el reel de humor, 8.373 views y 3 comentarios por
+cerrar sin preguntar). Se probó y funcionó.
+
+**Y convirtió**: 5 registros al CRM esa noche, 2 de ellos por el bot
+—comentario en Instagram, DM, landing y registro en **3 minutos**—.
+
+### Las otras tres lecturas
+
+1. **El alcance de evento es alcance de vanidad.** El Civil 3D Challenge hizo
+   5.469 views con 0 comentarios y 0 guardados. Sirve para que te vean, no
+   para que te escriban. No compite con el de 1.456 que sacó 21 comentarios:
+   son cosas distintas y hay que dejar de compararlas por views.
+2. **El reel gana al post plano otra vez**: mismo evento, el reel sacó 26
+   likes y 2 comentarios contra 17 y 0 del post. Ya son varias semanas.
+3. **El titular del anuncio NO sirve como hook orgánico.** La pieza del 9-ago
+   abre con «¿En qué nivel BIM estás realmente?» —que es el titular de la
+   pieza gráfica— y se quedó en 809 views y 0 comentarios. La del 7 abre con
+   una escena («Manejo Revit») y hace 2x en views y 21 a 0 en comentarios.
+   Repetir el anuncio en orgánico no aporta nada nuevo a quien ya lo vio.
+
+### Ajuste que se aplica
+
+- **Toda pieza de lanzamiento se escribe con escena + pregunta de cierre.**
+  Deja de ser una recomendación: es lo único que ha generado comentarios en
+  tres semanas seguidas de medición.
+- **Las piezas de evento no llevan CTA de producto.** Van a presencia. Medir
+  las por alcance y no por comentarios, para no leerlas mal.
+- **No reciclar el titular del anuncio como hook del post.**
+
+### Advertencia para leer estos números
+
+La **cuenta de anuncios está parada desde el 6 de agosto** por un saldo
+pendiente de $104,96. Parte de la caída de alcance de la semana es de la
+pauta detenida, no del contenido. Lo que **sí** es comparable son los
+comentarios y los guardados, que son orgánicos puros — y ahí la lectura se
+sostiene.
+
+### Limitación conocida
+
+Las **vistas por publicación de Facebook** siguen sin estar en la API (Meta
+las eliminó). Sí llegan los comentarios de FB, y por eso sabemos que el post
+del test sumó 9 comentarios más allí — sin ese dato habríamos contado 12 en
+vez de 21.

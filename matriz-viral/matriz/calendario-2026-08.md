@@ -25,6 +25,12 @@ En LinkedIn: pregunta abierta o DM (nunca "comenta la palabra"). En TikTok: "lin
 >
 > Se confirma también que **lo institucional no va en feed**: el post «somos el equipo detrás» sacó 7 likes y 0 guardados con 2,164 views. Ese contenido pasa a **historias/destacadas**.
 
+> **Confirmado otra vez el 10-ago, y ahora con una pieza escrita a propósito para probarlo:** el post del lanzamiento del test («Manejo Revit») sacó **1,456 views —la cuarta parte del post del Civil 3D— y 21 comentarios (12 en IG + 9 en FB) contra 0** del que tuvo 4x su alcance. **Escena al abrir + pregunta al cerrar** deja de ser recomendación: es lo único que ha generado comentarios en tres semanas seguidas de medición.
+>
+> Dos reglas nuevas de esa misma semana:
+> - **Las piezas de evento no llevan CTA de producto** y se miden por alcance, no por comentarios. El Civil 3D hizo 5,469 views con 0 comentarios y 0 guardados: es presencia, no conversación.
+> - **No reciclar el titular del anuncio como hook del post.** La pieza del 9-ago abrió con «¿En qué nivel BIM estás realmente?» —el titular de la gráfica— y se quedó en 809 views y 0 comentarios. Quien ya vio el anuncio no encuentra nada nuevo.
+
 **Leyenda:** 🎯 núcleo BIM/IA · 🔩 ACERO · 🎁 lead magnet · 📝 blog · 👥 comunidad · 🏛️ empresa/novedades · *(guion)* = guion listo.
 
 📄 **Versión en Word para el equipo:** `matriz-viral/entregables/Matriz-Contenido-Agosto-2026-DMA.docx`
