@@ -17,7 +17,7 @@ const doc = new Document({
       'Montar los 3 workflows en GoHighLevel · paso a paso',
       '🟡  PRÓXIMA SEMANA',
       'CA7520',
-      ['Para: Esther', 'De: Dayana · Design Modeling Academy',
+      ['Para: Ester Alvarez', 'De: Dayana · Design Modeling Academy',
        'Fecha: 13 de agosto de 2026',
        'Tiempo estimado: 3–4 horas de montaje + 9 días de encendido escalonado']),
 

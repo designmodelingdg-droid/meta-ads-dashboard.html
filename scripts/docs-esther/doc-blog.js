@@ -18,7 +18,7 @@ const doc = new Document({
       'Blog + hub de recursos · paso a paso completo',
       '🔴  URGENTE',
       'B3261E',
-      ['Para: Esther', 'De: Dayana · Design Modeling Academy',
+      ['Para: Ester Alvarez', 'De: Dayana · Design Modeling Academy',
        'Fecha: 13 de agosto de 2026',
        'Tiempo estimado: 20–30 minutos']),
 
