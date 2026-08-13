@@ -28,6 +28,25 @@ WhatsApp masivo está descartado — bloquea la línea. **El correo es el puente
 | Test de Nivel BIM | 31 | **26** | B |
 | Lista dormida (ebook, guía, AI PRO, cursos) | 1.999 | **1.999** | C |
 
+### Dónde están (comprobado en el CRM el 11-ago-2026)
+
+No hay que crear pipeline nuevo. **Ya existe y está lleno:**
+
+- **Pipeline INSTAGRAM – FACEBOOK** (`qjXIsYXjqdWbge7bZCdT`)
+- **Etapa NUEVO LEAD MAGNET** (`eaa5097a-8317-4519-aae4-094471d8b26a`)
+- **334 oportunidades paradas ahí**, todas `open`: ~184 de zapatas, ~37 del
+  test, ~107 sin fuente por revisar.
+
+Por eso el disparador de las secuencias **es esa etapa**, no un tag. Y por eso
+hay un paso aparte (`MONTAJE-GHL.md` §4c) para enrolar a los 334 que ya llevan
+meses ahí: los disparadores solo cogen a los que entren después.
+
+**El dato que más duele:** de los 297 de zapatas, solo **199 tienen correo**.
+Los otros ~98 entraron por el bot de Instagram y solo dejaron su usuario. A
+esos no se les puede mandar nada por correo — hay un DM escrito para pedírselo
+en `MONTAJE-GHL.md` §2c. Son leads que ya se pagaron con pauta y hoy están
+muertos en el CRM.
+
 Estos números son del 10-ago-2026 y crecen solos. Las secuencias son por
 disparador (entra al pipeline → arranca), así que no hay que volver a contarlos.
 

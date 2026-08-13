@@ -59,13 +59,87 @@ Para cada correo de las secuencias: duplicar esta plantilla y reemplazar solo
 
 ---
 
+## Paso 1b · 🚨 DÓNDE ESTÁN REALMENTE LOS LEADS
+
+**Esto corrige el disparador de las secuencias. Léelo antes de montar nada.**
+
+Los leads **ya están todos en un pipeline** que Dayana tiene funcionando. No hay
+que crear nada nuevo — hay que engancharse a lo que ya existe.
+
+| | |
+|---|---|
+| **Pipeline** | `qjXIsYXjqdWbge7bZCdT` — el de **INSTAGRAM – FACEBOOK** |
+| **Etapa** | `eaa5097a-8317-4519-aae4-094471d8b26a` — **NUEVO LEAD MAGNET** |
+| **Cuántos hay ahí** | **334 oportunidades**, todas en estado `open` |
+
+### Qué hay exactamente en esa etapa
+
+Comprobado contra el CRM el 11-ago-2026 (331 de los 334 caen en los últimos
+120 días):
+
+| Fuente | Cuántos | Nombre de la oportunidad | Va a |
+|---|---|---|---|
+| `Bot Zapatas IG/FB` | 106 | `Lead Zapatas - <usuario>` | **Secuencia A** |
+| `Calculadora de Zapatas - Registro` | 78 | nombre de la persona | **Secuencia A** |
+| `contacto-instagram` | 27 | `Lead Test BIM - <usuario>` | **Secuencia B** |
+| `Test Nivel  IG/FB` | 10 | `Lead Test Nivel - <usuario>` | **Secuencia B** |
+| *(sin fuente)* | 107 | nombre de la persona | **hay que mirarlos** |
+| sueltos (ebook, módulo, Facebook) | 3 | varios | descartar |
+
+**Total: ~184 de zapatas y ~37 del test.**
+
+### ⚠️ Las cuatro trampas de este pipeline
+
+Cualquiera de estas rompe el montaje en silencio:
+
+1. **`Test Nivel  IG/FB` lleva DOS ESPACIOS** entre «Nivel» e «IG/FB». Un filtro
+   con un solo espacio no encuentra a nadie y parece que no hay leads del test.
+2. **El test entró con dos nombres distintos**: `Lead Test BIM` (27) y
+   `Lead Test Nivel` (10). Filtrar solo por uno pierde a los otros.
+3. **107 oportunidades no tienen fuente.** Si el filtro es solo por fuente, se
+   quedan fuera un tercio de la etapa.
+4. **Muchos vienen del bot de Instagram y NO TIENEN CORREO** — la oportunidad se
+   llama con el usuario de IG (`Lead Zapatas - Mauricio_granados74`). De los 297
+   contactos de zapatas, solo **199 tienen correo**. A los otros ~98 **no se les
+   puede mandar esta secuencia**: hay que separarlos (ver paso 2c).
+
+**Por eso el disparador NO es un tag, es la etapa del pipeline**, y el reparto a
+la secuencia A o B se hace dentro del workflow con un If/Else.
+
+---
+
 ## Paso 2 · Workflow A — Zapatas → ACERO
 
 Automation → Workflows → **New** → Start from Scratch.
 Nombre: **`SEQ-A · Zapatas → ACERO`**
 
-**Disparador (Trigger):**
-`Tag Added` → tag `lead-calculadora-zapatas`
+**Disparador (Trigger):** `Opportunity Stage Changed`
+- Pipeline: **INSTAGRAM – FACEBOOK** (`qjXIsYXjqdWbge7bZCdT`)
+- Etapa: **NUEVO LEAD MAGNET** (`eaa5097a-8317-4519-aae4-094471d8b26a`)
+
+**Y como primer paso, dos filtros en este orden** (antes de cualquier correo):
+
+**Filtro 1 — ¿tiene correo?**
+```
+If/Else:  Email  is not empty
+   → NO  →  Add tag `sin-correo-solo-dm`  →  END. No sigue.
+   → SÍ  →  continúa
+```
+
+**Filtro 2 — ¿es de zapatas?** (con OR, para cubrir las tres formas de entrar)
+```
+If/Else, cualquiera de estas:
+   Opportunity Name    contains  "Zapatas"
+   Opportunity Source  contains  "Zapatas"
+   Contact Tag         is        lead-calculadora-zapatas
+   → SÍ  →  sigue la secuencia A
+   → NO  →  END (lo recoge el workflow B)
+```
+
+> **Ojo:** «contains "Zapatas"» con Z mayúscula cubre tanto
+> `Bot Zapatas IG/FB` como `Calculadora de Zapatas - Registro` y
+> `Lead Zapatas - <usuario>`. Marca la opción **case-insensitive** si GHL la
+> ofrece.
 
 **Acciones, en orden:**
 
@@ -114,10 +188,60 @@ condicional:
 
 ---
 
+## Paso 2c · Los que NO tienen correo (~98 personas)
+
+No es un caso raro: **es un tercio de la etapa.** Son los que entraron por el
+bot de Instagram y solo dejaron su usuario.
+
+A esos **no se les puede mandar la secuencia** — no hay a dónde. Lo que sí se
+puede hacer, y hoy no se hace nada:
+
+1. Quedan con tag **`sin-correo-solo-dm`** (lo pone el filtro 1).
+2. Se les manda **un DM pidiendo el correo**, dentro de la ventana de 24 h de
+   Meta si aún está abierta:
+
+```
+¡Hola! 👋 Te mandé la calculadora por aquí, pero se me queda corta la
+conversación por DM.
+
+¿Me pasas tu correo? Te mando el paso a paso completo de cómo usarla
+sin que se te pierda entre los mensajes, y de paso te llegan las
+herramientas nuevas cuando salen. Nada de spam. 🙌
+```
+
+3. Quien conteste con su correo → se le guarda en el contacto → **entra a la
+   secuencia A automáticamente** (el filtro 1 ya deja de bloquearlo).
+
+> **Esto es dinero que ya está pagado.** Son leads que costaron pauta y que hoy
+> están muertos en el CRM porque nadie les pidió el correo. Recuperar aunque
+> sea un tercio son ~30 personas más en la secuencia sin gastar un dólar.
+
+---
+
 ## Paso 3 · Workflow B — Test → Máster
 
 Nombre: **`SEQ-B · Test de Nivel → Máster`**
-**Disparador:** `Tag Added` → `lead-test-nivel-bim`
+
+**Disparador:** el mismo que el A — `Opportunity Stage Changed`, pipeline
+**INSTAGRAM – FACEBOOK**, etapa **NUEVO LEAD MAGNET**.
+
+**Mismos dos filtros primero**, con la condición del test:
+
+```
+Filtro 1: Email is not empty  →  NO: tag `sin-correo-solo-dm` y END
+
+Filtro 2, cualquiera de estas:
+   Opportunity Name    contains  "Test"
+   Opportunity Source  contains  "Test Nivel"
+   Contact Tag         is        lead-test-nivel-bim
+   → SÍ  →  sigue la secuencia B
+   → NO  →  END
+```
+
+> **«contains "Test"» a secas, y es a propósito:** así entra tanto
+> `Lead Test BIM` (27) como `Lead Test Nivel` (10). Y **no filtres por la
+> fuente exacta `Test Nivel  IG/FB`** — lleva dos espacios y lo vas a escribir
+> mal. Por eso la condición del nombre va primera.
 
 | # | Acción | Configuración |
 |---|---|---|
@@ -192,6 +316,52 @@ solo movimiento. Es lo mismo.
 
 **Entre lote y lote se mira el panel** (paso 5.3). Si los rebotes pasan de 2 %
 o el spam de 0,1 %, **se para** y no se carga el lote siguiente.
+
+---
+
+## Paso 4c · 🔑 Meter a los 334 que YA están en la etapa
+
+**Este es el punto de todo el montaje.** Los disparadores de arriba solo cogen a
+los que entren **de ahora en adelante**. Las 334 personas que llevan meses
+paradas en «NUEVO LEAD MAGNET» **no se enrolan solas** — hay que meterlas a
+mano, una vez.
+
+Se hace desde el módulo de Oportunidades, no desde Contactos:
+
+1. **Opportunities** → seleccionar el pipeline **INSTAGRAM – FACEBOOK**
+2. Filtrar por etapa **NUEVO LEAD MAGNET**
+3. **Primero los de zapatas.** Filtro adicional:
+   `Opportunity Name contains "Zapatas"` **o** `Source contains "Zapatas"`
+   → seleccionar todos → **Add to Workflow** → `SEQ-A · Zapatas → ACERO`
+4. **Después los del test.** Cambiar el filtro a
+   `Opportunity Name contains "Test"`
+   → seleccionar todos → **Add to Workflow** → `SEQ-B · Test de Nivel → Máster`
+5. **Los ~107 sin fuente y sin nombre de lead**: son los que quedan cuando
+   quitas los dos filtros anteriores. **No los metas a ciegas.** Ábrelos y mira
+   de dónde vienen; lo más probable es que sean del formulario de la
+   calculadora, en cuyo caso van a la A. Si no se puede saber, se dejan y se le
+   pregunta a Dayana.
+
+> ⚠️ **Los filtros de arriba se hacen con calma y se cuenta antes de enrolar.**
+> Si un lead del test acaba en la secuencia de zapatas, recibe 7 correos sobre
+> cimentaciones que no pidió. Eso no se puede deshacer.
+
+### Y aquí sí hace falta el escalonado
+
+Meter 334 personas de golpe a una secuencia es **exactamente** el pico de envío
+que quema un dominio. Aunque sean menos que los 2.000 de la lista dormida,
+llevan meses sin recibir nada nuestro — para los filtros son igual de fríos.
+
+| Día | Qué enrolar |
+|---|---|
+| 1 | 50 de zapatas (los más recientes primero — se acuerdan de nosotros) |
+| 2 | mirar el panel · si está verde, 100 más |
+| 3 | los ~34 restantes de zapatas |
+| 4 | los 37 del test, todos (son pocos) |
+
+**Los más recientes primero** no es un detalle: quien descargó hace tres
+semanas abre; quien descargó en mayo, no. Empezar por los que abren le enseña a
+Gmail que nuestros correos se leen, y eso protege los envíos siguientes.
 
 ---
 
