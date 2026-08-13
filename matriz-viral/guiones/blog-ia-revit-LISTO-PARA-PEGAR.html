@@ -1,0 +1,185 @@
+<!-- ============================================================
+     ARTÍCULO LISTO PARA PEGAR — blog de GHL
+     Título:  La IA de Revit, paso a paso: qué trae de verdad y cómo activarlo
+     Slug:    ia-en-revit-paso-a-paso-como-activarla
+     Meta:    Qué funciones de IA trae Revit realmente, en qué versión, y el
+              paso a paso para activarlas. Sin humo: también lo que no hace.
+     Portada: https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/ia-revit-portada.png
+
+     Las imágenes ya están alojadas y son permanentes. NO hay que subir nada.
+     Pegar todo lo que va debajo de esta línea en el editor HTML del blog.
+     ============================================================ -->
+
+<h2>Antes de empezar: la verdad incómoda</h2>
+
+<p>Si buscas «IA en Revit» vas a encontrar mil publicaciones prometiendo cosas espectaculares. Vamos a empezar por donde nadie empieza: <strong>por lo que Autodesk dice oficialmente.</strong></p>
+
+<p>En su propia base de conocimiento, respondiendo a la pregunta «¿qué funciones de IA tiene Revit?», Autodesk contesta:</p>
+
+<blockquote><p><em>«A partir de la versión Revit 2026, no hay funciones impulsadas por IA.»</em></p></blockquote>
+
+<p>Léelo otra vez. <strong>Hasta Revit 2026 inclusive, no hay IA integrada en Revit.</strong></p>
+
+<img src="https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/ia-revit-timeline.png" alt="Línea de tiempo: las funciones de IA en Revit llegan en la versión 2027" style="width:100%;height:auto;border-radius:10px;margin:24px 0">
+
+<p>Entonces, ¿de qué habla todo el mundo? De dos cosas que sí existen, cada una con su letra pequeña. Vamos con las dos, paso a paso.</p>
+
+<hr>
+
+<h2>1 · Autodesk Assistant — la IA de verdad (solo en Revit 2027)</h2>
+
+<p>Esta es la que sí es inteligencia artificial en el sentido que te imaginas: le escribes en lenguaje normal y hace cosas.</p>
+
+<p><strong>Requisitos, sin rodeos:</strong></p>
+<ul>
+  <li><strong>Revit 2027.</strong> En versiones anteriores no está y no se puede instalar.</li>
+  <li>Cuenta de Autodesk con sesión iniciada.</li>
+  <li>Está en <strong>Tech Preview</strong>: Autodesk lo da por funcional pero en evolución.</li>
+</ul>
+
+<h3>Paso a paso para activarlo</h3>
+
+<ol>
+  <li><strong>Abre Revit 2027 e inicia sesión</strong> con tu cuenta de Autodesk. Sin sesión iniciada no aparece.</li>
+  <li><strong>Busca el icono de Autodesk Assistant</strong> en la barra de título, junto al InfoCenter (arriba a la derecha). Haz clic.
+    <ul>
+      <li>¿No lo ves? Ve a <strong>View → User Interface → Autodesk Assistant</strong>.</li>
+      <li>¿Sigue sin aparecer? Cierra Revit y vuelve a abrirlo. Normalmente está abierto por defecto cuando has iniciado sesión.</li>
+    </ul>
+  </li>
+  <li><strong>Activa el Tech Preview.</strong> Esto es lo importante y donde casi todos se quedan a medias. Dentro del panel del Assistant, entra en <strong>Settings</strong> y enciende el Tech Preview.
+    <ul>
+      <li><strong>Sin Tech Preview</strong>, el Assistant solo responde preguntas de ayuda.</li>
+      <li><strong>Con Tech Preview</strong>, puede consultar tu modelo y ejecutar tareas.</li>
+    </ul>
+  </li>
+  <li><strong>Acomoda el panel.</strong> Se comporta como cualquier paleta de Revit: lo puedes arrastrar, apilarlo con Propiedades y el Navegador de proyectos, o mandarlo a un segundo monitor. También le puedes asignar un atajo de teclado.</li>
+</ol>
+
+<h3>Qué le puedes pedir (esto sí funciona)</h3>
+
+<p><strong>Ayuda contextual</strong> — «¿Cómo creo una vista de sección?»</p>
+
+<p><strong>Consultar el modelo</strong>, sin contar a mano:</p>
+<ul>
+  <li>«¿Cuántas columnas hay en la planta baja?»</li>
+  <li>«Encuentra todas las puertas del Nivel 1»</li>
+</ul>
+
+<p><strong>Automatizar tareas</strong> — aquí está el ahorro real:</p>
+<ul>
+  <li>«Crea una tabla de planificación de puertas»</li>
+  <li>«Crea una planta para el Nivel 2»</li>
+</ul>
+
+<p>Autodesk documenta seis grupos de herramientas que el Assistant maneja: consulta del modelo, exportación, gestión de láminas y documentación, gestión de recintos, tablas y datos, y operaciones sobre elementos.</p>
+
+<h3>Un ejemplo real, encadenado</h3>
+
+<p>Este es el flujo que la propia Autodesk demuestra. Fíjate que son órdenes seguidas, en lenguaje normal:</p>
+
+<pre><code>Crea una nueva planta para el Nivel 1 llamada "L1-AI"
+Aplica una plantilla de vista apropiada
+Etiqueta todos los recintos de la vista
+Repite el mismo proceso para los Niveles 2 y 3
+Crea láminas nuevas y coloca cada planta en su propia lámina
+Añade "Demo" al inicio del nombre de cada lámina
+Imprime las láminas nuevas a un archivo PDF</code></pre>
+
+<p>Eso es una tarde de trabajo repetitivo resuelta escribiendo siete frases. <strong>Ahí está el valor real</strong>, no en los renders mágicos.</p>
+
+<h3>Lo que tienes que saber antes de confiarte</h3>
+
+<ul>
+  <li><strong>Tú apruebas los cambios.</strong> El Assistant no toca el modelo sin que se lo pidas o confirmes.</li>
+  <li><strong>Puede equivocarse.</strong> Autodesk lo dice explícitamente: las respuestas generadas por IA pueden ser incompletas o incorrectas. <strong>Verifica siempre.</strong></li>
+  <li><strong>No se puede desinstalar</strong> ni desactivar del todo. Si no lo quieres usar, cierras el panel.</li>
+  <li><strong>Tu conversación y tu historial</strong> se guardan en la nube asociados a tu cuenta. Autodesk afirma que no se usan para entrenar modelos.</li>
+</ul>
+
+<hr>
+
+<h2>2 · Generative Design — lo de los layouts (y su letra pequeña)</h2>
+
+<img src="https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/ia-revit-generative-design.png" alt="Nueve alternativas de planta generadas con Generative Design, una seleccionada" style="width:100%;height:auto;border-radius:10px;margin:24px 0">
+
+<p>Esta es la función detrás de «le doy los metros y me da opciones de distribución». Existe, funciona, y lleva años en Revit. Pero <strong>no es IA conversacional</strong>: es optimización. Le das metas, restricciones y variables, y el computador genera y evalúa cientos de alternativas.</p>
+
+<p><strong>Requisitos:</strong></p>
+<ul>
+  <li>Suscripción a la <strong>AEC Collection</strong> (u otro acceso específico). Sin eso, el panel no aparece en la cinta.</li>
+  <li><strong>No está en Revit LT.</strong> Nunca.</li>
+  <li>Hace falta un <strong>study type</strong>: un archivo <code>.DYN</code> de Dynamo con su carpeta <code>Dependencies</code>. Revit trae ejemplos en la carpeta <em>Autodesk Samples</em>.</li>
+</ul>
+
+<h3>Paso a paso</h3>
+
+<ol>
+  <li><strong>Abre el modelo</strong> y prepáralo. Ten abierta una vista donde se vean los elementos que el estudio necesita seleccionar.</li>
+  <li><strong>Manage → panel Generative Design → Create Study.</strong>
+    <ul><li>¿No ves el panel Generative Design en la pestaña Manage? No tienes acceso. Puedes hacer algo equivalente con <strong>Dynamo for Revit</strong>.</li></ul>
+  </li>
+  <li><strong>En «Choose Folder»</strong>, elige la carpeta con el study type. Los ejemplos de Autodesk están en <em>Autodesk Samples</em>. Para añadir la tuya, <em>Add Folder</em>.</li>
+  <li><strong>Selecciona el study type y define el estudio</strong>: el método (optimizar, aleatorizar…), las variables de entrada y las metas.</li>
+  <li><strong>Espera.</strong> Puedes seguir trabajando mientras genera; las opciones van apareciendo. Cuánto tarda depende de cuántas generaciones pidas.</li>
+  <li><strong>Explora los resultados</strong> en <em>Explore Outcomes</em>. Cada opción es un modelo 3D con sus valores de entrada y de salida, y vienen ordenadas según tus metas.</li>
+  <li><strong>Integra la ganadora</strong>: con la opción seleccionada, pulsa <strong>Create Revit Elements</strong>. El modelo se actualiza con esa solución.</li>
+</ol>
+
+<p>Si el resultado no te convence, cambias metas o variables y vuelves a lanzar. Ese ciclo es el trabajo real.</p>
+
+<hr>
+
+<h2>3 · Lo que Revit NO hace (aunque lo hayas leído por ahí)</h2>
+
+<img src="https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/ia-revit-choque-sin-resolver.png" alt="Interferencia entre dos elementos: el software la detecta pero no la resuelve" style="width:100%;height:auto;border-radius:10px;margin:24px 0">
+
+<p>Con la misma honestidad:</p>
+
+<p><strong>❌ No genera detalles constructivos con IA.</strong> No existe esa función. Los detalles se dibujan en vistas de dibujo con las herramientas de detallado, o se toman de una biblioteca de detalles. Punto.</p>
+
+<p><strong>❌ No resuelve los choques.</strong> Revit tiene <strong>Interference Check</strong> y ACC tiene <strong>Model Coordination</strong>: te dicen <em>dónde</em> está el choque. <strong>Decidir qué se mueve sigue siendo trabajo de un coordinador.</strong> Ningún software documenta hoy sugerirte la solución.</p>
+
+<p><strong>❌ El Assistant no navega por internet</strong> por defecto, así que no busca normas ni catálogos por su cuenta.</p>
+
+<hr>
+
+<h2>Y esto es lo importante</h2>
+
+<p>Ninguna de estas herramientas te da el proyecto. Te dan <strong>el primer borrador, más rápido</strong>.</p>
+
+<p>El Assistant te ahorra la tarde de crear láminas y tablas. Generative Design te ahorra dibujar veinte alternativas para descubrir que la buena era la tercera. Pero <strong>quién decide si la solución sirve, si cumple la norma y si se puede construir, sigues siendo tú.</strong></p>
+
+<p>Esa es exactamente la diferencia entre saber usar el software y ser el profesional que decide. Lo primero se está automatizando. Lo segundo, no.</p>
+
+<hr>
+
+<h2>¿Y ahora qué?</h2>
+
+<p>Si quieres aprender a integrar esto en un flujo de trabajo completo —no como truco suelto, sino como método— echa un vistazo a nuestros recursos gratuitos:</p>
+
+<p>👉 <a href="https://funnel.dgdesignmodeling.com/recursos"><strong>Todos los recursos gratis</strong></a></p>
+
+<p>Y si quieres saber en qué nivel BIM estás realmente antes de decidir qué estudiar, tenemos un test de 20 preguntas que te lo dice sin adornos:</p>
+
+<p>👉 <a href="https://funnel.dgdesignmodeling.com/test-nivel-bim"><strong>Test de Nivel BIM</strong></a></p>
+
+<p>💬 <strong>¿Ya probaste alguna de estas funciones? ¿En qué versión de Revit estás?</strong> Cuéntamelo en los comentarios — tengo curiosidad de saber cuántos ya están en 2027.</p>
+
+<hr>
+
+<h3>Fuentes</h3>
+
+<p>Toda la información técnica sale de la documentación oficial de Autodesk:</p>
+
+<ul>
+  <li><a href="https://www.autodesk.com/support/technical/article/caas/sfdcarticles/sfdcarticles/What-AI-features-are-available-in-Revit.html" target="_blank" rel="noopener">What AI features are available in Revit?</a></li>
+  <li><a href="https://www.autodesk.com/support/technical/article/caas/sfdcarticles/sfdcarticles/What-are-Revit-AI-driven-features-in-Revit.html" target="_blank" rel="noopener">What are Revit AI-driven features in Revit</a></li>
+  <li><a href="https://help.autodesk.com/cloudhelp/2027/ENU/Revit-Assistant/files/GUID-620ECD98-53F7-47F1-B700-EEE84F15EBF7.html" target="_blank" rel="noopener">Autodesk Assistant in Revit (Tech Preview)</a></li>
+  <li><a href="https://www.autodesk.com/support/technical/article/caas/sfdcarticles/sfdcarticles/How-to-enable-Autodesk-Assistant-in-Revit.html" target="_blank" rel="noopener">How to enable Autodesk Assistant in Revit</a></li>
+  <li><a href="https://help.autodesk.com/cloudhelp/2027/ENU/Revit-GDiR/files/GUID-2519E7FD-8992-49F6-9F4F-CBA17E1AB991.htm" target="_blank" rel="noopener">Create a Study Using Generative Design in Revit</a></li>
+  <li><a href="https://help.autodesk.com/cloudhelp/2027/ENU/Revit-GDiR/files/GUID-8ACC2154-54C4-4929-951C-376CF3411A95.htm" target="_blank" rel="noopener">Workflow: Generative Design</a></li>
+  <li><a href="https://help.autodesk.com/cloudhelp/ENU/Assistant-User-Guide/files/assistant-topics/AA_Capabilities.html" target="_blank" rel="noopener">What can Autodesk Assistant do?</a></li>
+</ul>
+
+<p><em>Última verificación: 11 de agosto de 2026. Autodesk cambia estas funciones con frecuencia; si encuentras algo distinto en tu versión, escríbenos.</em></p>
