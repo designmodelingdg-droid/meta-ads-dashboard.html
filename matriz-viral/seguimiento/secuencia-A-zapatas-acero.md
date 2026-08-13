@@ -22,7 +22,7 @@ Del PDF oficial del programa. **Nada de esto está estimado.**
 | **Precio regular** | $499,99 USD |
 | **Precio oferta** | **$199,99 USD** |
 | **Vigencia** | *"por tiempo limitado o hasta llenar todos los cupos disponibles"* |
-| **Enlace de compra** | `https://designmodelingacademy.app.clientclub.net/courses/offers/bb3a0903-2b5a-47c8-bcea-de1ee59c408e` |
+| **Enlace de compra** | `https://designmodelingacademy.com/checkout/c/S688d24e3d66a2/single` |
 
 **Los 4 cursos que la componen:**
 1. Análisis y Diseño Simplificado de Estructuras de Acero — **Robot Structural Analysis**
@@ -45,14 +45,34 @@ va por **cupos**, que es lo que dice el material oficial. La regla:
 > dice el número exacto que Dayana confirme. Un contador falso se descubre solo
 > cuando la persona vuelve la semana siguiente y sigue igual.
 
-### ⚠️ Dos cosas por confirmar
+### 🚨 La página del programa está rota
 
-1. En el PDF aparecen **otras dos URL** además de la que me pasaste:
-   `designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero` y
-   un checkout `designmodelingacademy.com/checkout/c/S688d24e3d66a2/single`.
-   **¿Cuál es la buena?** Usé la de `clientclub` porque es la que me diste.
-2. **Testimonios: los dos archivos que pasaste son videos** (`.mp4`, formato
-   historia, de jul-2024). En correo no se pueden reproducir. Ver el correo 6.
+Dayana confirmó el 11-ago que el dominio canónico es
+`designmodelingacademy.com`, así que los correos usan el **checkout** de ese
+dominio. Pero al comprobar las URL del PDF apareció esto:
+
+| URL del PDF | Estado |
+|---|---|
+| `designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero` | ❌ **302 → google.com.** Redirige a Google |
+| `designmodelingacademy.com/checkout/c/S688d24e3d66a2/single` | ✅ 200. Es la que se usa |
+| `designmodelingacademy.app.clientclub.net/courses/offers/bb3a0903-…` | ✅ Funciona, pero es otro dominio |
+
+**Esa URL rota está impresa en el PDF que se le manda a los prospectos**, y las
+otras tres de los cursos sueltos (`/es/curso/robot-acero`, `/es/curso/robot-naves`,
+`/es/curso/advance-conexiones`, `/es/curso/modelado-bim`) hay que comprobarlas
+también — probablemente estén igual.
+
+Mientras no se arregle, los correos van directo al checkout. **No es lo ideal**:
+el correo 4 y el 5 mandan a alguien que todavía está decidiendo a una pantalla
+de pago. Cuando la página del programa funcione, se cambian los correos 4 y 5
+a esa y se deja el checkout solo en el 7.
+
+### Testimonios
+
+Los dos archivos que pasaste son videos (`.mp4`, formato historia, jul-2024) y
+un correo no reproduce video. **La página de testimonios tampoco sirve para
+sacar nombres**: se comprobó el 11-ago y son videos incrustados, sin una sola
+línea de texto ni un nombre en el HTML. Ver el correo 6.
 
 ---
 
@@ -214,7 +234,7 @@ abre todos los meses, así que no es una fecha lo que la cierra — son
 los cupos.
 ```
 
-**Botón:** `Ver el programa y reservar mi cupo` → `https://designmodelingacademy.app.clientclub.net/courses/offers/bb3a0903-2b5a-47c8-bcea-de1ee59c408e`
+**Botón:** `Ver el programa y reservar mi cupo` → `https://designmodelingacademy.com/checkout/c/S688d24e3d66a2/single`
 
 **PD:** `Si prefieres que te lo cuente una persona antes de decidir, agenda 30 minutos aquí: https://api.leadconnectorhq.com/widget/booking/bIVuNHNojGEgH3gf6yXe`
 
@@ -253,7 +273,7 @@ rehacer un detalle que no coincidía con el modelo es más que lo que te
 pide el programa.
 ```
 
-**Botón:** `Ver cómo funciona` → `https://designmodelingacademy.app.clientclub.net/courses/offers/bb3a0903-2b5a-47c8-bcea-de1ee59c408e`
+**Botón:** `Ver cómo funciona` → `https://designmodelingacademy.com/checkout/c/S688d24e3d66a2/single`
 
 **PD:** `¿Tu duda es otra? Responde y te contesto yo. No es un correo automático sin salida — al responder me llega a mí.`
 
@@ -356,7 +376,7 @@ discurso de ventas: te digo honestamente si te conviene o no.
 **Botón:** `Agendar 30 minutos` → `https://api.leadconnectorhq.com/widget/booking/bIVuNHNojGEgH3gf6yXe`
 
 **Segundo enlace, en texto bajo el botón:**
-`¿Ya lo tienes decidido? Reserva tu cupo aquí → https://designmodelingacademy.app.clientclub.net/courses/offers/bb3a0903-2b5a-47c8-bcea-de1ee59c408e`
+`¿Ya lo tienes decidido? Reserva tu cupo aquí → https://designmodelingacademy.com/checkout/c/S688d24e3d66a2/single`
 
 **PD:** `Gracias por leer hasta aquí. Si en algún momento te sirve algo de lo que hacemos, sabes dónde encontrarme.`
 

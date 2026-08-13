@@ -315,23 +315,248 @@ Tres avisos, de los errores que ya cometimos con este hub:
 - El script oculta las tarjetas que sigan en `href="#"`. Si se te queda así,
   la tarjeta desaparece y parece que no se subió.
 
-## C · La imagen de la tarjeta
+## C · Las imágenes — las 5 que hacen falta
 
-- **Medidas: 1280 × 720 px** (16:9), PNG o JPG, **fondo claro**.
-- Se muestra con `background-size: contain`, así que **no se recorta**: lo que
-  exportes es lo que se ve entero.
-- Idea: interfaz de Revit al fondo con velo azul marino `#001e30`, el panel del
-  Autodesk Assistant destacado, y el título en dos líneas con «IA» en naranja
-  `#ca7520`. Mismo estilo que la portada del carrusel del 4 de agosto, para que
-  se lea como continuación de ese post.
+**Paleta obligatoria** (la de la marca, ya usada en el hub y las landings):
 
-## D · Cerrar el círculo con el post que ya está publicado
+| | |
+|---|---|
+| Azul marino | `#001e30` |
+| Naranja | `#ca7520` |
+| Crema de fondo | `#fafaf7` |
+| Texto sobre azul | `#c5d6e2` |
+| Tipografías | **Overpass** (títulos, 800-900) · **Nunita/Nunito** (texto) |
+
+**Reglas para las 5:** fondo claro o azul marino sólido (nunca degradados
+raros) · nada de texto en inglés · nada de manos con seis dedos: si sale gente,
+que sea de espaldas o en plano de pantalla · **ninguna imagen debe inventar una
+interfaz de Revit que no existe** — si no hay captura real, usar ilustración
+abstracta, nunca una UI falsa que parezca real.
+
+---
+
+### C1 · PORTADA (la que va en el blog y en la tarjeta del hub)
+
+**Medidas: 1280 × 720 px** (16:9). PNG. **Fondo claro.**
+
+> ⚠️ En el hub se muestra con `background-size: contain`, así que **no se
+> recorta**: lo que exportes es exactamente lo que se ve. Nada pegado al borde.
+
+**Prompt:**
+```
+Ilustración editorial horizontal 1280x720 para artículo técnico de arquitectura
+e ingeniería. Fondo azul marino profundo #001e30. A la izquierda, un panel de
+chat estilizado y minimalista (rectángulo redondeado color crema #fafaf7) con
+tres líneas de texto simuladas y un cursor naranja #ca7520 parpadeando. A la
+derecha, la silueta en wireframe naranja de un edificio en planta, con líneas
+finas técnicas. Entre los dos, una flecha delgada naranja. Estilo plano,
+geométrico, sin degradados, sin fotografías, sin texto legible. Mucho aire
+alrededor. Estética de revista técnica seria, no de banner promocional.
+```
+
+**Encima, en Canva o el editor:** el título en Overpass 900,
+`La IA de Revit` en crema + `paso a paso` en naranja, dos líneas, alineado a la
+izquierda, con margen generoso.
+
+---
+
+### C2 · «Hasta 2026 no hay IA» (va después del primer párrafo)
+
+**Medidas: 1200 × 675 px.** Es la imagen que da credibilidad al artículo — la
+que la gente captura y comparte.
+
+**Prompt:**
+```
+Gráfico informativo minimalista 1200x675, fondo azul marino #001e30. Una línea
+de tiempo horizontal con cuatro nodos etiquetados 2024, 2025, 2026, 2027. Los
+tres primeros nodos son círculos vacíos grises apagados; el cuarto, el de 2027,
+es un círculo relleno naranja #ca7520 y más grande, con un halo suave. Bajo la
+línea, mucho espacio vacío para texto. Estilo plano, geométrico, líneas finas,
+sin degradados, sin fotografías, sin texto.
+```
+
+**Encima:** sobre los 3 primeros → `Sin funciones de IA`. Sobre el de 2027 →
+`Autodesk Assistant`. Abajo pequeño: `Fuente: help.autodesk.com`.
+
+---
+
+### C3 · El panel del Autodesk Assistant (sección 1)
+
+**Aquí NO se genera imagen. Se toma una captura real.**
+
+Es lo único del artículo que la gente va a intentar reproducir en su pantalla:
+una interfaz inventada por IA sería exactamente el error que este artículo viene
+a corregir.
+
+- **Si hay Revit 2027 a mano:** captura de la barra de título con el icono del
+  Assistant señalado, y otra del panel abierto con Settings y el Tech Preview
+  encendido. 1200 px de ancho mínimo.
+- **Si no hay Revit 2027:** usar el diagrama de C2 y **decirlo en el pie**:
+  *"Captura pendiente — el Assistant solo está en Revit 2027"*. Honesto y
+  coherente con el artículo.
+
+---
+
+### C4 · Generative Design (sección 2)
+
+**Medidas: 1200 × 675 px.**
+
+**Prompt:**
+```
+Ilustración técnica plana 1200x675, fondo crema #fafaf7. Una cuadrícula de
+nueve plantas arquitectónicas esquemáticas en miniatura, dibujadas en línea
+fina azul marino #001e30, todas ligeramente distintas entre sí. Una de las
+nueve está resaltada con un borde naranja #ca7520 grueso y un fondo naranja muy
+tenue. Estilo diagrama de arquitecto, líneas técnicas limpias, sin sombras, sin
+degradados, sin texto, sin fotografías. Mucho espacio en blanco entre las
+miniaturas.
+```
+
+Idea: cientos de alternativas generadas, **una elegida por un humano**. Es la
+tesis del artículo en una imagen.
+
+---
+
+### C5 · «Lo que NO hace» (sección 3)
+
+**Medidas: 1200 × 675 px.**
+
+**Prompt:**
+```
+Ilustración conceptual plana 1200x675, fondo azul marino #001e30. Dos elementos
+estructurales lineales que se cruzan formando una intersección, dibujados en
+línea fina crema #fafaf7. El punto exacto donde se cruzan está marcado con un
+círculo naranja #ca7520 brillante. Sobre el punto de cruce, un signo de
+interrogación grande y limpio, tipografía geométrica sans-serif, en naranja.
+Estilo diagrama técnico minimalista, sin degradados, sin fotografías, sin más
+texto.
+```
+
+Idea exacta: el software marca el choque; **la pregunta de qué se mueve sigue
+sin respuesta automática**.
+
+---
+
+### Dónde va cada una dentro del artículo
+
+| Imagen | Posición |
+|---|---|
+| **C1 Portada** | imagen destacada del post + tarjeta del hub |
+| **C2 Línea de tiempo** | después de la cita de Autodesk, antes de «¿de qué habla todo el mundo?» |
+| **C3 Captura del Assistant** | dentro de «Paso a paso para activarlo», después del punto 3 |
+| **C4 Generative Design** | al inicio de la sección 2, antes de los requisitos |
+| **C5 Interrogación** | al inicio de la sección 3 |
+
+**Texto alternativo (`alt`) de cada una** — hace falta para SEO y accesibilidad:
+
+- C1: `La IA de Revit paso a paso: qué funciones trae y en qué versión`
+- C2: `Línea de tiempo: las funciones de IA en Revit llegan en la versión 2027`
+- C3: `Panel de Autodesk Assistant abierto en Revit 2027`
+- C4: `Nueve alternativas de planta generadas con Generative Design, una seleccionada`
+- C5: `Interferencia entre dos elementos: el software la detecta pero no la resuelve`
+
+---
+
+## D · Que quede PRIMERO en el hub de recursos
+
+Este es el punto crítico: **la persona llega desde el DM y este artículo tiene
+que ser el primero que ve.**
+
+En `recursos/index.html`, sección `id="articulos"`, pegar esta tarjeta
+**justo después de `<div class="grid g3">`**, antes de la de SAP2000:
+
+```html
+      <a class="card" style="--img:url('URL_DE_LA_PORTADA')" data-url="art0" href="https://funnel.dgdesignmodeling.com/post/ia-en-revit-paso-a-paso-como-activarla">
+        <span class="foto"></span>
+        <span class="cuerpo">
+        <span class="tag">BIM + IA</span>
+        <h3>La IA de Revit, paso a paso: qué trae de verdad</h3>
+        <p>Qué funciones existen, en qué versión están y cómo activarlas. Con lo que Revit todavía no hace.</p>
+        <span class="go">Leer el artículo →</span>
+      </span>
+      </a>
+```
+
+**Tres avisos, de errores que ya cometimos en este mismo hub:**
+
+- El `href` va **escrito en el HTML**, no inyectado por JavaScript. Si no,
+  Google y la vista previa de WhatsApp no lo ven.
+- La imagen va como `--img` en el `style`, **sin barras invertidas** antes de
+  las comillas (`url('...')`, nunca `url(\'...\')`).
+- El script oculta las tarjetas que sigan en `href="#"`. Si se te queda así, la
+  tarjeta desaparece y parece que no se subió.
+
+**Y una decisión:** con esta pasan a ser **4 tarjetas en una rejilla de 3**, así
+que la cuarta baja sola a una segunda fila. Dos salidas:
+
+- **La que recomiendo:** dejarlas en 4. Se ve bien y no se pierde nada.
+- Si molesta visualmente, quitar «BIM para todos: más allá de las grandes
+  empresas», que es la más genérica de las tres.
+
+**Comprobar después de subirlo:** abrir `/recursos` en el celular y confirmar
+que el artículo nuevo es **el primero** de la sección «Del blog» y que el enlace
+abre el post.
+
+---
+
+## E · Cerrar el círculo con el post que ya está publicado
 
 1. **Responder cada comentario** del post del 4-ago con el enlace del artículo.
 2. **Fijar un comentario**: *"Ampliamos esto en el blog con el paso a paso real
    y una aclaración importante sobre en qué versión de Revit está cada función
    → [enlace]"*.
-3. Quien haya comentado «BIM» o «IA» ya está en el bot: **mandarles el enlace
-   por DM**, que es lo que se les prometió.
-4. **Corregir el guion `jul-listicle-revit-ia`** en `guiones-completos.json`
-   para que no se vuelva a publicar con las 3 funciones como están.
+3. Quien haya comentado «BIM» o «IA» ya está en el bot: **mandarles el DM** con
+   el enlace, que es lo que se les prometió. El texto está en la sección F.
+4. ✅ **El guion `jul-listicle-revit-ia` ya está corregido** en
+   `guiones-completos.json` (11-ago-2026): 8 slides, hook con la versión, un
+   slide nuevo de «lo que NO hace», y las notas de producción explican por qué.
+   No republicar la versión vieja.
+
+---
+
+## F · El DM que se manda a quien comentó
+
+> Va en el workflow del bot, disparado por el comentario «BIM» o «IA» en **esa
+> publicación en concreto**. Dos mensajes: la entrega y, un rato después, la
+> pregunta.
+
+**DM 1 — inmediato:**
+
+```
+¡Hola! 👋 Aquí está lo que te prometí: el paso a paso completo de las
+funciones de IA de Revit 👇
+
+📄 https://funnel.dgdesignmodeling.com/post/ia-en-revit-paso-a-paso-como-activarla
+
+Te aviso de algo antes de que lo abras, porque en el post no cabía:
+Autodesk dice en su propia documentación que HASTA REVIT 2026 no hay
+funciones de IA. Lo que existe llegó con la 2027.
+
+En el artículo está el paso a paso real de lo que sí funciona (con las
+fuentes de Autodesk enlazadas) y también lo que Revit todavía NO hace,
+aunque se diga por ahí.
+
+Y si te sirve, aquí están todas nuestras herramientas gratis en un solo
+sitio — calculadora de zapatas, test de nivel BIM, ebooks y más:
+🎁 https://funnel.dgdesignmodeling.com/recursos
+```
+
+**DM 2 — a las 3-4 horas:**
+
+```
+¿Alcanzaste a leerlo? 😄
+
+Te hago la pregunta que me interesa de verdad: ¿en qué versión de Revit
+estás trabajando?
+
+Te lo pregunto porque es lo que decide qué puedes usar hoy y qué no. Y
+según lo que me digas, te apunto por dónde empezar. 👇
+```
+
+**Reglas del DM** (las de siempre, para que no se rompa nada):
+
+- **Nunca prometer envío por WhatsApp.** Todo va por enlace, en el mismo DM.
+- **No cotizar el Máster.** Si preguntan precio → pasa a una persona.
+- Etiquetar a quien entre por aquí con `lead-blog-ia-revit`, para poder medirlo.
+- La ventana de mensajería de Meta es de **24 horas**: el DM 2 tiene que salir
+  dentro de ese plazo o no llega. Por eso va a las 3-4 h y no al día siguiente.
