@@ -297,7 +297,7 @@ copia una tarjeta existente y se cambian tres cosas:
 
 ```html
 <a class="card" href="https://funnel.dgdesignmodeling.com/post/ia-en-revit-paso-a-paso-como-activarla"
-   style="--img:url('URL_DE_LA_IMAGEN')">
+   style="--img:url('https://d8j0ntlcm91z4.cloudfront.net/user_3DHYHNPN9mWRQrSP8pMrjtnrcPd/hf_20260813_163210_2936e922-71bc-4a1f-b4cf-502f7ed4fa74.png')">
   <span class="foto"></span>
   <span class="txt">
     <strong>La IA de Revit, paso a paso</strong>
@@ -315,7 +315,31 @@ Tres avisos, de los errores que ya cometimos con este hub:
 - El script oculta las tarjetas que sigan en `href="#"`. Si se te queda así,
   la tarjeta desaparece y parece que no se subió.
 
-## C · Las imágenes — las 5 que hacen falta
+## C · Las imágenes — ✅ YA GENERADAS (13-ago-2026)
+
+**Las 4 que se podían generar están hechas y revisadas una por una.** Se
+descargan de estos enlaces y se suben a GHL tal cual — **no hay que retocarlas
+ni pasarlas por Canva**, el texto ya va dentro y está bien escrito.
+
+| # | Qué es | Enlace | Medidas |
+|---|---|---|---|
+| **C1** | **Portada** — «La IA de Revit / paso a paso» | [descargar](https://d8j0ntlcm91z4.cloudfront.net/user_3DHYHNPN9mWRQrSP8pMrjtnrcPd/hf_20260813_163210_2936e922-71bc-4a1f-b4cf-502f7ed4fa74.png) | 1376 × 768 |
+| **C2** | Línea de tiempo con los rótulos y la fuente | [descargar](https://d8j0ntlcm91z4.cloudfront.net/user_3DHYHNPN9mWRQrSP8pMrjtnrcPd/hf_20260813_163403_29606539-c764-4ff3-a820-eb55f56f166a.png) | 1376 × 768 |
+| **C4** | Generative Design — 9 plantas, 1 elegida | [descargar](https://d8j0ntlcm91z4.cloudfront.net/user_3DHYHNPN9mWRQrSP8pMrjtnrcPd/hf_20260813_163210_68fbabe1-a0f7-48d9-93fa-6b2a0b353d7d.png) | 1376 × 768 |
+| **C5** | «Lo que NO hace» — el choque sin resolver | [descargar](https://d8j0ntlcm91z4.cloudfront.net/user_3DHYHNPN9mWRQrSP8pMrjtnrcPd/hf_20260813_163210_6e1a7e32-2d70-46aa-9785-b6829c8711b9.png) | 1376 × 768 |
+
+> ⚠️ **Los enlaces de Higgsfield caducan.** Descargarlas y subirlas a GHL cuanto
+> antes; una vez en `assets.cdn.filesafe.space` ya son permanentes.
+
+**C3 (el panel del Autodesk Assistant) NO está generada, y es a propósito** —
+tiene que ser captura real de pantalla. Ver más abajo.
+
+Todas salieron con la paleta de marca: azul `#001e30`, naranja `#ca7520`, crema
+`#fafaf7`. Se revisaron una por una antes de darlas por buenas.
+
+---
+
+### Si hubiera que regenerar alguna, estos son los prompts
 
 **Paleta obligatoria** (la de la marca, ya usada en el hub y las landings):
 
@@ -466,7 +490,7 @@ En `recursos/index.html`, sección `id="articulos"`, pegar esta tarjeta
 **justo después de `<div class="grid g3">`**, antes de la de SAP2000:
 
 ```html
-      <a class="card" style="--img:url('URL_DE_LA_PORTADA')" data-url="art0" href="https://funnel.dgdesignmodeling.com/post/ia-en-revit-paso-a-paso-como-activarla">
+      <a class="card" style="--img:url('https://d8j0ntlcm91z4.cloudfront.net/user_3DHYHNPN9mWRQrSP8pMrjtnrcPd/hf_20260813_163210_2936e922-71bc-4a1f-b4cf-502f7ed4fa74.png')" data-url="art0" href="https://funnel.dgdesignmodeling.com/post/ia-en-revit-paso-a-paso-como-activarla">
         <span class="foto"></span>
         <span class="cuerpo">
         <span class="tag">BIM + IA</span>
