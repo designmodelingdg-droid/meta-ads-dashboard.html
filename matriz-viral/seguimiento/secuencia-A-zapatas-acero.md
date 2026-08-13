@@ -22,7 +22,7 @@ Del PDF oficial del programa. **Nada de esto está estimado.**
 | **Precio regular** | $499,99 USD |
 | **Precio oferta** | **$199,99 USD** |
 | **Vigencia** | *"por tiempo limitado o hasta llenar todos los cupos disponibles"* |
-| **Enlace de compra** | `https://designmodelingacademy.com/checkout/c/S688d24e3d66a2/single` |
+| **Enlace de compra** | `https://designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero` |
 
 **Los 4 cursos que la componen:**
 1. Análisis y Diseño Simplificado de Estructuras de Acero — **Robot Structural Analysis**
@@ -45,34 +45,33 @@ va por **cupos**, que es lo que dice el material oficial. La regla:
 > dice el número exacto que Dayana confirme. Un contador falso se descubre solo
 > cuando la persona vuelve la semana siguiente y sigue igual.
 
-### 🚨 La página del programa está rota
+### Los enlaces
 
-Dayana confirmó el 11-ago que el dominio canónico es
-`designmodelingacademy.com`, así que los correos usan el **checkout** de ese
-dominio. Pero al comprobar las URL del PDF apareció esto:
+Dominio canónico confirmado por Dayana: **`designmodelingacademy.com`**.
 
-| URL del PDF | Estado |
+| Para qué | URL |
 |---|---|
-| `designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero` | ❌ **302 → google.com.** Redirige a Google |
-| `designmodelingacademy.com/checkout/c/S688d24e3d66a2/single` | ✅ 200. Es la que se usa |
-| `designmodelingacademy.app.clientclub.net/courses/offers/bb3a0903-…` | ✅ Funciona, pero es otro dominio |
+| **Página del programa** (la de todos los correos) | `designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero` |
+| Checkout directo | `designmodelingacademy.com/checkout/c/S688d24e3d66a2/single` |
+| WhatsApp de la oferta | `wa.link/x7qg7c` |
 
-**Esa URL rota está impresa en el PDF que se le manda a los prospectos**, y las
-otras tres de los cursos sueltos (`/es/curso/robot-acero`, `/es/curso/robot-naves`,
-`/es/curso/advance-conexiones`, `/es/curso/modelado-bim`) hay que comprobarlas
-también — probablemente estén igual.
+**Verificado el 11-ago contra la página en vivo:** $499,99 → $199,99, *"60 % de
+descuento en tu compra, un solo pago de $199.99 USD por 4 formaciones
+especializadas"* y *"acceso inmediato y por tiempo ilimitado"*. Cuadra con el
+PDF.
 
-Mientras no se arregle, los correos van directo al checkout. **No es lo ideal**:
-el correo 4 y el 5 mandan a alguien que todavía está decidiendo a una pantalla
-de pago. Cuando la página del programa funcione, se cambian los correos 4 y 5
-a esa y se deja el checkout solo en el 7.
+> **Nota de método, para no repetir el error:** en la primera comprobación esta
+> página devolvió `302 → google.com` y llegué a darla por rota. Era falso: el
+> sitio responde así a peticiones **sin cabecera de navegador**. Con un
+> `User-Agent` normal responde 200. **Regla: antes de declarar una URL caída,
+> repetir la petición con `User-Agent` de navegador.**
 
-### Testimonios
+### Testimonios — resueltos
 
-Los dos archivos que pasaste son videos (`.mp4`, formato historia, jul-2024) y
-un correo no reproduce video. **La página de testimonios tampoco sirve para
-sacar nombres**: se comprobó el 11-ago y son videos incrustados, sin una sola
-línea de texto ni un nombre en el HTML. Ver el correo 6.
+Los archivos `.mp4` que pasó Dayana son de formato historia y un correo no
+reproduce video. Los **testimonios escritos que sí aparecen en la página** (los
+que se ven bajo cada video) son los que van en el correo 6. Están transcritos
+literalmente de la página, sin retocar.
 
 ---
 
@@ -234,7 +233,7 @@ abre todos los meses, así que no es una fecha lo que la cierra — son
 los cupos.
 ```
 
-**Botón:** `Ver el programa y reservar mi cupo` → `https://designmodelingacademy.com/checkout/c/S688d24e3d66a2/single`
+**Botón:** `Ver el programa y reservar mi cupo` → `https://designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero`
 
 **PD:** `Si prefieres que te lo cuente una persona antes de decidir, agenda 30 minutos aquí: https://api.leadconnectorhq.com/widget/booking/bIVuNHNojGEgH3gf6yXe`
 
@@ -273,7 +272,7 @@ rehacer un detalle que no coincidía con el modelo es más que lo que te
 pide el programa.
 ```
 
-**Botón:** `Ver cómo funciona` → `https://designmodelingacademy.com/checkout/c/S688d24e3d66a2/single`
+**Botón:** `Ver cómo funciona` → `https://designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero`
 
 **PD:** `¿Tu duda es otra? Responde y te contesto yo. No es un correo automático sin salida — al responder me llega a mí.`
 
@@ -287,14 +286,27 @@ pide el programa.
 ```
 Hola {{contact.first_name}},
 
-Prefiero que lo escuches de ellos y no de mí. Aquí están hablando
-nuestros alumnos:
+Prefiero que lo escuches de ellos y no de mí:
 
-▶️ [enlace a la página de testimonios]
+⭐⭐⭐⭐⭐
+"Una institución que te brinda todas las herramientas para crecer
+profesionalmente."
+— Edy Díaz
 
-Te aviso de una cosa por honestidad: son testimonios de distintos
-programas nuestros, no todos de la Especialización en Acero. Cuando
-tenga los de acero grabados te los mando.
+⭐⭐⭐⭐⭐
+"Una inversión clave para mantenerse vigente en la ingeniería moderna."
+— Luis Fernández
+
+⭐⭐⭐⭐⭐
+"La mejor decisión que he tomado en mi formación profesional."
+— Albino Piñeiro
+
+Están en video en nuestra página de testimonios, por si quieres verlos
+y oírlos completos.
+
+Te aviso de una cosa por honestidad: son de distintos programas
+nuestros, no todos de la Especialización en Acero. Cuando tenga los de
+acero grabados te los mando.
 
 Y estas son las tres preguntas que más me hacen:
 
@@ -318,32 +330,24 @@ Y estas son las tres preguntas que más me hacen:
 
 **PD:** `¿Tienes una pregunta que no está en la lista? Respóndeme y te contesto yo.`
 
-> ### ⚠️ Sobre los testimonios — hay que decidir una cosa
+> ### Sobre los testimonios
 >
-> Los dos archivos que pasaste (`STORY-Video 2 Testimonios Pauta.mp4` y
-> `STORY-Testimonios6 Video Editado Historias.mp4`) son **videos en formato
-> historia (vertical), de julio de 2024**. Dos problemas:
+> Las tres citas están **transcritas literalmente** de la página de testimonios
+> (`funnel.dgdesignmodeling.com/testimonio-estudiantes-egresados-diplomado`),
+> confirmadas con captura el 11-ago-2026. No se retocaron ni se les cambió una
+> palabra.
 >
-> 1. **Un correo no reproduce video.** Ningún cliente de correo lo hace. Lo
->    máximo es una imagen con botón de play que lleva a otro sitio.
-> 2. **Un enlace de Google Drive en un correo de venta se ve mal** y muchos
->    filtros lo marcan. Además pide permisos.
+> **Van escritas dentro del correo, no como video**, porque ningún cliente de
+> correo reproduce video. El enlace a la página queda para quien quiera verlos
+> y oírlos completos — que es exactamente para lo que sirve esa página.
 >
-> **Tres salidas, de mejor a peor:**
+> **Lo que falta:** las tres son de alumnos de otros programas, no de la
+> Especialización en Acero. El correo lo dice de frente en vez de disimularlo,
+> y eso suma en vez de restar. Cuando haya testimonios de acero, se cambian
+> estos tres y se quita la frase.
 >
-> **A · La que recomiendo** — el correo enlaza a la página de testimonios que
-> ya existe (así está escrito arriba). Cero trabajo, y esa página ya es un
-> activo de marca.
->
-> **B** — subir los dos videos a YouTube (pueden ir "no listados") y enlazarlos
-> con una miniatura. Se ven en cualquier lado y de paso alimentan el canal.
->
-> **C** — si me das **2 o 3 frases escritas** de alumnos reales, con nombre y
-> profesión, las pongo como cita dentro del correo. Es lo que mejor convierte
-> en email, porque se lee sin salir del correo.
->
-> **No voy a transcribir los videos para inventar la cita**: lo que se ponga
-> entre comillas tiene que ser lo que la persona dijo.
+> **Regla:** lo que va entre comillas es lo que la persona dijo. Ni una palabra
+> más.
 
 ---
 
@@ -376,7 +380,7 @@ discurso de ventas: te digo honestamente si te conviene o no.
 **Botón:** `Agendar 30 minutos` → `https://api.leadconnectorhq.com/widget/booking/bIVuNHNojGEgH3gf6yXe`
 
 **Segundo enlace, en texto bajo el botón:**
-`¿Ya lo tienes decidido? Reserva tu cupo aquí → https://designmodelingacademy.com/checkout/c/S688d24e3d66a2/single`
+`¿Ya lo tienes decidido? Reserva tu cupo aquí → https://designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero`
 
 **PD:** `Gracias por leer hasta aquí. Si en algún momento te sirve algo de lo que hacemos, sabes dónde encontrarme.`
 
