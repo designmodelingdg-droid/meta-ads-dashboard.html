@@ -31,6 +31,8 @@ Sin confirmar todavía: TikTok de BIM Pure, y su presencia en Facebook. Se verif
 
 ## Reglas fijas
 
+0. **Toda afirmación técnica sobre una función de software se verifica contra la documentación oficial ANTES de publicar.** Si un guion dice que un programa "hace X", hay que abrir help.autodesk.com (o la documentación del fabricante) y comprobarlo. Si no se puede comprobar, no se publica: se cambia por algo que sí se pueda. Y si la función depende de una versión o de una licencia concreta, **eso se dice en la pieza**.
+   > *De dónde sale esta regla:* el carrusel del 4-ago-2026 prometía 3 funciones de IA en Revit. Al ir a documentar el paso a paso que ese mismo post prometía, una no existía, otra era media verdad y la tercera no funcionaba como se decía — y Autodesk afirma textualmente que hasta Revit 2026 no hay funciones de IA. Vendemos formación técnica: **la credibilidad es el producto**, y cualquier ingeniero desmonta eso en los comentarios. Ver `guiones/blog-ia-revit-paso-a-paso.md`.
 1. **Nunca inventar métricas ni transcripciones.** Lo que no venga del scraper se marca `s/d`. Una matriz con huecos honestos vale más que una llena de suposiciones.
 2. **Solo cuentas y videos públicos.**
 3. **Toda corrida de Apify lleva topes**: `maxItems` (30-50 por cuenta en la recolección inicial, 15 en la rutina semanal) y `maxTotalChargeUsd` ($1 inicial, $0.50 semanal). El costo estimado se muestra y se espera OK antes de correr.
