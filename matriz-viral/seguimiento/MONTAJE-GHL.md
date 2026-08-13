@@ -234,15 +234,16 @@ Marketing → Emails → Statistics, por campaña.
 
 ---
 
-## Lo que hay que llenar antes (no está inventado a propósito)
+## Lo que hay que llenar antes
 
-| Marcador | Dónde | Qué es |
+**Actualizado el 11-ago-2026: los datos de ACERO ya están puestos** (precio,
+duración, modalidad, certificaciones y enlace de compra, del PDF oficial). Solo
+quedan dos decisiones:
+
+| Qué | Dónde | Decisión |
 |---|---|---|
-| `[ENLACE ACERO]` | A4, A5, A6, A7 | URL de la página de venta de ACERO |
-| `[PRECIO ACERO]` | A4 | precio y forma de pago |
-| `[FECHA INICIO ACERO]` | A4, A7 | próxima cohorte (si no hay, usar el **A7 alternativo**) |
-| `[HORAS/SEMANA]` | A5 | carga semanal real (si no se sabe, borrar la línea) |
-| `[TESTIMONIO 1]` `[TESTIMONIO 2]` | A6 | dos casos **reales** de la página de testimonios |
+| **URL buena** | A4, A5, A7 | Se usó la de `clientclub`. En el PDF hay otras dos de `designmodelingacademy.com` — confirmar cuál es la canónica antes de encender |
+| **Testimonios** | A6 | Los archivos son videos verticales; el correo no los reproduce. Por defecto enlaza a la página de testimonios. Ver las 3 opciones en el archivo de la secuencia |
 
 ---
 

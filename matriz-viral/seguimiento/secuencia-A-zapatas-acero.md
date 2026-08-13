@@ -8,9 +8,51 @@ los que entren de ahora en adelante).
 
 **Sale de la secuencia** si: responde · agenda · compra · pide baja.
 
-> **Antes de encender**, reemplazar los 4 marcadores: `[ENLACE ACERO]`,
-> `[PRECIO ACERO]`, `[FECHA INICIO ACERO]`, `[TESTIMONIO 1]` y `[TESTIMONIO 2]`.
-> Sin fecha real de cohorte, usar el **correo 7 alternativo** del final.
+---
+
+## Los datos del producto (confirmados el 11-ago-2026)
+
+Del PDF oficial del programa. **Nada de esto está estimado.**
+
+| | |
+|---|---|
+| **Nombre completo** | Especialización en **Diseño Estructural BIM en Acero para Edificaciones** |
+| **Duración** | 4 meses · 110–130 horas de contenido |
+| **Modalidad** | **100 % asincrónica** — a tu ritmo |
+| **Precio regular** | $499,99 USD |
+| **Precio oferta** | **$199,99 USD** |
+| **Vigencia** | *"por tiempo limitado o hasta llenar todos los cupos disponibles"* |
+| **Enlace de compra** | `https://designmodelingacademy.app.clientclub.net/courses/offers/bb3a0903-2b5a-47c8-bcea-de1ee59c408e` |
+
+**Los 4 cursos que la componen:**
+1. Análisis y Diseño Simplificado de Estructuras de Acero — **Robot Structural Analysis**
+2. Guía Práctica para el Cálculo Tipo Cerchas en Naves Industriales — **Robot**
+3. Teoría y Cálculo de Uniones Metálicas en Edificaciones — **Advance Steel**
+4. Modelado BIM en Hormigón Armado y Acero Estructural — **Revit**
+
+**Lo que se lleva:** 4 certificaciones Autodesk · aval de 120 horas académicas ·
+Certificado Universitario Internacional **DQ** (avalado en Europa) · certificado
+Modeling DG con **código QR de verificación** · acceso permanente · soporte
+técnico de instalación y licencias · comunidad y descuentos.
+
+### La urgencia: cupos, no fecha
+
+El programa **abre todos los meses**, así que no hay fecha de cierre. La urgencia
+va por **cupos**, que es lo que dice el material oficial. La regla:
+
+> **Nunca poner un número de cupos que no sea real.** Se dice "cupos limitados"
+> y "hasta llenar los cupos disponibles" —que es lo que dice la oferta— o se
+> dice el número exacto que Dayana confirme. Un contador falso se descubre solo
+> cuando la persona vuelve la semana siguiente y sigue igual.
+
+### ⚠️ Dos cosas por confirmar
+
+1. En el PDF aparecen **otras dos URL** además de la que me pasaste:
+   `designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero` y
+   un checkout `designmodelingacademy.com/checkout/c/S688d24e3d66a2/single`.
+   **¿Cuál es la buena?** Usé la de `clientclub` porque es la que me diste.
+2. **Testimonios: los dos archivos que pasaste son videos** (`.mp4`, formato
+   historia, de jul-2024). En correo no se pueden reproducir. Ver el correo 6.
 
 ---
 
@@ -135,31 +177,44 @@ una cimentación que "pasó" las verificaciones.
 > Primera vez que se nombra el producto. Con precio (decisión de Dayana:
 > lista propia con consentimiento, y ACERO es decisión rápida).
 
-**Asunto:** Lo que va arriba de la zapata: Especialización en ACERO
-**Preview:** Del modelo al detalle de taller, con criterio.
+**Asunto:** Lo que va arriba de la zapata (y cómo se aprende)
+**Preview:** 4 meses, a tu ritmo, $199,99 en vez de $499,99.
 
 ```
 Hola {{contact.first_name}},
 
-Te vengo hablando de que la cimentación hereda los errores de arriba.
-Esto es lo que hacemos con eso.
+Te vengo diciendo que la cimentación hereda los errores de arriba. Esto
+es lo que hacemos con eso.
 
-La Especialización en ACERO es el programa donde trabajamos la estructura
-metálica completa: del planteamiento al detalle que se construye.
+La Especialización en Diseño Estructural BIM en Acero para Edificaciones
+son 4 cursos que cubren la estructura metálica completa, del
+planteamiento al detalle que se fabrica:
 
-🔩 Modelado y análisis con criterio — no con los valores por defecto
-   del programa
-🔩 Conexiones: cómo definir el tipo ANTES de analizar, y por qué
-   modelar empotrado y construir articulado te descuadra todo
-🔩 Las verificaciones que no puedes saltarte, y en qué orden
-🔩 Del modelo al detalle de taller, sin que se pierda información
-   en el camino
+🔩 Análisis y diseño de estructuras de acero — Robot Structural Analysis
+🔩 Cálculo de cerchas para naves industriales — Robot
+🔩 Teoría y cálculo de uniones metálicas — Advance Steel
+🔩 Modelado BIM en hormigón armado y acero — Revit
 
-Inversión: [PRECIO ACERO]
-Próxima cohorte: [FECHA INICIO ACERO]
+4 meses · 110 a 130 horas · 100% asincrónico, avanzas a tu ritmo.
+
+Y no te llevas solo el conocimiento:
+
+✅ 4 certificaciones Autodesk
+✅ Aval de 120 horas académicas
+✅ Certificado Universitario Internacional DQ, avalado en Europa
+✅ Certificado con código QR de verificación
+✅ Acceso permanente al material — no caduca
+✅ Soporte técnico para instalar el software y activar licencias
+
+Precio regular: $499,99 USD
+Ahora: $199,99 USD
+
+La oferta está vigente hasta llenar los cupos disponibles. El programa
+abre todos los meses, así que no es una fecha lo que la cierra — son
+los cupos.
 ```
 
-**Botón:** `Ver el programa completo` → `[ENLACE ACERO]`
+**Botón:** `Ver el programa y reservar mi cupo` → `https://designmodelingacademy.app.clientclub.net/courses/offers/bb3a0903-2b5a-47c8-bcea-de1ee59c408e`
 
 **PD:** `Si prefieres que te lo cuente una persona antes de decidir, agenda 30 minutos aquí: https://api.leadconnectorhq.com/widget/booking/bIVuNHNojGEgH3gf6yXe`
 
@@ -183,62 +238,92 @@ diseñando estructuras está ocupado diseñando estructuras.
 
 Así que te lo pongo claro, sin adornos:
 
-⏱️ [HORAS/SEMANA] horas por semana. No más.
-🎥 Todas las sesiones quedan grabadas. Si no puedes en vivo, las ves
-   cuando puedas — nadie se queda atrás por un horario.
-🛠️ Los ejercicios son sobre proyectos reales. Lo que haces en clase te
-   sirve el lunes en la oficina, no dentro de un año.
-♾️ El acceso al material no caduca.
+📅 NO hay horario. Es 100% asincrónico. No hay clase a la que llegar
+   tarde ni sesión que se te pase.
+⏱️ Son 110 a 130 horas repartidas en 4 meses. Si lo llevas al ritmo
+   sugerido son unas 7 u 8 horas por semana — pero el ritmo lo pones tú.
+♾️ El acceso es permanente. Si un mes se te complica el trabajo, lo
+   retomas después. No se cierra.
+🛟 Y si el problema es instalar el software o activar licencias, eso lo
+   resolvemos nosotros. No pierdes un fin de semana en eso.
 
 No te voy a decir que es fácil ni que no cuesta tiempo. Cuesta. Lo que
 te digo es que ese tiempo lo recuperas: el rato que hoy se te va en
-rehacer un detalle que no coincidía con el modelo es más que lo que
-te pide el programa.
+rehacer un detalle que no coincidía con el modelo es más que lo que te
+pide el programa.
 ```
 
-**Botón:** `Ver horarios y modalidad` → `[ENLACE ACERO]`
+**Botón:** `Ver cómo funciona` → `https://designmodelingacademy.app.clientclub.net/courses/offers/bb3a0903-2b5a-47c8-bcea-de1ee59c408e`
 
 **PD:** `¿Tu duda es otra? Responde y te contesto yo. No es un correo automático sin salida — al responder me llega a mí.`
-
-> ⚠️ `[HORAS/SEMANA]` — dato de Dayana. Si no se sabe, quitar esa línea entera.
-> No estimar.
 
 ---
 
 ## Correo 6 · Día 12 — Prueba social
 
-**Asunto:** Lo que dicen los que ya la hicieron
-**Preview:** Dos casos, y las preguntas que más me hacen.
+**Asunto:** Lo que dicen los que ya pasaron por aquí
+**Preview:** Los alumnos, y las tres preguntas que más me hacen.
 
 ```
 Hola {{contact.first_name}},
 
-Te dejo dos casos y luego las tres preguntas que más me hacen.
+Prefiero que lo escuches de ellos y no de mí. Aquí están hablando
+nuestros alumnos:
 
-「 [TESTIMONIO 1] 」
+▶️ [enlace a la página de testimonios]
 
-「 [TESTIMONIO 2] 」
+Te aviso de una cosa por honestidad: son testimonios de distintos
+programas nuestros, no todos de la Especialización en Acero. Cuando
+tenga los de acero grabados te los mando.
+
+Y estas son las tres preguntas que más me hacen:
 
 ❓ ¿Necesito saber modelar antes?
-   Base de estructuras sí. Del software nos encargamos nosotros.
+   Base de estructuras sí. Del software nos encargamos nosotros — el
+   programa arranca desde los fundamentos BIM aplicados al acero.
 
 ❓ ¿Sirve si trabajo con hormigón y no con acero?
-   Sirve, y bastante. El criterio de "definir la hipótesis antes de
-   analizar" es el mismo. Y en cuanto te toque una nave, un entrepiso
-   metálico o un refuerzo, lo agradeces.
+   Sirve, y bastante. De hecho uno de los 4 cursos es de modelado BIM
+   en hormigón armado Y acero. Y en cuanto te toque una nave, un
+   entrepiso metálico o un refuerzo, lo agradeces.
 
-❓ ¿Me dan certificado?
-   Sí, y con aval. Puedes ver todas nuestras acreditaciones aquí:
-   https://funnel.dgdesignmodeling.com/design-modeling-acreditaciones
+❓ ¿El certificado sirve de algo o es un PDF más?
+   4 certificaciones Autodesk, aval de 120 horas académicas, y un
+   Certificado Universitario Internacional DQ avalado en Europa. El
+   nuestro lleva código QR de verificación, para que quien te contrate
+   pueda comprobarlo.
 ```
 
-**Botón:** `Ver más testimonios` → `https://funnel.dgdesignmodeling.com/testimonio-estudiantes-egresados-diplomado`
+**Botón:** `Ver los testimonios` → `https://funnel.dgdesignmodeling.com/testimonio-estudiantes-egresados-diplomado`
 
-**PD:** `¿Tienes una pregunta que no está en la lista? Respóndeme.`
+**PD:** `¿Tienes una pregunta que no está en la lista? Respóndeme y te contesto yo.`
 
-> ⚠️ `[TESTIMONIO 1]` y `[TESTIMONIO 2]` — dos casos **reales** de la página de
-> testimonios. Preferir alumnos de estructuras/acero. **No inventar.** Si no
-> hay de acero, usar dos generales y decir de qué programa son.
+> ### ⚠️ Sobre los testimonios — hay que decidir una cosa
+>
+> Los dos archivos que pasaste (`STORY-Video 2 Testimonios Pauta.mp4` y
+> `STORY-Testimonios6 Video Editado Historias.mp4`) son **videos en formato
+> historia (vertical), de julio de 2024**. Dos problemas:
+>
+> 1. **Un correo no reproduce video.** Ningún cliente de correo lo hace. Lo
+>    máximo es una imagen con botón de play que lleva a otro sitio.
+> 2. **Un enlace de Google Drive en un correo de venta se ve mal** y muchos
+>    filtros lo marcan. Además pide permisos.
+>
+> **Tres salidas, de mejor a peor:**
+>
+> **A · La que recomiendo** — el correo enlaza a la página de testimonios que
+> ya existe (así está escrito arriba). Cero trabajo, y esa página ya es un
+> activo de marca.
+>
+> **B** — subir los dos videos a YouTube (pueden ir "no listados") y enlazarlos
+> con una miniatura. Se ven en cualquier lado y de paso alimentan el canal.
+>
+> **C** — si me das **2 o 3 frases escritas** de alumnos reales, con nombre y
+> profesión, las pongo como cita dentro del correo. Es lo que mejor convierte
+> en email, porque se lee sin salir del correo.
+>
+> **No voy a transcribir los videos para inventar la cita**: lo que se ponga
+> entre comillas tiene que ser lo que la persona dijo.
 
 ---
 
@@ -253,9 +338,15 @@ Hola {{contact.first_name}},
 Este es el último correo de esta serie — de aquí en adelante solo te
 llega el contenido de siempre, sin insistir con esto.
 
-Antes de cerrarlo: la cohorte de la Especialización en ACERO arranca el
-[FECHA INICIO ACERO]. Si lo estabas pensando, este es el momento de
-decidir; si no es ahora, no pasa nada y la calculadora sigue siendo tuya.
+Antes de cerrarlo, te lo digo tal cual es: la Especialización en Acero
+abre todos los meses, así que no te voy a inventar una fecha límite que
+no existe. Lo que sí es cierto es que los cupos de cada apertura son
+limitados, y el precio de $199,99 (en vez de $499,99) está atado a que
+queden cupos disponibles.
+
+Si lo estabas pensando, es mejor decidirlo ahora que en la próxima
+apertura. Y si no es tu momento, no pasa nada: la calculadora sigue
+siendo tuya y aquí estaré.
 
 Y si lo que quieres es hablarlo con alguien antes —qué necesitas, si te
 sirve, por dónde empezar— agenda 30 minutos. Sin compromiso y sin
@@ -264,29 +355,22 @@ discurso de ventas: te digo honestamente si te conviene o no.
 
 **Botón:** `Agendar 30 minutos` → `https://api.leadconnectorhq.com/widget/booking/bIVuNHNojGEgH3gf6yXe`
 
+**Segundo enlace, en texto bajo el botón:**
+`¿Ya lo tienes decidido? Reserva tu cupo aquí → https://designmodelingacademy.app.clientclub.net/courses/offers/bb3a0903-2b5a-47c8-bcea-de1ee59c408e`
+
 **PD:** `Gracias por leer hasta aquí. Si en algún momento te sirve algo de lo que hacemos, sabes dónde encontrarme.`
 
 ---
 
-### Correo 7 ALTERNATIVO — si no hay fecha de cohorte
+## La regla de la urgencia por cupos
 
-> Se usa este cuando `[FECHA INICIO ACERO]` no existe. **No se inventa una
-> fecha para crear urgencia.**
+El programa abre todos los meses. Por eso **no se usa fecha**, se usa cupo. Y
+hay una sola regla, que es la que evita que esto se caiga:
 
-**Asunto:** Cierro el tema (y te dejo la puerta abierta)
-
-```
-Hola {{contact.first_name}},
-
-Este es el último correo de esta serie — de aquí en adelante solo te
-llega el contenido de siempre.
-
-Te dejo lo único que creo que vale la pena: si algo de lo que te conté
-estas dos semanas te movió algo, agenda 30 minutos conmigo. Me cuentas
-en qué estás trabajando y te digo honestamente qué te conviene, aunque
-la respuesta sea "por ahora, nada".
-
-Prefiero eso a que compres algo que no necesitas.
-```
-
-**Botón:** `Agendar 30 minutos` → `https://api.leadconnectorhq.com/widget/booking/bIVuNHNojGEgH3gf6yXe`
+- ✅ **"Hasta llenar los cupos disponibles"** — es literalmente lo que dice el
+  material oficial de la oferta.
+- ✅ **"Los cupos de cada apertura son limitados"** — cierto y verificable.
+- ✅ Un número **real** que Dayana confirme ("quedan 8 cupos").
+- ❌ **Nunca un contador falso** ni "quedan 3" si no es verdad. Esta gente
+  vuelve al mes siguiente, ve lo mismo, y ahí se pierde la credibilidad — que
+  es justo lo único que vende un programa de $199,99 por internet.

@@ -24,6 +24,9 @@ estado: 🔴 pendiente · 🟡 en curso · 🟢 hecho · ⚫ descartada (con el 
 | 5 | **Definir el segundo lead magnet del Mié 13-ago** (checklist de coordinación, plantilla Revit, otra calculadora) | Calendario agosto | Dayana | 🔴 |
 | 6 | **Verificar que la membresía se otorga sola** en un registro real del test. Nunca se ha visto el trigger dispararse por sí mismo | Lanzamiento test | Dayana | 🔴 |
 | 7 | **Imagen propia para el artículo de la calculadora** en el hub. El archivo que venía con ese nombre resultó ser de otra pieza | Hub de recursos | Diseño | 🔴 |
+| 8 | 🚨 **El post del 4-ago promete 3 funciones de IA en Revit que no existen** como se describen. Autodesk: *"hasta Revit 2026 no hay funciones de IA"*. Publicar el artículo del blog ya escrito, responder los comentarios con el enlace y corregir el guion en la matriz | Verificación 11-ago | Dayana / contenido | 🔴 |
+| 9 | **Confirmar cuál es la URL buena de ACERO.** En el PDF hay dos de `designmodelingacademy.com` además de la de `clientclub` | Datos ACERO 11-ago | Dayana | 🔴 |
+| 10 | **Testimonios en formato usable para correo.** Los que hay son videos verticales de historia; un correo no reproduce video | Datos ACERO 11-ago | Dayana | 🔴 |
 
 ---
 
@@ -62,6 +65,8 @@ Estas ya no se discuten cada semana. Salieron de medir.
 | **Nunca prometer entrega por WhatsApp** en un lead magnet | No existe ese workflow. Se entrega por enlace |
 | **Una herramienta gratis no es certificación ni diploma.** Se dice explícito | — |
 | **Nunca inventar métricas.** Lo que no viene del dato se marca `s/d` | — |
+| 🆕 **Toda afirmación técnica sobre una función de software se verifica contra la documentación oficial antes de publicarse** | El carrusel del 4-ago prometía 3 funciones de IA en Revit: una no existe, otra es la mitad falsa y la tercera no funciona como se decía. Vendemos formación técnica — la credibilidad *es* el producto, y eso se lo desmonta cualquier ingeniero en los comentarios |
+| 🆕 **La urgencia se construye con lo que es verdad.** Si no hay fecha de cierre, se usan cupos; y nunca un número inventado | ACERO abre todos los meses. Un contador falso se descubre solo cuando la persona vuelve la semana siguiente |
 
 ---
 

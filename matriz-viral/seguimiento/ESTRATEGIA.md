@@ -169,20 +169,24 @@ Con el skill `seguimiento-leads`, una vez al mes:
 
 ---
 
-## 8. Lo que falta para encender (datos de Dayana)
+## 8. Estado de los datos (actualizado 11-ago-2026)
 
-No los inventé. Están como marcadores en los archivos de secuencia:
+**Ya está todo lo de ACERO** — sacado del PDF oficial del programa, nada
+estimado. Nombre real: *Especialización en Diseño Estructural BIM en Acero para
+Edificaciones* · 4 meses · 110–130 h · 100 % asincrónica · **$499,99 → $199,99
+USD** · 4 certificaciones Autodesk + aval de 120 h + certificado universitario
+DQ (Europa) · enlace de compra en `clientclub`.
 
-| Marcador | Qué es | Dónde aparece |
+**La urgencia va por cupos, no por fecha:** el programa abre todos los meses,
+así que no hay fecha de cierre. Se usa lo que dice el material oficial —
+*"hasta llenar los cupos disponibles"*— y **nunca un número inventado**.
+
+Quedan dos cosas por resolver:
+
+| Qué | Dónde | Estado |
 |---|---|---|
-| `[ENLACE ACERO]` | URL de la página de venta de la Especialización en ACERO | Secuencia A, correos 4, 5, 6, 7 |
-| `[PRECIO ACERO]` | precio y forma de pago | Secuencia A, correo 4 |
-| `[FECHA INICIO ACERO]` | cuándo arranca la próxima cohorte | Secuencia A, correos 4 y 7 |
-| `[TESTIMONIO 1/2]` | dos casos reales de alumnos de acero | Secuencia A, correo 6 |
-
-Si no hay cohorte con fecha, el correo 7 se cambia por el cierre de llamada
-(está escrito el reemplazo en el propio archivo). Sin fecha real **no se
-inventa urgencia**.
+| **Qué URL es la buena** | correos 4, 5, 7 de la A | En el PDF hay otras dos (`designmodelingacademy.com/...`). Usé la de `clientclub`, que es la que pasó Dayana |
+| **Testimonios** | correo 6 de la A | Los dos archivos son **videos** de historia; un correo no reproduce video. Hay 3 salidas propuestas en el propio archivo |
 
 ---
 
