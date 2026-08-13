@@ -126,6 +126,28 @@ If/Else:  Email  is not empty
    → SÍ  →  continúa
 ```
 
+**Filtro 1b — ¿vino del bot o del formulario?**
+
+Esto evita que la persona reciba el DM del bot y el correo diciendo lo mismo en
+el mismo minuto. Es la diferencia entre un seguimiento y un acoso.
+
+```
+If/Else:  Opportunity Source  contains  "IG/FB"
+   → SÍ (vino del bot)         →  WAIT 2 días  →  usar el correo A1-bot
+   → NO (vino del formulario)  →  sin espera   →  usar el correo A1-web
+```
+
+**Por qué 2 días y no 10:** el bot ya hace su cadena de 3 DMs (inmediato, +3-4 h
+y +1 día). A los 2 días esa cadena terminó y la ventana de 24 h de Meta está
+cerrada — el correo entra justo cuando el bot se quedó sin poder hablar.
+
+A los 10 días la persona ya no se acuerda de nosotros. Toda la ventaja de un
+lead de lead magnet es que **acaba de levantar la mano**; esperar diez días es
+tirar eso. Si aun así se prefieren los 10, se cambia el Wait y ya — pero queda
+dicho que se va a notar en la apertura.
+
+---
+
 **Filtro 2 — ¿es de zapatas?** (con OR, para cubrir las tres formas de entrar)
 ```
 If/Else, cualquiera de estas:

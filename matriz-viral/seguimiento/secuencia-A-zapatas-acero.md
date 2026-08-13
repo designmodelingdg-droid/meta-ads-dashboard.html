@@ -75,10 +75,64 @@ literalmente de la página, sin retocar.
 
 ---
 
-## Correo 1 · Día 0 — La entrega
+## Correo 1 — La entrega · **hay DOS versiones**
 
 > **Esto hoy no existe.** La persona descarga y no recibe nada. Este correo es
-> el que más se va a abrir de toda la secuencia: llega cuando acaba de pedirlo.
+> el que más se va a abrir de toda la secuencia.
+
+**Cuál se manda depende de por dónde entró la persona.** El workflow lo decide
+solo (`MONTAJE-GHL.md`, filtro 1b):
+
+| Entró por | Cuándo sale | Versión |
+|---|---|---|
+| **Formulario web** (`Calculadora de Zapatas - Registro`) | **inmediato** | **A1-web** ↓ |
+| **Bot de IG/FB** (`Bot Zapatas IG/FB`) | **a los 2 días** | **A1-bot** ↓ |
+
+**Por qué separados:** al que entra por el bot, el bot ya le mandó el enlace por
+DM en ese mismo minuto. Si además le llega un correo diciendo lo mismo, no es
+seguimiento, es acoso — y es la forma más rápida de ganarse un "marcar como
+spam" el primer día. A los 2 días la cadena de 3 DMs del bot ya terminó y la
+ventana de 24 h de Meta está cerrada: **el correo entra justo cuando el bot se
+quedó mudo.**
+
+---
+
+### A1-bot · a los 2 días, para quien llegó por Instagram/Facebook
+
+**Asunto:** Por si se te perdió entre los mensajes
+**Preview:** Te dejo la calculadora por aquí, que no se pierde.
+
+```
+Hola {{contact.first_name}},
+
+Hace un par de días te mandé la calculadora de zapatas por mensaje
+directo. Los DM se entierran rápido, así que te la dejo por aquí — este
+correo no se pierde y el enlace no caduca.
+```
+
+**Botón:** `Abrir mi calculadora` → `https://funnel.dgdesignmodeling.com/calculadora-zapatas`
+
+```
+Hace en 2 minutos lo que a mano toma media hora:
+
+✅ Cargas y esfuerzo admisible del suelo
+✅ Dimensiones sugeridas en planta (T × S) y altura h
+✅ Verificación de cortante y punzonamiento, en vivo
+✅ Acero: varillas, diámetro y espaciamiento en las dos direcciones
+✅ Esquema de planta y corte, dibujado solo
+
+Es la misma metodología de nuestro curso de Diseño de Cimentaciones.
+
+Una aclaración honesta: es una herramienta de PREDIMENSIONAMIENTO. Te da
+el punto de partida correcto en segundos, pero el diseño definitivo lo
+revisa y lo firma un ingeniero responsable.
+```
+
+**PD:** `¿La alcanzaste a probar? Responde y cuéntame qué te faltó — leo todas las respuestas.`
+
+---
+
+### A1-web · inmediato, para quien llenó el formulario
 
 **Asunto:** Aquí está tu calculadora de zapatas 🎁
 **Preview:** Cargas, acero, verificaciones y esquema. Desde el celular.
