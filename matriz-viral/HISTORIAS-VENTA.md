@@ -116,7 +116,7 @@ Rotan cada jueves. Ninguna dice un precio. Ninguna dice «inscríbete».
 | 1 | Tú a cámara, sin producción | «Me escribieron esto la semana pasada:» | ninguno |
 | 2 | Captura real de un DM (tapando el nombre) | «*Me interesa, pero no tengo tiempo*» | ninguno |
 | 3 | Texto sobre azul | «Es 100 % asincrónico. No hay horario al que llegar tarde. El acceso no caduca.» | **ENCUESTA:** «¿Ese era tu freno?» → Sí / El mío es otro |
-| 4 | Tú a cámara | «Si tu freno es otro, dímelo. Te contesto yo.» | **CAJA DE PREGUNTAS:** «¿Qué te frena?» |
+| 4 | Tú a cámara | «Si quieres el temario completo, respóndeme con la palabra ACERO.» | **«Responde con ACERO»** → lo agarra el bot |
 
 **El oro está en «El mío es otro» y en la caja.** Cada respuesta es una objeción
 real dicha por un comprador potencial — material para el contenido del mes que
@@ -133,7 +133,7 @@ viene y una conversación abierta hoy.
 | 1 | Texto sobre azul | «Llevas 3 años modelando bien. Y sigues esperando a que te digan qué modelar.» | ninguno |
 | 2 | Los 4 niveles en pantalla | «Modelador → Coordinador → BIM Manager → BIM + IA» | **QUIZ:** «¿Dónde crees que estás?» (sin respuesta correcta) |
 | 3 | Texto sobre azul | «El salto que más cuesta es del 1 al 2. Y no es de software: es dejar de ejecutar y empezar a decidir.» | ninguno |
-| 4 | Captura del test | «Hay un test de 20 preguntas que te lo dice sin adornos.» | **ENLACE** al test de nivel |
+| 4 | Captura del test | «Hay un test de 20 preguntas que te lo dice sin adornos.» | **ENLACE** al test *(cero trabajo)* + «o responde NIVEL» |
 
 **Cierra al test, no al Máster.** Quien hace el test entra a la secuencia B de
 correo y se vende solo. La historia no tiene que cerrar la venta.
@@ -148,17 +148,100 @@ correo y se vende solo. La historia no tiene que cerrar la venta.
 | # | Qué se ve | Texto en pantalla | Sticker |
 |---|---|---|---|
 | 1 | Los 4 logos: Robot · Advance Steel · Revit · certificaciones | «4 programas. 4 meses. A tu ritmo.» | ninguno |
-| 2 | Texto sobre azul | «Abre otra vez este mes. Los cupos son los de siempre.» | **CUENTA REGRESIVA** a la apertura |
-| 3 | Tú a cámara | «Si quieres que te avise cuando abra, activa el recordatorio o escríbeme.» | **CAJA DE PREGUNTAS:** «¿Te aviso?» |
+| 2 | Texto grande sobre azul, el número enorme | «Esta cohorte son 10 cupos. Quedan 8.» | **CUENTA REGRESIVA** al cierre de inscripciones |
+| 3 | Tú a cámara | «Si quieres el detalle, respóndeme esta historia con la palabra CUPO.» | **«Responde con CUPO»** → lo agarra el bot |
 
-> ⚠️ **Regla dura:** solo se publica si de verdad abre cohorte ese mes, y el
-> número de cupos que se diga tiene que ser real. Esta gente vuelve al mes
-> siguiente. Un contador falso se descubre solo, y con él se cae la
-> credibilidad — que es lo único que vende un programa por internet.
+**El dato es real y por eso funciona:** 10 cupos por cohorte, 2 vendidos, quedan
+8 (confirmado por Dayana el 14-ago-2026). Se actualiza el número cada vez que se
+publica.
+
+> ⚠️ **Las dos reglas duras de esta secuencia:**
+>
+> 1. **El número tiene que ser el de verdad.** Si quedan 8, se dice 8. Esta
+>    gente vuelve al mes siguiente: un contador falso se descubre solo, y con él
+>    se cae la credibilidad — que es lo único que vende un programa de $199 por
+>    internet.
+> 2. **La cuenta regresiva va al cierre de inscripciones de ESTA cohorte, no a
+>    la apertura.** La cohorte abre todos los meses, así que «abre pronto» no
+>    aprieta nada. Lo que aprieta es que estos 8 cupos se acaban.
 
 ---
 
-## 4. Los DM — esto es lo que faltaba de verdad
+## 3b. 🔑 «No me da tiempo de responder» — el arreglo de fondo
+
+Dayana, 14-ago: *«chévere por DM, pero si no me da tiempo de estar respondiendo
+en las historias nos jodemos».*
+
+**Tiene toda la razón, y es el punto que hunde la estrategia entera.** Un plan
+que exige responder a mano, todos los días, a media tarde, se hace tres días y
+se abandona. Y entonces las historias vuelven a ser solo alcance.
+
+### Por qué pasa: no todos los stickers se pueden automatizar
+
+| Sticker | ¿Dónde cae la respuesta? | ¿Se puede automatizar? |
+|---|---|---|
+| **Encuesta** | Solo en el panel de la historia | ❌ **No.** Hay que mirarla y escribir a mano |
+| **Quiz** | Solo en el panel | ❌ **No** |
+| **Deslizador** | Solo en el panel | ❌ **No** |
+| **Caja de preguntas** | Solo en el panel | ❌ **No** |
+| **Responder a la historia** (la persona escribe) | **Llega a la bandeja de DM** | ✅ **SÍ — el bot lo agarra** |
+| **Enlace** | No hay respuesta, va directo | ✅ Cero trabajo |
+| **Cuenta regresiva** | Avisa sola | ✅ Cero trabajo |
+
+Ahí está el problema: **la guía apoya toda la conversión en los cuatro stickers
+que NO se pueden automatizar.** Por eso no da tiempo. No es falta de disciplina,
+es un diseño que pide trabajo manual todos los días.
+
+### El arreglo: mover el CTA al mecanismo que sí se automatiza
+
+Es exactamente lo que ya funciona en el feed. Ahí el CTA no es un sticker: es
+**«comenta ACERO»**, y el bot lo recoge. Está probado — comentario → DM →
+registro en el CRM **en 3 minutos**, dos veces medido.
+
+En historias el equivalente es:
+
+> ### 📌 **«Responde esta historia con la palabra ACERO y te lo mando»**
+
+La persona escribe. Eso **cae en la bandeja de mensajes**. El bot lo lee, detecta
+la palabra y dispara la secuencia sola. **Tú no tocas nada.**
+
+### La regla nueva
+
+> **El sticker que convierte tiene que ser automatizable.**
+> Encuestas, quiz y deslizadores se quedan —son buenísimos para alcance y para
+> que el algoritmo empuje la historia— pero **dejan de ser el paso de
+> conversión**. Nadie tiene la obligación de responderlos uno por uno.
+> El frame que convierte pide **responder con una palabra**.
+
+### Cómo queda cada secuencia
+
+| Frames | Función | Sticker | Trabajo tuyo |
+|---|---|---|---|
+| 1 al 3 | valor, enganche, alcance | encuesta / quiz | **ninguno** — se miran cuando haya tiempo |
+| **último** | **conversión** | **«responde con [PALABRA]»** | **ninguno — lo agarra el bot** |
+
+Y si algún día tienes tiempo y quieres escribirle a mano a los que votaron
+«equivocado», perfecto: es un extra, no el motor.
+
+### Las palabras por producto
+
+| Palabra | A dónde lleva | Estado del bot |
+|---|---|---|
+| `ACERO` | Especialización en Acero | ya existe en el feed |
+| `BIM` / `IA` | Máster | ya existe |
+| `ZAPATA` | Calculadora | ya existe y probado |
+| `NIVEL` | Test de Nivel BIM | **hay que crearlo** |
+| `CUPO` | Aviso de apertura de ACERO | **hay que crearlo** |
+
+**Lo que hay que montar:** que el workflow del bot dispare **también con
+mensajes directos**, no solo con comentarios. En GoHighLevel es el mismo
+workflow con un disparador más (`Instagram DM` / `Facebook Message` → contiene
+la palabra). Hay que confirmarlo en la cuenta antes de anunciarlo en una
+historia — **si el bot no está montado, la historia promete algo que no llega.**
+
+---
+
+## 4. Los DM — para cuando sí respondas a mano
 
 La guía dice «les mandas DM» quince veces y no trae ninguno escrito. Aquí están,
 **por tipo de sticker**. Se copian, se les cambia el nombre, y se mandan.

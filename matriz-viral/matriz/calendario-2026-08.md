@@ -31,6 +31,25 @@ En LinkedIn: pregunta abierta o DM (nunca "comenta la palabra"). En TikTok: "lin
 > - **Las piezas de evento no llevan CTA de producto** y se miden por alcance, no por comentarios. El Civil 3D hizo 5,469 views con 0 comentarios y 0 guardados: es presencia, no conversación.
 > - **No reciclar el titular del anuncio como hook del post.** La pieza del 9-ago abrió con «¿En qué nivel BIM estás realmente?» —el titular de la gráfica— y se quedó en 809 views y 0 comentarios. Quien ya vio el anuncio no encuentra nada nuevo.
 
+> **Confirmado el 14-ago — las historias no tenían dónde vender.** Auditadas
+> contra la guía operativa: **0 de 7 días** de la semana tipo eran de venta, y el
+> sábado lo prohibía expresamente. Además ACERO era solo **3 de 15 secuencias**
+> (20 %) siendo el producto de mejor CPL.
+>
+> Dos reglas nuevas, en `matriz-viral/HISTORIAS-VENTA.md`:
+> - **El jueves es slot fijo de venta** en historias. Tres secuencias que rotan:
+>   objeción de ACERO, espejo del Máster, y cupos con cuenta regresiva.
+> - **El sticker que convierte tiene que ser automatizable.** Encuestas y quiz
+>   se quedan para alcance, pero el frame de cierre pide *«responde con
+>   [PALABRA]»* — eso cae en la bandeja de mensajes y lo agarra el bot. Los
+>   stickers de encuesta/quiz/caja solo viven en el panel de la historia y
+>   exigen escribir a mano uno por uno: es lo que hacía inviable la estrategia.
+>
+> **Urgencia con lo que es verdad:** la cohorte de ACERO abre todos los meses,
+> así que no hay fecha que apriete. Lo que aprieta son los cupos — **10 por
+> cohorte, 2 vendidos, quedan 8** (14-ago). El número se actualiza cada vez que
+> se publica; nunca se inventa.
+
 **Leyenda:** 🎯 núcleo BIM/IA · 🔩 ACERO · 🎁 lead magnet · 📝 blog · 👥 comunidad · 🏛️ empresa/novedades · *(guion)* = guion listo.
 
 📄 **Versión en Word para el equipo:** `matriz-viral/entregables/Matriz-Contenido-Agosto-2026-DMA.docx`
