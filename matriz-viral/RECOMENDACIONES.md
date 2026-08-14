@@ -28,6 +28,9 @@ estado: 🔴 pendiente · 🟡 en curso · 🟢 hecho · ⚫ descartada (con el 
 | 9 | ~~Confirmar la URL de ACERO~~ · Confirmada: `designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero`. Verificada en vivo, precio y oferta cuadran con el PDF | Datos ACERO 11-ago | — | 🟢 |
 | 10 | ~~Testimonios usables en correo~~ · Resuelto: las 3 citas escritas de la página (Edy Díaz, Luis Fernández, Albino Piñeiro) van dentro del correo 6 | Datos ACERO 11-ago | — | 🟢 |
 | 11 | **Grabar testimonios de alumnos de ACERO.** Los tres que hay son de otros programas; el correo lo dice de frente, pero uno de acero convertiría mucho más | Secuencia A 11-ago | Dayana | 🔴 |
+| 12 | **Las historias no tienen ni un slot de venta** (0 de 7 días) y los 15 «mándales DM» de la guía no tienen ni un guion escrito. Resuelto en `HISTORIAS-VENTA.md`: jueves de venta + 5 guiones de DM | Auditoría historias 14-ago | Dayana | 🔴 |
+| 13 | **ACERO es solo el 20 % de las historias** (3 de 15) siendo el producto de mejor CPL. Subir a 6 | Auditoría historias 14-ago | Dayana | 🔴 |
+| 14 | **Decidir si ACERO abre cohorte este mes** y con cuántos cupos reales. Sin ese dato, la secuencia de cuenta regresiva no se publica | Auditoría historias 14-ago | Dayana | 🔴 |
 
 ---
 
@@ -66,12 +69,21 @@ Estas ya no se discuten cada semana. Salieron de medir.
 | **Nunca prometer entrega por WhatsApp** en un lead magnet | No existe ese workflow. Se entrega por enlace |
 | **Una herramienta gratis no es certificación ni diploma.** Se dice explícito | — |
 | **Nunca inventar métricas.** Lo que no viene del dato se marca `s/d` | — |
+| 🆕 **Un «mándale DM» sin guion escrito no se ejecuta.** Si una estrategia depende de un mensaje manual, ese mensaje va escrito | La guía de historias dice «les mandas DM» 15 veces y no trae ninguno. Es el mismo hueco que tenían los lead magnets: la conversión no estaba rota, estaba sin construir |
 | 🆕 **Toda afirmación técnica sobre una función de software se verifica contra la documentación oficial antes de publicarse** | El carrusel del 4-ago prometía 3 funciones de IA en Revit: una no existe, otra es la mitad falsa y la tercera no funciona como se decía. Vendemos formación técnica — la credibilidad *es* el producto, y eso se lo desmonta cualquier ingeniero en los comentarios |
 | 🆕 **La urgencia se construye con lo que es verdad.** Si no hay fecha de cierre, se usan cupos; y nunca un número inventado | ACERO abre todos los meses. Un contador falso se descubre solo cuando la persona vuelve la semana siguiente |
 
 ---
 
 ## Historial
+
+### 14-ago-2026 · Auditoría de las historias
+Dayana señaló que las historias no venden. La verdad es mixta: el diseño **sí**
+enruta la venta al DM y eso está bien, pero **la semana tipo no tiene ni un slot
+de venta** (0 de 7, y el sábado lo prohíbe expresamente), **ACERO es solo el
+20 %** de las secuencias siendo el producto de mejor CPL, y los **15 «mándales
+DM» no tienen un solo guion escrito**. Se crea `HISTORIAS-VENTA.md` con el
+jueves de venta, 3 secuencias y los 5 guiones de DM. → recomendaciones #12-14.
 
 ### 10-ago-2026 · Estrategia de seguimiento de leads
 Se detectó que **2.300 contactos de lead magnets no reciben ningún tratamiento**:
