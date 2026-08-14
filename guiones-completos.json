@@ -1,7 +1,7 @@
 {
-  "generado": "2026-07-29",
-  "nota": "Contenido COMPLETO de cada pieza (hook, slides palabra por palabra con su dirección visual, guion de reel segundo a segundo, caption, CTA por red y copy de pauta). La app debe leer ESTE archivo para generar el post correcto sin inventar.",
-  "total": 41,
+  "generado": "2026-08-14",
+  "nota": "Contenido COMPLETO de cada pieza (hook, slides palabra por palabra con su dirección visual, guion de reel segundo a segundo, caption, CTA por red y copy de pauta). La app debe leer ESTE archivo para generar el post correcto sin inventar. Incluye las 3 secuencias de VENTA de historias (jueves), cuyo frame de cierre pide responder con una palabra clave para que lo recoja el bot en vez de depender de responder a mano.",
+  "total": 44,
   "piezas": [
     {
       "id": "jul-mito-render-ia",
@@ -1987,6 +1987,129 @@
           "texto": "Este es el minuto que más te va a servir.",
           "sticker": "ENLACE al video.",
           "seguimiento": "—"
+        }
+      ]
+    },
+    {
+      "id": "venta-acero-objecion",
+      "titulo": "VENTA A · La objeción (ACERO)",
+      "formato": "historia",
+      "red_principal": "instagram",
+      "eje": "ACERO",
+      "pilar": "Venta",
+      "hook": "Me escribieron esto la semana pasada:",
+      "cta_por_red": {
+        "instagram": "Responde esta historia con la palabra ACERO.",
+        "tiktok": "Link en bio.",
+        "linkedin": "¿Cuál es tu freno real para especializarte?",
+        "youtube": "—",
+        "meta-ads": "—"
+      },
+      "notas_produccion": "Slot de venta del jueves. Rota con venta-master-espejo y venta-acero-cupos. El sticker que convierte tiene que ser AUTOMATIZABLE. Encuestas y quiz se quedan para alcance, pero el frame de cierre pide «responde con [PALABRA]»: eso cae en la bandeja de mensajes y lo agarra el bot, igual que un comentario en el feed. Los stickers de encuesta/quiz/caja solo viven en el panel de la historia y exigen escribir a mano uno por uno — es lo que hacia inviable la estrategia. Requiere el disparador de DM montado en el workflow del bot.",
+      "historias": [
+        {
+          "n": 1,
+          "visual": "Tú a cámara, sin producción.",
+          "texto": "Me escribieron esto la semana pasada:",
+          "sticker": "Ninguno."
+        },
+        {
+          "n": 2,
+          "visual": "Captura real de un DM, tapando el nombre.",
+          "texto": "«Me interesa, pero no tengo tiempo»",
+          "sticker": "Ninguno."
+        },
+        {
+          "n": 3,
+          "visual": "Texto sobre azul.",
+          "texto": "Es 100% asincrónico. No hay horario al que llegar tarde. El acceso no caduca.",
+          "sticker": "ENCUESTA: «¿Ese era tu freno?» → Sí / El mío es otro. (Solo alcance: NO hay que responderla.)"
+        },
+        {
+          "n": 4,
+          "visual": "Tú a cámara.",
+          "texto": "Si quieres el temario completo, respóndeme con la palabra ACERO.",
+          "sticker": "RESPONDER CON PALABRA: «ACERO» → lo agarra el bot. Este es el frame que convierte."
+        }
+      ]
+    },
+    {
+      "id": "venta-master-espejo",
+      "titulo": "VENTA B · El espejo (Máster)",
+      "formato": "historia",
+      "red_principal": "instagram",
+      "eje": "NUCLEO-IA",
+      "pilar": "Venta",
+      "hook": "Llevas 3 años modelando bien. Y sigues esperando a que te digan qué modelar.",
+      "cta_por_red": {
+        "instagram": "Enlace al Test de Nivel, o responde NIVEL.",
+        "tiktok": "Link en bio.",
+        "linkedin": "¿En qué peldaño de la ruta BIM te ubicas?",
+        "youtube": "—",
+        "meta-ads": "—"
+      },
+      "notas_produccion": "Cierra al TEST, no al Máster: quien hace el test entra a la secuencia de correo y se vende solo. El precio del Máster NO va en historia ni en DM — siempre llamada. El sticker que convierte tiene que ser AUTOMATIZABLE. Encuestas y quiz se quedan para alcance, pero el frame de cierre pide «responde con [PALABRA]»: eso cae en la bandeja de mensajes y lo agarra el bot, igual que un comentario en el feed. Los stickers de encuesta/quiz/caja solo viven en el panel de la historia y exigen escribir a mano uno por uno — es lo que hacia inviable la estrategia. Requiere el disparador de DM montado en el workflow del bot.",
+      "historias": [
+        {
+          "n": 1,
+          "visual": "Texto sobre azul.",
+          "texto": "Llevas 3 años modelando bien. Y sigues esperando a que te digan qué modelar.",
+          "sticker": "Ninguno."
+        },
+        {
+          "n": 2,
+          "visual": "Los 4 niveles en pantalla.",
+          "texto": "Modelador → Coordinador → BIM Manager → BIM + IA",
+          "sticker": "QUIZ: «¿Dónde crees que estás?» (sin respuesta correcta). Solo alcance."
+        },
+        {
+          "n": 3,
+          "visual": "Texto sobre azul.",
+          "texto": "El salto que más cuesta es del 1 al 2. Y no es de software: es dejar de ejecutar y empezar a decidir.",
+          "sticker": "Ninguno."
+        },
+        {
+          "n": 4,
+          "visual": "Captura del test.",
+          "texto": "Hay un test de 20 preguntas que te lo dice sin adornos.",
+          "sticker": "ENLACE al test (cero trabajo) + «o responde NIVEL» → lo agarra el bot."
+        }
+      ]
+    },
+    {
+      "id": "venta-acero-cupos",
+      "titulo": "VENTA C · Los cupos (ACERO)",
+      "formato": "historia",
+      "red_principal": "instagram",
+      "eje": "ACERO",
+      "pilar": "Venta",
+      "hook": "Esta cohorte son 10 cupos. Quedan 8.",
+      "cta_por_red": {
+        "instagram": "Responde esta historia con la palabra CUPO.",
+        "tiktok": "Link en bio.",
+        "linkedin": "—",
+        "youtube": "—",
+        "meta-ads": "—"
+      },
+      "notas_produccion": "UNA VEZ AL MES. Dos reglas duras: (1) el número de cupos tiene que ser el REAL — 10 por cohorte, 2 vendidos, quedan 8 al 14-ago-2026; se actualiza cada vez que se publica y NUNCA se inventa, porque esta gente vuelve al mes siguiente. (2) La cuenta regresiva va al CIERRE de inscripciones de esta cohorte, no a la apertura: la cohorte abre todos los meses, así que «abre pronto» no aprieta nada. NO PUBLICAR hasta que el disparador de DM del bot esté montado para la palabra CUPO. El sticker que convierte tiene que ser AUTOMATIZABLE. Encuestas y quiz se quedan para alcance, pero el frame de cierre pide «responde con [PALABRA]»: eso cae en la bandeja de mensajes y lo agarra el bot, igual que un comentario en el feed. Los stickers de encuesta/quiz/caja solo viven en el panel de la historia y exigen escribir a mano uno por uno — es lo que hacia inviable la estrategia. Requiere el disparador de DM montado en el workflow del bot.",
+      "historias": [
+        {
+          "n": 1,
+          "visual": "Los 4 logos: Robot · Advance Steel · Revit · certificaciones.",
+          "texto": "4 programas. 4 meses. A tu ritmo.",
+          "sticker": "Ninguno."
+        },
+        {
+          "n": 2,
+          "visual": "El número enorme sobre azul.",
+          "texto": "Esta cohorte son 10 cupos. Quedan 8.",
+          "sticker": "CUENTA REGRESIVA al cierre de inscripciones."
+        },
+        {
+          "n": 3,
+          "visual": "Tú a cámara.",
+          "texto": "Si quieres el detalle, respóndeme con la palabra CUPO.",
+          "sticker": "RESPONDER CON PALABRA: «CUPO» → lo agarra el bot."
         }
       ]
     }
