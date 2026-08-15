@@ -113,6 +113,12 @@ jobs:
         continue-on-error: true      # si falla, no rompe la actualización principal
         run: python3 scripts/ingresos.py --dias 30
 
+      - name: Sondar qué deja leer la API de GoHighLevel
+        env:
+          GHL_TOKEN: ${{ secrets.GHL_TOKEN }}
+        continue-on-error: true
+        run: python3 scripts/ghl_sonda.py
+
       - name: Traer datos de la competencia
         env:
           META_TOKEN: ${{ secrets.META_TOKEN }}
@@ -122,13 +128,13 @@ jobs:
       - name: Commit si cambió
         run: |
           set -euo pipefail
-          RUTAS="matriz-viral/matriz/ matriz-viral/fuentes/ads-insights/ matriz-viral/fuentes/ingresos/"
+          RUTAS="matriz-viral/matriz/ matriz-viral/fuentes/ads-insights/ matriz-viral/fuentes/ingresos/ matriz-viral/fuentes/ghl-sonda.json"
           if git diff --quiet -- $RUTAS && ! git status --porcelain -- $RUTAS | grep -q .; then
             echo "Sin cambios."
             exit 0
           fi
           git config user.name  "matriz-bot"
           git config user.email "noreply@anthropic.com"
-          git add matriz-viral/matriz/ matriz-viral/fuentes/ads-insights/ matriz-viral/fuentes/ingresos/
+          git add matriz-viral/matriz/ matriz-viral/fuentes/ads-insights/ matriz-viral/fuentes/ingresos/ matriz-viral/fuentes/ghl-sonda.json
           git commit -m "Métricas semanales automáticas (Meta Graph API)"
           git push
