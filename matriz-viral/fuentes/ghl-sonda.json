@@ -39,6 +39,7 @@
       "ok": false,
       "http": 404,
       "detalle": "{\"statusCode\":404,\"message\":\"Cannot GET /courses/products?locationId=nkKbOarn5IwHeMv48uY9&limit=1\",\"error\":\"Not Found\"}",
+      "lectura": "la ruta no existe en la API (no es cuestión de permisos)",
       "bloqueo_cloudflare": false,
       "ruta": "/courses/products?locationId=nkKbOarn5IwHeMv48uY9&limit=1"
     },
@@ -46,8 +47,25 @@
       "ok": false,
       "http": 404,
       "detalle": "",
+      "lectura": "la ruta no existe en la API (no es cuestión de permisos)",
       "bloqueo_cloudflare": false,
       "ruta": "/memberships/?locationId=nkKbOarn5IwHeMv48uY9&limit=1"
+    },
+    "membership · productos": {
+      "ok": false,
+      "http": 401,
+      "detalle": "{\"error\":\"You are not authorized to make this request\"}",
+      "lectura": "el token no autentica aquí",
+      "bloqueo_cloudflare": false,
+      "ruta": "/membership/locations/nkKbOarn5IwHeMv48uY9/products"
+    },
+    "membership · raíz": {
+      "ok": false,
+      "http": 401,
+      "detalle": "{\"error\":\"You are not authorized to make this request\"}",
+      "lectura": "el token no autentica aquí",
+      "bloqueo_cloudflare": false,
+      "ruta": "/membership/locations/nkKbOarn5IwHeMv48uY9"
     },
     "calendarios": {
       "ok": true,
@@ -62,9 +80,10 @@
     "citas agendadas": {
       "ok": false,
       "http": 422,
-      "detalle": "{\"message\":[\"property limit should not exist\",\"Either of userId, calendarId or groupId is required\",\"startTime must be a string\",\"endTime must be a string\"],\"er",
+      "detalle": "{\"message\":[\"Either of userId, calendarId or groupId is required\",\"startTime must be a string\",\"endTime must be a string\"],\"error\":\"Unprocessable Entity\",\"statu",
+      "lectura": "la ruta existe y el token entra: faltan parámetros",
       "bloqueo_cloudflare": false,
-      "ruta": "/calendars/events?locationId=nkKbOarn5IwHeMv48uY9&limit=1"
+      "ruta": "/calendars/events?locationId=nkKbOarn5IwHeMv48uY9"
     },
     "formularios": {
       "ok": true,
@@ -177,6 +196,7 @@
       "ok": false,
       "http": 401,
       "detalle": "{\"msg\":\"Api key is invalid.\"}",
+      "lectura": "el token no autentica aquí",
       "bloqueo_cloudflare": false,
       "ruta": "/contacts/?limit=1"
     },
@@ -184,6 +204,7 @@
       "ok": false,
       "http": 401,
       "detalle": "{\"msg\":\"Api key is invalid.\"}",
+      "lectura": "el token no autentica aquí",
       "bloqueo_cloudflare": false,
       "ruta": "/pipelines/"
     }
@@ -207,6 +228,8 @@
   "cerrados": [
     "cursos · productos",
     "membresías",
+    "membership · productos",
+    "membership · raíz",
     "citas agendadas",
     "v1 · contactos",
     "v1 · pipelines"
