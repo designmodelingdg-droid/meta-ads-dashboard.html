@@ -76,7 +76,7 @@ jobs:
             git config user.email "noreply@anthropic.com"
             git add matriz-viral/fuentes/ads-creativos/
             git commit -m "Imagenes de anuncios ganadores (Meta Ads API)"
-            git push
+            git pull --rebase --autostash origin "$GITHUB_REF_NAME" && git push
           else
             echo "Sin creativos nuevos."
           fi
@@ -137,4 +137,10 @@ jobs:
           git config user.email "noreply@anthropic.com"
           git add matriz-viral/matriz/ matriz-viral/fuentes/ads-insights/ matriz-viral/fuentes/ingresos/ matriz-viral/fuentes/ghl-sonda.json
           git commit -m "Métricas semanales automáticas (Meta Graph API)"
-          git push
+          # Puede haber commits nuevos desde que arrancó la corrida: se rebasa
+          # antes de empujar. Sin esto el push se rechaza y se pierde el dato.
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin "$GITHUB_REF_NAME" && git push && exit 0
+            echo "Reintento $i…"; sleep 5
+          done
+          echo "::error::No se pudo empujar tras 3 intentos."; exit 1
