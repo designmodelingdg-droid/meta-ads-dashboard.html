@@ -43,12 +43,19 @@ PRUEBAS = [
     ("pipelines",            V2, f"/opportunities/pipelines?locationId={LOCATION}"),
 
     # ⭐ LO QUE NO TENEMOS: progreso de alumnos
+    # Las dos primeras dieron 404 el 15-ago (ruta inexistente, no permisos).
+    # Se dejan para que quede constancia, y se agregan las rutas /membership/
+    # que la comunidad reporta que existen aunque no estén documentadas.
     ("cursos · productos",   V2, f"/courses/products?locationId={LOCATION}&limit=1"),
     ("membresías",           V2, f"/memberships/?locationId={LOCATION}&limit=1"),
+    ("membership · productos", V2, f"/membership/locations/{LOCATION}/products"),
+    ("membership · raíz",    V2, f"/membership/locations/{LOCATION}"),
 
     # Otras puertas que valdría la pena tener
     ("calendarios",          V2, f"/calendars/?locationId={LOCATION}"),
-    ("citas agendadas",      V2, f"/calendars/events?locationId={LOCATION}&limit=1"),
+    # 'limit' no existe aquí y pide calendarId o userId: sin ellos devuelve 422.
+    # El 422 no es una puerta cerrada — es la API contestando que faltan datos.
+    ("citas agendadas",      V2, f"/calendars/events?locationId={LOCATION}"),
     ("formularios",          V2, f"/forms/?locationId={LOCATION}&limit=1"),
     ("envíos de formulario", V2, f"/forms/submissions?locationId={LOCATION}&limit=1"),
     ("encuestas",            V2, f"/surveys/?locationId={LOCATION}&limit=1"),
@@ -94,7 +101,16 @@ def probar(base, ruta):
     except urllib.error.HTTPError as e:
         cuerpo = e.read().decode()[:160]
         bloqueo = "1010" in cuerpo or "cloudflare" in cuerpo.lower()
+        # Cada código dice una cosa distinta, y confundirlos es lo que hizo
+        # que la corrida del 15-ago no sirviera. 404 = la ruta no existe.
+        # 401/403 = el token no llega. 422 = la ruta SÍ existe y el token SÍ
+        # entra: solo faltan parámetros en la petición.
+        lectura = {401: "el token no autentica aquí",
+                   403: "el token autentica pero no tiene permiso",
+                   404: "la ruta no existe en la API (no es cuestión de permisos)",
+                   422: "la ruta existe y el token entra: faltan parámetros"}
         return {"ok": False, "http": e.code, "detalle": cuerpo,
+                "lectura": lectura.get(e.code),
                 "bloqueo_cloudflare": bloqueo}
     except Exception as e:
         return {"ok": False, "http": None, "detalle": str(e)[:160]}
@@ -139,12 +155,18 @@ def main():
         print(f"\n  AVISO: {len(bloqueados)} endpoints bloqueados por Cloudflare, "
               "no por permisos. Ese resultado no dice nada del token.")
 
-    clave = [e for e in ("cursos · productos", "membresías") if e in abiertos]
+    clave = [e for e in ("cursos · productos", "membresías",
+                         "membership · productos", "membership · raíz") if e in abiertos]
     if clave:
-        print(f"\n  ⭐ SE PUEDE LEER PROGRESO DE ALUMNOS: {', '.join(clave)}")
+        print(f"\n  ⭐ ALGO DE CURSOS RESPONDE: {', '.join(clave)}")
     else:
-        print("\n  El token NO abre cursos ni membresías. Para el progreso de alumnos")
-        print("  haría falta ampliar los permisos del token en GHL.")
+        # Comprobado el 15-ago contra la documentación oficial de HighLevel:
+        # el progreso de alumnos NO está en la API pública. Sigue siendo una
+        # petición abierta de la comunidad (GET /progress?userId=&courseId=).
+        # O sea: no es que falten permisos, es que el endpoint no existe.
+        print("\n  Cursos y membresías dan 404: la ruta no existe en la API pública.")
+        print("  El progreso de alumnos NO se puede bajar por API hoy — es una")
+        print("  petición abierta a HighLevel, no un problema de permisos.")
 
 
 if __name__ == "__main__":
