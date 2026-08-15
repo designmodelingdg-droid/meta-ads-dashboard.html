@@ -4,129 +4,195 @@
   "nota": "Sonda: comprueba QUE endpoints responden con nuestro token. No baja datos de negocio. Lo importante es si abren 'cursos · productos' y 'membresias': ahi vive el progreso de los alumnos, que Windsor NO expone.",
   "resultados": {
     "contactos": {
-      "ok": false,
-      "http": 403,
-      "detalle": "{\"type\":\"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-1xxx-errors/error-1010/\",\"title\":\"Error 1010: Access denied\",\"st",
+      "ok": true,
+      "http": 200,
+      "registros": "1+",
+      "claves": [
+        "contacts",
+        "meta",
+        "traceId"
+      ],
       "ruta": "/contacts/?locationId=nkKbOarn5IwHeMv48uY9&limit=1"
     },
     "oportunidades": {
-      "ok": false,
-      "http": 403,
-      "detalle": "{\"type\":\"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-1xxx-errors/error-1010/\",\"title\":\"Error 1010: Access denied\",\"st",
+      "ok": true,
+      "http": 200,
+      "registros": "1+",
+      "claves": [
+        "meta",
+        "opportunities",
+        "traceId"
+      ],
       "ruta": "/opportunities/search?location_id=nkKbOarn5IwHeMv48uY9&limit=1"
     },
     "pipelines": {
-      "ok": false,
-      "http": 403,
-      "detalle": "{\"type\":\"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-1xxx-errors/error-1010/\",\"title\":\"Error 1010: Access denied\",\"st",
+      "ok": true,
+      "http": 200,
+      "registros": "5+",
+      "claves": [
+        "pipelines",
+        "traceId"
+      ],
       "ruta": "/opportunities/pipelines?locationId=nkKbOarn5IwHeMv48uY9"
     },
     "cursos · productos": {
       "ok": false,
-      "http": 403,
-      "detalle": "{\"type\":\"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-1xxx-errors/error-1010/\",\"title\":\"Error 1010: Access denied\",\"st",
+      "http": 404,
+      "detalle": "{\"statusCode\":404,\"message\":\"Cannot GET /courses/products?locationId=nkKbOarn5IwHeMv48uY9&limit=1\",\"error\":\"Not Found\"}",
+      "bloqueo_cloudflare": false,
       "ruta": "/courses/products?locationId=nkKbOarn5IwHeMv48uY9&limit=1"
     },
     "membresías": {
       "ok": false,
-      "http": 403,
-      "detalle": "{\"type\":\"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-1xxx-errors/error-1010/\",\"title\":\"Error 1010: Access denied\",\"st",
+      "http": 404,
+      "detalle": "",
+      "bloqueo_cloudflare": false,
       "ruta": "/memberships/?locationId=nkKbOarn5IwHeMv48uY9&limit=1"
     },
     "calendarios": {
-      "ok": false,
-      "http": 403,
-      "detalle": "{\"type\":\"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-1xxx-errors/error-1010/\",\"title\":\"Error 1010: Access denied\",\"st",
+      "ok": true,
+      "http": 200,
+      "registros": "10+",
+      "claves": [
+        "calendars",
+        "traceId"
+      ],
       "ruta": "/calendars/?locationId=nkKbOarn5IwHeMv48uY9"
     },
     "citas agendadas": {
       "ok": false,
-      "http": 403,
-      "detalle": "{\"type\":\"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-1xxx-errors/error-1010/\",\"title\":\"Error 1010: Access denied\",\"st",
+      "http": 422,
+      "detalle": "{\"message\":[\"property limit should not exist\",\"Either of userId, calendarId or groupId is required\",\"startTime must be a string\",\"endTime must be a string\"],\"er",
+      "bloqueo_cloudflare": false,
       "ruta": "/calendars/events?locationId=nkKbOarn5IwHeMv48uY9&limit=1"
     },
     "formularios": {
-      "ok": false,
-      "http": 403,
-      "detalle": "{\"type\":\"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-1xxx-errors/error-1010/\",\"title\":\"Error 1010: Access denied\",\"st",
+      "ok": true,
+      "http": 200,
+      "registros": 44,
+      "claves": [
+        "forms",
+        "total",
+        "traceId"
+      ],
       "ruta": "/forms/?locationId=nkKbOarn5IwHeMv48uY9&limit=1"
     },
     "envíos de formulario": {
-      "ok": false,
-      "http": 403,
-      "detalle": "{\"type\":\"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-1xxx-errors/error-1010/\",\"title\":\"Error 1010: Access denied\",\"st",
+      "ok": true,
+      "http": 200,
+      "registros": "1+",
+      "claves": [
+        "meta",
+        "submissions",
+        "traceId"
+      ],
       "ruta": "/forms/submissions?locationId=nkKbOarn5IwHeMv48uY9&limit=1"
     },
     "encuestas": {
-      "ok": false,
-      "http": 403,
-      "detalle": "{\"type\":\"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-1xxx-errors/error-1010/\",\"title\":\"Error 1010: Access denied\",\"st",
+      "ok": true,
+      "http": 200,
+      "registros": 0,
+      "claves": [
+        "surveys",
+        "total",
+        "traceId"
+      ],
       "ruta": "/surveys/?locationId=nkKbOarn5IwHeMv48uY9&limit=1"
     },
     "workflows": {
-      "ok": false,
-      "http": 403,
-      "detalle": "{\"type\":\"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-1xxx-errors/error-1010/\",\"title\":\"Error 1010: Access denied\",\"st",
+      "ok": true,
+      "http": 200,
+      "registros": "148+",
+      "claves": [
+        "traceId",
+        "workflows"
+      ],
       "ruta": "/workflows/?locationId=nkKbOarn5IwHeMv48uY9"
     },
     "etiquetas": {
-      "ok": false,
-      "http": 403,
-      "detalle": "{\"type\":\"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-1xxx-errors/error-1010/\",\"title\":\"Error 1010: Access denied\",\"st",
+      "ok": true,
+      "http": 200,
+      "registros": "478+",
+      "claves": [
+        "tags",
+        "traceId"
+      ],
       "ruta": "/locations/nkKbOarn5IwHeMv48uY9/tags"
     },
     "campos propios": {
-      "ok": false,
-      "http": 403,
-      "detalle": "{\"type\":\"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-1xxx-errors/error-1010/\",\"title\":\"Error 1010: Access denied\",\"st",
+      "ok": true,
+      "http": 200,
+      "registros": "88+",
+      "claves": [
+        "customFields",
+        "traceId"
+      ],
       "ruta": "/locations/nkKbOarn5IwHeMv48uY9/customFields"
     },
     "conversaciones": {
-      "ok": false,
-      "http": 403,
-      "detalle": "{\"type\":\"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-1xxx-errors/error-1010/\",\"title\":\"Error 1010: Access denied\",\"st",
+      "ok": true,
+      "http": 200,
+      "registros": 24406,
+      "claves": [
+        "conversations",
+        "total",
+        "traceId"
+      ],
       "ruta": "/conversations/search?locationId=nkKbOarn5IwHeMv48uY9&limit=1"
     },
     "pagos · órdenes": {
-      "ok": false,
-      "http": 403,
-      "detalle": "{\"type\":\"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-1xxx-errors/error-1010/\",\"title\":\"Error 1010: Access denied\",\"st",
+      "ok": true,
+      "http": 200,
+      "registros": 161,
+      "claves": [
+        "data",
+        "totalCount",
+        "traceId"
+      ],
       "ruta": "/payments/orders?altId=nkKbOarn5IwHeMv48uY9&altType=location&limit=1"
     },
     "pagos · suscripciones": {
-      "ok": false,
-      "http": 403,
-      "detalle": "{\"type\":\"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-1xxx-errors/error-1010/\",\"title\":\"Error 1010: Access denied\",\"st",
+      "ok": true,
+      "http": 200,
+      "registros": 58,
+      "claves": [
+        "data",
+        "totalCount",
+        "traceId"
+      ],
       "ruta": "/payments/subscriptions?altId=nkKbOarn5IwHeMv48uY9&altType=location&limit=1"
     },
     "pagos · transacciones": {
-      "ok": false,
-      "http": 403,
-      "detalle": "{\"type\":\"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-1xxx-errors/error-1010/\",\"title\":\"Error 1010: Access denied\",\"st",
+      "ok": true,
+      "http": 200,
+      "registros": 393,
+      "claves": [
+        "data",
+        "totalCount",
+        "traceId"
+      ],
       "ruta": "/payments/transactions?altId=nkKbOarn5IwHeMv48uY9&altType=location&limit=1"
     },
     "v1 · contactos": {
       "ok": false,
-      "http": 403,
-      "detalle": "{\"type\":\"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-1xxx-errors/error-1010/\",\"title\":\"Error 1010: Access denied\",\"st",
+      "http": 401,
+      "detalle": "{\"msg\":\"Api key is invalid.\"}",
+      "bloqueo_cloudflare": false,
       "ruta": "/contacts/?limit=1"
     },
     "v1 · pipelines": {
       "ok": false,
-      "http": 403,
-      "detalle": "{\"type\":\"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-1xxx-errors/error-1010/\",\"title\":\"Error 1010: Access denied\",\"st",
+      "http": 401,
+      "detalle": "{\"msg\":\"Api key is invalid.\"}",
+      "bloqueo_cloudflare": false,
       "ruta": "/pipelines/"
     }
   },
-  "abiertos": [],
-  "cerrados": [
+  "abiertos": [
     "contactos",
     "oportunidades",
     "pipelines",
-    "cursos · productos",
-    "membresías",
     "calendarios",
-    "citas agendadas",
     "formularios",
     "envíos de formulario",
     "encuestas",
@@ -136,7 +202,12 @@
     "conversaciones",
     "pagos · órdenes",
     "pagos · suscripciones",
-    "pagos · transacciones",
+    "pagos · transacciones"
+  ],
+  "cerrados": [
+    "cursos · productos",
+    "membresías",
+    "citas agendadas",
     "v1 · contactos",
     "v1 · pipelines"
   ]
