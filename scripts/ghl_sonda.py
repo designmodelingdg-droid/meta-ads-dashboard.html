@@ -67,7 +67,13 @@ PRUEBAS = [
 
 
 def probar(base, ruta):
-    cab = {"Authorization": f"Bearer {TOKEN}", "Accept": "application/json"}
+    # User-Agent de navegador: sin él, Cloudflare bloquea la IP del runner con
+    # un 403 "Error 1010" que PARECE falta de permisos y no lo es. Pasó el
+    # 15-ago: los 19 endpoints dieron 403 y la prueba no sirvió de nada.
+    cab = {"Authorization": f"Bearer {TOKEN}", "Accept": "application/json",
+           "User-Agent": ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                          "AppleWebKit/537.36 (KHTML, like Gecko) "
+                          "Chrome/126.0.0.0 Safari/537.36")}
     if base.startswith(V2):
         cab["Version"] = "2021-07-28"
     r = urllib.request.Request(base + ruta, headers=cab)
@@ -87,7 +93,9 @@ def probar(base, ruta):
                 "claves": sorted(d.keys())[:8]}
     except urllib.error.HTTPError as e:
         cuerpo = e.read().decode()[:160]
-        return {"ok": False, "http": e.code, "detalle": cuerpo}
+        bloqueo = "1010" in cuerpo or "cloudflare" in cuerpo.lower()
+        return {"ok": False, "http": e.code, "detalle": cuerpo,
+                "bloqueo_cloudflare": bloqueo}
     except Exception as e:
         return {"ok": False, "http": None, "detalle": str(e)[:160]}
 
@@ -122,6 +130,14 @@ def main():
     json.dump(res, open(SALIDA, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
     print(f"\n  abiertos: {len(abiertos)} · cerrados: {len(cerrados)}")
     print(f"  resultado en {SALIDA}")
+
+    bloqueados = [k for k, v in res["resultados"].items() if v.get("bloqueo_cloudflare")]
+    if bloqueados:
+        res["aviso"] = ("Cloudflare bloqueo la IP del runner (Error 1010) en "
+                        f"{len(bloqueados)} endpoints. Eso NO significa que falten "
+                        "permisos: la prueba no es concluyente para esos.")
+        print(f"\n  AVISO: {len(bloqueados)} endpoints bloqueados por Cloudflare, "
+              "no por permisos. Ese resultado no dice nada del token.")
 
     clave = [e for e in ("cursos · productos", "membresías") if e in abiertos]
     if clave:
