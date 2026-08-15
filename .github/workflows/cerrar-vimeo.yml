@@ -1,0 +1,105 @@
+name: Cerrar videos de Vimeo
+
+# Deja los videos de Vimeo accesibles SOLO incrustados en nuestras plataformas:
+#
+#     privacy.download -> false     (quita el botón de descarga)
+#     privacy.view     -> disable   (deja de verse en vimeo.com)
+#
+# privacy.embed NO se toca: mientras siga en 'public', todo lo que esté
+# incrustado —GoHighLevel, comunidades, cursos, landings— sigue funcionando
+# igual. Comprobado el 13-ago-2026: con view=disable el reproductor incrustado
+# responde 200 y la página pública deja de exponer el video. No se rompe nada.
+#
+# CUÁNDO CORRERLO
+#   - Después de subir clases nuevas (Vimeo las crea públicas por defecto).
+#   - Si una corrida anterior se cortó a mitad: el script es idempotente, lee
+#     el estado real de Vimeo y solo toca lo que falta.
+#   - Una vez al mes, para barrer lo que se haya colado.
+#
+# REQUISITO (una sola vez): agregar el secreto del repo VIMEO_TOKEN
+#   Settings → Secrets and variables → Actions → New repository secret
+#   Name: VIMEO_TOKEN   Value: (token de Vimeo con permiso de edición)
+#
+# NO corre solo a propósito: modifica 1.296 videos de producción, así que se
+# lanza a mano desde Actions → "Cerrar videos de Vimeo" → Run workflow.
+
+on:
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: "Qué hacer"
+        required: true
+        type: choice
+        default: "simulacro"
+        options:
+          - simulacro          # solo enseña qué haría, no toca nada
+          - aplicar            # aplica los cambios de verdad
+      limite:
+        description: "Tocar solo los primeros N (0 = todos)"
+        required: false
+        default: "0"
+      excluir:
+        description: "IDs a NO tocar, separados por coma (ej: 889618342,930419021)"
+        required: false
+        default: ""
+
+permissions:
+  contents: read      # no escribe en el repo; solo llama a la API de Vimeo
+
+concurrency:
+  group: cerrar-vimeo
+  cancel-in-progress: false     # nunca dos corridas a la vez sobre la misma cuenta
+
+jobs:
+  cerrar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350        # el límite de Vimeo (500 peticiones/hora) obliga a esperar
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Comprobar el secreto
+        env:
+          VIMEO_TOKEN: ${{ secrets.VIMEO_TOKEN }}
+        run: |
+          set -euo pipefail
+          if [ -z "${VIMEO_TOKEN:-}" ]; then
+            echo "::error::Falta el secreto VIMEO_TOKEN."
+            echo "::error::Settings → Secrets and variables → Actions → New repository secret."
+            exit 1
+          fi
+          echo "Secreto presente."
+
+      - name: Estado actual de la cuenta
+        env:
+          VIMEO_TOKEN: ${{ secrets.VIMEO_TOKEN }}
+        run: python3 scripts/cerrar_vimeo.py --dry-run
+
+      - name: Aplicar
+        if: ${{ github.event.inputs.modo == 'aplicar' }}
+        env:
+          VIMEO_TOKEN: ${{ secrets.VIMEO_TOKEN }}
+        run: |
+          set -euo pipefail
+          python3 scripts/cerrar_vimeo.py \
+            --limite "${{ github.event.inputs.limite || '0' }}" \
+            --excluir "${{ github.event.inputs.excluir }}" \
+            --registro "registro-cierre-vimeo.jsonl"
+
+      - name: Guardar el registro de cambios
+        if: ${{ always() && github.event.inputs.modo == 'aplicar' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: registro-cierre-vimeo
+          path: registro-cierre-vimeo.jsonl
+          if-no-files-found: warn
+          retention-days: 90
+
+      - name: Comprobar cómo quedó
+        if: ${{ github.event.inputs.modo == 'aplicar' }}
+        env:
+          VIMEO_TOKEN: ${{ secrets.VIMEO_TOKEN }}
+        run: |
+          echo "Lo que queda abierto después de la corrida:"
+          python3 scripts/cerrar_vimeo.py --dry-run
