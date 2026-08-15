@@ -105,6 +105,14 @@ jobs:
         continue-on-error: true      # si falla, no rompe la actualización principal
         run: python3 scripts/ads_insights.py --dias 30
 
+      - name: Traer ingresos reales (Stripe + PayPal)
+        env:
+          STRIPE_SECRET_KEY:  ${{ secrets.STRIPE_SECRET_KEY }}
+          CLIEND_ID_PAYPAL:   ${{ secrets.CLIEND_ID_PAYPAL }}
+          SECRET_KEY_PAYPAL:  ${{ secrets.SECRET_KEY_PAYPAL }}
+        continue-on-error: true      # si falla, no rompe la actualización principal
+        run: python3 scripts/ingresos.py --dias 30
+
       - name: Traer datos de la competencia
         env:
           META_TOKEN: ${{ secrets.META_TOKEN }}
@@ -114,13 +122,13 @@ jobs:
       - name: Commit si cambió
         run: |
           set -euo pipefail
-          if git diff --quiet -- matriz-viral/matriz/ matriz-viral/fuentes/ads-insights/ \
-             && ! git status --porcelain -- matriz-viral/fuentes/ads-insights/ | grep -q .; then
+          RUTAS="matriz-viral/matriz/ matriz-viral/fuentes/ads-insights/ matriz-viral/fuentes/ingresos/"
+          if git diff --quiet -- $RUTAS && ! git status --porcelain -- $RUTAS | grep -q .; then
             echo "Sin cambios."
             exit 0
           fi
           git config user.name  "matriz-bot"
           git config user.email "noreply@anthropic.com"
-          git add matriz-viral/matriz/ matriz-viral/fuentes/ads-insights/
+          git add matriz-viral/matriz/ matriz-viral/fuentes/ads-insights/ matriz-viral/fuentes/ingresos/
           git commit -m "Métricas semanales automáticas (Meta Graph API)"
           git push

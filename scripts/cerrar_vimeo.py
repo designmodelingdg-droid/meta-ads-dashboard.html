@@ -99,13 +99,20 @@ def main():
             continue
         if p.get('view') == 'anybody' or p.get('download') is True:
             pend.append((vid, v.get('name') or '', p))
+    # El conteo de "ya cerrados" se calcula ANTES de aplicar --limite.
+    # Si se calcula después, el límite infla el número y el informe miente:
+    # con --limite 3 sobre 116 pendientes decía "1292 ya cerrados" cuando eran
+    # 1180. Pasó el 15-ago y se reportó mal.
+    ya = len(inv) - len(pend) - len(excluidos)
+    total_pendientes = len(pend)
     if a.limite:
         pend = pend[:a.limite]
 
-    ya = len(inv) - len(pend) - len(excluidos)
     print(f'Total en la cuenta: {len(inv)}')
     print(f'  ya cerrados: {ya}')
-    print(f'  por cerrar:  {len(pend)}')
+    print(f'  por cerrar:  {total_pendientes}')
+    if a.limite and total_pendientes > len(pend):
+        print(f'  → esta corrida solo toca {len(pend)} por el --limite')
     print(f'Modo: {"SIMULACRO" if a.dry_run else "REAL"}\n')
     if a.dry_run:
         for vid, nom, p in pend[:15]:
