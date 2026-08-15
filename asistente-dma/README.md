@@ -18,11 +18,12 @@ No es un bot nuevo: es el cerebro que le faltaba al que ya tienes corriendo.
 ## Qué hay aquí
 
 ```
-asistente_agent.py   El cerebro: system prompt + 24 herramientas + loop de tool-use
+asistente_agent.py   El cerebro: system prompt + 28 herramientas + loop de tool-use
 google_client.py     Google Calendar + Tasks + Drive por REST, con OAuth propio
 gmail_client.py      Correo: buscar, leer, borradores y enviar (mismo OAuth)
 clickup_client.py    Tareas para el equipo: 6 personas y 12 listas reales
 ventas.py            Ventas e ingresos: Stripe (dinero) + GHL (inscritos), sin mezclarlos
+marketing.py         Matriz de contenido, guiones listos y retorno real de la pauta
 fathom_client.py     Resúmenes y tareas de las reuniones que graba Fathom
 asistente_wa.py      Canal privado por WhatsApp de Meta, sin pasar por GHL
 panorama.py          Agrega agenda, tareas, GHL, Meta Ads y académico en un solo texto
@@ -32,7 +33,7 @@ INTEGRACION.md       El parche exacto sobre server.py y la prueba end-to-end
 GUIA-MONTAJE.md      Los 15 minutos de Google Cloud que solo puedes hacer tú
 ```
 
-Los nueve `.py` van a la **raíz** de `designmodelingdg-droid/dma-sales-assistant`,
+Los diez `.py` van a la **raíz** de `designmodelingdg-droid/dma-sales-assistant`,
 junto a `server.py`. Aquí viven versionados como documentación viva del agente.
 
 ## Dónde vive la conversación — y quién la lee
@@ -49,8 +50,15 @@ eso cambiar de teléfono no cambia nada — el registro lo genera el canal, no q
 escribe. Y mientras el canal sea GHL, su agenda, su correo y sus cifras quedan
 guardados como una conversación más del CRM.
 
-El canal privado está construido y desplegado, pero **apagado** hasta que exista
-un número dedicado en la WhatsApp Cloud API de Meta.
+El canal privado está **encendido** desde agosto de 2026: hay número dedicado en
+la WhatsApp Cloud API, la app de Meta está en Live y la política de privacidad
+que Meta exige está publicada en `privacidad/`. Dayana le habla por ahí, y esa
+conversación **no pasa por GHL: nadie del equipo la lee**.
+
+> Esta línea decía «apagado» hasta el 15-ago-2026 y ya no era cierto. Costó un
+> consejo equivocado —se recomendó dejar las cifras de ingresos fuera del
+> asistente «hasta que el canal privado exista», cuando llevaba semanas
+> funcionando. **Si el estado del canal cambia, se cambia aquí el mismo día.**
 
 ## Cómo se ve usándolo
 

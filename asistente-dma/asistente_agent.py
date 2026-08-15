@@ -137,6 +137,25 @@ Si Stripe dice 2 y el CRM dice 5, no te lo inventes ni lo cuadres: son 3 pagos
 que entraron por fuera de Stripe. Dilo así.
 Nunca des una cifra de facturación que no venga de una herramienta.
 
+## CUANDO PREGUNTA POR CONTENIDO O POR PAUTA
+Tienes la matriz: 148 reels reales con su eje y sus métricas, y 44 piezas ya
+guionadas. Tres reglas al usarla:
+
+1. **Mira lo que ya está escrito ANTES de proponer algo nuevo.** Si pide ideas
+   de carrusel, `guiones_disponibles` primero. Inventar una pieza cuando ya hay
+   doce escritas le hace perder el trabajo hecho.
+2. **El alcance no es la venta.** La cuenta se viraliza con OBRA —construcción,
+   humor de campo— que se lleva casi todo el alcance y trae público que mira
+   pero no compra. Lo que vende el Máster es el NÚCLEO: BIM, modelado,
+   coordinación, IA aplicada. Cuando te pregunte si algo funcionó, di las dos
+   cosas: cuánto alcance tuvo Y de qué eje era.
+3. **Nunca des una métrica de memoria.** Sale de `consultar_matriz` o no sale.
+
+Para pauta, `retorno_real` cruza lo cobrado contra lo gastado. Ojo con la
+diferencia: `ventas_resumen` dice cuánto entró; `retorno_real` dice contra qué.
+Las reservas de ~$100 del Máster son anticipo, no venta cerrada: van aparte.
+Y nunca sumes Stripe con el CRM — es la misma venta contada dos veces.
+
 ## CONTEXTO DEL NEGOCIO
 Producto ancla: Máster Internacional en BIM Management e IA ($2,699.99 USD).
 El CRM es GoHighLevel. Los anuncios son Meta Ads. El equipo trabaja en ClickUp.
@@ -539,6 +558,76 @@ TOOLS = [
             "required": ["nombre", "mensaje", "confirmado"],
         },
     },
+
+    # ── Marketing y contenido ──
+    {
+        "name": "consultar_matriz",
+        "description": (
+            "La matriz de contenido: 148 reels reales con sus métricas y su eje. "
+            "Con que='diagnostico' dice qué eje se lleva el alcance y cuál se "
+            "lleva la venta — para '¿cómo va mi contenido?'. Con que='mejores' "
+            "trae las piezas que más rindieron con su hook — para '¿qué reel "
+            "funcionó mejor?' o '¿qué me conviene repetir?'. Es la misma fuente "
+            "que ve Patricio, así que nunca se contradicen."
+        ),
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "que":     {"type": "string", "enum": ["diagnostico", "mejores"],
+                            "description": "diagnostico = el reparto por eje. mejores = el top de piezas."},
+                "cuantas": {"type": "integer", "description": "Cuántas piezas traer si que='mejores'. Por defecto 5."},
+                "eje":     {"type": "string", "description": "Filtrar por eje: NÚCLEO-IA, NÚCLEO-BIM, OBRA, PROMO, COMUNIDAD."},
+            },
+        },
+    },
+    {
+        "name": "guiones_disponibles",
+        "description": (
+            "Qué contenido ya está escrito y esperando publicación: 44 piezas "
+            "con hook, slides, caption y CTA por red. Para '¿qué toca publicar?', "
+            "'¿tengo algo de carrusel?' o '¿qué hay listo de IA?'. SIEMPRE mira "
+            "aquí antes de proponer contenido nuevo — puede que ya esté escrito."
+        ),
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "formato": {"type": "string", "description": "carrusel, reel, post, blog, anuncio, historia o youtube."},
+                "eje":     {"type": "string", "description": "NÚCLEO-IA, NÚCLEO-BIM, OBRA, PROMO o COMUNIDAD."},
+            },
+        },
+    },
+    {
+        "name": "ver_guion",
+        "description": (
+            "Trae un guion completo por su id: hook, slides una por una, caption "
+            "y la CTA de cada red. Para 'pásame el guion de X'. Si no sabes el id, "
+            "llama antes a guiones_disponibles."
+        ),
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "id": {"type": "string", "description": "El id del guion, o parte de su título."},
+            },
+            "required": ["id"],
+        },
+    },
+    {
+        "name": "retorno_real",
+        "description": (
+            "Cruza lo COBRADO en Stripe contra lo GASTADO en pauta, y dice "
+            "cuánto volvió por cada dólar. Para '¿la pauta se paga sola?', "
+            "'¿cuánto volvió este mes?' o '¿vale la pena la campaña?'. Separa "
+            "las reservas de ~$100 del Máster, que son anticipo y no venta "
+            "cerrada. Distinto de ventas_resumen: aquel dice cuánto entró, "
+            "este dice contra qué."
+        ),
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "dias": {"type": "integer", "description": "Ventana hacia atrás. Por defecto 30, máximo 90."},
+            },
+        },
+    },
 ]
 
 
@@ -785,6 +874,25 @@ def ejecutar_tool(nombre: str, args: dict) -> str:
         if nombre == "resumen_reunion":
             import fathom_client as fa
             return fa.resumen_reunion(args.get("busqueda") or "", args.get("dias") or 14)
+
+        # ── Marketing ──
+        if nombre == "consultar_matriz":
+            import marketing as mk
+            if (args.get("que") or "diagnostico") == "mejores":
+                return mk.mejores_piezas(args.get("cuantas") or 5, args.get("eje") or "")
+            return mk.diagnostico()
+
+        if nombre == "guiones_disponibles":
+            import marketing as mk
+            return mk.guiones(args.get("formato") or "", args.get("eje") or "")
+
+        if nombre == "ver_guion":
+            import marketing as mk
+            return mk.guion(args.get("id") or "")
+
+        if nombre == "retorno_real":
+            import marketing as mk
+            return mk.retorno_real(args.get("dias") or 30)
 
         # ── Irreversible ──
         if nombre == "enviar_mensaje_a_contacto":

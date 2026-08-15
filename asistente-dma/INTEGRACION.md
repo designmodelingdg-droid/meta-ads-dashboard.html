@@ -26,7 +26,7 @@ puede hacer nada. Es literalmente el hueco donde faltaba el agente.
 
 ---
 
-## Paso 1 — Copiar los cinco módulos
+## Paso 1 — Copiar los seis módulos
 
 ```bash
 cp asistente-dma/asistente_agent.py  <repo dma-sales-assistant>/
@@ -34,7 +34,19 @@ cp asistente-dma/google_client.py    <repo dma-sales-assistant>/
 cp asistente-dma/clickup_client.py   <repo dma-sales-assistant>/
 cp asistente-dma/panorama.py         <repo dma-sales-assistant>/
 cp asistente-dma/recordatorios.py    <repo dma-sales-assistant>/
+cp asistente-dma/marketing.py        <repo dma-sales-assistant>/
 ```
+
+`marketing.py` no necesita ninguna variable de entorno nueva: lee la matriz de
+la URL pública de GitHub Pages. Lo único que usa de dentro es `ventas.py`, que
+ya está desplegado.
+
+**Una cosa que sí conviene revisar** al copiarlo: `retorno_real` saca el gasto
+de pauta de `meta_ads`, probando `gasto_total`, `spend_total`, `total_gastado`
+y `gasto`. Si ese módulo expone el total con otro nombre, se añade a la tupla
+de `_gasto_meta()` — una línea. Mientras tanto no falla: informa lo cobrado y
+dice que no pudo leer el gasto, en vez de sacar el número del texto de
+`resumen_campanas`, que es como se reportan cifras equivocadas.
 
 ## Paso 2 — El parche de una línea
 
