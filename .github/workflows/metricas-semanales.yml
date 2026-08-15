@@ -18,7 +18,9 @@ name: Métricas semanales (Meta Graph API)
 
 on:
   schedule:
-    - cron: "0 13 * * 1"      # lunes 13:00 UTC (~08:00 Ecuador)
+    - cron: "0 13 * * 1"      # lunes 13:00 UTC (~08:00 Ecuador) — metricas organicas
+    - cron: "0 12 * * 5"      # viernes 12:00 UTC (~07:00 Ecuador) — datos de pauta,
+                              # antes de que llegue el reporte de la agencia
   workflow_dispatch:
     inputs:
       limit:
@@ -97,6 +99,12 @@ jobs:
           fi
           python3 scripts/meta_organico.py --limit "${{ github.event.inputs.limit || '30' }}"
 
+      - name: Traer datos reales de las campañas (para auditar el reporte)
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN }}
+        continue-on-error: true      # si falla, no rompe la actualización principal
+        run: python3 scripts/ads_insights.py --dias 30
+
       - name: Traer datos de la competencia
         env:
           META_TOKEN: ${{ secrets.META_TOKEN }}
@@ -106,12 +114,13 @@ jobs:
       - name: Commit si cambió
         run: |
           set -euo pipefail
-          if git diff --quiet -- matriz-viral/matriz/; then
-            echo "Sin cambios en la matriz."
+          if git diff --quiet -- matriz-viral/matriz/ matriz-viral/fuentes/ads-insights/ \
+             && ! git status --porcelain -- matriz-viral/fuentes/ads-insights/ | grep -q .; then
+            echo "Sin cambios."
             exit 0
           fi
           git config user.name  "matriz-bot"
           git config user.email "noreply@anthropic.com"
-          git add matriz-viral/matriz/
+          git add matriz-viral/matriz/ matriz-viral/fuentes/ads-insights/
           git commit -m "Métricas semanales automáticas (Meta Graph API)"
           git push

@@ -33,8 +33,28 @@ comparar semanas.
 
 ## 1. Sacar los datos reales de Meta
 
-El token de página vive en el scratchpad de la sesión (`page_token`) y tiene
-`ads_read`. Cuenta: `act_1159622151150228`.
+**Ya están en el repo. No hace falta ningún token.**
+
+Los baja sola la Action `metricas-semanales.yml` **cada viernes a las 12:00 UTC**
+(~07:00 Ecuador), o sea antes de que llegue el reporte. Usa el secreto
+`META_TOKEN` que vive cifrado en GitHub, y commitea los datos aquí:
+
+| Archivo | Qué trae |
+|---|---|
+| `matriz-viral/fuentes/ads-insights/por-campana.json` | el total y el desglose por campaña |
+| `matriz-viral/fuentes/ads-insights/por-adset.json` | **el geo-split**, que el reporte nunca abre |
+| `matriz-viral/fuentes/ads-insights/por-dia.json` | destapa si el reporte se generó sin cerrar el último día |
+| `matriz-viral/fuentes/ads-insights/por-pais.json` | desglose por país |
+| `matriz-viral/fuentes/ads-insights/resumen.json` | ventana y totales |
+
+**La ventana termina AYER a propósito.** Un día sin cerrar da cifras cortas —
+es justo el error que se le señaló a la agencia el 3-ago.
+
+Si los datos están viejos o falta el archivo, se corre la Action a mano desde
+la pestaña **Actions → Métricas semanales → Run workflow**. Solo si eso no es
+posible se pide el token, y se dice en la auditoría que no se pudo verificar.
+
+Cuenta: `act_1159622151150228`.
 
 ```python
 # insights por campaña del periodo del reporte
