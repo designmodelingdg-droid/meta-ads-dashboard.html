@@ -30,7 +30,33 @@ los secretos que viven cifrados en GitHub. Los datos se commitean al repo:
 | `matriz-viral/fuentes/ads-insights/` | gasto por campaña, adset, día y país | `META_TOKEN` |
 | `matriz-viral/matriz/matriz.json` | métricas orgánicas | `META_TOKEN` |
 
-El CRM se lee aparte, en vivo, con el conector de GoHighLevel (Windsor).
+El CRM se lee de dos formas: el conector de Windsor, y —desde el 15-ago— la
+API directa de GoHighLevel con `GHL_TOKEN`, que abre más puertas que Windsor.
+
+**Lo que abre la API directa** (comprobado el 15-ago, 14 de 19 endpoints):
+conversaciones (24.406), etiquetas (478), transacciones de pago (393),
+órdenes (161), workflows (148), campos propios (88), suscripciones (58),
+formularios (44), contactos, oportunidades, pipelines, calendarios y encuestas.
+
+**Lo que NO abre, y por qué —la distinción importa:**
+
+| Ruta | Código | Qué significa de verdad |
+|---|---|---|
+| `/courses/products`, `/memberships/` | 404 | La ruta **no existe** en la API pública |
+| `/membership/locations/{id}/...` | 401 | La ruta **existe**, el token no está autorizado |
+| `/calendars/events` | 422 | Funciona; pide `calendarId` y `startTime` |
+| v1 (`rest.gohighlevel.com`) | 401 | El token es de v2. Normal |
+
+El **progreso de alumnos no se puede bajar por API**. Verificado contra la
+documentación oficial de HighLevel: es una petición abierta de la comunidad,
+no un permiso que falte. Si alguien pregunta, la respuesta es esa — y se saca
+a mano desde Memberships.
+
+> **Cuidado con los 403 de GoHighLevel.** Si la petición no lleva User-Agent de
+> navegador, Cloudflare bloquea la IP con un Error 1010 que **parece** falta de
+> permisos. El 15-ago los 19 endpoints dieron 403 por eso y se reportó que el
+> token no servía. Servía. Antes de concluir nada de un 403, hay que mirar el
+> cuerpo de la respuesta.
 
 > **Si un archivo falta o está viejo:** se corre la Action a mano en
 > **Actions → Métricas semanales → Run workflow**. Nunca se pide un token en el
