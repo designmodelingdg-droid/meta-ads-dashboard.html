@@ -20,7 +20,7 @@ Notas:
     de la mitad del alcance real).
   - Nunca inventa datos: la métrica que Meta no devuelve queda vacía.
 """
-import json, os, re, sys, time, urllib.parse, urllib.request
+import datetime, json, os, re, sys, time, urllib.parse, urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MATRIZ = os.path.join(ROOT, "matriz-viral", "matriz", "matriz.json")
@@ -208,8 +208,26 @@ def main():
         print("(--dry-run: no se escribió nada)"); return
     m["reels"].sort(key=lambda r: (r.get("views") is None, -(r.get("views") or 0)))
     m["total_reels"] = len(m["reels"])
+
+    # Sello de frescura. Son DOS fechas distintas y hay que separarlas:
+    #
+    #   generado    = el barrido completo, cuando se construyó toda la matriz.
+    #   actualizado = esta corrida, que solo refresca las últimas `limit`
+    #                 piezas. Las más viejas conservan sus números de entonces.
+    #
+    # Hasta hoy solo existía `generado`, y esta función no lo tocaba: la matriz
+    # se refrescaba de verdad pero seguía sellada el 28-jul. El asistente la
+    # anunciaba como «datos de hace 18 días» cuando eran de esa mañana, y se
+    # reportó como si el refresco estuviera roto. No lo estaba: mentía el sello.
+    hoy = datetime.date.today().isoformat()
+    m["actualizado"] = hoy
+    m["actualizado_piezas"] = upd + new
+    m["actualizado_fuente"] = "Meta Graph API (oficial)"
+    m.setdefault("generado", hoy)
+
     json.dump(m, open(MATRIZ, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-    print(f"✓ matriz.json actualizado ({m['total_reels']} piezas)")
+    print(f"✓ matriz.json actualizado ({m['total_reels']} piezas · "
+          f"{upd + new} refrescadas hoy · barrido completo del {m['generado']})")
 
 
 if __name__ == "__main__":
