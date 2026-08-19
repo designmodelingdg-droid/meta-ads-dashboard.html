@@ -302,3 +302,32 @@ Cosas que ya costaron una corrida. No repetirlas:
 - **El cuello de botella:** los reels generan vistas pero casi cero comentarios,
   y las piezas de venta directa son las de peor rendimiento de toda la muestra.
   El problema no es alcance: es que el contenido no invita a conversar.
+
+---
+
+## 12. La matriz mensual, de principio a fin
+
+Cuando Dayana pide «la matriz del mes» o «qué publico en septiembre», el skill
+es **`matriz-mensual`**. Estas son las cinco piezas encadenadas, que conviene
+tener claras aunque el skill haga el trabajo:
+
+```
+matriz.json           lo que PASÓ    · 151 piezas con métricas reales de Meta
+patrones-de-viralidad por qué pasó   · qué formato y qué eje funcionan
+guiones-completos     qué publicar   · 44 piezas escritas palabra por palabra
+calendario-<mes>      cuándo         · qué pieza, qué día, en qué red
+build_matriz_docx.js  el entregable  · el Word del mes, 10 secciones
+```
+
+**Nada se escribe a mano en el Word.** Si un dato está mal se corrige en su
+archivo y se regenera; editar el Word se pierde en la siguiente corrida.
+
+Dos secciones se calculan solas cada vez, y por eso no envejecen: el **análisis
+de contenido** sale de `matriz.json` y el **análisis de pauta** de
+`fuentes/ads-insights/` cruzado con `fuentes/ingresos/`. Si una fuente falta, el
+documento lo dice en rojo. Nunca se rellena el hueco de memoria.
+
+Los leads de pauta llegan por dos vías que Meta cuenta distinto —formulario
+(`lead`) y WhatsApp (`messaging_conversation_started_7d`)— y hay que sumar las
+dos. Mirar solo la primera deja fuera las campañas de mejor CPL, que son las que
+más clientes traen.

@@ -1,0 +1,193 @@
+{
+ "generado": "2026-08-16",
+ "mes": "2026-09",
+ "subtitulo": "Desarrollo completo de cada pieza, red por red",
+ "nota": "Orden de publicacion de septiembre 2026. Cada entrada apunta por `id` a la pieza de guiones-completos.json, que es donde vive el contenido palabra por palabra. Construido sobre las piezas que quedaron sin usar en agosto, priorizando NUCLEO sobre OBRA segun el diagnostico de la matriz.",
+ "reglas_del_mes": [
+  "Minimo 60% de las piezas del NUCLEO (BIM / IA / modelado / acero). En septiembre son 16 de 18: 89%.",
+  "Cero piezas de OBRA en el calendario. Da alcance, pero trae publico que no compra.",
+  "Cerrar SIEMPRE con pregunta directa + CTA de comentar. Sin pregunta = cero comentarios.",
+  "El humor va en REEL, nunca en post plano.",
+  "Publicar tambien en Facebook, y no como auto-repost: mas de la mitad del alcance real viene de ahi.",
+  "Un slot de venta por semana, los jueves, siempre en historias."
+ ],
+ "piezas": [
+  {
+   "fecha": "Mar 1",
+   "semana": "Semana 1 (1-6 sep)",
+   "id": "ago-3-senales-bim-ia",
+   "tipo": "valor",
+   "formato_publicacion": "CARRUSEL (8 slides)",
+   "redes": "Instagram + Facebook · LinkedIn",
+   "nota": "Arranca el mes con el formato de mejor engagement de la cuenta. CTA: comenta BIM o IA."
+  },
+  {
+   "fecha": "Jue 3",
+   "semana": "Semana 1 (1-6 sep)",
+   "id": "venta-acero-cupos",
+   "tipo": "venta-blanda",
+   "formato_publicacion": "HISTORIA (3 cuadros)",
+   "redes": "Instagram (historias)",
+   "nota": "Slot de venta del jueves. ACTUALIZAR el numero de cupos antes de publicar."
+  },
+  {
+   "fecha": "Vie 4",
+   "semana": "Semana 1 (1-6 sep)",
+   "id": "ago-tip-revit-ia",
+   "tipo": "valor",
+   "formato_publicacion": "POST",
+   "redes": "Instagram + Facebook",
+   "nota": "La pieza mas comentada de agosto (27 comentarios). Se repite el angulo, no el texto."
+  },
+  {
+   "fecha": "Sab 5",
+   "semana": "Semana 1 (1-6 sep)",
+   "id": "ago-blog-ia-arquitectura",
+   "tipo": "blog",
+   "formato_publicacion": "BLOG + POST de anuncio",
+   "redes": "Blog del sitio · se anuncia en IG/FB",
+   "nota": "Blog de la semana. El post de anuncio lleva el enlace, no el resumen entero."
+  },
+  {
+   "fecha": "Lun 7",
+   "semana": "Semana 2 (7-13 sep)",
+   "id": "ago-chatgpt-revit",
+   "tipo": "valor",
+   "formato_publicacion": "REEL (45-60 s)",
+   "redes": "Instagram + Facebook · LinkedIn · TikTok",
+   "nota": "Semana de grabacion. Se graban Lun 7 y Mie 9 el mismo dia."
+  },
+  {
+   "fecha": "Mie 9",
+   "semana": "Semana 2 (7-13 sep)",
+   "id": "ago-dynamo-revit",
+   "tipo": "valor",
+   "formato_publicacion": "REEL (45-60 s)",
+   "redes": "Instagram + Facebook · LinkedIn · TikTok",
+   "nota": "Automatizacion: el tema con mejor guardado del nucleo."
+  },
+  {
+   "fecha": "Jue 10",
+   "semana": "Semana 2 (7-13 sep)",
+   "id": "venta-acero-objecion",
+   "tipo": "venta-blanda",
+   "formato_publicacion": "HISTORIA (4 cuadros)",
+   "redes": "Instagram (historias)",
+   "nota": "Slot de venta. El frame de cierre pide responder ACERO: requiere el bot montado."
+  },
+  {
+   "fecha": "Vie 11",
+   "semana": "Semana 2 (7-13 sep)",
+   "id": "ago-comu-opinion-alumnos",
+   "tipo": "comunidad",
+   "formato_publicacion": "POST (carrusel de capturas)",
+   "redes": "Instagram + Facebook",
+   "nota": "Prueba social. Usar capturas reales de la pagina de testimonios."
+  },
+  {
+   "fecha": "Sab 12",
+   "semana": "Semana 2 (7-13 sep)",
+   "id": "ago-blog-etabs-sap2000",
+   "tipo": "blog",
+   "formato_publicacion": "BLOG + POST de anuncio",
+   "redes": "Blog del sitio · se anuncia en IG/FB",
+   "nota": "Comparativa: el formato que mas trafico de busqueda trae."
+  },
+  {
+   "fecha": "Lun 14",
+   "semana": "Semana 3 (14-20 sep)",
+   "id": "ago-navisworks-coordinacion",
+   "tipo": "valor",
+   "formato_publicacion": "CARRUSEL (7 slides)",
+   "redes": "Instagram + Facebook · LinkedIn",
+   "nota": "Coordinacion: publico de BIM Manager, que es quien compra el Master."
+  },
+  {
+   "fecha": "Mie 16",
+   "semana": "Semana 3 (14-20 sep)",
+   "id": "ago-mitos-automatizacion",
+   "tipo": "valor",
+   "formato_publicacion": "REEL (45-60 s)",
+   "redes": "Instagram + Facebook · LinkedIn · TikTok",
+   "nota": "Mitos vs realidad: estructura de alto guardado."
+  },
+  {
+   "fecha": "Jue 17",
+   "semana": "Semana 3 (14-20 sep)",
+   "id": "venta-master-espejo",
+   "tipo": "venta-blanda",
+   "formato_publicacion": "HISTORIA (4 cuadros)",
+   "redes": "Instagram (historias)",
+   "nota": "Slot de venta del Master. NUNCA precio: el objetivo es abrir conversacion."
+  },
+  {
+   "fecha": "Vie 18",
+   "semana": "Semana 3 (14-20 sep)",
+   "id": "ago-comu-dia-proyecto-internacional",
+   "tipo": "comunidad",
+   "formato_publicacion": "POST",
+   "redes": "Instagram + Facebook",
+   "nota": "Cara humana del equipo. Sin CTA de venta."
+  },
+  {
+   "fecha": "Sab 19",
+   "semana": "Semana 3 (14-20 sep)",
+   "id": "ago-blog-elegir-software-estructuras",
+   "tipo": "blog",
+   "formato_publicacion": "BLOG + POST de anuncio",
+   "redes": "Blog del sitio · se anuncia en IG/FB",
+   "nota": "Blog de decision de compra: alto intento."
+  },
+  {
+   "fecha": "Lun 21",
+   "semana": "Semana 4 (21-30 sep)",
+   "id": "ago-errores-modelar-revit",
+   "tipo": "valor",
+   "formato_publicacion": "CARRUSEL (8 slides)",
+   "redes": "Instagram + Facebook · LinkedIn",
+   "nota": "Errores comunes: el angulo que mas comentarios genera del nucleo."
+  },
+  {
+   "fecha": "Mie 23",
+   "semana": "Semana 4 (21-30 sep)",
+   "id": "ago-revit-ia-futuro",
+   "tipo": "valor",
+   "formato_publicacion": "REEL (45-60 s)",
+   "redes": "Instagram + Facebook · LinkedIn · TikTok",
+   "nota": "Cierra el arco de IA del mes."
+  },
+  {
+   "fecha": "Jue 24",
+   "semana": "Semana 4 (21-30 sep)",
+   "id": "ago-venta-especializacion-ia-bim",
+   "tipo": "venta-blanda",
+   "formato_publicacion": "CARRUSEL (6 slides)",
+   "redes": "Instagram + Facebook · LinkedIn",
+   "nota": "Unica venta blanda en feed del mes. Comenta IA."
+  },
+  {
+   "fecha": "Lun 28",
+   "semana": "Semana 4 (21-30 sep)",
+   "id": "ago-plugins-revit",
+   "tipo": "valor",
+   "formato_publicacion": "CARRUSEL (7 slides)",
+   "redes": "Instagram + Facebook · LinkedIn",
+   "nota": "Cierre de mes con productividad: tema de guardado alto."
+  }
+ ],
+ "pauta": [
+  "ads-acero-img2",
+  "ads-acero-geosplit",
+  "ads-master-wsp"
+ ],
+ "banco_reserva": [
+  "ago-python-bim",
+  "ago-derivas-deformaciones",
+  "ago-venta-paquete-autodesk",
+  "ago-venta-asesoria-carrera",
+  "ago-venta-ia-arquitectura",
+  "ago-comu-historia-exito",
+  "ago-comu-qa-bim-ia",
+  "ago-blog-bim-sostenibilidad"
+ ]
+}

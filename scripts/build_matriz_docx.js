@@ -1,12 +1,25 @@
 /**
- * Genera matriz-viral/entregables/Matriz-Contenido-Agosto-2026-DMA.docx
+ * Genera el Word de la matriz de contenido de UN MES.
  *
- * Fuentes (no se escribe nada a mano aquí):
- *   matriz-viral/matriz/calendario-agosto.json    → orden de publicación del mes
- *   matriz-viral/matriz/guiones-completos.json    → contenido completo de cada pieza
- *   matriz-viral/matriz/analisis-campanas.md      → datos de pauta (resumidos abajo)
+ *   node scripts/build_matriz_docx.js --mes 2026-09
+ *   node scripts/build_matriz_docx.js              (usa el calendario más reciente)
  *
- * Uso:  node scripts/build_matriz_docx.js
+ * POR QUÉ ESTÁ PARAMETRIZADO
+ *   Nació escrito a mano para agosto: el mes, el título, las reglas y la tabla
+ *   de campañas estaban incrustados en el código. Para septiembre habría que
+ *   duplicar el archivo, y a los dos meses las dos copias ya no coinciden.
+ *   Ahora el mes se pasa por argumento y lo editorial vive en el calendario.
+ *
+ * FUENTES (aquí no se escribe nada a mano)
+ *   matriz/calendario-<mes>.json   orden de publicación + reglas + CTA del mes
+ *   matriz/guiones-completos.json  el contenido completo de cada pieza
+ *   matriz/matriz.json             métricas reales, para el análisis de contenido
+ *   fuentes/ads-insights/          gasto y leads reales, para el análisis de pauta
+ *
+ * Las dos últimas las refresca sola la Action `metricas-semanales.yml`. Si
+ * faltan, el documento sale igual y DICE que faltan — nunca se inventa una
+ * cifra para rellenar un hueco.
+ *
  * Requiere: npm i docx
  */
 const {Document,Packer,Paragraph,TextRun,HeadingLevel,BorderStyle,ShadingType,PageBreak,
@@ -14,9 +27,51 @@ Table,TableRow,TableCell,WidthType}=require('docx');
 const fs=require('fs'), path=require('path');
 
 const ROOT=path.resolve(__dirname,'..');
-const CAL=JSON.parse(fs.readFileSync(path.join(ROOT,'matriz-viral/matriz/calendario-agosto.json'),'utf8'));
-const GUI=JSON.parse(fs.readFileSync(path.join(ROOT,'matriz-viral/matriz/guiones-completos.json'),'utf8'));
+const MATRIZ_DIR=path.join(ROOT,'matriz-viral/matriz');
+
+const MESES_ES=['enero','febrero','marzo','abril','mayo','junio','julio','agosto',
+  'septiembre','octubre','noviembre','diciembre'];
+
+/* Qué mes toca. Con --mes 2026-09 se pide uno; sin argumento se coge el
+   calendario más reciente que exista, que es lo que se quiere el 99% de las
+   veces y evita generar sin querer el documento del mes pasado. */
+function resolverCalendario(){
+  const i=process.argv.indexOf('--mes');
+  const files=fs.readdirSync(MATRIZ_DIR).filter(f=>/^calendario-.+\.json$/.test(f));
+  if(i>-1 && process.argv[i+1]){
+    const pedido=process.argv[i+1];
+    for(const f of files){
+      const j=JSON.parse(fs.readFileSync(path.join(MATRIZ_DIR,f),'utf8'));
+      if(j.mes===pedido) return {archivo:f,datos:j};
+    }
+    console.error(`ERROR: no hay calendario para ${pedido}.`);
+    console.error(`Calendarios disponibles: ${files.join(', ') || '(ninguno)'}`);
+    process.exit(1);
+  }
+  const todos=files.map(f=>({archivo:f,datos:JSON.parse(fs.readFileSync(path.join(MATRIZ_DIR,f),'utf8'))}))
+                   .filter(x=>x.datos.mes)
+                   .sort((a,b)=>a.datos.mes<b.datos.mes?1:-1);
+  if(!todos.length){console.error('ERROR: no hay ningún calendario-*.json');process.exit(1);}
+  return todos[0];
+}
+
+const {archivo:CAL_FILE,datos:CAL}=resolverCalendario();
+const GUI=JSON.parse(fs.readFileSync(path.join(MATRIZ_DIR,'guiones-completos.json'),'utf8'));
 const BY={}; GUI.piezas.forEach(p=>BY[p.id]=p);
+
+const [ANIO,MES_NUM]=CAL.mes.split('-');
+const MES_NOMBRE=MESES_ES[parseInt(MES_NUM,10)-1];
+const MES_TITULO=MES_NOMBRE.charAt(0).toUpperCase()+MES_NOMBRE.slice(1);
+
+/* Fuentes opcionales. Se leen con tolerancia a fallo a propósito: el documento
+   tiene que poder generarse aunque la Action no haya corrido todavía. */
+function leerJSON(rel){
+  try{ return JSON.parse(fs.readFileSync(path.join(ROOT,rel),'utf8')); }
+  catch(e){ return null; }
+}
+const MATRIZ=leerJSON('matriz-viral/matriz/matriz.json');
+const ADS=leerJSON('matriz-viral/fuentes/ads-insights/por-campana.json');
+const INGRESOS=leerJSON('matriz-viral/fuentes/ingresos/resumen.json');
 
 const NAVY="0E2438", ORANGE="C96A1C", GREY="5A6B7B", RED="A33B2A", LIGHT="F4F7FA", BOX="F7F9FB";
 
@@ -246,31 +301,44 @@ function renderPieza(entry,idx){
   return out;
 }
 
+/* Huecos de datos. Se juntan aquí y se avisan al final de la corrida y dentro
+   del propio documento: un Word que no dice qué le falta se lee como completo. */
+const faltantes=[];
+if(!MATRIZ)  faltantes.push('matriz.json (análisis de contenido)');
+if(!ADS)     faltantes.push('ads-insights (análisis de pauta)');
+if(!INGRESOS)faltantes.push('ingresos (retorno)');
+
 /* ═══════════════════════════════ PORTADA ═══════════════════════════════ */
 push(new Paragraph({spacing:{after:40},
   children:[new TextRun({text:"DESIGN MODELING ACADEMY",color:ORANGE,bold:true,size:20})]}));
 push(new Paragraph({heading:HeadingLevel.TITLE,spacing:{after:80},
-  children:[new TextRun({text:"Matriz de Contenido — Agosto 2026",color:NAVY,bold:true})]}));
+  children:[new TextRun({text:`Matriz de Contenido — ${MES_TITULO} ${ANIO}`,color:NAVY,bold:true})]}));
 push(new Paragraph({spacing:{after:200},
-  children:[new TextRun({text:"Desarrollo completo de cada pieza · incluye los pendientes de julio",
+  children:[new TextRun({text:CAL.subtitulo||"Desarrollo completo de cada pieza, red por red",
     color:GREY,italics:true,size:22})]}));
 push(P("Cada pieza viene desarrollada de principio a fin: el hook, el guion segundo a segundo de los reels, el texto de cada diapositiva de los carruseles con su dirección de imagen, la descripción completa de los posts planos, el copy de los anuncios de pauta y la adaptación a cada red."));
-push(P("Todo está construido sobre datos reales: la matriz viral de la cuenta (124 reels analizados) y el rendimiento de las campañas activas de los últimos 30 días."));
+push(P(`Todo está construido sobre datos reales: la matriz viral de la cuenta (${MATRIZ?MATRIZ.total_reels:'—'} piezas analizadas${MATRIZ&&MATRIZ.actualizado?', al '+MATRIZ.actualizado:''}) y el rendimiento real de las campañas.`));
 push(note("Cómo usar este documento: busca la fecha, copia el texto tal cual está en los bloques grises (están listos para pegar) y pásale a diseño el bloque «Imagen» de cada slide. El prompt de imágenes se pega directo en ChatGPT."));
 
 /* ═══════════════════════════════ 1 · REGLAS ═══════════════════════════════ */
 push(H1("1 · Las reglas del mes (probadas con tus datos)"));
-push(H2("Lo que SÍ funciona"));
-push(bul("Ángulo ganador: «la IA te da velocidad, el CRITERIO es tuyo» — 8.5% de engagement en 2 piezas."));
-push(bul("Herramientas gratuitas (lead magnets): el post de la calculadora se llevó el 70% del alcance del mes."));
-push(bul("Cerrar SIEMPRE con pregunta directa + CTA de comentar. Sin pregunta = 0 comentarios (comprobado 3 veces)."));
-push(bul("El humor va en REEL, nunca en post plano (meme estático: 1,321 views vs 4,700+ en video)."));
-push(bul("Publicar también en FACEBOOK, cuidado y no como auto-repost: 9,103 de las 11,193 views del post ganador vinieron de ahí."));
-push(H2("Lo que NO funciona"));
-push(bul("Promo de curso pura sin gancho: «3 FAQ SAP2000» tuvo 5,195 views y CERO comentarios y guardados."));
-push(bul("Hooks tipo trivia: «Los maestros del BIM» fue el peor del mes (538 views, 0 de todo)."));
-push(bul("Contenido de obra/construcción: da millones de views pero atrae público que NO compra."));
-push(note("Regla de oro del mes: ≥60% del contenido debe ser NÚCLEO (BIM · IA · modelado · acero), no obra."));
+/* Cada mes puede fijar las suyas en el calendario. Si no las trae, se usan las
+   de agosto, que salieron del analisis de 124 reels y siguen valiendo. */
+if(Array.isArray(CAL.reglas_del_mes) && CAL.reglas_del_mes.length){
+  CAL.reglas_del_mes.forEach(r=>push(bul(r)));
+}else{
+  push(H2("Lo que SI funciona"));
+  push(bul("Angulo ganador: «la IA te da velocidad, el CRITERIO es tuyo»."));
+  push(bul("Herramientas gratuitas (lead magnets): el post de la calculadora se llevo el 70% del alcance del mes."));
+  push(bul("Cerrar SIEMPRE con pregunta directa + CTA de comentar. Sin pregunta = 0 comentarios."));
+  push(bul("El humor va en REEL, nunca en post plano."));
+  push(bul("Publicar tambien en FACEBOOK, y no como auto-repost."));
+  push(H2("Lo que NO funciona"));
+  push(bul("Promo de curso pura sin gancho."));
+  push(bul("Hooks tipo trivia."));
+  push(bul("Contenido de obra/construccion: da millones de views pero atrae publico que NO compra."));
+}
+push(note("Regla de oro: al menos el 60% del contenido debe ser NUCLEO (BIM · IA · modelado · acero), no obra."));
 
 /* ═══════════════════════════════ 2 · CTAs ═══════════════════════════════ */
 push(H1("2 · Los CTA de este mes"));
@@ -282,27 +350,125 @@ push(tbl(["Producto","Palabra","Formato del CTA","Cuándo usarlo"],[
 ],[2300,1200,3000,3700]));
 push(note("En LinkedIn NUNCA se usa «comenta la palabra» — ahí va una pregunta abierta o «escríbeme por DM». En TikTok: «link en bio»."));
 
-/* ═══════════════════════════════ 3 · CAMPAÑAS ═══════════════════════════════ */
+/* ═══════════════════════════════ 3 · PAUTA ═══════════════════════════════ */
+/* Antes esta tabla estaba escrita a mano con los números de julio, y en
+   septiembre habría mentido sin que nadie lo notara. Ahora sale de
+   fuentes/ads-insights/, que refresca la Action dos veces por semana. */
 push(pageBreak());
-push(H1("3 · Qué está trayendo clientes (campañas reales, últimos 30 días)"));
-push(P("Datos de tu cuenta publicitaria: $1,474 invertidos · 1,873 leads · CPL promedio $0.79."));
-push(tbl(["Leads","Campaña","CPL","Lectura"],[
- ["582","ESPE.1 ACERO – WhatsApp","$0.61","ACERO manda en volumen"],
- ["535","MÁSTER – Formulario V2","$0.71","El Máster convierte bien y sostenido"],
- ["486","ACERO geo-split – WSP + SMS","$0.45","EL MEJOR CPL. Segmentar por zona funciona"],
- ["125","MÁSTER BIM+IA – WSP API","$0.51","CPL excelente con $64. Hay que escalarla"],
- ["1","Curso SAP2000 – LANDING","$164.64","❌ La landing destruye el CPL"],
- ["0","Tráfico al perfil – IG","—","CTR 15% y cero leads. No genera negocio"],
-],[900,3300,1200,4800]));
-push(H2("Las 3 conclusiones para la pauta"));
-push(bul("WhatsApp gana siempre. Todos los ganadores van a WSP; la única landing hizo CPL $164 contra $0.45 del mejor."));
-push(bul("ACERO es el caballo de batalla: 1,086 leads combinados con el CPL más bajo. Por eso este mes suma 3 piezas orgánicas de acero."));
-push(bul("Los anuncios ganadores son IMÁGENES simples (el top, «IMG2»: 558 leads, CPL $0.58), no producciones caras."));
-push(note("Ojo con la métrica bonita: «Tráfico al perfil» tuvo el CTR más alto de la cuenta (15%) y cero negocio. El CTR sin conversión no es una buena campaña."));
+push(H1("3 · Qué está trayendo clientes (pauta real)"));
+
+if(ADS && Array.isArray(ADS.filas) && ADS.filas.length){
+  const num=v=>{const n=parseFloat(v);return isNaN(n)?0:n;};
+  const accion=(f,t)=>{const a=(f.actions||[]).find(x=>x.action_type===t);return a?num(a.value):0;};
+
+  /* Los leads llegan por DOS vías y Meta los cuenta distinto:
+       formulario  -> action_type 'lead' (o 'onsite_conversion.lead_grouped')
+       WhatsApp    -> 'onsite_conversion.messaging_conversation_started_7d'
+     Una campaña usa una u otra, nunca las dos, así que se suman sin duplicar.
+     Mirar solo 'lead' dejaba fuera las de WhatsApp, que son las de MEJOR CPL
+     y el grueso del volumen: la tabla habría dicho «— leads» sobre la campaña
+     que más clientes trae. */
+  const leadsDe=f=>(accion(f,'lead')||accion(f,'onsite_conversion.lead_grouped'))
+                  + accion(f,'onsite_conversion.messaging_conversation_started_7d');
+  const filas=ADS.filas.slice().sort((a,b)=>num(b.spend)-num(a.spend));
+  const gasto=filas.reduce((t,f)=>t+num(f.spend),0);
+  const leads=filas.reduce((t,f)=>t+leadsDe(f),0);
+  const vent=ADS.ventana||{};
+
+  push(P(`Cuenta publicitaria, ventana ${vent.desde||'—'} → ${vent.hasta||'—'}: `
+        +`$${gasto.toFixed(2)} invertidos`+(leads?` · ${leads} leads · CPL promedio $${(gasto/leads).toFixed(2)}`:'')+'.'));
+
+  push(tbl(["Campaña","Gasto","Leads","Vía","CPL"],
+    filas.filter(f=>num(f.spend)>0).slice(0,10).map(f=>{
+      const l=leadsDe(f), g=num(f.spend);
+      const wsp=accion(f,'onsite_conversion.messaging_conversation_started_7d');
+      const via=!l?'—':(wsp>l/2?'WhatsApp':'Formulario');
+      return [String(f.campaign_name||f.campana||'—').slice(0,46),
+              '$'+g.toFixed(2), l?String(l):'—', via, l?'$'+(g/l).toFixed(2):'—'];
+    }),[4200,1300,1100,1600,1000]));
+
+  /* Campañas con gasto y CERO leads: es el hallazgo que más dinero ahorra y el
+     que más fácil se pasa por alto, porque suelen tener buen CTR. */
+  const enCero=filas.filter(f=>num(f.spend)>5 && leadsDe(f)===0);
+  if(enCero.length){
+    const perdido=enCero.reduce((t,f)=>t+num(f.spend),0);
+    push(note(`⚠️ ${enCero.length} campaña(s) gastaron $${perdido.toFixed(2)} sin un solo lead: `
+      +enCero.map(f=>String(f.campaign_name).slice(0,40)).join(' · ')
+      +'. Un CTR alto sin conversión no es una buena campaña.'));
+  }
+
+  const sinGasto=filas.filter(f=>num(f.spend)===0).length;
+  if(sinGasto) push(note(`${sinGasto} campaña(s) sin gasto en la ventana: están pausadas o sin entregar. No se listan.`));
+
+  if(INGRESOS && INGRESOS.total_neto!=null && gasto>0){
+    push(H2("Lo que volvió de verdad"));
+    push(P(`Cobrado en el periodo: $${Number(INGRESOS.total_neto).toLocaleString('es',{minimumFractionDigits:2})}. `
+          +`Por cada dólar de pauta volvieron $${(Number(INGRESOS.total_neto)/gasto).toFixed(2)}.`));
+    push(note("Es lo COBRADO en Stripe y PayPal, no lo que el CRM marcó ganado ni lo que estimó el píxel. No todo es atribuible a la pauta: hay orgánico y recompra."));
+  }
+}else{
+  push(P("No hay datos de pauta para este documento.",{run:{color:RED,bold:true}}));
+  push(note("Se generan solos con la Action «Métricas semanales» (Actions → Run workflow). Se deja el hueco a la vista a propósito: rellenarlo de memoria es como se publican cifras equivocadas."));
+}
+
+/* ═══════════════════════════════ 4 · CONTENIDO ═══════════════════════════════ */
+/* El diagnóstico que ordena todo el mes, recalculado cada vez. Escrito a mano
+   envejece: en julio OBRA era el 62% de las piezas y hoy es otra cifra. Un
+   documento que repite el porcentaje del mes pasado deja de ser diagnóstico
+   y pasa a ser una frase. */
+push(pageBreak());
+push(H1("4 · Cómo va el contenido (tu cuenta, datos reales)"));
+
+if(MATRIZ && Array.isArray(MATRIZ.reels) && MATRIZ.reels.length){
+  const R=MATRIZ.reels;
+  const vistas=R.map(r=>r.views||0).filter(Boolean).sort((a,b)=>a-b);
+  const mediana=vistas.length?vistas[Math.floor(vistas.length/2)]:0;
+  const totalViews=R.reduce((t,r)=>t+(r.views||0),0);
+
+  const porEje={};
+  R.forEach(r=>{const e=r.eje||'sin clasificar';
+    porEje[e]=porEje[e]||{piezas:0,views:0};
+    porEje[e].piezas++; porEje[e].views+=r.views||0;});
+
+  push(P(`${R.length} piezas analizadas · ${totalViews.toLocaleString('es')} vistas · mediana ${mediana.toLocaleString('es')}`
+        +(MATRIZ.actualizado?` · refrescado el ${MATRIZ.actualizado}`:'')+'.'));
+
+  push(tbl(["Eje","Piezas","% piezas","% del alcance"],
+    Object.entries(porEje).sort((a,b)=>b[1].views-a[1].views).map(([e,d])=>[
+      e, String(d.piezas),
+      (100*d.piezas/R.length).toFixed(0)+'%',
+      (totalViews?(100*d.views/totalViews).toFixed(1):'0')+'%']),
+    [3600,1300,1800,2500]));
+
+  const obra=porEje['OBRA'];
+  if(obra && totalViews){
+    push(note(`OBRA se lleva el ${(100*obra.views/totalViews).toFixed(1)}% del alcance con el `
+      +`${(100*obra.piezas/R.length).toFixed(0)}% de las piezas — y trae publico que mira pero no compra. `
+      +'El formato viral funciona; el tema es el que hay que mover al nucleo BIM+IA.'));
+  }
+
+  /* Lo que de verdad se puede repetir: no lo mas visto, sino lo mas COMENTADO.
+     El comentario es lo que dispara el bot; las vistas no disparan nada. */
+  const conCom=R.filter(r=>r.comentarios).sort((a,b)=>b.comentarios-a.comentarios).slice(0,6);
+  if(conCom.length){
+    push(H2("Las piezas que mas conversacion generaron"));
+    push(P("Ordenadas por comentarios, no por vistas: el comentario es lo que dispara el bot y abre la venta.",{run:{color:GREY,italics:true}}));
+    push(tbl(["Comentarios","Vistas","Eje","Pieza"],
+      conCom.map(r=>[String(r.comentarios),(r.views||0).toLocaleString('es'),
+        r.eje||'s/c',String(r.tema||r.hook||'—').slice(0,58)]),
+      [1500,1500,1700,4500]));
+  }
+
+  const sinEje=R.filter(r=>!r.eje).length;
+  if(sinEje) push(note(`${sinEje} pieza(s) estan sin clasificar por eje. Hasta que se les ponga, no cuentan en el diagnostico de arriba.`));
+}else{
+  push(P("No hay matriz de contenido disponible para este documento.",{run:{color:RED,bold:true}}));
+  push(note("Se refresca sola con la Action «Metricas semanales». El hueco se deja a la vista a proposito."));
+}
 
 /* ═══════════════════════════════ 4 · CALENDARIO ═══════════════════════════════ */
 push(pageBreak());
-push(H1("4 · Calendario del mes de un vistazo"));
+push(H1("5 · Calendario del mes de un vistazo"));
 push(P("El desarrollo completo de cada una está en la sección 5, en este mismo orden.",{run:{color:GREY,italics:true}}));
 const ICON={valor:'🎯 valor','venta-blanda':'💰 venta',blog:'📝 blog',comunidad:'👥 comunidad',
   empresa:'🏛️ empresa',youtube:'▶️ YouTube'};
@@ -314,7 +480,7 @@ push(note("Semana 1 arranca con dos carruseles porque es el formato de mejor eng
 
 /* ═══════════════════════════════ 5 · DESARROLLO ═══════════════════════════════ */
 push(pageBreak());
-push(H1("5 · Desarrollo completo, pieza por pieza"));
+push(H1("6 · Desarrollo completo, pieza por pieza"));
 push(P("Todo lo que está en bloque gris se copia y se pega tal cual. Lo que está en cursiva junto al ícono 🖼 es la indicación para diseño.",{run:{color:GREY,italics:true}}));
 let semanaActual=null;
 CAL.piezas.forEach((e,i)=>{
@@ -324,7 +490,7 @@ CAL.piezas.forEach((e,i)=>{
 
 /* ═══════════════════════════════ 6 · HISTORIAS ═══════════════════════════════ */
 push(pageBreak());
-push(H1("6 · HISTORIAS — cómo se convierte con stories"));
+push(H1("7 · HISTORIAS — cómo se convierte con stories"));
 const HR=GUI.historias_rutina;
 push(P(HR.nota,{run:{color:GREY,italics:true}}));
 push(H2("Las 8 reglas"));
@@ -352,7 +518,7 @@ push(note("Cada pieza del mes tiene su secuencia de historias escrita frame por 
 
 /* ═══════════════════════════════ 7 · PAUTA ═══════════════════════════════ */
 push(pageBreak());
-push(H1("7 · VENTA y PAUTA — los anuncios (copy listo)"));
+push(H1("8 · VENTA y PAUTA — los anuncios (copy listo)"));
 push(P("Estas piezas SÍ venden y van a pauta. Todas llevan a WhatsApp — nunca a landing. El dato es contundente: landing = CPL $164.64 · WhatsApp = CPL $0.45.",{run:{color:RED,bold:true}}));
 push(H2("Cómo se separa el contenido de valor del de venta"));
 push(tbl(["","CONTENIDO DE VALOR (orgánico)","VENTA / PAUTA (ads)"],[
@@ -370,7 +536,7 @@ CAL.pauta.forEach((id,i)=>push(renderPieza({id,fecha:'ANUNCIO '+(i+1),
 
 /* ═══════════════════════════════ 7 · BANCO DE RESERVA ═══════════════════════════════ */
 push(pageBreak());
-push(H1("8 · Banco de reserva (piezas listas por si se cae alguna)"));
+push(H1("9 · Banco de reserva (piezas listas por si se cae alguna)"));
 push(P("Estas piezas ya tienen su contenido completo escrito. Si una fecha se cae o quieres reforzar una red concreta, se toma de aquí sin tener que crear nada.",{run:{color:GREY}}));
 push(tbl(["Pieza","Formato","Red pensada","Hook"],
   CAL.banco_reserva.filter(id=>BY[id]).map(id=>{const p=BY[id];
@@ -379,7 +545,7 @@ push(tbl(["Pieza","Formato","Red pensada","Hook"],
 push(note("El contenido palabra por palabra de todas estas piezas está en el archivo guiones-completos.json del repositorio, que es el mismo que lee la app de contenido."));
 
 /* ═══════════════════════════════ 8 · CIERRE ═══════════════════════════════ */
-push(H1("9 · Resumen operativo y checklist"));
+push(H1("10 · Resumen operativo y checklist"));
 const cuenta={};
 CAL.piezas.forEach(e=>{const f=(e.formato_publicacion.split(' ')[0]||'').toUpperCase();
   cuenta[f]=(cuenta[f]||0)+1;});
@@ -406,6 +572,8 @@ push(new Paragraph({spacing:{before:340},
 const doc=new Document({styles:{default:{document:{run:{font:"Calibri"}}}},
  sections:[{properties:{page:{size:{width:12240,height:15840},
    margin:{top:900,bottom:900,left:900,right:900}}},children:b}]});
-const OUT=path.join(ROOT,'matriz-viral/entregables/Matriz-Contenido-Agosto-2026-DMA.docx');
+const OUT=path.join(ROOT,`matriz-viral/entregables/Matriz-Contenido-${MES_TITULO}-${ANIO}-DMA.docx`);
 Packer.toBuffer(doc).then(buf=>{fs.writeFileSync(OUT,buf);
-  console.log('OK →',OUT,(buf.length/1024).toFixed(0)+' KB');});
+  console.log(`OK → ${OUT} (${(buf.length/1024).toFixed(0)} KB)`);
+  console.log(`   mes ${CAL.mes} · ${CAL.piezas.length} piezas · calendario ${CAL_FILE}`);
+  if(faltantes.length) console.log('   ⚠️ sin dato: '+faltantes.join(', '));});
