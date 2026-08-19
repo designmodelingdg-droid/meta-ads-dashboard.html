@@ -1,0 +1,237 @@
+{
+  "generado": "2026-08-19",
+  "location": "nkKbOarn5IwHeMv48uY9",
+  "nota": "Sonda: comprueba QUE endpoints responden con nuestro token. No baja datos de negocio. Lo importante es si abren 'cursos · productos' y 'membresias': ahi vive el progreso de los alumnos, que Windsor NO expone.",
+  "resultados": {
+    "contactos": {
+      "ok": true,
+      "http": 200,
+      "registros": "1+",
+      "claves": [
+        "contacts",
+        "meta",
+        "traceId"
+      ],
+      "ruta": "/contacts/?locationId=nkKbOarn5IwHeMv48uY9&limit=1"
+    },
+    "oportunidades": {
+      "ok": true,
+      "http": 200,
+      "registros": "1+",
+      "claves": [
+        "meta",
+        "opportunities",
+        "traceId"
+      ],
+      "ruta": "/opportunities/search?location_id=nkKbOarn5IwHeMv48uY9&limit=1"
+    },
+    "pipelines": {
+      "ok": true,
+      "http": 200,
+      "registros": "5+",
+      "claves": [
+        "pipelines",
+        "traceId"
+      ],
+      "ruta": "/opportunities/pipelines?locationId=nkKbOarn5IwHeMv48uY9"
+    },
+    "cursos · productos": {
+      "ok": false,
+      "http": 404,
+      "detalle": "{\"statusCode\":404,\"message\":\"Cannot GET /courses/products?locationId=nkKbOarn5IwHeMv48uY9&limit=1\",\"error\":\"Not Found\"}",
+      "lectura": "la ruta no existe en la API (no es cuestión de permisos)",
+      "bloqueo_cloudflare": false,
+      "ruta": "/courses/products?locationId=nkKbOarn5IwHeMv48uY9&limit=1"
+    },
+    "membresías": {
+      "ok": false,
+      "http": 404,
+      "detalle": "",
+      "lectura": "la ruta no existe en la API (no es cuestión de permisos)",
+      "bloqueo_cloudflare": false,
+      "ruta": "/memberships/?locationId=nkKbOarn5IwHeMv48uY9&limit=1"
+    },
+    "membership · productos": {
+      "ok": false,
+      "http": 401,
+      "detalle": "{\"error\":\"You are not authorized to make this request\"}",
+      "lectura": "el token no autentica aquí",
+      "bloqueo_cloudflare": false,
+      "ruta": "/membership/locations/nkKbOarn5IwHeMv48uY9/products"
+    },
+    "membership · raíz": {
+      "ok": false,
+      "http": 401,
+      "detalle": "{\"error\":\"You are not authorized to make this request\"}",
+      "lectura": "el token no autentica aquí",
+      "bloqueo_cloudflare": false,
+      "ruta": "/membership/locations/nkKbOarn5IwHeMv48uY9"
+    },
+    "calendarios": {
+      "ok": true,
+      "http": 200,
+      "registros": "10+",
+      "claves": [
+        "calendars",
+        "traceId"
+      ],
+      "ruta": "/calendars/?locationId=nkKbOarn5IwHeMv48uY9"
+    },
+    "citas agendadas": {
+      "ok": false,
+      "http": 422,
+      "detalle": "{\"message\":[\"Either of userId, calendarId or groupId is required\",\"startTime must be a string\",\"endTime must be a string\"],\"error\":\"Unprocessable Entity\",\"statu",
+      "lectura": "la ruta existe y el token entra: faltan parámetros",
+      "bloqueo_cloudflare": false,
+      "ruta": "/calendars/events?locationId=nkKbOarn5IwHeMv48uY9"
+    },
+    "formularios": {
+      "ok": true,
+      "http": 200,
+      "registros": 44,
+      "claves": [
+        "forms",
+        "total",
+        "traceId"
+      ],
+      "ruta": "/forms/?locationId=nkKbOarn5IwHeMv48uY9&limit=1"
+    },
+    "envíos de formulario": {
+      "ok": true,
+      "http": 200,
+      "registros": "1+",
+      "claves": [
+        "meta",
+        "submissions",
+        "traceId"
+      ],
+      "ruta": "/forms/submissions?locationId=nkKbOarn5IwHeMv48uY9&limit=1"
+    },
+    "encuestas": {
+      "ok": true,
+      "http": 200,
+      "registros": 0,
+      "claves": [
+        "surveys",
+        "total",
+        "traceId"
+      ],
+      "ruta": "/surveys/?locationId=nkKbOarn5IwHeMv48uY9&limit=1"
+    },
+    "workflows": {
+      "ok": true,
+      "http": 200,
+      "registros": "148+",
+      "claves": [
+        "traceId",
+        "workflows"
+      ],
+      "ruta": "/workflows/?locationId=nkKbOarn5IwHeMv48uY9"
+    },
+    "etiquetas": {
+      "ok": true,
+      "http": 200,
+      "registros": "479+",
+      "claves": [
+        "tags",
+        "traceId"
+      ],
+      "ruta": "/locations/nkKbOarn5IwHeMv48uY9/tags"
+    },
+    "campos propios": {
+      "ok": true,
+      "http": 200,
+      "registros": "88+",
+      "claves": [
+        "customFields",
+        "traceId"
+      ],
+      "ruta": "/locations/nkKbOarn5IwHeMv48uY9/customFields"
+    },
+    "conversaciones": {
+      "ok": true,
+      "http": 200,
+      "registros": 24691,
+      "claves": [
+        "conversations",
+        "total",
+        "traceId"
+      ],
+      "ruta": "/conversations/search?locationId=nkKbOarn5IwHeMv48uY9&limit=1"
+    },
+    "pagos · órdenes": {
+      "ok": true,
+      "http": 200,
+      "registros": 161,
+      "claves": [
+        "data",
+        "totalCount",
+        "traceId"
+      ],
+      "ruta": "/payments/orders?altId=nkKbOarn5IwHeMv48uY9&altType=location&limit=1"
+    },
+    "pagos · suscripciones": {
+      "ok": true,
+      "http": 200,
+      "registros": 58,
+      "claves": [
+        "data",
+        "totalCount",
+        "traceId"
+      ],
+      "ruta": "/payments/subscriptions?altId=nkKbOarn5IwHeMv48uY9&altType=location&limit=1"
+    },
+    "pagos · transacciones": {
+      "ok": true,
+      "http": 200,
+      "registros": 394,
+      "claves": [
+        "data",
+        "totalCount",
+        "traceId"
+      ],
+      "ruta": "/payments/transactions?altId=nkKbOarn5IwHeMv48uY9&altType=location&limit=1"
+    },
+    "v1 · contactos": {
+      "ok": false,
+      "http": 401,
+      "detalle": "{\"msg\":\"Api key is invalid.\"}",
+      "lectura": "el token no autentica aquí",
+      "bloqueo_cloudflare": false,
+      "ruta": "/contacts/?limit=1"
+    },
+    "v1 · pipelines": {
+      "ok": false,
+      "http": 401,
+      "detalle": "{\"msg\":\"Api key is invalid.\"}",
+      "lectura": "el token no autentica aquí",
+      "bloqueo_cloudflare": false,
+      "ruta": "/pipelines/"
+    }
+  },
+  "abiertos": [
+    "contactos",
+    "oportunidades",
+    "pipelines",
+    "calendarios",
+    "formularios",
+    "envíos de formulario",
+    "encuestas",
+    "workflows",
+    "etiquetas",
+    "campos propios",
+    "conversaciones",
+    "pagos · órdenes",
+    "pagos · suscripciones",
+    "pagos · transacciones"
+  ],
+  "cerrados": [
+    "cursos · productos",
+    "membresías",
+    "membership · productos",
+    "membership · raíz",
+    "citas agendadas",
+    "v1 · contactos",
+    "v1 · pipelines"
+  ]
+}

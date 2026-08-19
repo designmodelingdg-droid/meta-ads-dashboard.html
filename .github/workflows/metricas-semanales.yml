@@ -18,7 +18,9 @@ name: Métricas semanales (Meta Graph API)
 
 on:
   schedule:
-    - cron: "0 13 * * 1"      # lunes 13:00 UTC (~08:00 Ecuador)
+    - cron: "0 13 * * 1"      # lunes 13:00 UTC (~08:00 Ecuador) — metricas organicas
+    - cron: "0 12 * * 5"      # viernes 12:00 UTC (~07:00 Ecuador) — datos de pauta,
+                              # antes de que llegue el reporte de la agencia
   workflow_dispatch:
     inputs:
       limit:
@@ -40,6 +42,7 @@ on:
 
 permissions:
   contents: write
+  actions: write      # para despertar a publish-matriz al final (ver ese paso)
 
 concurrency:
   group: metricas-semanales
@@ -74,7 +77,7 @@ jobs:
             git config user.email "noreply@anthropic.com"
             git add matriz-viral/fuentes/ads-creativos/
             git commit -m "Imagenes de anuncios ganadores (Meta Ads API)"
-            git push
+            git pull --rebase --autostash origin "$GITHUB_REF_NAME" && git push
           else
             echo "Sin creativos nuevos."
           fi
@@ -97,6 +100,32 @@ jobs:
           fi
           python3 scripts/meta_organico.py --limit "${{ github.event.inputs.limit || '30' }}"
 
+      - name: Traer datos reales de las campañas (para auditar el reporte)
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN }}
+        continue-on-error: true      # si falla, no rompe la actualización principal
+        run: python3 scripts/ads_insights.py --dias 30
+
+      - name: Traer ingresos reales (Stripe + PayPal)
+        env:
+          STRIPE_SECRET_KEY:  ${{ secrets.STRIPE_SECRET_KEY }}
+          CLIEND_ID_PAYPAL:   ${{ secrets.CLIEND_ID_PAYPAL }}
+          SECRET_KEY_PAYPAL:  ${{ secrets.SECRET_KEY_PAYPAL }}
+        continue-on-error: true      # si falla, no rompe la actualización principal
+        run: python3 scripts/ingresos.py --dias 30
+
+      - name: Sondar qué deja leer la API de GoHighLevel
+        env:
+          GHL_TOKEN: ${{ secrets.GHL_TOKEN }}
+        continue-on-error: true
+        run: python3 scripts/ghl_sonda.py
+
+      - name: Traer los datos del CRM (GoHighLevel)
+        continue-on-error: true
+        env:
+          GHL_TOKEN: ${{ secrets.GHL_TOKEN }}
+        run: python3 scripts/ghl_datos.py
+
       - name: Traer datos de la competencia
         env:
           META_TOKEN: ${{ secrets.META_TOKEN }}
@@ -104,14 +133,56 @@ jobs:
         run: python3 scripts/competencia.py
 
       - name: Commit si cambió
+        id: commit
         run: |
           set -euo pipefail
-          if git diff --quiet -- matriz-viral/matriz/; then
-            echo "Sin cambios en la matriz."
+          RUTAS="matriz-viral/matriz/ matriz-viral/fuentes/ads-insights/ matriz-viral/fuentes/ingresos/ matriz-viral/fuentes/ghl-sonda.json matriz-viral/fuentes/ghl/"
+          if git diff --quiet -- $RUTAS && ! git status --porcelain -- $RUTAS | grep -q .; then
+            echo "Sin cambios."
+            echo "cambios=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
+          echo "cambios=true" >> "$GITHUB_OUTPUT"
           git config user.name  "matriz-bot"
           git config user.email "noreply@anthropic.com"
-          git add matriz-viral/matriz/
+          git add matriz-viral/matriz/ matriz-viral/fuentes/ads-insights/ matriz-viral/fuentes/ingresos/ matriz-viral/fuentes/ghl-sonda.json matriz-viral/fuentes/ghl/
           git commit -m "Métricas semanales automáticas (Meta Graph API)"
-          git push
+          # Puede haber commits nuevos desde que arrancó la corrida: se rebasa
+          # antes de empujar. Sin esto el push se rechaza y se pierde el dato.
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin "$GITHUB_REF_NAME" && git push && exit 0
+            echo "Reintento $i…"; sleep 5
+          done
+          echo "::error::No se pudo empujar tras 3 intentos."; exit 1
+
+      # Sin este paso la matriz se refresca en git pero NUNCA se publica, y
+      # Patricio y el asistente siguen leyendo una versión de julio. Fue así
+      # hasta el 16-ago-2026: la Pages llevaba 148 piezas cuando el repo ya
+      # tenía 151.
+      #
+      # El motivo está en la documentación de GitHub: "if a workflow run pushes
+      # code using the repository's GITHUB_TOKEN, a new workflow will not run
+      # even when the repository contains a workflow configured to run when
+      # push events occur". Es decir, el commit de arriba no despierta a
+      # publish-matriz por diseño, para evitar bucles.
+      #
+      # La misma página da la salida: workflow_dispatch y repository_dispatch
+      # "always create workflow runs", también con el GITHUB_TOKEN. Así que se
+      # lo pide explícitamente.
+      - name: Publicar la matriz (despertar a publish-matriz)
+        if: steps.commit.outputs.cambios == 'true'
+        run: |
+          set -euo pipefail
+          codigo=$(curl -sS -o /tmp/resp.txt -w '%{http_code}' -X POST \
+            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/workflows/publish-matriz.yml/dispatches" \
+            -d "{\"ref\":\"${GITHUB_REF_NAME}\"}")
+          if [ "$codigo" = "204" ]; then
+            echo "publish-matriz lanzado sobre ${GITHUB_REF_NAME}."
+          else
+            # No se rompe la corrida: el dato ya está commiteado y a salvo.
+            # Pero se avisa, porque significa que la Pages se quedó vieja.
+            echo "::warning::No se pudo lanzar publish-matriz (HTTP $codigo). $(cat /tmp/resp.txt)"
+            echo "::warning::La matriz está en git pero la versión publicada sigue vieja."
+          fi
