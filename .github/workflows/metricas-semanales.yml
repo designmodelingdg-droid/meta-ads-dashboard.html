@@ -120,6 +120,12 @@ jobs:
         continue-on-error: true
         run: python3 scripts/ghl_sonda.py
 
+      - name: Traer los datos del CRM (GoHighLevel)
+        continue-on-error: true
+        env:
+          GHL_TOKEN: ${{ secrets.GHL_TOKEN }}
+        run: python3 scripts/ghl_datos.py
+
       - name: Traer datos de la competencia
         env:
           META_TOKEN: ${{ secrets.META_TOKEN }}
@@ -130,7 +136,7 @@ jobs:
         id: commit
         run: |
           set -euo pipefail
-          RUTAS="matriz-viral/matriz/ matriz-viral/fuentes/ads-insights/ matriz-viral/fuentes/ingresos/ matriz-viral/fuentes/ghl-sonda.json"
+          RUTAS="matriz-viral/matriz/ matriz-viral/fuentes/ads-insights/ matriz-viral/fuentes/ingresos/ matriz-viral/fuentes/ghl-sonda.json matriz-viral/fuentes/ghl/"
           if git diff --quiet -- $RUTAS && ! git status --porcelain -- $RUTAS | grep -q .; then
             echo "Sin cambios."
             echo "cambios=false" >> "$GITHUB_OUTPUT"
@@ -139,7 +145,7 @@ jobs:
           echo "cambios=true" >> "$GITHUB_OUTPUT"
           git config user.name  "matriz-bot"
           git config user.email "noreply@anthropic.com"
-          git add matriz-viral/matriz/ matriz-viral/fuentes/ads-insights/ matriz-viral/fuentes/ingresos/ matriz-viral/fuentes/ghl-sonda.json
+          git add matriz-viral/matriz/ matriz-viral/fuentes/ads-insights/ matriz-viral/fuentes/ingresos/ matriz-viral/fuentes/ghl-sonda.json matriz-viral/fuentes/ghl/
           git commit -m "Métricas semanales automáticas (Meta Graph API)"
           # Puede haber commits nuevos desde que arrancó la corrida: se rebasa
           # antes de empujar. Sin esto el push se rechaza y se pierde el dato.
