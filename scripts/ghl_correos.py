@@ -101,11 +101,60 @@ def plantillas():
                     "plantillas": [{"id": t.get("id") or t.get("_id"),
                                     "nombre": t.get("name") or t.get("templateName"),
                                     "tipo": t.get("templateType") or t.get("type"),
-                                    "actualizado": t.get("updatedAt") or t.get("dateUpdated")}
+                                    "previewUrl": t.get("previewUrl"),
+                                    "actualizado": t.get("lastUpdated") or t.get("updatedAt")}
                                    for t in filas]}
         fallos[ruta] = {"error": d["_error"], "lectura": d.get("_lectura")}
         time.sleep(0.3)
     return {"_error": "ninguna ruta de plantillas respondio", "intentos": fallos}
+
+
+
+def texto_de(html):
+    """Saca el texto legible de un HTML de correo, sin traerse el CSS."""
+    import re
+    h = re.sub(r"(?is)<(script|style|head)[^>]*>.*?</\1>", " ", html)
+    h = re.sub(r"(?i)<br\s*/?>", "\n", h)
+    h = re.sub(r"(?i)</(p|div|tr|h[1-6]|li)>", "\n", h)
+    t = re.sub(r"<[^>]+>", " ", h)
+    t = (t.replace("&nbsp;", " ").replace("&amp;", "&").replace("&quot;", '"')
+          .replace("&#39;", "'").replace("&lt;", "<").replace("&gt;", ">"))
+    lineas = [" ".join(l.split()) for l in t.split("\n")]
+    return "\n".join(l for l in lineas if l)
+
+
+def cuerpos(lista, tope=200):
+    """Baja el contenido de cada plantilla desde su previewUrl.
+
+    Se prueba primero SIN token: el enlace de vista previa suele ser publico,
+    y si lo es no hace falta mandar la credencial a un host distinto del de la
+    API. Solo si falla se reintenta con el token.
+    """
+    out, sin_url, fallos = [], 0, 0
+    for t in lista[:tope]:
+        url = t.get("previewUrl")
+        if not url:
+            sin_url += 1
+            continue
+        html = None
+        for cab in ({"User-Agent": UA},
+                    {"User-Agent": UA, "Authorization": f"Bearer {TOKEN}"}):
+            try:
+                r = urllib.request.Request(url, headers=cab)
+                with urllib.request.urlopen(r, timeout=40) as resp:
+                    html = resp.read().decode("utf-8", "replace")
+                break
+            except Exception:                    # noqa: BLE001
+                continue
+        if html is None:
+            fallos += 1
+            out.append({**t, "_error": "no se pudo abrir la vista previa"})
+            continue
+        cuerpo = texto_de(html)
+        out.append({**t, "caracteres_html": len(html), "cuerpo": cuerpo})
+        time.sleep(0.2)
+    return {"bajadas": len([x for x in out if x.get("cuerpo")]),
+            "sin_previewUrl": sin_url, "fallos": fallos, "plantillas": out}
 
 
 def main():
@@ -136,9 +185,22 @@ def main():
         print(f"   {p['total']} plantillas via {p['ruta_que_funciono']}")
         print(f"   campos disponibles: {', '.join(p['campos_de_una'])}")
 
+    if "_error" not in res["plantillas"]:
+        print("→ Contenido de cada plantilla…")
+        propias = [t for t in res["plantillas"]["plantillas"]
+                   if not str(t.get("nombre") or "").startswith("Default -")]
+        c = cuerpos(propias)
+        print(f"   {c['bajadas']} cuerpos bajados · {c['fallos']} fallos "
+              f"· {c['sin_previewUrl']} sin enlace de vista previa")
+        json.dump({"generado": res["generado"], **c},
+                  open(f"{SALIDA}/correos-contenido.json", "w", encoding="utf-8"),
+                  ensure_ascii=False, indent=1)
+        res["contenido"] = {"bajadas": c["bajadas"], "fallos": c["fallos"],
+                            "sin_previewUrl": c["sin_previewUrl"]}
+
     json.dump(res, open(f"{SALIDA}/correos.json", "w", encoding="utf-8"),
               ensure_ascii=False, indent=1)
-    print(f"\n   resultado en {SALIDA}/correos.json")
+    print(f"\n   resultado en {SALIDA}/correos.json y correos-contenido.json")
 
 
 if __name__ == "__main__":
