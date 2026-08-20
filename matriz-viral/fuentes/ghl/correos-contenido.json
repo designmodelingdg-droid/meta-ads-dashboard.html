@@ -1,0 +1,287 @@
+{
+ "generado": "2026-08-20",
+ "bajadas": 31,
+ "sin_previewUrl": 33,
+ "fallos": 0,
+ "plantillas": [
+  {
+   "id": "67e2c05305e9b7bf8663c427",
+   "nombre": "CORREO DE CERTIFICADOS",
+   "tipo": "builder",
+   "previewUrl": "https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/location%2FnkKbOarn5IwHeMv48uY9%2Femails%2F67e2c05305e9b7bf8663c427%2Findex.html?alt=media&token=095e9378-12c0-4f49-94f7-05a756754905",
+   "actualizado": "2025-03-25T15:06:38.261Z",
+   "caracteres_html": 9338,
+   "cuerpo": "Se le ha concedido un Certificado\n¡Felicitaciones {{contact.name}}!\nSe le ha otorgado un certificado por completar con éxito la formación especializada de {{subscription.global_product.name}}.\nPuedes visualizar el certificado en el siguente botón\nVer Certificado"
+  },
+  {
+   "id": "6877fa741e3249bb16fda029",
+   "nombre": "6- NO SE PRESENTÓ A LA CITA (master)",
+   "tipo": "builder",
+   "previewUrl": "https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/location%2FnkKbOarn5IwHeMv48uY9%2Femails%2F6877fa741e3249bb16fda029%2Findex.html?alt=media&token=3774fa58-0fbc-4d77-ada3-14d30f26d4d7",
+   "actualizado": "2025-07-16T19:17:02.350Z",
+   "caracteres_html": 10043,
+   "cuerpo": "Hola, {{ contact.firstname }}​\nEspero que todo esté bien.\nNoté que no pudiste asistir a la reunión programada, pero entiendo que surgen imprevistos. ¿Te gustaría reagendar para discutir cómo nuestro Diplomado Universitario Internacional BIM puede beneficiar tu trabajo?\nEstoy seguro de que esta herramienta revolucionaria puede optimizar tus proyectos y aumentar la eficiencia de tu equipo.\nNo pierdas la oportunidad de aprender más sobre la metodología BIM. Puedes reagendar en el botón del final del correo.\nQuedo a tu disposición para coordinar una nueva reunión. ¡Espero tu pronta respuesta!\nSaludos cordiales,\nIng. Gabriel Pantoja\n¡REAGENDA AQUÍ!"
+  },
+  {
+   "id": "688291662e0c3d1d67d5a4bc",
+   "nombre": "1- BIENVENIDA RESERVA DE CUPO MASTER",
+   "tipo": "builder",
+   "previewUrl": "https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/location%2FnkKbOarn5IwHeMv48uY9%2Femails%2F688291662e0c3d1d67d5a4bc%2Findex.html?alt=media&token=ae9e8b02-7118-46d7-9f0c-0d0a61ab5aa7",
+   "actualizado": "2025-07-24T20:08:37.582Z",
+   "caracteres_html": 8280,
+   "cuerpo": "Hola, {{ contact.firstname }}​\nBienvenido al Máster BIM Management + Inteligencia Artificial en la construcción, te enviamos un saludo desde todo el equipo Design Modeling Academy , Centro de entrenamiento Internacional con aval de Autodesk, CYPE y Aval Universitario en EE. UU. y Europa.\n¡Gracias por reservar tu cupo colega!\nEstaremos atentos a tu fecha de pago para completar tu registro y accesos al Máster BIM+IA.\nTe espero, saludos. 👋🏼\nIng. Gabriel Pantoja"
+  },
+  {
+   "id": "6894ddc6b72827a7605cfe70",
+   "nombre": "Communities - Send Invitation",
+   "tipo": "builder",
+   "previewUrl": "https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/location%2FnkKbOarn5IwHeMv48uY9%2Femails%2F6894ddc6b72827a7605cfe70%2Findex.html?alt=media&token=5f17afc2-3f20-426f-93a9-ef0da86ad355",
+   "actualizado": "2025-08-07T17:09:26.884Z",
+   "caracteres_html": 12911,
+   "cuerpo": "{{communities_contacts.requestorName}} invited you to join {{communities_group.name}}\nHey {{communities_contacts.receiverName}}\n{{communities_contacts.requestorName}} invited you to join the {{communities_group.name}} in their community.\nJoin now to start collaborating!\nAccept Invite\nLink will expire after 30 days."
+  },
+  {
+   "id": "6894dfef89d2086916ecbb5b",
+   "nombre": "Communities - Course Unlocked(Private Channel)",
+   "tipo": "builder",
+   "previewUrl": "https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/location%2FnkKbOarn5IwHeMv48uY9%2Femails%2F6894dfef89d2086916ecbb5b%2Findex.html?alt=media&token=16fbcddf-d985-4d8a-9923-aedb4feb8dc3",
+   "actualizado": "2025-08-07T17:18:39.834Z",
+   "caracteres_html": 12032,
+   "cuerpo": "Congratulations! A new course has been unlocked\nHey {{communities_contacts.receiverName}}\nYou've just unlocked the {{communities_course.productName}} course by joining the private channel {{communities_channels.name}}\nIt’s time to dive into your new learning experience and take your skills to the next level!\nView Course"
+  },
+  {
+   "id": "6894e08b2b9e24d9d49e2cb5",
+   "nombre": "Client Portal - Invoice Created",
+   "tipo": "builder",
+   "previewUrl": "https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/location%2FnkKbOarn5IwHeMv48uY9%2Femails%2F6894e08b2b9e24d9d49e2cb5%2Findex.html?alt=media&token=84e866bd-46a4-4824-858e-09037c06a036",
+   "actualizado": "2025-08-07T17:21:15.899Z",
+   "caracteres_html": 11355,
+   "cuerpo": "Hey {{invoice.recipientName}},\nGood news! A new Invoice is now available in your {{invoice.portalName}} . Click below to view the details.\nView Invoice"
+  },
+  {
+   "id": "6894e129b72827d7e25d0214",
+   "nombre": "Client Portal - Estimate Created",
+   "tipo": "builder",
+   "previewUrl": "https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/location%2FnkKbOarn5IwHeMv48uY9%2Femails%2F6894e129b72827d7e25d0214%2Findex.html?alt=media&token=4b0b8f0b-74f5-43bc-8bb7-a81fd5d04568",
+   "actualizado": "2025-08-07T17:23:54.338Z",
+   "caracteres_html": 11283,
+   "cuerpo": "Hey {{estimate.recipientName}},\nGood news! A new Estimate is now available in your {{estimate.portalName}} . Click below to view the details.\nView Estimate"
+  },
+  {
+   "id": "695e661c1fc88869610beadd",
+   "nombre": "Workshop2026CORREO-Registro Confirmado",
+   "tipo": "builder",
+   "previewUrl": "https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/location%2FnkKbOarn5IwHeMv48uY9%2Femails%2F695e661c1fc88869610beadd%2Findex.html?alt=media&token=335d148a-df96-46c6-a07f-e23b798d7554",
+   "actualizado": "2026-01-07T13:59:35.877Z",
+   "caracteres_html": 15038,
+   "cuerpo": "Buen día {{contact.name}},\n✅ Tu registro para nuestro próximo evento ha sido confirmado.\nGracias por unirte a nuestro próximo evento de Workshop: El Primer Paso Inteligente para tu 2026 Profesional. Estamos emocionados de contar contigo.\nDetalles del evento:\n📅 Fecha: 27 de enero del 2026\n⏰ Hora: 20:00 horas\n🔗 Enlace de acceso: https://funnel.dgdesignmodeling.com/el-primer-paso-inteligente-para-tu-crecimiento-profesional\nPrepárate para una experiencia enriquecedora. Si tienes alguna pregunta antes del evento, no dudes en contactarnos.\nIr al Evento Ahora\nGrupo de WhatsApp\n¡Nos vemos pronto!\nSaludos cordiales,\nIngeniero Gabriel Pantoja"
+  },
+  {
+   "id": "695e678c406b972551cf4d10",
+   "nombre": "Workshop2026CORREO-Recordatorio 24hrs",
+   "tipo": "builder",
+   "previewUrl": "https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/location%2FnkKbOarn5IwHeMv48uY9%2Femails%2F695e678c406b972551cf4d10%2Findex.html?alt=media&token=effecf72-407d-4c0b-a3f9-474674ad14ef",
+   "actualizado": "2026-01-07T14:04:00.919Z",
+   "caracteres_html": 14588,
+   "cuerpo": "Un cordial saludo {{contact.name}},\n👋 ESPERAMOS VERTE MAÑANA Solo un recordatorio amistoso de que nuestro evento Workshop: El Primer Paso Inteligente para tu 2026 Profesional es mañana.\nDetalles del evento:\n📅 Fecha: 27 de enero del 2026\n⏰ Hora: 20:00 horas\n🔗 Enlace de acceso: https://funnel.dgdesignmodeling.com/el-primer-paso-inteligente-para-tu-crecimiento-profesional-confirmacion\nPrepárate para una experiencia enriquecedora. Si tienes alguna pregunta antes del evento, no dudes en contactarnos.\nIr al Evento Ahora\nGrupo de WhatsApp\n¡Nos vemos pronto!\nSaludos cordiales,\nIngeniero Gabriel Pantoja"
+  },
+  {
+   "id": "695e6800406b9762eecf533b",
+   "nombre": "Workshop2026CORREO-Recordatorio 1hrs",
+   "tipo": "builder",
+   "previewUrl": "https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/location%2FnkKbOarn5IwHeMv48uY9%2Femails%2F695e6800406b9762eecf533b%2Findex.html?alt=media&token=6e042408-913a-4f65-ab94-edcf60e90192",
+   "actualizado": "2026-01-07T14:05:55.347Z",
+   "caracteres_html": 14482,
+   "cuerpo": "Un cordial saludo {{contact.name}},\n⏰ EMPEZAMOS EN 1 HORA nuestro próximo evento Workshop: El Primer Paso Inteligente para tu 2026 Profesional comenzará en una hora.\nDetalles del evento:\n📅 Fecha: 27 de enero del 2026\n⏰ Hora: 20:00 horas\n🔗 Enlace de acceso: https://funnel.dgdesignmodeling.com/el-primer-paso-inteligente-para-tu-crecimiento-profesional-confirmacion\nPrepárate para una experiencia enriquecedora. Si tienes alguna pregunta antes del evento, no dudes en contactarnos.\nIr al Evento Ahora\nGrupo de WhatsApp\n¡Nos vemos pronto!\nSaludos cordiales,\nIngeniero Gabriel Pantoja"
+  },
+  {
+   "id": "695e6950a8d9ccfd7e3fcff2",
+   "nombre": "Workshop2026CORREO-Recordatorio 15mins",
+   "tipo": "builder",
+   "previewUrl": "https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/location%2FnkKbOarn5IwHeMv48uY9%2Femails%2F695e6950a8d9ccfd7e3fcff2%2Findex.html?alt=media&token=61a6b61d-acde-413b-a37a-9121c1828ec1",
+   "actualizado": "2026-01-07T14:11:19.028Z",
+   "caracteres_html": 14488,
+   "cuerpo": "Un cordial saludo {{contact.name}},\n🛎️ EMPEZAMOS EN 15 MINUTOS nuestro próximo evento Workshop: El Primer Paso Inteligente para tu 2026 Profesional comenzará en una hora.\nDetalles del evento:\n📅 Fecha: 27 de enero del 2026\n⏰ Hora: 20:00 horas\n🔗 Enlace de acceso: https://funnel.dgdesignmodeling.com/el-primer-paso-inteligente-para-tu-crecimiento-profesional-confirmacion\nPrepárate para una experiencia enriquecedora. Si tienes alguna pregunta antes del evento, no dudes en contactarnos.\nIr al Evento Ahora\nGrupo de WhatsApp\n¡Nos vemos pronto!\nSaludos cordiales,\nIngeniero Gabriel Pantoja"
+  },
+  {
+   "id": "695e69b9a8d9ccd2543fd517",
+   "nombre": "Workshop2026CORREO-Recordatorio En Vivo",
+   "tipo": "builder",
+   "previewUrl": "https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/location%2FnkKbOarn5IwHeMv48uY9%2Femails%2F695e69b9a8d9ccd2543fd517%2Findex.html?alt=media&token=5961c43c-cb0c-447f-829f-9f1cc83c0131",
+   "actualizado": "2026-01-07T14:13:06.837Z",
+   "caracteres_html": 13796,
+   "cuerpo": "Colega {{contact.name}},\n🔥ESTAMOS EN VIVO hemos dado inicio a nuestro evento Workshop: El Primer Paso Inteligente para tu 2026 Profesional no te quedes por fuera .\n🔗 Enlace de acceso: https://funnel.dgdesignmodeling.com/el-primer-paso-inteligente-para-tu-crecimiento-profesional-evento\nIr al Evento Ahora\nGrupo de WhatsApp\nSaludos cordiales,\nIngeniero Gabriel Pantoja"
+  },
+  {
+   "id": "695e6a56fd97096231be6085",
+   "nombre": "Worksphop2026CORREO-Seguimiento 01",
+   "tipo": "builder",
+   "previewUrl": "https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/location%2FnkKbOarn5IwHeMv48uY9%2Femails%2F695e6a56fd97096231be6085%2Findex.html?alt=media&token=5838aabc-0e43-40c0-ab60-dd9b3dffc3ab",
+   "actualizado": "2026-01-07T14:16:35.489Z",
+   "caracteres_html": 24713,
+   "cuerpo": "Buen día {{contact.name}},\n¡Muchas gracias por tu asistencia en nuestro evento Workshop: El Primer Paso Inteligente para tu 2026 Profesional ! Fue un placer contar con tu participación.\nSi no pudiste asistir al evento en vivo, no te preocupes, aquí tienes el enlace para que puedas ver la grabación y no te pierdas ningún detalle:\n🔗 Enlace de video:\nVer la Repetición\n¿No puedes ver el botón? Haz clic aquí.\nAdemás, nos complace anunciar que hemos mejorado nuestra oferta para los estudiantes del Máster Internacional BIM + IA , con nuevos beneficios exclusivos que enriquecerán tu experiencia de aprendizaje.\n¿𝗤𝘂𝗲́ 𝗯𝗲𝗻𝗲𝗳𝗶𝗰𝗶𝗼𝘀 𝗼𝗯𝘁𝗲𝗻𝗱𝗿𝗮́𝘀?\n✅ Título propio de Sabal University válido en Estados Unidos\n✅ Certificado Internacional DQ aval de Universidades UAII\n✅ 12 Certificaciones de Autodesk\n✅ Certificado de 1440 horas académicas con aval Modeling-DG S.A.S\n✅Acceso ilimitado a video clases y material de apoyo\n✅Aplicación Móvil desde cualquier dispositivo\n✅Acompañamiento continuo en Mentorías 1-1\n✅Garantía Exclusiva 100% Premium Gold\n¡Obtén tu Certificado de Asistencia totalmente GRATIS ahora!\nObtener Certificado\n¿No puedes ver el botón? Haz clic aquí.\n¡Preventa Especial por tiempo limitado o hasta agotar cupos!\nPREVENTA MÁSTER BIM + IA\n¡Forma parte de esta experiencia única! Aprovecha ahora la oportunidad de adquirir nuestro Máster Internacional BIM + IA en preventa . No dejes pasar esta preventa exclusiva y da el siguiente paso en tu desarrollo profesional en el mundo del BIM.\nSi tienes alguna pregunta o deseas más información, no dudes en contactarnos. Estamos aquí para ayudarte a tomar la mejor decisión para tu futuro académico y profesional.\nAdquirir Máster BIM + IA\n¿No puedes ver el botón? Haz clic aquí.\n¡Nos vemos pronto!\nSaludos cordiales,\nIngeniero Gabriel Pantoja"
+  },
+  {
+   "id": "695e6b7a406b97b282cf8490",
+   "nombre": "Workshop2026CORREO-Seguimiento 02",
+   "tipo": "builder",
+   "previewUrl": "https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/location%2FnkKbOarn5IwHeMv48uY9%2Femails%2F695e6b7a406b97b282cf8490%2Findex.html?alt=media&token=592db52d-3abf-4527-b94f-b91f77b9d294",
+   "actualizado": "2026-01-07T14:20:15.959Z",
+   "caracteres_html": 20476,
+   "cuerpo": "Buen día {{contact.name}},\nSi aún no formas parte de nuestro Máster Internacional BIM + IA , esta es tu oportunidad de impulsar tu carrera con una formación diseñada para el éxito.\n¡Aprende y aplica BIM + IA en tiempo Récord!\nSabemos que el tiempo es valioso, por eso nuestro programa está diseñado para que aprendas de forma eficiente y efectiva. Con nuestra metodología avanzada, comenzarás a aplicar BIM + IA en tus proyectos desde el primer mes , sin largas jornadas de estudio.\nClases cortas y efectivas: Sesiones de solo 30 minutos que optimizan tu tiempo sin sacrificar calidad.\nEnfoque práctico: Implementarás BIM en casos reales desde el inicio, asegurando un aprendizaje aplicable.\nClases Maestras en vivo cada mes: Oportunidad de resolver dudas directamente con expertos y reforzar conocimientos clave.\nAcceso a comunidad profesional: Conéctate con otros profesionales del sector, comparte experiencias y amplía tu red de contactos.\nAdquirir Máster BIM + IA\n¿No puedes ver el botón? Haz clic aquí.\n¡Atención, preventa por tiempo limitado!\nPREVENTA MÁSTER BIM + IA\nEsta preventa especial solo estará disponible por 48 horas . No dejes pasar esta oportunidad única de capacitarte y transformar tu futuro profesional.\nPara inscribirte y asegurar tu cupo en preventa, responde este mensaje y te ayudaremos con todo el proceso.\nSi tienes alguna duda, no dudes en contactarnos. Estamos aquí para guiarte en cada paso y asegurarnos de que aproveches al máximo esta oportunidad.\nAdquirir Máster BIM + IA\n¿No puedes ver el botón? Haz clic aquí.\n¡Nos vemos pronto!\nSaludos cordiales,\nIngeniero Gabriel Pantoja"
+  },
+  {
+   "id": "695e6bf4960d7a2646fd75c4",
+   "nombre": "Workshop2026CORREO-Seguimiento 03",
+   "tipo": "builder",
+   "previewUrl": "https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/location%2FnkKbOarn5IwHeMv48uY9%2Femails%2F695e6bf4960d7a2646fd75c4%2Findex.html?alt=media&token=6c848325-2e20-4f38-b54a-4bf961d13f06",
+   "actualizado": "2026-01-07T14:22:05.866Z",
+   "caracteres_html": 33753,
+   "cuerpo": "Buen día {{contact.name}},\nHemos notado que aún no has completado tu inscripción y queremos asegurarnos de que conozcas todas las ventajas y acreditaciones internacionales que recibirás al finalizar nuestra formación.\nSabemos que tomar la decisión de inscribirte en un programa de educación continua es un paso importante para tu crecimiento profesional. Por eso, queremos que tengas la seguridad de que el Máster Internacional BIM + IA no solo te brindará conocimientos de vanguardia, sino que también te permitirá obtener certificaciones y títulos con reconocimiento internacional que fortalecerán tu perfil y te abrirán nuevas oportunidades en el mercado laboral global.\n¡Impulsa tu Carrera con Certificaciones Internacionales!\nAl ser parte de nuestro diplomado, no solo aprenderás a aplicar BIM de manera efectiva, sino que también recibirás acreditaciones que marcarán la diferencia en tu trayectoria profesional .\n✅ Título propio de Sabal University válido en Estados Unidos\n✅ Certificado Internacional DQ aval de Universidades UAII\n✅ 12 Certificaciones de Autodesk\n✅ Certificado de 1440 horas académicas con aval Modeling-DG S.A.S\n✅Acceso ilimitado a video clases y material de apoyo\n✅ Aplicación Móvil desde cualquier dispositivo\n✅ Acompañamiento continuo en Mentorías 1-1\n✅ Garantía Exclusiva 100% Premium Gold\nNuestras Acreditaciones\n¿No puedes ver el botón? Haz clic aquí.\nTener certificaciones de prestigio no solo te permitirá destacar en el sector de la construcción y la ingeniería, sino que también te dará acceso a oportunidades laborales a nivel internacional , demostrando que cuentas con las competencias y habilidades requeridas en el mercado actual.\n¡Atención, preventa por tiempo limitado!\nPREVENTA MÁSTER BIM + IA\nEsta preventa especial solo estará disponible por 48 horas . No dejes pasar esta oportunidad única de capacitarte y transformar tu futuro profesional.\nPara inscribirte y asegurar tu cupo en preventa, responde este mensaje y te ayudaremos con todo el proceso.\nSi tienes alguna duda, no dudes en contactarnos. Estamos aquí para guiarte en cada paso y asegurarnos de que aproveches al máximo esta oportunidad.\nAdquirir Máster BIM + IA\n¿No puedes ver el botón? Haz clic aquí.\n¡Nos vemos pronto!\nSaludos cordiales,\nIngeniero Gabriel Pantoja"
+  },
+  {
+   "id": "695e6c48a2029f75c0db780c",
+   "nombre": "Workshop2026CORREO-Seguimiento 04",
+   "tipo": "builder",
+   "previewUrl": "https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/location%2FnkKbOarn5IwHeMv48uY9%2Femails%2F695e6c48a2029f75c0db780c%2Findex.html?alt=media&token=29c48e13-653b-476b-8cc0-ce8b6bcc875c",
+   "actualizado": "2026-01-07T14:23:31.970Z",
+   "caracteres_html": 24123,
+   "cuerpo": "Buen día {{contact.name}},\nLa industria de la construcción está evolucionando rápidamente, y adoptar nuevas tecnologías es clave para mantenerse competitivo. Building Information Modeling (BIM) es mucho más que una tendencia; es la herramienta que está revolucionando la forma en que se diseñan, gestionan y ejecutan los proyectos.\nBIM no solo permite la creación de modelos digitales detallados, sino que también fomenta la colaboración entre arquitectos, ingenieros y constructores , minimizando errores y optimizando cada fase del proceso. Con esta metodología, las empresas pueden mejorar la eficiencia, reducir costos y garantizar un mayor control sobre sus proyectos.\n¿Tienes dudas sobre el Máster BIM + IA? No estás solo\nSabemos que la transición a esta metodología puede generar muchas preguntas:\n¿Necesito experiencia previa en BIM o programación para inscribirme?\n¿Cómo se integra la Inteligencia Artificial en un máster de BIM?\n¿Qué diferencia a este máster de otros cursos BIM disponibles en línea?\nSi alguna de estas preguntas ha cruzado por tu mente, tenemos la solución ideal para ti.\nDescargar Personal Project IA Pro PDF\n¿No puedes ver el botón? Haz clic aquí.\n¡Aprende BIM + IA con metodología práctica y efectiva!\nEn nuestro Máster Internacional BIM + IA , no solo conocerás los fundamentos de BIM, sino que aprenderás cómo aplicarlo en proyectos reales desde el primer mes. A través de clases dinámicas y enfocadas en la aplicación práctica , trabajarás con casos reales y contarás con el apoyo de instructores expertos para resolver tus dudas. Al finalizar, recibirás certificaciones y acreditaciones internacionales que fortalecerán tu perfil y te abrirán nuevas oportunidades en el mercado laboral.\n¡Atención, preventa por tiempo limitado!\nPREVENTA MÁSTER BIM + IA\nEsta preventa solo estará disponible por 48 horas . No dejes pasar esta oportunidad única de capacitarte y transformar tu futuro profesional.\nPara inscribirte y asegurar tu cupo en preventa, responde este mensaje y te ayudaremos con todo el proceso.\nSi tienes alguna duda, no dudes en contactarnos. Estamos aquí para guiarte en cada paso y asegurarnos de que aproveches al máximo esta oportunidad.\nAdquirir Máster BIM + IA\n¿No puedes ver el botón? Haz clic aquí.\n¡Nos vemos pronto!\nSaludos cordiales,\nIngeniero Gabriel Pantoja"
+  },
+  {
+   "id": "695e6c9e97316d6133c72d22",
+   "nombre": "Workshop2026CORREO-Seguimiento 05",
+   "tipo": "builder",
+   "previewUrl": "https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/location%2FnkKbOarn5IwHeMv48uY9%2Femails%2F695e6c9e97316d6133c72d22%2Findex.html?alt=media&token=41c92f42-3d2d-4aa8-a4ff-f79e0c73710e",
+   "actualizado": "2026-01-07T14:25:07.349Z",
+   "caracteres_html": 23995,
+   "cuerpo": "Buen día {{contact.name}},\nEsperamos que estés teniendo un excelente día. Queremos recordarte que mañana finaliza nuestra preventa especial en el Máster Internacional BIM + IA\nEste Máster ha sido diseñado para que, en poco tiempo, logres dominar Building Information Modeling (BIM) + Inteligencia Artificial (IA) y lo apliques de manera efectiva en proyectos reales. No solo aprenderás los fundamentos, sino que también desarrollarás habilidades prácticas con el acompañamiento de expertos en el sector.\n¡Bonos Exclusivos por Inscribirte Ahora!\nAl aprovechar esta promoción especial, recibirás sin costo adicional :\nCurso de Marketing para Arquitectos e Ingenieros : Aprende estrategias digitales para atraer clientes de manera constante.\nMás de 50 cursos especializados en diseño, modelado y gestión de proyectos para complementar tu formación.\nE-book “Dominando la metodología BIM” , con estrategias avanzadas y recomendaciones prácticas para optimizar tu trabajo.\nPlantilla editable de cotizaciones y presupuestos , que te ayudará a gestionar proyectos de forma eficiente y profesional.\nAgente de inteligencia Artificial Experto en Contenido para Ingenieros y Arquitectos.\nAccede ahora al Máster Internacional BIM + IA\nAdquirir Máster BIM + IA\n¿No puedes ver el botón? Haz clic aquí.\nQueremos que tengas total confianza en tu formación. Por eso, te ofrecemos nuestra Garantía Design Premium: si completas el máster y sientes que no has aprendido a aplicar BIM + IA en tus proyectos, te devolvemos el 100% de tu inversión. Estamos comprometidos con tu crecimiento y queremos asegurarnos de que obtengas el máximo valor de este programa.\n¡Atención, preventa por tiempo limitado!\nPREVENTA MÁSTER BIM + IA\nEsta preventa especial solo estará disponible por 48 horas. No dejes pasar esta oportunidad única de capacitarte con una preventa exclusiva y transformar tu futuro profesional.\nPara inscribirte y asegurar tu cupo con la preventa especial, responde este mensaje y te ayudaremos con todo el proceso.\nSi tienes alguna duda, no dudes en contactarnos. Estamos aquí para guiarte en cada paso y asegurarnos de que aproveches al máximo esta oportunidad.\nAdquirir Máster BIM + IA\n¿No puedes ver el botón? Haz clic aquí.\n¡Nos vemos pronto!\nSaludos cordiales,\nIngeniero Gabriel Pantoja"
+  },
+  {
+   "id": "698e2e7a84c3179503f1c198",
+   "nombre": "Workshop202603CORREO-Registro Confirmado",
+   "tipo": "builder",
+   "previewUrl": "https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/location%2FnkKbOarn5IwHeMv48uY9%2Femails%2F698e2e7a84c3179503f1c198%2Findex.html?alt=media&token=e9beee03-d890-4429-89b6-121b06960d4d",
+   "actualizado": "2026-02-12T19:49:38.653Z",
+   "caracteres_html": 15289,
+   "cuerpo": "Buen día {{contact.name}},\n✅ Tu registro para nuestro próximo evento ha sido confirmado.\nGracias por unirte a nuestro próximo evento de Workshop Gratuito: Del BIM tradicional al BIM inteligente Estamos emocionados de contar contigo.\nDetalles del evento:\n📅 Fecha: 02 de marzo del 2026\n⏰ Hora: 20:00 horas\n🔗 Enlace de acceso: https://funnel.dgdesignmodeling.com/del-bim-tradicional-al-bim-inteligente-evento\nPrepárate para una experiencia enriquecedora. Si tienes alguna pregunta antes del evento, no dudes en contactarnos.\nIr al Evento Ahora\nGrupo de WhatsApp\n¡Nos vemos pronto!\nSaludos cordiales,\nIngeniero Gabriel Pantoja"
+  },
+  {
+   "id": "698e2f588bdc7e2be143fa6d",
+   "nombre": "Workshop202603CORREO-Recordatorio 1hrs-copy",
+   "tipo": "builder",
+   "previewUrl": "https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/location%2FnkKbOarn5IwHeMv48uY9%2Femails%2F698e2f588bdc7e2be143fa6d%2Findex.html?alt=media&token=a13ab786-f69c-453d-ac8c-8e2c02af505d",
+   "actualizado": "2026-02-12T19:53:03.838Z",
+   "caracteres_html": 14583,
+   "cuerpo": "Un cordial saludo {{contact.name}},\n⏰ EMPEZAMOS EN 1 HORA nuestro próximo evento Workshop Gratuito: Del BIM tradicional al BIM inteligente comenzará en una hora.\nDetalles del evento:\n📅 Fecha: 02 de marzo del 2026\n⏰ Hora: 20:00 horas\n🔗 Enlace de acceso: https://funnel.dgdesignmodeling.com/del-bim-tradicional-al-bim-inteligente-evento\nPrepárate para una experiencia enriquecedora. Si tienes alguna pregunta antes del evento, no dudes en contactarnos.\nIr al Evento Ahora\nGrupo de WhatsApp\n¡Nos vemos pronto!\nSaludos cordiales,\nIngeniero Gabriel Pantoja"
+  },
+  {
+   "id": "698e2fe3ba24ed0e62daa51c",
+   "nombre": "Workshop202603CORREO-Recordatorio 15mins-copy",
+   "tipo": "builder",
+   "previewUrl": "https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/location%2FnkKbOarn5IwHeMv48uY9%2Femails%2F698e2fe3ba24ed0e62daa51c%2Findex.html?alt=media&token=2c4d20c6-3799-42b9-b5ef-18ba02eb290c",
+   "actualizado": "2026-02-12T19:55:15.327Z",
+   "caracteres_html": 14588,
+   "cuerpo": "Un cordial saludo {{contact.name}},\n🛎️ EMPEZAMOS EN 15 MINUTOS nuestro próximo evento Workshop Gratuito: Del BIM tradicional al BIM inteligente comenzará en una hora.\nDetalles del evento:\n📅 Fecha: 02 de marzo del 2026\n⏰ Hora: 20:00 horas\n🔗 Enlace de acceso: https://funnel.dgdesignmodeling.com/del-bim-tradicional-al-bim-inteligente-evento\nPrepárate para una experiencia enriquecedora. Si tienes alguna pregunta antes del evento, no dudes en contactarnos.\nIr al Evento Ahora\nGrupo de WhatsApp\n¡Nos vemos pronto!\nSaludos cordiales,\nIngeniero Gabriel Pantoja"
+  },
+  {
+   "id": "698e3112ba24ed9232dab595",
+   "nombre": "Workshop202603CORREO-Recordatorio En Vivo-copy",
+   "tipo": "builder",
+   "previewUrl": "https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/location%2FnkKbOarn5IwHeMv48uY9%2Femails%2F698e3112ba24ed9232dab595%2Findex.html?alt=media&token=aa9a1008-0def-4ae8-a461-051027c29c6f",
+   "actualizado": "2026-02-12T19:59:57.619Z",
+   "caracteres_html": 13877,
+   "cuerpo": "Colega {{contact.name}},\n🔥ESTAMOS EN VIVO hemos dado inicio a nuestro evento Workshop Gratuito: Del BIM tradicional al BIM inteligente no te quedes por fuera .\n🔗 Enlace de acceso: https://funnel.dgdesignmodeling.com/del-bim-tradicional-al-bim-inteligente-evento\nIr al Evento Ahora\nGrupo de WhatsApp\nSaludos cordiales,\nIngeniero Gabriel Pantoja"
+  },
+  {
+   "id": "698e31776d00362557d772a4",
+   "nombre": "Worksphop202603CORREO-Seguimiento 01",
+   "tipo": "builder",
+   "previewUrl": "https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/location%2FnkKbOarn5IwHeMv48uY9%2Femails%2F698e31776d00362557d772a4%2Findex.html?alt=media&token=6de6189b-e161-4982-bfd9-d49321b798d8",
+   "actualizado": "2026-02-12T20:01:55.001Z",
+   "caracteres_html": 26065,
+   "cuerpo": "Buen día {{contact.name}},\n¡Muchas gracias por tu asistencia en nuestro evento Workshop Gratuito: Del BIM tradicional al BIM inteligente ! Fue un placer contar con tu participación.\nSi no pudiste asistir al evento en vivo, no te preocupes, aquí tienes el enlace para que puedas ver la grabación y no te pierdas ningún detalle:\n🔗 Enlace de video:\nVer la Repetición\n¿No puedes ver el botón? Haz clic aquí.\nAdemás, nos complace anunciar que hemos mejorado nuestra oferta para los estudiantes del Máster Internacional BIM + IA , con nuevos beneficios exclusivos que enriquecerán tu experiencia de aprendizaje.\n¿𝗤𝘂𝗲́ 𝗯𝗲𝗻𝗲𝗳𝗶𝗰𝗶𝗼𝘀 𝗼𝗯𝘁𝗲𝗻𝗱𝗿𝗮́𝘀?\n✅ Título propio de Sabal University válido en Estados Unidos\n✅ Certificado Internacional DQ aval de Universidades UAII\n✅ 12 Certificaciones de Autodesk\n✅ Certificado de 1440 horas académicas con aval Modeling-DG S.A.S\n✅Acceso ilimitado a video clases y material de apoyo\n✅Aplicación Móvil desde cualquier dispositivo\n✅Acompañamiento continuo en Mentorías 1-1\n✅Garantía Exclusiva 100% Premium Gold\n¡Obtén tu Certificado de Asistencia totalmente GRATIS ahora!\nObtener Certificado\n¿No puedes ver el botón? Haz clic aquí.\n¡Preventa Especial por tiempo limitado o hasta agotar cupos!\nPREVENTA MÁSTER BIM + IA\n¡Forma parte de esta experiencia única! Aprovecha ahora la oportunidad de adquirir nuestro Máster Internacional BIM + IA en preventa . No dejes pasar esta preventa exclusiva y da el siguiente paso en tu desarrollo profesional en el mundo del BIM.\nSi tienes alguna pregunta o deseas más información, no dudes en contactarnos. Estamos aquí para ayudarte a tomar la mejor decisión para tu futuro académico y profesional.\nAdquirir Máster BIM + IA\n¿No puedes ver el botón? Haz clic aquí.\n¡Nos vemos pronto!\nSaludos cordiales,\nIngeniero Gabriel Pantoja"
+  },
+  {
+   "id": "69e8115e6fd3f82cba41b1fb",
+   "nombre": "Updated Course Promotion Template",
+   "tipo": "builder",
+   "previewUrl": "https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/location%2FnkKbOarn5IwHeMv48uY9%2Femails%2F69e8115e6fd3f82cba41b1fb%2Findex.html?alt=media&token=0ca36bed-f3b4-47d4-9e4f-659857f5af38",
+   "actualizado": "2026-04-22T00:10:17.229Z",
+   "caracteres_html": 35748,
+   "cuerpo": "Check out our updated look.\nConvierte tu experiencia en resultados reales\nCursos prácticos, explicados paso a paso, para que apliques desde el primer día lo que aprendes.\nReserva tu lugar ahora\nCupos limitados — ideal para {{contact.first_name}} si quieres ver resultados rápidos.\nLo que te llevas al terminar\nDiseñado para personas que quieren aprender rápido, aplicar de inmediato y ver resultados concretos.\nClases prácticas y fáciles de seguir, aunque tengas poco tiempo.\nEjemplos reales para que sepas exactamente cómo aplicarlo.\nAcompañamiento y soporte para resolver tus dudas.\nAcceso por tiempo limitado para que avances a tu ritmo.\nEste curso es para ti si...\nQuieres dejar de probar por tu cuenta y seguir un camino claro, guiado por alguien que ya pasó por ahí.\nEstás cansado de información suelta y quieres un método paso a paso.\nTe motiva aprender con ejemplos reales y lenguaje sencillo.\nValoras el acompañamiento para no quedarte atascado.\nQuiero m&aacute;s informaci&oacute;n\nSi tienes alguna duda, simplemente responde a este correo y te ayudo a elegir la mejor opción para ti.\nUn abrazo,\n{{user.name}}\n© {{right_now.year}} {{location.name}} . Todos los derechos reservados.\nContacta con nosotros: {{location.email}}\nSi ya no deseas recibir estos correos, haz clic aquí para cancelar tu suscripción ."
+  },
+  {
+   "id": "6a185b7725033d0908fc5823",
+   "nombre": "✅ CORREO Invitación Workshop Microcedenciales NFT",
+   "tipo": "html",
+   "previewUrl": "https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/location%2FnkKbOarn5IwHeMv48uY9%2Femails%2F6a185b7725033d0908fc5823%2Findex.html?alt=media&token=c5997bb0-ba65-4698-9987-ac26d1ecafc4",
+   "actualizado": "2026-05-28T16:41:50.817Z",
+   "caracteres_html": 435857,
+   "cuerpo": "MAYO 2025\nNovedades del mes\n🔗 Nuevo · Mayo 2025 · Blockchain\nMicrocredenciales NFT:\nEl Nuevo Estándar\nde Certificación BIM\nLas certificaciones tradicionales ya no son suficientes.\nDescubre la credencial que cualquier empresa en el mundo\npuede verificar en segundos .\nReservar mi lugar GRATIS →\nGRATIS\nInscripción\n28 Mayo\nJueves en vivo\n19:00 GMT-5\n90 minutos\nZoom\n100% Online\nEl problema\n¿Tu certificado puede ser\nverificado en 1 clic?\nLa mayoría de empleadores no puede verificar si lo que dice tu certificado es real . Los títulos y diplomas actuales solo certifican asistencia — no demuestran competencias reales. El mercado laboral ya lo sabe.\n📄\nSolo asistencia\nCertifica que estuviste, no lo que aprendiste\n🔍\nSin validación real\nNadie puede verificar lo que dice el papel\n😔\nSin diferenciación\nTodos tienen el mismo certificado genérico\nLa solución\n¿Qué es una\nMicrocredencial NFT?\nEs una certificación digital que vive en blockchain . Como una huella digital de tu competencia — única, tuya, y verificable por cualquier empresa en el mundo con un solo link.\n🔗 Única e inalterable\nTecnología blockchain · imposible de falsificar\n🌍 Verificable y global\nCualquier empleador la valida en 1 clic\n💼 Portafolio digital potente\nLinkedIn, CV y portafolio profesional\n🎯 Mide competencias reales\nNo cuánto estudiaste — lo que puedes hacer\nIng. Gabriel Pantoja\nAnfitrión del Workshop\nMicrocredenciales disponibles hoy\nBadges NFT emitidos por Doctrina Qualitas\nCada badge es verificable públicamente · Alineado a estándares europeos de calidad\nConceptos BIM\nConfig. de Proyecto\nRevit Architecture\nBIM Foundations\nNiveles y Plantillas\nAvalado por\nWorkshop en vivo · Zoom · 90 min\nLo que vas a descubrir el Jueves 28 de Mayo\n01\nEl problema con las certificaciones tradicionales\nPor qué los diplomas actuales no demuestran competencias reales\n02\n¿Qué es una Microcredencial NFT? — Explicación completa\nBlockchain, cómo funciona, por qué es única e imposible de falsificar\n03\n¿Para qué sirve en el mundo BIM real?\nCómo te diferencia, cómo la ve un empleador, LinkedIn y CV\n04\nDemo en vivo: así se ve un badge NFT real\nDoctrina Qualitas · URL de verificación pública · cómo aparece en LinkedIn\n05\n¿Cómo obtienes tu primera Microcredencial NFT?\nOferta especial exclusiva para asistentes del workshop ✦\n🕐 Horarios por país\n🇦🇷\n21:00\n🇨🇱\n21:00\n🇪🇸\n02:00\n🇲🇽\n18:00\n🇵🇪\n19:00\n🇺🇸\n20:00\n🇨🇴\n19:00\n¡Tu lugar es gratuito !\nJueves 28 de Mayo · 19:00 hrs GMT-5 · Workshop en vivo por Zoom\nCupos limitados — reserva ahora antes de que se llene\n¡RESERVAR MI LUGAR GRATIS! →\n📱 Unirse al grupo de WhatsApp\nDesign Modeling Academy · designmodelingacademy.com\nDesign Modeling DG · Design Modeling Academy\nAvalado por Doctrina Qualitas · Agencia Universitaria DQ\nSi no deseas recibir más correos, puedes cancelar tu suscripción aquí ."
+  },
+  {
+   "id": "6a1870580d3622793d4ef36b",
+   "nombre": "✅ CORREO Beneficio ISTE Diploma + Máster BIM+IA",
+   "tipo": "html",
+   "previewUrl": "https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/location%2FnkKbOarn5IwHeMv48uY9%2Femails%2F6a1870580d3622793d4ef36b%2Findex.html?alt=media&token=d7656538-e640-45bc-af7e-d58a6b2a1096",
+   "actualizado": "2026-05-28T16:52:08.618Z",
+   "caracteres_html": 789049,
+   "cuerpo": "🎓 Nuevo Beneficio Exclusivo\nTu formación ahora tiene\nrespaldo oficial en Ecuador\nDiploma de Título Propio avalado por el Instituto ISTE — con registro ante SENESCYT para mayor seguridad académica.\n🇪🇨\nISTE ya cuenta con aval institucional reconocido en Ecuador\nSabemos que muchos de nuestros estudiantes en Ecuador tienen la inquietud de cómo sus certificaciones\nse validan a nivel nacional. Por eso, hemos sumado un nuevo beneficio a tu formación :\na partir de ahora, incluimos el Diploma de Título Propio del Instituto ISTE ,\ncon presencia y aval académico en Ecuador.\n💡 En resumen: Recibirás una doble certificación — tu certificado universitario\ninternacional para tu perfil global, y el Diploma ISTE para tu respaldo formal dentro del país.\nEjemplo del Diploma ISTE\n🎓 Tu Doble Certificación\nDiploma ISTE\nInstitución con presencia y aval académico en Ecuador. Complementa y respalda tu formación a nivel nacional.\nVálido en Ecuador\n🌍\nCertificación Internacional\nFortalece tu perfil profesional a nivel global con el respaldo de Sabal University Internacional.\nAlcance Global\n✅ ¿Qué incluye este nuevo beneficio?\nDiploma de Título Propio emitido por el Instituto ISTE , institución con aval en Ecuador\nRespaldo formativo válido dentro del territorio ecuatoriano\nComplemento a tu certificación universitaria internacional\nMayor soporte ante consultas o procesos relacionados con el SENESCYT\nSin costo adicional — es parte de tu programa de formación contratado\n🏛 Respaldado por instituciones reconocidas\n⚖️ Comparación de certificaciones\nCaracterística\nCert. Internacional\nDiploma ISTE\nAlcance\nInternacional\nEcuador\nRelación SENESCYT\nSujeto a evaluación\nEnfocado en validez local\nPerfil profesional\nGlobal\nNacional\n¿Incluido en tu programa?\n✓ Sí\n✓ Sí — ¡nuevo!\n📋 Sobre el proceso SENESCYT\nEl SENESCYT no avala programas directamente — registra títulos que cumplen requisitos\ntras una evaluación individual. El proceso incluye revisión de la institución, carga académica,\nmodalidad de estudio y documentos como apostilla y récord académico.\nPuedes revisar el proceso oficial de reconocimiento de títulos del extranjero aquí:\n→ siau.senescyt.gob.ec/reconocimiento-general-de-titulos\n🔗 Referencias y más información\niste.edu.ec — Sitio oficial del Instituto ISTE\nagenciauniversitariadq.online — Diplomas universitarios\ncertificadouniversitariointernacional.com — Certificación Internacional\nsenescyt.gob.ec — Proceso de reconocimiento de títulos\n¿Tienes dudas sobre tu diploma o el proceso con SENESCYT?\nNuestro equipo está listo para orientarte.\n📩 Consultar con un asesor\nEscríbenos por WhatsApp para atención inmediata\n🚀 Lleva tu carrera al siguiente nivel\nMáster Internacional\nBIM Manager + Inteligencia Artificial\nFormación integral en BIM Management e IA aplicada a la construcción.\nModelado multidisciplinario, gestión de proyectos, automatización y toma de decisiones estratégicas para el sector AEC.\n12\nMódulos especializados\n1440h\nDe formación total\n100%\nOnline con clases en vivo\n7+\nCertificados que obtienes\n📚 Módulos del programa\nFundamentos BIM\nModelado Arquitectónico\nModelado Estructural\nClash Detection\nDocumentación BIM\nPlanificación 4D\nPresupuestos 5D\nGestión Colaborativa\nDynamo\nPython aplicado a BIM\nIA en Construcción\nProyecto Final BIM+IA\n🛠 Software que dominarás\nAutodesk Revit\nNavisworks\nRobot Structural\nDynamo\nPython\nHerramientas de IA\n🤝 Avalado por nuestros partners institucionales\n🏅 Certificaciones que recibes\n12 Certificados por módulo\nCertificación Autodesk\nCert. Universitario DQ\nDiploma Sabal University\nDiploma Univ. Naciones México\nDiploma ISTE España\nCert. Modeling-DG 1440h\nNFT Micro-Credenciales DQ\n🗓 Agendar mi cita — Reservar cupo ahora\n📄 Descargar Temario completo (PDF)\nAsesor Ester\nAsesor Adrián\nVer programa completo →\nFormación internacional con respaldo local\niste.edu.ec\nDiplomas\nMáster BIM+IA\nEste correo fue enviado porque formas parte de nuestra comunidad de estudiantes."
+  },
+  {
+   "id": "6a3044f290fb3ba46268584d",
+   "nombre": "Ofertas Academicas Mensuales JUN 2026",
+   "tipo": "html",
+   "previewUrl": "https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/location%2FnkKbOarn5IwHeMv48uY9%2Femails%2F6a3044f290fb3ba46268584d%2Findex.html?alt=media&token=49f6940a-17a9-47e0-8f08-b014e6b6fa15",
+   "actualizado": "2026-06-15T18:47:17.016Z",
+   "caracteres_html": 1897683,
+   "cuerpo": "🎯 Las mejores oportunidades de Junio 2026 están aquí\nCapacítate con los mejores programas BIM, IA y Estructuras.\nPrecios especiales válidos solo este mes o hasta agotar cupos.\n¡No dejes pasar esta oportunidad!\n⭐ Programa Premium · En Reserva ⭐\n🎓 Máster Internacional\nMáster Internacional\nBIM Manager + IA\npara la Construcción\nEl programa más completo del mercado hispanoamericano. Domina BIM, Inteligencia Artificial\ny gestión de proyectos con certificación avalada por Instituto ISTE España .\nForma parte de la nueva élite de la construcción digital.\n📅 Inicio: Septiembre 2026\n⏳ PREVENTA ACTIVA — Plazas limitadas con condiciones especiales.\n¡Asegura la tuya antes de que suban los precios!\n🔗 Ver Programa Completo\n💬 WhatsApp Principal — Quiero Información\n💬 WhatsApp Adrián — Consultar Ahora\n💥 Oferta Lowcost · Precio de Lanzamiento 💥\n🏗️ Curso Nuevo · Acceso Inmediato\nCurso SAP2000\nLowcost — Naves Industriales PRO\nAprende a modelar, analizar y diseñar estructuras con SAP2000 de forma práctica\ny económica. Proyectos reales de naves industriales en 30 horas. Certificado incluido.\n$154.99 USD\n$26.99 USD\n−83% OFF\n⚡ Solo disponible en junio o hasta agotar stock\n🔥 ¡Precio de lanzamiento irrepetible!\nAcceso inmediato y de por vida al comprarlo hoy.\n🔗 Ver Página del Curso\n💬 WhatsApp — Comprar Ahora\n🤖 Automatización con IA · Tiempo Limitado 🤖\n🖥️ Curso Nuevo · Tiempo Limitado\nAutomatización en Revit con\nHerramientas Nativas\ny Add-ins Inteligentes\nDomina PyRevit, Add-ins y flujos inteligentes. Reduce tiempos de trabajo, optimiza\nvistas y documentación — lleva tu productividad BIM al siguiente nivel desde la primera semana.\n$199.99 USD\n$149.99 USD\nOFERTA\n⚡ Precio especial solo en junio o hasta agotar stock\n⏰ ¡Oferta por tiempo limitado!\nAprovecha antes de que regrese al precio normal.\n🔗 Ver Curso Completo\n💬 WhatsApp — Quiero el Curso\n🏆 Especialización 3×1 · Experto BIM en Acero 🏆\n⚙️ Nueva Especialización · 3 Formaciones en 1\nEspecialización BIM en\nEstructuras Metálicas\n— Experto en Acero\nConviértete en experto BIM en diseño estructural de acero. Conexiones, normativas\ny modelado avanzado para proyectos reales, con certificaciones oficiales Autodesk.\nTres programas en una sola inversión.\n$299.99 USD\n$199.99 USD\n3×1 PROMO\n⚡ Promo 3×1 solo en junio o hasta agotar stock\n🔥 ¡Tres formaciones al precio de una!\nCupos muy limitados este mes.\n💬 WhatsApp — Quiero la Especialización\n¿Tienes dudas? Estamos aquí para ayudarte 👋\nEscríbenos por WhatsApp y te enviamos toda la información\nsin ningún tipo de compromiso.\n💬 Hablar con un Asesor Ahora\nDesign Modeling Academy\nFormación BIM, Estructuras e Inteligencia Artificial\ndesignmodelingacademy.com\n📲 WhatsApp Principal\n📲 WhatsApp Adrián\nRecibiste este correo porque formas parte de nuestra comunidad.\nCancelar suscripción"
+  },
+  {
+   "id": "6a48002620a85f288aa91be9",
+   "nombre": "🟢 1- BIENVENIDA RESERVA DE CUPO MASTER",
+   "tipo": "builder",
+   "previewUrl": "https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/location%2FnkKbOarn5IwHeMv48uY9%2Femails%2F6a48002620a85f288aa91be9%2Findex.html?alt=media&token=c8c886a1-83be-4920-9707-b6f73c279e01",
+   "actualizado": "2026-07-03T18:32:06.896Z",
+   "caracteres_html": 8913,
+   "cuerpo": "Hola, {{ contact.firstname }}​\nBienvenido al Máster BIM Management + Inteligencia Artificial en la construcción, te enviamos un saludo desde todo el equipo Design Modeling Academy , Centro de entrenamiento Internacional con aval de Autodesk, CYPE y Aval Universitario en EE. UU. y Europa.\n¡Gracias por reservar tu cupo colega!\nEstaremos atentos a tu fecha de pago para completar tu registro y accesos al Máster BIM+IA.\nTe espero, saludos. 👋🏼\nIng. Gabriel Pantoja"
+  },
+  {
+   "id": "6a4802ea7ed534bebdf13079",
+   "nombre": "🟢 📩 EMAIL 1 — Inmediato (0 min después del formulario)",
+   "tipo": "builder",
+   "previewUrl": "https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/location%2FnkKbOarn5IwHeMv48uY9%2Femails%2F6a4802ea7ed534bebdf13079%2Findex.html?alt=media&token=e5a9193c-99e7-4e0a-bf5a-cdcd07f011d1",
+   "actualizado": "2026-07-03T18:43:55.520Z",
+   "caracteres_html": 45037,
+   "cuerpo": "Si no ves bien este correo, ábrelo en tu navegador .\n{{contact.first_name}}, lleva tu carrera al siguiente nivel con Metodología BIM + Inteligencia Artíficial\nAgenda tu Cita Gratis\nPlazas limitadas para la edición 2026.\nGracias por tu interés en el Máster Internacional BIM Management con Inteligencia Artificial\nHemos notado que dejaste tus datos hace unos minutos — eso me dice que estás pensando en serio en dar el siguiente paso en tu carrera. Quiero asegurarme de que tengas toda la información para tomar la mejor decisión.\nTe dejo aquí el PDF con el detalle completo del programa con: Módulos, herramientas, carga horaria y certificación internacional\nDescargar PDF Aquí\nRevisa todos los detalles del programa en el PDF descargable\nFormación premium pensada para profesionales exigentes\nCertificación internacional reconocida en el sector AEC.\nBIM + IA aplicada a proyectos reales de construcción.\nAcompañamiento cercano del equipo de Design Modeling Academy.\nAgenda ahora una Cita Gratuita\nEn esa llamada vas a poder:\n✔ Entender si el Máster es la opción correcta para tu perfil y objetivos\n✔ Conocer el plan de financiación (matrícula desde $499 + cuotas mensuales)\n✔ Resolver cualquier duda antes de comprometerte\nAgenda tu Cita Gratis\nResolvemos todas tus dudas en menos de 20 minutos.\nContactar a un Asesor\n¿Prefieres escribir por WhatsApp? Contacta con un Asesor aquí .\n{{contact.first_name}}, si tu objetivo es liderar proyectos BIM incorporando la potencia de la Inteligencia Artificial, este Máster está diseñado para ti.\nQuedo pendiente de ti para acompañarte en el proceso de admisión.\n© {{right_now.year}} {{location.name}}. Todos los derechos reservados.\nContacto: {{location.email}}\nSi no deseas seguir recibiendo información sobre este Máster, haz clic aquí para darte de baja ."
+  },
+  {
+   "id": "6a480512ea884521febb8210",
+   "nombre": "🟢 MASTER1AD - Se confirma agenda Bienvenida agenda",
+   "tipo": "builder",
+   "previewUrl": "https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/location%2FnkKbOarn5IwHeMv48uY9%2Femails%2F6a480512ea884521febb8210%2Findex.html?alt=media&token=940e4b85-152e-41f5-9301-e94b93dd63e7",
+   "actualizado": "2026-07-03T18:53:07.585Z",
+   "caracteres_html": 12066,
+   "cuerpo": "Hola, {{ contact.firstname }}​\nBienvenido al Máster Internacional BIM + IA te enviamos un saludo desde todo el equipo Design Modeling Academy , Centro de entrenamiento Internacional con aval de Autodesk, CYPE y Aval Universitario en EE. UU. y Europa.\nNotamos que ya agendaste una cita, al llenar nuestro formulario de contacto.\nTenemos una cantidad considerable de reservas de cupo. Para agilizar tu proceso de inscripción, necesitamos tu ayuda con los siguientes pasos:\nRevisar y leer el PDF con todos los temas y contenidos BIM disponibles del Master.\nDocumento PDF con información del MASTER\nConfirmar si conoces nuestros beneficios al inscribirte al MASTER:\n✅ 9 certificaciones con aval oficial internacional de Autodesk, para las áreas de estructuras, arquitectura y MEP.\n✅ Título propio Universitario de Sabal University válido en Estados Unidos.\n✅ Título propio Universitario con aval de la Universidad de las Naciones.\n✅ Certificación Universitaria Internacional DQ (Acceso a servicios de Bolsa de Trabajo, Visas y Continuar Estudios en España).\nAsegúrate de no faltar a la cita para obtener el beneficio adicional del PDF “Personal Project IA Pro” , que tan solo por asistir será totalmente GRATIS .\nTe espero en la cita, saludos. 👋🏼\nIng. Gabriel Pantoja"
+  },
+  {
+   "id": "6a48052b9145c98ca24d05ac",
+   "nombre": "🟢 MASTER1AD - Se confirma agenda Correo 6hs antes",
+   "tipo": "builder",
+   "previewUrl": "https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/location%2FnkKbOarn5IwHeMv48uY9%2Femails%2F6a48052b9145c98ca24d05ac%2Findex.html?alt=media&token=ed3e68d3-6a97-429e-8791-426b29a8fcd5",
+   "actualizado": "2026-07-03T18:53:32.189Z",
+   "caracteres_html": 10104,
+   "cuerpo": "Hola {{ contact.firstname }} 👋🏼\nTu cita está cada vez más cerca. Aquí tienes los detalles nuevamente para que no se te pase:\n📅 Fecha : {{ appointment.only_start_date }}\n🕒 Hora : {{ appointment.only_start_time }}\n🔗 Link de reunión : {{ appointment.meeting_location }}\n🔑 Recuerda por qué este Máster puede transformar tu futuro:\n✔️ Título universitario convalidado en EE.UU. (Sabal University)\n✔️ Certificación internacional oficial de Autodesk\n✔️ Formación avanzada en BIM, IA, automatización y gestión de proyectos\n✔️ Mentorías personalizadas y acceso 24/7 a plataforma exclusiva\nNos vemos en unas horas para conversar sobre cómo esta formación puede llevar tu perfil profesional al siguiente nivel 🚀\n¡No faltes! Será una gran oportunidad para resolver tus dudas y asegurar tu lugar.\nSaludos cordiales,\nIng. Gabriel Pantoja\nDirector Académico – Design Modeling Academy"
+  },
+  {
+   "id": "6a7fa2e637625718139183ba",
+   "nombre": "CODX TEMPLATE editorContent",
+   "tipo": "html",
+   "previewUrl": "https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/location%2FnkKbOarn5IwHeMv48uY9%2Femails%2F6a7fa2e637625718139183ba%2Findex.html?alt=media&token=a7e8564e-6239-49bc-a52f-771c1c81011f",
+   "actualizado": "2026-08-14T23:21:11.108Z",
+   "caracteres_html": 23700,
+   "cuerpo": "Máster BIM+IA · Automatización Revit con IA · Nuevas Credenciales NFT — lo que cambia tu carrera este mes 🚀\nSube imagen: Design Modeling DG\nNovedades\nMayo 2026\n✦ Este mes en DMA\nCODX CREATE TEMPLATE PROBE\nProbe\nVer Cursos y Unirse →\n4,500+\nGraduados\n3\nContinentes\n12\nMeses · Módulos\n150+\nCursos incluidos\nNovedades de Mayo 2026\nTres cosas que elevan tu perfil profesional este mes.\nSube imagen: Máster BIM + IA\n★ Programa insignia\nMáster Internacional BIM Management e Inteligencia Artificial\nPara la Construcción · 12 meses · $499 matrícula / $2,699 total\nEl Máster más completo de LATAM. Domina Revit, Navisworks, Dynamo, Python e IA con mentoría 1:1. Certifícate con títulos válidos en USA, España y Ecuador .\n✅ Título Sabal University (USA)\n✅ Instituto ISTE (SENESCYT)\n✅ Certificado DQ · UAIII\n✅ 12 Certificados Autodesk\n✅ 1,440 horas académicas\n✅ Credencial NFT incluida\nVer Landing →\nWhatsApp →\nHablar con Adrián →\n▼ También en Mayo\nSube imagen: Automatización en Revit con Herramientas Nativas y Addins Inteligentes\nCurso Nuevo\nAutomatización en Revit con Herramientas Nativas y Addins Inteligentes\nAutodesk Authorized Training\nPyRevit, add-ins y flujos inteligentes para automatizar tareas repetitivas.\n✅ Credencial NFT incluida\n✅ Certificado Autodesk oficial\n$149.99 USD (antes $199.99)\nInfo por WhatsApp →\nSube imagen: Especialización BIM en Diseño Estructural en Acero\nMás Vendida\nEspecialización BIM en Diseño Estructural en Acero\nRevit + Robot + Advance Steel\nAcceso inmediato e ilimitado. 4 certificaciones Autodesk. App móvil.\n✅ Revit · Robot · Advance Steel\n✅ 4 Certificados Autodesk\n$199.99 USD (antes $619.99)\nInfo por WhatsApp →\n🔗 Nuevo Mayo 2026 · Blockchain\n¡Tu Futuro Comienza Aquí!\n¿Qué son las Microcredenciales Digitales?\nSon microcredenciales digitales en formato NFT que validan tus conocimientos de forma segura, verificable y global . Cualquier empresa en el mundo puede verificarlas en segundos — son las credenciales que el mercado ya exige.\n📚\n1 Cursa\nCompleta un módulo de formación\n🔑\n2 Logra\nDemuestra tus competencias\n🏅\n3 Recibe\nTu credencial NFT encriptada\n🌐\n4 Comparte\nLinkedIn, CV y portafolio digital\nSube imagen: Nuevas NFT credenciales\nSube imagen: Qué son y para qué sirven\n🔗 Tecnología Blockchain\nCertificación única e inalterable\n💼 Portafolio Digital Potente\nDiferenciación profesional real\n🌍 Verificables y Globales\nValidación internacional inmediata\n🎯 Validación BIM + IA\nHabilidades técnicas verificadas\nVER CURSOS Y UNIRSE 👉\nAvalados por\nAutodesk ATC & Learning Partner · Sabal University (USA) · Instituto ISTE (España · SENESCYT) · Doctrina Qualitas · UAIII · IQS · NACES\n\"Siete años de experiencia en Revit no me consiguieron lo que el Máster de DMA logró en meses. Los scripts de Python automatizaron reportes semanales en tres proyectos simultáneos.\"\nLuis Fernández · Colombia · Egresado DMA\n¡No te quedes atrás!\nPotencializa tu carrera ahora.\nCupos limitados · Una sesión estratégica gratuita es todo lo que necesitas.\nPostular al Máster →\nVer todos los cursos →\nDesign Modeling DG S.A.S — BIM Consulting & Academy\nFormando líderes BIM en LATAM, USA y Europa · @design_modeling_dg\nSi no deseas recibir más correos, date de baja aquí ."
+  }
+ ]
+}
