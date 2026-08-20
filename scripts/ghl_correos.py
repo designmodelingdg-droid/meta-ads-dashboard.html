@@ -157,6 +157,51 @@ def cuerpos(lista, tope=200):
             "sin_previewUrl": sin_url, "fallos": fallos, "plantillas": out}
 
 
+
+def dentro_de_carpetas(lista):
+    """Mira si las carpetas guardan plantillas que la lista plana no trae.
+
+    La primera corrida devolvio 82 entradas: 18 del sistema, 31 plantillas y
+    33 CARPETAS. Si cada carpeta tiene correos dentro, el inventario real es
+    mucho mayor que 31 — y entregar 31 como si fuera todo seria justo el error
+    que hay que evitar.
+
+    No se supone: se le pregunta a la API. Se prueban los nombres de parametro
+    mas probables sobre una carpeta real y se anota cual responde.
+    """
+    carpetas = [t for t in lista if (t.get("tipo") or "") == "folder"]
+    if not carpetas:
+        return {"nota": "no hay carpetas"}
+
+    # 1) La lista completa, por si 82 era solo un tope y no el total real.
+    amplio = api("/emails/builder", locationId=LOCATION, limit=500)
+    total_amplio = None
+    if "_error" not in amplio:
+        for k in ("data", "builders", "templates"):
+            if isinstance(amplio.get(k), list):
+                total_amplio = len(amplio[k]); break
+        total_amplio = {"total_declarado": amplio.get("total"), "filas": total_amplio}
+
+    # 2) Pedir el contenido de una carpeta concreta, probando nombres de parametro.
+    prueba = carpetas[0]
+    intentos = {}
+    for clave in ("parentId", "folderId", "parent", "categoryId"):
+        d = api("/emails/builder", locationId=LOCATION, limit=100, **{clave: prueba["id"]})
+        if "_error" in d:
+            intentos[clave] = d["_error"]
+            continue
+        filas = next((d[k] for k in ("data", "builders", "templates")
+                      if isinstance(d.get(k), list)), [])
+        intentos[clave] = {"filas": len(filas), "total": d.get("total"),
+                           "nombres": [f.get("name") for f in filas[:6]]}
+        time.sleep(0.3)
+
+    return {"carpetas": len(carpetas),
+            "carpeta_probada": {"id": prueba["id"], "nombre": prueba["nombre"]},
+            "lista_con_limit_500": total_amplio,
+            "intentos_de_parametro": intentos}
+
+
 def main():
     if not TOKEN:
         print("ERROR: falta GHL_TOKEN en el entorno.", file=sys.stderr)
@@ -186,6 +231,10 @@ def main():
         print(f"   campos disponibles: {', '.join(p['campos_de_una'])}")
 
     if "_error" not in res["plantillas"]:
+        print("→ ¿Las carpetas esconden mas correos?…")
+        res["carpetas"] = dentro_de_carpetas(res["plantillas"]["plantillas"])
+        print("   ", json.dumps(res["carpetas"], ensure_ascii=False)[:400])
+
         print("→ Contenido de cada plantilla…")
         propias = [t for t in res["plantillas"]["plantillas"]
                    if not str(t.get("nombre") or "").startswith("Default -")]
