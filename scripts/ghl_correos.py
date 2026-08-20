@@ -1,205 +1,172 @@
 #!/usr/bin/env python3
 """
-Saca el inventario de correos de las automatizaciones de GoHighLevel.
+Inventario completo de los correos de GoHighLevel: recorre las carpetas,
+baja cada plantilla y deja el contenido legible en el repo.
 
-POR QUÉ EXISTE
-    El skill `auditoria-correos-sharp-crm` hace este inventario a mano, con el
-    navegador: entrar carpeta por carpeta, workflow por workflow, y abrir cada
-    plantilla. Son decenas de workflows y es facil dejarse alguno.
+QUÉ RESUELVE
+    El skill `auditoria-correos-sharp-crm` hace esto a mano con el navegador:
+    entrar carpeta por carpeta, abrir cada workflow y cada plantilla. Son
+    decenas, y es facil dejarse alguna.
 
-    Esto intenta lo mismo por API. Y hay un limite conocido, comprobado contra
-    la documentacion oficial el 19-ago-2026:
+CÓMO SE LLEGÓ AQUÍ (importa, porque el primer intento se quedaba corto)
+    /emails/builder devuelve 82 entradas y parece el inventario entero. No lo
+    es: de esas 82, 18 son plantillas del sistema, 31 son plantillas reales y
+    **33 son CARPETAS**. Solo la carpeta "SEGUIMIENTO" guarda 7 correos que la
+    lista plana no menciona.
 
-        GET /workflows/ devuelve SOLO metadatos — id, name, status, version,
-        createdAt, updatedAt, locationId. NO devuelve los pasos del workflow,
-        ni el asunto, ni el cuerpo, ni el id de la plantilla.
+    Se probaron cuatro nombres de parametro contra una carpeta real y el que
+    funciona es `parentId`. Los otros tres se ignoran y devuelven la lista de
+    siempre — o sea que un error de nombre NO da error: da un resultado
+    plausible y equivocado. Por eso se comprueba, no se supone.
 
-    O sea: la API da la LISTA de automatizaciones y (si el endpoint de
-    plantillas abre) el CONTENIDO de los correos, pero no el mapa de que
-    workflow usa que plantilla. Ese cruce sigue siendo trabajo de navegador.
-
-    Esta sonda existe para saber exactamente cuanto se puede automatizar antes
-    de mandar a nadie a hacer 40 clics.
+LÍMITE CONOCIDO
+    Sigue sin salir por API que workflow usa que plantilla: GET /workflows/
+    devuelve solo metadatos. Ese cruce se hace leyendo los nombres, que en
+    esta cuenta estan puestos por flujo.
 
 USO
     GHL_TOKEN=xxx python3 scripts/ghl_correos.py
 """
-import json, os, sys, time, urllib.parse, urllib.request, urllib.error
+import json, os, re, sys, time, urllib.parse, urllib.request, urllib.error
 from datetime import date
 
 TOKEN = os.environ.get("GHL_TOKEN", "").strip()
 LOCATION = "nkKbOarn5IwHeMv48uY9"
 V2 = "https://services.leadconnectorhq.com"
 SALIDA = "matriz-viral/fuentes/ghl"
-
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36")
+MAX_PROFUNDIDAD = 4     # tope de seguridad: si hubiera un ciclo, no gira sin fin
 
 
 def api(ruta, version="2021-07-28", **params):
-    """Una peticion. `version` importa: /workflows/ pide v3 y el resto 2021-07-28."""
     url = f"{V2}{ruta}"
     if params:
         url += ("&" if "?" in ruta else "?") + urllib.parse.urlencode(params)
     cab = {"Authorization": f"Bearer {TOKEN}", "Accept": "application/json",
            "Version": version, "User-Agent": UA}
-    r = urllib.request.Request(url, headers=cab)
     try:
-        with urllib.request.urlopen(r, timeout=40) as resp:
-            return json.load(resp)
+        with urllib.request.urlopen(urllib.request.Request(url, headers=cab), timeout=40) as r:
+            return json.load(r)
     except urllib.error.HTTPError as e:
-        cuerpo = e.read().decode()[:220]
-        lectura = {401: "el token no autentica aqui",
-                   403: "autentica pero sin permiso (o Cloudflare: mirar el cuerpo)",
-                   404: "la ruta no existe en la API",
-                   422: "la ruta existe y el token entra: faltan parametros"}
-        return {"_error": f"HTTP {e.code}", "_lectura": lectura.get(e.code),
-                "_detalle": cuerpo}
+        return {"_error": f"HTTP {e.code}", "_detalle": e.read().decode()[:200]}
     except Exception as e:                       # noqa: BLE001
         return {"_error": str(e)[:200]}
 
 
-def workflows():
-    """La lista de automatizaciones. Solo metadatos: la API no da los pasos."""
-    for v in ("v3", "2021-07-28"):
-        d = api("/workflows/", version=v, locationId=LOCATION)
-        if "_error" not in d:
-            ws = d.get("workflows", []) or []
-            return {"version_que_funciono": v, "total": len(ws),
-                    "workflows": [{"id": w.get("id"), "nombre": w.get("name"),
-                                   "estado": w.get("status"),
-                                   "actualizado": w.get("updatedAt")} for w in ws],
-                    "aviso": ("Solo metadatos. Los pasos de cada workflow —y por tanto "
-                              "que plantilla usa cada 'Enviar correo'— NO los expone la "
-                              "API: eso sigue siendo trabajo de navegador.")}
-    return d
+def filas_de(d):
+    for k in ("data", "builders", "templates", "docs"):
+        if isinstance(d.get(k), list):
+            return d[k]
+    return next((v for v in d.values() if isinstance(v, list)), [])
 
 
-def plantillas():
-    """Las plantillas de correo. Se prueban varias rutas: la doc no es publica."""
-    intentos = [
-        ("/emails/builder", {"locationId": LOCATION, "limit": 100}),
-        ("/emails/builder/", {"locationId": LOCATION, "limit": 100}),
-        ("/emails/templates", {"locationId": LOCATION, "limit": 100}),
-        ("/templates/", {"locationId": LOCATION, "limit": 100, "type": "email"}),
-        (f"/locations/{LOCATION}/templates", {"limit": 100, "type": "email"}),
-    ]
-    fallos = {}
-    for ruta, params in intentos:
-        d = api(ruta, **params)
-        if "_error" not in d:
-            filas = None
-            for k in ("data", "templates", "builders", "docs"):
-                if isinstance(d.get(k), list):
-                    filas = d[k]; break
-            if filas is None:
-                filas = [v for v in d.values() if isinstance(v, list)]
-                filas = filas[0] if filas else []
-            return {"ruta_que_funciono": ruta, "total": d.get("total", len(filas)),
-                    "en_esta_pagina": len(filas),
-                    "campos_de_una": sorted(filas[0].keys())[:25] if filas else [],
-                    "plantillas": [{"id": t.get("id") or t.get("_id"),
-                                    "nombre": t.get("name") or t.get("templateName"),
-                                    "tipo": t.get("templateType") or t.get("type"),
-                                    "previewUrl": t.get("previewUrl"),
-                                    "actualizado": t.get("lastUpdated") or t.get("updatedAt")}
-                                   for t in filas]}
-        fallos[ruta] = {"error": d["_error"], "lectura": d.get("_lectura")}
-        time.sleep(0.3)
-    return {"_error": "ninguna ruta de plantillas respondio", "intentos": fallos}
+def listar(parent=None):
+    p = {"locationId": LOCATION, "limit": 500}
+    if parent:
+        p["parentId"] = parent
+    d = api("/emails/builder", **p)
+    return [] if "_error" in d else filas_de(d)
 
+
+def recorrer(parent=None, ruta="", nivel=0, vistos=None):
+    """Baja el arbol entero de carpetas. Devuelve (plantillas, carpetas)."""
+    vistos = vistos if vistos is not None else set()
+    plantillas, carpetas = [], []
+    for t in listar(parent):
+        tid = t.get("id") or t.get("_id")
+        nombre = t.get("name") or "(sin nombre)"
+        if tid in vistos:
+            continue
+        vistos.add(tid)
+        if (t.get("templateType") or "") == "folder":
+            aqui = f"{ruta} > {nombre}" if ruta else nombre
+            carpetas.append({"id": tid, "nombre": nombre, "ruta": aqui})
+            if nivel < MAX_PROFUNDIDAD:
+                time.sleep(0.25)
+                sub_p, sub_c = recorrer(tid, aqui, nivel + 1, vistos)
+                plantillas += sub_p
+                carpetas += sub_c
+        else:
+            plantillas.append({"id": tid, "nombre": nombre,
+                               "carpeta": ruta or "(raiz)",
+                               "tipo": t.get("templateType"),
+                               "previewUrl": t.get("previewUrl"),
+                               "actualizado": t.get("lastUpdated")})
+    return plantillas, carpetas
 
 
 def texto_de(html):
-    """Saca el texto legible de un HTML de correo, sin traerse el CSS."""
-    import re
+    """El texto legible de un correo, sin CSS y conservando los parrafos."""
     h = re.sub(r"(?is)<(script|style|head)[^>]*>.*?</\1>", " ", html)
     h = re.sub(r"(?i)<br\s*/?>", "\n", h)
-    h = re.sub(r"(?i)</(p|div|tr|h[1-6]|li)>", "\n", h)
+    h = re.sub(r"(?i)</(p|div|tr|h[1-6]|li|td)>", "\n", h)
     t = re.sub(r"<[^>]+>", " ", h)
-    t = (t.replace("&nbsp;", " ").replace("&amp;", "&").replace("&quot;", '"')
-          .replace("&#39;", "'").replace("&lt;", "<").replace("&gt;", ">"))
+    for a, b in (("&nbsp;", " "), ("&amp;", "&"), ("&quot;", '"'),
+                 ("&#39;", "'"), ("&lt;", "<"), ("&gt;", ">")):
+        t = t.replace(a, b)
     lineas = [" ".join(l.split()) for l in t.split("\n")]
     return "\n".join(l for l in lineas if l)
 
 
-def cuerpos(lista, tope=200):
-    """Baja el contenido de cada plantilla desde su previewUrl.
-
-    Se prueba primero SIN token: el enlace de vista previa suele ser publico,
-    y si lo es no hace falta mandar la credencial a un host distinto del de la
-    API. Solo si falla se reintenta con el token.
-    """
-    out, sin_url, fallos = [], 0, 0
-    for t in lista[:tope]:
+def bajar(plantillas):
+    ok = fallo = sin_url = 0
+    for t in plantillas:
         url = t.get("previewUrl")
         if not url:
+            t["_nota"] = "sin enlace de vista previa"
             sin_url += 1
             continue
         html = None
+        # Primero sin token: el enlace de vista previa suele ser publico, y si
+        # lo es no hace falta mandar la credencial a otro host.
         for cab in ({"User-Agent": UA},
                     {"User-Agent": UA, "Authorization": f"Bearer {TOKEN}"}):
             try:
-                r = urllib.request.Request(url, headers=cab)
-                with urllib.request.urlopen(r, timeout=40) as resp:
-                    html = resp.read().decode("utf-8", "replace")
+                with urllib.request.urlopen(
+                        urllib.request.Request(url, headers=cab), timeout=40) as r:
+                    html = r.read().decode("utf-8", "replace")
                 break
             except Exception:                    # noqa: BLE001
                 continue
         if html is None:
-            fallos += 1
-            out.append({**t, "_error": "no se pudo abrir la vista previa"})
-            continue
-        cuerpo = texto_de(html)
-        out.append({**t, "caracteres_html": len(html), "cuerpo": cuerpo})
+            t["_nota"] = "no se pudo abrir la vista previa"
+            fallo += 1
+        else:
+            t["cuerpo"] = texto_de(html)
+            ok += 1
         time.sleep(0.2)
-    return {"bajadas": len([x for x in out if x.get("cuerpo")]),
-            "sin_previewUrl": sin_url, "fallos": fallos, "plantillas": out}
+    return {"con_cuerpo": ok, "fallos": fallo, "sin_enlace": sin_url}
 
 
+def escribir_md(plantillas, carpetas, cuenta):
+    """El inventario en Markdown, agrupado por carpeta — como pide la guia."""
+    por_carpeta = {}
+    for t in plantillas:
+        por_carpeta.setdefault(t["carpeta"], []).append(t)
 
-def dentro_de_carpetas(lista):
-    """Mira si las carpetas guardan plantillas que la lista plana no trae.
+    L = ["# Inventario de correos — GoHighLevel", "",
+         f"Generado el {date.today().isoformat()}.", "",
+         f"**{len(plantillas)} plantillas** en **{len(carpetas)} carpetas**. "
+         f"{cuenta['con_cuerpo']} con contenido descargado, {cuenta['fallos']} fallidas, "
+         f"{cuenta['sin_enlace']} sin enlace de vista previa.", "",
+         "> Lo que NO sale por API: que workflow usa que plantilla. El endpoint "
+         "de automatizaciones devuelve solo metadatos. En esta cuenta las "
+         "plantillas estan nombradas por su flujo, asi que el cruce se puede "
+         "hacer leyendo.", ""]
 
-    La primera corrida devolvio 82 entradas: 18 del sistema, 31 plantillas y
-    33 CARPETAS. Si cada carpeta tiene correos dentro, el inventario real es
-    mucho mayor que 31 — y entregar 31 como si fuera todo seria justo el error
-    que hay que evitar.
-
-    No se supone: se le pregunta a la API. Se prueban los nombres de parametro
-    mas probables sobre una carpeta real y se anota cual responde.
-    """
-    carpetas = [t for t in lista if (t.get("tipo") or "") == "folder"]
-    if not carpetas:
-        return {"nota": "no hay carpetas"}
-
-    # 1) La lista completa, por si 82 era solo un tope y no el total real.
-    amplio = api("/emails/builder", locationId=LOCATION, limit=500)
-    total_amplio = None
-    if "_error" not in amplio:
-        for k in ("data", "builders", "templates"):
-            if isinstance(amplio.get(k), list):
-                total_amplio = len(amplio[k]); break
-        total_amplio = {"total_declarado": amplio.get("total"), "filas": total_amplio}
-
-    # 2) Pedir el contenido de una carpeta concreta, probando nombres de parametro.
-    prueba = carpetas[0]
-    intentos = {}
-    for clave in ("parentId", "folderId", "parent", "categoryId"):
-        d = api("/emails/builder", locationId=LOCATION, limit=100, **{clave: prueba["id"]})
-        if "_error" in d:
-            intentos[clave] = d["_error"]
-            continue
-        filas = next((d[k] for k in ("data", "builders", "templates")
-                      if isinstance(d.get(k), list)), [])
-        intentos[clave] = {"filas": len(filas), "total": d.get("total"),
-                           "nombres": [f.get("name") for f in filas[:6]]}
-        time.sleep(0.3)
-
-    return {"carpetas": len(carpetas),
-            "carpeta_probada": {"id": prueba["id"], "nombre": prueba["nombre"]},
-            "lista_con_limit_500": total_amplio,
-            "intentos_de_parametro": intentos}
+    for carpeta in sorted(por_carpeta):
+        L += [f"## {carpeta}", ""]
+        for t in sorted(por_carpeta[carpeta], key=lambda x: x["nombre"]):
+            L += [f"### {t['nombre']}", "",
+                  f"- **id:** `{t['id']}`",
+                  f"- **tipo:** {t.get('tipo') or '—'}",
+                  f"- **actualizada:** {t.get('actualizado') or '—'}"]
+            if t.get("cuerpo"):
+                L += ["- **Cuerpo:**", "", "```", t["cuerpo"][:6000], "```", ""]
+            else:
+                L += [f"- ⚠️ **Sin contenido:** {t.get('_nota')}", ""]
+    open(f"{SALIDA}/INVENTARIO-CORREOS.md", "w", encoding="utf-8").write("\n".join(L))
 
 
 def main():
@@ -208,48 +175,30 @@ def main():
         sys.exit(1)
     os.makedirs(SALIDA, exist_ok=True)
 
-    res = {"generado": date.today().isoformat(), "location": LOCATION,
-           "para_que": ("Saber cuanto del inventario de correos se puede sacar por API "
-                        "y cuanto necesita navegador.")}
+    print("→ Recorriendo carpetas…")
+    plantillas, carpetas = recorrer()
+    propias = [t for t in plantillas if not str(t["nombre"]).startswith("Default -")]
+    print(f"   {len(carpetas)} carpetas · {len(plantillas)} plantillas "
+          f"({len(propias)} propias, {len(plantillas)-len(propias)} del sistema)")
 
-    print("→ Automatizaciones…")
-    res["workflows"] = workflows()
-    if "_error" in res["workflows"]:
-        print(f"   ERROR: {res['workflows']['_error']} · {res['workflows'].get('_lectura','')}")
-    else:
-        print(f"   {res['workflows']['total']} workflows (via {res['workflows']['version_que_funciono']})")
+    print("→ Bajando el contenido…")
+    cuenta = bajar(propias)
+    print(f"   {cuenta['con_cuerpo']} con cuerpo · {cuenta['fallos']} fallos "
+          f"· {cuenta['sin_enlace']} sin enlace")
 
-    print("→ Plantillas de correo…")
-    res["plantillas"] = plantillas()
-    if "_error" in res["plantillas"]:
-        print("   ninguna ruta respondio:")
-        for ruta, f in res["plantillas"]["intentos"].items():
-            print(f"     {ruta:44} {f['error']} · {f.get('lectura') or ''}")
-    else:
-        p = res["plantillas"]
-        print(f"   {p['total']} plantillas via {p['ruta_que_funciono']}")
-        print(f"   campos disponibles: {', '.join(p['campos_de_una'])}")
+    ws = api("/workflows/", version="v3", locationId=LOCATION)
+    n_ws = len(ws.get("workflows", [])) if "_error" not in ws else None
 
-    if "_error" not in res["plantillas"]:
-        print("→ ¿Las carpetas esconden mas correos?…")
-        res["carpetas"] = dentro_de_carpetas(res["plantillas"]["plantillas"])
-        print("   ", json.dumps(res["carpetas"], ensure_ascii=False)[:400])
-
-        print("→ Contenido de cada plantilla…")
-        propias = [t for t in res["plantillas"]["plantillas"]
-                   if not str(t.get("nombre") or "").startswith("Default -")]
-        c = cuerpos(propias)
-        print(f"   {c['bajadas']} cuerpos bajados · {c['fallos']} fallos "
-              f"· {c['sin_previewUrl']} sin enlace de vista previa")
-        json.dump({"generado": res["generado"], **c},
-                  open(f"{SALIDA}/correos-contenido.json", "w", encoding="utf-8"),
-                  ensure_ascii=False, indent=1)
-        res["contenido"] = {"bajadas": c["bajadas"], "fallos": c["fallos"],
-                            "sin_previewUrl": c["sin_previewUrl"]}
-
-    json.dump(res, open(f"{SALIDA}/correos.json", "w", encoding="utf-8"),
+    json.dump({"generado": date.today().isoformat(),
+               "carpetas": carpetas, "plantillas": propias,
+               "cuenta": cuenta, "workflows_en_la_cuenta": n_ws,
+               "limite_conocido": ("La API no dice que workflow usa que plantilla: "
+                                   "GET /workflows/ solo devuelve metadatos.")},
+              open(f"{SALIDA}/correos-contenido.json", "w", encoding="utf-8"),
               ensure_ascii=False, indent=1)
-    print(f"\n   resultado en {SALIDA}/correos.json y correos-contenido.json")
+
+    escribir_md(propias, carpetas, cuenta)
+    print(f"\n   {SALIDA}/INVENTARIO-CORREOS.md y correos-contenido.json")
 
 
 if __name__ == "__main__":
