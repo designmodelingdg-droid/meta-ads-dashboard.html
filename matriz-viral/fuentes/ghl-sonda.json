@@ -68,11 +68,13 @@
       "ruta": "/membership/locations/nkKbOarn5IwHeMv48uY9"
     },
     "calendarios": {
-      "ok": false,
-      "http": 401,
-      "detalle": "{\"statusCode\":401,\"message\":\"Command timed out\"}",
-      "lectura": "el token no autentica aquí",
-      "bloqueo_cloudflare": false,
+      "ok": true,
+      "http": 200,
+      "registros": "10+",
+      "claves": [
+        "calendars",
+        "traceId"
+      ],
       "ruta": "/calendars/?locationId=nkKbOarn5IwHeMv48uY9"
     },
     "citas agendadas": {
@@ -211,6 +213,7 @@
     "contactos",
     "oportunidades",
     "pipelines",
+    "calendarios",
     "formularios",
     "envíos de formulario",
     "encuestas",
@@ -227,7 +230,6 @@
     "membresías",
     "membership · productos",
     "membership · raíz",
-    "calendarios",
     "citas agendadas",
     "v1 · contactos",
     "v1 · pipelines"
