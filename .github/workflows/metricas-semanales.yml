@@ -132,6 +132,12 @@ jobs:
           GHL_TOKEN: ${{ secrets.GHL_TOKEN }}
         run: python3 scripts/ghl_correos.py
 
+      - name: Analizar conversaciones del CRM (perfilado de leads)
+        continue-on-error: true
+        env:
+          GHL_TOKEN: ${{ secrets.GHL_TOKEN }}
+        run: python3 scripts/ghl_conversaciones.py --limite 300
+
       - name: Traer datos de la competencia
         env:
           META_TOKEN: ${{ secrets.META_TOKEN }}
