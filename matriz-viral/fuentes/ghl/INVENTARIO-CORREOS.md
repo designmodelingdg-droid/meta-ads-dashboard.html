@@ -1,8 +1,8 @@
 # Inventario de correos — GoHighLevel
 
-Generado el 2026-08-20.
+Generado el 2026-08-21.
 
-**341 plantillas** en **37 carpetas**. 341 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
+**380 plantillas** en **40 carpetas**. 380 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
 
 > Lo que NO sale por API: que workflow usa que plantilla. El endpoint de automatizaciones devuelve solo metadatos. En esta cuenta las plantillas estan nombradas por su flujo, asi que el cruce se puede hacer leyendo.
 
@@ -970,30 +970,6 @@ Bienvenido al Máster BIM Management + Inteligencia Artificial en la construcci�
 ¡Gracias por reservar tu cupo colega!
 Estaremos atentos a tu fecha de pago para completar tu registro y accesos al Máster BIM+IA.
 Te espero, saludos. 👋🏼
-Ing. Gabriel Pantoja
-```
-
-### 🟢 MASTER1AD - Se confirma agenda Bienvenida agenda
-
-- **id:** `6a480512ea884521febb8210`
-- **tipo:** builder
-- **actualizada:** 2026-07-03T18:53:07.585Z
-- **Cuerpo:**
-
-```
-Hola, {{ contact.firstname }}​
-Bienvenido al Máster Internacional BIM + IA te enviamos un saludo desde todo el equipo Design Modeling Academy , Centro de entrenamiento Internacional con aval de Autodesk, CYPE y Aval Universitario en EE. UU. y Europa.
-Notamos que ya agendaste una cita, al llenar nuestro formulario de contacto.
-Tenemos una cantidad considerable de reservas de cupo. Para agilizar tu proceso de inscripción, necesitamos tu ayuda con los siguientes pasos:
-Revisar y leer el PDF con todos los temas y contenidos BIM disponibles del Master.
-Documento PDF con información del MASTER
-Confirmar si conoces nuestros beneficios al inscribirte al MASTER:
-✅ 9 certificaciones con aval oficial internacional de Autodesk, para las áreas de estructuras, arquitectura y MEP.
-✅ Título propio Universitario de Sabal University válido en Estados Unidos.
-✅ Título propio Universitario con aval de la Universidad de las Naciones.
-✅ Certificación Universitaria Internacional DQ (Acceso a servicios de Bolsa de Trabajo, Visas y Continuar Estudios en España).
-Asegúrate de no faltar a la cita para obtener el beneficio adicional del PDF “Personal Project IA Pro” , que tan solo por asistir será totalmente GRATIS .
-Te espero en la cita, saludos. 👋🏼
 Ing. Gabriel Pantoja
 ```
 
@@ -6234,110 +6210,6 @@ Ing. Gabriel Pantoja
 Director Académico – Design Modeling Academy
 ```
 
-### MASTER2RC - Seguimiento 1
-
-- **id:** `68648a60fdb5735640736fe5`
-- **tipo:** builder
-- **actualizada:** 2025-07-02T01:30:55.258Z
-- **Cuerpo:**
-
-```
-Hola, {{ contact.firstname }}
-Gracias por asistir a nuestra cita sobre el Máster BIM+IA. En este mensaje te adjunto el PDF “Personal Project IA Pro” correspondiente para que aprendas a usar las herramientas más novedosas y poder impulsar tu negocio e ingresos, y mejorar tu posición laboral.
-📥 DESCARGA AQUÍ TU GPT
-No te olvides lo conversado en la reunión sobre tu descuento exclusivo para comenzar a capacitarte con el Máster BIM+IA . Avísame si tienes alguna otra duda.
-Para poder ingresar, me confirmas si tienes el enlace para hacer tu inversión. En caso contrario, quedamos atentos a tu solicitud para enviártelo cuanto antes.
-Saludos,
-Equipo Design Modeling Academy
-```
-
-### MASTER2RC - Seguimiento 3
-
-- **id:** `68648b6dfdb57346b37370a7`
-- **tipo:** builder
-- **actualizada:** 2025-07-02T01:36:11.359Z
-- **Cuerpo:**
-
-```
-Hola, {{ contact.firstname }}​
-Conoce cómo Albino Piñero transformó su carrera y aumentó sus ingresos tras cursar el Diplomado BIM🎓 Si ya terminaste tu Diplomado, este es tu siguiente paso.
-📽️ Video Estudiante Albino Piñero
-Recuerda que en {{ custom_values.fecha_de_inicio }} empezamos con la clase de introducción al Máster BIM+IA . Si tienes alguna consulta, no dudes en responder a este correo o agendar una cita
-¡Espero verte en el Máster BIM+IA! 👋🏼
-Ing. Gabriel Pantoja
-¡AGENDA TU CITA AQUÍ!
-```
-
-### MASTER2RC - Seguimiento 4
-
-- **id:** `68648d175715d1f1f6a002cc`
-- **tipo:** builder
-- **actualizada:** 2025-07-02T01:38:18.593Z
-- **Cuerpo:**
-
-```
-Hola, {{ contact.firstname }}​
-Quería comentarte sobre nuestras nuevas acreditaciones en Design Modeling Academy, las cuales nos permitirán otorgar, a través de nuestro Máster BIM+IA , títulos universitarios con aval en EE. UU. y en Europa.
-Con el siguiente enlace puedes conocer las acreditaciones de nuestra institución y algunos beneficios de pertenecer a nuestra comunidad de estudiantes internacionales. Te animo a explorar esta increíble oportunidad y unirte a nosotros. ¡Haz clic en el enlace para más información!
-Acreditaciones Design Modeling Academy
-¡Feliz Día! 👋🏼
-Ingeniero Gabriel Pantoja
-¡AGENDA TU CITA AQUÍ!
-```
-
-### MASTER2RC - Seguimiento 5
-
-- **id:** `68648dabb6855faf8d7b14e3`
-- **tipo:** builder
-- **actualizada:** 2025-07-02T01:41:10.737Z
-- **Cuerpo:**
-
-```
-Hola, {{ contact.firstname }}​
-Te saludo nuevamente, con la intención de avisarte que ya casi comenzamos el Máster BIM+IA , estaremos asignando las últimas 5 plazas. ¿Aún deseas participar?
-Recuerda los beneficios: 12 certificaciones con aval internacional, títulos propios universitarios y acceso a servicios de bolsa de trabajo. El Máster tiene un valor total de $𝟮,𝟲𝟵𝟵.𝟵𝟵 𝗨𝗦𝗗, que incluye todos los beneficios y certificaciones mencionados. Para facilitar tu acceso, ofrecemos 𝗽𝗹𝗮𝗻𝗲𝘀 𝗱𝗲 𝗽𝗮𝗴𝗼 𝗳𝗹𝗲𝘅𝗶𝗯𝗹𝗲𝘀 𝗱𝗲 𝗵𝗮𝘀𝘁𝗮 𝟭𝟮 𝗺𝗲𝘀𝗲𝘀.
-Actualmente contamos con la etapa de 𝗣𝗥𝗘𝗩𝗘𝗡𝗧𝗔 𝗱𝗲𝗹 𝗺𝗮́𝘀𝘁𝗲𝗿, donde puedes reservar tu cupo con un 𝗽𝗮𝗴𝗼 𝘂́𝗻𝗶𝗰𝗼 𝗱𝗲 $𝟰𝟵𝟵.𝟵𝟵 𝗨𝗦𝗗 correspondiente a la matrícula. Luego, podrás completar el monto restante mediante el plan de pago que mejor se adapte a ti.🙌🏼
-Reserva tu cita para el proceso de pago e información. ¡Nos vemos en el Máster BIM+IA!
-Ing. Gabriel Pantoja
-¡AGENDA TU CITA AQUÍ!
-```
-
-### MASTER2RC - Seguimiento 6
-
-- **id:** `68648e465184e7569e8601fc`
-- **tipo:** builder
-- **actualizada:** 2025-07-02T01:43:48.277Z
-- **Cuerpo:**
-
-```
-Buen día, {{ contact.firstname }} , te contacto nuevamente ya que no he recibido tu respuesta del correo anterior​.
-Cuéntame, ¿pudiste revisar el PDF “Personal Project IA Pro” que te envié en el correo anterior?
-Adicional, recuerda que en el mes de {{ custom_values.fecha_de_inicio }} comenzamos el Máster BIM+IA . Me preguntaba igual si ¿aún te interesa inscribirte en nuestro Máster BIM+IA o si has tomado alguna otra decisión?
-Si tienes alguna duda, podemos agendar una cita de solo 15 minutos vía zoom para ampliar la información.
-Si tienes algún comentario, puedes responder en este mismo correo ¡Estaré encantado de apoyarte!
-Saludos 👋🏼
-Ingeniero Gabriel Pantoja
-¡AGENDA TU CITA AQUÍ!
-```
-
-### MASTER2RC - Seguimiento 7
-
-- **id:** `68648ef8d3dc9677731d6fb0`
-- **tipo:** builder
-- **actualizada:** 2025-07-02T01:46:56.011Z
-- **Cuerpo:**
-
-```
-Hola {{ contact.firstname }},
-He intentado ponerme en contacto contigo varias veces con el propósito de ayudarte en tu proceso de inscripción al Máster BIM+IA , que mostraste interés anteriormente, sin embargo, todavía no he recibido respuesta, lo cual puede deberse a una de estas dos razones:
-✅ 1. No necesitas mi ayuda con la inscripción al Máster BIM+IA y debería dejar de escribirte.
-✅ 2. Todavía te interesa inscribirte, pero no has tenido tiempo para responder el mensaje.
-Te agradecería si me dijeras ¿cuál de estos motivos coincide con tu situación?
-¡Qué tengas un buen día! 👋🏼
-Ing. Gabriel Pantoja
-¡AGENDA TU CITA AQUÍ!
-```
-
 ### MASTER3IM - Seguimiento 1
 
 - **id:** `68649035d3dc969dde1d70d2`
@@ -7739,7 +7611,369 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-## ✅ AUTOMATIZACIONES PIPELINE
+## ✅ AUTOMATIZACIONES PIPELINE > ✅ CURSOS LOWCOST > ✅SEG OPORTUNIDAD FUTURA + NO CALIFICADO
+
+### ✅ Seguimiento 01 quienes somos
+
+- **id:** `6a887c4bbc3bac7221b9cd78`
+- **tipo:** html
+- **actualizada:** 2026-08-21T17:01:36.892Z
+- **Cuerpo:**
+
+```
+M&aacute;s de 5 a&ntilde;os formando ingenieros en LATAM, EE.UU. y Europa.
+Qui&eacute;nes somos
+&iquest;Design Modeling Academy? &iquest;Y ustedes qui&eacute;nes son?
+Hola {{contact.first_name}} ,
+Es una pregunta justa, y preferimos respond&eacute;rtela nosotros antes de que tengas que buscarla.
+Design Modeling DG lleva m&aacute;s de 5 a&ntilde;os formando ingenieros y arquitectos en Latinoam&eacute;rica, Estados Unidos y Europa, con m&aacute;s de 4.000 estudiantes egresados .
+No somos una academia que graba videos y los vende. Somos centro autorizado por las marcas cuyo software ense&ntilde;amos, y nuestras titulaciones tienen validez universitaria real fuera del Ecuador. Eso es lo que nos diferencia, y es verificable.
++5 a&ntilde;os &middot; +4.000 egresados &middot; 3 continentes
+LATAM &middot; Estados Unidos &middot; Europa
+Nuestros avales, uno por uno:
+&#10003; Autodesk Authorized Training Center desde enero de 2022.
+&#10003; Primer Authorized Partner de CYPE en Latinoam&eacute;rica, y Professional Certification Center desde noviembre de 2023.
+&#10003; Titulaci&oacute;n universitaria v&aacute;lida en EE.UU., M&eacute;xico y Europa: Sabal University (Florida, licencia No. 11494) y Universidad de las Naciones (M&eacute;xico), a trav&eacute;s de Doctrina Qualitas.
+&#10003; Certificado del Ministerio de Trabajo del Ecuador (SETEC), con valor para tu hoja de vida en el pa&iacute;s.
+&#10003; Microcredenciales NFT en blockchain , verificables de forma inalterable en cualquier parte del mundo.
+&#127891; Lo que emitimos al finalizar
+Certificados internacionales
+Autodesk
+Completaci&oacute;n del curso
+Doctrina Qualitas
+Certificado Universitario Internacional
+Modeling-DG S.A.S.
+Certificado Internacional de horas
+Diplomas universitarios
+Sabal University
+Titulaci&oacute;n en EE.UU. &middot; Florida
+U. de las Naciones
+Titulaci&oacute;n en M&eacute;xico
+ISTE Espa&ntilde;a
+T&iacute;tulo propio &middot; Europa
+Lo que dicen quienes ya pasaron por aqu&iacute;:
+&ldquo;Una experiencia excelente, con acompa&ntilde;amiento total durante todo el proceso.&rdquo;
+Javier Sol&oacute;rzano &#9733;&#9733;&#9733;&#9733;&#9733;
+&ldquo;La mejor decisi&oacute;n que he tomado en mi formaci&oacute;n profesional.&rdquo;
+Albino Pi&ntilde;eiro &#9733;&#9733;&#9733;&#9733;&#9733;
+Si quieres revisar cada acreditaci&oacute;n con sus enlaces oficiales, est&aacute;n todas aqu&iacute;:
+Conocer nuestras acreditaciones
+Un gusto tenerte por aqu&iacute;,
+El equipo de Design Modeling Academy
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Seguimiento 02 test nivel bim
+
+- **id:** `6a887c717e0c28b36812d626`
+- **tipo:** html
+- **actualizada:** 2026-08-21T16:41:37.717Z
+- **Cuerpo:**
+
+```
+20 preguntas, 5 minutos, y sabes exactamente d&oacute;nde est&aacute;s parado.
+Test gratuito
+&iquest;Sabes realmente en qu&eacute; nivel BIM est&aacute;s?
+Hola {{contact.first_name}} ,
+Casi todo el mundo cree que est&aacute; un nivel m&aacute;s arriba de donde realmente est&aacute;. Es normal: uno domina lo que usa a diario y da por hecho el resto.
+Armamos un test de 20 preguntas que se responde en unos 5 minutos. No es un examen y nadie lo califica: te ubica en uno de los 4 niveles &mdash;Modelador, Coordinador, BIM Manager 4D-5D y Especialista BIM+IA&mdash; y te dice qu&eacute; competencias concretas te faltan para pasar al siguiente.
+Llenas el formulario y el resultado te llega autom&aacute;ticamente.
+Hacer el test ahora
+Gratis &middot; 5 minutos &middot; resultado inmediato
+Nos cuentas qu&eacute; nivel te sali&oacute;.
+El equipo de Design Modeling Academy
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Seguimiento 03 curso gratuito
+
+- **id:** `6a887cc2c95ab36931b3c749`
+- **tipo:** html
+- **actualizada:** 2026-08-21T16:42:32.530Z
+- **Cuerpo:**
+
+```
+Un curso completo, dentro de la comunidad, sin costo y sin tarjeta.
+Regalo para ti
+Tu curso de Introducci&oacute;n al Dise&ntilde;o, C&aacute;lculo y Modelado BIM
+Hola {{contact.first_name}} ,
+Queremos que pruebes c&oacute;mo ense&ntilde;amos sin que tengas que poner un d&oacute;lar. Te abrimos el acceso al curso Introducci&oacute;n al Dise&ntilde;o, C&aacute;lculo y Modelado BIM , completo y sin costo.
+Es el punto de partida ordenado: qu&eacute; es BIM de verdad, para qu&eacute; sirve y c&oacute;mo encaja en un proyecto estructural real. Contenido claro, ejemplos aplicados y avance a tu ritmo.
+El curso se entrega dentro de la comunidad gratuita en la que ya est&aacute;s, as&iacute; que no tienes que crear ninguna cuenta nueva ni registrar tarjeta.
+Inscribirme al curso gratuito
+Sin costo &middot; sin tarjeta de cr&eacute;dito &middot; acceso inmediato
+Que lo disfrutes,
+El equipo de Design Modeling Academy
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Seguimiento 04 oferta 2x1 (acero + cimentaciones)
+
+- **id:** `6a887d05676a1cd9c1f57092`
+- **tipo:** html
+- **actualizada:** 2026-08-21T16:44:48.659Z
+- **Cuerpo:**
+
+```
+Dos especializaciones completas, un pago &uacute;nico. La ventana se cierra en dos d&iacute;as.
+Solo 48 horas
+Ll&eacute;vate Acero y Cimentaciones en un solo pago
++
+Hola {{contact.first_name}} ,
+Durante estas semanas te mostramos qui&eacute;nes somos, te dejamos hacer el test, te regalamos un curso completo y te abrimos una clase real de la Especializaci&oacute;n en Acero. Sin pedirte nada a cambio.
+Hoy s&iacute; venimos con una propuesta, y es la mejor que podemos hacerte.
+Precio regular: 4 m&oacute;dulos &times; $154.99
+$619.96 USD
+Precio de esta oferta
+$199.99
+USD, pago &uacute;nico por las 4 formaciones
+Ahorras $419.97
+&#127873; Regalo incluido
+Especializaci&oacute;n en Cimentaciones, completa
+No es un m&oacute;dulo suelto ni una muestra: es el programa entero, con sus certificaciones, y entra sin costo adicional junto con el de Acero.
+Rev&iacute;salo antes de decidir:
+&#128196; Temario de la Especializaci&oacute;n en Acero
+&#128196; Temario de la Especializaci&oacute;n en Cimentaciones
+&#9203; Esta oferta vence en 48 horas, sin excepci&oacute;n.
+El cierre lo hace nuestro equipo acad&eacute;mico por WhatsApp: te confirman el cupo, resuelven cualquier duda y te acompa&ntilde;an en el pago. No hay formulario ni carrito.
+Quiero las dos especializaciones
+Te responde un asesor acad&eacute;mico, no un bot
+Aqu&iacute; estamos,
+El equipo de Design Modeling Academy
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Seguimiento 04 oferta naves 27 USD
+
+- **id:** `6a887f836b43001beef21f2c`
+- **tipo:** html
+- **actualizada:** 2026-08-21T17:05:11.606Z
+- **Cuerpo:**
+
+```
+Incluye el software y un mes de dudas directas con el instructor.
+Precio de entrada
+SAP2000 a nivel profesional, ahora a menor costo
+Hola {{contact.first_name}} ,
+Hay una diferencia enorme entre saber que existe SAP2000 y poder entregar el c&aacute;lculo de una nave industrial completa. Esa diferencia se cierra en unas 26 horas de trabajo, y cuesta menos de lo que gastas en una cena fuera.
+El curso Naves Industriales PRO en SAP2000 va directo a eso: dise&ntilde;ar naves de acero ante cargas de viento y sismo, de principio a fin, con el Ing. Gabriel Pantoja.
+25h 55min &middot; 14 sesiones de video &middot; 19 archivos descargables
+Nivel intermedio &ndash; avanzado &middot; Ing. Gabriel Pantoja
+Al terminar sabes hacer esto:
+1. Dise&ntilde;ar p&oacute;rticos de acero en SAP2000, con criterio de predise&ntilde;o eficiente.
+2. Aplicar y determinar cargas de viento y sismo sobre la nave.
+3. Analizar pandeo flexo-torsional y lateral-torsional, y verificar la estabilidad.
+4. Optimizar pesos: bajar el acero sin perder seguridad, que es donde est&aacute; el dinero.
+Y ahora la parte que suele sorprender:
+Valor regular del curso
+USD 154.99
+Hoy lo tomas por
+$26.99
+USD, pago &uacute;nico &middot; acceso de por vida
+Menos de lo que cuesta una salida a comer.
+Y por ese valor entra todo esto:
+&#10003; El software SAP2000 para llevar a cabo la formaci&oacute;n.
+&#10003; Un mes de acceso directo al instructor por Zoom o WhatsApp, para tus dudas.
+&#10003; Certificado al finalizar el curso.
+&#10003; Acceso de por vida a la plataforma y a todo el material.
+&#10003; 100% a distancia, avanzas a tu ritmo.
+Ese es el punto: te damos el software y un mes de acompa&ntilde;amiento directo con el instructor por el precio de una cena. No conocemos a nadie m&aacute;s que lo haga a este valor.
+&#9733;&#9733;&#9733;&#9733; 4.0 &middot; 83 estudiantes ya lo tomaron
+&#9203; Tienes 48 horas desde que recibes este correo para tomarlo a este precio.
+Quiero el curso por $26.99
+Compra directa en la web &middot; acceso inmediato
+&iquest;Te qued&oacute; alguna pregunta?
+Escr&iacute;benos por WhatsApp
+Hay una persona del equipo al otro lado
+Nos vemos dentro,
+El equipo de Design Modeling Academy
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+## ✅ AUTOMATIZACIONES PIPELINE > ✅ MASTER HIGHTICKETS
+
+### MASTER2RC - Seguimiento 1
+
+- **id:** `68648a60fdb5735640736fe5`
+- **tipo:** builder
+- **actualizada:** 2025-07-02T01:30:55.258Z
+- **Cuerpo:**
+
+```
+Hola, {{ contact.firstname }}
+Gracias por asistir a nuestra cita sobre el Máster BIM+IA. En este mensaje te adjunto el PDF “Personal Project IA Pro” correspondiente para que aprendas a usar las herramientas más novedosas y poder impulsar tu negocio e ingresos, y mejorar tu posición laboral.
+📥 DESCARGA AQUÍ TU GPT
+No te olvides lo conversado en la reunión sobre tu descuento exclusivo para comenzar a capacitarte con el Máster BIM+IA . Avísame si tienes alguna otra duda.
+Para poder ingresar, me confirmas si tienes el enlace para hacer tu inversión. En caso contrario, quedamos atentos a tu solicitud para enviártelo cuanto antes.
+Saludos,
+Equipo Design Modeling Academy
+```
+
+### MASTER2RC - Seguimiento 3
+
+- **id:** `68648b6dfdb57346b37370a7`
+- **tipo:** builder
+- **actualizada:** 2025-07-02T01:36:11.359Z
+- **Cuerpo:**
+
+```
+Hola, {{ contact.firstname }}​
+Conoce cómo Albino Piñero transformó su carrera y aumentó sus ingresos tras cursar el Diplomado BIM🎓 Si ya terminaste tu Diplomado, este es tu siguiente paso.
+📽️ Video Estudiante Albino Piñero
+Recuerda que en {{ custom_values.fecha_de_inicio }} empezamos con la clase de introducción al Máster BIM+IA . Si tienes alguna consulta, no dudes en responder a este correo o agendar una cita
+¡Espero verte en el Máster BIM+IA! 👋🏼
+Ing. Gabriel Pantoja
+¡AGENDA TU CITA AQUÍ!
+```
+
+### MASTER2RC - Seguimiento 4
+
+- **id:** `68648d175715d1f1f6a002cc`
+- **tipo:** builder
+- **actualizada:** 2025-07-02T01:38:18.593Z
+- **Cuerpo:**
+
+```
+Hola, {{ contact.firstname }}​
+Quería comentarte sobre nuestras nuevas acreditaciones en Design Modeling Academy, las cuales nos permitirán otorgar, a través de nuestro Máster BIM+IA , títulos universitarios con aval en EE. UU. y en Europa.
+Con el siguiente enlace puedes conocer las acreditaciones de nuestra institución y algunos beneficios de pertenecer a nuestra comunidad de estudiantes internacionales. Te animo a explorar esta increíble oportunidad y unirte a nosotros. ¡Haz clic en el enlace para más información!
+Acreditaciones Design Modeling Academy
+¡Feliz Día! 👋🏼
+Ingeniero Gabriel Pantoja
+¡AGENDA TU CITA AQUÍ!
+```
+
+### MASTER2RC - Seguimiento 5
+
+- **id:** `68648dabb6855faf8d7b14e3`
+- **tipo:** builder
+- **actualizada:** 2025-07-02T01:41:10.737Z
+- **Cuerpo:**
+
+```
+Hola, {{ contact.firstname }}​
+Te saludo nuevamente, con la intención de avisarte que ya casi comenzamos el Máster BIM+IA , estaremos asignando las últimas 5 plazas. ¿Aún deseas participar?
+Recuerda los beneficios: 12 certificaciones con aval internacional, títulos propios universitarios y acceso a servicios de bolsa de trabajo. El Máster tiene un valor total de $𝟮,𝟲𝟵𝟵.𝟵𝟵 𝗨𝗦𝗗, que incluye todos los beneficios y certificaciones mencionados. Para facilitar tu acceso, ofrecemos 𝗽𝗹𝗮𝗻𝗲𝘀 𝗱𝗲 𝗽𝗮𝗴𝗼 𝗳𝗹𝗲𝘅𝗶𝗯𝗹𝗲𝘀 𝗱𝗲 𝗵𝗮𝘀𝘁𝗮 𝟭𝟮 𝗺𝗲𝘀𝗲𝘀.
+Actualmente contamos con la etapa de 𝗣𝗥𝗘𝗩𝗘𝗡𝗧𝗔 𝗱𝗲𝗹 𝗺𝗮́𝘀𝘁𝗲𝗿, donde puedes reservar tu cupo con un 𝗽𝗮𝗴𝗼 𝘂́𝗻𝗶𝗰𝗼 𝗱𝗲 $𝟰𝟵𝟵.𝟵𝟵 𝗨𝗦𝗗 correspondiente a la matrícula. Luego, podrás completar el monto restante mediante el plan de pago que mejor se adapte a ti.🙌🏼
+Reserva tu cita para el proceso de pago e información. ¡Nos vemos en el Máster BIM+IA!
+Ing. Gabriel Pantoja
+¡AGENDA TU CITA AQUÍ!
+```
+
+### MASTER2RC - Seguimiento 6
+
+- **id:** `68648e465184e7569e8601fc`
+- **tipo:** builder
+- **actualizada:** 2025-07-02T01:43:48.277Z
+- **Cuerpo:**
+
+```
+Buen día, {{ contact.firstname }} , te contacto nuevamente ya que no he recibido tu respuesta del correo anterior​.
+Cuéntame, ¿pudiste revisar el PDF “Personal Project IA Pro” que te envié en el correo anterior?
+Adicional, recuerda que en el mes de {{ custom_values.fecha_de_inicio }} comenzamos el Máster BIM+IA . Me preguntaba igual si ¿aún te interesa inscribirte en nuestro Máster BIM+IA o si has tomado alguna otra decisión?
+Si tienes alguna duda, podemos agendar una cita de solo 15 minutos vía zoom para ampliar la información.
+Si tienes algún comentario, puedes responder en este mismo correo ¡Estaré encantado de apoyarte!
+Saludos 👋🏼
+Ingeniero Gabriel Pantoja
+¡AGENDA TU CITA AQUÍ!
+```
+
+### MASTER2RC - Seguimiento 7
+
+- **id:** `68648ef8d3dc9677731d6fb0`
+- **tipo:** builder
+- **actualizada:** 2025-07-02T01:46:56.011Z
+- **Cuerpo:**
+
+```
+Hola {{ contact.firstname }},
+He intentado ponerme en contacto contigo varias veces con el propósito de ayudarte en tu proceso de inscripción al Máster BIM+IA , que mostraste interés anteriormente, sin embargo, todavía no he recibido respuesta, lo cual puede deberse a una de estas dos razones:
+✅ 1. No necesitas mi ayuda con la inscripción al Máster BIM+IA y debería dejar de escribirte.
+✅ 2. Todavía te interesa inscribirte, pero no has tenido tiempo para responder el mensaje.
+Te agradecería si me dijeras ¿cuál de estos motivos coincide con tu situación?
+¡Qué tengas un buen día! 👋🏼
+Ing. Gabriel Pantoja
+¡AGENDA TU CITA AQUÍ!
+```
+
+### ✅ CITA Agendada Máster
+
+- **id:** `6a8888a78ced86da5a82e5f0`
+- **tipo:** html
+- **actualizada:** 2026-08-21T20:11:45.538Z
+- **Cuerpo:**
+
+```
+Dos cosas r&aacute;pidas antes de que hablemos, y un regalo por asistir.
+Tu cita est&aacute; agendada
+Gracias por agendar tu cita para el M&aacute;ster
+Hola {{contact.first_name}} ,
+Bienvenido al M&aacute;ster Internacional en BIM Management e Inteligencia Artificial para la Construcci&oacute;n . Te saludamos desde todo el equipo de Design Modeling Academy, centro de entrenamiento internacional con aval de Autodesk, CYPE y aval universitario en EE.UU. y Europa.
+Agradecemos que hayas agendado una cita con nosotros. Tenemos una cantidad considerable de reservas de cupo, as&iacute; que para agilizar tu proceso necesitamos dos cosas de tu parte antes de que hablemos:
+1
+Mira este video, es importante.
+Dura pocos minutos &middot; haz clic en la imagen para reproducirlo
+2
+Lee el PDF con el plan de estudios detallado.
+Ver el plan de estudios
+PDF con todos los m&oacute;dulos y contenidos del M&aacute;ster
+Descargar el brochure
+Beneficios de inscribirte
+Lo que entra contigo el primer d&iacute;a
+&#10003;
+Acceso 24/7 a la plataforma interactiva
+Ves y repites todas las clases a tu ritmo.
+&#10003;
+Acompa&ntilde;amiento durante 12 meses
+Workshops en vivo cada semana y mentor&iacute;as personalizadas 1:1.
+&#10003;
+Contenido 100% original
+Dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#10003;
+Material 100% descargable
+Complementos y ejercicios pr&aacute;cticos aplicados a proyectos reales.
+&#10003;
+DMA Engineering Suite
+Tu propio kit de apps de IA, con una herramienta nueva cada mes.
+&#127891; Y todo lo que te llevas certificado
+Al completar cada m&oacute;dulo obtienes una certificaci&oacute;n oficial de Autodesk, porque somos Centro de Entrenamiento Autorizado de la marca.
+Al completar los m&oacute;dulos de cada bloque del plan de estudios, obtienes una microcredencial NFT avalada por Silicon Valley.
+Recibes diplomas de t&iacute;tulo propio de Sabal University , Universidad de las Naciones y Universidad ISTE Espa&ntilde;a .
+Y al cerrar el programa, un certificado universitario de Doctrina Qualitas y Design Modeling Academy por 1.440 horas acad&eacute;micas en l&iacute;nea. ✅
+Antes de la cita
+Cuatro recomendaciones para aprovecharla
+1
+Reserva de 30 a 45 minutos
+Es lo que dura la sesi&oacute;n. Que no te agarre entre reuniones.
+2
+Busca un espacio silencioso
+Sin ruido de fondo ni interrupciones.
+3
+Asegura una buena conexi&oacute;n
+Vamos a compartir pantalla y revisar el plan contigo.
+4
+Llega con la informaci&oacute;n le&iacute;da
+Temario, beneficios y certificaciones. As&iacute; la cita se va en tus dudas reales.
+&#127873; Solo por asistir a tu cita
+Te obsequiamos el M&oacute;dulo 1 completo
+Del Diplomado Universitario Internacional BIM: Edificaciones de Acero Estructural y Hormig&oacute;n Armado &mdash; “Fundamentos Estrat&eacute;gicos de la Metodolog&iacute;a BIM”. Tuyo sin costo, solo por presentarte a la cita.
+Aseg&uacute;rate de no faltar a la cita. Te espero. 👋
+Ing. Gabriel Pantoja
+BIM Manager y Fundador &middot; Design Modeling Academy
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
 
 ### ✅REGALO Cita Máster
 
@@ -7790,25 +8024,25 @@ designmodelingacademy.com
 
 ## ✅ PRODUCTOS INFORMATIVOS  > ✅ CURSOS 
 
-### ✅ INFO Naves SAP2000
+### ✅ INFO Análisis No Lineal en Estructuras de Hormigón Armado
 
-- **id:** `6a7e0e73a1eba97e2c1c3163`
+- **id:** `6a886c9b8ced86da5a802a02`
 - **tipo:** html
-- **actualizada:** 2026-08-13T18:57:35.313Z
+- **actualizada:** 2026-08-21T15:38:54.936Z
 - **Cuerpo:**
 
 ```
 Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
 Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
 -->
-Diseno de naves de acero ante viento y sismo en SAP2000. Descarga el temario completo.
+Analisis pushover y desempeno sismico en hormigon armado con ETABS.
 Curso especializado
-Naves Industriales PRO 30 Horas en SAP2000
+An&aacute;lisis No Lineal en Estructuras de Hormig&oacute;n Armado
 Hola {{contact.first_name}} ,
-Una formaci&oacute;n enfocada en un solo objetivo: dise&ntilde;ar naves industriales de acero con criterio ante cargas de viento y sismo . Vas del modelado 3D de p&oacute;rticos y celos&iacute;as al an&aacute;lisis modal espectral y de viento, hasta el dise&ntilde;o final de los elementos.
-Se trabajan a fondo los temas que suelen quedar sueltos: pandeo flexo-torsional y lateral-torsional, estabilidad de la estructura, tensores y arriostramientos, dise&ntilde;o de correas y mezzanine, y optimizaci&oacute;n de pesos.
-14 sesiones &middot; 30 horas &middot; 19 archivos descargables
-Nivel intermedio-avanzado &middot; asincr&oacute;nico &middot; SAP2000 + AutoCAD
+El an&aacute;lisis lineal te dice si la estructura resiste. El no lineal te dice c&oacute;mo falla . Este curso entra en el comportamiento inel&aacute;stico del hormig&oacute;n armado y en la evaluaci&oacute;n del desempe&ntilde;o s&iacute;smico.
+R&oacute;tulas pl&aacute;sticas, curvas momento-curvatura, an&aacute;lisis pushover y lectura de la curva de capacidad para determinar el nivel de desempe&ntilde;o real de la edificaci&oacute;n.
+14 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
+ETABS &middot; material descargable
 Descargar el temario completo &#8594;
 PDF con el detalle sesi&oacute;n por sesi&oacute;n
 Qu&eacute; incluye tu curso:
@@ -7816,17 +8050,1703 @@ Qu&eacute; incluye tu curso:
 &#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
 &#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
 &#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
-Sin costo adicional
-Tu certificado internacional
-Emitido por Modeling-DG S.A.S. con c&oacute;digo QR de verificaci&oacute;n.
-Design Modeling
-Con c&oacute;digo QR
-Al terminar, recibes un Certificado Internacional de 30 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&#127891; Incluido sin costo adicional
+Tu certificaci&oacute;n al finalizar
+Emitido por Modeling-DG S.A.S. &mdash; verificable en l&iacute;nea.
+14
+horas acad&eacute;micas
+&#10003; Certificado Internacional
+&#10003; C&oacute;digo QR de verificaci&oacute;n
+&#10003; Descargable en PDF
+&#10003; A tu nombre, listo para LinkedIn
+Al terminar, recibes un Certificado Internacional de 14 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
 &iquest;Tienes dudas antes de inscribirte?
 Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
 Hablar por WhatsApp
 Tambi&eacute;n puedes
-ver el curso completo en nuestra web
+ver todos nuestros cursos en la web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ INFO Análisis Profesional de Estructuras de Acero. Incluyendo Conexiones
+
+- **id:** `6a886ec517389f8e23dc7d8b`
+- **tipo:** html
+- **actualizada:** 2026-08-21T15:53:12.763Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Estructuras de acero en ETABS y conexiones verificadas en IDEA StatiCa.
+Curso especializado
+An&aacute;lisis Profesional de Estructuras de Acero. Incluyendo Conexiones
+Hola {{contact.first_name}} ,
+An&aacute;lisis de estructuras de acero en ETABS llevado hasta donde casi nadie llega: el dise&ntilde;o de las conexiones en IDEA StatiCa , con verificaci&oacute;n por elementos finitos.
+Modelado y dise&ntilde;o de los perfiles, exportaci&oacute;n de las fuerzas de dise&ntilde;o a IDEA StatiCa, y comprobaci&oacute;n de placas, soldaduras y pernos de cada conexi&oacute;n.
+15 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
+ETABS &middot; IDEA StatiCa &middot; material descargable
+Descargar el temario completo &#8594;
+PDF con el detalle sesi&oacute;n por sesi&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#127891; Incluido sin costo adicional
+Tu certificaci&oacute;n al finalizar
+Emitido por Modeling-DG S.A.S. &mdash; verificable en l&iacute;nea.
+15
+horas acad&eacute;micas
+&#10003; Certificado Internacional
+&#10003; C&oacute;digo QR de verificaci&oacute;n
+&#10003; Descargable en PDF
+&#10003; A tu nombre, listo para LinkedIn
+Al terminar, recibes un Certificado Internacional de 15 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver todos nuestros cursos en la web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ INFO Análisis Profesional de Viviendas en Hormigón Armado
+
+- **id:** `6a886ee22096ea7b87d5e35e`
+- **tipo:** html
+- **actualizada:** 2026-08-21T15:53:33.200Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Viviendas en hormigon armado con criterio profesional en Robot.
+Curso especializado
+An&aacute;lisis Profesional de Viviendas en Hormig&oacute;n Armado
+Hola {{contact.first_name}} ,
+La vivienda es el proyecto m&aacute;s frecuente y el que m&aacute;s se resuelve por costumbre. Este curso le pone criterio profesional a cada decisi&oacute;n, usando Robot Structural Analysis.
+Predimensionamiento, cargas y combinaciones, an&aacute;lisis s&iacute;smico, dise&ntilde;o de losas, vigas, columnas y cimentaci&oacute;n, con lectura cr&iacute;tica de los resultados.
+23 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
+Robot Structural Analysis &middot; material descargable
+Descargar el temario completo &#8594;
+PDF con el detalle sesi&oacute;n por sesi&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#127891; Incluido sin costo adicional
+Tu certificaci&oacute;n al finalizar
+Dos certificaciones incluidas, sin costo adicional.
+Autodesk
+Completaci&oacute;n del curso
+Modeling-DG S.A.S.
+Certificado Internacional
+23
+horas acad&eacute;micas
+&#10003; Certificado Internacional
+&#10003; C&oacute;digo QR de verificaci&oacute;n
+&#10003; Descargable en PDF
+&#10003; A tu nombre, listo para LinkedIn
+Al finalizar recibes una certificaci&oacute;n de completaci&oacute;n avalada por Autodesk &mdash; somos Centro de Entrenamiento Autorizado de la marca &mdash; y un Certificado Internacional de 23 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver todos nuestros cursos en la web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ INFO Análisis y Diseño Profesional de Puentes Metálicos y Hormigón Pretensado
+
+- **id:** `6a886e9bbc3bac7221b86bd9`
+- **tipo:** html
+- **actualizada:** 2026-08-21T15:52:24.901Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Puentes metalicos y de hormigon pretensado con cargas moviles en Robot.
+Curso especializado
+An&aacute;lisis y Dise&ntilde;o Profesional de Puentes Met&aacute;licos y Hormig&oacute;n Pretensado
+Hola {{contact.first_name}} ,
+Los puentes tienen una l&oacute;gica propia: cargas m&oacute;viles, l&iacute;neas de influencia y estados que no aparecen en edificaci&oacute;n. Este curso entra en ese terreno con dos tipolog&iacute;as.
+Puente met&aacute;lico de vigas y puente de hormig&oacute;n pretensado, con modelado en Robot, camiones de dise&ntilde;o, c&aacute;lculo del pretensado y dise&ntilde;o de la superestructura.
+19 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
+Robot Structural Analysis &middot; material descargable
+Descargar el temario completo &#8594;
+PDF con el detalle sesi&oacute;n por sesi&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#127891; Incluido sin costo adicional
+Tu certificaci&oacute;n al finalizar
+Dos certificaciones incluidas, sin costo adicional.
+Autodesk
+Completaci&oacute;n del curso
+Modeling-DG S.A.S.
+Certificado Internacional
+19
+horas acad&eacute;micas
+&#10003; Certificado Internacional
+&#10003; C&oacute;digo QR de verificaci&oacute;n
+&#10003; Descargable en PDF
+&#10003; A tu nombre, listo para LinkedIn
+Al finalizar recibes una certificaci&oacute;n de completaci&oacute;n avalada por Autodesk &mdash; somos Centro de Entrenamiento Autorizado de la marca &mdash; y un Certificado Internacional de 19 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver todos nuestros cursos en la web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ INFO Análisis y Diseño Simplificado de Estructuras Complejas de Acero
+
+- **id:** `6a886e6d97eed9fbd01dc568`
+- **tipo:** html
+- **actualizada:** 2026-08-21T15:48:57.440Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Estructuras espaciales y cubiertas complejas de acero, simplificadas.
+Curso especializado
+An&aacute;lisis y Dise&ntilde;o Simplificado de Estructuras Complejas de Acero
+Hola {{contact.first_name}} ,
+Geometr&iacute;as que no entran en una grilla: cubiertas curvas, estructuras espaciales y mallas tridimensionales de acero, simplificadas con un m&eacute;todo de trabajo claro.
+Generaci&oacute;n param&eacute;trica de la geometr&iacute;a desde Revit, an&aacute;lisis en Robot, cargas de viento sobre superficies complejas y dise&ntilde;o y optimizaci&oacute;n de los perfiles.
+42 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
+Robot Structural Analysis &middot; Revit &middot; material descargable
+Descargar el temario completo &#8594;
+PDF con el detalle sesi&oacute;n por sesi&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#127891; Incluido sin costo adicional
+Tu certificaci&oacute;n al finalizar
+Dos certificaciones incluidas, sin costo adicional.
+Autodesk
+Completaci&oacute;n del curso
+Modeling-DG S.A.S.
+Certificado Internacional
+42
+horas acad&eacute;micas
+&#10003; Certificado Internacional
+&#10003; C&oacute;digo QR de verificaci&oacute;n
+&#10003; Descargable en PDF
+&#10003; A tu nombre, listo para LinkedIn
+Al finalizar recibes una certificaci&oacute;n de completaci&oacute;n avalada por Autodesk &mdash; somos Centro de Entrenamiento Autorizado de la marca &mdash; y un Certificado Internacional de 42 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver todos nuestros cursos en la web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ INFO Análisis y Diseño de Cimentaciones Profundas para Edificios
+
+- **id:** `6a886c3c676a1cd9c1f3cf81`
+- **tipo:** html
+- **actualizada:** 2026-08-21T15:34:36.297Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Diseno de pilotes y cabezales para edificios en ETABS.
+Curso especializado
+An&aacute;lisis y Dise&ntilde;o de Cimentaciones Profundas para Edificios
+Hola {{contact.first_name}} ,
+Cuando el suelo no da capacidad, la soluci&oacute;n baja: pilotes. Este curso se concentra en el dise&ntilde;o de cimentaciones profundas para edificios, desde la capacidad del pilote individual hasta el comportamiento del grupo.
+Modelas la interacci&oacute;n suelo-estructura en ETABS, distribuyes cargas entre pilotes, dise&ntilde;as el cabezal y verificas asentamientos y refuerzo.
+13 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
+ETABS &middot; material descargable
+Descargar el temario completo &#8594;
+PDF con el detalle sesi&oacute;n por sesi&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#127891; Incluido sin costo adicional
+Tu certificaci&oacute;n al finalizar
+Emitido por Modeling-DG S.A.S. &mdash; verificable en l&iacute;nea.
+13
+horas acad&eacute;micas
+&#10003; Certificado Internacional
+&#10003; C&oacute;digo QR de verificaci&oacute;n
+&#10003; Descargable en PDF
+&#10003; A tu nombre, listo para LinkedIn
+Al terminar, recibes un Certificado Internacional de 13 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver todos nuestros cursos en la web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ INFO Análisis y Diseño de Cimentaciones Superficiales y Profundas
+
+- **id:** `6a886d9e897d6716c6d81c0b`
+- **tipo:** html
+- **actualizada:** 2026-08-21T15:44:36.244Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+De la zapata aislada al pilote: todo el espectro de cimentaciones.
+Curso especializado
+An&aacute;lisis y Dise&ntilde;o de Cimentaciones Superficiales y Profundas
+Hola {{contact.first_name}} ,
+El curso m&aacute;s extenso del cat&aacute;logo, y con raz&oacute;n: cubre todo el espectro de cimentaciones , de la zapata aislada al pilote, con el criterio para elegir cu&aacute;l corresponde en cada caso.
+Zapatas aisladas, combinadas y corridas, vigas de cimentaci&oacute;n, losas de fundaci&oacute;n, pilotes y cabezales, cada tipo con su verificaci&oacute;n geot&eacute;cnica y su dise&ntilde;o de refuerzo.
+51 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
+Robot Structural Analysis &middot; material descargable
+Descargar el temario completo &#8594;
+PDF con el detalle sesi&oacute;n por sesi&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#127891; Incluido sin costo adicional
+Tu certificaci&oacute;n al finalizar
+Dos certificaciones incluidas, sin costo adicional.
+Autodesk
+Completaci&oacute;n del curso
+Modeling-DG S.A.S.
+Certificado Internacional
+51
+horas acad&eacute;micas
+&#10003; Certificado Internacional
+&#10003; C&oacute;digo QR de verificaci&oacute;n
+&#10003; Descargable en PDF
+&#10003; A tu nombre, listo para LinkedIn
+Al finalizar recibes una certificaci&oacute;n de completaci&oacute;n avalada por Autodesk &mdash; somos Centro de Entrenamiento Autorizado de la marca &mdash; y un Certificado Internacional de 51 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver todos nuestros cursos en la web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ INFO Análisis y Diseño de Cimentaciones en Tanques Elevados
+
+- **id:** `6a886f36676a1cd9c1f4199d`
+- **tipo:** html
+- **actualizada:** 2026-08-21T15:55:30.658Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Cimentacion de tanques elevados: calculo, estabilidad y armado.
+Curso especializado
+An&aacute;lisis y Dise&ntilde;o de Cimentaciones en Tanques Elevados
+Hola {{contact.first_name}} ,
+Un curso corto y espec&iacute;fico: la cimentaci&oacute;n de un tanque elevado, que recibe cargas verticales altas y momentos de vuelco importantes por el sismo.
+C&aacute;lculo de la fundaci&oacute;n, verificaci&oacute;n de estabilidad y capacidad del suelo, y modelado del armado en Revit para su documentaci&oacute;n.
+10 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
+Revit &middot; material descargable
+Descargar el temario completo &#8594;
+PDF con el detalle sesi&oacute;n por sesi&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#127891; Incluido sin costo adicional
+Tu certificaci&oacute;n al finalizar
+Emitido por Modeling-DG S.A.S. &mdash; verificable en l&iacute;nea.
+10
+horas acad&eacute;micas
+&#10003; Certificado Internacional
+&#10003; C&oacute;digo QR de verificaci&oacute;n
+&#10003; Descargable en PDF
+&#10003; A tu nombre, listo para LinkedIn
+Al terminar, recibes un Certificado Internacional de 10 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver todos nuestros cursos en la web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ INFO Análisis y Diseño de Cimentaciones en Viviendas Familiares
+
+- **id:** `6a886f237e0c28b368117591`
+- **tipo:** html
+- **actualizada:** 2026-08-21T15:54:55.922Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Cimentaciones de vivienda modeladas y armadas en SAFE.
+Curso especializado
+An&aacute;lisis y Dise&ntilde;o de Cimentaciones en Viviendas Familiares
+Hola {{contact.first_name}} ,
+Cimentaciones de vivienda resueltas en SAFE, la herramienta espec&iacute;fica para fundaciones: modelo del suelo, distribuci&oacute;n real de presiones y armado optimizado.
+Zapatas aisladas y combinadas, vigas de cimentaci&oacute;n y losas de fundaci&oacute;n, con verificaci&oacute;n de asentamientos, punzonamiento y dise&ntilde;o del refuerzo.
+18 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
+SAFE &middot; material descargable
+Descargar el temario completo &#8594;
+PDF con el detalle sesi&oacute;n por sesi&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#127891; Incluido sin costo adicional
+Tu certificaci&oacute;n al finalizar
+Emitido por Modeling-DG S.A.S. &mdash; verificable en l&iacute;nea.
+18
+horas acad&eacute;micas
+&#10003; Certificado Internacional
+&#10003; C&oacute;digo QR de verificaci&oacute;n
+&#10003; Descargable en PDF
+&#10003; A tu nombre, listo para LinkedIn
+Al terminar, recibes un Certificado Internacional de 18 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver todos nuestros cursos en la web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ INFO Análisis y Diseño de Edificaciones 12 pisos en Hormigón Armado
+
+- **id:** `6a886c4e17389f8e23dc3f10`
+- **tipo:** html
+- **actualizada:** 2026-08-21T15:37:59.341Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Edificio de 12 pisos en hormigon armado resuelto completo en ETABS.
+Curso especializado
+An&aacute;lisis y Dise&ntilde;o de Edificaciones 12 pisos en Hormig&oacute;n Armado
+Hola {{contact.first_name}} ,
+Un edificio de 12 pisos resuelto completo en ETABS. La escala cambia todo: los muros estructurales pasan a ser protagonistas y el control de derivas define el dise&ntilde;o.
+Predimensionamiento, cargas, an&aacute;lisis modal espectral, ajuste del cortante basal, revisi&oacute;n de irregularidades y dise&ntilde;o de vigas, columnas y muros con su refuerzo final.
+26 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
+ETABS &middot; material descargable
+Descargar el temario completo &#8594;
+PDF con el detalle sesi&oacute;n por sesi&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#127891; Incluido sin costo adicional
+Tu certificaci&oacute;n al finalizar
+Emitido por Modeling-DG S.A.S. &mdash; verificable en l&iacute;nea.
+26
+horas acad&eacute;micas
+&#10003; Certificado Internacional
+&#10003; C&oacute;digo QR de verificaci&oacute;n
+&#10003; Descargable en PDF
+&#10003; A tu nombre, listo para LinkedIn
+Al terminar, recibes un Certificado Internacional de 26 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver todos nuestros cursos en la web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ INFO Análisis y Diseño de Edificaciones Residenciales en Hormigón Armado
+
+- **id:** `6a886f4cda320347a25fdc0b`
+- **tipo:** html
+- **actualizada:** 2026-08-21T15:55:55.560Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Edificios residenciales de hormigon armado resueltos en SAP2000.
+Curso especializado
+An&aacute;lisis y Dise&ntilde;o de Edificaciones Residenciales en Hormig&oacute;n Armado
+Hola {{contact.first_name}} ,
+Edificaciones residenciales de mediana altura resueltas en SAP2000, con el sistema estructural planteado desde el uso real del edificio.
+Modelado del sistema, cargas de servicio y s&iacute;smicas, an&aacute;lisis modal espectral, control de derivas y dise&ntilde;o de losas, vigas, columnas y cimentaci&oacute;n.
+18 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
+SAP2000 &middot; material descargable
+Descargar el temario completo &#8594;
+PDF con el detalle sesi&oacute;n por sesi&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#127891; Incluido sin costo adicional
+Tu certificaci&oacute;n al finalizar
+Emitido por Modeling-DG S.A.S. &mdash; verificable en l&iacute;nea.
+18
+horas acad&eacute;micas
+&#10003; Certificado Internacional
+&#10003; C&oacute;digo QR de verificaci&oacute;n
+&#10003; Descargable en PDF
+&#10003; A tu nombre, listo para LinkedIn
+Al terminar, recibes un Certificado Internacional de 18 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver todos nuestros cursos en la web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ INFO Análisis y Diseño de Muros de Contención
+
+- **id:** `6a886d8b676a1cd9c1f3f1d6`
+- **tipo:** html
+- **actualizada:** 2026-08-21T15:44:05.815Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Estabilidad y refuerzo de muros de contencion en Robot.
+Curso especializado
+An&aacute;lisis y Dise&ntilde;o de Muros de Contenci&oacute;n
+Hola {{contact.first_name}} ,
+El muro de contenci&oacute;n se dise&ntilde;a dos veces: primero como problema geot&eacute;cnico &mdash;vuelco, deslizamiento, capacidad portante&mdash; y despu&eacute;s como elemento de hormig&oacute;n armado. Este curso cubre ambas.
+Empujes activo y pasivo, efecto s&iacute;smico sobre el relleno, verificaciones de estabilidad y dise&ntilde;o del refuerzo en pantalla, zapata y contrafuertes con Robot Structural Analysis.
+30 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
+Robot Structural Analysis &middot; material descargable
+Descargar el temario completo &#8594;
+PDF con el detalle sesi&oacute;n por sesi&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#127891; Incluido sin costo adicional
+Tu certificaci&oacute;n al finalizar
+Dos certificaciones incluidas, sin costo adicional.
+Autodesk
+Completaci&oacute;n del curso
+Modeling-DG S.A.S.
+Certificado Internacional
+30
+horas acad&eacute;micas
+&#10003; Certificado Internacional
+&#10003; C&oacute;digo QR de verificaci&oacute;n
+&#10003; Descargable en PDF
+&#10003; A tu nombre, listo para LinkedIn
+Al finalizar recibes una certificaci&oacute;n de completaci&oacute;n avalada por Autodesk &mdash; somos Centro de Entrenamiento Autorizado de la marca &mdash; y un Certificado Internacional de 30 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver todos nuestros cursos en la web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ INFO AutoCAD 2D: Delineante de Arquitectura e Ingeniería Civil
+
+- **id:** `6a886dfd5111f4c77719b6a0`
+- **tipo:** html
+- **actualizada:** 2026-08-21T15:46:46.397Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Dibujo tecnico profesional en AutoCAD 2D para arquitectura e ingenieria.
+Curso especializado
+Autocad 2D: Delineante de Arquitectura e Ingenier&iacute;a Civil
+Hola {{contact.first_name}} ,
+La base que sigue siendo obligatoria: dibujar en AutoCAD como un delineante profesional, con capas ordenadas, escalas correctas y planos que no haya que corregir.
+Comandos de dibujo y edici&oacute;n, gesti&oacute;n de capas y bloques, acotaci&oacute;n, presentaciones en espacio papel y publicaci&oacute;n a PDF e impresi&oacute;n.
+20 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
+AutoCAD &middot; material descargable
+Descargar el temario completo &#8594;
+PDF con el detalle sesi&oacute;n por sesi&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#127891; Incluido sin costo adicional
+Tu certificaci&oacute;n al finalizar
+Dos certificaciones incluidas, sin costo adicional.
+Autodesk
+Completaci&oacute;n del curso
+Modeling-DG S.A.S.
+Certificado Internacional
+20
+horas acad&eacute;micas
+&#10003; Certificado Internacional
+&#10003; C&oacute;digo QR de verificaci&oacute;n
+&#10003; Descargable en PDF
+&#10003; A tu nombre, listo para LinkedIn
+Al finalizar recibes una certificaci&oacute;n de completaci&oacute;n avalada por Autodesk &mdash; somos Centro de Entrenamiento Autorizado de la marca &mdash; y un Certificado Internacional de 20 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver todos nuestros cursos en la web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ INFO Costos y Presupuestos de Obras de Construcción Aplicado a Viviendas
+
+- **id:** `6a886ef6e4cb7738346b9c07`
+- **tipo:** html
+- **actualizada:** 2026-08-21T15:53:56.621Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Computo metrico, APU y presupuesto de vivienda en Excel.
+Curso especializado
+Costos y Presupuestos de Obras de Construcci&oacute;n Aplicado a Viviendas
+Hola {{contact.first_name}} ,
+Presupuestar una vivienda de principio a fin: del c&oacute;mputo m&eacute;trico sobre planos al presupuesto cerrado, con precios que resisten una revisi&oacute;n.
+Cuantificaci&oacute;n por rubros, an&aacute;lisis de precios unitarios, materiales, mano de obra y equipo, indirectos y utilidad, y el presupuesto final en Excel.
+24 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
+Microsoft Excel &middot; material descargable
+Descargar el temario completo &#8594;
+PDF con el detalle sesi&oacute;n por sesi&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#127891; Incluido sin costo adicional
+Tu certificaci&oacute;n al finalizar
+Emitido por Modeling-DG S.A.S. &mdash; verificable en l&iacute;nea.
+24
+horas acad&eacute;micas
+&#10003; Certificado Internacional
+&#10003; C&oacute;digo QR de verificaci&oacute;n
+&#10003; Descargable en PDF
+&#10003; A tu nombre, listo para LinkedIn
+Al terminar, recibes un Certificado Internacional de 24 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver todos nuestros cursos en la web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ INFO Cálculo de Tanques Elevados en Hormigón Armado y Acero Estructural
+
+- **id:** `6a886c01473a54c041ea24c3`
+- **tipo:** html
+- **actualizada:** 2026-08-21T15:33:27.798Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Calculo sismico de tanques elevados en hormigon y acero con SAP2000.
+Curso especializado
+C&aacute;lculo de Tanques Elevados en Hormig&oacute;n Armado y Acero Estructural
+Hola {{contact.first_name}} ,
+Los tanques elevados tienen un comportamiento s&iacute;smico distinto al de un edificio: la masa del agua se mueve. Este curso te ense&ntilde;a a modelar ese efecto y a dise&ntilde;ar la estructura de soporte con criterio.
+Trabajas en SAP2000 el tanque en hormig&oacute;n armado y en acero, con presiones hidrost&aacute;ticas, masas impulsiva y convectiva, an&aacute;lisis modal espectral y dise&ntilde;o final de cuba, columnas y arriostramientos.
+21 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
+SAP2000 &middot; material descargable
+Descargar el temario completo &#8594;
+PDF con el detalle sesi&oacute;n por sesi&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#127891; Incluido sin costo adicional
+Tu certificaci&oacute;n al finalizar
+Emitido por Modeling-DG S.A.S. &mdash; verificable en l&iacute;nea.
+21
+horas acad&eacute;micas
+&#10003; Certificado Internacional
+&#10003; C&oacute;digo QR de verificaci&oacute;n
+&#10003; Descargable en PDF
+&#10003; A tu nombre, listo para LinkedIn
+Al terminar, recibes un Certificado Internacional de 21 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver todos nuestros cursos en la web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ INFO De Principiante a Profesional: Diseño de Viviendas en Hormigón con Robot
+
+- **id:** `6a886e24676a1cd9c1f400a0`
+- **tipo:** html
+- **actualizada:** 2026-08-21T15:47:41.890Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+De cero a proyecto entregable: vivienda en hormigon con Robot.
+Curso especializado
+De Principiante a Profesional: Dise&ntilde;o de Viviendas en Hormig&oacute;n con Robot
+Hola {{contact.first_name}} ,
+Pensado como un recorrido de cero a proyecto entregable: empiezas sin conocer Robot Structural Analysis y terminas con una vivienda en hormig&oacute;n armado dise&ntilde;ada por completo.
+Interfaz y modelado, cargas y combinaciones, an&aacute;lisis s&iacute;smico, dise&ntilde;o de losas, vigas, columnas y cimentaci&oacute;n, y lectura correcta de resultados.
+30 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
+Robot Structural Analysis &middot; material descargable
+Descargar el temario completo &#8594;
+PDF con el detalle sesi&oacute;n por sesi&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#127891; Incluido sin costo adicional
+Tu certificaci&oacute;n al finalizar
+Dos certificaciones incluidas, sin costo adicional.
+Autodesk
+Completaci&oacute;n del curso
+Modeling-DG S.A.S.
+Certificado Internacional
+30
+horas acad&eacute;micas
+&#10003; Certificado Internacional
+&#10003; C&oacute;digo QR de verificaci&oacute;n
+&#10003; Descargable en PDF
+&#10003; A tu nombre, listo para LinkedIn
+Al finalizar recibes una certificaci&oacute;n de completaci&oacute;n avalada por Autodesk &mdash; somos Centro de Entrenamiento Autorizado de la marca &mdash; y un Certificado Internacional de 30 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver todos nuestros cursos en la web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ INFO Desarrollo de Edificio Real de Hormigón Armado en CypeCAD
+
+- **id:** `6a886e54897d6716c6d82fef`
+- **tipo:** html
+- **actualizada:** 2026-08-21T15:48:25.027Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Edificio real de hormigon armado resuelto completo en CypeCAD.
+Curso especializado
+Desarrollo de Edificio Real de Hormig&oacute;n Armado en CypeCAD
+Hola {{contact.first_name}} ,
+CypeCAD resuelve el edificio completo &mdash;c&aacute;lculo, armado y planos&mdash; en un solo entorno. Este curso lo aplica a un edificio real de hormig&oacute;n armado , de principio a fin.
+Introducci&oacute;n de la geometr&iacute;a, cargas y sismo, c&aacute;lculo autom&aacute;tico, revisi&oacute;n e igualaci&oacute;n de armados, y salida de planos y mediciones.
+32 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
+CypeCAD &middot; material descargable
+Descargar el temario completo &#8594;
+PDF con el detalle sesi&oacute;n por sesi&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#127891; Incluido sin costo adicional
+Tu certificaci&oacute;n al finalizar
+Emitido por Modeling-DG S.A.S. &mdash; verificable en l&iacute;nea.
+32
+horas acad&eacute;micas
+&#10003; Certificado Internacional
+&#10003; C&oacute;digo QR de verificaci&oacute;n
+&#10003; Descargable en PDF
+&#10003; A tu nombre, listo para LinkedIn
+Al terminar, recibes un Certificado Internacional de 32 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver todos nuestros cursos en la web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ INFO Desarrollo de Planos Estructurales con Metodología BIM
+
+- **id:** `6a886f0fe4cb7738346b9df9`
+- **tipo:** html
+- **actualizada:** 2026-08-21T15:54:23.121Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+El juego completo de planos estructurales con metodologia BIM.
+Curso especializado
+Desarrollo de Planos Estructurales con Metodolog&iacute;a BIM
+Hola {{contact.first_name}} ,
+El entregable final de todo proyecto estructural es el plano, y ah&iacute; se juega la calidad del trabajo. Este curso arma el juego completo de planos estructurales con metodolog&iacute;a BIM.
+Plantas de cimentaci&oacute;n y entrepisos, despieces de vigas y columnas, detalles t&iacute;picos, tablas de cantidades y l&aacute;minas coordinadas con el modelo.
+33 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
+Robot Structural Analysis &middot; material descargable
+Descargar el temario completo &#8594;
+PDF con el detalle sesi&oacute;n por sesi&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#127891; Incluido sin costo adicional
+Tu certificaci&oacute;n al finalizar
+Dos certificaciones incluidas, sin costo adicional.
+Autodesk
+Completaci&oacute;n del curso
+Modeling-DG S.A.S.
+Certificado Internacional
+33
+horas acad&eacute;micas
+&#10003; Certificado Internacional
+&#10003; C&oacute;digo QR de verificaci&oacute;n
+&#10003; Descargable en PDF
+&#10003; A tu nombre, listo para LinkedIn
+Al finalizar recibes una certificaci&oacute;n de completaci&oacute;n avalada por Autodesk &mdash; somos Centro de Entrenamiento Autorizado de la marca &mdash; y un Certificado Internacional de 33 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver todos nuestros cursos en la web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ INFO Detallado de Refuerzo de Acero en Elementos de Hormigón Armado
+
+- **id:** `6a886db27e0c28b368114f6b`
+- **tipo:** html
+- **actualizada:** 2026-08-21T15:45:08.198Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Detallado normativo del refuerzo en vigas, columnas y losas.
+Curso especializado
+Detallado de Refuerzo de Acero en Elementos de Hormig&oacute;n Armado
+Hola {{contact.first_name}} ,
+Entre el c&aacute;lculo y la obra est&aacute; el detallado, y ah&iacute; se pierde m&aacute;s tiempo del que deber&iacute;a. Este curso te ense&ntilde;a a llevar el refuerzo al plano con criterio normativo y constructivo.
+Longitudes de desarrollo, traslapes, ganchos, confinamiento en zonas cr&iacute;ticas y armado de vigas, columnas, losas y cimentaciones, modelado en Revit y verificado contra el c&aacute;lculo en Robot.
+30 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
+Robot Structural Analysis &middot; Revit &middot; material descargable
+Descargar el temario completo &#8594;
+PDF con el detalle sesi&oacute;n por sesi&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#127891; Incluido sin costo adicional
+Tu certificaci&oacute;n al finalizar
+Dos certificaciones incluidas, sin costo adicional.
+Autodesk
+Completaci&oacute;n del curso
+Modeling-DG S.A.S.
+Certificado Internacional
+30
+horas acad&eacute;micas
+&#10003; Certificado Internacional
+&#10003; C&oacute;digo QR de verificaci&oacute;n
+&#10003; Descargable en PDF
+&#10003; A tu nombre, listo para LinkedIn
+Al finalizar recibes una certificaci&oacute;n de completaci&oacute;n avalada por Autodesk &mdash; somos Centro de Entrenamiento Autorizado de la marca &mdash; y un Certificado Internacional de 30 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver todos nuestros cursos en la web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ INFO Diseño Estructural en Hormigón Armado en Edificaciones
+
+- **id:** `6a886de7e4cb7738346b8037`
+- **tipo:** html
+- **actualizada:** 2026-08-21T15:45:48.808Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Diseno estructural en hormigon armado con flujo Revit - Robot.
+Curso especializado
+Dise&ntilde;o Estructural en Hormig&oacute;n Armado en Edificaciones
+Hola {{contact.first_name}} ,
+El recorrido completo del dise&ntilde;o estructural en hormig&oacute;n armado, con el flujo BIM funcionando de verdad: modelas en Revit, analizas en Robot y devuelves el refuerzo a la documentaci&oacute;n.
+Predimensionamiento, cargas, an&aacute;lisis s&iacute;smico, dise&ntilde;o de losas, vigas, columnas y muros, y cierre con planos coordinados.
+34 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
+Robot Structural Analysis &middot; Revit &middot; material descargable
+Descargar el temario completo &#8594;
+PDF con el detalle sesi&oacute;n por sesi&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#127891; Incluido sin costo adicional
+Tu certificaci&oacute;n al finalizar
+Dos certificaciones incluidas, sin costo adicional.
+Autodesk
+Completaci&oacute;n del curso
+Modeling-DG S.A.S.
+Certificado Internacional
+34
+horas acad&eacute;micas
+&#10003; Certificado Internacional
+&#10003; C&oacute;digo QR de verificaci&oacute;n
+&#10003; Descargable en PDF
+&#10003; A tu nombre, listo para LinkedIn
+Al finalizar recibes una certificaci&oacute;n de completaci&oacute;n avalada por Autodesk &mdash; somos Centro de Entrenamiento Autorizado de la marca &mdash; y un Certificado Internacional de 34 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver todos nuestros cursos en la web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ INFO Diseño de Cimentaciones Superficiales aplicado a Proyectos Reales
+
+- **id:** `6a886e3be4cb7738346b8ab8`
+- **tipo:** html
+- **actualizada:** 2026-08-21T15:48:05.618Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Cimentaciones superficiales resueltas sobre proyectos reales.
+Curso especializado
+Dise&ntilde;o de Cimentaciones Superficiales aplicado a Proyectos Reales
+Hola {{contact.first_name}} ,
+Cimentaciones superficiales trabajadas sobre proyectos reales , no ejercicios de laboratorio: con las excentricidades, los linderos y las cargas irregulares que aparecen en obra.
+Zapatas aisladas, combinadas, corridas y vigas de cimentaci&oacute;n, con verificaci&oacute;n de capacidad portante, asentamientos, punzonamiento y dise&ntilde;o del refuerzo.
+29 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
+Robot Structural Analysis &middot; material descargable
+Descargar el temario completo &#8594;
+PDF con el detalle sesi&oacute;n por sesi&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#127891; Incluido sin costo adicional
+Tu certificaci&oacute;n al finalizar
+Dos certificaciones incluidas, sin costo adicional.
+Autodesk
+Completaci&oacute;n del curso
+Modeling-DG S.A.S.
+Certificado Internacional
+29
+horas acad&eacute;micas
+&#10003; Certificado Internacional
+&#10003; C&oacute;digo QR de verificaci&oacute;n
+&#10003; Descargable en PDF
+&#10003; A tu nombre, listo para LinkedIn
+Al finalizar recibes una certificaci&oacute;n de completaci&oacute;n avalada por Autodesk &mdash; somos Centro de Entrenamiento Autorizado de la marca &mdash; y un Certificado Internacional de 29 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver todos nuestros cursos en la web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ INFO Diseño de Edificaciones Sismorresistentes en Hormigón Armado
+
+- **id:** `6a886cb6e4cb7738346b60f6`
+- **tipo:** html
+- **actualizada:** 2026-08-21T15:39:13.446Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Criterio sismorresistente aplicado a edificios de hormigon en ETABS.
+Curso especializado
+Dise&ntilde;o de Edificaciones Sismorresistentes en Hormig&oacute;n Armado
+Hola {{contact.first_name}} ,
+Dise&ntilde;ar sismorresistente no es aplicar un coeficiente: es entender c&oacute;mo se comporta el edificio cuando el suelo se mueve. Aqu&iacute; trabajas ese criterio desde la configuraci&oacute;n estructural.
+Espectros de dise&ntilde;o, an&aacute;lisis modal espectral, control de derivas e irregularidades, y dise&ntilde;o por capacidad de vigas, columnas y nudos en ETABS.
+25 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
+ETABS &middot; material descargable
+Descargar el temario completo &#8594;
+PDF con el detalle sesi&oacute;n por sesi&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#127891; Incluido sin costo adicional
+Tu certificaci&oacute;n al finalizar
+Emitido por Modeling-DG S.A.S. &mdash; verificable en l&iacute;nea.
+25
+horas acad&eacute;micas
+&#10003; Certificado Internacional
+&#10003; C&oacute;digo QR de verificaci&oacute;n
+&#10003; Descargable en PDF
+&#10003; A tu nombre, listo para LinkedIn
+Al terminar, recibes un Certificado Internacional de 25 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver todos nuestros cursos en la web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ INFO Diseño de Estructuras Mixtas, Madera, Hormigón y Acero Incluyendo Elementos y Cimentaciones
+
+- **id:** `6a886c6a97eed9fbd01d9440`
+- **tipo:** html
+- **actualizada:** 2026-08-21T15:38:26.881Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Estructuras mixtas de madera, hormigon y acero, con uniones y cimentaciones.
+Curso especializado
+Dise&ntilde;o de Estructuras Mixtas, Madera, Hormig&oacute;n y Acero Incluyendo Elementos y Cimentaciones
+Hola {{contact.first_name}} ,
+El curso m&aacute;s completo del cat&aacute;logo en cuanto a materiales: madera, hormig&oacute;n armado y acero conviviendo en una misma estructura , con el criterio necesario para combinarlos bien.
+Propiedades y dise&ntilde;o de elementos de madera, uniones entre materiales distintos, an&aacute;lisis s&iacute;smico del conjunto y dise&ntilde;o de las cimentaciones que reciben esas cargas.
+40 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
+ETABS &middot; material descargable
+Descargar el temario completo &#8594;
+PDF con el detalle sesi&oacute;n por sesi&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#127891; Incluido sin costo adicional
+Tu certificaci&oacute;n al finalizar
+Emitido por Modeling-DG S.A.S. &mdash; verificable en l&iacute;nea.
+40
+horas acad&eacute;micas
+&#10003; Certificado Internacional
+&#10003; C&oacute;digo QR de verificaci&oacute;n
+&#10003; Descargable en PDF
+&#10003; A tu nombre, listo para LinkedIn
+Al terminar, recibes un Certificado Internacional de 40 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver todos nuestros cursos en la web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ INFO Diseño de Viviendas en Hormigón Armado y Acero Estructural
+
+- **id:** `6a886d76897d6716c6d81840`
+- **tipo:** html
+- **actualizada:** 2026-08-21T15:41:48.711Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Vivienda en hormigon y acero resuelta completa en SAP2000.
+Curso especializado
+Dise&ntilde;o de Viviendas en Hormig&oacute;n Armado y Acero Estructural
+Hola {{contact.first_name}} ,
+Una vivienda que
+combina hormig&oacute;n armado y acero estructural, resuelta &iacute;ntegra en SAP2000: dos materiales,
+un solo modelo y un criterio de dise&ntilde;o coherente.
+Modelado del sistema
+completo, cargas de servicio y s&iacute;smicas, an&aacute;lisis modal espectral, y dise&ntilde;o de
+losas, vigas, columnas, perfiles met&aacute;licos y cimentaci&oacute;n.
+26 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
+SAP2000 &middot; material descargable
+Descargar el temario completo &#8594;
+PDF con el detalle sesi&oacute;n por sesi&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos
+reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros
+proyectos.
+&#9989;
+Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#127891; Incluido sin costo adicional
+Tu certificaci&oacute;n al finalizar
+Emitido por Modeling-DG S.A.S. &mdash; verificable en l&iacute;nea.
+26
+horas acad&eacute;micas
+&#10003; Certificado
+Internacional
+&#10003; C&oacute;digo QR de
+verificaci&oacute;n
+&#10003; Descargable en PDF
+&#10003; A tu nombre, listo
+para LinkedIn
+Al terminar, recibes
+un Certificado Internacional de 26 horas acad&eacute;micas
+emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver todos nuestros cursos en la web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ INFO Diseño y Cálculo de Edificaciones Industriales en Acero Estructural
+
+- **id:** `6a886c18c95ab36931b21783`
+- **tipo:** html
+- **actualizada:** 2026-08-21T15:34:06.838Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Edificaciones industriales de acero de varios niveles en ETABS.
+Curso especializado
+Dise&ntilde;o y C&aacute;lculo de Edificaciones Industriales en Acero Estructural
+Hola {{contact.first_name}} ,
+Edificaciones industriales de varios niveles en acero: entrepisos con losa colaborante, sistemas de arriostramiento y p&oacute;rticos resistentes a momento, resueltos en ETABS de principio a fin.
+Del planteamiento estructural y las cargas de servicio al an&aacute;lisis s&iacute;smico, control de derivas y dise&ntilde;o de cada perfil, con las verificaciones que exige la normativa.
+25 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
+ETABS &middot; material descargable
+Descargar el temario completo &#8594;
+PDF con el detalle sesi&oacute;n por sesi&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#127891; Incluido sin costo adicional
+Tu certificaci&oacute;n al finalizar
+Emitido por Modeling-DG S.A.S. &mdash; verificable en l&iacute;nea.
+25
+horas acad&eacute;micas
+&#10003; Certificado Internacional
+&#10003; C&oacute;digo QR de verificaci&oacute;n
+&#10003; Descargable en PDF
+&#10003; A tu nombre, listo para LinkedIn
+Al terminar, recibes un Certificado Internacional de 25 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver todos nuestros cursos en la web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ INFO Diseño y Modelado de Viviendas Unifamiliares en Acero Estructural
+
+- **id:** `6a886ccc676a1cd9c1f3df05`
+- **tipo:** html
+- **actualizada:** 2026-08-21T15:40:12.707Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Vivienda unifamiliar en acero estructural resuelta completa en ETABS.
+Curso especializado
+Dise&ntilde;o y Modelado de Viviendas Unifamiliares en Acero Estructural
+Hola {{contact.first_name}} ,
+La vivienda en acero tiene sus propias reglas: perfiles livianos, entrepisos con placa colaborante y una cubierta que trabaja distinto. Este curso resuelve una vivienda unifamiliar completa.
+Del planteamiento estructural al an&aacute;lisis s&iacute;smico y el dise&ntilde;o de cada elemento, incluyendo la cimentaci&oacute;n y las conexiones que amarran el sistema.
+25 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
+ETABS &middot; material descargable
+Descargar el temario completo &#8594;
+PDF con el detalle sesi&oacute;n por sesi&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#127891; Incluido sin costo adicional
+Tu certificaci&oacute;n al finalizar
+Emitido por Modeling-DG S.A.S. &mdash; verificable en l&iacute;nea.
+25
+horas acad&eacute;micas
+&#10003; Certificado Internacional
+&#10003; C&oacute;digo QR de verificaci&oacute;n
+&#10003; Descargable en PDF
+&#10003; A tu nombre, listo para LinkedIn
+Al terminar, recibes un Certificado Internacional de 25 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver todos nuestros cursos en la web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ INFO Elaboración de Planos Estructurales para Tanque Elevados
+
+- **id:** `6a886dd18ced86da5a804ae4`
+- **tipo:** html
+- **actualizada:** 2026-08-21T15:45:30.004Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Del modelo del tanque elevado al juego de planos estructurales en Revit.
+Curso especializado
+Elaboraci&oacute;n de Planos Estructurales para Tanque Elevados
+Hola {{contact.first_name}} ,
+Un curso corto y muy concreto: pasar del modelo del tanque elevado a un juego de planos estructurales completo , listo para construir.
+Plantas, cortes, detalles de armado de cuba y soportes, tablas de cantidades y l&aacute;minas organizadas en Revit con su cajet&iacute;n y anotaciones.
+11 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
+Revit &middot; material descargable
+Descargar el temario completo &#8594;
+PDF con el detalle sesi&oacute;n por sesi&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#127891; Incluido sin costo adicional
+Tu certificaci&oacute;n al finalizar
+Dos certificaciones incluidas, sin costo adicional.
+Autodesk
+Completaci&oacute;n del curso
+Modeling-DG S.A.S.
+Certificado Internacional
+11
+horas acad&eacute;micas
+&#10003; Certificado Internacional
+&#10003; C&oacute;digo QR de verificaci&oacute;n
+&#10003; Descargable en PDF
+&#10003; A tu nombre, listo para LinkedIn
+Al finalizar recibes una certificaci&oacute;n de completaci&oacute;n avalada por Autodesk &mdash; somos Centro de Entrenamiento Autorizado de la marca &mdash; y un Certificado Internacional de 11 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver todos nuestros cursos en la web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ INFO Guía Práctica para el Cálculo Tipo Cerchas en Naves Industriales
+
+- **id:** `6a88668fda320347a25ef8c6`
+- **tipo:** html
+- **actualizada:** 2026-08-21T15:14:52.151Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Calculo de cerchas para naves industriales, paso a paso en Robot.
+Curso especializado
+Gu&iacute;a Pr&aacute;ctica para el C&aacute;lculo Tipo Cerchas en Naves Industriales
+Hola {{contact.first_name}} ,
+Las cerchas
+resuelven grandes luces con poco peso, pero solo si el predimensionamiento y el control de esbeltez se
+hacen bien. Este curso va directo a ese c&aacute;lculo: geometr&iacute;a, montantes y diagonales, y el
+comportamiento real de los elementos a tracci&oacute;n y compresi&oacute;n.
+Modelas la nave
+completa en Robot Structural Analysis, aplicas cargas de cubierta, viento y sismo, y verificas cada
+perfil hasta cerrar el dise&ntilde;o con criterio de optimizaci&oacute;n.
+28 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
+Robot Structural Analysis &middot; material descargable
+Descargar el temario completo &#8594;
+PDF con el detalle sesi&oacute;n por sesi&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos
+reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros
+proyectos.
+&#9989;
+Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#127891; Incluido sin costo adicional
+Tu certificaci&oacute;n al finalizar
+Dos certificaciones incluidas, sin costo adicional.
+Autodesk
+Completaci&oacute;n del curso
+Modeling-DG S.A.S.
+Certificado
+Internacional
+28
+horas acad&eacute;micas
+&#10003; Certificado
+Internacional
+&#10003; C&oacute;digo QR de
+verificaci&oacute;n
+&#10003; Descargable en PDF
+&#10003; A tu nombre, listo
+para LinkedIn
+Al finalizar recibes
+una
+certificaci&oacute;n de completaci&oacute;n avalada por Autodesk
+&mdash; somos Centro de Entrenamiento Autorizado de la marca &mdash; y un
+Certificado Internacional de 28 horas acad&eacute;micas
+emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver todos nuestros cursos en la web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ INFO Ingeniería de Costos y Elaboración de Cronogramas en Construcción
+
+- **id:** `6a886eb2c3ca7ccb66a2158a`
+- **tipo:** html
+- **actualizada:** 2026-08-21T15:52:48.130Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+APU, presupuesto, cronograma valorado y curva S en Excel.
+Curso especializado
+Ingenier&iacute;a de Costos y Elaboraci&oacute;n de Cronogramas en Construcci&oacute;n
+Hola {{contact.first_name}} ,
+El lado del proyecto que decide si hay utilidad: an&aacute;lisis de precios unitarios, presupuesto y cronograma , armados desde cero en Excel y conectados entre s&iacute;.
+Rendimientos de mano de obra y equipo, APU, presupuesto por cap&iacute;tulos, cronograma valorado, curva S y control de avance de obra.
+27 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
+Microsoft Excel &middot; material descargable
+Descargar el temario completo &#8594;
+PDF con el detalle sesi&oacute;n por sesi&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#127891; Incluido sin costo adicional
+Tu certificaci&oacute;n al finalizar
+Emitido por Modeling-DG S.A.S. &mdash; verificable en l&iacute;nea.
+27
+horas acad&eacute;micas
+&#10003; Certificado Internacional
+&#10003; C&oacute;digo QR de verificaci&oacute;n
+&#10003; Descargable en PDF
+&#10003; A tu nombre, listo para LinkedIn
+Al terminar, recibes un Certificado Internacional de 27 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver todos nuestros cursos en la web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ INFO Introducción al Diseño y Modelado BIM aplicado a Arquitectura
+
+- **id:** `6a886e107e0c28b368115b62`
+- **tipo:** html
+- **actualizada:** 2026-08-21T15:47:14.589Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Modelado arquitectonico completo en Revit desde cero.
+Curso especializado
+Introducci&oacute;n al Dise&ntilde;o y Modelado BIM aplicado a Arquitectura
+Hola {{contact.first_name}} ,
+La entrada a Revit por el lado arquitect&oacute;nico: modelar un proyecto completo entendiendo la l&oacute;gica param&eacute;trica en lugar de dibujar l&iacute;neas.
+Muros, pisos, cubiertas, escaleras, puertas y ventanas, niveles y rejillas, familias, y la documentaci&oacute;n que sale sola del modelo: plantas, cortes, alzados y tablas.
+25 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
+Revit &middot; material descargable
+Descargar el temario completo &#8594;
+PDF con el detalle sesi&oacute;n por sesi&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#127891; Incluido sin costo adicional
+Tu certificaci&oacute;n al finalizar
+Dos certificaciones incluidas, sin costo adicional.
+Autodesk
+Completaci&oacute;n del curso
+Modeling-DG S.A.S.
+Certificado Internacional
+25
+horas acad&eacute;micas
+&#10003; Certificado Internacional
+&#10003; C&oacute;digo QR de verificaci&oacute;n
+&#10003; Descargable en PDF
+&#10003; A tu nombre, listo para LinkedIn
+Al finalizar recibes una certificaci&oacute;n de completaci&oacute;n avalada por Autodesk &mdash; somos Centro de Entrenamiento Autorizado de la marca &mdash; y un Certificado Internacional de 25 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver todos nuestros cursos en la web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ INFO Introducción de Autodesk Inventor Professional
+
+- **id:** `6a886cebda320347a25f9e28`
+- **tipo:** html
+- **actualizada:** 2026-08-21T15:41:05.845Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Diseno parametrico y ensamblajes en Autodesk Inventor Professional.
+Curso especializado
+Introducci&oacute;n de Autodesk Inventor Professional
+Hola {{contact.first_name}} ,
+Inventor es la herramienta de dise&ntilde;o mec&aacute;nico y param&eacute;trico de Autodesk, y abre una puerta que el ingeniero civil rara vez cruza: piezas, ensamblajes y elementos met&aacute;licos modelados con precisi&oacute;n de fabricaci&oacute;n .
+Bocetos param&eacute;tricos, modelado s&oacute;lido, ensamblajes con restricciones, chapa met&aacute;lica y generaci&oacute;n de planos de taller acotados.
+24 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
+Autodesk Inventor Professional &middot; material descargable
+Descargar el temario completo &#8594;
+PDF con el detalle sesi&oacute;n por sesi&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#127891; Incluido sin costo adicional
+Tu certificaci&oacute;n al finalizar
+Dos certificaciones incluidas, sin costo adicional.
+Autodesk
+Completaci&oacute;n del curso
+Modeling-DG S.A.S.
+Certificado Internacional
+24
+horas acad&eacute;micas
+&#10003; Certificado Internacional
+&#10003; C&oacute;digo QR de verificaci&oacute;n
+&#10003; Descargable en PDF
+&#10003; A tu nombre, listo para LinkedIn
+Al finalizar recibes una certificaci&oacute;n de completaci&oacute;n avalada por Autodesk &mdash; somos Centro de Entrenamiento Autorizado de la marca &mdash; y un Certificado Internacional de 24 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver todos nuestros cursos en la web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ INFO Introducción de Instalaciones Hidrosanitarias con Modelado BIM
+
+- **id:** `6a886e83bc3bac7221b869a8`
+- **tipo:** html
+- **actualizada:** 2026-08-21T15:49:19.147Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Instalaciones hidrosanitarias modeladas y coordinadas en Revit.
+Curso especializado
+Introducci&oacute;n de Instalaciones Hidrosanitarias con Modelado BIM
+Hola {{contact.first_name}} ,
+El m&oacute;dulo MEP que m&aacute;s r&aacute;pido se rentabiliza: modelar agua potable, aguas servidas y aguas lluvias en Revit, coordinadas con la arquitectura y la estructura.
+Sistemas de tuber&iacute;a, aparatos sanitarios, pendientes y bajantes, detecci&oacute;n de interferencias y planos de instalaciones con sus tablas de cantidades.
+20 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
+Revit &middot; material descargable
+Descargar el temario completo &#8594;
+PDF con el detalle sesi&oacute;n por sesi&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#127891; Incluido sin costo adicional
+Tu certificaci&oacute;n al finalizar
+Dos certificaciones incluidas, sin costo adicional.
+Autodesk
+Completaci&oacute;n del curso
+Modeling-DG S.A.S.
+Certificado Internacional
+20
+horas acad&eacute;micas
+&#10003; Certificado Internacional
+&#10003; C&oacute;digo QR de verificaci&oacute;n
+&#10003; Descargable en PDF
+&#10003; A tu nombre, listo para LinkedIn
+Al finalizar recibes una certificaci&oacute;n de completaci&oacute;n avalada por Autodesk &mdash; somos Centro de Entrenamiento Autorizado de la marca &mdash; y un Certificado Internacional de 20 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver todos nuestros cursos en la web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ INFO Modelado BIM en Hormigón Armado y Acero Estructural
+
+- **id:** `6a886be4bc3bac7221b8245e`
+- **tipo:** html
+- **actualizada:** 2026-08-21T15:32:42.793Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Modelado BIM completo en Revit combinando hormigon y acero.
+Curso especializado
+Modelado BIM en Hormig&oacute;n Armado y Acero Estructural
+Hola {{contact.first_name}} ,
+Un curso de modelado
+puro y bien hecho: levantar en Revit la estructura completa de un proyecto, combinando
+hormig&oacute;n armado y acero estructural en un mismo modelo
+coordinado y limpio.
+Cimentaciones,
+columnas, vigas, losas, perfiles met&aacute;licos y conexiones, con el nivel de detalle correcto para
+que el modelo sirva tanto al c&aacute;lculo como a la documentaci&oacute;n.
+35 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
+Revit &middot; material descargable
+Descargar el temario completo &#8594;
+PDF con el detalle sesi&oacute;n por sesi&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos
+reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros
+proyectos.
+&#9989;
+Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#127891; Incluido sin costo adicional
+Tu certificaci&oacute;n al finalizar
+Dos certificaciones incluidas, sin costo adicional.
+Autodesk
+Completaci&oacute;n del curso
+Modeling-DG S.A.S.
+Certificado
+Internacional
+35
+horas acad&eacute;micas
+&#10003; Certificado
+Internacional
+&#10003; C&oacute;digo QR de
+verificaci&oacute;n
+&#10003; Descargable en PDF
+&#10003; A tu nombre, listo
+para LinkedIn
+Al finalizar recibes
+una
+certificaci&oacute;n de completaci&oacute;n avalada por Autodesk
+&mdash; somos Centro de Entrenamiento Autorizado de la marca &mdash; y un
+Certificado Internacional de 35 horas acad&eacute;micas
+emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver todos nuestros cursos en la web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ INFO Naves Industriales SAP2000
+
+- **id:** `6a7e0e73a1eba97e2c1c3163`
+- **tipo:** html
+- **actualizada:** 2026-08-21T15:13:34.962Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Diseno de naves de acero ante viento y sismo en SAP2000.
+Curso especializado
+Naves Industriales PRO 30 Horas en SAP2000
+Hola {{contact.first_name}} ,
+Una formaci&oacute;n enfocada en un solo objetivo: dise&ntilde;ar naves industriales de acero con criterio ante cargas de viento y sismo . Vas del modelado 3D de p&oacute;rticos y celos&iacute;as al an&aacute;lisis modal espectral y de viento, hasta el dise&ntilde;o final de los elementos.
+Se trabajan a fondo los temas que suelen quedar sueltos: pandeo flexo-torsional y lateral-torsional, estabilidad de la estructura, tensores y arriostramientos, dise&ntilde;o de correas y mezzanine, y optimizaci&oacute;n de pesos.
+25 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
+SAP2000 &middot; material descargable
+Descargar el temario completo &#8594;
+PDF con el detalle sesi&oacute;n por sesi&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#127891; Incluido sin costo adicional
+Tu certificaci&oacute;n al finalizar
+Emitido por Modeling-DG S.A.S. &mdash; verificable en l&iacute;nea.
+25
+horas acad&eacute;micas
+&#10003; Certificado Internacional
+&#10003; C&oacute;digo QR de verificaci&oacute;n
+&#10003; Descargable en PDF
+&#10003; A tu nombre, listo para LinkedIn
+Al terminar, recibes un Certificado Internacional de 25 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver todos nuestros cursos en la web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ INFO Teoría y Cálculo de Uniones Metálicas en Edificaciones
+
+- **id:** `6a886b8e676a1cd9c1f3bdbb`
+- **tipo:** html
+- **actualizada:** 2026-08-21T15:16:33.032Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Teoria y detalle constructivo de uniones metalicas en Advance Steel.
+Curso especializado
+Teor&iacute;a y C&aacute;lculo de Uniones Met&aacute;licas en Edificaciones
+Hola {{contact.first_name}} ,
+La uni&oacute;n es donde falla la mayor&iacute;a de las estructuras de acero mal resueltas. Aqu&iacute; trabajas la teor&iacute;a detr&aacute;s de cada conexi&oacute;n &mdash;apernada y soldada&mdash; y luego la llevas al detalle constructivo real en Autodesk Advance Steel.
+Placas base, conexiones viga-columna a momento y a corte, empalmes y arriostramientos: cada tipo se calcula, se verifica y se documenta con planos de taller listos para fabricaci&oacute;n.
+30 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
+Autodesk Advance Steel &middot; material descargable
+Descargar el temario completo &#8594;
+PDF con el detalle sesi&oacute;n por sesi&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#127891; Incluido sin costo adicional
+Tu certificaci&oacute;n al finalizar
+Dos certificaciones incluidas, sin costo adicional.
+Autodesk
+Completaci&oacute;n del curso
+Modeling-DG S.A.S.
+Certificado Internacional
+30
+horas acad&eacute;micas
+&#10003; Certificado Internacional
+&#10003; C&oacute;digo QR de verificaci&oacute;n
+&#10003; Descargable en PDF
+&#10003; A tu nombre, listo para LinkedIn
+Al finalizar recibes una certificaci&oacute;n de completaci&oacute;n avalada por Autodesk &mdash; somos Centro de Entrenamiento Autorizado de la marca &mdash; y un Certificado Internacional de 30 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver todos nuestros cursos en la web
 Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
 designmodelingacademy.com
 {{unsubscribe_url}}
