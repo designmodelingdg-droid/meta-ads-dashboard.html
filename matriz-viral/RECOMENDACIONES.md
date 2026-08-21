@@ -105,24 +105,32 @@ $600-800/mes **con la cuenta parada por impago** desde el 7-ago.
 
 ### 20-ago-2026 · Auditoría semanal (7 días)
 Los **4 cambios pedidos el 3-ago están aplicados**: geo-split abierto (12
-adsets), métricas de retorno, conciliación con el CRM, y la definición de lead
-correcta. 🟢
+adsets), métricas de retorno, conciliación con el CRM y la definición de lead
+correcta. 🟢 El gasto cuadra: $442,32 reportado vs $440,17 real (0,5%).
 
-El gasto cuadra: $442,32 reportado vs $440,17 real, 0,5% de diferencia. Los
-leads bailan 7,7% (612 vs 568), casi seguro por ventana corrida un día — se
-pide que impriman las fechas exactas.
+**Retorno real 2,84x** contra el 2,49x reportado — la agencia estaba cerca.
+De los $2.249,98 cobrados, **$1.600 son recurrencia del Máster** (3 cuotas de
+$160 más $1.120 de dos alumnos que liquidaron su saldo) y $200 son reservas.
+Venta nueva: $449,98 por pasarela más $799,99 que solo está en el CRM
+—Diplomado y Paquete Autodesk, entrados por transferencia—.
 
-**El hallazgo:** el CRM reporta $1.099,98 de revenue y entraron **$2.249,98**
-de verdad. La partida sin explicar es un cobro de **$1.120 del 13-ago** que no
-aparece en el CRM. Retorno honesto 3,57x (sin recurrencias ni reservas) contra
-el 2,49x reportado.
+**Lección de método:** ninguna fuente lo ve todo. La pasarela no ve
+transferencias; el CRM no ve lo que nadie registra; y las recurrencias inflan
+la pasarela si no se separan.
 
-**La decisión:** México gastó $136,78 y trajo 237 leads y **cero** compras;
-Ecuador gastó $143,30, trajo 202 leads y **2** compras. Los adsets mexicanos
-tienen el CPL más bajo de la cuenta ($0,32) — el CPL barato es justo lo que
-engaña. Vigilar dos semanas antes de mover presupuesto.
+🔴 **Perfilar los leads del Máster.** Es la prioridad que fijó Dayana. Hoy el
+adset de Máster FORM trae leads a $1,86 y el de WhatsApp a $1,17, pero sin
+filtro de perfil. El Máster no se cierra por volumen.
 
-«Tráfico al perfil» suma $25,50 más por 1 lead. Tercera auditoría sin generar
+🔴 **México:** $136,78 y 237 leads con **cero** compras, contra Ecuador con
+$143,30, 202 leads y **2** compras. Los adsets mexicanos tienen el CPL más bajo
+de la cuenta ($0,32) — el CPL barato es justo lo que engaña. Vigilar dos
+semanas antes de mover presupuesto.
+
+🔴 **Cuadrar el segundo ACERO:** la pasarela muestra dos cobros de $199,99 y el
+CRM registra uno.
+
+⚫ «Tráfico al perfil» suma $25,50 más por 1 lead. Tercera auditoría sin generar
 negocio.
 
 ### 3-ago-2026 · Primera auditoría del reporte

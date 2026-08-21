@@ -39,50 +39,54 @@ que es lo único que falta para poder cuadrar sin adivinar.
 
 ---
 
-## 2. Lo que el reporte no ve: el dinero
+## 2. El dinero, ya con la corrección de Dayana
 
-Aquí está el hallazgo de la semana.
+> **Corrección del 20-ago.** La primera versión de esta auditoría decía que el
+> cobro de $1.120 del 13-ago era una venta sin registrar, y calculaba un retorno
+> de 3,57x. **Estaba mal.** Dayana confirmó que son **dos alumnos del Máster que
+> venían pagando $160 al mes y liquidaron el saldo de una vez.** Es recurrencia
+> de una venta vieja, no venta nueva. Recalculado abajo.
+
+Entraron **$2.249,98** por pasarela. Pero casi todo es de ventas ya hechas:
+
+| Concepto | Monto | ¿Venta nueva? |
+|---|---|---|
+| 2 alumnos liquidan el Máster (13-ago) | $1.120,00 | ❌ recurrencia |
+| 3 cuotas de $160 del Máster | $480,00 | ❌ recurrencia |
+| 2 reservas de $100 | $200,00 | ❌ anticipo |
+| 2 × ACERO ($199,99) | $399,98 | ✅ |
+| 1 cobro de $50 | $50,00 | ✅ sin identificar |
+| **Venta nueva por pasarela** | **$449,98** | |
+
+### Y el CRM tiene ventas que la pasarela no ve
+
+Al revés de lo que parecía. El CRM registra **Diplomado $500** y **Paquete
+Autodesk $299,99** que **no aparecen en Stripe ni en PayPal** — o sea que
+entraron por transferencia o efectivo, que la pasarela no puede ver.
 
 | | |
 |---|---|
-| Revenue que reporta el CRM | **$1.099,98** en 5 compras |
-| **Cobrado de verdad** (Stripe + PayPal) | **$2.249,98** en 9 cobros |
-| **Diferencia** | **+$1.150,00** |
+| Venta nueva por pasarela | $449,98 |
+| Venta nueva solo en el CRM (transferencia) | $799,99 |
+| **VENTA NUEVA TOTAL** | **$1.249,97** |
+| Gasto de pauta | $440,17 |
+| **RETORNO REAL** | **2,84x** |
 
-Entró **el doble** de lo que el CRM registró. No es error del reporte: el
-reporte lee bien el CRM. Es que **al CRM no le está llegando todo**.
+**El reporte dice 2,49x. El real es 2,84x.** La agencia estaba mucho más cerca
+de lo que parecía: la diferencia son las dos ventas por transferencia y el
+segundo ACERO.
 
-Desglose de los 9 cobros reales:
+### Lo único que sigue sin cuadrar
 
-| Fecha | Monto | Qué es |
-|---|---|---|
-| 13-ago | **$1.120,00** | ⚠️ **No aparece en el CRM.** Es la partida grande |
-| 13-ago | $100,00 | reserva |
-| 13-ago | $50,00 | — |
-| 14-ago | $100,00 | reserva |
-| 16-ago | $160,00 ×2 | recurrencia del Máster |
-| 17-ago | $199,99 | ACERO |
-| 18-ago | $160,00 | recurrencia del Máster |
-| 19-ago | $199,99 | ACERO (factura 000212) |
+**La pasarela muestra DOS cobros de ACERO ($199,99 el 17-ago por PayPal y
+$199,99 el 19-ago por Stripe, factura 000212) y el CRM registra UNO.** Es una
+venta real que no está en el pipeline. Vale la pena revisar cuál de las dos
+falta y por qué.
 
-**El cobro de $1.120 del 13 de agosto es lo que hay que rastrear.** Solo eso
-explica casi toda la diferencia.
-
-### El retorno honesto
-
-El reporte dice **2,49x**. Contra lo cobrado de verdad:
-
-| Cálculo | Retorno |
-|---|---|
-| Todo lo cobrado ÷ gasto | **5,11x** |
-| Sin las recurrencias del Máster ($480) | **4,02x** |
-| Sin recurrencias ni reservas ($200) | **3,57x** |
-
-**El más honesto es 3,57x**, y aun así es 43% mejor que el 2,49x reportado.
-Las recurrencias son de ventas viejas y las reservas de $100 son anticipo, no
-venta cerrada — las tres cifras se dan juntas para que no haya trampa.
-
----
+> **La lección de método:** ninguna de las dos fuentes lo ve todo. La pasarela
+> no ve transferencias ni efectivo; el CRM no ve lo que nadie registra. Y las
+> recurrencias inflan la pasarela si no se separan. **El retorno honesto solo
+> sale cruzando las dos y quitando lo que no es venta nueva.**
 
 ## 3. La decisión de la semana: México
 
@@ -130,7 +134,7 @@ en los adsets de CPL barato.
 
 ## 5. Lo que queda abierto
 
-1. **Rastrear el cobro de $1.120 del 13-ago** y por qué no está en el CRM.
+1. **Cuadrar el segundo ACERO**: la pasarela muestra dos cobros de $199,99 y el CRM registra uno.
 2. **Pedir que impriman las fechas exactas del periodo** en la cabecera.
 3. **Vigilar México dos semanas** antes de tocar su presupuesto.
 4. **Decidir sobre «Tráfico al perfil»**: tres auditorías sin generar negocio.
