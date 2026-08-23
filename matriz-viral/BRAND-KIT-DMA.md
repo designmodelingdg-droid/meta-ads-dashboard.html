@@ -241,3 +241,53 @@ columna que tapó media banda del titular. En una pieza con texto encima,
 > El video es 40 veces más caro que la fija. **La composición, la luz y el
 > encuadre se cierran en la imagen** — cuesta 1 crédito equivocarse ahí y 4.8
 > equivocarse en el video. Nunca se anima una fija que no esté aprobada.
+
+---
+
+## Segunda prueba: los héroes de curso (23-ago-2026)
+
+**7. Nunca poner códigos hex en el prompt de un modelo que sabe escribir.**
+Seedream 4.5 leyó `#003e5c` y `#001e30` como contenido y **los dibujó como
+cotas sobre el plano**: «#003e5C», «#001e0», «#0455». Nano Banana Pro, con el
+mismo prompt, los interpretó como color. Regla segura: **el color se nombra**
+—«azul marino muy oscuro», «naranja quemado cálido»— y los hex se quedan fuera
+del prompt. El hex vive aquí, en el kit, para Canva.
+
+**8. Los «no» de color siguen sin funcionar solos.** La misma pasada de
+Seedream metió cian y morado con `no cyan, no purple` escrito. Lo que sí
+funcionó en la repetición fue cerrar la lista en positivo:
+«LOS ÚNICOS COLORES DE LA IMAGEN SON: azul marino oscuro, azul medio apagado,
+gris acero mate, gris hormigón pálido y naranja quemado».
+
+**9. Para héroe de curso, el modelo es Nano Banana Pro.** Dos créditos, 2K, y
+devuelve geometría que un ingeniero reconoce: perfiles I, placas de testa
+apernadas con los pernos modelados, cartelas, arriostramiento en cruz, placas
+base con pernos de anclaje. Seedream se queda para bodegón fotográfico.
+
+### Precisión: la advertencia que va con esto
+
+El modelo acierta el lenguaje del acero, **no el cálculo**. En la pasada buena,
+una diagonal muere fuera del punto de trabajo. Sirve de fondo detrás de la
+tipografía; **no sirve como referencia técnica y no se publica como si lo
+fuera.** Si una pieza necesita un detalle correcto, se exporta del modelo real.
+
+### Aclaración a la prohibición de «render 3D brillante»
+
+La prohibición apunta a un render lustroso que **finge ser fotografía**. No
+prohíbe el héroe de modelo BIM sobre fondo marino, que es la estética real de
+la pauta de DMA y es coherente: una academia BIM enseñando con un modelo de
+coordinación. Lo que se mantiene prohibido dentro de ese héroe es el brillo
+plástico, el piso espejo, el cian eléctrico y las líneas de neón.
+
+### La plantilla de encuadre del héroe (9:16)
+
+| Zona | Qué lleva | Se genera |
+|---|---|---|
+| Quinto superior | logo y microcredencial | **vacío** |
+| Tercio izquierdo | titular grande | **vacío** |
+| Dos tercios derechos | el modelo | sí |
+| Quinto inferior | franja de acreditaciones y CTA | **vacío** |
+
+Se pide literal: «el tercio izquierdo y el quinto superior quedan como campo
+marino vacío, sin nada dentro». Sin esa frase el modelo llena el cuadro y la
+tipografía no tiene dónde caer.
