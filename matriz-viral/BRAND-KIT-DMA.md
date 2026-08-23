@@ -291,3 +291,82 @@ plástico, el piso espejo, el cian eléctrico y las líneas de neón.
 Se pide literal: «el tercio izquierdo y el quinto superior quedan como campo
 marino vacío, sin nada dentro». Sin esa frase el modelo llena el cuadro y la
 tipografía no tiene dónde caer.
+
+---
+
+## Recetas reutilizables
+
+Prompts que ya salieron bien a la primera. Se copian tal cual y se cambia solo
+la parte del sujeto. Todos van con **Nano Banana Pro, 2K, 9:16**, 2 créditos.
+
+### Fondo de historia · marino con la pieza abajo
+
+Para cuadros con titular grande. La mitad superior queda vacía de verdad.
+
+```
+Vertical 9:16 background plate for an Instagram story, in the visual language
+of a structural engineering brand. Subject sits ONLY in the bottom third:
+[LA PIEZA], cropped so it enters from the bottom edge and reads as a fragment,
+not a complete object. Everything above it is empty. Background: a flat very
+dark navy blue field, near black at the top, with a faint thin technical grid
+in a slightly lighter muted navy, and a few small drafting registration marks
+and corner brackets in thin muted blue line, sparse and pushed to the extreme
+edges of the frame. Accent: warm burnt orange as a single thin rule along one
+edge and one short tick mark, nothing more. Matte grey with a fine mill finish,
+soft even ambient with one gentle directional key from upper left, controlled
+specular, no glare, no bloom, no lens flare. THE CRITICAL CONSTRAINT: the upper
+two thirds of the frame must be completely empty flat dark navy with absolutely
+nothing in it — no geometry, no grid lines crossing it, no marks — because
+large type will be placed there afterwards. THE ONLY COLOURS ARE: very dark
+navy blue, muted mid blue, matte grey steel, and warm burnt orange.
+ABSOLUTELY NO TEXT ANYWHERE: no letters, no words, no numbers, no dimension
+lines, no dimension text, no leaders, no labels, no callouts, no captions,
+no logos, no watermarks, no user interface. Also no people, no hands, no hard
+hats, no safety vests, no cranes, no construction site, no cyan, no turquoise,
+no electric blue, no glowing neon lines, no purple, no violet, no magenta,
+no photographic realism, no glossy plastic sheen, no reflective mirror floor.
+```
+
+### Fondo de historia · macro fotográfico a sangre
+
+Para cuadros donde el texto va encima de la imagen.
+
+```
+Vertical 9:16 full-bleed background plate for an Instagram story. Subject: an
+extreme close macro of [LA PIEZA REAL], the fine rolled texture and faint mill
+scale of the steel, one weld bead running along an edge. Shot as real
+photography of real steel, not a render: 105mm macro at f/4, camera
+perpendicular to the face, focus on the nearest detail with the far end falling
+soft. Lighting: one large soft source from upper left at 4800K raking across
+the surface so the detail throws small directional shadows and the texture
+reads, deep unfilled shadow on the opposite side, no fill card. THE CRITICAL
+CONSTRAINT: the whole image is deliberately dark and low-key so white type can
+sit over it — the subject occupies the lower half and the upper half falls away
+into deep unlit shadow, almost black, with no detail to compete with text.
+Colour: the shadows carry a very dark navy blue cast, the steel stays neutral
+matte grey, and there is a single small warm burnt orange element. ABSOLUTELY
+NO TEXT ANYWHERE: no letters, no words, no numbers, no stamped markings, no
+part numbers, no labels, no logos, no watermarks. Also no people, no hands,
+no hard hats, no safety vests, no cyan, no turquoise, no electric blue, no
+glowing lines, no purple, no magenta, no neon, no teal-and-orange grade,
+no oversaturation, no glossy plastic sheen, no 3D render look.
+```
+
+### Héroe de curso
+
+El de arriba, sección «La plantilla de encuadre del héroe».
+
+> **La frase que hace el trabajo en las tres** es la que reserva el vacío:
+> «the upper two thirds must be completely empty… because large type will be
+> placed there afterwards». Sin decir **para qué** se reserva, el modelo llena
+> el hueco igual.
+
+---
+
+## Dos azules en circulación
+
+El hub de recursos usa `#003e5c` y la pauta publicada usa `#0E2438`, más
+oscuro; el naranja va entre `#ca7520` y `#EE8A3C`. **No es un error, son dos
+familias**: el marino claro para web y documentos, el marino oscuro para pieza
+social sobre la que va tipografía blanca. Conviene decidirlo de una y anotarlo
+aquí, porque ahora mismo cada pieza elige sola.
