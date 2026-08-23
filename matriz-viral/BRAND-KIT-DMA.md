@@ -188,3 +188,56 @@ no hard hats, no safety vests, no fake software interface, no 3D glossy render
 > El catálogo de Higgsfield cambia casi cada semana. Con el conector activo,
 > pedir el catálogo en vivo antes de comprometer un nombre — preguntarlo no
 > genera ninguna imagen ni gasta crédito.
+
+---
+
+## Lo que se aprendió en la primera prueba real (23-ago-2026)
+
+Tres pasadas de imagen y un video, 6 créditos. Esto no son opiniones: cada
+línea salió de una generación que falló.
+
+**1. Los «no» dentro del prompt no frenan a `soul_2`.** Se le pidió
+`no cyan, no teal-and-orange` y devolvió exactamente eso: pared cian, mesa
+naranja, virado de tráiler. Lo que sí funciona es **describir en positivo el
+color que se quiere**, con el hex y con el material: «pared mate blanco cálido
+`#fafaf7`», «balance de blancos neutro, sombras gris neutro sin dominante».
+
+**2. Una pantalla encendida siempre sale con interfaz inventada.** Se le pidió
+la tapa girada 40° para que solo se viera el brillo, y la puso de frente con
+una hoja de cálculo falsa y legible — justo lo prohibido. La única instrucción
+que se cumple es **la tapa cerrada**, escrita en mayúsculas y al principio:
+`THE LAPTOP IS CLOSED`. La pantalla se compone después, o no va.
+
+**3. «Plano estructural» a secas devuelve decoración.** La primera pasada dio
+una celosía curva que ningún ingeniero reconoce. Hay que pedir la geometría:
+«trazado estrictamente ortogonal, vigas y columnas rectas sobre retícula
+rectangular». Con eso sí sale algo que este público lee como un plano.
+
+**4. Para bodegón con color controlado, `seedream_v4_5` obedece y `soul_2` no.**
+Mismo prompt, mismo momento: Seedream respetó la paleta, el portátil cerrado y
+el tercio superior limpio; Soul metió texto falso en la libreta y una marca en
+el bisel. `soul_2` se queda para lo suyo — personas, UGC, retrato.
+
+**5. El empuje de cámara se come el encuadre.** 15 cm de dolly dejaron la
+libreta fuera de cuadro y subieron la taza al centro. Para una pieza cuyo
+tercio superior tiene que sobrevivir para el titular: **máximo 8 cm de empuje,
+o cámara fija.**
+
+**6. El vapor nunca sale sutil.** Se pidió «hilo fino de vapor» y salió una
+columna que tapó media banda del titular. En una pieza con texto encima,
+**el vapor no va**. Basta el polvo en el haz de luz.
+
+### Costos reales medidos (plan starter, 23-ago-2026)
+
+| Trabajo | Modelo | Créditos |
+|---|---|---|
+| Borrador de imagen | `soul_2` 1.5k | 0.12 |
+| Imagen buena de bodegón | `seedream_v4_5` basic | 1 |
+| Imagen 4K con tipografía | `nano_banana_pro` 2k | 2 |
+| Video 4 s 720p desde fija | `seedance1_5` | 4.8 |
+| Video 5 s 720p desde fija | `seedance_2_0_mini` | 12.5 |
+| Video 5 s 720p desde fija | `seedance_2_5` | 32.5 |
+
+> El video es 40 veces más caro que la fija. **La composición, la luz y el
+> encuadre se cierran en la imagen** — cuesta 1 crédito equivocarse ahí y 4.8
+> equivocarse en el video. Nunca se anima una fija que no esté aprobada.
