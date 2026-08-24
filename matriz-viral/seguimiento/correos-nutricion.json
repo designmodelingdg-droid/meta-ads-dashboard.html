@@ -1,0 +1,532 @@
+{
+ "generado": "2026-08-20",
+ "enlaces": {
+  "hub": "https://funnel.dgdesignmodeling.com/recursos",
+  "guia": "https://funnel.dgdesignmodeling.com/descarga-gratis-guia-bim-form",
+  "ebook": "https://funnel.dgdesignmodeling.com/descarga-gratis-ebook-bim-form",
+  "gpt": "https://funnel.dgdesignmodeling.com/descarga-gratis-ai-pro-form",
+  "curso": "https://funnel.dgdesignmodeling.com/acceso-gratis-curso-introductorio-bim-form",
+  "modulo": "https://funnel.dgdesignmodeling.com/acceso-gratis-modulo-diplomado-bim-form",
+  "zapatas": "https://funnel.dgdesignmodeling.com/calculadora-zapatas",
+  "test": "https://funnel.dgdesignmodeling.com/test-nivel-bim",
+  "blog": "https://funnel.dgdesignmodeling.com/blog",
+  "comunidad": "https://designmodelingacademy.app.clientclub.net/communities/groups/comunidad-design/home",
+  "acero": "https://designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero"
+ },
+ "secuencias": [
+  {
+   "id": "S1",
+   "carpeta": "⛔ SEGUIMIENTO NUTRICIÓN CORREOS — LEAD DE GUÍAS, EBOOK, CURSO GRATIS (RECURSOS)",
+   "quien": "Todo el que descarga un recurso gratuito: guía, ebook, GPT de IA, curso introductorio o módulo 1 del Diplomado.",
+   "objetivo": "Que no se enfríe, que conozca lo demás y que llegue al Test de Nivel — que es el correo que califica la lista.",
+   "duracion": "6 correos · 21 días",
+   "salida": "Sale de la secuencia si responde, agenda, compra o pide baja.",
+   "correos": [
+    {
+     "n": 1,
+     "cuando": "Inmediato",
+     "plantilla": "NUEVA · RECURSOS-01 ¿Pudiste abrirlo?",
+     "asunto": "¿Pudiste abrir la guía?",
+     "preencabezado": "Y una pregunta rápida, si tienes 10 segundos.",
+     "cuerpo": [
+      "Hola {{contact.first_name}},",
+      "Te escribo solo para confirmar que el material te llegó bien.",
+      "Si no lo ves en la bandeja, revisa la carpeta de promociones o spam — a veces cae ahí.",
+      "Y aprovecho para hacerte una pregunta, que me sirve para no mandarte cosas que no te interesan.",
+      "¿En qué estás ahora mismo?",
+      "1. Estudiando o recién graduado",
+      "2. Trabajando en proyectos y quiero ordenarme con BIM",
+      "3. Ya uso BIM y quiero especializarme",
+      "Respóndeme con el número, nada más. Lo leo yo.",
+      "Un abrazo,",
+      "Equipo Design Modeling Academy"
+     ],
+     "cta": {
+      "texto": "ABRIR MI RECURSO",
+      "enlace": "https://funnel.dgdesignmodeling.com/recursos"
+     },
+     "imagen": "Portada del recurso que descargó. Si el flujo sirve a varios recursos, usa la imagen del hub.",
+     "nota": "Es el correo de mayor apertura de toda la secuencia. Por eso pregunta en vez de vender: lo que responda hace que los cinco siguientes acierten. La respuesta llega a la bandeja del CRM."
+    },
+    {
+     "n": 2,
+     "cuando": "Día 2",
+     "plantilla": "NUEVA · RECURSOS-02 Revit e IA",
+     "asunto": "Tu Revit ya hace esto (y casi nadie lo activó)",
+     "preencabezado": "3 minutos de lectura, cero teoría.",
+     "cuerpo": [
+      "Hola {{contact.first_name}},",
+      "Hay mucho ruido con la inteligencia artificial en Revit. Se promete de todo, y buena parte no existe todavía.",
+      "Así que escribimos lo que sí es cierto: qué trae de verdad, desde qué versión, y qué necesita licencia aparte.",
+      "Lo comprobamos función por función contra la documentación de Autodesk antes de publicarlo. Si algo no se podía confirmar, no entró al artículo.",
+      "Nuestra posición es simple: la IA te da velocidad. El criterio sigue siendo tuyo, y eso no lo automatiza nadie.",
+      "Un abrazo,",
+      "Equipo Design Modeling Academy"
+     ],
+     "cta": {
+      "texto": "LEER EL ARTÍCULO",
+      "enlace": "https://funnel.dgdesignmodeling.com/blog"
+     },
+     "imagen": "Captura real de la función dentro de Revit. Nada de render genérico de robot.",
+     "nota": "El ángulo «la IA da velocidad, el criterio es tuyo» es el de mejor interacción de toda la matriz."
+    },
+    {
+     "n": 3,
+     "cuando": "Día 5",
+     "plantilla": "NUEVA · RECURSOS-03 Test de Nivel",
+     "asunto": "¿En qué nivel de BIM estás realmente?",
+     "preencabezado": "20 preguntas, 5 minutos, resultado al momento.",
+     "cuerpo": [
+      "Hola {{contact.first_name}},",
+      "Casi todos los que nos escriben dicen lo mismo: «manejo Revit». Pero manejar Revit y coordinar un proyecto BIM no son lo mismo, y esa diferencia es la que decide el sueldo.",
+      "Hicimos un test para ubicarte de verdad. Son 20 preguntas, unos 5 minutos, y las sacamos del temario real del Máster — no son trivia.",
+      "Al terminar sabes en cuál de los 4 niveles estás:",
+      "1. Modelador BIM",
+      "2. Coordinador BIM",
+      "3. BIM Manager 4D-5D",
+      "4. Especialista BIM + IA",
+      "Y te dice qué competencias concretas te faltan para el siguiente.",
+      "Una aclaración honesta: esto no es una certificación ni un diploma. Es un diagnóstico para que sepas dónde estás parado.",
+      "Un abrazo,",
+      "Equipo Design Modeling Academy"
+     ],
+     "cta": {
+      "texto": "HACER EL TEST GRATIS",
+      "enlace": "https://funnel.dgdesignmodeling.com/test-nivel-bim"
+     },
+     "imagen": "Pantalla del resultado del test con los 4 niveles.",
+     "nota": "ESTE es el correo que califica la lista. Quien lo hace, se etiqueta solo por nivel."
+    },
+    {
+     "n": 4,
+     "cuando": "Día 9",
+     "plantilla": "NUEVA · RECURSOS-04 Calculadora",
+     "asunto": "Dimensiona una zapata en 2 minutos, desde el celular",
+     "preencabezado": "Gratis y sin instalar nada.",
+     "cuerpo": [
+      "Hola {{contact.first_name}},",
+      "Te dejo algo que se usa, no que se lee.",
+      "Metes la carga y el esfuerzo admisible del suelo, y te devuelve el predimensionado de la zapata: dimensiones, verificaciones y acero.",
+      "Funciona desde el celular, en obra, sin instalar nada.",
+      "Una nota importante: es una herramienta de apoyo para predimensionar. No sustituye el criterio ni la revisión de un profesional responsable, y el diseño final siempre es tuyo.",
+      "Un abrazo,",
+      "Equipo Design Modeling Academy"
+     ],
+     "cta": {
+      "texto": "ABRIR LA CALCULADORA",
+      "enlace": "https://funnel.dgdesignmodeling.com/calculadora-zapatas"
+     },
+     "imagen": "Captura de la calculadora abierta en un celular, en obra.",
+     "nota": "El descargo educativo NO se quita. Es una herramienta gratuita, no un servicio de cálculo."
+    },
+    {
+     "n": 5,
+     "cuando": "Día 14",
+     "plantilla": "NUEVA · RECURSOS-05 Quiénes somos",
+     "asunto": "Lo que hacemos aquí, en 2 minutos",
+     "preencabezado": "Sin venderte nada, para que sepas dónde estás.",
+     "cuerpo": [
+      "Hola {{contact.first_name}},",
+      "Llevas unas semanas recibiendo cosas nuestras y quizá no sabes bien quiénes somos. Te lo cuento corto.",
+      "Design Modeling Academy es un centro de entrenamiento internacional en BIM, estructuras e inteligencia artificial aplicada a la construcción. Trabajamos con ingenieros y arquitectos de toda Latinoamérica y España.",
+      "Nuestras formaciones llevan aval de Autodesk, aval universitario en Estados Unidos y Europa, y reconocimiento SENESCYT en Ecuador.",
+      "Pero lo que más nos importa no son los sellos: es que la gente termine haciendo cosas distintas en su trabajo.",
+      "Tenemos una comunidad donde alumnos y egresados resuelven dudas entre ellos. Se entra gratis y se sale cuando quieras.",
+      "Un abrazo,",
+      "Equipo Design Modeling Academy"
+     ],
+     "cta": {
+      "texto": "ENTRAR A LA COMUNIDAD",
+      "enlace": "https://designmodelingacademy.app.clientclub.net/communities/groups/comunidad-design/home"
+     },
+     "imagen": "Foto real del equipo o de una sesión en vivo. Nada de banco de imágenes.",
+     "nota": "SIN OFERTA. Este correo compra el permiso para el siguiente. Si aquí se vende, el correo 6 no se abre."
+    },
+    {
+     "n": 6,
+     "cuando": "Día 21",
+     "plantilla": "NUEVA · RECURSOS-06 Siguiente paso",
+     "asunto": "Si quieres dar el salto, esto es lo que sigue",
+     "preencabezado": "Y si no es el momento, también está bien.",
+     "cuerpo": [
+      "Hola {{contact.first_name}},",
+      "Te he mandado varias cosas estas semanas. Si alguna te sirvió, ya valió la pena.",
+      "Y si quieres ir en serio, te cuento qué sigue.",
+      "[RAMA A — si respondió 1 o 2 en el primer correo, o no respondió]",
+      "El Módulo 1 del Diplomado está abierto y es gratis. Es la forma más honesta de ver cómo enseñamos antes de decidir nada.",
+      "[RAMA B — si respondió 3]",
+      "La Especialización en Diseño Estructural BIM en Acero: 4 meses, 110 a 130 horas, 100% asincrónica —sin horario al que llegar tarde— y el acceso no caduca.",
+      "Son 4 cursos con Robot Structural, Advance Steel y Revit, con 4 certificaciones Autodesk y aval de 120 horas académicas.",
+      "Está en $199,99 en lugar de $499,99. La cohorte abre todos los meses, pero los cupos son limitados y se cierran cuando se llenan.",
+      "[CIERRE COMÚN]",
+      "Y si formarte no es lo tuyo ahora mismo, respóndeme y dejo de escribirte de esto. Te sigo mandando los recursos gratuitos, que para eso te suscribiste.",
+      "Un abrazo,",
+      "Equipo Design Modeling Academy"
+     ],
+     "cta": {
+      "texto": "RAMA A: EMPEZAR EL MÓDULO 1 GRATIS  ·  RAMA B: VER LA ESPECIALIZACIÓN",
+      "enlace": "https://funnel.dgdesignmodeling.com/acceso-gratis-modulo-diplomado-bim-form  |  https://designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero"
+     },
+     "imagen": "Rama A: pantallazo del aula. Rama B: los 4 logos (Robot, Advance Steel, Revit, certificaciones).",
+     "nota": "SON DOS PLANTILLAS, una por rama. El precio del Máster NUNCA aparece; el de ACERO sí. Los cupos se dicen «limitados», nunca un número inventado."
+    }
+   ]
+  },
+  {
+   "id": "S2",
+   "carpeta": "⛔ SEGUIMIENTO CLIENTES CURSO + FRÍOS",
+   "quien": "Compró un curso suelto, o lleva meses sin abrir nada.",
+   "objetivo": "Que use lo que ya compró y vea que hay ruta después. El que no entra es el que pide reembolso.",
+   "duracion": "5 correos · 18 días",
+   "salida": "Sale si responde, agenda o pide baja.",
+   "correos": [
+    {
+     "n": 1,
+     "cuando": "Inmediato",
+     "plantilla": "NUEVA · CURSO-01 ¿Llegaste a entrar?",
+     "asunto": "¿Llegaste a entrar al curso?",
+     "preencabezado": "Si algo no te funcionó, dímelo y lo arreglamos.",
+     "cuerpo": [
+      "Hola {{contact.first_name}},",
+      "Pregunta directa: ¿llegaste a entrar al curso?",
+      "Te lo pregunto porque lo veo seguido. Alguien se inscribe con toda la intención, se le cruza el trabajo, y a los dos meses ni se acuerda de que lo tiene.",
+      "Si no has entrado todavía, respóndeme qué te frenó:",
+      "1. No he tenido tiempo",
+      "2. Tuve un problema con el acceso",
+      "3. Entré pero no supe por dónde empezar",
+      "Cualquiera de las tres se arregla, y las tres se arreglan distinto.",
+      "Un abrazo,",
+      "Equipo Design Modeling Academy"
+     ],
+     "cta": {
+      "texto": "ENTRAR AL AULA",
+      "enlace": "(el enlace del aula del alumno)"
+     },
+     "imagen": "Captura del aula con el curso visible.",
+     "nota": "La respuesta a este correo es lo que evita el reembolso. El que pide reembolso es casi siempre el que nunca entró."
+    },
+    {
+     "n": 2,
+     "cuando": "Día 3",
+     "plantilla": "NUEVA · CURSO-02 Por dónde empezar",
+     "asunto": "Por dónde empezar (los 3 primeros pasos)",
+     "preencabezado": "Media hora y ya tienes algo hecho.",
+     "cuerpo": [
+      "Hola {{contact.first_name}},",
+      "El problema de un curso completo es que abrirlo abruma. Muchos módulos, y uno no sabe por dónde.",
+      "Haz esto y en media hora ya tienes algo:",
+      "1. Mira solo la primera clase. Una. No intentes ver tres.",
+      "2. Abre el software y repite lo que viste, con tu propio proyecto si tienes uno.",
+      "3. Si algo no sale, pregúntalo en la comunidad. Alguien lo tuvo antes que tú.",
+      "Lo que hace la diferencia no es el tiempo que le metes: es que no pasen dos semanas entre una clase y la siguiente.",
+      "¿Por qué módulo vas? Respóndeme y te digo qué mirar después.",
+      "Un abrazo,",
+      "Equipo Design Modeling Academy"
+     ],
+     "cta": {
+      "texto": "VER LA PRIMERA CLASE",
+      "enlace": "(el enlace del aula del alumno)"
+     },
+     "imagen": "Índice del curso con el primer módulo resaltado.",
+     "nota": "Nada nuevo que vender. El objetivo es que use lo que ya tiene."
+    },
+    {
+     "n": 3,
+     "cuando": "Día 7",
+     "plantilla": "NUEVA · CURSO-03 El error que veo siempre",
+     "asunto": "El error que veo en casi todos los modelos",
+     "preencabezado": "Y cómo se arregla en dos minutos.",
+     "cuerpo": [
+      "Hola {{contact.first_name}},",
+      "Cuando reviso modelos ajenos, hay un error que aparece una y otra vez: se modela sin definir bien los niveles y las rejillas desde el principio.",
+      "Parece un detalle. No lo es. Todo lo que viene después —cortes, tablas de cantidades, coordinación con las otras especialidades— se cuelga de eso. Y cuando te das cuenta, rehacerlo cuesta días.",
+      "La regla: los niveles y las rejillas se definen antes de modelar el primer muro. Siempre. Aunque tengas prisa. Sobre todo si tienes prisa.",
+      "En el blog dejamos más errores de este tipo, con la forma de arreglarlos.",
+      "Un abrazo,",
+      "Equipo Design Modeling Academy"
+     ],
+     "cta": {
+      "texto": "VER MÁS ERRORES COMUNES",
+      "enlace": "https://funnel.dgdesignmodeling.com/blog"
+     },
+     "imagen": "Antes y después: modelo con rejillas mal definidas y bien definidas.",
+     "nota": "Aporta sin pedir nada. Es el correo que sostiene la credibilidad de los dos siguientes."
+    },
+    {
+     "n": 4,
+     "cuando": "Día 12",
+     "plantilla": "NUEVA · CURSO-04 De dónde a dónde",
+     "asunto": "De modelador a BIM Manager: la ruta real",
+     "preencabezado": "Dónde estás hoy y qué sigue.",
+     "cuerpo": [
+      "Hola {{contact.first_name}},",
+      "Un curso suelto te da una herramienta. Lo que cambia el sueldo es la ruta completa.",
+      "Son cuatro escalones, y se suben en orden:",
+      "1. Modelador BIM — sabes modelar lo que te piden",
+      "2. Coordinador BIM — detectas choques antes de que cuesten dinero en obra",
+      "3. BIM Manager 4D-5D — manejas tiempo y costo dentro del modelo",
+      "4. Especialista BIM + IA — automatizas lo repetitivo y decides con datos",
+      "La mayoría se queda en el primero durante años, no por falta de capacidad, sino porque nadie le dijo que había un segundo.",
+      "Si quieres saber en cuál estás de verdad, el test te lo dice en 5 minutos.",
+      "Un abrazo,",
+      "Equipo Design Modeling Academy"
+     ],
+     "cta": {
+      "texto": "VER EN QUÉ NIVEL ESTOY",
+      "enlace": "https://funnel.dgdesignmodeling.com/test-nivel-bim"
+     },
+     "imagen": "Los 4 niveles como escalera.",
+     "nota": "Sin precio del Máster. El objetivo es que pregunte, no que compre por correo."
+    },
+    {
+     "n": 5,
+     "cuando": "Día 18",
+     "plantilla": "NUEVA · CURSO-05 Lo que abre ahora",
+     "asunto": "Lo que tenemos abierto este mes",
+     "preencabezado": "Por si quieres seguir.",
+     "cuerpo": [
+      "Hola {{contact.first_name}},",
+      "Te cuento qué hay abierto ahora mismo, y lo dejo ahí.",
+      "La Especialización en Diseño Estructural BIM en Acero: 4 meses, 100% asincrónica, 4 cursos con Robot Structural, Advance Steel y Revit. Salen 4 certificaciones Autodesk y aval de 120 horas académicas.",
+      "Está en $199,99 en lugar de $499,99, y el acceso no caduca.",
+      "La cohorte abre todos los meses, así que no te voy a inventar una cuenta regresiva. Lo que sí es cierto es que los cupos por cohorte son limitados.",
+      "Si prefieres que lo hablemos antes de decidir, respóndeme y coordinamos una llamada. Sin compromiso.",
+      "Un abrazo,",
+      "Equipo Design Modeling Academy"
+     ],
+     "cta": {
+      "texto": "VER LA ESPECIALIZACIÓN",
+      "enlace": "https://designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero"
+     },
+     "imagen": "Los 4 logos: Robot · Advance Steel · Revit · certificaciones Autodesk.",
+     "nota": "Se puede decir el precio de ACERO. El del Máster no, ni aproximado."
+    }
+   ]
+  },
+  {
+   "id": "S3",
+   "carpeta": "⛔ RECONTACTO Y REMARKETING GENERAL",
+   "quien": "Leads viejos, sin actividad reciente.",
+   "objetivo": "Despertarlos, o dejarlos ir limpiamente. Una lista limpia entrega mejor.",
+   "duracion": "4 correos · 12 días — la más corta a propósito",
+   "salida": "Sale si responde o abre dos correos seguidos. Si no abre ninguno, baja de frecuencia.",
+   "correos": [
+    {
+     "n": 1,
+     "cuando": "Inmediato",
+     "plantilla": "NUEVA · RECONTACTO-01 ¿Sigues en esto?",
+     "asunto": "{{contact.first_name}}, ¿sigues metido en BIM?",
+     "preencabezado": "Pregunta honesta, respuesta de una línea.",
+     "cuerpo": [
+      "Hola {{contact.first_name}},",
+      "Hace tiempo que no sabemos nada de ti, así que voy directo:",
+      "¿Sigues trabajando o estudiando en esto?",
+      "Si la respuesta es sí, respóndeme y te pongo al día con lo que hemos sacado.",
+      "Si es no, respóndeme igual y te saco de la lista sin problema. Prefiero eso a seguir llenándote la bandeja.",
+      "Un abrazo,",
+      "Equipo Design Modeling Academy"
+     ],
+     "cta": {
+      "texto": "(sin botón — este correo se responde)",
+      "enlace": ""
+     },
+     "imagen": "Ninguna. Correo de texto plano, que se lee como escrito por una persona.",
+     "nota": "SIN enlaces de venta y SIN imagen. Cinco líneas. Cualquier cosa más larga aquí no se lee."
+    },
+    {
+     "n": 2,
+     "cuando": "Día 3",
+     "plantilla": "NUEVA · RECONTACTO-02 Lo que cambió",
+     "asunto": "Lo que cambió por aquí desde la última vez",
+     "preencabezado": "Herramientas nuevas, y todas gratis.",
+     "cuerpo": [
+      "Hola {{contact.first_name}},",
+      "Desde la última vez que hablamos sacamos varias cosas, y casi todas son gratuitas:",
+      "Una calculadora de zapatas que funciona desde el celular, sin instalar nada.",
+      "Un test que te ubica en uno de los 4 niveles de la ruta BIM y te dice qué te falta.",
+      "Un GPT de inteligencia artificial configurado para trabajo técnico.",
+      "Y una comunidad donde se resuelven dudas entre colegas.",
+      "Están todas en el mismo sitio. Coge lo que te sirva y deja el resto.",
+      "Un abrazo,",
+      "Equipo Design Modeling Academy"
+     ],
+     "cta": {
+      "texto": "VER TODOS LOS RECURSOS",
+      "enlace": "https://funnel.dgdesignmodeling.com/recursos"
+     },
+     "imagen": "Mosaico con las herramientas del hub.",
+     "nota": "Demuestra movimiento. A un lead frío no se le vende: se le enseña que la casa sigue viva."
+    },
+    {
+     "n": 3,
+     "cuando": "Día 7",
+     "plantilla": "NUEVA · RECONTACTO-03 Lo más útil",
+     "asunto": "Lo más útil que publicamos este año",
+     "preencabezado": "Tres lecturas, cero promoción.",
+     "cuerpo": [
+      "Hola {{contact.first_name}},",
+      "Sin vueltas: estos son los artículos que más se leyeron y se guardaron este año.",
+      "Qué trae de verdad la IA en Revit, en qué versión, y qué no existe todavía.",
+      "Cómo elegir el software de estructuras según lo que haces, no según lo que se lleva.",
+      "Los errores más comunes al modelar y cómo se evitan desde el principio.",
+      "Sin promoción de nada. Si te sirven, con eso me doy por pagado.",
+      "Un abrazo,",
+      "Equipo Design Modeling Academy"
+     ],
+     "cta": {
+      "texto": "IR AL BLOG",
+      "enlace": "https://funnel.dgdesignmodeling.com/blog"
+     },
+     "imagen": "Portadas de los tres artículos.",
+     "nota": "Valor puro. Sin oferta, sin excepción."
+    },
+    {
+     "n": 4,
+     "cuando": "Día 12",
+     "plantilla": "NUEVA · RECONTACTO-04 ¿Te sigo escribiendo?",
+     "asunto": "¿Te sigo escribiendo?",
+     "preencabezado": "Un clic y decides tú.",
+     "cuerpo": [
+      "Hola {{contact.first_name}},",
+      "Este es el último de esta serie.",
+      "No has abierto los anteriores, y eso está bien: puede que ya no sea tu momento, o que esto no sea lo tuyo.",
+      "Si quieres seguir recibiendo los recursos, dale al botón y te dejo en la lista.",
+      "Si no haces nada, dejo de escribirte y ya. Sin rencor y sin más correos.",
+      "Un abrazo,",
+      "Equipo Design Modeling Academy"
+     ],
+     "cta": {
+      "texto": "SÍ, SIGUE MANDÁNDOME COSAS",
+      "enlace": "https://funnel.dgdesignmodeling.com/recursos"
+     },
+     "imagen": "Ninguna.",
+     "nota": "Dar salida NO es perder leads: quien no quiere estar y no encuentra cómo salir marca spam, y eso daña la entrega de TODOS los demás correos de la cuenta."
+    }
+   ]
+  },
+  {
+   "id": "S4",
+   "carpeta": "⛔ SEGUIMIENTO NUTRICIÓN CORREOS Y WHATSAPP — CLIENTES DE CURSOS Y SUSCRIPCIONES",
+   "quien": "Clientes activos: cursos comprados y suscripciones vigentes.",
+   "objetivo": "Que sigan, que aprovechen y que sepan qué más hay. Retener cuesta menos que captar.",
+   "duracion": "5 correos · 30 días, en ritmo mensual",
+   "salida": "No sale: es el ciclo de vida del cliente. Se repite cada mes con contenido nuevo.",
+   "correos": [
+    {
+     "n": 1,
+     "cuando": "Inmediato",
+     "plantilla": "NUEVA · CLIENTE-01 Tu acceso",
+     "asunto": "Tu acceso, y cómo sacarle el máximo",
+     "preencabezado": "Todo lo que tienes incluido y no siempre se usa.",
+     "cuerpo": [
+      "Hola {{contact.first_name}},",
+      "Te dejo por escrito todo lo que tienes incluido, porque hay cosas que casi nadie usa y están pagadas:",
+      "El aula, con acceso permanente. Lo que compraste no caduca.",
+      "Soporte técnico para instalación y licencias. Si el software no te arranca, escribe.",
+      "La comunidad, donde puedes preguntar y donde responden alumnos y egresados.",
+      "Los certificados, que se descargan al terminar y llevan código QR de verificación.",
+      "Cuéntame una cosa: ¿en qué proyecto estás ahora? Así te mando material que te sirva de verdad y no lo mismo que a todos.",
+      "Un abrazo,",
+      "Equipo Design Modeling Academy"
+     ],
+     "cta": {
+      "texto": "ENTRAR AL AULA",
+      "enlace": "(el enlace del aula del alumno)"
+     },
+     "imagen": "Aula del alumno con los cursos visibles.",
+     "nota": "Versión WhatsApp: dos líneas y la pregunta final. Nada más."
+    },
+    {
+     "n": 2,
+     "cuando": "Día 7",
+     "plantilla": "NUEVA · CLIENTE-02 Recurso del mes",
+     "asunto": "El recurso de este mes",
+     "preencabezado": "Para ti también, aunque ya seas alumno.",
+     "cuerpo": [
+      "Hola {{contact.first_name}},",
+      "Las herramientas gratuitas que sacamos no son solo para captar gente nueva. A ti también te sirven.",
+      "Esta es la calculadora de zapatas: metes carga y esfuerzo del suelo, y te da el predimensionado. Funciona desde el celular, en obra.",
+      "Es de apoyo para predimensionar, no sustituye el criterio ni la revisión de un profesional responsable.",
+      "Si la usas y le ves algo que falta, dímelo. Varias mejoras salieron de alumnos.",
+      "Un abrazo,",
+      "Equipo Design Modeling Academy"
+     ],
+     "cta": {
+      "texto": "ABRIR LA CALCULADORA",
+      "enlace": "https://funnel.dgdesignmodeling.com/calculadora-zapatas"
+     },
+     "imagen": "La calculadora en uso.",
+     "nota": "Rotar el recurso cada mes: calculadora, GPT de IA, guía, ebook. No repetir el mismo dos meses seguidos."
+    },
+    {
+     "n": 3,
+     "cuando": "Día 14",
+     "plantilla": "NUEVA · CLIENTE-03 Caso real",
+     "asunto": "De modelador a coordinador en 8 meses",
+     "preencabezado": "Un caso real, con nombre y apellido.",
+     "cuerpo": [
+      "Hola {{contact.first_name}},",
+      "Te cuento un caso, porque los números solos no dicen nada.",
+      "[NOMBRE DEL ALUMNO — sacar de la página de testimonios] entró sabiendo modelar, como casi todos. Lo que no sabía era coordinar.",
+      "Ocho meses después está llevando la coordinación de su proyecto y detectando choques antes de que lleguen a obra.",
+      "Lo que cambió no fue el software. Fue entender que el modelo sirve para decidir, no solo para dibujar.",
+      "¿Vas por ese camino? Respóndeme y te digo qué te falta.",
+      "Un abrazo,",
+      "Equipo Design Modeling Academy"
+     ],
+     "cta": {
+      "texto": "VER MÁS TESTIMONIOS",
+      "enlace": "https://funnel.dgdesignmodeling.com/testimonio-estudiantes-egresados-diplomado"
+     },
+     "imagen": "Foto o captura del testimonio real. Con permiso del alumno.",
+     "nota": "USAR UN CASO REAL de la página de testimonios, con su nombre. Nunca inventar un alumno. Versión WhatsApp: el caso en 3 líneas."
+    },
+    {
+     "n": 4,
+     "cuando": "Día 21",
+     "plantilla": "NUEVA · CLIENTE-04 Lo que viene",
+     "asunto": "Lo que viene en las próximas semanas",
+     "preencabezado": "Para que no te lo pierdas.",
+     "cuerpo": [
+      "Hola {{contact.first_name}},",
+      "Un resumen corto de lo que se viene:",
+      "[SESIONES EN VIVO — fechas del mes]",
+      "[HERRAMIENTA NUEVA — la app del mes de la DMA Engineering Suite]",
+      "[CONTENIDO — los artículos que salen este mes]",
+      "Todo entra en lo que ya tienes. No hay que pagar nada aparte.",
+      "Un abrazo,",
+      "Equipo Design Modeling Academy"
+     ],
+     "cta": {
+      "texto": "VER EL CALENDARIO",
+      "enlace": "https://designmodelingacademy.app.clientclub.net/communities/groups/comunidad-design/home"
+     },
+     "imagen": "Calendario del mes con las fechas marcadas.",
+     "nota": "ESTE SE ACTUALIZA CADA MES. Si se manda con las fechas del mes pasado, se nota y resta credibilidad."
+    },
+    {
+     "n": 5,
+     "cuando": "Día 30",
+     "plantilla": "NUEVA · CLIENTE-05 Tu siguiente credencial",
+     "asunto": "Tu siguiente credencial",
+     "preencabezado": "Dónde estás en la ruta y qué sigue.",
+     "cuerpo": [
+      "Hola {{contact.first_name}},",
+      "La ruta tiene cuatro escalones: Modelador, Coordinador, BIM Manager 4D-5D y Especialista BIM + IA.",
+      "Cada uno abre puertas distintas, y se suben en orden. No se puede coordinar bien sin modelar bien.",
+      "Por lo que has hecho hasta ahora, lo que te tocaría es el siguiente. Si quieres que lo veamos juntos y te diga qué te falta concretamente, respóndeme y coordinamos una llamada.",
+      "Sin compromiso y sin presentación de ventas. Es media hora mirando tu caso.",
+      "Un abrazo,",
+      "Equipo Design Modeling Academy"
+     ],
+     "cta": {
+      "texto": "AGENDAR UNA CONVERSACIÓN",
+      "enlace": "(el enlace del calendario de agendamiento)"
+     },
+     "imagen": "La ruta de 4 credenciales.",
+     "nota": "NUNCA el precio del Máster. Este correo pide una conversación, no una compra."
+    }
+   ]
+  }
+ ]
+}

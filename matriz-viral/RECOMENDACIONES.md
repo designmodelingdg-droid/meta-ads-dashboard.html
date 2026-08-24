@@ -103,6 +103,36 @@ correcciones pedidas el 3-ago. Pero el reporte recomendaba escalar a
 $600-800/mes **con la cuenta parada por impago** desde el 7-ago.
 → recomendaciones #1, #2, #4.
 
+### 20-ago-2026 · Auditoría semanal (7 días)
+Los **4 cambios pedidos el 3-ago están aplicados**: geo-split abierto (12
+adsets), métricas de retorno, conciliación con el CRM y la definición de lead
+correcta. 🟢 El gasto cuadra: $442,32 reportado vs $440,17 real (0,5%).
+
+**Retorno real 2,84x** contra el 2,49x reportado — la agencia estaba cerca.
+De los $2.249,98 cobrados, **$1.600 son recurrencia del Máster** (3 cuotas de
+$160 más $1.120 de dos alumnos que liquidaron su saldo) y $200 son reservas.
+Venta nueva: $449,98 por pasarela más $799,99 que solo está en el CRM
+—Diplomado y Paquete Autodesk, entrados por transferencia—.
+
+**Lección de método:** ninguna fuente lo ve todo. La pasarela no ve
+transferencias; el CRM no ve lo que nadie registra; y las recurrencias inflan
+la pasarela si no se separan.
+
+🔴 **Perfilar los leads del Máster.** Es la prioridad que fijó Dayana. Hoy el
+adset de Máster FORM trae leads a $1,86 y el de WhatsApp a $1,17, pero sin
+filtro de perfil. El Máster no se cierra por volumen.
+
+🔴 **México:** $136,78 y 237 leads con **cero** compras, contra Ecuador con
+$143,30, 202 leads y **2** compras. Los adsets mexicanos tienen el CPL más bajo
+de la cuenta ($0,32) — el CPL barato es justo lo que engaña. Vigilar dos
+semanas antes de mover presupuesto.
+
+🔴 **Cuadrar el segundo ACERO:** la pasarela muestra dos cobros de $199,99 y el
+CRM registra uno.
+
+⚫ «Tráfico al perfil» suma $25,50 más por 1 lead. Tercera auditoría sin generar
+negocio.
+
 ### 3-ago-2026 · Primera auditoría del reporte
 *Todas* las cifras de volumen estaban cortas: el reporte se generaba antes de
 cerrar el último día ($11 reportado vs $32,67 real). Gasto $231,38 real vs $210

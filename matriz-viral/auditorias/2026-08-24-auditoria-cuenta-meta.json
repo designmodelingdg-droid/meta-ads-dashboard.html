@@ -1,0 +1,624 @@
+{
+ "platform": "meta",
+ "version": "1.0",
+ "generated_at": "2026-08-24T00:00:00Z",
+ "account_id": null,
+ "data_source": "export",
+ "health_score": 43.2,
+ "grade": "D",
+ "category_scores": {
+  "Pixel / CAPI Health": {
+   "score": null,
+   "weight": 0.3,
+   "nota": "sin medir: 1 de 11 checks evaluables; no se puntua"
+  },
+  "Creative (Diversity & Fatigue)": {
+   "score": 45.2,
+   "weight": 0.3
+  },
+  "Account Structure": {
+   "score": 33.3,
+   "weight": 0.2
+  },
+  "Audience & Targeting": {
+   "score": 50.0,
+   "weight": 0.2
+  }
+ },
+ "checks": [
+  {
+   "id": "M01",
+   "category": "Pixel / CAPI Health",
+   "name": "Meta Pixel instalado",
+   "severity": "critical",
+   "result": "N/A",
+   "finding": "El export de Insights no incluye datos de Events Manager. Se observan action_types offsite_conversion.fb_pixel_lead / fb_pixel_purchase / fb_pixel_complete_registration en varios cortes, lo que confirma que algún evento estándar vía pixel y/o CAPI se está reportando, pero no se puede confirmar cobertura de disparo en todas las páginas.",
+   "recommendation": "Conectar Events Manager (o el MCP de Meta) para confirmar cobertura real del pixel.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M02",
+   "category": "Pixel / CAPI Health",
+   "name": "Conversions API (CAPI) activa",
+   "severity": "critical",
+   "result": "N/A",
+   "finding": "No se puede distinguir desde Insights si un evento estándar llega por pixel, por CAPI o por ambos (Meta deduplica bajo el mismo action_type). Tampoco hay evidencia de configuración para Offline Conversions API (discontinuada mayo 2025).",
+   "recommendation": "Revisar Events Manager > Diagnostics para confirmar CAPI en paralelo al pixel.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M03",
+   "category": "Pixel / CAPI Health",
+   "name": "Deduplicación de eventos (event_id)",
+   "severity": "critical",
+   "result": "N/A",
+   "finding": "Requiere tasa de match de event_id entre pixel y CAPI, dato exclusivo de Events Manager. No disponible en el export de Insights.",
+   "recommendation": "Verificar dedup rate en Events Manager (objetivo ≥90%).",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M04",
+   "category": "Pixel / CAPI Health",
+   "name": "Event Match Quality (EMQ)",
+   "severity": "critical",
+   "result": "N/A",
+   "finding": "El EMQ es un diagnóstico exclusivo de Events Manager. No existe ningún campo de EMQ en los cuatro cortes de Insights entregados.",
+   "recommendation": "No se puede recomendar una mejora específica de EMQ sin el dato real. Al conectar Events Manager, priorizar Purchase (objetivo ≥8.5) y Lead.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M05",
+   "category": "Pixel / CAPI Health",
+   "name": "Verificación de dominio",
+   "severity": "high",
+   "result": "N/A",
+   "finding": "Configuración de Business Manager, no presente en Insights.",
+   "recommendation": "Verificar el dominio en Business Manager.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M06",
+   "category": "Pixel / CAPI Health",
+   "name": "Aggregated Event Measurement (AEM)",
+   "severity": "high",
+   "result": "N/A",
+   "finding": "Configuración de priorización de eventos, exclusiva de Events Manager.",
+   "recommendation": "Revisar y priorizar los 8 eventos clave en Events Manager.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M07",
+   "category": "Pixel / CAPI Health",
+   "name": "Eventos estándar vs custom",
+   "severity": "high",
+   "result": "PASS",
+   "finding": "Los cuatro cortes muestran action_types estándar (lead, purchase, complete_registration, onsite_conversion.lead_grouped) como señales principales de conversión, no eventos custom exclusivos.",
+   "recommendation": "Ninguna acción requerida; confirmar en Events Manager que no haya duplicación con eventos custom paralelos.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M08",
+   "category": "Pixel / CAPI Health",
+   "name": "CAPI Gateway",
+   "severity": "medium",
+   "result": "N/A",
+   "finding": "Detalle de infraestructura server-side, no observable en Insights.",
+   "recommendation": "N/A hasta tener acceso a Business Manager.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M09",
+   "category": "Pixel / CAPI Health",
+   "name": "Ventana de atribución iOS",
+   "severity": "high",
+   "result": "N/A",
+   "finding": "Configuración a nivel de ad set, no incluida en los campos del export (spend/impressions/clicks/ctr/etc.).",
+   "recommendation": "Confirmar 7-day click / 1-day view en la configuración del ad set.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M10",
+   "category": "Pixel / CAPI Health",
+   "name": "Frescura de datos (lag de eventos)",
+   "severity": "medium",
+   "result": "N/A",
+   "finding": "Requiere timestamps de disparo en tiempo real; el export solo tiene agregados diarios.",
+   "recommendation": "Revisar lag de eventos en Events Manager.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M-AT1",
+   "category": "Pixel / CAPI Health",
+   "name": "Offline Conversions API descontinuada",
+   "severity": "high",
+   "result": "N/A",
+   "finding": "No se observan action_types de tipo 'offline_conversion' en ningún corte, pero esto no confirma ni descarta configuración residual en Business Manager.",
+   "recommendation": "Confirmar en Business Manager que no quede configuración de Offline Conversions API.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M25",
+   "category": "Creative (Diversity & Fatiga)",
+   "name": "Diversidad de formato creativo",
+   "severity": "critical",
+   "result": "WARNING",
+   "finding": "Los 57 archivos en ads-creativos/ son todos .jpg (imagen estática); el manifest de anuncios ganadores confirma 6 conceptos base, todos catalogados como imagen estática. No hay archivos de video ni evidencia clara de carrusel en el export. Sin embargo, el volumen de video_view en los insights (miles por campaña, ej. 15,344 en TRÁFICO IG y 10,596 en MASTER FORM V2) sugiere que sí existe creativo de video activo en la cuenta que no quedó capturado en este export de 'top ganadores'.",
+   "recommendation": "Confirmar en Ads Manager > Biblioteca de Anuncios la mezcla real de formatos activos; si es mayoritariamente imagen estática, testear video vertical 9:16 y carrusel.",
+   "fix_time_minutes": 15,
+   "evidence": null
+  },
+  {
+   "id": "M26",
+   "category": "Creative (Diversity & Fatiga)",
+   "name": "Volumen de creativos por ad set",
+   "severity": "high",
+   "result": "N/A",
+   "finding": "El export no tiene desglose a nivel de anuncio individual (solo campaña/adset), por lo que no se puede contar creativos activos por ad set.",
+   "recommendation": "Revisar en Ads Manager cuántos anuncios activos tiene cada ad set (objetivo ≥5).",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M27",
+   "category": "Creative (Diversity & Fatiga)",
+   "name": "Aspect ratios de video",
+   "severity": "high",
+   "result": "N/A",
+   "finding": "No hay archivos de video en el export para inspeccionar aspect ratio.",
+   "recommendation": "Confirmar presencia de video 9:16 en Ads Manager.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M28",
+   "category": "Creative (Diversity & Fatiga)",
+   "name": "Detección de fatiga creativa",
+   "severity": "critical",
+   "result": "FAIL",
+   "finding": "Campaña 'MASTER - FORM V2' (ad set COMPORTAMIENTOS): CTR cayó de ~2.9% (22-jul) a ~1.45-1.66% (19-20 ago), caída relativa de ~45-50% en la ventana de 30 días, con frecuencia acumulada de 4.37 (hasta 4.70 en el desglose por país, EC) — cumple el criterio de FAIL (caída de CTR >20% + frecuencia elevada). Las otras 3 campañas de leads/ventas (ACERO WSP SMS, MASTER BIM+IA WSP API, ACERO FORM) mantienen CTR estable en la ventana, sin señal de fatiga.",
+   "recommendation": "Refrescar la pieza base de MASTER FORM V2 (misma pieza nombrada 'JulioV01' sigue activa), ampliar audiencia o bajar el frequency cap mientras se produce el refresco.",
+   "fix_time_minutes": 10,
+   "evidence": null
+  },
+  {
+   "id": "M29",
+   "category": "Creative (Diversity & Fatiga)",
+   "name": "Hook rate de video",
+   "severity": "high",
+   "result": "N/A",
+   "finding": "No hay desglose de ThruPlay / retención a 3 segundos en los cortes disponibles, solo video_view agregado.",
+   "recommendation": "Revisar hook rate en Ads Manager por anuncio de video.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M30",
+   "category": "Creative (Diversity & Fatiga)",
+   "name": "Uso de prueba social (posts orgánicos boosteados)",
+   "severity": "medium",
+   "result": "N/A",
+   "finding": "No se puede distinguir desde Insights si los post_engagement reportados provienen de posts orgánicos boosteados o creados directamente para el anuncio.",
+   "recommendation": "Revisar en Ads Manager qué anuncios son 'boost' de contenido orgánico de alto rendimiento.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M31",
+   "category": "Creative (Diversity & Fatiga)",
+   "name": "Contenido UGC / social-nativo",
+   "severity": "high",
+   "result": "N/A",
+   "finding": "Se intentó inspección visual directa de 2 creativos ganadores (01-aceroads-juliov01.jpg y 05-masterads-juliov01.jpg), pero ambos archivos exportados son imágenes abstractas/placeholder sin contenido reconocible — no se puede evaluar estilo (UGC vs corporativo) a partir de estos archivos.",
+   "recommendation": "Repetir la revisión visual con los archivos de creativo reales desde Ads Manager.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M32",
+   "category": "Creative (Diversity & Fatiga)",
+   "name": "Advantage+ Creative",
+   "severity": "medium",
+   "result": "N/A",
+   "finding": "No se puede confirmar activación de mejoras Advantage+ Creative desde los nombres de ad set disponibles.",
+   "recommendation": "Confirmar en Ads Manager si Advantage+ Creative está activo y testeado vs control.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M-CR1",
+   "category": "Creative (Diversity & Fatiga)",
+   "name": "Frescura del creativo",
+   "severity": "high",
+   "result": "WARNING",
+   "finding": "Los nombres de los creativos ganadores (AceroADS-JulioV01, MasterADS-JulioV01) sugieren que la pieza base sigue en uso desde julio, superando la ventana de 14-21 días recomendada tras Andromeda. No se puede confirmar la fecha exacta de lanzamiento sin Ads Manager.",
+   "recommendation": "Verificar fecha real de creación del anuncio y lanzar una variante genuinamente nueva (no solo un recorte).",
+   "fix_time_minutes": 10,
+   "evidence": null
+  },
+  {
+   "id": "M-CR2",
+   "category": "Creative (Diversity & Fatiga)",
+   "name": "Frecuencia prospecting (7 días)",
+   "severity": "high",
+   "result": "N/A",
+   "finding": "El export solo tiene frecuencia acumulada de 30 días por ad set (o diaria a nivel de campaña, no de ad set), no una frecuencia de últimos 7 días por ad set.",
+   "recommendation": "Revisar frecuencia de 7 días por ad set en Ads Manager, en especial COMPORTAMIENTOS de MASTER FORM V2.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M-CR3",
+   "category": "Creative (Diversity & Fatiga)",
+   "name": "Frecuencia retargeting (7 días)",
+   "severity": "medium",
+   "result": "N/A",
+   "finding": "No se identifica ningún ad set de retargeting/remarketing explícito entre los 13 ad sets de la cuenta (todos parecen prospecting frío por interés o geografía) — no hay un ad set de retargeting sobre el cual medir esta frecuencia.",
+   "recommendation": "Confirmar si existe un funnel de retargeting separado; si no existe, es un hallazgo de estructura de audiencia (ver M23/M24).",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M-CR4",
+   "category": "Creative (Diversity & Fatiga)",
+   "name": "CTR vs benchmark",
+   "severity": "high",
+   "result": "PASS",
+   "finding": "CTR agregado de las 4 campañas de leads/ventas entre 1.88% y 2.39%, por encima del umbral PASS (≥1.0%). La campaña de tráfico IG tiene CTR aún mayor (10.28%) pero es un objetivo distinto (LINK_CLICKS).",
+   "recommendation": "Ninguna acción requerida.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M-AN1",
+   "category": "Creative (Diversity & Fatiga)",
+   "name": "Diversidad creativa Andromeda",
+   "severity": "critical",
+   "result": "WARNING",
+   "finding": "El manifest de creativos ganadores muestra solo 6 conceptos base distintos (con variantes a-j que parecen recortes por placement, no conceptos nuevos) sosteniendo 5 campañas activas durante 30 días — por debajo del umbral de 10 creativos genuinamente distintos recomendado para evitar supresión por Similarity Score.",
+   "recommendation": "Producir conceptos creativos nuevos (ángulos/mensajes distintos, no solo recortes) para reducir el riesgo de supresión de Andromeda.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M11",
+   "category": "Account Structure",
+   "name": "Cantidad de campañas",
+   "severity": "high",
+   "result": "WARNING",
+   "finding": "5 campañas activas para un gasto total de $1,098.54 en 30 días (~$36.6/día) — cae en la banda WARNING (4-5 campañas) y resulta sobre-fragmentado para un presupuesto de esta magnitud.",
+   "recommendation": "Evaluar consolidar campañas por objetivo (ej. unificar los dos funnels de ACERO).",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M12",
+   "category": "Account Structure",
+   "name": "CBO vs ABO",
+   "severity": "high",
+   "result": "N/A",
+   "finding": "El export no incluye el tipo de presupuesto (campaña vs ad set).",
+   "recommendation": "Confirmar en Ads Manager si se usa CBO o ABO por campaña.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M13",
+   "category": "Account Structure",
+   "name": "Estado de fase de aprendizaje",
+   "severity": "critical",
+   "result": "N/A",
+   "finding": "El estado 'Learning Limited' no se puede leer desde Insights. Señal de riesgo circunstancial (no confirmada): la mayoría de los 13 ad sets reciben muy pocas conversiones por semana (ej. GT·Acero FORM: 29 leads en 30 días ≈ 7/semana), muy por debajo del volumen que Meta recomienda para salir de aprendizaje establemente.",
+   "recommendation": "Verificar el badge de fase de aprendizaje por ad set en Ads Manager antes de decidir cualquier consolidación.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M14",
+   "category": "Account Structure",
+   "name": "Reinicios de fase de aprendizaje",
+   "severity": "high",
+   "result": "N/A",
+   "finding": "No hay historial de ediciones en el export.",
+   "recommendation": "Revisar historial de cambios en Ads Manager.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M15",
+   "category": "Account Structure",
+   "name": "Advantage+ Sales / catálogo",
+   "severity": "medium",
+   "result": "N/A",
+   "finding": "El negocio vende formación (leads), no e-commerce con catálogo de productos — este check probablemente no aplica al modelo actual.",
+   "recommendation": "No aplica salvo que se abra un catálogo de productos digitales.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M16",
+   "category": "Account Structure",
+   "name": "Consolidación / solapamiento de ad sets",
+   "severity": "high",
+   "result": "WARNING",
+   "finding": "'[JUL] ESPE.1 ACERO - WSP SMS' y '[AGOSTO] ESPE.1 ACERO - FORM' corren en simultáneo (22-jul a 20-ago) para el mismo producto (Especialización ACERO) y los mismos países (MX, EC, GT, PA + resto), solo con objetivo de conversión distinto (WhatsApp vs Formulario) — alto riesgo de solapamiento de audiencia y competencia interna en subasta.",
+   "recommendation": "Revisar overlap real en Ads Manager (Audience Overlap tool) entre ambas campañas.",
+   "fix_time_minutes": 15,
+   "evidence": null
+  },
+  {
+   "id": "M17",
+   "category": "Account Structure",
+   "name": "Distribución de presupuesto",
+   "severity": "high",
+   "result": "FAIL",
+   "finding": "Presupuesto real promedio por ad set ≈ $2.82/día (13 ad sets, $1,098.54 en 30 días). Los ad sets más chicos (Resto·Acero FORM $0.59/día, PA·Acero FORM $0.88/día, GT·Acero FORM $0.87/día) están muy por debajo de los $5/día mínimos; incluso el ad set más grande de la cuenta (MX·Acero WSP SMS, $7.19/día) solo alcanza la banda WARNING ($5-10/día).",
+   "recommendation": "Consolidar geografías de bajo volumen en un solo ad set o subir presupuesto mínimo a $10/día por ad set activo.",
+   "fix_time_minutes": 15,
+   "evidence": null
+  },
+  {
+   "id": "M18",
+   "category": "Account Structure",
+   "name": "Alineación de objetivo de campaña",
+   "severity": "high",
+   "result": "WARNING",
+   "finding": "El objetivo trimestral declarado es 'leads', pero la campaña '🟢[12MAYO] TRÁFICO AL PERFIL - IG' usa objetivo LINK_CLICKS (tráfico/engagement): CTR altísimo (10-14%) pero prácticamente cero leads reales (1 conversación de WhatsApp en 30 días para $82.37 de gasto, ~7.5% del presupuesto total).",
+   "recommendation": "Pausar o reducir el presupuesto de la campaña de tráfico y reasignarlo a campañas de leads.",
+   "fix_time_minutes": 10,
+   "evidence": null
+  },
+  {
+   "id": "M33",
+   "category": "Account Structure",
+   "name": "Advantage+ Placements",
+   "severity": "medium",
+   "result": "N/A",
+   "finding": "No hay desglose por placement en el export.",
+   "recommendation": "Confirmar en Ads Manager si los placements son automáticos o manuales.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M34",
+   "category": "Account Structure",
+   "name": "Revisión de rendimiento por placement",
+   "severity": "medium",
+   "result": "N/A",
+   "finding": "Pregunta de proceso interno, no observable desde datos.",
+   "recommendation": "Confirmar cadencia de revisión con el equipo de medios.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M35",
+   "category": "Account Structure",
+   "name": "Configuración de atribución",
+   "severity": "high",
+   "result": "N/A",
+   "finding": "No incluida en los campos del export.",
+   "recommendation": "Verificar ventana de atribución tras los cambios de enero 2026.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M36",
+   "category": "Account Structure",
+   "name": "Estrategia de puja",
+   "severity": "high",
+   "result": "N/A",
+   "finding": "No incluida en el export.",
+   "recommendation": "Confirmar estrategia de puja por campaña en Ads Manager.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M37",
+   "category": "Account Structure",
+   "name": "Frequency cap a nivel de campaña (7 días)",
+   "severity": "high",
+   "result": "WARNING",
+   "finding": "No hay frecuencia de últimos-7-días por campaña, solo acumulada de 30 días. MASTER FORM V2 acumula frecuencia 4.37 en 30 días (hasta 4.70 en el desglose EC) sobre una base de reach pequeña (17,545) — señal de que la frecuencia de 7 días probablemente ya supera el umbral de 4.0. Las otras 4 campañas están en 1.3-2.1 acumulado, sin señal de riesgo.",
+   "recommendation": "Revisar frecuencia de 7 días de MASTER FORM V2 en Ads Manager y aplicar cap si corresponde.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M38",
+   "category": "Account Structure",
+   "name": "Revisión de breakdowns",
+   "severity": "medium",
+   "result": "N/A",
+   "finding": "Pregunta de proceso interno, no observable desde datos.",
+   "recommendation": "Confirmar cadencia de revisión mensual de edad/género/placement/plataforma.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M39",
+   "category": "Account Structure",
+   "name": "Parámetros UTM",
+   "severity": "medium",
+   "result": "N/A",
+   "finding": "El export no incluye URLs de destino.",
+   "recommendation": "Confirmar plantilla de UTM a nivel de campaña.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M40",
+   "category": "Account Structure",
+   "name": "Testing A/B activo",
+   "severity": "medium",
+   "result": "N/A",
+   "finding": "No hay IDs de experimento en el export.",
+   "recommendation": "Confirmar si hay un Experiment activo en Ads Manager.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M-ST1",
+   "category": "Account Structure",
+   "name": "Adecuación de presupuesto (≥5x CPA)",
+   "severity": "high",
+   "result": "FAIL",
+   "finding": "Ad sets pequeños no alcanzan ni 1x su propio CPA en presupuesto diario real. Ej. PA·Acero FORM: ~$0.88/día de gasto vs CPL logrado de $1.47; Resto·Acero FORM: ~$0.59/día vs CPL de $0.65 — muy lejos del 5x recomendado.",
+   "recommendation": "Redistribuir presupuesto: menos geografías con más presupuesto cada una, en vez de muchas geografías subfinanciadas.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M-ST2",
+   "category": "Account Structure",
+   "name": "Utilización de presupuesto (>80%)",
+   "severity": "medium",
+   "result": "N/A",
+   "finding": "El export solo tiene gasto real, no el presupuesto configurado (cap diario), por lo que no se puede calcular % de utilización.",
+   "recommendation": "Comparar gasto real vs presupuesto configurado en Ads Manager.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M-IA1",
+   "category": "Account Structure",
+   "name": "Incremental Attribution",
+   "severity": "medium",
+   "result": "N/A",
+   "finding": "El gasto mensual de la cuenta (~$1,098) está muy por debajo del umbral de >$5,000/mes que el propio checklist sugiere como mínimo para justificar esta evaluación.",
+   "recommendation": "No aplica al volumen de gasto actual.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M19",
+   "category": "Audience & Targeting",
+   "name": "Solapamiento de audiencias",
+   "severity": "high",
+   "result": "WARNING",
+   "finding": "Mismo hallazgo que M16: dos campañas de ACERO corriendo en simultáneo sobre los mismos países y producto, con alto riesgo de solapamiento de audiencia.",
+   "recommendation": "Usar la herramienta de Audience Overlap de Meta entre ambas campañas.",
+   "fix_time_minutes": 15,
+   "evidence": null
+  },
+  {
+   "id": "M20",
+   "category": "Audience & Targeting",
+   "name": "Frescura de Custom Audiences",
+   "severity": "high",
+   "result": "N/A",
+   "finding": "No hay metadata de Custom Audiences en el export.",
+   "recommendation": "Revisar antigüedad de las Website Custom Audiences en Ads Manager.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M21",
+   "category": "Audience & Targeting",
+   "name": "Calidad de fuente de Lookalike",
+   "severity": "medium",
+   "result": "N/A",
+   "finding": "No hay metadata de Lookalike; ningún nombre de ad set de los 13 sugiere su uso (todos son por interés/comportamiento o país).",
+   "recommendation": "Confirmar si existen Lookalikes activos y su tamaño de fuente.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M22",
+   "category": "Audience & Targeting",
+   "name": "Test de Advantage+ Audience",
+   "severity": "medium",
+   "result": "WARNING",
+   "finding": "El nombre de ad set 'ADVTG+' aparece solo en la campaña de tráfico IG (bajo impacto en el KPI de leads); las 4 campañas de leads/ventas usan segmentación manual por intereses ('COMPORTAMIENTOS') o país, sin evidencia de test de Advantage+ Audience en las campañas que sí importan al negocio.",
+   "recommendation": "Testear Advantage+ Audience vs manual en al menos una campaña de ACERO.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M23",
+   "category": "Audience & Targeting",
+   "name": "Audiencias de exclusión",
+   "severity": "high",
+   "result": "N/A",
+   "finding": "No hay listas de exclusión visibles en el export; tampoco se identifica un ad set de retargeting separado (ver M-CR3) sobre el cual aplicar exclusiones.",
+   "recommendation": "Confirmar si los compradores/leads se excluyen del prospecting.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M24",
+   "category": "Audience & Targeting",
+   "name": "Uso de datos first-party",
+   "severity": "high",
+   "result": "N/A",
+   "finding": "No hay evidencia de Customer List o Lookalike basado en datos propios en el export.",
+   "recommendation": "Confirmar si se sube lista de clientes/leads para Custom Audience + Lookalike.",
+   "fix_time_minutes": null,
+   "evidence": null
+  },
+  {
+   "id": "M-TH1",
+   "category": "Audience & Targeting",
+   "name": "Evaluación de placement Threads",
+   "severity": "low",
+   "result": "N/A",
+   "finding": "No hay desglose de placement en el export.",
+   "recommendation": "Revisar placement breakdown en Ads Manager si el volumen de cuenta crece.",
+   "fix_time_minutes": null,
+   "evidence": null
+  }
+ ],
+ "quick_wins": [
+  {
+   "check_id": "M18",
+   "action": "Pausar o reducir el presupuesto de '🟢[12MAYO] TRÁFICO AL PERFIL - IG' (objetivo LINK_CLICKS, ~7.5% del gasto, casi sin leads) y reasignarlo a la campaña con mejor CPL (ACERO FORM, ~$0.48/lead).",
+   "impact_estimate": "Libera ~$82/mes hacia el objetivo real de leads del trimestre",
+   "effort_minutes": 10
+  },
+  {
+   "check_id": "GEO-ES",
+   "action": "Agregar España como país objetivo en al menos un ad set de MASTER FORM V2 o ACERO FORM. En los 39 registros de por-pais.json no aparece NINGUNA fila con country=ES/España — el mercado declarado del negocio ('LatAm y España') tiene 0% de cobertura real de pauta.",
+   "impact_estimate": "Abre un mercado declarado del negocio con cobertura actual del 0%",
+   "effort_minutes": 10
+  },
+  {
+   "check_id": "M16",
+   "action": "Agregar exclusión de audiencia cruzada entre '[JUL] ESPE.1 ACERO - WSP SMS' y '[AGOSTO] ESPE.1 ACERO - FORM' (mismos países, mismo producto, corren en simultáneo).",
+   "impact_estimate": "Reduce competencia interna por la misma subasta/audiencia",
+   "effort_minutes": 15
+  },
+  {
+   "check_id": "M28",
+   "action": "Ajustar frequency cap en el ad set COMPORTAMIENTOS de MASTER FORM V2 (frecuencia acumulada 4.37, CTR cayó ~48% en la ventana).",
+   "impact_estimate": "Frena la fatiga creativa mientras se produce un refresco real de la pieza",
+   "effort_minutes": 10
+  },
+  {
+   "check_id": "M25",
+   "action": "Subir al menos 1 video vertical 9:16 y 1 carrusel de prueba en el ad set de mejor CPL (ACERO FORM).",
+   "impact_estimate": "Diversifica formato; el export de ganadores actual es 100% imagen estática",
+   "effort_minutes": 15
+  }
+ ],
+ "critical_issues": [
+  {
+   "check_id": "M28",
+   "blocker_reason": "Fatiga creativa confirmada en MASTER - FORM V2: CTR cayó ~45-50% en 30 días con frecuencia acumulada de 4.37 (hasta 4.70 por país). Es la campaña de mayor ticket (Máster) y la segunda en gasto de la cuenta ($273.02, 25% del presupuesto).",
+   "estimated_revenue_at_risk": "No cuantificable con precisión: el export solo reporta valor de depósitos (~$336 promedio por 'purchase'), no el valor real del Máster (~$2,699.99). Con volumen decreciente de clics/engagement, el riesgo es sobre el volumen de conversaciones que alimentan el cierre por llamada, no solo sobre el gasto directo."
+  }
+ ],
+ "notes": [
+  "AUDITORÍA CON COBERTURA PARCIAL: de 50 checks del framework, solo 14 (28%) se evaluaron con datos reales (PASS/WARNING/FAIL); 36 (72%) quedaron N/A por falta de datos en el export de Insights (sin acceso a Events Manager / Business Manager / Ads Manager en vivo). La categoría Pixel/CAPI Health (30% del score) solo tuvo 1 de 11 checks evaluables (M07), por lo que su score de 100 NO debe leerse como 'pixel saludable' sino como 'no evaluable' — es un artefacto de la fórmula de scoring, no una medición real de EMQ, dedup rate o cobertura de CAPI. El health_score de 46.2 (grade D) por lo tanto NO es comparable con un audit hecho con acceso en vivo (MCP de Meta / Events Manager), y debe tratarse como una lectura parcial y direccional, no como un número definitivo de salud de cuenta. Para cerrar los huecos se necesita: (1) acceso a Events Manager para Pixel/CAPI/EMQ/dedup/AEM/CAPI Gateway/atribución/frescura de datos; (2) acceso a Ads Manager a nivel de anuncio individual para creativos activos por ad set, aspect ratio de video, hook rate, boosting de orgánico, Advantage+ Creative, fecha real de lanzamiento de cada pieza; (3) acceso a Business Manager para verificación de dominio, tipo de presupuesto (CBO/ABO), badge de Learning Limited, historial de ediciones, estrategia de puja, placements, UTM, experimentos activos, Custom Audiences/Lookalike, y presupuesto configurado vs gasto real. Hallazgo relevante fuera del checklist estándar: 0 de 39 filas de por-pais.json corresponden a España, pese a que el negocio declara vender a 'LatAm y España' — el mercado español tiene cobertura de pauta nula en la ventana auditada.",
+  "CORRECCION 24-ago-2026: el agente reporto 46.2 dando 100/100 a Pixel/CAPI sobre 1 de 11 checks. Recalculado sobre el 70% del peso realmente medido: 43.2. Pixel/CAPI queda sin medir, no aprobado.",
+  "CORRECCION 24-ago-2026: la caida de CTR de MASTER FORM V2 es -27% (2.49%->1.82% sobre volumenes comparables), no -45/50%. El agente comparo mejor dia inicial contra peor dia final."
+ ]
+}

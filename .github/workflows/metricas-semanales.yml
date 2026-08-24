@@ -126,6 +126,29 @@ jobs:
           GHL_TOKEN: ${{ secrets.GHL_TOKEN }}
         run: python3 scripts/ghl_datos.py
 
+      - name: Sondar los correos de las automatizaciones
+        continue-on-error: true
+        env:
+          GHL_TOKEN: ${{ secrets.GHL_TOKEN }}
+        run: python3 scripts/ghl_correos.py
+
+      - name: Analizar conversaciones del CRM (perfilado de leads)
+        continue-on-error: true
+        env:
+          GHL_TOKEN: ${{ secrets.GHL_TOKEN }}
+        run: python3 scripts/ghl_conversaciones.py --limite 300
+
+      # Sin este paso la auditoría técnica de la cuenta solo puede evaluar 14
+      # de 50 checks: los 36 que faltan son de Píxel/CAPI, que pesan el 30%
+      # del score, y no salen de la API de Insights sino del nodo AdsPixel.
+      # `aggregation=event_source` separa WEB_ONLY de SERVER_ONLY, que es la
+      # única forma fiable de saber por API si la Conversions API está viva.
+      - name: Traer el estado del píxel y de la CAPI
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN }}
+        continue-on-error: true      # si falla, no rompe la actualización principal
+        run: python3 scripts/meta_pixel.py --dias 30
+
       - name: Traer datos de la competencia
         env:
           META_TOKEN: ${{ secrets.META_TOKEN }}
@@ -136,7 +159,7 @@ jobs:
         id: commit
         run: |
           set -euo pipefail
-          RUTAS="matriz-viral/matriz/ matriz-viral/fuentes/ads-insights/ matriz-viral/fuentes/ingresos/ matriz-viral/fuentes/ghl-sonda.json matriz-viral/fuentes/ghl/"
+          RUTAS="matriz-viral/matriz/ matriz-viral/fuentes/ads-insights/ matriz-viral/fuentes/ingresos/ matriz-viral/fuentes/ghl-sonda.json matriz-viral/fuentes/ghl/ matriz-viral/fuentes/meta-pixel/"
           if git diff --quiet -- $RUTAS && ! git status --porcelain -- $RUTAS | grep -q .; then
             echo "Sin cambios."
             echo "cambios=false" >> "$GITHUB_OUTPUT"
@@ -145,7 +168,7 @@ jobs:
           echo "cambios=true" >> "$GITHUB_OUTPUT"
           git config user.name  "matriz-bot"
           git config user.email "noreply@anthropic.com"
-          git add matriz-viral/matriz/ matriz-viral/fuentes/ads-insights/ matriz-viral/fuentes/ingresos/ matriz-viral/fuentes/ghl-sonda.json matriz-viral/fuentes/ghl/
+          git add matriz-viral/matriz/ matriz-viral/fuentes/ads-insights/ matriz-viral/fuentes/ingresos/ matriz-viral/fuentes/ghl-sonda.json matriz-viral/fuentes/ghl/ matriz-viral/fuentes/meta-pixel/
           git commit -m "Métricas semanales automáticas (Meta Graph API)"
           # Puede haber commits nuevos desde que arrancó la corrida: se rebasa
           # antes de empujar. Sin esto el push se rechaza y se pierde el dato.
