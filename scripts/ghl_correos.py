@@ -186,16 +186,38 @@ def main():
     print(f"   {cuenta['con_cuerpo']} con cuerpo · {cuenta['fallos']} fallos "
           f"· {cuenta['sin_enlace']} sin enlace")
 
+    # Los workflows: hasta hoy solo se guardaba CUANTOS habia, y el estado
+    # encendido/apagado de cada uno vivia en correos.json, que era una sonda
+    # puntual del 20-ago que NINGUN script volvia a escribir. O sea que ese
+    # corte se quedaba congelado para siempre y el informe decia "78 en
+    # borrador" aunque el equipo los hubiera encendido — que es exactamente lo
+    # que Ester reporto el 24-ago, y tenia razon.
+    #
+    # Ahora se guarda la lista entera con su estado, y se recuenta en cada
+    # corrida. Cuesta la misma llamada que ya se hacia.
     ws = api("/workflows/", version="v3", locationId=LOCATION)
-    n_ws = len(ws.get("workflows", [])) if "_error" not in ws else None
+    lista_ws = ws.get("workflows", []) if "_error" not in ws else []
+    n_ws = len(lista_ws) if "_error" not in ws else None
+
+    flujos = [{"id": w.get("id"), "nombre": w.get("name"),
+               "estado": w.get("status"), "actualizado": w.get("updatedAt")}
+              for w in lista_ws]
+    por_estado = {}
+    for f in flujos:
+        por_estado[f["estado"]] = por_estado.get(f["estado"], 0) + 1
 
     json.dump({"generado": date.today().isoformat(),
                "carpetas": carpetas, "plantillas": propias,
                "cuenta": cuenta, "workflows_en_la_cuenta": n_ws,
+               "flujos": flujos, "flujos_por_estado": por_estado,
                "limite_conocido": ("La API no dice que workflow usa que plantilla: "
                                    "GET /workflows/ solo devuelve metadatos.")},
               open(f"{SALIDA}/correos-contenido.json", "w", encoding="utf-8"),
               ensure_ascii=False, indent=1)
+
+    if por_estado:
+        print("   flujos por estado: " +
+              " · ".join(f"{k} {v}" for k, v in sorted(por_estado.items())))
 
     escribir_md(propias, carpetas, cuenta)
     print(f"\n   {SALIDA}/INVENTARIO-CORREOS.md y correos-contenido.json")
