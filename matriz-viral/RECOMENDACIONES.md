@@ -156,3 +156,19 @@ cubría.
    proponer lo mismo dentro de tres meses.
 3. Si una recomendación lleva **3 semanas en 🔴**, el skill la señala en su
    resumen. O se hace, o se descarta con motivo.
+
+---
+
+## Lead Recontacto Máster BIM+IA: la alarma de julio ya no aplica (24-ago-2026)
+
+En julio este flujo se marcó **PAUSAR YA**: 8.163 contactos activos y el mayor
+consumidor de la API de WhatsApp, justo cuando volvió a cobrarse.
+
+Se reactivó el 21-ago-2026 y al detectarlo se volvió a levantar la alarma.
+**Dayana aclaró que ya no aplica: eliminó la API de WhatsApp de GoHighLevel**,
+así que los mensajes de ese flujo no salen por API y no generan cobro.
+
+Queda anotado para que la próxima auditoría no lo vuelva a marcar como fuga.
+Lo que sí sigue siendo cierto es lo otro: el flujo enrola mucha gente, así que
+si algún día se reconecta una API de mensajería, **este es el primero que hay
+que revisar antes de encenderla**.
