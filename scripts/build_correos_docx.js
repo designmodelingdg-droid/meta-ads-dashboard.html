@@ -24,6 +24,12 @@ const D=leer('matriz-viral/seguimiento/correos-nutricion.json');
 if(!D){console.error('Falta correos-nutricion.json');process.exit(1);}
 const INV=leer('matriz-viral/fuentes/ghl/correos-contenido.json');
 const GHL=leer('matriz-viral/fuentes/ghl/correos.json');
+/* correos.json fue una sonda puntual del 20-ago que NINGUN script vuelve a
+   escribir: su estado de flujos se quedo congelado y el documento repetia
+   "78 en borrador" aunque el equipo los hubiera encendido. Desde el 24-ago
+   ghl_correos.py guarda los flujos con su estado dentro de
+   correos-contenido.json, que si se regenera en cada corrida. Se usa ese, y
+   solo se cae al viejo si el nuevo todavia no existe. */
 
 const H1=t=>new Paragraph({heading:HeadingLevel.HEADING_1,spacing:{before:340,after:130},
   children:[new TextRun({text:t,color:NAVY,bold:true})]});
@@ -75,10 +81,12 @@ push(note("Cómo se usa: busca la secuencia, copia lo que está en los bloques g
 /* ── 1 · LO PRIMERO ── */
 push(H1("1 · Lo primero, antes de tocar nada"));
 
-const ws=(GHL&&GHL.workflows&&GHL.workflows.workflows)||[];
+const ws=(INV&&INV.flujos)||(GHL&&GHL.workflows&&GHL.workflows.workflows)||[];
+const fechaFlujos=(INV&&INV.flujos)?(INV.generado||'hoy'):((GHL&&GHL.generado)||'?');
 const borradores=ws.filter(w=>w.estado!=='published').length;
 push(H2("Estos flujos están APAGADOS"));
 push(P(`De los ${ws.length||149} flujos de la cuenta, ${borradores||78} están en borrador. Ahí dentro está todo lo de nutrición y recontacto — el símbolo ⛔ del nombre no es decoración, es el estado real.`));
+push(P(`Corte del ${fechaFlujos}. Este recuento se rehace en cada corrida, así que si el equipo enciende un flujo, la próxima versión de este documento ya lo refleja.`,{italics:true}));
 const apagados=ws.filter(w=>/nutrici|recontacto|remarketing|MQL|sin calificar|mal encaje|oportunidad/i.test(w.nombre||'')&&w.estado!=='published');
 if(apagados.length){
   push(tbl(["Estado","Flujo"],apagados.slice(0,14).map(w=>["⛔ borrador",String(w.nombre).slice(0,70)]),[1900,8600]));
