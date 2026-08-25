@@ -78,7 +78,63 @@ acceso-gratis-verificaciones-acero-gracias
 
 ---
 
-## Paso 3 · El bot de `ACERO`
+## Paso 3 · La membresía — así entregan los demás
+
+**Esto es lo que hacía falta para que funcione igual que los otros.**
+Comprobado el 25-ago contra la página viva de la Calculadora de Zapatas: no
+entrega el enlace directo, entrega un **producto de membresía** en el portal.
+El acceso queda ligado al contacto en el CRM y se concede por workflow.
+
+1. **Memberships → Courses → Products → Create Product.**
+   Nombre: `5 Verificaciones en Acero · Herramienta DMA`. Plantilla en blanco.
+
+2. **Dos lecciones**, una por entregable. En cada una, widget Custom Code:
+
+   ```html
+   <!-- Lección 1 · La guía -->
+   <iframe
+     src="https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/eficiencia-acero/guia.html?acceso=dm2026"
+     style="width:100%;min-height:2400px;border:none;border-radius:12px"
+     title="Las 5 verificaciones en acero"></iframe>
+   ```
+
+   ```html
+   <!-- Lección 2 · El verificador -->
+   <iframe
+     src="https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/eficiencia-acero/app.html?acceso=dm2026"
+     style="width:100%;min-height:1700px;border:none;border-radius:12px"
+     title="Verificador de eficiencia en acero"></iframe>
+   ```
+
+   > El `?acceso=dm2026` las abre ya desbloqueadas: el candado no molesta a
+   > los miembros, porque la membresía ya hace el control de acceso.
+
+   > **Iframe y no pegar el código**: la fuente vive en GitHub Pages. Cualquier
+   > corrección se publica una vez y se refleja sola en la membresía, en el
+   > funnel y en el enlace público.
+
+3. **Offer** → Memberships → Offers → New Offer → agrega el producto →
+   precio **Free** → guardar **y publicar**.
+
+4. En el workflow del formulario, añadir **Membership Grant Offer** → esa
+   oferta. GHL crea el usuario del portal y le manda sus credenciales.
+
+5. **Publicar el PRODUCTO**, no solo la lección y la oferta, y habilitar la
+   app de Cursos en el Client Portal. Son las dos causas típicas de «el
+   portal se ve vacío».
+
+6. Cuando exista, pegar su URL en `gracias-agenda.html`:
+
+   ```js
+   const URL_MEMBRESIA = '';   // ← aquí
+   ```
+
+   Mientras esté vacío, la página de gracias entrega el acceso directo con
+   token. Nadie se queda esperando a que el portal exista.
+
+---
+
+## Paso 4 · El bot de `ACERO`
 
 **Ya existe un bot de ACERO**, y hoy responde con el temario de la
 Especialización — un producto de pago — a gente que pidió una guía técnica.
@@ -106,14 +162,14 @@ Etiquetas: `lead-acero-verificaciones` + `origen-bot-acero`.
 
 ---
 
-## Paso 4 · Comunidades
+## Paso 5 · Comunidades
 
 Las comunidades son de GHL. Vincular la guía en la pestaña Learning de cada
 grupo y publicar el anuncio con el enlace de la landing.
 
 ---
 
-## Paso 5 · La verificación que no se salta
+## Paso 6 · La verificación que no se salta
 
 Después de montar, **no basta con que los botones se pongan verdes**. Hay que
 recorrerlo entero como lo haría un lead:
@@ -123,12 +179,14 @@ recorrerlo entero como lo haría un lead:
 3. Abrir el enlace → llenar el formulario → llegar a la página de gracias.
 4. Abrir el verificador y la guía desde los botones: deben entrar **sin
    candado**.
-5. Buscar el contacto en el CRM y confirmar que **el campo de perfil quedó
+5. Confirmar que **llegó la oferta de membresía** y que se puede entrar al
+   portal con esas credenciales.
+6. Buscar el contacto en el CRM y confirmar que **el campo de perfil quedó
    guardado**. Que el formulario tenga la pregunta no significa que el dato
    llegue al contacto — eso solo se sabe mirando la ficha.
-6. Pedir la página pública por HTTP y confirmar que carga.
+7. Pedir la página pública por HTTP y confirmar que carga.
 
-El punto 5 es el que más veces falla en silencio, y es justo el dato que
+El punto 6 es el que más veces falla en silencio, y es justo el dato que
 Dayana necesita para mover la pauta.
 
 ---
