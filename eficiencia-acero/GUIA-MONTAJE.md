@@ -253,3 +253,69 @@ Dayana necesita para mover la pauta.
   sin juicio. No existe rango normativo: AISC y la NEC no lo traen, es dato de
   obra. Se enciende el panel comparativo el día que haya rangos de proyectos
   reales de DMA.
+
+---
+
+## Corrección urgente · lo que encontré en las páginas ya publicadas
+
+Comprobado el 25-ago pidiendo las páginas **por HTTP**, no mirando el editor.
+
+### 1 · El formulario manda a la página de gracias equivocada — esto sí bloquea
+
+El formulario nativo que quedó embebido en la landing es
+`jgZBVSDHAgvfjsJHVFB8`, y su configuración trae:
+
+```
+actionType : "1"   (redirigir)
+redirectUrl: https://funnel.dgdesignmodeling.com/acceso-gratis-curso-introductorio-bim-gracias
+```
+
+Quien llene el formulario de ACERO aterriza en la página de gracias del
+**Curso Introductorio BIM**, y no recibe ni la guía ni el verificador. Es
+exactamente el fallo del post de conexiones otra vez: se promete una cosa y se
+entrega otra.
+
+**Cómo se arregla, sin romper nada:** ese formulario no lo usa ninguna de las
+otras landings comprobadas —curso introductorio usa `gwylBoztaUOxroxmsgCU`,
+zapatas usa `LuYAQDq…`, test de nivel usa `5zMnMYiK1`—, pero puede estar en uso
+en algo que no se ve desde fuera. Así que **duplicarlo** para ACERO y al
+duplicado ponerle el redirect a la página de gracias de acero. Duplicar nunca
+rompe nada; cambiarle el redirect al original sí puede.
+
+Después: llenarlo de verdad una vez y confirmar dónde cae.
+
+### 2 · Las tres páginas dicen «Calculadora de Zapatas» en el título
+
+```
+<title>Calculadora de Zapatas Aisladas Gratis | Design Modeling Academy
+```
+
+En la landing de ACERO, en su página de gracias y en la de zapatas. Se
+clonaron de zapatas y el título quedó. Eso es lo que se ve en la pestaña del
+navegador y **lo que aparece cuando alguien comparte el enlace por WhatsApp**.
+Se corrige en los ajustes de cada página del funnel (SEO / Page Title), no en
+el HTML pegado.
+
+### 3 · La página de gracias se llama «calculadora-zapatas»
+
+```
+acceso-gratis-calculadora-zapatas-gracias-page-5198
+```
+
+Sirve el contenido de acero, pero se llama zapatas. Rompe la convención del
+equipo y dentro de un mes nadie va a saber cuál es cuál.
+
+**Ojo con arreglarlo:** renombrar es justo lo que dejó dos lead magnets en 404
+el 25-ago. Se renombra a `acceso-gratis-verificaciones-acero-gracias`
+**ahora**, mientras todavía no hay nadie usándolo y ningún enlace apunta ahí —
+y se avisa. Dentro de una semana ya cuesta.
+
+### Lo que sí quedó bien
+
+- Las dos páginas responden 200.
+- El formulario nativo está puesto y **trae el campo de perfil**, con la clave
+  correcta `cul_es_tu_perfil_actualmente` y sus opciones.
+- La página de gracias trae el calendario `bIVuNHNojGEgH3gf6yXe` y los accesos
+  apuntando a `eficiencia-acero/`.
+- `URL_MEMBRESIA` sigue vacío, que es lo correcto hasta que exista el producto:
+  mientras tanto entrega el acceso directo con token y nadie espera.
