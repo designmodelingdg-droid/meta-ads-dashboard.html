@@ -25,36 +25,34 @@ contigo mirando.
 
 ---
 
-## El riesgo, dicho de frente
+## Cómo se abre el navegador
 
-Un agente conectado a tu Chrome de diario ve **todas** tus pestañas con sesión
-iniciada: el banco, el correo, el CRM, todo. No hay forma de darle solo GHL.
+**Decisión de Dayana, 25-ago-2026: se usa el Chrome de siempre**, con sus
+sesiones y sus pestañas. Se le planteó la alternativa de un Chrome aislado con
+`--user-data-dir` y prefirió la comodidad. Queda anotado para que nadie lo
+"corrija" después sin preguntar.
 
-El archivo `GHL_STORAGE_STATE` que usa el otro camino abre GHL y nada más. Esa
-diferencia es real y va en la dirección contraria a la que uno esperaría: la
-herramienta más cómoda es la que más alcance concede.
+```bash
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222
+```
 
-**Por eso: un Chrome aparte.** No el «Agregar perfil» del menú — una carpeta
-de datos propia, que es una frontera más dura:
+**Hay que cerrar Chrome del todo antes** (`Cmd + Q`, no basta cerrar la
+ventana). Chrome *ignora* `--remote-debugging-port` si ya hay una instancia
+corriendo con ese perfil, y ese es el fallo número uno: parece que la
+herramienta no sirve cuando lo que pasa es que el puerto nunca se abrió.
+
+Lo que eso implica, sin rodeos y sin repetirlo más: mientras ese Chrome esté
+abierto así, el agente alcanza **todas** las pestañas con sesión iniciada, no
+solo GHL. Se cierra la puerta con `Cmd + Q` y volviendo a abrir Chrome desde el
+ícono.
+
+Si algún día se quiere el camino aislado, es este:
 
 ```bash
 /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome \
   --remote-debugging-port=9222 \
   --user-data-dir="$HOME/chrome-ghl-agente"
 ```
-
-La primera vez se inicia sesión **solo en GoHighLevel**. Ese Chrome queda en
-`~/chrome-ghl-agente` y se vuelve a abrir con el mismo comando.
-
-`--user-data-dir` hace dos cosas a la vez, y por eso va aquí y no como consejo
-suelto:
-
-1. **Aísla de verdad.** No comparte cookies, sesiones ni historial con el
-   Chrome de siempre. Es la diferencia entre darle una llave y darle el
-   llavero.
-2. **Hace que el puerto funcione.** Chrome *ignora* `--remote-debugging-port`
-   si ya hay una instancia corriendo con ese mismo perfil. Es la causa más
-   común de «no encuentra el navegador», y con una carpeta propia no ocurre.
 
 ---
 
