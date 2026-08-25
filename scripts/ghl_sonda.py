@@ -148,6 +148,17 @@ def sondar_detalle_workflow():
     wid = flujos[0].get("id")
     muestra = {"id": wid, "claves_en_la_lista": sorted(flujos[0].keys())}
 
+    # La lista es lo unico que la API si da, y trae un dato que no se ve de
+    # otra forma: si un workflow quedo en borrador. Un workflow en draft no
+    # dispara nada y en la pantalla se ve igual de terminado que uno
+    # publicado, asi que se guarda entero para poder revisarlo desde fuera.
+    muestra["total"] = len(flujos)
+    muestra["lista"] = sorted(
+        ({"nombre": f.get("name"), "estado": f.get("status"),
+          "actualizado": (f.get("updatedAt") or "")[:10], "id": f.get("id")}
+         for f in flujos),
+        key=lambda x: x["actualizado"] or "", reverse=True)
+
     rutas = [
         ("detalle v2",            V2, f"/workflows/{wid}"),
         ("detalle v2 · location", V2, f"/workflows/{wid}?locationId={LOCATION}"),
