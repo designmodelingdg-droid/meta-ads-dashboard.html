@@ -1,6 +1,6 @@
 # Inventario de correos — GoHighLevel
 
-Generado el 2026-08-24.
+Generado el 2026-08-25.
 
 **380 plantillas** en **40 carpetas**. 380 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
 
