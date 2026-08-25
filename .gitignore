@@ -5,5 +5,9 @@ node_modules/
 matriz-viral/fuentes/navegador/*.png
 matriz-viral/fuentes/navegador/*.html
 
-# la sesion exportada de GHL: es una sesion ABIERTA del CRM, nunca al repo
-sesion.json
+# La sesion exportada de GHL: es una sesion ABIERTA del CRM, nunca al repo.
+# Va anclada con / a la raiz A PROPOSITO. Sin la barra, el patron casa a
+# CUALQUIER profundidad, y el 25-ago se trago en silencio el sesion.json que
+# escribe la tarea «sesion» en matriz-viral/fuentes/navegador/: la corrida
+# decia «Nada nuevo que guardar» y nadie entendia por que.
+/sesion.json
