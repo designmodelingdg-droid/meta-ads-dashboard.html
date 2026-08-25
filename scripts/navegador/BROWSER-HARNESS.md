@@ -34,13 +34,27 @@ El archivo `GHL_STORAGE_STATE` que usa el otro camino abre GHL y nada más. Esa
 diferencia es real y va en la dirección contraria a la que uno esperaría: la
 herramienta más cómoda es la que más alcance concede.
 
-**Por eso: un perfil de Chrome aparte.** Antes de conectar nada:
+**Por eso: un Chrome aparte.** No el «Agregar perfil» del menú — una carpeta
+de datos propia, que es una frontera más dura:
 
-1. Chrome → menú de perfil → **Agregar** → llámalo `GHL-agente`.
-2. En ese perfil inicia sesión **solo** en GoHighLevel. Nada más.
-3. Conecta el agente a ese perfil, no al de siempre.
+```bash
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome \
+  --remote-debugging-port=9222 \
+  --user-data-dir="$HOME/chrome-ghl-agente"
+```
 
-Cuesta dos minutos y es la diferencia entre darle una llave y darle el llavero.
+La primera vez se inicia sesión **solo en GoHighLevel**. Ese Chrome queda en
+`~/chrome-ghl-agente` y se vuelve a abrir con el mismo comando.
+
+`--user-data-dir` hace dos cosas a la vez, y por eso va aquí y no como consejo
+suelto:
+
+1. **Aísla de verdad.** No comparte cookies, sesiones ni historial con el
+   Chrome de siempre. Es la diferencia entre darle una llave y darle el
+   llavero.
+2. **Hace que el puerto funcione.** Chrome *ignora* `--remote-debugging-port`
+   si ya hay una instancia corriendo con ese mismo perfil. Es la causa más
+   común de «no encuentra el navegador», y con una carpeta propia no ocurre.
 
 ---
 
