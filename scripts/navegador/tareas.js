@@ -104,54 +104,89 @@ async function sesion(pagina) {
 }
 
 /* ── LECTURA · el mapa que la API no da ─────────────────────────── */
+/* La lista de workflows NO se rasca de la pantalla: se lee de
+ * fuentes/ghl/correos-contenido.json, que la escribe ghl_correos.py con
+ * GET /workflows/ y trae los 148 con su id, nombre y estado.
+ *
+ * Por que asi. El 25-ago esta tarea rascaba la lista con un selector y
+ * devolvio UNA entrada: «Global Workflow Settings», que es un elemento de
+ * menu. No fallo —encontro algo— asi que salio en verde con un resultado
+ * inservible. Rascar una lista que ya tenemos por API era fragil sin ganar
+ * nada.
+ *
+ * Lo que la API no da son los PASOS del workflow: que plantilla de correo usa
+ * cada uno. Para eso si hace falta abrir cada flujo, y ahora se abre por su
+ * id —ruta directa y estable— en vez de por un enlace que haya que encontrar.
+ */
+const FUENTE_FLUJOS = path.join(RAIZ, 'matriz-viral/fuentes/ghl/correos-contenido.json');
+
 async function mapaFlujos(pagina, op) {
-  console.log('\nLeyendo los workflows y sus pasos de correo…');
-  await pagina.goto(`${BASE}/automation/workflows`, { waitUntil: 'domcontentloaded' });
-  await pagina.waitForTimeout(6000);
-
-  const filas = await pagina.$$eval(
-    '[class*="workflow"] a, table a[href*="/workflow"], a[href*="/automation/workflows/"]',
-    els => [...new Set(els.map(e => JSON.stringify({
-      nombre: (e.innerText || '').trim().slice(0, 90),
-      href: e.getAttribute('href') || '',
-    })))].map(JSON.parse).filter(x => x.nombre && x.href.includes('workflow')));
-
-  if (!filas.length) {
-    await evidencia(pagina, 'lista-flujos-vacia');
-    throw new Error('No se reconocio la lista de workflows. La interfaz de GHL ' +
-                    'cambio: hay que ajustar el selector. Mira la evidencia.');
+  if (!fs.existsSync(FUENTE_FLUJOS)) {
+    throw new Error('Falta ' + path.relative(RAIZ, FUENTE_FLUJOS) + '. Lo escribe ' +
+                    'scripts/ghl_correos.py en la corrida de metricas semanales: ' +
+                    'sin esa lista no se sabe a que workflows entrar.');
   }
-  console.log(`   ${filas.length} workflows en la lista`);
+  const fuente = JSON.parse(fs.readFileSync(FUENTE_FLUJOS, 'utf8'));
+  const todos = (fuente.flujos || []).filter(f => f.id);
+  if (!todos.length) throw new Error('La lista de flujos vino vacia o sin ids.');
 
+  console.log(`\nLista de la API: ${todos.length} workflows (${fuente.generado})`);
   const limite = Number(op.limite || 25);
-  const objetivo = tope(filas, limite, 'workflows');
+  const objetivo = tope(todos, limite, 'workflows');
   const mapa = [];
+  let leidos = 0;
 
   for (const [i, f] of objetivo.entries()) {
-    process.stdout.write(`   [${i + 1}/${objetivo.length}] ${f.nombre.slice(0, 46)}… `);
+    process.stdout.write(`   [${i + 1}/${objetivo.length}] ${(f.nombre || f.id).slice(0, 44)}… `);
     try {
-      await pagina.goto(new URL(f.href, 'https://app.gohighlevel.com').href,
-                        { waitUntil: 'domcontentloaded' });
-      await pagina.waitForTimeout(4500);
-      // Los pasos de "Enviar correo" llevan el nombre de la plantilla dentro.
-      const correos = await pagina.$$eval('body', b => {
-        const t = b.innerText || '';
-        const out = [];
-        const re = /(Send Email|Enviar correo|Email)[\s\S]{0,120}/gi;
-        let m; while ((m = re.exec(t))) out.push(m[0].replace(/\s+/g, ' ').trim().slice(0, 120));
-        return [...new Set(out)].slice(0, 12);
-      });
+      await pagina.goto(`${BASE}/automation/workflows/${f.id}`, { waitUntil: 'domcontentloaded' });
+      // El lienzo del workflow tarda: se espera a que aparezca algo suyo en vez
+      // de confiar en un timeout fijo, que fue justo lo que fallo antes.
+      await pagina.waitForTimeout(3000);
+      await pagina.waitForFunction(
+        () => (document.body.innerText || '').length > 400, { timeout: 20000 }
+      ).catch(() => {});
+
+      const texto = await pagina.innerText('body').catch(() => '');
+      // Un lienzo que no cargo devuelve el cascaron: se detecta y se marca.
+      if (texto.length < 400) {
+        mapa.push({ ...f, leido: false, error: 'la pagina no termino de cargar' });
+        console.log('SIN CARGAR');
+        continue;
+      }
+      const correos = [...new Set(
+        (texto.match(/(Send Email|Enviar correo|Email)[\s\S]{0,120}/gi) || [])
+          .map(s => s.replace(/\s+/g, ' ').trim().slice(0, 120))
+      )].slice(0, 12);
+
       mapa.push({ ...f, pasos_correo: correos, leido: true });
+      leidos++;
       console.log(`${correos.length} pasos de correo`);
     } catch (e) {
       mapa.push({ ...f, leido: false, error: String(e.message).slice(0, 120) });
       console.log('FALLO');
     }
   }
+
+  // Si no se leyo ni la mitad, algo esta roto: se dice, no se entrega un
+  // mapa a medias como si fuera el mapa.
+  const salud = objetivo.length ? leidos / objetivo.length : 0;
+  console.log(`\n   leidos de verdad: ${leidos}/${objetivo.length}`);
+
   guardar('mapa-flujos.json', {
     generado: new Date().toISOString().slice(0, 10),
-    total_en_lista: filas.length, leidos: mapa.length, flujos: mapa,
+    fuente_lista: path.relative(RAIZ, FUENTE_FLUJOS),
+    total_en_la_cuenta: todos.length,
+    intentados: objetivo.length,
+    leidos,
+    flujos: mapa,
   });
+
+  if (salud < 0.5) {
+    await evidencia(pagina, 'mapa-flujos-mayoria-fallida');
+    throw new Error(`Solo se leyeron ${leidos} de ${objetivo.length}. El mapa se ` +
+                    'guardo igual, pero no sirve como mapa: mira la evidencia.');
+  }
 }
 
 /* ── LECTURA · inventario de Sites ──────────────────────────────── */
