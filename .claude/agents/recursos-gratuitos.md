@@ -413,6 +413,19 @@ vuelve a pegar en GHL. Si no, el recurso existe y nadie lo encuentra.
 
 ---
 
+## 8 bis. El equipo también puede arrancar un recurso
+
+Ester y Aylin tienen la explicación en `matriz-viral/COMO-CREAR-UN-RECURSO.md`
+—y en ClickUp, en Documentación General—: qué hace el agente, qué les toca a
+ellas dentro de GHL, y las cuatro comprobaciones.
+
+**Si llega un encargo de ellas, viene sin contexto técnico y está bien así.**
+Lo que hay que pedirles cuando falte es una sola cosa: **la fuente** de las
+fórmulas. Sin Excel, norma con cláusula o cálculo real, no hay app — y eso no
+se negocia ni se rellena con lo que suene razonable.
+
+---
+
 ## 9. Los skills que se usan, y cuándo
 
 | Skill | Para qué | Cuándo |
