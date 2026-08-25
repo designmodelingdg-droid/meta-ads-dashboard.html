@@ -123,17 +123,25 @@ const FUENTE_FLUJOS = path.join(RAIZ, 'matriz-viral/fuentes/ghl/correos-contenid
 /** Junta el texto de todos los marcos y espera a que haya suficiente.
  *  GHL mete sus editores en iframes: leer solo el documento de arriba
  *  devuelve una cadena vacia y parece que la pagina no cargo. */
-async function esperarTextoEnAlgunMarco(pagina, minimo, msMax) {
+async function esperarTextoEnAlgunMarco(pagina, minimo, msMax, traza) {
   const hasta = Date.now() + msMax;
+  const t0 = Date.now();
   let mejor = '';
   while (Date.now() < hasta) {
     const trozos = await Promise.all(
       pagina.frames().map(m => m.innerText('body').catch(() => ''))
     );
     const junto = trozos.join('\n');
-    if (junto.length > mejor.length) mejor = junto;
+    if (junto.length > mejor.length) {
+      mejor = junto;
+      // La progresion es el dato que distingue LENTO de ATASCADO. Si el texto
+      // crece, solo hay que esperar mas; si se queda clavado en
+      // «Initializing…», esperar no lo va a arreglar nunca.
+      if (traza) console.log(`\n        +${Math.round((Date.now()-t0)/1000)}s · ${junto.length} car · ` +
+                             junto.replace(/\s+/g,' ').trim().slice(0,64));
+    }
     if (mejor.length >= minimo) return mejor;
-    await pagina.waitForTimeout(1500);
+    await pagina.waitForTimeout(2000);
   }
   return mejor;
 }
@@ -165,7 +173,11 @@ async function mapaFlujos(pagina, op) {
       // workflows de GHL vive dentro de un iframe, igual que el editor de
       // Custom Code. Asi que se lee de TODOS los marcos y se espera a que
       // alguno tenga contenido, no solo el de arriba.
-      const texto = await esperarTextoEnAlgunMarco(pagina, 400, 25000);
+      // 90 s y con traza cuando se pide un solo flujo: esa corrida es el test
+      // que decide si el constructor es lento o no arranca nunca.
+      const soloUno = objetivo.length === 1;
+      const texto = await esperarTextoEnAlgunMarco(
+        pagina, 400, soloUno ? 90000 : 25000, soloUno);
       // Un lienzo que no cargo devuelve el cascaron: se detecta y se marca.
       // Se anota la URL DONDE SE ACABO y cuanto texto habia: si GHL redirige
       // una ruta que no reconoce, la URL final lo delata y se arregla sin
