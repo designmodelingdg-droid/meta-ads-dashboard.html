@@ -1,4 +1,17 @@
-# Los ocho formularios mandan al webinar de febrero de 2025
+# Los ocho formularios mandaban al webinar de febrero de 2025
+
+> **CERRADO el 25-ago-2026**, el mismo día. Comprobado de forma independiente
+> con `scripts/formularios_destino.py`, que lee la página viva y no el estado
+> del editor: **los ocho mandan a su propia página de gracias**, las ocho
+> responden 200, y no queda ni una regla condicional.
+>
+> Se comprobó además que el arreglo **no se llevó nada por delante** — se hizo
+> parcheando el cuerpo del guardado, que es un método que puede perder campos.
+> Los ocho conservan nombre, correo, teléfono y **el campo de perfil con sus
+> cuatro opciones**.
+>
+> Lo que queda es la única comprobación que no se puede hacer desde fuera:
+> llenar un formulario de verdad y ver dónde cae.
 
 **Encontrado el 25-ago-2026.** Lo encontró Dayana llenando el formulario, no
 una revisión de configuración — y esa es la parte que hay que aprender.
