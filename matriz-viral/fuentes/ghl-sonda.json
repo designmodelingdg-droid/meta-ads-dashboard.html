@@ -88,7 +88,7 @@
     "formularios": {
       "ok": true,
       "http": 200,
-      "registros": 44,
+      "registros": 45,
       "claves": [
         "forms",
         "total",
@@ -121,7 +121,7 @@
     "workflows": {
       "ok": true,
       "http": 200,
-      "registros": "148+",
+      "registros": "151+",
       "claves": [
         "traceId",
         "workflows"
@@ -131,7 +131,7 @@
     "etiquetas": {
       "ok": true,
       "http": 200,
-      "registros": "489+",
+      "registros": "491+",
       "claves": [
         "tags",
         "traceId"
@@ -151,7 +151,7 @@
     "conversaciones": {
       "ok": true,
       "http": 200,
-      "registros": 24932,
+      "registros": 24938,
       "claves": [
         "conversations",
         "total",
@@ -208,6 +208,79 @@
       "bloqueo_cloudflare": false,
       "ruta": "/pipelines/"
     }
+  },
+  "detalle_workflow": {
+    "muestra": {
+      "id": "dd789720-9b02-4015-a372-f9e604fe234d",
+      "claves_en_la_lista": [
+        "createdAt",
+        "id",
+        "locationId",
+        "name",
+        "status",
+        "updatedAt",
+        "version"
+      ]
+    },
+    "rutas": {
+      "detalle v2": {
+        "ok": false,
+        "http": 404,
+        "detalle": "{\"message\":\"Cannot GET /workflows/dd789720-9b02-4015-a372-f9e604fe234d\",\"error\":\"Not Found\",\"statusCode\":404}",
+        "lectura": "la ruta no existe en la API (no es cuestión de permisos)",
+        "bloqueo_cloudflare": false,
+        "ruta": "/workflows/dd789720-9b02-4015-a372-f9e604fe234d"
+      },
+      "detalle v2 · location": {
+        "ok": false,
+        "http": 404,
+        "detalle": "{\"message\":\"Cannot GET /workflows/dd789720-9b02-4015-a372-f9e604fe234d?locationId=nkKbOarn5IwHeMv48uY9\",\"error\":\"Not Found\",\"statusCode\":404}",
+        "lectura": "la ruta no existe en la API (no es cuestión de permisos)",
+        "bloqueo_cloudflare": false,
+        "ruta": "/workflows/dd789720-9b02-4015-a372-f9e604fe234d?locationId=nkKbOarn5IwHeMv48uY9"
+      },
+      "acciones v2": {
+        "ok": false,
+        "http": 404,
+        "detalle": "{\"message\":\"Cannot GET /workflows/dd789720-9b02-4015-a372-f9e604fe234d/actions?locationId=nkKbOarn5IwHeMv48uY9\",\"error\":\"Not Found\",\"statusCode\":404}",
+        "lectura": "la ruta no existe en la API (no es cuestión de permisos)",
+        "bloqueo_cloudflare": false,
+        "ruta": "/workflows/dd789720-9b02-4015-a372-f9e604fe234d/actions?locationId=nkKbOarn5IwHeMv48uY9"
+      },
+      "pasos v2": {
+        "ok": false,
+        "http": 404,
+        "detalle": "{\"message\":\"Cannot GET /workflows/dd789720-9b02-4015-a372-f9e604fe234d/steps?locationId=nkKbOarn5IwHeMv48uY9\",\"error\":\"Not Found\",\"statusCode\":404}",
+        "lectura": "la ruta no existe en la API (no es cuestión de permisos)",
+        "bloqueo_cloudflare": false,
+        "ruta": "/workflows/dd789720-9b02-4015-a372-f9e604fe234d/steps?locationId=nkKbOarn5IwHeMv48uY9"
+      },
+      "version v2": {
+        "ok": false,
+        "http": 404,
+        "detalle": "{\"message\":\"Cannot GET /workflows/dd789720-9b02-4015-a372-f9e604fe234d/versions?locationId=nkKbOarn5IwHeMv48uY9\",\"error\":\"Not Found\",\"statusCode\":404}",
+        "lectura": "la ruta no existe en la API (no es cuestión de permisos)",
+        "bloqueo_cloudflare": false,
+        "ruta": "/workflows/dd789720-9b02-4015-a372-f9e604fe234d/versions?locationId=nkKbOarn5IwHeMv48uY9"
+      },
+      "lista v1": {
+        "ok": false,
+        "http": 401,
+        "detalle": "{\"msg\":\"Api key is invalid.\"}",
+        "lectura": "el token no autentica aquí",
+        "bloqueo_cloudflare": false,
+        "ruta": "/workflows/"
+      },
+      "detalle v1": {
+        "ok": false,
+        "http": 404,
+        "detalle": "{\"msg\":\"Not found\"}",
+        "lectura": "la ruta no existe en la API (no es cuestión de permisos)",
+        "bloqueo_cloudflare": false,
+        "ruta": "/workflows/dd789720-9b02-4015-a372-f9e604fe234d"
+      }
+    },
+    "veredicto": "Ninguna ruta de detalle responde: la API solo da la lista. Los pasos solo se leen con navegador."
   },
   "abiertos": [
     "contactos",
