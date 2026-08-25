@@ -120,6 +120,24 @@ async function sesion(pagina) {
  */
 const FUENTE_FLUJOS = path.join(RAIZ, 'matriz-viral/fuentes/ghl/correos-contenido.json');
 
+/** Junta el texto de todos los marcos y espera a que haya suficiente.
+ *  GHL mete sus editores en iframes: leer solo el documento de arriba
+ *  devuelve una cadena vacia y parece que la pagina no cargo. */
+async function esperarTextoEnAlgunMarco(pagina, minimo, msMax) {
+  const hasta = Date.now() + msMax;
+  let mejor = '';
+  while (Date.now() < hasta) {
+    const trozos = await Promise.all(
+      pagina.frames().map(m => m.innerText('body').catch(() => ''))
+    );
+    const junto = trozos.join('\n');
+    if (junto.length > mejor.length) mejor = junto;
+    if (mejor.length >= minimo) return mejor;
+    await pagina.waitForTimeout(1500);
+  }
+  return mejor;
+}
+
 async function mapaFlujos(pagina, op) {
   if (!fs.existsSync(FUENTE_FLUJOS)) {
     throw new Error('Falta ' + path.relative(RAIZ, FUENTE_FLUJOS) + '. Lo escribe ' +
@@ -140,14 +158,14 @@ async function mapaFlujos(pagina, op) {
     process.stdout.write(`   [${i + 1}/${objetivo.length}] ${(f.nombre || f.id).slice(0, 44)}… `);
     try {
       await pagina.goto(`${BASE}/automation/workflows/${f.id}`, { waitUntil: 'domcontentloaded' });
-      // El lienzo del workflow tarda: se espera a que aparezca algo suyo en vez
-      // de confiar en un timeout fijo, que fue justo lo que fallo antes.
-      await pagina.waitForTimeout(3000);
-      await pagina.waitForFunction(
-        () => (document.body.innerText || '').length > 400, { timeout: 20000 }
-      ).catch(() => {});
 
-      const texto = await pagina.innerText('body').catch(() => '');
+      // El texto NO esta en el documento principal. La corrida de diagnostico
+      // del 25-ago lo dejo claro: la URL no redirige, no hay login, no hay
+      // error — el body de arriba mide CERO caracteres. El constructor de
+      // workflows de GHL vive dentro de un iframe, igual que el editor de
+      // Custom Code. Asi que se lee de TODOS los marcos y se espera a que
+      // alguno tenga contenido, no solo el de arriba.
+      const texto = await esperarTextoEnAlgunMarco(pagina, 400, 25000);
       // Un lienzo que no cargo devuelve el cascaron: se detecta y se marca.
       // Se anota la URL DONDE SE ACABO y cuanto texto habia: si GHL redirige
       // una ruta que no reconoce, la URL final lo delata y se arregla sin
@@ -160,8 +178,9 @@ async function mapaFlujos(pagina, op) {
           url_final: pagina.url(),
           largo_texto: texto.length,
           asomo: texto.replace(/\s+/g, ' ').trim().slice(0, 160),
+          marcos: pagina.frames().length,
         });
-        console.log(`SIN CARGAR (${texto.length} car · ${pagina.url().slice(-46)})`);
+        console.log(`SIN CARGAR (${texto.length} car · ${pagina.frames().length} marcos)`);
         continue;
       }
       const correos = [...new Set(
