@@ -134,31 +134,52 @@ El acceso queda ligado al contacto en el CRM y se concede por workflow.
 
 ---
 
-## Paso 4 · El bot de `ACERO`
+## Paso 4 · El workflow de la palabra — no es el bot
 
-**Ya existe un bot de ACERO**, y hoy responde con el temario de la
-Especialización — un producto de pago — a gente que pidió una guía técnica.
-Eso es lo que hay que cambiar: que mande **esta guía**.
+**Dos cosas distintas, y conviene no mezclarlas:**
 
-Patrón completo en `calculadora-zapatas/BOT-ZAPATA-GHL.md`. Lo que no se puede
-omitir:
+| | Qué hace | Quién lo monta |
+|---|---|---|
+| **El workflow** | Alguien comenta la palabra en **esa publicación** → le llega por DM el texto y los recursos, automático | Aquí, en este montaje |
+| **El bot** | Cuando esa persona **responde** al DM, el bot toma la conversación | Patricio. A él se le dice qué contestar cuando pregunten por estas guías |
+
+Lo que se monta en este paso es **el workflow**. El bot no se toca.
+
+### El workflow
+
+**Disparador:** comentario con la palabra `ACERO`, **acotado a la publicación
+concreta** — la pieza `ago-blog-acero-verificaciones` (Sáb 23). No a cualquier
+post: si se deja abierto, se dispara con comentarios de piezas viejas que
+prometían otra cosa.
+
+**Qué manda por DM:** el texto de entrega más los dos enlaces —la guía y el
+verificador—, o el acceso al portal si la membresía ya está montada.
+
+### Lo que no se puede omitir, y cuesta caro
 
 **Una acción de envío por cada disparador, separadas.** Rama Instagram → DM
 por Instagram. Rama Facebook → DM por Facebook Messenger. **Nunca una sola
-acción compartida.** Cuando el post es de origen Instagram y aparece también
-en Facebook, quien comenta en la copia de Facebook tiene un ID de Facebook: si
-el DM está atado solo al canal de Instagram, el workflow marca el paso como
-ejecutado y el mensaje nunca sale. En julio se perdieron unos 35 leads así, y
-nadie lo vio porque la respuesta pública sí salía.
+acción compartida entre las dos.**
+
+Cuando el post nace en Instagram y aparece también en Facebook, quien comenta
+en la copia de Facebook tiene un ID de Facebook. Si el envío está atado solo al
+canal de Instagram, **el workflow marca el paso como ejecutado y el DM nunca
+sale**. En julio se perdieron unos 35 leads así, y nadie lo vio porque la
+respuesta pública sí salía siempre.
 
 **La respuesta pública lleva siempre el enlace directo**, nunca solo «te
 escribí al DM». Es la red de seguridad real si el canal falla.
 
-**Probar con un comentario real en las dos superficies** antes de publicar el
-post: en Instagram y en la copia de Facebook. Es la única forma de detectar
+**Probar comentando de verdad en las dos superficies** antes de publicar el
+post — en Instagram y en la copia de Facebook. Es la única forma de detectar
 esa falla antes de que la paguen los leads.
 
-Etiquetas: `lead-acero-verificaciones` + `origen-bot-acero`.
+Etiquetas del contacto: `lead-acero-verificaciones` + `origen-bot-acero`.
+
+### Y aparte, lo de Patricio
+
+A él se le pasa el texto de qué responder cuando alguien pregunte por estas
+guías — eso vive en el bot, no en el workflow, y no bloquea este montaje.
 
 ---
 
@@ -174,8 +195,9 @@ grupo y publicar el anuncio con el enlace de la landing.
 Después de montar, **no basta con que los botones se pongan verdes**. Hay que
 recorrerlo entero como lo haría un lead:
 
-1. Comentar `ACERO` en un post real, **en Instagram y en Facebook**.
-2. Que llegue el DM en las dos, con el enlace.
+1. Comentar `ACERO` en **la publicación del Sáb 23**, en Instagram **y** en la
+   copia de Facebook.
+2. Que llegue el DM en las dos, con los enlaces dentro.
 3. Abrir el enlace → llenar el formulario → llegar a la página de gracias.
 4. Abrir el verificador y la guía desde los botones: deben entrar **sin
    candado**.
