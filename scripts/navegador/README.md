@@ -120,6 +120,12 @@ Y un tope: ninguna corrida toca más de 25 objetos. Volver a lanzarla continúa.
 
 ## Las tareas
 
+> **Hay un segundo camino al navegador:** `browser-harness`, que se conecta al
+> Chrome que ya tienes abierto y no necesita ningún secreto. No sustituye a
+> esto — sirve para lo difícil y puntual, contigo delante, mientras que esto
+> corre sin nadie. Está explicado en [BROWSER-HARNESS.md](BROWSER-HARNESS.md),
+> con el aviso de alcance que hay que leer **antes** de conectarlo.
+
 ```bash
 # LECTURA — comprobar que el secreto sigue sirviendo (empieza por aqui)
 node scripts/navegador/tareas.js sesion
@@ -135,7 +141,19 @@ node scripts/navegador/tareas.js encender --flujo "NOMBRE" --aplicar
 
 # ESCRITURA — restaurar una página de la papelera
 node scripts/navegador/tareas.js restaurar-pagina --pagina "Test de Nivel BIM" --aplicar
+
+# ESCRITURA — reemplazar el contenido de un elemento Custom Code
+node scripts/navegador/tareas.js pegar-html \
+  --pagina "Recursos" \
+  --archivo recursos/ghl-recursos.html \
+  --url https://funnel.dgdesignmodeling.com/recursos \
+  --aplicar
 ```
+
+`pegar-html` no verifica mirando la interfaz: **pide la página pública por HTTP**
+y comprueba que traiga los enlaces nuevos y ya no los viejos. Por eso `--url` es
+obligatorio. Si el editor guardó pero la página pública no cambió, la tarea
+falla — que es justo lo que uno quiere saber.
 
 Se lanzan desde **Actions → Navegador GHL → Run workflow**, que es donde viven
 los secretos. En local no hay credenciales y no debe haberlas.

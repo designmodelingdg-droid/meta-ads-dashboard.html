@@ -24,9 +24,18 @@ on:
           - paginas
           - encender
           - restaurar-pagina
+          - pegar-html
         default: sesion
       objetivo:
-        description: "Nombre del workflow o de la página (solo para encender / restaurar)"
+        description: "Nombre del workflow o de la página (encender / restaurar / pegar-html)"
+        required: false
+        default: ""
+      archivo:
+        description: "Solo pegar-html · archivo del repo a pegar (ej: recursos/ghl-recursos.html)"
+        required: false
+        default: ""
+      url:
+        description: "Solo pegar-html · dirección PÚBLICA con la que se verifica el cambio"
         required: false
         default: ""
       aplicar:
@@ -85,17 +94,36 @@ jobs:
           GHL_PASS: ${{ secrets.GHL_PASS }}
         run: |
           set -euo pipefail
+          TAREA="${{ github.event.inputs.tarea }}"
+          OBJ="${{ github.event.inputs.objetivo }}"
           ARGS=""
-          [ -n "${{ github.event.inputs.objetivo }}" ] && \
-            case "${{ github.event.inputs.tarea }}" in
-              encender)         ARGS="--flujo \"${{ github.event.inputs.objetivo }}\"" ;;
-              restaurar-pagina) ARGS="--pagina \"${{ github.event.inputs.objetivo }}\"" ;;
-            esac
-          [ "${{ github.event.inputs.tarea }}" = "mapa-flujos" ] && \
-            ARGS="--limite ${{ github.event.inputs.limite }}"
-          [ "${{ github.event.inputs.aplicar }}" = "true" ] && ARGS="$ARGS --aplicar"
-          echo "→ node scripts/navegador/tareas.js ${{ github.event.inputs.tarea }} $ARGS"
-          eval node scripts/navegador/tareas.js "${{ github.event.inputs.tarea }}" $ARGS
+          # Un case y no una cadena de [ ] && …: con `set -e` esa cadena es una
+          # trampa, porque el estado del ultimo enlace se convierte en el del
+          # paso entero y el Action se pone rojo sin que nada haya fallado.
+          case "$TAREA" in
+            mapa-flujos)
+              ARGS="--limite ${{ github.event.inputs.limite }}" ;;
+            encender)
+              [ -n "$OBJ" ] || { echo "::error::«encender» necesita el nombre del workflow en «objetivo»."; exit 1; }
+              ARGS="--flujo \"$OBJ\"" ;;
+            restaurar-pagina)
+              [ -n "$OBJ" ] || { echo "::error::«restaurar-pagina» necesita el nombre en «objetivo»."; exit 1; }
+              ARGS="--pagina \"$OBJ\"" ;;
+            pegar-html)
+              ARCH="${{ github.event.inputs.archivo }}"
+              URL="${{ github.event.inputs.url }}"
+              [ -n "$OBJ" ]  || { echo "::error::«pegar-html» necesita el nombre de la pagina en «objetivo»."; exit 1; }
+              [ -n "$ARCH" ] || { echo "::error::«pegar-html» necesita «archivo»."; exit 1; }
+              # Sin --url no hay verificacion posible, y una escritura sin
+              # verificar es peor que no escribir: parece hecha y no lo esta.
+              [ -n "$URL" ]  || { echo "::error::«pegar-html» necesita «url»: es la direccion publica con la que se comprueba que el cambio llego."; exit 1; }
+              ARGS="--pagina \"$OBJ\" --archivo \"$ARCH\" --url \"$URL\"" ;;
+          esac
+          if [ "${{ github.event.inputs.aplicar }}" = "true" ]; then
+            ARGS="$ARGS --aplicar"
+          fi
+          echo "→ node scripts/navegador/tareas.js $TAREA $ARGS"
+          eval node scripts/navegador/tareas.js "$TAREA" $ARGS
 
       # La evidencia se sube SIEMPRE, sobre todo si falló: es lo que permite ver
       # qué cambió GHL de sitio en vez de adivinar.

@@ -26,6 +26,13 @@
  *   node scripts/navegador/tareas.js restaurar-pagina --pagina "NOMBRE" [--aplicar]
  *       ESCRITURA. Restaura una pagina de Sites desde la papelera.
  *
+ *   node scripts/navegador/tareas.js pegar-html --pagina "NOMBRE"
+ *                --archivo recursos/ghl-recursos.html --url https://… [--aplicar]
+ *       ESCRITURA. Reemplaza el contenido de un elemento Custom Code. Es lo que
+ *       la API de GHL no deja hacer de ninguna forma: Funnels y Sites solo
+ *       exponen tres GET. La verificacion NO mira la interfaz, pide la pagina
+ *       publica por HTTP y comprueba que traiga los enlaces nuevos.
+ *
  * SIN --aplicar no se toca nada: recorre, dice lo que haria y sale. Ese es el
  * modo por defecto a proposito.
  */
@@ -246,13 +253,171 @@ async function restaurarPagina(pagina, op) {
   });
 }
 
+/* ── ESCRITURA · pegar HTML en un elemento Custom Code ───────────── */
+
+/* El constructor de GHL no es una pagina normal: mete el lienzo y el editor de
+ * codigo en marcos anidados, y a veces cambia de libreria de editor entre
+ * versiones. Por eso NO se busca por un selector fijo — se busca por rasgo, en
+ * todos los marcos. Un selector escrito a ojo funciona el dia que se escribe y
+ * se rompe en la siguiente actualizacion sin decir por que.
+ */
+const EDITORES = [
+  { tipo: 'CodeMirror 6', sel: '.cm-content[contenteditable="true"]', teclado: true },
+  { tipo: 'CodeMirror 5', sel: '.CodeMirror textarea',                teclado: true },
+  { tipo: 'Monaco',       sel: '.monaco-editor textarea',             teclado: true },
+  { tipo: 'textarea',     sel: 'textarea',                            teclado: false },
+];
+
+async function buscarEditor(pagina) {
+  for (const marco of pagina.frames()) {
+    for (const e of EDITORES) {
+      const loc = marco.locator(e.sel).first();
+      const hay = await loc.count().catch(() => 0);
+      if (hay && await loc.isVisible().catch(() => false)) {
+        return { marco, loc, tipo: e.tipo, teclado: e.teclado };
+      }
+    }
+  }
+  return null;
+}
+
+/* La unica verificacion que vale: pedir la pagina PUBLICA por HTTP y mirar que
+ * dice. Que el editor acepte el texto y el boton se ponga verde no prueba nada
+ * — el hub de /recursos estuvo semanas sirviendo dos enlaces muertos mientras
+ * en el repositorio ya estaban corregidos. Se reintenta porque publicar en GHL
+ * tarda unos segundos en propagarse.
+ */
+async function verificarPublicado(url, debeTener, noDebeTener) {
+  for (let intento = 1; intento <= 6; intento++) {
+    await new Promise(r => setTimeout(r, intento === 1 ? 4000 : 10000));
+    let html = '';
+    try {
+      const r = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0 (matriz-bot)' } });
+      if (!r.ok) { console.log(`   [${intento}/6] la pagina respondio ${r.status}`); continue; }
+      html = await r.text();
+    } catch (e) {
+      console.log(`   [${intento}/6] no se pudo leer: ${String(e.message).slice(0, 60)}`);
+      continue;
+    }
+    const faltan = debeTener.filter(s => !html.includes(s));
+    const sobran = (noDebeTener || []).filter(s => html.includes(s));
+    if (!faltan.length && !sobran.length) {
+      console.log(`   [${intento}/6] la pagina publica ya trae los cambios`);
+      return true;
+    }
+    console.log(`   [${intento}/6] todavia no: faltan ${faltan.length}, sobran ${sobran.length}`);
+  }
+  return false;
+}
+
+async function pegarHtml(pagina, op) {
+  if (!op.pagina)  throw new Error('Falta --pagina "NOMBRE DE LA PAGINA EN SITES"');
+  if (!op.archivo) throw new Error('Falta --archivo ruta/al/archivo.html');
+  if (!op.url)     throw new Error('Falta --url https://… (la direccion PUBLICA, para verificar). ' +
+                                   'Sin ella no hay forma de saber si el cambio llego a la gente.');
+
+  const ruta = path.resolve(RAIZ, op.archivo);
+  if (!fs.existsSync(ruta)) throw new Error(`No existe el archivo: ${op.archivo}`);
+  const html = fs.readFileSync(ruta, 'utf8');
+  console.log(`\nArchivo: ${op.archivo} · ${Math.round(html.length / 1024)} KB`);
+
+  // Lo que tiene que aparecer y desaparecer en la pagina publica. Se saca del
+  // propio archivo en vez de escribirlo a mano: asi la comprobacion sigue
+  // sirviendo cuando el contenido cambie.
+  const enlaces = [...new Set((html.match(/https:\/\/funnel\.dgdesignmodeling\.com\/[a-z0-9/-]+/g) || []))];
+  const debeTener = enlaces.filter(u => /acceso-gratis|descarga-gratis/.test(u)).slice(0, 4);
+  if (!debeTener.length) throw new Error('No reconoci ningun enlace de embudo en el archivo. ' +
+                                         'Sin algo concreto que buscar, la verificacion seria de mentira.');
+  console.log('   se verificara que la pagina publica traiga:');
+  for (const u of debeTener) console.log('     ' + u);
+
+  console.log(`\nBuscando «${op.pagina}» en Sites…`);
+  await pagina.goto(`${BASE}/funnels-websites/websites`, { waitUntil: 'domcontentloaded' });
+  await pagina.waitForTimeout(6000);
+
+  const fila = pagina.locator(`a:has-text("${op.pagina}"), tr:has-text("${op.pagina}")`).first();
+  if (!await fila.count()) {
+    await evidencia(pagina, 'pagina-no-encontrada');
+    throw new Error(`No aparece ninguna pagina con ese nombre. No se toca nada. ` +
+                    `Corre la tarea «paginas» para ver como se llama exactamente.`);
+  }
+  await fila.click();
+  await pagina.waitForTimeout(6000);
+
+  const editar = pagina.locator('button:has-text("Edit"), button:has-text("Editar"), a:has-text("Edit")').first();
+  if (await editar.count()) { await editar.click(); await pagina.waitForTimeout(9000); }
+
+  const ed = await buscarEditor(pagina);
+  if (!ed) {
+    await evidencia(pagina, 'sin-editor-de-codigo');
+    throw new Error(
+      'Llegue a la pagina pero no encontre el editor de codigo en ninguno de los ' +
+      `${pagina.frames().length} marcos. Hay que abrir el elemento Custom Code a mano ` +
+      'una vez y mirar la evidencia guardada para ajustar la busqueda.');
+  }
+  console.log(`   editor encontrado: ${ed.tipo}`);
+
+  await escribir({
+    que: `reemplazar el contenido de «${op.pagina}» con ${op.archivo}`,
+    aplicar: !!op.aplicar,
+    pagina,
+    hacer: async () => {
+      await ed.loc.click();
+      await pagina.keyboard.press('ControlOrMeta+a');
+      await pagina.keyboard.press('Delete');
+      if (ed.teclado) {
+        // insertText y no type(): 23 KB tecleados caracter a caracter tardan
+        // minutos y cada autocompletado del editor los corrompe por el camino.
+        await pagina.keyboard.insertText(html);
+      } else {
+        await ed.loc.fill(html);
+      }
+      await pagina.waitForTimeout(2500);
+
+      const guardar_ = pagina.locator('button:has-text("Save"), button:has-text("Guardar")').first();
+      if (!await guardar_.count()) {
+        await evidencia(pagina, 'sin-boton-guardar');
+        throw new Error('Escribi el contenido pero no encontre el boton de guardar. ' +
+                        'Se corta aqui: dejarlo sin guardar es mejor que suponer.');
+      }
+      await guardar_.click();
+      await pagina.waitForTimeout(8000);
+
+      const publicar = pagina.locator('button:has-text("Publish"), button:has-text("Publicar")').first();
+      if (await publicar.count()) { await publicar.click(); await pagina.waitForTimeout(6000); }
+    },
+    verificar: async () => {
+      console.log(`\n   comprobando ${op.url} …`);
+      return verificarPublicado(op.url, debeTener,
+        ['funnel.dgdesignmodeling.com/test-nivel-bim"',
+         'funnel.dgdesignmodeling.com/calculadora-zapatas"']);
+    },
+  });
+
+  guardar('pegado.json', {
+    fecha: new Date().toISOString().slice(0, 10),
+    pagina: op.pagina, archivo: op.archivo, url: op.url,
+    editor: ed.tipo, aplicado: !!op.aplicar, verificados: debeTener,
+  });
+}
+
 const TAREAS = {
   'sesion': sesion,
   'mapa-flujos': mapaFlujos,
   'paginas': paginas,
   'encender': encender,
   'restaurar-pagina': restaurarPagina,
+  'pegar-html': pegarHtml,
 };
+
+/* Se exporta para poder probar las piezas sueltas sin abrir un navegador ni
+ * tocar el CRM. La comprobacion de la pagina publica, sobre todo: es la unica
+ * que decide si un cambio de verdad llego a la gente, asi que tiene que poder
+ * ejercitarse contra una URL real.
+ */
+module.exports = { verificarPublicado, buscarEditor, pegarHtml };
+
+if (require.main !== module) return;
 
 (async () => {
   const { tarea, op } = args();
