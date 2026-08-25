@@ -36,6 +36,22 @@ reescribe con este método.
 
 ---
 
+## 🔴 Lo primero, y es de los ocho recursos
+
+**Nadie que llene un formulario de lead magnet recibe su recurso.** Los ocho
+redirigen a la confirmación de un webinar de **febrero de 2025**. Lo encontró
+Dayana llenando el formulario, no una revisión de configuración.
+
+No se veía mirando la pantalla de destino: el destino por defecto estaba bien
+en los ocho. Lo que manda es una **regla condicional** que gana sobre él, y
+cuya condición se cumple siempre.
+
+Está todo en `matriz-viral/INCIDENTE-FORMULARIOS.md`, con el arreglo. **Va
+antes que cualquier otra cosa de esta lista** — mientras esto no se arregle, el
+lead magnet de acero no entrega aunque el resto esté perfecto.
+
+---
+
 ## 🔴 Lo que falta, en orden
 
 ### 1 · Hay un workflow duplicado en borrador

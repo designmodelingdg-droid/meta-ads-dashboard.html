@@ -153,6 +153,13 @@ jobs:
       # BIM y la Calculadora llevaban horas en 404 y lo detecto Dayana de
       # casualidad: mientras tanto, cada persona que comentaba NIVEL o ZAPATA
       # recibia un enlace roto. Esto lo detecta la maquina, no un lead.
+      - name: Comprobar a donde mandan los formularios de lead magnet
+        # No falla la corrida: informa. El 25-ago los ocho mandaban a la
+        # confirmacion de un webinar de febrero de 2025 y nadie lo vio en
+        # meses, porque el contacto SI entraba al CRM.
+        continue-on-error: true
+        run: python3 scripts/formularios_destino.py
+
       - name: Comprobar que los enlaces prometidos siguen vivos
         continue-on-error: true      # se avisa, no se rompe la corrida
         run: python3 scripts/enlaces.py
