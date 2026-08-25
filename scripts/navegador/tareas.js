@@ -149,9 +149,19 @@ async function mapaFlujos(pagina, op) {
 
       const texto = await pagina.innerText('body').catch(() => '');
       // Un lienzo que no cargo devuelve el cascaron: se detecta y se marca.
+      // Se anota la URL DONDE SE ACABO y cuanto texto habia: si GHL redirige
+      // una ruta que no reconoce, la URL final lo delata y se arregla sin
+      // adivinar. Y los primeros caracteres dicen si lo que llego fue un
+      // error, un login o el cascaron de la aplicacion.
       if (texto.length < 400) {
-        mapa.push({ ...f, leido: false, error: 'la pagina no termino de cargar' });
-        console.log('SIN CARGAR');
+        mapa.push({
+          ...f, leido: false,
+          error: 'la pagina no termino de cargar',
+          url_final: pagina.url(),
+          largo_texto: texto.length,
+          asomo: texto.replace(/\s+/g, ' ').trim().slice(0, 160),
+        });
+        console.log(`SIN CARGAR (${texto.length} car · ${pagina.url().slice(-46)})`);
         continue;
       }
       const correos = [...new Set(
