@@ -8,16 +8,29 @@ Va después de que termine el workflow de Instagram. No hace falta parar nada.
 
 ---
 
-## Antes de empezar, una sola vez
+## No hace falta tener el repositorio en el Mac
 
-En la terminal del Mac, dentro del repositorio:
+El `git pull` falló porque la sesión del Mac no está parada dentro del
+repositorio — y resulta que **no lo necesita**. El archivo del hub está
+publicado y se puede pedir directo:
 
-```bash
-git pull origin claude/remote-control-setup-GUe3f
+```
+https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/ghl-recursos.html
 ```
 
-Sin eso, el archivo del hub que se va a pegar es el viejo y no trae la tarjeta
-nueva. Debe quedar en el commit `9b693e7` o posterior.
+Comprobado: 24.206 bytes, con la tarjeta nueva dentro, idéntico byte a byte al
+del repositorio. Hay una segunda copia igual de fresca por si esa fallara:
+
+```
+https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/claude/remote-control-setup-GUe3f/recursos/ghl-recursos.html
+```
+
+> Si algún día se quiere el repositorio en el Mac de todas formas, primero hay
+> que ver si ya está en alguna parte:
+> ```bash
+> find ~ -maxdepth 4 -type d -name "meta-ads-dashboard.html" 2>/dev/null
+> ```
+> Y si no aparece, se clona. Pero para este encargo no hace falta.
 
 ---
 
@@ -56,8 +69,12 @@ lo que había que arreglar.
 TAREA 2 — Pegar el hub de recursos actualizado.
 
 Abre Sites → la página /recursos → el elemento Custom Code. Reemplaza TODO su
-contenido por el archivo recursos/ghl-recursos.html de este repositorio (24 KB;
-asegúrate de haber hecho git pull antes). Guarda y publica.
+contenido por lo que devuelve esta dirección:
+
+https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/ghl-recursos.html
+
+Son 24.206 bytes. Descárgala y pega el contenido completo, tal cual, sin
+recortar ni reindentar. Guarda y publica.
 
 VERIFICA: no me digas que quedó porque el botón se puso verde. Pide
 https://funnel.dgdesignmodeling.com/recursos por HTTP y confírmame que trae
