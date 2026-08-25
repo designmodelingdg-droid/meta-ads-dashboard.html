@@ -26,8 +26,8 @@ recibes se pegan tal cual en contenedores de Custom Code.
 | Dato | Valor |
 |---|---|
 | Token de acceso | `dmbim26` |
-| **Página 1** · landing | `https://funnel.dgdesignmodeling.com/test-nivel-bim` |
-| **Página 2** · gracias | `https://funnel.dgdesignmodeling.com/test-nivel-bim/gracias` |
+| **Página 1** · landing | `https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form` |
+| **Página 2** · gracias | `https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-gracias` |
 | **Página 3** · el test | `https://funnel.dgdesignmodeling.com/test-nivel-bim/test` |
 | Calendario de agenda (ya embebido) | `https://api.leadconnectorhq.com/widget/booking/bIVuNHNojGEgH3gf6yXe` |
 
@@ -79,7 +79,7 @@ Lo de abajo queda solo como referencia por si hay que rehacerlo.
 4. Texto del botón: `Entrar al test →`
 5. En **Settings → On Submit** elige **Redirect to URL** y pon exactamente:
    ```
-   https://funnel.dgdesignmodeling.com/test-nivel-bim/gracias?acceso=dmbim26
+   https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-gracias?acceso=dmbim26
    ```
 6. Guarda e **Integrate Form → Embed**. Copia la URL del iframe: se ve como
    `https://api.leadconnectorhq.com/widget/form/XXXXXXXXXXXX`

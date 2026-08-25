@@ -67,8 +67,8 @@ Todo esto ya existe y está publicado. Es lo que se reparte:
 | GPT de IA | `funnel.dgdesignmodeling.com/descarga-gratis-ai-pro-form` |
 | Curso introductorio | `funnel.dgdesignmodeling.com/acceso-gratis-curso-introductorio-bim-form` |
 | Módulo 1 del Diplomado | `funnel.dgdesignmodeling.com/acceso-gratis-modulo-diplomado-bim-form` |
-| Calculadora de Zapatas | `funnel.dgdesignmodeling.com/calculadora-zapatas` |
-| Test de Nivel BIM | `funnel.dgdesignmodeling.com/test-nivel-bim` |
+| Calculadora de Zapatas | `funnel.dgdesignmodeling.com/acceso-gratis-calculadora-zapatas-form` |
+| Test de Nivel BIM | `funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form` |
 | Blog | `funnel.dgdesignmodeling.com/blog` |
 | Comunidad | `designmodelingacademy.app.clientclub.net/communities/groups/comunidad-design/home` |
 
