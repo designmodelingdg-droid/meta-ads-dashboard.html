@@ -6,9 +6,11 @@ Cubre las promesas de tres piezas de la matriz de agosto:
 `ago-acero-sobredimensionado` (Mié 27).
 
 > **Estado de fuentes — leer antes de publicar.**
-> Verificado el 25-ago-2026 contra AISC 360 y NEC. Lo que está citado, está
-> comprobado. Lo que lleva 🔶 necesita el temario de la Especialización o un
-> Excel del equipo antes de salir. **Nada aquí sale de memoria sin marca.**
+> Verificado el 25-ago-2026 contra **AISC 360-16** y **NEC**. La edición está
+> fijada por el propio temario de la Especialización, cuyo Módulo 1 dice
+> textualmente *«combinaciones de carga según normas (AISC 360-16 / ASCE
+> 7-16)»* — así que la guía y el curso citan lo mismo. Lo que lleva 🔶 todavía
+> no tiene fuente y **no sale así**.
 
 ---
 
@@ -51,7 +53,7 @@ Para el ala de un perfil I en flexión:
 Con acero A36 (Fy = 250 MPa) y E = 200 000 MPa eso da **λp ≈ 10.7** y
 **λr ≈ 28.3**. Con A572 Gr.50 (Fy = 345 MPa), **λp ≈ 9.1** y **λr ≈ 24.1**.
 
-> **Fuente:** AISC 360, Tabla **B4.1a** (elementos en compresión axial) y
+> **Fuente:** AISC 360-16, Tabla **B4.1a** (elementos en compresión axial) y
 > Tabla **B4.1b** (elementos en flexión). La separación en dos tablas existe
 > desde AISC 360-10; en 360-05 era una sola tabla B4.1.
 
@@ -82,7 +84,7 @@ Y **`Cb`**: el factor que reconoce que un diagrama de momento no uniforme es
 menos exigente. Tomar `Cb = 1.0` siempre es conservador y a veces caro; usar
 el `Cb` real de tu diagrama puede devolverte un perfil menor.
 
-> **Fuente:** AISC 360, **Capítulo F**, sección **F2** para perfiles I de
+> **Fuente:** AISC 360-16, **Capítulo F**, sección **F2** para perfiles I de
 > alma compacta flectados en el eje fuerte.
 
 **La regla que te llevas:** antes de aceptar el perfil, dibuja dónde está
@@ -153,7 +155,7 @@ un resultado. La incoherencia no da error, da un número plausible.
 - ¿Semirrígida? Entonces el modelo necesita la rigidez rotacional real, y esa
   no es un *default*.
 
-> **Fuente:** AISC 360, **Capítulo B** — clasificación de conexiones por su
+> **Fuente:** AISC 360-16, **Capítulo B** — clasificación de conexiones por su
 > comportamiento momento-rotación (totalmente restringidas, parcialmente
 > restringidas y simples), y **Capítulo J** para el diseño del detalle.
 
@@ -211,6 +213,26 @@ El programa calcula. **El criterio es tuyo.**
 
 ---
 
+## Dónde se aprende cada una
+
+No es un añadido comercial: es el mapa honesto entre esta guía y lo que la
+**Especialización en Diseño Estructural BIM en Acero** enseña de verdad,
+según su propio temario.
+
+| Verificación | Dónde se trabaja |
+|---|---|
+| 1 · Pandeo local | Módulo 2 — *«revisión de estabilidad global y local de miembros»* |
+| 2 · Pandeo lateral-torsional | Módulo 2 — misma unidad de estabilidad |
+| 3 · Derivas y P-Δ | Módulo 1 — *«evaluación de desplazamientos y derivas laterales»* |
+| 4 · Coherencia de conexiones | Módulo 3 completo — *«cálculo y verificación de esfuerzos en uniones»* |
+| 5 · Placa base y anclajes | 🔶 **no aparece explícito en el temario** |
+
+Y hay una unidad que es exactamente el problema que ataca la app que acompaña
+a esta guía: Módulo 2, *«optimización de perfiles y control de peso
+estructural»*.
+
+---
+
 ## Descargo
 
 Guía **educativa y de predimensionamiento**. No sustituye el criterio ni la
@@ -225,7 +247,8 @@ No es una certificación ni un diploma.
 
 | | |
 |---|---|
-| 🔶 | Ejemplos numéricos de la §5 — hacen falta del temario o de un cálculo del equipo |
-| 🔶 | Confirmar la edición de AISC 360 que usa la Especialización (360-16 o 360-22) para citar la tabla exacta |
+| ✅ | Edición de AISC — **360-16**, fijada por el Módulo 1 del temario |
 | ✅ | λp y λr del ala en flexión — verificados |
 | ✅ | Límites de deriva NEC-SE-DS — verificados (0.02 metálicas / 0.01 mampostería) |
+| 🔶 | Ejemplos numéricos de la §5 — siguen sin fuente. El temario no los trae |
+| 🔶 | **Placa base no aparece en el temario ni en el folleto.** La guía la promete porque el caption de la pieza del Sáb 23 la nombró. Decisión de Dayana: o se cubre en el curso, o el puente de la §5 se deja en «te lo resolvemos en asesoría» y no en «lo ves en el módulo X» |

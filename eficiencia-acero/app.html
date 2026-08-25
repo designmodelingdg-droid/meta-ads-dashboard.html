@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>¿Cuánto acero estás pagando de más? · Design Modeling Academy</title>
+<meta name="description" content="Diagnostica si tu estructura de acero está sobredimensionada: reserva de resistencia por familia, verificación de deriva contra NEC-SE-DS y cuánto cuesta el acero que sobra.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@500;600;700;800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#003e5c; --navy2:#001e30; --orange:#ca7520; --orange-d:#e8a04a;
+    --card:#ffffff; --ink:#333333; --ink2:#5a6b7b; --line:#e5e7eb;
+    --ok:#1e9e6a; --bad:#d64545; --warn:#b5761a;
+    --chip-ok:#e4f6ee; --chip-bad:#fdeaea; --chip-warn:#fcf1e0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Nunito',system-ui,sans-serif;background:linear-gradient(135deg,var(--navy2) 0%,var(--navy) 100%);min-height:100vh;color:var(--ink)}
+  h1,h2,h3{font-family:'Overpass',sans-serif}
+  .wrap{max-width:1080px;margin:0 auto;padding:24px 16px 64px}
+  header{color:#fff;text-align:center;padding:18px 0 26px}
+  header .logo-img{height:52px;width:auto;margin:0 auto 10px;display:block}
+  header .logo{font-family:'Overpass',sans-serif;font-weight:800;letter-spacing:.12em;font-size:.8rem;color:var(--orange-d);text-transform:uppercase}
+  header h1{font-size:clamp(1.5rem,4vw,2.2rem);font-weight:700;margin-top:6px}
+  header p{color:#b9c6d2;margin-top:6px;font-size:.95rem}
+  .grid{display:grid;grid-template-columns:minmax(0,440px) minmax(0,1fr);gap:20px;align-items:start}
+  @media (max-width:900px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--card);border-radius:14px;padding:20px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+  .card h2{font-size:1rem;font-weight:700;color:var(--navy);display:flex;align-items:center;gap:8px;margin-bottom:14px}
+  .card h2 .n{background:var(--orange);color:#fff;border-radius:8px;width:26px;height:26px;display:inline-flex;align-items:center;justify-content:center;font-size:.85rem;flex:none}
+  .f{display:grid;grid-template-columns:1fr 110px 62px;gap:6px 8px;align-items:center;margin-bottom:8px}
+  .f label{font-size:.82rem;color:var(--ink2)}
+  .f input,.f select{width:100%;padding:7px 9px;border:1px solid var(--line);border-radius:8px;font:inherit;font-size:.9rem;background:#fbfcfe}
+  .f input:focus,.f select:focus{outline:2px solid var(--orange);border-color:var(--orange)}
+  .f .u{font-size:.78rem;color:var(--ink2)}
+  .f.wide{grid-template-columns:1fr 180px 0px}
+  .fam{border:1px solid var(--line);border-radius:11px;padding:12px;margin-bottom:10px;background:#fbfcfe}
+  .fam .t{font-family:'Overpass',sans-serif;font-weight:700;font-size:.86rem;color:var(--navy);margin-bottom:8px;display:flex;justify-content:space-between;align-items:center;gap:8px}
+  .hint{font-size:.78rem;color:var(--ink2);background:#f2f6fa;border-left:3px solid var(--orange);padding:8px 10px;border-radius:0 8px 8px 0;margin:10px 0;line-height:1.5}
+  .btn{display:inline-block;width:100%;padding:12px;border:0;border-radius:10px;background:var(--orange);color:#fff;font:inherit;font-weight:700;font-size:.95rem;cursor:pointer;margin-top:6px}
+  .btn:hover{background:var(--orange-d)}
+  .btn.ghost{background:#eef2f6;color:var(--navy);font-weight:600}
+  .sec{border-top:1px solid var(--line);margin-top:14px;padding-top:14px}
+  .sec h3{font-size:.85rem;font-weight:700;color:var(--navy);margin-bottom:10px}
+  .res .row{display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-bottom:1px dashed var(--line);font-size:.88rem;align-items:center}
+  .res .row b{color:var(--navy)}
+  .res .row span{color:var(--ink2)}
+  .chip{display:inline-flex;align-items:center;gap:6px;font-size:.78rem;font-weight:700;padding:3px 10px;border-radius:99px;white-space:nowrap}
+  .chip.ok{background:var(--chip-ok);color:var(--ok)}
+  .chip.bad{background:var(--chip-bad);color:var(--bad)}
+  .chip.warn{background:var(--chip-warn);color:var(--warn)}
+  .final{background:linear-gradient(135deg,var(--navy),#0a5a80);color:#fff;border-radius:12px;padding:16px;margin-top:14px}
+  .final h3{color:var(--orange);font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px}
+  .final .big{font-size:1.05rem;font-weight:700;line-height:1.6}
+  .final small{color:#b9c6d2;display:block;margin-top:8px;line-height:1.5;font-weight:400}
+  svg text{font-family:'Nunito',system-ui,sans-serif}
+  .sketch{margin-top:10px;background:#f7fafc;border:1px solid var(--line);border-radius:12px;padding:8px}
+  .nota{font-size:.76rem;color:var(--ink2);line-height:1.55;margin-top:10px}
+  .nota b{color:var(--navy)}
+  footer{color:#8fa2b3;text-align:center;font-size:.78rem;margin-top:34px;line-height:1.6}
+  footer a{color:var(--orange)}
+  #lock{position:fixed;inset:0;background:rgba(10,27,43,.96);z-index:50;display:flex;align-items:center;justify-content:center;padding:20px}
+  #lock[hidden]{display:none}
+  #lock .card{max-width:420px;text-align:center}
+  #lock h2{justify-content:center}
+  .warn{font-size:.75rem;color:var(--ink2);margin-top:12px;line-height:1.5}
+</style>
+</head>
+<body>
+
+<div id="lock" hidden>
+  <div class="card">
+    <h2>🔒 Acceso al verificador</h2>
+    <p style="font-size:.9rem;color:#5a6b7b;line-height:1.6">Es gratis. Déjanos tus datos y entras de inmediato — sin esperar correos.</p>
+    <a class="btn" id="lockBtn" href="./index.html" style="text-decoration:none;text-align:center">Registrarme y entrar</a>
+  </div>
+</div>
+
+<div class="wrap">
+  <header>
+    <img class="logo-img" src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04bbc1fa8afa3be0bb00d8.png" alt="Design Modeling Academy">
+    <div class="logo">Design Modeling Academy</div>
+    <h1>¿Cuánto acero estás pagando de más?</h1>
+    <p>Sobredimensionar no es ir por el lado seguro. Es no haber revisado.</p>
+  </header>
+
+  <div class="grid">
+    <div>
+
+      <div class="card">
+        <h2><span class="n">1</span> Tu estructura</h2>
+        <div class="f"><label>Peso total de acero</label><input id="peso" type="number" step="100" value="48000"><span class="u">kg</span></div>
+        <div class="f"><label>Área construida</label><input id="area" type="number" step="10" value="1200"><span class="u">m²</span></div>
+        <div class="f"><label>Precio del acero montado</label><input id="precio" type="number" step="0.05" value="3.20"><span class="u">$/kg</span></div>
+        <div class="hint">El precio montado incluye material, fabricación, transporte y montaje. Si solo tienes el del material, el ahorro real será mayor que el que muestre esta herramienta.</div>
+      </div>
+
+      <div class="card" style="margin-top:16px">
+        <h2><span class="n">2</span> Aprovechamiento por familia</h2>
+        <p class="nota" style="margin-top:-6px;margin-bottom:12px">
+          De tu modelo: el ratio <b>demanda/capacidad</b> promedio de cada familia,
+          y qué la gobierna. Si no lo tienes a mano, la mayoría de programas lo
+          reportan como <i>D/C ratio</i> o <i>índice de trabajo</i>.
+        </p>
+
+        <div class="fam">
+          <div class="t">Vigas <span id="pv">40%</span></div>
+          <div class="f"><label>D/C promedio</label><input id="dcV" type="number" step="0.01" min="0" max="2" value="0.42"><span class="u">—</span></div>
+          <div class="f"><label>% del peso total</label><input id="pesoV" type="number" step="1" min="0" max="100" value="40"><span class="u">%</span></div>
+          <div class="f"><label>Qué gobierna</label>
+            <select id="govV"><option value="res">Resistencia</option><option value="der">Deriva / rigidez</option><option value="ser">Servicio (flecha)</option></select><span class="u"></span></div>
+        </div>
+
+        <div class="fam">
+          <div class="t">Columnas <span id="pc">45%</span></div>
+          <div class="f"><label>D/C promedio</label><input id="dcC" type="number" step="0.01" min="0" max="2" value="0.55"><span class="u">—</span></div>
+          <div class="f"><label>% del peso total</label><input id="pesoC" type="number" step="1" min="0" max="100" value="45"><span class="u">%</span></div>
+          <div class="f"><label>Qué gobierna</label>
+            <select id="govC"><option value="der">Deriva / rigidez</option><option value="res">Resistencia</option><option value="ser">Servicio (flecha)</option></select><span class="u"></span></div>
+        </div>
+
+        <div class="fam">
+          <div class="t">Arriostres y secundarios <span id="pa">15%</span></div>
+          <div class="f"><label>D/C promedio</label><input id="dcA" type="number" step="0.01" min="0" max="2" value="0.35"><span class="u">—</span></div>
+          <div class="f"><label>% del peso total</label><input id="pesoA" type="number" step="1" min="0" max="100" value="15"><span class="u">%</span></div>
+          <div class="f"><label>Qué gobierna</label>
+            <select id="govA"><option value="res">Resistencia</option><option value="der">Deriva / rigidez</option><option value="ser">Servicio (flecha)</option></select><span class="u"></span></div>
+        </div>
+        <div id="avisoPesos" class="hint" hidden></div>
+      </div>
+
+      <div class="card" style="margin-top:16px">
+        <h2><span class="n">3</span> Deriva</h2>
+        <div class="f"><label>Deriva máxima inelástica ΔM</label><input id="deriva" type="number" step="0.001" value="0.018"><span class="u">—</span></div>
+        <div class="f"><label>Sistema estructural</label>
+          <select id="sistema">
+            <option value="0.02" selected>Metálica</option>
+            <option value="0.02">Hormigón armado</option>
+            <option value="0.02">Madera</option>
+            <option value="0.01">Mampostería</option>
+          </select><span class="u"></span></div>
+        <div class="hint">
+          Límites de <b>NEC-SE-DS</b>: 0.02 para estructuras metálicas, de hormigón
+          armado y de madera; 0.01 para mampostería. Como fracción de la altura de piso.
+        </div>
+      </div>
+
+    </div>
+
+    <div>
+      <div class="card res">
+        <h2><span class="n">✓</span> Diagnóstico</h2>
+
+        <div class="sec" style="border-top:0;margin-top:0;padding-top:0">
+          <h3>Reserva por familia</h3>
+          <div class="row"><span>Vigas</span><b id="rV">—</b></div>
+          <div class="row"><span>Columnas</span><b id="rC">—</b></div>
+          <div class="row"><span>Arriostres y secundarios</span><b id="rA">—</b></div>
+        </div>
+
+        <div class="sketch"><svg id="svg" viewBox="0 0 460 220" width="100%" height="auto" role="img" aria-label="Aprovechamiento por familia"></svg></div>
+
+        <div class="sec">
+          <h3>Deriva</h3>
+          <div class="row"><span>ΔM de tu modelo</span><b id="dOut">—</b></div>
+          <div class="row"><span>Límite NEC-SE-DS</span><b id="dLim">—</b></div>
+          <div class="row"><span>Utilización</span><b id="dUso">—</b></div>
+          <div class="row"><span>Estado</span><b id="dChip">—</b></div>
+        </div>
+
+        <div class="sec">
+          <h3>Indicadores</h3>
+          <div class="row"><span>Peso por m²</span><b id="kgm2">—</b></div>
+          <div class="row"><span>Costo total del acero</span><b id="costoTot">—</b></div>
+          <div class="row"><span>Peso con reserva liberable</span><b id="pesoLib">—</b></div>
+        </div>
+
+        <div class="final">
+          <h3>Lo que dice tu estructura</h3>
+          <div class="big" id="veredicto">—</div>
+          <small id="veredictoNota"></small>
+        </div>
+
+        <div class="nota" id="explica"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p><b>Herramienta educativa y de predimensionamiento.</b> No sustituye el criterio ni la responsabilidad del profesional que firma. Todo resultado debe verificarse con la norma vigente aplicable al proyecto. No es una certificación ni un diploma.</p>
+    <p style="margin-top:10px">Design Modeling Academy · <a href="./index.html">Volver</a></p>
+  </footer>
+</div>
+
+<script>
+/* ── Candado ───────────────────────────────────────────────────────
+   La app se desbloquea con ?acceso=TOKEN, que agrega la landing tras el
+   registro, y queda guardado en localStorage. Cambiar el TOKEN aquí y en
+   index.html invalida los enlaces compartidos. REQUIERE_REGISTRO=false lo
+   abre para pruebas.                                                      */
+const REQUIERE_REGISTRO = true;
+const TOKEN_ACCESO = 'dm2026';
+const URL_LANDING = './index.html';
+
+(function candado(){
+  if(!REQUIERE_REGISTRO) return;
+  const p = new URLSearchParams(location.search);
+  if(p.get('acceso') === TOKEN_ACCESO){ try{localStorage.setItem('dm_acero_acceso', TOKEN_ACCESO);}catch(e){} return; }
+  try{ if(localStorage.getItem('dm_acero_acceso') === TOKEN_ACCESO) return; }catch(e){}
+  document.getElementById('lock').hidden = false;
+  document.getElementById('lockBtn').href = URL_LANDING;
+})();
+
+/* CALC-START */
+/* Nucleo de calculo. Funcion pura: entra un objeto, sale un objeto.
+ *
+ * QUE SE CALCULA Y DE DONDE SALE — leer antes de tocar nada:
+ *
+ * 1. RESERVA = 1 - D/C. Es exacta y directa. En diseno por factores de carga
+ *    y resistencia la condicion es Ru <= phi*Rn, o sea D/C <= 1. Lo que sobra
+ *    hasta 1 es capacidad instalada que no se usa. AISC 360, Capitulo B.
+ *
+ * 2. LA RESERVA SOLO ES "ACERO DE MAS" SI GOBIERNA LA RESISTENCIA.
+ *    Si a la familia la gobierna la deriva o el servicio, un D/C bajo NO es
+ *    sobredimensionamiento: es que el elemento esta ahi por rigidez, no por
+ *    resistencia. Reducirlo empeora las derivas. Esta distincion es la razon
+ *    de ser de la herramienta y es donde la mayoria se equivoca.
+ *
+ * 3. EL PESO LIBERABLE es una COTA SUPERIOR TEORICA, no una prediccion.
+ *    Se asume proporcionalidad directa entre capacidad y peso, que es
+ *    optimista: los perfiles vienen en catalogo, no en continuo, y bajar de
+ *    perfil suele traer verificaciones nuevas (pandeo local, arriostre).
+ *    Se declara como cota y nunca como ahorro garantizado.
+ *
+ * 4. DERIVA: limites de NEC-SE-DS. 0.02 para metalicas, hormigon armado y
+ *    madera; 0.01 para mamposteria. Fraccion de la altura de piso.
+ */
+function calcular(e){
+  const fam = [
+    {k:'V', nom:'Vigas',                      dc:+e.dcV, w:+e.pesoV, gov:e.govV},
+    {k:'C', nom:'Columnas',                   dc:+e.dcC, w:+e.pesoC, gov:e.govC},
+    {k:'A', nom:'Arriostres y secundarios',   dc:+e.dcA, w:+e.pesoA, gov:e.govA},
+  ];
+
+  const peso   = +e.peso;
+  const area   = +e.area;
+  const precio = +e.precio;
+  const sumaW  = fam.reduce((s,f)=>s+f.w, 0);
+
+  const out = { fam:[], avisos:[] };
+
+  if(Math.abs(sumaW - 100) > 0.5){
+    out.avisos.push('Los porcentajes de peso suman ' + sumaW.toFixed(0) +
+                    '%, no 100%. Los resultados se prorratean sobre ese total.');
+  }
+  const base = sumaW > 0 ? sumaW : 100;
+
+  let pesoLiberable = 0;
+
+  for(const f of fam){
+    const dc = f.dc;
+    const pesoFam = peso * (f.w / base);
+    const reserva = Math.max(0, 1 - dc);
+    // Solo cuenta como acero de mas cuando gobierna la resistencia.
+    const liberable = (f.gov === 'res') ? pesoFam * reserva : 0;
+    pesoLiberable += liberable;
+
+    let estado, nota;
+    if(dc > 1){
+      estado = 'excedido';
+      nota = 'D/C mayor que 1: la demanda supera la capacidad. Esto no es ahorro, es una verificacion que no cumple.';
+    } else if(f.gov !== 'res'){
+      estado = 'rigidez';
+      nota = 'La gobierna ' + (f.gov === 'der' ? 'la deriva' : 'el servicio') +
+             ', no la resistencia. Un D/C bajo aqui es normal y esperable: el elemento esta por rigidez. Reducirlo empeora los desplazamientos.';
+    } else if(dc >= 0.90){
+      estado = 'ajustado';
+      nota = 'Bien aprovechada. Poco margen y poca holgura ante cambios de carga.';
+    } else if(dc >= 0.70){
+      estado = 'normal';
+      nota = 'Rango habitual de proyecto. No hay senal de sobredimensionamiento.';
+    } else if(dc >= 0.50){
+      estado = 'margen';
+      nota = 'Hay margen. Vale la pena revisar si es criterio o inercia de diseno.';
+    } else {
+      estado = 'sobra';
+      nota = 'Muy por debajo. Si de verdad la gobierna la resistencia, aqui hay acero pagado y no usado.';
+    }
+
+    out.fam.push({
+      k:f.k, nom:f.nom, dc, gov:f.gov, estado, nota,
+      pesoFam, reserva, liberable,
+      pct: f.w / base,
+    });
+  }
+
+  // Deriva
+  const deriva = +e.deriva, limite = +e.limite;
+  const usoDeriva = limite > 0 ? deriva / limite : 0;
+  const derivaCumple = deriva <= limite;
+
+  // Indicadores
+  const kgm2     = area > 0 ? peso / area : 0;
+  const costoTot = peso * precio;
+  const ahorro   = pesoLiberable * precio;
+
+  // Veredicto. El orden importa: una deriva que no cumple manda sobre
+  // cualquier conversacion de ahorro.
+  let veredicto, veredictoNota;
+  const excedida = out.fam.find(f => f.estado === 'excedido');
+
+  if(excedida){
+    veredicto = 'Hay una verificacion que no cumple.';
+    veredictoNota = excedida.nom + ' tiene D/C = ' + excedida.dc.toFixed(2) +
+      '. Antes de hablar de eficiencia hay que resolver eso.';
+  } else if(!derivaCumple){
+    veredicto = 'No cumples deriva. Aqui no sobra acero: falta rigidez.';
+    veredictoNota = 'Tu ΔM es ' + deriva.toFixed(4) + ' contra un limite de ' +
+      limite.toFixed(2) + ' (NEC-SE-DS). Bajar perfiles empeora esto. ' +
+      'El camino es cambiar el sistema o arriostrar, no adelgazar.';
+  } else if(pesoLiberable <= 0){
+    veredicto = 'No hay senal de sobredimensionamiento.';
+    veredictoNota = 'Las familias con reserva estan gobernadas por rigidez o ' +
+      'servicio, no por resistencia. Ese acero esta trabajando, aunque el D/C ' +
+      'no lo parezca.';
+  } else {
+    const pctPeso = peso > 0 ? (pesoLiberable / peso) * 100 : 0;
+    veredicto = 'Hasta ' + Math.round(pesoLiberable).toLocaleString('es-EC') +
+      ' kg (' + pctPeso.toFixed(0) + '%) sin usar · ' +
+      '$' + Math.round(ahorro).toLocaleString('es-EC');
+    veredictoNota = 'Es una COTA SUPERIOR teorica, no un ahorro garantizado. ' +
+      'Supone proporcionalidad entre capacidad y peso; los perfiles vienen en ' +
+      'catalogo y bajar de perfil trae verificaciones nuevas. Sirve para saber ' +
+      'si vale la pena volver a mirar, no para presupuestar.';
+  }
+
+  return {
+    ...out,
+    peso, area, precio, kgm2, costoTot,
+    deriva, limite, usoDeriva, derivaCumple,
+    pesoLiberable, ahorro, veredicto, veredictoNota,
+  };
+}
+/* CALC-END */
+
+/* ── Interfaz ─────────────────────────────────────────────────────── */
+const $ = id => document.getElementById(id);
+const IDS = ['peso','area','precio','dcV','pesoV','govV','dcC','pesoC','govC',
+             'dcA','pesoA','govA','deriva','sistema'];
+
+const ETIQUETA = {
+  excedido:['bad','NO CUMPLE ✖'], sobra:['bad','SOBRA ✖'],
+  margen:['warn','HAY MARGEN'],   normal:['ok','NORMAL ✔'],
+  ajustado:['ok','AJUSTADA ✔'],   rigidez:['ok','POR RIGIDEZ ✔'],
+};
+
+function pintar(){
+  const e = {};
+  for(const k of IDS) e[k] = $(k).value;
+  e.limite = $('sistema').value;
+
+  const r = calcular(e);
+
+  for(const f of r.fam){
+    const [cls, txt] = ETIQUETA[f.estado];
+    $('r'+f.k).innerHTML =
+      '<span style="color:#5a6b7b;font-weight:400;font-size:.82rem">D/C ' +
+      f.dc.toFixed(2) + '</span>&nbsp;&nbsp;<span class="chip ' + cls + '">' + txt + '</span>';
+  }
+  $('pv').textContent = (r.fam[0].pct*100).toFixed(0) + '%';
+  $('pc').textContent = (r.fam[1].pct*100).toFixed(0) + '%';
+  $('pa').textContent = (r.fam[2].pct*100).toFixed(0) + '%';
+
+  const av = $('avisoPesos');
+  if(r.avisos.length){ av.hidden = false; av.textContent = r.avisos[0]; }
+  else av.hidden = true;
+
+  $('dOut').textContent = r.deriva.toFixed(4);
+  $('dLim').textContent = r.limite.toFixed(2);
+  $('dUso').textContent = (r.usoDeriva*100).toFixed(0) + '% del límite';
+  $('dChip').innerHTML = '<span class="chip ' + (r.derivaCumple?'ok':'bad') + '">' +
+                         (r.derivaCumple?'CUMPLE ✔':'VERIFICAR ✖') + '</span>';
+
+  $('kgm2').textContent    = r.kgm2.toFixed(1) + ' kg/m²';
+  $('costoTot').textContent= '$' + Math.round(r.costoTot).toLocaleString('es-EC');
+  $('pesoLib').textContent = Math.round(r.pesoLiberable).toLocaleString('es-EC') + ' kg';
+
+  $('veredicto').textContent     = r.veredicto;
+  $('veredictoNota').textContent = r.veredictoNota;
+
+  $('explica').innerHTML = r.fam.map(f =>
+    '<p style="margin-bottom:7px"><b>' + f.nom + ':</b> ' + f.nota + '</p>').join('');
+
+  dibujar(r);
+}
+
+/* Barras de aprovechamiento. Se redibuja con los datos: la barra llena es
+   el D/C y la clara es la reserva. Rayada = gobernada por rigidez, para que
+   se vea de un golpe que esa reserva no es acero de mas. */
+function dibujar(r){
+  const W=460, H=220, x0=140, x1=430, y0=40, alto=34, sep=22;
+  let s = '<defs><pattern id="rayas" width="6" height="6" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">' +
+          '<rect width="6" height="6" fill="#dbe6ef"/><line x1="0" y1="0" x2="0" y2="6" stroke="#b9cbdb" stroke-width="3"/></pattern></defs>';
+  s += '<text x="14" y="22" font-size="11" fill="#5a6b7b" font-weight="700">APROVECHAMIENTO (D/C)</text>';
+
+  r.fam.forEach((f,i) => {
+    const y = y0 + i*(alto+sep);
+    const ancho = x1-x0;
+    const dc = Math.max(0, Math.min(1.2, f.dc));
+    const llena = ancho * Math.min(1, dc);
+    const relleno = f.estado==='excedido' ? '#d64545'
+                  : f.estado==='rigidez'  ? '#0a5a80' : '#003e5c';
+    s += '<text x="14" y="'+(y+alto/2+4)+'" font-size="11.5" fill="#333">'+f.nom.slice(0,26)+'</text>';
+    s += '<rect x="'+x0+'" y="'+y+'" width="'+ancho+'" height="'+alto+'" rx="6" fill="'+
+         (f.gov==='res' ? '#eef2f6' : 'url(#rayas)')+'"/>';
+    s += '<rect x="'+x0+'" y="'+y+'" width="'+llena+'" height="'+alto+'" rx="6" fill="'+relleno+'"/>';
+    s += '<text x="'+(x0+8)+'" y="'+(y+alto/2+4)+'" font-size="11" fill="#fff" font-weight="700">'+f.dc.toFixed(2)+'</text>';
+    if(f.gov!=='res')
+      s += '<text x="'+(x1-6)+'" y="'+(y+alto/2+4)+'" font-size="9.5" fill="#5a6b7b" text-anchor="end">por rigidez</text>';
+  });
+
+  const yl = y0 + 3*(alto+sep) + 4;
+  s += '<line x1="'+x0+'" y1="'+yl+'" x2="'+x1+'" y2="'+yl+'" stroke="#e5e7eb"/>';
+  s += '<text x="'+x0+'" y="'+(yl+14)+'" font-size="9.5" fill="#5a6b7b">0</text>';
+  s += '<text x="'+x1+'" y="'+(yl+14)+'" font-size="9.5" fill="#5a6b7b" text-anchor="end">1.00 · capacidad agotada</text>';
+  s += '<text x="14" y="'+(yl+14)+'" font-size="9.5" fill="#5a6b7b">rayado = por rigidez</text>';
+  $('svg').innerHTML = s;
+}
+
+for(const k of IDS) $(k).addEventListener('input', pintar);
+pintar();
+</script>
+</body>
+</html>
