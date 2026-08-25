@@ -92,6 +92,24 @@ browser-harness contra su Chrome. Una sesión remota no alcanza ese navegador:
 son máquinas distintas. Por eso el entregable de este agente incluye siempre
 un `GUIA-MONTAJE.md` que esa sesión pueda ejecutar sin preguntar nada.
 
+**Y hay pantallas de GHL que ni siquiera cargan en un navegador sin pantalla.**
+El 25-ago se intentó cinco veces sacar el mapa de workflows desde GitHub
+Actions. El veredicto, con traza de progresión: el texto de la página creció
+una vez a los dos segundos —«Loading fresh data… Initializing…»— y se quedó
+clavado los 88 segundos restantes. **Atascado, no lento**: el constructor de
+workflows no termina de arrancar sin pantalla, y subir la espera no lo arregla.
+
+De ahí la frontera, que conviene saber antes de prometer nada:
+
+| | |
+|---|---|
+| **Actions** (`sesion`, `paginas`, `pegar-html`, `encender`, `restaurar-pagina`) | pantallas que sí cargan; corre sin nadie delante |
+| **browser-harness en el Mac** | el constructor de workflows, el de embudos, y todo lo que GHL dibuje con su app pesada |
+
+Cuando una tarea se atasque así, el dato que decide es **si el texto crece**.
+Si crece, hay que esperar más. Si se queda igual, esperar no es la respuesta y
+seguir subiendo el tiempo solo gasta corridas.
+
 ---
 
 ## 4. Cómo entregan los recursos de verdad

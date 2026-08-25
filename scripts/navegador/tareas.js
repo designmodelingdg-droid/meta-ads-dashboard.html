@@ -146,7 +146,33 @@ async function esperarTextoEnAlgunMarco(pagina, minimo, msMax, traza) {
   return mejor;
 }
 
+/* VEREDICTO 25-ago-2026 · esta tarea NO funciona desde Actions.
+ *
+ * Cinco corridas para llegar a un dato y no a otra hipotesis. La ultima
+ * entro a un solo workflow y espero 90 s con traza de progresion:
+ *
+ *     +2s · 37 car · Loading fresh data... Initializing...
+ *     SIN CARGAR (37 car · 1 marcos)     ← ~88 s despues, sin crecer una vez
+ *
+ * El texto crecio UNA vez, a los dos segundos, y se quedo clavado. No es
+ * lento: esta atascado. Subir el tiempo de espera no lo arregla — el
+ * constructor de workflows de GHL no termina de arrancar en un navegador sin
+ * pantalla. Y no es un iframe: `marcos: 1`, lo comprobamos despues de
+ * haberlo diagnosticado mal.
+ *
+ * Donde si corre: browser-harness contra el Chrome de siempre, en el Mac.
+ * Ahi la pagina ya arranca porque es un navegador normal, con su sesion.
+ * Ver BROWSER-HARNESS.md.
+ *
+ * Se deja el codigo, no se borra: el dia que GHL cambie ese arranque, esto
+ * vuelve a servir sin reescribirlo. Lo que no se hace es lanzarlo desde
+ * Actions esperando que salga bien.
+ */
 async function mapaFlujos(pagina, op) {
+  console.log('\n  AVISO · desde Actions esta tarea no termina: el constructor de\n' +
+              '  workflows de GHL se queda en «Initializing…» en un navegador sin\n' +
+              '  pantalla. Comprobado el 25-ago-2026 con 90 s de espera y traza.\n' +
+              '  El mapa se saca con browser-harness desde el Mac.\n');
   if (!fs.existsSync(FUENTE_FLUJOS)) {
     throw new Error('Falta ' + path.relative(RAIZ, FUENTE_FLUJOS) + '. Lo escribe ' +
                     'scripts/ghl_correos.py en la corrida de metricas semanales: ' +

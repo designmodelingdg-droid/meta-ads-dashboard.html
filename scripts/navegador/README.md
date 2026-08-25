@@ -130,9 +130,6 @@ Y un tope: ninguna corrida toca más de 25 objetos. Volver a lanzarla continúa.
 # LECTURA — comprobar que el secreto sigue sirviendo (empieza por aqui)
 node scripts/navegador/tareas.js sesion
 
-# LECTURA — el mapa que la API no da
-node scripts/navegador/tareas.js mapa-flujos --limite 25
-
 # LECTURA — inventario de páginas de Sites
 node scripts/navegador/tareas.js paginas
 
@@ -149,6 +146,36 @@ node scripts/navegador/tareas.js pegar-html \
   --url https://funnel.dgdesignmodeling.com/recursos \
   --aplicar
 ```
+
+### `mapa-flujos` no corre aquí — corre en el Mac
+
+**Comprobado el 25-ago-2026, después de cinco corridas.** La última entró a un
+solo workflow y esperó 90 segundos anotando cada vez que la página crecía:
+
+```
++2s · 37 car · Loading fresh data... Initializing...
+SIN CARGAR (37 car · 1 marcos)      ← ~88 s después, sin crecer una sola vez
+```
+
+El texto creció **una vez**, a los dos segundos, y ahí se quedó. Eso no es
+lento: **está atascado.** Subir el tiempo de espera no lo arregla — el
+constructor de workflows de GHL no termina de arrancar en un navegador sin
+pantalla. (Por el camino diagnostiqué que el texto estaba en un iframe. No lo
+estaba: `marcos: 1`. Queda anotado para que nadie vuelva por ahí.)
+
+Así que este es el primer trabajo que cae del lado de **browser-harness**, con
+el Chrome de siempre en el Mac, donde la página arranca porque es un navegador
+normal con su sesión. Ver [BROWSER-HARNESS.md](BROWSER-HARNESS.md).
+
+El código sigue en `tareas.js` a propósito, y la tarea sigue en el menú de
+Actions: el día que GHL cambie ese arranque vuelve a servir sin reescribir
+nada. Lo que ya no se hace es lanzarla desde Actions esperando que salga bien —
+si alguien lo intenta, la propia tarea lo avisa antes de empezar.
+
+Lo demás de esta lista (`sesion`, `paginas`, `encender`, `restaurar-pagina`,
+`pegar-html`) no está afectado: son pantallas que sí cargan.
+
+---
 
 `pegar-html` no verifica mirando la interfaz: **pide la página pública por HTTP**
 y comprueba que traiga los enlaces nuevos y ya no los viejos. Por eso `--url` es

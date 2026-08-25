@@ -15,7 +15,12 @@ on:
   workflow_dispatch:
     inputs:
       tarea:
-        description: "Qué hacer"
+        # «mapa-flujos» no termina desde aquí: el constructor de workflows de
+        # GHL se queda en «Initializing…» en un navegador sin pantalla
+        # (comprobado el 25-ago-2026 con 90 s de espera y traza de progresión).
+        # Se deja en el menú por si GHL cambia ese arranque; hoy el mapa se
+        # saca con browser-harness desde el Mac. Ver scripts/navegador/README.md.
+        description: "Qué hacer · ojo: mapa-flujos hoy no termina desde Actions, va por browser-harness"
         required: true
         type: choice
         options:
@@ -45,7 +50,7 @@ on:
         options: ["false", "true"]
         default: "false"
       limite:
-        description: "Máximo de objetos a recorrer (solo mapa-flujos)"
+        description: "Máximo de objetos a recorrer (solo mapa-flujos, que hoy no termina desde aquí)"
         required: false
         default: "25"
 
