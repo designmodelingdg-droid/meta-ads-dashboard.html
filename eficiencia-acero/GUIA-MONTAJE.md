@@ -123,7 +123,18 @@ El acceso queda ligado al contacto en el CRM y se concede por workflow.
    app de Cursos en el Client Portal. Son las dos causas típicas de «el
    portal se ve vacío».
 
-6. Cuando exista, pegar su URL en `gracias-agenda.html`:
+6. **La URL del producto termina en `/purchase-course`.** Comprobado el
+   25-ago contra las dos que ya funcionan:
+
+   ```
+   Zapatas → …/courses/products/7a9d1130-0681-44d8-b448-9904cb54af93/purchase-course
+   Test    → …/courses/products/3e9cf6a3-04cd-4a93-a7b8-2d5749206ebd/purchase-course
+   ```
+
+   El dominio es `designmodelingacademy.app.clientclub.net`, y la gracias de
+   Zapatas **no da ningún enlace directo**: solo ese botón. Ese es el estándar.
+
+7. Cuando exista, pegar su URL en `gracias-agenda.html`:
 
    ```js
    const URL_MEMBRESIA = '';   // ← aquí
