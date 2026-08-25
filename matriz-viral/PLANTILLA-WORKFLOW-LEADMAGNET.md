@@ -6,14 +6,19 @@ bien hecho, y para cada recurso nuevo se **duplica y se cambian seis cosas**.
 Cinco minutos en vez de media hora, y —lo que importa más— los defectos que ya
 costaron leads no se vuelven a colar, porque no se vuelven a escribir.
 
-> **Aviso de honestidad:** todavía no he visto por dentro los que montaste en
-> la carpeta *leadmagnet*. Desde aquí no puedo: la API de GHL solo devuelve
-> nombre, estado y fecha de un workflow, **no sus pasos**, y esa pantalla no
-> carga en un navegador sin pantalla (comprobado el 25-ago, cinco corridas).
-> Esta plantilla está escrita sobre el precedente documentado del bot ZAPATA.
-> En cuanto me pases la lectura de los tuyos —el encargo está en
-> `ENCARGO-LEER-FLUJOS.md`— la reescribo para que diga **tu** método y no el
-> heredado.
+> **Lo que sí se sabe de los de Dayana, y lo que no.** Por API se ve el nombre
+> y el estado; los pasos no, porque esa ruta devuelve 404 (comprobado, no
+> leído). Lo que se ve basta para lo importante:
+>
+> ```
+> published  ✅ IG ACERO · Comentario → DM + Membresía
+> published  ✅ FB ACERO · Comentario → DM + Membresía
+> ```
+>
+> **Montó dos workflows separados, uno por canal** — no dos ramas dentro de
+> uno, que era lo que pedía la guía vieja. Es más robusto, y por eso esta
+> plantilla ya está escrita con su método. El detalle de los pasos sigue
+> pendiente de la lectura por navegador (`ENCARGO-LEER-FLUJOS.md`).
 
 ---
 
@@ -23,7 +28,7 @@ Todo lo demás se queda igual. Esa es la gracia.
 
 | # | Qué | Ejemplo (ACERO) |
 |---|---|---|
-| 1 | **El nombre del workflow** | `Bot ACERO — IG/FB` |
+| 1 | **El nombre del workflow** | `IG ACERO · …` y `FB ACERO · …`, uno por canal |
 | 2 | **La palabra** del filtro | `acero` |
 | 3 | **La publicación** a la que se acota | la pieza del Sáb 23 |
 | 4 | **El enlace** de la respuesta pública y de los DM | `/acceso-gratis-verificaciones-acero-form` |
@@ -40,12 +45,19 @@ protecciones de abajo sin que nadie tenga que acordarse de ellas.
 Son las que costaron caro. Van explicadas para que se entienda por qué, no
 para que se obedezcan a ciegas.
 
-### 1 · Dos ramas de envío, una por canal
+### 1 · Un workflow por canal — el método de Dayana
 
-**Nunca una sola acción de «Send DM» compartida entre los dos disparadores.**
+**Un workflow para Instagram y otro para Facebook, separados.** No dos ramas
+dentro del mismo, y muchísimo menos una sola acción de «Send DM» compartida.
 
-Rama Instagram → DM por **Instagram**. Rama Facebook → DM por **Facebook
-Messenger**.
+```
+✅ IG ACERO · Comentario → DM + Membresía
+✅ FB ACERO · Comentario → DM + Membresía
+```
+
+Dos workflows es más seguro que dos ramas, y esa es la mejora: con archivos
+separados **no existe la posibilidad** de compartir la acción de envío por
+descuido. La estructura impide el error en vez de pedir que nadie lo cometa.
 
 Cuando un post nace en Instagram y aparece también en Facebook, quien comenta
 en la copia de Facebook tiene un **ID de Facebook**. Si el envío está atado
@@ -71,8 +83,9 @@ temario de un curso de pago a gente que había pedido una guía gratis.
 1. **Automation → Workflows**, carpeta *leadmagnet*.
 2. En el workflow maestro, menú **⋮ → Duplicate**.
 3. Renombrar (cambio 1).
-4. Entrar a **cada** disparador y cambiar la palabra (2) y la publicación (3).
-   Son dos disparadores: el de Instagram y el de Facebook. Los dos.
+4. Cambiar la palabra (2) y la publicación (3) en el disparador.
+   **Y repetir todo con el del otro canal** — son dos workflows, no uno.
+   Duplicar solo el de Instagram y olvidar el de Facebook es el descuido fácil.
 5. Recorrer los pasos cambiando enlaces (4), etiquetas (5) y textos (6).
 6. **Publicar.** Un workflow en borrador no dispara nada, y se ve igual de
    terminado en la lista.
@@ -107,3 +120,23 @@ Se mezclan seguido y mandan a montar lo que no es:
 | **El bot** | cuando esa persona **responde** al DM, toma la conversación | Patricio. Se le pasa qué contestar |
 
 El workflow entrega. El bot conversa después. Montar uno no monta el otro.
+
+
+---
+
+## Y limpiar los borradores que sobran
+
+Al duplicar quedan copias a medias. El 25-ago quedó una:
+
+```
+draft      IG ACERO · Comentario → DM + Membresía     ← sobra
+published  ✅ IG ACERO · Comentario → DM + Membresía
+```
+
+Un borrador no dispara nada, así que no hace daño hoy. **El problema es
+mañana:** en la lista se ve igual de terminado que el bueno, y si alguien lo
+publica por error salen **dos DM por cada comentario**.
+
+Por eso el `✅` delante del nombre en los publicados: se distingue de un
+vistazo cuál es el que corre. Y lo que sobra se borra o se renombra a
+`ZZ — borrar`, no se deja «por si acaso».

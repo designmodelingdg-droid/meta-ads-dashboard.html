@@ -56,7 +56,7 @@ DUPLICA ese formulario. No le cambies el redirect al original: puede estar en
 uso en algo que no se ve desde fuera, y duplicar nunca rompe nada. Al
 duplicado ponle de nombre «Lead Magnet ACERO — 5 verificaciones» y su redirect
 a la página de gracias de acero:
-https://funnel.dgdesignmodeling.com/acceso-gratis-calculadora-zapatas-gracias-page-5198
+https://funnel.dgdesignmodeling.com/acceso-gratis-verificaciones-acero-gracias
 
 Después cambia la landing de ACERO para que use el duplicado en vez del
 original.
@@ -104,7 +104,7 @@ VERIFICA: pide las dos páginas por HTTP y léeme el <title> de cada una.
 
 TAREA 4 — Renombrar la página de gracias.
 
-Hoy se llama acceso-gratis-calculadora-zapatas-gracias-page-5198 pero sirve
+Hoy se llama acceso-gratis-verificaciones-acero-gracias pero sirve
 contenido de acero. Renómbrala a:
   acceso-gratis-verificaciones-acero-gracias
 
