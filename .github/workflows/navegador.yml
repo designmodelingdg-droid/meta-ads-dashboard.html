@@ -19,11 +19,12 @@ on:
         required: true
         type: choice
         options:
+          - sesion
           - mapa-flujos
           - paginas
           - encender
           - restaurar-pagina
-        default: mapa-flujos
+        default: sesion
       objetivo:
         description: "Nombre del workflow o de la página (solo para encender / restaurar)"
         required: false

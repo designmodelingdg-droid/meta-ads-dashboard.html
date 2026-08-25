@@ -29,24 +29,67 @@ Es mejor que usuario y contraseña por tres razones concretas:
    falla en cuanto se active la verificación.
 3. **Se revoca cerrando sesión**, sin cambiar nada más.
 
-### Generarla (cinco minutos, una vez)
+### Generarla — cinco pasos, una sola vez
 
-En tu computadora, con Node instalado:
+Esto se hace **en tu computadora**, no en el servidor: hace falta un navegador
+con ventana para que puedas escribir tu clave y tu código de verificación.
+
+**1 · Comprobar que tienes Node.** En la Terminal:
+
+```bash
+node --version
+```
+
+Si responde algo como `v22.x`, listo. Si dice *command not found*, instala la
+versión **LTS** desde [nodejs.org](https://nodejs.org) y vuelve a abrir la
+Terminal.
+
+**2 · Instalar Playwright y su Chromium** (una vez en la vida):
 
 ```bash
 npm install -g playwright
-npx playwright open --save-storage=sesion.json https://app.gohighlevel.com/
+npx playwright install chromium
 ```
 
-Se abre un Chromium. **Entra normal**, con tu clave y tu 2FA. Cuando estés
-dentro y veas la subcuenta, cierra la ventana. Queda un `sesion.json`.
+**3 · Capturar la sesión.** Desde la carpeta del repositorio:
 
-Ese archivo **no va al repositorio**. Se pega tal cual en:
+```bash
+node scripts/navegador/capturar-sesion.js
+```
+
+Se abre un Chromium limpio — **no usa tu Chrome ni tus perfiles**. Entra a GHL
+como siempre: correo, clave y el código si te lo pide. En cuanto el script vea
+que estás dentro de la subcuenta, guarda solo y te dice qué hacer. No tienes
+que cerrar la ventana ni adivinar cuándo.
+
+Si algo sale a medias **no guarda nada**, a propósito: un archivo incompleto
+falla después, en mitad de una corrida, y ahí cuesta mucho más entender qué
+pasó.
+
+**4 · Pegarlo como secreto.** Abre `sesion.json`, copia todo (`Cmd/Ctrl + A`,
+`Cmd/Ctrl + C`) y pégalo en:
 
 > Settings → Secrets and variables → Actions → New repository secret
-> Name: `GHL_STORAGE_STATE` · Value: (todo el contenido de sesion.json)
+> Name: `GHL_STORAGE_STATE` · Value: (todo el contenido)
 
-Cuando caduque, la corrida lo dirá con todas las letras y se repite el proceso.
+Después **borra el archivo del disco**: `rm sesion.json`. Ya está en el
+repositorio como secreto y en el disco solo es un riesgo. Está en `.gitignore`,
+así que no se puede commitear por accidente, pero eso no lo protege de que se
+reenvíe por WhatsApp o quede en Descargas.
+
+**5 · Comprobar que quedó bien**, sin tocar nada:
+
+> Actions → Navegador GHL → Run workflow
+> tarea = `sesion` · aplicar = `false`
+
+Entra a Workflows y a Sites y dice si la sesión llega a las dos. Si te mandó al
+login, caducó: se repite desde el paso 3.
+
+### Qué es ese archivo, en claro
+
+Una **sesión abierta de tu CRM**. Quien lo tenga entra sin clave y sin 2FA,
+hasta que caduque o cierres sesión. No se manda por WhatsApp ni por correo.
+Para revocarla en cualquier momento: cierra sesión en GHL y deja de servir.
 
 ### El camino alternativo
 
@@ -78,6 +121,9 @@ Y un tope: ninguna corrida toca más de 25 objetos. Volver a lanzarla continúa.
 ## Las tareas
 
 ```bash
+# LECTURA — comprobar que el secreto sigue sirviendo (empieza por aqui)
+node scripts/navegador/tareas.js sesion
+
 # LECTURA — el mapa que la API no da
 node scripts/navegador/tareas.js mapa-flujos --limite 25
 

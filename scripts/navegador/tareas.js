@@ -3,6 +3,12 @@
  *
  * Uso (dentro del Action, que es donde viven los secretos):
  *
+ *   node scripts/navegador/tareas.js sesion
+ *       LECTURA. Comprueba que el secreto GHL_STORAGE_STATE sigue sirviendo y
+ *       que alcanza la subcuenta correcta. Es lo primero que hay que correr
+ *       despues de pegar el secreto, y lo primero que hay que correr cuando
+ *       una tarea empieza a fallar sin motivo claro.
+ *
  *   node scripts/navegador/tareas.js mapa-flujos
  *       LECTURA. Saca que plantilla de correo usa cada workflow. Es el limite
  *       conocido de la API: GET /workflows/ devuelve metadatos y nada de los
@@ -47,6 +53,47 @@ function guardar(nombre, datos) {
   const f = path.join(PRUEBAS, nombre);
   fs.writeFileSync(f, JSON.stringify(datos, null, 1));
   console.log(`\n   escrito ${path.relative(RAIZ, f)}`);
+}
+
+/* ── LECTURA · comprobar que el secreto sirve ───────────────────── */
+async function sesion(pagina) {
+  console.log('\nComprobando la sesion…');
+  const url = pagina.url();
+  console.log(`   estamos en: ${url}`);
+
+  // Se entra a dos secciones distintas porque una sesion puede seguir viva y
+  // aun asi no tener permiso sobre la subcuenta que nos importa. Confirmar el
+  // login no es confirmar el acceso.
+  const puertas = [
+    ['workflows', `${BASE}/automation/workflows`],
+    ['sites', `${BASE}/funnels-websites/websites`],
+  ];
+  const visto = {};
+  for (const [nombre, destino] of puertas) {
+    await pagina.goto(destino, { waitUntil: 'domcontentloaded' });
+    await pagina.waitForTimeout(6000);
+    const actual = pagina.url();
+    const echado = /\/login|\/oauth/i.test(actual);
+    const cuenta = actual.includes(LOCATION);
+    visto[nombre] = { alcanzado: !echado && cuenta };
+    console.log(`   ${nombre}: ${visto[nombre].alcanzado ? 'OK' : 'NO'}` +
+                (echado ? ' (nos mando al login)' : cuenta ? '' : ' (otra subcuenta)'));
+    if (!visto[nombre].alcanzado) await evidencia(pagina, `sesion-${nombre}`);
+  }
+
+  const todo = Object.values(visto).every(v => v.alcanzado);
+  // No se guarda nada de la pantalla: solo si sirve y cuando se comprobo. Con
+  // eso basta para saber si hay que regenerar el secreto.
+  guardar('sesion.json', {
+    comprobado: new Date().toISOString().slice(0, 10),
+    location: LOCATION, secciones: visto, sirve: todo,
+  });
+  if (!todo) {
+    throw new Error('La sesion no llega a todo. Si dice «nos mando al login», ' +
+                    'caduco: hay que regenerar GHL_STORAGE_STATE con ' +
+                    'scripts/navegador/capturar-sesion.js.');
+  }
+  console.log('\n   La sesion sirve. No se toco nada.');
 }
 
 /* ── LECTURA · el mapa que la API no da ─────────────────────────── */
@@ -200,6 +247,7 @@ async function restaurarPagina(pagina, op) {
 }
 
 const TAREAS = {
+  'sesion': sesion,
   'mapa-flujos': mapaFlujos,
   'paginas': paginas,
   'encender': encender,
