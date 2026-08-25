@@ -1,0 +1,144 @@
+# Montaje en GHL — «Las 5 verificaciones en acero»
+
+**Para la sesión de Claude Code del Mac, con browser-harness.**
+Todo lo que va aquí ya está construido y publicado. Esto es solo el montaje
+dentro de GoHighLevel, que es lo único que no se puede hacer desde el
+repositorio: su API v2 tiene tres `GET` para Funnels y Sites, y nada de
+escritura.
+
+---
+
+## Lo que ya existe
+
+Publicado en GitHub Pages en cuanto se fusione la rama:
+
+```
+https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/eficiencia-acero/
+  index.html           landing de captura
+  guia.html            la guía, 5 verificaciones con norma citada
+  app.html             el verificador de eficiencia
+  gracias-agenda.html  página de gracias con los dos accesos + calendario
+```
+
+| | |
+|---|---|
+| Palabra del bot | `ACERO` |
+| Token de acceso | `dm2026` (igual que zapatas y test — mismo esquema) |
+| Piezas de la matriz que cubre | `ago-acero-conexiones` (Mié 20) · `ago-blog-acero-verificaciones` (Sáb 23) · `ago-acero-sobredimensionado` (Mié 27) |
+
+---
+
+## Paso 1 · El formulario
+
+**No crear uno nuevo si ya existe el de lead magnets con el campo de perfil.**
+Ester lo subió a los siete formularios el 25-ago; reutilizar ese esquema.
+
+Campos: nombre, correo, WhatsApp y **¿Cuál es tu perfil actualmente?**
+(desplegable único, obligatorio, mapeado al campo personalizado del contacto
+`{{contact.cul_es_tu_perfil_actualmente}}` — ojo, la clave lleva `cul_`, no
+`cual_`; GHL se comió la tilde al generarla, y escribirla bien no da error:
+sale vacío).
+
+Al terminar, el formulario **redirige** a la página de gracias.
+
+Cuando exista, hay que pegar su URL en `index.html`:
+
+```js
+const GHL_FORM_IFRAME_URL = '';   // ← aquí va la URL del form nativo
+```
+
+Con eso el formulario nativo de GHL reemplaza al propio y el contacto entra
+al CRM directo, sin webhook y sin costo por ejecución.
+
+> `GHL_WEBHOOK_URL` se deja **vacío a propósito**. El Inbound Webhook de GHL
+> es premium y cobra por ejecución. Con el formulario nativo no hace falta.
+
+---
+
+## Paso 2 · El funnel, dos páginas
+
+**Página 1 — captura.** Elemento Custom Code, ancho completo, sin padding, con
+el contenido de `index.html`.
+
+**Página 2 — gracias.** Igual, con `gracias-agenda.html`. Ya trae el
+calendario de booking embebido (`bIVuNHNojGEgH3gf6yXe`, el mismo de zapatas) y
+los dos botones de acceso con el token.
+
+Nombrar siguiendo la convención que ya usa el equipo:
+
+```
+acceso-gratis-verificaciones-acero-form
+acceso-gratis-verificaciones-acero-gracias
+```
+
+> **Y avisar a Dayana del nombre exacto.** El 25-ago un renombrado sin aviso
+> dejó dos lead magnets en 404 durante días, porque esos enlaces viven
+> embebidos en la página de recursos, en los bots y en el blog. Ese es el
+> acuerdo nuevo.
+
+---
+
+## Paso 3 · El bot de `ACERO`
+
+**Ya existe un bot de ACERO**, y hoy responde con el temario de la
+Especialización — un producto de pago — a gente que pidió una guía técnica.
+Eso es lo que hay que cambiar: que mande **esta guía**.
+
+Patrón completo en `calculadora-zapatas/BOT-ZAPATA-GHL.md`. Lo que no se puede
+omitir:
+
+**Una acción de envío por cada disparador, separadas.** Rama Instagram → DM
+por Instagram. Rama Facebook → DM por Facebook Messenger. **Nunca una sola
+acción compartida.** Cuando el post es de origen Instagram y aparece también
+en Facebook, quien comenta en la copia de Facebook tiene un ID de Facebook: si
+el DM está atado solo al canal de Instagram, el workflow marca el paso como
+ejecutado y el mensaje nunca sale. En julio se perdieron unos 35 leads así, y
+nadie lo vio porque la respuesta pública sí salía.
+
+**La respuesta pública lleva siempre el enlace directo**, nunca solo «te
+escribí al DM». Es la red de seguridad real si el canal falla.
+
+**Probar con un comentario real en las dos superficies** antes de publicar el
+post: en Instagram y en la copia de Facebook. Es la única forma de detectar
+esa falla antes de que la paguen los leads.
+
+Etiquetas: `lead-acero-verificaciones` + `origen-bot-acero`.
+
+---
+
+## Paso 4 · Comunidades
+
+Las comunidades son de GHL. Vincular la guía en la pestaña Learning de cada
+grupo y publicar el anuncio con el enlace de la landing.
+
+---
+
+## Paso 5 · La verificación que no se salta
+
+Después de montar, **no basta con que los botones se pongan verdes**. Hay que
+recorrerlo entero como lo haría un lead:
+
+1. Comentar `ACERO` en un post real, **en Instagram y en Facebook**.
+2. Que llegue el DM en las dos, con el enlace.
+3. Abrir el enlace → llenar el formulario → llegar a la página de gracias.
+4. Abrir el verificador y la guía desde los botones: deben entrar **sin
+   candado**.
+5. Buscar el contacto en el CRM y confirmar que **el campo de perfil quedó
+   guardado**. Que el formulario tenga la pregunta no significa que el dato
+   llegue al contacto — eso solo se sabe mirando la ficha.
+6. Pedir la página pública por HTTP y confirmar que carga.
+
+El punto 5 es el que más veces falla en silencio, y es justo el dato que
+Dayana necesita para mover la pauta.
+
+---
+
+## Lo que queda pendiente y no bloquea el montaje
+
+- **Ejemplos numéricos de placa base.** La §5 es una lista de qué verificar,
+  sin cifras — no las necesita. Si algún día se quiere un ejemplo trabajado,
+  sale de un cálculo real del equipo, nunca inventado.
+- **Rangos de kg/m² por tipología.** El verificador muestra el kg/m² como dato
+  sin juicio. No existe rango normativo: AISC y la NEC no lo traen, es dato de
+  obra. Se enciende el panel comparativo el día que haya rangos de proyectos
+  reales de DMA.

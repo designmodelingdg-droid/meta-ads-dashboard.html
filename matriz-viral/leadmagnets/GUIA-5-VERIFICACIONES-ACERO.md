@@ -189,9 +189,6 @@ con el perfil. Y termina copiado de otro proyecto.
 > **Fuente:** AISC **Design Guide 1**, *Base Plate and Anchor Rod Design*,
 > para el dimensionamiento; y el apéndice de anclajes al hormigón de ACI 318
 > para los modos de falla del hormigón.
-> 🔶 Los valores concretos de ejemplo hay que tomarlos del temario de la
-> Especialización o de un cálculo del equipo — no van inventados.
-
 **La regla que te llevas:** la placa base es la verificación que más veces se
 copia de otro proyecto, y la que más veces está mal por eso.
 
@@ -225,7 +222,7 @@ según su propio temario.
 | 2 · Pandeo lateral-torsional | Módulo 2 — misma unidad de estabilidad |
 | 3 · Derivas y P-Δ | Módulo 1 — *«evaluación de desplazamientos y derivas laterales»* |
 | 4 · Coherencia de conexiones | Módulo 3 completo — *«cálculo y verificación de esfuerzos en uniones»* |
-| 5 · Placa base y anclajes | 🔶 **no aparece explícito en el temario** |
+| 5 · Placa base y anclajes | Módulo 3 — la placa base es una conexión: *«modelado de uniones en columnas, vigas y nudos complejos»* + asesoría personalizada |
 
 Y hay una unidad que es exactamente el problema que ataca la app que acompaña
 a esta guía: Módulo 2, *«optimización de perfiles y control de peso
@@ -250,5 +247,9 @@ No es una certificación ni un diploma.
 | ✅ | Edición de AISC — **360-16**, fijada por el Módulo 1 del temario |
 | ✅ | λp y λr del ala en flexión — verificados |
 | ✅ | Límites de deriva NEC-SE-DS — verificados (0.02 metálicas / 0.01 mampostería) |
-| 🔶 | Ejemplos numéricos de la §5 — siguen sin fuente. El temario no los trae |
-| 🔶 | **Placa base no aparece en el temario ni en el folleto.** La guía la promete porque el caption de la pieza del Sáb 23 la nombró. Decisión de Dayana: o se cubre en el curso, o el puente de la §5 se deja en «te lo resolvemos en asesoría» y no en «lo ves en el módulo X» |
+| ✅ | Placa base — **decisión de Dayana (25-ago): se cubre.** El puente va al Módulo 3, que es donde viven las uniones, más la asesoría personalizada |
+
+La §5 es una **lista de qué verificar**, no un ejemplo resuelto. No lleva
+cifras y por eso no necesita ninguna fuente numérica: cada valor depende del
+proyecto. Si algún día se quiere un ejemplo trabajado, sale de un cálculo real
+del equipo — nunca inventado.

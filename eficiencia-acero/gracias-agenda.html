@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Listo — aquí está tu acceso · Design Modeling Academy</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@500;600;700;800;900&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#003e5c; --navy2:#001e30; --azul-medio:#0a5a80;
+    --orange:#ca7520; --orange-d:#e8a04a; --orange-p:#f7e8cc;
+    --crema:#fafaf7; --ink:#333; --ink2:#5a6b7b; --line:#e5e7eb; --ok:#1e9e6a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Nunito',system-ui,sans-serif;color:var(--ink);background:var(--crema);line-height:1.6}
+  h1,h2,h3{font-family:'Overpass',sans-serif;line-height:1.2}
+  .container{max-width:820px;margin:0 auto;padding:0 20px}
+
+  .hero{background:linear-gradient(135deg,var(--navy2),var(--navy));color:#fff;text-align:center;padding:46px 0 40px}
+  .hero img{height:46px;margin-bottom:14px;filter:brightness(0) invert(1)}
+  .ok-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(30,158,106,.16);border:1px solid rgba(30,158,106,.4);color:#7fe0b4;font-family:'Overpass',sans-serif;font-weight:700;font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;padding:6px 14px;border-radius:99px;margin-bottom:14px}
+  .hero h1{font-size:clamp(1.7rem,4.4vw,2.5rem);font-weight:800;text-wrap:balance}
+  .hero p{color:#c3d1dc;margin-top:12px;font-size:1.04rem}
+
+  .acceso{background:#fff;border-radius:16px;box-shadow:0 18px 46px rgba(0,62,92,.16);padding:28px;margin:-26px auto 0;position:relative;z-index:2;max-width:660px}
+  .acceso h2{font-size:1.2rem;color:var(--navy);margin-bottom:6px}
+  .acceso p.mini{font-size:.9rem;color:var(--ink2);margin-bottom:18px}
+  .btn-big{display:block;padding:17px 20px;border-radius:12px;background:var(--orange);color:#fff;font-family:'Overpass',sans-serif;font-weight:800;font-size:1.04rem;text-align:center;text-decoration:none;margin-bottom:11px}
+  .btn-big:hover{background:var(--orange-d)}
+  .btn-big.sec{background:#eef2f6;color:var(--navy)}
+  .btn-big.sec:hover{background:#e2e9f0}
+  .guardalo{background:var(--orange-p);border-radius:9px;padding:11px 14px;font-size:.83rem;color:#7a4a10;margin-top:14px;line-height:1.5}
+
+  section{padding:44px 0}
+  h2.sec{font-size:clamp(1.3rem,3vw,1.75rem);font-weight:800;color:var(--navy);text-wrap:balance}
+  p.lead{color:var(--ink2);margin-top:10px}
+
+  .cinco{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:20px}
+  .c{background:#fff;border:1px solid var(--line);border-radius:10px;padding:13px}
+  .c b{display:block;font-family:'Overpass',sans-serif;font-size:.8rem;color:var(--orange);margin-bottom:3px}
+  .c span{font-size:.86rem;color:var(--ink2)}
+
+  .cal{background:#fff;border-radius:16px;box-shadow:0 14px 38px rgba(0,62,92,.12);overflow:hidden;margin-top:22px}
+  .cal-head{background:linear-gradient(135deg,var(--navy),var(--azul-medio));color:#fff;padding:24px;text-align:center}
+  .cal-head .label{font-family:'Overpass',sans-serif;font-size:.72rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--orange-d)}
+  .cal-head h2{color:#fff;font-size:1.28rem;margin-top:8px}
+  .cal-head p{color:#c3d1dc;font-size:.93rem;margin-top:8px}
+  .cal-frame{padding:8px;min-height:760px}
+  .cal-frame iframe{width:100%;min-height:750px;border:none;overflow:hidden}
+
+  footer{background:var(--navy2);color:#8fa2b3;padding:30px 0;font-size:.8rem;text-align:center;line-height:1.7}
+  footer a{color:var(--orange-d)}
+  .disc{max-width:48rem;margin:0 auto 12px;font-size:.77rem;color:#7f93a4}
+</style>
+</head>
+<body>
+
+<div class="hero"><div class="container">
+  <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04bbc1fa8afa3be0bb00d8.png" alt="Design Modeling Academy">
+  <div><span class="ok-badge">✓ Registro confirmado</span></div>
+  <h1>Listo. Aquí está tu acceso.</h1>
+  <p>Sin esperas y sin revisar el correo — entra desde los botones de abajo.</p>
+</div></div>
+
+<div class="container">
+  <div class="acceso">
+    <h2>Tus dos accesos</h2>
+    <p class="mini">Ábrelos ahora. Quedan guardados en este navegador.</p>
+
+    <a class="btn-big" id="btnApp" href="#" target="_blank" rel="noopener">
+      🔧 Abrir el verificador de eficiencia →
+    </a>
+    <a class="btn-big sec" id="btnGuia" href="#" target="_blank" rel="noopener">
+      📄 Leer las 5 verificaciones →
+    </a>
+
+    <div class="guardalo">
+      <b>Guarda esta página.</b> Es tu enlace de acceso. Si cambias de
+      computadora, vuelve aquí y entra desde estos mismos botones.
+    </div>
+  </div>
+</div>
+
+<section><div class="container">
+  <h2 class="sec">Lo que acabas de desbloquear</h2>
+  <p class="lead">Cinco verificaciones, cada una con su cláusula de norma — AISC 360-16 y NEC-SE-DS.</p>
+  <div class="cinco">
+    <div class="c"><b>01</b><span>Pandeo local</span></div>
+    <div class="c"><b>02</b><span>Lateral-torsional</span></div>
+    <div class="c"><b>03</b><span>Derivas y P-Δ</span></div>
+    <div class="c"><b>04</b><span>Conexiones</span></div>
+    <div class="c"><b>05</b><span>Placa base</span></div>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="container">
+  <div class="cal">
+    <div class="cal-head">
+      <span class="label">Opcional · sin costo</span>
+      <h2>¿Quieres que revisemos tu caso?</h2>
+      <p>Agenda una sesión con nuestro equipo. Si después de usar el verificador te queda la duda de por dónde seguir, aquí la resolvemos — y si te sirve, te contamos cómo lo trabajamos en la Especialización.</p>
+    </div>
+    <div class="cal-frame">
+      <iframe src="https://api.leadconnectorhq.com/widget/booking/bIVuNHNojGEgH3gf6yXe" scrolling="no" title="Agendar sesión"></iframe>
+    </div>
+  </div>
+</div></section>
+
+<footer><div class="container">
+  <p class="disc"><b>Material educativo y de predimensionamiento.</b> No sustituye el criterio ni la responsabilidad del profesional que firma. Toda verificación debe realizarse con la norma vigente aplicable al proyecto. No es una certificación ni un diploma.</p>
+  <p>Design Modeling Academy · <a href="https://www.dgdesignmodeling.com" target="_blank" rel="noopener">dgdesignmodeling.com</a></p>
+</div></footer>
+
+<script src="https://link.msgsndr.com/js/form_embed.js"></script>
+<script>
+/* Los accesos se arman con el token. Se toma primero de la URL (que es como
+ * llega quien acaba de registrarse, venga del form nativo de GHL o del
+ * propio) y si no viene, del token por defecto — nunca se deja a nadie
+ * fuera en esta pagina: aqui ya se registro.
+ *
+ * URL_BASE se deja absoluta a proposito: esta pagina tambien vive pegada
+ * dentro de GHL, donde las rutas relativas no resuelven al repositorio.  */
+const URL_BASE      = 'https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/eficiencia-acero/';
+const TOKEN_DEFECTO = 'dm2026';
+
+(function(){
+  const t = new URLSearchParams(location.search).get('acceso') || TOKEN_DEFECTO;
+  try{ localStorage.setItem('dm_acero_acceso', t); }catch(e){}
+  document.getElementById('btnApp').href  = URL_BASE + 'app.html?acceso=' + t;
+  document.getElementById('btnGuia').href = URL_BASE + 'guia.html?acceso=' + t;
+})();
+</script>
+</body>
+</html>
