@@ -87,8 +87,27 @@ workflow de la palabra y las comunidades. La API v2 de GHL tiene tres `GET`
 para Funnels y Sites y **nada de escritura** — comprobado contra su
 documentación el 24-ago-2026.
 
+**Y de los workflows la API solo da la lista.** Comprobado el 25-ago con la
+sonda, no leído: `/workflows/{id}` y sus variantes devuelven **404** — la ruta
+no existe, no es un permiso que se pueda pedir. Lo único que se obtiene es
+`createdAt · id · locationId · name · status · updatedAt · version`. Ni un
+paso, ni un disparador, ni un enlace. Se vuelve a comprobar cuando haga falta
+con el Action **Sonda GHL**.
+
+**Ojo con el estado:** ese `status` es el único sitio donde se ve si un workflow
+quedó en **draft**. Un borrador no dispara nada y en la pantalla se ve igual de
+terminado que uno publicado.
+
 **Quién lo monta:** la sesión de Claude Code del **Mac de Dayana**, que tiene
-browser-harness contra su Chrome. Una sesión remota no alcanza ese navegador:
+browser-harness contra su Chrome. El encargo se le entrega **escrito y
+verificable**, con la comprobación de cada paso dentro — no «monta esto».
+Ejemplos que ya sirvieron: `eficiencia-acero/ENCARGO-HARNESS.md`,
+`ENCARGO-MEMBRESIA.md`, `scripts/navegador/GUIA-MAPA-FLUJOS-MAC.md`.
+
+**Y el encargo se suma a la guía, no la reemplaza.** El 25-ago escribí un
+encargo con los cuatro defectos que había encontrado y no arrastré el Paso 3;
+la sesión trabajó sobre el encargo y **la membresía se quedó fuera**. Si el
+encargo es parcial, hay que decir qué queda fuera y por qué. Una sesión remota no alcanza ese navegador:
 son máquinas distintas. Por eso el entregable de este agente incluye siempre
 un `GUIA-MONTAJE.md` que esa sesión pueda ejecutar sin preguntar nada.
 
@@ -111,6 +130,142 @@ Si crece, hay que esperar más. Si se queda igual, esperar no es la respuesta y
 seguir subiendo el tiempo solo gasta corridas.
 
 ---
+
+---
+
+## 3 bis · El orden completo, de punta a punta
+
+Esto es lo que se ejecuta, en este orden. Cada paso dice **quién** lo hace y
+**cómo se comprueba** — y la comprobación nunca es mirar el editor.
+
+| # | Paso | Dónde | Se comprueba |
+|---|---|---|---|
+| 1 | Elegir la pieza de la matriz que lo promete | repo | existe en el calendario |
+| 2 | La guía o la app | repo | fórmulas 1:1 contra la fuente |
+| 3 | Landing + página de gracias | repo | las dos abren |
+| 4 | La imagen de la tarjeta | Higgsfield/externo | 1672×941, fondo claro |
+| 5 | Publicar en Pages | Action | las cuatro dan 200 por HTTP |
+| 6 | El funnel, dos páginas | **navegador** | las dos dan 200 |
+| 7 | El formulario | **navegador** | llenarlo de verdad |
+| 8 | La membresía | **navegador** | entrar al portal |
+| 9 | El workflow de la palabra | **navegador** | comentar en IG **y** en FB |
+| 10 | La tarjeta en el hub | repo + navegador | `curl` a `/recursos` |
+| 11 | Las comunidades | **navegador** | el enlace abre |
+| 12 | **La pieza que anuncia el recurso** | repo | está en el calendario |
+
+**El paso 12 no es opcional y se olvida siempre.** Un recurso sin la pieza que
+lo anuncia es un recurso que nadie pide. Pasó el 25-ago: agosto tenía tres
+piezas de ACERO —Mié 20, Sáb 23, Mié 27— y **ninguna anunciaba el recurso**. Se
+prometía «comenta ACERO» y detrás no había nada.
+
+**El recurso no está terminado cuando la app funciona. Está terminado cuando
+alguien puede pedirlo, recibirlo y usarlo.**
+
+---
+
+## 3 ter · La trampa de los formularios clonados
+
+**Descubierta el 25-ago-2026 y es la más cara de todas las de este archivo.**
+
+Dayana llenó un formulario de lead magnet y no recibió el recurso: cayó en la
+confirmación de un webinar de **febrero de 2025**. Pasaba en **los ocho**.
+
+Y **no se veía mirando la configuración**: el destino por defecto de los ocho
+estaba bien, uno por uno. Lo que mandaba era una **regla condicional**, que en
+GHL **gana sobre el destino por defecto**:
+
+```
+si  full_name está lleno  O  email está lleno  O  phone está lleno
+entonces → redirigir a /webinar-certificados-confirmacion
+```
+
+Con **«o»** y con **«está lleno»** sobre campos **obligatorios**, esa condición
+se cumple en el **100%** de los envíos. El destino por defecto no se alcanza
+nunca.
+
+Los contactos **sí entraban al CRM** —el formulario guarda antes de redirigir—
+así que los números de leads se veían perfectos. Lo que no hubo fue entrega.
+
+### Todo lo que viaja cuando se clona un formulario
+
+Y hay que revisarlo **cada vez**, porque en GHL casi todo formulario nuevo nace
+de una copia:
+
+| Qué hereda | Cómo se vio el 25-ago |
+|---|---|
+| **La regla condicional** | los ocho mandaban al webinar de feb-2025 |
+| **El destino por defecto** | el Test de Nivel apuntaba a la gracias del Curso Introductorio |
+| **El texto del botón** | el de ACERO decía «Quiero mi Curso Introductorio gratis» |
+| **El asunto del correo** | los ocho decían «Reserva de cupo exitosa» |
+| **El nombre del campo** | el nivel de BIM se guarda en un campo llamado «Descarga Gratis la Guia BIM» |
+
+### La comprobación, que ya está automatizada
+
+```bash
+python3 scripts/formularios_destino.py
+```
+
+Resuelve el payload del widget de GHL para leer el **destino real**, no el que
+se ve al lado de `redirectUrl` —en ese payload hay varias URLs y solo una es la
+activa— y **falla** si alguno no manda a su propia página de gracias. Corre
+solo en las métricas semanales.
+
+**Pero el script no lo encontró: lo encontró Dayana llenando el formulario.** El
+script existe para que no vuelva, no para sustituir esa prueba.
+
+---
+
+## 3 quater · La membresía, con el patrón real
+
+Comprobado el 25-ago mirando cómo entregan **hoy** los dos que funcionan:
+
+```
+Zapatas → …/courses/products/7a9d1130-0681-44d8-b448-9904cb54af93/purchase-course
+Test    → …/courses/products/3e9cf6a3-04cd-4a93-a7b8-2d5749206ebd/purchase-course
+```
+
+1. El dominio es `designmodelingacademy.app.clientclub.net`.
+2. **La URL termina en `/purchase-course`**, no en el ID a secas.
+3. **La gracias de Zapatas no da ningún enlace directo.** Solo el botón del
+   portal. Cero referencias a `github.io` en esa página. Ese es el estándar.
+
+El montaje: producto → una lección por entregable → la app **por iframe con
+`?acceso=TOKEN`** → oferta Free → acción *Membership Grant Offer* en el
+workflow.
+
+**Iframe y no código pegado:** la fuente vive en Pages, y una corrección se
+publica una vez y se refleja sola en los tres sitios.
+
+Dos causas típicas de «el portal se ve vacío»: no publicar **el producto** (solo
+la lección y la oferta), y no habilitar la app de Cursos en el Client Portal.
+
+**Mientras la membresía no exista, la gracias entrega el acceso directo con
+token.** Primero que funcione, después que funcione bonito.
+
+---
+
+## 3 quinquies · La imagen de la tarjeta
+
+| | |
+|---|---|
+| Tamaño | **1672 × 941 px** — el de las tarjetas que ya existen |
+| Fondo | **claro**, crema o blanco |
+| Márgenes | nada importante a menos de 60 px del borde |
+
+El fondo claro no es gusto: la tarjeta pinta con `contain` y rellena en
+**blanco**. Una pieza navy deja dos bandas y parece un error de montaje.
+
+**Generar la pieza con el hueco del logo vacío y pegar el logo después.** Los
+modelos de imagen **redibujan** los logos en vez de pegarlos, y casi nunca dan
+con la marca. El 25-ago ChatGPT devolvió un triángulo tipo techo en lugar de la
+grúa torre de DMA, más una línea «ACADEMY» que el logo no lleva. El archivo
+real está en el CDN: `6a04bbc1fa8afa3be0bb00d8.png`.
+
+Sobre fondo claro el logo va **tal cual**; sobre navy se blanquea con
+`filter:brightness(0) invert(1)`.
+
+Se sube al Media Storage de GHL, y esa URL va en el `--img:url(...)` de la
+tarjeta del hub.
 
 ## 4. Cómo entregan los recursos de verdad
 
@@ -147,6 +302,28 @@ Corrección de Dayana, 25-ago. Mezclarlas manda a montar lo que no es.
 |---|---|---|
 | **Workflow** | Alguien comenta la palabra en **esa publicación** → le llega por DM el texto y los recursos, automático | Se monta con el recurso |
 | **Bot** | Cuando esa persona **responde** al DM, toma la conversación | Patricio. Se le pasa qué contestar |
+
+### Un workflow por canal — el método de Dayana, 25-ago
+
+**No dos ramas dentro de uno: dos workflows separados.**
+
+```
+✅ IG ACERO · Comentario → DM + Membresía
+✅ FB ACERO · Comentario → DM + Membresía
+```
+
+Es mejor que lo que decía la guía vieja. Con archivos separados **no existe la
+posibilidad** de compartir la acción de envío por descuido — la estructura
+impide el error en vez de pedir que nadie lo cometa.
+
+Se duplica y se cambian seis cosas: nombre, palabra, publicación, enlaces,
+etiquetas y textos. Todo lo demás se queda igual. El detalle está en
+`matriz-viral/PLANTILLA-WORKFLOW-LEADMAGNET.md`.
+
+**Y se limpian los borradores que sobran.** Al duplicar quedan copias a medias;
+el 25-ago quedó un `IG ACERO` en draft. No dispara nada, pero en la lista se ve
+igual de terminado que el bueno, y si alguien lo publica salen **dos DM por
+comentario**. Por eso el `✅` delante de los publicados.
 
 El disparador va **acotado a la publicación concreta**, no a cualquier post.
 Abierto se dispara con comentarios de piezas viejas que prometían otra cosa —
@@ -232,3 +409,47 @@ vuelve a pegar en GHL. Si no, el recurso existe y nadie lo encuentra.
 - **Nunca llamar certificación o diploma** a un recurso gratuito.
 - **Datos personales del CRM no entran al repositorio.** Ni nombres, ni
   teléfonos, ni correos, ni cuerpos de mensajes. Solo agregados.
+
+
+---
+
+## 9. Los skills que se usan, y cuándo
+
+| Skill | Para qué | Cuándo |
+|---|---|---|
+| `leadmagnet-app` | el método de construcción y la implementación de referencia | pasos 2 y 3 |
+| `carrusel-studio` | la pieza que anuncia el recurso, si es carrusel | paso 12 |
+| `matriz-semanal` | meter la pieza en la matriz y seguir su métrica | paso 12 |
+| `landing-agenda` | la página de gracias, si hace falta desde cero | paso 3 |
+| `higgsfield-art-director` | la imagen de la tarjeta | paso 4 |
+
+Este agente decide **qué** se construye y **quién monta cada parte**. Los skills
+traen el método.
+
+---
+
+## 10. Lo que dejó el 25-ago-2026, para no repetirlo
+
+Un día entero de trabajo sobre el recurso de ACERO. Lo que se aprendió y ya
+está escrito arriba, resumido para quien llegue nuevo:
+
+1. **Un formulario que guarda el contacto parece que funciona.** El CRM crece,
+   los números de leads se ven bien, y la persona no recibe nada. Es la misma
+   forma del fallo de julio con otro disfraz.
+2. **La configuración puede estar bien y el comportamiento estar mal.** Una
+   regla condicional gana sobre el destino por defecto. Mirar la pantalla de
+   destino no basta.
+3. **Todo formulario nuevo nace de una copia**, y la copia trae el botón, el
+   asunto del correo, el nombre del campo y las reglas del original.
+4. **El encargo se suma a la guía, no la reemplaza.**
+5. **Hay pantallas de GHL que no cargan sin navegador con pantalla.** El
+   constructor de workflows es una: se queda en «Initializing…» y no avanza.
+   Eso es browser-harness, no Actions.
+6. **Los modelos de imagen redibujan los logos.** Se genera con el hueco vacío.
+7. **La pieza que anuncia el recurso es parte del recurso.**
+
+Y la que manda sobre todas: **verificar es leer el otro lado.** Pedir la página
+por HTTP, llenar el formulario de verdad, comentar de verdad en las dos
+superficies, abrir la ficha del contacto. Un clic dado no es un cambio
+guardado, un cambio guardado no es un cambio publicado, y un formulario
+enviado no es un recurso entregado.
