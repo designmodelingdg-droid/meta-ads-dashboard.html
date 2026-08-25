@@ -147,6 +147,35 @@ node scripts/navegador/tareas.js pegar-html \
   --aplicar
 ```
 
+### Antes de eso: ¿y por qué no se pide por API y ya?
+
+Porque no existe la ruta. **Comprobado el 25-ago con la sonda**, no leído en la
+documentación:
+
+```
+404  /workflows/{id}                    la ruta no existe
+404  /workflows/{id}?locationId=…       la ruta no existe
+404  /workflows/{id}/actions            la ruta no existe
+404  /workflows/{id}/steps              la ruta no existe
+404  /workflows/{id}/versions           la ruta no existe
+401  v1 · /workflows/                   el token no autentica ahí
+404  v1 · /workflows/{id}               la ruta no existe
+```
+
+**404 y no 403**, que es la diferencia que importa: no es que falte un permiso
+que se pueda pedir — la ruta no está en la API. Lo único que devuelve
+`/workflows/` es la lista, y cada entrada trae exactamente siete campos:
+
+```
+createdAt · id · locationId · name · status · updatedAt · version
+```
+
+Ni un paso, ni un disparador, ni un enlace. Se corre a mano con el Action
+**Sonda GHL** cuando haga falta volver a comprobarlo; el día que HighLevel
+abra el endpoint, la sonda lo va a ver antes que nadie.
+
+---
+
 ### `mapa-flujos` no corre aquí — corre en el Mac
 
 **Comprobado el 25-ago-2026, después de cinco corridas.** La última entró a un
