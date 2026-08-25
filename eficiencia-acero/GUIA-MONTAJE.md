@@ -299,7 +299,7 @@ el HTML pegado.
 ### 3 · La página de gracias se llama «calculadora-zapatas»
 
 ```
-acceso-gratis-calculadora-zapatas-gracias-page-5198
+acceso-gratis-verificaciones-acero-gracias
 ```
 
 Sirve el contenido de acero, pero se llama zapatas. Rompe la convención del
