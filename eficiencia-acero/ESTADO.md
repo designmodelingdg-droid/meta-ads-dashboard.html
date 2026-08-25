@@ -36,19 +36,18 @@ reescribe con este método.
 
 ---
 
-## 🔴 Lo primero, y es de los ocho recursos
+## ✅ El incidente de los formularios: cerrado
 
-**Nadie que llene un formulario de lead magnet recibe su recurso.** Los ocho
-redirigen a la confirmación de un webinar de **febrero de 2025**. Lo encontró
-Dayana llenando el formulario, no una revisión de configuración.
+Los ocho redirigían a la confirmación de un webinar de febrero de 2025. Se
+arregló el mismo día. Comprobado con `scripts/formularios_destino.py`: los ocho
+mandan a su propia página de gracias, las ocho responden 200, no queda ninguna
+regla condicional, y no se perdió ningún campo — el de perfil incluido, con sus
+cuatro opciones.
 
-No se veía mirando la pantalla de destino: el destino por defecto estaba bien
-en los ocho. Lo que manda es una **regla condicional** que gana sobre él, y
-cuya condición se cumple siempre.
+De regalo se corrigió el destino del **Test de Nivel**, que apuntaba a la
+gracias del Curso Introductorio.
 
-Está todo en `matriz-viral/INCIDENTE-FORMULARIOS.md`, con el arreglo. **Va
-antes que cualquier otra cosa de esta lista** — mientras esto no se arregle, el
-lead magnet de acero no entrega aunque el resto esté perfecto.
+El detalle está en `matriz-viral/INCIDENTE-FORMULARIOS.md`.
 
 ---
 
