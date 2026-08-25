@@ -128,3 +128,49 @@ python3 scripts/formularios_destino.py
 guarda el contacto parece que funciona. El contacto entra, el CRM crece, los
 números de leads se ven bien. Lo que falla es lo que la persona recibe, y eso
 solo se ve recorriéndolo como lo recorre ella.
+
+
+---
+
+## Lo que quedó del mismo clon, revisado el 25-ago después de arreglar el destino
+
+Dayana llenó el formulario y vio el botón. Buscando eso aparecieron tres cosas
+más, de la misma raíz: formularios creados copiando otro, y el texto viajó con
+la copia.
+
+### 1 · El botón de ACERO dice «Curso Introductorio» — solo ese
+
+```
+Verificaciones Acero   →  Quiero mi Curso Introductorio gratis     ← MAL
+Calculadora Zapatas    →  Quiero mi Calculadora gratis
+Nivelación BIM         →  Quiero mi Prueba de Nivel gratis
+Curso BIM              →  Quiero mi Curso Introductorio gratis     ← bien, ese sí lo es
+Módulo 1               →  Quiero mi Módulo 1 gratis
+Ebook BIM              →  Quiero mi Ebook BIM gratis
+AI PRO                 →  Quiero mi GPT IA PRO gratis
+```
+
+Los otros seis dicen lo suyo. **Solo hay que cambiar el de acero**, a algo como
+«Quiero las 5 verificaciones gratis».
+
+### 2 · El correo de confirmación dice «Reserva de cupo exitosa» — los ocho
+
+Es el asunto que le llega a quien se registra en cualquier lead magnet. Quedó
+de la campaña del webinar, igual que la regla condicional: **misma raíz, otra
+cara.** A quien descargó un ebook se le dice que reservó un cupo.
+
+### 3 · La pregunta de nivel BIM vive en un campo llamado «Descarga Gratis la Guia BIM»
+
+Los ocho traen «¿Cuál es tu nivel actual en BIM?». Está bien que esté —es una
+pregunta de calificación y es consistente— pero la respuesta se guarda en un
+campo personalizado llamado `Descarga Gratis la Guia BIM`
+(`contact.descarga_gratis_la_guia_bim`, creado el 12-mar-2025).
+
+O sea: en la ficha de cada contacto, su nivel de BIM aparece bajo un título que
+no tiene nada que ver. No rompe nada — el dato se guarda — pero cualquiera que
+lea esa ficha dentro de seis meses va a entender otra cosa. Renombrar el campo
+es de un minuto y no afecta a los datos ya guardados.
+
+> Para acero hay algo más de fondo: preguntar el nivel de BIM a quien viene por
+> un recurso de estructuras metálicas no segmenta nada útil. Pero eso es
+> decisión de Dayana, no un defecto.
