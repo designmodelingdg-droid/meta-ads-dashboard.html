@@ -126,11 +126,40 @@
 const URL_BASE      = 'https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/eficiencia-acero/';
 const TOKEN_DEFECTO = 'dm2026';
 
+/* URL_MEMBRESIA — la via de PRODUCCION.
+ *
+ * Los lead magnets vivos de DMA no entregan el enlace directo: entregan un
+ * producto de membresia en el portal (clientclub.net/courses/products/…),
+ * donde la app va embebida por iframe con el token. Asi el acceso queda
+ * ligado al contacto en el CRM y se puede conceder por workflow.
+ * Comprobado el 25-ago-2026 contra la pagina viva de la Calculadora de
+ * Zapatas, que entrega exactamente asi.
+ *
+ * Se rellena cuando exista el producto de membresia de ACERO. Mientras este
+ * vacio, los botones abren el acceso directo con token: preferimos que la
+ * gente entre desde el primer dia a que espere a que el portal exista.
+ * Prometimos acceso inmediato y eso se cumple en las dos vias.              */
+const URL_MEMBRESIA = '';   // ← pegar aquí la URL del producto de membresía
+
 (function(){
   const t = new URLSearchParams(location.search).get('acceso') || TOKEN_DEFECTO;
   try{ localStorage.setItem('dm_acero_acceso', t); }catch(e){}
-  document.getElementById('btnApp').href  = URL_BASE + 'app.html?acceso=' + t;
-  document.getElementById('btnGuia').href = URL_BASE + 'guia.html?acceso=' + t;
+
+  const app  = document.getElementById('btnApp');
+  const guia = document.getElementById('btnGuia');
+
+  if(URL_MEMBRESIA){
+    app.href  = URL_MEMBRESIA;
+    guia.href = URL_MEMBRESIA;
+    app.textContent  = '🔧 Entrar al portal y abrir el verificador →';
+    guia.textContent = '📄 Entrar al portal y leer la guía →';
+    const n = document.querySelector('.guardalo');
+    if(n) n.innerHTML = '<b>Revisa tu correo.</b> El portal te manda tus datos ' +
+      'de acceso. Con ellos entras cuando quieras, desde cualquier dispositivo.';
+  }else{
+    app.href  = URL_BASE + 'app.html?acceso='  + t;
+    guia.href = URL_BASE + 'guia.html?acceso=' + t;
+  }
 })();
 </script>
 </body>
