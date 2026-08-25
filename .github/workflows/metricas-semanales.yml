@@ -149,6 +149,14 @@ jobs:
         continue-on-error: true      # si falla, no rompe la actualización principal
         run: python3 scripts/meta_pixel.py --dias 30
 
+      # Comprobar que lo que prometemos siga vivo. El 24-ago el Test de Nivel
+      # BIM y la Calculadora llevaban horas en 404 y lo detecto Dayana de
+      # casualidad: mientras tanto, cada persona que comentaba NIVEL o ZAPATA
+      # recibia un enlace roto. Esto lo detecta la maquina, no un lead.
+      - name: Comprobar que los enlaces prometidos siguen vivos
+        continue-on-error: true      # se avisa, no se rompe la corrida
+        run: python3 scripts/enlaces.py
+
       - name: Traer datos de la competencia
         env:
           META_TOKEN: ${{ secrets.META_TOKEN }}
@@ -159,7 +167,7 @@ jobs:
         id: commit
         run: |
           set -euo pipefail
-          RUTAS="matriz-viral/matriz/ matriz-viral/fuentes/ads-insights/ matriz-viral/fuentes/ingresos/ matriz-viral/fuentes/ghl-sonda.json matriz-viral/fuentes/ghl/ matriz-viral/fuentes/meta-pixel/"
+          RUTAS="matriz-viral/matriz/ matriz-viral/fuentes/ads-insights/ matriz-viral/fuentes/ingresos/ matriz-viral/fuentes/ghl-sonda.json matriz-viral/fuentes/ghl/ matriz-viral/fuentes/meta-pixel/ matriz-viral/fuentes/enlaces.json"
           if git diff --quiet -- $RUTAS && ! git status --porcelain -- $RUTAS | grep -q .; then
             echo "Sin cambios."
             echo "cambios=false" >> "$GITHUB_OUTPUT"
@@ -168,7 +176,7 @@ jobs:
           echo "cambios=true" >> "$GITHUB_OUTPUT"
           git config user.name  "matriz-bot"
           git config user.email "noreply@anthropic.com"
-          git add matriz-viral/matriz/ matriz-viral/fuentes/ads-insights/ matriz-viral/fuentes/ingresos/ matriz-viral/fuentes/ghl-sonda.json matriz-viral/fuentes/ghl/ matriz-viral/fuentes/meta-pixel/
+          git add matriz-viral/matriz/ matriz-viral/fuentes/ads-insights/ matriz-viral/fuentes/ingresos/ matriz-viral/fuentes/ghl-sonda.json matriz-viral/fuentes/ghl/ matriz-viral/fuentes/meta-pixel/ matriz-viral/fuentes/enlaces.json
           git commit -m "Métricas semanales automáticas (Meta Graph API)"
           # Puede haber commits nuevos desde que arrancó la corrida: se rebasa
           # antes de empujar. Sin esto el push se rechaza y se pierde el dato.

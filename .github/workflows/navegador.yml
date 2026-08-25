@@ -1,0 +1,124 @@
+name: Navegador GHL
+
+# Automatiza GoHighLevel con un navegador, para lo que su API no deja hacer:
+# crear y publicar workflows, tocar páginas de Sites, y sacar el mapa de qué
+# plantilla usa cada workflow.
+#
+# Se dispara SIEMPRE a mano. Nunca en cron: esto puede escribir en un CRM de
+# producción y eso no corre solo.
+#
+# REQUISITO (una vez): el secreto GHL_STORAGE_STATE.
+#   Cómo generarlo está en scripts/navegador/README.md — son cinco minutos y
+#   evita poner la contraseña de la cuenta como secreto.
+
+on:
+  workflow_dispatch:
+    inputs:
+      tarea:
+        description: "Qué hacer"
+        required: true
+        type: choice
+        options:
+          - mapa-flujos
+          - paginas
+          - encender
+          - restaurar-pagina
+        default: mapa-flujos
+      objetivo:
+        description: "Nombre del workflow o de la página (solo para encender / restaurar)"
+        required: false
+        default: ""
+      aplicar:
+        description: "false = simulacro (recorre y no toca nada) · true = escribe de verdad"
+        required: true
+        type: choice
+        options: ["false", "true"]
+        default: "false"
+      limite:
+        description: "Máximo de objetos a recorrer (solo mapa-flujos)"
+        required: false
+        default: "25"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: navegador-ghl          # nunca dos corridas escribiendo a la vez
+  cancel-in-progress: false
+
+jobs:
+  navegar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Instalar Playwright y Chromium
+        run: |
+          set -euo pipefail
+          npm install -g playwright@1.56.1
+          npx --yes playwright@1.56.1 install --with-deps chromium
+
+      - name: Comprobar que hay con qué entrar
+        env:
+          GHL_STORAGE_STATE: ${{ secrets.GHL_STORAGE_STATE }}
+          GHL_USER: ${{ secrets.GHL_USER }}
+          GHL_PASS: ${{ secrets.GHL_PASS }}
+        run: |
+          set -euo pipefail
+          if [ -z "${GHL_STORAGE_STATE:-}" ] && [ -z "${GHL_USER:-}" ]; then
+            echo "::error::No hay GHL_STORAGE_STATE ni GHL_USER. Mira scripts/navegador/README.md."
+            exit 1
+          fi
+          if [ -z "${GHL_STORAGE_STATE:-}" ]; then
+            echo "::warning::Sin GHL_STORAGE_STATE. Se intentará con usuario y contraseña, que falla si la cuenta pide 2FA."
+          fi
+
+      - name: Ejecutar la tarea
+        env:
+          GHL_STORAGE_STATE: ${{ secrets.GHL_STORAGE_STATE }}
+          GHL_USER: ${{ secrets.GHL_USER }}
+          GHL_PASS: ${{ secrets.GHL_PASS }}
+        run: |
+          set -euo pipefail
+          ARGS=""
+          [ -n "${{ github.event.inputs.objetivo }}" ] && \
+            case "${{ github.event.inputs.tarea }}" in
+              encender)         ARGS="--flujo \"${{ github.event.inputs.objetivo }}\"" ;;
+              restaurar-pagina) ARGS="--pagina \"${{ github.event.inputs.objetivo }}\"" ;;
+            esac
+          [ "${{ github.event.inputs.tarea }}" = "mapa-flujos" ] && \
+            ARGS="--limite ${{ github.event.inputs.limite }}"
+          [ "${{ github.event.inputs.aplicar }}" = "true" ] && ARGS="$ARGS --aplicar"
+          echo "→ node scripts/navegador/tareas.js ${{ github.event.inputs.tarea }} $ARGS"
+          eval node scripts/navegador/tareas.js "${{ github.event.inputs.tarea }}" $ARGS
+
+      # La evidencia se sube SIEMPRE, sobre todo si falló: es lo que permite ver
+      # qué cambió GHL de sitio en vez de adivinar.
+      - name: Guardar capturas y HTML
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: evidencia-navegador
+          path: matriz-viral/fuentes/navegador/
+          if-no-files-found: ignore
+          retention-days: 14
+
+      - name: Commit de lo que se leyó
+        if: always()
+        run: |
+          set -euo pipefail
+          # Solo los JSON de lectura. Las capturas NO entran al repo: pesan y
+          # pueden mostrar datos de contactos en pantalla.
+          if git status --porcelain -- 'matriz-viral/fuentes/navegador/*.json' | grep -q .; then
+            git config user.name  "matriz-bot"
+            git config user.email "noreply@anthropic.com"
+            git add 'matriz-viral/fuentes/navegador/*.json'
+            git commit -m "Lectura por navegador de GoHighLevel"
+            git pull --rebase --autostash origin "$GITHUB_REF_NAME" && git push
+          else
+            echo "Nada nuevo que guardar."
+          fi
