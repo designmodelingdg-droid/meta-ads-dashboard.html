@@ -54,11 +54,19 @@
   .btn:hover{background:var(--orange-d)}
   .legal{font-size:.72rem;color:var(--ink2);margin-top:12px;line-height:1.5;text-align:center}
 
-  .marquee{background:var(--crema);border-block:1px solid var(--line);padding:18px 0;overflow:hidden}
-  .marquee-track{display:flex;gap:46px;align-items:center;animation:slide 26s linear infinite;width:max-content}
+  /* Marquee de avales. Mismos logos y mismo tratamiento que las landings que
+     ya estan publicadas — el mask difumina los extremos para que el bucle no
+     tenga costura visible. */
+  .marquee{background:var(--crema);border-block:1px solid var(--line);padding:20px 0;overflow:hidden;position:relative;
+    mask-image:linear-gradient(to right,transparent,#000 8%,#000 92%,transparent);
+    -webkit-mask-image:linear-gradient(to right,transparent,#000 8%,#000 92%,transparent)}
+  .marquee-track{display:flex;gap:64px;align-items:center;animation:slide 36s linear infinite;width:max-content}
+  .marquee-track:hover{animation-play-state:paused}
+  .marquee-track img{height:50px;width:auto;max-width:170px;object-fit:contain;opacity:.92;flex-shrink:0;transition:opacity .2s,transform .2s}
+  .marquee-track img:hover{opacity:1;transform:scale(1.05)}
   @keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-  @media(prefers-reduced-motion:reduce){.marquee-track{animation:none;flex-wrap:wrap;justify-content:center;width:auto}}
-  .marquee span{font-family:'Overpass',sans-serif;font-weight:700;font-size:.82rem;letter-spacing:.06em;color:#7b8b98;text-transform:uppercase;white-space:nowrap}
+  @media(max-width:600px){.marquee-track{gap:40px}.marquee-track img{height:36px;max-width:120px}}
+  @media(prefers-reduced-motion:reduce){.marquee-track{animation:none;flex-wrap:wrap;justify-content:center;width:100%}}
 
   h2.sec{font-size:clamp(1.5rem,3.4vw,2.05rem);font-weight:800;color:var(--navy);text-wrap:balance}
   p.lead{color:var(--ink2);font-size:1.03rem;max-width:44rem;margin-top:12px}
@@ -235,12 +243,23 @@
 </div></footer>
 
 <script>
-/* Marquee de avales — se duplica para que el bucle no tenga costura. */
+/* Marquee de avales. Son los logos REALES que ya usan calculadora-zapatas y
+   test-nivel-bim — no texto. Se duplica la lista para que el bucle cierre sin
+   costura: la animacion recorre exactamente la mitad del ancho. */
 (function(){
-  const avales = ['Autodesk Authorized Training','Robot Structural Analysis','Advance Steel',
-                  'AISC 360-16','NEC-SE-DS','Certificación DQ · Europa','Revit Structure'];
-  const t = document.getElementById('mq');
-  t.innerHTML = [...avales, ...avales].map(a => '<span>'+a+'</span>').join('');
+  const B = 'https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/';
+  const avales = [
+    ['6a04d173601d54df8246caa4.png', 'Autodesk Partner'],
+    ['6a04d1738c6475e185dfddb1.png', 'Autodesk · Centro de Entrenamiento Autorizado'],
+    ['6a04d2928c6475e185e02739.png', 'Sabal University'],
+    ['6a04d1f0f7d455340c70e652.png', 'Doctrina Qualitas'],
+    ['6a04d23b51d5d92ddcacf917.png', 'Universidad de las Naciones'],
+    ['6a04d23b601d54df8246fbf8.webp','ISTE Universidad'],
+    ['6a04d23b601d54df8246fbf7.png', 'UAIII'],
+    ['6a04d23b8c6475e185e00d3e.png', 'Sello EQS · IQS'],
+  ];
+  const html = a => '<img src="'+B+a[0]+'" alt="'+a[1]+'" loading="lazy">';
+  document.getElementById('mq').innerHTML = [...avales, ...avales].map(html).join('');
 })();
 
 /* ── Formulario ────────────────────────────────────────────────────
