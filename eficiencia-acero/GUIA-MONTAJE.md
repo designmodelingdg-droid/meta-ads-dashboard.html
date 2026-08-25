@@ -190,7 +190,37 @@ grupo y publicar el anuncio con el enlace de la landing.
 
 ---
 
-## Paso 6 · La verificación que no se salta
+## Paso 6 · El hub de recursos — si no, existe y nadie lo encuentra
+
+**Falta hoy, y es de los dos minutos que se olvidan.** El recurso no está en
+`recursos/index.html`: comprobado el 25-ago contra el repositorio y contra la
+página viva, que sirve siete lead magnets y ninguno es este.
+
+No se puede hacer antes que el Paso 2, porque la tarjeta necesita una URL que
+todavía no existe — y una tarjeta que lleva a un 404 es peor que no tenerla.
+Así que va después, y el orden importa:
+
+1. **Cuando exista la página de captura**, avisar cuál quedó exactamente. Se
+   agrega la tarjeta a `recursos/index.html` con esa URL.
+2. Regenerar el HTML de GHL:
+   ```bash
+   python3 scripts/build_ghl_landing.py recursos
+   ```
+3. Pegar `recursos/ghl-recursos.html` en la página `/recursos` de Sites y
+   publicar.
+4. Confirmarlo pidiendo la página **por HTTP** —no mirando el editor— y viendo
+   que la nueva dirección aparece dentro:
+   ```bash
+   curl -s https://funnel.dgdesignmodeling.com/recursos | grep verificaciones-acero
+   ```
+
+Ese último `curl` es el paso: `scripts/enlaces.py` audita los enlaces de salida
+de la página publicada, y arreglar el repositorio no arregla lo que ve la
+gente. Esa fue exactamente la brecha del 25-ago.
+
+---
+
+## Paso 7 · La verificación que no se salta
 
 Después de montar, **no basta con que los botones se pongan verdes**. Hay que
 recorrerlo entero como lo haría un lead:
@@ -207,6 +237,7 @@ recorrerlo entero como lo haría un lead:
    guardado**. Que el formulario tenga la pregunta no significa que el dato
    llegue al contacto — eso solo se sabe mirando la ficha.
 7. Pedir la página pública por HTTP y confirmar que carga.
+8. Y la página `/recursos`, también por HTTP, con la tarjeta nueva dentro.
 
 El punto 6 es el que más veces falla en silencio, y es justo el dato que
 Dayana necesita para mover la pauta.
