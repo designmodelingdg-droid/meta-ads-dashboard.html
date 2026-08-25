@@ -113,3 +113,27 @@ hard hats, no lens flare. Generous margins, nothing within 60px of the edges.
 Al CDN de GHL (Media Storage), que es donde viven las otras siete. Queda una
 URL `https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/….png`, y esa
 es la que va en el `--img:url(...)` de la tarjeta.
+
+
+---
+
+## Lo que salió, y la única corrección
+
+La pieza se generó con ChatGPT y quedó **1672 × 941 exactos**, fondo crema,
+cinco acentos naranjas, estética de plano. Da el ancho.
+
+**Lo único que hubo que cambiar: el logo venía redibujado, no era el nuestro.**
+
+| | El logo real | El que salió generado |
+|---|---|---|
+| La marca | una **grúa torre** — pluma horizontal, mástil y el cable con su punto | un triángulo tipo techo, con una línea debajo |
+| El texto | Design Modeling DG | Design Modeling DG + una línea «ACADEMY» que el logo no lleva |
+
+Los modelos de imagen **redibujan** los logos, no los pegan, y casi nunca dan
+con la marca. Aquí perdió justo lo que identifica a DMA. Se corrigió pegando
+encima el archivo real del CDN
+(`6a04bbc1fa8afa3be0bb00d8.png`), recortado y escalado al mismo ancho.
+
+**Para la próxima:** generar la pieza **con el espacio del logo vacío** y
+pegarlo después. Sale más limpio que pedirlo en el prompt y tener que
+arreglarlo.
