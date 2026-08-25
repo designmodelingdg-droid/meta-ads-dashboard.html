@@ -165,7 +165,9 @@ estaba: `marcos: 1`. Queda anotado para que nadie vuelva por ahí.)
 
 Así que este es el primer trabajo que cae del lado de **browser-harness**, con
 el Chrome de siempre en el Mac, donde la página arranca porque es un navegador
-normal con su sesión. Ver [BROWSER-HARNESS.md](BROWSER-HARNESS.md).
+normal con su sesión. El encargo ya está escrito y priorizado —ocho workflows, no los 148— en
+[GUIA-MAPA-FLUJOS-MAC.md](GUIA-MAPA-FLUJOS-MAC.md). Ver también
+[BROWSER-HARNESS.md](BROWSER-HARNESS.md).
 
 El código sigue en `tareas.js` a propósito, y la tarea sigue en el menú de
 Actions: el día que GHL cambie ese arranque vuelve a servir sin reescribir
