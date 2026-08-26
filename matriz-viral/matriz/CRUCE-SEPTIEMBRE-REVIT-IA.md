@@ -5,6 +5,17 @@ apoyar septiembre ahí. Esto comprueba esa intuición contra datos.
 
 **Veredicto: tiene razón, pero no por la razón que parece.**
 
+> ⏸ **PROVISIONAL — decisión de Dayana, 26-ago.** Quedan reels por publicar.
+> Se espera a que salgan y se rehace el cruce antes de cerrar septiembre.
+>
+> Lo que ya se sostiene y no va a cambiar con más datos: **las vistas son la
+> métrica equivocada**, y la forma de los ganchos que funcionan.
+> Lo que sí puede moverse: qué piezas concretas entran, y si el patrón de
+> IA + Revit aguanta con más muestra.
+>
+> Cuando estén publicados: `refresh_matriz.py` las recoge en la corrida
+> semanal, y con eso se rehace este cruce.
+
 ---
 
 ## Lo primero, porque cambia cómo se lee todo lo demás
