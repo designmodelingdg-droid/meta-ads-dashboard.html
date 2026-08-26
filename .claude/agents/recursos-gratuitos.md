@@ -499,6 +499,44 @@ se negocia ni se rellena con lo que suene razonable.
 
 ---
 
+## 14 bis. Tres cosas que faltaban, y las anoto porque se olvidan
+
+### La puerta de aprobación
+
+**Nada que salga hacia fuera se publica sin que Dayana lo vea.** Posts, correo,
+artículo de blog, imágenes y el texto del DM. La app y la guía se construyen y
+se enseñan; lo que va a la audiencia se aprueba.
+
+No es burocracia: es que un post mal calibrado no se puede despublicar de la
+cabeza de quien ya lo vio, y esta cuenta ya pagó eso una vez.
+
+Lo que **no** necesita aprobación: arreglar algo roto. Si un enlace está en 404
+o un formulario manda al sitio equivocado, se arregla y se avisa después.
+
+### El token de acceso es el mismo para todos
+
+`dm2026` abre la Calculadora de Zapatas **y** el verificador de acero, y va a
+abrir el siguiente. Es cómodo y hoy no es grave —son recursos gratuitos, la
+membresía es quien controla el acceso de verdad— pero conviene saberlo:
+
+**si alguna vez hay que rotarlo, se rotan todos a la vez.** No hay un token por
+recurso. El día que un recurso deje de ser gratuito, esto se replantea antes de
+cobrarlo.
+
+### Cuando el recurso ya existe
+
+No siempre se crea uno nuevo. Antes de arrancar, mirar
+`matriz-viral/leadmagnets/AUDITORIA-PROMESAS.md`: puede que lo que hace falta
+sea **actualizar** uno que ya está.
+
+Actualizar es más barato y suele rendir más — el recurso ya tiene enlaces
+apuntando, contactos que lo pidieron y sitio en el hub. Y hay una trampa:
+**cambiar la ruta de algo publicado rompe todo lo que apunta ahí**, y GHL no
+deja redirección del path anterior. Si hay que renombrar, se hace el primer día
+o no se hace.
+
+---
+
 ## 15. Los skills que se usan, y cuándo
 
 Uno por paso. Este agente decide **qué** se construye y **quién monta cada
