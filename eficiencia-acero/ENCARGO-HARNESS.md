@@ -56,7 +56,7 @@ DUPLICA ese formulario. No le cambies el redirect al original: puede estar en
 uso en algo que no se ve desde fuera, y duplicar nunca rompe nada. Al
 duplicado ponle de nombre «Lead Magnet ACERO — 5 verificaciones» y su redirect
 a la página de gracias de acero:
-https://funnel.dgdesignmodeling.com/acceso-gratis-verificaciones-acero-gracias
+https://funnel.dgdesignmodeling.com/acceso-gratis-verificacion-acero-gracias
 
 Después cambia la landing de ACERO para que use el duplicado en vez del
 original.
@@ -79,7 +79,7 @@ recortar ni reindentar. Guarda y publica.
 VERIFICA: no me digas que quedó porque el botón se puso verde. Pide
 https://funnel.dgdesignmodeling.com/recursos por HTTP y confírmame que trae
 estas tres cosas dentro:
-  acceso-gratis-verificaciones-acero-form
+  acceso-gratis-verificacion-acero-form
   Las 5 verificaciones en acero
   6a8decb8e25296bd1b4a357d
 
@@ -104,9 +104,9 @@ VERIFICA: pide las dos páginas por HTTP y léeme el <title> de cada una.
 
 TAREA 4 — Renombrar la página de gracias.
 
-Hoy se llama acceso-gratis-verificaciones-acero-gracias pero sirve
+Hoy se llama acceso-gratis-verificacion-acero-gracias pero sirve
 contenido de acero. Renómbrala a:
-  acceso-gratis-verificaciones-acero-gracias
+  acceso-gratis-verificacion-acero-gracias
 
 Hazla AL FINAL y solo si las tres anteriores quedaron. Renombrar rompe todo lo
 que apunte a la ruta vieja, y GHL no deja redirección del path anterior.

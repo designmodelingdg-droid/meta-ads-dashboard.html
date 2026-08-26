@@ -67,8 +67,8 @@ los dos botones de acceso con el token.
 Nombrar siguiendo la convención que ya usa el equipo:
 
 ```
-acceso-gratis-verificaciones-acero-form
-acceso-gratis-verificaciones-acero-gracias
+acceso-gratis-verificacion-acero-form
+acceso-gratis-verificacion-acero-gracias
 ```
 
 > **Y avisar a Dayana del nombre exacto.** El 25-ago un renombrado sin aviso
@@ -310,14 +310,14 @@ el HTML pegado.
 ### 3 · La página de gracias se llama «calculadora-zapatas»
 
 ```
-acceso-gratis-verificaciones-acero-gracias
+acceso-gratis-verificacion-acero-gracias
 ```
 
 Sirve el contenido de acero, pero se llama zapatas. Rompe la convención del
 equipo y dentro de un mes nadie va a saber cuál es cuál.
 
 **Ojo con arreglarlo:** renombrar es justo lo que dejó dos lead magnets en 404
-el 25-ago. Se renombra a `acceso-gratis-verificaciones-acero-gracias`
+el 25-ago. Se renombra a `acceso-gratis-verificacion-acero-gracias`
 **ahora**, mientras todavía no hay nadie usándolo y ningún enlace apunta ahí —
 y se avisa. Dentro de una semana ya cuesta.
 
