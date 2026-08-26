@@ -1,0 +1,53 @@
+name: Nicho viral (Revit + IA)
+
+# Mira que esta funcionando en el nicho, fuera de nuestra cuenta.
+#
+# Se dispara SIEMPRE a mano y con tope de gasto: es dinero de Dayana. El
+# `tope` es un limite DURO que Apify respeta aunque falten resultados, y es la
+# unica proteccion que no depende de acertar el precio por resultado — que
+# Apify no publica.
+
+on:
+  workflow_dispatch:
+    inputs:
+      limite:
+        description: "Posts por etiqueta"
+        required: false
+        default: "40"
+      tope:
+        description: "Tope DURO de gasto en USD"
+        required: false
+        default: "1.0"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nicho-viral
+  cancel-in-progress: false
+
+jobs:
+  investigar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Investigar el nicho
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+        run: |
+          python3 scripts/nicho_viral.py \
+            --limite "${{ github.event.inputs.limite }}" \
+            --tope   "${{ github.event.inputs.tope }}"
+
+      - name: Commit si cambió
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add matriz-viral/fuentes/nicho-revit-ia.json
+          git diff --staged --quiet && echo "Nada nuevo que guardar." && exit 0
+          git commit -m "Investigacion del nicho Revit + IA"
+          git push
