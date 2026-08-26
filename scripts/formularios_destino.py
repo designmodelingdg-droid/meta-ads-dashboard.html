@@ -29,7 +29,7 @@ WIDGET = "https://link.apisystem.tech/widget/form"
 SALIDA = "matriz-viral/fuentes/ghl/formularios-destino.json"
 
 LANDINGS = [
-    "acceso-gratis-verificaciones-acero-form",
+    "acceso-gratis-verificacion-acero-form",
     "acceso-gratis-calculadora-zapatas-form",
     "acceso-gratis-test-nivel-bim-form",
     "acceso-gratis-curso-introductorio-bim-form",

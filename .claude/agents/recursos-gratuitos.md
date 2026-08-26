@@ -443,6 +443,20 @@ ve la gente — esa fue exactamente la brecha del 25-ago.
 
 ## 12. Detalles que cuestan tiempo si no se saben
 
+**La ruta se acuerda ANTES de construir.** El 26-ago nosotros escribimos
+`acceso-gratis-verificaciones-acero-form` en veinte sitios y Ester publicó
+`acceso-gratis-verificacion-acero-form` —singular—. Hubo que tocar siete
+archivos para que coincidieran. No fue grave porque GHL sirvió las dos, pero
+con una sola habría sido un 404 en el hub el día del lanzamiento.
+
+**Se pregunta el slug exacto antes de escribir el primer enlace**, y quien lo
+publica lo confirma tal cual quedó.
+
+**Y un clon arrastra su URL, no solo su contenido.** Aylin encontró que la
+página de registro de acero era copia de la calculadora y **conservaba su URL**
+(`…calculadora-zapatas-form-2929`): al abrirla salía la calculadora. Se revisa
+la URL del paso del embudo, no solo lo que se ve en la página.
+
 **El nombre de las páginas.** Convención del equipo:
 `acceso-gratis-<tema>-form` y `acceso-gratis-<tema>-gracias` (o
 `descarga-gratis-…` para descargables). **Renombrar sin avisar rompe todo**: el

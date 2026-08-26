@@ -37,7 +37,7 @@ la guía de acero.
 Los ocho. Sin excepción:
 
 ```
-acceso-gratis-verificaciones-acero-form      → webinar-certificados-confirmacion
+acceso-gratis-verificacion-acero-form      → webinar-certificados-confirmacion
 acceso-gratis-calculadora-zapatas-form       → webinar-certificados-confirmacion
 acceso-gratis-test-nivel-bim-form            → webinar-certificados-confirmacion
 acceso-gratis-curso-introductorio-bim-form   → webinar-certificados-confirmacion
@@ -174,3 +174,50 @@ es de un minuto y no afecta a los datos ya guardados.
 > Para acero hay algo más de fondo: preguntar el nivel de BIM a quien viene por
 > un recurso de estructuras metálicas no segmenta nada útil. Pero eso es
 > decisión de Dayana, no un defecto.
+
+
+---
+
+## 26-ago · Aylin encontró la copia, y la ruta cambió
+
+**Lo encontró Aylin mirando los enlaces**, no una revisión automática. Otra vez
+la persona antes que el script.
+
+La página de registro de acero **era una copia de la calculadora y conservaba
+su URL**: `acceso-gratis-calculadora-zapatas-form-2929`. Al abrirla salía la
+calculadora. Es la misma raíz de todo lo de ayer —clonar y que el clon
+arrastre lo del original— pero en la capa del funnel, no en la del formulario.
+
+Ester lo corrigió y de paso arregló dos cosas que estaban en la tarea:
+
+- El **botón**, que decía «calculadora». Ahora dice **«Quiero la Verificación
+  gratis»**. Comprobado.
+- El **redirect** en Configuración.
+
+### La ruta buena es la SINGULAR
+
+```
+acceso-gratis-verificacion-acero-form      ← esta
+acceso-gratis-verificacion-acero-gracias   ← y esta
+```
+
+No `verificaciones` en plural, que es la que habíamos puesto nosotros.
+
+**Hoy responden las cuatro** —plural y singular— y sirven lo mismo, con 48
+bytes de diferencia. Así que nada está roto ahora mismo. Pero **la plural es la
+que sobra**, y el día que alguien la borre, todo lo que apunte ahí cae.
+
+Actualizado en el repositorio: el hub, el script de comprobación y los cuatro
+documentos que la mencionaban. Falta **volver a pegar `ghl-recursos.html`** en
+la página `/recursos` de Sites — está en la tarea de ClickUp *«Actualizar
+enlace de Recurso»*.
+
+### Lo que esto enseña, y va al agente
+
+**La ruta se acuerda ANTES de construir, no después.** Nosotros escribimos
+`verificaciones` en veinte sitios, Ester publicó `verificacion`, y hubo que
+tocar siete archivos para que coincidieran. No fue grave porque las dos
+responden; con una sola habría sido un 404 en el hub.
+
+Y la segunda: **un clon arrastra su URL.** Se revisa la URL del paso del
+embudo, no solo el contenido de la página.

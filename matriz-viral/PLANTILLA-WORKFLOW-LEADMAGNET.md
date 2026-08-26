@@ -31,7 +31,7 @@ Todo lo demás se queda igual. Esa es la gracia.
 | 1 | **El nombre del workflow** | `IG ACERO · …` y `FB ACERO · …`, uno por canal |
 | 2 | **La palabra** del filtro | `acero` |
 | 3 | **La publicación** a la que se acota | la pieza del Sáb 23 |
-| 4 | **El enlace** de la respuesta pública y de los DM | `/acceso-gratis-verificaciones-acero-form` |
+| 4 | **El enlace** de la respuesta pública y de los DM | `/acceso-gratis-verificacion-acero-form` |
 | 5 | **Las etiquetas** | `lead-acero-verificaciones` + `origen-bot-acero` |
 | 6 | **El texto** del DM de entrega | «las 5 verificaciones en acero» |
 

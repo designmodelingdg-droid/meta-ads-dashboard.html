@@ -11,7 +11,7 @@ workflows por API.** Nada de esto sale de mirar el editor.
 |---|---|
 | Las cuatro páginas publicadas en Pages | `index` · `guia` · `app` · `gracias-agenda` responden 200 |
 | La landing y la gracias en GHL | las dos responden 200 |
-| **La página de gracias renombrada** | `acceso-gratis-verificaciones-acero-gracias` da 200 y la vieja da **404** |
+| **La página de gracias renombrada** | `acceso-gratis-verificacion-acero-gracias` da 200 y la vieja da **404** |
 | **El redirect del formulario arreglado** | ahora apunta a la gracias de acero, no a la del Curso Introductorio |
 | El campo de perfil sigue en el formulario | `cul_es_tu_perfil_actualmente` presente |
 | **El hub pegado y publicado** | las tres marcas dentro de `/recursos`: la ruta, el título y la imagen |
@@ -69,8 +69,8 @@ renombra a `ZZ — borrar`.
 ### 2 · Los títulos siguen diciendo «Calculadora de Zapatas»
 
 ```
-acceso-gratis-verificaciones-acero-form     → Calculadora de Zapatas Aisladas Gratis
-acceso-gratis-verificaciones-acero-gracias  → Calculadora de Zapatas Aisladas Gratis
+acceso-gratis-verificacion-acero-form     → Calculadora de Zapatas Aisladas Gratis
+acceso-gratis-verificacion-acero-gracias  → Calculadora de Zapatas Aisladas Gratis
 ```
 
 Es lo que se ve en la pestaña y **lo que aparece cuando alguien comparte el
