@@ -26,6 +26,11 @@ SALIDA = "matriz-viral/fuentes/nicho-revit-ia.json"
 
 # Las etiquetas del nicho concreto, no «arquitectura» en general: lo que se
 # busca es el cruce Revit/BIM con IA, que es donde Dayana ve traccion.
+# LIMITACION COMPROBADA el 26-ago: las paginas de etiqueta devuelven solo
+# imagenes y carruseles — cero reels y cero vistas. De 106 piezas, ninguna
+# traia videoPlayCount. Para reels con vistas hay que apuntar a CUENTAS, que es
+# lo que hace scripts/competencia.py. Esto sirve para leer angulos y ganchos,
+# no para medir alcance.
 ETIQUETAS = [
     "revit", "revittips", "bimmanager", "autodeskrevit",
     "iaparaarquitectos", "inteligenciaartificialarquitectura",
