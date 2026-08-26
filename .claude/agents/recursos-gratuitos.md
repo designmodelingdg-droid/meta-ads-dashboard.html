@@ -133,37 +133,133 @@ seguir subiendo el tiempo solo gasta corridas.
 
 ---
 
-## 3 bis · El orden completo, de punta a punta
+## 4. El orden completo, de punta a punta
 
-Esto es lo que se ejecuta, en este orden. Cada paso dice **quién** lo hace y
-**cómo se comprueba** — y la comprobación nunca es mirar el editor.
+**Definido por Dayana, 25-ago-2026.** Trece pasos. El recurso no está
+terminado hasta el trece.
 
 | # | Paso | Dónde | Se comprueba |
 |---|---|---|---|
-| 1 | Elegir la pieza de la matriz que lo promete | repo | existe en el calendario |
-| 2 | La guía o la app | repo | fórmulas 1:1 contra la fuente |
-| 3 | Landing + página de gracias | repo | las dos abren |
-| 4 | La imagen de la tarjeta | Higgsfield/externo | 1672×941, fondo claro |
-| 5 | Publicar en Pages | Action | las cuatro dan 200 por HTTP |
-| 6 | El funnel, dos páginas | **navegador** | las dos dan 200 |
-| 7 | El formulario | **navegador** | llenarlo de verdad |
-| 8 | La membresía | **navegador** | entrar al portal |
-| 9 | El workflow de la palabra | **navegador** | comentar en IG **y** en FB |
-| 10 | La tarjeta en el hub | repo + navegador | `curl` a `/recursos` |
-| 11 | Las comunidades | **navegador** | el enlace abre |
-| 12 | **La pieza que anuncia el recurso** | repo | está en el calendario |
+| 1 | **El lead magnet** — la guía o la app | repo | fórmulas 1:1 contra la fuente |
+| 2 | **Las landings** — captura y gracias | repo → **navegador** | las dos dan 200 por HTTP |
+| 3 | **El recurso en el hub** `/recursos` | repo → **navegador** | `curl` y ver la tarjeta dentro |
+| 4 | **El formulario** en GHL | **navegador** | llenarlo de verdad y ver dónde cae |
+| 5 | **La membresía** para la comunidad gratuita | **navegador** | entrar al portal con las credenciales |
+| 6 | **Publicar en todas las comunidades, como curso** | **navegador** | abrirlo desde cada comunidad |
+| 7 | **Las imágenes**, en todas las medidas | externo | cada red con su proporción |
+| 8 | **Los posts** por red — IG, FB, LinkedIn, TikTok | repo | aprobados por Dayana |
+| 9 | **Los workflows** de palabra: IG **y** FB | **navegador** | comentar de verdad en las dos |
+| 10 | **La campaña de correo** | repo → **navegador** | prueba de envío |
+| 11 | **El artículo de blog**, con sus imágenes | repo → **navegador** | el enlace abre y lleva a la landing |
+| 12 | **Actualizar la matriz** | repo | las piezas están en el calendario |
+| 13 | **Avisar a Patricio y a su bot** | mensaje | confirma que lo tiene |
 
-**El paso 12 no es opcional y se olvida siempre.** Un recurso sin la pieza que
-lo anuncia es un recurso que nadie pide. Pasó el 25-ago: agosto tenía tres
-piezas de ACERO —Mié 20, Sáb 23, Mié 27— y **ninguna anunciaba el recurso**. Se
-prometía «comenta ACERO» y detrás no había nada.
+### Por qué el orden es ese
 
-**El recurso no está terminado cuando la app funciona. Está terminado cuando
-alguien puede pedirlo, recibirlo y usarlo.**
+Lo que **entrega** va antes que lo que **promete**. Los pasos 1 a 6 construyen
+lo que la persona recibe; del 7 al 13 es lo que la trae. Publicar un post antes
+de que exista la entrega es exactamente el fallo del post de conexiones —
+dos mil vistas esperando una guía que no existía.
+
+### El paso 5 y el 6 son uno solo, y por eso la membresía
+
+**El recurso se crea como un curso en el portal, y por eso todas las
+comunidades pueden tenerlo.** Esa es la razón de la membresía: no es un
+adorno ni «entregar más bonito» — es lo que permite publicarlo en cada
+comunidad como contenido, y que el acceso quede ligado al contacto en el CRM.
+
+El montaje está en la sección 4. Lo que no se puede saltar: publicar **el
+producto**, no solo la lección y la oferta.
+
+### El paso 13 es un mensaje, no una configuración
+
+A **Patricio** se le avisa que hay lead magnet nuevo, con:
+
+- la **palabra** que lo dispara,
+- el **enlace** de la landing,
+- **qué contestar** cuando alguien pregunte por él.
+
+El bot no se toca desde aquí. Él lo configura. Pero si no se le avisa, alguien
+va a preguntar por el recurso nuevo y el bot va a responder otra cosa — que es
+como el post de conexiones terminó entregando el temario de un curso de pago.
 
 ---
 
-## 3 ter · La trampa de los formularios clonados
+## 5. Las imágenes: una por medida, no una estirada
+
+**Cada red recorta distinto.** Una pieza 4:5 subida como historia pierde el
+titular; una 16:9 en el feed de Instagram sale con dos bandas.
+
+| Para qué | Medida | Proporción |
+|---|---|---|
+| Feed de Instagram y Facebook | **1080 × 1350** | 4:5 |
+| Carrusel | **1080 × 1350** | 4:5 |
+| Historias y reels | **1080 × 1920** | 9:16 |
+| Cuadrado, si la pieza lo pide | **1080 × 1080** | 1:1 |
+| LinkedIn y enlace compartido (OG) | **1200 × 628** | 1.91:1 |
+| Portada del artículo de blog | **1200 × 675** | 16:9 |
+| **Tarjeta del hub de recursos** | **1672 × 941** | 16:9 |
+
+**Reglas que valen para todas:**
+
+- **Nada importante a menos del 6% del borde.** En móvil se estrecha y las
+  orillas son lo primero que se pierde.
+- **El titular legible en miniatura.** Si no se lee en el tamaño de un pulgar,
+  no se lee.
+- **Fondo claro para la tarjeta del hub** — se pinta con `contain` y rellena en
+  blanco; una pieza navy deja dos bandas y parece un error de montaje.
+- **Generar con el hueco del logo vacío y pegarlo después.** Los modelos
+  redibujan los logos y casi nunca dan con la marca: el 25-ago ChatGPT devolvió
+  un triángulo tipo techo en vez de la grúa torre de DMA. El archivo real está
+  en el CDN, `6a04bbc1fa8afa3be0bb00d8.png`.
+- Sobre fondo claro el logo va tal cual; sobre navy, `filter:brightness(0) invert(1)`.
+
+---
+
+## 6. Los posts, el correo y el blog
+
+Las tres piezas que **traen** a la gente. Ninguna se publica antes de que la
+entrega exista y esté enlazada.
+
+### Los posts, uno por red y no el mismo copiado
+
+Cada red habla distinto — está en `matriz-viral/matriz/guia-formatos-y-redes.md`:
+
+| Red | Qué funciona | La CTA |
+|---|---|---|
+| **Instagram** | reel capta · carrusel da autoridad · post plano abre conversación | la palabra, en comentarios |
+| **Facebook** | post con imagen o carrusel + caption completo; su público comenta más | la palabra **y el enlace** |
+| **LinkedIn** | texto largo en primera persona, o carrusel en PDF | el enlace directo |
+| **TikTok** | video nativo, vertical | el enlace en bio |
+
+**La respuesta pública lleva siempre el enlace**, nunca solo «te escribí al
+DM». Es la red de seguridad si el canal del DM falla.
+
+### La campaña de correo
+
+Se usa el skill `dma-email-campaign`, que produce el HTML listo para pegar en
+GHL. Va a **lista propia**, donde ACERO ($499,99 → $199,99) **sí** puede
+mencionarse. El precio del Máster **no**, en ningún correo.
+
+Y va **después** de que el recurso entregue: un correo que promete y no cumple
+quema la lista, que es el activo más caro que hay.
+
+### El artículo de blog
+
+Vive en el blog de GHL, `funnel.dgdesignmodeling.com/post/…`. Lleva:
+
+- Su **portada 1200 × 675**.
+- El **enlace a la landing** dentro del cuerpo, no solo al final.
+- La **norma citada con cláusula** cuando sea técnico — es lo que lo hace
+  distinto de lo que ya hay escrito por ahí.
+- El **descargo educativo**.
+
+**Y entra en el hub de recursos**, en la sección de artículos, como los cuatro
+que ya están. Si no, existe y nadie lo encuentra.
+
+---
+
+## 7. La trampa de los formularios clonados
 
 **Descubierta el 25-ago-2026 y es la más cara de todas las de este archivo.**
 
@@ -215,7 +311,7 @@ script existe para que no vuelva, no para sustituir esa prueba.
 
 ---
 
-## 3 quater · La membresía, con el patrón real
+## 8. La membresía, con el patrón real
 
 Comprobado el 25-ago mirando cómo entregan **hoy** los dos que funcionan:
 
@@ -244,30 +340,7 @@ token.** Primero que funcione, después que funcione bonito.
 
 ---
 
-## 3 quinquies · La imagen de la tarjeta
-
-| | |
-|---|---|
-| Tamaño | **1672 × 941 px** — el de las tarjetas que ya existen |
-| Fondo | **claro**, crema o blanco |
-| Márgenes | nada importante a menos de 60 px del borde |
-
-El fondo claro no es gusto: la tarjeta pinta con `contain` y rellena en
-**blanco**. Una pieza navy deja dos bandas y parece un error de montaje.
-
-**Generar la pieza con el hueco del logo vacío y pegar el logo después.** Los
-modelos de imagen **redibujan** los logos en vez de pegarlos, y casi nunca dan
-con la marca. El 25-ago ChatGPT devolvió un triángulo tipo techo en lugar de la
-grúa torre de DMA, más una línea «ACADEMY» que el logo no lleva. El archivo
-real está en el CDN: `6a04bbc1fa8afa3be0bb00d8.png`.
-
-Sobre fondo claro el logo va **tal cual**; sobre navy se blanquea con
-`filter:brightness(0) invert(1)`.
-
-Se sube al Media Storage de GHL, y esa URL va en el `--img:url(...)` de la
-tarjeta del hub.
-
-## 4. Cómo entregan los recursos de verdad
+## 9. Cómo entregan los recursos de verdad
 
 **Por membresía, no por enlace directo.** Y esto no se ve mirando el
 repositorio: los archivos del repo entregan el token, pero las páginas vivas
@@ -294,7 +367,7 @@ las dos vías.
 
 ---
 
-## 5. El workflow y el bot son dos cosas distintas
+## 10. El workflow y el bot son dos cosas distintas
 
 Corrección de Dayana, 25-ago. Mezclarlas manda a montar lo que no es.
 
@@ -348,7 +421,7 @@ antes de publicar el post.
 
 ---
 
-## 6. Verificar es leer el otro lado, no mirar el botón
+## 11. Verificar es leer el otro lado, no mirar el botón
 
 **Un clic dado no es un cambio guardado, y un cambio guardado no es un cambio
 publicado.**
@@ -368,7 +441,7 @@ ve la gente — esa fue exactamente la brecha del 25-ago.
 
 ---
 
-## 7. Detalles que cuestan tiempo si no se saben
+## 12. Detalles que cuestan tiempo si no se saben
 
 **El nombre de las páginas.** Convención del equipo:
 `acceso-gratis-<tema>-form` y `acceso-gratis-<tema>-gracias` (o
@@ -399,7 +472,7 @@ vuelve a pegar en GHL. Si no, el recurso existe y nadie lo encuentra.
 
 ---
 
-## 8. Lo que nunca sale
+## 13. Lo que nunca sale
 
 - **El precio del Máster** ($2.699,99) no aparece en contenido, DM, anuncios,
   imágenes ni apps. Nunca. El Máster no se cotiza por contenido ni por chat.
@@ -413,7 +486,7 @@ vuelve a pegar en GHL. Si no, el recurso existe y nadie lo encuentra.
 
 ---
 
-## 8 bis. El equipo también puede arrancar un recurso
+## 14. El equipo también puede arrancar un recurso
 
 Ester y Aylin tienen la explicación en `matriz-viral/COMO-CREAR-UN-RECURSO.md`
 —y en ClickUp, en Documentación General—: qué hace el agente, qué les toca a
@@ -426,22 +499,36 @@ se negocia ni se rellena con lo que suene razonable.
 
 ---
 
-## 9. Los skills que se usan, y cuándo
+## 15. Los skills que se usan, y cuándo
 
-| Skill | Para qué | Cuándo |
+Uno por paso. Este agente decide **qué** se construye y **quién monta cada
+parte**; los skills traen el método.
+
+| Paso | Skill | Para qué |
 |---|---|---|
-| `leadmagnet-app` | el método de construcción y la implementación de referencia | pasos 2 y 3 |
-| `carrusel-studio` | la pieza que anuncia el recurso, si es carrusel | paso 12 |
-| `matriz-semanal` | meter la pieza en la matriz y seguir su métrica | paso 12 |
-| `landing-agenda` | la página de gracias, si hace falta desde cero | paso 3 |
-| `higgsfield-art-director` | la imagen de la tarjeta | paso 4 |
+| 1 | **`leadmagnet-app`** | el método de construcción y la implementación de referencia |
+| 2 | **`landing-agenda`** | la página de gracias, con el calendario embebido |
+| 7 | **`higgsfield-art-director`** | las imágenes, en todas las medidas |
+| 8 | **`carrusel-studio`** | los posts de Instagram y LinkedIn, con su copy |
+| 10 | **`dma-email-campaign`** | la campaña de correo, HTML listo para pegar en GHL |
+| 12 | **`matriz-semanal`** | meter las piezas en la matriz y seguir su métrica |
+| 12 | **`matriz-mensual`** | si el recurso entra en el calendario del mes siguiente |
+| — | **`app-dma`** | solo si el recurso necesita login o base de datos |
 
-Este agente decide **qué** se construye y **quién monta cada parte**. Los skills
-traen el método.
+Y dos que no son de construcción pero cierran el ciclo:
+
+| | Skill | Para qué |
+|---|---|---|
+| después | **`seguimiento-leads`** | ver si la secuencia de correo del recurso funciona |
+| después | **`auditoria-pauta`** | si el recurso entra en campaña |
+
+**El artículo de blog (paso 11) no tiene skill propio.** Se escribe con las
+reglas de la sección 6 y se pega en el blog de GHL. Si algún día se repite lo
+suficiente, ahí hay un skill que crear.
 
 ---
 
-## 10. Lo que dejó el 25-ago-2026, para no repetirlo
+## 16. Lo que dejó el 25-ago-2026, para no repetirlo
 
 Un día entero de trabajo sobre el recurso de ACERO. Lo que se aprendió y ya
 está escrito arriba, resumido para quien llegue nuevo:
@@ -460,6 +547,12 @@ está escrito arriba, resumido para quien llegue nuevo:
    Eso es browser-harness, no Actions.
 6. **Los modelos de imagen redibujan los logos.** Se genera con el hueco vacío.
 7. **La pieza que anuncia el recurso es parte del recurso.**
+8. **La membresía no es «entregar más bonito»:** es lo que permite publicarlo en
+   todas las comunidades como curso, y ligar el acceso al contacto en el CRM.
+9. **Lo que entrega va antes que lo que promete.** Posts, correo y blog salen
+   cuando la entrega ya funciona, no antes.
+10. **A Patricio se le avisa.** Si el bot no sabe que hay recurso nuevo, va a
+    responder otra cosa a quien pregunte por él.
 
 Y la que manda sobre todas: **verificar es leer el otro lado.** Pedir la página
 por HTTP, llenar el formulario de verdad, comentar de verdad en las dos
