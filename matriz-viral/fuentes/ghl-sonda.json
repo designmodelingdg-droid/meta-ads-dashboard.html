@@ -1,5 +1,5 @@
 {
-  "generado": "2026-08-25",
+  "generado": "2026-08-28",
   "location": "nkKbOarn5IwHeMv48uY9",
   "nota": "Sonda: comprueba QUE endpoints responden con nuestro token. No baja datos de negocio. Lo importante es si abren 'cursos · productos' y 'membresias': ahi vive el progreso de los alumnos, que Windsor NO expone.",
   "resultados": {
@@ -28,7 +28,7 @@
     "pipelines": {
       "ok": true,
       "http": 200,
-      "registros": "5+",
+      "registros": "6+",
       "claves": [
         "pipelines",
         "traceId"
@@ -121,7 +121,7 @@
     "workflows": {
       "ok": true,
       "http": 200,
-      "registros": "151+",
+      "registros": "152+",
       "claves": [
         "traceId",
         "workflows"
@@ -131,7 +131,7 @@
     "etiquetas": {
       "ok": true,
       "http": 200,
-      "registros": "491+",
+      "registros": "498+",
       "claves": [
         "tags",
         "traceId"
@@ -141,7 +141,7 @@
     "campos propios": {
       "ok": true,
       "http": 200,
-      "registros": "88+",
+      "registros": "92+",
       "claves": [
         "customFields",
         "traceId"
@@ -151,7 +151,7 @@
     "conversaciones": {
       "ok": true,
       "http": 200,
-      "registros": 24939,
+      "registros": 25077,
       "claves": [
         "conversations",
         "total",
@@ -221,8 +221,68 @@
         "updatedAt",
         "version"
       ],
-      "total": 151,
+      "total": 152,
       "lista": [
+        {
+          "nombre": "🟢Founder Circle · Formulario",
+          "estado": "draft",
+          "actualizado": "2026-08-28",
+          "id": "72246db9-92de-4d9a-8fbe-87b753228543"
+        },
+        {
+          "nombre": "✅ (SMS) FACEBOOK FORM PRE FILTRO ACERO",
+          "estado": "published",
+          "actualizado": "2026-08-27",
+          "id": "e2027510-c814-405e-8e6c-7cc61649b1ff"
+        },
+        {
+          "nombre": "✅ Lead Agenda Directa + Manual Máster BIM+IA",
+          "estado": "published",
+          "actualizado": "2026-08-27",
+          "id": "64c7187b-38f7-41c2-824d-6ee0501c74df"
+        },
+        {
+          "nombre": "✅ Oportunidad Futura (Comunidad + Nurture + Oferta)",
+          "estado": "published",
+          "actualizado": "2026-08-27",
+          "id": "7f8592df-3ccf-4c3d-952b-170c48ce5c17"
+        },
+        {
+          "nombre": "✅ (SMS) FACEBOOK FORM MASTER",
+          "estado": "published",
+          "actualizado": "2026-08-26",
+          "id": "9d19091c-0736-47b5-801a-76ac64ff0736"
+        },
+        {
+          "nombre": "✅ Acceso y Descarga PDF Recursos Gratis",
+          "estado": "published",
+          "actualizado": "2026-08-26",
+          "id": "cf3e5cfd-4d3a-46af-87ad-4d80ebd1ba8c"
+        },
+        {
+          "nombre": "✅ FB ACERO · Comentario → DM + Membresía",
+          "estado": "published",
+          "actualizado": "2026-08-26",
+          "id": "9420d954-66db-4515-91ad-98a53817ae34"
+        },
+        {
+          "nombre": "✅ IG ACERO · Comentario → DM + Membresía",
+          "estado": "published",
+          "actualizado": "2026-08-26",
+          "id": "2eaa8799-2f5d-4ca0-9e3e-6a054b9f697d"
+        },
+        {
+          "nombre": "✅ Comentario Facebook/TikTok - GENERICO (rutea por palabra BIM/IA)",
+          "estado": "published",
+          "actualizado": "2026-08-26",
+          "id": "381695fd-5427-47fa-961c-4845459ad48b"
+        },
+        {
+          "nombre": "✅ Comentario IG-GENERICO (rutea por palabra BIM/IA)",
+          "estado": "published",
+          "actualizado": "2026-08-26",
+          "id": "8e0eeb83-95bd-4cdc-87eb-dca27c45952e"
+        },
         {
           "nombre": "IG ACERO · Comentario → DM + Membresía",
           "estado": "draft",
@@ -230,34 +290,10 @@
           "id": "dd789720-9b02-4015-a372-f9e604fe234d"
         },
         {
-          "nombre": "✅ FB ACERO · Comentario → DM + Membresía",
-          "estado": "published",
-          "actualizado": "2026-08-25",
-          "id": "9420d954-66db-4515-91ad-98a53817ae34"
-        },
-        {
-          "nombre": "✅ IG ACERO · Comentario → DM + Membresía",
-          "estado": "published",
-          "actualizado": "2026-08-25",
-          "id": "2eaa8799-2f5d-4ca0-9e3e-6a054b9f697d"
-        },
-        {
           "nombre": "✅ Lead Recontacto Máster BIM+IA",
           "estado": "published",
           "actualizado": "2026-08-25",
           "id": "1239b4c0-cdfc-4fab-a84b-f4e05874a9ea"
-        },
-        {
-          "nombre": "✅ Comentario Facebook/TikTok - GENERICO (rutea por palabra BIM/IA)",
-          "estado": "published",
-          "actualizado": "2026-08-25",
-          "id": "381695fd-5427-47fa-961c-4845459ad48b"
-        },
-        {
-          "nombre": "✅ Comentario IG-GENERICO (rutea por palabra BIM/IA)",
-          "estado": "published",
-          "actualizado": "2026-08-25",
-          "id": "8e0eeb83-95bd-4cdc-87eb-dca27c45952e"
         },
         {
           "nombre": "✅ Confirmar pago Matricula Master BIM",
@@ -320,28 +356,10 @@
           "id": "d5122e97-be54-492b-893d-7c72b0ee220b"
         },
         {
-          "nombre": "✅ (SMS) FACEBOOK FORM PRE FILTRO ACERO",
-          "estado": "published",
-          "actualizado": "2026-08-24",
-          "id": "e2027510-c814-405e-8e6c-7cc61649b1ff"
-        },
-        {
-          "nombre": "✅ Lead Agenda Directa + Manual Máster BIM+IA",
-          "estado": "published",
-          "actualizado": "2026-08-24",
-          "id": "64c7187b-38f7-41c2-824d-6ee0501c74df"
-        },
-        {
           "nombre": "✅ Lead Calificados + Notificación",
           "estado": "published",
           "actualizado": "2026-08-24",
           "id": "e97f9a3d-a518-4bb4-b3ba-1032862002da"
-        },
-        {
-          "nombre": "✅ Oportunidad Futura (Comunidad + Nurture + Oferta)",
-          "estado": "published",
-          "actualizado": "2026-08-24",
-          "id": "7f8592df-3ccf-4c3d-952b-170c48ce5c17"
         },
         {
           "nombre": "✅ Seguimiento Correo + No Calificado (Cursos)",
@@ -390,18 +408,6 @@
           "estado": "published",
           "actualizado": "2026-08-20",
           "id": "a318054d-6f8e-47db-ba7c-e680ef265311"
-        },
-        {
-          "nombre": "✅ (SMS) FACEBOOK FORM MASTER",
-          "estado": "published",
-          "actualizado": "2026-08-20",
-          "id": "9d19091c-0736-47b5-801a-76ac64ff0736"
-        },
-        {
-          "nombre": "✅ Acceso y Descarga PDF Recursos Gratis",
-          "estado": "published",
-          "actualizado": "2026-08-20",
-          "id": "cf3e5cfd-4d3a-46af-87ad-4d80ebd1ba8c"
         },
         {
           "nombre": "✅ Lead Ads x WhatsApp SMS",

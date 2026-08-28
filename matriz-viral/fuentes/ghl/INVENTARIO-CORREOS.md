@@ -1,8 +1,8 @@
 # Inventario de correos — GoHighLevel
 
-Generado el 2026-08-25.
+Generado el 2026-08-28.
 
-**380 plantillas** en **40 carpetas**. 380 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
+**393 plantillas** en **44 carpetas**. 393 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
 
 > Lo que NO sale por API: que workflow usa que plantilla. El endpoint de automatizaciones devuelve solo metadatos. En esta cuenta las plantillas estan nombradas por su flujo, asi que el cruce se puede hacer leyendo.
 
@@ -7611,6 +7611,555 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
+## ✅ AUTOMATIZACIONES PIPELINE > ✅ COMPRA DIRECTA > ✅ SEGUIMIENTO CALCULADORA
+
+### ✅ Seg 01 Error #1 zapatas
+
+- **id:** `6a9077a3a42032bb20317ab5`
+- **tipo:** html
+- **actualizada:** 2026-08-27T18:06:42.358Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Asunto sugerido: El error #1 al dimensionar una zapata (y no es el acero)
+Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Cuando una zapata da problemas, casi nunca es por falta de acero. Estos son los tres errores mas frecuentes.
+Criterio estructural
+El error #1 al dimensionar una zapata (y no es el acero)
+Hola {{contact.first_name}} ,
+Cuando una zapata da problemas, casi nunca es porque falt&oacute; acero. Es porque el n&uacute;mero con el que
+se arranc&oacute; estaba mal, y el refuerzo solo vino a tapar el hueco.
+Estos son los tres errores que m&aacute;s aparecen en los c&aacute;lculos que nos llegan a revisi&oacute;n.
+q_adm prestado &middot; Punzonamiento olvidado &middot; Altura &laquo;a ojo&raquo;
+Los tres se detectan antes de dibujar una sola varilla
+01
+El q_adm prestado
+Se toma la capacidad admisible del estudio de suelos de otra obra &laquo;que queda cerca&raquo;, o el valor que siempre se ha usado en la zona. El &aacute;rea de la zapata es directamente proporcional a ese n&uacute;mero: si el suelo real da menos de lo que asumiste, toda la geometr&iacute;a queda corta desde la primera l&iacute;nea. Ning&uacute;n chequeo posterior te avisa, porque los dem&aacute;s c&aacute;lculos est&aacute;n bien&hellip; sobre un dato equivocado.
+02
+Olvidar el punzonamiento
+Se revisa cortante en una direcci&oacute;n, da holgado, y se cierra el c&aacute;lculo. Pero el que casi siempre manda en una zapata aislada es el cortante en dos direcciones, alrededor de la columna. Y ese no se arregla con m&aacute;s varilla: se arregla con peralte. Si lo detectas al final, ya redise&ntilde;aste todo.
+03
+La altura &laquo;a ojo&raquo;
+El peralte se elige por costumbre &mdash;60 cm porque siempre 60 cm&mdash; y despu&eacute;s se fuerza el resto del c&aacute;lculo para que cuadre. A veces sobra concreto y encarece la obra sin necesidad; a veces falta y el problema aparece en sitio. En los dos casos el n&uacute;mero sali&oacute; de la memoria, no del c&aacute;lculo.
+C&oacute;mo detectar los tres en menos de un minuto
+&#10003; Corre el mismo caso con el q_adm m&iacute;nimo y m&aacute;ximo del estudio de suelos y mira cu&aacute;nto se mueve el &aacute;rea.
+&#10003; Revisa el punzonamiento antes de definir el refuerzo, no despu&eacute;s.
+&#10003; Que el peralte salga del c&aacute;lculo y no de la costumbre: si lo cambias y nada se rompe, estaba de m&aacute;s.
+Los tres se ven de inmediato cuando tienes los valores al frente y puedes moverlos. Para eso hiciste la descarga:
+Volver a la calculadora &#8594;
+Acceso inmediato &middot; ya es tuya
+P.D. Una prueba r&aacute;pida para el error #1: corre tu &uacute;ltimo
+caso dos veces, cambiando solo el q_adm por el valor de arriba y el de abajo del rango que te dio el estudio.
+Lo que se mueve el &aacute;rea te dice cu&aacute;nto de tu dise&ntilde;o depende del suelo y cu&aacute;nto
+del concreto.
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Seg 02 - Zapata no es el problema
+
+- **id:** `6a9077d066c7983132f26cb4`
+- **tipo:** html
+- **actualizada:** 2026-08-27T18:07:19.662Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Asunto sugerido: La zapata casi nunca es el problema
+Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Si la cimentacion sale enorme o imposible de armar, el problema casi siempre se decidio un piso mas arriba.
+Criterio estructural
+La zapata casi nunca es el problema
+Hola {{contact.first_name}} ,
+Sigo con lo del correo anterior, pero un piso m&aacute;s arriba.
+Cuando una cimentaci&oacute;n sale enorme, cara o imposible de armar, la reacci&oacute;n normal es revisar la cimentaci&oacute;n. Y ah&iacute; casi nunca est&aacute; la respuesta.
+La zapata solo recibe lo que la estructura le manda. Una columna que se movi&oacute; para respetar un ducto, una luz que qued&oacute; larga de m&aacute;s, un p&oacute;rtico que termin&oacute; cargando lo que le tocaba a otro, una losa que descarga donde no deb&iacute;a: todo eso viaja hacia abajo y aterriza en tu c&aacute;lculo de cimentaci&oacute;n como un n&uacute;mero que ya no puedes negociar.
+D&oacute;nde se decide en realidad
+Arquitectura &#8595; Estructura &#8595; Cargas &#8595; Cimentaci&oacute;n
+Todo lo que se decide arriba aterriza abajo
+Por eso pasa lo que pasa: pruebas otra geometr&iacute;a, subes el peralte, mueves el refuerzo, y el problema sigue ah&iacute;. No est&aacute;s resolviendo un problema de cimentaci&oacute;n. Est&aacute;s pagando abajo una decisi&oacute;n que se tom&oacute; arriba.
+La calculadora de zapatas resuelve el &uacute;ltimo tramo de esa cadena. Tenemos otras herramientas gratuitas que trabajan m&aacute;s arriba, en donde de verdad se decide el dise&ntilde;o.
+Cuando el modelo estructural est&aacute; bien resuelto, las cargas llegan repartidas y la cimentaci&oacute;n
+se vuelve la parte tranquila del proyecto. Cuando no lo est&aacute;,
+la cimentaci&oacute;n es donde te enteras .
+Ver herramientas gratis &#8594;
+P.D. Si hay una herramienta que te ahorrar&iacute;a horas y no
+est&aacute; en esa p&aacute;gina, resp&oacute;ndeme este correo y dime cu&aacute;l. Varias de las que ya
+existen salieron justo de una respuesta as&iacute;.
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Seg 03 - Oferta Acero
+
+- **id:** `6a91aaecc215129a360b892d`
+- **tipo:** html
+- **actualizada:** 2026-08-28T16:07:13.470Z
+- **Cuerpo:**
+
+```
+4 cursos, 4 meses y 110-130 horas para dominar el diseno estructural en acero con metodologia BIM.
+Especializaci&oacute;n profesional
+Lo que va arriba de la zapata (y c&oacute;mo se aprende)
+Hola {{contact.first_name}} ,
+En los dos correos anteriores vimos que el problema rara vez est&aacute; en la cimentaci&oacute;n: est&aacute; arriba, en c&oacute;mo se model&oacute; y se calcul&oacute; la estructura. Esto es lo que ense&ntilde;amos ah&iacute;.
+La Especializaci&oacute;n en Dise&ntilde;o Estructural BIM en Acero para Edificaciones cubre el ciclo completo: del modelado BIM en Revit al an&aacute;lisis en Robot Structural Analysis, el detallado de conexiones en Advance Steel y la documentaci&oacute;n del proyecto.
+4 cursos &middot; 4 meses &middot; 110&ndash;130 horas
+59 sesiones &middot; nivel avanzado &middot; 100% asincr&oacute;nico
+Qu&eacute; incluye
+&#9989; 4 cursos que van del modelado al detallado de conexiones precalificadas.
+&#9989; Asesor&iacute;as personalizadas uno a uno en cada m&oacute;dulo.
+&#9989; Material descargable y apuntes en PDF: no necesitas tomar notas.
+&#9989; Soporte t&eacute;cnico para instalar los programas de Autodesk y activar licencias estudiantiles.
+Con qu&eacute; sales certificado
+&#127891; 4 certificaciones internacionales de completaci&oacute;n con aval de Autodesk, una por curso.
+&#127891; Certificado internacional de 120 horas acad&eacute;micas de Modeling-DG S.A.S., con c&oacute;digo QR.
+&#127891; Certificado Universitario Internacional DQ, con aval en Europa para equivalencias.
+60% de descuento &middot; pago &uacute;nico
+USD 499.99
+USD 199.99
+Un solo pago por las 4 formaciones especializadas
+Aprovechar la oferta &#8594;
+Pago &uacute;nico &middot; acceso inmediato
+Ver el temario en PDF
+&iquest;Tienes dudas antes de decidir?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Seg 04 - No tengo tiempo
+
+- **id:** `6a91ac896137cbcd0bb850bd`
+- **tipo:** html
+- **actualizada:** 2026-08-28T16:07:26.129Z
+- **Cuerpo:**
+
+```
+Asincronico, 7-8 horas por semana y acceso por tiempo limitado. Mira una clase completa gratis.
+Hablemos del tiempo real
+&laquo;Me interesa, pero no tengo tiempo&raquo;
+Hola
+{{contact.first_name}} ,
+Es la respuesta que
+m&aacute;s recibimos, y casi siempre es sincera. No es que el programa no interese: es que la semana ya
+est&aacute; llena y nadie quiere pagar algo que va a quedar a medias.
+As&iacute; que
+hablemos del tiempo real que toma.
+7&ndash;8 horas por semana &middot; 4
+meses
+Sin horarios fijos &middot; a tu ritmo &middot; sin perder el acceso
+01
+Es 100%
+asincr&oacute;nico
+No hay clase a la que
+llegar tarde. Las sesiones est&aacute;n grabadas y avanzas cuando puedes: de noche, en fin de
+semana, en los huecos entre entregas. Nadie te espera y nadie te apura.
+02
+Entre 7 y 8
+horas por semana
+Ese es el ritmo con
+el que el programa se termina en cuatro meses. Son poco m&aacute;s de una hora al d&iacute;a, o
+dos sesiones largas el fin de semana. Si una semana no puedes, la siguiente retomas donde
+quedaste.
+03
+Acceso por
+tiempo limitado, pero suficiente
+El acceso a la
+plataforma es por tiempo limitado, con margen de sobra para completar el programa y repasar lo que
+necesites dentro de ese periodo. Y como el material de apoyo es descargable, los apuntes y
+archivos de pr&aacute;ctica quedan contigo despu&eacute;s.
+04
+No pierdes
+tiempo instalando
+Te damos soporte
+t&eacute;cnico para instalar los programas de Autodesk y activar las licencias estudiantiles. Esa
+tarde que se va peleando con un instalador, te la ahorras.
+La forma honesta de
+comprobarlo es verlo por dentro. Te dejamos una clase completa, sin recortes y sin registro, para que
+juzgues el ritmo, el nivel y la manera de explicar antes de decidir nada.
+Ver una clase completa gratis &#8594;
+Acceso directo &middot; sin
+formulario
+P.D. Si despu&eacute;s de verla sigues pensando que no es el
+momento, est&aacute; bien. Prefiero que entres cuando puedas terminarlo a que compres algo que quede
+a medias.
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Seg 05 - Testimonios cierre
+
+- **id:** `6a91acd31606a985ad2fcfa6`
+- **tipo:** html
+- **actualizada:** 2026-08-28T16:07:56.458Z
+- **Cuerpo:**
+
+```
+Tres testimonios, las tres preguntas frecuentes y los ultimos cupos de la especializacion.
+Testimonios de egresados
+Lo que dicen los que ya pasaron por aqu&iacute;
+Hola {{contact.first_name}} ,
+Ya te cont&eacute; de qu&eacute; se trata y cu&aacute;nto tiempo toma. Lo que sigue no lo digo yo: lo dicen quienes ya lo hicieron.
+&#9733;&#9733;&#9733;&#9733;&#9733;
+&laquo;La mejor decisi&oacute;n que he tomado en mi formaci&oacute;n profesional.&raquo;
+Aprend&iacute; much&iacute;simo sobre el modelado estructural con metodolog&iacute;a BIM y lo mejor es que todo fue muy pr&aacute;ctico y aplicable al trabajo real. La atenci&oacute;n de los instructores fue excelente, siempre dispuestos a resolver dudas y acompa&ntilde;arnos en el proceso.
+Albino Pineiro
+Egresado del Diplomado BIM
+&#9733;&#9733;&#9733;&#9733;&#9733;
+&laquo;Capacitaci&oacute;n actualizada y flexible para profesionales en ejercicio.&raquo;
+Soy ingeniero mec&aacute;nico y trabajo en una compa&ntilde;&iacute;a de ingenier&iacute;a, por lo que actualizar mis conocimientos era esencial. La plataforma facilita estudiar a nuestro ritmo y nos brinda la flexibilidad que necesitamos quienes trabajamos, permiti&eacute;ndonos manejar nuestro tiempo sin dejar de avanzar.
+Jorge Aguirre
+Ingeniero mec&aacute;nico
+&#9733;&#9733;&#9733;&#9733;&#9733;
+&laquo;Una inversi&oacute;n clave para mantenerse vigente en la ingenier&iacute;a moderna.&raquo;
+Decid&iacute; tomar el diplomado porque la metodolog&iacute;a BIM est&aacute; marcando tendencia en Ecuador y Latinoam&eacute;rica. Lo que m&aacute;s destaco es la ense&ntilde;anza compacta y efectiva, con un enfoque real y aplicado. Sent&iacute; el apoyo constante del equipo, siempre con explicaciones claras y paciencia.
+Luis Fernandez
+Dur&aacute;n, Ecuador
+Ver los testimonios en video
+Las tres preguntas que siempre nos hacen
+&iquest;Tengo que conectarme a una hora fija?
+No. La modalidad es 100% asincr&oacute;nica: las clases est&aacute;n grabadas y avanzas a tu propio ritmo, combinando el estudio con tu trabajo. Adem&aacute;s tienes asesor&iacute;as personalizadas uno a uno en cada m&oacute;dulo para resolver dudas.
+&iquest;Y si no tengo los programas instalados?
+Te damos soporte t&eacute;cnico para instalar el software de Autodesk &mdash; Robot Structural Analysis, Advance Steel y Revit Structure &mdash; y para activar las licencias estudiantiles temporales.
+&iquest;Qu&eacute; certificados recibo al terminar?
+Cuatro certificaciones de completaci&oacute;n con aval de Autodesk, una por cada curso; el certificado internacional de 120 horas acad&eacute;micas de Modeling-DG S.A.S. con c&oacute;digo QR de verificaci&oacute;n; y el Certificado Universitario Internacional DQ con aval en Europa para equivalencias.
+&Uacute;ltimos cupos &middot; cierra hoy
+Especializaci&oacute;n en Dise&ntilde;o Estructural BIM en Acero
+4 cursos &middot; 4 meses &middot; 110&ndash;130 horas
+59 sesiones &middot; 100% asincr&oacute;nico &middot; 7 certificados
+60% de descuento &middot; pago &uacute;nico
+USD 499.99
+USD 199.99
+Un solo pago por las 4 formaciones especializadas
+Aprovechar la oferta &#8594;
+Pago &uacute;nico &middot; acceso inmediato
+Ver el temario en PDF
+Hablar por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+## ✅ AUTOMATIZACIONES PIPELINE > ✅ COMPRA DIRECTA > ✅ SEGUIMIENTO GENERAL
+
+### ✅ Seg 01- 10 Recursos Gratuitos
+
+- **id:** `6a91bbee71d42e04f9e65f7d`
+- **tipo:** html
+- **actualizada:** 2026-08-28T17:02:54.926Z
+- **Cuerpo:**
+
+```
+Todo lo gratuito que tenemos, reunido en una sola pagina. Sin formularios ni condiciones.
+Sin nada que vender
+Hace tiempo que no te escribo (y te debo algo)
+Hola {{contact.first_name}} ,
+Hace tiempo que no te escribo. En ese silencio seguimos publicando herramientas, y varias de ellas probablemente te sirvan hoy mismo.
+As&iacute; que en vez de contarte novedades, te dejo el acceso completo. Sin formularios nuevos, sin condiciones: todo lo gratuito que tenemos, en un solo lugar.
+10 recursos gratuitos &middot; una sola p&aacute;gina
+Calculadoras, gu&iacute;as, plantillas y cursos abiertos
+Lo que vas a encontrar ah&iacute;
+&#128295; Calculadoras de ingenier&iacute;a que resuelven en minutos lo que toma una tarde.
+&#128214; Gu&iacute;as pr&aacute;cticas de verificaci&oacute;n y criterio t&eacute;cnico.
+&#127891; Cursos y m&oacute;dulos completos abiertos, con certificado al terminarlos.
+&#128193; Material descargable que puedes usar directamente en tus proyectos.
+No hay nada que comprar en esa p&aacute;gina. Entra, toma lo que te sirva y ciérrala.
+Ver los 10 recursos gratuitos &#8594;
+Acceso libre &middot; sin costo
+P.D. Si ya descargaste alguno hace meses y no volviste a abrirlo, este es buen momento: varios se actualizaron desde entonces.
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Seg 02 - Test Nivel BIM
+
+- **id:** `6a91bc236137cbcd0bba019d`
+- **tipo:** html
+- **actualizada:** 2026-08-28T17:03:12.362Z
+- **Cuerpo:**
+
+```
+20 preguntas, 5 minutos y un diagnostico que no regala niveles.
+Diagn&oacute;stico de nivel
+&iquest;En qu&eacute; nivel BIM est&aacute;s realmente?
+Hola {{contact.first_name}} ,
+La pregunta parece simple, pero casi nadie la responde bien. Unos se ponen por encima de donde est&aacute;n; la mayor&iacute;a, por debajo .
+Y ubicarse mal tiene un costo concreto: te postulas a puestos que ya podr&iacute;as ocupar, o inviertes meses en aprender algo que no era tu siguiente paso.
+Modelador &#8594; Coordinador &#8594; BIM Manager &#8594; BIM+IA
+Cada salto exige competencias distintas, no m&aacute;s a&ntilde;os de experiencia
+01
+Modelador BIM Profesional
+Modelas con est&aacute;ndar y resuelves tu disciplina.
+02
+Coordinador BIM
+Integras disciplinas y respondes por la informaci&oacute;n que entregas.
+03
+BIM Manager 4D-5D
+El modelo como instrumento de planificaci&oacute;n y control de costos.
+04
+Especialista BIM+IA
+Automatizas, programas y aplicas IA con criterio t&eacute;cnico.
+Armamos un test de 20 preguntas sobre lo que sabes hacer en un proyecto real, no sobre lo que has le&iacute;do. Toma 5 minutos, no regala niveles y al final te dice en cu&aacute;l est&aacute;s y qu&eacute; competencia concreta te falta para el siguiente.
+Hacer el test &#8594;
+Gratis &middot; 5 minutos &middot; diagn&oacute;stico honesto
+P.D. El resultado no es un t&iacute;tulo ni un certificado. Es un punto de partida para saber qu&eacute; estudiar despu&eacute;s, que es justo lo que suele faltar.
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Seg 03 - Seguimos o te dejo
+
+- **id:** `6a91bc5810fa76ca05409b79`
+- **tipo:** html
+- **actualizada:** 2026-08-28T17:03:50.508Z
+- **Cuerpo:**
+
+```
+Si estos correos ya no te sirven, date de baja hoy. Y si te interesan, esto es lo que viene.
+&Uacute;ltimo correo de esta serie
+&iquest;Seguimos en contacto o te dejo tranquilo?
+Hola {{contact.first_name}} ,
+Te escribo para preguntarte algo directo, sin rodeos: &iquest;quieres que sigamos en contacto?
+En alg&uacute;n momento descargaste algo nuestro y desde entonces te llegan estos correos. Si te sirven, perfecto. Si ya no, prefiero que te des de baja hoy a que sigas recibiendo algo que no lees. Abajo del todo tienes el enlace y basta un clic.
+Pero si sigues por aqu&iacute; porque el tema te interesa, entonces esta &uacute;ltima parte es para ti.
+Preventa abierta &middot; nuevo grupo
+M&aacute;ster Internacional BIM Management + IA
+Cuatro bloques, cuatro roles, doce meses de acompa&ntilde;amiento.
+4 bloques &middot; 12 m&oacute;dulos &middot; 12 meses
+Modelador &#8594; Coordinador &#8594; BIM Manager 4D-5D &#8594; Especialista BIM+IA
+Qu&eacute; lo hace distinto
+&#9989; 4 microcredenciales NFT avaladas por el Silicon Valley Futures Institute, una por bloque.
+&#9989; Certificaciones oficiales de Autodesk por cada m&oacute;dulo completado.
+&#9989; T&iacute;tulos propios de Sabal University, Universidad de las Naciones e ISTE Espa&ntilde;a.
+&#9989; Workshops en vivo cada semana y mentor&iacute;as personalizadas uno a uno.
+&#9989; DMA Engineering Suite: una herramienta de IA nueva cada mes.
+Si quieres saber si tiene sentido para tu caso, son 30 minutos con un asesor acad&eacute;mico. Sin presentaci&oacute;n de ventas: te ubicamos, te decimos por d&oacute;nde empezar y, si no es tu momento, tambi&eacute;n te lo decimos.
+Agendar 30 minutos &#8594;
+Sin compromiso &middot; cupos de preventa mientras dure el grupo
+Hablar por WhatsApp
+&iquest;Y si prefieres que te deje tranquilo?
+Sin problema y sin resentimientos. Un clic aqu&iacute; y dejas de recibir estos correos hoy mismo.
+Darme de baja
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+## ✅ AUTOMATIZACIONES PIPELINE > ✅ COMPRA DIRECTA > ✅ SEGUIMIENTO TEST BIM
+
+### ✅ Seg 01 - Cuatro Niveles BIM
+
+- **id:** `6a91b6c7779240a94e04f2ff`
+- **tipo:** html
+- **actualizada:** 2026-08-28T16:35:01.173Z
+- **Cuerpo:**
+
+```
+Casi nadie se ubica bien. Estos son los cuatro niveles y como saber en cual estas de verdad.
+Diagn&oacute;stico de nivel
+Los 4 niveles BIM, sin humo
+Hola {{contact.first_name}} ,
+Casi todos los ingenieros y arquitectos que llegan aqu&iacute; hacen lo mismo: se ponen una etiqueta que no les corresponde. Unos se creen m&aacute;s arriba de lo que est&aacute;n. La mayor&iacute;a, y esto es lo que sorprende, se subestima.
+Dicen &laquo;yo solo modelo&raquo; cuando en realidad ya est&aacute;n coordinando. O se quedan a&ntilde;os en un nivel porque nadie les dijo qu&eacute; competencia concreta les faltaba para pasar al siguiente.
+Estos son los cuatro niveles, sin humo:
+Modelador &#8594; Coordinador &#8594; BIM Manager &#8594; BIM+IA
+Cada salto exige competencias distintas, no m&aacute;s a&ntilde;os de experiencia
+01
+Modelador BIM Profesional
+Modelas arquitectura y estructura con est&aacute;ndar, sacas planos limpios y resuelves tu disciplina. Es el nivel donde est&aacute; la mayor&iacute;a &mdash; y donde muchos creen que ya tocaron techo.
+02
+Coordinador BIM
+Dejas de trabajar solo sobre tu modelo: integras disciplinas, detectas interferencias antes de la obra y respondes por la informaci&oacute;n que entregas. Aqu&iacute; se atasca la mayor&iacute;a.
+03
+BIM Manager 4D-5D
+El modelo deja de ser un dibujo y pasa a ser un instrumento de gesti&oacute;n: planificaci&oacute;n, control de costos y decisiones que afectan el presupuesto de la obra.
+04
+Especialista BIM+IA
+Automatizas lo repetitivo, programas tus propios flujos y aplicas IA con criterio t&eacute;cnico. Es el nivel que hoy casi nadie ocupa, y por eso se paga distinto.
+Leerlos no basta: casi nadie se ubica bien a s&iacute; mismo. Por eso armamos un test de 20 preguntas sobre lo que sabes hacer en un proyecto, no sobre lo que has le&iacute;do. Toma 5 minutos y no regala niveles: te dice en cu&aacute;l est&aacute;s y qu&eacute; competencia te falta cerrar.
+Hacer el test &#8594;
+Gratis &middot; 5 minutos &middot; diagn&oacute;stico honesto
+P.D. Si el resultado te da un nivel m&aacute;s alto del que esperabas, no es un halago del sistema: es que llevas tiempo haciendo trabajo que no te est&aacute;s cobrando.
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Seg 02 - Modelador a Coordinador
+
+- **id:** `6a91b6fe71d42e04f9e5d459`
+- **tipo:** html
+- **actualizada:** 2026-08-28T16:35:12.973Z
+- **Cuerpo:**
+
+```
+El salto no se da modelando mejor. Es otro oficio, y se aprende en otro orden.
+El salto que m&aacute;s cuesta
+De modelador a coordinador: por qu&eacute; se atasca ah&iacute;
+Hola {{contact.first_name}} ,
+De los cuatro niveles del correo anterior, hay uno donde se detiene casi todo el mundo: el paso de modelador a coordinador .
+No es por falta de ganas ni de horas. Es que el salto no se da modelando mejor.
+01
+El salto no es t&eacute;cnico, es de responsabilidad
+Modelar bien es resolver tu disciplina. Coordinar es responder por la informaci&oacute;n de todas. Nadie te ense&ntilde;a eso modelando m&aacute;s horas: es otro oficio.
+02
+Falta el lenguaje com&uacute;n
+Coordinar exige entender qu&eacute; necesita estructuras de arquitectura, y qu&eacute; necesita MEP de ambas. Si solo dominas tu disciplina, no puedes anticipar el choque; solo lo reportas cuando ya ocurri&oacute;.
+03
+Nadie te da el puesto para que aprendas
+El coordinador se contrata con experiencia demostrable. Es el c&iacute;rculo cl&aacute;sico: no te dan el rol porque no lo has hecho, y no lo has hecho porque no te dan el rol.
+Ese es exactamente el problema que resuelve el M&aacute;ster Internacional en BIM Management e Inteligencia Artificial para la Construcci&oacute;n : est&aacute; organizado en cuatro bloques y cada uno te acredita en un rol distinto, en orden. No es un curso largo: es una ruta de carrera.
+4 bloques &middot; 12 m&oacute;dulos &middot; 12 meses
+Modelador &#8594; Coordinador &#8594; BIM Manager 4D-5D &#8594; Especialista BIM+IA
+C&oacute;mo se trabaja el salto a coordinador
+&#9989; Coordinaci&oacute;n interdisciplinaria real: arquitectura, estructura y MEP sobre un mismo proyecto.
+&#9989; Gesti&oacute;n del entorno com&uacute;n de datos y control de versiones.
+&#9989; Detecci&oacute;n y resoluci&oacute;n de interferencias antes de que lleguen a obra.
+&#9989; Workshops en vivo cada semana y mentor&iacute;as personalizadas uno a uno.
+Sin costo adicional
+Con qu&eacute; sales acreditado
+Certificaciones Autodesk por m&oacute;dulo y t&iacute;tulos propios universitarios al finalizar.
+Autodesk
+Una por m&oacute;dulo
+Design Modeling
+Con c&oacute;digo QR
+Doctrina Qualitas
+1440 horas
+Sabal University
+Estados Unidos
+Univ. de las Naciones
+Equivalencia acad&eacute;mica
+ISTE Espa&ntilde;a
+T&iacute;tulo propio
+Si quieres saber si tiene sentido para tu caso, la forma corta es que te lo cuenten y ver el plan de estudios completo:
+Quiero que me cuenten &#8594;
+Sesi&oacute;n con un asesor acad&eacute;mico &middot; sin compromiso
+Ver el temario del M&aacute;ster
+Hablar por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Seg 03 - Microcredenciales
+
+- **id:** `6a91b73fd4079d1320de1aba`
+- **tipo:** html
+- **actualizada:** 2026-08-28T16:39:10.239Z
+- **Cuerpo:**
+
+```
+Una microcredencial NFT por bloque, avalada por Silicon Valley, mas tu kit de apps de IA.
+El diferenciador
+Microcredenciales, no un PDF al final
+Hola {{contact.first_name}} ,
+Un diploma en PDF al final de un programa dice poco. No se verifica, no se actualiza y quien lo recibe tiene que explicar qu&eacute; hay detr&aacute;s.
+En el M&aacute;ster funciona distinto: no esperas doce meses para tener algo que mostrar. Al cerrar cada bloque obtienes una microcredencial NFT avalada por el Silicon Valley Futures Institute , verificable y ligada a un rol concreto.
+4 microcredenciales &middot; una por bloque
+Avaladas por el Silicon Valley Futures Institute &middot; verificables en l&iacute;nea
+01
+Modelador BIM Profesional
+Se emite al cerrar el primer bloque. Acredita que modelas arquitectura y estructura con est&aacute;ndar y documentas el proyecto.
+02
+Coordinador BIM
+Acredita que integras disciplinas, gestionas el entorno com&uacute;n de datos y resuelves interferencias antes de la obra.
+03
+BIM Manager 4D-5D
+Acredita planificaci&oacute;n 4D y control de costos 5D: el modelo como instrumento de gesti&oacute;n del proyecto.
+04
+Especialista BIM+IA
+Acredita automatizaci&oacute;n con Dynamo, programaci&oacute;n en Python e inteligencia artificial aplicada a procesos BIM.
+Respaldado por
+Agencia Universitaria
+Doctrina Qualitas
+La diferencia pr&aacute;ctica: a los tres meses ya tienes una acreditaci&oacute;n que puedes poner en tu perfil y que un reclutador puede verificar, en lugar de un &laquo;estoy estudiando un m&aacute;ster&raquo;.
+Y adem&aacute;s
+DMA Engineering Suite
+Tu propio kit de aplicaciones de inteligencia artificial para ingenier&iacute;a, con una herramienta
+nueva liberada cada mes durante el programa. No son demos: son apps que usas en proyectos reales.
+&#9654; Una herramienta nueva cada mes
+&#9654; Automatizaci&oacute;n de tareas repetitivas de modelado y documentaci&oacute;n
+&#9654; Acceso durante los 12 meses del programa
+Sin costo adicional
+M&aacute;s la titulaci&oacute;n universitaria
+Certificaciones Autodesk por m&oacute;dulo y t&iacute;tulos propios al finalizar.
+Autodesk
+Una por m&oacute;dulo
+Design Modeling
+Con c&oacute;digo QR
+Doctrina Qualitas
+1440 horas
+Sabal University
+Estados Unidos
+Univ. de las Naciones
+Equivalencia acad&eacute;mica
+ISTE Espa&ntilde;a
+T&iacute;tulo propio
+Todos nuestros avales son p&uacute;blicos y verificables. Puedes revisarlos uno por uno:
+Ver acreditaciones &#8594;
+Avales verificables &middot; Autodesk, DQ, Sabal, ISTE y m&aacute;s
+Agendar una sesi&oacute;n informativa
+Hablar por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Seg 04 - Agenda Llamada
+
+- **id:** `6a91b7709dcfa20100659146`
+- **tipo:** html
+- **actualizada:** 2026-08-28T16:40:14.047Z
+- **Cuerpo:**
+
+```
+Preventa abierta para el nuevo grupo. Agenda 30 minutos y definimos tu punto de partida.
+&Uacute;ltimo paso
+30 minutos y te digo por d&oacute;nde empezar
+Preventa abierta &middot; nuevo grupo
+Condiciones de preventa mientras se completa el cupo del grupo que inicia
+Hola {{contact.first_name}} ,
+Llevamos varios correos hablando de niveles, del salto a coordinador y de c&oacute;mo se acredita cada bloque. Todo eso sirve de poco si no se aterriza en tu caso.
+Por eso el &uacute;ltimo paso es una conversaci&oacute;n de 30 minutos , sin presentaci&oacute;n de ventas y sin compromiso.
+01
+Te ubicamos con precisi&oacute;n
+Revisamos qu&eacute; haces hoy en un proyecto real y en cu&aacute;l de los cuatro niveles est&aacute;s de verdad, no en cu&aacute;l crees estar.
+02
+Te decimos por d&oacute;nde empezar
+Puede que el M&aacute;ster completo sea lo tuyo, o que te convenga cerrar antes una competencia puntual. Si no es el momento, tambi&eacute;n te lo decimos.
+03
+Resolvemos lo pr&aacute;ctico
+Tiempo semanal real, c&oacute;mo funcionan las mentor&iacute;as, qu&eacute; pasa si una semana no puedes avanzar y c&oacute;mo se emiten las acreditaciones.
+Y hay una raz&oacute;n para no dejarlo para el mes que viene: estamos en preventa para el nuevo grupo , con las condiciones y los cupos que aplican a quienes entran antes del inicio. Cuando el grupo se completa, se cierra y el siguiente arranca meses despu&eacute;s.
+4 bloques &middot; 12 m&oacute;dulos &middot; 12 meses
+Workshops en vivo semanales &middot; mentor&iacute;as 1:1 &middot; DMA Engineering Suite
+Lo que ya sabes que incluye
+&#9989; 4 microcredenciales NFT avaladas por el Silicon Valley Futures Institute, una por bloque.
+&#9989; Certificaciones oficiales de Autodesk por cada m&oacute;dulo completado.
+&#9989; T&iacute;tulos propios de Sabal University, Universidad de las Naciones e ISTE Espa&ntilde;a.
+&#9989; Certificado universitario DQ y Design Modeling de 1440 horas acad&eacute;micas.
+&#9989; DMA Engineering Suite: una herramienta de IA nueva cada mes.
+Elige el horario que te sirva. Si ninguno calza, escr&iacute;benos y lo acomodamos.
+Agendar mis 30 minutos &#8594;
+Sin compromiso &middot; cupos de preventa mientras dure el grupo
+Hablar por WhatsApp
+P.D. Si en la llamada concluimos que el M&aacute;ster no es para ti ahora, te lo diremos y te propondremos otra ruta. Preferimos eso a tener a alguien matriculado en un programa que no le corresponde.
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
 ## ✅ AUTOMATIZACIONES PIPELINE > ✅ CURSOS LOWCOST > ✅SEG OPORTUNIDAD FUTURA + NO CALIFICADO
 
 ### ✅ Seguimiento 01 quienes somos
@@ -11382,6 +11931,61 @@ Entrar gratis a la Comunidad &#8594;
 Revisa primero las carpetas de spam y promociones. Si aun as&iacute; no aparece,
 escr&iacute;benos y te damos el acceso al instante.
 Escribir por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Acceso Verificación Acero
+
+- **id:** `6a8f32c54867309f6fb3a862`
+- **tipo:** html
+- **actualizada:** 2026-08-26T18:58:16.513Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Enviar como accion del formulario: https://funnel.dgdesignmodeling.com/acceso-gratis-verificacion-acero-form
+Banner y logo en base64. La portada se carga desde el CDN de GHL.
+Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Registro confirmado. La guia de las 5 verificaciones en acero ya esta en tu comunidad DMA.
+Registro confirmado &middot; 100% gratis
+Las 5 verificaciones en acero, listas para usar
+Hola {{contact.first_name}} ,
+Gracias por registrarte. Ya tienes acceso completo a la gu&iacute;a Las 5 verificaciones en acero , con la cl&aacute;usula de norma detr&aacute;s de cada chequeo &mdash; AISC 360-16 y NEC-SE-DS.
+Tu acceso est&aacute; aqu&iacute; &#8594;
+Sin costo &middot; se abre en tu comunidad DMA
+Lo que acabas de desbloquear
+Cinco verificaciones, cada una con su cl&aacute;usula de norma.
+01 Pandeo local
+02 Lateral-torsional
+03 Derivas y P-&Delta;
+04 Conexiones
+05 Placa base
+Tres pasos para que te sirva
+La mayor&iacute;a abre el enlace y lo deja para despu&eacute;s. Estos tres pasos son la diferencia.
+01
+L&eacute;elo completo hoy
+Son cinco puntos concretos, no un tratado. Rev&iacute;salos de corrido y qu&eacute;date con el criterio y la cl&aacute;usula de cada verificaci&oacute;n.
+02
+Tenlo a mano al revisar
+Ábrelo cuando revises un modelo o recibas un plano de taller. Queda guardado en tu comunidad DMA, as&iacute; que lo recuperas desde cualquier equipo.
+03
+Apl&iacute;calo a tu proyecto actual
+Pasa las cinco verificaciones sobre la estructura que tengas abierta hoy. Si alguna no cierra, ya sabes d&oacute;nde mirar.
+Tambi&eacute;n es gratis
+&Uacute;nete a la Comunidad Design Premium
+Masterclasses en vivo, plantillas descargables y networking con ingenieros y arquitectos
+de toda Latinoam&eacute;rica. Sin costo y sin tarjeta.
+Entrar gratis a la Comunidad &#8594;
+&iquest;No se abre o no encuentras el acceso?
+Revisa primero las carpetas de spam y promociones. Si aun as&iacute; no aparece,
+escr&iacute;benos y te damos el acceso al instante.
+Escribir por WhatsApp
+Material educativo y de predimensionamiento. No sustituye el
+criterio ni la responsabilidad del profesional que firma. Toda verificaci&oacute;n debe realizarse con la
+norma vigente aplicable al proyecto. No es una certificaci&oacute;n ni un diploma.
 Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
 designmodelingacademy.com
 {{unsubscribe_url}}
