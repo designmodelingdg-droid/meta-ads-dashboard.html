@@ -113,3 +113,75 @@ respuesta normales.
   banco de prueba real.
 - El costo por alumno/mes del asistente — sin ese número, la decisión de
   cobrar es una corazonada.
+
+
+---
+
+## Decisión de Dayana, 04-sep: solo A y B
+
+C (corrección de ejercicios) y D (tutor con progreso) quedan fuera por ahora.
+El plan vivo es: **A** el asistente sobre el material existente, **B** un
+módulo transversal grabado una vez.
+
+## Prueba 2 · Vimeo — 04-sep, sonda automática
+
+**10 de 12 clases de acero tienen subtítulos automáticos en español**
+(`es-x-autogen`). El material para anclar el asistente **ya existe** — no hay
+que regrabar ni transcribir.
+
+**Pero la calidad es la que es.** La muestra (sesión introductoria) se
+entiende de corrido, y falla justo en los términos técnicos: «sismo» sale como
+«si modo», «sismorresistentes» como «mismo resistentes», «de acero» como «de
+cero», «losas» como «Laos». Consecuencias de diseño:
+
+1. **Las transcripciones sirven para ENCONTRAR el contenido**, no para citarlo
+   textual. El asistente responde con lo que la clase explica, nunca citando
+   la transcripción cruda como si fuera exacta.
+2. **Las cláusulas de norma jamás salen de la transcripción** — salen de la
+   guía verificada y de los PDF del curso. Un ASR que convierte
+   «sismorresistente» en «mismo resistentes» no es fuente para un número.
+3. Conviene un **glosario de corrección** (los ~30 términos del dominio) al
+   indexar, para que la búsqueda encuentre «sismorresistente» aunque el texto
+   diga otra cosa.
+
+## La arquitectura acordada (respuesta a «¿dónde corre?»)
+
+```
+[Portal GHL: cada curso]                    [GitHub Pages]        [Render]
+  botón/lección «Tutor IA»  ──iframe──►  página de chat DMA ──►  servicio propio
+  (el acceso lo controla                  (HTML como las apps)    Claude API +
+   una OFERTA de membresía)                                       transcripciones
+                                                                  del curso
+```
+
+- **El botón va en todos los cursos; el ACCESO es una oferta de membresía.**
+  Quien la tiene, entra; quien no, cae en la página de venta del upgrade. Así
+  se activa «para todo el mundo» y se cobra a la vez — es el mismo mecanismo
+  del lead magnet, sin infraestructura nueva de cobro.
+- **El chat es una página nuestra** embebida por iframe en una lección, como
+  el verificador. No es Ask AI (274 s, y es de administración), no es el bot
+  de Patricio (ese vive en los DM y conversa con leads, no con alumnos dentro
+  del curso).
+- **El cerebro corre en Render** — el mismo patrón que ya usa
+  `dma-sales-assistant` — llamando a la API de Claude con las transcripciones
+  del curso **concreto**: la página pasa `?curso=acero` y el servicio solo
+  carga ese material. Eso arregla por diseño el fallo de Ask AI de contestar
+  sobre otro curso.
+- **Regla dura en el servicio:** si la respuesta no está en el material,
+  responde que no está y sugiere la asesoría. Nunca completa con conocimiento
+  general.
+
+## Qué se graba (opción B): UN módulo, no un curso
+
+Nada de los 30 se regraba. Se graba **una vez** un módulo transversal —
+p. ej. «IA aplicada a la ingeniería estructural» — y se añade como lección
+extra a todos los cursos. Borrador de contenido (4 lecciones):
+
+1. **Conectar Claude/ChatGPT al flujo de Revit** — el ángulo que más
+   conversación genera según la matriz.
+2. **Lo que la IA sí hace en tu flujo** (memorias de cálculo, comprobaciones,
+   documentación) — con demo real.
+3. **Donde la IA falla y tú vales: el criterio.** La frontera — es la forma
+   que rinde 11-17 comentarios/1k en nuestra cuenta.
+4. **Cómo verificar lo que la IA te da** — enlaza con la guía de las 5
+   verificaciones y con el descargo profesional.
