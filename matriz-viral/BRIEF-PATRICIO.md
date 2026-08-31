@@ -277,3 +277,38 @@ Las **vistas por publicación de Facebook** siguen sin estar en la API (Meta
 las eliminó). Sí llegan los comentarios de FB, y por eso sabemos que el post
 del test sumó 9 comentarios más allí — sin ese dato habríamos contado 12 en
 vez de 21.
+
+
+## Actualización 2026-08-31 — semana 24-30 ago · las piezas de ACERO ganan en las dos métricas
+
+| Pieza | Vistas | 💬 | c/1k | Lectura |
+|---|---|---|---|---|
+| Sobredimensionar ≠ ir por el lado seguro (28) | **13.306** | **102** | 7,67 | ganadora absoluta |
+| La guía de 5 verificaciones (26) | 4.583 | 45 | **9,82** | mejor tasa |
+| El error #1 está en el nudo (21) | 3.344 | 16 | 4,78 | sólida |
+| «La IA no reemplaza…» (24) | 1.718 | 3 | 1,75 | floja |
+| Reel vlog «acompáñenme…» (26) | 198 | 0 | 0 | fracaso |
+
+**Lecciones de la semana:**
+
+1. **Se rompió el trade-off alcance/intención.** «Sobredimensionar» hizo
+   13.306 vistas —por encima de la mediana de OBRA— con 7,67 c/1k, 45 veces la
+   tasa de OBRA. La combinación: afirmación que incomoda al que firma + palabra
+   ACERO + **recurso real montado detrás**. Los 48 compartidos lo confirman:
+   se comparte como pulla entre colegas.
+2. **Mismo gancho, recurso detrás, resultado distinto.** «El error #1» es el
+   tema del post de conexiones de julio — el que prometió una guía que no
+   existía. Esta vez la guía existe y la pieza rinde 4,78 c/1k limpia. La
+   diferencia no fue el copy: fue cumplir.
+3. **La declaración genérica de IA no mueve** («la IA no reemplaza, quita lo
+   repetitivo» → 1,75 c/1k). Lo que mueve son las fronteras — ya lo tienes y
+   no lo sabes / hasta aquí llega / falla donde tú vales. Está desarrollado en
+   `matriz/CRUCE-SEPTIEMBRE-REVIT-IA.md`.
+4. **Para los reels que se montan esta semana:** el reel vlog sin gancho hizo
+   198 vistas y cero de todo. El formato reel no salva un gancho débil.
+   Primer segundo = la frontera, no la invitación.
+
+**Para el bot:** los 102 comentarios de la pieza ganadora son en su mayoría la
+palabra ACERO. Cuando esa gente responda al DM, la conversación llega al bot —
+el texto de qué contestar sobre la guía y el verificador es el de siempre
+(entregar, no vender; el precio del Máster jamás).

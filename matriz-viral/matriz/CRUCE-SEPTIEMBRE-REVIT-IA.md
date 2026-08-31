@@ -15,6 +15,12 @@ apoyar septiembre ahí. Esto comprueba esa intuición contra datos.
 >
 > Cuando estén publicados: `refresh_matriz.py` las recoge en la corrida
 > semanal, y con eso se rehace este cruce.
+>
+> **Primera confirmación (31-ago):** la semana 24-30 el patrón aguantó — y
+> mejoró. «Sobredimensionar no es ir por el lado seguro» rompió el trade-off:
+> 13.306 vistas CON 7,67 c/1k. La forma «afirmación que incomoda + palabra +
+> recurso real detrás» supera incluso a las fronteras solas. La declaración
+> genérica de IA volvió a quedarse en 1,75.
 
 ---
 

@@ -77,6 +77,20 @@ Estas ya no se discuten cada semana. Salieron de medir.
 
 ## Historial
 
+### 31-ago-2026 · Revisión semanal (24-30 ago)
+
+**La semana de ACERO.** «Sobredimensionar no es ir por el lado seguro» ganó en
+alcance Y en conversación a la vez (13.306 vistas · 102 comentarios · 48
+compartidos) — primera pieza que rompe el trade-off. Las tres piezas con
+palabra ACERO y recurso montado detrás promedian 7+ c/1k; la declaración
+genérica de IA hizo 1,75 y el reel vlog sin gancho, 198 vistas y cero.
+**Lección para los reels de esta semana: el primer segundo lleva la frontera,
+no la invitación.** Pendiente que sigue: verificar que los DM de esos 102
+comentarios salieron (IG y FB), y las vistas de Facebook de la semana, que la
+API no da.
+
+
+
 ### 14-ago-2026 · Auditoría de las historias
 Dayana señaló que las historias no venden. La verdad es mixta: el diseño **sí**
 enruta la venta al DM y eso está bien, pero **la semana tipo no tiene ni un slot
