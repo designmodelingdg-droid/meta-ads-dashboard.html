@@ -1,6 +1,6 @@
 # Inventario de correos — GoHighLevel
 
-Generado el 2026-08-28.
+Generado el 2026-08-31.
 
 **393 plantillas** en **44 carpetas**. 393 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
 
@@ -7881,11 +7881,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ Seg 02 - Test Nivel BIM
+### ✅ Seg 02 - Test Nivel BIM General
 
 - **id:** `6a91bc236137cbcd0bba019d`
 - **tipo:** html
-- **actualizada:** 2026-08-28T17:03:12.362Z
+- **actualizada:** 2026-08-28T23:29:34.058Z
 - **Cuerpo:**
 
 ```

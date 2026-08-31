@@ -1,5 +1,5 @@
 {
-  "generado": "2026-08-28",
+  "generado": "2026-08-31",
   "location": "nkKbOarn5IwHeMv48uY9",
   "nota": "Sonda: comprueba QUE endpoints responden con nuestro token. No baja datos de negocio. Lo importante es si abren 'cursos · productos' y 'membresias': ahi vive el progreso de los alumnos, que Windsor NO expone.",
   "resultados": {
@@ -121,7 +121,7 @@
     "workflows": {
       "ok": true,
       "http": 200,
-      "registros": "152+",
+      "registros": "153+",
       "claves": [
         "traceId",
         "workflows"
@@ -131,7 +131,7 @@
     "etiquetas": {
       "ok": true,
       "http": 200,
-      "registros": "498+",
+      "registros": "506+",
       "claves": [
         "tags",
         "traceId"
@@ -151,7 +151,7 @@
     "conversaciones": {
       "ok": true,
       "http": 200,
-      "registros": 25077,
+      "registros": 25253,
       "claves": [
         "conversations",
         "total",
@@ -162,7 +162,7 @@
     "pagos · órdenes": {
       "ok": true,
       "http": 200,
-      "registros": 161,
+      "registros": 165,
       "claves": [
         "data",
         "totalCount",
@@ -173,7 +173,7 @@
     "pagos · suscripciones": {
       "ok": true,
       "http": 200,
-      "registros": 58,
+      "registros": 62,
       "claves": [
         "data",
         "totalCount",
@@ -184,7 +184,7 @@
     "pagos · transacciones": {
       "ok": true,
       "http": 200,
-      "registros": 396,
+      "registros": 402,
       "claves": [
         "data",
         "totalCount",
@@ -211,7 +211,7 @@
   },
   "detalle_workflow": {
     "muestra": {
-      "id": "dd789720-9b02-4015-a372-f9e604fe234d",
+      "id": "95e839ad-2cb0-4ed9-8a7a-2f5c935f7a87",
       "claves_en_la_lista": [
         "createdAt",
         "id",
@@ -221,8 +221,86 @@
         "updatedAt",
         "version"
       ],
-      "total": 152,
+      "total": 153,
       "lista": [
+        {
+          "nombre": "Bot Nivel- Test  — IG/FB",
+          "estado": "published",
+          "actualizado": "2026-08-28",
+          "id": "373de22a-b53b-4e3b-b696-8b5ef6a2552d"
+        },
+        {
+          "nombre": "Bot ZAPATA — IG/FB",
+          "estado": "published",
+          "actualizado": "2026-08-28",
+          "id": "70a70198-d1f0-4f26-b4f9-81c8ca13f5b3"
+        },
+        {
+          "nombre": "IG ACERO · Comentario → DM + Membresía",
+          "estado": "draft",
+          "actualizado": "2026-08-28",
+          "id": "dd789720-9b02-4015-a372-f9e604fe234d"
+        },
+        {
+          "nombre": "✅ Acceso y Descarga PDF Recursos Gratis",
+          "estado": "published",
+          "actualizado": "2026-08-28",
+          "id": "cf3e5cfd-4d3a-46af-87ad-4d80ebd1ba8c"
+        },
+        {
+          "nombre": "✅ Comentario Facebook/TikTok - GENERICO (rutea por palabra BIM/IA)",
+          "estado": "published",
+          "actualizado": "2026-08-28",
+          "id": "381695fd-5427-47fa-961c-4845459ad48b"
+        },
+        {
+          "nombre": "✅ Comentario IG-GENERICO (rutea por palabra BIM/IA)",
+          "estado": "published",
+          "actualizado": "2026-08-28",
+          "id": "8e0eeb83-95bd-4cdc-87eb-dca27c45952e"
+        },
+        {
+          "nombre": "✅ FB ACERO · Comentario → DM + Membresía",
+          "estado": "published",
+          "actualizado": "2026-08-28",
+          "id": "9420d954-66db-4515-91ad-98a53817ae34"
+        },
+        {
+          "nombre": "✅ IG ACERO · Comentario → DM + Membresía",
+          "estado": "published",
+          "actualizado": "2026-08-28",
+          "id": "2eaa8799-2f5d-4ca0-9e3e-6a054b9f697d"
+        },
+        {
+          "nombre": "✅ Seguimiento Correo + No Calificado (Cursos)",
+          "estado": "published",
+          "actualizado": "2026-08-28",
+          "id": "04439524-e255-481c-b23e-20ca20030ff2"
+        },
+        {
+          "nombre": "✅ Seguimiento Correo + Oportunidad Futura (Cursos)",
+          "estado": "published",
+          "actualizado": "2026-08-28",
+          "id": "f8bc2f43-8aa5-4c94-b68a-cce6b62ac84c"
+        },
+        {
+          "nombre": "✅ Seguimiento Reactivación de la lista dormida",
+          "estado": "published",
+          "actualizado": "2026-08-28",
+          "id": "64825a8f-f256-403d-bdf1-f4d1ff1880a7"
+        },
+        {
+          "nombre": "✅ Seguimiento Test de Nivel → Máster BIM+IA",
+          "estado": "published",
+          "actualizado": "2026-08-28",
+          "id": "dfe45377-bcf8-4bb3-b163-5d11b7ee0153"
+        },
+        {
+          "nombre": "✅ Seguimiento Zapatas → Especialización en ACERO",
+          "estado": "published",
+          "actualizado": "2026-08-28",
+          "id": "3526b6ed-370a-4a8f-b8d9-09e6bbf2ae2b"
+        },
         {
           "nombre": "🟢Founder Circle · Formulario",
           "estado": "draft",
@@ -254,64 +332,10 @@
           "id": "9d19091c-0736-47b5-801a-76ac64ff0736"
         },
         {
-          "nombre": "✅ Acceso y Descarga PDF Recursos Gratis",
-          "estado": "published",
-          "actualizado": "2026-08-26",
-          "id": "cf3e5cfd-4d3a-46af-87ad-4d80ebd1ba8c"
-        },
-        {
-          "nombre": "✅ FB ACERO · Comentario → DM + Membresía",
-          "estado": "published",
-          "actualizado": "2026-08-26",
-          "id": "9420d954-66db-4515-91ad-98a53817ae34"
-        },
-        {
-          "nombre": "✅ IG ACERO · Comentario → DM + Membresía",
-          "estado": "published",
-          "actualizado": "2026-08-26",
-          "id": "2eaa8799-2f5d-4ca0-9e3e-6a054b9f697d"
-        },
-        {
-          "nombre": "✅ Comentario Facebook/TikTok - GENERICO (rutea por palabra BIM/IA)",
-          "estado": "published",
-          "actualizado": "2026-08-26",
-          "id": "381695fd-5427-47fa-961c-4845459ad48b"
-        },
-        {
-          "nombre": "✅ Comentario IG-GENERICO (rutea por palabra BIM/IA)",
-          "estado": "published",
-          "actualizado": "2026-08-26",
-          "id": "8e0eeb83-95bd-4cdc-87eb-dca27c45952e"
-        },
-        {
-          "nombre": "IG ACERO · Comentario → DM + Membresía",
-          "estado": "draft",
-          "actualizado": "2026-08-25",
-          "id": "dd789720-9b02-4015-a372-f9e604fe234d"
-        },
-        {
           "nombre": "✅ Lead Recontacto Máster BIM+IA",
           "estado": "published",
           "actualizado": "2026-08-25",
           "id": "1239b4c0-cdfc-4fab-a84b-f4e05874a9ea"
-        },
-        {
-          "nombre": "✅ Confirmar pago Matricula Master BIM",
-          "estado": "published",
-          "actualizado": "2026-08-24",
-          "id": "57118b4d-a0d6-491e-ae56-4393551943ba"
-        },
-        {
-          "nombre": "✅ Facturas Mensuales Clientes Master BIM + IA",
-          "estado": "published",
-          "actualizado": "2026-08-24",
-          "id": "f82b8625-799f-46db-93c4-7cd780e41261"
-        },
-        {
-          "nombre": "✅ Reservas de cupo Máster BIM+IA",
-          "estado": "published",
-          "actualizado": "2026-08-24",
-          "id": "55c66602-76a3-4802-8d62-de8f71fade7e"
         },
         {
           "nombre": "✅ Acceso GHL Curso 1 Automatización Revit",
@@ -356,22 +380,28 @@
           "id": "d5122e97-be54-492b-893d-7c72b0ee220b"
         },
         {
+          "nombre": "✅ Confirmar pago Matricula Master BIM",
+          "estado": "published",
+          "actualizado": "2026-08-24",
+          "id": "57118b4d-a0d6-491e-ae56-4393551943ba"
+        },
+        {
+          "nombre": "✅ Facturas Mensuales Clientes Master BIM + IA",
+          "estado": "published",
+          "actualizado": "2026-08-24",
+          "id": "f82b8625-799f-46db-93c4-7cd780e41261"
+        },
+        {
           "nombre": "✅ Lead Calificados + Notificación",
           "estado": "published",
           "actualizado": "2026-08-24",
           "id": "e97f9a3d-a518-4bb4-b3ba-1032862002da"
         },
         {
-          "nombre": "✅ Seguimiento Correo + No Calificado (Cursos)",
+          "nombre": "✅ Reservas de cupo Máster BIM+IA",
           "estado": "published",
           "actualizado": "2026-08-24",
-          "id": "04439524-e255-481c-b23e-20ca20030ff2"
-        },
-        {
-          "nombre": "✅ Seguimiento Correo + Oportunidad Futura (Cursos)",
-          "estado": "published",
-          "actualizado": "2026-08-24",
-          "id": "f8bc2f43-8aa5-4c94-b68a-cce6b62ac84c"
+          "id": "55c66602-76a3-4802-8d62-de8f71fade7e"
         },
         {
           "nombre": "✅ Seguimientos 1,2,3 y 4 Automatización Revit",
@@ -416,12 +446,6 @@
           "id": "fbbb4bec-482e-47d7-97c6-2f6ee8cdc3f4"
         },
         {
-          "nombre": "Bot ZAPATA — IG/FB",
-          "estado": "published",
-          "actualizado": "2026-08-17",
-          "id": "70a70198-d1f0-4f26-b4f9-81c8ca13f5b3"
-        },
-        {
           "nombre": "✅ Pago Exitoso General",
           "estado": "published",
           "actualizado": "2026-08-13",
@@ -434,28 +458,10 @@
           "id": "a069ad19-11c5-435d-94b4-307c8eb7c424"
         },
         {
-          "nombre": "Bot Nivel- Test  — IG/FB",
-          "estado": "published",
-          "actualizado": "2026-08-10",
-          "id": "373de22a-b53b-4e3b-b696-8b5ef6a2552d"
-        },
-        {
           "nombre": "[OLYMPUS] INSCRITO -> PURCHASE META",
           "estado": "draft",
           "actualizado": "2026-08-07",
           "id": "7afd9c85-c5ff-4e1c-8d12-3da37a936f81"
-        },
-        {
-          "nombre": "Test de Nivel BIM - Otorgar acceso",
-          "estado": "published",
-          "actualizado": "2026-08-04",
-          "id": "b8099ad3-c452-47db-b5db-a04725a4c955"
-        },
-        {
-          "nombre": "Calculadora Zapatas - Acceso Membresía",
-          "estado": "published",
-          "actualizado": "2026-08-04",
-          "id": "c2321459-7d3e-4e69-99ed-247374a14761"
         },
         {
           "nombre": "✅ Lead Ads x WhatsApp API",
@@ -482,18 +488,6 @@
           "id": "499ade5c-ad39-4458-8aaf-38c0bfb829fd"
         },
         {
-          "nombre": "✅ Comentario IG-Palabra AUTODESK",
-          "estado": "published",
-          "actualizado": "2026-07-16",
-          "id": "9b1070b7-9dea-4794-b816-76b439779837"
-        },
-        {
-          "nombre": "✅ Comentario IG-Palabra SAP2000",
-          "estado": "published",
-          "actualizado": "2026-07-16",
-          "id": "cd327808-a583-4040-adc2-016dcc4df663"
-        },
-        {
           "nombre": "✅ Comentario FB-Palabra AUTODESK",
           "estado": "published",
           "actualizado": "2026-07-16",
@@ -506,82 +500,58 @@
           "id": "db0bc3d3-4f84-48fd-a012-b584512b5290"
         },
         {
-          "nombre": "✅ Comentarios General TIKTOK",
+          "nombre": "✅ Comentario IG-Palabra AUTODESK",
           "estado": "published",
-          "actualizado": "2026-07-14",
-          "id": "20e45ee0-de95-44f2-a6c6-40778a2adcfd"
+          "actualizado": "2026-07-16",
+          "id": "9b1070b7-9dea-4794-b816-76b439779837"
         },
         {
-          "nombre": "🟢 Bot Supervisor Académico",
+          "nombre": "✅ Comentario IG-Palabra SAP2000",
           "estado": "published",
-          "actualizado": "2026-07-14",
-          "id": "46aed067-3e9a-4d3b-b16c-33840c5f2ae9"
+          "actualizado": "2026-07-16",
+          "id": "cd327808-a583-4040-adc2-016dcc4df663"
         },
         {
-          "nombre": "✅ ETIQUETAS + FUENTES DE CAMPAÑA GENERAL",
-          "estado": "published",
+          "nombre": "⛔ CORREOS (MQL) - Nutrición para Generación de Interés",
+          "estado": "draft",
           "actualizado": "2026-07-14",
-          "id": "11af208b-7646-422d-bccb-0781efd58f24"
+          "id": "8b6f7d28-6bc8-4d94-a0ec-151e95f372c2"
         },
         {
-          "nombre": "✅ Comentario IG-Palabra ACERO-ESPE",
-          "estado": "published",
+          "nombre": "⛔ CORREOS (Oportunidad) - Nutrición para Generación de Interés",
+          "estado": "draft",
           "actualizado": "2026-07-14",
-          "id": "cbd95055-3218-4f4f-a8c2-7bcf3a694772"
+          "id": "7fb17ca8-3e9c-4640-b432-02b63dcd1abe"
         },
         {
-          "nombre": "✅ Comentario IG-Palabra BIM-ESPE",
-          "estado": "published",
+          "nombre": "⛔ CORREOS (Sin Calificar) - Nutrición para Generación de Interés",
+          "estado": "draft",
           "actualizado": "2026-07-14",
-          "id": "899b8ea1-0892-4e0c-b5f8-73112858bca7"
+          "id": "88395dcf-fde2-4502-95a4-3a54bf6ca9b7"
         },
         {
-          "nombre": "✅ Comentario IG-Palabra CIMENT-ESPE",
-          "estado": "published",
+          "nombre": "⛔CORREOS (Mal Encaje) - Nutrición para Generación de Interés",
+          "estado": "draft",
           "actualizado": "2026-07-14",
-          "id": "9b94873a-592c-4bc2-b51b-0994a04ecba2"
+          "id": "39817267-11fa-42b0-9ff6-a1c1d259f94a"
         },
         {
-          "nombre": "✅ Comentario IG-Palabra CURSO GRATIS",
+          "nombre": "✅ API  Meta - Master Internacional BIM+IA",
           "estado": "published",
           "actualizado": "2026-07-14",
-          "id": "0ccc5d9c-f39e-4b1a-aed8-5cbfa66263ff"
+          "id": "390cdad9-73be-47bb-af27-bc140ccbca0c"
         },
         {
-          "nombre": "✅ Comentario IG-Palabra DIPLOMADO",
+          "nombre": "✅ API Meta - Diplomado Universitario BIM",
           "estado": "published",
           "actualizado": "2026-07-14",
-          "id": "634dc7e5-25da-40fb-9f2b-c198a9e387a9"
+          "id": "e80a75a3-67e1-4f25-9179-8e2ea08438e7"
         },
         {
-          "nombre": "✅ Comentario IG-Palabra EBOOK",
+          "nombre": "✅ API Meta - Especializaciones BIM",
           "estado": "published",
           "actualizado": "2026-07-14",
-          "id": "e91bdc58-e25d-40be-b13a-6f87f4bbe701"
-        },
-        {
-          "nombre": "✅ Comentario IG-Palabra GPT",
-          "estado": "published",
-          "actualizado": "2026-07-14",
-          "id": "0c75da26-1c25-4020-a0ee-d736cb58bf70"
-        },
-        {
-          "nombre": "✅ Comentario IG-Palabra GUIA",
-          "estado": "published",
-          "actualizado": "2026-07-14",
-          "id": "7ae4034b-6621-4632-909b-3aad3d803a8c"
-        },
-        {
-          "nombre": "✅ Comentario IG-Palabra MASTER",
-          "estado": "published",
-          "actualizado": "2026-07-14",
-          "id": "04a46066-75c3-41f5-b03c-23951092ca54"
-        },
-        {
-          "nombre": "✅ Comentario IG-Palabra PLANOS-ESPE",
-          "estado": "published",
-          "actualizado": "2026-07-14",
-          "id": "a37a600f-115d-4e69-ab72-6f99e8519f6d"
+          "id": "1a970dc0-2cd5-40bb-b0ad-612b23fabd7d"
         },
         {
           "nombre": "✅ Comentario FB-Palabra ACERO-ESPE",
@@ -644,46 +614,76 @@
           "id": "aa8fc2d2-d9fc-4a72-a744-993ac9117ef3"
         },
         {
-          "nombre": "⛔ CORREOS (MQL) - Nutrición para Generación de Interés",
-          "estado": "draft",
-          "actualizado": "2026-07-14",
-          "id": "8b6f7d28-6bc8-4d94-a0ec-151e95f372c2"
-        },
-        {
-          "nombre": "⛔ CORREOS (Oportunidad) - Nutrición para Generación de Interés",
-          "estado": "draft",
-          "actualizado": "2026-07-14",
-          "id": "7fb17ca8-3e9c-4640-b432-02b63dcd1abe"
-        },
-        {
-          "nombre": "⛔ CORREOS (Sin Calificar) - Nutrición para Generación de Interés",
-          "estado": "draft",
-          "actualizado": "2026-07-14",
-          "id": "88395dcf-fde2-4502-95a4-3a54bf6ca9b7"
-        },
-        {
-          "nombre": "⛔CORREOS (Mal Encaje) - Nutrición para Generación de Interés",
-          "estado": "draft",
-          "actualizado": "2026-07-14",
-          "id": "39817267-11fa-42b0-9ff6-a1c1d259f94a"
-        },
-        {
-          "nombre": "✅ API  Meta - Master Internacional BIM+IA",
+          "nombre": "✅ Comentario IG-Palabra ACERO-ESPE",
           "estado": "published",
           "actualizado": "2026-07-14",
-          "id": "390cdad9-73be-47bb-af27-bc140ccbca0c"
+          "id": "cbd95055-3218-4f4f-a8c2-7bcf3a694772"
         },
         {
-          "nombre": "✅ API Meta - Diplomado Universitario BIM",
+          "nombre": "✅ Comentario IG-Palabra BIM-ESPE",
           "estado": "published",
           "actualizado": "2026-07-14",
-          "id": "e80a75a3-67e1-4f25-9179-8e2ea08438e7"
+          "id": "899b8ea1-0892-4e0c-b5f8-73112858bca7"
         },
         {
-          "nombre": "✅ API Meta - Especializaciones BIM",
+          "nombre": "✅ Comentario IG-Palabra CIMENT-ESPE",
           "estado": "published",
           "actualizado": "2026-07-14",
-          "id": "1a970dc0-2cd5-40bb-b0ad-612b23fabd7d"
+          "id": "9b94873a-592c-4bc2-b51b-0994a04ecba2"
+        },
+        {
+          "nombre": "✅ Comentario IG-Palabra CURSO GRATIS",
+          "estado": "published",
+          "actualizado": "2026-07-14",
+          "id": "0ccc5d9c-f39e-4b1a-aed8-5cbfa66263ff"
+        },
+        {
+          "nombre": "✅ Comentario IG-Palabra DIPLOMADO",
+          "estado": "published",
+          "actualizado": "2026-07-14",
+          "id": "634dc7e5-25da-40fb-9f2b-c198a9e387a9"
+        },
+        {
+          "nombre": "✅ Comentario IG-Palabra EBOOK",
+          "estado": "published",
+          "actualizado": "2026-07-14",
+          "id": "e91bdc58-e25d-40be-b13a-6f87f4bbe701"
+        },
+        {
+          "nombre": "✅ Comentario IG-Palabra GPT",
+          "estado": "published",
+          "actualizado": "2026-07-14",
+          "id": "0c75da26-1c25-4020-a0ee-d736cb58bf70"
+        },
+        {
+          "nombre": "✅ Comentario IG-Palabra GUIA",
+          "estado": "published",
+          "actualizado": "2026-07-14",
+          "id": "7ae4034b-6621-4632-909b-3aad3d803a8c"
+        },
+        {
+          "nombre": "✅ Comentario IG-Palabra MASTER",
+          "estado": "published",
+          "actualizado": "2026-07-14",
+          "id": "04a46066-75c3-41f5-b03c-23951092ca54"
+        },
+        {
+          "nombre": "✅ Comentario IG-Palabra PLANOS-ESPE",
+          "estado": "published",
+          "actualizado": "2026-07-14",
+          "id": "a37a600f-115d-4e69-ab72-6f99e8519f6d"
+        },
+        {
+          "nombre": "✅ Comentarios General TIKTOK",
+          "estado": "published",
+          "actualizado": "2026-07-14",
+          "id": "20e45ee0-de95-44f2-a6c6-40778a2adcfd"
+        },
+        {
+          "nombre": "✅ ETIQUETAS + FUENTES DE CAMPAÑA GENERAL",
+          "estado": "published",
+          "actualizado": "2026-07-14",
+          "id": "11af208b-7646-422d-bccb-0781efd58f24"
         },
         {
           "nombre": "✅ EVENTO DE COMPRA META (API META GENERAL)",
@@ -698,16 +698,10 @@
           "id": "f3609760-3d3b-4183-a0e2-d2c315a19de1"
         },
         {
-          "nombre": "[OLYMPUS] BOT CALIFICO -> LEAD CALIFICADO (CRM-first)",
+          "nombre": "🟢 Bot Supervisor Académico",
           "estado": "published",
-          "actualizado": "2026-07-06",
-          "id": "aebf8b62-c23c-4d50-bf88-4d6f1b492714"
-        },
-        {
-          "nombre": "[OLYMPUS] BOT NO-CALIFICO -> NO CALIFICA/PERDIDO (CRM-first)",
-          "estado": "published",
-          "actualizado": "2026-07-06",
-          "id": "6e8db571-8dba-4a28-be5d-5f8432a0dcb0"
+          "actualizado": "2026-07-14",
+          "id": "46aed067-3e9a-4d3b-b16c-33840c5f2ae9"
         },
         {
           "nombre": "ACCESO CURSOS LMS",
@@ -728,10 +722,100 @@
           "id": "a1320f3b-10e6-471c-aa54-65ea745b3439"
         },
         {
+          "nombre": "[OLYMPUS] BOT CALIFICO -> LEAD CALIFICADO (CRM-first)",
+          "estado": "published",
+          "actualizado": "2026-07-06",
+          "id": "aebf8b62-c23c-4d50-bf88-4d6f1b492714"
+        },
+        {
+          "nombre": "[OLYMPUS] BOT NO-CALIFICO -> NO CALIFICA/PERDIDO (CRM-first)",
+          "estado": "published",
+          "actualizado": "2026-07-06",
+          "id": "6e8db571-8dba-4a28-be5d-5f8432a0dcb0"
+        },
+        {
+          "nombre": "⛔ AGENTE IA MASTER WHATSAPP",
+          "estado": "draft",
+          "actualizado": "2026-07-03",
+          "id": "6a64ae42-0608-4ea9-8034-3e6b5180766a"
+        },
+        {
+          "nombre": "⛔ AGENTE IA WHATSAPP",
+          "estado": "draft",
+          "actualizado": "2026-07-03",
+          "id": "dade52c7-3ab9-4d49-9c74-c6e8ec42d3c8"
+        },
+        {
+          "nombre": "⛔ Agendamiendo Asesorias de Inscritos General",
+          "estado": "draft",
+          "actualizado": "2026-07-03",
+          "id": "25e73ef2-f59a-44e2-9455-9ea5b80bea35"
+        },
+        {
+          "nombre": "⛔ Agente IA Claude",
+          "estado": "draft",
+          "actualizado": "2026-07-03",
+          "id": "73f1d991-926c-4b89-b635-55913c2d1a8b"
+        },
+        {
+          "nombre": "⛔ Avisos a Inscritos Diplomado (Nueva Comunidad)",
+          "estado": "draft",
+          "actualizado": "2026-07-03",
+          "id": "b31b5a20-55ec-4247-bfc3-8e707838fec8"
+        },
+        {
+          "nombre": "⛔ Curso Pago y Acceso",
+          "estado": "draft",
+          "actualizado": "2026-07-03",
+          "id": "c204bd97-ad57-474f-8fbe-2beb656a0424"
+        },
+        {
+          "nombre": "⛔ DESCARGA GUÍA (trigger link)",
+          "estado": "draft",
+          "actualizado": "2026-07-03",
+          "id": "310ea6fe-bbd3-4811-9377-71dcd7f45f8d"
+        },
+        {
+          "nombre": "⛔ Detener la IA",
+          "estado": "draft",
+          "actualizado": "2026-07-03",
+          "id": "d3fe2bbb-732c-4b58-953b-45311c6e7ca3"
+        },
+        {
+          "nombre": "⛔ ENVÍO DE CORREOS ELECTRÓNICOS",
+          "estado": "draft",
+          "actualizado": "2026-07-03",
+          "id": "e4f80a6b-efc6-4d98-b57d-08003f795fad"
+        },
+        {
+          "nombre": "⛔ Encuestas inscritos Diplomado",
+          "estado": "draft",
+          "actualizado": "2026-07-03",
+          "id": "6c8aaa43-d800-4369-a933-b66ac40a6691"
+        },
+        {
+          "nombre": "⛔ INSCRITO CURSOS",
+          "estado": "draft",
+          "actualizado": "2026-07-03",
+          "id": "3c8ad125-17be-4c80-82dc-288f8162c9e4"
+        },
+        {
+          "nombre": "⛔ Instagram AppLevel",
+          "estado": "draft",
+          "actualizado": "2026-07-03",
+          "id": "db25e3d4-6622-40ae-bb5d-c1bc05b189a7"
+        },
+        {
           "nombre": "⛔ Invitación Lanzamiento Master BIM + IA",
           "estado": "draft",
           "actualizado": "2026-07-03",
           "id": "70c4c1d3-7af2-427b-9d0f-2171d1eeda3f"
+        },
+        {
+          "nombre": "⛔ Invitación Workshop Microcredenciales NFT",
+          "estado": "draft",
+          "actualizado": "2026-07-03",
+          "id": "351f6994-4eb3-48aa-833f-23c7c2ed90cd"
         },
         {
           "nombre": "⛔ Lanzamiento Marketing 04-25 Recordatorios",
@@ -752,130 +836,16 @@
           "id": "f4745e99-9544-40c2-93d5-a45a58e6bbce"
         },
         {
-          "nombre": "⛔ Webinar Certificados 02-25 Comentarios FB",
+          "nombre": "⛔ Leads Adds SMS",
           "estado": "draft",
           "actualizado": "2026-07-03",
-          "id": "b411bc78-4a3a-4b0b-8f3c-7adbab7fd88b"
+          "id": "742485ff-54ec-447f-a610-9ec927dfe65d"
         },
         {
-          "nombre": "⛔ Webinar Certificados 02-25 Comentarios IG",
+          "nombre": "⛔ Leads Adds WhatsApp",
           "estado": "draft",
           "actualizado": "2026-07-03",
-          "id": "95434308-7ccf-4558-9b9c-01468f21099c"
-        },
-        {
-          "nombre": "⛔ Webinar Certificados 02-25 Recordatorios",
-          "estado": "draft",
-          "actualizado": "2026-07-03",
-          "id": "160304c7-e273-48eb-84aa-09144a82c2cb"
-        },
-        {
-          "nombre": "⛔ Workshop 02-03 Recordatorios + Oferta",
-          "estado": "draft",
-          "actualizado": "2026-07-03",
-          "id": "bb958416-7c67-45e0-8473-dbc400a1c8d1"
-        },
-        {
-          "nombre": "⛔ Workshop 27-01 Recordatorios + Oferta",
-          "estado": "draft",
-          "actualizado": "2026-07-03",
-          "id": "1f7943cf-70da-415c-838b-393a4c783dfc"
-        },
-        {
-          "nombre": "⛔ Workshop Errores BIM 05-25 Recordatorios",
-          "estado": "draft",
-          "actualizado": "2026-07-03",
-          "id": "5b3f3526-58f0-4c35-b656-49fd9e2264ee"
-        },
-        {
-          "nombre": "⛔ Workshop Máster BIM (p3)+ IA 10-25 Recordatorios",
-          "estado": "draft",
-          "actualizado": "2026-07-03",
-          "id": "30c05b6b-c4c5-477e-807d-90183c0815b2"
-        },
-        {
-          "nombre": "⛔ Workshop Máster BIM (p4)+ IA 10-25 Recordatorios",
-          "estado": "draft",
-          "actualizado": "2026-07-03",
-          "id": "3d442e62-a0ce-43e9-b612-c1007621cc1e"
-        },
-        {
-          "nombre": "⛔ Workshop NFT Mayo 2026 (confirmación, recordatorios y seguimientos)",
-          "estado": "draft",
-          "actualizado": "2026-07-03",
-          "id": "1712c306-52b5-4599-98fc-341e642f74a7"
-        },
-        {
-          "nombre": "⛔ DESCARGA GUÍA (trigger link)",
-          "estado": "draft",
-          "actualizado": "2026-07-03",
-          "id": "310ea6fe-bbd3-4811-9377-71dcd7f45f8d"
-        },
-        {
-          "nombre": "⛔ ENVÍO DE CORREOS ELECTRÓNICOS",
-          "estado": "draft",
-          "actualizado": "2026-07-03",
-          "id": "e4f80a6b-efc6-4d98-b57d-08003f795fad"
-        },
-        {
-          "nombre": "⛔ Curso Pago y Acceso",
-          "estado": "draft",
-          "actualizado": "2026-07-03",
-          "id": "c204bd97-ad57-474f-8fbe-2beb656a0424"
-        },
-        {
-          "nombre": "⛔ Seguimientos WhatsApp API - Workshop",
-          "estado": "draft",
-          "actualizado": "2026-07-03",
-          "id": "0b46536f-3cd4-4740-9498-b3f896b6daa4"
-        },
-        {
-          "nombre": "⛔ Test2- Seguimientos WhatsApp API - Workshop",
-          "estado": "draft",
-          "actualizado": "2026-07-03",
-          "id": "547e7e0d-9ab9-4c40-88c0-ecafcdb04477"
-        },
-        {
-          "nombre": "⛔ WhatsApp Lead Assignment",
-          "estado": "draft",
-          "actualizado": "2026-07-03",
-          "id": "3fd1398a-717d-4f49-b1de-aa73f0279e8e"
-        },
-        {
-          "nombre": "⛔ Detener la IA",
-          "estado": "draft",
-          "actualizado": "2026-07-03",
-          "id": "d3fe2bbb-732c-4b58-953b-45311c6e7ca3"
-        },
-        {
-          "nombre": "⛔ Instagram AppLevel",
-          "estado": "draft",
-          "actualizado": "2026-07-03",
-          "id": "db25e3d4-6622-40ae-bb5d-c1bc05b189a7"
-        },
-        {
-          "nombre": "⛔ Respuesta Bot de IA - Applevel",
-          "estado": "draft",
-          "actualizado": "2026-07-03",
-          "id": "0fdd28f3-befe-4922-bb43-161f3a7ddf50"
-        },
-        {
-          "nombre": "⛔ Avisos a Inscritos Diplomado (Nueva Comunidad)",
-          "estado": "draft",
-          "actualizado": "2026-07-03",
-          "id": "b31b5a20-55ec-4247-bfc3-8e707838fec8"
-        },
-        {
-          "nombre": "⛔ Encuestas inscritos Diplomado",
-          "estado": "draft",
-          "actualizado": "2026-07-03",
-          "id": "6c8aaa43-d800-4369-a933-b66ac40a6691"
-        },
-        {
-          "nombre": "⛔ Invitación Workshop Microcredenciales NFT",
-          "estado": "draft",
-          "actualizado": "2026-07-03",
-          "id": "351f6994-4eb3-48aa-833f-23c7c2ed90cd"
+          "id": "55450fad-70c5-4dbb-b202-2c4c72da91df"
         },
         {
           "nombre": "⛔ Reactivación - Perdidos 2026",
@@ -926,88 +896,16 @@
           "id": "e92d8991-1e8c-47ba-9a95-aa302b9e7934"
         },
         {
-          "nombre": "⛔ Seguimiento POSTVENTA Cursos",
+          "nombre": "⛔ Respuesta Bot de IA - Applevel",
           "estado": "draft",
           "actualizado": "2026-07-03",
-          "id": "1f8717a7-b76a-45b7-a2c3-8748222d12f0"
-        },
-        {
-          "nombre": "⛔ Seguimiento POSTVENTA Diplomado",
-          "estado": "draft",
-          "actualizado": "2026-07-03",
-          "id": "8fc99d30-4674-4ea7-98aa-45b438a794d2"
-        },
-        {
-          "nombre": "⛔ INSCRITO CURSOS",
-          "estado": "draft",
-          "actualizado": "2026-07-03",
-          "id": "3c8ad125-17be-4c80-82dc-288f8162c9e4"
-        },
-        {
-          "nombre": "⛔ UPSELL ESPECIALIZACIONES",
-          "estado": "draft",
-          "actualizado": "2026-07-03",
-          "id": "8f836217-9179-4be4-b46a-3b8f4235a5eb"
-        },
-        {
-          "nombre": "⛔UPSELL DIPLOMADO",
-          "estado": "draft",
-          "actualizado": "2026-07-03",
-          "id": "7a5bbaf0-970b-4aad-8f7c-9f74b54a640e"
+          "id": "0fdd28f3-befe-4922-bb43-161f3a7ddf50"
         },
         {
           "nombre": "⛔ SEGUIMIENTO 180 DÍAS",
           "estado": "draft",
           "actualizado": "2026-07-03",
           "id": "d897c813-b0be-4c27-af5f-0b5181933dec"
-        },
-        {
-          "nombre": "⛔ AGENTE IA MASTER WHATSAPP",
-          "estado": "draft",
-          "actualizado": "2026-07-03",
-          "id": "6a64ae42-0608-4ea9-8034-3e6b5180766a"
-        },
-        {
-          "nombre": "⛔ AGENTE IA WHATSAPP",
-          "estado": "draft",
-          "actualizado": "2026-07-03",
-          "id": "dade52c7-3ab9-4d49-9c74-c6e8ec42d3c8"
-        },
-        {
-          "nombre": "⛔ Agendamiendo Asesorias de Inscritos General",
-          "estado": "draft",
-          "actualizado": "2026-07-03",
-          "id": "25e73ef2-f59a-44e2-9455-9ea5b80bea35"
-        },
-        {
-          "nombre": "⛔ Agente IA Claude",
-          "estado": "draft",
-          "actualizado": "2026-07-03",
-          "id": "73f1d991-926c-4b89-b635-55913c2d1a8b"
-        },
-        {
-          "nombre": "⛔ Leads Adds SMS",
-          "estado": "draft",
-          "actualizado": "2026-07-03",
-          "id": "742485ff-54ec-447f-a610-9ec927dfe65d"
-        },
-        {
-          "nombre": "⛔ Leads Adds WhatsApp",
-          "estado": "draft",
-          "actualizado": "2026-07-03",
-          "id": "55450fad-70c5-4dbb-b202-2c4c72da91df"
-        },
-        {
-          "nombre": "⛔ Soporte Técnico",
-          "estado": "draft",
-          "actualizado": "2026-07-03",
-          "id": "81b4757b-4d5f-4d71-9a79-95d7c079b6f8"
-        },
-        {
-          "nombre": "⛔ WHATSAPP",
-          "estado": "draft",
-          "actualizado": "2026-07-03",
-          "id": "8415d85e-c88c-49cb-9a1f-045e08cfd4be"
         },
         {
           "nombre": "⛔ SEGUIMIENTO CLIENTES CURSO",
@@ -1020,6 +918,18 @@
           "estado": "draft",
           "actualizado": "2026-07-03",
           "id": "0a66520c-0b06-4afa-b9d8-620aed14883f"
+        },
+        {
+          "nombre": "⛔ Seguimiento POSTVENTA Cursos",
+          "estado": "draft",
+          "actualizado": "2026-07-03",
+          "id": "1f8717a7-b76a-45b7-a2c3-8748222d12f0"
+        },
+        {
+          "nombre": "⛔ Seguimiento POSTVENTA Diplomado",
+          "estado": "draft",
+          "actualizado": "2026-07-03",
+          "id": "8fc99d30-4674-4ea7-98aa-45b438a794d2"
         },
         {
           "nombre": "⛔ Seguimientos Nutrición CORREOS - Acceso a Módulo 1 Diplomado",
@@ -1040,22 +950,106 @@
           "id": "e28da80c-e2aa-4a31-a44a-dc9052027bd6"
         },
         {
-          "nombre": "⛔ FACEBOOK FORM ESPECIALIZACIONES + CURSOS",
+          "nombre": "⛔ Seguimientos WhatsApp API - Workshop",
           "estado": "draft",
-          "actualizado": "2026-06-29",
-          "id": "6fa8ff65-03d5-48d9-82ce-2edd70fbf2f3"
+          "actualizado": "2026-07-03",
+          "id": "0b46536f-3cd4-4740-9498-b3f896b6daa4"
         },
         {
-          "nombre": "⛔ Comentario IG-Palabra EVENTO",
+          "nombre": "⛔ Soporte Técnico",
           "estado": "draft",
-          "actualizado": "2026-06-29",
-          "id": "8f1375f8-effe-4350-98ea-4a043feb1cd3"
+          "actualizado": "2026-07-03",
+          "id": "81b4757b-4d5f-4d71-9a79-95d7c079b6f8"
         },
         {
-          "nombre": "⛔ Comentario FB-Palabra EVENTO",
+          "nombre": "⛔ Test2- Seguimientos WhatsApp API - Workshop",
+          "estado": "draft",
+          "actualizado": "2026-07-03",
+          "id": "547e7e0d-9ab9-4c40-88c0-ecafcdb04477"
+        },
+        {
+          "nombre": "⛔ UPSELL ESPECIALIZACIONES",
+          "estado": "draft",
+          "actualizado": "2026-07-03",
+          "id": "8f836217-9179-4be4-b46a-3b8f4235a5eb"
+        },
+        {
+          "nombre": "⛔ WHATSAPP",
+          "estado": "draft",
+          "actualizado": "2026-07-03",
+          "id": "8415d85e-c88c-49cb-9a1f-045e08cfd4be"
+        },
+        {
+          "nombre": "⛔ Webinar Certificados 02-25 Comentarios FB",
+          "estado": "draft",
+          "actualizado": "2026-07-03",
+          "id": "b411bc78-4a3a-4b0b-8f3c-7adbab7fd88b"
+        },
+        {
+          "nombre": "⛔ Webinar Certificados 02-25 Comentarios IG",
+          "estado": "draft",
+          "actualizado": "2026-07-03",
+          "id": "95434308-7ccf-4558-9b9c-01468f21099c"
+        },
+        {
+          "nombre": "⛔ Webinar Certificados 02-25 Recordatorios",
+          "estado": "draft",
+          "actualizado": "2026-07-03",
+          "id": "160304c7-e273-48eb-84aa-09144a82c2cb"
+        },
+        {
+          "nombre": "⛔ WhatsApp Lead Assignment",
+          "estado": "draft",
+          "actualizado": "2026-07-03",
+          "id": "3fd1398a-717d-4f49-b1de-aa73f0279e8e"
+        },
+        {
+          "nombre": "⛔ Workshop 02-03 Recordatorios + Oferta",
+          "estado": "draft",
+          "actualizado": "2026-07-03",
+          "id": "bb958416-7c67-45e0-8473-dbc400a1c8d1"
+        },
+        {
+          "nombre": "⛔ Workshop 27-01 Recordatorios + Oferta",
+          "estado": "draft",
+          "actualizado": "2026-07-03",
+          "id": "1f7943cf-70da-415c-838b-393a4c783dfc"
+        },
+        {
+          "nombre": "⛔ Workshop Errores BIM 05-25 Recordatorios",
+          "estado": "draft",
+          "actualizado": "2026-07-03",
+          "id": "5b3f3526-58f0-4c35-b656-49fd9e2264ee"
+        },
+        {
+          "nombre": "⛔ Workshop Máster BIM (p3)+ IA 10-25 Recordatorios",
+          "estado": "draft",
+          "actualizado": "2026-07-03",
+          "id": "30c05b6b-c4c5-477e-807d-90183c0815b2"
+        },
+        {
+          "nombre": "⛔ Workshop Máster BIM (p4)+ IA 10-25 Recordatorios",
+          "estado": "draft",
+          "actualizado": "2026-07-03",
+          "id": "3d442e62-a0ce-43e9-b612-c1007621cc1e"
+        },
+        {
+          "nombre": "⛔ Workshop NFT Mayo 2026 (confirmación, recordatorios y seguimientos)",
+          "estado": "draft",
+          "actualizado": "2026-07-03",
+          "id": "1712c306-52b5-4599-98fc-341e642f74a7"
+        },
+        {
+          "nombre": "⛔UPSELL DIPLOMADO",
+          "estado": "draft",
+          "actualizado": "2026-07-03",
+          "id": "7a5bbaf0-970b-4aad-8f7c-9f74b54a640e"
+        },
+        {
+          "nombre": "Agente IA Facebook-Instagram - Agendas",
           "estado": "draft",
           "actualizado": "2026-06-29",
-          "id": "3753e04b-2b01-413b-89d6-5ab534f3c2bb"
+          "id": "bbcd6dfd-7a8a-46ec-894f-098cca57c52c"
         },
         {
           "nombre": "⛔ CLIENTES INTERESADOS MASTER",
@@ -1064,10 +1058,22 @@
           "id": "fe8c9511-4f96-45a6-b595-1259d9cc693f"
         },
         {
-          "nombre": "Agente IA Facebook-Instagram - Agendas",
+          "nombre": "⛔ Comentario FB-Palabra EVENTO",
           "estado": "draft",
           "actualizado": "2026-06-29",
-          "id": "bbcd6dfd-7a8a-46ec-894f-098cca57c52c"
+          "id": "3753e04b-2b01-413b-89d6-5ab534f3c2bb"
+        },
+        {
+          "nombre": "⛔ Comentario IG-Palabra EVENTO",
+          "estado": "draft",
+          "actualizado": "2026-06-29",
+          "id": "8f1375f8-effe-4350-98ea-4a043feb1cd3"
+        },
+        {
+          "nombre": "⛔ FACEBOOK FORM ESPECIALIZACIONES + CURSOS",
+          "estado": "draft",
+          "actualizado": "2026-06-29",
+          "id": "6fa8ff65-03d5-48d9-82ce-2edd70fbf2f3"
         },
         {
           "nombre": "[OLYMPUS] Carrito abandonado · Naves SAP2000",
@@ -1141,42 +1147,42 @@
       "detalle v2": {
         "ok": false,
         "http": 404,
-        "detalle": "{\"message\":\"Cannot GET /workflows/dd789720-9b02-4015-a372-f9e604fe234d\",\"error\":\"Not Found\",\"statusCode\":404}",
+        "detalle": "{\"message\":\"Cannot GET /workflows/95e839ad-2cb0-4ed9-8a7a-2f5c935f7a87\",\"error\":\"Not Found\",\"statusCode\":404}",
         "lectura": "la ruta no existe en la API (no es cuestión de permisos)",
         "bloqueo_cloudflare": false,
-        "ruta": "/workflows/dd789720-9b02-4015-a372-f9e604fe234d"
+        "ruta": "/workflows/95e839ad-2cb0-4ed9-8a7a-2f5c935f7a87"
       },
       "detalle v2 · location": {
         "ok": false,
         "http": 404,
-        "detalle": "{\"message\":\"Cannot GET /workflows/dd789720-9b02-4015-a372-f9e604fe234d?locationId=nkKbOarn5IwHeMv48uY9\",\"error\":\"Not Found\",\"statusCode\":404}",
+        "detalle": "{\"message\":\"Cannot GET /workflows/95e839ad-2cb0-4ed9-8a7a-2f5c935f7a87?locationId=nkKbOarn5IwHeMv48uY9\",\"error\":\"Not Found\",\"statusCode\":404}",
         "lectura": "la ruta no existe en la API (no es cuestión de permisos)",
         "bloqueo_cloudflare": false,
-        "ruta": "/workflows/dd789720-9b02-4015-a372-f9e604fe234d?locationId=nkKbOarn5IwHeMv48uY9"
+        "ruta": "/workflows/95e839ad-2cb0-4ed9-8a7a-2f5c935f7a87?locationId=nkKbOarn5IwHeMv48uY9"
       },
       "acciones v2": {
         "ok": false,
         "http": 404,
-        "detalle": "{\"message\":\"Cannot GET /workflows/dd789720-9b02-4015-a372-f9e604fe234d/actions?locationId=nkKbOarn5IwHeMv48uY9\",\"error\":\"Not Found\",\"statusCode\":404}",
+        "detalle": "{\"message\":\"Cannot GET /workflows/95e839ad-2cb0-4ed9-8a7a-2f5c935f7a87/actions?locationId=nkKbOarn5IwHeMv48uY9\",\"error\":\"Not Found\",\"statusCode\":404}",
         "lectura": "la ruta no existe en la API (no es cuestión de permisos)",
         "bloqueo_cloudflare": false,
-        "ruta": "/workflows/dd789720-9b02-4015-a372-f9e604fe234d/actions?locationId=nkKbOarn5IwHeMv48uY9"
+        "ruta": "/workflows/95e839ad-2cb0-4ed9-8a7a-2f5c935f7a87/actions?locationId=nkKbOarn5IwHeMv48uY9"
       },
       "pasos v2": {
         "ok": false,
         "http": 404,
-        "detalle": "{\"message\":\"Cannot GET /workflows/dd789720-9b02-4015-a372-f9e604fe234d/steps?locationId=nkKbOarn5IwHeMv48uY9\",\"error\":\"Not Found\",\"statusCode\":404}",
+        "detalle": "{\"message\":\"Cannot GET /workflows/95e839ad-2cb0-4ed9-8a7a-2f5c935f7a87/steps?locationId=nkKbOarn5IwHeMv48uY9\",\"error\":\"Not Found\",\"statusCode\":404}",
         "lectura": "la ruta no existe en la API (no es cuestión de permisos)",
         "bloqueo_cloudflare": false,
-        "ruta": "/workflows/dd789720-9b02-4015-a372-f9e604fe234d/steps?locationId=nkKbOarn5IwHeMv48uY9"
+        "ruta": "/workflows/95e839ad-2cb0-4ed9-8a7a-2f5c935f7a87/steps?locationId=nkKbOarn5IwHeMv48uY9"
       },
       "version v2": {
         "ok": false,
         "http": 404,
-        "detalle": "{\"message\":\"Cannot GET /workflows/dd789720-9b02-4015-a372-f9e604fe234d/versions?locationId=nkKbOarn5IwHeMv48uY9\",\"error\":\"Not Found\",\"statusCode\":404}",
+        "detalle": "{\"message\":\"Cannot GET /workflows/95e839ad-2cb0-4ed9-8a7a-2f5c935f7a87/versions?locationId=nkKbOarn5IwHeMv48uY9\",\"error\":\"Not Found\",\"statusCode\":404}",
         "lectura": "la ruta no existe en la API (no es cuestión de permisos)",
         "bloqueo_cloudflare": false,
-        "ruta": "/workflows/dd789720-9b02-4015-a372-f9e604fe234d/versions?locationId=nkKbOarn5IwHeMv48uY9"
+        "ruta": "/workflows/95e839ad-2cb0-4ed9-8a7a-2f5c935f7a87/versions?locationId=nkKbOarn5IwHeMv48uY9"
       },
       "lista v1": {
         "ok": false,
@@ -1192,7 +1198,7 @@
         "detalle": "{\"msg\":\"Not found\"}",
         "lectura": "la ruta no existe en la API (no es cuestión de permisos)",
         "bloqueo_cloudflare": false,
-        "ruta": "/workflows/dd789720-9b02-4015-a372-f9e604fe234d"
+        "ruta": "/workflows/95e839ad-2cb0-4ed9-8a7a-2f5c935f7a87"
       }
     },
     "veredicto": "Ninguna ruta de detalle responde: la API solo da la lista. Los pasos solo se leen con navegador."
