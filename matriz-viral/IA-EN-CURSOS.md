@@ -335,3 +335,35 @@ decide si contesta. Y el límite por alumno/día es también el control de costo
 
 - Las preguntas reales para la prueba adversarial las pasa **Gabriel** (uno de
   los instructores), no Patricio.
+
+
+## Paso 2 · HECHO — 01-sep
+
+Corpus descargado, limpio y versionado en el repo privado
+(`dma-sales-assistant/tutor/corpus/`):
+
+| Curso | Videos | Palabras |
+|---|---|---|
+| Estructuras Complejas | 13 | 210.735 |
+| Cerchas / Naves | 14 | 146.344 |
+| Uniones Metálicas | 9 | 31.729 |
+| Modelado BIM | 7 | 53.644 |
+| **Total** | **43** | **442.452** |
+
+Cada archivo lleva marcadores de minuto (`[MM:SS]`) para que el tutor pueda
+citar «Sesión X, minuto Y». El glosario v1 aplicó: cero «mismo resistente»
+restantes, 15 «sismorresistente» corregidos.
+
+**Calidad, leída con los ojos:** el hilo se sigue, y el ASR sigue fallando en
+nombres propios y términos sueltos («dga» por viga, «idea estática» por
+IdeaStatica, «a bustes» por ajustes). Confirma las reglas: la transcripción
+localiza el contenido; las cifras y cláusulas nunca se citan de ella.
+
+**Dimensión para el costo (paso 3):** ~442K palabras ≈ 700K tokens. Con
+recuperación de pocos bloques por pregunta, el costo por pregunta queda muy por
+debajo de un centavo con un modelo rápido — el límite por alumno/día del
+candado es el control real, no el precio unitario.
+
+**Siguiente:** paso 3 — la página de chat (aprueba Dayana el diseño) y el
+servicio en Render con las tres capas del candado. Y las preguntas de Gabriel
+para el paso 4.
