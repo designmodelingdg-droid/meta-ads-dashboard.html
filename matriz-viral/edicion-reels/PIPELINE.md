@@ -49,11 +49,36 @@ b-roll del comercial de Revit y placa DMA de cierre.
   con libass): `raw.githubusercontent.com/JulietaUla/Montserrat/master/fonts/ttf/Montserrat-ExtraBold.ttf`
   → `/usr/share/fonts/truetype/montserrat/` + `fc-cache -f`.
 
-## Pendiente de confirmar con Dayana (transcripción de Valor 6)
+## v2: reemplazo de fondo y más transiciones (mismo día)
 
-- El CTA dice "comenta bien o guía" según Whisper. En el video se subtituló
-  `COMENTA "GUÍA"`. Si la palabra clave real del bot es otra (¿"QUIERO GUÍA"?),
-  hay que corregir el subtítulo y regenerar — la palabra clave dispara la
-  automatización, no puede quedar mal.
-- "valides todo lo que hagas con la guía" — así lo oyó Whisper y así quedó;
-  confirmar que no dijo "con la IA".
+Dayana pidió mejorar el fondo (la pared mostaza) rellenándolo con una imagen
+degradada de Revit, y más transiciones. Lo que se agregó:
+
+- **Fondo nuevo por segmentación de persona** (`componer.py`): MediaPipe
+  ImageSegmenter (modelo `selfie_multiclass_256x256.tflite`) saca la máscara de
+  la persona frame a frame (inferencia a 1/4 de resolución, borde apretado con
+  erosión + desenfoque para que no quede halo de la pared) y la compone sobre
+  un fondo fijo. El fondo es un plano real de Revit de su propia clase
+  (VIVIENDA) **invertido estilo blueprint** — líneas claras sobre azul marino
+  DMA con degradado — para que se reconozca Revit sin competir con la persona.
+  REGLA: el fondo solo se cambia en los segmentos donde la persona está a
+  cámara (hook y CTA). Los segmentos donde se graba el monitor (el error real,
+  ChatGPT) se dejan intactos: esa pantalla ES el contenido, la segmentación
+  la borraría.
+  Dependencias extra: `pip install mediapipe opencv-python-headless` +
+  `apt-get install libegl1 libgles2` + el .tflite de
+  `storage.googleapis.com/mediapipe-models/image_segmenter/selfie_multiclass_256x256/float32/latest/`.
+- **Más transiciones**: los segmentos largos se parten en cortes de ~1.5–3s con
+  "snap de zoom" (el nivel de zoom salta en el corte: p.ej. un segmento termina
+  en 1.00 y el siguiente arranca en 1.12) además del zoom lento in/out dentro
+  de cada corte. 10 cortes hablados en 27s.
+- **B-roll con fundido**: entrada y salida del b-roll con fade alfa de 0.15s
+  en vez de corte seco (`format=yuva420p,fade=...:alpha=1` + overlay).
+
+## Transcripción confirmada por Dayana
+
+- "valides todo lo que hagas **con la IA**" (Whisper había oído "con la guía";
+  Dayana confirmó que dice IA). Corregido en v2.
+- El CTA quedó subtitulado `COMENTA "GUÍA"`. Whisper oyó "comenta bien o guía";
+  si la palabra clave del bot resulta ser otra (¿"QUIERO GUÍA"?), corregir y
+  regenerar.
