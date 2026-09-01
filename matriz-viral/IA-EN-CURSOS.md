@@ -185,3 +185,31 @@ extra a todos los cursos. Borrador de contenido (4 lecciones):
    que rinde 11-17 comentarios/1k en nuestra cuenta.
 4. **Cómo verificar lo que la IA te da** — enlaza con la guía de las 5
    verificaciones y con el descargo profesional.
+
+
+## Prueba 3 · Ask AI otra vez — 04-sep, corrida por Dayana
+
+**Las tres preguntas, y esta vez fue honesto en las tres.** Listó los 11
+cursos con «acero», se negó a citar contenido de un módulo que no existe
+(«inventar el contenido sería una alucinación — y no lo haré») y desarmó la
+trampa del módulo 7 señalando la doble contradicción.
+
+**La lectura que importa:** en la prueba 1 adivinó; en esta no. La diferencia
+no fue la herramienta, fue **la pregunta** — vaga invita a adivinar, precisa
+obliga a ser honesto. Confirma el diseño del tutor: el alcance va fijado por
+sistema (`?curso=`), nunca dejado a que el modelo resuelva la ambigüedad.
+
+**Y el hallazgo real: la «Especialización en Acero» NO existe en el portal**
+con ese nombre ni con la estructura de 3 módulos del temario 2026. Lo que se
+vende como Especialización vive bajo otro nombre — el candidato más probable
+es **«Análisis Profesional de Estructuras de Acero. Incluyendo Conexiones»**
+(el contenido del temario ES análisis + conexiones) — o la edición 2026
+todavía no se ha montado como curso. Encaja con lo que ya vimos en Vimeo: las
+clases son grabaciones de cohortes en vivo («221116 Sesión Introductoria…»,
+nov-2022), así que el temario 2026 describe la cohorte nueva, no
+necesariamente el curso ya subido.
+
+**Pendiente que destraba todo:** Dayana confirma cuál de los 11 es el que
+reciben los alumnos de la Especialización. Con ese nombre se corre la prueba
+de profundidad (¿lee el contenido de dentro de una lección?) y se apuntan las
+transcripciones correctas.
