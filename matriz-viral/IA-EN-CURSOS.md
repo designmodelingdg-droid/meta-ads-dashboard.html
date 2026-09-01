@@ -296,3 +296,42 @@ distintos. Se cierra con un export de Ask AI: lección → título del video, y 
 casa contra este inventario.
 
 Detalle completo: `matriz-viral/fuentes/vimeo-inventario-acero.md` (y `.json`).
+
+
+## Paso 2 · EN MARCHA — 04-sep (y dos decisiones de seguridad)
+
+**El corpus NO vive en el repo público.** Las transcripciones son contenido de
+cursos de pago y `meta-ads-dashboard.html` es público con Pages abierto. El
+descargador quedó montado en **`dma-sales-assistant`** (privado), en `tutor/`
+— al lado del servicio de Render que lo va a usar. El corpus se genera, no se
+edita a mano; las correcciones van al glosario y se regenera.
+
+**Falta una sola cosa para correrlo:** el secreto `VIMEO_TOKEN` en ESE repo
+(`dma-sales-assistant` → Settings → Secrets and variables → Actions). Es el
+mismo token que ya está en el repo público; los secretos no se comparten entre
+repos.
+
+### El candado del tutor (pedido de Dayana): más fuerte que el de las apps
+
+El candado de los lead magnets (`?acceso=dm2026` + localStorage) es
+**cosmético a propósito**: vive en el JavaScript de una página pública, y para
+un recurso gratuito eso basta — lo peor que pasa es que alguien lea gratis lo
+que ya es gratis.
+
+Para el tutor NO basta, por dos razones: el contenido es **de pago**, y cada
+pregunta **cuesta dinero** (llama a la API de Claude). Un candado de cliente
+invitaría a que cualquiera con el enlace gaste el crédito.
+
+| Capa | Qué protege | Cómo |
+|---|---|---|
+| 1 · Membresía GHL | quién ve el botón/lección | la oferta «Tutor IA» — ya decidido |
+| 2 · Token por alumno en la URL del iframe | quién abre la página | la lección pasa `?t=<token>`; sin token válido, la página ni carga el chat |
+| 3 · **Validación en el servidor (Render)** | **cada pregunta** | el servicio verifica el token en CADA petición y aplica límite de uso por alumno/día |
+
+La capa 3 es la real: aunque alguien copie la URL del iframe, el servidor
+decide si contesta. Y el límite por alumno/día es también el control de costo.
+
+### Correcciones de registro
+
+- Las preguntas reales para la prueba adversarial las pasa **Gabriel** (uno de
+  los instructores), no Patricio.
