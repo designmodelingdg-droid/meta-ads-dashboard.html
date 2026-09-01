@@ -213,3 +213,25 @@ necesariamente el curso ya subido.
 reciben los alumnos de la Especialización. Con ese nombre se corre la prueba
 de profundidad (¿lee el contenido de dentro de una lección?) y se apuntan las
 transcripciones correctas.
+
+
+## Resuelto, 04-sep: la Especialización es un PAQUETE de cuatro cursos
+
+No existe «un curso Especialización» — y por eso Ask AI no lo encontraba. La
+Especialización en Acero **incluye cuatro cursos separados** del portal:
+
+| # | Curso | Duración | Sesiones |
+|---|---|---|---|
+| 1 | Análisis y Diseño Simplificado de Estructuras Complejas de Acero | 42:10 h | 19 |
+| 2 | Guía Práctica para el Cálculo Tipo Cerchas en Naves Industriales | 27:55 h | 10 |
+| 3 | Teoría y Cálculo de Uniones Metálicas en Edificaciones | 30:00 h | 12 |
+| 4 | Modelado BIM en Hormigón Armado y Acero Estructural | 35:00 h | 17 |
+
+**~135 horas · 58 sesiones.** Los «módulos» del temario 2026 mapean a los
+cursos: derivas y estabilidad viven en el 1, cerchas/naves en el 2, uniones en
+el 3, modelado en el 4.
+
+**Consecuencia de diseño para el tutor:** el alcance `?curso=acero` carga las
+transcripciones **de los cuatro cursos**, no de uno. Y en la respuesta el
+tutor dice de cuál curso y sesión sale lo que contesta — con 58 sesiones,
+«está en el curso» sin decir dónde no le sirve a nadie.
