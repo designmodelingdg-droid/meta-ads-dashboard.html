@@ -514,11 +514,37 @@ push(tbl(["Día","Qué se publica","Sticker"],
 push(H2("Destacadas del perfil"));
 push(P("Las buenas secuencias no se pierden a las 24 horas: se guardan en destacadas. Son la portada del perfil para quien te descubre.",{run:{color:GREY}}));
 HR.destacadas.forEach(x=>push(bul(x)));
-push(note("Cada pieza del mes tiene su secuencia de historias escrita frame por frame — está dentro del desarrollo de la pieza, en la sección 5."));
+push(note("Cada pieza del mes tiene su secuencia de historias escrita frame por frame — está dentro del desarrollo de la pieza, en la sección 6."));
+
+/* ═══════════════════════════════ 7b · CORREOS ═══════════════════════════════ */
+if(CAL.correos && CAL.correos.length){
+  push(pageBreak());
+  push(H1("8 · CORREOS del mes — campañas a la lista propia"));
+  push(P("Un correo por semana. El precio de ACERO puede ir en correo a lista propia; el del Máster no va nunca — el correo del Máster cierra a llamada.",{run:{color:GREY,italics:true}}));
+  CAL.correos.forEach(c=>{
+    push(H2(`${c.fecha} · ${c.nombre}`));
+    push(tbl(["Asunto","Preencabezado","Segmento","Objetivo"],
+      [[c.asunto,c.preencabezado,c.segmento,c.objetivo]],[2900,2600,2300,2400]));
+    if(c.condicion) push(P('⚠ '+c.condicion,{run:{color:RED,bold:true}}));
+    push(LBL("Cuerpo (se copia tal cual)"));
+    push(...block(c.cuerpo));
+  });
+}
+
+/* ═══════════════════════════════ 7c · COMUNIDADES ═══════════════════════════════ */
+if(CAL.comunidades){
+  push(pageBreak());
+  push(H1("9 · COMUNIDADES — la semana tipo (solo lunes a viernes)"));
+  push(P(CAL.comunidades.nota,{run:{color:GREY,italics:true}}));
+  push(tbl(["Día","Canales","Qué se publica","De dónde sale"],
+    CAL.comunidades.semana_tipo.map(s=>[s.dia,s.canales,s.contenido,s.fuente]),
+    [1100,2400,4200,2500]));
+  (CAL.comunidades.reglas||[]).forEach(r=>push(bul(r)));
+}
 
 /* ═══════════════════════════════ 7 · PAUTA ═══════════════════════════════ */
 push(pageBreak());
-push(H1("8 · VENTA y PAUTA — los anuncios (copy listo)"));
+push(H1("10 · VENTA y PAUTA — los anuncios (copy listo)"));
 push(P("Estas piezas SÍ venden y van a pauta. Todas llevan a WhatsApp — nunca a landing. El dato es contundente: landing = CPL $164.64 · WhatsApp = CPL $0.45.",{run:{color:RED,bold:true}}));
 push(H2("Cómo se separa el contenido de valor del de venta"));
 push(tbl(["","CONTENIDO DE VALOR (orgánico)","VENTA / PAUTA (ads)"],[
@@ -536,7 +562,7 @@ CAL.pauta.forEach((id,i)=>push(renderPieza({id,fecha:'ANUNCIO '+(i+1),
 
 /* ═══════════════════════════════ 7 · BANCO DE RESERVA ═══════════════════════════════ */
 push(pageBreak());
-push(H1("9 · Banco de reserva (piezas listas por si se cae alguna)"));
+push(H1("11 · Banco de reserva (piezas listas por si se cae alguna)"));
 push(P("Estas piezas ya tienen su contenido completo escrito. Si una fecha se cae o quieres reforzar una red concreta, se toma de aquí sin tener que crear nada.",{run:{color:GREY}}));
 push(tbl(["Pieza","Formato","Red pensada","Hook"],
   CAL.banco_reserva.filter(id=>BY[id]).map(id=>{const p=BY[id];
@@ -545,14 +571,12 @@ push(tbl(["Pieza","Formato","Red pensada","Hook"],
 push(note("El contenido palabra por palabra de todas estas piezas está en el archivo guiones-completos.json del repositorio, que es el mismo que lee la app de contenido."));
 
 /* ═══════════════════════════════ 8 · CIERRE ═══════════════════════════════ */
-push(H1("10 · Resumen operativo y checklist"));
+push(H1("12 · Resumen operativo y checklist"));
 const cuenta={};
 CAL.piezas.forEach(e=>{const f=(e.formato_publicacion.split(' ')[0]||'').toUpperCase();
   cuenta[f]=(cuenta[f]||0)+1;});
 push(tbl(["Formato","Piezas en el mes"],Object.entries(cuenta).map(([k,v])=>[k,String(v)]),[3600,2000]));
-push(note("El conteo incluye las 3 piezas pendientes de tus datos (Vie 22, Sáb 30 y Lun 31). Sin ellas: "+
-  (CAL.piezas.length-3)+" piezas con contenido ya escrito y listo para producir."));
-push(P("Proporción del mes: ~70% contenido de valor · ~30% venta (2 piezas de venta orgánica con gancho + los 3 anuncios de pauta de la sección 6). Del total, 3 piezas alimentan ACERO — el producto de mejor CPL, que hasta ahora el orgánico casi no cubría."));
+if(CAL.resumen_cierre) push(P(CAL.resumen_cierre));
 push(H2("Checklist antes de publicar cada pieza"));
 push(bul("¿Es NÚCLEO (BIM · IA · modelado · acero) y no obra genérica?"));
 push(bul("¿Tiene algo concreto en pantalla (demo, captura, esquema) y no solo alguien hablando?"));
@@ -560,13 +584,13 @@ push(bul("¿Cierra con una PREGUNTA directa sobre una duda real del que mira?"))
 push(bul("¿El CTA es el correcto — ACERO o BIM/IA — y está adaptado si va a LinkedIn?"));
 push(bul("¿Se publicó también en Facebook, cuidado y no como auto-repost?"));
 push(bul("¿Se registró en la matriz con sus métricas, incluidas las de Facebook?"));
-push(H2("Lo que falta que me pases"));
-push(bul("Vie 22 — el proyecto o caso de alumno (nombre, antes/después, qué estudió, resultado)."));
-push(bul("Sáb 30 — los datos de la conferencia o convención (nombre, fecha, quién expone, tema)."));
-push(bul("Mié 13 — si el nuevo lead magnet BIM+IA está listo, entra ahí y desplaza la pieza de venta."));
+if(CAL.pendientes && CAL.pendientes.length){
+  push(H2("Lo que falta para poder ejecutar el mes completo"));
+  CAL.pendientes.forEach(x=>push(bul(x)));
+}
 push(new Paragraph({spacing:{before:340},
   border:{top:{style:BorderStyle.SINGLE,size:8,color:"D9E0E7",space:8}},
-  children:[new TextRun({text:"Design Modeling Academy · Matriz de contenido agosto 2026 · Construida sobre la matriz viral (124 reels) y el rendimiento real de las campañas activas",size:17,color:GREY})]}));
+  children:[new TextRun({text:CAL.pie||("Design Modeling Academy · Matriz de contenido "+MES_TITULO+" "+ANIO+" · Construida sobre la matriz viral y el rendimiento real de las campañas activas"),size:17,color:GREY})]}));
 
 /* ═══════════════════════════════ SALIDA ═══════════════════════════════ */
 const doc=new Document({styles:{default:{document:{run:{font:"Calibri"}}}},

@@ -1,193 +1,72 @@
 {
- "generado": "2026-08-16",
  "mes": "2026-09",
- "subtitulo": "Desarrollo completo de cada pieza, red por red",
- "nota": "Orden de publicacion de septiembre 2026. Cada entrada apunta por `id` a la pieza de guiones-completos.json, que es donde vive el contenido palabra por palabra. Construido sobre las piezas que quedaron sin usar en agosto, priorizando NUCLEO sobre OBRA segun el diagnostico de la matriz.",
+ "subtitulo": "El mes de la nueva arquitectura: 4 puertas de entrada al Máster, ACERO con tutor de IA, y solo los formatos que los datos de agosto validaron",
  "reglas_del_mes": [
   "Minimo 60% de las piezas del NUCLEO (BIM / IA / modelado / acero). En septiembre son 16 de 18: 89%.",
   "Cero piezas de OBRA en el calendario. Da alcance, pero trae publico que no compra.",
+  "POST PLANO = SOLO CON DATO DE CALCULO VERIFICABLE. Es la lectura de agosto: las dos piezas con dato concreto hicieron 45 y 62 comentarios; los posts de frase generica hicieron entre 0 y 4. Si un post plano no tiene un numero que se pueda comprobar, no se publica.",
+  "La declaracion generica de IA esta prohibida como pieza. «La IA es el futuro» murio tres veces seguidas (0-4 comentarios). La IA se muestra con una funcion, un caso o un calculo — nunca como frase.",
   "Cerrar SIEMPRE con pregunta directa + CTA de comentar. Sin pregunta = cero comentarios.",
   "El humor va en REEL, nunca en post plano.",
   "Publicar tambien en Facebook, y no como auto-repost: mas de la mitad del alcance real viene de ahi.",
-  "Un slot de venta por semana, los jueves, siempre en historias."
+  "Un slot de venta por semana, los jueves, siempre en historias.",
+  "Comunidades SOLO de lunes a viernes. El fin de semana no se publica en ninguna comunidad; el blog del sabado se comparte en comunidades el lunes.",
+  "El precio del Master no aparece en NINGUNA pieza, correo ni DM: el Master cierra en llamada (nueva arquitectura comercial). El precio de ACERO si puede ir en correo a lista propia y en DM del bot.",
+  "El tutor de IA de ACERO no se anuncia hasta que este desplegado y probado. Prometer un recurso que no existe ya costo un incidente en julio.",
+  "Los reels se agrupan en dos dias de grabacion (Lun 7 y Mar 8), no repartidos por el mes."
  ],
  "piezas": [
-  {
-   "fecha": "Mar 1",
-   "semana": "Semana 1 (1-6 sep)",
-   "id": "ago-3-senales-bim-ia",
-   "tipo": "valor",
-   "formato_publicacion": "CARRUSEL (8 slides)",
-   "redes": "Instagram + Facebook · LinkedIn",
-   "nota": "Arranca el mes con el formato de mejor engagement de la cuenta. CTA: comenta BIM o IA."
-  },
-  {
-   "fecha": "Jue 3",
-   "semana": "Semana 1 (1-6 sep)",
-   "id": "venta-acero-cupos",
-   "tipo": "venta-blanda",
-   "formato_publicacion": "HISTORIA (3 cuadros)",
-   "redes": "Instagram (historias)",
-   "nota": "Slot de venta del jueves. ACTUALIZAR el numero de cupos antes de publicar."
-  },
-  {
-   "fecha": "Vie 4",
-   "semana": "Semana 1 (1-6 sep)",
-   "id": "ago-tip-revit-ia",
-   "tipo": "valor",
-   "formato_publicacion": "POST",
-   "redes": "Instagram + Facebook",
-   "nota": "La pieza mas comentada de agosto (27 comentarios). Se repite el angulo, no el texto."
-  },
-  {
-   "fecha": "Sab 5",
-   "semana": "Semana 1 (1-6 sep)",
-   "id": "ago-blog-ia-arquitectura",
-   "tipo": "blog",
-   "formato_publicacion": "BLOG + POST de anuncio",
-   "redes": "Blog del sitio · se anuncia en IG/FB",
-   "nota": "Blog de la semana. El post de anuncio lleva el enlace, no el resumen entero."
-  },
-  {
-   "fecha": "Lun 7",
-   "semana": "Semana 2 (7-13 sep)",
-   "id": "ago-chatgpt-revit",
-   "tipo": "valor",
-   "formato_publicacion": "REEL (45-60 s)",
-   "redes": "Instagram + Facebook · LinkedIn · TikTok",
-   "nota": "Semana de grabacion. Se graban Lun 7 y Mie 9 el mismo dia."
-  },
-  {
-   "fecha": "Mie 9",
-   "semana": "Semana 2 (7-13 sep)",
-   "id": "ago-dynamo-revit",
-   "tipo": "valor",
-   "formato_publicacion": "REEL (45-60 s)",
-   "redes": "Instagram + Facebook · LinkedIn · TikTok",
-   "nota": "Automatizacion: el tema con mejor guardado del nucleo."
-  },
-  {
-   "fecha": "Jue 10",
-   "semana": "Semana 2 (7-13 sep)",
-   "id": "venta-acero-objecion",
-   "tipo": "venta-blanda",
-   "formato_publicacion": "HISTORIA (4 cuadros)",
-   "redes": "Instagram (historias)",
-   "nota": "Slot de venta. El frame de cierre pide responder ACERO: requiere el bot montado."
-  },
-  {
-   "fecha": "Vie 11",
-   "semana": "Semana 2 (7-13 sep)",
-   "id": "ago-comu-opinion-alumnos",
-   "tipo": "comunidad",
-   "formato_publicacion": "POST (carrusel de capturas)",
-   "redes": "Instagram + Facebook",
-   "nota": "Prueba social. Usar capturas reales de la pagina de testimonios."
-  },
-  {
-   "fecha": "Sab 12",
-   "semana": "Semana 2 (7-13 sep)",
-   "id": "ago-blog-etabs-sap2000",
-   "tipo": "blog",
-   "formato_publicacion": "BLOG + POST de anuncio",
-   "redes": "Blog del sitio · se anuncia en IG/FB",
-   "nota": "Comparativa: el formato que mas trafico de busqueda trae."
-  },
-  {
-   "fecha": "Lun 14",
-   "semana": "Semana 3 (14-20 sep)",
-   "id": "ago-navisworks-coordinacion",
-   "tipo": "valor",
-   "formato_publicacion": "CARRUSEL (7 slides)",
-   "redes": "Instagram + Facebook · LinkedIn",
-   "nota": "Coordinacion: publico de BIM Manager, que es quien compra el Master."
-  },
-  {
-   "fecha": "Mie 16",
-   "semana": "Semana 3 (14-20 sep)",
-   "id": "ago-mitos-automatizacion",
-   "tipo": "valor",
-   "formato_publicacion": "REEL (45-60 s)",
-   "redes": "Instagram + Facebook · LinkedIn · TikTok",
-   "nota": "Mitos vs realidad: estructura de alto guardado."
-  },
-  {
-   "fecha": "Jue 17",
-   "semana": "Semana 3 (14-20 sep)",
-   "id": "venta-master-espejo",
-   "tipo": "venta-blanda",
-   "formato_publicacion": "HISTORIA (4 cuadros)",
-   "redes": "Instagram (historias)",
-   "nota": "Slot de venta del Master. NUNCA precio: el objetivo es abrir conversacion."
-  },
-  {
-   "fecha": "Vie 18",
-   "semana": "Semana 3 (14-20 sep)",
-   "id": "ago-comu-dia-proyecto-internacional",
-   "tipo": "comunidad",
-   "formato_publicacion": "POST",
-   "redes": "Instagram + Facebook",
-   "nota": "Cara humana del equipo. Sin CTA de venta."
-  },
-  {
-   "fecha": "Sab 19",
-   "semana": "Semana 3 (14-20 sep)",
-   "id": "ago-blog-elegir-software-estructuras",
-   "tipo": "blog",
-   "formato_publicacion": "BLOG + POST de anuncio",
-   "redes": "Blog del sitio · se anuncia en IG/FB",
-   "nota": "Blog de decision de compra: alto intento."
-  },
-  {
-   "fecha": "Lun 21",
-   "semana": "Semana 4 (21-30 sep)",
-   "id": "ago-errores-modelar-revit",
-   "tipo": "valor",
-   "formato_publicacion": "CARRUSEL (8 slides)",
-   "redes": "Instagram + Facebook · LinkedIn",
-   "nota": "Errores comunes: el angulo que mas comentarios genera del nucleo."
-  },
-  {
-   "fecha": "Mie 23",
-   "semana": "Semana 4 (21-30 sep)",
-   "id": "ago-revit-ia-futuro",
-   "tipo": "valor",
-   "formato_publicacion": "REEL (45-60 s)",
-   "redes": "Instagram + Facebook · LinkedIn · TikTok",
-   "nota": "Cierra el arco de IA del mes."
-  },
-  {
-   "fecha": "Jue 24",
-   "semana": "Semana 4 (21-30 sep)",
-   "id": "ago-venta-especializacion-ia-bim",
-   "tipo": "venta-blanda",
-   "formato_publicacion": "CARRUSEL (6 slides)",
-   "redes": "Instagram + Facebook · LinkedIn",
-   "nota": "Unica venta blanda en feed del mes. Comenta IA."
-  },
-  {
-   "fecha": "Lun 28",
-   "semana": "Semana 4 (21-30 sep)",
-   "id": "ago-plugins-revit",
-   "tipo": "valor",
-   "formato_publicacion": "CARRUSEL (7 slides)",
-   "redes": "Instagram + Facebook · LinkedIn",
-   "nota": "Cierre de mes con productividad: tema de guardado alto."
-  }
+  {"fecha":"Mar 1","semana":"Semana 1 (1-6 sep)","id":"ago-3-senales-bim-ia","tipo":"valor","formato_publicacion":"CARRUSEL (6 slides)","redes":"Instagram + Facebook · LinkedIn","nota":"Arranca el mes con el formato de mejor engagement de la cuenta y del nicho (los carruseles dominan tambien en la competencia BIM+IA). CTA: comenta BIM o IA."},
+  {"fecha":"Jue 3","semana":"Semana 1 (1-6 sep)","id":"venta-acero-cupos","tipo":"venta-blanda","formato_publicacion":"HISTORIAS (3-4 frames)","redes":"Instagram (historias) + Facebook stories","nota":"Slot de venta del jueves. ACTUALIZAR el numero real de cupos antes de publicar — nunca se inventa. El frame del tutor de IA SOLO si ya esta en produccion."},
+  {"fecha":"Vie 4","semana":"Semana 1 (1-6 sep)","id":"sep-dato-cuantia-minima","tipo":"valor","formato_publicacion":"POST PLANO (1 imagen)","redes":"Instagram + Facebook · LinkedIn","nota":"La formula ganadora de agosto: UNA imagen + dato de calculo verificable (45-62 comentarios en las dos piezas asi). Reemplaza a la pieza de IA que ya se publico el 12-ago."},
+  {"fecha":"Sab 5","semana":"Semana 1 (1-6 sep)","id":"ago-blog-ia-arquitectura","tipo":"blog","formato_publicacion":"BLOG + post con enlace","redes":"Blog del sitio · LinkedIn (articulo)","nota":"Blog de la semana. El post de anuncio lleva el enlace. En comunidades se comparte el LUNES (no el fin de semana)."},
+  {"fecha":"Lun 7","semana":"Semana 2 (7-13 sep)","id":"ago-chatgpt-revit","tipo":"valor","formato_publicacion":"REEL (30-45s)","redes":"Instagram + Facebook · TikTok · YouTube Shorts","nota":"Semana de grabacion: se graban Lun 7 y Mar 8 TODOS los reels del mes. El reel «Valor 6» (error de Revit resuelto con ChatGPT) ya esta editado con el pipeline nuevo — subtitulos, b-roll de Revit y fondo blueprint — y es exactamente esta pieza: usarlo."},
+  {"fecha":"Mie 9","semana":"Semana 2 (7-13 sep)","id":"ago-dynamo-revit","tipo":"valor","formato_publicacion":"REEL (30-45s)","redes":"Instagram + Facebook · TikTok · YouTube Shorts","nota":"Automatizacion: el tema con mejor guardados de la cuenta. El primer segundo lleva el dato, no la invitacion — el reel vlog sin gancho de agosto hizo 198 vistas."},
+  {"fecha":"Jue 10","semana":"Semana 2 (7-13 sep)","id":"venta-acero-objecion","tipo":"venta-blanda","formato_publicacion":"HISTORIAS (4-5 frames)","redes":"Instagram (historias) + Facebook stories","nota":"Slot de venta. El frame de cierre pide responder ACERO — lo agarra el bot. El frame del tutor de IA SOLO si ya esta en produccion."},
+  {"fecha":"Vie 11","semana":"Semana 2 (7-13 sep)","id":"ago-comu-opinion-alumnos","tipo":"comunidad","formato_publicacion":"POST (collage de capturas reales)","redes":"Instagram + Facebook","nota":"Prueba social. Usar capturas reales de los alumnos — nunca testimonios recreados."},
+  {"fecha":"Sab 12","semana":"Semana 2 (7-13 sep)","id":"ago-blog-etabs-sap2000","tipo":"blog","formato_publicacion":"BLOG + post con enlace","redes":"Blog del sitio · LinkedIn (articulo)","nota":"Comparativa: el formato que mas trafico organico trae al blog. A comunidades el lunes."},
+  {"fecha":"Lun 14","semana":"Semana 3 (14-20 sep)","id":"ago-navisworks-coordinacion","tipo":"valor","formato_publicacion":"CARRUSEL (7 slides)","redes":"Instagram + Facebook · LinkedIn","nota":"Coordinacion: publico de BIM Manager — el mismo que entra por la Puerta 2 de la nueva arquitectura. Sirve de calentamiento para el carrusel de las 4 puertas del Mie 23."},
+  {"fecha":"Mie 16","semana":"Semana 3 (14-20 sep)","id":"ago-mitos-automatizacion","tipo":"valor","formato_publicacion":"CARRUSEL (8 slides)","redes":"Instagram + Facebook · LinkedIn","nota":"Mitos vs realidad: estructura de alto guardado. Cada mito se desmonta con un dato, no con una opinion."},
+  {"fecha":"Jue 17","semana":"Semana 3 (14-20 sep)","id":"venta-master-espejo","tipo":"venta-blanda","formato_publicacion":"HISTORIAS (4 frames)","redes":"Instagram (historias) + Facebook stories","nota":"Slot de venta del Master, ACTUALIZADO a las 4 puertas de la nueva arquitectura. NUNCA precio: cierra al Test de Nivel. Requiere el disparador NIVEL montado en el bot."},
+  {"fecha":"Vie 18","semana":"Semana 3 (14-20 sep)","id":"ago-comu-dia-proyecto-internacional","tipo":"comunidad","formato_publicacion":"POST (fotos reales del equipo)","redes":"Instagram + Facebook","nota":"Cara humana del equipo. Sin CTA de venta."},
+  {"fecha":"Sab 19","semana":"Semana 3 (14-20 sep)","id":"ago-blog-elegir-software-estructuras","tipo":"blog","formato_publicacion":"BLOG + post con enlace","redes":"Blog del sitio · LinkedIn (articulo)","nota":"Blog de decision de compra: alto intento de busqueda. A comunidades el lunes."},
+  {"fecha":"Lun 21","semana":"Semana 4 (21-30 sep)","id":"ago-errores-modelar-revit","tipo":"valor","formato_publicacion":"CARRUSEL (8 slides)","redes":"Instagram + Facebook · LinkedIn","nota":"Errores comunes: el angulo que mas comentarios trae. Cada error con su correccion concreta."},
+  {"fecha":"Mie 23","semana":"Semana 4 (21-30 sep)","id":"sep-carrusel-4-puertas","tipo":"venta-blanda","formato_publicacion":"CARRUSEL (8 slides)","redes":"Instagram + Facebook · LinkedIn","nota":"LA PIEZA DEL MES: la nueva arquitectura comercial contada como contenido. Sin precio. Requiere el disparador RUTA montado en el bot ANTES de publicar. Reemplaza a la pieza generica de «IA futuro» — prohibida por las reglas del mes."},
+  {"fecha":"Jue 24","semana":"Semana 4 (21-30 sep)","id":"sep-acero-agente-ia","tipo":"venta-blanda","formato_publicacion":"CARRUSEL (6 slides)","redes":"Instagram + Facebook · LinkedIn","nota":"El anuncio del tutor de IA de ACERO — la unica venta blanda en feed del mes junto al de las 4 puertas. CONDICIONADA: solo se publica si el tutor esta desplegado y probado; si no, se corre al banco y sube una pieza de reserva."},
+  {"fecha":"Lun 28","semana":"Semana 4 (21-30 sep)","id":"ago-plugins-revit","tipo":"valor","formato_publicacion":"CARRUSEL (7 slides)","redes":"Instagram + Facebook · LinkedIn","nota":"Cierre de mes con productividad: tema de mejor guardado. Deja la cuenta caliente para el arranque de octubre."}
  ],
- "pauta": [
-  "ads-acero-img2",
-  "ads-acero-geosplit",
-  "ads-master-wsp"
+ "pauta": ["ads-acero-img2", "ads-acero-geosplit", "ads-master-wsp"],
+ "banco_reserva": ["ago-python-bim", "ago-derivas-deformaciones", "ago-tip-revit-ia", "ago-revit-ia-futuro", "ago-venta-especializacion-ia-bim", "ago-venta-paquete-autodesk", "ago-venta-asesoria-carrera", "ago-venta-ia-arquitectura", "ago-comu-historia-exito", "ago-comu-qa-bim-ia", "ago-blog-bim-sostenibilidad"],
+ "correos": [
+  {"fecha":"Mar 2 · Semana 1","nombre":"Relanzamiento ACERO — abre cohorte","asunto":"La Especialización en Acero abre cohorte (y esta vez hay algo nuevo)","preencabezado":"Los cupos son limitados y se actualizan en este correo.","segmento":"Lista propia completa + leads ACERO del bot","objetivo":"Abrir la cohorte de septiembre y llevar respuestas al WhatsApp","cuerpo":"Asunto aparte: si diseñas en acero, esta semana abrimos la cohorte de septiembre de la Especialización en Acero.\n\nSon 4 cursos — análisis, diseño, conexiones y proyecto — 100% asincrónicos: no hay horario al que llegar tarde y el acceso no caduca.\n\nAntes de decidir nada, te regalo la herramienta de las 5 Verificaciones en Acero (la usan ya cientos de colegas para revisar sus diseños antes de firmar). Respóndeme este correo con la palabra ACERO y te la mando junto al temario completo y el número real de cupos que quedan.\n\n— El equipo de Design Modeling Academy","condicion":"El numero de cupos NUNCA va escrito fijo en la plantilla: se actualiza el dia del envio con el real."},
+  {"fecha":"Mar 9 · Semana 2","nombre":"Correo de valor — el dato de la cuantía","asunto":"¿4Ø16 en una columna de 30×30? El código te la rebota","preencabezado":"El cálculo completo, en 40 segundos de lectura.","segmento":"Lista propia completa","objetivo":"Dar valor sin vender; alimentar la lista con el dato del post del Vie 4","cuerpo":"Un dato que sorprende a más de un colega:\n\nLa cuantía mínima de acero en columnas es el 1% del área bruta (ACI 318). En una columna de 30×30 son 900 cm² de sección → mínimo 9,0 cm² de acero.\n\n· 4 varillas Ø18 = 10,2 cm² → cumple ✅\n· 4 varillas Ø16 = 8,0 cm² → no cumple ❌\n\nPor debajo del 1%, el acero ni siquiera controla los efectos del flujo plástico del concreto. No es un capricho del código.\n\n¿Quieres revisar tus columnas (y vigas, y zapatas) con las 5 verificaciones que usamos nosotros? Responde ACERO y te mando la herramienta gratis.\n\n— DMA","condicion":null},
+  {"fecha":"Mar 16 · Semana 3","nombre":"Máster — las 4 puertas (sin precio, cierra a llamada)","asunto":"¿En qué etapa BIM estás? (hay 4, y solo una es la tuya)","preencabezado":"Estructura · Coordina · Gestiona · Automatiza.","segmento":"Lista propia completa + leads Master","objetivo":"Presentar la nueva arquitectura y agendar diagnosticos con el equipo comercial","cuerpo":"«Quiero aprender BIM» es como decir «quiero aprender medicina»: depende de dónde estés parado hoy.\n\nPor eso reorganizamos toda la formación de DMA en 4 etapas:\n\n1. ESTRUCTURA — para el que necesita implementar BIM correctamente: metodología, estándares, BEP.\n2. COORDINA — para el que ya modela y quiere coordinar disciplinas: interferencias, calidad, entregables.\n3. GESTIONA — para el que apunta a BIM Manager: 4D, 5D, costos y liderazgo.\n4. AUTOMATIZA — para el que quiere IA, Dynamo y Python en proyectos reales.\n\nY una ruta completa de 12 meses que las recorre todas, hasta liderar como BIM Manager + IA.\n\n¿No sabes cuál es tu etapa? Responde este correo con la palabra RUTA, o agenda 15 minutos con el equipo: te decimos exactamente dónde estás y qué te falta — sin compromiso.\n\n— DMA","condicion":"SIN PRECIO en todo el correo. El precio del Master vive en la llamada del closer."},
+  {"fecha":"Mar 23 · Semana 4","nombre":"ACERO + tutor de IA — la noticia","asunto":"Tu especialización ahora te contesta (sí, en serio)","preencabezado":"Un tutor de IA entrenado con las clases del programa.","segmento":"Lista propia completa + leads ACERO","objetivo":"Anunciar el tutor y empujar el cierre de la cohorte","cuerpo":"La duda de las 11 p.m. era el punto débil de estudiar asincrónico. Ya no.\n\nLa Especialización en Acero ahora incluye un tutor de IA entrenado con las clases del programa (los 4 cursos, más de 40 sesiones):\n\n· Le preguntas en lenguaje normal — «¿cómo verifico el pandeo lateral de esta viga?»\n· Te responde con el contenido de TU curso, y te dice en qué sesión está explicado.\n· Y si algo no está en las clases, te lo dice. No inventa.\n\nEstudias a tu ritmo. Pero nunca estudias solo.\n\nLa cohorte de septiembre cierra pronto — responde ACERO y te mando el temario, cómo funciona el tutor y los cupos que quedan.\n\n— DMA","condicion":"CONDICIONADO: este correo SOLO sale si el tutor esta desplegado y probado. Si no, se envia en su lugar el caso de alumno del banco."},
+  {"fecha":"Mar 30 · Semana 5","nombre":"Cierre de mes — lo mejor del blog","asunto":"Los 3 contenidos que más comentaron este mes (por si te perdiste alguno)","preencabezado":"Y un adelanto de lo que viene en octubre.","segmento":"Lista propia completa","objetivo":"Reactivar la lista con el mejor contenido del mes; cero venta","cuerpo":"Septiembre nos dejó tres contenidos que vale la pena tener a mano:\n\n1. El dato de la cuantía mínima en columnas (el post más comentado del mes — el cálculo completo está en el blog).\n2. Las 4 puertas del recorrido BIM: cómo saber en qué etapa estás y qué te toca estudiar ahora.\n3. [COMPLETAR el día del envío con el contenido que más rindió — se saca de la matriz, no se decide de memoria.]\n\nEn octubre viene más contenido de cálculo y automatización. Si hay un tema que quieres que tratemos, responde este correo y lo metemos en la matriz.\n\n— DMA","condicion":"El punto 3 se completa el dia del envio con el dato real de la matriz."}
  ],
- "banco_reserva": [
-  "ago-python-bim",
-  "ago-derivas-deformaciones",
-  "ago-venta-paquete-autodesk",
-  "ago-venta-asesoria-carrera",
-  "ago-venta-ia-arquitectura",
-  "ago-comu-historia-exito",
-  "ago-comu-qa-bim-ia",
-  "ago-blog-bim-sostenibilidad"
- ]
+ "comunidades": {
+  "nota": "Comunidad WhatsApp, Canal de Instagram, Grupos de Facebook y Comunidades de GHL. SOLO lunes a viernes — el fin de semana no se publica en comunidades; el blog del sabado se comparte el lunes. El mensaje se adapta a cada canal, nunca se copia identico.",
+  "semana_tipo": [
+   {"dia":"Lunes","canales":"WhatsApp (Bolsa de Trabajo) · GHL","contenido":"Bolsa de trabajo: las vacantes de la semana + el enlace al blog del sabado anterior.","fuente":"Vacantes: equipo Olympus (Patricio). Blog: el del sabado."},
+   {"dia":"Martes","canales":"WhatsApp · Canal IG · GHL","contenido":"Tip tecnico derivado de la pieza del feed (el dato, no el enlace pelado) + enlace al post.","fuente":"La pieza del Lun/Mar del calendario."},
+   {"dia":"Miercoles","canales":"Grupos de Facebook · WhatsApp","contenido":"Pregunta de debate de la semana — la misma del carrusel del feed, formulada para el grupo.","fuente":"comunidad_contenido de la pieza de la semana."},
+   {"dia":"Jueves","canales":"WhatsApp · Canal IG · GHL","contenido":"Recurso gratuito en rotacion: calculadora de zapatas → 5 verificaciones ACERO → test de nivel → ebook. Con su palabra clave.","fuente":"Los 4 lead magnets montados (verificados: los 8 formularios entregan)."},
+   {"dia":"Viernes","canales":"WhatsApp · Grupos FB · GHL","contenido":"Cierre de semana: encuesta o pregunta ligera + adelanto del blog que sale el sabado.","fuente":"El blog del sabado siguiente en el calendario."}
+  ],
+  "reglas": [
+   "El que responde una palabra clave en la comunidad recibe el recurso por DM — mismo flujo del bot del feed.",
+   "Nunca dos mensajes de venta seguidos en la misma comunidad: maximo 1 de venta por semana (el jueves del recurso cuenta como valor, no como venta).",
+   "Los grupos de Facebook reciben la PREGUNTA, no el enlace: el enlace baja el alcance del grupo y la pregunta lo sube."
+  ]
+ },
+ "pendientes": [
+  "Desplegar el tutor de IA en Render y pasarle la prueba con las preguntas de Gabriel. Desbloquea: la pieza del Jue 24, el correo del Mar 23 y las variantes B de la pauta de ACERO.",
+  "Montar el disparador de DM para la palabra RUTA en el bot ANTES del Mie 23 (el de ACERO, NIVEL y las de los lead magnets ya existen).",
+  "Actualizar el numero real de cupos de ACERO antes del Jue 3 y en cada correo que lo mencione.",
+  "Confirmar la palabra clave exacta del reel «Valor 6» (¿GUIA o QUIERO GUIA?) antes de publicarlo el Lun 7 — el subtitulo del video debe coincidir con el disparador del bot.",
+  "Los reels de agosto que el equipo no llego a publicar: decidir cuales entran al banco de septiembre y cuales se descartan. No se cruzaron metricas porque nunca salieron.",
+  "Pilar necesita los PDF de los carruseles marcados para LinkedIn (Mar 1, Lun 14, Mie 16, Lun 21, Mie 23, Jue 24) el viernes anterior a cada publicacion."
+ ],
+ "resumen_cierre": "Proporcion del mes: ~72% contenido de valor · ~28% venta (3 slots de historias los jueves + 2 ventas blandas en feed + los 3 anuncios de pauta). Del total, 5 piezas alimentan ACERO — el producto de mejor CPL ($0.48-$0.67) — y 2 presentan la nueva arquitectura del Master. Los 3 posts planos del mes llevan dato de calculo verificable, que es el unico formato de post que agosto valido.",
+ "pie": "Design Modeling Academy · Matriz de contenido septiembre 2026 · Construida sobre la matriz viral (155 piezas con metricas reales), el rendimiento de las campañas activas y la Nueva Arquitectura Comercial del Master BIM Management + IA"
 }
