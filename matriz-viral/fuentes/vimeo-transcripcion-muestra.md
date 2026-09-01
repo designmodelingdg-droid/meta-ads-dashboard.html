@@ -6,12 +6,12 @@
 | 1 | captions/es-x-autogen | 221116 Sesión Introductoria-Acero-DM.mp4 |
 | 0 | — | 220910 Sesión N°16 H.A-Acero |
 | 1 | captions/es-x-autogen | 220427 SESION 9 DISEÑO HA Y ACERO |
-| 1 | captions/es-x-autogen | 221124 Sesión N°3-Acero-DM.mp4 |
-| 1 | captions/es-x-autogen | 221228 Sesión N°11-Acero-DM.mp4 |
-| 1 | captions/es-x-autogen | 220418 SESION5 GRADAS HA Y PREDIMENSIONAMIENTO ACERO |
 | 1 | captions/es-x-autogen | 230105 Sesión N°14-Acero-DM.mp4 |
 | 1 | captions/es-x-autogen | 230111 Sesión N°15-Acero-DM.mp4 |
 | 1 | captions/es-x-autogen | 221207 Sesión N°7-Acero-DM.mp4 |
+| 1 | captions/es-x-autogen | 221205 Sesión N°6-Acero-DM.mp4 |
+| 1 | captions/es-x-autogen | 221124 Sesión N°3-Acero-DM.mp4 |
+| 1 | captions/es-x-autogen | 221228 Sesión N°11-Acero-DM.mp4 |
 | 1 | captions/es-x-autogen | Conexiones Video 6 - Diseño Conexion Tipo End Plate 358-16 - |
 | 1 | captions/es-x-autogen | Conexiones Video 5 - Diseño Conexion Tipo RBS 358-16 con Ide |
 

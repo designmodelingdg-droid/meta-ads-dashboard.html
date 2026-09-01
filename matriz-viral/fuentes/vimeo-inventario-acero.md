@@ -2,15 +2,23 @@
 
 ## Análisis y Diseño Simplificado de Estructuras Complejas de Acero
 
-_5 videos · 5 con transcripción · fuente: carpeta «Sesión N°7»_
+_13 videos · 13 con transcripción · fuente: carpeta «AnaDis. SimEst. CompAc.»_
 
 | ✓ | min | Video |
 |---|---|---|
-| ✅ | 30 | Sesión N°7 (pt. 1) |
-| ✅ | 30 | Sesión N°7 (pt. 2) |
-| ✅ | 30 | Sesión N°7 (pt. 3) |
-| ✅ | 30 | Sesión N°7 (pt. 4) |
-| ✅ | 36 | Sesión N°7 (pt. 5) |
+| ✅ | 60 | 221116 Sesión Introductoria-Acero-DM.mp4 |
+| ✅ | 154 | 221121 Sesión N°1-Acero-DM.mp4 |
+| ✅ | 156 | 221122 Sesión N°2-Acero-DM.mp4 |
+| ✅ | 156 | 221124 Sesión N°3-Acero-DM.mp4 |
+| ✅ | 157 | 221128 Sesión N°4-Acero-DM.mp4 |
+| ✅ | 120 | 221130 Lanzamiento-Modelado BIM-DM.mp4 |
+| ✅ | 161 | 221202 Sesión N°5-Acero-DM.mp4 |
+| ✅ | 152 | 221205 Sesión N°6-Acero-DM.mp4 |
+| ✅ | 131 | 221207 Sesión N°7-Acero-DM.mp4 |
+| ✅ | 164 | 221209 Sesión N°8-Acero-DM.mp4 |
+| ✅ | 166 | 221214 Sesión N°9-Acero-DM.mp4 |
+| ✅ | 86 | 221223 Sesión N°10-Acero-DM (1).mp4 |
+| ✅ | 80 | 221223 Sesión N°10-Acero-DM (2).mp4 |
 
 ## Guía Práctica para el Cálculo Tipo Cerchas en Naves Industriales
 
@@ -35,7 +43,7 @@ _14 videos · 14 con transcripción · fuente: carpeta «AnáDis. Avz. NavesInd.
 
 ## Teoría y Cálculo de Uniones Metálicas en Edificaciones
 
-_10 videos · 10 con transcripción · fuente: búsqueda por nombre_
+_9 videos · 9 con transcripción · fuente: búsqueda por nombre_
 
 | ✓ | min | Video |
 |---|---|---|
@@ -48,7 +56,6 @@ _10 videos · 10 con transcripción · fuente: búsqueda por nombre_
 | ✅ | 32 | Conexiones Video 6 - Diseño Conexion Tipo End Plate 4E 358-16 - Diseño |
 | ✅ | 21 | Conexiones Video 6 - Diseño Conexion Tipo End Plate 4E 358-16 - Estudi |
 | ✅ | 49 | Conexiones Video 6 - Diseño Conexion Tipo End Plate 4E 358-16 - Estudi |
-| ✅ | 7 | Uniones y Copias de Muros.mp4 |
 
 ## Modelado BIM en Hormigón Armado y Acero Estructural
 
@@ -70,6 +77,6 @@ _13 videos · 7 con transcripción · fuente: búsqueda por nombre_
 | ✅ | 100 | Sesión Extra N°1 Modelado BIM (Robot-Revit).mp4 |
 | ✅ | 9 | Sesión Extra N°2 Modelado BIM (Robot-Revit).mp4 |
 
-**Total: 42 videos · 36 con transcripción · 6 sin ella.**
+**Total: 49 videos · 43 con transcripción · 6 sin ella.**
 
 Los ❌ necesitan que Vimeo les genere subtítulos (se activan en el video) antes de poder entrar al índice del tutor.
