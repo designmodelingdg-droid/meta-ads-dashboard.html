@@ -367,3 +367,20 @@ candado es el control real, no el precio unitario.
 **Siguiente:** paso 3 — la página de chat (aprueba Dayana el diseño) y el
 servicio en Render con las tres capas del candado. Y las preguntas de Gabriel
 para el paso 4.
+
+
+## Paso 3 · CONSTRUIDO — 01-sep (falta solo el despliegue, que es de Dayana)
+
+- **Maqueta aprobada** con ajustes: logo DG incrustado en base64, calendario de
+  asesoría `34XWDLE9sy1jrnhTcBkA`, y un ejemplo más que muestra al tutor
+  **guiando paso a paso** — anclado a una sesión real (Sesión Extra N°1
+  Robot-Revit, 100 min), porque la regla de no inventar aplica también a las
+  maquetas.
+- **El servicio** (`tutor/app.py` en el repo privado): segundo proceso de
+  Render sobre el mismo repo, sin tocar el bot de ventas. Probado en local:
+  corpus en 3.636 bloques, la búsqueda del RBS devuelve video y minuto
+  correctos, token roto rechazado, límite diario corta exacto.
+- **Para encenderlo** hace falta lo que solo Dayana puede: crear el Web
+  Service en Render y poner `ANTHROPIC_API_KEY`, `TUTOR_SECRET` y
+  `LIMITE_DIA`. Instrucciones en `tutor/DEPLOY.md`.
+- Pendiente de siempre: **las preguntas de Gabriel** para el paso 4.
