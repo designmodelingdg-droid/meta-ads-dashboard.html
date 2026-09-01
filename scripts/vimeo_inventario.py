@@ -22,18 +22,24 @@ SALIDA_JSON='matriz-viral/fuentes/vimeo-inventario-acero.json'
 SALIDA_MD  ='matriz-viral/fuentes/vimeo-inventario-acero.md'
 TOPE_VIDEOS=140   # techo de cortesia para no comerse el limite de la API
 
+# carpeta: nombre EXACTO de la carpeta de Vimeo cuando se conoce — el mapeo
+# explicito manda sobre cualquier adivinanza. La primera corrida caso
+# «estructuras-complejas» con la carpeta generica «Sesión N°7» por matchear
+# palabras sueltas; la carpeta real usa abreviatura: «AnaDis. SimEst. CompAc.»
 CURSOS = {
   "estructuras-complejas": {
     "nombre": "Análisis y Diseño Simplificado de Estructuras Complejas de Acero",
-    "claves": ["complejas", "acero-dm", "sesión n°"],   # las Sesión N°X-Acero-DM
+    "carpeta": "AnaDis. SimEst. CompAc.",
+    "claves": [],
   },
   "cerchas-naves": {
     "nombre": "Guía Práctica para el Cálculo Tipo Cerchas en Naves Industriales",
-    "claves": ["cercha", "nave"],
+    "carpeta": "AnáDis. Avz. NavesInd.",
+    "claves": [],
   },
   "uniones": {
     "nombre": "Teoría y Cálculo de Uniones Metálicas en Edificaciones",
-    "claves": ["union", "unione", "conexion", "conexión"],
+    "claves": ["conexion", "conexión"],   # los videos se llaman «Conexiones Video N»
   },
   "modelado-bim": {
     "nombre": "Modelado BIM en Hormigón Armado y Acero Estructural",
@@ -69,10 +75,18 @@ print(f'  {len(carpetas)} carpetas')
 for c in carpetas: print('   ·', c['name'])
 
 def carpeta_de(curso):
-    n=norm(CURSOS[curso]['nombre']); claves=CURSOS[curso]['claves']
+    # 1) mapeo explicito, que manda; 2) solo si no hay, adivinar por claves
+    exacta = CURSOS[curso].get('carpeta')
+    if exacta:
+        for c in carpetas:
+            if c['name'].strip() == exacta:
+                return c
+        print(f"  AVISO: la carpeta «{exacta}» no aparecio en la cuenta")
+        return None
+    claves=CURSOS[curso]['claves']
     for c in carpetas:
         cn=norm(c['name'])
-        if cn and (cn in n or any(k in cn for k in claves)):
+        if cn and claves and any(k in cn for k in claves):
             return c
     return None
 
