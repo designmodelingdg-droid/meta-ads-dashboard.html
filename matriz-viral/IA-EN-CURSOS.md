@@ -270,3 +270,29 @@ texto, cero adjuntos. Nada que leer aparte del video.
 
 Después del piloto: la oferta de membresía «Tutor IA», el botón en los cursos,
 y recién entonces el anuncio.
+
+
+## Paso 1 del piloto · HECHO — 04-sep
+
+Inventario contra la cuenta de Vimeo (dos corridas; la primera casó un curso
+con una carpeta genérica y se corrigió con mapeo explícito):
+
+| Curso | Videos | Con transcripción | Fuente |
+|---|---|---|---|
+| Estructuras Complejas | 13 | **13** | carpeta «AnaDis. SimEst. CompAc.» |
+| Cerchas / Naves | 14 | **14** | carpeta «AnáDis. Avz. NavesInd.» |
+| Uniones Metálicas | 9 | **9** | búsqueda («Conexiones Video N») |
+| Modelado BIM | 13 | 7 | búsqueda |
+| **Total** | **49** | **43 (88%)** | |
+
+**Los 6 sin transcripción** están todos en Modelado BIM (tutoriales de
+RSA/Revit: Barras, Áreas, Columnas-Vigas-Losas, Escalera, Sesión Extra N°1).
+Se les activan los subtítulos automáticos en Vimeo y entran al índice.
+
+**Huecos honestos que quedan** (no bloquean el paso 2): los conteos no cuadran
+exactos con las sesiones del portal — Estructuras 13 videos vs 19 sesiones,
+Uniones 9 vs 12, Modelado 13 vs 17. Puede ser videos multi-parte o nombres
+distintos. Se cierra con un export de Ask AI: lección → título del video, y se
+casa contra este inventario.
+
+Detalle completo: `matriz-viral/fuentes/vimeo-inventario-acero.md` (y `.json`).
