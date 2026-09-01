@@ -235,3 +235,38 @@ el 3, modelado en el 4.
 transcripciones **de los cuatro cursos**, no de uno. Y en la respuesta el
 tutor dice de cuál curso y sesión sale lo que contesta — con 58 sesiones,
 «está en el curso» sin decir dónde no le sirve a nadie.
+
+
+## Prueba 4 · Profundidad — 04-sep. Y con esta, LA EVALUACIÓN QUEDA COMPLETA
+
+Ask AI sí lee **dentro** de las lecciones (consultó las 12 sesiones del curso
+de Uniones con `materials=true`). Y lo que encontró define la arquitectura:
+
+**El curso es solo video.** Las 12 sesiones: descripción vacía, cero PDF, cero
+texto, cero adjuntos. Nada que leer aparte del video.
+
+### Conclusiones finales de la evaluación
+
+1. **La única fuente de contenido del tutor son las transcripciones de
+   Vimeo.** El portal no aporta texto propio. Una fuente, no dos — más simple.
+2. **Ask AI queda confirmado como copiloto de administración** — hace lecturas
+   de API que nosotros no podemos (la API pública da 404) y es honesto cuando
+   la pregunta es precisa. Pero no es el tutor.
+3. **⚠️ Un cabo por atar antes de indexar:** las lecciones sirven video
+   «transcodificado y almacenado en la plataforma» — hay que **casar cada
+   sesión del portal con su video de Vimeo** para saber qué transcripción le
+   corresponde, y detectar si algún video vive solo en GHL (sin transcripción).
+   Es el primer paso del piloto, no un bloqueo.
+
+### El piloto, listo para decidir GO
+
+| Paso | Qué | Quién |
+|---|---|---|
+| 1 | Inventario: sesión del portal ↔ video de Vimeo ↔ ¿transcripción? (los 4 cursos del paquete) | Claude, con la API de Vimeo + una lista de Ask AI |
+| 2 | Bajar y limpiar las transcripciones (glosario de ~30 términos) | Claude |
+| 3 | La página de chat (marca DMA) + el servicio en Render con la regla dura | Claude construye; Dayana aprueba el diseño |
+| 4 | Prueba adversarial: 30 preguntas reales (pedidas a Patricio) — cero inventadas o no se lanza | Claude + Dayana |
+| 5 | Piloto cerrado con leads del lead magnet, 2-3 semanas, midiendo uso y costo/alumno | equipo |
+
+Después del piloto: la oferta de membresía «Tutor IA», el botón en los cursos,
+y recién entonces el anuncio.
