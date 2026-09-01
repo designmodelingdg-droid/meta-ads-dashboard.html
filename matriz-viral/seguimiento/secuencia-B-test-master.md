@@ -55,7 +55,7 @@ Y para que quede claro: NO es una certificación ni un diploma. Es un
 diagnóstico honesto para que sepas por dónde seguir.
 ```
 
-**Botón:** `Hacer el test ahora` → `https://funnel.dgdesignmodeling.com/test-nivel-bim`
+**Botón:** `Hacer el test ahora` → `https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form`
 
 **PD:** `Cuando lo termines, respóndeme a este correo con el nivel que te salió. Me interesa de verdad — sobre todo si no fue el que esperabas.`
 
@@ -119,7 +119,7 @@ El salto que más cuesta —y de lejos— es del 1 al 2. No es técnico: es
 dejar de ser el que ejecuta y pasar a ser el que decide.
 ```
 
-**Botón:** `Ver mi nivel` → `https://funnel.dgdesignmodeling.com/test-nivel-bim`
+**Botón:** `Ver mi nivel` → `https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form`
 
 **PD:** `¿En cuál te ubicaste? Respóndeme, me sirve muchísimo para saber qué contenido preparar.`
 

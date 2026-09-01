@@ -214,8 +214,8 @@ Quedan dos cosas por resolver:
 | Qué | URL |
 |---|---|
 | Hub de recursos | `https://funnel.dgdesignmodeling.com/recursos` |
-| Calculadora de Zapatas | `https://funnel.dgdesignmodeling.com/calculadora-zapatas` |
-| Test de Nivel BIM | `https://funnel.dgdesignmodeling.com/test-nivel-bim` |
+| Calculadora de Zapatas | `https://funnel.dgdesignmodeling.com/acceso-gratis-calculadora-zapatas-form` |
+| Test de Nivel BIM | `https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form` |
 | Agendar llamada (30 min) | `https://api.leadconnectorhq.com/widget/booking/bIVuNHNojGEgH3gf6yXe` |
 | Testimonios | `https://funnel.dgdesignmodeling.com/testimonio-estudiantes-egresados-diplomado` |
 | Acreditaciones | `https://funnel.dgdesignmodeling.com/design-modeling-acreditaciones` |

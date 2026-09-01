@@ -95,7 +95,7 @@ marca como conocimiento disperso, que es lo que es.
 Es gratis, son 20 preguntas y NO es una certificación. Es un diagnóstico.
 ```
 
-**Botón:** `Hacer el test` → `https://funnel.dgdesignmodeling.com/test-nivel-bim`
+**Botón:** `Hacer el test` → `https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form`
 
 **PD:** `Responde con el nivel que te salió. Sobre todo si no fue el que esperabas — esa distancia es la información más útil que vas a sacar del test.`
 

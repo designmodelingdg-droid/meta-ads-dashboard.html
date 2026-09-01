@@ -121,7 +121,7 @@ comentarios por cerrar sin preguntar.
 > No es una certificación ni un diploma — es un diagnóstico para saber por
 > dónde seguir.
 >
-> 👉 https://funnel.dgdesignmodeling.com/test-nivel-bim
+> 👉 https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form
 >
 > Cuéntanos aquí qué nivel te salió. **¿Coincidió con lo que creías, o te
 > sorprendió?**
@@ -132,7 +132,7 @@ comentarios por cerrar sin preguntar.
 > ubica entre Modelador, Coordinador, BIM Manager 4D-5D o Especialista BIM+IA,
 > y te dice qué te falta para el siguiente.
 >
-> 👉 https://funnel.dgdesignmodeling.com/test-nivel-bim
+> 👉 https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form
 >
 > ¿Qué nivel te salió?
 
@@ -209,7 +209,7 @@ exista — decisión de Dayana del 4-ago.
 
 Cambiar los dos últimos bloques por:
 
-> 👉 https://funnel.dgdesignmodeling.com/test-nivel-bim
+> 👉 https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form
 >
 > Hazlo y cuéntame en los comentarios qué nivel te salió. **¿Coincidió con lo
 > que creías, o te sorprendió?**
@@ -236,7 +236,7 @@ un paso de más. La pregunta de cierre se mantiene — esa no se negocia.
 > puede "saltar" a BIM Manager sin dominar coordinación, y cuando alguien tiene
 > el conocimiento disperso, el test lo señala en vez de premiarlo.
 >
-> https://funnel.dgdesignmodeling.com/test-nivel-bim
+> https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form
 >
 > ¿Qué competencia crees que más se sobreestima en nuestro sector?
 

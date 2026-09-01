@@ -110,7 +110,7 @@ directo. Los DM se entierran rápido, así que te la dejo por aquí — este
 correo no se pierde y el enlace no caduca.
 ```
 
-**Botón:** `Abrir mi calculadora` → `https://funnel.dgdesignmodeling.com/calculadora-zapatas`
+**Botón:** `Abrir mi calculadora` → `https://funnel.dgdesignmodeling.com/acceso-gratis-calculadora-zapatas-form`
 
 ```
 Hace en 2 minutos lo que a mano toma media hora:
@@ -152,7 +152,7 @@ La calculadora hace en 2 minutos los 6 pasos que a mano toman media hora:
 ✅ Esquema de planta y corte, dibujado solo
 ```
 
-**Botón:** `Abrir mi calculadora` → `https://funnel.dgdesignmodeling.com/calculadora-zapatas`
+**Botón:** `Abrir mi calculadora` → `https://funnel.dgdesignmodeling.com/acceso-gratis-calculadora-zapatas-form`
 
 ```
 Es la misma metodología de nuestro curso de Diseño de Cimentaciones.
@@ -204,7 +204,7 @@ La calculadora te avisa de los dos últimos en vivo. Del primero no puede
 avisarte nadie: ese lo traes tú del estudio de suelos.
 ```
 
-**Botón:** `Volver a la calculadora` → `https://funnel.dgdesignmodeling.com/calculadora-zapatas`
+**Botón:** `Volver a la calculadora` → `https://funnel.dgdesignmodeling.com/acceso-gratis-calculadora-zapatas-form`
 
 **PD:** `¿Cuál de los tres te ha pasado? Responde y cuéntame — leo todas las respuestas.`
 

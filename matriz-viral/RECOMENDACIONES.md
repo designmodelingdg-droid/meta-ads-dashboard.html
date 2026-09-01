@@ -77,6 +77,20 @@ Estas ya no se discuten cada semana. Salieron de medir.
 
 ## Historial
 
+### 31-ago-2026 · Revisión semanal (24-30 ago)
+
+**La semana de ACERO.** «Sobredimensionar no es ir por el lado seguro» ganó en
+alcance Y en conversación a la vez (13.306 vistas · 102 comentarios · 48
+compartidos) — primera pieza que rompe el trade-off. Las tres piezas con
+palabra ACERO y recurso montado detrás promedian 7+ c/1k; la declaración
+genérica de IA hizo 1,75 y el reel vlog sin gancho, 198 vistas y cero.
+**Lección para los reels de esta semana: el primer segundo lleva la frontera,
+no la invitación.** Pendiente que sigue: verificar que los DM de esos 102
+comentarios salieron (IG y FB), y las vistas de Facebook de la semana, que la
+API no da.
+
+
+
 ### 14-ago-2026 · Auditoría de las historias
 Dayana señaló que las historias no venden. La verdad es mixta: el diseño **sí**
 enruta la venta al DM y eso está bien, pero **la semana tipo no tiene ni un slot
@@ -156,3 +170,19 @@ cubría.
    proponer lo mismo dentro de tres meses.
 3. Si una recomendación lleva **3 semanas en 🔴**, el skill la señala en su
    resumen. O se hace, o se descarta con motivo.
+
+---
+
+## Lead Recontacto Máster BIM+IA: la alarma de julio ya no aplica (24-ago-2026)
+
+En julio este flujo se marcó **PAUSAR YA**: 8.163 contactos activos y el mayor
+consumidor de la API de WhatsApp, justo cuando volvió a cobrarse.
+
+Se reactivó el 21-ago-2026 y al detectarlo se volvió a levantar la alarma.
+**Dayana aclaró que ya no aplica: eliminó la API de WhatsApp de GoHighLevel**,
+así que los mensajes de ese flujo no salen por API y no generan cobro.
+
+Queda anotado para que la próxima auditoría no lo vuelva a marcar como fuga.
+Lo que sí sigue siendo cierto es lo otro: el flujo enrola mucha gente, así que
+si algún día se reconecta una API de mensajería, **este es el primero que hay
+que revisar antes de encenderla**.

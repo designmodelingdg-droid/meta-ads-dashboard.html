@@ -190,3 +190,35 @@ estrena dentro de él. Un solo anuncio hace las dos cosas.
 
 **Lo único que falta:** pegarlo en GHL en `/recursos` y enlazarlo desde la bio
 de Instagram, el blog, las comunidades y los DM de los dos bots.
+
+---
+
+## 10. 25-ago-2026 — el hub publicado se quedó con dos enlaces muertos
+
+Ester **renombró** las páginas del Test y de la Calculadora en GHL, a la
+convención `-form` / `-gracias` que ya usaban los otros cinco lead magnets.
+No las borró. Pero GHL **no deja redirección del path viejo**, así que:
+
+| Antes | Ahora | Estado del viejo |
+|---|---|---|
+| `/test-nivel-bim` | `/acceso-gratis-test-nivel-bim-form` | 404 |
+| `/test-nivel-bim/gracias` | `/acceso-gratis-test-nivel-bim-gracias` | 404 |
+| `/calculadora-zapatas` | `/acceso-gratis-calculadora-zapatas-form` | 404 |
+| `/calculadora-zapatas/gracias` | `/acceso-gratis-calculadora-zapatas-gracias` | 404 |
+
+`/test-nivel-bim/test` (la app embebida) **no cambió** y sigue respondiendo 200.
+
+**Los correos de GHL ya estaban al día**: las plantillas apuntan a las rutas
+nuevas. Lo que se quedó atrás fueron los DM de los bots (NIVEL y ZAPATA) y
+**este hub**, que el 25-ago seguía sirviendo los dos enlaces en 404 desde
+`/recursos`.
+
+**Qué hace falta hacer a mano, y por qué no se puede automatizar:** la API v2
+de GHL solo tiene tres `GET` para Funnels y Sites — no escribe. Hay que volver
+a pegar `recursos/ghl-recursos.html` en el Custom Code de la página. Los dos
+DM se cambian dentro del bot, en GHL.
+
+Lo que sí queda cubierto: `scripts/enlaces.py` ahora **lee la página publicada**
+y prueba sus enlaces de salida, no solo los del repositorio. Corregir el repo no
+arregla lo que ve la gente, y esa fue justamente la brecha por la que esto
+pasó desapercibido.

@@ -246,7 +246,7 @@ truco suelto, sino como método— echa un vistazo a nuestros recursos gratuitos
 Y si quieres saber en qué nivel BIM estás realmente antes de decidir qué
 estudiar, tenemos un test de 20 preguntas que te lo dice sin adornos:
 
-👉 **[Test de Nivel BIM](https://funnel.dgdesignmodeling.com/test-nivel-bim)**
+👉 **[Test de Nivel BIM](https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form)**
 
 💬 **¿Ya probaste alguna de estas funciones? ¿En qué versión de Revit estás?**
 Cuéntamelo en los comentarios — tengo curiosidad de saber cuántos ya están

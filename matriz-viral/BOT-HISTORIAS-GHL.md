@@ -143,7 +143,7 @@ detrás de cada línea (punto 6).
 
 > ¡Hola! 👋 Aquí está tu acceso al **Test de Nivel BIM GRATIS**
 >
-> 👉 https://funnel.dgdesignmodeling.com/test-nivel-bim
+> 👉 https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form
 >
 > Son 20 preguntas, 5 minutos, y al terminar sabes en cuál de los 4 niveles
 > estás y qué competencias concretas te faltan para el siguiente.

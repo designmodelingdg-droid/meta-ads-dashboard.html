@@ -1,8 +1,8 @@
 # Inventario de correos — GoHighLevel
 
-Generado el 2026-08-21.
+Generado el 2026-09-01.
 
-**380 plantillas** en **40 carpetas**. 380 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
+**394 plantillas** en **44 carpetas**. 394 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
 
 > Lo que NO sale por API: que workflow usa que plantilla. El endpoint de automatizaciones devuelve solo metadatos. En esta cuenta las plantillas estan nombradas por su flujo, asi que el cruce se puede hacer leyendo.
 
@@ -213,6 +213,106 @@ Hey {{communities_contacts.receiverName}}
 Join now to start collaborating!
 Accept Invite
 Link will expire after 30 days.
+```
+
+### Novedades DMA Mayo 2026
+
+- **id:** `6a95b2199dcfa201009ec23c`
+- **tipo:** html
+- **actualizada:** 2026-08-31T16:55:54.137Z
+- **Cuerpo:**
+
+```
+Máster BIM+IA · Automatización Revit con IA · Nuevas Credenciales NFT — lo que cambia tu carrera este mes 🚀
+Sube imagen: Design Modeling DG
+Novedades
+Mayo 2026
+✦ Este mes en DMA
+El mercado ya diferencia a un modelador de un BIM Manager.
+Domina BIM, IA y Automatización. Colecciona tus Microcredenciales. Este mes llegan las herramientas que hacen esa diferencia real en tu carrera.
+Ver Cursos y Unirse →
+4,500+
+Graduados
+3
+Continentes
+12
+Meses · Módulos
+150+
+Cursos incluidos
+Novedades de Mayo 2026
+Tres cosas que elevan tu perfil profesional este mes.
+Sube imagen: Máster BIM + IA
+★ Programa insignia
+Máster Internacional BIM Management e Inteligencia Artificial
+Para la Construcción · 12 meses · $499 matrícula / $2,699 total
+El Máster más completo de LATAM. Domina Revit, Navisworks, Dynamo, Python e IA con mentoría 1:1. Certifícate con títulos válidos en USA, España y Ecuador .
+✅ Título Sabal University (USA)
+✅ Instituto ISTE (SENESCYT)
+✅ Certificado DQ · UAIII
+✅ 12 Certificados Autodesk
+✅ 1,440 horas académicas
+✅ Credencial NFT incluida
+Ver Landing →
+WhatsApp →
+Hablar con Adrián →
+▼ También en Mayo
+Sube imagen: Automatización en Revit con Herramientas Nativas y Addins Inteligentes
+Curso Nuevo
+Automatización en Revit con Herramientas Nativas y Addins Inteligentes
+Autodesk Authorized Training
+PyRevit, add-ins y flujos inteligentes para automatizar tareas repetitivas.
+✅ Credencial NFT incluida
+✅ Certificado Autodesk oficial
+$149.99 USD (antes $199.99)
+Info por WhatsApp →
+Sube imagen: Especialización BIM en Diseño Estructural en Acero
+Más Vendida
+Especialización BIM en Diseño Estructural en Acero
+Revit + Robot + Advance Steel
+Acceso inmediato e ilimitado. 4 certificaciones Autodesk. App móvil.
+✅ Revit · Robot · Advance Steel
+✅ 4 Certificados Autodesk
+$199.99 USD (antes $619.99)
+Info por WhatsApp →
+🔗 Nuevo Mayo 2026 · Blockchain
+¡Tu Futuro Comienza Aquí!
+¿Qué son las Microcredenciales Digitales?
+Son microcredenciales digitales en formato NFT que validan tus conocimientos de forma segura, verificable y global . Cualquier empresa en el mundo puede verificarlas en segundos — son las credenciales que el mercado ya exige.
+📚
+1 Cursa
+Completa un módulo de formación
+🔑
+2 Logra
+Demuestra tus competencias
+🏅
+3 Recibe
+Tu credencial NFT encriptada
+🌐
+4 Comparte
+LinkedIn, CV y portafolio digital
+Sube imagen: Nuevas NFT credenciales
+Sube imagen: Qué son y para qué sirven
+🔗 Tecnología Blockchain
+Certificación única e inalterable
+💼 Portafolio Digital Potente
+Diferenciación profesional real
+🌍 Verificables y Globales
+Validación internacional inmediata
+🎯 Validación BIM + IA
+Habilidades técnicas verificadas
+VER CURSOS Y UNIRSE 👉
+Avalados por
+Autodesk ATC & Learning Partner · Sabal University (USA) · Instituto ISTE (España · SENESCYT) · Doctrina Qualitas · UAIII · IQS · NACES
+"Siete años de experiencia en Revit no me consiguieron lo que el Máster de DMA logró en meses. Los scripts de Python automatizaron reportes semanales en tres proyectos simultáneos."
+Luis Fernández · Colombia · Egresado DMA
+¡No te quedes atrás!
+Potencializa tu carrera ahora.
+Cupos limitados · Una sesión estratégica gratuita es todo lo que necesitas.
+Postular al Máster →
+Ver todos los cursos →
+Design Modeling DG S.A.S — BIM Consulting & Academy
+Formando líderes BIM en LATAM, USA y Europa · @design_modeling_dg
+Si no deseas recibir más correos, date de baja aquí .
 ```
 
 ### Ofertas Academicas Mensuales JUN 2026
@@ -7611,6 +7711,708 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
+## ✅ AUTOMATIZACIONES PIPELINE > ✅ COMPRA DIRECTA > ✅SEGUIMIENTO CALCULADORA
+
+### ✅ Seg 01 Error #1 zapatas
+
+- **id:** `6a9077a3a42032bb20317ab5`
+- **tipo:** html
+- **actualizada:** 2026-09-01T18:32:41.797Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Asunto sugerido: El error #1 al dimensionar una zapata (y no es el acero)
+Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Cuando una zapata da problemas, casi nunca es por falta de acero. Estos son los tres errores mas frecuentes.
+Criterio estructural
+El error #1 al dimensionar una zapata (y no es el acero)
+Hola {{contact.first_name}} ,
+Cuando una zapata da problemas, casi nunca es porque falt&oacute; acero. Es porque el n&uacute;mero con el que
+se arranc&oacute; estaba mal, y el refuerzo solo vino a tapar el hueco.
+Estos son los tres errores que m&aacute;s aparecen en los c&aacute;lculos que nos llegan a revisi&oacute;n.
+q_adm prestado &middot; Punzonamiento olvidado &middot; Altura &laquo;a ojo&raquo;
+Los tres se detectan antes de dibujar una sola varilla
+01
+El q_adm prestado
+Se toma la capacidad admisible del estudio de suelos de otra obra &laquo;que queda cerca&raquo;, o el valor que siempre se ha usado en la zona. El &aacute;rea de la zapata es directamente proporcional a ese n&uacute;mero: si el suelo real da menos de lo que asumiste, toda la geometr&iacute;a queda corta desde la primera l&iacute;nea. Ning&uacute;n chequeo posterior te avisa, porque los dem&aacute;s c&aacute;lculos est&aacute;n bien&hellip; sobre un dato equivocado.
+02
+Olvidar el punzonamiento
+Se revisa cortante en una direcci&oacute;n, da holgado, y se cierra el c&aacute;lculo. Pero el que casi siempre manda en una zapata aislada es el cortante en dos direcciones, alrededor de la columna. Y ese no se arregla con m&aacute;s varilla: se arregla con peralte. Si lo detectas al final, ya redise&ntilde;aste todo.
+03
+La altura &laquo;a ojo&raquo;
+El peralte se elige por costumbre &mdash;60 cm porque siempre 60 cm&mdash; y despu&eacute;s se fuerza el resto del c&aacute;lculo para que cuadre. A veces sobra concreto y encarece la obra sin necesidad; a veces falta y el problema aparece en sitio. En los dos casos el n&uacute;mero sali&oacute; de la memoria, no del c&aacute;lculo.
+C&oacute;mo detectar los tres en menos de un minuto
+&#10003; Corre el mismo caso con el q_adm m&iacute;nimo y m&aacute;ximo del estudio de suelos y mira cu&aacute;nto se mueve el &aacute;rea.
+&#10003; Revisa el punzonamiento antes de definir el refuerzo, no despu&eacute;s.
+&#10003; Que el peralte salga del c&aacute;lculo y no de la costumbre: si lo cambias y nada se rompe, estaba de m&aacute;s.
+Los tres se ven de inmediato cuando tienes los valores al frente y puedes moverlos. Para eso hiciste la descarga:
+Volver a la calculadora &#8594;
+Acceso inmediato &middot; ya es tuya
+P.D. Una prueba r&aacute;pida para el error #1: corre tu &uacute;ltimo
+caso dos veces, cambiando solo el q_adm por el valor de arriba y el de abajo del rango que te dio el estudio.
+Lo que se mueve el &aacute;rea te dice cu&aacute;nto de tu dise&ntilde;o depende del suelo y cu&aacute;nto
+del concreto.
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Seg 02 - Zapata no es el problema
+
+- **id:** `6a9077d066c7983132f26cb4`
+- **tipo:** html
+- **actualizada:** 2026-09-01T18:37:36.149Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Asunto sugerido: La zapata casi nunca es el problema
+Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Si la cimentacion sale enorme o imposible de armar, el problema casi siempre se decidio un piso mas arriba.
+Criterio estructural
+La zapata casi nunca es el problema
+Hola {{contact.first_name}} ,
+Sigo con lo del correo anterior, pero un piso m&aacute;s arriba.
+Cuando una cimentaci&oacute;n sale enorme, cara o imposible de armar, la reacci&oacute;n normal es revisar la cimentaci&oacute;n. Y ah&iacute; casi nunca est&aacute; la respuesta.
+La zapata solo recibe lo que la estructura le manda. Una columna que se movi&oacute; para respetar un ducto, una luz que qued&oacute; larga de m&aacute;s, un p&oacute;rtico que termin&oacute; cargando lo que le tocaba a otro, una losa que descarga donde no deb&iacute;a: todo eso viaja hacia abajo y aterriza en tu c&aacute;lculo de cimentaci&oacute;n como un n&uacute;mero que ya no puedes negociar.
+D&oacute;nde se decide en realidad
+Arquitectura &#8595; Estructura &#8595; Cargas &#8595; Cimentaci&oacute;n
+Todo lo que se decide arriba aterriza abajo
+Por eso pasa lo que pasa: pruebas otra geometr&iacute;a, subes el peralte, mueves el refuerzo, y el problema sigue ah&iacute;. No est&aacute;s resolviendo un problema de cimentaci&oacute;n. Est&aacute;s pagando abajo una decisi&oacute;n que se tom&oacute; arriba.
+La calculadora de zapatas resuelve el &uacute;ltimo tramo de esa cadena. Tenemos otras herramientas gratuitas que trabajan m&aacute;s arriba, en donde de verdad se decide el dise&ntilde;o.
+Cuando el modelo estructural est&aacute; bien resuelto, las cargas llegan repartidas y la cimentaci&oacute;n
+se vuelve la parte tranquila del proyecto. Cuando no lo est&aacute;,
+la cimentaci&oacute;n es donde te enteras .
+Ver herramientas gratis &#8594;
+P.D. Si hay una herramienta que te ahorrar&iacute;a horas y no
+est&aacute; en esa p&aacute;gina, resp&oacute;ndeme este correo y dime cu&aacute;l. Varias de las que ya
+existen salieron justo de una respuesta as&iacute;.
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Seg 03 - Oferta Acero
+
+- **id:** `6a91aaecc215129a360b892d`
+- **tipo:** html
+- **actualizada:** 2026-09-01T18:38:20.593Z
+- **Cuerpo:**
+
+```
+4 cursos, 4 meses y 110-130 horas para dominar el diseno estructural en acero con metodologia BIM.
+Especializaci&oacute;n profesional
+Lo que va arriba de la zapata (y c&oacute;mo se aprende)
+Hola
+{{contact.first_name}} ,
+En los dos correos
+anteriores vimos que el problema rara vez est&aacute; en la cimentaci&oacute;n: est&aacute; arriba, en
+c&oacute;mo se model&oacute; y se calcul&oacute; la estructura. Esto es lo que ense&ntilde;amos
+ah&iacute;.
+La
+Especializaci&oacute;n en Dise&ntilde;o Estructural BIM en Acero para Edificaciones
+cubre el ciclo completo: del modelado BIM en Revit al an&aacute;lisis en Robot Structural Analysis, el
+detallado de conexiones en Advance Steel y la documentaci&oacute;n del proyecto.
+4 cursos &middot; 4 meses &middot; 110&ndash;130
+horas
+59 sesiones &middot; nivel avanzado &middot; 100% asincr&oacute;nico
+Qu&eacute;
+incluye
+&#9989; 4 cursos que van del modelado al detallado de conexiones precalificadas.
+&#9989; Asesor&iacute;as personalizadas uno a uno en cada m&oacute;dulo.
+&#9989; Material descargable y apuntes en PDF: no necesitas tomar notas.
+&#9989;
+Soporte t&eacute;cnico para instalar los programas de Autodesk y activar licencias
+estudiantiles.
+Con qu&eacute;
+sales certificado
+&#127891; 4 certificaciones internacionales de completaci&oacute;n con aval de Autodesk,
+una por curso.
+&#127891; Certificado internacional de 120 horas acad&eacute;micas de Modeling-DG
+S.A.S., con c&oacute;digo QR.
+&#127891;
+Certificado Universitario Internacional DQ, con aval en Europa para equivalencias.
+60% de descuento &middot; pago &uacute;nico
+USD 499.99
+USD 199.99
+Un solo pago por las 4 formaciones especializadas
+Aprovechar la oferta &#8594;
+Pago &uacute;nico &middot;
+acceso inmediato
+Ver el temario en PDF
+&iquest;Tienes dudas antes de decidir?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Seg 04 - No tengo tiempo
+
+- **id:** `6a91ac896137cbcd0bb850bd`
+- **tipo:** html
+- **actualizada:** 2026-09-01T18:38:52.182Z
+- **Cuerpo:**
+
+```
+Asincronico, 7-8 horas por semana y acceso por tiempo limitado. Mira una clase completa gratis.
+Hablemos del tiempo real
+&laquo;Me interesa, pero no tengo tiempo&raquo;
+Hola {{contact.first_name}} ,
+Es la respuesta que m&aacute;s recibimos, y casi siempre es sincera. No es que el programa no interese: es que la semana ya est&aacute; llena y nadie quiere pagar algo que va a quedar a medias.
+As&iacute; que hablemos del tiempo real que toma.
+7&ndash;8 horas por semana &middot; 4 meses
+Sin horarios fijos &middot; a tu ritmo &middot; sin perder el acceso
+01
+Es 100% asincr&oacute;nico
+No hay clase a la que llegar tarde. Las sesiones est&aacute;n grabadas y avanzas cuando puedes: de noche, en fin de semana, en los huecos entre entregas. Nadie te espera y nadie te apura.
+02
+Entre 7 y 8 horas por semana
+Ese es el ritmo con el que el programa se termina en cuatro meses. Son poco m&aacute;s de una hora al d&iacute;a, o dos sesiones largas el fin de semana. Si una semana no puedes, la siguiente retomas donde quedaste.
+03
+Acceso por tiempo limitado, pero suficiente
+El acceso a la plataforma es por tiempo limitado, con margen de sobra para completar el programa y repasar lo que necesites dentro de ese periodo. Y como el material de apoyo es descargable, los apuntes y archivos de pr&aacute;ctica quedan contigo despu&eacute;s.
+04
+No pierdes tiempo instalando
+Te damos soporte t&eacute;cnico para instalar los programas de Autodesk y activar las licencias estudiantiles. Esa tarde que se va peleando con un instalador, te la ahorras.
+La forma honesta de comprobarlo es verlo por dentro. Te dejamos una clase completa, sin recortes y sin registro, para que juzgues el ritmo, el nivel y la manera de explicar antes de decidir nada.
+Ver una clase completa gratis &#8594;
+Acceso directo &middot; sin formulario
+P.D. Si despu&eacute;s de verla sigues pensando que no es el momento, est&aacute; bien. Prefiero que entres cuando puedas terminarlo a que compres algo que quede a medias.
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Seg 05 - Testimonios cierre
+
+- **id:** `6a91acd31606a985ad2fcfa6`
+- **tipo:** html
+- **actualizada:** 2026-09-01T18:40:01.111Z
+- **Cuerpo:**
+
+```
+Tres testimonios, las tres preguntas frecuentes y los ultimos cupos de la especializacion.
+Testimonios de egresados
+Lo que dicen los que ya pasaron por aqu&iacute;
+Hola
+{{contact.first_name}} ,
+Ya te cont&eacute;
+de qu&eacute; se trata y cu&aacute;nto tiempo toma. Lo que sigue no lo digo yo: lo dicen quienes ya lo
+hicieron.
+&#9733;&#9733;&#9733;&#9733;&#9733;
+&laquo;La mejor decisi&oacute;n que he tomado en mi formaci&oacute;n profesional.&raquo;
+Aprend&iacute; much&iacute;simo sobre el modelado estructural con metodolog&iacute;a BIM y lo
+mejor es que todo fue muy pr&aacute;ctico y aplicable al trabajo real. La atenci&oacute;n de los
+instructores fue excelente, siempre dispuestos a resolver dudas y acompa&ntilde;arnos en el
+proceso.
+Albino Pineiro
+Egresado del
+Diplomado BIM
+&#9733;&#9733;&#9733;&#9733;&#9733;
+&laquo;Capacitaci&oacute;n actualizada y flexible para profesionales en ejercicio.&raquo;
+Soy ingeniero mec&aacute;nico y trabajo en una compa&ntilde;&iacute;a de ingenier&iacute;a, por lo
+que actualizar mis conocimientos era esencial. La plataforma facilita estudiar a nuestro ritmo y
+nos brinda la flexibilidad que necesitamos quienes trabajamos, permiti&eacute;ndonos manejar
+nuestro tiempo sin dejar de avanzar.
+Jorge Aguirre
+Ingeniero
+mec&aacute;nico
+&#9733;&#9733;&#9733;&#9733;&#9733;
+&laquo;Una inversi&oacute;n clave para mantenerse vigente en la ingenier&iacute;a moderna.&raquo;
+Decid&iacute; tomar el diplomado porque la metodolog&iacute;a BIM est&aacute; marcando tendencia
+en Ecuador y Latinoam&eacute;rica. Lo que m&aacute;s destaco es la ense&ntilde;anza compacta y
+efectiva, con un enfoque real y aplicado. Sent&iacute; el apoyo constante del equipo, siempre con
+explicaciones claras y paciencia.
+Luis Fernandez
+Dur&aacute;n, Ecuador
+Ver los testimonios en video
+Las tres preguntas que siempre nos hacen
+&iquest;Tengo que conectarme a una hora fija?
+No. La
+modalidad es 100% asincr&oacute;nica: las clases est&aacute;n grabadas y avanzas a tu propio
+ritmo, combinando el estudio con tu trabajo. Adem&aacute;s tienes asesor&iacute;as
+personalizadas uno a uno en cada m&oacute;dulo para resolver dudas.
+&iquest;Y
+si no tengo los programas instalados?
+Te damos
+soporte t&eacute;cnico para instalar el software de Autodesk &mdash; Robot Structural
+Analysis, Advance Steel y Revit Structure &mdash; y para activar las licencias estudiantiles
+temporales.
+&iquest;Qu&eacute; certificados recibo al terminar?
+Cuatro
+certificaciones de completaci&oacute;n con aval de Autodesk, una por cada curso; el
+certificado internacional de 120 horas acad&eacute;micas de Modeling-DG S.A.S. con
+c&oacute;digo QR de verificaci&oacute;n; y el Certificado Universitario Internacional DQ con
+aval en Europa para equivalencias.
+&Uacute;ltimos cupos &middot; cierra hoy
+Especializaci&oacute;n en Dise&ntilde;o Estructural BIM en Acero
+4 cursos &middot; 4 meses &middot; 110&ndash;130
+horas
+59 sesiones &middot; 100% asincr&oacute;nico &middot; 7 certificados
+60% de descuento &middot; pago &uacute;nico
+USD 499.99
+USD 199.99
+Un solo pago por las 4 formaciones especializadas
+Aprovechar la oferta &#8594;
+Pago &uacute;nico &middot;
+acceso inmediato
+Ver el temario en PDF
+Hablar por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+## ✅ AUTOMATIZACIONES PIPELINE > ✅ COMPRA DIRECTA > ✅SEGUIMIENTO GENERAL
+
+### ✅ Seg 01- 10 Recursos Gratuitos
+
+- **id:** `6a91bbee71d42e04f9e65f7d`
+- **tipo:** html
+- **actualizada:** 2026-09-01T18:43:30.859Z
+- **Cuerpo:**
+
+```
+Todo lo gratuito que tenemos, reunido en una sola pagina. Sin formularios ni condiciones.
+Sin nada que vender
+Hace tiempo que no te escribo (y te debo algo)
+Hola {{contact.first_name}} ,
+Hace tiempo que no te escribo. En ese silencio seguimos publicando herramientas, y varias de ellas probablemente te sirvan hoy mismo.
+As&iacute; que en vez de contarte novedades, te dejo el acceso completo. Sin formularios nuevos, sin condiciones: todo lo gratuito que tenemos, en un solo lugar.
+10 recursos gratuitos &middot; una sola p&aacute;gina
+Calculadoras, gu&iacute;as, plantillas y cursos abiertos
+Lo que vas a encontrar ah&iacute;
+&#128295; Calculadoras de ingenier&iacute;a que resuelven en minutos lo que toma una tarde.
+&#128214; Gu&iacute;as pr&aacute;cticas de verificaci&oacute;n y criterio t&eacute;cnico.
+&#127891; Cursos y m&oacute;dulos completos abiertos, con certificado al terminarlos.
+&#128193; Material descargable que puedes usar directamente en tus proyectos.
+No hay nada que comprar en esa p&aacute;gina. Entra, toma lo que te sirva y ciérrala.
+Ver los 10 recursos gratuitos &#8594;
+Acceso libre &middot; sin costo
+P.D. Si ya descargaste alguno hace meses y no volviste a abrirlo, este es buen momento: varios se actualizaron desde entonces.
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Seg 02 - Test Nivel BIM General
+
+- **id:** `6a91bc236137cbcd0bba019d`
+- **tipo:** html
+- **actualizada:** 2026-09-01T18:43:54.906Z
+- **Cuerpo:**
+
+```
+20 preguntas, 5 minutos y un diagnostico que no regala niveles.
+Diagn&oacute;stico de nivel
+&iquest;En qu&eacute; nivel BIM est&aacute;s realmente?
+Hola
+{{contact.first_name}} ,
+La pregunta parece
+simple, pero casi nadie la responde bien. Unos se ponen por encima de donde est&aacute;n; la
+mayor&iacute;a, por debajo .
+Y ubicarse mal tiene
+un costo concreto: te postulas a puestos que ya podr&iacute;as ocupar, o inviertes meses en aprender
+algo que no era tu siguiente paso.
+Modelador &#8594; Coordinador
+&#8594; BIM Manager
+&#8594;
+BIM+IA
+Cada salto exige competencias distintas, no m&aacute;s a&ntilde;os de experiencia
+01
+Modelador BIM
+Profesional
+Modelas con
+est&aacute;ndar y resuelves tu disciplina.
+02
+Coordinador BIM
+Integras disciplinas
+y respondes por la informaci&oacute;n que entregas.
+03
+BIM Manager
+4D-5D
+El modelo como
+instrumento de planificaci&oacute;n y control de costos.
+04
+Especialista
+BIM+IA
+Automatizas,
+programas y aplicas IA con criterio t&eacute;cnico.
+Armamos un test de
+20 preguntas sobre lo que sabes hacer en un proyecto real, no
+sobre lo que has le&iacute;do. Toma 5 minutos, no regala niveles y al final te dice en cu&aacute;l
+est&aacute;s y qu&eacute; competencia concreta te falta para el siguiente.
+Hacer el test &#8594;
+Gratis &middot; 5 minutos
+&middot; diagn&oacute;stico honesto
+P.D. El resultado no es un t&iacute;tulo ni un certificado.
+Es un punto de partida para saber qu&eacute; estudiar despu&eacute;s, que es justo lo que suele
+faltar.
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Seg 03 - Seguimos o te dejo
+
+- **id:** `6a91bc5810fa76ca05409b79`
+- **tipo:** html
+- **actualizada:** 2026-09-01T18:44:16.092Z
+- **Cuerpo:**
+
+```
+Si estos correos ya no te sirven, date de baja hoy. Y si te interesan, esto es lo que viene.
+&Uacute;ltimo correo de esta serie
+&iquest;Seguimos en contacto o te dejo tranquilo?
+Hola
+{{contact.first_name}} ,
+Te escribo para
+preguntarte algo directo, sin rodeos:
+&iquest;quieres que sigamos en contacto?
+En alg&uacute;n
+momento descargaste algo nuestro y desde entonces te llegan estos correos. Si te sirven, perfecto. Si ya
+no, prefiero que te des de baja hoy a que sigas recibiendo algo que no lees. Abajo del todo tienes el
+enlace y basta un clic.
+Pero si sigues por
+aqu&iacute; porque el tema te interesa, entonces esta &uacute;ltima parte es para ti.
+Preventa abierta &middot; nuevo grupo
+M&aacute;ster Internacional BIM Management + IA
+Cuatro bloques, cuatro roles, doce meses de acompa&ntilde;amiento.
+4 bloques &middot; 12 m&oacute;dulos &middot; 12
+meses
+Modelador &#8594; Coordinador &#8594; BIM Manager 4D-5D &#8594; Especialista BIM+IA
+Qu&eacute; lo
+hace distinto
+&#9989; 4 microcredenciales NFT avaladas por el Silicon Valley Futures Institute, una
+por bloque.
+&#9989; Certificaciones oficiales de Autodesk por cada m&oacute;dulo completado.
+&#9989; T&iacute;tulos propios de Sabal University, Universidad de las Naciones e ISTE
+Espa&ntilde;a.
+&#9989; Workshops en vivo cada semana y mentor&iacute;as personalizadas uno a uno.
+&#9989;
+DMA Engineering Suite: una herramienta de IA nueva cada mes.
+Si quieres saber si
+tiene sentido para tu caso, son 30 minutos con un asesor acad&eacute;mico. Sin presentaci&oacute;n de
+ventas: te ubicamos, te decimos por d&oacute;nde empezar y, si no es tu momento, tambi&eacute;n te lo
+decimos.
+Agendar 30 minutos &#8594;
+Sin compromiso &middot;
+cupos de preventa mientras dure el grupo
+Hablar por WhatsApp
+&iquest;Y si prefieres que te deje tranquilo?
+Sin problema y sin resentimientos. Un clic aqu&iacute; y dejas de recibir estos correos hoy mismo.
+Darme de baja
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+## ✅ AUTOMATIZACIONES PIPELINE > ✅ COMPRA DIRECTA > ✅SEGUIMIENTO TEST BIM
+
+### ✅ Seg 01 - Cuatro Niveles BIM
+
+- **id:** `6a91b6c7779240a94e04f2ff`
+- **tipo:** html
+- **actualizada:** 2026-09-01T18:41:07.790Z
+- **Cuerpo:**
+
+```
+Casi nadie se ubica bien. Estos son los cuatro niveles y como saber en cual estas de verdad.
+Diagn&oacute;stico de nivel
+Los 4 niveles BIM, sin humo
+Hola {{contact.first_name}} ,
+Casi todos los ingenieros y arquitectos que llegan aqu&iacute; hacen lo mismo: se ponen una etiqueta que no les corresponde. Unos se creen m&aacute;s arriba de lo que est&aacute;n. La mayor&iacute;a, y esto es lo que sorprende, se subestima.
+Dicen &laquo;yo solo modelo&raquo; cuando en realidad ya est&aacute;n coordinando. O se quedan a&ntilde;os en un nivel porque nadie les dijo qu&eacute; competencia concreta les faltaba para pasar al siguiente.
+Estos son los cuatro niveles, sin humo:
+Modelador &#8594; Coordinador &#8594; BIM Manager &#8594; BIM+IA
+Cada salto exige competencias distintas, no m&aacute;s a&ntilde;os de experiencia
+01
+Modelador BIM Profesional
+Modelas arquitectura y estructura con est&aacute;ndar, sacas planos limpios y resuelves tu disciplina. Es el nivel donde est&aacute; la mayor&iacute;a &mdash; y donde muchos creen que ya tocaron techo.
+02
+Coordinador BIM
+Dejas de trabajar solo sobre tu modelo: integras disciplinas, detectas interferencias antes de la obra y respondes por la informaci&oacute;n que entregas. Aqu&iacute; se atasca la mayor&iacute;a.
+03
+BIM Manager 4D-5D
+El modelo deja de ser un dibujo y pasa a ser un instrumento de gesti&oacute;n: planificaci&oacute;n, control de costos y decisiones que afectan el presupuesto de la obra.
+04
+Especialista BIM+IA
+Automatizas lo repetitivo, programas tus propios flujos y aplicas IA con criterio t&eacute;cnico. Es el nivel que hoy casi nadie ocupa, y por eso se paga distinto.
+Leerlos no basta: casi nadie se ubica bien a s&iacute; mismo. Por eso armamos un test de 20 preguntas sobre lo que sabes hacer en un proyecto, no sobre lo que has le&iacute;do. Toma 5 minutos y no regala niveles: te dice en cu&aacute;l est&aacute;s y qu&eacute; competencia te falta cerrar.
+Hacer el test &#8594;
+Gratis &middot; 5 minutos &middot; diagn&oacute;stico honesto
+P.D. Si el resultado te da un nivel m&aacute;s alto del que esperabas, no es un halago del sistema: es que llevas tiempo haciendo trabajo que no te est&aacute;s cobrando.
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Seg 02 - Modelador a Coordinador
+
+- **id:** `6a91b6fe71d42e04f9e5d459`
+- **tipo:** html
+- **actualizada:** 2026-09-01T18:41:29.255Z
+- **Cuerpo:**
+
+```
+El salto no se da modelando mejor. Es otro oficio, y se aprende en otro orden.
+El salto que m&aacute;s cuesta
+De modelador a coordinador: por qu&eacute; se atasca ah&iacute;
+Hola
+{{contact.first_name}} ,
+De los cuatro
+niveles del correo anterior, hay uno donde se detiene casi todo el mundo: el paso de
+modelador a coordinador .
+No es por falta de
+ganas ni de horas. Es que el salto no se da modelando mejor.
+01
+El salto no es
+t&eacute;cnico, es de responsabilidad
+Modelar bien es
+resolver tu disciplina. Coordinar es responder por la informaci&oacute;n de todas. Nadie te
+ense&ntilde;a eso modelando m&aacute;s horas: es otro oficio.
+02
+Falta el
+lenguaje com&uacute;n
+Coordinar exige
+entender qu&eacute; necesita estructuras de arquitectura, y qu&eacute; necesita MEP de ambas. Si
+solo dominas tu disciplina, no puedes anticipar el choque; solo lo reportas cuando ya
+ocurri&oacute;.
+03
+Nadie te da el
+puesto para que aprendas
+El coordinador se
+contrata con experiencia demostrable. Es el c&iacute;rculo cl&aacute;sico: no te dan el rol porque
+no lo has hecho, y no lo has hecho porque no te dan el rol.
+Ese es exactamente
+el problema que resuelve el
+M&aacute;ster Internacional en BIM Management e Inteligencia Artificial para la Construcci&oacute;n :
+est&aacute; organizado en cuatro bloques y cada uno te acredita en un rol distinto, en orden. No es un
+curso largo: es una ruta de carrera.
+4 bloques &middot; 12 m&oacute;dulos &middot; 12
+meses
+Modelador &#8594; Coordinador &#8594; BIM Manager 4D-5D &#8594; Especialista BIM+IA
+C&oacute;mo se
+trabaja el salto a coordinador
+&#9989; Coordinaci&oacute;n interdisciplinaria real: arquitectura, estructura y MEP
+sobre un mismo proyecto.
+&#9989; Gesti&oacute;n del entorno com&uacute;n de datos y control de versiones.
+&#9989; Detecci&oacute;n y resoluci&oacute;n de interferencias antes de que lleguen a
+obra.
+&#9989;
+Workshops en vivo cada semana y mentor&iacute;as personalizadas uno a uno.
+Sin costo adicional
+Con qu&eacute;
+sales acreditado
+Certificaciones Autodesk por m&oacute;dulo y t&iacute;tulos propios universitarios al finalizar.
+Autodesk
+Una por
+m&oacute;dulo
+Design Modeling
+Con
+c&oacute;digo QR
+Doctrina
+Qualitas
+1440 horas
+Sabal
+University
+Estados Unidos
+Univ. de las
+Naciones
+Equivalencia
+acad&eacute;mica
+ISTE
+Espa&ntilde;a
+T&iacute;tulo
+propio
+Si quieres saber si
+tiene sentido para tu caso, la forma corta es que te lo cuenten y ver el plan de estudios completo:
+Quiero que me cuenten &#8594;
+Sesi&oacute;n con un asesor
+acad&eacute;mico &middot; sin compromiso
+Ver el temario del M&aacute;ster
+Hablar por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Seg 03 - Microcredenciales
+
+- **id:** `6a91b73fd4079d1320de1aba`
+- **tipo:** html
+- **actualizada:** 2026-09-01T18:42:14.451Z
+- **Cuerpo:**
+
+```
+Una microcredencial NFT por bloque, avalada por Silicon Valley, mas tu kit de apps de IA.
+El diferenciador
+Microcredenciales, no un PDF al final
+Hola
+{{contact.first_name}} ,
+Un diploma en PDF al
+final de un programa dice poco. No se verifica, no se actualiza y quien lo recibe tiene que explicar
+qu&eacute; hay detr&aacute;s.
+En el M&aacute;ster
+funciona distinto: no esperas doce meses para tener algo que mostrar.
+Al cerrar cada bloque obtienes una microcredencial NFT avalada por el Silicon Valley Futures Institute ,
+verificable y ligada a un rol concreto.
+4 microcredenciales &middot; una por
+bloque
+Avaladas por el Silicon Valley Futures Institute &middot; verificables en l&iacute;nea
+01
+Modelador BIM
+Profesional
+Se emite al cerrar el
+primer bloque. Acredita que modelas arquitectura y estructura con est&aacute;ndar y documentas el
+proyecto.
+02
+Coordinador BIM
+Acredita que integras
+disciplinas, gestionas el entorno com&uacute;n de datos y resuelves interferencias antes de la
+obra.
+03
+BIM Manager
+4D-5D
+Acredita
+planificaci&oacute;n 4D y control de costos 5D: el modelo como instrumento de gesti&oacute;n del
+proyecto.
+04
+Especialista
+BIM+IA
+Acredita
+automatizaci&oacute;n con Dynamo, programaci&oacute;n en Python e inteligencia artificial aplicada
+a procesos BIM.
+Respaldado por
+Agencia
+Universitaria
+Doctrina
+Qualitas
+La diferencia
+pr&aacute;ctica: a los tres meses ya tienes una acreditaci&oacute;n que puedes poner en tu perfil y que
+un reclutador puede verificar, en lugar de un &laquo;estoy estudiando un m&aacute;ster&raquo;.
+Y adem&aacute;s
+DMA Engineering Suite
+Tu propio kit de aplicaciones de inteligencia artificial para ingenier&iacute;a, con una
+herramienta
+nueva liberada cada mes durante el programa. No son demos: son apps que usas en proyectos reales.
+&#9654; Una herramienta nueva cada mes
+&#9654; Automatizaci&oacute;n de tareas
+repetitivas de modelado y documentaci&oacute;n
+&#9654; Acceso durante los 12 meses del
+programa
+Sin costo adicional
+M&aacute;s la
+titulaci&oacute;n universitaria
+Certificaciones Autodesk por m&oacute;dulo y t&iacute;tulos propios al finalizar.
+Autodesk
+Una por
+m&oacute;dulo
+Design Modeling
+Con
+c&oacute;digo QR
+Doctrina
+Qualitas
+1440 horas
+Sabal
+University
+Estados Unidos
+Univ. de las
+Naciones
+Equivalencia
+acad&eacute;mica
+ISTE
+Espa&ntilde;a
+T&iacute;tulo
+propio
+Todos nuestros
+avales son p&uacute;blicos y verificables. Puedes revisarlos uno por uno:
+Ver acreditaciones &#8594;
+Avales verificables
+&middot; Autodesk, DQ, Sabal, ISTE y m&aacute;s
+Agendar una sesi&oacute;n informativa
+Hablar por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Seg 04 - Agenda Llamada
+
+- **id:** `6a91b7709dcfa20100659146`
+- **tipo:** html
+- **actualizada:** 2026-09-01T18:42:34.607Z
+- **Cuerpo:**
+
+```
+Preventa abierta para el nuevo grupo. Agenda 30 minutos y definimos tu punto de partida.
+&Uacute;ltimo paso
+30 minutos y te digo por d&oacute;nde empezar
+Preventa abierta &middot; nuevo grupo
+Condiciones de preventa mientras se completa el cupo del grupo que inicia
+Hola
+{{contact.first_name}} ,
+Llevamos varios
+correos hablando de niveles, del salto a coordinador y de c&oacute;mo se acredita cada bloque. Todo eso
+sirve de poco si no se aterriza en tu caso.
+Por eso el
+&uacute;ltimo paso es una conversaci&oacute;n de 30 minutos , sin
+presentaci&oacute;n de ventas y sin compromiso.
+01
+Te ubicamos con
+precisi&oacute;n
+Revisamos qu&eacute;
+haces hoy en un proyecto real y en cu&aacute;l de los cuatro niveles est&aacute;s de verdad, no en
+cu&aacute;l crees estar.
+02
+Te decimos por
+d&oacute;nde empezar
+Puede que el
+M&aacute;ster completo sea lo tuyo, o que te convenga cerrar antes una competencia puntual. Si no
+es el momento, tambi&eacute;n te lo decimos.
+03
+Resolvemos lo
+pr&aacute;ctico
+Tiempo semanal real,
+c&oacute;mo funcionan las mentor&iacute;as, qu&eacute; pasa si una semana no puedes avanzar y
+c&oacute;mo se emiten las acreditaciones.
+Y hay una
+raz&oacute;n para no dejarlo para el mes que viene: estamos en
+preventa para el nuevo grupo , con las condiciones y los cupos
+que aplican a quienes entran antes del inicio. Cuando el grupo se completa, se cierra y el siguiente
+arranca meses despu&eacute;s.
+4 bloques &middot; 12 m&oacute;dulos &middot; 12
+meses
+Workshops en vivo semanales &middot; mentor&iacute;as 1:1 &middot; DMA Engineering Suite
+Lo que ya
+sabes que incluye
+&#9989; 4 microcredenciales NFT avaladas por el Silicon Valley Futures Institute, una
+por bloque.
+&#9989; Certificaciones oficiales de Autodesk por cada m&oacute;dulo completado.
+&#9989; T&iacute;tulos propios de Sabal University, Universidad de las Naciones e ISTE
+Espa&ntilde;a.
+&#9989; Certificado universitario DQ y Design Modeling de 1440 horas acad&eacute;micas.
+&#9989;
+DMA Engineering Suite: una herramienta de IA nueva cada mes.
+Elige el horario que
+te sirva. Si ninguno calza, escr&iacute;benos y lo acomodamos.
+Agendar mis 30 minutos &#8594;
+Sin compromiso &middot;
+cupos de preventa mientras dure el grupo
+Hablar por WhatsApp
+P.D. Si en la llamada concluimos que el M&aacute;ster no es
+para ti ahora, te lo diremos y te propondremos otra ruta. Preferimos eso a tener a alguien
+matriculado en un programa que no le corresponde.
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
 ## ✅ AUTOMATIZACIONES PIPELINE > ✅ CURSOS LOWCOST > ✅SEG OPORTUNIDAD FUTURA + NO CALIFICADO
 
 ### ✅ Seguimiento 01 quienes somos
@@ -8028,7 +8830,7 @@ designmodelingacademy.com
 
 - **id:** `6a886c9b8ced86da5a802a02`
 - **tipo:** html
-- **actualizada:** 2026-08-21T15:38:54.936Z
+- **actualizada:** 2026-08-24T15:01:24.406Z
 - **Cuerpo:**
 
 ```
@@ -8074,7 +8876,7 @@ designmodelingacademy.com
 
 - **id:** `6a886ec517389f8e23dc7d8b`
 - **tipo:** html
-- **actualizada:** 2026-08-21T15:53:12.763Z
+- **actualizada:** 2026-08-24T15:39:04.851Z
 - **Cuerpo:**
 
 ```
@@ -8120,7 +8922,7 @@ designmodelingacademy.com
 
 - **id:** `6a886ee22096ea7b87d5e35e`
 - **tipo:** html
-- **actualizada:** 2026-08-21T15:53:33.200Z
+- **actualizada:** 2026-08-24T15:39:38.440Z
 - **Cuerpo:**
 
 ```
@@ -8170,7 +8972,7 @@ designmodelingacademy.com
 
 - **id:** `6a886e9bbc3bac7221b86bd9`
 - **tipo:** html
-- **actualizada:** 2026-08-21T15:52:24.901Z
+- **actualizada:** 2026-08-24T15:37:47.139Z
 - **Cuerpo:**
 
 ```
@@ -8181,31 +8983,47 @@ Puentes metalicos y de hormigon pretensado con cargas moviles en Robot.
 Curso especializado
 An&aacute;lisis y Dise&ntilde;o Profesional de Puentes Met&aacute;licos y Hormig&oacute;n Pretensado
 Hola {{contact.first_name}} ,
-Los puentes tienen una l&oacute;gica propia: cargas m&oacute;viles, l&iacute;neas de influencia y estados que no aparecen en edificaci&oacute;n. Este curso entra en ese terreno con dos tipolog&iacute;as.
-Puente met&aacute;lico de vigas y puente de hormig&oacute;n pretensado, con modelado en Robot, camiones de dise&ntilde;o, c&aacute;lculo del pretensado y dise&ntilde;o de la superestructura.
+Los puentes tienen
+una l&oacute;gica propia: cargas m&oacute;viles, l&iacute;neas de influencia y estados que no aparecen
+en edificaci&oacute;n. Este curso entra en ese terreno con dos tipolog&iacute;as.
+Puente
+met&aacute;lico de vigas y puente de hormig&oacute;n pretensado, con modelado en Robot, camiones de
+dise&ntilde;o, c&aacute;lculo del pretensado y dise&ntilde;o de la superestructura.
 19 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
 Robot Structural Analysis &middot; material descargable
 Descargar el temario completo &#8594;
 PDF con el detalle sesi&oacute;n por sesi&oacute;n
 Qu&eacute; incluye tu curso:
 &#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
-&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
-&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
-&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos
+reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros
+proyectos.
+&#9989;
+Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
 &#127891; Incluido sin costo adicional
 Tu certificaci&oacute;n al finalizar
 Dos certificaciones incluidas, sin costo adicional.
 Autodesk
 Completaci&oacute;n del curso
 Modeling-DG S.A.S.
-Certificado Internacional
+Certificado
+Internacional
 19
 horas acad&eacute;micas
-&#10003; Certificado Internacional
-&#10003; C&oacute;digo QR de verificaci&oacute;n
+&#10003; Certificado
+Internacional
+&#10003; C&oacute;digo QR de
+verificaci&oacute;n
 &#10003; Descargable en PDF
-&#10003; A tu nombre, listo para LinkedIn
-Al finalizar recibes una certificaci&oacute;n de completaci&oacute;n avalada por Autodesk &mdash; somos Centro de Entrenamiento Autorizado de la marca &mdash; y un Certificado Internacional de 19 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&#10003; A tu nombre, listo
+para LinkedIn
+Al finalizar recibes
+una
+certificaci&oacute;n de completaci&oacute;n avalada por Autodesk
+&mdash; somos Centro de Entrenamiento Autorizado de la marca &mdash; y un
+Certificado Internacional de 19 horas acad&eacute;micas
+emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
 &iquest;Tienes dudas antes de inscribirte?
 Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
 Hablar por WhatsApp
@@ -8220,7 +9038,7 @@ designmodelingacademy.com
 
 - **id:** `6a886e6d97eed9fbd01dc568`
 - **tipo:** html
-- **actualizada:** 2026-08-21T15:48:57.440Z
+- **actualizada:** 2026-08-24T15:36:51.329Z
 - **Cuerpo:**
 
 ```
@@ -8270,7 +9088,7 @@ designmodelingacademy.com
 
 - **id:** `6a886c3c676a1cd9c1f3cf81`
 - **tipo:** html
-- **actualizada:** 2026-08-21T15:34:36.297Z
+- **actualizada:** 2026-08-24T14:58:37.077Z
 - **Cuerpo:**
 
 ```
@@ -8316,7 +9134,7 @@ designmodelingacademy.com
 
 - **id:** `6a886d9e897d6716c6d81c0b`
 - **tipo:** html
-- **actualizada:** 2026-08-21T15:44:36.244Z
+- **actualizada:** 2026-08-24T15:05:18.943Z
 - **Cuerpo:**
 
 ```
@@ -8366,7 +9184,7 @@ designmodelingacademy.com
 
 - **id:** `6a886f36676a1cd9c1f4199d`
 - **tipo:** html
-- **actualizada:** 2026-08-21T15:55:30.658Z
+- **actualizada:** 2026-08-24T15:41:12.407Z
 - **Cuerpo:**
 
 ```
@@ -8412,7 +9230,7 @@ designmodelingacademy.com
 
 - **id:** `6a886f237e0c28b368117591`
 - **tipo:** html
-- **actualizada:** 2026-08-21T15:54:55.922Z
+- **actualizada:** 2026-08-24T15:40:47.637Z
 - **Cuerpo:**
 
 ```
@@ -8458,7 +9276,7 @@ designmodelingacademy.com
 
 - **id:** `6a886c4e17389f8e23dc3f10`
 - **tipo:** html
-- **actualizada:** 2026-08-21T15:37:59.341Z
+- **actualizada:** 2026-08-24T14:59:09.503Z
 - **Cuerpo:**
 
 ```
@@ -8504,7 +9322,7 @@ designmodelingacademy.com
 
 - **id:** `6a886f4cda320347a25fdc0b`
 - **tipo:** html
-- **actualizada:** 2026-08-21T15:55:55.560Z
+- **actualizada:** 2026-08-24T15:41:32.075Z
 - **Cuerpo:**
 
 ```
@@ -8550,7 +9368,7 @@ designmodelingacademy.com
 
 - **id:** `6a886d8b676a1cd9c1f3f1d6`
 - **tipo:** html
-- **actualizada:** 2026-08-21T15:44:05.815Z
+- **actualizada:** 2026-08-24T15:04:41.109Z
 - **Cuerpo:**
 
 ```
@@ -8600,7 +9418,7 @@ designmodelingacademy.com
 
 - **id:** `6a886dfd5111f4c77719b6a0`
 - **tipo:** html
-- **actualizada:** 2026-08-21T15:46:46.397Z
+- **actualizada:** 2026-08-24T15:22:26.811Z
 - **Cuerpo:**
 
 ```
@@ -8650,7 +9468,7 @@ designmodelingacademy.com
 
 - **id:** `6a886ef6e4cb7738346b9c07`
 - **tipo:** html
-- **actualizada:** 2026-08-21T15:53:56.621Z
+- **actualizada:** 2026-08-24T15:40:02.924Z
 - **Cuerpo:**
 
 ```
@@ -8696,7 +9514,7 @@ designmodelingacademy.com
 
 - **id:** `6a886c01473a54c041ea24c3`
 - **tipo:** html
-- **actualizada:** 2026-08-21T15:33:27.798Z
+- **actualizada:** 2026-08-24T14:56:51.941Z
 - **Cuerpo:**
 
 ```
@@ -8742,7 +9560,7 @@ designmodelingacademy.com
 
 - **id:** `6a886e24676a1cd9c1f400a0`
 - **tipo:** html
-- **actualizada:** 2026-08-21T15:47:41.890Z
+- **actualizada:** 2026-08-24T15:35:04.274Z
 - **Cuerpo:**
 
 ```
@@ -8792,7 +9610,7 @@ designmodelingacademy.com
 
 - **id:** `6a886e54897d6716c6d82fef`
 - **tipo:** html
-- **actualizada:** 2026-08-21T15:48:25.027Z
+- **actualizada:** 2026-08-24T15:36:25.472Z
 - **Cuerpo:**
 
 ```
@@ -8838,7 +9656,7 @@ designmodelingacademy.com
 
 - **id:** `6a886f0fe4cb7738346b9df9`
 - **tipo:** html
-- **actualizada:** 2026-08-21T15:54:23.121Z
+- **actualizada:** 2026-08-24T15:40:26.257Z
 - **Cuerpo:**
 
 ```
@@ -8888,7 +9706,7 @@ designmodelingacademy.com
 
 - **id:** `6a886db27e0c28b368114f6b`
 - **tipo:** html
-- **actualizada:** 2026-08-21T15:45:08.198Z
+- **actualizada:** 2026-08-24T15:06:10.815Z
 - **Cuerpo:**
 
 ```
@@ -8938,7 +9756,7 @@ designmodelingacademy.com
 
 - **id:** `6a886de7e4cb7738346b8037`
 - **tipo:** html
-- **actualizada:** 2026-08-21T15:45:48.808Z
+- **actualizada:** 2026-08-24T15:21:20.923Z
 - **Cuerpo:**
 
 ```
@@ -8988,7 +9806,7 @@ designmodelingacademy.com
 
 - **id:** `6a886e3be4cb7738346b8ab8`
 - **tipo:** html
-- **actualizada:** 2026-08-21T15:48:05.618Z
+- **actualizada:** 2026-08-24T15:35:59.310Z
 - **Cuerpo:**
 
 ```
@@ -9038,7 +9856,7 @@ designmodelingacademy.com
 
 - **id:** `6a886cb6e4cb7738346b60f6`
 - **tipo:** html
-- **actualizada:** 2026-08-21T15:39:13.446Z
+- **actualizada:** 2026-08-24T15:01:50.426Z
 - **Cuerpo:**
 
 ```
@@ -9084,7 +9902,7 @@ designmodelingacademy.com
 
 - **id:** `6a886c6a97eed9fbd01d9440`
 - **tipo:** html
-- **actualizada:** 2026-08-21T15:38:26.881Z
+- **actualizada:** 2026-08-24T15:00:46.960Z
 - **Cuerpo:**
 
 ```
@@ -9130,7 +9948,7 @@ designmodelingacademy.com
 
 - **id:** `6a886d76897d6716c6d81840`
 - **tipo:** html
-- **actualizada:** 2026-08-21T15:41:48.711Z
+- **actualizada:** 2026-08-24T15:03:55.619Z
 - **Cuerpo:**
 
 ```
@@ -9141,39 +9959,27 @@ Vivienda en hormigon y acero resuelta completa en SAP2000.
 Curso especializado
 Dise&ntilde;o de Viviendas en Hormig&oacute;n Armado y Acero Estructural
 Hola {{contact.first_name}} ,
-Una vivienda que
-combina hormig&oacute;n armado y acero estructural, resuelta &iacute;ntegra en SAP2000: dos materiales,
-un solo modelo y un criterio de dise&ntilde;o coherente.
-Modelado del sistema
-completo, cargas de servicio y s&iacute;smicas, an&aacute;lisis modal espectral, y dise&ntilde;o de
-losas, vigas, columnas, perfiles met&aacute;licos y cimentaci&oacute;n.
+Una vivienda que combina hormig&oacute;n armado y acero estructural, resuelta &iacute;ntegra en SAP2000: dos materiales, un solo modelo y un criterio de dise&ntilde;o coherente.
+Modelado del sistema completo, cargas de servicio y s&iacute;smicas, an&aacute;lisis modal espectral, y dise&ntilde;o de losas, vigas, columnas, perfiles met&aacute;licos y cimentaci&oacute;n.
 26 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
 SAP2000 &middot; material descargable
 Descargar el temario completo &#8594;
 PDF con el detalle sesi&oacute;n por sesi&oacute;n
 Qu&eacute; incluye tu curso:
 &#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
-&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos
-reales.
-&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros
-proyectos.
-&#9989;
-Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
 &#127891; Incluido sin costo adicional
 Tu certificaci&oacute;n al finalizar
 Emitido por Modeling-DG S.A.S. &mdash; verificable en l&iacute;nea.
 26
 horas acad&eacute;micas
-&#10003; Certificado
-Internacional
-&#10003; C&oacute;digo QR de
-verificaci&oacute;n
+&#10003; Certificado Internacional
+&#10003; C&oacute;digo QR de verificaci&oacute;n
 &#10003; Descargable en PDF
-&#10003; A tu nombre, listo
-para LinkedIn
-Al terminar, recibes
-un Certificado Internacional de 26 horas acad&eacute;micas
-emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&#10003; A tu nombre, listo para LinkedIn
+Al terminar, recibes un Certificado Internacional de 26 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
 &iquest;Tienes dudas antes de inscribirte?
 Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
 Hablar por WhatsApp
@@ -9188,7 +9994,7 @@ designmodelingacademy.com
 
 - **id:** `6a886c18c95ab36931b21783`
 - **tipo:** html
-- **actualizada:** 2026-08-21T15:34:06.838Z
+- **actualizada:** 2026-08-24T14:58:07.306Z
 - **Cuerpo:**
 
 ```
@@ -9234,7 +10040,7 @@ designmodelingacademy.com
 
 - **id:** `6a886ccc676a1cd9c1f3df05`
 - **tipo:** html
-- **actualizada:** 2026-08-21T15:40:12.707Z
+- **actualizada:** 2026-08-24T15:02:38.693Z
 - **Cuerpo:**
 
 ```
@@ -9280,7 +10086,7 @@ designmodelingacademy.com
 
 - **id:** `6a886dd18ced86da5a804ae4`
 - **tipo:** html
-- **actualizada:** 2026-08-21T15:45:30.004Z
+- **actualizada:** 2026-08-24T15:07:03.627Z
 - **Cuerpo:**
 
 ```
@@ -9330,7 +10136,7 @@ designmodelingacademy.com
 
 - **id:** `6a88668fda320347a25ef8c6`
 - **tipo:** html
-- **actualizada:** 2026-08-21T15:14:52.151Z
+- **actualizada:** 2026-08-24T14:50:52.056Z
 - **Cuerpo:**
 
 ```
@@ -9341,48 +10147,31 @@ Calculo de cerchas para naves industriales, paso a paso en Robot.
 Curso especializado
 Gu&iacute;a Pr&aacute;ctica para el C&aacute;lculo Tipo Cerchas en Naves Industriales
 Hola {{contact.first_name}} ,
-Las cerchas
-resuelven grandes luces con poco peso, pero solo si el predimensionamiento y el control de esbeltez se
-hacen bien. Este curso va directo a ese c&aacute;lculo: geometr&iacute;a, montantes y diagonales, y el
-comportamiento real de los elementos a tracci&oacute;n y compresi&oacute;n.
-Modelas la nave
-completa en Robot Structural Analysis, aplicas cargas de cubierta, viento y sismo, y verificas cada
-perfil hasta cerrar el dise&ntilde;o con criterio de optimizaci&oacute;n.
+Las cerchas resuelven grandes luces con poco peso, pero solo si el predimensionamiento y el control de esbeltez se hacen bien. Este curso va directo a ese c&aacute;lculo: geometr&iacute;a, montantes y diagonales, y el comportamiento real de los elementos a tracci&oacute;n y compresi&oacute;n.
+Modelas la nave completa en Robot Structural Analysis, aplicas cargas de cubierta, viento y sismo, y verificas cada perfil hasta cerrar el dise&ntilde;o con criterio de optimizaci&oacute;n.
 28 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
 Robot Structural Analysis &middot; material descargable
 Descargar el temario completo &#8594;
 PDF con el detalle sesi&oacute;n por sesi&oacute;n
 Qu&eacute; incluye tu curso:
 &#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
-&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos
-reales.
-&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros
-proyectos.
-&#9989;
-Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
 &#127891; Incluido sin costo adicional
 Tu certificaci&oacute;n al finalizar
 Dos certificaciones incluidas, sin costo adicional.
 Autodesk
 Completaci&oacute;n del curso
 Modeling-DG S.A.S.
-Certificado
-Internacional
+Certificado Internacional
 28
 horas acad&eacute;micas
-&#10003; Certificado
-Internacional
-&#10003; C&oacute;digo QR de
-verificaci&oacute;n
+&#10003; Certificado Internacional
+&#10003; C&oacute;digo QR de verificaci&oacute;n
 &#10003; Descargable en PDF
-&#10003; A tu nombre, listo
-para LinkedIn
-Al finalizar recibes
-una
-certificaci&oacute;n de completaci&oacute;n avalada por Autodesk
-&mdash; somos Centro de Entrenamiento Autorizado de la marca &mdash; y un
-Certificado Internacional de 28 horas acad&eacute;micas
-emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&#10003; A tu nombre, listo para LinkedIn
+Al finalizar recibes una certificaci&oacute;n de completaci&oacute;n avalada por Autodesk &mdash; somos Centro de Entrenamiento Autorizado de la marca &mdash; y un Certificado Internacional de 28 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
 &iquest;Tienes dudas antes de inscribirte?
 Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
 Hablar por WhatsApp
@@ -9397,7 +10186,7 @@ designmodelingacademy.com
 
 - **id:** `6a886eb2c3ca7ccb66a2158a`
 - **tipo:** html
-- **actualizada:** 2026-08-21T15:52:48.130Z
+- **actualizada:** 2026-08-24T15:38:25.926Z
 - **Cuerpo:**
 
 ```
@@ -9443,7 +10232,7 @@ designmodelingacademy.com
 
 - **id:** `6a886e107e0c28b368115b62`
 - **tipo:** html
-- **actualizada:** 2026-08-21T15:47:14.589Z
+- **actualizada:** 2026-08-24T15:27:57.184Z
 - **Cuerpo:**
 
 ```
@@ -9493,7 +10282,7 @@ designmodelingacademy.com
 
 - **id:** `6a886cebda320347a25f9e28`
 - **tipo:** html
-- **actualizada:** 2026-08-21T15:41:05.845Z
+- **actualizada:** 2026-08-24T15:03:22.022Z
 - **Cuerpo:**
 
 ```
@@ -9543,7 +10332,7 @@ designmodelingacademy.com
 
 - **id:** `6a886e83bc3bac7221b869a8`
 - **tipo:** html
-- **actualizada:** 2026-08-21T15:49:19.147Z
+- **actualizada:** 2026-08-24T15:37:15.762Z
 - **Cuerpo:**
 
 ```
@@ -9593,7 +10382,7 @@ designmodelingacademy.com
 
 - **id:** `6a886be4bc3bac7221b8245e`
 - **tipo:** html
-- **actualizada:** 2026-08-21T15:32:42.793Z
+- **actualizada:** 2026-08-24T14:52:32.521Z
 - **Cuerpo:**
 
 ```
@@ -9604,48 +10393,31 @@ Modelado BIM completo en Revit combinando hormigon y acero.
 Curso especializado
 Modelado BIM en Hormig&oacute;n Armado y Acero Estructural
 Hola {{contact.first_name}} ,
-Un curso de modelado
-puro y bien hecho: levantar en Revit la estructura completa de un proyecto, combinando
-hormig&oacute;n armado y acero estructural en un mismo modelo
-coordinado y limpio.
-Cimentaciones,
-columnas, vigas, losas, perfiles met&aacute;licos y conexiones, con el nivel de detalle correcto para
-que el modelo sirva tanto al c&aacute;lculo como a la documentaci&oacute;n.
+Un curso de modelado puro y bien hecho: levantar en Revit la estructura completa de un proyecto, combinando hormig&oacute;n armado y acero estructural en un mismo modelo coordinado y limpio.
+Cimentaciones, columnas, vigas, losas, perfiles met&aacute;licos y conexiones, con el nivel de detalle correcto para que el modelo sirva tanto al c&aacute;lculo como a la documentaci&oacute;n.
 35 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
 Revit &middot; material descargable
 Descargar el temario completo &#8594;
 PDF con el detalle sesi&oacute;n por sesi&oacute;n
 Qu&eacute; incluye tu curso:
 &#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
-&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos
-reales.
-&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros
-proyectos.
-&#9989;
-Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
 &#127891; Incluido sin costo adicional
 Tu certificaci&oacute;n al finalizar
 Dos certificaciones incluidas, sin costo adicional.
 Autodesk
 Completaci&oacute;n del curso
 Modeling-DG S.A.S.
-Certificado
-Internacional
+Certificado Internacional
 35
 horas acad&eacute;micas
-&#10003; Certificado
-Internacional
-&#10003; C&oacute;digo QR de
-verificaci&oacute;n
+&#10003; Certificado Internacional
+&#10003; C&oacute;digo QR de verificaci&oacute;n
 &#10003; Descargable en PDF
-&#10003; A tu nombre, listo
-para LinkedIn
-Al finalizar recibes
-una
-certificaci&oacute;n de completaci&oacute;n avalada por Autodesk
-&mdash; somos Centro de Entrenamiento Autorizado de la marca &mdash; y un
-Certificado Internacional de 35 horas acad&eacute;micas
-emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&#10003; A tu nombre, listo para LinkedIn
+Al finalizar recibes una certificaci&oacute;n de completaci&oacute;n avalada por Autodesk &mdash; somos Centro de Entrenamiento Autorizado de la marca &mdash; y un Certificado Internacional de 35 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
 &iquest;Tienes dudas antes de inscribirte?
 Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
 Hablar por WhatsApp
@@ -9660,7 +10432,7 @@ designmodelingacademy.com
 
 - **id:** `6a7e0e73a1eba97e2c1c3163`
 - **tipo:** html
-- **actualizada:** 2026-08-21T15:13:34.962Z
+- **actualizada:** 2026-08-24T14:48:58.469Z
 - **Cuerpo:**
 
 ```
@@ -9671,27 +10443,42 @@ Diseno de naves de acero ante viento y sismo en SAP2000.
 Curso especializado
 Naves Industriales PRO 30 Horas en SAP2000
 Hola {{contact.first_name}} ,
-Una formaci&oacute;n enfocada en un solo objetivo: dise&ntilde;ar naves industriales de acero con criterio ante cargas de viento y sismo . Vas del modelado 3D de p&oacute;rticos y celos&iacute;as al an&aacute;lisis modal espectral y de viento, hasta el dise&ntilde;o final de los elementos.
-Se trabajan a fondo los temas que suelen quedar sueltos: pandeo flexo-torsional y lateral-torsional, estabilidad de la estructura, tensores y arriostramientos, dise&ntilde;o de correas y mezzanine, y optimizaci&oacute;n de pesos.
+Una formaci&oacute;n
+enfocada en un solo objetivo: dise&ntilde;ar naves industriales de acero con criterio ante
+cargas de viento y sismo . Vas del modelado 3D de p&oacute;rticos
+y celos&iacute;as al an&aacute;lisis modal espectral y de viento, hasta el dise&ntilde;o final de los
+elementos.
+Se trabajan a fondo
+los temas que suelen quedar sueltos: pandeo flexo-torsional y lateral-torsional, estabilidad de la
+estructura, tensores y arriostramientos, dise&ntilde;o de correas y mezzanine, y optimizaci&oacute;n de
+pesos.
 25 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
 SAP2000 &middot; material descargable
 Descargar el temario completo &#8594;
 PDF con el detalle sesi&oacute;n por sesi&oacute;n
 Qu&eacute; incluye tu curso:
 &#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
-&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
-&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
-&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos
+reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros
+proyectos.
+&#9989;
+Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
 &#127891; Incluido sin costo adicional
 Tu certificaci&oacute;n al finalizar
 Emitido por Modeling-DG S.A.S. &mdash; verificable en l&iacute;nea.
 25
 horas acad&eacute;micas
-&#10003; Certificado Internacional
-&#10003; C&oacute;digo QR de verificaci&oacute;n
+&#10003; Certificado
+Internacional
+&#10003; C&oacute;digo QR de
+verificaci&oacute;n
 &#10003; Descargable en PDF
-&#10003; A tu nombre, listo para LinkedIn
-Al terminar, recibes un Certificado Internacional de 25 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&#10003; A tu nombre, listo
+para LinkedIn
+Al terminar, recibes
+un Certificado Internacional de 25 horas acad&eacute;micas
+emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
 &iquest;Tienes dudas antes de inscribirte?
 Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
 Hablar por WhatsApp
@@ -9706,7 +10493,7 @@ designmodelingacademy.com
 
 - **id:** `6a886b8e676a1cd9c1f3bdbb`
 - **tipo:** html
-- **actualizada:** 2026-08-21T15:16:33.032Z
+- **actualizada:** 2026-08-24T14:51:50.504Z
 - **Cuerpo:**
 
 ```
@@ -9758,7 +10545,7 @@ designmodelingacademy.com
 
 - **id:** `6a7dee740d81f0f162d0058c`
 - **tipo:** html
-- **actualizada:** 2026-08-20T15:43:02.000Z
+- **actualizada:** 2026-08-24T15:50:44.240Z
 - **Cuerpo:**
 
 ```
@@ -9779,15 +10566,13 @@ Todo con ejemplos reales: edificaciones metálicas, naves industriales y conexio
 bajo normas AISC 360-16 y ASCE 7-16.
 4 cursos &middot; 59 sesiones &middot; 110&ndash;130 horas
 Nivel avanzado &middot; 100% asincrónico &middot; asesorías 1 a 1
-Descargar el temario completo &#8594;
+Ver el temario completo &#8594;
 PDF con el detalle módulo por módulo
 Qué incluye tu especialización:
 &#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
 &#9989; Contenido 100% original, diseñado por expertos y basado en ejemplos reales.
-&#9989; Material totalmente descargable, que te sirve como guía en tus futuros
-proyectos.
-&#9989;
-Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#9989; Material totalmente descargable, que te sirve como guía en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
 Sin costo adicional
 Terminas con 5 certificados
 Cuatro de completación con aval Autodesk y uno internacional de 120 horas.
@@ -9813,7 +10598,7 @@ designmodelingacademy.com
 
 - **id:** `6a871cec17389f8e23c296ea`
 - **tipo:** html
-- **actualizada:** 2026-08-20T15:43:59.898Z
+- **actualizada:** 2026-08-24T15:51:58.970Z
 - **Cuerpo:**
 
 ```
@@ -9837,7 +10622,7 @@ Modelado BIM en Hormigón Armado y Acero Estructural
 Revit
 3 cursos &middot; 120 horas acad&eacute;micas
 Revit &middot; arquitectura + estructura + MEP
-Descargar el temario completo &#8595;
+Ver el temario completo &#8594;
 PDF con el detalle m&oacute;dulo por m&oacute;dulo
 Qu&eacute; incluye tu especializaci&oacute;n:
 &#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
@@ -9869,7 +10654,7 @@ designmodelingacademy.com
 
 - **id:** `6a871fa317389f8e23c2de99`
 - **tipo:** html
-- **actualizada:** 2026-08-20T15:44:32.027Z
+- **actualizada:** 2026-08-24T15:53:55.348Z
 - **Cuerpo:**
 
 ```
@@ -9893,7 +10678,7 @@ Análisis y Diseño de Muros de Contención
 Robot Structural Analysis Professional
 3 cursos &middot; 120 horas acad&eacute;micas
 Robot Structural Analysis &middot; SAFE
-Descargar el temario completo &#8595;
+Ver el temario completo &#8594;
 PDF con el detalle m&oacute;dulo por m&oacute;dulo
 Qu&eacute; incluye tu especializaci&oacute;n:
 &#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
@@ -9925,7 +10710,7 @@ designmodelingacademy.com
 
 - **id:** `6a871f0e13ad6f85ed80c56e`
 - **tipo:** html
-- **actualizada:** 2026-08-20T15:44:41.924Z
+- **actualizada:** 2026-08-24T15:54:13.750Z
 - **Cuerpo:**
 
 ```
@@ -9947,7 +10732,7 @@ Ingeniería de Costos y Elaboración de Cronogramas en Construcción
 Microsoft Excel
 2 cursos &middot; 120 horas acad&eacute;micas
 Microsoft Excel &middot; presupuestos, APU y cronogramas
-Descargar el temario completo &#8595;
+Ver el temario completo &#8594;
 PDF con el detalle m&oacute;dulo por m&oacute;dulo
 Qu&eacute; incluye tu especializaci&oacute;n:
 &#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
@@ -9979,7 +10764,7 @@ designmodelingacademy.com
 
 - **id:** `6a87202c87bb8b3a11142274`
 - **tipo:** html
-- **actualizada:** 2026-08-20T15:43:24.082Z
+- **actualizada:** 2026-08-24T15:52:22.513Z
 - **Cuerpo:**
 
 ```
@@ -10003,7 +10788,7 @@ Análisis y Diseño de Cimentaciones Profundas para Edificaciones
 ETABS
 3 cursos &middot; 120 horas acad&eacute;micas
 ETABS &middot; acero estructural &middot; nivel profesional
-Descargar el temario completo &#8595;
+Ver el temario completo &#8594;
 PDF con el detalle m&oacute;dulo por m&oacute;dulo
 Qu&eacute; incluye tu especializaci&oacute;n:
 &#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
@@ -10035,7 +10820,7 @@ designmodelingacademy.com
 
 - **id:** `6a871c2bb2825860204d2920`
 - **tipo:** html
-- **actualizada:** 2026-08-20T15:43:11.418Z
+- **actualizada:** 2026-08-24T15:51:16.914Z
 - **Cuerpo:**
 
 ```
@@ -10048,14 +10833,8 @@ Tres cursos de hormigon armado en Robot y Revit, de la vivienda al edificio comp
 Especializaci&oacute;n profesional
 Dise&ntilde;o Estructural con Hormig&oacute;n Armado BIM
 Hola {{contact.first_name}} ,
-Una ruta completa
-para dise&ntilde;ar en hormig&oacute;n armado con criterio y respaldo BIM. Empiezas por viviendas,
-avanzas a edificaciones completas en Robot Structural Analysis y
-cierras integrando el modelo de hormig&oacute;n y acero en
-Revit .
-El foco est&aacute;
-en que el modelo anal&iacute;tico y el modelo BIM hablen el mismo idioma: dise&ntilde;as, verificas y
-documentas sin rehacer el trabajo dos veces.
+Una ruta completa para dise&ntilde;ar en hormig&oacute;n armado con criterio y respaldo BIM. Empiezas por viviendas, avanzas a edificaciones completas en Robot Structural Analysis y cierras integrando el modelo de hormig&oacute;n y acero en Revit .
+El foco est&aacute; en que el modelo anal&iacute;tico y el modelo BIM hablen el mismo idioma: dise&ntilde;as, verificas y documentas sin rehacer el trabajo dos veces.
 Cursos que la componen
 Diseño Estructural en Hormigón Armado en Edificaciones
 Robot Structural Analysis Professional + Revit
@@ -10065,32 +10844,24 @@ Modelado BIM en Hormigón Armado y Acero Estructural
 Revit
 3 cursos &middot; 120 horas acad&eacute;micas
 Robot Structural Analysis &middot; Revit
-Descargar el temario completo &#8595;
+Ver el temario completo &#8594;
 PDF con el detalle m&oacute;dulo por m&oacute;dulo
 Qu&eacute; incluye tu especializaci&oacute;n:
 &#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
-&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos
-reales.
-&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros
-proyectos.
-&#9989;
-Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
 Sin costo adicional
 Terminas con 4 certificados
 Tres de completaci&oacute;n con aval Autodesk y uno internacional de 120 horas.
-Aval
-Autodesk
-Uno por cada
-curso &middot; 3 en total
-120 horas
-acad&eacute;micas
-Internacional
-&middot; con c&oacute;digo QR
+Aval Autodesk
+Uno por cada curso &middot; 3 en total
+120 horas acad&eacute;micas
+Internacional &middot; con c&oacute;digo QR
 Al finalizar cada curso recibes una certificaci&oacute;n de completaci&oacute;n
 avalada por Autodesk &mdash; esto porque somos Centro de Entrenamiento Autorizado de la marca.
 Y al terminar, recibes un Certificado Internacional de 120 horas
-acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional.
-&#9989;
+acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
 &iquest;Tienes dudas antes de inscribirte?
 Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
 Hablar por WhatsApp
@@ -10105,7 +10876,7 @@ designmodelingacademy.com
 
 - **id:** `6a871f670872c312533c75ff`
 - **tipo:** html
-- **actualizada:** 2026-08-20T15:44:20.362Z
+- **actualizada:** 2026-08-24T15:53:29.868Z
 - **Cuerpo:**
 
 ```
@@ -10129,7 +10900,7 @@ Desarrollo de Planos Estructurales con Metodología BIM
 Revit
 3 cursos &middot; 120 horas acad&eacute;micas
 AutoCAD &middot; Revit &middot; documentaci&oacute;n para obra
-Descargar el temario completo &#8595;
+Ver el temario completo &#8594;
 PDF con el detalle m&oacute;dulo por m&oacute;dulo
 Qu&eacute; incluye tu especializaci&oacute;n:
 &#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
@@ -10161,7 +10932,7 @@ designmodelingacademy.com
 
 - **id:** `6a871fe0de5000dc92bb4245`
 - **tipo:** html
-- **actualizada:** 2026-08-20T15:43:46.698Z
+- **actualizada:** 2026-08-24T15:52:52.067Z
 - **Cuerpo:**
 
 ```
@@ -10185,7 +10956,7 @@ Diseño de Edificaciones Sismorresistentes en Hormigón Armado
 ETABS
 3 cursos &middot; 120 horas acad&eacute;micas
 SAP2000 &middot; ETABS &middot; nivel profesional
-Descargar el temario completo &#8595;
+Ver el temario completo &#8594;
 PDF con el detalle m&oacute;dulo por m&oacute;dulo
 Qu&eacute; incluye tu especializaci&oacute;n:
 &#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
@@ -10217,7 +10988,7 @@ designmodelingacademy.com
 
 - **id:** `6a871d6e87bb8b3a1113db66`
 - **tipo:** html
-- **actualizada:** 2026-08-20T15:44:10.783Z
+- **actualizada:** 2026-08-24T15:53:10.090Z
 - **Cuerpo:**
 
 ```
@@ -10241,7 +11012,7 @@ Elaboración de Planos Estructurales Tanque Elevados
 Revit
 3 cursos &middot; 120 horas acad&eacute;micas
 SAP2000 &middot; Revit &middot; hormig&oacute;n y acero
-Descargar el temario completo &#8595;
+Ver el temario completo &#8594;
 PDF con el detalle m&oacute;dulo por m&oacute;dulo
 Qu&eacute; incluye tu especializaci&oacute;n:
 &#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
@@ -10275,7 +11046,7 @@ designmodelingacademy.com
 
 - **id:** `6a87259213ad6f85ed81a7e8`
 - **tipo:** html
-- **actualizada:** 2026-08-20T16:06:37.200Z
+- **actualizada:** 2026-08-24T15:57:17.457Z
 - **Cuerpo:**
 
 ```
@@ -10290,7 +11061,7 @@ El diplomado para el profesional t&eacute;cnico que ya sabe dise&ntilde;ar, pero
 Aprendes a captar prospectos, dar seguimiento sin perder oportunidades y sistematizar la venta de tus servicios, para dejar de depender del boca a boca y del cliente que aparece por casualidad.
 6 meses &middot; marketing + IA + automatizaci&oacute;n
 Sharp CRM &middot; en alianza con Inflect Consultor&iacute;a
-Descargar el temario completo &#8594;
+Ver el temario completo &#8594;
 PDF con el detalle m&oacute;dulo por m&oacute;dulo
 Qu&eacute; incluye tu diplomado:
 &#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva, para ver y repetir las clases cuantas veces quieras.
@@ -10331,7 +11102,7 @@ designmodelingacademy.com
 
 - **id:** `6a7e0b72a9bd3238fcd3bb01`
 - **tipo:** html
-- **actualizada:** 2026-08-20T16:04:13.322Z
+- **actualizada:** 2026-08-24T15:56:10.432Z
 - **Cuerpo:**
 
 ```
@@ -10346,7 +11117,7 @@ Un programa para dominar el dise&ntilde;o arquitect&oacute;nico con metodolog&ia
 El m&oacute;dulo final se enfoca en visualizaci&oacute;n de alto impacto: renderizado en tiempo real con Enscape , configuraci&oacute;n de materiales e iluminaci&oacute;n, recorridos virtuales y l&aacute;minas profesionales listas para entrega.
 4 m&oacute;dulos &middot; 100 horas &middot; nivel intermedio
 Revit Architecture &middot; AutoCAD &middot; Enscape
-Descargar el temario completo &#8594;
+Ver el temario completo &#8594;
 PDF con el detalle m&oacute;dulo por m&oacute;dulo
 Qu&eacute; incluye tu diplomado:
 &#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva, para ver y repetir las clases cuantas veces quieras.
@@ -10387,7 +11158,7 @@ designmodelingacademy.com
 
 - **id:** `6a872682473a54c041d22ccd`
 - **tipo:** html
-- **actualizada:** 2026-08-20T16:09:17.272Z
+- **actualizada:** 2026-08-24T15:57:56.862Z
 - **Cuerpo:**
 
 ```
@@ -10402,7 +11173,7 @@ El recorrido que va del c&aacute;lculo a la entrega. Modelas y analizas la estru
 Trabajas con Revit , Robot Structural Analysis y Navisworks , integrando el modelo anal&iacute;tico con el modelo BIM y coordinando con las dem&aacute;s disciplinas antes de emitir planos.
 6 meses &middot; c&aacute;lculo + documentaci&oacute;n t&eacute;cnica
 Revit &middot; Robot &middot; Navisworks &middot; Excel
-Descargar el temario completo &#8594;
+Ver el temario completo &#8594;
 PDF con el detalle m&oacute;dulo por m&oacute;dulo
 Qu&eacute; incluye tu diplomado:
 &#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva, para ver y repetir las clases cuantas veces quieras.
@@ -10443,7 +11214,7 @@ designmodelingacademy.com
 
 - **id:** `6a8726230872c312533d82c0`
 - **tipo:** html
-- **actualizada:** 2026-08-20T16:08:03.804Z
+- **actualizada:** 2026-08-24T15:57:38.401Z
 - **Cuerpo:**
 
 ```
@@ -10458,7 +11229,7 @@ Un diplomado h&iacute;brido, poco com&uacute;n: la mitad t&eacute;cnica y la mit
 Est&aacute; pensado para quien tiene o quiere abrir su propio estudio: dominar el c&aacute;lculo no sirve de mucho si nadie sabe que existes.
 6 meses &middot; parte t&eacute;cnica + parte comercial
 Revit &middot; Robot &middot; Navisworks &middot; Excel &middot; Sharp CRM
-Descargar el temario completo &#8594;
+Ver el temario completo &#8594;
 PDF con el detalle m&oacute;dulo por m&oacute;dulo
 Qu&eacute; incluye tu diplomado:
 &#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva, para ver y repetir las clases cuantas veces quieras.
@@ -10499,7 +11270,7 @@ designmodelingacademy.com
 
 - **id:** `6a7e0a741cdd6301731ba7c9`
 - **tipo:** html
-- **actualizada:** 2026-08-20T16:04:27.055Z
+- **actualizada:** 2026-08-24T15:56:46.847Z
 - **Cuerpo:**
 
 ```
@@ -10514,7 +11285,7 @@ Un programa de 6 meses para dominar el modelado estructural completo bajo metodo
 Los &uacute;ltimos m&oacute;dulos cierran el ciclo profesional: coordinaci&oacute;n interdisciplinaria con Navisworks , vinculaci&oacute;n del modelo con Robot y SAP2000 para c&aacute;lculo, automatizaci&oacute;n con Dynamo y un proyecto final integrador sobre un caso real.
 9 m&oacute;dulos &middot; 600 horas &middot; 6 meses
 Revit &middot; Navisworks &middot; Robot / SAP2000 &middot; Dynamo
-Descargar el temario completo &#8594;
+Ver el temario completo &#8594;
 PDF con el detalle m&oacute;dulo por m&oacute;dulo
 Qu&eacute; incluye tu diplomado:
 &#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva, para ver y repetir las clases cuantas veces quieras.
@@ -10555,7 +11326,7 @@ designmodelingacademy.com
 
 - **id:** `6a8726b513ad6f85ed821066`
 - **tipo:** html
-- **actualizada:** 2026-08-20T16:10:03.196Z
+- **actualizada:** 2026-08-24T15:58:21.484Z
 - **Cuerpo:**
 
 ```
@@ -10570,7 +11341,7 @@ Un diplomado orientado al perfil que m&aacute;s contratan las oficinas BIM: el m
 El &eacute;nfasis est&aacute; en la pr&aacute;ctica: producir modelos limpios, bien organizados y libres de interferencias, con la documentaci&oacute;n que se espera de un entregable profesional.
 6 meses &middot; estructuras + instalaciones sanitarias
 Revit &middot; AutoCAD &middot; Navisworks &middot; Excel
-Descargar el temario completo &#8594;
+Ver el temario completo &#8594;
 PDF con el detalle m&oacute;dulo por m&oacute;dulo
 Qu&eacute; incluye tu diplomado:
 &#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva, para ver y repetir las clases cuantas veces quieras.
@@ -10611,7 +11382,7 @@ designmodelingacademy.com
 
 - **id:** `6a7e0dcd66c34f90bed553aa`
 - **tipo:** html
-- **actualizada:** 2026-08-20T16:03:59.316Z
+- **actualizada:** 2026-08-24T15:55:00.289Z
 - **Cuerpo:**
 
 ```
@@ -10626,7 +11397,7 @@ El programa insignia de la academia: 12 meses organizados en cuatro bloques, don
 Avanzas del modelado arquitect&oacute;nico y estructural a la coordinaci&oacute;n y el CDE, luego a la planificaci&oacute;n 4D y el control de costos 5D, y cierras con automatizaci&oacute;n en Dynamo , programaci&oacute;n en Python e IA aplicada a BIM , con un proyecto final integrador.
 4 bloques &middot; 12 m&oacute;dulos &middot; 12 meses
 Workshops en vivo semanales &middot; mentor&iacute;as 1:1 &middot; DMA Engineering Suite
-Descargar el temario completo &#8594;
+Ver el temario completo &#8594;
 PDF con el plan de estudios bloque por bloque
 Qu&eacute; incluye tu m&aacute;ster:
 &#9989; Acceso 24/7 a la plataforma interactiva, para ver y repetir todas las clases a tu ritmo.
@@ -10669,7 +11440,7 @@ designmodelingacademy.com
 
 - **id:** `6a872a32be74cab596b5551f`
 - **tipo:** html
-- **actualizada:** 2026-08-20T16:43:40.238Z
+- **actualizada:** 2026-08-24T15:59:46.922Z
 - **Cuerpo:**
 
 ```
@@ -10684,7 +11455,7 @@ Los asistentes de IA sirven de poco si no sabes qu&eacute; pedirles. Este curso 
 El foco est&aacute; en el criterio: qu&eacute; delegar a la IA, c&oacute;mo formular la instrucci&oacute;n y c&oacute;mo verificar el resultado antes de llevarlo a un proyecto.
 Modalidad h&iacute;brida &middot; 15 horas acad&eacute;micas
 Revit &middot; ChatGPT &middot; Copilot &middot; Firefly
-Descargar el temario completo &#8594;
+Ver el temario completo &#8594;
 PDF con el detalle lecci&oacute;n por lecci&oacute;n
 Qu&eacute; incluye tu curso:
 &#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
@@ -10713,7 +11484,7 @@ designmodelingacademy.com
 
 - **id:** `6a872f1ada320347a24875f5`
 - **tipo:** html
-- **actualizada:** 2026-08-20T16:45:52.198Z
+- **actualizada:** 2026-08-24T16:06:49.906Z
 - **Cuerpo:**
 
 ```
@@ -10728,7 +11499,7 @@ El entorno com&uacute;n de datos dej&oacute; de ser opcional en proyectos median
 Trabajas la conexi&oacute;n con Revit y AutoCAD , la gesti&oacute;n de permisos y el flujo de incidencias, que es donde suele romperse la coordinaci&oacute;n en obra.
 Modalidad h&iacute;brida &middot; 15 horas acad&eacute;micas &middot; nivel b&aacute;sico
 Autodesk Construction Cloud &middot; Revit &middot; AutoCAD
-Descargar el temario completo &#8594;
+Ver el temario completo &#8594;
 PDF con el detalle lecci&oacute;n por lecci&oacute;n
 Qu&eacute; incluye tu curso:
 &#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
@@ -10757,7 +11528,7 @@ designmodelingacademy.com
 
 - **id:** `6a7e0e325580fafcc1c44f65`
 - **tipo:** html
-- **actualizada:** 2026-08-20T16:23:29.116Z
+- **actualizada:** 2026-08-24T15:59:23.953Z
 - **Cuerpo:**
 
 ```
@@ -10772,7 +11543,7 @@ Un curso para dejar de perder horas en tareas repetitivas. Aprendes a automatiza
 Generas planos, vistas y documentaci&oacute;n de forma autom&aacute;tica, construyes plantillas inteligentes y cierras con un proyecto final donde integras todo el sistema BIM automatizado.
 14 sesiones &middot; ~10 horas de video &middot; proyecto final
 Nivel avanzado &middot; Revit + AutoCAD + Excel &middot; IA aplicada a BIM
-Descargar el temario completo &#8594;
+Ver el temario completo &#8594;
 PDF con el detalle lecci&oacute;n por lecci&oacute;n
 Qu&eacute; incluye tu curso:
 &#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
@@ -10803,7 +11574,7 @@ designmodelingacademy.com
 
 - **id:** `6a872ed22da68428c02b8684`
 - **tipo:** html
-- **actualizada:** 2026-08-20T16:44:49.952Z
+- **actualizada:** 2026-08-24T16:00:07.550Z
 - **Cuerpo:**
 
 ```
@@ -10818,7 +11589,7 @@ Tu modelo BIM ya tiene los datos; el problema es que nadie los ve. Aprendes a ex
 Con apoyo de IA para depurar datos y detectar inconsistencias, el resultado es un panel que sirve para reportar a un cliente o a la gerencia sin armar el reporte a mano cada semana.
 Modalidad h&iacute;brida &middot; 15 horas acad&eacute;micas
 Revit &middot; Power BI &middot; Excel &middot; IA aplicada
-Descargar el temario completo &#8594;
+Ver el temario completo &#8594;
 PDF con el detalle lecci&oacute;n por lecci&oacute;n
 Qu&eacute; incluye tu curso:
 &#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
@@ -10847,7 +11618,7 @@ designmodelingacademy.com
 
 - **id:** `6a873047473a54c041d34c8a`
 - **tipo:** html
-- **actualizada:** 2026-08-20T16:50:57.339Z
+- **actualizada:** 2026-08-24T16:08:05.730Z
 - **Cuerpo:**
 
 ```
@@ -10862,7 +11633,7 @@ Los diagramas t&eacute;cnicos son la parte del proyecto que m&aacute;s se improv
 Cubres esquemas de instalaciones, diagramas de flujo de procesos y documentaci&oacute;n de coordinaci&oacute;n, con apoyo de IA para estructurar la l&oacute;gica y acelerar el armado.
 Modalidad h&iacute;brida &middot; 15 horas acad&eacute;micas
 Visio &middot; Revit &middot; IA aplicada
-Descargar el temario completo &#8594;
+Ver el temario completo &#8594;
 PDF con el detalle lecci&oacute;n por lecci&oacute;n
 Qu&eacute; incluye tu curso:
 &#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
@@ -10891,7 +11662,7 @@ designmodelingacademy.com
 
 - **id:** `6a872f5dbe74cab596b5e37f`
 - **tipo:** html
-- **actualizada:** 2026-08-20T16:47:08.350Z
+- **actualizada:** 2026-08-24T16:07:05.547Z
 - **Cuerpo:**
 
 ```
@@ -10906,7 +11677,7 @@ Una familia mal construida es una bomba de tiempo en el modelo. Aprendes a crear
 El enfoque de IA aparece en el proceso: te apoya para definir par&aacute;metros, resolver f&oacute;rmulas y documentar la familia, de modo que puedas reutilizarla en cualquier proyecto.
 Modalidad h&iacute;brida &middot; 15 horas acad&eacute;micas
 Revit &middot; familias param&eacute;tricas &middot; IA aplicada
-Descargar el temario completo &#8594;
+Ver el temario completo &#8594;
 PDF con el detalle lecci&oacute;n por lecci&oacute;n
 Qu&eacute; incluye tu curso:
 &#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
@@ -10935,7 +11706,7 @@ designmodelingacademy.com
 
 - **id:** `6a8730cb13ad6f85ed832cc3`
 - **tipo:** html
-- **actualizada:** 2026-08-20T16:53:13.707Z
+- **actualizada:** 2026-08-24T16:08:49.194Z
 - **Cuerpo:**
 
 ```
@@ -10950,7 +11721,7 @@ El BIM Manager no falla por falta de conocimiento t&eacute;cnico, sino por exces
 Sales con un sistema personal de gesti&oacute;n: tareas, documentaci&oacute;n del proyecto y comunicaci&oacute;n con el equipo en un solo lugar, no repartidos entre el correo y la memoria.
 Modalidad h&iacute;brida &middot; 15 horas acad&eacute;micas
 Notion &middot; ClickUp &middot; IA aplicada a la gesti&oacute;n
-Descargar el temario completo &#8594;
+Ver el temario completo &#8594;
 PDF con el detalle lecci&oacute;n por lecci&oacute;n
 Qu&eacute; incluye tu curso:
 &#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
@@ -10976,7 +11747,7 @@ designmodelingacademy.com
 
 - **id:** `6a87314f87bb8b3a11167379`
 - **tipo:** html
-- **actualizada:** 2026-08-20T16:55:23.128Z
+- **actualizada:** 2026-08-24T16:09:19.538Z
 - **Cuerpo:**
 
 ```
@@ -10991,7 +11762,7 @@ Las normas son extensas y el tiempo no alcanza. Aprendes a usar la IA como asist
 Se trabaja con criterio de verificaci&oacute;n: la IA acelera la b&uacute;squeda, pero la responsabilidad t&eacute;cnica sigue siendo tuya. El curso ense&ntilde;a a contrastar siempre contra la fuente oficial.
 Modalidad h&iacute;brida &middot; 15 horas acad&eacute;micas
 IA aplicada &middot; consulta y verificaci&oacute;n normativa
-Descargar el temario completo &#8594;
+Ver el temario completo &#8594;
 PDF con el detalle lecci&oacute;n por lecci&oacute;n
 Qu&eacute; incluye tu curso:
 &#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
@@ -11020,7 +11791,7 @@ designmodelingacademy.com
 
 - **id:** `6a87319317389f8e23c5497e`
 - **tipo:** html
-- **actualizada:** 2026-08-20T16:58:55.390Z
+- **actualizada:** 2026-08-24T16:09:36.313Z
 - **Cuerpo:**
 
 ```
@@ -11035,7 +11806,7 @@ La colecci&oacute;n completa: 12 cursos avanzados que cubren el ecosistema Autod
 Es la ruta para quien no quiere un curso suelto sino el conjunto de herramientas que definen hoy a un perfil BIM avanzado, con un certificado que suma todas las horas de los doce cursos.
 12 cursos avanzados &middot; colecci&oacute;n Premium
 AutoCAD &middot; Revit &middot; Navisworks &middot; Dynamo &middot; Python &middot; IA
-Descargar el temario completo &#8594;
+Ver el temario completo &#8594;
 PDF con el detalle lecci&oacute;n por lecci&oacute;n
 Qu&eacute; incluye tu curso:
 &#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
@@ -11064,7 +11835,7 @@ designmodelingacademy.com
 
 - **id:** `6a873089473a54c041d352ee`
 - **tipo:** html
-- **actualizada:** 2026-08-20T16:52:00.158Z
+- **actualizada:** 2026-08-24T16:08:20.593Z
 - **Cuerpo:**
 
 ```
@@ -11079,7 +11850,7 @@ Cuantificar a mano es lento y se equivoca. Aprendes a montar tablas de planifica
 Luego las llevas a Excel y Power BI para cruzarlas con precios y obtener un presupuesto que se actualiza cuando cambia el modelo.
 Modalidad h&iacute;brida &middot; 15 horas acad&eacute;micas
 Revit &middot; Excel &middot; Power BI
-Descargar el temario completo &#8594;
+Ver el temario completo &#8594;
 PDF con el detalle lecci&oacute;n por lecci&oacute;n
 Qu&eacute; incluye tu curso:
 &#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
@@ -11108,7 +11879,7 @@ designmodelingacademy.com
 
 - **id:** `6a872f9417389f8e23c5125d`
 - **tipo:** html
-- **actualizada:** 2026-08-20T16:47:57.884Z
+- **actualizada:** 2026-08-24T16:07:24.197Z
 - **Cuerpo:**
 
 ```
@@ -11123,7 +11894,7 @@ Cada proyecto que arranca desde una plantilla gen&eacute;rica es tiempo perdido 
 El resultado es un est&aacute;ndar propio &mdash; el mismo que usan las oficinas serias &mdash; que garantiza que todos los proyectos salgan con la misma calidad gr&aacute;fica.
 Modalidad h&iacute;brida &middot; 15 horas acad&eacute;micas
 Revit &middot; est&aacute;ndares gr&aacute;ficos &middot; plantillas de oficina
-Descargar el temario completo &#8594;
+Ver el temario completo &#8594;
 PDF con el detalle lecci&oacute;n por lecci&oacute;n
 Qu&eacute; incluye tu curso:
 &#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
@@ -11152,7 +11923,7 @@ designmodelingacademy.com
 
 - **id:** `6a873112b7730838e925e43c`
 - **tipo:** html
-- **actualizada:** 2026-08-20T16:54:30.066Z
+- **actualizada:** 2026-08-24T16:09:03.799Z
 - **Cuerpo:**
 
 ```
@@ -11167,7 +11938,7 @@ Un proyecto bien resuelto se pierde si se presenta mal. Aprendes a construir pre
 La IA se usa para estructurar el guion, generar apoyos visuales y armar l&aacute;minas a partir de las vistas de Revit , reduciendo a horas lo que antes tomaba d&iacute;as.
 Modalidad h&iacute;brida &middot; 15 horas acad&eacute;micas
 Revit &middot; IA aplicada &middot; comunicaci&oacute;n t&eacute;cnica
-Descargar el temario completo &#8594;
+Ver el temario completo &#8594;
 PDF con el detalle lecci&oacute;n por lecci&oacute;n
 Qu&eacute; incluye tu curso:
 &#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
@@ -11196,7 +11967,7 @@ designmodelingacademy.com
 
 - **id:** `6a872fd7b7730838e925c1d1`
 - **tipo:** html
-- **actualizada:** 2026-08-20T16:48:58.785Z
+- **actualizada:** 2026-08-24T16:07:49.885Z
 - **Cuerpo:**
 
 ```
@@ -11211,7 +11982,7 @@ Un buen render cierra ventas. Aprendes a producir im&aacute;genes de alto impact
 El postproceso se acelera con Firefly , Lightroom y Photoshop , para corregir, ambientar y darle acabado profesional a la imagen final sin volver a renderizar.
 Modalidad h&iacute;brida &middot; 15 horas acad&eacute;micas
 Revit &middot; Enscape &middot; Firefly &middot; Lightroom &middot; Photoshop
-Descargar el temario completo &#8594;
+Ver el temario completo &#8594;
 PDF con el detalle lecci&oacute;n por lecci&oacute;n
 Qu&eacute; incluye tu curso:
 &#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
@@ -11413,6 +12184,61 @@ Entrar gratis a la Comunidad &#8594;
 Revisa primero las carpetas de spam y promociones. Si aun as&iacute; no aparece,
 escr&iacute;benos y te damos el acceso al instante.
 Escribir por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Acceso Verificación Acero
+
+- **id:** `6a8f32c54867309f6fb3a862`
+- **tipo:** html
+- **actualizada:** 2026-08-26T18:58:16.513Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Enviar como accion del formulario: https://funnel.dgdesignmodeling.com/acceso-gratis-verificacion-acero-form
+Banner y logo en base64. La portada se carga desde el CDN de GHL.
+Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Registro confirmado. La guia de las 5 verificaciones en acero ya esta en tu comunidad DMA.
+Registro confirmado &middot; 100% gratis
+Las 5 verificaciones en acero, listas para usar
+Hola {{contact.first_name}} ,
+Gracias por registrarte. Ya tienes acceso completo a la gu&iacute;a Las 5 verificaciones en acero , con la cl&aacute;usula de norma detr&aacute;s de cada chequeo &mdash; AISC 360-16 y NEC-SE-DS.
+Tu acceso est&aacute; aqu&iacute; &#8594;
+Sin costo &middot; se abre en tu comunidad DMA
+Lo que acabas de desbloquear
+Cinco verificaciones, cada una con su cl&aacute;usula de norma.
+01 Pandeo local
+02 Lateral-torsional
+03 Derivas y P-&Delta;
+04 Conexiones
+05 Placa base
+Tres pasos para que te sirva
+La mayor&iacute;a abre el enlace y lo deja para despu&eacute;s. Estos tres pasos son la diferencia.
+01
+L&eacute;elo completo hoy
+Son cinco puntos concretos, no un tratado. Rev&iacute;salos de corrido y qu&eacute;date con el criterio y la cl&aacute;usula de cada verificaci&oacute;n.
+02
+Tenlo a mano al revisar
+Ábrelo cuando revises un modelo o recibas un plano de taller. Queda guardado en tu comunidad DMA, as&iacute; que lo recuperas desde cualquier equipo.
+03
+Apl&iacute;calo a tu proyecto actual
+Pasa las cinco verificaciones sobre la estructura que tengas abierta hoy. Si alguna no cierra, ya sabes d&oacute;nde mirar.
+Tambi&eacute;n es gratis
+&Uacute;nete a la Comunidad Design Premium
+Masterclasses en vivo, plantillas descargables y networking con ingenieros y arquitectos
+de toda Latinoam&eacute;rica. Sin costo y sin tarjeta.
+Entrar gratis a la Comunidad &#8594;
+&iquest;No se abre o no encuentras el acceso?
+Revisa primero las carpetas de spam y promociones. Si aun as&iacute; no aparece,
+escr&iacute;benos y te damos el acceso al instante.
+Escribir por WhatsApp
+Material educativo y de predimensionamiento. No sustituye el
+criterio ni la responsabilidad del profesional que firma. Toda verificaci&oacute;n debe realizarse con la
+norma vigente aplicable al proyecto. No es una certificaci&oacute;n ni un diploma.
 Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
 designmodelingacademy.com
 {{unsubscribe_url}}

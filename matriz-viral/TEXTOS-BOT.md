@@ -34,7 +34,7 @@ la ruta BIM y le dice qué competencias concretas le faltan para el siguiente.
 - **Cuánto toma:** unos 5 minutos. Resultado inmediato en pantalla.
 - **De dónde salen las preguntas:** del temario real del Máster Internacional
   BIM+IA (12 módulos), no de trivia.
-- **Enlace:** https://funnel.dgdesignmodeling.com/test-nivel-bim
+- **Enlace:** https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form
 - **No es:** una certificación, un diploma, ni un quiz de redes. Es un
   diagnóstico.
 
@@ -42,7 +42,7 @@ la ruta BIM y le dice qué competencias concretas le faltan para el siguiente.
 
 > ¡Hola! 👋 Aquí está tu acceso al Test de Nivel BIM **GRATIS**
 >
-> 👉 https://funnel.dgdesignmodeling.com/test-nivel-bim
+> 👉 https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form
 >
 > Regístrate (20 segundos) y lo haces de inmediato desde el celular: 20
 > preguntas, 5 minutos, y al terminar sabes en cuál de los 4 niveles estás y
@@ -111,7 +111,7 @@ verificaciones.
 - **Para quién:** ingenieros civiles y estructurales, y estudiantes que están
   aprendiendo a dimensionar.
 - **Cuánto toma:** el resultado es inmediato, se actualiza mientras escribes.
-- **Enlace:** https://funnel.dgdesignmodeling.com/calculadora-zapatas
+- **Enlace:** https://funnel.dgdesignmodeling.com/acceso-gratis-calculadora-zapatas-form
 - **Muy importante — el descargo:** es una herramienta de **apoyo y
   predimensionamiento**. No sustituye el criterio ni la responsabilidad del
   profesional que firma. Todo resultado debe verificarse con la norma que
@@ -128,7 +128,7 @@ esa respuesta abre la ventana de 24 h y segmenta al contacto).
 
 > Hola! 👋 Aquí está tu acceso a la Calculadora de Zapatas GRATIS
 >
-> 👉 https://funnel.dgdesignmodeling.com/calculadora-zapatas
+> 👉 https://funnel.dgdesignmodeling.com/acceso-gratis-calculadora-zapatas-form
 >
 > Regístrate (20 segundos) y la usas de inmediato desde el celular:
 > dimensiones, verificaciones y acero de tu zapata en 2 minutos.

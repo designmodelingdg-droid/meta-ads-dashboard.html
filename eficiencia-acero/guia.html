@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Las 5 verificaciones en acero que no puedes saltarte · Design Modeling Academy</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@500;600;700;800;900&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#003e5c; --navy2:#001e30; --azul-medio:#0a5a80;
+    --orange:#ca7520; --orange-d:#e8a04a; --orange-p:#f7e8cc;
+    --crema:#fafaf7; --ink:#333; --ink2:#5a6b7b; --line:#e5e7eb; --ok:#1e9e6a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Nunito',system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.68}
+  h1,h2,h3,h4{font-family:'Overpass',sans-serif;line-height:1.22;text-wrap:balance}
+  .wrap{max-width:44rem;margin:0 auto;padding:0 20px}
+
+  .top{background:linear-gradient(135deg,var(--navy2),var(--navy));color:#fff;padding:44px 0 40px;text-align:center}
+  .top img{height:44px;margin-bottom:14px;filter:brightness(0) invert(1)}
+  .top .eyebrow{font-family:'Overpass',sans-serif;font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--orange-d)}
+  .top h1{font-size:clamp(1.7rem,4.4vw,2.5rem);font-weight:800;margin:12px 0 12px}
+  .top p{color:#c3d1dc;max-width:34rem;margin:0 auto}
+
+  .fuentes{background:var(--crema);border-bottom:1px solid var(--line);padding:16px 0;font-size:.84rem;color:var(--ink2)}
+  .fuentes b{color:var(--navy)}
+
+  main{padding:14px 0 40px}
+  .intro{font-size:1.06rem;color:var(--ink2);margin:26px 0 10px}
+  .intro b{color:var(--ink)}
+
+  .v{border-top:1px solid var(--line);padding:34px 0 8px}
+  .v .n{display:inline-block;background:var(--navy);color:#fff;font-family:'Overpass',sans-serif;font-weight:800;font-size:.75rem;letter-spacing:.05em;padding:4px 12px;border-radius:99px;margin-bottom:12px}
+  .v h2{font-size:clamp(1.3rem,3vw,1.7rem);font-weight:800;color:var(--navy);margin-bottom:14px}
+  .v h3{font-size:.82rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--orange);margin:20px 0 6px}
+  .v p{margin-bottom:11px}
+
+  table{border-collapse:collapse;width:100%;margin:14px 0;font-size:.92rem}
+  th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line)}
+  thead th{background:var(--crema);font-family:'Overpass',sans-serif;font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;color:var(--ink2)}
+  td b{color:var(--navy)}
+
+  pre{background:var(--navy2);color:#dfe8ee;border-radius:9px;padding:14px 16px;overflow-x:auto;font-family:ui-monospace,'SFMono-Regular',Menlo,monospace;font-size:.86rem;line-height:1.8;margin:12px 0}
+  code{font-family:ui-monospace,'SFMono-Regular',Menlo,monospace;font-size:.9em;background:var(--crema);padding:1px 5px;border-radius:4px}
+  pre code{background:none;padding:0}
+
+  .fuente{background:var(--crema);border-left:3px solid var(--azul-medio);padding:12px 16px;border-radius:0 8px 8px 0;font-size:.9rem;color:var(--ink2);margin:14px 0}
+  .fuente b{color:var(--navy)}
+  .regla{background:var(--orange-p);border-radius:10px;padding:15px 18px;margin:18px 0 6px;font-size:.97rem}
+  .regla b{font-family:'Overpass',sans-serif;color:#7a4a10;display:block;font-size:.76rem;letter-spacing:.09em;text-transform:uppercase;margin-bottom:5px}
+
+  .cierre{background:linear-gradient(135deg,var(--navy),var(--azul-medio));color:#fff;border-radius:14px;padding:28px;margin:40px 0 10px}
+  .cierre h2{color:#fff;font-size:1.35rem;margin-bottom:14px}
+  .cierre ul{list-style:none;display:flex;flex-direction:column;gap:9px;margin:14px 0}
+  .cierre li{color:#c9d8e3;font-size:.94rem;display:grid;grid-template-columns:26px 1fr;gap:9px}
+  .cierre li b{color:var(--orange-d);font-family:'Overpass',sans-serif}
+  .cierre .punch{font-family:'Overpass',sans-serif;font-weight:800;font-size:1.18rem;margin-top:18px}
+
+  .modulos{border:1px solid var(--line);border-radius:12px;padding:22px;margin:34px 0 0}
+  .modulos h2{font-size:1.15rem;color:var(--navy);margin-bottom:6px}
+  .modulos p.m{font-size:.9rem;color:var(--ink2);margin-bottom:12px}
+  .cta{display:inline-block;margin-top:14px;background:var(--orange);color:#fff;font-family:'Overpass',sans-serif;font-weight:800;font-size:.92rem;padding:12px 22px;border-radius:10px;text-decoration:none}
+  .cta:hover{background:var(--orange-d)}
+
+  footer{background:var(--navy2);color:#8fa2b3;padding:32px 0;font-size:.8rem;text-align:center;line-height:1.7;margin-top:40px}
+  footer a{color:var(--orange-d)}
+  .disc{max-width:48rem;margin:0 auto 12px;font-size:.77rem;color:#7f93a4}
+
+  #lock{position:fixed;inset:0;background:rgba(10,27,43,.96);z-index:50;display:flex;align-items:center;justify-content:center;padding:20px}
+  #lock[hidden]{display:none}
+  #lock .box{background:#fff;border-radius:14px;padding:26px;max-width:400px;text-align:center}
+  #lock h2{font-size:1.1rem;color:var(--navy);margin-bottom:8px}
+  #lock p{font-size:.9rem;color:var(--ink2);margin-bottom:16px}
+  #lock a{display:block;padding:13px;border-radius:10px;background:var(--orange);color:#fff;font-family:'Overpass',sans-serif;font-weight:800;text-decoration:none}
+</style>
+</head>
+<body>
+
+<div id="lock" hidden><div class="box">
+  <h2>🔒 Acceso a la guía</h2>
+  <p>Es gratis. Déjanos tus datos y entras de inmediato — sin esperar correos.</p>
+  <a id="lockBtn" href="./index.html">Registrarme y entrar</a>
+</div></div>
+
+<div class="top"><div class="wrap">
+  <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04bbc1fa8afa3be0bb00d8.png" alt="Design Modeling Academy">
+  <div class="eyebrow">Guía técnica · Design Modeling Academy</div>
+  <h1>Las 5 verificaciones en acero que no puedes saltarte</h1>
+  <p>El perfil pasa por resistencia y aun así la estructura falla, se mueve o cuesta el doble de lo que debía.</p>
+</div></div>
+
+<div class="fuentes"><div class="wrap">
+  <b>Normas citadas:</b> AISC 360-16 · NEC-SE-DS. Cada verificación indica su capítulo o tabla, para que puedas ir a comprobarlo.
+</div></div>
+
+<main><div class="wrap">
+
+  <p class="intro">Ninguna de estas cinco la resuelve el software solo. <b>El programa calcula; el criterio es tuyo.</b> Un modelo devuelve un número aunque la hipótesis de partida sea falsa — y esa es exactamente la trampa.</p>
+
+  <article class="v">
+    <span class="n">01</span>
+    <h2>Pandeo local</h2>
+    <h3>Qué es</h3>
+    <p>Antes de que la sección desarrolle su capacidad, un ala o el alma se abolla. La sección nunca llega al momento que tú le calculaste.</p>
+    <h3>Por qué se salta</h3>
+    <p>Porque la mayoría de perfiles laminados comerciales son compactos, uno se acostumbra a que «siempre cumple», y el día que aparece un armado, una sección soldada o un perfil de alma esbelta, nadie revisa.</p>
+    <h3>Qué revisar</h3>
+    <p>Clasifica <b>ala y alma por separado</b> y quédate con la peor de las dos.</p>
+    <table>
+      <thead><tr><th>Relación</th><th>Clasificación</th></tr></thead>
+      <tbody>
+        <tr><td>λ ≤ λp</td><td><b>Compacta</b> — desarrolla el momento plástico</td></tr>
+        <tr><td>λp &lt; λ ≤ λr</td><td><b>No compacta</b> — capacidad reducida</td></tr>
+        <tr><td>λ &gt; λr</td><td><b>Esbelta</b> — gobierna el pandeo local</td></tr>
+      </tbody>
+    </table>
+    <p>Para el ala de un perfil I en flexión:</p>
+    <pre><code>λp = 0.38 · √(E / Fy)
+λr = 1.00 · √(E / Fy)</code></pre>
+    <p>Con A36 (Fy = 250 MPa) y E = 200 000 MPa: <b>λp ≈ 10.7</b> y <b>λr ≈ 28.3</b>. Con A572 Gr.50 (Fy = 345 MPa): <b>λp ≈ 9.1</b> y <b>λr ≈ 24.1</b>.</p>
+    <div class="fuente"><b>Fuente:</b> AISC 360-16, Tabla <b>B4.1a</b> (elementos en compresión axial) y Tabla <b>B4.1b</b> (elementos en flexión).</div>
+    <div class="regla"><b>La regla que te llevas</b>Un perfil no es compacto porque sea laminado. Es compacto porque su λ lo dice, y λ depende del acero — el mismo perfil puede ser compacto en A36 y no compacto en A572.</div>
+  </article>
+
+  <article class="v">
+    <span class="n">02</span>
+    <h2>Pandeo lateral-torsional</h2>
+    <h3>Qué es</h3>
+    <p>La viga no falla por flexión: se tuerce y se desplaza lateralmente antes. La capacidad real depende de <b>cada cuánto está arriostrada el ala en compresión</b>, no del perfil.</p>
+    <h3>Por qué se salta</h3>
+    <p>Porque en el modelo la viga es una línea. La línea no tiene ala superior ni sabe si hay una vigueta encima cada 2 m o ninguna en los 9 m del vano.</p>
+    <h3>Qué revisar</h3>
+    <p>La longitud no arriostrada <code>Lb</code> contra los dos umbrales:</p>
+    <table>
+      <tbody>
+        <tr><td><code>Lb ≤ Lp</code></td><td>Plastificación total, no gobierna el pandeo lateral</td></tr>
+        <tr><td><code>Lp &lt; Lb ≤ Lr</code></td><td>Transición, capacidad reducida linealmente</td></tr>
+        <tr><td><code>Lb &gt; Lr</code></td><td>Pandeo elástico, y la caída es fuerte</td></tr>
+      </tbody>
+    </table>
+    <p>Y <b>Cb</b>: el factor que reconoce que un diagrama de momento no uniforme es menos exigente. Tomar <code>Cb = 1.0</code> siempre es conservador y a veces caro; usar el Cb real de tu diagrama puede devolverte un perfil menor.</p>
+    <div class="fuente"><b>Fuente:</b> AISC 360-16, <b>Capítulo F</b>, sección <b>F2</b> para perfiles I de alma compacta flectados en el eje fuerte.</div>
+    <div class="regla"><b>La regla que te llevas</b>Antes de aceptar el perfil, dibuja dónde está arriostrada el ala superior <b>en obra</b>, no en el modelo. Si el arriostre que supone tu cálculo no lo va a construir nadie, el cálculo no vale.</div>
+  </article>
+
+  <article class="v">
+    <span class="n">03</span>
+    <h2>Derivas y P-Δ</h2>
+    <h3>Qué es</h3>
+    <p>Dos cosas que se confunden. La <b>deriva</b> es cuánto se desplaza un piso respecto al de abajo. <b>P-Δ</b> es el momento adicional que aparece porque la carga gravitacional actúa sobre una estructura ya desplazada.</p>
+    <h3>Por qué se salta</h3>
+    <p>Porque el diseño se cierra con resistencia y las derivas se miran «después», cuando ya no hay margen para cambiar el sistema. Y porque muchos modelos traen el análisis de segundo orden desactivado por defecto.</p>
+    <h3>Qué revisar</h3>
+    <p>Deriva máxima inelástica ΔM, como fracción de la altura de piso:</p>
+    <table>
+      <thead><tr><th>Sistema estructural</th><th>ΔM máxima</th></tr></thead>
+      <tbody>
+        <tr><td>Hormigón armado, <b>estructuras metálicas</b> y de madera</td><td><b>0.02</b></td></tr>
+        <tr><td>Mampostería</td><td><b>0.01</b></td></tr>
+      </tbody>
+    </table>
+    <p><b>Segundo orden.</b> No es opcional: si tu análisis es de primer orden, tienes que amplificar. Y si tus derivas ya están cerca del límite, P-Δ te va a sacar del límite.</p>
+    <div class="fuente"><b>Fuente:</b> NEC-SE-DS, <i>Peligro sísmico · Diseño sismo resistente</i> — limitación de derivas de piso.</div>
+    <div class="regla"><b>La regla que te llevas</b>Una estructura de acero rara vez la gobierna la resistencia. La gobierna la rigidez. Si estás dimensionando por resistencia y mirando derivas al final, vas a rehacer el proyecto.</div>
+  </article>
+
+  <article class="v">
+    <span class="n">04</span>
+    <h2>Coherencia entre el modelo y la conexión real</h2>
+    <p style="color:var(--ink2)"><b>Esta es la del error #1</b>, y es la que más caro sale.</p>
+    <h3>Qué es</h3>
+    <p>Modelas la conexión como empotrada — porque es el <i>default</i> del programa — y en obra se construye con dos ángulos al alma. El modelo reparte un momento que la conexión real no puede tomar.</p>
+    <p>El momento se va al centro del vano, las derivas salen mayores que las calculadas, y la conexión se plastifica antes que la viga.</p>
+    <p><b>Y al revés pasa igual, y es peor:</b> modelas articulado, en obra sueldan alas completas, y el pórtico atrae más sismo del que calculaste.</p>
+    <h3>Por qué se salta</h3>
+    <p>Porque el modelo no se equivoca nunca: siempre devuelve un resultado. La incoherencia no da error, da un número plausible.</p>
+    <h3>Qué revisar</h3>
+    <p>Que la hipótesis del modelo y el detalle de la conexión sean <b>la misma cosa</b>, en las dos direcciones:</p>
+    <table>
+      <tbody>
+        <tr><td><b>¿Empotrado?</b></td><td>El detalle tiene que transmitir el momento <i>y</i> tener la rigidez para que el supuesto se sostenga.</td></tr>
+        <tr><td><b>¿Articulado?</b></td><td>El detalle no puede desarrollar momento. Soldar alas «para que quede firme» cambia la estructura.</td></tr>
+        <tr><td><b>¿Semirrígida?</b></td><td>El modelo necesita la rigidez rotacional real, y esa no es un <i>default</i>.</td></tr>
+      </tbody>
+    </table>
+    <div class="fuente"><b>Fuente:</b> AISC 360-16, <b>Capítulo B</b> — clasificación de conexiones por su comportamiento momento-rotación (totalmente restringidas, parcialmente restringidas y simples), y <b>Capítulo J</b> para el diseño del detalle.</div>
+    <div class="regla"><b>La regla que te llevas</b>La conexión no es un detalle que se resuelve al final. Es una hipótesis de tu modelo, y si nadie la comprueba contra el plano de taller, es una hipótesis que nadie verificó.</div>
+  </article>
+
+  <article class="v">
+    <span class="n">05</span>
+    <h2>Placa base y anclajes</h2>
+    <h3>Qué es</h3>
+    <p>El punto donde el acero se encuentra con el hormigón. Transmite carga axial, cortante y —si la base es empotrada— momento.</p>
+    <h3>Por qué se salta</h3>
+    <p>Porque queda entre dos especialidades. El de acero asume que la cimentación lo resuelve; el de hormigón asume que viene definido con el perfil. Y termina copiado de otro proyecto.</p>
+    <h3>Qué revisar</h3>
+    <table>
+      <tbody>
+        <tr><td><b>Coherencia con el modelo</b></td><td>Si modelaste la base empotrada, la placa y los pernos tienen que tomar ese momento. Una base «empotrada» en el modelo y rotulada en obra cambia el periodo y las derivas de todo el edificio.</td></tr>
+        <tr><td><b>Aplastamiento</b></td><td>Del hormigón bajo la placa.</td></tr>
+        <tr><td><b>Flexión de la placa</b></td><td>En los voladizos.</td></tr>
+        <tr><td><b>Anclajes</b></td><td>Tracción, cortante, e <b>interacción de las dos</b>.</td></tr>
+        <tr><td><b>Falla del hormigón</b></td><td>Arrancamiento del cono, no solo la resistencia del perno.</td></tr>
+      </tbody>
+    </table>
+    <div class="fuente"><b>Fuente:</b> AISC <b>Design Guide 1</b>, <i>Base Plate and Anchor Rod Design</i>, para el dimensionamiento; y el apéndice de anclajes al hormigón de <b>ACI 318</b> para los modos de falla del hormigón.</div>
+    <div class="regla"><b>La regla que te llevas</b>La placa base es la verificación que más veces se copia de otro proyecto, y la que más veces está mal por eso.</div>
+  </article>
+
+  <div class="cierre">
+    <h2>Lo que estas cinco tienen en común</h2>
+    <p style="color:#c9d8e3">Ninguna la detecta el software. Las cinco son la misma pregunta hecha de cinco formas: <b style="color:#fff">¿lo que supuse en el modelo es lo que se va a construir?</b></p>
+    <ul>
+      <li><b>01</b><span>El perfil compacto lo supone la tabla, no el catálogo.</span></li>
+      <li><b>02</b><span>El arriostre lateral lo supone tu cálculo, lo construye el montador.</span></li>
+      <li><b>03</b><span>La rigidez la supone el análisis, la limita la norma.</span></li>
+      <li><b>04</b><span>La conexión la supone el <i>default</i> del programa, la decide el plano de taller.</span></li>
+      <li><b>05</b><span>La base la supone el modelo, la ejecuta otro gremio.</span></li>
+    </ul>
+    <p class="punch">El programa calcula. El criterio es tuyo.</p>
+  </div>
+
+  <div class="modulos">
+    <h2>Dónde se trabaja cada una</h2>
+    <p class="m">El mapa entre esta guía y la <b>Especialización en Diseño Estructural BIM en Acero</b>, según su propio plan de estudios.</p>
+    <table>
+      <thead><tr><th>Verificación</th><th>Módulo</th></tr></thead>
+      <tbody>
+        <tr><td>01 · Pandeo local</td><td>Módulo 2 — estabilidad global y local de miembros</td></tr>
+        <tr><td>02 · Lateral-torsional</td><td>Módulo 2 — misma unidad</td></tr>
+        <tr><td>03 · Derivas y P-Δ</td><td>Módulo 1 — desplazamientos y derivas laterales</td></tr>
+        <tr><td>04 · Conexiones</td><td>Módulo 3 — cálculo y verificación de esfuerzos en uniones</td></tr>
+        <tr><td>05 · Placa base</td><td>Módulo 3 + asesoría personalizada</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:.9rem;color:var(--ink2);margin-top:12px">Y hay una unidad que es exactamente lo que ataca el verificador que acompaña a esta guía: Módulo 2, <i>optimización de perfiles y control de peso estructural</i>.</p>
+    <a class="cta" href="https://designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero" target="_blank" rel="noopener">Ver la Especialización →</a>
+  </div>
+
+</div></main>
+
+<footer><div class="wrap">
+  <p class="disc"><b>Guía educativa y de predimensionamiento.</b> No sustituye el criterio ni la responsabilidad del profesional que firma. Toda verificación debe realizarse con la norma vigente aplicable al proyecto y la revisa el ingeniero responsable. No es una certificación ni un diploma.</p>
+  <p>Design Modeling Academy · <a href="https://www.dgdesignmodeling.com" target="_blank" rel="noopener">dgdesignmodeling.com</a></p>
+</div></footer>
+
+<script>
+const REQUIERE_REGISTRO = true;
+const TOKEN_ACCESO = 'dm2026';
+const URL_LANDING  = './index.html';
+(function candado(){
+  if(!REQUIERE_REGISTRO) return;
+  const p = new URLSearchParams(location.search);
+  if(p.get('acceso') === TOKEN_ACCESO){ try{localStorage.setItem('dm_acero_acceso', TOKEN_ACCESO);}catch(e){} return; }
+  try{ if(localStorage.getItem('dm_acero_acceso') === TOKEN_ACCESO) return; }catch(e){}
+  document.getElementById('lock').hidden = false;
+  document.getElementById('lockBtn').href = URL_LANDING;
+})();
+</script>
+</body>
+</html>

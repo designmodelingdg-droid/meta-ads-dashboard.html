@@ -17,8 +17,8 @@ aparece github.io en la barra de direcciones:
 
 | Página | Ruta en GHL |
 |---|---|
-| 1 · landing de captura | `https://funnel.dgdesignmodeling.com/test-nivel-bim` |
-| 2 · gracias + agenda | `https://funnel.dgdesignmodeling.com/test-nivel-bim/gracias` |
+| 1 · landing de captura | `https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form` |
+| 2 · gracias + agenda | `https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-gracias` |
 | 3 · el test | `https://funnel.dgdesignmodeling.com/test-nivel-bim/test` (embebe la app por iframe) |
 
 **Lo que se sirve desde GitHub Pages** (solo por dentro: la app embebida y las
@@ -64,7 +64,7 @@ Se deja abajo el procedimiento por si hay que rehacerlo o crear otro igual.
    mismas opciones de la landing (estudiante, arquitecto/a, ingeniero/a,
    modelador/a, coordinador/a, BIM Manager, otro).
 3. En **Settings → On Submit → Redirect URL** pon exactamente:
-   `https://funnel.dgdesignmodeling.com/test-nivel-bim/gracias?acceso=dmbim26`
+   `https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-gracias?acceso=dmbim26`
    (la página 2 del funnel, en el dominio propio — **no** la de github.io)
 4. Copia la URL de embed (`https://api.leadconnectorhq.com/widget/form/XXXX`).
 5. Pégala en `index.html`:

@@ -116,6 +116,76 @@ def probar(base, ruta):
         return {"ok": False, "http": None, "detalle": str(e)[:160]}
 
 
+def sondar_detalle_workflow():
+    """Segunda fase: ¿la API deja leer los PASOS de un workflow, o solo la lista?
+
+    La primera fase solo probaba /workflows/ (la lista), que devuelve nombre,
+    estado y fecha — nada de pasos. Nunca se probo el detalle, asi que la
+    afirmacion «la API no deja leer los pasos» venia de la documentacion y no
+    de esta cuenta. Esto lo comprueba de verdad.
+
+    El codigo dice cual de las tres cosas pasa, y son distintas:
+      404 → la ruta no existe. No es cuestion de permisos y no hay nada que pedir.
+      403 → existe, pero este token no alcanza. Se pide el permiso y ya.
+      200 → existe y se puede leer. Entonces no hace falta ningun navegador.
+    """
+    lista = probar(V2, f"/workflows/?locationId={LOCATION}")
+    if not lista.get("ok"):
+        return {"nota": "no se pudo listar workflows; sin id no hay que probar",
+                "lista": lista}
+    # Se necesita un id real: se vuelve a pedir la lista y se toma el primero.
+    cab = {"Authorization": f"Bearer {TOKEN}", "Accept": "application/json",
+           "Version": "2021-07-28",
+           "User-Agent": ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                          "AppleWebKit/537.36 (KHTML, like Gecko) "
+                          "Chrome/126.0.0.0 Safari/537.36")}
+    r = urllib.request.Request(V2 + f"/workflows/?locationId={LOCATION}", headers=cab)
+    with urllib.request.urlopen(r, timeout=30) as resp:
+        d = json.load(resp)
+    flujos = d.get("workflows") or []
+    if not flujos:
+        return {"nota": "la lista vino vacia"}
+    wid = flujos[0].get("id")
+    muestra = {"id": wid, "claves_en_la_lista": sorted(flujos[0].keys())}
+
+    # La lista es lo unico que la API si da, y trae un dato que no se ve de
+    # otra forma: si un workflow quedo en borrador. Un workflow en draft no
+    # dispara nada y en la pantalla se ve igual de terminado que uno
+    # publicado, asi que se guarda entero para poder revisarlo desde fuera.
+    muestra["total"] = len(flujos)
+    muestra["lista"] = sorted(
+        ({"nombre": f.get("name"), "estado": f.get("status"),
+          "actualizado": (f.get("updatedAt") or "")[:10], "id": f.get("id")}
+         for f in flujos),
+        key=lambda x: x["actualizado"] or "", reverse=True)
+
+    rutas = [
+        ("detalle v2",            V2, f"/workflows/{wid}"),
+        ("detalle v2 · location", V2, f"/workflows/{wid}?locationId={LOCATION}"),
+        ("acciones v2",           V2, f"/workflows/{wid}/actions?locationId={LOCATION}"),
+        ("pasos v2",              V2, f"/workflows/{wid}/steps?locationId={LOCATION}"),
+        ("version v2",            V2, f"/workflows/{wid}/versions?locationId={LOCATION}"),
+        ("lista v1",              V1, "/workflows/"),
+        ("detalle v1",            V1, f"/workflows/{wid}"),
+    ]
+    out = {"muestra": muestra, "rutas": {}}
+    for etiqueta, base, ruta in rutas:
+        rr = probar(base, ruta)
+        out["rutas"][etiqueta] = {**rr, "ruta": ruta}
+        marca = "OK " if rr["ok"] else "NO "
+        print(f"  {marca} workflow · {etiqueta:22} {rr.get('http')} "
+              f"{rr.get('lectura') or rr.get('registros') or ''}")
+        time.sleep(0.3)
+
+    abiertas = [k for k, v in out["rutas"].items() if v.get("ok")]
+    out["veredicto"] = (
+        f"SE PUEDEN LEER LOS PASOS por: {', '.join(abiertas)}" if abiertas else
+        "Ninguna ruta de detalle responde: la API solo da la lista. "
+        "Los pasos solo se leen con navegador.")
+    print(f"\n  VEREDICTO workflows: {out['veredicto']}")
+    return out
+
+
 def main():
     if not TOKEN:
         print("ERROR: falta GHL_TOKEN en el entorno.", file=sys.stderr)
@@ -139,6 +209,9 @@ def main():
         print(f"  {marca} {etiqueta:24} {extra}")
         (abiertos if r["ok"] else cerrados).append(etiqueta)
         time.sleep(0.3)
+
+    print("\n  --- ¿la API deja leer los PASOS de un workflow? ---")
+    res["detalle_workflow"] = sondar_detalle_workflow()
 
     res["abiertos"] = abiertos
     res["cerrados"] = cerrados

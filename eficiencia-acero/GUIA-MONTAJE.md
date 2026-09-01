@@ -1,0 +1,332 @@
+# Montaje en GHL — «Las 5 verificaciones en acero»
+
+**Para la sesión de Claude Code del Mac, con browser-harness.**
+Todo lo que va aquí ya está construido y publicado. Esto es solo el montaje
+dentro de GoHighLevel, que es lo único que no se puede hacer desde el
+repositorio: su API v2 tiene tres `GET` para Funnels y Sites, y nada de
+escritura.
+
+---
+
+## Lo que ya existe
+
+Publicado en GitHub Pages en cuanto se fusione la rama:
+
+```
+https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/eficiencia-acero/
+  index.html           landing de captura
+  guia.html            la guía, 5 verificaciones con norma citada
+  app.html             el verificador de eficiencia
+  gracias-agenda.html  página de gracias con los dos accesos + calendario
+```
+
+| | |
+|---|---|
+| Palabra del bot | `ACERO` |
+| Token de acceso | `dm2026` (igual que zapatas y test — mismo esquema) |
+| Piezas de la matriz que cubre | `ago-acero-conexiones` (Mié 20) · `ago-blog-acero-verificaciones` (Sáb 23) · `ago-acero-sobredimensionado` (Mié 27) |
+
+---
+
+## Paso 1 · El formulario
+
+**No crear uno nuevo si ya existe el de lead magnets con el campo de perfil.**
+Ester lo subió a los siete formularios el 25-ago; reutilizar ese esquema.
+
+Campos: nombre, correo, WhatsApp y **¿Cuál es tu perfil actualmente?**
+(desplegable único, obligatorio, mapeado al campo personalizado del contacto
+`{{contact.cul_es_tu_perfil_actualmente}}` — ojo, la clave lleva `cul_`, no
+`cual_`; GHL se comió la tilde al generarla, y escribirla bien no da error:
+sale vacío).
+
+Al terminar, el formulario **redirige** a la página de gracias.
+
+Cuando exista, hay que pegar su URL en `index.html`:
+
+```js
+const GHL_FORM_IFRAME_URL = '';   // ← aquí va la URL del form nativo
+```
+
+Con eso el formulario nativo de GHL reemplaza al propio y el contacto entra
+al CRM directo, sin webhook y sin costo por ejecución.
+
+> `GHL_WEBHOOK_URL` se deja **vacío a propósito**. El Inbound Webhook de GHL
+> es premium y cobra por ejecución. Con el formulario nativo no hace falta.
+
+---
+
+## Paso 2 · El funnel, dos páginas
+
+**Página 1 — captura.** Elemento Custom Code, ancho completo, sin padding, con
+el contenido de `index.html`.
+
+**Página 2 — gracias.** Igual, con `gracias-agenda.html`. Ya trae el
+calendario de booking embebido (`bIVuNHNojGEgH3gf6yXe`, el mismo de zapatas) y
+los dos botones de acceso con el token.
+
+Nombrar siguiendo la convención que ya usa el equipo:
+
+```
+acceso-gratis-verificacion-acero-form
+acceso-gratis-verificacion-acero-gracias
+```
+
+> **Y avisar a Dayana del nombre exacto.** El 25-ago un renombrado sin aviso
+> dejó dos lead magnets en 404 durante días, porque esos enlaces viven
+> embebidos en la página de recursos, en los bots y en el blog. Ese es el
+> acuerdo nuevo.
+
+---
+
+## Paso 3 · La membresía — así entregan los demás
+
+**Esto es lo que hacía falta para que funcione igual que los otros.**
+Comprobado el 25-ago contra la página viva de la Calculadora de Zapatas: no
+entrega el enlace directo, entrega un **producto de membresía** en el portal.
+El acceso queda ligado al contacto en el CRM y se concede por workflow.
+
+1. **Memberships → Courses → Products → Create Product.**
+   Nombre: `5 Verificaciones en Acero · Herramienta DMA`. Plantilla en blanco.
+
+2. **Dos lecciones**, una por entregable. En cada una, widget Custom Code:
+
+   ```html
+   <!-- Lección 1 · La guía -->
+   <iframe
+     src="https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/eficiencia-acero/guia.html?acceso=dm2026"
+     style="width:100%;min-height:2400px;border:none;border-radius:12px"
+     title="Las 5 verificaciones en acero"></iframe>
+   ```
+
+   ```html
+   <!-- Lección 2 · El verificador -->
+   <iframe
+     src="https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/eficiencia-acero/app.html?acceso=dm2026"
+     style="width:100%;min-height:1700px;border:none;border-radius:12px"
+     title="Verificador de eficiencia en acero"></iframe>
+   ```
+
+   > El `?acceso=dm2026` las abre ya desbloqueadas: el candado no molesta a
+   > los miembros, porque la membresía ya hace el control de acceso.
+
+   > **Iframe y no pegar el código**: la fuente vive en GitHub Pages. Cualquier
+   > corrección se publica una vez y se refleja sola en la membresía, en el
+   > funnel y en el enlace público.
+
+3. **Offer** → Memberships → Offers → New Offer → agrega el producto →
+   precio **Free** → guardar **y publicar**.
+
+4. En el workflow del formulario, añadir **Membership Grant Offer** → esa
+   oferta. GHL crea el usuario del portal y le manda sus credenciales.
+
+5. **Publicar el PRODUCTO**, no solo la lección y la oferta, y habilitar la
+   app de Cursos en el Client Portal. Son las dos causas típicas de «el
+   portal se ve vacío».
+
+6. **La URL del producto termina en `/purchase-course`.** Comprobado el
+   25-ago contra las dos que ya funcionan:
+
+   ```
+   Zapatas → …/courses/products/7a9d1130-0681-44d8-b448-9904cb54af93/purchase-course
+   Test    → …/courses/products/3e9cf6a3-04cd-4a93-a7b8-2d5749206ebd/purchase-course
+   ```
+
+   El dominio es `designmodelingacademy.app.clientclub.net`, y la gracias de
+   Zapatas **no da ningún enlace directo**: solo ese botón. Ese es el estándar.
+
+7. Cuando exista, pegar su URL en `gracias-agenda.html`:
+
+   ```js
+   const URL_MEMBRESIA = '';   // ← aquí
+   ```
+
+   Mientras esté vacío, la página de gracias entrega el acceso directo con
+   token. Nadie se queda esperando a que el portal exista.
+
+---
+
+## Paso 4 · El workflow de la palabra — no es el bot
+
+**Dos cosas distintas, y conviene no mezclarlas:**
+
+| | Qué hace | Quién lo monta |
+|---|---|---|
+| **El workflow** | Alguien comenta la palabra en **esa publicación** → le llega por DM el texto y los recursos, automático | Aquí, en este montaje |
+| **El bot** | Cuando esa persona **responde** al DM, el bot toma la conversación | Patricio. A él se le dice qué contestar cuando pregunten por estas guías |
+
+Lo que se monta en este paso es **el workflow**. El bot no se toca.
+
+### El workflow
+
+**Disparador:** comentario con la palabra `ACERO`, **acotado a la publicación
+concreta** — la pieza `ago-blog-acero-verificaciones` (Sáb 23). No a cualquier
+post: si se deja abierto, se dispara con comentarios de piezas viejas que
+prometían otra cosa.
+
+**Qué manda por DM:** el texto de entrega más los dos enlaces —la guía y el
+verificador—, o el acceso al portal si la membresía ya está montada.
+
+### Lo que no se puede omitir, y cuesta caro
+
+**Una acción de envío por cada disparador, separadas.** Rama Instagram → DM
+por Instagram. Rama Facebook → DM por Facebook Messenger. **Nunca una sola
+acción compartida entre las dos.**
+
+Cuando el post nace en Instagram y aparece también en Facebook, quien comenta
+en la copia de Facebook tiene un ID de Facebook. Si el envío está atado solo al
+canal de Instagram, **el workflow marca el paso como ejecutado y el DM nunca
+sale**. En julio se perdieron unos 35 leads así, y nadie lo vio porque la
+respuesta pública sí salía siempre.
+
+**La respuesta pública lleva siempre el enlace directo**, nunca solo «te
+escribí al DM». Es la red de seguridad real si el canal falla.
+
+**Probar comentando de verdad en las dos superficies** antes de publicar el
+post — en Instagram y en la copia de Facebook. Es la única forma de detectar
+esa falla antes de que la paguen los leads.
+
+Etiquetas del contacto: `lead-acero-verificaciones` + `origen-bot-acero`.
+
+### Y aparte, lo de Patricio
+
+A él se le pasa el texto de qué responder cuando alguien pregunte por estas
+guías — eso vive en el bot, no en el workflow, y no bloquea este montaje.
+
+---
+
+## Paso 5 · Comunidades
+
+Las comunidades son de GHL. Vincular la guía en la pestaña Learning de cada
+grupo y publicar el anuncio con el enlace de la landing.
+
+---
+
+## Paso 6 · El hub de recursos — si no, existe y nadie lo encuentra
+
+**Falta hoy, y es de los dos minutos que se olvidan.** El recurso no está en
+`recursos/index.html`: comprobado el 25-ago contra el repositorio y contra la
+página viva, que sirve siete lead magnets y ninguno es este.
+
+No se puede hacer antes que el Paso 2, porque la tarjeta necesita una URL que
+todavía no existe — y una tarjeta que lleva a un 404 es peor que no tenerla.
+Así que va después, y el orden importa:
+
+1. **Cuando exista la página de captura**, avisar cuál quedó exactamente. Se
+   agrega la tarjeta a `recursos/index.html` con esa URL.
+2. Regenerar el HTML de GHL:
+   ```bash
+   python3 scripts/build_ghl_landing.py recursos
+   ```
+3. Pegar `recursos/ghl-recursos.html` en la página `/recursos` de Sites y
+   publicar.
+4. Confirmarlo pidiendo la página **por HTTP** —no mirando el editor— y viendo
+   que la nueva dirección aparece dentro:
+   ```bash
+   curl -s https://funnel.dgdesignmodeling.com/recursos | grep verificaciones-acero
+   ```
+
+Ese último `curl` es el paso: `scripts/enlaces.py` audita los enlaces de salida
+de la página publicada, y arreglar el repositorio no arregla lo que ve la
+gente. Esa fue exactamente la brecha del 25-ago.
+
+---
+
+## Paso 7 · La verificación que no se salta
+
+Después de montar, **no basta con que los botones se pongan verdes**. Hay que
+recorrerlo entero como lo haría un lead:
+
+1. Comentar `ACERO` en **la publicación del Sáb 23**, en Instagram **y** en la
+   copia de Facebook.
+2. Que llegue el DM en las dos, con los enlaces dentro.
+3. Abrir el enlace → llenar el formulario → llegar a la página de gracias.
+4. Abrir el verificador y la guía desde los botones: deben entrar **sin
+   candado**.
+5. Confirmar que **llegó la oferta de membresía** y que se puede entrar al
+   portal con esas credenciales.
+6. Buscar el contacto en el CRM y confirmar que **el campo de perfil quedó
+   guardado**. Que el formulario tenga la pregunta no significa que el dato
+   llegue al contacto — eso solo se sabe mirando la ficha.
+7. Pedir la página pública por HTTP y confirmar que carga.
+8. Y la página `/recursos`, también por HTTP, con la tarjeta nueva dentro.
+
+El punto 6 es el que más veces falla en silencio, y es justo el dato que
+Dayana necesita para mover la pauta.
+
+---
+
+## Lo que queda pendiente y no bloquea el montaje
+
+- **Ejemplos numéricos de placa base.** La §5 es una lista de qué verificar,
+  sin cifras — no las necesita. Si algún día se quiere un ejemplo trabajado,
+  sale de un cálculo real del equipo, nunca inventado.
+- **Rangos de kg/m² por tipología.** El verificador muestra el kg/m² como dato
+  sin juicio. No existe rango normativo: AISC y la NEC no lo traen, es dato de
+  obra. Se enciende el panel comparativo el día que haya rangos de proyectos
+  reales de DMA.
+
+---
+
+## Corrección urgente · lo que encontré en las páginas ya publicadas
+
+Comprobado el 25-ago pidiendo las páginas **por HTTP**, no mirando el editor.
+
+### 1 · El formulario manda a la página de gracias equivocada — esto sí bloquea
+
+El formulario nativo que quedó embebido en la landing es
+`jgZBVSDHAgvfjsJHVFB8`, y su configuración trae:
+
+```
+actionType : "1"   (redirigir)
+redirectUrl: https://funnel.dgdesignmodeling.com/acceso-gratis-curso-introductorio-bim-gracias
+```
+
+Quien llene el formulario de ACERO aterriza en la página de gracias del
+**Curso Introductorio BIM**, y no recibe ni la guía ni el verificador. Es
+exactamente el fallo del post de conexiones otra vez: se promete una cosa y se
+entrega otra.
+
+**Cómo se arregla, sin romper nada:** ese formulario no lo usa ninguna de las
+otras landings comprobadas —curso introductorio usa `gwylBoztaUOxroxmsgCU`,
+zapatas usa `LuYAQDq…`, test de nivel usa `5zMnMYiK1`—, pero puede estar en uso
+en algo que no se ve desde fuera. Así que **duplicarlo** para ACERO y al
+duplicado ponerle el redirect a la página de gracias de acero. Duplicar nunca
+rompe nada; cambiarle el redirect al original sí puede.
+
+Después: llenarlo de verdad una vez y confirmar dónde cae.
+
+### 2 · Las tres páginas dicen «Calculadora de Zapatas» en el título
+
+```
+<title>Calculadora de Zapatas Aisladas Gratis | Design Modeling Academy
+```
+
+En la landing de ACERO, en su página de gracias y en la de zapatas. Se
+clonaron de zapatas y el título quedó. Eso es lo que se ve en la pestaña del
+navegador y **lo que aparece cuando alguien comparte el enlace por WhatsApp**.
+Se corrige en los ajustes de cada página del funnel (SEO / Page Title), no en
+el HTML pegado.
+
+### 3 · La página de gracias se llama «calculadora-zapatas»
+
+```
+acceso-gratis-verificacion-acero-gracias
+```
+
+Sirve el contenido de acero, pero se llama zapatas. Rompe la convención del
+equipo y dentro de un mes nadie va a saber cuál es cuál.
+
+**Ojo con arreglarlo:** renombrar es justo lo que dejó dos lead magnets en 404
+el 25-ago. Se renombra a `acceso-gratis-verificacion-acero-gracias`
+**ahora**, mientras todavía no hay nadie usándolo y ningún enlace apunta ahí —
+y se avisa. Dentro de una semana ya cuesta.
+
+### Lo que sí quedó bien
+
+- Las dos páginas responden 200.
+- El formulario nativo está puesto y **trae el campo de perfil**, con la clave
+  correcta `cul_es_tu_perfil_actualmente` y sus opciones.
+- La página de gracias trae el calendario `bIVuNHNojGEgH3gf6yXe` y los accesos
+  apuntando a `eficiencia-acero/`.
+- `URL_MEMBRESIA` sigue vacío, que es lo correcto hasta que exista el producto:
+  mientras tanto entrega el acceso directo con token y nadie espera.
