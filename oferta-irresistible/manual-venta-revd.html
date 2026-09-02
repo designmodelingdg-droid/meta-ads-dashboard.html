@@ -1,0 +1,621 @@
+<title>Manual de Venta Rev D</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+:root{
+  --ink:#141C25;
+  --ink-soft:#43535F;
+  --ink-faint:#71828F;
+  --paper:#F2F5F7;
+  --surface:#FFFFFF;
+  --surface-2:#E9EEF2;
+  --line:#CBD6DE;
+  --line-soft:#DDE5EB;
+  --blue:#1B4F72;
+  --blue-soft:#E3EDF4;
+  --amber:#A6631C;
+  --amber-soft:#F7EEE1;
+  --green:#2C6349;
+  --green-soft:#E4EFE9;
+  --shadow:0 1px 2px rgba(20,28,37,.06),0 8px 24px -16px rgba(20,28,37,.28);
+  --maxw:44rem;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ink:#E8EDF1;
+    --ink-soft:#A8B7C2;
+    --ink-faint:#7C8C98;
+    --paper:#10161C;
+    --surface:#171F27;
+    --surface-2:#1F2932;
+    --line:#2E3B45;
+    --line-soft:#252F38;
+    --blue:#7FB6DC;
+    --blue-soft:#182833;
+    --amber:#D69A57;
+    --amber-soft:#2A2118;
+    --green:#7FC0A0;
+    --green-soft:#16261F;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px -16px rgba(0,0,0,.6);
+  }
+}
+:root[data-theme="dark"]{
+  --ink:#E8EDF1;
+  --ink-soft:#A8B7C2;
+  --ink-faint:#7C8C98;
+  --paper:#10161C;
+  --surface:#171F27;
+  --surface-2:#1F2932;
+  --line:#2E3B45;
+  --line-soft:#252F38;
+  --blue:#7FB6DC;
+  --blue-soft:#182833;
+  --amber:#D69A57;
+  --amber-soft:#2A2118;
+  --green:#7FC0A0;
+  --green-soft:#16261F;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px -16px rgba(0,0,0,.6);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:16px;
+  line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 1.15rem 5rem}
+
+/* ---------- title block ---------- */
+.titleblock{
+  border-bottom:2px solid var(--ink);
+  margin:0 0 2.25rem;
+  padding:2.5rem 0 1.1rem;
+}
+.tb-rule{
+  display:flex;gap:.6rem;align-items:baseline;
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink-faint);margin-bottom:1.4rem;
+}
+.tb-rule span:first-child{color:var(--blue)}
+.tb-rule i{flex:1;height:1px;background:var(--line);font-style:normal}
+h1{
+  font-family:Archivo,"IBM Plex Sans",sans-serif;
+  font-weight:700;font-size:clamp(2rem,7.5vw,3rem);line-height:1.04;
+  letter-spacing:-.028em;margin:0 0 .55rem;text-wrap:balance;
+}
+.sub{color:var(--ink-soft);font-size:1.02rem;margin:0 0 1.5rem;max-width:34rem}
+.tb-meta{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(9rem,1fr));
+  gap:.9rem 1.25rem;border-top:1px solid var(--line-soft);padding-top:1rem;
+}
+.tb-meta div{display:flex;flex-direction:column;gap:.15rem}
+.tb-meta dt,.tb-k{
+  font-family:"IBM Plex Mono",monospace;font-size:.63rem;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--ink-faint);
+}
+.tb-v{font-size:.9rem;font-weight:500}
+
+/* ---------- nav ---------- */
+nav{
+  position:sticky;top:0;z-index:20;background:var(--paper);
+  border-bottom:1px solid var(--line-soft);
+  margin:0 -1.15rem 2.5rem;padding:.55rem 1.15rem;
+}
+.navscroll{display:flex;gap:.4rem;overflow-x:auto;scrollbar-width:none}
+.navscroll::-webkit-scrollbar{display:none}
+nav a{
+  flex:0 0 auto;text-decoration:none;color:var(--ink-soft);
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;letter-spacing:.04em;
+  padding:.3rem .55rem;border:1px solid var(--line-soft);border-radius:2px;
+  white-space:nowrap;background:var(--surface);
+}
+nav a:hover,nav a:focus-visible{color:var(--blue);border-color:var(--blue)}
+
+/* ---------- sections ---------- */
+section{margin:0 0 3.25rem;scroll-margin-top:4rem}
+.snum{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--blue);display:block;margin-bottom:.4rem;
+}
+h2{
+  font-family:Archivo,sans-serif;font-weight:600;
+  font-size:clamp(1.35rem,4.6vw,1.75rem);line-height:1.16;letter-spacing:-.018em;
+  margin:0 0 1rem;text-wrap:balance;
+}
+h3{
+  font-family:Archivo,sans-serif;font-weight:600;font-size:1.05rem;
+  line-height:1.3;margin:2rem 0 .6rem;letter-spacing:-.006em;
+}
+h4{
+  font-family:"IBM Plex Mono",monospace;font-weight:500;font-size:.72rem;
+  letter-spacing:.11em;text-transform:uppercase;color:var(--ink-faint);
+  margin:1.6rem 0 .5rem;
+}
+p{margin:0 0 1rem}
+strong{font-weight:600}
+em{font-style:italic}
+ul{margin:0 0 1.1rem;padding:0;list-style:none}
+ul li{position:relative;padding-left:1.05rem;margin-bottom:.5rem}
+ul li::before{
+  content:"";position:absolute;left:0;top:.62em;width:5px;height:5px;
+  background:var(--line);border-radius:50%;
+}
+ol{margin:0 0 1.1rem;padding-left:1.35rem}
+ol li{margin-bottom:.5rem;padding-left:.2rem}
+ol li::marker{font-family:"IBM Plex Mono",monospace;font-size:.85em;color:var(--blue)}
+
+/* ---------- callouts ---------- */
+.note{
+  border-left:3px solid var(--blue);background:var(--blue-soft);
+  padding:.95rem 1.1rem;margin:1.3rem 0;border-radius:0 3px 3px 0;
+}
+.note.warn{border-left-color:var(--amber);background:var(--amber-soft)}
+.note p:last-child{margin-bottom:0}
+.note .tag{
+  display:block;font-family:"IBM Plex Mono",monospace;font-size:.62rem;
+  letter-spacing:.13em;text-transform:uppercase;color:var(--blue);margin-bottom:.35rem;
+}
+.note.warn .tag{color:var(--amber)}
+
+.script{
+  background:var(--surface);border:1px solid var(--line-soft);
+  border-left:3px solid var(--amber);border-radius:0 3px 3px 0;
+  padding:.95rem 1.1rem;margin:1rem 0;font-size:.95rem;color:var(--ink-soft);
+}
+.script p{margin-bottom:.7rem}
+.script p:last-child{margin-bottom:0}
+.script .tag{
+  display:block;font-family:"IBM Plex Mono",monospace;font-size:.62rem;
+  letter-spacing:.13em;text-transform:uppercase;color:var(--amber);margin-bottom:.5rem;
+}
+
+/* ---------- tables ---------- */
+.tscroll{overflow-x:auto;margin:1.1rem -1.15rem 1.4rem;padding:0 1.15rem;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;min-width:30rem;font-size:.88rem}
+th{
+  text-align:left;font-family:"IBM Plex Mono",monospace;font-weight:500;
+  font-size:.63rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--ink-faint);border-bottom:1px solid var(--line);
+  padding:0 .8rem .45rem 0;vertical-align:bottom;
+}
+td{
+  padding:.7rem .8rem .7rem 0;border-bottom:1px solid var(--line-soft);
+  vertical-align:top;line-height:1.5;
+}
+tr:last-child td{border-bottom:none}
+td:last-child,th:last-child{padding-right:0}
+
+/* ---------- pills ---------- */
+.pill{
+  display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:.6rem;
+  letter-spacing:.09em;text-transform:uppercase;padding:.16rem .42rem;
+  border-radius:2px;white-space:nowrap;font-weight:500;
+}
+.p-ok{background:var(--green-soft);color:var(--green)}
+.p-half{background:var(--amber-soft);color:var(--amber)}
+.p-next{background:var(--surface-2);color:var(--ink-faint)}
+
+/* ---------- decision cards ---------- */
+.dec{
+  background:var(--surface);border:1px solid var(--line-soft);border-radius:3px;
+  padding:1rem 1.1rem;margin-bottom:.85rem;box-shadow:var(--shadow);
+}
+.dec-head{display:flex;gap:.6rem;align-items:baseline;margin-bottom:.5rem}
+.dec-n{
+  font-family:"IBM Plex Mono",monospace;font-size:.72rem;color:var(--blue);
+  font-weight:500;flex:0 0 auto;font-variant-numeric:tabular-nums;
+}
+.dec-t{font-family:Archivo,sans-serif;font-weight:600;font-size:1rem;line-height:1.25}
+.dec-gap{font-size:.9rem;color:var(--ink-soft);margin:0 0 .7rem}
+.dec-rec{
+  border-top:1px dashed var(--line);padding-top:.65rem;font-size:.92rem;
+}
+.dec-rec .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:.6rem;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--green);display:block;margin-bottom:.25rem;
+}
+.dec-who{
+  font-family:"IBM Plex Mono",monospace;font-size:.63rem;color:var(--ink-faint);
+  letter-spacing:.06em;margin-top:.6rem;display:block;
+}
+
+/* ---------- week list ---------- */
+.week{list-style:none;padding:0;margin:1.2rem 0 0}
+.week li{
+  display:grid;grid-template-columns:auto 1fr;gap:.2rem .9rem;
+  padding:.75rem 0;border-top:1px solid var(--line-soft);align-items:baseline;
+}
+.week li:last-child{border-bottom:1px solid var(--line-soft)}
+.week b{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--blue);font-weight:500;
+}
+.week span{font-size:.94rem}
+@media (max-width:30rem){
+  .week li{grid-template-columns:1fr}
+}
+
+footer{
+  margin-top:3rem;padding-top:1.2rem;border-top:2px solid var(--ink);
+  font-family:"IBM Plex Mono",monospace;font-size:.65rem;letter-spacing:.08em;
+  color:var(--ink-faint);text-transform:uppercase;
+  display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;
+}
+a{color:var(--blue)}
+:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<div class="wrap">
+
+<header class="titleblock">
+  <div class="tb-rule"><span>Rev D.1</span><i></i><span>Uso interno</span></div>
+  <h1>Manual de Venta</h1>
+  <p class="sub">DG BIM Intelligence — actualizado con la demo de Andrés del 4 de septiembre. Reemplaza la Rev C.</p>
+  <div class="tb-meta">
+    <div><span class="tb-k">Producto</span><span class="tb-v">DG BIM Intelligence</span></div>
+    <div><span class="tb-k">Oferta</span><span class="tb-v">US$997 + 97/mes</span></div>
+    <div><span class="tb-k">Equipo</span><span class="tb-v">Gabriel · Franklin · Andrés · Patricio · Dayana</span></div>
+    <div><span class="tb-k">Estado</span><span class="tb-v">Lectura obligatoria antes de la primera llamada</span></div>
+  </div>
+</header>
+
+<nav aria-label="Secciones">
+  <div class="navscroll">
+    <a href="#s1">01 Cambios</a>
+    <a href="#s2">02 Fases</a>
+    <a href="#s3">03 Alcance</a>
+    <a href="#s4">04 Flujo</a>
+    <a href="#s5">05 Técnico</a>
+    <a href="#s6">06 Demo</a>
+    <a href="#s7">07 Condiciones</a>
+    <a href="#s8">08 Onboarding</a>
+    <a href="#s9">09 Objeciones</a>
+    <a href="#s10">10 Decisiones</a>
+  </div>
+</nav>
+
+<section id="s1">
+  <span class="snum">Sección 01</span>
+  <h2>Los tres cambios que reordenan todo</h2>
+
+  <h3>Ya se puede cargar el proyecto en vivo, con un botón dentro de Revit</h3>
+  <p>Andrés resolvió la dependencia del servidor de Autodesk. Antes había que subir el RVT o el IFC y esperar entre 20 minutos y una hora. Ahora hay una <strong>pestaña propia dentro de Revit con un botón de sincronizar</strong>: se aprieta y toda la data del modelo pasa a la aplicación en aproximadamente un minuto.</p>
+  <div class="note">
+    <span class="tag">Consecuencia para la venta</span>
+    <p>El diagnóstico ya no tiene que hacerse antes de la llamada. Se puede sincronizar el proyecto y mostrar hallazgos <strong>durante</strong> la reunión. Y como el botón vive dentro de Revit, deja de ser «un software nuevo que hay que aprender» y pasa a ser una función más de la herramienta que el cliente ya usa todos los días.</p>
+  </div>
+  <h4>Y trae versionado, que no teníamos previsto</h4>
+  <p>Cada sincronización sube una versión (V5, V6, V7…). El cliente modifica el modelo, vuelve a sincronizar y la aplicación queda al día con el historial de lo que cambió. Es trazabilidad real del proyecto y conviene nombrarla en la venta: le habla directo al coordinador y al gerente, que son quienes sufren perder el rastro de qué versión se revisó.</p>
+  <h4>Lo que todavía falta</h4>
+  <ul>
+    <li>Medir el consumo real con modelos de 200 y 300&nbsp;MB.</li>
+    <li>Confirmar exactamente qué está listo del rol Coordinador (sección 03).</li>
+    <li>El video de instalación para cuando el volumen no dé para hacerlo uno a uno (sección 08).</li>
+  </ul>
+
+  <h3>Estamos en la etapa 4 del roadmap, no en la 1</h3>
+  <p>Con el MCP trayendo la data y permitiendo consultas sobre el modelo, el producto está funcionalmente en la <strong>etapa 4</strong> (inteligencia conectada al modelo), con un pendiente de la etapa 2 — el panel de Coordinador.</p>
+  <p>Esto importa mucho: la landing y el material están vendiendo la etapa 1. <strong>Estamos prometiendo menos de lo que el producto ya hace.</strong></p>
+
+  <h3>El flujo de venta se invierte</h3>
+  <p>Ya no se pide el proyecto del cliente antes de la llamada para analizarlo.</p>
+  <div class="tscroll">
+  <table>
+    <thead><tr><th>Antes (Rev C)</th><th>Ahora (Rev D)</th></tr></thead>
+    <tbody>
+      <tr><td>Se pedía el archivo antes de la llamada</td><td>La llamada se hace con un proyecto que ya probamos y corre estable</td></tr>
+      <tr><td>Gabriel llegaba con 3 hallazgos preparados</td><td>Se muestra en vivo, con un modelo controlado</td></tr>
+      <tr><td>Después venía la beta, solo</td><td>Después viene una <strong>reunión técnica con Andrés</strong> donde se implementa con SU proyecto</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="note">
+    <span class="tag">La lógica del cambio</span>
+    <p>Es un riesgo controlado. Como el cliente ya pagó los 100 dólares, va a querer verlo con su proyecto — y esa segunda reunión, con Andrés resolviendo lo que haga falta, es la que convierte. Además nos protege de que alguien mande un modelo imposible y la primera impresión sea un error.</p>
+  </div>
+</section>
+
+<section id="s2">
+  <span class="snum">Sección 02</span>
+  <h2>Las dos fases: 3 clientes semilla y luego los 10 fundadores</h2>
+  <p>No salir a buscar 10 de una vez. Primero tres clientes de máxima confianza, con servicio ultra personalizado, que autofinancien la infraestructura y sirvan de escuela.</p>
+  <div class="tscroll">
+  <table>
+    <thead><tr><th></th><th>Fase 1 · Semilla</th><th>Fase 2 · Fundadores</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Cuántos</strong></td><td>3</td><td>10</td></tr>
+      <tr><td><strong>Quién los trae</strong></td><td>Gabriel, lista de confianza</td><td>Gabriel (orgánico) + Franklin (pauta)</td></tr>
+      <tr><td><strong>Cuándo</strong></td><td>Ya, esta semana</td><td>Todo septiembre</td></tr>
+      <tr><td><strong>Para qué</strong></td><td>Autofinanciar tokens e infraestructura, detectar problemas gruesos de compatibilidad e instalación</td><td>Levantar capital y construir los casos de éxito</td></tr>
+      <tr><td><strong>Servicio</strong></td><td>Andrés se sienta 1–2 horas con cada uno</td><td>Onboarding estándar, con el proceso ya aprendido</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>Si entran tres con versiones distintas de Revit, los problemas se resuelven uno por uno y en caliente. Si entran diez a la vez y algo falla, se cae todo junto.</p>
+</section>
+
+<section id="s3">
+  <span class="snum">Sección 03</span>
+  <h2>Qué se puede prometer hoy</h2>
+  <p>Todo lo que está disponible se puede mostrar y prometer; lo demás se presenta como roadmap con fecha.</p>
+  <div class="tscroll">
+  <table>
+    <thead><tr><th>Etapa</th><th>Qué incluye</th><th>Estado</th></tr></thead>
+    <tbody>
+      <tr><td><strong>1 · Inteligencia sobre el proyecto</strong></td><td>Agente BIM especializado, proyecto real cargado, consultas contextualizadas, repregunta, hallazgos con evidencia</td><td><span class="pill p-ok">Disponible</span></td></tr>
+      <tr><td><strong>2 · Inteligencia por roles</strong></td><td>Tres agentes funcionando: Modelador, Gerente y Coordinador. Dashboards de Modelador y Gerente listos; falta confirmar el de Coordinador</td><td><span class="pill p-half">Casi</span></td></tr>
+      <tr><td><strong>3 · Decision Engine</strong></td><td>Incidencia → diagnóstico → alternativas → recomendación → validación</td><td><span class="pill p-next">Próxima</span></td></tr>
+      <tr><td><strong>4 · Conectada al modelo</strong></td><td>Conexión directa con Revit, sin exportar nada</td><td><span class="pill p-ok">Funciona</span></td></tr>
+      <tr><td><strong>5 · Memoria de la empresa</strong></td><td>Estándares, procedimientos, lecciones aprendidas</td><td><span class="pill p-next">Largo plazo</span></td></tr>
+      <tr><td><strong>6 · Predictiva</strong></td><td>Detecta patrones y anticipa errores antes de cometerlos</td><td><span class="pill p-next">Visión</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="script">
+    <span class="tag">Cómo se presenta en la llamada</span>
+    <p>«Hoy entras en la etapa 1 y ya tienes la conexión directa con tu Revit, que es la etapa 4 del plan. El panel de Coordinador se habilita en [fecha]. Y a donde vamos es a que el sistema conozca cómo trabaja tu empresa y te anticipe los errores antes de cometerlos. Como fundador vas recibiendo cada etapa sin pagar más.»</p>
+  </div>
+  <p><strong>Pendiente de Gabriel:</strong> poner fechas concretas a las etapas 2 y 3. Sin fechas el roadmap es humo; con fechas es un cronograma de valor que justifica el precio.</p>
+  <div class="note warn">
+    <span class="tag">Confirmar con Andrés antes de la primera llamada</span>
+    <p>En la demo se ven <strong>tres agentes</strong> —Modelador, Gerente y Coordinador— pero solo se muestran los <strong>dashboards</strong> de Modelador y Gerente. No es lo mismo tener el agente que tener el panel: si prometemos «Coordinador» y el cliente esperaba su tablero, la primera impresión se rompe. La pregunta exacta para Andrés es: <em>¿el rol Coordinador tiene su dashboard propio hoy, o solo el agente?</em> De eso depende cómo se dice en la llamada.</p>
+  </div>
+</section>
+
+<section id="s4">
+  <span class="snum">Sección 04</span>
+  <h2>El flujo de venta, paso a paso</h2>
+  <div class="tscroll">
+  <table>
+    <thead><tr><th>#</th><th>Paso</th><th>Quién</th><th>Qué pasa</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Contacto</td><td>Gabriel / Franklin</td><td>WhatsApp directo (orgánico) o formulario + agenda (pauta)</td></tr>
+      <tr><td>2</td><td>Llamada de venta</td><td>Gabriel / Franklin</td><td>45 min. Se muestra la app en vivo con un proyecto probado y estable</td></tr>
+      <tr><td>3</td><td><strong>Reserva US$100</strong></td><td>El cliente</td><td>En la misma llamada. <strong>Máximo 24 horas</strong> para concretarla, después se libera el cupo</td></tr>
+      <tr><td>4</td><td><strong>Reunión técnica</strong></td><td>Andrés</td><td>1–2 horas. Se instala el conector, se sincroniza SU proyecto y se deja andando</td></tr>
+      <tr><td>5</td><td>Beta 7 días</td><td>El cliente</td><td>Corren desde el pago de la reserva. Acompañamiento diario</td></tr>
+      <tr><td>6</td><td>Cierre US$897</td><td>Gabriel / Franklin</td><td>Al séptimo día. Si no continúa, reembolso pedido por escrito dentro de los 7 días</td></tr>
+      <tr><td>7</td><td>Mensualidad US$97</td><td>Automático</td><td>Corre 30 días después del pago del saldo</td></tr>
+      <tr><td>8</td><td>Referido</td><td>Gabriel / Franklin</td><td>Se pide después del pago, nunca antes</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="script">
+    <span class="tag">Antes de la reunión técnica</span>
+    <p>«Para la sesión técnica tráeme un proyecto normal de trabajo — no hace falta el más grande que tengas. Con eso lo dejamos andando y ves cómo responde con tu modelo.»</p>
+  </div>
+</section>
+
+<section id="s5">
+  <span class="snum">Sección 05</span>
+  <h2>Cómo se explica la instalación</h2>
+  <p>Esto se volvió mucho más fácil de vender. No es «otro software que hay que aprender»: es <strong>una pestaña nueva dentro del Revit que el cliente ya usa</strong>, con un botón de sincronizar. Ese encuadre elimina de raíz la objeción de la curva de aprendizaje.</p>
+  <div class="script">
+    <span class="tag">La forma correcta de decirlo</span>
+    <p>«No cambia nada de cómo trabajas. Se te agrega una pestaña en tu Revit con un botón de sincronizar. Aprietas ese botón y toda la data del modelo pasa a la aplicación — sin exportar, sin convertir, sin subir archivos a ningún lado.</p>
+    <p>Y cada vez que modificas el modelo, vuelves a sincronizar y queda la versión nueva. Así siempre sabes con qué versión estás trabajando.»</p>
+  </div>
+  <h4>Lo que NO se dice</h4>
+  <ul>
+    <li>«Hay que instalar un programa» sin contexto — suena a fricción de sistemas.</li>
+    <li>«Es un MCP» o cualquier término técnico. Al cliente no le importa cómo se llama.</li>
+    <li>Nada sobre Claude, Anthropic ni proveedores. Es nuestro motor, no su problema.</li>
+  </ul>
+  <div class="note">
+    <p>En la fase 1 la instalación la hace Andrés en la reunión técnica, en vivo. El cliente no instala nada solo. Para los 10 fundadores va a hacer falta el video de instalación paso a paso (sección 08).</p>
+  </div>
+</section>
+
+<section id="s6">
+  <span class="snum">Sección 06</span>
+  <h2>La demo, ahora que se puede cargar en vivo</h2>
+  <div class="tscroll">
+  <table>
+    <thead><tr><th>Momento</th><th>Qué se hace</th><th>Qué se dice</th></tr></thead>
+    <tbody>
+      <tr><td><strong>1 · La sincronización</strong><br><span style="color:var(--ink-faint);font-size:.85em">3 min</span></td><td>Desde Revit: mostrar la pestaña, apretar sincronizar, abrir la app con la data ya adentro. Señalar el número de versión</td><td>«Fíjate que no salí de Revit. No exporté nada, no subí ningún archivo. Y quedó como versión 6 — cada vez que modifiques y sincronices, sabes exactamente con qué versión estás trabajando.»</td></tr>
+      <tr><td><strong>2 · El hallazgo</strong><br><span style="color:var(--ink-faint);font-size:.85em">4 min</span></td><td>Evidencia, impacto, recomendación y nivel de confianza</td><td>«No te dice solo que hay un problema: te dice con qué lo prueba, qué cuesta y qué haría. Si no tiene el dato, lo dice.»</td></tr>
+      <tr><td><strong>3 · La repregunta</strong><br><span style="color:var(--amber);font-size:.85em">5 min · clave</span></td><td>Una pregunta deliberadamente incompleta, y dejar que el agente repregunte</td><td>«No me respondió: me preguntó. Necesitaba contexto para darme una respuesta seria — igual que te preguntaría un consultor.»</td></tr>
+      <tr><td><strong>4 · El roadmap</strong><br><span style="color:var(--ink-faint);font-size:.85em">2 min</span></td><td>Mostrar la lámina de las 6 etapas</td><td>«Hoy estás acá, y esto es a donde vamos. Como fundador recibes cada etapa sin pagar más.»</td></tr>
+      <tr><td><strong>5 · Cierre honesto</strong><br><span style="color:var(--ink-faint);font-size:.85em">1 min</span></td><td>Volver a cámara</td><td>«Te digo lo que falta: el Coordinador se libera en [fecha]. Estamos en beta, por eso entran pocos y por eso pagas esto y no lo que va a costar.»</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <h4>Las cinco preguntas que provocan la repregunta</h4>
+  <ul>
+    <li>«¿Me conviene usar acero de 12 o de 14 en este proyecto?» — le falta luz, carga y norma.</li>
+    <li>«Quiero construir una columna de hormigón armado, ¿cómo la resuelvo?» — le falta si el diseño arquitectónico está validado.</li>
+    <li>«¿Este modelo está listo para entregar?» — le falta a quién, con qué LOD y bajo qué estándar.</li>
+    <li>«¿Cómo optimizo los costos de este proyecto?» — le falta qué partida, qué restricción y qué etapa.</li>
+    <li>«¿Qué debería revisar antes de la reunión de coordinación del viernes?» — le falta qué disciplinas y qué se entrega.</li>
+  </ul>
+  <div class="note">
+    <span class="tag">Regla que no cambia</span>
+    <p>No se demuestran funciones, se demuestra criterio. El cliente compra en el segundo en que el agente repregunta. Y si el cliente propone su propia pregunta y sale bien, se para ahí — no hay nada mejor que mostrar después.</p>
+  </div>
+</section>
+
+<section id="s7">
+  <span class="snum">Sección 07</span>
+  <h2>Las condiciones cerradas</h2>
+  <p>Hay que poder responderlas sin dudar, porque son las preguntas que aparecen justo antes de pagar.</p>
+  <div class="tscroll">
+  <table>
+    <thead><tr><th>Tema</th><th>Condición</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Permanencia</strong></td><td>No hay. Se puede cancelar cuando quiera. La retención se basa en el valor, no en una cláusula de amarre</td></tr>
+      <tr><td><strong>Precio congelado</strong></td><td>Los US$97 se mantienen <strong>solo mientras la membresía siga activa</strong>. No es de por vida. Quien se da de baja y vuelve reingresa al precio vigente: conserva el estatus, no la tarifa</td></tr>
+      <tr><td><strong>La reserva</strong></td><td>US$100, aparta el cupo y se descuenta del saldo. Máximo 24 horas para concretarla</td></tr>
+      <tr><td><strong>Reembolso</strong></td><td>Dentro de los 7 días, pidiéndolo <strong>por escrito</strong> en ese plazo. Se devuelve en hasta 5 días hábiles al mismo medio de pago</td></tr>
+      <tr><td><strong>Beta</strong></td><td>7 días corridos, contados desde el pago de la reserva</td></tr>
+      <tr><td><strong>Garantía</strong></td><td><strong>30 días.</strong> Si no entrega al menos un hallazgo accionable sobre el proyecto, se devuelve. Accionable = evidencia del proyecto + recomendación concreta</td></tr>
+      <tr><td><strong>Mora</strong></td><td>Hasta 30 días desde la fecha de corte. Tres reintentos de cobro dentro de esos 30 días</td></tr>
+      <tr><td><strong>Datos</strong></td><td>Confidenciales, con acceso controlado. El proyecto sigue siendo del cliente. Se conservan 30 días tras la baja y luego se eliminan</td></tr>
+      <tr><td><strong>Entrenamiento</strong></td><td>Los modelos del cliente no se usan para entrenar nada de terceros</td></tr>
+      <tr><td><strong>Qué NO es</strong></td><td>No implica sociedad, acciones ni participación en utilidades. La intervención en el roadmap es consultiva</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section id="s8">
+  <span class="snum">Sección 08</span>
+  <h2>El hueco que faltaba: cómo entra el cliente después de pagar</h2>
+  <h3>Fase 1 — los tres semilla (manual, y está bien que lo sea)</h3>
+  <ol>
+    <li>Paga la reserva → se agenda la reunión técnica dentro de 48 horas.</li>
+    <li>Andrés se sienta 1–2 horas: instala el conector, sincroniza su proyecto y lo deja funcionando.</li>
+    <li>No termina hasta que el cliente haya visto un hallazgo de su modelo y le haya hecho una pregunta al agente él mismo.</li>
+    <li>Se le entrega el WhatsApp de soporte.</li>
+    <li>De cada reunión se saca la transcripción para construir el procedimiento estándar.</li>
+  </ol>
+  <h3>Fase 2 — lo que hay que construir ya</h3>
+  <div class="tscroll">
+  <table>
+    <thead><tr><th>Pieza</th><th>Qué es</th><th>Quién</th></tr></thead>
+    <tbody>
+      <tr><td>Correo de bienvenida</td><td>Se dispara con el pago: credenciales, link de descarga y link al video</td><td>Dayana + Patricio</td></tr>
+      <tr><td><strong>Video de instalación</strong></td><td>3–5 min: instalar, abrir Revit, sincronizar. Evita el 80% del soporte</td><td>Andrés graba, Patricio edita</td></tr>
+      <tr><td>Soporte dentro de la app</td><td><span class="pill p-ok">Ya está</span> Apartado de soporte permanente construido</td><td>Hecho</td></tr>
+      <tr><td>Buzón de sugerencias con votación</td><td><span class="pill p-ok">Ya está</span> «Mejoras del app»: proponen y votan features</td><td>Hecho</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="note warn">
+    <span class="tag">Lo más urgente de esta lista</span>
+    <p>El video de instalación. Sin él, cada venta nueva consume una o dos horas de Andrés — que es justo el recurso que no se puede multiplicar. Con él, la reunión técnica pasa a ser opcional en vez de obligatoria.</p>
+  </div>
+  <h3>El buzón de sugerencias también es argumento de venta</h3>
+  <p>No es solo una función: es la prueba de que el Comité de Innovación existe de verdad. Vale mostrarlo en la demo, treinta segundos, justo cuando se explica el beneficio de fundador.</p>
+  <div class="script">
+    <span class="tag">Cómo se dice</span>
+    <p>«Y esto no es un discurso: acá adentro propones la mejora que quieras y el resto vota. Las que más votos juntan son las que construimos primero. Como fundador, tu voz pesa desde el primer día — literalmente.»</p>
+  </div>
+</section>
+
+<section id="s9">
+  <span class="snum">Sección 09</span>
+  <h2>Objeciones</h2>
+  <div class="tscroll">
+  <table>
+    <thead><tr><th>Objeción</th><th>Respuesta</th></tr></thead>
+    <tbody>
+      <tr><td><strong>«¿Tengo que instalar algo?»</strong></td><td>«Sí, un conector chiquito, y lo instalamos nosotros contigo en la sesión técnica. Después es abrir Revit, darle a sincronizar y listo — como conectar WhatsApp Web. Es justamente lo que hace que no tengas que exportar nada.»</td></tr>
+      <tr><td><strong>«¿Y si tengo otra versión de Revit?»</strong></td><td>«Lo vemos en la sesión técnica. Si hay que ajustar algo para tu versión, se ajusta — de hecho es una de las razones por las que entramos con pocas empresas primero: para dejar eso resuelto contigo, uno a uno.»</td></tr>
+      <tr><td><strong>«Revit ya tiene IA»</strong></td><td>«La IA que traen hoy los programas sirve para modelar un elemento o exportar una tabla. No existe todavía una que te dé contexto, que trabaje con estándares, con roles y con decisiones. Y si ellos están metiendo IA es porque el camino es este.»</td></tr>
+      <tr><td><strong>«Está en beta»</strong></td><td>«Sí, y por eso entran pocas empresas, por eso la implementación la hacemos contigo, y por eso pagas la mitad de lo que va a costar. No te vendo un producto terminado: te vendo entrar antes, con el precio congelado y con voz en lo que se construye.»</td></tr>
+      <tr><td><strong>«¿Y si la IA se equivoca?»</strong></td><td>«No vendemos algo infalible. Vendemos una guía que muestra evidencia, con la misma estructura analítica con la que razona un ingeniero. Cada hallazgo trae evidencia, impacto y nivel de confianza, y si no tiene el dato lo dice. Tú validas, igual que validarías a un consultor.»</td></tr>
+      <tr><td><strong>«¿Va a decidir por nosotros?»</strong></td><td>«Nunca. No va a decir "quitemos las paredes del primer piso". Te da contexto, diagnóstico y recomendación, y acompaña la decisión. Decidir y validar sigue siendo del equipo.»</td></tr>
+      <tr><td><strong>«¿Dónde quedan mis modelos?»</strong></td><td>«En almacenamiento privado con acceso controlado, y tu proyecto sigue siendo tuyo. No se usa para entrenar nada de terceros, y puedes pedir que se borre cuando quieras.»</td></tr>
+      <tr><td><strong>«Está caro»</strong></td><td>«Ponlo al lado de lo que ya gastas: un gerente BIM son unos 6.000 al mes, y se va cuando le ofrecen más. Y no te pido el total hoy: son 100 reembolsables y siete días con tu proyecto andando.»</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section id="s10">
+  <span class="snum">Sección 10</span>
+  <h2>Hoja de decisiones</h2>
+  <p>Cada punto abierto viene con una propuesta concreta para aprobar o rechazar, en vez de volver a abrir la discusión.</p>
+
+  <div class="dec">
+    <div class="dec-head"><span class="dec-n">01</span><span class="dec-t">Los 3 semilla vs los 10 cupos</span></div>
+    <p class="dec-gap">Definir si los clientes semilla ocupan cupos de fundador. La landing dice «7 disponibles de 10».</p>
+    <div class="dec-rec"><span class="tag">Recomendación</span><strong>Que cuenten.</strong> Son los Founder #001, #002 y #003. Es más simple, más honesto y les da estatus. Después quedan 7 cupos reales.</div>
+    <span class="dec-who">Decide: equipo</span>
+  </div>
+
+  <div class="dec">
+    <div class="dec-head"><span class="dec-n">02</span><span class="dec-t">Qué pasa al año</span></div>
+    <p class="dec-gap">Gabriel planteó un posible costo anual de mantenimiento al cumplir 12 meses.</p>
+    <div class="dec-rec"><span class="tag">Recomendación</span><strong>No cobrar cuota anual extra.</strong> La membresía sigue igual, mes a mes, al precio congelado. Es la decisión más delicada de la lista — ver el detalle abajo.</div>
+    <span class="dec-who">Decide: equipo</span>
+  </div>
+
+  <div class="dec">
+    <div class="dec-head"><span class="dec-n">03</span><span class="dec-t">Qué está listo del rol Coordinador</span></div>
+    <p class="dec-gap">En la demo hay agente de Coordinador, pero los dashboards que se muestran son los de Modelador y Gerente.</p>
+    <div class="dec-rec"><span class="tag">Recomendación</span>Preguntarle a Andrés antes de la primera llamada si el Coordinador tiene dashboard propio. <strong>Mientras no esté confirmado, se vende como «agente de Coordinador disponible, panel en camino»</strong> — es preferible quedarse corto que romper la primera impresión.</div>
+    <span class="dec-who">Decide: Andrés</span>
+  </div>
+
+  <div class="dec">
+    <div class="dec-head"><span class="dec-n">04</span><span class="dec-t">Fechas del roadmap</span></div>
+    <p class="dec-gap">Poner fecha a las etapas 2 y 3.</p>
+    <div class="dec-rec"><span class="tag">Recomendación</span>Comprometer <strong>un mes más tarde</strong> de lo que estime Andrés. Propuesta: Coordinador en octubre, Decision Engine entre noviembre y diciembre. Es mejor adelantarse que disculparse.</div>
+    <span class="dec-who">Decide: Gabriel + Andrés</span>
+  </div>
+
+  <div class="dec">
+    <div class="dec-head"><span class="dec-n">05</span><span class="dec-t">Costo de tokens</span></div>
+    <p class="dec-gap">Sigue sin número, y con el MCP el consumo cambió respecto de lo estimado.</p>
+    <div class="dec-rec"><span class="tag">Recomendación</span>Medirlo con los 3 semilla durante 30 días reales. <strong>Si supera los US$25 por usuario al mes, revisar los 97 antes de vender los 10 fundadores</strong>, no después. Y definir un tope de uso justo por plan.</div>
+    <span class="dec-who">Decide: Andrés</span>
+  </div>
+
+  <div class="dec">
+    <div class="dec-head"><span class="dec-n">06</span><span class="dec-t">Saldo de tokens de la operación</span></div>
+    <p class="dec-gap">El equipo se quedó sin saldo un día de esta semana.</p>
+    <div class="dec-rec"><span class="tag">Recomendación</span><strong>No agendar demos sin saldo confirmado.</strong> Revisarlo cada lunes y tratarlo como costo fijo, no como gasto puntual. Las tres reservas de 100 cubren varios meses.</div>
+    <span class="dec-who">Decide: equipo</span>
+  </div>
+
+  <div class="dec">
+    <div class="dec-head"><span class="dec-n">07</span><span class="dec-t">La landing quedó corta</span></div>
+    <p class="dec-gap">Dice «Conexión con Revit» en desarrollo, cuando ya funciona.</p>
+    <div class="dec-rec"><span class="tag">Recomendación</span>Mover la conexión a «disponible» y que <strong>el GIF sea justo ese momento</strong>: Revit abierto → sincronizar → la data adentro. Es el mejor argumento visual que tenemos.</div>
+    <span class="dec-who">Decide: Patricio + Andrés</span>
+  </div>
+
+  <div class="dec">
+    <div class="dec-head"><span class="dec-n">08</span><span class="dec-t">Exclusión en OpenRouter</span></div>
+    <p class="dec-gap">Activar la exclusión de proveedores que entrenan con prompts.</p>
+    <div class="dec-rec"><span class="tag">Recomendación</span><strong>Antes del primer cliente.</strong> La promesa de confidencialidad ya está publicada en la landing y en el legal: hoy es un riesgo de incumplimiento, no un pendiente técnico.</div>
+    <span class="dec-who">Decide: Andrés</span>
+  </div>
+
+  <div class="dec">
+    <div class="dec-head"><span class="dec-n">09</span><span class="dec-t">Subdominio y logo</span></div>
+    <p class="dec-gap">Salir del vercel.app y cerrar el logo definitivo.</p>
+    <div class="dec-rec"><span class="tag">Recomendación</span>Subdominio antes de la primera venta — un dominio de pruebas en una venta de 997 resta justo al momento de pagar. El logo, en cambio, <strong>que no bloquee</strong>: sacar los mockups con lo que hay y refinarlo después.</div>
+    <span class="dec-who">Decide: Patricio</span>
+  </div>
+
+  <h3>Por qué no conviene cobrar una cuota anual al fundador</h3>
+  <p>La idea es entendible: si en un año la plataforma vale mucho más, cobrarle 97 al mes a los fundadores parece poco. Pero cambiarles las condiciones al cumplir el año cuesta más de lo que se recaudaría.</p>
+  <ul>
+    <li><strong>Contradice lo que ya está escrito.</strong> La landing y el acuerdo legal dicen que el precio se mantiene mientras la membresía siga activa. Un cargo anual nuevo es exactamente la letra chica que rompe esa promesa.</li>
+    <li><strong>Son los diez clientes que más hablan.</strong> Su valor real está en los casos de éxito, los testimonios y los referidos. Un fundador molesto cuesta mucho más que 97 al mes.</li>
+    <li><strong>El precio congelado es parte de lo que se les vendió.</strong> Es la razón por la que entran hoy y no en octubre. Quitárselo después vacía el argumento de escasez para siempre.</li>
+  </ul>
+  <p>La forma correcta de capturar más valor al año es <strong>hacia arriba, no hacia el lado</strong>: ofrecerles la licencia de empresa multiusuario, asientos adicionales para su equipo, o la implementación con los estándares de su compañía. Compran más porque quieren, no porque se les cambiaron las reglas.</p>
+
+  <h3>Por qué el costo de tokens hay que cerrarlo antes de los 10</h3>
+  <p>Todo el modelo económico —los 97 al mes, el margen, cuántos clientes se pueden atender— depende de un número que todavía no existe. Con tres clientes, si el costo resulta más alto de lo esperado, se ajusta el precio y no pasa nada. Con diez fundadores ya vendidos a precio congelado, ese error queda fijo para siempre.</p>
+  <div class="note warn">
+    <span class="tag">La secuencia correcta</span>
+    <p>Vender los 3 → medir 30 días → confirmar o ajustar el precio → recién ahí abrir los 10 fundadores. Es lo que ya decidimos con las dos fases; solo hay que respetar el orden y no adelantar la segunda.</p>
+  </div>
+
+  <h3>Lo inmediato de esta semana</h3>
+  <ul class="week">
+    <li><b>Gabriel · Franklin · Andrés</b><span>Sentarse a probar la app con dos modelos distintos. Franklin no puede vender lo que no ha usado.</span></li>
+    <li><b>Andrés</b><span>El ejecutable de sincronización, medir tiempos con 50/100/300 MB y activar la exclusión en OpenRouter.</span></li>
+    <li><b>Gabriel</b><span>La lista corta de los 3 clientes semilla y las fechas del roadmap.</span></li>
+    <li><b>Dayana</b><span>El correo de bienvenida y el guion del video de instalación.</span></li>
+    <li><b>Patricio</b><span>Landing al alcance real, GIF de la sincronización y subdominio.</span></li>
+  </ul>
+</section>
+
+<footer>
+  <span>DG BIM Intelligence · Rev D</span>
+  <span>Design Modeling Academy</span>
+</footer>
+
+</div>
