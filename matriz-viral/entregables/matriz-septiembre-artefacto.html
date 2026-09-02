@@ -82,6 +82,34 @@ b.amb{color:var(--amber-deep)}
 .pegar{background:var(--surface-2);border-left:3px solid var(--amber);padding:11px 13px;
   border-radius:0 5px 5px 0;font-size:14.5px;white-space:pre-wrap}
 .prompt{margin-top:10px}
+/* ── anuncios ── */
+.ad{background:var(--surface);border:1px solid var(--line);border-radius:10px;
+  padding:16px 18px;margin:14px 0}
+.ad-cab{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;
+  border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:12px}
+.ad-cab h3{font-family:var(--display);font-weight:800;font-size:19px;margin:0;flex:1 1 auto}
+.precio-ad{font-family:var(--mono);font-size:13px;color:var(--amber-deep);font-weight:700}
+.hook{font-family:var(--display);font-weight:800;font-size:17px;line-height:1.35;
+  margin:0 0 12px;color:var(--ink)}
+.etq{font-family:var(--display);font-weight:800;font-size:10.5px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);display:block;margin:14px 0 5px}
+.campos{display:flex;gap:12px;flex-wrap:wrap;margin-top:4px}
+.campos>div{flex:1 1 200px}
+.campos .etq{margin-top:0}
+.campos code{display:block;background:var(--surface-2);border:1px solid var(--line);
+  border-radius:5px;padding:7px 10px;font-family:var(--mono);font-size:13px}
+.creativo{margin:0;font-size:14.5px;color:var(--ink-2)}
+table.cfg th{width:150px;text-align:left;vertical-align:top;font-family:var(--display);
+  font-weight:800;font-size:12.5px;color:var(--ink-2);white-space:normal}
+table.cfg td{font-size:14px}
+table.cfg tr.dura th{color:var(--stop)}
+table.cfg tr.dura td{background:var(--stop-bg)}
+.indic{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--amber);
+  border-radius:0 10px 10px 0;padding:14px 18px;margin:16px 0}
+.indic h3{font-family:var(--display);font-weight:800;font-size:15px;margin:0 0 8px;
+  text-transform:uppercase;letter-spacing:.06em;color:var(--amber-deep)}
+.indic p{margin:0 0 9px;font-size:14.5px}
+.indic p:last-child{margin-bottom:0}
 .prompt-txt{background:var(--wait-bg);border-left:3px solid var(--amber-deep);padding:10px 13px;
   border-radius:0 5px 5px 0;font-size:13px;font-family:var(--mono);line-height:1.55}
 .nota{border-left:3px solid var(--line-strong);padding:2px 0 2px 12px;margin:10px 0;
@@ -1041,74 +1069,167 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 <tr><td class="t">0:30-0:38</td><td>A cámara, cierre.</td><td>Estudias a tu ritmo, pero ya no estudias solo. Comenta ACERO y te mando el temario.</td><td>COMENTA <b class="amb">ACERO</b></td></tr>
 </tbody></table></div></div></section>
 <section id="tab-pauta" hidden><h2>Publicidad — sale todo junto el lunes 7</h2>
-<p class="intro">NO es calendario: el paquete se sube junto el LUNES 7 DE SEPTIEMBRE. CAMBIO DE COMUNICACION (reunion DM-Marketing SEP del 1-sep): el Master se vende POR MODULOS para bajar la barrera de entrada. Cada modulo tiene su propio anuncio con su precio y su formulario; el anuncio ya no vende «un master de 12 meses». El setter califica con el BIM Level Test y el closer hace el upsell a la ruta completa. Los 4 anuncios de modulo son NUEVOS y requieren creativos nuevos; los de diagnostico y ACERO se mantienen. Todo a formulario o WhatsApp, nunca a landing.</p>
-<h3 class="camp">MASTER BIM MANAGEMENT + IA — VENTA POR MODULOS (nueva arquitectura)</h3>
-<div class="pieza"><div class="pieza-cab"><span class="tipo">Post plano + Carrusel (3 tarjetas) — CREATIVO NUEVO</span><h3>MODULO · BIM PROFESSIONAL — $750 / 3 meses</h3></div>
-<div class="pegar">HOOK: Sabes usar Revit. Pero, ¿sabes implementar BIM en un proyecto de verdad?
-
-CUERPO: «Uso Revit, pero cada proyecto lo armo distinto.» Estructura e implementa BIM con metodologia: estandares, BEP, flujos de trabajo. 3 meses, 100% asincronico, y al terminar sales con la microcredencial de MODELADOR BIM, avalada por Silicon Valley Futures Institute.
-
-PRECIO EN EL ANUNCIO: $750 — es el gancho, se muestra.
-
-CTA: «Llena el formulario y te decimos si este es tu modulo» → FORMULARIO NATIVO de Meta.
-
-CREATIVO: tarjeta con el nombre del modulo grande, el verbo de la puerta y el precio en ambar #E8A04A sobre azul #0E2438. Carrusel de 3: T1 el dolor, T2 lo que sales sabiendo, T3 precio + duracion + CTA.
-
-NOTA: quien llena el formulario entra a la secuencia del BIM Level Test. No se le vende el modulo de golpe: primero se le confirma su nivel.
-
-EL SELLO DE LA MICROCREDENCIAL «MODELADOR BIM» VA EN LA IMAGEN. Fecha dura: lunes 7-sep.</div>
+<p class="intro">NO es calendario: los seis anuncios suben JUNTOS el lunes 7 de septiembre. El Máster se vende POR MÓDULOS: cada módulo tiene su anuncio, su precio y su formulario, y el anuncio ya no vende «un máster de 12 meses». El copy de abajo está aprobado y va tal cual — se pega, no se reescribe. El setter califica con el BIM Level Test y el closer hace el upsell a la ruta completa. Todo a formulario o WhatsApp, nunca a landing.</p>
+<div class="indic"><h3>Antes de subir nada</h3>
+<p><b>Fecha.</b> Los seis suben JUNTOS el lunes 7 de septiembre. No es un calendario: es un paquete. Si un creativo no está listo, sube el resto — no se retrasa el paquete entero.</p>
+<p><b>El sello es bloqueante.</b> Los cuatro anuncios de módulo llevan el sello de su microcredencial EN LA IMAGEN. El sello tiene que existir como PNG con fondo transparente antes del lunes 7 — está en la lista de Ester. Un anuncio de módulo sin sello vende un curso; con sello vende un título, y esa es toda la diferencia de esta campaña.</p>
+<p><b>El precio del módulo es el gancho.</b> Va en el copy y va en la imagen. Es el cambio del 1-sep: antes escondíamos el precio y por eso el anuncio no filtraba a nadie.</p>
+<p><b>Todo lead cae en el test.</b> Quien llena el formulario entra a la secuencia del BIM Level Test. No se le vende el módulo de golpe: primero se le confirma el nivel, y ese resultado es lo que usa el closer para vender el módulo que le toca — y para el upsell a la ruta.</p>
+<p><b>Facebook no se apaga.</b> Más de la mitad del alcance real de la cuenta viene de Facebook. Ir solo a Instagram es tirar la mitad del presupuesto.</p>
+<p><b>Qué se mira el lunes 14.</b> CPL por módulo y, sobre todo, cuántos de esos leads llenaron el test. Un módulo con CPL bajo y test sin llenar no está funcionando: está juntando correos.</p>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="tipo">Post plano + Carrusel (3 tarjetas) — CREATIVO NUEVO</span><h3>MODULO · BIM COORDINATION — $750 / 3 meses</h3></div>
-<div class="pegar">HOOK: Si descubres los choques en obra, ya pagaste el error dos veces.
+<h3 class="camp">MÁSTER BIM MANAGEMENT + IA — VENTA POR MÓDULOS · copy aprobado 1-sep</h3>
+<div class="ad"><div class="ad-cab"><span class="tipo">Post plano 4:5 + carrusel de 3 — CREATIVO NUEVO</span><h3>Módulo 1 · BIM Professional</h3><span class="precio-ad">$750 · 3 meses</span></div>
+<p class="hook">Sabes usar Revit. Pero, ¿sabes implementar BIM en un proyecto de verdad?</p>
+<p class="etq">Texto principal — se pega tal cual</p>
+<div class="pegar">Modelar y ordenar un proyecto no son lo mismo. En 3 meses estructuras e implementas BIM con metodología: estándares, BEP y flujos de trabajo que no se te caen a mitad del proyecto.
 
-CUERPO: «Los choques aparecen en obra, no en el modelo.» Coordina disciplinas, detecta interferencias y controla la calidad de los entregables. 3 meses, 100% asincronico, y al terminar sales con la microcredencial de COORDINADOR BIM, avalada por Silicon Valley Futures Institute.
+100% asincrónico. Al terminar sales con la microcredencial de MODELADOR BIM, avalada por Silicon Valley Futures Institute. $750.
 
-PRECIO EN EL ANUNCIO: $750 — es el gancho, se muestra.
+Llena el formulario y te decimos si este es tu módulo.</div>
+<div class="campos"><div><span class="etq">Titular</span><code>BIM Professional · $750 · 3 meses</code></div><div><span class="etq">Descripción</span><code>Microcredencial incluida</code></div></div>
+<p class="etq">Creativo</p><p class="creativo">Tarjeta azul #0E2438 con «BIM PROFESSIONAL» grande, el verbo ESTRUCTURA debajo y el precio en ámbar #E8A04A. El sello de la microcredencial «MODELADOR BIM» va en la imagen, abajo a la derecha. Carrusel de 3: el dolor, lo que sale sabiendo, precio + microcredencial + CTA.</p>
+<details class="prompt"><summary>Prompt de imagen para ChatGPT</summary><div class="pegar">Imagen 1080x1350 px (4:5). Fondo azul marino profundo #0E2438 con una retícula arquitectónica muy tenue de planta de edificio, apenas visible, en la mitad inferior. Espacio limpio arriba para el titular. Un plano de Revit en vista isométrica, dibujado en línea fina ámbar #E8A04A sobre el azul, ocupando la esquina inferior izquierda como si fuera un blueprint. Iluminación sobria, sin brillos ni degradados vistosos. Deja libre la esquina inferior derecha para colocar el sello de la microcredencial. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos en ambar #E8A04A, tipografia sans-serif de palo seco muy gruesa, composicion limpia y con aire, nada de stock corporativo ni gente sonriendo a camara. Sin texto mal escrito: el texto final se monta en Canva, la IA solo entrega el fondo y los elementos.</div></details>
+<p class="etq">Ficha de montaje</p><div class="tabla-scroll"><table class="cfg"><tbody>
+<tr class=""><th>Objetivo</th><td>Clientes potenciales (leads) — NO trafico, NO interacciones.</td></tr>
+<tr class=""><th>Conversion</th><td>Formulario instantaneo de Meta. Nunca a landing: en agosto el formulario dio $0.48-$1.40 de CPL y la landing $164.</td></tr>
+<tr class=""><th>Formulario</th><td>«Módulo 1 — BIM Professional» — nombre, correo, WhatsApp y una sola pregunta: «¿En que etapa BIM estas hoy?» con las 4 opciones. Ese dato es el que usa el setter para confirmar el nivel con el BIM Level Test.</td></tr>
+<tr class=""><th>Boton</th><td>Mas informacion.</td></tr>
+<tr class=""><th>Ubicaciones</th><td>Advantage+ ubicaciones activado. Feed y Explorar de Instagram y Facebook, Reels e Historias. Facebook NO se apaga: mas de la mitad del alcance real de la cuenta viene de ahi.</td></tr>
+<tr class=""><th>Medidas</th><td>Post plano 1080x1350 px (4:5) · tarjetas del carrusel 1080x1080 px (1:1) · version historias/reels 1080x1920 px. Los margenes de seguridad: nada importante en los 250 px de arriba ni en los 320 de abajo de la version 9:16.</td></tr>
+<tr class=""><th>Publico</th><td>El mismo publico que ya viene rindiendo en la cuenta. No se estrena publico nuevo el mismo dia que se estrena creativo nuevo: si cae el rendimiento no se sabria cual de los dos fallo.</td></tr>
+<tr class=""><th>Presupuesto</th><td>Reparto igual entre los 4 modulos los primeros 7 dias — es una prueba, no una apuesta. El lunes 14 se mira el CPL de cada uno y se mueve el presupuesto al que mejor va, dejando un piso al resto para no matarlos antes de que salgan del aprendizaje.</td></tr>
+<tr class=""><th>Referencia de CPL</th><td>$0.48 - $1.40 por lead (lo real de agosto con formulario). Por encima de $2 sostenido, se revisa el creativo antes que el publico.</td></tr>
+<tr class=""><th>Nombre de campana</th><td>SEP26 | MASTER-MODULOS | &lt;modulo&gt; | FORM — asi el reporte del viernes se puede auditar sin adivinar que es cada cosa.</td></tr>
+<tr class="dura"><th>Lo que NO va</th><td>El precio de la ruta completa. La palabra «master de 12 meses». Cualquier cifra de cupos que no se haya confirmado ese dia.</td></tr>
+</tbody></table></div></div>
+<div class="ad"><div class="ad-cab"><span class="tipo">Post plano 4:5 + carrusel de 3 — CREATIVO NUEVO</span><h3>Módulo 2 · BIM Coordination</h3><span class="precio-ad">$750 · 3 meses</span></div>
+<p class="hook">Si descubres los choques en obra, ya pagaste el error dos veces.</p>
+<p class="etq">Texto principal — se pega tal cual</p>
+<div class="pegar">Una interferencia detectada en el modelo cuesta una tarde. La misma interferencia detectada en obra cuesta miles.
 
-CTA: «Llena el formulario y te decimos si este es tu modulo» → FORMULARIO NATIVO de Meta.
+En 3 meses coordinas disciplinas, detectas interferencias antes de que existan y controlas la calidad de los entregables.
 
-CREATIVO: tarjeta con el nombre del modulo grande, el verbo de la puerta y el precio en ambar #E8A04A sobre azul #0E2438. Carrusel de 3: T1 el dolor, T2 lo que sales sabiendo, T3 precio + duracion + CTA.
+100% asincrónico. Al terminar sales con la microcredencial de COORDINADOR BIM, avalada por Silicon Valley Futures Institute. $750.
 
-NOTA: quien llena el formulario entra a la secuencia del BIM Level Test. No se le vende el modulo de golpe: primero se le confirma su nivel.
+Llena el formulario y te decimos si este es tu módulo.</div>
+<div class="campos"><div><span class="etq">Titular</span><code>BIM Coordination · $750 · 3 meses</code></div><div><span class="etq">Descripción</span><code>Microcredencial incluida</code></div></div>
+<p class="etq">Creativo</p><p class="creativo">Split: modelo con el choque marcado / foto de obra con el mismo choque. Verbo COORDINA y el sello «COORDINADOR BIM» en la imagen.</p>
+<details class="prompt"><summary>Prompt de imagen para ChatGPT</summary><div class="pegar">Imagen 1080x1350 px (4:5) dividida verticalmente por la mitad con una línea fina ámbar #E8A04A. Mitad izquierda: vista de un modelo BIM 3D de instalaciones — ductos de climatización cruzando una viga estructural — en tonos azul marino #0E2438 y gris frío, con el punto del cruce marcado por un círculo ámbar. Mitad derecha: fotografía real de obra gruesa, el mismo ducto chocando contra la misma viga, luz de obra, hormigón visto, sin personas. Mismo encuadre y misma altura de cámara en las dos mitades para que se lea que es el mismo choque. Deja aire abajo para el sello. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos en ambar #E8A04A, tipografia sans-serif de palo seco muy gruesa, composicion limpia y con aire, nada de stock corporativo ni gente sonriendo a camara. Sin texto mal escrito: el texto final se monta en Canva, la IA solo entrega el fondo y los elementos.</div></details>
+<p class="etq">Ficha de montaje</p><div class="tabla-scroll"><table class="cfg"><tbody>
+<tr class=""><th>Objetivo</th><td>Clientes potenciales (leads) — NO trafico, NO interacciones.</td></tr>
+<tr class=""><th>Conversion</th><td>Formulario instantaneo de Meta. Nunca a landing: en agosto el formulario dio $0.48-$1.40 de CPL y la landing $164.</td></tr>
+<tr class=""><th>Formulario</th><td>«Módulo 2 — BIM Coordination» — nombre, correo, WhatsApp y una sola pregunta: «¿En que etapa BIM estas hoy?» con las 4 opciones. Ese dato es el que usa el setter para confirmar el nivel con el BIM Level Test.</td></tr>
+<tr class=""><th>Boton</th><td>Mas informacion.</td></tr>
+<tr class=""><th>Ubicaciones</th><td>Advantage+ ubicaciones activado. Feed y Explorar de Instagram y Facebook, Reels e Historias. Facebook NO se apaga: mas de la mitad del alcance real de la cuenta viene de ahi.</td></tr>
+<tr class=""><th>Medidas</th><td>Post plano 1080x1350 px (4:5) · tarjetas del carrusel 1080x1080 px (1:1) · version historias/reels 1080x1920 px. Los margenes de seguridad: nada importante en los 250 px de arriba ni en los 320 de abajo de la version 9:16.</td></tr>
+<tr class=""><th>Publico</th><td>El mismo publico que ya viene rindiendo en la cuenta. No se estrena publico nuevo el mismo dia que se estrena creativo nuevo: si cae el rendimiento no se sabria cual de los dos fallo.</td></tr>
+<tr class=""><th>Presupuesto</th><td>Reparto igual entre los 4 modulos los primeros 7 dias — es una prueba, no una apuesta. El lunes 14 se mira el CPL de cada uno y se mueve el presupuesto al que mejor va, dejando un piso al resto para no matarlos antes de que salgan del aprendizaje.</td></tr>
+<tr class=""><th>Referencia de CPL</th><td>$0.48 - $1.40 por lead (lo real de agosto con formulario). Por encima de $2 sostenido, se revisa el creativo antes que el publico.</td></tr>
+<tr class=""><th>Nombre de campana</th><td>SEP26 | MASTER-MODULOS | &lt;modulo&gt; | FORM — asi el reporte del viernes se puede auditar sin adivinar que es cada cosa.</td></tr>
+<tr class="dura"><th>Lo que NO va</th><td>El precio de la ruta completa. La palabra «master de 12 meses». Cualquier cifra de cupos que no se haya confirmado ese dia.</td></tr>
+</tbody></table></div></div>
+<div class="ad"><div class="ad-cab"><span class="tipo">Post plano 4:5 + carrusel de 3 — CREATIVO NUEVO</span><h3>Módulo 3 · BIM Management</h3><span class="precio-ad">$600 · 2 meses</span></div>
+<p class="hook">El salto de modelador a BIM Manager no es de software. Es de criterio.</p>
+<p class="etq">Texto principal — se pega tal cual</p>
+<div class="pegar">Puedes modelar impecable y seguir esperando a que alguien te diga qué modelar.
 
-EL SELLO DE LA MICROCREDENCIAL «COORDINADOR BIM» VA EN LA IMAGEN. Fecha dura: lunes 7-sep.</div>
-</div>
-<div class="pieza"><div class="pieza-cab"><span class="tipo">Post plano + Carrusel (3 tarjetas) — CREATIVO NUEVO</span><h3>MODULO · BIM MANAGEMENT — $600 / 2 meses</h3></div>
-<div class="pegar">HOOK: El salto de modelador a BIM Manager no es de software. Es de criterio.
+En 2 meses planificas en 4D, controlas costos en 5D y lideras equipos BIM: dejas de ejecutar y empiezas a decidir.
 
-CUERPO: «Modelo bien, pero no decido nada del proyecto.» Planifica en 4D, controla costos en 5D y lidera equipos BIM. 2 meses, 100% asincronico, y al terminar sales con la microcredencial de BIM MANAGER 4D-5D, avalada por Silicon Valley Futures Institute.
+100% asincrónico. Al terminar sales con la microcredencial de BIM MANAGER 4D-5D, avalada por Silicon Valley Futures Institute. $600 — es el módulo de entrada más corto.
 
-PRECIO EN EL ANUNCIO: $600 — es el gancho, se muestra.
+Llena el formulario y te decimos si este es tu módulo.</div>
+<div class="campos"><div><span class="etq">Titular</span><code>BIM Management · $600 · 2 meses</code></div><div><span class="etq">Descripción</span><code>El módulo más corto</code></div></div>
+<p class="etq">Creativo</p><p class="creativo">Escalera de 4 peldaños con el salto 1→2 resaltado en ámbar. Verbo GESTIONA y el sello «BIM MANAGER 4D-5D» en la imagen.</p>
+<details class="prompt"><summary>Prompt de imagen para ChatGPT</summary><div class="pegar">Imagen 1080x1350 px (4:5). Fondo azul marino #0E2438. Una escalera de cuatro peldaños vista de perfil, construida con líneas finas y limpias como un diagrama técnico, ocupando la mitad inferior. Los peldaños 1 y 3 y 4 en gris azulado apagado; el salto del peldaño 1 al 2 resaltado en ámbar #E8A04A, con el peldaño 2 iluminado. Nada de figuras humanas subiendo. Mucho aire arriba para el titular y esquina inferior derecha libre para el sello. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos en ambar #E8A04A, tipografia sans-serif de palo seco muy gruesa, composicion limpia y con aire, nada de stock corporativo ni gente sonriendo a camara. Sin texto mal escrito: el texto final se monta en Canva, la IA solo entrega el fondo y los elementos.</div></details>
+<p class="etq">Ficha de montaje</p><div class="tabla-scroll"><table class="cfg"><tbody>
+<tr class=""><th>Objetivo</th><td>Clientes potenciales (leads) — NO trafico, NO interacciones.</td></tr>
+<tr class=""><th>Conversion</th><td>Formulario instantaneo de Meta. Nunca a landing: en agosto el formulario dio $0.48-$1.40 de CPL y la landing $164.</td></tr>
+<tr class=""><th>Formulario</th><td>«Módulo 3 — BIM Management» — nombre, correo, WhatsApp y una sola pregunta: «¿En que etapa BIM estas hoy?» con las 4 opciones. Ese dato es el que usa el setter para confirmar el nivel con el BIM Level Test.</td></tr>
+<tr class=""><th>Boton</th><td>Mas informacion.</td></tr>
+<tr class=""><th>Ubicaciones</th><td>Advantage+ ubicaciones activado. Feed y Explorar de Instagram y Facebook, Reels e Historias. Facebook NO se apaga: mas de la mitad del alcance real de la cuenta viene de ahi.</td></tr>
+<tr class=""><th>Medidas</th><td>Post plano 1080x1350 px (4:5) · tarjetas del carrusel 1080x1080 px (1:1) · version historias/reels 1080x1920 px. Los margenes de seguridad: nada importante en los 250 px de arriba ni en los 320 de abajo de la version 9:16.</td></tr>
+<tr class=""><th>Publico</th><td>El mismo publico que ya viene rindiendo en la cuenta. No se estrena publico nuevo el mismo dia que se estrena creativo nuevo: si cae el rendimiento no se sabria cual de los dos fallo.</td></tr>
+<tr class=""><th>Presupuesto</th><td>Reparto igual entre los 4 modulos los primeros 7 dias — es una prueba, no una apuesta. El lunes 14 se mira el CPL de cada uno y se mueve el presupuesto al que mejor va, dejando un piso al resto para no matarlos antes de que salgan del aprendizaje.</td></tr>
+<tr class=""><th>Referencia de CPL</th><td>$0.48 - $1.40 por lead (lo real de agosto con formulario). Por encima de $2 sostenido, se revisa el creativo antes que el publico.</td></tr>
+<tr class=""><th>Nombre de campana</th><td>SEP26 | MASTER-MODULOS | &lt;modulo&gt; | FORM — asi el reporte del viernes se puede auditar sin adivinar que es cada cosa.</td></tr>
+<tr class="dura"><th>Lo que NO va</th><td>El precio de la ruta completa. La palabra «master de 12 meses». Cualquier cifra de cupos que no se haya confirmado ese dia.</td></tr>
+</tbody></table></div></div>
+<div class="ad"><div class="ad-cab"><span class="tipo">Post plano 4:5 + carrusel de 3 + reel — CREATIVO NUEVO / reutiliza el comercial</span><h3>Módulo 4 · BIM + IA</h3><span class="precio-ad">$900 · 3 meses</span></div>
+<p class="hook">La IA ya hace parte de tu trabajo BIM. La ventaja no es usarla: es usarla con criterio.</p>
+<p class="etq">Texto principal — se pega tal cual</p>
+<div class="pegar">Si repites tareas que una máquina haría igual, no te falta tiempo: te falta automatización.
 
-CTA: «Llena el formulario y te decimos si este es tu modulo» → FORMULARIO NATIVO de Meta.
+En 3 meses automatizas con Dynamo y Python, y aplicas IA en proyectos reales — con el criterio para saber cuándo la respuesta de la máquina sirve y cuándo no.
 
-CREATIVO: tarjeta con el nombre del modulo grande, el verbo de la puerta y el precio en ambar #E8A04A sobre azul #0E2438. Carrusel de 3: T1 el dolor, T2 lo que sales sabiendo, T3 precio + duracion + CTA.
+100% asincrónico. Al terminar sales con la microcredencial de ESPECIALISTA BIM + IA, avalada por Silicon Valley Futures Institute. $900.
 
-NOTA: quien llena el formulario entra a la secuencia del BIM Level Test. No se le vende el modulo de golpe: primero se le confirma su nivel.
+Llena el formulario y te decimos si este es tu módulo.</div>
+<div class="campos"><div><span class="etq">Titular</span><code>BIM + IA · $900 · 3 meses</code></div><div><span class="etq">Descripción</span><code>Dynamo, Python e IA</code></div></div>
+<p class="etq">Creativo</p><p class="creativo">El comercial Revit + IA ya producido, o tarjeta con el verbo AUTOMATIZA y el sello «ESPECIALISTA BIM + IA».</p>
+<details class="prompt"><summary>Prompt de imagen para ChatGPT</summary><div class="pegar">Imagen 1080x1350 px (4:5). Fondo azul marino #0E2438. Una interfaz de Revit muy estilizada y desenfocada al fondo, apenas insinuada; delante, un grafo de nodos tipo Dynamo dibujado en línea fina ámbar #E8A04A — cajas conectadas por cables curvos — que se ordena de izquierda a derecha, del caos al orden. Sin logos de software reales, sin texto legible en la interfaz. Aire arriba para el titular y esquina inferior derecha libre para el sello. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos en ambar #E8A04A, tipografia sans-serif de palo seco muy gruesa, composicion limpia y con aire, nada de stock corporativo ni gente sonriendo a camara. Sin texto mal escrito: el texto final se monta en Canva, la IA solo entrega el fondo y los elementos.</div></details>
+<p class="etq">Ficha de montaje</p><div class="tabla-scroll"><table class="cfg"><tbody>
+<tr class=""><th>Objetivo</th><td>Clientes potenciales (leads) — NO trafico, NO interacciones.</td></tr>
+<tr class=""><th>Conversion</th><td>Formulario instantaneo de Meta. Nunca a landing: en agosto el formulario dio $0.48-$1.40 de CPL y la landing $164.</td></tr>
+<tr class=""><th>Formulario</th><td>«Módulo 4 — BIM + IA» — nombre, correo, WhatsApp y una sola pregunta: «¿En que etapa BIM estas hoy?» con las 4 opciones. Ese dato es el que usa el setter para confirmar el nivel con el BIM Level Test.</td></tr>
+<tr class=""><th>Boton</th><td>Mas informacion.</td></tr>
+<tr class=""><th>Ubicaciones</th><td>Advantage+ ubicaciones activado. Feed y Explorar de Instagram y Facebook, Reels e Historias. Facebook NO se apaga: mas de la mitad del alcance real de la cuenta viene de ahi.</td></tr>
+<tr class=""><th>Medidas</th><td>Post plano 1080x1350 px (4:5) · tarjetas del carrusel 1080x1080 px (1:1) · version historias/reels 1080x1920 px. Los margenes de seguridad: nada importante en los 250 px de arriba ni en los 320 de abajo de la version 9:16.</td></tr>
+<tr class=""><th>Publico</th><td>El mismo publico que ya viene rindiendo en la cuenta. No se estrena publico nuevo el mismo dia que se estrena creativo nuevo: si cae el rendimiento no se sabria cual de los dos fallo.</td></tr>
+<tr class=""><th>Presupuesto</th><td>Reparto igual entre los 4 modulos los primeros 7 dias — es una prueba, no una apuesta. El lunes 14 se mira el CPL de cada uno y se mueve el presupuesto al que mejor va, dejando un piso al resto para no matarlos antes de que salgan del aprendizaje.</td></tr>
+<tr class=""><th>Referencia de CPL</th><td>$0.48 - $1.40 por lead (lo real de agosto con formulario). Por encima de $2 sostenido, se revisa el creativo antes que el publico.</td></tr>
+<tr class=""><th>Nombre de campana</th><td>SEP26 | MASTER-MODULOS | &lt;modulo&gt; | FORM — asi el reporte del viernes se puede auditar sin adivinar que es cada cosa.</td></tr>
+<tr class="dura"><th>Lo que NO va</th><td>El precio de la ruta completa. La palabra «master de 12 meses». Cualquier cifra de cupos que no se haya confirmado ese dia.</td></tr>
+<tr class=""><th>Video</th><td>Este es el único módulo que ya tiene video: el comercial Revit + IA producido en agosto. Se sube como creativo adicional dentro del mismo conjunto, no como campaña aparte, para que compita contra la imagen y el dato diga cuál gana.</td></tr>
+</tbody></table></div></div>
+<div class="ad"><div class="ad-cab"><span class="tipo">Post plano 4:5 — creativo existente, copy actualizado</span><h3>Anuncio de diagnóstico</h3><span class="precio-ad">Se mantiene · a WhatsApp</span></div>
+<p class="hook">¿Cuál dirías tú?</p>
+<p class="etq">Texto principal — se pega tal cual</p>
+<div class="pegar">¿Cuál dirías tú?
 
-EL SELLO DE LA MICROCREDENCIAL «BIM MANAGER 4D-5D» VA EN LA IMAGEN. Fecha dura: lunes 7-sep.</div>
-</div>
-<div class="pieza"><div class="pieza-cab"><span class="tipo">Post plano + Carrusel (3 tarjetas) — CREATIVO NUEVO</span><h3>MODULO · BIM + IA — $900 / 3 meses</h3></div>
-<div class="pegar">HOOK: La IA ya hace parte de tu trabajo BIM. La ventaja no es usarla: es usarla con criterio.
+Tu respuesta dice exactamente qué módulo te toca estudiar ahora. Hay un test de 5 minutos que lo confirma sin adornos.
 
-CUERPO: «Repito tareas que una maquina haria igual.» Automatiza con Dynamo y Python, y aplica IA en proyectos reales. 3 meses, 100% asincronico, y al terminar sales con la microcredencial de ESPECIALISTA BIM + IA, avalada por Silicon Valley Futures Institute.
+Escríbenos y te decimos en qué etapa estás — sin compromiso.</div>
+<div class="campos"><div><span class="etq">Titular</span><code>¿En qué etapa BIM estás?</code></div><div><span class="etq">Descripción</span><code>Test de 5 minutos</code></div></div>
+<p class="etq">Creativo</p><p class="creativo">Cuatro frases en pantalla: «Necesito implementar BIM» · «Quiero coordinar disciplinas» · «Quiero costos y liderazgo» · «Quiero IA y automatización».</p>
+<details class="prompt"><summary>Prompt de imagen para ChatGPT</summary><div class="pegar">Imagen 1080x1350 px (4:5). Fondo azul marino #0E2438 dividido en cuatro bandas horizontales del mismo alto, separadas por líneas finísimas ámbar #E8A04A. Cada banda con una textura distinta y muy sutil de fondo: retícula de planta, malla de coordinación, diagrama de Gantt, grafo de nodos — todas apenas visibles, en un tono más claro del mismo azul. Las bandas van vacías: el texto de las cuatro frases se monta encima en Canva. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos en ambar #E8A04A, tipografia sans-serif de palo seco muy gruesa, composicion limpia y con aire, nada de stock corporativo ni gente sonriendo a camara. Sin texto mal escrito: el texto final se monta en Canva, la IA solo entrega el fondo y los elementos.</div></details>
+<p class="etq">Ficha de montaje</p><div class="tabla-scroll"><table class="cfg"><tbody>
+<tr class=""><th>Objetivo</th><td>Mensajes — este es el único que va a WhatsApp, no a formulario.</td></tr>
+<tr class=""><th>Conversion</th><td>WhatsApp. Es el anuncio de conversación: no pide datos, pide que hablen.</td></tr>
+<tr class=""><th>Boton</th><td>Enviar mensaje.</td></tr>
+<tr class=""><th>Mensaje de apertura</th><td>Prellenar el chat con «Quiero saber en qué etapa BIM estoy» para que el setter sepa de qué anuncio viene sin preguntarlo.</td></tr>
+<tr class=""><th>Ubicaciones</th><td>Advantage+ ubicaciones activado. Instagram y Facebook.</td></tr>
+<tr class=""><th>Medidas</th><td>1080x1350 px (4:5) y versión 1080x1920 px para historias.</td></tr>
+<tr class=""><th>Presupuesto</th><td>Es el anuncio que ya venía corriendo: se mantiene su presupuesto y NO se toca esta semana. Sirve de línea base para comparar los 4 nuevos.</td></tr>
+<tr class=""><th>Nombre de campana</th><td>SEP26 | DIAGNOSTICO | WA</td></tr>
+<tr class="dura"><th>Lo que NO va</th><td>Ningún precio. Este anuncio no vende, clasifica.</td></tr>
+</tbody></table></div></div>
+<div class="ad"><div class="ad-cab"><span class="tipo">Carrusel ads de 5 tarjetas — CREATIVO NUEVO</span><h3>Carrusel de la ruta completa</h3><span class="precio-ad">5 tarjetas · a formulario</span></div>
+<p class="hook">¿En qué etapa BIM estás?</p>
+<p class="etq">Texto principal — se pega tal cual</p>
+<div class="pegar">Cuatro puertas de entrada, cada una con su microcredencial avalada por Silicon Valley Futures Institute.
 
-PRECIO EN EL ANUNCIO: $900 — es el gancho, se muestra.
+BIM Professional · $750 · 3 meses
+BIM Coordination · $750 · 3 meses
+BIM Management · $600 · 2 meses
+BIM + IA · $900 · 3 meses
 
-CTA: «Llena el formulario y te decimos si este es tu modulo» → FORMULARIO NATIVO de Meta.
+Los cuatro por separado suman $3.000. La ruta completa cuesta menos y además te certifica como BIM Manager + IA.
 
-CREATIVO: tarjeta con el nombre del modulo grande, el verbo de la puerta y el precio en ambar #E8A04A sobre azul #0E2438. Carrusel de 3: T1 el dolor, T2 lo que sales sabiendo, T3 precio + duracion + CTA.
-
-NOTA: quien llena el formulario entra a la secuencia del BIM Level Test. No se le vende el modulo de golpe: primero se le confirma su nivel.
-
-EL SELLO DE LA MICROCREDENCIAL «ESPECIALISTA BIM + IA» VA EN LA IMAGEN. Fecha dura: lunes 7-sep.</div>
-</div>
-<div class="pieza"><div class="pieza-cab"><span class="tipo">Post plano — diagnostico (se mantiene)</span><h3>¿En que etapa BIM estas?</h3></div>
-<div class="pegar">Cuatro frases en pantalla: «Necesito implementar BIM» · «Quiero coordinar disciplinas» · «Quiero costos y liderazgo» · «Quiero IA y automatizacion». Texto: ¿Cual dirias tu? Tu respuesta dice exactamente que modulo te toca. Haz el test de 5 minutos y te lo decimos. Boton → WhatsApp o formulario.</div>
-</div>
-<div class="pieza"><div class="pieza-cab"><span class="tipo">Carrusel ads (5 tarjetas) — la ruta completa</span><h3>Las 4 puertas + el ahorro de la ruta</h3></div>
-<div class="pegar">T1: ¿En que etapa BIM estas? T2-T5: una puerta por tarjeta con su precio ($750/$750/$600/$900). Cierre: los cuatro por separado suman $3.000; la ruta completa cuesta menos y ademas certifica como BIM Manager + IA. SIN el precio de la ruta en el creativo: eso lo dice el closer. CTA → formulario.</div>
-</div>
+Llena el formulario y te decimos por cuál puerta entrar.</div>
+<div class="campos"><div><span class="etq">Titular</span><code>Las 4 puertas del Máster BIM</code></div><div><span class="etq">Descripción</span><code>Entra por la que te toca</code></div></div>
+<p class="etq">Creativo</p><p class="creativo">T1: ¿En qué etapa BIM estás? · T2-T5: una puerta por tarjeta con su precio ($750 / $750 / $600 / $900) · Cierre: los cuatro por separado suman $3.000. La ruta completa cuesta menos y además te certifica como BIM Manager + IA.</p>
+<details class="prompt"><summary>Prompt de imagen para ChatGPT</summary><div class="pegar">Cinco imágenes de 1080x1080 px (1:1), misma familia visual, para carrusel. Fondo azul marino #0E2438 en las cinco. Tarjeta 1: cuatro puertas arquitectónicas dibujadas en línea fina ámbar #E8A04A, alineadas y vistas de frente, una de ellas entreabierta con luz cálida saliendo. Tarjetas 2 a 5: una sola puerta por tarjeta, cada vez más abierta, con un elemento técnico distinto asomando por el vano — plano de planta, modelo de coordinación, diagrama 4D-5D, grafo de nodos. Composición idéntica y misma escala en las cinco para que el carrusel se lea como una secuencia. Mucho aire libre: el texto y los precios se montan en Canva. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos en ambar #E8A04A, tipografia sans-serif de palo seco muy gruesa, composicion limpia y con aire, nada de stock corporativo ni gente sonriendo a camara. Sin texto mal escrito: el texto final se monta en Canva, la IA solo entrega el fondo y los elementos.</div></details>
+<p class="etq">Ficha de montaje</p><div class="tabla-scroll"><table class="cfg"><tbody>
+<tr class=""><th>Objetivo</th><td>Clientes potenciales (leads) — formulario.</td></tr>
+<tr class=""><th>Conversion</th><td>Formulario instantáneo de Meta, el mismo de los módulos pero con su propio identificador para saber que el lead entró por la ruta y no por un módulo.</td></tr>
+<tr class=""><th>Boton</th><td>Más información.</td></tr>
+<tr class=""><th>Ubicaciones</th><td>Feed de Instagram y Facebook. El carrusel de 5 no funciona en Reels ni en Historias: ahí se desactiva.</td></tr>
+<tr class=""><th>Medidas</th><td>1080x1080 px (1:1) las cinco tarjetas. Mismo encuadre en todas.</td></tr>
+<tr class=""><th>Presupuesto</th><td>El menor de los seis. Este anuncio es para quien ya entendió la oferta; el volumen lo traen los de módulo.</td></tr>
+<tr class=""><th>Nombre de campana</th><td>SEP26 | MASTER-RUTA | CARRUSEL | FORM</td></tr>
+<tr class="dura"><th>REGLA DURA</th><td>El precio de la ruta NO va en el creativo ni en el copy. Se enuncia el ahorro, la cifra la dice el closer en la llamada. Si un creativo llega con el precio de la ruta puesto, no se sube.</td></tr>
+</tbody></table></div></div>
 <div class="pieza"><div class="pieza-cab"><span class="tipo">Reel ads — ya producidos + 4 por producir</span><h3>Videos de pauta del Master</h3></div>
 <div class="pegar">YA PRODUCIDOS: el comercial Revit+IA (master 16:9 y vertical 9:16, en Vimeo) y el comercial con Gabriel de protagonista (29 s, 2-sep). AJUSTE DE COMUNICACION: el copy que los acompaña cambia; ya no dice «master de 12 meses» sino «empieza por el modulo que te toca, desde $600». POR PRODUCIR: 4 reels de 15 s, uno por modulo, con Gabriel explicando en una frase que resuelve ese modulo y cerrando en el formulario.</div>
 </div>

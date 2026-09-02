@@ -508,7 +508,26 @@ if(Array.isArray(CAL.grupos) && CAL.grupos.length){
       push(H2('▸ '+c.nombre));
       c.piezas.forEach(pz=>{
         push(H3(pz.formato+' · '+pz.titulo));
-        push(...block(pz.copy));
+        /* Dos formas de pieza conviven: los anuncios nuevos del Máster traen el
+           copy aprobado separado de la ficha de montaje — lo de arriba se pega
+           tal cual en Meta, lo de abajo se configura — y las piezas antiguas
+           siguen siendo un solo bloque de texto. */
+        if(pz.cuerpo){
+          if(pz.precio) push(P(pz.precio,{run:{bold:true,color:ORANGE}}));
+          push(P(pz.hook,{run:{bold:true,size:24}}));
+          push(P('TEXTO PRINCIPAL — se pega tal cual',{run:{bold:true,size:16,color:GREY}}));
+          push(...block(pz.cuerpo));
+          push(P('Titular: '+pz.titular+'   ·   Descripción: '+pz.descripcion,
+                 {run:{size:18,color:GREY}}));
+          push(P('CREATIVO',{run:{bold:true,size:16,color:GREY}}));
+          push(P(pz.creativo));
+          push(P('PROMPT DE IMAGEN',{run:{bold:true,size:16,color:GREY}}));
+          push(...block(pz.prompt,LIGHT));
+          push(P('FICHA DE MONTAJE',{run:{bold:true,size:16,color:GREY}}));
+          push(tbl(['Campo','Cómo va'],pz.cfg.map(([k,v])=>[k,v]),[2400,6600]));
+        } else {
+          push(...block(pz.copy));
+        }
         if(pz.condicion) push(P('⚠ '+pz.condicion,{run:{color:RED,bold:true}}));
       });
     });

@@ -280,13 +280,49 @@ def tab_reels():
 
 
 # ════════════════════ PESTAÑA: PUBLICIDAD ════════════════════
+def ficha_anuncio(p):
+    """Un anuncio con su copy listo para pegar y su ficha de montaje.
+
+    El copy y la ficha se separan a proposito: lo de arriba se copia tal cual
+    en Meta, lo de abajo se configura. Mezclarlos en un solo bloque fue lo que
+    hizo que en agosto se pegaran instrucciones dentro del texto del anuncio.
+    """
+    o = [f'<div class="ad"><div class="ad-cab"><span class="tipo">{e(p["formato"])}</span>'
+         f'<h3>{e(p["titulo"])}</h3><span class="precio-ad">{e(p["precio"])}</span></div>']
+    o.append(f'<p class="hook">{e(p["hook"])}</p>')
+    o.append('<p class="etq">Texto principal — se pega tal cual</p>')
+    o.append(bloque_pegar(p["cuerpo"]))
+    o.append('<div class="campos">'
+             f'<div><span class="etq">Titular</span><code>{e(p["titular"])}</code></div>'
+             f'<div><span class="etq">Descripción</span><code>{e(p["descripcion"])}</code></div>'
+             '</div>')
+    o.append(f'<p class="etq">Creativo</p><p class="creativo">{e(p["creativo"])}</p>')
+    o.append('<details class="prompt"><summary>Prompt de imagen para ChatGPT</summary>'
+             f'{bloque_pegar(p["prompt"])}</details>')
+    o.append('<p class="etq">Ficha de montaje</p><div class="tabla-scroll"><table class="cfg">'
+             '<tbody>')
+    for k, v in p["cfg"]:
+        dura = "dura" if k.isupper() or "NO va" in k or "bloque" in k.lower() else ""
+        o.append(f'<tr class="{dura}"><th>{e(k)}</th><td>{e(v)}</td></tr>')
+    o.append('</tbody></table></div></div>')
+    return "\n".join(o)
+
+
 def tab_pauta():
     pub = CAL["publicidad"]
     o = ['<h2>Publicidad — sale todo junto el lunes 7</h2>',
          f'<p class="intro">{e(pub["nota"])}</p>']
+    if pub.get("indicaciones"):
+        o.append('<div class="indic"><h3>Antes de subir nada</h3>')
+        for k, v in pub["indicaciones"]:
+            o.append(f'<p><b>{e(k)}.</b> {e(v)}</p>')
+        o.append('</div>')
     for c in pub["campanas"]:
         o.append(f'<h3 class="camp">{e(c["nombre"])}</h3>')
         for p in c["piezas"]:
+            if "cuerpo" in p:
+                o.append(ficha_anuncio(p))
+                continue
             o.append(f'<div class="pieza"><div class="pieza-cab"><span class="tipo">{e(p["formato"])}</span>'
                      f'<h3>{e(p["titulo"])}</h3></div>')
             o.append(bloque_pegar(p["copy"]))
@@ -388,6 +424,34 @@ b.amb{color:var(--amber-deep)}
 .pegar{background:var(--surface-2);border-left:3px solid var(--amber);padding:11px 13px;
   border-radius:0 5px 5px 0;font-size:14.5px;white-space:pre-wrap}
 .prompt{margin-top:10px}
+/* ── anuncios ── */
+.ad{background:var(--surface);border:1px solid var(--line);border-radius:10px;
+  padding:16px 18px;margin:14px 0}
+.ad-cab{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;
+  border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:12px}
+.ad-cab h3{font-family:var(--display);font-weight:800;font-size:19px;margin:0;flex:1 1 auto}
+.precio-ad{font-family:var(--mono);font-size:13px;color:var(--amber-deep);font-weight:700}
+.hook{font-family:var(--display);font-weight:800;font-size:17px;line-height:1.35;
+  margin:0 0 12px;color:var(--ink)}
+.etq{font-family:var(--display);font-weight:800;font-size:10.5px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);display:block;margin:14px 0 5px}
+.campos{display:flex;gap:12px;flex-wrap:wrap;margin-top:4px}
+.campos>div{flex:1 1 200px}
+.campos .etq{margin-top:0}
+.campos code{display:block;background:var(--surface-2);border:1px solid var(--line);
+  border-radius:5px;padding:7px 10px;font-family:var(--mono);font-size:13px}
+.creativo{margin:0;font-size:14.5px;color:var(--ink-2)}
+table.cfg th{width:150px;text-align:left;vertical-align:top;font-family:var(--display);
+  font-weight:800;font-size:12.5px;color:var(--ink-2);white-space:normal}
+table.cfg td{font-size:14px}
+table.cfg tr.dura th{color:var(--stop)}
+table.cfg tr.dura td{background:var(--stop-bg)}
+.indic{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--amber);
+  border-radius:0 10px 10px 0;padding:14px 18px;margin:16px 0}
+.indic h3{font-family:var(--display);font-weight:800;font-size:15px;margin:0 0 8px;
+  text-transform:uppercase;letter-spacing:.06em;color:var(--amber-deep)}
+.indic p{margin:0 0 9px;font-size:14.5px}
+.indic p:last-child{margin-bottom:0}
 .prompt-txt{background:var(--wait-bg);border-left:3px solid var(--amber-deep);padding:10px 13px;
   border-radius:0 5px 5px 0;font-size:13px;font-family:var(--mono);line-height:1.55}
 .nota{border-left:3px solid var(--line-strong);padding:2px 0 2px 12px;margin:10px 0;
