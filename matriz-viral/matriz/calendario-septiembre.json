@@ -465,11 +465,311 @@
                 "El precio de la ruta NO va en el creativo ni en el copy. Se enuncia el ahorro, la cifra la dice el closer en la llamada. Si un creativo llega con el precio de la ruta puesto, no se sube."
               ]
             ]
+          }
+        ]
+      },
+      {
+        "nombre": "VIDEOS DE PAUTA — 4 reels de 15 s, uno por módulo · POR GRABAR",
+        "piezas": [
+          {
+            "id": "reel-ad-mod1",
+            "titulo": "Reel de pauta · Módulo 1 · BIM Professional",
+            "precio": "$750 · 3 meses · 15 s",
+            "formato": "Reel ads 9:16 — POR GRABAR",
+            "hook": "Sabes usar Revit. Otra cosa es implementar BIM en un proyecto de verdad.",
+            "cuerpo": "Modelar y ordenar un proyecto no son lo mismo.\n\nEn 3 meses estructuras e implementas BIM con metodología: estándares, BEP y flujos de trabajo que no se te caen a mitad del proyecto.\n\n100% asincrónico. Microcredencial de MODELADOR BIM avalada por Silicon Valley Futures Institute. $750.\n\nLlena el formulario y te decimos si este es tu módulo.",
+            "titular": "BIM Professional · $750 · 3 meses",
+            "descripcion": "Microcredencial incluida",
+            "creativo": "Gabriel a cámara en una frase, corte a pantalla con un BEP real, y cierre con el sello MODELADOR BIM sobre la placa azul.",
+            "prompt": "No lleva prompt de imagen: es video grabado. La placa final se monta en edición sobre fondo #0E2438 con el logo y el sello de la microcredencial.",
+            "guion": [
+              [
+                "0:00-0:04",
+                "Primer plano de Gabriel, mirada directa. Corte seco desde negro, sin intro.",
+                "Sabes usar Revit. Otra cosa es implementar BIM en un proyecto de verdad.",
+                "SABER REVIT NO ES **IMPLEMENTAR BIM**"
+              ],
+              [
+                "0:04-0:11",
+                "Corte a pantalla: un BEP abierto, scroll rápido. Vuelve a Gabriel a mitad de frase.",
+                "Este módulo te da lo que sostiene el proyecto: estándares, BEP y flujos que no se caen a mitad de obra.",
+                "ESTÁNDARES · **BEP** · FLUJOS"
+              ],
+              [
+                "0:11-0:15",
+                "Plano medio de Gabriel. Placa final azul con el sello MODELADOR BIM.",
+                "Tres meses, y sales con la microcredencial de Modelador BIM. Llena el formulario y te decimos si es tu módulo.",
+                "**MODELADOR BIM** · $750 · 3 MESES"
+              ]
+            ],
+            "cfg": [
+              [
+                "Objetivo",
+                "Clientes potenciales (leads). Van al MISMO conjunto de anuncios que la imagen de su modulo, no a una campana aparte: compiten contra la imagen y el dato dice cual gana."
+              ],
+              [
+                "Conversion",
+                "Formulario instantaneo de Meta, el mismo del modulo."
+              ],
+              [
+                "Boton",
+                "Mas informacion."
+              ],
+              [
+                "Ubicaciones",
+                "Reels e Historias de Instagram y Facebook, y feed. Es vertical: en feed se recorta solo, por eso los margenes de seguridad no se negocian."
+              ],
+              [
+                "Medidas",
+                "1080x1920 px (9:16). Nada importante en los 250 px de arriba ni en los 320 de abajo: ahi van el nombre de la cuenta y el boton del anuncio."
+              ],
+              [
+                "Duracion",
+                "15 segundos exactos. Ni 14 ni 18. Es el unico largo que aguanta un anuncio de video sin perder la mitad de la audiencia antes del CTA."
+              ],
+              [
+                "Tratamiento",
+                "El mismo de los reels de la casa: subtitulos quemados en Montserrat ExtraBold, la palabra clave en ambar #E8A04A, corte cada 3-4 segundos, sin intro ni presentacion. Audio normalizado a -14 LUFS."
+              ],
+              [
+                "Sonido",
+                "Se graba con el microfono de solapa, no con el del telefono. Un anuncio con audio de sala no lo salva ningun subtitulo: se ve barato y eso contagia al programa."
+              ],
+              [
+                "Lo que NO va",
+                "«Link en la bio» — el CTA es el boton del formulario, decir otra cosa manda a la gente fuera del anuncio. Tampoco el precio de la ruta completa."
+              ],
+              [
+                "Nombre de campana",
+                "SEP26 | MASTER-MODULOS | <modulo> | VIDEO"
+              ]
+            ],
+            "nota": "Se graban los cuatro seguidos, en la misma sesion y con la misma camisa: es un set, y si se graban en dias distintos se nota en el color y deja de leerse como una familia. Gabriel a camara, sin teleprompter — la frase es corta a proposito para que salga dicha, no leida."
           },
           {
-            "formato": "Reel ads — ya producidos + 4 por producir",
-            "titulo": "Videos de pauta del Master",
-            "copy": "YA PRODUCIDOS: el comercial Revit+IA (master 16:9 y vertical 9:16, en Vimeo) y el comercial con Gabriel de protagonista (29 s, 2-sep). AJUSTE DE COMUNICACION: el copy que los acompaña cambia; ya no dice «master de 12 meses» sino «empieza por el modulo que te toca, desde $600». POR PRODUCIR: 4 reels de 15 s, uno por modulo, con Gabriel explicando en una frase que resuelve ese modulo y cerrando en el formulario."
+            "id": "reel-ad-mod2",
+            "titulo": "Reel de pauta · Módulo 2 · BIM Coordination",
+            "precio": "$750 · 3 meses · 15 s",
+            "formato": "Reel ads 9:16 — POR GRABAR",
+            "hook": "Si el choque lo descubres en obra, ya lo pagaste dos veces.",
+            "cuerpo": "Una interferencia detectada en el modelo cuesta una tarde. La misma detectada en obra cuesta miles.\n\nEn 3 meses coordinas disciplinas, detectas interferencias antes de que existan y controlas la calidad de los entregables.\n\n100% asincrónico. Microcredencial de COORDINADOR BIM avalada por Silicon Valley Futures Institute. $750.\n\nLlena el formulario y te decimos si este es tu módulo.",
+            "titular": "BIM Coordination · $750 · 3 meses",
+            "descripcion": "Microcredencial incluida",
+            "creativo": "Gabriel a cámara, corte a la interferencia marcada en Navisworks y a la foto de obra con el mismo choque, cierre con el sello COORDINADOR BIM.",
+            "prompt": "No lleva prompt de imagen: es video grabado. La foto de obra tiene que ser real, de un proyecto propio — una imagen de banco se reconoce y rompe la credibilidad.",
+            "guion": [
+              [
+                "0:00-0:04",
+                "Primer plano de Gabriel. Corte seco desde negro.",
+                "Si el choque lo descubres en obra, ya lo pagaste dos veces.",
+                "EN OBRA EL ERROR **CUESTA EL DOBLE**"
+              ],
+              [
+                "0:04-0:11",
+                "Corte a Navisworks con la interferencia marcada en rojo; corte duro a la foto de obra con el mismo choque.",
+                "Aquí aprendes a verlo antes: coordinas disciplinas, detectas interferencias y controlas la calidad del entregable.",
+                "DETECTAR **ANTES**, NO DESPUÉS"
+              ],
+              [
+                "0:11-0:15",
+                "Gabriel de vuelta. Placa final con el sello COORDINADOR BIM.",
+                "Tres meses, microcredencial de Coordinador BIM. Llena el formulario y te decimos si es tu módulo.",
+                "**COORDINADOR BIM** · $750 · 3 MESES"
+              ]
+            ],
+            "cfg": [
+              [
+                "Objetivo",
+                "Clientes potenciales (leads). Van al MISMO conjunto de anuncios que la imagen de su modulo, no a una campana aparte: compiten contra la imagen y el dato dice cual gana."
+              ],
+              [
+                "Conversion",
+                "Formulario instantaneo de Meta, el mismo del modulo."
+              ],
+              [
+                "Boton",
+                "Mas informacion."
+              ],
+              [
+                "Ubicaciones",
+                "Reels e Historias de Instagram y Facebook, y feed. Es vertical: en feed se recorta solo, por eso los margenes de seguridad no se negocian."
+              ],
+              [
+                "Medidas",
+                "1080x1920 px (9:16). Nada importante en los 250 px de arriba ni en los 320 de abajo: ahi van el nombre de la cuenta y el boton del anuncio."
+              ],
+              [
+                "Duracion",
+                "15 segundos exactos. Ni 14 ni 18. Es el unico largo que aguanta un anuncio de video sin perder la mitad de la audiencia antes del CTA."
+              ],
+              [
+                "Tratamiento",
+                "El mismo de los reels de la casa: subtitulos quemados en Montserrat ExtraBold, la palabra clave en ambar #E8A04A, corte cada 3-4 segundos, sin intro ni presentacion. Audio normalizado a -14 LUFS."
+              ],
+              [
+                "Sonido",
+                "Se graba con el microfono de solapa, no con el del telefono. Un anuncio con audio de sala no lo salva ningun subtitulo: se ve barato y eso contagia al programa."
+              ],
+              [
+                "Lo que NO va",
+                "«Link en la bio» — el CTA es el boton del formulario, decir otra cosa manda a la gente fuera del anuncio. Tampoco el precio de la ruta completa."
+              ],
+              [
+                "Nombre de campana",
+                "SEP26 | MASTER-MODULOS | <modulo> | VIDEO"
+              ]
+            ],
+            "nota": "Se graban los cuatro seguidos, en la misma sesion y con la misma camisa: es un set, y si se graban en dias distintos se nota en el color y deja de leerse como una familia. Gabriel a camara, sin teleprompter — la frase es corta a proposito para que salga dicha, no leida."
+          },
+          {
+            "id": "reel-ad-mod3",
+            "titulo": "Reel de pauta · Módulo 3 · BIM Management",
+            "precio": "$600 · 2 meses · 15 s",
+            "formato": "Reel ads 9:16 — POR GRABAR",
+            "hook": "Puedes modelar impecable y seguir esperando a que alguien te diga qué modelar.",
+            "cuerpo": "El salto de modelador a BIM Manager no es de software. Es de criterio.\n\nEn 2 meses planificas en 4D, controlas costos en 5D y lideras equipos BIM: dejas de ejecutar y empiezas a decidir.\n\n100% asincrónico. Microcredencial de BIM MANAGER 4D-5D avalada por Silicon Valley Futures Institute. $600 — es el módulo de entrada más corto.\n\nLlena el formulario y te decimos si este es tu módulo.",
+            "titular": "BIM Management · $600 · 2 meses",
+            "descripcion": "El módulo más corto",
+            "creativo": "Gabriel a cámara, corte a un Gantt 4D corriendo y a la tabla de costos 5D, cierre con el sello BIM MANAGER 4D-5D.",
+            "prompt": "No lleva prompt de imagen: es video grabado. El Gantt y la tabla se graban en pantalla, de un proyecto real, con los nombres del cliente tapados.",
+            "guion": [
+              [
+                "0:00-0:04",
+                "Primer plano de Gabriel. Corte seco desde negro.",
+                "Puedes modelar impecable y seguir esperando a que alguien te diga qué modelar.",
+                "MODELAR BIEN NO ES **DECIDIR**"
+              ],
+              [
+                "0:04-0:11",
+                "Corte a la simulación 4D avanzando y a la tabla de costos 5D. Vuelve a Gabriel.",
+                "El salto a BIM Manager no es de software, es de criterio: planificas en 4D, controlas costos en 5D y lideras el equipo.",
+                "4D · **5D** · LIDERAZGO"
+              ],
+              [
+                "0:11-0:15",
+                "Gabriel, plano medio. Placa final con el sello BIM MANAGER 4D-5D.",
+                "Dos meses, es el módulo más corto. Llena el formulario y te decimos si es tu módulo.",
+                "**BIM MANAGER 4D-5D** · $600 · 2 MESES"
+              ]
+            ],
+            "cfg": [
+              [
+                "Objetivo",
+                "Clientes potenciales (leads). Van al MISMO conjunto de anuncios que la imagen de su modulo, no a una campana aparte: compiten contra la imagen y el dato dice cual gana."
+              ],
+              [
+                "Conversion",
+                "Formulario instantaneo de Meta, el mismo del modulo."
+              ],
+              [
+                "Boton",
+                "Mas informacion."
+              ],
+              [
+                "Ubicaciones",
+                "Reels e Historias de Instagram y Facebook, y feed. Es vertical: en feed se recorta solo, por eso los margenes de seguridad no se negocian."
+              ],
+              [
+                "Medidas",
+                "1080x1920 px (9:16). Nada importante en los 250 px de arriba ni en los 320 de abajo: ahi van el nombre de la cuenta y el boton del anuncio."
+              ],
+              [
+                "Duracion",
+                "15 segundos exactos. Ni 14 ni 18. Es el unico largo que aguanta un anuncio de video sin perder la mitad de la audiencia antes del CTA."
+              ],
+              [
+                "Tratamiento",
+                "El mismo de los reels de la casa: subtitulos quemados en Montserrat ExtraBold, la palabra clave en ambar #E8A04A, corte cada 3-4 segundos, sin intro ni presentacion. Audio normalizado a -14 LUFS."
+              ],
+              [
+                "Sonido",
+                "Se graba con el microfono de solapa, no con el del telefono. Un anuncio con audio de sala no lo salva ningun subtitulo: se ve barato y eso contagia al programa."
+              ],
+              [
+                "Lo que NO va",
+                "«Link en la bio» — el CTA es el boton del formulario, decir otra cosa manda a la gente fuera del anuncio. Tampoco el precio de la ruta completa."
+              ],
+              [
+                "Nombre de campana",
+                "SEP26 | MASTER-MODULOS | <modulo> | VIDEO"
+              ]
+            ],
+            "nota": "Se graban los cuatro seguidos, en la misma sesion y con la misma camisa: es un set, y si se graban en dias distintos se nota en el color y deja de leerse como una familia. Gabriel a camara, sin teleprompter — la frase es corta a proposito para que salga dicha, no leida."
+          },
+          {
+            "id": "reel-ad-mod4",
+            "titulo": "Reel de pauta · Módulo 4 · BIM + IA",
+            "precio": "$900 · 3 meses · 15 s",
+            "formato": "Reel ads 9:16 — POR GRABAR",
+            "hook": "Si repites tareas que una máquina haría igual, no te falta tiempo.",
+            "cuerpo": "Te falta automatización.\n\nEn 3 meses automatizas con Dynamo y Python, y aplicas IA en proyectos reales — con el criterio para saber cuándo la respuesta de la máquina sirve y cuándo no.\n\n100% asincrónico. Microcredencial de ESPECIALISTA BIM + IA avalada por Silicon Valley Futures Institute. $900.\n\nLlena el formulario y te decimos si este es tu módulo.",
+            "titular": "BIM + IA · $900 · 3 meses",
+            "descripcion": "Dynamo, Python e IA",
+            "creativo": "Gabriel a cámara, corte a un grafo de Dynamo ejecutándose y a ChatGPT resolviendo un error real de Revit, cierre con el sello ESPECIALISTA BIM + IA.",
+            "prompt": "No lleva prompt de imagen: es video grabado. La captura de ChatGPT tiene que ser una consulta real que funcione — si alguien la repite y no da eso, se cae la promesa.",
+            "guion": [
+              [
+                "0:00-0:04",
+                "Primer plano de Gabriel. Corte seco desde negro.",
+                "Si repites tareas que una máquina haría igual, no te falta tiempo.",
+                "NO TE FALTA TIEMPO: TE FALTA **AUTOMATIZAR**"
+              ],
+              [
+                "0:04-0:11",
+                "Corte al grafo de Dynamo ejecutándose; corte a ChatGPT resolviendo un error de Revit.",
+                "Automatizas con Dynamo y Python, y usas IA con el criterio para saber cuándo la respuesta sirve y cuándo no.",
+                "DYNAMO · PYTHON · **CRITERIO**"
+              ],
+              [
+                "0:11-0:15",
+                "Gabriel, plano medio. Placa final con el sello ESPECIALISTA BIM + IA.",
+                "Tres meses, microcredencial de Especialista BIM más IA. Llena el formulario y te decimos si es tu módulo.",
+                "**ESPECIALISTA BIM + IA** · $900 · 3 MESES"
+              ]
+            ],
+            "cfg": [
+              [
+                "Objetivo",
+                "Clientes potenciales (leads). Van al MISMO conjunto de anuncios que la imagen de su modulo, no a una campana aparte: compiten contra la imagen y el dato dice cual gana."
+              ],
+              [
+                "Conversion",
+                "Formulario instantaneo de Meta, el mismo del modulo."
+              ],
+              [
+                "Boton",
+                "Mas informacion."
+              ],
+              [
+                "Ubicaciones",
+                "Reels e Historias de Instagram y Facebook, y feed. Es vertical: en feed se recorta solo, por eso los margenes de seguridad no se negocian."
+              ],
+              [
+                "Medidas",
+                "1080x1920 px (9:16). Nada importante en los 250 px de arriba ni en los 320 de abajo: ahi van el nombre de la cuenta y el boton del anuncio."
+              ],
+              [
+                "Duracion",
+                "15 segundos exactos. Ni 14 ni 18. Es el unico largo que aguanta un anuncio de video sin perder la mitad de la audiencia antes del CTA."
+              ],
+              [
+                "Tratamiento",
+                "El mismo de los reels de la casa: subtitulos quemados en Montserrat ExtraBold, la palabra clave en ambar #E8A04A, corte cada 3-4 segundos, sin intro ni presentacion. Audio normalizado a -14 LUFS."
+              ],
+              [
+                "Sonido",
+                "Se graba con el microfono de solapa, no con el del telefono. Un anuncio con audio de sala no lo salva ningun subtitulo: se ve barato y eso contagia al programa."
+              ],
+              [
+                "Lo que NO va",
+                "«Link en la bio» — el CTA es el boton del formulario, decir otra cosa manda a la gente fuera del anuncio. Tampoco el precio de la ruta completa."
+              ],
+              [
+                "Nombre de campana",
+                "SEP26 | MASTER-MODULOS | <modulo> | VIDEO"
+              ]
+            ],
+            "nota": "Se graban los cuatro seguidos, en la misma sesion y con la misma camisa: es un set, y si se graban en dias distintos se nota en el color y deja de leerse como una familia. Gabriel a camara, sin teleprompter — la frase es corta a proposito para que salga dicha, no leida."
           }
         ]
       },
@@ -530,6 +830,10 @@
       [
         "Qué se mira el lunes 14",
         "CPL por módulo y, sobre todo, cuántos de esos leads llenaron el test. Un módulo con CPL bajo y test sin llenar no está funcionando: está juntando correos."
+      ],
+      [
+        "Los videos son un set",
+        "Los 4 reels de 15 s se graban la misma tarde y con la misma camisa. Cada uno entra en el conjunto de anuncios de SU módulo, junto a la imagen, no en una campaña aparte: así el módulo compite consigo mismo y en una semana se sabe si convierte mejor la cara de Gabriel o la tarjeta."
       ]
     ]
   },

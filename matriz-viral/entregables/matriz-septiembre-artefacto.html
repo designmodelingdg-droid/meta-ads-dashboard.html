@@ -82,6 +82,30 @@ b.amb{color:var(--amber-deep)}
 .pegar{background:var(--surface-2);border-left:3px solid var(--amber);padding:11px 13px;
   border-radius:0 5px 5px 0;font-size:14.5px;white-space:pre-wrap}
 .prompt{margin-top:10px}
+/* ── casilla de «hecho»: cierra la pieza y deja solo el titulo ── */
+.chk{flex:0 0 auto;display:inline-flex;align-items:center;cursor:pointer;margin-right:2px}
+.chk input{position:absolute;opacity:0;width:0;height:0}
+.chk span{width:19px;height:19px;border:2px solid var(--line-strong);border-radius:5px;
+  background:var(--surface);display:block;position:relative;transition:.12s}
+.chk:hover span{border-color:var(--ok)}
+.chk input:focus-visible+span{outline:2px solid var(--amber);outline-offset:2px}
+.chk input:checked+span{background:var(--ok);border-color:var(--ok)}
+.chk input:checked+span::after{content:"";position:absolute;left:5px;top:1px;width:5px;height:10px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(43deg)}
+.col.hecha{background:var(--ok-bg);border-color:var(--ok)}
+.col.hecha>:not(.cab){display:none}
+.col.hecha>.cab{border-bottom:0;padding-bottom:0;margin-bottom:0}
+.col.hecha .fecha{background:transparent;color:var(--ok);border-color:var(--ok)}
+.col.hecha h3,.col.hecha h4{color:var(--ok)}
+.col.hecha .tipo,.col.hecha .precio-ad,.col.hecha h4>span{opacity:.6}
+.dia.col.hecha{padding-bottom:10px}
+/* barra de avance por pestaña */
+.avance{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:14px 0 4px;
+  font-size:13.5px;color:var(--ink-2)}
+.avance b{font-family:var(--mono);color:var(--ok)}
+.avance button{font:inherit;font-size:12.5px;background:var(--surface);color:var(--ink-2);
+  border:1px solid var(--line-strong);border-radius:999px;padding:4px 12px;cursor:pointer}
+.avance button:hover{border-color:var(--amber);color:var(--amber-deep)}
 /* ── anuncios ── */
 .ad{background:var(--surface);border:1px solid var(--line);border-radius:10px;
   padding:16px 18px;margin:14px 0}
@@ -257,8 +281,8 @@ footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);
 <section id="tab-g1" hidden><h2>GRUPO 1 · Feed principal — Instagram + Facebook + TikTok + YouTube Shorts</h2>
 <p class="intro">El mismo contenido adaptado a cada red del grupo (YouTube Shorts SOLO recibe los reels). Publicacion lunes, miercoles y viernes. TODO es contenido NUEVO: los reels grabados en agosto que nunca se publicaron quedan fuera (decision de Dayana, 2-sep). Mezcla: 40% reels · 40% carruseles · 20% post plano.</p>
 <ul class="reglas"><li>YouTube Shorts: solo los reels.</li><li>TikTok: mismo video, CTA «link en bio».</li><li>Facebook: publicacion cuidada, no auto-repost.</li><li>Cada reel del mes tiene guion completo escrito: se graba y se publica, no se improvisa.</li></ul>
-<div class="filtro" data-scope="g1"><button class="fbtn" data-sem="0" aria-pressed="true">Todas</button><button class="fbtn" data-sem="1" aria-pressed="false">S1 · 7-13 sep</button><button class="fbtn" data-sem="2" aria-pressed="false">S2 · 14-20 sep</button><button class="fbtn" data-sem="3" aria-pressed="false">S3 · 21-27 sep</button><button class="fbtn" data-sem="4" aria-pressed="false">S4 · 28 sep - 2 oct</button></div>
-<div class="pieza" data-sem="1"><div class="pieza-cab"><span class="fecha">Lun 7</span><h3>3 señales de que tu oficina ya necesita BIM + IA</h3><span class="tipo">CARRUSEL (6 slides)</span></div>
+<div class="filtro" data-scope="g1"><button class="fbtn" data-sem="0" aria-pressed="true">Todas</button><button class="fbtn" data-sem="1" aria-pressed="false">S1 · 7-13 sep</button><button class="fbtn" data-sem="2" aria-pressed="false">S2 · 14-20 sep</button><button class="fbtn" data-sem="3" aria-pressed="false">S3 · 21-27 sep</button><button class="fbtn" data-sem="4" aria-pressed="false">S4 · 28 sep - 2 oct</button></div><div class="avance"><span><b class="n">0</b> de <b class="tot">0</b> marcadas</span><button type="button" class="reabrir">Reabrir todas</button></div>
+<div class="pieza col" data-sem="1" data-k="g1-lun-7-3-senales-de-que-tu-oficina-ya-necesita-bim-ia"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g1-lun-7-3-senales-de-que-tu-oficina-ya-necesita-bim-ia"><span aria-hidden="true"></span></label><span class="fecha">Lun 7</span><h3>3 señales de que tu oficina ya necesita BIM + IA</h3><span class="tipo">CARRUSEL (6 slides)</span></div>
 <p class="nota">Abre el mes con el mejor formato de la cuenta. CTA: comenta BIM o IA.</p>
 <span class="rot">Hook</span><div class="pegar">3 señales de que tu oficina YA necesita BIM + IA (la #2 te está costando plata).</div>
 <span class="rot">Slides</span><ol class="slides">
@@ -279,11 +303,11 @@ footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);
 #BIM #IA #Productividad #Arquitectura #Ingeniería #DesignModelingDG</div>
 <div class="prompt"><span class="rot">Prompt para ChatGPT · CARRUSEL · 6 slides · 1080x1350 px (4:5)</span><div class="prompt-txt">Portada: tres iconos grandes en columna sobre azul marino — un reloj con flecha circular, dos modelos superpuestos con un choque en ámbar, y dos barras de tiempo desiguales. Slides interiores: un icono por slide, número 01/02/03 gigante en ámbar a la izquierda, espacio limpio a la derecha para el texto. Slide de cierre: fondo ámbar invertido con espacio central limpio. Estilo Design Modeling Academy: fondo azul marino #0E2438, acento ámbar #E8A04A, texto blanco, tipografía sans muy gruesa, estética técnica de ingeniería limpia (referencia Autodesk Revit), sin fotos de stock genéricas, sin ciencia ficción. Firma abajo a la izquierda «DG · @design_modeling_dg». NO escribas texto dentro de la imagen salvo donde se indique — el texto lo monta diseño.</div></div>
 </div>
-<div class="pieza" data-sem="1"><div class="pieza-cab"><span class="fecha">Mie 9</span><h3>REEL «Valor 6» — Revit me arrojo un error y ChatGPT me ahorro 2 horas</h3><span class="tipo">REEL (listo)</span></div>
+<div class="pieza col" data-sem="1" data-k="g1-mie-9-reel-valor-6-revit-me-arrojo-un-error-y-chatgpt-me-ahorro-2-h"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g1-mie-9-reel-valor-6-revit-me-arrojo-un-error-y-chatgpt-me-ahorro-2-h"><span aria-hidden="true"></span></label><span class="fecha">Mie 9</span><h3>REEL «Valor 6» — Revit me arrojo un error y ChatGPT me ahorro 2 horas</h3><span class="tipo">REEL (listo)</span></div>
 <span class="rot">Desarrollo</span><div class="pegar">El video ya esta terminado con el pipeline nuevo (es el grabado #5 del equipo, confirmado por Dayana). Solo falta confirmar la palabra clave del CTA (¿GUIA?) y montar su disparador — y que la guia exista antes de publicar (ver lead magnets por crear).</div>
 <p class="nota">El guion completo de este reel está en la pestaña <b>Reels</b>.</p>
 </div>
-<div class="pieza" data-sem="1"><div class="pieza-cab"><span class="fecha">Vie 11</span><h3>Dato de cálculo: la cuantía mínima de una columna</h3><span class="tipo">POST PLANO (1 imagen)</span></div>
+<div class="pieza col" data-sem="1" data-k="g1-vie-11-dato-de-calculo-la-cuantia-minima-de-una-columna"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g1-vie-11-dato-de-calculo-la-cuantia-minima-de-una-columna"><span aria-hidden="true"></span></label><span class="fecha">Vie 11</span><h3>Dato de cálculo: la cuantía mínima de una columna</h3><span class="tipo">POST PLANO (1 imagen)</span></div>
 <p class="nota">La formula ganadora: UNA imagen + dato verificable. CTA: comenta ACERO → 5 verificaciones.</p>
 <span class="rot">Hook</span><div class="pegar">¿Cuánto acero mínimo lleva una columna? El código dice 1%. Menos de eso, te la rebotan.</div>
 <span class="rot">Slides</span><ol class="slides">
@@ -309,7 +333,7 @@ El cálculo completo de la imagen:
 <p class="nota">⚠ FÓRMULA GANADORA de agosto: post plano de UNA imagen + dato de cálculo verificable = 45-62 comentarios (los dos mejores del mes). Un post plano SIN dato murió (0-4 comentarios). Cifras verificadas: 30×30=900 cm²; 1%=9,0 cm²; Ø18→2,54 cm²×4=10,2; Ø16→2,01 cm²×4=8,0. ACI 318 §10.6.1.1 (cuantía longitudinal mínima 0,01·Ag). El CTA conecta con el lead magnet «5 Verificaciones en Acero» que ya está montado — la palabra ACERO ya tiene bot.</p>
 <div class="prompt"><span class="rot">Prompt para ChatGPT · POST PLANO · 1 imagen · 1080x1350 px (4:5)</span><div class="prompt-txt">Estilo pizarra técnica: fondo azul marino, trazo blanco tipo tiza. Sección transversal de una columna cuadrada de 30x30 dibujada técnicamente con 4 varillas en las esquinas y cotas limpias. A la derecha, espacio para el cálculo escrito paso a paso. Una marca de verificación verde y una de advertencia ámbar. El dibujo ocupa el 70% del lienzo y debe leerse en un teléfono. Estilo Design Modeling Academy: fondo azul marino #0E2438, acento ámbar #E8A04A, texto blanco, tipografía sans muy gruesa, estética técnica de ingeniería limpia (referencia Autodesk Revit), sin fotos de stock genéricas, sin ciencia ficción. Firma abajo a la izquierda «DG · @design_modeling_dg». NO escribas texto dentro de la imagen salvo donde se indique — el texto lo monta diseño.</div></div>
 </div>
-<div class="pieza" data-sem="2"><div class="pieza-cab"><span class="fecha">Lun 14</span><h3>Mejores prácticas para la coordinación en Navisworks</h3><span class="tipo">CARRUSEL (7 slides)</span></div>
+<div class="pieza col" data-sem="2" data-k="g1-lun-14-mejores-practicas-para-la-coordinacion-en-navisworks"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g1-lun-14-mejores-practicas-para-la-coordinacion-en-navisworks"><span aria-hidden="true"></span></label><span class="fecha">Lun 14</span><h3>Mejores prácticas para la coordinación en Navisworks</h3><span class="tipo">CARRUSEL (7 slides)</span></div>
 <p class="nota">Publico de BIM Manager — la Puerta 2. Alimenta comunidad del martes y PDF de LinkedIn.</p>
 <span class="rot">Hook</span><div class="pegar">Coordinar en Navisworks sin volverte loco: 5 buenas prácticas.</div>
 <span class="rot">Slides</span><ol class="slides">
@@ -328,11 +352,11 @@ El cálculo completo de la imagen:
 #Navisworks #BIM #CoordinaciónBIM #DesignModelingDG</div>
 <div class="prompt"><span class="rot">Prompt para ChatGPT · CARRUSEL · 7 slides · 1080x1350 px (4:5)</span><div class="prompt-txt">Portada: tres modelos superpuestos en capas separadas verticalmente (arquitectura, estructura, instalaciones), cada capa en un tono distinto, con una interferencia marcada en ámbar. Interiores: un paso del flujo de coordinación por slide, con diagramas de línea fina. Estilo Design Modeling Academy: fondo azul marino #0E2438, acento ámbar #E8A04A, texto blanco, tipografía sans muy gruesa, estética técnica de ingeniería limpia (referencia Autodesk Revit), sin fotos de stock genéricas, sin ciencia ficción. Firma abajo a la izquierda «DG · @design_modeling_dg». NO escribas texto dentro de la imagen salvo donde se indique — el texto lo monta diseño.</div></div>
 </div>
-<div class="pieza" data-sem="2"><div class="pieza-cab"><span class="fecha">Mie 16</span><h3>REEL · Sobredimensionada — parte 2 (grabar)</h3><span class="tipo">REEL (grabar)</span></div>
+<div class="pieza col" data-sem="2" data-k="g1-mie-16-reel-sobredimensionada-parte-2-grabar"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g1-mie-16-reel-sobredimensionada-parte-2-grabar"><span aria-hidden="true"></span></label><span class="fecha">Mie 16</span><h3>REEL · Sobredimensionada — parte 2 (grabar)</h3><span class="tipo">REEL (grabar)</span></div>
 <span class="rot">Desarrollo</span><div class="pegar">Continuacion del post #1 de la historia de la cuenta (14.334 vistas / 107 comentarios). Hook: «Sobredimensionar no te hace mas seguro. Te hace mas caro.» Desarrollo: 3 señales de que una viga esta sobredimensionada (sin resolverlas del todo). Cierre: comenta ACERO y te paso las 5 verificaciones. Grabar en la sesion del Lun 7-Mar 8.</div>
 <p class="nota">El guion completo de este reel está en la pestaña <b>Reels</b>.</p>
 </div>
-<div class="pieza" data-sem="2"><div class="pieza-cab"><span class="fecha">Vie 18</span><h3>Paquete Autodesk para coordinación BIM</h3><span class="tipo">REEL (grabar o banco)</span></div>
+<div class="pieza col" data-sem="2" data-k="g1-vie-18-paquete-autodesk-para-coordinacion-bim"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g1-vie-18-paquete-autodesk-para-coordinacion-bim"><span aria-hidden="true"></span></label><span class="fecha">Vie 18</span><h3>Paquete Autodesk para coordinación BIM</h3><span class="tipo">REEL (grabar o banco)</span></div>
 <p class="nota">Paquete Autodesk para coordinacion — venta blanda con valor. Grabar en la sesion del 7-8 o tomar del banco.</p>
 <span class="rot">Hook</span><div class="pegar">4 herramientas de Autodesk que quizá no estás usando en tu coordinación (y deberías).</div>
 <span class="rot">Caption (copiar tal cual)</span><div class="pegar">No es tener Autodesk: es saber exprimirlo. Revit + Navisworks + BIM Collaborate + IA = coordinación en la mitad del tiempo. Te muestro cómo encajan.
@@ -341,7 +365,7 @@ El cálculo completo de la imagen:
 
 #Autodesk #Revit #Navisworks #BIM #DesignModelingDG</div>
 </div>
-<div class="pieza" data-sem="3"><div class="pieza-cab"><span class="fecha">Lun 21</span><h3>Errores comunes al modelar en Revit y cómo evitarlos</h3><span class="tipo">CARRUSEL (8 slides)</span></div>
+<div class="pieza col" data-sem="3" data-k="g1-lun-21-errores-comunes-al-modelar-en-revit-y-como-evitarlos"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g1-lun-21-errores-comunes-al-modelar-en-revit-y-como-evitarlos"><span aria-hidden="true"></span></label><span class="fecha">Lun 21</span><h3>Errores comunes al modelar en Revit y cómo evitarlos</h3><span class="tipo">CARRUSEL (8 slides)</span></div>
 <p class="nota">El angulo que mas comenta. Cada error con su correccion.</p>
 <span class="rot">Hook</span><div class="pegar">5 errores al modelar en Revit que te van a costar caro en obra.</div>
 <span class="rot">Slides</span><ol class="slides">
@@ -360,7 +384,7 @@ El cálculo completo de la imagen:
 #Revit #BIM #Modelado #DesignModelingDG</div>
 <div class="prompt"><span class="rot">Prompt para ChatGPT · CARRUSEL · 8 slides · 1080x1350 px (4:5)</span><div class="prompt-txt">Portada: modelo 3D con varias zonas marcadas con círculos ámbar de error. Interiores: cada slide muestra UN error a la izquierda (en rojo apagado) y su corrección a la derecha (en verde), formato antes/después muy legible. Estilo Design Modeling Academy: fondo azul marino #0E2438, acento ámbar #E8A04A, texto blanco, tipografía sans muy gruesa, estética técnica de ingeniería limpia (referencia Autodesk Revit), sin fotos de stock genéricas, sin ciencia ficción. Firma abajo a la izquierda «DG · @design_modeling_dg». NO escribas texto dentro de la imagen salvo donde se indique — el texto lo monta diseño.</div></div>
 </div>
-<div class="pieza" data-sem="3"><div class="pieza-cab"><span class="fecha">Mie 23</span><h3>Las 4 puertas: ¿en qué etapa BIM estás?</h3><span class="tipo">CARRUSEL (8 slides)</span></div>
+<div class="pieza col" data-sem="3" data-k="g1-mie-23-las-4-puertas-en-que-etapa-bim-estas"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g1-mie-23-las-4-puertas-en-que-etapa-bim-estas"><span aria-hidden="true"></span></label><span class="fecha">Mie 23</span><h3>Las 4 puertas: ¿en qué etapa BIM estás?</h3><span class="tipo">CARRUSEL (8 slides)</span></div>
 <p class="nota">LA PIEZA DEL MES: la nueva arquitectura contada como contenido. Sin precio. Requiere el disparador RUTA vivo.</p>
 <span class="rot">Hook</span><div class="pegar">¿En qué etapa BIM estás? Hay 4 puertas de entrada — y solo una es la tuya.</div>
 <span class="rot">Slides</span><ol class="slides">
@@ -389,11 +413,11 @@ Y una ruta completa de 12 meses que las recorre todas: de «sé usar BIM» a BIM
 <p class="nota">⚠ NUNCA precio del Máster: ni en slides, ni en caption, ni en DM — el precio vive en la llamada del closer (arquitectura comercial sep-2026). La palabra clave RUTA necesita su disparador montado en el bot ANTES de publicar; si no está, el CTA cambia a «comenta BIM». Basado en la Nueva Arquitectura Comercial (PDF de Gabriel, sep-2026): las 4 frases de los slides son las 5 necesidades del proceso comercial, con la 5ª (la ruta completa) como cierre.</p>
 <div class="prompt"><span class="rot">Prompt para ChatGPT · CARRUSEL · 8 slides · 1080x1350 px (4:5)</span><div class="prompt-txt">Portada: cuatro puertas arquitectónicas en fila sobre suelo de retícula en perspectiva, una iluminada en ámbar. Slides 2-5: una puerta por slide, con su icono encima (checklist, cubos ensamblándose, gráfica con signo de dólar, cerebro-circuito) y la frase del profesional entre comillas grandes. Slide 6: las cuatro puertas conectadas por una flecha que termina en un birrete. Cierre: fondo ámbar invertido. Estilo Design Modeling Academy: fondo azul marino #0E2438, acento ámbar #E8A04A, texto blanco, tipografía sans muy gruesa, estética técnica de ingeniería limpia (referencia Autodesk Revit), sin fotos de stock genéricas, sin ciencia ficción. Firma abajo a la izquierda «DG · @design_modeling_dg». NO escribas texto dentro de la imagen salvo donde se indique — el texto lo monta diseño.</div></div>
 </div>
-<div class="pieza" data-sem="3"><div class="pieza-cab"><span class="fecha">Vie 25</span><h3>REEL · El espejo de la ruta (grabar)</h3><span class="tipo">REEL (grabar)</span></div>
+<div class="pieza col" data-sem="3" data-k="g1-vie-25-reel-el-espejo-de-la-ruta-grabar"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g1-vie-25-reel-el-espejo-de-la-ruta-grabar"><span aria-hidden="true"></span></label><span class="fecha">Vie 25</span><h3>REEL · El espejo de la ruta (grabar)</h3><span class="tipo">REEL (grabar)</span></div>
 <span class="rot">Desarrollo</span><div class="pegar">Version en video de la historia del espejo: «Llevas 3 años modelando bien. Y sigues esperando a que te digan que modelar.» Las 4 puertas en pantalla, una se ilumina. Cierre: comenta RUTA y te digo en cual estas. Refuerza el carrusel del Mie 23 con el mismo mensaje en otro formato.</div>
 <p class="nota">El guion completo de este reel está en la pestaña <b>Reels</b>.</p>
 </div>
-<div class="pieza" data-sem="4"><div class="pieza-cab"><span class="fecha">Lun 28</span><h3>ACERO ahora responde: el tutor de IA de la Especialización</h3><span class="tipo">CARRUSEL (6 slides)</span></div>
+<div class="pieza col" data-sem="4" data-k="g1-lun-28-acero-ahora-responde-el-tutor-de-ia-de-la-especializacion"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g1-lun-28-acero-ahora-responde-el-tutor-de-ia-de-la-especializacion"><span aria-hidden="true"></span></label><span class="fecha">Lun 28</span><h3>ACERO ahora responde: el tutor de IA de la Especialización</h3><span class="tipo">CARRUSEL (6 slides)</span></div>
 <p class="nota">CONDICIONADO: solo si el tutor esta desplegado y probado. Si no, sube ago-derivas-deformaciones y esta pasa a octubre.</p>
 <span class="rot">Hook</span><div class="pegar">Tu especialización ahora te contesta. La duda de las 11 p.m. ya no espera a la tutoría.</div>
 <span class="rot">Slides</span><ol class="slides">
@@ -419,11 +443,11 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 <p class="nota">⚠ REGLA DURA: el tutor de IA NO se menciona en publico hasta que este desplegado y probado (falta el deploy en Render y la prueba con las preguntas de Gabriel). Prometer un recurso que no existe ya nos costo un incidente en julio. Si al llegar la fecha no esta en produccion, la pieza se mueve de fecha — no se publica sin el tutor vivo. El precio de ACERO no va en la pieza (feed); sí puede ir en correo a lista propia y en DM del bot. El mockup del slide 3 es el aprobado del tutor — captura real, no recreación.</p>
 <div class="prompt"><span class="rot">Prompt para ChatGPT · CARRUSEL · 6 slides · 1080x1350 px (4:5)</span><div class="prompt-txt">Motivo: burbujas de chat de interfaz limpia sobre azul marino. Portada: una burbuja con una pregunta técnica a medio escribir y un cursor. Slide 3: usar la CAPTURA REAL del tutor respondiendo, nunca una recreación. Slide 4: split con «chatbot genérico» tachado y «tutor del curso» en ámbar. Estilo Design Modeling Academy: fondo azul marino #0E2438, acento ámbar #E8A04A, texto blanco, tipografía sans muy gruesa, estética técnica de ingeniería limpia (referencia Autodesk Revit), sin fotos de stock genéricas, sin ciencia ficción. Firma abajo a la izquierda «DG · @design_modeling_dg». NO escribas texto dentro de la imagen salvo donde se indique — el texto lo monta diseño.</div></div>
 </div>
-<div class="pieza" data-sem="4"><div class="pieza-cab"><span class="fecha">Mie 30</span><h3>REEL · Demo del tutor de IA en pantalla (grabar, CONDICIONADO)</h3><span class="tipo">REEL (grabar, gated)</span></div>
+<div class="pieza col" data-sem="4" data-k="g1-mie-30-reel-demo-del-tutor-de-ia-en-pantalla-grabar-condicionado"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g1-mie-30-reel-demo-del-tutor-de-ia-en-pantalla-grabar-condicionado"><span aria-hidden="true"></span></label><span class="fecha">Mie 30</span><h3>REEL · Demo del tutor de IA en pantalla (grabar, CONDICIONADO)</h3><span class="tipo">REEL (grabar, gated)</span></div>
 <span class="rot">Desarrollo</span><div class="pegar">Grabacion real de pantalla: un alumno le pregunta al tutor «¿como verifico el pandeo lateral de esta viga?» y el tutor responde citando la sesion. Sin voz en off inventada: lo que se ve es lo que hace. Cierre: comenta ACERO. SOLO se publica con el tutor en produccion; alternativa del banco: reel de las 5 verificaciones.</div>
 <p class="nota">El guion completo de este reel está en la pestaña <b>Reels</b>.</p>
 </div>
-<div class="pieza" data-sem="4"><div class="pieza-cab"><span class="fecha">Vie 2 oct</span><h3>POST PLANO · ¿Cuanto pesa una varilla Ø12 de 12 m?</h3><span class="tipo">POST PLANO (crear imagen)</span></div>
+<div class="pieza col" data-sem="4" data-k="g1-vie-2-oct-post-plano-cuanto-pesa-una-varilla-12-de-12-m"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g1-vie-2-oct-post-plano-cuanto-pesa-una-varilla-12-de-12-m"><span aria-hidden="true"></span></label><span class="fecha">Vie 2 oct</span><h3>POST PLANO · ¿Cuanto pesa una varilla Ø12 de 12 m?</h3><span class="tipo">POST PLANO (crear imagen)</span></div>
 <span class="rot">Desarrollo</span><div class="pegar">Dato verificable: peso = Ø²/162 (kg/m, con Ø en mm) → 144/162 = 0,888 kg/m → una varilla Ø12 de 12 m pesa 10,7 kg. En la imagen: la formula, el calculo y el uso (estimar el acero de un presupuesto sin planilla). CTA: ¿la usabas? Comenta ACERO y te paso la herramienta de verificaciones. Cierra el mes con la formula ganadora.</div>
 <p class="nota">El guion completo de este reel está en la pestaña <b>Reels</b>.</p>
 <div class="prompt"><span class="rot">Prompt para ChatGPT · POST PLANO · 1 imagen · 1080x1350 px (4:5)</span><div class="prompt-txt">Estilo pizarra técnica sobre azul marino: varillas de acero corrugado vistas en sección y en perspectiva, con la fórmula del peso esquematizada en grande al centro y espacio para el cálculo debajo. Una varilla destacada en ámbar. Estilo Design Modeling Academy: fondo azul marino #0E2438, acento ámbar #E8A04A, texto blanco, tipografía sans muy gruesa, estética técnica de ingeniería limpia (referencia Autodesk Revit), sin fotos de stock genéricas, sin ciencia ficción. Firma abajo a la izquierda «DG · @design_modeling_dg». NO escribas texto dentro de la imagen salvo donde se indique — el texto lo monta diseño.</div></div>
@@ -431,63 +455,63 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 <section id="tab-g2" hidden><h2>GRUPO 2 · Comunidades — WhatsApp, Canal de Instagram, Grupos de Facebook, Comunidad de YouTube y Comunidades GHL</h2>
 <p class="intro">Mensajes cortos, personales y SIN hashtags, entre valor y venta. Martes, jueves y viernes. Cada mensaje deriva del contenido del feed de esa semana (regla de oro), nunca es un enlace pelado.</p>
 <ul class="reglas"><li>Sin hashtags. Tono de persona, no de marca.</li><li>Los grupos de Facebook reciben la PREGUNTA, no el enlace (el enlace baja el alcance del grupo).</li><li>Maximo 1 mensaje de venta por semana y comunidad; el del recurso gratis cuenta como valor.</li><li>El blog del sabado se comparte el martes siguiente.</li></ul>
-<div class="filtro" data-scope="g2"><button class="fbtn" data-sem="0" aria-pressed="true">Todas</button><button class="fbtn" data-sem="1" aria-pressed="false">S1 · 7-13 sep</button><button class="fbtn" data-sem="2" aria-pressed="false">S2 · 14-20 sep</button><button class="fbtn" data-sem="3" aria-pressed="false">S3 · 21-27 sep</button><button class="fbtn" data-sem="4" aria-pressed="false">S4 · 28 sep - 2 oct</button></div>
-<div class="pieza" data-sem="1"><div class="pieza-cab"><span class="fecha">Mar 8</span><h3>Valor · el dato de las 3 señales</h3><span class="tipo">Mensaje + pregunta</span></div>
+<div class="filtro" data-scope="g2"><button class="fbtn" data-sem="0" aria-pressed="true">Todas</button><button class="fbtn" data-sem="1" aria-pressed="false">S1 · 7-13 sep</button><button class="fbtn" data-sem="2" aria-pressed="false">S2 · 14-20 sep</button><button class="fbtn" data-sem="3" aria-pressed="false">S3 · 21-27 sep</button><button class="fbtn" data-sem="4" aria-pressed="false">S4 · 28 sep - 2 oct</button></div><div class="avance"><span><b class="n">0</b> de <b class="tot">0</b> marcadas</span><button type="button" class="reabrir">Reabrir todas</button></div>
+<div class="pieza col" data-sem="1" data-k="g2-mar-8-valor-el-dato-de-las-3-senales"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g2-mar-8-valor-el-dato-de-las-3-senales"><span aria-hidden="true"></span></label><span class="fecha">Mar 8</span><h3>Valor · el dato de las 3 señales</h3><span class="tipo">Mensaje + pregunta</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">«¿Sabian que la señal #1 de que una oficina necesita BIM+IA no es tecnologica? Es que repites tareas que una maquina haria igual. Publicamos las 3 señales completas en el feed — ¿cuantas les pasan? 👀»</div>
 </div>
-<div class="pieza" data-sem="1"><div class="pieza-cab"><span class="fecha">Jue 10</span><h3>Venta suave · cohorte ACERO abierta</h3><span class="tipo">Mensaje directo</span></div>
+<div class="pieza col" data-sem="1" data-k="g2-jue-10-venta-suave-cohorte-acero-abierta"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g2-jue-10-venta-suave-cohorte-acero-abierta"><span aria-hidden="true"></span></label><span class="fecha">Jue 10</span><h3>Venta suave · cohorte ACERO abierta</h3><span class="tipo">Mensaje directo</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">«Abrimos cohorte de la Especializacion en Acero. [CUPOS REALES] cupos. 100% asincronico, el acceso no caduca. El que quiera el temario que me responda ACERO y se lo mando.» (actualizar cupos el dia del envio)</div>
 </div>
-<div class="pieza" data-sem="1"><div class="pieza-cab"><span class="fecha">Vie 11</span><h3>Reel de la semana + dato del post</h3><span class="tipo">Mensaje + reenvio del reel</span></div>
+<div class="pieza col" data-sem="1" data-k="g2-vie-11-reel-de-la-semana-dato-del-post"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g2-vie-11-reel-de-la-semana-dato-del-post"><span aria-hidden="true"></span></label><span class="fecha">Vie 11</span><h3>Reel de la semana + dato del post</h3><span class="tipo">Mensaje + reenvio del reel</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">«Hoy subimos el calculo de la cuantia minima de columnas — el que rebota diseños en revision. ¿Con que cuantia arrancan ustedes? Y de paso: el reel del error de Revit resuelto con ChatGPT esta en el feed, vale los 30 segundos.»</div>
 </div>
-<div class="pieza" data-sem="2"><div class="pieza-cab"><span class="fecha">Mar 15</span><h3>Blog del sabado + tip Navisworks</h3><span class="tipo">Mensaje + enlace al blog</span></div>
+<div class="pieza col" data-sem="2" data-k="g2-mar-15-blog-del-sabado-tip-navisworks"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g2-mar-15-blog-del-sabado-tip-navisworks"><span aria-hidden="true"></span></label><span class="fecha">Mar 15</span><h3>Blog del sabado + tip Navisworks</h3><span class="tipo">Mensaje + enlace al blog</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">«El sabado publicamos en el blog [IA en arquitectura]. Si se lo perdieron, aqui va — y del carrusel de ayer: el error mas comun en coordinacion no es del software, es empezar a coordinar cuando ya todos modelaron. ¿Les ha pasado?»</div>
 </div>
-<div class="pieza" data-sem="2"><div class="pieza-cab"><span class="fecha">Jue 17</span><h3>Recurso gratis · calculadora de zapatas</h3><span class="tipo">Mensaje + palabra clave</span></div>
+<div class="pieza col" data-sem="2" data-k="g2-jue-17-recurso-gratis-calculadora-de-zapatas"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g2-jue-17-recurso-gratis-calculadora-de-zapatas"><span aria-hidden="true"></span></label><span class="fecha">Jue 17</span><h3>Recurso gratis · calculadora de zapatas</h3><span class="tipo">Mensaje + palabra clave</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">«¿Ya usaron la calculadora de zapatas gratuita? La armamos nosotros y la usan cientos de colegas. El que la quiera, que me responda ZAPATA y se la paso.»</div>
 </div>
-<div class="pieza" data-sem="2"><div class="pieza-cab"><span class="fecha">Vie 18</span><h3>Cierre de semana · encuesta Dynamo</h3><span class="tipo">Encuesta</span></div>
+<div class="pieza col" data-sem="2" data-k="g2-vie-18-cierre-de-semana-encuesta-dynamo"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g2-vie-18-cierre-de-semana-encuesta-dynamo"><span aria-hidden="true"></span></label><span class="fecha">Vie 18</span><h3>Cierre de semana · encuesta Dynamo</h3><span class="tipo">Encuesta</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">«Pregunta de viernes: ¿cuantas horas a la semana pierden en tareas repetitivas de Revit? A) menos de 2 B) 2-5 C) mas de 5. El reel de Dynamo del sabado les va a doler o alegrar segun la respuesta 😄»</div>
 </div>
-<div class="pieza" data-sem="3"><div class="pieza-cab"><span class="fecha">Mar 22</span><h3>Blog ETABS/SAP + reel Python</h3><span class="tipo">Mensaje + enlace</span></div>
+<div class="pieza col" data-sem="3" data-k="g2-mar-22-blog-etabs-sap-reel-python"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g2-mar-22-blog-etabs-sap-reel-python"><span aria-hidden="true"></span></label><span class="fecha">Mar 22</span><h3>Blog ETABS/SAP + reel Python</h3><span class="tipo">Mensaje + enlace</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">«El comparativo ETABS vs SAP2000 del blog levanto debate — aqui el enlace. Y el reel de Python del sabado: si nunca han automatizado nada en BIM, ese es el punto de partida.»</div>
 </div>
-<div class="pieza" data-sem="3"><div class="pieza-cab"><span class="fecha">Jue 24</span><h3>Venta suave · las 4 puertas</h3><span class="tipo">Mensaje + palabra clave</span></div>
+<div class="pieza col" data-sem="3" data-k="g2-jue-24-venta-suave-las-4-puertas"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g2-jue-24-venta-suave-las-4-puertas"><span aria-hidden="true"></span></label><span class="fecha">Jue 24</span><h3>Venta suave · las 4 puertas</h3><span class="tipo">Mensaje + palabra clave</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">«Reorganizamos toda la formacion en 4 etapas: Estructura → Coordina → Gestiona → Automatiza. ¿En cual se ubican? El que me responda RUTA le digo la suya con su caso concreto.» (sin precio, requiere disparador RUTA)</div>
 </div>
-<div class="pieza" data-sem="3"><div class="pieza-cab"><span class="fecha">Vie 25</span><h3>Test de nivel BIM</h3><span class="tipo">Mensaje + palabra clave</span></div>
+<div class="pieza col" data-sem="3" data-k="g2-vie-25-test-de-nivel-bim"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g2-vie-25-test-de-nivel-bim"><span aria-hidden="true"></span></label><span class="fecha">Vie 25</span><h3>Test de nivel BIM</h3><span class="tipo">Mensaje + palabra clave</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">«¿En que nivel BIM estan de verdad? Hay un test de 20 preguntas que se los dice sin adornos. Respondan NIVEL y se los mando. Los resultados suelen sorprender.»</div>
 </div>
-<div class="pieza" data-sem="4"><div class="pieza-cab"><span class="fecha">Mar 29</span><h3>Blog elegir software + dato del mes</h3><span class="tipo">Mensaje + enlace</span></div>
+<div class="pieza col" data-sem="4" data-k="g2-mar-29-blog-elegir-software-dato-del-mes"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g2-mar-29-blog-elegir-software-dato-del-mes"><span aria-hidden="true"></span></label><span class="fecha">Mar 29</span><h3>Blog elegir software + dato del mes</h3><span class="tipo">Mensaje + enlace</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">«Del blog del sabado: como elegir software de estructuras sin casarse con la marca. Y el dato que mas se comento este mes: la cuantia minima del 1% — si se lo perdieron, esta fijado en el feed.»</div>
 </div>
-<div class="pieza" data-sem="4"><div class="pieza-cab"><span class="fecha">Jue 1 oct</span><h3>Venta · cierre de cohorte ACERO (+ tutor si esta vivo)</h3><span class="tipo">Mensaje directo</span></div>
+<div class="pieza col" data-sem="4" data-k="g2-jue-1-oct-venta-cierre-de-cohorte-acero-tutor-si-esta-vivo"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g2-jue-1-oct-venta-cierre-de-cohorte-acero-tutor-si-esta-vivo"><span aria-hidden="true"></span></label><span class="fecha">Jue 1 oct</span><h3>Venta · cierre de cohorte ACERO (+ tutor si esta vivo)</h3><span class="tipo">Mensaje directo</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">«Ultimos [CUPOS REALES] cupos de la cohorte de ACERO. [SI EL TUTOR ESTA EN PRODUCCION: Y esta cohorte estrena el tutor de IA — le preguntas al programa y te contesta con la clase exacta.] Respondan ACERO y les mando el temario.»</div>
 </div>
-<div class="pieza" data-sem="4"><div class="pieza-cab"><span class="fecha">Vie 2 oct</span><h3>Cierre de mes · pregunta abierta</h3><span class="tipo">Pregunta abierta</span></div>
+<div class="pieza col" data-sem="4" data-k="g2-vie-2-oct-cierre-de-mes-pregunta-abierta"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g2-vie-2-oct-cierre-de-mes-pregunta-abierta"><span aria-hidden="true"></span></label><span class="fecha">Vie 2 oct</span><h3>Cierre de mes · pregunta abierta</h3><span class="tipo">Pregunta abierta</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">«Cerramos el mes: ¿que tema quieren que tratemos en octubre? Lo que mas se repita entra directo a la matriz. Aqui se decide el contenido, no en una oficina.»</div>
 </div></section>
 <section id="tab-g3" hidden><h2>GRUPO 3 · Blog de Design Modeling Academy</h2>
 <p class="intro">Un articulo por semana, siempre sabado, informativo sobre temas en tendencia. SIEMPRE con CTA a una campaña del mes o a un recurso gratuito. El post de anuncio con el enlace sale el mismo sabado en el feed; a comunidades va el martes.</p>
 <ul class="reglas"><li>El CTA del blog nunca es generico: apunta a la campaña activa (ACERO / Master) o a un lead magnet concreto con su palabra clave.</li></ul>
-<div class="filtro" data-scope="g3"><button class="fbtn" data-sem="0" aria-pressed="true">Todas</button><button class="fbtn" data-sem="1" aria-pressed="false">S1 · 7-13 sep</button><button class="fbtn" data-sem="2" aria-pressed="false">S2 · 14-20 sep</button><button class="fbtn" data-sem="3" aria-pressed="false">S3 · 21-27 sep</button><button class="fbtn" data-sem="4" aria-pressed="false">S4 · 28 sep - 2 oct</button></div>
-<div class="pieza" data-sem="1"><div class="pieza-cab"><span class="fecha">Sab 12</span><h3>Cómo la IA está revolucionando la arquitectura moderna</h3><span class="tipo">Articulo + portada</span></div>
+<div class="filtro" data-scope="g3"><button class="fbtn" data-sem="0" aria-pressed="true">Todas</button><button class="fbtn" data-sem="1" aria-pressed="false">S1 · 7-13 sep</button><button class="fbtn" data-sem="2" aria-pressed="false">S2 · 14-20 sep</button><button class="fbtn" data-sem="3" aria-pressed="false">S3 · 21-27 sep</button><button class="fbtn" data-sem="4" aria-pressed="false">S4 · 28 sep - 2 oct</button></div><div class="avance"><span><b class="n">0</b> de <b class="tot">0</b> marcadas</span><button type="button" class="reabrir">Reabrir todas</button></div>
+<div class="pieza col" data-sem="1" data-k="g3-sab-12-como-la-ia-esta-revolucionando-la-arquitectura-moderna"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g3-sab-12-como-la-ia-esta-revolucionando-la-arquitectura-moderna"><span aria-hidden="true"></span></label><span class="fecha">Sab 12</span><h3>Cómo la IA está revolucionando la arquitectura moderna</h3><span class="tipo">Articulo + portada</span></div>
 <p class="nota">CTA del articulo: GPT IA Pro (recurso gratis) + mencion de la ruta del Master (sin precio).</p>
 <span class="rot">Hook</span><div class="pegar">La IA no viene a diseñar por el arquitecto; viene a acelerar el proceso creativo y técnico.</div>
 <span class="rot">Texto</span><div class="pegar">Escribimos sobre cómo la IA está cambiando la arquitectura (sin reemplazar al arquitecto). Link en bio / comenta “IA”.</div>
 </div>
-<div class="pieza" data-sem="2"><div class="pieza-cab"><span class="fecha">Sab 19</span><h3>Comparativa ETABS vs SAP2000 para análisis estructural</h3><span class="tipo">Articulo + portada</span></div>
+<div class="pieza col" data-sem="2" data-k="g3-sab-19-comparativa-etabs-vs-sap2000-para-analisis-estructural"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g3-sab-19-comparativa-etabs-vs-sap2000-para-analisis-estructural"><span aria-hidden="true"></span></label><span class="fecha">Sab 19</span><h3>Comparativa ETABS vs SAP2000 para análisis estructural</h3><span class="tipo">Articulo + portada</span></div>
 <p class="nota">CTA: la herramienta de las 5 verificaciones en acero (comenta ACERO) + cohorte abierta.</p>
 <span class="rot">Hook</span><div class="pegar">La pregunta no es cuál es mejor, sino cuál es mejor PARA TU proyecto.</div>
 <span class="rot">Texto</span><div class="pegar">Escribimos la comparativa completa ETABS vs SAP2000 para que elijas bien según tu proyecto. Link en bio / comenta “BIM” o “IA”.</div>
 </div>
-<div class="pieza" data-sem="3"><div class="pieza-cab"><span class="fecha">Sab 26</span><h3>Cómo elegir el software de estructuras adecuado</h3><span class="tipo">Articulo + portada</span></div>
+<div class="pieza col" data-sem="3" data-k="g3-sab-26-como-elegir-el-software-de-estructuras-adecuado"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g3-sab-26-como-elegir-el-software-de-estructuras-adecuado"><span aria-hidden="true"></span></label><span class="fecha">Sab 26</span><h3>Cómo elegir el software de estructuras adecuado</h3><span class="tipo">Articulo + portada</span></div>
 <p class="nota">CTA: test de nivelacion BIM (NIVEL) + curso introductorio BIM gratis.</p>
 <span class="rot">Hook</span><div class="pegar">Elegir software no es elegir el ‘más potente’, sino el que encaja con tu tipo de estructura y tu flujo.</div>
 <span class="rot">Texto</span><div class="pegar">Guía para elegir tu software de estructuras según el proyecto. Link en bio / comenta “BIM”.</div>
 </div>
-<div class="pieza" data-sem="4"><div class="pieza-cab"><span class="fecha">Sab 3 oct</span><h3>Impacto de la tecnología BIM en la sostenibilidad</h3><span class="tipo">Articulo + portada</span></div>
+<div class="pieza col" data-sem="4" data-k="g3-sab-3-oct-impacto-de-la-tecnologia-bim-en-la-sostenibilidad"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g3-sab-3-oct-impacto-de-la-tecnologia-bim-en-la-sostenibilidad"><span aria-hidden="true"></span></label><span class="fecha">Sab 3 oct</span><h3>Impacto de la tecnología BIM en la sostenibilidad</h3><span class="tipo">Articulo + portada</span></div>
 <p class="nota">Ya queda escrito para arrancar octubre; CTA: ebook BIM gratis.</p>
 <span class="rot">Hook</span><div class="pegar">Sostenibilidad no es solo ‘materiales verdes’: es decidir bien desde el modelo, y ahí entra el BIM.</div>
 <span class="rot">Texto</span><div class="pegar">Escribimos sobre cómo el BIM ayuda a construir más sostenible. Link en bio / comenta “BIM”.</div>
@@ -495,73 +519,73 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 <section id="tab-g4" hidden><h2>GRUPO 4 · LinkedIn — Design Modeling Academy · Design Modeling DG · Gabriel Pantoja</h2>
 <p class="intro">Una publicacion por dia, lunes a viernes, intercalando las 3 paginas (1-2 por pagina a la semana). Academy = autoridad formativa (valor BIM/IA y oferta educativa). DG = prueba tecnica (proyectos reales, casos, metodologia). Gabriel = voz humana (opinion, aprendizajes, detras de camaras). NORMAS: solo videos HORIZONTALES y PDF; nunca «comenta la palabra» — pregunta abierta o DM.</p>
 <ul class="reglas"><li>Los PDF salen del carrusel del feed de esa semana, rediagramados (no el mismo 4:5).</li><li>Los videos horizontales: el master 16:9 del comercial Revit+IA ya esta en Vimeo; los reels verticales NO se suben a LinkedIn.</li><li>Gabriel escribe en primera persona; Academy y DG en voz de marca.</li></ul>
-<div class="filtro" data-scope="g4"><button class="fbtn" data-sem="0" aria-pressed="true">Todas</button><button class="fbtn" data-sem="1" aria-pressed="false">S1 · 7-13 sep</button><button class="fbtn" data-sem="2" aria-pressed="false">S2 · 14-20 sep</button><button class="fbtn" data-sem="3" aria-pressed="false">S3 · 21-27 sep</button><button class="fbtn" data-sem="4" aria-pressed="false">S4 · 28 sep - 2 oct</button></div>
-<div class="pieza" data-sem="1"><div class="pieza-cab"><span class="fecha">Lun 7</span><h3>Academy · PDF «3 señales de que tu oficina necesita BIM+IA»</h3><span class="tipo">PDF</span></div>
+<div class="filtro" data-scope="g4"><button class="fbtn" data-sem="0" aria-pressed="true">Todas</button><button class="fbtn" data-sem="1" aria-pressed="false">S1 · 7-13 sep</button><button class="fbtn" data-sem="2" aria-pressed="false">S2 · 14-20 sep</button><button class="fbtn" data-sem="3" aria-pressed="false">S3 · 21-27 sep</button><button class="fbtn" data-sem="4" aria-pressed="false">S4 · 28 sep - 2 oct</button></div><div class="avance"><span><b class="n">0</b> de <b class="tot">0</b> marcadas</span><button type="button" class="reabrir">Reabrir todas</button></div>
+<div class="pieza col" data-sem="1" data-k="g4-lun-7-academy-pdf-3-senales-de-que-tu-oficina-necesita-bim-ia"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g4-lun-7-academy-pdf-3-senales-de-que-tu-oficina-necesita-bim-ia"><span aria-hidden="true"></span></label><span class="fecha">Lun 7</span><h3>Academy · PDF «3 señales de que tu oficina necesita BIM+IA»</h3><span class="tipo">PDF</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">El carrusel del feed rediagramado a PDF horizontal. Cierre: ¿cuantas señales ven en su oficina?</div>
 </div>
-<div class="pieza" data-sem="1"><div class="pieza-cab"><span class="fecha">Mar 8</span><h3>DG · Video horizontal del comercial Revit+IA</h3><span class="tipo">Video horizontal</span></div>
+<div class="pieza col" data-sem="1" data-k="g4-mar-8-dg-video-horizontal-del-comercial-revit-ia"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g4-mar-8-dg-video-horizontal-del-comercial-revit-ia"><span aria-hidden="true"></span></label><span class="fecha">Mar 8</span><h3>DG · Video horizontal del comercial Revit+IA</h3><span class="tipo">Video horizontal</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">El master 16:9 de 10s ya producido + texto de metodologia: como conectamos el modelo con la IA en un proyecto real. Pregunta: ¿que proceso automatizarian primero?</div>
 </div>
-<div class="pieza" data-sem="1"><div class="pieza-cab"><span class="fecha">Mie 9</span><h3>Academy · El dato de la cuantia minima</h3><span class="tipo">Imagen + texto</span></div>
+<div class="pieza col" data-sem="1" data-k="g4-mie-9-academy-el-dato-de-la-cuantia-minima"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g4-mie-9-academy-el-dato-de-la-cuantia-minima"><span aria-hidden="true"></span></label><span class="fecha">Mie 9</span><h3>Academy · El dato de la cuantia minima</h3><span class="tipo">Imagen + texto</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">El calculo del post del viernes adelantado a LinkedIn con lectura profesional: por que el 1% existe (flujo plastico). Pregunta: ¿con que cuantia arrancan columnas?</div>
 </div>
-<div class="pieza" data-sem="1"><div class="pieza-cab"><span class="fecha">Jue 10</span><h3>Gabriel · «El error que me ahorro 2 horas»</h3><span class="tipo">Texto</span></div>
+<div class="pieza col" data-sem="1" data-k="g4-jue-10-gabriel-el-error-que-me-ahorro-2-horas"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g4-jue-10-gabriel-el-error-que-me-ahorro-2-horas"><span aria-hidden="true"></span></label><span class="fecha">Jue 10</span><h3>Gabriel · «El error que me ahorro 2 horas»</h3><span class="tipo">Texto</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">Primera persona: la historia real del reel Valor 6 — el error de Revit, pegarlo en ChatGPT con contexto, validar la salida. Aprendizaje: la IA acelera, el criterio decide. Sin video (el reel es vertical).</div>
 </div>
-<div class="pieza" data-sem="1"><div class="pieza-cab"><span class="fecha">Vie 11</span><h3>DG · Caso corto: coordinacion que evito un choque</h3><span class="tipo">Imagen + texto</span></div>
+<div class="pieza col" data-sem="1" data-k="g4-vie-11-dg-caso-corto-coordinacion-que-evito-un-choque"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g4-vie-11-dg-caso-corto-coordinacion-que-evito-un-choque"><span aria-hidden="true"></span></label><span class="fecha">Vie 11</span><h3>DG · Caso corto: coordinacion que evito un choque</h3><span class="tipo">Imagen + texto</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">Una captura real de Navisworks de proyecto propio (sin datos del cliente) y el costo evitado. Pregunta abierta.</div>
 </div>
-<div class="pieza" data-sem="2"><div class="pieza-cab"><span class="fecha">Lun 14</span><h3>Academy · PDF «Coordinacion con Navisworks»</h3><span class="tipo">PDF</span></div>
+<div class="pieza col" data-sem="2" data-k="g4-lun-14-academy-pdf-coordinacion-con-navisworks"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g4-lun-14-academy-pdf-coordinacion-con-navisworks"><span aria-hidden="true"></span></label><span class="fecha">Lun 14</span><h3>Academy · PDF «Coordinacion con Navisworks»</h3><span class="tipo">PDF</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">El carrusel del lunes rediagramado.</div>
 </div>
-<div class="pieza" data-sem="2"><div class="pieza-cab"><span class="fecha">Mar 15</span><h3>Gabriel · Opinion: «el salto que mas cuesta»</h3><span class="tipo">Texto</span></div>
+<div class="pieza col" data-sem="2" data-k="g4-mar-15-gabriel-opinion-el-salto-que-mas-cuesta"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g4-mar-15-gabriel-opinion-el-salto-que-mas-cuesta"><span aria-hidden="true"></span></label><span class="fecha">Mar 15</span><h3>Gabriel · Opinion: «el salto que mas cuesta»</h3><span class="tipo">Texto</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">De ejecutar a decidir: por que el salto de modelador a coordinador no es de software. Cierra preguntando en que peldaño esta cada quien.</div>
 </div>
-<div class="pieza" data-sem="2"><div class="pieza-cab"><span class="fecha">Mie 16</span><h3>Academy · Articulo: IA en arquitectura (blog del sabado)</h3><span class="tipo">Articulo</span></div>
+<div class="pieza col" data-sem="2" data-k="g4-mie-16-academy-articulo-ia-en-arquitectura-blog-del-sabado"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g4-mie-16-academy-articulo-ia-en-arquitectura-blog-del-sabado"><span aria-hidden="true"></span></label><span class="fecha">Mie 16</span><h3>Academy · Articulo: IA en arquitectura (blog del sabado)</h3><span class="tipo">Articulo</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">El blog del Sab 12 republicado como articulo nativo con el CTA a GPT IA Pro.</div>
 </div>
-<div class="pieza" data-sem="2"><div class="pieza-cab"><span class="fecha">Jue 17</span><h3>DG · Video horizontal: escena de coordinacion del comercial</h3><span class="tipo">Video horizontal</span></div>
+<div class="pieza col" data-sem="2" data-k="g4-jue-17-dg-video-horizontal-escena-de-coordinacion-del-comercial"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g4-jue-17-dg-video-horizontal-escena-de-coordinacion-del-comercial"><span aria-hidden="true"></span></label><span class="fecha">Jue 17</span><h3>DG · Video horizontal: escena de coordinacion del comercial</h3><span class="tipo">Video horizontal</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">Metodologia de deteccion de interferencias, con pregunta tecnica al cierre.</div>
 </div>
-<div class="pieza" data-sem="2"><div class="pieza-cab"><span class="fecha">Vie 18</span><h3>Gabriel · Detras de camaras: grabando los reels</h3><span class="tipo">Foto + texto</span></div>
+<div class="pieza col" data-sem="2" data-k="g4-vie-18-gabriel-detras-de-camaras-grabando-los-reels"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g4-vie-18-gabriel-detras-de-camaras-grabando-los-reels"><span aria-hidden="true"></span></label><span class="fecha">Vie 18</span><h3>Gabriel · Detras de camaras: grabando los reels</h3><span class="tipo">Foto + texto</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">Humanizar: como se produce el contenido tecnico del mes (la sesion de grabacion del 7-8). Ligero, sin venta.</div>
 </div>
-<div class="pieza" data-sem="3"><div class="pieza-cab"><span class="fecha">Lun 21</span><h3>Academy · PDF «Errores al modelar en Revit»</h3><span class="tipo">PDF</span></div>
+<div class="pieza col" data-sem="3" data-k="g4-lun-21-academy-pdf-errores-al-modelar-en-revit"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g4-lun-21-academy-pdf-errores-al-modelar-en-revit"><span aria-hidden="true"></span></label><span class="fecha">Lun 21</span><h3>Academy · PDF «Errores al modelar en Revit»</h3><span class="tipo">PDF</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">El carrusel del lunes en PDF.</div>
 </div>
-<div class="pieza" data-sem="3"><div class="pieza-cab"><span class="fecha">Mar 22</span><h3>DG · Mitos de la automatizacion (lectura tecnica)</h3><span class="tipo">Imagen + texto</span></div>
+<div class="pieza col" data-sem="3" data-k="g4-mar-22-dg-mitos-de-la-automatizacion-lectura-tecnica"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g4-mar-22-dg-mitos-de-la-automatizacion-lectura-tecnica"><span aria-hidden="true"></span></label><span class="fecha">Mar 22</span><h3>DG · Mitos de la automatizacion (lectura tecnica)</h3><span class="tipo">Imagen + texto</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">Los 3 mitos del carrusel con posicion de consultoria: cual mito les cuesta mas caro a las oficinas.</div>
 </div>
-<div class="pieza" data-sem="3"><div class="pieza-cab"><span class="fecha">Mie 23</span><h3>Academy · PDF «Las 4 puertas» (LA PIEZA DEL MES)</h3><span class="tipo">PDF</span></div>
+<div class="pieza col" data-sem="3" data-k="g4-mie-23-academy-pdf-las-4-puertas-la-pieza-del-mes"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g4-mie-23-academy-pdf-las-4-puertas-la-pieza-del-mes"><span aria-hidden="true"></span></label><span class="fecha">Mie 23</span><h3>Academy · PDF «Las 4 puertas» (LA PIEZA DEL MES)</h3><span class="tipo">PDF</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">La nueva arquitectura en PDF horizontal + el post largo ya escrito (esta en el guion de sep-carrusel-4-puertas, campo post_linkedin). Pregunta: ¿en que etapa esta tu equipo?</div>
 </div>
-<div class="pieza" data-sem="3"><div class="pieza-cab"><span class="fecha">Jue 24</span><h3>Gabriel · Por que reorganizamos todo en 4 etapas</h3><span class="tipo">Texto</span></div>
+<div class="pieza col" data-sem="3" data-k="g4-jue-24-gabriel-por-que-reorganizamos-todo-en-4-etapas"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g4-jue-24-gabriel-por-que-reorganizamos-todo-en-4-etapas"><span aria-hidden="true"></span></label><span class="fecha">Jue 24</span><h3>Gabriel · Por que reorganizamos todo en 4 etapas</h3><span class="tipo">Texto</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">La historia de la decision en primera persona: escuchar «quiero aprender BIM» mil veces y entender que nadie esta en la misma etapa. Voz humana del anuncio de Academy del dia anterior.</div>
 </div>
-<div class="pieza" data-sem="3"><div class="pieza-cab"><span class="fecha">Vie 25</span><h3>DG · Video horizontal: clash ambar → verde</h3><span class="tipo">Video horizontal</span></div>
+<div class="pieza col" data-sem="3" data-k="g4-vie-25-dg-video-horizontal-clash-ambar-verde"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g4-vie-25-dg-video-horizontal-clash-ambar-verde"><span aria-hidden="true"></span></label><span class="fecha">Vie 25</span><h3>DG · Video horizontal: clash ambar → verde</h3><span class="tipo">Video horizontal</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">La escena de resolucion del comercial + texto sobre validacion: un render impecable puede esconder errores; el flujo de verificacion es lo que firma.</div>
 </div>
-<div class="pieza" data-sem="4"><div class="pieza-cab"><span class="fecha">Lun 28</span><h3>Academy · El tutor de IA de la especializacion (CONDICIONADO)</h3><span class="tipo">PDF / imagen</span></div>
+<div class="pieza col" data-sem="4" data-k="g4-lun-28-academy-el-tutor-de-ia-de-la-especializacion-condicionado"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g4-lun-28-academy-el-tutor-de-ia-de-la-especializacion-condicionado"><span aria-hidden="true"></span></label><span class="fecha">Lun 28</span><h3>Academy · El tutor de IA de la especializacion (CONDICIONADO)</h3><span class="tipo">PDF / imagen</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">El post largo ya escrito (campo post_linkedin de sep-acero-agente-ia): las 3 decisiones de diseño del tutor. SOLO con el tutor en produccion; alternativa: PDF de las 5 verificaciones.</div>
 </div>
-<div class="pieza" data-sem="4"><div class="pieza-cab"><span class="fecha">Mar 29</span><h3>Gabriel · Aprendizaje del mes</h3><span class="tipo">Texto</span></div>
+<div class="pieza col" data-sem="4" data-k="g4-mar-29-gabriel-aprendizaje-del-mes"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g4-mar-29-gabriel-aprendizaje-del-mes"><span aria-hidden="true"></span></label><span class="fecha">Mar 29</span><h3>Gabriel · Aprendizaje del mes</h3><span class="tipo">Texto</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">Que aprendimos midiendo el contenido: el dato concreto gana a la frase inspiracional. Con los numeros reales del mes (se completan de la matriz el dia del envio).</div>
 </div>
-<div class="pieza" data-sem="4"><div class="pieza-cab"><span class="fecha">Mie 30</span><h3>Academy · Articulo: elegir software de estructuras</h3><span class="tipo">Articulo</span></div>
+<div class="pieza col" data-sem="4" data-k="g4-mie-30-academy-articulo-elegir-software-de-estructuras"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g4-mie-30-academy-articulo-elegir-software-de-estructuras"><span aria-hidden="true"></span></label><span class="fecha">Mie 30</span><h3>Academy · Articulo: elegir software de estructuras</h3><span class="tipo">Articulo</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">El blog del Sab 26 como articulo nativo, CTA al test de nivel.</div>
 </div>
-<div class="pieza" data-sem="4"><div class="pieza-cab"><span class="fecha">Jue 1 oct</span><h3>DG · Caso: presupuesto de acero con la formula Ø²/162</h3><span class="tipo">Imagen + texto</span></div>
+<div class="pieza col" data-sem="4" data-k="g4-jue-1-oct-dg-caso-presupuesto-de-acero-con-la-formula-2-162"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g4-jue-1-oct-dg-caso-presupuesto-de-acero-con-la-formula-2-162"><span aria-hidden="true"></span></label><span class="fecha">Jue 1 oct</span><h3>DG · Caso: presupuesto de acero con la formula Ø²/162</h3><span class="tipo">Imagen + texto</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">Adelanto profesional del post del viernes: estimar acero sin planilla en visita tecnica.</div>
 </div>
-<div class="pieza" data-sem="4"><div class="pieza-cab"><span class="fecha">Vie 2 oct</span><h3>Gabriel · Cierre de mes + que viene</h3><span class="tipo">Texto</span></div>
+<div class="pieza col" data-sem="4" data-k="g4-vie-2-oct-gabriel-cierre-de-mes-que-viene"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g4-vie-2-oct-gabriel-cierre-de-mes-que-viene"><span aria-hidden="true"></span></label><span class="fecha">Vie 2 oct</span><h3>Gabriel · Cierre de mes + que viene</h3><span class="tipo">Texto</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">Balance personal del mes y adelanto de octubre. Invita a seguir a las 3 paginas.</div>
 </div></section>
 <section id="tab-g5" hidden><h2>GRUPO 5 · Historias de Instagram (y Facebook stories)</h2>
 <p class="intro">Cuatro historias al día, de lunes a viernes, en este orden: <b>relleno</b> (abre en humano) → <b>valor</b> (el dato del día) → <b>interacción</b> (el sticker que abre el DM) → <b>venta</b> (pide una palabra, que es lo único que el bot puede recoger). Cada día es un arco, no cuatro piezas sueltas.</p>
 <ul class="reglas"><li>El sticker es el CTA: una historia sin sticker solo se ve, no convierte.</li><li>Nunca precio ni «inscribete» en historia: el objetivo es que escriban.</li><li>Maximo 5 frames por secuencia.</li><li>Las buenas secuencias se guardan en DESTACADAS (ACERO · BIM+IA · Herramientas · Comunidad · Alumnos).</li><li>Rotacion de venta de los jueves: S1 cupos ACERO · S2 objecion ACERO · S3 espejo Master (4 puertas) · S4 tutor de IA (solo si esta en produccion; si no, repite cupos con numero actualizado).</li></ul>
-<div class="filtro" data-scope="g5"><button class="fbtn" data-sem="0" aria-pressed="true">Todas</button><button class="fbtn" data-sem="1" aria-pressed="false">S1 · 7-13 sep</button><button class="fbtn" data-sem="2" aria-pressed="false">S2 · 14-20 sep</button><button class="fbtn" data-sem="3" aria-pressed="false">S3 · 21-27 sep</button><button class="fbtn" data-sem="4" aria-pressed="false">S4 · 28 sep - 2 oct</button></div>
+<div class="filtro" data-scope="g5"><button class="fbtn" data-sem="0" aria-pressed="true">Todas</button><button class="fbtn" data-sem="1" aria-pressed="false">S1 · 7-13 sep</button><button class="fbtn" data-sem="2" aria-pressed="false">S2 · 14-20 sep</button><button class="fbtn" data-sem="3" aria-pressed="false">S3 · 21-27 sep</button><button class="fbtn" data-sem="4" aria-pressed="false">S4 · 28 sep - 2 oct</button></div><div class="avance"><span><b class="n">0</b> de <b class="tot">0</b> marcadas</span><button type="button" class="reabrir">Reabrir todas</button></div>
 <div class="semana" data-sem="1"><div class="semana-cab"><span class="snum">S1</span><div><h3>El error que cuesta plata (ACERO)</h3><span class="rango">Lun 7 – Vie 11 de septiembre</span></div></div><p class="nota">Arranca el mes con lo que mejor funciono en agosto: el dato de calculo verificable. El hilo de la semana lleva del error tipico al recurso gratuito de las 5 verificaciones.</p>
-<div class="dia"><h4>Lunes 7 · <span>El arranque: tres señales</span></h4>
+<div class="dia col" data-k="g5-lunes-7"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-lunes-7"><span aria-hidden="true"></span></label>Lunes 7 · <span>El arranque: tres señales</span></h4>
 <div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
 <div class="pegar">Lunes. Café, y una pregunta que me hizo un alumno el viernes y no me dejó dormir.</div>
 <p class="sticker"><b>Sticker:</b> Ninguno.</p>
@@ -583,7 +607,7 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 <div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Modelo BIM blanco de un edificio pequeño flotando sobre una retícula azul, con líneas de coordinación conectando sus partes en ámbar. Espacio limpio en el centro-bajo para escribir encima. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
 </div>
 </div>
-<div class="dia"><h4>Martes 8 · <span>Detrás de cámaras + el error de Revit</span></h4>
+<div class="dia col" data-k="g5-martes-8"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-martes-8"><span aria-hidden="true"></span></label>Martes 8 · <span>Detrás de cámaras + el error de Revit</span></h4>
 <div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
 <div class="pegar">Hoy grabamos. Así se ve esto por dentro (spoiler: menos glamuroso de lo que parece).</div>
 <p class="sticker"><b>Sticker:</b> Ninguno.</p>
@@ -605,7 +629,7 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 <div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Burbuja de chat de IA sobre fondo azul, con una respuesta técnica esquematizada en líneas (sin texto real), y un pequeño ícono de Revit-like en la esquina. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
 </div>
 </div>
-<div class="dia"><h4>Miércoles 9 · <span>El reel del día: Revit + ChatGPT</span></h4>
+<div class="dia col" data-k="g5-miercoles-9"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-miercoles-9"><span aria-hidden="true"></span></label>Miércoles 9 · <span>El reel del día: Revit + ChatGPT</span></h4>
 <div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
 <div class="pegar">Ya está arriba. 30 segundos, y creo que es de lo más útil que hemos publicado.</div>
 <p class="sticker"><b>Sticker:</b> Ninguno.</p>
@@ -627,7 +651,7 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 <div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Cuatro puertas alineadas en perspectiva sobre suelo de retícula azul; la cuarta está iluminada en ámbar. Estilo arquitectónico limpio. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
 </div>
 </div>
-<div class="dia"><h4>Jueves 10 · <span>VENTA · Cupos de ACERO</span></h4>
+<div class="dia col" data-k="g5-jueves-10"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-jueves-10"><span aria-hidden="true"></span></label>Jueves 10 · <span>VENTA · Cupos de ACERO</span></h4>
 <div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
 <div class="pegar">Pregunta honesta que me llegó ayer: «¿esto sirve si ya llevo años trabajando?»</div>
 <p class="sticker"><b>Sticker:</b> Ninguno.</p>
@@ -649,7 +673,7 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 <div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Perfil de acero tipo I en primer plano con profundidad de campo, sobre fondo azul marino con retícula técnica tenue. Iluminación de estudio. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
 </div>
 </div>
-<div class="dia"><h4>Viernes 11 · <span>El dato del mes: la cuantía mínima</span></h4>
+<div class="dia col" data-k="g5-viernes-11"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-viernes-11"><span aria-hidden="true"></span></label>Viernes 11 · <span>El dato del mes: la cuantía mínima</span></h4>
 <div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
 <div class="pegar">Respondo las preguntas de ayer. La primera me la hacen mucho.</div>
 <p class="sticker"><b>Sticker:</b> Ninguno.</p>
@@ -673,7 +697,7 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 </div>
 </div>
 <div class="semana" data-sem="2"><div class="semana-cab"><span class="snum">S2</span><div><h3>Coordinar y automatizar (BIM + IA)</h3><span class="rango">Lun 14 – Vie 18 de septiembre</span></div></div><p class="nota">La semana sube un nivel: del cálculo puntual a la coordinación del proyecto. Prepara el terreno para el carrusel de las 4 puertas de la semana 3.</p>
-<div class="dia"><h4>Lunes 14 · <span>Coordinación: el choque que se paga dos veces</span></h4>
+<div class="dia col" data-k="g5-lunes-14"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-lunes-14"><span aria-hidden="true"></span></label>Lunes 14 · <span>Coordinación: el choque que se paga dos veces</span></h4>
 <div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
 <div class="pegar">Historia real de obra (sin nombres): una viga y un ducto que no se hablaban.</div>
 <p class="sticker"><b>Sticker:</b> Ninguno.</p>
@@ -695,7 +719,7 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 <div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Tres modelos superpuestos en capas separadas (arquitectura, estructura, instalaciones) en explosión vertical, cada capa en un tono distinto. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
 </div>
 </div>
-<div class="dia"><h4>Martes 15 · <span>Comunidad y blog</span></h4>
+<div class="dia col" data-k="g5-martes-15"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-martes-15"><span aria-hidden="true"></span></label>Martes 15 · <span>Comunidad y blog</span></h4>
 <div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
 <div class="pegar">Nuestra comunidad de WhatsApp ya está a tope de gente que pregunta cosas buenísimas.</div>
 <p class="sticker"><b>Sticker:</b> Ninguno.</p>
@@ -717,7 +741,7 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 <div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Tabla de cantidades estilizada generándose sola desde un modelo 3D, con líneas de datos fluyendo en ámbar. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
 </div>
 </div>
-<div class="dia"><h4>Miércoles 16 · <span>Sobredimensionar no es ir por lo seguro</span></h4>
+<div class="dia col" data-k="g5-miercoles-16"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-miercoles-16"><span aria-hidden="true"></span></label>Miércoles 16 · <span>Sobredimensionar no es ir por lo seguro</span></h4>
 <div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
 <div class="pegar">Esta frase levantó ampolla la última vez que la dije. La repito igual.</div>
 <p class="sticker"><b>Sticker:</b> Ninguno.</p>
@@ -739,7 +763,7 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 <div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Sello o timbre de aprobación de ingeniero sobre un plano, en ámbar, con la estructura al fondo. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
 </div>
 </div>
-<div class="dia"><h4>Jueves 17 · <span>VENTA · La objeción del tiempo</span></h4>
+<div class="dia col" data-k="g5-jueves-17"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-jueves-17"><span aria-hidden="true"></span></label>Jueves 17 · <span>VENTA · La objeción del tiempo</span></h4>
 <div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
 <div class="pegar">«Me interesa, pero no tengo tiempo.» Me lo escribieron tres veces esta semana.</div>
 <p class="sticker"><b>Sticker:</b> Ninguno.</p>
@@ -761,7 +785,7 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 <div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Documento de temario estilizado en perspectiva, con capítulos como bloques apilados, sobre fondo azul marino. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
 </div>
 </div>
-<div class="dia"><h4>Viernes 18 · <span>Cierre de semana + recurso</span></h4>
+<div class="dia col" data-k="g5-viernes-18"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-viernes-18"><span aria-hidden="true"></span></label>Viernes 18 · <span>Cierre de semana + recurso</span></h4>
 <div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
 <div class="pegar">Resumen de la semana en 10 segundos, por si te perdiste algo.</div>
 <p class="sticker"><b>Sticker:</b> Ninguno.</p>
@@ -785,7 +809,7 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 </div>
 </div>
 <div class="semana" data-sem="3"><div class="semana-cab"><span class="snum">S3</span><div><h3>¿En qué etapa estás? (las 4 puertas del Máster)</h3><span class="rango">Lun 21 – Vie 25 de septiembre</span></div></div><p class="nota">La semana del lanzamiento de la nueva arquitectura. Todo el hilo lleva al diagnostico: el objetivo es que la gente se ubique en una etapa y escriba.</p>
-<div class="dia"><h4>Lunes 21 · <span>Los errores que delatan la etapa</span></h4>
+<div class="dia col" data-k="g5-lunes-21"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-lunes-21"><span aria-hidden="true"></span></label>Lunes 21 · <span>Los errores que delatan la etapa</span></h4>
 <div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
 <div class="pegar">Llevo años revisando modelos ajenos. Los errores se repiten tanto que ya sé en qué etapa está cada quien.</div>
 <p class="sticker"><b>Sticker:</b> Ninguno.</p>
@@ -807,7 +831,7 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 <div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Escalera de cuatro peldaños en isométrico sobre fondo azul, con una figura pequeña en el primer peldaño y el cuarto iluminado en ámbar. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
 </div>
 </div>
-<div class="dia"><h4>Martes 22 · <span>Mitos de la automatización</span></h4>
+<div class="dia col" data-k="g5-martes-22"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-martes-22"><span aria-hidden="true"></span></label>Martes 22 · <span>Mitos de la automatización</span></h4>
 <div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
 <div class="pegar">Tres cosas que me dicen sobre automatizar y que son mentira. Van rápido.</div>
 <p class="sticker"><b>Sticker:</b> Ninguno.</p>
@@ -829,7 +853,7 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 <div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Cerebro estilizado hecho de circuitos conectado a un modelo de edificio, ambos en línea fina blanca con acentos ámbar. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
 </div>
 </div>
-<div class="dia"><h4>Miércoles 23 · <span>LAS 4 PUERTAS (la pieza del mes)</span></h4>
+<div class="dia col" data-k="g5-miercoles-23"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-miercoles-23"><span aria-hidden="true"></span></label>Miércoles 23 · <span>LAS 4 PUERTAS (la pieza del mes)</span></h4>
 <div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
 <div class="pegar">Hoy publicamos algo que llevábamos meses ordenando. Reorganizamos toda la formación.</div>
 <p class="sticker"><b>Sticker:</b> Ninguno.</p>
@@ -851,7 +875,7 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 <div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Sello o medalla de certificación estilizada en ámbar sobre fondo azul, sobria y profesional, sin texto. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
 </div>
 </div>
-<div class="dia"><h4>Jueves 24 · <span>VENTA · El espejo</span></h4>
+<div class="dia col" data-k="g5-jueves-24"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-jueves-24"><span aria-hidden="true"></span></label>Jueves 24 · <span>VENTA · El espejo</span></h4>
 <div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
 <div class="pegar">Ayer alguien me respondió: «llevo 3 años modelando bien y sigo en lo mismo».</div>
 <p class="sticker"><b>Sticker:</b> Ninguno.</p>
@@ -873,7 +897,7 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 <div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Cuestionario estilizado en pantalla de teléfono con barra de progreso en ámbar, sin texto legible. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
 </div>
 </div>
-<div class="dia"><h4>Viernes 25 · <span>El espejo en video</span></h4>
+<div class="dia col" data-k="g5-viernes-25"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-viernes-25"><span aria-hidden="true"></span></label>Viernes 25 · <span>El espejo en video</span></h4>
 <div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
 <div class="pegar">Grabé este en una sola toma. Sale de una conversación real de esta semana.</div>
 <p class="sticker"><b>Sticker:</b> Ninguno.</p>
@@ -897,7 +921,7 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 </div>
 </div>
 <div class="semana" data-sem="4"><div class="semana-cab"><span class="snum">S4</span><div><h3>Nunca estudias solo (el tutor de IA) + cierre</h3><span class="rango">Lun 28 de septiembre – Vie 2 de octubre</span></div></div><p class="nota">Cierra el mes con el diferenciador nuevo de ACERO y deja la cuenta caliente para octubre. TODA la semana depende de que el tutor este desplegado.</p>
-<div class="dia"><h4>Lunes 28 · <span>La duda de las 11 de la noche</span></h4>
+<div class="dia col" data-k="g5-lunes-28"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-lunes-28"><span aria-hidden="true"></span></label>Lunes 28 · <span>La duda de las 11 de la noche</span></h4>
 <div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
 <div class="pegar">El punto débil de estudiar por tu cuenta siempre fue el mismo, y no es la falta de ganas.</div>
 <p class="sticker"><b>Sticker:</b> Ninguno.</p>
@@ -919,7 +943,7 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 <div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Burbuja de chat iluminada en ámbar en medio de una habitación oscura, como una respuesta que llega de noche. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
 </div>
 </div>
-<div class="dia"><h4>Martes 29 · <span>Cómo funciona el tutor</span></h4>
+<div class="dia col" data-k="g5-martes-29"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-martes-29"><span aria-hidden="true"></span></label>Martes 29 · <span>Cómo funciona el tutor</span></h4>
 <div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
 <div class="pegar">Llevamos semanas construyendo esto y hoy por fin lo puedo enseñar.</div>
 <p class="sticker"><b>Sticker:</b> Ninguno.</p>
@@ -941,7 +965,7 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 <div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Icono de escudo o verificación en ámbar sobre fondo azul, sobrio, junto a un pequeño ícono de libro cerrado. Representa honestidad. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
 </div>
 </div>
-<div class="dia"><h4>Miércoles 30 · <span>El tutor, en vivo</span></h4>
+<div class="dia col" data-k="g5-miercoles-30"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-miercoles-30"><span aria-hidden="true"></span></label>Miércoles 30 · <span>El tutor, en vivo</span></h4>
 <div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
 <div class="pegar">Le hice las preguntas que me mandaron ayer. Grabé la pantalla sin cortes.</div>
 <p class="sticker"><b>Sticker:</b> Ninguno.</p>
@@ -963,7 +987,7 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 <div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Dos capas de soporte representadas como dos anillos concéntricos, el interior en ámbar (humano) y el exterior en blanco (IA). Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
 </div>
 </div>
-<div class="dia"><h4>Jueves 1 de octubre · <span>VENTA · Últimos cupos</span></h4>
+<div class="dia col" data-k="g5-jueves-1-de-octubre"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-jueves-1-de-octubre"><span aria-hidden="true"></span></label>Jueves 1 de octubre · <span>VENTA · Últimos cupos</span></h4>
 <div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
 <div class="pegar">Cierro la cohorte esta semana. Ya sabes lo que hay dentro, así que voy directo.</div>
 <p class="sticker"><b>Sticker:</b> Ninguno.</p>
@@ -985,7 +1009,7 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 <div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Estructura metálica terminada al atardecer, silueta limpia contra el cielo. Aspiracional pero real. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
 </div>
 </div>
-<div class="dia"><h4>Viernes 2 de octubre · <span>Cierre de mes</span></h4>
+<div class="dia col" data-k="g5-viernes-2-de-octubre"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-viernes-2-de-octubre"><span aria-hidden="true"></span></label>Viernes 2 de octubre · <span>Cierre de mes</span></h4>
 <div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
 <div class="pegar">Se acaba septiembre. Hicimos más de lo que teníamos planeado, la verdad.</div>
 <p class="sticker"><b>Sticker:</b> Ninguno.</p>
@@ -1011,7 +1035,8 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 <section id="tab-reels" hidden><h2>Guiones de reels — para grabar</h2>
 <p class="intro">Cinco reels. Cuatro por grabar y uno ya editado. Cada guion va segundo a segundo: qué se ve, qué se dice y qué texto aparece en pantalla. Las palabras entre **asteriscos** van resaltadas en ámbar en el subtítulo.</p>
 <div class="dato"><strong>La regla del primer segundo.</strong> Se abre con la frontera — la afirmación que incomoda o el dato que sorprende — nunca con la invitación. En agosto un reel que abría presentándose hizo 198 vistas y cero de todo.</div>
-<div class="reel listo"><div class="pieza-cab"><span class="fecha">Miércoles 9</span><h3>Revit me arrojó un error y ChatGPT me ahorró 2 horas</h3><span class="tipo">30 s</span></div>
+<div class="avance"><span><b class="n">0</b> de <b class="tot">0</b> marcadas</span><button type="button" class="reabrir">Reabrir todas</button></div>
+<div class="reel col listo" data-k="reel-miercoles-9-revit-me-arrojo-un-error-y-chatgpt-me-ahorro-2-horas"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="reel-miercoles-9-revit-me-arrojo-un-error-y-chatgpt-me-ahorro-2-horas"><span aria-hidden="true"></span></label><span class="fecha">Miércoles 9</span><h3>Revit me arrojó un error y ChatGPT me ahorró 2 horas</h3><span class="tipo">30 s</span></div>
 <p class="estado">YA EDITADO — no hay que grabarlo</p>
 <p class="nota">El video está montado con el pipeline nuevo: silencios cortados, subtítulos, b-roll del comercial Revit+IA y fondo blueprint en los tramos a cámara. Lo único pendiente es confirmar la palabra clave del CTA antes de publicar.</p>
 <p class="cta-linea"><b>CTA:</b> GUÍA (⚠ confirmar palabra y que el recurso exista)</p>
@@ -1023,7 +1048,7 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 <tr><td class="t">0:20-0:27</td><td>Vuelve a cámara, fondo blueprint.</td><td>Ojo: es importante que valides todo lo que hagas con la IA. Por eso, si te interesa, comenta GUÍA y te enseño cómo usarla.</td><td>VALIDA TODO CON LA <b class="amb">IA</b></td></tr>
 <tr><td class="t">0:27-0:30</td><td>Placa final con el logo DMA.</td><td>—</td><td>—</td></tr>
 </tbody></table></div></div>
-<div class="reel "><div class="pieza-cab"><span class="fecha">Miércoles 16</span><h3>Sobredimensionar no es ir por el lado seguro</h3><span class="tipo">35-40 s</span></div>
+<div class="reel col " data-k="reel-miercoles-16-sobredimensionar-no-es-ir-por-el-lado-seguro"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="reel-miercoles-16-sobredimensionar-no-es-ir-por-el-lado-seguro"><span aria-hidden="true"></span></label><span class="fecha">Miércoles 16</span><h3>Sobredimensionar no es ir por el lado seguro</h3><span class="tipo">35-40 s</span></div>
 <p class="estado">POR GRABAR</p>
 <p class="nota">Continuación del post #1 de la historia de la cuenta (14.334 vistas, 107 comentarios). El tema está validado: se repite la fórmula en video. Tono directo, sin agresividad — incomoda la práctica, no a la persona.</p>
 <p class="cta-linea"><b>CTA:</b> ACERO → las 5 verificaciones (recurso ya existe)</p>
@@ -1035,7 +1060,7 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 <tr><td class="t">0:26-0:34</td><td>Vuelve a cámara.</td><td>Y la tercera, la que más caro sale: revisas las conexiones al final. El nudo manda, y si lo dejas para el final, rediseñas todo.</td><td>SEÑAL 3: EL <b class="amb">NUDO</b> VA AL FINAL</td></tr>
 <tr><td class="t">0:34-0:40</td><td>Cierre a cámara.</td><td>Yo uso cinco verificaciones antes de firmar cualquier cosa. Comenta ACERO y te las paso, son gratis.</td><td>COMENTA <b class="amb">ACERO</b></td></tr>
 </tbody></table></div></div>
-<div class="reel "><div class="pieza-cab"><span class="fecha">Viernes 18</span><h3>El choque que se paga dos veces</h3><span class="tipo">30-35 s</span></div>
+<div class="reel col " data-k="reel-viernes-18-el-choque-que-se-paga-dos-veces"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="reel-viernes-18-el-choque-que-se-paga-dos-veces"><span aria-hidden="true"></span></label><span class="fecha">Viernes 18</span><h3>El choque que se paga dos veces</h3><span class="tipo">30-35 s</span></div>
 <p class="estado">POR GRABAR</p>
 <p class="nota">Reemplaza a la pieza de «paquete Autodesk», que era venta blanda sin gancho. Este ángulo — el costo de detectar tarde — es el mismo que valida el módulo 2 de la nueva arquitectura.</p>
 <p class="cta-linea"><b>CTA:</b> BIM → conversación hacia el módulo BIM Coordination</p>
@@ -1046,7 +1071,7 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 <tr><td class="t">0:20-0:28</td><td>Screen-record: detección de interferencias corriendo.</td><td>Coordinar no es abrir los modelos juntos y mirar. Es tener un flujo: reglas, prioridades y un responsable por disciplina.</td><td>COORDINAR ES UN <b class="amb">FLUJO</b>, NO UNA MIRADA</td></tr>
 <tr><td class="t">0:28-0:35</td><td>A cámara, cierre.</td><td>Si en tu oficina los choques aparecen en obra, el problema no es el software. Comenta BIM y te cuento por dónde se arregla.</td><td>COMENTA <b class="amb">BIM</b></td></tr>
 </tbody></table></div></div>
-<div class="reel "><div class="pieza-cab"><span class="fecha">Viernes 25</span><h3>El salto que más cuesta</h3><span class="tipo">30 s</span></div>
+<div class="reel col " data-k="reel-viernes-25-el-salto-que-mas-cuesta"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="reel-viernes-25-el-salto-que-mas-cuesta"><span aria-hidden="true"></span></label><span class="fecha">Viernes 25</span><h3>El salto que más cuesta</h3><span class="tipo">30 s</span></div>
 <p class="estado">POR GRABAR</p>
 <p class="nota">La versión en video del carrusel de las 4 puertas. Tono personal y calmado, sin energía de vendedor: es una observación, no una arenga. Se puede grabar en una sola toma.</p>
 <p class="cta-linea"><b>CTA:</b> RUTA (⚠ requiere disparador) o NIVEL como reemplazo</p>
@@ -1057,7 +1082,7 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 <tr><td class="t">0:20-0:26</td><td>Gráfico: el peldaño 2 iluminado.</td><td>Ese salto no es de software. Nadie se convierte en coordinador por aprender otro programa.</td><td>NO ES DE <b class="amb">SOFTWARE</b></td></tr>
 <tr><td class="t">0:26-0:30</td><td>Cierre a cámara.</td><td>¿En qué peldaño estás tú? Comenta RUTA y te lo digo con tu caso.</td><td>COMENTA <b class="amb">RUTA</b></td></tr>
 </tbody></table></div></div>
-<div class="reel gated"><div class="pieza-cab"><span class="fecha">Miércoles 30</span><h3>Tu especialización ahora te contesta</h3><span class="tipo">35-40 s</span></div>
+<div class="reel col gated" data-k="reel-miercoles-30-tu-especializacion-ahora-te-contesta"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="reel-miercoles-30-tu-especializacion-ahora-te-contesta"><span aria-hidden="true"></span></label><span class="fecha">Miércoles 30</span><h3>Tu especialización ahora te contesta</h3><span class="tipo">35-40 s</span></div>
 <p class="estado">POR GRABAR — CONDICIONADO al despliegue del tutor</p>
 <p class="nota">⚠ NO se graba ni se publica hasta que el tutor esté desplegado y probado. Es grabación de pantalla REAL: lo que se ve es lo que hace. Nada de simular una respuesta que el tutor no dio.</p>
 <p class="cta-linea"><b>CTA:</b> ACERO → temario + cómo funciona el tutor</p>
@@ -1077,9 +1102,11 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 <p><b>Todo lead cae en el test.</b> Quien llena el formulario entra a la secuencia del BIM Level Test. No se le vende el módulo de golpe: primero se le confirma el nivel, y ese resultado es lo que usa el closer para vender el módulo que le toca — y para el upsell a la ruta.</p>
 <p><b>Facebook no se apaga.</b> Más de la mitad del alcance real de la cuenta viene de Facebook. Ir solo a Instagram es tirar la mitad del presupuesto.</p>
 <p><b>Qué se mira el lunes 14.</b> CPL por módulo y, sobre todo, cuántos de esos leads llenaron el test. Un módulo con CPL bajo y test sin llenar no está funcionando: está juntando correos.</p>
+<p><b>Los videos son un set.</b> Los 4 reels de 15 s se graban la misma tarde y con la misma camisa. Cada uno entra en el conjunto de anuncios de SU módulo, junto a la imagen, no en una campaña aparte: así el módulo compite consigo mismo y en una semana se sabe si convierte mejor la cara de Gabriel o la tarjeta.</p>
 </div>
+<div class="avance"><span><b class="n">0</b> de <b class="tot">0</b> marcadas</span><button type="button" class="reabrir">Reabrir todas</button></div>
 <h3 class="camp">MÁSTER BIM MANAGEMENT + IA — VENTA POR MÓDULOS · copy aprobado 1-sep</h3>
-<div class="ad"><div class="ad-cab"><span class="tipo">Post plano 4:5 + carrusel de 3 — CREATIVO NUEVO</span><h3>Módulo 1 · BIM Professional</h3><span class="precio-ad">$750 · 3 meses</span></div>
+<div class="ad col" data-k="ad-mod1"><div class="ad-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="ad-mod1"><span aria-hidden="true"></span></label><span class="tipo">Post plano 4:5 + carrusel de 3 — CREATIVO NUEVO</span><h3>Módulo 1 · BIM Professional</h3><span class="precio-ad">$750 · 3 meses</span></div>
 <p class="hook">Sabes usar Revit. Pero, ¿sabes implementar BIM en un proyecto de verdad?</p>
 <p class="etq">Texto principal — se pega tal cual</p>
 <div class="pegar">Modelar y ordenar un proyecto no son lo mismo. En 3 meses estructuras e implementas BIM con metodología: estándares, BEP y flujos de trabajo que no se te caen a mitad del proyecto.
@@ -1103,7 +1130,7 @@ Llena el formulario y te decimos si este es tu módulo.</div>
 <tr class=""><th>Nombre de campana</th><td>SEP26 | MASTER-MODULOS | &lt;modulo&gt; | FORM — asi el reporte del viernes se puede auditar sin adivinar que es cada cosa.</td></tr>
 <tr class="dura"><th>Lo que NO va</th><td>El precio de la ruta completa. La palabra «master de 12 meses». Cualquier cifra de cupos que no se haya confirmado ese dia.</td></tr>
 </tbody></table></div></div>
-<div class="ad"><div class="ad-cab"><span class="tipo">Post plano 4:5 + carrusel de 3 — CREATIVO NUEVO</span><h3>Módulo 2 · BIM Coordination</h3><span class="precio-ad">$750 · 3 meses</span></div>
+<div class="ad col" data-k="ad-mod2"><div class="ad-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="ad-mod2"><span aria-hidden="true"></span></label><span class="tipo">Post plano 4:5 + carrusel de 3 — CREATIVO NUEVO</span><h3>Módulo 2 · BIM Coordination</h3><span class="precio-ad">$750 · 3 meses</span></div>
 <p class="hook">Si descubres los choques en obra, ya pagaste el error dos veces.</p>
 <p class="etq">Texto principal — se pega tal cual</p>
 <div class="pegar">Una interferencia detectada en el modelo cuesta una tarde. La misma interferencia detectada en obra cuesta miles.
@@ -1129,7 +1156,7 @@ Llena el formulario y te decimos si este es tu módulo.</div>
 <tr class=""><th>Nombre de campana</th><td>SEP26 | MASTER-MODULOS | &lt;modulo&gt; | FORM — asi el reporte del viernes se puede auditar sin adivinar que es cada cosa.</td></tr>
 <tr class="dura"><th>Lo que NO va</th><td>El precio de la ruta completa. La palabra «master de 12 meses». Cualquier cifra de cupos que no se haya confirmado ese dia.</td></tr>
 </tbody></table></div></div>
-<div class="ad"><div class="ad-cab"><span class="tipo">Post plano 4:5 + carrusel de 3 — CREATIVO NUEVO</span><h3>Módulo 3 · BIM Management</h3><span class="precio-ad">$600 · 2 meses</span></div>
+<div class="ad col" data-k="ad-mod3"><div class="ad-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="ad-mod3"><span aria-hidden="true"></span></label><span class="tipo">Post plano 4:5 + carrusel de 3 — CREATIVO NUEVO</span><h3>Módulo 3 · BIM Management</h3><span class="precio-ad">$600 · 2 meses</span></div>
 <p class="hook">El salto de modelador a BIM Manager no es de software. Es de criterio.</p>
 <p class="etq">Texto principal — se pega tal cual</p>
 <div class="pegar">Puedes modelar impecable y seguir esperando a que alguien te diga qué modelar.
@@ -1155,7 +1182,7 @@ Llena el formulario y te decimos si este es tu módulo.</div>
 <tr class=""><th>Nombre de campana</th><td>SEP26 | MASTER-MODULOS | &lt;modulo&gt; | FORM — asi el reporte del viernes se puede auditar sin adivinar que es cada cosa.</td></tr>
 <tr class="dura"><th>Lo que NO va</th><td>El precio de la ruta completa. La palabra «master de 12 meses». Cualquier cifra de cupos que no se haya confirmado ese dia.</td></tr>
 </tbody></table></div></div>
-<div class="ad"><div class="ad-cab"><span class="tipo">Post plano 4:5 + carrusel de 3 + reel — CREATIVO NUEVO / reutiliza el comercial</span><h3>Módulo 4 · BIM + IA</h3><span class="precio-ad">$900 · 3 meses</span></div>
+<div class="ad col" data-k="ad-mod4"><div class="ad-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="ad-mod4"><span aria-hidden="true"></span></label><span class="tipo">Post plano 4:5 + carrusel de 3 + reel — CREATIVO NUEVO / reutiliza el comercial</span><h3>Módulo 4 · BIM + IA</h3><span class="precio-ad">$900 · 3 meses</span></div>
 <p class="hook">La IA ya hace parte de tu trabajo BIM. La ventaja no es usarla: es usarla con criterio.</p>
 <p class="etq">Texto principal — se pega tal cual</p>
 <div class="pegar">Si repites tareas que una máquina haría igual, no te falta tiempo: te falta automatización.
@@ -1182,7 +1209,7 @@ Llena el formulario y te decimos si este es tu módulo.</div>
 <tr class="dura"><th>Lo que NO va</th><td>El precio de la ruta completa. La palabra «master de 12 meses». Cualquier cifra de cupos que no se haya confirmado ese dia.</td></tr>
 <tr class=""><th>Video</th><td>Este es el único módulo que ya tiene video: el comercial Revit + IA producido en agosto. Se sube como creativo adicional dentro del mismo conjunto, no como campaña aparte, para que compita contra la imagen y el dato diga cuál gana.</td></tr>
 </tbody></table></div></div>
-<div class="ad"><div class="ad-cab"><span class="tipo">Post plano 4:5 — creativo existente, copy actualizado</span><h3>Anuncio de diagnóstico</h3><span class="precio-ad">Se mantiene · a WhatsApp</span></div>
+<div class="ad col" data-k="ad-diagnostico"><div class="ad-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="ad-diagnostico"><span aria-hidden="true"></span></label><span class="tipo">Post plano 4:5 — creativo existente, copy actualizado</span><h3>Anuncio de diagnóstico</h3><span class="precio-ad">Se mantiene · a WhatsApp</span></div>
 <p class="hook">¿Cuál dirías tú?</p>
 <p class="etq">Texto principal — se pega tal cual</p>
 <div class="pegar">¿Cuál dirías tú?
@@ -1204,7 +1231,7 @@ Escríbenos y te decimos en qué etapa estás — sin compromiso.</div>
 <tr class=""><th>Nombre de campana</th><td>SEP26 | DIAGNOSTICO | WA</td></tr>
 <tr class="dura"><th>Lo que NO va</th><td>Ningún precio. Este anuncio no vende, clasifica.</td></tr>
 </tbody></table></div></div>
-<div class="ad"><div class="ad-cab"><span class="tipo">Carrusel ads de 5 tarjetas — CREATIVO NUEVO</span><h3>Carrusel de la ruta completa</h3><span class="precio-ad">5 tarjetas · a formulario</span></div>
+<div class="ad col" data-k="ad-ruta"><div class="ad-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="ad-ruta"><span aria-hidden="true"></span></label><span class="tipo">Carrusel ads de 5 tarjetas — CREATIVO NUEVO</span><h3>Carrusel de la ruta completa</h3><span class="precio-ad">5 tarjetas · a formulario</span></div>
 <p class="hook">¿En qué etapa BIM estás?</p>
 <p class="etq">Texto principal — se pega tal cual</p>
 <div class="pegar">Cuatro puertas de entrada, cada una con su microcredencial avalada por Silicon Valley Futures Institute.
@@ -1230,9 +1257,135 @@ Llena el formulario y te decimos por cuál puerta entrar.</div>
 <tr class=""><th>Nombre de campana</th><td>SEP26 | MASTER-RUTA | CARRUSEL | FORM</td></tr>
 <tr class="dura"><th>REGLA DURA</th><td>El precio de la ruta NO va en el creativo ni en el copy. Se enuncia el ahorro, la cifra la dice el closer en la llamada. Si un creativo llega con el precio de la ruta puesto, no se sube.</td></tr>
 </tbody></table></div></div>
-<div class="pieza"><div class="pieza-cab"><span class="tipo">Reel ads — ya producidos + 4 por producir</span><h3>Videos de pauta del Master</h3></div>
-<div class="pegar">YA PRODUCIDOS: el comercial Revit+IA (master 16:9 y vertical 9:16, en Vimeo) y el comercial con Gabriel de protagonista (29 s, 2-sep). AJUSTE DE COMUNICACION: el copy que los acompaña cambia; ya no dice «master de 12 meses» sino «empieza por el modulo que te toca, desde $600». POR PRODUCIR: 4 reels de 15 s, uno por modulo, con Gabriel explicando en una frase que resuelve ese modulo y cerrando en el formulario.</div>
-</div>
+<h3 class="camp">VIDEOS DE PAUTA — 4 reels de 15 s, uno por módulo · POR GRABAR</h3>
+<div class="ad col" data-k="ad-reel-ad-mod1"><div class="ad-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="ad-reel-ad-mod1"><span aria-hidden="true"></span></label><span class="tipo">Reel ads 9:16 — POR GRABAR</span><h3>Reel de pauta · Módulo 1 · BIM Professional</h3><span class="precio-ad">$750 · 3 meses · 15 s</span></div>
+<p class="hook">Sabes usar Revit. Otra cosa es implementar BIM en un proyecto de verdad.</p>
+<p class="etq">Texto principal — se pega tal cual</p>
+<div class="pegar">Modelar y ordenar un proyecto no son lo mismo.
+
+En 3 meses estructuras e implementas BIM con metodología: estándares, BEP y flujos de trabajo que no se te caen a mitad del proyecto.
+
+100% asincrónico. Microcredencial de MODELADOR BIM avalada por Silicon Valley Futures Institute. $750.
+
+Llena el formulario y te decimos si este es tu módulo.</div>
+<div class="campos"><div><span class="etq">Titular</span><code>BIM Professional · $750 · 3 meses</code></div><div><span class="etq">Descripción</span><code>Microcredencial incluida</code></div></div>
+<p class="etq">Creativo</p><p class="creativo">Gabriel a cámara en una frase, corte a pantalla con un BEP real, y cierre con el sello MODELADOR BIM sobre la placa azul.</p>
+<p class="etq">Guion — 15 segundos, para grabar</p>
+<div class="tabla-scroll"><table><thead><tr><th>Tiempo</th><th>Qué se ve</th><th>Qué dice Gabriel</th><th>Texto en pantalla</th></tr></thead><tbody>
+<tr><td class="t">0:00-0:04</td><td>Primer plano de Gabriel, mirada directa. Corte seco desde negro, sin intro.</td><td>Sabes usar Revit. Otra cosa es implementar BIM en un proyecto de verdad.</td><td>SABER REVIT NO ES <b class="amb">IMPLEMENTAR BIM</b></td></tr>
+<tr><td class="t">0:04-0:11</td><td>Corte a pantalla: un BEP abierto, scroll rápido. Vuelve a Gabriel a mitad de frase.</td><td>Este módulo te da lo que sostiene el proyecto: estándares, BEP y flujos que no se caen a mitad de obra.</td><td>ESTÁNDARES · <b class="amb">BEP</b> · FLUJOS</td></tr>
+<tr><td class="t">0:11-0:15</td><td>Plano medio de Gabriel. Placa final azul con el sello MODELADOR BIM.</td><td>Tres meses, y sales con la microcredencial de Modelador BIM. Llena el formulario y te decimos si es tu módulo.</td><td><b class="amb">MODELADOR BIM</b> · $750 · 3 MESES</td></tr>
+</tbody></table></div>
+<p class="nota">Se graban los cuatro seguidos, en la misma sesion y con la misma camisa: es un set, y si se graban en dias distintos se nota en el color y deja de leerse como una familia. Gabriel a camara, sin teleprompter — la frase es corta a proposito para que salga dicha, no leida.</p>
+<details class="prompt"><summary>Prompt de imagen para ChatGPT</summary><div class="pegar">No lleva prompt de imagen: es video grabado. La placa final se monta en edición sobre fondo #0E2438 con el logo y el sello de la microcredencial.</div></details>
+<p class="etq">Ficha de montaje</p><div class="tabla-scroll"><table class="cfg"><tbody>
+<tr class=""><th>Objetivo</th><td>Clientes potenciales (leads). Van al MISMO conjunto de anuncios que la imagen de su modulo, no a una campana aparte: compiten contra la imagen y el dato dice cual gana.</td></tr>
+<tr class=""><th>Conversion</th><td>Formulario instantaneo de Meta, el mismo del modulo.</td></tr>
+<tr class=""><th>Boton</th><td>Mas informacion.</td></tr>
+<tr class=""><th>Ubicaciones</th><td>Reels e Historias de Instagram y Facebook, y feed. Es vertical: en feed se recorta solo, por eso los margenes de seguridad no se negocian.</td></tr>
+<tr class=""><th>Medidas</th><td>1080x1920 px (9:16). Nada importante en los 250 px de arriba ni en los 320 de abajo: ahi van el nombre de la cuenta y el boton del anuncio.</td></tr>
+<tr class=""><th>Duracion</th><td>15 segundos exactos. Ni 14 ni 18. Es el unico largo que aguanta un anuncio de video sin perder la mitad de la audiencia antes del CTA.</td></tr>
+<tr class=""><th>Tratamiento</th><td>El mismo de los reels de la casa: subtitulos quemados en Montserrat ExtraBold, la palabra clave en ambar #E8A04A, corte cada 3-4 segundos, sin intro ni presentacion. Audio normalizado a -14 LUFS.</td></tr>
+<tr class=""><th>Sonido</th><td>Se graba con el microfono de solapa, no con el del telefono. Un anuncio con audio de sala no lo salva ningun subtitulo: se ve barato y eso contagia al programa.</td></tr>
+<tr class="dura"><th>Lo que NO va</th><td>«Link en la bio» — el CTA es el boton del formulario, decir otra cosa manda a la gente fuera del anuncio. Tampoco el precio de la ruta completa.</td></tr>
+<tr class=""><th>Nombre de campana</th><td>SEP26 | MASTER-MODULOS | &lt;modulo&gt; | VIDEO</td></tr>
+</tbody></table></div></div>
+<div class="ad col" data-k="ad-reel-ad-mod2"><div class="ad-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="ad-reel-ad-mod2"><span aria-hidden="true"></span></label><span class="tipo">Reel ads 9:16 — POR GRABAR</span><h3>Reel de pauta · Módulo 2 · BIM Coordination</h3><span class="precio-ad">$750 · 3 meses · 15 s</span></div>
+<p class="hook">Si el choque lo descubres en obra, ya lo pagaste dos veces.</p>
+<p class="etq">Texto principal — se pega tal cual</p>
+<div class="pegar">Una interferencia detectada en el modelo cuesta una tarde. La misma detectada en obra cuesta miles.
+
+En 3 meses coordinas disciplinas, detectas interferencias antes de que existan y controlas la calidad de los entregables.
+
+100% asincrónico. Microcredencial de COORDINADOR BIM avalada por Silicon Valley Futures Institute. $750.
+
+Llena el formulario y te decimos si este es tu módulo.</div>
+<div class="campos"><div><span class="etq">Titular</span><code>BIM Coordination · $750 · 3 meses</code></div><div><span class="etq">Descripción</span><code>Microcredencial incluida</code></div></div>
+<p class="etq">Creativo</p><p class="creativo">Gabriel a cámara, corte a la interferencia marcada en Navisworks y a la foto de obra con el mismo choque, cierre con el sello COORDINADOR BIM.</p>
+<p class="etq">Guion — 15 segundos, para grabar</p>
+<div class="tabla-scroll"><table><thead><tr><th>Tiempo</th><th>Qué se ve</th><th>Qué dice Gabriel</th><th>Texto en pantalla</th></tr></thead><tbody>
+<tr><td class="t">0:00-0:04</td><td>Primer plano de Gabriel. Corte seco desde negro.</td><td>Si el choque lo descubres en obra, ya lo pagaste dos veces.</td><td>EN OBRA EL ERROR <b class="amb">CUESTA EL DOBLE</b></td></tr>
+<tr><td class="t">0:04-0:11</td><td>Corte a Navisworks con la interferencia marcada en rojo; corte duro a la foto de obra con el mismo choque.</td><td>Aquí aprendes a verlo antes: coordinas disciplinas, detectas interferencias y controlas la calidad del entregable.</td><td>DETECTAR <b class="amb">ANTES</b>, NO DESPUÉS</td></tr>
+<tr><td class="t">0:11-0:15</td><td>Gabriel de vuelta. Placa final con el sello COORDINADOR BIM.</td><td>Tres meses, microcredencial de Coordinador BIM. Llena el formulario y te decimos si es tu módulo.</td><td><b class="amb">COORDINADOR BIM</b> · $750 · 3 MESES</td></tr>
+</tbody></table></div>
+<p class="nota">Se graban los cuatro seguidos, en la misma sesion y con la misma camisa: es un set, y si se graban en dias distintos se nota en el color y deja de leerse como una familia. Gabriel a camara, sin teleprompter — la frase es corta a proposito para que salga dicha, no leida.</p>
+<details class="prompt"><summary>Prompt de imagen para ChatGPT</summary><div class="pegar">No lleva prompt de imagen: es video grabado. La foto de obra tiene que ser real, de un proyecto propio — una imagen de banco se reconoce y rompe la credibilidad.</div></details>
+<p class="etq">Ficha de montaje</p><div class="tabla-scroll"><table class="cfg"><tbody>
+<tr class=""><th>Objetivo</th><td>Clientes potenciales (leads). Van al MISMO conjunto de anuncios que la imagen de su modulo, no a una campana aparte: compiten contra la imagen y el dato dice cual gana.</td></tr>
+<tr class=""><th>Conversion</th><td>Formulario instantaneo de Meta, el mismo del modulo.</td></tr>
+<tr class=""><th>Boton</th><td>Mas informacion.</td></tr>
+<tr class=""><th>Ubicaciones</th><td>Reels e Historias de Instagram y Facebook, y feed. Es vertical: en feed se recorta solo, por eso los margenes de seguridad no se negocian.</td></tr>
+<tr class=""><th>Medidas</th><td>1080x1920 px (9:16). Nada importante en los 250 px de arriba ni en los 320 de abajo: ahi van el nombre de la cuenta y el boton del anuncio.</td></tr>
+<tr class=""><th>Duracion</th><td>15 segundos exactos. Ni 14 ni 18. Es el unico largo que aguanta un anuncio de video sin perder la mitad de la audiencia antes del CTA.</td></tr>
+<tr class=""><th>Tratamiento</th><td>El mismo de los reels de la casa: subtitulos quemados en Montserrat ExtraBold, la palabra clave en ambar #E8A04A, corte cada 3-4 segundos, sin intro ni presentacion. Audio normalizado a -14 LUFS.</td></tr>
+<tr class=""><th>Sonido</th><td>Se graba con el microfono de solapa, no con el del telefono. Un anuncio con audio de sala no lo salva ningun subtitulo: se ve barato y eso contagia al programa.</td></tr>
+<tr class="dura"><th>Lo que NO va</th><td>«Link en la bio» — el CTA es el boton del formulario, decir otra cosa manda a la gente fuera del anuncio. Tampoco el precio de la ruta completa.</td></tr>
+<tr class=""><th>Nombre de campana</th><td>SEP26 | MASTER-MODULOS | &lt;modulo&gt; | VIDEO</td></tr>
+</tbody></table></div></div>
+<div class="ad col" data-k="ad-reel-ad-mod3"><div class="ad-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="ad-reel-ad-mod3"><span aria-hidden="true"></span></label><span class="tipo">Reel ads 9:16 — POR GRABAR</span><h3>Reel de pauta · Módulo 3 · BIM Management</h3><span class="precio-ad">$600 · 2 meses · 15 s</span></div>
+<p class="hook">Puedes modelar impecable y seguir esperando a que alguien te diga qué modelar.</p>
+<p class="etq">Texto principal — se pega tal cual</p>
+<div class="pegar">El salto de modelador a BIM Manager no es de software. Es de criterio.
+
+En 2 meses planificas en 4D, controlas costos en 5D y lideras equipos BIM: dejas de ejecutar y empiezas a decidir.
+
+100% asincrónico. Microcredencial de BIM MANAGER 4D-5D avalada por Silicon Valley Futures Institute. $600 — es el módulo de entrada más corto.
+
+Llena el formulario y te decimos si este es tu módulo.</div>
+<div class="campos"><div><span class="etq">Titular</span><code>BIM Management · $600 · 2 meses</code></div><div><span class="etq">Descripción</span><code>El módulo más corto</code></div></div>
+<p class="etq">Creativo</p><p class="creativo">Gabriel a cámara, corte a un Gantt 4D corriendo y a la tabla de costos 5D, cierre con el sello BIM MANAGER 4D-5D.</p>
+<p class="etq">Guion — 15 segundos, para grabar</p>
+<div class="tabla-scroll"><table><thead><tr><th>Tiempo</th><th>Qué se ve</th><th>Qué dice Gabriel</th><th>Texto en pantalla</th></tr></thead><tbody>
+<tr><td class="t">0:00-0:04</td><td>Primer plano de Gabriel. Corte seco desde negro.</td><td>Puedes modelar impecable y seguir esperando a que alguien te diga qué modelar.</td><td>MODELAR BIEN NO ES <b class="amb">DECIDIR</b></td></tr>
+<tr><td class="t">0:04-0:11</td><td>Corte a la simulación 4D avanzando y a la tabla de costos 5D. Vuelve a Gabriel.</td><td>El salto a BIM Manager no es de software, es de criterio: planificas en 4D, controlas costos en 5D y lideras el equipo.</td><td>4D · <b class="amb">5D</b> · LIDERAZGO</td></tr>
+<tr><td class="t">0:11-0:15</td><td>Gabriel, plano medio. Placa final con el sello BIM MANAGER 4D-5D.</td><td>Dos meses, es el módulo más corto. Llena el formulario y te decimos si es tu módulo.</td><td><b class="amb">BIM MANAGER 4D-5D</b> · $600 · 2 MESES</td></tr>
+</tbody></table></div>
+<p class="nota">Se graban los cuatro seguidos, en la misma sesion y con la misma camisa: es un set, y si se graban en dias distintos se nota en el color y deja de leerse como una familia. Gabriel a camara, sin teleprompter — la frase es corta a proposito para que salga dicha, no leida.</p>
+<details class="prompt"><summary>Prompt de imagen para ChatGPT</summary><div class="pegar">No lleva prompt de imagen: es video grabado. El Gantt y la tabla se graban en pantalla, de un proyecto real, con los nombres del cliente tapados.</div></details>
+<p class="etq">Ficha de montaje</p><div class="tabla-scroll"><table class="cfg"><tbody>
+<tr class=""><th>Objetivo</th><td>Clientes potenciales (leads). Van al MISMO conjunto de anuncios que la imagen de su modulo, no a una campana aparte: compiten contra la imagen y el dato dice cual gana.</td></tr>
+<tr class=""><th>Conversion</th><td>Formulario instantaneo de Meta, el mismo del modulo.</td></tr>
+<tr class=""><th>Boton</th><td>Mas informacion.</td></tr>
+<tr class=""><th>Ubicaciones</th><td>Reels e Historias de Instagram y Facebook, y feed. Es vertical: en feed se recorta solo, por eso los margenes de seguridad no se negocian.</td></tr>
+<tr class=""><th>Medidas</th><td>1080x1920 px (9:16). Nada importante en los 250 px de arriba ni en los 320 de abajo: ahi van el nombre de la cuenta y el boton del anuncio.</td></tr>
+<tr class=""><th>Duracion</th><td>15 segundos exactos. Ni 14 ni 18. Es el unico largo que aguanta un anuncio de video sin perder la mitad de la audiencia antes del CTA.</td></tr>
+<tr class=""><th>Tratamiento</th><td>El mismo de los reels de la casa: subtitulos quemados en Montserrat ExtraBold, la palabra clave en ambar #E8A04A, corte cada 3-4 segundos, sin intro ni presentacion. Audio normalizado a -14 LUFS.</td></tr>
+<tr class=""><th>Sonido</th><td>Se graba con el microfono de solapa, no con el del telefono. Un anuncio con audio de sala no lo salva ningun subtitulo: se ve barato y eso contagia al programa.</td></tr>
+<tr class="dura"><th>Lo que NO va</th><td>«Link en la bio» — el CTA es el boton del formulario, decir otra cosa manda a la gente fuera del anuncio. Tampoco el precio de la ruta completa.</td></tr>
+<tr class=""><th>Nombre de campana</th><td>SEP26 | MASTER-MODULOS | &lt;modulo&gt; | VIDEO</td></tr>
+</tbody></table></div></div>
+<div class="ad col" data-k="ad-reel-ad-mod4"><div class="ad-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="ad-reel-ad-mod4"><span aria-hidden="true"></span></label><span class="tipo">Reel ads 9:16 — POR GRABAR</span><h3>Reel de pauta · Módulo 4 · BIM + IA</h3><span class="precio-ad">$900 · 3 meses · 15 s</span></div>
+<p class="hook">Si repites tareas que una máquina haría igual, no te falta tiempo.</p>
+<p class="etq">Texto principal — se pega tal cual</p>
+<div class="pegar">Te falta automatización.
+
+En 3 meses automatizas con Dynamo y Python, y aplicas IA en proyectos reales — con el criterio para saber cuándo la respuesta de la máquina sirve y cuándo no.
+
+100% asincrónico. Microcredencial de ESPECIALISTA BIM + IA avalada por Silicon Valley Futures Institute. $900.
+
+Llena el formulario y te decimos si este es tu módulo.</div>
+<div class="campos"><div><span class="etq">Titular</span><code>BIM + IA · $900 · 3 meses</code></div><div><span class="etq">Descripción</span><code>Dynamo, Python e IA</code></div></div>
+<p class="etq">Creativo</p><p class="creativo">Gabriel a cámara, corte a un grafo de Dynamo ejecutándose y a ChatGPT resolviendo un error real de Revit, cierre con el sello ESPECIALISTA BIM + IA.</p>
+<p class="etq">Guion — 15 segundos, para grabar</p>
+<div class="tabla-scroll"><table><thead><tr><th>Tiempo</th><th>Qué se ve</th><th>Qué dice Gabriel</th><th>Texto en pantalla</th></tr></thead><tbody>
+<tr><td class="t">0:00-0:04</td><td>Primer plano de Gabriel. Corte seco desde negro.</td><td>Si repites tareas que una máquina haría igual, no te falta tiempo.</td><td>NO TE FALTA TIEMPO: TE FALTA <b class="amb">AUTOMATIZAR</b></td></tr>
+<tr><td class="t">0:04-0:11</td><td>Corte al grafo de Dynamo ejecutándose; corte a ChatGPT resolviendo un error de Revit.</td><td>Automatizas con Dynamo y Python, y usas IA con el criterio para saber cuándo la respuesta sirve y cuándo no.</td><td>DYNAMO · PYTHON · <b class="amb">CRITERIO</b></td></tr>
+<tr><td class="t">0:11-0:15</td><td>Gabriel, plano medio. Placa final con el sello ESPECIALISTA BIM + IA.</td><td>Tres meses, microcredencial de Especialista BIM más IA. Llena el formulario y te decimos si es tu módulo.</td><td><b class="amb">ESPECIALISTA BIM + IA</b> · $900 · 3 MESES</td></tr>
+</tbody></table></div>
+<p class="nota">Se graban los cuatro seguidos, en la misma sesion y con la misma camisa: es un set, y si se graban en dias distintos se nota en el color y deja de leerse como una familia. Gabriel a camara, sin teleprompter — la frase es corta a proposito para que salga dicha, no leida.</p>
+<details class="prompt"><summary>Prompt de imagen para ChatGPT</summary><div class="pegar">No lleva prompt de imagen: es video grabado. La captura de ChatGPT tiene que ser una consulta real que funcione — si alguien la repite y no da eso, se cae la promesa.</div></details>
+<p class="etq">Ficha de montaje</p><div class="tabla-scroll"><table class="cfg"><tbody>
+<tr class=""><th>Objetivo</th><td>Clientes potenciales (leads). Van al MISMO conjunto de anuncios que la imagen de su modulo, no a una campana aparte: compiten contra la imagen y el dato dice cual gana.</td></tr>
+<tr class=""><th>Conversion</th><td>Formulario instantaneo de Meta, el mismo del modulo.</td></tr>
+<tr class=""><th>Boton</th><td>Mas informacion.</td></tr>
+<tr class=""><th>Ubicaciones</th><td>Reels e Historias de Instagram y Facebook, y feed. Es vertical: en feed se recorta solo, por eso los margenes de seguridad no se negocian.</td></tr>
+<tr class=""><th>Medidas</th><td>1080x1920 px (9:16). Nada importante en los 250 px de arriba ni en los 320 de abajo: ahi van el nombre de la cuenta y el boton del anuncio.</td></tr>
+<tr class=""><th>Duracion</th><td>15 segundos exactos. Ni 14 ni 18. Es el unico largo que aguanta un anuncio de video sin perder la mitad de la audiencia antes del CTA.</td></tr>
+<tr class=""><th>Tratamiento</th><td>El mismo de los reels de la casa: subtitulos quemados en Montserrat ExtraBold, la palabra clave en ambar #E8A04A, corte cada 3-4 segundos, sin intro ni presentacion. Audio normalizado a -14 LUFS.</td></tr>
+<tr class=""><th>Sonido</th><td>Se graba con el microfono de solapa, no con el del telefono. Un anuncio con audio de sala no lo salva ningun subtitulo: se ve barato y eso contagia al programa.</td></tr>
+<tr class="dura"><th>Lo que NO va</th><td>«Link en la bio» — el CTA es el boton del formulario, decir otra cosa manda a la gente fuera del anuncio. Tampoco el precio de la ruta completa.</td></tr>
+<tr class=""><th>Nombre de campana</th><td>SEP26 | MASTER-MODULOS | &lt;modulo&gt; | VIDEO</td></tr>
+</tbody></table></div></div>
 <h3 class="camp">ESPECIALIZACION EN ACERO (relanzamiento)</h3>
 <div class="pieza"><div class="pieza-cab"><span class="tipo">Post plano 1</span><h3>Replica IMG2 — el anuncio #1 historico</h3></div>
 <div class="pegar">¿Diseñas en acero y todavia revisas las conexiones al final? El formato IMG2 fue el mejor CPL de la cuenta ($0.48-0.67): se replica igual, solo refrescando la imagen. Boton → WhatsApp.</div>
@@ -1291,5 +1444,50 @@ Llena el formulario y te decimos por cuál puerta entrar.</div>
       vacio.style.display = visibles ? 'none' : 'block';
     });
   });
+
+  // Marcar una pieza como hecha: se cierra y deja solo el titulo. Se guarda en
+  // el navegador de quien la marca — es su avance, no el de todo el equipo —
+  // y desmarcar la vuelve a abrir entera: nunca se borra nada.
+  var LLAVE = 'dma-matriz-sep-hechas';
+  var hechas = {};
+  try { hechas = JSON.parse(localStorage.getItem(LLAVE) || '{}') || {}; } catch(e){}
+  function guardar(){
+    try { localStorage.setItem(LLAVE, JSON.stringify(hechas)); } catch(e){}
+  }
+  function contar(){
+    Array.prototype.forEach.call(document.querySelectorAll('.avance'), function(bar){
+      var sec = bar.closest('section');
+      var todas = sec.querySelectorAll('.col');
+      var listas = sec.querySelectorAll('.col.hecha');
+      bar.querySelector('.n').textContent = listas.length;
+      bar.querySelector('.tot').textContent = todas.length;
+      bar.querySelector('.reabrir').hidden = (listas.length === 0);
+    });
+  }
+  Array.prototype.forEach.call(document.querySelectorAll('.col'), function(el){
+    var caja = el.querySelector('input[type=checkbox]');
+    if (!caja) return;
+    if (hechas[el.dataset.k]) { el.classList.add('hecha'); caja.checked = true; }
+    caja.addEventListener('change', function(){
+      el.classList.toggle('hecha', caja.checked);
+      if (caja.checked) { hechas[el.dataset.k] = 1; } else { delete hechas[el.dataset.k]; }
+      guardar();
+      contar();
+    });
+  });
+  Array.prototype.forEach.call(document.querySelectorAll('.avance .reabrir'), function(b){
+    b.addEventListener('click', function(){
+      Array.prototype.forEach.call(b.closest('section').querySelectorAll('.col.hecha'),
+        function(el){
+          el.classList.remove('hecha');
+          var c = el.querySelector('input[type=checkbox]');
+          if (c) c.checked = false;
+          delete hechas[el.dataset.k];
+        });
+      guardar();
+      contar();
+    });
+  });
+  contar();
 })();
 </script>

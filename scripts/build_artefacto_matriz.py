@@ -17,6 +17,7 @@ Fuentes (aqui no se escribe contenido a mano):
 """
 import html
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -47,6 +48,26 @@ def bloque_pegar(txt):
     return f'<div class="pegar">{e(txt)}</div>'
 
 
+import unicodedata
+
+
+def clave(*partes):
+    """Identificador estable de una pieza, para recordar si esta hecha.
+
+    Se arma con el texto que ya la identifica (pestaña + fecha + titulo) y no
+    con un contador: si manana se inserta una pieza en medio, las marcas de las
+    demas no se corren una casilla.
+    """
+    txt = "-".join(str(x) for x in partes).lower()
+    txt = unicodedata.normalize("NFKD", txt).encode("ascii", "ignore").decode()
+    return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", txt)).strip("-")[:70]
+
+
+def chk(k):
+    return (f'<label class="chk" title="Marcar como hecho — la pieza se cierra">'
+            f'<input type="checkbox" data-k="{e(k)}"><span aria-hidden="true"></span></label>')
+
+
 SEMANAS_RANGO = {1: "S1 · 7-13 sep", 2: "S2 · 14-20 sep",
                  3: "S3 · 21-27 sep", 4: "S4 · 28 sep - 2 oct"}
 
@@ -71,6 +92,12 @@ def semana_de(fecha):
     if d <= 27:
         return 3
     return 4
+
+
+def barra_avance():
+    """Cuantas piezas quedan abiertas, y como volver a abrirlas todas."""
+    return ('<div class="avance"><span><b class="n">0</b> de <b class="tot">0</b> marcadas</span>'
+            '<button type="button" class="reabrir">Reabrir todas</button></div>')
 
 
 def filtro_semanas(prefijo):
@@ -162,13 +189,15 @@ def tab_feed():
     g = CAL["grupos"][0]
     o = [f'<h2>{e(g["nombre"])}</h2>', f'<p class="intro">{e(g["descripcion"])}</p>']
     o.append('<ul class="reglas">' + "".join(f'<li>{e(r)}</li>' for r in g["reglas"]) + '</ul>')
-    o.append(filtro_semanas("g1"))
+    o.append(filtro_semanas("g1") + barra_avance())
     for ent in g["calendario"]:
         pid = ent.get("id")
         p = GUI.get(pid) if pid else None
         titulo = p["titulo"] if p else ent["idea"]["titulo"]
         sem = semana_de(ent["fecha"])
-        o.append(f'<div class="pieza" data-sem="{sem}"><div class="pieza-cab">'
+        k = clave("g1", ent["fecha"], titulo)
+        o.append(f'<div class="pieza col" data-sem="{sem}" data-k="{k}">'
+                 f'<div class="pieza-cab cab">{chk(k)}'
                  f'<span class="fecha">{e(ent["fecha"])}</span>'
                  f'<h3>{e(titulo)}</h3><span class="tipo">{e(ent["formato_publicacion"])}</span></div>')
         if ent.get("nota"):
@@ -189,9 +218,9 @@ def tab_feed():
             d = ent["idea"]
             o.append(f'<span class="rot">Desarrollo</span>{bloque_pegar(d["desarrollo"])}')
             o.append('<p class="nota">El guion completo de este reel está en la pestaña <b>Reels</b>.</p>')
-        clave = pid if pid in R.FEED_PROMPTS else ("post-varilla" if "varilla" in titulo.lower() else None)
-        if clave:
-            medida, txt = R.FEED_PROMPTS[clave]
+        kp = pid if pid in R.FEED_PROMPTS else ("post-varilla" if "varilla" in titulo.lower() else None)
+        if kp:
+            medida, txt = R.FEED_PROMPTS[kp]
             o.append(prompt_img(medida, txt))
         o.append('</div>')
     return "\n".join(o)
@@ -203,13 +232,15 @@ def tab_grupo(idx):
     o = [f'<h2>{e(g["nombre"])}</h2>', f'<p class="intro">{e(g["descripcion"])}</p>']
     if g.get("reglas"):
         o.append('<ul class="reglas">' + "".join(f'<li>{e(r)}</li>' for r in g["reglas"]) + '</ul>')
-    o.append(filtro_semanas(f"g{idx+1}"))
+    o.append(filtro_semanas(f"g{idx+1}") + barra_avance())
     for ent in g["calendario"]:
         pid = ent.get("id")
         p = GUI.get(pid) if pid else None
         titulo = p["titulo"] if p else ent["idea"]["titulo"]
         sem = semana_de(ent["fecha"])
-        o.append(f'<div class="pieza" data-sem="{sem}"><div class="pieza-cab">'
+        k = clave(f"g{idx+1}", ent["fecha"], titulo)
+        o.append(f'<div class="pieza col" data-sem="{sem}" data-k="{k}">'
+                 f'<div class="pieza-cab cab">{chk(k)}'
                  f'<span class="fecha">{e(ent["fecha"])}</span>'
                  f'<h3>{e(titulo)}</h3><span class="tipo">{e(ent["formato_publicacion"])}</span></div>')
         if ent.get("nota"):
@@ -233,13 +264,15 @@ def tab_historias():
          '(el sticker que abre el DM) → <b>venta</b> (pide una palabra, que es lo único que el bot '
          'puede recoger). Cada día es un arco, no cuatro piezas sueltas.</p>']
     o.append('<ul class="reglas">' + "".join(f'<li>{e(r)}</li>' for r in g["reglas"]) + '</ul>')
-    o.append(filtro_semanas("g5"))
+    o.append(filtro_semanas("g5") + barra_avance())
     for sem in H.SEMANAS:
         o.append(f'<div class="semana" data-sem="{sem["n"]}"><div class="semana-cab"><span class="snum">S{sem["n"]}</span>'
                  f'<div><h3>{e(sem["hilo"])}</h3><span class="rango">{e(sem["rango"])}</span></div></div>'
                  f'<p class="nota">{e(sem["porque"])}</p>')
         for d in sem["dias"]:
-            o.append(f'<div class="dia"><h4>{e(d["dia"])} · <span>{e(d["titulo"])}</span></h4>')
+            k = clave("g5", d["dia"])
+            o.append(f'<div class="dia col" data-k="{k}">'
+                     f'<h4 class="cab">{chk(k)}{e(d["dia"])} · <span>{e(d["titulo"])}</span></h4>')
             for i, hh in enumerate(d["historias"], 1):
                 o.append(f'<div class="hist"><div class="hist-cab"><span class="frame">{i}</span>'
                          f'<span class="rol rol-{hh["rol"][:4].lower()}">{e(hh["rol"])}</span></div>')
@@ -260,10 +293,13 @@ def tab_reels():
          'Las palabras entre **asteriscos** van resaltadas en ámbar en el subtítulo.</p>',
          '<div class="dato"><strong>La regla del primer segundo.</strong> Se abre con la frontera — '
          'la afirmación que incomoda o el dato que sorprende — nunca con la invitación. En agosto un '
-         'reel que abría presentándose hizo 198 vistas y cero de todo.</div>']
+         'reel que abría presentándose hizo 198 vistas y cero de todo.</div>',
+         barra_avance()]
     for r in R.REELS:
         cls = "listo" if "EDITADO" in r["estado"] else ("gated" if "CONDICIONADO" in r["estado"] else "")
-        o.append(f'<div class="reel {cls}"><div class="pieza-cab"><span class="fecha">{e(r["fecha"])}</span>'
+        k = clave("reel", r["fecha"], r["titulo"])
+        o.append(f'<div class="reel col {cls}" data-k="{k}">'
+                 f'<div class="pieza-cab cab">{chk(k)}<span class="fecha">{e(r["fecha"])}</span>'
                  f'<h3>{e(r["titulo"])}</h3><span class="tipo">{e(r["duracion"])}</span></div>')
         o.append(f'<p class="estado">{e(r["estado"])}</p>')
         o.append(f'<p class="nota">{e(r["nota"])}</p>')
@@ -287,7 +323,9 @@ def ficha_anuncio(p):
     en Meta, lo de abajo se configura. Mezclarlos en un solo bloque fue lo que
     hizo que en agosto se pegaran instrucciones dentro del texto del anuncio.
     """
-    o = [f'<div class="ad"><div class="ad-cab"><span class="tipo">{e(p["formato"])}</span>'
+    k = clave("ad", p["id"])
+    o = [f'<div class="ad col" data-k="{k}"><div class="ad-cab cab">{chk(k)}'
+         f'<span class="tipo">{e(p["formato"])}</span>'
          f'<h3>{e(p["titulo"])}</h3><span class="precio-ad">{e(p["precio"])}</span></div>']
     o.append(f'<p class="hook">{e(p["hook"])}</p>')
     o.append('<p class="etq">Texto principal — se pega tal cual</p>')
@@ -297,6 +335,19 @@ def ficha_anuncio(p):
              f'<div><span class="etq">Descripción</span><code>{e(p["descripcion"])}</code></div>'
              '</div>')
     o.append(f'<p class="etq">Creativo</p><p class="creativo">{e(p["creativo"])}</p>')
+    if p.get("guion"):
+        o.append('<p class="etq">Guion — 15 segundos, para grabar</p>')
+        o.append('<div class="tabla-scroll"><table><thead><tr><th>Tiempo</th><th>Qué se ve</th>'
+                 '<th>Qué dice Gabriel</th><th>Texto en pantalla</th></tr></thead><tbody>')
+        for t, ve, di, tx in p["guion"]:
+            partes = e(tx).split("**")
+            tx_html = "".join(x if i % 2 == 0 else f'<b class="amb">{x}</b>'
+                              for i, x in enumerate(partes))
+            o.append(f'<tr><td class="t">{e(t)}</td><td>{e(ve)}</td><td>{e(di)}</td>'
+                     f'<td>{tx_html}</td></tr>')
+        o.append('</tbody></table></div>')
+    if p.get("nota"):
+        o.append(f'<p class="nota">{e(p["nota"])}</p>')
     o.append('<details class="prompt"><summary>Prompt de imagen para ChatGPT</summary>'
              f'{bloque_pegar(p["prompt"])}</details>')
     o.append('<p class="etq">Ficha de montaje</p><div class="tabla-scroll"><table class="cfg">'
@@ -317,6 +368,7 @@ def tab_pauta():
         for k, v in pub["indicaciones"]:
             o.append(f'<p><b>{e(k)}.</b> {e(v)}</p>')
         o.append('</div>')
+    o.append(barra_avance())
     for c in pub["campanas"]:
         o.append(f'<h3 class="camp">{e(c["nombre"])}</h3>')
         for p in c["piezas"]:
@@ -424,6 +476,30 @@ b.amb{color:var(--amber-deep)}
 .pegar{background:var(--surface-2);border-left:3px solid var(--amber);padding:11px 13px;
   border-radius:0 5px 5px 0;font-size:14.5px;white-space:pre-wrap}
 .prompt{margin-top:10px}
+/* ── casilla de «hecho»: cierra la pieza y deja solo el titulo ── */
+.chk{flex:0 0 auto;display:inline-flex;align-items:center;cursor:pointer;margin-right:2px}
+.chk input{position:absolute;opacity:0;width:0;height:0}
+.chk span{width:19px;height:19px;border:2px solid var(--line-strong);border-radius:5px;
+  background:var(--surface);display:block;position:relative;transition:.12s}
+.chk:hover span{border-color:var(--ok)}
+.chk input:focus-visible+span{outline:2px solid var(--amber);outline-offset:2px}
+.chk input:checked+span{background:var(--ok);border-color:var(--ok)}
+.chk input:checked+span::after{content:"";position:absolute;left:5px;top:1px;width:5px;height:10px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(43deg)}
+.col.hecha{background:var(--ok-bg);border-color:var(--ok)}
+.col.hecha>:not(.cab){display:none}
+.col.hecha>.cab{border-bottom:0;padding-bottom:0;margin-bottom:0}
+.col.hecha .fecha{background:transparent;color:var(--ok);border-color:var(--ok)}
+.col.hecha h3,.col.hecha h4{color:var(--ok)}
+.col.hecha .tipo,.col.hecha .precio-ad,.col.hecha h4>span{opacity:.6}
+.dia.col.hecha{padding-bottom:10px}
+/* barra de avance por pestaña */
+.avance{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:14px 0 4px;
+  font-size:13.5px;color:var(--ink-2)}
+.avance b{font-family:var(--mono);color:var(--ok)}
+.avance button{font:inherit;font-size:12.5px;background:var(--surface);color:var(--ink-2);
+  border:1px solid var(--line-strong);border-radius:999px;padding:4px 12px;cursor:pointer}
+.avance button:hover{border-color:var(--amber);color:var(--amber-deep)}
 /* ── anuncios ── */
 .ad{background:var(--surface);border:1px solid var(--line);border-radius:10px;
   padding:16px 18px;margin:14px 0}
@@ -545,6 +621,51 @@ JS = """
       vacio.style.display = visibles ? 'none' : 'block';
     });
   });
+
+  // Marcar una pieza como hecha: se cierra y deja solo el titulo. Se guarda en
+  // el navegador de quien la marca — es su avance, no el de todo el equipo —
+  // y desmarcar la vuelve a abrir entera: nunca se borra nada.
+  var LLAVE = 'dma-matriz-sep-hechas';
+  var hechas = {};
+  try { hechas = JSON.parse(localStorage.getItem(LLAVE) || '{}') || {}; } catch(e){}
+  function guardar(){
+    try { localStorage.setItem(LLAVE, JSON.stringify(hechas)); } catch(e){}
+  }
+  function contar(){
+    Array.prototype.forEach.call(document.querySelectorAll('.avance'), function(bar){
+      var sec = bar.closest('section');
+      var todas = sec.querySelectorAll('.col');
+      var listas = sec.querySelectorAll('.col.hecha');
+      bar.querySelector('.n').textContent = listas.length;
+      bar.querySelector('.tot').textContent = todas.length;
+      bar.querySelector('.reabrir').hidden = (listas.length === 0);
+    });
+  }
+  Array.prototype.forEach.call(document.querySelectorAll('.col'), function(el){
+    var caja = el.querySelector('input[type=checkbox]');
+    if (!caja) return;
+    if (hechas[el.dataset.k]) { el.classList.add('hecha'); caja.checked = true; }
+    caja.addEventListener('change', function(){
+      el.classList.toggle('hecha', caja.checked);
+      if (caja.checked) { hechas[el.dataset.k] = 1; } else { delete hechas[el.dataset.k]; }
+      guardar();
+      contar();
+    });
+  });
+  Array.prototype.forEach.call(document.querySelectorAll('.avance .reabrir'), function(b){
+    b.addEventListener('click', function(){
+      Array.prototype.forEach.call(b.closest('section').querySelectorAll('.col.hecha'),
+        function(el){
+          el.classList.remove('hecha');
+          var c = el.querySelector('input[type=checkbox]');
+          if (c) c.checked = false;
+          delete hechas[el.dataset.k];
+        });
+      guardar();
+      contar();
+    });
+  });
+  contar();
 })();
 """
 

@@ -521,6 +521,12 @@ if(Array.isArray(CAL.grupos) && CAL.grupos.length){
                  {run:{size:18,color:GREY}}));
           push(P('CREATIVO',{run:{bold:true,size:16,color:GREY}}));
           push(P(pz.creativo));
+          if(pz.guion){
+            push(P('GUION — 15 SEGUNDOS, PARA GRABAR',{run:{bold:true,size:16,color:GREY}}));
+            push(tbl(['Tiempo','Qué se ve','Qué dice Gabriel','Texto en pantalla'],
+                 pz.guion.map(g=>[g[0],g[1],g[2],g[3].replace(/\*\*/g,'')]),[1100,2600,3000,2300]));
+          }
+          if(pz.nota) push(P(pz.nota,{run:{italics:true,color:GREY}}));
           push(P('PROMPT DE IMAGEN',{run:{bold:true,size:16,color:GREY}}));
           push(...block(pz.prompt,LIGHT));
           push(P('FICHA DE MONTAJE',{run:{bold:true,size:16,color:GREY}}));
