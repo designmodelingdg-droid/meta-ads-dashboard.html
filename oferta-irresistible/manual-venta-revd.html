@@ -254,9 +254,9 @@ a{color:var(--blue)}
 <div class="wrap">
 
 <header class="titleblock">
-  <div class="tb-rule"><span>Rev D.1</span><i></i><span>Uso interno</span></div>
+  <div class="tb-rule"><span>Rev D.2</span><i></i><span>Uso interno</span></div>
   <h1>Manual de Venta</h1>
-  <p class="sub">DG BIM Intelligence — actualizado con la demo de Andrés del 4 de septiembre. Reemplaza la Rev C.</p>
+  <p class="sub">DG BIM Intelligence — con la demo del 4 de septiembre y los costos de operación del 8. Reemplaza la Rev C.</p>
   <div class="tb-meta">
     <div><span class="tb-k">Producto</span><span class="tb-v">DG BIM Intelligence</span></div>
     <div><span class="tb-k">Oferta</span><span class="tb-v">US$997 + 97/mes</span></div>
@@ -553,16 +553,16 @@ a{color:var(--blue)}
   </div>
 
   <div class="dec">
-    <div class="dec-head"><span class="dec-n">05</span><span class="dec-t">Costo de tokens</span></div>
-    <p class="dec-gap">Sigue sin número, y con el MCP el consumo cambió respecto de lo estimado.</p>
-    <div class="dec-rec"><span class="tag">Recomendación</span>Medirlo con los 3 semilla durante 30 días reales. <strong>Si supera los US$25 por usuario al mes, revisar los 97 antes de vender los 10 fundadores</strong>, no después. Y definir un tope de uso justo por plan.</div>
-    <span class="dec-who">Decide: Andrés</span>
+    <div class="dec-head"><span class="dec-n">05</span><span class="dec-t">Costo de operación <span class="pill p-ok">Resuelto</span></span></div>
+    <p class="dec-gap">Andrés entregó los números el 8 de septiembre.</p>
+    <div class="dec-rec"><span class="tag">Resultado</span><strong>El precio de US$97 está confirmado con margen amplio.</strong> Costo real ≈ US$10 por cliente al mes con 10 clientes, y baja al crecer. Ver el desglose abajo. Queda validar con clientes reales, pero el margen de error es tan grande que ya no bloquea la venta.</div>
+    <span class="dec-who">Cerrado</span>
   </div>
 
   <div class="dec">
-    <div class="dec-head"><span class="dec-n">06</span><span class="dec-t">Saldo de tokens de la operación</span></div>
-    <p class="dec-gap">El equipo se quedó sin saldo un día de esta semana.</p>
-    <div class="dec-rec"><span class="tag">Recomendación</span><strong>No agendar demos sin saldo confirmado.</strong> Revisarlo cada lunes y tratarlo como costo fijo, no como gasto puntual. Las tres reservas de 100 cubren varios meses.</div>
+    <div class="dec-head"><span class="dec-n">06</span><span class="dec-t">Quién paga los US$65 fijos</span></div>
+    <p class="dec-gap">Vercel (40) y Supabase (25) ya se cobran todos los meses, con o sin clientes. Hoy los absorbe Olympus.</p>
+    <div class="dec-rec"><span class="tag">Recomendación</span><strong>Que salgan de las primeras reservas.</strong> Las tres de US$100 cubren cuatro meses completos de infraestructura. Es el planteo justo que hace Andrés y se resuelve el día de la primera venta — dejarlo correr es lo que genera fricción después.</div>
     <span class="dec-who">Decide: equipo</span>
   </div>
 
@@ -596,11 +596,33 @@ a{color:var(--blue)}
   </ul>
   <p>La forma correcta de capturar más valor al año es <strong>hacia arriba, no hacia el lado</strong>: ofrecerles la licencia de empresa multiusuario, asientos adicionales para su equipo, o la implementación con los estándares de su compañía. Compran más porque quieren, no porque se les cambiaron las reglas.</p>
 
-  <h3>Por qué el costo de tokens hay que cerrarlo antes de los 10</h3>
-  <p>Todo el modelo económico —los 97 al mes, el margen, cuántos clientes se pueden atender— depende de un número que todavía no existe. Con tres clientes, si el costo resulta más alto de lo esperado, se ajusta el precio y no pasa nada. Con diez fundadores ya vendidos a precio congelado, ese error queda fijo para siempre.</p>
+  <h3>La economía del producto, con los números reales</h3>
+  <p>Andrés entregó el desglose el 8 de septiembre y despeja la duda que bloqueaba todo. Lo primero, para que el equipo lo tenga claro: <strong>la única acción que consume IA es hablar con el agente.</strong> Sincronizar desde Revit, abrir dashboards, subir archivos y navegar cuestan cero. Se puede usar la app sin miedo.</p>
+  <div class="tscroll">
+  <table>
+    <thead><tr><th>Concepto</th><th>Costo</th><th>Cómo se comporta</th></tr></thead>
+    <tbody>
+      <tr><td>Vercel (hosting)</td><td>US$40/mes</td><td>Fijo. Corre con o sin clientes</td></tr>
+      <tr><td>Supabase (base de datos)</td><td>US$25/mes</td><td>Fijo. Hoy usa 50 MB de 8 GB disponibles</td></tr>
+      <tr><td>Agente IA</td><td>US$0,02–0,04 por pregunta</td><td>Variable. Un usuario intensivo de 100 consultas: US$2–4/mes</td></tr>
+      <tr><td>Sincronizar, dashboards, archivos</td><td>US$0</td><td>El plugin extrae con código propio, sin pasar por IA</td></tr>
+      <tr><td><strong>Total con 10 clientes</strong></td><td><strong>≈ US$10 por cliente/mes</strong></td><td>Y baja al crecer: el fijo se reparte entre más cuentas</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="note ok">
+    <span class="tag">Qué significa para el precio</span>
+    <p>A US$97 el margen bruto ronda el <strong>87–90%</strong>. Aunque el costo real terminara siendo el doble o el triple de lo estimado, el precio se sostiene igual. <strong>El costo de operación deja de ser un riesgo para el lanzamiento.</strong></p>
+  </div>
+  <p>Queda validarlo con clientes reales —el propio Andrés lo aclara, y Vercel cobra más si necesita más procesamiento— pero el margen de error es tan amplio que ya no hay razón para retrasar la venta de los fundadores por este motivo.</p>
+  <h4>Dos cosas que faltan sumar a la cuenta</h4>
+  <ul>
+    <li><strong>Stripe:</strong> unos US$2,90 por cobro de 97. No aparece en la tabla de Andrés y conviene tenerlo en el número.</li>
+    <li><strong>Autodesk APS:</strong> el documento lo da como plan sin costo, pero en agosto se habló de US$100 al año. Vale confirmarlo.</li>
+  </ul>
   <div class="note warn">
-    <span class="tag">La secuencia correcta</span>
-    <p>Vender los 3 → medir 30 días → confirmar o ajustar el precio → recién ahí abrir los 10 fundadores. Es lo que ya decidimos con las dos fases; solo hay que respetar el orden y no adelantar la segunda.</p>
+    <span class="tag">Lo que sí hay que resolver ya</span>
+    <p>Los US$65 fijos <strong>ya se están pagando y hoy salen del bolsillo de Olympus</strong>, haya clientes o no. Es un planteo justo y se resuelve solo: las tres reservas de US$100 de los clientes semilla cubren cuatro meses completos de infraestructura. Conviene acordarlo el día de la primera venta y no dejarlo correr.</p>
   </div>
 
   <h3>Lo inmediato de esta semana</h3>
