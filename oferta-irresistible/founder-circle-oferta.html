@@ -262,6 +262,7 @@ a{color:var(--blue)}
   <h3>Cómo entra el proyecto</h3>
   <p>El cliente tiene una <strong>pestaña propia dentro de Revit con un botón de sincronizar</strong>. Lo aprieta y toda la data del modelo pasa a la aplicación en aproximadamente un minuto. Sin exportar, sin convertir, sin subir archivos.</p>
   <p>Cada sincronización sube una versión (V5, V6, V7…), así que el cliente siempre sabe con qué versión está trabajando. Eso es trazabilidad real y le habla directo al coordinador y al gerente.</p>
+  <p>Quedan como <strong>en desarrollo</strong> —y así se comunican— el conector de un clic y la edición bidireccional, es decir, poder pedirle cambios al agente y que se apliquen en Revit.</p>
 </section>
 
 <section id="o3">
@@ -360,7 +361,8 @@ a{color:var(--blue)}
       <tr><td><strong>Permanencia</strong></td><td>No hay. Se puede cancelar cuando quiera. La retención se basa en el valor del producto, no en una cláusula de amarre</td></tr>
       <tr><td><strong>Precio congelado</strong></td><td>Se mantiene solo mientras la membresía siga activa. No es de por vida. Quien se da de baja y vuelve reingresa al precio vigente: conserva el estatus de fundador, no la tarifa</td></tr>
       <tr><td><strong>Plazo de la reserva</strong></td><td>Máximo 24 horas para concretarla después de la llamada. Pasado ese plazo se libera el cupo</td></tr>
-      <tr><td><strong>Reembolso</strong></td><td>Dentro de los 7 días, pidiéndolo por escrito en ese plazo. Se devuelve en hasta 5 días hábiles al mismo medio de pago. Sin aviso escrito, no es reembolsable</td></tr>
+      <tr><td><strong>Reembolso</strong></td><td>Dentro de los 7 días, pidiéndolo por escrito en ese plazo. Se devuelve en hasta 5 días hábiles al mismo medio de pago, y <strong>lo procesa Dayana</strong>. Sin aviso escrito, no es reembolsable</td></tr>
+      <tr><td><strong>Renovación anual</strong></td><td><strong>No hay cobro de anualidad.</strong> Al cumplir el año la membresía sigue igual, mes a mes, al precio congelado</td></tr>
       <tr><td><strong>Beta</strong></td><td>7 días corridos, contados desde el pago de la reserva</td></tr>
       <tr><td><strong>Garantía Primer Proyecto</strong></td><td>30 días. Un hallazgo accionable = evidencia del proyecto + recomendación concreta</td></tr>
       <tr><td><strong>Mora</strong></td><td>Hasta 30 días desde la fecha de corte para ponerse al día. Tres reintentos de cobro dentro de ese plazo</td></tr>
@@ -494,9 +496,9 @@ a{color:var(--blue)}
 
   <h3>Fase 1 · Tres clientes semilla</h3>
   <p>No se sale a buscar diez de una vez. Primero tres clientes de máxima confianza, con servicio ultra personalizado, que autofinancien la infraestructura y sirvan de escuela. Si entran tres con versiones distintas de Revit, los problemas se resuelven uno por uno y en caliente; si entran diez y algo falla, se cae todo junto.</p>
-  <div class="note">
-    <span class="tag">Recomendación</span>
-    <p>Que los tres semilla <strong>cuenten como fundadores</strong>: son el Founder #001, #002 y #003. Es más simple, más honesto y les da estatus. Después quedan siete cupos reales.</p>
+  <div class="note ok">
+    <span class="tag">Confirmado</span>
+    <p>Los tres semilla <strong>cuentan como fundadores</strong>: son el Founder #001, #002 y #003. Después quedan siete cupos reales.</p>
   </div>
 
   <h3>Fase 2 · Los diez fundadores</h3>
@@ -543,9 +545,9 @@ a{color:var(--blue)}
     <li><strong>Stripe:</strong> unos US$2,90 por cobro de 97.</li>
     <li><strong>Autodesk APS:</strong> el documento lo da como plan sin costo, pero en agosto se habló de US$100 al año. Confirmar.</li>
   </ul>
-  <div class="note warn">
-    <span class="tag">Lo que hay que resolver el día de la primera venta</span>
-    <p>Los US$65 fijos ya se están pagando todos los meses y hoy los absorbe Olympus, haya clientes o no. Se resuelve solo: <strong>las tres reservas de US$100 cubren cuatro meses completos de infraestructura.</strong> Conviene acordarlo desde el arranque y no dejarlo correr.</p>
+  <div class="note ok">
+    <span class="tag">Acordado</span>
+    <p>Los US$65 fijos de infraestructura <strong>salen de las tres primeras reservas</strong>. Las tres de US$100 cubren cuatro meses completos, así que Olympus deja de absorberlos desde la primera venta.</p>
   </div>
 </section>
 
@@ -588,20 +590,31 @@ a{color:var(--blue)}
       <tr><td>Costo de operación y validación del precio</td><td>Andrés</td><td><span class="pill p-ok">Resuelto</span></td></tr>
       <tr><td>Alcance vendible del producto</td><td>Andrés</td><td><span class="pill p-ok">Resuelto</span></td></tr>
       <tr><td>Forma de captación por carril</td><td>Dayana</td><td><span class="pill p-ok">Resuelto</span></td></tr>
-      <tr><td>Condiciones legales</td><td>Patricio</td><td><span class="pill p-ok">Cerradas</span></td></tr>
-      <tr><td><strong>Fechas de las etapas 2 y 3</strong></td><td>Gabriel + Andrés</td><td><span class="pill p-half">Pendiente</span></td></tr>
+      <tr><td>Condiciones legales del Círculo</td><td>Patricio</td><td><span class="pill p-ok">Cerradas</span></td></tr>
+      <tr><td>Landing con el alcance real</td><td>Patricio</td><td><span class="pill p-ok">Actualizada</span></td></tr>
+      <tr><td>Formulario calificador conectado al CRM</td><td>Patricio</td><td><span class="pill p-ok">Probado</span></td></tr>
+      <tr><td><strong>Publicar el formulario en su lugar final</strong></td><td>Patricio</td><td><span class="pill p-half">Pendiente</span></td></tr>
       <tr><td><strong>Estado del dashboard de Coordinador</strong></td><td>Andrés</td><td><span class="pill p-half">Pendiente</span></td></tr>
+      <tr><td><strong>Exclusión de entrenamiento en OpenRouter</strong></td><td>Andrés</td><td><span class="pill p-half">Pendiente</span></td></tr>
+      <tr><td><strong>Costo de Autodesk APS</strong></td><td>Andrés</td><td><span class="pill p-half">Pendiente</span></td></tr>
+      <tr><td><strong>Revisión legal y contable final</strong></td><td>Externo</td><td><span class="pill p-half">Pendiente</span></td></tr>
+      <tr><td><strong>Fechas de las etapas 2 y 3</strong></td><td>Gabriel + Andrés</td><td><span class="pill p-half">Pendiente</span></td></tr>
+      <tr><td><strong>Lista de los 3 clientes semilla</strong></td><td>Gabriel</td><td><span class="pill p-half">Pendiente</span></td></tr>
       <tr><td><strong>Correo de bienvenida post pago</strong></td><td>Dayana</td><td><span class="pill p-half">Pendiente</span></td></tr>
       <tr><td><strong>Video de instalación paso a paso</strong></td><td>Andrés + Patricio</td><td><span class="pill p-half">Pendiente</span></td></tr>
-      <tr><td><strong>Lista de los 3 clientes semilla</strong></td><td>Gabriel</td><td><span class="pill p-half">Pendiente</span></td></tr>
+      <tr><td>Mini-presentación para la llamada</td><td>Dayana / Patricio</td><td><span class="pill p-next">Propuesta</span></td></tr>
       <tr><td>Subdominio y logo</td><td>Patricio</td><td><span class="pill p-next">En curso</span></td></tr>
-      <tr><td>Exclusión de proveedores en OpenRouter</td><td>Andrés</td><td><span class="pill p-next">En curso</span></td></tr>
     </tbody>
   </table>
   </div>
   <div class="note ok">
     <span class="tag">Dónde estamos</span>
-    <p>Lo que bloqueaba el lanzamiento —el alcance real del producto y el costo de operación— <strong>ya está resuelto</strong>. Lo que queda son piezas de ejecución, no decisiones de fondo. La condición mínima para vender el primer cupo es: las fechas del roadmap, el estado del Coordinador y la lista de los tres semilla.</p>
+    <p>Lo que bloqueaba el lanzamiento —el alcance real del producto, el costo de operación y las condiciones legales— <strong>ya está resuelto</strong>. Lo que queda son piezas de ejecución, no decisiones de fondo.</p>
+    <p>La condición mínima para vender el primer cupo son tres cosas: <strong>las fechas del roadmap, el estado del panel de Coordinador y la lista de los tres clientes semilla.</strong> Todo lo demás puede avanzar en paralelo.</p>
+  </div>
+  <div class="note warn">
+    <span class="tag">Antes de abrir cobros</span>
+    <p>Quedan tres revisiones externas que no dependen del equipo: la exclusión de entrenamiento en OpenRouter y el costo de APS (Andrés), la revisión de impuestos y facturación con el contador, y una revisión legal profesional final del acuerdo. Conviene tenerlas cerradas antes de recibir el primer pago, no después.</p>
   </div>
 </section>
 
