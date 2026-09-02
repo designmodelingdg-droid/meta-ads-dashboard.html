@@ -1,0 +1,469 @@
+<title>Reestructura Comercial DMA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;800;900&family=Nunito:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{
+  --navy:#0E2438; --navy-2:#16324c; --amber:#E8A04A; --amber-deep:#B8752A;
+  --ground:#F2F5F8; --surface:#FFFFFF; --surface-2:#E9EEF3;
+  --ink:#0E2438; --ink-2:#4A5F73; --ink-3:#7A8CA0;
+  --line:#D3DDE6; --line-strong:#B3C2D0;
+  --ok:#1F7A5A; --ok-bg:#E4F2EC;
+  --stop:#A33B2A; --stop-bg:#F8E7E3;
+  --wait:#8A6A15; --wait-bg:#FBF0DA;
+  --precio:#B8752A;
+  --display:'Overpass',system-ui,sans-serif;
+  --body:'Nunito',system-ui,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1A28; --surface:#122536; --surface-2:#193347;
+    --ink:#E8EFF5; --ink-2:#A9BDCE; --ink-3:#7B93A8;
+    --line:#24435C; --line-strong:#365A76;
+    --ok:#5DC79E; --ok-bg:#123028;
+    --stop:#E4907E; --stop-bg:#3A1E19;
+    --wait:#E0B85F; --wait-bg:#33280F;
+    --precio:#E8A04A;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1A28; --surface:#122536; --surface-2:#193347;
+  --ink:#E8EFF5; --ink-2:#A9BDCE; --ink-3:#7B93A8;
+  --line:#24435C; --line-strong:#365A76;
+  --ok:#5DC79E; --ok-bg:#123028;
+  --stop:#E4907E; --stop-bg:#3A1E19;
+  --wait:#E0B85F; --wait-bg:#33280F;
+  --precio:#E8A04A;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--body);
+  font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1000px;margin:0 auto;padding:0 24px 80px}
+
+/* ── cabecera ── */
+header{background:var(--navy);color:#EAF1F7;padding:44px 0 38px;margin-bottom:34px;
+  border-bottom:4px solid var(--amber)}
+header .wrap{padding-bottom:0}
+.eyebrow{font-family:var(--display);font-weight:800;font-size:12px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--amber);margin:0 0 10px}
+h1{font-family:var(--display);font-weight:900;font-size:clamp(30px,5vw,46px);line-height:1.06;
+  margin:0 0 14px;text-wrap:balance;letter-spacing:-.01em}
+.lede{font-size:17px;color:#B9CBDA;max-width:62ch;margin:0}
+.meta{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:22px;font-family:var(--mono);
+  font-size:12.5px;color:#8CA6BC}
+.meta b{color:#EAF1F7;font-weight:600}
+
+/* ── progreso ── */
+.progreso{position:sticky;top:0;z-index:20;background:var(--ground);
+  border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:30px}
+.progreso .wrap{padding-bottom:0;display:flex;align-items:center;gap:16px}
+.barra{flex:1;height:8px;background:var(--surface-2);border-radius:99px;overflow:hidden}
+.barra i{display:block;height:100%;width:0;background:var(--amber);
+  transition:width .35s cubic-bezier(.4,0,.2,1)}
+#cuenta{font-family:var(--mono);font-size:13px;color:var(--ink-2);
+  font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* ── aviso ── */
+.aviso{background:var(--wait-bg);border-left:4px solid var(--amber);padding:16px 20px;
+  margin:0 0 34px;border-radius:0 6px 6px 0}
+.aviso p{margin:0;font-size:15px;color:var(--ink)}
+.aviso strong{font-family:var(--display);font-weight:800}
+
+/* ── fases ── */
+.fase{margin:0 0 40px}
+.fase-cab{display:flex;align-items:baseline;gap:14px;padding-bottom:12px;
+  border-bottom:2px solid var(--navy);margin-bottom:6px}
+.num{font-family:var(--display);font-weight:900;font-size:40px;line-height:1;
+  color:var(--amber);font-variant-numeric:tabular-nums}
+.fase-cab h2{font-family:var(--display);font-weight:800;font-size:22px;margin:0;
+  letter-spacing:-.01em;flex:1}
+.quien{font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--ink-2);border:1px solid var(--line-strong);padding:3px 9px;border-radius:99px;
+  white-space:nowrap}
+.fase > p.intro{color:var(--ink-2);font-size:15px;margin:10px 0 20px;max-width:66ch}
+
+/* ── pasos ── */
+.pasos{display:flex;flex-direction:column;gap:12px}
+.paso{background:var(--surface);border:1px solid var(--line);border-radius:8px;
+  padding:16px 18px;display:grid;grid-template-columns:26px 1fr;gap:14px;align-items:start}
+.paso.hecho{border-color:var(--ok);background:var(--ok-bg)}
+.paso input{appearance:none;width:20px;height:20px;margin:2px 0 0;border:2px solid var(--line-strong);
+  border-radius:5px;background:var(--surface);cursor:pointer;position:relative;flex:none}
+.paso input:checked{background:var(--ok);border-color:var(--ok)}
+.paso input:checked::after{content:"";position:absolute;left:5.5px;top:1.5px;width:5px;height:10px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(43deg)}
+.paso input:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+.paso h3{font-family:var(--display);font-weight:700;font-size:16.5px;margin:0 0 6px;
+  line-height:1.3}
+.paso p{margin:0 0 8px;font-size:14.5px;color:var(--ink-2)}
+.paso p:last-child{margin-bottom:0}
+.ruta{font-family:var(--mono);font-size:12.5px;background:var(--surface-2);color:var(--ink);
+  padding:2px 7px;border-radius:4px;word-break:break-word}
+.verifica{font-size:13.5px;color:var(--ok);font-weight:600}
+.verifica::before{content:"Verificar: ";font-family:var(--display);font-weight:800;
+  text-transform:uppercase;font-size:11px;letter-spacing:.08em}
+.bloquea{font-size:13.5px;color:var(--stop);font-weight:600}
+.bloquea::before{content:"Bloquea: ";font-family:var(--display);font-weight:800;
+  text-transform:uppercase;font-size:11px;letter-spacing:.08em}
+
+/* ── tabla ── */
+.tabla-scroll{overflow-x:auto;margin:18px 0;border:1px solid var(--line);border-radius:8px;
+  background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:14px}
+th{background:var(--navy);color:#EAF1F7;font-family:var(--display);font-weight:700;
+  text-align:left;padding:11px 14px;font-size:12.5px;letter-spacing:.05em;text-transform:uppercase}
+td{padding:11px 14px;border-top:1px solid var(--line);vertical-align:top}
+td.precio{font-family:var(--mono);font-weight:600;color:var(--precio);
+  font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* ── copys ── */
+.copy-bloque{background:var(--surface);border:1px solid var(--line);border-radius:8px;
+  padding:0;margin:14px 0;overflow:hidden}
+.copy-cab{background:var(--surface-2);padding:10px 16px;font-family:var(--display);
+  font-weight:800;font-size:13px;letter-spacing:.05em;text-transform:uppercase;
+  display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center}
+.copy-cab span{font-family:var(--mono);font-weight:600;font-size:12.5px;
+  color:var(--precio);text-transform:none;letter-spacing:0}
+.copy-cuerpo{padding:16px}
+.copy-cuerpo p{margin:0 0 12px;font-size:14.5px}
+.copy-cuerpo p:last-child{margin:0}
+.rot{font-family:var(--display);font-weight:800;font-size:11px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);display:block;margin-bottom:3px}
+.pegar{font-family:var(--body);background:var(--surface-2);border-left:3px solid var(--amber);
+  padding:12px 14px;border-radius:0 5px 5px 0;font-size:14.5px;white-space:pre-wrap}
+
+/* ── notas ── */
+.nota{border-left:3px solid var(--line-strong);padding:2px 0 2px 14px;margin:14px 0;
+  font-size:14px;color:var(--ink-2);font-style:italic}
+.dato{background:var(--stop-bg);border-left:4px solid var(--stop);padding:14px 18px;
+  border-radius:0 6px 6px 0;margin:16px 0;font-size:14.5px}
+.dato strong{font-family:var(--display);font-weight:800;font-style:normal}
+
+footer{margin-top:46px;padding-top:22px;border-top:1px solid var(--line);
+  font-size:13px;color:var(--ink-3);font-family:var(--mono)}
+@media (max-width:640px){
+  .fase-cab{flex-wrap:wrap;gap:8px}
+  .num{font-size:32px}
+  .quien{order:3;width:100%}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<header>
+  <div class="wrap">
+    <p class="eyebrow">Design Modeling Academy · Septiembre 2026</p>
+    <h1>Reestructura Comercial</h1>
+    <p class="lede">El Máster deja de venderse como un programa de 12 meses y pasa a venderse por módulos. Esto cambia la plataforma, el material de venta, la pauta y el bot. Aquí está el orden exacto en que hay que hacerlo.</p>
+    <div class="meta">
+      <span><b>Origen:</b> reunión DM · Marketing SEP, 1-sep</span>
+      <span><b>Fecha límite:</b> lunes 7 de septiembre</span>
+      <span><b>Responsable principal:</b> Ester</span>
+    </div>
+  </div>
+</header>
+
+<div class="progreso">
+  <div class="wrap">
+    <div class="barra"><i id="barra"></i></div>
+    <div id="cuenta">0 de 0</div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <div class="aviso">
+    <p><strong>El orden importa.</strong> La Fase 1 (GoHighLevel) bloquea todo lo demás: sin los cuatro productos separados no hay a dónde mandar a quien compre un módulo, y los anuncios no se pueden encender. Si solo hay tiempo para una cosa antes del 7, es la Fase 1.</p>
+  </div>
+
+  <!-- ══ QUÉ CAMBIA ══ -->
+  <section class="fase">
+    <div class="fase-cab"><span class="num">00</span><h2>Qué cambió, en una tabla</h2></div>
+    <p class="intro">El problema: el Máster completo cuesta $2.400–$2.700 y eso es una barrera de entrada. La solución de Gabriel: vender cada módulo por separado, con certificación internacional al terminar, y hacer el upsell a la ruta completa desde el closer.</p>
+
+    <div class="tabla-scroll">
+      <table>
+        <thead><tr><th>Módulo</th><th>Duración</th><th>Precio</th><th>Para quién es</th></tr></thead>
+        <tbody>
+          <tr><td><b>BIM Professional</b><br>Estructura</td><td>3 meses</td><td class="precio">$750</td><td>«Uso Revit, pero cada proyecto lo armo distinto.»</td></tr>
+          <tr><td><b>BIM Coordination</b><br>Coordina</td><td>3 meses</td><td class="precio">$750</td><td>«Los choques aparecen en obra, no en el modelo.»</td></tr>
+          <tr><td><b>BIM Management</b><br>Gestiona</td><td>2 meses</td><td class="precio">$600</td><td>«Modelo bien, pero no decido nada del proyecto.»</td></tr>
+          <tr><td><b>BIM + IA</b><br>Automatiza</td><td>3 meses</td><td class="precio">$900</td><td>«Repito tareas que una máquina haría igual.»</td></tr>
+          <tr><td><b>Ruta completa</b><br>Máster BIM + IA</td><td>12 meses</td><td class="precio">$2.400 – $2.700</td><td>Quien quiere el recorrido entero y el título de BIM Manager + IA.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="dato">
+      <strong>Regla de precios que cambia.</strong> Hasta ahora el precio del Máster no aparecía en ninguna pieza. Con la venta por módulos, el precio del <em>módulo</em> es el gancho y <b>sí se muestra en los anuncios</b>. El precio de la ruta completa sigue sin aparecer en ninguna parte: lo dice el closer en la llamada, como ahorro frente a los $3.000 que suman los cuatro por separado.
+    </div>
+
+    <p class="intro">El flujo de venta nuevo: <b>anuncio del módulo → formulario → BIM Level Test (20 preguntas, 5 min) → el setter confirma el nivel → el closer vende el módulo que le toca y ofrece la ruta completa.</b></p>
+  </section>
+
+  <!-- ══ FASE 1 ══ -->
+  <section class="fase">
+    <div class="fase-cab"><span class="num">01</span><h2>GoHighLevel: separar los módulos</h2><span class="quien">Ester · antes del 7-sep</span></div>
+    <p class="intro">Hoy el Máster es un solo producto. Para vender un módulo suelto hace falta que cada uno exista por separado, con su propio acceso y su propia etapa en el pipeline.</p>
+
+    <div class="pasos">
+      <div class="paso"><input type="checkbox"><div>
+        <h3>Crear los 4 productos del Máster</h3>
+        <p>Uno por módulo: BIM Professional, BIM Coordination, BIM Management y BIM + IA. Cada uno con su precio y su duración. Usar el mismo patrón de las membresías que ya funcionan: el dominio es <span class="ruta">designmodelingacademy.app.clientclub.net</span> y la URL del producto termina en <span class="ruta">/purchase-course</span>.</p>
+        <p class="verifica">Que cada URL abra el curso correcto desde una ventana de incógnito, no solo desde tu sesión.</p>
+        <p class="bloquea">Los 4 anuncios de módulo, el pipeline y toda la campaña de septiembre.</p>
+      </div></div>
+
+      <div class="paso"><input type="checkbox"><div>
+        <h3>Separar los accesos y las comunidades por módulo</h3>
+        <p>Quien compra BIM Coordination entra a su curso y a su comunidad — no al paquete completo. Cada módulo necesita su grupo, para que la conversación tenga sentido y para que el upsell se pueda hacer dentro.</p>
+        <p class="verifica">Comprar (o simular) un módulo y comprobar que el acceso que se abre es solo ese.</p>
+      </div></div>
+
+      <div class="paso"><input type="checkbox"><div>
+        <h3>Arreglar el formato de «especialización» que agrupa cursos</h3>
+        <p>Agrupar varios cursos bajo una especialización está confundiendo a los alumnos: no distinguen dónde entra cada cosa. Gabriel va a pasar la solución que quiere; esta tarea es aplicarla cuando llegue.</p>
+        <p class="bloquea">La experiencia del alumno y, con ella, los testimonios.</p>
+      </div></div>
+
+      <div class="paso"><input type="checkbox"><div>
+        <h3>Cerrar los casos pendientes de la migración</h3>
+        <p>Siguen entrando alumnos que perdieron el acceso o el progreso desde el cambio de plataforma. Por ahora se resuelven marcando los cursos como completados a mano, uno por uno.</p>
+        <p class="verifica">Que la lista de casos abiertos baje cada semana, y anotar cuántos quedan.</p>
+      </div></div>
+
+      <div class="paso"><input type="checkbox"><div>
+        <h3>Crear las etapas del pipeline por módulo</h3>
+        <p>El setter y el closer necesitan ver en qué módulo está interesado cada lead y qué nivel dio su test. Sin eso, el upsell a la ruta completa se hace a ciegas.</p>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- ══ FASE 2 ══ -->
+  <section class="fase">
+    <div class="fase-cab"><span class="num">02</span><h2>El material que usa el equipo comercial</h2><span class="quien">Ester + Gabriel · antes del 7-sep</span></div>
+    <p class="intro">El closer entra a la llamada con el material viejo, que habla de un programa de 12 meses. Hay que rehacerlo para que hable de módulos y de la ruta como ahorro.</p>
+
+    <div class="pasos">
+      <div class="paso"><input type="checkbox"><div>
+        <h3>Brochure nuevo del Máster por módulos</h3>
+        <p>Una página por módulo (qué resuelve, qué sale sabiendo, duración, precio, certificación) y una última con la ruta completa presentada como lo que es: los cuatro por separado suman $3.000; la ruta cuesta menos y además titula.</p>
+        <p class="verifica">Que ningún precio del brochure contradiga a la tabla de arriba.</p>
+      </div></div>
+
+      <div class="paso"><input type="checkbox"><div>
+        <h3>Imágenes de venta para el momento de la llamada</h3>
+        <p>Lo que el closer comparte en pantalla: el recorrido de las 4 puertas, la tabla de precios y el cuadro de «dónde estás hoy / dónde vas a estar». Mismo lenguaje visual que los anuncios, para que el lead reconozca lo que ya vio.</p>
+      </div></div>
+
+      <div class="paso"><input type="checkbox"><div>
+        <h3>Montar el BIM Level Test como calificador</h3>
+        <p>20 preguntas, 5 minutos. Deja de ser solo un recurso gratuito: ahora es la herramienta con la que el setter califica. El resultado tiene que decir el nivel <em>y</em> qué módulo le toca, y quedar guardado en el contacto para que el closer lo vea.</p>
+        <p class="bloquea">Todos los CTA del Máster: los anuncios mandan ahí.</p>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- ══ FASE 3 ══ -->
+  <section class="fase">
+    <div class="fase-cab"><span class="num">03</span><h2>Pauta: los creativos nuevos y sus copys</h2><span class="quien">Diseño + Meta Ads · sube todo el 7-sep</span></div>
+    <p class="intro">Los anuncios actuales venden «un máster de 12 meses». Hay que reemplazarlos por cuatro anuncios de módulo, cada uno con su precio y su formulario. Los copys están abajo, listos para pegar.</p>
+
+    <div class="dato">
+      <strong>A formulario, nunca a landing.</strong> El dato de la cuenta: formulario nativo de Meta da un CPL de <b>$0.48 – $1.40</b>, WhatsApp <b>$0.67 – $0.86</b>, y una landing dio <b>$164.64</b>. Los anuncios de módulo van a formulario; los de diagnóstico pueden ir a WhatsApp.
+    </div>
+
+    <div class="copy-bloque">
+      <div class="copy-cab">Módulo 1 · BIM Professional <span>$750 · 3 meses</span></div>
+      <div class="copy-cuerpo">
+        <p><span class="rot">Hook</span><span class="pegar">Sabes usar Revit. Pero, ¿sabes implementar BIM en un proyecto de verdad?</span></p>
+        <p><span class="rot">Cuerpo del anuncio</span><span class="pegar">Modelar y ordenar un proyecto no son lo mismo. En 3 meses estructuras e implementas BIM con metodología: estándares, BEP y flujos de trabajo que no se te caen a mitad del proyecto.
+
+100% asincrónico. Certificación internacional al terminar. $750.
+
+Llena el formulario y te decimos si este es tu módulo.</span></p>
+        <p><span class="rot">Creativo</span> Tarjeta azul #0E2438 con «BIM PROFESSIONAL» grande, el verbo <em>ESTRUCTURA</em> debajo y el precio en ámbar #E8A04A. Carrusel de 3: el dolor, lo que sale sabiendo, precio y CTA.</p>
+      </div>
+    </div>
+
+    <div class="copy-bloque">
+      <div class="copy-cab">Módulo 2 · BIM Coordination <span>$750 · 3 meses</span></div>
+      <div class="copy-cuerpo">
+        <p><span class="rot">Hook</span><span class="pegar">Si descubres los choques en obra, ya pagaste el error dos veces.</span></p>
+        <p><span class="rot">Cuerpo del anuncio</span><span class="pegar">Una interferencia detectada en el modelo cuesta una tarde. La misma interferencia detectada en obra cuesta miles.
+
+En 3 meses coordinas disciplinas, detectas interferencias antes de que existan y controlas la calidad de los entregables.
+
+100% asincrónico. Certificación internacional. $750.
+
+Llena el formulario y te decimos si este es tu módulo.</span></p>
+        <p><span class="rot">Creativo</span> Split: modelo con el choque marcado / foto de obra con el mismo choque. Verbo <em>COORDINA</em>.</p>
+      </div>
+    </div>
+
+    <div class="copy-bloque">
+      <div class="copy-cab">Módulo 3 · BIM Management <span>$600 · 2 meses</span></div>
+      <div class="copy-cuerpo">
+        <p><span class="rot">Hook</span><span class="pegar">El salto de modelador a BIM Manager no es de software. Es de criterio.</span></p>
+        <p><span class="rot">Cuerpo del anuncio</span><span class="pegar">Puedes modelar impecable y seguir esperando a que alguien te diga qué modelar.
+
+En 2 meses planificas en 4D, controlas costos en 5D y lideras equipos BIM: dejas de ejecutar y empiezas a decidir.
+
+100% asincrónico. Certificación internacional. $600 — es el módulo de entrada más corto.
+
+Llena el formulario y te decimos si este es tu módulo.</span></p>
+        <p><span class="rot">Creativo</span> Escalera de 4 peldaños con el salto 1→2 resaltado en ámbar. Verbo <em>GESTIONA</em>.</p>
+      </div>
+    </div>
+
+    <div class="copy-bloque">
+      <div class="copy-cab">Módulo 4 · BIM + IA <span>$900 · 3 meses</span></div>
+      <div class="copy-cuerpo">
+        <p><span class="rot">Hook</span><span class="pegar">La IA ya hace parte de tu trabajo BIM. La ventaja no es usarla: es usarla con criterio.</span></p>
+        <p><span class="rot">Cuerpo del anuncio</span><span class="pegar">Si repites tareas que una máquina haría igual, no te falta tiempo: te falta automatización.
+
+En 3 meses automatizas con Dynamo y Python, y aplicas IA en proyectos reales — con el criterio para saber cuándo la respuesta de la máquina sirve y cuándo no.
+
+100% asincrónico. Certificación internacional. $900.
+
+Llena el formulario y te decimos si este es tu módulo.</span></p>
+        <p><span class="rot">Creativo</span> El comercial Revit + IA ya producido, o tarjeta con el verbo <em>AUTOMATIZA</em>.</p>
+      </div>
+    </div>
+
+    <div class="copy-bloque">
+      <div class="copy-cab">Anuncio de diagnóstico <span>se mantiene · a WhatsApp</span></div>
+      <div class="copy-cuerpo">
+        <p><span class="rot">Creativo</span> Cuatro frases en pantalla: «Necesito implementar BIM» · «Quiero coordinar disciplinas» · «Quiero costos y liderazgo» · «Quiero IA y automatización».</p>
+        <p><span class="rot">Cuerpo del anuncio</span><span class="pegar">¿Cuál dirías tú?
+
+Tu respuesta dice exactamente qué módulo te toca estudiar ahora. Hay un test de 5 minutos que lo confirma sin adornos.
+
+Escríbenos y te decimos en qué etapa estás — sin compromiso.</span></p>
+      </div>
+    </div>
+
+    <div class="copy-bloque">
+      <div class="copy-cab">Carrusel de la ruta completa <span>5 tarjetas · a formulario</span></div>
+      <div class="copy-cuerpo">
+        <p><span class="rot">Estructura</span> T1: ¿En qué etapa BIM estás? · T2–T5: una puerta por tarjeta con su precio ($750 / $750 / $600 / $900) · Cierre: los cuatro por separado suman $3.000. La ruta completa cuesta menos y además te certifica como BIM Manager + IA.</p>
+        <p class="nota">El precio de la ruta NO va en el creativo. El ahorro se enuncia; la cifra la dice el closer.</p>
+      </div>
+    </div>
+
+    <div class="pasos">
+      <div class="paso"><input type="checkbox"><div>
+        <h3>Ajustar el copy de los videos de pauta que ya existen</h3>
+        <p>Están producidos y sirven: el comercial Revit + IA (16:9 y vertical, en Vimeo) y el comercial con Gabriel de protagonista. Lo que cambia es el texto que los acompaña — ya no dice «máster de 12 meses» sino <em>«empieza por el módulo que te toca, desde $600»</em>.</p>
+      </div></div>
+
+      <div class="paso"><input type="checkbox"><div>
+        <h3>Producir 4 reels de 15 s, uno por módulo</h3>
+        <p>Gabriel explicando en una frase qué resuelve ese módulo, cerrando en el formulario. Mismo tratamiento que los reels de la casa: subtítulos, palabra clave en ámbar, corte rápido.</p>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- ══ FASE 4 ══ -->
+  <section class="fase">
+    <div class="fase-cab"><span class="num">04</span><h2>Acero: el mismo tratamiento, con el tutor de IA</h2><span class="quien">Ester + Patricio (Olympus)</span></div>
+    <p class="intro">La Especialización en Acero se relanza con un diferenciador nuevo: un tutor de IA entrenado con las clases del programa (4 cursos, más de 40 sesiones). Eso cambia lo que dicen los anuncios y lo que tiene que saber el bot.</p>
+
+    <div class="pasos">
+      <div class="paso"><input type="checkbox"><div>
+        <h3>Aplicar la separación también a los cursos de Acero</h3>
+        <p>Mismo problema que el Máster: la especialización agrupa cuatro cursos y el alumno no distingue dónde entra. Se separan igual, y la especialización pasa a ser el paquete, no el contenedor confuso.</p>
+      </div></div>
+
+      <div class="paso"><input type="checkbox"><div>
+        <h3>Actualizar el bot de Olympus con la estructura nueva</h3>
+        <p>Hoy el bot vende la estructura vieja. Tiene que saber: los cuatro módulos con sus precios, que el camino de entrada es el test de nivel, que la ruta completa es un upsell del closer, y que Acero ahora incluye tutor de IA.</p>
+        <p class="bloquea">Cada día que pase, el bot le cuenta a los leads una oferta que ya no existe.</p>
+      </div></div>
+
+      <div class="paso"><input type="checkbox"><div>
+        <h3>Anuncio del tutor de IA — solo cuando esté vivo</h3>
+        <p>El creativo está escrito (burbuja de chat con una pregunta técnica real y la respuesta citando la sesión del curso). No se enciende hasta que el tutor esté desplegado y probado, <em>y</em> el bot sepa responder sobre él.</p>
+        <p class="nota">Prometer un recurso que todavía no existe ya nos costó un incidente en julio. Esta pieza se queda apagada hasta que se pueda cumplir.</p>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- ══ FASE 5 ══ -->
+  <section class="fase">
+    <div class="fase-cab"><span class="num">05</span><h2>Lo demás que salió de la reunión</h2><span class="quien">Cami · Daya</span></div>
+    <p class="intro">Tareas que no dependen de la Fase 1 y pueden avanzar en paralelo.</p>
+
+    <div class="pasos">
+      <div class="paso"><input type="checkbox"><div>
+        <h3>Cami · Revisar el plan de septiembre antes de publicar</h3>
+        <p>Dos cosas concretas: que las fechas estén bien, y que <b>cada CTA prometa un recurso que exista de verdad</b>. En la matriz hay dos recursos marcados como «por crear» de los que ya cuelgan CTAs.</p>
+      </div></div>
+
+      <div class="paso"><input type="checkbox"><div>
+        <h3>Cami · Ideas para las historias destacadas de Instagram</h3>
+        <p>Las destacadas son la portada del perfil para quien llega nuevo. Pedir la propuesta de temas y organizarlas.</p>
+      </div></div>
+
+      <div class="paso"><input type="checkbox"><div>
+        <h3>Cami · Reclamar al editor los reels de agosto</h3>
+        <p>Quedaron sin entregar y por eso no se pudo cruzar su rendimiento. Son los que alimentan los martes y sábados del feed.</p>
+      </div></div>
+
+      <div class="paso"><input type="checkbox"><div>
+        <h3>Ester · Pasar a Daya las fotos del equipo y los assets de producto</h3>
+        <p>Es lo único que bloquea el lanzamiento de la web de consultoría, que ya está casi lista.</p>
+        <p class="bloquea">El lanzamiento de la web de consultoría.</p>
+      </div></div>
+
+      <div class="paso"><input type="checkbox"><div>
+        <h3>Daya · Lanzar la web de consultoría</h3>
+        <p>En cuanto lleguen los assets. La demanda de consultoría está creciendo y hoy no hay dónde mandarla.</p>
+      </div></div>
+
+      <div class="paso"><input type="checkbox"><div>
+        <h3>Daya · Reel con el metraje de Gabriel y la voz en off</h3>
+        <p>El material ya está grabado y el guion de voz escrito.</p>
+      </div></div>
+    </div>
+  </section>
+
+  <footer>
+    Design Modeling Academy · Reestructura comercial de septiembre 2026<br>
+    Construido sobre la reunión DM · Marketing SEP del 1-sep y la matriz de contenido del mes.
+    Las casillas se guardan en este navegador.
+  </footer>
+</div>
+
+<script>
+(function(){
+  var cajas = Array.prototype.slice.call(document.querySelectorAll('.paso input'));
+  var barra = document.getElementById('barra');
+  var cuenta = document.getElementById('cuenta');
+  var CLAVE = 'dma-reestructura-sep2026';
+
+  var guardado = [];
+  try { guardado = JSON.parse(localStorage.getItem(CLAVE) || '[]'); } catch (e) { guardado = []; }
+
+  function pintar(){
+    var hechos = 0;
+    cajas.forEach(function(c){
+      c.parentElement.classList.toggle('hecho', c.checked);
+      if (c.checked) hechos++;
+    });
+    barra.style.width = (cajas.length ? (100 * hechos / cajas.length) : 0) + '%';
+    cuenta.textContent = hechos + ' de ' + cajas.length;
+  }
+
+  cajas.forEach(function(c, i){
+    c.checked = guardado.indexOf(i) !== -1;
+    c.addEventListener('change', function(){
+      var marcados = [];
+      cajas.forEach(function(x, j){ if (x.checked) marcados.push(j); });
+      try { localStorage.setItem(CLAVE, JSON.stringify(marcados)); } catch (e) {}
+      pintar();
+    });
+  });
+  pintar();
+})();
+</script>
