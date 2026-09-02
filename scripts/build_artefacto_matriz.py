@@ -40,6 +40,7 @@ def _cargar(nombre):
 
 H = _cargar("historias-septiembre")
 R = _cargar("reels-septiembre")
+LM = _cargar("leadmagnets-septiembre")
 
 e = html.escape
 
@@ -130,7 +131,8 @@ def tab_resumen():
         ("Grupo 4 · LinkedIn", "20 publicaciones repartidas entre las 3 páginas.", "Lunes a viernes"),
         ("Grupo 5 · Historias", "80 historias: 4 al día, de lunes a viernes, con storytelling.", "Todos los días L-V"),
         ("Reels", "Guion completo segundo a segundo de los 5 reels.", "Se graban Lun 7 y Mar 8"),
-        ("Publicidad", "Los creativos de las 2 campañas.", "Todo junto el lunes 7"),
+        ("Publicidad", "Los 10 anuncios con su copy y su ficha de montaje. Sin precios: el Máster no lleva cifra.", "Todo junto el lunes 7"),
+        ("Lead magnets", "Los 3 recursos nuevos, su post de lanzamiento y el paso a paso de GoHighLevel.", "Mar 8, Mar 22 y Mar 29"),
     ]
     for a, b, c in filas:
         o.append(f'<tr><td><b>{e(a)}</b></td><td>{e(b)}</td><td>{e(c)}</td></tr>')
@@ -150,7 +152,9 @@ def tab_resumen():
         o.append('<h2>Recursos gratuitos que hay que CREAR</h2>')
         o.append('<p class="intro">Los CTA del mes prometen recursos. Estos todavía no existen — '
                  'y hay contenido ya programado que los pide. Si no llegan a tiempo, el CTA se cambia '
-                 'por el de reemplazo, pero la promesa vacía no se publica.</p>')
+                 'por el de reemplazo, pero la promesa vacía no se publica. '
+                 '<b>Los tres están desarrollados enteros en la pestaña «Lead magnets»</b>, con su '
+                 'contenido, su post de lanzamiento y lo que hay que montar en GoHighLevel.</p>')
         for l in lm["por_crear"]:
             o.append(f'<div class="lm-nuevo"><h4>{e(l["nombre"])}</h4>'
                      f'<span class="lm-pal">Palabra clave sugerida: «{e(l["palabra_sugerida"])}»</span>'
@@ -384,6 +388,72 @@ def tab_pauta():
     return "\n".join(o)
 
 
+# ════════════════════ PESTAÑA: LEAD MAGNETS ════════════════════
+def tab_leadmagnets():
+    o = ['<h2>Lead magnets — los tres recursos de septiembre</h2>',
+         '<p class="intro">Un recurso gratuito no es el archivo: es el archivo <b>más</b> el camino '
+         'que lo entrega. Mientras el bot no responda con el enlace, el recurso no existe aunque el '
+         'PDF esté hecho. Por eso cada uno viene aquí con su contenido, sus notas de producción, su '
+         'post de lanzamiento y el paso a paso de GoHighLevel.</p>',
+         f'<div class="dato"><strong>La regla que no se rompe.</strong> {e(LM.REGLA)}</div>']
+
+    for m in LM.MAGNETS:
+        k = clave("lm", m["id"])
+        o.append(f'<div class="lm col" data-k="{k}"><div class="pieza-cab cab">{chk(k)}'
+                 f'<span class="pal">{e(m["palabra"])}</span><h3>{e(m["nombre"])}</h3>'
+                 f'<span class="tipo">{e(m["formato"])}</span></div>')
+        o.append(f'<p class="estado">{e(m["estado"])}</p>')
+        o.append(f'<p class="promesa">{e(m["promesa"])}</p>')
+        o.append('<div class="tabla-scroll"><table class="cfg"><tbody>'
+                 f'<tr><th>Cuándo</th><td>{e(m["cuando"])}</td></tr>'
+                 f'<tr><th>Para quién</th><td>{e(m["para_quien"])}</td></tr>'
+                 f'<tr><th>Por qué este</th><td>{e(m["por_que"])}</td></tr>'
+                 '</tbody></table></div>')
+        o.append('<span class="rot">Qué lleva dentro</span><ul class="reglas">')
+        for c in m["contenido"]:
+            o.append(f'<li>{e(c)}</li>')
+        o.append('</ul>')
+        o.append('<span class="rot">Notas de producción</span><ul class="reglas prod">')
+        for c in m["produccion"]:
+            o.append(f'<li>{e(c)}</li>')
+        o.append('</ul>')
+        o.append('<span class="rot">Lo que hay que configurar en GoHighLevel</span>')
+        o.append('<div class="tabla-scroll"><table class="cfg"><tbody>')
+        for kk, vv in m["ghl"]:
+            o.append(f'<tr><th>{e(kk)}</th><td>{e(vv)}</td></tr>')
+        o.append('</tbody></table></div>')
+        for ps in m["posts"]:
+            o.append(f'<div class="lanz"><div class="pieza-cab"><span class="fecha">{e(ps["fecha"])}</span>'
+                     f'<h4>Post de lanzamiento</h4><span class="tipo">{e(ps["formato"])}</span></div>')
+            o.append(f'<p class="nota">Va en el calendario del <b>Grupo 1</b>. Redes: {e(ps["red"])}.</p>')
+            o.append(f'<span class="rot">Hook</span>{bloque_pegar(ps["hook"])}')
+            o.append(f'<span class="rot">Caption (copiar tal cual)</span>{bloque_pegar(ps["caption"])}')
+            o.append(f'<p class="cta-linea"><b>CTA:</b> {e(ps["cta"])}</p>')
+            o.append(prompt_img(LM.MEDIDA_FEED if "PLANO" in ps["formato"] or "REEL" in ps["formato"]
+                                else LM.MEDIDA_CARR, ps["prompt"]))
+            o.append('</div>')
+        o.append('</div>')
+
+    o.append('<h2>El montaje en GoHighLevel — el mismo para los tres</h2>')
+    o.append('<p class="intro">Nueve pasos. No salen de la teoría: son los que quedaron después de '
+             'montar la Calculadora de Zapatas y de arreglar lo que falló en julio.</p>')
+    o.append('<ol class="pasos">')
+    for t, d in LM.PASOS_GHL:
+        o.append(f'<li><b>{e(t)}</b><br>{e(d)}</li>')
+    o.append('</ol>')
+    o.append(f'<div class="dato"><strong>El error que ya nos costó leads.</strong> {e(LM.INCIDENTE)}</div>')
+
+    o.append('<h2>Prueba de punta a punta — antes de publicar el post</h2>')
+    o.append('<p class="intro">Los diez puntos se prueban con el embudo ya montado y en un teléfono '
+             'de verdad. Si uno falla, el post no sale: se corrige primero.</p>')
+    o.append('<ul class="e2e">')
+    for i, c in enumerate(LM.CHECKLIST, 1):
+        kk = clave("e2e", i, c[:30])
+        o.append(f'<li class="chkline">{chk(kk)}<span>{e(c)}</span></li>')
+    o.append('</ul>')
+    return "\n".join(o)
+
+
 # ════════════════════ ARMADO ════════════════════
 PESTANAS = [
     ("resumen", "Resumen", tab_resumen),
@@ -394,6 +464,7 @@ PESTANAS = [
     ("g5", "G5 · Historias", tab_historias),
     ("reels", "Reels", tab_reels),
     ("pauta", "Publicidad", tab_pauta),
+    ("lm", "Lead magnets", tab_leadmagnets),
 ]
 
 CSS = """
@@ -476,6 +547,27 @@ b.amb{color:var(--amber-deep)}
 .pegar{background:var(--surface-2);border-left:3px solid var(--amber);padding:11px 13px;
   border-radius:0 5px 5px 0;font-size:14.5px;white-space:pre-wrap}
 .prompt{margin-top:10px}
+/* ── lead magnets ── */
+.lm{background:var(--surface);border:1px solid var(--line);border-radius:10px;
+  padding:16px 18px;margin:16px 0}
+.lm>.pieza-cab h3{flex:1 1 auto}
+.pal{font-family:var(--mono);font-size:11.5px;font-weight:700;color:var(--navy);
+  background:var(--amber);border-radius:4px;padding:3px 9px;letter-spacing:.06em}
+:root[data-theme="dark"] .pal,:root:not([data-theme="light"]) .pal{color:#0E2438}
+.lm .promesa{font-family:var(--display);font-weight:800;font-size:16.5px;line-height:1.4;
+  margin:6px 0 12px}
+.lm .estado{font-family:var(--mono);font-size:12px;color:var(--stop);margin:0 0 6px}
+ul.reglas.prod li{color:var(--ink-2)}
+.lanz{background:var(--surface-2);border-radius:8px;padding:13px 15px;margin-top:14px}
+.lanz h4{font-family:var(--display);font-weight:800;font-size:15px;margin:0;flex:1 1 auto}
+ol.pasos{padding-left:20px;max-width:78ch}
+ol.pasos li{margin-bottom:12px;font-size:14.5px;color:var(--ink-2)}
+ol.pasos li b{color:var(--ink);font-family:var(--display);font-size:15px}
+ul.e2e{list-style:none;padding:0;max-width:78ch}
+li.chkline{display:flex;align-items:flex-start;gap:10px;padding:8px 0;
+  border-bottom:1px solid var(--line);font-size:14.5px}
+li.chkline .chk{margin-top:2px}
+li.chkline.hecha span{text-decoration:line-through;color:var(--ink-3)}
 /* ── casilla de «hecho»: cierra la pieza y deja solo el titulo ── */
 .chk{flex:0 0 auto;display:inline-flex;align-items:center;cursor:pointer;margin-right:2px}
 .chk input{position:absolute;opacity:0;width:0;height:0}
@@ -652,6 +744,16 @@ JS = """
       contar();
     });
   });
+  Array.prototype.forEach.call(document.querySelectorAll('.chkline'), function(el){
+    var caja = el.querySelector('input[type=checkbox]');
+    var k = caja.dataset.k;
+    if (hechas[k]) { el.classList.add('hecha'); caja.checked = true; }
+    caja.addEventListener('change', function(){
+      el.classList.toggle('hecha', caja.checked);
+      if (caja.checked) { hechas[k] = 1; } else { delete hechas[k]; }
+      guardar();
+    });
+  });
   Array.prototype.forEach.call(document.querySelectorAll('.avance .reabrir'), function(b){
     b.addEventListener('click', function(){
       Array.prototype.forEach.call(b.closest('section').querySelectorAll('.col.hecha'),
@@ -670,7 +772,22 @@ JS = """
 """
 
 
+def exportar_lm():
+    """Vuelca los lead magnets a JSON para que el generador del Word los lea.
+
+    Se escriben en Python porque conviven con historias y reels, pero el Word
+    lo arma Node: un solo origen, dos salidas, y nadie tiene que acordarse de
+    copiar nada a mano.
+    """
+    d = {"regla": LM.REGLA, "incidente": LM.INCIDENTE, "checklist": LM.CHECKLIST,
+         "pasos": [list(x) for x in LM.PASOS_GHL],
+         "magnets": [{**m, "ghl": [list(x) for x in m["ghl"]]} for m in LM.MAGNETS]}
+    (MATRIZ / "leadmagnets-septiembre.json").write_text(
+        json.dumps(d, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
 def main():
+    exportar_lm()
     partes = ['<title>Matriz Septiembre DMA</title>',
               '<link rel="preconnect" href="https://fonts.googleapis.com">',
               '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>',

@@ -82,6 +82,27 @@ b.amb{color:var(--amber-deep)}
 .pegar{background:var(--surface-2);border-left:3px solid var(--amber);padding:11px 13px;
   border-radius:0 5px 5px 0;font-size:14.5px;white-space:pre-wrap}
 .prompt{margin-top:10px}
+/* ── lead magnets ── */
+.lm{background:var(--surface);border:1px solid var(--line);border-radius:10px;
+  padding:16px 18px;margin:16px 0}
+.lm>.pieza-cab h3{flex:1 1 auto}
+.pal{font-family:var(--mono);font-size:11.5px;font-weight:700;color:var(--navy);
+  background:var(--amber);border-radius:4px;padding:3px 9px;letter-spacing:.06em}
+:root[data-theme="dark"] .pal,:root:not([data-theme="light"]) .pal{color:#0E2438}
+.lm .promesa{font-family:var(--display);font-weight:800;font-size:16.5px;line-height:1.4;
+  margin:6px 0 12px}
+.lm .estado{font-family:var(--mono);font-size:12px;color:var(--stop);margin:0 0 6px}
+ul.reglas.prod li{color:var(--ink-2)}
+.lanz{background:var(--surface-2);border-radius:8px;padding:13px 15px;margin-top:14px}
+.lanz h4{font-family:var(--display);font-weight:800;font-size:15px;margin:0;flex:1 1 auto}
+ol.pasos{padding-left:20px;max-width:78ch}
+ol.pasos li{margin-bottom:12px;font-size:14.5px;color:var(--ink-2)}
+ol.pasos li b{color:var(--ink);font-family:var(--display);font-size:15px}
+ul.e2e{list-style:none;padding:0;max-width:78ch}
+li.chkline{display:flex;align-items:flex-start;gap:10px;padding:8px 0;
+  border-bottom:1px solid var(--line);font-size:14.5px}
+li.chkline .chk{margin-top:2px}
+li.chkline.hecha span{text-decoration:line-through;color:var(--ink-3)}
 /* ── casilla de «hecho»: cierra la pieza y deja solo el titulo ── */
 .chk{flex:0 0 auto;display:inline-flex;align-items:center;cursor:pointer;margin-right:2px}
 .chk input{position:absolute;opacity:0;width:0;height:0}
@@ -200,6 +221,7 @@ footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);
 <button data-t="g5" role="tab" aria-selected="false">G5 · Historias</button>
 <button data-t="reels" role="tab" aria-selected="false">Reels</button>
 <button data-t="pauta" role="tab" aria-selected="false">Publicidad</button>
+<button data-t="lm" role="tab" aria-selected="false">Lead magnets</button>
 </div></nav><div class="wrap">
 <section id="tab-resumen" hidden><h2>Cómo se usa esto</h2>
 <p class="intro">Una pestaña por responsable. El enlace es el mismo para todos: cada quien abre la suya. Todo lo que está en bloque ámbar se copia y se pega tal cual; los prompts de imagen se pegan en ChatGPT como están, con la medida incluida.</p>
@@ -210,7 +232,8 @@ footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);
 <tr><td><b>Grupo 4 · LinkedIn</b></td><td>20 publicaciones repartidas entre las 3 páginas.</td><td>Lunes a viernes</td></tr>
 <tr><td><b>Grupo 5 · Historias</b></td><td>80 historias: 4 al día, de lunes a viernes, con storytelling.</td><td>Todos los días L-V</td></tr>
 <tr><td><b>Reels</b></td><td>Guion completo segundo a segundo de los 5 reels.</td><td>Se graban Lun 7 y Mar 8</td></tr>
-<tr><td><b>Publicidad</b></td><td>Los creativos de las 2 campañas.</td><td>Todo junto el lunes 7</td></tr>
+<tr><td><b>Publicidad</b></td><td>Los 10 anuncios con su copy y su ficha de montaje. Sin precios: el Máster no lleva cifra.</td><td>Todo junto el lunes 7</td></tr>
+<tr><td><b>Lead magnets</b></td><td>Los 3 recursos nuevos, su post de lanzamiento y el paso a paso de GoHighLevel.</td><td>Mar 8, Mar 22 y Mar 29</td></tr>
 </tbody></table></div>
 <h2>Las reglas que no se rompen</h2><ul class="reglas">
 <li>REGLA DE ORO: todos los grupos comparten la misma informacion (o similar) la misma semana, adaptada a cada red o metodo de comunicacion. El carrusel del lunes alimenta la comunidad del martes, la historia del miercoles, el PDF de LinkedIn y el correo de la semana.</li>
@@ -219,7 +242,7 @@ footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);
 <li>Minimo 60% del contenido en el NUCLEO (BIM / IA / modelado / acero). Cero OBRA.</li>
 <li>Cerrar SIEMPRE con pregunta directa + CTA de comentar. En comunidades: mensajes cortos, personales y SIN hashtags. En LinkedIn: nunca «comenta la palabra» — pregunta abierta; solo videos HORIZONTALES y PDF.</li>
 <li>Comunidades solo martes, jueves y viernes. Blog solo sabados, siempre con CTA a una campaña del mes o a un recurso gratuito. Historias de lunes a viernes, 3-5 frames al dia.</li>
-<li>PRECIOS (cambio del 1-sep, reunion con Gabriel): el Master ya NO se vende como programa de 12 meses. Se vende POR MODULOS y el precio del modulo ES el gancho: $750 BIM Professional, $750 BIM Coordination, $600 BIM Management, $900 BIM + IA. El precio del MODULO si va en los anuncios; el de la ruta completa (~$3.000, $2.700 financiado / $2.400 contado) NO va en ninguna pieza: lo maneja el closer en la llamada como upsell.</li>
+<li>PRECIOS (regla de oro, 2-sep): la publicidad anclada al MÁSTER no lleva ninguna cifra — ni el precio del módulo, ni el de la ruta, ni la suma. El CTA es siempre «llena el formulario», «agenda una cita» o «habla con un asesor», y el precio lo da el asesor en la conversación. Se vende POR MÓDULOS para bajar la barrera de entrada, pero la barrera se baja explicando la puerta, no publicando el número. ÚNICA EXCEPCIÓN: la Especialización en ACERO sí lleva su precio en el anuncio, $200 USD.</li>
 <li>El BIM LEVEL TEST (20 preguntas, 5 minutos) deja de ser solo lead magnet y pasa a ser la HERRAMIENTA DE CALIFICACION del setter: el lead lo llena, el resultado dice su nivel, y el closer vende el modulo que le toca. Todo CTA de Master apunta ahi.</li>
 <li>Los anuncios de modulo van a FORMULARIO NATIVO de Meta (no a landing): el dato manda, formulario $0.48-$1.40 de CPL contra $164 de landing. WhatsApp sigue siendo valido para los anuncios de diagnostico.</li>
 <li>MICROCREDENCIALES: cada modulo entrega la suya, avalada por Silicon Valley Futures Institute y progresivas (Modelador BIM → Coordinador BIM → BIM Manager 4D-5D → Especialista BIM + IA). Es el argumento que convierte un modulo suelto en un titulo y no en un curso a medias. Va EN LAS IMAGENES de los anuncios y se menciona en la llamada de ventas, sin excepcion.</li>
@@ -229,10 +252,10 @@ footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);
 </ul>
 <div class="dato"><strong>Los reels de agosto quedaron fuera.</strong> Los que se grabaron en agosto y nunca se publicaron no entran en este mes: todo lo que ves aquí es contenido nuevo, y cada reel tiene su guion escrito para grabarlo.</div>
 <h2>Recursos gratuitos que hay que CREAR</h2>
-<p class="intro">Los CTA del mes prometen recursos. Estos todavía no existen — y hay contenido ya programado que los pide. Si no llegan a tiempo, el CTA se cambia por el de reemplazo, pero la promesa vacía no se publica.</p>
-<div class="lm-nuevo"><h4>Guia «Revit + ChatGPT: resuelve errores con IA»</h4><span class="lm-pal">Palabra clave sugerida: «GUIA»</span><p>Es el CTA del reel Valor 6 (Mi 9) y de los reels extra de IA (Mar 15, Mar 22). Hoy ese CTA promete una guia que NO existe — exactamente el error que ya cometimos en julio. O se crea en la semana 1, o el CTA de esos reels cambia a un recurso existente (GPT IA Pro).</p></div>
-<div class="lm-nuevo"><h4>Pack starter de scripts Dynamo / Python para Revit</h4><span class="lm-pal">Palabra clave sugerida: «DYNAMO»</span><p>CTA natural de los reels #4 Dynamo (Sab 12) y #6 Python (Sab 19) — el tema de mejor guardado de la cuenta y sin recurso propio. 3-5 scripts comentados con instrucciones.</p></div>
-<div class="lm-nuevo"><h4>(Opcional) Diagnostico «¿Cual es tu puerta?»</h4><span class="lm-pal">Palabra clave sugerida: «RUTA»</span><p>Version corta del test alineada a las 4 puertas para el CTA RUTA. Mientras no exista, RUTA responde con orientacion 1-a-1 del equipo y el Test de Nivelacion cubre el diagnostico.</p></div>
+<p class="intro">Los CTA del mes prometen recursos. Estos todavía no existen — y hay contenido ya programado que los pide. Si no llegan a tiempo, el CTA se cambia por el de reemplazo, pero la promesa vacía no se publica. <b>Los tres están desarrollados enteros en la pestaña «Lead magnets»</b>, con su contenido, su post de lanzamiento y lo que hay que montar en GoHighLevel.</p>
+<div class="lm-nuevo"><h4>Guía «Revit + ChatGPT: resuelve errores con IA»</h4><span class="lm-pal">Palabra clave sugerida: «GUIA»</span><p>Lo pide el CTA del reel «Valor 6» (Mié 9), que sale un día después de su lanzamiento (Mar 8). Es el más urgente de los tres.</p></div>
+<div class="lm-nuevo"><h4>Pack starter de scripts Dynamo / Python para Revit</h4><span class="lm-pal">Palabra clave sugerida: «DYNAMO»</span><p>Dynamo es el tema de mejor guardado de la cuenta y no hay recurso propio. Se lanza el Mar 22; necesita más producción porque hay que probar cada script.</p></div>
+<div class="lm-nuevo"><h4>Guía de memoria de cálculo + plantilla</h4><span class="lm-pal">Palabra clave sugerida: «MEMORIA»</span><p>Pedido por Dayana el 2-sep. Se define en la reunión de cierre del viernes 5 y se lanza el Mar 29. Lo revisa Gabriel antes de salir: puede terminar dentro de un documento que alguien firma.</p></div>
 <h3 class="camp">Qué contenido depende de cada uno</h3>
 <div class="tabla-scroll"><table><thead><tr><th>Cuándo</th><th>Pieza</th><th>CTA</th><th>Estado</th><th>Reemplazo si no llega</th></tr></thead><tbody>
 <tr><td>Mi 9</td><td>REEL Valor 6 (error Revit + ChatGPT)</td><td><b>GUIA</b></td><td>🔴 POR CREAR + disparador por montar</td><td>Si no esta el dia 9: CTA cambia a «comenta GPT» → GPT IA Pro (existe). El subtitulo del video dice COMENTA GUIA — si se cambia el CTA hay que regenerar el subtitulo (5 min con el pipeline).</td></tr>
@@ -302,6 +325,11 @@ footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);
 
 #BIM #IA #Productividad #Arquitectura #Ingeniería #DesignModelingDG</div>
 <div class="prompt"><span class="rot">Prompt para ChatGPT · CARRUSEL · 6 slides · 1080x1350 px (4:5)</span><div class="prompt-txt">Portada: tres iconos grandes en columna sobre azul marino — un reloj con flecha circular, dos modelos superpuestos con un choque en ámbar, y dos barras de tiempo desiguales. Slides interiores: un icono por slide, número 01/02/03 gigante en ámbar a la izquierda, espacio limpio a la derecha para el texto. Slide de cierre: fondo ámbar invertido con espacio central limpio. Estilo Design Modeling Academy: fondo azul marino #0E2438, acento ámbar #E8A04A, texto blanco, tipografía sans muy gruesa, estética técnica de ingeniería limpia (referencia Autodesk Revit), sin fotos de stock genéricas, sin ciencia ficción. Firma abajo a la izquierda «DG · @design_modeling_dg». NO escribas texto dentro de la imagen salvo donde se indique — el texto lo monta diseño.</div></div>
+</div>
+<div class="pieza col" data-sem="1" data-k="g1-mar-8-guia-revit-chatgpt-los-10-errores-y-su-prompt"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g1-mar-8-guia-revit-chatgpt-los-10-errores-y-su-prompt"><span aria-hidden="true"></span></label><span class="fecha">Mar 8</span><h3>Guia «Revit + ChatGPT»: los 10 errores y su prompt</h3><span class="tipo">REEL (grabar) — EXTRA lanzamiento de recurso</span></div>
+<p class="nota">Lanzamiento del recurso. Va el martes a proposito: el miercoles 9 sale el reel «Valor 6» y su CTA apunta a esta guia, asi que tiene que estar viva un dia antes. Desarrollo completo, guion y prompt en la pestaña Lead magnets.</p>
+<span class="rot">Desarrollo</span><div class="pegar">Lanzamiento del recurso. Va el martes a proposito: el miercoles 9 sale el reel «Valor 6» y su CTA apunta a esta guia, asi que tiene que estar viva un dia antes. Desarrollo completo, guion y prompt en la pestaña Lead magnets.</div>
+<p class="nota">El guion completo de este reel está en la pestaña <b>Reels</b>.</p>
 </div>
 <div class="pieza col" data-sem="1" data-k="g1-mie-9-reel-valor-6-revit-me-arrojo-un-error-y-chatgpt-me-ahorro-2-h"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g1-mie-9-reel-valor-6-revit-me-arrojo-un-error-y-chatgpt-me-ahorro-2-h"><span aria-hidden="true"></span></label><span class="fecha">Mie 9</span><h3>REEL «Valor 6» — Revit me arrojo un error y ChatGPT me ahorro 2 horas</h3><span class="tipo">REEL (listo)</span></div>
 <span class="rot">Desarrollo</span><div class="pegar">El video ya esta terminado con el pipeline nuevo (es el grabado #5 del equipo, confirmado por Dayana). Solo falta confirmar la palabra clave del CTA (¿GUIA?) y montar su disparador — y que la guia exista antes de publicar (ver lead magnets por crear).</div>
@@ -384,6 +412,11 @@ El cálculo completo de la imagen:
 #Revit #BIM #Modelado #DesignModelingDG</div>
 <div class="prompt"><span class="rot">Prompt para ChatGPT · CARRUSEL · 8 slides · 1080x1350 px (4:5)</span><div class="prompt-txt">Portada: modelo 3D con varias zonas marcadas con círculos ámbar de error. Interiores: cada slide muestra UN error a la izquierda (en rojo apagado) y su corrección a la derecha (en verde), formato antes/después muy legible. Estilo Design Modeling Academy: fondo azul marino #0E2438, acento ámbar #E8A04A, texto blanco, tipografía sans muy gruesa, estética técnica de ingeniería limpia (referencia Autodesk Revit), sin fotos de stock genéricas, sin ciencia ficción. Firma abajo a la izquierda «DG · @design_modeling_dg». NO escribas texto dentro de la imagen salvo donde se indique — el texto lo monta diseño.</div></div>
 </div>
+<div class="pieza col" data-sem="3" data-k="g1-mar-22-pack-de-5-scripts-de-dynamo-python-para-revit"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g1-mar-22-pack-de-5-scripts-de-dynamo-python-para-revit"><span aria-hidden="true"></span></label><span class="fecha">Mar 22</span><h3>Pack de 5 scripts de Dynamo / Python para Revit</h3><span class="tipo">CARRUSEL (6 slides) — EXTRA lanzamiento de recurso</span></div>
+<p class="nota">Lanzamiento del recurso. Dynamo es el tema de mejor guardado de la cuenta y no teniamos recurso propio. Desarrollo completo y prompt en la pestaña Lead magnets.</p>
+<span class="rot">Desarrollo</span><div class="pegar">Lanzamiento del recurso. Dynamo es el tema de mejor guardado de la cuenta y no teniamos recurso propio. Desarrollo completo y prompt en la pestaña Lead magnets.</div>
+<p class="nota">El guion completo de este reel está en la pestaña <b>Reels</b>.</p>
+</div>
 <div class="pieza col" data-sem="3" data-k="g1-mie-23-las-4-puertas-en-que-etapa-bim-estas"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g1-mie-23-las-4-puertas-en-que-etapa-bim-estas"><span aria-hidden="true"></span></label><span class="fecha">Mie 23</span><h3>Las 4 puertas: ¿en qué etapa BIM estás?</h3><span class="tipo">CARRUSEL (8 slides)</span></div>
 <p class="nota">LA PIEZA DEL MES: la nueva arquitectura contada como contenido. Sin precio. Requiere el disparador RUTA vivo.</p>
 <span class="rot">Hook</span><div class="pegar">¿En qué etapa BIM estás? Hay 4 puertas de entrada — y solo una es la tuya.</div>
@@ -442,6 +475,11 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 #AceroEstructural #IA #Ingeniería #Estructuras #DesignModelingDG</div>
 <p class="nota">⚠ REGLA DURA: el tutor de IA NO se menciona en publico hasta que este desplegado y probado (falta el deploy en Render y la prueba con las preguntas de Gabriel). Prometer un recurso que no existe ya nos costo un incidente en julio. Si al llegar la fecha no esta en produccion, la pieza se mueve de fecha — no se publica sin el tutor vivo. El precio de ACERO no va en la pieza (feed); sí puede ir en correo a lista propia y en DM del bot. El mockup del slide 3 es el aprobado del tutor — captura real, no recreación.</p>
 <div class="prompt"><span class="rot">Prompt para ChatGPT · CARRUSEL · 6 slides · 1080x1350 px (4:5)</span><div class="prompt-txt">Motivo: burbujas de chat de interfaz limpia sobre azul marino. Portada: una burbuja con una pregunta técnica a medio escribir y un cursor. Slide 3: usar la CAPTURA REAL del tutor respondiendo, nunca una recreación. Slide 4: split con «chatbot genérico» tachado y «tutor del curso» en ámbar. Estilo Design Modeling Academy: fondo azul marino #0E2438, acento ámbar #E8A04A, texto blanco, tipografía sans muy gruesa, estética técnica de ingeniería limpia (referencia Autodesk Revit), sin fotos de stock genéricas, sin ciencia ficción. Firma abajo a la izquierda «DG · @design_modeling_dg». NO escribas texto dentro de la imagen salvo donde se indique — el texto lo monta diseño.</div></div>
+</div>
+<div class="pieza col" data-sem="4" data-k="g1-mar-29-guia-de-memoria-de-calculo-plantilla"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g1-mar-29-guia-de-memoria-de-calculo-plantilla"><span aria-hidden="true"></span></label><span class="fecha">Mar 29</span><h3>Guia de memoria de calculo + plantilla</h3><span class="tipo">POST PLANO (1 imagen) — EXTRA lanzamiento de recurso</span></div>
+<p class="nota">Lanzamiento del recurso. Post plano porque cumple la regla: lleva dato de calculo. Desarrollo completo y prompt en la pestaña Lead magnets.</p>
+<span class="rot">Desarrollo</span><div class="pegar">Lanzamiento del recurso. Post plano porque cumple la regla: lleva dato de calculo. Desarrollo completo y prompt en la pestaña Lead magnets.</div>
+<p class="nota">El guion completo de este reel está en la pestaña <b>Reels</b>.</p>
 </div>
 <div class="pieza col" data-sem="4" data-k="g1-mie-30-reel-demo-del-tutor-de-ia-en-pantalla-grabar-condicionado"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g1-mie-30-reel-demo-del-tutor-de-ia-en-pantalla-grabar-condicionado"><span aria-hidden="true"></span></label><span class="fecha">Mie 30</span><h3>REEL · Demo del tutor de IA en pantalla (grabar, CONDICIONADO)</h3><span class="tipo">REEL (grabar, gated)</span></div>
 <span class="rot">Desarrollo</span><div class="pegar">Grabacion real de pantalla: un alumno le pregunta al tutor «¿como verifico el pandeo lateral de esta viga?» y el tutor responde citando la sesion. Sin voz en off inventada: lo que se ve es lo que hace. Cierre: comenta ACERO. SOLO se publica con el tutor en produccion; alternativa del banco: reel de las 5 verificaciones.</div>
@@ -1096,9 +1134,10 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 <section id="tab-pauta" hidden><h2>Publicidad — sale todo junto el lunes 7</h2>
 <p class="intro">NO es calendario: los seis anuncios suben JUNTOS el lunes 7 de septiembre. El Máster se vende POR MÓDULOS: cada módulo tiene su anuncio, su precio y su formulario, y el anuncio ya no vende «un máster de 12 meses». El copy de abajo está aprobado y va tal cual — se pega, no se reescribe. El setter califica con el BIM Level Test y el closer hace el upsell a la ruta completa. Todo a formulario o WhatsApp, nunca a landing.</p>
 <div class="indic"><h3>Antes de subir nada</h3>
+<p><b>REGLA DE ORO — el Máster no lleva precio.</b> En NINGUNA pieza de publicidad anclada al Máster aparece una cifra: ni el precio del módulo, ni el de la ruta, ni la suma de los cuatro. Ni en el copy, ni en el titular, ni dentro de la imagen. El CTA siempre es uno de estos tres: «llena el formulario», «agenda una cita» o «habla con un asesor». El precio lo da el asesor en la conversación, cuando ya sabe qué módulo le toca a esa persona — un anuncio con cifra filtra por bolsillo antes de que la persona entienda qué está comprando.</p>
+<p><b>La excepción es ACERO.</b> La Especialización en Acero SÍ lleva precio en el anuncio: $200 USD. Es una cifra que se decide sola y ponerla ahorra la mitad de las conversaciones. La regla de arriba aplica al Máster y a sus módulos, no a ACERO.</p>
 <p><b>Fecha.</b> Los seis suben JUNTOS el lunes 7 de septiembre. No es un calendario: es un paquete. Si un creativo no está listo, sube el resto — no se retrasa el paquete entero.</p>
 <p><b>El sello es bloqueante.</b> Los cuatro anuncios de módulo llevan el sello de su microcredencial EN LA IMAGEN. El sello tiene que existir como PNG con fondo transparente antes del lunes 7 — está en la lista de Ester. Un anuncio de módulo sin sello vende un curso; con sello vende un título, y esa es toda la diferencia de esta campaña.</p>
-<p><b>El precio del módulo es el gancho.</b> Va en el copy y va en la imagen. Es el cambio del 1-sep: antes escondíamos el precio y por eso el anuncio no filtraba a nadie.</p>
 <p><b>Todo lead cae en el test.</b> Quien llena el formulario entra a la secuencia del BIM Level Test. No se le vende el módulo de golpe: primero se le confirma el nivel, y ese resultado es lo que usa el closer para vender el módulo que le toca — y para el upsell a la ruta.</p>
 <p><b>Facebook no se apaga.</b> Más de la mitad del alcance real de la cuenta viene de Facebook. Ir solo a Instagram es tirar la mitad del presupuesto.</p>
 <p><b>Qué se mira el lunes 14.</b> CPL por módulo y, sobre todo, cuántos de esos leads llenaron el test. Un módulo con CPL bajo y test sin llenar no está funcionando: está juntando correos.</p>
@@ -1106,16 +1145,16 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 </div>
 <div class="avance"><span><b class="n">0</b> de <b class="tot">0</b> marcadas</span><button type="button" class="reabrir">Reabrir todas</button></div>
 <h3 class="camp">MÁSTER BIM MANAGEMENT + IA — VENTA POR MÓDULOS · copy aprobado 1-sep</h3>
-<div class="ad col" data-k="ad-mod1"><div class="ad-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="ad-mod1"><span aria-hidden="true"></span></label><span class="tipo">Post plano 4:5 + carrusel de 3 — CREATIVO NUEVO</span><h3>Módulo 1 · BIM Professional</h3><span class="precio-ad">$750 · 3 meses</span></div>
+<div class="ad col" data-k="ad-mod1"><div class="ad-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="ad-mod1"><span aria-hidden="true"></span></label><span class="tipo">Post plano 4:5 + carrusel de 3 — CREATIVO NUEVO</span><h3>Módulo 1 · BIM Professional</h3><span class="precio-ad">3 meses</span></div>
 <p class="hook">Sabes usar Revit. Pero, ¿sabes implementar BIM en un proyecto de verdad?</p>
 <p class="etq">Texto principal — se pega tal cual</p>
 <div class="pegar">Modelar y ordenar un proyecto no son lo mismo. En 3 meses estructuras e implementas BIM con metodología: estándares, BEP y flujos de trabajo que no se te caen a mitad del proyecto.
 
-100% asincrónico. Al terminar sales con la microcredencial de MODELADOR BIM, avalada por Silicon Valley Futures Institute. $750.
+100% asincrónico. Al terminar sales con la microcredencial de MODELADOR BIM, avalada por Silicon Valley Futures Institute.
 
-Llena el formulario y te decimos si este es tu módulo.</div>
-<div class="campos"><div><span class="etq">Titular</span><code>BIM Professional · $750 · 3 meses</code></div><div><span class="etq">Descripción</span><code>Microcredencial incluida</code></div></div>
-<p class="etq">Creativo</p><p class="creativo">Tarjeta azul #0E2438 con «BIM PROFESSIONAL» grande, el verbo ESTRUCTURA debajo y el precio en ámbar #E8A04A. El sello de la microcredencial «MODELADOR BIM» va en la imagen, abajo a la derecha. Carrusel de 3: el dolor, lo que sale sabiendo, precio + microcredencial + CTA.</p>
+Llena el formulario y un asesor te dice si este es tu módulo.</div>
+<div class="campos"><div><span class="etq">Titular</span><code>BIM Professional · 3 meses</code></div><div><span class="etq">Descripción</span><code>Microcredencial incluida</code></div></div>
+<p class="etq">Creativo</p><p class="creativo">Tarjeta azul #0E2438 con «BIM PROFESSIONAL» grande y el verbo ESTRUCTURA debajo en ámbar #E8A04A. El sello de la microcredencial «MODELADOR BIM» va en la imagen, abajo a la derecha. Sin cifras. Carrusel de 3: el dolor, lo que sale sabiendo, microcredencial + CTA.</p>
 <details class="prompt"><summary>Prompt de imagen para ChatGPT</summary><div class="pegar">Imagen 1080x1350 px (4:5). Fondo azul marino profundo #0E2438 con una retícula arquitectónica muy tenue de planta de edificio, apenas visible, en la mitad inferior. Espacio limpio arriba para el titular. Un plano de Revit en vista isométrica, dibujado en línea fina ámbar #E8A04A sobre el azul, ocupando la esquina inferior izquierda como si fuera un blueprint. Iluminación sobria, sin brillos ni degradados vistosos. Deja libre la esquina inferior derecha para colocar el sello de la microcredencial. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos en ambar #E8A04A, tipografia sans-serif de palo seco muy gruesa, composicion limpia y con aire, nada de stock corporativo ni gente sonriendo a camara. Sin texto mal escrito: el texto final se monta en Canva, la IA solo entrega el fondo y los elementos.</div></details>
 <p class="etq">Ficha de montaje</p><div class="tabla-scroll"><table class="cfg"><tbody>
 <tr class=""><th>Objetivo</th><td>Clientes potenciales (leads) — NO trafico, NO interacciones.</td></tr>
@@ -1128,20 +1167,20 @@ Llena el formulario y te decimos si este es tu módulo.</div>
 <tr class=""><th>Presupuesto</th><td>Reparto igual entre los 4 modulos los primeros 7 dias — es una prueba, no una apuesta. El lunes 14 se mira el CPL de cada uno y se mueve el presupuesto al que mejor va, dejando un piso al resto para no matarlos antes de que salgan del aprendizaje.</td></tr>
 <tr class=""><th>Referencia de CPL</th><td>$0.48 - $1.40 por lead (lo real de agosto con formulario). Por encima de $2 sostenido, se revisa el creativo antes que el publico.</td></tr>
 <tr class=""><th>Nombre de campana</th><td>SEP26 | MASTER-MODULOS | &lt;modulo&gt; | FORM — asi el reporte del viernes se puede auditar sin adivinar que es cada cosa.</td></tr>
-<tr class="dura"><th>Lo que NO va</th><td>El precio de la ruta completa. La palabra «master de 12 meses». Cualquier cifra de cupos que no se haya confirmado ese dia.</td></tr>
+<tr class="dura"><th>Lo que NO va</th><td>NINGÚN precio, ni del módulo ni de la ruta. Ni en el copy, ni en el titular, ni en la imagen. El Máster se decide en conversación: el precio lo da el asesor en la llamada, cuando ya sabe qué módulo le toca a esa persona.</td></tr>
 </tbody></table></div></div>
-<div class="ad col" data-k="ad-mod2"><div class="ad-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="ad-mod2"><span aria-hidden="true"></span></label><span class="tipo">Post plano 4:5 + carrusel de 3 — CREATIVO NUEVO</span><h3>Módulo 2 · BIM Coordination</h3><span class="precio-ad">$750 · 3 meses</span></div>
+<div class="ad col" data-k="ad-mod2"><div class="ad-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="ad-mod2"><span aria-hidden="true"></span></label><span class="tipo">Post plano 4:5 + carrusel de 3 — CREATIVO NUEVO</span><h3>Módulo 2 · BIM Coordination</h3><span class="precio-ad">3 meses</span></div>
 <p class="hook">Si descubres los choques en obra, ya pagaste el error dos veces.</p>
 <p class="etq">Texto principal — se pega tal cual</p>
 <div class="pegar">Una interferencia detectada en el modelo cuesta una tarde. La misma interferencia detectada en obra cuesta miles.
 
 En 3 meses coordinas disciplinas, detectas interferencias antes de que existan y controlas la calidad de los entregables.
 
-100% asincrónico. Al terminar sales con la microcredencial de COORDINADOR BIM, avalada por Silicon Valley Futures Institute. $750.
+100% asincrónico. Al terminar sales con la microcredencial de COORDINADOR BIM, avalada por Silicon Valley Futures Institute.
 
-Llena el formulario y te decimos si este es tu módulo.</div>
-<div class="campos"><div><span class="etq">Titular</span><code>BIM Coordination · $750 · 3 meses</code></div><div><span class="etq">Descripción</span><code>Microcredencial incluida</code></div></div>
-<p class="etq">Creativo</p><p class="creativo">Split: modelo con el choque marcado / foto de obra con el mismo choque. Verbo COORDINA y el sello «COORDINADOR BIM» en la imagen.</p>
+Llena el formulario y un asesor te dice si este es tu módulo.</div>
+<div class="campos"><div><span class="etq">Titular</span><code>BIM Coordination · 3 meses</code></div><div><span class="etq">Descripción</span><code>Microcredencial incluida</code></div></div>
+<p class="etq">Creativo</p><p class="creativo">Split: modelo con el choque marcado / foto de obra con el mismo choque. Verbo COORDINA y el sello «COORDINADOR BIM» en la imagen. Sin cifras.</p>
 <details class="prompt"><summary>Prompt de imagen para ChatGPT</summary><div class="pegar">Imagen 1080x1350 px (4:5) dividida verticalmente por la mitad con una línea fina ámbar #E8A04A. Mitad izquierda: vista de un modelo BIM 3D de instalaciones — ductos de climatización cruzando una viga estructural — en tonos azul marino #0E2438 y gris frío, con el punto del cruce marcado por un círculo ámbar. Mitad derecha: fotografía real de obra gruesa, el mismo ducto chocando contra la misma viga, luz de obra, hormigón visto, sin personas. Mismo encuadre y misma altura de cámara en las dos mitades para que se lea que es el mismo choque. Deja aire abajo para el sello. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos en ambar #E8A04A, tipografia sans-serif de palo seco muy gruesa, composicion limpia y con aire, nada de stock corporativo ni gente sonriendo a camara. Sin texto mal escrito: el texto final se monta en Canva, la IA solo entrega el fondo y los elementos.</div></details>
 <p class="etq">Ficha de montaje</p><div class="tabla-scroll"><table class="cfg"><tbody>
 <tr class=""><th>Objetivo</th><td>Clientes potenciales (leads) — NO trafico, NO interacciones.</td></tr>
@@ -1154,20 +1193,20 @@ Llena el formulario y te decimos si este es tu módulo.</div>
 <tr class=""><th>Presupuesto</th><td>Reparto igual entre los 4 modulos los primeros 7 dias — es una prueba, no una apuesta. El lunes 14 se mira el CPL de cada uno y se mueve el presupuesto al que mejor va, dejando un piso al resto para no matarlos antes de que salgan del aprendizaje.</td></tr>
 <tr class=""><th>Referencia de CPL</th><td>$0.48 - $1.40 por lead (lo real de agosto con formulario). Por encima de $2 sostenido, se revisa el creativo antes que el publico.</td></tr>
 <tr class=""><th>Nombre de campana</th><td>SEP26 | MASTER-MODULOS | &lt;modulo&gt; | FORM — asi el reporte del viernes se puede auditar sin adivinar que es cada cosa.</td></tr>
-<tr class="dura"><th>Lo que NO va</th><td>El precio de la ruta completa. La palabra «master de 12 meses». Cualquier cifra de cupos que no se haya confirmado ese dia.</td></tr>
+<tr class="dura"><th>Lo que NO va</th><td>NINGÚN precio, ni del módulo ni de la ruta. Ni en el copy, ni en el titular, ni en la imagen. El Máster se decide en conversación: el precio lo da el asesor en la llamada, cuando ya sabe qué módulo le toca a esa persona.</td></tr>
 </tbody></table></div></div>
-<div class="ad col" data-k="ad-mod3"><div class="ad-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="ad-mod3"><span aria-hidden="true"></span></label><span class="tipo">Post plano 4:5 + carrusel de 3 — CREATIVO NUEVO</span><h3>Módulo 3 · BIM Management</h3><span class="precio-ad">$600 · 2 meses</span></div>
+<div class="ad col" data-k="ad-mod3"><div class="ad-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="ad-mod3"><span aria-hidden="true"></span></label><span class="tipo">Post plano 4:5 + carrusel de 3 — CREATIVO NUEVO</span><h3>Módulo 3 · BIM Management</h3><span class="precio-ad">2 meses</span></div>
 <p class="hook">El salto de modelador a BIM Manager no es de software. Es de criterio.</p>
 <p class="etq">Texto principal — se pega tal cual</p>
 <div class="pegar">Puedes modelar impecable y seguir esperando a que alguien te diga qué modelar.
 
 En 2 meses planificas en 4D, controlas costos en 5D y lideras equipos BIM: dejas de ejecutar y empiezas a decidir.
 
-100% asincrónico. Al terminar sales con la microcredencial de BIM MANAGER 4D-5D, avalada por Silicon Valley Futures Institute. $600 — es el módulo de entrada más corto.
+100% asincrónico y es la puerta más corta de las cuatro. Al terminar sales con la microcredencial de BIM MANAGER 4D-5D, avalada por Silicon Valley Futures Institute.
 
-Llena el formulario y te decimos si este es tu módulo.</div>
-<div class="campos"><div><span class="etq">Titular</span><code>BIM Management · $600 · 2 meses</code></div><div><span class="etq">Descripción</span><code>El módulo más corto</code></div></div>
-<p class="etq">Creativo</p><p class="creativo">Escalera de 4 peldaños con el salto 1→2 resaltado en ámbar. Verbo GESTIONA y el sello «BIM MANAGER 4D-5D» en la imagen.</p>
+Llena el formulario y un asesor te dice si este es tu módulo.</div>
+<div class="campos"><div><span class="etq">Titular</span><code>BIM Management · 2 meses</code></div><div><span class="etq">Descripción</span><code>El módulo más corto</code></div></div>
+<p class="etq">Creativo</p><p class="creativo">Escalera de 4 peldaños con el salto 1→2 resaltado en ámbar. Verbo GESTIONA y el sello «BIM MANAGER 4D-5D» en la imagen. Sin cifras.</p>
 <details class="prompt"><summary>Prompt de imagen para ChatGPT</summary><div class="pegar">Imagen 1080x1350 px (4:5). Fondo azul marino #0E2438. Una escalera de cuatro peldaños vista de perfil, construida con líneas finas y limpias como un diagrama técnico, ocupando la mitad inferior. Los peldaños 1 y 3 y 4 en gris azulado apagado; el salto del peldaño 1 al 2 resaltado en ámbar #E8A04A, con el peldaño 2 iluminado. Nada de figuras humanas subiendo. Mucho aire arriba para el titular y esquina inferior derecha libre para el sello. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos en ambar #E8A04A, tipografia sans-serif de palo seco muy gruesa, composicion limpia y con aire, nada de stock corporativo ni gente sonriendo a camara. Sin texto mal escrito: el texto final se monta en Canva, la IA solo entrega el fondo y los elementos.</div></details>
 <p class="etq">Ficha de montaje</p><div class="tabla-scroll"><table class="cfg"><tbody>
 <tr class=""><th>Objetivo</th><td>Clientes potenciales (leads) — NO trafico, NO interacciones.</td></tr>
@@ -1180,20 +1219,20 @@ Llena el formulario y te decimos si este es tu módulo.</div>
 <tr class=""><th>Presupuesto</th><td>Reparto igual entre los 4 modulos los primeros 7 dias — es una prueba, no una apuesta. El lunes 14 se mira el CPL de cada uno y se mueve el presupuesto al que mejor va, dejando un piso al resto para no matarlos antes de que salgan del aprendizaje.</td></tr>
 <tr class=""><th>Referencia de CPL</th><td>$0.48 - $1.40 por lead (lo real de agosto con formulario). Por encima de $2 sostenido, se revisa el creativo antes que el publico.</td></tr>
 <tr class=""><th>Nombre de campana</th><td>SEP26 | MASTER-MODULOS | &lt;modulo&gt; | FORM — asi el reporte del viernes se puede auditar sin adivinar que es cada cosa.</td></tr>
-<tr class="dura"><th>Lo que NO va</th><td>El precio de la ruta completa. La palabra «master de 12 meses». Cualquier cifra de cupos que no se haya confirmado ese dia.</td></tr>
+<tr class="dura"><th>Lo que NO va</th><td>NINGÚN precio, ni del módulo ni de la ruta. Ni en el copy, ni en el titular, ni en la imagen. El Máster se decide en conversación: el precio lo da el asesor en la llamada, cuando ya sabe qué módulo le toca a esa persona.</td></tr>
 </tbody></table></div></div>
-<div class="ad col" data-k="ad-mod4"><div class="ad-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="ad-mod4"><span aria-hidden="true"></span></label><span class="tipo">Post plano 4:5 + carrusel de 3 + reel — CREATIVO NUEVO / reutiliza el comercial</span><h3>Módulo 4 · BIM + IA</h3><span class="precio-ad">$900 · 3 meses</span></div>
+<div class="ad col" data-k="ad-mod4"><div class="ad-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="ad-mod4"><span aria-hidden="true"></span></label><span class="tipo">Post plano 4:5 + carrusel de 3 + reel — CREATIVO NUEVO / reutiliza el comercial</span><h3>Módulo 4 · BIM + IA</h3><span class="precio-ad">3 meses</span></div>
 <p class="hook">La IA ya hace parte de tu trabajo BIM. La ventaja no es usarla: es usarla con criterio.</p>
 <p class="etq">Texto principal — se pega tal cual</p>
 <div class="pegar">Si repites tareas que una máquina haría igual, no te falta tiempo: te falta automatización.
 
 En 3 meses automatizas con Dynamo y Python, y aplicas IA en proyectos reales — con el criterio para saber cuándo la respuesta de la máquina sirve y cuándo no.
 
-100% asincrónico. Al terminar sales con la microcredencial de ESPECIALISTA BIM + IA, avalada por Silicon Valley Futures Institute. $900.
+100% asincrónico. Al terminar sales con la microcredencial de ESPECIALISTA BIM + IA, avalada por Silicon Valley Futures Institute.
 
-Llena el formulario y te decimos si este es tu módulo.</div>
-<div class="campos"><div><span class="etq">Titular</span><code>BIM + IA · $900 · 3 meses</code></div><div><span class="etq">Descripción</span><code>Dynamo, Python e IA</code></div></div>
-<p class="etq">Creativo</p><p class="creativo">El comercial Revit + IA ya producido, o tarjeta con el verbo AUTOMATIZA y el sello «ESPECIALISTA BIM + IA».</p>
+Llena el formulario y un asesor te dice si este es tu módulo.</div>
+<div class="campos"><div><span class="etq">Titular</span><code>BIM + IA · 3 meses</code></div><div><span class="etq">Descripción</span><code>Dynamo, Python e IA</code></div></div>
+<p class="etq">Creativo</p><p class="creativo">El comercial Revit + IA ya producido, o tarjeta con el verbo AUTOMATIZA y el sello «ESPECIALISTA BIM + IA». Sin cifras.</p>
 <details class="prompt"><summary>Prompt de imagen para ChatGPT</summary><div class="pegar">Imagen 1080x1350 px (4:5). Fondo azul marino #0E2438. Una interfaz de Revit muy estilizada y desenfocada al fondo, apenas insinuada; delante, un grafo de nodos tipo Dynamo dibujado en línea fina ámbar #E8A04A — cajas conectadas por cables curvos — que se ordena de izquierda a derecha, del caos al orden. Sin logos de software reales, sin texto legible en la interfaz. Aire arriba para el titular y esquina inferior derecha libre para el sello. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos en ambar #E8A04A, tipografia sans-serif de palo seco muy gruesa, composicion limpia y con aire, nada de stock corporativo ni gente sonriendo a camara. Sin texto mal escrito: el texto final se monta en Canva, la IA solo entrega el fondo y los elementos.</div></details>
 <p class="etq">Ficha de montaje</p><div class="tabla-scroll"><table class="cfg"><tbody>
 <tr class=""><th>Objetivo</th><td>Clientes potenciales (leads) — NO trafico, NO interacciones.</td></tr>
@@ -1206,7 +1245,7 @@ Llena el formulario y te decimos si este es tu módulo.</div>
 <tr class=""><th>Presupuesto</th><td>Reparto igual entre los 4 modulos los primeros 7 dias — es una prueba, no una apuesta. El lunes 14 se mira el CPL de cada uno y se mueve el presupuesto al que mejor va, dejando un piso al resto para no matarlos antes de que salgan del aprendizaje.</td></tr>
 <tr class=""><th>Referencia de CPL</th><td>$0.48 - $1.40 por lead (lo real de agosto con formulario). Por encima de $2 sostenido, se revisa el creativo antes que el publico.</td></tr>
 <tr class=""><th>Nombre de campana</th><td>SEP26 | MASTER-MODULOS | &lt;modulo&gt; | FORM — asi el reporte del viernes se puede auditar sin adivinar que es cada cosa.</td></tr>
-<tr class="dura"><th>Lo que NO va</th><td>El precio de la ruta completa. La palabra «master de 12 meses». Cualquier cifra de cupos que no se haya confirmado ese dia.</td></tr>
+<tr class="dura"><th>Lo que NO va</th><td>NINGÚN precio, ni del módulo ni de la ruta. Ni en el copy, ni en el titular, ni en la imagen. El Máster se decide en conversación: el precio lo da el asesor en la llamada, cuando ya sabe qué módulo le toca a esa persona.</td></tr>
 <tr class=""><th>Video</th><td>Este es el único módulo que ya tiene video: el comercial Revit + IA producido en agosto. Se sube como creativo adicional dentro del mismo conjunto, no como campaña aparte, para que compita contra la imagen y el dato diga cuál gana.</td></tr>
 </tbody></table></div></div>
 <div class="ad col" data-k="ad-diagnostico"><div class="ad-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="ad-diagnostico"><span aria-hidden="true"></span></label><span class="tipo">Post plano 4:5 — creativo existente, copy actualizado</span><h3>Anuncio de diagnóstico</h3><span class="precio-ad">Se mantiene · a WhatsApp</span></div>
@@ -1216,7 +1255,7 @@ Llena el formulario y te decimos si este es tu módulo.</div>
 
 Tu respuesta dice exactamente qué módulo te toca estudiar ahora. Hay un test de 5 minutos que lo confirma sin adornos.
 
-Escríbenos y te decimos en qué etapa estás — sin compromiso.</div>
+Habla con un asesor y te decimos en qué etapa estás — sin compromiso.</div>
 <div class="campos"><div><span class="etq">Titular</span><code>¿En qué etapa BIM estás?</code></div><div><span class="etq">Descripción</span><code>Test de 5 minutos</code></div></div>
 <p class="etq">Creativo</p><p class="creativo">Cuatro frases en pantalla: «Necesito implementar BIM» · «Quiero coordinar disciplinas» · «Quiero costos y liderazgo» · «Quiero IA y automatización».</p>
 <details class="prompt"><summary>Prompt de imagen para ChatGPT</summary><div class="pegar">Imagen 1080x1350 px (4:5). Fondo azul marino #0E2438 dividido en cuatro bandas horizontales del mismo alto, separadas por líneas finísimas ámbar #E8A04A. Cada banda con una textura distinta y muy sutil de fondo: retícula de planta, malla de coordinación, diagrama de Gantt, grafo de nodos — todas apenas visibles, en un tono más claro del mismo azul. Las bandas van vacías: el texto de las cuatro frases se monta encima en Canva. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos en ambar #E8A04A, tipografia sans-serif de palo seco muy gruesa, composicion limpia y con aire, nada de stock corporativo ni gente sonriendo a camara. Sin texto mal escrito: el texto final se monta en Canva, la IA solo entrega el fondo y los elementos.</div></details>
@@ -1229,23 +1268,23 @@ Escríbenos y te decimos en qué etapa estás — sin compromiso.</div>
 <tr class=""><th>Medidas</th><td>1080x1350 px (4:5) y versión 1080x1920 px para historias.</td></tr>
 <tr class=""><th>Presupuesto</th><td>Es el anuncio que ya venía corriendo: se mantiene su presupuesto y NO se toca esta semana. Sirve de línea base para comparar los 4 nuevos.</td></tr>
 <tr class=""><th>Nombre de campana</th><td>SEP26 | DIAGNOSTICO | WA</td></tr>
-<tr class="dura"><th>Lo que NO va</th><td>Ningún precio. Este anuncio no vende, clasifica.</td></tr>
+<tr class="dura"><th>Lo que NO va</th><td>NINGÚN precio, ni del módulo ni de la ruta. Ni en el copy, ni en el titular, ni en la imagen. El Máster se decide en conversación: el precio lo da el asesor en la llamada, cuando ya sabe qué módulo le toca a esa persona.</td></tr>
 </tbody></table></div></div>
 <div class="ad col" data-k="ad-ruta"><div class="ad-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="ad-ruta"><span aria-hidden="true"></span></label><span class="tipo">Carrusel ads de 5 tarjetas — CREATIVO NUEVO</span><h3>Carrusel de la ruta completa</h3><span class="precio-ad">5 tarjetas · a formulario</span></div>
 <p class="hook">¿En qué etapa BIM estás?</p>
 <p class="etq">Texto principal — se pega tal cual</p>
-<div class="pegar">Cuatro puertas de entrada, cada una con su microcredencial avalada por Silicon Valley Futures Institute.
+<div class="pegar">Cuatro puertas de entrada, y cada una te deja una microcredencial avalada por Silicon Valley Futures Institute:
 
-BIM Professional · $750 · 3 meses
-BIM Coordination · $750 · 3 meses
-BIM Management · $600 · 2 meses
-BIM + IA · $900 · 3 meses
+BIM Professional — estructuras e implementas · 3 meses
+BIM Coordination — coordinas y detectas antes · 3 meses
+BIM Management — planificas, controlas y decides · 2 meses
+BIM + IA — automatizas con criterio · 3 meses
 
-Los cuatro por separado suman $3.000. La ruta completa cuesta menos y además te certifica como BIM Manager + IA.
+Puedes entrar por una sola o hacer la ruta completa, que además te certifica como BIM Manager + IA y sale bastante mejor que tomarlas sueltas.
 
-Llena el formulario y te decimos por cuál puerta entrar.</div>
+Agenda una cita con un asesor y te decimos por cuál puerta entrar.</div>
 <div class="campos"><div><span class="etq">Titular</span><code>Las 4 puertas del Máster BIM</code></div><div><span class="etq">Descripción</span><code>Entra por la que te toca</code></div></div>
-<p class="etq">Creativo</p><p class="creativo">T1: ¿En qué etapa BIM estás? · T2-T5: una puerta por tarjeta con su precio ($750 / $750 / $600 / $900) · Cierre: los cuatro por separado suman $3.000. La ruta completa cuesta menos y además te certifica como BIM Manager + IA.</p>
+<p class="etq">Creativo</p><p class="creativo">T1: ¿En qué etapa BIM estás? · T2-T5: una puerta por tarjeta con su verbo, su duración y su microcredencial · Cierre: la ruta completa te certifica como BIM Manager + IA y sale mejor que tomarlas sueltas. NINGUNA cifra en ninguna tarjeta.</p>
 <details class="prompt"><summary>Prompt de imagen para ChatGPT</summary><div class="pegar">Cinco imágenes de 1080x1080 px (1:1), misma familia visual, para carrusel. Fondo azul marino #0E2438 en las cinco. Tarjeta 1: cuatro puertas arquitectónicas dibujadas en línea fina ámbar #E8A04A, alineadas y vistas de frente, una de ellas entreabierta con luz cálida saliendo. Tarjetas 2 a 5: una sola puerta por tarjeta, cada vez más abierta, con un elemento técnico distinto asomando por el vano — plano de planta, modelo de coordinación, diagrama 4D-5D, grafo de nodos. Composición idéntica y misma escala en las cinco para que el carrusel se lea como una secuencia. Mucho aire libre: el texto y los precios se montan en Canva. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos en ambar #E8A04A, tipografia sans-serif de palo seco muy gruesa, composicion limpia y con aire, nada de stock corporativo ni gente sonriendo a camara. Sin texto mal escrito: el texto final se monta en Canva, la IA solo entrega el fondo y los elementos.</div></details>
 <p class="etq">Ficha de montaje</p><div class="tabla-scroll"><table class="cfg"><tbody>
 <tr class=""><th>Objetivo</th><td>Clientes potenciales (leads) — formulario.</td></tr>
@@ -1255,26 +1294,26 @@ Llena el formulario y te decimos por cuál puerta entrar.</div>
 <tr class=""><th>Medidas</th><td>1080x1080 px (1:1) las cinco tarjetas. Mismo encuadre en todas.</td></tr>
 <tr class=""><th>Presupuesto</th><td>El menor de los seis. Este anuncio es para quien ya entendió la oferta; el volumen lo traen los de módulo.</td></tr>
 <tr class=""><th>Nombre de campana</th><td>SEP26 | MASTER-RUTA | CARRUSEL | FORM</td></tr>
-<tr class="dura"><th>REGLA DURA</th><td>El precio de la ruta NO va en el creativo ni en el copy. Se enuncia el ahorro, la cifra la dice el closer en la llamada. Si un creativo llega con el precio de la ruta puesto, no se sube.</td></tr>
+<tr class="dura"><th>REGLA DURA</th><td>Ni el precio de la ruta ni el de los módulos aparecen. El ahorro se enuncia sin cifra («sale mejor que tomarlas sueltas») y el número lo dice el asesor. Un creativo que llegue con cifras no se sube.</td></tr>
 </tbody></table></div></div>
 <h3 class="camp">VIDEOS DE PAUTA — 4 reels de 15 s, uno por módulo · POR GRABAR</h3>
-<div class="ad col" data-k="ad-reel-ad-mod1"><div class="ad-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="ad-reel-ad-mod1"><span aria-hidden="true"></span></label><span class="tipo">Reel ads 9:16 — POR GRABAR</span><h3>Reel de pauta · Módulo 1 · BIM Professional</h3><span class="precio-ad">$750 · 3 meses · 15 s</span></div>
+<div class="ad col" data-k="ad-reel-ad-mod1"><div class="ad-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="ad-reel-ad-mod1"><span aria-hidden="true"></span></label><span class="tipo">Reel ads 9:16 — POR GRABAR</span><h3>Reel de pauta · Módulo 1 · BIM Professional</h3><span class="precio-ad">3 meses · 15 s</span></div>
 <p class="hook">Sabes usar Revit. Otra cosa es implementar BIM en un proyecto de verdad.</p>
 <p class="etq">Texto principal — se pega tal cual</p>
 <div class="pegar">Modelar y ordenar un proyecto no son lo mismo.
 
 En 3 meses estructuras e implementas BIM con metodología: estándares, BEP y flujos de trabajo que no se te caen a mitad del proyecto.
 
-100% asincrónico. Microcredencial de MODELADOR BIM avalada por Silicon Valley Futures Institute. $750.
+100% asincrónico. Microcredencial de MODELADOR BIM avalada por Silicon Valley Futures Institute.
 
-Llena el formulario y te decimos si este es tu módulo.</div>
-<div class="campos"><div><span class="etq">Titular</span><code>BIM Professional · $750 · 3 meses</code></div><div><span class="etq">Descripción</span><code>Microcredencial incluida</code></div></div>
+Llena el formulario y un asesor te dice si este es tu módulo.</div>
+<div class="campos"><div><span class="etq">Titular</span><code>BIM Professional · 3 meses</code></div><div><span class="etq">Descripción</span><code>Microcredencial incluida</code></div></div>
 <p class="etq">Creativo</p><p class="creativo">Gabriel a cámara en una frase, corte a pantalla con un BEP real, y cierre con el sello MODELADOR BIM sobre la placa azul.</p>
 <p class="etq">Guion — 15 segundos, para grabar</p>
 <div class="tabla-scroll"><table><thead><tr><th>Tiempo</th><th>Qué se ve</th><th>Qué dice Gabriel</th><th>Texto en pantalla</th></tr></thead><tbody>
 <tr><td class="t">0:00-0:04</td><td>Primer plano de Gabriel, mirada directa. Corte seco desde negro, sin intro.</td><td>Sabes usar Revit. Otra cosa es implementar BIM en un proyecto de verdad.</td><td>SABER REVIT NO ES <b class="amb">IMPLEMENTAR BIM</b></td></tr>
 <tr><td class="t">0:04-0:11</td><td>Corte a pantalla: un BEP abierto, scroll rápido. Vuelve a Gabriel a mitad de frase.</td><td>Este módulo te da lo que sostiene el proyecto: estándares, BEP y flujos que no se caen a mitad de obra.</td><td>ESTÁNDARES · <b class="amb">BEP</b> · FLUJOS</td></tr>
-<tr><td class="t">0:11-0:15</td><td>Plano medio de Gabriel. Placa final azul con el sello MODELADOR BIM.</td><td>Tres meses, y sales con la microcredencial de Modelador BIM. Llena el formulario y te decimos si es tu módulo.</td><td><b class="amb">MODELADOR BIM</b> · $750 · 3 MESES</td></tr>
+<tr><td class="t">0:11-0:15</td><td>Plano medio de Gabriel. Placa final azul con el sello MODELADOR BIM.</td><td>Tres meses, y sales con la microcredencial de Modelador BIM. Llena el formulario y te decimos si es tu módulo.</td><td><b class="amb">MODELADOR BIM</b> · 3 MESES</td></tr>
 </tbody></table></div>
 <p class="nota">Se graban los cuatro seguidos, en la misma sesion y con la misma camisa: es un set, y si se graban en dias distintos se nota en el color y deja de leerse como una familia. Gabriel a camara, sin teleprompter — la frase es corta a proposito para que salga dicha, no leida.</p>
 <details class="prompt"><summary>Prompt de imagen para ChatGPT</summary><div class="pegar">No lleva prompt de imagen: es video grabado. La placa final se monta en edición sobre fondo #0E2438 con el logo y el sello de la microcredencial.</div></details>
@@ -1287,26 +1326,26 @@ Llena el formulario y te decimos si este es tu módulo.</div>
 <tr class=""><th>Duracion</th><td>15 segundos exactos. Ni 14 ni 18. Es el unico largo que aguanta un anuncio de video sin perder la mitad de la audiencia antes del CTA.</td></tr>
 <tr class=""><th>Tratamiento</th><td>El mismo de los reels de la casa: subtitulos quemados en Montserrat ExtraBold, la palabra clave en ambar #E8A04A, corte cada 3-4 segundos, sin intro ni presentacion. Audio normalizado a -14 LUFS.</td></tr>
 <tr class=""><th>Sonido</th><td>Se graba con el microfono de solapa, no con el del telefono. Un anuncio con audio de sala no lo salva ningun subtitulo: se ve barato y eso contagia al programa.</td></tr>
-<tr class="dura"><th>Lo que NO va</th><td>«Link en la bio» — el CTA es el boton del formulario, decir otra cosa manda a la gente fuera del anuncio. Tampoco el precio de la ruta completa.</td></tr>
+<tr class="dura"><th>Lo que NO va</th><td>NINGÚN precio, ni del módulo ni de la ruta. Ni en el copy, ni en el titular, ni en la imagen. El Máster se decide en conversación: el precio lo da el asesor en la llamada, cuando ya sabe qué módulo le toca a esa persona.</td></tr>
 <tr class=""><th>Nombre de campana</th><td>SEP26 | MASTER-MODULOS | &lt;modulo&gt; | VIDEO</td></tr>
 </tbody></table></div></div>
-<div class="ad col" data-k="ad-reel-ad-mod2"><div class="ad-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="ad-reel-ad-mod2"><span aria-hidden="true"></span></label><span class="tipo">Reel ads 9:16 — POR GRABAR</span><h3>Reel de pauta · Módulo 2 · BIM Coordination</h3><span class="precio-ad">$750 · 3 meses · 15 s</span></div>
+<div class="ad col" data-k="ad-reel-ad-mod2"><div class="ad-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="ad-reel-ad-mod2"><span aria-hidden="true"></span></label><span class="tipo">Reel ads 9:16 — POR GRABAR</span><h3>Reel de pauta · Módulo 2 · BIM Coordination</h3><span class="precio-ad">3 meses · 15 s</span></div>
 <p class="hook">Si el choque lo descubres en obra, ya lo pagaste dos veces.</p>
 <p class="etq">Texto principal — se pega tal cual</p>
 <div class="pegar">Una interferencia detectada en el modelo cuesta una tarde. La misma detectada en obra cuesta miles.
 
 En 3 meses coordinas disciplinas, detectas interferencias antes de que existan y controlas la calidad de los entregables.
 
-100% asincrónico. Microcredencial de COORDINADOR BIM avalada por Silicon Valley Futures Institute. $750.
+100% asincrónico. Microcredencial de COORDINADOR BIM avalada por Silicon Valley Futures Institute.
 
-Llena el formulario y te decimos si este es tu módulo.</div>
-<div class="campos"><div><span class="etq">Titular</span><code>BIM Coordination · $750 · 3 meses</code></div><div><span class="etq">Descripción</span><code>Microcredencial incluida</code></div></div>
+Llena el formulario y un asesor te dice si este es tu módulo.</div>
+<div class="campos"><div><span class="etq">Titular</span><code>BIM Coordination · 3 meses</code></div><div><span class="etq">Descripción</span><code>Microcredencial incluida</code></div></div>
 <p class="etq">Creativo</p><p class="creativo">Gabriel a cámara, corte a la interferencia marcada en Navisworks y a la foto de obra con el mismo choque, cierre con el sello COORDINADOR BIM.</p>
 <p class="etq">Guion — 15 segundos, para grabar</p>
 <div class="tabla-scroll"><table><thead><tr><th>Tiempo</th><th>Qué se ve</th><th>Qué dice Gabriel</th><th>Texto en pantalla</th></tr></thead><tbody>
 <tr><td class="t">0:00-0:04</td><td>Primer plano de Gabriel. Corte seco desde negro.</td><td>Si el choque lo descubres en obra, ya lo pagaste dos veces.</td><td>EN OBRA EL ERROR <b class="amb">CUESTA EL DOBLE</b></td></tr>
 <tr><td class="t">0:04-0:11</td><td>Corte a Navisworks con la interferencia marcada en rojo; corte duro a la foto de obra con el mismo choque.</td><td>Aquí aprendes a verlo antes: coordinas disciplinas, detectas interferencias y controlas la calidad del entregable.</td><td>DETECTAR <b class="amb">ANTES</b>, NO DESPUÉS</td></tr>
-<tr><td class="t">0:11-0:15</td><td>Gabriel de vuelta. Placa final con el sello COORDINADOR BIM.</td><td>Tres meses, microcredencial de Coordinador BIM. Llena el formulario y te decimos si es tu módulo.</td><td><b class="amb">COORDINADOR BIM</b> · $750 · 3 MESES</td></tr>
+<tr><td class="t">0:11-0:15</td><td>Gabriel de vuelta. Placa final con el sello COORDINADOR BIM.</td><td>Tres meses, microcredencial de Coordinador BIM. Llena el formulario y te decimos si es tu módulo.</td><td><b class="amb">COORDINADOR BIM</b> · 3 MESES</td></tr>
 </tbody></table></div>
 <p class="nota">Se graban los cuatro seguidos, en la misma sesion y con la misma camisa: es un set, y si se graban en dias distintos se nota en el color y deja de leerse como una familia. Gabriel a camara, sin teleprompter — la frase es corta a proposito para que salga dicha, no leida.</p>
 <details class="prompt"><summary>Prompt de imagen para ChatGPT</summary><div class="pegar">No lleva prompt de imagen: es video grabado. La foto de obra tiene que ser real, de un proyecto propio — una imagen de banco se reconoce y rompe la credibilidad.</div></details>
@@ -1319,26 +1358,26 @@ Llena el formulario y te decimos si este es tu módulo.</div>
 <tr class=""><th>Duracion</th><td>15 segundos exactos. Ni 14 ni 18. Es el unico largo que aguanta un anuncio de video sin perder la mitad de la audiencia antes del CTA.</td></tr>
 <tr class=""><th>Tratamiento</th><td>El mismo de los reels de la casa: subtitulos quemados en Montserrat ExtraBold, la palabra clave en ambar #E8A04A, corte cada 3-4 segundos, sin intro ni presentacion. Audio normalizado a -14 LUFS.</td></tr>
 <tr class=""><th>Sonido</th><td>Se graba con el microfono de solapa, no con el del telefono. Un anuncio con audio de sala no lo salva ningun subtitulo: se ve barato y eso contagia al programa.</td></tr>
-<tr class="dura"><th>Lo que NO va</th><td>«Link en la bio» — el CTA es el boton del formulario, decir otra cosa manda a la gente fuera del anuncio. Tampoco el precio de la ruta completa.</td></tr>
+<tr class="dura"><th>Lo que NO va</th><td>NINGÚN precio, ni del módulo ni de la ruta. Ni en el copy, ni en el titular, ni en la imagen. El Máster se decide en conversación: el precio lo da el asesor en la llamada, cuando ya sabe qué módulo le toca a esa persona.</td></tr>
 <tr class=""><th>Nombre de campana</th><td>SEP26 | MASTER-MODULOS | &lt;modulo&gt; | VIDEO</td></tr>
 </tbody></table></div></div>
-<div class="ad col" data-k="ad-reel-ad-mod3"><div class="ad-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="ad-reel-ad-mod3"><span aria-hidden="true"></span></label><span class="tipo">Reel ads 9:16 — POR GRABAR</span><h3>Reel de pauta · Módulo 3 · BIM Management</h3><span class="precio-ad">$600 · 2 meses · 15 s</span></div>
+<div class="ad col" data-k="ad-reel-ad-mod3"><div class="ad-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="ad-reel-ad-mod3"><span aria-hidden="true"></span></label><span class="tipo">Reel ads 9:16 — POR GRABAR</span><h3>Reel de pauta · Módulo 3 · BIM Management</h3><span class="precio-ad">2 meses · 15 s</span></div>
 <p class="hook">Puedes modelar impecable y seguir esperando a que alguien te diga qué modelar.</p>
 <p class="etq">Texto principal — se pega tal cual</p>
 <div class="pegar">El salto de modelador a BIM Manager no es de software. Es de criterio.
 
 En 2 meses planificas en 4D, controlas costos en 5D y lideras equipos BIM: dejas de ejecutar y empiezas a decidir.
 
-100% asincrónico. Microcredencial de BIM MANAGER 4D-5D avalada por Silicon Valley Futures Institute. $600 — es el módulo de entrada más corto.
+100% asincrónico y es la puerta más corta de las cuatro. Microcredencial de BIM MANAGER 4D-5D avalada por Silicon Valley Futures Institute.
 
-Llena el formulario y te decimos si este es tu módulo.</div>
-<div class="campos"><div><span class="etq">Titular</span><code>BIM Management · $600 · 2 meses</code></div><div><span class="etq">Descripción</span><code>El módulo más corto</code></div></div>
+Llena el formulario y un asesor te dice si este es tu módulo.</div>
+<div class="campos"><div><span class="etq">Titular</span><code>BIM Management · 2 meses</code></div><div><span class="etq">Descripción</span><code>El módulo más corto</code></div></div>
 <p class="etq">Creativo</p><p class="creativo">Gabriel a cámara, corte a un Gantt 4D corriendo y a la tabla de costos 5D, cierre con el sello BIM MANAGER 4D-5D.</p>
 <p class="etq">Guion — 15 segundos, para grabar</p>
 <div class="tabla-scroll"><table><thead><tr><th>Tiempo</th><th>Qué se ve</th><th>Qué dice Gabriel</th><th>Texto en pantalla</th></tr></thead><tbody>
 <tr><td class="t">0:00-0:04</td><td>Primer plano de Gabriel. Corte seco desde negro.</td><td>Puedes modelar impecable y seguir esperando a que alguien te diga qué modelar.</td><td>MODELAR BIEN NO ES <b class="amb">DECIDIR</b></td></tr>
 <tr><td class="t">0:04-0:11</td><td>Corte a la simulación 4D avanzando y a la tabla de costos 5D. Vuelve a Gabriel.</td><td>El salto a BIM Manager no es de software, es de criterio: planificas en 4D, controlas costos en 5D y lideras el equipo.</td><td>4D · <b class="amb">5D</b> · LIDERAZGO</td></tr>
-<tr><td class="t">0:11-0:15</td><td>Gabriel, plano medio. Placa final con el sello BIM MANAGER 4D-5D.</td><td>Dos meses, es el módulo más corto. Llena el formulario y te decimos si es tu módulo.</td><td><b class="amb">BIM MANAGER 4D-5D</b> · $600 · 2 MESES</td></tr>
+<tr><td class="t">0:11-0:15</td><td>Gabriel, plano medio. Placa final con el sello BIM MANAGER 4D-5D.</td><td>Dos meses, es el módulo más corto. Llena el formulario y te decimos si es tu módulo.</td><td><b class="amb">BIM MANAGER 4D-5D</b> · 2 MESES</td></tr>
 </tbody></table></div>
 <p class="nota">Se graban los cuatro seguidos, en la misma sesion y con la misma camisa: es un set, y si se graban en dias distintos se nota en el color y deja de leerse como una familia. Gabriel a camara, sin teleprompter — la frase es corta a proposito para que salga dicha, no leida.</p>
 <details class="prompt"><summary>Prompt de imagen para ChatGPT</summary><div class="pegar">No lleva prompt de imagen: es video grabado. El Gantt y la tabla se graban en pantalla, de un proyecto real, con los nombres del cliente tapados.</div></details>
@@ -1351,26 +1390,26 @@ Llena el formulario y te decimos si este es tu módulo.</div>
 <tr class=""><th>Duracion</th><td>15 segundos exactos. Ni 14 ni 18. Es el unico largo que aguanta un anuncio de video sin perder la mitad de la audiencia antes del CTA.</td></tr>
 <tr class=""><th>Tratamiento</th><td>El mismo de los reels de la casa: subtitulos quemados en Montserrat ExtraBold, la palabra clave en ambar #E8A04A, corte cada 3-4 segundos, sin intro ni presentacion. Audio normalizado a -14 LUFS.</td></tr>
 <tr class=""><th>Sonido</th><td>Se graba con el microfono de solapa, no con el del telefono. Un anuncio con audio de sala no lo salva ningun subtitulo: se ve barato y eso contagia al programa.</td></tr>
-<tr class="dura"><th>Lo que NO va</th><td>«Link en la bio» — el CTA es el boton del formulario, decir otra cosa manda a la gente fuera del anuncio. Tampoco el precio de la ruta completa.</td></tr>
+<tr class="dura"><th>Lo que NO va</th><td>NINGÚN precio, ni del módulo ni de la ruta. Ni en el copy, ni en el titular, ni en la imagen. El Máster se decide en conversación: el precio lo da el asesor en la llamada, cuando ya sabe qué módulo le toca a esa persona.</td></tr>
 <tr class=""><th>Nombre de campana</th><td>SEP26 | MASTER-MODULOS | &lt;modulo&gt; | VIDEO</td></tr>
 </tbody></table></div></div>
-<div class="ad col" data-k="ad-reel-ad-mod4"><div class="ad-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="ad-reel-ad-mod4"><span aria-hidden="true"></span></label><span class="tipo">Reel ads 9:16 — POR GRABAR</span><h3>Reel de pauta · Módulo 4 · BIM + IA</h3><span class="precio-ad">$900 · 3 meses · 15 s</span></div>
+<div class="ad col" data-k="ad-reel-ad-mod4"><div class="ad-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="ad-reel-ad-mod4"><span aria-hidden="true"></span></label><span class="tipo">Reel ads 9:16 — POR GRABAR</span><h3>Reel de pauta · Módulo 4 · BIM + IA</h3><span class="precio-ad">3 meses · 15 s</span></div>
 <p class="hook">Si repites tareas que una máquina haría igual, no te falta tiempo.</p>
 <p class="etq">Texto principal — se pega tal cual</p>
 <div class="pegar">Te falta automatización.
 
 En 3 meses automatizas con Dynamo y Python, y aplicas IA en proyectos reales — con el criterio para saber cuándo la respuesta de la máquina sirve y cuándo no.
 
-100% asincrónico. Microcredencial de ESPECIALISTA BIM + IA avalada por Silicon Valley Futures Institute. $900.
+100% asincrónico. Microcredencial de ESPECIALISTA BIM + IA avalada por Silicon Valley Futures Institute.
 
-Llena el formulario y te decimos si este es tu módulo.</div>
-<div class="campos"><div><span class="etq">Titular</span><code>BIM + IA · $900 · 3 meses</code></div><div><span class="etq">Descripción</span><code>Dynamo, Python e IA</code></div></div>
+Llena el formulario y un asesor te dice si este es tu módulo.</div>
+<div class="campos"><div><span class="etq">Titular</span><code>BIM + IA · 3 meses</code></div><div><span class="etq">Descripción</span><code>Dynamo, Python e IA</code></div></div>
 <p class="etq">Creativo</p><p class="creativo">Gabriel a cámara, corte a un grafo de Dynamo ejecutándose y a ChatGPT resolviendo un error real de Revit, cierre con el sello ESPECIALISTA BIM + IA.</p>
 <p class="etq">Guion — 15 segundos, para grabar</p>
 <div class="tabla-scroll"><table><thead><tr><th>Tiempo</th><th>Qué se ve</th><th>Qué dice Gabriel</th><th>Texto en pantalla</th></tr></thead><tbody>
 <tr><td class="t">0:00-0:04</td><td>Primer plano de Gabriel. Corte seco desde negro.</td><td>Si repites tareas que una máquina haría igual, no te falta tiempo.</td><td>NO TE FALTA TIEMPO: TE FALTA <b class="amb">AUTOMATIZAR</b></td></tr>
 <tr><td class="t">0:04-0:11</td><td>Corte al grafo de Dynamo ejecutándose; corte a ChatGPT resolviendo un error de Revit.</td><td>Automatizas con Dynamo y Python, y usas IA con el criterio para saber cuándo la respuesta sirve y cuándo no.</td><td>DYNAMO · PYTHON · <b class="amb">CRITERIO</b></td></tr>
-<tr><td class="t">0:11-0:15</td><td>Gabriel, plano medio. Placa final con el sello ESPECIALISTA BIM + IA.</td><td>Tres meses, microcredencial de Especialista BIM más IA. Llena el formulario y te decimos si es tu módulo.</td><td><b class="amb">ESPECIALISTA BIM + IA</b> · $900 · 3 MESES</td></tr>
+<tr><td class="t">0:11-0:15</td><td>Gabriel, plano medio. Placa final con el sello ESPECIALISTA BIM + IA.</td><td>Tres meses, microcredencial de Especialista BIM más IA. Llena el formulario y te decimos si es tu módulo.</td><td><b class="amb">ESPECIALISTA BIM + IA</b> · 3 MESES</td></tr>
 </tbody></table></div>
 <p class="nota">Se graban los cuatro seguidos, en la misma sesion y con la misma camisa: es un set, y si se graban en dias distintos se nota en el color y deja de leerse como una familia. Gabriel a camara, sin teleprompter — la frase es corta a proposito para que salga dicha, no leida.</p>
 <details class="prompt"><summary>Prompt de imagen para ChatGPT</summary><div class="pegar">No lleva prompt de imagen: es video grabado. La captura de ChatGPT tiene que ser una consulta real que funcione — si alguien la repite y no da eso, se cae la promesa.</div></details>
@@ -1383,18 +1422,18 @@ Llena el formulario y te decimos si este es tu módulo.</div>
 <tr class=""><th>Duracion</th><td>15 segundos exactos. Ni 14 ni 18. Es el unico largo que aguanta un anuncio de video sin perder la mitad de la audiencia antes del CTA.</td></tr>
 <tr class=""><th>Tratamiento</th><td>El mismo de los reels de la casa: subtitulos quemados en Montserrat ExtraBold, la palabra clave en ambar #E8A04A, corte cada 3-4 segundos, sin intro ni presentacion. Audio normalizado a -14 LUFS.</td></tr>
 <tr class=""><th>Sonido</th><td>Se graba con el microfono de solapa, no con el del telefono. Un anuncio con audio de sala no lo salva ningun subtitulo: se ve barato y eso contagia al programa.</td></tr>
-<tr class="dura"><th>Lo que NO va</th><td>«Link en la bio» — el CTA es el boton del formulario, decir otra cosa manda a la gente fuera del anuncio. Tampoco el precio de la ruta completa.</td></tr>
+<tr class="dura"><th>Lo que NO va</th><td>NINGÚN precio, ni del módulo ni de la ruta. Ni en el copy, ni en el titular, ni en la imagen. El Máster se decide en conversación: el precio lo da el asesor en la llamada, cuando ya sabe qué módulo le toca a esa persona.</td></tr>
 <tr class=""><th>Nombre de campana</th><td>SEP26 | MASTER-MODULOS | &lt;modulo&gt; | VIDEO</td></tr>
 </tbody></table></div></div>
-<h3 class="camp">ESPECIALIZACION EN ACERO (relanzamiento)</h3>
+<h3 class="camp">ESPECIALIZACIÓN EN ACERO (relanzamiento) — $200 USD, el precio SÍ va en el anuncio</h3>
 <div class="pieza"><div class="pieza-cab"><span class="tipo">Post plano 1</span><h3>Replica IMG2 — el anuncio #1 historico</h3></div>
-<div class="pegar">¿Diseñas en acero y todavia revisas las conexiones al final? El formato IMG2 fue el mejor CPL de la cuenta ($0.48-0.67): se replica igual, solo refrescando la imagen. Boton → WhatsApp.</div>
+<div class="pegar">¿Diseñas en acero y todavia revisas las conexiones al final? El formato IMG2 fue el mejor CPL de la cuenta ($0.48-0.67): se replica igual, solo refrescando la imagen. Boton → WhatsApp. PRECIO: $200 USD va en el copy y en la imagen. Es lo contrario del Máster — aquí la cifra ayuda: $200 se decide sin llamada y ponerla ahorra la mitad de las conversaciones del setter.</div>
 </div>
 <div class="pieza"><div class="pieza-cab"><span class="tipo">Post plano 2</span><h3>Sobredimensionar (el mejor organico convertido en ad)</h3></div>
-<div class="pegar">«Sobredimensionar no es ir por el lado seguro: es trasladarle tu inseguridad al presupuesto del cliente.» Fue la pieza #1 de la historia de la cuenta (14.334 vistas, 107 comentarios) — se prueba como anuncio con la misma imagen. Boton → WhatsApp.</div>
+<div class="pegar">«Sobredimensionar no es ir por el lado seguro: es trasladarle tu inseguridad al presupuesto del cliente.» Fue la pieza #1 de la historia de la cuenta (14.334 vistas, 107 comentarios) — se prueba como anuncio con la misma imagen. Boton → WhatsApp. Cierra con «Especialización en Acero · $200 USD» y botón a WhatsApp.</div>
 </div>
 <div class="pieza"><div class="pieza-cab"><span class="tipo">Carrusel ads</span><h3>Las 5 verificaciones (lead magnet como gancho)</h3></div>
-<div class="pegar">T1: ¿Firmarias este diseño sin estas 5 verificaciones? T2-T4: tres de las cinco (sin resolverlas). Cierre: la herramienta completa es gratis — escribenos. Boton → WhatsApp. El post organico de la guia hizo 49 comentarios: el gancho esta validado.</div>
+<div class="pegar">T1: ¿Firmarias este diseño sin estas 5 verificaciones? T2-T4: tres de las cinco (sin resolverlas). Cierre: la herramienta completa es gratis — escribenos. Boton → WhatsApp. El post organico de la guia hizo 49 comentarios: el gancho esta validado. En la tarjeta de cierre va el precio: $200 USD. El lead magnet abre y el precio cierra, en la misma pieza.</div>
 </div>
 <div class="pieza"><div class="pieza-cab"><span class="tipo">Reel ads</span><h3>Valor 6 recortado a 15s (error de Revit → ChatGPT)</h3></div>
 <div class="pegar">El reel ya editado, recortado al hook + resolucion (0-15s), con overlay del boton. VARIANTE B (cuando el tutor este vivo): cerrar con el frame del tutor — «ahora la especializacion te contesta». A/B contra la variante A.</div>
@@ -1403,6 +1442,157 @@ Llena el formulario y te decimos si este es tu módulo.</div>
 <div class="pegar">El diferenciador nuevo de la especializacion. Creativo: burbuja de chat con una pregunta tecnica real y la respuesta citando la sesion del curso. Copy: «Tu especializacion ahora te contesta. Tutor de IA entrenado con las clases del programa: si algo no esta en el curso, te lo dice.» CTA → WhatsApp. Ademas, el BOT DE OLYMPUS (Patricio) tiene que saber responder sobre el tutor y sobre la estructura nueva antes de que este anuncio salga.</div>
 <p class="nota">⚠ No se activa hasta que el tutor este desplegado Y el bot actualizado.</p>
 </div></section>
+<section id="tab-lm" hidden><h2>Lead magnets — los tres recursos de septiembre</h2>
+<p class="intro">Un recurso gratuito no es el archivo: es el archivo <b>más</b> el camino que lo entrega. Mientras el bot no responda con el enlace, el recurso no existe aunque el PDF esté hecho. Por eso cada uno viene aquí con su contenido, sus notas de producción, su post de lanzamiento y el paso a paso de GoHighLevel.</p>
+<div class="dato"><strong>La regla que no se rompe.</strong> Ningún CTA sale al aire sin su recurso VIVO y su disparador montado el día de la publicación. Si el recurso no llegó a tiempo NO se aplaza la pieza: se publica con el CTA de reemplazo. Prometer y no entregar cuesta más que cambiar la palabra.</div>
+<div class="lm col" data-k="lm-lm-revit-chatgpt"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="lm-lm-revit-chatgpt"><span aria-hidden="true"></span></label><span class="pal">GUIA</span><h3>Guía «Revit + ChatGPT: resuelve errores con IA»</h3><span class="tipo">PDF de 10-12 páginas</span></div>
+<p class="estado">POR CREAR — se necesita VIVO el lunes 8</p>
+<p class="promesa">Los 10 errores de Revit que más tiempo hacen perder, y el prompt exacto que los resuelve — con la advertencia de cuándo NO hacerle caso a la respuesta.</p>
+<div class="tabla-scroll"><table class="cfg"><tbody><tr><th>Cuándo</th><td>Semana 1. Es el más urgente de los tres: hay un reel el miércoles 9 cuyo CTA ya lo promete.</td></tr><tr><th>Para quién</th><td>Quien ya usa Revit todos los días y pierde tardes enteras buscando en foros.</td></tr><tr><th>Por qué este</th><td>El reel «Valor 6» cuenta exactamente esto — un error de Revit resuelto con ChatGPT en vez de dos horas de foro — y es la pieza base del miércoles 9. El recurso no se inventa para llenar un hueco: se crea porque ya hay una pieza que lo pide.</td></tr></tbody></table></div>
+<span class="rot">Qué lleva dentro</span><ul class="reglas">
+<li>Los 10 errores: qué dice Revit, qué significa de verdad y qué lo causa.</li>
+<li>El prompt exacto para cada uno, escrito para copiar y pegar, con el contexto que hay que darle a ChatGPT para que la respuesta sirva (versión, disciplina, qué se intentó ya).</li>
+<li>Cómo pegar el mensaje de error completo sin filtrar datos del cliente — se tapan nombres de proyecto y rutas antes de pegar nada.</li>
+<li>La página que más importa: CÓMO VERIFICAR LA RESPUESTA. Tres comprobaciones antes de aplicar lo que dijo la máquina en un modelo que alguien va a firmar.</li>
+<li>Qué NO preguntarle: dimensionamiento, cumplimiento de norma y cualquier decisión que termine en una firma.</li>
+</ul>
+<span class="rot">Notas de producción</span><ul class="reglas prod">
+<li>Los 10 errores salen de casos reales, no de una lista de internet: se sacan del soporte de los cursos y de lo que pregunta la gente en la comunidad.</li>
+<li>Cada prompt se prueba antes de entrar a la guía. Si alguien lo copia y no da lo que promete, la guía deja de valer y de paso nos deja mal.</li>
+<li>Disclaimer educativo en la última página, igual que en la Calculadora de Zapatas.</li>
+</ul>
+<span class="rot">Lo que hay que configurar en GoHighLevel</span>
+<div class="tabla-scroll"><table class="cfg"><tbody>
+<tr><th>Palabra clave</th><td>GUIA</td></tr>
+<tr><th>Etiquetas</th><td>lead-revit-ia · origen-bot-GUIA</td></tr>
+<tr><th>Pregunta de perfil</th><td>¿Qué usas hoy para resolver un error de Revit?</td></tr>
+<tr><th>Entrega</th><td>Botón de descarga en la página de gracias.</td></tr>
+<tr><th>Puente</th><td>Correo 3 lleva al módulo BIM + IA — sin precio, con «agenda una cita».</td></tr>
+<tr><th>Reemplazo si no llega</th><td>El CTA cambia a GPT IA Pro, que ya existe y está montado.</td></tr>
+</tbody></table></div>
+<div class="lanz"><div class="pieza-cab"><span class="fecha">Mar 8</span><h4>Post de lanzamiento</h4><span class="tipo">REEL (grabar) — EXTRA de lanzamiento</span></div>
+<p class="nota">Va en el calendario del <b>Grupo 1</b>. Redes: Instagram + Facebook + TikTok.</p>
+<span class="rot">Hook</span><div class="pegar">Llevo dos horas en un foro por un error que ChatGPT me resolvió en cuarenta segundos.</div>
+<span class="rot">Caption (copiar tal cual)</span><div class="pegar">Ese error de Revit que te frena la tarde casi siempre está mal explicado por el propio mensaje: dice una cosa y el problema es otra.
+
+Junté los 10 que más tiempo hacen perder, con el prompt exacto para cada uno. Y una página que importa más que las otras diez: cómo verificar la respuesta antes de meterla en un modelo que vas a firmar.
+
+Es gratis. Comenta GUIA y te llega.
+
+¿Cuál es el error de Revit que más veces te ha tocado buscar?</div>
+<p class="cta-linea"><b>CTA:</b> Comenta GUIA</p>
+<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1350 px (4:5)</span><div class="prompt-txt">Imagen 1080x1350 px (4:5) para la portada del reel. Fondo azul marino #0E2438. Un cuadro de diálogo de error de software, dibujado en línea fina ámbar #E8A04A, flotando en el centro, con el texto ilegible a propósito — solo se lee la forma de la ventana y su icono de advertencia. Detrás, muy tenue, una retícula de planta de Revit. Sensación de estar trabado, no de catástrofe. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos en ámbar #E8A04A, tipografía sans-serif de palo seco muy gruesa, composición limpia y con aire, sin stock corporativo ni gente sonriendo a cámara. El texto final se monta en Canva: la IA entrega el fondo y los elementos, no las letras.</div></div>
+</div>
+</div>
+<div class="lm col" data-k="lm-lm-dynamo-python"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="lm-lm-dynamo-python"><span aria-hidden="true"></span></label><span class="pal">DYNAMO</span><h3>Pack starter de scripts Dynamo / Python para Revit</h3><span class="tipo">ZIP con 5 scripts comentados + PDF de instalación</span></div>
+<p class="estado">POR CREAR</p>
+<p class="promesa">Cinco scripts que hacen en un clic lo que hoy haces a mano, con el código comentado línea por línea para que puedas cambiarlos.</p>
+<div class="tabla-scroll"><table class="cfg"><tbody><tr><th>Cuándo</th><td>Semana 3. Necesita más producción que los otros dos porque hay que probar cada script.</td></tr><tr><th>Para quién</th><td>Quien ya modela bien y empieza a repetir tareas: renombrar, exportar, numerar, revisar parámetros.</td></tr><tr><th>Por qué este</th><td>Dynamo es el tema con mejor tasa de guardado de la cuenta y no tenemos ni un recurso propio sobre él. Guardar un post es la señal de «esto me sirve pero ahora no puedo»: es exactamente la gente que descarga un pack de scripts.</td></tr></tbody></table></div>
+<span class="rot">Qué lleva dentro</span><ul class="reglas">
+<li>Script 1 — renombrar vistas por norma en lote.</li>
+<li>Script 2 — exportar planos a PDF con el nombre correcto, sin tocar el cuadro de diálogo.</li>
+<li>Script 3 — numerar elementos por posición y no por orden de creación.</li>
+<li>Script 4 — encontrar parámetros vacíos antes de entregar el modelo.</li>
+<li>Script 5 — comparar dos modelos y listar qué cambió.</li>
+<li>PDF corto: cómo instalarlos, qué versión de Revit y de Dynamo se necesita, y qué hacer cuando el script no corre.</li>
+</ul>
+<span class="rot">Notas de producción</span><ul class="reglas prod">
+<li>Cada script se corre en un modelo de prueba antes de entrar al pack. Un script que falla en la máquina de otra persona hace más daño que no haber publicado nada.</li>
+<li>El comentario de cada línea es la mitad del valor: el pack enseña, no solo automatiza.</li>
+<li>Se dice la versión exacta de Revit y Dynamo con la que se probó. Sin eso, la mitad de los mensajes van a ser «a mí no me funciona».</li>
+</ul>
+<span class="rot">Lo que hay que configurar en GoHighLevel</span>
+<div class="tabla-scroll"><table class="cfg"><tbody>
+<tr><th>Palabra clave</th><td>DYNAMO</td></tr>
+<tr><th>Etiquetas</th><td>lead-dynamo · origen-bot-DYNAMO</td></tr>
+<tr><th>Pregunta de perfil</th><td>¿Qué tarea repites más veces al día en Revit?</td></tr>
+<tr><th>Entrega</th><td>Botón de descarga del ZIP en la página de gracias.</td></tr>
+<tr><th>Puente</th><td>Correo 3 lleva al módulo BIM + IA — sin precio, con «agenda una cita».</td></tr>
+<tr><th>Reemplazo si no llega</th><td>El CTA cambia a GPT IA Pro y el pack se corre a octubre.</td></tr>
+</tbody></table></div>
+<div class="lanz"><div class="pieza-cab"><span class="fecha">Mar 22</span><h4>Post de lanzamiento</h4><span class="tipo">CARRUSEL (6 slides) — EXTRA de lanzamiento</span></div>
+<p class="nota">Va en el calendario del <b>Grupo 1</b>. Redes: Instagram + Facebook + LinkedIn (PDF).</p>
+<span class="rot">Hook</span><div class="pegar">Cinco tareas de Revit que no deberías seguir haciendo a mano.</div>
+<span class="rot">Caption (copiar tal cual)</span><div class="pegar">Si renombras vistas una por una, si exportas planos abriendo el cuadro de diálogo cada vez, o si revisas parámetros vacíos a ojo: eso ya lo hace un script.
+
+Armamos un pack con cinco, comentados línea por línea para que los puedas cambiar y no solo ejecutar. Con el PDF de instalación y la versión exacta con la que los probamos.
+
+Es gratis. Comenta DYNAMO y te llega.
+
+¿Cuál de las cinco te quitaría más tiempo de encima?</div>
+<p class="cta-linea"><b>CTA:</b> Comenta DYNAMO</p>
+<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1080 px (1:1)</span><div class="prompt-txt">Cinco imágenes de 1080x1080 px (1:1) de la misma familia, para carrusel. Fondo azul marino #0E2438. Un grafo de nodos tipo Dynamo dibujado en línea fina ámbar #E8A04A — cajas conectadas por cables curvos — que en la primera tarjeta aparece enredado y en las siguientes se va ordenando hasta quedar en una sola línea limpia. Misma escala y mismo encuadre en las cinco. Sin texto legible dentro de los nodos. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos en ámbar #E8A04A, tipografía sans-serif de palo seco muy gruesa, composición limpia y con aire, sin stock corporativo ni gente sonriendo a cámara. El texto final se monta en Canva: la IA entrega el fondo y los elementos, no las letras.</div></div>
+</div>
+</div>
+<div class="lm col" data-k="lm-lm-memoria-calculo"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="lm-lm-memoria-calculo"><span aria-hidden="true"></span></label><span class="pal">MEMORIA</span><h3>Guía de memoria de cálculo + plantilla</h3><span class="tipo">PDF de la guía + plantilla editable (Word y Excel)</span></div>
+<p class="estado">POR CREAR — se define en la reunión de cierre del viernes 5</p>
+<p class="promesa">La estructura completa de una memoria de cálculo que se sostiene ante revisión, con la plantilla para llenarla.</p>
+<div class="tabla-scroll"><table class="cfg"><tbody><tr><th>Cuándo</th><td>Semana 4. Es el que más valor tiene de los tres y el que más cuidado necesita.</td></tr><tr><th>Para quién</th><td>El ingeniero que ya calcula bien pero improvisa el documento cada vez, y el que va a entregar a una entidad por primera vez.</td></tr><tr><th>Por qué este</th><td>Es el que pidió Dayana el 2-sep. Y encaja con lo que ya sabemos de la cuenta: los posts que revientan son los de dato de cálculo. Una memoria de cálculo es dato de cálculo convertido en documento — el mismo público, un paso más adelante.</td></tr></tbody></table></div>
+<span class="rot">Qué lleva dentro</span><ul class="reglas">
+<li>Las secciones que toda memoria debe tener, en orden, y qué va en cada una.</li>
+<li>Qué se cita y cómo: normativa, hipótesis de carga, criterios adoptados y de dónde salen.</li>
+<li>Los cinco errores por los que devuelven una memoria — y cómo se ve cada uno corregido.</li>
+<li>Plantilla editable en Word con la estructura montada, y hoja de Excel para el resumen de verificaciones.</li>
+<li>Ejemplo corto completo, de principio a fin, con números reales.</li>
+</ul>
+<span class="rot">Notas de producción</span><ul class="reglas prod">
+<li>Este recurso lo revisa Gabriel antes de salir. Es el único de los tres que puede terminar dentro de un documento que alguien firma: si la estructura que proponemos está incompleta, el problema deja de ser de marketing.</li>
+<li>Disclaimer explícito: la plantilla es una guía de estructura, no reemplaza el criterio ni la responsabilidad del ingeniero que firma.</li>
+<li>La normativa se cita por nombre y versión, nunca se transcriben cifras: se remite a la norma vigente. Es la misma regla del tutor de IA.</li>
+</ul>
+<span class="rot">Lo que hay que configurar en GoHighLevel</span>
+<div class="tabla-scroll"><table class="cfg"><tbody>
+<tr><th>Palabra clave</th><td>MEMORIA</td></tr>
+<tr><th>Etiquetas</th><td>lead-memoria-calculo · origen-bot-MEMORIA</td></tr>
+<tr><th>Pregunta de perfil</th><td>¿Cada cuánto entregas memorias de cálculo?</td></tr>
+<tr><th>Entrega</th><td>Página de gracias con dos botones: guía en PDF y plantilla editable.</td></tr>
+<tr><th>Puente</th><td>Correo 3 lleva a ACERO ($200, aquí el precio SÍ va) o al módulo BIM Professional según la respuesta de perfil.</td></tr>
+<tr><th>Reemplazo si no llega</th><td>El CTA cambia a las 5 Verificaciones de Acero, que ya existe.</td></tr>
+</tbody></table></div>
+<div class="lanz"><div class="pieza-cab"><span class="fecha">Mar 29</span><h4>Post de lanzamiento</h4><span class="tipo">POST PLANO (1 imagen) — EXTRA de lanzamiento</span></div>
+<p class="nota">Va en el calendario del <b>Grupo 1</b>. Redes: Instagram + Facebook.</p>
+<span class="rot">Hook</span><div class="pegar">Una memoria de cálculo no se devuelve por los números. Se devuelve por lo que no está escrito.</div>
+<span class="rot">Caption (copiar tal cual)</span><div class="pegar">Hipótesis que no se declararon. Criterios que se adoptaron y no se justificaron. Normativa citada sin versión.
+
+El cálculo estaba bien. El documento no lo demostraba.
+
+Armamos la guía con la estructura completa de una memoria que se sostiene ante revisión, y la plantilla editable para llenarla.
+
+Es gratis. Comenta MEMORIA y te llega.
+
+¿Por qué te devolvieron la última que entregaste?</div>
+<p class="cta-linea"><b>CTA:</b> Comenta MEMORIA</p>
+<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1350 px (4:5)</span><div class="prompt-txt">Imagen 1080x1350 px (4:5). Fondo azul marino #0E2438. Un documento técnico visto de frente y en perspectiva muy leve, dibujado en línea fina ámbar #E8A04A, con la silueta de párrafos y una tabla — el texto ilegible a propósito. Dos de sus secciones aparecen vacías, marcadas con un recuadro ámbar más grueso, como huecos. Sobrio, nada de sellos rojos ni de gestos de rechazo. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos en ámbar #E8A04A, tipografía sans-serif de palo seco muy gruesa, composición limpia y con aire, sin stock corporativo ni gente sonriendo a cámara. El texto final se monta en Canva: la IA entrega el fondo y los elementos, no las letras.</div></div>
+</div>
+</div>
+<h2>El montaje en GoHighLevel — el mismo para los tres</h2>
+<p class="intro">Nueve pasos. No salen de la teoría: son los que quedaron después de montar la Calculadora de Zapatas y de arreglar lo que falló en julio.</p>
+<ol class="pasos">
+<li><b>1. El archivo, con URL propia y estable</b><br>El PDF o el ZIP se sube y queda con una URL fija que no cambie nunca. Si mañana se reemplaza el archivo, se reemplaza en esa misma URL — porque esa dirección va a quedar escrita en correos, en DMs y en comentarios que siguen vivos meses después.</li>
+<li><b>2. Embudo de dos páginas</b><br>Página 1: la captura, con el formulario a la vista sin tener que bajar. Página 2: gracias, y ahí mismo el BOTÓN DE DESCARGA. El acceso es inmediato en pantalla. Nunca poner «te lo enviamos por correo» si no existe un workflow que lo envíe: es la promesa que más rápido se rompe.</li>
+<li><b>3. Formulario nativo de GHL, no de terceros</b><br>Nombre, correo, WhatsApp y una pregunta de perfil («¿en qué trabajas hoy?»). El formulario nativo mete el contacto directo al CRM sin costo por ejecución; el Inbound Webhook es prémium y cobra por cada envío. Al terminar, redirección automática a la página 2.</li>
+<li><b>4. Etiquetas desde el primer segundo</b><br>Cada contacto entra con dos etiquetas: una de tema (lead-revit-ia, lead-dynamo, lead-memoria-calculo) y una de origen (origen-bot-GUIA, origen-form, origen-comunidad). Sin la etiqueta de origen, a fin de mes no se puede decir qué recurso trajo a quién, y la pregunta de si el lead magnet sirvió se queda sin respuesta.</li>
+<li><b>5. Bot de palabra clave en Instagram y Facebook — DOS ramas separadas</b><br>Disparador de comentario filtrado por la palabra clave → respuesta pública → DM con el enlace. La acción de envío se configura POR SEPARADO para cada red: rama Instagram con DM de Instagram, rama Facebook con DM de Messenger. Nunca una sola acción compartida.</li>
+<li><b>6. La respuesta pública lleva SIEMPRE el enlace</b><br>No «te escribí al DM». El enlace visible en el comentario es la red de seguridad real: si el DM falla, la persona igual llega. Es gratis ponerlo y es lo único que salva la pieza cuando el canal falla en silencio.</li>
+<li><b>7. Secuencia de correos, tres toques</b><br>Correo 1 inmediato con el enlace otra vez (la gente cierra la página de gracias sin descargar). Correo 2 a las 48 h con un uso concreto del recurso. Correo 3 al día 5 con el puente al programa que le corresponde. La secuencia se enciende con la etiqueta de tema, no a mano.</li>
+<li><b>8. Notificación interna al equipo</b><br>Cada lead nuevo avisa al setter con el nombre del recurso y la respuesta de perfil. Un lead de memoria de cálculo no se trabaja igual que uno de Dynamo, y esa diferencia se pierde si todos caen en la misma bandeja sin etiqueta.</li>
+<li><b>9. Prueba de punta a punta ANTES de publicar el post</b><br>La prueba se hace comentando la palabra en Instagram Y en la copia de Facebook del mismo post. Es la única forma de detectar la falla de abajo antes de que la vean 3.000 personas.</li>
+</ol>
+<div class="dato"><strong>El error que ya nos costó leads.</strong> El DM que falla en silencio — julio de 2026, unos 35 leads perdidos. Cuando el post nace en Instagram y aparece también en Facebook, mucha gente comenta en la copia de Facebook. Si la acción «enviar DM» está atada solo al canal de Instagram, el envío falla y el workflow igual marca el paso como ejecutado: el ID de quien comentó es de Facebook, no de Instagram. La respuesta pública sí sale siempre, y por eso nadie se da cuenta. Se arregla con los pasos 5, 6 y 9 — los tres, no uno.</div>
+<h2>Prueba de punta a punta — antes de publicar el post</h2>
+<p class="intro">Los diez puntos se prueban con el embudo ya montado y en un teléfono de verdad. Si uno falla, el post no sale: se corrige primero.</p>
+<ul class="e2e">
+<li class="chkline"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="e2e-1-comentar-la-palabra-clave-en-i"><span aria-hidden="true"></span></label><span>Comentar la palabra clave en Instagram → llega el DM con el enlace.</span></li>
+<li class="chkline"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="e2e-2-comentar-la-palabra-clave-en-l"><span aria-hidden="true"></span></label><span>Comentar la palabra clave en la copia de Facebook → llega el DM por Messenger.</span></li>
+<li class="chkline"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="e2e-3-la-respuesta-publica-automatic"><span aria-hidden="true"></span></label><span>La respuesta pública automática incluye el enlace visible.</span></li>
+<li class="chkline"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="e2e-4-el-enlace-abre-la-pagina-de-ca"><span aria-hidden="true"></span></label><span>El enlace abre la página de captura en teléfono, no solo en computador.</span></li>
+<li class="chkline"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="e2e-5-enviar-el-formulario-redirig"><span aria-hidden="true"></span></label><span>Enviar el formulario → redirige solo a la página de gracias.</span></li>
+<li class="chkline"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="e2e-6-el-boton-de-descarga-de-la-pag"><span aria-hidden="true"></span></label><span>El botón de descarga de la página de gracias entrega el archivo correcto.</span></li>
+<li class="chkline"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="e2e-7-el-contacto-aparece-en-el-crm"><span aria-hidden="true"></span></label><span>El contacto aparece en el CRM con sus dos etiquetas.</span></li>
+<li class="chkline"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="e2e-8-llega-el-correo-1-con-el-enlac"><span aria-hidden="true"></span></label><span>Llega el correo 1 con el enlace.</span></li>
+<li class="chkline"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="e2e-9-el-setter-recibe-la-notificaci"><span aria-hidden="true"></span></label><span>El setter recibe la notificación con el nombre del recurso.</span></li>
+<li class="chkline"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="e2e-10-borrar-los-contactos-de-prueba"><span aria-hidden="true"></span></label><span>Borrar los contactos de prueba antes de publicar.</span></li>
+</ul></section>
 <footer>Design Modeling Academy · Matriz de contenido de septiembre 2026<br>Construida sobre la matriz viral (162 piezas con métricas reales), el rendimiento de las campañas y la nueva arquitectura comercial del Máster. La pestaña abierta se recuerda en este navegador.</footer></div>
 <script>
 (function(){
@@ -1473,6 +1663,16 @@ Llena el formulario y te decimos si este es tu módulo.</div>
       if (caja.checked) { hechas[el.dataset.k] = 1; } else { delete hechas[el.dataset.k]; }
       guardar();
       contar();
+    });
+  });
+  Array.prototype.forEach.call(document.querySelectorAll('.chkline'), function(el){
+    var caja = el.querySelector('input[type=checkbox]');
+    var k = caja.dataset.k;
+    if (hechas[k]) { el.classList.add('hecha'); caja.checked = true; }
+    caja.addEventListener('change', function(){
+      el.classList.toggle('hecha', caja.checked);
+      if (caja.checked) { hechas[k] = 1; } else { delete hechas[k]; }
+      guardar();
     });
   });
   Array.prototype.forEach.call(document.querySelectorAll('.avance .reabrir'), function(b){

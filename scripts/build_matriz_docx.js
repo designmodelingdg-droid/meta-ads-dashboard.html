@@ -57,6 +57,10 @@ function resolverCalendario(){
 
 const {archivo:CAL_FILE,datos:CAL}=resolverCalendario();
 const GUI=JSON.parse(fs.readFileSync(path.join(MATRIZ_DIR,'guiones-completos.json'),'utf8'));
+/* Los lead magnets se escriben en Python (viven junto a historias y reels) y
+   aqui se leen por su JSON exportado: un solo origen, dos salidas. */
+const LM_JSON=path.join(MATRIZ_DIR,'leadmagnets-septiembre.json');
+const LM=fs.existsSync(LM_JSON)?JSON.parse(fs.readFileSync(LM_JSON,'utf8')):null;
 const BY={}; GUI.piezas.forEach(p=>BY[p.id]=p);
 
 const [ANIO,MES_NUM]=CAL.mes.split('-');
@@ -502,8 +506,9 @@ if(Array.isArray(CAL.grupos) && CAL.grupos.length){
   /* ── 5 · PUBLICIDAD: listado, no calendario ── */
   if(CAL.publicidad){
     push(pageBreak());
-    push(H1("5 · PUBLICIDAD — el paquete completo de las 2 campañas (sale junto el 7-sep)"));
+    push(H1("5 · PUBLICIDAD — el paquete completo (sale junto el 7-sep)"));
     push(note(CAL.publicidad.nota));
+    (CAL.publicidad.indicaciones||[]).forEach(([k,v])=>push(P(k+'. '+v,{run:{size:19}})));
     (CAL.publicidad.campanas||[]).forEach(c=>{
       push(H2('▸ '+c.nombre));
       c.piezas.forEach(pz=>{
@@ -541,6 +546,43 @@ if(Array.isArray(CAL.grupos) && CAL.grupos.length){
     CAL.pauta.forEach((id,i)=>push(renderPieza({id,fecha:'ANUNCIO '+(i+1),
       formato_publicacion:'Imagen para pauta',redes:'Meta Ads (Instagram + Facebook)',
       nota:'Copy completo listo para pegar. Las variantes nuevas de arriba se prueban CONTRA estos, nunca en su lugar.'},i)));
+  }
+
+  /* ── 5b · LEAD MAGNETS ──
+     Los recursos viven en su propio archivo (matriz/leadmagnets-septiembre.py)
+     porque son una entrega distinta: el archivo mas su embudo. Aqui solo se
+     rinde lo que el equipo necesita leer en papel. */
+  if(LM && LM.magnets){
+    push(pageBreak());
+    push(H1("5b · LEAD MAGNETS — los 3 recursos nuevos"));
+    push(note(LM.regla));
+    LM.magnets.forEach(m=>{
+      push(H2('▸ '+m.nombre+'  ·  palabra: '+m.palabra));
+      push(P(m.estado,{run:{bold:true,color:RED}}));
+      push(P(m.promesa,{run:{bold:true,size:24}}));
+      push(tbl(['Campo','Detalle'],[['Formato',m.formato],['Cuándo',m.cuando],
+        ['Para quién',m.para_quien],['Por qué este',m.por_que]],[2000,7000]));
+      push(P('QUÉ LLEVA DENTRO',{run:{bold:true,size:16,color:GREY}}));
+      m.contenido.forEach(x=>push(P('· '+x)));
+      push(P('NOTAS DE PRODUCCIÓN',{run:{bold:true,size:16,color:GREY}}));
+      m.produccion.forEach(x=>push(P('· '+x,{run:{italics:true}})));
+      push(P('CONFIGURACIÓN EN GOHIGHLEVEL',{run:{bold:true,size:16,color:GREY}}));
+      push(tbl(['Campo','Valor'],m.ghl.map(g=>[g[0],g[1]]),[2400,6600]));
+      m.posts.forEach(ps=>{
+        push(H3('Post de lanzamiento · '+ps.fecha+' · '+ps.formato));
+        push(P('Redes: '+ps.red,{run:{italics:true,color:GREY}}));
+        push(...block(ps.hook));
+        push(...block(ps.caption));
+        push(P('CTA: '+ps.cta,{run:{bold:true}}));
+        push(P('PROMPT DE IMAGEN',{run:{bold:true,size:16,color:GREY}}));
+        push(...block(ps.prompt,LIGHT));
+      });
+    });
+    push(H2('El montaje en GoHighLevel — el mismo para los tres'));
+    LM.pasos.forEach(([t,d])=>{ push(P(t,{run:{bold:true}})); push(P(d)); });
+    push(P(LM.incidente,{run:{color:RED}}));
+    push(H2('Prueba de punta a punta antes de publicar'));
+    LM.checklist.forEach(c=>push(P('☐  '+c)));
   }
 
   /* ── 6..N · UN CAPITULO POR GRUPO ── */
