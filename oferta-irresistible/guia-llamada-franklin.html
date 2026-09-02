@@ -1,0 +1,581 @@
+<title>Guía de Llamada Franklin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+:root{
+  --ink:#141C25; --ink-soft:#43535F; --ink-faint:#71828F;
+  --paper:#F2F5F7; --surface:#FFFFFF; --surface-2:#E9EEF2;
+  --line:#CBD6DE; --line-soft:#DDE5EB;
+  --blue:#1B4F72; --blue-soft:#E3EDF4;
+  --amber:#A6631C; --amber-soft:#F7EEE1;
+  --green:#2C6349; --green-soft:#E4EFE9;
+  --red:#8E3B32; --red-soft:#F7E8E6;
+  --shadow:0 1px 2px rgba(20,28,37,.06),0 8px 24px -16px rgba(20,28,37,.28);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ink:#E8EDF1; --ink-soft:#A8B7C2; --ink-faint:#7C8C98;
+    --paper:#10161C; --surface:#171F27; --surface-2:#1F2932;
+    --line:#2E3B45; --line-soft:#252F38;
+    --blue:#7FB6DC; --blue-soft:#182833;
+    --amber:#D69A57; --amber-soft:#2A2118;
+    --green:#7FC0A0; --green-soft:#16261F;
+    --red:#D98C82; --red-soft:#2A1B19;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px -16px rgba(0,0,0,.6);
+  }
+}
+:root[data-theme="dark"]{
+  --ink:#E8EDF1; --ink-soft:#A8B7C2; --ink-faint:#7C8C98;
+  --paper:#10161C; --surface:#171F27; --surface-2:#1F2932;
+  --line:#2E3B45; --line-soft:#252F38;
+  --blue:#7FB6DC; --blue-soft:#182833;
+  --amber:#D69A57; --amber-soft:#2A2118;
+  --green:#7FC0A0; --green-soft:#16261F;
+  --red:#D98C82; --red-soft:#2A1B19;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px -16px rgba(0,0,0,.6);
+}
+*{box-sizing:border-box}
+body{
+  background:var(--paper);color:var(--ink);
+  font-family:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:16.5px;line-height:1.6;-webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1.15rem 5rem}
+
+.titleblock{border-bottom:2px solid var(--ink);margin:0 0 1.9rem;padding:2.4rem 0 1rem}
+.tb-rule{
+  display:flex;gap:.6rem;align-items:baseline;
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink-faint);margin-bottom:1.3rem;
+}
+.tb-rule span:first-child{color:var(--amber)}
+.tb-rule i{flex:1;height:1px;background:var(--line);font-style:normal}
+h1{
+  font-family:Archivo,sans-serif;font-weight:700;
+  font-size:clamp(2rem,7.5vw,2.9rem);line-height:1.05;letter-spacing:-.028em;
+  margin:0 0 .55rem;text-wrap:balance;
+}
+.sub{color:var(--ink-soft);font-size:1.02rem;margin:0;max-width:33rem}
+
+nav{
+  position:sticky;top:0;z-index:20;background:var(--paper);
+  border-bottom:1px solid var(--line-soft);margin:0 -1.15rem 2.4rem;padding:.55rem 1.15rem;
+}
+.navscroll{display:flex;gap:.4rem;overflow-x:auto;scrollbar-width:none}
+.navscroll::-webkit-scrollbar{display:none}
+nav a{
+  flex:0 0 auto;text-decoration:none;color:var(--ink-soft);
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;letter-spacing:.04em;
+  padding:.3rem .55rem;border:1px solid var(--line-soft);border-radius:2px;
+  white-space:nowrap;background:var(--surface);
+}
+nav a:hover,nav a:focus-visible{color:var(--amber);border-color:var(--amber)}
+
+section{margin:0 0 3.2rem;scroll-margin-top:4rem}
+.snum{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--amber);display:block;margin-bottom:.4rem;
+}
+h2{
+  font-family:Archivo,sans-serif;font-weight:600;
+  font-size:clamp(1.35rem,4.6vw,1.7rem);line-height:1.16;letter-spacing:-.018em;
+  margin:0 0 1rem;text-wrap:balance;
+}
+h3{font-family:Archivo,sans-serif;font-weight:600;font-size:1.05rem;line-height:1.3;margin:1.9rem 0 .6rem}
+h4{
+  font-family:"IBM Plex Mono",monospace;font-weight:500;font-size:.72rem;
+  letter-spacing:.11em;text-transform:uppercase;color:var(--ink-faint);margin:1.5rem 0 .5rem;
+}
+p{margin:0 0 1rem}
+strong{font-weight:600}
+ul{margin:0 0 1.1rem;padding:0;list-style:none}
+ul li{position:relative;padding-left:1.05rem;margin-bottom:.5rem}
+ul li::before{content:"";position:absolute;left:0;top:.62em;width:5px;height:5px;background:var(--line);border-radius:50%}
+ol{margin:0 0 1.1rem;padding-left:1.35rem}
+ol li{margin-bottom:.5rem;padding-left:.2rem}
+ol li::marker{font-family:"IBM Plex Mono",monospace;font-size:.85em;color:var(--amber)}
+
+/* guion: lo que se dice en voz alta */
+.say{
+  background:var(--surface);border:1px solid var(--line-soft);border-left:4px solid var(--amber);
+  border-radius:0 4px 4px 0;padding:1rem 1.15rem;margin:1rem 0;
+  font-size:1.04rem;line-height:1.55;
+}
+.say .tag{
+  display:block;font-family:"IBM Plex Mono",monospace;font-size:.62rem;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--amber);margin-bottom:.55rem;
+}
+.say p{margin-bottom:.75rem}
+.say p:last-child{margin-bottom:0}
+
+.note{border-left:3px solid var(--blue);background:var(--blue-soft);padding:.95rem 1.1rem;margin:1.3rem 0;border-radius:0 3px 3px 0}
+.note.stop{border-left-color:var(--red);background:var(--red-soft)}
+.note.ok{border-left-color:var(--green);background:var(--green-soft)}
+.note p:last-child{margin-bottom:0}
+.note .tag{display:block;font-family:"IBM Plex Mono",monospace;font-size:.62rem;letter-spacing:.13em;text-transform:uppercase;color:var(--blue);margin-bottom:.35rem}
+.note.stop .tag{color:var(--red)}
+.note.ok .tag{color:var(--green)}
+
+/* bloques de la llamada */
+.block{
+  background:var(--surface);border:1px solid var(--line-soft);border-radius:4px;
+  padding:1.05rem 1.15rem;margin-bottom:1rem;box-shadow:var(--shadow);
+}
+.block-head{display:flex;gap:.7rem;align-items:baseline;margin-bottom:.15rem;flex-wrap:wrap}
+.block-time{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--amber);
+  font-weight:500;font-variant-numeric:tabular-nums;flex:0 0 auto;
+  background:var(--amber-soft);padding:.15rem .45rem;border-radius:2px;
+}
+.block-t{font-family:Archivo,sans-serif;font-weight:600;font-size:1.08rem;line-height:1.25}
+.block-goal{font-size:.85rem;color:var(--ink-faint);margin:0 0 .8rem}
+
+/* objeciones */
+.obj{border-top:1px solid var(--line-soft);padding:.9rem 0}
+.obj:last-of-type{border-bottom:1px solid var(--line-soft)}
+.obj-q{font-family:Archivo,sans-serif;font-weight:600;font-size:1rem;margin:0 0 .45rem;color:var(--ink)}
+.obj-a{margin:0;font-size:.97rem;color:var(--ink-soft)}
+
+.tscroll{overflow-x:auto;margin:1.1rem -1.15rem 1.4rem;padding:0 1.15rem}
+table{border-collapse:collapse;width:100%;min-width:28rem;font-size:.9rem}
+th{
+  text-align:left;font-family:"IBM Plex Mono",monospace;font-weight:500;font-size:.63rem;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);
+  border-bottom:1px solid var(--line);padding:0 .8rem .45rem 0;
+}
+td{padding:.7rem .8rem .7rem 0;border-bottom:1px solid var(--line-soft);vertical-align:top;line-height:1.5}
+tr:last-child td{border-bottom:none}
+td:last-child,th:last-child{padding-right:0}
+
+.check{list-style:none;padding:0;margin:1rem 0}
+.check li{
+  position:relative;padding:.55rem 0 .55rem 1.9rem;border-bottom:1px solid var(--line-soft);
+  margin:0;font-size:.97rem;
+}
+.check li::before{
+  content:"";position:absolute;left:0;top:.78em;width:.85rem;height:.85rem;
+  border:1.5px solid var(--line);border-radius:2px;background:transparent;
+}
+.check li:last-child{border-bottom:none}
+
+footer{
+  margin-top:3rem;padding-top:1.2rem;border-top:2px solid var(--ink);
+  font-family:"IBM Plex Mono",monospace;font-size:.65rem;letter-spacing:.08em;
+  color:var(--ink-faint);text-transform:uppercase;
+  display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;
+}
+a{color:var(--blue)}
+:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<div class="wrap">
+
+<header class="titleblock">
+  <div class="tb-rule"><span>Franklin</span><i></i><span>Guía de campo</span></div>
+  <h1>Guía de Llamada</h1>
+  <p class="sub">DG BIM Intelligence. Todo lo que necesitas decir, en orden — para tener abierta durante la llamada.</p>
+</header>
+
+<nav aria-label="Secciones">
+  <div class="navscroll">
+    <a href="#f1">01 Qué vendes</a>
+    <a href="#f2">02 A quién</a>
+    <a href="#f3">03 Agendar</a>
+    <a href="#f4">04 La llamada</a>
+    <a href="#f5">05 La demo</a>
+    <a href="#f6">06 La oferta</a>
+    <a href="#f7">07 Objeciones</a>
+    <a href="#f8">08 El cierre</a>
+    <a href="#f9">09 Después</a>
+  </div>
+</nav>
+
+<section id="f1">
+  <span class="snum">01</span>
+  <h2>Qué estás vendiendo</h2>
+  <p>Antes de cualquier guion, esto: si tienes claro el encuadre, la llamada se conduce sola. Si no lo tienes, ningún script te salva.</p>
+
+  <h4>Lo que NO es</h4>
+  <ul>
+    <li>No es un programa BIM. No compite con Revit ni con Navisworks.</li>
+    <li>No es un chatbot ni «un ChatGPT para arquitectos».</li>
+    <li>No es un dashboard ni un visualizador.</li>
+  </ul>
+
+  <h4>Lo que sí es</h4>
+  <div class="say">
+    <span class="tag">La frase base</span>
+    <p>«Es un consultor BIM digital: analiza el proyecto, entiende quién está preguntando, repregunta cuando le falta contexto y te muestra la evidencia de lo que afirma.»</p>
+  </div>
+
+  <h3>El problema que resolvemos</h3>
+  <p>Los programas BIM arrojan miles de datos. Nadie se ocupa de qué hacer con ellos. Ese criterio vive en la cabeza de una sola persona —el gerente BIM— y toda la empresa avanza al ritmo de esa persona.</p>
+  <div class="note">
+    <span class="tag">La frase que resume todo</span>
+    <p>«El cliente ya no necesita más información. Necesita criterio.»</p>
+  </div>
+
+  <h3>El enemigo: depender de una sola persona</h3>
+  <p>Este es el ángulo que le habla al dueño, y el dueño es quien firma:</p>
+  <ul>
+    <li>Todo lo tiene que revisar una persona.</li>
+    <li>Si se enferma, se satura o renuncia, la empresa se frena.</li>
+    <li>Y cuando se va, se lleva el criterio con él.</li>
+  </ul>
+
+  <h3>Tu ancla de precio</h3>
+  <div class="say">
+    <span class="tag">Úsala siempre con dueños y socios</span>
+    <p>«Un gerente BIM te cuesta alrededor de 6.000 dólares al mes. Y el día que alguien le ofrezca 10.000, se va — y se lleva el criterio con él. Con esto, ese criterio se queda en la empresa, trabaja las 24 horas y no renuncia.»</p>
+  </div>
+
+  <div class="note stop">
+    <span class="tag">La regla que no se rompe</span>
+    <p><strong>Nunca inventes criterio técnico.</strong> Si te preguntan algo de BIM que no sabes, no improvises: «Buena pregunta. Se la paso a Gabriel y te respondo hoy mismo». Un dato mal dicho frente a un gerente BIM destruye la venta y la credibilidad del producto — porque lo que vendemos es justamente criterio.</p>
+  </div>
+</section>
+
+<section id="f2">
+  <span class="snum">02</span>
+  <h2>A quién le vendes (y a quién no)</h2>
+  <p>Vendemos a <strong>empresas</strong>. Un modelador con sueldo operativo no puede aprobar mil dólares aunque le encante el producto.</p>
+  <div class="tscroll">
+  <table>
+    <thead><tr><th>Perfil</th><th>¿Agenda?</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Dueño, socio, director</strong></td><td>Sí. Es el mejor perfil: decide y paga solo</td></tr>
+      <tr><td><strong>Gerente / BIM Manager</strong></td><td>Sí, si tiene presupuesto propio</td></tr>
+      <tr><td><strong>Coordinador</strong></td><td>Sí, pero confirma en la llamada si él aprueba la compra o hay que sumar a alguien</td></tr>
+      <tr><td><strong>Modelador o estudiante</strong></td><td>No. Va a lista de espera con un mensaje amable</td></tr>
+      <tr><td><strong>Sin proyecto activo en Revit</strong></td><td>No. Sin proyecto vivo no hay nada que mostrar</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="note stop">
+    <span class="tag">Las dos condiciones sin excepción</span>
+    <p>Que <strong>decida y pague</strong>, y que tenga un <strong>proyecto activo en Revit hoy</strong>. Si falta una de las dos, no agendes: le haces perder el tiempo a él y a ti.</p>
+  </div>
+</section>
+
+<section id="f3">
+  <span class="snum">03</span>
+  <h2>Cómo agendas</h2>
+  <p>Lo que ofreces no es una demo. Es un <strong>diagnóstico gratuito de su proyecto</strong>. Nadie quiere ver una demo; todo el mundo quiere que un experto le revise su proyecto sin costo.</p>
+
+  <h3>Primer mensaje de WhatsApp</h3>
+  <div class="say">
+    <span class="tag">Copia y personaliza</span>
+    <p>Hola [nombre], soy Franklin del equipo de Gabriel Pantoja, de Design Modeling 🙌</p>
+    <p>Te escribo porque armamos algo que quiero que veas: un agente de IA con el criterio BIM de Gabriel, que lee tu proyecto de Revit y te dice qué está mal, por qué importa y qué hacer.</p>
+    <p>Antes de proponerte nada quiero mostrarte algo concreto: agendamos 45 minutos y lo vemos funcionando con un proyecto tuyo.</p>
+    <p>¿Te sirve esta semana?</p>
+  </div>
+
+  <h3>Si pregunta «¿de qué se trata?» o «mándame info»</h3>
+  <div class="say">
+    <span class="tag">No mandes un PDF. Sube la apuesta</span>
+    <p>Te lo resumo en una línea: es el criterio de un BIM Manager con más de 10 años, trabajando dentro de tu empresa 24/7.</p>
+    <p>Pero la verdad es que explicártelo por escrito no le hace justicia. En 45 minutos te lo muestro funcionando con un proyecto real y ahí decides tú. ¿Te agendo?</p>
+  </div>
+
+  <h3>Cuando confirma</h3>
+  <div class="say">
+    <span class="tag">Pide el proyecto</span>
+    <p>Perfecto [nombre], quedamos el [día] a las [hora] 👉 [link]</p>
+    <p>Un favor para que la reunión te sirva de verdad: ten a mano un proyecto tuyo de Revit — uno normal de trabajo, no hace falta el más grande. La idea es que lo veas con algo tuyo, no con una demo de juguete.</p>
+  </div>
+
+  <h4>Seguimiento si no responde</h4>
+  <ul>
+    <li><strong>Día 2:</strong> «[nombre] ¿alcanzaste a ver mi mensaje? me interesa mostrártelo a ti en particular»</li>
+    <li><strong>Día 4:</strong> «Te cuento que el precio de lanzamiento va hasta el 30 de septiembre. No quiero que te enteres cuando ya haya subido 🙏»</li>
+    <li><strong>Día 7:</strong> «Entiendo que no es el momento, te saco de la lista para no molestarte 🙌 cuando quieras verlo me escribes»</li>
+  </ul>
+  <p>Ese último mensaje recupera buena parte de los silencios. <strong>Nunca insistas más de tres veces.</strong></p>
+</section>
+
+<section id="f4">
+  <span class="snum">04</span>
+  <h2>La llamada, minuto a minuto</h2>
+  <p>45 minutos. El orden no se altera: <strong>primero preguntas, después muestras, después ofreces, y al final pides.</strong> Invertirlo es la forma más común de perder la venta.</p>
+
+  <div class="block">
+    <div class="block-head"><span class="block-time">0–5</span><span class="block-t">Apertura y encuadre</span></div>
+    <p class="block-goal">Quitar la sensación de «reunión de ventas» y poner agenda clara.</p>
+    <div class="say">
+      <p>«[Nombre], gracias por el tiempo. Te propongo algo para no hacerte perder minutos: primero te hago un par de preguntas de cómo trabajan hoy, porque quiero mostrarte esto según tu realidad y no una demo genérica. Después te lo muestro funcionando. Y al final te cuento qué implica entrar.</p>
+      <p>Si en algún momento ves que no te sirve, me lo dices y cortamos, no pasa nada. ¿Te parece?»</p>
+    </div>
+    <p>Ese permiso explícito para decir que no baja la guardia y hace que te respondan con honestidad — que es lo único que hace útil la demo después.</p>
+  </div>
+
+  <div class="block">
+    <div class="block-head"><span class="block-time">5–15</span><span class="block-t">Las preguntas</span></div>
+    <p class="block-goal">Aquí no vendes nada. Recoges las palabras exactas que vas a usar después. El cliente habla el 80%.</p>
+    <ol>
+      <li>«Cuéntame cómo es hoy la semana con los proyectos: ¿qué parte les consume más tiempo del que debería?»</li>
+      <li>«¿Cómo revisan hoy el modelo — cantidades, inconsistencias, choques? ¿Quién lo hace y con qué?»</li>
+      <li>«¿Cuándo fue la última vez que un error del modelo se les fue a obra? ¿Qué pasó?»</li>
+      <li>«¿Cuánto costó eso, entre plata y días?»</li>
+      <li>«¿Han probado usar IA para esto? ¿Cómo les fue?»</li>
+      <li>«Si eso se resolviera, ¿qué cambiaría para ustedes concretamente?»</li>
+    </ol>
+    <div class="note">
+      <span class="tag">La técnica que más vende</span>
+      <p>Después de la pregunta 3, <strong>cállate</strong>. Deja el silencio. Casi siempre lo rompe el cliente contando algo que le dolió. Anota esa frase textual — la vas a repetir con sus mismas palabras en la oferta. Nada convence más a alguien que escucharse a sí mismo.</p>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block-head"><span class="block-time">15–30</span><span class="block-t">La demo</span></div>
+    <p class="block-goal">Demostrar criterio, no funciones. Ver sección 05.</p>
+  </div>
+
+  <div class="block">
+    <div class="block-head"><span class="block-time">30–38</span><span class="block-t">La oferta</span></div>
+    <p class="block-goal">Pertenencia, contenido, precio y mecanismo sin riesgo — en ese orden. Ver sección 06.</p>
+  </div>
+
+  <div class="block">
+    <div class="block-head"><span class="block-time">38–45</span><span class="block-t">Objeciones y cierre</span></div>
+    <p class="block-goal">Una sola pregunta de cierre, y silencio. Ver secciones 07 y 08.</p>
+  </div>
+</section>
+
+<section id="f5">
+  <span class="snum">05</span>
+  <h2>La demo: qué muestras y en qué orden</h2>
+  <div class="note">
+    <span class="tag">La regla de oro</span>
+    <p>No demuestras funciones, demuestras criterio. El cliente compra en el segundo exacto en que el agente <strong>repregunta</strong>. Un chatbot responde; un consultor pregunta antes de responder. Ese contraste es toda la venta.</p>
+  </div>
+
+  <h3>1 · La sincronización desde Revit <span style="color:var(--ink-faint);font-weight:400">· 3 min</span></h3>
+  <p>Muestra la pestaña dentro de Revit, aprieta sincronizar, abre la app con la data ya adentro. Señala el número de versión.</p>
+  <div class="say">
+    <p>«Fíjate que no salí de Revit. No exporté nada, no subí ningún archivo. Y quedó como versión 6 — cada vez que modifiques y sincronices, sabes exactamente con qué versión estás trabajando.»</p>
+  </div>
+
+  <h3>2 · Un hallazgo completo <span style="color:var(--ink-faint);font-weight:400">· 4 min</span></h3>
+  <p>Abre un hallazgo y recorre la cadena: qué encontró, la evidencia, el impacto, la recomendación y el nivel de confianza.</p>
+  <div class="say">
+    <p>«No te dice solo que hay un problema: te dice con qué lo prueba, qué te cuesta si llega a obra, qué haría, y qué tan seguro está. Y si no tiene el dato, lo dice — no rellena.»</p>
+  </div>
+
+  <h3>3 · La repregunta <span style="color:var(--amber);font-weight:500">· 5 min · el momento clave</span></h3>
+  <p>Hazle al agente una pregunta <strong>deliberadamente incompleta</strong>, para que tenga que pedir contexto. Una pregunta cerrada («¿cuántas puertas tiene?») da una respuesta plana y arruina el momento.</p>
+  <h4>Elige una de estas cinco</h4>
+  <ul>
+    <li>«¿Me conviene usar acero de 12 o de 14 en este proyecto?»</li>
+    <li>«Quiero construir una columna de hormigón armado, ¿cómo la resuelvo?»</li>
+    <li>«¿Este modelo está listo para entregar?»</li>
+    <li>«¿Cómo optimizo los costos de este proyecto?»</li>
+    <li>«¿Qué debería revisar antes de la reunión de coordinación del viernes?»</li>
+  </ul>
+  <div class="say">
+    <span class="tag">Y cuando repregunte, nómbralo en voz alta</span>
+    <p>«Fíjate en lo que acaba de hacer. No me respondió: me preguntó. Necesitaba contexto para darme una respuesta seria — igual que te preguntaría un consultor antes de opinar sobre tu proyecto. Eso es lo que ningún chatbot hace.»</p>
+  </div>
+  <div class="note stop">
+    <span class="tag">Si no repregunta</span>
+    <p>No lo disimules, úsalo: «Esta la respondió de una porque tenía el contexto. Te muestro una donde le falta información y verás que cambia». Lanza otra de las cinco. Si tampoco, corta el bloque y vuelve a los hallazgos, que es terreno seguro. <strong>Nunca insistas tres veces con lo mismo en vivo.</strong></p>
+  </div>
+
+  <h3>4 · Que él haga una pregunta <span style="color:var(--ink-faint);font-weight:400">· 2 min</span></h3>
+  <div class="say">
+    <p>«Ahora hazle tú una. La que se te ocurra de este proyecto.»</p>
+  </div>
+  <p>Aquí deja de ser una demo y pasa a ser <em>su</em> herramienta. <strong>Si sale bien, para ahí</strong> — no hay nada mejor que mostrar después.</p>
+
+  <h3>5 · El buzón de mejoras <span style="color:var(--ink-faint);font-weight:400">· 30 seg</span></h3>
+  <div class="say">
+    <p>«Y esto no es un discurso: acá adentro propones la mejora que quieras y el resto vota. Las que más votos juntan son las que se construyen primero. Tu voz pesa desde el primer día, literalmente.»</p>
+  </div>
+
+  <h3>6 · Cierre honesto <span style="color:var(--ink-faint);font-weight:400">· 1 min</span></h3>
+  <p>Cierra la pantalla y vuelve a cámara.</p>
+  <div class="say">
+    <p>«Y te digo con todas las letras lo que falta: estamos en una etapa temprana y hay funciones en desarrollo. Por eso entran pocas empresas y por eso pagas esto y no lo que va a costar más adelante.»</p>
+  </div>
+  <div class="note ok">
+    <p>Reconocer el límite del producto es lo que vuelve creíble todo lo que dijiste antes. En un gremio escéptico de la IA, la honestidad vende más que una función extra.</p>
+  </div>
+</section>
+
+<section id="f6">
+  <span class="snum">06</span>
+  <h2>La oferta y el precio</h2>
+
+  <div class="say">
+    <span class="tag">Cómo lo presentas</span>
+    <p>«[Nombre], lo que acabas de ver funciona hoy, pero está en su etapa inicial. En vez de lanzarlo al público, estamos eligiendo pocas empresas que lo usen con proyectos reales y ayuden a moldearlo antes del lanzamiento. Quiero que ustedes sean una de ellas.»</p>
+  </div>
+
+  <h4>Qué incluye — léelo completo, no lo resumas</h4>
+  <ul>
+    <li>Implementación uno a uno con nuestro equipo, sobre un proyecto real de ustedes.</li>
+    <li>Founder Badge numerado y reconocimiento permanente en la plataforma.</li>
+    <li>Comité de Innovación: proponen qué se construye después.</li>
+    <li>Canal VIP directo con el equipo, sin tickets.</li>
+    <li>Microcredencial BIM + IA y el curso de IA aplicada al BIM.</li>
+    <li>Playbooks metodológicos y acompañamiento durante toda la beta.</li>
+    <li>Acceso anticipado a cada función nueva.</li>
+    <li>Garantía Primer Proyecto de 30 días.</li>
+    <li>Precio congelado mientras la membresía siga activa.</li>
+  </ul>
+
+  <div class="say">
+    <span class="tag">El precio, con calma</span>
+    <p>«Son [precio] de entrada y [mensualidad] al mes, que empiezan a correr recién a los 30 días.</p>
+    <p>Para que lo pongas en contexto: un gerente BIM son unos 6.000 dólares al mes y se va cuando le ofrecen más. Esto trabaja con ese criterio las 24 horas y no renuncia.»</p>
+  </div>
+
+  <div class="say">
+    <span class="tag">Y el mecanismo — aquí baja toda la fricción</span>
+    <p>«Pero no te pido que decidas eso hoy. Reservas tu lugar con 100 dólares que se descuentan del total, no son un costo extra.</p>
+    <p>Con eso agendamos la sesión técnica, dejamos tu proyecto andando, y lo usan siete días. Al séptimo decides: si siguen, pagan el saldo; si no, te devuelvo los 100 completos.»</p>
+  </div>
+
+  <div class="note stop">
+    <span class="tag">Antes de tu primera llamada</span>
+    <p>Confirma con Dayana el <strong>precio exacto</strong> que corresponde a tu carril y <strong>qué está listo del rol Coordinador</strong>. Mientras no esté confirmado, dilo como «agente de Coordinador disponible, panel en camino». Es preferible quedarse corto que romper la primera impresión.</p>
+  </div>
+</section>
+
+<section id="f7">
+  <span class="snum">07</span>
+  <h2>Objeciones</h2>
+  <p>Método para todas: <strong>validar → reencuadrar → devolver la pregunta.</strong> Nunca discutas, nunca te defiendas, nunca bajes el precio.</p>
+
+  <div class="obj">
+    <p class="obj-q">«¿Tengo que instalar algo?»</p>
+    <p class="obj-a">«Sí, algo chiquito, y lo instalamos nosotros contigo en la sesión técnica. Después es abrir tu Revit como siempre y darle a un botón. Es justamente lo que hace que no tengas que exportar nada.»</p>
+  </div>
+  <div class="obj">
+    <p class="obj-q">«¿Y si tengo otra versión de Revit?»</p>
+    <p class="obj-a">«Lo vemos en la sesión técnica. Si hay que ajustar algo para tu versión, se ajusta — de hecho es una de las razones por las que entramos con pocas empresas primero: para dejarlo resuelto contigo, uno a uno.»</p>
+  </div>
+  <div class="obj">
+    <p class="obj-q">«Revit ya tiene IA»</p>
+    <p class="obj-a">«La IA que traen hoy los programas sirve para modelar un elemento o exportar una tabla. No existe todavía una que te dé contexto, que trabaje con estándares, con roles y con decisiones. Y fíjate que ese argumento juega a nuestro favor: si ellos están metiendo IA es porque el camino es este. La pregunta es si quieres llegar antes o después.»</p>
+  </div>
+  <div class="obj">
+    <p class="obj-q">«¿Y si la IA se equivoca?»</p>
+    <p class="obj-a">«No vendemos algo infalible. Vendemos una guía que muestra evidencia, con la misma estructura con la que razona un ingeniero. Cada hallazgo trae evidencia, impacto y nivel de confianza a la vista, y si no tiene el dato lo dice. Tú validas, igual que validarías el trabajo de un consultor.»</p>
+  </div>
+  <div class="obj">
+    <p class="obj-q">«¿Va a decidir por nosotros?»</p>
+    <p class="obj-a">«Nunca. No va a decir "quitemos las paredes del primer piso". Te da contexto, diagnóstico y recomendación, y acompaña la decisión. Decidir y validar sigue siendo del equipo.»</p>
+  </div>
+  <div class="obj">
+    <p class="obj-q">«¿Dónde quedan nuestros modelos?»</p>
+    <p class="obj-a">«En almacenamiento privado con acceso controlado, y el proyecto sigue siendo de ustedes. No se usa para entrenar nada de terceros, y pueden pedir que se borre cuando quieran.»</p>
+  </div>
+  <div class="obj">
+    <p class="obj-q">«Está caro»</p>
+    <p class="obj-a">«Te entiendo. Ponlo al lado de lo que ya gastan: un gerente BIM son unos 6.000 al mes y se va cuando le ofrecen más. Y no te pido el total hoy: son 100 reembolsables y siete días con su proyecto andando. ¿Qué riesgo real están corriendo?»</p>
+  </div>
+  <div class="obj">
+    <p class="obj-q">«Déjame pensarlo»</p>
+    <p class="obj-a">«Perfecto, es una decisión importante. Solo para manejar bien tu lugar: ¿qué es específicamente lo que quieres pensar — si les va a servir, si el equipo lo va a usar, o el monto?» <em>La respuesta te da la objeción real, que casi nunca es «pensarlo».</em></p>
+  </div>
+  <div class="obj">
+    <p class="obj-q">«Tengo que hablarlo con mi socio»</p>
+    <p class="obj-a">«Me parece bien. ¿Y si lo hablan con algo concreto en la mano en vez de con una idea? Reservan con los 100, se lo muestran funcionando con un proyecto de ustedes, y si él dice que no, les devuelvo los 100.»</p>
+  </div>
+  <div class="obj">
+    <p class="obj-q">«Mi equipo no lo va a usar»</p>
+    <p class="obj-a">«Ese es el miedo correcto, y por eso la implementación la hacemos nosotros con su proyecto y su gente. No les dejamos un usuario y una clave. Y por eso entramos con pocas empresas: para acompañar de verdad a cada una.»</p>
+  </div>
+</section>
+
+<section id="f8">
+  <span class="snum">08</span>
+  <h2>El cierre</h2>
+  <p>Una sola pregunta, dicha con calma, y después <strong>silencio absoluto</strong>. El que habla primero pierde: o compra, o te revela la objeción real.</p>
+
+  <div class="say">
+    <span class="tag">Cierre directo — si la demo salió bien</span>
+    <p>«¿Te reservo el lugar?»</p>
+  </div>
+  <div class="say">
+    <span class="tag">Cierre de alternativa — si duda sin objetar nada</span>
+    <p>«¿Prefieren empezar con el proyecto de [obra A] o con el de [obra B]?»</p>
+  </div>
+  <div class="say">
+    <span class="tag">Cierre de la razón — si pide tiempo sin motivo claro</span>
+    <p>«Claro, tómate el tiempo que necesites. Solo para saber cómo manejo tu lugar: ¿qué te haría decidir que sí?»</p>
+  </div>
+
+  <h3>Apenas dice que sí, sin colgar</h3>
+  <ol>
+    <li>Manda el link de pago por el chat y <strong>espera ver la confirmación en pantalla</strong>. Un pago «para después» se concreta en una fracción de los casos.</li>
+    <li>Agenda la sesión técnica con día y hora, dentro de 48 horas.</li>
+    <li>Dile qué llevar: un proyecto normal de trabajo, no el más pesado que tenga.</li>
+    <li>Recuérdale la línea de tiempo completa (abajo).</li>
+    <li><strong>No pidas referidos todavía.</strong> Eso va después del pago del saldo.</li>
+  </ol>
+
+  <div class="say">
+    <span class="tag">La línea de tiempo, dicha completa</span>
+    <p>«Para que lo tengas clarísimo: hoy reservas con 100. Agendamos la sesión técnica y dejamos tu proyecto andando. Siete días de prueba. Al séptimo, si siguen, pagan el saldo. Y la primera mensualidad corre 30 días después de ese pago, no antes.»</p>
+  </div>
+  <p>Decirlo completo evita discusiones de cobro más adelante — justo con los clientes que menos nos podemos permitir incomodar.</p>
+</section>
+
+<section id="f9">
+  <span class="snum">09</span>
+  <h2>Antes y después de cada llamada</h2>
+
+  <h3>Antes — checklist</h3>
+  <ul class="check">
+    <li>App abierta, probada y con el proyecto demo ya sincronizado</li>
+    <li>Link de pago de la reserva en el portapapeles</li>
+    <li>Pregunta elegida para provocar la repregunta</li>
+    <li>Lo que sepas de su empresa y su tipo de proyecto, repasado</li>
+    <li>Cámara encendida, buena luz, sin ruido</li>
+  </ul>
+  <div class="note stop">
+    <p>Nunca compartas pantalla con la app sin haberla probado 10 minutos antes. Si falla en vivo, no lo disimules: «esto es exactamente por lo que estamos entrando con pocas empresas primero».</p>
+  </div>
+
+  <h3>Después — 10 minutos, innegociable</h3>
+  <ul class="check">
+    <li>Anota las frases textuales del cliente sobre su dolor</li>
+    <li>Anota la objeción que apareció</li>
+    <li>Actualiza la tarjeta en el pipeline</li>
+    <li>Agenda el siguiente paso con fecha concreta — nunca «pendiente de coordinar»</li>
+  </ul>
+  <p>Si la misma objeción aparece en tres llamadas seguidas, avísale a Dayana: no se resuelve insistiendo, se resuelve corrigiendo la oferta o el material.</p>
+
+  <h3>Los errores que matan la venta</h3>
+  <div class="tscroll">
+  <table>
+    <thead><tr><th>Error</th><th>Por qué mata</th></tr></thead>
+    <tbody>
+      <tr><td>Mostrar la demo antes de preguntar</td><td>Se vuelve genérica y el cliente no se ve reflejado</td></tr>
+      <tr><td>Inventar criterio técnico</td><td>Un dato mal dicho frente a un gerente BIM destruye la credibilidad del producto</td></tr>
+      <tr><td>Usar una pregunta cerrada en la demo</td><td>El agente responde plano y pierdes el único momento que convence</td></tr>
+      <tr><td>Decir el precio antes de la demo</td><td>Evalúa el costo sin tener con qué compararlo</td></tr>
+      <tr><td>Hablar más del 40% de la llamada</td><td>El que habla no escucha, y el que no escucha no vende</td></tr>
+      <tr><td>Dejar el pago para después</td><td>La intención se enfría en horas</td></tr>
+      <tr><td>Prometer lo que está en desarrollo</td><td>Un cliente decepcionado destruye la prueba social en un gremio chico</td></tr>
+      <tr><td>Insistir más de tres veces</td><td>Quema la confianza, que es el activo con el que vendemos</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="note ok">
+    <span class="tag">Para tener presente</span>
+    <p>No llegas a vender un software. Llegas con un agente que razona con el criterio de alguien que lleva años formando profesionales BIM, y con algo concreto que mostrarle del proyecto del cliente. Esa es la postura, y es la que hace que el precio no se discuta. Si en algún momento sientes que estás rogando, vuelve a las preguntas.</p>
+  </div>
+</section>
+
+<footer>
+  <span>DG BIM Intelligence · Guía de campo</span>
+  <span>Design Modeling Academy</span>
+</footer>
+
+</div>
