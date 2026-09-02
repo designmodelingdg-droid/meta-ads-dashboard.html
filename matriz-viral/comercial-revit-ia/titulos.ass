@@ -1,0 +1,19 @@
+﻿[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Kicker,Montserrat ExtraBold,74,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,-1,0,0,0,100,100,3,0,1,4,2,2,70,70,300,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:02.60,0:00:05.30,Kicker,,0,0,0,,{\fad(320,320)\fscx88\fscy88\t(0,260,\fscx100\fscy100)}{\c&H4AA0E8&}REVIT 2027{\c&HFFFFFF&}
+Dialogue: 0,0:00:06.00,0:00:09.30,Kicker,,0,0,0,,{\fad(320,320)\fscx88\fscy88\t(0,260,\fscx100\fscy100)}BIM + INTELIGENCIA ARTIFICIAL
+Dialogue: 0,0:00:10.30,0:00:13.60,Kicker,,0,0,0,,{\fad(320,320)\fscx88\fscy88\t(0,260,\fscx100\fscy100)}DEL PLANO AL MODELO
+Dialogue: 0,0:00:14.60,0:00:17.90,Kicker,,0,0,0,,{\fad(320,320)\fscx88\fscy88\t(0,260,\fscx100\fscy100)}{\c&H4AA0E8&}AUTOMATIZACIÓN{\c&HFFFFFF&}
+Dialogue: 0,0:00:18.90,0:00:22.20,Kicker,,0,0,0,,{\fad(320,320)\fscx88\fscy88\t(0,260,\fscx100\fscy100)}COORDINACIÓN INTELIGENTE
+Dialogue: 0,0:00:23.40,0:00:26.30,Kicker,,0,0,0,,{\fad(320,320)\fscx88\fscy88\t(0,260,\fscx100\fscy100)}EL FUTURO DEL {\c&H4AA0E8&}DISEÑO{\c&HFFFFFF&}
