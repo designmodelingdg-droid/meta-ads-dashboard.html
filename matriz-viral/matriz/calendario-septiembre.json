@@ -35,9 +35,9 @@
    "cuando": "antes del 9-sep"
   },
   {
-   "tarea": "Crear lead magnet: Guia «Revit + ChatGPT: resuelve errores con IA»",
+   "tarea": "Crear lead magnet: Guia «Revit + ChatGPT: resuelve errores con IA» + montar disparador GUIA",
    "desbloquea": "CTA GUIA de los reels de IA (Mi 9 y Mar 22)",
-   "cuando": "semana 1"
+   "cuando": "antes del Mie 9 (o el CTA del Valor 6 cambia a GPT y se regenera el subtitulo)"
   },
   {
    "tarea": "Crear lead magnet: Pack starter de scripts Dynamo / Python",
@@ -832,6 +832,105 @@
     "nombre": "(Opcional) Diagnostico «¿Cual es tu puerta?»",
     "para_que": "Version corta del test alineada a las 4 puertas para el CTA RUTA. Mientras no exista, RUTA responde con orientacion 1-a-1 del equipo y el Test de Nivelacion cubre el diagnostico.",
     "palabra_sugerida": "RUTA"
+   }
+  ],
+  "regla": "REGLA DE SEGURIDAD (leccion de julio): ningun CTA sale al aire sin su recurso VIVO y su disparador montado el dia de la publicacion. Si el recurso no llego a tiempo, NO se aplaza la pieza: se publica con el CTA de reemplazo de esta tabla. Prometer y no entregar cuesta mas que cambiar la palabra.",
+  "mapa_cta": [
+   {
+    "fecha": "L7, Mar 8, L14, V18, L21",
+    "pieza": "Carruseles y reels de BIM (3 señales, Coordinador, Navisworks, Autodesk, errores Revit)",
+    "cta": "BIM / IA",
+    "recurso": "Seguimiento del bot hacia el Master (conversacion, no recurso)",
+    "estado": "✅ Disparadores BIM e IA montados y probados",
+    "reemplazo": "—"
+   },
+   {
+    "fecha": "Mi 9",
+    "pieza": "REEL Valor 6 (error Revit + ChatGPT)",
+    "cta": "GUIA",
+    "recurso": "Guia «Revit + ChatGPT: resuelve errores con IA»",
+    "estado": "🔴 POR CREAR + disparador por montar",
+    "reemplazo": "Si no esta el dia 9: CTA cambia a «comenta GPT» → GPT IA Pro (existe). El subtitulo del video dice COMENTA GUIA — si se cambia el CTA hay que regenerar el subtitulo (5 min con el pipeline)."
+   },
+   {
+    "fecha": "V11, Mi16, V2oct",
+    "pieza": "Posts de dato de calculo + Sobredimensionada 2",
+    "cta": "ACERO",
+    "recurso": "Verificacion de Acero (5 Verificaciones)",
+    "estado": "✅ Existe, embudo verificado, palabra montada",
+    "reemplazo": "—"
+   },
+   {
+    "fecha": "Sab 12, Sab 19",
+    "pieza": "Reels grabados #4 Dynamo y #6 Python",
+    "cta": "DYNAMO",
+    "recurso": "Pack starter de scripts Dynamo / Python",
+    "estado": "🔴 POR CREAR + disparador por montar",
+    "reemplazo": "Si no esta: CTA cambia a «comenta BIM» (bot Master) y el pack queda para octubre."
+   },
+   {
+    "fecha": "Mar 22",
+    "pieza": "Reel grabado #7 Mitos de la automatizacion",
+    "cta": "IA",
+    "recurso": "Seguimiento del bot (y GPT IA Pro como regalo en el DM)",
+    "estado": "✅ Disparador IA montado; GPT IA Pro existe",
+    "reemplazo": "—"
+   },
+   {
+    "fecha": "Mi 23, V25 + correo Mar 22 + comunidad Jue 24",
+    "pieza": "Carrusel 4 Puertas, reel espejo, correo Master",
+    "cta": "RUTA",
+    "recurso": "Orientacion 1-a-1 del equipo (el Test de Nivelacion cubre el diagnostico)",
+    "estado": "🟡 Recurso existe (test), DISPARADOR RUTA por montar",
+    "reemplazo": "Si el disparador no esta el 22: CTA cambia a «comenta NIVEL» → Test de Nivelacion (montado)."
+   },
+   {
+    "fecha": "Sab 26",
+    "pieza": "Reel grabado #8 IA para arquitectura",
+    "cta": "IA",
+    "recurso": "Bot Master + GPT IA Pro",
+    "estado": "✅ Montado",
+    "reemplazo": "—"
+   },
+   {
+    "fecha": "L28, Mi30 + correo Mar 29",
+    "pieza": "Anuncio y demo del tutor de IA",
+    "cta": "ACERO",
+    "recurso": "5 Verificaciones + temario (el tutor es feature del curso, NO lead magnet)",
+    "estado": "🟡 Palabra montada; piezas CONDICIONADAS al deploy del tutor",
+    "reemplazo": "Si el tutor no esta: suben piezas del banco y estas pasan a octubre."
+   },
+   {
+    "fecha": "Comunidad Jue 17",
+    "pieza": "Mensaje del recurso gratis",
+    "cta": "ZAPATA",
+    "recurso": "Calculadora de Zapatas",
+    "estado": "✅ Embudo completo probado",
+    "reemplazo": "—"
+   },
+   {
+    "fecha": "Comunidad Vie 25 + blog Sab 26",
+    "pieza": "Test de nivel + blog elegir software",
+    "cta": "NIVEL",
+    "recurso": "Test de Nivelacion BIM (+ Curso Introductorio como segundo regalo)",
+    "estado": "✅ Montado (redirect corregido en agosto)",
+    "reemplazo": "—"
+   },
+   {
+    "fecha": "Blog Sab 12",
+    "pieza": "Articulo IA en arquitectura",
+    "cta": "GPT",
+    "recurso": "GPT IA Pro",
+    "estado": "🟡 Existe; CONFIRMAR la palabra montada en el bot",
+    "reemplazo": "Enlace directo en el blog (en blog el enlace si va directo)."
+   },
+   {
+    "fecha": "Blog Sab 3-oct",
+    "pieza": "Articulo sostenibilidad",
+    "cta": "EBOOK",
+    "recurso": "Ebook BIM",
+    "estado": "🟡 Existe; CONFIRMAR la palabra montada",
+    "reemplazo": "Enlace directo en el blog."
    }
   ]
  },

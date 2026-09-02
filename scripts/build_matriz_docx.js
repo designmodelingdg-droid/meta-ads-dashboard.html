@@ -574,6 +574,13 @@ if(Array.isArray(CAL.grupos) && CAL.grupos.length){
       push(H3(l.nombre+'  →  palabra sugerida: «'+l.palabra_sugerida+'»'));
       push(P(l.para_que));
     });
+    if(CAL.lead_magnets.mapa_cta){
+      push(H2("Mapa CTA → recurso: cada promesa del mes, verificada"));
+      if(CAL.lead_magnets.regla) push(P(CAL.lead_magnets.regla,{run:{color:RED,bold:true}}));
+      push(tbl(["Cuándo","Pieza","CTA","Recurso que entrega","Estado","Reemplazo si no llega"],
+        CAL.lead_magnets.mapa_cta.map(m=>[m.fecha,m.pieza,m.cta,m.recurso,m.estado,m.reemplazo]),
+        [1500,2400,900,2400,2000,2900]));
+    }
   }
 
 }else{
