@@ -115,6 +115,21 @@ ol.slides li{font-size:14px;margin-bottom:9px}
 .rol-vent{background:var(--stop-bg);color:var(--stop)}
 .sticker{font-size:13.5px;margin:8px 0 0;color:var(--ink-2)}
 .sticker b{font-family:var(--display);color:var(--ink)}
+.filtro{display:flex;gap:7px;flex-wrap:wrap;margin:16px 0 4px;padding:10px 0;
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.fbtn{appearance:none;font-family:var(--display);font-weight:700;font-size:12.5px;
+  padding:6px 13px;border-radius:99px;border:1px solid var(--line-strong);
+  background:var(--surface);color:var(--ink-2);cursor:pointer;white-space:nowrap}
+.fbtn:hover{border-color:var(--amber);color:var(--ink)}
+.fbtn[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.fbtn:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+.vacio{display:none;padding:20px;text-align:center;color:var(--ink-3);font-style:italic}
+.lm-nuevo{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--amber);
+  border-radius:0 8px 8px 0;padding:14px 17px;margin:12px 0}
+.lm-nuevo h4{font-family:var(--display);font-weight:800;font-size:16px;margin:0 0 4px}
+.lm-pal{font-family:var(--mono);font-size:12.5px;color:var(--amber-deep);font-weight:600}
+.lm-nuevo p{font-size:14px;color:var(--ink-2);margin:8px 0 0}
+.lm-cta{font-size:13.5px;margin:8px 0 0;color:var(--stop);font-weight:600}
 footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);
   font-size:12.5px;color:var(--ink-3);font-family:var(--mono)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
@@ -161,6 +176,31 @@ footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);
 <li>Publicar tambien en Facebook, cuidado y no como auto-repost: mas de la mitad del alcance real viene de ahi.</li>
 </ul>
 <div class="dato"><strong>Los reels de agosto quedaron fuera.</strong> Los que se grabaron en agosto y nunca se publicaron no entran en este mes: todo lo que ves aquí es contenido nuevo, y cada reel tiene su guion escrito para grabarlo.</div>
+<h2>Recursos gratuitos que hay que CREAR</h2>
+<p class="intro">Los CTA del mes prometen recursos. Estos todavía no existen — y hay contenido ya programado que los pide. Si no llegan a tiempo, el CTA se cambia por el de reemplazo, pero la promesa vacía no se publica.</p>
+<div class="lm-nuevo"><h4>Guia «Revit + ChatGPT: resuelve errores con IA»</h4><span class="lm-pal">Palabra clave sugerida: «GUIA»</span><p>Es el CTA del reel Valor 6 (Mi 9) y de los reels extra de IA (Mar 15, Mar 22). Hoy ese CTA promete una guia que NO existe — exactamente el error que ya cometimos en julio. O se crea en la semana 1, o el CTA de esos reels cambia a un recurso existente (GPT IA Pro).</p></div>
+<div class="lm-nuevo"><h4>Pack starter de scripts Dynamo / Python para Revit</h4><span class="lm-pal">Palabra clave sugerida: «DYNAMO»</span><p>CTA natural de los reels #4 Dynamo (Sab 12) y #6 Python (Sab 19) — el tema de mejor guardado de la cuenta y sin recurso propio. 3-5 scripts comentados con instrucciones.</p></div>
+<div class="lm-nuevo"><h4>(Opcional) Diagnostico «¿Cual es tu puerta?»</h4><span class="lm-pal">Palabra clave sugerida: «RUTA»</span><p>Version corta del test alineada a las 4 puertas para el CTA RUTA. Mientras no exista, RUTA responde con orientacion 1-a-1 del equipo y el Test de Nivelacion cubre el diagnostico.</p></div>
+<h3 class="camp">Qué contenido depende de cada uno</h3>
+<div class="tabla-scroll"><table><thead><tr><th>Cuándo</th><th>Pieza</th><th>CTA</th><th>Estado</th><th>Reemplazo si no llega</th></tr></thead><tbody>
+<tr><td>Mi 9</td><td>REEL Valor 6 (error Revit + ChatGPT)</td><td><b>GUIA</b></td><td>🔴 POR CREAR + disparador por montar</td><td>Si no esta el dia 9: CTA cambia a «comenta GPT» → GPT IA Pro (existe). El subtitulo del video dice COMENTA GUIA — si se cambia el CTA hay que regenerar el subtitulo (5 min con el pipeline).</td></tr>
+<tr><td>Sab 12, Sab 19</td><td>Reels grabados #4 Dynamo y #6 Python</td><td><b>DYNAMO</b></td><td>🔴 POR CREAR + disparador por montar</td><td>Si no esta: CTA cambia a «comenta BIM» (bot Master) y el pack queda para octubre.</td></tr>
+<tr><td>Mi 23, V25 + correo Mar 22 + comunidad Jue 24</td><td>Carrusel 4 Puertas, reel espejo, correo Master</td><td><b>RUTA</b></td><td>🟡 Recurso existe (test), DISPARADOR RUTA por montar</td><td>Si el disparador no esta el 22: CTA cambia a «comenta NIVEL» → Test de Nivelacion (montado).</td></tr>
+<tr><td>L28, Mi30 + correo Mar 29</td><td>Anuncio y demo del tutor de IA</td><td><b>ACERO</b></td><td>🟡 Palabra montada; piezas CONDICIONADAS al deploy del tutor</td><td>Si el tutor no esta: suben piezas del banco y estas pasan a octubre.</td></tr>
+<tr><td>Blog Sab 12</td><td>Articulo IA en arquitectura</td><td><b>GPT</b></td><td>🟡 Existe; CONFIRMAR la palabra montada en el bot</td><td>Enlace directo en el blog (en blog el enlace si va directo).</td></tr>
+<tr><td>Blog Sab 3-oct</td><td>Articulo sostenibilidad</td><td><b>EBOOK</b></td><td>🟡 Existe; CONFIRMAR la palabra montada</td><td>Enlace directo en el blog.</td></tr>
+</tbody></table></div>
+<h3 class="camp">Los 8 que ya existen y funcionan</h3>
+<div class="tabla-scroll"><table><thead><tr><th>Recurso</th><th>Palabra</th><th>Se usa en</th></tr></thead><tbody>
+<tr><td><b>Guia BIM</b></td><td class="t">GUIA-BIM (confirmar la palabra montada)</td><td>Piezas de metodologia BIM (carrusel 3 señales, errores Revit)</td></tr>
+<tr><td><b>Ebook BIM</b></td><td class="t">EBOOK (confirmar)</td><td>Blog de sostenibilidad (Sab 3 oct) y comunidades</td></tr>
+<tr><td><b>GPT IA Pro</b></td><td class="t">GPT (confirmar)</td><td>Blog IA-arquitectura (Sab 12) y reels de IA</td></tr>
+<tr><td><b>Curso Introductorio BIM</b></td><td class="t">(membresia GHL — boton corregido)</td><td>Blog elegir software (Sab 26), publico que arranca</td></tr>
+<tr><td><b>Modulo 1 del Diplomado de Estructuras</b></td><td class="t">(membresia GHL)</td><td>Publico de estructuras que aun no compra ACERO</td></tr>
+<tr><td><b>Calculadora de Zapatas</b></td><td class="t">ZAPATA</td><td>Comunidad Jue 17; el embudo completo ya esta montado y probado</td></tr>
+<tr><td><b>Verificacion de Acero (5 Verificaciones)</b></td><td class="t">ACERO</td><td>TODOS los CTA de acero del mes: posts de dato, Sobredimensionada 2, blog ETABS/SAP, pauta</td></tr>
+<tr><td><b>Test de Nivelacion BIM</b></td><td class="t">NIVEL</td><td>Historia espejo (Jue S3), blog Sab 26, comunidad Vie 25</td></tr>
+</tbody></table></div>
 <h2>Checklist del mes</h2>
 <div class="tabla-scroll"><table><thead><tr><th>☐</th><th>Tarea</th><th>Desbloquea</th><th>Cuándo</th></tr></thead><tbody>
 <tr><td>☐</td><td>Desplegar el tutor de IA en Render y pasar la prueba con las preguntas de Gabriel</td><td>Carrusel L28, reel demo Mi30, correo Mar 29 y variantes B de pauta ACERO</td><td>antes del 25-sep</td></tr>
@@ -189,7 +229,8 @@ footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);
 <section id="tab-g1" hidden><h2>GRUPO 1 · Feed principal — Instagram + Facebook + TikTok + YouTube Shorts</h2>
 <p class="intro">El mismo contenido adaptado a cada red del grupo (YouTube Shorts SOLO recibe los reels). Publicacion lunes, miercoles y viernes. TODO es contenido NUEVO: los reels grabados en agosto que nunca se publicaron quedan fuera (decision de Dayana, 2-sep). Mezcla: 40% reels · 40% carruseles · 20% post plano.</p>
 <ul class="reglas"><li>YouTube Shorts: solo los reels.</li><li>TikTok: mismo video, CTA «link en bio».</li><li>Facebook: publicacion cuidada, no auto-repost.</li><li>Cada reel del mes tiene guion completo escrito: se graba y se publica, no se improvisa.</li></ul>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Lun 7</span><h3>3 señales de que tu oficina ya necesita BIM + IA</h3><span class="tipo">CARRUSEL (6 slides)</span></div>
+<div class="filtro" data-scope="g1"><button class="fbtn" data-sem="0" aria-pressed="true">Todas</button><button class="fbtn" data-sem="1" aria-pressed="false">S1 · 7-13 sep</button><button class="fbtn" data-sem="2" aria-pressed="false">S2 · 14-20 sep</button><button class="fbtn" data-sem="3" aria-pressed="false">S3 · 21-27 sep</button><button class="fbtn" data-sem="4" aria-pressed="false">S4 · 28 sep - 2 oct</button></div>
+<div class="pieza" data-sem="1"><div class="pieza-cab"><span class="fecha">Lun 7</span><h3>3 señales de que tu oficina ya necesita BIM + IA</h3><span class="tipo">CARRUSEL (6 slides)</span></div>
 <p class="nota">Abre el mes con el mejor formato de la cuenta. CTA: comenta BIM o IA.</p>
 <span class="rot">Hook</span><div class="pegar">3 señales de que tu oficina YA necesita BIM + IA (la #2 te está costando plata).</div>
 <span class="rot">Slides</span><ol class="slides">
@@ -210,11 +251,11 @@ footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);
 #BIM #IA #Productividad #Arquitectura #Ingeniería #DesignModelingDG</div>
 <div class="prompt"><span class="rot">Prompt para ChatGPT · CARRUSEL · 6 slides · 1080x1350 px (4:5)</span><div class="prompt-txt">Portada: tres iconos grandes en columna sobre azul marino — un reloj con flecha circular, dos modelos superpuestos con un choque en ámbar, y dos barras de tiempo desiguales. Slides interiores: un icono por slide, número 01/02/03 gigante en ámbar a la izquierda, espacio limpio a la derecha para el texto. Slide de cierre: fondo ámbar invertido con espacio central limpio. Estilo Design Modeling Academy: fondo azul marino #0E2438, acento ámbar #E8A04A, texto blanco, tipografía sans muy gruesa, estética técnica de ingeniería limpia (referencia Autodesk Revit), sin fotos de stock genéricas, sin ciencia ficción. Firma abajo a la izquierda «DG · @design_modeling_dg». NO escribas texto dentro de la imagen salvo donde se indique — el texto lo monta diseño.</div></div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Mie 9</span><h3>REEL «Valor 6» — Revit me arrojo un error y ChatGPT me ahorro 2 horas</h3><span class="tipo">REEL (listo)</span></div>
+<div class="pieza" data-sem="1"><div class="pieza-cab"><span class="fecha">Mie 9</span><h3>REEL «Valor 6» — Revit me arrojo un error y ChatGPT me ahorro 2 horas</h3><span class="tipo">REEL (listo)</span></div>
 <span class="rot">Desarrollo</span><div class="pegar">El video ya esta terminado con el pipeline nuevo (es el grabado #5 del equipo, confirmado por Dayana). Solo falta confirmar la palabra clave del CTA (¿GUIA?) y montar su disparador — y que la guia exista antes de publicar (ver lead magnets por crear).</div>
 <p class="nota">El guion completo de este reel está en la pestaña <b>Reels</b>.</p>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Vie 11</span><h3>Dato de cálculo: la cuantía mínima de una columna</h3><span class="tipo">POST PLANO (1 imagen)</span></div>
+<div class="pieza" data-sem="1"><div class="pieza-cab"><span class="fecha">Vie 11</span><h3>Dato de cálculo: la cuantía mínima de una columna</h3><span class="tipo">POST PLANO (1 imagen)</span></div>
 <p class="nota">La formula ganadora: UNA imagen + dato verificable. CTA: comenta ACERO → 5 verificaciones.</p>
 <span class="rot">Hook</span><div class="pegar">¿Cuánto acero mínimo lleva una columna? El código dice 1%. Menos de eso, te la rebotan.</div>
 <span class="rot">Slides</span><ol class="slides">
@@ -240,7 +281,7 @@ El cálculo completo de la imagen:
 <p class="nota">⚠ FÓRMULA GANADORA de agosto: post plano de UNA imagen + dato de cálculo verificable = 45-62 comentarios (los dos mejores del mes). Un post plano SIN dato murió (0-4 comentarios). Cifras verificadas: 30×30=900 cm²; 1%=9,0 cm²; Ø18→2,54 cm²×4=10,2; Ø16→2,01 cm²×4=8,0. ACI 318 §10.6.1.1 (cuantía longitudinal mínima 0,01·Ag). El CTA conecta con el lead magnet «5 Verificaciones en Acero» que ya está montado — la palabra ACERO ya tiene bot.</p>
 <div class="prompt"><span class="rot">Prompt para ChatGPT · POST PLANO · 1 imagen · 1080x1350 px (4:5)</span><div class="prompt-txt">Estilo pizarra técnica: fondo azul marino, trazo blanco tipo tiza. Sección transversal de una columna cuadrada de 30x30 dibujada técnicamente con 4 varillas en las esquinas y cotas limpias. A la derecha, espacio para el cálculo escrito paso a paso. Una marca de verificación verde y una de advertencia ámbar. El dibujo ocupa el 70% del lienzo y debe leerse en un teléfono. Estilo Design Modeling Academy: fondo azul marino #0E2438, acento ámbar #E8A04A, texto blanco, tipografía sans muy gruesa, estética técnica de ingeniería limpia (referencia Autodesk Revit), sin fotos de stock genéricas, sin ciencia ficción. Firma abajo a la izquierda «DG · @design_modeling_dg». NO escribas texto dentro de la imagen salvo donde se indique — el texto lo monta diseño.</div></div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Lun 14</span><h3>Mejores prácticas para la coordinación en Navisworks</h3><span class="tipo">CARRUSEL (7 slides)</span></div>
+<div class="pieza" data-sem="2"><div class="pieza-cab"><span class="fecha">Lun 14</span><h3>Mejores prácticas para la coordinación en Navisworks</h3><span class="tipo">CARRUSEL (7 slides)</span></div>
 <p class="nota">Publico de BIM Manager — la Puerta 2. Alimenta comunidad del martes y PDF de LinkedIn.</p>
 <span class="rot">Hook</span><div class="pegar">Coordinar en Navisworks sin volverte loco: 5 buenas prácticas.</div>
 <span class="rot">Slides</span><ol class="slides">
@@ -259,11 +300,11 @@ El cálculo completo de la imagen:
 #Navisworks #BIM #CoordinaciónBIM #DesignModelingDG</div>
 <div class="prompt"><span class="rot">Prompt para ChatGPT · CARRUSEL · 7 slides · 1080x1350 px (4:5)</span><div class="prompt-txt">Portada: tres modelos superpuestos en capas separadas verticalmente (arquitectura, estructura, instalaciones), cada capa en un tono distinto, con una interferencia marcada en ámbar. Interiores: un paso del flujo de coordinación por slide, con diagramas de línea fina. Estilo Design Modeling Academy: fondo azul marino #0E2438, acento ámbar #E8A04A, texto blanco, tipografía sans muy gruesa, estética técnica de ingeniería limpia (referencia Autodesk Revit), sin fotos de stock genéricas, sin ciencia ficción. Firma abajo a la izquierda «DG · @design_modeling_dg». NO escribas texto dentro de la imagen salvo donde se indique — el texto lo monta diseño.</div></div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Mie 16</span><h3>REEL · Sobredimensionada — parte 2 (grabar)</h3><span class="tipo">REEL (grabar)</span></div>
+<div class="pieza" data-sem="2"><div class="pieza-cab"><span class="fecha">Mie 16</span><h3>REEL · Sobredimensionada — parte 2 (grabar)</h3><span class="tipo">REEL (grabar)</span></div>
 <span class="rot">Desarrollo</span><div class="pegar">Continuacion del post #1 de la historia de la cuenta (14.334 vistas / 107 comentarios). Hook: «Sobredimensionar no te hace mas seguro. Te hace mas caro.» Desarrollo: 3 señales de que una viga esta sobredimensionada (sin resolverlas del todo). Cierre: comenta ACERO y te paso las 5 verificaciones. Grabar en la sesion del Lun 7-Mar 8.</div>
 <p class="nota">El guion completo de este reel está en la pestaña <b>Reels</b>.</p>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Vie 18</span><h3>Paquete Autodesk para coordinación BIM</h3><span class="tipo">REEL (grabar o banco)</span></div>
+<div class="pieza" data-sem="2"><div class="pieza-cab"><span class="fecha">Vie 18</span><h3>Paquete Autodesk para coordinación BIM</h3><span class="tipo">REEL (grabar o banco)</span></div>
 <p class="nota">Paquete Autodesk para coordinacion — venta blanda con valor. Grabar en la sesion del 7-8 o tomar del banco.</p>
 <span class="rot">Hook</span><div class="pegar">4 herramientas de Autodesk que quizá no estás usando en tu coordinación (y deberías).</div>
 <span class="rot">Caption (copiar tal cual)</span><div class="pegar">No es tener Autodesk: es saber exprimirlo. Revit + Navisworks + BIM Collaborate + IA = coordinación en la mitad del tiempo. Te muestro cómo encajan.
@@ -272,7 +313,7 @@ El cálculo completo de la imagen:
 
 #Autodesk #Revit #Navisworks #BIM #DesignModelingDG</div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Lun 21</span><h3>Errores comunes al modelar en Revit y cómo evitarlos</h3><span class="tipo">CARRUSEL (8 slides)</span></div>
+<div class="pieza" data-sem="3"><div class="pieza-cab"><span class="fecha">Lun 21</span><h3>Errores comunes al modelar en Revit y cómo evitarlos</h3><span class="tipo">CARRUSEL (8 slides)</span></div>
 <p class="nota">El angulo que mas comenta. Cada error con su correccion.</p>
 <span class="rot">Hook</span><div class="pegar">5 errores al modelar en Revit que te van a costar caro en obra.</div>
 <span class="rot">Slides</span><ol class="slides">
@@ -291,7 +332,7 @@ El cálculo completo de la imagen:
 #Revit #BIM #Modelado #DesignModelingDG</div>
 <div class="prompt"><span class="rot">Prompt para ChatGPT · CARRUSEL · 8 slides · 1080x1350 px (4:5)</span><div class="prompt-txt">Portada: modelo 3D con varias zonas marcadas con círculos ámbar de error. Interiores: cada slide muestra UN error a la izquierda (en rojo apagado) y su corrección a la derecha (en verde), formato antes/después muy legible. Estilo Design Modeling Academy: fondo azul marino #0E2438, acento ámbar #E8A04A, texto blanco, tipografía sans muy gruesa, estética técnica de ingeniería limpia (referencia Autodesk Revit), sin fotos de stock genéricas, sin ciencia ficción. Firma abajo a la izquierda «DG · @design_modeling_dg». NO escribas texto dentro de la imagen salvo donde se indique — el texto lo monta diseño.</div></div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Mie 23</span><h3>Las 4 puertas: ¿en qué etapa BIM estás?</h3><span class="tipo">CARRUSEL (8 slides)</span></div>
+<div class="pieza" data-sem="3"><div class="pieza-cab"><span class="fecha">Mie 23</span><h3>Las 4 puertas: ¿en qué etapa BIM estás?</h3><span class="tipo">CARRUSEL (8 slides)</span></div>
 <p class="nota">LA PIEZA DEL MES: la nueva arquitectura contada como contenido. Sin precio. Requiere el disparador RUTA vivo.</p>
 <span class="rot">Hook</span><div class="pegar">¿En qué etapa BIM estás? Hay 4 puertas de entrada — y solo una es la tuya.</div>
 <span class="rot">Slides</span><ol class="slides">
@@ -320,11 +361,11 @@ Y una ruta completa de 12 meses que las recorre todas: de «sé usar BIM» a BIM
 <p class="nota">⚠ NUNCA precio del Máster: ni en slides, ni en caption, ni en DM — el precio vive en la llamada del closer (arquitectura comercial sep-2026). La palabra clave RUTA necesita su disparador montado en el bot ANTES de publicar; si no está, el CTA cambia a «comenta BIM». Basado en la Nueva Arquitectura Comercial (PDF de Gabriel, sep-2026): las 4 frases de los slides son las 5 necesidades del proceso comercial, con la 5ª (la ruta completa) como cierre.</p>
 <div class="prompt"><span class="rot">Prompt para ChatGPT · CARRUSEL · 8 slides · 1080x1350 px (4:5)</span><div class="prompt-txt">Portada: cuatro puertas arquitectónicas en fila sobre suelo de retícula en perspectiva, una iluminada en ámbar. Slides 2-5: una puerta por slide, con su icono encima (checklist, cubos ensamblándose, gráfica con signo de dólar, cerebro-circuito) y la frase del profesional entre comillas grandes. Slide 6: las cuatro puertas conectadas por una flecha que termina en un birrete. Cierre: fondo ámbar invertido. Estilo Design Modeling Academy: fondo azul marino #0E2438, acento ámbar #E8A04A, texto blanco, tipografía sans muy gruesa, estética técnica de ingeniería limpia (referencia Autodesk Revit), sin fotos de stock genéricas, sin ciencia ficción. Firma abajo a la izquierda «DG · @design_modeling_dg». NO escribas texto dentro de la imagen salvo donde se indique — el texto lo monta diseño.</div></div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Vie 25</span><h3>REEL · El espejo de la ruta (grabar)</h3><span class="tipo">REEL (grabar)</span></div>
+<div class="pieza" data-sem="3"><div class="pieza-cab"><span class="fecha">Vie 25</span><h3>REEL · El espejo de la ruta (grabar)</h3><span class="tipo">REEL (grabar)</span></div>
 <span class="rot">Desarrollo</span><div class="pegar">Version en video de la historia del espejo: «Llevas 3 años modelando bien. Y sigues esperando a que te digan que modelar.» Las 4 puertas en pantalla, una se ilumina. Cierre: comenta RUTA y te digo en cual estas. Refuerza el carrusel del Mie 23 con el mismo mensaje en otro formato.</div>
 <p class="nota">El guion completo de este reel está en la pestaña <b>Reels</b>.</p>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Lun 28</span><h3>ACERO ahora responde: el tutor de IA de la Especialización</h3><span class="tipo">CARRUSEL (6 slides)</span></div>
+<div class="pieza" data-sem="4"><div class="pieza-cab"><span class="fecha">Lun 28</span><h3>ACERO ahora responde: el tutor de IA de la Especialización</h3><span class="tipo">CARRUSEL (6 slides)</span></div>
 <p class="nota">CONDICIONADO: solo si el tutor esta desplegado y probado. Si no, sube ago-derivas-deformaciones y esta pasa a octubre.</p>
 <span class="rot">Hook</span><div class="pegar">Tu especialización ahora te contesta. La duda de las 11 p.m. ya no espera a la tutoría.</div>
 <span class="rot">Slides</span><ol class="slides">
@@ -350,11 +391,11 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 <p class="nota">⚠ REGLA DURA: el tutor de IA NO se menciona en publico hasta que este desplegado y probado (falta el deploy en Render y la prueba con las preguntas de Gabriel). Prometer un recurso que no existe ya nos costo un incidente en julio. Si al llegar la fecha no esta en produccion, la pieza se mueve de fecha — no se publica sin el tutor vivo. El precio de ACERO no va en la pieza (feed); sí puede ir en correo a lista propia y en DM del bot. El mockup del slide 3 es el aprobado del tutor — captura real, no recreación.</p>
 <div class="prompt"><span class="rot">Prompt para ChatGPT · CARRUSEL · 6 slides · 1080x1350 px (4:5)</span><div class="prompt-txt">Motivo: burbujas de chat de interfaz limpia sobre azul marino. Portada: una burbuja con una pregunta técnica a medio escribir y un cursor. Slide 3: usar la CAPTURA REAL del tutor respondiendo, nunca una recreación. Slide 4: split con «chatbot genérico» tachado y «tutor del curso» en ámbar. Estilo Design Modeling Academy: fondo azul marino #0E2438, acento ámbar #E8A04A, texto blanco, tipografía sans muy gruesa, estética técnica de ingeniería limpia (referencia Autodesk Revit), sin fotos de stock genéricas, sin ciencia ficción. Firma abajo a la izquierda «DG · @design_modeling_dg». NO escribas texto dentro de la imagen salvo donde se indique — el texto lo monta diseño.</div></div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Mie 30</span><h3>REEL · Demo del tutor de IA en pantalla (grabar, CONDICIONADO)</h3><span class="tipo">REEL (grabar, gated)</span></div>
+<div class="pieza" data-sem="4"><div class="pieza-cab"><span class="fecha">Mie 30</span><h3>REEL · Demo del tutor de IA en pantalla (grabar, CONDICIONADO)</h3><span class="tipo">REEL (grabar, gated)</span></div>
 <span class="rot">Desarrollo</span><div class="pegar">Grabacion real de pantalla: un alumno le pregunta al tutor «¿como verifico el pandeo lateral de esta viga?» y el tutor responde citando la sesion. Sin voz en off inventada: lo que se ve es lo que hace. Cierre: comenta ACERO. SOLO se publica con el tutor en produccion; alternativa del banco: reel de las 5 verificaciones.</div>
 <p class="nota">El guion completo de este reel está en la pestaña <b>Reels</b>.</p>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Vie 2 oct</span><h3>POST PLANO · ¿Cuanto pesa una varilla Ø12 de 12 m?</h3><span class="tipo">POST PLANO (crear imagen)</span></div>
+<div class="pieza" data-sem="4"><div class="pieza-cab"><span class="fecha">Vie 2 oct</span><h3>POST PLANO · ¿Cuanto pesa una varilla Ø12 de 12 m?</h3><span class="tipo">POST PLANO (crear imagen)</span></div>
 <span class="rot">Desarrollo</span><div class="pegar">Dato verificable: peso = Ø²/162 (kg/m, con Ø en mm) → 144/162 = 0,888 kg/m → una varilla Ø12 de 12 m pesa 10,7 kg. En la imagen: la formula, el calculo y el uso (estimar el acero de un presupuesto sin planilla). CTA: ¿la usabas? Comenta ACERO y te paso la herramienta de verificaciones. Cierra el mes con la formula ganadora.</div>
 <p class="nota">El guion completo de este reel está en la pestaña <b>Reels</b>.</p>
 <div class="prompt"><span class="rot">Prompt para ChatGPT · POST PLANO · 1 imagen · 1080x1350 px (4:5)</span><div class="prompt-txt">Estilo pizarra técnica sobre azul marino: varillas de acero corrugado vistas en sección y en perspectiva, con la fórmula del peso esquematizada en grande al centro y espacio para el cálculo debajo. Una varilla destacada en ámbar. Estilo Design Modeling Academy: fondo azul marino #0E2438, acento ámbar #E8A04A, texto blanco, tipografía sans muy gruesa, estética técnica de ingeniería limpia (referencia Autodesk Revit), sin fotos de stock genéricas, sin ciencia ficción. Firma abajo a la izquierda «DG · @design_modeling_dg». NO escribas texto dentro de la imagen salvo donde se indique — el texto lo monta diseño.</div></div>
@@ -362,61 +403,63 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 <section id="tab-g2" hidden><h2>GRUPO 2 · Comunidades — WhatsApp, Canal de Instagram, Grupos de Facebook, Comunidad de YouTube y Comunidades GHL</h2>
 <p class="intro">Mensajes cortos, personales y SIN hashtags, entre valor y venta. Martes, jueves y viernes. Cada mensaje deriva del contenido del feed de esa semana (regla de oro), nunca es un enlace pelado.</p>
 <ul class="reglas"><li>Sin hashtags. Tono de persona, no de marca.</li><li>Los grupos de Facebook reciben la PREGUNTA, no el enlace (el enlace baja el alcance del grupo).</li><li>Maximo 1 mensaje de venta por semana y comunidad; el del recurso gratis cuenta como valor.</li><li>El blog del sabado se comparte el martes siguiente.</li></ul>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Mar 8</span><h3>Valor · el dato de las 3 señales</h3><span class="tipo">Mensaje + pregunta</span></div>
+<div class="filtro" data-scope="g2"><button class="fbtn" data-sem="0" aria-pressed="true">Todas</button><button class="fbtn" data-sem="1" aria-pressed="false">S1 · 7-13 sep</button><button class="fbtn" data-sem="2" aria-pressed="false">S2 · 14-20 sep</button><button class="fbtn" data-sem="3" aria-pressed="false">S3 · 21-27 sep</button><button class="fbtn" data-sem="4" aria-pressed="false">S4 · 28 sep - 2 oct</button></div>
+<div class="pieza" data-sem="1"><div class="pieza-cab"><span class="fecha">Mar 8</span><h3>Valor · el dato de las 3 señales</h3><span class="tipo">Mensaje + pregunta</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">«¿Sabian que la señal #1 de que una oficina necesita BIM+IA no es tecnologica? Es que repites tareas que una maquina haria igual. Publicamos las 3 señales completas en el feed — ¿cuantas les pasan? 👀»</div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Jue 10</span><h3>Venta suave · cohorte ACERO abierta</h3><span class="tipo">Mensaje directo</span></div>
+<div class="pieza" data-sem="1"><div class="pieza-cab"><span class="fecha">Jue 10</span><h3>Venta suave · cohorte ACERO abierta</h3><span class="tipo">Mensaje directo</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">«Abrimos cohorte de la Especializacion en Acero. [CUPOS REALES] cupos. 100% asincronico, el acceso no caduca. El que quiera el temario que me responda ACERO y se lo mando.» (actualizar cupos el dia del envio)</div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Vie 11</span><h3>Reel de la semana + dato del post</h3><span class="tipo">Mensaje + reenvio del reel</span></div>
+<div class="pieza" data-sem="1"><div class="pieza-cab"><span class="fecha">Vie 11</span><h3>Reel de la semana + dato del post</h3><span class="tipo">Mensaje + reenvio del reel</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">«Hoy subimos el calculo de la cuantia minima de columnas — el que rebota diseños en revision. ¿Con que cuantia arrancan ustedes? Y de paso: el reel del error de Revit resuelto con ChatGPT esta en el feed, vale los 30 segundos.»</div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Mar 15</span><h3>Blog del sabado + tip Navisworks</h3><span class="tipo">Mensaje + enlace al blog</span></div>
+<div class="pieza" data-sem="2"><div class="pieza-cab"><span class="fecha">Mar 15</span><h3>Blog del sabado + tip Navisworks</h3><span class="tipo">Mensaje + enlace al blog</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">«El sabado publicamos en el blog [IA en arquitectura]. Si se lo perdieron, aqui va — y del carrusel de ayer: el error mas comun en coordinacion no es del software, es empezar a coordinar cuando ya todos modelaron. ¿Les ha pasado?»</div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Jue 17</span><h3>Recurso gratis · calculadora de zapatas</h3><span class="tipo">Mensaje + palabra clave</span></div>
+<div class="pieza" data-sem="2"><div class="pieza-cab"><span class="fecha">Jue 17</span><h3>Recurso gratis · calculadora de zapatas</h3><span class="tipo">Mensaje + palabra clave</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">«¿Ya usaron la calculadora de zapatas gratuita? La armamos nosotros y la usan cientos de colegas. El que la quiera, que me responda ZAPATA y se la paso.»</div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Vie 18</span><h3>Cierre de semana · encuesta Dynamo</h3><span class="tipo">Encuesta</span></div>
+<div class="pieza" data-sem="2"><div class="pieza-cab"><span class="fecha">Vie 18</span><h3>Cierre de semana · encuesta Dynamo</h3><span class="tipo">Encuesta</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">«Pregunta de viernes: ¿cuantas horas a la semana pierden en tareas repetitivas de Revit? A) menos de 2 B) 2-5 C) mas de 5. El reel de Dynamo del sabado les va a doler o alegrar segun la respuesta 😄»</div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Mar 22</span><h3>Blog ETABS/SAP + reel Python</h3><span class="tipo">Mensaje + enlace</span></div>
+<div class="pieza" data-sem="3"><div class="pieza-cab"><span class="fecha">Mar 22</span><h3>Blog ETABS/SAP + reel Python</h3><span class="tipo">Mensaje + enlace</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">«El comparativo ETABS vs SAP2000 del blog levanto debate — aqui el enlace. Y el reel de Python del sabado: si nunca han automatizado nada en BIM, ese es el punto de partida.»</div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Jue 24</span><h3>Venta suave · las 4 puertas</h3><span class="tipo">Mensaje + palabra clave</span></div>
+<div class="pieza" data-sem="3"><div class="pieza-cab"><span class="fecha">Jue 24</span><h3>Venta suave · las 4 puertas</h3><span class="tipo">Mensaje + palabra clave</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">«Reorganizamos toda la formacion en 4 etapas: Estructura → Coordina → Gestiona → Automatiza. ¿En cual se ubican? El que me responda RUTA le digo la suya con su caso concreto.» (sin precio, requiere disparador RUTA)</div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Vie 25</span><h3>Test de nivel BIM</h3><span class="tipo">Mensaje + palabra clave</span></div>
+<div class="pieza" data-sem="3"><div class="pieza-cab"><span class="fecha">Vie 25</span><h3>Test de nivel BIM</h3><span class="tipo">Mensaje + palabra clave</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">«¿En que nivel BIM estan de verdad? Hay un test de 20 preguntas que se los dice sin adornos. Respondan NIVEL y se los mando. Los resultados suelen sorprender.»</div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Mar 29</span><h3>Blog elegir software + dato del mes</h3><span class="tipo">Mensaje + enlace</span></div>
+<div class="pieza" data-sem="4"><div class="pieza-cab"><span class="fecha">Mar 29</span><h3>Blog elegir software + dato del mes</h3><span class="tipo">Mensaje + enlace</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">«Del blog del sabado: como elegir software de estructuras sin casarse con la marca. Y el dato que mas se comento este mes: la cuantia minima del 1% — si se lo perdieron, esta fijado en el feed.»</div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Jue 1 oct</span><h3>Venta · cierre de cohorte ACERO (+ tutor si esta vivo)</h3><span class="tipo">Mensaje directo</span></div>
+<div class="pieza" data-sem="4"><div class="pieza-cab"><span class="fecha">Jue 1 oct</span><h3>Venta · cierre de cohorte ACERO (+ tutor si esta vivo)</h3><span class="tipo">Mensaje directo</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">«Ultimos [CUPOS REALES] cupos de la cohorte de ACERO. [SI EL TUTOR ESTA EN PRODUCCION: Y esta cohorte estrena el tutor de IA — le preguntas al programa y te contesta con la clase exacta.] Respondan ACERO y les mando el temario.»</div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Vie 2 oct</span><h3>Cierre de mes · pregunta abierta</h3><span class="tipo">Pregunta abierta</span></div>
+<div class="pieza" data-sem="4"><div class="pieza-cab"><span class="fecha">Vie 2 oct</span><h3>Cierre de mes · pregunta abierta</h3><span class="tipo">Pregunta abierta</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">«Cerramos el mes: ¿que tema quieren que tratemos en octubre? Lo que mas se repita entra directo a la matriz. Aqui se decide el contenido, no en una oficina.»</div>
 </div></section>
 <section id="tab-g3" hidden><h2>GRUPO 3 · Blog de Design Modeling Academy</h2>
 <p class="intro">Un articulo por semana, siempre sabado, informativo sobre temas en tendencia. SIEMPRE con CTA a una campaña del mes o a un recurso gratuito. El post de anuncio con el enlace sale el mismo sabado en el feed; a comunidades va el martes.</p>
 <ul class="reglas"><li>El CTA del blog nunca es generico: apunta a la campaña activa (ACERO / Master) o a un lead magnet concreto con su palabra clave.</li></ul>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Sab 12</span><h3>Cómo la IA está revolucionando la arquitectura moderna</h3><span class="tipo">Articulo + portada</span></div>
+<div class="filtro" data-scope="g3"><button class="fbtn" data-sem="0" aria-pressed="true">Todas</button><button class="fbtn" data-sem="1" aria-pressed="false">S1 · 7-13 sep</button><button class="fbtn" data-sem="2" aria-pressed="false">S2 · 14-20 sep</button><button class="fbtn" data-sem="3" aria-pressed="false">S3 · 21-27 sep</button><button class="fbtn" data-sem="4" aria-pressed="false">S4 · 28 sep - 2 oct</button></div>
+<div class="pieza" data-sem="1"><div class="pieza-cab"><span class="fecha">Sab 12</span><h3>Cómo la IA está revolucionando la arquitectura moderna</h3><span class="tipo">Articulo + portada</span></div>
 <p class="nota">CTA del articulo: GPT IA Pro (recurso gratis) + mencion de la ruta del Master (sin precio).</p>
 <span class="rot">Hook</span><div class="pegar">La IA no viene a diseñar por el arquitecto; viene a acelerar el proceso creativo y técnico.</div>
 <span class="rot">Texto</span><div class="pegar">Escribimos sobre cómo la IA está cambiando la arquitectura (sin reemplazar al arquitecto). Link en bio / comenta “IA”.</div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Sab 19</span><h3>Comparativa ETABS vs SAP2000 para análisis estructural</h3><span class="tipo">Articulo + portada</span></div>
+<div class="pieza" data-sem="2"><div class="pieza-cab"><span class="fecha">Sab 19</span><h3>Comparativa ETABS vs SAP2000 para análisis estructural</h3><span class="tipo">Articulo + portada</span></div>
 <p class="nota">CTA: la herramienta de las 5 verificaciones en acero (comenta ACERO) + cohorte abierta.</p>
 <span class="rot">Hook</span><div class="pegar">La pregunta no es cuál es mejor, sino cuál es mejor PARA TU proyecto.</div>
 <span class="rot">Texto</span><div class="pegar">Escribimos la comparativa completa ETABS vs SAP2000 para que elijas bien según tu proyecto. Link en bio / comenta “BIM” o “IA”.</div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Sab 26</span><h3>Cómo elegir el software de estructuras adecuado</h3><span class="tipo">Articulo + portada</span></div>
+<div class="pieza" data-sem="3"><div class="pieza-cab"><span class="fecha">Sab 26</span><h3>Cómo elegir el software de estructuras adecuado</h3><span class="tipo">Articulo + portada</span></div>
 <p class="nota">CTA: test de nivelacion BIM (NIVEL) + curso introductorio BIM gratis.</p>
 <span class="rot">Hook</span><div class="pegar">Elegir software no es elegir el ‘más potente’, sino el que encaja con tu tipo de estructura y tu flujo.</div>
 <span class="rot">Texto</span><div class="pegar">Guía para elegir tu software de estructuras según el proyecto. Link en bio / comenta “BIM”.</div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Sab 3 oct</span><h3>Impacto de la tecnología BIM en la sostenibilidad</h3><span class="tipo">Articulo + portada</span></div>
+<div class="pieza" data-sem="4"><div class="pieza-cab"><span class="fecha">Sab 3 oct</span><h3>Impacto de la tecnología BIM en la sostenibilidad</h3><span class="tipo">Articulo + portada</span></div>
 <p class="nota">Ya queda escrito para arrancar octubre; CTA: ebook BIM gratis.</p>
 <span class="rot">Hook</span><div class="pegar">Sostenibilidad no es solo ‘materiales verdes’: es decidir bien desde el modelo, y ahí entra el BIM.</div>
 <span class="rot">Texto</span><div class="pegar">Escribimos sobre cómo el BIM ayuda a construir más sostenible. Link en bio / comenta “BIM”.</div>
@@ -424,70 +467,72 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 <section id="tab-g4" hidden><h2>GRUPO 4 · LinkedIn — Design Modeling Academy · Design Modeling DG · Gabriel Pantoja</h2>
 <p class="intro">Una publicacion por dia, lunes a viernes, intercalando las 3 paginas (1-2 por pagina a la semana). Academy = autoridad formativa (valor BIM/IA y oferta educativa). DG = prueba tecnica (proyectos reales, casos, metodologia). Gabriel = voz humana (opinion, aprendizajes, detras de camaras). NORMAS: solo videos HORIZONTALES y PDF; nunca «comenta la palabra» — pregunta abierta o DM.</p>
 <ul class="reglas"><li>Los PDF salen del carrusel del feed de esa semana, rediagramados (no el mismo 4:5).</li><li>Los videos horizontales: el master 16:9 del comercial Revit+IA ya esta en Vimeo; los reels verticales NO se suben a LinkedIn.</li><li>Gabriel escribe en primera persona; Academy y DG en voz de marca.</li></ul>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Lun 7</span><h3>Academy · PDF «3 señales de que tu oficina necesita BIM+IA»</h3><span class="tipo">PDF</span></div>
+<div class="filtro" data-scope="g4"><button class="fbtn" data-sem="0" aria-pressed="true">Todas</button><button class="fbtn" data-sem="1" aria-pressed="false">S1 · 7-13 sep</button><button class="fbtn" data-sem="2" aria-pressed="false">S2 · 14-20 sep</button><button class="fbtn" data-sem="3" aria-pressed="false">S3 · 21-27 sep</button><button class="fbtn" data-sem="4" aria-pressed="false">S4 · 28 sep - 2 oct</button></div>
+<div class="pieza" data-sem="1"><div class="pieza-cab"><span class="fecha">Lun 7</span><h3>Academy · PDF «3 señales de que tu oficina necesita BIM+IA»</h3><span class="tipo">PDF</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">El carrusel del feed rediagramado a PDF horizontal. Cierre: ¿cuantas señales ven en su oficina?</div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Mar 8</span><h3>DG · Video horizontal del comercial Revit+IA</h3><span class="tipo">Video horizontal</span></div>
+<div class="pieza" data-sem="1"><div class="pieza-cab"><span class="fecha">Mar 8</span><h3>DG · Video horizontal del comercial Revit+IA</h3><span class="tipo">Video horizontal</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">El master 16:9 de 10s ya producido + texto de metodologia: como conectamos el modelo con la IA en un proyecto real. Pregunta: ¿que proceso automatizarian primero?</div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Mie 9</span><h3>Academy · El dato de la cuantia minima</h3><span class="tipo">Imagen + texto</span></div>
+<div class="pieza" data-sem="1"><div class="pieza-cab"><span class="fecha">Mie 9</span><h3>Academy · El dato de la cuantia minima</h3><span class="tipo">Imagen + texto</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">El calculo del post del viernes adelantado a LinkedIn con lectura profesional: por que el 1% existe (flujo plastico). Pregunta: ¿con que cuantia arrancan columnas?</div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Jue 10</span><h3>Gabriel · «El error que me ahorro 2 horas»</h3><span class="tipo">Texto</span></div>
+<div class="pieza" data-sem="1"><div class="pieza-cab"><span class="fecha">Jue 10</span><h3>Gabriel · «El error que me ahorro 2 horas»</h3><span class="tipo">Texto</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">Primera persona: la historia real del reel Valor 6 — el error de Revit, pegarlo en ChatGPT con contexto, validar la salida. Aprendizaje: la IA acelera, el criterio decide. Sin video (el reel es vertical).</div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Vie 11</span><h3>DG · Caso corto: coordinacion que evito un choque</h3><span class="tipo">Imagen + texto</span></div>
+<div class="pieza" data-sem="1"><div class="pieza-cab"><span class="fecha">Vie 11</span><h3>DG · Caso corto: coordinacion que evito un choque</h3><span class="tipo">Imagen + texto</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">Una captura real de Navisworks de proyecto propio (sin datos del cliente) y el costo evitado. Pregunta abierta.</div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Lun 14</span><h3>Academy · PDF «Coordinacion con Navisworks»</h3><span class="tipo">PDF</span></div>
+<div class="pieza" data-sem="2"><div class="pieza-cab"><span class="fecha">Lun 14</span><h3>Academy · PDF «Coordinacion con Navisworks»</h3><span class="tipo">PDF</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">El carrusel del lunes rediagramado.</div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Mar 15</span><h3>Gabriel · Opinion: «el salto que mas cuesta»</h3><span class="tipo">Texto</span></div>
+<div class="pieza" data-sem="2"><div class="pieza-cab"><span class="fecha">Mar 15</span><h3>Gabriel · Opinion: «el salto que mas cuesta»</h3><span class="tipo">Texto</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">De ejecutar a decidir: por que el salto de modelador a coordinador no es de software. Cierra preguntando en que peldaño esta cada quien.</div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Mie 16</span><h3>Academy · Articulo: IA en arquitectura (blog del sabado)</h3><span class="tipo">Articulo</span></div>
+<div class="pieza" data-sem="2"><div class="pieza-cab"><span class="fecha">Mie 16</span><h3>Academy · Articulo: IA en arquitectura (blog del sabado)</h3><span class="tipo">Articulo</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">El blog del Sab 12 republicado como articulo nativo con el CTA a GPT IA Pro.</div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Jue 17</span><h3>DG · Video horizontal: escena de coordinacion del comercial</h3><span class="tipo">Video horizontal</span></div>
+<div class="pieza" data-sem="2"><div class="pieza-cab"><span class="fecha">Jue 17</span><h3>DG · Video horizontal: escena de coordinacion del comercial</h3><span class="tipo">Video horizontal</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">Metodologia de deteccion de interferencias, con pregunta tecnica al cierre.</div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Vie 18</span><h3>Gabriel · Detras de camaras: grabando los reels</h3><span class="tipo">Foto + texto</span></div>
+<div class="pieza" data-sem="2"><div class="pieza-cab"><span class="fecha">Vie 18</span><h3>Gabriel · Detras de camaras: grabando los reels</h3><span class="tipo">Foto + texto</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">Humanizar: como se produce el contenido tecnico del mes (la sesion de grabacion del 7-8). Ligero, sin venta.</div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Lun 21</span><h3>Academy · PDF «Errores al modelar en Revit»</h3><span class="tipo">PDF</span></div>
+<div class="pieza" data-sem="3"><div class="pieza-cab"><span class="fecha">Lun 21</span><h3>Academy · PDF «Errores al modelar en Revit»</h3><span class="tipo">PDF</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">El carrusel del lunes en PDF.</div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Mar 22</span><h3>DG · Mitos de la automatizacion (lectura tecnica)</h3><span class="tipo">Imagen + texto</span></div>
+<div class="pieza" data-sem="3"><div class="pieza-cab"><span class="fecha">Mar 22</span><h3>DG · Mitos de la automatizacion (lectura tecnica)</h3><span class="tipo">Imagen + texto</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">Los 3 mitos del carrusel con posicion de consultoria: cual mito les cuesta mas caro a las oficinas.</div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Mie 23</span><h3>Academy · PDF «Las 4 puertas» (LA PIEZA DEL MES)</h3><span class="tipo">PDF</span></div>
+<div class="pieza" data-sem="3"><div class="pieza-cab"><span class="fecha">Mie 23</span><h3>Academy · PDF «Las 4 puertas» (LA PIEZA DEL MES)</h3><span class="tipo">PDF</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">La nueva arquitectura en PDF horizontal + el post largo ya escrito (esta en el guion de sep-carrusel-4-puertas, campo post_linkedin). Pregunta: ¿en que etapa esta tu equipo?</div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Jue 24</span><h3>Gabriel · Por que reorganizamos todo en 4 etapas</h3><span class="tipo">Texto</span></div>
+<div class="pieza" data-sem="3"><div class="pieza-cab"><span class="fecha">Jue 24</span><h3>Gabriel · Por que reorganizamos todo en 4 etapas</h3><span class="tipo">Texto</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">La historia de la decision en primera persona: escuchar «quiero aprender BIM» mil veces y entender que nadie esta en la misma etapa. Voz humana del anuncio de Academy del dia anterior.</div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Vie 25</span><h3>DG · Video horizontal: clash ambar → verde</h3><span class="tipo">Video horizontal</span></div>
+<div class="pieza" data-sem="3"><div class="pieza-cab"><span class="fecha">Vie 25</span><h3>DG · Video horizontal: clash ambar → verde</h3><span class="tipo">Video horizontal</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">La escena de resolucion del comercial + texto sobre validacion: un render impecable puede esconder errores; el flujo de verificacion es lo que firma.</div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Lun 28</span><h3>Academy · El tutor de IA de la especializacion (CONDICIONADO)</h3><span class="tipo">PDF / imagen</span></div>
+<div class="pieza" data-sem="4"><div class="pieza-cab"><span class="fecha">Lun 28</span><h3>Academy · El tutor de IA de la especializacion (CONDICIONADO)</h3><span class="tipo">PDF / imagen</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">El post largo ya escrito (campo post_linkedin de sep-acero-agente-ia): las 3 decisiones de diseño del tutor. SOLO con el tutor en produccion; alternativa: PDF de las 5 verificaciones.</div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Mar 29</span><h3>Gabriel · Aprendizaje del mes</h3><span class="tipo">Texto</span></div>
+<div class="pieza" data-sem="4"><div class="pieza-cab"><span class="fecha">Mar 29</span><h3>Gabriel · Aprendizaje del mes</h3><span class="tipo">Texto</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">Que aprendimos midiendo el contenido: el dato concreto gana a la frase inspiracional. Con los numeros reales del mes (se completan de la matriz el dia del envio).</div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Mie 30</span><h3>Academy · Articulo: elegir software de estructuras</h3><span class="tipo">Articulo</span></div>
+<div class="pieza" data-sem="4"><div class="pieza-cab"><span class="fecha">Mie 30</span><h3>Academy · Articulo: elegir software de estructuras</h3><span class="tipo">Articulo</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">El blog del Sab 26 como articulo nativo, CTA al test de nivel.</div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Jue 1 oct</span><h3>DG · Caso: presupuesto de acero con la formula Ø²/162</h3><span class="tipo">Imagen + texto</span></div>
+<div class="pieza" data-sem="4"><div class="pieza-cab"><span class="fecha">Jue 1 oct</span><h3>DG · Caso: presupuesto de acero con la formula Ø²/162</h3><span class="tipo">Imagen + texto</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">Adelanto profesional del post del viernes: estimar acero sin planilla en visita tecnica.</div>
 </div>
-<div class="pieza"><div class="pieza-cab"><span class="fecha">Vie 2 oct</span><h3>Gabriel · Cierre de mes + que viene</h3><span class="tipo">Texto</span></div>
+<div class="pieza" data-sem="4"><div class="pieza-cab"><span class="fecha">Vie 2 oct</span><h3>Gabriel · Cierre de mes + que viene</h3><span class="tipo">Texto</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">Balance personal del mes y adelanto de octubre. Invita a seguir a las 3 paginas.</div>
 </div></section>
 <section id="tab-g5" hidden><h2>GRUPO 5 · Historias de Instagram (y Facebook stories)</h2>
 <p class="intro">Cuatro historias al día, de lunes a viernes, en este orden: <b>relleno</b> (abre en humano) → <b>valor</b> (el dato del día) → <b>interacción</b> (el sticker que abre el DM) → <b>venta</b> (pide una palabra, que es lo único que el bot puede recoger). Cada día es un arco, no cuatro piezas sueltas.</p>
 <ul class="reglas"><li>El sticker es el CTA: una historia sin sticker solo se ve, no convierte.</li><li>Nunca precio ni «inscribete» en historia: el objetivo es que escriban.</li><li>Maximo 5 frames por secuencia.</li><li>Las buenas secuencias se guardan en DESTACADAS (ACERO · BIM+IA · Herramientas · Comunidad · Alumnos).</li><li>Rotacion de venta de los jueves: S1 cupos ACERO · S2 objecion ACERO · S3 espejo Master (4 puertas) · S4 tutor de IA (solo si esta en produccion; si no, repite cupos con numero actualizado).</li></ul>
-<div class="semana"><div class="semana-cab"><span class="snum">S1</span><div><h3>El error que cuesta plata (ACERO)</h3><span class="rango">Lun 7 – Vie 11 de septiembre</span></div></div><p class="nota">Arranca el mes con lo que mejor funciono en agosto: el dato de calculo verificable. El hilo de la semana lleva del error tipico al recurso gratuito de las 5 verificaciones.</p>
+<div class="filtro" data-scope="g5"><button class="fbtn" data-sem="0" aria-pressed="true">Todas</button><button class="fbtn" data-sem="1" aria-pressed="false">S1 · 7-13 sep</button><button class="fbtn" data-sem="2" aria-pressed="false">S2 · 14-20 sep</button><button class="fbtn" data-sem="3" aria-pressed="false">S3 · 21-27 sep</button><button class="fbtn" data-sem="4" aria-pressed="false">S4 · 28 sep - 2 oct</button></div>
+<div class="semana" data-sem="1"><div class="semana-cab"><span class="snum">S1</span><div><h3>El error que cuesta plata (ACERO)</h3><span class="rango">Lun 7 – Vie 11 de septiembre</span></div></div><p class="nota">Arranca el mes con lo que mejor funciono en agosto: el dato de calculo verificable. El hilo de la semana lleva del error tipico al recurso gratuito de las 5 verificaciones.</p>
 <div class="dia"><h4>Lunes 7 · <span>El arranque: tres señales</span></h4>
 <div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
 <div class="pegar">Lunes. Café, y una pregunta que me hizo un alumno el viernes y no me dejó dormir.</div>
@@ -599,7 +644,7 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 </div>
 </div>
 </div>
-<div class="semana"><div class="semana-cab"><span class="snum">S2</span><div><h3>Coordinar y automatizar (BIM + IA)</h3><span class="rango">Lun 14 – Vie 18 de septiembre</span></div></div><p class="nota">La semana sube un nivel: del cálculo puntual a la coordinación del proyecto. Prepara el terreno para el carrusel de las 4 puertas de la semana 3.</p>
+<div class="semana" data-sem="2"><div class="semana-cab"><span class="snum">S2</span><div><h3>Coordinar y automatizar (BIM + IA)</h3><span class="rango">Lun 14 – Vie 18 de septiembre</span></div></div><p class="nota">La semana sube un nivel: del cálculo puntual a la coordinación del proyecto. Prepara el terreno para el carrusel de las 4 puertas de la semana 3.</p>
 <div class="dia"><h4>Lunes 14 · <span>Coordinación: el choque que se paga dos veces</span></h4>
 <div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
 <div class="pegar">Historia real de obra (sin nombres): una viga y un ducto que no se hablaban.</div>
@@ -711,7 +756,7 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 </div>
 </div>
 </div>
-<div class="semana"><div class="semana-cab"><span class="snum">S3</span><div><h3>¿En qué etapa estás? (las 4 puertas del Máster)</h3><span class="rango">Lun 21 – Vie 25 de septiembre</span></div></div><p class="nota">La semana del lanzamiento de la nueva arquitectura. Todo el hilo lleva al diagnostico: el objetivo es que la gente se ubique en una etapa y escriba.</p>
+<div class="semana" data-sem="3"><div class="semana-cab"><span class="snum">S3</span><div><h3>¿En qué etapa estás? (las 4 puertas del Máster)</h3><span class="rango">Lun 21 – Vie 25 de septiembre</span></div></div><p class="nota">La semana del lanzamiento de la nueva arquitectura. Todo el hilo lleva al diagnostico: el objetivo es que la gente se ubique en una etapa y escriba.</p>
 <div class="dia"><h4>Lunes 21 · <span>Los errores que delatan la etapa</span></h4>
 <div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
 <div class="pegar">Llevo años revisando modelos ajenos. Los errores se repiten tanto que ya sé en qué etapa está cada quien.</div>
@@ -823,7 +868,7 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 </div>
 </div>
 </div>
-<div class="semana"><div class="semana-cab"><span class="snum">S4</span><div><h3>Nunca estudias solo (el tutor de IA) + cierre</h3><span class="rango">Lun 28 de septiembre – Vie 2 de octubre</span></div></div><p class="nota">Cierra el mes con el diferenciador nuevo de ACERO y deja la cuenta caliente para octubre. TODA la semana depende de que el tutor este desplegado.</p>
+<div class="semana" data-sem="4"><div class="semana-cab"><span class="snum">S4</span><div><h3>Nunca estudias solo (el tutor de IA) + cierre</h3><span class="rango">Lun 28 de septiembre – Vie 2 de octubre</span></div></div><p class="nota">Cierra el mes con el diferenciador nuevo de ACERO y deja la cuenta caliente para octubre. TODA la semana depende de que el tutor este desplegado.</p>
 <div class="dia"><h4>Lunes 28 · <span>La duda de las 11 de la noche</span></h4>
 <div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
 <div class="pegar">El punto débil de estudiar por tu cuenta siempre fue el mismo, y no es la falta de ganas.</div>
@@ -1099,5 +1144,31 @@ EL SELLO DE LA MICROCREDENCIAL «ESPECIALISTA BIM + IA» VA EN LA IMAGEN. Fecha 
   var guardada = null;
   try { guardada = localStorage.getItem('dma-matriz-sep-tab'); } catch(e){}
   ir(bs.some(function(b){return b.dataset.t === guardada;}) ? guardada : bs[0].dataset.t);
+
+  // Filtro por semana, dentro de cada pestaña.
+  Array.prototype.forEach.call(document.querySelectorAll('.filtro'), function(f){
+    var seccion = f.closest('section');
+    var items = Array.prototype.slice.call(seccion.querySelectorAll('[data-sem]'))
+                  .filter(function(x){ return !x.classList.contains('fbtn'); });
+    var vacio = document.createElement('p');
+    vacio.className = 'vacio';
+    vacio.textContent = 'No hay nada programado esa semana en este grupo.';
+    seccion.appendChild(vacio);
+    f.addEventListener('click', function(ev){
+      var b = ev.target.closest('.fbtn');
+      if (!b) return;
+      var sem = b.dataset.sem;
+      Array.prototype.forEach.call(f.querySelectorAll('.fbtn'), function(x){
+        x.setAttribute('aria-pressed', String(x === b));
+      });
+      var visibles = 0;
+      items.forEach(function(it){
+        var ok = (sem === '0') || (it.dataset.sem === sem);
+        it.hidden = !ok;
+        if (ok) visibles++;
+      });
+      vacio.style.display = visibles ? 'none' : 'block';
+    });
+  });
 })();
 </script>

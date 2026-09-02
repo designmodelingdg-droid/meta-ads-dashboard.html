@@ -47,6 +47,42 @@ def bloque_pegar(txt):
     return f'<div class="pegar">{e(txt)}</div>'
 
 
+SEMANAS_RANGO = {1: "S1 · 7-13 sep", 2: "S2 · 14-20 sep",
+                 3: "S3 · 21-27 sep", 4: "S4 · 28 sep - 2 oct"}
+
+
+def semana_de(fecha):
+    """De «Lun 7» o «Vie 2 oct» a numero de semana.
+
+    Se deriva del dia, no se anota a mano: una fecha que cambie en el
+    calendario arrastra sola su semana y no hay dos verdades.
+    """
+    f = fecha.lower()
+    nums = [int(x) for x in __import__("re").findall(r"\d+", f)]
+    if not nums:
+        return 0
+    d = nums[0]
+    if "oct" in f:
+        return 4
+    if d <= 13:
+        return 1
+    if d <= 20:
+        return 2
+    if d <= 27:
+        return 3
+    return 4
+
+
+def filtro_semanas(prefijo):
+    """Barra de botones que filtra por semana dentro de una pestaña."""
+    o = [f'<div class="filtro" data-scope="{prefijo}">',
+         f'<button class="fbtn" data-sem="0" aria-pressed="true">Todas</button>']
+    for n, etq in SEMANAS_RANGO.items():
+        o.append(f'<button class="fbtn" data-sem="{n}" aria-pressed="false">{e(etq)}</button>')
+    o.append('</div>')
+    return "".join(o)
+
+
 def prompt_img(medida, texto):
     return (f'<div class="prompt"><span class="rot">Prompt para ChatGPT · {e(medida)}</span>'
             f'<div class="prompt-txt">{e(texto)}</div></div>')
@@ -82,6 +118,35 @@ def tab_resumen():
              'Los que se grabaron en agosto y nunca se publicaron no entran en este mes: '
              'todo lo que ves aquí es contenido nuevo, y cada reel tiene su guion escrito para grabarlo.</div>')
 
+    lm = CAL.get("lead_magnets", {})
+    if lm.get("por_crear"):
+        o.append('<h2>Recursos gratuitos que hay que CREAR</h2>')
+        o.append('<p class="intro">Los CTA del mes prometen recursos. Estos todavía no existen — '
+                 'y hay contenido ya programado que los pide. Si no llegan a tiempo, el CTA se cambia '
+                 'por el de reemplazo, pero la promesa vacía no se publica.</p>')
+        for l in lm["por_crear"]:
+            o.append(f'<div class="lm-nuevo"><h4>{e(l["nombre"])}</h4>'
+                     f'<span class="lm-pal">Palabra clave sugerida: «{e(l["palabra_sugerida"])}»</span>'
+                     f'<p>{e(l["para_que"])}</p></div>')
+        if lm.get("mapa_cta"):
+            pend = [m for m in lm["mapa_cta"] if "🔴" in m.get("estado", "") or "🟡" in m.get("estado", "")]
+            if pend:
+                o.append('<h3 class="camp">Qué contenido depende de cada uno</h3>')
+                o.append('<div class="tabla-scroll"><table><thead><tr><th>Cuándo</th><th>Pieza</th>'
+                         '<th>CTA</th><th>Estado</th><th>Reemplazo si no llega</th></tr></thead><tbody>')
+                for m in pend:
+                    o.append(f'<tr><td>{e(m["fecha"])}</td><td>{e(m["pieza"])}</td>'
+                             f'<td><b>{e(m["cta"])}</b></td><td>{e(m["estado"])}</td>'
+                             f'<td>{e(m["reemplazo"])}</td></tr>')
+                o.append('</tbody></table></div>')
+        o.append('<h3 class="camp">Los 8 que ya existen y funcionan</h3>')
+        o.append('<div class="tabla-scroll"><table><thead><tr><th>Recurso</th><th>Palabra</th>'
+                 '<th>Se usa en</th></tr></thead><tbody>')
+        for l in lm.get("existentes", []):
+            o.append(f'<tr><td><b>{e(l["nombre"])}</b></td><td class="t">{e(l["palabra"])}</td>'
+                     f'<td>{e(l["vinculado_a"])}</td></tr>')
+        o.append('</tbody></table></div>')
+
     o.append('<h2>Checklist del mes</h2>')
     o.append('<div class="tabla-scroll"><table><thead><tr><th>☐</th><th>Tarea</th><th>Desbloquea</th>'
              '<th>Cuándo</th></tr></thead><tbody>')
@@ -97,11 +162,14 @@ def tab_feed():
     g = CAL["grupos"][0]
     o = [f'<h2>{e(g["nombre"])}</h2>', f'<p class="intro">{e(g["descripcion"])}</p>']
     o.append('<ul class="reglas">' + "".join(f'<li>{e(r)}</li>' for r in g["reglas"]) + '</ul>')
+    o.append(filtro_semanas("g1"))
     for ent in g["calendario"]:
         pid = ent.get("id")
         p = GUI.get(pid) if pid else None
         titulo = p["titulo"] if p else ent["idea"]["titulo"]
-        o.append(f'<div class="pieza"><div class="pieza-cab"><span class="fecha">{e(ent["fecha"])}</span>'
+        sem = semana_de(ent["fecha"])
+        o.append(f'<div class="pieza" data-sem="{sem}"><div class="pieza-cab">'
+                 f'<span class="fecha">{e(ent["fecha"])}</span>'
                  f'<h3>{e(titulo)}</h3><span class="tipo">{e(ent["formato_publicacion"])}</span></div>')
         if ent.get("nota"):
             o.append(f'<p class="nota">{e(ent["nota"])}</p>')
@@ -135,11 +203,14 @@ def tab_grupo(idx):
     o = [f'<h2>{e(g["nombre"])}</h2>', f'<p class="intro">{e(g["descripcion"])}</p>']
     if g.get("reglas"):
         o.append('<ul class="reglas">' + "".join(f'<li>{e(r)}</li>' for r in g["reglas"]) + '</ul>')
+    o.append(filtro_semanas(f"g{idx+1}"))
     for ent in g["calendario"]:
         pid = ent.get("id")
         p = GUI.get(pid) if pid else None
         titulo = p["titulo"] if p else ent["idea"]["titulo"]
-        o.append(f'<div class="pieza"><div class="pieza-cab"><span class="fecha">{e(ent["fecha"])}</span>'
+        sem = semana_de(ent["fecha"])
+        o.append(f'<div class="pieza" data-sem="{sem}"><div class="pieza-cab">'
+                 f'<span class="fecha">{e(ent["fecha"])}</span>'
                  f'<h3>{e(titulo)}</h3><span class="tipo">{e(ent["formato_publicacion"])}</span></div>')
         if ent.get("nota"):
             o.append(f'<p class="nota">{e(ent["nota"])}</p>')
@@ -162,8 +233,9 @@ def tab_historias():
          '(el sticker que abre el DM) → <b>venta</b> (pide una palabra, que es lo único que el bot '
          'puede recoger). Cada día es un arco, no cuatro piezas sueltas.</p>']
     o.append('<ul class="reglas">' + "".join(f'<li>{e(r)}</li>' for r in g["reglas"]) + '</ul>')
+    o.append(filtro_semanas("g5"))
     for sem in H.SEMANAS:
-        o.append(f'<div class="semana"><div class="semana-cab"><span class="snum">S{sem["n"]}</span>'
+        o.append(f'<div class="semana" data-sem="{sem["n"]}"><div class="semana-cab"><span class="snum">S{sem["n"]}</span>'
                  f'<div><h3>{e(sem["hilo"])}</h3><span class="rango">{e(sem["rango"])}</span></div></div>'
                  f'<p class="nota">{e(sem["porque"])}</p>')
         for d in sem["dias"]:
@@ -349,6 +421,21 @@ ol.slides li{font-size:14px;margin-bottom:9px}
 .rol-vent{background:var(--stop-bg);color:var(--stop)}
 .sticker{font-size:13.5px;margin:8px 0 0;color:var(--ink-2)}
 .sticker b{font-family:var(--display);color:var(--ink)}
+.filtro{display:flex;gap:7px;flex-wrap:wrap;margin:16px 0 4px;padding:10px 0;
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.fbtn{appearance:none;font-family:var(--display);font-weight:700;font-size:12.5px;
+  padding:6px 13px;border-radius:99px;border:1px solid var(--line-strong);
+  background:var(--surface);color:var(--ink-2);cursor:pointer;white-space:nowrap}
+.fbtn:hover{border-color:var(--amber);color:var(--ink)}
+.fbtn[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.fbtn:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+.vacio{display:none;padding:20px;text-align:center;color:var(--ink-3);font-style:italic}
+.lm-nuevo{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--amber);
+  border-radius:0 8px 8px 0;padding:14px 17px;margin:12px 0}
+.lm-nuevo h4{font-family:var(--display);font-weight:800;font-size:16px;margin:0 0 4px}
+.lm-pal{font-family:var(--mono);font-size:12.5px;color:var(--amber-deep);font-weight:600}
+.lm-nuevo p{font-size:14px;color:var(--ink-2);margin:8px 0 0}
+.lm-cta{font-size:13.5px;margin:8px 0 0;color:var(--stop);font-weight:600}
 footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);
   font-size:12.5px;color:var(--ink-3);font-family:var(--mono)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
@@ -368,6 +455,32 @@ JS = """
   var guardada = null;
   try { guardada = localStorage.getItem('dma-matriz-sep-tab'); } catch(e){}
   ir(bs.some(function(b){return b.dataset.t === guardada;}) ? guardada : bs[0].dataset.t);
+
+  // Filtro por semana, dentro de cada pestaña.
+  Array.prototype.forEach.call(document.querySelectorAll('.filtro'), function(f){
+    var seccion = f.closest('section');
+    var items = Array.prototype.slice.call(seccion.querySelectorAll('[data-sem]'))
+                  .filter(function(x){ return !x.classList.contains('fbtn'); });
+    var vacio = document.createElement('p');
+    vacio.className = 'vacio';
+    vacio.textContent = 'No hay nada programado esa semana en este grupo.';
+    seccion.appendChild(vacio);
+    f.addEventListener('click', function(ev){
+      var b = ev.target.closest('.fbtn');
+      if (!b) return;
+      var sem = b.dataset.sem;
+      Array.prototype.forEach.call(f.querySelectorAll('.fbtn'), function(x){
+        x.setAttribute('aria-pressed', String(x === b));
+      });
+      var visibles = 0;
+      items.forEach(function(it){
+        var ok = (sem === '0') || (it.dataset.sem === sem);
+        it.hidden = !ok;
+        if (ok) visibles++;
+      });
+      vacio.style.display = visibles ? 'none' : 'block';
+    });
+  });
 })();
 """
 
