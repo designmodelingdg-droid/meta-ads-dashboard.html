@@ -29,6 +29,7 @@ on:
       - recursos/**
       - eficiencia-acero/**
       - tutor-acero/**
+      - cierre-agosto/**
   workflow_dispatch: {}                      # permite correrla a mano desde la pestaña Actions
 
 # El token integrado solo necesita poder escribir en la rama gh-pages
@@ -68,6 +69,8 @@ jobs:
           cp -r eficiencia-acero public/eficiencia-acero
           # Tutor de IA de la Especializacion en Acero (se embebe en GHL)
           cp -r tutor-acero public/tutor-acero
+          # Creativos ganadores del cierre de mes (los usa el mazo de la reunion)
+          cp -r cierre-agosto public/cierre-agosto
           # Sin procesamiento Jekyll
           touch public/.nojekyll
           # index mínimo para que la raíz no dé 404 y sirva de estado
