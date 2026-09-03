@@ -1,0 +1,140 @@
+{
+  "mes": "2026-08",
+  "ventana": {
+    "desde": "2026-08-05",
+    "hasta": "2026-09-03"
+  },
+  "nota_ventana": "El método mide del día 5 al día 5, pero la reunión es el 4-sep, así que el cierre llega hasta el 3. Al comparar con septiembre hay que tenerlo en cuenta.",
+  "validado_por": "Dayana, 3-sep-2026 (las 22 ventas y la meta de $10.000)",
+  "ventas": {
+    "total": 3595.92,
+    "n": 22,
+    "ticket_promedio": 163.45,
+    "por_producto": [
+      {
+        "producto": "Acero / Especialización",
+        "n": 12,
+        "ingreso": 2099.96
+      },
+      {
+        "producto": "Máster",
+        "n": 4,
+        "ingreso": 859.99
+      },
+      {
+        "producto": "Diplomado",
+        "n": 2,
+        "ingreso": 532.0
+      },
+      {
+        "producto": "Cursos lowcost ~$27",
+        "n": 4,
+        "ingreso": 103.97
+      }
+    ]
+  },
+  "pauta": {
+    "gasto": 1190.43,
+    "leads": 1477,
+    "cpl": 0.81,
+    "roas": 3.02,
+    "ventana_archivo": "2026-08-02 a 2026-08-31 (el archivo de campañas es de esa ventana)",
+    "por_campana": [
+      {
+        "campana": "ACERO - WSP SMS (geo-split)",
+        "gasto": 375.24,
+        "leads": 481,
+        "cpl": 0.78
+      },
+      {
+        "campana": "ACERO - FORM (geo-split)",
+        "gasto": 330.64,
+        "leads": 713,
+        "cpl": 0.46
+      },
+      {
+        "campana": "MASTER - ESCALADO GANADORES",
+        "gasto": 278.33,
+        "leads": 159,
+        "cpl": 1.75
+      },
+      {
+        "campana": "MASTER - FORM testeo",
+        "gasto": 70.62,
+        "leads": 61,
+        "cpl": 1.16
+      },
+      {
+        "campana": "MASTER BIM+IA - WSP API",
+        "gasto": 60.65,
+        "leads": 56,
+        "cpl": 1.08
+      },
+      {
+        "campana": "TRAFICO AL PERFIL - IG",
+        "gasto": 52.5,
+        "leads": 1,
+        "cpl": 52.5
+      },
+      {
+        "campana": "LEAD MAGNETS",
+        "gasto": 20.58,
+        "leads": 3,
+        "cpl": 6.86
+      }
+    ]
+  },
+  "organico": {
+    "piezas": 16,
+    "vistas": 65057,
+    "comentarios": 368,
+    "ganadora": {
+      "tema": "Sobredimensionar no es ir por el lado seguro",
+      "vistas": 14334,
+      "comentarios": 107,
+      "guardados": 228
+    },
+    "leccion": "Las 4 piezas con más comentarios son de dato de cálculo. Las 3 de comunidad hicieron 9.849 vistas y 3 comentarios entre las tres."
+  },
+  "hallazgos": [
+    "El embudo de ACERO no cierra: 1.194 leads → 12 ventas = 1,0%. El problema no es el CPL.",
+    "El 32% del dinero ($1.151,98 en 7 ventas) entra SIN FUENTE: el ROAS por campaña es parcial.",
+    "«Tráfico al perfil - IG» quemó $52,50 para 1 lead. Apagar.",
+    "Formulario $0,46 contra WhatsApp $0,78 de CPL: respalda mandar los anuncios de módulo a formulario en septiembre. Es agosto quien lo dice, no una intuición.",
+    "Ningún anuncio del Máster entró en el top de leads; el creativo ganador sigue siendo el de julio."
+  ],
+  "higiene": {
+    "cierres_en_cero": 12,
+    "faltan_monto": [
+      "Alex Toño Muñiz Andrade",
+      "Esteban Palacios",
+      "Santiago Quevedo Espín",
+      "Jessica Mora Aguirre"
+    ],
+    "no_son_ventas": "8 «Reserva Curso Autodesk» marcadas como ganadas (2 y 3 de septiembre), entre ellas Gabriel Pantoja y dos registros «Prueba»/«Pruebas». Una reserva gratuita no puede contar como ganada.",
+    "duplicado": "«Angela» y «Angela Brunetti», el mismo día.",
+    "contradiccion": "«Marcos Lara - No califica» cerrado en $99,99."
+  },
+  "meta_septiembre": {
+    "objetivo": 10000,
+    "base": 3595.92,
+    "multiplicador": 2.78,
+    "razonamiento": "Con el ticket de agosto ($163) harían falta 61 ventas. La palanca es el ticket, no el volumen: la venta por módulos lo sube de $163 a $387.",
+    "mezcla": [
+      {
+        "que": "Módulos del Máster (~$750)",
+        "n": 8,
+        "ingreso": 6000
+      },
+      {
+        "que": "Especialización Acero ($225)",
+        "n": 18,
+        "ingreso": 4050
+      }
+    ],
+    "conversion_necesaria": {
+      "master": "2,9% (agosto 1,4%)",
+      "acero": "1,5% (agosto 1,0%)"
+    }
+  }
+}

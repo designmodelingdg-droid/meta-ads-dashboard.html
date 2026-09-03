@@ -127,6 +127,26 @@ imágenes: `imageOptions: {"source": "noImages"}` con las URLs reales en el
 texto. Al terminar: exportar a **pptx y pdf** y entregar los links de descarga
 (caducan en ~1 semana — avisarlo).
 
+## Lo que dejó el cierre de agosto (para no repetir el trabajo)
+
+El cierre de cada mes se guarda en `matriz-viral/cierres/<AAAA-MM>.json` con
+ventas, pauta, orgánico, hallazgos, higiene y la matemática de la meta. Antes
+de armar el mes siguiente, LEER el anterior: la comparación es la mitad del
+valor de la reunión y sin el archivo hay que reconstruirla a mano.
+
+Tres cosas que agosto enseñó sobre el método mismo:
+
+- **El archivo de campañas puede tener otra ventana que la de las ventas.**
+  `por-campana.json` se genera con su propia fecha; si no coincide con la
+  ventana del mes, decirlo en la presentación en vez de mezclar.
+- **La reunión suele caer antes del día 5**, así que el cierre llega hasta el
+  día anterior. Anotarlo: al comparar dos meses hay que saber que uno tiene
+  menos días.
+- **Mirar las oportunidades en $0 antes de contarlas.** No todas son ventas sin
+  monto: en agosto ocho eran reservas de un curso gratuito marcadas como
+  ganadas, y dos eran pruebas. Un pipeline que marca ganado lo gratuito hace
+  que el conteo de ganados no signifique nada.
+
 ## Reglas no negociables
 
 1. Nunca presentar el total de "ganados" crudo: siempre depurado (duplicados,
