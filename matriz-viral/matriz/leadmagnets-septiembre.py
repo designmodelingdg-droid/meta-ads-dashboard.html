@@ -227,7 +227,8 @@ MAGNETS = [
          ("Etiquetas", "lead-memoria-calculo · origen-bot-MEMORIA"),
          ("Pregunta de perfil", "¿Cada cuánto entregas memorias de cálculo?"),
          ("Entrega", "Página de gracias con dos botones: guía en PDF y plantilla editable."),
-         ("Puente", "Correo 3 lleva a ACERO ($200, aquí el precio SÍ va) o al módulo BIM "
+         ("Puente", "Correo 3 lleva a ACERO ($225 con el tutor de IA incluido, aquí el precio "
+                    "SÍ va) o al módulo BIM "
                     "Professional según la respuesta de perfil."),
          ("Reemplazo si no llega", "El CTA cambia a las 5 Verificaciones de Acero, que ya existe.")],
     posts=[dict(

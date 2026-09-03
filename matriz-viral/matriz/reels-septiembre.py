@@ -75,7 +75,7 @@ REELS = [
    ("0:26-0:30", "Cierre a cámara.", "¿En qué peldaño estás tú? Comenta RUTA y te lo digo con tu caso.", "COMENTA **RUTA**")]},
 
  {"id": "reel-tutor", "fecha": "Miércoles 30", "titulo": "Tu especialización ahora te contesta",
-  "estado": "POR GRABAR — CONDICIONADO al despliegue del tutor",
+  "estado": "POR GRABAR — el tutor ya está desplegado y probado; falta montarlo en los 4 cursos",
   "duracion": "35-40 s",
   "cta": "ACERO → temario + cómo funciona el tutor",
   "nota": "⚠ NO se graba ni se publica hasta que el tutor esté desplegado y probado. "
