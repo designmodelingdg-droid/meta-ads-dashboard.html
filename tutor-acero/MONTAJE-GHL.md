@@ -1,10 +1,14 @@
 # Montar el Tutor IA en GoHighLevel
 
-Para **Ester y Aylin**. Son dos montajes distintos y uno depende del otro:
-primero las variables, después lo que se ve. Si se hace al revés, el chat le
-dirá «token inválido» a todos los alumnos y parecerá que está roto.
+Para **Ester y Aylin**. Todo lo técnico ya está hecho y probado: el tutor está
+en línea, responde citando la sesión y el minuto, y las variables del servidor
+están puestas. Lo que falta es que aparezca dentro de los cursos.
 
-La página del tutor ya está publicada y lista. No hay que editar código:
+**No hay que pegar código.** El editor de cursos de GHL no permite insertar
+HTML en la lección — solo bloques con botón y enlace. Por eso el tutor va como
+un **botón que abre su página**, no incrustado dentro de la clase.
+
+Esta es la dirección del tutor, la misma en todos los sitios:
 
 ```
 https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/tutor-acero/
@@ -12,108 +16,109 @@ https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/tutor-acero/
 
 ---
 
-## PASO 0 · Variables en Render (lo hace Dayana, va PRIMERO)
+## Dónde va, y dónde NO
 
-Servicio `dma-tutor` → **Environment** → añadir:
-
-| Variable | Valor |
-|---|---|
-| `TOKEN_PAGINA` | `dma-pagina-b6a195471f0c4e23bae2898a` |
-| `LIMITE_GLOBAL_DIA` | `600` |
-| `CORS_ORIGENES` | `https://designmodelingdg-droid.github.io,https://designmodelingacademy.app.clientclub.net` |
-
-Render redespliega solo al guardar. Para comprobar que quedó bien, abrir
-[/tutor/salud](https://dma-tutor.onrender.com/tutor/salud): tiene que decir
-`"ok":true`.
-
-**Hasta que esto no esté hecho, no montar nada de lo de abajo.**
-
----
-
-## PASO 1 · La lección dentro de los 4 cursos de ACERO
-
-Va **solo** en estos cuatro. En ningún otro curso: el tutor únicamente conoce
-estas clases y en un curso del Máster respondería «eso no está en el material»
-a todo.
+Va **solo en los 4 cursos de la Especialización en Acero**:
 
 1. Análisis y Diseño Simplificado de Estructuras Complejas de Acero
 2. Guía Práctica para el Cálculo Tipo Cerchas en Naves Industriales
 3. Modelado BIM en Hormigón Armado y Acero Estructural
 4. Teoría y Cálculo de Uniones Metálicas en Edificaciones
 
-En cada uno:
-
-1. Entrar al curso → **Categorías / Módulos**.
-2. Crear una lección **al principio**, la primera de todas, llamada
-   **`Tutor IA — pregúntale a tus clases`**.
-3. En el cuerpo de la lección, insertar un bloque de **código personalizado**
-   (Custom Code / HTML) y pegar esto tal cual:
-
-```html
-<iframe
-  src="https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/tutor-acero/"
-  style="width:100%;height:720px;border:0;border-radius:12px;display:block"
-  title="Tutor IA · Especialización en Acero"
-  loading="lazy"></iframe>
-```
-
-4. Guardar y publicar la lección.
-
-**Que el bloque quede a ancho completo y sin relleno lateral.** Si el editor
-deja margen a los lados, el chat sale estrecho y se lee mal en el teléfono.
-
-**Comprobar antes de dar por hecho:** abrir la lección **como alumno** (no
-desde el editor) y hacer una pregunta de verdad, por ejemplo
-*«¿qué es el pandeo?»*. Tiene que responder y terminar citando la clase y el
-minuto. Si dice «token inválido», falta el PASO 0.
+**No va en la plantilla general ni en ningún curso del Máster.** El tutor solo
+conoce esas cuatro clases: a un alumno del Máster le respondería «eso no está
+en el material» a todo, y sería peor que no tener botón.
 
 ---
 
-## PASO 2 · El botón en la plantilla (aparece en todos los cursos)
+## Los pasos, en cada uno de los 4 cursos
 
-Este sí es global, y por eso **el texto del botón tiene que decir que es solo
-de Acero**: así un alumno del Máster entiende que no es para él antes de hacer
-clic.
+1. Abrir el curso → **Editar** → en el selector **Páginas** elegir **Producto**
+   (la portada del curso, la que ve el alumno al entrar).
+2. Añadir un **Custom Block** en el cuerpo, arriba del todo o justo debajo del
+   video de presentación.
+3. Rellenar los campos del bloque **exactamente así**:
 
-En la plantilla de la membresía, donde van los botones de navegación:
+| Campo del bloque | Qué poner |
+|---|---|
+| Imagen | `tarjeta-tutor.png` (va adjunta con estas instrucciones) |
+| Heading | `Tutor IA · pregúntale a tus clases` |
+| Contenido | `Resuelve tus dudas con las clases de tus 4 cursos. Te dice en qué sesión y en qué minuto está la respuesta — y si algo no está en el material, te lo dice en vez de inventarlo.` |
+| Button Text | `Abrir el Tutor IA` |
+| Tipo de botón | Solid Button |
+| Relleno del botón | `#0E2438` |
+| Borde del botón | `#E8A04A` |
+| Button Text (color) | `#FFFFFF` |
+| Ir a la URL | la dirección de arriba, pegada completa |
 
-```html
-<a href="https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/tutor-acero/"
-   target="_blank" rel="noopener"
-   style="display:inline-flex;align-items:center;gap:8px;background:#0E2438;
-          color:#fff;font-family:system-ui,sans-serif;font-weight:700;
-          font-size:14px;text-decoration:none;padding:11px 18px;
-          border-radius:999px;border:1px solid #E8A04A">
-  <span style="font-size:16px">✦</span>
-  Tutor IA · Especialización en Acero
-</a>
-```
+4. **Guardar cambios.**
+5. Repetir en los otros tres cursos.
+
+### Si además se quiere dentro de las lecciones
+
+Con el mismo Custom Block, en **Páginas → Lección**, para que el alumno lo
+tenga a mano mientras estudia sin volver a la portada. Es opcional: con la
+portada del curso ya se cumple.
 
 ---
 
-## Lo que hay que saber antes de que pregunten
+## Comprobar antes de darlo por hecho
 
-**No hay que activar a nadie.** No se emite nada por alumno. Quien entra al
-área de miembros ya está autenticado por GoHighLevel, y con eso basta: un
-alumno que se matricula el martes tiene tutor el martes.
+Abrir el curso **como alumno**, no desde el editor. Pulsar el botón y hacer una
+pregunta de verdad, por ejemplo:
 
-**El tutor solo conoce esos 4 cursos.** Si alguien le pregunta por hormigón
-armado o por BIM 4D, responderá que no está en el material y mandará a la
-asesoría. Es a propósito, no es un fallo.
+> ¿Qué es el pandeo?
+
+Tiene que responder y **terminar citando la clase y el minuto**, así:
+
+> *El pandeo es un fenómeno de inestabilidad que ocurre en elementos
+> estructurales…*
+> **FUENTES:** [221121 Sesión N°1-Acero-DM.mp4 · min 112:09]
+
+Si eso pasa, está bien montado. **Avisar a Dayana cuando los 4 estén hechos**:
+hasta que estén, la campaña de publicidad de ACERO no puede salir.
+
+---
+
+## Por qué esto último importa
+
+El precio de la Especialización sube de $200 a **$225 justamente porque incluye
+el tutor**. Si la campaña sale antes de que el tutor esté montado, un alumno
+paga los $225 y no lo encuentra. Por eso el orden es: primero estos 4 cursos,
+después la publicidad.
+
+---
+
+## Lo que hay que saber cuando pregunten
+
+**No hay que activar a nadie.** No se emite ninguna clave por alumno. Quien
+entra al área de miembros ya está identificado por GoHighLevel, y con eso
+basta: un alumno que se matricula el martes tiene tutor el martes.
+
+**El tutor solo conoce esos 4 cursos.** Si le preguntan por hormigón armado o
+por BIM 4D, dirá que no está en el material y mandará a la asesoría. Es a
+propósito.
 
 **Nunca da cifras de norma ni precios.** Ante «¿cuántos MPa es la fluencia del
 A36?» remite a la norma vigente en vez de dictar el número, porque las
-transcripciones automáticas deforman las cifras. Está probado: 17 casos, las
-trampas repetidas 3 veces cada una.
+transcripciones automáticas deforman las cifras. Está probado: 17 casos, con
+las trampas repetidas 3 veces cada una.
 
-**Hay dos topes al día.** 20 preguntas por navegador y 600 en todo el
-servicio. Si un alumno agota las suyas, el mensaje le dice que mañana se
-reinician y le ofrece la asesoría.
+**Hay dos topes al día.** 20 preguntas por navegador y 600 en todo el servicio.
+Si un alumno agota las suyas, el mensaje le dice que mañana se reinician y le
+ofrece la asesoría.
 
-**Si algo falla, el orden para mirar:**
+**El botón abre en otra pestaña.** Es a propósito: el alumno consulta y vuelve
+a su clase sin perder dónde iba.
 
-1. ¿`/tutor/salud` responde `"ok":true`? Si no, el servicio está caído.
-2. ¿Dice «token inválido»? Falta `TOKEN_PAGINA` en Render o no coincide.
-3. ¿No responde nada y la consola del navegador habla de CORS? Falta el
-   dominio en `CORS_ORIGENES`.
-4. ¿Dice «alcanzaste tus preguntas de hoy»? Está funcionando: es el tope.
+---
+
+## Si algo falla, en este orden
+
+| Qué se ve | Qué significa |
+|---|---|
+| La página no carga | Abrir la dirección directamente en el navegador. Si tampoco carga, avisar a Dayana. |
+| «Token inválido» | Suele ser que el servidor estaba reiniciándose. Esperar dos minutos y recargar con Ctrl+Shift+R. Si sigue, es de Dayana. |
+| No responde nada | Problema de permisos del dominio. Es de Dayana. |
+| «Alcanzaste tus preguntas de hoy» | No es un fallo: es el tope diario funcionando. |
+| «Eso no está en el material» | Tampoco es un fallo. La pregunta es de un tema que el tutor no conoce. |
