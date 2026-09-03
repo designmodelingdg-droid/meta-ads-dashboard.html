@@ -121,7 +121,14 @@ pauta→ventas (tabla + 3 hallazgos) · Orgánico · Ventas reales (bloques suma
 al total) · Higiene CRM (checklist nominal para el equipo) · Plan del mes ·
 Meta con la matemática por producto · Closer/Setter · Próximos pasos.
 
-Estilo: ejecutivo, azul marino + naranja (marca DMA), cifras grandes,
+**El tema NO se elige por palabras: la cuenta tiene dos temas propios de DMA.**
+`themeId: 5tee2tx4zjbm9go` es **DM-FondoAzul** (el de la marca, azul marino) y
+`aas0rvhn9qj2w93` es **DM-FondoBlanco**. Usar el azul salvo que Dayana pida
+otra cosa — sin `themeId` sale el tema genérico de Gamma, que es azul-violeta y
+no es la marca. Se descubrió al generar el cierre de agosto: la primera corrida
+salió con el tema por defecto y hubo que rehacerla.
+
+Estilo: ejecutivo, cifras grandes,
 `textMode: preserve`, `cardSplit: inputTextBreaks`, y para que no invente
 imágenes: `imageOptions: {"source": "noImages"}` con las URLs reales en el
 texto. Al terminar: exportar a **pptx y pdf** y entregar los links de descarga
