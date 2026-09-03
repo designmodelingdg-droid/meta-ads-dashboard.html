@@ -151,6 +151,11 @@
       "tarea": "El bot de Olympus tiene que saber responder sobre el tutor y sobre los $225",
       "desbloquea": "Que el anuncio de ACERO pueda salir sin dejar preguntas sin respuesta en WhatsApp",
       "cuando": "Antes del lunes 7"
+    },
+    {
+      "tarea": "Aprobar los nombres nuevos de curso y fijar un nombre oficial por producto",
+      "desbloquea": "Renombrar en GHL sin dejar sitios a medias — hoy el mismo Diplomado aparece con 4 nombres distintos en el repositorio",
+      "cuando": "Antes de renombrar nada"
     }
   ],
   "publicidad": {
@@ -1743,5 +1748,46 @@
     "reestructura_ester": "https://claude.ai/code/artifact/4f853ec9-7d5f-4b36-bda6-0c063d8fe638",
     "nota": "Paso a paso del cambio a venta por modulos para Ester y el equipo. Copia versionada en matriz-viral/entregables/reestructura-comercial-septiembre.html",
     "clickup_ester": "https://app.clickup.com/t/86e336jvn"
+  },
+  "tutor_ia": {
+    "que_es": "Tutor de IA entrenado con las 135 horas de clase de la Especialización en Acero. Responde citando la sesión y el minuto, y dice que no sabe cuando algo no está en el material. Desplegado y probado el 3-sep: 17 de 17 casos, con las trampas repetidas 3 veces cada una.",
+    "enlace": "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/tutor-acero/",
+    "explicador_equipo": "https://claude.ai/code/artifact/afee7ed8-db28-4d43-99c4-fade5d48391d",
+    "alcance": "Solo los 4 cursos de ACERO. Del Máster, de hormigón o de BIM 4D dirá que no está en el material — a propósito.",
+    "limites": [
+      "20 preguntas por navegador al día",
+      "600 preguntas al día en todo el servicio",
+      "Nunca da cifras de norma ni precios de ningún programa"
+    ],
+    "falta": "Montarlo en la portada de los 4 cursos (Ester y Aylin). Hasta que eso esté, no sale la campaña de ACERO ni el mensaje de Pilar: el precio sube a $225 porque incluye el tutor.",
+    "nombres_de_curso": {
+      "regla": "Un nombre que dice «con IA» es una promesa. Solo se pone donde el tutor ya responde, que hoy son 4 cursos. El Máster y el Diplomado NO se renombran: sus clases no están transcritas.",
+      "propuestos": [
+        {
+          "antes": "Análisis y Diseño Simplificado de Estructuras Complejas de Acero",
+          "despues": "Estructuras Complejas de Acero · con Tutor IA"
+        },
+        {
+          "antes": "Guía Práctica para el Cálculo Tipo Cerchas en Naves Industriales",
+          "despues": "Cerchas y Naves Industriales · con Tutor IA"
+        },
+        {
+          "antes": "Modelado BIM en Hormigón Armado y Acero Estructural",
+          "despues": "Modelado BIM en Hormigón y Acero · con Tutor IA"
+        },
+        {
+          "antes": "Teoría y Cálculo de Uniones Metálicas en Edificaciones",
+          "despues": "Uniones Metálicas en Edificaciones · con Tutor IA"
+        },
+        {
+          "antes": "Especialización en Acero",
+          "despues": "Especialización en Acero · con Tutor IA incluido"
+        },
+        {
+          "antes": "OFF Naves Industriales PRO 30 Horas en SAP2000",
+          "despues": "DECISIÓN PENDIENTE — su contenido sí está indexado, pero el tutor le respondería también con los otros 3 cursos que ese alumno no compró. En todo caso, quitar el «OFF»: es marca interna de descuento y se lee como parte del nombre."
+        }
+      ]
+    }
   }
 }

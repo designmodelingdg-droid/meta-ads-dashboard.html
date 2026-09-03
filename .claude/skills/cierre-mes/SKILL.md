@@ -48,8 +48,12 @@ opportunity_source`.
 **Agrupar así:** Máster (pipelines Máster High Ticket + Máster BIM+IA) ·
 Especialización Acero (etapas INSCRITO ACERO / ACERO 2 / OTRO, viven en el
 pipeline "OLYMPUS CURSOS LOWCOST" y en "ESPECIALIZACIONES") · Cursos lowcost
-(~$27) · Diplomados. Precios de referencia: Máster $2,699.99 (entrada $500 o
-matrícula $499.99 + $160/mes) · Acero $199.99 (promo $100).
+(~$27) · Diplomados. **Precios (cambiaron en septiembre — usar estos):** el Máster ya NO se cotiza
+como programa de 12 meses, se vende POR MÓDULOS: BIM Professional $750 · BIM
+Coordination $750 · BIM Management $600 · BIM + IA $900. La ruta completa
+(~$3.000 sueltos) la maneja el closer, y NO va en ninguna pieza publicada.
+Acero pasó de $199.99 a **$225 desde el 3-sep**, porque ahora incluye el tutor
+de IA. Al cerrar un mes anterior a septiembre, usar los precios de ese mes.
 
 **Pipelines (IDs):** Máster HT `fOeASz8t5bzDPA0SXTWq` · Máster BIM+IA
 `Ap8J7yGAiijJCHXSBxOB` · Especializaciones `WoSW1cuowh9wXwKotAeW` · Cursos
@@ -86,6 +90,13 @@ WSP+SMS · `whatsapp-api` → MÁSTER BIM+IA WSP API · `Campaña de facebook Ad
 Facebook · `sales-agent` / `Instagram` → orgánico/bot. Calcular ROAS real por
 campaña (ingreso atribuido / gasto) y señalar: campañas con gasto sin ventas
 atribuidas, y ventas sin fuente (van a la lista de higiene).
+
+## 3b. Lo que trae la matriz del mes que abre
+
+Antes de las metas, mirar la pestaña de la matriz del mes nuevo y traerse a la
+presentación lo que cambia la operación: productos con precio nuevo, campañas
+que salen, recursos gratuitos por crear y lo que bloquea a qué. El cierre no es
+solo mirar atrás; la mitad de la reunión es qué se hace distinto.
 
 ## 4. Orgánico
 

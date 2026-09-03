@@ -133,6 +133,7 @@ def tab_resumen():
         ("Reels", "Guion completo segundo a segundo de los 5 reels.", "Se graban Lun 7 y Mar 8"),
         ("Publicidad", "Los 10 anuncios con su copy y su ficha de montaje. Sin precios: el Máster no lleva cifra.", "Todo junto el lunes 7"),
         ("Lead magnets", "Los 3 recursos nuevos, su post de lanzamiento y el paso a paso de GoHighLevel.", "Mar 8, Mar 22 y Mar 29"),
+        ("Tutor IA", "Qué es, qué falta para abrirlo y los nombres de curso propuestos.", "Antes del lunes 7"),
     ]
     for a, b, c in filas:
         o.append(f'<tr><td><b>{e(a)}</b></td><td>{e(b)}</td><td>{e(c)}</td></tr>')
@@ -454,6 +455,33 @@ def tab_leadmagnets():
     return "\n".join(o)
 
 
+# ════════════════════ PESTAÑA: TUTOR IA ════════════════════
+def tab_tutor():
+    t = CAL.get("tutor_ia")
+    if not t:
+        return "<p>Sin datos del tutor.</p>"
+    o = ['<h2>Tutor IA de la Especialización en Acero</h2>',
+         f'<p class="intro">{e(t["que_es"])}</p>',
+         f'<div class="dato"><strong>Lo que falta.</strong> {e(t["falta"])}</div>']
+    o.append('<div class="tabla-scroll"><table class="cfg"><tbody>'
+             f'<tr><th>Enlace del tutor</th><td><a href="{e(t["enlace"])}">{e(t["enlace"])}</a></td></tr>'
+             f'<tr><th>Explicador del equipo</th><td><a href="{e(t["explicador_equipo"])}">'
+             'Qué hace, qué no hace y cómo explicárselo a un alumno</a></td></tr>'
+             f'<tr><th>Alcance</th><td>{e(t["alcance"])}</td></tr>'
+             '<tr><th>Límites</th><td>' + " · ".join(e(x) for x in t["limites"]) + '</td></tr>'
+             '</tbody></table></div>')
+    n = t["nombres_de_curso"]
+    o.append('<h2>Nombres de curso propuestos</h2>')
+    o.append(f'<p class="intro">{e(n["regla"])}</p>')
+    o.append('<div class="tabla-scroll"><table><thead><tr><th>Nombre actual</th>'
+             '<th>Nombre propuesto</th></tr></thead><tbody>')
+    for x in n["propuestos"]:
+        pend = ' class="dura"' if "PENDIENTE" in x["despues"] else ''
+        o.append(f'<tr{pend}><td>{e(x["antes"])}</td><td><b>{e(x["despues"])}</b></td></tr>')
+    o.append('</tbody></table></div>')
+    return "\n".join(o)
+
+
 # ════════════════════ ARMADO ════════════════════
 PESTANAS = [
     ("resumen", "Resumen", tab_resumen),
@@ -465,6 +493,7 @@ PESTANAS = [
     ("reels", "Reels", tab_reels),
     ("pauta", "Publicidad", tab_pauta),
     ("lm", "Lead magnets", tab_leadmagnets),
+    ("tutor", "Tutor IA", tab_tutor),
 ]
 
 CSS = """
@@ -613,6 +642,7 @@ table.cfg th{width:150px;text-align:left;vertical-align:top;font-family:var(--di
   font-weight:800;font-size:12.5px;color:var(--ink-2);white-space:normal}
 table.cfg td{font-size:14px}
 table.cfg tr.dura th{color:var(--stop)}
+table tr.dura td{background:var(--wait-bg)}
 table.cfg tr.dura td{background:var(--stop-bg)}
 .indic{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--amber);
   border-radius:0 10px 10px 0;padding:14px 18px;margin:16px 0}
