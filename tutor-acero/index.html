@@ -30,6 +30,9 @@
   .beta{font-family:'Overpass',sans-serif;font-size:.62rem;font-weight:800;letter-spacing:.08em;
         background:var(--orange);color:#fff;padding:3px 8px;border-radius:99px;flex-shrink:0}
 
+  .pie-asesoria{display:flex;align-items:center;justify-content:center;gap:10px;
+    flex-wrap:wrap;padding:10px 16px;background:#fff;border-top:1px solid #e3e9ee;
+    font-size:.8rem;color:#5a6b7b}
   /* ── contador de uso (el candado visible) ── */
   .uso{background:var(--navy);color:#c3d1dc;font-size:.72rem;padding:5px 16px;
        display:flex;justify-content:space-between;align-items:center;flex-shrink:0}
@@ -98,43 +101,17 @@
     concreto, eso es de la asesoría con los instructores.
   </div>
 
-  <div class="msg alumno">¿Cómo defino los cortes en los patines para una conexión RBS?</div>
-
-  <div class="msg tutor">
-    <div class="quien">Tutor DMA</div>
-    Eso se desarrolla completo en el curso de <b>Uniones Metálicas</b>. Los
-    cortes de patín de la RBS se definen en las <b>operaciones</b> del modelo
-    en IdeaStatica: ahí configuras el recorte, las placas de continuidad y la
-    tornillería, y luego revisas el efecto en el análisis de la conexión.
-    <br><br>
-    <a class="fuente" href="#">📍 Conexiones Video 5 · min 01 — ver en la clase →</a>
-  </div>
-
-  <div class="msg alumno">No me queda claro cómo pasar el modelo de Revit a Robot sin que se dañe. ¿Me guías?</div>
-
-  <div class="msg tutor">
-    <div class="quien">Tutor DMA</div>
-    Claro. Ese flujo completo —preparar el modelo en Revit, pasarlo a Robot y
-    verificar que llegó bien antes de seguir— tiene <b>una sesión entera
-    dedicada</b> en tu curso de Modelado BIM: 100 minutos donde el instructor
-    lo hace en pantalla de principio a fin.<br><br>
-    Te acompaño paso a paso sobre esa clase: dime en qué punto del proceso
-    estás y te digo en qué minuto lo desarrolla.<br><br>
-    <a class="fuente" href="#">📍 Sesión Extra N°1 · Modelado BIM (Robot-Revit) — ver la clase →</a>
-  </div>
-
-  <div class="msg alumno">¿Y qué factor de seguridad uso para puentes colgantes?</div>
-
-  <div class="msg tutor nosabe">
-    <div class="quien">Tutor DMA</div>
-    <span class="aviso">Eso no está en el material de tu Especialización.</span><br>
-    Los cuatro cursos cubren edificaciones y naves en acero — puentes colgantes
-    es ingeniería de puentes y no se trata en las clases. No te voy a inventar
-    una respuesta.<br><br>
-    Si es para un proyecto tuyo, llévalo a la <b>asesoría personalizada</b>:
-    <br><a class="sugerencia" href="https://api.leadconnectorhq.com/widget/booking/34XWDLE9sy1jrnhTcBkA" target="_blank" rel="noopener">📅 Agendar asesoría con el instructor</a>
-  </div>
 </main>
+
+<!-- La asesoria es fija, no un mensaje de una conversacion. Antes vivia dentro
+     de un intercambio de ejemplo: al quitar el ejemplo se habria perdido el
+     unico enlace de verdad que tenia la pagina. -->
+<div class="pie-asesoria">
+  <span>¿Tu duda es sobre tu proyecto y no sobre las clases?</span>
+  <a class="sugerencia" href="https://api.leadconnectorhq.com/widget/booking/34XWDLE9sy1jrnhTcBkA"
+     target="_blank" rel="noopener">📅 Agendar asesoría con el instructor</a>
+</div>
+
 
 <div class="entrada">
   <div class="fila">
