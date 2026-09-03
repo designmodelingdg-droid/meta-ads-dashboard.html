@@ -54,52 +54,66 @@ push(new Paragraph({ spacing:{after:120},
   children:[new TextRun({ text:'Montar el Tutor IA en GoHighLevel', bold:true, color:NAVY,
                           size:44, font:'Overpass' })]}));
 push(P('Para Ester y Aylin · Especialización en Acero',{run:{color:GREY, italics:true}}));
-push(P('Son dos montajes distintos y uno depende del otro: primero las variables, después lo que se ve. El PASO 0 ya está hecho por Dayana y verificado — el tutor responde. Podéis empezar directamente por el PASO 1.'));
-push(P('La página del tutor ya está publicada y lista. No hay que editar código en ningún momento:'));
+push(P('Todo lo técnico ya está hecho y probado: el tutor está en línea, responde citando la sesión y el minuto, y las variables del servidor están puestas. Lo que falta es que aparezca dentro de los cursos.'));
+push(AVISO('No hay que pegar código. El editor de cursos de GHL no permite insertar HTML en la lección, solo bloques con botón y enlace. Por eso el tutor va como un botón que abre su página, no incrustado dentro de la clase.'));
+push(P('Esta es la dirección del tutor, la misma en todos los sitios:'));
 push(...CODE(URL));
 
-push(H1('PASO 1 · La lección dentro de los 4 cursos de ACERO'));
-push(P('Va solo en estos cuatro cursos. En ningún otro: el tutor únicamente conoce estas clases, y en un curso del Máster respondería «eso no está en el material» a todo.'));
+push(H1('Dónde va, y dónde NO'));
+push(P('Va solo en los 4 cursos de la Especialización en Acero:'));
 [['1','Análisis y Diseño Simplificado de Estructuras Complejas de Acero'],
  ['2','Guía Práctica para el Cálculo Tipo Cerchas en Naves Industriales'],
  ['3','Modelado BIM en Hormigón Armado y Acero Estructural'],
  ['4','Teoría y Cálculo de Uniones Metálicas en Edificaciones']].forEach(([n,t])=>push(NUM(n,t)));
+push(AVISO('No va en la plantilla general ni en ningún curso del Máster. El tutor solo conoce esas cuatro clases: a un alumno del Máster le respondería «eso no está en el material» a todo, y sería peor que no tener botón.'));
 
-push(H2('En cada uno de los 4 cursos'));
-push(NUM('1','Entrar al curso → Categorías / Módulos.'));
-push(NUM('2','Crear una lección AL PRINCIPIO, la primera de todas, llamada: Tutor IA — pregúntale a tus clases'));
-push(NUM('3','En el cuerpo de la lección insertar un bloque de código personalizado (Custom Code / HTML) y pegar esto tal cual:'));
-push(...CODE(`<iframe
-  src="${URL}"
-  style="width:100%;height:720px;border:0;border-radius:12px;display:block"
-  title="Tutor IA · Especialización en Acero"
-  loading="lazy"></iframe>`));
-push(NUM('4','Guardar y publicar la lección.'));
-push(AVISO('Que el bloque quede a ancho completo y sin relleno lateral. Si el editor deja margen a los lados, el chat sale estrecho y se lee mal en el teléfono.'));
-push(H2('Comprobar antes de darlo por hecho'));
-push(P('Abrir la lección COMO ALUMNO (no desde el editor) y hacer una pregunta de verdad, por ejemplo «¿qué es el pandeo?». Tiene que responder y terminar citando la clase y el minuto exactos.'));
+push(H1('Los pasos, en cada uno de los 4 cursos'));
+push(NUM('1','Abrir el curso → Editar → en el selector Páginas elegir PRODUCTO (la portada del curso, la que ve el alumno al entrar).'));
+push(NUM('2','Añadir un Custom Block en el cuerpo, arriba del todo o justo debajo del video de presentación.'));
+push(NUM('3','Rellenar los campos del bloque exactamente así:'));
+push(tabla(['Campo del bloque','Qué poner'],[
+  ['Imagen','tarjeta-tutor.png (va adjunta con estas instrucciones)'],
+  ['Heading','Tutor IA · pregúntale a tus clases'],
+  ['Contenido','Resuelve tus dudas con las clases de tus 4 cursos. Te dice en qué sesión y en qué minuto está la respuesta — y si algo no está en el material, te lo dice en vez de inventarlo.'],
+  ['Button Text','Abrir el Tutor IA'],
+  ['Tipo de botón','Solid Button'],
+  ['Relleno del botón','#0E2438'],
+  ['Borde del botón','#E8A04A'],
+  ['Button Text (color)','#FFFFFF'],
+  ['Ir a la URL','La dirección de arriba, pegada completa'],
+], [2400, 6600]));
+push(NUM('4','Guardar cambios.'));
+push(NUM('5','Repetir en los otros tres cursos.'));
+push(H2('Si además se quiere dentro de las lecciones'));
+push(P('Con el mismo Custom Block, en Páginas → Lección, para que el alumno lo tenga a mano mientras estudia sin volver a la portada. Es opcional: con la portada del curso ya se cumple.'));
 
-push(H1('PASO 2 · El botón en la plantilla'));
-push(P('Este sí es global: aparece en todos los cursos. Por eso el texto del botón dice que es solo de Acero, para que un alumno del Máster lo entienda antes de hacer clic y no después de preguntar.'));
-push(P('Lo monta Dayana. Se incluye aquí para que sepáis que existe y por qué.'));
+push(H1('Comprobar antes de darlo por hecho'));
+push(P('Abrir el curso COMO ALUMNO, no desde el editor. Pulsar el botón y hacer una pregunta de verdad, por ejemplo: ¿Qué es el pandeo?'));
+push(P('Tiene que responder y terminar citando la clase y el minuto, así:'));
+push(...CODE('El pandeo es un fenómeno de inestabilidad que ocurre en\nelementos estructurales…\n\nFUENTES: [221121 Sesión N°1-Acero-DM.mp4 · min 112:09]'));
+push(AVISO('Avisar a Dayana cuando los 4 estén hechos: hasta que estén, la campaña de publicidad de ACERO no puede salir.'));
+push(H2('Por qué eso último importa'));
+push(P('El precio de la Especialización sube de $200 a $225 justamente porque incluye el tutor. Si la campaña sale antes de que el tutor esté montado, un alumno paga los $225 y no lo encuentra. Por eso el orden es: primero estos 4 cursos, después la publicidad.'));
 
 push(H1('Lo que hay que saber cuando pregunten'));
 push(P('No hay que activar a nadie.',{run:{bold:true}}));
-push(P('No se emite nada por alumno. Quien entra al área de miembros ya está autenticado por GoHighLevel, y con eso basta: un alumno que se matricula el martes tiene tutor el martes.'));
+push(P('No se emite ninguna clave por alumno. Quien entra al área de miembros ya está identificado por GoHighLevel, y con eso basta: un alumno que se matricula el martes tiene tutor el martes.'));
 push(P('El tutor solo conoce esos 4 cursos.',{run:{bold:true}}));
-push(P('Si alguien le pregunta por hormigón armado o por BIM 4D, responderá que no está en el material y mandará a la asesoría. Es a propósito, no es un fallo.'));
+push(P('Si le preguntan por hormigón armado o por BIM 4D, dirá que no está en el material y mandará a la asesoría. Es a propósito.'));
 push(P('Nunca da cifras de norma ni precios.',{run:{bold:true}}));
 push(P('Ante «¿cuántos MPa es la fluencia del A36?» remite a la norma vigente en vez de dictar el número, porque las transcripciones automáticas deforman las cifras. Está probado: 17 casos, con las trampas repetidas 3 veces cada una.'));
 push(P('Hay dos topes al día.',{run:{bold:true}}));
 push(P('20 preguntas por navegador y 600 en todo el servicio. Si un alumno agota las suyas, el mensaje le dice que mañana se reinician y le ofrece la asesoría.'));
+push(P('El botón abre en otra pestaña.',{run:{bold:true}}));
+push(P('Es a propósito: el alumno consulta y vuelve a su clase sin perder dónde iba.'));
 
 push(H1('Si algo falla, en este orden'));
-push(tabla(['Qué se ve','Qué significa y qué hacer'],[
-  ['La página no carga', 'Abrir ' + URL + ' directamente en el navegador. Si tampoco carga, avisar a Dayana.'],
-  ['«Token inválido»', 'Falta la variable TOKEN_PAGINA en Render o no coincide. Es de Dayana.'],
-  ['No responde nada', 'Suele ser el dominio: falta añadirlo en CORS_ORIGENES. Es de Dayana.'],
+push(tabla(['Qué se ve','Qué significa'],[
+  ['La página no carga', 'Abrir la dirección directamente en el navegador. Si tampoco carga, avisar a Dayana.'],
+  ['«Token inválido»', 'Suele ser que el servidor estaba reiniciándose. Esperar dos minutos y recargar con Ctrl+Shift+R. Si sigue, es de Dayana.'],
+  ['No responde nada', 'Problema de permisos del dominio. Es de Dayana.'],
   ['«Alcanzaste tus preguntas de hoy»', 'No es un fallo: es el tope diario funcionando.'],
-  ['«Eso no está en el material»', 'Tampoco es un fallo. La pregunta es de un curso que el tutor no conoce.'],
+  ['«Eso no está en el material»', 'Tampoco es un fallo. La pregunta es de un tema que el tutor no conoce.'],
 ], [2600, 6600]));
 
 const doc = new Document({ creator:'Design Modeling Academy',
