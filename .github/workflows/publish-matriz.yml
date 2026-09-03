@@ -9,6 +9,7 @@ name: Publicar matriz.json (GitHub Pages)
 # URLs públicas resultantes:
 #   https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/matriz.json
 #   https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/calculadora-zapatas/
+#   https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/tutor-acero/
 
 on:
   push:
@@ -27,6 +28,7 @@ on:
       - test-nivel-bim/**
       - recursos/**
       - eficiencia-acero/**
+      - tutor-acero/**
   workflow_dispatch: {}                      # permite correrla a mano desde la pestaña Actions
 
 # El token integrado solo necesita poder escribir en la rama gh-pages
@@ -64,6 +66,8 @@ jobs:
           cp -r recursos public/recursos
           # Lead magnet: guia de las 5 verificaciones + verificador de eficiencia
           cp -r eficiencia-acero public/eficiencia-acero
+          # Tutor de IA de la Especializacion en Acero (se embebe en GHL)
+          cp -r tutor-acero public/tutor-acero
           # Sin procesamiento Jekyll
           touch public/.nojekyll
           # index mínimo para que la raíz no dé 404 y sirva de estado
