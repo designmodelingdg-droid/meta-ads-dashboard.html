@@ -442,6 +442,85 @@
       ],
       "recomendacion": "Fijar la meta sobre CAJA TOTAL y dejarla por escrito. Es lo que el negocio ingresa de verdad, es lo unico que ahora se puede verificar contra pasarelas, y baja el esfuerzo de 26 ventas a 19 sin bajar el dinero. La condicion es que el recurrente se sostenga: hay que vigilar los 13 contratos de $160 mes a mes.",
       "decision_pendiente": "Dayana debe elegir una de las dos lecturas. Hasta entonces conviven dos metas distintas con el mismo numero."
+    },
+    "tercera_fuente_las_pasarelas": {
+      "que_es": "El volcado directo de las APIs de Stripe y PayPal que la Action metricas-semanales.yml deja en matriz-viral/fuentes/ingresos/. Misma ventana exacta que mi cierre: 05-ago -> 03-sep.",
+      "cuando_estuvo_disponible": "Desde el 1-sep-2026, tres dias antes de la reunion. No se abrio.",
+      "total": 9824.89,
+      "cobros": 47,
+      "stripe": {
+        "cobros": 34,
+        "neto": 7193.94
+      },
+      "paypal": {
+        "cobros": 13,
+        "neto": 2630.95
+      },
+      "composicion_stripe": [
+        {
+          "concepto": "Cuotas mensuales de $160 («Subscription update»)",
+          "n": 16,
+          "monto": 2560.0,
+          "tipo": "RECURRENTE — contratos vigentes del Master, no los vendio nadie este mes"
+        },
+        {
+          "concepto": "Cobros de $140",
+          "n": 4,
+          "monto": 560.0,
+          "tipo": "por confirmar — probablemente otra cuota recurrente"
+        },
+        {
+          "concepto": "Matriculas grandes ($1.120, $1.000, $500, $350)",
+          "n": 4,
+          "monto": 2970.0,
+          "tipo": "captacion nueva de alto ticket"
+        },
+        {
+          "concepto": "Acero ($199,99 x3 y $200 de alta de suscripcion)",
+          "n": 4,
+          "monto": 799.97,
+          "tipo": "captacion nueva"
+        },
+        {
+          "concepto": "Dos cobros de $100",
+          "n": 2,
+          "monto": 200.0,
+          "tipo": "por confirmar (reservas?)"
+        },
+        {
+          "concepto": "Cursos lowcost ($29,99 · $27 · $26,99 · $19,99)",
+          "n": 4,
+          "monto": 103.97,
+          "tipo": "captacion nueva"
+        }
+      ],
+      "tres_cifras_para_el_mismo_mes": [
+        {
+          "fuente": "Pasarelas (volcado directo de API)",
+          "valor": 9824.89,
+          "n": 47,
+          "ventana": "05-ago -> 03-sep"
+        },
+        {
+          "fuente": "Verificado por Ester (pasarelas + planilla)",
+          "valor": 6922.87,
+          "n": 43,
+          "ventana": "05-ago -> 05-sep"
+        },
+        {
+          "fuente": "Mi cierre (ganados en GHL)",
+          "valor": 3595.92,
+          "n": 22,
+          "ventana": "05-ago -> 03-sep"
+        }
+      ],
+      "lo_que_no_cuadra": "El volcado de pasarelas da $2.902,02 MAS que lo verificado por Ester, en una ventana DOS DIAS MAS CORTA. Las cuatro matriculas grandes ($1.120, $1.000, $500, $350 = $2.970) no aparecen en su listado verificado, y los tres cobros de $300 del 1-sep en PayPal (David Coello, Daniel Carpio, Angelica Sansone) tampoco. Antes de dar una cifra por buena hay que sentarse con Ester y explicar esos $2.902,02: o son ingresos que su revision no alcanzo, o son cobros que no corresponden a los cursos y hay que excluirlos.",
+      "no_declarar_todavia": "NINGUNA de las tres es la cifra final del mes hasta que se explique la diferencia. Lo unico seguro es que la mia ($3.595,92), que es la que se presento al equipo, es la mas baja de las tres y la que peor mide.",
+      "efecto_en_la_meta": {
+        "recurrente_identificado": 2560.0,
+        "captacion_nueva_aproximada": 7264.89,
+        "lectura": "Si se confirma el volcado, agosto capto ~$7.265 nuevos y cobro $9.825 en total. La meta de $10.000 para septiembre no es 2,78x ni 1,44x: es practicamente PLANO. Eso no la hace facil —hay que sostenerlo— pero cambia por completo el discurso y el reparto de esfuerzo entre closer y setter."
+      }
     }
   }
 }

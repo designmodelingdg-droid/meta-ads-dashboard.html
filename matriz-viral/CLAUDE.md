@@ -29,6 +29,40 @@ Sin confirmar todavía: TikTok de BIM Pure, y su presencia en Facebook. Se verif
 - **Prueba social:** página de testimonios (`https://funnel.dgdesignmodeling.com/testimonio-estudiantes-egresados-diplomado`) y página de acreditaciones (`https://funnel.dgdesignmodeling.com/design-modeling-acreditaciones`) — usarlas como referencia de contenido (mostrar capturas, citar casos) cuando el guion necesite reforzar autoridad/confianza, no solo como link a mandar.
 - **Diagnóstico de cuenta (de la matriz real):** los reels de la cuenta generan views pero casi cero comentarios (ver `matriz/patrones-de-viralidad.md` §5) y las piezas de venta directa (DM13, DM17) son las de peor rendimiento de toda la muestra. El problema no es de alcance, es de que el contenido no invita a comentar ni conecta con el Máster.
 
+## El dinero: de dónde sale y de dónde NO
+
+**La facturación de un mes se lee en `matriz-viral/fuentes/ingresos/`, nunca en
+el CRM.** Tres archivos que baja sola la Action `metricas-semanales.yml` los
+lunes y viernes:
+
+```
+fuentes/ingresos/resumen.json   totales y ventana — empezar aquí
+fuentes/ingresos/stripe.json    cobro por cobro: fecha, bruto, reembolsado, neto, correo, descripcion
+fuentes/ingresos/paypal.json    idem
+```
+
+> *De dónde sale esta regla:* el cierre de agosto de 2026 reportó **$3.595,92**
+> —oportunidades marcadas ganadas en GoHighLevel— y se presentó al equipo como
+> el ingreso del mes. Desde el 1 de septiembre el repositorio tenía
+> `resumen.json` diciendo **$10.317,91 realmente cobrados**, y nadie lo abrió.
+> La meta de septiembre se fijó como «2,78 veces agosto» sobre una base que era
+> menos de un tercio de la real. El CRM no sabe cuánto entró: sabe qué se marcó.
+
+Tres cosas que hay que comprobar cada vez, y que en agosto fallaron:
+
+1. **Que la ventana del archivo sea la del análisis.** Trae su propia `ventana`.
+   Si no coincide, disparar `metricas-semanales.yml` con `desde` y `hasta`.
+2. **Que las pasarelas cubran el mes entero.** En agosto el listado de PayPal
+   empezaba el 11 y el mes arrancaba el 5: seis días invisibles.
+3. **Que no falte una cuenta.** Los archivos cubren UNA cuenta de Stripe y UNA
+   de PayPal. Transferencias bancarias, otra cuenta o cobros por un tercero no
+   están: hay que preguntarle a Dayana qué falta antes de cerrar un total.
+
+Y una distinción que cambia las metas: **recurrente no es captación**. En agosto
+16 cobros de $160 («Subscription update») eran cuotas de contratos vigentes del
+Máster. Entran a caja solos; no los vendió nadie ese mes. Separarlos siempre
+antes de plantear el objetivo del mes siguiente.
+
 ## Reglas fijas
 
 0. **Toda afirmación técnica sobre una función de software se verifica contra la documentación oficial ANTES de publicar.** Si un guion dice que un programa "hace X", hay que abrir help.autodesk.com (o la documentación del fabricante) y comprobarlo. Si no se puede comprobar, no se publica: se cambia por algo que sí se pueda. Y si la función depende de una versión o de una licencia concreta, **eso se dice en la pieza**.

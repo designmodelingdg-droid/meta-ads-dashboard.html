@@ -1936,5 +1936,124 @@
         "por_que": "Mi cierre recomendo apagarla midiendola con una metrica que no le corresponde. La reunion decidio sustituirla, no apagarla en seco."
       }
     ]
+  },
+  "kpis_mensuales": {
+    "nota": "Resultados del mes que cierra (agosto), para que el equipo publique sabiendo contra que. Se actualiza en cada cierre. La cifra de facturacion NO esta cerrada: ver cierres/2026-08.json, seccion conciliacion_ester.",
+    "periodo": "2026-08-05 a 2026-09-05",
+    "fuentes": [
+      "KPIs Comerciales (Ester)",
+      "KPIs Marketing (Ester)",
+      "KPIs Administrativos (Ester)",
+      "matriz-viral/fuentes/ingresos/ (Stripe + PayPal)",
+      "matriz-viral/cierres/2026-08.json"
+    ],
+    "dinero": {
+      "cobrado_pasarelas": 9824.89,
+      "verificado_por_ester": 6922.87,
+      "ganados_en_crm": 3595.92,
+      "estado": "SIN CERRAR — tres cifras para el mismo mes, diferencia sin explicar de $2.902,02",
+      "recurrente_del_master": 2560.0,
+      "captacion_nueva_aprox": 7264.89
+    },
+    "comercial": {
+      "estudiantes_master_nuevos": {
+        "real": 1,
+        "meta": 12,
+        "cumplimiento": "8,3%"
+      },
+      "cursos_lowcost": {
+        "real": 4115.88,
+        "meta": 3000,
+        "cumplimiento": "137,2%"
+      },
+      "citas_agendadas": {
+        "real": 41,
+        "meta": 60
+      },
+      "asistencia_a_citas": {
+        "real": "46,3%",
+        "anterior": "30,2%",
+        "meta": "80%"
+      },
+      "intentos_de_llamada": {
+        "real": 918,
+        "meta": 500,
+        "cumplimiento": "183,6%"
+      },
+      "conversaciones_sin_asignar": {
+        "real": "57,8%",
+        "anterior": "41,8%",
+        "n": 856
+      },
+      "tiempo_medio_respuesta": {
+        "real": "3h 36min",
+        "anterior": "2h 55min",
+        "umbral": "15 min"
+      },
+      "perdidas_por_sin_respuesta": {
+        "pct": "94,1%",
+        "n": 1600,
+        "de": 1700
+      }
+    },
+    "marketing": {
+      "inversion": 1250.03,
+      "leads": 1514,
+      "cpl": 0.83,
+      "compras_crm": 20,
+      "conversion": "1,3%",
+      "roas_adquisicion": 2.74,
+      "roas_caja": 5.54,
+      "sin_atribuir": {
+        "pct": "70%",
+        "n": 14,
+        "de": 20
+      },
+      "master_bim": {
+        "gasto": 491.05,
+        "pct_presupuesto": "39,3%",
+        "compras": 0
+      },
+      "organico_7dias": {
+        "alcance": 167757,
+        "impresiones": 220614,
+        "interacciones": 2076
+      },
+      "contenido": {
+        "producido": 19,
+        "publicado": 1,
+        "borrador": 18
+      },
+      "email": {
+        "envios": 2420,
+        "variacion": "-84%",
+        "aperturas": 579,
+        "respuestas": 1
+      }
+    },
+    "administrativo": {
+      "bloque": "26-ago a 04-sep (8 dias habiles)",
+      "tareas": {
+        "registradas": 36,
+        "completadas": 35,
+        "cumplimiento": "97,2%"
+      },
+      "atrasos_criticos": [
+        {
+          "que": "Lote diario del Lead Magnet Calculadora Zapatas (~2.531 contactos)",
+          "dias": 44
+        },
+        {
+          "que": "Soporte tecnico sin detalle",
+          "dias": 32
+        }
+      ],
+      "sin_registro": "No hay datos de horas ni ausencias del periodo"
+    },
+    "lo_que_manda_al_contenido_de_septiembre": [
+      "18 de 19 piezas del mes quedaron en borrador: el cuello de botella es publicar, no producir. Antes de sumar piezas nuevas, sacar las que ya estan hechas.",
+      "El email tiene 23,9% de apertura y una sola respuesta en el mes: la lista responde, el problema es que no se le escribe. Los 4 correos del calendario son prioridad, no relleno.",
+      "El 94,1% de las perdidas es «sin respuesta»: cada CTA que genere conversacion sin que haya quien la atienda es alcance desperdiciado. La regla de cerrar con pregunta directa depende de que las 856 conversaciones sin asignar se resuelvan."
+    ]
   }
 }
