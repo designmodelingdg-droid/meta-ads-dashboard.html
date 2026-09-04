@@ -254,9 +254,9 @@ a{color:var(--blue)}
 <div class="wrap">
 
 <header class="titleblock">
-  <div class="tb-rule"><span>Rev D.3</span><i></i><span>Uso interno</span></div>
+  <div class="tb-rule"><span>Rev D.4</span><i></i><span>Uso interno</span></div>
   <h1>Manual de Venta</h1>
-  <p class="sub">DG BIM Intelligence — con la demo del 4 de septiembre, los costos del 8 y las condiciones legales cerradas. Reemplaza la Rev C.</p>
+  <p class="sub">DG BIM Intelligence — con lo acordado en la reunión del 4 de septiembre. Arranque: lunes con los tres clientes semilla.</p>
   <div class="tb-meta">
     <div><span class="tb-k">Producto</span><span class="tb-v">DG BIM Intelligence</span></div>
     <div><span class="tb-k">Oferta</span><span class="tb-v">US$997 + 97/mes</span></div>
@@ -415,6 +415,11 @@ a{color:var(--blue)}
 <section id="s6">
   <span class="snum">Sección 06</span>
   <h2>La demo, ahora que se puede cargar en vivo</h2>
+  <div class="note warn">
+    <span class="tag">Atención antes de la primera llamada</span>
+    <p>El dashboard hoy muestra poca información: se construyó sobre un mockup inicial y quedó limitado a lo que aparecía en esa imagen. Gabriel y Andrés lo están corrigiendo, y es tema de forma, no de fondo — la conexión y la data funcionan bien.</p>
+    <p><strong>Si el lunes todavía no está corregido:</strong> el peso de la demo se corre al agente, que sí funciona completo. No mostrar la tarjeta de «BIM Model Quality Score» mientras marque 0% — en una demo un cero en rojo se lee como producto roto, aunque no lo esté. Se muestra la sincronización, el conteo de elementos y directo al agente.</p>
+  </div>
   <div class="tscroll">
   <table>
     <thead><tr><th>Momento</th><th>Qué se hace</th><th>Qué se dice</th></tr></thead>
@@ -539,49 +544,56 @@ a{color:var(--blue)}
   </div>
 
   <div class="dec">
-    <div class="dec-head"><span class="dec-n">03</span><span class="dec-t">Qué está listo del rol Coordinador</span></div>
+    <div class="dec-head"><span class="dec-n">03</span><span class="dec-t">Tope de preguntas al agente</span></div>
+    <p class="dec-gap">Sin tope, un usuario intensivo puede consumir el presupuesto de IA de todos. Y un cliente lo puede preguntar en la primera llamada.</p>
+    <div class="dec-rec"><span class="tag">Recomendación</span>Un tope generoso y visible — del orden de <strong>50 consultas al día</strong>, que para un proyecto real alcanza de sobra. Al llegar al tope, un aviso ofreciendo continuar con recarga. Se comunica como beneficio, no como límite: «tu membresía incluye hasta X consultas diarias, y si necesitas más, las recargas».</div>
+    <span class="dec-who">Decide: equipo · configura Andrés</span>
+  </div>
+
+  <div class="dec">
+    <div class="dec-head"><span class="dec-n">04</span><span class="dec-t">Qué está listo del rol Coordinador</span></div>
     <p class="dec-gap">En la demo hay agente de Coordinador, pero los dashboards que se muestran son los de Modelador y Gerente.</p>
     <div class="dec-rec"><span class="tag">Recomendación</span>Preguntarle a Andrés antes de la primera llamada si el Coordinador tiene dashboard propio. <strong>Mientras no esté confirmado, se vende como «agente de Coordinador disponible, panel en camino»</strong> — es preferible quedarse corto que romper la primera impresión.</div>
     <span class="dec-who">Decide: Andrés</span>
   </div>
 
   <div class="dec">
-    <div class="dec-head"><span class="dec-n">04</span><span class="dec-t">Fechas del roadmap</span></div>
+    <div class="dec-head"><span class="dec-n">05</span><span class="dec-t">Fechas del roadmap</span></div>
     <p class="dec-gap">Poner fecha a las etapas 2 y 3.</p>
     <div class="dec-rec"><span class="tag">Recomendación</span>Comprometer <strong>un mes más tarde</strong> de lo que estime Andrés. Propuesta: Coordinador en octubre, Decision Engine entre noviembre y diciembre. Es mejor adelantarse que disculparse.</div>
     <span class="dec-who">Decide: Gabriel + Andrés</span>
   </div>
 
   <div class="dec">
-    <div class="dec-head"><span class="dec-n">05</span><span class="dec-t">Costo de operación <span class="pill p-ok">Resuelto</span></span></div>
+    <div class="dec-head"><span class="dec-n">06</span><span class="dec-t">Costo de operación <span class="pill p-ok">Resuelto</span></span></div>
     <p class="dec-gap">Andrés entregó los números el 8 de septiembre.</p>
     <div class="dec-rec"><span class="tag">Resultado</span><strong>El precio de US$97 está confirmado con margen amplio.</strong> Costo real ≈ US$10 por cliente al mes con 10 clientes, y baja al crecer. Ver el desglose abajo. Queda validar con clientes reales, pero el margen de error es tan grande que ya no bloquea la venta.</div>
     <span class="dec-who">Cerrado</span>
   </div>
 
   <div class="dec">
-    <div class="dec-head"><span class="dec-n">06</span><span class="dec-t">Quién paga los US$65 fijos <span class="pill p-ok">Cerrado</span></span></div>
+    <div class="dec-head"><span class="dec-n">07</span><span class="dec-t">Quién paga los US$65 fijos <span class="pill p-ok">Cerrado</span></span></div>
     <p class="dec-gap">Vercel (40) y Supabase (25) se cobran todos los meses, con o sin clientes.</p>
     <div class="dec-rec"><span class="tag">Decidido</span><strong>Salen de las tres primeras reservas</strong>, que cubren cuatro meses completos de infraestructura. Olympus deja de absorberlos desde la primera venta.</div>
     <span class="dec-who">Cerrado</span>
   </div>
 
   <div class="dec">
-    <div class="dec-head"><span class="dec-n">07</span><span class="dec-t">La landing quedó corta</span></div>
+    <div class="dec-head"><span class="dec-n">08</span><span class="dec-t">La landing quedó corta</span></div>
     <p class="dec-gap">Dice «Conexión con Revit» en desarrollo, cuando ya funciona.</p>
     <div class="dec-rec"><span class="tag">Recomendación</span>Mover la conexión a «disponible» y que <strong>el GIF sea justo ese momento</strong>: Revit abierto → sincronizar → la data adentro. Es el mejor argumento visual que tenemos.</div>
     <span class="dec-who">Decide: Patricio + Andrés</span>
   </div>
 
   <div class="dec">
-    <div class="dec-head"><span class="dec-n">08</span><span class="dec-t">Exclusión en OpenRouter</span></div>
+    <div class="dec-head"><span class="dec-n">09</span><span class="dec-t">Exclusión en OpenRouter</span></div>
     <p class="dec-gap">Activar la exclusión de proveedores que entrenan con prompts.</p>
     <div class="dec-rec"><span class="tag">Recomendación</span><strong>Antes del primer cliente.</strong> La promesa de confidencialidad ya está publicada en la landing y en el legal: hoy es un riesgo de incumplimiento, no un pendiente técnico.</div>
     <span class="dec-who">Decide: Andrés</span>
   </div>
 
   <div class="dec">
-    <div class="dec-head"><span class="dec-n">09</span><span class="dec-t">Subdominio y logo</span></div>
+    <div class="dec-head"><span class="dec-n">10</span><span class="dec-t">Subdominio y logo</span></div>
     <p class="dec-gap">Salir del vercel.app y cerrar el logo definitivo.</p>
     <div class="dec-rec"><span class="tag">Recomendación</span>Subdominio antes de la primera venta — un dominio de pruebas en una venta de 997 resta justo al momento de pagar. El logo, en cambio, <strong>que no bloquee</strong>: sacar los mockups con lo que hay y refinarlo después.</div>
     <span class="dec-who">Decide: Patricio</span>
