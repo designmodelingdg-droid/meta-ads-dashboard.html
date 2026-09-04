@@ -131,7 +131,10 @@ salió con el tema por defecto y hubo que rehacerla.
 Estilo: ejecutivo, cifras grandes,
 `textMode: preserve`, `cardSplit: inputTextBreaks`, y para que no invente
 imágenes: `imageOptions: {"source": "noImages"}` con las URLs reales en el
-texto. Al terminar: exportar a **pptx y pdf** y entregar los links de descarga
+texto. Las imágenes de los creativos ganadores se copian a
+`cierre-<mes>/img/` y se publican por GitHub Pages (`publish-matriz.yml`), NO
+por `raw.githubusercontent`: la rama de trabajo desaparece con el merge y el
+mazo se queda con huecos. Al terminar: exportar a **pptx y pdf** y entregar los links de descarga
 (caducan en ~1 semana — avisarlo).
 
 ## Lo que dejó el cierre de agosto (para no repetir el trabajo)
@@ -141,7 +144,7 @@ ventas, pauta, orgánico, hallazgos, higiene y la matemática de la meta. Antes
 de armar el mes siguiente, LEER el anterior: la comparación es la mitad del
 valor de la reunión y sin el archivo hay que reconstruirla a mano.
 
-Tres cosas que agosto enseñó sobre el método mismo:
+Cuatro cosas que agosto enseñó sobre el método mismo:
 
 - **El archivo de campañas puede tener otra ventana que la de las ventas.**
   `por-campana.json` se genera con su propia fecha; si no coincide con la
@@ -153,6 +156,14 @@ Tres cosas que agosto enseñó sobre el método mismo:
   monto: en agosto ocho eran reservas de un curso gratuito marcadas como
   ganadas, y dos eran pruebas. Un pipeline que marca ganado lo gratuito hace
   que el conteo de ganados no signifique nada.
+- **Los anuncios ganadores se cuentan por imagen, no por fila.** El volcado de
+  Meta lista un anuncio por conjunto, así que el mismo creativo aparece varias
+  veces con nombres casi iguales. En agosto los 6 primeros eran 2 imágenes:
+  `md5sum` sobre los archivos lo resuelve en un segundo, y cambia lo que se
+  dice en la reunión — no son seis piezas que funcionan, es una dependencia de
+  dos. Antes de mostrarlas, abrirlas: la portada que devuelve la API para un
+  anuncio de video viene desenfocada y en ~28 KB (hay que usar un fotograma),
+  y hay que comprobar que el precio impreso siga siendo el vigente.
 
 ## Reglas no negociables
 
