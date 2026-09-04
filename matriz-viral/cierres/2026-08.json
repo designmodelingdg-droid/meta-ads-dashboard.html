@@ -179,5 +179,102 @@
   "meta_anterior": {
     "cumplida": "NO CONSTA",
     "por_que": "No hay registro de cual era la meta de agosto. Es la razon de que este archivo exista: a partir de ahora la meta queda escrita y en octubre la pregunta se responde sola."
+  },
+  "ganadores_pauta": {
+    "nota": "Los 6 anuncios con mas leads son solo 2 imagenes distintas (md5 repetido). Entre las dos: 1.385 de los 1.477 leads del mes, el 94%. Las dos son de julio y las dos llevan $199,99 impreso: ninguna puede reactivarse sin rehacerse a $225.",
+    "creativos": [
+      {
+        "nombre": "AceroADS-JulioV01",
+        "tipo": "video",
+        "leads": 873,
+        "gasto": 288.33,
+        "cpl": 0.33,
+        "titular": "Conviertete en un experto BIM — promo 3x1",
+        "elementos": [
+          "sello Autodesk Authorized Training Center",
+          "5 beneficios en lista",
+          "precio tachado $299,99 -> $199,99",
+          "CTA a WhatsApp"
+        ],
+        "archivo": "cierre-agosto/img/anuncio-1-experto-bim-3x1.jpg",
+        "url": "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/cierre-agosto/img/anuncio-1-experto-bim-3x1.jpg",
+        "rangos_del_volcado": [
+          1,
+          3,
+          4,
+          6
+        ]
+      },
+      {
+        "nombre": "AceroJUL(1)1-1",
+        "tipo": "estatico",
+        "leads": 512,
+        "gasto": 164.15,
+        "cpl": 0.32,
+        "titular": "Modela tu primera nave industrial en 30 dias",
+        "elementos": [
+          "promesa con plazo",
+          "3 vinetas",
+          "semana 1 a 4 marcadas al costado",
+          "precio tachado $619,96 -> $199,99",
+          "CTA a WhatsApp"
+        ],
+        "archivo": "cierre-agosto/img/anuncio-2-nave-industrial-30dias.jpg",
+        "url": "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/cierre-agosto/img/anuncio-2-nave-industrial-30dias.jpg",
+        "rangos_del_volcado": [
+          2,
+          5
+        ]
+      }
+    ]
+  },
+  "ganadores_organico": {
+    "nota": "No hay archivo de imagen de las piezas organicas: la matriz guarda el enlace permanente, no el creativo. Recuperar las imagenes pide META_TOKEN, que no vive en el repositorio.",
+    "piezas": [
+      {
+        "id": "DM157",
+        "fecha": "2026-08-28",
+        "vistas": 14334,
+        "comentarios": 107,
+        "guardados": 228,
+        "compartidos": 57,
+        "url": "https://www.instagram.com/p/DcmALQ6maMW/",
+        "titular": "Sobredimensionar no es «ir por el lado seguro». Es no haber revisado.",
+        "que_se_replica": "Afirmacion que incomoda al que la lee MAS recurso real montado detras. Sin lo segundo es provocacion; sin lo primero es un folleto. Unica pieza del mes que junto alcance de OBRA con tasa de comentarios de nucleo."
+      },
+      {
+        "id": "DM159",
+        "fecha": "2026-08-26",
+        "vistas": 4861,
+        "comentarios": 49,
+        "guardados": 83,
+        "compartidos": 24,
+        "url": "https://www.instagram.com/p/Dcg0yrkkrID/",
+        "titular": "Las 5 verificaciones en acero que no puedes saltarte",
+        "que_se_replica": "Anunciar un recurso concreto y pedir que lo pidan. Mejor tasa de la semana (9,82 c/1k) y 45 comentarios pidiendo la guia."
+      },
+      {
+        "id": "DM152",
+        "fecha": "2026-08-17",
+        "vistas": 4368,
+        "comentarios": 63,
+        "guardados": 56,
+        "compartidos": 17,
+        "url": "https://www.instagram.com/p/DcJ9IWPFJtv/",
+        "titular": "Si todavia dimensionas zapatas «a ojo»",
+        "que_se_replica": "La formula de DM157 en version suave: nombrar un mal habito que el lector reconoce en si mismo y ofrecer la herramienta."
+      },
+      {
+        "id": "DM150",
+        "fecha": "2026-08-12",
+        "vistas": 5617,
+        "comentarios": 89,
+        "guardados": 73,
+        "compartidos": 35,
+        "url": "https://www.instagram.com/p/Db8tR8tG_Js/",
+        "titular": "Tu Revit ya trae IA y poca gente la activo",
+        "que_se_replica": "EL FORMATO, NO LA AFIRMACION. «Tu software ya hace X y no lo sabias» funciona (2a en comentarios del mes), pero al documentar el paso a paso una de las tres funciones no existia y Autodesk dice que hasta Revit 2026 no hay IA en el producto. Ver regla 0 de CLAUDE.md."
+      }
+    ]
   }
 }
