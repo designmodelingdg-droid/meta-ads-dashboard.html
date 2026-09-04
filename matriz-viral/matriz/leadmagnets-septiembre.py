@@ -1,0 +1,250 @@
+# -*- coding: utf-8 -*-
+"""Los tres recursos gratuitos de septiembre, desarrollados y con su montaje.
+
+Por que existe este archivo aparte: en julio salio al aire un CTA que prometia
+un recurso que no estaba montado, y los comentarios se quedaron sin respuesta.
+La leccion no fue «hay que crear el recurso»: fue que el recurso y su embudo
+son UNA sola entrega, y que mientras el bot no responda con el enlace, el
+recurso no existe aunque el archivo este hecho.
+
+El paso a paso de GoHighLevel sale del metodo probado con la Calculadora de
+Zapatas (skill leadmagnet-app), no de la teoria.
+"""
+
+MEDIDA_FEED = "1080x1350 px (4:5)"
+MEDIDA_CARR = "1080x1080 px (1:1)"
+ESTILO = (" Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos en ámbar #E8A04A, "
+          "tipografía sans-serif de palo seco muy gruesa, composición limpia y con aire, sin stock "
+          "corporativo ni gente sonriendo a cámara. El texto final se monta en Canva: la IA entrega "
+          "el fondo y los elementos, no las letras.")
+
+REGLA = ("Ningún CTA sale al aire sin su recurso VIVO y su disparador montado el día de la "
+         "publicación. Si el recurso no llegó a tiempo NO se aplaza la pieza: se publica con el CTA "
+         "de reemplazo. Prometer y no entregar cuesta más que cambiar la palabra.")
+
+# ═══════════════ EL MONTAJE EN GHL — el mismo para los tres ═══════════════
+PASOS_GHL = [
+    ("1. El archivo, con URL propia y estable",
+     "El PDF o el ZIP se sube y queda con una URL fija que no cambie nunca. Si mañana se "
+     "reemplaza el archivo, se reemplaza en esa misma URL — porque esa dirección va a quedar "
+     "escrita en correos, en DMs y en comentarios que siguen vivos meses después."),
+    ("2. Embudo de dos páginas",
+     "Página 1: la captura, con el formulario a la vista sin tener que bajar. Página 2: gracias, "
+     "y ahí mismo el BOTÓN DE DESCARGA. El acceso es inmediato en pantalla. Nunca poner «te lo "
+     "enviamos por correo» si no existe un workflow que lo envíe: es la promesa que más rápido se "
+     "rompe."),
+    ("3. Formulario nativo de GHL, no de terceros",
+     "Nombre, correo, WhatsApp y una pregunta de perfil («¿en qué trabajas hoy?»). El formulario "
+     "nativo mete el contacto directo al CRM sin costo por ejecución; el Inbound Webhook es "
+     "prémium y cobra por cada envío. Al terminar, redirección automática a la página 2."),
+    ("4. Etiquetas desde el primer segundo",
+     "Cada contacto entra con dos etiquetas: una de tema (lead-revit-ia, lead-dynamo, "
+     "lead-memoria-calculo) y una de origen (origen-bot-GUIA, origen-form, origen-comunidad). Sin "
+     "la etiqueta de origen, a fin de mes no se puede decir qué recurso trajo a quién, y la "
+     "pregunta de si el lead magnet sirvió se queda sin respuesta."),
+    ("5. Bot de palabra clave en Instagram y Facebook — DOS ramas separadas",
+     "Disparador de comentario filtrado por la palabra clave → respuesta pública → DM con el "
+     "enlace. La acción de envío se configura POR SEPARADO para cada red: rama Instagram con DM "
+     "de Instagram, rama Facebook con DM de Messenger. Nunca una sola acción compartida."),
+    ("6. La respuesta pública lleva SIEMPRE el enlace",
+     "No «te escribí al DM». El enlace visible en el comentario es la red de seguridad real: si el "
+     "DM falla, la persona igual llega. Es gratis ponerlo y es lo único que salva la pieza cuando "
+     "el canal falla en silencio."),
+    ("7. Secuencia de correos, tres toques",
+     "Correo 1 inmediato con el enlace otra vez (la gente cierra la página de gracias sin "
+     "descargar). Correo 2 a las 48 h con un uso concreto del recurso. Correo 3 al día 5 con el "
+     "puente al programa que le corresponde. La secuencia se enciende con la etiqueta de tema, no "
+     "a mano."),
+    ("8. Notificación interna al equipo",
+     "Cada lead nuevo avisa al setter con el nombre del recurso y la respuesta de perfil. Un lead "
+     "de memoria de cálculo no se trabaja igual que uno de Dynamo, y esa diferencia se pierde si "
+     "todos caen en la misma bandeja sin etiqueta."),
+    ("9. Prueba de punta a punta ANTES de publicar el post",
+     "La prueba se hace comentando la palabra en Instagram Y en la copia de Facebook del mismo "
+     "post. Es la única forma de detectar la falla de abajo antes de que la vean 3.000 personas."),
+]
+
+INCIDENTE = ("El DM que falla en silencio — julio de 2026, unos 35 leads perdidos. Cuando el post "
+             "nace en Instagram y aparece también en Facebook, mucha gente comenta en la copia de "
+             "Facebook. Si la acción «enviar DM» está atada solo al canal de Instagram, el envío "
+             "falla y el workflow igual marca el paso como ejecutado: el ID de quien comentó es de "
+             "Facebook, no de Instagram. La respuesta pública sí sale siempre, y por eso nadie se "
+             "da cuenta. Se arregla con los pasos 5, 6 y 9 — los tres, no uno.")
+
+CHECKLIST = [
+    "Comentar la palabra clave en Instagram → llega el DM con el enlace.",
+    "Comentar la palabra clave en la copia de Facebook → llega el DM por Messenger.",
+    "La respuesta pública automática incluye el enlace visible.",
+    "El enlace abre la página de captura en teléfono, no solo en computador.",
+    "Enviar el formulario → redirige solo a la página de gracias.",
+    "El botón de descarga de la página de gracias entrega el archivo correcto.",
+    "El contacto aparece en el CRM con sus dos etiquetas.",
+    "Llega el correo 1 con el enlace.",
+    "El setter recibe la notificación con el nombre del recurso.",
+    "Borrar los contactos de prueba antes de publicar.",
+]
+
+# ═══════════════════════════ LOS TRES RECURSOS ═══════════════════════════
+MAGNETS = [
+  dict(
+    id="lm-revit-chatgpt",
+    nombre="Guía «Revit + ChatGPT: resuelve errores con IA»",
+    palabra="GUIA",
+    formato="PDF de 10-12 páginas",
+    estado="POR CREAR — se necesita VIVO el lunes 8",
+    cuando="Semana 1. Es el más urgente de los tres: hay un reel el miércoles 9 cuyo CTA ya lo promete.",
+    promesa="Los 10 errores de Revit que más tiempo hacen perder, y el prompt exacto que los "
+            "resuelve — con la advertencia de cuándo NO hacerle caso a la respuesta.",
+    para_quien="Quien ya usa Revit todos los días y pierde tardes enteras buscando en foros.",
+    por_que="El reel «Valor 6» cuenta exactamente esto — un error de Revit resuelto con ChatGPT en "
+            "vez de dos horas de foro — y es la pieza base del miércoles 9. El recurso no se "
+            "inventa para llenar un hueco: se crea porque ya hay una pieza que lo pide.",
+    contenido=[
+        "Los 10 errores: qué dice Revit, qué significa de verdad y qué lo causa.",
+        "El prompt exacto para cada uno, escrito para copiar y pegar, con el contexto que hay que "
+        "darle a ChatGPT para que la respuesta sirva (versión, disciplina, qué se intentó ya).",
+        "Cómo pegar el mensaje de error completo sin filtrar datos del cliente — se tapan nombres "
+        "de proyecto y rutas antes de pegar nada.",
+        "La página que más importa: CÓMO VERIFICAR LA RESPUESTA. Tres comprobaciones antes de "
+        "aplicar lo que dijo la máquina en un modelo que alguien va a firmar.",
+        "Qué NO preguntarle: dimensionamiento, cumplimiento de norma y cualquier decisión que "
+        "termine en una firma.",
+    ],
+    produccion=[
+        "Los 10 errores salen de casos reales, no de una lista de internet: se sacan del soporte "
+        "de los cursos y de lo que pregunta la gente en la comunidad.",
+        "Cada prompt se prueba antes de entrar a la guía. Si alguien lo copia y no da lo que "
+        "promete, la guía deja de valer y de paso nos deja mal.",
+        "Disclaimer educativo en la última página, igual que en la Calculadora de Zapatas.",
+    ],
+    ghl=[("Palabra clave", "GUIA"),
+         ("Etiquetas", "lead-revit-ia · origen-bot-GUIA"),
+         ("Pregunta de perfil", "¿Qué usas hoy para resolver un error de Revit?"),
+         ("Entrega", "Botón de descarga en la página de gracias."),
+         ("Puente", "Correo 3 lleva al módulo BIM + IA — sin precio, con «agenda una cita»."),
+         ("Reemplazo si no llega", "El CTA cambia a GPT IA Pro, que ya existe y está montado.")],
+    posts=[dict(
+        fecha="Mar 8", formato="REEL (grabar) — EXTRA de lanzamiento", red="Instagram + Facebook + TikTok",
+        hook="Llevo dos horas en un foro por un error que ChatGPT me resolvió en cuarenta segundos.",
+        caption="Ese error de Revit que te frena la tarde casi siempre está mal explicado por el "
+                "propio mensaje: dice una cosa y el problema es otra.\n\nJunté los 10 que más "
+                "tiempo hacen perder, con el prompt exacto para cada uno. Y una página que importa "
+                "más que las otras diez: cómo verificar la respuesta antes de meterla en un modelo "
+                "que vas a firmar.\n\nEs gratis. Comenta GUIA y te llega.\n\n¿Cuál es el error de "
+                "Revit que más veces te ha tocado buscar?",
+        cta="Comenta GUIA",
+        prompt="Imagen 1080x1350 px (4:5) para la portada del reel. Fondo azul marino #0E2438. Un "
+               "cuadro de diálogo de error de software, dibujado en línea fina ámbar #E8A04A, "
+               "flotando en el centro, con el texto ilegible a propósito — solo se lee la forma de "
+               "la ventana y su icono de advertencia. Detrás, muy tenue, una retícula de planta de "
+               "Revit. Sensación de estar trabado, no de catástrofe." + ESTILO),
+  ]),
+  dict(
+    id="lm-dynamo-python",
+    nombre="Pack starter de scripts Dynamo / Python para Revit",
+    palabra="DYNAMO",
+    formato="ZIP con 5 scripts comentados + PDF de instalación",
+    estado="POR CREAR",
+    cuando="Semana 3. Necesita más producción que los otros dos porque hay que probar cada script.",
+    promesa="Cinco scripts que hacen en un clic lo que hoy haces a mano, con el código comentado "
+            "línea por línea para que puedas cambiarlos.",
+    para_quien="Quien ya modela bien y empieza a repetir tareas: renombrar, exportar, numerar, "
+               "revisar parámetros.",
+    por_que="Dynamo es el tema con mejor tasa de guardado de la cuenta y no tenemos ni un recurso "
+            "propio sobre él. Guardar un post es la señal de «esto me sirve pero ahora no puedo»: "
+            "es exactamente la gente que descarga un pack de scripts.",
+    contenido=[
+        "Script 1 — renombrar vistas por norma en lote.",
+        "Script 2 — exportar planos a PDF con el nombre correcto, sin tocar el cuadro de diálogo.",
+        "Script 3 — numerar elementos por posición y no por orden de creación.",
+        "Script 4 — encontrar parámetros vacíos antes de entregar el modelo.",
+        "Script 5 — comparar dos modelos y listar qué cambió.",
+        "PDF corto: cómo instalarlos, qué versión de Revit y de Dynamo se necesita, y qué hacer "
+        "cuando el script no corre.",
+    ],
+    produccion=[
+        "Cada script se corre en un modelo de prueba antes de entrar al pack. Un script que falla "
+        "en la máquina de otra persona hace más daño que no haber publicado nada.",
+        "El comentario de cada línea es la mitad del valor: el pack enseña, no solo automatiza.",
+        "Se dice la versión exacta de Revit y Dynamo con la que se probó. Sin eso, la mitad de los "
+        "mensajes van a ser «a mí no me funciona».",
+    ],
+    ghl=[("Palabra clave", "DYNAMO"),
+         ("Etiquetas", "lead-dynamo · origen-bot-DYNAMO"),
+         ("Pregunta de perfil", "¿Qué tarea repites más veces al día en Revit?"),
+         ("Entrega", "Botón de descarga del ZIP en la página de gracias."),
+         ("Puente", "Correo 3 lleva al módulo BIM + IA — sin precio, con «agenda una cita»."),
+         ("Reemplazo si no llega", "El CTA cambia a GPT IA Pro y el pack se corre a octubre.")],
+    posts=[dict(
+        fecha="Mar 22", formato="CARRUSEL (6 slides) — EXTRA de lanzamiento",
+        red="Instagram + Facebook + LinkedIn (PDF)",
+        hook="Cinco tareas de Revit que no deberías seguir haciendo a mano.",
+        caption="Si renombras vistas una por una, si exportas planos abriendo el cuadro de diálogo "
+                "cada vez, o si revisas parámetros vacíos a ojo: eso ya lo hace un script.\n\n"
+                "Armamos un pack con cinco, comentados línea por línea para que los puedas cambiar "
+                "y no solo ejecutar. Con el PDF de instalación y la versión exacta con la que los "
+                "probamos.\n\nEs gratis. Comenta DYNAMO y te llega.\n\n¿Cuál de las cinco te "
+                "quitaría más tiempo de encima?",
+        cta="Comenta DYNAMO",
+        prompt="Cinco imágenes de 1080x1080 px (1:1) de la misma familia, para carrusel. Fondo azul "
+               "marino #0E2438. Un grafo de nodos tipo Dynamo dibujado en línea fina ámbar #E8A04A "
+               "— cajas conectadas por cables curvos — que en la primera tarjeta aparece enredado y "
+               "en las siguientes se va ordenando hasta quedar en una sola línea limpia. Misma "
+               "escala y mismo encuadre en las cinco. Sin texto legible dentro de los nodos." + ESTILO),
+  ]),
+  dict(
+    id="lm-memoria-calculo",
+    nombre="Guía de memoria de cálculo + plantilla",
+    palabra="MEMORIA",
+    formato="PDF de la guía + plantilla editable (Word y Excel)",
+    estado="POR CREAR — se define en la reunión de cierre del viernes 5",
+    cuando="Semana 4. Es el que más valor tiene de los tres y el que más cuidado necesita.",
+    promesa="La estructura completa de una memoria de cálculo que se sostiene ante revisión, con "
+            "la plantilla para llenarla.",
+    para_quien="El ingeniero que ya calcula bien pero improvisa el documento cada vez, y el que va "
+               "a entregar a una entidad por primera vez.",
+    por_que="Es el que pidió Dayana el 2-sep. Y encaja con lo que ya sabemos de la cuenta: los "
+            "posts que revientan son los de dato de cálculo. Una memoria de cálculo es dato de "
+            "cálculo convertido en documento — el mismo público, un paso más adelante.",
+    contenido=[
+        "Las secciones que toda memoria debe tener, en orden, y qué va en cada una.",
+        "Qué se cita y cómo: normativa, hipótesis de carga, criterios adoptados y de dónde salen.",
+        "Los cinco errores por los que devuelven una memoria — y cómo se ve cada uno corregido.",
+        "Plantilla editable en Word con la estructura montada, y hoja de Excel para el resumen de "
+        "verificaciones.",
+        "Ejemplo corto completo, de principio a fin, con números reales.",
+    ],
+    produccion=[
+        "Este recurso lo revisa Gabriel antes de salir. Es el único de los tres que puede terminar "
+        "dentro de un documento que alguien firma: si la estructura que proponemos está incompleta, "
+        "el problema deja de ser de marketing.",
+        "Disclaimer explícito: la plantilla es una guía de estructura, no reemplaza el criterio ni "
+        "la responsabilidad del ingeniero que firma.",
+        "La normativa se cita por nombre y versión, nunca se transcriben cifras: se remite a la "
+        "norma vigente. Es la misma regla del tutor de IA.",
+    ],
+    ghl=[("Palabra clave", "MEMORIA"),
+         ("Etiquetas", "lead-memoria-calculo · origen-bot-MEMORIA"),
+         ("Pregunta de perfil", "¿Cada cuánto entregas memorias de cálculo?"),
+         ("Entrega", "Página de gracias con dos botones: guía en PDF y plantilla editable."),
+         ("Puente", "Correo 3 lleva a ACERO ($225 con el tutor de IA incluido, aquí el precio "
+                    "SÍ va) o al módulo BIM "
+                    "Professional según la respuesta de perfil."),
+         ("Reemplazo si no llega", "El CTA cambia a las 5 Verificaciones de Acero, que ya existe.")],
+    posts=[dict(
+        fecha="Mar 29", formato="POST PLANO (1 imagen) — EXTRA de lanzamiento",
+        red="Instagram + Facebook",
+        hook="Una memoria de cálculo no se devuelve por los números. Se devuelve por lo que no está escrito.",
+        caption="Hipótesis que no se declararon. Criterios que se adoptaron y no se justificaron. "
+                "Normativa citada sin versión.\n\nEl cálculo estaba bien. El documento no lo "
+                "demostraba.\n\nArmamos la guía con la estructura completa de una memoria que se "
+                "sostiene ante revisión, y la plantilla editable para llenarla.\n\nEs gratis. "
+                "Comenta MEMORIA y te llega.\n\n¿Por qué te devolvieron la última que entregaste?",
+        cta="Comenta MEMORIA",
+        prompt="Imagen 1080x1350 px (4:5). Fondo azul marino #0E2438. Un documento técnico visto de "
+               "frente y en perspectiva muy leve, dibujado en línea fina ámbar #E8A04A, con la "
+               "silueta de párrafos y una tabla — el texto ilegible a propósito. Dos de sus "
+               "secciones aparecen vacías, marcadas con un recuadro ámbar más grueso, como huecos. "
+               "Sobrio, nada de sellos rojos ni de gestos de rechazo." + ESTILO),
+  ]),
+]

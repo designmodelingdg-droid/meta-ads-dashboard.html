@@ -57,6 +57,10 @@ function resolverCalendario(){
 
 const {archivo:CAL_FILE,datos:CAL}=resolverCalendario();
 const GUI=JSON.parse(fs.readFileSync(path.join(MATRIZ_DIR,'guiones-completos.json'),'utf8'));
+/* Los lead magnets se escriben en Python (viven junto a historias y reels) y
+   aqui se leen por su JSON exportado: un solo origen, dos salidas. */
+const LM_JSON=path.join(MATRIZ_DIR,'leadmagnets-septiembre.json');
+const LM=fs.existsSync(LM_JSON)?JSON.parse(fs.readFileSync(LM_JSON,'utf8')):null;
 const BY={}; GUI.piezas.forEach(p=>BY[p.id]=p);
 
 const [ANIO,MES_NUM]=CAL.mes.split('-');
@@ -320,6 +324,15 @@ push(P("Cada pieza viene desarrollada de principio a fin: el hook, el guion segu
 push(P(`Todo está construido sobre datos reales: la matriz viral de la cuenta (${MATRIZ?MATRIZ.total_reels:'—'} piezas analizadas${MATRIZ&&MATRIZ.actualizado?', al '+MATRIZ.actualizado:''}) y el rendimiento real de las campañas.`));
 push(note("Cómo usar este documento: busca la fecha, copia el texto tal cual está en los bloques grises (están listos para pegar) y pásale a diseño el bloque «Imagen» de cada slide. El prompt de imágenes se pega directo en ChatGPT."));
 
+/* ═══════════════════ 0 · CHECKLIST (reemplaza a ClickUp) ═══════════════════ */
+if(Array.isArray(CAL.checklist_tareas) && CAL.checklist_tareas.length){
+  push(H1("0 · Checklist de tareas del mes"));
+  push(P("Las tareas operativas viven aquí dentro de la matriz (ya no se cargan a ClickUp). Cada una dice qué contenido desbloquea.",{run:{color:GREY,italics:true}}));
+  push(tbl(["☐","Tarea","Desbloquea","Cuándo"],
+    CAL.checklist_tareas.map(t=>['☐',t.tarea||String(t),t.desbloquea||'—',t.cuando||'—']),
+    [500,4600,3800,2200]));
+}
+
 /* ═══════════════════════════════ 1 · REGLAS ═══════════════════════════════ */
 push(H1("1 · Las reglas del mes (probadas con tus datos)"));
 /* Cada mes puede fijar las suyas en el calendario. Si no las trae, se usan las
@@ -466,19 +479,187 @@ if(MATRIZ && Array.isArray(MATRIZ.reels) && MATRIZ.reels.length){
   push(note("Se refresca sola con la Action «Metricas semanales». El hueco se deja a la vista a proposito."));
 }
 
-/* ═══════════════════════════════ 4 · CALENDARIO ═══════════════════════════════ */
+/* ═══════════════ 5+ · CALENDARIOS (modo clasico o por grupos) ═══════════════ */
+const ICON={valor:'🎯 valor','venta-blanda':'💰 venta',venta:'💰 venta',blog:'📝 blog',
+  comunidad:'👥 comunidad',empresa:'🏛️ empresa',youtube:'▶️ YouTube',interaccion:'🗳️ interacción'};
+
+/* Render de una entrada de calendario que trae la IDEA inline (sin guion completo).
+   Se usa en el modo por grupos: el documento general lleva la idea de cada post;
+   el guion palabra a palabra se escribe al producir la pieza. */
+function renderIdea(entry){
+  const d=entry.idea;
+  const out=[];
+  out.push(new Paragraph({spacing:{before:300,after:60},
+    border:{bottom:{style:BorderStyle.SINGLE,size:12,color:ORANGE,space:6}},
+    children:[
+      new TextRun({text:`${entry.fecha}  ·  `,color:ORANGE,bold:true,size:24}),
+      new TextRun({text:d.titulo,color:NAVY,bold:true,size:24})]}));
+  out.push(P('Formato: '+(d.formato||entry.formato_publicacion),{run:{color:GREY,size:19}}));
+  out.push(LBL('La idea (desarrollo)'));
+  out.push(...block(d.desarrollo));
+  if(entry.nota) out.push(note(entry.nota));
+  return out;
+}
+
+if(Array.isArray(CAL.grupos) && CAL.grupos.length){
+
+  /* ── 5 · PUBLICIDAD: listado, no calendario ── */
+  if(CAL.publicidad){
+    push(pageBreak());
+    push(H1("5 · PUBLICIDAD — el paquete completo (sale junto el 7-sep)"));
+    push(note(CAL.publicidad.nota));
+    (CAL.publicidad.indicaciones||[]).forEach(([k,v])=>push(P(k+'. '+v,{run:{size:19}})));
+    (CAL.publicidad.campanas||[]).forEach(c=>{
+      push(H2('▸ '+c.nombre));
+      c.piezas.forEach(pz=>{
+        push(H3(pz.formato+' · '+pz.titulo));
+        /* Dos formas de pieza conviven: los anuncios nuevos del Máster traen el
+           copy aprobado separado de la ficha de montaje — lo de arriba se pega
+           tal cual en Meta, lo de abajo se configura — y las piezas antiguas
+           siguen siendo un solo bloque de texto. */
+        if(pz.cuerpo){
+          if(pz.precio) push(P(pz.precio,{run:{bold:true,color:ORANGE}}));
+          push(P(pz.hook,{run:{bold:true,size:24}}));
+          push(P('TEXTO PRINCIPAL — se pega tal cual',{run:{bold:true,size:16,color:GREY}}));
+          push(...block(pz.cuerpo));
+          push(P('Titular: '+pz.titular+'   ·   Descripción: '+pz.descripcion,
+                 {run:{size:18,color:GREY}}));
+          push(P('CREATIVO',{run:{bold:true,size:16,color:GREY}}));
+          push(P(pz.creativo));
+          if(pz.guion){
+            push(P('GUION — 15 SEGUNDOS, PARA GRABAR',{run:{bold:true,size:16,color:GREY}}));
+            push(tbl(['Tiempo','Qué se ve','Qué dice Gabriel','Texto en pantalla'],
+                 pz.guion.map(g=>[g[0],g[1],g[2],g[3].replace(/\*\*/g,'')]),[1100,2600,3000,2300]));
+          }
+          if(pz.nota) push(P(pz.nota,{run:{italics:true,color:GREY}}));
+          push(P('PROMPT DE IMAGEN',{run:{bold:true,size:16,color:GREY}}));
+          push(...block(pz.prompt,LIGHT));
+          push(P('FICHA DE MONTAJE',{run:{bold:true,size:16,color:GREY}}));
+          push(tbl(['Campo','Cómo va'],pz.cfg.map(([k,v])=>[k,v]),[2400,6600]));
+        } else {
+          push(...block(pz.copy));
+        }
+        if(pz.condicion) push(P('⚠ '+pz.condicion,{run:{color:RED,bold:true}}));
+      });
+    });
+    push(H2("El copy completo de los anuncios base (ya probados)"));
+    CAL.pauta.forEach((id,i)=>push(renderPieza({id,fecha:'ANUNCIO '+(i+1),
+      formato_publicacion:'Imagen para pauta',redes:'Meta Ads (Instagram + Facebook)',
+      nota:'Copy completo listo para pegar. Las variantes nuevas de arriba se prueban CONTRA estos, nunca en su lugar.'},i)));
+  }
+
+  /* ── 5b · LEAD MAGNETS ──
+     Los recursos viven en su propio archivo (matriz/leadmagnets-septiembre.py)
+     porque son una entrega distinta: el archivo mas su embudo. Aqui solo se
+     rinde lo que el equipo necesita leer en papel. */
+  if(LM && LM.magnets){
+    push(pageBreak());
+    push(H1("5b · LEAD MAGNETS — los 3 recursos nuevos"));
+    push(note(LM.regla));
+    LM.magnets.forEach(m=>{
+      push(H2('▸ '+m.nombre+'  ·  palabra: '+m.palabra));
+      push(P(m.estado,{run:{bold:true,color:RED}}));
+      push(P(m.promesa,{run:{bold:true,size:24}}));
+      push(tbl(['Campo','Detalle'],[['Formato',m.formato],['Cuándo',m.cuando],
+        ['Para quién',m.para_quien],['Por qué este',m.por_que]],[2000,7000]));
+      push(P('QUÉ LLEVA DENTRO',{run:{bold:true,size:16,color:GREY}}));
+      m.contenido.forEach(x=>push(P('· '+x)));
+      push(P('NOTAS DE PRODUCCIÓN',{run:{bold:true,size:16,color:GREY}}));
+      m.produccion.forEach(x=>push(P('· '+x,{run:{italics:true}})));
+      push(P('CONFIGURACIÓN EN GOHIGHLEVEL',{run:{bold:true,size:16,color:GREY}}));
+      push(tbl(['Campo','Valor'],m.ghl.map(g=>[g[0],g[1]]),[2400,6600]));
+      m.posts.forEach(ps=>{
+        push(H3('Post de lanzamiento · '+ps.fecha+' · '+ps.formato));
+        push(P('Redes: '+ps.red,{run:{italics:true,color:GREY}}));
+        push(...block(ps.hook));
+        push(...block(ps.caption));
+        push(P('CTA: '+ps.cta,{run:{bold:true}}));
+        push(P('PROMPT DE IMAGEN',{run:{bold:true,size:16,color:GREY}}));
+        push(...block(ps.prompt,LIGHT));
+      });
+    });
+    push(H2('El montaje en GoHighLevel — el mismo para los tres'));
+    LM.pasos.forEach(([t,d])=>{ push(P(t,{run:{bold:true}})); push(P(d)); });
+    push(P(LM.incidente,{run:{color:RED}}));
+    push(H2('Prueba de punta a punta antes de publicar'));
+    LM.checklist.forEach(c=>push(P('☐  '+c)));
+  }
+
+  /* ── 6..N · UN CAPITULO POR GRUPO ── */
+  let sec=6;
+  CAL.grupos.forEach(g=>{
+    push(pageBreak());
+    push(H1(`${sec} · ${g.nombre}`));
+    sec++;
+    push(P(g.descripcion,{run:{italics:true,color:GREY}}));
+    (g.reglas||[]).forEach(r=>push(bul(r)));
+    push(H2("Calendario del grupo"));
+    push(tbl(["Fecha","Formato","Tipo","Pieza / idea"],
+      g.calendario.map(e=>[e.fecha,e.formato_publicacion,ICON[e.tipo]||e.tipo,
+        e.id ? (BY[e.id]?BY[e.id].titulo:'⚠️ SIN GUION: '+e.id)
+             : (e.idea?e.idea.titulo:'—')]),
+      [1600,2300,1400,6100]));
+    push(H2("Desarrollo de cada publicación"));
+    g.calendario.forEach((e,i)=>{
+      if(e.id){
+        push(renderPieza({redes:e.redes||'(las del grupo)',...e},i));
+      }else if(e.idea){
+        push(renderIdea(e));
+      }
+    });
+    /* El grupo de historias lleva ademas la rutina completa de stickers */
+    if(g.n===5 && GUI.historias_rutina){
+      const HR=GUI.historias_rutina;
+      push(H2("Qué sticker usar según lo que buscas"));
+      push(tbl(["Sticker","Qué te da","Cuándo usarlo","Cómo se cobra"],[
+       ["Encuesta (2 opciones)","Volumen de respuestas","Cuando quieres saber en qué bando está tu gente","DM a los que votan la opción «equivocada»"],
+       ["Quiz (con respuesta correcta)","Los que fallan","Cuando hay un dato técnico que sorprende","DM con la explicación a cada uno que falló. Es el lead más calificado"],
+       ["Caja de preguntas","Conversación real","Cuando quieres material y confianza","Contestar UNA POR UNA por DM"],
+       ["Deslizador (0-100%)","Participación fácil","Cuando quieres números, no charla","Poco valor de conversión: para calentar la cuenta"],
+       ["Cuenta regresiva","Recordatorio automático","Antes de un lanzamiento o del blog","Los que la activan reciben aviso solos"],
+       ["Enlace","Tráfico directo","Al blog, al post o al video","En historias el enlace SÍ va directo"],
+      ],[1900,1900,2900,3500]));
+      push(H2("Las reglas de siempre"));
+      (HR.reglas||[]).forEach(r=>push(bul(r)));
+      if(HR.destacadas){push(H2("Destacadas del perfil"));HR.destacadas.forEach(x=>push(bul(x)));}
+      push(note("Las secuencias de venta del jueves están escritas frame a frame en los guiones: venta-acero-cupos · venta-acero-objecion · venta-master-espejo · (tutor, cuando esté vivo)."));
+    }
+  });
+
+  /* ── LEAD MAGNETS ── */
+  if(CAL.lead_magnets){
+    push(pageBreak());
+    push(H1(`${sec} · LEAD MAGNETS — recursos gratis: qué existe y qué falta`));
+    sec++;
+    push(note(CAL.lead_magnets.nota));
+    push(H2("Existentes y a qué contenido del mes se vinculan"));
+    push(tbl(["Recurso","Palabra clave","Vinculado a"],
+      CAL.lead_magnets.existentes.map(l=>[l.nombre,l.palabra,l.vinculado_a]),
+      [2800,2300,6000]));
+    push(H2("Por crear desde cero"));
+    CAL.lead_magnets.por_crear.forEach(l=>{
+      push(H3(l.nombre+'  →  palabra sugerida: «'+l.palabra_sugerida+'»'));
+      push(P(l.para_que));
+    });
+    if(CAL.lead_magnets.mapa_cta){
+      push(H2("Mapa CTA → recurso: cada promesa del mes, verificada"));
+      if(CAL.lead_magnets.regla) push(P(CAL.lead_magnets.regla,{run:{color:RED,bold:true}}));
+      push(tbl(["Cuándo","Pieza","CTA","Recurso que entrega","Estado","Reemplazo si no llega"],
+        CAL.lead_magnets.mapa_cta.map(m=>[m.fecha,m.pieza,m.cta,m.recurso,m.estado,m.reemplazo]),
+        [1500,2400,900,2400,2000,2900]));
+    }
+  }
+
+}else{
+/* ── modo clasico: un solo calendario ── */
 push(pageBreak());
 push(H1("5 · Calendario del mes de un vistazo"));
-push(P("El desarrollo completo de cada una está en la sección 5, en este mismo orden.",{run:{color:GREY,italics:true}}));
-const ICON={valor:'🎯 valor','venta-blanda':'💰 venta',blog:'📝 blog',comunidad:'👥 comunidad',
-  empresa:'🏛️ empresa',youtube:'▶️ YouTube'};
+push(P("El desarrollo completo de cada una está en la sección 6, en este mismo orden.",{run:{color:GREY,italics:true}}));
 push(tbl(["Fecha","Formato","Tipo","Pieza","Redes"],
   CAL.piezas.map(e=>[e.fecha,e.formato_publicacion,ICON[e.tipo]||e.tipo,
     (BY[e.id]?BY[e.id].titulo:'⚠️ PENDIENTE — faltan tus datos'),e.redes]),
   [1500,1900,1300,3400,3300]));
-push(note("Semana 1 arranca con dos carruseles porque es el formato de mejor engagement de la cuenta (8.5%). Los reels se concentran en semanas 2 y 4 para no cargar la grabación."));
 
-/* ═══════════════════════════════ 5 · DESARROLLO ═══════════════════════════════ */
 push(pageBreak());
 push(H1("6 · Desarrollo completo, pieza por pieza"));
 push(P("Todo lo que está en bloque gris se copia y se pega tal cual. Lo que está en cursiva junto al ícono 🖼 es la indicación para diseño.",{run:{color:GREY,italics:true}}));
@@ -488,37 +669,49 @@ CAL.piezas.forEach((e,i)=>{
   push(renderPieza(e,i));
 });
 
-/* ═══════════════════════════════ 6 · HISTORIAS ═══════════════════════════════ */
 push(pageBreak());
 push(H1("7 · HISTORIAS — cómo se convierte con stories"));
 const HR=GUI.historias_rutina;
 push(P(HR.nota,{run:{color:GREY,italics:true}}));
 push(H2("Las 8 reglas"));
 HR.reglas.forEach(r=>push(bul(r)));
-push(note("Traducción a tu embudo: en el feed el CTA es «comenta ACERO / BIM / IA» y lo recoge el bot. En historias el CTA es el STICKER, y lo recoges tú por DM. Es el mismo camino — comentario o sticker → DM → conversación → venta."));
-
-push(H2("Qué sticker usar según lo que buscas"));
-push(tbl(["Sticker","Qué te da","Cuándo usarlo","Cómo se cobra"],[
- ["Encuesta (2 opciones)","Volumen de respuestas","Cuando quieres saber en qué bando está tu gente","DM a los que votan la opción «equivocada» — son los que necesitan lo que vendes"],
- ["Quiz (con respuesta correcta)","Los que fallan","Cuando hay un dato técnico que sorprende","DM con la explicación a cada uno que falló. Es el lead más calificado"],
- ["Caja de preguntas","Conversación real","Cuando quieres material y confianza","Contestar UNA POR UNA por DM. Republicar las mejores al día siguiente"],
- ["Deslizador (0-100%)","Participación fácil","Cuando quieres números, no charla","Poco valor de conversión: úsalo para calentar la cuenta"],
- ["Cuenta regresiva","Recordatorio automático","Antes de un video, un evento o un lanzamiento","Los que la activan reciben aviso solos. Cero trabajo"],
- ["Enlace","Tráfico directo","Al blog, al post o al video","En historias el enlace SÍ va directo (la regla de «nunca a landing» es solo para la pauta)"],
-],[1900,1900,2900,3500]));
-
 push(H2("La semana tipo de historias"));
 push(tbl(["Día","Qué se publica","Sticker"],
   HR.semana_tipo.map(s=>[s.dia,s.historia,s.sticker]),[1400,4900,3900]));
-
 push(H2("Destacadas del perfil"));
-push(P("Las buenas secuencias no se pierden a las 24 horas: se guardan en destacadas. Son la portada del perfil para quien te descubre.",{run:{color:GREY}}));
 HR.destacadas.forEach(x=>push(bul(x)));
-push(note("Cada pieza del mes tiene su secuencia de historias escrita frame por frame — está dentro del desarrollo de la pieza, en la sección 5."));
+}
 
-/* ═══════════════════════════════ 7 · PAUTA ═══════════════════════════════ */
+/* ═══════════════════════════════ 7b · CORREOS ═══════════════════════════════ */
+if(CAL.correos && CAL.correos.length){
+  push(pageBreak());
+  push(H1((CAL.grupos?"12":"8")+" · CORREOS del mes — campañas a la lista propia"));
+  push(P("Un correo por semana. El precio de ACERO puede ir en correo a lista propia; el del Máster no va nunca — el correo del Máster cierra a llamada.",{run:{color:GREY,italics:true}}));
+  CAL.correos.forEach(c=>{
+    push(H2(`${c.fecha} · ${c.nombre}`));
+    push(tbl(["Asunto","Preencabezado","Segmento","Objetivo"],
+      [[c.asunto,c.preencabezado,c.segmento,c.objetivo]],[2900,2600,2300,2400]));
+    if(c.condicion) push(P('⚠ '+c.condicion,{run:{color:RED,bold:true}}));
+    push(LBL("Cuerpo (se copia tal cual)"));
+    push(...block(c.cuerpo));
+  });
+}
+
+/* ═══════════════════════════════ 7c · COMUNIDADES ═══════════════════════════════ */
+if(CAL.comunidades){
+  push(pageBreak());
+  push(H1("9 · COMUNIDADES — la semana tipo (solo lunes a viernes)"));
+  push(P(CAL.comunidades.nota,{run:{color:GREY,italics:true}}));
+  push(tbl(["Día","Canales","Qué se publica","De dónde sale"],
+    CAL.comunidades.semana_tipo.map(s=>[s.dia,s.canales,s.contenido,s.fuente]),
+    [1100,2400,4200,2500]));
+  (CAL.comunidades.reglas||[]).forEach(r=>push(bul(r)));
+}
+
+/* ═══════════════════════════════ 7 · PAUTA (solo modo clasico; en grupos vive en la seccion 5) ═══ */
+if(!CAL.grupos){
 push(pageBreak());
-push(H1("8 · VENTA y PAUTA — los anuncios (copy listo)"));
+push(H1("10 · VENTA y PAUTA — los anuncios (copy listo)"));
 push(P("Estas piezas SÍ venden y van a pauta. Todas llevan a WhatsApp — nunca a landing. El dato es contundente: landing = CPL $164.64 · WhatsApp = CPL $0.45.",{run:{color:RED,bold:true}}));
 push(H2("Cómo se separa el contenido de valor del de venta"));
 push(tbl(["","CONTENIDO DE VALOR (orgánico)","VENTA / PAUTA (ads)"],[
@@ -533,10 +726,11 @@ push(note("Regla para las piezas de venta orgánica: NUNCA abrir con «inscríbe
 CAL.pauta.forEach((id,i)=>push(renderPieza({id,fecha:'ANUNCIO '+(i+1),
   formato_publicacion:'Imagen para pauta',redes:'Meta Ads (Instagram + Facebook)',
   nota:'Se activa en paralelo al contenido orgánico. El orgánico calienta; la pauta cierra.'},i)));
+}
 
 /* ═══════════════════════════════ 7 · BANCO DE RESERVA ═══════════════════════════════ */
 push(pageBreak());
-push(H1("9 · Banco de reserva (piezas listas por si se cae alguna)"));
+push(H1((CAL.grupos?"13":"11")+" · Banco de reserva (piezas listas por si se cae alguna)"));
 push(P("Estas piezas ya tienen su contenido completo escrito. Si una fecha se cae o quieres reforzar una red concreta, se toma de aquí sin tener que crear nada.",{run:{color:GREY}}));
 push(tbl(["Pieza","Formato","Red pensada","Hook"],
   CAL.banco_reserva.filter(id=>BY[id]).map(id=>{const p=BY[id];
@@ -545,14 +739,13 @@ push(tbl(["Pieza","Formato","Red pensada","Hook"],
 push(note("El contenido palabra por palabra de todas estas piezas está en el archivo guiones-completos.json del repositorio, que es el mismo que lee la app de contenido."));
 
 /* ═══════════════════════════════ 8 · CIERRE ═══════════════════════════════ */
-push(H1("10 · Resumen operativo y checklist"));
+push(H1((CAL.grupos?"14":"12")+" · Resumen operativo y checklist de publicación"));
 const cuenta={};
-CAL.piezas.forEach(e=>{const f=(e.formato_publicacion.split(' ')[0]||'').toUpperCase();
+const listaConteo=CAL.grupos?CAL.grupos[0].calendario:CAL.piezas;
+listaConteo.forEach(e=>{const f=(e.formato_publicacion.split(' ')[0]||'').toUpperCase();
   cuenta[f]=(cuenta[f]||0)+1;});
 push(tbl(["Formato","Piezas en el mes"],Object.entries(cuenta).map(([k,v])=>[k,String(v)]),[3600,2000]));
-push(note("El conteo incluye las 3 piezas pendientes de tus datos (Vie 22, Sáb 30 y Lun 31). Sin ellas: "+
-  (CAL.piezas.length-3)+" piezas con contenido ya escrito y listo para producir."));
-push(P("Proporción del mes: ~70% contenido de valor · ~30% venta (2 piezas de venta orgánica con gancho + los 3 anuncios de pauta de la sección 6). Del total, 3 piezas alimentan ACERO — el producto de mejor CPL, que hasta ahora el orgánico casi no cubría."));
+if(CAL.resumen_cierre) push(P(CAL.resumen_cierre));
 push(H2("Checklist antes de publicar cada pieza"));
 push(bul("¿Es NÚCLEO (BIM · IA · modelado · acero) y no obra genérica?"));
 push(bul("¿Tiene algo concreto en pantalla (demo, captura, esquema) y no solo alguien hablando?"));
@@ -560,13 +753,13 @@ push(bul("¿Cierra con una PREGUNTA directa sobre una duda real del que mira?"))
 push(bul("¿El CTA es el correcto — ACERO o BIM/IA — y está adaptado si va a LinkedIn?"));
 push(bul("¿Se publicó también en Facebook, cuidado y no como auto-repost?"));
 push(bul("¿Se registró en la matriz con sus métricas, incluidas las de Facebook?"));
-push(H2("Lo que falta que me pases"));
-push(bul("Vie 22 — el proyecto o caso de alumno (nombre, antes/después, qué estudió, resultado)."));
-push(bul("Sáb 30 — los datos de la conferencia o convención (nombre, fecha, quién expone, tema)."));
-push(bul("Mié 13 — si el nuevo lead magnet BIM+IA está listo, entra ahí y desplaza la pieza de venta."));
+if(CAL.pendientes && CAL.pendientes.length){
+  push(H2("Lo que falta para poder ejecutar el mes completo"));
+  CAL.pendientes.forEach(x=>push(bul(x)));
+}
 push(new Paragraph({spacing:{before:340},
   border:{top:{style:BorderStyle.SINGLE,size:8,color:"D9E0E7",space:8}},
-  children:[new TextRun({text:"Design Modeling Academy · Matriz de contenido agosto 2026 · Construida sobre la matriz viral (124 reels) y el rendimiento real de las campañas activas",size:17,color:GREY})]}));
+  children:[new TextRun({text:CAL.pie||("Design Modeling Academy · Matriz de contenido "+MES_TITULO+" "+ANIO+" · Construida sobre la matriz viral y el rendimiento real de las campañas activas"),size:17,color:GREY})]}));
 
 /* ═══════════════════════════════ SALIDA ═══════════════════════════════ */
 const doc=new Document({styles:{default:{document:{run:{font:"Calibri"}}}},

@@ -1,0 +1,295 @@
+<title>Tutor IA de Acero</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700;800&family=Nunito:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap">
+<style>
+:root{
+  --papel:#F7F5F0; --tarjeta:#FFFFFF; --hundido:#EEEAE2;
+  --tinta:#122436; --tinta-2:#4B5D6D; --tinta-3:#7B8C99;
+  --linea:#DFD8CC; --linea-fuerte:#C3B9A8;
+  --ambar:#B4701A; --ambar-vivo:#E8A04A;
+  --tesis-fondo:#122436; --tesis-texto:#F7F5F0;
+  --si:#1F6F52; --si-fondo:#E6F1EB;
+  --no:#9E3624; --no-fondo:#F8E9E5;
+  --display:'Overpass',system-ui,sans-serif;
+  --cuerpo:'Nunito',system-ui,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --papel:#0C1926; --tarjeta:#132639; --hundido:#0A1420;
+  --tinta:#EAF0F5; --tinta-2:#A7BAC9; --tinta-3:#778DA0;
+  --linea:#22415B; --linea-fuerte:#365A76;
+  --ambar:#E8A04A;
+  --tesis-fondo:#1D3A54; --tesis-texto:#F2F7FB;
+  --si:#5FC79C; --si-fondo:#0F2E24;
+  --no:#E4907E; --no-fondo:#361B16;
+}}
+:root[data-theme="dark"]{
+  --papel:#0C1926; --tarjeta:#132639; --hundido:#0A1420;
+  --tinta:#EAF0F5; --tinta-2:#A7BAC9; --tinta-3:#778DA0;
+  --linea:#22415B; --linea-fuerte:#365A76;
+  --ambar:#E8A04A;
+  --tesis-fondo:#1D3A54; --tesis-texto:#F2F7FB;
+  --si:#5FC79C; --si-fondo:#0F2E24;
+  --no:#E4907E; --no-fondo:#361B16;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--papel);color:var(--tinta);font-family:var(--cuerpo);
+  font-size:16px;line-height:1.62;-webkit-font-smoothing:antialiased}
+.env{max-width:940px;margin:0 auto;padding:40px 22px 80px}
+
+/* ── cabecera ── */
+.cab{border-bottom:3px solid var(--tinta);padding-bottom:22px;margin-bottom:34px}
+.eyebrow{font-family:var(--display);font-weight:800;font-size:11.5px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--ambar);margin:0 0 10px}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(34px,5.6vw,52px);line-height:1.04;
+  margin:0 0 14px;text-wrap:balance;letter-spacing:-.015em}
+.entrada{font-size:18.5px;color:var(--tinta-2);max-width:62ch;margin:0}
+.para-quien{margin-top:20px;font-size:14px;color:var(--tinta-3)}
+
+/* ── la frase de una linea ── */
+.tesis{background:var(--tesis-fondo);color:var(--tesis-texto);border-radius:3px;
+  padding:26px 28px;margin:30px 0 40px}
+.tesis p{margin:0;font-family:var(--display);font-weight:700;font-size:21px;line-height:1.4;
+  text-wrap:balance}
+.tesis b{color:var(--ambar-vivo)}
+
+h2{font-family:var(--display);font-weight:800;font-size:25px;margin:52px 0 6px;
+  letter-spacing:-.01em;text-wrap:balance}
+h2+.sub{color:var(--tinta-2);font-size:15.5px;margin:0 0 22px;max-width:64ch}
+
+/* ── hace / no hace ── */
+.dos{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.col{border:1px solid var(--linea);border-radius:4px;overflow:hidden;background:var(--tarjeta)}
+.col>h3{margin:0;font-family:var(--display);font-weight:800;font-size:13px;letter-spacing:.1em;
+  text-transform:uppercase;padding:12px 18px}
+.col.si>h3{background:var(--si-fondo);color:var(--si)}
+.col.no>h3{background:var(--no-fondo);color:var(--no)}
+.col ul{list-style:none;margin:0;padding:6px 18px 18px}
+.col li{padding:12px 0;border-bottom:1px solid var(--linea);font-size:15px}
+.col li:last-child{border-bottom:0}
+.col li b{display:block;font-family:var(--display);font-weight:700;font-size:15.5px;margin-bottom:2px}
+.col li span{color:var(--tinta-2);font-size:14px}
+
+/* ── ejemplos reales ── */
+.ej{border-left:3px solid var(--linea-fuerte);padding-left:20px;margin:22px 0 30px}
+.preg{font-family:var(--display);font-weight:700;font-size:17px;margin:0 0 10px}
+.preg::before{content:"Alumno · ";color:var(--tinta-3);font-weight:400;font-size:12px;
+  letter-spacing:.08em;text-transform:uppercase}
+.resp{background:var(--tarjeta);border:1px solid var(--linea);border-radius:4px;padding:16px 18px;
+  font-size:15px;margin:0}
+.resp .quien{font-family:var(--display);font-weight:800;font-size:10.5px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--ambar);display:block;margin-bottom:8px}
+.fuente{display:block;margin-top:12px;padding-top:11px;border-top:1px dashed var(--linea);
+  font-family:var(--mono);font-size:12.5px;color:var(--tinta-2);word-break:break-word}
+.lectura{margin:10px 0 0;font-size:14px;color:var(--tinta-2);font-style:italic}
+
+/* ── frases para decirle al cliente ── */
+.decir{display:grid;gap:14px}
+.frase{background:var(--tarjeta);border:1px solid var(--linea);border-left:4px solid var(--ambar-vivo);
+  border-radius:0 4px 4px 0;padding:15px 18px}
+.frase .cuando{font-family:var(--display);font-weight:800;font-size:11px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--tinta-3);display:block;margin-bottom:6px}
+.frase p{margin:0;font-size:15.5px}
+
+/* ── tabla ── */
+.scroll{overflow-x:auto;border:1px solid var(--linea);border-radius:4px;background:var(--tarjeta)}
+table{border-collapse:collapse;width:100%;min-width:520px;font-size:14.5px}
+th{background:var(--hundido);font-family:var(--display);font-weight:800;font-size:11.5px;
+  letter-spacing:.09em;text-transform:uppercase;text-align:left;padding:11px 16px;color:var(--tinta-2)}
+td{padding:12px 16px;border-top:1px solid var(--linea);vertical-align:top}
+td:first-child{font-weight:700;white-space:nowrap}
+
+.aviso{background:var(--no-fondo);border-left:4px solid var(--no);border-radius:0 4px 4px 0;
+  padding:16px 20px;margin:26px 0;font-size:15.5px}
+.aviso b{font-family:var(--display)}
+.pie{margin-top:60px;padding-top:22px;border-top:1px solid var(--linea);
+  font-size:13.5px;color:var(--tinta-3)}
+.pie code{font-family:var(--mono);font-size:12.5px;color:var(--ambar);word-break:break-all}
+a{color:var(--ambar)}
+a:focus-visible{outline:2px solid var(--ambar-vivo);outline-offset:2px}
+</style>
+
+<div class="env">
+
+<header class="cab">
+  <p class="eyebrow">Design Modeling Academy · Especialización en Acero</p>
+  <h1>Tutor IA de Acero</h1>
+  <p class="entrada">Qué hace, qué no hace, y cómo explicárselo a un alumno que
+  pregunta. Todas las respuestas de esta página salieron del tutor real, no son
+  ejemplos inventados.</p>
+  <p class="para-quien">Para Ester, Aylin y Pilar · Actualizado el 3 de septiembre de 2026</p>
+</header>
+
+<div class="tesis">
+  <p>No es un chatbot que sabe de acero. Es un buscador dentro de las 135 horas
+  de clase del alumno que además <b>le dice en qué sesión y en qué minuto</b>
+  está la respuesta.</p>
+</div>
+
+<h2>Lo que hace y lo que no</h2>
+<p class="sub">Esta es la parte que de verdad van a preguntar. La columna de la
+derecha no son limitaciones que disculpar: son decisiones, y explicarlas bien es
+lo que hace que el alumno confíe en la columna de la izquierda.</p>
+
+<div class="dos">
+  <div class="col si">
+    <h3>Sí hace</h3>
+    <ul>
+      <li><b>Responde con las clases del alumno</b>
+        <span>Los 4 cursos de la Especialización: Acero, Cerchas y Naves, Modelado BIM y Uniones.</span></li>
+      <li><b>Dice la sesión y el minuto</b>
+        <span>Para que pueda volver al video y verlo explicado por el instructor, no solo leerlo.</span></li>
+      <li><b>Avisa cuando algo no está</b>
+        <span>Y manda a la asesoría. Es lo que lo separa de un chatbot cualquiera.</span></li>
+      <li><b>Está disponible a las 2 de la mañana</b>
+        <span>Que es cuando la gente estudia y se traba.</span></li>
+    </ul>
+  </div>
+  <div class="col no">
+    <h3>No hace</h3>
+    <ul>
+      <li><b>No dicta cifras de norma</b>
+        <span>Las transcripciones automáticas deforman los números. Remite a la norma vigente en vez de arriesgarse.</span></li>
+      <li><b>No firma ni reemplaza al ingeniero</b>
+        <span>Es apoyo al estudio. El criterio y la responsabilidad siguen siendo de quien firma.</span></li>
+      <li><b>No sabe de otros programas</b>
+        <span>Del Máster, de hormigón o de BIM 4D dirá que no está en el material. A propósito.</span></li>
+      <li><b>No da precios</b>
+        <span>De ningún programa, ni el suyo.</span></li>
+    </ul>
+  </div>
+</div>
+
+<h2>Cómo se ve una respuesta</h2>
+<p class="sub">Tres casos reales, pedidos al tutor el 3 de septiembre. El
+tercero es el que conviene enseñar cuando alguien duda de si «la IA se
+inventa cosas».</p>
+
+<div class="ej">
+  <p class="preg">¿Qué es el pandeo?</p>
+  <div class="resp">
+    <span class="quien">Tutor DMA</span>
+    El pandeo es un fenómeno de inestabilidad que ocurre en elementos
+    estructurales esbeltos cuando están sometidos a compresión.
+    <span class="fuente">FUENTES: Acero · Sesión 6 · min 91:59</span>
+  </div>
+  <p class="lectura">Responde, y el alumno puede abrir la sesión 6 en el minuto 91 y verlo.</p>
+</div>
+
+<div class="ej">
+  <p class="preg">¿Se enseña IdeaStatica en el curso?</p>
+  <div class="resp">
+    <span class="quien">Tutor DMA</span>
+    Sí, IdeaStatica se enseña en el curso. Por ejemplo, en la clase
+    «Uniones · Conexiones Video 5» se trabaja con este software para el diseño
+    de una conexión tipo RBS.
+    <span class="fuente">FUENTES: Uniones · Conexiones Video 5 · Diseño Conexión Tipo RBS 358-16 con IdeaStatica · min 00:02</span>
+  </div>
+  <p class="lectura">Sirve también para vender: contesta qué herramientas se enseñan, con la clase donde se ven.</p>
+</div>
+
+<div class="ej">
+  <p class="preg">¿Qué factor de seguridad uso para puentes colgantes?</p>
+  <div class="resp">
+    <span class="quien">Tutor DMA</span>
+    Eso no está cubierto en el material de la Especialización. Los cuatro cursos
+    cubren edificaciones y naves en acero; ingeniería de puentes no se trata en
+    las clases, y no te voy a inventar una respuesta. Si es para un proyecto
+    tuyo, llévalo a la asesoría personalizada con los instructores.
+  </div>
+  <p class="lectura">Esta es la respuesta más valiosa de las tres. Un tutor que
+  inventa un factor de seguridad es un riesgo; uno que lo admite es una
+  herramienta.</p>
+</div>
+
+<h2>Qué decirle al cliente</h2>
+<p class="sub">Frases listas, según lo que pregunten. Adaptar el tono, no el fondo.</p>
+
+<div class="decir">
+  <div class="frase">
+    <span class="cuando">Si preguntan qué es</span>
+    <p>«Es un tutor entrenado con las clases de tu propia especialización. Le
+    preguntas una duda y te dice en qué sesión y en qué minuto el instructor lo
+    explica, sin que tengas que buscar entre horas de video.»</p>
+  </div>
+  <div class="frase">
+    <span class="cuando">Si preguntan si se lo inventa</span>
+    <p>«No responde de memoria: responde solo con lo que está en tus clases, y
+    siempre te dice de cuál sale. Si algo no está en el material, te lo dice en
+    vez de inventarlo.»</p>
+  </div>
+  <div class="frase">
+    <span class="cuando">Si preguntan si reemplaza al instructor</span>
+    <p>«No. Te ubica dentro del curso y te desatasca a cualquier hora, pero para
+    tu proyecto concreto está la asesoría con el instructor, que es donde se
+    revisa tu caso.»</p>
+  </div>
+  <div class="frase">
+    <span class="cuando">Si es un alumno que ya compró</span>
+    <p>«Ya lo tienes activo en tu curso, no hay que hacer nada ni pagar nada
+    aparte. Está arriba, en la portada.»</p>
+  </div>
+  <div class="frase">
+    <span class="cuando">Si preguntan por el precio nuevo</span>
+    <p>«La Especialización pasó a $225 porque ahora incluye el tutor. Quien ya
+    compró lo recibe igual, sin costo adicional.»</p>
+  </div>
+  <div class="frase">
+    <span class="cuando">Si preguntan si sirve para el Máster</span>
+    <p>«Todavía no. Hoy conoce las clases de la Especialización en Acero. Los
+    cursos del Máster se van sumando después.»</p>
+  </div>
+</div>
+
+<div class="aviso">
+  <b>Lo único que no se puede decir.</b> No prometer que el tutor resuelve un
+  cálculo o valida un diseño. Explica lo que está en las clases y remite a la
+  norma cuando le piden un valor normativo — y esa es exactamente la razón por
+  la que se puede confiar en él.
+</div>
+
+<h2>Si algo falla</h2>
+<p class="sub">En este orden. Los dos últimos casos no son fallos aunque lo parezcan.</p>
+
+<div class="scroll">
+<table>
+  <thead><tr><th>Qué se ve</th><th>Qué significa</th></tr></thead>
+  <tbody>
+    <tr><td>La página no carga</td><td>Abrir el enlace directamente en el navegador. Si tampoco carga, avisar a Dayana.</td></tr>
+    <tr><td>«Token inválido»</td><td>Casi siempre es que el servidor estaba reiniciándose. Esperar dos minutos y recargar con Ctrl+Shift+R.</td></tr>
+    <tr><td>No responde nada</td><td>Permisos del dominio. Es de Dayana.</td></tr>
+    <tr><td>«Alcanzaste tus preguntas de hoy»</td><td>No es un fallo: son 20 al día por persona. Mañana se reinician.</td></tr>
+    <tr><td>«Eso no está en el material»</td><td>Tampoco es un fallo. Es el tutor haciendo bien su trabajo.</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>Los límites, dichos completos</h2>
+<div class="scroll">
+<table>
+  <thead><tr><th>Qué</th><th>Cuánto</th></tr></thead>
+  <tbody>
+    <tr><td>Cursos que conoce</td><td>4 — Acero, Cerchas y Naves, Modelado BIM, Uniones. 135 horas, 3.393 bloques de clase indexados.</td></tr>
+    <tr><td>Preguntas por persona</td><td>20 al día. Se reinician a medianoche.</td></tr>
+    <tr><td>Preguntas en total</td><td>600 al día entre todos los alumnos.</td></tr>
+    <tr><td>Quién puede entrar</td><td>Cualquiera que llegue a la página desde el área de miembros. No hay claves por alumno.</td></tr>
+    <tr><td>Temas que no cubre</td><td>Hormigón armado (salvo su modelado en Revit), puentes, madera, y todo lo del Máster.</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="aviso" style="background:var(--si-fondo);border-left-color:var(--si)">
+  <b>Lo que hay que ir anotando.</b> Cuando un alumno diga que el tutor
+  respondió mal o que no encontró algo, apuntar la pregunta tal cual la escribió.
+  Eso vale más que cualquier prueba interna: son las preguntas reales de alguien
+  estudiando, y son las que dicen qué hay que mejorar.
+</div>
+
+<footer class="pie">
+  El tutor vive en
+  <code>designmodelingdg-droid.github.io/meta-ads-dashboard.html/tutor-acero/</code><br>
+  Design Modeling Academy · documento interno, no se comparte con alumnos tal cual.
+</footer>
+
+</div>

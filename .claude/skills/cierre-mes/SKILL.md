@@ -48,8 +48,12 @@ opportunity_source`.
 **Agrupar así:** Máster (pipelines Máster High Ticket + Máster BIM+IA) ·
 Especialización Acero (etapas INSCRITO ACERO / ACERO 2 / OTRO, viven en el
 pipeline "OLYMPUS CURSOS LOWCOST" y en "ESPECIALIZACIONES") · Cursos lowcost
-(~$27) · Diplomados. Precios de referencia: Máster $2,699.99 (entrada $500 o
-matrícula $499.99 + $160/mes) · Acero $199.99 (promo $100).
+(~$27) · Diplomados. **Precios (cambiaron en septiembre — usar estos):** el Máster ya NO se cotiza
+como programa de 12 meses, se vende POR MÓDULOS: BIM Professional $750 · BIM
+Coordination $750 · BIM Management $600 · BIM + IA $900. La ruta completa
+(~$3.000 sueltos) la maneja el closer, y NO va en ninguna pieza publicada.
+Acero pasó de $199.99 a **$225 desde el 3-sep**, porque ahora incluye el tutor
+de IA. Al cerrar un mes anterior a septiembre, usar los precios de ese mes.
 
 **Pipelines (IDs):** Máster HT `fOeASz8t5bzDPA0SXTWq` · Máster BIM+IA
 `Ap8J7yGAiijJCHXSBxOB` · Especializaciones `WoSW1cuowh9wXwKotAeW` · Cursos
@@ -87,6 +91,13 @@ Facebook · `sales-agent` / `Instagram` → orgánico/bot. Calcular ROAS real po
 campaña (ingreso atribuido / gasto) y señalar: campañas con gasto sin ventas
 atribuidas, y ventas sin fuente (van a la lista de higiene).
 
+## 3b. Lo que trae la matriz del mes que abre
+
+Antes de las metas, mirar la pestaña de la matriz del mes nuevo y traerse a la
+presentación lo que cambia la operación: productos con precio nuevo, campañas
+que salen, recursos gratuitos por crear y lo que bloquea a qué. El cierre no es
+solo mirar atrás; la mitad de la reunión es qué se hace distinto.
+
 ## 4. Orgánico
 
 Sacar los datos del análisis del repo (`matriz-viral/matriz/`) y/o de la matriz
@@ -110,11 +121,49 @@ pauta→ventas (tabla + 3 hallazgos) · Orgánico · Ventas reales (bloques suma
 al total) · Higiene CRM (checklist nominal para el equipo) · Plan del mes ·
 Meta con la matemática por producto · Closer/Setter · Próximos pasos.
 
-Estilo: ejecutivo, azul marino + naranja (marca DMA), cifras grandes,
+**El tema NO se elige por palabras: la cuenta tiene dos temas propios de DMA.**
+`themeId: 5tee2tx4zjbm9go` es **DM-FondoAzul** (el de la marca, azul marino) y
+`aas0rvhn9qj2w93` es **DM-FondoBlanco**. Usar el azul salvo que Dayana pida
+otra cosa — sin `themeId` sale el tema genérico de Gamma, que es azul-violeta y
+no es la marca. Se descubrió al generar el cierre de agosto: la primera corrida
+salió con el tema por defecto y hubo que rehacerla.
+
+Estilo: ejecutivo, cifras grandes,
 `textMode: preserve`, `cardSplit: inputTextBreaks`, y para que no invente
 imágenes: `imageOptions: {"source": "noImages"}` con las URLs reales en el
-texto. Al terminar: exportar a **pptx y pdf** y entregar los links de descarga
+texto. Las imágenes de los creativos ganadores se copian a
+`cierre-<mes>/img/` y se publican por GitHub Pages (`publish-matriz.yml`), NO
+por `raw.githubusercontent`: la rama de trabajo desaparece con el merge y el
+mazo se queda con huecos. Al terminar: exportar a **pptx y pdf** y entregar los links de descarga
 (caducan en ~1 semana — avisarlo).
+
+## Lo que dejó el cierre de agosto (para no repetir el trabajo)
+
+El cierre de cada mes se guarda en `matriz-viral/cierres/<AAAA-MM>.json` con
+ventas, pauta, orgánico, hallazgos, higiene y la matemática de la meta. Antes
+de armar el mes siguiente, LEER el anterior: la comparación es la mitad del
+valor de la reunión y sin el archivo hay que reconstruirla a mano.
+
+Cuatro cosas que agosto enseñó sobre el método mismo:
+
+- **El archivo de campañas puede tener otra ventana que la de las ventas.**
+  `por-campana.json` se genera con su propia fecha; si no coincide con la
+  ventana del mes, decirlo en la presentación en vez de mezclar.
+- **La reunión suele caer antes del día 5**, así que el cierre llega hasta el
+  día anterior. Anotarlo: al comparar dos meses hay que saber que uno tiene
+  menos días.
+- **Mirar las oportunidades en $0 antes de contarlas.** No todas son ventas sin
+  monto: en agosto ocho eran reservas de un curso gratuito marcadas como
+  ganadas, y dos eran pruebas. Un pipeline que marca ganado lo gratuito hace
+  que el conteo de ganados no signifique nada.
+- **Los anuncios ganadores se cuentan por imagen, no por fila.** El volcado de
+  Meta lista un anuncio por conjunto, así que el mismo creativo aparece varias
+  veces con nombres casi iguales. En agosto los 6 primeros eran 2 imágenes:
+  `md5sum` sobre los archivos lo resuelve en un segundo, y cambia lo que se
+  dice en la reunión — no son seis piezas que funcionan, es una dependencia de
+  dos. Antes de mostrarlas, abrirlas: la portada que devuelve la API para un
+  anuncio de video viene desenfocada y en ~28 KB (hay que usar un fotograma),
+  y hay que comprobar que el precio impreso siga siendo el vigente.
 
 ## Reglas no negociables
 

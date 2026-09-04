@@ -9,6 +9,7 @@ name: Publicar matriz.json (GitHub Pages)
 # URLs públicas resultantes:
 #   https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/matriz.json
 #   https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/calculadora-zapatas/
+#   https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/tutor-acero/
 
 on:
   push:
@@ -27,6 +28,9 @@ on:
       - test-nivel-bim/**
       - recursos/**
       - eficiencia-acero/**
+      - tutor-acero/**
+      - cierre-agosto/**
+      - .github/workflows/publish-matriz.yml
   workflow_dispatch: {}                      # permite correrla a mano desde la pestaña Actions
 
 # El token integrado solo necesita poder escribir en la rama gh-pages
@@ -64,6 +68,10 @@ jobs:
           cp -r recursos public/recursos
           # Lead magnet: guia de las 5 verificaciones + verificador de eficiencia
           cp -r eficiencia-acero public/eficiencia-acero
+          # Tutor de IA de la Especializacion en Acero (se embebe en GHL)
+          cp -r tutor-acero public/tutor-acero
+          # Creativos ganadores del cierre de mes (los usa el mazo de la reunion)
+          cp -r cierre-agosto public/cierre-agosto
           # Sin procesamiento Jekyll
           touch public/.nojekyll
           # index mínimo para que la raíz no dé 404 y sirva de estado
@@ -80,9 +88,28 @@ jobs:
           HTML
           echo "Publicando $(python3 -c "import json;print(len(json.load(open('public/matriz.json'))['reels']))") reels."
 
+      # keep_files: true es obligatorio, no una preferencia.
+      #
+      # Esta workflow corre desde cinco ramas distintas y cada rama tiene su
+      # propia lista de carpetas que copiar. Sin keep_files, cada publicacion
+      # REEMPLAZA el sitio entero: la ultima rama que publique borra lo que
+      # publicaron las demas.
+      #
+      # Paso de verdad el 4-sep-2026. Un commit en la rama por defecto
+      # ("Metricas semanales automaticas") disparo esta workflow desde una
+      # version que todavia no copiaba tutor-acero/, y el tutor de IA de la
+      # Especializacion en Acero se cayo del sitio publicado. Esa es la
+      # direccion que esta en las instrucciones de Ester y Aylin y en el boton
+      # que va dentro de los 4 cursos de GoHighLevel: un alumno que la abriera
+      # en esas dos horas se encontro un 404.
+      #
+      # El costo de keep_files es que un archivo borrado del repo se queda en
+      # gh-pages hasta que alguien lo saque a mano. Es infinitamente mas barato
+      # que tumbar una pagina que le prometimos a un alumno que pago.
       - name: Publicar en la rama gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: public
+          keep_files: true
           commit_message: 'Publicar sitio (matriz + calculadora de zapatas)'
