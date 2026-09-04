@@ -1,8 +1,8 @@
 # Inventario de correos — GoHighLevel
 
-Generado el 2026-09-01.
+Generado el 2026-09-04.
 
-**394 plantillas** en **44 carpetas**. 394 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
+**396 plantillas** en **44 carpetas**. 396 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
 
 > Lo que NO sale por API: que workflow usa que plantilla. El endpoint de automatizaciones devuelve solo metadatos. En esta cuenta las plantillas estan nombradas por su flujo, asi que el cruce se puede hacer leyendo.
 
@@ -213,6 +213,33 @@ Hey {{communities_contacts.receiverName}}
 Join now to start collaborating!
 Accept Invite
 Link will expire after 30 days.
+```
+
+### DMA App · Leadmagnet · Descarga tu recurso gratuito de BIM + IA
+
+- **id:** `6a97529b65bd030eb3c5ca24`
+- **tipo:** html
+- **actualizada:** 2026-09-01T22:33:00.725Z
+- **Cuerpo:**
+
+```
+Una guía editable para aplicar mejores decisiones técnicas en tus proyectos y avanzar con más claridad profesional.
+Sube imagen: Design Modeling DG
+Recurso gratuito
+Design Modeling
+Leadmagnet DMA
+Descarga tu recurso gratuito de BIM + IA
+Una guía editable para aplicar mejores decisiones técnicas en tus proyectos y avanzar con más claridad profesional.
+Sube imagen: Descarga tu recurso gratuito de BIM + IA
+Qué incluye
+✅ Un marco simple para revisar tus procesos BIM actuales.
+✅ Ideas prácticas para integrar IA sin perder control técnico.
+✅ Un checklist para detectar oportunidades rápidas de mejora.
+Descargar guía
+Guarda este recurso y úsalo como punto de partida para tu siguiente mejora profesional.
+Design Modeling DG S.A.S
+BIM Consulting & Academy · @design_modeling_dg
+Si no deseas recibir más correos, date de baja aquí .
 ```
 
 ### Novedades DMA Mayo 2026
@@ -7502,222 +7529,457 @@ No te lo pierdas, tendremos promociones especiales para los participantes con st
 Presentado por:
 ```
 
-## ✅ ACCESO COMUNIDAD INSCRITOS
+## ⚠️ AUTOMATIZACIONES PIPELINE > ⚠️ CURSOS LOWCOST > ⚠️SEG OPORTUNIDAD FUTURA + NO CALIFICADO
 
-### ✅Acceso Comunidad - Colección Autodesk + IA
+### 🟢Seguimiento 01 quienes somos
 
-- **id:** `6a75eff196dc697014d6db84`
+- **id:** `6a887c4bbc3bac7221b9cd78`
 - **tipo:** html
-- **actualizada:** 2026-08-12T00:05:13.715Z
+- **actualizada:** 2026-09-04T15:02:05.720Z
 - **Cuerpo:**
 
 ```
-Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
-Imagenes embebidas en base64. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
-REEMPLAZAR: https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a7bb6cc4e002388f44657c3.mp4 -> link del video (aparece 2 veces)
--->
-Tu acceso a la Comunidad del Paquete Colección Autodesk + IA ya está activo. Ingresa aquí.
-Paquete Colección Autodesk + IA
-Acceso a la Comunidad concedido
-Hola {{contact.first_name}} ,
-Gracias por tu compra y bienvenido a la Comunidad del Paquete Colección Autodesk + IA .
-Ahí vas a acompañar tu avance por todo el paquete: Revit, Civil 3D, Navisworks, Robot y las herramientas de IA aplicadas a cada software.
-Tu acceso ya está activo. Entra desde el botón de abajo:
-Ir a la Comunidad &#8594;
-Dentro de la comunidad vas a encontrar:
-&#128204; Ruta recomendada para avanzar por los softwares del paquete
-&#129302; Prompts y flujos de IA aplicados a cada herramienta Autodesk
-&#128736; Soporte técnico con los instructores de cada módulo
-&#128193; Archivos de práctica y plantillas descargables
-Tutorial en video &middot; 1:50
-Cómo ingresar a tu comunidad, paso a paso
-Te mostramos dónde encontrar tus canales, cómo publicar y cómo activar las notificaciones.
-&#9654; Ver el tutorial
-Este enlace y su contenido son de uso exclusivo del destinatario y pueden contener información
-confidencial. Si lo recibiste por error, notifícanos de inmediato y abstente de compartirlo.
-Queda prohibida su distribución, difusión o copia no autorizada.
-¿No puedes ver el botón?
-Ver Comunidad
-Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+M&aacute;s de 5 a&ntilde;os formando ingenieros en LATAM, EE.UU. y Europa.
+Qui&eacute;nes somos
+&iquest;Design Modeling Academy? &iquest;Y ustedes qui&eacute;nes son?
+Hola
+{{contact.first_name}} ,
+Es una
+pregunta justa, y preferimos respond&eacute;rtela nosotros antes de que tengas que buscarla.
+Design
+Modeling DG lleva m&aacute;s de 5 a&ntilde;os formando
+ingenieros y arquitectos en Latinoam&eacute;rica, Estados Unidos y Europa, con m&aacute;s de
+4.000 estudiantes egresados .
+No somos
+una academia que graba videos y los vende. Somos centro autorizado por las marcas cuyo software
+ense&ntilde;amos, y nuestras titulaciones tienen validez universitaria real fuera del Ecuador. Eso es lo
+que nos diferencia, y es verificable.
++5
+a&ntilde;os &middot; +4.000 egresados &middot; 3
+continentes
+LATAM &middot; Estados Unidos &middot; Europa
+Nuestros avales, uno por uno:
+&#10003;
+Autodesk Authorized Training Center desde enero de
+2022.
+&#10003; Primer
+Authorized Partner de CYPE en Latinoam&eacute;rica, y
+Professional Certification Center desde noviembre de 2023.
+&#10003; Titulaci&oacute;n
+universitaria v&aacute;lida en EE.UU., M&eacute;xico y Europa:
+Sabal University (Florida, licencia No. 11494) y
+Universidad de las Naciones (M&eacute;xico), a
+trav&eacute;s de Doctrina Qualitas.
+&#10003;
+Certificado del Ministerio de Trabajo del Ecuador
+(SETEC), con valor para tu hoja de vida en el pa&iacute;s.
+&#10003;
+Microcredenciales NFT en blockchain , verificables de
+forma inalterable en cualquier parte del mundo.
+&#127891; Lo que emitimos al finalizar
+Certificados internacionales
+Autodesk
+Completaci&oacute;n del curso
+Doctrina Qualitas
+Certificado Universitario Internacional
+Modeling-DG S.A.S.
+Certificado Internacional de horas
+Diplomas universitarios
+Sabal University
+Titulaci&oacute;n en EE.UU. &middot; Florida
+U. de las Naciones
+Titulaci&oacute;n en M&eacute;xico
+ISTE Espa&ntilde;a
+T&iacute;tulo propio &middot; Europa
+Lo que
+dicen quienes ya pasaron por aqu&iacute;:
+&ldquo;Una experiencia excelente, con acompa&ntilde;amiento total durante todo el
+proceso.&rdquo;
+Javier Sol&oacute;rzano
+&#9733;&#9733;&#9733;&#9733;&#9733;
+&ldquo;La mejor decisi&oacute;n que he tomado en mi formaci&oacute;n profesional.&rdquo;
+Albino Pi&ntilde;eiro
+&#9733;&#9733;&#9733;&#9733;&#9733;
+Si quieres
+revisar cada acreditaci&oacute;n con sus enlaces oficiales, est&aacute;n todas aqu&iacute;:
+Conocer nuestras acreditaciones
+Un gusto tenerte
+por aqu&iacute;,
+El equipo de Design Modeling Academy
+Design
+Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
 designmodelingacademy.com
-**** Este es un correo electrónico generado por el sistema ****
 {{unsubscribe_url}}
 ```
 
-### ✅Acceso Comunidad - Cursos y Especializaciones
+### 🟢Seguimiento 02 test nivel bim
 
-- **id:** `6a75ef5f75d3d22c319df737`
+- **id:** `6a887c717e0c28b36812d626`
 - **tipo:** html
-- **actualizada:** 2026-08-12T00:04:43.225Z
+- **actualizada:** 2026-09-04T15:02:39.368Z
 - **Cuerpo:**
 
 ```
-Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
-Imagenes embebidas en base64. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
-REEMPLAZAR: https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a7bb6cc4e002388f44657c3.mp4 -> link del video (aparece 2 veces)
--->
-Tu acceso a la Comunidad de Cursos y Especializaciones ya está activo. Ingresa aquí.
-Cursos y Especializaciones
-Acceso a la Comunidad concedido
+20 preguntas, 5 minutos, y sabes exactamente d&oacute;nde est&aacute;s parado.
+Test gratuito
+&iquest;Sabes realmente en qu&eacute; nivel BIM est&aacute;s?
 Hola {{contact.first_name}} ,
-Gracias por tu compra y bienvenido a la Comunidad de Cursos y Especializaciones de Design Modeling .
-Es el espacio donde vas a resolver dudas con los instructores, compartir tus avances y conectar con ingenieros y arquitectos de toda Latinoamérica, Europa y Estados Unidos.
-Tu acceso ya está activo. Entra desde el botón de abajo:
-Ir a la Comunidad &#8594;
-Dentro de la comunidad vas a encontrar:
-&#128204; Anuncios de clases en vivo y grabaciones
-&#128736; Soporte técnico y resolución de dudas con los instructores
-&#128193; Archivos de práctica, plantillas y recursos descargables
-&#129309; Networking con la red de estudiantes y graduados DMA
-Tutorial en video &middot; 1:50
-Cómo ingresar a tu comunidad, paso a paso
-Te mostramos dónde encontrar tus canales, cómo publicar y cómo activar las notificaciones.
-&#9654; Ver el tutorial
-Este enlace y su contenido son de uso exclusivo del destinatario y pueden contener información
-confidencial. Si lo recibiste por error, notifícanos de inmediato y abstente de compartirlo.
-Queda prohibida su distribución, difusión o copia no autorizada.
-¿No puedes ver el botón?
-Ver Comunidad
+Casi todo el mundo cree que est&aacute; un nivel m&aacute;s arriba de donde realmente est&aacute;. Es normal: uno domina lo que usa a diario y da por hecho el resto.
+Armamos un test de 20 preguntas que se responde en unos 5 minutos. No es un examen y nadie lo califica: te ubica en uno de los 4 niveles &mdash;Modelador, Coordinador, BIM Manager 4D-5D y Especialista BIM+IA&mdash; y te dice qu&eacute; competencias concretas te faltan para pasar al siguiente.
+Llenas el formulario y el resultado te llega autom&aacute;ticamente.
+Hacer el test ahora
+Gratis &middot; 5 minutos &middot; resultado inmediato
+Nos cuentas qu&eacute; nivel te sali&oacute;.
+El equipo de Design Modeling Academy
 Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
 designmodelingacademy.com
-**** Este es un correo electrónico generado por el sistema ****
 {{unsubscribe_url}}
 ```
 
-### ✅Acceso Comunidad - Design Premium Gratuito
+### 🟢Seguimiento 03 curso gratuito
 
-- **id:** `6a75f3777794c96cd3205dba`
+- **id:** `6a887cc2c95ab36931b3c749`
 - **tipo:** html
-- **actualizada:** 2026-08-12T00:06:18.682Z
+- **actualizada:** 2026-09-04T15:03:02.759Z
+- **Cuerpo:**
+
+```
+Un curso completo, dentro de la comunidad, sin costo y sin tarjeta.
+Regalo para ti
+Tu curso de Introducci&oacute;n al Dise&ntilde;o, C&aacute;lculo y Modelado BIM
+Hola {{contact.first_name}} ,
+Queremos que pruebes c&oacute;mo ense&ntilde;amos sin que tengas que poner un d&oacute;lar. Te abrimos el acceso al curso Introducci&oacute;n al Dise&ntilde;o, C&aacute;lculo y Modelado BIM , completo y sin costo.
+Es el punto de partida ordenado: qu&eacute; es BIM de verdad, para qu&eacute; sirve y c&oacute;mo encaja en un proyecto estructural real. Contenido claro, ejemplos aplicados y avance a tu ritmo.
+El curso se entrega dentro de la comunidad gratuita en la que ya est&aacute;s, as&iacute; que no tienes que crear ninguna cuenta nueva ni registrar tarjeta.
+Inscribirme al curso gratuito
+Sin costo &middot; sin tarjeta de cr&eacute;dito &middot; acceso inmediato
+Que lo disfrutes,
+El equipo de Design Modeling Academy
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### 🟢Seguimiento 04 oferta 2x1 (acero + cimentaciones)
+
+- **id:** `6a887d05676a1cd9c1f57092`
+- **tipo:** html
+- **actualizada:** 2026-09-04T15:04:13.507Z
+- **Cuerpo:**
+
+```
+Dos especializaciones completas, un pago &uacute;nico. La ventana se cierra en dos d&iacute;as.
+Solo 48 horas
+Ll&eacute;vate Acero y Cimentaciones en un solo pago
++
+Hola {{contact.first_name}} ,
+Durante estas semanas te mostramos qui&eacute;nes somos, te dejamos hacer el test, te regalamos un curso completo y te abrimos una clase real de la Especializaci&oacute;n en Acero. Sin pedirte nada a cambio.
+Hoy s&iacute; venimos con una propuesta, y es la mejor que podemos hacerte.
+Precio regular: 4 m&oacute;dulos &times; $154.99
+$619.96 USD
+Precio de esta oferta
+$199.99
+USD, pago &uacute;nico por las 4 formaciones
+Ahorras $419.97
+&#127873; Regalo incluido
+Especializaci&oacute;n en Cimentaciones, completa
+No es un m&oacute;dulo suelto ni una muestra: es el programa entero, con sus certificaciones, y entra sin costo adicional junto con el de Acero.
+Rev&iacute;salo antes de decidir:
+&#128196; Temario de la Especializaci&oacute;n en Acero
+&#128196; Temario de la Especializaci&oacute;n en Cimentaciones
+&#9203; Esta oferta vence en 48 horas, sin excepci&oacute;n.
+El cierre lo hace nuestro equipo acad&eacute;mico por WhatsApp: te confirman el cupo, resuelven cualquier duda y te acompa&ntilde;an en el pago. No hay formulario ni carrito.
+Quiero las dos especializaciones
+Te responde un asesor acad&eacute;mico, no un bot
+Aqu&iacute; estamos,
+El equipo de Design Modeling Academy
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### 🟢Seguimiento 04 oferta naves 27 USD
+
+- **id:** `6a887f836b43001beef21f2c`
+- **tipo:** html
+- **actualizada:** 2026-09-04T15:05:24.041Z
+- **Cuerpo:**
+
+```
+Incluye el software y un mes de dudas directas con el instructor.
+Precio de entrada
+SAP2000 a nivel profesional, ahora a menor costo
+Hola {{contact.first_name}} ,
+Hay una diferencia enorme entre saber que existe SAP2000 y poder entregar el c&aacute;lculo de una nave industrial completa. Esa diferencia se cierra en unas 26 horas de trabajo, y cuesta menos de lo que gastas en una cena fuera.
+El curso Naves Industriales PRO en SAP2000 va directo a eso: dise&ntilde;ar naves de acero ante cargas de viento y sismo, de principio a fin, con el Ing. Gabriel Pantoja.
+25h 55min &middot; 14 sesiones de video &middot; 19 archivos descargables
+Nivel intermedio &ndash; avanzado &middot; Ing. Gabriel Pantoja
+Al terminar sabes hacer esto:
+1. Dise&ntilde;ar p&oacute;rticos de acero en SAP2000, con criterio de predise&ntilde;o eficiente.
+2. Aplicar y determinar cargas de viento y sismo sobre la nave.
+3. Analizar pandeo flexo-torsional y lateral-torsional, y verificar la estabilidad.
+4. Optimizar pesos: bajar el acero sin perder seguridad, que es donde est&aacute; el dinero.
+Y ahora la parte que suele sorprender:
+Valor regular del curso
+USD 154.99
+Hoy lo tomas por
+$26.99
+USD, pago &uacute;nico &middot; acceso de por vida
+Menos de lo que cuesta una salida a comer.
+Y por ese valor entra todo esto:
+&#10003; El software SAP2000 para llevar a cabo la formaci&oacute;n.
+&#10003; Un mes de acceso directo al instructor por Zoom o WhatsApp, para tus dudas.
+&#10003; Certificado al finalizar el curso.
+&#10003; Acceso de por vida a la plataforma y a todo el material.
+&#10003; 100% a distancia, avanzas a tu ritmo.
+Ese es el punto: te damos el software y un mes de acompa&ntilde;amiento directo con el instructor por el precio de una cena. No conocemos a nadie m&aacute;s que lo haga a este valor.
+&#9733;&#9733;&#9733;&#9733; 4.0 &middot; 83 estudiantes ya lo tomaron
+&#9203; Tienes 48 horas desde que recibes este correo para tomarlo a este precio.
+Quiero el curso por $26.99
+Compra directa en la web &middot; acceso inmediato
+&iquest;Te qued&oacute; alguna pregunta?
+Escr&iacute;benos por WhatsApp
+Hay una persona del equipo al otro lado
+Nos vemos dentro,
+El equipo de Design Modeling Academy
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+## ⚠️ AUTOMATIZACIONES PIPELINE > ⚠️ MASTER HIGHTICKETS
+
+### MASTER2RC - Seguimiento 1
+
+- **id:** `68648a60fdb5735640736fe5`
+- **tipo:** builder
+- **actualizada:** 2025-07-02T01:30:55.258Z
+- **Cuerpo:**
+
+```
+Hola, {{ contact.firstname }}
+Gracias por asistir a nuestra cita sobre el Máster BIM+IA. En este mensaje te adjunto el PDF “Personal Project IA Pro” correspondiente para que aprendas a usar las herramientas más novedosas y poder impulsar tu negocio e ingresos, y mejorar tu posición laboral.
+📥 DESCARGA AQUÍ TU GPT
+No te olvides lo conversado en la reunión sobre tu descuento exclusivo para comenzar a capacitarte con el Máster BIM+IA . Avísame si tienes alguna otra duda.
+Para poder ingresar, me confirmas si tienes el enlace para hacer tu inversión. En caso contrario, quedamos atentos a tu solicitud para enviártelo cuanto antes.
+Saludos,
+Equipo Design Modeling Academy
+```
+
+### MASTER2RC - Seguimiento 3
+
+- **id:** `68648b6dfdb57346b37370a7`
+- **tipo:** builder
+- **actualizada:** 2025-07-02T01:36:11.359Z
+- **Cuerpo:**
+
+```
+Hola, {{ contact.firstname }}​
+Conoce cómo Albino Piñero transformó su carrera y aumentó sus ingresos tras cursar el Diplomado BIM🎓 Si ya terminaste tu Diplomado, este es tu siguiente paso.
+📽️ Video Estudiante Albino Piñero
+Recuerda que en {{ custom_values.fecha_de_inicio }} empezamos con la clase de introducción al Máster BIM+IA . Si tienes alguna consulta, no dudes en responder a este correo o agendar una cita
+¡Espero verte en el Máster BIM+IA! 👋🏼
+Ing. Gabriel Pantoja
+¡AGENDA TU CITA AQUÍ!
+```
+
+### MASTER2RC - Seguimiento 4
+
+- **id:** `68648d175715d1f1f6a002cc`
+- **tipo:** builder
+- **actualizada:** 2025-07-02T01:38:18.593Z
+- **Cuerpo:**
+
+```
+Hola, {{ contact.firstname }}​
+Quería comentarte sobre nuestras nuevas acreditaciones en Design Modeling Academy, las cuales nos permitirán otorgar, a través de nuestro Máster BIM+IA , títulos universitarios con aval en EE. UU. y en Europa.
+Con el siguiente enlace puedes conocer las acreditaciones de nuestra institución y algunos beneficios de pertenecer a nuestra comunidad de estudiantes internacionales. Te animo a explorar esta increíble oportunidad y unirte a nosotros. ¡Haz clic en el enlace para más información!
+Acreditaciones Design Modeling Academy
+¡Feliz Día! 👋🏼
+Ingeniero Gabriel Pantoja
+¡AGENDA TU CITA AQUÍ!
+```
+
+### MASTER2RC - Seguimiento 5
+
+- **id:** `68648dabb6855faf8d7b14e3`
+- **tipo:** builder
+- **actualizada:** 2025-07-02T01:41:10.737Z
+- **Cuerpo:**
+
+```
+Hola, {{ contact.firstname }}​
+Te saludo nuevamente, con la intención de avisarte que ya casi comenzamos el Máster BIM+IA , estaremos asignando las últimas 5 plazas. ¿Aún deseas participar?
+Recuerda los beneficios: 12 certificaciones con aval internacional, títulos propios universitarios y acceso a servicios de bolsa de trabajo. El Máster tiene un valor total de $𝟮,𝟲𝟵𝟵.𝟵𝟵 𝗨𝗦𝗗, que incluye todos los beneficios y certificaciones mencionados. Para facilitar tu acceso, ofrecemos 𝗽𝗹𝗮𝗻𝗲𝘀 𝗱𝗲 𝗽𝗮𝗴𝗼 𝗳𝗹𝗲𝘅𝗶𝗯𝗹𝗲𝘀 𝗱𝗲 𝗵𝗮𝘀𝘁𝗮 𝟭𝟮 𝗺𝗲𝘀𝗲𝘀.
+Actualmente contamos con la etapa de 𝗣𝗥𝗘𝗩𝗘𝗡𝗧𝗔 𝗱𝗲𝗹 𝗺𝗮́𝘀𝘁𝗲𝗿, donde puedes reservar tu cupo con un 𝗽𝗮𝗴𝗼 𝘂́𝗻𝗶𝗰𝗼 𝗱𝗲 $𝟰𝟵𝟵.𝟵𝟵 𝗨𝗦𝗗 correspondiente a la matrícula. Luego, podrás completar el monto restante mediante el plan de pago que mejor se adapte a ti.🙌🏼
+Reserva tu cita para el proceso de pago e información. ¡Nos vemos en el Máster BIM+IA!
+Ing. Gabriel Pantoja
+¡AGENDA TU CITA AQUÍ!
+```
+
+### MASTER2RC - Seguimiento 6
+
+- **id:** `68648e465184e7569e8601fc`
+- **tipo:** builder
+- **actualizada:** 2025-07-02T01:43:48.277Z
+- **Cuerpo:**
+
+```
+Buen día, {{ contact.firstname }} , te contacto nuevamente ya que no he recibido tu respuesta del correo anterior​.
+Cuéntame, ¿pudiste revisar el PDF “Personal Project IA Pro” que te envié en el correo anterior?
+Adicional, recuerda que en el mes de {{ custom_values.fecha_de_inicio }} comenzamos el Máster BIM+IA . Me preguntaba igual si ¿aún te interesa inscribirte en nuestro Máster BIM+IA o si has tomado alguna otra decisión?
+Si tienes alguna duda, podemos agendar una cita de solo 15 minutos vía zoom para ampliar la información.
+Si tienes algún comentario, puedes responder en este mismo correo ¡Estaré encantado de apoyarte!
+Saludos 👋🏼
+Ingeniero Gabriel Pantoja
+¡AGENDA TU CITA AQUÍ!
+```
+
+### MASTER2RC - Seguimiento 7
+
+- **id:** `68648ef8d3dc9677731d6fb0`
+- **tipo:** builder
+- **actualizada:** 2025-07-02T01:46:56.011Z
+- **Cuerpo:**
+
+```
+Hola {{ contact.firstname }},
+He intentado ponerme en contacto contigo varias veces con el propósito de ayudarte en tu proceso de inscripción al Máster BIM+IA , que mostraste interés anteriormente, sin embargo, todavía no he recibido respuesta, lo cual puede deberse a una de estas dos razones:
+✅ 1. No necesitas mi ayuda con la inscripción al Máster BIM+IA y debería dejar de escribirte.
+✅ 2. Todavía te interesa inscribirte, pero no has tenido tiempo para responder el mensaje.
+Te agradecería si me dijeras ¿cuál de estos motivos coincide con tu situación?
+¡Qué tengas un buen día! 👋🏼
+Ing. Gabriel Pantoja
+¡AGENDA TU CITA AQUÍ!
+```
+
+### ✅ REGALO Cita Máster
+
+- **id:** `6a87485bda320347a24b3acd`
+- **tipo:** html
+- **actualizada:** 2026-09-03T19:59:49.559Z
 - **Cuerpo:**
 
 ```
 Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
-Link de invitacion ya incrustado.
-REEMPLAZAR: https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a7bb6cc4e002388f44657c3.mp4 -> link del video (aparece 2 veces)
+Enviar como accion del formulario: Enviar manualmente a quienes asistieron a la cita del Master BIM
+Banner y logo en base64. La portada se carga desde el CDN de GHL.
 Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
 -->
-La Comunidad Design Premium es gratuita y ya puedes entrar. Te esperamos adentro.
-Acceso gratuito &middot; Comunidad Design Premium
-Estás invitado a la Comunidad Design Premium
-Hola {{contact.first_name}} ,
-Abrimos la Comunidad Design Premium , el punto de encuentro
-de ingenieros y arquitectos que trabajan con BIM. Es totalmente
-gratuita y está abierta para todos: no necesitas haber comprado ningún curso para entrar.
-Tu lugar ya está disponible. Entra desde el botón de abajo:
+Gracias por asistir a la cita del Master Internacional BIM+IA. Te regalamos el Modulo 1 completo.
+Regalo exclusivo &middot; 100% gratis
+Gracias por acompa&ntilde;arnos
+Hola {{contact.first_name}} , tenemos un regalo para ti &#127873;
+Queremos agradecerte por haber asistido a nuestra cita del M&aacute;ster Internacional en BIM Management e Inteligencia Artificial para la Construcci&oacute;n y por el tiempo que dedicaste a conocer el programa. Sabemos que tu agenda est&aacute; ocupada, y que hayas reservado ese espacio para nosotros significa mucho.
+Como parte de nuestro agradecimiento, preparamos algo para ti: acceso completo y gratuito al M&oacute;dulo 1 del Diplomado BIM en Estructuras .
+Es el mismo m&oacute;dulo que cursan nuestros alumnos del diplomado, sin recortes: las clases completas y los recursos y archivos de pr&aacute;ctica que se trabajan dentro. Sin costo y sin compromiso.
+ACCEDER A MI REGALO &#8594;
+Acceso 100% gratuito &middot; se abre en tu comunidad DMA
+C&oacute;mo aprovechar tu regalo
+Tenerlo no sirve de nada si no lo abres. Estos tres pasos son la diferencia.
+01
+Accede al m&oacute;dulo
+Ingresa desde el bot&oacute;n de arriba y comienza las clases. Empezar el mismo d&iacute;a es lo que separa a quien lo termina de quien no.
+02
+Revisa los recursos
+El m&oacute;dulo incluye material de pr&aacute;ctica. Desc&aacute;rgalo y tenlo abierto mientras sigues las clases.
+03
+Completa el m&oacute;dulo
+Avanza por todas las clases y aprovecha este primer acercamiento a nuestra metodolog&iacute;a de formaci&oacute;n BIM. Al completarlo recibes tu certificado de Design Modeling DG.
+Tambi&eacute;n es gratis
+&Uacute;nete a la Comunidad Design Premium
+Masterclasses en vivo, plantillas descargables y networking con ingenieros y arquitectos
+de toda Latinoam&eacute;rica. Sin costo y sin tarjeta.
 Entrar gratis a la Comunidad &#8594;
-Sin costo &middot; Sin tarjeta &middot; Toma menos de 1 minuto
-Dentro de la comunidad vas a encontrar:
-&#127916; Clases y masterclasses gratuitas en vivo
-&#128736; Tips y flujos de trabajo de Revit, Civil 3D, Robot y IA aplicada
-&#128193; Plantillas, familias y recursos descargables
-&#128188; Oportunidades laborales y proyectos compartidos por la red
-&#129309;
-Networking con profesionales BIM de 3 continentes
-Tutorial en video &middot; 1:50
-Cómo ingresar a tu comunidad, paso a paso
-Te mostramos dónde encontrar tus canales, cómo publicar y cómo activar las notificaciones.
-&#9654; Ver el tutorial
-Comparte la invitación. Si conoces colegas, compañeros
-de trabajo o estudiantes que estén entrando al mundo BIM, reenvíales este correo. La comunidad
-es abierta y no tiene costo para nadie.
-¿No puedes ver el botón?
-Ver Comunidad
+&iquest;No se abre o no encuentras el acceso?
+Revisa primero las carpetas de spam y promociones. Si aun as&iacute; no aparece,
+escr&iacute;benos y te damos el acceso al instante.
+Escribir por WhatsApp
 Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
 designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅Acceso Comunidad - Diplomados Universitarios BIM
+### 🟢CITA Agendada Máster
 
-- **id:** `6a75f01c0e7596f30bb1bdfe`
+- **id:** `6a8888a78ced86da5a82e5f0`
 - **tipo:** html
-- **actualizada:** 2026-08-12T00:05:41.884Z
+- **actualizada:** 2026-09-04T15:01:06.788Z
 - **Cuerpo:**
 
 ```
-Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
-Imagenes embebidas en base64. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
-REEMPLAZAR: https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a7bb6cc4e002388f44657c3.mp4 -> link del video (aparece 2 veces)
--->
-Tu acceso a la Comunidad de Diplomados Universitarios BIM ya está activo. Ingresa aquí.
-Diplomados Universitarios BIM
-Acceso a la Comunidad concedido
+Dos cosas r&aacute;pidas antes de que hablemos, y un regalo por asistir.
+Tu cita est&aacute; agendada
+Gracias por agendar tu cita para el M&aacute;ster
 Hola {{contact.first_name}} ,
-Gracias por tu compra y bienvenido a la Comunidad Exclusiva de Diplomados Universitarios BIM .
-Es una comunidad exclusiva para estudiantes del diplomado: ahí se coordinan las sesiones en vivo, las entregas y el seguimiento académico hasta tu titulación.
-Tu acceso ya está activo. Entra desde el botón de abajo:
-Ir a la Comunidad &#8594;
-Dentro de la comunidad vas a encontrar:
-&#127891; Calendario de sesiones en vivo y fechas de entrega
-&#128209; Lineamientos de los trabajos y del proceso de titulación
-&#128736; Acompañamiento académico directo con los docentes
-&#129309; Red de profesionales de tu misma cohorte
-Tutorial en video &middot; 1:50
-Cómo ingresar a tu comunidad, paso a paso
-Te mostramos dónde encontrar tus canales, cómo publicar y cómo activar las notificaciones.
-&#9654; Ver el tutorial
-Este enlace y su contenido son de uso exclusivo del destinatario y pueden contener información
-confidencial. Si lo recibiste por error, notifícanos de inmediato y abstente de compartirlo.
-Queda prohibida su distribución, difusión o copia no autorizada.
-¿No puedes ver el botón?
-Ver Comunidad
-Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
-designmodelingacademy.com
-**** Este es un correo electrónico generado por el sistema ****
-{{unsubscribe_url}}
-```
-
-### ✅Acceso Comunidad - Master BIM con Inteligencia Artificial
-
-- **id:** `6a75f0494690ddff503ec983`
-- **tipo:** html
-- **actualizada:** 2026-08-12T00:07:01.224Z
-- **Cuerpo:**
-
-```
-Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
-Link de invitacion ya incrustado.
-REEMPLAZAR: https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a7bb6cc4e002388f44657c3.mp4 -> link del video (aparece 2 veces)
-Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
--->
-La Comunidad Design Premium es gratuita y ya puedes entrar. Te esperamos adentro.
-Acceso gratuito &middot; Comunidad Design Premium
-Estás invitado a la Comunidad Design Premium
-Hola {{contact.first_name}} ,
-Abrimos la Comunidad Design Premium , el punto de encuentro
-de ingenieros y arquitectos que trabajan con BIM. Es totalmente
-gratuita y está abierta para todos: no necesitas haber comprado ningún curso para entrar.
-Tu lugar ya está disponible. Entra desde el botón de abajo:
-Entrar gratis a la Comunidad &#8594;
-Sin costo &middot; Sin tarjeta &middot; Toma menos de 1 minuto
-Dentro de la comunidad vas a encontrar:
-&#127916; Clases y masterclasses gratuitas en vivo
-&#128736; Tips y flujos de trabajo de Revit, Civil 3D, Robot y IA aplicada
-&#128193; Plantillas, familias y recursos descargables
-&#128188; Oportunidades laborales y proyectos compartidos por la red
-&#129309; Networking con profesionales BIM de 3 continentes
-Tutorial en video &middot; 1:50
-Cómo ingresar a tu comunidad, paso a paso
-Te mostramos dónde encontrar tus canales, cómo publicar y cómo activar las notificaciones.
-&#9654; Ver el tutorial
-Comparte la invitación. Si conoces colegas, compañeros
-de trabajo o estudiantes que estén entrando al mundo BIM, reenvíales este correo. La comunidad
-es abierta y no tiene costo para nadie.
-¿No puedes ver el botón?
-Ver Comunidad
+Bienvenido al M&aacute;ster Internacional en BIM Management e Inteligencia Artificial para la Construcci&oacute;n . Te saludamos desde todo el equipo de Design Modeling Academy, centro de entrenamiento internacional con aval de Autodesk, CYPE y aval universitario en EE.UU. y Europa.
+Agradecemos que hayas agendado una cita con nosotros. Tenemos una cantidad considerable de reservas de cupo, as&iacute; que para agilizar tu proceso necesitamos dos cosas de tu parte antes de que hablemos:
+1
+Mira este video, es importante.
+&#9654;
+Video de bienvenida
+Un mensaje del Ing. Gabriel Pantoja
+Dura pocos minutos y explica c&oacute;mo aprovechar la sesi&oacute;n que acabas de agendar.
+Ver el video &#8594;
+2
+Lee el PDF con el plan de estudios detallado.
+Ver el plan de estudios
+PDF con todos los m&oacute;dulos y contenidos del M&aacute;ster
+Descargar el brochure
+Beneficios de inscribirte
+Lo que entra contigo el primer d&iacute;a
+&#10003;
+Acceso 24/7 a la plataforma interactiva
+Ves y repites todas las clases a tu ritmo.
+&#10003;
+Acompa&ntilde;amiento durante 12 meses
+Workshops en vivo cada semana y mentor&iacute;as personalizadas 1:1.
+&#10003;
+Contenido 100% original
+Dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#10003;
+Material 100% descargable
+Complementos y ejercicios pr&aacute;cticos aplicados a proyectos reales.
+&#10003;
+DMA Engineering Suite
+Tu propio kit de apps de IA, con una herramienta nueva cada mes.
+&#127891; Y todo lo que te llevas certificado
+Al completar cada m&oacute;dulo obtienes una certificaci&oacute;n oficial de Autodesk, porque somos Centro de Entrenamiento Autorizado de la marca.
+Al completar los m&oacute;dulos de cada bloque del plan de estudios, obtienes una microcredencial NFT avalada por Silicon Valley.
+Recibes diplomas de t&iacute;tulo propio de Sabal University , Universidad de las Naciones y Universidad ISTE Espa&ntilde;a .
+Y al cerrar el programa, un certificado universitario de Doctrina Qualitas y Design Modeling Academy por 1.440 horas acad&eacute;micas en l&iacute;nea. ✅
+Antes de la cita
+Cuatro recomendaciones para aprovecharla
+1
+Reserva de 30 a 45 minutos
+Es lo que dura la sesi&oacute;n. Que no te agarre entre reuniones.
+2
+Busca un espacio silencioso
+Sin ruido de fondo ni interrupciones.
+3
+Asegura una buena conexi&oacute;n
+Vamos a compartir pantalla y revisar el plan contigo.
+4
+Llega con la informaci&oacute;n le&iacute;da
+Temario, beneficios y certificaciones. As&iacute; la cita se va en tus dudas reales.
+&#127873; Solo por asistir a tu cita
+Te obsequiamos el M&oacute;dulo 1 completo
+Del Diplomado Universitario Internacional BIM: Edificaciones de Acero Estructural y Hormig&oacute;n Armado &mdash; “Fundamentos Estrat&eacute;gicos de la Metodolog&iacute;a BIM”. Tuyo sin costo, solo por presentarte a la cita.
+Aseg&uacute;rate de no faltar a la cita. Te espero. 👋
+Ing. Gabriel Pantoja
+BIM Manager y Fundador &middot; Design Modeling Academy
 Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
 designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-## ✅ AUTOMATIZACIONES PIPELINE > ✅ COMPRA DIRECTA > ✅SEGUIMIENTO CALCULADORA
+## ⚠️ AUTOMATIZACIONES PIPELINE > ✅ COMPRA DIRECTA > ✅SEGUIMIENTO CALCULADORA
 
 ### ✅ Seg 01 Error #1 zapatas
 
 - **id:** `6a9077a3a42032bb20317ab5`
 - **tipo:** html
-- **actualizada:** 2026-09-01T18:32:41.797Z
+- **actualizada:** 2026-09-02T14:29:34.675Z
 - **Cuerpo:**
 
 ```
@@ -7968,7 +8230,7 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-## ✅ AUTOMATIZACIONES PIPELINE > ✅ COMPRA DIRECTA > ✅SEGUIMIENTO GENERAL
+## ⚠️ AUTOMATIZACIONES PIPELINE > ✅ COMPRA DIRECTA > ✅SEGUIMIENTO GENERAL
 
 ### ✅ Seg 01- 10 Recursos Gratuitos
 
@@ -8112,7 +8374,7 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-## ✅ AUTOMATIZACIONES PIPELINE > ✅ COMPRA DIRECTA > ✅SEGUIMIENTO TEST BIM
+## ⚠️ AUTOMATIZACIONES PIPELINE > ✅ COMPRA DIRECTA > ✅SEGUIMIENTO TEST BIM
 
 ### ✅ Seg 01 - Cuatro Niveles BIM
 
@@ -8413,424 +8675,13 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-## ✅ AUTOMATIZACIONES PIPELINE > ✅ CURSOS LOWCOST > ✅SEG OPORTUNIDAD FUTURA + NO CALIFICADO
+## ⚠️ PRODUCTOS INFORMATIVOS  > ⚠️ CURSOS 
 
-### ✅ Seguimiento 01 quienes somos
-
-- **id:** `6a887c4bbc3bac7221b9cd78`
-- **tipo:** html
-- **actualizada:** 2026-08-21T17:01:36.892Z
-- **Cuerpo:**
-
-```
-M&aacute;s de 5 a&ntilde;os formando ingenieros en LATAM, EE.UU. y Europa.
-Qui&eacute;nes somos
-&iquest;Design Modeling Academy? &iquest;Y ustedes qui&eacute;nes son?
-Hola {{contact.first_name}} ,
-Es una pregunta justa, y preferimos respond&eacute;rtela nosotros antes de que tengas que buscarla.
-Design Modeling DG lleva m&aacute;s de 5 a&ntilde;os formando ingenieros y arquitectos en Latinoam&eacute;rica, Estados Unidos y Europa, con m&aacute;s de 4.000 estudiantes egresados .
-No somos una academia que graba videos y los vende. Somos centro autorizado por las marcas cuyo software ense&ntilde;amos, y nuestras titulaciones tienen validez universitaria real fuera del Ecuador. Eso es lo que nos diferencia, y es verificable.
-+5 a&ntilde;os &middot; +4.000 egresados &middot; 3 continentes
-LATAM &middot; Estados Unidos &middot; Europa
-Nuestros avales, uno por uno:
-&#10003; Autodesk Authorized Training Center desde enero de 2022.
-&#10003; Primer Authorized Partner de CYPE en Latinoam&eacute;rica, y Professional Certification Center desde noviembre de 2023.
-&#10003; Titulaci&oacute;n universitaria v&aacute;lida en EE.UU., M&eacute;xico y Europa: Sabal University (Florida, licencia No. 11494) y Universidad de las Naciones (M&eacute;xico), a trav&eacute;s de Doctrina Qualitas.
-&#10003; Certificado del Ministerio de Trabajo del Ecuador (SETEC), con valor para tu hoja de vida en el pa&iacute;s.
-&#10003; Microcredenciales NFT en blockchain , verificables de forma inalterable en cualquier parte del mundo.
-&#127891; Lo que emitimos al finalizar
-Certificados internacionales
-Autodesk
-Completaci&oacute;n del curso
-Doctrina Qualitas
-Certificado Universitario Internacional
-Modeling-DG S.A.S.
-Certificado Internacional de horas
-Diplomas universitarios
-Sabal University
-Titulaci&oacute;n en EE.UU. &middot; Florida
-U. de las Naciones
-Titulaci&oacute;n en M&eacute;xico
-ISTE Espa&ntilde;a
-T&iacute;tulo propio &middot; Europa
-Lo que dicen quienes ya pasaron por aqu&iacute;:
-&ldquo;Una experiencia excelente, con acompa&ntilde;amiento total durante todo el proceso.&rdquo;
-Javier Sol&oacute;rzano &#9733;&#9733;&#9733;&#9733;&#9733;
-&ldquo;La mejor decisi&oacute;n que he tomado en mi formaci&oacute;n profesional.&rdquo;
-Albino Pi&ntilde;eiro &#9733;&#9733;&#9733;&#9733;&#9733;
-Si quieres revisar cada acreditaci&oacute;n con sus enlaces oficiales, est&aacute;n todas aqu&iacute;:
-Conocer nuestras acreditaciones
-Un gusto tenerte por aqu&iacute;,
-El equipo de Design Modeling Academy
-Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
-designmodelingacademy.com
-{{unsubscribe_url}}
-```
-
-### ✅ Seguimiento 02 test nivel bim
-
-- **id:** `6a887c717e0c28b36812d626`
-- **tipo:** html
-- **actualizada:** 2026-08-21T16:41:37.717Z
-- **Cuerpo:**
-
-```
-20 preguntas, 5 minutos, y sabes exactamente d&oacute;nde est&aacute;s parado.
-Test gratuito
-&iquest;Sabes realmente en qu&eacute; nivel BIM est&aacute;s?
-Hola {{contact.first_name}} ,
-Casi todo el mundo cree que est&aacute; un nivel m&aacute;s arriba de donde realmente est&aacute;. Es normal: uno domina lo que usa a diario y da por hecho el resto.
-Armamos un test de 20 preguntas que se responde en unos 5 minutos. No es un examen y nadie lo califica: te ubica en uno de los 4 niveles &mdash;Modelador, Coordinador, BIM Manager 4D-5D y Especialista BIM+IA&mdash; y te dice qu&eacute; competencias concretas te faltan para pasar al siguiente.
-Llenas el formulario y el resultado te llega autom&aacute;ticamente.
-Hacer el test ahora
-Gratis &middot; 5 minutos &middot; resultado inmediato
-Nos cuentas qu&eacute; nivel te sali&oacute;.
-El equipo de Design Modeling Academy
-Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
-designmodelingacademy.com
-{{unsubscribe_url}}
-```
-
-### ✅ Seguimiento 03 curso gratuito
-
-- **id:** `6a887cc2c95ab36931b3c749`
-- **tipo:** html
-- **actualizada:** 2026-08-21T16:42:32.530Z
-- **Cuerpo:**
-
-```
-Un curso completo, dentro de la comunidad, sin costo y sin tarjeta.
-Regalo para ti
-Tu curso de Introducci&oacute;n al Dise&ntilde;o, C&aacute;lculo y Modelado BIM
-Hola {{contact.first_name}} ,
-Queremos que pruebes c&oacute;mo ense&ntilde;amos sin que tengas que poner un d&oacute;lar. Te abrimos el acceso al curso Introducci&oacute;n al Dise&ntilde;o, C&aacute;lculo y Modelado BIM , completo y sin costo.
-Es el punto de partida ordenado: qu&eacute; es BIM de verdad, para qu&eacute; sirve y c&oacute;mo encaja en un proyecto estructural real. Contenido claro, ejemplos aplicados y avance a tu ritmo.
-El curso se entrega dentro de la comunidad gratuita en la que ya est&aacute;s, as&iacute; que no tienes que crear ninguna cuenta nueva ni registrar tarjeta.
-Inscribirme al curso gratuito
-Sin costo &middot; sin tarjeta de cr&eacute;dito &middot; acceso inmediato
-Que lo disfrutes,
-El equipo de Design Modeling Academy
-Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
-designmodelingacademy.com
-{{unsubscribe_url}}
-```
-
-### ✅ Seguimiento 04 oferta 2x1 (acero + cimentaciones)
-
-- **id:** `6a887d05676a1cd9c1f57092`
-- **tipo:** html
-- **actualizada:** 2026-08-21T16:44:48.659Z
-- **Cuerpo:**
-
-```
-Dos especializaciones completas, un pago &uacute;nico. La ventana se cierra en dos d&iacute;as.
-Solo 48 horas
-Ll&eacute;vate Acero y Cimentaciones en un solo pago
-+
-Hola {{contact.first_name}} ,
-Durante estas semanas te mostramos qui&eacute;nes somos, te dejamos hacer el test, te regalamos un curso completo y te abrimos una clase real de la Especializaci&oacute;n en Acero. Sin pedirte nada a cambio.
-Hoy s&iacute; venimos con una propuesta, y es la mejor que podemos hacerte.
-Precio regular: 4 m&oacute;dulos &times; $154.99
-$619.96 USD
-Precio de esta oferta
-$199.99
-USD, pago &uacute;nico por las 4 formaciones
-Ahorras $419.97
-&#127873; Regalo incluido
-Especializaci&oacute;n en Cimentaciones, completa
-No es un m&oacute;dulo suelto ni una muestra: es el programa entero, con sus certificaciones, y entra sin costo adicional junto con el de Acero.
-Rev&iacute;salo antes de decidir:
-&#128196; Temario de la Especializaci&oacute;n en Acero
-&#128196; Temario de la Especializaci&oacute;n en Cimentaciones
-&#9203; Esta oferta vence en 48 horas, sin excepci&oacute;n.
-El cierre lo hace nuestro equipo acad&eacute;mico por WhatsApp: te confirman el cupo, resuelven cualquier duda y te acompa&ntilde;an en el pago. No hay formulario ni carrito.
-Quiero las dos especializaciones
-Te responde un asesor acad&eacute;mico, no un bot
-Aqu&iacute; estamos,
-El equipo de Design Modeling Academy
-Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
-designmodelingacademy.com
-{{unsubscribe_url}}
-```
-
-### ✅ Seguimiento 04 oferta naves 27 USD
-
-- **id:** `6a887f836b43001beef21f2c`
-- **tipo:** html
-- **actualizada:** 2026-08-21T17:05:11.606Z
-- **Cuerpo:**
-
-```
-Incluye el software y un mes de dudas directas con el instructor.
-Precio de entrada
-SAP2000 a nivel profesional, ahora a menor costo
-Hola {{contact.first_name}} ,
-Hay una diferencia enorme entre saber que existe SAP2000 y poder entregar el c&aacute;lculo de una nave industrial completa. Esa diferencia se cierra en unas 26 horas de trabajo, y cuesta menos de lo que gastas en una cena fuera.
-El curso Naves Industriales PRO en SAP2000 va directo a eso: dise&ntilde;ar naves de acero ante cargas de viento y sismo, de principio a fin, con el Ing. Gabriel Pantoja.
-25h 55min &middot; 14 sesiones de video &middot; 19 archivos descargables
-Nivel intermedio &ndash; avanzado &middot; Ing. Gabriel Pantoja
-Al terminar sabes hacer esto:
-1. Dise&ntilde;ar p&oacute;rticos de acero en SAP2000, con criterio de predise&ntilde;o eficiente.
-2. Aplicar y determinar cargas de viento y sismo sobre la nave.
-3. Analizar pandeo flexo-torsional y lateral-torsional, y verificar la estabilidad.
-4. Optimizar pesos: bajar el acero sin perder seguridad, que es donde est&aacute; el dinero.
-Y ahora la parte que suele sorprender:
-Valor regular del curso
-USD 154.99
-Hoy lo tomas por
-$26.99
-USD, pago &uacute;nico &middot; acceso de por vida
-Menos de lo que cuesta una salida a comer.
-Y por ese valor entra todo esto:
-&#10003; El software SAP2000 para llevar a cabo la formaci&oacute;n.
-&#10003; Un mes de acceso directo al instructor por Zoom o WhatsApp, para tus dudas.
-&#10003; Certificado al finalizar el curso.
-&#10003; Acceso de por vida a la plataforma y a todo el material.
-&#10003; 100% a distancia, avanzas a tu ritmo.
-Ese es el punto: te damos el software y un mes de acompa&ntilde;amiento directo con el instructor por el precio de una cena. No conocemos a nadie m&aacute;s que lo haga a este valor.
-&#9733;&#9733;&#9733;&#9733; 4.0 &middot; 83 estudiantes ya lo tomaron
-&#9203; Tienes 48 horas desde que recibes este correo para tomarlo a este precio.
-Quiero el curso por $26.99
-Compra directa en la web &middot; acceso inmediato
-&iquest;Te qued&oacute; alguna pregunta?
-Escr&iacute;benos por WhatsApp
-Hay una persona del equipo al otro lado
-Nos vemos dentro,
-El equipo de Design Modeling Academy
-Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
-designmodelingacademy.com
-{{unsubscribe_url}}
-```
-
-## ✅ AUTOMATIZACIONES PIPELINE > ✅ MASTER HIGHTICKETS
-
-### MASTER2RC - Seguimiento 1
-
-- **id:** `68648a60fdb5735640736fe5`
-- **tipo:** builder
-- **actualizada:** 2025-07-02T01:30:55.258Z
-- **Cuerpo:**
-
-```
-Hola, {{ contact.firstname }}
-Gracias por asistir a nuestra cita sobre el Máster BIM+IA. En este mensaje te adjunto el PDF “Personal Project IA Pro” correspondiente para que aprendas a usar las herramientas más novedosas y poder impulsar tu negocio e ingresos, y mejorar tu posición laboral.
-📥 DESCARGA AQUÍ TU GPT
-No te olvides lo conversado en la reunión sobre tu descuento exclusivo para comenzar a capacitarte con el Máster BIM+IA . Avísame si tienes alguna otra duda.
-Para poder ingresar, me confirmas si tienes el enlace para hacer tu inversión. En caso contrario, quedamos atentos a tu solicitud para enviártelo cuanto antes.
-Saludos,
-Equipo Design Modeling Academy
-```
-
-### MASTER2RC - Seguimiento 3
-
-- **id:** `68648b6dfdb57346b37370a7`
-- **tipo:** builder
-- **actualizada:** 2025-07-02T01:36:11.359Z
-- **Cuerpo:**
-
-```
-Hola, {{ contact.firstname }}​
-Conoce cómo Albino Piñero transformó su carrera y aumentó sus ingresos tras cursar el Diplomado BIM🎓 Si ya terminaste tu Diplomado, este es tu siguiente paso.
-📽️ Video Estudiante Albino Piñero
-Recuerda que en {{ custom_values.fecha_de_inicio }} empezamos con la clase de introducción al Máster BIM+IA . Si tienes alguna consulta, no dudes en responder a este correo o agendar una cita
-¡Espero verte en el Máster BIM+IA! 👋🏼
-Ing. Gabriel Pantoja
-¡AGENDA TU CITA AQUÍ!
-```
-
-### MASTER2RC - Seguimiento 4
-
-- **id:** `68648d175715d1f1f6a002cc`
-- **tipo:** builder
-- **actualizada:** 2025-07-02T01:38:18.593Z
-- **Cuerpo:**
-
-```
-Hola, {{ contact.firstname }}​
-Quería comentarte sobre nuestras nuevas acreditaciones en Design Modeling Academy, las cuales nos permitirán otorgar, a través de nuestro Máster BIM+IA , títulos universitarios con aval en EE. UU. y en Europa.
-Con el siguiente enlace puedes conocer las acreditaciones de nuestra institución y algunos beneficios de pertenecer a nuestra comunidad de estudiantes internacionales. Te animo a explorar esta increíble oportunidad y unirte a nosotros. ¡Haz clic en el enlace para más información!
-Acreditaciones Design Modeling Academy
-¡Feliz Día! 👋🏼
-Ingeniero Gabriel Pantoja
-¡AGENDA TU CITA AQUÍ!
-```
-
-### MASTER2RC - Seguimiento 5
-
-- **id:** `68648dabb6855faf8d7b14e3`
-- **tipo:** builder
-- **actualizada:** 2025-07-02T01:41:10.737Z
-- **Cuerpo:**
-
-```
-Hola, {{ contact.firstname }}​
-Te saludo nuevamente, con la intención de avisarte que ya casi comenzamos el Máster BIM+IA , estaremos asignando las últimas 5 plazas. ¿Aún deseas participar?
-Recuerda los beneficios: 12 certificaciones con aval internacional, títulos propios universitarios y acceso a servicios de bolsa de trabajo. El Máster tiene un valor total de $𝟮,𝟲𝟵𝟵.𝟵𝟵 𝗨𝗦𝗗, que incluye todos los beneficios y certificaciones mencionados. Para facilitar tu acceso, ofrecemos 𝗽𝗹𝗮𝗻𝗲𝘀 𝗱𝗲 𝗽𝗮𝗴𝗼 𝗳𝗹𝗲𝘅𝗶𝗯𝗹𝗲𝘀 𝗱𝗲 𝗵𝗮𝘀𝘁𝗮 𝟭𝟮 𝗺𝗲𝘀𝗲𝘀.
-Actualmente contamos con la etapa de 𝗣𝗥𝗘𝗩𝗘𝗡𝗧𝗔 𝗱𝗲𝗹 𝗺𝗮́𝘀𝘁𝗲𝗿, donde puedes reservar tu cupo con un 𝗽𝗮𝗴𝗼 𝘂́𝗻𝗶𝗰𝗼 𝗱𝗲 $𝟰𝟵𝟵.𝟵𝟵 𝗨𝗦𝗗 correspondiente a la matrícula. Luego, podrás completar el monto restante mediante el plan de pago que mejor se adapte a ti.🙌🏼
-Reserva tu cita para el proceso de pago e información. ¡Nos vemos en el Máster BIM+IA!
-Ing. Gabriel Pantoja
-¡AGENDA TU CITA AQUÍ!
-```
-
-### MASTER2RC - Seguimiento 6
-
-- **id:** `68648e465184e7569e8601fc`
-- **tipo:** builder
-- **actualizada:** 2025-07-02T01:43:48.277Z
-- **Cuerpo:**
-
-```
-Buen día, {{ contact.firstname }} , te contacto nuevamente ya que no he recibido tu respuesta del correo anterior​.
-Cuéntame, ¿pudiste revisar el PDF “Personal Project IA Pro” que te envié en el correo anterior?
-Adicional, recuerda que en el mes de {{ custom_values.fecha_de_inicio }} comenzamos el Máster BIM+IA . Me preguntaba igual si ¿aún te interesa inscribirte en nuestro Máster BIM+IA o si has tomado alguna otra decisión?
-Si tienes alguna duda, podemos agendar una cita de solo 15 minutos vía zoom para ampliar la información.
-Si tienes algún comentario, puedes responder en este mismo correo ¡Estaré encantado de apoyarte!
-Saludos 👋🏼
-Ingeniero Gabriel Pantoja
-¡AGENDA TU CITA AQUÍ!
-```
-
-### MASTER2RC - Seguimiento 7
-
-- **id:** `68648ef8d3dc9677731d6fb0`
-- **tipo:** builder
-- **actualizada:** 2025-07-02T01:46:56.011Z
-- **Cuerpo:**
-
-```
-Hola {{ contact.firstname }},
-He intentado ponerme en contacto contigo varias veces con el propósito de ayudarte en tu proceso de inscripción al Máster BIM+IA , que mostraste interés anteriormente, sin embargo, todavía no he recibido respuesta, lo cual puede deberse a una de estas dos razones:
-✅ 1. No necesitas mi ayuda con la inscripción al Máster BIM+IA y debería dejar de escribirte.
-✅ 2. Todavía te interesa inscribirte, pero no has tenido tiempo para responder el mensaje.
-Te agradecería si me dijeras ¿cuál de estos motivos coincide con tu situación?
-¡Qué tengas un buen día! 👋🏼
-Ing. Gabriel Pantoja
-¡AGENDA TU CITA AQUÍ!
-```
-
-### ✅ CITA Agendada Máster
-
-- **id:** `6a8888a78ced86da5a82e5f0`
-- **tipo:** html
-- **actualizada:** 2026-08-21T20:11:45.538Z
-- **Cuerpo:**
-
-```
-Dos cosas r&aacute;pidas antes de que hablemos, y un regalo por asistir.
-Tu cita est&aacute; agendada
-Gracias por agendar tu cita para el M&aacute;ster
-Hola {{contact.first_name}} ,
-Bienvenido al M&aacute;ster Internacional en BIM Management e Inteligencia Artificial para la Construcci&oacute;n . Te saludamos desde todo el equipo de Design Modeling Academy, centro de entrenamiento internacional con aval de Autodesk, CYPE y aval universitario en EE.UU. y Europa.
-Agradecemos que hayas agendado una cita con nosotros. Tenemos una cantidad considerable de reservas de cupo, as&iacute; que para agilizar tu proceso necesitamos dos cosas de tu parte antes de que hablemos:
-1
-Mira este video, es importante.
-Dura pocos minutos &middot; haz clic en la imagen para reproducirlo
-2
-Lee el PDF con el plan de estudios detallado.
-Ver el plan de estudios
-PDF con todos los m&oacute;dulos y contenidos del M&aacute;ster
-Descargar el brochure
-Beneficios de inscribirte
-Lo que entra contigo el primer d&iacute;a
-&#10003;
-Acceso 24/7 a la plataforma interactiva
-Ves y repites todas las clases a tu ritmo.
-&#10003;
-Acompa&ntilde;amiento durante 12 meses
-Workshops en vivo cada semana y mentor&iacute;as personalizadas 1:1.
-&#10003;
-Contenido 100% original
-Dise&ntilde;ado por expertos y basado en ejemplos reales.
-&#10003;
-Material 100% descargable
-Complementos y ejercicios pr&aacute;cticos aplicados a proyectos reales.
-&#10003;
-DMA Engineering Suite
-Tu propio kit de apps de IA, con una herramienta nueva cada mes.
-&#127891; Y todo lo que te llevas certificado
-Al completar cada m&oacute;dulo obtienes una certificaci&oacute;n oficial de Autodesk, porque somos Centro de Entrenamiento Autorizado de la marca.
-Al completar los m&oacute;dulos de cada bloque del plan de estudios, obtienes una microcredencial NFT avalada por Silicon Valley.
-Recibes diplomas de t&iacute;tulo propio de Sabal University , Universidad de las Naciones y Universidad ISTE Espa&ntilde;a .
-Y al cerrar el programa, un certificado universitario de Doctrina Qualitas y Design Modeling Academy por 1.440 horas acad&eacute;micas en l&iacute;nea. ✅
-Antes de la cita
-Cuatro recomendaciones para aprovecharla
-1
-Reserva de 30 a 45 minutos
-Es lo que dura la sesi&oacute;n. Que no te agarre entre reuniones.
-2
-Busca un espacio silencioso
-Sin ruido de fondo ni interrupciones.
-3
-Asegura una buena conexi&oacute;n
-Vamos a compartir pantalla y revisar el plan contigo.
-4
-Llega con la informaci&oacute;n le&iacute;da
-Temario, beneficios y certificaciones. As&iacute; la cita se va en tus dudas reales.
-&#127873; Solo por asistir a tu cita
-Te obsequiamos el M&oacute;dulo 1 completo
-Del Diplomado Universitario Internacional BIM: Edificaciones de Acero Estructural y Hormig&oacute;n Armado &mdash; “Fundamentos Estrat&eacute;gicos de la Metodolog&iacute;a BIM”. Tuyo sin costo, solo por presentarte a la cita.
-Aseg&uacute;rate de no faltar a la cita. Te espero. 👋
-Ing. Gabriel Pantoja
-BIM Manager y Fundador &middot; Design Modeling Academy
-Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
-designmodelingacademy.com
-{{unsubscribe_url}}
-```
-
-### ✅REGALO Cita Máster
-
-- **id:** `6a87485bda320347a24b3acd`
-- **tipo:** html
-- **actualizada:** 2026-08-20T18:55:40.562Z
-- **Cuerpo:**
-
-```
-Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
-Enviar como accion del formulario: Enviar manualmente a quienes asistieron a la cita del Master BIM
-Banner y logo en base64. La portada se carga desde el CDN de GHL.
-Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
--->
-Gracias por asistir a la cita del Master Internacional BIM+IA. Te regalamos el Modulo 1 completo.
-Regalo exclusivo &middot; 100% gratis
-Gracias por acompa&ntilde;arnos
-Hola {{contact.first_name}} , tenemos un regalo para ti &#127873;
-Queremos agradecerte por haber asistido a nuestra cita del M&aacute;ster Internacional en BIM Management e Inteligencia Artificial para la Construcci&oacute;n y por el tiempo que dedicaste a conocer el programa. Sabemos que tu agenda est&aacute; ocupada, y que hayas reservado ese espacio para nosotros significa mucho.
-Como parte de nuestro agradecimiento, preparamos algo para ti: acceso completo y gratuito al M&oacute;dulo 1 del Diplomado BIM en Estructuras .
-Es el mismo m&oacute;dulo que cursan nuestros alumnos del diplomado, sin recortes: las clases completas y los recursos y archivos de pr&aacute;ctica que se trabajan dentro. Sin costo y sin compromiso.
-ACCEDER A MI REGALO &#8594;
-Acceso 100% gratuito &middot; se abre en tu comunidad DMA
-C&oacute;mo aprovechar tu regalo
-Tenerlo no sirve de nada si no lo abres. Estos tres pasos son la diferencia.
-01
-Accede al m&oacute;dulo
-Ingresa desde el bot&oacute;n de arriba y comienza las clases. Empezar el mismo d&iacute;a es lo que separa a quien lo termina de quien no.
-02
-Revisa los recursos
-El m&oacute;dulo incluye material de pr&aacute;ctica. Desc&aacute;rgalo y tenlo abierto mientras sigues las clases.
-03
-Completa el m&oacute;dulo
-Avanza por todas las clases y aprovecha este primer acercamiento a nuestra metodolog&iacute;a de formaci&oacute;n BIM. Al completarlo recibes tu certificado de Design Modeling DG.
-Tambi&eacute;n es gratis
-&Uacute;nete a la Comunidad Design Premium
-Masterclasses en vivo, plantillas descargables y networking con ingenieros y arquitectos
-de toda Latinoam&eacute;rica. Sin costo y sin tarjeta.
-Entrar gratis a la Comunidad &#8594;
-&iquest;No se abre o no encuentras el acceso?
-Revisa primero las carpetas de spam y promociones. Si aun as&iacute; no aparece,
-escr&iacute;benos y te damos el acceso al instante.
-Escribir por WhatsApp
-Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
-designmodelingacademy.com
-{{unsubscribe_url}}
-```
-
-## ✅ PRODUCTOS INFORMATIVOS  > ✅ CURSOS 
-
-### ✅ INFO Análisis No Lineal en Estructuras de Hormigón Armado
+### ⚠️ INFO Análisis No Lineal en Estructuras de Hormigón Armado
 
 - **id:** `6a886c9b8ced86da5a802a02`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:01:24.406Z
+- **actualizada:** 2026-09-03T19:54:04.719Z
 - **Cuerpo:**
 
 ```
@@ -8872,11 +8723,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ INFO Análisis Profesional de Estructuras de Acero. Incluyendo Conexiones
+### ⚠️ INFO Análisis Profesional de Estructuras de Acero. Incluyendo Conexiones
 
 - **id:** `6a886ec517389f8e23dc7d8b`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:39:04.851Z
+- **actualizada:** 2026-09-03T19:50:51.709Z
 - **Cuerpo:**
 
 ```
@@ -8918,11 +8769,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ INFO Análisis Profesional de Viviendas en Hormigón Armado
+### ⚠️ INFO Análisis Profesional de Viviendas en Hormigón Armado
 
 - **id:** `6a886ee22096ea7b87d5e35e`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:39:38.440Z
+- **actualizada:** 2026-09-03T19:50:26.561Z
 - **Cuerpo:**
 
 ```
@@ -8968,11 +8819,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ INFO Análisis y Diseño Profesional de Puentes Metálicos y Hormigón Pretensado
+### ⚠️ INFO Análisis y Diseño Profesional de Puentes Metálicos y Hormigón Pretensado
 
 - **id:** `6a886e9bbc3bac7221b86bd9`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:37:47.139Z
+- **actualizada:** 2026-09-03T19:50:35.108Z
 - **Cuerpo:**
 
 ```
@@ -9034,11 +8885,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ INFO Análisis y Diseño Simplificado de Estructuras Complejas de Acero
+### ⚠️ INFO Análisis y Diseño Simplificado de Estructuras Complejas de Acero
 
 - **id:** `6a886e6d97eed9fbd01dc568`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:36:51.329Z
+- **actualizada:** 2026-09-03T19:56:10.148Z
 - **Cuerpo:**
 
 ```
@@ -9084,11 +8935,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ INFO Análisis y Diseño de Cimentaciones Profundas para Edificios
+### ⚠️ INFO Análisis y Diseño de Cimentaciones Profundas para Edificios
 
 - **id:** `6a886c3c676a1cd9c1f3cf81`
 - **tipo:** html
-- **actualizada:** 2026-08-24T14:58:37.077Z
+- **actualizada:** 2026-09-03T19:53:35.979Z
 - **Cuerpo:**
 
 ```
@@ -9130,11 +8981,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ INFO Análisis y Diseño de Cimentaciones Superficiales y Profundas
+### ⚠️ INFO Análisis y Diseño de Cimentaciones Superficiales y Profundas
 
 - **id:** `6a886d9e897d6716c6d81c0b`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:05:18.943Z
+- **actualizada:** 2026-09-03T19:55:11.437Z
 - **Cuerpo:**
 
 ```
@@ -9180,11 +9031,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ INFO Análisis y Diseño de Cimentaciones en Tanques Elevados
+### ⚠️ INFO Análisis y Diseño de Cimentaciones en Tanques Elevados
 
 - **id:** `6a886f36676a1cd9c1f4199d`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:41:12.407Z
+- **actualizada:** 2026-09-03T19:50:01.259Z
 - **Cuerpo:**
 
 ```
@@ -9226,11 +9077,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ INFO Análisis y Diseño de Cimentaciones en Viviendas Familiares
+### ⚠️ INFO Análisis y Diseño de Cimentaciones en Viviendas Familiares
 
 - **id:** `6a886f237e0c28b368117591`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:40:47.637Z
+- **actualizada:** 2026-09-03T19:50:10.215Z
 - **Cuerpo:**
 
 ```
@@ -9272,11 +9123,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ INFO Análisis y Diseño de Edificaciones 12 pisos en Hormigón Armado
+### ⚠️ INFO Análisis y Diseño de Edificaciones 12 pisos en Hormigón Armado
 
 - **id:** `6a886c4e17389f8e23dc3f10`
 - **tipo:** html
-- **actualizada:** 2026-08-24T14:59:09.503Z
+- **actualizada:** 2026-09-03T19:53:43.552Z
 - **Cuerpo:**
 
 ```
@@ -9318,11 +9169,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ INFO Análisis y Diseño de Edificaciones Residenciales en Hormigón Armado
+### ⚠️ INFO Análisis y Diseño de Edificaciones Residenciales en Hormigón Armado
 
 - **id:** `6a886f4cda320347a25fdc0b`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:41:32.075Z
+- **actualizada:** 2026-09-03T19:49:45.869Z
 - **Cuerpo:**
 
 ```
@@ -9364,11 +9215,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ INFO Análisis y Diseño de Muros de Contención
+### ⚠️ INFO Análisis y Diseño de Muros de Contención
 
 - **id:** `6a886d8b676a1cd9c1f3f1d6`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:04:41.109Z
+- **actualizada:** 2026-09-03T19:55:02.013Z
 - **Cuerpo:**
 
 ```
@@ -9414,11 +9265,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ INFO AutoCAD 2D: Delineante de Arquitectura e Ingeniería Civil
+### ⚠️ INFO AutoCAD 2D: Delineante de Arquitectura e Ingeniería Civil
 
 - **id:** `6a886dfd5111f4c77719b6a0`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:22:26.811Z
+- **actualizada:** 2026-09-03T19:51:58.902Z
 - **Cuerpo:**
 
 ```
@@ -9464,11 +9315,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ INFO Costos y Presupuestos de Obras de Construcción Aplicado a Viviendas
+### ⚠️ INFO Costos y Presupuestos de Obras de Construcción Aplicado a Viviendas
 
 - **id:** `6a886ef6e4cb7738346b9c07`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:40:02.924Z
+- **actualizada:** 2026-09-03T19:50:17.645Z
 - **Cuerpo:**
 
 ```
@@ -9510,11 +9361,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ INFO Cálculo de Tanques Elevados en Hormigón Armado y Acero Estructural
+### ⚠️ INFO Cálculo de Tanques Elevados en Hormigón Armado y Acero Estructural
 
 - **id:** `6a886c01473a54c041ea24c3`
 - **tipo:** html
-- **actualizada:** 2026-08-24T14:56:51.941Z
+- **actualizada:** 2026-09-03T19:53:12.597Z
 - **Cuerpo:**
 
 ```
@@ -9556,11 +9407,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ INFO De Principiante a Profesional: Diseño de Viviendas en Hormigón con Robot
+### ⚠️ INFO De Principiante a Profesional: Diseño de Viviendas en Hormigón con Robot
 
 - **id:** `6a886e24676a1cd9c1f400a0`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:35:04.274Z
+- **actualizada:** 2026-09-03T19:55:32.117Z
 - **Cuerpo:**
 
 ```
@@ -9606,11 +9457,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ INFO Desarrollo de Edificio Real de Hormigón Armado en CypeCAD
+### ⚠️ INFO Desarrollo de Edificio Real de Hormigón Armado en CypeCAD
 
 - **id:** `6a886e54897d6716c6d82fef`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:36:25.472Z
+- **actualizada:** 2026-09-03T19:55:49.270Z
 - **Cuerpo:**
 
 ```
@@ -9652,11 +9503,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ INFO Desarrollo de Planos Estructurales con Metodología BIM
+### ⚠️ INFO Desarrollo de Planos Estructurales con Metodología BIM
 
 - **id:** `6a886f0fe4cb7738346b9df9`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:40:26.257Z
+- **actualizada:** 2026-09-03T19:51:03.155Z
 - **Cuerpo:**
 
 ```
@@ -9702,11 +9553,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ INFO Detallado de Refuerzo de Acero en Elementos de Hormigón Armado
+### ⚠️ INFO Detallado de Refuerzo de Acero en Elementos de Hormigón Armado
 
 - **id:** `6a886db27e0c28b368114f6b`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:06:10.815Z
+- **actualizada:** 2026-09-03T19:51:17.146Z
 - **Cuerpo:**
 
 ```
@@ -9752,11 +9603,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ INFO Diseño Estructural en Hormigón Armado en Edificaciones
+### ⚠️ INFO Diseño Estructural en Hormigón Armado en Edificaciones
 
 - **id:** `6a886de7e4cb7738346b8037`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:21:20.923Z
+- **actualizada:** 2026-09-03T19:51:46.575Z
 - **Cuerpo:**
 
 ```
@@ -9802,11 +9653,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ INFO Diseño de Cimentaciones Superficiales aplicado a Proyectos Reales
+### ⚠️ INFO Diseño de Cimentaciones Superficiales aplicado a Proyectos Reales
 
 - **id:** `6a886e3be4cb7738346b8ab8`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:35:59.310Z
+- **actualizada:** 2026-09-03T19:55:40.688Z
 - **Cuerpo:**
 
 ```
@@ -9852,11 +9703,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ INFO Diseño de Edificaciones Sismorresistentes en Hormigón Armado
+### ⚠️ INFO Diseño de Edificaciones Sismorresistentes en Hormigón Armado
 
 - **id:** `6a886cb6e4cb7738346b60f6`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:01:50.426Z
+- **actualizada:** 2026-09-03T19:54:18.327Z
 - **Cuerpo:**
 
 ```
@@ -9898,11 +9749,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ INFO Diseño de Estructuras Mixtas, Madera, Hormigón y Acero Incluyendo Elementos y Cimentaciones
+### ⚠️ INFO Diseño de Estructuras Mixtas, Madera, Hormigón y Acero Incluyendo Elementos y Cimentaciones
 
 - **id:** `6a886c6a97eed9fbd01d9440`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:00:46.960Z
+- **actualizada:** 2026-09-03T19:53:57.633Z
 - **Cuerpo:**
 
 ```
@@ -9944,11 +9795,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ INFO Diseño de Viviendas en Hormigón Armado y Acero Estructural
+### ⚠️ INFO Diseño de Viviendas en Hormigón Armado y Acero Estructural
 
 - **id:** `6a886d76897d6716c6d81840`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:03:55.619Z
+- **actualizada:** 2026-09-03T19:54:52.962Z
 - **Cuerpo:**
 
 ```
@@ -9990,11 +9841,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ INFO Diseño y Cálculo de Edificaciones Industriales en Acero Estructural
+### ⚠️ INFO Diseño y Cálculo de Edificaciones Industriales en Acero Estructural
 
 - **id:** `6a886c18c95ab36931b21783`
 - **tipo:** html
-- **actualizada:** 2026-08-24T14:58:07.306Z
+- **actualizada:** 2026-09-03T19:53:20.237Z
 - **Cuerpo:**
 
 ```
@@ -10036,11 +9887,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ INFO Diseño y Modelado de Viviendas Unifamiliares en Acero Estructural
+### ⚠️ INFO Diseño y Modelado de Viviendas Unifamiliares en Acero Estructural
 
 - **id:** `6a886ccc676a1cd9c1f3df05`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:02:38.693Z
+- **actualizada:** 2026-09-03T19:54:24.921Z
 - **Cuerpo:**
 
 ```
@@ -10082,11 +9933,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ INFO Elaboración de Planos Estructurales para Tanque Elevados
+### ⚠️ INFO Elaboración de Planos Estructurales para Tanque Elevados
 
 - **id:** `6a886dd18ced86da5a804ae4`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:07:03.627Z
+- **actualizada:** 2026-09-03T19:51:28.364Z
 - **Cuerpo:**
 
 ```
@@ -10132,11 +9983,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ INFO Guía Práctica para el Cálculo Tipo Cerchas en Naves Industriales
+### ⚠️ INFO Guía Práctica para el Cálculo Tipo Cerchas en Naves Industriales
 
 - **id:** `6a88668fda320347a25ef8c6`
 - **tipo:** html
-- **actualizada:** 2026-08-24T14:50:52.056Z
+- **actualizada:** 2026-09-03T19:52:17.955Z
 - **Cuerpo:**
 
 ```
@@ -10182,11 +10033,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ INFO Ingeniería de Costos y Elaboración de Cronogramas en Construcción
+### ⚠️ INFO Ingeniería de Costos y Elaboración de Cronogramas en Construcción
 
 - **id:** `6a886eb2c3ca7ccb66a2158a`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:38:25.926Z
+- **actualizada:** 2026-09-03T19:50:43.281Z
 - **Cuerpo:**
 
 ```
@@ -10228,11 +10079,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ INFO Introducción al Diseño y Modelado BIM aplicado a Arquitectura
+### ⚠️ INFO Introducción al Diseño y Modelado BIM aplicado a Arquitectura
 
 - **id:** `6a886e107e0c28b368115b62`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:27:57.184Z
+- **actualizada:** 2026-09-03T19:55:21.157Z
 - **Cuerpo:**
 
 ```
@@ -10278,11 +10129,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ INFO Introducción de Autodesk Inventor Professional
+### ⚠️ INFO Introducción de Autodesk Inventor Professional
 
 - **id:** `6a886cebda320347a25f9e28`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:03:22.022Z
+- **actualizada:** 2026-09-03T19:54:34.576Z
 - **Cuerpo:**
 
 ```
@@ -10328,11 +10179,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ INFO Introducción de Instalaciones Hidrosanitarias con Modelado BIM
+### ⚠️ INFO Introducción de Instalaciones Hidrosanitarias con Modelado BIM
 
 - **id:** `6a886e83bc3bac7221b869a8`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:37:15.762Z
+- **actualizada:** 2026-09-03T19:55:59.543Z
 - **Cuerpo:**
 
 ```
@@ -10378,11 +10229,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ INFO Modelado BIM en Hormigón Armado y Acero Estructural
+### ⚠️ INFO Modelado BIM en Hormigón Armado y Acero Estructural
 
 - **id:** `6a886be4bc3bac7221b8245e`
 - **tipo:** html
-- **actualizada:** 2026-08-24T14:52:32.521Z
+- **actualizada:** 2026-09-03T19:52:52.188Z
 - **Cuerpo:**
 
 ```
@@ -10428,72 +10279,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ INFO Naves Industriales SAP2000
-
-- **id:** `6a7e0e73a1eba97e2c1c3163`
-- **tipo:** html
-- **actualizada:** 2026-08-24T14:48:58.469Z
-- **Cuerpo:**
-
-```
-Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
-Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
--->
-Diseno de naves de acero ante viento y sismo en SAP2000.
-Curso especializado
-Naves Industriales PRO 30 Horas en SAP2000
-Hola {{contact.first_name}} ,
-Una formaci&oacute;n
-enfocada en un solo objetivo: dise&ntilde;ar naves industriales de acero con criterio ante
-cargas de viento y sismo . Vas del modelado 3D de p&oacute;rticos
-y celos&iacute;as al an&aacute;lisis modal espectral y de viento, hasta el dise&ntilde;o final de los
-elementos.
-Se trabajan a fondo
-los temas que suelen quedar sueltos: pandeo flexo-torsional y lateral-torsional, estabilidad de la
-estructura, tensores y arriostramientos, dise&ntilde;o de correas y mezzanine, y optimizaci&oacute;n de
-pesos.
-25 horas acad&eacute;micas &middot; 100% online asincr&oacute;nico
-SAP2000 &middot; material descargable
-Descargar el temario completo &#8594;
-PDF con el detalle sesi&oacute;n por sesi&oacute;n
-Qu&eacute; incluye tu curso:
-&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
-&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos
-reales.
-&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros
-proyectos.
-&#9989;
-Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
-&#127891; Incluido sin costo adicional
-Tu certificaci&oacute;n al finalizar
-Emitido por Modeling-DG S.A.S. &mdash; verificable en l&iacute;nea.
-25
-horas acad&eacute;micas
-&#10003; Certificado
-Internacional
-&#10003; C&oacute;digo QR de
-verificaci&oacute;n
-&#10003; Descargable en PDF
-&#10003; A tu nombre, listo
-para LinkedIn
-Al terminar, recibes
-un Certificado Internacional de 25 horas acad&eacute;micas
-emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
-&iquest;Tienes dudas antes de inscribirte?
-Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
-Hablar por WhatsApp
-Tambi&eacute;n puedes
-ver todos nuestros cursos en la web
-Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
-designmodelingacademy.com
-{{unsubscribe_url}}
-```
-
-### ✅ INFO Teoría y Cálculo de Uniones Metálicas en Edificaciones
+### ⚠️ INFO Teoría y Cálculo de Uniones Metálicas en Edificaciones
 
 - **id:** `6a886b8e676a1cd9c1f3bdbb`
 - **tipo:** html
-- **actualizada:** 2026-08-24T14:51:50.504Z
+- **actualizada:** 2026-09-03T19:52:26.975Z
 - **Cuerpo:**
 
 ```
@@ -10539,66 +10329,55 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-## ✅ PRODUCTOS INFORMATIVOS  > ✅ ESPECIALIZACIONES
+### ✅INFO Naves Industriales SAP2000
 
-### ✅INFO Especialización Acero
-
-- **id:** `6a7dee740d81f0f162d0058c`
+- **id:** `6a7e0e73a1eba97e2c1c3163`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:50:44.240Z
+- **actualizada:** 2026-09-03T19:56:29.901Z
 - **Cuerpo:**
 
 ```
 Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
-Imagenes embebidas en base64. Enlaces ya incrustados (temario, WhatsApp, landing).
-Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
 -->
-4 meses, 4 cursos y 59 sesiones en Robot, Advance Steel y Revit Structure. Descarga el temario completo.
-Especialización profesional
-Diseño Estructural BIM en Acero para Edificaciones
+Diseno de naves de acero ante viento y sismo en SAP2000. Descarga el temario completo.
+Curso especializado
+Naves Industriales PRO 30 Horas en SAP2000
 Hola {{contact.first_name}} ,
-Un programa intensivo de 4 meses que integra el análisis
-estructural, el detallado de conexiones y el modelado BIM en un solo flujo de trabajo. Avanzas desde
-el modelo matemático en Robot Structural Analysis , pasas al
-detallado de uniones en Advance Steel y cierras con la
-documentación del proyecto en Revit Structure .
-Todo con ejemplos reales: edificaciones metálicas, naves industriales y conexiones precalificadas
-bajo normas AISC 360-16 y ASCE 7-16.
-4 cursos &middot; 59 sesiones &middot; 110&ndash;130 horas
-Nivel avanzado &middot; 100% asincrónico &middot; asesorías 1 a 1
+Una formaci&oacute;n enfocada en un solo objetivo: dise&ntilde;ar naves industriales de acero con criterio ante cargas de viento y sismo . Vas del modelado 3D de p&oacute;rticos y celos&iacute;as al an&aacute;lisis modal espectral y de viento, hasta el dise&ntilde;o final de los elementos.
+Se trabajan a fondo los temas que suelen quedar sueltos: pandeo flexo-torsional y lateral-torsional, estabilidad de la estructura, tensores y arriostramientos, dise&ntilde;o de correas y mezzanine, y optimizaci&oacute;n de pesos.
+14 sesiones &middot; 30 horas &middot; 19 archivos descargables
+Nivel intermedio-avanzado &middot; asincr&oacute;nico &middot; SAP2000 + AutoCAD
 Ver el temario completo &#8594;
-PDF con el detalle módulo por módulo
-Qué incluye tu especialización:
+PDF con el detalle sesi&oacute;n por sesi&oacute;n
+Qu&eacute; incluye tu curso:
 &#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
-&#9989; Contenido 100% original, diseñado por expertos y basado en ejemplos reales.
-&#9989; Material totalmente descargable, que te sirve como guía en tus futuros proyectos.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
 &#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
 Sin costo adicional
-Terminas con 5 certificados
-Cuatro de completación con aval Autodesk y uno internacional de 120 horas.
-Aval Autodesk
-Uno por cada curso &middot; 4 en total
-120 horas académicas
-Internacional &middot; con código QR
-Al finalizar cada curso recibes una certificación de completación
-avalada por Autodesk &mdash; esto porque somos Centro de Entrenamiento Autorizado de la marca.
-Y al terminar, recibes un Certificado Internacional de 120 horas
-académicas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
-¿Tienes dudas antes de inscribirte?
-Escríbenos por WhatsApp y un asesor académico te responde directamente.
+Tu certificado internacional
+Emitido por Modeling-DG S.A.S. con c&oacute;digo QR de verificaci&oacute;n.
+Design Modeling
+Con c&oacute;digo QR
+Al terminar, recibes un Certificado Internacional de 30 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
 Hablar por WhatsApp
-También puedes
-ver la especialización completa en nuestra web
+Tambi&eacute;n puedes
+ver el curso completo en nuestra web
 Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
 designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅INFO Especialización Arquitectura MEP
+## ⚠️ PRODUCTOS INFORMATIVOS  > ⚠️ ESPECIALIZACIONES
+
+### ⚠️INFO Especialización Arquitectura MEP
 
 - **id:** `6a871cec17389f8e23c296ea`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:51:58.970Z
+- **actualizada:** 2026-09-03T19:48:00.658Z
 - **Cuerpo:**
 
 ```
@@ -10650,11 +10429,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅INFO Especialización Cimentaciones
+### ⚠️INFO Especialización Cimentaciones
 
 - **id:** `6a871fa317389f8e23c2de99`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:53:55.348Z
+- **actualizada:** 2026-09-03T19:48:41.995Z
 - **Cuerpo:**
 
 ```
@@ -10706,11 +10485,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅INFO Especialización Costos Presupuestos
+### ⚠️INFO Especialización Costos Presupuestos
 
 - **id:** `6a871f0e13ad6f85ed80c56e`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:54:13.750Z
+- **actualizada:** 2026-09-03T19:48:49.969Z
 - **Cuerpo:**
 
 ```
@@ -10760,11 +10539,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅INFO Especialización ETABS
+### ⚠️INFO Especialización ETABS
 
 - **id:** `6a87202c87bb8b3a11142274`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:52:22.513Z
+- **actualizada:** 2026-09-03T19:48:09.304Z
 - **Cuerpo:**
 
 ```
@@ -10816,11 +10595,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅INFO Especialización Hormigón Armado
+### ⚠️INFO Especialización Hormigón Armado
 
 - **id:** `6a871c2bb2825860204d2920`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:51:16.914Z
+- **actualizada:** 2026-09-03T19:47:50.713Z
 - **Cuerpo:**
 
 ```
@@ -10872,11 +10651,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅INFO Especialización Planos BIM
+### ⚠️INFO Especialización Planos BIM
 
 - **id:** `6a871f670872c312533c75ff`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:53:29.868Z
+- **actualizada:** 2026-09-03T19:48:33.761Z
 - **Cuerpo:**
 
 ```
@@ -10928,11 +10707,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅INFO Especialización SAP2000
+### ⚠️INFO Especialización SAP2000
 
 - **id:** `6a871fe0de5000dc92bb4245`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:52:52.067Z
+- **actualizada:** 2026-09-03T19:48:16.258Z
 - **Cuerpo:**
 
 ```
@@ -10984,11 +10763,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅INFO Especialización Tanques
+### ⚠️INFO Especialización Tanques
 
 - **id:** `6a871d6e87bb8b3a1113db66`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:53:10.090Z
+- **actualizada:** 2026-09-03T19:48:25.783Z
 - **Cuerpo:**
 
 ```
@@ -11040,13 +10819,66 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-## ✅ PRODUCTOS INFORMATIVOS  > ✅ HIGHTICKET
+### ✅INFO Especialización Acero
 
-### ✅INFO Diplomado Arquitectos Ingenieros 4.0
+- **id:** `6a7dee740d81f0f162d0058c`
+- **tipo:** html
+- **actualizada:** 2026-09-03T19:49:09.420Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados (temario, WhatsApp, landing).
+Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+4 meses, 4 cursos y 59 sesiones en Robot, Advance Steel y Revit Structure. Descarga el temario completo.
+Especialización profesional
+Diseño Estructural BIM en Acero para Edificaciones
+Hola {{contact.first_name}} ,
+Un programa intensivo de 4 meses que integra el análisis
+estructural, el detallado de conexiones y el modelado BIM en un solo flujo de trabajo. Avanzas desde
+el modelo matemático en Robot Structural Analysis , pasas al
+detallado de uniones en Advance Steel y cierras con la
+documentación del proyecto en Revit Structure .
+Todo con ejemplos reales: edificaciones metálicas, naves industriales y conexiones precalificadas
+bajo normas AISC 360-16 y ASCE 7-16.
+4 cursos &middot; 59 sesiones &middot; 110&ndash;130 horas
+Nivel avanzado &middot; 100% asincrónico &middot; asesorías 1 a 1
+Ver el temario completo &#8594;
+PDF con el detalle módulo por módulo
+Qué incluye tu especialización:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, diseñado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como guía en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+Sin costo adicional
+Terminas con 5 certificados
+Cuatro de completación con aval Autodesk y uno internacional de 120 horas.
+Aval Autodesk
+Uno por cada curso &middot; 4 en total
+120 horas académicas
+Internacional &middot; con código QR
+Al finalizar cada curso recibes una certificación de completación
+avalada por Autodesk &mdash; esto porque somos Centro de Entrenamiento Autorizado de la marca.
+Y al terminar, recibes un Certificado Internacional de 120 horas
+académicas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+¿Tienes dudas antes de inscribirte?
+Escríbenos por WhatsApp y un asesor académico te responde directamente.
+Hablar por WhatsApp
+También puedes
+ver la especialización completa en nuestra web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+## ⚠️ PRODUCTOS INFORMATIVOS  > ⚠️ HIGHTICKET
+
+### ⚠️INFO Diplomado Arquitectos Ingenieros 4.0
 
 - **id:** `6a87259213ad6f85ed81a7e8`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:57:17.457Z
+- **actualizada:** 2026-09-03T19:40:35.925Z
 - **Cuerpo:**
 
 ```
@@ -11098,67 +10930,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅INFO Diplomado Arquitectura
-
-- **id:** `6a7e0b72a9bd3238fcd3bb01`
-- **tipo:** html
-- **actualizada:** 2026-08-24T15:56:10.432Z
-- **Cuerpo:**
-
-```
-Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
-Imagenes embebidas en base64. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
--->
-Revit Architecture, AutoCAD y Unreal Engine 5. Descarga el temario completo.
-Diplomado universitario internacional
-Modelado y Renderizado de Proyectos Arquitect&oacute;nicos
-Hola {{contact.first_name}} ,
-Un programa para dominar el dise&ntilde;o arquitect&oacute;nico con metodolog&iacute;a BIM, desde la construcci&oacute;n del modelo desde cero hasta la presentaci&oacute;n al cliente. Avanzas del modelado integral en Revit Architecture &mdash; muros, cubiertas, escaleras, distribuci&oacute;n funcional &mdash; a la documentaci&oacute;n de plantas, cortes y elevaciones.
-El m&oacute;dulo final se enfoca en visualizaci&oacute;n de alto impacto: renderizado en tiempo real con Enscape , configuraci&oacute;n de materiales e iluminaci&oacute;n, recorridos virtuales y l&aacute;minas profesionales listas para entrega.
-4 m&oacute;dulos &middot; 100 horas &middot; nivel intermedio
-Revit Architecture &middot; AutoCAD &middot; Enscape
-Ver el temario completo &#8594;
-PDF con el detalle m&oacute;dulo por m&oacute;dulo
-Qu&eacute; incluye tu diplomado:
-&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva, para ver y repetir las clases cuantas veces quieras.
-&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
-&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
-&#9989; Material adicional 100% descargable y ejercicios pr&aacute;cticos aplicados a ejemplos reales.
-&#9989; Mentor&iacute;as personalizadas durante los 4 meses de formaci&oacute;n, seg&uacute;n disponibilidad del instructor encargado.
-Sin costo adicional
-Titulaci&oacute;n con respaldo internacional
-Certificaciones Autodesk por cada m&oacute;dulo y t&iacute;tulos propios universitarios al finalizar.
-Autodesk
-Una por m&oacute;dulo
-Design Modeling
-Con c&oacute;digo QR
-Doctrina Qualitas
-Aval en Europa
-Diplomas de t&iacute;tulo propio
-Sabal University
-Estados Unidos
-Univ. de las Naciones
-Equivalencia acad&eacute;mica
-Al completar cada curso obtienes certificaciones oficiales de
-Autodesk , y al final un certificado de Doctrinas Qualitas
-y Design Modeling Academy &mdash; esto porque somos Centro de Entrenamiento Autorizado de la marca.
-Adem&aacute;s, recibes diplomas de t&iacute;tulo propio de Sabal University
-y Universidad de las Naciones , con reconocimiento internacional (incluyendo Estados Unidos). &#9989;
-&iquest;Tienes dudas antes de inscribirte?
-Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
-Hablar por WhatsApp
-Tambi&eacute;n puedes
-ver el diplomado completo en nuestra web
-Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
-designmodelingacademy.com
-{{unsubscribe_url}}
-```
-
-### ✅INFO Diplomado Cálculo Documentación
+### ⚠️INFO Diplomado Cálculo Documentación
 
 - **id:** `6a872682473a54c041d22ccd`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:57:56.862Z
+- **actualizada:** 2026-09-03T19:40:17.091Z
 - **Cuerpo:**
 
 ```
@@ -11210,11 +10986,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅INFO Diplomado Diseño Cálculo Marketing
+### ⚠️INFO Diplomado Diseño Cálculo Marketing
 
 - **id:** `6a8726230872c312533d82c0`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:57:38.401Z
+- **actualizada:** 2026-09-03T19:40:25.782Z
 - **Cuerpo:**
 
 ```
@@ -11266,67 +11042,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅INFO Diplomado Estructuras
-
-- **id:** `6a7e0a741cdd6301731ba7c9`
-- **tipo:** html
-- **actualizada:** 2026-08-24T15:56:46.847Z
-- **Cuerpo:**
-
-```
-Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
-Imagenes embebidas en base64. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
--->
-9 modulos, 600 horas y titulos propios universitarios. Descarga el temario completo.
-Diplomado universitario internacional
-Edificaciones de Acero Estructural y Hormig&oacute;n Armado
-Hola {{contact.first_name}} ,
-Un programa de 6 meses para dominar el modelado estructural completo bajo metodolog&iacute;a BIM. Avanzas de los fundamentos del modelado en Revit al hormig&oacute;n armado, el acero estructural y las cimentaciones, hasta generar documentaci&oacute;n t&eacute;cnica lista para construcci&oacute;n.
-Los &uacute;ltimos m&oacute;dulos cierran el ciclo profesional: coordinaci&oacute;n interdisciplinaria con Navisworks , vinculaci&oacute;n del modelo con Robot y SAP2000 para c&aacute;lculo, automatizaci&oacute;n con Dynamo y un proyecto final integrador sobre un caso real.
-9 m&oacute;dulos &middot; 600 horas &middot; 6 meses
-Revit &middot; Navisworks &middot; Robot / SAP2000 &middot; Dynamo
-Ver el temario completo &#8594;
-PDF con el detalle m&oacute;dulo por m&oacute;dulo
-Qu&eacute; incluye tu diplomado:
-&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva, para ver y repetir las clases cuantas veces quieras.
-&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
-&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
-&#9989; Material adicional 100% descargable y ejercicios pr&aacute;cticos aplicados a ejemplos reales.
-&#9989; Mentor&iacute;as personalizadas durante los 6 meses de formaci&oacute;n, seg&uacute;n disponibilidad del instructor encargado.
-Sin costo adicional
-Titulaci&oacute;n con respaldo internacional
-Certificaciones Autodesk por cada m&oacute;dulo y t&iacute;tulos propios universitarios al finalizar.
-Autodesk
-Una por m&oacute;dulo
-Design Modeling
-Con c&oacute;digo QR
-Doctrina Qualitas
-Aval en Europa
-Diplomas de t&iacute;tulo propio
-Sabal University
-Estados Unidos
-Univ. de las Naciones
-Equivalencia acad&eacute;mica
-Al completar cada curso obtienes certificaciones oficiales de
-Autodesk , y al final un certificado de Doctrinas Qualitas
-y Design Modeling Academy &mdash; esto porque somos Centro de Entrenamiento Autorizado de la marca.
-Adem&aacute;s, recibes diplomas de t&iacute;tulo propio de Sabal University
-y Universidad de las Naciones , con reconocimiento internacional (incluyendo Estados Unidos). &#9989;
-&iquest;Tienes dudas antes de inscribirte?
-Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
-Hablar por WhatsApp
-Tambi&eacute;n puedes
-ver el diplomado completo en nuestra web
-Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
-designmodelingacademy.com
-{{unsubscribe_url}}
-```
-
-### ✅INFO Diplomado Modelador Estructural Sanitario
+### ⚠️INFO Diplomado Modelador Estructural Sanitario
 
 - **id:** `6a8726b513ad6f85ed821066`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:58:21.484Z
+- **actualizada:** 2026-09-03T19:40:07.858Z
 - **Cuerpo:**
 
 ```
@@ -11378,11 +11098,123 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
+### ✅INFO Diplomado Arquitectura
+
+- **id:** `6a7e0b72a9bd3238fcd3bb01`
+- **tipo:** html
+- **actualizada:** 2026-09-03T19:43:45.583Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Revit Architecture, AutoCAD y Unreal Engine 5. Descarga el temario completo.
+Diplomado universitario internacional
+Modelado y Renderizado de Proyectos Arquitect&oacute;nicos
+Hola {{contact.first_name}} ,
+Un programa para dominar el dise&ntilde;o arquitect&oacute;nico con metodolog&iacute;a BIM, desde la construcci&oacute;n del modelo desde cero hasta la presentaci&oacute;n al cliente. Avanzas del modelado integral en Revit Architecture &mdash; muros, cubiertas, escaleras, distribuci&oacute;n funcional &mdash; a la documentaci&oacute;n de plantas, cortes y elevaciones.
+El m&oacute;dulo final se enfoca en visualizaci&oacute;n de alto impacto: renderizado en tiempo real con Enscape , configuraci&oacute;n de materiales e iluminaci&oacute;n, recorridos virtuales y l&aacute;minas profesionales listas para entrega.
+4 m&oacute;dulos &middot; 100 horas &middot; nivel intermedio
+Revit Architecture &middot; AutoCAD &middot; Enscape
+Ver el temario completo &#8594;
+PDF con el detalle m&oacute;dulo por m&oacute;dulo
+Qu&eacute; incluye tu diplomado:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva, para ver y repetir las clases cuantas veces quieras.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#9989; Material adicional 100% descargable y ejercicios pr&aacute;cticos aplicados a ejemplos reales.
+&#9989; Mentor&iacute;as personalizadas durante los 4 meses de formaci&oacute;n, seg&uacute;n disponibilidad del instructor encargado.
+Sin costo adicional
+Titulaci&oacute;n con respaldo internacional
+Certificaciones Autodesk por cada m&oacute;dulo y t&iacute;tulos propios universitarios al finalizar.
+Autodesk
+Una por m&oacute;dulo
+Design Modeling
+Con c&oacute;digo QR
+Doctrina Qualitas
+Aval en Europa
+Diplomas de t&iacute;tulo propio
+Sabal University
+Estados Unidos
+Univ. de las Naciones
+Equivalencia acad&eacute;mica
+Al completar cada curso obtienes certificaciones oficiales de
+Autodesk , y al final un certificado de Doctrinas Qualitas
+y Design Modeling Academy &mdash; esto porque somos Centro de Entrenamiento Autorizado de la marca.
+Adem&aacute;s, recibes diplomas de t&iacute;tulo propio de Sabal University
+y Universidad de las Naciones , con reconocimiento internacional (incluyendo Estados Unidos). &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver el diplomado completo en nuestra web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅INFO Diplomado Estructuras
+
+- **id:** `6a7e0a741cdd6301731ba7c9`
+- **tipo:** html
+- **actualizada:** 2026-09-03T19:43:55.848Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+9 modulos, 600 horas y titulos propios universitarios. Descarga el temario completo.
+Diplomado universitario internacional
+Edificaciones de Acero Estructural y Hormig&oacute;n Armado
+Hola {{contact.first_name}} ,
+Un programa de 6 meses para dominar el modelado estructural completo bajo metodolog&iacute;a BIM. Avanzas de los fundamentos del modelado en Revit al hormig&oacute;n armado, el acero estructural y las cimentaciones, hasta generar documentaci&oacute;n t&eacute;cnica lista para construcci&oacute;n.
+Los &uacute;ltimos m&oacute;dulos cierran el ciclo profesional: coordinaci&oacute;n interdisciplinaria con Navisworks , vinculaci&oacute;n del modelo con Robot y SAP2000 para c&aacute;lculo, automatizaci&oacute;n con Dynamo y un proyecto final integrador sobre un caso real.
+9 m&oacute;dulos &middot; 600 horas &middot; 6 meses
+Revit &middot; Navisworks &middot; Robot / SAP2000 &middot; Dynamo
+Ver el temario completo &#8594;
+PDF con el detalle m&oacute;dulo por m&oacute;dulo
+Qu&eacute; incluye tu diplomado:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva, para ver y repetir las clases cuantas veces quieras.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#9989; Material adicional 100% descargable y ejercicios pr&aacute;cticos aplicados a ejemplos reales.
+&#9989; Mentor&iacute;as personalizadas durante los 6 meses de formaci&oacute;n, seg&uacute;n disponibilidad del instructor encargado.
+Sin costo adicional
+Titulaci&oacute;n con respaldo internacional
+Certificaciones Autodesk por cada m&oacute;dulo y t&iacute;tulos propios universitarios al finalizar.
+Autodesk
+Una por m&oacute;dulo
+Design Modeling
+Con c&oacute;digo QR
+Doctrina Qualitas
+Aval en Europa
+Diplomas de t&iacute;tulo propio
+Sabal University
+Estados Unidos
+Univ. de las Naciones
+Equivalencia acad&eacute;mica
+Al completar cada curso obtienes certificaciones oficiales de
+Autodesk , y al final un certificado de Doctrinas Qualitas
+y Design Modeling Academy &mdash; esto porque somos Centro de Entrenamiento Autorizado de la marca.
+Adem&aacute;s, recibes diplomas de t&iacute;tulo propio de Sabal University
+y Universidad de las Naciones , con reconocimiento internacional (incluyendo Estados Unidos). &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver el diplomado completo en nuestra web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
 ### ✅INFO Máster
 
 - **id:** `6a7e0dcd66c34f90bed553aa`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:55:00.289Z
+- **actualizada:** 2026-09-03T19:44:04.558Z
 - **Cuerpo:**
 
 ```
@@ -11434,13 +11266,274 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-## ✅ PRODUCTOS INFORMATIVOS  > ✅ PAQUETE AUTODESK
+## ⚠️ PRODUCTOS INFORMATIVOS  > ⚠️ PAQUETE AUTODESK
+
+### ⚠️INFO Diagramas Técnicos Visio
+
+- **id:** `6a873047473a54c041d34c8a`
+- **tipo:** html
+- **actualizada:** 2026-09-03T19:45:59.913Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Esquemas, isometricos y diagramas de flujo que se entienden a la primera.
+Curso especializado
+Diagramas T&eacute;cnicos con Visio + Revit + IA
+Hola {{contact.first_name}} ,
+Los diagramas t&eacute;cnicos son la parte del proyecto que m&aacute;s se improvisa y peor se entiende. Aprendes a construirlos con criterio en Visio , tomando la informaci&oacute;n del modelo de Revit .
+Cubres esquemas de instalaciones, diagramas de flujo de procesos y documentaci&oacute;n de coordinaci&oacute;n, con apoyo de IA para estructurar la l&oacute;gica y acelerar el armado.
+Modalidad h&iacute;brida &middot; 15 horas acad&eacute;micas
+Visio &middot; Revit &middot; IA aplicada
+Ver el temario completo &#8594;
+PDF con el detalle lecci&oacute;n por lecci&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+Sin costo adicional
+Terminas con tres acreditaciones
+Aval Autodesk, microcredencial NFT y certificado internacional propio.
+Autodesk
+Centro autorizado
+Design Modeling
+Con c&oacute;digo QR
+Al finalizar el curso recibes una certificaci&oacute;n de completaci&oacute;n avalada por Autodesk &mdash; esto porque somos Centro de Entrenamiento Autorizado de la marca.
+Beneficio totalmente nuevo: podr&aacute;s obtener una Microcredencial NFT (Doctrina Qualitas): Conceptos BIM .
+Y al terminar, recibes un Certificado Internacional de 15 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ⚠️INFO IA Optimización BIM Manager
+
+- **id:** `6a8730cb13ad6f85ed832cc3`
+- **tipo:** html
+- **actualizada:** 2026-09-03T19:45:50.593Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Organiza tu carga como BIM Manager con Notion, ClickUp e IA.
+Curso especializado
+IA para Optimizaci&oacute;n Personal &mdash; Rol BIM Manager
+Hola {{contact.first_name}} ,
+El BIM Manager no falla por falta de conocimiento t&eacute;cnico, sino por exceso de frentes abiertos. Este curso ataca eso: c&oacute;mo estructurar tu trabajo en Notion y ClickUp , y c&oacute;mo usar la IA para procesar informaci&oacute;n, redactar y hacer seguimiento.
+Sales con un sistema personal de gesti&oacute;n: tareas, documentaci&oacute;n del proyecto y comunicaci&oacute;n con el equipo en un solo lugar, no repartidos entre el correo y la memoria.
+Modalidad h&iacute;brida &middot; 15 horas acad&eacute;micas
+Notion &middot; ClickUp &middot; IA aplicada a la gesti&oacute;n
+Ver el temario completo &#8594;
+PDF con el detalle lecci&oacute;n por lecci&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+Sin costo adicional
+Terminas con dos acreditaciones
+Microcredencial NFT y certificado internacional propio.
+Design Modeling
+Con c&oacute;digo QR
+Beneficio totalmente nuevo: podr&aacute;s obtener una Microcredencial NFT (Doctrina Qualitas): Conceptos BIM .
+Y al terminar, recibes un Certificado Internacional de 15 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ⚠️INFO Interpretación Normativas IA
+
+- **id:** `6a87314f87bb8b3a11167379`
+- **tipo:** html
+- **actualizada:** 2026-09-03T19:45:24.887Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Encuentra y aplica el articulo que necesitas sin leer la norma entera.
+Curso especializado
+Interpretaci&oacute;n de Normativas con IA
+Hola {{contact.first_name}} ,
+Las normas son extensas y el tiempo no alcanza. Aprendes a usar la IA como asistente de consulta normativa: localizar el art&iacute;culo aplicable, comparar exigencias entre c&oacute;digos y traducir el requisito a una decisi&oacute;n concreta de dise&ntilde;o.
+Se trabaja con criterio de verificaci&oacute;n: la IA acelera la b&uacute;squeda, pero la responsabilidad t&eacute;cnica sigue siendo tuya. El curso ense&ntilde;a a contrastar siempre contra la fuente oficial.
+Modalidad h&iacute;brida &middot; 15 horas acad&eacute;micas
+IA aplicada &middot; consulta y verificaci&oacute;n normativa
+Ver el temario completo &#8594;
+PDF con el detalle lecci&oacute;n por lecci&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+Sin costo adicional
+Terminas con tres acreditaciones
+Aval Autodesk, microcredencial NFT y certificado internacional propio.
+Autodesk
+Centro autorizado
+Design Modeling
+Con c&oacute;digo QR
+Al finalizar el curso recibes una certificaci&oacute;n de completaci&oacute;n avalada por Autodesk &mdash; esto porque somos Centro de Entrenamiento Autorizado de la marca.
+Beneficio totalmente nuevo: podr&aacute;s obtener una Microcredencial NFT (Doctrina Qualitas): Conceptos BIM .
+Y al terminar, recibes un Certificado Internacional de 15 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ⚠️INFO Planillas Cantidades
+
+- **id:** `6a873089473a54c041d352ee`
+- **tipo:** html
+- **actualizada:** 2026-09-03T19:46:17.406Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Cuantificaciones confiables desde el modelo, sin contar a mano.
+Curso especializado
+Planillas y Cantidades Inteligentes
+Hola {{contact.first_name}} ,
+Cuantificar a mano es lento y se equivoca. Aprendes a montar tablas de planificaci&oacute;n en Revit que extraen cantidades reales del modelo, con par&aacute;metros calculados y filtros que responden a c&oacute;mo se presupuesta de verdad.
+Luego las llevas a Excel y Power BI para cruzarlas con precios y obtener un presupuesto que se actualiza cuando cambia el modelo.
+Modalidad h&iacute;brida &middot; 15 horas acad&eacute;micas
+Revit &middot; Excel &middot; Power BI
+Ver el temario completo &#8594;
+PDF con el detalle lecci&oacute;n por lecci&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+Sin costo adicional
+Terminas con tres acreditaciones
+Aval Autodesk, microcredencial NFT y certificado internacional propio.
+Autodesk
+Centro autorizado
+Design Modeling
+Con c&oacute;digo QR
+Al finalizar el curso recibes una certificaci&oacute;n de completaci&oacute;n avalada por Autodesk &mdash; esto porque somos Centro de Entrenamiento Autorizado de la marca.
+Beneficio totalmente nuevo: podr&aacute;s obtener una Microcredencial NFT (Doctrina Qualitas): Conceptos BIM .
+Y al terminar, recibes un Certificado Internacional de 15 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ⚠️INFO Presentaciones Técnicas IA
+
+- **id:** `6a873112b7730838e925e43c`
+- **tipo:** html
+- **actualizada:** 2026-09-03T19:45:39.025Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Presenta tu proyecto de forma que el cliente entienda y apruebe.
+Curso especializado
+Presentaciones T&eacute;cnicas con Inteligencia Artificial
+Hola {{contact.first_name}} ,
+Un proyecto bien resuelto se pierde si se presenta mal. Aprendes a construir presentaciones t&eacute;cnicas que comunican: qu&eacute; mostrar, en qu&eacute; orden y c&oacute;mo traducir el detalle t&eacute;cnico para quien toma la decisi&oacute;n.
+La IA se usa para estructurar el guion, generar apoyos visuales y armar l&aacute;minas a partir de las vistas de Revit , reduciendo a horas lo que antes tomaba d&iacute;as.
+Modalidad h&iacute;brida &middot; 15 horas acad&eacute;micas
+Revit &middot; IA aplicada &middot; comunicaci&oacute;n t&eacute;cnica
+Ver el temario completo &#8594;
+PDF con el detalle lecci&oacute;n por lecci&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+Sin costo adicional
+Terminas con tres acreditaciones
+Aval Autodesk, microcredencial NFT y certificado internacional propio.
+Autodesk
+Centro autorizado
+Design Modeling
+Con c&oacute;digo QR
+Al finalizar el curso recibes una certificaci&oacute;n de completaci&oacute;n avalada por Autodesk &mdash; esto porque somos Centro de Entrenamiento Autorizado de la marca.
+Beneficio totalmente nuevo: podr&aacute;s obtener una Microcredencial NFT (Doctrina Qualitas): Conceptos BIM .
+Y al terminar, recibes un Certificado Internacional de 15 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ⚠️INFO Renderizado Inteligente
+
+- **id:** `6a872fd7b7730838e925c1d1`
+- **tipo:** html
+- **actualizada:** 2026-09-03T19:46:09.486Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Renders que venden el proyecto, sin esperar horas de calculo.
+Curso especializado
+Renderizado Inteligente con Revit + Enscape + IA
+Hola {{contact.first_name}} ,
+Un buen render cierra ventas. Aprendes a producir im&aacute;genes de alto impacto desde Revit con Enscape en tiempo real: materiales, iluminaci&oacute;n, encuadre y atm&oacute;sfera.
+El postproceso se acelera con Firefly , Lightroom y Photoshop , para corregir, ambientar y darle acabado profesional a la imagen final sin volver a renderizar.
+Modalidad h&iacute;brida &middot; 15 horas acad&eacute;micas
+Revit &middot; Enscape &middot; Firefly &middot; Lightroom &middot; Photoshop
+Ver el temario completo &#8594;
+PDF con el detalle lecci&oacute;n por lecci&oacute;n
+Qu&eacute; incluye tu curso:
+&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
+&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+Sin costo adicional
+Terminas con tres acreditaciones
+Aval Autodesk, microcredencial NFT y certificado internacional propio.
+Autodesk
+Centro autorizado
+Design Modeling
+Con c&oacute;digo QR
+Al finalizar el curso recibes una certificaci&oacute;n de completaci&oacute;n avalada por Autodesk &mdash; esto porque somos Centro de Entrenamiento Autorizado de la marca.
+Beneficio totalmente nuevo: podr&aacute;s obtener una Microcredencial NFT (Doctrina Qualitas): Conceptos BIM .
+Y al terminar, recibes un Certificado Internacional de 15 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
 
 ### ✅INFO AI Assistants Autodesk
 
 - **id:** `6a872a32be74cab596b5551f`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:59:46.922Z
+- **actualizada:** 2026-09-03T19:46:59.914Z
 - **Cuerpo:**
 
 ```
@@ -11528,7 +11621,7 @@ designmodelingacademy.com
 
 - **id:** `6a7e0e325580fafcc1c44f65`
 - **tipo:** html
-- **actualizada:** 2026-08-24T15:59:23.953Z
+- **actualizada:** 2026-09-03T19:47:21.194Z
 - **Cuerpo:**
 
 ```
@@ -11539,27 +11632,45 @@ Reduce entre 30% y 60% tus tiempos operativos en Revit. Descarga el temario comp
 Curso especializado
 Automatizaci&oacute;n en Revit con Herramientas Nativas y Add-ins Inteligentes
 Hola {{contact.first_name}} ,
-Un curso para dejar de perder horas en tareas repetitivas. Aprendes a automatizar el modelado, la documentaci&oacute;n y la gesti&oacute;n BIM combinando las herramientas nativas de Revit con add-ins inteligentes y flujos asistidos por IA.
-Generas planos, vistas y documentaci&oacute;n de forma autom&aacute;tica, construyes plantillas inteligentes y cierras con un proyecto final donde integras todo el sistema BIM automatizado.
+Un curso para dejar
+de perder horas en tareas repetitivas. Aprendes a automatizar el modelado, la documentaci&oacute;n y la
+gesti&oacute;n BIM combinando las herramientas nativas de Revit
+con add-ins inteligentes y flujos asistidos por IA.
+Generas planos,
+vistas y documentaci&oacute;n de forma autom&aacute;tica, construyes plantillas inteligentes y cierras
+con un proyecto final donde integras todo el sistema BIM automatizado.
 14 sesiones &middot; ~10 horas de video &middot; proyecto final
 Nivel avanzado &middot; Revit + AutoCAD + Excel &middot; IA aplicada a BIM
 Ver el temario completo &#8594;
 PDF con el detalle lecci&oacute;n por lecci&oacute;n
 Qu&eacute; incluye tu curso:
 &#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
-&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
-&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
-&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos
+reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros
+proyectos.
+&#9989;
+Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
 Sin costo adicional
 Terminas con tres acreditaciones
 Aval Autodesk, microcredencial NFT y certificado internacional propio.
 Autodesk
-Centro autorizado
+Centro
+autorizado
 Design Modeling
-Con c&oacute;digo QR
-Al finalizar el curso recibes una certificaci&oacute;n de completaci&oacute;n avalada por Autodesk &mdash; esto porque somos Centro de Entrenamiento Autorizado de la marca.
-Beneficio totalmente nuevo: podr&aacute;s obtener una Microcredencial NFT (Doctrina Qualitas): Conceptos BIM .
-Y al terminar, recibes un Certificado Internacional de 15 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+Con
+c&oacute;digo QR
+Al finalizar
+el curso recibes una
+certificaci&oacute;n de completaci&oacute;n avalada por Autodesk
+&mdash; esto porque somos Centro de Entrenamiento Autorizado de la marca.
+Beneficio
+totalmente nuevo: podr&aacute;s obtener una
+Microcredencial NFT (Doctrina Qualitas): Conceptos BIM .
+Y al terminar,
+recibes un
+Certificado Internacional de 15 horas acad&eacute;micas
+emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
 &iquest;Tienes dudas antes de inscribirte?
 Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
 Hablar por WhatsApp
@@ -11574,7 +11685,7 @@ designmodelingacademy.com
 
 - **id:** `6a872ed22da68428c02b8684`
 - **tipo:** html
-- **actualizada:** 2026-08-24T16:00:07.550Z
+- **actualizada:** 2026-09-03T19:47:28.898Z
 - **Cuerpo:**
 
 ```
@@ -11585,71 +11696,45 @@ Convierte los datos de tu modelo Revit en tableros que dirigen decisiones.
 Curso especializado
 BIM Data Dashboard: Revit + Power BI + Inteligencia Artificial
 Hola {{contact.first_name}} ,
-Tu modelo BIM ya tiene los datos; el problema es que nadie los ve. Aprendes a extraer la informaci&oacute;n de Revit , procesarla y construir tableros en Power BI que muestren avance, cantidades y costos de un vistazo.
-Con apoyo de IA para depurar datos y detectar inconsistencias, el resultado es un panel que sirve para reportar a un cliente o a la gerencia sin armar el reporte a mano cada semana.
+Tu modelo BIM ya
+tiene los datos; el problema es que nadie los ve. Aprendes a extraer la informaci&oacute;n de
+Revit , procesarla y construir tableros en
+Power BI que muestren avance, cantidades y costos de un vistazo.
+Con apoyo de IA para
+depurar datos y detectar inconsistencias, el resultado es un panel que sirve para reportar a un cliente
+o a la gerencia sin armar el reporte a mano cada semana.
 Modalidad h&iacute;brida &middot; 15 horas acad&eacute;micas
 Revit &middot; Power BI &middot; Excel &middot; IA aplicada
 Ver el temario completo &#8594;
 PDF con el detalle lecci&oacute;n por lecci&oacute;n
 Qu&eacute; incluye tu curso:
 &#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
-&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
-&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
-&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos
+reales.
+&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros
+proyectos.
+&#9989;
+Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
 Sin costo adicional
 Terminas con tres acreditaciones
 Aval Autodesk, microcredencial NFT y certificado internacional propio.
 Autodesk
-Centro autorizado
+Centro
+autorizado
 Design Modeling
-Con c&oacute;digo QR
-Al finalizar el curso recibes una certificaci&oacute;n de completaci&oacute;n avalada por Autodesk &mdash; esto porque somos Centro de Entrenamiento Autorizado de la marca.
-Beneficio totalmente nuevo: podr&aacute;s obtener una Microcredencial NFT (Doctrina Qualitas): Conceptos BIM .
-Y al terminar, recibes un Certificado Internacional de 15 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
-&iquest;Tienes dudas antes de inscribirte?
-Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
-Hablar por WhatsApp
-Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
-designmodelingacademy.com
-{{unsubscribe_url}}
-```
-
-### ✅INFO Diagramas Técnicos Visio
-
-- **id:** `6a873047473a54c041d34c8a`
-- **tipo:** html
-- **actualizada:** 2026-08-24T16:08:05.730Z
-- **Cuerpo:**
-
-```
-Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
-Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
--->
-Esquemas, isometricos y diagramas de flujo que se entienden a la primera.
-Curso especializado
-Diagramas T&eacute;cnicos con Visio + Revit + IA
-Hola {{contact.first_name}} ,
-Los diagramas t&eacute;cnicos son la parte del proyecto que m&aacute;s se improvisa y peor se entiende. Aprendes a construirlos con criterio en Visio , tomando la informaci&oacute;n del modelo de Revit .
-Cubres esquemas de instalaciones, diagramas de flujo de procesos y documentaci&oacute;n de coordinaci&oacute;n, con apoyo de IA para estructurar la l&oacute;gica y acelerar el armado.
-Modalidad h&iacute;brida &middot; 15 horas acad&eacute;micas
-Visio &middot; Revit &middot; IA aplicada
-Ver el temario completo &#8594;
-PDF con el detalle lecci&oacute;n por lecci&oacute;n
-Qu&eacute; incluye tu curso:
-&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
-&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
-&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
-&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
-Sin costo adicional
-Terminas con tres acreditaciones
-Aval Autodesk, microcredencial NFT y certificado internacional propio.
-Autodesk
-Centro autorizado
-Design Modeling
-Con c&oacute;digo QR
-Al finalizar el curso recibes una certificaci&oacute;n de completaci&oacute;n avalada por Autodesk &mdash; esto porque somos Centro de Entrenamiento Autorizado de la marca.
-Beneficio totalmente nuevo: podr&aacute;s obtener una Microcredencial NFT (Doctrina Qualitas): Conceptos BIM .
-Y al terminar, recibes un Certificado Internacional de 15 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
+Con
+c&oacute;digo QR
+Al finalizar
+el curso recibes una
+certificaci&oacute;n de completaci&oacute;n avalada por Autodesk
+&mdash; esto porque somos Centro de Entrenamiento Autorizado de la marca.
+Beneficio
+totalmente nuevo: podr&aacute;s obtener una
+Microcredencial NFT (Doctrina Qualitas): Conceptos BIM .
+Y al terminar,
+recibes un
+Certificado Internacional de 15 horas acad&eacute;micas
+emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
 &iquest;Tienes dudas antes de inscribirte?
 Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
 Hablar por WhatsApp
@@ -11702,96 +11787,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅INFO IA Optimización BIM Manager
-
-- **id:** `6a8730cb13ad6f85ed832cc3`
-- **tipo:** html
-- **actualizada:** 2026-08-24T16:08:49.194Z
-- **Cuerpo:**
-
-```
-Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
-Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
--->
-Organiza tu carga como BIM Manager con Notion, ClickUp e IA.
-Curso especializado
-IA para Optimizaci&oacute;n Personal &mdash; Rol BIM Manager
-Hola {{contact.first_name}} ,
-El BIM Manager no falla por falta de conocimiento t&eacute;cnico, sino por exceso de frentes abiertos. Este curso ataca eso: c&oacute;mo estructurar tu trabajo en Notion y ClickUp , y c&oacute;mo usar la IA para procesar informaci&oacute;n, redactar y hacer seguimiento.
-Sales con un sistema personal de gesti&oacute;n: tareas, documentaci&oacute;n del proyecto y comunicaci&oacute;n con el equipo en un solo lugar, no repartidos entre el correo y la memoria.
-Modalidad h&iacute;brida &middot; 15 horas acad&eacute;micas
-Notion &middot; ClickUp &middot; IA aplicada a la gesti&oacute;n
-Ver el temario completo &#8594;
-PDF con el detalle lecci&oacute;n por lecci&oacute;n
-Qu&eacute; incluye tu curso:
-&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
-&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
-&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
-&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
-Sin costo adicional
-Terminas con dos acreditaciones
-Microcredencial NFT y certificado internacional propio.
-Design Modeling
-Con c&oacute;digo QR
-Beneficio totalmente nuevo: podr&aacute;s obtener una Microcredencial NFT (Doctrina Qualitas): Conceptos BIM .
-Y al terminar, recibes un Certificado Internacional de 15 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
-&iquest;Tienes dudas antes de inscribirte?
-Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
-Hablar por WhatsApp
-Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
-designmodelingacademy.com
-{{unsubscribe_url}}
-```
-
-### ✅INFO Interpretación Normativas IA
-
-- **id:** `6a87314f87bb8b3a11167379`
-- **tipo:** html
-- **actualizada:** 2026-08-24T16:09:19.538Z
-- **Cuerpo:**
-
-```
-Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
-Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
--->
-Encuentra y aplica el articulo que necesitas sin leer la norma entera.
-Curso especializado
-Interpretaci&oacute;n de Normativas con IA
-Hola {{contact.first_name}} ,
-Las normas son extensas y el tiempo no alcanza. Aprendes a usar la IA como asistente de consulta normativa: localizar el art&iacute;culo aplicable, comparar exigencias entre c&oacute;digos y traducir el requisito a una decisi&oacute;n concreta de dise&ntilde;o.
-Se trabaja con criterio de verificaci&oacute;n: la IA acelera la b&uacute;squeda, pero la responsabilidad t&eacute;cnica sigue siendo tuya. El curso ense&ntilde;a a contrastar siempre contra la fuente oficial.
-Modalidad h&iacute;brida &middot; 15 horas acad&eacute;micas
-IA aplicada &middot; consulta y verificaci&oacute;n normativa
-Ver el temario completo &#8594;
-PDF con el detalle lecci&oacute;n por lecci&oacute;n
-Qu&eacute; incluye tu curso:
-&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
-&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
-&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
-&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
-Sin costo adicional
-Terminas con tres acreditaciones
-Aval Autodesk, microcredencial NFT y certificado internacional propio.
-Autodesk
-Centro autorizado
-Design Modeling
-Con c&oacute;digo QR
-Al finalizar el curso recibes una certificaci&oacute;n de completaci&oacute;n avalada por Autodesk &mdash; esto porque somos Centro de Entrenamiento Autorizado de la marca.
-Beneficio totalmente nuevo: podr&aacute;s obtener una Microcredencial NFT (Doctrina Qualitas): Conceptos BIM .
-Y al terminar, recibes un Certificado Internacional de 15 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
-&iquest;Tienes dudas antes de inscribirte?
-Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
-Hablar por WhatsApp
-Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
-designmodelingacademy.com
-{{unsubscribe_url}}
-```
-
 ### ✅INFO Paquete Autodesk BIM IA
 
 - **id:** `6a87319317389f8e23c5497e`
 - **tipo:** html
-- **actualizada:** 2026-08-24T16:09:36.313Z
+- **actualizada:** 2026-09-03T19:47:12.927Z
 - **Cuerpo:**
 
 ```
@@ -11823,50 +11823,6 @@ Con c&oacute;digo QR
 Por cada uno de los 11 cursos con software Autodesk recibes una certificaci&oacute;n de completaci&oacute;n avalada por Autodesk &mdash; esto porque somos Centro de Entrenamiento Autorizado de la marca.
 Beneficio totalmente nuevo: podr&aacute;s obtener una Microcredencial NFT (Doctrina Qualitas): Conceptos BIM .
 Y al terminar, recibes un Certificado Internacional que suma todas las horas acad&eacute;micas de los 12 cursos , emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
-&iquest;Tienes dudas antes de inscribirte?
-Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
-Hablar por WhatsApp
-Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
-designmodelingacademy.com
-{{unsubscribe_url}}
-```
-
-### ✅INFO Planillas Cantidades
-
-- **id:** `6a873089473a54c041d352ee`
-- **tipo:** html
-- **actualizada:** 2026-08-24T16:08:20.593Z
-- **Cuerpo:**
-
-```
-Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
-Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
--->
-Cuantificaciones confiables desde el modelo, sin contar a mano.
-Curso especializado
-Planillas y Cantidades Inteligentes
-Hola {{contact.first_name}} ,
-Cuantificar a mano es lento y se equivoca. Aprendes a montar tablas de planificaci&oacute;n en Revit que extraen cantidades reales del modelo, con par&aacute;metros calculados y filtros que responden a c&oacute;mo se presupuesta de verdad.
-Luego las llevas a Excel y Power BI para cruzarlas con precios y obtener un presupuesto que se actualiza cuando cambia el modelo.
-Modalidad h&iacute;brida &middot; 15 horas acad&eacute;micas
-Revit &middot; Excel &middot; Power BI
-Ver el temario completo &#8594;
-PDF con el detalle lecci&oacute;n por lecci&oacute;n
-Qu&eacute; incluye tu curso:
-&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
-&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
-&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
-&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
-Sin costo adicional
-Terminas con tres acreditaciones
-Aval Autodesk, microcredencial NFT y certificado internacional propio.
-Autodesk
-Centro autorizado
-Design Modeling
-Con c&oacute;digo QR
-Al finalizar el curso recibes una certificaci&oacute;n de completaci&oacute;n avalada por Autodesk &mdash; esto porque somos Centro de Entrenamiento Autorizado de la marca.
-Beneficio totalmente nuevo: podr&aacute;s obtener una Microcredencial NFT (Doctrina Qualitas): Conceptos BIM .
-Y al terminar, recibes un Certificado Internacional de 15 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
 &iquest;Tienes dudas antes de inscribirte?
 Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
 Hablar por WhatsApp
@@ -11919,101 +11875,274 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅INFO Presentaciones Técnicas IA
+## ✅ ACCESO COMUNIDAD INSCRITOS
 
-- **id:** `6a873112b7730838e925e43c`
+### ✅Acceso Comunidad - Colección Autodesk + IA
+
+- **id:** `6a75eff196dc697014d6db84`
 - **tipo:** html
-- **actualizada:** 2026-08-24T16:09:03.799Z
+- **actualizada:** 2026-09-03T19:18:57.770Z
 - **Cuerpo:**
 
 ```
 Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
-Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+Imagenes embebidas en base64. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+REEMPLAZAR: https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a7bb6cc4e002388f44657c3.mp4 -> link del video (aparece 2 veces)
 -->
-Presenta tu proyecto de forma que el cliente entienda y apruebe.
-Curso especializado
-Presentaciones T&eacute;cnicas con Inteligencia Artificial
+Tu acceso a la Comunidad del Paquete Colección Autodesk + IA ya está activo. Ingresa aquí.
+Paquete Colección Autodesk + IA
+Acceso a la Comunidad concedido
 Hola {{contact.first_name}} ,
-Un proyecto bien resuelto se pierde si se presenta mal. Aprendes a construir presentaciones t&eacute;cnicas que comunican: qu&eacute; mostrar, en qu&eacute; orden y c&oacute;mo traducir el detalle t&eacute;cnico para quien toma la decisi&oacute;n.
-La IA se usa para estructurar el guion, generar apoyos visuales y armar l&aacute;minas a partir de las vistas de Revit , reduciendo a horas lo que antes tomaba d&iacute;as.
-Modalidad h&iacute;brida &middot; 15 horas acad&eacute;micas
-Revit &middot; IA aplicada &middot; comunicaci&oacute;n t&eacute;cnica
-Ver el temario completo &#8594;
-PDF con el detalle lecci&oacute;n por lecci&oacute;n
-Qu&eacute; incluye tu curso:
-&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
-&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
-&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
-&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
-Sin costo adicional
-Terminas con tres acreditaciones
-Aval Autodesk, microcredencial NFT y certificado internacional propio.
-Autodesk
-Centro autorizado
-Design Modeling
-Con c&oacute;digo QR
-Al finalizar el curso recibes una certificaci&oacute;n de completaci&oacute;n avalada por Autodesk &mdash; esto porque somos Centro de Entrenamiento Autorizado de la marca.
-Beneficio totalmente nuevo: podr&aacute;s obtener una Microcredencial NFT (Doctrina Qualitas): Conceptos BIM .
-Y al terminar, recibes un Certificado Internacional de 15 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
-&iquest;Tienes dudas antes de inscribirte?
-Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
-Hablar por WhatsApp
+Gracias por tu compra y bienvenido a la
+Comunidad del Paquete Colección Autodesk + IA .
+Ahí vas a acompañar tu avance por todo el paquete: Revit, Civil 3D, Navisworks, Robot y las herramientas
+de IA aplicadas a cada software.
+Tu acceso ya está activo. Entra desde el botón de abajo:
+Ir a la Comunidad &#8594;
+Dentro de la comunidad vas a encontrar:
+&#128204; Ruta recomendada para avanzar por los softwares del paquete
+&#129302; Prompts y flujos de IA aplicados a cada herramienta Autodesk
+&#128736; Soporte técnico con los instructores de cada módulo
+&#128193;
+Archivos de práctica y plantillas descargables
+&#9654;
+Tutorial en video &middot; 1:50
+C&oacute;mo ingresar a tu comunidad, paso a paso
+D&oacute;nde encontrar tus canales, c&oacute;mo publicar y c&oacute;mo activar las
+notificaciones
+para no perderte las clases en vivo.
+Ver el tutorial &#8594;
+Este enlace y su contenido son de uso exclusivo del destinatario y pueden contener información
+confidencial. Si lo recibiste por error, notifícanos de inmediato y abstente de compartirlo.
+Queda prohibida su distribución, difusión o copia no autorizada.
+¿No puedes ver el botón?
+Ver Comunidad
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+**** Este es un correo electrónico generado por el sistema ****
+{{unsubscribe_url}}
+```
+
+### ✅Acceso Comunidad - Cursos
+
+- **id:** `6a75ef5f75d3d22c319df737`
+- **tipo:** html
+- **actualizada:** 2026-09-03T19:19:31.960Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+REEMPLAZAR: https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a7bb6cc4e002388f44657c3.mp4 -> link del video (aparece 2 veces)
+-->
+Tu acceso a la Comunidad de Cursos ya está activo. Ingresa aquí.
+Cursos
+Acceso a la Comunidad concedido
+Hola {{contact.first_name}} ,
+Gracias por tu compra y bienvenido a la Comunidad de Cursos de Design Modeling .
+Es el espacio donde vas a resolver dudas con los instructores, compartir tus avances y conectar con ingenieros y arquitectos de toda Latinoamérica, Europa y Estados Unidos.
+Tu acceso ya está activo. Entra desde el botón de abajo:
+Ir a la Comunidad &#8594;
+Dentro de la comunidad vas a encontrar:
+&#128204; Anuncios de clases en vivo y grabaciones
+&#128736; Soporte técnico y resolución de dudas con los instructores
+&#128193; Archivos de práctica, plantillas y recursos descargables
+&#129309; Networking con la red de estudiantes y graduados DMA
+&#9654;
+Tutorial en video &middot; 1:50
+C&oacute;mo ingresar a tu comunidad, paso a paso
+D&oacute;nde encontrar tus canales, c&oacute;mo publicar y c&oacute;mo activar las notificaciones
+para no perderte las clases en vivo.
+Ver el tutorial &#8594;
+Este enlace y su contenido son de uso exclusivo del destinatario y pueden contener información
+confidencial. Si lo recibiste por error, notifícanos de inmediato y abstente de compartirlo.
+Queda prohibida su distribución, difusión o copia no autorizada.
+¿No puedes ver el botón?
+Ver Comunidad
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+**** Este es un correo electrónico generado por el sistema ****
+{{unsubscribe_url}}
+```
+
+### ✅Acceso Comunidad - Design Premium Gratuito
+
+- **id:** `6a75f3777794c96cd3205dba`
+- **tipo:** html
+- **actualizada:** 2026-09-03T19:18:27.754Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Link de invitacion ya incrustado.
+REEMPLAZAR: https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a7bb6cc4e002388f44657c3.mp4 -> link del video (aparece 2 veces)
+Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+La Comunidad Design Premium es gratuita y ya puedes entrar. Te esperamos adentro.
+Acceso gratuito &middot; Comunidad Design Premium
+Estás invitado a la Comunidad Design Premium
+Hola {{contact.first_name}} ,
+Abrimos la Comunidad Design Premium , el punto de encuentro
+de ingenieros y arquitectos que trabajan con BIM. Es totalmente
+gratuita y está abierta para todos: no necesitas haber comprado ningún curso para entrar.
+Tu lugar ya está disponible. Entra desde el botón de abajo:
+Entrar gratis a la Comunidad &#8594;
+Sin costo &middot; Sin tarjeta &middot; Toma menos de 1 minuto
+Dentro de la comunidad vas a encontrar:
+&#127916; Clases y masterclasses gratuitas en vivo
+&#128736; Tips y flujos de trabajo de Revit, Civil 3D, Robot y IA aplicada
+&#128193; Plantillas, familias y recursos descargables
+&#128188; Oportunidades laborales y proyectos compartidos por la red
+&#129309; Networking con profesionales BIM de 3 continentes
+&#9654;
+Tutorial en video &middot; 1:50
+C&oacute;mo ingresar a tu comunidad, paso a paso
+D&oacute;nde encontrar tus canales, c&oacute;mo publicar y c&oacute;mo activar las notificaciones
+para no perderte las clases en vivo.
+Ver el tutorial &#8594;
+Comparte la invitación. Si conoces colegas, compañeros
+de trabajo o estudiantes que estén entrando al mundo BIM, reenvíales este correo. La comunidad
+es abierta y no tiene costo para nadie.
+¿No puedes ver el botón?
+Ver Comunidad
 Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
 designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅INFO Renderizado Inteligente
+### ✅Acceso Comunidad - Diplomados Universitarios BIM
 
-- **id:** `6a872fd7b7730838e925c1d1`
+- **id:** `6a75f01c0e7596f30bb1bdfe`
 - **tipo:** html
-- **actualizada:** 2026-08-24T16:07:49.885Z
+- **actualizada:** 2026-09-03T19:18:47.733Z
 - **Cuerpo:**
 
 ```
 Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
-Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+Imagenes embebidas en base64. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+REEMPLAZAR: https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a7bb6cc4e002388f44657c3.mp4 -> link del video (aparece 2 veces)
 -->
-Renders que venden el proyecto, sin esperar horas de calculo.
-Curso especializado
-Renderizado Inteligente con Revit + Enscape + IA
+Tu acceso a la Comunidad de Diplomados Universitarios BIM ya está activo. Ingresa aquí.
+Diplomados Universitarios BIM
+Acceso a la Comunidad concedido
 Hola {{contact.first_name}} ,
-Un buen render cierra ventas. Aprendes a producir im&aacute;genes de alto impacto desde Revit con Enscape en tiempo real: materiales, iluminaci&oacute;n, encuadre y atm&oacute;sfera.
-El postproceso se acelera con Firefly , Lightroom y Photoshop , para corregir, ambientar y darle acabado profesional a la imagen final sin volver a renderizar.
-Modalidad h&iacute;brida &middot; 15 horas acad&eacute;micas
-Revit &middot; Enscape &middot; Firefly &middot; Lightroom &middot; Photoshop
-Ver el temario completo &#8594;
-PDF con el detalle lecci&oacute;n por lecci&oacute;n
-Qu&eacute; incluye tu curso:
-&#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
-&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
-&#9989; Material totalmente descargable, que te sirve como gu&iacute;a en tus futuros proyectos.
-&#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
-Sin costo adicional
-Terminas con tres acreditaciones
-Aval Autodesk, microcredencial NFT y certificado internacional propio.
-Autodesk
-Centro autorizado
-Design Modeling
-Con c&oacute;digo QR
-Al finalizar el curso recibes una certificaci&oacute;n de completaci&oacute;n avalada por Autodesk &mdash; esto porque somos Centro de Entrenamiento Autorizado de la marca.
-Beneficio totalmente nuevo: podr&aacute;s obtener una Microcredencial NFT (Doctrina Qualitas): Conceptos BIM .
-Y al terminar, recibes un Certificado Internacional de 15 horas acad&eacute;micas emitido por nuestra academia Modeling-DG S.A.S. Todo sin costo adicional. &#9989;
-&iquest;Tienes dudas antes de inscribirte?
-Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
-Hablar por WhatsApp
+Gracias por tu compra y bienvenido a la Comunidad Exclusiva de Diplomados Universitarios BIM .
+Es una comunidad exclusiva para estudiantes del diplomado: ahí se coordinan las sesiones en vivo, las entregas y el seguimiento académico hasta tu titulación.
+Tu acceso ya está activo. Entra desde el botón de abajo:
+Ir a la Comunidad &#8594;
+Dentro de la comunidad vas a encontrar:
+&#127891; Calendario de sesiones en vivo y fechas de entrega
+&#128209; Lineamientos de los trabajos y del proceso de titulación
+&#128736; Acompañamiento académico directo con los docentes
+&#129309; Red de profesionales de tu misma cohorte
+&#9654;
+Tutorial en video &middot; 1:50
+C&oacute;mo ingresar a tu comunidad, paso a paso
+D&oacute;nde encontrar tus canales, c&oacute;mo publicar y c&oacute;mo activar las notificaciones
+para no perderte las clases en vivo.
+Ver el tutorial &#8594;
+Este enlace y su contenido son de uso exclusivo del destinatario y pueden contener información
+confidencial. Si lo recibiste por error, notifícanos de inmediato y abstente de compartirlo.
+Queda prohibida su distribución, difusión o copia no autorizada.
+¿No puedes ver el botón?
+Ver Comunidad
 Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
 designmodelingacademy.com
+**** Este es un correo electrónico generado por el sistema ****
+{{unsubscribe_url}}
+```
+
+### ✅Acceso Comunidad - Especializaciones
+
+- **id:** `6a99c00a6316ab71ecbdf3d7`
+- **tipo:** html
+- **actualizada:** 2026-09-03T19:18:17.506Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+REEMPLAZAR: https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a7bb6cc4e002388f44657c3.mp4 -> link del video (aparece 2 veces)
+-->
+Tu acceso a la Comunidad de Especializaciones ya está activo. Ingresa aquí.
+Especializaciones
+Acceso a la Comunidad concedido
+Hola {{contact.first_name}} ,
+Gracias por tu compra y bienvenido a la Comunidad de Especializaciones de Design Modeling .
+Es el espacio de quienes cursan una ruta completa: ahí se coordinan los cursos que la componen, se resuelven dudas con los instructores y se comparten los avances de cada módulo.
+Tu acceso ya está activo. Entra desde el botón de abajo:
+Ir a la Comunidad &#8594;
+Dentro de la comunidad vas a encontrar:
+&#128204; Anuncios de clases en vivo y grabaciones de cada curso de tu ruta
+&#128736; Soporte técnico y resolución de dudas con los instructores
+&#128193; Archivos de práctica, plantillas y recursos descargables por módulo
+&#129309; Seguimiento de tus certificaciones y networking con la red de graduados DMA
+&#9654;
+Tutorial en video &middot; 1:50
+C&oacute;mo ingresar a tu comunidad, paso a paso
+D&oacute;nde encontrar tus canales, c&oacute;mo publicar y c&oacute;mo activar las notificaciones
+para no perderte las clases en vivo.
+Ver el tutorial &#8594;
+Este enlace y su contenido son de uso exclusivo del destinatario y pueden contener información
+confidencial. Si lo recibiste por error, notifícanos de inmediato y abstente de compartirlo.
+Queda prohibida su distribución, difusión o copia no autorizada.
+¿No puedes ver el botón?
+Ver Comunidad
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+**** Este es un correo electrónico generado por el sistema ****
+{{unsubscribe_url}}
+```
+
+### ✅Acceso Comunidad - Master BIM con Inteligencia Artificial
+
+- **id:** `6a75f0494690ddff503ec983`
+- **tipo:** html
+- **actualizada:** 2026-09-03T19:18:37.035Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes embebidas en base64. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+REEMPLAZAR: https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a7bb6cc4e002388f44657c3.mp4 -> link del video (aparece 2 veces)
+-->
+Tu acceso a la Comunidad del Máster BIM + IA ya está activo. Ingresa aquí.
+Máster Internacional BIM + IA
+Acceso a la Comunidad concedido
+Hola {{contact.first_name}} ,
+Gracias por tu compra y bienvenido a la Comunidad del Máster BIM con Inteligencia Artificial .
+Es tu sala de mando durante los 12 meses del programa: los 4 bloques, las microcredenciales, tu portafolio y las apps de la DMA Engineering Suite se coordinan desde ahí.
+Tu acceso ya está activo. Entra desde el botón de abajo:
+Ir a la Comunidad &#8594;
+Dentro de la comunidad vas a encontrar:
+&#128204; Clases en vivo, grabaciones y avisos de cada bloque
+&#127894; Seguimiento de tus microcredenciales y entregables de portafolio
+&#128736; Soporte técnico directo con los instructores del Máster
+&#129309; Networking con tu cohorte y con la red de graduados DMA
+&#9654;
+Tutorial en video &middot; 1:50
+C&oacute;mo ingresar a tu comunidad, paso a paso
+D&oacute;nde encontrar tus canales, c&oacute;mo publicar y c&oacute;mo activar las notificaciones
+para no perderte las clases en vivo.
+Ver el tutorial &#8594;
+Este enlace y su contenido son de uso exclusivo del destinatario y pueden contener información
+confidencial. Si lo recibiste por error, notifícanos de inmediato y abstente de compartirlo.
+Queda prohibida su distribución, difusión o copia no autorizada.
+¿No puedes ver el botón?
+Ver Comunidad
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+**** Este es un correo electrónico generado por el sistema ****
 {{unsubscribe_url}}
 ```
 
 ## ✅ RECURSOS GRATUITOS
 
-### ✅ Acceso Calculadora Zapatas
+### ✅Acceso Calculadora Zapatas
 
 - **id:** `6a8738c92da68428c02c9971`
 - **tipo:** html
-- **actualizada:** 2026-08-20T17:27:16.019Z
+- **actualizada:** 2026-09-03T19:38:27.743Z
 - **Cuerpo:**
 
 ```
@@ -12026,20 +12155,30 @@ Registro confirmado. Disena, verifica y optimiza tu primera zapata en 2 minutos.
 Registro confirmado &middot; 100% gratis
 Tu calculadora est&aacute; lista
 Hola {{contact.first_name}} ,
-Gracias por registrarte. Ya tienes acceso a la Calculadora de Zapatas Aisladas : ingresas las cargas y los materiales, y en dos minutos obtienes dimensiones, acero en ambas direcciones y las verificaciones de punzonamiento y deslizamiento seg&uacute;n normas ACI.
+Gracias por registrarte. Ya tienes acceso a la
+Calculadora de Zapatas Aisladas : ingresas las cargas y los
+materiales, y en dos minutos obtienes dimensiones, acero en ambas direcciones y las verificaciones de
+punzonamiento y deslizamiento seg&uacute;n normas ACI.
 Abrir la calculadora &#8594;
 Se abre en tu comunidad DMA &middot; sin costo y sin tarjeta
 Tres pasos para sacarle provecho
 La mayor&iacute;a se registra y nunca la usa. Estos tres pasos son la diferencia.
 01
 Pru&eacute;bala con un caso real
-&Aacute;brela ahora con las cargas de un proyecto que tengas a mano. Verla funcionar con tus propios n&uacute;meros es lo que hace que la vuelvas a abrir.
+&Aacute;brela
+ahora con las cargas de un proyecto que tengas a mano. Verla funcionar con tus propios
+n&uacute;meros es lo que hace que la vuelvas a abrir.
 02
 Gu&aacute;rdala en el celular
-A&ntilde;ade el enlace a favoritos o a la pantalla de inicio del tel&eacute;fono: sirve en obra y en reuniones, cuando no tienes el computador cerca.
+A&ntilde;ade el
+enlace a favoritos o a la pantalla de inicio del tel&eacute;fono: sirve en obra y en
+reuniones, cuando no tienes el computador cerca.
 03
-Contrasta el resultado
-Compara la primera corrida con un c&aacute;lculo que ya tengas verificado. Una vez que conf&iacute;as en la herramienta, el ahorro de tiempo es real.
+Contrasta
+el resultado
+Compara la
+primera corrida con un c&aacute;lculo que ya tengas verificado. Una vez que conf&iacute;as
+en la herramienta, el ahorro de tiempo es real.
 Tambi&eacute;n es gratis
 &Uacute;nete a la Comunidad Design Premium
 Masterclasses en vivo, plantillas descargables y networking con ingenieros y arquitectos
@@ -12054,11 +12193,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ Acceso Curso Gratis Introductorio
+### ✅Acceso Curso Gratis Introductorio
 
 - **id:** `6a863214d552428fc1d7b7ca`
 - **tipo:** html
-- **actualizada:** 2026-08-19T22:46:13.956Z
+- **actualizada:** 2026-09-03T19:38:07.264Z
 - **Cuerpo:**
 
 ```
@@ -12099,11 +12238,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ Acceso Módulo 1 Diplomado
+### ✅Acceso Módulo 1 Diplomado
 
 - **id:** `6a86325ff05cd00dd3bc4534`
 - **tipo:** html
-- **actualizada:** 2026-08-19T22:47:13.951Z
+- **actualizada:** 2026-09-03T19:38:18.660Z
 - **Cuerpo:**
 
 ```
@@ -12116,20 +12255,31 @@ Registro confirmado. Entra al Modulo 1 del Diplomado BIM, completo y sin costo.
 Registro confirmado &middot; 100% gratis
 Tu acceso al M&oacute;dulo 1 est&aacute; listo
 Hola {{contact.first_name}} ,
-Gracias por registrarte. Ya tienes acceso al M&oacute;dulo 1 completo del Diplomado BIM , abierto y sin costo: clases, archivos de pr&aacute;ctica y certificado al completarlo. Es el mismo m&oacute;dulo que cursan los alumnos del diplomado.
+Gracias por registrarte. Ya tienes acceso al
+M&oacute;dulo 1 completo del Diplomado BIM , abierto y sin costo:
+clases, archivos de pr&aacute;ctica y certificado al completarlo. Es el mismo m&oacute;dulo que cursan
+los alumnos del diplomado.
 Entrar al M&oacute;dulo 1 &#8594;
 Se abre en tu comunidad DMA &middot; sin costo y sin tarjeta
 Tres pasos para terminarlo
 La mayor&iacute;a se inscribe y nunca entra. Estos tres pasos son la diferencia.
 01
-Entra hoy mismo
-Abre el m&oacute;dulo desde el bot&oacute;n de arriba y mira la primera clase ahora. Empezar el mismo d&iacute;a es lo que separa a quien lo termina de quien no.
+Entra hoy
+mismo
+Abre el
+m&oacute;dulo desde el bot&oacute;n de arriba y mira la primera clase ahora. Empezar el
+mismo d&iacute;a es lo que separa a quien lo termina de quien no.
 02
-Descarga los archivos
-El m&oacute;dulo incluye material de pr&aacute;ctica. B&aacute;jalo y tenlo abierto mientras sigues las clases.
+Descarga
+los archivos
+El
+m&oacute;dulo incluye material de pr&aacute;ctica. B&aacute;jalo y tenlo abierto mientras
+sigues las clases.
 03
 Term&iacute;nalo y certif&iacute;cate
-Al completar las clases del m&oacute;dulo recibes tu certificado de Design Modeling DG, listo para tu hoja de vida y tu perfil de LinkedIn.
+Al completar
+las clases del m&oacute;dulo recibes tu certificado de Design Modeling DG, listo para tu
+hoja de vida y tu perfil de LinkedIn.
 Tambi&eacute;n es gratis
 &Uacute;nete a la Comunidad Design Premium
 Masterclasses en vivo, plantillas descargables y networking con ingenieros y arquitectos
@@ -12144,11 +12294,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ Acceso Test Nivel BIM
+### ✅Acceso Test Nivel BIM
 
 - **id:** `6a8738fbb7730838e926bc5e`
 - **tipo:** html
-- **actualizada:** 2026-08-20T17:27:57.556Z
+- **actualizada:** 2026-09-03T19:38:37.761Z
 - **Cuerpo:**
 
 ```
@@ -12189,11 +12339,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ Acceso Verificación Acero
+### ✅Acceso Verificación Acero
 
 - **id:** `6a8f32c54867309f6fb3a862`
 - **tipo:** html
-- **actualizada:** 2026-08-26T18:58:16.513Z
+- **actualizada:** 2026-09-03T19:38:46.312Z
 - **Cuerpo:**
 
 ```
@@ -12244,11 +12394,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ Descarga Ebook BIM Gratis
+### ✅Descarga Ebook BIM Gratis
 
 - **id:** `6a862943962dc01e6689201c`
 - **tipo:** html
-- **actualizada:** 2026-08-19T22:08:20.795Z
+- **actualizada:** 2026-09-03T19:39:03.424Z
 - **Cuerpo:**
 
 ```
@@ -12289,11 +12439,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ Descarga GPT AI PRO Gratis
+### ✅Descarga GPT AI PRO Gratis
 
 - **id:** `6a86299483767c94bdfeff51`
 - **tipo:** html
-- **actualizada:** 2026-08-19T22:09:59.466Z
+- **actualizada:** 2026-09-03T19:38:55.092Z
 - **Cuerpo:**
 
 ```
@@ -12306,26 +12456,20 @@ Registro confirmado. Descarga AI PRO y aplica la IA en tu proximo proyecto BIM.
 Registro confirmado &middot; 100% gratis
 Tu recurso AI PRO est&aacute; listo
 Hola {{contact.first_name}} ,
-Gracias por registrarte. Tu recurso AI PRO ya est&aacute;
-disponible: c&oacute;mo usar la inteligencia artificial en tareas reales de BIM sin perder el criterio
-t&eacute;cnico, con casos de uso, prompts listos y cu&aacute;ndo no conviene usarla.
+Gracias por registrarte. Tu recurso AI PRO ya est&aacute; disponible: c&oacute;mo usar la inteligencia artificial en tareas reales de BIM sin perder el criterio t&eacute;cnico, con casos de uso, prompts listos y cu&aacute;ndo no conviene usarla.
 Descargar AI PRO en PDF &#8595;
 Abrir AI PRO en la comunidad
 Se abre en tu comunidad DMA
 Tres pasos para aprovecharlo
 01
 &Aacute;brelo y gu&aacute;rdalo
-Descarga el PDF
-y d&eacute;jalo a mano: los prompts se consultan mientras trabajas, no antes.
+Descarga el PDF y d&eacute;jalo a mano: los prompts se consultan mientras trabajas, no antes.
 02
-Elige un
-solo caso de uso
-Del listado,
-quédate con el que resuelva algo que hoy te quita tiempo de verdad.
+Elige un solo caso de uso
+Del listado, quédate con el que resuelva algo que hoy te quita tiempo de verdad.
 03
 Pru&eacute;balo esta semana
-Aplícalo en el
-proyecto que tengas abierto. Un prompt bien usado vale m&aacute;s que veinte le&iacute;dos.
+Aplícalo en el proyecto que tengas abierto. Un prompt bien usado vale m&aacute;s que veinte le&iacute;dos.
 Tambi&eacute;n es gratis
 &Uacute;nete a la Comunidad Design Premium
 Masterclasses en vivo, plantillas descargables y networking con ingenieros y arquitectos
@@ -12340,11 +12484,11 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-### ✅ Descarga Guia BIM Gratis
+### ✅Descarga Guia BIM Gratis
 
 - **id:** `6a8628d230b4eda267096f3e`
 - **tipo:** html
-- **actualizada:** 2026-08-19T22:07:13.361Z
+- **actualizada:** 2026-09-03T19:39:11.089Z
 - **Cuerpo:**
 
 ```

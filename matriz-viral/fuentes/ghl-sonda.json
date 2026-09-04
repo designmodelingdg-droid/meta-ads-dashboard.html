@@ -1,5 +1,5 @@
 {
-  "generado": "2026-09-01",
+  "generado": "2026-09-04",
   "location": "nkKbOarn5IwHeMv48uY9",
   "nota": "Sonda: comprueba QUE endpoints responden con nuestro token. No baja datos de negocio. Lo importante es si abren 'cursos · productos' y 'membresias': ahi vive el progreso de los alumnos, que Windsor NO expone.",
   "resultados": {
@@ -28,7 +28,7 @@
     "pipelines": {
       "ok": true,
       "http": 200,
-      "registros": "6+",
+      "registros": "7+",
       "claves": [
         "pipelines",
         "traceId"
@@ -88,7 +88,7 @@
     "formularios": {
       "ok": true,
       "http": 200,
-      "registros": 45,
+      "registros": 50,
       "claves": [
         "forms",
         "total",
@@ -121,7 +121,7 @@
     "workflows": {
       "ok": true,
       "http": 200,
-      "registros": "154+",
+      "registros": "158+",
       "claves": [
         "traceId",
         "workflows"
@@ -131,7 +131,7 @@
     "etiquetas": {
       "ok": true,
       "http": 200,
-      "registros": "507+",
+      "registros": "518+",
       "claves": [
         "tags",
         "traceId"
@@ -151,7 +151,7 @@
     "conversaciones": {
       "ok": true,
       "http": 200,
-      "registros": 25290,
+      "registros": 25383,
       "claves": [
         "conversations",
         "total",
@@ -184,7 +184,7 @@
     "pagos · transacciones": {
       "ok": true,
       "http": 200,
-      "registros": 405,
+      "registros": 407,
       "claves": [
         "data",
         "totalCount",
@@ -221,13 +221,217 @@
         "updatedAt",
         "version"
       ],
-      "total": 154,
+      "total": 158,
       "lista": [
+        {
+          "nombre": "New Workflow : 1788533768459",
+          "estado": "draft",
+          "actualizado": "2026-09-04",
+          "id": "f7eae1d8-6bec-4a89-a69f-4f6efefa2796"
+        },
+        {
+          "nombre": "Consultoría BIM + IA - DG",
+          "estado": "published",
+          "actualizado": "2026-09-03",
+          "id": "ca03497b-852c-422e-8947-4346825e8e9b"
+        },
         {
           "nombre": "GHL CONTACTOS WHATSAPP",
           "estado": "published",
-          "actualizado": "2026-09-01",
+          "actualizado": "2026-09-03",
           "id": "c5379470-f441-4a61-bd9c-48569ec5cb17"
+        },
+        {
+          "nombre": "New Workflow : 1788478848748",
+          "estado": "draft",
+          "actualizado": "2026-09-03",
+          "id": "0d683282-8508-4abf-949b-d3bb04a61f05"
+        },
+        {
+          "nombre": "mover de comunidad",
+          "estado": "published",
+          "actualizado": "2026-09-03",
+          "id": "c436eb21-098f-465b-9701-6057c1774598"
+        },
+        {
+          "nombre": "✅ Acceso GHL Curso 1 Automatización Revit",
+          "estado": "published",
+          "actualizado": "2026-09-03",
+          "id": "a909c2ab-a215-4b47-bda6-30df94da36ac"
+        },
+        {
+          "nombre": "✅ Acceso GHL Curso Lowcost SAP2000",
+          "estado": "published",
+          "actualizado": "2026-09-03",
+          "id": "c63694c5-c5d1-4d89-aede-cf0c5055c802"
+        },
+        {
+          "nombre": "✅ Acceso GHL Cursos 3 Paquete Autodesk",
+          "estado": "published",
+          "actualizado": "2026-09-03",
+          "id": "7010f648-d1a9-48b1-a5a1-9176dda0ac46"
+        },
+        {
+          "nombre": "✅ Acceso GHL Diplomados + Máster",
+          "estado": "published",
+          "actualizado": "2026-09-03",
+          "id": "09f27922-e83e-4d97-871f-c507f64d6501"
+        },
+        {
+          "nombre": "✅ Acceso GHL Especializaciones + Cursos",
+          "estado": "published",
+          "actualizado": "2026-09-03",
+          "id": "58c109cf-ef91-4f1c-8ec5-cf4cd43081b1"
+        },
+        {
+          "nombre": "✅ Acceso y Descarga PDF Recursos Gratis",
+          "estado": "published",
+          "actualizado": "2026-09-03",
+          "id": "cf3e5cfd-4d3a-46af-87ad-4d80ebd1ba8c"
+        },
+        {
+          "nombre": "Etiquetas Ventana 24 horas - WhatsApp API",
+          "estado": "draft",
+          "actualizado": "2026-09-02",
+          "id": "f3609760-3d3b-4183-a0e2-d2c315a19de1"
+        },
+        {
+          "nombre": "Lead Ads x WhatsApp API",
+          "estado": "draft",
+          "actualizado": "2026-09-02",
+          "id": "6c133f65-5de7-4d66-a895-d388c3ab8ca1"
+        },
+        {
+          "nombre": "⚠️ Bot Supervisor Académico",
+          "estado": "published",
+          "actualizado": "2026-09-02",
+          "id": "46aed067-3e9a-4d3b-b16c-33840c5f2ae9"
+        },
+        {
+          "nombre": "⚠️ Progreso de Alumnos - Bot Olympus",
+          "estado": "published",
+          "actualizado": "2026-09-02",
+          "id": "1b492ac0-4ad2-46ce-84a6-8618260c0c39"
+        },
+        {
+          "nombre": "⚠️Confirmar pago Matricula Master BIM",
+          "estado": "published",
+          "actualizado": "2026-09-02",
+          "id": "57118b4d-a0d6-491e-ae56-4393551943ba"
+        },
+        {
+          "nombre": "⚠️Facturas Mensuales Clientes Master BIM + IA",
+          "estado": "published",
+          "actualizado": "2026-09-02",
+          "id": "f82b8625-799f-46db-93c4-7cd780e41261"
+        },
+        {
+          "nombre": "⚠️Reservas de cupo Máster BIM+IA",
+          "estado": "published",
+          "actualizado": "2026-09-02",
+          "id": "55c66602-76a3-4802-8d62-de8f71fade7e"
+        },
+        {
+          "nombre": "✅ (SMS) FACEBOOK FORM DIPLOMADO",
+          "estado": "published",
+          "actualizado": "2026-09-02",
+          "id": "a318054d-6f8e-47db-ba7c-e680ef265311"
+        },
+        {
+          "nombre": "✅ (SMS) FACEBOOK FORM MASTER",
+          "estado": "published",
+          "actualizado": "2026-09-02",
+          "id": "9d19091c-0736-47b5-801a-76ac64ff0736"
+        },
+        {
+          "nombre": "✅ (SMS) FACEBOOK FORM PRE FILTRO ACERO",
+          "estado": "published",
+          "actualizado": "2026-09-02",
+          "id": "e2027510-c814-405e-8e6c-7cc61649b1ff"
+        },
+        {
+          "nombre": "✅ Acceso Upsell - PDF Ebook BIM",
+          "estado": "published",
+          "actualizado": "2026-09-02",
+          "id": "f5223679-f089-4542-815c-e07dd8d9851d"
+        },
+        {
+          "nombre": "✅ Acceso Upsell - PDF Gpt IA",
+          "estado": "published",
+          "actualizado": "2026-09-02",
+          "id": "cf6602e0-228d-49a1-95ca-49710c489c63"
+        },
+        {
+          "nombre": "✅ Acceso Upsell - PDF Guia BIM",
+          "estado": "published",
+          "actualizado": "2026-09-02",
+          "id": "d5122e97-be54-492b-893d-7c72b0ee220b"
+        },
+        {
+          "nombre": "✅ Lead Ads x WhatsApp SMS",
+          "estado": "published",
+          "actualizado": "2026-09-02",
+          "id": "fbbb4bec-482e-47d7-97c6-2f6ee8cdc3f4"
+        },
+        {
+          "nombre": "✅ Lead Agenda Directa + Manual Máster BIM+IA",
+          "estado": "published",
+          "actualizado": "2026-09-02",
+          "id": "64c7187b-38f7-41c2-824d-6ee0501c74df"
+        },
+        {
+          "nombre": "✅ Lead Recontacto Máster BIM+IA",
+          "estado": "draft",
+          "actualizado": "2026-09-02",
+          "id": "1239b4c0-cdfc-4fab-a84b-f4e05874a9ea"
+        },
+        {
+          "nombre": "✅ Oportunidad Futura (Comunidad + Nurture + Oferta)",
+          "estado": "published",
+          "actualizado": "2026-09-02",
+          "id": "7f8592df-3ccf-4c3d-952b-170c48ce5c17"
+        },
+        {
+          "nombre": "✅ Reunión Concretada + Regalo",
+          "estado": "published",
+          "actualizado": "2026-09-02",
+          "id": "537e4dc4-7c0d-4617-8b4c-7c31b8153e7d"
+        },
+        {
+          "nombre": "✅ Seguimiento Correo + No Calificado (Cursos)",
+          "estado": "published",
+          "actualizado": "2026-09-02",
+          "id": "04439524-e255-481c-b23e-20ca20030ff2"
+        },
+        {
+          "nombre": "✅ Seguimiento Correo + Oportunidad Futura (Cursos)",
+          "estado": "published",
+          "actualizado": "2026-09-02",
+          "id": "f8bc2f43-8aa5-4c94-b68a-cce6b62ac84c"
+        },
+        {
+          "nombre": "✅ Seguimiento Reactivación de la lista dormida",
+          "estado": "published",
+          "actualizado": "2026-09-02",
+          "id": "64825a8f-f256-403d-bdf1-f4d1ff1880a7"
+        },
+        {
+          "nombre": "✅ Seguimiento Test de Nivel → Máster BIM+IA",
+          "estado": "published",
+          "actualizado": "2026-09-02",
+          "id": "dfe45377-bcf8-4bb3-b163-5d11b7ee0153"
+        },
+        {
+          "nombre": "✅ Seguimiento Zapatas → Especialización en ACERO",
+          "estado": "published",
+          "actualizado": "2026-09-02",
+          "id": "3526b6ed-370a-4a8f-b8d9-09e6bbf2ae2b"
+        },
+        {
+          "nombre": "🟢Founder Circle · Formulario",
+          "estado": "draft",
+          "actualizado": "2026-09-02",
+          "id": "72246db9-92de-4d9a-8fbe-87b753228543"
         },
         {
           "nombre": "⛔ AGENTE IA MASTER WHATSAPP",
@@ -434,18 +638,6 @@
           "id": "39817267-11fa-42b0-9ff6-a1c1d259f94a"
         },
         {
-          "nombre": "✅ Lead Agenda Directa + Manual Máster BIM+IA",
-          "estado": "published",
-          "actualizado": "2026-08-31",
-          "id": "64c7187b-38f7-41c2-824d-6ee0501c74df"
-        },
-        {
-          "nombre": "✅ Lead Recontacto Máster BIM+IA",
-          "estado": "draft",
-          "actualizado": "2026-08-31",
-          "id": "1239b4c0-cdfc-4fab-a84b-f4e05874a9ea"
-        },
-        {
           "nombre": "Bot Nivel- Test  — IG/FB",
           "estado": "published",
           "actualizado": "2026-08-28",
@@ -462,12 +654,6 @@
           "estado": "draft",
           "actualizado": "2026-08-28",
           "id": "dd789720-9b02-4015-a372-f9e604fe234d"
-        },
-        {
-          "nombre": "✅ Acceso y Descarga PDF Recursos Gratis",
-          "estado": "published",
-          "actualizado": "2026-08-28",
-          "id": "cf3e5cfd-4d3a-46af-87ad-4d80ebd1ba8c"
         },
         {
           "nombre": "✅ Comentario Facebook/TikTok - GENERICO (rutea por palabra BIM/IA)",
@@ -494,124 +680,10 @@
           "id": "2eaa8799-2f5d-4ca0-9e3e-6a054b9f697d"
         },
         {
-          "nombre": "✅ Seguimiento Correo + No Calificado (Cursos)",
-          "estado": "published",
-          "actualizado": "2026-08-28",
-          "id": "04439524-e255-481c-b23e-20ca20030ff2"
-        },
-        {
-          "nombre": "✅ Seguimiento Correo + Oportunidad Futura (Cursos)",
-          "estado": "published",
-          "actualizado": "2026-08-28",
-          "id": "f8bc2f43-8aa5-4c94-b68a-cce6b62ac84c"
-        },
-        {
-          "nombre": "✅ Seguimiento Reactivación de la lista dormida",
-          "estado": "published",
-          "actualizado": "2026-08-28",
-          "id": "64825a8f-f256-403d-bdf1-f4d1ff1880a7"
-        },
-        {
-          "nombre": "✅ Seguimiento Test de Nivel → Máster BIM+IA",
-          "estado": "published",
-          "actualizado": "2026-08-28",
-          "id": "dfe45377-bcf8-4bb3-b163-5d11b7ee0153"
-        },
-        {
-          "nombre": "✅ Seguimiento Zapatas → Especialización en ACERO",
-          "estado": "published",
-          "actualizado": "2026-08-28",
-          "id": "3526b6ed-370a-4a8f-b8d9-09e6bbf2ae2b"
-        },
-        {
-          "nombre": "🟢Founder Circle · Formulario",
-          "estado": "draft",
-          "actualizado": "2026-08-28",
-          "id": "72246db9-92de-4d9a-8fbe-87b753228543"
-        },
-        {
-          "nombre": "✅ (SMS) FACEBOOK FORM PRE FILTRO ACERO",
-          "estado": "published",
-          "actualizado": "2026-08-27",
-          "id": "e2027510-c814-405e-8e6c-7cc61649b1ff"
-        },
-        {
-          "nombre": "✅ Oportunidad Futura (Comunidad + Nurture + Oferta)",
-          "estado": "published",
-          "actualizado": "2026-08-27",
-          "id": "7f8592df-3ccf-4c3d-952b-170c48ce5c17"
-        },
-        {
-          "nombre": "✅ (SMS) FACEBOOK FORM MASTER",
-          "estado": "published",
-          "actualizado": "2026-08-26",
-          "id": "9d19091c-0736-47b5-801a-76ac64ff0736"
-        },
-        {
-          "nombre": "✅ Acceso GHL Curso 1 Automatización Revit",
-          "estado": "published",
-          "actualizado": "2026-08-24",
-          "id": "a909c2ab-a215-4b47-bda6-30df94da36ac"
-        },
-        {
-          "nombre": "✅ Acceso GHL Curso Lowcost SAP2000",
-          "estado": "published",
-          "actualizado": "2026-08-24",
-          "id": "c63694c5-c5d1-4d89-aede-cf0c5055c802"
-        },
-        {
-          "nombre": "✅ Acceso GHL Diplomados + Máster",
-          "estado": "published",
-          "actualizado": "2026-08-24",
-          "id": "09f27922-e83e-4d97-871f-c507f64d6501"
-        },
-        {
-          "nombre": "✅ Acceso GHL Especializaciones + Cursos",
-          "estado": "published",
-          "actualizado": "2026-08-24",
-          "id": "58c109cf-ef91-4f1c-8ec5-cf4cd43081b1"
-        },
-        {
-          "nombre": "✅ Acceso Upsell - PDF Ebook BIM",
-          "estado": "published",
-          "actualizado": "2026-08-24",
-          "id": "f5223679-f089-4542-815c-e07dd8d9851d"
-        },
-        {
-          "nombre": "✅ Acceso Upsell - PDF Gpt IA",
-          "estado": "published",
-          "actualizado": "2026-08-24",
-          "id": "cf6602e0-228d-49a1-95ca-49710c489c63"
-        },
-        {
-          "nombre": "✅ Acceso Upsell - PDF Guia BIM",
-          "estado": "published",
-          "actualizado": "2026-08-24",
-          "id": "d5122e97-be54-492b-893d-7c72b0ee220b"
-        },
-        {
-          "nombre": "✅ Confirmar pago Matricula Master BIM",
-          "estado": "published",
-          "actualizado": "2026-08-24",
-          "id": "57118b4d-a0d6-491e-ae56-4393551943ba"
-        },
-        {
-          "nombre": "✅ Facturas Mensuales Clientes Master BIM + IA",
-          "estado": "published",
-          "actualizado": "2026-08-24",
-          "id": "f82b8625-799f-46db-93c4-7cd780e41261"
-        },
-        {
           "nombre": "✅ Lead Calificados + Notificación",
           "estado": "published",
           "actualizado": "2026-08-24",
           "id": "e97f9a3d-a518-4bb4-b3ba-1032862002da"
-        },
-        {
-          "nombre": "✅ Reservas de cupo Máster BIM+IA",
-          "estado": "published",
-          "actualizado": "2026-08-24",
-          "id": "55c66602-76a3-4802-8d62-de8f71fade7e"
         },
         {
           "nombre": "✅ Seguimientos 1,2,3 y 4 Automatización Revit",
@@ -632,30 +704,6 @@
           "id": "e3eeb341-65ba-4256-907a-b3ff3ea07efd"
         },
         {
-          "nombre": "✅ Reunión Concretada + Regalo",
-          "estado": "published",
-          "actualizado": "2026-08-21",
-          "id": "537e4dc4-7c0d-4617-8b4c-7c31b8153e7d"
-        },
-        {
-          "nombre": "Progreso de Alumnos - Bot Olympus",
-          "estado": "published",
-          "actualizado": "2026-08-20",
-          "id": "1b492ac0-4ad2-46ce-84a6-8618260c0c39"
-        },
-        {
-          "nombre": "✅ (SMS) FACEBOOK FORM DIPLOMADO",
-          "estado": "published",
-          "actualizado": "2026-08-20",
-          "id": "a318054d-6f8e-47db-ba7c-e680ef265311"
-        },
-        {
-          "nombre": "✅ Lead Ads x WhatsApp SMS",
-          "estado": "published",
-          "actualizado": "2026-08-20",
-          "id": "fbbb4bec-482e-47d7-97c6-2f6ee8cdc3f4"
-        },
-        {
           "nombre": "✅ Pago Exitoso General",
           "estado": "published",
           "actualizado": "2026-08-13",
@@ -672,12 +720,6 @@
           "estado": "draft",
           "actualizado": "2026-08-07",
           "id": "7afd9c85-c5ff-4e1c-8d12-3da37a936f81"
-        },
-        {
-          "nombre": "✅ Lead Ads x WhatsApp API",
-          "estado": "published",
-          "actualizado": "2026-07-18",
-          "id": "6c133f65-5de7-4d66-a895-d388c3ab8ca1"
         },
         {
           "nombre": "Master BIM+IA Seguimiento 5 Correos",
@@ -878,18 +920,6 @@
           "id": "5a1e0f72-aa4c-43f7-931a-40efa8588f21"
         },
         {
-          "nombre": "✅ Etiquetas Ventana 24 horas - WhatsApp API",
-          "estado": "published",
-          "actualizado": "2026-07-14",
-          "id": "f3609760-3d3b-4183-a0e2-d2c315a19de1"
-        },
-        {
-          "nombre": "🟢 Bot Supervisor Académico",
-          "estado": "published",
-          "actualizado": "2026-07-14",
-          "id": "46aed067-3e9a-4d3b-b16c-33840c5f2ae9"
-        },
-        {
           "nombre": "ACCESO CURSOS LMS",
           "estado": "published",
           "actualizado": "2026-07-06",
@@ -1074,12 +1104,6 @@
           "estado": "draft",
           "actualizado": "2026-06-29",
           "id": "8f1375f8-effe-4350-98ea-4a043feb1cd3"
-        },
-        {
-          "nombre": "⛔ FACEBOOK FORM ESPECIALIZACIONES + CURSOS",
-          "estado": "draft",
-          "actualizado": "2026-06-29",
-          "id": "6fa8ff65-03d5-48d9-82ce-2edd70fbf2f3"
         },
         {
           "nombre": "[OLYMPUS] Carrito abandonado · Naves SAP2000",
