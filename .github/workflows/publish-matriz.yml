@@ -22,7 +22,7 @@ on:
     paths:
       - matriz-viral/matriz/matriz.json
       - matriz-viral/matriz/guiones-completos.json
-      - matriz-viral/matriz/calendario-agosto.json
+      - matriz-viral/matriz/calendario-*.json
       - matriz-viral/matriz/competencia.json
       - calculadora-zapatas/**
       - test-nivel-bim/**
@@ -56,8 +56,18 @@ jobs:
           cp matriz-viral/matriz/matriz.json public/matriz.json
           # Contenido COMPLETO de cada pieza (para que la app no invente)
           cp matriz-viral/matriz/guiones-completos.json public/guiones-completos.json
-          # Orden de publicación del mes (fecha -> id de pieza)
-          cp matriz-viral/matriz/calendario-agosto.json public/calendario-agosto.json 2>/dev/null || true
+          # Orden de publicación del mes (fecha -> id de pieza).
+          # Se copian TODOS los calendarios, no uno con el mes escrito a mano:
+          # la línea decía «calendario-agosto.json» y en septiembre el sitio
+          # publicado seguía sirviendo agosto, con la matriz nueva ya hecha.
+          # Quien lea el sitio veía el mes anterior sin ninguna señal de error.
+          cp matriz-viral/matriz/calendario-*.json public/ 2>/dev/null || true
+          # Alias al mes más reciente, para que la app no tenga que adivinar.
+          # Se elige por el campo "mes" (AAAA-MM) de dentro del JSON y NO por el
+          # nombre del archivo: ordenar «calendario-octubre» contra
+          # «calendario-septiembre» alfabéticamente devuelve septiembre, porque
+          # la o va antes que la s. Habría fallado en el primer mes siguiente.
+          python3 -c "import json,glob,shutil; a=glob.glob('matriz-viral/matriz/calendario-*.json'); m=lambda f: (json.load(open(f)).get('mes') or ''); u=max(a,key=m,default=None); shutil.copy(u,'public/calendario-actual.json') if u and m(u) else None; print('calendario-actual.json <-', u)"
           # Radar del sector (competencia)
           cp matriz-viral/matriz/competencia.json public/competencia.json 2>/dev/null || true
           # Lead magnet: landing + calculadora de zapatas
@@ -81,7 +91,7 @@ jobs:
           <body style="font-family:system-ui;max-width:640px;margin:40px auto;padding:0 16px;color:#132433">
           <h1>Design Modeling · datos de contenido</h1>
           <p>Matriz de contenido viral (JSON, legible por máquina):</p>
-          <p><a href="./matriz.json"><code>matriz.json</code></a> · <a href="./guiones-completos.json"><code>guiones-completos.json</code></a> (contenido completo de cada pieza) · <a href="./calendario-agosto.json"><code>calendario-agosto.json</code></a> (orden de publicación del mes)</p>
+          <p><a href="./matriz.json"><code>matriz.json</code></a> · <a href="./guiones-completos.json"><code>guiones-completos.json</code></a> (contenido completo de cada pieza) · <a href="./calendario-actual.json"><code>calendario-actual.json</code></a> (orden de publicación del mes en curso)</p>
           <p>Lead magnets: <a href="./calculadora-zapatas/">Calculadora de Zapatas</a> · <a href="./test-nivel-bim/">Test de Nivel BIM</a> · <a href="./recursos/">Hub de recursos</a> · <a href="./eficiencia-acero/">5 verificaciones en acero</a></p>
           <p style="color:#5a6b7b">Se actualiza solo cuando cambia la matriz en el repo.</p>
           </body>
