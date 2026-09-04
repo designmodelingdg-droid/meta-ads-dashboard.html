@@ -25,7 +25,64 @@ presentación en Gamma + PPTX/PDF con los números REALES del mes.
 Del **día 5 del mes anterior** al **día 5 del mes actual** (así lo mide Dayana).
 Confirmar la ventana con ella solo si el mes tiene algo raro.
 
-## 1. Ventas reales (GoHighLevel vía Windsor.ai)
+## 1. EL DINERO QUE ENTRÓ (Stripe + PayPal) — se lee ANTES que nada
+
+**Esta sección existe porque en agosto no existía y el cierre salió con menos
+de la mitad de la facturación del mes.**
+
+Lo que pasó, para que no se repita: el cierre de agosto reportó $3.595,92
+—oportunidades marcadas ganadas en GoHighLevel— y se presentó como el ingreso
+del mes. En el repositorio, desde el 1 de septiembre y generado solo dos veces
+por semana, estaba `matriz-viral/fuentes/ingresos/resumen.json` diciendo
+**$10.317,91 realmente cobrados**. Nadie lo abrió. La meta de septiembre se fijó
+como «2,78 veces agosto» sobre una base que era menos de la mitad de la real, y
+esa cifra viajó a una presentación y a una reunión con todo el equipo.
+
+El CRM **no sabe cuánto entró**. Sabe qué se marcó. Son cosas distintas y la
+diferencia en agosto fue de más de seis mil dólares.
+
+### Qué leer, siempre, y en este orden
+
+```
+matriz-viral/fuentes/ingresos/resumen.json   ← el total del mes. Empezar aquí.
+matriz-viral/fuentes/ingresos/stripe.json    ← cobro por cobro: fecha, bruto, reembolsado, neto, correo, descripcion
+matriz-viral/fuentes/ingresos/paypal.json    ← idem
+```
+
+Los baja sola la Action `metricas-semanales.yml` (lunes y viernes) con los
+secretos `STRIPE_SECRET_KEY`, `CLIEND_ID_PAYPAL` y `SECRET_KEY_PAYPAL`. No hace
+falta ningún token a mano.
+
+### Tres comprobaciones obligatorias antes de usar el número
+
+1. **La ventana del archivo tiene que ser la del cierre.** `resumen.json` trae
+   su propia `ventana`. Si no coincide con la del mes, disparar
+   `metricas-semanales.yml` con `desde` y `hasta` correctos y esperar. Nunca
+   comparar un total de una ventana con el gasto de otra.
+2. **Buscar huecos de cobertura.** En agosto el listado de PayPal empezaba el
+   11-ago y el mes arrancaba el 5: seis días sin cubrir que nadie notó. Mirar la
+   fecha del primer y del último cobro de CADA pasarela y decirlo en la
+   presentación si no cubren la ventana entera.
+3. **Preguntar por las cuentas que no están.** Los archivos cubren UNA cuenta de
+   Stripe y UNA de PayPal. Si hay transferencias bancarias, otra cuenta de
+   PayPal, o cobros por un tercero, no están aquí. Preguntarle a Dayana qué
+   falta antes de dar un total por cerrado.
+
+### Cómo se leen los cobros
+
+- `neto` = bruto − reembolsado. Es **antes** de comisiones de pasarela: es el
+  mismo criterio que usa el área, así que las cifras son comparables.
+- Agrupar por `descripcion` y por monto: en agosto, 16 cobros de $160
+  («Subscription update») eran cuotas mensuales del Máster de contratos
+  vigentes. **Eso es ingreso recurrente, no captación nueva**, y hay que
+  separarlo o la meta del mes siguiente sale mal planteada.
+- Los correos permiten cruzar cobro contra persona contra oportunidad del CRM.
+
+## 2. Composición y atribución (GoHighLevel vía Windsor.ai)
+
+**Este número NO es el ingreso del mes.** Sirve para saber QUÉ se vendió, a
+QUIÉN y de dónde vino — la mezcla y la atribución. El cuánto sale de la
+sección 1.
 
 Connector `gohighlevel` (cuenta "Design Modeling Academy", location
 `nkKbOarn5IwHeMv48uY9`). Traer oportunidades con campos:
@@ -64,7 +121,7 @@ Lowcost `CIRfFG6WLQq8yuLcdPz9` · Diplomados `tDlrQaFOjdRb0Wn6yaCW` · Landing
 **SIEMPRE mostrar a Dayana la lista nominal de ventas antes de armar la
 presentación final** — ella valida contra su memoria y sus filtros de GHL.
 
-## 2. Campañas y anuncios ganadores (Meta Ads API vía GitHub Actions)
+## 3. Campañas y anuncios ganadores (Meta Ads API vía GitHub Actions)
 
 El token vive en el secreto `META_TOKEN` del repo. Disparar el workflow
 `metricas-semanales.yml` con inputs
@@ -82,7 +139,18 @@ Hacer `git pull`, mirar las imágenes, y usar las URLs raw
 como `![...](url)` en el inputText de Gamma. Anuncios repetidos en varios
 conjuntos (mismo creativo) se muestran una vez con leads combinados.
 
-## 3. Cruce pauta → ventas reales
+## 4. Cruce pauta → dinero cobrado
+
+El ROAS se reporta SIEMPRE en dos versiones, porque responden preguntas
+distintas y en agosto una sola dio una imagen falsa:
+
+| ROAS | Fórmula | Para qué sirve |
+|---|---|---|
+| **De adquisición** | revenue atribuido a anuncios ÷ inversión | decidir presupuesto de captación |
+| **De caja** | cobros verificados ÷ inversión | saber si el negocio ganó dinero |
+
+El de adquisición excluye los pagos recurrentes; el de caja los incluye. Decir
+cuál es cuál. En agosto salieron 2,74x y 5,54x sobre los mismos días.
 
 Cruzar `opportunity_source` de cada venta con su campaña:
 `registro-formulario` → MÁSTER Formulario V2 · `sms-whatsapp` → ACERO geo-split
@@ -91,20 +159,20 @@ Facebook · `sales-agent` / `Instagram` → orgánico/bot. Calcular ROAS real po
 campaña (ingreso atribuido / gasto) y señalar: campañas con gasto sin ventas
 atribuidas, y ventas sin fuente (van a la lista de higiene).
 
-## 3b. Lo que trae la matriz del mes que abre
+## 4b. Lo que trae la matriz del mes que abre
 
 Antes de las metas, mirar la pestaña de la matriz del mes nuevo y traerse a la
 presentación lo que cambia la operación: productos con precio nuevo, campañas
 que salen, recursos gratuitos por crear y lo que bloquea a qué. El cierre no es
 solo mirar atrás; la mitad de la reunión es qué se hace distinto.
 
-## 4. Orgánico
+## 5. Orgánico
 
 Sacar los datos del análisis del repo (`matriz-viral/matriz/`) y/o de la matriz
 de contenido del mes: post ganador con views y de dónde vinieron, lead magnet,
 mejor ángulo con su engagement, qué no funcionó. Solo números reales.
 
-## 5. Metas del mes siguiente
+## 6. Metas del mes siguiente
 
 Meta por defecto: **$10,000** (confirmar con Dayana si cambia). Construirla
 sobre la base real del mes que cierra, por producto (Máster y Acero), con:
@@ -113,7 +181,14 @@ la pauta. Diapositiva de CLOSER y SETTER en dos columnas con metas semanales
 concretas. Regla del ticket de Acero: defender $199.99, promo $100 solo como
 rescate.
 
-## 6. La presentación (Gamma)
+## 7. La presentación (Gamma)
+
+**Tarjeta obligatoria: la conciliación de las fuentes.** Nunca presentar una
+sola cifra de facturación. En agosto había cuatro fuentes dando cuatro números
+para el mismo mes, con $4.684,12 de dispersión, y la que se presentó era la más
+baja de todas. La tarjeta lleva: cobrado en pasarelas (el titular), suma de
+pipelines del CRM, widget de eficiencia, planillas del área — y una línea que
+diga cuál se usa y por qué.
 
 Estructura probada (10 diapositivas): Portada · Campañas (tabla exacta) ·
 Anuncios ganadores (imágenes reales en cuadrícula + métricas) · Cruce
@@ -167,10 +242,18 @@ Cuatro cosas que agosto enseñó sobre el método mismo:
 
 ## Reglas no negociables
 
-1. Nunca presentar el total de "ganados" crudo: siempre depurado (duplicados,
+1. **La facturación del mes sale de las pasarelas, nunca del CRM.** Leer
+   `matriz-viral/fuentes/ingresos/` antes que cualquier otra cosa. El número de
+   GoHighLevel sirve para la mezcla y la atribución, jamás como el ingreso del
+   mes: en agosto la diferencia fue de más de seis mil dólares y la cifra baja
+   llegó a una presentación de equipo.
+2. **Separar recurrente de captación nueva** antes de plantear la meta del mes
+   siguiente. Un multiplicador calculado sobre caja total exige un esfuerzo
+   distinto al calculado sobre captación.
+3. Nunca presentar el total de "ganados" crudo: siempre depurado (duplicados,
    pruebas, $0, recurrentes) y validado por Dayana.
-2. Todos los números de la presentación deben ser reales y trazables a GHL,
+4. Todos los números de la presentación deben ser reales y trazables a GHL,
    Meta API o la matriz del repo. Nada estimado sin marcarlo como estimado.
-3. La lista de higiene del CRM (sin monto / duplicados / sin fuente / cruzados)
+5. La lista de higiene del CRM (sin monto / duplicados / sin fuente / cruzados)
    va SIEMPRE, con nombres, como tarea del equipo.
-4. Idioma: español. Tono: directo, de reunión de equipo.
+6. Idioma: español. Tono: directo, de reunión de equipo.
