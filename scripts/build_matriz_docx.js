@@ -768,5 +768,11 @@ const doc=new Document({styles:{default:{document:{run:{font:"Calibri"}}}},
 const OUT=path.join(ROOT,`matriz-viral/entregables/Matriz-Contenido-${MES_TITULO}-${ANIO}-DMA.docx`);
 Packer.toBuffer(doc).then(buf=>{fs.writeFileSync(OUT,buf);
   console.log(`OK → ${OUT} (${(buf.length/1024).toFixed(0)} KB)`);
-  console.log(`   mes ${CAL.mes} · ${CAL.piezas.length} piezas · calendario ${CAL_FILE}`);
+  // Las piezas del mes viven en grupos[].calendario, no en CAL.piezas: el mes
+  // se reestructuró en 5 grupos con calendario propio y esta linea seguia
+  // contando el array plano, que quedo vacio. Decia «0 piezas» sobre un
+  // documento de 56, que es peor que no decir nada.
+  const nPiezas = (CAL.piezas||[]).length
+    || (CAL.grupos||[]).reduce((n,g)=>n+((g.calendario||[]).length),0);
+  console.log(`   mes ${CAL.mes} · ${nPiezas} piezas · calendario ${CAL_FILE}`);
   if(faltantes.length) console.log('   ⚠️ sin dato: '+faltantes.join(', '));});

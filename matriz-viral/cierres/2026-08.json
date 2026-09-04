@@ -276,5 +276,172 @@
         "que_se_replica": "EL FORMATO, NO LA AFIRMACION. «Tu software ya hace X y no lo sabias» funciona (2a en comentarios del mes), pero al documentar el paso a paso una de las tres funciones no existia y Autodesk dice que hasta Revit 2026 no hay IA en el producto. Ver regla 0 de CLAUDE.md."
       }
     ]
+  },
+  "conciliacion_ester": {
+    "fecha": "2026-09-05",
+    "origen": "Tres reportes de KPIs del area (Comerciales, Marketing, Administrativos) entregados por Ester tras la reunion de cierre del 4-sep.",
+    "por_que_existe": "La reunion dejo como tarea «reunirse con Ester para conciliar los datos de ventas de agosto». Esto es esa conciliacion.",
+    "facturacion": {
+      "mi_cifra": {
+        "valor": 3595.92,
+        "n": 22,
+        "criterio": "oportunidades GANADAS en GoHighLevel, depuradas, ventana 05-ago -> 03-sep"
+      },
+      "cifra_ester": {
+        "valor": 6922.87,
+        "n": 43,
+        "criterio": "COBROS verificados en Stripe y PayPal, ventana 05-ago -> 05-sep"
+      },
+      "diferencia": 3326.95,
+      "de_donde_sale": [
+        {
+          "concepto": "13 cobros recurrentes del Master BIM ($160 c/u) en Stripe",
+          "monto": 2080.0,
+          "nota": "NO figuraban en ninguna planilla ni en ningun informe previo. Es el 30% de la facturacion del mes y explica por que High Tickets aparecia con $500."
+        },
+        {
+          "concepto": "4 cobros en pasarela ausentes de planilla",
+          "monto": 726.99,
+          "nota": "Carmen Barrios $420, Priscila Cisneros $230, un pago a nombre de Ester Alvarez $50 y Ruben Arce $26,99."
+        },
+        {
+          "concepto": "Diferencia de ventana (2 dias) y de criterio (cobro en pasarela contra oportunidad ganada)",
+          "monto": 519.96
+        }
+      ],
+      "cuatro_fuentes_cuatro_cifras": [
+        {
+          "fuente": "Pasarelas + planilla (Ester)",
+          "valor": 6922.87
+        },
+        {
+          "fuente": "Suma de pipelines del CRM",
+          "valor": 8800.0
+        },
+        {
+          "fuente": "Widget «Eficiencia de ventas»",
+          "valor": 5850.0
+        },
+        {
+          "fuente": "Planillas del area",
+          "valor": 4115.88
+        }
+      ],
+      "dispersion": 4684.12,
+      "cual_usar": "La de pasarelas ($6.922,87) es la unica verificable contra dinero recibido. Las otras tres se dejan de usar hasta que cuadren."
+    },
+    "pauta": {
+      "mi_cifra": {
+        "gasto": 1190.43,
+        "leads": 1477,
+        "cpl": 0.81,
+        "ventana": "archivo de campanas 02-ago -> 31-ago"
+      },
+      "cifra_ester": {
+        "gasto": 1250.03,
+        "leads": 1514,
+        "cpl": 0.83,
+        "ventana": "05-ago -> 04-sep (30 dias)"
+      },
+      "lectura": "Practicamente la misma operacion medida con dos ventanas. La de Ester es la buena de aqui en adelante porque coincide con la ventana comercial.",
+      "roas": {
+        "mio": {
+          "valor": 3.02,
+          "formula": "ventas GHL / gasto"
+        },
+        "panel_olympus": {
+          "valor": 2.74,
+          "formula": "revenue atribuido a anuncios / inversion",
+          "nota": "excluye recurrentes; es el que sirve para decidir presupuesto"
+        },
+        "contra_caja": {
+          "valor": 5.54,
+          "formula": "cobros verificados / inversion",
+          "nota": "incluye recurrentes; sirve para salud del negocio, no para decidir pauta"
+        }
+      }
+    },
+    "lo_que_corrige_mi_cierre": [
+      {
+        "que": "«Trafico al perfil - IG quemo $52,50 para 1 lead. Apagar.»",
+        "correccion": "Estaba midiendo una campana de TRAFICO con una metrica de LEADS. El mismo error aparece en «Lead magnets: $20,58 / 3 leads / CPL $6,86»: esa campana ([25AGOSTO] LEAD MAGNETS) esta optimizada a visitas al perfil y entrego 1.160 visitas a $0,03, que es un costo excelente para ese objetivo. La reunion resolvio algo mejor que apagarla: sustituir el trafico al perfil por lead magnets SEGMENTADOS POR PRODUCTO que construyan audiencias personalizadas para los anuncios de Acero y Master.",
+        "estado": "mi recomendacion queda anulada por la decision de la reunion"
+      },
+      {
+        "que": "Base de la meta de septiembre: $3.595,92",
+        "correccion": "La caja verificada de agosto fue $6.922,87. La meta de $10.000 no es 2,78x sino 1,44x sobre caja. Ver meta_septiembre_revisada.",
+        "estado": "corregido"
+      },
+      {
+        "que": "«Ningun anuncio del Master entro en el top»",
+        "correccion": "Confirmado y cuantificado por Ester: el Master BIM consumio $491,05 (39,3% del presupuesto) con CERO compras registradas en el panel.",
+        "estado": "confirmado y agravado"
+      }
+    ],
+    "lo_que_confirma_mi_cierre": [
+      "El embudo no cierra por contacto, no por precio: 94,1% de las perdidas de Cursos se clasifican «sin respuesta» (1.600 de 1.700).",
+      "La atribucion esta rota: yo reporte 32% del dinero sin fuente; Ester reporta que el 70% de las compras (14 de 20) no se puede atribuir a ningun anuncio.",
+      "El formulario rinde mejor que WhatsApp: el geo-split de ACERO FORM sostiene CPL de $0,34-$0,50 contra $0,74-$0,92 de WSP SMS."
+    ],
+    "hallazgos_nuevos_de_ester": [
+      {
+        "n": 1,
+        "que": "856 conversaciones sin asignar (57,8%), empeoro desde 41,8%",
+        "impacto": "Mas de la mitad de la demanda del mes no tuvo responsable. Es la accion de mayor retorno de los tres informes."
+      },
+      {
+        "n": 2,
+        "que": "Tiempo medio de respuesta 3h36 (era 2h55), contra un umbral de 15 min",
+        "impacto": "14 veces por encima del objetivo."
+      },
+      {
+        "n": 3,
+        "que": "18 de 19 piezas de contenido del mes quedaron en BORRADOR",
+        "impacto": "El cuello de botella esta en la publicacion, no en la produccion. OJO: contradice el conteo de la matriz (16 piezas publicadas via Graph API) — son dos sistemas distintos y hay que decidir cual manda."
+      },
+      {
+        "n": 4,
+        "que": "El canal de email esta detenido: 2.420 envios (-84%), 579 aperturas, UNA respuesta",
+        "impacto": "23,9% de apertura demuestra que la lista responde; el problema es que casi no se le escribe."
+      },
+      {
+        "n": 5,
+        "que": "Lote diario de la Calculadora de Zapatas vencido hace 44 dias (~2.531 contactos sin activar)",
+        "impacto": "Demanda ya captada y pagada que sigue sin tocarse."
+      },
+      {
+        "n": 6,
+        "que": "El indicador «Lead Ganado» de High Tickets no mide estudiantes",
+        "impacto": "De 12 ganadas, solo 1 es inscripcion nueva al Master. 4 son Diplomados, 5 cuotas de contratos previos y 2 sin pago."
+      },
+      {
+        "n": 7,
+        "que": "Solo 1 estudiante nuevo de Master contra una meta de 12 (8,3%)",
+        "impacto": "La rama de alto ticket esta en rojo pese a que la prospeccion supero la meta (918 intentos contra 500)."
+      }
+    ],
+    "meta_septiembre_revisada": {
+      "base_corregida": 6922.87,
+      "recurrente_que_se_repite_solo": 2080.0,
+      "captacion_nueva_de_agosto": 4842.87,
+      "lecturas": [
+        {
+          "lectura": "La meta de $10.000 es CAJA TOTAL",
+          "multiplicador": 1.44,
+          "hace_falta_captar": 7920.0,
+          "sobre_agosto": 1.64,
+          "mezcla": "7 modulos ($5.250) + 12 Acero ($2.700) = $7.950 nuevos + $2.080 recurrente = $10.030",
+          "ventas_necesarias": 19
+        },
+        {
+          "lectura": "La meta de $10.000 es CAPTACION NUEVA (como se dijo en la reunion)",
+          "multiplicador": 2.07,
+          "mezcla": "8 modulos ($6.000) + 18 Acero ($4.050) = $10.050 nuevos + $2.080 recurrente = $12.130 de caja",
+          "ventas_necesarias": 26
+        }
+      ],
+      "recomendacion": "Fijar la meta sobre CAJA TOTAL y dejarla por escrito. Es lo que el negocio ingresa de verdad, es lo unico que ahora se puede verificar contra pasarelas, y baja el esfuerzo de 26 ventas a 19 sin bajar el dinero. La condicion es que el recurrente se sostenga: hay que vigilar los 13 contratos de $160 mes a mes.",
+      "decision_pendiente": "Dayana debe elegir una de las dos lecturas. Hasta entonces conviven dos metas distintas con el mismo numero."
+    }
   }
 }
