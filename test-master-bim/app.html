@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diagnóstico BIM · Máster Internacional BIM + IA</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@600;700;800;900&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#003e5c; --navy2:#001e30; --azul:#0a5a80;
+    --orange:#ca7520; --orange-d:#e8a04a; --orange-p:#f7e8cc; --crema:#fafaf7;
+    --card:#fff; --ink:#333; --ink2:#5a6b7b; --line:#e5e7eb;
+    --ok:#1e9e6a; --bad:#d64545; --chip-ok:#e4f6ee; --chip-bad:#fdeaea;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{background:var(--navy2)}
+  body{font-family:'Nunito',system-ui,sans-serif;
+    background:linear-gradient(135deg,var(--navy2) 0%,var(--navy) 100%);
+    min-height:100vh;color:var(--ink);padding:0 14px 50px}
+  h1,h2,h3,h4{font-family:'Overpass',sans-serif}
+  .wrap{max-width:660px;margin:0 auto}
+
+  header{padding:26px 0 18px;color:#fff;text-align:center}
+  header .eyebrow{font-size:.72rem;font-weight:800;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--orange-d);margin-bottom:9px}
+  header h1{font-size:clamp(1.35rem,4.6vw,1.85rem);font-weight:900;line-height:1.2}
+  header p{font-size:.9rem;color:#c3d1dc;margin-top:9px;line-height:1.55}
+
+  .barra{height:6px;background:rgba(255,255,255,.14);border-radius:99px;overflow:hidden;margin:16px 0 6px}
+  .barra i{display:block;height:100%;width:0;background:var(--orange-d);transition:width .25s}
+  .cuenta{font-size:.76rem;color:#a8bccb;text-align:center;margin-bottom:16px}
+
+  .card{background:var(--card);border-radius:14px;padding:20px;box-shadow:0 14px 40px rgba(0,0,0,.28);margin-bottom:14px}
+  .grupo{font-size:.68rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--orange);margin-bottom:9px}
+  .preg{font-size:1rem;font-weight:700;color:var(--navy);line-height:1.42;margin-bottom:14px}
+  .ops{display:grid;gap:7px}
+  .op{display:block;width:100%;text-align:left;padding:11px 14px;border:1px solid var(--line);
+    border-radius:10px;background:#fbfcfe;font:inherit;font-size:.9rem;color:var(--ink);cursor:pointer}
+  .op:hover{border-color:var(--orange-d);background:#fff8ef}
+  .op.sel{border-color:var(--orange);background:var(--orange-p);font-weight:700}
+  .op:focus-visible{outline:2px solid var(--orange);outline-offset:2px}
+
+  .nav{display:flex;gap:9px;margin-top:16px}
+  .btn{flex:1;padding:12px;border:0;border-radius:10px;font:inherit;font-family:'Overpass',sans-serif;
+    font-weight:800;font-size:.94rem;cursor:pointer;background:var(--orange);color:#fff;text-align:center;
+    text-decoration:none;display:block}
+  .btn:hover{background:var(--orange-d)}
+  .btn:disabled{opacity:.45;cursor:default}
+  .btn.sec{background:#eef3f7;color:var(--navy)}
+  .btn.sec:hover{background:#e2eaf1}
+
+  /* ── resultado ── */
+  .res h2{font-size:.74rem;text-transform:uppercase;letter-spacing:.1em;color:var(--orange);margin-bottom:10px}
+  .nivelazo{background:linear-gradient(135deg,var(--navy),var(--azul));color:#fff;border-radius:13px;
+    padding:22px;text-align:center;margin-bottom:16px}
+  .nivelazo .lbl{font-size:.72rem;text-transform:uppercase;letter-spacing:.11em;color:#a8c3d6;margin-bottom:7px}
+  .nivelazo .big{font-family:'Overpass',sans-serif;font-size:clamp(1.5rem,6vw,2.1rem);font-weight:900;line-height:1.15}
+  .nivelazo .perfil{display:inline-block;margin-top:12px;background:rgba(232,160,74,.2);
+    border:1px solid rgba(232,160,74,.5);color:var(--orange-d);font-size:.8rem;font-weight:700;
+    padding:6px 14px;border-radius:99px}
+  .fila{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:9px 0;
+    border-bottom:1px dashed var(--line);font-size:.88rem}
+  .fila:last-child{border-bottom:0}
+  .fila small{color:var(--ink2);display:block;font-size:.76rem;margin-top:2px}
+  .chip{font-size:.72rem;font-weight:800;padding:4px 10px;border-radius:99px;white-space:nowrap}
+  .chip.ok{background:var(--chip-ok);color:var(--ok)}
+  .chip.no{background:var(--chip-bad);color:var(--bad)}
+  .aviso{background:#fff7ec;border-left:3px solid var(--orange);border-radius:0 9px 9px 0;
+    padding:14px 16px;margin-top:14px;font-size:.9rem;line-height:1.6}
+  .aviso b{color:var(--navy)}
+  .cita{background:#eef4f8;border-radius:11px;padding:16px;margin-top:14px}
+  .cita h4{font-size:.76rem;text-transform:uppercase;letter-spacing:.07em;color:var(--navy);margin-bottom:7px}
+  .cita p{font-size:.89rem;color:var(--ink2);line-height:1.6}
+  .pie{color:#9fb4c4;font-size:.76rem;text-align:center;margin-top:18px;line-height:1.6}
+  .codigo{font-family:ui-monospace,monospace;font-weight:700;letter-spacing:.06em;
+    background:var(--navy2);color:var(--orange-d);padding:4px 9px;border-radius:6px;font-size:.82rem}
+  .enviando{font-size:.85rem;color:var(--ink2);text-align:center;padding:10px}
+  .oculto{display:none!important}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Máster Internacional BIM + IA</p>
+    <h1 id="tituloCab">Diagnóstico BIM</h1>
+    <p id="subCab">20 preguntas sobre lo que sabes hacer en un proyecto real. Cinco minutos.
+      Tu asesor lo revisa antes de la cita.</p>
+    <div class="barra"><i id="barra"></i></div>
+    <p class="cuenta" id="cuenta">Pregunta 1 de 20</p>
+  </header>
+
+  <div id="app"></div>
+</div>
+
+<script src="preguntas.js"></script>
+<script>
+/* ─────────────────────────────────────────────────────────────────────────
+   CONFIGURACIÓN — lo único que se toca al montarlo
+   ───────────────────────────────────────────────────────────────────────── */
+const CFG = {
+  /* Formulario NATIVO de GoHighLevel donde aterriza el resultado.
+     Nativo y no webhook a propósito: el webhook de GHL es prémium y cobra por
+     ejecución; el formulario nativo es gratis y el contacto entra al CRM igual.
+     Se rellena por querystring con las claves de los campos personalizados. */
+  FORM_GHL: 'https://api.leadconnectorhq.com/widget/form/PEGAR_ID_DEL_FORMULARIO',
+
+  /* Claves de los campos personalizados de GHL. Deben existir en el CRM antes
+     de que esto sirva de algo — la guía de montaje dice cómo crearlos. */
+  CAMPOS: {
+    nivel:      'nivel_bim',
+    perfil:     'perfil_tecnico',
+    modulo:     'modulo_recomendado',
+    codigo:     'codigo_diagnostico',
+    detalle:    'detalle_diagnostico',
+    puntajes:   'puntajes_bloques',
+  },
+};
+
+/* ─────────────────────────────────────────────────────────────────────────
+   Estado
+   ───────────────────────────────────────────────────────────────────────── */
+const TODAS = [];
+BLOQUES.forEach((b,bi) => b.preguntas.forEach((p,pi) =>
+  TODAS.push({ texto:p, tipo:'bloque', idx:bi, grupo:b.nivel })));
+EJES.forEach((e,ei) => e.preguntas.forEach((p,pi) =>
+  TODAS.push({ texto:p, tipo:'eje', idx:ei, grupo:e.nombre })));
+
+const R = new Array(TODAS.length).fill(null);
+let cursor = 0;
+
+/* El closer manda el enlace con el contacto identificado. Si no viene, el
+   test funciona igual pero el resultado no se puede pegar a nadie: por eso la
+   pantalla final siempre ofrece el código, que sirve incluso sin parámetros. */
+const Q = new URLSearchParams(location.search);
+const CONTACTO = {
+  id:     Q.get('cid')    || '',
+  nombre: Q.get('nombre') || '',
+  email:  Q.get('email')  || '',
+};
+
+/* ─────────────────────────────────────────────────────────────────────────
+   Cálculo
+   ───────────────────────────────────────────────────────────────────────── */
+function calcular(){
+  const bloques = BLOQUES.map((b,i) => {
+    const pts = TODAS.reduce((s,q,qi) =>
+      s + (q.tipo==='bloque' && q.idx===i ? (R[qi]||0) : 0), 0);
+    const max = b.preguntas.length * 3;
+    return { ...b, pts, max, pct: pts/max, dominado: pts/max >= UMBRAL };
+  });
+
+  /* Nivel = último bloque dominado SIN saltos. Quien domina B1 y B3 pero no
+     B2 no es BIM Manager: es un Modelador con piezas sueltas, y decirle otra
+     cosa al asesor le hace perder la llamada. */
+  let nivel = 0;
+  for(let i=0;i<bloques.length;i++){ if(bloques[i].dominado) nivel = i+1; else break; }
+
+  /* Bloques dominados por encima del nivel: conocimiento disperso. Es una
+     señal útil, no un nivel. */
+  const dispersos = bloques.filter((b,i) => b.dominado && i >= nivel);
+
+  const ejes = EJES.map((e,i) => {
+    const pts = TODAS.reduce((s,q,qi) =>
+      s + (q.tipo==='eje' && q.idx===i ? (R[qi]||0) : 0), 0);
+    const max = e.preguntas.length * 3;
+    return { ...e, pts, max, pct: pts/max, base: pts/max >= UMBRAL_EJE };
+  });
+
+  const est = ejes[0], arq = ejes[1];
+  let perfil, perfilCorto;
+  if(est.base && arq.base){ perfil='Perfil mixto: estructuras y arquitectura'; perfilCorto='MIXTO'; }
+  else if(est.base){        perfil='Base en cálculo y diseño estructural';     perfilCorto='EST'; }
+  else if(arq.base){        perfil='Base en arquitectura y edificación';       perfilCorto='ARQ'; }
+  else {                    perfil='Base técnica por consolidar';              perfilCorto='BASE'; }
+
+  const siguiente = nivel < BLOQUES.length ? BLOQUES[nivel] : null;
+  const codigo = `${nivel===0?'B0':BLOQUES[nivel-1].id}-${perfilCorto}-${
+    Math.round(bloques.reduce((s,b)=>s+b.pts,0) / bloques.reduce((s,b)=>s+b.max,0) * 100)}`;
+
+  return { bloques, nivel, dispersos, ejes, est, arq, perfil, perfilCorto, siguiente, codigo };
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   Pantallas
+   ───────────────────────────────────────────────────────────────────────── */
+const app = document.getElementById('app');
+const pct1 = n => (n*100).toFixed(0);
+
+function pintarPregunta(){
+  const q = TODAS[cursor];
+  document.getElementById('barra').style.width = ((cursor)/TODAS.length*100)+'%';
+  document.getElementById('cuenta').textContent = `Pregunta ${cursor+1} de ${TODAS.length}`;
+
+  app.innerHTML = `
+    <div class="card">
+      <p class="grupo">${q.grupo}</p>
+      <p class="preg">${q.texto}</p>
+      <div class="ops">${OPCIONES.map(o =>
+        `<button class="op${R[cursor]===o.v?' sel':''}" data-v="${o.v}">${o.t}</button>`).join('')}</div>
+      <div class="nav">
+        ${cursor>0 ? '<button class="btn sec" id="atras">Atrás</button>' : ''}
+        <button class="btn" id="sig" ${R[cursor]===null?'disabled':''}>
+          ${cursor===TODAS.length-1 ? 'Ver mi diagnóstico' : 'Siguiente'}</button>
+      </div>
+    </div>`;
+
+  app.querySelectorAll('.op').forEach(b => b.onclick = () => {
+    R[cursor] = +b.dataset.v;
+    app.querySelectorAll('.op').forEach(x => x.classList.remove('sel'));
+    b.classList.add('sel');
+    app.querySelector('#sig').disabled = false;
+    setTimeout(avanzar, 180);   // avance automático: 20 preguntas con dos clics cada una se abandonan
+  });
+  const atras = app.querySelector('#atras');
+  if(atras) atras.onclick = () => { cursor--; pintarPregunta(); };
+  app.querySelector('#sig').onclick = avanzar;
+}
+
+function avanzar(){
+  if(R[cursor]===null) return;
+  if(cursor < TODAS.length-1){ cursor++; pintarPregunta(); }
+  else pintarResultado();
+}
+
+function pintarResultado(){
+  const r = calcular();
+  document.getElementById('barra').style.width = '100%';
+  document.getElementById('cuenta').textContent = 'Diagnóstico completo';
+  document.getElementById('tituloCab').textContent = 'Tu diagnóstico está listo';
+  document.getElementById('subCab').textContent =
+    'Esto es lo que dice tu test. El detalle y la ruta te los explica tu asesor en la cita.';
+
+  const nombreNivel = r.nivel === 0
+    ? 'En camino a Modelador BIM'
+    : BLOQUES[r.nivel-1].nivel;
+
+  const filas = r.bloques.map(b => `
+    <div class="fila">
+      <span>${b.nivel}<small>${b.pts} de ${b.max} puntos · ${pct1(b.pct)}%</small></span>
+      <span class="chip ${b.dominado?'ok':'no'}">${b.dominado?'Dominado':'Por cerrar'}</span>
+    </div>`).join('');
+
+  const ejesHtml = r.ejes.map(e => `
+    <div class="fila">
+      <span>${e.nombre}<small>${e.pts} de ${e.max} puntos</small></span>
+      <span class="chip ${e.base?'ok':'no'}">${e.base?'Base sólida':'Sin consolidar'}</span>
+    </div>`).join('');
+
+  const disperso = r.dispersos.length ? `
+    <div class="aviso">
+      <b>Tienes conocimientos sueltos por encima de tu nivel</b> en
+      ${r.dispersos.map(b=>b.nivel).join(' y ')}. No cuentan como nivel porque hay un
+      escalón sin cerrar debajo, pero sí acortan el camino — y tu asesor lo va a tener en cuenta.
+    </div>` : '';
+
+  app.innerHTML = `
+    <div class="card res">
+      <div class="nivelazo">
+        <p class="lbl">Tu nivel BIM</p>
+        <p class="big">${nombreNivel}</p>
+        <span class="perfil">${r.perfil}</span>
+      </div>
+
+      <h2>Cómo quedó cada nivel</h2>
+      ${filas}
+
+      <h2 style="margin-top:18px">Tu base técnica</h2>
+      ${ejesHtml}
+      ${disperso}
+
+      <div class="cita">
+        <h4>Y ahora, la cita</h4>
+        <p><b>Gracias por completar el diagnóstico.</b> Este test no es genérico: lo que
+        acabas de responder llega a tu asesor académico antes de la llamada, así que no vas
+        a empezar explicando desde cero quién eres ni qué sabes hacer.</p>
+        <p style="margin-top:9px">En la cita te va a decir <b>exactamente por dónde entrar</b>
+        —qué módulo te corresponde y cuál te haría perder el tiempo—, qué te falta para el
+        siguiente nivel y cómo encaja con lo que estás haciendo ahora. Una conversación
+        sobre tu caso, no una presentación.</p>
+      </div>
+
+      <div id="envio"></div>
+
+      <p class="pie">Tu código de diagnóstico es <span class="codigo">${r.codigo}</span>.
+        Si tu asesor te lo pide, es este.</p>
+    </div>`;
+
+  entregar(r);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   Entrega del resultado al CRM
+   ───────────────────────────────────────────────────────────────────────── */
+function detalleTexto(r){
+  const L = [];
+  L.push(`NIVEL BIM: ${r.nivel===0?'En camino a Modelador':BLOQUES[r.nivel-1].nivel}`);
+  L.push(`PERFIL TÉCNICO: ${r.perfil}`);
+  L.push(`MÓDULO RECOMENDADO: ${r.siguiente ? r.siguiente.modulo+' ('+r.siguiente.meses+')' : 'Ruta completa cerrada — candidato a mentoría o a BIM+IA avanzado'}`);
+  L.push('');
+  L.push('NIVELES:');
+  r.bloques.forEach(b => L.push(`  ${b.dominado?'[X]':'[ ]'} ${b.nivel} — ${b.pts}/${b.max} (${pct1(b.pct)}%)`));
+  if(r.dispersos.length) L.push(`  ! Conocimiento disperso en: ${r.dispersos.map(b=>b.nivel).join(', ')}`);
+  L.push('');
+  L.push('BASE TÉCNICA:');
+  r.ejes.forEach(e => L.push(`  ${e.base?'[X]':'[ ]'} ${e.nombre} — ${e.pts}/${e.max}`));
+  L.push('');
+  L.push('PARA EL ASESOR: ' + guionAsesor(r));
+  return L.join('\n');
+}
+
+/* La frase que el closer lee de un vistazo. Es lo que de verdad usa. */
+function guionAsesor(r){
+  const nivel = r.nivel===0 ? 'Arranca de cero en BIM' : `Domina hasta ${BLOQUES[r.nivel-1].corto}`;
+  const base = { EST:'viene de cálculo estructural', ARQ:'viene de arquitectura',
+                 MIXTO:'maneja estructuras y arquitectura', BASE:'sin base técnica consolidada' }[r.perfilCorto];
+  const entrar = r.siguiente ? `Entrar por ${r.siguiente.modulo}` : 'Ya cubre la ruta: ofrecer mentoría o especialización';
+  return `${nivel}, ${base}. ${entrar}.`;
+}
+
+function entregar(r){
+  const cont = document.getElementById('envio');
+  const datos = {
+    [CFG.CAMPOS.nivel]:    r.nivel===0 ? 'En camino a Modelador BIM' : BLOQUES[r.nivel-1].nivel,
+    [CFG.CAMPOS.perfil]:   r.perfil,
+    [CFG.CAMPOS.modulo]:   r.siguiente ? r.siguiente.modulo : 'Ruta completa',
+    [CFG.CAMPOS.codigo]:   r.codigo,
+    [CFG.CAMPOS.detalle]:  detalleTexto(r),
+    [CFG.CAMPOS.puntajes]: r.bloques.map(b=>`${b.id}:${b.pts}/${b.max}`).join(' ')
+                           + ' | ' + r.ejes.map(e=>`${e.id}:${e.pts}/${e.max}`).join(' '),
+  };
+  if(CONTACTO.id)     datos.contact_id = CONTACTO.id;
+  if(CONTACTO.nombre) datos.full_name  = CONTACTO.nombre;
+  if(CONTACTO.email)  datos.email      = CONTACTO.email;
+
+  if(CFG.FORM_GHL.includes('PEGAR_ID')){
+    cont.innerHTML = `<div class="aviso"><b>Falta conectar el formulario de GoHighLevel.</b>
+      El diagnóstico se calculó bien, pero todavía no tiene a dónde enviarse.
+      Está en la guía de montaje, paso 2.</div>`;
+    return;
+  }
+
+  const url = CFG.FORM_GHL + '?' + new URLSearchParams(datos).toString();
+  cont.innerHTML = `
+    <p class="enviando">Enviando tu diagnóstico a tu asesor…</p>
+    <iframe src="${url}" style="width:100%;height:0;border:0" title="Envío del diagnóstico"
+      onload="document.querySelector('.enviando').textContent='Listo. Tu asesor ya lo tiene.'"></iframe>`;
+}
+
+pintarPregunta();
+</script>
+</body>
+</html>
