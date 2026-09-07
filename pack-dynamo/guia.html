@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pack starter de Dynamo / Python para Revit · Design Modeling Academy</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@500;600;700;800;900&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#003e5c; --navy2:#001e30; --azul-medio:#0a5a80;
+    --orange:#ca7520; --orange-d:#e8a04a; --orange-p:#f7e8cc;
+    --crema:#fafaf7; --ink:#333; --ink2:#5a6b7b; --line:#e5e7eb; --ok:#1e9e6a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Nunito',system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.68}
+  h1,h2,h3,h4{font-family:'Overpass',sans-serif;line-height:1.22;text-wrap:balance}
+  .wrap{max-width:44rem;margin:0 auto;padding:0 20px}
+
+  .top{background:linear-gradient(135deg,var(--navy2),var(--navy));color:#fff;padding:44px 0 40px;text-align:center}
+  .top img{height:44px;margin-bottom:14px;filter:brightness(0) invert(1)}
+  .top .eyebrow{font-family:'Overpass',sans-serif;font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--orange-d)}
+  .top h1{font-size:clamp(1.7rem,4.4vw,2.5rem);font-weight:800;margin:12px 0 12px}
+  .top p{color:#c3d1dc;max-width:34rem;margin:0 auto}
+
+  .fuentes{background:var(--crema);border-bottom:1px solid var(--line);padding:16px 0;font-size:.84rem;color:var(--ink2)}
+  .fuentes b{color:var(--navy)}
+
+  main{padding:14px 0 40px}
+  .intro{font-size:1.06rem;color:var(--ink2);margin:26px 0 10px}
+  .intro b{color:var(--ink)}
+
+  .v{border-top:1px solid var(--line);padding:34px 0 8px}
+  .v .n{display:inline-block;background:var(--navy);color:#fff;font-family:'Overpass',sans-serif;font-weight:800;font-size:.75rem;letter-spacing:.05em;padding:4px 12px;border-radius:99px;margin-bottom:12px}
+  .v h2{font-size:clamp(1.3rem,3vw,1.7rem);font-weight:800;color:var(--navy);margin-bottom:14px}
+  .v h3{font-size:.82rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--orange);margin:20px 0 6px}
+  .v p{margin-bottom:11px}
+
+  table{border-collapse:collapse;width:100%;margin:14px 0;font-size:.92rem}
+  th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line)}
+  thead th{background:var(--crema);font-family:'Overpass',sans-serif;font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;color:var(--ink2)}
+  td b{color:var(--navy)}
+
+  pre{background:var(--navy2);color:#dfe8ee;border-radius:9px;padding:14px 16px;overflow-x:auto;font-family:ui-monospace,'SFMono-Regular',Menlo,monospace;font-size:.86rem;line-height:1.8;margin:12px 0}
+  code{font-family:ui-monospace,'SFMono-Regular',Menlo,monospace;font-size:.9em;background:var(--crema);padding:1px 5px;border-radius:4px}
+  pre code{background:none;padding:0}
+
+  .fuente{background:var(--crema);border-left:3px solid var(--azul-medio);padding:12px 16px;border-radius:0 8px 8px 0;font-size:.9rem;color:var(--ink2);margin:14px 0}
+  .fuente b{color:var(--navy)}
+  .regla{background:var(--orange-p);border-radius:10px;padding:15px 18px;margin:18px 0 6px;font-size:.97rem}
+  .regla b{font-family:'Overpass',sans-serif;color:#7a4a10;display:block;font-size:.76rem;letter-spacing:.09em;text-transform:uppercase;margin-bottom:5px}
+
+  .cierre{background:linear-gradient(135deg,var(--navy),var(--azul-medio));color:#fff;border-radius:14px;padding:28px;margin:40px 0 10px}
+  .cierre h2{color:#fff;font-size:1.35rem;margin-bottom:14px}
+  .cierre ul{list-style:none;display:flex;flex-direction:column;gap:9px;margin:14px 0}
+  .cierre li{color:#c9d8e3;font-size:.94rem;display:grid;grid-template-columns:26px 1fr;gap:9px}
+  .cierre li b{color:var(--orange-d);font-family:'Overpass',sans-serif}
+  .cierre .punch{font-family:'Overpass',sans-serif;font-weight:800;font-size:1.18rem;margin-top:18px}
+
+  .modulos{border:1px solid var(--line);border-radius:12px;padding:22px;margin:34px 0 0}
+  .modulos h2{font-size:1.15rem;color:var(--navy);margin-bottom:6px}
+  .modulos p.m{font-size:.9rem;color:var(--ink2);margin-bottom:12px}
+  .cta{display:inline-block;margin-top:14px;background:var(--orange);color:#fff;font-family:'Overpass',sans-serif;font-weight:800;font-size:.92rem;padding:12px 22px;border-radius:10px;text-decoration:none}
+  .cta:hover{background:var(--orange-d)}
+
+  footer{background:var(--navy2);color:#8fa2b3;padding:32px 0;font-size:.8rem;text-align:center;line-height:1.7;margin-top:40px}
+  footer a{color:var(--orange-d)}
+  .disc{max-width:48rem;margin:0 auto 12px;font-size:.77rem;color:#7f93a4}
+
+  #lock{position:fixed;inset:0;background:rgba(10,27,43,.96);z-index:50;display:flex;align-items:center;justify-content:center;padding:20px}
+  #lock[hidden]{display:none}
+  #lock .box{background:#fff;border-radius:14px;padding:26px;max-width:400px;text-align:center}
+  #lock h2{font-size:1.1rem;color:var(--navy);margin-bottom:8px}
+  #lock p{font-size:.9rem;color:var(--ink2);margin-bottom:16px}
+  #lock a{display:block;padding:13px;border-radius:10px;background:var(--orange);color:#fff;font-family:'Overpass',sans-serif;font-weight:800;text-decoration:none}
+</style>
+
+<style>
+  .sec{border-top:1px solid var(--line);padding:32px 0 8px}
+  .sec .n{display:inline-block;background:var(--navy);color:#fff;font-family:'Overpass',sans-serif;font-weight:800;font-size:.75rem;letter-spacing:.05em;padding:4px 12px;border-radius:99px;margin-bottom:12px}
+  .sec h2{font-size:clamp(1.25rem,3vw,1.6rem);font-weight:800;color:var(--navy);margin-bottom:8px}
+  .sec h3{font-size:.8rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--orange);margin:18px 0 6px}
+  .sec p{margin-bottom:10px}
+  .aviso{background:#fdf0ee;border-left:3px solid #c0442e;padding:12px 16px;border-radius:0 8px 8px 0;font-size:.9rem;margin:14px 0}
+  .aviso b{color:#8f2f1e;font-family:'Overpass',sans-serif;display:block;font-size:.74rem;letter-spacing:.09em;text-transform:uppercase;margin-bottom:5px}
+  .lee{display:inline-block;font-family:'Overpass',sans-serif;font-weight:800;font-size:.68rem;letter-spacing:.06em;padding:3px 9px;border-radius:99px;margin-left:8px;vertical-align:middle}
+  .lee.solo{background:#e2f0e9;color:#146b48}
+  .lee.escribe{background:#fbf0da;color:#7a4a10}
+  .indice{background:var(--crema);border-radius:12px;padding:20px 24px;margin:26px 0}
+  .indice h2{font-size:.8rem;letter-spacing:.09em;text-transform:uppercase;color:var(--ink2);margin-bottom:12px}
+  .indice ol{margin:0;padding-left:20px;font-size:.95rem}
+  .indice li{margin-bottom:8px}
+  .indice a{color:var(--navy);text-decoration:none}
+  .indice a:hover{text-decoration:underline}
+</style>
+
+</head>
+<body>
+
+<div id="lock" hidden><div class="box">
+  <h2>🔒 Acceso al pack</h2>
+  <p>Es gratis. Déjanos tus datos y entras de inmediato — sin esperar correos.</p>
+  <a id="lockBtn" href="./index.html">Registrarme y entrar</a>
+</div></div>
+
+<div class="top"><div class="wrap">
+  <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04bbc1fa8afa3be0bb00d8.png" alt="Design Modeling Academy">
+  <div class="eyebrow">Pack starter · Design Modeling Academy</div>
+  <h1>Cinco scripts de Dynamo, comentados por dentro</h1>
+  <p>Cinco cosas que hoy haces a mano y que se resuelven en un clic. Con el código explicado para que puedas cambiarlo, no solo ejecutarlo.</p>
+</div></div>
+
+<div class="fuentes"><div class="wrap">
+  <b>Tres de los cinco solo leen.</b> No tocan el modelo y puedes correrlos sin miedo en un archivo vivo. Los otros dos sí escriben, y los dos traen simulacro encendido por defecto.
+</div></div>
+
+<main><div class="wrap">
+
+  <p class="intro">La automatización en BIM casi nunca se atasca por falta de ideas. Se atasca en el primer script: abrir Dynamo, poner un nodo de Python y que no reviente. Este pack es ese primer script, cinco veces.</p>
+
+  <p class="intro">Están comentados por dentro a propósito. Un script que solo ejecutas es una caja negra más; uno que entiendes es el punto de partida del siguiente, que ya escribes tú.</p>
+
+  <div class="indice">
+    <h2>Los cinco</h2>
+    <ol>
+      <li><a href="#s1">Auditoría de advertencias → CSV</a> — solo lee</li>
+      <li><a href="#s2">Elementos duplicados en el mismo sitio</a> — solo lee</li>
+      <li><a href="#s3">Renombrar vistas en lote</a> — <b>modifica el modelo</b></li>
+      <li><a href="#s4">Vistas que no están en ninguna hoja</a> — solo lee</li>
+      <li><a href="#s5">Rellenar un parámetro en lote</a> — <b>modifica el modelo</b></li>
+    </ol>
+  </div>
+
+  <section class="sec" id="instalar">
+    <div class="n">ANTES DE NADA</div>
+    <h2>Cómo se instalan (5 minutos)</h2>
+    <h3>1 · Abre Dynamo</h3>
+    <p>En Revit: pestaña <b>Manage → Dynamo</b>. Crea un archivo nuevo.</p>
+    <h3>2 · Pon un nodo de Python</h3>
+    <p>En la biblioteca de la izquierda, busca <b>Python Script</b> y arrástralo al lienzo.</p>
+    <h3>3 · Pega el código</h3>
+    <p>Doble clic en el nodo, borra lo que trae dentro, y pega el contenido del <code>.py</code> que quieras usar. Guarda.</p>
+    <h3>4 · Conecta las entradas</h3>
+    <p>Cada script dice en su cabecera qué espera en <code>IN[0]</code>, <code>IN[1]</code>… Añade puertos al nodo con el <b>+</b> y conéctale lo que pide. El nodo <b>Code Block</b> sirve para escribir textos y valores sueltos.</p>
+    <h3>5 · Ejecuta</h3>
+    <p>Con Dynamo en <b>Manual</b>, pulsa Run. En Automatic el grafo se recalcula solo cada vez que tocas algo, y eso con un script que escribe en el modelo no es lo que quieres.</p>
+
+    <div class="aviso">
+      <b>Antes de correr los que escriben</b>
+      Guarda el proyecto. Los dos scripts que modifican el modelo (03 y 05) traen el simulacro encendido por defecto justo para que la primera vez no cambies nada — pero guardar antes cuesta dos segundos y es la única red que funciona siempre.
+    </div>
+  </section>
+
+
+  <section class="sec" id="s1">
+    <div class="n">SCRIPT 01</div>
+    <h2>Auditoría de advertencias → CSV<span class="lee solo">SOLO LEE</span></h2>
+    <h3>Qué hace</h3><p>Saca todas las advertencias del modelo a un CSV con su texto, su gravedad y los ID de los elementos que las causan.</p>
+    <h3>Por qué está en el pack</h3><p>El cuadro de advertencias de Revit no se puede ordenar, ni filtrar, ni pasarle a nadie. En CSV sí. Y un modelo con 400 avisos sin leer no es un modelo grande: es un presupuesto con 400 sorpresas dentro.</p>
+    <h3>Lo que conviene saber antes de correrlo</h3><p>El CSV sale en UTF-8 con BOM. Sin el BOM, Excel en Windows abre los acentos rotos y parece que el script falló.</p>
+  </section>
+
+  <section class="sec" id="s2">
+    <div class="n">SCRIPT 02</div>
+    <h2>Elementos duplicados en el mismo sitio<span class="lee solo">SOLO LEE</span></h2>
+    <h3>Qué hace</h3><p>Encuentra elementos idénticos superpuestos exactamente: mismo tipo, misma posición. Devuelve los ID para que los selecciones.</p>
+    <h3>Por qué está en el pack</h3><p>Es el error que más caro sale, porque no se ve. Los planos salen bien. El cuadro de cantidades cuenta el doble. Nadie se entera hasta que alguien presupuesta con ese número.</p>
+    <h3>Lo que conviene saber antes de correrlo</h3><p>No borra nada, y es a propósito: puede haber duplicados legítimos y solo tú sabes cuál de los dos conservar. Apunta la cantidad del cuadro antes de borrar; si después no bajó en el número exacto que borraste, pasó algo más.</p>
+  </section>
+
+  <section class="sec" id="s3">
+    <div class="n">SCRIPT 03</div>
+    <h2>Renombrar vistas en lote<span class="lee escribe">MODIFICA EL MODELO</span></h2>
+    <h3>Qué hace</h3><p>Busca y reemplaza en el nombre de muchas vistas de golpe, con prefijo opcional.</p>
+    <h3>Por qué está en el pack</h3><p>Renombrar 200 vistas a mano es media tarde. Y los nombres de vista salen impresos en los cajetines, así que la nomenclatura no es un capricho interno.</p>
+    <h3>Lo que conviene saber antes de correrlo</h3><p>Trae simulacro y viene encendido por defecto. Córrelo primero con IN[4]=True y lee la lista: el simulacro recorre exactamente el mismo camino que la ejecución real, así que lo que ves es lo que se va a aplicar.</p>
+  </section>
+
+  <section class="sec" id="s4">
+    <div class="n">SCRIPT 04</div>
+    <h2>Vistas que no están en ninguna hoja<span class="lee solo">SOLO LEE</span></h2>
+    <h3>Qué hace</h3><p>Lista las vistas del proyecto que no se colocaron en ninguna hoja.</p>
+    <h3>Por qué está en el pack</h3><p>Sirve para dos cosas, y la segunda importa más: limpiar el archivo, y detectar lo que falta por entregar. Una vista trabajada que no está en ninguna hoja suele ser una vista que alguien olvidó colocar.</p>
+    <h3>Lo que conviene saber antes de correrlo</h3><p>Excluye plantillas, tablas y navegadores, que nunca van en hojas. Si no se excluyeran, la lista saldría llena de ruido y nadie la leería — que es peor que no tenerla.</p>
+  </section>
+
+  <section class="sec" id="s5">
+    <div class="n">SCRIPT 05</div>
+    <h2>Rellenar un parámetro en lote<span class="lee escribe">MODIFICA EL MODELO</span></h2>
+    <h3>Qué hace</h3><p>Escribe el mismo valor en un parámetro de muchos elementos: Comentarios, Marca, códigos de clasificación, cualquier parámetro de proyecto.</p>
+    <h3>Por qué está en el pack</h3><p>Es la tarea repetitiva más común de todas y la que más se hace a mano sin necesidad.</p>
+    <h3>Lo que conviene saber antes de correrlo</h3><p>El simulacro te dice cuántos elementos NO tienen ese parámetro y cuántos lo tienen de solo lectura. Esos dos números son los que de verdad quieres ver antes de escribir en 800 elementos.</p>
+  </section>
+
+  <section class="sec" id="version">
+    <div class="n">COMPATIBILIDAD</div>
+    <h2>Qué versión de Dynamo y de Python</h2>
+    <p>Los cinco están escritos para funcionar igual en el motor viejo de Dynamo (<b>IronPython 2</b>) y en el actual (<b>CPython 3</b>). Es la razón de que verás <code>u'%s' % x</code> en vez de <code>unicode(x)</code>: esa función no existe en Python 3, y usarla haría que el script reventara en Revit 2023 en adelante.</p>
+    <p>Si tu Dynamo te pregunta qué motor usar, cualquiera de los dos vale.</p>
+    <div class="aviso">
+      <b>Si algo falla</b>
+      El nodo de Python en rojo te da el mensaje y la línea. Los dos fallos más comunes son: el motor de Python no está instalado (Dynamo te ofrece instalarlo), y las entradas <code>IN[…]</code> no están todas conectadas. Escríbenos con el mensaje literal y te decimos.
+    </div>
+  </section>
+
+  <div class="cierre">
+    <h2>Lo que estos cinco tienen en común</h2>
+    <ul>
+      <li><b>1</b> Ninguno inventa nada: los cinco atacan una tarea que ya haces, y que haces a mano.</li>
+      <li><b>2</b> Tres solo leen. Ese es el sitio por donde se empieza a automatizar sin arriesgar.</li>
+      <li><b>3</b> Los dos que escriben traen simulacro, y el simulacro recorre el mismo camino que la ejecución real.</li>
+      <li><b>4</b> Están comentados para que los cambies. El objetivo no es que ejecutes estos cinco: es que el sexto lo escribas tú.</li>
+    </ul>
+    <p class="punch">Automatizar no es saber programar. Es saber qué tarea tuya se repite, y eso ya lo sabes.</p>
+  </div>
+
+  <div class="modulos">
+    <h2>Dónde sigue esto</h2>
+    <p class="m">Este pack es la puerta. Decidir <i>qué</i> se automatiza y qué no en el flujo de un equipo —no solo en el tuyo— es lo que cubre el módulo de BIM + IA del Máster.</p>
+    <a class="cta" href="https://designmodelingacademy.com" target="_blank" rel="noopener">Ver el Máster Internacional BIM + IA →</a>
+  </div>
+
+</div></main>
+
+<footer><div class="wrap">
+  <p class="disc"><b>Scripts educativos.</b> Se entregan tal cual, para aprender y adaptar. Pruébalos siempre en una copia del proyecto antes de usarlos en un archivo de producción. Los que modifican el modelo traen simulacro: úsalo. No sustituyen el criterio ni la responsabilidad del profesional que firma el proyecto. No es una certificación ni un diploma.</p>
+  <p>Design Modeling Academy · <a href="https://www.dgdesignmodeling.com" target="_blank" rel="noopener">dgdesignmodeling.com</a></p>
+</div></footer>
+
+<script>
+const REQUIERE_REGISTRO = true;
+const TOKEN_ACCESO = 'dm2026';
+const URL_LANDING  = './index.html';
+(function candado(){
+  if(!REQUIERE_REGISTRO) return;
+  const p = new URLSearchParams(location.search);
+  if(p.get('acceso') === TOKEN_ACCESO){ try{localStorage.setItem('dm_dynamo_acceso', TOKEN_ACCESO);}catch(e){} return; }
+  try{ if(localStorage.getItem('dm_dynamo_acceso') === TOKEN_ACCESO) return; }catch(e){}
+  document.getElementById('lock').hidden = false;
+  document.getElementById('lockBtn').href = URL_LANDING;
+})();
+</script>
+</body>
+</html>
