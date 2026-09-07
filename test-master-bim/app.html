@@ -115,6 +115,7 @@ const CFG = {
     perfil:     'perfil_tecnico',
     modulo:     'modulo_recomendado',
     codigo:     'codigo_diagnostico',
+    enlace:     'enlace_resultado',
     detalle:    'detalle_diagnostico',
     puntajes:   'puntajes_bloques',
   },
@@ -123,12 +124,6 @@ const CFG = {
 /* ─────────────────────────────────────────────────────────────────────────
    Estado
    ───────────────────────────────────────────────────────────────────────── */
-const TODAS = [];
-BLOQUES.forEach((b,bi) => b.preguntas.forEach((p,pi) =>
-  TODAS.push({ texto:p, tipo:'bloque', idx:bi, grupo:b.nivel })));
-EJES.forEach((e,ei) => e.preguntas.forEach((p,pi) =>
-  TODAS.push({ texto:p, tipo:'eje', idx:ei, grupo:e.nombre })));
-
 const R = new Array(TODAS.length).fill(null);
 let cursor = 0;
 
@@ -141,48 +136,6 @@ const CONTACTO = {
   nombre: Q.get('nombre') || '',
   email:  Q.get('email')  || '',
 };
-
-/* ─────────────────────────────────────────────────────────────────────────
-   Cálculo
-   ───────────────────────────────────────────────────────────────────────── */
-function calcular(){
-  const bloques = BLOQUES.map((b,i) => {
-    const pts = TODAS.reduce((s,q,qi) =>
-      s + (q.tipo==='bloque' && q.idx===i ? (R[qi]||0) : 0), 0);
-    const max = b.preguntas.length * 3;
-    return { ...b, pts, max, pct: pts/max, dominado: pts/max >= UMBRAL };
-  });
-
-  /* Nivel = último bloque dominado SIN saltos. Quien domina B1 y B3 pero no
-     B2 no es BIM Manager: es un Modelador con piezas sueltas, y decirle otra
-     cosa al asesor le hace perder la llamada. */
-  let nivel = 0;
-  for(let i=0;i<bloques.length;i++){ if(bloques[i].dominado) nivel = i+1; else break; }
-
-  /* Bloques dominados por encima del nivel: conocimiento disperso. Es una
-     señal útil, no un nivel. */
-  const dispersos = bloques.filter((b,i) => b.dominado && i >= nivel);
-
-  const ejes = EJES.map((e,i) => {
-    const pts = TODAS.reduce((s,q,qi) =>
-      s + (q.tipo==='eje' && q.idx===i ? (R[qi]||0) : 0), 0);
-    const max = e.preguntas.length * 3;
-    return { ...e, pts, max, pct: pts/max, base: pts/max >= UMBRAL_EJE };
-  });
-
-  const est = ejes[0], arq = ejes[1];
-  let perfil, perfilCorto;
-  if(est.base && arq.base){ perfil='Perfil mixto: estructuras y arquitectura'; perfilCorto='MIXTO'; }
-  else if(est.base){        perfil='Base en cálculo y diseño estructural';     perfilCorto='EST'; }
-  else if(arq.base){        perfil='Base en arquitectura y edificación';       perfilCorto='ARQ'; }
-  else {                    perfil='Base técnica por consolidar';              perfilCorto='BASE'; }
-
-  const siguiente = nivel < BLOQUES.length ? BLOQUES[nivel] : null;
-  const codigo = `${nivel===0?'B0':BLOQUES[nivel-1].id}-${perfilCorto}-${
-    Math.round(bloques.reduce((s,b)=>s+b.pts,0) / bloques.reduce((s,b)=>s+b.max,0) * 100)}`;
-
-  return { bloques, nivel, dispersos, ejes, est, arq, perfil, perfilCorto, siguiente, codigo };
-}
 
 /* ─────────────────────────────────────────────────────────────────────────
    Pantallas
@@ -227,7 +180,7 @@ function avanzar(){
 }
 
 function pintarResultado(){
-  const r = calcular();
+  const r = calcular(R);
 
   /* DECISIÓN COMERCIAL, 7-sep: el resultado NO se muestra aquí.
    *
@@ -315,11 +268,19 @@ function guionAsesor(r){
 
 function entregar(r){
   const cont = document.getElementById('envio');
+  /* El enlace del panel: lleva las 20 respuestas dentro, así que no depende
+     de ninguna base de datos y no puede quedarse huérfano. Es lo que el asesor
+     abre y comparte en pantalla durante la llamada. */
+  const enlace = new URL('resultado.html', location.href);
+  enlace.searchParams.set('r', empaquetar(R));
+  if(CONTACTO.nombre) enlace.searchParams.set('n', CONTACTO.nombre);
+
   const datos = {
     [CFG.CAMPOS.nivel]:    r.nivel===0 ? 'En camino a Modelador BIM' : BLOQUES[r.nivel-1].nivel,
     [CFG.CAMPOS.perfil]:   r.perfil,
     [CFG.CAMPOS.modulo]:   r.siguiente ? r.siguiente.modulo : 'Ruta completa',
     [CFG.CAMPOS.codigo]:   r.codigo,
+    [CFG.CAMPOS.enlace]:   enlace.toString(),
     [CFG.CAMPOS.detalle]:  detalleTexto(r),
     [CFG.CAMPOS.puntajes]: r.bloques.map(b=>`${b.id}:${b.pts}/${b.max}`).join(' ')
                            + ' | ' + r.ejes.map(e=>`${e.id}:${e.pts}/${e.max}`).join(' '),

@@ -93,3 +93,64 @@ const EJES = [
  * es justo la que el asesor necesita antes de la llamada. */
 const UMBRAL = 0.70;
 const UMBRAL_EJE = 0.60;   // 6 de 9 en un eje técnico = base real
+
+
+/* ─────────────────────────────────────────────────────────────────────────
+   EL CÁLCULO VIVE AQUÍ, no en cada página.
+   Lo usan el test (app.html) y el panel del asesor (resultado.html). Si cada
+   uno tuviera su copia, tarde o temprano dirían cosas distintas del mismo
+   alumno — y el peor sitio para descubrirlo es delante del cliente.
+   ───────────────────────────────────────────────────────────────────────── */
+
+/* Lista plana de las 20 preguntas, en el orden en que se responden. */
+const TODAS = [];
+BLOQUES.forEach((b,bi) => b.preguntas.forEach(t =>
+  TODAS.push({ texto:t, tipo:'bloque', idx:bi, grupo:b.nivel })));
+EJES.forEach((e,ei) => e.preguntas.forEach(t =>
+  TODAS.push({ texto:t, tipo:'eje', idx:ei, grupo:e.nombre })));
+
+function calcular(R){
+  const bloques = BLOQUES.map((b,i) => {
+    const pts = TODAS.reduce((s,q,qi) =>
+      s + (q.tipo==='bloque' && q.idx===i ? (R[qi]||0) : 0), 0);
+    const max = b.preguntas.length * 3;
+    return { ...b, pts, max, pct: pts/max, dominado: pts/max >= UMBRAL };
+  });
+
+  /* Nivel = último bloque dominado SIN saltos. Quien domina B1 y B3 pero no
+     B2 no es BIM Manager: es un Modelador con piezas sueltas, y decirle otra
+     cosa al asesor le hace perder la llamada. */
+  let nivel = 0;
+  for(let i=0;i<bloques.length;i++){ if(bloques[i].dominado) nivel = i+1; else break; }
+  const dispersos = bloques.filter((b,i) => b.dominado && i >= nivel);
+
+  const ejes = EJES.map((e,i) => {
+    const pts = TODAS.reduce((s,q,qi) =>
+      s + (q.tipo==='eje' && q.idx===i ? (R[qi]||0) : 0), 0);
+    const max = e.preguntas.length * 3;
+    return { ...e, pts, max, pct: pts/max, base: pts/max >= UMBRAL_EJE };
+  });
+
+  const [est, arq] = ejes;
+  let perfil, perfilCorto;
+  if(est.base && arq.base){ perfil='Perfil mixto: estructuras y arquitectura'; perfilCorto='MIXTO'; }
+  else if(est.base){        perfil='Base en cálculo y diseño estructural';     perfilCorto='EST'; }
+  else if(arq.base){        perfil='Base en arquitectura y edificación';       perfilCorto='ARQ'; }
+  else {                    perfil='Base técnica por consolidar';              perfilCorto='BASE'; }
+
+  const siguiente = nivel < BLOQUES.length ? BLOQUES[nivel] : null;
+  const global = Math.round(bloques.reduce((s,b)=>s+b.pts,0) /
+                            bloques.reduce((s,b)=>s+b.max,0) * 100);
+  const codigo = `${nivel===0?'B0':BLOQUES[nivel-1].id}-${perfilCorto}-${global}`;
+  const nombreNivel = nivel===0 ? 'En camino a Modelador BIM' : BLOQUES[nivel-1].nivel;
+
+  return { bloques, nivel, nombreNivel, dispersos, ejes, est, arq,
+           perfil, perfilCorto, siguiente, global, codigo };
+}
+
+/* Las 20 respuestas caben en 20 caracteres: es lo que viaja en el enlace que
+   el asesor abre en la llamada. Sin base de datos y sin backend — el enlace
+   ES el dato, así que no puede caducar ni quedarse huérfano. */
+const empaquetar   = R => R.map(v => (v===null?0:v)).join('');
+const desempaquetar = s => (s||'').split('').slice(0, TODAS.length)
+                             .map(c => Math.max(0, Math.min(3, +c || 0)));

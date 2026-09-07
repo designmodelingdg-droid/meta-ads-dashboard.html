@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Perfil BIM · Design Modeling Academy</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@600;700;800;900&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#003e5c; --navy2:#001e30; --azul:#0a5a80;
+    --orange:#ca7520; --orange-d:#e8a04a; --orange-p:#f7e8cc;
+    --card:#fff; --ink:#28323c; --ink2:#5a6b7b; --line:#e5e7eb; --suave:#f4f7fa;
+    --ok:#1e9e6a; --ok-s:#e4f6ee; --no:#c2410c; --no-s:#fdefe6;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{background:var(--navy2)}
+  body{font-family:'Nunito',system-ui,sans-serif;background:var(--suave);color:var(--ink);
+    padding:0 0 60px;line-height:1.6}
+  h1,h2,h3,h4{font-family:'Overpass',sans-serif}
+  .wrap{max-width:840px;margin:0 auto;padding:0 18px}
+
+  /* ── cabecera ── */
+  .top{background:linear-gradient(135deg,var(--navy2),var(--navy));color:#fff;padding:34px 0 30px;margin-bottom:26px}
+  .top .eyebrow{font-size:.7rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--orange-d);margin-bottom:10px}
+  .top h1{font-size:clamp(1.5rem,5vw,2.15rem);font-weight:900;line-height:1.15}
+  .top .perfil{display:inline-block;margin-top:14px;background:rgba(232,160,74,.18);
+    border:1px solid rgba(232,160,74,.45);color:var(--orange-d);font-size:.86rem;font-weight:700;
+    padding:7px 16px;border-radius:99px}
+  .top .quien{font-size:.9rem;color:#a8c3d6;margin-top:12px}
+
+  section{margin-bottom:28px}
+  h2{font-size:.74rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase;
+    color:var(--ink2);margin-bottom:14px;padding-bottom:9px;border-bottom:1px solid var(--line)}
+  .card{background:var(--card);border-radius:13px;padding:20px;box-shadow:0 2px 10px rgba(0,62,92,.06)}
+
+  /* ── escalera de niveles ── */
+  .esc{display:grid;gap:9px}
+  .paso{display:grid;grid-template-columns:34px 1fr 84px;gap:14px;align-items:center;
+    background:var(--card);border-radius:11px;padding:13px 15px;border:1px solid var(--line)}
+  .paso.hecho{border-color:#bfe6d5;background:#f4fbf8}
+  .paso.actual{border-color:var(--orange);background:#fffaf3;box-shadow:0 3px 14px rgba(202,117,32,.13)}
+  .paso .n{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;
+    font-family:'Overpass',sans-serif;font-weight:900;font-size:.92rem;background:#e7edf2;color:var(--ink2)}
+  .paso.hecho .n{background:var(--ok);color:#fff}
+  .paso.actual .n{background:var(--orange);color:#fff}
+  .paso h3{font-size:1rem;color:var(--navy)}
+  .paso small{color:var(--ink2);font-size:.8rem;display:block}
+  .paso .pct{text-align:right;font-weight:800;font-size:1.02rem;color:var(--navy);
+    font-variant-numeric:tabular-nums}
+  .paso .pct small{font-weight:600;font-size:.72rem;color:var(--ink2)}
+  .marca{font-size:.68rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;
+    padding:3px 8px;border-radius:99px;display:inline-block;margin-top:3px}
+  .marca.ok{background:var(--ok-s);color:var(--ok)}
+  .marca.no{background:var(--no-s);color:var(--no)}
+
+  /* ── base técnica ── */
+  .ejes{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+  @media(max-width:600px){.ejes{grid-template-columns:1fr}}
+  .eje{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:16px}
+  .eje h3{font-size:.95rem;color:var(--navy);margin-bottom:5px}
+  .eje .num{font-family:'Overpass',sans-serif;font-weight:900;font-size:1.75rem;color:var(--navy);
+    font-variant-numeric:tabular-nums}
+  .eje .num span{font-size:.9rem;color:var(--ink2);font-weight:700}
+  .bar{height:7px;background:#e7edf2;border-radius:99px;overflow:hidden;margin:9px 0 8px}
+  .bar i{display:block;height:100%;border-radius:99px;background:var(--orange-d)}
+  .eje.si .bar i{background:var(--ok)}
+
+  /* ── respuestas ── */
+  .grupo{margin-bottom:18px}
+  .grupo h4{font-size:.82rem;color:var(--navy);margin-bottom:8px;font-weight:800}
+  .r{display:grid;grid-template-columns:1fr auto;gap:14px;align-items:start;
+    padding:9px 0;border-bottom:1px dashed var(--line);font-size:.9rem}
+  .r:last-child{border-bottom:0}
+  .r .v{font-size:.76rem;font-weight:800;padding:3px 9px;border-radius:99px;white-space:nowrap}
+  .v0{background:#fdefe6;color:var(--no)}
+  .v1{background:#fdf6e3;color:#a16207}
+  .v2{background:#e8f2fb;color:#1d5b8f}
+  .v3{background:var(--ok-s);color:var(--ok)}
+
+  .reco{background:linear-gradient(135deg,var(--navy),var(--azul));color:#fff;border-radius:13px;padding:22px}
+  .reco h3{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--orange-d);margin-bottom:9px}
+  .reco .big{font-family:'Overpass',sans-serif;font-size:1.35rem;font-weight:900;line-height:1.3;margin-bottom:9px}
+  .reco p{font-size:.93rem;color:#dbe6ef}
+  .reco .meta{margin-top:13px;font-size:.85rem;color:#a8c3d6}
+  .nota{background:#fff7ec;border-left:3px solid var(--orange);border-radius:0 9px 9px 0;
+    padding:13px 16px;margin-top:14px;font-size:.9rem}
+  .nota b{color:var(--navy)}
+  .pie{text-align:center;color:var(--ink2);font-size:.8rem;margin-top:26px}
+  .vacio{text-align:center;padding:60px 20px;color:var(--ink2)}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script src="preguntas.js"></script>
+<script>
+const Q = new URLSearchParams(location.search);
+const cadena = Q.get('r') || '';
+const nombre = (Q.get('n') || '').trim();
+const app = document.getElementById('app');
+
+if(cadena.length < TODAS.length){
+  app.innerHTML = `<div class="vacio"><h1 style="color:#003e5c">Falta el resultado</h1>
+    <p style="margin-top:10px">Este enlace no trae las respuestas del diagnóstico.
+    Ábrelo desde el campo <b>enlace_resultado</b> de la ficha del contacto.</p></div>`;
+} else {
+  pintar(calcular(desempaquetar(cadena)));
+}
+
+function pintar(r){
+  const R = desempaquetar(cadena);
+  const pct = n => Math.round(n*100);
+
+  const escalera = r.bloques.map((b,i) => {
+    const estado = b.dominado ? 'hecho' : (i === r.nivel ? 'actual' : '');
+    return `<div class="paso ${estado}">
+      <div class="n">${i+1}</div>
+      <div>
+        <h3>${b.nivel}</h3>
+        <small>${b.modulo} · ${b.meses}</small>
+        <span class="marca ${b.dominado?'ok':'no'}">${b.dominado?'Dominado':(i===r.nivel?'Tu siguiente paso':'Por delante')}</span>
+      </div>
+      <div class="pct">${pct(b.pct)}%<br><small>${b.pts} de ${b.max}</small></div>
+    </div>`;
+  }).join('');
+
+  const ejes = r.ejes.map(e => `
+    <div class="eje ${e.base?'si':''}">
+      <h3>${e.nombre}</h3>
+      <div class="num">${e.pts}<span> de ${e.max}</span></div>
+      <div class="bar"><i style="width:${pct(e.pct)}%"></i></div>
+      <span class="marca ${e.base?'ok':'no'}">${e.base?'Base sólida':'Sin consolidar'}</span>
+    </div>`).join('');
+
+  /* Las 20 respuestas, agrupadas. Es la prueba: el asesor no afirma nada que
+     la persona no haya dicho de sí misma dos minutos antes. */
+  const grupos = {};
+  TODAS.forEach((q,i) => {
+    (grupos[q.grupo] = grupos[q.grupo] || []).push({ ...q, v:R[i] });
+  });
+  const respuestas = Object.entries(grupos).map(([g,qs]) => `
+    <div class="grupo">
+      <h4>${g}</h4>
+      ${qs.map(q => `<div class="r"><span>${q.texto}</span>
+        <span class="v v${q.v}">${OPCIONES[q.v].t}</span></div>`).join('')}
+    </div>`).join('');
+
+  const disperso = r.dispersos.length ? `
+    <div class="nota"><b>Tienes piezas por encima de tu nivel</b> en
+      ${r.dispersos.map(b=>b.nivel).join(' y ')}. No cuentan como nivel porque hay un escalón
+      sin cerrar debajo, pero acortan el camino: ya no partes de cero en esa parte.</div>` : '';
+
+  const reco = r.siguiente ? `
+    <div class="reco">
+      <h3>Por dónde entrar</h3>
+      <p class="big">${r.siguiente.modulo}</p>
+      <p>${r.nivel===0
+        ? 'Es el punto de partida: te da el criterio para modelar un proyecto completo y responder por él.'
+        : `Ya cierras ${r.bloques[r.nivel-1].nivel}. Este es el escalón que sigue, y es el que te falta para que el siguiente tenga sentido.`}</p>
+      <div class="meta">${r.siguiente.meses} · Microcredencial de ${r.siguiente.credencial}, avalada por el Silicon Valley Futures Institute.</div>
+    </div>`
+    : `<div class="reco"><h3>Por dónde entrar</h3>
+        <p class="big">Cubres la ruta completa</p>
+        <p>Los cuatro niveles salen dominados. La conversación no es por dónde empezar, sino qué profundizar.</p></div>`;
+
+  app.innerHTML = `
+    <div class="top"><div class="wrap">
+      <p class="eyebrow">Máster Internacional BIM + IA · Diagnóstico</p>
+      <h1>${nombre ? nombre+', tu nivel es ' : 'Nivel: '}${r.nombreNivel}</h1>
+      <span class="perfil">${r.perfil}</span>
+      <p class="quien">20 competencias evaluadas · ${r.global}% de dominio global · Código ${r.codigo}</p>
+    </div></div>
+
+    <div class="wrap">
+      <section>
+        <h2>Los cuatro niveles de la ruta</h2>
+        <div class="esc">${escalera}</div>
+        ${disperso}
+      </section>
+
+      <section>
+        <h2>Tu base técnica</h2>
+        <div class="ejes">${ejes}</div>
+      </section>
+
+      <section>${reco}</section>
+
+      <section>
+        <h2>Lo que respondiste, una por una</h2>
+        <div class="card">${respuestas}</div>
+      </section>
+
+      <p class="pie">Design Modeling Academy · Este perfil sale de tus propias respuestas
+        del ${new Date().toLocaleDateString('es-EC',{day:'numeric',month:'long',year:'numeric'})}.</p>
+    </div>`;
+}
+</script>
+</body>
+</html>
