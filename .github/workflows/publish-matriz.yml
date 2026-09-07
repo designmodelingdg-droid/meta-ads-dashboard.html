@@ -81,6 +81,10 @@ jobs:
           # asistencia. Cualquiera puede adivinar la URL.
           cp -r test-master-bim public/test-master-bim
           rm -rf public/test-master-bim/GUIA-MONTAJE.md public/test-master-bim/prueba
+          # OJO: este rm solo evita SUBIRLO. Como publicamos con
+          # keep_files: true, lo que ya esta en gh-pages no se borra solo.
+          # Si algun dia hay que retirar un archivo ya publicado, hay que
+          # borrarlo a mano de la rama gh-pages. Aqui paso con esta guia.
           # Hub: todos los recursos gratuitos en un solo sitio
           cp -r recursos public/recursos
           # Lead magnet: guia de las 5 verificaciones + verificador de eficiencia
