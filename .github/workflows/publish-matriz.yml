@@ -26,6 +26,7 @@ on:
       - matriz-viral/matriz/competencia.json
       - calculadora-zapatas/**
       - test-nivel-bim/**
+      - test-master-bim/**
       - recursos/**
       - eficiencia-acero/**
       - tutor-acero/**
@@ -74,6 +75,8 @@ jobs:
           cp -r calculadora-zapatas public/calculadora-zapatas
           # Lead magnet: landing + test de nivel BIM
           cp -r test-nivel-bim public/test-nivel-bim
+          # Diagnostico BIM del Master (lo manda el closer tras agendar)
+          cp -r test-master-bim public/test-master-bim
           # Hub: todos los recursos gratuitos en un solo sitio
           cp -r recursos public/recursos
           # Lead magnet: guia de las 5 verificaciones + verificador de eficiencia
