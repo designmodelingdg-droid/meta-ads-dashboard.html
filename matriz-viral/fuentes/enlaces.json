@@ -1,8 +1,8 @@
 {
- "generado": "2026-09-04",
- "revisadas": 74,
- "caidas": 1,
- "criticas": 0,
+ "generado": "2026-09-07",
+ "revisadas": 78,
+ "caidas": 3,
+ "criticas": 1,
  "resultados": {
   "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/eficiencia-acero/": {
    "codigo": 200,
@@ -139,6 +139,24 @@
    ],
    "critico": null
   },
+  "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/cierre-agosto/img/": {
+   "codigo": 404,
+   "error": null,
+   "aparece_en": [
+    "cierre-agosto/LEEME.md"
+   ],
+   "critico": null
+  },
+  "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/tutor-acero/": {
+   "codigo": 200,
+   "error": null,
+   "aparece_en": [
+    "matriz-viral/entregables/matriz-septiembre-artefacto.html",
+    "matriz-viral/matriz/calendario-septiembre.json",
+    "tutor-acero/MONTAJE-GHL.md"
+   ],
+   "critico": null
+  },
   "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/test-nivel-bim/": {
    "codigo": 200,
    "error": null,
@@ -178,8 +196,8 @@
    "critico": null
   },
   "https://designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero": {
-   "codigo": 200,
-   "error": null,
+   "codigo": null,
+   "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'designmodelingacademy.com'. (_ssl.c:1000)>",
    "aparece_en": [
     "(destino del bot)",
     "eficiencia-acero/guia.html",
@@ -223,8 +241,8 @@
    "critico": null
   },
   "https://designmodelingacademy.com/workshop-dynamo": {
-   "codigo": 404,
-   "error": null,
+   "codigo": null,
+   "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'designmodelingacademy.com'. (_ssl.c:1000)>",
    "aparece_en": [
     ".claude/skills/landing-evento/SKILL.md"
    ],
@@ -587,6 +605,22 @@
     "recursos/index.html"
    ],
    "critico": "enlace roto en la pagina publicada: hub de recursos"
+  },
+  "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/cierre-agosto/img/anuncio-1-experto-bim-3x1.jpg": {
+   "codigo": 200,
+   "error": null,
+   "aparece_en": [
+    "matriz-viral/cierres/2026-08.json"
+   ],
+   "critico": null
+  },
+  "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/cierre-agosto/img/anuncio-2-nave-industrial-30dias.jpg": {
+   "codigo": 200,
+   "error": null,
+   "aparece_en": [
+    "matriz-viral/cierres/2026-08.json"
+   ],
+   "critico": null
   },
   "https://funnel.dgdesignmodeling.com/blog": {
    "codigo": 200,
