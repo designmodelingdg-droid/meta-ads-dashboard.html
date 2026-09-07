@@ -27,6 +27,7 @@ on:
       - calculadora-zapatas/**
       - test-nivel-bim/**
       - test-master-bim/**
+      - guia-revit-ia/**
       - recursos/**
       - eficiencia-acero/**
       - tutor-acero/**
@@ -89,6 +90,9 @@ jobs:
           cp -r recursos public/recursos
           # Lead magnet: guia de las 5 verificaciones + verificador de eficiencia
           cp -r eficiencia-acero public/eficiencia-acero
+          # Lead magnet: guia Revit + ChatGPT (palabra clave GUIA)
+          cp -r guia-revit-ia public/guia-revit-ia
+          rm -rf public/guia-revit-ia/GUIA-MONTAJE.md public/guia-revit-ia/prueba
           # Tutor de IA de la Especializacion en Acero (se embebe en GHL)
           cp -r tutor-acero public/tutor-acero
           # Creativos ganadores del cierre de mes (los usa el mazo de la reunion)
