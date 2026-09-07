@@ -75,8 +75,12 @@ jobs:
           cp -r calculadora-zapatas public/calculadora-zapatas
           # Lead magnet: landing + test de nivel BIM
           cp -r test-nivel-bim public/test-nivel-bim
-          # Diagnostico BIM del Master (lo manda el closer tras agendar)
+          # Diagnostico BIM del Master (lo manda el closer tras agendar).
+          # La guia de montaje y la prueba NO se publican: la guia explica por
+          # que le ocultamos el resultado al alumno y trae cifras internas de
+          # asistencia. Cualquiera puede adivinar la URL.
           cp -r test-master-bim public/test-master-bim
+          rm -rf public/test-master-bim/GUIA-MONTAJE.md public/test-master-bim/prueba
           # Hub: todos los recursos gratuitos en un solo sitio
           cp -r recursos public/recursos
           # Lead magnet: guia de las 5 verificaciones + verificador de eficiencia

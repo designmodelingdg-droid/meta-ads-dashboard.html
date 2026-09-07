@@ -1,5 +1,6 @@
 /* Guía de montaje del Diagnóstico BIM del Máster, en Word para Ester y Aylin.
- * Se escribe desde el markdown para que las dos versiones no se separen.
+ * El texto vive aqui, no en el markdown: si cambias GUIA-MONTAJE.md, cambia
+ * tambien este archivo y vuelve a correrlo, o las dos versiones se separan.
  *   node scripts/build_test_master_docx.js
  */
 const fs=require('fs'), path=require('path');
@@ -63,6 +64,7 @@ push(tabla(['','Test de Nivel BIM (ya existe)','Diagnóstico del Máster (este)'
   ['Qué mide','Nivel BIM','Nivel BIM **+ base técnica**'],
   ['A dónde va el resultado','A ninguna parte: se queda en el navegador','**Al CRM, al contacto que lo hizo**'],
   ['Qué ve la persona al terminar','Su nivel y su ruta','**Nada: se lo da el asesor en la cita**'],
+  ['Qué enseña el asesor','Nada','Un **panel con las 20 respuestas**, en la cita'],
 ],[2000,3400,3800]));
 push(CAJA('El test público calcula el nivel, se lo enseña a la persona y ahí muere: no manda el resultado a ningún sitio. Ese es el agujero que este cierra, y es la razón de que exista.',RED,ALARM));
 
@@ -76,7 +78,7 @@ push(P('Es a propósito: decirle al asesor que tiene delante a un BIM Manager cu
 
 push(H1('El resultado se entrega EN LA LLAMADA, no en la pantalla'));
 push(P('Esta es la decisión que más define el test, y conviene que todo el equipo la diga igual.'));
-push(P('Al terminar, la persona **no ve su nivel ni su perfil**. Ve que el diagnóstico está completo, que ya tenemos su perfil, y que su asesor se lo entrega en la cita.'));
+push(P('Al terminar, la persona **no ve su nivel ni su perfil**. Ve que el diagnóstico está completo, que ya tenemos su perfil, y que su asesor se lo entrega en la cita. El panel del paso 5 existe, está listo y es suyo —pero se abre en la llamada.'));
 push(P('**Por qué.** Si al terminar le decimos «eres Coordinador BIM», la cita pasa a ser opcional: ya tiene lo que vino a buscar. Guardando el resultado, la llamada deja de ser una presentación de ventas y pasa a ser el sitio donde recoge algo que ya es suyo y todavía no ha visto.'));
 push(CAJA('En agosto la asistencia a citas fue del 46,3% contra un objetivo del 80%. Este es uno de los pocos resortes que la mueven sin gastar un dólar más.',GREEN,OK));
 push(H2('Si preguntan por WhatsApp antes de la cita'));
@@ -84,12 +86,13 @@ push(P('No se manda el resultado por escrito. Respuesta sugerida:'));
 push(CAJA('Ya tengo tu perfil aquí delante. Te lo explico en la llamada porque tiene matices —hay cosas que dominas por encima de tu nivel y huecos que se cierran más rápido de lo que parece— y por escrito se malinterpreta. En cinco minutos de llamada lo tienes claro.',NAVY,CODE));
 
 push(H1('PASO 1 · Crear los campos personalizados'));
-push(P('GHL → **Settings → Custom Fields → Add Field**. Seis campos, todos sobre el objeto **Contact**.'));
+push(P('GHL → **Settings → Custom Fields → Add Field**. Siete campos, todos sobre el objeto **Contact**.'));
 push(tabla(['Nombre del campo','Clave (exacta)','Tipo'],[
   ['Nivel BIM','nivel_bim','Texto de una línea'],
   ['Perfil técnico','perfil_tecnico','Texto de una línea'],
   ['Módulo recomendado','modulo_recomendado','Texto de una línea'],
   ['Código de diagnóstico','codigo_diagnostico','Texto de una línea'],
+  ['Enlace del resultado','enlace_resultado','**URL** (o texto de una línea)'],
   ['Detalle del diagnóstico','detalle_diagnostico','**Texto largo**'],
   ['Puntajes por bloque','puntajes_bloques','Texto de una línea'],
 ],[3200,3200,2800]));
@@ -97,7 +100,7 @@ push(CAJA('La clave es lo que importa, no el nombre visible. Si GHL genera una c
 
 push(H1('PASO 2 · Crear el formulario que recibe el resultado'));
 push(P('GHL → **Sites → Forms → New Form**. Nómbralo «Diagnóstico BIM Máster».'));
-push(P('Añade los seis campos del paso 1, **todos ocultos**: la persona ya terminó el test, este formulario solo transporta el dato al CRM.'));
+push(P('Añade los siete campos del paso 1, **todos ocultos**: la persona ya terminó el test, este formulario solo transporta el dato al CRM.'));
 push(P('Publica el formulario y copia su enlace, que se ve así:'));
 push(MONO('https://api.leadconnectorhq.com/widget/form/AbC123XyZ'));
 push(P('Pégalo en **app.html**, en CFG.FORM_GHL, reemplazando PEGAR_ID_DEL_FORMULARIO.'));
@@ -110,19 +113,34 @@ push(MONO(URL+'?cid={{contact.id}}&nombre={{contact.first_name}}&email={{contact
 push(P('Mensaje sugerido, después de agendar:'));
 push(CAJA('Listo [nombre], ya quedó tu cita para el [día] a las [hora].\n\nAntes de la llamada, te paso un diagnóstico de 5 minutos: 20 preguntas sobre lo que sabes hacer en un proyecto. Lo reviso antes de hablar contigo, así no gastamos la cita en que me expliques desde cero por dónde vas.\n\n[link]',NAVY,CODE));
 
-push(H1('PASO 4 · Dónde lo lee el asesor'));
+push(H1('PASO 4 · Lo que el asesor lee antes de llamar'));
 push(P('En la ficha del contacto, en los campos personalizados. El que se lee de un vistazo es **detalle_diagnostico**, que termina con una línea así:'));
 push(MONO('PARA EL ASESOR: Domina hasta Coordinador, viene de cálculo\nestructural. Entrar por BIM Management · GESTIONA.'));
-push(P('Esa frase es el resumen operativo: nivel, de dónde viene y por dónde entrar. Todo lo demás es el respaldo por si la conversación lo pide.'));
+push(P('Esa frase es el resumen operativo: nivel, de dónde viene y por dónde entrar. Se lee en diez segundos, antes de marcar.'));
 push(P('**Recomendado:** añadir esos campos a la vista de la oportunidad en el pipeline de High Tickets, para verlos sin abrir el contacto.'));
+
+push(H1('PASO 5 · El panel que el asesor ENSEÑA en la llamada'));
+push(P('Decir «eres Coordinador BIM» y **enseñarlo** no pesan lo mismo. Por eso el contacto guarda además un campo **enlace_resultado** con una dirección como esta:'));
+push(MONO('.../test-master-bim/resultado.html?r=33333322110000332110&n=Andrea'));
+push(P('El asesor le da clic **durante la llamada** y comparte pantalla. El panel abre con el nombre de la persona y muestra, en este orden:'));
+push(LI('**Su nivel**, con el perfil técnico y el código de diagnóstico.'));
+push(LI('**La escalera de los cuatro niveles**, con el porcentaje de cada uno y cuál es el siguiente escalón.'));
+push(LI('**Los dos ejes técnicos** —estructural y arquitectura— con su barra.'));
+push(LI('**El módulo por el que debería entrar**, con la microcredencial que da.'));
+push(LI('**Las 20 respuestas, una por una**, con lo que contestó en cada competencia.'));
+push(CAJA('Ese último bloque es el que sostiene la conversación. Cuando alguien dice «yo ya sé coordinar», el asesor no discute: baja a la pregunta, le enseña que en «llevo el flujo de información del proyecto» contestó lo hago con ayuda, y la objeción se cae sola. Es la propia respuesta de la persona, no una opinión del vendedor.',GREEN,OK));
+push(P('**Cómo funciona el enlace.** Las 20 respuestas van dentro de la dirección, en esos 20 dígitos del ?r=. No hay base de datos detrás: el enlace no caduca, no se puede quedar huérfano, y si mañana cambiamos de CRM sigue abriendo igual. Cada dígito es una pregunta y vale de 0 a 3.'));
+push(P('**En el panel no hay nada interno.** Ni precios, ni notas del vendedor, ni puntajes crudos. Está pensado para verlo con el cliente delante, así que el asesor puede compartir pantalla sin revisar antes qué sale.'));
+push(CAJA('El enlace NO se manda por WhatsApp antes de la cita. Es lo que se recoge en la llamada; mandarlo antes deshace la razón de haberlo guardado.',RED,ALARM));
 
 push(H1('Comprobar antes de darlo por hecho'));
 push(P('No basta con que el test cargue. Hay que verificar que **el dato llega**:'));
 push(LI('Abre el link **con un cid real** de un contacto de prueba tuyo.'));
 push(LI('Responde las 20 preguntas de cualquier forma.'));
 push(LI('Al terminar debe decir «Listo. Tu asesor ya lo tiene.»'));
-push(LI('**Abre ese contacto en el CRM** y comprueba que los seis campos se llenaron.'));
-push(CAJA('El paso 4 es el que de verdad importa. Los pasos 1 a 3 pueden salir bien y el dato no haber llegado.',RED,ALARM));
+push(LI('**Abre ese contacto en el CRM** y comprueba que los siete campos se llenaron.'));
+push(LI('**Haz clic en enlace_resultado.** Tiene que abrir el panel con el nombre de la persona y las 20 respuestas que acabas de dar.'));
+push(CAJA('Los pasos 4 y 5 son los que de verdad importan. Los pasos 1 a 3 pueden salir bien y el dato no haber llegado a ninguna parte.',RED,ALARM));
 push(H2('Si los campos llegan vacíos'));
 push(P('Quiere decir que el formulario no está tomando los valores de la dirección. Dos cosas que revisar, en este orden:'));
 push(LI('**Que las claves coincidan** exactamente entre CFG.CAMPOS y las claves reales en el CRM. Es la causa más frecuente.'));
@@ -130,7 +148,7 @@ push(LI('**Que el formulario acepte prellenado por URL.** Si tu versión de GHL 
 push(P('Mientras tanto, el test siempre muestra un **código de diagnóstico** —por ejemplo B2-EST-57— que el asesor puede pedir y apuntar a mano. No es la solución, es el paracaídas.'));
 
 push(H1('Lo que hay que saber cuando pregunten'));
-push(P('**No sustituye a la llamada, la prepara.** El test calcula el nivel, el perfil técnico y el módulo por el que debería entrar. Todo eso lo entrega el asesor.'));
+push(P('**No sustituye a la llamada, la prepara.** El test calcula el nivel, el perfil técnico y el módulo por el que debería entrar. Todo eso lo entrega el asesor, enseñando el panel.'));
 push(P('**Nunca dice precios.** Ni del Máster, ni de los módulos, ni de la ruta.'));
 push(P('**Funciona sin el cid.** Si alguien abre el link suelto, el test corre igual y muestra el código; simplemente el resultado no se pega a ningún contacto.'));
 
