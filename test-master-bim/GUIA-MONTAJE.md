@@ -19,6 +19,7 @@ Hay dos tests y **no son el mismo producto**:
 | Cómo llega | Anuncio → landing → formulario | El closer lo manda por WhatsApp tras agendar |
 | Qué mide | Nivel BIM | Nivel BIM **+ base técnica** (estructural o arquitectura) |
 | A dónde va el resultado | A ninguna parte: se queda en el navegador | **Al CRM, al contacto que hizo el test** |
+| Qué ve la persona al terminar | Su nivel y su ruta completa | **Nada de su perfil: se lo da el asesor en la cita** |
 | Para qué sirve | Captar el dato | Que el asesor entre a la llamada sabiendo con quién habla |
 
 El test público no manda el resultado a ningún sitio. Ese es el agujero que
@@ -157,15 +158,37 @@ paracaídas.
 
 ---
 
+## El resultado se entrega EN LA LLAMADA, no en la pantalla
+
+Esta es la decisión que más define el test, y conviene que todo el equipo la
+diga igual.
+
+Al terminar, la persona **no ve su nivel ni su perfil**. Ve que el diagnóstico
+está completo, que ya tenemos su perfil, y que su asesor se lo entrega en la
+cita.
+
+**Por qué.** Si al terminar le decimos «eres Coordinador BIM», la cita pasa a
+ser opcional: ya tiene lo que vino a buscar. Guardando el resultado, la llamada
+deja de ser una presentación de ventas y pasa a ser el sitio donde recoge algo
+que ya es suyo y todavía no ha visto. Sube la asistencia, que en agosto fue del
+46,3% contra un objetivo del 80%.
+
+**Cómo decirlo si preguntan por WhatsApp antes de la cita.** No se manda el
+resultado por escrito, y no porque sea un secreto:
+
+> Ya tengo tu perfil aquí delante. Te lo explico en la llamada porque tiene
+> matices —hay cosas que dominas por encima de tu nivel y huecos que se cierran
+> más rápido de lo que parece— y por escrito se malinterpreta. En cinco minutos
+> de llamada lo tienes claro.
+
+**Lo que sí es suyo desde el primer momento:** el código de diagnóstico que ve
+en pantalla. No dice nada por sí solo, pero le demuestra que hay un resultado
+real esperándolo.
+
 ## Lo que hay que saber cuando pregunten
 
-**No sustituye a la llamada, la prepara.** El test le dice al alumno su nivel y
-su perfil; la ruta, los módulos y el precio son de la conversación con el
-asesor. Está escrito así a propósito.
-
-**El alumno ve su nivel al terminar.** No se le oculta: ver «eres Coordinador
-BIM» es lo que hace que llegue a la cita con ganas. Lo que no ve es la ruta
-completa ni qué módulo comprar.
+**No sustituye a la llamada, la prepara.** El test calcula el nivel, el perfil
+técnico y el módulo por el que debería entrar. Todo eso lo entrega el asesor.
 
 **Nunca dice precios.** Ni del Máster, ni de los módulos, ni de la ruta.
 

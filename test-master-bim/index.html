@@ -88,7 +88,7 @@
     <p class="eyebrow">Máster Internacional BIM + IA</p>
     <h1 id="tituloCab">Diagnóstico BIM</h1>
     <p id="subCab">20 preguntas sobre lo que sabes hacer en un proyecto real. Cinco minutos.
-      Tu asesor lo revisa antes de la cita.</p>
+      Tu perfil te lo entrega tu asesor en la cita.</p>
     <div class="barra"><i id="barra"></i></div>
     <p class="cuenta" id="cuenta">Pregunta 1 de 20</p>
   </header>
@@ -204,7 +204,7 @@ function pintarPregunta(){
       <div class="nav">
         ${cursor>0 ? '<button class="btn sec" id="atras">Atrás</button>' : ''}
         <button class="btn" id="sig" ${R[cursor]===null?'disabled':''}>
-          ${cursor===TODAS.length-1 ? 'Ver mi diagnóstico' : 'Siguiente'}</button>
+          ${cursor===TODAS.length-1 ? 'Terminar' : 'Siguiente'}</button>
       </div>
     </div>`;
 
@@ -228,65 +228,57 @@ function avanzar(){
 
 function pintarResultado(){
   const r = calcular();
+
+  /* DECISIÓN COMERCIAL, 7-sep: el resultado NO se muestra aquí.
+   *
+   * La primera versión enseñaba el nivel y el perfil al terminar. Dayana lo
+   * cambió y tiene razón: si la persona ya sabe que es Coordinador BIM, la
+   * cita pasa a ser opcional. Guardando el resultado, la llamada deja de ser
+   * «una presentación de ventas» y pasa a ser el sitio donde recoge algo que
+   * ya es suyo y que todavía no ha visto.
+   *
+   * El cálculo se hace igual y viaja completo al CRM: lo único que cambia es
+   * quién se lo cuenta al alumno. */
+
   document.getElementById('barra').style.width = '100%';
   document.getElementById('cuenta').textContent = 'Diagnóstico completo';
-  document.getElementById('tituloCab').textContent = 'Tu diagnóstico está listo';
+  document.getElementById('tituloCab').textContent = 'Listo, ya tenemos tu perfil';
   document.getElementById('subCab').textContent =
-    'Esto es lo que dice tu test. El detalle y la ruta te los explica tu asesor en la cita.';
-
-  const nombreNivel = r.nivel === 0
-    ? 'En camino a Modelador BIM'
-    : BLOQUES[r.nivel-1].nivel;
-
-  const filas = r.bloques.map(b => `
-    <div class="fila">
-      <span>${b.nivel}<small>${b.pts} de ${b.max} puntos · ${pct1(b.pct)}%</small></span>
-      <span class="chip ${b.dominado?'ok':'no'}">${b.dominado?'Dominado':'Por cerrar'}</span>
-    </div>`).join('');
-
-  const ejesHtml = r.ejes.map(e => `
-    <div class="fila">
-      <span>${e.nombre}<small>${e.pts} de ${e.max} puntos</small></span>
-      <span class="chip ${e.base?'ok':'no'}">${e.base?'Base sólida':'Sin consolidar'}</span>
-    </div>`).join('');
-
-  const disperso = r.dispersos.length ? `
-    <div class="aviso">
-      <b>Tienes conocimientos sueltos por encima de tu nivel</b> en
-      ${r.dispersos.map(b=>b.nivel).join(' y ')}. No cuentan como nivel porque hay un
-      escalón sin cerrar debajo, pero sí acortan el camino — y tu asesor lo va a tener en cuenta.
-    </div>` : '';
+    'Tu asesor académico lo tiene delante. Te lo explica en la cita.';
 
   app.innerHTML = `
     <div class="card res">
       <div class="nivelazo">
-        <p class="lbl">Tu nivel BIM</p>
-        <p class="big">${nombreNivel}</p>
-        <span class="perfil">${r.perfil}</span>
+        <p class="lbl">Tu diagnóstico</p>
+        <p class="big">Completo</p>
+        <span class="perfil">20 de 20 respondidas</span>
       </div>
-
-      <h2>Cómo quedó cada nivel</h2>
-      ${filas}
-
-      <h2 style="margin-top:18px">Tu base técnica</h2>
-      ${ejesHtml}
-      ${disperso}
 
       <div class="cita">
         <h4>Y ahora, la cita</h4>
-        <p><b>Gracias por completar el diagnóstico.</b> Este test no es genérico: lo que
-        acabas de responder llega a tu asesor académico antes de la llamada, así que no vas
-        a empezar explicando desde cero quién eres ni qué sabes hacer.</p>
-        <p style="margin-top:9px">En la cita te va a decir <b>exactamente por dónde entrar</b>
-        —qué módulo te corresponde y cuál te haría perder el tiempo—, qué te falta para el
-        siguiente nivel y cómo encaja con lo que estás haciendo ahora. Una conversación
-        sobre tu caso, no una presentación.</p>
+        <p><b>Gracias por completar el diagnóstico.</b> No es un test genérico:
+        con lo que acabas de responder ya sabemos en qué nivel BIM estás, de qué
+        base técnica vienes y qué te falta para el siguiente escalón.</p>
+        <p style="margin-top:9px">Ese perfil <b>te lo entrega tu asesor académico
+        en la cita</b>, no un correo automático. Y no es por hacerte esperar: tu
+        resultado tiene matices —cosas que dominas por encima de tu nivel, huecos
+        que se cierran más rápido de lo que parece— y eso se explica hablando, no
+        en una pantalla.</p>
+        <p style="margin-top:9px">En la llamada vas a salir sabiendo <b>exactamente
+        por dónde entrar</b>, qué módulo te corresponde, cuál te haría perder el
+        tiempo y cómo encaja con lo que estás haciendo ahora. Una conversación
+        sobre tu caso concreto.</p>
+      </div>
+
+      <div class="aviso">
+        <b>Llega a tu cita con esto en mente:</b> no vas a tener que explicar
+        desde cero quién eres ni qué sabes hacer. Tu asesor ya lo leyó.
       </div>
 
       <div id="envio"></div>
 
       <p class="pie">Tu código de diagnóstico es <span class="codigo">${r.codigo}</span>.
-        Si tu asesor te lo pide, es este.</p>
+        Si tu asesor te lo pide al empezar la llamada, es este.</p>
     </div>`;
 
   entregar(r);
