@@ -1,0 +1,626 @@
+<title>Founder Circle</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+:root{
+  --ink:#141C25; --ink-soft:#43535F; --ink-faint:#71828F;
+  --paper:#F2F5F7; --surface:#FFFFFF; --surface-2:#E9EEF2;
+  --line:#CBD6DE; --line-soft:#DDE5EB;
+  --blue:#1B4F72; --blue-soft:#E3EDF4;
+  --amber:#A6631C; --amber-soft:#F7EEE1;
+  --green:#2C6349; --green-soft:#E4EFE9;
+  --red:#8E3B32; --red-soft:#F7E8E6;
+  --shadow:0 1px 2px rgba(20,28,37,.06),0 8px 24px -16px rgba(20,28,37,.28);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ink:#E8EDF1; --ink-soft:#A8B7C2; --ink-faint:#7C8C98;
+    --paper:#10161C; --surface:#171F27; --surface-2:#1F2932;
+    --line:#2E3B45; --line-soft:#252F38;
+    --blue:#7FB6DC; --blue-soft:#182833;
+    --amber:#D69A57; --amber-soft:#2A2118;
+    --green:#7FC0A0; --green-soft:#16261F;
+    --red:#D98C82; --red-soft:#2A1B19;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px -16px rgba(0,0,0,.6);
+  }
+}
+:root[data-theme="dark"]{
+  --ink:#E8EDF1; --ink-soft:#A8B7C2; --ink-faint:#7C8C98;
+  --paper:#10161C; --surface:#171F27; --surface-2:#1F2932;
+  --line:#2E3B45; --line-soft:#252F38;
+  --blue:#7FB6DC; --blue-soft:#182833;
+  --amber:#D69A57; --amber-soft:#2A2118;
+  --green:#7FC0A0; --green-soft:#16261F;
+  --red:#D98C82; --red-soft:#2A1B19;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px -16px rgba(0,0,0,.6);
+}
+*{box-sizing:border-box}
+body{
+  background:var(--paper);color:var(--ink);
+  font-family:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:16px;line-height:1.62;-webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:45rem;margin:0 auto;padding:0 1.15rem 5rem}
+
+.titleblock{border-bottom:2px solid var(--ink);margin:0 0 2rem;padding:2.5rem 0 1.1rem}
+.tb-rule{
+  display:flex;gap:.6rem;align-items:baseline;font-family:"IBM Plex Mono",monospace;
+  font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:1.4rem;
+}
+.tb-rule span:first-child{color:var(--blue)}
+.tb-rule i{flex:1;height:1px;background:var(--line);font-style:normal}
+h1{
+  font-family:Archivo,sans-serif;font-weight:700;font-size:clamp(2.1rem,8vw,3.1rem);
+  line-height:1.03;letter-spacing:-.03em;margin:0 0 .55rem;text-wrap:balance;
+}
+.sub{color:var(--ink-soft);font-size:1.05rem;margin:0;max-width:34rem}
+
+nav{
+  position:sticky;top:0;z-index:20;background:var(--paper);
+  border-bottom:1px solid var(--line-soft);margin:0 -1.15rem 2.4rem;padding:.55rem 1.15rem;
+}
+.navscroll{display:flex;gap:.4rem;overflow-x:auto;scrollbar-width:none}
+.navscroll::-webkit-scrollbar{display:none}
+nav a{
+  flex:0 0 auto;text-decoration:none;color:var(--ink-soft);
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;letter-spacing:.04em;
+  padding:.3rem .55rem;border:1px solid var(--line-soft);border-radius:2px;
+  white-space:nowrap;background:var(--surface);
+}
+nav a:hover,nav a:focus-visible{color:var(--blue);border-color:var(--blue)}
+
+section{margin:0 0 3.2rem;scroll-margin-top:4rem}
+.snum{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--blue);display:block;margin-bottom:.4rem;
+}
+h2{
+  font-family:Archivo,sans-serif;font-weight:600;font-size:clamp(1.4rem,4.8vw,1.8rem);
+  line-height:1.14;letter-spacing:-.02em;margin:0 0 1rem;text-wrap:balance;
+}
+h3{font-family:Archivo,sans-serif;font-weight:600;font-size:1.08rem;line-height:1.3;margin:2rem 0 .6rem}
+h4{
+  font-family:"IBM Plex Mono",monospace;font-weight:500;font-size:.72rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-faint);margin:1.6rem 0 .5rem;
+}
+p{margin:0 0 1rem}
+strong{font-weight:600}
+em{font-style:italic}
+ul{margin:0 0 1.1rem;padding:0;list-style:none}
+ul li{position:relative;padding-left:1.05rem;margin-bottom:.5rem}
+ul li::before{content:"";position:absolute;left:0;top:.62em;width:5px;height:5px;background:var(--line);border-radius:50%}
+ol{margin:0 0 1.1rem;padding-left:1.35rem}
+ol li{margin-bottom:.5rem;padding-left:.2rem}
+ol li::marker{font-family:"IBM Plex Mono",monospace;font-size:.85em;color:var(--blue)}
+
+/* ficha de oferta */
+.offer{
+  background:var(--surface);border:1px solid var(--line);border-radius:4px;
+  padding:1.4rem 1.3rem;margin:1.4rem 0 1.8rem;box-shadow:var(--shadow);
+}
+.offer-k{
+  font-family:"IBM Plex Mono",monospace;font-size:.63rem;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink-faint);display:block;margin-bottom:.2rem;
+}
+.offer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(8.5rem,1fr));gap:1.1rem 1.4rem}
+.offer-v{font-family:Archivo,sans-serif;font-weight:600;font-size:1.35rem;line-height:1.15;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.offer-v small{display:block;font-family:"IBM Plex Sans",sans-serif;font-weight:400;font-size:.8rem;color:var(--ink-soft);letter-spacing:0;margin-top:.15rem}
+.offer-note{border-top:1px solid var(--line-soft);margin-top:1.1rem;padding-top:.9rem;font-size:.9rem;color:var(--ink-soft)}
+
+.note{border-left:3px solid var(--blue);background:var(--blue-soft);padding:.95rem 1.1rem;margin:1.3rem 0;border-radius:0 3px 3px 0}
+.note.warn{border-left-color:var(--amber);background:var(--amber-soft)}
+.note.stop{border-left-color:var(--red);background:var(--red-soft)}
+.note.ok{border-left-color:var(--green);background:var(--green-soft)}
+.note p:last-child{margin-bottom:0}
+.note .tag{display:block;font-family:"IBM Plex Mono",monospace;font-size:.62rem;letter-spacing:.13em;text-transform:uppercase;color:var(--blue);margin-bottom:.35rem}
+.note.warn .tag{color:var(--amber)}
+.note.stop .tag{color:var(--red)}
+.note.ok .tag{color:var(--green)}
+
+/* etapas del proceso */
+.stage{
+  display:grid;grid-template-columns:2.6rem 1fr;gap:0 1rem;
+  border-left:2px solid var(--line);margin-left:.7rem;padding:0 0 1.5rem 1.4rem;position:relative;
+}
+.stage:last-of-type{border-left-color:transparent;padding-bottom:.4rem}
+.stage::before{
+  content:"";position:absolute;left:-.42rem;top:.35rem;width:.75rem;height:.75rem;
+  border-radius:50%;background:var(--paper);border:2px solid var(--blue);
+}
+.stage-n{
+  grid-column:1;font-family:"IBM Plex Mono",monospace;font-size:.72rem;color:var(--blue);
+  font-weight:500;padding-top:.15rem;font-variant-numeric:tabular-nums;
+}
+.stage-body{grid-column:2}
+.stage-t{font-family:Archivo,sans-serif;font-weight:600;font-size:1.05rem;line-height:1.25;margin:0 0 .1rem}
+.stage-who{font-family:"IBM Plex Mono",monospace;font-size:.63rem;letter-spacing:.08em;color:var(--ink-faint);text-transform:uppercase;margin-bottom:.5rem;display:block}
+.stage-body p{margin-bottom:.6rem;font-size:.96rem}
+.stage-body p:last-child{margin-bottom:0}
+@media (max-width:30rem){
+  .stage{grid-template-columns:1fr;gap:0}
+  .stage-n{margin-bottom:.15rem}
+}
+
+.tscroll{overflow-x:auto;margin:1.1rem -1.15rem 1.4rem;padding:0 1.15rem}
+table{border-collapse:collapse;width:100%;min-width:29rem;font-size:.89rem}
+th{
+  text-align:left;font-family:"IBM Plex Mono",monospace;font-weight:500;font-size:.63rem;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);
+  border-bottom:1px solid var(--line);padding:0 .8rem .45rem 0;vertical-align:bottom;
+}
+td{padding:.7rem .8rem .7rem 0;border-bottom:1px solid var(--line-soft);vertical-align:top;line-height:1.5}
+tr:last-child td{border-bottom:none}
+td:last-child,th:last-child{padding-right:0}
+.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+
+.pill{
+  display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:.6rem;letter-spacing:.09em;
+  text-transform:uppercase;padding:.16rem .42rem;border-radius:2px;font-weight:500;white-space:nowrap;
+}
+.p-ok{background:var(--green-soft);color:var(--green)}
+.p-half{background:var(--amber-soft);color:var(--amber)}
+.p-next{background:var(--surface-2);color:var(--ink-faint)}
+
+footer{
+  margin-top:3rem;padding-top:1.2rem;border-top:2px solid var(--ink);
+  font-family:"IBM Plex Mono",monospace;font-size:.65rem;letter-spacing:.08em;
+  color:var(--ink-faint);text-transform:uppercase;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;
+}
+a{color:var(--blue)}
+:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<div class="wrap">
+
+<header class="titleblock">
+  <div class="tb-rule"><span>Documento maestro</span><i></i><span>Uso interno</span></div>
+  <h1>Founder Circle</h1>
+  <p class="sub">La oferta completa de DG BIM Intelligence y el proceso comercial de punta a punta. Todo lo que hay que saber en un solo lugar.</p>
+</header>
+
+<nav aria-label="Secciones">
+  <div class="navscroll">
+    <a href="#o1">01 La oferta</a>
+    <a href="#o2">02 El producto</a>
+    <a href="#o3">03 Roadmap</a>
+    <a href="#o4">04 Qué recibe</a>
+    <a href="#o5">05 Precios</a>
+    <a href="#o6">06 Condiciones</a>
+    <a href="#o7">07 Las etapas</a>
+    <a href="#o8">08 Carriles</a>
+    <a href="#o9">09 Economía</a>
+    <a href="#o10">10 Referidos</a>
+    <a href="#o11">11 Pendientes</a>
+  </div>
+</nav>
+
+<section id="o1">
+  <span class="snum">01</span>
+  <h2>La oferta en una pantalla</h2>
+
+  <div class="offer">
+    <div class="offer-grid">
+      <div><span class="offer-k">Reserva</span><span class="offer-v">US$100<small>reembolsable, se descuenta</small></span></div>
+      <div><span class="offer-k">Entrada</span><span class="offer-v">US$997<small>saldo de 897 al día 7</small></span></div>
+      <div><span class="offer-k">Membresía</span><span class="offer-v">US$97<small>al mes, desde el día 30</small></span></div>
+      <div><span class="offer-k">Cupos</span><span class="offer-v">10<small>y se cierra de verdad</small></span></div>
+    </div>
+    <p class="offer-note"><strong>Precio público desde octubre:</strong> US$1.970 de entrada + US$197/mes. Entrar como fundador ahorra US$973 en la entrada y US$100 al mes mientras la membresía siga activa.</p>
+  </div>
+
+  <h3>El concepto</h3>
+  <p>Founder Circle son las únicas diez empresas que van a usar y ayudar a perfeccionar DG BIM Intelligence antes del lanzamiento oficial. No es una beta pública, ni un descuento, ni participación societaria: es <strong>acceso anticipado y colaboración sobre el producto</strong>.</p>
+  <div class="note">
+    <span class="tag">El mensaje central de venta</span>
+    <p>No vendemos una licencia. Vendemos la oportunidad de pertenecer al Founder Circle y usar DG BIM Intelligence durante su evolución, influyendo con retroalimentación antes del lanzamiento oficial.</p>
+  </div>
+  <div class="note warn">
+    <span class="tag">La urgencia real</span>
+    <p>No está en el descuento. Está en que <strong>el Founder Circle desaparece para siempre</strong> cuando la plataforma se lance oficialmente. Después nadie podrá comprar estos beneficios, sin importar el precio.</p>
+  </div>
+</section>
+
+<section id="o2">
+  <span class="snum">02</span>
+  <h2>Qué es el producto</h2>
+
+  <h4>Lo que no es</h4>
+  <ul>
+    <li>No es un programa BIM. No compite con Revit, Navisworks ni ninguna herramienta de modelado.</li>
+    <li>No es un chatbot, ni ChatGPT, ni Claude con otro nombre.</li>
+    <li>No es un dashboard ni un visualizador.</li>
+    <li>No es una guía de preguntas y respuestas.</li>
+  </ul>
+
+  <h4>Lo que sí es</h4>
+  <div class="note">
+    <p><strong>Un consultor BIM digital</strong> que analiza el proyecto, entiende quién está preguntando, repregunta cuando le falta contexto y muestra la evidencia de lo que afirma.</p>
+  </div>
+
+  <h3>El problema que ataca</h3>
+  <p>Existen programas muy potentes que arrojan miles de datos. Nadie se está ocupando de qué hacer con toda esa información y qué decisión tomar. Ese criterio vive en la cabeza de un profesional escaso y caro —el gerente BIM— y toda la empresa avanza al ritmo de esa persona, no al ritmo que necesitan los proyectos.</p>
+  <p>Lo que hacemos es <strong>eliminar la dependencia del criterio humano disperso</strong>: que la empresa sea autónoma en cada proyecto, sin depender de un individuo que puede saturarse, enfermarse o renunciar llevándose el conocimiento.</p>
+  <div class="note">
+    <span class="tag">La frase que resume la venta</span>
+    <p>El cliente ya no necesita más información. Necesita criterio.</p>
+  </div>
+
+  <h3>Cómo funciona, en cuatro pasos</h3>
+  <ol>
+    <li><strong>Da contexto</strong> a los datos que salen de los programas.</li>
+    <li><strong>Da diagnóstico:</strong> qué está pasando y por qué importa.</li>
+    <li><strong>Da recomendación:</strong> qué haría un consultor con criterio.</li>
+    <li><strong>Acompaña la decisión y la validación</strong> — pero nunca decide por el cliente.</li>
+  </ol>
+  <div class="note stop">
+    <span class="tag">Aclaración que hay que decir en voz alta</span>
+    <p>El agente jamás toma la decisión final. No va a decir «quitemos todas las paredes del primer piso». Genera criterio en función del contexto para que la decisión la tome la persona, validada. Decirlo tranquiliza al perfil técnico, que es el más escéptico.</p>
+  </div>
+
+  <h3>Cómo entra el proyecto</h3>
+  <p>El cliente tiene una <strong>pestaña propia dentro de Revit con un botón de sincronizar</strong>. Lo aprieta y toda la data del modelo pasa a la aplicación en aproximadamente un minuto. Sin exportar, sin convertir, sin subir archivos.</p>
+  <p>Cada sincronización sube una versión (V5, V6, V7…), así que el cliente siempre sabe con qué versión está trabajando. Eso es trazabilidad real y le habla directo al coordinador y al gerente.</p>
+  <p>Quedan como <strong>en desarrollo</strong> —y así se comunican— el conector de un clic y la edición bidireccional, es decir, poder pedirle cambios al agente y que se apliquen en Revit.</p>
+</section>
+
+<section id="o3">
+  <span class="snum">03</span>
+  <h2>El roadmap: qué se promete y cuándo</h2>
+  <p>El fundador no compra el producto de hoy: compra el camino completo, y va recibiendo cada etapa sin pagar más. Esto es lo que justifica el precio y lo que hace que entrar temprano tenga sentido.</p>
+  <div class="tscroll">
+  <table>
+    <thead><tr><th>Etapa</th><th>Qué incluye</th><th>Estado</th></tr></thead>
+    <tbody>
+      <tr><td><strong>1 · Inteligencia sobre el proyecto</strong></td><td>Agente BIM especializado, proyecto real cargado, consultas contextualizadas, repregunta cuando falta información, hallazgos con evidencia, impacto y confianza</td><td><span class="pill p-ok">Disponible</span></td></tr>
+      <tr><td><strong>2 · Inteligencia por roles</strong></td><td>Tres agentes funcionando: Modelador, Gerente y Coordinador. Dashboards de Modelador y Gerente listos</td><td><span class="pill p-half">Casi</span></td></tr>
+      <tr><td><strong>3 · BIM Decision Engine</strong></td><td>Incidencia → riesgo → diagnóstico → alternativas → recomendación → decisión → validación. Gestión de cambios y trazabilidad</td><td><span class="pill p-next">Próxima</span></td></tr>
+      <tr><td><strong>4 · Conectada al modelo</strong></td><td>Conexión directa con Revit, sin exportar nada. Parámetros, cantidades y documentación federados</td><td><span class="pill p-ok">Funciona</span></td></tr>
+      <tr><td><strong>5 · Memoria de la empresa</strong></td><td>BEP, EIR, OIR y estándares internos. Procedimientos, checklists y lecciones aprendidas convertidas en memoria operativa</td><td><span class="pill p-next">Largo plazo</span></td></tr>
+      <tr><td><strong>6 · Inteligencia predictiva</strong></td><td>Detecta patrones entre proyectos, predice riesgos y anticipa errores antes de cometerlos</td><td><span class="pill p-next">Visión</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="note warn">
+    <span class="tag">Pendiente antes de vender</span>
+    <p>Poner <strong>fechas concretas</strong> a las etapas 2 y 3, comprometiendo un mes más tarde de lo que estime Andrés. Sin fechas el roadmap es humo; con fechas es un cronograma de valor. Y confirmar si el rol Coordinador tiene dashboard propio o solo agente — mientras no esté claro se vende como «agente disponible, panel en camino».</p>
+  </div>
+</section>
+
+<section id="o4">
+  <span class="snum">04</span>
+  <h2>Qué recibe el fundador</h2>
+  <p>Se lee completo en la llamada, uno por uno. Resumirlo le quita la mitad del peso.</p>
+  <div class="tscroll">
+  <table>
+    <thead><tr><th>Beneficio</th><th>Qué significa</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Acceso completo 12 meses</strong></td><td>Los tres roles: Modelador, Coordinador y Gerente</td></tr>
+      <tr><td><strong>Implementación 1 a 1</strong></td><td>Sesión personalizada donde dejamos la plataforma andando con un proyecto real suyo. No se entrega un usuario y una clave</td></tr>
+      <tr><td><strong>Founder Badge #001–#010</strong></td><td>Numerado, con reconocimiento permanente dentro de la plataforma</td></tr>
+      <tr><td><strong>Comité de Innovación</strong></td><td>Propone qué se construye después. Existe de verdad: hay un buzón dentro de la app donde se proponen mejoras y el resto vota</td></tr>
+      <tr><td><strong>Acceso anticipado</strong></td><td>Estrena cada función nueva antes que nadie, empezando por el panel de Coordinador</td></tr>
+      <tr><td><strong>Canal VIP</strong></td><td>Contacto directo con el equipo, sin tickets ni formularios</td></tr>
+      <tr><td><strong>Microcredencial BIM + IA</strong></td><td>Credencial oficial de Design Modeling Academy</td></tr>
+      <tr><td><strong>Curso de IA aplicada al BIM</strong></td><td>Formación completa incluida</td></tr>
+      <tr><td><strong>Playbooks del método</strong></td><td>Guías metodológicas por rol</td></tr>
+      <tr><td><strong>Garantía Primer Proyecto</strong></td><td>30 días. Si no entrega un hallazgo accionable sobre su proyecto, se devuelve</td></tr>
+      <tr><td><strong>Precio congelado</strong></td><td>Mientras la membresía siga activa</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="note stop">
+    <span class="tag">Aclaración legal — va en el material y se dice en la llamada</span>
+    <p>La membresía Founder Circle <strong>no representa acciones, participación societaria, dividendos, regalías, propiedad intelectual ni derechos económicos</strong> sobre Design Modeling Academy, DG BIM Intelligence u Olympus. Es únicamente un programa exclusivo de acceso anticipado y colaboración sobre el producto. La intervención del fundador en el roadmap es consultiva: su opinión se escucha, las decisiones de producto son de la empresa.</p>
+  </div>
+</section>
+
+<section id="o5">
+  <span class="snum">05</span>
+  <h2>Precios y línea de tiempo de pagos</h2>
+  <div class="tscroll">
+  <table>
+    <thead><tr><th>Momento</th><th>Concepto</th><th class="num">Monto</th><th>Qué compra</th></tr></thead>
+    <tbody>
+      <tr><td>Al reservar</td><td>Reserva prioritaria</td><td class="num"><strong>US$100</strong></td><td>Bloquea el cupo y abre la beta. Se descuenta del total. Reembolsable dentro de los 7 días</td></tr>
+      <tr><td>Al día 7</td><td>Saldo de entrada</td><td class="num"><strong>US$897</strong></td><td>Completa los 997: implementación, credencial, curso, playbooks, badge y comité</td></tr>
+      <tr><td>Día 30</td><td>Membresía</td><td class="num"><strong>US$97/mes</strong></td><td>El acceso a la plataforma con los tres roles, a precio congelado</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="note">
+    <span class="tag">Cómo se dice en la llamada, completo</span>
+    <p>«Hoy reservas con 100. Agendamos la sesión técnica y dejamos tu proyecto andando. Siete días de prueba. Al séptimo, si siguen, pagan el saldo. Y la primera mensualidad corre 30 días después de ese pago, no antes.»</p>
+  </div>
+  <p>Decirlo completo en la llamada evita discusiones de cobro más adelante, justo con los clientes que menos nos podemos permitir incomodar.</p>
+
+  <h3>Por qué la división en dos pagos es honesta</h3>
+  <p>Los US$997 no compran software: compran <strong>pertenencia, implementación y credenciales</strong> — cosas con valor y costo real. Los US$97 compran la plataforma, que es lo que genera costo mes a mes. Nadie paga dos veces por lo mismo, y por eso el discurso se sostiene sin incomodidad.</p>
+
+  <h3>El contraste con el precio público</h3>
+  <div class="tscroll">
+  <table>
+    <thead><tr><th></th><th class="num">Fundador</th><th class="num">Público (octubre)</th><th class="num">Diferencia</th></tr></thead>
+    <tbody>
+      <tr><td>Entrada</td><td class="num">US$997</td><td class="num">US$1.970</td><td class="num">−US$973</td></tr>
+      <tr><td>Mensualidad</td><td class="num">US$97</td><td class="num">US$197</td><td class="num">−US$100 al mes</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section id="o6">
+  <span class="snum">06</span>
+  <h2>Las condiciones, cerradas</h2>
+  <p>Quien vende tiene que poder responder esto sin dudar: son las preguntas que aparecen justo antes de pagar.</p>
+  <div class="tscroll">
+  <table>
+    <thead><tr><th>Tema</th><th>Condición</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Permanencia</strong></td><td>No hay. Se puede cancelar cuando quiera. La retención se basa en el valor del producto, no en una cláusula de amarre</td></tr>
+      <tr><td><strong>Precio congelado</strong></td><td>Se mantiene solo mientras la membresía siga activa. No es de por vida. Quien se da de baja y vuelve reingresa al precio vigente: conserva el estatus de fundador, no la tarifa</td></tr>
+      <tr><td><strong>Plazo de la reserva</strong></td><td>Máximo 24 horas para concretarla después de la llamada. Pasado ese plazo se libera el cupo</td></tr>
+      <tr><td><strong>Reembolso</strong></td><td>Dentro de los 7 días, pidiéndolo por escrito en ese plazo. Se devuelve en hasta 5 días hábiles al mismo medio de pago, y <strong>lo procesa Dayana</strong>. Sin aviso escrito, no es reembolsable</td></tr>
+      <tr><td><strong>Renovación anual</strong></td><td><strong>No hay cobro de anualidad.</strong> Al cumplir el año la membresía sigue igual, mes a mes, al precio congelado</td></tr>
+      <tr><td><strong>Beta</strong></td><td>7 días corridos, contados desde el pago de la reserva</td></tr>
+      <tr><td><strong>Garantía Primer Proyecto</strong></td><td>30 días. Un hallazgo accionable = evidencia del proyecto + recomendación concreta</td></tr>
+      <tr><td><strong>Mora</strong></td><td>Hasta 30 días desde la fecha de corte para ponerse al día. Tres reintentos de cobro dentro de ese plazo</td></tr>
+      <tr><td><strong>Baja</strong></td><td>Sin reembolso del periodo ya pagado. Se detienen los cobros futuros y conserva el acceso hasta el fin del ciclo pagado. El único efecto es perder el precio congelado</td></tr>
+      <tr><td><strong>Datos</strong></td><td>Confidenciales, con acceso controlado. El proyecto y la información siguen siendo del cliente. Se conservan 30 días tras la baja y luego se eliminan; puede pedir el borrado o el rescate antes</td></tr>
+      <tr><td><strong>Entrenamiento</strong></td><td>Los modelos del cliente no se usan para entrenar nada de terceros</td></tr>
+      <tr><td><strong>Aceptación</strong></td><td>Los términos se aceptan con un checkbox antes de suscribirse. Es una firma digital de consentimiento</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section id="o7">
+  <span class="snum">07</span>
+  <h2>Las etapas del proceso comercial</h2>
+  <p>De extraño a cliente activo. Cada etapa tiene un responsable y un hecho verificable que la dispara — nunca se avanza por intuición del vendedor.</p>
+
+  <div class="stage">
+    <span class="stage-n">01</span>
+    <div class="stage-body">
+      <p class="stage-t">Contacto</p>
+      <span class="stage-who">Gabriel (orgánico) · Franklin (pauta)</span>
+      <p>En el carril orgánico, WhatsApp personal de Gabriel a su lista corta. En pauta, el prospecto llena el formulario calificador y agenda directo.</p>
+      <p><strong>Avanza cuando:</strong> responde o deja sus datos.</p>
+    </div>
+  </div>
+
+  <div class="stage">
+    <span class="stage-n">02</span>
+    <div class="stage-body">
+      <p class="stage-t">Calificación</p>
+      <span class="stage-who">Quien vende</span>
+      <p>Dos condiciones sin excepción: que <strong>decida y pague</strong> (dueño, socio, director o gerente con presupuesto) y que tenga un <strong>proyecto activo en Revit hoy</strong>. Un modelador o alguien sin proyecto vivo no agenda: va a lista de espera con un mensaje amable.</p>
+      <p><strong>Avanza cuando:</strong> cumple las dos condiciones.</p>
+    </div>
+  </div>
+
+  <div class="stage">
+    <span class="stage-n">03</span>
+    <div class="stage-body">
+      <p class="stage-t">Agenda</p>
+      <span class="stage-who">Quien vende</span>
+      <p>No se ofrece una demo: se ofrece un <strong>diagnóstico de su proyecto</strong>. Se le pide que llegue con un proyecto normal de trabajo a mano.</p>
+      <p><strong>Avanza cuando:</strong> hay fecha y hora en el calendario.</p>
+    </div>
+  </div>
+
+  <div class="stage">
+    <span class="stage-n">04</span>
+    <div class="stage-body">
+      <p class="stage-t">Llamada de venta · 45 minutos</p>
+      <span class="stage-who">Gabriel o Franklin</span>
+      <p>Apertura y encuadre (0–5) · preguntas de diagnóstico, el cliente habla el 80% (5–15) · demo con proyecto probado y estable (15–30) · la oferta (30–38) · objeciones y cierre (38–45).</p>
+      <p>El orden es innegociable: <strong>primero se pregunta, después se muestra, después se ofrece, y al final se pide.</strong></p>
+      <p><strong>Avanza cuando:</strong> dice que sí al cupo.</p>
+    </div>
+  </div>
+
+  <div class="stage">
+    <span class="stage-n">05</span>
+    <div class="stage-body">
+      <p class="stage-t">Reserva · US$100</p>
+      <span class="stage-who">El cliente</span>
+      <p>Se manda el link de pago en la misma llamada y se espera ver la confirmación en pantalla. Un pago «para después» se concreta en una fracción de los casos. Máximo 24 horas de plazo.</p>
+      <p><strong>Avanza cuando:</strong> el pago entra.</p>
+    </div>
+  </div>
+
+  <div class="stage">
+    <span class="stage-n">06</span>
+    <div class="stage-body">
+      <p class="stage-t">Reunión técnica · 1 a 2 horas</p>
+      <span class="stage-who">Andrés, con Gabriel o Franklin</span>
+      <p>Se agenda dentro de 48 horas. Se instala el conector, se sincroniza el proyecto del cliente y se deja funcionando. No termina hasta que el cliente haya visto un hallazgo de su modelo y le haya hecho una pregunta al agente él mismo.</p>
+      <p>Se le entrega el canal de soporte y se le muestra el buzón de mejoras.</p>
+      <p><strong>Avanza cuando:</strong> el cliente tiene su proyecto andando.</p>
+    </div>
+  </div>
+
+  <div class="stage">
+    <span class="stage-n">07</span>
+    <div class="stage-body">
+      <p class="stage-t">Beta · 7 días</p>
+      <span class="stage-who">Quien vende, con acompañamiento diario</span>
+      <p><strong>Día 1:</strong> mensaje de activación. <strong>Día 3:</strong> mensaje de valor — y si no entró, <em>llamada telefónica ese mismo día</em>, no mensaje. <strong>Día 5:</strong> llamada corta de feedback. <strong>Día 6:</strong> aviso de decisión y agenda para el día 7.</p>
+      <p><strong>Avanza cuando:</strong> llega el séptimo día con reunión agendada.</p>
+    </div>
+  </div>
+
+  <div class="stage">
+    <span class="stage-n">08</span>
+    <div class="stage-body">
+      <p class="stage-t">Decisión y saldo · US$897</p>
+      <span class="stage-who">Gabriel o Franklin</span>
+      <p>Veinte minutos: feedback primero (8 min, escuchando sin defender el producto), recapitular el valor con las palabras del cliente (3 min), el cierre (2 min) y el pago en vivo (2 min).</p>
+      <p>Si dice que no: se devuelven los 100 el mismo día, sin fricción, y se le pide en una frase qué le faltó. Ese motivo vale más que la venta.</p>
+      <p><strong>Avanza cuando:</strong> paga el saldo.</p>
+    </div>
+  </div>
+
+  <div class="stage">
+    <span class="stage-n">09</span>
+    <div class="stage-body">
+      <p class="stage-t">Referido</p>
+      <span class="stage-who">Quien vende</span>
+      <p>Se pide <strong>después del pago, nunca antes</strong>. Si se menciona antes, se convierte en la excusa perfecta para postergar.</p>
+    </div>
+  </div>
+
+  <div class="stage">
+    <span class="stage-n">10</span>
+    <div class="stage-body">
+      <p class="stage-t">Cliente activo</p>
+      <span class="stage-who">Dayana</span>
+      <p>Badge entregado, canal VIP activo, fecha de la primera sesión del comité. La mensualidad corre a los 30 días. Al día 30 de uso se vuelve a pedir referido, ahora con un resultado concreto que contar.</p>
+    </div>
+  </div>
+
+  <h3>Etiquetas del pipeline</h3>
+  <p>Cada tarjeta lleva su origen, porque sin eso es imposible saber qué canal funcionó ni a quién darle el beneficio de referido:</p>
+  <ul>
+    <li><strong>FUNDADOR</strong> — orgánico, lista de Gabriel.</li>
+    <li><strong>REFERIDO</strong> — lo trajo un fundador. Se anota quién refirió.</li>
+    <li><strong>PAUTA</strong> — vino de anuncios.</li>
+  </ul>
+</section>
+
+<section id="o8">
+  <span class="snum">08</span>
+  <h2>Las fases y los carriles</h2>
+
+  <h3>Fase 1 · Tres clientes semilla</h3>
+  <p>No se sale a buscar diez de una vez. Primero tres clientes de máxima confianza, con servicio ultra personalizado, que autofinancien la infraestructura y sirvan de escuela. Si entran tres con versiones distintas de Revit, los problemas se resuelven uno por uno y en caliente; si entran diez y algo falla, se cae todo junto.</p>
+  <div class="note ok">
+    <span class="tag">Confirmado</span>
+    <p>Los tres semilla <strong>cuentan como fundadores</strong>: son el Founder #001, #002 y #003. Después quedan siete cupos reales.</p>
+  </div>
+
+  <h3>Fase 2 · Los diez fundadores</h3>
+  <p>Con el proceso ya aprendido y los primeros casos de éxito documentados. Aquí entran los dos carriles en paralelo:</p>
+  <div class="tscroll">
+  <table>
+    <thead><tr><th></th><th>Carril A · Fundadores</th><th>Carril B · Lanzamiento</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Quién vende</strong></td><td>Gabriel</td><td>Franklin</td></tr>
+      <tr><td><strong>De dónde vienen</strong></td><td>Lista tibia, contacto directo</td><td>Pauta en Meta y contenido</td></tr>
+      <tr><td><strong>Oferta</strong></td><td>US$997 + 97/mes</td><td>US$1.970 + 197/mes</td></tr>
+      <tr><td><strong>Escasez</strong></td><td>Los 10 cupos</td><td>La fecha: sube en octubre</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="note stop">
+    <span class="tag">La regla que no se rompe</span>
+    <p>El precio de fundador es de los diez y de nadie más. Si por pauta entra gente al precio de fundador, el número deja de ser verdad — y los primeros en notarlo son los diez clientes de mayor confianza de Gabriel. <strong>Los carriles no se mezclan.</strong></p>
+  </div>
+</section>
+
+<section id="o9">
+  <span class="snum">09</span>
+  <h2>La economía del producto</h2>
+  <p>Números confirmados por Andrés el 8 de septiembre. Lo primero, para que el equipo lo tenga claro: <strong>la única acción que consume IA es hablar con el agente.</strong> Sincronizar, abrir dashboards, subir archivos y navegar cuestan cero.</p>
+  <div class="tscroll">
+  <table>
+    <thead><tr><th>Concepto</th><th class="num">Costo</th><th>Cómo se comporta</th></tr></thead>
+    <tbody>
+      <tr><td>Vercel (hosting)</td><td class="num">US$40/mes</td><td>Fijo. Corre con o sin clientes</td></tr>
+      <tr><td>Supabase (base de datos)</td><td class="num">US$25/mes</td><td>Fijo. Usa 50 MB de 8 GB disponibles</td></tr>
+      <tr><td>Agente IA</td><td class="num">US$0,02–0,04</td><td>Por pregunta. Usuario intensivo de 100 consultas: US$2–4/mes</td></tr>
+      <tr><td>Sincronizar y navegar</td><td class="num">US$0</td><td>El plugin extrae con código propio, sin IA</td></tr>
+      <tr><td><strong>Total con 10 clientes</strong></td><td class="num"><strong>≈US$10</strong></td><td>Por cliente al mes. Baja al crecer: el fijo se reparte</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="note ok">
+    <span class="tag">Qué significa</span>
+    <p>A US$97 el margen bruto ronda el <strong>87–90%</strong>. Aunque el costo real terminara siendo el doble o el triple de lo estimado, el precio se sostiene. El costo de operación no es un riesgo para el lanzamiento.</p>
+  </div>
+  <h4>Dos cosas que faltan sumar</h4>
+  <ul>
+    <li><strong>Stripe:</strong> unos US$2,90 por cobro de 97.</li>
+    <li><strong>Autodesk APS:</strong> el documento lo da como plan sin costo, pero en agosto se habló de US$100 al año. Confirmar.</li>
+  </ul>
+  <div class="note ok">
+    <span class="tag">Acordado</span>
+    <p>Los US$65 fijos de infraestructura <strong>salen de las tres primeras reservas</strong>. Las tres de US$100 cubren cuatro meses completos, así que Olympus deja de absorberlos desde la primera venta.</p>
+  </div>
+</section>
+
+<section id="o10">
+  <span class="snum">10</span>
+  <h2>Programa de referidos</h2>
+  <p>Sin comisiones en dinero: se premia con activos de la academia, cuyo costo marginal es casi cero y cuyo valor percibido es alto. Y cada premio refuerza la marca Design Modeling.</p>
+  <p><strong>El incentivo acordado:</strong> un mes de membresía sin costo por cada empresa que entre por su recomendación. El referido entra con implementación sin costo — se le da servicio, no descuento, para no erosionar el precio de lista.</p>
+  <h4>Los dos momentos para pedirlo</h4>
+  <div class="tscroll">
+  <table>
+    <thead><tr><th>Momento</th><th>Por qué ahí</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Justo después de pagar el saldo</strong></td><td>Pico de compromiso: acaba de decidir que esto vale la pena y su cabeza busca coherencia con esa decisión</td></tr>
+      <tr><td><strong>Día 30 de uso</strong></td><td>Ya tiene un resultado concreto que contar. El referido llega con una historia, no con una promesa</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <h4>Las tres reglas que multiplican los referidos</h4>
+  <ol>
+    <li><strong>Pedir UNA persona, no varias.</strong> «¿Quién es una persona que…?» produce muchas más respuestas que «¿conoces a alguien?». El cerebro busca un nombre, no una lista.</li>
+    <li><strong>Ofrecer escribir el mensaje.</strong> El fundador solo lo reenvía. La fricción de redactar es la causa número uno de referidos que nunca llegan.</li>
+    <li><strong>Pedir la presentación en tres</strong>, no el número de teléfono.</li>
+  </ol>
+  <h4>Reglas del programa</h4>
+  <ul>
+    <li>El referido cuenta cuando <strong>paga</strong>, no cuando agenda ni cuando prueba.</li>
+    <li>Se registra quién refirió a quién en el pipeline, para poder liquidar el beneficio.</li>
+    <li>El mes gratis se aplica pausando la suscripción en Stripe — es la implementación más simple y no requiere sistema de afiliados.</li>
+  </ul>
+</section>
+
+<section id="o11">
+  <span class="snum">11</span>
+  <h2>Lo que falta para vender</h2>
+  <div class="tscroll">
+  <table>
+    <thead><tr><th>Pendiente</th><th>Quién</th><th>Estado</th></tr></thead>
+    <tbody>
+      <tr><td>Costo de operación y validación del precio</td><td>Andrés</td><td><span class="pill p-ok">Resuelto</span></td></tr>
+      <tr><td>Alcance vendible del producto</td><td>Andrés</td><td><span class="pill p-ok">Resuelto</span></td></tr>
+      <tr><td>Forma de captación por carril</td><td>Dayana</td><td><span class="pill p-ok">Resuelto</span></td></tr>
+      <tr><td>Condiciones legales del Círculo</td><td>Patricio</td><td><span class="pill p-ok">Cerradas</span></td></tr>
+      <tr><td>Landing con el alcance real</td><td>Patricio</td><td><span class="pill p-ok">Actualizada</span></td></tr>
+      <tr><td>Formulario calificador conectado al CRM</td><td>Patricio</td><td><span class="pill p-ok">Probado</span></td></tr>
+      <tr><td><strong>Publicar el formulario en su lugar final</strong></td><td>Patricio</td><td><span class="pill p-half">Pendiente</span></td></tr>
+      <tr><td><strong>Estado del dashboard de Coordinador</strong></td><td>Andrés</td><td><span class="pill p-half">Pendiente</span></td></tr>
+      <tr><td><strong>Exclusión de entrenamiento en OpenRouter</strong></td><td>Andrés</td><td><span class="pill p-half">Pendiente</span></td></tr>
+      <tr><td><strong>Costo de Autodesk APS</strong></td><td>Andrés</td><td><span class="pill p-half">Pendiente</span></td></tr>
+      <tr><td><strong>Revisión legal y contable final</strong></td><td>Externo</td><td><span class="pill p-half">Pendiente</span></td></tr>
+      <tr><td><strong>Fechas de las etapas 2 y 3</strong></td><td>Gabriel + Andrés</td><td><span class="pill p-half">Pendiente</span></td></tr>
+      <tr><td><strong>Lista de los 3 clientes semilla</strong></td><td>Gabriel</td><td><span class="pill p-half">Pendiente</span></td></tr>
+      <tr><td><strong>Correo de bienvenida post pago</strong></td><td>Dayana</td><td><span class="pill p-half">Pendiente</span></td></tr>
+      <tr><td><strong>Video de instalación paso a paso</strong></td><td>Andrés + Patricio</td><td><span class="pill p-half">Pendiente</span></td></tr>
+      <tr><td>Mini-presentación para la llamada</td><td>Dayana / Patricio</td><td><span class="pill p-next">Propuesta</span></td></tr>
+      <tr><td>Subdominio y logo</td><td>Patricio</td><td><span class="pill p-next">En curso</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="note ok">
+    <span class="tag">Dónde estamos</span>
+    <p>Lo que bloqueaba el lanzamiento —el alcance real del producto, el costo de operación y las condiciones legales— <strong>ya está resuelto</strong>. Lo que queda son piezas de ejecución, no decisiones de fondo.</p>
+    <p>La condición mínima para vender el primer cupo son tres cosas: <strong>las fechas del roadmap, el estado del panel de Coordinador y la lista de los tres clientes semilla.</strong> Todo lo demás puede avanzar en paralelo.</p>
+  </div>
+  <div class="note warn">
+    <span class="tag">Antes de abrir cobros</span>
+    <p>Quedan tres revisiones externas que no dependen del equipo: la exclusión de entrenamiento en OpenRouter y el costo de APS (Andrés), la revisión de impuestos y facturación con el contador, y una revisión legal profesional final del acuerdo. Conviene tenerlas cerradas antes de recibir el primer pago, no después.</p>
+  </div>
+</section>
+
+<footer>
+  <span>DG BIM Intelligence · Founder Circle</span>
+  <span>Design Modeling Academy</span>
+</footer>
+
+</div>
