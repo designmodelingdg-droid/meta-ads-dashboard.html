@@ -28,6 +28,7 @@ on:
       - test-nivel-bim/**
       - test-master-bim/**
       - guia-revit-ia/**
+      - memoria-calculo/**
       - recursos/**
       - eficiencia-acero/**
       - tutor-acero/**
@@ -93,6 +94,9 @@ jobs:
           # Lead magnet: guia Revit + ChatGPT (palabra clave GUIA)
           cp -r guia-revit-ia public/guia-revit-ia
           rm -rf public/guia-revit-ia/GUIA-MONTAJE.md public/guia-revit-ia/prueba
+          # Lead magnet: memoria de calculo, guia + plantillas (palabra clave MEMORIA)
+          cp -r memoria-calculo public/memoria-calculo
+          rm -rf public/memoria-calculo/GUIA-MONTAJE.md public/memoria-calculo/prueba
           # Tutor de IA de la Especializacion en Acero (se embebe en GHL)
           cp -r tutor-acero public/tutor-acero
           # Creativos ganadores del cierre de mes (los usa el mazo de la reunion)
