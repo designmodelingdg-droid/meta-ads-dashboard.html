@@ -1,0 +1,312 @@
+<!-- ============================================================
+     pack-dynamo/index.html · versión para GoHighLevel (Custom Code)
+     GENERADO AUTOMÁTICAMENTE — no editar a mano.
+     Se regenera con: python3 scripts/build_ghl_landing.py pack-dynamo
+     Pegar en: Sites → página → elemento Custom Code,
+     a ancho completo y sin padding.
+     ============================================================ -->
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@500;600;700;800;900&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#003e5c; --navy2:#001e30; --azul-medio:#0a5a80;
+    --orange:#ca7520; --orange-d:#e8a04a; --orange-p:#f7e8cc;
+    --crema:#fafaf7; --ink:#333; --ink2:#5a6b7b; --line:#e5e7eb;
+    --ok:#1e9e6a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Nunito',system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+  h1,h2,h3,h4{font-family:'Overpass',sans-serif;line-height:1.2}
+  a{color:inherit}
+  img{max-width:100%;height:auto}
+  .container{max-width:1140px;margin:0 auto;padding:0 20px}
+  section{padding:60px 0}
+
+  nav{background:rgba(255,255,255,.97);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:10px 0;position:sticky;top:0;z-index:40}
+  nav .container{display:flex;align-items:center;justify-content:space-between;gap:16px}
+  nav img{height:38px}
+  nav .cta{background:var(--orange);color:#fff;padding:9px 18px;border-radius:9px;font-family:'Overpass',sans-serif;font-weight:700;font-size:.86rem;text-decoration:none;white-space:nowrap}
+
+  .hero{background:linear-gradient(135deg,var(--navy2),var(--navy));color:#fff;padding:56px 0 64px}
+  .hero .container{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
+  @media(max-width:900px){.hero .container{grid-template-columns:1fr;gap:30px}}
+  .eyebrow{font-family:'Overpass',sans-serif;font-size:.74rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--orange-d)}
+  .hero h1{font-size:clamp(1.9rem,4.6vw,2.9rem);font-weight:800;margin:12px 0 16px;text-wrap:balance}
+  .hero p.sub{color:#c3d1dc;font-size:1.06rem;max-width:34rem}
+  .hero ul{list-style:none;margin-top:22px;display:flex;flex-direction:column;gap:9px}
+  .hero ul li{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:start;color:#dbe5ec;font-size:.97rem}
+  .hero ul li b{color:#fff}
+  .tick{color:var(--orange-d);font-weight:800}
+
+  .formcard{background:#fff;color:var(--ink);border-radius:16px;padding:26px;box-shadow:0 24px 60px rgba(0,0,0,.34)}
+  .formcard h3{font-size:1.16rem;color:var(--navy);margin-bottom:4px}
+  .formcard .libre{display:inline-block;background:var(--orange-p);color:#8a4f0f;font-family:'Overpass',sans-serif;font-weight:800;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border-radius:99px;margin-bottom:10px}
+  .formcard p.mini{font-size:.86rem;color:var(--ink2);margin-bottom:16px}
+  .campo{margin-bottom:11px}
+  .campo label{display:block;font-size:.78rem;font-weight:700;color:var(--ink2);margin-bottom:4px}
+  .campo input,.campo select{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:9px;font:inherit;font-size:.94rem;background:#fbfcfe}
+  .campo input:focus,.campo select:focus{outline:2px solid var(--orange);border-color:var(--orange)}
+  .btn{display:block;width:100%;padding:14px;border:0;border-radius:10px;background:var(--orange);color:#fff;font-family:'Overpass',sans-serif;font-weight:800;font-size:1rem;cursor:pointer;text-align:center;text-decoration:none}
+  .btn:hover{background:var(--orange-d)}
+  .legal{font-size:.72rem;color:var(--ink2);margin-top:12px;line-height:1.5;text-align:center}
+
+  /* Marquee de avales. Mismos logos y mismo tratamiento que las landings que
+     ya estan publicadas — el mask difumina los extremos para que el bucle no
+     tenga costura visible. */
+  .marquee{background:var(--crema);border-block:1px solid var(--line);padding:20px 0;overflow:hidden;position:relative;
+    mask-image:linear-gradient(to right,transparent,#000 8%,#000 92%,transparent);
+    -webkit-mask-image:linear-gradient(to right,transparent,#000 8%,#000 92%,transparent)}
+  .marquee-track{display:flex;gap:64px;align-items:center;animation:slide 36s linear infinite;width:max-content}
+  .marquee-track:hover{animation-play-state:paused}
+  .marquee-track img{height:50px;width:auto;max-width:170px;object-fit:contain;opacity:.92;flex-shrink:0;transition:opacity .2s,transform .2s}
+  .marquee-track img:hover{opacity:1;transform:scale(1.05)}
+  @keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @media(max-width:600px){.marquee-track{gap:40px}.marquee-track img{height:36px;max-width:120px}}
+  @media(prefers-reduced-motion:reduce){.marquee-track{animation:none;flex-wrap:wrap;justify-content:center;width:100%}}
+
+  h2.sec{font-size:clamp(1.5rem,3.4vw,2.05rem);font-weight:800;color:var(--navy);text-wrap:balance}
+  p.lead{color:var(--ink2);font-size:1.03rem;max-width:44rem;margin-top:12px}
+
+  .verifs{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:16px;margin-top:34px}
+  .v{border:1px solid var(--line);border-radius:13px;padding:20px;background:#fff;position:relative}
+  .v .num{position:absolute;top:-11px;left:20px;background:var(--navy);color:#fff;font-family:'Overpass',sans-serif;font-weight:800;font-size:.78rem;padding:3px 11px;border-radius:99px}
+  .v h4{font-size:1rem;color:var(--navy);margin:8px 0 7px}
+  .v p{font-size:.9rem;color:var(--ink2)}
+
+  .app{background:linear-gradient(135deg,var(--navy2),var(--azul-medio));color:#fff}
+  .app .container{display:grid;grid-template-columns:.95fr 1.05fr;gap:40px;align-items:center}
+  @media(max-width:900px){.app .container{grid-template-columns:1fr}}
+  .app h2{color:#fff;font-size:clamp(1.4rem,3.2vw,1.95rem);font-weight:800}
+  .app p{color:#c3d1dc;margin-top:12px}
+  .demo{background:#fff;color:var(--ink);border-radius:13px;padding:20px;box-shadow:0 20px 46px rgba(0,0,0,.3)}
+  .demo .r{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px dashed var(--line);font-size:.88rem}
+  .demo .r b{color:var(--navy)}
+  .demo .r span{color:var(--ink2)}
+  .chip{display:inline-flex;font-size:.74rem;font-weight:700;padding:2px 9px;border-radius:99px}
+  .chip.ok{background:#e4f6ee;color:var(--ok)}
+  .chip.warn{background:#fcf1e0;color:#b5761a}
+  .demo .out{background:linear-gradient(135deg,var(--navy),var(--azul-medio));color:#fff;border-radius:10px;padding:14px;margin-top:12px}
+  .demo .out small{color:#b9c6d2;display:block;margin-top:6px;font-size:.74rem;line-height:1.5}
+
+  .quien{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:30px}
+  @media(max-width:760px){.quien{grid-template-columns:1fr}}
+  .q{border-radius:13px;padding:22px;border:1px solid var(--line)}
+  .q.si{background:#f2faf6;border-color:#c9e8d9}
+  .q.no{background:#faf6f2;border-color:#e8d9c9}
+  .q h4{font-size:.95rem;margin-bottom:12px;color:var(--navy)}
+  .q ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+  .q li{font-size:.9rem;color:var(--ink2);display:grid;grid-template-columns:18px 1fr;gap:8px}
+
+  details{border-bottom:1px solid var(--line);padding:15px 0}
+  details summary{font-family:'Overpass',sans-serif;font-weight:700;font-size:.98rem;color:var(--navy);cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:14px}
+  details summary::-webkit-details-marker{display:none}
+  details summary::after{content:'+';color:var(--orange);font-size:1.3rem;line-height:1}
+  details[open] summary::after{content:'−'}
+  details p{margin-top:10px;color:var(--ink2);font-size:.93rem}
+
+  .cierre{background:var(--crema);text-align:center}
+  .cierre h2{color:var(--navy)}
+  .cierre .btn{max-width:340px;margin:22px auto 0}
+
+  footer{background:var(--navy2);color:#8fa2b3;padding:34px 0;font-size:.82rem;text-align:center;line-height:1.7}
+  footer a{color:var(--orange-d)}
+  .disc{max-width:52rem;margin:0 auto 14px;font-size:.78rem;color:#7f93a4}
+</style>
+
+
+<nav><div class="container">
+  <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04bbc1fa8afa3be0bb00d8.png" alt="Design Modeling Academy">
+  <a class="cta" href="#acceso">Descargar gratis</a>
+</div></nav>
+
+<section class="hero"><div class="container">
+  <div>
+    <span class="eyebrow">Pack de 5 scripts · gratis</span>
+    <h1>Cinco scripts de Dynamo, comentados por dentro</h1>
+    <p class="sub">La automatización en BIM casi nunca se atasca por falta de ideas. Se atasca en el primer script: abrir Dynamo, poner un nodo de Python y que no reviente. Este pack es ese primer script, cinco veces.</p>
+    <ul>
+      <li><span class="tick">✓</span><span><b>Cinco scripts .py</b> listos para pegar en un nodo de Python de Dynamo.</span></li>
+      <li><span class="tick">✓</span><span><b>Comentados línea a línea</b> para que los cambies, no solo los ejecutes.</span></li>
+      <li><span class="tick">✓</span><span><b>Tres solo leen</b> — no tocan el modelo. Los dos que escriben traen simulacro.</span></li>
+      <li><span class="tick">✓</span><span><b>Acceso inmediato.</b> Nada de «te llega por correo».</span></li>
+    </ul>
+  </div>
+
+  <div class="formcard" id="acceso">
+    <span class="libre">Acceso libre</span>
+    <h3>Descárgalo ahora</h3>
+    <p class="mini">Déjanos tus datos y pasas directo al ZIP y a la guía de instalación.</p>
+    <div id="formBox">
+      <form id="form" novalidate>
+        <div class="campo"><label for="nombre">Nombre y apellido</label><input id="nombre" name="nombre" required autocomplete="name"></div>
+        <div class="campo"><label for="email">Correo</label><input id="email" name="email" type="email" required autocomplete="email"></div>
+        <div class="campo"><label for="telefono">WhatsApp</label><input id="telefono" name="telefono" type="tel" autocomplete="tel"></div>
+        <div class="campo"><label for="perfil">¿Has usado Dynamo antes?</label>
+          <select id="perfil" name="perfil" required>
+            <option value="">Elige una…</option>
+            <option>Nunca lo he abierto</option>
+            <option>Lo abrí y me perdí</option>
+            <option>Uso scripts de otros</option>
+            <option>Escribo los míos</option>
+            <option>Automatizo para todo el equipo</option>
+          </select>
+        </div>
+        <button class="btn" type="submit">Descargar el pack →</button>
+      </form>
+    </div>
+    <p class="legal">Al enviar aceptas recibir información de Design Modeling Academy. Puedes darte de baja cuando quieras.</p>
+  </div>
+</div></section>
+
+<div class="marquee"><div class="marquee-track" id="mq"></div></div>
+
+<section><div class="container">
+  <h2 class="sec">Qué trae el pack</h2>
+  <p class="lead">Ninguno inventa nada: los cinco atacan una tarea que ya haces, y que haces a mano.</p>
+  <div class="verifs">
+      <div class="v"><span class="num">01</span><h4>Auditoría de advertencias → CSV</h4>
+        <p>Todas las advertencias del modelo a un CSV ordenable, con los ID de los elementos culpables. Solo lee.</p></div>
+      <div class="v"><span class="num">02</span><h4>Duplicados en el mismo sitio</h4>
+        <p>El error que no se ve: los planos salen bien y el cuadro de cantidades cuenta el doble. Solo lee.</p></div>
+      <div class="v"><span class="num">03</span><h4>Renombrar vistas en lote</h4>
+        <p>Buscar y reemplazar en 200 nombres de vista de golpe. Con simulacro.</p></div>
+      <div class="v"><span class="num">04</span><h4>Vistas que no están en ninguna hoja</h4>
+        <p>Para limpiar el archivo — y para detectar lo que falta por entregar. Solo lee.</p></div>
+      <div class="v"><span class="num">05</span><h4>Rellenar un parámetro en lote</h4>
+        <p>Comentarios, Marca, códigos de clasificación. Con simulacro que te dice a cuántos les falta el parámetro.</p></div>
+  </div>
+</div></section>
+
+<section class="app"><div class="container">
+  <div>
+    <span class="eyebrow">Por dónde se empieza sin arriesgar</span>
+    <h2>Tres solo leen. Dos escriben, y avisan antes.</h2>
+    <p>Automatizar da miedo por una razón razonable: un script mal hecho toca 800 elementos antes de que te dé tiempo a reaccionar.</p>
+    <p><b style="color:#fff">Por eso los dos que escriben traen simulacro encendido por defecto.</b> La primera vez no cambian nada: te enseñan la lista de lo que harían, y esa lista sale del mismo camino que la ejecución real.</p>
+  </div>
+  <div class="demo">
+    <div class="r"><span>01 · Auditoría de advertencias</span><b><span class="chip ok">Solo lee</span></b></div>
+    <div class="r"><span>02 · Duplicados en el mismo sitio</span><b><span class="chip ok">Solo lee</span></b></div>
+    <div class="r"><span>03 · Renombrar vistas en lote</span><b><span class="chip warn">Simulacro</span></b></div>
+    <div class="r"><span>04 · Vistas sin hoja</span><b><span class="chip ok">Solo lee</span></b></div>
+    <div class="out">
+      <b>05 · Parámetro en lote</b>
+      <small>El simulacro te dice a cuántos les falta el parámetro y cuántos son de solo lectura — antes de escribir en 800.</small>
+    </div>
+  </div>
+</div></section>
+
+<section><div class="container">
+  <h2 class="sec">Para quién es</h2>
+  <div class="quien">
+    <div class="q si"><h4>Sí, es para ti</h4><ul>
+      <li><span class="tick">✓</span>Abriste Dynamo alguna vez, no supiste por dónde seguir y lo cerraste.</li>
+      <li><span class="tick">✓</span>Usas scripts que te pasaron y no entiendes qué hacen por dentro.</li>
+      <li><span class="tick">✓</span>Haces a mano cosas que sabes que una máquina haría mejor.</li>
+      <li><span class="tick">✓</span>Heredas modelos con cientos de advertencias sin leer.</li>
+    </ul></div>
+    <div class="q no"><h4>No, todavía no</h4><ul>
+      <li><span style="color:#b5761a">—</span>Nunca abriste Revit. Empieza por el curso de introducción, es gratis también.</li>
+      <li><span style="color:#b5761a">—</span>Buscas una herramienta terminada. Esto son scripts de partida para adaptar.</li>
+      <li><span style="color:#b5761a">—</span>Ya automatizas para todo tu equipo. Este pack se te va a quedar corto.</li>
+    </ul></div>
+  </div>
+</div></section>
+
+<section style="background:var(--crema)"><div class="container">
+  <h2 class="sec">Preguntas</h2>
+  <div style="max-width:46rem;margin-top:22px">
+      <details open><summary>¿Necesito saber programar?</summary><p>No para ejecutarlos. Sí un poco para cambiarlos — y por eso están comentados por dentro línea a línea. El objetivo del pack no es que ejecutes estos cinco: es que el sexto lo escribas tú.</p></details>
+      <details><summary>¿Van a romper mi modelo?</summary><p>Tres de los cinco solo leen: no tocan nada y puedes correrlos en un archivo vivo. Los otros dos escriben, y los dos traen simulacro <b>encendido por defecto</b>: la primera vez no cambian nada, solo te dicen qué harían.</p></details>
+      <details><summary>¿Sirven en mi versión de Revit?</summary><p>Están escritos para funcionar igual en el motor viejo de Dynamo (IronPython 2) y en el actual (CPython 3), que es lo que usa Revit 2023 en adelante. Si tu Dynamo te pregunta qué motor usar, cualquiera vale.</p></details>
+      <details><summary>¿Qué me llevo exactamente?</summary><p>Un ZIP con los cinco archivos .py, y una guía en pantalla con la instalación paso a paso, qué hace cada script y qué conviene saber antes de correrlo.</p></details>
+      <details><summary>¿Puedo usarlos en un proyecto real?</summary><p>Sí, probándolos antes en una copia — como cualquier script. Se entregan tal cual, para aprender y adaptar, y no sustituyen el criterio del profesional que firma el proyecto.</p></details>
+  </div>
+</div></section>
+
+<section class="cierre"><div class="container">
+  <h2 class="sec">Automatizar no es saber programar. Es saber qué tarea tuya se repite.</h2>
+  <p class="lead">Y eso ya lo sabes. El objetivo del pack no es que ejecutes estos cinco: es que el sexto lo escribas tú.</p>
+  <a class="cta" href="#acceso">Descargar el pack gratis →</a>
+</div></section>
+
+<footer><div class="container">
+  <p class="disc"><b>Scripts educativos.</b> Se entregan tal cual, para aprender y adaptar. Pruébalos siempre en una copia del proyecto antes de usarlos en producción. Los que modifican el modelo traen simulacro: úsalo. No sustituyen el criterio ni la responsabilidad del profesional que firma el proyecto. No es una certificación ni un diploma.</p>
+  <p>Design Modeling Academy · <a href="https://www.dgdesignmodeling.com" target="_blank" rel="noopener">dgdesignmodeling.com</a></p>
+</div></footer>
+
+<script>
+/* Marquee de avales. Son los logos REALES que ya usan calculadora-zapatas y
+   test-nivel-bim — no texto. Se duplica la lista para que el bucle cierre sin
+   costura: la animacion recorre exactamente la mitad del ancho. */
+(function(){
+  const B = 'https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/';
+  const avales = [
+    ['6a04d173601d54df8246caa4.png', 'Autodesk Partner'],
+    ['6a04d1738c6475e185dfddb1.png', 'Autodesk · Centro de Entrenamiento Autorizado'],
+    ['6a04d2928c6475e185e02739.png', 'Sabal University'],
+    ['6a04d1f0f7d455340c70e652.png', 'Doctrina Qualitas'],
+    ['6a04d23b51d5d92ddcacf917.png', 'Universidad de las Naciones'],
+    ['6a04d23b601d54df8246fbf8.webp','ISTE Universidad'],
+    ['6a04d23b601d54df8246fbf7.png', 'UAIII'],
+    ['6a04d23b8c6475e185e00d3e.png', 'Sello EQS · IQS'],
+  ];
+  const html = a => '<img src="'+B+a[0]+'" alt="'+a[1]+'" loading="lazy">';
+  document.getElementById('mq').innerHTML = [...avales, ...avales].map(html).join('');
+})();
+
+/* ── Formulario ────────────────────────────────────────────────────
+   Dos vías, en este orden:
+   1. GHL_FORM_IFRAME_URL — el formulario NATIVO de GHL. Es el preferido:
+      el contacto entra al CRM sin intermediarios y sin costo por ejecución,
+      y GHL redirige solo a la página de gracias. Lo rellena quien monte
+      esto en GHL: es el id del formulario nuevo, el que ya trae el campo
+      de perfil.
+   2. El formulario propio de abajo, como respaldo.
+
+   GHL_WEBHOOK_URL se deja VACIO a proposito. El Inbound Webhook de GHL es
+   premium y cobra por ejecucion; con el formulario nativo no hace falta.
+   Solo se rellena si alguna vez se decide pagar por esa via.              */
+const GHL_FORM_IFRAME_URL = '';   // ← pegar aquí la URL del form nativo
+const GHL_WEBHOOK_URL     = '';   // ← dejar vacío (premium, cobra por uso)
+const URL_GRACIAS         = 'https://funnel.dgdesignmodeling.com/test-nivel-bim/gracias';
+const TOKEN_ACCESO        = 'dm2026';   // debe coincidir con app.html
+
+if(GHL_FORM_IFRAME_URL){
+  const box = document.getElementById('formBox');
+  const id  = GHL_FORM_IFRAME_URL.split('/').pop();
+  box.innerHTML = '<iframe src="'+GHL_FORM_IFRAME_URL+'" id="inline-'+id+'" '+
+    'style="width:100%;height:520px;border:none;border-radius:9px" '+
+    'data-layout="{\'id\':\'INLINE\'}" data-form-id="'+id+'" '+
+    'data-height="520" title="Acceso al pack"></iframe>';
+  const s = document.createElement('script');
+  s.src = 'https://link.msgsndr.com/js/form_embed.js';
+  document.body.appendChild(s);
+}else{
+  document.getElementById('form').addEventListener('submit', async ev => {
+    ev.preventDefault();
+    const d = {
+      nombre:  document.getElementById('nombre').value.trim(),
+      email:   document.getElementById('email').value.trim(),
+      telefono:document.getElementById('telefono').value.trim(),
+      perfil:  document.getElementById('perfil').value,
+      fuente:  'leadmagnet-pack-dynamo',
+      pagina:  location.href,
+    };
+    if(!d.nombre || !d.email || !d.perfil){ alert('Completa nombre, correo y perfil.'); return; }
+
+    // El envío nunca bloquea el acceso: si falla la red, la persona entra
+    // igual. Prometimos acceso inmediato y eso se cumple pase lo que pase.
+    if(GHL_WEBHOOK_URL){
+      try{
+        await fetch(GHL_WEBHOOK_URL, {
+          method:'POST', mode:'no-cors',
+          headers:{'Content-Type':'application/json'}, body:JSON.stringify(d),
+        });
+      }catch(err){ /* se ignora a proposito */ }
+    }
+    try{ localStorage.setItem('dm_dynamo_acceso', TOKEN_ACCESO); }catch(err){}
+    location.href = URL_GRACIAS + '?acceso=' + TOKEN_ACCESO;
+  });
+}
+</script>
+

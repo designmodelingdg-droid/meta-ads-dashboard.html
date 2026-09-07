@@ -29,6 +29,7 @@ on:
       - test-master-bim/**
       - guia-revit-ia/**
       - memoria-calculo/**
+      - pack-dynamo/**
       - recursos/**
       - eficiencia-acero/**
       - tutor-acero/**
@@ -97,6 +98,11 @@ jobs:
           # Lead magnet: memoria de calculo, guia + plantillas (palabra clave MEMORIA)
           cp -r memoria-calculo public/memoria-calculo
           rm -rf public/memoria-calculo/GUIA-MONTAJE.md public/memoria-calculo/prueba
+          # Lead magnet: pack starter de Dynamo (palabra clave DYNAMO).
+          # scripts/ se publica: la guia enlaza al ZIP, pero tener los .py
+          # sueltos ayuda a quien quiera mirarlos sin descargar nada.
+          cp -r pack-dynamo public/pack-dynamo
+          rm -rf public/pack-dynamo/GUIA-MONTAJE.md public/pack-dynamo/prueba
           # Tutor de IA de la Especializacion en Acero (se embebe en GHL)
           cp -r tutor-acero public/tutor-acero
           # Creativos ganadores del cierre de mes (los usa el mazo de la reunion)
