@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Revit + ChatGPT: resuelve errores con IA · Design Modeling Academy</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@500;600;700;800;900&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#003e5c; --navy2:#001e30; --azul-medio:#0a5a80;
+    --orange:#ca7520; --orange-d:#e8a04a; --orange-p:#f7e8cc;
+    --crema:#fafaf7; --ink:#333; --ink2:#5a6b7b; --line:#e5e7eb; --ok:#1e9e6a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Nunito',system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.68}
+  h1,h2,h3,h4{font-family:'Overpass',sans-serif;line-height:1.22;text-wrap:balance}
+  .wrap{max-width:44rem;margin:0 auto;padding:0 20px}
+
+  .top{background:linear-gradient(135deg,var(--navy2),var(--navy));color:#fff;padding:44px 0 40px;text-align:center}
+  .top img{height:44px;margin-bottom:14px;filter:brightness(0) invert(1)}
+  .top .eyebrow{font-family:'Overpass',sans-serif;font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--orange-d)}
+  .top h1{font-size:clamp(1.7rem,4.4vw,2.5rem);font-weight:800;margin:12px 0 12px}
+  .top p{color:#c3d1dc;max-width:34rem;margin:0 auto}
+
+  .fuentes{background:var(--crema);border-bottom:1px solid var(--line);padding:16px 0;font-size:.84rem;color:var(--ink2)}
+  .fuentes b{color:var(--navy)}
+
+  main{padding:14px 0 40px}
+  .intro{font-size:1.06rem;color:var(--ink2);margin:26px 0 10px}
+  .intro b{color:var(--ink)}
+
+  .v{border-top:1px solid var(--line);padding:34px 0 8px}
+  .v .n{display:inline-block;background:var(--navy);color:#fff;font-family:'Overpass',sans-serif;font-weight:800;font-size:.75rem;letter-spacing:.05em;padding:4px 12px;border-radius:99px;margin-bottom:12px}
+  .v h2{font-size:clamp(1.3rem,3vw,1.7rem);font-weight:800;color:var(--navy);margin-bottom:14px}
+  .v h3{font-size:.82rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--orange);margin:20px 0 6px}
+  .v p{margin-bottom:11px}
+
+  table{border-collapse:collapse;width:100%;margin:14px 0;font-size:.92rem}
+  th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line)}
+  thead th{background:var(--crema);font-family:'Overpass',sans-serif;font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;color:var(--ink2)}
+  td b{color:var(--navy)}
+
+  pre{background:var(--navy2);color:#dfe8ee;border-radius:9px;padding:14px 16px;overflow-x:auto;font-family:ui-monospace,'SFMono-Regular',Menlo,monospace;font-size:.86rem;line-height:1.8;margin:12px 0}
+  code{font-family:ui-monospace,'SFMono-Regular',Menlo,monospace;font-size:.9em;background:var(--crema);padding:1px 5px;border-radius:4px}
+  pre code{background:none;padding:0}
+
+  .fuente{background:var(--crema);border-left:3px solid var(--azul-medio);padding:12px 16px;border-radius:0 8px 8px 0;font-size:.9rem;color:var(--ink2);margin:14px 0}
+  .fuente b{color:var(--navy)}
+  .regla{background:var(--orange-p);border-radius:10px;padding:15px 18px;margin:18px 0 6px;font-size:.97rem}
+  .regla b{font-family:'Overpass',sans-serif;color:#7a4a10;display:block;font-size:.76rem;letter-spacing:.09em;text-transform:uppercase;margin-bottom:5px}
+
+  .cierre{background:linear-gradient(135deg,var(--navy),var(--azul-medio));color:#fff;border-radius:14px;padding:28px;margin:40px 0 10px}
+  .cierre h2{color:#fff;font-size:1.35rem;margin-bottom:14px}
+  .cierre ul{list-style:none;display:flex;flex-direction:column;gap:9px;margin:14px 0}
+  .cierre li{color:#c9d8e3;font-size:.94rem;display:grid;grid-template-columns:26px 1fr;gap:9px}
+  .cierre li b{color:var(--orange-d);font-family:'Overpass',sans-serif}
+  .cierre .punch{font-family:'Overpass',sans-serif;font-weight:800;font-size:1.18rem;margin-top:18px}
+
+  .modulos{border:1px solid var(--line);border-radius:12px;padding:22px;margin:34px 0 0}
+  .modulos h2{font-size:1.15rem;color:var(--navy);margin-bottom:6px}
+  .modulos p.m{font-size:.9rem;color:var(--ink2);margin-bottom:12px}
+  .cta{display:inline-block;margin-top:14px;background:var(--orange);color:#fff;font-family:'Overpass',sans-serif;font-weight:800;font-size:.92rem;padding:12px 22px;border-radius:10px;text-decoration:none}
+  .cta:hover{background:var(--orange-d)}
+
+  footer{background:var(--navy2);color:#8fa2b3;padding:32px 0;font-size:.8rem;text-align:center;line-height:1.7;margin-top:40px}
+  footer a{color:var(--orange-d)}
+  .disc{max-width:48rem;margin:0 auto 12px;font-size:.77rem;color:#7f93a4}
+
+  #lock{position:fixed;inset:0;background:rgba(10,27,43,.96);z-index:50;display:flex;align-items:center;justify-content:center;padding:20px}
+  #lock[hidden]{display:none}
+  #lock .box{background:#fff;border-radius:14px;padding:26px;max-width:400px;text-align:center}
+  #lock h2{font-size:1.1rem;color:var(--navy);margin-bottom:8px}
+  #lock p{font-size:.9rem;color:var(--ink2);margin-bottom:16px}
+  #lock a{display:block;padding:13px;border-radius:10px;background:var(--orange);color:#fff;font-family:'Overpass',sans-serif;font-weight:800;text-decoration:none}
+</style>
+
+<style>
+  .err{border-top:1px solid var(--line);padding:34px 0 8px}
+  .err .n{display:inline-block;background:var(--navy);color:#fff;font-family:'Overpass',sans-serif;font-weight:800;font-size:.75rem;letter-spacing:.05em;padding:4px 12px;border-radius:99px;margin-bottom:12px}
+  .err h2{font-size:clamp(1.25rem,3vw,1.6rem);font-weight:800;color:var(--navy);margin-bottom:6px}
+  .err .dice{background:var(--navy2);color:#ffd9a8;font-family:ui-monospace,Menlo,monospace;font-size:.86rem;padding:10px 14px;border-radius:8px;margin:10px 0 16px;line-height:1.55}
+  .err h3{font-size:.8rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--orange);margin:18px 0 6px}
+  .err p{margin-bottom:10px}
+  .prompt{position:relative}
+  .prompt pre{padding-right:70px}
+  .copiar{position:absolute;top:10px;right:10px;background:var(--orange);color:#fff;border:0;border-radius:7px;font-family:'Overpass',sans-serif;font-weight:800;font-size:.72rem;letter-spacing:.04em;padding:6px 11px;cursor:pointer}
+  .copiar:hover{background:var(--orange-d)}
+  .copiar.ok{background:var(--ok)}
+  .aviso{background:#fdf0ee;border-left:3px solid #c0442e;padding:12px 16px;border-radius:0 8px 8px 0;font-size:.9rem;margin:14px 0}
+  .aviso b{color:#8f2f1e;font-family:'Overpass',sans-serif;display:block;font-size:.74rem;letter-spacing:.09em;text-transform:uppercase;margin-bottom:5px}
+  .indice{background:var(--crema);border-radius:12px;padding:20px 24px;margin:26px 0}
+  .indice h2{font-size:.8rem;letter-spacing:.09em;text-transform:uppercase;color:var(--ink2);margin-bottom:12px}
+  .indice ol{margin:0;padding-left:20px;columns:2;column-gap:26px;font-size:.93rem}
+  .indice li{margin-bottom:7px;break-inside:avoid}
+  .indice a{color:var(--navy);text-decoration:none}
+  .indice a:hover{text-decoration:underline}
+  @media(max-width:640px){.indice ol{columns:1}}
+</style>
+
+</head>
+<body>
+
+<div id="lock" hidden><div class="box">
+  <h2>🔒 Acceso a la guía</h2>
+  <p>Es gratis. Déjanos tus datos y entras de inmediato — sin esperar correos.</p>
+  <a id="lockBtn" href="./index.html">Registrarme y entrar</a>
+</div></div>
+
+<div class="top"><div class="wrap">
+  <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04bbc1fa8afa3be0bb00d8.png" alt="Design Modeling Academy">
+  <div class="eyebrow">Guía técnica · Design Modeling Academy</div>
+  <h1>Revit + ChatGPT: resuelve errores con IA</h1>
+  <p>Los 10 errores de Revit que más tiempo hacen perder, el prompt exacto para cada uno — y cuándo NO hacerle caso a la respuesta.</p>
+</div></div>
+
+<div class="fuentes"><div class="wrap">
+  <b>Cómo leer esta guía.</b> Cada error trae lo que dice Revit, lo que significa de verdad, lo que lo causa, un prompt para copiar y una comprobación. La comprobación no es opcional: es la parte que separa usar la IA de creerle.
+</div></div>
+
+<main><div class="wrap">
+
+  <p class="intro">Un error de Revit no cuesta lo que tarda en arreglarse. Cuesta las dos horas de foro que hay antes: buscar el mensaje entre hilos de 2016, encontrar una respuesta para otra versión, probarla, y volver a empezar.</p>
+
+  <p class="intro">La IA acorta esas dos horas a dos minutos <b>cuando le das el contexto correcto</b> y <b>cuando compruebas lo que responde</b>. Sin esas dos condiciones no acorta nada: te da una respuesta segura de sí misma que puede estar equivocada, y encima suena bien.</p>
+
+  <div class="regla">
+    <b>La regla de esta guía</b>
+    La IA es buenísima para <b>entender qué te está diciendo Revit</b> y para <b>ordenar por dónde buscar</b>. Es mala para decidir. Si la respuesta termina en un número que alguien va a firmar, no es trabajo de la IA: es tuyo.
+  </div>
+
+  <div class="indice">
+    <h2>Los 10 errores</h2>
+    <ol>
+      <li><a href="#e1">No aparece en la vista (y el elemento sí está)</a></li>
+      <li><a href="#e2">«Highlighted walls overlap» — muros superpuestos</a></li>
+      <li><a href="#e3">«Constraints are not satisfied» al mover algo</a></li>
+      <li><a href="#e4">«Circular chain of references» en una familia</a></li>
+      <li><a href="#e5">El archivo pesa cada vez más y va lento</a></li>
+      <li><a href="#e6">«There are identical instances in the same place»</a></li>
+      <li><a href="#e7">Etiquetas y cotas que se borran solas</a></li>
+      <li><a href="#e8">«The linked file could not be found»</a></li>
+      <li><a href="#e9">«Elements are joined but do not intersect»</a></li>
+      <li><a href="#e10">El cuadro de cantidades no cuadra con el modelo</a></li>
+    </ol>
+  </div>
+
+
+  <section class="err" id="e1">
+    <div class="n">ERROR 01</div>
+    <h2>No aparece en la vista (y el elemento sí está)</h2>
+    <div class="dice">No hay mensaje. El muro, la viga o el equipo simplemente no se ve.</div>
+    <h3>Qué significa de verdad</h3>
+    <p>Es el que más tiempo hace perder de toda la lista, y casi nunca es un error: el elemento existe, pero la vista está configurada para no mostrarlo.</p>
+    <h3>Qué lo causa</h3>
+    <p>Cinco cosas, en este orden de frecuencia: el <b>rango de vista</b> (View Range) no lo alcanza · el elemento está fuera del <b>área de recorte</b> (Crop Region) · su categoría está apagada en <b>VV/VG</b> · hay un <b>filtro de vista</b> ocultándolo · o alguien lo ocultó a mano (Hide in View).</p>
+    <h3>El prompt</h3>
+    <div class="prompt">
+      <pre><code>Trabajo en Revit [versión] en un proyecto de [disciplina].
+Coloqué un [elemento] en el nivel [N] y no aparece en la vista [nombre y tipo de vista].
+Ya comprobé: [lo que ya revisaste].
+
+Dame una lista ordenada de comprobaciones para encontrar por qué no se ve,
+de la causa más frecuente a la menos frecuente, con la ruta exacta del menú
+en cada paso. No propongas rehacer el elemento.</code></pre>
+      <button class="copiar" type="button">Copiar</button>
+    </div>
+    <h3>Cómo compruebas que la respuesta sirve</h3>
+    <p>Antes de aplicar nada: selecciona la vista, escribe <code>RR</code> (Reveal Hidden Elements). Si el elemento aparece en rojo, está oculto a mano y el resto de la respuesta sobra.</p>
+  </section>
+  <section class="err" id="e2">
+    <div class="n">ERROR 02</div>
+    <h2>«Highlighted walls overlap» — muros superpuestos</h2>
+    <div class="dice">Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries.</div>
+    <h3>Qué significa de verdad</h3>
+    <p>Hay dos muros ocupando el mismo espacio. Revit sigue trabajando, pero cuando calcule áreas de habitación va a ignorar uno de los dos — y el cuadro de áreas va a salir mal sin avisar.</p>
+    <h3>Qué lo causa</h3>
+    <p>Casi siempre copiar y pegar en el mismo sitio, o dibujar encima de un muro vinculado que no se veía.</p>
+    <h3>El prompt</h3>
+    <div class="prompt">
+      <pre><code>Revit [versión] me da la advertencia «Highlighted walls overlap» en [n] casos
+de un modelo de [disciplina].
+Explícame qué consecuencia real tiene esta advertencia sobre el cómputo de áreas
+y sobre las habitaciones, y cuál es el procedimiento para resolverla sin perder
+las cotas y etiquetas que ya están asociadas a esos muros.
+Dime también cómo encontrar los muros afectados desde el cuadro de advertencias.</code></pre>
+      <button class="copiar" type="button">Copiar</button>
+    </div>
+    <h3>Cómo compruebas que la respuesta sirve</h3>
+    <p>En el cuadro Warnings, selecciona la advertencia y pulsa <b>Show</b>: Revit te lleva a los dos muros. Si al borrar uno desaparecen cotas, deshaz y borra el otro.</p>
+  </section>
+  <section class="err" id="e3">
+    <div class="n">ERROR 03</div>
+    <h2>«Constraints are not satisfied» al mover algo</h2>
+    <div class="dice">Constraints are not satisfied. / Can't keep elements joined.</div>
+    <h3>Qué significa de verdad</h3>
+    <p>El elemento que intentas mover está amarrado por una cota bloqueada, un candado o una alineación, y Revit no puede cumplir las dos cosas a la vez.</p>
+    <h3>Qué lo causa</h3>
+    <p>Cotas bloqueadas (el candado cerrado) que alguien puso hace meses para «fijar» algo, y que ahora impiden cualquier cambio.</p>
+    <h3>El prompt</h3>
+    <div class="prompt">
+      <pre><code>En Revit [versión] no puedo mover [elemento] porque sale
+«Constraints are not satisfied».
+Explícame cómo localizar TODAS las restricciones que afectan a ese elemento
+—cotas bloqueadas, alineaciones y candados— y cómo revisarlas una por una
+para decidir cuál quitar.
+Quiero entender qué restricción estoy rompiendo antes de quitarla, no una
+forma rápida de saltarme el aviso.</code></pre>
+      <button class="copiar" type="button">Copiar</button>
+    </div>
+    <h3>Cómo compruebas que la respuesta sirve</h3>
+    <p>Selecciona el elemento y mira si aparecen cotas temporales con candado cerrado. Antes de abrir un candado, pregúntate qué quiso fijar quien lo puso: si no lo sabes, pregúntale a esa persona, no a la máquina.</p>
+  </section>
+  <section class="err" id="e4">
+    <div class="n">ERROR 04</div>
+    <h2>«Circular chain of references» en una familia</h2>
+    <div class="dice">Circular chain of references. Please remove the reference to this parameter.</div>
+    <h3>Qué significa de verdad</h3>
+    <p>Un parámetro de la familia se está calculando a partir de sí mismo, directa o indirectamente. La fórmula se muerde la cola.</p>
+    <h3>Qué lo causa</h3>
+    <p>Fórmulas encadenadas: A depende de B, B depende de C y C vuelve a depender de A. En familias grandes esto se arma solo con el tiempo.</p>
+    <h3>El prompt</h3>
+    <div class="prompt">
+      <pre><code>Estoy editando una familia paramétrica en Revit [versión].
+Al escribir la fórmula [pega la fórmula] en el parámetro [nombre], Revit responde
+«Circular chain of references».
+Estos son los parámetros de la familia y sus fórmulas actuales:
+[pega la lista completa de parámetros con sus fórmulas].
+
+Dibuja la cadena de dependencias entre esos parámetros, señala exactamente
+dónde se cierra el círculo, y propón cómo romperlo sin perder el comportamiento
+que busco, que es: [describe qué debe hacer la familia].</code></pre>
+      <button class="copiar" type="button">Copiar</button>
+    </div>
+    <h3>Cómo compruebas que la respuesta sirve</h3>
+    <p>Esta es de las pocas donde la IA rinde mucho: le das la lista completa de parámetros y te dibuja la cadena. Pero comprueba la fórmula propuesta con <b>tres juegos de valores</b>, incluido un extremo, antes de darla por buena.</p>
+  </section>
+  <section class="err" id="e5">
+    <div class="n">ERROR 05</div>
+    <h2>El archivo pesa cada vez más y va lento</h2>
+    <div class="dice">No hay mensaje. Solo que abrir el modelo pasó de 40 segundos a cuatro minutos.</div>
+    <h3>Qué significa de verdad</h3>
+    <p>Casi nunca es «el modelo es muy grande». Suele ser un puñado de causas concretas y localizables.</p>
+    <h3>Qué lo causa</h3>
+    <p>Advertencias acumuladas sin resolver · vínculos CAD importados (no vinculados) dentro de familias · grupos con muchos ejemplares · demasiadas vistas abiertas · una malla topográfica muy densa.</p>
+    <h3>El prompt</h3>
+    <div class="prompt">
+      <pre><code>Un modelo de Revit [versión] de [disciplina] pasó de [tamaño antes] a
+[tamaño ahora] y tarda [tiempo] en abrir.
+El informe de rendimiento dice: [pega lo que veas en Manage > Warnings y el número
+de advertencias].
+
+Dame un procedimiento de diagnóstico ordenado por impacto: qué revisar primero,
+cómo medir cuánto pesa cada causa y qué es seguro eliminar.
+Advierte cuáles de esos pasos son irreversibles.</code></pre>
+      <button class="copiar" type="button">Copiar</button>
+    </div>
+    <h3>Cómo compruebas que la respuesta sirve</h3>
+    <p>Antes de borrar nada, <b>haz una copia del archivo</b> y trabaja sobre ella. Purgar (Purge Unused) es irreversible una vez guardas.</p>
+  </section>
+  <section class="err" id="e6">
+    <div class="n">ERROR 06</div>
+    <h2>«There are identical instances in the same place»</h2>
+    <div class="dice">There are identical instances in the same place. This will result in double counting in schedules.</div>
+    <h3>Qué significa de verdad</h3>
+    <p>Hay dos elementos idénticos exactamente encima. Los planos se ven bien; el cuadro de cantidades cuenta el doble.</p>
+    <h3>Qué lo causa</h3>
+    <p>Un Ctrl+V de más, o pegar dos veces con «Paste Aligned». Es el error que más caro sale porque nadie lo ve hasta que se presupuesta.</p>
+    <h3>El prompt</h3>
+    <div class="prompt">
+      <pre><code>Revit [versión] me avisa de «identical instances in the same place» en
+[n] casos.
+Dime cómo listar todos los elementos duplicados de golpe y borrarlos de forma
+segura, sin borrar el elemento que sí quiero conservar.
+Explícame también cómo comprobar, después de borrarlos, que el cuadro de
+cantidades cambió el número que tenía que cambiar.</code></pre>
+      <button class="copiar" type="button">Copiar</button>
+    </div>
+    <h3>Cómo compruebas que la respuesta sirve</h3>
+    <p>Esta es la comprobación entera: <b>apunta la cantidad del cuadro antes de borrar</b>. Si después no bajó exactamente en el número de duplicados que borraste, algo más pasó.</p>
+  </section>
+  <section class="err" id="e7">
+    <div class="n">ERROR 07</div>
+    <h2>Etiquetas y cotas que se borran solas</h2>
+    <div class="dice">One or more dimension references are or were deleted. / The tag is orphaned.</div>
+    <h3>Qué significa de verdad</h3>
+    <p>Borraste el elemento al que la cota o la etiqueta apuntaba. La anotación se queda sin nada que medir.</p>
+    <h3>Qué lo causa</h3>
+    <p>Modificar la geometría después de anotar. Es normal y no se puede evitar del todo — lo que se puede es detectarlo antes de imprimir.</p>
+    <h3>El prompt</h3>
+    <div class="prompt">
+      <pre><code>En Revit [versión], al [describe lo que hiciste] me salieron avisos de
+cotas o etiquetas huérfanas.
+Explícame cómo encontrar TODAS las anotaciones huérfanas de un proyecto antes
+de emitir planos, y qué orden de trabajo evita que esto vuelva a pasar en el
+resto del proyecto.</code></pre>
+      <button class="copiar" type="button">Copiar</button>
+    </div>
+    <h3>Cómo compruebas que la respuesta sirve</h3>
+    <p>Antes de emitir: revisa el cuadro de advertencias filtrando por «orphaned». No confíes en verlo a ojo en cada plano — no se ve.</p>
+  </section>
+  <section class="err" id="e8">
+    <div class="n">ERROR 08</div>
+    <h2>«The linked file could not be found»</h2>
+    <div class="dice">The linked file could not be found. / Instance of linked .rvt file is missing.</div>
+    <h3>Qué significa de verdad</h3>
+    <p>El vínculo apunta a una ruta que ya no existe: alguien movió, renombró o guardó en otra carpeta.</p>
+    <h3>Qué lo causa</h3>
+    <p>Rutas locales del disco de una persona en lugar de una ruta compartida del servidor o del entorno común de datos.</p>
+    <h3>El prompt</h3>
+    <div class="prompt">
+      <pre><code>En Revit [versión] tengo vínculos rotos.
+Explícame la diferencia entre ruta absoluta y ruta relativa en Manage Links,
+cuál conviene en un equipo donde cada uno trabaja desde su propio computador,
+y cómo volver a apuntar varios vínculos de golpe.
+Dime también qué convención de carpetas evita que esto se repita.</code></pre>
+      <button class="copiar" type="button">Copiar</button>
+    </div>
+    <h3>Cómo compruebas que la respuesta sirve</h3>
+    <p>Esto no se arregla a nivel de archivo, se arregla a nivel de equipo. Si cada persona vincula desde su Escritorio, va a volver a pasar el mes que viene.</p>
+  </section>
+  <section class="err" id="e9">
+    <div class="n">ERROR 09</div>
+    <h2>«Elements are joined but do not intersect»</h2>
+    <div class="dice">Elements are joined but do not intersect.</div>
+    <h3>Qué significa de verdad</h3>
+    <p>Dos elementos están unidos (Join) pero ya no se tocan, normalmente porque uno se movió después.</p>
+    <h3>Qué lo causa</h3>
+    <p>Union hecha antes de terminar de mover la geometría. Suele venir en paquetes de cientos de avisos.</p>
+    <h3>El prompt</h3>
+    <div class="prompt">
+      <pre><code>Tengo [n] advertencias «Elements are joined but do not intersect» en un
+modelo de Revit [versión].
+Explícame si esta advertencia afecta al cómputo de materiales o solo es ruido,
+y cómo limpiarlas de forma masiva sin deshacer uniones que sí importan.
+Dime cuáles NO debería tocar.</code></pre>
+      <button class="copiar" type="button">Copiar</button>
+    </div>
+    <h3>Cómo compruebas que la respuesta sirve</h3>
+    <p>Antes de limpiar en masa, resuelve <b>tres a mano</b> y mira qué cambió en el modelo. Si no cambió nada visible, la limpieza masiva es segura.</p>
+  </section>
+  <section class="err" id="e10">
+    <div class="n">ERROR 10</div>
+    <h2>El cuadro de cantidades no cuadra con el modelo</h2>
+    <div class="dice">No hay mensaje. El cuadro dice 214 y en obra son 208.</div>
+    <h3>Qué significa de verdad</h3>
+    <p>El cuadro está contando lo que le pediste contar, que no es lo mismo que lo que tú creías haberle pedido.</p>
+    <h3>Qué lo causa</h3>
+    <p>Filtros del cuadro mal puestos · elementos duplicados (error 06) · elementos en fases distintas · elementos dentro de grupos contados dos veces · o unidades y redondeo.</p>
+    <h3>El prompt</h3>
+    <div class="prompt">
+      <pre><code>Tengo un cuadro de cantidades en Revit [versión] de [qué cuenta] que da
+[valor] y debería dar [valor esperado].
+Configuración actual del cuadro: [pega los filtros, el campo de fase y los
+parámetros de agrupación].
+
+Dame las causas posibles de esa diferencia ordenadas por frecuencia, y una
+comprobación concreta para descartar cada una. Empieza por la fase y por los
+duplicados.</code></pre>
+      <button class="copiar" type="button">Copiar</button>
+    </div>
+    <h3>Cómo compruebas que la respuesta sirve</h3>
+    <p>Cuenta a mano un tramo pequeño y conocido del modelo y compáralo con el cuadro filtrado a ese mismo tramo. Si ahí cuadra, el problema está en el filtro, no en el modelo.</p>
+  </section>
+
+  <section class="err" id="contexto">
+    <div class="n">EL MÉTODO</div>
+    <h2>Los cuatro datos sin los que la respuesta no sirve</h2>
+    <p>La diferencia entre una respuesta útil y una respuesta genérica casi nunca está en el modelo de IA. Está en lo que le diste. Cuatro datos, siempre:</p>
+    <table>
+      <thead><tr><th>Dato</th><th>Por qué cambia la respuesta</th></tr></thead>
+      <tbody>
+        <tr><td><b>La versión de Revit</b></td><td>Los menús cambian entre versiones. Una ruta de 2019 te hace perder diez minutos en 2026.</td></tr>
+        <tr><td><b>La disciplina</b></td><td>El mismo aviso se resuelve distinto en estructuras que en instalaciones.</td></tr>
+        <tr><td><b>Qué ya intentaste</b></td><td>Sin esto, la respuesta empieza por lo que ya descartaste. Es el dato que más tiempo ahorra.</td></tr>
+        <tr><td><b>El mensaje literal</b></td><td>Copiado tal cual, en el idioma en que te salió. No lo resumas: el texto exacto es lo que lo identifica.</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="err" id="privacidad">
+    <div class="n">ANTES DE PEGAR</div>
+    <h2>Cómo pegar un error sin filtrar datos del cliente</h2>
+    <p>Un mensaje de error de Revit suele venir con la ruta completa del archivo dentro. Y esa ruta lleva el nombre del cliente, el del proyecto y a veces el del contrato.</p>
+    <p>Tapa tres cosas antes de pegar nada, siempre:</p>
+    <table>
+      <thead><tr><th>Cambia esto</th><th>Por esto</th></tr></thead>
+      <tbody>
+        <tr><td><code>C:\Proyectos\Torre Marbella\...</code></td><td><code>C:\[ruta]\[proyecto]\...</code></td></tr>
+        <tr><td>Nombres de archivo con el cliente</td><td><code>modelo-estructura.rvt</code></td></tr>
+        <tr><td>Códigos internos y números de contrato</td><td><code>[código]</code></td></tr>
+      </tbody>
+    </table>
+    <div class="aviso">
+      <b>Esto no es formalismo</b>
+      Muchos despachos tienen firmado un acuerdo de confidencialidad con el cliente. Pegar la ruta de un proyecto en una herramienta externa puede incumplirlo aunque no lo parezca. Tapar tres campos toma cinco segundos.
+    </div>
+  </section>
+
+  <section class="err" id="verificar">
+    <div class="n">LA PÁGINA QUE MÁS IMPORTA</div>
+    <h2>Cómo verificar la respuesta antes de aplicarla</h2>
+    <p>Una IA no sabe cuándo no sabe. Cuando se equivoca, se equivoca con el mismo tono de seguridad con el que acierta — y eso es exactamente lo que la hace peligrosa en un modelo que alguien va a firmar.</p>
+    <p>Tres comprobaciones. Ninguna toma más de un minuto, y las tres juntas te ahorran el 90% de los problemas:</p>
+
+    <h3>Comprobación 1 · ¿La ruta del menú existe?</h3>
+    <p>Si la respuesta dice «ve a <i>Manage → Tal → Cual</i>», ábrelo antes de creer el resto. Una ruta inventada es la señal más barata de que el modelo está rellenando huecos: si se inventó el menú, probablemente también se inventó el porqué.</p>
+
+    <h3>Comprobación 2 · ¿Cambió el número que tenía que cambiar?</h3>
+    <p>Antes de aplicar, apunta el número: cuántas advertencias hay, cuánto da el cuadro de cantidades, cuánto pesa el archivo. Aplica. Vuelve a mirar. <b>Si el número no se movió, no lo arreglaste</b> — aunque el aviso haya desaparecido de la pantalla.</p>
+
+    <h3>Comprobación 3 · ¿Qué se llevó por delante?</h3>
+    <p>Casi toda solución en Revit toca algo más. Borrar un muro duplicado se lleva sus cotas. Purgar se lleva familias que alguien iba a usar. Pregúntate siempre qué más se movió, y míralo — no lo supongas.</p>
+
+    <div class="regla">
+      <b>Y una regla que resume las tres</b>
+      Trabaja sobre una copia hasta que entiendas la solución. No hasta que funcione: hasta que la entiendas. Si no puedes explicarle a un compañero por qué eso lo arregló, todavía no lo arreglaste — solo hiciste que el aviso se fuera.
+    </div>
+  </section>
+
+  <section class="err" id="no">
+    <div class="n">EL LÍMITE</div>
+    <h2>Qué NO preguntarle nunca</h2>
+    <p>Hay un punto donde la IA deja de ahorrar tiempo y empieza a fabricar riesgo. Está más cerca de lo que parece:</p>
+    <table>
+      <thead><tr><th>No le preguntes</th><th>Por qué</th></tr></thead>
+      <tbody>
+        <tr><td><b>Dimensionamiento</b><br>«¿Qué sección pongo aquí?»</td><td>Te va a dar un número. Va a sonar razonable. No tiene tus cargas, tu norma ni tu suelo — y el número lleva tu firma, no la suya.</td></tr>
+        <tr><td><b>Cumplimiento de norma</b><br>«¿Esto cumple la NEC?»</td><td>Las normas cambian por país, por año y por edición. La IA mezcla versiones sin avisar de que las está mezclando.</td></tr>
+        <tr><td><b>Cualquier cosa que termine en una firma</b></td><td>La responsabilidad profesional no se delega en una herramienta. Ni legal, ni técnica, ni moralmente.</td></tr>
+        <tr><td><b>Datos del cliente</b></td><td>Ver la sección anterior.</td></tr>
+      </tbody>
+    </table>
+    <div class="aviso">
+      <b>La línea, en una frase</b>
+      Úsala para <b>entender</b> y para <b>buscar más rápido</b>. No para <b>decidir</b>. En el momento en que la respuesta se convierte en un número de proyecto, el trabajo vuelve a ser tuyo.
+    </div>
+  </section>
+
+  <div class="cierre">
+    <h2>Lo que estos 10 errores tienen en común</h2>
+    <ul>
+      <li><b>1</b> Ninguno es un fallo de Revit. Son avisos de que el modelo dice algo distinto de lo que crees que dice.</li>
+      <li><b>2</b> Casi todos se ven en el cuadro de advertencias, y casi nadie lo abre hasta que algo duele.</li>
+      <li><b>3</b> Los que más caro salen —duplicados, cuadros que no cuadran— no dan ningún mensaje. Se descubren al presupuestar.</li>
+      <li><b>4</b> La IA los explica en dos minutos. Lo que no hace es abrir el cuadro de advertencias por ti.</li>
+    </ul>
+    <p class="punch">Un modelo con 400 avisos sin leer no es un modelo grande. Es un presupuesto con 400 sorpresas dentro.</p>
+  </div>
+
+  <div class="modulos">
+    <h2>Dónde se aprende esto completo</h2>
+    <p class="m">Esta guía cubre el uso de IA para resolver errores. El uso de IA <i>dentro</i> de la metodología BIM —automatizar lo repetitivo, verificar información del proyecto y decidir qué se automatiza y qué no— es un módulo entero.</p>
+    <table>
+      <thead><tr><th>Lo que viste aquí</th><th>Dónde se profundiza</th></tr></thead>
+      <tbody>
+        <tr><td>Prompts con contexto técnico</td><td>Módulo BIM + IA · AUTOMATIZA</td></tr>
+        <tr><td>Verificar lo que responde la IA</td><td>Módulo BIM + IA · misma unidad</td></tr>
+        <tr><td>Advertencias y salud del modelo</td><td>Módulo BIM Coordination · COORDINA</td></tr>
+        <tr><td>Cuadros de cantidades que cuadran</td><td>Módulo BIM Management 4D-5D · GESTIONA</td></tr>
+      </tbody>
+    </table>
+    <a class="cta" href="https://designmodelingacademy.com" target="_blank" rel="noopener">Ver el Máster Internacional BIM + IA →</a>
+  </div>
+
+</div></main>
+
+<footer><div class="wrap">
+  <p class="disc"><b>Guía educativa.</b> Los prompts son puntos de partida, no soluciones automáticas. Ninguna respuesta de una herramienta de IA sustituye el criterio ni la responsabilidad del profesional que firma el proyecto. Toda decisión de diseño debe verificarse con la norma vigente aplicable y la revisa el ingeniero responsable. No es una certificación ni un diploma.</p>
+  <p>Design Modeling Academy · <a href="https://www.dgdesignmodeling.com" target="_blank" rel="noopener">dgdesignmodeling.com</a></p>
+</div></footer>
+
+<script>
+const REQUIERE_REGISTRO = true;
+const TOKEN_ACCESO = 'dm2026';
+const URL_LANDING  = './index.html';
+(function candado(){
+  if(!REQUIERE_REGISTRO) return;
+  const p = new URLSearchParams(location.search);
+  if(p.get('acceso') === TOKEN_ACCESO){ try{localStorage.setItem('dm_revitia_acceso', TOKEN_ACCESO);}catch(e){} return; }
+  try{ if(localStorage.getItem('dm_revitia_acceso') === TOKEN_ACCESO) return; }catch(e){}
+  document.getElementById('lock').hidden = false;
+  document.getElementById('lockBtn').href = URL_LANDING;
+})();
+
+/* Copiar el prompt. Es el gesto principal de la guia: si esto falla, la guia
+   no sirve para lo que promete. */
+document.querySelectorAll('.copiar').forEach(function(b){
+  b.addEventListener('click', function(){
+    var txt = b.closest('.prompt').querySelector('code').innerText;
+    function ok(){ b.textContent='Copiado'; b.classList.add('ok');
+      setTimeout(function(){ b.textContent='Copiar'; b.classList.remove('ok'); }, 1600); }
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(txt).then(ok, respaldo);
+    } else respaldo();
+    function respaldo(){
+      /* Sin permiso de portapapeles (pasa dentro de un iframe de GHL):
+         seleccionamos el texto para que se pueda copiar a mano. */
+      var r=document.createRange(); r.selectNodeContents(b.closest('.prompt').querySelector('code'));
+      var s=window.getSelection(); s.removeAllRanges(); s.addRange(r);
+      b.textContent='Selecciona y copia';
+      setTimeout(function(){ b.textContent='Copiar'; }, 2600);
+    }
+  });
+});
+</script>
+</body>
+</html>
