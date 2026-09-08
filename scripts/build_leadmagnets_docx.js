@@ -65,7 +65,7 @@ push(P('Los tres recursos están construidos, publicados y probados de punta a p
 push(H1('Los tres, de un vistazo'));
 push(tabla(['Recurso','Palabra','Estado'],[
   ['Revit + ChatGPT: resuelve errores con IA','GUIA','**Listo para el CTA.** Solo falta el montaje en GHL.'],
-  ['Memoria de cálculo + plantillas','MEMORIA','Montable ya, pero **el CTA espera la revisión de Gabriel**.'],
+  ['Memoria de cálculo + plantillas','MEMORIA','Estructura ya cruzada contra una memoria real. **El CTA espera el visto bueno de Gabriel**.'],
   ['Pack starter de Dynamo','DYNAMO','Montable ya, pero **el CTA espera correr los 5 scripts en Revit**.'],
 ],[4000,1400,3800]));
 push(CAJA('El de Revit + ChatGPT es el urgente: hay un reel el miércoles 9 cuyo CTA ya lo promete. Ese es el que hay que montar primero.',ORANGE,WARN));
@@ -88,13 +88,11 @@ push(SALTO());
 push(H1('Lo que falta, y quién lo cierra'));
 push(P('Esto va primero a propósito. Los tres recursos están en el aire —estar publicados no hace daño— pero **dos de ellos no pueden llevar CTA todavía**, y conviene que se sepa antes de montar nada.'));
 
-push(H2('1 · La memoria de cálculo la revisa Gabriel'));
-push(P('Es el único de los tres que puede terminar dentro de un documento que alguien firma. Si la estructura que proponemos está incompleta, el problema deja de ser de marketing.'));
-push(P('Lo que hay que mirar, en concreto:'));
-push(NUM(1,'Que las **13 secciones** estén completas para el tipo de memoria que se entrega en la región. Si falta una, se añade antes de publicar el CTA.'));
-push(NUM(2,'Que los **5 errores de devolución** sean los que de verdad devuelve una entidad revisora aquí, no los que son teóricamente correctos.'));
-push(NUM(3,'Que **la plantilla de Word no induzca a omitir nada.** Una plantilla que se usa tal cual acaba definiendo el alcance del documento.'));
-push(CAJA('Dayana va a pasar una memoria real que usa Gabriel. Cuando llegue, se cruza la plantilla contra ella y se ajusta lo que haga falta: es mejor referencia que cualquier estructura teórica.',GREEN,OK));
+push(H2('1 · La memoria de cálculo: ya cruzada, falta el visto bueno'));
+push(P('**8 de septiembre.** La estructura se cruzó contra una memoria real de proyecto tipo (Robot Structural Analysis, NEC-SE-DS) y cambió bastante: de 13 a 12 secciones en otro orden, con **cálculo del cortante basal** y **análisis modal** como secciones propias, **«Limitación de daños»** en vez de «estados límite de servicio», **Registro Senescyt** en la portada, y una convención de figuras que antes no existía.'));
+push(P('También apareció una **sexta devolución**: el documento que se contradice a sí mismo — restos de haberlo armado partiendo de otro anterior. Es el error más fácil de encontrar y el que peor sienta al revisor.'));
+push(CAJA('Ya no es una estructura teórica: sale de un documento que se entrega de verdad. Eso era lo que faltaba.',GREEN,OK));
+push(P('**Lo que sigue pendiente:** que Gabriel la mire y diga si falta alguna sección para el tipo de memoria que él entrega, si el orden es el que usa, y si la plantilla no induce a omitir nada. Una cosa es cruzarla y otra que él la apruebe.'));
 
 push(H2('2 · Los 5 scripts de Dynamo hay que correrlos en Revit'));
 push(P('No hay Revit en el entorno donde se construyeron, así que **nadie los ha visto ejecutarse.** Es semana 3, hay tiempo, pero hay que hacerlo.'));

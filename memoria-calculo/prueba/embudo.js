@@ -56,7 +56,7 @@ const B='file://'+path.join(__dirname,'..')+'/';
   await p.goto(local,{waitUntil:'load'});
   const abierta = !(await p.locator('#lock').isVisible());
   console.log('5. guía tras el embudo   :', abierta?'ABIERTA ✔':'SIGUE CERRADA ✖');
-  console.log('   secciones de la guía  :', await p.locator('.sec .n').count(), '(13 + 5 devoluciones + 1 portada = 19)');
+  console.log('   secciones de la guía  :', await p.locator('.sec .n').count(), '(12 secciones + 6 devoluciones + 1 bloque = 19)');
 
   // 6. Que no prometa lo que no existe
   const txt = await p.evaluate(()=>document.body.innerText);
