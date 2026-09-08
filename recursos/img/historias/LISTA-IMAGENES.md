@@ -31,3 +31,31 @@ la variante 16:9 del tema que se elija (1 crédito cada una).
 
 **Regla de siempre:** si se les monta texto o logo encima, el logo va el real
 del CDN — nunca uno generado.
+
+---
+
+## Detrás de cámaras · 8-sep-2026
+
+Dos piezas **1080×1920 exactos** (las 16 de arriba son 768×1376). Escena real de
+oficina: trípode con teléfono, aro de luz encendido y un pórtico estructural en
+la pantalla del fondo.
+
+| Var. | Qué la diferencia | URL |
+|---|---|---|
+| A | Teléfono de espaldas, como está de verdad al grabar. Más aire navy arriba. Pórtico de 3 niveles | https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/historias/bts-grabacion-A.jpg |
+| B | Aro de luz más protagonista, escritorio completo con los cables clipados. Pórtico de 1 nivel | https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/historias/bts-grabacion-B.jpg |
+
+**Pensadas para historias con texto encima.** El 25% superior y el 25% inferior
+son zona lisa y oscura —comprobado: desviación por debajo de 11 y brillo por
+debajo de 34— así que el texto blanco de Instagram se lee sin pelearse con la
+imagen y la interfaz no tapa nada importante.
+
+**Lo que falló al generarlas, por si se repite el encargo:** pedir «el 25%
+superior e inferior libres» hace que el modelo dibuje **bandas literales**, con
+costura visible, como una foto pegada en un marco. Se corrige pidiendo una foto
+a sangre —«fills the entire frame edge to edge, no bands, no letterbox»— y
+colocando el sujeto «en el tercio central».
+
+**A revisar si se publican tal cual:** en la variante B se ve la marca del
+monitor, y en las dos hay texto diminuto de interfaz. Es ilegible al tamaño de
+historia; si molesta, se regenera.
