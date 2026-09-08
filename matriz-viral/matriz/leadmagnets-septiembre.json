@@ -180,17 +180,17 @@
    "nombre": "Guía de memoria de cálculo + plantilla",
    "palabra": "MEMORIA",
    "formato": "PDF de la guía + plantilla editable (Word y Excel)",
-   "estado": "CONSTRUIDO Y PUBLICADO — 7-sep-2026. Guía de 13 secciones + 5 devoluciones, plantilla en Word y hoja de verificaciones en Excel. BLOQUEADO PARA EL CTA hasta que Gabriel revise la estructura: es el único que puede terminar dentro de un documento que alguien firma. Falta también abrir el .docx y el .xlsx en Word y Excel de verdad — desde el contenedor no hay forma.",
+   "estado": "CONSTRUIDO Y PUBLICADO — 7-sep-2026. Estructura CRUZADA el 8-sep contra una memoria real de proyecto tipo (Robot Structural Analysis, NEC-SE-DS): pasó de 13 a 12 secciones en otro orden, con cortante basal y análisis modal como secciones propias, «Limitación de daños» en vez de «estados límite de servicio», Registro Senescyt, y una sexta devolución sobre incoherencias internas del documento. FALTA el visto bueno de Gabriel antes del CTA, y abrir el .docx y el .xlsx en Word y Excel de verdad.",
    "cuando": "Semana 4. Es el que más valor tiene de los tres y el que más cuidado necesita.",
    "promesa": "La estructura completa de una memoria de cálculo que se sostiene ante revisión, con la plantilla para llenarla.",
    "para_quien": "El ingeniero que ya calcula bien pero improvisa el documento cada vez, y el que va a entregar a una entidad por primera vez.",
    "por_que": "Es el que pidió Dayana el 2-sep. Y encaja con lo que ya sabemos de la cuenta: los posts que revientan son los de dato de cálculo. Una memoria de cálculo es dato de cálculo convertido en documento — el mismo público, un paso más adelante.",
    "contenido": [
-    "Las secciones que toda memoria debe tener, en orden, y qué va en cada una.",
-    "Qué se cita y cómo: normativa, hipótesis de carga, criterios adoptados y de dónde salen.",
-    "Los cinco errores por los que devuelven una memoria — y cómo se ve cada uno corregido.",
-    "Plantilla editable en Word con la estructura montada, y hoja de Excel para el resumen de verificaciones.",
-    "Ejemplo corto completo, de principio a fin, con números reales."
+    "Las 12 secciones que toda memoria debe tener, en el orden que usa una memoria real, y qué va en cada una.",
+    "Qué se cita y cómo: normativa con versión y año, hipótesis de carga, criterios adoptados y de dónde salen.",
+    "Los seis errores por los que devuelven una memoria — y cómo se ve cada uno corregido.",
+    "La convención de figuras y tablas: correlativas, citadas desde el texto y con el pie diciendo de dónde salen.",
+    "Plantilla editable en Word con la estructura montada, y hoja de Excel para el resumen de verificaciones (ELU y ELS)."
    ],
    "produccion": [
     "Este recurso lo revisa Gabriel antes de salir. Es el único de los tres que puede terminar dentro de un documento que alguien firma: si la estructura que proponemos está incompleta, el problema deja de ser de marketing.",
@@ -237,5 +237,5 @@
    "url": "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/memoria-calculo/"
   }
  ],
- "actualizado": "2026-09-07 · los tres construidos y publicados; dos bloqueados para el CTA por verificación que no se puede hacer desde el repositorio (revisión de Gabriel, y correr los scripts en Revit)."
+ "actualizado": "2026-09-08 · los tres construidos y publicados. La memoria de cálculo ya tiene su estructura cruzada contra un documento real; sigue esperando el visto bueno de Gabriel. El pack de Dynamo sigue esperando que alguien corra los cinco scripts en Revit."
 }

@@ -14,27 +14,55 @@ Excel     …/memoria-calculo/Resumen-Verificaciones-DMA.xlsx
 
 ---
 
-## ⚠️ ANTES DE PUBLICAR EL CTA — lo revisa Gabriel
+## La estructura ya se cruzó contra una memoria real
 
-La matriz lo dice y hay que respetarlo: **este es el único de los tres recursos
-que puede terminar dentro de un documento que alguien firma.** Si la estructura
-que proponemos está incompleta, el problema deja de ser de marketing.
+**8 de septiembre.** Dayana pasó una memoria de proyecto tipo de Robot Structural
+Analysis, de las que usa Gabriel, y la estructura de la guía se ajustó contra
+ella. Lo que cambió:
 
-Lo que Gabriel tiene que mirar, en concreto:
+| Cambio | Por qué |
+|---|---|
+| **De 13 a 12 secciones**, en otro orden | La memoria real pone la normativa después de describir el sistema, no antes |
+| **Nueva: «Proceso de cálculo»** | La cadena ubicación → amenaza sísmica → uso → importancia → sistema. Es lo que más rápido orienta al revisor |
+| **Nueva: «Cálculo del cortante basal»** | En Ecuador el revisor la busca por su nombre. Estaba escondida dentro de «resultados» |
+| **Nueva: «Análisis modal»** | Períodos y participación de masas: es lo que justifica que el modelo dinámico valga |
+| «Estados límite de servicio» → **«Limitación de daños»** | Es el nombre que usa la NEC y el que busca un revisor ecuatoriano |
+| «Registro profesional» → **«Registro Senescyt»** | Es el dato que identifica al responsable en Ecuador |
+| Portada con **área y n.º de niveles** | Lo primero que mira el revisor para ubicarse |
+| **Nueva: convención de figuras y tablas** | La memoria real se apoya en 48 figuras. Sin sitio para ellas, la plantilla no servía |
+| **Nueva devolución 6: el documento se contradice** | Ver abajo |
 
-1. **Que las 13 secciones estén completas** para el tipo de memoria que
-   entregamos en la región. Si falta una, se añade antes de publicar.
-2. **Que los 5 errores de devolución** correspondan a lo que de verdad devuelve
-   una entidad revisora aquí, no a lo que es teóricamente correcto.
-3. **Que la plantilla de Word no induzca a nadie a omitir algo.** Una plantilla
-   que se usa tal cual acaba definiendo el alcance del documento.
+### La devolución nueva, y de dónde salió
 
-Hasta que lo revise, el recurso puede estar publicado (no hace daño estando ahí),
-pero **el CTA no sale en ninguna pieza**. Si toca la fecha y no hay revisión, la
-matriz ya tiene el reemplazo previsto: el CTA cambia a las 5 Verificaciones de
-Acero, que ya existe.
+Al leer la memoria real aparecieron cuatro incoherencias internas — restos de
+haberla armado partiendo de otra anterior, que es lo normal:
 
----
+- El objetivo y las conclusiones hablan de **«perfiles de acero»** en una
+  estructura de **hormigón armado**.
+- Un pie de tabla cita **un software distinto** del que se usó en todo el resto.
+- El **tipo de suelo** es «D» en el texto y «E» en la tabla de coeficientes.
+- La fila «tipo de estructura» de la tabla del cortante basal dice **«acero
+  estructural»** en un edificio de hormigón: conviene comprobar que Ct y α
+  correspondan al sistema real, porque de esa fila dependen.
+
+Ninguna es un error de cálculo. Las cuatro se encuentran con tres búsquedas en
+el documento. Por eso ahora la guía tiene una sexta devolución dedicada a esto,
+y la plantilla abre su comprobación final con ellas.
+
+**Estas incoherencias NO se publican con atribución.** La guía las cuenta en
+abstracto, sin decir de qué documento salieron.
+
+## Sigue pendiente: el visto bueno de Gabriel
+
+La estructura ya no es teórica, pero **una cosa es cruzarla y otra que él la
+apruebe.** Antes de que salga el CTA conviene que la mire y diga si:
+
+1. Falta alguna sección para el tipo de memoria que entrega.
+2. El orden es el que usa, o hay una razón práctica para otro.
+3. La plantilla no induce a omitir nada.
+
+Si llega la fecha sin ese visto bueno, la matriz ya tiene el reemplazo previsto:
+el CTA cambia a las 5 Verificaciones de Acero, que ya existe.
 
 ## Lo que este recurso NO hace, y por qué
 
