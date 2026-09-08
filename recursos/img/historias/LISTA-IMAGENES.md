@@ -59,3 +59,29 @@ colocando el sujeto «en el tercio central».
 **A revisar si se publican tal cual:** en la variante B se ve la marca del
 monitor, y en las dos hay texto diminuto de interfaz. Es ilegible al tamaño de
 historia; si molesta, se regenera.
+
+
+## Serie «bloqueo y tiempo» · 8-sep-2026
+
+Cuatro piezas más en 1080×1920, del mismo encargo. Acompañan al lead magnet de
+Revit + ChatGPT: el error que te frena y el tiempo que se va en resolverlo.
+
+| Tema | Var. | Qué la diferencia | URL |
+|---|---|---|---|
+| Sensación de bloqueo | A | Modelo 3D bien desenfocado detrás, como pedía el brief | https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/historias/error-bloqueo-A.jpg |
+| Sensación de bloqueo | B | El modelo sale **nítido** —se desvía del brief— pero pega más fuerte | https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/historias/error-bloqueo-B.jpg |
+| Reloj de arena | A | Franjas superior e inferior totalmente lisas (desviación 0,9). La más limpia para texto | https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/historias/reloj-arena-A.jpg |
+| Reloj de arena | B | Retícula de plano en todo el fondo y reloj más grande | https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/historias/reloj-arena-B.jpg |
+
+**Cómo se resolvió el «cuadro de error sin texto legible».** Un diálogo de error
+lleva texto por definición, y el modelo lo escribe con faltas. Se pide que el
+área del mensaje sean **barras grises de marcador de posición**, no palabras:
+así se lee como un diálogo real sin que haya una sola letra.
+
+**Cómo se resolvió «arena convertida en código».** Pedir código literal hace que
+el modelo escriba letras. Se pide **símbolos geométricos** —corchetes angulares,
+llaves, puntos y guiones— que se leen como código sin ser palabras.
+
+**A revisar si se publican tal cual:** en `error-bloqueo-B` se ve la marca del
+monitor, y en las dos de bloqueo hay texto diminuto de interfaz. Ilegible al
+tamaño de historia; si molesta, se regenera.
