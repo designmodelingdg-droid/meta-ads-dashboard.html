@@ -107,6 +107,13 @@ jobs:
           cp -r tutor-acero public/tutor-acero
           # Creativos ganadores del cierre de mes (los usa el mazo de la reunion)
           cp -r cierre-agosto public/cierre-agosto
+          # Entregables descargables: los Word y las plantillas que el equipo
+          # abre desde el telefono. Van con URL propia para poder mandarlos por
+          # WhatsApp sin adjuntar nada.
+          mkdir -p public/entregables
+          cp matriz-viral/entregables/*.docx public/entregables/ 2>/dev/null || true
+          cp matriz-viral/entregables/matriz-septiembre-artefacto.html public/entregables/ 2>/dev/null || true
+          ls -la public/entregables/ || true
           # Sin procesamiento Jekyll
           touch public/.nojekyll
           # index mínimo para que la raíz no dé 404 y sirva de estado

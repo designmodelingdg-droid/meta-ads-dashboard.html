@@ -136,7 +136,7 @@ REELS_PAUTA = [
    ("0:20-0:25", "Cierre con la landing en pantalla.", "Es gratis y entras al instante. El enlace está aquí abajo.", "GRATIS · ACCESO **INMEDIATO**")]},
 
  {"id": "pauta-memoria", "recurso": "Memoria de cálculo + plantillas", "palabra": "MEMORIA",
-  "estado": "BLOQUEADO — no sale hasta el visto bueno de Gabriel", "duracion": "20-25 s",
+  "estado": "LISTO PARA GRABAR — Gabriel dio el visto bueno (8-sep)", "duracion": "20-25 s",
   "destino": "Formulario → landing memoria-calculo",
   "nota": "⚠ El recurso está publicado pero su CTA espera revisión académica. No se sube a "
           "pauta antes de eso: es el único que puede terminar dentro de un documento firmado.",
@@ -147,7 +147,7 @@ REELS_PAUTA = [
    ("0:20-0:25", "Cierre.", "Gratis. El enlace está aquí abajo.", "GRATIS · ACCESO **INMEDIATO**")]},
 
  {"id": "pauta-dynamo", "recurso": "Pack starter de Dynamo", "palabra": "DYNAMO",
-  "estado": "BLOQUEADO — no sale hasta correr los 5 scripts en Revit", "duracion": "20-25 s",
+  "estado": "LISTO PARA GRABAR — los 5 scripts se corrieron en Revit (8-sep)", "duracion": "20-25 s",
   "destino": "Formulario → landing pack-dynamo",
   "nota": "⚠ Los scripts están escritos y verificados en sintaxis y API, pero nadie los ha "
           "visto ejecutarse. No se promete en pauta lo que no se ha corrido.",
