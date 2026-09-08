@@ -293,9 +293,15 @@ def tab_historias():
 # ════════════════════ PESTAÑA: REELS ════════════════════
 def tab_reels():
     o = ['<h2>Guiones de reels — para grabar</h2>',
-         '<p class="intro">Cinco reels. Cuatro por grabar y uno ya editado. Cada guion va segundo a '
-         'segundo: qué se ve, qué se dice y qué texto aparece en pantalla. '
-         'Las palabras entre **asteriscos** van resaltadas en ámbar en el subtítulo.</p>',
+         '<p class="intro">Cinco reels de valor, <b>los cinco nuevos</b>, y cuatro creativos de '
+         'pauta. Cada guion va segundo a segundo: qué se ve, qué se dice y qué texto aparece en '
+         'pantalla. Las palabras entre **asteriscos** van resaltadas en ámbar en el subtítulo.</p>',
+         '<div class="dato" style="border-left-color:#c0442e"><strong>Los cinco anteriores se '
+         'retiraron el 8-sep.</strong> Dos ya se habían publicado en agosto: «Revit me arrojó un '
+         'error» (= <i>le pedia a la ia dg.mp4</i>) y «El salto que más cuesta» (= <i>modelas bien '
+         'dg reel.mp4</i>, cuyo gancho empezaba literalmente «llevas tres años modelando bien»). '
+         'Los otros tres salieron con ellos porque la instrucción fue dejar cinco completamente '
+         'nuevos, no cuatro nuevos y uno heredado.</div>',
          '<div class="dato"><strong>La regla del primer segundo.</strong> Se abre con la frontera — '
          'la afirmación que incomoda o el dato que sorprende — nunca con la invitación. En agosto un '
          'reel que abría presentándose hizo 198 vistas y cero de todo.</div>',
@@ -315,6 +321,37 @@ def tab_reels():
             tx_html = e(tx).replace("**", "|")
             partes = tx_html.split("|")
             tx_html = "".join(p if i % 2 == 0 else f'<b class="amb">{p}</b>' for i, p in enumerate(partes))
+            o.append(f'<tr><td class="t">{e(t)}</td><td>{e(ve)}</td><td>{e(di)}</td><td>{tx_html}</td></tr>')
+        o.append('</tbody></table></div></div>')
+
+    # ── Creativos de pauta ────────────────────────────────────────────────
+    # No son piezas de feed: llevan CTA a formulario, no a comentario. Van al
+    # final de la pestaña y no en la de publicidad porque quien los graba es
+    # quien graba los otros cinco, en la misma sesion.
+    o.append('<h2 style="margin-top:44px">Creativos de pauta — lead magnets</h2>')
+    o.append('<p class="intro">Se graban en la misma sesión que los de arriba pero se montan '
+             'aparte: llevan CTA a <b>formulario</b>, no a comentario. En agosto el formulario '
+             'trajo el lead a <b>$0,46</b> contra <b>$0,78</b> de WhatsApp — un 41% más barato.</p>')
+    o.append('<div class="dato"><strong>Ninguna pieza del Máster lleva precio.</strong> '
+             'La de ACERO sí, porque ahí el precio ES el argumento: subió a $225 y la razón '
+             'es el tutor de IA incluido.</div>')
+    for r in getattr(R, "REELS_PAUTA", []):
+        bloq = r["estado"].startswith("BLOQUEADO")
+        k = clave("pauta", r["id"], r["recurso"])
+        o.append(f'<div class="reel col {"gated" if bloq else ""}" data-k="{k}">'
+                 f'<div class="pieza-cab cab">{chk(k)}'
+                 f'<span class="fecha">{e(r["palabra"])}</span>'
+                 f'<h3>{e(r["recurso"])}</h3>'
+                 f'<span class="tipo">{e(r["duracion"])}</span></div>')
+        o.append(f'<p class="estado">{e(r["estado"])}</p>')
+        o.append(f'<p class="nota">{e(r["nota"])}</p>')
+        o.append(f'<p class="cta-linea"><b>Destino:</b> {e(r["destino"])}</p>')
+        o.append('<div class="tabla-scroll"><table><thead><tr><th>Tiempo</th><th>Qué se ve</th>'
+                 '<th>Qué se dice</th><th>Texto en pantalla</th></tr></thead><tbody>')
+        for t, ve, di, tx in r["guion"]:
+            tx_html = e(tx).replace("**", "|")
+            partes = tx_html.split("|")
+            tx_html = "".join(x if i % 2 == 0 else f'<b class="amb">{x}</b>' for i, x in enumerate(partes))
             o.append(f'<tr><td class="t">{e(t)}</td><td>{e(ve)}</td><td>{e(di)}</td><td>{tx_html}</td></tr>')
         o.append('</tbody></table></div></div>')
     return "\n".join(o)
@@ -847,7 +884,7 @@ def main():
     kb = salida.stat().st_size / 1024
     n_hist = sum(len(d["historias"]) for s in H.SEMANAS for d in s["dias"])
     print(f"OK → {salida} ({kb:.0f} KB)")
-    print(f"   {len(PESTANAS)} pestañas · {n_hist} historias · {len(R.REELS)} guiones de reel")
+    print(f"   {len(PESTANAS)} pestañas · {n_hist} historias · {len(R.REELS)} reels de valor + {len(R.REELS_PAUTA)} de pauta")
 
 
 if __name__ == "__main__":

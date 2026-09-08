@@ -96,9 +96,7 @@ MAGNETS = [
     promesa="Los 10 errores de Revit que más tiempo hacen perder, y el prompt exacto que los "
             "resuelve — con la advertencia de cuándo NO hacerle caso a la respuesta.",
     para_quien="Quien ya usa Revit todos los días y pierde tardes enteras buscando en foros.",
-    por_que="El reel «Valor 6» cuenta exactamente esto — un error de Revit resuelto con ChatGPT en "
-            "vez de dos horas de foro — y es la pieza base del miércoles 9. El recurso no se "
-            "inventa para llenar un hueco: se crea porque ya hay una pieza que lo pide.",
+    por_que="El reel de duplicados del miercoles 16 y el del limite de la IA del miercoles 30 cuentan exactamente esto, y sus CTA apuntan aqui. El recurso no se inventa para llenar un hueco: existe porque ya hay piezas que lo piden.",
     contenido=[
         "Los 10 errores: qué dice Revit, qué significa de verdad y qué lo causa.",
         "El prompt exacto para cada uno, escrito para copiar y pegar, con el contexto que hay que "

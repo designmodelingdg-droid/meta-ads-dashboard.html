@@ -57,9 +57,12 @@ y comprobar que el número cambió. Ese tercer plano es el mensaje.
   alguien presupuesta.»
 
 ### Conexión con lo que ya funcionó
-El reel «Valor 6» cuenta exactamente esto —un error resuelto con IA en vez de
-dos horas de foro— y es la pieza base del miércoles 9. **El recurso no se
-inventó para llenar un hueco: existe porque ya había una pieza que lo pedía.**
+Dos reels del mes apuntan aquí: el de **duplicados** (miércoles 16) y el del
+**límite de la IA** (miércoles 30). **El recurso no se inventó para llenar un
+hueco: existe porque ya hay piezas que lo piden.**
+
+> El reel que originalmente lo sostenía —«Revit me arrojó un error»— se retiró
+> el 8-sep: ya se había publicado en agosto.
 
 ### CTA
 > Comenta **GUIA** y te la mando.
