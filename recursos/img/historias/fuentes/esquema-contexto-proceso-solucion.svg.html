@@ -1,0 +1,76 @@
+<style>
+  html,body{margin:0;padding:0;background:#0E2438;width:1080px;height:1920px;overflow:hidden}
+  svg{display:block}
+</style>
+<svg width="1080" height="1920" viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Retícula de plano, muy tenue: da la textura técnica sin competir -->
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0 L0 0 0 60" fill="none" stroke="#18334A" stroke-width="1"/>
+    </pattern>
+    <!-- Halo suave detrás de la columna de cajas -->
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#14304A" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#0E2438" stop-opacity="0"/>
+    </radialGradient>
+    <marker id="punta" viewBox="0 0 12 12" refX="6" refY="6"
+            markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M1 1 L11 6 L1 11 z" fill="#E8A04A"/>
+    </marker>
+  </defs>
+
+  <rect width="1080" height="1920" fill="#0E2438"/>
+  <rect width="1080" height="1920" fill="url(#grid)" opacity="0.5"/>
+  <ellipse cx="540" cy="960" rx="470" ry="560" fill="url(#halo)"/>
+
+  <!-- ══════════ CAJA 1 · CONTEXTO — documento ══════════ -->
+  <g transform="translate(330,500)">
+    <rect x="0" y="0" width="420" height="220" rx="16"
+          fill="#12293E" stroke="#FFFFFF" stroke-width="2.5"/>
+    <!-- esquina superior izquierda marcada, como una viñeta de plano -->
+    <path d="M0 34 L0 16 Q0 0 16 0 L34 0" fill="none" stroke="#E8A04A" stroke-width="4"/>
+    <g transform="translate(210,110)" stroke="#FFFFFF" stroke-width="3.4"
+       fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <!-- hoja con esquina doblada -->
+      <path d="M-38 -56 L18 -56 L44 -30 L44 56 L-38 56 Z"/>
+      <path d="M18 -56 L18 -30 L44 -30"/>
+      <!-- renglones -->
+      <path d="M-20 -6 L26 -6"/>
+      <path d="M-20 14 L26 14"/>
+      <path d="M-20 34 L8 34"/>
+    </g>
+  </g>
+
+  <!-- flecha 1 -->
+  <path d="M540 748 L540 828" stroke="#E8A04A" stroke-width="5"
+        stroke-linecap="round" marker-end="url(#punta)"/>
+
+  <!-- ══════════ CAJA 2 · PROCESO — engranaje ══════════ -->
+  <g transform="translate(330,860)">
+    <rect x="0" y="0" width="420" height="220" rx="16"
+          fill="#12293E" stroke="#FFFFFF" stroke-width="2.5"/>
+    <path d="M0 34 L0 16 Q0 0 16 0 L34 0" fill="none" stroke="#E8A04A" stroke-width="4"/>
+    <g transform="translate(210,110)" stroke="#FFFFFF" stroke-width="3.4"
+       fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Contorno dentado calculado, no radios: un engranaje con radios
+           se lee como un sol. Ocho dientes, raiz 31 y punta 45. -->
+      <path d="M 0.54 -31.00 L 6.26 -44.56 L 27.08 -35.94 L 21.53 -22.30 L 22.30 -21.53 L 35.94 -27.08 L 44.56 -6.26 L 31.00 -0.54 L 31.00 0.54 L 44.56 6.26 L 35.94 27.08 L 22.30 21.53 L 21.53 22.30 L 27.08 35.94 L 6.26 44.56 L 0.54 31.00 L -0.54 31.00 L -6.26 44.56 L -27.08 35.94 L -21.53 22.30 L -22.30 21.53 L -35.94 27.08 L -44.56 6.26 L -31.00 0.54 L -31.00 -0.54 L -44.56 -6.26 L -35.94 -27.08 L -22.30 -21.53 L -21.53 -22.30 L -27.08 -35.94 L -6.26 -44.56 L -0.54 -31.00 Z"/>
+      <circle cx="0" cy="0" r="15"/>
+    </g>
+  </g>
+
+  <!-- flecha 2 -->
+  <path d="M540 1108 L540 1188" stroke="#E8A04A" stroke-width="5"
+        stroke-linecap="round" marker-end="url(#punta)"/>
+
+  <!-- ══════════ CAJA 3 · SOLUCIÓN — check ══════════ -->
+  <g transform="translate(330,1220)">
+    <rect x="0" y="0" width="420" height="220" rx="16"
+          fill="#16324A" stroke="#E8A04A" stroke-width="3"/>
+    <path d="M0 34 L0 16 Q0 0 16 0 L34 0" fill="none" stroke="#E8A04A" stroke-width="4"/>
+    <g transform="translate(210,110)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="0" cy="0" r="44" stroke="#E8A04A" stroke-width="3.4"/>
+      <path d="M-20 2 L-6 17 L21 -15" stroke="#FFFFFF" stroke-width="5"/>
+    </g>
+  </g>
+</svg>
