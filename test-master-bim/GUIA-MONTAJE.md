@@ -92,6 +92,51 @@ Pégalo en `app.html`, en `CFG.FORM_GHL`, reemplazando `PEGAR_ID_DEL_FORMULARIO`
 **Por qué formulario nativo y no webhook:** el webhook de GHL es prémium y
 cobra por ejecución. El formulario nativo es gratis y el dato entra igual.
 
+### HECHO el 9-sep — y lo que salió al montarlo
+
+Formulario montado: `c9q5RXwZp3kDRuwk1eCz`. Al conectarlo aparecieron tres
+cosas que no se ven a simple vista. Quedan aquí porque las tres se repiten en
+cualquier formulario de GHL que se monte igual.
+
+**1. Las claves llevan tilde y no son las que uno supone.** GHL genera la clave
+de cada campo a partir de su ETIQUETA. «Perfil técnico» produjo
+`perfil_técnico`, con tilde; «Puntajes por bloque» produjo `puntajes_por_bloque`
+y no `puntajes_bloques`. De las siete que enviaba el test, **solo una
+coincidía**: las otras seis habrían llegado vacías sin que nada avisara.
+
+Las claves reales, leídas del formulario publicado:
+
+| Campo | Clave real (`data-q`) |
+|---|---|
+| Nivel BIM | `nivel_bim` |
+| Perfil técnico | `perfil_técnico` |
+| Código de diagnóstico | `código_de_diagnóstico` |
+| Módulo recomendado | `módulo_recomendado` |
+| Enlace del resultado | `enlace_del_resultado` |
+| Detalle del diagnóstico | `detalle_del_diagnóstico` |
+| Puntajes por bloque | `puntajes_por_bloque` |
+
+**Cómo comprobarlas sin adivinar:** abre el enlace del formulario, mira el
+código fuente de la página y busca `data-q=`. Eso es exactamente lo que GHL
+cruza contra el querystring. Si alguien renombra una etiqueta, la clave cambia
+y ese campo deja de llegar — por eso la prueba automática las compara.
+
+**2. GHL borra el signo «+».** Su propio código hace `.replace(/\+/g,' ')` sobre
+el valor, porque asume que un «+» es un espacio codificado. No hay forma de
+colarle un «+» literal, ni escapándolo. Como el nivel más alto se llama
+«Especialista BIM + IA», habría llegado al CRM como «Especialista BIM   IA».
+El test ahora lo cambia por « y »: «Especialista BIM y IA».
+
+**3. El formulario tiene que VERSE.** Iba en un iframe de altura 0 y, al
+terminar de cargar, la pantalla decía «Listo. Tu asesor ya lo tiene». Era
+falso: prellenar un formulario no lo envía. Nadie pulsaba «Continuar», así que
+no se creaba el contacto y el diagnóstico no llegaba a ninguna parte — con la
+pantalla diciendo que sí. Es el mismo patrón del incidente de julio.
+
+Ahora el formulario se muestra y la pantalla pide el paso que falta: revisar
+los datos, marcar la casilla de consentimiento y pulsar **Continuar**. La
+casilla la marca la persona, no nosotros.
+
 ## PASO 3 — Cómo manda el link el closer
 
 El link tiene que llevar identificado al contacto, o el resultado no se puede
