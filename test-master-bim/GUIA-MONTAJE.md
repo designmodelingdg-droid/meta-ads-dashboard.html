@@ -160,10 +160,51 @@ Ahora el formulario se muestra y la pantalla pide el paso que falta: revisar
 los datos, marcar la casilla de consentimiento y pulsar **Continuar**. La
 casilla la marca la persona, no nosotros.
 
-## PASO 3 — Cómo manda el link el closer
+## PASO 3 — Cómo manda el link el closer (y cómo NO se duplica el contacto)
 
-El link tiene que llevar identificado al contacto, o el resultado no se puede
-pegar a nadie. En la plantilla de WhatsApp de GHL:
+Casi todo el que recibe este enlace **ya tiene ficha en GHL**: viene de pauta y
+está en «lead calificado» del pipeline de High Ticket. La pregunta que importa
+es qué pasa cuando esa persona vuelve a dejar sus datos.
+
+**Lo cruza el CORREO, no el `cid`.** Conviene decirlo claro porque el enlace
+lleva las dos cosas y parece que manda el id:
+
+| Parámetro | Qué hace de verdad |
+|---|---|
+| `email` | **Es la llave.** GHL busca ese correo; si ya existe, ACTUALIZA esa ficha |
+| `nombre` | Rellena el nombre. No identifica a nadie |
+| `cid` | **No hace nada en el formulario.** Se envía como `contact_id` y GHL lo ignora: no está en su lista de campos que prellena. Viaja en el payload y ya |
+
+Así que la pieza que evita el duplicado es `{{contact.email}}` en la plantilla.
+Si vuelve el mismo correo que ya está en la ficha, **no se crea un contacto
+nuevo: se actualiza el que existe**, con sus etapas de pipeline, sus etiquetas
+y su historial intactos.
+
+### Las tres formas en que SÍ se duplicaría
+
+1. **La persona escribe otro correo.** El de la pauta era el del trabajo y pone
+   el personal. Por eso el correo va PRELLENADO y el test avisa en pantalla:
+   «Tu correo ya viene puesto. Déjalo tal cual: es lo que hace que este
+   diagnóstico se sume a tu ficha».
+2. **El enlace llega sin `email`.** Si el closer lo copia a mano en vez de usar
+   la plantilla con `{{contact.email}}`, o alguien lo reenvía a un amigo. En ese
+   caso el test enseña el otro aviso: «Escribe el mismo correo con el que te
+   registraste». Un enlace reenviado crea un contacto nuevo — y está bien, es
+   una persona nueva de verdad.
+3. **GHL tiene los duplicados permitidos.** Es un ajuste de la cuenta, no del
+   formulario: `Settings → Business Profile → Allow Duplicate Contact`. Si está
+   activado, GHL crea ficha nueva aunque el correo coincida. **Hay que
+   comprobarlo antes de mandar el primer enlace** — es la única de las tres que
+   no se ve venir.
+
+### Y el «+» otra vez
+
+GHL borra el signo «+» también en el correo. Un contacto cuyo correo sea
+`nombre+algo@dominio.com` llegaría como `nombre algo@dominio.com`, no cruzaría
+con nada y **crearía un duplicado**. Son pocos, pero si aparece un contacto
+partido en dos, mira eso primero.
+
+En la plantilla de WhatsApp de GHL:
 
 ```
 https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/test-master-bim/?cid={{contact.id}}&nombre={{contact.first_name}}&email={{contact.email}}

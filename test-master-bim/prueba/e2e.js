@@ -106,8 +106,18 @@ const BASE='file://'+path.join(__dirname,'..')+'/';
   const alturaCero = /iframe[^>]*height:0/.test(appTxt);
   console.log('  el formulario se ve (no va en altura 0):', alturaCero ? 'NO' : 'sí');
 
+  /* El aviso del correo es lo unico que separa «se actualiza su ficha» de
+     «se crea un contacto duplicado». Casi todos llegan desde pauta y ya tienen
+     ficha: si escriben otro correo, el asesor acaba con la persona partida en
+     dos. Esta prueba corre SIN email en el enlace, asi que toca la rama que
+     pide escribir el mismo correo. */
+  const aviso = await p2.locator('.aviso-correo').innerText();
+  const avisaDelCorreo = /mismo correo/i.test(aviso);
+  console.log('  avisa de usar el mismo correo (evita duplicar):',
+              avisaDelCorreo ? 'sí' : 'NO');
+
   const montajeMal = !gemelos || !sinPegar || noExisten.length || conMas.length
-                     || mienteEntrega || alturaCero;
+                     || mienteEntrega || alturaCero || !avisaDelCorreo;
   await p.close();
 
   // el asesor abre ese enlace
