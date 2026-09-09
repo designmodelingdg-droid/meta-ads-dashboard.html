@@ -3,7 +3,7 @@
  "subtitulo": "Del lunes 7 de septiembre al viernes 2 de octubre · calendarios independientes por grupo, misma informacion adaptada a cada canal",
  "reglas_del_mes": [
   "REGLA DE ORO: todos los grupos comparten la misma informacion (o similar) la misma semana, adaptada a cada red o metodo de comunicacion. El carrusel del lunes alimenta la comunidad del martes, la historia del miercoles, el PDF de LinkedIn y el correo de la semana.",
-  "FEED PRINCIPAL: 40% reels · 40% carruseles · 20% post plano. Se publica lunes, miercoles y viernes; los 5 reels ya grabados entran ADICIONALES los martes y sabados intermedios (el sexto, «Revit + ChatGPT» (RETIRADO: ya se publico en agosto), ya esta editado y es la pieza base del Mie 9).",
+  "FEED PRINCIPAL: las 12 piezas BASE mantienen el 40/40/20 exacto — 5 reels, 5 carruseles y 2 posts planos, lunes / miercoles / viernes. Encima van 3 EXTRAS los martes 8, 22 y 29: el lanzamiento de cada recurso gratuito, y desde el 9-sep los tres son REEL. Total del mes: 15 piezas de feed (8 reels, 5 carruseles, 2 posts planos). CORREGIDO 9-sep: esta regla decia que los extras eran «los 5 reels ya grabados» — eran los de agosto, que se retiraron el 8-sep. Ninguno de los 5 reels de valor esta grabado: los cinco son nuevos y estan POR GRABAR.",
   "POST PLANO = SOLO CON DATO DE CALCULO VERIFICABLE. Es la lectura de agosto: con dato, 45-62 comentarios (y Sobredimensionar cerro con 14.334 vistas y 107 comentarios); la frase generica hizo 0-4. La declaracion generica de IA queda prohibida como pieza.",
   "Minimo 60% del contenido en el NUCLEO (BIM / IA / modelado / acero). Cero OBRA.",
   "Cerrar SIEMPRE con pregunta directa + CTA de comentar. En comunidades: mensajes cortos, personales y SIN hashtags. En LinkedIn: nunca «comenta la palabra» — pregunta abierta; solo videos HORIZONTALES y PDF.",
@@ -24,7 +24,7 @@
  "checklist_tareas": [
   {
    "tarea": "HECHO (3-sep): tutor desplegado y probado — 17 de 17 con las trampas repetidas 3 veces. Falta montarlo en los 4 cursos de ACERO.",
-   "desbloquea": "Carrusel L28, reel demo Mi30, correo Mar 29 y variantes B de pauta ACERO",
+   "desbloquea": "Carrusel del Lun 28, los DOS reels de venta de ACERO (pauta-acero-tutor y pauta-acero-sobredimensionar), correo del Mar 29 y variantes B de pauta ACERO. CORREGIDO 9-sep: decía «reel demo Mi30» — el reel del Mié 30 es reel-limite-ia, que no tiene nada que ver con el tutor.",
    "cuando": "antes del 25-sep"
   },
   {
@@ -39,18 +39,18 @@
   },
   {
    "tarea": "Confirmar la palabra clave GUIA y montar su disparador: la piden los reels del Mi 16 y el Mi 30",
-   "desbloquea": "Reel del Mi 9",
-   "cuando": "antes del 9-sep"
+   "desbloquea": "CTA GUIA de reel-duplicados (Mié 16) y reel-limite-ia (Mié 30), y del reel de lanzamiento del recurso (Mar 8)",
+   "cuando": "antes del Mar 8, que es cuando sale el reel del propio recurso. Fecha dura real: Mié 16, el primer reel de valor que cierra pidiendo GUIA"
   },
   {
    "tarea": "HECHO (7-sep): lead magnet «Revit + ChatGPT» construido, publicado y probado. Falta SOLO montar el disparador GUIA en GoHighLevel.",
-   "desbloquea": "CTA GUIA de los reels de IA (Mi 9 y Mar 22)",
-   "cuando": "antes del Mie 9 (o el CTA del el reel del miercoles cambia a GPT y se regenera el subtitulo)"
+   "desbloquea": "CTA GUIA de los reels del Mié 16 y el Mié 30",
+   "cuando": "antes del Mar 8 (lanzamiento del recurso). Si el Mié 16 el disparador no está vivo, el comentario GUIA no recibe nada y el reel se publica sin red"
   },
   {
    "tarea": "HECHO (7-sep): pack starter de Dynamo construido y publicado; los 5 scripts se corrieron en Revit el 8-sep. Falta SOLO montar el disparador DYNAMO en GoHighLevel.",
-   "desbloquea": "CTA de los reels #4 (Sab 12) y #6 (Sab 19)",
-   "cuando": "semana 2"
+   "desbloquea": "CTA DYNAMO de reel-advertencias (Vie 18) y del reel de lanzamiento del recurso (Mar 22)",
+   "cuando": "antes del Vie 18, que es el primer reel que cierra pidiendo DYNAMO"
   },
   {
    "tarea": "ESTER · Montar en GoHighLevel los 3 lead magnets nuevos: formulario, 2 etiquetas, bot con DOS ramas (Instagram y Facebook por separado) y secuencia de 3 correos. Paso a paso en el artefacto de montaje y en el Word de entregables.",
@@ -134,8 +134,8 @@
   },
   {
    "tarea": "HECHO (7-sep): lead magnet «Memoria de calculo» construido y publicado; Gabriel dio el visto bueno a la estructura el 8-sep tras cruzarla contra una memoria real. Falta SOLO montar el disparador MEMORIA en GoHighLevel.",
-   "desbloquea": "Un segundo recurso alineado con lo que mas funciona: los posts de dato de calculo",
-   "cuando": "despues de la reunion del viernes de cierre y apertura"
+   "desbloquea": "CTA MEMORIA de reel-deriva (Mié 9) y reel-cita-norma (Vie 25), y del reel de lanzamiento del recurso (Mar 29)",
+   "cuando": "⚠ LA MÁS URGENTE DE LAS TRES: la pide reel-deriva el Mié 9. Es la palabra que antes se pedía más tarde y ahora se pide primero, porque el reparto de reels cambió el 8-sep"
   },
   {
    "tarea": "Montar el bloque del Tutor IA en la portada de los 4 cursos de ACERO (Ester y Aylin)",
@@ -833,9 +833,10 @@
       "condicion": null
      },
      {
-      "formato": "Reel ads",
-      "titulo": "el reel del miercoles recortado a 15s (error de Revit → ChatGPT)",
-      "copy": "El reel ya editado, recortado al hook + resolucion (0-15s), con overlay del boton. VARIANTE B (cuando el tutor este vivo): cerrar con el frame del tutor — «ahora la especializacion te contesta». A/B contra la variante A."
+      "formato": "Reel ads · 20-25 s — CREATIVO NUEVO",
+      "titulo": "  Sobredimensionar — el organico #1 de la cuenta convertido en reel",
+      "copy": "«Sobredimensionar no es ir por el lado seguro: es trasladarle tu inseguridad al presupuesto del cliente.» Fue la pieza #1 de la historia de la cuenta (14.334 vistas, 107 comentarios) y hasta ahora solo se habia probado como post plano. Aqui pasa a reel, con el mismo hook intacto y cierre de venta.\n\nGuion segundo a segundo en la pestana de Reels → pauta-acero-sobredimensionar.\n\nCierra con «Especializacion en Acero · $225 USD · ahora con tutor de IA». Boton → WhatsApp.\n\nOJO: en agosto el formulario trajo el lead un 41% mas barato que WhatsApp ($0,46 contra $0,78). Vale la pena un A/B con este mismo creativo.",
+      "condicion": "El cierre nombra los $225 y su razon, asi que no sale hasta que el tutor este montado en los 4 cursos de ACERO. Se puede GRABAR desde ya."
      },
      {
       "formato": "Post plano + reel — CREATIVO NUEVO (es el que justifica los $225)",
@@ -908,9 +909,9 @@
      "lead_magnet": "lm-revit-chatgpt",
      "idea": {
       "titulo": "Guia «Revit + ChatGPT»: los 10 errores y su prompt",
-      "desarrollo": "Lanzamiento del recurso. Va el martes a proposito: el miercoles 9 sale el reel del miercoles 9 y su CTA apunta a esta guia, asi que tiene que estar viva un dia antes. Desarrollo completo, guion y prompt en la pestaña Lead magnets."
+      "desarrollo": "Lanzamiento del recurso, y va el martes a propósito: es el primero de los tres porque su palabra —GUIA— es la que más reels piden después (Mié 16 y Mié 30). CORREGIDO 9-sep: antes esta nota decía que el reel del miércoles 9 apuntaba a esta guía. Ya no: el del Mié 9 es reel-deriva y su CTA es MEMORIA. La razón de la fecha era del reparto viejo de reels. Usa el mismo guion que el creativo de pauta «GUIA», con el CTA cambiado a comentario en vez de formulario: se graba una vez y se monta dos veces."
      },
-     "nota": "Lanzamiento del recurso. Va el martes a proposito: el miercoles 9 sale el reel del miercoles 9 y su CTA apunta a esta guia, asi que tiene que estar viva un dia antes. Desarrollo completo, guion y prompt en la pestaña Lead magnets. Usa el mismo guion que el creativo de pauta pauta-guia, con el CTA cambiado a comentario en vez de formulario: se graba una vez y se monta dos veces.",
+     "nota": "Lanzamiento del recurso, y va el martes a propósito: es el primero de los tres porque su palabra —GUIA— es la que más reels piden después (Mié 16 y Mié 30). CORREGIDO 9-sep: antes esta nota decía que el reel del miércoles 9 apuntaba a esta guía. Ya no: el del Mié 9 es reel-deriva y su CTA es MEMORIA. La razón de la fecha era del reparto viejo de reels. Usa el mismo guion que el creativo de pauta «GUIA», con el CTA cambiado a comentario en vez de formulario: se graba una vez y se monta dos veces.",
      "id": "pauta-guia",
      "tipo": "lanzamiento-recurso"
     },
@@ -980,13 +981,15 @@
     {
      "fecha": "Mar 22",
      "semana": "",
-     "formato_publicacion": "CARRUSEL (6 slides) — EXTRA lanzamiento de recurso",
+     "formato_publicacion": "REEL (grabar) — EXTRA lanzamiento de recurso",
      "lead_magnet": "lm-dynamo-python",
      "idea": {
       "titulo": "Pack de 5 scripts de Dynamo / Python para Revit",
       "desarrollo": "Lanzamiento del recurso. Dynamo es el tema de mejor guardado de la cuenta y no teniamos recurso propio. Desarrollo completo y prompt en la pestaña Lead magnets."
      },
-     "nota": "Lanzamiento del recurso. Dynamo es el tema de mejor guardado de la cuenta y no teniamos recurso propio. Desarrollo completo y prompt en la pestaña Lead magnets."
+     "nota": "Lanzamiento del recurso. Dynamo es el tema de mejor guardado de la cuenta y no teniamos recurso propio. Desarrollo completo y prompt en la pestaña Lead magnets. CAMBIO 9-sep: era CARRUSEL (6 slides) y pasa a REEL, igual que el lanzamiento del martes 8. Usa el mismo guion que el creativo de pauta «DYNAMO» con el CTA cambiado a comentario en vez de formulario: se graba una vez y se monta dos veces. Asi los tres recursos gratuitos tienen su video, que es lo que pidio Dayana.",
+     "id": "pauta-dynamo",
+     "tipo": "lanzamiento-recurso"
     },
     {
      "fecha": "Mie 23",
@@ -1020,13 +1023,15 @@
     {
      "fecha": "Mar 29",
      "semana": "",
-     "formato_publicacion": "POST PLANO (1 imagen) — EXTRA lanzamiento de recurso",
+     "formato_publicacion": "REEL (grabar) — EXTRA lanzamiento de recurso",
      "lead_magnet": "lm-memoria-calculo",
      "idea": {
       "titulo": "Guia de memoria de calculo + plantilla",
       "desarrollo": "Lanzamiento del recurso. Post plano porque cumple la regla: lleva dato de calculo. Desarrollo completo y prompt en la pestaña Lead magnets."
      },
-     "nota": "Lanzamiento del recurso. Post plano porque cumple la regla: lleva dato de calculo. Desarrollo completo y prompt en la pestaña Lead magnets."
+     "nota": "Lanzamiento del recurso. Post plano porque cumple la regla: lleva dato de calculo. Desarrollo completo y prompt en la pestaña Lead magnets. CAMBIO 9-sep: era POST PLANO (1 imagen) y pasa a REEL, igual que el lanzamiento del martes 8. Usa el mismo guion que el creativo de pauta «MEMORIA» con el CTA cambiado a comentario en vez de formulario: se graba una vez y se monta dos veces. Asi los tres recursos gratuitos tienen su video, que es lo que pidio Dayana.",
+     "id": "pauta-memoria",
+     "tipo": "lanzamiento-recurso"
     },
     {
      "fecha": "Mie 30",
@@ -1126,7 +1131,7 @@
      "idea": {
       "titulo": "Cierre de semana · encuesta Dynamo",
       "formato": "Pregunta",
-      "desarrollo": "«Pregunta de viernes: ¿cuantas horas a la semana pierden en tareas repetitivas de Revit? A) menos de 2 B) 2-5 C) mas de 5. El reel de Dynamo del sabado les va a doler o alegrar segun la respuesta 😄»"
+      "desarrollo": "«Pregunta de viernes: ¿cuantas horas a la semana pierden en tareas repetitivas de Revit? A) menos de 2 B) 2-5 C) mas de 5. El martes 22 sale el pack de 5 scripts de Dynamo, y la respuesta que elijan les va a doler o alegrar 😄»"
      },
      "tipo": "interaccion",
      "formato_publicacion": "Encuesta"
@@ -1137,7 +1142,7 @@
      "idea": {
       "titulo": "Blog ETABS/SAP + reel Python",
       "formato": "Mensaje + enlace",
-      "desarrollo": "«El comparativo ETABS vs SAP2000 del blog levanto debate — aqui el enlace. Y el reel de Python del sabado: si nunca han automatizado nada en BIM, ese es el punto de partida.»"
+      "desarrollo": "«El comparativo ETABS vs SAP2000 del blog levanto debate — aqui el enlace. Y hoy sale el reel del pack de Dynamo: si nunca han automatizado nada en BIM, ese es el punto de partida. Comenten DYNAMO y les llega.»"
      },
      "tipo": "valor",
      "formato_publicacion": "Mensaje + enlace"
@@ -1378,7 +1383,7 @@
      "idea": {
       "titulo": "DG · Mitos de la automatizacion (lectura tecnica)",
       "formato": "Imagen + texto",
-      "desarrollo": "Los 3 mitos del carrusel con posicion de consultoria: cual mito les cuesta mas caro a las oficinas."
+      "desarrollo": "Los mitos de la automatizacion en BIM con posicion de consultoria: cual les cuesta mas caro a las oficinas. Se apoya en el lanzamiento del pack de Dynamo del mismo martes 22 (que desde el 9-sep es reel, no carrusel)."
      },
      "tipo": "valor",
      "formato_publicacion": "Imagen + texto"
@@ -1591,7 +1596,7 @@
    {
     "nombre": "Guía «Revit + ChatGPT: resuelve errores con IA»",
     "palabra_sugerida": "GUIA",
-    "para_que": "Lo pide el CTA del reel «Revit + ChatGPT» (RETIRADO: ya se publico en agosto) (Mié 9), que sale un día después de su lanzamiento (Mar 8). Es el más urgente de los tres."
+    "para_que": "Lo piden los CTA de reel-duplicados (Mié 16) y reel-limite-ia (Mié 30), y el propio reel de lanzamiento del Mar 8. CORREGIDO 9-sep: antes decía que lo pedía el reel del Mié 9 — ese reel («Revit + ChatGPT») se retiró el 8-sep porque ya se había publicado en agosto, y el del Mié 9 es ahora reel-deriva, que pide MEMORIA."
    },
    {
     "nombre": "Pack starter de scripts Dynamo / Python para Revit",
@@ -1601,11 +1606,35 @@
    {
     "nombre": "Guía de memoria de cálculo + plantilla",
     "palabra_sugerida": "MEMORIA",
-    "para_que": "Pedido por Dayana el 2-sep. Se define en la reunión de cierre del viernes 5 y se lanza el Mar 29. Lo revisa Gabriel antes de salir: puede terminar dentro de un documento que alguien firma."
+    "para_que": "Pedido por Dayana el 2-sep. Se lanza el Mar 29, pero su PALABRA es la más urgente de las tres: la piden reel-deriva el Mié 9 y reel-cita-norma el Vie 25. El disparador MEMORIA tiene que estar vivo el 9, tres semanas antes de su propio lanzamiento. Lo revisa Gabriel antes de salir: puede terminar dentro de un documento que alguien firma."
    }
   ],
   "regla": "REGLA DE SEGURIDAD (leccion de julio): ningun CTA sale al aire sin su recurso VIVO y su disparador montado el dia de la publicacion. Si el recurso no llego a tiempo, NO se aplaza la pieza: se publica con el CTA de reemplazo de esta tabla. Prometer y no entregar cuesta mas que cambiar la palabra.",
   "mapa_cta": [
+   {
+    "fecha": "Mié 9 ⚠ · Vie 25 · Mar 29 (lanzamiento)",
+    "pieza": "Reel de lanzamiento del recurso + Cumple resistencia y el edificio e (Miércoles 9) + «Según la norma» no es una cita (Viernes 25)",
+    "cta": "MEMORIA",
+    "recurso": "Guía de memoria de cálculo + plantilla (Word y Excel)",
+    "estado": "🔴 LA MÁS URGENTE: recurso publicado y con visto bueno de Gabriel (8-sep), pero la palabra se pide el Mié 9 — tres semanas ANTES de su propio lanzamiento. Si el disparador no está el 9, reel-deriva sale sin red.",
+    "reemplazo": "Si no está el día 9: CTA cambia a «comenta ACERO» → 5 Verificaciones (montado y probado), y se regenera el subtítulo."
+   },
+   {
+    "fecha": "Mar 8 (lanzamiento) · Mié 16 · Mié 30",
+    "pieza": "Reel de lanzamiento del recurso + Tus planos están bien. Tu presupue (Miércoles 16) + Lo que no hay que preguntarle a la (Miércoles 30)",
+    "cta": "GUIA",
+    "recurso": "Guía «Revit + ChatGPT: resuelve errores con IA»",
+    "estado": "🟡 Recurso VIVO y probado (7-sep); falta SOLO montar el disparador GUIA en GHL",
+    "reemplazo": "Si no está el Mar 8: CTA cambia a «comenta GPT» → GPT IA Pro (existe). El subtítulo del reel dice COMENTA GUIA: si se cambia el CTA hay que regenerar el subtítulo (5 min con el pipeline)."
+   },
+   {
+    "fecha": "Vie 18 · Mar 22 (lanzamiento)",
+    "pieza": "Reel de lanzamiento del recurso + 400 avisos sin leer (Viernes 18)",
+    "cta": "DYNAMO",
+    "recurso": "Pack starter de scripts Dynamo / Python",
+    "estado": "🟡 Recurso publicado y los 5 scripts corridos en Revit (8-sep); falta SOLO el disparador DYNAMO",
+    "reemplazo": "Si no está el Vie 18: CTA cambia a «comenta BIM» (bot Máster) y el pack queda para octubre."
+   },
    {
     "fecha": "L7, Mar 8, L14, V18, L21",
     "pieza": "Carruseles y reels de BIM (3 señales, Coordinador, Navisworks, Autodesk, errores Revit)",
@@ -1613,14 +1642,6 @@
     "recurso": "Seguimiento del bot hacia el Master (conversacion, no recurso)",
     "estado": "✅ Disparadores BIM e IA montados y probados",
     "reemplazo": "—"
-   },
-   {
-    "fecha": "Mi 9",
-    "pieza": "REEL el reel del miercoles (error Revit + ChatGPT)",
-    "cta": "GUIA",
-    "recurso": "Guia «Revit + ChatGPT: resuelve errores con IA»",
-    "estado": "🔴 POR CREAR + disparador por montar",
-    "reemplazo": "Si no esta el dia 9: CTA cambia a «comenta GPT» → GPT IA Pro (existe). El subtitulo del video dice COMENTA GUIA — si se cambia el CTA hay que regenerar el subtitulo (5 min con el pipeline)."
    },
    {
     "fecha": "V11, Mi16, V2oct",
@@ -1631,36 +1652,12 @@
     "reemplazo": "—"
    },
    {
-    "fecha": "Sab 12, Sab 19",
-    "pieza": "Reels grabados #4 Dynamo y #6 Python",
-    "cta": "DYNAMO",
-    "recurso": "Pack starter de scripts Dynamo / Python",
-    "estado": "🔴 POR CREAR + disparador por montar",
-    "reemplazo": "Si no esta: CTA cambia a «comenta BIM» (bot Master) y el pack queda para octubre."
-   },
-   {
-    "fecha": "Mar 22",
-    "pieza": "Reel grabado #7 Mitos de la automatizacion",
-    "cta": "IA",
-    "recurso": "Seguimiento del bot (y GPT IA Pro como regalo en el DM)",
-    "estado": "✅ Disparador IA montado; GPT IA Pro existe",
-    "reemplazo": "—"
-   },
-   {
     "fecha": "Mi 23, V25 + correo Mar 22 + comunidad Jue 24",
     "pieza": "Carrusel 4 Puertas y correo Master (el reel espejo se retiro el 8-sep)",
     "cta": "RUTA",
     "recurso": "Orientacion 1-a-1 del equipo (el Test de Nivelacion cubre el diagnostico)",
     "estado": "🟡 Recurso existe (test), DISPARADOR RUTA por montar",
     "reemplazo": "Si el disparador no esta el 22: CTA cambia a «comenta NIVEL» → Test de Nivelacion (montado)."
-   },
-   {
-    "fecha": "Sab 26",
-    "pieza": "Reel grabado #8 IA para arquitectura",
-    "cta": "IA",
-    "recurso": "Bot Master + GPT IA Pro",
-    "estado": "✅ Montado",
-    "reemplazo": "—"
    },
    {
     "fecha": "L28, Mi30 + correo Mar 29",
@@ -1702,7 +1699,8 @@
     "estado": "🟡 Existe; CONFIRMAR la palabra montada",
     "reemplazo": "Enlace directo en el blog."
    }
-  ]
+  ],
+  "nota_mapa": "RECONSTRUIDO 9-sep. Cuatro filas describían los reels de agosto («Reels grabados #4, #6, #7, #8» y «el reel del miércoles, error Revit + ChatGPT»), que se retiraron el 8-sep. Las tres palabras de recurso van primero y en el orden en que se piden: MEMORIA el Mié 9, GUIA el Mar 8, DYNAMO el Vie 18."
  },
  "piezas": [],
  "pauta": [
@@ -1768,7 +1766,7 @@
   "Todo el detalle operativo esta en la seccion 0 (checklist de tareas del mes) — ClickUp ya no se usa para esto.",
   "Los pendientes que salieron de la reunion del 4-sep estan en la seccion «pendientes_reunion», con responsable y por que bloquea."
  ],
- "resumen_cierre": "El mes por grupos: 12 piezas base de feed (5 reels · 5 carruseles · 2 posts planos = 40/40/20) + 5 reels ya grabados como extras de martes y sabado (el sexto, «Revit + ChatGPT» (RETIRADO: ya se publico en agosto), es pieza base del Mie 9) + 12 mensajes de comunidades (Ma-Ju-Vi) + 4 blogs de sabado + 20 publicaciones de LinkedIn (L-V, 3 paginas) + historias diarias L-V con la venta los jueves + 4 correos + el paquete de publicidad de las 2 campañas que se sube completo el 7-sep. Todos los grupos cuentan la misma historia semanal adaptada a su canal. CAMBIO DEL 1-SEP: la campaña del Master pasa a venta POR MODULOS (4 anuncios nuevos con precio y formulario, mas el de diagnostico y el de la ruta). El BIM Level Test es ahora el calificador del setter. ACERO suma el tutor de IA en pauta y en el bot de Olympus.",
+ "resumen_cierre": "El mes por grupos: 12 piezas base de feed (5 reels · 5 carruseles · 2 posts planos = 40/40/20) + 3 reels EXTRA de lanzamiento de recurso los martes 8, 22 y 29 + 12 mensajes de comunidades (Ma-Ju-Vi) + 4 blogs de sabado + 20 publicaciones de LinkedIn (L-V, 3 paginas) + historias diarias L-V con la venta los jueves + 4 correos + el paquete de publicidad de las 2 campañas que se sube completo el 7-sep. Todos los grupos cuentan la misma historia semanal adaptada a su canal.\nEL MES TIENE 14 REELS EN TOTAL: 5 de valor + 3 de lead magnet + 6 de venta (4 del Master y 2 de ACERO). Ocho salen en el feed; los seis de venta son creativos de campaña y no se publican en organico.\nCAMBIO DEL 1-SEP: la campaña del Master pasa a venta POR MODULOS (4 anuncios nuevos con precio y formulario, mas el de diagnostico y el de la ruta). El BIM Level Test es ahora el calificador del setter. ACERO suma el tutor de IA en pauta y en el bot de Olympus.\nCAMBIO DEL 9-SEP: se completo el inventario de reels a 14. Los 4 del Master ya existian con guion pero solo se veian dentro de la pestaña de publicidad; de ACERO habia uno y se escribio el segundo. Los 3 lanzamientos de recurso pasaron a reel.",
  "pie": "Design Modeling Academy · Matriz de contenido septiembre 2026 (7 sep - 2 oct) · Calendarios por grupo, construidos sobre la matriz viral (162 piezas con metricas reales), el rendimiento de las campañas activas y la Nueva Arquitectura Comercial del Master BIM Management + IA",
  "artefactos": {
   "reestructura_ester": "https://claude.ai/code/artifact/4f853ec9-7d5f-4b36-bda6-0c063d8fe638",
@@ -2076,36 +2074,6 @@
    "El 94,1% de las perdidas es «sin respuesta»: cada CTA que genere conversacion sin que haya quien la atienda es alcance desperdiciado. La regla de cerrar con pregunta directa depende de que las 856 conversaciones sin asignar se resuelvan."
   ]
  },
- "reels_pauta": {
-  "nota": "Creativos de campaña, no piezas de feed. Se graban en la misma sesión pero se montan aparte: llevan CTA a formulario, no a comentario. En agosto el formulario trajo el lead a $0,46 contra $0,78 de WhatsApp — un 41% más barato.",
-  "guiones_en": "matriz-viral/matriz/reels-septiembre.py → REELS_PAUTA",
-  "piezas": [
-   {
-    "id": "pauta-guia",
-    "recurso": "Guía Revit + ChatGPT",
-    "palabra": "GUIA",
-    "estado": "LISTO PARA GRABAR — el recurso está vivo y probado"
-   },
-   {
-    "id": "pauta-memoria",
-    "recurso": "Memoria de cálculo + plantillas",
-    "palabra": "MEMORIA",
-    "estado": "LISTO PARA GRABAR — Gabriel dio el visto bueno (8-sep)"
-   },
-   {
-    "id": "pauta-dynamo",
-    "recurso": "Pack starter de Dynamo",
-    "palabra": "DYNAMO",
-    "estado": "LISTO PARA GRABAR — los 5 scripts se corrieron en Revit (8-sep)"
-   },
-   {
-    "id": "pauta-acero-tutor",
-    "recurso": "Especialización en Acero · $225 con tutor",
-    "palabra": "—",
-    "estado": "BLOQUEADO — espera el tutor montado en los 4 cursos"
-   }
-  ]
- },
  "reels_retirados": {
   "fecha": "8-sep-2026",
   "por_que": "Dayana revisó la pestaña de reels y detectó contenido de agosto ya publicado en el feed. Se cruzó contra la carpeta de Drive que envió y salieron dos duplicados confirmados. Los otros tres se retiran con ellos porque la instrucción fue dejar cinco completamente nuevos, no cuatro nuevos y uno heredado.",
@@ -2127,7 +2095,57 @@
   "retirados_tambien": [
    "reel-sobredimensionar — era la versión en video del carrusel del 28-ago",
    "reel-coordinacion — reemplazaba a una pieza de agosto reutilizada",
-   "reel-tutor — no era duplicado; se movió a REELS_PAUTA, donde funciona mejor"
+   "reel-tutor — no era duplicado; se movió al bloque de venta de ACERO (REELS_VENTA_ACERO), donde funciona mejor"
+  ]
+ },
+ "reels_inventario": {
+  "total": 14,
+  "actualizado": "9-sep-2026",
+  "por_que": "Dayana pidio el 9-sep que el mes quedara con 5 de valor + 3 de lead magnet + 6 de venta (4 del Master y 2 de ACERO). Los cuatro del Master YA existian con guion completo, pero vivian solo dentro de la campana de publicidad, asi que en la pestana de Reels aparecian nueve y no catorce. De ACERO habia uno y faltaba el segundo, que se escribio.",
+  "guiones_en": "matriz-viral/matriz/reels-septiembre.py → REELS, REELS_LEADMAGNET, REELS_VENTA_MASTER (se leen del calendario) y REELS_VENTA_ACERO. La funcion inventario() los junta: es la unica definicion de «los 14».",
+  "bloques": [
+   {
+    "bloque": "Valor",
+    "n": 5,
+    "cta": "Comentario",
+    "piezas": [
+     "reel-deriva",
+     "reel-duplicados",
+     "reel-advertencias",
+     "reel-cita-norma",
+     "reel-limite-ia"
+    ]
+   },
+   {
+    "bloque": "Lead magnet",
+    "n": 3,
+    "cta": "Formulario en pauta · comentario en feed",
+    "piezas": [
+     "pauta-guia",
+     "pauta-dynamo",
+     "pauta-memoria"
+    ]
+   },
+   {
+    "bloque": "Venta · Master",
+    "n": 4,
+    "cta": "Formulario instantaneo — SIN precio",
+    "piezas": [
+     "reel-ad-mod1",
+     "reel-ad-mod2",
+     "reel-ad-mod3",
+     "reel-ad-mod4"
+    ]
+   },
+   {
+    "bloque": "Venta · ACERO",
+    "n": 2,
+    "cta": "WhatsApp — CON precio ($225) y su razon",
+    "piezas": [
+     "pauta-acero-tutor",
+     "pauta-acero-sobredimensionar"
+    ]
+   }
   ]
  }
 }
