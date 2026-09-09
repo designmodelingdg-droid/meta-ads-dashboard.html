@@ -2,7 +2,7 @@
   "_meta": {
     "titulo": "Matriz de contenido — Design Modeling Academy — septiembre 2026",
     "periodo": "lunes 7 de septiembre a viernes 2 de octubre de 2026",
-    "generado": "2026-09-04",
+    "generado": "2026-09-09",
     "origen": "matriz-viral/matriz/ (calendario + guiones + historias + reels + lead magnets)",
     "como_se_regenera": "python3 scripts/export_matriz_json.py",
     "artefacto": "https://claude.ai/code/artifact/fe162f8b-0441-46b3-8bb7-0f404ae3590f",
@@ -11,7 +11,7 @@
       "checklist_tareas": "las tareas del mes con lo que desbloquea cada una",
       "grupos": "los 5 grupos con su calendario y el contenido de cada pieza pegado dentro",
       "historias": "80 historias, 4 al dia de lunes a viernes, con prompt de imagen",
-      "reels": "los guiones segundo a segundo de los reels de feed",
+      "reels": "los 14 reels del mes en tres bloques: valor, lead magnet y venta",
       "publicidad": "los 10 anuncios con copy aprobado y ficha de montaje",
       "lead_magnets": "los 3 recursos nuevos, su post de lanzamiento y el montaje en GHL",
       "correos": "los correos del mes"
@@ -19,7 +19,7 @@
   },
   "reglas_del_mes": [
     "REGLA DE ORO: todos los grupos comparten la misma informacion (o similar) la misma semana, adaptada a cada red o metodo de comunicacion. El carrusel del lunes alimenta la comunidad del martes, la historia del miercoles, el PDF de LinkedIn y el correo de la semana.",
-    "FEED PRINCIPAL: 40% reels · 40% carruseles · 20% post plano. Se publica lunes, miercoles y viernes; los 5 reels ya grabados entran ADICIONALES los martes y sabados intermedios (el sexto, «Valor 6», ya esta editado y es la pieza base del Mie 9).",
+    "FEED PRINCIPAL: las 12 piezas BASE mantienen el 40/40/20 exacto — 5 reels, 5 carruseles y 2 posts planos, lunes / miercoles / viernes. Encima van 3 EXTRAS los martes 8, 22 y 29: el lanzamiento de cada recurso gratuito, y desde el 9-sep los tres son REEL. Total del mes: 15 piezas de feed (8 reels, 5 carruseles, 2 posts planos). CORREGIDO 9-sep: esta regla decia que los extras eran «los 5 reels ya grabados» — eran los de agosto, que se retiraron el 8-sep. Ninguno de los 5 reels de valor esta grabado: los cinco son nuevos y estan POR GRABAR.",
     "POST PLANO = SOLO CON DATO DE CALCULO VERIFICABLE. Es la lectura de agosto: con dato, 45-62 comentarios (y Sobredimensionar cerro con 14.334 vistas y 107 comentarios); la frase generica hizo 0-4. La declaracion generica de IA queda prohibida como pieza.",
     "Minimo 60% del contenido en el NUCLEO (BIM / IA / modelado / acero). Cero OBRA.",
     "Cerrar SIEMPRE con pregunta directa + CTA de comentar. En comunidades: mensajes cortos, personales y SIN hashtags. En LinkedIn: nunca «comenta la palabra» — pregunta abierta; solo videos HORIZONTALES y PDF.",
@@ -40,7 +40,7 @@
   "checklist_tareas": [
     {
       "tarea": "HECHO (3-sep): tutor desplegado y probado — 17 de 17 con las trampas repetidas 3 veces. Falta montarlo en los 4 cursos de ACERO.",
-      "desbloquea": "Carrusel L28, reel demo Mi30, correo Mar 29 y variantes B de pauta ACERO",
+      "desbloquea": "Carrusel del Lun 28, los DOS reels de venta de ACERO (pauta-acero-tutor y pauta-acero-sobredimensionar), correo del Mar 29 y variantes B de pauta ACERO. CORREGIDO 9-sep: decía «reel demo Mi30» — el reel del Mié 30 es reel-limite-ia, que no tiene nada que ver con el tutor.",
       "cuando": "antes del 25-sep"
     },
     {
@@ -49,24 +49,29 @@
       "cuando": "antes del 22-sep"
     },
     {
-      "tarea": "Grabar los 3 reels nuevos del feed: Sobredimensionada parte 2, Espejo de la ruta, Demo del tutor",
+      "tarea": "Grabar los 5 reels de valor nuevos: Derivas (Mi 9), Duplicados (Mi 16), 400 avisos (V 18), Cita de norma (V 25), Limite de la IA (Mi 30). Mas los 4 creativos de pauta.",
       "desbloquea": "Mi 16, V 25 y Mi 30",
       "cuando": "sesion de grabacion Lun 7 - Mar 8"
     },
     {
-      "tarea": "Confirmar la palabra clave del reel Valor 6 (¿GUIA?) y montar su disparador",
-      "desbloquea": "Reel del Mi 9",
-      "cuando": "antes del 9-sep"
+      "tarea": "Confirmar la palabra clave GUIA y montar su disparador: la piden los reels del Mi 16 y el Mi 30",
+      "desbloquea": "CTA GUIA de reel-duplicados (Mié 16) y reel-limite-ia (Mié 30), y del reel de lanzamiento del recurso (Mar 8)",
+      "cuando": "antes del Mar 8, que es cuando sale el reel del propio recurso. Fecha dura real: Mié 16, el primer reel de valor que cierra pidiendo GUIA"
     },
     {
-      "tarea": "Crear lead magnet: Guia «Revit + ChatGPT: resuelve errores con IA» + montar disparador GUIA",
-      "desbloquea": "CTA GUIA de los reels de IA (Mi 9 y Mar 22)",
-      "cuando": "antes del Mie 9 (o el CTA del Valor 6 cambia a GPT y se regenera el subtitulo)"
+      "tarea": "HECHO (7-sep): lead magnet «Revit + ChatGPT» construido, publicado y probado. Falta SOLO montar el disparador GUIA en GoHighLevel.",
+      "desbloquea": "CTA GUIA de los reels del Mié 16 y el Mié 30",
+      "cuando": "antes del Mar 8 (lanzamiento del recurso). Si el Mié 16 el disparador no está vivo, el comentario GUIA no recibe nada y el reel se publica sin red"
     },
     {
-      "tarea": "Crear lead magnet: Pack starter de scripts Dynamo / Python",
-      "desbloquea": "CTA de los reels #4 (Sab 12) y #6 (Sab 19)",
-      "cuando": "semana 2"
+      "tarea": "HECHO (7-sep): pack starter de Dynamo construido y publicado; los 5 scripts se corrieron en Revit el 8-sep. Falta SOLO montar el disparador DYNAMO en GoHighLevel.",
+      "desbloquea": "CTA DYNAMO de reel-advertencias (Vie 18) y del reel de lanzamiento del recurso (Mar 22)",
+      "cuando": "antes del Vie 18, que es el primer reel que cierra pidiendo DYNAMO"
+    },
+    {
+      "tarea": "ESTER · Montar en GoHighLevel los 3 lead magnets nuevos: formulario, 2 etiquetas, bot con DOS ramas (Instagram y Facebook por separado) y secuencia de 3 correos. Paso a paso en el artefacto de montaje y en el Word de entregables.",
+      "para": "GUIA, MEMORIA y DYNAMO",
+      "cuando": "es lo unico que separa los tres recursos de sus campanas"
     },
     {
       "tarea": "Actualizar el numero REAL de cupos de ACERO",
@@ -144,9 +149,9 @@
       "cuando": "LUNES 7 DE SEPTIEMBRE"
     },
     {
-      "tarea": "EN ESPERA · Lead magnet «Plantilla de memoria de calculo» (propuesta de Dayana)",
-      "desbloquea": "Un segundo recurso alineado con lo que mas funciona: los posts de dato de calculo",
-      "cuando": "despues de la reunion del viernes de cierre y apertura"
+      "tarea": "HECHO (7-sep): lead magnet «Memoria de calculo» construido y publicado; Gabriel dio el visto bueno a la estructura el 8-sep tras cruzarla contra una memoria real. Falta SOLO montar el disparador MEMORIA en GoHighLevel.",
+      "desbloquea": "CTA MEMORIA de reel-deriva (Mié 9) y reel-cita-norma (Vie 25), y del reel de lanzamiento del recurso (Mar 29)",
+      "cuando": "⚠ LA MÁS URGENTE DE LAS TRES: la pide reel-deriva el Mié 9. Es la palabra que antes se pedía más tarde y ahora se pide primero, porque el reparto de reels cambió el 8-sep"
     },
     {
       "tarea": "Montar el bloque del Tutor IA en la portada de los 4 cursos de ACERO (Ester y Aylin)",
@@ -255,20 +260,24 @@
           "lead_magnet": "lm-revit-chatgpt",
           "idea": {
             "titulo": "Guia «Revit + ChatGPT»: los 10 errores y su prompt",
-            "desarrollo": "Lanzamiento del recurso. Va el martes a proposito: el miercoles 9 sale el reel «Valor 6» y su CTA apunta a esta guia, asi que tiene que estar viva un dia antes. Desarrollo completo, guion y prompt en la pestaña Lead magnets."
+            "desarrollo": "Lanzamiento del recurso, y va el martes a propósito: es el primero de los tres porque su palabra —GUIA— es la que más reels piden después (Mié 16 y Mié 30). CORREGIDO 9-sep: antes esta nota decía que el reel del miércoles 9 apuntaba a esta guía. Ya no: el del Mié 9 es reel-deriva y su CTA es MEMORIA. La razón de la fecha era del reparto viejo de reels. Usa el mismo guion que el creativo de pauta «GUIA», con el CTA cambiado a comentario en vez de formulario: se graba una vez y se monta dos veces."
           },
-          "nota": "Lanzamiento del recurso. Va el martes a proposito: el miercoles 9 sale el reel «Valor 6» y su CTA apunta a esta guia, asi que tiene que estar viva un dia antes. Desarrollo completo, guion y prompt en la pestaña Lead magnets."
+          "nota": "Lanzamiento del recurso, y va el martes a propósito: es el primero de los tres porque su palabra —GUIA— es la que más reels piden después (Mié 16 y Mié 30). CORREGIDO 9-sep: antes esta nota decía que el reel del miércoles 9 apuntaba a esta guía. Ya no: el del Mié 9 es reel-deriva y su CTA es MEMORIA. La razón de la fecha era del reparto viejo de reels. Usa el mismo guion que el creativo de pauta «GUIA», con el CTA cambiado a comentario en vez de formulario: se graba una vez y se monta dos veces.",
+          "id": "pauta-guia",
+          "tipo": "lanzamiento-recurso"
         },
         {
           "fecha": "Mie 9",
           "semana": "Semana 1 (7-13 sep)",
           "idea": {
-            "titulo": "REEL «Valor 6» — Revit me arrojo un error y ChatGPT me ahorro 2 horas",
-            "formato": "REEL (YA EDITADO: subtitulos, b-roll, fondo blueprint)",
-            "desarrollo": "El video ya esta terminado con el pipeline nuevo (es el grabado #5 del equipo, confirmado por Dayana). Solo falta confirmar la palabra clave del CTA (¿GUIA?) y montar su disparador — y que la guia exista antes de publicar (ver lead magnets por crear)."
+            "titulo": "REEL · Cumple resistencia y el edificio es inhabitable (grabar)",
+            "desarrollo": "Sustituye a reel-valor6, que ya salió en agosto. El ángulo es el estado límite de servicio, que es la sección que más se olvida y la que el usuario del edificio nota primero. Incomoda sin acusar: el cálculo está bien, el documento no. ⚠ PRODUCCIÓN: verificar el límite de deriva contra la edición vigente de la norma antes de grabar. Si hay duda, se dice «el límite que fija tu norma» sin cifra.\n\nGANCHO (0:00): «Tu estructura puede cumplir resistencia y aun así el edificio ser inhabitable.»\n\nDuración 35-40 s. Guion completo segundo a segundo en matriz-viral/matriz/reels-septiembre.py → REELS['reel-deriva'].",
+            "cta": "MEMORIA → guía + plantilla (recurso ya publicado)"
           },
           "tipo": "valor",
-          "formato_publicacion": "REEL (listo)"
+          "formato_publicacion": "REEL (grabar)",
+          "id": "reel-deriva",
+          "nota": "NUEVO 8-sep. Sustituye al reel «Revit me arrojó un error», que ya se publicó en agosto («le pedia a la ia dg.mp4»). Estado límite de servicio: cumple resistencia y es inhabitable. CTA: comenta MEMORIA."
         },
         {
           "fecha": "Vie 11",
@@ -362,52 +371,26 @@
           "fecha": "Mie 16",
           "semana": "Semana 2 (14-20 sep)",
           "idea": {
-            "titulo": "REEL · Sobredimensionada — parte 2 (grabar)",
-            "formato": "REEL talking head + b-roll (30-40s)",
-            "desarrollo": "Continuacion del post #1 de la historia de la cuenta (14.334 vistas / 107 comentarios). Hook: «Sobredimensionar no te hace mas seguro. Te hace mas caro.» Desarrollo: 3 señales de que una viga esta sobredimensionada (sin resolverlas del todo). Cierre: comenta ACERO y te paso las 5 verificaciones. Grabar en la sesion del Lun 7-Mar 8."
+            "titulo": "REEL · Tus planos están bien. Tu presupuesto está mal. (grabar)",
+            "desarrollo": "El error invisible. Es el ángulo más fuerte de los cinco porque no da ningún mensaje en Revit: los planos salen perfectos y el cuadro cuenta el doble. Se descubre al presupuestar, que es cuando ya se cotizó.\n\nGANCHO (0:00): «Hay un error en Revit que no te avisa. Los planos salen bien y el presupuesto sale mal.»\n\nDuración 35-40 s. Guion completo segundo a segundo en matriz-viral/matriz/reels-septiembre.py → REELS['reel-duplicados'].",
+            "cta": "GUIA → Revit + ChatGPT (recurso ya publicado)"
           },
           "tipo": "valor",
-          "formato_publicacion": "REEL (grabar)"
+          "formato_publicacion": "REEL (grabar)",
+          "id": "reel-duplicados",
+          "nota": "NUEVO 8-sep. El error de Revit que no avisa: los planos salen bien y el cuadro cuenta el doble. CTA: comenta GUIA."
         },
         {
           "fecha": "Vie 18",
           "semana": "Semana 2 (14-20 sep)",
-          "id": "ago-venta-paquete-autodesk",
+          "id": "reel-advertencias",
           "tipo": "valor",
-          "formato_publicacion": "REEL (grabar o banco)",
-          "nota": "Paquete Autodesk para coordinacion — venta blanda con valor. Grabar en la sesion del 7-8 o tomar del banco.",
-          "contenido": {
-            "id": "ago-venta-paquete-autodesk",
-            "titulo": "Paquete Autodesk para coordinación BIM",
-            "formato": "reel",
-            "red_principal": "instagram",
-            "eje": "NUCLEO-BIM",
-            "pilar": "Venta",
-            "hook": "4 herramientas de Autodesk que quizá no estás usando en tu coordinación (y deberías).",
-            "guion_reel": [
-              {
-                "tiempo": "0-3s",
-                "accion": "Hook",
-                "voz": "El paquete Autodesk tiene más de lo que usas. 4 que cambian tu coordinación."
-              },
-              {
-                "tiempo": "3-22s",
-                "accion": "Mostrar cada una rápido",
-                "voz": "Revit para el modelo. Navisworks para juntar disciplinas y detectar choques. BIM Collaborate para coordinar en la nube en tiempo real. Y AI Assist para acelerar lo repetitivo."
-              },
-              {
-                "tiempo": "22-30s",
-                "accion": "CTA",
-                "voz": "Bien usadas, coordinas en la mitad del tiempo. Comenta ‘BIM’ o ‘IA’."
-              }
-            ],
-            "caption": "No es tener Autodesk: es saber exprimirlo. Revit + Navisworks + BIM Collaborate + IA = coordinación en la mitad del tiempo. Te muestro cómo encajan.\n\n💬 Comenta “BIM” o “IA” y te cuento el flujo.\n\n#Autodesk #Revit #Navisworks #BIM #DesignModelingDG",
-            "cta_por_red": {
-              "instagram": "Comenta “BIM” o “IA” y te mando la info por DM.",
-              "tiktok": "Comenta “BIM” o “IA” · link en bio.",
-              "linkedin": "¿Cómo lo ven en sus proyectos? Coméntenme o escríbanme por DM.",
-              "youtube": "Paso a paso completo en el video · link en la descripción."
-            }
+          "formato_publicacion": "REEL (grabar)",
+          "nota": "NUEVO 8-sep. Sustituye a «paquete Autodesk», que era una pieza de agosto reutilizada. 400 avisos sin leer = un presupuesto con 400 sorpresas. CTA: comenta DYNAMO.",
+          "idea": {
+            "titulo": "REEL · 400 avisos sin leer (grabar)",
+            "desarrollo": "El dato que ordena la pieza es la frase del cierre, y es la más compartible de las cinco. El cuadro de advertencias de Revit no se puede ordenar ni filtrar ni pasarle a nadie: ese es justo el hueco que llena el script 01 del pack.\n\nGANCHO (0:00): «Un modelo con cuatrocientos avisos sin leer no es un modelo grande. Es un presupuesto con cuatrocientas sorpresas dentro.»\n\nDuración 30-35 s. Guion completo segundo a segundo en matriz-viral/matriz/reels-septiembre.py → REELS['reel-advertencias'].",
+            "cta": "DYNAMO → pack de 5 scripts (recurso ya publicado)"
           }
         },
         {
@@ -475,13 +458,15 @@
         {
           "fecha": "Mar 22",
           "semana": "",
-          "formato_publicacion": "CARRUSEL (6 slides) — EXTRA lanzamiento de recurso",
+          "formato_publicacion": "REEL (grabar) — EXTRA lanzamiento de recurso",
           "lead_magnet": "lm-dynamo-python",
           "idea": {
             "titulo": "Pack de 5 scripts de Dynamo / Python para Revit",
             "desarrollo": "Lanzamiento del recurso. Dynamo es el tema de mejor guardado de la cuenta y no teniamos recurso propio. Desarrollo completo y prompt en la pestaña Lead magnets."
           },
-          "nota": "Lanzamiento del recurso. Dynamo es el tema de mejor guardado de la cuenta y no teniamos recurso propio. Desarrollo completo y prompt en la pestaña Lead magnets."
+          "nota": "Lanzamiento del recurso. Dynamo es el tema de mejor guardado de la cuenta y no teniamos recurso propio. Desarrollo completo y prompt en la pestaña Lead magnets. CAMBIO 9-sep: era CARRUSEL (6 slides) y pasa a REEL, igual que el lanzamiento del martes 8. Usa el mismo guion que el creativo de pauta «DYNAMO» con el CTA cambiado a comentario en vez de formulario: se graba una vez y se monta dos veces. Asi los tres recursos gratuitos tienen su video, que es lo que pidio Dayana.",
+          "id": "pauta-dynamo",
+          "tipo": "lanzamiento-recurso"
         },
         {
           "fecha": "Mie 23",
@@ -586,12 +571,14 @@
           "fecha": "Vie 25",
           "semana": "Semana 3 (21-27 sep)",
           "idea": {
-            "titulo": "REEL · El espejo de la ruta (grabar)",
-            "formato": "REEL talking head (30s)",
-            "desarrollo": "Version en video de la historia del espejo: «Llevas 3 años modelando bien. Y sigues esperando a que te digan que modelar.» Las 4 puertas en pantalla, una se ilumina. Cierre: comenta RUTA y te digo en cual estas. Refuerza el carrusel del Mie 23 con el mismo mensaje en otro formato."
+            "titulo": "REEL · «Según la norma» no es una cita (grabar)",
+            "desarrollo": "El motivo de devolución más frecuente y el más fácil de evitar. Sirve para el que ya calcula bien y pierde la revisión en la redacción — que es el público exacto del recurso. NO se transcribe ninguna cifra normativa: se cita la norma por nombre y versión, nunca su contenido. Misma regla del tutor de IA.\n\nGANCHO (0:00): «Te devolvieron la memoria y no era el cálculo.»\n\nDuración 30-35 s. Guion completo segundo a segundo en matriz-viral/matriz/reels-septiembre.py → REELS['reel-cita-norma'].",
+            "cta": "MEMORIA → guía + plantilla (recurso ya publicado)"
           },
-          "tipo": "venta-blanda",
-          "formato_publicacion": "REEL (grabar)"
+          "tipo": "valor",
+          "formato_publicacion": "REEL (grabar)",
+          "id": "reel-cita-norma",
+          "nota": "NUEVO 8-sep. Sustituye a «El salto que más cuesta», que ya se publicó en agosto («modelas bien dg reel.mp4»). «Según la norma» no es una cita. CTA: comenta MEMORIA."
         },
         {
           "fecha": "Lun 28",
@@ -685,24 +672,28 @@
         {
           "fecha": "Mar 29",
           "semana": "",
-          "formato_publicacion": "POST PLANO (1 imagen) — EXTRA lanzamiento de recurso",
+          "formato_publicacion": "REEL (grabar) — EXTRA lanzamiento de recurso",
           "lead_magnet": "lm-memoria-calculo",
           "idea": {
             "titulo": "Guia de memoria de calculo + plantilla",
             "desarrollo": "Lanzamiento del recurso. Post plano porque cumple la regla: lleva dato de calculo. Desarrollo completo y prompt en la pestaña Lead magnets."
           },
-          "nota": "Lanzamiento del recurso. Post plano porque cumple la regla: lleva dato de calculo. Desarrollo completo y prompt en la pestaña Lead magnets."
+          "nota": "Lanzamiento del recurso. Post plano porque cumple la regla: lleva dato de calculo. Desarrollo completo y prompt en la pestaña Lead magnets. CAMBIO 9-sep: era POST PLANO (1 imagen) y pasa a REEL, igual que el lanzamiento del martes 8. Usa el mismo guion que el creativo de pauta «MEMORIA» con el CTA cambiado a comentario en vez de formulario: se graba una vez y se monta dos veces. Asi los tres recursos gratuitos tienen su video, que es lo que pidio Dayana.",
+          "id": "pauta-memoria",
+          "tipo": "lanzamiento-recurso"
         },
         {
           "fecha": "Mie 30",
           "semana": "Semana 4 (28 sep - 2 oct)",
           "idea": {
-            "titulo": "REEL · Demo del tutor de IA en pantalla (grabar, CONDICIONADO)",
-            "formato": "REEL screen-record (30-40s)",
-            "desarrollo": "Grabacion real de pantalla: un alumno le pregunta al tutor «¿como verifico el pandeo lateral de esta viga?» y el tutor responde citando la sesion. Sin voz en off inventada: lo que se ve es lo que hace. Cierre: comenta ACERO. SOLO se publica con el tutor en produccion; alternativa del banco: reel de las 5 verificaciones."
+            "titulo": "REEL · Lo que no hay que preguntarle a la IA (grabar)",
+            "desarrollo": "Cierra el mes marcando el límite, y es la pieza que más nos diferencia: todo el mundo publica «10 prompts para Revit», nosotros publicamos dónde la IA deja de servir. Es lo que permite que una academia de ingeniería hable de IA sin quedar mal. Tono sereno, nunca alarmista.\n\nGANCHO (0:00): «Una inteligencia artificial no sabe cuándo no sabe.»\n\nDuración 35-40 s. Guion completo segundo a segundo en matriz-viral/matriz/reels-septiembre.py → REELS['reel-limite-ia'].",
+            "cta": "GUIA → Revit + ChatGPT (recurso ya publicado)"
           },
-          "tipo": "venta-blanda",
-          "formato_publicacion": "REEL (grabar, gated)"
+          "tipo": "valor",
+          "formato_publicacion": "REEL (grabar)",
+          "id": "reel-limite-ia",
+          "nota": "NUEVO 8-sep. Cierra el mes marcando el límite de la IA — la pieza que más nos diferencia. El reel del tutor que iba aquí se movió a PAUTA: el tutor es argumento de venta, no contenido de valor. CTA: comenta GUIA."
         },
         {
           "fecha": "Vie 2 oct",
@@ -789,7 +780,7 @@
           "idea": {
             "titulo": "Cierre de semana · encuesta Dynamo",
             "formato": "Pregunta",
-            "desarrollo": "«Pregunta de viernes: ¿cuantas horas a la semana pierden en tareas repetitivas de Revit? A) menos de 2 B) 2-5 C) mas de 5. El reel de Dynamo del sabado les va a doler o alegrar segun la respuesta 😄»"
+            "desarrollo": "«Pregunta de viernes: ¿cuantas horas a la semana pierden en tareas repetitivas de Revit? A) menos de 2 B) 2-5 C) mas de 5. El martes 22 sale el pack de 5 scripts de Dynamo, y la respuesta que elijan les va a doler o alegrar 😄»"
           },
           "tipo": "interaccion",
           "formato_publicacion": "Encuesta"
@@ -800,7 +791,7 @@
           "idea": {
             "titulo": "Blog ETABS/SAP + reel Python",
             "formato": "Mensaje + enlace",
-            "desarrollo": "«El comparativo ETABS vs SAP2000 del blog levanto debate — aqui el enlace. Y el reel de Python del sabado: si nunca han automatizado nada en BIM, ese es el punto de partida.»"
+            "desarrollo": "«El comparativo ETABS vs SAP2000 del blog levanto debate — aqui el enlace. Y hoy sale el reel del pack de Dynamo: si nunca han automatizado nada en BIM, ese es el punto de partida. Comenten DYNAMO y les llega.»"
           },
           "tipo": "valor",
           "formato_publicacion": "Mensaje + enlace"
@@ -1065,7 +1056,7 @@
           "idea": {
             "titulo": "Gabriel · «El error que me ahorro 2 horas»",
             "formato": "Post de texto",
-            "desarrollo": "Primera persona: la historia real del reel Valor 6 — el error de Revit, pegarlo en ChatGPT con contexto, validar la salida. Aprendizaje: la IA acelera, el criterio decide. Sin video (el reel es vertical)."
+            "desarrollo": "Primera persona: la historia real detras de la guia — un error de Revit, pegarlo en ChatGPT con contexto, y sobre todo validar la salida. Aprendizaje: la IA acelera, el criterio decide. Sin video (el reel es vertical)."
           },
           "tipo": "valor",
           "formato_publicacion": "Texto"
@@ -1153,7 +1144,7 @@
           "idea": {
             "titulo": "DG · Mitos de la automatizacion (lectura tecnica)",
             "formato": "Imagen + texto",
-            "desarrollo": "Los 3 mitos del carrusel con posicion de consultoria: cual mito les cuesta mas caro a las oficinas."
+            "desarrollo": "Los mitos de la automatizacion en BIM con posicion de consultoria: cual les cuesta mas caro a las oficinas. Se apoya en el lanzamiento del pack de Dynamo del mismo martes 22 (que desde el 9-sep es reel, no carrusel)."
           },
           "tipo": "valor",
           "formato_publicacion": "Imagen + texto"
@@ -1955,223 +1946,524 @@
       }
     ]
   },
-  "reels_de_feed": {
-    "guiones": [
+  "reels": {
+    "total": 14,
+    "bloques": [
       {
-        "id": "reel-valor6",
-        "fecha": "Miércoles 9",
-        "titulo": "Revit me arrojó un error y ChatGPT me ahorró 2 horas",
-        "estado": "YA EDITADO — no hay que grabarlo",
-        "duracion": "30 s",
-        "cta": "GUÍA (⚠ confirmar palabra y que el recurso exista)",
-        "nota": "El video está montado con el pipeline nuevo: silencios cortados, subtítulos, b-roll del comercial Revit+IA y fondo blueprint en los tramos a cámara. Lo único pendiente es confirmar la palabra clave del CTA antes de publicar.",
-        "guion": [
-          [
-            "0:00-0:03",
-            "Plano medio a cámara, fondo blueprint de Revit.",
-            "Revit me arrojó un error, pero ChatGPT me ahorró dos horas de trabajo en buscar la solución.",
-            "REVIT ME ARROJÓ UN **ERROR**"
-          ],
-          [
-            "0:03-0:09",
-            "Captura de pantalla real del error en Revit.",
-            "Me salió este error en Revit y, en vez de buscar en foros…",
-            "ME SALIÓ ESTE ERROR EN **REVIT**"
-          ],
-          [
-            "0:09-0:16",
-            "Screen-record: pegando el error en ChatGPT y escribiendo el contexto.",
-            "…lo que hice es pegarlo en ChatGPT, darle un contexto para que me pueda dar la solución.",
-            "ES PEGARLO EN **CHATGPT**"
-          ],
-          [
-            "0:16-0:20",
-            "B-roll del modelo BIM resolviéndose.",
-            "Una solución que me ahorra dos horas de trabajo.",
-            "**2 HORAS** DE TRABAJO"
-          ],
-          [
-            "0:20-0:27",
-            "Vuelve a cámara, fondo blueprint.",
-            "Ojo: es importante que valides todo lo que hagas con la IA. Por eso, si te interesa, comenta GUÍA y te enseño cómo usarla.",
-            "VALIDA TODO CON LA **IA**"
-          ],
-          [
-            "0:27-0:30",
-            "Placa final con el logo DMA.",
-            "—",
-            "—"
-          ]
+        "bloque": "Los cinco de valor",
+        "corto": "de valor",
+        "nota": "Contenido de feed. Abren con la frontera y cierran con un recurso que ya existe. CTA a comentario.",
+        "guiones": [
+          {
+            "id": "reel-deriva",
+            "fecha": "Miércoles 9",
+            "titulo": "Cumple resistencia y el edificio es inhabitable",
+            "estado": "POR GRABAR",
+            "duracion": "35-40 s",
+            "cta": "MEMORIA → guía + plantilla (recurso ya publicado)",
+            "nota": "Sustituye a reel-valor6, que ya salió en agosto. El ángulo es el estado límite de servicio, que es la sección que más se olvida y la que el usuario del edificio nota primero. Incomoda sin acusar: el cálculo está bien, el documento no. ⚠ PRODUCCIÓN: verificar el límite de deriva contra la edición vigente de la norma antes de grabar. Si hay duda, se dice «el límite que fija tu norma» sin cifra.",
+            "guion": [
+              [
+                "0:00-0:04",
+                "Primer plano, mirada directa. Sin intro.",
+                "Tu estructura puede cumplir resistencia y aun así el edificio ser inhabitable.",
+                "CUMPLE RESISTENCIA Y ES **INHABITABLE**"
+              ],
+              [
+                "0:04-0:11",
+                "Plano medio.",
+                "Porque resistencia y servicio son dos cosas distintas, y casi todo el mundo verifica solo la primera.",
+                "RESISTENCIA Y **SERVICIO** NO SON LO MISMO"
+              ],
+              [
+                "0:11-0:20",
+                "Pantalla: tabla de derivas de un modelo, columna de límite resaltada.",
+                "La deriva de entrepiso no se cae, se siente. El tabique fisurado, la puerta que roza, el piso que vibra al caminar. Nada de eso sale en una verificación de resistencia.",
+                "LA DERIVA NO SE CAE. SE **SIENTE**"
+              ],
+              [
+                "0:20-0:29",
+                "Pantalla: modelo con deformación exagerada.",
+                "Y es el error que más caro sale después de entregar, porque lo detecta el usuario del edificio y ya no hay nada que corregir en papel.",
+                "LO DETECTA EL **USUARIO**, NO EL REVISOR"
+              ],
+              [
+                "0:29-0:38",
+                "Vuelve a cámara, tono calmado.",
+                "Si tu memoria no tiene una sección de limitación de daños, no está incompleta: está a medias. Comenta MEMORIA y te paso la estructura completa con la plantilla.",
+                "COMENTA **MEMORIA**"
+              ]
+            ]
+          },
+          {
+            "id": "reel-duplicados",
+            "fecha": "Miércoles 16",
+            "titulo": "Tus planos están bien. Tu presupuesto está mal.",
+            "estado": "POR GRABAR",
+            "duracion": "35-40 s",
+            "cta": "GUIA → Revit + ChatGPT (recurso ya publicado)",
+            "nota": "El error invisible. Es el ángulo más fuerte de los cinco porque no da ningún mensaje en Revit: los planos salen perfectos y el cuadro cuenta el doble. Se descubre al presupuestar, que es cuando ya se cotizó.",
+            "guion": [
+              [
+                "0:00-0:04",
+                "Primer plano.",
+                "Hay un error en Revit que no te avisa. Los planos salen bien y el presupuesto sale mal.",
+                "UN ERROR QUE **NO TE AVISA**"
+              ],
+              [
+                "0:04-0:12",
+                "Screen-record: dos elementos idénticos superpuestos, seleccionando uno y viendo que hay otro debajo.",
+                "Son elementos duplicados exactamente en el mismo sitio. Un Ctrl+V de más, o pegar dos veces con Paste Aligned. Encima uno del otro, invisibles.",
+                "DUPLICADOS EN EL **MISMO SITIO**"
+              ],
+              [
+                "0:12-0:20",
+                "Pantalla: cuadro de cantidades, número resaltado.",
+                "En los planos no se nota, porque uno tapa al otro. En el cuadro de cantidades sí: cuenta dos.",
+                "EN EL CUADRO **CUENTA DOS**"
+              ],
+              [
+                "0:20-0:30",
+                "Vuelve a cámara.",
+                "Y esto no se descubre revisando. Se descubre cuando alguien presupuesta con ese número, que es cuando ya lo mandaste.",
+                "SE DESCUBRE AL **PRESUPUESTAR**"
+              ],
+              [
+                "0:30-0:38",
+                "Cierre.",
+                "La comprobación es una sola: apunta la cantidad antes de borrar. Si después no bajó en el número exacto que borraste, pasó algo más. Comenta GUIA y te paso los diez errores de Revit que más tiempo te quitan.",
+                "COMENTA **GUIA**"
+              ]
+            ]
+          },
+          {
+            "id": "reel-advertencias",
+            "fecha": "Viernes 18",
+            "titulo": "400 avisos sin leer",
+            "estado": "POR GRABAR",
+            "duracion": "30-35 s",
+            "cta": "DYNAMO → pack de 5 scripts (recurso ya publicado)",
+            "nota": "El dato que ordena la pieza es la frase del cierre, y es la más compartible de las cinco. El cuadro de advertencias de Revit no se puede ordenar ni filtrar ni pasarle a nadie: ese es justo el hueco que llena el script 01 del pack.",
+            "guion": [
+              [
+                "0:00-0:05",
+                "Primer plano.",
+                "Un modelo con cuatrocientos avisos sin leer no es un modelo grande. Es un presupuesto con cuatrocientas sorpresas dentro.",
+                "400 SORPRESAS **DENTRO**"
+              ],
+              [
+                "0:05-0:13",
+                "Screen-record: abriendo Manage → Warnings, la lista larga.",
+                "Este cuadro lo abre todo el mundo una vez, ve el número, lo cierra y sigue trabajando.",
+                "SE ABRE UNA VEZ Y SE **CIERRA**"
+              ],
+              [
+                "0:13-0:22",
+                "Pantalla: el cuadro, intentando ordenar sin poder.",
+                "Y hay una razón: no se puede ordenar, no se puede filtrar y no se le puede pasar a nadie. Así no se revisa nada.",
+                "NO SE ORDENA. NO SE **FILTRA**"
+              ],
+              [
+                "0:22-0:30",
+                "Pantalla: el mismo contenido ya en una hoja ordenable.",
+                "En una hoja sí. Ordenado por gravedad, con el ID de cada elemento culpable, y se lo puedes mandar a quien modeló.",
+                "EN UNA HOJA **SÍ**"
+              ],
+              [
+                "0:30-0:36",
+                "Cierre a cámara.",
+                "Eso lo hace un script de veinte líneas. Comenta DYNAMO y te paso cinco, con el código explicado por dentro. Tres de ellos ni siquiera tocan tu modelo.",
+                "COMENTA **DYNAMO**"
+              ]
+            ]
+          },
+          {
+            "id": "reel-cita-norma",
+            "fecha": "Viernes 25",
+            "titulo": "«Según la norma» no es una cita",
+            "estado": "POR GRABAR",
+            "duracion": "30-35 s",
+            "cta": "MEMORIA → guía + plantilla (recurso ya publicado)",
+            "nota": "El motivo de devolución más frecuente y el más fácil de evitar. Sirve para el que ya calcula bien y pierde la revisión en la redacción — que es el público exacto del recurso. NO se transcribe ninguna cifra normativa: se cita la norma por nombre y versión, nunca su contenido. Misma regla del tutor de IA.",
+            "guion": [
+              [
+                "0:00-0:05",
+                "Primer plano.",
+                "Te devolvieron la memoria y no era el cálculo.",
+                "NO ERA EL **CÁLCULO**"
+              ],
+              [
+                "0:05-0:13",
+                "Plano medio.",
+                "Una memoria no se devuelve porque el cálculo esté mal. Se devuelve porque el revisor no puede comprobar que esté bien. Son dos problemas distintos y solo uno es de ingeniería.",
+                "SOLO UNO ES DE **INGENIERÍA**"
+              ],
+              [
+                "0:13-0:22",
+                "Pantalla: dos frases comparadas, la de arriba tachada.",
+                "«Según la normativa vigente» no es una cita. Sin el nombre completo y sin el año, nada de lo que cuelga de esa norma se puede reproducir.",
+                "SIN VERSIÓN NO SE **REPRODUCE**"
+              ],
+              [
+                "0:22-0:30",
+                "Vuelve a cámara.",
+                "Y reproducir tu resultado es exactamente lo que el revisor va a intentar hacer.",
+                "ES LO QUE VA A **INTENTAR**"
+              ],
+              [
+                "0:30-0:36",
+                "Cierre.",
+                "Escribe la memoria para alguien que quiere llegar a tu número y no puede llamarte. Comenta MEMORIA y te paso la estructura completa con la plantilla en Word.",
+                "COMENTA **MEMORIA**"
+              ]
+            ]
+          },
+          {
+            "id": "reel-limite-ia",
+            "fecha": "Miércoles 30",
+            "titulo": "Lo que no hay que preguntarle a la IA",
+            "estado": "POR GRABAR",
+            "duracion": "35-40 s",
+            "cta": "GUIA → Revit + ChatGPT (recurso ya publicado)",
+            "nota": "Cierra el mes marcando el límite, y es la pieza que más nos diferencia: todo el mundo publica «10 prompts para Revit», nosotros publicamos dónde la IA deja de servir. Es lo que permite que una academia de ingeniería hable de IA sin quedar mal. Tono sereno, nunca alarmista.",
+            "guion": [
+              [
+                "0:00-0:05",
+                "Primer plano, tono tranquilo.",
+                "Una inteligencia artificial no sabe cuándo no sabe.",
+                "NO SABE CUÁNDO **NO SABE**"
+              ],
+              [
+                "0:05-0:13",
+                "Plano medio.",
+                "Cuando se equivoca, se equivoca con el mismo tono de seguridad con el que acierta. Y eso es justo lo que la hace peligrosa en un modelo que alguien va a firmar.",
+                "SE EQUIVOCA CON EL MISMO **TONO**"
+              ],
+              [
+                "0:13-0:23",
+                "Screen-record: una respuesta segura de sí misma en pantalla.",
+                "Le pregunté qué sección poner. Me dio un número. Sonaba razonable. Pero no tiene mis cargas, ni mi norma, ni mi suelo — y ese número lleva mi firma, no la suya.",
+                "ESE NÚMERO LLEVA **MI FIRMA**"
+              ],
+              [
+                "0:23-0:32",
+                "Vuelve a cámara.",
+                "Úsala para entender qué te está diciendo el programa y para buscar más rápido. No para decidir. La línea está justo ahí, y está más cerca de lo que parece.",
+                "PARA ENTENDER, NO PARA **DECIDIR**"
+              ],
+              [
+                "0:32-0:40",
+                "Cierre.",
+                "Yo compruebo tres cosas antes de aplicar nada. Comenta GUIA y te paso los diez errores con su prompt, y la página donde explico esas tres comprobaciones.",
+                "COMENTA **GUIA**"
+              ]
+            ]
+          }
         ]
       },
       {
-        "id": "reel-sobredimensionar",
-        "fecha": "Miércoles 16",
-        "titulo": "Sobredimensionar no es ir por el lado seguro",
-        "estado": "POR GRABAR",
-        "duracion": "35-40 s",
-        "cta": "ACERO → las 5 verificaciones (recurso ya existe)",
-        "nota": "Continuación del post #1 de la historia de la cuenta (14.334 vistas, 107 comentarios). El tema está validado: se repite la fórmula en video. Tono directo, sin agresividad — incomoda la práctica, no a la persona.",
-        "guion": [
-          [
-            "0:00-0:04",
-            "Primer plano, mirada directa a cámara. Sin intro.",
-            "Sobredimensionar no te hace más seguro. Te hace más caro.",
-            "SOBREDIMENSIONAR NO ES IR POR EL **LADO SEGURO**"
-          ],
-          [
-            "0:04-0:10",
-            "Plano medio, gesticulando.",
-            "Y lo peor: le estás trasladando tu inseguridad al presupuesto de tu cliente.",
-            "LE TRASLADAS TU INSEGURIDAD AL **PRESUPUESTO**"
-          ],
-          [
-            "0:10-0:18",
-            "Pantalla: dos secciones de viga comparadas.",
-            "Primera señal de que una viga está sobrada: la eliges por costumbre, no por la verificación. Si siempre usas el mismo perfil «por si acaso», ahí está.",
-            "SEÑAL 1: LA ELIGES POR **COSTUMBRE**"
-          ],
-          [
-            "0:18-0:26",
-            "Pantalla: modelo con deflexión exagerada.",
-            "Segunda: cumples resistencia con muchísimo margen pero nunca revisaste deflexión. Estás gastando acero en el criterio equivocado.",
-            "SEÑAL 2: NUNCA REVISASTE **DEFLEXIÓN**"
-          ],
-          [
-            "0:26-0:34",
-            "Vuelve a cámara.",
-            "Y la tercera, la que más caro sale: revisas las conexiones al final. El nudo manda, y si lo dejas para el final, rediseñas todo.",
-            "SEÑAL 3: EL **NUDO** VA AL FINAL"
-          ],
-          [
-            "0:34-0:40",
-            "Cierre a cámara.",
-            "Yo uso cinco verificaciones antes de firmar cualquier cosa. Comenta ACERO y te las paso, son gratis.",
-            "COMENTA **ACERO**"
-          ]
+        "bloque": "Los tres de lead magnet",
+        "corto": "de lead magnet",
+        "nota": "Uno por recurso gratuito. Se montan dos veces: con CTA a formulario para pauta y con CTA a comentario para el lanzamiento del recurso en el feed.",
+        "guiones": [
+          {
+            "id": "pauta-guia",
+            "recurso": "Guía Revit + ChatGPT",
+            "palabra": "GUIA",
+            "estado": "POR GRABAR",
+            "duracion": "20-25 s",
+            "destino": "Formulario → landing guia-revit-ia",
+            "nota": "El recurso ya está vivo y probado. Es el único de los tres que puede salir hoy.",
+            "guion": [
+              [
+                "0:00-0:05",
+                "Primer plano.",
+                "Dos horas de foro para un error de Revit que se resuelve en dos minutos.",
+                "2 HORAS PARA **2 MINUTOS**"
+              ],
+              [
+                "0:05-0:13",
+                "Screen-record: el error, el prompt con contexto, la respuesta útil.",
+                "Pero solo si le das cuatro datos: tu versión, tu disciplina, el mensaje literal y qué ya intentaste. Sin eso te responde lo que ya descartaste.",
+                "CUATRO DATOS QUE LO **CAMBIAN TODO**"
+              ],
+              [
+                "0:13-0:20",
+                "Vuelve a cámara.",
+                "Diez errores, diez prompts, y la página que casi nadie escribe: cómo comprobar la respuesta antes de aplicarla.",
+                "CÓMO **COMPROBARLA**"
+              ],
+              [
+                "0:20-0:25",
+                "Cierre con la landing en pantalla.",
+                "Es gratis y entras al instante. El enlace está aquí abajo.",
+                "GRATIS · ACCESO **INMEDIATO**"
+              ]
+            ]
+          },
+          {
+            "id": "pauta-memoria",
+            "recurso": "Memoria de cálculo + plantillas",
+            "palabra": "MEMORIA",
+            "estado": "LISTO PARA GRABAR — Gabriel dio el visto bueno (8-sep)",
+            "duracion": "20-25 s",
+            "destino": "Formulario → landing memoria-calculo",
+            "nota": "⚠ El recurso está publicado pero su CTA espera revisión académica. No se sube a pauta antes de eso: es el único que puede terminar dentro de un documento firmado.",
+            "guion": [
+              [
+                "0:00-0:05",
+                "Primer plano.",
+                "Te devolvieron la memoria y no era el cálculo.",
+                "NO ERA EL **CÁLCULO**"
+              ],
+              [
+                "0:05-0:13",
+                "Pantalla: la estructura de secciones desplegándose.",
+                "Se devuelve porque el revisor no puede comprobar que esté bien. Doce secciones, en orden, y los seis errores por los que vuelve a tu escritorio.",
+                "12 SECCIONES · 6 **DEVOLUCIONES**"
+              ],
+              [
+                "0:13-0:20",
+                "Pantalla: la plantilla de Word y la hoja de Excel.",
+                "Con la plantilla en Word montada y la hoja de verificaciones en Excel. Para no armarla nunca más desde cero.",
+                "PLANTILLA **EDITABLE**"
+              ],
+              [
+                "0:20-0:25",
+                "Cierre.",
+                "Gratis. El enlace está aquí abajo.",
+                "GRATIS · ACCESO **INMEDIATO**"
+              ]
+            ]
+          },
+          {
+            "id": "pauta-dynamo",
+            "recurso": "Pack starter de Dynamo",
+            "palabra": "DYNAMO",
+            "estado": "LISTO PARA GRABAR — los 5 scripts se corrieron en Revit (8-sep)",
+            "duracion": "20-25 s",
+            "destino": "Formulario → landing pack-dynamo",
+            "nota": "⚠ Los scripts están escritos y verificados en sintaxis y API, pero nadie los ha visto ejecutarse. No se promete en pauta lo que no se ha corrido.",
+            "guion": [
+              [
+                "0:00-0:05",
+                "Primer plano.",
+                "Abriste Dynamo una vez, no supiste por dónde seguir, y lo cerraste.",
+                "LO ABRISTE Y LO **CERRASTE**"
+              ],
+              [
+                "0:05-0:12",
+                "Screen-record: pegando un script en un nodo de Python y ejecutándolo.",
+                "La automatización en BIM no se atasca por falta de ideas. Se atasca en el primer script.",
+                "SE ATASCA EN EL **PRIMERO**"
+              ],
+              [
+                "0:12-0:20",
+                "Pantalla: los cinco scripts, tres marcados «solo lee».",
+                "Aquí van cinco, comentados por dentro para que los cambies. Y tres de ellos ni siquiera tocan tu modelo: puedes correrlos hoy en un archivo vivo.",
+                "TRES **SOLO LEEN**"
+              ],
+              [
+                "0:20-0:25",
+                "Cierre.",
+                "Gratis. El enlace está aquí abajo.",
+                "GRATIS · ACCESO **INMEDIATO**"
+              ]
+            ]
+          }
         ]
       },
       {
-        "id": "reel-coordinacion",
-        "fecha": "Viernes 18",
-        "titulo": "El choque que se paga dos veces",
-        "estado": "POR GRABAR",
-        "duracion": "30-35 s",
-        "cta": "BIM → conversación hacia el módulo BIM Coordination",
-        "nota": "Reemplaza a la pieza de «paquete Autodesk», que era venta blanda sin gancho. Este ángulo — el costo de detectar tarde — es el mismo que valida el módulo 2 de la nueva arquitectura.",
-        "guion": [
-          [
-            "0:00-0:04",
-            "A cámara, directo.",
-            "Una interferencia detectada en el modelo cuesta una tarde. La misma, detectada en obra, cuesta miles.",
-            "EN EL MODELO: UNA TARDE. EN OBRA: **MILES**"
-          ],
-          [
-            "0:04-0:12",
-            "Screen-record: modelo 3D con dos disciplinas superpuestas.",
-            "Esto es un ducto pasando por donde va una viga. En pantalla lo ves en dos segundos.",
-            "AQUÍ SE VE EN **2 SEGUNDOS**"
-          ],
-          [
-            "0:12-0:20",
-            "B-roll: foto/vídeo de obra.",
-            "En obra lo ves cuando ya está montado. Y ahí no hay software: hay que romper, reprogramar y volver a pedir material.",
-            "EN OBRA: ROMPER, REPROGRAMAR, **VOLVER A PEDIR**"
-          ],
-          [
-            "0:20-0:28",
-            "Screen-record: detección de interferencias corriendo.",
-            "Coordinar no es abrir los modelos juntos y mirar. Es tener un flujo: reglas, prioridades y un responsable por disciplina.",
-            "COORDINAR ES UN **FLUJO**, NO UNA MIRADA"
-          ],
-          [
-            "0:28-0:35",
-            "A cámara, cierre.",
-            "Si en tu oficina los choques aparecen en obra, el problema no es el software. Comenta BIM y te cuento por dónde se arregla.",
-            "COMENTA **BIM**"
-          ]
-        ]
-      },
-      {
-        "id": "reel-espejo",
-        "fecha": "Viernes 25",
-        "titulo": "El salto que más cuesta",
-        "estado": "POR GRABAR",
-        "duracion": "30 s",
-        "cta": "RUTA (⚠ requiere disparador) o NIVEL como reemplazo",
-        "nota": "La versión en video del carrusel de las 4 puertas. Tono personal y calmado, sin energía de vendedor: es una observación, no una arenga. Se puede grabar en una sola toma.",
-        "guion": [
-          [
-            "0:00-0:05",
-            "Plano medio, tono tranquilo.",
-            "Llevas tres años modelando bien. Y sigues esperando a que alguien te diga qué modelar.",
-            "LLEVAS 3 AÑOS MODELANDO BIEN"
-          ],
-          [
-            "0:05-0:12",
-            "Gráfico en pantalla: los 4 peldaños.",
-            "El recorrido tiene cuatro etapas: estructurar, coordinar, gestionar y automatizar.",
-            "ESTRUCTURA · COORDINA · GESTIONA · **AUTOMATIZA**"
-          ],
-          [
-            "0:12-0:20",
-            "Vuelve a cámara.",
-            "Y el salto que más cuesta no es el último. Es el primero: dejar de ejecutar y empezar a decidir.",
-            "EL SALTO MÁS DURO ES DEL **1 AL 2**"
-          ],
-          [
-            "0:20-0:26",
-            "Gráfico: el peldaño 2 iluminado.",
-            "Ese salto no es de software. Nadie se convierte en coordinador por aprender otro programa.",
-            "NO ES DE **SOFTWARE**"
-          ],
-          [
-            "0:26-0:30",
-            "Cierre a cámara.",
-            "¿En qué peldaño estás tú? Comenta RUTA y te lo digo con tu caso.",
-            "COMENTA **RUTA**"
-          ]
-        ]
-      },
-      {
-        "id": "reel-tutor",
-        "fecha": "Miércoles 30",
-        "titulo": "Tu especialización ahora te contesta",
-        "estado": "POR GRABAR — el tutor ya está desplegado y probado; falta montarlo en los 4 cursos",
-        "duracion": "35-40 s",
-        "cta": "ACERO → temario + cómo funciona el tutor",
-        "nota": "⚠ NO se graba ni se publica hasta que el tutor esté desplegado y probado. Es grabación de pantalla REAL: lo que se ve es lo que hace. Nada de simular una respuesta que el tutor no dio.",
-        "guion": [
-          [
-            "0:00-0:05",
-            "A cámara, de noche o luz cálida baja.",
-            "Once de la noche, estudiando, y te trabas. ¿A quién le preguntas?",
-            "11 DE LA NOCHE. ¿A QUIÉN LE **PREGUNTAS**?"
-          ],
-          [
-            "0:05-0:12",
-            "Screen-record: escribiendo la pregunta en el tutor.",
-            "En la Especialización en Acero, al programa. Le escribo como le escribiría a un profe.",
-            "LE PREGUNTAS AL **PROGRAMA**"
-          ],
-          [
-            "0:12-0:22",
-            "Screen-record: la respuesta apareciendo, con la cita de la sesión.",
-            "Y me responde con el contenido de MI curso. Fíjate en esto: me dice en qué sesión está explicado, para que vuelva a la clase.",
-            "TE DICE EN QUÉ **SESIÓN** ESTÁ"
-          ],
-          [
-            "0:22-0:30",
-            "Screen-record: pregunta fuera del temario y su respuesta.",
-            "Y si le pregunto algo que no está en las clases, me lo dice. No inventa. Eso para mí era la condición.",
-            "SI NO ESTÁ, **TE LO DICE**"
-          ],
-          [
-            "0:30-0:38",
-            "A cámara, cierre.",
-            "Estudias a tu ritmo, pero ya no estudias solo. Comenta ACERO y te mando el temario.",
-            "COMENTA **ACERO**"
-          ]
+        "bloque": "Los seis de venta — 4 del Máster + 2 de ACERO",
+        "corto": "de venta",
+        "nota": "Creativos de campaña. Ninguna pieza del Máster lleva precio; las dos de ACERO sí, porque ahí el precio es el argumento.",
+        "guiones": [
+          {
+            "id": "reel-ad-mod1",
+            "recurso": "Reel de pauta · Módulo 1 · BIM Professional",
+            "palabra": "—",
+            "estado": "POR GRABAR — los cuatro en la misma sesión y con la misma camisa",
+            "duracion": "15 s exactos",
+            "destino": "Formulario instantáneo de Meta — el mismo del módulo",
+            "nota": "Se graban los cuatro seguidos, en la misma sesion y con la misma camisa: es un set, y si se graban en dias distintos se nota en el color y deja de leerse como una familia. Gabriel a camara, sin teleprompter — la frase es corta a proposito para que salga dicha, no leida.",
+            "guion": [
+              [
+                "0:00-0:04",
+                "Primer plano de Gabriel, mirada directa. Corte seco desde negro, sin intro.",
+                "Sabes usar Revit. Otra cosa es implementar BIM en un proyecto de verdad.",
+                "SABER REVIT NO ES **IMPLEMENTAR BIM**"
+              ],
+              [
+                "0:04-0:11",
+                "Corte a pantalla: un BEP abierto, scroll rápido. Vuelve a Gabriel a mitad de frase.",
+                "Este módulo te da lo que sostiene el proyecto: estándares, BEP y flujos que no se caen a mitad de obra.",
+                "ESTÁNDARES · **BEP** · FLUJOS"
+              ],
+              [
+                "0:11-0:15",
+                "Plano medio de Gabriel. Placa final azul con el sello MODELADOR BIM.",
+                "Tres meses, y sales con la microcredencial de Modelador BIM. Llena el formulario y te decimos si es tu módulo.",
+                "**MODELADOR BIM** · 3 MESES"
+              ]
+            ]
+          },
+          {
+            "id": "reel-ad-mod2",
+            "recurso": "Reel de pauta · Módulo 2 · BIM Coordination",
+            "palabra": "—",
+            "estado": "POR GRABAR — los cuatro en la misma sesión y con la misma camisa",
+            "duracion": "15 s exactos",
+            "destino": "Formulario instantáneo de Meta — el mismo del módulo",
+            "nota": "Se graban los cuatro seguidos, en la misma sesion y con la misma camisa: es un set, y si se graban en dias distintos se nota en el color y deja de leerse como una familia. Gabriel a camara, sin teleprompter — la frase es corta a proposito para que salga dicha, no leida.",
+            "guion": [
+              [
+                "0:00-0:04",
+                "Primer plano de Gabriel. Corte seco desde negro.",
+                "Si el choque lo descubres en obra, ya lo pagaste dos veces.",
+                "EN OBRA EL ERROR **CUESTA EL DOBLE**"
+              ],
+              [
+                "0:04-0:11",
+                "Corte a Navisworks con la interferencia marcada en rojo; corte duro a la foto de obra con el mismo choque.",
+                "Aquí aprendes a verlo antes: coordinas disciplinas, detectas interferencias y controlas la calidad del entregable.",
+                "DETECTAR **ANTES**, NO DESPUÉS"
+              ],
+              [
+                "0:11-0:15",
+                "Gabriel de vuelta. Placa final con el sello COORDINADOR BIM.",
+                "Tres meses, microcredencial de Coordinador BIM. Llena el formulario y te decimos si es tu módulo.",
+                "**COORDINADOR BIM** · 3 MESES"
+              ]
+            ]
+          },
+          {
+            "id": "reel-ad-mod3",
+            "recurso": "Reel de pauta · Módulo 3 · BIM Management",
+            "palabra": "—",
+            "estado": "POR GRABAR — los cuatro en la misma sesión y con la misma camisa",
+            "duracion": "15 s exactos",
+            "destino": "Formulario instantáneo de Meta — el mismo del módulo",
+            "nota": "Se graban los cuatro seguidos, en la misma sesion y con la misma camisa: es un set, y si se graban en dias distintos se nota en el color y deja de leerse como una familia. Gabriel a camara, sin teleprompter — la frase es corta a proposito para que salga dicha, no leida.",
+            "guion": [
+              [
+                "0:00-0:04",
+                "Primer plano de Gabriel. Corte seco desde negro.",
+                "Puedes modelar impecable y seguir esperando a que alguien te diga qué modelar.",
+                "MODELAR BIEN NO ES **DECIDIR**"
+              ],
+              [
+                "0:04-0:11",
+                "Corte a la simulación 4D avanzando y a la tabla de costos 5D. Vuelve a Gabriel.",
+                "El salto a BIM Manager no es de software, es de criterio: planificas en 4D, controlas costos en 5D y lideras el equipo.",
+                "4D · **5D** · LIDERAZGO"
+              ],
+              [
+                "0:11-0:15",
+                "Gabriel, plano medio. Placa final con el sello BIM MANAGER 4D-5D.",
+                "Dos meses, es el módulo más corto. Llena el formulario y te decimos si es tu módulo.",
+                "**BIM MANAGER 4D-5D** · 2 MESES"
+              ]
+            ]
+          },
+          {
+            "id": "reel-ad-mod4",
+            "recurso": "Reel de pauta · Módulo 4 · BIM + IA",
+            "palabra": "—",
+            "estado": "POR GRABAR — los cuatro en la misma sesión y con la misma camisa",
+            "duracion": "15 s exactos",
+            "destino": "Formulario instantáneo de Meta — el mismo del módulo",
+            "nota": "Se graban los cuatro seguidos, en la misma sesion y con la misma camisa: es un set, y si se graban en dias distintos se nota en el color y deja de leerse como una familia. Gabriel a camara, sin teleprompter — la frase es corta a proposito para que salga dicha, no leida.",
+            "guion": [
+              [
+                "0:00-0:04",
+                "Primer plano de Gabriel. Corte seco desde negro.",
+                "Si repites tareas que una máquina haría igual, no te falta tiempo.",
+                "NO TE FALTA TIEMPO: TE FALTA **AUTOMATIZAR**"
+              ],
+              [
+                "0:04-0:11",
+                "Corte al grafo de Dynamo ejecutándose; corte a ChatGPT resolviendo un error de Revit.",
+                "Automatizas con Dynamo y Python, y usas IA con el criterio para saber cuándo la respuesta sirve y cuándo no.",
+                "DYNAMO · PYTHON · **CRITERIO**"
+              ],
+              [
+                "0:11-0:15",
+                "Gabriel, plano medio. Placa final con el sello ESPECIALISTA BIM + IA.",
+                "Tres meses, microcredencial de Especialista BIM más IA. Llena el formulario y te decimos si es tu módulo.",
+                "**ESPECIALISTA BIM + IA** · 3 MESES"
+              ]
+            ]
+          },
+          {
+            "id": "pauta-acero-tutor",
+            "recurso": "Especialización en Acero · $225 con tutor de IA",
+            "palabra": "—",
+            "estado": "BLOQUEADO — hasta que el tutor esté montado en los 4 cursos",
+            "duracion": "25-30 s",
+            "destino": "Formulario → landing de la Especialización",
+            "nota": "Recoge el antiguo reel-tutor, que era bueno pero estaba colocado como pieza de feed. Funciona mejor en pauta: el tutor es la razón del precio nuevo, y eso es argumento de venta, no contenido de valor. ⚠ NO se graba ni se sube hasta que el tutor esté en la portada de los CUATRO cursos: si un alumno paga $225 y no lo encuentra, prometimos de más y ya cobrado.",
+            "guion": [
+              [
+                "0:00-0:06",
+                "Primer plano.",
+                "Once de la noche, estudiando, y te trabas. ¿A quién le preguntas?",
+                "¿A QUIÉN LE **PREGUNTAS**?"
+              ],
+              [
+                "0:06-0:15",
+                "Screen-record: preguntándole al tutor y viendo la respuesta con la sesión y el minuto.",
+                "Ahora la especialización te contesta. Responde con las clases del curso y te dice en qué sesión y en qué minuto está la respuesta.",
+                "TE DICE SESIÓN Y **MINUTO**"
+              ],
+              [
+                "0:15-0:23",
+                "Pantalla: el tutor diciendo que algo no está en el material.",
+                "Y cuando algo no está en el material, te lo dice y te manda a la asesoría. No se lo inventa.",
+                "CUANDO NO SABE, LO **DICE**"
+              ],
+              [
+                "0:23-0:30",
+                "Cierre a cámara.",
+                "Está incluido en la Especialización en Acero. El enlace está aquí abajo.",
+                "**INCLUIDO** EN LA ESPECIALIZACIÓN"
+              ]
+            ]
+          },
+          {
+            "id": "pauta-acero-sobredimensionar",
+            "recurso": "Especialización en Acero · sobredimensionar",
+            "palabra": "—",
+            "estado": "POR GRABAR — se puede grabar ya, pero NO se publica hasta que el tutor esté en los 4 cursos: el cierre nombra los $225 y su razón",
+            "duracion": "20-25 s",
+            "destino": "WhatsApp → asesor (como las otras piezas de ACERO)",
+            "nota": "Es el segundo reel de venta de ACERO, y no se inventa el ángulo: sale de la pieza #1 de la historia de la cuenta — «sobredimensionar no es ir por el lado seguro» — con 14.334 vistas y 107 comentarios. Esa frase NO se toca: es lo que hizo funcionar la pieza. Aquí se pasa de post plano a reel y se le pone cierre de venta. ⚠ El destino es WhatsApp porque así está aprobada la campaña de ACERO, pero en agosto el formulario trajo el lead un 41% más barato ($0,46 contra $0,78): vale la pena probarlo A/B contra este mismo creativo antes de dar el mes por cerrado.",
+            "guion": [
+              [
+                "0:00-0:05",
+                "Primer plano, mirada directa. Corte seco desde negro, sin intro.",
+                "Sobredimensionar no es ir por el lado seguro. Es trasladarle tu inseguridad al presupuesto del cliente.",
+                "NO ES IR SEGURO: ES **TRASLADAR** TU DUDA"
+              ],
+              [
+                "0:05-0:12",
+                "Pantalla: dos secciones de acero comparadas, con su peso por metro.",
+                "Subir un perfil porque no estás seguro de la verificación no es criterio. Es acero de más, soldadura de más y una factura que alguien va a pagar.",
+                "ACERO DE MÁS · SOLDADURA DE MÁS · **FACTURA**"
+              ],
+              [
+                "0:12-0:19",
+                "Pantalla: la verificación hecha, con el resultado a la vista.",
+                "La alternativa no es arriesgar. Es verificar, y saber por qué el perfil que pusiste es el que va.",
+                "LA ALTERNATIVA ES **VERIFICAR**"
+              ],
+              [
+                "0:19-0:25",
+                "Vuelve a cámara. Placa final azul.",
+                "Eso es la Especialización en Acero: 225 dólares, y ahora con el tutor de IA entrenado con las clases del programa. Escríbenos y te contamos.",
+                "$225 · AHORA CON **TUTOR DE IA**"
+              ]
+            ]
+          }
         ]
       }
     ],
@@ -2871,9 +3163,10 @@
             "condicion": null
           },
           {
-            "formato": "Reel ads",
-            "titulo": "Valor 6 recortado a 15s (error de Revit → ChatGPT)",
-            "copy": "El reel ya editado, recortado al hook + resolucion (0-15s), con overlay del boton. VARIANTE B (cuando el tutor este vivo): cerrar con el frame del tutor — «ahora la especializacion te contesta». A/B contra la variante A."
+            "formato": "Reel ads · 20-25 s — CREATIVO NUEVO",
+            "titulo": "  Sobredimensionar — el organico #1 de la cuenta convertido en reel",
+            "copy": "«Sobredimensionar no es ir por el lado seguro: es trasladarle tu inseguridad al presupuesto del cliente.» Fue la pieza #1 de la historia de la cuenta (14.334 vistas, 107 comentarios) y hasta ahora solo se habia probado como post plano. Aqui pasa a reel, con el mismo hook intacto y cierre de venta.\n\nGuion segundo a segundo en la pestana de Reels → pauta-acero-sobredimensionar.\n\nCierra con «Especializacion en Acero · $225 USD · ahora con tutor de IA». Boton → WhatsApp.\n\nOJO: en agosto el formulario trajo el lead un 41% mas barato que WhatsApp ($0,46 contra $0,78). Vale la pena un A/B con este mismo creativo.",
+            "condicion": "El cierre nombra los $225 y su razon, asi que no sale hasta que el tutor este montado en los 4 cursos de ACERO. Se puede GRABAR desde ya."
           },
           {
             "formato": "Post plano + reel — CREATIVO NUEVO (es el que justifica los $225)",
@@ -2957,7 +3250,7 @@
         {
           "nombre": "Verificacion de Acero (5 Verificaciones)",
           "palabra": "ACERO",
-          "vinculado_a": "TODOS los CTA de acero del mes: posts de dato, Sobredimensionada 2, blog ETABS/SAP, pauta"
+          "vinculado_a": "CTA de acero del mes: posts de dato de calculo, blog ETABS/SAP y pauta. OJO: ya NO lo sostiene ningun reel — los 5 reels nuevos apuntan a GUIA, MEMORIA y DYNAMO."
         },
         {
           "nombre": "Test de Nivelacion BIM",
@@ -2969,7 +3262,7 @@
         {
           "nombre": "Guía «Revit + ChatGPT: resuelve errores con IA»",
           "palabra_sugerida": "GUIA",
-          "para_que": "Lo pide el CTA del reel «Valor 6» (Mié 9), que sale un día después de su lanzamiento (Mar 8). Es el más urgente de los tres."
+          "para_que": "Lo piden los CTA de reel-duplicados (Mié 16) y reel-limite-ia (Mié 30), y el propio reel de lanzamiento del Mar 8. CORREGIDO 9-sep: antes decía que lo pedía el reel del Mié 9 — ese reel («Revit + ChatGPT») se retiró el 8-sep porque ya se había publicado en agosto, y el del Mié 9 es ahora reel-deriva, que pide MEMORIA."
         },
         {
           "nombre": "Pack starter de scripts Dynamo / Python para Revit",
@@ -2979,11 +3272,35 @@
         {
           "nombre": "Guía de memoria de cálculo + plantilla",
           "palabra_sugerida": "MEMORIA",
-          "para_que": "Pedido por Dayana el 2-sep. Se define en la reunión de cierre del viernes 5 y se lanza el Mar 29. Lo revisa Gabriel antes de salir: puede terminar dentro de un documento que alguien firma."
+          "para_que": "Pedido por Dayana el 2-sep. Se lanza el Mar 29, pero su PALABRA es la más urgente de las tres: la piden reel-deriva el Mié 9 y reel-cita-norma el Vie 25. El disparador MEMORIA tiene que estar vivo el 9, tres semanas antes de su propio lanzamiento. Lo revisa Gabriel antes de salir: puede terminar dentro de un documento que alguien firma."
         }
       ],
       "regla": "REGLA DE SEGURIDAD (leccion de julio): ningun CTA sale al aire sin su recurso VIVO y su disparador montado el dia de la publicacion. Si el recurso no llego a tiempo, NO se aplaza la pieza: se publica con el CTA de reemplazo de esta tabla. Prometer y no entregar cuesta mas que cambiar la palabra.",
       "mapa_cta": [
+        {
+          "fecha": "Mié 9 ⚠ · Vie 25 · Mar 29 (lanzamiento)",
+          "pieza": "Reel de lanzamiento del recurso + Cumple resistencia y el edificio e (Miércoles 9) + «Según la norma» no es una cita (Viernes 25)",
+          "cta": "MEMORIA",
+          "recurso": "Guía de memoria de cálculo + plantilla (Word y Excel)",
+          "estado": "🔴 LA MÁS URGENTE: recurso publicado y con visto bueno de Gabriel (8-sep), pero la palabra se pide el Mié 9 — tres semanas ANTES de su propio lanzamiento. Si el disparador no está el 9, reel-deriva sale sin red.",
+          "reemplazo": "Si no está el día 9: CTA cambia a «comenta ACERO» → 5 Verificaciones (montado y probado), y se regenera el subtítulo."
+        },
+        {
+          "fecha": "Mar 8 (lanzamiento) · Mié 16 · Mié 30",
+          "pieza": "Reel de lanzamiento del recurso + Tus planos están bien. Tu presupue (Miércoles 16) + Lo que no hay que preguntarle a la (Miércoles 30)",
+          "cta": "GUIA",
+          "recurso": "Guía «Revit + ChatGPT: resuelve errores con IA»",
+          "estado": "🟡 Recurso VIVO y probado (7-sep); falta SOLO montar el disparador GUIA en GHL",
+          "reemplazo": "Si no está el Mar 8: CTA cambia a «comenta GPT» → GPT IA Pro (existe). El subtítulo del reel dice COMENTA GUIA: si se cambia el CTA hay que regenerar el subtítulo (5 min con el pipeline)."
+        },
+        {
+          "fecha": "Vie 18 · Mar 22 (lanzamiento)",
+          "pieza": "Reel de lanzamiento del recurso + 400 avisos sin leer (Viernes 18)",
+          "cta": "DYNAMO",
+          "recurso": "Pack starter de scripts Dynamo / Python",
+          "estado": "🟡 Recurso publicado y los 5 scripts corridos en Revit (8-sep); falta SOLO el disparador DYNAMO",
+          "reemplazo": "Si no está el Vie 18: CTA cambia a «comenta BIM» (bot Máster) y el pack queda para octubre."
+        },
         {
           "fecha": "L7, Mar 8, L14, V18, L21",
           "pieza": "Carruseles y reels de BIM (3 señales, Coordinador, Navisworks, Autodesk, errores Revit)",
@@ -2993,52 +3310,20 @@
           "reemplazo": "—"
         },
         {
-          "fecha": "Mi 9",
-          "pieza": "REEL Valor 6 (error Revit + ChatGPT)",
-          "cta": "GUIA",
-          "recurso": "Guia «Revit + ChatGPT: resuelve errores con IA»",
-          "estado": "🔴 POR CREAR + disparador por montar",
-          "reemplazo": "Si no esta el dia 9: CTA cambia a «comenta GPT» → GPT IA Pro (existe). El subtitulo del video dice COMENTA GUIA — si se cambia el CTA hay que regenerar el subtitulo (5 min con el pipeline)."
-        },
-        {
           "fecha": "V11, Mi16, V2oct",
-          "pieza": "Posts de dato de calculo + Sobredimensionada 2",
+          "pieza": "Posts de dato de calculo (ningun reel de septiembre apunta aqui)",
           "cta": "ACERO",
           "recurso": "Verificacion de Acero (5 Verificaciones)",
           "estado": "✅ Existe, embudo verificado, palabra montada",
           "reemplazo": "—"
         },
         {
-          "fecha": "Sab 12, Sab 19",
-          "pieza": "Reels grabados #4 Dynamo y #6 Python",
-          "cta": "DYNAMO",
-          "recurso": "Pack starter de scripts Dynamo / Python",
-          "estado": "🔴 POR CREAR + disparador por montar",
-          "reemplazo": "Si no esta: CTA cambia a «comenta BIM» (bot Master) y el pack queda para octubre."
-        },
-        {
-          "fecha": "Mar 22",
-          "pieza": "Reel grabado #7 Mitos de la automatizacion",
-          "cta": "IA",
-          "recurso": "Seguimiento del bot (y GPT IA Pro como regalo en el DM)",
-          "estado": "✅ Disparador IA montado; GPT IA Pro existe",
-          "reemplazo": "—"
-        },
-        {
           "fecha": "Mi 23, V25 + correo Mar 22 + comunidad Jue 24",
-          "pieza": "Carrusel 4 Puertas, reel espejo, correo Master",
+          "pieza": "Carrusel 4 Puertas y correo Master (el reel espejo se retiro el 8-sep)",
           "cta": "RUTA",
           "recurso": "Orientacion 1-a-1 del equipo (el Test de Nivelacion cubre el diagnostico)",
           "estado": "🟡 Recurso existe (test), DISPARADOR RUTA por montar",
           "reemplazo": "Si el disparador no esta el 22: CTA cambia a «comenta NIVEL» → Test de Nivelacion (montado)."
-        },
-        {
-          "fecha": "Sab 26",
-          "pieza": "Reel grabado #8 IA para arquitectura",
-          "cta": "IA",
-          "recurso": "Bot Master + GPT IA Pro",
-          "estado": "✅ Montado",
-          "reemplazo": "—"
         },
         {
           "fecha": "L28, Mi30 + correo Mar 29",
@@ -3080,7 +3365,8 @@
           "estado": "🟡 Existe; CONFIRMAR la palabra montada",
           "reemplazo": "Enlace directo en el blog."
         }
-      ]
+      ],
+      "nota_mapa": "RECONSTRUIDO 9-sep. Cuatro filas describían los reels de agosto («Reels grabados #4, #6, #7, #8» y «el reel del miércoles, error Revit + ChatGPT»), que se retiraron el 8-sep. Las tres palabras de recurso van primero y en el orden en que se piden: MEMORIA el Mié 9, GUIA el Mar 8, DYNAMO el Vie 18."
     },
     "recursos": [
       {
@@ -3089,10 +3375,10 @@
         "palabra": "GUIA",
         "formato": "PDF de 10-12 páginas",
         "estado": "POR CREAR — se necesita VIVO el lunes 8",
-        "cuando": "Semana 1. Es el más urgente de los tres: hay un reel el miércoles 9 cuyo CTA ya lo promete.",
+        "cuando": "Semana 1. CORREGIDO 9-sep: antes decía que el reel del miércoles 9 ya lo prometía — eso era del reparto viejo. El del Mié 9 es reel-deriva y pide MEMORIA. GUIA la piden el Mié 16 y el Mié 30, y el propio reel de lanzamiento del Mar 8.",
         "promesa": "Los 10 errores de Revit que más tiempo hacen perder, y el prompt exacto que los resuelve — con la advertencia de cuándo NO hacerle caso a la respuesta.",
         "para_quien": "Quien ya usa Revit todos los días y pierde tardes enteras buscando en foros.",
-        "por_que": "El reel «Valor 6» cuenta exactamente esto — un error de Revit resuelto con ChatGPT en vez de dos horas de foro — y es la pieza base del miércoles 9. El recurso no se inventa para llenar un hueco: se crea porque ya hay una pieza que lo pide.",
+        "por_que": "El reel de duplicados del miercoles 16 y el del limite de la IA del miercoles 30 cuentan exactamente esto, y sus CTA apuntan aqui. El recurso no se inventa para llenar un hueco: existe porque ya hay piezas que lo piden.",
         "contenido": [
           "Los 10 errores: qué dice Revit, qué significa de verdad y qué lo causa.",
           "El prompt exacto para cada uno, escrito para copiar y pegar, con el contexto que hay que darle a ChatGPT para que la respuesta sirva (versión, disciplina, qué se intentó ya).",
@@ -3195,8 +3481,10 @@
         "posts": [
           {
             "fecha": "Mar 22",
-            "formato": "CARRUSEL (6 slides) — EXTRA de lanzamiento",
-            "red": "Instagram + Facebook + LinkedIn (PDF)",
+            "formato": "REEL (grabar) — EXTRA de lanzamiento",
+            "red": "Instagram + Facebook + TikTok",
+            "guion_en": "reels-septiembre.py → REELS_LEADMAGNET → pauta-dynamo, con el CTA cambiado a comentario en vez de formulario: se graba una vez y se monta dos.",
+            "formato_alternativo": "CARRUSEL (6 slides), que es como estaba antes del 9-sep. NO se tira: Dynamo es el tema de mejor guardado de la cuenta y el carrusel es el formato que más se guarda. El caption y el prompt de abajo son los del carrusel y siguen sirviendo tal cual si prefieren mantenerlo.",
             "hook": "Cinco tareas de Revit que no deberías seguir haciendo a mano.",
             "caption": "Si renombras vistas una por una, si exportas planos abriendo el cuadro de diálogo cada vez, o si revisas parámetros vacíos a ojo: eso ya lo hace un script.\n\nArmamos un pack con cinco, comentados línea por línea para que los puedas cambiar y no solo ejecutar. Con el PDF de instalación y la versión exacta con la que los probamos.\n\nEs gratis. Comenta DYNAMO y te llega.\n\n¿Cuál de las cinco te quitaría más tiempo de encima?",
             "cta": "Comenta DYNAMO",
@@ -3210,7 +3498,7 @@
         "palabra": "MEMORIA",
         "formato": "PDF de la guía + plantilla editable (Word y Excel)",
         "estado": "POR CREAR — se define en la reunión de cierre del viernes 5",
-        "cuando": "Semana 4. Es el que más valor tiene de los tres y el que más cuidado necesita.",
+        "cuando": "Semana 4 para el post de lanzamiento, PERO su palabra clave es la más urgente de las tres: reel-deriva la pide el Mié 9 y reel-cita-norma el Vie 25. El disparador MEMORIA tiene que estar vivo el 9, tres semanas antes de su propio lanzamiento.",
         "promesa": "La estructura completa de una memoria de cálculo que se sostiene ante revisión, con la plantilla para llenarla.",
         "para_quien": "El ingeniero que ya calcula bien pero improvisa el documento cada vez, y el que va a entregar a una entidad por primera vez.",
         "por_que": "Es el que pidió Dayana el 2-sep. Y encaja con lo que ya sabemos de la cuenta: los posts que revientan son los de dato de cálculo. Una memoria de cálculo es dato de cálculo convertido en documento — el mismo público, un paso más adelante.",
@@ -3255,7 +3543,9 @@
         "posts": [
           {
             "fecha": "Mar 29",
-            "formato": "POST PLANO (1 imagen) — EXTRA de lanzamiento",
+            "formato": "REEL (grabar) — EXTRA de lanzamiento",
+            "guion_en": "reels-septiembre.py → REELS_LEADMAGNET → pauta-memoria, con el CTA cambiado a comentario en vez de formulario.",
+            "formato_alternativo": "POST PLANO (1 imagen), que es como estaba antes del 9-sep. Se eligió porque cumple la regla de llevar dato de cálculo; el reel también lo lleva. El caption y el prompt de abajo son los del post plano.",
             "red": "Instagram + Facebook",
             "hook": "Una memoria de cálculo no se devuelve por los números. Se devuelve por lo que no está escrito.",
             "caption": "Hipótesis que no se declararon. Criterios que se adoptaron y no se justificaron. Normativa citada sin versión.\n\nEl cálculo estaba bien. El documento no lo demostraba.\n\nArmamos la guía con la estructura completa de una memoria que se sostiene ante revisión, y la plantilla editable para llenarla.\n\nEs gratis. Comenta MEMORIA y te llega.\n\n¿Por qué te devolvieron la última que entregaste?",

@@ -125,12 +125,12 @@ def tab_resumen():
     o.append('<div class="tabla-scroll"><table><thead><tr><th>Pestaña</th><th>Qué contiene</th>'
              '<th>Cuándo se publica</th></tr></thead><tbody>')
     filas = [
-        ("Grupo 1 · Feed", "12 piezas nuevas: 5 carruseles, 5 reels, 2 posts planos. Con copy y prompt de imagen.", "Lunes, miércoles y viernes"),
+        ("Grupo 1 · Feed", "15 piezas nuevas: 12 base (5 carruseles · 5 reels · 2 posts planos, el 40/40/20) y 3 reels EXTRA de lanzamiento de recurso los martes. Con copy y prompt de imagen.", "Lunes, miércoles y viernes"),
         ("Grupo 2 · Comunidades", "12 mensajes cortos, sin hashtags, listos para pegar.", "Martes, jueves y viernes"),
         ("Grupo 3 · Blog", "4 artículos con su CTA y la portada.", "Sábados"),
         ("Grupo 4 · LinkedIn", "20 publicaciones repartidas entre las 3 páginas.", "Lunes a viernes"),
         ("Grupo 5 · Historias", "80 historias: 4 al día, de lunes a viernes, con storytelling.", "Todos los días L-V"),
-        ("Reels", "Guion completo segundo a segundo de los 5 reels.", "Se graban Lun 7 y Mar 8"),
+        ("Reels", "Guion segundo a segundo de los 14: 5 de valor, 3 de lead magnet y 6 de venta.", "Dos sesiones de grabación"),
         ("Publicidad", "Los 10 anuncios con su copy y su ficha de montaje. Sin precios: el Máster no lleva cifra.", "Todo junto el lunes 7"),
         ("Lead magnets", "Los 3 recursos nuevos, su post de lanzamiento y el paso a paso de GoHighLevel.", "Mar 8, Mar 22 y Mar 29"),
         ("Tutor IA", "Qué es, qué falta para abrirlo y los nombres de curso propuestos.", "Antes del lunes 7"),
@@ -291,69 +291,86 @@ def tab_historias():
 
 
 # ════════════════════ PESTAÑA: REELS ════════════════════
-def tab_reels():
-    o = ['<h2>Guiones de reels — para grabar</h2>',
-         '<p class="intro">Cinco reels de valor, <b>los cinco nuevos</b>, y cuatro creativos de '
-         'pauta. Cada guion va segundo a segundo: qué se ve, qué se dice y qué texto aparece en '
-         'pantalla. Las palabras entre **asteriscos** van resaltadas en ámbar en el subtítulo.</p>',
-         '<div class="dato" style="border-left-color:#c0442e"><strong>Los cinco anteriores se '
-         'retiraron el 8-sep.</strong> Dos ya se habían publicado en agosto: «Revit me arrojó un '
-         'error» (= <i>le pedia a la ia dg.mp4</i>) y «El salto que más cuesta» (= <i>modelas bien '
-         'dg reel.mp4</i>, cuyo gancho empezaba literalmente «llevas tres años modelando bien»). '
-         'Los otros tres salieron con ellos porque la instrucción fue dejar cinco completamente '
-         'nuevos, no cuatro nuevos y uno heredado.</div>',
-         '<div class="dato"><strong>La regla del primer segundo.</strong> Se abre con la frontera — '
-         'la afirmación que incomoda o el dato que sorprende — nunca con la invitación. En agosto un '
-         'reel que abría presentándose hizo 198 vistas y cero de todo.</div>',
-         barra_avance()]
-    for r in R.REELS:
-        cls = "listo" if "EDITADO" in r["estado"] else ("gated" if "CONDICIONADO" in r["estado"] else "")
-        k = clave("reel", r["fecha"], r["titulo"])
-        o.append(f'<div class="reel col {cls}" data-k="{k}">'
-                 f'<div class="pieza-cab cab">{chk(k)}<span class="fecha">{e(r["fecha"])}</span>'
-                 f'<h3>{e(r["titulo"])}</h3><span class="tipo">{e(r["duracion"])}</span></div>')
-        o.append(f'<p class="estado">{e(r["estado"])}</p>')
-        o.append(f'<p class="nota">{e(r["nota"])}</p>')
-        o.append(f'<p class="cta-linea"><b>CTA:</b> {e(r["cta"])}</p>')
-        o.append('<div class="tabla-scroll"><table><thead><tr><th>Tiempo</th><th>Qué se ve</th>'
-                 '<th>Qué se dice</th><th>Texto en pantalla</th></tr></thead><tbody>')
-        for t, ve, di, tx in r["guion"]:
-            tx_html = e(tx).replace("**", "|")
-            partes = tx_html.split("|")
-            tx_html = "".join(p if i % 2 == 0 else f'<b class="amb">{p}</b>' for i, p in enumerate(partes))
-            o.append(f'<tr><td class="t">{e(t)}</td><td>{e(ve)}</td><td>{e(di)}</td><td>{tx_html}</td></tr>')
-        o.append('</tbody></table></div></div>')
+def fila_guion(guion):
+    """Las cuatro columnas del guion. Los **asteriscos** salen en ambar."""
+    o = ['<div class="tabla-scroll"><table><thead><tr><th>Tiempo</th><th>Qué se ve</th>'
+         '<th>Qué se dice</th><th>Texto en pantalla</th></tr></thead><tbody>']
+    for t, ve, di, tx in guion:
+        partes = e(tx).split("**")
+        tx_html = "".join(x if i % 2 == 0 else f'<b class="amb">{x}</b>'
+                          for i, x in enumerate(partes))
+        o.append(f'<tr><td class="t">{e(t)}</td><td>{e(ve)}</td><td>{e(di)}</td>'
+                 f'<td>{tx_html}</td></tr>')
+    o.append('</tbody></table></div>')
+    return "\n".join(o)
 
-    # ── Creativos de pauta ────────────────────────────────────────────────
-    # No son piezas de feed: llevan CTA a formulario, no a comentario. Van al
-    # final de la pestaña y no en la de publicidad porque quien los graba es
-    # quien graba los otros cinco, en la misma sesion.
-    o.append('<h2 style="margin-top:44px">Creativos de pauta — lead magnets</h2>')
-    o.append('<p class="intro">Se graban en la misma sesión que los de arriba pero se montan '
-             'aparte: llevan CTA a <b>formulario</b>, no a comentario. En agosto el formulario '
-             'trajo el lead a <b>$0,46</b> contra <b>$0,78</b> de WhatsApp — un 41% más barato.</p>')
-    o.append('<div class="dato"><strong>Ninguna pieza del Máster lleva precio.</strong> '
-             'La de ACERO sí, porque ahí el precio ES el argumento: subió a $225 y la razón '
-             'es el tutor de IA incluido.</div>')
-    for r in getattr(R, "REELS_PAUTA", []):
-        bloq = r["estado"].startswith("BLOQUEADO")
-        k = clave("pauta", r["id"], r["recurso"])
-        o.append(f'<div class="reel col {"gated" if bloq else ""}" data-k="{k}">'
-                 f'<div class="pieza-cab cab">{chk(k)}'
-                 f'<span class="fecha">{e(r["palabra"])}</span>'
-                 f'<h3>{e(r["recurso"])}</h3>'
-                 f'<span class="tipo">{e(r["duracion"])}</span></div>')
-        o.append(f'<p class="estado">{e(r["estado"])}</p>')
-        o.append(f'<p class="nota">{e(r["nota"])}</p>')
-        o.append(f'<p class="cta-linea"><b>Destino:</b> {e(r["destino"])}</p>')
-        o.append('<div class="tabla-scroll"><table><thead><tr><th>Tiempo</th><th>Qué se ve</th>'
-                 '<th>Qué se dice</th><th>Texto en pantalla</th></tr></thead><tbody>')
-        for t, ve, di, tx in r["guion"]:
-            tx_html = e(tx).replace("**", "|")
-            partes = tx_html.split("|")
-            tx_html = "".join(x if i % 2 == 0 else f'<b class="amb">{x}</b>' for i, x in enumerate(partes))
-            o.append(f'<tr><td class="t">{e(t)}</td><td>{e(ve)}</td><td>{e(di)}</td><td>{tx_html}</td></tr>')
-        o.append('</tbody></table></div></div>')
+
+def tab_reels():
+    """Los 14 reels del mes: 5 de valor + 3 de lead magnet + 6 de venta.
+
+    El inventario no se arma aqui: se pide a reels-septiembre.py, que es quien
+    lo define. Antes esta pestana solo mostraba los cinco de valor y los cuatro
+    creativos de lead magnet, y los cuatro reels del Master —que ya existian
+    con guion— solo aparecian dentro de la pestana de Publicidad. Se grababan
+    catorce y en la lista de grabacion se veian nueve.
+    """
+    bloques = R.inventario(CAL)
+    total = sum(len(b[3]) for b in bloques)
+    o = [f'<h2>Guiones de reels — los {total} del mes</h2>',
+         '<p class="intro">Cinco de valor, tres de lead magnet y seis de venta '
+         '(cuatro del Máster y dos de ACERO). Cada guion va segundo a segundo: qué se ve, '
+         'qué se dice y qué texto aparece en pantalla. Las palabras entre **asteriscos** van '
+         'resaltadas en ámbar en el subtítulo.</p>',
+         '<div class="dato"><strong>Todo se graba en dos sesiones, no en catorce.</strong> '
+         'Los ocho de valor y lead magnet salen de una; los seis de venta, de otra — los '
+         'cuatro del Máster seguidos y con la misma camisa, porque son un set y si se graban '
+         'en días distintos se nota en el color.</div>',
+         '<div class="dato" style="border-left-color:#c0442e"><strong>Los cinco reels de valor '
+         'anteriores se retiraron el 8-sep.</strong> Dos ya se habían publicado en agosto: '
+         '«Revit me arrojó un error» (= <i>le pedia a la ia dg.mp4</i>) y «El salto que más '
+         'cuesta» (= <i>modelas bien dg reel.mp4</i>). Los otros tres salieron con ellos porque '
+         'la instrucción fue dejar cinco completamente nuevos, no cuatro nuevos y uno '
+         'heredado.</div>',
+         '<div class="dato"><strong>La regla del primer segundo.</strong> Se abre con la '
+         'frontera — la afirmación que incomoda o el dato que sorprende — nunca con la '
+         'invitación. En agosto un reel que abría presentándose hizo 198 vistas y cero de '
+         'todo.</div>',
+         '<div class="dato"><strong>El precio va al revés en cada producto.</strong> Ninguna '
+         'pieza del Máster lleva cifra: el precio lo da el asesor en la llamada. Las dos de '
+         'ACERO sí la llevan, y pegada a su razón — $225 porque ahora incluye el tutor de IA. '
+         'Un precio que sube sin explicación se lee como encarecimiento.</div>',
+         barra_avance()]
+
+    for titulo, _corto, nota, piezas in bloques:
+        o.append(f'<h2 style="margin-top:44px">{e(titulo)} <span class="cuenta">'
+                 f'{len(piezas)}</span></h2>')
+        o.append(f'<p class="intro">{e(nota)}</p>')
+        for r in piezas:
+            est = r["estado"]
+            cls = ("gated" if est.startswith("BLOQUEADO") or "CONDICIONADO" in est
+                   else ("listo" if "LISTO" in est or "EDITADO" in est else ""))
+            # los de valor van por fecha; los de lead magnet por su palabra clave; los
+            # de venta no tienen ninguna de las dos, y un guion suelto se lee como un
+            # hueco, no como una etiqueta
+            etiq = r.get("fecha") or r.get("palabra") or ""
+            if etiq in ("", "—"):
+                etiq = "PAUTA"
+            nombre = r.get("titulo") or r.get("recurso")
+            k = clave("reel", r.get("id", ""), nombre)
+            o.append(f'<div class="reel col {cls}" data-k="{k}">'
+                     f'<div class="pieza-cab cab">{chk(k)}'
+                     f'<span class="fecha">{e(etiq)}</span>'
+                     f'<h3>{e(nombre)}</h3>'
+                     f'<span class="tipo">{e(r["duracion"])}</span></div>')
+            o.append(f'<p class="estado">{e(est)}</p>')
+            if r.get("nota"):
+                o.append(f'<p class="nota">{e(r["nota"])}</p>')
+            if r.get("cta"):
+                o.append(f'<p class="cta-linea"><b>CTA:</b> {e(r["cta"])}</p>')
+            if r.get("destino"):
+                o.append(f'<p class="cta-linea"><b>Destino:</b> {e(r["destino"])}</p>')
+            o.append(fila_guion(r["guion"]))
+            o.append('</div>')
     return "\n".join(o)
 
 
@@ -691,6 +708,9 @@ table.cfg tr.dura td{background:var(--stop-bg)}
   border-radius:0 5px 5px 0;font-size:13px;font-family:var(--mono);line-height:1.55}
 .nota{border-left:3px solid var(--line-strong);padding:2px 0 2px 12px;margin:10px 0;
   font-size:13.5px;color:var(--ink-2);font-style:italic}
+.cuenta{display:inline-block;min-width:26px;padding:1px 9px;margin-left:8px;
+  border-radius:11px;background:var(--amber);color:var(--navy);
+  font:700 15px/1.5 var(--display);vertical-align:middle}
 .dato{background:var(--stop-bg);border-left:4px solid var(--stop);padding:13px 16px;
   border-radius:0 6px 6px 0;margin:16px 0;font-size:14.5px}
 .dato strong{font-family:var(--display);font-weight:800}
@@ -853,8 +873,24 @@ def exportar_lm():
         json.dumps(d, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
+def exportar_reels():
+    """Los 14 reels a JSON, por el mismo motivo que los lead magnets.
+
+    El Word lo arma Node y no puede importar el .py. Sin esto, el Word tendria
+    que mantener su propia lista de reels — que es justo como el artefacto y el
+    documento acaban diciendo numeros distintos.
+    """
+    d = {"total": R.TOTAL_REELS,
+         "bloques": [{"titulo": t, "corto": c, "nota": n,
+                      "piezas": [{**r, "guion": [list(x) for x in r["guion"]]} for r in ps]}
+                     for t, c, n, ps in R.inventario(CAL)]}
+    (MATRIZ / "reels-septiembre.json").write_text(
+        json.dumps(d, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
 def main():
     exportar_lm()
+    exportar_reels()
     partes = ['<title>Matriz Septiembre DMA</title>',
               '<link rel="preconnect" href="https://fonts.googleapis.com">',
               '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>',
@@ -884,7 +920,10 @@ def main():
     kb = salida.stat().st_size / 1024
     n_hist = sum(len(d["historias"]) for s in H.SEMANAS for d in s["dias"])
     print(f"OK → {salida} ({kb:.0f} KB)")
-    print(f"   {len(PESTANAS)} pestañas · {n_hist} historias · {len(R.REELS)} reels de valor + {len(R.REELS_PAUTA)} de pauta")
+    inv = R.inventario(CAL)
+    print(f"   {len(PESTANAS)} pestañas · {n_hist} historias · "
+          f"{sum(len(b[3]) for b in inv)} reels ("
+          + " + ".join(f"{len(b[3])} {b[1]}" for b in inv) + ")")
 
 
 if __name__ == "__main__":

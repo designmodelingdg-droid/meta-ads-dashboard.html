@@ -67,7 +67,7 @@ datos = {
             "checklist_tareas": "las tareas del mes con lo que desbloquea cada una",
             "grupos": "los 5 grupos con su calendario y el contenido de cada pieza pegado dentro",
             "historias": "80 historias, 4 al dia de lunes a viernes, con prompt de imagen",
-            "reels": "los guiones segundo a segundo de los reels de feed",
+            "reels": "los 14 reels del mes en tres bloques: valor, lead magnet y venta",
             "publicidad": "los 10 anuncios con copy aprobado y ficha de montaje",
             "lead_magnets": "los 3 recursos nuevos, su post de lanzamiento y el montaje en GHL",
             "correos": "los correos del mes",
@@ -84,8 +84,14 @@ datos = {
         "medida": H.MEDIDA,
         "semanas": H.SEMANAS,
     },
-    "reels_de_feed": {
-        "guiones": [{**r, "guion": [list(t) for t in r["guion"]]} for r in R.REELS],
+    # Los 14 del mes, no solo los 5 de feed: el inventario lo define
+    # reels-septiembre.py y aqui solo se vuelca, para que el JSON de entrega
+    # no pueda decir un numero distinto al del artefacto.
+    "reels": {
+        "total": R.TOTAL_REELS,
+        "bloques": [{"bloque": t, "corto": c, "nota": n,
+                     "guiones": [{**r, "guion": [list(x) for x in r["guion"]]} for r in ps]}
+                    for t, c, n, ps in R.inventario(CAL)],
         "prompts_de_imagen": {k: {"medida": v[0], "prompt": v[1]}
                               for k, v in R.FEED_PROMPTS.items()},
     },
@@ -108,5 +114,5 @@ piezas = sum(len(g["calendario"]) for g in datos["grupos"])
 hist = sum(len(d["historias"]) for s in H.SEMANAS for d in s["dias"])
 anuncios = sum(len(c["piezas"]) for c in datos["publicidad"]["campanas"])
 print(f"OK → {SALIDA.relative_to(RAIZ)} ({kb:.0f} KB)")
-print(f"   {piezas} piezas en 5 grupos · {hist} historias · {len(datos['reels_de_feed']['guiones'])} "
+print(f"   {piezas} piezas en 5 grupos · {hist} historias · {datos['reels']['total']} "
       f"guiones de reel · {anuncios} anuncios · {len(datos['lead_magnets']['recursos'])} lead magnets")

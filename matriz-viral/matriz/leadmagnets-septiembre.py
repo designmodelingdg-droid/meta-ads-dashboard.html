@@ -92,7 +92,7 @@ MAGNETS = [
     palabra="GUIA",
     formato="PDF de 10-12 páginas",
     estado="POR CREAR — se necesita VIVO el lunes 8",
-    cuando="Semana 1. Es el más urgente de los tres: hay un reel el miércoles 9 cuyo CTA ya lo promete.",
+    cuando="Semana 1. CORREGIDO 9-sep: antes decía que el reel del miércoles 9 ya lo prometía — eso era del reparto viejo. El del Mié 9 es reel-deriva y pide MEMORIA. GUIA la piden el Mié 16 y el Mié 30, y el propio reel de lanzamiento del Mar 8.",
     promesa="Los 10 errores de Revit que más tiempo hacen perder, y el prompt exacto que los "
             "resuelve — con la advertencia de cuándo NO hacerle caso a la respuesta.",
     para_quien="Quien ya usa Revit todos los días y pierde tardes enteras buscando en foros.",
@@ -174,8 +174,14 @@ MAGNETS = [
          ("Puente", "Correo 3 lleva al módulo BIM + IA — sin precio, con «agenda una cita»."),
          ("Reemplazo si no llega", "El CTA cambia a GPT IA Pro y el pack se corre a octubre.")],
     posts=[dict(
-        fecha="Mar 22", formato="CARRUSEL (6 slides) — EXTRA de lanzamiento",
-        red="Instagram + Facebook + LinkedIn (PDF)",
+        fecha="Mar 22", formato="REEL (grabar) — EXTRA de lanzamiento",
+        red="Instagram + Facebook + TikTok",
+        guion_en="reels-septiembre.py → REELS_LEADMAGNET → pauta-dynamo, con el CTA "
+                 "cambiado a comentario en vez de formulario: se graba una vez y se monta dos.",
+        formato_alternativo="CARRUSEL (6 slides), que es como estaba antes del 9-sep. NO se "
+                 "tira: Dynamo es el tema de mejor guardado de la cuenta y el carrusel es el "
+                 "formato que más se guarda. El caption y el prompt de abajo son los del "
+                 "carrusel y siguen sirviendo tal cual si prefieren mantenerlo.",
         hook="Cinco tareas de Revit que no deberías seguir haciendo a mano.",
         caption="Si renombras vistas una por una, si exportas planos abriendo el cuadro de diálogo "
                 "cada vez, o si revisas parámetros vacíos a ojo: eso ya lo hace un script.\n\n"
@@ -196,7 +202,7 @@ MAGNETS = [
     palabra="MEMORIA",
     formato="PDF de la guía + plantilla editable (Word y Excel)",
     estado="POR CREAR — se define en la reunión de cierre del viernes 5",
-    cuando="Semana 4. Es el que más valor tiene de los tres y el que más cuidado necesita.",
+    cuando="Semana 4 para el post de lanzamiento, PERO su palabra clave es la más urgente de las tres: reel-deriva la pide el Mié 9 y reel-cita-norma el Vie 25. El disparador MEMORIA tiene que estar vivo el 9, tres semanas antes de su propio lanzamiento.",
     promesa="La estructura completa de una memoria de cálculo que se sostiene ante revisión, con "
             "la plantilla para llenarla.",
     para_quien="El ingeniero que ya calcula bien pero improvisa el documento cada vez, y el que va "
@@ -230,7 +236,12 @@ MAGNETS = [
                     "Professional según la respuesta de perfil."),
          ("Reemplazo si no llega", "El CTA cambia a las 5 Verificaciones de Acero, que ya existe.")],
     posts=[dict(
-        fecha="Mar 29", formato="POST PLANO (1 imagen) — EXTRA de lanzamiento",
+        fecha="Mar 29", formato="REEL (grabar) — EXTRA de lanzamiento",
+        guion_en="reels-septiembre.py → REELS_LEADMAGNET → pauta-memoria, con el CTA "
+                 "cambiado a comentario en vez de formulario.",
+        formato_alternativo="POST PLANO (1 imagen), que es como estaba antes del 9-sep. Se "
+                 "eligió porque cumple la regla de llevar dato de cálculo; el reel también lo "
+                 "lleva. El caption y el prompt de abajo son los del post plano.",
         red="Instagram + Facebook",
         hook="Una memoria de cálculo no se devuelve por los números. Se devuelve por lo que no está escrito.",
         caption="Hipótesis que no se declararon. Criterios que se adoptaron y no se justificaron. "

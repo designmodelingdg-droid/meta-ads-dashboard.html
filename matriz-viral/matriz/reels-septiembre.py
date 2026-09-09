@@ -111,20 +111,18 @@ REELS = [
 ]
 
 # ─────────────────────────────────────────────────────────────────────────────
-# REELS PARA PAUTA — no son contenido de feed, son creativos de campaña
+# BLOQUE 2 · LOS TRES REELS DE LEAD MAGNET — uno por recurso gratuito
 #
-# Los pidió Dayana el 8-sep junto con la limpieza de los reels de valor. Se
-# graban en la misma sesión pero se montan aparte: llevan CTA a landing, no a
-# comentario, porque en pauta el comentario no se puede automatizar igual.
+# No son contenido de feed puro: cada uno existe para que un recurso concreto
+# se descargue. Se graban en la misma sesion que los cinco de valor pero se
+# montan dos veces — con CTA a formulario para pauta, y con CTA a comentario
+# para el lanzamiento organico del recurso en el feed (martes 8, 22 y 29).
 #
-# En agosto el formulario trajo el lead a $0,46 contra $0,78 de WhatsApp, un 41%
-# más barato. Los cuatro van a FORMULARIO.
-#
-# REGLA: ninguna pieza del Máster lleva precio. La de ACERO sí, porque el precio
-# es el argumento: subió a $225 y la razón es el tutor.
+# En agosto el formulario trajo el lead a $0,46 contra $0,78 de WhatsApp, un
+# 41% mas barato. Por eso la version de pauta va SIEMPRE a formulario.
 # ─────────────────────────────────────────────────────────────────────────────
 
-REELS_PAUTA = [
+REELS_LEADMAGNET = [
  {"id": "pauta-guia", "recurso": "Guía Revit + ChatGPT", "palabra": "GUIA",
   "estado": "POR GRABAR", "duracion": "20-25 s",
   "destino": "Formulario → landing guia-revit-ia",
@@ -156,7 +154,33 @@ REELS_PAUTA = [
    ("0:05-0:12", "Screen-record: pegando un script en un nodo de Python y ejecutándolo.", "La automatización en BIM no se atasca por falta de ideas. Se atasca en el primer script.", "SE ATASCA EN EL **PRIMERO**"),
    ("0:12-0:20", "Pantalla: los cinco scripts, tres marcados «solo lee».", "Aquí van cinco, comentados por dentro para que los cambies. Y tres de ellos ni siquiera tocan tu modelo: puedes correrlos hoy en un archivo vivo.", "TRES **SOLO LEEN**"),
    ("0:20-0:25", "Cierre.", "Gratis. El enlace está aquí abajo.", "GRATIS · ACCESO **INMEDIATO**")]},
+]
 
+
+# ─────────────────────────────────────────────────────────────────────────────
+# BLOQUE 3 · LOS SEIS REELS DE VENTA — 4 del Master + 2 de ACERO
+#
+# Los pidio Dayana el 9-sep: el mes tiene que quedar con 5 de valor + 3 de lead
+# magnet + 6 de venta. Los cuatro del Master YA existian con guion completo,
+# pero vivian solo dentro de la campana de publicidad del calendario, asi que
+# en la pestana de Reels no aparecian y "los seis" no se veian por ningun lado.
+#
+# NO se copian aqui: se referencian por id y el guion se lee del calendario,
+# que es donde vive su ficha de montaje. Dos copias del mismo guion es una
+# copia que se queda vieja.
+#
+# REGLA DE PRECIO, y es al reves en cada producto:
+#   · Master  → NINGUNA cifra. El precio lo da el asesor en la llamada.
+#   · ACERO   → el precio SI va, y pegado a su razon: $225 porque ahora
+#               incluye el tutor de IA. Un precio que sube sin explicacion se
+#               lee como encarecimiento; explicado, se lee como que crecio.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Los cuatro del Master: viven en calendario-septiembre.json, dentro de
+# publicidad.campanas → "VIDEOS DE PAUTA — 4 reels de 15 s".
+REELS_VENTA_MASTER = ["reel-ad-mod1", "reel-ad-mod2", "reel-ad-mod3", "reel-ad-mod4"]
+
+REELS_VENTA_ACERO = [
  {"id": "pauta-acero-tutor", "recurso": "Especialización en Acero · $225 con tutor de IA", "palabra": "—",
   "estado": "BLOQUEADO — hasta que el tutor esté montado en los 4 cursos", "duracion": "25-30 s",
   "destino": "Formulario → landing de la Especialización",
@@ -170,7 +194,81 @@ REELS_PAUTA = [
    ("0:06-0:15", "Screen-record: preguntándole al tutor y viendo la respuesta con la sesión y el minuto.", "Ahora la especialización te contesta. Responde con las clases del curso y te dice en qué sesión y en qué minuto está la respuesta.", "TE DICE SESIÓN Y **MINUTO**"),
    ("0:15-0:23", "Pantalla: el tutor diciendo que algo no está en el material.", "Y cuando algo no está en el material, te lo dice y te manda a la asesoría. No se lo inventa.", "CUANDO NO SABE, LO **DICE**"),
    ("0:23-0:30", "Cierre a cámara.", "Está incluido en la Especialización en Acero. El enlace está aquí abajo.", "**INCLUIDO** EN LA ESPECIALIZACIÓN")]},
+
+ {"id": "pauta-acero-sobredimensionar", "recurso": "Especialización en Acero · sobredimensionar",
+  "palabra": "—",
+  "estado": "POR GRABAR — se puede grabar ya, pero NO se publica hasta que el tutor esté en los 4 cursos: el cierre nombra los $225 y su razón",
+  "duracion": "20-25 s",
+  "destino": "WhatsApp → asesor (como las otras piezas de ACERO)",
+  "nota": "Es el segundo reel de venta de ACERO, y no se inventa el ángulo: sale de la pieza "
+          "#1 de la historia de la cuenta — «sobredimensionar no es ir por el lado seguro» — "
+          "con 14.334 vistas y 107 comentarios. Esa frase NO se toca: es lo que hizo funcionar "
+          "la pieza. Aquí se pasa de post plano a reel y se le pone cierre de venta. "
+          "⚠ El destino es WhatsApp porque así está aprobada la campaña de ACERO, pero en "
+          "agosto el formulario trajo el lead un 41% más barato ($0,46 contra $0,78): vale la "
+          "pena probarlo A/B contra este mismo creativo antes de dar el mes por cerrado.",
+  "guion": [
+   ("0:00-0:05", "Primer plano, mirada directa. Corte seco desde negro, sin intro.", "Sobredimensionar no es ir por el lado seguro. Es trasladarle tu inseguridad al presupuesto del cliente.", "NO ES IR SEGURO: ES **TRASLADAR** TU DUDA"),
+   ("0:05-0:12", "Pantalla: dos secciones de acero comparadas, con su peso por metro.", "Subir un perfil porque no estás seguro de la verificación no es criterio. Es acero de más, soldadura de más y una factura que alguien va a pagar.", "ACERO DE MÁS · SOLDADURA DE MÁS · **FACTURA**"),
+   ("0:12-0:19", "Pantalla: la verificación hecha, con el resultado a la vista.", "La alternativa no es arriesgar. Es verificar, y saber por qué el perfil que pusiste es el que va.", "LA ALTERNATIVA ES **VERIFICAR**"),
+   ("0:19-0:25", "Vuelve a cámara. Placa final azul.", "Eso es la Especialización en Acero: 225 dólares, y ahora con el tutor de IA entrenado con las clases del programa. Escríbenos y te contamos.", "$225 · AHORA CON **TUTOR DE IA**")]},
 ]
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# EL INVENTARIO DE LOS 14, definido UNA vez
+#
+# Antes cada consumidor —el artefacto, el Word, el JSON de entrega— armaba su
+# propia lista. Asi es como acaban discrepando: uno dice nueve reels y otro
+# catorce, y nadie sabe cual tiene razon. Aqui se define una vez y los tres
+# preguntan lo mismo.
+# ─────────────────────────────────────────────────────────────────────────────
+
+def _de_calendario(cal, ident):
+    """Saca un reel de modulo de la campana de publicidad del calendario.
+
+    El guion vive alli porque alli esta su ficha de montaje (objetivo, puja,
+    ubicaciones). Aqui solo se le da la forma que usan los otros bloques.
+    """
+    for camp in cal["publicidad"]["campanas"]:
+        for pz in camp.get("piezas", []):
+            if pz.get("id") == ident:
+                return {
+                    "id": pz["id"],
+                    "recurso": pz["titulo"],
+                    "palabra": "—",
+                    "estado": "POR GRABAR — los cuatro en la misma sesión y con la misma camisa",
+                    "duracion": "15 s exactos",
+                    "destino": "Formulario instantáneo de Meta — el mismo del módulo",
+                    "nota": pz.get("nota", ""),
+                    "guion": [tuple(b) for b in pz["guion"]],
+                }
+    raise KeyError("no esta en el calendario: %s" % ident)
+
+
+def inventario(cal):
+    """Los 14 reels del mes, en tres bloques. 5 de valor + 3 de lead magnet + 6 de venta.
+
+    Cada bloque es (titulo, etiqueta corta, nota, piezas).
+    """
+    return [
+        ("Los cinco de valor", "de valor",
+         "Contenido de feed. Abren con la frontera y cierran con un recurso que ya existe. "
+         "CTA a comentario.",
+         list(REELS)),
+        ("Los tres de lead magnet", "de lead magnet",
+         "Uno por recurso gratuito. Se montan dos veces: con CTA a formulario para pauta y "
+         "con CTA a comentario para el lanzamiento del recurso en el feed.",
+         list(REELS_LEADMAGNET)),
+        ("Los seis de venta — 4 del Máster + 2 de ACERO", "de venta",
+         "Creativos de campaña. Ninguna pieza del Máster lleva precio; las dos de ACERO sí, "
+         "porque ahí el precio es el argumento.",
+         [_de_calendario(cal, i) for i in REELS_VENTA_MASTER] + list(REELS_VENTA_ACERO)),
+    ]
+
+
+TOTAL_REELS = len(REELS) + len(REELS_LEADMAGNET) + len(REELS_VENTA_MASTER) + len(REELS_VENTA_ACERO)
+
 
 BASE_FEED = ("Estilo Design Modeling Academy: fondo azul marino #0E2438, acento ámbar #E8A04A, "
              "texto blanco, tipografía sans muy gruesa, estética técnica de ingeniería limpia "
