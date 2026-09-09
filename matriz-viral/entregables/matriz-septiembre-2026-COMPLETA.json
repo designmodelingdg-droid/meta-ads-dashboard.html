@@ -19,7 +19,7 @@
   },
   "reglas_del_mes": [
     "REGLA DE ORO: todos los grupos comparten la misma informacion (o similar) la misma semana, adaptada a cada red o metodo de comunicacion. El carrusel del lunes alimenta la comunidad del martes, la historia del miercoles, el PDF de LinkedIn y el correo de la semana.",
-    "FEED PRINCIPAL: las 12 piezas BASE mantienen el 40/40/20 exacto — 5 reels, 5 carruseles y 2 posts planos, lunes / miercoles / viernes. Encima van 3 EXTRAS los martes 8, 22 y 29: el lanzamiento de cada recurso gratuito, y desde el 9-sep los tres son REEL. Total del mes: 15 piezas de feed (8 reels, 5 carruseles, 2 posts planos). CORREGIDO 9-sep: esta regla decia que los extras eran «los 5 reels ya grabados» — eran los de agosto, que se retiraron el 8-sep. Ninguno de los 5 reels de valor esta grabado: los cinco son nuevos y estan POR GRABAR.",
+    "FEED PRINCIPAL: las 12 piezas BASE mantienen el 40/40/20 exacto — 5 reels, 5 carruseles y 2 posts planos, lunes / miercoles / viernes. Todo lo de lead magnet va ENCIMA, sin tocar esas doce. Cada recurso gratuito lleva DOS piezas: el reel el martes (8, 22 y 29) y el carrusel o post plano el jueves siguiente (10, 24 y 1 oct). Seis extras en total. POR QUE DOS DIAS DE DISTANCIA y no el mismo dia: el reel trae alcance y el carrusel trae guardados, y publicados a la vez compiten entre ellos por la misma audiencia en las mismas horas. Separados, la palabra clave se pide DOS veces en la misma semana. Total del mes: 18 piezas de feed (8 reels, 7 carruseles, 3 posts planos). CORREGIDO 9-sep: esta regla decia que los extras eran «los 5 reels ya grabados» — eran los de agosto, que se retiraron el 8-sep. Ninguno de los 5 reels de valor esta grabado.",
     "POST PLANO = SOLO CON DATO DE CALCULO VERIFICABLE. Es la lectura de agosto: con dato, 45-62 comentarios (y Sobredimensionar cerro con 14.334 vistas y 107 comentarios); la frase generica hizo 0-4. La declaracion generica de IA queda prohibida como pieza.",
     "Minimo 60% del contenido en el NUCLEO (BIM / IA / modelado / acero). Cero OBRA.",
     "Cerrar SIEMPRE con pregunta directa + CTA de comentar. En comunidades: mensajes cortos, personales y SIN hashtags. En LinkedIn: nunca «comenta la palabra» — pregunta abierta; solo videos HORIZONTALES y PDF.",
@@ -188,7 +188,7 @@
     {
       "n": 1,
       "nombre": "GRUPO 1 · Feed principal — Instagram + Facebook + TikTok + YouTube Shorts",
-      "descripcion": "El mismo contenido adaptado a cada red del grupo (YouTube Shorts SOLO recibe los reels). Publicacion lunes, miercoles y viernes. TODO es contenido NUEVO: los reels grabados en agosto que nunca se publicaron quedan fuera (decision de Dayana, 2-sep). Mezcla: 40% reels · 40% carruseles · 20% post plano.",
+      "descripcion": "El mismo contenido adaptado a cada red del grupo (YouTube Shorts SOLO recibe los reels). Publicacion base lunes, miercoles y viernes. Encima van las 6 piezas de lead magnet: el reel los martes 8, 22 y 29 y el carrusel o post plano los jueves 10, 24 y 1 de octubre. Esas seis son ADICIONALES: no ocupan ninguno de los doce huecos base. TODO es contenido NUEVO: los reels grabados en agosto que nunca se publicaron quedan fuera (decision de Dayana, 2-sep). Mezcla: 40% reels · 40% carruseles · 20% post plano.",
       "reglas": [
         "YouTube Shorts: solo los reels.",
         "TikTok: mismo video, CTA «link en bio».",
@@ -278,6 +278,19 @@
           "formato_publicacion": "REEL (grabar)",
           "id": "reel-deriva",
           "nota": "NUEVO 8-sep. Sustituye al reel «Revit me arrojó un error», que ya se publicó en agosto («le pedia a la ia dg.mp4»). Estado límite de servicio: cumple resistencia y es inhabitable. CTA: comenta MEMORIA."
+        },
+        {
+          "fecha": "Jue 10",
+          "semana": "Semana 1 (7-13 sep)",
+          "formato_publicacion": "CARRUSEL (7 slides) — EXTRA lanzamiento de recurso",
+          "lead_magnet": "lm-revit-chatgpt",
+          "id": "lm-revit-chatgpt-feed",
+          "tipo": "lanzamiento-recurso",
+          "idea": {
+            "titulo": "Guia «Revit + ChatGPT»: 5 de los 10 errores, con lo que significan de verdad",
+            "desarrollo": "Segunda pieza del mismo recurso, dos dias despues del reel del Mar 8. El reel da alcance y el carrusel da guardados: un error de Revit se guarda para cuando vuelva a pasar. Los cinco que salen estan sacados de la guia YA PUBLICADA, no inventados. Desarrollo, slides y prompt en la pestaña Lead magnets."
+          },
+          "nota": "Segunda pieza del mismo recurso, dos dias despues del reel del Mar 8. El reel da alcance y el carrusel da guardados: un error de Revit se guarda para cuando vuelva a pasar. Los cinco que salen estan sacados de la guia YA PUBLICADA, no inventados. Desarrollo, slides y prompt en la pestaña Lead magnets."
         },
         {
           "fecha": "Vie 11",
@@ -568,6 +581,19 @@
           }
         },
         {
+          "fecha": "Jue 24",
+          "semana": "Semana 3 (21-27 sep)",
+          "formato_publicacion": "CARRUSEL (6 slides) — EXTRA lanzamiento de recurso",
+          "lead_magnet": "lm-dynamo-python",
+          "id": "lm-dynamo-python-feed",
+          "tipo": "lanzamiento-recurso",
+          "idea": {
+            "titulo": "Pack de Dynamo: las 5 tareas de Revit que no deberias seguir haciendo a mano",
+            "desarrollo": "Segunda pieza del mismo recurso, dos dias despues del reel del Mar 22. Dynamo es el tema de mejor guardado de la cuenta y el carrusel es el formato que mas se guarda. Cada slide es uno de los 5 scripts del pack. Desarrollo, slides y prompt en la pestaña Lead magnets."
+          },
+          "nota": "Segunda pieza del mismo recurso, dos dias despues del reel del Mar 22. Dynamo es el tema de mejor guardado de la cuenta y el carrusel es el formato que mas se guarda. Cada slide es uno de los 5 scripts del pack. Desarrollo, slides y prompt en la pestaña Lead magnets."
+        },
+        {
           "fecha": "Vie 25",
           "semana": "Semana 3 (21-27 sep)",
           "idea": {
@@ -694,6 +720,19 @@
           "formato_publicacion": "REEL (grabar)",
           "id": "reel-limite-ia",
           "nota": "NUEVO 8-sep. Cierra el mes marcando el límite de la IA — la pieza que más nos diferencia. El reel del tutor que iba aquí se movió a PAUTA: el tutor es argumento de venta, no contenido de valor. CTA: comenta GUIA."
+        },
+        {
+          "fecha": "Jue 1 oct",
+          "semana": "Semana 4 (28 sep - 2 oct)",
+          "formato_publicacion": "POST PLANO (1 imagen) — EXTRA lanzamiento de recurso",
+          "lead_magnet": "lm-memoria-calculo",
+          "id": "lm-memoria-calculo-feed",
+          "tipo": "lanzamiento-recurso",
+          "idea": {
+            "titulo": "Memoria de calculo: no se devuelve por los numeros",
+            "desarrollo": "Segunda pieza del mismo recurso, dos dias despues del reel del Mar 29. Va en post plano porque cumple la regla de la casa: lleva dato de calculo verificable. Cierra el mes pidiendo MEMORIA una vez mas. Desarrollo y prompt en la pestaña Lead magnets."
+          },
+          "nota": "Segunda pieza del mismo recurso, dos dias despues del reel del Mar 29. Va en post plano porque cumple la regla de la casa: lleva dato de calculo verificable. Cierra el mes pidiendo MEMORIA una vez mas. Desarrollo y prompt en la pestaña Lead magnets."
         },
         {
           "fecha": "Vie 2 oct",
@@ -3422,10 +3461,30 @@
             "fecha": "Mar 8",
             "formato": "REEL (grabar) — EXTRA de lanzamiento",
             "red": "Instagram + Facebook + TikTok",
+            "guion_en": "reels-septiembre.py → REELS_LEADMAGNET → pauta-guia, con el CTA cambiado a comentario en vez de formulario: se graba una vez y se monta dos veces.",
             "hook": "Llevo dos horas en un foro por un error que ChatGPT me resolvió en cuarenta segundos.",
             "caption": "Ese error de Revit que te frena la tarde casi siempre está mal explicado por el propio mensaje: dice una cosa y el problema es otra.\n\nJunté los 10 que más tiempo hacen perder, con el prompt exacto para cada uno. Y una página que importa más que las otras diez: cómo verificar la respuesta antes de meterla en un modelo que vas a firmar.\n\nEs gratis. Comenta GUIA y te llega.\n\n¿Cuál es el error de Revit que más veces te ha tocado buscar?",
             "cta": "Comenta GUIA",
             "prompt": "Imagen 1080x1350 px (4:5) para la portada del reel. Fondo azul marino #0E2438. Un cuadro de diálogo de error de software, dibujado en línea fina ámbar #E8A04A, flotando en el centro, con el texto ilegible a propósito — solo se lee la forma de la ventana y su icono de advertencia. Detrás, muy tenue, una retícula de planta de Revit. Sensación de estar trabado, no de catástrofe. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos en ámbar #E8A04A, tipografía sans-serif de palo seco muy gruesa, composición limpia y con aire, sin stock corporativo ni gente sonriendo a cámara. El texto final se monta en Canva: la IA entrega el fondo y los elementos, no las letras."
+          },
+          {
+            "fecha": "Jue 10",
+            "formato": "CARRUSEL (7 slides) — EXTRA de lanzamiento",
+            "red": "Instagram + Facebook + LinkedIn (PDF)",
+            "por_que": "Segunda pieza del mismo recurso, dos días después del reel. El reel da alcance y el carrusel da guardados, que es donde vive este contenido: un error de Revit se guarda para cuando vuelva a pasar. Y son dos ventanas de comentarios para la misma palabra en vez de una.",
+            "hook": "El mensaje de error de Revit casi nunca dice cuál es el problema.",
+            "slides": [
+              "1 · EL MENSAJE DE ERROR TE ESTÁ DICIENDO OTRA COSA. Cinco de los diez que más tiempo hacen perder, y qué significan de verdad.",
+              "2 · «No aparece en la vista» — y el elemento SÍ está. Es el que más tiempo hace perder de toda la lista, y casi nunca es un error: el elemento existe, pero la vista está configurada para no mostrarlo.",
+              "3 · «Highlighted walls overlap». Dos muros ocupando el mismo espacio. Revit sigue trabajando, pero al calcular áreas de habitación va a ignorar uno de los dos — y el cuadro de áreas sale mal SIN AVISAR.",
+              "4 · «There are identical instances in the same place». Dos elementos idénticos, uno exactamente encima del otro. Los planos se ven bien. El cuadro de cantidades cuenta el doble.",
+              "5 · «Elements are joined but do not intersect». Siguen unidos, pero ya no se tocan: normalmente porque uno se movió después.",
+              "6 · «The linked file could not be found». El vínculo apunta a una ruta que ya no existe. Alguien movió, renombró o guardó en otra carpeta.",
+              "7 · Los diez, cada uno con su prompt. Y la página que importa más que las otras diez: cómo comprobar la respuesta antes de aplicarla. COMENTA GUIA."
+            ],
+            "caption": "El error que te frena la tarde casi siempre está mal explicado por el propio mensaje: dice una cosa y el problema es otra.\n\nLos dos peores no dan ningún aviso. Dos muros superpuestos hacen que el cuadro de áreas salga mal sin decírtelo, y dos elementos idénticos encima hacen que el de cantidades cuente el doble. Los planos, mientras tanto, se ven perfectos.\n\nJunté los 10 que más tiempo hacen perder, con el prompt exacto para cada uno y cómo verificar la respuesta antes de meterla en un modelo que vas a firmar.\n\nEs gratis. Comenta GUIA y te llega.\n\n¿Cuál de los cinco te ha tocado más veces?",
+            "cta": "Comenta GUIA",
+            "prompt": "Siete imágenes de 1080x1080 px (1:1) de la misma familia, para carrusel. Fondo azul marino #0E2438. En cada una, un cuadro de diálogo de software dibujado en línea fina ámbar #E8A04A, siempre en la misma posición y a la misma escala, con el texto ilegible a propósito — solo se lee la forma de la ventana y su icono de advertencia. Lo que cambia de tarjeta a tarjeta es el fondo detrás del cuadro: una retícula de planta, dos muros solapados, dos objetos idénticos desfasados un milímetro, dos volúmenes que casi se tocan, y una carpeta vacía. Todo en línea blanca muy tenue. Sin texto legible en ninguna. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos en ámbar #E8A04A, tipografía sans-serif de palo seco muy gruesa, composición limpia y con aire, sin stock corporativo ni gente sonriendo a cámara. El texto final se monta en Canva: la IA entrega el fondo y los elementos, no las letras."
           }
         ]
       },
@@ -3484,7 +3543,24 @@
             "formato": "REEL (grabar) — EXTRA de lanzamiento",
             "red": "Instagram + Facebook + TikTok",
             "guion_en": "reels-septiembre.py → REELS_LEADMAGNET → pauta-dynamo, con el CTA cambiado a comentario en vez de formulario: se graba una vez y se monta dos.",
-            "formato_alternativo": "CARRUSEL (6 slides), que es como estaba antes del 9-sep. NO se tira: Dynamo es el tema de mejor guardado de la cuenta y el carrusel es el formato que más se guarda. El caption y el prompt de abajo son los del carrusel y siguen sirviendo tal cual si prefieren mantenerlo.",
+            "hook": "Abriste Dynamo una vez, no supiste por dónde seguir, y lo cerraste.",
+            "caption": "La automatización en BIM no se atasca por falta de ideas. Se atasca en el primer script: el que tienes que escribir tú, sin saber todavía qué hace cada nodo.\n\nEste pack es ese primer script hecho. Cinco, comentados línea por línea para que los cambies y no solo los ejecutes. Tres de ellos ni siquiera tocan tu modelo — solo leen — así que puedes correrlos hoy en un archivo vivo sin arriesgar nada.\n\nCon el PDF de instalación y la versión exacta de Revit y Dynamo con la que los probamos.\n\nEs gratis. Comenta DYNAMO y te llega.\n\n¿Cuántas veces has abierto Dynamo y lo has vuelto a cerrar?",
+            "cta": "Comenta DYNAMO",
+            "prompt": "Imagen 1080x1350 px (4:5) para la portada del reel. Fondo azul marino #0E2438. Un grafo de nodos tipo Dynamo dibujado en línea fina ámbar #E8A04A: dos cajas conectadas por un solo cable curvo y limpio, muy pocas, con mucho aire alrededor. La idea es «el primero», no «muchos». Detrás, muy tenue, una retícula de planta. Sin texto legible dentro de los nodos. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos en ámbar #E8A04A, tipografía sans-serif de palo seco muy gruesa, composición limpia y con aire, sin stock corporativo ni gente sonriendo a cámara. El texto final se monta en Canva: la IA entrega el fondo y los elementos, no las letras."
+          },
+          {
+            "fecha": "Jue 24",
+            "formato": "CARRUSEL (6 slides) — EXTRA de lanzamiento",
+            "red": "Instagram + Facebook + LinkedIn (PDF)",
+            "por_que": "Segunda pieza del mismo recurso, dos días después del reel. Dynamo es el tema de mejor guardado de la cuenta y el carrusel es el formato que más se guarda: el reel trae el alcance y este se queda archivado. Dos ventanas de comentarios para la misma palabra.",
+            "slides": [
+              "1 · CINCO TAREAS DE REVIT QUE NO DEBERÍAS SEGUIR HACIENDO A MANO.",
+              "2 · Renombrar vistas por norma, una por una. → Script 1: las renombra en lote.",
+              "3 · Exportar planos abriendo el cuadro de diálogo cada vez. → Script 2: los exporta a PDF con el nombre correcto, sin tocar el diálogo.",
+              "4 · Numerar elementos y que salgan por orden de creación en vez de por posición. → Script 3: los numera por dónde están.",
+              "5 · Revisar parámetros vacíos a ojo antes de entregar. → Script 4: te los lista. Y el Script 5 compara dos modelos y te dice qué cambió.",
+              "6 · Los cinco vienen comentados por dentro para que los cambies. TRES SOLO LEEN: los puedes correr hoy en un archivo vivo. COMENTA DYNAMO."
+            ],
             "hook": "Cinco tareas de Revit que no deberías seguir haciendo a mano.",
             "caption": "Si renombras vistas una por una, si exportas planos abriendo el cuadro de diálogo cada vez, o si revisas parámetros vacíos a ojo: eso ya lo hace un script.\n\nArmamos un pack con cinco, comentados línea por línea para que los puedas cambiar y no solo ejecutar. Con el PDF de instalación y la versión exacta con la que los probamos.\n\nEs gratis. Comenta DYNAMO y te llega.\n\n¿Cuál de las cinco te quitaría más tiempo de encima?",
             "cta": "Comenta DYNAMO",
@@ -3505,7 +3581,7 @@
         "contenido": [
           "Las secciones que toda memoria debe tener, en orden, y qué va en cada una.",
           "Qué se cita y cómo: normativa, hipótesis de carga, criterios adoptados y de dónde salen.",
-          "Los cinco errores por los que devuelven una memoria — y cómo se ve cada uno corregido.",
+          "Los SEIS errores por los que devuelven una memoria — y cómo se ve cada uno corregido. (Corregido 9-sep: aquí decía cinco; la guía publicada tiene seis y el reel también dice seis. El que mentía era este listado.)",
           "Plantilla editable en Word con la estructura montada, y hoja de Excel para el resumen de verificaciones.",
           "Ejemplo corto completo, de principio a fin, con números reales."
         ],
@@ -3544,9 +3620,18 @@
           {
             "fecha": "Mar 29",
             "formato": "REEL (grabar) — EXTRA de lanzamiento",
+            "red": "Instagram + Facebook + TikTok",
             "guion_en": "reels-septiembre.py → REELS_LEADMAGNET → pauta-memoria, con el CTA cambiado a comentario en vez de formulario.",
-            "formato_alternativo": "POST PLANO (1 imagen), que es como estaba antes del 9-sep. Se eligió porque cumple la regla de llevar dato de cálculo; el reel también lo lleva. El caption y el prompt de abajo son los del post plano.",
+            "hook": "Te devolvieron la memoria y no era el cálculo.",
+            "caption": "Se devuelve porque el revisor no puede comprobar que esté bien. No es lo mismo.\n\nLa guía trae las 12 secciones en orden y qué va en cada una, y los 6 errores por los que una memoria vuelve a tu escritorio. Los seis tienen algo en común, y está explicado.\n\nCon la plantilla en Word ya montada y la hoja de Excel para el resumen de verificaciones. Para no armarla nunca más desde cero.\n\nEs gratis. Comenta MEMORIA y te llega.\n\n¿Por qué te devolvieron la última que entregaste?",
+            "cta": "Comenta MEMORIA",
+            "prompt": "Imagen 1080x1350 px (4:5) para la portada del reel. Fondo azul marino #0E2438. Un índice de documento técnico dibujado en línea fina ámbar #E8A04A: doce renglones numerados, alineados, con el texto ilegible a propósito. Seis de ellos llevan una marca ámbar más gruesa al margen. Sobrio y ordenado, nada de sellos rojos. Sin texto legible. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos en ámbar #E8A04A, tipografía sans-serif de palo seco muy gruesa, composición limpia y con aire, sin stock corporativo ni gente sonriendo a cámara. El texto final se monta en Canva: la IA entrega el fondo y los elementos, no las letras."
+          },
+          {
+            "fecha": "Jue 1 oct",
+            "formato": "POST PLANO (1 imagen) — EXTRA de lanzamiento",
             "red": "Instagram + Facebook",
+            "por_que": "Segunda pieza del mismo recurso, dos días después del reel. Va en post plano porque cumple la regla de la casa: lleva dato de cálculo verificable. Cierra el mes y deja la palabra MEMORIA pedida una vez más antes de octubre.",
             "hook": "Una memoria de cálculo no se devuelve por los números. Se devuelve por lo que no está escrito.",
             "caption": "Hipótesis que no se declararon. Criterios que se adoptaron y no se justificaron. Normativa citada sin versión.\n\nEl cálculo estaba bien. El documento no lo demostraba.\n\nArmamos la guía con la estructura completa de una memoria que se sostiene ante revisión, y la plantilla editable para llenarla.\n\nEs gratis. Comenta MEMORIA y te llega.\n\n¿Por qué te devolvieron la última que entregaste?",
             "cta": "Comenta MEMORIA",

@@ -125,7 +125,7 @@ def tab_resumen():
     o.append('<div class="tabla-scroll"><table><thead><tr><th>Pestaña</th><th>Qué contiene</th>'
              '<th>Cuándo se publica</th></tr></thead><tbody>')
     filas = [
-        ("Grupo 1 · Feed", "15 piezas nuevas: 12 base (5 carruseles · 5 reels · 2 posts planos, el 40/40/20) y 3 reels EXTRA de lanzamiento de recurso los martes. Con copy y prompt de imagen.", "Lunes, miércoles y viernes"),
+        ("Grupo 1 · Feed", "18 piezas nuevas: 12 base (5 carruseles · 5 reels · 2 posts planos, el 40/40/20) y 6 EXTRA de lead magnet — reel el martes y carrusel o post plano el jueves, por cada recurso. Con copy y prompt de imagen.", "Lunes, miércoles y viernes"),
         ("Grupo 2 · Comunidades", "12 mensajes cortos, sin hashtags, listos para pegar.", "Martes, jueves y viernes"),
         ("Grupo 3 · Blog", "4 artículos con su CTA y la portada.", "Sábados"),
         ("Grupo 4 · LinkedIn", "20 publicaciones repartidas entre las 3 páginas.", "Lunes a viernes"),
@@ -479,9 +479,18 @@ def tab_leadmagnets():
         o.append('</tbody></table></div>')
         for ps in m["posts"]:
             o.append(f'<div class="lanz"><div class="pieza-cab"><span class="fecha">{e(ps["fecha"])}</span>'
-                     f'<h4>Post de lanzamiento</h4><span class="tipo">{e(ps["formato"])}</span></div>')
+                     f'<h4>Pieza de lanzamiento</h4>'
+                     f'<span class="tipo">{e(ps["formato"])}</span></div>')
+            if ps.get("por_que"):
+                o.append(f'<p class="nota">{e(ps["por_que"])}</p>')
             o.append(f'<p class="nota">Va en el calendario del <b>Grupo 1</b>. Redes: {e(ps["red"])}.</p>')
             o.append(f'<span class="rot">Hook</span>{bloque_pegar(ps["hook"])}')
+            if ps.get("slides"):
+                o.append('<span class="rot">Diapositivas</span>'
+                         '<div class="tabla-scroll"><table><tbody>')
+                for i, sl in enumerate(ps["slides"], 1):
+                    o.append(f'<tr><th style="width:38px">{i}</th><td>{e(sl)}</td></tr>')
+                o.append('</tbody></table></div>')
             o.append(f'<span class="rot">Caption (copiar tal cual)</span>{bloque_pegar(ps["caption"])}')
             o.append(f'<p class="cta-linea"><b>CTA:</b> {e(ps["cta"])}</p>')
             o.append(prompt_img(LM.MEDIDA_FEED if "PLANO" in ps["formato"] or "REEL" in ps["formato"]

@@ -3,7 +3,7 @@
  "subtitulo": "Del lunes 7 de septiembre al viernes 2 de octubre · calendarios independientes por grupo, misma informacion adaptada a cada canal",
  "reglas_del_mes": [
   "REGLA DE ORO: todos los grupos comparten la misma informacion (o similar) la misma semana, adaptada a cada red o metodo de comunicacion. El carrusel del lunes alimenta la comunidad del martes, la historia del miercoles, el PDF de LinkedIn y el correo de la semana.",
-  "FEED PRINCIPAL: las 12 piezas BASE mantienen el 40/40/20 exacto — 5 reels, 5 carruseles y 2 posts planos, lunes / miercoles / viernes. Encima van 3 EXTRAS los martes 8, 22 y 29: el lanzamiento de cada recurso gratuito, y desde el 9-sep los tres son REEL. Total del mes: 15 piezas de feed (8 reels, 5 carruseles, 2 posts planos). CORREGIDO 9-sep: esta regla decia que los extras eran «los 5 reels ya grabados» — eran los de agosto, que se retiraron el 8-sep. Ninguno de los 5 reels de valor esta grabado: los cinco son nuevos y estan POR GRABAR.",
+  "FEED PRINCIPAL: las 12 piezas BASE mantienen el 40/40/20 exacto — 5 reels, 5 carruseles y 2 posts planos, lunes / miercoles / viernes. Todo lo de lead magnet va ENCIMA, sin tocar esas doce. Cada recurso gratuito lleva DOS piezas: el reel el martes (8, 22 y 29) y el carrusel o post plano el jueves siguiente (10, 24 y 1 oct). Seis extras en total. POR QUE DOS DIAS DE DISTANCIA y no el mismo dia: el reel trae alcance y el carrusel trae guardados, y publicados a la vez compiten entre ellos por la misma audiencia en las mismas horas. Separados, la palabra clave se pide DOS veces en la misma semana. Total del mes: 18 piezas de feed (8 reels, 7 carruseles, 3 posts planos). CORREGIDO 9-sep: esta regla decia que los extras eran «los 5 reels ya grabados» — eran los de agosto, que se retiraron el 8-sep. Ninguno de los 5 reels de valor esta grabado.",
   "POST PLANO = SOLO CON DATO DE CALCULO VERIFICABLE. Es la lectura de agosto: con dato, 45-62 comentarios (y Sobredimensionar cerro con 14.334 vistas y 107 comentarios); la frase generica hizo 0-4. La declaracion generica de IA queda prohibida como pieza.",
   "Minimo 60% del contenido en el NUCLEO (BIM / IA / modelado / acero). Cero OBRA.",
   "Cerrar SIEMPRE con pregunta directa + CTA de comentar. En comunidades: mensajes cortos, personales y SIN hashtags. En LinkedIn: nunca «comenta la palabra» — pregunta abierta; solo videos HORIZONTALES y PDF.",
@@ -886,7 +886,7 @@
   {
    "n": 1,
    "nombre": "GRUPO 1 · Feed principal — Instagram + Facebook + TikTok + YouTube Shorts",
-   "descripcion": "El mismo contenido adaptado a cada red del grupo (YouTube Shorts SOLO recibe los reels). Publicacion lunes, miercoles y viernes. TODO es contenido NUEVO: los reels grabados en agosto que nunca se publicaron quedan fuera (decision de Dayana, 2-sep). Mezcla: 40% reels · 40% carruseles · 20% post plano.",
+   "descripcion": "El mismo contenido adaptado a cada red del grupo (YouTube Shorts SOLO recibe los reels). Publicacion base lunes, miercoles y viernes. Encima van las 6 piezas de lead magnet: el reel los martes 8, 22 y 29 y el carrusel o post plano los jueves 10, 24 y 1 de octubre. Esas seis son ADICIONALES: no ocupan ninguno de los doce huecos base. TODO es contenido NUEVO: los reels grabados en agosto que nunca se publicaron quedan fuera (decision de Dayana, 2-sep). Mezcla: 40% reels · 40% carruseles · 20% post plano.",
    "reglas": [
     "YouTube Shorts: solo los reels.",
     "TikTok: mismo video, CTA «link en bio».",
@@ -927,6 +927,19 @@
      "formato_publicacion": "REEL (grabar)",
      "id": "reel-deriva",
      "nota": "NUEVO 8-sep. Sustituye al reel «Revit me arrojó un error», que ya se publicó en agosto («le pedia a la ia dg.mp4»). Estado límite de servicio: cumple resistencia y es inhabitable. CTA: comenta MEMORIA."
+    },
+    {
+     "fecha": "Jue 10",
+     "semana": "Semana 1 (7-13 sep)",
+     "formato_publicacion": "CARRUSEL (7 slides) — EXTRA lanzamiento de recurso",
+     "lead_magnet": "lm-revit-chatgpt",
+     "id": "lm-revit-chatgpt-feed",
+     "tipo": "lanzamiento-recurso",
+     "idea": {
+      "titulo": "Guia «Revit + ChatGPT»: 5 de los 10 errores, con lo que significan de verdad",
+      "desarrollo": "Segunda pieza del mismo recurso, dos dias despues del reel del Mar 8. El reel da alcance y el carrusel da guardados: un error de Revit se guarda para cuando vuelva a pasar. Los cinco que salen estan sacados de la guia YA PUBLICADA, no inventados. Desarrollo, slides y prompt en la pestaña Lead magnets."
+     },
+     "nota": "Segunda pieza del mismo recurso, dos dias despues del reel del Mar 8. El reel da alcance y el carrusel da guardados: un error de Revit se guarda para cuando vuelva a pasar. Los cinco que salen estan sacados de la guia YA PUBLICADA, no inventados. Desarrollo, slides y prompt en la pestaña Lead magnets."
     },
     {
      "fecha": "Vie 11",
@@ -1000,6 +1013,19 @@
      "nota": "LA PIEZA DEL MES: la nueva arquitectura contada como contenido. Sin precio. Requiere el disparador RUTA vivo."
     },
     {
+     "fecha": "Jue 24",
+     "semana": "Semana 3 (21-27 sep)",
+     "formato_publicacion": "CARRUSEL (6 slides) — EXTRA lanzamiento de recurso",
+     "lead_magnet": "lm-dynamo-python",
+     "id": "lm-dynamo-python-feed",
+     "tipo": "lanzamiento-recurso",
+     "idea": {
+      "titulo": "Pack de Dynamo: las 5 tareas de Revit que no deberias seguir haciendo a mano",
+      "desarrollo": "Segunda pieza del mismo recurso, dos dias despues del reel del Mar 22. Dynamo es el tema de mejor guardado de la cuenta y el carrusel es el formato que mas se guarda. Cada slide es uno de los 5 scripts del pack. Desarrollo, slides y prompt en la pestaña Lead magnets."
+     },
+     "nota": "Segunda pieza del mismo recurso, dos dias despues del reel del Mar 22. Dynamo es el tema de mejor guardado de la cuenta y el carrusel es el formato que mas se guarda. Cada slide es uno de los 5 scripts del pack. Desarrollo, slides y prompt en la pestaña Lead magnets."
+    },
+    {
      "fecha": "Vie 25",
      "semana": "Semana 3 (21-27 sep)",
      "idea": {
@@ -1045,6 +1071,19 @@
      "formato_publicacion": "REEL (grabar)",
      "id": "reel-limite-ia",
      "nota": "NUEVO 8-sep. Cierra el mes marcando el límite de la IA — la pieza que más nos diferencia. El reel del tutor que iba aquí se movió a PAUTA: el tutor es argumento de venta, no contenido de valor. CTA: comenta GUIA."
+    },
+    {
+     "fecha": "Jue 1 oct",
+     "semana": "Semana 4 (28 sep - 2 oct)",
+     "formato_publicacion": "POST PLANO (1 imagen) — EXTRA lanzamiento de recurso",
+     "lead_magnet": "lm-memoria-calculo",
+     "id": "lm-memoria-calculo-feed",
+     "tipo": "lanzamiento-recurso",
+     "idea": {
+      "titulo": "Memoria de calculo: no se devuelve por los numeros",
+      "desarrollo": "Segunda pieza del mismo recurso, dos dias despues del reel del Mar 29. Va en post plano porque cumple la regla de la casa: lleva dato de calculo verificable. Cierra el mes pidiendo MEMORIA una vez mas. Desarrollo y prompt en la pestaña Lead magnets."
+     },
+     "nota": "Segunda pieza del mismo recurso, dos dias despues del reel del Mar 29. Va en post plano porque cumple la regla de la casa: lleva dato de calculo verificable. Cierra el mes pidiendo MEMORIA una vez mas. Desarrollo y prompt en la pestaña Lead magnets."
     },
     {
      "fecha": "Vie 2 oct",
@@ -1766,7 +1805,7 @@
   "Todo el detalle operativo esta en la seccion 0 (checklist de tareas del mes) — ClickUp ya no se usa para esto.",
   "Los pendientes que salieron de la reunion del 4-sep estan en la seccion «pendientes_reunion», con responsable y por que bloquea."
  ],
- "resumen_cierre": "El mes por grupos: 12 piezas base de feed (5 reels · 5 carruseles · 2 posts planos = 40/40/20) + 3 reels EXTRA de lanzamiento de recurso los martes 8, 22 y 29 + 12 mensajes de comunidades (Ma-Ju-Vi) + 4 blogs de sabado + 20 publicaciones de LinkedIn (L-V, 3 paginas) + historias diarias L-V con la venta los jueves + 4 correos + el paquete de publicidad de las 2 campañas que se sube completo el 7-sep. Todos los grupos cuentan la misma historia semanal adaptada a su canal.\nEL MES TIENE 14 REELS EN TOTAL: 5 de valor + 3 de lead magnet + 6 de venta (4 del Master y 2 de ACERO). Ocho salen en el feed; los seis de venta son creativos de campaña y no se publican en organico.\nCAMBIO DEL 1-SEP: la campaña del Master pasa a venta POR MODULOS (4 anuncios nuevos con precio y formulario, mas el de diagnostico y el de la ruta). El BIM Level Test es ahora el calificador del setter. ACERO suma el tutor de IA en pauta y en el bot de Olympus.\nCAMBIO DEL 9-SEP: se completo el inventario de reels a 14. Los 4 del Master ya existian con guion pero solo se veian dentro de la pestaña de publicidad; de ACERO habia uno y se escribio el segundo. Los 3 lanzamientos de recurso pasaron a reel.",
+ "resumen_cierre": "El mes por grupos: 12 piezas base de feed (5 reels · 5 carruseles · 2 posts planos = 40/40/20) + 6 piezas EXTRA de lead magnet (un reel el martes y un carrusel o post plano el jueves, por cada uno de los tres recursos) + 12 mensajes de comunidades (Ma-Ju-Vi) + 4 blogs de sabado + 20 publicaciones de LinkedIn (L-V, 3 paginas) + historias diarias L-V con la venta los jueves + 4 correos + el paquete de publicidad de las 2 campañas que se sube completo el 7-sep. En total 18 piezas de feed. Todos los grupos cuentan la misma historia semanal adaptada a su canal.\nEL MES TIENE 14 REELS: 5 de valor + 3 de lead magnet + 6 de venta (4 del Master y 2 de ACERO). Ocho salen en el feed; los seis de venta son creativos de campaña y no se publican en organico.\nCAMBIO DEL 1-SEP: la campaña del Master pasa a venta POR MODULOS (4 anuncios nuevos con precio y formulario, mas el de diagnostico y el de la ruta). El BIM Level Test es ahora el calificador del setter. ACERO suma el tutor de IA en pauta y en el bot de Olympus.\nCAMBIO DEL 9-SEP: inventario de reels completado a 14, y cada lead magnet pasa a llevar DOS piezas de feed en vez de una — el reel y el carrusel o post plano — las dos adicionales a las 12 base.",
  "pie": "Design Modeling Academy · Matriz de contenido septiembre 2026 (7 sep - 2 oct) · Calendarios por grupo, construidos sobre la matriz viral (162 piezas con metricas reales), el rendimiento de las campañas activas y la Nueva Arquitectura Comercial del Master BIM Management + IA",
  "artefactos": {
   "reestructura_ester": "https://claude.ai/code/artifact/4f853ec9-7d5f-4b36-bda6-0c063d8fe638",

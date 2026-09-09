@@ -607,7 +607,15 @@ if(Array.isArray(CAL.grupos) && CAL.grupos.length){
       m.posts.forEach(ps=>{
         push(H3('Post de lanzamiento · '+ps.fecha+' · '+ps.formato));
         push(P('Redes: '+ps.red,{run:{italics:true,color:GREY}}));
+        if(ps.por_que) push(note(ps.por_que));
         push(...block(ps.hook));
+        /* Un carrusel sin el texto de sus diapositivas no se puede producir:
+           quien lo monta en Canva necesita saber que va en cada una. */
+        if(Array.isArray(ps.slides)&&ps.slides.length){
+          push(P('DIAPOSITIVAS',{run:{bold:true,size:16,color:GREY}}));
+          push(tbl(['#','Qué va en la diapositiva'],
+            ps.slides.map((x,i)=>[String(i+1),x]),[600,8400]));
+        }
         push(...block(ps.caption));
         push(P('CTA: '+ps.cta,{run:{bold:true}}));
         push(P('PROMPT DE IMAGEN',{run:{bold:true,size:16,color:GREY}}));
