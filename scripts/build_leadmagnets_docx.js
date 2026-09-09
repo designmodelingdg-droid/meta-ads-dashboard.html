@@ -64,9 +64,9 @@ push(P('Los tres recursos están construidos, publicados y probados de punta a p
 
 push(H1('Los tres, de un vistazo'));
 push(tabla(['Recurso','Palabra','Estado'],[
-  ['Revit + ChatGPT: resuelve errores con IA','GUIA','**Listo para el CTA.** Solo falta el montaje en GHL.'],
-  ['Memoria de cálculo + plantillas','MEMORIA','Estructura ya cruzada contra una memoria real. **El CTA espera el visto bueno de Gabriel**.'],
-  ['Pack starter de Dynamo','DYNAMO','Montable ya, pero **el CTA espera correr los 5 scripts en Revit**.'],
+  ['Revit + ChatGPT: resuelve errores con IA','GUIA','**Listo.** Solo falta el montaje en GHL.'],
+  ['Memoria de cálculo + plantillas','MEMORIA','**Listo.** Gabriel dio el visto bueno el 8-sep. Solo falta el montaje.'],
+  ['Pack starter de Dynamo','DYNAMO','**Listo.** Los 5 scripts se corrieron en Revit el 8-sep. Solo falta el montaje.'],
 ],[4000,1400,3800]));
 push(CAJA('El de Revit + ChatGPT es el urgente: hay un reel el miércoles 9 cuyo CTA ya lo promete. Ese es el que hay que montar primero.',ORANGE,WARN));
 
@@ -85,30 +85,18 @@ push(MONO(BASE+'pack-dynamo/\n'+BASE+'pack-dynamo/guia.html?acceso=dm2026\n'+
 
 /* ── Lo que falta ───────────────────────────────────────────────────────── */
 push(SALTO());
-push(H1('Lo que falta, y quién lo cierra'));
-push(P('Esto va primero a propósito. Los tres recursos están en el aire —estar publicados no hace daño— pero **dos de ellos no pueden llevar CTA todavía**, y conviene que se sepa antes de montar nada.'));
+push(H1('Ya no queda nada bloqueado'));
+push(P('Los tres recursos están construidos, publicados y **desbloqueados**. Esto es lo que cambió el 8 de septiembre:'));
+push(tabla(['Lo que faltaba','Estado'],[
+  ['Que Gabriel revisara la estructura de la memoria de cálculo','**Hecho** — dio el visto bueno'],
+  ['Correr los 5 scripts de Dynamo en Revit','**Hecho** — se corrieron'],
+  ['Montarlos en GoHighLevel','**Es lo único que queda, y es esta guía**'],
+],[5200,4000]));
+push(CAJA('Los tres CTA pueden salir. Ya no hay que esperar a nadie: lo único entre estos recursos y las campañas es el montaje que viene a continuación.',GREEN,OK));
 
-push(H2('1 · La memoria de cálculo: ya cruzada, falta el visto bueno'));
-push(P('**8 de septiembre.** La estructura se cruzó contra una memoria real de proyecto tipo (Robot Structural Analysis, NEC-SE-DS) y cambió bastante: de 13 a 12 secciones en otro orden, con **cálculo del cortante basal** y **análisis modal** como secciones propias, **«Limitación de daños»** en vez de «estados límite de servicio», **Registro Senescyt** en la portada, y una convención de figuras que antes no existía.'));
-push(P('También apareció una **sexta devolución**: el documento que se contradice a sí mismo — restos de haberlo armado partiendo de otro anterior. Es el error más fácil de encontrar y el que peor sienta al revisor.'));
-push(CAJA('Ya no es una estructura teórica: sale de un documento que se entrega de verdad. Eso era lo que faltaba.',GREEN,OK));
-push(P('**Lo que sigue pendiente:** que Gabriel la mire y diga si falta alguna sección para el tipo de memoria que él entrega, si el orden es el que usa, y si la plantilla no induce a omitir nada. Una cosa es cruzarla y otra que él la apruebe.'));
-
-push(H2('2 · Los 5 scripts de Dynamo hay que correrlos en Revit'));
-push(P('No hay Revit en el entorno donde se construyeron, así que **nadie los ha visto ejecutarse.** Es semana 3, hay tiempo, pero hay que hacerlo.'));
-push(tabla(['Script','Qué hay que comprobar'],[
-  ['01 · Advertencias','Que el CSV salga y que Excel abra los acentos bien.'],
-  ['02 · Duplicados','Duplicar un elemento a propósito y ver si lo encuentra.'],
-  ['03 · Renombrar vistas','**El simulacro primero.** Que la lista «antes → después» sea correcta.'],
-  ['04 · Vistas sin hoja','Que no liste plantillas ni tablas.'],
-  ['05 · Parámetro en lote','**El simulacro primero.** Que el conteo de «sin parámetro» cuadre.'],
-],[2400,6800]));
-push(CAJA('Los dos que modifican el modelo (03 y 05) traen el simulacro ENCENDIDO por defecto: la primera ejecución no puede romper nada aunque falle. Aun así, guarda el proyecto antes.',ORANGE,WARN));
-push(P('**Lo que sí está comprobado** de los scripts, para que no se empiece de cero: la sintaxis de los cinco; que corren igual en IronPython 2 y en CPython 3 (Revit 2023 en adelante) — aquí había un fallo real y estaba en el script 01; que las llamadas a la API existen, verificado contra la documentación oficial de Autodesk; y la lógica que no depende de Revit, probada con casos.'));
-
-push(H2('3 · Abrir el Word y el Excel de la memoria'));
-push(P('Los dos ficheros se generan automáticamente y están verificados por estructura y por lógica, pero **en el entorno donde se construyeron no hay Word ni Excel de verdad** para abrirlos. Alguien tiene que hacerlo una vez.'));
-push(P('En el Excel: escribe una solicitación en la columna C y una resistencia en la D, y comprueba que el ratio y el CUMPLE salen solos. Si algo se ve raro, avisa.'));
+push(H2('Una sola cosa sigue esperando'));
+push(P('El creativo de pauta de **ACERO con el tutor de IA** no se graba ni se sube hasta que el tutor esté montado en la portada de los **cuatro** cursos. Está confirmado en Estructuras; faltan Cerchas, Uniones y Modelado.'));
+push(CAJA('Si un alumno paga $225 y no encuentra el tutor, prometimos de más y ya cobrado. Ese es el único bloqueo que queda vivo.',ORANGE,WARN));
 
 /* ── El montaje común ───────────────────────────────────────────────────── */
 push(SALTO());

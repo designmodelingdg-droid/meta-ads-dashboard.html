@@ -31,3 +31,121 @@ la variante 16:9 del tema que se elija (1 crédito cada una).
 
 **Regla de siempre:** si se les monta texto o logo encima, el logo va el real
 del CDN — nunca uno generado.
+
+---
+
+## Detrás de cámaras · 8-sep-2026
+
+Dos piezas **1080×1920 exactos** (las 16 de arriba son 768×1376). Escena real de
+oficina: trípode con teléfono, aro de luz encendido y un pórtico estructural en
+la pantalla del fondo.
+
+| Var. | Qué la diferencia | URL |
+|---|---|---|
+| A | Teléfono de espaldas, como está de verdad al grabar. Más aire navy arriba. Pórtico de 3 niveles | https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/historias/bts-grabacion-A.jpg |
+| B | Aro de luz más protagonista, escritorio completo con los cables clipados. Pórtico de 1 nivel | https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/historias/bts-grabacion-B.jpg |
+
+**Pensadas para historias con texto encima.** El 25% superior y el 25% inferior
+son zona lisa y oscura —comprobado: desviación por debajo de 11 y brillo por
+debajo de 34— así que el texto blanco de Instagram se lee sin pelearse con la
+imagen y la interfaz no tapa nada importante.
+
+**Lo que falló al generarlas, por si se repite el encargo:** pedir «el 25%
+superior e inferior libres» hace que el modelo dibuje **bandas literales**, con
+costura visible, como una foto pegada en un marco. Se corrige pidiendo una foto
+a sangre —«fills the entire frame edge to edge, no bands, no letterbox»— y
+colocando el sujeto «en el tercio central».
+
+**A revisar si se publican tal cual:** en la variante B se ve la marca del
+monitor, y en las dos hay texto diminuto de interfaz. Es ilegible al tamaño de
+historia; si molesta, se regenera.
+
+
+## Serie «bloqueo y tiempo» · 8-sep-2026
+
+Cuatro piezas más en 1080×1920, del mismo encargo. Acompañan al lead magnet de
+Revit + ChatGPT: el error que te frena y el tiempo que se va en resolverlo.
+
+| Tema | Var. | Qué la diferencia | URL |
+|---|---|---|---|
+| Sensación de bloqueo | A | Modelo 3D bien desenfocado detrás, como pedía el brief | https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/historias/error-bloqueo-A.jpg |
+| Sensación de bloqueo | B | El modelo sale **nítido** —se desvía del brief— pero pega más fuerte | https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/historias/error-bloqueo-B.jpg |
+| Reloj de arena | A | Franjas superior e inferior totalmente lisas (desviación 0,9). La más limpia para texto | https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/historias/reloj-arena-A.jpg |
+| Reloj de arena | B | Retícula de plano en todo el fondo y reloj más grande | https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/historias/reloj-arena-B.jpg |
+
+**Cómo se resolvió el «cuadro de error sin texto legible».** Un diálogo de error
+lleva texto por definición, y el modelo lo escribe con faltas. Se pide que el
+área del mensaje sean **barras grises de marcador de posición**, no palabras:
+así se lee como un diálogo real sin que haya una sola letra.
+
+**Cómo se resolvió «arena convertida en código».** Pedir código literal hace que
+el modelo escriba letras. Se pide **símbolos geométricos** —corchetes angulares,
+llaves, puntos y guiones— que se leen como código sin ser palabras.
+
+**A revisar si se publican tal cual:** en `error-bloqueo-B` se ve la marca del
+monitor, y en las dos de bloqueo hay texto diminuto de interfaz. Ilegible al
+tamaño de historia; si molesta, se regenera.
+
+## Teléfono en mano · 9-sep-2026
+
+| Var. | Qué la diferencia | URL |
+|---|---|---|
+| A | **Solo la mano.** Oficina desenfocada con lámpara ámbar de fondo. Es la que se ciñe al encargo. | https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/historias/reel-en-mano-A.jpg |
+| B | **Sobre el hombro:** se ve la nuca de alguien, desenfocada. El modelo en pantalla es más grande y detallado. | https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/historias/reel-en-mano-B.jpg |
+
+**Ojo con la mano.** Es lo que más falla en estos modelos. Se pide explícitamente
+«exactly one hand, exactly five fingers, anatomically correct, no extra digits»
+y aun así hay que mirarla dedo a dedo antes de publicar. En estas dos salió
+bien: pulgar al borde derecho y tres yemas asomando por el izquierdo, que es
+como se sostiene un teléfono de verdad.
+
+**La B se desvía del encargo.** Pedí sin personas y salió una nuca. Se entrega
+igual porque el encuadre sobre el hombro funciona, pero la decisión de publicar
+a alguien —aunque no se le reconozca— es de quien publica.
+
+**Las franjas NO están lisas** en ninguna de las dos (desviación 35-52 frente a
+0,9 del reloj de arena): la del fondo tiene lámpara y muebles desenfocados, y la
+de abajo tiene el antebrazo. El texto se lee igual porque el fondo es oscuro,
+pero conviene texto corto y con sombra, no un párrafo.
+
+## Cuatro puertas · 9-sep-2026
+
+| Qué es | URL |
+|---|---|
+| Cuatro portales en perspectiva sobre retícula azul, el cuarto encendido en ámbar | https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/historias/cuatro-puertas.jpg |
+
+**Dibujada, no generada.** «Cuatro puertas alineadas en perspectiva» son cuatro
+propiedades exactas —cuatro, alineadas, un solo sistema de fuga, la cuarta y no
+otra en ámbar— y un generador las aproxima. Fuente en
+`fuentes/cuatro-puertas.py`; se regenera y se vuelve a medir con un comando.
+
+**Lo que costó cuatro intentos.** Las tres primeras versiones ponían las puertas
+en un muro paralelo al eje de cámara. Ahí el ancho aparente de un vano cae con
+1/d² mientras el alto cae con 1/d: salían ranuras de 5:1 y la cuarta —la de
+ámbar, la que lleva el mensaje— medía 29 px, el elemento **más pequeño** del
+cuadro. Geometría correcta, imagen muda.
+
+La versión buena gira la fila 44° hacia la cámara: dos puntos de fuga, los dos
+fuera del lienzo. Con eso el escorzo horizontal deja de depender de la
+distancia, cada puerta conserva proporción de puerta y la fila sigue alejándose.
+
+| Puerta | Ancho | Alto | Proporción |
+|---|---|---|---|
+| 1 | 269 px | 671 px | 1:2,5 |
+| 2 | 197 px | 568 px | 1:2,9 |
+| 3 | 150 px | 492 px | 1:3,3 |
+| 4 (ámbar) | 118 px | 434 px | 1:3,7 |
+
+La primera es 2,27 veces más ancha que la cuarta: se ve que se alejan, y ninguna
+deja de leerse como puerta.
+
+**Los tres números de cámara salen de una búsqueda**, no de mover valores a ojo
+(`fuentes/cuatro-puertas-buscar-camara.py`). Con filtros duros daba cero
+candidatos —hay tensión real entre que se note la perspectiva y que las puertas
+sigan pareciendo puertas—, así que se puntúa y se coge el mínimo.
+
+**Franjas de Instagram: desviación 0 arriba y 0 abajo.** Lisas de verdad, no
+«casi». Todo el ámbar vive entre y=698 y y=1132, en el centro del cuadro.
+
+**Cero texto**, como pedía el encargo: el texto va con las herramientas de
+Instagram.

@@ -61,6 +61,12 @@ const GUI=JSON.parse(fs.readFileSync(path.join(MATRIZ_DIR,'guiones-completos.jso
    aqui se leen por su JSON exportado: un solo origen, dos salidas. */
 const LM_JSON=path.join(MATRIZ_DIR,'leadmagnets-septiembre.json');
 const LM=fs.existsSync(LM_JSON)?JSON.parse(fs.readFileSync(LM_JSON,'utf8')):null;
+/* Los 14 reels del mes, por el mismo camino que los lead magnets: se escriben
+   en Python y se leen aqui por su JSON exportado. Antes el Word solo rendia los
+   5 de valor —los otros 9 existian pero no se veian en el documento que el
+   equipo imprime. */
+const RE_JSON=path.join(MATRIZ_DIR,'reels-septiembre.json');
+const REELS=fs.existsSync(RE_JSON)?JSON.parse(fs.readFileSync(RE_JSON,'utf8')):null;
 const BY={}; GUI.piezas.forEach(p=>BY[p.id]=p);
 
 const [ANIO,MES_NUM]=CAL.mes.split('-');
@@ -552,6 +558,36 @@ if(Array.isArray(CAL.grupos) && CAL.grupos.length){
      Los recursos viven en su propio archivo (matriz/leadmagnets-septiembre.py)
      porque son una entrega distinta: el archivo mas su embudo. Aqui solo se
      rinde lo que el equipo necesita leer en papel. */
+  /* ── Los 14 reels, en un solo sitio ─────────────────────────────────────
+     Va antes de los lead magnets porque es la lista de GRABACION: quien se
+     sienta a grabar necesita las catorce juntas, no repartidas entre la
+     seccion de publicidad y la de feed. */
+  if(REELS && REELS.bloques){
+    push(pageBreak());
+    push(H1(`5a · LOS ${REELS.total} REELS DEL MES — la lista de grabación`));
+    push(note("Cinco de valor, tres de lead magnet y seis de venta (cuatro del Máster y dos "
+      +"de ACERO). Se graban en dos sesiones: los ocho de valor y lead magnet en una, y los "
+      +"seis de venta en otra — los cuatro del Máster seguidos y con la misma camisa, porque "
+      +"son un set y si se graban en días distintos se nota en el color."));
+    push(note("EL PRECIO VA AL REVÉS EN CADA PRODUCTO. Ninguna pieza del Máster lleva cifra: "
+      +"el precio lo da el asesor en la llamada. Las dos de ACERO sí la llevan, y pegada a su "
+      +"razón — $225 porque ahora incluye el tutor de IA."));
+    REELS.bloques.forEach(b=>{
+      push(H2(`▸ ${b.titulo}  ·  ${b.piezas.length} piezas`));
+      push(P(b.nota));
+      b.piezas.forEach(r=>{
+        push(H3((r.fecha||r.palabra||'—')+'  ·  '+(r.titulo||r.recurso)+'  ·  '+r.duracion));
+        push(P(r.estado,{run:{bold:true,color:RED}}));
+        if(r.cta) push(P('CTA: '+r.cta));
+        if(r.destino) push(P('Destino: '+r.destino));
+        if(r.nota) push(note(r.nota));
+        push(tbl(['Tiempo','Qué se ve','Qué se dice','Texto en pantalla'],
+          r.guion.map(g=>[g[0],g[1],g[2],String(g[3]).replace(/\*\*/g,'')]),
+          [1100,2600,3000,2300]));
+      });
+    });
+  }
+
   if(LM && LM.magnets){
     push(pageBreak());
     push(H1("5b · LEAD MAGNETS — los 3 recursos nuevos"));
@@ -571,7 +607,15 @@ if(Array.isArray(CAL.grupos) && CAL.grupos.length){
       m.posts.forEach(ps=>{
         push(H3('Post de lanzamiento · '+ps.fecha+' · '+ps.formato));
         push(P('Redes: '+ps.red,{run:{italics:true,color:GREY}}));
+        if(ps.por_que) push(note(ps.por_que));
         push(...block(ps.hook));
+        /* Un carrusel sin el texto de sus diapositivas no se puede producir:
+           quien lo monta en Canva necesita saber que va en cada una. */
+        if(Array.isArray(ps.slides)&&ps.slides.length){
+          push(P('DIAPOSITIVAS',{run:{bold:true,size:16,color:GREY}}));
+          push(tbl(['#','Qué va en la diapositiva'],
+            ps.slides.map((x,i)=>[String(i+1),x]),[600,8400]));
+        }
         push(...block(ps.caption));
         push(P('CTA: '+ps.cta,{run:{bold:true}}));
         push(P('PROMPT DE IMAGEN',{run:{bold:true,size:16,color:GREY}}));
