@@ -1,0 +1,104 @@
+<style>
+  html,body{margin:0;padding:0;background:#0E2438;width:1080px;height:1920px;overflow:hidden}
+  svg{display:block}
+</style>
+<!--
+  Balanza equilibrada · chip contra casco.
+
+  El equilibrio no se dibuja a ojo: los dos brazos miden 250 desde el eje y los
+  dos platos estan a y=1015 EXACTO. Es justo lo que la imagen quiere decir, y un
+  generador la deja casi nivelada — que es lo mismo que no decirlo.
+
+  Segunda pasada: los tirantes cruzaban por encima de los objetos y el casco no
+  se leia. Platos ensanchados a 260 y objetos bajados para que apoyen en el
+  fondo del plato, con holgura contra los tirantes.
+-->
+<svg width="1080" height="1920" viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0 L0 0 0 60" fill="none" stroke="#18334A" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#15324D" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#0E2438" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1920" fill="#0E2438"/>
+  <rect width="1080" height="1920" fill="url(#grid)" opacity="0.5"/>
+  <ellipse cx="540" cy="980" rx="460" ry="500" fill="url(#halo)"/>
+
+  <g fill="none" stroke="#FFFFFF" stroke-width="3"
+     stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- ── Columna y base ───────────────────────────────────────────── -->
+    <path d="M540 690 L540 1310"/>
+    <path d="M452 1310 L628 1310"/>
+    <path d="M416 1352 L664 1352"/>
+    <path d="M452 1310 L416 1352"/>
+    <path d="M628 1310 L664 1352"/>
+
+    <!-- ── Brazo: horizontal exacto, y = 690 ────────────────────────── -->
+    <path d="M290 690 L790 690" stroke-width="3.4"/>
+    <path d="M290 672 L290 708"/>
+    <path d="M790 672 L790 708"/>
+
+    <!-- ── Tirantes: se abren hacia fuera para dejar libre el centro ── -->
+    <path d="M290 690 L160 1015"/>
+    <path d="M290 690 L420 1015"/>
+    <path d="M790 690 L660 1015"/>
+    <path d="M790 690 L920 1015"/>
+
+    <!-- ── Platos: los dos a y = 1015 exacto, 260 de ancho ──────────── -->
+    <path d="M160 1015 L420 1015"/>
+    <path d="M160 1015 Q290 1092 420 1015"/>
+    <path d="M660 1015 L920 1015"/>
+    <path d="M660 1015 Q790 1092 920 1015"/>
+
+    <!-- ══════ PLATO IZQUIERDO · chip ══════ -->
+    <!-- apoyado en el fondo del plato: la base del chip toca y≈1012 -->
+    <g transform="translate(290,952)">
+      <rect x="-40" y="-40" width="80" height="80" rx="8"/>
+      <rect x="-17" y="-17" width="34" height="34" rx="4"/>
+      <path d="M-25 -40 L-25 -58"/><path d="M-8 -40 L-8 -58"/>
+      <path d="M8 -40 L8 -58"/><path d="M25 -40 L25 -58"/>
+      <path d="M-25 40 L-25 58"/><path d="M-8 40 L-8 58"/>
+      <path d="M8 40 L8 58"/><path d="M25 40 L25 58"/>
+      <path d="M-40 -25 L-58 -25"/><path d="M-40 -8 L-58 -8"/>
+      <path d="M-40 8 L-58 8"/><path d="M-40 25 L-58 25"/>
+      <path d="M40 -25 L58 -25"/><path d="M40 -8 L58 -8"/>
+      <path d="M40 8 L58 8"/><path d="M40 25 L58 25"/>
+    </g>
+
+    <!-- ══════ PLATO DERECHO · casco de ingeniero ══════ -->
+    <!-- El ala va como pieza cerrada propia. En la version anterior era una
+         linea suelta y el casco se leia como una loma: el ala y el casquete
+         se fundian en una sola curva. -->
+    <g transform="translate(790,998)">
+      <!-- ala: forma cerrada, mas ancha que el casquete -->
+      <path d="M-94 -4
+               Q-94 11 -66 14
+               Q0 23 66 14
+               Q94 11 94 -4
+               Q60 -17 0 -17
+               Q-60 -17 -94 -4 Z"/>
+      <!-- casquete: arranca dentro del ala y sube limpio -->
+      <path d="M-54 -13 C-54 -98 54 -98 54 -13"/>
+      <!-- nervios: el arranque de cada uno se calcula SOBRE la curva de la
+           cupula, no a ojo. Puestos a ojo sobresalian por arriba. -->
+      <path d="M-26 -69.7 C-22 -60 -21 -38 -22 -15"/>
+      <path d="M26 -69.7 C22 -60 21 -38 22 -15"/>
+      <path d="M0 -76.8 L0 -16"/>
+    </g>
+  </g>
+
+  <!-- ── Acentos en ámbar: el eje y las marcas de nivel ─────────────── -->
+  <g fill="none" stroke="#E8A04A" stroke-linecap="round">
+    <path d="M540 648 L510 690 L570 690 Z" stroke-width="3.4" fill="#E8A04A" fill-opacity="0.16"/>
+    <circle cx="540" cy="690" r="9" stroke-width="3.4" fill="#0E2438"/>
+    <path d="M540 622 L540 600" stroke-width="3.4"/>
+    <!-- las dos marcas confirman que los platos estan a la misma altura -->
+    <path d="M96 1015 L136 1015" stroke-width="2.6" opacity="0.6"/>
+    <path d="M944 1015 L984 1015" stroke-width="2.6" opacity="0.6"/>
+  </g>
+</svg>
