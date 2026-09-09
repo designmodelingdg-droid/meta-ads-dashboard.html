@@ -85,3 +85,25 @@ llaves, puntos y guiones— que se leen como código sin ser palabras.
 **A revisar si se publican tal cual:** en `error-bloqueo-B` se ve la marca del
 monitor, y en las dos de bloqueo hay texto diminuto de interfaz. Ilegible al
 tamaño de historia; si molesta, se regenera.
+
+## Teléfono en mano · 9-sep-2026
+
+| Var. | Qué la diferencia | URL |
+|---|---|---|
+| A | **Solo la mano.** Oficina desenfocada con lámpara ámbar de fondo. Es la que se ciñe al encargo. | https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/historias/reel-en-mano-A.jpg |
+| B | **Sobre el hombro:** se ve la nuca de alguien, desenfocada. El modelo en pantalla es más grande y detallado. | https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/historias/reel-en-mano-B.jpg |
+
+**Ojo con la mano.** Es lo que más falla en estos modelos. Se pide explícitamente
+«exactly one hand, exactly five fingers, anatomically correct, no extra digits»
+y aun así hay que mirarla dedo a dedo antes de publicar. En estas dos salió
+bien: pulgar al borde derecho y tres yemas asomando por el izquierdo, que es
+como se sostiene un teléfono de verdad.
+
+**La B se desvía del encargo.** Pedí sin personas y salió una nuca. Se entrega
+igual porque el encuadre sobre el hombro funciona, pero la decisión de publicar
+a alguien —aunque no se le reconozca— es de quien publica.
+
+**Las franjas NO están lisas** en ninguna de las dos (desviación 35-52 frente a
+0,9 del reloj de arena): la del fondo tiene lámpara y muebles desenfocados, y la
+de abajo tiene el antebrazo. El texto se lee igual porque el fondo es oscuro,
+pero conviene texto corto y con sombra, no un párrafo.
