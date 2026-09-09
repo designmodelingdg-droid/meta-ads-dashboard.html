@@ -77,6 +77,29 @@ GHL → **Sites → Forms → New Form**. Nómbralo `Diagnóstico BIM Máster`.
 Añade los siete campos personalizados del paso 1. **Todos ocultos** (hidden):
 la persona no ve nada de esto, el formulario solo transporta el dato al CRM.
 
+> ⚠ **Y ADEMÁS el correo. Esto faltaba en esta guía y costó un montaje.**
+> Un formulario de GHL con solo campos personalizados **no se pega a ningún
+> contacto**: hace falta al menos **Email** o **Teléfono**, que son los que GHL
+> usa para identificar o crear la ficha. Sin eso el diagnóstico no tiene dueño.
+>
+> Añade dos campos estándar más:
+>
+> | Campo | Visible | Por qué |
+> |---|---|---|
+> | **Email** | sí | Es la llave con la que GHL encuentra o crea el contacto |
+> | **Nombre** (`Full Name`) | sí | Para que la ficha no quede sin nombre |
+>
+> Visibles a propósito: llegan prellenados desde el enlace que manda el closer
+> y la persona los ve y puede corregirlos. Un correo mal escrito manda el
+> diagnóstico a una ficha que no es.
+>
+> El test ya los envía — usa los nombres estándar de GHL, `email` y
+> `full_name`, que son los que su prellenado reconoce. No hay que tocar código.
+>
+> **Ojo con el «+» también aquí:** GHL lo borra igual en los campos estándar,
+> así que un correo con alias tipo `nombre+prueba@gmail.com` llega roto. Para
+> probar, usa una dirección distinta de verdad.
+
 Publica el formulario y copia su enlace, que se ve así:
 
 ```
