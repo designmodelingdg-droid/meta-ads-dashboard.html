@@ -107,3 +107,45 @@ a alguien —aunque no se le reconozca— es de quien publica.
 0,9 del reloj de arena): la del fondo tiene lámpara y muebles desenfocados, y la
 de abajo tiene el antebrazo. El texto se lee igual porque el fondo es oscuro,
 pero conviene texto corto y con sombra, no un párrafo.
+
+## Cuatro puertas · 9-sep-2026
+
+| Qué es | URL |
+|---|---|
+| Cuatro portales en perspectiva sobre retícula azul, el cuarto encendido en ámbar | https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/historias/cuatro-puertas.jpg |
+
+**Dibujada, no generada.** «Cuatro puertas alineadas en perspectiva» son cuatro
+propiedades exactas —cuatro, alineadas, un solo sistema de fuga, la cuarta y no
+otra en ámbar— y un generador las aproxima. Fuente en
+`fuentes/cuatro-puertas.py`; se regenera y se vuelve a medir con un comando.
+
+**Lo que costó cuatro intentos.** Las tres primeras versiones ponían las puertas
+en un muro paralelo al eje de cámara. Ahí el ancho aparente de un vano cae con
+1/d² mientras el alto cae con 1/d: salían ranuras de 5:1 y la cuarta —la de
+ámbar, la que lleva el mensaje— medía 29 px, el elemento **más pequeño** del
+cuadro. Geometría correcta, imagen muda.
+
+La versión buena gira la fila 44° hacia la cámara: dos puntos de fuga, los dos
+fuera del lienzo. Con eso el escorzo horizontal deja de depender de la
+distancia, cada puerta conserva proporción de puerta y la fila sigue alejándose.
+
+| Puerta | Ancho | Alto | Proporción |
+|---|---|---|---|
+| 1 | 269 px | 671 px | 1:2,5 |
+| 2 | 197 px | 568 px | 1:2,9 |
+| 3 | 150 px | 492 px | 1:3,3 |
+| 4 (ámbar) | 118 px | 434 px | 1:3,7 |
+
+La primera es 2,27 veces más ancha que la cuarta: se ve que se alejan, y ninguna
+deja de leerse como puerta.
+
+**Los tres números de cámara salen de una búsqueda**, no de mover valores a ojo
+(`fuentes/cuatro-puertas-buscar-camara.py`). Con filtros duros daba cero
+candidatos —hay tensión real entre que se note la perspectiva y que las puertas
+sigan pareciendo puertas—, así que se puntúa y se coge el mínimo.
+
+**Franjas de Instagram: desviación 0 arriba y 0 abajo.** Lisas de verdad, no
+«casi». Todo el ámbar vive entre y=698 y y=1132, en el centro del cuadro.
+
+**Cero texto**, como pedía el encargo: el texto va con las herramientas de
+Instagram.
