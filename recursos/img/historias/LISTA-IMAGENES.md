@@ -239,3 +239,45 @@ el conjunto.
 **Franjas de Instagram: desviación 0,1 arriba y 0,1 abajo**, brillo 35 en las
 dos. La retícula de plano se apaga antes de entrar en ellas. Todo lo importante
 vive entre y=590 e y=1344.
+
+## Nudo destacado en la estructura · 10-sep-2026
+
+Estructura metálica en isométrico, tres plantas y un vano arriostrado, con
+**una** conexión destacada en ámbar y el resto en blanco tenue. 1080×1920, sin
+texto.
+
+| Qué es | URL |
+|---|---|
+| Pórtico metálico en isométrico con un nudo viga-pilar en círculo de detalle | https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/historias/nudo-isometrico.jpg |
+
+**Dibujada, no generada,** por lo de siempre: «isométrico» y «una de sus
+conexiones» son propiedades exactas. Un generador entrega una perspectiva
+cualquiera y reparte el ámbar por donde le parece. Aquí la proyección es
+isométrica de verdad —ejes horizontales a 30°, sin punto de fuga— y el ámbar
+cae en un nudo concreto. Fuente en `fuentes/nudo-isometrico.py`.
+
+**Cómo se resuelve «una destacada y el resto tenue»:** la estructura se dibuja
+dos veces. Una entera en blanco tenue, y otra en ámbar con **solo las cuatro
+barras que llegan al nudo** —dos tramos de pilar y dos vigas—, recortada a un
+círculo de detalle. Dentro del círculo, y solo ahí, aparecen la chapa de testa
+y los tornillos: eso es lo que hace que se lea como una conexión y no como un
+cruce de líneas. El círculo de detalle es además la convención de un plano de
+verdad («detalle A»), así que remata la idea sin una sola letra.
+
+**Dos cosas se cayeron mirando el render:**
+
+- La primera versión recortaba la estructura **entera** al círculo, sin filtrar
+  por nudo, y salió un rosetón: en isométrico media docena de barras de otras
+  alineaciones cruzan ese mismo punto de la pantalla. Por lo mismo el nudo no
+  está en el eje central sino en la arista izquierda de la silueta, donde el
+  nudo vecino más cercano queda a 140 px y el círculo mide 105 de radio.
+- **Trampa de la isométrica:** si la altura de planta iguala al vano, la
+  diagonal del arriostre cae exactamente a 30°, o sea paralela a las vigas de
+  los vanos vecinos, y el conjunto deja de parecer una estructura para parecer
+  un cristal hexagonal. Con altura = 1,32 × vano la diagonal sale a 43,5° y la
+  retícula se rompe.
+
+**Franjas de Instagram: desviación 0,1 arriba y 0,1 abajo.** Todo lo importante
+vive entre y=508 e y=1412, y el encuadre se centra sobre estructura **más**
+círculo —si no, el círculo cuelga fuera por la izquierda y el conjunto queda
+descentrado—: 184 px de margen a cada lado.
