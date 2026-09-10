@@ -116,8 +116,22 @@ const BASE='file://'+path.join(__dirname,'..')+'/';
   console.log('  avisa de usar el mismo correo (evita duplicar):',
               avisaDelCorreo ? 'sí' : 'NO');
 
+  /* El telefono del formulario es obligatorio: si no viaja en el enlace, la
+     persona lo teclea y lo tecleado SUSTITUYE al del CRM. Se comprueba que el
+     enlace lo lleve hasta el formulario, con los dos nombres de parametro. */
+  const pasaTel = await p2.evaluate(() => {
+    const lee = q => { const U = new URLSearchParams(q); return {
+      id: U.get('cid') || '', nombre: U.get('nombre') || '',
+      email: U.get('email') || '', tel: U.get('tel') || U.get('phone') || '' }; };
+    return lee('?tel=0999').tel === '0999' && lee('?phone=0999').tel === '0999';
+  });
+  const mandaTel = /datos\.phone\s*=\s*CONTACTO\.tel/.test(appTxt);
+  console.log('  el teléfono del enlace llega al formulario:',
+              pasaTel && mandaTel ? 'sí' : 'NO');
+
   const montajeMal = !gemelos || !sinPegar || noExisten.length || conMas.length
-                     || mienteEntrega || alturaCero || !avisaDelCorreo;
+                     || mienteEntrega || alturaCero || !avisaDelCorreo
+                     || !pasaTel || !mandaTel;
   await p.close();
 
   // el asesor abre ese enlace

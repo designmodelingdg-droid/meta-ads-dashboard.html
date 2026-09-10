@@ -207,8 +207,17 @@ partido en dos, mira eso primero.
 En la plantilla de WhatsApp de GHL:
 
 ```
-https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/test-master-bim/?cid={{contact.id}}&nombre={{contact.first_name}}&email={{contact.email}}
+https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/test-master-bim/?nombre={{contact.first_name}}&email={{contact.email}}&tel={{contact.phone}}
 ```
+
+**`tel` no es opcional.** El teléfono del formulario está marcado como
+obligatorio, así que si no viaja en el enlace la persona lo teclea — y lo que
+teclee **sustituye** al que ya tiene la ficha. Un dedazo deja al closer sin el
+WhatsApp por el que venía hablando.
+
+**`cid` se quitó del enlace.** Se enviaba como `contact_id` y GHL lo ignora
+—no está en su lista de campos que prellena—, así que solo ensuciaba la URL.
+El que evita el duplicado es `email`.
 
 Mensaje sugerido, después de agendar:
 
@@ -223,7 +232,7 @@ Mensaje sugerido, después de agendar:
 ## PASO 4 — Lo que el asesor lee antes de llamar
 
 En la ficha del contacto en GHL, en los campos personalizados. El que se lee
-de un vistazo es **`detalle_diagnostico`**, que termina con una línea así:
+de un vistazo es **`detalle_del_diagnóstico`**, que termina con una línea así:
 
 ```
 PARA EL ASESOR: Domina hasta Coordinador, viene de cálculo estructural.

@@ -154,6 +154,12 @@ const CONTACTO = {
   id:     Q.get('cid')    || '',
   nombre: Q.get('nombre') || '',
   email:  Q.get('email')  || '',
+  /* El teléfono del formulario es OBLIGATORIO. Si no viaja en el enlace, la
+     persona lo teclea, y lo que teclee SUSTITUYE al que ya tiene la ficha en
+     el CRM: un dedazo deja al closer sin WhatsApp. Por eso el enlace del
+     closer debe llevarlo. Se aceptan los dos nombres porque `tel` es el que
+     documenta la guía y `phone` el que sale solo al copiar de GHL. */
+  tel:    Q.get('tel')    || Q.get('phone') || '',
 };
 
 /* ─────────────────────────────────────────────────────────────────────────
@@ -316,6 +322,7 @@ function entregar(r){
   if(CONTACTO.id)     datos.contact_id = CONTACTO.id;
   if(CONTACTO.nombre) datos.full_name  = CONTACTO.nombre;
   if(CONTACTO.email)  datos.email      = CONTACTO.email;
+  if(CONTACTO.tel)    datos.phone      = CONTACTO.tel;
 
   if(CFG.FORM_GHL.includes('PEGAR_ID')){
     cont.innerHTML = `<div class="aviso"><b>Falta conectar el formulario de GoHighLevel.</b>
