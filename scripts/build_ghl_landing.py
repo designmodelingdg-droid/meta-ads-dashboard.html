@@ -24,13 +24,28 @@ BASE_PAGES = "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html"
 # app en sí se siguen sirviendo desde GitHub Pages, embebidos por iframe.
 DOMINIO = "https://funnel.dgdesignmodeling.com"
 
-# Enlaces entre páginas del funnel: se reescriben al dominio propio.
-# Lo que no esté aquí (img/…, app.html dentro de un iframe) se queda en Pages.
-RUTAS_FUNNEL = {
-    "index.html": f"{DOMINIO}/test-nivel-bim",
-    "gracias-agenda.html": f"{DOMINIO}/test-nivel-bim/gracias",
-    "app.html": f"{DOMINIO}/test-nivel-bim/test",
+# Enlaces entre páginas del funnel: se reescriben al dominio propio SOLO donde
+# la página de GHL ya existe y sabemos su URL exacta.
+#
+# Esto era un diccionario fijo con las rutas de test-nivel-bim que se aplicaba
+# a TODAS las carpetas: las versiones de GHL de guia-revit-ia, memoria-calculo
+# y pack-dynamo salieron enlazando a la página de gracias de OTRO lead magnet.
+# Quien descargara la guía de Revit habría aterrizado en el test de nivel.
+#
+# El arreglo NO es deducir la ruta del nombre de la carpeta: el slug real de
+# test-nivel-bim es «acceso-gratis-test-nivel-bim-gracias», no
+# «test-nivel-bim/gracias». Inventar la URL rompe la página que hoy funciona.
+# Carpeta que no esté aquí conserva sus enlaces a GitHub Pages, que existen.
+FUNNEL_POR_CARPETA = {
+    "test-nivel-bim": {
+        "gracias-agenda.html": f"{DOMINIO}/acceso-gratis-test-nivel-bim-gracias",
+        "app.html": f"{DOMINIO}/test-nivel-bim/test",
+    },
 }
+
+
+def rutas_funnel(carpeta: str) -> dict:
+    return FUNNEL_POR_CARPETA.get(carpeta, {})
 
 
 # origen → destino, por carpeta. Cada lead magnet tiene sus propias páginas:
@@ -48,7 +63,12 @@ PAGINAS_POR_CARPETA = {
         ("index.html", "ghl-recursos.html"),
     ],
 }
-PAGINAS_POR_DEFECTO = [("index.html", "ghl-landing.html")]
+# Todo lead magnet tiene landing y página de gracias: las dos hacen falta
+# dentro de GHL, porque el formulario nativo redirige a la de gracias.
+PAGINAS_POR_DEFECTO = [
+    ("index.html", "ghl-landing.html"),
+    ("gracias-agenda.html", "ghl-gracias.html"),
+]
 
 
 def construir(carpeta: str, origen: str, destino: str) -> Path:
@@ -70,7 +90,7 @@ def construir(carpeta: str, origen: str, destino: str) -> Path:
 
     # 1) Los enlaces ENTRE PÁGINAS del funnel van al dominio propio, para que
     #    el usuario no vea nunca que salta a github.io.
-    for pagina, destino in RUTAS_FUNNEL.items():
+    for pagina, destino in rutas_funnel(carpeta).items():
         body = body.replace(f'"./{pagina}', f'"{destino}')
         body = body.replace(f"'./{pagina}", f"'{destino}")
 
