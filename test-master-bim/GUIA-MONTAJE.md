@@ -207,13 +207,26 @@ partido en dos, mira eso primero.
 En la plantilla de WhatsApp de GHL:
 
 ```
-https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/test-master-bim/?nombre={{contact.first_name}}&email={{contact.email}}&tel={{contact.phone}}
+https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/test-master-bim/?nombre={{contact.first_name}}&email={{contact.email}}
 ```
 
-**`tel` no es opcional.** El teléfono del formulario está marcado como
-obligatorio, así que si no viaja en el enlace la persona lo teclea — y lo que
-teclee **sustituye** al que ya tiene la ficha. Un dedazo deja al closer sin el
-WhatsApp por el que venía hablando.
+**Sin `tel`, y esto es una corrección de lo que decía antes.** Aquí se
+documentó `tel={{contact.phone}}` y **no funciona**: GHL renderiza el teléfono
+en formato internacional, con «+» delante, y un «+» dentro de un querystring
+significa espacio. `tel=+593983241210` llega al test como « 593983241210». Y
+aunque se limpiara, GHL vuelve a hacer `.replace(/\+/g,' ')` sobre los valores
+que prellena, así que el «+» no llega nunca. Es la misma trampa del punto del
+«+», ahora en el teléfono.
+
+El parámetro `tel` sí sirve **si el número va en formato local**
+(`tel=0983241210`): eso viaja intacto. Lo que no sirve es la variable de GHL.
+
+**Lo mejor es quitarle el «obligatorio» al teléfono en el formulario**, o
+quitar el campo. El que cruza el contacto es el correo; el teléfono no aporta
+nada al diagnóstico y, si es obligatorio y no viaja prellenado, la persona lo
+teclea a mano. En la prueba del 10-sep lo tecleado NO sustituyó al de la ficha
+—se quedó el que ya tenía—, pero eso fue con un número que ya pertenecía a otro
+contacto, así que no se puede dar por norma.
 
 **`cid` se quitó del enlace.** Se enviaba como `contact_id` y GHL lo ignora
 —no está en su lista de campos que prellena—, así que solo ensuciaba la URL.

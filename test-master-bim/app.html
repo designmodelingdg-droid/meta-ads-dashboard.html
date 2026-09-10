@@ -150,16 +150,23 @@ let cursor = 0;
    test funciona igual pero el resultado no se puede pegar a nadie: por eso la
    pantalla final siempre ofrece el código, que sirve incluso sin parámetros. */
 const Q = new URLSearchParams(location.search);
+const limpiaTel = v => {
+  const d = String(v).replace(/[^\d]/g, '');
+  return d.length >= 7 ? d : '';
+};
 const CONTACTO = {
   id:     Q.get('cid')    || '',
   nombre: Q.get('nombre') || '',
   email:  Q.get('email')  || '',
-  /* El teléfono del formulario es OBLIGATORIO. Si no viaja en el enlace, la
-     persona lo teclea, y lo que teclee SUSTITUYE al que ya tiene la ficha en
-     el CRM: un dedazo deja al closer sin WhatsApp. Por eso el enlace del
-     closer debe llevarlo. Se aceptan los dos nombres porque `tel` es el que
-     documenta la guía y `phone` el que sale solo al copiar de GHL. */
-  tel:    Q.get('tel')    || Q.get('phone') || '',
+  /* El teléfono solo sobrevive al viaje si viene en formato LOCAL
+     (0983241210). Con «+» delante no: un «+» en un querystring significa
+     espacio, así que `tel=+593983241210` llega aquí como « 593983241210», y
+     aunque se arreglara, GHL hace `.replace(/\+/g,' ')` sobre los valores que
+     prellena y lo volvería a romper. Por eso la guía NO pone
+     `tel={{contact.phone}}`: GHL lo renderiza en E.164, con «+».
+     Se limpia lo que llegue y se descarta si no queda un número usable, para
+     no mandar al formulario un valor con un espacio delante. */
+  tel:    limpiaTel(Q.get('tel') || Q.get('phone') || ''),
 };
 
 /* ─────────────────────────────────────────────────────────────────────────

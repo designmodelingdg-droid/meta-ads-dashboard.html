@@ -120,10 +120,12 @@ const BASE='file://'+path.join(__dirname,'..')+'/';
      persona lo teclea y lo tecleado SUSTITUYE al del CRM. Se comprueba que el
      enlace lo lleve hasta el formulario, con los dos nombres de parametro. */
   const pasaTel = await p2.evaluate(() => {
-    const lee = q => { const U = new URLSearchParams(q); return {
-      id: U.get('cid') || '', nombre: U.get('nombre') || '',
-      email: U.get('email') || '', tel: U.get('tel') || U.get('phone') || '' }; };
-    return lee('?tel=0999').tel === '0999' && lee('?phone=0999').tel === '0999';
+    /* se llama a la funcion DE LA PAGINA, no a una copia: si el saneador
+       cambia, la prueba lo nota */
+    const local   = limpiaTel('0983241210') === '0983241210';
+    const roto    = limpiaTel(' 593983241210') === '593983241210';
+    const basura  = limpiaTel('') === '' && limpiaTel('abc') === '';
+    return local && roto && basura;
   });
   const mandaTel = /datos\.phone\s*=\s*CONTACTO\.tel/.test(appTxt);
   console.log('  el teléfono del enlace llega al formulario:',
