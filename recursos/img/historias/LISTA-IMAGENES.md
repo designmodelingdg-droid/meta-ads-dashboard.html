@@ -149,3 +149,43 @@ sigan pareciendo puertas—, así que se puntúa y se coge el mínimo.
 
 **Cero texto**, como pedía el encargo: el texto va con las herramientas de
 Instagram.
+
+## Manos sobre plano estructural · 10-sep-2026
+
+Es el fotograma 1 de la historia del **jueves 10 (RELLENO)**: manos con oficio
+sobre un plano impreso y el escalímetro al lado. Dos piezas 1080×1920.
+
+| Var. | Qué la diferencia | URL |
+|---|---|---|
+| A | **Cenital.** Plano azul de gran formato, escalímetro plano y la lámpara ámbar entrando por la derecha. Las dos manos apoyadas | https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/historias/manos-plano-A.jpg |
+| B | **Tres cuartos, más cercana.** Plano blanco con detalle de armadura, escalímetro triangular de verdad en la mano derecha | https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/historias/manos-plano-B.jpg |
+
+**Las manos están bien en las dos.** Contadas dedo a dedo: dos manos, cinco
+dedos cada una, sin dedos de más. En la A los dos pulgares se ven; en la B el de
+la mano izquierda queda escondido bajo la palma, que es como se sujeta un papel.
+
+**Ninguna salió llenando el cuadro.** Las dos vinieron con franjas pegadas
+arriba y abajo y costura visible —el mismo fallo de la serie de detrás de
+cámaras—, y esta vez pedir «no bands, no letterbox» en el prompt no bastó. Se
+arregló midiendo dónde acaba la foto de verdad, no a ojo:
+
+- En la **A** la foto real ocupaba solo las filas 796-1955 (el 42% del alto) y
+  además es apaisada: recortarla a 9:16 dejaba 652 px de ancho y cortaba las dos
+  manos. Se dejó como banda central sobre campo azul marino con los bordes
+  fundidos. Queda como si el escritorio siguiera; las franjas de Instagram son
+  **azul liso, desviación 0 arriba y 0 abajo**.
+- En la **B** la foto acaba en la fila 2148 y desde ahí había un rectángulo gris
+  plano. Prolongar el color de cada columna no servía: justo encima de la
+  costura hay papel blanco y salía una mancha clara donde en la escena solo hay
+  escritorio. Se sustituyó por la penumbra del escritorio (percentil 25 de las
+  últimas filas buenas) apagándose hacia el azul, repartido en 120 filas.
+  Franja superior desviación 10,1 / brillo 14,9; la inferior 14,6 / brillo 39,9
+  porque la esquina del papel todavía asoma, apagándose.
+
+Fuente del acabado en `fuentes/manos-plano-acabado.py`: se vuelve a ejecutar
+sobre los PNG originales y da lo mismo.
+
+**Cero texto legible en el plano**, como en el resto de la serie: los cajetines
+y las cotas son barras grises de marcador de posición. El único sitio con
+números de verdad es la regla graduada de la B, y a tamaño de historia no se
+leen.
