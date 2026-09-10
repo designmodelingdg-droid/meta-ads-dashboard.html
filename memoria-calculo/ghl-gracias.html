@@ -77,6 +77,10 @@
       📊 Descargar la hoja de verificaciones →
     </a>
 
+    <a class="btn-big sec" id="btnComunidad" href="#" target="_blank" rel="noopener" hidden>
+      👥 Entrar a la comunidad →
+    </a>
+
     <div class="guardalo">
       <b>Guarda esta página.</b> Es tu enlace de acceso. Si cambias de
       computadora, vuelve aquí y entra desde estos mismos botones.
@@ -125,7 +129,7 @@
 const URL_BASE      = 'https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/memoria-calculo/';
 const TOKEN_DEFECTO = 'dm2026';
 
-/* URL_MEMBRESIA — la via de PRODUCCION.
+/* URL_PRODUCTO — la via de PRODUCCION.
  *
  * Los lead magnets vivos de DMA no entregan el enlace directo: entregan un
  * producto de membresia en el portal (clientclub.net/courses/products/…),
@@ -138,7 +142,15 @@ const TOKEN_DEFECTO = 'dm2026';
  * vacio, los botones abren el acceso directo con token: preferimos que la
  * gente entre desde el primer dia a que espere a que el portal exista.
  * Prometimos acceso inmediato y eso se cumple en las dos vias.              */
-const URL_MEMBRESIA = '';   // ← pegar aquí la URL del producto de membresía
+/* Los dos destinos de esta página. Se pegan una vez, aquí.
+   URL_PRODUCTO   la lección de este recurso dentro de la comunidad.
+                  Si se deja vacía, el botón abre la guía en GitHub
+                  Pages, que es lo que hace hoy.
+   URL_COMUNIDAD  la comunidad gratuita. Si se deja vacía, el segundo
+                  botón no se muestra: mejor un botón menos que un
+                  botón que no lleva a ninguna parte. */
+const URL_PRODUCTO  = '';
+const URL_COMUNIDAD = '';
 
 (function(){
   const t = new URLSearchParams(location.search).get('acceso') || TOKEN_DEFECTO;
@@ -146,9 +158,15 @@ const URL_MEMBRESIA = '';   // ← pegar aquí la URL del producto de membresía
 
   const guia = document.getElementById('btnGuia');
 
-  if(URL_MEMBRESIA){
-    guia.href = URL_MEMBRESIA;
-    guia.textContent = '📄 Entrar al portal y leer la guía →';
+  const comunidad = document.getElementById('btnComunidad');
+  if(URL_COMUNIDAD){
+    comunidad.href = URL_COMUNIDAD;
+    comunidad.hidden = false;
+  }
+
+  if(URL_PRODUCTO){
+    guia.href = URL_PRODUCTO;
+    guia.textContent = '📄 Abrir el recurso →';
     const n = document.querySelector('.guardalo');
     if(n) n.innerHTML = '<b>Revisa tu correo.</b> El portal te manda tus datos ' +
       'de acceso. Con ellos entras cuando quieras, desde cualquier dispositivo.';

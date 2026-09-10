@@ -70,6 +70,20 @@ PAGINAS_POR_DEFECTO = [
     ("gracias-agenda.html", "ghl-gracias.html"),
 ]
 
+# Alto de reserva del marco de la lección, en píxeles. Es el alto REAL de cada
+# guía a 400 px de ancho —el peor caso, el del teléfono— más un 5%. Medido con
+# el navegador, esperando a que carguen imágenes y fuentes; medir a los 400 ms
+# se queda corto y el contenido sale cortado.
+#
+# Solo se usa si el editor de GHL borra el <script> que ajusta el alto solo.
+# Se prefiere que sobre hueco a que falte: un hueco en blanco es feo, contenido
+# cortado es una guía que no se puede leer.
+ALTO_LECCION = {
+    "guia-revit-ia":   17200,
+    "memoria-calculo": 13100,
+    "pack-dynamo":      7300,
+}
+
 
 def construir(carpeta: str, origen: str, destino: str) -> Path:
     raiz = Path(__file__).resolve().parent.parent
@@ -124,6 +138,49 @@ def construir(carpeta: str, origen: str, destino: str) -> Path:
     return dst
 
 
+def construir_leccion(carpeta: str) -> Path:
+    """El trozo que se pega en la lección del producto dentro de GHL.
+
+    La guía va en un <iframe> porque es una página entera con su CSS y su JS:
+    pegada en el editor de texto de la lección, GHL le borra el <style> y sale
+    desmaquetada. El <iframe> la sirve tal cual desde GitHub Pages.
+
+    El alto lo dice la propia guía por postMessage (ver el bloque «Modo
+    incrustado» en guia.html) y este trozo lo escucha. Si GHL borra este
+    <script>, queda el alto de reserva y no se corta nada.
+    """
+    raiz = Path(__file__).resolve().parent.parent
+    alto = ALTO_LECCION.get(carpeta)
+    if alto is None:
+        sys.exit(f"Falta el alto de reserva de {carpeta} en ALTO_LECCION")
+    guia = f"{BASE_PAGES}/{carpeta}/guia.html?acceso=dm2026"
+    dst = raiz / carpeta / "ghl-leccion.html"
+    dst.write_text(
+        "<!-- ============================================================\n"
+        f"     {carpeta} · para la LECCIÓN del producto en GoHighLevel\n"
+        "     GENERADO AUTOMÁTICAMENTE — no editar a mano.\n"
+        f"     Se regenera con: python3 scripts/build_ghl_landing.py {carpeta}\n"
+        "     Pegar con el botón <> (código fuente) de la descripción\n"
+        "     de la lección. No hace falta ningún botón: la guía se lee\n"
+        "     dentro de la lección.\n"
+        "     ============================================================ -->\n"
+        f'<iframe id="dma-guia" src="{guia}"\n'
+        f'        style="width:100%;height:{alto}px;border:0;display:block"\n'
+        '        loading="lazy" title="Guía"></iframe>\n'
+        "<script>\n"
+        "/* La guía avisa de cuánto mide y el marco se ajusta: sin esto queda\n"
+        "   una segunda barra de scroll dentro de la lección. Si GHL borra este\n"
+        f"   script, el marco se queda en {alto} px y se lee igual. */\n"
+        "addEventListener('message', function (e) {\n"
+        "  if (!e.data || e.data.dma !== 'alto') return;\n"
+        "  var f = document.getElementById('dma-guia');\n"
+        "  if (f) f.style.height = (e.data.alto + 40) + 'px';\n"
+        "});\n"
+        "</script>\n",
+        encoding="utf-8")
+    return dst
+
+
 if __name__ == "__main__":
     if len(sys.argv) != 2:
         sys.exit("Uso: python3 scripts/build_ghl_landing.py <carpeta>")
@@ -133,3 +190,6 @@ if __name__ == "__main__":
         salida_ = construir(carpeta_, origen_, destino_)
         kb = salida_.stat().st_size / 1024
         print(f"OK → {salida_}  ({kb:.0f} KB)")
+    if carpeta_ in ALTO_LECCION:
+        salida_ = construir_leccion(carpeta_)
+        print(f"OK → {salida_}  (lección)")
