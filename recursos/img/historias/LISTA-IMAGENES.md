@@ -189,3 +189,53 @@ sobre los PNG originales y da lo mismo.
 y las cotas son barras grises de marcador de posición. El único sitio con
 números de verdad es la regla graduada de la B, y a tamaño de historia no se
 leen.
+
+## Dos miradas sobre el mismo modelo · 10-sep-2026
+
+Mirada de detalle contra mirada de sistema: dos siluetas de perfil frente a un
+pórtico arriostrado; la de la izquierda mira una pieza suelta, la de la derecha
+el conjunto entero. 1080×1920, sin texto.
+
+| Qué es | URL |
+|---|---|
+| Dos siluetas frente al mismo modelo, una en el detalle y otra en el sistema | https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/historias/dos-miradas.jpg |
+
+**Dibujada, no generada.** El encargo tiene propiedades exactas —DOS siluetas,
+de perfil, una mirando UNA pieza y la otra el conjunto COMPLETO— y un generador
+las aproxima: cambia el número de figuras y no sabe dibujar la relación «ésta
+mira esto y aquélla mira aquello». Además quedaban 3,11 créditos en Higgsfield,
+que dan para una sola tirada. Fuente en `fuentes/dos-miradas.py`, que escribe
+`fuentes/dos-miradas.svg.html`; se vuelve a ejecutar y da lo mismo.
+
+**Lo que hace legible la idea no son las figuras, son los dos corchetes.** El de
+la izquierda encierra 14.600 px²; el de la derecha, 284.000. Esa razón —19,4
+veces— **es** el mensaje, y está medida, no estimada. Las líneas de mirada lo
+repiten: 170 px la de A, que tiene la pieza encima, y 688 px la de B, que barre
+los cuatro pisos.
+
+**Y una pieza suelta tiene que estar suelta de algo:** en el pórtico falta esa
+misma viga y en su hueco queda el fantasma en línea discontinua. Sin eso, la
+barra ámbar sería solo una barra flotando.
+
+**Tres cosas se cayeron por mirar el render, no los números:**
+
+- La primera cara salía con pico de pato: la nariz sobresalía 0,02 de altura de
+  cabeza sobre los labios y el labio hacía una muesca en V. Se rehízo el perfil
+  con el cráneo más corto (0,72 de la altura de la cabeza) y la barbilla casi
+  tan adelantada como la nariz.
+- El modelo de 2 vanos × 3 pisos parecía una estantería. Pasó a 3 vanos × 4
+  pisos con celdas más anchas que altas, arriostres en el vano derecho y vigas
+  de arranque.
+- El cono de mirada de dos aristas para B salía como una astilla —su cara queda
+  casi a la altura de la esquina de arriba, así que las dos líneas se
+  solapaban—. Una sola línea, rematada **en la esquina** del corchete y no en
+  mitad del lado, donde el trazo muere en el aire.
+
+**Las dos figuras no están rectas:** A se echa adelante y B atrás, con un
+cizallamiento que es cero en la planta del pie y máximo en la coronilla. Es la
+postura de quien se mete en un detalle frente a la de quien se separa para ver
+el conjunto.
+
+**Franjas de Instagram: desviación 0,1 arriba y 0,1 abajo**, brillo 35 en las
+dos. La retícula de plano se apaga antes de entrar en ellas. Todo lo importante
+vive entre y=590 e y=1344.
