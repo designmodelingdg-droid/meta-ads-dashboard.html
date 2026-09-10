@@ -281,3 +281,44 @@ verdad («detalle A»), así que remata la idea sin una sola letra.
 vive entre y=508 e y=1412, y el encuadre se centra sobre estructura **más**
 círculo —si no, el círculo cuelga fuera por la izquierda y el conjunto queda
 descentrado—: 184 px de margen a cada lado.
+
+## Perfil de acero tipo I · 10-sep-2026
+
+Perfil laminado en primer plano con profundidad de campo e iluminación de
+estudio, sobre azul marino con retícula técnica tenue. Dos acabados de la misma
+toma, 1080×1920.
+
+| Var. | Qué la diferencia | URL |
+|---|---|---|
+| A | **La toma tal cual.** El perfil entra por la esquina superior izquierda y cruza todo el cuadro | https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/historias/perfil-acero-A.jpg |
+| B | **La de usar.** El ala desenfocada se apaga hacia el azul antes de la franja de Instagram | https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/historias/perfil-acero-B.jpg |
+
+**Ésta sí se genera, al revés que las tres anteriores.** El encargo pide
+profundidad de campo e iluminación de estudio: son propiedades de una foto, y
+dibujarla en vector habría ignorado dos de las cuatro cosas que pedía.
+
+**Una sola oportunidad.** Quedaban 3,11 créditos en Higgsfield y cada tirada
+cuesta 2, así que el prompt cargaba de una vez las dos trampas ya conocidas de
+la serie: «fills the entire frame edge to edge, no bands, no letterbox» y «no
+text, no numbers, no labels». Las dos funcionaron a la primera —el mayor salto
+entre filas contiguas es **1,9**, o sea que no hay franjas pegadas, y no hay una
+palabra legible—. En la retícula del fondo quedan cuatro marcas diminutas que
+imitan cotas; son ilegibles a tamaño de historia.
+
+**Lo que no salió bien es el encuadre.** El acero ocupa del 4% al 75% del alto,
+así que la franja superior queda tomada por el ala desenfocada: **desviación 80
+y brillo 80**, la peor de toda la serie. La inferior, en cambio, sale impecable
+(desviación 6,4, brillo 24).
+
+**Y no se arregla recortando:** la foto ya viene casi en 9:16 (0,558 frente a
+0,5625), no sobra alto por ningún lado, y cualquier recorte que conserve la
+testa enfocada vuelve a dejar el acero pegado arriba.
+
+La **B** apaga el ala hacia el azul con un fundido suavizado (3t²−2t³, porque
+con una rampa recta se ve el canto) que **termina justo donde empieza la parte
+enfocada**, así que no toca el sujeto. No es un parche: es la caída de luz que
+tendría un plató con una sola fuente. Franja superior **desviación 0,0**, brillo
+35,7 —el mismo azul de la casa que las piezas dibujadas—.
+
+Acabado en `fuentes/perfil-acero-acabado.py`; se vuelve a ejecutar sobre el PNG
+original y da lo mismo.
