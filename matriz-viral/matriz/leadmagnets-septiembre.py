@@ -269,11 +269,11 @@ MAGNETS = [
                 "puedes correr hoy en un archivo vivo sin arriesgar nada.\n\nEs gratis. Comenta "
                 "DYNAMO y te llega.\n\n¿Cuál de las cinco te quitaría más tiempo de encima?",
         cta="Comenta DYNAMO",
-        prompt="Cinco imágenes de 1080x1080 px (1:1) de la misma familia, para carrusel. Fondo azul "
+        prompt="Seis imágenes de 1080x1080 px (1:1) de la misma familia, para carrusel. Fondo azul "
                "marino #0E2438. Un grafo de nodos tipo Dynamo dibujado en línea fina ámbar #E8A04A "
                "— cajas conectadas por cables curvos — que en la primera tarjeta aparece enredado y "
                "en las siguientes se va ordenando hasta quedar en una sola línea limpia. Misma "
-               "escala y mismo encuadre en las cinco. Sin texto legible dentro de los nodos." + ESTILO),
+               "escala y mismo encuadre en las seis. Sin texto legible dentro de los nodos." + ESTILO),
   ]),
   dict(
     id="lm-memoria-calculo",
