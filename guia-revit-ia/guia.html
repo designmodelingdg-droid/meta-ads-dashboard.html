@@ -506,44 +506,5 @@ document.querySelectorAll('.copiar').forEach(function(b){
   });
 });
 </script>
-<script>
-/* ── Modo incrustado ──────────────────────────────────────────────────────
-   Cuando esta guía vive dentro de una lección de GoHighLevel va en un
-   <iframe>, y un iframe no sabe cuánto mide lo que lleva dentro: se queda con
-   el alto que le pusieron y aparece una segunda barra de scroll. En teléfono
-   esa doble barra es justo lo que hace que la gente abandone la lección.
-
-   Aquí la página le dice al marco cuánto mide, y el marco se ajusta. Solo
-   viaja un número; no se manda nada más, por eso el destino puede ser «*». */
-(function(){
-  if (window.self === window.top) return;      /* no está dentro de un marco */
-  var ultimo = 0, pendiente = 0;
-  function mide(){
-    /* Se mide el BODY, no documentElement: scrollHeight del documento nunca
-       baja del alto de la ventana, y dentro de un marco la ventana ES el
-       marco. Al agrandarlo, scrollHeight devolvia el alto del marco y el
-       ajuste se quedaba trabado en lo alto que hubiera llegado - medido:
-       12.457 px de contenido reportados como 15.617. */
-    var caja = document.body.getBoundingClientRect();
-    var css  = getComputedStyle(document.body);
-    return Math.ceil(caja.height + parseFloat(css.marginTop) + parseFloat(css.marginBottom));
-  }
-  function avisa(){
-    var alto = mide();
-    if (Math.abs(alto - ultimo) < 24) return;  /* ruido de reflujo */
-    ultimo = alto;
-    parent.postMessage({ dma: 'alto', alto: alto }, '*');
-  }
-  function pide(){                             /* un aviso por cuadro, no 80 */
-    if (pendiente) return;
-    pendiente = requestAnimationFrame(function(){ pendiente = 0; avisa(); });
-  }
-  addEventListener('load', pide);
-  addEventListener('resize', pide);
-  if (window.ResizeObserver) new ResizeObserver(pide).observe(document.body);
-  /* Las imagenes y las fuentes web cambian el alto al terminar de cargar. */
-  setTimeout(avisa, 400); setTimeout(avisa, 1500); setTimeout(avisa, 3500);
-})();
-</script>
 </body>
 </html>
