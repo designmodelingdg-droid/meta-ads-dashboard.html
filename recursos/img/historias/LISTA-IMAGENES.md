@@ -149,3 +149,176 @@ sigan pareciendo puertas—, así que se puntúa y se coge el mínimo.
 
 **Cero texto**, como pedía el encargo: el texto va con las herramientas de
 Instagram.
+
+## Manos sobre plano estructural · 10-sep-2026
+
+Es el fotograma 1 de la historia del **jueves 10 (RELLENO)**: manos con oficio
+sobre un plano impreso y el escalímetro al lado. Dos piezas 1080×1920.
+
+| Var. | Qué la diferencia | URL |
+|---|---|---|
+| A | **Cenital.** Plano azul de gran formato, escalímetro plano y la lámpara ámbar entrando por la derecha. Las dos manos apoyadas | https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/historias/manos-plano-A.jpg |
+| B | **Tres cuartos, más cercana.** Plano blanco con detalle de armadura, escalímetro triangular de verdad en la mano derecha | https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/historias/manos-plano-B.jpg |
+
+**Las manos están bien en las dos.** Contadas dedo a dedo: dos manos, cinco
+dedos cada una, sin dedos de más. En la A los dos pulgares se ven; en la B el de
+la mano izquierda queda escondido bajo la palma, que es como se sujeta un papel.
+
+**Ninguna salió llenando el cuadro.** Las dos vinieron con franjas pegadas
+arriba y abajo y costura visible —el mismo fallo de la serie de detrás de
+cámaras—, y esta vez pedir «no bands, no letterbox» en el prompt no bastó. Se
+arregló midiendo dónde acaba la foto de verdad, no a ojo:
+
+- En la **A** la foto real ocupaba solo las filas 796-1955 (el 42% del alto) y
+  además es apaisada: recortarla a 9:16 dejaba 652 px de ancho y cortaba las dos
+  manos. Se dejó como banda central sobre campo azul marino con los bordes
+  fundidos. Queda como si el escritorio siguiera; las franjas de Instagram son
+  **azul liso, desviación 0 arriba y 0 abajo**.
+- En la **B** la foto acaba en la fila 2148 y desde ahí había un rectángulo gris
+  plano. Prolongar el color de cada columna no servía: justo encima de la
+  costura hay papel blanco y salía una mancha clara donde en la escena solo hay
+  escritorio. Se sustituyó por la penumbra del escritorio (percentil 25 de las
+  últimas filas buenas) apagándose hacia el azul, repartido en 120 filas.
+  Franja superior desviación 10,1 / brillo 14,9; la inferior 14,6 / brillo 39,9
+  porque la esquina del papel todavía asoma, apagándose.
+
+Fuente del acabado en `fuentes/manos-plano-acabado.py`: se vuelve a ejecutar
+sobre los PNG originales y da lo mismo.
+
+**Cero texto legible en el plano**, como en el resto de la serie: los cajetines
+y las cotas son barras grises de marcador de posición. El único sitio con
+números de verdad es la regla graduada de la B, y a tamaño de historia no se
+leen.
+
+## Dos miradas sobre el mismo modelo · 10-sep-2026
+
+Mirada de detalle contra mirada de sistema: dos siluetas de perfil frente a un
+pórtico arriostrado; la de la izquierda mira una pieza suelta, la de la derecha
+el conjunto entero. 1080×1920, sin texto.
+
+| Qué es | URL |
+|---|---|
+| Dos siluetas frente al mismo modelo, una en el detalle y otra en el sistema | https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/historias/dos-miradas.jpg |
+
+**Dibujada, no generada.** El encargo tiene propiedades exactas —DOS siluetas,
+de perfil, una mirando UNA pieza y la otra el conjunto COMPLETO— y un generador
+las aproxima: cambia el número de figuras y no sabe dibujar la relación «ésta
+mira esto y aquélla mira aquello». Además quedaban 3,11 créditos en Higgsfield,
+que dan para una sola tirada. Fuente en `fuentes/dos-miradas.py`, que escribe
+`fuentes/dos-miradas.svg.html`; se vuelve a ejecutar y da lo mismo.
+
+**Lo que hace legible la idea no son las figuras, son los dos corchetes.** El de
+la izquierda encierra 14.600 px²; el de la derecha, 284.000. Esa razón —19,4
+veces— **es** el mensaje, y está medida, no estimada. Las líneas de mirada lo
+repiten: 170 px la de A, que tiene la pieza encima, y 688 px la de B, que barre
+los cuatro pisos.
+
+**Y una pieza suelta tiene que estar suelta de algo:** en el pórtico falta esa
+misma viga y en su hueco queda el fantasma en línea discontinua. Sin eso, la
+barra ámbar sería solo una barra flotando.
+
+**Tres cosas se cayeron por mirar el render, no los números:**
+
+- La primera cara salía con pico de pato: la nariz sobresalía 0,02 de altura de
+  cabeza sobre los labios y el labio hacía una muesca en V. Se rehízo el perfil
+  con el cráneo más corto (0,72 de la altura de la cabeza) y la barbilla casi
+  tan adelantada como la nariz.
+- El modelo de 2 vanos × 3 pisos parecía una estantería. Pasó a 3 vanos × 4
+  pisos con celdas más anchas que altas, arriostres en el vano derecho y vigas
+  de arranque.
+- El cono de mirada de dos aristas para B salía como una astilla —su cara queda
+  casi a la altura de la esquina de arriba, así que las dos líneas se
+  solapaban—. Una sola línea, rematada **en la esquina** del corchete y no en
+  mitad del lado, donde el trazo muere en el aire.
+
+**Las dos figuras no están rectas:** A se echa adelante y B atrás, con un
+cizallamiento que es cero en la planta del pie y máximo en la coronilla. Es la
+postura de quien se mete en un detalle frente a la de quien se separa para ver
+el conjunto.
+
+**Franjas de Instagram: desviación 0,1 arriba y 0,1 abajo**, brillo 35 en las
+dos. La retícula de plano se apaga antes de entrar en ellas. Todo lo importante
+vive entre y=590 e y=1344.
+
+## Nudo destacado en la estructura · 10-sep-2026
+
+Estructura metálica en isométrico, tres plantas y un vano arriostrado, con
+**una** conexión destacada en ámbar y el resto en blanco tenue. 1080×1920, sin
+texto.
+
+| Qué es | URL |
+|---|---|
+| Pórtico metálico en isométrico con un nudo viga-pilar en círculo de detalle | https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/historias/nudo-isometrico.jpg |
+
+**Dibujada, no generada,** por lo de siempre: «isométrico» y «una de sus
+conexiones» son propiedades exactas. Un generador entrega una perspectiva
+cualquiera y reparte el ámbar por donde le parece. Aquí la proyección es
+isométrica de verdad —ejes horizontales a 30°, sin punto de fuga— y el ámbar
+cae en un nudo concreto. Fuente en `fuentes/nudo-isometrico.py`.
+
+**Cómo se resuelve «una destacada y el resto tenue»:** la estructura se dibuja
+dos veces. Una entera en blanco tenue, y otra en ámbar con **solo las cuatro
+barras que llegan al nudo** —dos tramos de pilar y dos vigas—, recortada a un
+círculo de detalle. Dentro del círculo, y solo ahí, aparecen la chapa de testa
+y los tornillos: eso es lo que hace que se lea como una conexión y no como un
+cruce de líneas. El círculo de detalle es además la convención de un plano de
+verdad («detalle A»), así que remata la idea sin una sola letra.
+
+**Dos cosas se cayeron mirando el render:**
+
+- La primera versión recortaba la estructura **entera** al círculo, sin filtrar
+  por nudo, y salió un rosetón: en isométrico media docena de barras de otras
+  alineaciones cruzan ese mismo punto de la pantalla. Por lo mismo el nudo no
+  está en el eje central sino en la arista izquierda de la silueta, donde el
+  nudo vecino más cercano queda a 140 px y el círculo mide 105 de radio.
+- **Trampa de la isométrica:** si la altura de planta iguala al vano, la
+  diagonal del arriostre cae exactamente a 30°, o sea paralela a las vigas de
+  los vanos vecinos, y el conjunto deja de parecer una estructura para parecer
+  un cristal hexagonal. Con altura = 1,32 × vano la diagonal sale a 43,5° y la
+  retícula se rompe.
+
+**Franjas de Instagram: desviación 0,1 arriba y 0,1 abajo.** Todo lo importante
+vive entre y=508 e y=1412, y el encuadre se centra sobre estructura **más**
+círculo —si no, el círculo cuelga fuera por la izquierda y el conjunto queda
+descentrado—: 184 px de margen a cada lado.
+
+## Perfil de acero tipo I · 10-sep-2026
+
+Perfil laminado en primer plano con profundidad de campo e iluminación de
+estudio, sobre azul marino con retícula técnica tenue. Dos acabados de la misma
+toma, 1080×1920.
+
+| Var. | Qué la diferencia | URL |
+|---|---|---|
+| A | **La toma tal cual.** El perfil entra por la esquina superior izquierda y cruza todo el cuadro | https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/historias/perfil-acero-A.jpg |
+| B | **La de usar.** El ala desenfocada se apaga hacia el azul antes de la franja de Instagram | https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/historias/perfil-acero-B.jpg |
+
+**Ésta sí se genera, al revés que las tres anteriores.** El encargo pide
+profundidad de campo e iluminación de estudio: son propiedades de una foto, y
+dibujarla en vector habría ignorado dos de las cuatro cosas que pedía.
+
+**Una sola oportunidad.** Quedaban 3,11 créditos en Higgsfield y cada tirada
+cuesta 2, así que el prompt cargaba de una vez las dos trampas ya conocidas de
+la serie: «fills the entire frame edge to edge, no bands, no letterbox» y «no
+text, no numbers, no labels». Las dos funcionaron a la primera —el mayor salto
+entre filas contiguas es **1,9**, o sea que no hay franjas pegadas, y no hay una
+palabra legible—. En la retícula del fondo quedan cuatro marcas diminutas que
+imitan cotas; son ilegibles a tamaño de historia.
+
+**Lo que no salió bien es el encuadre.** El acero ocupa del 4% al 75% del alto,
+así que la franja superior queda tomada por el ala desenfocada: **desviación 80
+y brillo 80**, la peor de toda la serie. La inferior, en cambio, sale impecable
+(desviación 6,4, brillo 24).
+
+**Y no se arregla recortando:** la foto ya viene casi en 9:16 (0,558 frente a
+0,5625), no sobra alto por ningún lado, y cualquier recorte que conserve la
+testa enfocada vuelve a dejar el acero pegado arriba.
+
+La **B** apaga el ala hacia el azul con un fundido suavizado (3t²−2t³, porque
+con una rampa recta se ve el canto) que **termina justo donde empieza la parte
+enfocada**, así que no toca el sujeto. No es un parche: es la caída de luz que
+tendría un plató con una sola fuente. Franja superior **desviación 0,0**, brillo
+35,7 —el mismo azul de la casa que las piezas dibujadas—.
+
+Acabado en `fuentes/perfil-acero-acabado.py`; se vuelve a ejecutar sobre el PNG
+original y da lo mismo.
