@@ -62,7 +62,7 @@ ESTILO = ("Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos am
 # existen o imagenes que ya estan generadas en el banco.
 GRABACION = {
   "nota": "6 bloques de cámara y 5 grabaciones de pantalla, para 16 jornadas. Sin "
-          "esto, la mitad de las historias no se pueden publicar tal como estan "
+          "esto, la mitad de las historias no se pueden publicar tal como están "
           "escritas.",
   "camara": [
     "Gabriel caminando por la obra de la casa con el plano en la mano — 20 s, sin hablar.",
@@ -172,7 +172,7 @@ SEMANAS = [
 
  {"n": 2, "rango": "Lun 14 – Vie 18 de septiembre",
   "hilo": "Dos modelos, la misma losa",
-  "porque": "El caso real de Gabriel: una vivienda de dos pisos de hormigon armado con estructuras, "
+  "porque": "El caso real de Gabriel: una vivienda de dos pisos de hormigón armado con estructuras, "
             "arquitectura e instalaciones. Tres disciplinas en un proyecto pequeño es justo donde se "
             "ven los cruces, y es el tamaño de proyecto que la audiencia reconoce como suyo. El lunes "
             "se promete una cifra y el jueves se paga: ese es el bucle.",
@@ -302,7 +302,7 @@ SEMANAS = [
      {"rol": "CIERRE", "texto": "Mañana lo hago delante de ustedes en [40] segundos.",
       "sticker": "CUENTA REGRESIVA al martes.",
       "fondo": "GENERADA",
-      "prompt": "Reloj de arena tecnico sobre fondo azul marino, con la arena cayendo en ámbar. " + ESTILO}]},
+      "prompt": "Reloj de arena técnico sobre fondo azul marino, con la arena cayendo en ámbar. " + ESTILO}]},
 
    {"dia": "Martes 22", "titulo": "40 segundos, sin tocar el teclado",
     "papel": "LA PRUEBA · lanzamiento del Pack de Dynamo",
@@ -322,7 +322,7 @@ SEMANAS = [
      {"rol": "RECURSO", "texto": "Responde DYNAMO y te los mando.",
       "sticker": "RESPONDER CON PALABRA: «DYNAMO».",
       "fondo": "GENERADA",
-      "prompt": "Cinco piezas metalicas identicas alineandose solas sobre una retícula azul, la ultima encajando en ámbar. " + ESTILO}]},
+      "prompt": "Cinco piezas metálicas idénticas alineándose solas sobre una retícula azul, la última encajando en ámbar. " + ESTILO}]},
 
    {"dia": "Miércoles 23", "titulo": "«Eso es para programadores»",
     "papel": "LA OBJECIÓN",
@@ -342,7 +342,7 @@ SEMANAS = [
      {"rol": "RECURSO", "texto": "Si marcaste «me perdí»: el pack trae la guía de instalación. Responde DYNAMO.",
       "sticker": "RESPONDER CON PALABRA: «DYNAMO».",
       "fondo": "REAL · pantalla",
-      "prompt": "La primera pagina de la guía de instalación en pantalla."}]},
+      "prompt": "La primera página de la guía de instalación en pantalla."}]},
 
    {"dia": "Jueves 24", "titulo": "VENTA · El espejo: las cuatro puertas",
     "papel": "EL PAGO DEL BUCLE",
@@ -350,7 +350,7 @@ SEMANAS = [
      {"rol": "RELLENO", "texto": "Los que automatizan no son más inteligentes. Van un nivel más arriba.",
       "sticker": "Ninguno.",
       "fondo": "GENERADA",
-      "prompt": "Cuatro puertas alineadas en perspectiva sobre suelo de retícula azul; la cuarta esta iluminada en ámbar. " + ESTILO},
+      "prompt": "Cuatro puertas alineadas en perspectiva sobre suelo de retícula azul; la cuarta está iluminada en ámbar. " + ESTILO},
      {"rol": "VALOR", "texto": "Modelador. Coordinador. BIM Manager. Especialista BIM + IA.",
       "sticker": "Ninguno.",
       "fondo": "GENERADA",
@@ -379,7 +379,7 @@ SEMANAS = [
       "sticker": "ENCUESTA: «Siempre» / «Casi nunca».",
       "fondo": "REAL · cámara",
       "prompt": "Gabriel negando con la cabeza, plano corto."},
-     {"rol": "CIERRE", "texto": "El lunes arranco con una memoria devuelta. La de esta misma casa.",
+     {"rol": "CIERRE", "texto": "El lunes arrancó con una memoria devuelta. La de esta misma casa.",
       "sticker": "CUENTA REGRESIVA al lunes.",
       "fondo": "REAL · cámara",
       "prompt": "La memoria impresa cerrandose sobre la mesa."}]},
@@ -389,7 +389,7 @@ SEMANAS = [
   "hilo": "La memoria que me devolvieron",
   "porque": "Cierra el mes con el documento, no con el modelo: es lo que separa a quien calcula de "
             "quien entrega. El jueves entra el tutor de IA, ya montado en los cuatro cursos de la "
-            "especializacion desde el 11 de septiembre.",
+            "especialización desde el 11 de septiembre.",
   "dias": [
    {"dia": "Lunes 28", "titulo": "«Esta bien calculado, pero no lo puedo aprobar»",
     "papel": "ABRE EL BUCLE",

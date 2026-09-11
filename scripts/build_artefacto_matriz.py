@@ -302,7 +302,7 @@ def tab_historias():
          'obra, la memoria impresa), <b>REAL · pantalla</b> (Revit, el correo del revisor, el tutor) '
          'y <b>GENERADA</b> solo para lo que no se puede fotografiar. El mensaje principal de la '
          'semana nunca va sobre una imagen generada: va sobre material real, que es lo que lo hace '
-         'creíble. Los números entre ⟦⟧ los confirma Gabriel antes de grabar.</p>']
+         'creíble. Los números entre [ ] los confirma Gabriel antes de grabar.</p>']
     o.append('<ul class="reglas">' + "".join(f'<li>{e(r)}</li>' for r in g["reglas"]) + '</ul>')
     o.append(bloque_grabacion())
     o.append(filtro_semanas("g5") + barra_avance())
@@ -317,7 +317,7 @@ def tab_historias():
                      f'<h4 class="cab">{chk(k)}{e(d["dia"])} · <span>{e(d["titulo"])}</span>{papel}</h4>')
             for i, hh in enumerate(d["historias"], 1):
                 fondo = hh.get("fondo", "")
-                chip = (f'<span class="fondo f-{"gen" if fondo.startswith("GEN") else ("cam" if "camara" in fondo else "pan")}">'
+                chip = (f'<span class="fondo f-{"gen" if fondo.startswith("GEN") else ("cam" if "cámara" in fondo else "pan")}">'
                         f'{e(fondo)}</span>') if fondo else ""
                 o.append(f'<div class="hist"><div class="hist-cab"><span class="frame">{i}</span>'
                          f'<span class="rol rol-{hh["rol"][:4].lower()}">{e(hh["rol"])}</span>{chip}</div>')
@@ -774,7 +774,7 @@ ol.slides li{font-size:14px;margin-bottom:9px}
 .rango{font-family:var(--mono);font-size:12px;color:var(--ink-2)}
 .dia{margin:18px 0;padding:14px 16px;background:var(--surface);border:1px solid var(--line);border-radius:9px}
 .dia h4{font-family:var(--display);font-weight:800;font-size:15.5px;margin:0 0 10px;
-  color:var(--amber-deep)}
+  color:var(--amber-deep);display:flex;align-items:baseline;gap:7px;flex-wrap:wrap}
 .dia h4 span{color:var(--ink);font-weight:700}
 .hist{border-top:1px solid var(--line);padding:12px 0 4px}
 .hist:first-of-type{border-top:0;padding-top:0}
