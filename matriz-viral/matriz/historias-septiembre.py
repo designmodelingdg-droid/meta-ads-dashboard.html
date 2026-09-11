@@ -115,8 +115,8 @@ SEMANAS = [
      {"rol": "INTERACCIÓN", "texto": "¿Cuánto tiempo pierdes al mes buscando soluciones a errores del software?",
       "sticker": "QUIZ de 3 opciones: «menos de 2 h» / «2 a 5 h» / «más de 5 h». Los que marquen más de 5 reciben DM.",
       "prompt": "Reloj de arena estilizado sobre fondo azul marino, con la arena cayendo convertida en pequeños iconos de engranaje y código. Minimalista, línea fina. " + ESTILO},
-     {"rol": "VENTA", "texto": "Mañana te muestro exactamente cómo se lo pregunté. Si no quieres esperar, respóndeme GUÍA.",
-      "sticker": "RESPONDER CON PALABRA: «GUÍA». ⚠ Solo si el recurso ya existe; si no, cambiar a «GPT».",
+     {"rol": "VENTA", "texto": "Mañana te muestro exactamente cómo se lo pregunté. Si no quieres esperar, respóndeme CHATGPT.",
+      "sticker": "RESPONDER CON PALABRA: «CHATGPT».",
       "prompt": "Burbuja de chat de IA sobre fondo azul, con una respuesta técnica esquematizada en líneas (sin texto real), y un pequeño ícono de Revit-like en la esquina. " + ESTILO}]},
 
    {"dia": "Miércoles 9", "titulo": "El reel del día: Revit + ChatGPT",
@@ -130,8 +130,8 @@ SEMANAS = [
      {"rol": "INTERACCIÓN", "texto": "¿Le pides ayuda a la IA en tus proyectos?",
       "sticker": "ENCUESTA: «Todos los días» / «No me fío». A los que no se fían se les contesta con el criterio de validación.",
       "prompt": "Balanza de dos platos sobre fondo azul: en un plato un chip/circuito, en el otro un casco de ingeniero. Equilibrada. Línea fina, elegante. " + ESTILO},
-     {"rol": "VENTA", "texto": "Ojo: la IA acelera, el criterio es tuyo. Eso es justo lo que enseñamos en el módulo BIM + IA. Respóndeme RUTA y te digo si es el tuyo.",
-      "sticker": "RESPONDER CON PALABRA: «RUTA». ⚠ Requiere el disparador montado.",
+     {"rol": "VENTA", "texto": "Ojo: la IA acelera, el criterio es tuyo. Eso es justo lo que enseñamos en el módulo BIM + IA. Respóndeme NIVEL y el test te dice si ese módulo es el tuyo.",
+      "sticker": "RESPONDER CON PALABRA: «NIVEL».",
       "prompt": "Cuatro puertas alineadas en perspectiva sobre suelo de retícula azul; la cuarta está iluminada en ámbar. Estilo arquitectónico limpio. " + ESTILO}]},
 
    {"dia": "Jueves 10", "titulo": "VENTA · Cupos de ACERO",

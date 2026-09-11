@@ -39,7 +39,7 @@ PASOS_GHL = [
      "prémium y cobra por cada envío. Al terminar, redirección automática a la página 2."),
     ("4. Etiquetas desde el primer segundo",
      "Cada contacto entra con dos etiquetas: una de tema (lead-revit-ia, lead-dynamo, "
-     "lead-memoria-calculo) y una de origen (origen-bot-GUIA, origen-form, origen-comunidad). Sin "
+     "lead-memoria-calculo) y una de origen (origen-bot-CHATGPT, origen-form, origen-comunidad). Sin "
      "la etiqueta de origen, a fin de mes no se puede decir qué recurso trajo a quién, y la "
      "pregunta de si el lead magnet sirvió se queda sin respuesta."),
     ("5. Bot de palabra clave en Instagram y Facebook — DOS ramas separadas",
@@ -89,10 +89,10 @@ MAGNETS = [
   dict(
     id="lm-revit-chatgpt",
     nombre="Guía «Revit + ChatGPT: resuelve errores con IA»",
-    palabra="GUIA",
+    palabra="CHATGPT",
     formato="PDF de 10-12 páginas",
     estado="POR CREAR — se necesita VIVO el lunes 8",
-    cuando="Semana 1. CORREGIDO 9-sep: antes decía que el reel del miércoles 9 ya lo prometía — eso era del reparto viejo. El del Mié 9 es reel-deriva y pide MEMORIA. GUIA la piden el Mié 16 y el Mié 30, y el propio reel de lanzamiento del Mar 8.",
+    cuando="Semana 1. CORREGIDO 9-sep: antes decía que el reel del miércoles 9 ya lo prometía — eso era del reparto viejo. El del Mié 9 es reel-deriva y pide MEMORIA. CHATGPT la piden el Mié 16 y el Mié 30, y el propio reel de lanzamiento del Mar 8.",
     promesa="Los 10 errores de Revit que más tiempo hacen perder, y el prompt exacto que los "
             "resuelve — con la advertencia de cuándo NO hacerle caso a la respuesta.",
     para_quien="Quien ya usa Revit todos los días y pierde tardes enteras buscando en foros.",
@@ -115,12 +115,12 @@ MAGNETS = [
         "promete, la guía deja de valer y de paso nos deja mal.",
         "Disclaimer educativo en la última página, igual que en la Calculadora de Zapatas.",
     ],
-    ghl=[("Palabra clave", "GUIA"),
-         ("Etiquetas", "lead-revit-ia · origen-bot-GUIA"),
+    ghl=[("Palabra clave", "CHATGPT"),
+         ("Etiquetas", "lead-revit-ia · origen-bot-CHATGPT"),
          ("Pregunta de perfil", "¿Qué usas hoy para resolver un error de Revit?"),
          ("Entrega", "Botón de descarga en la página de gracias."),
          ("Puente", "Correo 3 lleva al módulo BIM + IA — sin precio, con «agenda una cita»."),
-         ("Reemplazo si no llega", "El CTA cambia a GPT IA Pro, que ya existe y está montado.")],
+         ("Reemplazo si no llega", "El CTA cambia a MEMORIA, que está activa. GPT IA Pro sigue existiendo pero ya no tiene palabra: en blog va con enlace directo.")],
     posts=[dict(
         fecha="Mar 8", formato="REEL (grabar) — EXTRA de lanzamiento", red="Instagram + Facebook + TikTok",
         guion_en="reels-septiembre.py → REELS_LEADMAGNET → pauta-guia, con el CTA cambiado a "
@@ -130,9 +130,9 @@ MAGNETS = [
                 "propio mensaje: dice una cosa y el problema es otra.\n\nJunté los 10 que más "
                 "tiempo hacen perder, con el prompt exacto para cada uno. Y una página que importa "
                 "más que las otras diez: cómo verificar la respuesta antes de meterla en un modelo "
-                "que vas a firmar.\n\nEs gratis. Comenta GUIA y te llega.\n\n¿Cuál es el error de "
+                "que vas a firmar.\n\nEs gratis. Comenta CHATGPT y te llega.\n\n¿Cuál es el error de "
                 "Revit que más veces te ha tocado buscar?",
-        cta="Comenta GUIA",
+        cta="Comenta CHATGPT",
         prompt="Imagen 1080x1350 px (4:5) para la portada del reel. Fondo azul marino #0E2438. Un "
                "cuadro de diálogo de error de software, dibujado en línea fina ámbar #E8A04A, "
                "flotando en el centro, con el texto ilegible a propósito — solo se lee la forma de "
@@ -163,7 +163,7 @@ MAGNETS = [
          "6 · «The linked file could not be found». El vínculo apunta a una ruta que ya no "
          "existe. Alguien movió, renombró o guardó en otra carpeta.",
          "7 · Los diez, cada uno con su prompt. Y la página que importa más que las otras diez: "
-         "cómo comprobar la respuesta antes de aplicarla. COMENTA GUIA."],
+         "cómo comprobar la respuesta antes de aplicarla. COMENTA CHATGPT."],
         caption="El error que te frena la tarde casi siempre está mal explicado por el propio "
                 "mensaje: dice una cosa y el problema es otra.\n\n"
                 "Los dos peores no dan ningún aviso. Dos muros superpuestos hacen que el cuadro "
@@ -171,9 +171,9 @@ MAGNETS = [
                 "de cantidades cuente el doble. Los planos, mientras tanto, se ven perfectos.\n\n"
                 "Junté los 10 que más tiempo hacen perder, con el prompt exacto para cada uno y "
                 "cómo verificar la respuesta antes de meterla en un modelo que vas a firmar.\n\n"
-                "Es gratis. Comenta GUIA y te llega.\n\n"
+                "Es gratis. Comenta CHATGPT y te llega.\n\n"
                 "¿Cuál de los cinco te ha tocado más veces?",
-        cta="Comenta GUIA",
+        cta="Comenta CHATGPT",
         prompt="Siete imágenes de 1080x1080 px (1:1) de la misma familia, para carrusel. Fondo "
                "azul marino #0E2438. En cada una, un cuadro de diálogo de software dibujado en "
                "línea fina ámbar #E8A04A, siempre en la misma posición y a la misma escala, con "

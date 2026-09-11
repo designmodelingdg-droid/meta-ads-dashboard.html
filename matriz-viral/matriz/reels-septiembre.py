@@ -54,7 +54,7 @@ REELS = [
  {"id": "reel-duplicados", "fecha": "Miércoles 16", "titulo": "Tus planos están bien. Tu presupuesto está mal.",
   "estado": "POR GRABAR",
   "duracion": "35-40 s",
-  "cta": "GUIA → Revit + ChatGPT (recurso ya publicado)",
+  "cta": "CHATGPT → Revit + ChatGPT (recurso ya publicado)",
   "nota": "El error invisible. Es el ángulo más fuerte de los cinco porque no da ningún "
           "mensaje en Revit: los planos salen perfectos y el cuadro cuenta el doble. "
           "Se descubre al presupuestar, que es cuando ya se cotizó.",
@@ -63,7 +63,7 @@ REELS = [
    ("0:04-0:12", "Screen-record: dos elementos idénticos superpuestos, seleccionando uno y viendo que hay otro debajo.", "Son elementos duplicados exactamente en el mismo sitio. Un Ctrl+V de más, o pegar dos veces con Paste Aligned. Encima uno del otro, invisibles.", "DUPLICADOS EN EL **MISMO SITIO**"),
    ("0:12-0:20", "Pantalla: cuadro de cantidades, número resaltado.", "En los planos no se nota, porque uno tapa al otro. En el cuadro de cantidades sí: cuenta dos.", "EN EL CUADRO **CUENTA DOS**"),
    ("0:20-0:30", "Vuelve a cámara.", "Y esto no se descubre revisando. Se descubre cuando alguien presupuesta con ese número, que es cuando ya lo mandaste.", "SE DESCUBRE AL **PRESUPUESTAR**"),
-   ("0:30-0:38", "Cierre.", "La comprobación es una sola: apunta la cantidad antes de borrar. Si después no bajó en el número exacto que borraste, pasó algo más. Comenta GUIA y te paso los diez errores de Revit que más tiempo te quitan.", "COMENTA **GUIA**")]},
+   ("0:30-0:38", "Cierre.", "La comprobación es una sola: apunta la cantidad antes de borrar. Si después no bajó en el número exacto que borraste, pasó algo más. Comenta CHATGPT y te paso los diez errores de Revit que más tiempo te quitan.", "COMENTA **CHATGPT**")]},
 
  {"id": "reel-advertencias", "fecha": "Viernes 18", "titulo": "400 avisos sin leer",
   "estado": "POR GRABAR",
@@ -97,7 +97,7 @@ REELS = [
  {"id": "reel-limite-ia", "fecha": "Miércoles 30", "titulo": "Lo que no hay que preguntarle a la IA",
   "estado": "POR GRABAR",
   "duracion": "35-40 s",
-  "cta": "GUIA → Revit + ChatGPT (recurso ya publicado)",
+  "cta": "CHATGPT → Revit + ChatGPT (recurso ya publicado)",
   "nota": "Cierra el mes marcando el límite, y es la pieza que más nos diferencia: todo el "
           "mundo publica «10 prompts para Revit», nosotros publicamos dónde la IA deja de "
           "servir. Es lo que permite que una academia de ingeniería hable de IA sin quedar "
@@ -107,7 +107,7 @@ REELS = [
    ("0:05-0:13", "Plano medio.", "Cuando se equivoca, se equivoca con el mismo tono de seguridad con el que acierta. Y eso es justo lo que la hace peligrosa en un modelo que alguien va a firmar.", "SE EQUIVOCA CON EL MISMO **TONO**"),
    ("0:13-0:23", "Screen-record: una respuesta segura de sí misma en pantalla.", "Le pregunté qué sección poner. Me dio un número. Sonaba razonable. Pero no tiene mis cargas, ni mi norma, ni mi suelo — y ese número lleva mi firma, no la suya.", "ESE NÚMERO LLEVA **MI FIRMA**"),
    ("0:23-0:32", "Vuelve a cámara.", "Úsala para entender qué te está diciendo el programa y para buscar más rápido. No para decidir. La línea está justo ahí, y está más cerca de lo que parece.", "PARA ENTENDER, NO PARA **DECIDIR**"),
-   ("0:32-0:40", "Cierre.", "Yo compruebo tres cosas antes de aplicar nada. Comenta GUIA y te paso los diez errores con su prompt, y la página donde explico esas tres comprobaciones.", "COMENTA **GUIA**")]},
+   ("0:32-0:40", "Cierre.", "Yo compruebo tres cosas antes de aplicar nada. Comenta CHATGPT y te paso los diez errores con su prompt, y la página donde explico esas tres comprobaciones.", "COMENTA **CHATGPT**")]},
 ]
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -123,7 +123,7 @@ REELS = [
 # ─────────────────────────────────────────────────────────────────────────────
 
 REELS_LEADMAGNET = [
- {"id": "pauta-guia", "recurso": "Guía Revit + ChatGPT", "palabra": "GUIA",
+ {"id": "pauta-guia", "recurso": "Guía Revit + ChatGPT", "palabra": "CHATGPT",
   "estado": "POR GRABAR", "duracion": "20-25 s",
   "destino": "Formulario → landing guia-revit-ia",
   "nota": "El recurso ya está vivo y probado. Es el único de los tres que puede salir hoy.",
