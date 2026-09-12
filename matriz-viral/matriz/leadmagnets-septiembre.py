@@ -39,7 +39,7 @@ PASOS_GHL = [
      "prémium y cobra por cada envío. Al terminar, redirección automática a la página 2."),
     ("4. Etiquetas desde el primer segundo",
      "Cada contacto entra con dos etiquetas: una de tema (lead-revit-ia, lead-dynamo, "
-     "lead-memoria-calculo) y una de origen (origen-bot-GUIA, origen-form, origen-comunidad). Sin "
+     "lead-memoria-calculo) y una de origen (origen-bot-CHATGPT, origen-form, origen-comunidad). Sin "
      "la etiqueta de origen, a fin de mes no se puede decir qué recurso trajo a quién, y la "
      "pregunta de si el lead magnet sirvió se queda sin respuesta."),
     ("5. Bot de palabra clave en Instagram y Facebook — DOS ramas separadas",
@@ -89,10 +89,10 @@ MAGNETS = [
   dict(
     id="lm-revit-chatgpt",
     nombre="Guía «Revit + ChatGPT: resuelve errores con IA»",
-    palabra="GUIA",
+    palabra="CHATGPT",
     formato="PDF de 10-12 páginas",
     estado="POR CREAR — se necesita VIVO el lunes 8",
-    cuando="Semana 1. CORREGIDO 9-sep: antes decía que el reel del miércoles 9 ya lo prometía — eso era del reparto viejo. El del Mié 9 es reel-deriva y pide MEMORIA. GUIA la piden el Mié 16 y el Mié 30, y el propio reel de lanzamiento del Mar 8.",
+    cuando="Semana 1. CORREGIDO 9-sep: antes decía que el reel del miércoles 9 ya lo prometía — eso era del reparto viejo. El del Mié 9 es reel-deriva y pide MEMORIA. CHATGPT la piden el Mié 16 y el Mié 30, y el propio reel de lanzamiento del Mar 8.",
     promesa="Los 10 errores de Revit que más tiempo hacen perder, y el prompt exacto que los "
             "resuelve — con la advertencia de cuándo NO hacerle caso a la respuesta.",
     para_quien="Quien ya usa Revit todos los días y pierde tardes enteras buscando en foros.",
@@ -115,12 +115,12 @@ MAGNETS = [
         "promete, la guía deja de valer y de paso nos deja mal.",
         "Disclaimer educativo en la última página, igual que en la Calculadora de Zapatas.",
     ],
-    ghl=[("Palabra clave", "GUIA"),
-         ("Etiquetas", "lead-revit-ia · origen-bot-GUIA"),
+    ghl=[("Palabra clave", "CHATGPT"),
+         ("Etiquetas", "lead-revit-ia · origen-bot-CHATGPT"),
          ("Pregunta de perfil", "¿Qué usas hoy para resolver un error de Revit?"),
          ("Entrega", "Botón de descarga en la página de gracias."),
          ("Puente", "Correo 3 lleva al módulo BIM + IA — sin precio, con «agenda una cita»."),
-         ("Reemplazo si no llega", "El CTA cambia a GPT IA Pro, que ya existe y está montado.")],
+         ("Reemplazo si no llega", "El CTA cambia a MEMORIA, que está activa. GPT IA Pro sigue existiendo pero ya no tiene palabra: en blog va con enlace directo.")],
     posts=[dict(
         fecha="Mar 8", formato="REEL (grabar) — EXTRA de lanzamiento", red="Instagram + Facebook + TikTok",
         guion_en="reels-septiembre.py → REELS_LEADMAGNET → pauta-guia, con el CTA cambiado a "
@@ -130,9 +130,9 @@ MAGNETS = [
                 "propio mensaje: dice una cosa y el problema es otra.\n\nJunté los 10 que más "
                 "tiempo hacen perder, con el prompt exacto para cada uno. Y una página que importa "
                 "más que las otras diez: cómo verificar la respuesta antes de meterla en un modelo "
-                "que vas a firmar.\n\nEs gratis. Comenta GUIA y te llega.\n\n¿Cuál es el error de "
+                "que vas a firmar.\n\nEs gratis. Comenta CHATGPT y te llega.\n\n¿Cuál es el error de "
                 "Revit que más veces te ha tocado buscar?",
-        cta="Comenta GUIA",
+        cta="Comenta CHATGPT",
         prompt="Imagen 1080x1350 px (4:5) para la portada del reel. Fondo azul marino #0E2438. Un "
                "cuadro de diálogo de error de software, dibujado en línea fina ámbar #E8A04A, "
                "flotando en el centro, con el texto ilegible a propósito — solo se lee la forma de "
@@ -163,7 +163,7 @@ MAGNETS = [
          "6 · «The linked file could not be found». El vínculo apunta a una ruta que ya no "
          "existe. Alguien movió, renombró o guardó en otra carpeta.",
          "7 · Los diez, cada uno con su prompt. Y la página que importa más que las otras diez: "
-         "cómo comprobar la respuesta antes de aplicarla. COMENTA GUIA."],
+         "cómo comprobar la respuesta antes de aplicarla. COMENTA CHATGPT."],
         caption="El error que te frena la tarde casi siempre está mal explicado por el propio "
                 "mensaje: dice una cosa y el problema es otra.\n\n"
                 "Los dos peores no dan ningún aviso. Dos muros superpuestos hacen que el cuadro "
@@ -171,9 +171,9 @@ MAGNETS = [
                 "de cantidades cuente el doble. Los planos, mientras tanto, se ven perfectos.\n\n"
                 "Junté los 10 que más tiempo hacen perder, con el prompt exacto para cada uno y "
                 "cómo verificar la respuesta antes de meterla en un modelo que vas a firmar.\n\n"
-                "Es gratis. Comenta GUIA y te llega.\n\n"
+                "Es gratis. Comenta CHATGPT y te llega.\n\n"
                 "¿Cuál de los cinco te ha tocado más veces?",
-        cta="Comenta GUIA",
+        cta="Comenta CHATGPT",
         prompt="Siete imágenes de 1080x1080 px (1:1) de la misma familia, para carrusel. Fondo "
                "azul marino #0E2438. En cada una, un cuadro de diálogo de software dibujado en "
                "línea fina ámbar #E8A04A, siempre en la misma posición y a la misma escala, con "
@@ -187,7 +187,7 @@ MAGNETS = [
     id="lm-dynamo-python",
     nombre="Pack starter de scripts Dynamo / Python para Revit",
     palabra="DYNAMO",
-    formato="ZIP con 5 scripts comentados + PDF de instalación",
+    formato="ZIP con 5 scripts comentados + guía de instalación en la propia página",
     estado="POR CREAR",
     cuando="Semana 3. Necesita más producción que los otros dos porque hay que probar cada script.",
     promesa="Cinco scripts que hacen en un clic lo que hoy haces a mano, con el código comentado "
@@ -198,13 +198,14 @@ MAGNETS = [
             "propio sobre él. Guardar un post es la señal de «esto me sirve pero ahora no puedo»: "
             "es exactamente la gente que descarga un pack de scripts.",
     contenido=[
-        "Script 1 — renombrar vistas por norma en lote.",
-        "Script 2 — exportar planos a PDF con el nombre correcto, sin tocar el cuadro de diálogo.",
-        "Script 3 — numerar elementos por posición y no por orden de creación.",
-        "Script 4 — encontrar parámetros vacíos antes de entregar el modelo.",
-        "Script 5 — comparar dos modelos y listar qué cambió.",
-        "PDF corto: cómo instalarlos, qué versión de Revit y de Dynamo se necesita, y qué hacer "
-        "cuando el script no corre.",
+        "Script 01 — auditoría de advertencias del modelo a un CSV. SOLO LEE.",
+        "Script 02 — elementos duplicados exactamente en el mismo sitio. SOLO LEE, no borra nada "
+        "a propósito: la decisión de qué se borra es del que modela.",
+        "Script 03 — renombrar vistas en lote, con buscar y reemplazar. MODIFICA EL MODELO.",
+        "Script 04 — vistas que no están en ninguna hoja. SOLO LEE.",
+        "Script 05 — rellenar un parámetro en lote. MODIFICA EL MODELO.",
+        "La instalación va dentro de la propia guía («Cómo se instalan, 5 minutos»), no en un PDF "
+        "aparte: son cinco pasos y abrir otro archivo para leerlos sobra.",
     ],
     produccion=[
         "Cada script se corre en un modelo de prueba antes de entrar al pack. Un script que falla "
@@ -232,7 +233,7 @@ MAGNETS = [
                 "que los cambies y no solo los ejecutes. Tres de ellos ni siquiera tocan tu "
                 "modelo — solo leen — así que puedes correrlos hoy en un archivo vivo sin "
                 "arriesgar nada.\n\n"
-                "Con el PDF de instalación y la versión exacta de Revit y Dynamo con la que los "
+                "Con la instalación explicada en la propia guía y la versión exacta de Revit y Dynamo con la que los "
                 "probamos.\n\n"
                 "Es gratis. Comenta DYNAMO y te llega.\n\n"
                 "¿Cuántas veces has abierto Dynamo y lo has vuelto a cerrar?",
@@ -251,28 +252,28 @@ MAGNETS = [
                 "para la misma palabra.",
         slides=[
          "1 · CINCO TAREAS DE REVIT QUE NO DEBERÍAS SEGUIR HACIENDO A MANO.",
-         "2 · Renombrar vistas por norma, una por una. → Script 1: las renombra en lote.",
-         "3 · Exportar planos abriendo el cuadro de diálogo cada vez. → Script 2: los exporta a "
-         "PDF con el nombre correcto, sin tocar el diálogo.",
-         "4 · Numerar elementos y que salgan por orden de creación en vez de por posición. → "
-         "Script 3: los numera por dónde están.",
-         "5 · Revisar parámetros vacíos a ojo antes de entregar. → Script 4: te los lista. Y el "
-         "Script 5 compara dos modelos y te dice qué cambió.",
+         "2 · Abrir el cuadro de advertencias, ver el número y cerrarlo. → Script 01: las saca "
+         "todas a un CSV, ordenables y con el ID del elemento culpable.",
+         "3 · Buscar a ojo por qué el cuadro de cantidades cuenta de más. → Script 02: te lista "
+         "los elementos duplicados exactamente en el mismo sitio. No borra: decides tú.",
+         "4 · Renombrar vistas una por una. → Script 03: buscar y reemplazar en lote.",
+         "5 · Revisar qué vistas quedaron fuera de las hojas antes de entregar. → Script 04: te "
+         "las lista. Y el Script 05 rellena un parámetro en lote.",
          "6 · Los cinco vienen comentados por dentro para que los cambies. TRES SOLO LEEN: los "
          "puedes correr hoy en un archivo vivo. COMENTA DYNAMO."],
         hook="Cinco tareas de Revit que no deberías seguir haciendo a mano.",
-        caption="Si renombras vistas una por una, si exportas planos abriendo el cuadro de diálogo "
-                "cada vez, o si revisas parámetros vacíos a ojo: eso ya lo hace un script.\n\n"
-                "Armamos un pack con cinco, comentados línea por línea para que los puedas cambiar "
-                "y no solo ejecutar. Con el PDF de instalación y la versión exacta con la que los "
-                "probamos.\n\nEs gratis. Comenta DYNAMO y te llega.\n\n¿Cuál de las cinco te "
-                "quitaría más tiempo de encima?",
+        caption="Si abres el cuadro de advertencias, ves el número y lo cierras; si renombras "
+                "vistas una por una; o si revisas a ojo cuáles quedaron fuera de las hojas: eso "
+                "ya lo hace un script.\n\nArmamos un pack con cinco, comentados línea por línea "
+                "para que los puedas cambiar y no solo ejecutar. Tres de los cinco solo leen: los "
+                "puedes correr hoy en un archivo vivo sin arriesgar nada.\n\nEs gratis. Comenta "
+                "DYNAMO y te llega.\n\n¿Cuál de las cinco te quitaría más tiempo de encima?",
         cta="Comenta DYNAMO",
-        prompt="Cinco imágenes de 1080x1080 px (1:1) de la misma familia, para carrusel. Fondo azul "
+        prompt="Seis imágenes de 1080x1080 px (1:1) de la misma familia, para carrusel. Fondo azul "
                "marino #0E2438. Un grafo de nodos tipo Dynamo dibujado en línea fina ámbar #E8A04A "
                "— cajas conectadas por cables curvos — que en la primera tarjeta aparece enredado y "
                "en las siguientes se va ordenando hasta quedar en una sola línea limpia. Misma "
-               "escala y mismo encuadre en las cinco. Sin texto legible dentro de los nodos." + ESTILO),
+               "escala y mismo encuadre en las seis. Sin texto legible dentro de los nodos." + ESTILO),
   ]),
   dict(
     id="lm-memoria-calculo",

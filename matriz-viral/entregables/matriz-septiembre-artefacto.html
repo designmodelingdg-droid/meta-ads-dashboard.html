@@ -177,7 +177,7 @@ ol.slides li{font-size:14px;margin-bottom:9px}
 .rango{font-family:var(--mono);font-size:12px;color:var(--ink-2)}
 .dia{margin:18px 0;padding:14px 16px;background:var(--surface);border:1px solid var(--line);border-radius:9px}
 .dia h4{font-family:var(--display);font-weight:800;font-size:15.5px;margin:0 0 10px;
-  color:var(--amber-deep)}
+  color:var(--amber-deep);display:flex;align-items:baseline;gap:7px;flex-wrap:wrap}
 .dia h4 span{color:var(--ink);font-weight:700}
 .hist{border-top:1px solid var(--line);padding:12px 0 4px}
 .hist:first-of-type{border-top:0;padding-top:0}
@@ -190,6 +190,24 @@ ol.slides li{font-size:14px;margin-bottom:9px}
 .rol-valo{background:var(--ok-bg);color:var(--ok)}
 .rol-inte{background:var(--wait-bg);color:var(--amber-deep)}
 .rol-vent{background:var(--stop-bg);color:var(--stop)}
+.rol-cier{background:var(--surface-2);color:var(--ink-2)}
+.rol-recu{background:var(--wait-bg);color:var(--amber-deep)}
+.papel{margin-left:auto;font-family:var(--display);font-weight:800;font-size:10px;
+  letter-spacing:.1em;color:var(--ink-3)}
+.fondo{font-family:var(--display);font-weight:800;font-size:10px;letter-spacing:.06em;
+  padding:2px 7px;border-radius:99px;border:1px solid var(--line)}
+.f-cam{background:var(--ok-bg);color:var(--ok)}
+.f-pan{background:var(--surface-2);color:var(--ink-2)}
+.f-gen{background:var(--wait-bg);color:var(--amber-deep)}
+.prompt.graba{border-left-color:var(--ok)}
+.grabar{border:1px solid var(--line);border-radius:11px;padding:16px 18px;margin:14px 0;
+  background:var(--surface)}
+.grabar h3{margin:0 0 4px;font-size:1.05rem}
+.grabar-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,17rem),1fr));gap:14px;margin-top:10px}
+.grabar-cols h4{margin:0 0 6px}
+.grabar-cols ul{margin:0;padding-left:18px}
+.grabar-cols li{margin-bottom:5px;color:var(--ink-2);font-size:.9rem}
+.ojo{margin:10px 0 0;font-size:.85rem;color:var(--ink-3)}
 .sticker{font-size:13.5px;margin:8px 0 0;color:var(--ink-2)}
 .sticker b{font-family:var(--display);color:var(--ink)}
 .filtro{display:flex;gap:7px;flex-wrap:wrap;margin:16px 0 4px;padding:10px 0;
@@ -235,7 +253,7 @@ footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);
 <tr><td><b>Grupo 2 · Comunidades</b></td><td>12 mensajes cortos, sin hashtags, listos para pegar.</td><td>Martes, jueves y viernes</td></tr>
 <tr><td><b>Grupo 3 · Blog</b></td><td>4 artículos con su CTA y la portada.</td><td>Sábados</td></tr>
 <tr><td><b>Grupo 4 · LinkedIn</b></td><td>20 publicaciones repartidas entre las 3 páginas.</td><td>Lunes a viernes</td></tr>
-<tr><td><b>Grupo 5 · Historias</b></td><td>80 historias: 4 al día, de lunes a viernes, con storytelling.</td><td>Todos los días L-V</td></tr>
+<tr><td><b>Grupo 5 · Historias</b></td><td>80 historias. Cada semana es un arco: el lunes abre un bucle y el jueves lo paga.</td><td>Todos los días L-V</td></tr>
 <tr><td><b>Reels</b></td><td>Guion segundo a segundo de los 14: 5 de valor, 3 de lead magnet y 6 de venta.</td><td>Dos sesiones de grabación</td></tr>
 <tr><td><b>Publicidad</b></td><td>Los 10 anuncios con su copy y su ficha de montaje. Sin precios: el Máster no lleva cifra.</td><td>Todo junto el lunes 7</td></tr>
 <tr><td><b>Lead magnets</b></td><td>Los 3 recursos nuevos, su post de lanzamiento y el paso a paso de GoHighLevel.</td><td>Mar 8, Mar 22 y Mar 29</td></tr>
@@ -246,6 +264,7 @@ footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);
 <li>FEED PRINCIPAL: las 12 piezas BASE mantienen el 40/40/20 exacto — 5 reels, 5 carruseles y 2 posts planos, lunes / miercoles / viernes. Todo lo de lead magnet va ENCIMA, sin tocar esas doce. Cada recurso gratuito lleva DOS piezas: el reel el martes (8, 22 y 29) y el carrusel o post plano el jueves siguiente (10, 24 y 1 oct). Seis extras en total. POR QUE DOS DIAS DE DISTANCIA y no el mismo dia: el reel trae alcance y el carrusel trae guardados, y publicados a la vez compiten entre ellos por la misma audiencia en las mismas horas. Separados, la palabra clave se pide DOS veces en la misma semana. Total del mes: 18 piezas de feed (8 reels, 7 carruseles, 3 posts planos). CORREGIDO 9-sep: esta regla decia que los extras eran «los 5 reels ya grabados» — eran los de agosto, que se retiraron el 8-sep. Ninguno de los 5 reels de valor esta grabado.</li>
 <li>POST PLANO = SOLO CON DATO DE CALCULO VERIFICABLE. Es la lectura de agosto: con dato, 45-62 comentarios (y Sobredimensionar cerro con 14.334 vistas y 107 comentarios); la frase generica hizo 0-4. La declaracion generica de IA queda prohibida como pieza.</li>
 <li>Minimo 60% del contenido en el NUCLEO (BIM / IA / modelado / acero). Cero OBRA.</li>
+<li>PALABRAS DE COMENTARIO — SOLO ESTAS SEIS (fijado 11-sep): ZAPATA (Calculadora de Zapatas), ACERO (5 verificaciones en acero), NIVEL (Test de Nivel BIM), CHATGPT (Revit + ChatGPT), MEMORIA (Memoria de cálculo) y DYNAMO (Pack Dynamo). Son las únicas con disparador montado y activo. Ningún CTA pide otra palabra de recurso. Quedaron retiradas GUIA (pasa a CHATGPT), RUTA (pasa a NIVEL, nunca tuvo disparador), CUPO (pasa a ACERO), y GPT, EBOOK y GUIA-BIM, cuyos recursos siguen existiendo pero ya solo se enlazan directo desde el blog. BIM e IA no entran en esta lista porque no son lead magnets: son el bot de ventas del Máster y siguen igual.</li>
 <li>Cerrar SIEMPRE con pregunta directa + CTA de comentar. En comunidades: mensajes cortos, personales y SIN hashtags. En LinkedIn: nunca «comenta la palabra» — pregunta abierta; solo videos HORIZONTALES y PDF.</li>
 <li>Comunidades solo martes, jueves y viernes. Blog solo sabados, siempre con CTA a una campaña del mes o a un recurso gratuito. Historias de lunes a viernes, 3-5 frames al dia.</li>
 <li>PRECIOS (regla de oro, 2-sep): la publicidad anclada al MÁSTER no lleva ninguna cifra — ni el precio del módulo, ni el de la ruta, ni la suma. El CTA es siempre «llena el formulario», «agenda una cita» o «habla con un asesor», y el precio lo da el asesor en la conversación. Se vende POR MÓDULOS para bajar la barrera de entrada, pero la barrera se baja explicando la puerta, no publicando el número. ÚNICA EXCEPCIÓN: la Especialización en ACERO sí lleva su precio en el anuncio. Desde el 3-sep son $225 USD, y la subida tiene una razón que se dice en el propio anuncio: el programa ahora incluye el tutor de IA entrenado con sus clases. Un precio que sube sin explicar por qué se lee como encarecimiento; explicado, se lee como que el producto creció.</li>
@@ -264,37 +283,36 @@ footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);
 <div class="dato"><strong>Los reels de agosto quedaron fuera.</strong> Los que se grabaron en agosto y nunca se publicaron no entran en este mes: todo lo que ves aquí es contenido nuevo, y cada reel tiene su guion escrito para grabarlo.</div>
 <h2>Recursos gratuitos que hay que CREAR</h2>
 <p class="intro">Los CTA del mes prometen recursos. Estos todavía no existen — y hay contenido ya programado que los pide. Si no llegan a tiempo, el CTA se cambia por el de reemplazo, pero la promesa vacía no se publica. <b>Los tres están desarrollados enteros en la pestaña «Lead magnets»</b>, con su contenido, su post de lanzamiento y lo que hay que montar en GoHighLevel.</p>
-<div class="lm-nuevo"><h4>Guía «Revit + ChatGPT: resuelve errores con IA»</h4><span class="lm-pal">Palabra clave sugerida: «GUIA»</span><p>Lo piden los CTA de reel-duplicados (Mié 16) y reel-limite-ia (Mié 30), y el propio reel de lanzamiento del Mar 8. CORREGIDO 9-sep: antes decía que lo pedía el reel del Mié 9 — ese reel («Revit + ChatGPT») se retiró el 8-sep porque ya se había publicado en agosto, y el del Mié 9 es ahora reel-deriva, que pide MEMORIA.</p></div>
+<div class="lm-nuevo"><h4>Guía «Revit + ChatGPT: resuelve errores con IA»</h4><span class="lm-pal">Palabra clave sugerida: «CHATGPT»</span><p>Lo piden los CTA de reel-duplicados (Mié 16) y reel-limite-ia (Mié 30), y el propio reel de lanzamiento del Mar 8. CORREGIDO 9-sep: antes decía que lo pedía el reel del Mié 9 — ese reel («Revit + ChatGPT») se retiró el 8-sep porque ya se había publicado en agosto, y el del Mié 9 es ahora reel-deriva, que pide MEMORIA.</p></div>
 <div class="lm-nuevo"><h4>Pack starter de scripts Dynamo / Python para Revit</h4><span class="lm-pal">Palabra clave sugerida: «DYNAMO»</span><p>Dynamo es el tema de mejor guardado de la cuenta y no hay recurso propio. Se lanza el Mar 22; necesita más producción porque hay que probar cada script.</p></div>
 <div class="lm-nuevo"><h4>Guía de memoria de cálculo + plantilla</h4><span class="lm-pal">Palabra clave sugerida: «MEMORIA»</span><p>Pedido por Dayana el 2-sep. Se lanza el Mar 29, pero su PALABRA es la más urgente de las tres: la piden reel-deriva el Mié 9 y reel-cita-norma el Vie 25. El disparador MEMORIA tiene que estar vivo el 9, tres semanas antes de su propio lanzamiento. Lo revisa Gabriel antes de salir: puede terminar dentro de un documento que alguien firma.</p></div>
 <h3 class="camp">Qué contenido depende de cada uno</h3>
 <div class="tabla-scroll"><table><thead><tr><th>Cuándo</th><th>Pieza</th><th>CTA</th><th>Estado</th><th>Reemplazo si no llega</th></tr></thead><tbody>
 <tr><td>Mié 9 ⚠ · Vie 25 · Mar 29 (lanzamiento)</td><td>Reel de lanzamiento del recurso + Cumple resistencia y el edificio e (Miércoles 9) + «Según la norma» no es una cita (Viernes 25)</td><td><b>MEMORIA</b></td><td>🔴 LA MÁS URGENTE: recurso publicado y con visto bueno de Gabriel (8-sep), pero la palabra se pide el Mié 9 — tres semanas ANTES de su propio lanzamiento. Si el disparador no está el 9, reel-deriva sale sin red.</td><td>Si no está el día 9: CTA cambia a «comenta ACERO» → 5 Verificaciones (montado y probado), y se regenera el subtítulo.</td></tr>
-<tr><td>Mar 8 (lanzamiento) · Mié 16 · Mié 30</td><td>Reel de lanzamiento del recurso + Tus planos están bien. Tu presupue (Miércoles 16) + Lo que no hay que preguntarle a la (Miércoles 30)</td><td><b>GUIA</b></td><td>🟡 Recurso VIVO y probado (7-sep); falta SOLO montar el disparador GUIA en GHL</td><td>Si no está el Mar 8: CTA cambia a «comenta GPT» → GPT IA Pro (existe). El subtítulo del reel dice COMENTA GUIA: si se cambia el CTA hay que regenerar el subtítulo (5 min con el pipeline).</td></tr>
+<tr><td>Mar 8 (lanzamiento) · Mié 16 · Mié 30</td><td>Reel de lanzamiento del recurso + Tus planos están bien. Tu presupue (Miércoles 16) + Lo que no hay que preguntarle a la (Miércoles 30)</td><td><b>CHATGPT</b></td><td>🟡 Recurso VIVO y probado (7-sep); falta SOLO montar el disparador CHATGPT en GHL</td><td>Si no está el Mar 8: CTA cambia a «comenta MEMORIA», que está activa. El subtítulo del reel dice COMENTA CHATGPT: si se cambia el CTA hay que regenerar el subtítulo (5 min con el pipeline).</td></tr>
 <tr><td>Vie 18 · Mar 22 (lanzamiento)</td><td>Reel de lanzamiento del recurso + 400 avisos sin leer (Viernes 18)</td><td><b>DYNAMO</b></td><td>🟡 Recurso publicado y los 5 scripts corridos en Revit (8-sep); falta SOLO el disparador DYNAMO</td><td>Si no está el Vie 18: CTA cambia a «comenta BIM» (bot Máster) y el pack queda para octubre.</td></tr>
-<tr><td>Mi 23, V25 + correo Mar 22 + comunidad Jue 24</td><td>Carrusel 4 Puertas y correo Master (el reel espejo se retiro el 8-sep)</td><td><b>RUTA</b></td><td>🟡 Recurso existe (test), DISPARADOR RUTA por montar</td><td>Si el disparador no esta el 22: CTA cambia a «comenta NIVEL» → Test de Nivelacion (montado).</td></tr>
 <tr><td>L28, Mi30 + correo Mar 29</td><td>Anuncio y demo del tutor de IA</td><td><b>ACERO</b></td><td>🟡 Palabra montada; piezas CONDICIONADAS al deploy del tutor</td><td>Si el tutor no esta: suben piezas del banco y estas pasan a octubre.</td></tr>
-<tr><td>Blog Sab 12</td><td>Articulo IA en arquitectura</td><td><b>GPT</b></td><td>🟡 Existe; CONFIRMAR la palabra montada en el bot</td><td>Enlace directo en el blog (en blog el enlace si va directo).</td></tr>
-<tr><td>Blog Sab 3-oct</td><td>Articulo sostenibilidad</td><td><b>EBOOK</b></td><td>🟡 Existe; CONFIRMAR la palabra montada</td><td>Enlace directo en el blog.</td></tr>
+<tr><td>Blog Sab 12</td><td>Articulo IA en arquitectura</td><td><b>enlace directo (ya no hay palabra GPT)</b></td><td>🟡 Existe; CONFIRMAR la palabra montada en el bot</td><td>Enlace directo en el blog (en blog el enlace si va directo).</td></tr>
+<tr><td>Blog Sab 3-oct</td><td>Articulo sostenibilidad</td><td><b>enlace directo (ya no hay palabra EBOOK)</b></td><td>🟡 Existe; CONFIRMAR la palabra montada</td><td>Enlace directo en el blog.</td></tr>
 </tbody></table></div>
 <h3 class="camp">Los 8 que ya existen y funcionan</h3>
 <div class="tabla-scroll"><table><thead><tr><th>Recurso</th><th>Palabra</th><th>Se usa en</th></tr></thead><tbody>
-<tr><td><b>Guia BIM</b></td><td class="t">GUIA-BIM (confirmar la palabra montada)</td><td>Piezas de metodologia BIM (carrusel 3 señales, errores Revit)</td></tr>
-<tr><td><b>Ebook BIM</b></td><td class="t">EBOOK (confirmar)</td><td>Blog de sostenibilidad (Sab 3 oct) y comunidades</td></tr>
-<tr><td><b>GPT IA Pro</b></td><td class="t">GPT (confirmar)</td><td>Blog IA-arquitectura (Sab 12) y reels de IA</td></tr>
+<tr><td><b>Guia BIM</b></td><td class="t">SIN PALABRA ACTIVA — solo enlace directo</td><td>Piezas de metodologia BIM (carrusel 3 señales, errores Revit)</td></tr>
+<tr><td><b>Ebook BIM</b></td><td class="t">SIN PALABRA ACTIVA — solo enlace directo</td><td>Blog de sostenibilidad (Sab 3 oct) y comunidades</td></tr>
+<tr><td><b>GPT IA Pro</b></td><td class="t">SIN PALABRA ACTIVA — solo enlace directo</td><td>Blog IA-arquitectura (Sab 12) y reels de IA</td></tr>
 <tr><td><b>Curso Introductorio BIM</b></td><td class="t">(membresia GHL — boton corregido)</td><td>Blog elegir software (Sab 26), publico que arranca</td></tr>
 <tr><td><b>Modulo 1 del Diplomado de Estructuras</b></td><td class="t">(membresia GHL)</td><td>Publico de estructuras que aun no compra ACERO</td></tr>
 <tr><td><b>Calculadora de Zapatas</b></td><td class="t">ZAPATA</td><td>Comunidad Jue 17; el embudo completo ya esta montado y probado</td></tr>
-<tr><td><b>Verificacion de Acero (5 Verificaciones)</b></td><td class="t">ACERO</td><td>CTA de acero del mes: posts de dato de calculo, blog ETABS/SAP y pauta. OJO: ya NO lo sostiene ningun reel — los 5 reels nuevos apuntan a GUIA, MEMORIA y DYNAMO.</td></tr>
+<tr><td><b>Verificacion de Acero (5 Verificaciones)</b></td><td class="t">ACERO</td><td>CTA de acero del mes: posts de dato de calculo, blog ETABS/SAP y pauta. OJO: ya NO lo sostiene ningun reel — los 5 reels nuevos apuntan a CHATGPT, MEMORIA y DYNAMO.</td></tr>
 <tr><td><b>Test de Nivelacion BIM</b></td><td class="t">NIVEL</td><td>Historia espejo (Jue S3), blog Sab 26, comunidad Vie 25</td></tr>
 </tbody></table></div>
 <h2>Checklist del mes</h2>
 <div class="tabla-scroll"><table><thead><tr><th>☐</th><th>Tarea</th><th>Desbloquea</th><th>Cuándo</th></tr></thead><tbody>
 <tr><td>☐</td><td>HECHO (3-sep): tutor desplegado y probado — 17 de 17 con las trampas repetidas 3 veces. Falta montarlo en los 4 cursos de ACERO.</td><td>Carrusel del Lun 28, los DOS reels de venta de ACERO (pauta-acero-tutor y pauta-acero-sobredimensionar), correo del Mar 29 y variantes B de pauta ACERO. CORREGIDO 9-sep: decía «reel demo Mi30» — el reel del Mié 30 es reel-limite-ia, que no tiene nada que ver con el tutor.</td><td>antes del 25-sep</td></tr>
-<tr><td>☐</td><td>Montar el disparador de DM para la palabra RUTA en el bot</td><td>Carrusel 4 Puertas (Mie 23) y pauta nueva del Master</td><td>antes del 22-sep</td></tr>
+<tr><td>☐</td><td>RETIRADO 11-sep: RUTA nunca tuvo disparador y ya no es una de las palabras activas. Su CTA pasa a NIVEL (Test de Nivel BIM), que sí está montado</td><td>Carrusel 4 Puertas (Mie 23) y pauta nueva del Master</td><td>antes del 22-sep</td></tr>
 <tr><td>☐</td><td>Grabar los 5 reels de valor nuevos: Derivas (Mi 9), Duplicados (Mi 16), 400 avisos (V 18), Cita de norma (V 25), Limite de la IA (Mi 30). Mas los 4 creativos de pauta.</td><td>Mi 16, V 25 y Mi 30</td><td>sesion de grabacion Lun 7 - Mar 8</td></tr>
-<tr><td>☐</td><td>Confirmar la palabra clave GUIA y montar su disparador: la piden los reels del Mi 16 y el Mi 30</td><td>CTA GUIA de reel-duplicados (Mié 16) y reel-limite-ia (Mié 30), y del reel de lanzamiento del recurso (Mar 8)</td><td>antes del Mar 8, que es cuando sale el reel del propio recurso. Fecha dura real: Mié 16, el primer reel de valor que cierra pidiendo GUIA</td></tr>
-<tr><td>☐</td><td>HECHO (7-sep): lead magnet «Revit + ChatGPT» construido, publicado y probado. Falta SOLO montar el disparador GUIA en GoHighLevel.</td><td>CTA GUIA de los reels del Mié 16 y el Mié 30</td><td>antes del Mar 8 (lanzamiento del recurso). Si el Mié 16 el disparador no está vivo, el comentario GUIA no recibe nada y el reel se publica sin red</td></tr>
+<tr><td>☐</td><td>Confirmar la palabra clave CHATGPT y montar su disparador: la piden los reels del Mi 16 y el Mi 30</td><td>CTA CHATGPT de reel-duplicados (Mié 16) y reel-limite-ia (Mié 30), y del reel de lanzamiento del recurso (Mar 8)</td><td>antes del Mar 8, que es cuando sale el reel del propio recurso. Fecha dura real: Mié 16, el primer reel de valor que cierra pidiendo CHATGPT</td></tr>
+<tr><td>☐</td><td>HECHO (7-sep): lead magnet «Revit + ChatGPT» construido, publicado y probado. Falta SOLO montar el disparador CHATGPT en GoHighLevel.</td><td>CTA CHATGPT de los reels del Mié 16 y el Mié 30</td><td>antes del Mar 8 (lanzamiento del recurso). Si el Mié 16 el disparador no está vivo, el comentario CHATGPT no recibe nada y el reel se publica sin red</td></tr>
 <tr><td>☐</td><td>HECHO (7-sep): pack starter de Dynamo construido y publicado; los 5 scripts se corrieron en Revit el 8-sep. Falta SOLO montar el disparador DYNAMO en GoHighLevel.</td><td>CTA DYNAMO de reel-advertencias (Vie 18) y del reel de lanzamiento del recurso (Mar 22)</td><td>antes del Vie 18, que es el primer reel que cierra pidiendo DYNAMO</td></tr>
 <tr><td>☐</td><td>ESTER · Montar en GoHighLevel los 3 lead magnets nuevos: formulario, 2 etiquetas, bot con DOS ramas (Instagram y Facebook por separado) y secuencia de 3 correos. Paso a paso en el artefacto de montaje y en el Word de entregables.</td><td></td><td>es lo unico que separa los tres recursos de sus campanas</td></tr>
 <tr><td>☐</td><td>Actualizar el numero REAL de cupos de ACERO</td><td>historias de venta del jueves y correos</td><td>cada jueves</td></tr>
@@ -346,8 +364,8 @@ footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);
 <div class="prompt"><span class="rot">Prompt para ChatGPT · CARRUSEL · 6 slides · 1080x1350 px (4:5)</span><div class="prompt-txt">Portada: tres iconos grandes en columna sobre azul marino — un reloj con flecha circular, dos modelos superpuestos con un choque en ámbar, y dos barras de tiempo desiguales. Slides interiores: un icono por slide, número 01/02/03 gigante en ámbar a la izquierda, espacio limpio a la derecha para el texto. Slide de cierre: fondo ámbar invertido con espacio central limpio. Estilo Design Modeling Academy: fondo azul marino #0E2438, acento ámbar #E8A04A, texto blanco, tipografía sans muy gruesa, estética técnica de ingeniería limpia (referencia Autodesk Revit), sin fotos de stock genéricas, sin ciencia ficción. Firma abajo a la izquierda «DG · @design_modeling_dg». NO escribas texto dentro de la imagen salvo donde se indique — el texto lo monta diseño.</div></div>
 </div>
 <div class="pieza col" data-sem="1" data-k="g1-mar-8-guia-revit-chatgpt-los-10-errores-y-su-prompt"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g1-mar-8-guia-revit-chatgpt-los-10-errores-y-su-prompt"><span aria-hidden="true"></span></label><span class="fecha">Mar 8</span><h3>Guia «Revit + ChatGPT»: los 10 errores y su prompt</h3><span class="tipo">REEL (grabar) — EXTRA lanzamiento de recurso</span></div>
-<p class="nota">Lanzamiento del recurso, y va el martes a propósito: es el primero de los tres porque su palabra —GUIA— es la que más reels piden después (Mié 16 y Mié 30). CORREGIDO 9-sep: antes esta nota decía que el reel del miércoles 9 apuntaba a esta guía. Ya no: el del Mié 9 es reel-deriva y su CTA es MEMORIA. La razón de la fecha era del reparto viejo de reels. Usa el mismo guion que el creativo de pauta «GUIA», con el CTA cambiado a comentario en vez de formulario: se graba una vez y se monta dos veces.</p>
-<span class="rot">Desarrollo</span><div class="pegar">Lanzamiento del recurso, y va el martes a propósito: es el primero de los tres porque su palabra —GUIA— es la que más reels piden después (Mié 16 y Mié 30). CORREGIDO 9-sep: antes esta nota decía que el reel del miércoles 9 apuntaba a esta guía. Ya no: el del Mié 9 es reel-deriva y su CTA es MEMORIA. La razón de la fecha era del reparto viejo de reels. Usa el mismo guion que el creativo de pauta «GUIA», con el CTA cambiado a comentario en vez de formulario: se graba una vez y se monta dos veces.</div>
+<p class="nota">Lanzamiento del recurso, y va el martes a propósito: es el primero de los tres porque su palabra —CHATGPT— es la que más reels piden después (Mié 16 y Mié 30). CORREGIDO 9-sep: antes esta nota decía que el reel del miércoles 9 apuntaba a esta guía. Ya no: el del Mié 9 es reel-deriva y su CTA es MEMORIA. La razón de la fecha era del reparto viejo de reels. Usa el mismo guion que el creativo de pauta «CHATGPT», con el CTA cambiado a comentario en vez de formulario: se graba una vez y se monta dos veces.</p>
+<span class="rot">Desarrollo</span><div class="pegar">Lanzamiento del recurso, y va el martes a propósito: es el primero de los tres porque su palabra —CHATGPT— es la que más reels piden después (Mié 16 y Mié 30). CORREGIDO 9-sep: antes esta nota decía que el reel del miércoles 9 apuntaba a esta guía. Ya no: el del Mié 9 es reel-deriva y su CTA es MEMORIA. La razón de la fecha era del reparto viejo de reels. Usa el mismo guion que el creativo de pauta «CHATGPT», con el CTA cambiado a comentario en vez de formulario: se graba una vez y se monta dos veces.</div>
 <p class="nota">El guion completo de este reel está en la pestaña <b>Reels</b>.</p>
 </div>
 <div class="pieza col" data-sem="1" data-k="g1-mie-9-reel-cumple-resistencia-y-el-edificio-es-inhabitable-grabar"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g1-mie-9-reel-cumple-resistencia-y-el-edificio-es-inhabitable-grabar"><span aria-hidden="true"></span></label><span class="fecha">Mie 9</span><h3>REEL · Cumple resistencia y el edificio es inhabitable (grabar)</h3><span class="tipo">REEL (grabar)</span></div>
@@ -410,7 +428,7 @@ El cálculo completo de la imagen:
 <div class="prompt"><span class="rot">Prompt para ChatGPT · CARRUSEL · 7 slides · 1080x1350 px (4:5)</span><div class="prompt-txt">Portada: tres modelos superpuestos en capas separadas verticalmente (arquitectura, estructura, instalaciones), cada capa en un tono distinto, con una interferencia marcada en ámbar. Interiores: un paso del flujo de coordinación por slide, con diagramas de línea fina. Estilo Design Modeling Academy: fondo azul marino #0E2438, acento ámbar #E8A04A, texto blanco, tipografía sans muy gruesa, estética técnica de ingeniería limpia (referencia Autodesk Revit), sin fotos de stock genéricas, sin ciencia ficción. Firma abajo a la izquierda «DG · @design_modeling_dg». NO escribas texto dentro de la imagen salvo donde se indique — el texto lo monta diseño.</div></div>
 </div>
 <div class="pieza col" data-sem="2" data-k="g1-mie-16-reel-tus-planos-estan-bien-tu-presupuesto-esta-mal-grabar"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g1-mie-16-reel-tus-planos-estan-bien-tu-presupuesto-esta-mal-grabar"><span aria-hidden="true"></span></label><span class="fecha">Mie 16</span><h3>REEL · Tus planos están bien. Tu presupuesto está mal. (grabar)</h3><span class="tipo">REEL (grabar)</span></div>
-<p class="nota">NUEVO 8-sep. El error de Revit que no avisa: los planos salen bien y el cuadro cuenta el doble. CTA: comenta GUIA.</p>
+<p class="nota">NUEVO 8-sep. El error de Revit que no avisa: los planos salen bien y el cuadro cuenta el doble. CTA: comenta CHATGPT.</p>
 <span class="rot">Desarrollo</span><div class="pegar">El error invisible. Es el ángulo más fuerte de los cinco porque no da ningún mensaje en Revit: los planos salen perfectos y el cuadro cuenta el doble. Se descubre al presupuestar, que es cuando ya se cotizó.
 
 GANCHO (0:00): «Hay un error en Revit que no te avisa. Los planos salen bien y el presupuesto sale mal.»
@@ -452,7 +470,7 @@ Duración 30-35 s. Guion completo segundo a segundo en matriz-viral/matriz/reels
 <p class="nota">El guion completo de este reel está en la pestaña <b>Reels</b>.</p>
 </div>
 <div class="pieza col" data-sem="3" data-k="g1-mie-23-las-4-puertas-en-que-etapa-bim-estas"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g1-mie-23-las-4-puertas-en-que-etapa-bim-estas"><span aria-hidden="true"></span></label><span class="fecha">Mie 23</span><h3>Las 4 puertas: ¿en qué etapa BIM estás?</h3><span class="tipo">CARRUSEL (8 slides)</span></div>
-<p class="nota">LA PIEZA DEL MES: la nueva arquitectura contada como contenido. Sin precio. Requiere el disparador RUTA vivo.</p>
+<p class="nota">LA PIEZA DEL MES: la nueva arquitectura contada como contenido. Sin precio. Pide NIVEL, que ya está montado.</p>
 <span class="rot">Hook</span><div class="pegar">¿En qué etapa BIM estás? Hay 4 puertas de entrada — y solo una es la tuya.</div>
 <span class="rot">Slides</span><ol class="slides">
 <li><b>Slide 1</b> — ¿EN QUÉ ETAPA BIM ESTÁS? Las 4 puertas de entrada (solo una es la tuya) →<br><span class="visual">🖼 Portada. Fondo azul #0E2438, cuatro puertas dibujadas en línea, una iluminada en naranja. «4 PUERTAS» gigante.</span></li>
@@ -462,7 +480,7 @@ Duración 30-35 s. Guion completo segundo a segundo en matriz-viral/matriz/reels
 <li><b>Slide 5</b> — «Quiero automatizar y aplicar IA.» → Puerta 4 · AUTOMATIZA: Dynamo, Python e IA aplicada a proyectos reales.<br><span class="visual">🖼 Número 04. Icono de cerebro-circuito. Mismo layout.</span></li>
 <li><b>Slide 6</b> — ¿Y si lo quieres todo? Esa es la ruta completa: 12 meses para pasar de «sé usar BIM» a liderar como BIM Manager + IA.<br><span class="visual">🖼 Slide de mensaje. Las 4 puertas en fila conectadas por una flecha que termina en un birrete. «12 MESES» destacado.</span></li>
 <li><b>Slide 7</b> — No enseñamos software. Te acompañamos a evolucionar: Estructura → Coordina → Gestiona → Automatiza.<br><span class="visual">🖼 Texto grande centrado. «software» tachado, «evolucionar» en naranja.</span></li>
-<li><b>Slide 8</b> — Comenta “RUTA” y te digo cuál es tu puerta según la etapa en la que estás.<br><span class="visual">🖼 Cierre invertido (fondo naranja, texto azul). «RUTA» en recuadro blanco.</span></li>
+<li><b>Slide 8</b> — Comenta “NIVEL”: son 20 preguntas y al final sabes cuál de las 4 puertas es la tuya.<br><span class="visual">🖼 Cierre invertido (fondo naranja, texto azul). «NIVEL» en recuadro blanco.</span></li>
 </ol>
 <span class="rot">Caption (copiar tal cual)</span><div class="pegar">Todos quieren «aprender BIM». Pero nadie está en la misma etapa.
 
@@ -474,10 +492,10 @@ Por eso el recorrido tiene 4 puertas de entrada:
 
 Y una ruta completa de 12 meses que las recorre todas: de «sé usar BIM» a BIM Manager + IA.
 
-💬 Comenta “RUTA” y te digo cuál es tu puerta.
+💬 Comenta “NIVEL” y el test te dice cuál es tu puerta.
 
 #BIM #BIMManager #IA #Revit #GestiónDeProyectos #DesignModelingDG</div>
-<p class="nota">⚠ NUNCA precio del Máster: ni en slides, ni en caption, ni en DM — el precio vive en la llamada del closer (arquitectura comercial sep-2026). La palabra clave RUTA necesita su disparador montado en el bot ANTES de publicar; si no está, el CTA cambia a «comenta BIM». Basado en la Nueva Arquitectura Comercial (PDF de Gabriel, sep-2026): las 4 frases de los slides son las 5 necesidades del proceso comercial, con la 5ª (la ruta completa) como cierre.</p>
+<p class="nota">⚠ NUNCA precio del Máster: ni en slides, ni en caption, ni en DM — el precio vive en la llamada del closer (arquitectura comercial sep-2026). Se pide NIVEL (Test de Nivel BIM), que es la única de las seis activas que hace lo que prometía RUTA: ubicar a la persona en una etapa. RUTA nunca llegó a tener disparador. Basado en la Nueva Arquitectura Comercial (PDF de Gabriel, sep-2026): las 4 frases de los slides son las 5 necesidades del proceso comercial, con la 5ª (la ruta completa) como cierre.</p>
 <div class="prompt"><span class="rot">Prompt para ChatGPT · CARRUSEL · 8 slides · 1080x1350 px (4:5)</span><div class="prompt-txt">Portada: cuatro puertas arquitectónicas en fila sobre suelo de retícula en perspectiva, una iluminada en ámbar. Slides 2-5: una puerta por slide, con su icono encima (checklist, cubos ensamblándose, gráfica con signo de dólar, cerebro-circuito) y la frase del profesional entre comillas grandes. Slide 6: las cuatro puertas conectadas por una flecha que termina en un birrete. Cierre: fondo ámbar invertido. Estilo Design Modeling Academy: fondo azul marino #0E2438, acento ámbar #E8A04A, texto blanco, tipografía sans muy gruesa, estética técnica de ingeniería limpia (referencia Autodesk Revit), sin fotos de stock genéricas, sin ciencia ficción. Firma abajo a la izquierda «DG · @design_modeling_dg». NO escribas texto dentro de la imagen salvo donde se indique — el texto lo monta diseño.</div></div>
 </div>
 <div class="pieza col" data-sem="3" data-k="g1-jue-24-pack-de-dynamo-las-5-tareas-de-revit-que-no-deberias-seguir-"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g1-jue-24-pack-de-dynamo-las-5-tareas-de-revit-que-no-deberias-seguir-"><span aria-hidden="true"></span></label><span class="fecha">Jue 24</span><h3>Pack de Dynamo: las 5 tareas de Revit que no deberias seguir haciendo a mano</h3><span class="tipo">CARRUSEL (6 slides) — EXTRA lanzamiento de recurso</span></div>
@@ -526,7 +544,7 @@ Estudias a tu ritmo. Pero nunca estudias solo.
 <p class="nota">El guion completo de este reel está en la pestaña <b>Reels</b>.</p>
 </div>
 <div class="pieza col" data-sem="4" data-k="g1-mie-30-reel-lo-que-no-hay-que-preguntarle-a-la-ia-grabar"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g1-mie-30-reel-lo-que-no-hay-que-preguntarle-a-la-ia-grabar"><span aria-hidden="true"></span></label><span class="fecha">Mie 30</span><h3>REEL · Lo que no hay que preguntarle a la IA (grabar)</h3><span class="tipo">REEL (grabar)</span></div>
-<p class="nota">NUEVO 8-sep. Cierra el mes marcando el límite de la IA — la pieza que más nos diferencia. El reel del tutor que iba aquí se movió a PAUTA: el tutor es argumento de venta, no contenido de valor. CTA: comenta GUIA.</p>
+<p class="nota">NUEVO 8-sep. Cierra el mes marcando el límite de la IA — la pieza que más nos diferencia. El reel del tutor que iba aquí se movió a PAUTA: el tutor es argumento de venta, no contenido de valor. CTA: comenta CHATGPT.</p>
 <span class="rot">Desarrollo</span><div class="pegar">Cierra el mes marcando el límite, y es la pieza que más nos diferencia: todo el mundo publica «10 prompts para Revit», nosotros publicamos dónde la IA deja de servir. Es lo que permite que una academia de ingeniería hable de IA sin quedar mal. Tono sereno, nunca alarmista.
 
 GANCHO (0:00): «Una inteligencia artificial no sabe cuándo no sabe.»
@@ -570,7 +588,7 @@ Duración 35-40 s. Guion completo segundo a segundo en matriz-viral/matriz/reels
 <span class="rot">Qué se publica</span><div class="pegar">«El comparativo ETABS vs SAP2000 del blog levanto debate — aqui el enlace. Y hoy sale el reel del pack de Dynamo: si nunca han automatizado nada en BIM, ese es el punto de partida. Comenten DYNAMO y les llega.»</div>
 </div>
 <div class="pieza col" data-sem="3" data-k="g2-jue-24-venta-suave-las-4-puertas"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g2-jue-24-venta-suave-las-4-puertas"><span aria-hidden="true"></span></label><span class="fecha">Jue 24</span><h3>Venta suave · las 4 puertas</h3><span class="tipo">Mensaje + palabra clave</span></div>
-<span class="rot">Qué se publica</span><div class="pegar">«Reorganizamos toda la formacion en 4 etapas: Estructura → Coordina → Gestiona → Automatiza. ¿En cual se ubican? El que me responda RUTA le digo la suya con su caso concreto.» (sin precio, requiere disparador RUTA)</div>
+<span class="rot">Qué se publica</span><div class="pegar">«Reorganizamos toda la formacion en 4 etapas: Estructura → Coordina → Gestiona → Automatiza. ¿En cual se ubican? El que me responda NIVEL le digo la suya con su caso concreto.» (sin precio)</div>
 </div>
 <div class="pieza col" data-sem="3" data-k="g2-vie-25-test-de-nivel-bim"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g2-vie-25-test-de-nivel-bim"><span aria-hidden="true"></span></label><span class="fecha">Vie 25</span><h3>Test de nivel BIM</h3><span class="tipo">Mensaje + palabra clave</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">«¿En que nivel BIM estan de verdad? Hay un test de 20 preguntas que se los dice sin adornos. Respondan NIVEL y se los mando. Los resultados suelen sorprender.»</div>
@@ -589,7 +607,7 @@ Duración 35-40 s. Guion completo segundo a segundo en matriz-viral/matriz/reels
 <ul class="reglas"><li>El CTA del blog nunca es generico: apunta a la campaña activa (ACERO / Master) o a un lead magnet concreto con su palabra clave.</li></ul>
 <div class="filtro" data-scope="g3"><button class="fbtn" data-sem="0" aria-pressed="true">Todas</button><button class="fbtn" data-sem="1" aria-pressed="false">S1 · 7-13 sep</button><button class="fbtn" data-sem="2" aria-pressed="false">S2 · 14-20 sep</button><button class="fbtn" data-sem="3" aria-pressed="false">S3 · 21-27 sep</button><button class="fbtn" data-sem="4" aria-pressed="false">S4 · 28 sep - 2 oct</button></div><div class="avance"><span><b class="n">0</b> de <b class="tot">0</b> marcadas</span><button type="button" class="reabrir">Reabrir todas</button></div>
 <div class="pieza col" data-sem="1" data-k="g3-sab-12-como-la-ia-esta-revolucionando-la-arquitectura-moderna"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g3-sab-12-como-la-ia-esta-revolucionando-la-arquitectura-moderna"><span aria-hidden="true"></span></label><span class="fecha">Sab 12</span><h3>Cómo la IA está revolucionando la arquitectura moderna</h3><span class="tipo">Articulo + portada</span></div>
-<p class="nota">CTA del articulo: GPT IA Pro (recurso gratis) + mencion de la ruta del Master (sin precio).</p>
+<p class="nota">CTA del articulo: enlace directo a la guia Revit + ChatGPT + mencion de la ruta del Master (sin precio). En blog el enlace va directo: GPT IA Pro ya no tiene palabra de comentario.</p>
 <span class="rot">Hook</span><div class="pegar">La IA no viene a diseñar por el arquitecto; viene a acelerar el proceso creativo y técnico.</div>
 <span class="rot">Texto</span><div class="pegar">Escribimos sobre cómo la IA está cambiando la arquitectura (sin reemplazar al arquitecto). Link en bio / comenta “IA”.</div>
 </div>
@@ -634,7 +652,7 @@ Duración 35-40 s. Guion completo segundo a segundo en matriz-viral/matriz/reels
 <span class="rot">Qué se publica</span><div class="pegar">De ejecutar a decidir: por que el salto de modelador a coordinador no es de software. Cierra preguntando en que peldaño esta cada quien.</div>
 </div>
 <div class="pieza col" data-sem="2" data-k="g4-mie-16-academy-articulo-ia-en-arquitectura-blog-del-sabado"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g4-mie-16-academy-articulo-ia-en-arquitectura-blog-del-sabado"><span aria-hidden="true"></span></label><span class="fecha">Mie 16</span><h3>Academy · Articulo: IA en arquitectura (blog del sabado)</h3><span class="tipo">Articulo</span></div>
-<span class="rot">Qué se publica</span><div class="pegar">El blog del Sab 12 republicado como articulo nativo con el CTA a GPT IA Pro.</div>
+<span class="rot">Qué se publica</span><div class="pegar">El blog del Sab 12 republicado como articulo nativo, con enlace directo a la guia Revit + ChatGPT.</div>
 </div>
 <div class="pieza col" data-sem="2" data-k="g4-jue-17-dg-video-horizontal-escena-de-coordinacion-del-comercial"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g4-jue-17-dg-video-horizontal-escena-de-coordinacion-del-comercial"><span aria-hidden="true"></span></label><span class="fecha">Jue 17</span><h3>DG · Video horizontal: escena de coordinacion del comercial</h3><span class="tipo">Video horizontal</span></div>
 <span class="rot">Qué se publica</span><div class="pegar">Metodologia de deteccion de interferencias, con pregunta tecnica al cierre.</div>
@@ -673,10 +691,28 @@ Duración 35-40 s. Guion completo segundo a segundo en matriz-viral/matriz/reels
 <span class="rot">Qué se publica</span><div class="pegar">Balance personal del mes y adelanto de octubre. Invita a seguir a las 3 paginas.</div>
 </div></section>
 <section id="tab-g5" hidden><h2>GRUPO 5 · Historias de Instagram (y Facebook stories)</h2>
-<p class="intro">Cuatro historias al día, de lunes a viernes, en este orden: <b>relleno</b> (abre en humano) → <b>valor</b> (el dato del día) → <b>interacción</b> (el sticker que abre el DM) → <b>venta</b> (pide una palabra, que es lo único que el bot puede recoger). Cada día es un arco, no cuatro piezas sueltas.</p>
-<ul class="reglas"><li>El sticker es el CTA: una historia sin sticker solo se ve, no convierte.</li><li>Nunca precio ni «inscribete» en historia: el objetivo es que escriban.</li><li>Maximo 5 frames por secuencia.</li><li>Las buenas secuencias se guardan en DESTACADAS (ACERO · BIM+IA · Herramientas · Comunidad · Alumnos).</li><li>Rotacion de venta de los jueves: S1 cupos ACERO · S2 objecion ACERO · S3 espejo Master (4 puertas) · S4 tutor de IA (solo si esta en produccion; si no, repite cupos con numero actualizado).</li></ul>
+<p class="intro"><b>La semana es un arco, no cinco días sueltos.</b> Desde la semana 2, cada semana cuenta una sola historia con el caso real de Gabriel detrás — una vivienda de dos pisos de hormigón armado, con estructuras, arquitectura e instalaciones. El lunes <b>abre el bucle</b> con un número y una promesa a fecha fija; el martes trae <b>la prueba</b>; el miércoles <b>la objeción</b>, y lo que contesten en la encuesta es el contenido del jueves; el jueves <b>paga lo prometido</b> y ahí —solo ahí— aparece la venta; el viernes <b>cierra</b> y suelta el recurso.</p><p class="intro">Los fondos ya no son todos generados: <b>REAL · cámara</b> (Gabriel, la obra, la memoria impresa), <b>REAL · pantalla</b> (Revit, el correo del revisor, el tutor) y <b>GENERADA</b> solo para lo que no se puede fotografiar. El mensaje principal de la semana nunca va sobre una imagen generada: va sobre material real, que es lo que lo hace creíble. Los números entre [ ] los confirma Gabriel antes de grabar.</p>
+<ul class="reglas"><li>El sticker es el CTA: una historia sin sticker solo se ve, no convierte.</li><li>Nunca precio ni «inscríbete» en historia: el objetivo es que escriban.</li><li>Máximo 5 frames por secuencia.</li><li>La semana es un arco: lo que se promete el lunes se paga el jueves. Si no se va a pagar, no se promete.</li><li>El mensaje principal de la semana nunca va sobre una imagen generada: va sobre material real (Gabriel, la obra, la pantalla). La IA es para el relleno, no para la prueba.</li><li>Los números entre corchetes los confirma Gabriel antes de grabar. La estructura está fija; las cifras no se inventan.</li><li>Las buenas secuencias se guardan en DESTACADAS (ACERO · BIM+IA · Herramientas · Comunidad · Alumnos).</li><li>Rotación de venta de los jueves: S1 cupos ACERO · S2 objeción ACERO · S3 espejo Máster (4 puertas) · S4 tutor de IA — montado en los cuatro cursos de la especialización desde el 11 de septiembre.</li></ul>
+<div class="grabar"><h3>Lo que hay que grabar</h3>
+<p class="nota">6 bloques de cámara y 5 grabaciones de pantalla, para 16 jornadas. Sin esto, la mitad de las historias no se pueden publicar tal como están escritas.</p><div class="grabar-cols">
+<div><h4><span class="fondo f-cam">REAL · cámara</span></h4><ul>
+<li>Gabriel caminando por la obra de la casa con el plano en la mano — 20 s, sin hablar.</li>
+<li>Gabriel en el escritorio, de perfil, mirando el monitor — 15 s.</li>
+<li>Gabriel hablando a cámara, plano medio, fondo de oficina — 3 tomas de 15 s.</li>
+<li>La memoria de cálculo impresa sobre la mesa: pasar una hoja y cerrarla.</li>
+<li>Varillas apiladas en obra, plano corto con luz natural.</li>
+<li>El cronómetro del teléfono corriendo sobre el escritorio.</li>
+</ul></div>
+<div><h4><span class="fondo f-pan">REAL · pantalla</span></h4><ul>
+<li>El modelo de la casa girando despacio en Revit — 8 s.</li>
+<li>La losa de la planta alta seleccionada, con su cantidad en propiedades; y los dos modelos superpuestos encendiendo y apagando uno.</li>
+<li>El panel de avisos de Revit abriéndose, con el contador visible, y el scroll por la lista.</li>
+<li>El script de Dynamo corriendo de principio a fin, SIN CORTES — es la prueba, no se edita.</li>
+<li>El tutor contestando una pregunta real, con la cita de norma visible.</li>
+</ul></div>
+</div><p class="ojo">Las capturas de DM y del correo del revisor van con los nombres tapados.</p></div>
 <div class="filtro" data-scope="g5"><button class="fbtn" data-sem="0" aria-pressed="true">Todas</button><button class="fbtn" data-sem="1" aria-pressed="false">S1 · 7-13 sep</button><button class="fbtn" data-sem="2" aria-pressed="false">S2 · 14-20 sep</button><button class="fbtn" data-sem="3" aria-pressed="false">S3 · 21-27 sep</button><button class="fbtn" data-sem="4" aria-pressed="false">S4 · 28 sep - 2 oct</button></div><div class="avance"><span><b class="n">0</b> de <b class="tot">0</b> marcadas</span><button type="button" class="reabrir">Reabrir todas</button></div>
-<div class="semana" data-sem="1"><div class="semana-cab"><span class="snum">S1</span><div><h3>El error que cuesta plata (ACERO)</h3><span class="rango">Lun 7 – Vie 11 de septiembre</span></div></div><p class="nota">Arranca el mes con lo que mejor funciono en agosto: el dato de calculo verificable. El hilo de la semana lleva del error tipico al recurso gratuito de las 5 verificaciones.</p>
+<div class="semana" data-sem="1"><div class="semana-cab"><span class="snum">S1</span><div><h3>El error que cuesta plata (ACERO)</h3><span class="rango">Lun 7 – Vie 11 de septiembre</span></div></div><p class="nota">Arranca el mes con lo que mejor funcionó en agosto: el dato de cálculo verificable. El hilo de la semana lleva del error típico al recurso gratuito de las 5 verificaciones.</p>
 <div class="dia col" data-k="g5-lunes-7"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-lunes-7"><span aria-hidden="true"></span></label>Lunes 7 · <span>El arranque: tres señales</span></h4>
 <div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
 <div class="pegar">Lunes. Café, y una pregunta que me hizo un alumno el viernes y no me dejó dormir.</div>
@@ -716,8 +752,8 @@ Duración 35-40 s. Guion completo segundo a segundo en matriz-viral/matriz/reels
 <div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Reloj de arena estilizado sobre fondo azul marino, con la arena cayendo convertida en pequeños iconos de engranaje y código. Minimalista, línea fina. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
 </div>
 <div class="hist"><div class="hist-cab"><span class="frame">4</span><span class="rol rol-vent">VENTA</span></div>
-<div class="pegar">Mañana te muestro exactamente cómo se lo pregunté. Si no quieres esperar, respóndeme GUÍA.</div>
-<p class="sticker"><b>Sticker:</b> RESPONDER CON PALABRA: «GUÍA». ⚠ Solo si el recurso ya existe; si no, cambiar a «GPT».</p>
+<div class="pegar">Mañana te muestro exactamente cómo se lo pregunté. Si no quieres esperar, respóndeme CHATGPT.</div>
+<p class="sticker"><b>Sticker:</b> RESPONDER CON PALABRA: «CHATGPT».</p>
 <div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Burbuja de chat de IA sobre fondo azul, con una respuesta técnica esquematizada en líneas (sin texto real), y un pequeño ícono de Revit-like en la esquina. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
 </div>
 </div>
@@ -738,8 +774,8 @@ Duración 35-40 s. Guion completo segundo a segundo en matriz-viral/matriz/reels
 <div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Balanza de dos platos sobre fondo azul: en un plato un chip/circuito, en el otro un casco de ingeniero. Equilibrada. Línea fina, elegante. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
 </div>
 <div class="hist"><div class="hist-cab"><span class="frame">4</span><span class="rol rol-vent">VENTA</span></div>
-<div class="pegar">Ojo: la IA acelera, el criterio es tuyo. Eso es justo lo que enseñamos en el módulo BIM + IA. Respóndeme RUTA y te digo si es el tuyo.</div>
-<p class="sticker"><b>Sticker:</b> RESPONDER CON PALABRA: «RUTA». ⚠ Requiere el disparador montado.</p>
+<div class="pegar">Ojo: la IA acelera, el criterio es tuyo. Eso es justo lo que enseñamos en el módulo BIM + IA. Respóndeme NIVEL y el test te dice si ese módulo es el tuyo.</div>
+<p class="sticker"><b>Sticker:</b> RESPONDER CON PALABRA: «NIVEL».</p>
 <div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Cuatro puertas alineadas en perspectiva sobre suelo de retícula azul; la cuarta está iluminada en ámbar. Estilo arquitectónico limpio. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
 </div>
 </div>
@@ -765,362 +801,362 @@ Duración 35-40 s. Guion completo segundo a segundo en matriz-viral/matriz/reels
 <div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Perfil de acero tipo I en primer plano con profundidad de campo, sobre fondo azul marino con retícula técnica tenue. Iluminación de estudio. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
 </div>
 </div>
-<div class="dia col" data-k="g5-viernes-11"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-viernes-11"><span aria-hidden="true"></span></label>Viernes 11 · <span>El dato del mes: la cuantía mínima</span></h4>
-<div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
-<div class="pegar">Respondo las preguntas de ayer. La primera me la hacen mucho.</div>
+<div class="dia col" data-k="g5-viernes-11"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-viernes-11"><span aria-hidden="true"></span></label>Viernes 11 · <span>Cierra la guía y abre el caso</span><span class="papel">CIERRA Y ABRE EL BUCLE</span></h4>
+<div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span><span class="fondo f-pan">REAL · pantalla</span></div>
+<div class="pegar">[446] personas abrieron la guía esta semana.</div>
 <p class="sticker"><b>Sticker:</b> Ninguno.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Pantalla de teléfono con varias burbujas de mensajes entrantes (sin texto legible), sobre un escritorio con planos. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Grabar la pantalla de la analítica con el número de aperturas, sin retocar. Que se vea que es un panel de verdad.</div></div>
 </div>
-<div class="hist"><div class="hist-cab"><span class="frame">2</span><span class="rol rol-valo">VALOR</span></div>
-<div class="pegar">«¿Con qué cuantía arranco una columna?» El código dice 1% del área bruta. En una 30×30 son 9 cm². 4Ø18 cumplen. 4Ø16 NO.</div>
+<div class="hist"><div class="hist-cab"><span class="frame">2</span><span class="rol rol-valo">VALOR</span><span class="fondo f-pan">REAL · pantalla</span></div>
+<div class="pegar">La número 06 fue la que más me escribieron: elementos duplicados.</div>
 <p class="sticker"><b>Sticker:</b> Ninguno.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Sección transversal de una columna cuadrada de hormigón dibujada técnicamente, con 4 varillas en las esquinas, cotas limpias, sobre fondo azul marino. Estilo pizarra técnica. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Grabar el schedule de Revit bajando por las filas repetidas. Marcar dos o tres en ámbar al editar.</div></div>
 </div>
-<div class="hist"><div class="hist-cab"><span class="frame">3</span><span class="rol rol-inte">INTERACCIÓN</span></div>
-<div class="pegar">¿Sabías el dato?</div>
-<p class="sticker"><b>Sticker:</b> QUIZ con respuesta correcta: «¿4Ø16 cumplen en una 30×30?» Sí / No. Los que fallan reciben DM con la explicación — es el lead más calificado de la semana.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Dos secciones de columna lado a lado, una con marca de verificación verde y otra con marca ámbar de advertencia. Sin texto. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
+<div class="hist"><div class="hist-cab"><span class="frame">3</span><span class="rol rol-inte">INTERACCIÓN</span><span class="fondo f-cam">REAL · cámara</span></div>
+<div class="pegar">¿Te ha pasado que el presupuesto no cuadra con el modelo?</div>
+<p class="sticker"><b>Sticker:</b> ENCUESTA de 2 opciones: «Sí, más de una vez» / «Nunca lo he revisado».</p>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Gabriel de espaldas frente al monitor, medio cuerpo, luz lateral. 10 segundos, sin hablar.</div></div>
 </div>
-<div class="hist"><div class="hist-cab"><span class="frame">4</span><span class="rol rol-vent">VENTA</span></div>
-<div class="pegar">Revisar esto a mano en cada elemento es lento. Tenemos una herramienta con las 5 verificaciones que usamos nosotros — es gratis. Respóndeme ACERO.</div>
-<p class="sticker"><b>Sticker:</b> RESPONDER CON PALABRA: «ACERO».</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Lista de cinco casillas de verificación estilizadas sobre fondo azul, todas marcadas en ámbar, junto a la silueta de una viga metálica. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
+<div class="hist"><div class="hist-cab"><span class="frame">4</span><span class="rol rol-cier">CIERRE</span><span class="fondo f-gen">GENERADA</span></div>
+<div class="pegar">El lunes les cuento lo que ese error costó en una casa de dos pisos.</div>
+<p class="sticker"><b>Sticker:</b> CUENTA REGRESIVA al lunes 9:00.</p>
+<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Perfil de acero tipo I en primer plano con profundidad de campo, sobre fondo azul marino con retícula técnica tenue. Iluminación de estudio. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
 </div>
 </div>
 </div>
-<div class="semana" data-sem="2"><div class="semana-cab"><span class="snum">S2</span><div><h3>Coordinar y automatizar (BIM + IA)</h3><span class="rango">Lun 14 – Vie 18 de septiembre</span></div></div><p class="nota">La semana sube un nivel: del cálculo puntual a la coordinación del proyecto. Prepara el terreno para el carrusel de las 4 puertas de la semana 3.</p>
-<div class="dia col" data-k="g5-lunes-14"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-lunes-14"><span aria-hidden="true"></span></label>Lunes 14 · <span>Coordinación: el choque que se paga dos veces</span></h4>
-<div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
-<div class="pegar">Historia real de obra (sin nombres): una viga y un ducto que no se hablaban.</div>
+<div class="semana" data-sem="2"><div class="semana-cab"><span class="snum">S2</span><div><h3>Dos modelos, la misma losa</h3><span class="rango">Lun 14 – Vie 18 de septiembre</span></div></div><p class="nota">El caso real de Gabriel: una vivienda de dos pisos de hormigón armado con estructuras, arquitectura e instalaciones. Tres disciplinas en un proyecto pequeño es justo donde se ven los cruces, y es el tamaño de proyecto que la audiencia reconoce como suyo. El lunes se promete una cifra y el jueves se paga: ese es el bucle.</p>
+<div class="dia col" data-k="g5-lunes-14"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-lunes-14"><span aria-hidden="true"></span></label>Lunes 14 · <span>El presupuesto que no cuadraba</span><span class="papel">ABRE EL BUCLE</span></h4>
+<div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span><span class="fondo f-cam">REAL · cámara</span></div>
+<div class="pegar">Una vivienda de dos pisos. Nada complicado: estructuras, arquitectura e instalaciones.</div>
 <p class="sticker"><b>Sticker:</b> Ninguno.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Foto de obra en construcción, estructura metálica vista desde abajo con instalaciones pasando entre vigas. Luz natural, realista. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Gabriel en la obra de la casa, con el plano impreso en la mano. 20 segundos caminando, sin hablar.</div></div>
 </div>
-<div class="hist"><div class="hist-cab"><span class="frame">2</span><span class="rol rol-valo">VALOR</span></div>
-<div class="pegar">Detectado en el modelo: una tarde de trabajo. Detectado en obra: reprogramar, romper y volver a pedir material.</div>
+<div class="hist"><div class="hist-cab"><span class="frame">2</span><span class="rol rol-valo">VALOR</span><span class="fondo f-pan">REAL · pantalla</span></div>
+<div class="pegar">El presupuesto de hormigón salió [$2.400] por encima. Y nadie calculó mal.</div>
 <p class="sticker"><b>Sticker:</b> Ninguno.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Comparación visual en dos columnas: a la izquierda un modelo 3D con una alerta ámbar pequeña; a la derecha una obra real con una zona demolida. Sin texto. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Grabar el modelo de la casa girando despacio en Revit, 8 segundos.</div></div>
 </div>
-<div class="hist"><div class="hist-cab"><span class="frame">3</span><span class="rol rol-inte">INTERACCIÓN</span></div>
-<div class="pegar">¿Cuándo detectas tú las interferencias?</div>
-<p class="sticker"><b>Sticker:</b> ENCUESTA: «En el modelo» / «En obra 😅». A los segundos se les manda el carrusel de hoy por DM.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Línea de tiempo horizontal de un proyecto con dos puntos marcados: uno temprano en ámbar, uno tardío en rojo apagado. Minimalista. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
+<div class="hist"><div class="hist-cab"><span class="frame">3</span><span class="rol rol-inte">INTERACCIÓN</span><span class="fondo f-cam">REAL · cámara</span></div>
+<div class="pegar">¿Te ha pasado que el presupuesto no cuadra con el modelo?</div>
+<p class="sticker"><b>Sticker:</b> ENCUESTA: «Sí, más de una vez» / «Nunca lo he revisado». A quien vote se le contesta por DM.</p>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Gabriel en el escritorio, de perfil, mirando el monitor.</div></div>
 </div>
-<div class="hist"><div class="hist-cab"><span class="frame">4</span><span class="rol rol-vent">VENTA</span></div>
-<div class="pegar">Coordinar disciplinas es un oficio, y se aprende. Respóndeme BIM y te cuento cómo lo enseñamos.</div>
-<p class="sticker"><b>Sticker:</b> RESPONDER CON PALABRA: «BIM».</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Tres modelos superpuestos en capas separadas (arquitectura, estructura, instalaciones) en explosión vertical, cada capa en un tono distinto. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
+<div class="hist"><div class="hist-cab"><span class="frame">4</span><span class="rol rol-cier">CIERRE</span><span class="fondo f-gen">GENERADA</span></div>
+<div class="pegar">El jueves les enseño dónde estaban esos [$2.400].</div>
+<p class="sticker"><b>Sticker:</b> CUENTA REGRESIVA al jueves.</p>
+<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Dos siluetas de perfil frente a un modelo estructural: una mira una pieza suelta, la otra el conjunto completo. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
 </div>
 </div>
-<div class="dia col" data-k="g5-martes-15"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-martes-15"><span aria-hidden="true"></span></label>Martes 15 · <span>Comunidad y blog</span></h4>
-<div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
-<div class="pegar">Nuestra comunidad de WhatsApp ya está a tope de gente que pregunta cosas buenísimas.</div>
+<div class="dia col" data-k="g5-martes-15"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-martes-15"><span aria-hidden="true"></span></label>Martes 15 · <span>La prueba: la losa contada dos veces</span><span class="papel">LA PRUEBA</span></h4>
+<div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span><span class="fondo f-cam">REAL · cámara</span></div>
+<div class="pegar">Me pidieron la prueba. Aquí está, sin editar.</div>
 <p class="sticker"><b>Sticker:</b> Ninguno.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Ilustración de red de puntos conectados formando la silueta de un edificio, sobre azul marino, con algunos nodos brillando en ámbar. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Gabriel encogiendose de hombros frente al monitor, plano corto.</div></div>
 </div>
-<div class="hist"><div class="hist-cab"><span class="frame">2</span><span class="rol rol-valo">VALOR</span></div>
-<div class="pegar">Del blog del sábado: la IA en arquitectura no te quita el trabajo. Te quita las tareas que odias del trabajo.</div>
+<div class="hist"><div class="hist-cab"><span class="frame">2</span><span class="rol rol-valo">VALOR</span><span class="fondo f-pan">REAL · pantalla</span></div>
+<div class="pegar">La losa de la planta alta: [18 m³] de hormigón.</div>
 <p class="sticker"><b>Sticker:</b> Ninguno.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Escritorio dividido: una mitad con papeles y tareas repetitivas apiladas, la otra despejada con una sola maqueta bien resuelta. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Grabar la losa seleccionada en Revit con su cantidad visible en las propiedades.</div></div>
 </div>
-<div class="hist"><div class="hist-cab"><span class="frame">3</span><span class="rol rol-inte">INTERACCIÓN</span></div>
-<div class="pegar">¿Qué tarea te quitarías hoy mismo?</div>
-<p class="sticker"><b>Sticker:</b> CAJA DE PREGUNTAS abierta.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Manos apartando una pila de documentos para dejar ver un modelo 3D limpio debajo. Gesto de despejar. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-<div class="hist"><div class="hist-cab"><span class="frame">4</span><span class="rol rol-vent">VENTA</span></div>
-<div class="pegar">Si tu respuesta es «documentación» o «cantidades», eso ya se automatiza. Respóndeme IA.</div>
-<p class="sticker"><b>Sticker:</b> RESPONDER CON PALABRA: «IA».</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Tabla de cantidades estilizada generándose sola desde un modelo 3D, con líneas de datos fluyendo en ámbar. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-</div>
-<div class="dia col" data-k="g5-miercoles-16"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-miercoles-16"><span aria-hidden="true"></span></label>Miércoles 16 · <span>Sobredimensionar no es ir por lo seguro</span></h4>
-<div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
-<div class="pegar">Esta frase levantó ampolla la última vez que la dije. La repito igual.</div>
+<div class="hist"><div class="hist-cab"><span class="frame">3</span><span class="rol rol-valo">VALOR</span><span class="fondo f-pan">REAL · pantalla</span></div>
+<div class="pegar">Estaba en el modelo de estructuras. Y otra vez en el de arquitectura.</div>
 <p class="sticker"><b>Sticker:</b> Ninguno.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Retrato de perfil de un ingeniero mirando un plano con expresión seria, luz lateral dramática pero sobria. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Grabar los dos modelos superpuestos, encendiendo y apagando uno para que se vea la repetición.</div></div>
 </div>
-<div class="hist"><div class="hist-cab"><span class="frame">2</span><span class="rol rol-valo">VALOR</span></div>
-<div class="pegar">Sobredimensionar no te hace más seguro. Te hace más caro — y le traslada tu inseguridad al presupuesto del cliente.</div>
+<div class="hist"><div class="hist-cab"><span class="frame">4</span><span class="rol rol-inte">INTERACCIÓN</span><span class="fondo f-cam">REAL · cámara</span></div>
+<div class="pegar">¿Qué duda tienes de esto? Mañana contesto en cámara.</div>
+<p class="sticker"><b>Sticker:</b> CAJA DE PREGUNTAS. Solo se pone si mañana se contesta de verdad.</p>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Gabriel mirando a cámara, plano medio, fondo de oficina desenfocado.</div></div>
+</div>
+</div>
+<div class="dia col" data-k="g5-miercoles-16"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-miercoles-16"><span aria-hidden="true"></span></label>Miércoles 16 · <span>¿De quién es la culpa?</span><span class="papel">LA OBJECIÓN</span></h4>
+<div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span><span class="fondo f-cam">REAL · cámara</span></div>
+<div class="pegar">Ayer preguntaron lo mismo tres veces: ¿de quién es la culpa?</div>
 <p class="sticker"><b>Sticker:</b> Ninguno.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Dos vigas idénticas en sección, una notablemente más robusta que la otra, con una etiqueta de costo estilizada (símbolo, no texto) más grande en la robusta. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Gabriel en el escritorio leyendo los mensajes en el teléfono.</div></div>
 </div>
-<div class="hist"><div class="hist-cab"><span class="frame">3</span><span class="rol rol-inte">INTERACCIÓN</span></div>
-<div class="pegar">¿Te ha pasado que revisas un diseño ajeno y está sobrado?</div>
-<p class="sticker"><b>Sticker:</b> ENCUESTA: «Siempre» / «Casi nunca».</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Lupa sobre un plano estructural, con algunos elementos resaltados en ámbar. Estilo técnico limpio. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-<div class="hist"><div class="hist-cab"><span class="frame">4</span><span class="rol rol-vent">VENTA</span></div>
-<div class="pegar">El reel completo está en el feed. Y si quieres las 5 verificaciones que uso antes de firmar: respóndeme ACERO.</div>
-<p class="sticker"><b>Sticker:</b> ENLACE al reel + RESPONDER CON PALABRA: «ACERO».</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Sello o timbre de aprobación de ingeniero sobre un plano, en ámbar, con la estructura al fondo. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-</div>
-<div class="dia col" data-k="g5-jueves-17"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-jueves-17"><span aria-hidden="true"></span></label>Jueves 17 · <span>VENTA · La objeción del tiempo</span></h4>
-<div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
-<div class="pegar">«Me interesa, pero no tengo tiempo.» Me lo escribieron tres veces esta semana.</div>
+<div class="hist"><div class="hist-cab"><span class="frame">2</span><span class="rol rol-valo">VALOR</span><span class="fondo f-gen">GENERADA</span></div>
+<div class="pegar">Del de estructuras, dicen unos. Del de arquitectura, dicen otros.</div>
 <p class="sticker"><b>Sticker:</b> Ninguno.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Agenda de papel abierta con la semana llena de anotaciones, junto a un teléfono y un casco de obra. Realista, cálido. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
+<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Dos siluetas de perfil frente a un modelo estructural: una mira una pieza suelta, la otra el conjunto completo. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
 </div>
-<div class="hist"><div class="hist-cab"><span class="frame">2</span><span class="rol rol-valo">VALOR</span></div>
-<div class="pegar">Es 100% asincrónico. No hay horario al que llegar tarde, y el acceso no caduca. Avanzas el sábado a las 11 de la noche si quieres.</div>
-<p class="sticker"><b>Sticker:</b> Ninguno.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Reloj mostrando una hora nocturna junto a una pantalla encendida con una clase en reproducción, en una habitación en penumbra. Íntimo. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
+<div class="hist"><div class="hist-cab"><span class="frame">3</span><span class="rol rol-inte">INTERACCIÓN</span><span class="fondo f-pan">REAL · pantalla</span></div>
+<div class="pegar">Yo creo que de ninguno de los dos. Voten.</div>
+<p class="sticker"><b>Sticker:</b> ENCUESTA: «Del de estructuras» / «Del de arquitectura». El resultado se usa mañana.</p>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Grabar el modelo federado con las dos disciplinas en colores distintos.</div></div>
 </div>
-<div class="hist"><div class="hist-cab"><span class="frame">3</span><span class="rol rol-inte">INTERACCIÓN</span></div>
-<div class="pegar">¿Ese era tu freno?</div>
-<p class="sticker"><b>Sticker:</b> ENCUESTA: «Sí, era eso» / «El mío es otro». A los segundos se les pregunta cuál por DM.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Candado abriéndose estilizado sobre fondo azul, con una ruta de puntos continuando después de él en ámbar. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-<div class="hist"><div class="hist-cab"><span class="frame">4</span><span class="rol rol-vent">VENTA</span></div>
-<div class="pegar">Si quieres el temario completo y ver si te cuadra, respóndeme ACERO.</div>
-<p class="sticker"><b>Sticker:</b> RESPONDER CON PALABRA: «ACERO».</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Documento de temario estilizado en perspectiva, con capítulos como bloques apilados, sobre fondo azul marino. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-</div>
-<div class="dia col" data-k="g5-viernes-18"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-viernes-18"><span aria-hidden="true"></span></label>Viernes 18 · <span>Cierre de semana + recurso</span></h4>
-<div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
-<div class="pegar">Resumen de la semana en 10 segundos, por si te perdiste algo.</div>
-<p class="sticker"><b>Sticker:</b> Ninguno.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Mosaico de tres miniaturas verticales en fila sobre fondo azul marino, como un resumen visual de publicaciones. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-<div class="hist"><div class="hist-cab"><span class="frame">2</span><span class="rol rol-valo">VALOR</span></div>
-<div class="pegar">Lo más comentado: que detectar un choque tarde cuesta más que el error en sí.</div>
-<p class="sticker"><b>Sticker:</b> Ninguno.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Gráfico de barras ascendente muy simple donde la última barra, en ámbar, es desproporcionadamente alta. Representa el costo creciente. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-<div class="hist"><div class="hist-cab"><span class="frame">3</span><span class="rol rol-inte">INTERACCIÓN</span></div>
-<div class="pegar">¿Qué quieres que tratemos la semana que viene?</div>
-<p class="sticker"><b>Sticker:</b> CAJA DE PREGUNTAS. Lo que más se repita entra a la matriz de octubre.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Buzón de sugerencias estilizado en línea fina, con sobres entrando, sobre fondo azul. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-<div class="hist"><div class="hist-cab"><span class="frame">4</span><span class="rol rol-vent">VENTA</span></div>
-<div class="pegar">Mañana sale el comparativo ETABS vs SAP2000 en el blog. Y si aún no tienes la calculadora de zapatas: respóndeme ZAPATA, es gratis.</div>
-<p class="sticker"><b>Sticker:</b> CUENTA REGRESIVA al blog + RESPONDER CON PALABRA: «ZAPATA».</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Calculadora técnica junto a un croquis de zapata aislada con sus cotas, sobre superficie de trabajo azul. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-</div>
-</div>
-<div class="semana" data-sem="3"><div class="semana-cab"><span class="snum">S3</span><div><h3>¿En qué etapa estás? (las 4 puertas del Máster)</h3><span class="rango">Lun 21 – Vie 25 de septiembre</span></div></div><p class="nota">La semana del lanzamiento de la nueva arquitectura. Todo el hilo lleva al diagnostico: el objetivo es que la gente se ubique en una etapa y escriba.</p>
-<div class="dia col" data-k="g5-lunes-21"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-lunes-21"><span aria-hidden="true"></span></label>Lunes 21 · <span>Los errores que delatan la etapa</span></h4>
-<div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
-<div class="pegar">Llevo años revisando modelos ajenos. Los errores se repiten tanto que ya sé en qué etapa está cada quien.</div>
-<p class="sticker"><b>Sticker:</b> Ninguno.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Pila de planos revisados con marcas de corrección en ámbar, vista cenital, sobre mesa de trabajo. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-<div class="hist"><div class="hist-cab"><span class="frame">2</span><span class="rol rol-valo">VALOR</span></div>
-<div class="pegar">El error #1 de quien empieza: modelar sin decidir antes los estándares. Se ve bonito y no sirve para coordinar.</div>
-<p class="sticker"><b>Sticker:</b> Ninguno.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Dos modelos 3D idénticos por fuera, uno con estructura interna ordenada por capas y otro con las capas mezcladas y caóticas. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-<div class="hist"><div class="hist-cab"><span class="frame">3</span><span class="rol rol-inte">INTERACCIÓN</span></div>
-<div class="pegar">¿Tu oficina tiene un BEP escrito?</div>
-<p class="sticker"><b>Sticker:</b> ENCUESTA: «Sí» / «¿Un qué?». Los segundos son el público exacto del módulo 1.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Documento de protocolo estilizado con una portada limpia y pestañas laterales, sobre fondo azul marino. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-<div class="hist"><div class="hist-cab"><span class="frame">4</span><span class="rol rol-vent">VENTA</span></div>
-<div class="pegar">Mañana te explico las 4 etapas por las que pasa todo el mundo. Y por qué casi nadie empieza donde cree.</div>
-<p class="sticker"><b>Sticker:</b> CUENTA REGRESIVA al carrusel del miércoles.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Escalera de cuatro peldaños en isométrico sobre fondo azul, con una figura pequeña en el primer peldaño y el cuarto iluminado en ámbar. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-</div>
-<div class="dia col" data-k="g5-martes-22"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-martes-22"><span aria-hidden="true"></span></label>Martes 22 · <span>Mitos de la automatización</span></h4>
-<div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
-<div class="pegar">Tres cosas que me dicen sobre automatizar y que son mentira. Van rápido.</div>
-<p class="sticker"><b>Sticker:</b> Ninguno.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Tres burbujas de diálogo vacías en cascada sobre fondo azul marino, la última tachada en ámbar. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-<div class="hist"><div class="hist-cab"><span class="frame">2</span><span class="rol rol-valo">VALOR</span></div>
-<div class="pegar">«Hay que saber programar.» No: hay que saber QUÉ automatizar. La parte difícil es identificar la tarea, no escribir el script.</div>
-<p class="sticker"><b>Sticker:</b> Ninguno.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Diagrama de nodos tipo programación visual conectados con líneas limpias, muy ordenado, sobre fondo azul. Estilo Dynamo. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-<div class="hist"><div class="hist-cab"><span class="frame">3</span><span class="rol rol-inte">INTERACCIÓN</span></div>
-<div class="pegar">¿Has automatizado algo alguna vez, aunque sea pequeño?</div>
-<p class="sticker"><b>Sticker:</b> ENCUESTA: «Sí» / «Nunca». A los «nunca» se les manda por dónde empezar.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Engranaje pequeño moviendo uno grande, línea fina en ámbar sobre azul. Metáfora de esfuerzo mínimo, efecto grande. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-<div class="hist"><div class="hist-cab"><span class="frame">4</span><span class="rol rol-vent">VENTA</span></div>
-<div class="pegar">El módulo BIM + IA es exactamente esto, con proyectos reales. Respóndeme RUTA y te digo si te toca ese o uno antes.</div>
-<p class="sticker"><b>Sticker:</b> RESPONDER CON PALABRA: «RUTA».</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Cerebro estilizado hecho de circuitos conectado a un modelo de edificio, ambos en línea fina blanca con acentos ámbar. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-</div>
-<div class="dia col" data-k="g5-miercoles-23"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-miercoles-23"><span aria-hidden="true"></span></label>Miércoles 23 · <span>LAS 4 PUERTAS (la pieza del mes)</span></h4>
-<div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
-<div class="pegar">Hoy publicamos algo que llevábamos meses ordenando. Reorganizamos toda la formación.</div>
-<p class="sticker"><b>Sticker:</b> Ninguno.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Plano arquitectónico de una planta con cuatro accesos marcados en ámbar, vista cenital, estilo blueprint sobre azul marino. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-<div class="hist"><div class="hist-cab"><span class="frame">2</span><span class="rol rol-valo">VALOR</span></div>
-<div class="pegar">«Quiero aprender BIM» es como decir «quiero aprender medicina». Depende de dónde estés parado. Por eso ahora hay 4 puertas: Estructura, Coordina, Gestiona, Automatiza.</div>
-<p class="sticker"><b>Sticker:</b> Ninguno.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Cuatro puertas arquitectónicas en fila, cada una con un ícono distinto encima (checklist, cubos, gráfica, circuito), la retícula del suelo en perspectiva. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-<div class="hist"><div class="hist-cab"><span class="frame">3</span><span class="rol rol-inte">INTERACCIÓN</span></div>
-<div class="pegar">¿Cuál dirías que es la tuya?</div>
-<p class="sticker"><b>Sticker:</b> QUIZ de 4 opciones (sin respuesta correcta): Estructura / Coordina / Gestiona / Automatiza. Es el sticker más importante del mes: cada respuesta es un lead calificado.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Las mismas cuatro puertas vistas de frente en composición simétrica, numeradas visualmente por altura creciente. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-<div class="hist"><div class="hist-cab"><span class="frame">4</span><span class="rol rol-vent">VENTA</span></div>
-<div class="pegar">Cada puerta entrega su propia microcredencial avalada internacionalmente. Respóndeme RUTA y te digo cuál te toca con tu caso.</div>
-<p class="sticker"><b>Sticker:</b> ENLACE al carrusel + RESPONDER CON PALABRA: «RUTA».</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Sello o medalla de certificación estilizada en ámbar sobre fondo azul, sobria y profesional, sin texto. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-</div>
-<div class="dia col" data-k="g5-jueves-24"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-jueves-24"><span aria-hidden="true"></span></label>Jueves 24 · <span>VENTA · El espejo</span></h4>
-<div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
-<div class="pegar">Ayer alguien me respondió: «llevo 3 años modelando bien y sigo en lo mismo».</div>
-<p class="sticker"><b>Sticker:</b> Ninguno.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Persona de espaldas frente a una ventana grande de oficina mirando la ciudad, luz de tarde. Reflexivo, no triste. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-<div class="hist"><div class="hist-cab"><span class="frame">2</span><span class="rol rol-valo">VALOR</span></div>
-<div class="pegar">Modelar bien te hace indispensable en la tarea. Decidir te hace indispensable en el proyecto. El salto no es de software: es de rol.</div>
-<p class="sticker"><b>Sticker:</b> Ninguno.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Dos siluetas: una frente a una pantalla ejecutando, otra frente a un equipo señalando un plano en una mesa. Contraste de rol. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-<div class="hist"><div class="hist-cab"><span class="frame">3</span><span class="rol rol-inte">INTERACCIÓN</span></div>
-<div class="pegar">¿En qué peldaño estás hoy, de verdad?</div>
-<p class="sticker"><b>Sticker:</b> QUIZ: Modelador / Coordinador / BIM Manager / BIM + IA.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Cuatro peldaños ascendentes con etiquetas visuales (herramienta, engranajes, gráfica, circuito), el segundo iluminado. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-<div class="hist"><div class="hist-cab"><span class="frame">4</span><span class="rol rol-vent">VENTA</span></div>
-<div class="pegar">Hay un test de 20 preguntas que te lo dice sin adornos. Respóndeme NIVEL y te lo mando.</div>
-<p class="sticker"><b>Sticker:</b> RESPONDER CON PALABRA: «NIVEL».</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Cuestionario estilizado en pantalla de teléfono con barra de progreso en ámbar, sin texto legible. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-</div>
-<div class="dia col" data-k="g5-viernes-25"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-viernes-25"><span aria-hidden="true"></span></label>Viernes 25 · <span>El espejo en video</span></h4>
-<div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
-<div class="pegar">Grabé este en una sola toma. Sale de una conversación real de esta semana.</div>
-<p class="sticker"><b>Sticker:</b> Ninguno.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Set casero de grabación con luz suave y una silla vacía frente a la cámara, listo para grabar. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-<div class="hist"><div class="hist-cab"><span class="frame">2</span><span class="rol rol-valo">VALOR</span></div>
-<div class="pegar">El reel de hoy: por qué el salto que más cuesta es del 1 al 2, y no tiene nada que ver con aprender otro programa.</div>
+<div class="hist"><div class="hist-cab"><span class="frame">4</span><span class="rol rol-cier">CIERRE</span><span class="fondo f-pan">REAL · pantalla</span></div>
+<div class="pegar">Hoy salió el reel completo: tus planos están bien, tu presupuesto está mal.</div>
 <p class="sticker"><b>Sticker:</b> ENLACE al reel.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Salto visual entre dos plataformas separadas por un vacío, con una figura a punto de cruzar, en línea fina sobre azul. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-<div class="hist"><div class="hist-cab"><span class="frame">3</span><span class="rol rol-inte">INTERACCIÓN</span></div>
-<div class="pegar">¿Qué te frena a ti para dar ese salto?</div>
-<p class="sticker"><b>Sticker:</b> CAJA DE PREGUNTAS.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Puente incompleto sobre fondo azul marino, con las últimas piezas flotando a punto de encajar en ámbar. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-<div class="hist"><div class="hist-cab"><span class="frame">4</span><span class="rol rol-vent">VENTA</span></div>
-<div class="pegar">Mañana en el blog: cómo elegir software de estructuras sin casarte con una marca. Y si quieres ubicarte primero, respóndeme NIVEL.</div>
-<p class="sticker"><b>Sticker:</b> CUENTA REGRESIVA al blog + RESPONDER CON PALABRA: «NIVEL».</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Tres logos genéricos de software representados como formas abstractas en una balanza, sin marcas reales. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Captura del reel publicado en el perfil.</div></div>
 </div>
 </div>
-</div>
-<div class="semana" data-sem="4"><div class="semana-cab"><span class="snum">S4</span><div><h3>Nunca estudias solo (el tutor de IA) + cierre</h3><span class="rango">Lun 28 de septiembre – Vie 2 de octubre</span></div></div><p class="nota">Cierra el mes con el diferenciador nuevo de ACERO y deja la cuenta caliente para octubre. TODA la semana depende de que el tutor este desplegado.</p>
-<div class="dia col" data-k="g5-lunes-28"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-lunes-28"><span aria-hidden="true"></span></label>Lunes 28 · <span>La duda de las 11 de la noche</span></h4>
-<div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
-<div class="pegar">El punto débil de estudiar por tu cuenta siempre fue el mismo, y no es la falta de ganas.</div>
+<div class="dia col" data-k="g5-jueves-17"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-jueves-17"><span aria-hidden="true"></span></label>Jueves 17 · <span>VENTA · Dónde estaban los $2.400</span><span class="papel">EL PAGO DEL BUCLE</span></h4>
+<div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span><span class="fondo f-pan">REAL · pantalla</span></div>
+<div class="pegar">Prometí enseñarles dónde estaban los [$2.400]. Aquí está.</div>
 <p class="sticker"><b>Sticker:</b> Ninguno.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Habitación en penumbra con una sola lámpara encendida sobre un escritorio con apuntes y una pantalla. Sensación de estudio nocturno. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Grabar el schedule y el presupuesto lado a lado, señalando la fila que se repite.</div></div>
 </div>
-<div class="hist"><div class="hist-cab"><span class="frame">2</span><span class="rol rol-valo">VALOR</span></div>
-<div class="pegar">Es la duda que aparece a las 11 de la noche, cuando no hay a quién preguntarle. Se responde tres días después, o nunca.</div>
+<div class="hist"><div class="hist-cab"><span class="frame">2</span><span class="rol rol-valo">VALOR</span><span class="fondo f-pan">REAL · pantalla</span></div>
+<div class="pegar">Ganó «del de arquitectura» con [61%]. Es la respuesta cómoda.</div>
 <p class="sticker"><b>Sticker:</b> Ninguno.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Signo de interrogación formado por líneas de un plano técnico, flotando en un espacio oscuro azul marino. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Captura del resultado de la encuesta de ayer, tal cual.</div></div>
 </div>
-<div class="hist"><div class="hist-cab"><span class="frame">3</span><span class="rol rol-inte">INTERACCIÓN</span></div>
-<div class="pegar">¿Te ha pasado abandonar un curso por quedarte trabado?</div>
-<p class="sticker"><b>Sticker:</b> ENCUESTA: «Sí, más de una vez» / «Nunca».</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Barra de progreso de un curso detenida a la mitad, en tonos apagados con el tramo restante en gris. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-<div class="hist"><div class="hist-cab"><span class="frame">4</span><span class="rol rol-vent">VENTA</span></div>
-<div class="pegar">Eso se acabó en la Especialización en Acero. Te lo muestro mañana. Respóndeme ACERO si no quieres esperar.</div>
-<p class="sticker"><b>Sticker:</b> CUENTA REGRESIVA + RESPONDER CON PALABRA: «ACERO».</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Burbuja de chat iluminada en ámbar en medio de una habitación oscura, como una respuesta que llega de noche. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-</div>
-<div class="dia col" data-k="g5-martes-29"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-martes-29"><span aria-hidden="true"></span></label>Martes 29 · <span>Cómo funciona el tutor</span></h4>
-<div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
-<div class="pegar">Llevamos semanas construyendo esto y hoy por fin lo puedo enseñar.</div>
+<div class="hist"><div class="hist-cab"><span class="frame">3</span><span class="rol rol-valo">VALOR</span><span class="fondo f-cam">REAL · cámara</span></div>
+<div class="pegar">La verdad: nadie revisó el cruce. En el proceso no existe ese paso.</div>
 <p class="sticker"><b>Sticker:</b> Ninguno.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Pantalla de computadora mostrando una interfaz de chat limpia y profesional, vista en ángulo, en un escritorio ordenado. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Gabriel en la obra, plano medio, hablando a cámara.</div></div>
 </div>
-<div class="hist"><div class="hist-cab"><span class="frame">2</span><span class="rol rol-valo">VALOR</span></div>
-<div class="pegar">Un tutor de IA entrenado SOLO con las clases del programa: los 4 cursos, más de 40 sesiones. Le preguntas normal y te responde con el contenido de tu curso, diciéndote en qué sesión está.</div>
+<div class="hist"><div class="hist-cab"><span class="frame">4</span><span class="rol rol-vent">VENTA</span><span class="fondo f-gen">GENERADA</span></div>
+<div class="pegar">En una casa son [$2.400]. En lo que haces tú, multiplícalo. Respóndeme ACERO y te mando el temario.</div>
+<p class="sticker"><b>Sticker:</b> RESPONDER CON PALABRA: «ACERO» → lo agarra el bot.</p>
+<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Perfil de acero tipo I en primer plano con profundidad de campo, sobre fondo azul marino con retícula técnica tenue. Iluminación de estudio. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
+</div>
+</div>
+<div class="dia col" data-k="g5-viernes-18"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-viernes-18"><span aria-hidden="true"></span></label>Viernes 18 · <span>Los avisos que nadie lee</span><span class="papel">EL CIERRE</span></h4>
+<div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span><span class="fondo f-pan">REAL · pantalla</span></div>
+<div class="pegar">Abrí el modelo de la casa y tenía [127] avisos sin leer.</div>
 <p class="sticker"><b>Sticker:</b> Ninguno.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Esquema de cuatro bloques de curso conectados por líneas a un núcleo central luminoso en ámbar. Representa entrenamiento con material propio. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Grabar el panel de avisos de Revit abriendose, con el contador visible.</div></div>
 </div>
-<div class="hist"><div class="hist-cab"><span class="frame">3</span><span class="rol rol-inte">INTERACCIÓN</span></div>
-<div class="pegar">¿Qué le preguntarías primero?</div>
-<p class="sticker"><b>Sticker:</b> CAJA DE PREGUNTAS. Las mejores se prueban EN VIVO mañana con el tutor.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Teclado con las manos escribiendo una pregunta, pantalla desenfocada al fondo con una interfaz de chat. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
+<div class="hist"><div class="hist-cab"><span class="frame">2</span><span class="rol rol-valo">VALOR</span><span class="fondo f-pan">REAL · pantalla</span></div>
+<div class="pegar">Ninguno impedía trabajar. Por eso llevaban meses ahí.</div>
+<p class="sticker"><b>Sticker:</b> Ninguno.</p>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Grabar el scroll por la lista de avisos, despacio.</div></div>
 </div>
-<div class="hist"><div class="hist-cab"><span class="frame">4</span><span class="rol rol-vent">VENTA</span></div>
-<div class="pegar">Y lo más importante: si algo NO está en las clases, te lo dice. No inventa. Respóndeme ACERO para el temario completo.</div>
+<div class="hist"><div class="hist-cab"><span class="frame">3</span><span class="rol rol-inte">INTERACCIÓN</span><span class="fondo f-cam">REAL · cámara</span></div>
+<div class="pegar">¿Cuántos tiene tu modelo ahora mismo? Ábrelo y mira.</div>
+<p class="sticker"><b>Sticker:</b> ENCUESTA: «Menos de 50» / «Prefiero no saber».</p>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Gabriel señalando la pantalla, plano corto.</div></div>
+</div>
+<div class="hist"><div class="hist-cab"><span class="frame">4</span><span class="rol rol-cier">CIERRE</span><span class="fondo f-pan">REAL · pantalla</span></div>
+<div class="pegar">Hoy sale el reel con los avisos que sí importan.</div>
+<p class="sticker"><b>Sticker:</b> ENLACE al reel.</p>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Captura del reel publicado.</div></div>
+</div>
+</div>
+</div>
+<div class="semana" data-sem="3"><div class="semana-cab"><span class="snum">S3</span><div><h3>34 ventanas, una por una</h3><span class="rango">Lun 21 – Vie 25 de septiembre</span></div></div><p class="nota">Sigue la misma casa. El lunes se cronometra una tarea real y se promete hacerla en segundos; el martes se paga con el Pack de Dynamo. El jueves el hilo sube de nivel: de automatizar una tarea a las cuatro etapas del Master.</p>
+<div class="dia col" data-k="g5-lunes-21"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-lunes-21"><span aria-hidden="true"></span></label>Lunes 21 · <span>Le puse cronómetro</span><span class="papel">ABRE EL BUCLE</span></h4>
+<div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span><span class="fondo f-cam">REAL · cámara</span></div>
+<div class="pegar">Le puse cronómetro a lo último que hice en la casa de dos pisos.</div>
+<p class="sticker"><b>Sticker:</b> Ninguno.</p>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">El cronómetro del teléfono corriendo sobre el escritorio, junto al teclado.</div></div>
+</div>
+<div class="hist"><div class="hist-cab"><span class="frame">2</span><span class="rol rol-valo">VALOR</span><span class="fondo f-pan">REAL · pantalla</span></div>
+<div class="pegar">Numerar [34] puertas y ventanas. Una por una. [41] minutos.</div>
+<p class="sticker"><b>Sticker:</b> Ninguno.</p>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Grabar acelerado el renombrado manual, que se vea la repetición.</div></div>
+</div>
+<div class="hist"><div class="hist-cab"><span class="frame">3</span><span class="rol rol-inte">INTERACCIÓN</span><span class="fondo f-cam">REAL · cámara</span></div>
+<div class="pegar">¿Cuánto tardas tú en eso?</div>
+<p class="sticker"><b>Sticker:</b> ENCUESTA: «Menos de 10 min» / «Prefiero no contarlo».</p>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Gabriel de perfil frente al monitor.</div></div>
+</div>
+<div class="hist"><div class="hist-cab"><span class="frame">4</span><span class="rol rol-cier">CIERRE</span><span class="fondo f-gen">GENERADA</span></div>
+<div class="pegar">Mañana lo hago delante de ustedes en [40] segundos.</div>
+<p class="sticker"><b>Sticker:</b> CUENTA REGRESIVA al martes.</p>
+<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Reloj de arena técnico sobre fondo azul marino, con la arena cayendo en ámbar. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
+</div>
+</div>
+<div class="dia col" data-k="g5-martes-22"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-martes-22"><span aria-hidden="true"></span></label>Martes 22 · <span>40 segundos, sin tocar el teclado</span><span class="papel">LA PRUEBA · lanzamiento del Pack de Dynamo</span></h4>
+<div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span><span class="fondo f-pan">REAL · pantalla</span></div>
+<div class="pegar">[40] segundos. Sin tocar el teclado.</div>
+<p class="sticker"><b>Sticker:</b> Ninguno.</p>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Grabar el script corriendo de principio a fin, sin cortes. Es la prueba: no se edita.</div></div>
+</div>
+<div class="hist"><div class="hist-cab"><span class="frame">2</span><span class="rol rol-valo">VALOR</span><span class="fondo f-cam">REAL · cámara</span></div>
+<div class="pegar">Es un script de Dynamo. Yo no sé programar y lo uso igual.</div>
+<p class="sticker"><b>Sticker:</b> Ninguno.</p>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Gabriel encogiendose de hombros, medio sonriendo.</div></div>
+</div>
+<div class="hist"><div class="hist-cab"><span class="frame">3</span><span class="rol rol-valo">VALOR</span><span class="fondo f-pan">REAL · pantalla</span></div>
+<div class="pegar">Son cinco. Los regalo hoy.</div>
+<p class="sticker"><b>Sticker:</b> Ninguno.</p>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">La carpeta con los cinco archivos, vista de explorador.</div></div>
+</div>
+<div class="hist"><div class="hist-cab"><span class="frame">4</span><span class="rol rol-recu">RECURSO</span><span class="fondo f-gen">GENERADA</span></div>
+<div class="pegar">Responde DYNAMO y te los mando.</div>
+<p class="sticker"><b>Sticker:</b> RESPONDER CON PALABRA: «DYNAMO».</p>
+<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Cinco piezas metálicas idénticas alineándose solas sobre una retícula azul, la última encajando en ámbar. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
+</div>
+</div>
+<div class="dia col" data-k="g5-miercoles-23"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-miercoles-23"><span aria-hidden="true"></span></label>Miércoles 23 · <span>«Eso es para programadores»</span><span class="papel">LA OBJECIÓN</span></h4>
+<div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span><span class="fondo f-pan">REAL · pantalla</span></div>
+<div class="pegar">Ayer me escribieron tres veces lo mismo: «eso es para programadores».</div>
+<p class="sticker"><b>Sticker:</b> Ninguno.</p>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Capturas de los tres DM, con los nombres tapados.</div></div>
+</div>
+<div class="hist"><div class="hist-cab"><span class="frame">2</span><span class="rol rol-valo">VALOR</span><span class="fondo f-pan">REAL · pantalla</span></div>
+<div class="pegar">Abrir un script y darle play no es programar. Es abrir un archivo.</div>
+<p class="sticker"><b>Sticker:</b> Ninguno.</p>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Grabar el doble clic en el archivo y el play, cuatro segundos.</div></div>
+</div>
+<div class="hist"><div class="hist-cab"><span class="frame">3</span><span class="rol rol-inte">INTERACCIÓN</span><span class="fondo f-pan">REAL · pantalla</span></div>
+<div class="pegar">¿Has abierto Dynamo alguna vez?</div>
+<p class="sticker"><b>Sticker:</b> QUIZ de 3: «Nunca» / «Lo abrí y me perdí» / «Lo uso». A quien marque «me perdí» se le contesta.</p>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">La interfaz de Dynamo abierta, con un script sencillo a la vista.</div></div>
+</div>
+<div class="hist"><div class="hist-cab"><span class="frame">4</span><span class="rol rol-recu">RECURSO</span><span class="fondo f-pan">REAL · pantalla</span></div>
+<div class="pegar">Si marcaste «me perdí»: el pack trae la guía de instalación. Responde DYNAMO.</div>
+<p class="sticker"><b>Sticker:</b> RESPONDER CON PALABRA: «DYNAMO».</p>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">La primera página de la guía de instalación en pantalla.</div></div>
+</div>
+</div>
+<div class="dia col" data-k="g5-jueves-24"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-jueves-24"><span aria-hidden="true"></span></label>Jueves 24 · <span>VENTA · El espejo: las cuatro puertas</span><span class="papel">EL PAGO DEL BUCLE</span></h4>
+<div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span><span class="fondo f-gen">GENERADA</span></div>
+<div class="pegar">Los que automatizan no son más inteligentes. Van un nivel más arriba.</div>
+<p class="sticker"><b>Sticker:</b> Ninguno.</p>
+<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Cuatro puertas alineadas en perspectiva sobre suelo de retícula azul; la cuarta está iluminada en ámbar. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
+</div>
+<div class="hist"><div class="hist-cab"><span class="frame">2</span><span class="rol rol-valo">VALOR</span><span class="fondo f-gen">GENERADA</span></div>
+<div class="pegar">Modelador. Coordinador. BIM Manager. Especialista BIM + IA.</div>
+<p class="sticker"><b>Sticker:</b> Ninguno.</p>
+<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Las mismas cuatro puertas, con la cuarta encendida y las tres primeras en blanco tenue. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
+</div>
+<div class="hist"><div class="hist-cab"><span class="frame">3</span><span class="rol rol-valo">VALOR</span><span class="fondo f-cam">REAL · cámara</span></div>
+<div class="pegar">La mayoría se queda en la primera porque nadie le dijo que había cuatro.</div>
+<p class="sticker"><b>Sticker:</b> Ninguno.</p>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Gabriel hablando a cámara, plano medio.</div></div>
+</div>
+<div class="hist"><div class="hist-cab"><span class="frame">4</span><span class="rol rol-vent">VENTA</span><span class="fondo f-pan">REAL · pantalla</span></div>
+<div class="pegar">Hay un test de 20 preguntas que te dice en cuál estás. Gratis, 5 minutos. Responde NIVEL.</div>
+<p class="sticker"><b>Sticker:</b> RESPONDER CON PALABRA: «NIVEL».</p>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">El test abierto en el teléfono, con la barra de progreso a medias.</div></div>
+</div>
+</div>
+<div class="dia col" data-k="g5-viernes-25"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-viernes-25"><span aria-hidden="true"></span></label>Viernes 25 · <span>«Según la norma» no es una cita</span><span class="papel">EL CIERRE</span></h4>
+<div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span><span class="fondo f-cam">REAL · cámara</span></div>
+<div class="pegar">«Según la norma» — la frase que más veo en memorias de cálculo.</div>
+<p class="sticker"><b>Sticker:</b> Ninguno.</p>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">La memoria impresa sobre la mesa, pasando una hoja.</div></div>
+</div>
+<div class="hist"><div class="hist-cab"><span class="frame">2</span><span class="rol rol-valo">VALOR</span><span class="fondo f-pan">REAL · pantalla</span></div>
+<div class="pegar">¿Qué norma? ¿Qué artículo? ¿Qué edición?</div>
+<p class="sticker"><b>Sticker:</b> Ninguno.</p>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">La NEC abierta en el artículo exacto, con el número visible.</div></div>
+</div>
+<div class="hist"><div class="hist-cab"><span class="frame">3</span><span class="rol rol-inte">INTERACCIÓN</span><span class="fondo f-cam">REAL · cámara</span></div>
+<div class="pegar">Cuando escribes «según la norma», ¿pones el artículo?</div>
+<p class="sticker"><b>Sticker:</b> ENCUESTA: «Siempre» / «Casi nunca».</p>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Gabriel negando con la cabeza, plano corto.</div></div>
+</div>
+<div class="hist"><div class="hist-cab"><span class="frame">4</span><span class="rol rol-cier">CIERRE</span><span class="fondo f-cam">REAL · cámara</span></div>
+<div class="pegar">El lunes arrancó con una memoria devuelta. La de esta misma casa.</div>
+<p class="sticker"><b>Sticker:</b> CUENTA REGRESIVA al lunes.</p>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">La memoria impresa cerrandose sobre la mesa.</div></div>
+</div>
+</div>
+</div>
+<div class="semana" data-sem="4"><div class="semana-cab"><span class="snum">S4</span><div><h3>La memoria que me devolvieron</h3><span class="rango">Lun 28 de septiembre – Vie 2 de octubre</span></div></div><p class="nota">Cierra el mes con el documento, no con el modelo: es lo que separa a quien calcula de quien entrega. El jueves entra el tutor de IA, ya montado en los cuatro cursos de la especialización desde el 11 de septiembre.</p>
+<div class="dia col" data-k="g5-lunes-28"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-lunes-28"><span aria-hidden="true"></span></label>Lunes 28 · <span>«Esta bien calculado, pero no lo puedo aprobar»</span><span class="papel">ABRE EL BUCLE</span></h4>
+<div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span><span class="fondo f-pan">REAL · pantalla</span></div>
+<div class="pegar">«Está bien calculado, pero no lo puedo aprobar.» Textual.</div>
+<p class="sticker"><b>Sticker:</b> Ninguno.</p>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">El correo del revisor en pantalla, con nombres y datos tapados.</div></div>
+</div>
+<div class="hist"><div class="hist-cab"><span class="frame">2</span><span class="rol rol-valo">VALOR</span><span class="fondo f-cam">REAL · cámara</span></div>
+<div class="pegar">Una vivienda de dos pisos. Los números estaban bien. El documento no.</div>
+<p class="sticker"><b>Sticker:</b> Ninguno.</p>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">La memoria impresa sobre la mesa, junto al plano de la casa.</div></div>
+</div>
+<div class="hist"><div class="hist-cab"><span class="frame">3</span><span class="rol rol-inte">INTERACCIÓN</span><span class="fondo f-cam">REAL · cámara</span></div>
+<div class="pegar">¿Te han devuelto una memoria alguna vez?</div>
+<p class="sticker"><b>Sticker:</b> ENCUESTA: «Si» / «Todavía no entrego memorias».</p>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Gabriel de perfil frente al monitor.</div></div>
+</div>
+<div class="hist"><div class="hist-cab"><span class="frame">4</span><span class="rol rol-cier">CIERRE</span><span class="fondo f-gen">GENERADA</span></div>
+<div class="pegar">Mañana les enseño las tres cosas que le faltaban.</div>
+<p class="sticker"><b>Sticker:</b> CUENTA REGRESIVA al martes.</p>
+<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Manos de un profesional con experiencia sobre un plano estructural impreso, con un escalímetro al lado. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
+</div>
+</div>
+<div class="dia col" data-k="g5-martes-29"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-martes-29"><span aria-hidden="true"></span></label>Martes 29 · <span>Las tres cosas que le faltaban</span><span class="papel">LA PRUEBA · lanzamiento de la memoria de cálculo</span></h4>
+<div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span><span class="fondo f-pan">REAL · pantalla</span></div>
+<div class="pegar">Falta 1: las hipótesis estaban listadas, no justificadas.</div>
+<p class="sticker"><b>Sticker:</b> Ninguno.</p>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">El párrafo de hipótesis en pantalla, señalado.</div></div>
+</div>
+<div class="hist"><div class="hist-cab"><span class="frame">2</span><span class="rol rol-valo">VALOR</span><span class="fondo f-pan">REAL · pantalla</span></div>
+<div class="pegar">Falta 2: la NEC citada sin artículo. Falta 3: ninguna verificación de servicio.</div>
+<p class="sticker"><b>Sticker:</b> Ninguno.</p>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Las dos páginas, una detras de otra.</div></div>
+</div>
+<div class="hist"><div class="hist-cab"><span class="frame">3</span><span class="rol rol-valo">VALOR</span><span class="fondo f-pan">REAL · pantalla</span></div>
+<div class="pegar">Armé la plantilla que uso ahora para que no vuelva a pasar.</div>
+<p class="sticker"><b>Sticker:</b> Ninguno.</p>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">El Word de la plantilla abierto, bajando por el índice.</div></div>
+</div>
+<div class="hist"><div class="hist-cab"><span class="frame">4</span><span class="rol rol-recu">RECURSO</span><span class="fondo f-gen">GENERADA</span></div>
+<div class="pegar">Responde MEMORIA y te la mando con el Excel de verificaciones.</div>
+<p class="sticker"><b>Sticker:</b> RESPONDER CON PALABRA: «MEMORIA».</p>
+<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Manos de un profesional con experiencia sobre un plano estructural impreso, con un escalímetro al lado. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
+</div>
+</div>
+<div class="dia col" data-k="g5-miercoles-30"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-miercoles-30"><span aria-hidden="true"></span></label>Miércoles 30 · <span>Lo que no hay que preguntarle a la IA</span><span class="papel">LA OBJECIÓN</span></h4>
+<div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span><span class="fondo f-cam">REAL · cámara</span></div>
+<div class="pegar">Me preguntaron si ChatGPT puede escribir la memoria. Puede. No conviene.</div>
+<p class="sticker"><b>Sticker:</b> Ninguno.</p>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Gabriel hablando a cámara, plano medio.</div></div>
+</div>
+<div class="hist"><div class="hist-cab"><span class="frame">2</span><span class="rol rol-valo">VALOR</span><span class="fondo f-pan">REAL · pantalla</span></div>
+<div class="pegar">Le pedí que citara la NEC. Se inventó el artículo. Con número y todo.</div>
+<p class="sticker"><b>Sticker:</b> Ninguno.</p>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">La respuesta inventada en pantalla, con el número de artículo señalado.</div></div>
+</div>
+<div class="hist"><div class="hist-cab"><span class="frame">3</span><span class="rol rol-valo">VALOR</span><span class="fondo f-gen">GENERADA</span></div>
+<div class="pegar">Sirve para redactar. No para responder por ti ante un revisor.</div>
+<p class="sticker"><b>Sticker:</b> Ninguno.</p>
+<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Estructura metálica en isométrico con una de sus conexiones destacada en ámbar y el resto en blanco tenue. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
+</div>
+<div class="hist"><div class="hist-cab"><span class="frame">4</span><span class="rol rol-inte">INTERACCIÓN</span><span class="fondo f-pan">REAL · pantalla</span></div>
+<div class="pegar">¿Para qué usas tú la IA en un proyecto?</div>
+<p class="sticker"><b>Sticker:</b> ENCUESTA: «Redactar» / «Calcular». A quien marque «calcular» se le contesta por DM.</p>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Captura del reel del dia publicado.</div></div>
+</div>
+</div>
+<div class="dia col" data-k="g5-jueves-1-de-octubre"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-jueves-1-de-octubre"><span aria-hidden="true"></span></label>Jueves 1 de octubre · <span>VENTA · El tutor que contesta a las 11 de la noche</span><span class="papel">EL PAGO DEL BUCLE</span></h4>
+<div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span><span class="fondo f-pan">REAL · pantalla</span></div>
+<div class="pegar">Los alumnos de ACERO tienen algo que no está en el temario.</div>
+<p class="sticker"><b>Sticker:</b> Ninguno.</p>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">El tutor abierto en el navegador, con la caja de pregunta vacía.</div></div>
+</div>
+<div class="hist"><div class="hist-cab"><span class="frame">2</span><span class="rol rol-valo">VALOR</span><span class="fondo f-pan">REAL · pantalla</span></div>
+<div class="pegar">Un tutor que responde con la norma citada, a las 11 de la noche.</div>
+<p class="sticker"><b>Sticker:</b> Ninguno.</p>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Grabar una pregunta real escribiendose y la respuesta apareciendo, con la cita visible.</div></div>
+</div>
+<div class="hist"><div class="hist-cab"><span class="frame">3</span><span class="rol rol-valo">VALOR</span><span class="fondo f-pan">REAL · pantalla</span></div>
+<div class="pegar">Está en los cuatro cursos: Estructuras, Cerchas, Uniones y Modelado.</div>
+<p class="sticker"><b>Sticker:</b> Ninguno.</p>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Los cuatro cursos en la plataforma, con el tutor visible en cada uno.</div></div>
+</div>
+<div class="hist"><div class="hist-cab"><span class="frame">4</span><span class="rol rol-vent">VENTA</span><span class="fondo f-cam">REAL · cámara</span></div>
+<div class="pegar">No reemplaza al profesor: contesta lo que no quieres preguntar en clase. Responde ACERO y te lo enseño funcionando.</div>
 <p class="sticker"><b>Sticker:</b> RESPONDER CON PALABRA: «ACERO».</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Icono de escudo o verificación en ámbar sobre fondo azul, sobrio, junto a un pequeño ícono de libro cerrado. Representa honestidad. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Gabriel hablando a cámara, plano medio, fondo de oficina.</div></div>
 </div>
 </div>
-<div class="dia col" data-k="g5-miercoles-30"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-miercoles-30"><span aria-hidden="true"></span></label>Miércoles 30 · <span>El tutor, en vivo</span></h4>
-<div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
-<div class="pegar">Le hice las preguntas que me mandaron ayer. Grabé la pantalla sin cortes.</div>
+<div class="dia col" data-k="g5-viernes-2-de-octubre"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-viernes-2-de-octubre"><span aria-hidden="true"></span></label>Viernes 2 de octubre · <span>Cierre de mes: la pregunta más simple</span><span class="papel">EL CIERRE</span></h4>
+<div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span><span class="fondo f-cam">REAL · cámara</span></div>
+<div class="pegar">Cerramos el mes con la pregunta más simple que hay.</div>
 <p class="sticker"><b>Sticker:</b> Ninguno.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Grabación de pantalla en curso indicada por un punto rojo discreto, mostrando una interfaz de chat técnica. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Varillas apiladas en obra, plano corto, luz natural.</div></div>
 </div>
-<div class="hist"><div class="hist-cab"><span class="frame">2</span><span class="rol rol-valo">VALOR</span></div>
-<div class="pegar">Mira cómo responde una pregunta de verdad — y cómo cita la sesión exacta para que vuelvas a la clase.</div>
-<p class="sticker"><b>Sticker:</b> ENLACE al reel del feed.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Respuesta de chat estructurada con una cita destacada al pie en ámbar, estilo interfaz limpia. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
+<div class="hist"><div class="hist-cab"><span class="frame">2</span><span class="rol rol-inte">INTERACCIÓN</span><span class="fondo f-cam">REAL · cámara</span></div>
+<div class="pegar">¿Cuánto pesa una varilla Ø12 de 12 metros?</div>
+<p class="sticker"><b>Sticker:</b> QUIZ de 3: «8,5 kg» / «10,7 kg» / «13,3 kg». La correcta es 10,7 kg.</p>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Una varilla apoyada, con el diámetro marcado a mano en el momento.</div></div>
 </div>
-<div class="hist"><div class="hist-cab"><span class="frame">3</span><span class="rol rol-inte">INTERACCIÓN</span></div>
-<div class="pegar">¿Confiarías en una IA para resolver dudas técnicas?</div>
-<p class="sticker"><b>Sticker:</b> ENCUESTA: «Sí, si cita la fuente» / «Prefiero un humano». Ambas respuestas abren conversación.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Dos íconos enfrentados en equilibrio: un circuito y un casco de ingeniero, unidos por una línea ámbar. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-<div class="hist"><div class="hist-cab"><span class="frame">4</span><span class="rol rol-vent">VENTA</span></div>
-<div class="pegar">No reemplaza a los instructores: les quita las preguntas repetidas para que las tutorías se usen en lo difícil. Respóndeme ACERO.</div>
-<p class="sticker"><b>Sticker:</b> RESPONDER CON PALABRA: «ACERO».</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Dos capas de soporte representadas como dos anillos concéntricos, el interior en ámbar (humano) y el exterior en blanco (IA). Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-</div>
-<div class="dia col" data-k="g5-jueves-1-de-octubre"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-jueves-1-de-octubre"><span aria-hidden="true"></span></label>Jueves 1 de octubre · <span>VENTA · Últimos cupos</span></h4>
-<div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
-<div class="pegar">Cierro la cohorte esta semana. Ya sabes lo que hay dentro, así que voy directo.</div>
+<div class="hist"><div class="hist-cab"><span class="frame">3</span><span class="rol rol-valo">VALOR</span><span class="fondo f-pan">REAL · pantalla</span></div>
+<div class="pegar">La mitad falla. Y es el número con el que presupuestas el acero.</div>
 <p class="sticker"><b>Sticker:</b> Ninguno.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Puerta de acceso entreabierta con luz cálida saliendo, en un pasillo de estética arquitectónica limpia. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">La tabla de pesos por diámetro, con la fila del Ø12 señalada.</div></div>
 </div>
-<div class="hist"><div class="hist-cab"><span class="frame">2</span><span class="rol rol-valo">VALOR</span></div>
-<div class="pegar">4 cursos, más de 40 sesiones, 100% asincrónico, acceso que no caduca, tutor de IA incluido y microcredencial al terminar.</div>
-<p class="sticker"><b>Sticker:</b> Ninguno.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Cinco íconos en fila vertical representando: cursos, video, reloj infinito, chat, medalla. Línea fina, ámbar sobre azul. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-<div class="hist"><div class="hist-cab"><span class="frame">3</span><span class="rol rol-inte">INTERACCIÓN</span></div>
-<div class="pegar">¿Alguna duda antes de decidir?</div>
-<p class="sticker"><b>Sticker:</b> CAJA DE PREGUNTAS — se contestan TODAS hoy mismo por DM.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Mano sosteniendo un teléfono con una conversación abierta, ambiente cálido de oficina. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-<div class="hist"><div class="hist-cab"><span class="frame">4</span><span class="rol rol-vent">VENTA</span></div>
-<div class="pegar">Quedan [CUPOS REALES]. Respóndeme ACERO y lo vemos con tu caso concreto.</div>
-<p class="sticker"><b>Sticker:</b> CUENTA REGRESIVA al cierre + RESPONDER CON PALABRA: «ACERO».</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Estructura metálica terminada al atardecer, silueta limpia contra el cielo. Aspiracional pero real. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-</div>
-<div class="dia col" data-k="g5-viernes-2-de-octubre"><h4 class="cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="g5-viernes-2-de-octubre"><span aria-hidden="true"></span></label>Viernes 2 de octubre · <span>Cierre de mes</span></h4>
-<div class="hist"><div class="hist-cab"><span class="frame">1</span><span class="rol rol-rell">RELLENO</span></div>
-<div class="pegar">Se acaba septiembre. Hicimos más de lo que teníamos planeado, la verdad.</div>
-<p class="sticker"><b>Sticker:</b> Ninguno.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Calendario de pared con el mes terminando, junto a una taza y un cuaderno con notas. Cálido, cotidiano. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-<div class="hist"><div class="hist-cab"><span class="frame">2</span><span class="rol rol-valo">VALOR</span></div>
-<div class="pegar">El dato del mes, por si te lo perdiste: el peso de una varilla es Ø²/162 kg/m. Una Ø12 de 12 m pesa 10,7 kg. Sirve para estimar acero en visita, sin planilla.</div>
-<p class="sticker"><b>Sticker:</b> Ninguno.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Varillas de acero corrugado apiladas vistas en sección, con una fórmula esquematizada en líneas al lado (sin texto). Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-<div class="hist"><div class="hist-cab"><span class="frame">3</span><span class="rol rol-inte">INTERACCIÓN</span></div>
-<div class="pegar">¿Qué quieres que hagamos en octubre?</div>
-<p class="sticker"><b>Sticker:</b> CAJA DE PREGUNTAS. Lo que más se repita entra a la matriz.</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Hoja en blanco sobre mesa de trabajo con un lápiz al lado, esperando ser escrita. Metáfora del mes nuevo. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
-</div>
-<div class="hist"><div class="hist-cab"><span class="frame">4</span><span class="rol rol-vent">VENTA</span></div>
-<div class="pegar">Y si este mes te quedaste con ganas de empezar: respóndeme RUTA y arrancamos octubre sabiendo por dónde.</div>
-<p class="sticker"><b>Sticker:</b> RESPONDER CON PALABRA: «RUTA».</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1920 px (9:16 vertical)</span><div class="prompt-txt">Camino de retícula azul que se aleja hacia el horizonte con cuatro hitos marcados en ámbar. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos ambar #E8A04A, geometria blanca y limpia, estetica tecnica de ingenieria tipo Autodesk Revit, nada de ciencia ficcion. Composicion vertical con el 25% superior e inferior libres de elementos importantes (los tapa la interfaz de Instagram). Sin texto dentro de la imagen: el texto se pone con las herramientas de Instagram. 1080x1920 px (9:16 vertical).</div></div>
+<div class="hist"><div class="hist-cab"><span class="frame">4</span><span class="rol rol-cier">CIERRE</span><span class="fondo f-pan">REAL · pantalla</span></div>
+<div class="pegar">Respuesta y desarrollo en el post de hoy.</div>
+<p class="sticker"><b>Sticker:</b> ENLACE al post.</p>
+<div class="prompt graba"><span class="rot">Qué se graba</span><div class="prompt-txt">Captura del post publicado.</div></div>
 </div>
 </div>
 </div></section>
@@ -1148,13 +1184,13 @@ Duración 35-40 s. Guion completo segundo a segundo en matriz-viral/matriz/reels
 <div class="reel col " data-k="reel-reel-duplicados-tus-planos-estan-bien-tu-presupuesto-esta-mal"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="reel-reel-duplicados-tus-planos-estan-bien-tu-presupuesto-esta-mal"><span aria-hidden="true"></span></label><span class="fecha">Miércoles 16</span><h3>Tus planos están bien. Tu presupuesto está mal.</h3><span class="tipo">35-40 s</span></div>
 <p class="estado">POR GRABAR</p>
 <p class="nota">El error invisible. Es el ángulo más fuerte de los cinco porque no da ningún mensaje en Revit: los planos salen perfectos y el cuadro cuenta el doble. Se descubre al presupuestar, que es cuando ya se cotizó.</p>
-<p class="cta-linea"><b>CTA:</b> GUIA → Revit + ChatGPT (recurso ya publicado)</p>
+<p class="cta-linea"><b>CTA:</b> CHATGPT → Revit + ChatGPT (recurso ya publicado)</p>
 <div class="tabla-scroll"><table><thead><tr><th>Tiempo</th><th>Qué se ve</th><th>Qué se dice</th><th>Texto en pantalla</th></tr></thead><tbody>
 <tr><td class="t">0:00-0:04</td><td>Primer plano.</td><td>Hay un error en Revit que no te avisa. Los planos salen bien y el presupuesto sale mal.</td><td>UN ERROR QUE <b class="amb">NO TE AVISA</b></td></tr>
 <tr><td class="t">0:04-0:12</td><td>Screen-record: dos elementos idénticos superpuestos, seleccionando uno y viendo que hay otro debajo.</td><td>Son elementos duplicados exactamente en el mismo sitio. Un Ctrl+V de más, o pegar dos veces con Paste Aligned. Encima uno del otro, invisibles.</td><td>DUPLICADOS EN EL <b class="amb">MISMO SITIO</b></td></tr>
 <tr><td class="t">0:12-0:20</td><td>Pantalla: cuadro de cantidades, número resaltado.</td><td>En los planos no se nota, porque uno tapa al otro. En el cuadro de cantidades sí: cuenta dos.</td><td>EN EL CUADRO <b class="amb">CUENTA DOS</b></td></tr>
 <tr><td class="t">0:20-0:30</td><td>Vuelve a cámara.</td><td>Y esto no se descubre revisando. Se descubre cuando alguien presupuesta con ese número, que es cuando ya lo mandaste.</td><td>SE DESCUBRE AL <b class="amb">PRESUPUESTAR</b></td></tr>
-<tr><td class="t">0:30-0:38</td><td>Cierre.</td><td>La comprobación es una sola: apunta la cantidad antes de borrar. Si después no bajó en el número exacto que borraste, pasó algo más. Comenta GUIA y te paso los diez errores de Revit que más tiempo te quitan.</td><td>COMENTA <b class="amb">GUIA</b></td></tr>
+<tr><td class="t">0:30-0:38</td><td>Cierre.</td><td>La comprobación es una sola: apunta la cantidad antes de borrar. Si después no bajó en el número exacto que borraste, pasó algo más. Comenta CHATGPT y te paso los diez errores de Revit que más tiempo te quitan.</td><td>COMENTA <b class="amb">CHATGPT</b></td></tr>
 </tbody></table></div>
 </div>
 <div class="reel col " data-k="reel-reel-advertencias-400-avisos-sin-leer"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="reel-reel-advertencias-400-avisos-sin-leer"><span aria-hidden="true"></span></label><span class="fecha">Viernes 18</span><h3>400 avisos sin leer</h3><span class="tipo">30-35 s</span></div>
@@ -1184,18 +1220,18 @@ Duración 35-40 s. Guion completo segundo a segundo en matriz-viral/matriz/reels
 <div class="reel col " data-k="reel-reel-limite-ia-lo-que-no-hay-que-preguntarle-a-la-ia"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="reel-reel-limite-ia-lo-que-no-hay-que-preguntarle-a-la-ia"><span aria-hidden="true"></span></label><span class="fecha">Miércoles 30</span><h3>Lo que no hay que preguntarle a la IA</h3><span class="tipo">35-40 s</span></div>
 <p class="estado">POR GRABAR</p>
 <p class="nota">Cierra el mes marcando el límite, y es la pieza que más nos diferencia: todo el mundo publica «10 prompts para Revit», nosotros publicamos dónde la IA deja de servir. Es lo que permite que una academia de ingeniería hable de IA sin quedar mal. Tono sereno, nunca alarmista.</p>
-<p class="cta-linea"><b>CTA:</b> GUIA → Revit + ChatGPT (recurso ya publicado)</p>
+<p class="cta-linea"><b>CTA:</b> CHATGPT → Revit + ChatGPT (recurso ya publicado)</p>
 <div class="tabla-scroll"><table><thead><tr><th>Tiempo</th><th>Qué se ve</th><th>Qué se dice</th><th>Texto en pantalla</th></tr></thead><tbody>
 <tr><td class="t">0:00-0:05</td><td>Primer plano, tono tranquilo.</td><td>Una inteligencia artificial no sabe cuándo no sabe.</td><td>NO SABE CUÁNDO <b class="amb">NO SABE</b></td></tr>
 <tr><td class="t">0:05-0:13</td><td>Plano medio.</td><td>Cuando se equivoca, se equivoca con el mismo tono de seguridad con el que acierta. Y eso es justo lo que la hace peligrosa en un modelo que alguien va a firmar.</td><td>SE EQUIVOCA CON EL MISMO <b class="amb">TONO</b></td></tr>
 <tr><td class="t">0:13-0:23</td><td>Screen-record: una respuesta segura de sí misma en pantalla.</td><td>Le pregunté qué sección poner. Me dio un número. Sonaba razonable. Pero no tiene mis cargas, ni mi norma, ni mi suelo — y ese número lleva mi firma, no la suya.</td><td>ESE NÚMERO LLEVA <b class="amb">MI FIRMA</b></td></tr>
 <tr><td class="t">0:23-0:32</td><td>Vuelve a cámara.</td><td>Úsala para entender qué te está diciendo el programa y para buscar más rápido. No para decidir. La línea está justo ahí, y está más cerca de lo que parece.</td><td>PARA ENTENDER, NO PARA <b class="amb">DECIDIR</b></td></tr>
-<tr><td class="t">0:32-0:40</td><td>Cierre.</td><td>Yo compruebo tres cosas antes de aplicar nada. Comenta GUIA y te paso los diez errores con su prompt, y la página donde explico esas tres comprobaciones.</td><td>COMENTA <b class="amb">GUIA</b></td></tr>
+<tr><td class="t">0:32-0:40</td><td>Cierre.</td><td>Yo compruebo tres cosas antes de aplicar nada. Comenta CHATGPT y te paso los diez errores con su prompt, y la página donde explico esas tres comprobaciones.</td><td>COMENTA <b class="amb">CHATGPT</b></td></tr>
 </tbody></table></div>
 </div>
 <h2 style="margin-top:44px">Los tres de lead magnet <span class="cuenta">3</span></h2>
 <p class="intro">Uno por recurso gratuito. Se montan dos veces: con CTA a formulario para pauta y con CTA a comentario para el lanzamiento del recurso en el feed.</p>
-<div class="reel col " data-k="reel-pauta-guia-guia-revit-chatgpt"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="reel-pauta-guia-guia-revit-chatgpt"><span aria-hidden="true"></span></label><span class="fecha">GUIA</span><h3>Guía Revit + ChatGPT</h3><span class="tipo">20-25 s</span></div>
+<div class="reel col " data-k="reel-pauta-guia-guia-revit-chatgpt"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="reel-pauta-guia-guia-revit-chatgpt"><span aria-hidden="true"></span></label><span class="fecha">CHATGPT</span><h3>Guía Revit + ChatGPT</h3><span class="tipo">20-25 s</span></div>
 <p class="estado">POR GRABAR</p>
 <p class="nota">El recurso ya está vivo y probado. Es el único de los tres que puede salir hoy.</p>
 <p class="cta-linea"><b>Destino:</b> Formulario → landing guia-revit-ia</p>
@@ -1629,10 +1665,10 @@ Esta es la pieza ancla del relanzamiento: las otras tres mencionan el tutor, est
 <section id="tab-lm" hidden><h2>Lead magnets — los tres recursos de septiembre</h2>
 <p class="intro">Un recurso gratuito no es el archivo: es el archivo <b>más</b> el camino que lo entrega. Mientras el bot no responda con el enlace, el recurso no existe aunque el PDF esté hecho. Por eso cada uno viene aquí con su contenido, sus notas de producción, su post de lanzamiento y el paso a paso de GoHighLevel.</p>
 <div class="dato"><strong>La regla que no se rompe.</strong> Ningún CTA sale al aire sin su recurso VIVO y su disparador montado el día de la publicación. Si el recurso no llegó a tiempo NO se aplaza la pieza: se publica con el CTA de reemplazo. Prometer y no entregar cuesta más que cambiar la palabra.</div>
-<div class="lm col" data-k="lm-lm-revit-chatgpt"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="lm-lm-revit-chatgpt"><span aria-hidden="true"></span></label><span class="pal">GUIA</span><h3>Guía «Revit + ChatGPT: resuelve errores con IA»</h3><span class="tipo">PDF de 10-12 páginas</span></div>
+<div class="lm col" data-k="lm-lm-revit-chatgpt"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="lm-lm-revit-chatgpt"><span aria-hidden="true"></span></label><span class="pal">CHATGPT</span><h3>Guía «Revit + ChatGPT: resuelve errores con IA»</h3><span class="tipo">PDF de 10-12 páginas</span></div>
 <p class="estado">POR CREAR — se necesita VIVO el lunes 8</p>
 <p class="promesa">Los 10 errores de Revit que más tiempo hacen perder, y el prompt exacto que los resuelve — con la advertencia de cuándo NO hacerle caso a la respuesta.</p>
-<div class="tabla-scroll"><table class="cfg"><tbody><tr><th>Cuándo</th><td>Semana 1. CORREGIDO 9-sep: antes decía que el reel del miércoles 9 ya lo prometía — eso era del reparto viejo. El del Mié 9 es reel-deriva y pide MEMORIA. GUIA la piden el Mié 16 y el Mié 30, y el propio reel de lanzamiento del Mar 8.</td></tr><tr><th>Para quién</th><td>Quien ya usa Revit todos los días y pierde tardes enteras buscando en foros.</td></tr><tr><th>Por qué este</th><td>El reel de duplicados del miercoles 16 y el del limite de la IA del miercoles 30 cuentan exactamente esto, y sus CTA apuntan aqui. El recurso no se inventa para llenar un hueco: existe porque ya hay piezas que lo piden.</td></tr></tbody></table></div>
+<div class="tabla-scroll"><table class="cfg"><tbody><tr><th>Cuándo</th><td>Semana 1. CORREGIDO 9-sep: antes decía que el reel del miércoles 9 ya lo prometía — eso era del reparto viejo. El del Mié 9 es reel-deriva y pide MEMORIA. CHATGPT la piden el Mié 16 y el Mié 30, y el propio reel de lanzamiento del Mar 8.</td></tr><tr><th>Para quién</th><td>Quien ya usa Revit todos los días y pierde tardes enteras buscando en foros.</td></tr><tr><th>Por qué este</th><td>El reel de duplicados del miercoles 16 y el del limite de la IA del miercoles 30 cuentan exactamente esto, y sus CTA apuntan aqui. El recurso no se inventa para llenar un hueco: existe porque ya hay piezas que lo piden.</td></tr></tbody></table></div>
 <span class="rot">Qué lleva dentro</span><ul class="reglas">
 <li>Los 10 errores: qué dice Revit, qué significa de verdad y qué lo causa.</li>
 <li>El prompt exacto para cada uno, escrito para copiar y pegar, con el contexto que hay que darle a ChatGPT para que la respuesta sirva (versión, disciplina, qué se intentó ya).</li>
@@ -1647,12 +1683,12 @@ Esta es la pieza ancla del relanzamiento: las otras tres mencionan el tutor, est
 </ul>
 <span class="rot">Lo que hay que configurar en GoHighLevel</span>
 <div class="tabla-scroll"><table class="cfg"><tbody>
-<tr><th>Palabra clave</th><td>GUIA</td></tr>
-<tr><th>Etiquetas</th><td>lead-revit-ia · origen-bot-GUIA</td></tr>
+<tr><th>Palabra clave</th><td>CHATGPT</td></tr>
+<tr><th>Etiquetas</th><td>lead-revit-ia · origen-bot-CHATGPT</td></tr>
 <tr><th>Pregunta de perfil</th><td>¿Qué usas hoy para resolver un error de Revit?</td></tr>
 <tr><th>Entrega</th><td>Botón de descarga en la página de gracias.</td></tr>
 <tr><th>Puente</th><td>Correo 3 lleva al módulo BIM + IA — sin precio, con «agenda una cita».</td></tr>
-<tr><th>Reemplazo si no llega</th><td>El CTA cambia a GPT IA Pro, que ya existe y está montado.</td></tr>
+<tr><th>Reemplazo si no llega</th><td>El CTA cambia a MEMORIA, que está activa. GPT IA Pro sigue existiendo pero ya no tiene palabra: en blog va con enlace directo.</td></tr>
 </tbody></table></div>
 <div class="lanz"><div class="pieza-cab"><span class="fecha">Mar 8</span><h4>Pieza de lanzamiento</h4><span class="tipo">REEL (grabar) — EXTRA de lanzamiento</span></div>
 <p class="nota">Va en el calendario del <b>Grupo 1</b>. Redes: Instagram + Facebook + TikTok.</p>
@@ -1661,10 +1697,10 @@ Esta es la pieza ancla del relanzamiento: las otras tres mencionan el tutor, est
 
 Junté los 10 que más tiempo hacen perder, con el prompt exacto para cada uno. Y una página que importa más que las otras diez: cómo verificar la respuesta antes de meterla en un modelo que vas a firmar.
 
-Es gratis. Comenta GUIA y te llega.
+Es gratis. Comenta CHATGPT y te llega.
 
 ¿Cuál es el error de Revit que más veces te ha tocado buscar?</div>
-<p class="cta-linea"><b>CTA:</b> Comenta GUIA</p>
+<p class="cta-linea"><b>CTA:</b> Comenta CHATGPT</p>
 <div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1350 px (4:5)</span><div class="prompt-txt">Imagen 1080x1350 px (4:5) para la portada del reel. Fondo azul marino #0E2438. Un cuadro de diálogo de error de software, dibujado en línea fina ámbar #E8A04A, flotando en el centro, con el texto ilegible a propósito — solo se lee la forma de la ventana y su icono de advertencia. Detrás, muy tenue, una retícula de planta de Revit. Sensación de estar trabado, no de catástrofe. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos en ámbar #E8A04A, tipografía sans-serif de palo seco muy gruesa, composición limpia y con aire, sin stock corporativo ni gente sonriendo a cámara. El texto final se monta en Canva: la IA entrega el fondo y los elementos, no las letras.</div></div>
 </div>
 <div class="lanz"><div class="pieza-cab"><span class="fecha">Jue 10</span><h4>Pieza de lanzamiento</h4><span class="tipo">CARRUSEL (7 slides) — EXTRA de lanzamiento</span></div>
@@ -1678,7 +1714,7 @@ Es gratis. Comenta GUIA y te llega.
 <tr><th style="width:38px">4</th><td>4 · «There are identical instances in the same place». Dos elementos idénticos, uno exactamente encima del otro. Los planos se ven bien. El cuadro de cantidades cuenta el doble.</td></tr>
 <tr><th style="width:38px">5</th><td>5 · «Elements are joined but do not intersect». Siguen unidos, pero ya no se tocan: normalmente porque uno se movió después.</td></tr>
 <tr><th style="width:38px">6</th><td>6 · «The linked file could not be found». El vínculo apunta a una ruta que ya no existe. Alguien movió, renombró o guardó en otra carpeta.</td></tr>
-<tr><th style="width:38px">7</th><td>7 · Los diez, cada uno con su prompt. Y la página que importa más que las otras diez: cómo comprobar la respuesta antes de aplicarla. COMENTA GUIA.</td></tr>
+<tr><th style="width:38px">7</th><td>7 · Los diez, cada uno con su prompt. Y la página que importa más que las otras diez: cómo comprobar la respuesta antes de aplicarla. COMENTA CHATGPT.</td></tr>
 </tbody></table></div>
 <span class="rot">Caption (copiar tal cual)</span><div class="pegar">El error que te frena la tarde casi siempre está mal explicado por el propio mensaje: dice una cosa y el problema es otra.
 
@@ -1686,24 +1722,24 @@ Los dos peores no dan ningún aviso. Dos muros superpuestos hacen que el cuadro 
 
 Junté los 10 que más tiempo hacen perder, con el prompt exacto para cada uno y cómo verificar la respuesta antes de meterla en un modelo que vas a firmar.
 
-Es gratis. Comenta GUIA y te llega.
+Es gratis. Comenta CHATGPT y te llega.
 
 ¿Cuál de los cinco te ha tocado más veces?</div>
-<p class="cta-linea"><b>CTA:</b> Comenta GUIA</p>
+<p class="cta-linea"><b>CTA:</b> Comenta CHATGPT</p>
 <div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1080 px (1:1)</span><div class="prompt-txt">Siete imágenes de 1080x1080 px (1:1) de la misma familia, para carrusel. Fondo azul marino #0E2438. En cada una, un cuadro de diálogo de software dibujado en línea fina ámbar #E8A04A, siempre en la misma posición y a la misma escala, con el texto ilegible a propósito — solo se lee la forma de la ventana y su icono de advertencia. Lo que cambia de tarjeta a tarjeta es el fondo detrás del cuadro: una retícula de planta, dos muros solapados, dos objetos idénticos desfasados un milímetro, dos volúmenes que casi se tocan, y una carpeta vacía. Todo en línea blanca muy tenue. Sin texto legible en ninguna. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos en ámbar #E8A04A, tipografía sans-serif de palo seco muy gruesa, composición limpia y con aire, sin stock corporativo ni gente sonriendo a cámara. El texto final se monta en Canva: la IA entrega el fondo y los elementos, no las letras.</div></div>
 </div>
 </div>
-<div class="lm col" data-k="lm-lm-dynamo-python"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="lm-lm-dynamo-python"><span aria-hidden="true"></span></label><span class="pal">DYNAMO</span><h3>Pack starter de scripts Dynamo / Python para Revit</h3><span class="tipo">ZIP con 5 scripts comentados + PDF de instalación</span></div>
+<div class="lm col" data-k="lm-lm-dynamo-python"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="lm-lm-dynamo-python"><span aria-hidden="true"></span></label><span class="pal">DYNAMO</span><h3>Pack starter de scripts Dynamo / Python para Revit</h3><span class="tipo">ZIP con 5 scripts comentados + guía de instalación en la propia página</span></div>
 <p class="estado">POR CREAR</p>
 <p class="promesa">Cinco scripts que hacen en un clic lo que hoy haces a mano, con el código comentado línea por línea para que puedas cambiarlos.</p>
 <div class="tabla-scroll"><table class="cfg"><tbody><tr><th>Cuándo</th><td>Semana 3. Necesita más producción que los otros dos porque hay que probar cada script.</td></tr><tr><th>Para quién</th><td>Quien ya modela bien y empieza a repetir tareas: renombrar, exportar, numerar, revisar parámetros.</td></tr><tr><th>Por qué este</th><td>Dynamo es el tema con mejor tasa de guardado de la cuenta y no tenemos ni un recurso propio sobre él. Guardar un post es la señal de «esto me sirve pero ahora no puedo»: es exactamente la gente que descarga un pack de scripts.</td></tr></tbody></table></div>
 <span class="rot">Qué lleva dentro</span><ul class="reglas">
-<li>Script 1 — renombrar vistas por norma en lote.</li>
-<li>Script 2 — exportar planos a PDF con el nombre correcto, sin tocar el cuadro de diálogo.</li>
-<li>Script 3 — numerar elementos por posición y no por orden de creación.</li>
-<li>Script 4 — encontrar parámetros vacíos antes de entregar el modelo.</li>
-<li>Script 5 — comparar dos modelos y listar qué cambió.</li>
-<li>PDF corto: cómo instalarlos, qué versión de Revit y de Dynamo se necesita, y qué hacer cuando el script no corre.</li>
+<li>Script 01 — auditoría de advertencias del modelo a un CSV. SOLO LEE.</li>
+<li>Script 02 — elementos duplicados exactamente en el mismo sitio. SOLO LEE, no borra nada a propósito: la decisión de qué se borra es del que modela.</li>
+<li>Script 03 — renombrar vistas en lote, con buscar y reemplazar. MODIFICA EL MODELO.</li>
+<li>Script 04 — vistas que no están en ninguna hoja. SOLO LEE.</li>
+<li>Script 05 — rellenar un parámetro en lote. MODIFICA EL MODELO.</li>
+<li>La instalación va dentro de la propia guía («Cómo se instalan, 5 minutos»), no en un PDF aparte: son cinco pasos y abrir otro archivo para leerlos sobra.</li>
 </ul>
 <span class="rot">Notas de producción</span><ul class="reglas prod">
 <li>Cada script se corre en un modelo de prueba antes de entrar al pack. Un script que falla en la máquina de otra persona hace más daño que no haber publicado nada.</li>
@@ -1726,7 +1762,7 @@ Es gratis. Comenta GUIA y te llega.
 
 Este pack es ese primer script hecho. Cinco, comentados línea por línea para que los cambies y no solo los ejecutes. Tres de ellos ni siquiera tocan tu modelo — solo leen — así que puedes correrlos hoy en un archivo vivo sin arriesgar nada.
 
-Con el PDF de instalación y la versión exacta de Revit y Dynamo con la que los probamos.
+Con la instalación explicada en la propia guía y la versión exacta de Revit y Dynamo con la que los probamos.
 
 Es gratis. Comenta DYNAMO y te llega.
 
@@ -1740,21 +1776,21 @@ Es gratis. Comenta DYNAMO y te llega.
 <span class="rot">Hook</span><div class="pegar">Cinco tareas de Revit que no deberías seguir haciendo a mano.</div>
 <span class="rot">Diapositivas</span><div class="tabla-scroll"><table><tbody>
 <tr><th style="width:38px">1</th><td>1 · CINCO TAREAS DE REVIT QUE NO DEBERÍAS SEGUIR HACIENDO A MANO.</td></tr>
-<tr><th style="width:38px">2</th><td>2 · Renombrar vistas por norma, una por una. → Script 1: las renombra en lote.</td></tr>
-<tr><th style="width:38px">3</th><td>3 · Exportar planos abriendo el cuadro de diálogo cada vez. → Script 2: los exporta a PDF con el nombre correcto, sin tocar el diálogo.</td></tr>
-<tr><th style="width:38px">4</th><td>4 · Numerar elementos y que salgan por orden de creación en vez de por posición. → Script 3: los numera por dónde están.</td></tr>
-<tr><th style="width:38px">5</th><td>5 · Revisar parámetros vacíos a ojo antes de entregar. → Script 4: te los lista. Y el Script 5 compara dos modelos y te dice qué cambió.</td></tr>
+<tr><th style="width:38px">2</th><td>2 · Abrir el cuadro de advertencias, ver el número y cerrarlo. → Script 01: las saca todas a un CSV, ordenables y con el ID del elemento culpable.</td></tr>
+<tr><th style="width:38px">3</th><td>3 · Buscar a ojo por qué el cuadro de cantidades cuenta de más. → Script 02: te lista los elementos duplicados exactamente en el mismo sitio. No borra: decides tú.</td></tr>
+<tr><th style="width:38px">4</th><td>4 · Renombrar vistas una por una. → Script 03: buscar y reemplazar en lote.</td></tr>
+<tr><th style="width:38px">5</th><td>5 · Revisar qué vistas quedaron fuera de las hojas antes de entregar. → Script 04: te las lista. Y el Script 05 rellena un parámetro en lote.</td></tr>
 <tr><th style="width:38px">6</th><td>6 · Los cinco vienen comentados por dentro para que los cambies. TRES SOLO LEEN: los puedes correr hoy en un archivo vivo. COMENTA DYNAMO.</td></tr>
 </tbody></table></div>
-<span class="rot">Caption (copiar tal cual)</span><div class="pegar">Si renombras vistas una por una, si exportas planos abriendo el cuadro de diálogo cada vez, o si revisas parámetros vacíos a ojo: eso ya lo hace un script.
+<span class="rot">Caption (copiar tal cual)</span><div class="pegar">Si abres el cuadro de advertencias, ves el número y lo cierras; si renombras vistas una por una; o si revisas a ojo cuáles quedaron fuera de las hojas: eso ya lo hace un script.
 
-Armamos un pack con cinco, comentados línea por línea para que los puedas cambiar y no solo ejecutar. Con el PDF de instalación y la versión exacta con la que los probamos.
+Armamos un pack con cinco, comentados línea por línea para que los puedas cambiar y no solo ejecutar. Tres de los cinco solo leen: los puedes correr hoy en un archivo vivo sin arriesgar nada.
 
 Es gratis. Comenta DYNAMO y te llega.
 
 ¿Cuál de las cinco te quitaría más tiempo de encima?</div>
 <p class="cta-linea"><b>CTA:</b> Comenta DYNAMO</p>
-<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1080 px (1:1)</span><div class="prompt-txt">Cinco imágenes de 1080x1080 px (1:1) de la misma familia, para carrusel. Fondo azul marino #0E2438. Un grafo de nodos tipo Dynamo dibujado en línea fina ámbar #E8A04A — cajas conectadas por cables curvos — que en la primera tarjeta aparece enredado y en las siguientes se va ordenando hasta quedar en una sola línea limpia. Misma escala y mismo encuadre en las cinco. Sin texto legible dentro de los nodos. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos en ámbar #E8A04A, tipografía sans-serif de palo seco muy gruesa, composición limpia y con aire, sin stock corporativo ni gente sonriendo a cámara. El texto final se monta en Canva: la IA entrega el fondo y los elementos, no las letras.</div></div>
+<div class="prompt"><span class="rot">Prompt para ChatGPT · 1080x1080 px (1:1)</span><div class="prompt-txt">Seis imágenes de 1080x1080 px (1:1) de la misma familia, para carrusel. Fondo azul marino #0E2438. Un grafo de nodos tipo Dynamo dibujado en línea fina ámbar #E8A04A — cajas conectadas por cables curvos — que en la primera tarjeta aparece enredado y en las siguientes se va ordenando hasta quedar en una sola línea limpia. Misma escala y mismo encuadre en las seis. Sin texto legible dentro de los nodos. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos en ámbar #E8A04A, tipografía sans-serif de palo seco muy gruesa, composición limpia y con aire, sin stock corporativo ni gente sonriendo a cámara. El texto final se monta en Canva: la IA entrega el fondo y los elementos, no las letras.</div></div>
 </div>
 </div>
 <div class="lm col" data-k="lm-lm-memoria-calculo"><div class="pieza-cab cab"><label class="chk" title="Marcar como hecho — la pieza se cierra"><input type="checkbox" data-k="lm-lm-memoria-calculo"><span aria-hidden="true"></span></label><span class="pal">MEMORIA</span><h3>Guía de memoria de cálculo + plantilla</h3><span class="tipo">PDF de la guía + plantilla editable (Word y Excel)</span></div>
@@ -1820,7 +1856,7 @@ Es gratis. Comenta MEMORIA y te llega.
 <li><b>1. El archivo, con URL propia y estable</b><br>El PDF o el ZIP se sube y queda con una URL fija que no cambie nunca. Si mañana se reemplaza el archivo, se reemplaza en esa misma URL — porque esa dirección va a quedar escrita en correos, en DMs y en comentarios que siguen vivos meses después.</li>
 <li><b>2. Embudo de dos páginas</b><br>Página 1: la captura, con el formulario a la vista sin tener que bajar. Página 2: gracias, y ahí mismo el BOTÓN DE DESCARGA. El acceso es inmediato en pantalla. Nunca poner «te lo enviamos por correo» si no existe un workflow que lo envíe: es la promesa que más rápido se rompe.</li>
 <li><b>3. Formulario nativo de GHL, no de terceros</b><br>Nombre, correo, WhatsApp y una pregunta de perfil («¿en qué trabajas hoy?»). El formulario nativo mete el contacto directo al CRM sin costo por ejecución; el Inbound Webhook es prémium y cobra por cada envío. Al terminar, redirección automática a la página 2.</li>
-<li><b>4. Etiquetas desde el primer segundo</b><br>Cada contacto entra con dos etiquetas: una de tema (lead-revit-ia, lead-dynamo, lead-memoria-calculo) y una de origen (origen-bot-GUIA, origen-form, origen-comunidad). Sin la etiqueta de origen, a fin de mes no se puede decir qué recurso trajo a quién, y la pregunta de si el lead magnet sirvió se queda sin respuesta.</li>
+<li><b>4. Etiquetas desde el primer segundo</b><br>Cada contacto entra con dos etiquetas: una de tema (lead-revit-ia, lead-dynamo, lead-memoria-calculo) y una de origen (origen-bot-CHATGPT, origen-form, origen-comunidad). Sin la etiqueta de origen, a fin de mes no se puede decir qué recurso trajo a quién, y la pregunta de si el lead magnet sirvió se queda sin respuesta.</li>
 <li><b>5. Bot de palabra clave en Instagram y Facebook — DOS ramas separadas</b><br>Disparador de comentario filtrado por la palabra clave → respuesta pública → DM con el enlace. La acción de envío se configura POR SEPARADO para cada red: rama Instagram con DM de Instagram, rama Facebook con DM de Messenger. Nunca una sola acción compartida.</li>
 <li><b>6. La respuesta pública lleva SIEMPRE el enlace</b><br>No «te escribí al DM». El enlace visible en el comentario es la red de seguridad real: si el DM falla, la persona igual llega. Es gratis ponerlo y es lo único que salva la pieza cuando el canal falla en silencio.</li>
 <li><b>7. Secuencia de correos, tres toques</b><br>Correo 1 inmediato con el enlace otra vez (la gente cierra la página de gracias sin descargar). Correo 2 a las 48 h con un uso concreto del recurso. Correo 3 al día 5 con el puente al programa que le corresponde. La secuencia se enciende con la etiqueta de tema, no a mano.</li>

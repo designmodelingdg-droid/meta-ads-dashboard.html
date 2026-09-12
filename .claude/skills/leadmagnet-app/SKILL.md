@@ -20,6 +20,35 @@ magnet completo en producción**: app + funnel + GHL + contenido. La
 - Marquee de avales y patrones de secciones: usar el skill **landing-producto**
   (`.claude/skills/landing-producto/`).
 
+## Paso 0 · El oficio, antes de recopilar nada
+
+**Lee `.claude/skills/landing-craft/SKILL.md` antes de pedir un solo dato.** Ahí
+está lo que va antes del HTML y lo que decide si esta página se distingue de las
+otras diez de DMA o es la misma plantilla con otro texto:
+
+- la entrevista (6 preguntas, una sola tanda);
+- `DISEÑO.md` aprobado antes de escribir código;
+- el recorrido del visitante y la **curva de sensación con un solo pico**
+  ([sensacion.md](../landing-craft/references/sensacion.md));
+- el suelo de oficio: espaciado, tipografía, color, texto sobre imagen,
+  profundidad, tarjetas, movimiento, estados y la lista de lo que no se hace
+  ([oficio.md](../landing-craft/references/oficio.md));
+- las reglas duras, que bloquean la entrega.
+
+Esta skill tiene una plantilla con huecos. La plantilla resuelve la maquetación;
+**no** resuelve el recorrido ni el pico, y rellenar huecos sin eso es lo que hace
+que todas nuestras páginas se lean igual.
+
+Dos avisos que vienen de mirar nuestras propias landings con el verificador:
+
+- Los huecos de estadística de la plantilla invitan a inventar cifras. **Sin
+  número real, sin contador.** Es la regla 1 de la casa.
+- El botón naranja `#ca7520` con texto blanco mide **3,46:1**, por debajo del
+  mínimo de 4,5:1 para texto de 14 px. Si el CTA va en ese naranja, sube el
+  tamaño del texto o oscurece el fondo del botón.
+
+---
+
 ## Workflow completo (10 pasos)
 
 ### 1. Fuente de la lógica
@@ -150,3 +179,23 @@ Post de comunidades con el enlace de la landing.
 4. Brandkit DMA exacto en todas las piezas.
 5. Disclaimer educativo en la app y en el copy (no exagerar capacidades).
 6. Probar en navegador real (Playwright) antes de cada publicación.
+
+---
+
+## Paso final · Verificar mirándola
+
+No se entrega sin esto.
+
+```bash
+node .claude/skills/landing-craft/scripts/mirar.mjs <archivo.html | URL>
+```
+
+Fotografía a 1200 px y a 390 px, recorre el scroll, mide el contraste real sobre
+los píxeles (no sobre el CSS), avisa de enlaces sin destino y de desbordamiento
+horizontal. Sale con error si algo de eso falla.
+
+Y después **abre las capturas y míralas**: el script dice que cargó, no dice si se
+entiende. Procedimiento completo y el caso GHL en
+[verificacion.md](../landing-craft/references/verificacion.md).
+
+Se reporta lo que se verificó **y lo que no**.

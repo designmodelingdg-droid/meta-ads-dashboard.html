@@ -77,6 +77,29 @@ GHL → **Sites → Forms → New Form**. Nómbralo `Diagnóstico BIM Máster`.
 Añade los siete campos personalizados del paso 1. **Todos ocultos** (hidden):
 la persona no ve nada de esto, el formulario solo transporta el dato al CRM.
 
+> ⚠ **Y ADEMÁS el correo. Esto faltaba en esta guía y costó un montaje.**
+> Un formulario de GHL con solo campos personalizados **no se pega a ningún
+> contacto**: hace falta al menos **Email** o **Teléfono**, que son los que GHL
+> usa para identificar o crear la ficha. Sin eso el diagnóstico no tiene dueño.
+>
+> Añade dos campos estándar más:
+>
+> | Campo | Visible | Por qué |
+> |---|---|---|
+> | **Email** | sí | Es la llave con la que GHL encuentra o crea el contacto |
+> | **Nombre** (`Full Name`) | sí | Para que la ficha no quede sin nombre |
+>
+> Visibles a propósito: llegan prellenados desde el enlace que manda el closer
+> y la persona los ve y puede corregirlos. Un correo mal escrito manda el
+> diagnóstico a una ficha que no es.
+>
+> El test ya los envía — usa los nombres estándar de GHL, `email` y
+> `full_name`, que son los que su prellenado reconoce. No hay que tocar código.
+>
+> **Ojo con el «+» también aquí:** GHL lo borra igual en los campos estándar,
+> así que un correo con alias tipo `nombre+prueba@gmail.com` llega roto. Para
+> probar, usa una dirección distinta de verdad.
+
 Publica el formulario y copia su enlace, que se ve así:
 
 ```
@@ -92,14 +115,122 @@ Pégalo en `app.html`, en `CFG.FORM_GHL`, reemplazando `PEGAR_ID_DEL_FORMULARIO`
 **Por qué formulario nativo y no webhook:** el webhook de GHL es prémium y
 cobra por ejecución. El formulario nativo es gratis y el dato entra igual.
 
-## PASO 3 — Cómo manda el link el closer
+### HECHO el 9-sep — y lo que salió al montarlo
 
-El link tiene que llevar identificado al contacto, o el resultado no se puede
-pegar a nadie. En la plantilla de WhatsApp de GHL:
+Formulario montado: `c9q5RXwZp3kDRuwk1eCz`. Al conectarlo aparecieron tres
+cosas que no se ven a simple vista. Quedan aquí porque las tres se repiten en
+cualquier formulario de GHL que se monte igual.
+
+**1. Las claves llevan tilde y no son las que uno supone.** GHL genera la clave
+de cada campo a partir de su ETIQUETA. «Perfil técnico» produjo
+`perfil_técnico`, con tilde; «Puntajes por bloque» produjo `puntajes_por_bloque`
+y no `puntajes_bloques`. De las siete que enviaba el test, **solo una
+coincidía**: las otras seis habrían llegado vacías sin que nada avisara.
+
+Las claves reales, leídas del formulario publicado:
+
+| Campo | Clave real (`data-q`) |
+|---|---|
+| Nivel BIM | `nivel_bim` |
+| Perfil técnico | `perfil_técnico` |
+| Código de diagnóstico | `código_de_diagnóstico` |
+| Módulo recomendado | `módulo_recomendado` |
+| Enlace del resultado | `enlace_del_resultado` |
+| Detalle del diagnóstico | `detalle_del_diagnóstico` |
+| Puntajes por bloque | `puntajes_por_bloque` |
+
+**Cómo comprobarlas sin adivinar:** abre el enlace del formulario, mira el
+código fuente de la página y busca `data-q=`. Eso es exactamente lo que GHL
+cruza contra el querystring. Si alguien renombra una etiqueta, la clave cambia
+y ese campo deja de llegar — por eso la prueba automática las compara.
+
+**2. GHL borra el signo «+».** Su propio código hace `.replace(/\+/g,' ')` sobre
+el valor, porque asume que un «+» es un espacio codificado. No hay forma de
+colarle un «+» literal, ni escapándolo. Como el nivel más alto se llama
+«Especialista BIM + IA», habría llegado al CRM como «Especialista BIM   IA».
+El test ahora lo cambia por « y »: «Especialista BIM y IA».
+
+**3. El formulario tiene que VERSE.** Iba en un iframe de altura 0 y, al
+terminar de cargar, la pantalla decía «Listo. Tu asesor ya lo tiene». Era
+falso: prellenar un formulario no lo envía. Nadie pulsaba «Continuar», así que
+no se creaba el contacto y el diagnóstico no llegaba a ninguna parte — con la
+pantalla diciendo que sí. Es el mismo patrón del incidente de julio.
+
+Ahora el formulario se muestra y la pantalla pide el paso que falta: revisar
+los datos, marcar la casilla de consentimiento y pulsar **Continuar**. La
+casilla la marca la persona, no nosotros.
+
+## PASO 3 — Cómo manda el link el closer (y cómo NO se duplica el contacto)
+
+Casi todo el que recibe este enlace **ya tiene ficha en GHL**: viene de pauta y
+está en «lead calificado» del pipeline de High Ticket. La pregunta que importa
+es qué pasa cuando esa persona vuelve a dejar sus datos.
+
+**Lo cruza el CORREO, no el `cid`.** Conviene decirlo claro porque el enlace
+lleva las dos cosas y parece que manda el id:
+
+| Parámetro | Qué hace de verdad |
+|---|---|
+| `email` | **Es la llave.** GHL busca ese correo; si ya existe, ACTUALIZA esa ficha |
+| `nombre` | Rellena el nombre. No identifica a nadie |
+| `cid` | **No hace nada en el formulario.** Se envía como `contact_id` y GHL lo ignora: no está en su lista de campos que prellena. Viaja en el payload y ya |
+
+Así que la pieza que evita el duplicado es `{{contact.email}}` en la plantilla.
+Si vuelve el mismo correo que ya está en la ficha, **no se crea un contacto
+nuevo: se actualiza el que existe**, con sus etapas de pipeline, sus etiquetas
+y su historial intactos.
+
+### Las tres formas en que SÍ se duplicaría
+
+1. **La persona escribe otro correo.** El de la pauta era el del trabajo y pone
+   el personal. Por eso el correo va PRELLENADO y el test avisa en pantalla:
+   «Tu correo ya viene puesto. Déjalo tal cual: es lo que hace que este
+   diagnóstico se sume a tu ficha».
+2. **El enlace llega sin `email`.** Si el closer lo copia a mano en vez de usar
+   la plantilla con `{{contact.email}}`, o alguien lo reenvía a un amigo. En ese
+   caso el test enseña el otro aviso: «Escribe el mismo correo con el que te
+   registraste». Un enlace reenviado crea un contacto nuevo — y está bien, es
+   una persona nueva de verdad.
+3. **GHL tiene los duplicados permitidos.** Es un ajuste de la cuenta, no del
+   formulario: `Settings → Business Profile → Allow Duplicate Contact`. Si está
+   activado, GHL crea ficha nueva aunque el correo coincida. **Hay que
+   comprobarlo antes de mandar el primer enlace** — es la única de las tres que
+   no se ve venir.
+
+### Y el «+» otra vez
+
+GHL borra el signo «+» también en el correo. Un contacto cuyo correo sea
+`nombre+algo@dominio.com` llegaría como `nombre algo@dominio.com`, no cruzaría
+con nada y **crearía un duplicado**. Son pocos, pero si aparece un contacto
+partido en dos, mira eso primero.
+
+En la plantilla de WhatsApp de GHL:
 
 ```
-https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/test-master-bim/?cid={{contact.id}}&nombre={{contact.first_name}}&email={{contact.email}}
+https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/test-master-bim/?nombre={{contact.first_name}}&email={{contact.email}}
 ```
+
+**Sin `tel`, y esto es una corrección de lo que decía antes.** Aquí se
+documentó `tel={{contact.phone}}` y **no funciona**: GHL renderiza el teléfono
+en formato internacional, con «+» delante, y un «+» dentro de un querystring
+significa espacio. `tel=+593983241210` llega al test como « 593983241210». Y
+aunque se limpiara, GHL vuelve a hacer `.replace(/\+/g,' ')` sobre los valores
+que prellena, así que el «+» no llega nunca. Es la misma trampa del punto del
+«+», ahora en el teléfono.
+
+El parámetro `tel` sí sirve **si el número va en formato local**
+(`tel=0983241210`): eso viaja intacto. Lo que no sirve es la variable de GHL.
+
+**Lo mejor es quitarle el «obligatorio» al teléfono en el formulario**, o
+quitar el campo. El que cruza el contacto es el correo; el teléfono no aporta
+nada al diagnóstico y, si es obligatorio y no viaja prellenado, la persona lo
+teclea a mano. En la prueba del 10-sep lo tecleado NO sustituyó al de la ficha
+—se quedó el que ya tenía—, pero eso fue con un número que ya pertenecía a otro
+contacto, así que no se puede dar por norma.
+
+**`cid` se quitó del enlace.** Se enviaba como `contact_id` y GHL lo ignora
+—no está en su lista de campos que prellena—, así que solo ensuciaba la URL.
+El que evita el duplicado es `email`.
 
 Mensaje sugerido, después de agendar:
 
@@ -114,7 +245,7 @@ Mensaje sugerido, después de agendar:
 ## PASO 4 — Lo que el asesor lee antes de llamar
 
 En la ficha del contacto en GHL, en los campos personalizados. El que se lee
-de un vistazo es **`detalle_diagnostico`**, que termina con una línea así:
+de un vistazo es **`detalle_del_diagnóstico`**, que termina con una línea así:
 
 ```
 PARA EL ASESOR: Domina hasta Coordinador, viene de cálculo estructural.

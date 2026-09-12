@@ -6,6 +6,7 @@
   "FEED PRINCIPAL: las 12 piezas BASE mantienen el 40/40/20 exacto — 5 reels, 5 carruseles y 2 posts planos, lunes / miercoles / viernes. Todo lo de lead magnet va ENCIMA, sin tocar esas doce. Cada recurso gratuito lleva DOS piezas: el reel el martes (8, 22 y 29) y el carrusel o post plano el jueves siguiente (10, 24 y 1 oct). Seis extras en total. POR QUE DOS DIAS DE DISTANCIA y no el mismo dia: el reel trae alcance y el carrusel trae guardados, y publicados a la vez compiten entre ellos por la misma audiencia en las mismas horas. Separados, la palabra clave se pide DOS veces en la misma semana. Total del mes: 18 piezas de feed (8 reels, 7 carruseles, 3 posts planos). CORREGIDO 9-sep: esta regla decia que los extras eran «los 5 reels ya grabados» — eran los de agosto, que se retiraron el 8-sep. Ninguno de los 5 reels de valor esta grabado.",
   "POST PLANO = SOLO CON DATO DE CALCULO VERIFICABLE. Es la lectura de agosto: con dato, 45-62 comentarios (y Sobredimensionar cerro con 14.334 vistas y 107 comentarios); la frase generica hizo 0-4. La declaracion generica de IA queda prohibida como pieza.",
   "Minimo 60% del contenido en el NUCLEO (BIM / IA / modelado / acero). Cero OBRA.",
+  "PALABRAS DE COMENTARIO — SOLO ESTAS SEIS (fijado 11-sep): ZAPATA (Calculadora de Zapatas), ACERO (5 verificaciones en acero), NIVEL (Test de Nivel BIM), CHATGPT (Revit + ChatGPT), MEMORIA (Memoria de cálculo) y DYNAMO (Pack Dynamo). Son las únicas con disparador montado y activo. Ningún CTA pide otra palabra de recurso. Quedaron retiradas GUIA (pasa a CHATGPT), RUTA (pasa a NIVEL, nunca tuvo disparador), CUPO (pasa a ACERO), y GPT, EBOOK y GUIA-BIM, cuyos recursos siguen existiendo pero ya solo se enlazan directo desde el blog. BIM e IA no entran en esta lista porque no son lead magnets: son el bot de ventas del Máster y siguen igual.",
   "Cerrar SIEMPRE con pregunta directa + CTA de comentar. En comunidades: mensajes cortos, personales y SIN hashtags. En LinkedIn: nunca «comenta la palabra» — pregunta abierta; solo videos HORIZONTALES y PDF.",
   "Comunidades solo martes, jueves y viernes. Blog solo sabados, siempre con CTA a una campaña del mes o a un recurso gratuito. Historias de lunes a viernes, 3-5 frames al dia.",
   "PRECIOS (regla de oro, 2-sep): la publicidad anclada al MÁSTER no lleva ninguna cifra — ni el precio del módulo, ni el de la ruta, ni la suma. El CTA es siempre «llena el formulario», «agenda una cita» o «habla con un asesor», y el precio lo da el asesor en la conversación. Se vende POR MÓDULOS para bajar la barrera de entrada, pero la barrera se baja explicando la puerta, no publicando el número. ÚNICA EXCEPCIÓN: la Especialización en ACERO sí lleva su precio en el anuncio. Desde el 3-sep son $225 USD, y la subida tiene una razón que se dice en el propio anuncio: el programa ahora incluye el tutor de IA entrenado con sus clases. Un precio que sube sin explicar por qué se lee como encarecimiento; explicado, se lee como que el producto creció.",
@@ -28,7 +29,7 @@
    "cuando": "antes del 25-sep"
   },
   {
-   "tarea": "Montar el disparador de DM para la palabra RUTA en el bot",
+   "tarea": "RETIRADO 11-sep: RUTA nunca tuvo disparador y ya no es una de las palabras activas. Su CTA pasa a NIVEL (Test de Nivel BIM), que sí está montado",
    "desbloquea": "Carrusel 4 Puertas (Mie 23) y pauta nueva del Master",
    "cuando": "antes del 22-sep"
   },
@@ -38,14 +39,14 @@
    "cuando": "sesion de grabacion Lun 7 - Mar 8"
   },
   {
-   "tarea": "Confirmar la palabra clave GUIA y montar su disparador: la piden los reels del Mi 16 y el Mi 30",
-   "desbloquea": "CTA GUIA de reel-duplicados (Mié 16) y reel-limite-ia (Mié 30), y del reel de lanzamiento del recurso (Mar 8)",
-   "cuando": "antes del Mar 8, que es cuando sale el reel del propio recurso. Fecha dura real: Mié 16, el primer reel de valor que cierra pidiendo GUIA"
+   "tarea": "Confirmar la palabra clave CHATGPT y montar su disparador: la piden los reels del Mi 16 y el Mi 30",
+   "desbloquea": "CTA CHATGPT de reel-duplicados (Mié 16) y reel-limite-ia (Mié 30), y del reel de lanzamiento del recurso (Mar 8)",
+   "cuando": "antes del Mar 8, que es cuando sale el reel del propio recurso. Fecha dura real: Mié 16, el primer reel de valor que cierra pidiendo CHATGPT"
   },
   {
-   "tarea": "HECHO (7-sep): lead magnet «Revit + ChatGPT» construido, publicado y probado. Falta SOLO montar el disparador GUIA en GoHighLevel.",
-   "desbloquea": "CTA GUIA de los reels del Mié 16 y el Mié 30",
-   "cuando": "antes del Mar 8 (lanzamiento del recurso). Si el Mié 16 el disparador no está vivo, el comentario GUIA no recibe nada y el reel se publica sin red"
+   "tarea": "HECHO (7-sep): lead magnet «Revit + ChatGPT» construido, publicado y probado. Falta SOLO montar el disparador CHATGPT en GoHighLevel.",
+   "desbloquea": "CTA CHATGPT de los reels del Mié 16 y el Mié 30",
+   "cuando": "antes del Mar 8 (lanzamiento del recurso). Si el Mié 16 el disparador no está vivo, el comentario CHATGPT no recibe nada y el reel se publica sin red"
   },
   {
    "tarea": "HECHO (7-sep): pack starter de Dynamo construido y publicado; los 5 scripts se corrieron en Revit el 8-sep. Falta SOLO montar el disparador DYNAMO en GoHighLevel.",
@@ -54,7 +55,7 @@
   },
   {
    "tarea": "ESTER · Montar en GoHighLevel los 3 lead magnets nuevos: formulario, 2 etiquetas, bot con DOS ramas (Instagram y Facebook por separado) y secuencia de 3 correos. Paso a paso en el artefacto de montaje y en el Word de entregables.",
-   "para": "GUIA, MEMORIA y DYNAMO",
+   "para": "CHATGPT, MEMORIA y DYNAMO",
    "cuando": "es lo unico que separa los tres recursos de sus campanas"
   },
   {
@@ -909,9 +910,9 @@
      "lead_magnet": "lm-revit-chatgpt",
      "idea": {
       "titulo": "Guia «Revit + ChatGPT»: los 10 errores y su prompt",
-      "desarrollo": "Lanzamiento del recurso, y va el martes a propósito: es el primero de los tres porque su palabra —GUIA— es la que más reels piden después (Mié 16 y Mié 30). CORREGIDO 9-sep: antes esta nota decía que el reel del miércoles 9 apuntaba a esta guía. Ya no: el del Mié 9 es reel-deriva y su CTA es MEMORIA. La razón de la fecha era del reparto viejo de reels. Usa el mismo guion que el creativo de pauta «GUIA», con el CTA cambiado a comentario en vez de formulario: se graba una vez y se monta dos veces."
+      "desarrollo": "Lanzamiento del recurso, y va el martes a propósito: es el primero de los tres porque su palabra —CHATGPT— es la que más reels piden después (Mié 16 y Mié 30). CORREGIDO 9-sep: antes esta nota decía que el reel del miércoles 9 apuntaba a esta guía. Ya no: el del Mié 9 es reel-deriva y su CTA es MEMORIA. La razón de la fecha era del reparto viejo de reels. Usa el mismo guion que el creativo de pauta «CHATGPT», con el CTA cambiado a comentario en vez de formulario: se graba una vez y se monta dos veces."
      },
-     "nota": "Lanzamiento del recurso, y va el martes a propósito: es el primero de los tres porque su palabra —GUIA— es la que más reels piden después (Mié 16 y Mié 30). CORREGIDO 9-sep: antes esta nota decía que el reel del miércoles 9 apuntaba a esta guía. Ya no: el del Mié 9 es reel-deriva y su CTA es MEMORIA. La razón de la fecha era del reparto viejo de reels. Usa el mismo guion que el creativo de pauta «GUIA», con el CTA cambiado a comentario en vez de formulario: se graba una vez y se monta dos veces.",
+     "nota": "Lanzamiento del recurso, y va el martes a propósito: es el primero de los tres porque su palabra —CHATGPT— es la que más reels piden después (Mié 16 y Mié 30). CORREGIDO 9-sep: antes esta nota decía que el reel del miércoles 9 apuntaba a esta guía. Ya no: el del Mié 9 es reel-deriva y su CTA es MEMORIA. La razón de la fecha era del reparto viejo de reels. Usa el mismo guion que el creativo de pauta «CHATGPT», con el CTA cambiado a comentario en vez de formulario: se graba una vez y se monta dos veces.",
      "id": "pauta-guia",
      "tipo": "lanzamiento-recurso"
     },
@@ -963,12 +964,12 @@
      "idea": {
       "titulo": "REEL · Tus planos están bien. Tu presupuesto está mal. (grabar)",
       "desarrollo": "El error invisible. Es el ángulo más fuerte de los cinco porque no da ningún mensaje en Revit: los planos salen perfectos y el cuadro cuenta el doble. Se descubre al presupuestar, que es cuando ya se cotizó.\n\nGANCHO (0:00): «Hay un error en Revit que no te avisa. Los planos salen bien y el presupuesto sale mal.»\n\nDuración 35-40 s. Guion completo segundo a segundo en matriz-viral/matriz/reels-septiembre.py → REELS['reel-duplicados'].",
-      "cta": "GUIA → Revit + ChatGPT (recurso ya publicado)"
+      "cta": "CHATGPT → Revit + ChatGPT (recurso ya publicado)"
      },
      "tipo": "valor",
      "formato_publicacion": "REEL (grabar)",
      "id": "reel-duplicados",
-     "nota": "NUEVO 8-sep. El error de Revit que no avisa: los planos salen bien y el cuadro cuenta el doble. CTA: comenta GUIA."
+     "nota": "NUEVO 8-sep. El error de Revit que no avisa: los planos salen bien y el cuadro cuenta el doble. CTA: comenta CHATGPT."
     },
     {
      "fecha": "Vie 18",
@@ -1010,7 +1011,7 @@
      "id": "sep-carrusel-4-puertas",
      "tipo": "venta-blanda",
      "formato_publicacion": "CARRUSEL (8 slides)",
-     "nota": "LA PIEZA DEL MES: la nueva arquitectura contada como contenido. Sin precio. Requiere el disparador RUTA vivo."
+     "nota": "LA PIEZA DEL MES: la nueva arquitectura contada como contenido. Sin precio. Pide NIVEL, que ya está montado."
     },
     {
      "fecha": "Jue 24",
@@ -1065,12 +1066,12 @@
      "idea": {
       "titulo": "REEL · Lo que no hay que preguntarle a la IA (grabar)",
       "desarrollo": "Cierra el mes marcando el límite, y es la pieza que más nos diferencia: todo el mundo publica «10 prompts para Revit», nosotros publicamos dónde la IA deja de servir. Es lo que permite que una academia de ingeniería hable de IA sin quedar mal. Tono sereno, nunca alarmista.\n\nGANCHO (0:00): «Una inteligencia artificial no sabe cuándo no sabe.»\n\nDuración 35-40 s. Guion completo segundo a segundo en matriz-viral/matriz/reels-septiembre.py → REELS['reel-limite-ia'].",
-      "cta": "GUIA → Revit + ChatGPT (recurso ya publicado)"
+      "cta": "CHATGPT → Revit + ChatGPT (recurso ya publicado)"
      },
      "tipo": "valor",
      "formato_publicacion": "REEL (grabar)",
      "id": "reel-limite-ia",
-     "nota": "NUEVO 8-sep. Cierra el mes marcando el límite de la IA — la pieza que más nos diferencia. El reel del tutor que iba aquí se movió a PAUTA: el tutor es argumento de venta, no contenido de valor. CTA: comenta GUIA."
+     "nota": "NUEVO 8-sep. Cierra el mes marcando el límite de la IA — la pieza que más nos diferencia. El reel del tutor que iba aquí se movió a PAUTA: el tutor es argumento de venta, no contenido de valor. CTA: comenta CHATGPT."
     },
     {
      "fecha": "Jue 1 oct",
@@ -1192,7 +1193,7 @@
      "idea": {
       "titulo": "Venta suave · las 4 puertas",
       "formato": "Mensaje corto",
-      "desarrollo": "«Reorganizamos toda la formacion en 4 etapas: Estructura → Coordina → Gestiona → Automatiza. ¿En cual se ubican? El que me responda RUTA le digo la suya con su caso concreto.» (sin precio, requiere disparador RUTA)"
+      "desarrollo": "«Reorganizamos toda la formacion en 4 etapas: Estructura → Coordina → Gestiona → Automatiza. ¿En cual se ubican? El que me responda NIVEL le digo la suya con su caso concreto.» (sin precio)"
      },
      "tipo": "venta",
      "formato_publicacion": "Mensaje + palabra clave"
@@ -1257,7 +1258,7 @@
      "id": "ago-blog-ia-arquitectura",
      "tipo": "blog",
      "formato_publicacion": "Articulo + portada",
-     "nota": "CTA del articulo: GPT IA Pro (recurso gratis) + mencion de la ruta del Master (sin precio)."
+     "nota": "CTA del articulo: enlace directo a la guia Revit + ChatGPT + mencion de la ruta del Master (sin precio). En blog el enlace va directo: GPT IA Pro ya no tiene palabra de comentario."
     },
     {
      "fecha": "Sab 19",
@@ -1378,7 +1379,7 @@
      "idea": {
       "titulo": "Academy · Articulo: IA en arquitectura (blog del sabado)",
       "formato": "Articulo LinkedIn",
-      "desarrollo": "El blog del Sab 12 republicado como articulo nativo con el CTA a GPT IA Pro."
+      "desarrollo": "El blog del Sab 12 republicado como articulo nativo, con enlace directo a la guia Revit + ChatGPT."
      },
      "tipo": "valor",
      "formato_publicacion": "Articulo"
@@ -1520,13 +1521,16 @@
   {
    "n": 5,
    "nombre": "GRUPO 5 · Historias de Instagram (y Facebook stories)",
-   "descripcion": "Todos los dias de lunes a viernes, 3-5 historias diarias, vinculadas a la estrategia del feed: relleno, valor, interaccion y venta. La venta vive en la secuencia del JUEVES (rotacion escrita frame a frame en los guiones).",
+   "descripcion": "Todos los dias de lunes a viernes, 4 historias diarias. La semana es un ARCO con el caso real de Gabriel detras -una vivienda de dos pisos de hormigon armado, con estructuras, arquitectura e instalaciones-: el lunes abre un bucle, el jueves lo paga y ahi vive la venta. Guion frame a frame en matriz/historias-septiembre.py.",
    "reglas": [
     "El sticker es el CTA: una historia sin sticker solo se ve, no convierte.",
-    "Nunca precio ni «inscribete» en historia: el objetivo es que escriban.",
-    "Maximo 5 frames por secuencia.",
+    "Nunca precio ni «inscríbete» en historia: el objetivo es que escriban.",
+    "Máximo 5 frames por secuencia.",
+    "La semana es un arco: lo que se promete el lunes se paga el jueves. Si no se va a pagar, no se promete.",
+    "El mensaje principal de la semana nunca va sobre una imagen generada: va sobre material real (Gabriel, la obra, la pantalla). La IA es para el relleno, no para la prueba.",
+    "Los números entre corchetes los confirma Gabriel antes de grabar. La estructura está fija; las cifras no se inventan.",
     "Las buenas secuencias se guardan en DESTACADAS (ACERO · BIM+IA · Herramientas · Comunidad · Alumnos).",
-    "Rotacion de venta de los jueves: S1 cupos ACERO · S2 objecion ACERO · S3 espejo Master (4 puertas) · S4 tutor de IA (solo si esta en produccion; si no, repite cupos con numero actualizado)."
+    "Rotación de venta de los jueves: S1 cupos ACERO · S2 objeción ACERO · S3 espejo Máster (4 puertas) · S4 tutor de IA — montado en los cuatro cursos de la especialización desde el 11 de septiembre."
    ],
    "calendario": [
     {
@@ -1592,17 +1596,17 @@
   "existentes": [
    {
     "nombre": "Guia BIM",
-    "palabra": "GUIA-BIM (confirmar la palabra montada)",
+    "palabra": "SIN PALABRA ACTIVA — solo enlace directo",
     "vinculado_a": "Piezas de metodologia BIM (carrusel 3 señales, errores Revit)"
    },
    {
     "nombre": "Ebook BIM",
-    "palabra": "EBOOK (confirmar)",
+    "palabra": "SIN PALABRA ACTIVA — solo enlace directo",
     "vinculado_a": "Blog de sostenibilidad (Sab 3 oct) y comunidades"
    },
    {
     "nombre": "GPT IA Pro",
-    "palabra": "GPT (confirmar)",
+    "palabra": "SIN PALABRA ACTIVA — solo enlace directo",
     "vinculado_a": "Blog IA-arquitectura (Sab 12) y reels de IA"
    },
    {
@@ -1623,7 +1627,7 @@
    {
     "nombre": "Verificacion de Acero (5 Verificaciones)",
     "palabra": "ACERO",
-    "vinculado_a": "CTA de acero del mes: posts de dato de calculo, blog ETABS/SAP y pauta. OJO: ya NO lo sostiene ningun reel — los 5 reels nuevos apuntan a GUIA, MEMORIA y DYNAMO."
+    "vinculado_a": "CTA de acero del mes: posts de dato de calculo, blog ETABS/SAP y pauta. OJO: ya NO lo sostiene ningun reel — los 5 reels nuevos apuntan a CHATGPT, MEMORIA y DYNAMO."
    },
    {
     "nombre": "Test de Nivelacion BIM",
@@ -1634,7 +1638,7 @@
   "por_crear": [
    {
     "nombre": "Guía «Revit + ChatGPT: resuelve errores con IA»",
-    "palabra_sugerida": "GUIA",
+    "palabra_sugerida": "CHATGPT",
     "para_que": "Lo piden los CTA de reel-duplicados (Mié 16) y reel-limite-ia (Mié 30), y el propio reel de lanzamiento del Mar 8. CORREGIDO 9-sep: antes decía que lo pedía el reel del Mié 9 — ese reel («Revit + ChatGPT») se retiró el 8-sep porque ya se había publicado en agosto, y el del Mié 9 es ahora reel-deriva, que pide MEMORIA."
    },
    {
@@ -1661,10 +1665,10 @@
    {
     "fecha": "Mar 8 (lanzamiento) · Mié 16 · Mié 30",
     "pieza": "Reel de lanzamiento del recurso + Tus planos están bien. Tu presupue (Miércoles 16) + Lo que no hay que preguntarle a la (Miércoles 30)",
-    "cta": "GUIA",
+    "cta": "CHATGPT",
     "recurso": "Guía «Revit + ChatGPT: resuelve errores con IA»",
-    "estado": "🟡 Recurso VIVO y probado (7-sep); falta SOLO montar el disparador GUIA en GHL",
-    "reemplazo": "Si no está el Mar 8: CTA cambia a «comenta GPT» → GPT IA Pro (existe). El subtítulo del reel dice COMENTA GUIA: si se cambia el CTA hay que regenerar el subtítulo (5 min con el pipeline)."
+    "estado": "🟡 Recurso VIVO y probado (7-sep); falta SOLO montar el disparador CHATGPT en GHL",
+    "reemplazo": "Si no está el Mar 8: CTA cambia a «comenta MEMORIA», que está activa. El subtítulo del reel dice COMENTA CHATGPT: si se cambia el CTA hay que regenerar el subtítulo (5 min con el pipeline)."
    },
    {
     "fecha": "Vie 18 · Mar 22 (lanzamiento)",
@@ -1693,9 +1697,9 @@
    {
     "fecha": "Mi 23, V25 + correo Mar 22 + comunidad Jue 24",
     "pieza": "Carrusel 4 Puertas y correo Master (el reel espejo se retiro el 8-sep)",
-    "cta": "RUTA",
+    "cta": "NIVEL",
     "recurso": "Orientacion 1-a-1 del equipo (el Test de Nivelacion cubre el diagnostico)",
-    "estado": "🟡 Recurso existe (test), DISPARADOR RUTA por montar",
+    "estado": "🟢 Recurso existe (test) y NIVEL ya está montada. RUTA se retiró el 11-sep",
     "reemplazo": "Si el disparador no esta el 22: CTA cambia a «comenta NIVEL» → Test de Nivelacion (montado)."
    },
    {
@@ -1725,7 +1729,7 @@
    {
     "fecha": "Blog Sab 12",
     "pieza": "Articulo IA en arquitectura",
-    "cta": "GPT",
+    "cta": "enlace directo (ya no hay palabra GPT)",
     "recurso": "GPT IA Pro",
     "estado": "🟡 Existe; CONFIRMAR la palabra montada en el bot",
     "reemplazo": "Enlace directo en el blog (en blog el enlace si va directo)."
@@ -1733,13 +1737,13 @@
    {
     "fecha": "Blog Sab 3-oct",
     "pieza": "Articulo sostenibilidad",
-    "cta": "EBOOK",
+    "cta": "enlace directo (ya no hay palabra EBOOK)",
     "recurso": "Ebook BIM",
     "estado": "🟡 Existe; CONFIRMAR la palabra montada",
     "reemplazo": "Enlace directo en el blog."
    }
   ],
-  "nota_mapa": "RECONSTRUIDO 9-sep. Cuatro filas describían los reels de agosto («Reels grabados #4, #6, #7, #8» y «el reel del miércoles, error Revit + ChatGPT»), que se retiraron el 8-sep. Las tres palabras de recurso van primero y en el orden en que se piden: MEMORIA el Mié 9, GUIA el Mar 8, DYNAMO el Vie 18."
+  "nota_mapa": "RECONSTRUIDO 9-sep. Cuatro filas describían los reels de agosto («Reels grabados #4, #6, #7, #8» y «el reel del miércoles, error Revit + ChatGPT»), que se retiraron el 8-sep. Las tres palabras de recurso van primero y en el orden en que se piden: MEMORIA el Mié 9, CHATGPT el Mar 8, DYNAMO el Vie 18."
  },
  "piezas": [],
  "pauta": [
@@ -1787,7 +1791,7 @@
    "preencabezado": "Estructura · Coordina · Gestiona · Automatiza.",
    "segmento": "Lista propia completa + leads Master",
    "objetivo": "Presentar la nueva arquitectura y agendar diagnosticos con el equipo comercial",
-   "cuerpo": "«Quiero aprender BIM» es como decir «quiero aprender medicina»: depende de dónde estés parado hoy.\n\nPor eso reorganizamos toda la formación de DMA en 4 etapas:\n\n1. ESTRUCTURA — para el que necesita implementar BIM correctamente: metodología, estándares, BEP.\n2. COORDINA — para el que ya modela y quiere coordinar disciplinas: interferencias, calidad, entregables.\n3. GESTIONA — para el que apunta a BIM Manager: 4D, 5D, costos y liderazgo.\n4. AUTOMATIZA — para el que quiere IA, Dynamo y Python en proyectos reales.\n\nY una ruta completa de 12 meses que las recorre todas, hasta liderar como BIM Manager + IA.\n\n¿No sabes cuál es tu etapa? Responde este correo con la palabra RUTA, o agenda 15 minutos con el equipo: te decimos exactamente dónde estás y qué te falta — sin compromiso.\n\n— DMA",
+   "cuerpo": "«Quiero aprender BIM» es como decir «quiero aprender medicina»: depende de dónde estés parado hoy.\n\nPor eso reorganizamos toda la formación de DMA en 4 etapas:\n\n1. ESTRUCTURA — para el que necesita implementar BIM correctamente: metodología, estándares, BEP.\n2. COORDINA — para el que ya modela y quiere coordinar disciplinas: interferencias, calidad, entregables.\n3. GESTIONA — para el que apunta a BIM Manager: 4D, 5D, costos y liderazgo.\n4. AUTOMATIZA — para el que quiere IA, Dynamo y Python en proyectos reales.\n\nY una ruta completa de 12 meses que las recorre todas, hasta liderar como BIM Manager + IA.\n\n¿No sabes cuál es tu etapa? Responde este correo con la palabra NIVEL, o agenda 15 minutos con el equipo: te decimos exactamente dónde estás y qué te falta — sin compromiso.\n\n— DMA",
    "condicion": "SIN PRECIO en todo el correo. El precio del Master vive en la llamada del closer."
   },
   {
