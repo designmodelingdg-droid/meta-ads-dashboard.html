@@ -129,7 +129,19 @@ for (const { w, h, nombre } of anchos) {
       return r.abort();
     });
   }
-  await pag.goto(url, { waitUntil: 'domcontentloaded' });
+  // Si no se puede abrir, se dice y se sale con error. Nunca en silencio: una
+  // pagina que no se pudo abrir no es una pagina verificada.
+  try {
+    await pag.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 });
+  } catch (e) {
+    console.log(`\n━━ ${nombre} · ${w}px ━━`);
+    console.log(`  ✖ no se pudo abrir la pagina: ${e.message.split('\n')[0]}`);
+    console.log('     (si es una URL publica, este entorno quiza no la alcance:');
+    console.log('      prueba con el archivo local, o desde tu maquina)');
+    await pag.close();
+    fallo = true;
+    continue;
+  }
   await pag.waitForTimeout(1200);
 
   console.log(`\n━━ ${nombre} · ${w}px ━━`);
