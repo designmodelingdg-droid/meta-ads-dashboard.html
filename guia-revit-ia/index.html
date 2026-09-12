@@ -14,7 +14,7 @@
 <style>
   :root{
     --navy:#003e5c; --navy2:#001e30; --azul-medio:#0a5a80;
-    --orange:#ca7520; --orange-d:#e8a04a; --orange-p:#f7e8cc;
+    --orange:#ca7520;--orange-btn:#a7611b; --orange-d:#e8a04a; --orange-p:#f7e8cc;
     --crema:#fafaf7; --ink:#333; --ink2:#5a6b7b; --line:#e5e7eb;
     --ok:#1e9e6a;
   }
@@ -29,7 +29,7 @@
   nav{background:rgba(255,255,255,.97);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:10px 0;position:sticky;top:0;z-index:40}
   nav .container{display:flex;align-items:center;justify-content:space-between;gap:16px}
   nav img{height:38px}
-  nav .cta{background:var(--orange);color:#fff;padding:9px 18px;border-radius:9px;font-family:'Overpass',sans-serif;font-weight:700;font-size:.86rem;text-decoration:none;white-space:nowrap}
+  nav .cta{background:var(--orange-btn);color:#fff;padding:9px 18px;border-radius:9px;font-family:'Overpass',sans-serif;font-weight:700;font-size:.86rem;text-decoration:none;white-space:nowrap}
 
   .hero{background:linear-gradient(135deg,var(--navy2),var(--navy));color:#fff;padding:56px 0 64px}
   .hero .container{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
@@ -40,7 +40,9 @@
   .hero ul{list-style:none;margin-top:22px;display:flex;flex-direction:column;gap:9px}
   .hero ul li{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:start;color:#dbe5ec;font-size:.97rem}
   .hero ul li b{color:#fff}
-  .tick{color:var(--orange-d);font-weight:800}
+  .nope{color:var(--ink2);font-weight:800;margin-right:2px}
+  .tick{color:var(--orange-btn);font-weight:800}
+  .hero .tick{color:var(--orange-d)}
 
   .formcard{background:#fff;color:var(--ink);border-radius:16px;padding:26px;box-shadow:0 24px 60px rgba(0,0,0,.34)}
   .formcard h3{font-size:1.16rem;color:var(--navy);margin-bottom:4px}
@@ -50,7 +52,7 @@
   .campo label{display:block;font-size:.78rem;font-weight:700;color:var(--ink2);margin-bottom:4px}
   .campo input,.campo select{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:9px;font:inherit;font-size:.94rem;background:#fbfcfe}
   .campo input:focus,.campo select:focus{outline:2px solid var(--orange);border-color:var(--orange)}
-  .btn{display:block;width:100%;padding:14px;border:0;border-radius:10px;background:var(--orange);color:#fff;font-family:'Overpass',sans-serif;font-weight:800;font-size:1rem;cursor:pointer;text-align:center;text-decoration:none}
+  .btn{display:block;width:100%;padding:14px;border:0;border-radius:10px;background:var(--orange-btn);color:#fff;font-family:'Overpass',sans-serif;font-weight:800;font-size:1rem;cursor:pointer;text-align:center;text-decoration:none}
   .btn:hover{background:var(--orange-d)}
   .legal{font-size:.72rem;color:var(--ink2);margin-top:12px;line-height:1.5;text-align:center}
 
@@ -128,7 +130,7 @@
   <div>
     <span class="eyebrow">Guía técnica · gratis</span>
     <h1>Revit + ChatGPT: resuelve errores con IA</h1>
-    <p class="sub">Un error de Revit no cuesta lo que tarda en arreglarse. Cuesta las dos horas de foro que hay antes. Estos son los 10 que más tiempo hacen perder — y el prompt exacto para cada uno.</p>
+    <p class="sub">Un error de Revit no cuesta lo que tarda en arreglarse. Cuesta las dos horas de foro que hay antes. Estos son los 10 que más tiempo hacen perder, y el prompt exacto para cada uno.</p>
     <ul>
       <li><span class="tick">✓</span><span><b>10 errores reales,</b> con lo que dice Revit, lo que significa de verdad y lo que lo causa.</span></li>
       <li><span class="tick">✓</span><span><b>Un prompt por error,</b> listo para copiar, con el contexto que hace que la respuesta sirva.</span></li>
@@ -212,9 +214,9 @@
       <li><span class="tick">✓</span>Quieres usar IA en el trabajo sin arriesgar lo que firmas.</li>
     </ul></div>
     <div class="q no"><h4>No, todavía no</h4><ul>
-      <li><span style="color:#b5761a">—</span>Nunca abriste Revit. Empieza por el curso de introducción, es gratis también.</li>
-      <li><span style="color:#b5761a">—</span>Buscas que la IA dimensione por ti. Esta guía dice justo lo contrario.</li>
-      <li><span style="color:#b5761a">—</span>Quieres una lista de prompts para copiar sin entenderlos.</li>
+      <li><span class="nope" aria-hidden="true">✕</span>Nunca abriste Revit. Empieza por el curso de introducción, es gratis también.</li>
+      <li><span class="nope" aria-hidden="true">✕</span>Buscas que la IA dimensione por ti. Esta guía dice justo lo contrario.</li>
+      <li><span class="nope" aria-hidden="true">✕</span>Quieres una lista de prompts para copiar sin entenderlos.</li>
     </ul></div>
   </div>
 </div></section>
@@ -222,11 +224,11 @@
 <section style="background:var(--crema)"><div class="container">
   <h2 class="sec">Preguntas</h2>
   <div style="max-width:46rem;margin-top:22px">
-      <details open><summary>¿Necesito pagar ChatGPT para usarla?</summary><p>No. Los prompts funcionan igual en la versión gratuita de ChatGPT, en Claude o en Copilot. Lo que cambia la calidad de la respuesta no es el plan que pagues, es el contexto que le das — y eso es justo lo que enseña la guía.</p></details>
+      <details open><summary>¿Necesito pagar ChatGPT para usarla?</summary><p>No. Los prompts funcionan igual en la versión gratuita de ChatGPT, en Claude o en Copilot. Lo que cambia la calidad de la respuesta no es el plan que pagues, es el contexto que le das, y eso es justo lo que enseña la guía.</p></details>
       <details><summary>¿Sirve para mi versión de Revit?</summary><p>Sí. Los prompts están escritos para que le digas tu versión, precisamente porque los menús cambian entre versiones. Un error resuelto con una ruta de 2019 te hace perder diez minutos en 2026.</p></details>
       <details><summary>¿Esto reemplaza saber Revit?</summary><p>No, y la guía lo dice en una página entera. La IA es buena para entender qué te está diciendo Revit y para ordenar por dónde buscar. Es mala para decidir. En el momento en que la respuesta se convierte en un número de proyecto, el trabajo vuelve a ser tuyo.</p></details>
       <details><summary>¿Me llega por correo?</summary><p>No hace falta esperar: al enviar el formulario entras directo a la guía en pantalla. También te la mandamos por correo para que la tengas a mano, pero el acceso es inmediato.</p></details>
-      <details><summary>¿Tiene costo o me van a llamar a vender?</summary><p>La guía es gratis y es tuya. Si en algún momento quieres ver el Máster, hay un enlace al final — pero está al final, no en medio de la guía.</p></details>
+      <details><summary>¿Tiene costo o me van a llamar a vender?</summary><p>La guía es gratis y es tuya. Si en algún momento quieres ver el Máster, hay un enlace al final, pero está al final, no en medio de la guía.</p></details>
   </div>
 </div></section>
 

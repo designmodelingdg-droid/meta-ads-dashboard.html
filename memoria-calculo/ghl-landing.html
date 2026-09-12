@@ -9,7 +9,7 @@
 <style>
   :root{
     --navy:#003e5c; --navy2:#001e30; --azul-medio:#0a5a80;
-    --orange:#ca7520; --orange-d:#e8a04a; --orange-p:#f7e8cc;
+    --orange:#ca7520;--orange-btn:#a7611b; --orange-d:#e8a04a; --orange-p:#f7e8cc;
     --crema:#fafaf7; --ink:#333; --ink2:#5a6b7b; --line:#e5e7eb;
     --ok:#1e9e6a;
   }
@@ -24,7 +24,7 @@
   nav{background:rgba(255,255,255,.97);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:10px 0;position:sticky;top:0;z-index:40}
   nav .container{display:flex;align-items:center;justify-content:space-between;gap:16px}
   nav img{height:38px}
-  nav .cta{background:var(--orange);color:#fff;padding:9px 18px;border-radius:9px;font-family:'Overpass',sans-serif;font-weight:700;font-size:.86rem;text-decoration:none;white-space:nowrap}
+  nav .cta{background:var(--orange-btn);color:#fff;padding:9px 18px;border-radius:9px;font-family:'Overpass',sans-serif;font-weight:700;font-size:.86rem;text-decoration:none;white-space:nowrap}
 
   .hero{background:linear-gradient(135deg,var(--navy2),var(--navy));color:#fff;padding:56px 0 64px}
   .hero .container{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
@@ -35,7 +35,9 @@
   .hero ul{list-style:none;margin-top:22px;display:flex;flex-direction:column;gap:9px}
   .hero ul li{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:start;color:#dbe5ec;font-size:.97rem}
   .hero ul li b{color:#fff}
-  .tick{color:var(--orange-d);font-weight:800}
+  .nope{color:var(--ink2);font-weight:800;margin-right:2px}
+  .tick{color:var(--orange-btn);font-weight:800}
+  .hero .tick{color:var(--orange-d)}
 
   .formcard{background:#fff;color:var(--ink);border-radius:16px;padding:26px;box-shadow:0 24px 60px rgba(0,0,0,.34)}
   .formcard h3{font-size:1.16rem;color:var(--navy);margin-bottom:4px}
@@ -45,7 +47,7 @@
   .campo label{display:block;font-size:.78rem;font-weight:700;color:var(--ink2);margin-bottom:4px}
   .campo input,.campo select{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:9px;font:inherit;font-size:.94rem;background:#fbfcfe}
   .campo input:focus,.campo select:focus{outline:2px solid var(--orange);border-color:var(--orange)}
-  .btn{display:block;width:100%;padding:14px;border:0;border-radius:10px;background:var(--orange);color:#fff;font-family:'Overpass',sans-serif;font-weight:800;font-size:1rem;cursor:pointer;text-align:center;text-decoration:none}
+  .btn{display:block;width:100%;padding:14px;border:0;border-radius:10px;background:var(--orange-btn);color:#fff;font-family:'Overpass',sans-serif;font-weight:800;font-size:1rem;cursor:pointer;text-align:center;text-decoration:none}
   .btn:hover{background:var(--orange-d)}
   .legal{font-size:.72rem;color:var(--ink2);margin-top:12px;line-height:1.5;text-align:center}
 
@@ -182,7 +184,7 @@
     <span class="eyebrow">La idea que ordena todo lo demás</span>
     <h2>Escríbela para alguien que no puede llamarte</h2>
     <p>Alguien que quiere reproducir tu resultado y no tiene cómo preguntarte. Si con lo que está en el papel esa persona llega a tu número, la memoria está completa.</p>
-    <p><b style="color:#fff">Si necesita llamarte, no lo está</b> — y ese hueco es exactamente el que el revisor va a encontrar.</p>
+    <p><b style="color:#fff">Si necesita llamarte, no lo está</b>. Ese hueco es exactamente el que el revisor va a encontrar.</p>
   </div>
   <div class="demo">
     <div class="r"><span>«Momento último: 42,5 t·m. Cumple.»</span><b><span class="chip warn">Vuelve</span></b></div>
@@ -191,7 +193,7 @@
     <div class="r"><span>«Según la normativa vigente»</span><b><span class="chip warn">Vuelve</span></b></div>
     <div class="out">
       <b>Cada número tiene que rastrearse hasta una carga y una combinación</b>
-      <small>Si no, es una afirmación — y una afirmación no se revisa, se devuelve.</small>
+      <small>Si no, es una afirmación, y una afirmación no se revisa, se devuelve.</small>
     </div>
   </div>
 </div></section>
@@ -206,9 +208,9 @@
       <li><span class="tick">✓</span>Te devolvieron una memoria y no acabaste de entender por qué.</li>
     </ul></div>
     <div class="q no"><h4>No, todavía no</h4><ul>
-      <li><span style="color:#b5761a">—</span>Buscas aprender a calcular. Esto es sobre el documento, no sobre el cálculo.</li>
-      <li><span style="color:#b5761a">—</span>Esperas que la plantilla proponga secciones o valores. No lo hace, a propósito.</li>
-      <li><span style="color:#b5761a">—</span>Necesitas las cifras de una norma concreta. Aquí no se transcribe ninguna.</li>
+      <li><span class="nope" aria-hidden="true">✕</span>Buscas aprender a calcular. Esto es sobre el documento, no sobre el cálculo.</li>
+      <li><span class="nope" aria-hidden="true">✕</span>Esperas que la plantilla proponga secciones o valores. No lo hace, a propósito.</li>
+      <li><span class="nope" aria-hidden="true">✕</span>Necesitas las cifras de una norma concreta. Aquí no se transcribe ninguna.</li>
     </ul></div>
   </div>
 </div></section>
@@ -216,8 +218,8 @@
 <section style="background:var(--crema)"><div class="container">
   <h2 class="sec">Preguntas</h2>
   <div style="max-width:46rem;margin-top:22px">
-      <details open><summary>¿Esta plantilla me calcula la estructura?</summary><p>No, y es a propósito. La guía es de estructura documental: dice cómo se organiza y se justifica la memoria. Los valores, los criterios y las verificaciones son tuyos. En el momento en que la plantilla propusiera una sección o un valor de diseño, tendría que responder por ese número — y eso no se delega.</p></details>
-      <details><summary>¿Sirve para mi país y mi normativa?</summary><p>Sí, porque no transcribe ninguna cifra normativa. La estructura de una memoria —objeto, normativa, hipótesis, combinaciones, verificaciones— es la misma en todas partes. Lo que cambia son las normas que citas, y esas las pones tú con su versión.</p></details>
+      <details open><summary>¿Esta plantilla me calcula la estructura?</summary><p>No, y es a propósito. La guía es de estructura documental: dice cómo se organiza y se justifica la memoria. Los valores, los criterios y las verificaciones son tuyos. En el momento en que la plantilla propusiera una sección o un valor de diseño, tendría que responder por ese número, y eso no se delega.</p></details>
+      <details><summary>¿Sirve para mi país y mi normativa?</summary><p>Sí, porque no transcribe ninguna cifra normativa. La estructura de una memoria (objeto, normativa, hipótesis, combinaciones, verificaciones) es la misma en todas partes. Lo que cambia son las normas que citas, y esas las pones tú con su versión.</p></details>
       <details><summary>¿Para qué sirve si ya sé calcular?</summary><p>Justo para eso es. El que no sabe calcular no necesita esta guía. El que ya calcula bien suele improvisar el documento cada vez, armarlo con trozos del proyecto anterior, y perder la revisión en huecos que no son de cálculo sino de redacción.</p></details>
       <details><summary>¿En qué formato viene la plantilla?</summary><p>Word editable (.docx) para el documento y Excel (.xlsx) para el resumen de verificaciones. Se descargan desde la página a la que entras al registrarte, sin esperar correos.</p></details>
       <details><summary>¿Puedo usarla en un proyecto real que voy a firmar?</summary><p>La plantilla es una guía de estructura, no un método de cálculo, y no sustituye tu criterio ni tu responsabilidad. Úsala para organizar el documento; lo que va dentro y la norma que aplica los decides tú como profesional responsable.</p></details>
