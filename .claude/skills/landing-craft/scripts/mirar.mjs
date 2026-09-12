@@ -50,8 +50,13 @@ const CANDIDATOS = () => {
     // Fondo propio opaco (botones, chips, insignias): es fiable y se usa tal cual.
     // Esconder el elemento para fotografiar lo de debajo escondería TAMBIÉN su
     // propio fondo, y un botón naranja con texto blanco saldría 1:1, que es falso.
-    const cb = st.backgroundColor;
-    const propio = cb && !/rgba\(0, 0, 0, 0\)|transparent/.test(cb) ? rgb(cb) : null;
+    // Solo cuenta como fondo propio si es OPACO. Un rgba(255,255,255,.2) deja ver
+    // lo de detrás, y tomarlo por blanco daba 1:1 en cualquier insignia translúcida
+    // sobre un fondo de color: texto blanco contra «blanco» que no existe.
+    const cb = st.backgroundColor || '';
+    const alfa = (cb.match(/rgba?\([^)]*?([\d.]+)\s*\)/) || [])[1];
+    const opaco = cb && !/transparent/.test(cb) && (alfa === undefined || parseFloat(alfa) >= 0.95);
+    const propio = opaco ? rgb(cb) : null;
     if (!propio) el.setAttribute('data-mirar', String(i));
     out.push({
       id: String(i), txt: txt.replace(/\s+/g, ' ').slice(0, 58), fg: f, propio,
@@ -88,6 +93,16 @@ print(json.dumps(out))`;
   return JSON.parse(r);
 }
 
+// Fotografía sin dejar caer la corrida. Si no puede, lo dice y cuenta como fallo:
+// una captura que no se pudo tomar no es una página verificada.
+async function foto(pag, opts) {
+  try { await pag.screenshot({ timeout: 15000, ...opts }); return true; }
+  catch (e) {
+    console.log(`  ✖ no se pudo fotografiar (${opts.path.split('/').pop()}): ${e.name}`);
+    return false;
+  }
+}
+
 const anchos = [
   { w: 1200, h: 900, nombre: 'escritorio' },
   { w: 390, h: 844, nombre: 'movil' },
@@ -103,7 +118,17 @@ for (const { w, h, nombre } of anchos) {
   const pag = await nav.newPage({ viewport: { width: w, height: h }, deviceScaleFactor: 1 });
   const errs = [];
   pag.on('pageerror', e => errs.push(e.message));
-  await pag.route('**://fonts.g**/**', r => r.abort());
+  // Sin red externa salvo que se pida: una fuente o un CDN que cuelga deja la
+  // captura esperando para siempre. Con --con-red se deja pasar todo.
+  if (!args.includes('--con-red')) {
+    const propio = url.startsWith('file://') ? null : new URL(url).host;
+    await pag.route('**', r => {
+      const u = r.request().url();
+      if (u.startsWith('data:') || u.startsWith('file://')) return r.continue();
+      if (propio && new URL(u).host === propio) return r.continue();
+      return r.abort();
+    });
+  }
   await pag.goto(url, { waitUntil: 'domcontentloaded' });
   await pag.waitForTimeout(1200);
 
@@ -124,7 +149,8 @@ for (const { w, h, nombre } of anchos) {
     document.querySelectorAll('[data-mirar]').forEach(e => { e.style.visibility = 'hidden'; });
   });
   await pag.waitForTimeout(200);
-  await pag.screenshot({ path: limpio, fullPage: true, timeout: 30000 });
+  const fotografiado = await foto(pag, { path: limpio, fullPage: true });
+  if (!fotografiado) fallo = true;
   await pag.evaluate(() => {
     document.querySelectorAll('[data-mirar]').forEach(e => { e.style.visibility = ''; });
   });
@@ -155,11 +181,11 @@ for (const { w, h, nombre } of anchos) {
   for (let i = 0; i < 6; i++) {
     await pag.evaluate(y => window.scrollTo(0, y), Math.round(Math.max(0, alto - h) * (i / 5)));
     await pag.waitForTimeout(350);
-    await pag.screenshot({ path: `${dir}/${String(i).padStart(2, '0')}.png`, timeout: 20000 });
+    if (!await foto(pag, { path: `${dir}/${String(i).padStart(2, '0')}.png` })) fallo = true;
   }
   await pag.evaluate(() => window.scrollTo(0, 0));
   await pag.waitForTimeout(300);
-  await pag.screenshot({ path: `${dir}/completa.png`, fullPage: true, timeout: 30000 });
+  if (!await foto(pag, { path: `${dir}/completa.png`, fullPage: true })) fallo = true;
 
   if (nombre === 'escritorio') {
     const muertos = await pag.evaluate(() => {

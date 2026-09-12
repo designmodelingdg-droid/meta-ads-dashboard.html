@@ -66,6 +66,27 @@ La paleta DMA es fija: `--azul-principal: #003e5c`, `--naranja: #ca7520`,
 - Contraste medido sobre el render: cuerpo ≥ 4.5:1, texto grande ≥ 3:1, controles
   y foco ≥ 3:1.
 
+**El naranja de DMA necesita DOS tonos, y esto ya está medido (12-sep-2026).**
+`#ca7520` sobre blanco da **3,46:1**: pasa para texto grande, falla para todo lo
+que sea cuerpo, botón pequeño, eyebrow o etiqueta. Y el ámbar `#e8a04a` sobre
+blanco da **2,2:1**, que no pasa nada.
+
+| Sobre fondo… | Tono | Medido |
+|---|---|---|
+| claro (texto pequeño, botones, eyebrows, ✓) | `#a7611b` | 4,81:1 |
+| navy (el hero, el footer) | `#e8a04a` | 7,78:1 |
+| claro, solo decoración y texto grande | `#ca7520` | 3,46:1 |
+
+Es el mismo tono con dos luminosidades, que es lo que toca cuando una página
+corta entre fondo claro y fondo oscuro: con un solo valor es **físicamente
+imposible** pasar 4,5:1 en los dos. Un solo tono por fondo, un solo tono de
+naranja en toda la página.
+
+Cuidado con la clase compartida: si `.tick` se usa en el hero azul y también en
+una sección blanca, necesita las dos reglas. Poner una sola arregla la mitad de
+la página y rompe la otra, que es exactamente lo que pasó al arreglarlo la
+primera vez.
+
 **Redefinir una variable de color en una subsección no re-tiñe el texto que hay
 debajo.** `color` se hereda como valor ya calculado, así que el texto cuyo `color`
 se resolvió en `<body>` mantiene el del body por mucho que la sección redefina la
