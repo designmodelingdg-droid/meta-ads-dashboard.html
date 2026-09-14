@@ -137,8 +137,35 @@ def main():
         sys.exit(0)
 
     filas = [f for f in ins.get("data", []) if float(f.get("spend") or 0) >= MIN_GASTO]
+    porid = {f["ad_id"]: f for f in filas}
+
+    # Los insights SOLO devuelven anuncios que tuvieron entrega en la ventana.
+    # Un anuncio ACTIVO recién subido, o activo pero sin gasto todavía, no
+    # saldría — y «qué tengo colgado ahora mismo» es justo la pregunta que hay
+    # que poder contestar. Así que se piden aparte los ACTIVE y se añaden los
+    # que falten, con sus números a cero y marcados como tales.
+    try:
+        act = api(f"{CUENTA}/ads", limit="500",
+                  effective_status='["ACTIVE"]',
+                  fields="id,name,adset{name},campaign{name,objective}")
+        for a in act.get("data", []):
+            if a["id"] in porid:
+                continue
+            porid[a["id"]] = {
+                "ad_id": a["id"], "ad_name": a.get("name", ""),
+                "adset_name": (a.get("adset") or {}).get("name", ""),
+                "campaign_name": (a.get("campaign") or {}).get("name", ""),
+                "objective": (a.get("campaign") or {}).get("objective", ""),
+                "spend": "0", "_sin_entrega": True,
+            }
+    except urllib.error.HTTPError as e:
+        # No es fatal: se sigue con lo que dieron los insights, pero se dice.
+        print(f"AVISO: no se pudo listar los anuncios ACTIVE ({e.code}); "
+              f"solo van los que tuvieron entrega entre {DESDE} y {HASTA}.")
+
+    filas = list(porid.values())
     if not filas:
-        print(f"AVISO: ningún anuncio con gasto >= ${MIN_GASTO} entre {DESDE} y {HASTA}.")
+        print(f"AVISO: ni anuncios activos ni gasto >= ${MIN_GASTO} entre {DESDE} y {HASTA}.")
         sys.exit(0)
 
     anuncios, fallos = [], 0
@@ -163,6 +190,7 @@ def main():
             print(f"  aviso: creativo de '{f.get('ad_name','')}' falló ({e.code})")
 
         anuncios.append({
+            "sin_entrega_en_la_ventana": bool(f.get("_sin_entrega")),
             "anuncio": f.get("ad_name", ""),
             "conjunto": f.get("adset_name", ""),
             "campana": f.get("campaign_name", ""),

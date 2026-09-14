@@ -69,14 +69,26 @@ jobs:
           fi
           python3 scripts/ads_creativos.py
 
+      # El extractor de copys solo se ve fallar cuando ya se llamó a la API.
+      # Esta prueba no toca red ni token: si está roto, se para aquí.
+      - name: Probar el extractor de copys
+        run: python3 scripts/prueba_ads_copys.py
+
+      - name: Bajar los COPYS de los anuncios
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN }}
+          DESDE: ${{ github.event.inputs.desde }}
+          HASTA: ${{ github.event.inputs.hasta }}
+        run: python3 scripts/ads_copys.py
+
       - name: Commit si cambió
         run: |
           set -euo pipefail
-          if git status --porcelain -- matriz-viral/fuentes/ads-creativos/ | grep -q .; then
+          if git status --porcelain -- matriz-viral/fuentes/ads-creativos/ matriz-viral/fuentes/ads-copys/ | grep -q .; then
             git config user.name  "matriz-bot"
             git config user.email "noreply@anthropic.com"
-            git add matriz-viral/fuentes/ads-creativos/
-            git commit -m "Imagenes de anuncios ganadores (Meta Ads API)"
+            git add matriz-viral/fuentes/ads-creativos/ matriz-viral/fuentes/ads-copys/
+            git commit -m "Anuncios: imagenes y copys (Meta Ads API)"
             git pull --rebase --autostash origin "$GITHUB_REF_NAME" && git push
           else
             echo "Sin creativos nuevos."
