@@ -72,9 +72,15 @@ def copy_de(creative):
     cta = (datos.get("call_to_action") or {})
     enlace = datos.get("link") or (cta.get("value") or {}).get("link") or ""
 
+    # OJO: los dos formatos NO usan los mismos nombres de campo.
+    #   link_data  → name             / description
+    #   video_data → title            / link_description
+    # Leer solo `name`/`description` deja SIN TITULAR a todos los anuncios de
+    # video y reel, que aquí son la mayoría. Lo cazó la prueba de scripts/
+    # prueba_ads_copys.py antes de la primera corrida de verdad.
     cuerpos = [datos["message"]] if datos.get("message") else []
-    titulos = [datos["name"]] if datos.get("name") else []
-    descrips = [datos["description"]] if datos.get("description") else []
+    titulos = [t for t in (datos.get("name"), datos.get("title")) if t]
+    descrips = [d for d in (datos.get("description"), datos.get("link_description")) if d]
 
     afs = creative.get("asset_feed_spec") or {}
     for campo, destino in (("bodies", cuerpos), ("titles", titulos),

@@ -44,6 +44,11 @@ jobs:
         with:
           python-version: "3.11"
 
+      # Antes de gastar la corrida: el extractor solo se ve fallar cuando ya
+      # se llamó a la API. Esta prueba no toca red ni token.
+      - name: Probar el extractor de copys
+        run: python3 scripts/prueba_ads_copys.py
+
       - name: Bajar los copys
         env:
           META_TOKEN: ${{ secrets.META_TOKEN }}
