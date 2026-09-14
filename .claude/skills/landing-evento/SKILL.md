@@ -14,6 +14,35 @@ Genera el HTML completo de una landing page de evento DMA. El template base est�
 
 ---
 
+## Paso 0 · El oficio, antes de recopilar nada
+
+**Lee `.claude/skills/landing-craft/SKILL.md` antes de pedir un solo dato.** Ahí
+está lo que va antes del HTML y lo que decide si esta página se distingue de las
+otras diez de DMA o es la misma plantilla con otro texto:
+
+- la entrevista (6 preguntas, una sola tanda);
+- `DISEÑO.md` aprobado antes de escribir código;
+- el recorrido del visitante y la **curva de sensación con un solo pico**
+  ([sensacion.md](../landing-craft/references/sensacion.md));
+- el suelo de oficio: espaciado, tipografía, color, texto sobre imagen,
+  profundidad, tarjetas, movimiento, estados y la lista de lo que no se hace
+  ([oficio.md](../landing-craft/references/oficio.md));
+- las reglas duras, que bloquean la entrega.
+
+Esta skill tiene una plantilla con huecos. La plantilla resuelve la maquetación;
+**no** resuelve el recorrido ni el pico, y rellenar huecos sin eso es lo que hace
+que todas nuestras páginas se lean igual.
+
+Dos avisos que vienen de mirar nuestras propias landings con el verificador:
+
+- Los huecos de estadística de la plantilla invitan a inventar cifras. **Sin
+  número real, sin contador.** Es la regla 1 de la casa.
+- El botón naranja `#ca7520` con texto blanco mide **3,46:1**, por debajo del
+  mínimo de 4,5:1 para texto de 14 px. Si el CTA va en ese naranja, sube el
+  tamaño del texto o oscurece el fondo del botón.
+
+---
+
 ## Paso 1: Recopilar datos del evento
 
 Pide los datos al usuario en grupos. Si el usuario ya proporcionó algunos datos en su mensaje inicial, extráelos directamente. Para datos faltantes, usa AskUserQuestion o pide en texto. Los datos con ★ son obligatorios; los demás tienen defaults razonables.
@@ -228,3 +257,23 @@ El footer siempre usa estos logos CDN (no cambies las URLs):
 - **Acreditado 2**: `https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d1f0f7d455340c70e652.png`
 - **Software**: `https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04d1738c6475e185dfddb1.png`
 - **Navbar**: `https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04bbc1fa8afa3be0bb00d8.png`
+
+---
+
+## Paso final · Verificar mirándola
+
+No se entrega sin esto.
+
+```bash
+node .claude/skills/landing-craft/scripts/mirar.mjs <archivo.html | URL>
+```
+
+Fotografía a 1200 px y a 390 px, recorre el scroll, mide el contraste real sobre
+los píxeles (no sobre el CSS), avisa de enlaces sin destino y de desbordamiento
+horizontal. Sale con error si algo de eso falla.
+
+Y después **abre las capturas y míralas**: el script dice que cargó, no dice si se
+entiende. Procedimiento completo y el caso GHL en
+[verificacion.md](../landing-craft/references/verificacion.md).
+
+Se reporta lo que se verificó **y lo que no**.

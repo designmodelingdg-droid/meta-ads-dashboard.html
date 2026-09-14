@@ -1,0 +1,76 @@
+name: Copys de anuncios (Meta Graph API)
+
+# Baja todos los anuncios con gasto CON SU COPY LITERAL y sus números, y los
+# deja en matriz-viral/fuentes/ads-copys/anuncios.json.
+#
+# Existe porque hasta ahora el copy de los anuncios había que copiarlo a mano
+# de Ads Manager. `ads_creativos.py` ya pedía el creativo a la API, pero se
+# quedaba solo con la imagen y tiraba el texto.
+#
+# Usa el secreto META_TOKEN que ya está configurado para las métricas
+# semanales (System User «Design Modeling - Ads CLI», no expira). El token
+# NUNCA sale de la Action: el script no lo imprime ni lo escribe.
+
+on:
+  workflow_dispatch:
+    inputs:
+      desde:
+        description: "Inicio de la ventana (YYYY-MM-DD). Vacío = hace 31 días"
+        required: false
+        default: ""
+      hasta:
+        description: "Fin de la ventana (YYYY-MM-DD). Vacío = AYER, a propósito"
+        required: false
+        default: ""
+      min_gasto:
+        description: "Gasto mínimo para incluir un anuncio (USD)"
+        required: false
+        default: "0.5"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ads-copys
+  cancel-in-progress: false
+
+jobs:
+  copys:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # Antes de gastar la corrida: el extractor solo se ve fallar cuando ya
+      # se llamó a la API. Esta prueba no toca red ni token.
+      - name: Probar el extractor de copys
+        run: python3 scripts/prueba_ads_copys.py
+
+      - name: Bajar los copys
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN }}
+          DESDE: ${{ inputs.desde }}
+          HASTA: ${{ inputs.hasta }}
+          MIN_GASTO: ${{ inputs.min_gasto }}
+        run: |
+          if [ -z "$META_TOKEN" ]; then
+            echo "ERROR: falta el secreto META_TOKEN del repositorio."
+            echo "Settings -> Secrets and variables -> Actions -> META_TOKEN"
+            exit 1
+          fi
+          python3 scripts/ads_copys.py
+
+      - name: Commit si hay cambios
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add matriz-viral/fuentes/ads-copys/
+          if git diff --cached --quiet; then
+            echo "Sin cambios que guardar."
+          else
+            git commit -m "Copys de anuncios: ventana ${{ inputs.desde }} - ${{ inputs.hasta }}"
+            git push
+          fi

@@ -24,13 +24,28 @@ BASE_PAGES = "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html"
 # app en sí se siguen sirviendo desde GitHub Pages, embebidos por iframe.
 DOMINIO = "https://funnel.dgdesignmodeling.com"
 
-# Enlaces entre páginas del funnel: se reescriben al dominio propio.
-# Lo que no esté aquí (img/…, app.html dentro de un iframe) se queda en Pages.
-RUTAS_FUNNEL = {
-    "index.html": f"{DOMINIO}/test-nivel-bim",
-    "gracias-agenda.html": f"{DOMINIO}/test-nivel-bim/gracias",
-    "app.html": f"{DOMINIO}/test-nivel-bim/test",
+# Enlaces entre páginas del funnel: se reescriben al dominio propio SOLO donde
+# la página de GHL ya existe y sabemos su URL exacta.
+#
+# Esto era un diccionario fijo con las rutas de test-nivel-bim que se aplicaba
+# a TODAS las carpetas: las versiones de GHL de guia-revit-ia, memoria-calculo
+# y pack-dynamo salieron enlazando a la página de gracias de OTRO lead magnet.
+# Quien descargara la guía de Revit habría aterrizado en el test de nivel.
+#
+# El arreglo NO es deducir la ruta del nombre de la carpeta: el slug real de
+# test-nivel-bim es «acceso-gratis-test-nivel-bim-gracias», no
+# «test-nivel-bim/gracias». Inventar la URL rompe la página que hoy funciona.
+# Carpeta que no esté aquí conserva sus enlaces a GitHub Pages, que existen.
+FUNNEL_POR_CARPETA = {
+    "test-nivel-bim": {
+        "gracias-agenda.html": f"{DOMINIO}/acceso-gratis-test-nivel-bim-gracias",
+        "app.html": f"{DOMINIO}/test-nivel-bim/test",
+    },
 }
+
+
+def rutas_funnel(carpeta: str) -> dict:
+    return FUNNEL_POR_CARPETA.get(carpeta, {})
 
 
 # origen → destino, por carpeta. Cada lead magnet tiene sus propias páginas:
@@ -48,7 +63,26 @@ PAGINAS_POR_CARPETA = {
         ("index.html", "ghl-recursos.html"),
     ],
 }
-PAGINAS_POR_DEFECTO = [("index.html", "ghl-landing.html")]
+# Todo lead magnet tiene landing y página de gracias: las dos hacen falta
+# dentro de GHL, porque el formulario nativo redirige a la de gracias.
+PAGINAS_POR_DEFECTO = [
+    ("index.html", "ghl-landing.html"),
+    ("gracias-agenda.html", "ghl-gracias.html"),
+]
+
+# Alto de reserva del marco de la lección, en píxeles. Es el alto REAL de cada
+# guía a 400 px de ancho —el peor caso, el del teléfono— más un 5%. Medido con
+# el navegador, esperando a que carguen imágenes y fuentes; medir a los 400 ms
+# se queda corto y el contenido sale cortado.
+#
+# Solo se usa si el editor de GHL borra el <script> que ajusta el alto solo.
+# Se prefiere que sobre hueco a que falte: un hueco en blanco es feo, contenido
+# cortado es una guía que no se puede leer.
+ALTO_LECCION = {
+    "guia-revit-ia":   17200,
+    "memoria-calculo": 13100,
+    "pack-dynamo":      7300,
+}
 
 
 def construir(carpeta: str, origen: str, destino: str) -> Path:
@@ -70,7 +104,7 @@ def construir(carpeta: str, origen: str, destino: str) -> Path:
 
     # 1) Los enlaces ENTRE PÁGINAS del funnel van al dominio propio, para que
     #    el usuario no vea nunca que salta a github.io.
-    for pagina, destino in RUTAS_FUNNEL.items():
+    for pagina, destino in rutas_funnel(carpeta).items():
         body = body.replace(f'"./{pagina}', f'"{destino}')
         body = body.replace(f"'./{pagina}", f"'{destino}")
 
@@ -104,6 +138,49 @@ def construir(carpeta: str, origen: str, destino: str) -> Path:
     return dst
 
 
+def construir_leccion(carpeta: str) -> Path:
+    """El trozo que se pega en la lección del producto dentro de GHL.
+
+    La guía va en un <iframe> porque es una página entera con su CSS y su JS:
+    pegada en el editor de texto de la lección, GHL le borra el <style> y sale
+    desmaquetada. El <iframe> la sirve tal cual desde GitHub Pages.
+
+    El alto lo dice la propia guía por postMessage (ver el bloque «Modo
+    incrustado» en guia.html) y este trozo lo escucha. Si GHL borra este
+    <script>, queda el alto de reserva y no se corta nada.
+    """
+    raiz = Path(__file__).resolve().parent.parent
+    alto = ALTO_LECCION.get(carpeta)
+    if alto is None:
+        sys.exit(f"Falta el alto de reserva de {carpeta} en ALTO_LECCION")
+    guia = f"{BASE_PAGES}/{carpeta}/guia.html?acceso=dm2026"
+    dst = raiz / carpeta / "ghl-leccion.html"
+    dst.write_text(
+        "<!-- ============================================================\n"
+        f"     {carpeta} · para la LECCIÓN del producto en GoHighLevel\n"
+        "     GENERADO AUTOMÁTICAMENTE — no editar a mano.\n"
+        f"     Se regenera con: python3 scripts/build_ghl_landing.py {carpeta}\n"
+        "     Pegar con el botón <> (código fuente) de la descripción\n"
+        "     de la lección. No hace falta ningún botón: la guía se lee\n"
+        "     dentro de la lección.\n"
+        "     ============================================================ -->\n"
+        f'<iframe id="dma-guia" src="{guia}"\n'
+        f'        style="width:100%;height:{alto}px;border:0;display:block"\n'
+        '        loading="lazy" title="Guía"></iframe>\n'
+        "<script>\n"
+        "/* La guía avisa de cuánto mide y el marco se ajusta: sin esto queda\n"
+        "   una segunda barra de scroll dentro de la lección. Si GHL borra este\n"
+        f"   script, el marco se queda en {alto} px y se lee igual. */\n"
+        "addEventListener('message', function (e) {\n"
+        "  if (!e.data || e.data.dma !== 'alto') return;\n"
+        "  var f = document.getElementById('dma-guia');\n"
+        "  if (f) f.style.height = (e.data.alto + 40) + 'px';\n"
+        "});\n"
+        "</script>\n",
+        encoding="utf-8")
+    return dst
+
+
 if __name__ == "__main__":
     if len(sys.argv) != 2:
         sys.exit("Uso: python3 scripts/build_ghl_landing.py <carpeta>")
@@ -113,3 +190,6 @@ if __name__ == "__main__":
         salida_ = construir(carpeta_, origen_, destino_)
         kb = salida_.stat().st_size / 1024
         print(f"OK → {salida_}  ({kb:.0f} KB)")
+    if carpeta_ in ALTO_LECCION:
+        salida_ = construir_leccion(carpeta_)
+        print(f"OK → {salida_}  (lección)")

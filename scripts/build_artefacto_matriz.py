@@ -129,7 +129,7 @@ def tab_resumen():
         ("Grupo 2 · Comunidades", "12 mensajes cortos, sin hashtags, listos para pegar.", "Martes, jueves y viernes"),
         ("Grupo 3 · Blog", "4 artículos con su CTA y la portada.", "Sábados"),
         ("Grupo 4 · LinkedIn", "20 publicaciones repartidas entre las 3 páginas.", "Lunes a viernes"),
-        ("Grupo 5 · Historias", "80 historias: 4 al día, de lunes a viernes, con storytelling.", "Todos los días L-V"),
+        ("Grupo 5 · Historias", "80 historias. Cada semana es un arco: el lunes abre un bucle y el jueves lo paga.", "Todos los días L-V"),
         ("Reels", "Guion segundo a segundo de los 14: 5 de valor, 3 de lead magnet y 6 de venta.", "Dos sesiones de grabación"),
         ("Publicidad", "Los 10 anuncios con su copy y su ficha de montaje. Sin precios: el Máster no lleva cifra.", "Todo junto el lunes 7"),
         ("Lead magnets", "Los 3 recursos nuevos, su post de lanzamiento y el paso a paso de GoHighLevel.", "Mar 8, Mar 22 y Mar 29"),
@@ -261,14 +261,50 @@ def tab_grupo(idx):
 
 
 # ════════════════════ PESTAÑA: HISTORIAS ════════════════════
+def fondo_img(fondo, texto):
+    """En los frames REAL el texto no es un prompt: es lo que hay que grabar.
+    Etiquetarlo «Prompt para ChatGPT» hacia que se generara una imagen de una
+    obra que existe y de un Gabriel que no es Gabriel — justo lo contrario de
+    lo que pide el encargo."""
+    # Sin fondo declarado son las jornadas de la semana 1, escritas con el
+    # modelo anterior: ahi el texto SI es un prompt de imagen.
+    if not fondo or fondo.startswith("GENERADA"):
+        return prompt_img(H.MEDIDA, texto)
+    return (f'<div class="prompt graba"><span class="rot">Qué se graba</span>'
+            f'<div class="prompt-txt">{e(texto)}</div></div>')
+
+
+def bloque_grabacion():
+    """La lista de tomas. Va arriba del todo porque es lo primero que hay que
+    resolver: sin las tomas, la mitad de las jornadas no se pueden publicar."""
+    gr = H.GRABACION
+    o = ['<div class="grabar"><h3>Lo que hay que grabar</h3>',
+         f'<p class="nota">{e(gr["nota"])}</p><div class="grabar-cols">']
+    for titulo, clave_, cls in (("Cámara", "camara", "cam"), ("Pantalla", "pantalla", "pan")):
+        o.append(f'<div><h4><span class="fondo f-{cls}">REAL · {e(titulo.lower())}</span></h4><ul>')
+        o.extend(f'<li>{e(x)}</li>' for x in gr[clave_])
+        o.append('</ul></div>')
+    o.append(f'</div><p class="ojo">{e(gr["ojo"])}</p></div>')
+    return "\n".join(o)
+
+
 def tab_historias():
     g = CAL["grupos"][4]
     o = [f'<h2>{e(g["nombre"])}</h2>',
-         '<p class="intro">Cuatro historias al día, de lunes a viernes, en este orden: '
-         '<b>relleno</b> (abre en humano) → <b>valor</b> (el dato del día) → <b>interacción</b> '
-         '(el sticker que abre el DM) → <b>venta</b> (pide una palabra, que es lo único que el bot '
-         'puede recoger). Cada día es un arco, no cuatro piezas sueltas.</p>']
+         '<p class="intro"><b>La semana es un arco, no cinco días sueltos.</b> Desde la semana 2, '
+         'cada semana cuenta una sola historia con el caso real de Gabriel detrás — una vivienda de '
+         'dos pisos de hormigón armado, con estructuras, arquitectura e instalaciones. El lunes '
+         '<b>abre el bucle</b> con un número y una promesa a fecha fija; el martes trae <b>la '
+         'prueba</b>; el miércoles <b>la objeción</b>, y lo que contesten en la encuesta es el '
+         'contenido del jueves; el jueves <b>paga lo prometido</b> y ahí —solo ahí— aparece la '
+         'venta; el viernes <b>cierra</b> y suelta el recurso.</p>'
+         '<p class="intro">Los fondos ya no son todos generados: <b>REAL · cámara</b> (Gabriel, la '
+         'obra, la memoria impresa), <b>REAL · pantalla</b> (Revit, el correo del revisor, el tutor) '
+         'y <b>GENERADA</b> solo para lo que no se puede fotografiar. El mensaje principal de la '
+         'semana nunca va sobre una imagen generada: va sobre material real, que es lo que lo hace '
+         'creíble. Los números entre [ ] los confirma Gabriel antes de grabar.</p>']
     o.append('<ul class="reglas">' + "".join(f'<li>{e(r)}</li>' for r in g["reglas"]) + '</ul>')
+    o.append(bloque_grabacion())
     o.append(filtro_semanas("g5") + barra_avance())
     for sem in H.SEMANAS:
         o.append(f'<div class="semana" data-sem="{sem["n"]}"><div class="semana-cab"><span class="snum">S{sem["n"]}</span>'
@@ -276,14 +312,18 @@ def tab_historias():
                  f'<p class="nota">{e(sem["porque"])}</p>')
         for d in sem["dias"]:
             k = clave("g5", d["dia"])
+            papel = (f'<span class="papel">{e(d["papel"])}</span>' if d.get("papel") else "")
             o.append(f'<div class="dia col" data-k="{k}">'
-                     f'<h4 class="cab">{chk(k)}{e(d["dia"])} · <span>{e(d["titulo"])}</span></h4>')
+                     f'<h4 class="cab">{chk(k)}{e(d["dia"])} · <span>{e(d["titulo"])}</span>{papel}</h4>')
             for i, hh in enumerate(d["historias"], 1):
+                fondo = hh.get("fondo", "")
+                chip = (f'<span class="fondo f-{"gen" if fondo.startswith("GEN") else ("cam" if "cámara" in fondo else "pan")}">'
+                        f'{e(fondo)}</span>') if fondo else ""
                 o.append(f'<div class="hist"><div class="hist-cab"><span class="frame">{i}</span>'
-                         f'<span class="rol rol-{hh["rol"][:4].lower()}">{e(hh["rol"])}</span></div>')
+                         f'<span class="rol rol-{hh["rol"][:4].lower()}">{e(hh["rol"])}</span>{chip}</div>')
                 o.append(bloque_pegar(hh["texto"]))
                 o.append(f'<p class="sticker"><b>Sticker:</b> {e(hh["sticker"])}</p>')
-                o.append(prompt_img(H.MEDIDA, hh["prompt"]))
+                o.append(fondo_img(fondo, hh["prompt"]))
                 o.append('</div>')
             o.append('</div>')
         o.append('</div>')
@@ -734,7 +774,7 @@ ol.slides li{font-size:14px;margin-bottom:9px}
 .rango{font-family:var(--mono);font-size:12px;color:var(--ink-2)}
 .dia{margin:18px 0;padding:14px 16px;background:var(--surface);border:1px solid var(--line);border-radius:9px}
 .dia h4{font-family:var(--display);font-weight:800;font-size:15.5px;margin:0 0 10px;
-  color:var(--amber-deep)}
+  color:var(--amber-deep);display:flex;align-items:baseline;gap:7px;flex-wrap:wrap}
 .dia h4 span{color:var(--ink);font-weight:700}
 .hist{border-top:1px solid var(--line);padding:12px 0 4px}
 .hist:first-of-type{border-top:0;padding-top:0}
@@ -747,6 +787,24 @@ ol.slides li{font-size:14px;margin-bottom:9px}
 .rol-valo{background:var(--ok-bg);color:var(--ok)}
 .rol-inte{background:var(--wait-bg);color:var(--amber-deep)}
 .rol-vent{background:var(--stop-bg);color:var(--stop)}
+.rol-cier{background:var(--surface-2);color:var(--ink-2)}
+.rol-recu{background:var(--wait-bg);color:var(--amber-deep)}
+.papel{margin-left:auto;font-family:var(--display);font-weight:800;font-size:10px;
+  letter-spacing:.1em;color:var(--ink-3)}
+.fondo{font-family:var(--display);font-weight:800;font-size:10px;letter-spacing:.06em;
+  padding:2px 7px;border-radius:99px;border:1px solid var(--line)}
+.f-cam{background:var(--ok-bg);color:var(--ok)}
+.f-pan{background:var(--surface-2);color:var(--ink-2)}
+.f-gen{background:var(--wait-bg);color:var(--amber-deep)}
+.prompt.graba{border-left-color:var(--ok)}
+.grabar{border:1px solid var(--line);border-radius:11px;padding:16px 18px;margin:14px 0;
+  background:var(--surface)}
+.grabar h3{margin:0 0 4px;font-size:1.05rem}
+.grabar-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,17rem),1fr));gap:14px;margin-top:10px}
+.grabar-cols h4{margin:0 0 6px}
+.grabar-cols ul{margin:0;padding-left:18px}
+.grabar-cols li{margin-bottom:5px;color:var(--ink-2);font-size:.9rem}
+.ojo{margin:10px 0 0;font-size:.85rem;color:var(--ink-3)}
 .sticker{font-size:13.5px;margin:8px 0 0;color:var(--ink-2)}
 .sticker b{font-family:var(--display);color:var(--ink)}
 .filtro{display:flex;gap:7px;flex-wrap:wrap;margin:16px 0 4px;padding:10px 0;

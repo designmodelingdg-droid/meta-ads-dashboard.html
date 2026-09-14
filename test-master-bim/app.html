@@ -78,7 +78,10 @@
   .pie{color:#9fb4c4;font-size:.76rem;text-align:center;margin-top:18px;line-height:1.6}
   .codigo{font-family:ui-monospace,monospace;font-weight:700;letter-spacing:.06em;
     background:var(--navy2);color:var(--orange-d);padding:4px 9px;border-radius:6px;font-size:.82rem}
-  .enviando{font-size:.85rem;color:var(--ink2);text-align:center;padding:10px}
+  .aviso-correo{font-size:.92rem;line-height:1.45;color:#0E2438;
+  background:#FBF0DA;border-left:3px solid #E8A04A;border-radius:0 6px 6px 0;
+  padding:10px 12px;margin:10px 0 14px}
+.enviando{font-size:.85rem;color:var(--ink2);text-align:center;padding:10px}
   .oculto{display:none!important}
 </style>
 </head>
@@ -106,20 +109,36 @@ const CFG = {
      Nativo y no webhook a propósito: el webhook de GHL es prémium y cobra por
      ejecución; el formulario nativo es gratis y el contacto entra al CRM igual.
      Se rellena por querystring con las claves de los campos personalizados. */
-  FORM_GHL: 'https://api.leadconnectorhq.com/widget/form/PEGAR_ID_DEL_FORMULARIO',
+  FORM_GHL: 'https://api.leadconnectorhq.com/widget/form/c9q5RXwZp3kDRuwk1eCz',
 
-  /* Claves de los campos personalizados de GHL. Deben existir en el CRM antes
-     de que esto sirva de algo — la guía de montaje dice cómo crearlos. */
+  /* Claves de los campos ocultos, LEÍDAS del formulario real (9-sep-2026), no
+     inventadas. En el HTML del formulario cada campo lleva su clave en
+     `data-q`, y el prellenado de GHL cruza el querystring contra esa clave
+     exacta.
+
+     OJO CON LAS TILDES: GHL genera la clave a partir de la ETIQUETA del campo.
+     «Perfil técnico» produjo `perfil_técnico`, con tilde. Si alguien renombra
+     una etiqueta en GHL, la clave cambia y ESE CAMPO LLEGA VACÍO sin que nada
+     avise. Para comprobarlas: abrir el formulario y buscar `data-q=` en el
+     código fuente. */
   CAMPOS: {
     nivel:      'nivel_bim',
-    perfil:     'perfil_tecnico',
-    modulo:     'modulo_recomendado',
-    codigo:     'codigo_diagnostico',
-    enlace:     'enlace_resultado',
-    detalle:    'detalle_diagnostico',
-    puntajes:   'puntajes_bloques',
+    perfil:     'perfil_técnico',
+    modulo:     'módulo_recomendado',
+    codigo:     'código_de_diagnóstico',
+    enlace:     'enlace_del_resultado',
+    detalle:    'detalle_del_diagnóstico',
+    puntajes:   'puntajes_por_bloque',
   },
 };
+
+/* GHL destruye el signo «+» en el prellenado: su propio código hace
+   .replace(/\+/g,' ') sobre el valor, porque asume que un «+» es un espacio
+   codificado. No hay forma de colarle un «+» literal — ni con %2B.
+   Como varios valores nuestros lo llevan («Especialista BIM + IA»,
+   «BIM + IA · AUTOMATIZA»), llegarían al CRM como «Especialista BIM   IA».
+   Se cambia por « y », que se lee bien y no depende de nada. */
+const paraGHL = v => String(v).replace(/\s*\+\s*/g, ' y ');
 
 /* ─────────────────────────────────────────────────────────────────────────
    Estado
@@ -131,10 +150,23 @@ let cursor = 0;
    test funciona igual pero el resultado no se puede pegar a nadie: por eso la
    pantalla final siempre ofrece el código, que sirve incluso sin parámetros. */
 const Q = new URLSearchParams(location.search);
+const limpiaTel = v => {
+  const d = String(v).replace(/[^\d]/g, '');
+  return d.length >= 7 ? d : '';
+};
 const CONTACTO = {
   id:     Q.get('cid')    || '',
   nombre: Q.get('nombre') || '',
   email:  Q.get('email')  || '',
+  /* El teléfono solo sobrevive al viaje si viene en formato LOCAL
+     (0983241210). Con «+» delante no: un «+» en un querystring significa
+     espacio, así que `tel=+593983241210` llega aquí como « 593983241210», y
+     aunque se arreglara, GHL hace `.replace(/\+/g,' ')` sobre los valores que
+     prellena y lo volvería a romper. Por eso la guía NO pone
+     `tel={{contact.phone}}`: GHL lo renderiza en E.164, con «+».
+     Se limpia lo que llegue y se descarta si no queda un número usable, para
+     no mandar al formulario un valor con un espacio delante. */
+  tel:    limpiaTel(Q.get('tel') || Q.get('phone') || ''),
 };
 
 /* ─────────────────────────────────────────────────────────────────────────
@@ -276,18 +308,28 @@ function entregar(r){
   if(CONTACTO.nombre) enlace.searchParams.set('n', CONTACTO.nombre);
 
   const datos = {
-    [CFG.CAMPOS.nivel]:    r.nivel===0 ? 'En camino a Modelador BIM' : BLOQUES[r.nivel-1].nivel,
-    [CFG.CAMPOS.perfil]:   r.perfil,
-    [CFG.CAMPOS.modulo]:   r.siguiente ? r.siguiente.modulo : 'Ruta completa',
+    [CFG.CAMPOS.nivel]:    paraGHL(r.nivel===0 ? 'En camino a Modelador BIM' : BLOQUES[r.nivel-1].nivel),
+    [CFG.CAMPOS.perfil]:   paraGHL(r.perfil),
+    [CFG.CAMPOS.modulo]:   paraGHL(r.siguiente ? r.siguiente.modulo : 'Ruta completa'),
     [CFG.CAMPOS.codigo]:   r.codigo,
+    /* el enlace NO pasa por paraGHL: no lleva «+» y tocarlo lo rompería */
     [CFG.CAMPOS.enlace]:   enlace.toString(),
-    [CFG.CAMPOS.detalle]:  detalleTexto(r),
+    [CFG.CAMPOS.detalle]:  paraGHL(detalleTexto(r)),
     [CFG.CAMPOS.puntajes]: r.bloques.map(b=>`${b.id}:${b.pts}/${b.max}`).join(' ')
                            + ' | ' + r.ejes.map(e=>`${e.id}:${e.pts}/${e.max}`).join(' '),
   };
+  /* GHL cruza el contacto por el CORREO, no por el id: `contact_id` NO está
+     en su lista de campos que prellena (full_name, first_name, last_name,
+     phone, email, organization, address, city, state, country, postal_code),
+     así que se manda pero lo ignora. Se deja porque viaja en el payload del
+     envío y no estorba — pero el que evita el duplicado es `email`.
+     Por eso la plantilla de WhatsApp del closer lleva {{contact.email}}: si
+     vuelve el mismo correo, GHL actualiza la ficha que ya existe en vez de
+     crear una nueva. */
   if(CONTACTO.id)     datos.contact_id = CONTACTO.id;
   if(CONTACTO.nombre) datos.full_name  = CONTACTO.nombre;
   if(CONTACTO.email)  datos.email      = CONTACTO.email;
+  if(CONTACTO.tel)    datos.phone      = CONTACTO.tel;
 
   if(CFG.FORM_GHL.includes('PEGAR_ID')){
     cont.innerHTML = `<div class="aviso"><b>Falta conectar el formulario de GoHighLevel.</b>
@@ -297,10 +339,30 @@ function entregar(r){
   }
 
   const url = CFG.FORM_GHL + '?' + new URLSearchParams(datos).toString();
+
+  /* El formulario se MUESTRA. Antes iba en un iframe de altura 0 y al terminar
+     de cargar la pantalla decía «Listo. Tu asesor ya lo tiene.» — y era falso:
+     prellenar un formulario NO lo envía. Nadie pulsaba «Continuar», así que no
+     se creaba el contacto y el diagnóstico no llegaba al CRM. Es el mismo
+     patrón del incidente de julio: el paso se daba por hecho sin comprobar la
+     entrega.
+     Además el formulario lleva la casilla de consentimiento, y esa la marca la
+     persona. Enviarlo por debajo sería marcarla por ella. */
+  /* La línea del correo cambia según venga o no en el enlace, porque el
+     riesgo es distinto. Casi todos llegan desde una pauta y YA tienen ficha en
+     el CRM: si escriben otro correo se crea un contacto nuevo y el asesor
+     acaba con la persona partida en dos. */
+  const avisoCorreo = CONTACTO.email
+    ? `Tu correo ya viene puesto (<b>${CONTACTO.email}</b>). Déjalo tal cual:
+       es lo que hace que este diagnóstico se sume a tu ficha.`
+    : `Escribe el <b>mismo correo</b> con el que te registraste. Si pones otro,
+       tu diagnóstico se guarda aparte y tu asesor no lo va a encontrar.`;
+
   cont.innerHTML = `
-    <p class="enviando">Enviando tu diagnóstico a tu asesor…</p>
-    <iframe src="${url}" style="width:100%;height:0;border:0" title="Envío del diagnóstico"
-      onload="document.querySelector('.enviando').textContent='Listo. Tu asesor ya lo tiene.'"></iframe>`;
+    <p class="enviando">Un paso más para que tu asesor lo reciba:
+      revisa tus datos, marca la casilla y pulsa <b>Continuar</b>.</p>
+    <p class="aviso-correo">${avisoCorreo}</p>
+    <iframe src="${url}" style="width:100%;height:560px;border:0" title="Envío del diagnóstico"></iframe>`;
 }
 
 pintarPregunta();

@@ -45,7 +45,9 @@
     }
    },
    "capi_detectada": false,
-   "nota_capi": "No aparecen eventos SERVER_ONLY en la ventana. Si el pixel si dispara, la CAPI no esta desplegada — es el check M02, critico, y Meta cifra la perdida de datos sin el en 30-40%."
+   "nota_capi": "Cero eventos de servidor en la ventana. La CAPI no esta desplegada — check M02, critico.",
+   "eventos_servidor": 0,
+   "eventos_navegador": 0
   },
   {
    "config": {
@@ -107,7 +109,9 @@
     }
    },
    "capi_detectada": false,
-   "nota_capi": "No aparecen eventos SERVER_ONLY en la ventana. Si el pixel si dispara, la CAPI no esta desplegada — es el check M02, critico, y Meta cifra la perdida de datos sin el en 30-40%."
+   "nota_capi": "Cero eventos de servidor en la ventana. La CAPI no esta desplegada — check M02, critico.",
+   "eventos_servidor": 0,
+   "eventos_navegador": 0
   },
   {
    "config": {
@@ -2690,8 +2694,10 @@
      ]
     }
    },
-   "capi_detectada": false,
-   "nota_capi": "No aparecen eventos SERVER_ONLY en la ventana. Si el pixel si dispara, la CAPI no esta desplegada — es el check M02, critico, y Meta cifra la perdida de datos sin el en 30-40%."
+   "capi_detectada": true,
+   "nota_capi": "Hay 40 eventos de SERVIDOR contra 0 de navegador: la Conversions API esta enviando.",
+   "eventos_servidor": 40,
+   "eventos_navegador": 0
   },
   {
    "config": {
@@ -25308,7 +25314,9 @@
     }
    },
    "capi_detectada": false,
-   "nota_capi": "No aparecen eventos SERVER_ONLY en la ventana. Si el pixel si dispara, la CAPI no esta desplegada — es el check M02, critico, y Meta cifra la perdida de datos sin el en 30-40%."
+   "nota_capi": "Cero eventos de servidor en la ventana. La CAPI no esta desplegada — check M02, critico.",
+   "eventos_servidor": 0,
+   "eventos_navegador": 2416
   },
   {
    "config": {
@@ -65329,9 +65337,12 @@
      ]
     }
    },
-   "capi_detectada": false,
-   "nota_capi": "No aparecen eventos SERVER_ONLY en la ventana. Si el pixel si dispara, la CAPI no esta desplegada — es el check M02, critico, y Meta cifra la perdida de datos sin el en 30-40%."
+   "capi_detectada": true,
+   "nota_capi": "Hay 1,009 eventos de SERVIDOR contra 669 de navegador: la Conversions API esta enviando.",
+   "eventos_servidor": 1009,
+   "eventos_navegador": 669
   }
  ],
- "fallos": []
+ "fallos": [],
+ "corregido": "2026-09-14: capi_detectada se recalculo — el script buscaba SERVER_ONLY y la API devuelve SERVER."
 }

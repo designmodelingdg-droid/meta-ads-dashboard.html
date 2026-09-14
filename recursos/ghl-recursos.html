@@ -9,7 +9,7 @@
 <style>
   :root{
     --navy:#003e5c; --navy2:#001e30; --azul-medio:#0a5a80;
-    --naranja:#ca7520; --naranja-claro:#e8a04a; --naranja-palido:#f7e8cc;
+    --naranja:#ca7520; --naranja-txt:#a7611b; --naranja-claro:#e8a04a; --naranja-palido:#f7e8cc;
     --crema:#fafaf7; --ink:#333; --ink2:#5a6b7b; --line:#e5e7eb;
   }
   *{box-sizing:border-box;margin:0;padding:0}
@@ -24,7 +24,7 @@
       border-bottom:1px solid var(--line);padding:10px 0;position:sticky;top:0;z-index:40}
   nav .container{display:flex;align-items:center;justify-content:space-between;gap:16px}
   nav img{height:42px;width:auto;max-width:220px;object-fit:contain;display:block}
-  nav a.cta{background:var(--naranja);color:#fff;text-decoration:none;padding:9px 18px;border-radius:8px;
+  nav a.cta{background:var(--naranja-txt);color:#fff;text-decoration:none;padding:9px 18px;border-radius:8px;
     font-weight:700;font-size:.85rem;font-family:'Overpass',sans-serif;white-space:nowrap}
   nav a.cta:hover{background:var(--naranja-claro)}
   @media(max-width:480px){nav img{height:32px;max-width:150px}nav a.cta{padding:8px 13px;font-size:.78rem}}
@@ -48,7 +48,7 @@
   .marquee{background:var(--crema);border-top:1px solid var(--line);
     border-bottom:1px solid var(--line);padding:26px 0 24px;overflow:hidden}
   .marquee-label{text-align:center;font-family:'Overpass',sans-serif;font-size:.69rem;
-    font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:var(--naranja);
+    font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:var(--naranja-txt);
     margin-bottom:16px}
   /* El degradado de los bordes evita que los logos aparezcan "cortados" */
   .marquee-mask{position:relative;overflow:hidden;
@@ -73,7 +73,7 @@
   }
 
   /* SECCIONES */
-  .eyebrow{color:var(--naranja);font-family:'Overpass',sans-serif;font-weight:800;font-size:.78rem;
+  .eyebrow{color:var(--naranja-txt);font-family:'Overpass',sans-serif;font-weight:800;font-size:.78rem;
     letter-spacing:.1em;text-transform:uppercase;margin-bottom:9px}
   h2.sec{font-size:clamp(1.45rem,3.4vw,2.1rem);color:var(--navy);font-weight:800;margin-bottom:12px}
   .sub{color:var(--ink2);font-size:1rem;max-width:64ch;margin-bottom:30px}
@@ -112,13 +112,13 @@
     text-transform:uppercase;padding:5px 11px;border-radius:999px;margin-bottom:13px}
   .card h3{color:var(--navy);font-size:1.14rem;margin-bottom:8px}
   .card p{color:var(--ink2);font-size:.94rem;flex:1}
-  .card .go{margin-top:16px;color:var(--naranja);font-family:'Overpass',sans-serif;font-weight:800;font-size:.9rem}
+  .card .go{margin-top:16px;color:var(--naranja-txt);font-family:'Overpass',sans-serif;font-weight:800;font-size:.9rem}
 
   /* HERRAMIENTAS — destacadas, van primero: son las que piden registro */
   .destacadas .card{border-color:var(--line)}
   .destacadas .card .cuerpo{padding:26px}
   .destacadas .card h3{font-size:1.35rem}
-  .destacadas .card .tag{background:var(--naranja);color:#fff}
+  .destacadas .card .tag{background:var(--naranja-txt);color:#fff}
 
   .franja{background:var(--crema);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 
@@ -129,12 +129,12 @@
   .comunidad ul{list-style:none;margin:22px 0 28px;display:grid;gap:11px}
   .comunidad li{padding-left:28px;position:relative;color:#dbe6ee}
   .comunidad li::before{content:'✓';position:absolute;left:0;color:var(--naranja-claro);font-weight:800}
-  .btn{display:inline-block;background:var(--naranja);color:#fff;text-decoration:none;
+  .btn{display:inline-block;background:var(--naranja-txt);color:#fff;text-decoration:none;
     font-family:'Overpass',sans-serif;font-weight:800;padding:14px 30px;border-radius:10px;font-size:1rem}
   .btn:hover{background:var(--naranja-claro)}
 
   footer{background:var(--navy2);color:#8fa2b3;padding:30px 0;text-align:center;font-size:.82rem}
-  footer .aviso{max-width:64ch;margin:12px auto 0;font-size:.78rem;color:#6d8496}
+  footer .aviso{max-width:64ch;margin:12px auto 0;font-size:.78rem;color:#7c91a1}
 
   /* Un recurso sin enlace todavía no se muestra: mejor que un enlace roto. */
   .sin-enlace{display:none !important}
@@ -242,6 +242,36 @@
     <p class="sub">Material completo, gratuito, sin truco. Te registras y te llega el acceso.</p>
     <div class="grid g3">
 
+      <a class="card" style="--img:url('https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6aa2f5c477a519d231da5c44.png')" data-url="guiaRevitIa" href="https://funnel.dgdesignmodeling.com/acceso-gratis-guia-revit-chatgpt-form">
+        <span class="foto"></span>
+        <span class="cuerpo">
+        <span class="tag">Nuevo</span>
+        <h3>Revit + ChatGPT: resuelve errores con IA</h3>
+        <p>Los 10 errores de Revit que más tiempo hacen perder, el prompt exacto para cada uno y cuándo NO hacerle caso a la respuesta.</p>
+        <span class="go">Abrir la guía →</span>
+      </span>
+      </a>
+
+      <a class="card" style="--img:url('https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6aa2f5c4d1b3cd745b9ab102.png')" data-url="memoriaCalculo" href="https://funnel.dgdesignmodeling.com/acceso-gratis-memoria-calculo-form">
+        <span class="foto"></span>
+        <span class="cuerpo">
+        <span class="tag">Nuevo</span>
+        <h3>La memoria de cálculo que se sostiene ante revisión</h3>
+        <p>Las 12 secciones en el orden real, qué va en cada una, y los 6 errores por los que una memoria vuelve a tu escritorio. Con la plantilla en Word y la hoja de verificaciones en Excel.</p>
+        <span class="go">Abrir la guía →</span>
+      </span>
+      </a>
+
+      <a class="card" style="--img:url('https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6aa2f5c4d1b3cd745b9ab110.png')" data-url="packDynamo" href="https://funnel.dgdesignmodeling.com/acceso-gratis-script-dynamo-form">
+        <span class="foto"></span>
+        <span class="cuerpo">
+        <span class="tag">Nuevo</span>
+        <h3>Cinco scripts de Dynamo, comentados por dentro</h3>
+        <p>Cinco cosas que hoy haces a mano y que se resuelven en un clic. Con el código explicado para que puedas cambiarlo, no solo ejecutarlo.</p>
+        <span class="go">Abrir el pack →</span>
+      </span>
+      </a>
+
       <a class="card" style="--img:url('https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a75496778cdd940a01c18e9.png')" data-url="cursoIntro" href="https://funnel.dgdesignmodeling.com/acceso-gratis-curso-introductorio-bim-form">
         <span class="foto"></span>
         <span class="cuerpo">
@@ -346,7 +376,7 @@
 
     </div>
     <p style="margin-top:26px">
-      <a href="https://funnel.dgdesignmodeling.com/blog" style="color:var(--naranja);font-family:'Overpass',sans-serif;font-weight:800;text-decoration:none">Ver todos los artículos del blog →</a>
+      <a href="https://funnel.dgdesignmodeling.com/blog" style="color:var(--naranja-txt);font-family:'Overpass',sans-serif;font-weight:800;text-decoration:none">Ver todos los artículos del blog →</a>
     </p>
   </div>
 </section>
