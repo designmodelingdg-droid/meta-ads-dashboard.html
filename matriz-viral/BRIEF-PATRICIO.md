@@ -312,3 +312,57 @@ vez de 21.
 palabra ACERO. Cuando esa gente responda al DM, la conversación llega al bot —
 el texto de qué contestar sobre la guía y el verificador es el de siempre
 (entregar, no vender; el precio del Máster jamás).
+
+---
+
+## Semana del 8 al 14 de septiembre
+
+Datos de la Graph API oficial, bajados el 14-sep. **Salieron 2 piezas.**
+
+| Pieza | Vistas | Coment. | Guard. | Seguidores |
+|---|---|---|---|---|
+| Vie 11 · Cuantía mínima de columna (post plano) | 27.515 | **95** | **388** | **78** |
+| Sáb 12 · De plano 2D a modelo BIM con IA | 6.591 | 40 | 192 | 33 |
+| *mediana de agosto, para comparar* | *3.552* | *3* | *7* | *—* |
+
+**Lecciones de la semana:**
+
+1. **La fórmula ganadora batió su propio récord.** El post del Vie 11 es
+   exactamente lo que la matriz mandaba hacer: UNA imagen + un dato de cálculo
+   verificable. La predicción, sacada de agosto, era 45-62 comentarios. Hizo
+   **95**. Contra la mediana de agosto son **32 veces** en comentarios y **55
+   veces** en guardados. Y trajo 78 seguidores nuevos en un día.
+
+   El dato era la cuantía mínima del ACI 318 §10.6.1.1, con el cálculo entero
+   en la imagen y los dos casos resueltos, uno que cumple y otro que no. No es
+   que el formato sea mágico: es que **el dato se puede comprobar**, y eso es
+   lo que la gente comenta y guarda.
+
+2. **Lo que dispara comentarios es prometer una capacidad concreta.** La pieza
+   del 12 no estaba en el calendario y aun así hizo 13 veces la mediana de
+   comentarios de agosto. Su gancho es «¿y si pudieras pasar de un plano 2D a
+   un modelo BIM en Revit con ayuda de IA?». Compárala con la declaración
+   genérica de IA de la semana pasada, que hizo 1,75 c/1k. Misma cuenta, mismo
+   tema, resultado opuesto. **La frontera concreta gana; el titular sobre IA
+   no.**
+
+3. **Esta semana el cuello de botella NO fue publicar, fue grabar.** De las
+   cuatro piezas planificadas del 8 al 11 salió una:
+
+   | Día | Qué tocaba | Salió | Por qué |
+   |---|---|---|---|
+   | Mar 8 | REEL lanzamiento CHATGPT | ❌ | **sin grabar** |
+   | Mié 9 | REEL `reel-deriva` | ❌ | **sin grabar** |
+   | Jue 10 | CARRUSEL 7 slides del recurso | ❌ | sin publicar |
+   | Vie 11 | POST PLANO cuantía mínima | ✅ | |
+
+   Los dos primeros son reels y la sesión de grabación era Lun 7 – Mar 8: no
+   ocurrió. **El del Jue 10 es distinto** — es un carrusel, no necesita cámara,
+   y la guía está publicada desde el 7-sep. Ese sí se quedó sin publicar.
+
+   Conviene separarlo porque en agosto el diagnóstico fue el contrario (18 de
+   19 piezas producidas quedaron en borrador). Aplicar aquí la receta de agosto
+   —empujar la publicación— no destraba nada: lo que falta es la cámara.
+
+4. **Los 95 comentarios piden ACERO,** que está montado. La conversación llega
+   al bot entera.
