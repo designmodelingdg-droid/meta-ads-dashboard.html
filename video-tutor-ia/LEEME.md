@@ -71,3 +71,83 @@ Todos están en la grabación, ninguno inventado: 4 cursos, 135 horas indexadas,
 20 preguntas al día, la etiqueta BETA, y las tres fuentes citadas
 (Cerchas y Naves · Clase 4 Naves SAP2000 · min 115:19 · Acero · Sesión 5 ·
 min 133:34 · Acero · Sesión 4 · min 26:51).
+
+---
+
+# La versión vertical — 37,6 s, 9:16 (Reels)
+
+`vertical.html`. Se renderiza aparte, con el mismo metraje y las mismas fuentes:
+
+```bash
+npx hyperframes render -c vertical.html -o renders/tutor-ia-reels-9x16.mp4 --video-frame-format png
+```
+
+## Por qué no es el 16:9 recortado
+
+A 1080 px de ancho el texto de la grabación mide la mitad, y en un teléfono no
+se lee. Recortar el 16:9 habría dejado una pieza cuyo argumento —*mira, cita la
+clase y el minuto*— es justo lo que no se puede leer.
+
+Así que **el vertical lo lleva la tipografía**: el metraje demuestra que el
+producto existe y está vivo, y las citas van escritas en grande, debajo.
+
+## Las tres citas que salen en pantalla
+
+Las escritas en la pieza están sacadas del vídeo fotograma a fotograma, no de
+memoria. Las de la primera respuesta (min 57–66 del metraje):
+
+| Curso y clase | Minuto |
+|---|---|
+| Cerchas y Naves · Clase 6 SAP2000 | 02:04 |
+| Cerchas y Naves · Clase 7 SAP2000 | 41:12 |
+| Acero · Sesión 8 | 44:59 |
+
+Y la que acompaña a la segunda pregunta: Cerchas y Naves · Clase 4 Naves
+SAP2000 · min 115:19.
+
+**Si se cambia el metraje, hay que volver a leer las citas en el fotograma.**
+Escribirlas de memoria es la forma más fácil de publicar un dato falso.
+
+Y dos avisos sobre cómo leerlas:
+
+- **`ffmpeg -ss` ANTES de `-i` salta al fotograma clave más cercano**, no al
+  segundo que se le pide. Sirve para echar un vistazo; no sirve para decir «en
+  el segundo 62 se ve esto». Para eso, `-ss` va DESPUÉS de `-i`.
+- **La ventana del pico es del minuto 50 al 58,6 a propósito.** Ahí está el
+  arco entero: se manda la pregunta, sale «Buscando en tus clases…», se escribe
+  la respuesta, y termina en la línea de FUENTES que es la que va escrita en
+  grande. A partir del 59 el original se va a la segunda respuesta, y las citas
+  de la pantalla dejarían de ser las del texto. Antes estaba en 57,8 y pasaba
+  justo eso: la pantalla decía Clase 4 y la tipografía decía Clase 6.
+
+## La retícula del vertical
+
+Dos franjas fijas, y nada se sale de ellas:
+
+```
+  260 ─┬─ zona segura de arriba (encima va el nombre de la cuenta)
+       │  BANDA DE METRAJE
+  904 ─┤  regla ámbar  ← la altura que el ojo sigue
+       │  BLOQUE DE TEXTO
+ 1500 ─┴─ zona segura de abajo (encima van el pie y los botones de Instagram)
+```
+
+La banda **termina** siempre en 904 aunque el recorte cambie de alto. El borde
+de arriba flota sobre buzón azul y no se ve; el de abajo lo marca la regla.
+
+## Dos cosas del encuadre
+
+- El vídeo va al raíz y HyperFrames lo estira a 1080×1920, así que el encuadre
+  se hace con `object-fit: contain` + `translateY`, no metiéndolo en una caja.
+  El buzón que queda es del mismo azul que el fondo: invisible.
+- La franja de «vista previa de administrador» de la página del curso se quita
+  con `clip-path`, no con escala: escalar descuadraba la franja entera.
+
+## Sobre los avisos del verificador
+
+`check --at-transitions` marca `text_occluded` en los actos 7 y 8 y
+`container_overflow` en cada `.linea`. **Las dos son a propósito**: el barrido
+naranja pasa por encima del texto porque es lo que lo destapa, y las `.linea`
+recortan porque son la máscara por la que el texto sube. Van marcadas con
+`data-layout-allow-occlusion` y `data-layout-allow-overflow` — pero conviene
+mirar el render igual: el verificador dice que cargó, no dice si se entiende.

@@ -12,5 +12,17 @@ matriz-viral/fuentes/navegador/*.html
 # decia «Nada nuevo que guardar» y nadie entendia por que.
 /sesion.json
 
-# Kit local de HyperFrames: se reinstala con `npx skills add heygen-com/hyperframes`
-.agents/
+# Skills instaladas con `npx skills add`. El kit de HyperFrames NO se versiona
+# (pesa, y se reinstala con `npx skills add heygen-com/hyperframes`).
+#
+# humanizer SI se versiona — son 100 KB y sin el, quien clone el repositorio se
+# encuentra el enlace de .claude/skills/humanizer apuntando a la nada. Se
+# reinstala o actualiza con `npx skills add blader/humanizer`.
+.agents/*
+!.agents/skills/
+.agents/skills/*
+!.agents/skills/humanizer/
+
+# La CI del repositorio de humanizer no pinta nada aqui: valida SU paquete, no
+# el nuestro. Anidada nunca se ejecutaria, pero mejor no tenerla.
+.agents/skills/humanizer/.github/

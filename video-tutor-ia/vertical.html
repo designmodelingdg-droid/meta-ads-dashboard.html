@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="es" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="vendor/gsap.min.js"></script>
+    <link rel="stylesheet" href="fuentes/marca.css" />
+
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #001e30; }
+      body { font-family: "Nunito", system-ui, sans-serif; }
+
+      :root {
+        --navy: #001e30;
+        --navy-2: #003e5c;
+        --naranja: #ca7520;
+        --ambar: #e8a04a;   /* el acento SOBRE azul: 7,78:1 */
+        --hueso: #f2f6f9;
+        --tenue: #9db4c4;
+      }
+
+      .clip { position: absolute; inset: 0; }
+
+      /* ── ZONAS ────────────────────────────────────────────────────────────
+         El vertical se reparte en dos franjas fijas, y nada se sale de ellas:
+
+           260 ─┬─ zona segura arriba (encima va el nombre de la cuenta)
+                │  BANDA DE METRAJE  ──> termina SIEMPRE en 904
+           904 ─┤  regla ámbar
+                │  BLOQUE DE TEXTO
+          1500 ─┴─ zona segura abajo (encima van el pie y los botones)
+
+         La banda de metraje acaba siempre a la misma altura aunque el recorte
+         cambie de alto: lo que el ojo sigue es la regla, no el borde de arriba. */
+      :root { --banda-fin: 904px; --seguro-abajo: 1500px; }
+
+      /* ── metraje ──────────────────────────────────────────────────────────
+         La banda se declara con MEDIDAS EXPLÍCITAS, no con object-fit.
+         El primer intento fue `inset: 0; object-fit: contain` y salió mal: el
+         render no aplica object-fit a un clip de vídeo del raíz, así que dejó
+         el fotograma a tamaño nativo (1920 de ancho) pegado arriba a la
+         izquierda — se veía el 56% izquierdo de cada línea, cortada. Con ancho
+         y alto puestos a mano el render sí obedece; es lo mismo que hace la
+         versión 16:9.
+
+         1080 x 608 es exactamente 16:9, así que aquí `cover` y `contain` dan
+         el mismo resultado y no se deforma nada. El translateY deja el borde
+         de abajo en 904, que es donde va la regla. */
+      .cinta {
+        position: absolute; left: 0; top: 0;
+        width: 1080px; height: 608px;
+        object-fit: cover;
+        transform: translateY(296px);
+      }
+      /* En la página del curso asoma arriba la franja de «vista previa de
+         administrador»: ocupa hasta la fila 130 del fotograma de 1080, o sea
+         74px de la banda ya escalada. Se recorta. Lo que queda debajo del
+         corte es el mismo azul del fondo, así que no se ve la costura. */
+      .cinta.escena-curso { clip-path: inset(74px 0 0 0); }
+
+      .regla-banda {
+        position: absolute; left: 80px; right: 80px; top: var(--banda-fin);
+        height: 5px; background: var(--ambar); transform-origin: 100% 50%;
+      }
+
+      /* ── cartas de tipografía ─────────────────────────────────────────────
+         Texto a la DERECHA, igual que en el 16:9: las dos piezas tienen que
+         parecer hermanas. El relleno de arriba y abajo es lo que mantiene el
+         bloque dentro de las zonas seguras de Reels. */
+      .carta {
+        display: flex; flex-direction: column;
+        justify-content: center; align-items: flex-end;
+        padding: 300px 80px 420px; text-align: right;
+        background: linear-gradient(160deg, var(--navy) 0%, var(--navy-2) 100%);
+        color: var(--hueso);
+      }
+      .linea { overflow: hidden; }        /* la máscara por la que sube el texto */
+      .grande {
+        font-family: "Overpass", system-ui, sans-serif; font-weight: 900;
+        font-size: 88px; line-height: 1.02; letter-spacing: -2.4px;
+      }
+      .media {
+        font-family: "Overpass", system-ui, sans-serif; font-weight: 900;
+        font-size: 68px; line-height: 1.06; letter-spacing: -1.6px;
+      }
+      .ambar { color: var(--ambar); }
+      .pie { font-size: 34px; color: var(--tenue); margin-top: 34px; max-width: 24ch; line-height: 1.5; }
+
+      /* ── bloque de texto bajo la banda ────────────────────────────────── */
+      .capa { position: absolute; inset: 0; }
+      .bloque {
+        position: absolute; right: 80px; left: 80px;
+        top: 968px; text-align: right; color: var(--hueso);
+      }
+      .bloque .t {
+        font-family: "Overpass", system-ui, sans-serif; font-weight: 900;
+        font-size: 62px; line-height: 1.06; letter-spacing: -1.6px;
+      }
+      .bloque .s { font-size: 34px; color: var(--tenue); margin-top: 18px; line-height: 1.45; }
+
+      /* ── las fuentes: EL PICO ─────────────────────────────────────────────
+         El texto de la grabación no se lee a 1080 de ancho en un teléfono. Por
+         eso el metraje aquí sirve de prueba de que existe, y lo que se lee son
+         estas tres citas, puestas en grande. Están verificadas fotograma a
+         fotograma sobre el vídeo, ninguna inventada. */
+      .fu-tit {
+        font-family: "Overpass", system-ui, sans-serif; font-weight: 900;
+        font-size: 26px; letter-spacing: .22em; text-transform: uppercase;
+        color: var(--tenue); margin-bottom: 26px;
+      }
+      .fu { margin-bottom: 26px; }
+      .fu .c { font-size: 36px; color: var(--hueso); line-height: 1.25; }
+      .fu .m {
+        font-family: "Overpass", system-ui, sans-serif; font-weight: 900;
+        font-size: 48px; letter-spacing: -.6px; color: var(--ambar); margin-top: 2px;
+      }
+
+      .chapa {
+        position: absolute; right: 80px; top: 268px;
+        font-family: "Overpass", system-ui, sans-serif; font-weight: 900;
+        font-size: 26px; letter-spacing: .12em; text-transform: uppercase;
+        color: var(--navy); background: var(--ambar);
+        padding: 13px 26px; border-radius: 999px;
+      }
+
+      /* ── la pregunta del alumno, en grande ────────────────────────────── */
+      .comilla {
+        font-family: "Overpass", system-ui, sans-serif; font-weight: 900;
+        font-size: 140px; line-height: .7; color: var(--naranja); margin-bottom: 8px;
+      }
+
+      /* ── cierre ───────────────────────────────────────────────────────── */
+      .logo { width: 620px; height: auto; display: block; }
+      .regla { width: 190px; height: 6px; background: var(--naranja); margin: 46px 0 40px; }
+
+      /* Barrido de acto: la misma masa naranja del 16:9. Repetida es un ritmo. */
+      .barrido { position: absolute; inset: 0; background: var(--naranja); transform-origin: 100% 50%; }
+    </style>
+  </head>
+
+  <body>
+    <div id="root" data-composition-id="main"
+         data-start="0" data-duration="37.6" data-width="1080" data-height="1920">
+
+      <!-- 1 · LA DUDA -->
+      <div id="a1" class="clip carta" data-start="0" data-duration="3.6" data-track-index="1">
+        <div class="linea" data-layout-allow-overflow><div class="grande" id="a1a">Once de la noche.</div></div>
+        <div class="linea" data-layout-allow-overflow><div class="grande" id="a1b">Te trabas.</div></div>
+        <div class="linea" data-layout-allow-overflow style="margin-top: 30px">
+          <div class="media ambar" id="a1c">¿A quién le preguntas?</div>
+        </div>
+      </div>
+
+      <!-- 2 · DÓNDE VIVE -->
+      <video id="v2" class="clip cinta escena-curso" src="tutor-limpio.mp4" muted playsinline
+             data-start="3.6" data-media-start="1.2" data-duration="4" data-track-index="0"></video>
+      <div id="w2" class="clip barrido" data-layout-allow-occlusion data-start="3.6" data-duration="0.5" data-track-index="2"></div>
+      <div id="c2" class="clip capa" data-start="3.6" data-duration="4" data-track-index="1">
+        <div class="regla-banda" id="r2"></div>
+        <div class="bloque">
+          <div class="linea" data-layout-allow-overflow><div class="t" id="t2">Dentro de la<br />Especialización en Acero</div></div>
+        </div>
+      </div>
+
+      <!-- 3 · LA PROMESA -->
+      <video id="v3" class="clip cinta" src="tutor-limpio.mp4" muted playsinline
+             data-start="7.6" data-media-start="9" data-duration="4.8" data-track-index="0"></video>
+      <div id="w3" class="clip barrido" data-layout-allow-occlusion data-start="7.6" data-duration="0.5" data-track-index="2"></div>
+      <div id="c3" class="clip capa" data-start="7.6" data-duration="4.8" data-track-index="1">
+        <div class="regla-banda" id="r3"></div>
+        <div class="bloque">
+          <div class="linea" data-layout-allow-overflow><div class="t" id="t3">Entrenado con<br />tus 4 cursos</div></div>
+          <div class="s" id="s3">135 horas de clase indexadas.<br />Las tuyas, no internet.</div>
+        </div>
+      </div>
+
+      <!-- 4 · LA PREGUNTA. Va en carta y no sobre el metraje: a 1080 de ancho
+              la pregunta escrita en el chat no se lee, y es la que engancha. -->
+      <div id="a4" class="clip carta" data-start="12.4" data-duration="3.4" data-track-index="1">
+        <div class="chapa" id="a4ch">Pregunta real de alumno</div>
+        <div class="comilla" id="a4q">”</div>
+        <div class="linea" data-layout-allow-overflow><div class="media" id="a4a">¿Qué curso me</div></div>
+        <div class="linea" data-layout-allow-overflow><div class="media" id="a4b">recomiendas para</div></div>
+        <div class="linea" data-layout-allow-overflow><div class="media ambar" id="a4c">análisis sísmico?</div></div>
+      </div>
+
+      <!-- 5 · EL PICO. Lo más largo de la pieza a propósito: citar la clase y
+              el minuto es lo único que un tutor genérico no puede hacer.
+
+              El metraje va del minuto 50 al 58,6 del original PORQUE ese tramo
+              es el arco entero: se manda la pregunta, sale «Buscando en tus
+              clases…», se escribe la respuesta y termina en la línea de FUENTES
+              que es justo la que va escrita en grande aquí abajo. Más adelante
+              el original se va a la segunda respuesta y las citas de la pantalla
+              dejarían de ser las del texto. -->
+      <video id="v5" class="clip cinta" src="tutor-limpio.mp4" muted playsinline
+             data-start="15.8" data-media-start="50" data-duration="8.6" data-track-index="0"></video>
+      <div id="w5" class="clip barrido" data-layout-allow-occlusion data-start="15.8" data-duration="0.5" data-track-index="2"></div>
+      <div id="c5" class="clip capa" data-start="15.8" data-duration="8.6" data-track-index="1">
+        <div class="regla-banda" id="r5"></div>
+        <div class="bloque">
+          <div class="fu-tit" id="f5t">Te responde citando</div>
+          <div class="fu" id="f5a">
+            <div class="c">Cerchas y Naves · Clase 6 SAP2000</div>
+            <div class="m">min 02:04</div>
+          </div>
+          <div class="fu" id="f5b">
+            <div class="c">Cerchas y Naves · Clase 7 SAP2000</div>
+            <div class="m">min 41:12</div>
+          </div>
+          <div class="fu" id="f5c">
+            <div class="c">Acero · Sesión 8</div>
+            <div class="m">min 44:59</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 · LA SEGUNDA. No repite el pico: lo confirma, y más rápido. -->
+      <video id="v6" class="clip cinta" src="tutor-limpio.mp4" muted playsinline
+             data-start="24.4" data-media-start="69" data-duration="4.6" data-track-index="0"></video>
+      <div id="w6" class="clip barrido" data-layout-allow-occlusion data-start="24.4" data-duration="0.5" data-track-index="2"></div>
+      <div id="c6" class="clip capa" data-start="24.4" data-duration="4.6" data-track-index="1">
+        <div class="chapa" id="a6ch">Segunda pregunta</div>
+        <div class="regla-banda" id="r6"></div>
+        <div class="bloque">
+          <div class="linea" data-layout-allow-overflow><div class="t" id="t6">Y otra vez,<br />con clase y minuto</div></div>
+          <div class="fu" id="f6" style="margin-top: 26px">
+            <div class="c">Cerchas y Naves · Clase 4 Naves SAP2000</div>
+            <div class="m">min 115:19</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7 · EL LÍMITE. Lo que lo separa de un chatbot cualquiera. -->
+      <div id="a7" class="clip carta" data-start="29" data-duration="4.2" data-track-index="1">
+        <div class="linea" data-layout-allow-overflow><div class="media" id="a7a" data-layout-allow-occlusion>Y cuando algo</div></div>
+        <div class="linea" data-layout-allow-overflow><div class="media" id="a7b" data-layout-allow-occlusion>no está en las clases,</div></div>
+        <div class="linea" data-layout-allow-overflow style="margin-top: 12px"><div class="media ambar" id="a7c" data-layout-allow-occlusion>te lo dice.</div></div>
+        <div class="pie" id="a7d" data-layout-allow-occlusion>No lo inventa. Te manda a la asesoría con los instructores.</div>
+      </div>
+      <div id="w7" class="clip barrido" data-layout-allow-occlusion data-start="29" data-duration="0.5" data-track-index="2"></div>
+
+      <!-- 8 · CIERRE. Resuelve y se sostiene: no se apaga en negro. -->
+      <div id="a8" class="clip carta" data-start="33.2" data-duration="4.4" data-track-index="1">
+        <img id="a8log" class="logo" src="marca/logo-dma-claro.png"
+             width="951" height="293" alt="Design Modeling Academy" />
+        <div class="regla" id="a8b"></div>
+        <div class="linea" data-layout-allow-overflow><div class="media" id="a8c" data-layout-allow-occlusion style="font-size: 72px">Tutor IA</div></div>
+        <div class="linea" data-layout-allow-overflow style="margin-top: 12px">
+          <div class="media ambar" id="a8d" data-layout-allow-occlusion style="font-size: 44px; letter-spacing: -.6px">
+            Incluido en la<br />Especialización en Acero
+          </div>
+        </div>
+      </div>
+      <div id="w8" class="clip barrido" data-layout-allow-occlusion data-start="33.2" data-duration="0.5" data-track-index="2"></div>
+    </div>
+
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      const salida = "power3.out";
+
+      /* ── el barrido de acto ──────────────────────────────────────────────
+         Entra desde la derecha, sale por la izquierda. Cubre el corte y da
+         ritmo. Es el mismo en los ocho actos y en las dos versiones. */
+      function barrido(id, t) {
+        tl.fromTo(id, { scaleX: 0, transformOrigin: "100% 50%" },
+                      { scaleX: 1, duration: 0.22, ease: "power2.in" }, t)
+          .to(id, { scaleX: 0, transformOrigin: "0% 50%", duration: 0.26, ease: "power2.out" }, t + 0.22);
+      }
+      ["#w2", 3.6, "#w3", 7.6, "#w5", 15.8,
+       "#w6", 24.4, "#w7", 29, "#w8", 33.2].forEach((v, i, a) => {
+        if (i % 2 === 0) barrido(v, a[i + 1]);
+      });
+
+      /* El acto 4 es una carta y no lleva metraje debajo: en vez del barrido
+         entra con la chapa y la comilla, que ya marcan el corte. */
+
+      /* La regla ámbar se dibuja de derecha a izquierda al abrir cada banda:
+         es lo que ancla el ojo a la altura fija donde empieza el texto. */
+      function regla(id, t) {
+        tl.from(id, { scaleX: 0, transformOrigin: "100% 50%", duration: 0.5, ease: salida }, t);
+      }
+
+      /* El texto sube desde detrás de su propia máscara. Más vivo que un
+         fundido, y no mueve nada de sitio. */
+      function sube(id, t, d = 0.62) { tl.from(id, { yPercent: 115, duration: d, ease: salida }, t); }
+
+      /* 1 · la duda */
+      sube("#a1a", 0.32); sube("#a1b", 0.46);
+      tl.from("#a1c", { yPercent: 115, duration: 0.6, ease: salida }, 1.25)
+        .from("#a1c", { opacity: 0, duration: 0.3 }, 1.25);
+
+      /* 2 · dónde vive */
+      regla("#r2", 3.92); sube("#t2", 4.06);
+
+      /* 3 · la promesa */
+      regla("#r3", 7.92); sube("#t3", 8.06);
+      tl.from("#s3", { opacity: 0, y: 18, duration: 0.5, ease: salida }, 8.5);
+
+      /* 4 · la pregunta: la chapa primero, la comilla, y la frase en tres
+         tiempos para que se lea como se escribe */
+      tl.from("#a4ch", { scale: 0.9, opacity: 0, transformOrigin: "100% 50%",
+                         duration: 0.45, ease: "back.out(2)" }, 12.55)
+        .from("#a4q", { opacity: 0, scale: 0.5, transformOrigin: "100% 100%",
+                        duration: 0.45, ease: "back.out(2)" }, 12.7);
+      sube("#a4a", 12.86); sube("#a4b", 13.0); sube("#a4c", 13.14);
+
+      /* 5 · EL PICO. Las tres citas entran una detrás de otra, con aire entre
+         ellas: se leen de arriba abajo, no de golpe. Y se quedan quietas hasta
+         el final del acto — el pico se sostiene con tiempo. */
+      regla("#r5", 16.12);
+      tl.from("#f5t", { opacity: 0, y: 14, duration: 0.45, ease: salida }, 16.26);
+      [["#f5a", 16.5], ["#f5b", 17.1], ["#f5c", 17.7]].forEach(([id, t]) => {
+        tl.from(id, { opacity: 0, x: 46, duration: 0.58, ease: salida }, t);
+      });
+      /* Respiración de 1.00 a 1.06 durante todo el acto, sin zoom cerrado: el
+         acercamiento se comería el principio y el final de la línea de FUENTES.
+         transformOrigin va EXPLÍCITO — GSAP escribe el suyo y pisa el del CSS. */
+      tl.fromTo("#v5", { scale: 1, transformOrigin: "50% 100%" },
+                       { scale: 1.06, transformOrigin: "50% 100%", duration: 8.6, ease: "none" }, 15.8);
+
+      /* 6 · la segunda */
+      tl.from("#a6ch", { scale: 0.9, opacity: 0, transformOrigin: "100% 50%",
+                         duration: 0.45, ease: "back.out(2)" }, 24.75);
+      regla("#r6", 24.72); sube("#t6", 24.86);
+      tl.from("#f6", { opacity: 0, x: 46, duration: 0.58, ease: salida }, 25.5);
+
+      /* 7 · el límite */
+      sube("#a7a", 29.3); sube("#a7b", 29.44);
+      tl.from("#a7c", { yPercent: 115, duration: 0.62, ease: salida }, 30.05)
+        .from("#a7d", { opacity: 0, y: 18, duration: 0.55, ease: salida }, 30.65);
+
+      /* 8 · cierre: primero la marca, después la regla, después lo que se vende */
+      tl.from("#a8log", { opacity: 0, y: 26, duration: 0.65, ease: salida }, 33.5)
+        .from("#a8b", { scaleX: 0, transformOrigin: "100% 50%", duration: 0.5, ease: salida }, 34.1)
+        .from("#a8c", { yPercent: 115, duration: 0.6, ease: salida }, 34.3)
+        .from("#a8d", { yPercent: 115, duration: 0.6, ease: salida }, 34.52);
+
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

@@ -6,7 +6,6 @@
     <!-- GSAP local por la misma razon que las fuentes: si el render no alcanza
          el CDN, la pagina no termina de cargar y no hay video. -->
     <script src="vendor/gsap.min.js"></script>
-
     <!-- Las fuentes de la casa van LOCALES a proposito. Enlazadas a Google, el
          render sale con una tipografia del sistema y deja de ser la marca. -->
     <link rel="stylesheet" href="fuentes/marca.css" />
@@ -14,15 +13,15 @@
     <style>
       * { margin: 0; padding: 0; box-sizing: border-box; }
       html, body {
-        width: 1920px; height: 1080px; overflow: hidden;
-        background: #001e30;
+        width: 1920px; height: 1080px; overflow: hidden; background: #001e30;
       }
       body { font-family: "Nunito", system-ui, sans-serif; }
 
       :root {
         --navy: #001e30;
         --navy-2: #003e5c;
-        --ambar: #e8a04a;   /* el acento SOBRE azul: 7,78:1. El #ca7520 aqui no se lee */
+        --naranja: #ca7520;  /* el naranja de marca: aqui solo en masas y reglas */
+        --ambar: #e8a04a;    /* el acento SOBRE azul: 7,78:1. El #ca7520 en texto fino no se lee */
         --hueso: #f2f6f9;
         --tenue: #9db4c4;
       }
@@ -31,224 +30,241 @@
 
       /* ── metraje ───────────────────────────────────────────────────────────
          El recorte NO se hace aqui. Se hizo sobre el archivo con ffmpeg
-         (tutor-limpio.mp4): fuera la barra de pestanas, fuera la ventana que
-         asomaba por debajo, y el panel centrado sobre el azul de la casa.
-         Arreglarlo en el origen sale mas barato que pelearse con transformes,
-         y ademas cualquier zoom sobre el original cortaba el texto.          */
-      .cinta {
-        position: absolute; top: 0; left: 0;
-        width: 1920px; height: 1080px;
-      }
-      .cinta.escena-curso {
-        transform-origin: 50% 100%;
-        transform: scale(1.14);
-      }
+         (tutor-limpio.mp4). Arreglarlo en el origen sale mas barato que
+         pelearse con transformes, y cualquier zoom sobre el original cortaba
+         el texto.                                                            */
+      .cinta { position: absolute; top: 0; left: 0; width: 1920px; height: 1080px; }
+      /* en la pagina del curso asoma arriba la franja de «vista previa de
+         administrador»: un empujon desde abajo la saca de cuadro */
+      .cinta.escena-curso { transform-origin: 50% 100%; transform: scale(1.14); }
 
-      /* Marco: un borde finisimo y una sombra con desplazamiento, para que el
-         metraje se lea como una pieza colocada y no como un pantallazo suelto. */
-      .marco {
-        position: absolute; inset: 0; overflow: hidden;
-        box-shadow: inset 0 0 0 1px rgba(232, 160, 74, .22);
-      }
-
-      /* ── tarjetas de tipografia ──────────────────────────────────────────── */
+      /* ── tarjetas de tipografia ───────────────────────────────────────────
+         Todo el texto va a la DERECHA. Sobre el metraje deja libre la columna
+         de chat, que esta a la izquierda; en las cartas da un eje unico a toda
+         la pieza en vez de centrarlo todo.                                   */
       .carta {
-        display: flex; flex-direction: column; justify-content: center;
-        padding: 0 170px;
+        display: flex; flex-direction: column;
+        justify-content: center; align-items: flex-end;
+        padding: 0 150px; text-align: right;
         background: linear-gradient(135deg, var(--navy) 0%, var(--navy-2) 100%);
         color: var(--hueso);
       }
+      .linea { overflow: hidden; }        /* la mascara de los barridos */
       .grande {
         font-family: "Overpass", system-ui, sans-serif; font-weight: 900;
-        font-size: 104px; line-height: 1.02; letter-spacing: -2.5px;
-        text-wrap: balance;
+        font-size: 120px; line-height: 1.0; letter-spacing: -3px;
       }
       .media {
         font-family: "Overpass", system-ui, sans-serif; font-weight: 900;
-        font-size: 78px; line-height: 1.06; letter-spacing: -1.6px;
+        font-size: 90px; line-height: 1.04; letter-spacing: -2px;
       }
       .ambar { color: var(--ambar); }
       .pie {
-        font-size: 30px; color: var(--tenue); margin-top: 34px;
-        max-width: 30ch; line-height: 1.55;
+        font-size: 34px; color: var(--tenue); margin-top: 38px;
+        max-width: 34ch; line-height: 1.5;
       }
 
       /* ── rotulos sobre el metraje ─────────────────────────────────────────
-         Nada de velo a pantalla completa: una densidad en la esquina, del
-         tamano del bloque de texto, y la foto se queda entera.               */
-      .capa { position: absolute; inset: 0; }   /* clip transparente: el runtime lo estira, y da igual */
+         Nada de velo a pantalla completa: una densidad del tamano del bloque
+         de texto, anclada a la derecha, y el metraje se queda entero.        */
+      .capa { position: absolute; inset: 0; }
       .rotulo {
-        position: absolute; left: 96px; bottom: 88px;
-        max-width: 900px; padding: 34px 42px 36px;
-        background: linear-gradient(105deg, rgba(0,30,48,.96) 60%, rgba(0,30,48,.86) 100%);
-        border-left: 3px solid var(--ambar);
-        border-radius: 0 14px 14px 0;
+        position: absolute; right: 92px; bottom: 92px;
+        max-width: 1000px; padding: 36px 48px 40px; text-align: right;
+        background: linear-gradient(255deg, rgba(0,30,48,.97) 60%, rgba(0,30,48,.88) 100%);
+        border-right: 4px solid var(--ambar);
+        border-radius: 16px 0 0 16px;
         color: var(--hueso);
       }
       .rotulo .t {
         font-family: "Overpass", system-ui, sans-serif; font-weight: 900;
-        font-size: 46px; line-height: 1.1; letter-spacing: -.8px;
+        font-size: 56px; line-height: 1.08; letter-spacing: -1.2px;
       }
-      .rotulo .s { font-size: 27px; color: var(--tenue); margin-top: 12px; line-height: 1.5; }
+      .rotulo .s { font-size: 32px; color: var(--tenue); margin-top: 14px; line-height: 1.45; }
 
-      /* la chapa de arriba a la derecha, para situar sin tapar nada */
       .chapa {
-        position: absolute; right: 88px; top: 78px;
-        font-family: "Overpass", system-ui, sans-serif; font-weight: 700;
-        font-size: 23px; letter-spacing: .14em; text-transform: uppercase;
+        position: absolute; right: 92px; top: 84px;
+        font-family: "Overpass", system-ui, sans-serif; font-weight: 900;
+        font-size: 28px; letter-spacing: .12em; text-transform: uppercase;
         color: var(--navy); background: var(--ambar);
-        padding: 11px 22px; border-radius: 999px;
+        padding: 14px 28px; border-radius: 999px;
       }
 
       /* ── cierre ───────────────────────────────────────────────────────────── */
-      .cierre { align-items: flex-start; }
-      .marca-fila { display: flex; align-items: center; gap: 26px; }
-      .beta {
-        font-family: "Overpass", system-ui, sans-serif; font-weight: 900;
-        font-size: 26px; letter-spacing: .16em;
-        color: var(--navy); background: var(--ambar);
-        padding: 10px 20px; border-radius: 8px;
-      }
-      .regla { width: 132px; height: 5px; background: var(--ambar); margin: 40px 0 34px; }
+      .logo { width: 560px; height: auto; display: block; }
+      .regla { width: 200px; height: 6px; background: var(--naranja); margin: 44px 0 38px; }
       .firma {
         font-family: "Overpass", system-ui, sans-serif; font-weight: 700;
-        font-size: 27px; letter-spacing: .2em; text-transform: uppercase;
-        color: var(--tenue); margin-top: 44px;
+        font-size: 29px; letter-spacing: .22em; text-transform: uppercase;
+        color: var(--tenue); margin-top: 46px;
+      }
+
+      /* Barrido de acto: una masa naranja que cruza el cuadro entre escenas.
+         Es el unico recurso de transicion de la pieza, y por eso se repite:
+         repetido es un ritmo, variado seria ruido.                           */
+      .barrido {
+        position: absolute; inset: 0; background: var(--naranja);
+        transform-origin: 100% 50%;
       }
     </style>
   </head>
 
   <body>
-    <div
-      id="root"
-      data-composition-id="main"
-      data-start="0"
-      data-duration="40"
-      data-width="1920"
-      data-height="1080"
-    >
+    <div id="root" data-composition-id="main"
+         data-start="0" data-duration="40" data-width="1920" data-height="1080">
+
       <!-- 1 · LA DUDA. Se abre con la frontera, no con el logo. -->
       <div id="a1" class="clip carta" data-start="0" data-duration="3.6" data-track-index="1">
-        <div class="grande" id="a1a">Once de la noche.<br />Te trabas.</div>
-        <div class="media ambar" id="a1b" style="margin-top: 30px">¿A quién le preguntas?</div>
-      </div>
-
-      <!-- 2 · DÓNDE VIVE. La pagina del curso, con el boton del tutor. -->
-            <video id="v2" class="clip cinta escena-curso" src="tutor-limpio.mp4" muted playsinline
-             data-start="3.6" data-media-start="1.2" data-duration="4" data-track-index="0"></video>
-      <div id="a2r" class="clip capa" data-start="3.6" data-duration="4" data-track-index="1">
-        <div class="rotulo">
-        <div class="t">Dentro de la Especialización en Acero</div>
+        <div class="linea"><div class="grande" id="a1a">Once de la noche.</div></div>
+        <div class="linea"><div class="grande" id="a1b">Te trabas.</div></div>
+        <div class="linea" style="margin-top: 34px">
+          <div class="media ambar" id="a1c">¿A quién le preguntas?</div>
         </div>
       </div>
 
-      <!-- 3 · LA PROMESA. El saludo dice exactamente lo que hace. -->
-            <video id="v3" class="clip cinta" src="tutor-limpio.mp4" muted playsinline
+      <!-- 2 · DÓNDE VIVE -->
+      <video id="v2" class="clip cinta escena-curso" src="tutor-limpio.mp4" muted playsinline
+             data-start="3.6" data-media-start="1.2" data-duration="4" data-track-index="0"></video>
+      <div id="w2" class="clip barrido" data-start="3.6" data-duration="0.5" data-track-index="2"></div>
+      <div id="a2r" class="clip capa" data-start="3.6" data-duration="4" data-track-index="1">
+        <div class="rotulo"><div class="t">Dentro de la Especialización en Acero</div></div>
+      </div>
+
+      <!-- 3 · LA PROMESA -->
+      <video id="v3" class="clip cinta" src="tutor-limpio.mp4" muted playsinline
              data-start="7.6" data-media-start="9" data-duration="5.4" data-track-index="0"></video>
+      <div id="w3" class="clip barrido" data-start="7.6" data-duration="0.5" data-track-index="2"></div>
       <div id="a3r" class="clip capa" data-start="7.6" data-duration="5.4" data-track-index="1">
         <div class="rotulo">
-        <div class="t">Entrenado con tus 4 cursos</div>
-        <div class="s">135 horas de clase indexadas. Las tuyas, no internet.</div>
+          <div class="t">Entrenado con tus 4 cursos</div>
+          <div class="s">135 horas de clase indexadas. Las tuyas, no internet.</div>
         </div>
       </div>
 
-      <!-- 4 · LA PREGUNTA. Corta: es el gesto, no el contenido. -->
-            <video id="v4" class="clip cinta" src="tutor-limpio.mp4" muted playsinline
+      <!-- 4 · LA PREGUNTA -->
+      <video id="v4" class="clip cinta" src="tutor-limpio.mp4" muted playsinline
              data-start="13" data-media-start="18.4" data-duration="2.6" data-track-index="0"></video>
-      <div id="a4c" class="clip capa" data-start="13" data-duration="2.6" data-track-index="1"><div class="chapa">Pregunta real de alumno</div></div>
+      <div id="w4" class="clip barrido" data-start="13" data-duration="0.5" data-track-index="2"></div>
+      <div id="a4c" class="clip capa" data-start="13" data-duration="2.6" data-track-index="1">
+        <div class="chapa">Pregunta real de alumno</div>
+      </div>
 
-      <!-- 5 · EL PICO. La respuesta citando clase y minuto. Es el acto mas
-              largo del video y el de mayor cambio visual, a proposito: es lo
-              unico que un tutor generico no puede hacer. -->
-            <video id="a5v" class="clip cinta" src="tutor-limpio.mp4" muted playsinline
-             data-start="15.6" data-media-start="57.6" data-duration="10.4" data-track-index="0"></video>
-      <div id="a5r" class="clip capa" data-start="15.6" data-duration="3" data-track-index="1">
+      <!-- 5 · EL PICO. Es el acto mas largo a proposito: citar la clase y el
+              minuto es lo unico que un tutor generico no puede hacer. -->
+      <video id="a5v" class="clip cinta" src="tutor-limpio.mp4" muted playsinline
+             data-start="15.6" data-media-start="49.5" data-duration="10.4" data-track-index="0"></video>
+      <div id="w5" class="clip barrido" data-start="15.6" data-duration="0.5" data-track-index="2"></div>
+      <div id="a5r" class="clip capa" data-start="15.6" data-duration="3.2" data-track-index="1">
         <div class="rotulo">
-        <div class="t">Clase y minuto exactos</div>
-        <div class="s">Cada respuesta trae de dónde sale, para que puedas volver a verlo.</div>
+          <div class="t">Clase y minuto exactos</div>
+          <div class="s">Cada respuesta trae de dónde sale, para que puedas volver a verlo.</div>
         </div>
       </div>
 
       <!-- 6 · LA SEGUNDA. Que no fue suerte. -->
-            <video id="v6" class="clip cinta" src="tutor-limpio.mp4" muted playsinline
+      <video id="v6" class="clip cinta" src="tutor-limpio.mp4" muted playsinline
              data-start="26" data-media-start="71" data-duration="5" data-track-index="0"></video>
-      <div id="a6c" class="clip capa" data-start="26" data-duration="5" data-track-index="1"><div class="chapa">Segunda pregunta · mismo rigor</div></div>
+      <div id="w6" class="clip barrido" data-start="26" data-duration="0.5" data-track-index="2"></div>
+      <div id="a6c" class="clip capa" data-start="26" data-duration="5" data-track-index="1">
+        <div class="chapa">Segunda pregunta · mismo rigor</div>
+      </div>
 
       <!-- 7 · EL LÍMITE. Lo que lo separa de un chatbot cualquiera. -->
       <div id="a7" class="clip carta" data-start="31" data-duration="4.4" data-track-index="1">
-        <div class="media" id="a7a">Y cuando algo no está<br />en las clases,</div>
-        <div class="media ambar" id="a7b" style="margin-top: 16px">te lo dice.</div>
-        <div class="pie" id="a7c">No lo inventa. Te manda a la asesoría con los instructores.</div>
+        <div class="linea"><div class="media" id="a7a">Y cuando algo no está</div></div>
+        <div class="linea"><div class="media" id="a7b">en las clases,</div></div>
+        <div class="linea" style="margin-top: 14px">
+          <div class="media ambar" id="a7c">te lo dice.</div>
+        </div>
+        <div class="pie" id="a7d">No lo inventa. Te manda a la asesoría con los instructores.</div>
       </div>
+      <div id="w7" class="clip barrido" data-start="31" data-duration="0.5" data-track-index="2"></div>
 
       <!-- 8 · CIERRE. Resuelve y se sostiene: no se apaga en negro. -->
-      <div id="a8" class="clip carta cierre" data-start="35.4" data-duration="4.6" data-track-index="1">
-        <div class="marca-fila" id="a8a">
-          <div class="grande">Tutor IA</div>
-          <div class="beta">BETA</div>
-        </div>
+      <div id="a8" class="clip carta" data-start="35.4" data-duration="4.6" data-track-index="1">
+        <img id="a8log" class="logo" src="marca/logo-dma-claro.png"
+             width="951" height="293" alt="Design Modeling Academy" />
         <div class="regla" id="a8b"></div>
-        <div class="media" id="a8c" style="font-size: 52px; letter-spacing: -.8px">
-          Incluido en la Especialización en Acero
+        <div class="linea">
+          <div class="media" id="a8c" style="font-size: 62px; letter-spacing: -1.2px">Tutor IA</div>
         </div>
-        <div class="firma" id="a8d">Design Modeling Academy</div>
+        <div class="linea" style="margin-top: 10px">
+          <div class="media ambar" id="a8d" style="font-size: 44px; letter-spacing: -.6px">
+            Incluido en la Especialización en Acero
+          </div>
+        </div>
       </div>
+      <div id="w8" class="clip barrido" data-start="35.4" data-duration="0.5" data-track-index="2"></div>
     </div>
 
     <script>
       const tl = gsap.timeline({ paused: true });
-      const suave = "power2.out";
+      const salida = "power3.out";
+
+      /* ── el barrido de acto ──────────────────────────────────────────────
+         Una masa naranja que entra desde la derecha y sale por la izquierda.
+         Cubre el corte, da ritmo, y es lo mismo en las ocho escenas: repetido
+         es un ritmo; uno distinto cada vez seria ruido.                     */
+      function barrido(id, t) {
+        tl.fromTo(id, { scaleX: 0, transformOrigin: "100% 50%" },
+                      { scaleX: 1, duration: 0.22, ease: "power2.in" }, t)
+          .to(id, { scaleX: 0, transformOrigin: "0% 50%", duration: 0.26, ease: "power2.out" }, t + 0.22);
+      }
+      ["#w2", 3.6, "#w3", 7.6, "#w4", 13, "#w5", 15.6,
+       "#w6", 26, "#w7", 31, "#w8", 35.4].forEach((v, i, a) => {
+        if (i % 2 === 0) barrido(v, a[i + 1]);
+      });
+
+      /* ── barrido de texto ────────────────────────────────────────────────
+         El texto sube desde detras de su propia mascara. Es mas vivo que un
+         fundido y no mueve nada de sitio.                                   */
+      function sube(id, t, d = 0.62) {
+        tl.from(id, { yPercent: 115, duration: d, ease: salida }, t);
+      }
 
       /* 1 · la duda */
-      tl.from("#a1a", { opacity: 0, y: 34, duration: 0.7, ease: suave }, 0.15)
-        .from("#a1b", { opacity: 0, y: 26, duration: 0.6, ease: suave }, 1.15);
+      sube("#a1a", 0.32); sube("#a1b", 0.46);
+      tl.from("#a1c", { yPercent: 115, duration: 0.6, ease: salida }, 1.25)
+        .from("#a1c", { opacity: 0, duration: 0.3 }, 1.25);
 
-      /* 2 · donde vive */
-      tl.from("#a2r .rotulo", { opacity: 0, x: -60, duration: 0.55, ease: suave }, 3.95);
+      /* 2 · donde vive — el rotulo entra desde la derecha, detras del barrido */
+      tl.from("#a2r .rotulo", { xPercent: 108, duration: 0.66, ease: salida }, 4.0);
 
       /* 3 · la promesa */
-      tl.from("#a3r .rotulo", { opacity: 0, x: -60, duration: 0.55, ease: suave }, 8.1);
+      tl.from("#a3r .rotulo", { xPercent: 108, duration: 0.66, ease: salida }, 8.0);
 
       /* 4 · la pregunta */
-      tl.from("#a4c .chapa", { opacity: 0, y: -22, duration: 0.45, ease: suave }, 13.2);
+      tl.from("#a4c .chapa", { scale: 0.9, opacity: 0, transformOrigin: "100% 50%",
+                               duration: 0.45, ease: "back.out(2)" }, 13.35);
 
-      /* 5 · EL PICO. El zoom entra despues de que la respuesta ya empezo a
-             aparecer, para que el movimiento acompane al texto y no lo pise.
-             El rotulo llega al final, cuando las fuentes ya se leen.          */
-      /* El rotulo entra pronto y se va antes del zoom. Durante el zoom no hay
-         nada encima: lo que se tiene que leer son las fuentes.               */
-      tl.from("#a5r .rotulo", { opacity: 0, x: -60, duration: 0.55, ease: suave }, 15.95)
-        .to("#a5r .rotulo", { opacity: 0, duration: 0.45, ease: "power2.in" }, 18.1);
+      /* 5 · EL PICO. El rotulo entra pronto y se va antes de que la respuesta
+         termine de escribirse: durante las fuentes no hay nada encima.      */
+      tl.from("#a5r .rotulo", { xPercent: 108, duration: 0.66, ease: salida }, 15.95)
+        .to("#a5r .rotulo", { xPercent: 108, duration: 0.5, ease: "power2.in" }, 18.25);
 
-      /* Valores en propiedades de GSAP, no en una cadena de transform: asi la
-         interpolacion es limpia y arranca exactamente donde esta el CSS.
-         transformOrigin va EXPLICITO: GSAP escribe el suyo (50% 50%) y pisa el
-         del CSS, y con el origen en el centro todo el encuadre se va de sitio. */
       /* Sin zoom cerrado, a proposito: la respuesta ocupa el ancho entero del
-         panel, y cualquier acercamiento se come el principio y el final de la
-         linea de FUENTES, que es justo lo que hay que leer. En su lugar, una
-         respiracion de 1.00 a 1.06 a lo largo de todo el acto: da vida sin
-         quitar una sola palabra. El pico se sostiene con tiempo, no con zoom. */
-      tl.fromTo(
-        "#a5v",
+         panel y cualquier acercamiento se come el principio y el final de la
+         linea de FUENTES, que es justo lo que hay que leer. Una respiracion de
+         1.00 a 1.06 durante todo el acto. El pico se sostiene con tiempo.
+         transformOrigin va EXPLICITO: GSAP escribe el suyo y pisa el del CSS. */
+      tl.fromTo("#a5v",
         { scale: 1, transformOrigin: "50% 50%" },
-        { scale: 1.06, transformOrigin: "50% 50%", duration: 10.4, ease: "none" },
-        15.6
-      );
+        { scale: 1.06, transformOrigin: "50% 50%", duration: 10.4, ease: "none" }, 15.6);
 
       /* 6 · la segunda */
-      tl.from("#a6c .chapa", { opacity: 0, y: -22, duration: 0.45, ease: suave }, 26.3);
+      tl.from("#a6c .chapa", { scale: 0.9, opacity: 0, transformOrigin: "100% 50%",
+                               duration: 0.45, ease: "back.out(2)" }, 26.35);
 
       /* 7 · el limite */
-      tl.from("#a7a", { opacity: 0, y: 30, duration: 0.6, ease: suave }, 31.15)
-        .from("#a7b", { opacity: 0, y: 24, duration: 0.55, ease: suave }, 32.0)
-        .from("#a7c", { opacity: 0, duration: 0.6, ease: suave }, 32.9);
+      sube("#a7a", 31.3); sube("#a7b", 31.44);
+      tl.from("#a7c", { yPercent: 115, duration: 0.62, ease: salida }, 32.1)
+        .from("#a7d", { opacity: 0, y: 18, duration: 0.55, ease: salida }, 32.75);
 
-      /* 8 · cierre */
-      tl.from("#a8a", { opacity: 0, y: 26, duration: 0.6, ease: suave }, 35.55)
-        .from("#a8b", { scaleX: 0, transformOrigin: "0 50%", duration: 0.5, ease: suave }, 36.15)
-        .from("#a8c", { opacity: 0, y: 20, duration: 0.55, ease: suave }, 36.45)
-        .from("#a8d", { opacity: 0, duration: 0.6, ease: suave }, 37.2);
+      /* 8 · cierre: primero la marca, despues la regla, despues lo que se vende */
+      tl.from("#a8log", { opacity: 0, y: 26, duration: 0.65, ease: salida }, 35.7)
+        .from("#a8b", { scaleX: 0, transformOrigin: "100% 50%", duration: 0.5, ease: salida }, 36.3)
+        .from("#a8c", { yPercent: 115, duration: 0.6, ease: salida }, 36.5)
+        .from("#a8d", { yPercent: 115, duration: 0.6, ease: salida }, 36.72);
 
       window.__timelines["main"] = tl;
     </script>
