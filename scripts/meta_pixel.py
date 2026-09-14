@@ -148,17 +148,37 @@ def main():
             print(f"    {agg:16} ok ({len(filas)} filas)")
 
         # 3 — la lectura que importa: hay eventos de servidor o no
+        #
+        # OJO: la documentacion habla de WEB_ONLY y SERVER_ONLY, pero lo que la
+        # API DEVUELVE de verdad es "BROWSER" y "SERVER". Buscar "SERVER_ONLY"
+        # no casa nunca, y el resultado era `capi_detectada: False` en los
+        # cinco pixeles — incluido uno con 1.009 eventos de servidor. Un falso
+        # negativo que se lee como «la CAPI esta muerta» cuando esta viva.
+        # Comprobado el 14-sep-2026 contra los datos crudos.
         fuente = registro["stats"].get("event_source", {}).get("filas") or []
-        blob = json.dumps(fuente).upper()
-        registro["capi_detectada"] = "SERVER_ONLY" in blob
+        servidor = navegador = 0
+        for fila in fuente:
+            for it in fila.get("data") or []:
+                v = str(it.get("value", "")).upper()
+                n = int(it.get("count") or 0)
+                if "SERVER" in v:
+                    servidor += n
+                elif "BROWSER" in v or "WEB" in v:
+                    navegador += n
+
+        registro["eventos_servidor"] = servidor
+        registro["eventos_navegador"] = navegador
+        registro["capi_detectada"] = servidor > 0
         registro["nota_capi"] = (
-            "Hay eventos SERVER_ONLY: la Conversions API esta enviando."
-            if registro["capi_detectada"] else
-            "No aparecen eventos SERVER_ONLY en la ventana. Si el pixel si "
-            "dispara, la CAPI no esta desplegada — es el check M02, critico, "
-            "y Meta cifra la perdida de datos sin el en 30-40%."
+            f"Hay {servidor:,} eventos de SERVIDOR contra {navegador:,} de navegador: "
+            "la Conversions API esta enviando."
+            if servidor else
+            "Cero eventos de servidor en la ventana. Si el pixel si dispara, la "
+            "CAPI no esta desplegada — es el check M02, critico, y Meta cifra la "
+            "perdida de datos sin el en 30-40%."
         )
-        print(f"    -> CAPI: {'SI' if registro['capi_detectada'] else 'NO detectada'}")
+        print(f"    -> CAPI: {'SI' if servidor else 'NO detectada'} "
+              f"(servidor {servidor:,} · navegador {navegador:,})")
 
         salida["pixeles"].append(registro)
 
