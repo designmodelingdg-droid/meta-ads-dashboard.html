@@ -1,6 +1,6 @@
 # Inventario de correos — GoHighLevel
 
-Generado el 2026-09-11.
+Generado el 2026-09-14.
 
 **428 plantillas** en **52 carpetas**. 428 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
 
@@ -7931,6 +7931,233 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
+## ⚠️ AUTOMATIZACIONES PIPELINE > ✅ COMPRA DIRECTA > SEGUIMIENTO MEMORIA DE CALCULO
+
+### Acceso Memoria de Cálculo_02
+
+- **id:** `6aa30962caaf4d52d51c8dd0`
+- **tipo:** html
+- **actualizada:** 2026-09-11T17:16:00.962Z
+- **Cuerpo:**
+
+```
+Hipotesis listadas, no justificadas. El error 3.
+Uso concreto
+Lo que delata una memoria reciclada
+Hola {{contact.first_name}} ,
+De los errores que revisamos en la gu&iacute;a, el 3 es el que m&aacute;s se repite : listar las hip&oacute;tesis en vez de justificarlas.
+Una memoria dice &laquo;se consider&oacute; un suelo con q_adm de 1.5 kg/cm&sup2;&raquo; y pasa al siguiente punto. Nunca dice de d&oacute;nde sali&oacute; ese valor, qu&eacute; estudio lo respalda ni por qu&eacute; aplica a este proyecto.
+Por qu&eacute; importa
+Es lo primero que delata una memoria reciclada de otro proyecto. Un revisor con oficio no discute el n&uacute;mero: pregunta de d&oacute;nde viene. Si no hay respuesta en el documento, el resto del c&aacute;lculo queda bajo sospecha aunque est&eacute; bien hecho.
+La plantilla de Word ya trae el apartado de hip&oacute;tesis con los campos de justificaci&oacute;n separados, para que no se pueda dejar en blanco sin notarlo.
+Ver el error 3 en la gu&iacute;a de memoria de c&aacute;lculo &#8594;
+Se lee en pantalla &middot; sin descargas
+Un abrazo,
+Equipo Design Modeling Academy
+&iquest;Tienes alguna duda?
+Resp&oacute;ndeme este correo o escr&iacute;benos por WhatsApp. Te contestamos el mismo d&iacute;a.
+Escribir por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### Acceso Memoria de Cálculo_03a
+
+- **id:** `6aa3097b724763774fadbbf5`
+- **tipo:** html
+- **actualizada:** 2026-09-11T17:15:44.677Z
+- **Cuerpo:**
+
+```
+La plantilla te ahorra tiempo. El respaldo tecnico se aprende.
+Para quien ya entrega
+El c&aacute;lculo que hay detr&aacute;s de la memoria
+Hola {{contact.first_name}} ,
+Si ya entregas memorias, la plantilla te ahorra tiempo. Lo que no te da es el respaldo del c&aacute;lculo que hay detr&aacute;s.
+La Especializaci&oacute;n en Dise&ntilde;o Estructural BIM en Acero cubre justo eso: modelas en Revit, analizas en Robot Structural, detallas conexiones en Advance Steel y documentas el proyecto completo, con la normativa que despu&eacute;s citas en la memoria.
+Lo que incluye
+4 cursos, 120 horas acad&eacute;micas, 4 certificaciones con aval Autodesk y el certificado internacional de Modeling-DG. Con tutor asignado durante todo el programa.
+Con tutor incluido
+USD 225
+4 cursos &middot; 120 horas acad&eacute;micas &middot; cupos limitados por cohorte
+Inscribirme &#8594;
+Pago &uacute;nico &middot; acceso inmediato
+Ver el programa completo
+Un abrazo,
+Equipo Design Modeling Academy
+&iquest;Tienes alguna duda?
+Resp&oacute;ndeme este correo o escr&iacute;benos por WhatsApp. Te contestamos el mismo d&iacute;a.
+Escribir por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### Acceso Memoria de Cálculo_03b
+
+- **id:** `6aa30994ce284a48a2a1a88f`
+- **tipo:** html
+- **actualizada:** 2026-09-11T17:15:29.692Z
+- **Cuerpo:**
+
+```
+Una memoria impecable sobre un modelo desordenado no convence a nadie.
+Para quien empieza
+Antes de la memoria, el modelo
+Hola {{contact.first_name}} ,
+Si todav&iacute;a no entregas memorias, la plantilla te sirve para el d&iacute;a que te toque. Pero antes hay algo m&aacute;s b&aacute;sico que resolver: el modelo del que sale el c&aacute;lculo .
+Ah&iacute; es donde entra el m&oacute;dulo de BIM Professional : modelar con est&aacute;ndar, organizar el proyecto desde el inicio y producir documentaci&oacute;n que se sostenga.
+Por qu&eacute; en ese orden
+Una memoria impecable sobre un modelo desordenado no convence a nadie. Y un modelo bien construido hace que la memoria casi se escriba sola, porque los datos ya est&aacute;n donde deben estar.
+&iquest;Por d&oacute;nde empezar en tu caso?
+Son 30 minutos con un asesor acad&eacute;mico. Sin presentaci&oacute;n de ventas.
+Agenda una cita &#8594;
+30 minutos &middot; sin compromiso
+Un abrazo,
+Equipo Design Modeling Academy
+&iquest;Tienes alguna duda?
+Resp&oacute;ndeme este correo o escr&iacute;benos por WhatsApp. Te contestamos el mismo d&iacute;a.
+Escribir por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+## ⚠️ AUTOMATIZACIONES PIPELINE > ✅ COMPRA DIRECTA > SEGUIMIENTO REVIT+GPT
+
+### Acceso Guía Revit + IA_02
+
+- **id:** `6aa307fa8fc016e650024764`
+- **tipo:** html
+- **actualizada:** 2026-09-11T17:12:51.412Z
+- **Cuerpo:**
+
+```
+El 06 no rompe nada. Por eso sobrevive semanas.
+Uso concreto
+El error que se descubre al presupuestar
+Hola {{contact.first_name}} ,
+De los errores de la gu&iacute;a, hay uno que casi nadie ve a tiempo: el 06, los elementos duplicados .
+No rompe nada. El modelo abre, las vistas se generan, los planos salen. Por eso sobrevive semanas sin que nadie lo note.
+D&oacute;nde aparece
+Al presupuestar. La tabla de cantidades cuenta dos veces el mismo elemento y el metrado sale inflado. Para entonces el modelo ya se comparti&oacute; con las otras especialidades, y corregirlo obliga a revisar todo lo que se colg&oacute; de &eacute;l.
+En la gu&iacute;a est&aacute; el prompt exacto para que la IA te liste los duplicados por categor&iacute;a antes de que lleguen al presupuesto, y c&oacute;mo verificar el resultado en Revit.
+Ver el error 06 en la gu&iacute;a Revit + ChatGPT &#8594;
+Se abre en pantalla &middot; sin descargas
+Un abrazo,
+Equipo Design Modeling Academy
+&iquest;Tienes alguna duda?
+Resp&oacute;ndeme este correo o escr&iacute;benos por WhatsApp. Te contestamos el mismo d&iacute;a.
+Escribir por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### Acceso Guía Revit + IA_03
+
+- **id:** `6aa308d4a813792f40942363`
+- **tipo:** html
+- **actualizada:** 2026-09-11T17:12:32.444Z
+- **Cuerpo:**
+
+```
+La guia resuelve el error. El flujo evita que exista.
+El siguiente paso
+De resolver errores a que no aparezcan
+Hola {{contact.first_name}} ,
+La gu&iacute;a resuelve errores puntuales. Lo que no resuelve es el paso siguiente: dejar de reaccionar a los errores y construir el flujo para que no aparezcan .
+Eso es lo que trabajamos en el bloque de BIM + Inteligencia Artificial del M&aacute;ster: automatizaci&oacute;n con Dynamo, programaci&oacute;n en Python e IA aplicada a procesos BIM, con criterio t&eacute;cnico y no como truco.
+Qu&eacute; cambia
+Pasas de pedirle a la IA que te explique un error, a dise&ntilde;ar rutinas que revisan el modelo solas antes de que el error llegue a un plano.
+&iquest;Te sirve para tu caso?
+Son 30 minutos con un asesor acad&eacute;mico. Te ubicamos y te decimos por d&oacute;nde empezar.
+Agenda una cita &#8594;
+30 minutos &middot; sin compromiso
+Un abrazo,
+Equipo Design Modeling Academy
+&iquest;Tienes alguna duda?
+Resp&oacute;ndeme este correo o escr&iacute;benos por WhatsApp. Te contestamos el mismo d&iacute;a.
+Escribir por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+## ⚠️ AUTOMATIZACIONES PIPELINE > ✅ COMPRA DIRECTA > SEGUIMIENTO SCRIPT DYNAMO
+
+### Acceso Pack Dynamo_02
+
+- **id:** `6aa30b029988966370f76b3b`
+- **tipo:** html
+- **actualizada:** 2026-09-11T17:11:56.310Z
+- **Cuerpo:**
+
+```
+Los duplicados no se ven hasta que alguien presupuesta.
+Uso concreto
+Empieza por el script 02
+Hola
+{{contact.first_name}} ,
+De los cinco scripts
+del pack, empieza por el 02: el detector de duplicados .
+Recorre el modelo y
+te lista los elementos que est&aacute;n encima de otro id&eacute;ntico, por categor&iacute;a. Tarda
+segundos.
+Por qu&eacute;
+ese primero
+Los duplicados no
+rompen nada. El modelo abre, las vistas se generan, los planos salen. Se descubren despu&eacute;s,
+cuando alguien presupuesta y el metrado sale inflado &mdash; y para entonces el modelo ya se
+comparti&oacute; con las otras especialidades.
+Corre el 02 sobre un
+proyecto que tengas cerrado hace meses. Es la forma m&aacute;s r&aacute;pida de ver si esto te sirve:
+casi siempre aparece algo.
+Abrir los cinco scripts de Dynamo &#8594;
+Un abrazo,
+Equipo Design
+Modeling Academy
+&iquest;Tienes alguna
+duda?
+Resp&oacute;ndeme
+este correo o escr&iacute;benos por WhatsApp. Te contestamos el mismo d&iacute;a.
+Escribir por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### Acceso Pack Dynamo_03
+
+- **id:** `6aa30b131e4332fec4598c1a`
+- **tipo:** html
+- **actualizada:** 2026-09-11T17:12:12.540Z
+- **Cuerpo:**
+
+```
+Cinco scripts resuelven cinco tareas. Los tuyos resuelven las tuyas.
+El siguiente paso
+De usar scripts a escribir los tuyos
+Hola {{contact.first_name}} ,
+Cinco scripts resuelven cinco tareas. El salto real es escribir los tuyos , para los problemas que solo tienes t&uacute; en tus proyectos.
+Eso es lo que trabajamos en el bloque de BIM + Inteligencia Artificial del M&aacute;ster: automatizaci&oacute;n con Dynamo, programaci&oacute;n en Python e IA aplicada a procesos BIM.
+La diferencia
+Usar scripts de otros te vuelve m&aacute;s r&aacute;pido. Escribir los tuyos te vuelve la persona que el equipo necesita cuando aparece un problema que nadie hab&iacute;a tenido antes.
+&iquest;Te sirve para tu caso?
+Son 30 minutos con un asesor acad&eacute;mico. Te ubicamos y te decimos por d&oacute;nde empezar.
+Agenda una cita &#8594;
+30 minutos &middot; sin compromiso
+Un abrazo,
+Equipo Design Modeling Academy
+&iquest;Tienes alguna duda?
+Resp&oacute;ndeme este correo o escr&iacute;benos por WhatsApp. Te contestamos el mismo d&iacute;a.
+Escribir por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
 ## ⚠️ AUTOMATIZACIONES PIPELINE > ✅ COMPRA DIRECTA > ✅SEGUIMIENTO CALCULADORA
 
 ### ✅ Seg 01 Error #1 zapatas
@@ -12826,11 +13053,11 @@ designmodelingacademy.com
 
 ## ✅ RECURSOS GRATUITOS
 
-### ✅Acceso Calculadora Zapatas
+### Acceso Calculadora Zapatas
 
 - **id:** `6a8738c92da68428c02c9971`
 - **tipo:** html
-- **actualizada:** 2026-09-08T15:50:41.439Z
+- **actualizada:** 2026-09-11T16:41:00.686Z
 - **Cuerpo:**
 
 ```
@@ -12839,12 +13066,12 @@ Enviar como accion del formulario: https://funnel.dgdesignmodeling.com/acceso-gr
 Banner y logo en base64. La portada se carga desde el CDN de GHL.
 Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
 -->
-Registro confirmado. Disena, verifica y optimiza tu primera zapata en 2 minutos.
+Dimensiona y verifica tu zapata paso a paso: presiones, cortante, punzonamiento y acero.
 Registro confirmado &middot; 100% gratis
-Tu calculadora est&aacute; lista
+Calculadora de Zapata Aislada
 Hola {{contact.first_name}} ,
-Gracias por registrarte. Ya tienes acceso a la Calculadora de Zapatas Aisladas : ingresas las cargas y los materiales, y en dos minutos obtienes dimensiones, acero en ambas direcciones y las verificaciones de punzonamiento y deslizamiento seg&uacute;n normas ACI.
-Abrir la calculadora &#8594;
+Gracias por registrarte. Ya tienes acceso a la Calculadora de Zapata Aislada : dimensiona y verifica tu zapata paso a paso &mdash; presiones, cortante, punzonamiento y acero.
+Abrir la Calculadora de Zapata Aislada &#8594;
 Se abre en tu comunidad DMA &middot; sin costo y sin tarjeta
 Tres pasos para sacarle provecho
 La mayor&iacute;a se registra y nunca la usa. Estos tres pasos son la diferencia.
@@ -12866,6 +13093,249 @@ Entrar gratis a la Comunidad &#8594;
 Revisa primero las carpetas de spam y promociones. Si aun as&iacute; no aparece,
 escr&iacute;benos y te damos el acceso al instante.
 Escribir por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### Acceso Guía Revit + IA_01
+
+- **id:** `6aa30452083b31666d018660`
+- **tipo:** html
+- **actualizada:** 2026-09-11T17:14:10.466Z
+- **Cuerpo:**
+
+```
+Los 10 errores de Revit que mas tiempo hacen perder, con el prompt exacto para cada uno.
+Registro confirmado &middot; 100% gratis
+Revit + ChatGPT: resuelve errores con IA
+Hola {{contact.first_name}} ,
+Gracias por registrarte. Ya tienes acceso a Revit + ChatGPT: resuelve errores con IA : los 10 errores de Revit que m&aacute;s tiempo hacen perder, el prompt exacto para cada uno y cu&aacute;ndo no hacerle caso a la respuesta.
+Te dejo el enlace otra vez, por si cerraste la p&aacute;gina antes de abrirla.
+Abrir Revit + ChatGPT: resuelve errores con IA &#8594;
+Se lee en pantalla &middot; sin descargas
+Tres pasos para aprovecharla
+La mayor&iacute;a la guarda y nunca la abre. Estos tres pasos son la diferencia.
+01
+&Aacute;brela hoy
+Son diez errores concretos, no un tratado. Rev&iacute;salos de corrido y qu&eacute;date con los dos que te pasan m&aacute;s seguido.
+02
+Copia el prompt tal cual
+Cada error trae la instrucci&oacute;n exacta para la IA. Cambia solo el dato de tu proyecto.
+03
+Verifica antes de aplicar
+La IA propone la causa; t&uacute; confirmas en el modelo. Ese paso no se salta.
+Tambi&eacute;n es gratis
+&Uacute;nete a la Comunidad Design Premium
+Masterclasses en vivo, plantillas descargables y networking con ingenieros y arquitectos
+de toda Latinoam&eacute;rica. Sin costo y sin tarjeta.
+Entrar gratis a la Comunidad &#8594;
+&iquest;No se abre o no encuentras el archivo?
+Revisa primero las carpetas de spam y promociones. Si aun as&iacute; no aparece, escr&iacute;benos y te lo reenviamos al instante.
+Escribir por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### Acceso Memoria de Cálculo_01
+
+- **id:** `6aa309166f9d413fbe682c10`
+- **tipo:** html
+- **actualizada:** 2026-09-11T17:13:34.203Z
+- **Cuerpo:**
+
+```
+Las 12 secciones en el orden real y los 6 errores por los que una memoria vuelve a tu escritorio.
+Registro confirmado &middot; 100% gratis
+La memoria de c&aacute;lculo que se sostiene ante revisi&oacute;n
+Hola {{contact.first_name}} ,
+Gracias por registrarte. Ya tienes acceso a La memoria de c&aacute;lculo que se sostiene ante revisi&oacute;n : las 12 secciones en el orden real, qu&eacute; va en cada una, y los 6 errores por los que una memoria vuelve a tu escritorio.
+Te dejo los enlaces otra vez, por si cerraste la p&aacute;gina antes de abrirlos.
+Abrir la gu&iacute;a de memoria de c&aacute;lculo &#8594;
+Se lee en pantalla &middot; sin descargas
+Descargar la plantilla de memoria en Word
+Descargar la hoja de c&aacute;lculo en Excel
+Tres pasos para aprovecharlos
+La mayor&iacute;a descarga los tres y no abre ninguno. Estos tres pasos son la diferencia.
+01
+Lee la gu&iacute;a primero
+La plantilla sin la gu&iacute;a se llena por inercia. Los diez minutos de lectura son los que evitan una memoria vac&iacute;a.
+02
+Trabaja sobre la plantilla
+Ya trae los apartados en orden y los campos de justificaci&oacute;n separados, para que no queden en blanco sin que lo notes.
+03
+Cita la hoja de Excel
+Los c&aacute;lculos van en el Excel; en la memoria citas el resultado y de d&oacute;nde sale. As&iacute; se sostiene ante un revisor.
+Tambi&eacute;n es gratis
+&Uacute;nete a la Comunidad Design Premium
+Masterclasses en vivo, plantillas descargables y networking con ingenieros y arquitectos
+de toda Latinoam&eacute;rica. Sin costo y sin tarjeta.
+Entrar gratis a la Comunidad &#8594;
+&iquest;No se abre o no encuentras el archivo?
+Revisa primero las carpetas de spam y promociones. Si aun as&iacute; no aparece, escr&iacute;benos y te lo reenviamos al instante.
+Escribir por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### Acceso Pack Dynamo_01
+
+- **id:** `6aa30ad196b1ac287473a07e`
+- **tipo:** html
+- **actualizada:** 2026-09-11T17:13:51.686Z
+- **Cuerpo:**
+
+```
+Cinco cosas que hoy haces a mano y que se resuelven en un clic, con el codigo explicado.
+Registro confirmado &middot; 100% gratis
+Cinco scripts de Dynamo, comentados por dentro
+Hola
+{{contact.first_name}} ,
+Gracias por registrarte. Ya tienes acceso a
+Cinco scripts de Dynamo, comentados por dentro : cinco cosas que
+hoy haces a mano y que se resuelven en un clic. Con el c&oacute;digo explicado para que puedas
+cambiarlo, no solo ejecutarlo.
+Te dejo los enlaces
+otra vez, por si cerraste la p&aacute;gina antes de abrirlos.
+Abrir los cinco scripts de Dynamo &#8594;
+Se lee en pantalla &middot;
+sin descargas
+Descargar los 5 scripts del pack starter (ZIP)
+Tres pasos para
+aprovecharlo
+La
+mayor&iacute;a descarga el ZIP y no lo abre. Estos tres pasos son la diferencia.
+01
+Instala
+primero
+Los scripts no
+corren si Dynamo no est&aacute; bien configurado, y ese es el punto donde la mayor&iacute;a
+abandona.
+02
+Prueba en
+una copia
+Nunca en el
+archivo bueno. Dynamo modifica el modelo de verdad y no todo se deshace con Ctrl+Z.
+03
+Empieza
+por el script 02
+El detector de
+duplicados. C&oacute;rrelo sobre un proyecto cerrado hace meses: casi siempre aparece algo.
+Tambi&eacute;n es gratis
+&Uacute;nete a la Comunidad Design Premium
+Masterclasses en vivo, plantillas descargables y networking con ingenieros y arquitectos
+de toda Latinoam&eacute;rica. Sin costo y sin tarjeta.
+Entrar gratis a la Comunidad &#8594;
+&iquest;No se abre o
+no encuentras el archivo?
+Revisa primero las
+carpetas de spam y promociones. Si aun as&iacute; no aparece, escr&iacute;benos y te lo reenviamos al
+instante.
+Escribir por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### Acceso Test Nivel BIM
+
+- **id:** `6a8738fbb7730838e926bc5e`
+- **tipo:** html
+- **actualizada:** 2026-09-11T16:42:22.157Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Enviar como accion del formulario: https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form
+Banner y logo en base64. La portada se carga desde el CDN de GHL.
+Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+20 preguntas para descubrir en que nivel BIM estas y que te falta para el siguiente.
+Registro confirmado &middot; 100% gratis
+Test de Nivel BIM
+Hola {{contact.first_name}} ,
+Gracias por registrarte. Ya tienes acceso al Test de Nivel BIM : 20 preguntas para descubrir si eres Modelador, Coordinador, BIM Manager 4D-5D o Especialista BIM+IA, y qu&eacute; te falta para el siguiente nivel.
+Hacer el Test de Nivel BIM &#8594;
+Se abre en tu comunidad DMA &middot; sin costo y sin tarjeta
+Tres pasos para que te sirva
+Un diagn&oacute;stico solo vale si lo haces en serio. Estos tres pasos son la diferencia.
+01
+H&aacute;zlo de una sentada
+Son 5 minutos. Reserva ese rato sin interrupciones y responde de corrido: el resultado refleja tu nivel real, no el que te gustar&iacute;a tener.
+02
+Responde con honestidad
+El test no regala niveles y est&aacute; dise&ntilde;ado para detectar huecos. Marcar lo que crees que deber&iacute;as saber, en vez de lo que haces hoy, solo te enga&ntilde;a a ti.
+03
+Trabaja el siguiente paso
+Al final recibes tu nivel y la competencia concreta que te toca cerrar. Emp&iacute;ezala esta semana, mientras el diagn&oacute;stico sigue fresco.
+Tambi&eacute;n es gratis
+&Uacute;nete a la Comunidad Design Premium
+Masterclasses en vivo, plantillas descargables y networking con ingenieros y arquitectos
+de toda Latinoam&eacute;rica. Sin costo y sin tarjeta.
+Entrar gratis a la Comunidad &#8594;
+&iquest;No se abre o no encuentras el acceso?
+Revisa primero las carpetas de spam y promociones. Si aun as&iacute; no aparece,
+escr&iacute;benos y te damos el acceso al instante.
+Escribir por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### Acceso Verificación Acero
+
+- **id:** `6a8f32c54867309f6fb3a862`
+- **tipo:** html
+- **actualizada:** 2026-09-11T16:43:50.644Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Enviar como accion del formulario: https://funnel.dgdesignmodeling.com/acceso-gratis-verificacion-acero-form
+Banner y logo en base64. La portada se carga desde el CDN de GHL.
+Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+El perfil pasa por resistencia y aun asi la estructura falla, se mueve o cuesta el doble.
+Registro confirmado &middot; 100% gratis
+Las 5 verificaciones en acero que no puedes saltarte
+Hola {{contact.first_name}} ,
+Gracias por registrarte. Ya tienes acceso a Las 5 verificaciones en acero que no puedes saltarte : el perfil pasa por resistencia y aun as&iacute; la estructura falla, se mueve o cuesta el doble de lo que deb&iacute;a.
+Y junto a la gu&iacute;a, el verificador de eficiencia: &iquest;cu&aacute;nto acero est&aacute;s pagando de m&aacute;s? Sobredimensionar no es ir por el lado seguro. Es no haber revisado.
+Abrir las 5 verificaciones en acero &#8594;
+Sin costo &middot; se abre en tu comunidad DMA
+&iquest;Cu&aacute;nto acero est&aacute;s pagando de m&aacute;s?
+Lo que acabas de desbloquear
+Cinco verificaciones, cada una con su cl&aacute;usula de norma.
+01 Pandeo local
+02 Lateral-torsional
+03 Derivas y P-&Delta;
+04 Conexiones
+05 Placa base
+Tres pasos para que te sirva
+La mayor&iacute;a abre el enlace y lo deja para despu&eacute;s. Estos tres pasos son la diferencia.
+01
+L&eacute;elo completo hoy
+Son cinco puntos concretos, no un tratado. Rev&iacute;salos de corrido y qu&eacute;date con el criterio y la cl&aacute;usula de cada verificaci&oacute;n.
+02
+Tenlo a mano al revisar
+Ábrelo cuando revises un modelo o recibas un plano de taller. Queda guardado en tu comunidad DMA, as&iacute; que lo recuperas desde cualquier equipo.
+03
+Apl&iacute;calo a tu proyecto actual
+Pasa las cinco verificaciones sobre la estructura que tengas abierta hoy. Si alguna no cierra, ya sabes d&oacute;nde mirar.
+Tambi&eacute;n es gratis
+&Uacute;nete a la Comunidad Design Premium
+Masterclasses en vivo, plantillas descargables y networking con ingenieros y arquitectos
+de toda Latinoam&eacute;rica. Sin costo y sin tarjeta.
+Entrar gratis a la Comunidad &#8594;
+&iquest;No se abre o no encuentras el acceso?
+Revisa primero las carpetas de spam y promociones. Si aun as&iacute; no aparece,
+escr&iacute;benos y te damos el acceso al instante.
+Escribir por WhatsApp
+Material educativo y de predimensionamiento. No sustituye el
+criterio ni la responsabilidad del profesional que firma. Toda verificaci&oacute;n debe realizarse con la
+norma vigente aplicable al proyecto. No es una certificaci&oacute;n ni un diploma.
 Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
 designmodelingacademy.com
 {{unsubscribe_url}}
@@ -12956,106 +13426,6 @@ Entrar gratis a la Comunidad &#8594;
 Revisa primero las carpetas de spam y promociones. Si aun as&iacute; no aparece,
 escr&iacute;benos y te damos el acceso al instante.
 Escribir por WhatsApp
-Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
-designmodelingacademy.com
-{{unsubscribe_url}}
-```
-
-### ✅Acceso Test Nivel BIM
-
-- **id:** `6a8738fbb7730838e926bc5e`
-- **tipo:** html
-- **actualizada:** 2026-09-08T15:52:38.466Z
-- **Cuerpo:**
-
-```
-Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
-Enviar como accion del formulario: https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form
-Banner y logo en base64. La portada se carga desde el CDN de GHL.
-Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
--->
-20 preguntas, 5 minutos y un diagnostico honesto de tu nivel BIM real.
-Registro confirmado &middot; 100% gratis
-Tu test de nivel BIM est&aacute; listo
-Hola {{contact.first_name}} ,
-Gracias por registrarte. Ya puedes hacer el Test de Nivel BIM : 20 preguntas sobre lo que sabes hacer de verdad en un proyecto, construidas a partir del temario real del M&aacute;ster BIM. En 5 minutos sabes en cu&aacute;l de los 4 niveles est&aacute;s y qu&eacute; competencias te faltan para el siguiente.
-Hacer el test ahora &#8594;
-Se abre en tu comunidad DMA &middot; sin costo y sin tarjeta
-Tres pasos para que te sirva
-Un diagn&oacute;stico solo vale si lo haces en serio. Estos tres pasos son la diferencia.
-01
-H&aacute;zlo de una sentada
-Son 5 minutos. Reserva ese rato sin interrupciones y responde de corrido: el resultado refleja tu nivel real, no el que te gustar&iacute;a tener.
-02
-Responde con honestidad
-El test no regala niveles y est&aacute; dise&ntilde;ado para detectar huecos. Marcar lo que crees que deber&iacute;as saber, en vez de lo que haces hoy, solo te enga&ntilde;a a ti.
-03
-Trabaja el siguiente paso
-Al final recibes tu nivel y la competencia concreta que te toca cerrar. Emp&iacute;ezala esta semana, mientras el diagn&oacute;stico sigue fresco.
-Tambi&eacute;n es gratis
-&Uacute;nete a la Comunidad Design Premium
-Masterclasses en vivo, plantillas descargables y networking con ingenieros y arquitectos
-de toda Latinoam&eacute;rica. Sin costo y sin tarjeta.
-Entrar gratis a la Comunidad &#8594;
-&iquest;No se abre o no encuentras el acceso?
-Revisa primero las carpetas de spam y promociones. Si aun as&iacute; no aparece,
-escr&iacute;benos y te damos el acceso al instante.
-Escribir por WhatsApp
-Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
-designmodelingacademy.com
-{{unsubscribe_url}}
-```
-
-### ✅Acceso Verificación Acero
-
-- **id:** `6a8f32c54867309f6fb3a862`
-- **tipo:** html
-- **actualizada:** 2026-09-08T15:53:17.699Z
-- **Cuerpo:**
-
-```
-Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
-Enviar como accion del formulario: https://funnel.dgdesignmodeling.com/acceso-gratis-verificacion-acero-form
-Banner y logo en base64. La portada se carga desde el CDN de GHL.
-Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
--->
-Registro confirmado. La guia de las 5 verificaciones en acero ya esta en tu comunidad DMA.
-Registro confirmado &middot; 100% gratis
-Las 5 verificaciones en acero, listas para usar
-Hola {{contact.first_name}} ,
-Gracias por registrarte. Ya tienes acceso completo a la gu&iacute;a Las 5 verificaciones en acero , con la cl&aacute;usula de norma detr&aacute;s de cada chequeo &mdash; AISC 360-16 y NEC-SE-DS.
-Tu acceso est&aacute; aqu&iacute; &#8594;
-Sin costo &middot; se abre en tu comunidad DMA
-Lo que acabas de desbloquear
-Cinco verificaciones, cada una con su cl&aacute;usula de norma.
-01 Pandeo local
-02 Lateral-torsional
-03 Derivas y P-&Delta;
-04 Conexiones
-05 Placa base
-Tres pasos para que te sirva
-La mayor&iacute;a abre el enlace y lo deja para despu&eacute;s. Estos tres pasos son la diferencia.
-01
-L&eacute;elo completo hoy
-Son cinco puntos concretos, no un tratado. Rev&iacute;salos de corrido y qu&eacute;date con el criterio y la cl&aacute;usula de cada verificaci&oacute;n.
-02
-Tenlo a mano al revisar
-Ábrelo cuando revises un modelo o recibas un plano de taller. Queda guardado en tu comunidad DMA, as&iacute; que lo recuperas desde cualquier equipo.
-03
-Apl&iacute;calo a tu proyecto actual
-Pasa las cinco verificaciones sobre la estructura que tengas abierta hoy. Si alguna no cierra, ya sabes d&oacute;nde mirar.
-Tambi&eacute;n es gratis
-&Uacute;nete a la Comunidad Design Premium
-Masterclasses en vivo, plantillas descargables y networking con ingenieros y arquitectos
-de toda Latinoam&eacute;rica. Sin costo y sin tarjeta.
-Entrar gratis a la Comunidad &#8594;
-&iquest;No se abre o no encuentras el acceso?
-Revisa primero las carpetas de spam y promociones. Si aun as&iacute; no aparece,
-escr&iacute;benos y te damos el acceso al instante.
-Escribir por WhatsApp
-Material educativo y de predimensionamiento. No sustituye el
-criterio ni la responsabilidad del profesional que firma. Toda verificaci&oacute;n debe realizarse con la
-norma vigente aplicable al proyecto. No es una certificaci&oacute;n ni un diploma.
 Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
 designmodelingacademy.com
 {{unsubscribe_url}}
@@ -13190,344 +13560,6 @@ Entrar gratis a la Comunidad &#8594;
 &iquest;No se abre o no encuentras el archivo?
 Revisa primero las carpetas de spam y promociones. Si aun as&iacute; no aparece,
 escr&iacute;benos y te lo reenviamos al instante.
-Escribir por WhatsApp
-Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
-designmodelingacademy.com
-{{unsubscribe_url}}
-```
-
-### 🟢Descarga Guía Revit + IA Gratis_01
-
-- **id:** `6aa30452083b31666d018660`
-- **tipo:** html
-- **actualizada:** 2026-09-10T20:10:48.436Z
-- **Cuerpo:**
-
-```
-Te dejo el enlace otra vez, por si cerraste la pagina antes de abrirla.
-Registro confirmado &middot; 100% gratis
-Tu gu&iacute;a de Revit + IA est&aacute; lista
-Hola {{contact.first_name}} ,
-Gracias por registrarte. Ya tienes acceso a la gu&iacute;a Revit + ChatGPT: resuelve errores con IA : qu&eacute; pedirle a la IA cuando Revit tira un error, c&oacute;mo formular la instrucci&oacute;n y c&oacute;mo verificar la respuesta antes de tocar el modelo.
-Te dejo el enlace otra vez, por si cerraste la p&aacute;gina antes de abrirla.
-Abrir Revit + ChatGPT: resuelve errores con IA &#8594;
-Se lee en pantalla &middot; sin descargas
-Revit + ChatGPT: resuelve errores con IA &middot; en la comunidad
-Se abre en tu comunidad DMA
-Tres pasos para aprovecharla
-La mayor&iacute;a la guarda y nunca la abre. Estos tres pasos son la diferencia.
-01
-&Aacute;brela hoy
-Son diez errores concretos, no un tratado. Rev&iacute;salos de corrido y qu&eacute;date con los dos que te pasan m&aacute;s seguido.
-02
-Copia el prompt tal cual
-Cada error trae la instrucci&oacute;n exacta para la IA. Cambia solo el dato de tu proyecto.
-03
-Verifica antes de aplicar
-La IA propone la causa; t&uacute; confirmas en el modelo. Ese paso no se salta.
-Tambi&eacute;n es gratis
-&Uacute;nete a la Comunidad Design Premium
-Masterclasses en vivo, plantillas descargables y networking con ingenieros y arquitectos
-de toda Latinoam&eacute;rica. Sin costo y sin tarjeta.
-Entrar gratis a la Comunidad &#8594;
-&iquest;No se abre o no encuentras el archivo?
-Revisa primero las carpetas de spam y promociones. Si aun as&iacute; no aparece, escr&iacute;benos y te lo reenviamos al instante.
-Escribir por WhatsApp
-Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
-designmodelingacademy.com
-{{unsubscribe_url}}
-```
-
-### 🟢Descarga Guía Revit + IA Gratis_02
-
-- **id:** `6aa307fa8fc016e650024764`
-- **tipo:** html
-- **actualizada:** 2026-09-10T20:10:57.602Z
-- **Cuerpo:**
-
-```
-El 06 no rompe nada. Por eso sobrevive semanas.
-Uso concreto
-El error que se descubre al presupuestar
-Hola {{contact.first_name}} ,
-De los errores de la gu&iacute;a, hay uno que casi nadie ve a tiempo: el 06, los elementos duplicados .
-No rompe nada. El modelo abre, las vistas se generan, los planos salen. Por eso sobrevive semanas sin que nadie lo note.
-D&oacute;nde aparece
-Al presupuestar. La tabla de cantidades cuenta dos veces el mismo elemento y el metrado sale inflado. Para entonces el modelo ya se comparti&oacute; con las otras especialidades, y corregirlo obliga a revisar todo lo que se colg&oacute; de &eacute;l.
-En la gu&iacute;a est&aacute; el prompt exacto para que la IA te liste los duplicados por categor&iacute;a antes de que lleguen al presupuesto, y c&oacute;mo verificar el resultado en Revit.
-Ver el error 06 en la gu&iacute;a Revit + ChatGPT &#8594;
-Se abre en pantalla &middot; sin descargas
-Un abrazo,
-Equipo Design Modeling Academy
-&iquest;Tienes alguna duda?
-Resp&oacute;ndeme este correo o escr&iacute;benos por WhatsApp. Te contestamos el mismo d&iacute;a.
-Escribir por WhatsApp
-Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
-designmodelingacademy.com
-{{unsubscribe_url}}
-```
-
-### 🟢Descarga Guía Revit + IA Gratis_03
-
-- **id:** `6aa308d4a813792f40942363`
-- **tipo:** html
-- **actualizada:** 2026-09-10T20:11:06.614Z
-- **Cuerpo:**
-
-```
-La guia resuelve el error. El flujo evita que exista.
-El siguiente paso
-De resolver errores a que no aparezcan
-Hola {{contact.first_name}} ,
-La gu&iacute;a resuelve errores puntuales. Lo que no resuelve es el paso siguiente: dejar de reaccionar a los errores y construir el flujo para que no aparezcan .
-Eso es lo que trabajamos en el bloque de BIM + Inteligencia Artificial del M&aacute;ster: automatizaci&oacute;n con Dynamo, programaci&oacute;n en Python e IA aplicada a procesos BIM, con criterio t&eacute;cnico y no como truco.
-Qu&eacute; cambia
-Pasas de pedirle a la IA que te explique un error, a dise&ntilde;ar rutinas que revisan el modelo solas antes de que el error llegue a un plano.
-&iquest;Te sirve para tu caso?
-Son 30 minutos con un asesor acad&eacute;mico. Te ubicamos y te decimos por d&oacute;nde empezar.
-Agenda una cita &#8594;
-30 minutos &middot; sin compromiso
-Hablar por WhatsApp
-Un abrazo,
-Equipo Design Modeling Academy
-&iquest;Tienes alguna duda?
-Resp&oacute;ndeme este correo o escr&iacute;benos por WhatsApp. Te contestamos el mismo d&iacute;a.
-Escribir por WhatsApp
-Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
-designmodelingacademy.com
-{{unsubscribe_url}}
-```
-
-### 🟢Descarga Memoria de Cálculo Gratis_01
-
-- **id:** `6aa309166f9d413fbe682c10`
-- **tipo:** html
-- **actualizada:** 2026-09-10T20:11:18.341Z
-- **Cuerpo:**
-
-```
-La guia, la plantilla en Word y la hoja de Excel. Te dejo los enlaces otra vez.
-Registro confirmado &middot; 100% gratis
-Tus tres archivos est&aacute;n listos
-Hola {{contact.first_name}} ,
-Gracias por registrarte. Ya tienes acceso a los tres archivos de memoria de c&aacute;lculo : la gu&iacute;a que explica qu&eacute; debe llevar cada apartado, la plantilla en Word con la estructura armada y la hoja de Excel con los c&aacute;lculos.
-Te dejo los enlaces otra vez, por si cerraste la p&aacute;gina antes de abrirlos.
-Abrir la gu&iacute;a de memoria de c&aacute;lculo &#8594;
-Se lee en pantalla &middot; sin descargas
-Descargar la plantilla de memoria en Word
-Descargar la hoja de c&aacute;lculo en Excel
-Memoria de c&aacute;lculo: gu&iacute;a + plantillas &middot; en la comunidad
-Se abre en tu comunidad DMA
-Tres pasos para aprovecharlos
-La mayor&iacute;a descarga los tres y no abre ninguno. Estos tres pasos son la diferencia.
-01
-Lee la gu&iacute;a primero
-La plantilla sin la gu&iacute;a se llena por inercia. Los diez minutos de lectura son los que evitan una memoria vac&iacute;a.
-02
-Trabaja sobre la plantilla
-Ya trae los apartados en orden y los campos de justificaci&oacute;n separados, para que no queden en blanco sin que lo notes.
-03
-Cita la hoja de Excel
-Los c&aacute;lculos van en el Excel; en la memoria citas el resultado y de d&oacute;nde sale. As&iacute; se sostiene ante un revisor.
-Tambi&eacute;n es gratis
-&Uacute;nete a la Comunidad Design Premium
-Masterclasses en vivo, plantillas descargables y networking con ingenieros y arquitectos
-de toda Latinoam&eacute;rica. Sin costo y sin tarjeta.
-Entrar gratis a la Comunidad &#8594;
-&iquest;No se abre o no encuentras el archivo?
-Revisa primero las carpetas de spam y promociones. Si aun as&iacute; no aparece, escr&iacute;benos y te lo reenviamos al instante.
-Escribir por WhatsApp
-Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
-designmodelingacademy.com
-{{unsubscribe_url}}
-```
-
-### 🟢Descarga Memoria de Cálculo Gratis_02
-
-- **id:** `6aa30962caaf4d52d51c8dd0`
-- **tipo:** html
-- **actualizada:** 2026-09-10T20:11:26.931Z
-- **Cuerpo:**
-
-```
-Hipotesis listadas, no justificadas. El error 3.
-Uso concreto
-Lo que delata una memoria reciclada
-Hola {{contact.first_name}} ,
-De los errores que revisamos en la gu&iacute;a, el 3 es el que m&aacute;s se repite : listar las hip&oacute;tesis en vez de justificarlas.
-Una memoria dice &laquo;se consider&oacute; un suelo con q_adm de 1.5 kg/cm&sup2;&raquo; y pasa al siguiente punto. Nunca dice de d&oacute;nde sali&oacute; ese valor, qu&eacute; estudio lo respalda ni por qu&eacute; aplica a este proyecto.
-Por qu&eacute; importa
-Es lo primero que delata una memoria reciclada de otro proyecto. Un revisor con oficio no discute el n&uacute;mero: pregunta de d&oacute;nde viene. Si no hay respuesta en el documento, el resto del c&aacute;lculo queda bajo sospecha aunque est&eacute; bien hecho.
-La plantilla de Word ya trae el apartado de hip&oacute;tesis con los campos de justificaci&oacute;n separados, para que no se pueda dejar en blanco sin notarlo.
-Ver el error 3 en la gu&iacute;a de memoria de c&aacute;lculo &#8594;
-Se lee en pantalla &middot; sin descargas
-Un abrazo,
-Equipo Design Modeling Academy
-&iquest;Tienes alguna duda?
-Resp&oacute;ndeme este correo o escr&iacute;benos por WhatsApp. Te contestamos el mismo d&iacute;a.
-Escribir por WhatsApp
-Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
-designmodelingacademy.com
-{{unsubscribe_url}}
-```
-
-### 🟢Descarga Memoria de Cálculo Gratis_03a
-
-- **id:** `6aa3097b724763774fadbbf5`
-- **tipo:** html
-- **actualizada:** 2026-09-10T20:11:35.048Z
-- **Cuerpo:**
-
-```
-La plantilla te ahorra tiempo. El respaldo tecnico se aprende.
-Para quien ya entrega
-El c&aacute;lculo que hay detr&aacute;s de la memoria
-Hola {{contact.first_name}} ,
-Si ya entregas memorias, la plantilla te ahorra tiempo. Lo que no te da es el respaldo del c&aacute;lculo que hay detr&aacute;s.
-La Especializaci&oacute;n en Dise&ntilde;o Estructural BIM en Acero cubre justo eso: modelas en Revit, analizas en Robot Structural, detallas conexiones en Advance Steel y documentas el proyecto completo, con la normativa que despu&eacute;s citas en la memoria.
-Lo que incluye
-4 cursos, 120 horas acad&eacute;micas, 4 certificaciones con aval Autodesk y el certificado internacional de Modeling-DG. Con tutor asignado durante todo el programa.
-Con tutor incluido
-USD 225
-4 cursos &middot; 120 horas acad&eacute;micas &middot; cupos limitados por cohorte
-Inscribirme &#8594;
-Pago &uacute;nico &middot; acceso inmediato
-Ver el programa completo
-Un abrazo,
-Equipo Design Modeling Academy
-&iquest;Tienes alguna duda?
-Resp&oacute;ndeme este correo o escr&iacute;benos por WhatsApp. Te contestamos el mismo d&iacute;a.
-Escribir por WhatsApp
-Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
-designmodelingacademy.com
-{{unsubscribe_url}}
-```
-
-### 🟢Descarga Memoria de Cálculo Gratis_03b
-
-- **id:** `6aa30994ce284a48a2a1a88f`
-- **tipo:** html
-- **actualizada:** 2026-09-10T20:11:43.128Z
-- **Cuerpo:**
-
-```
-Una memoria impecable sobre un modelo desordenado no convence a nadie.
-Para quien empieza
-Antes de la memoria, el modelo
-Hola {{contact.first_name}} ,
-Si todav&iacute;a no entregas memorias, la plantilla te sirve para el d&iacute;a que te toque. Pero antes hay algo m&aacute;s b&aacute;sico que resolver: el modelo del que sale el c&aacute;lculo .
-Ah&iacute; es donde entra el m&oacute;dulo de BIM Professional : modelar con est&aacute;ndar, organizar el proyecto desde el inicio y producir documentaci&oacute;n que se sostenga.
-Por qu&eacute; en ese orden
-Una memoria impecable sobre un modelo desordenado no convence a nadie. Y un modelo bien construido hace que la memoria casi se escriba sola, porque los datos ya est&aacute;n donde deben estar.
-&iquest;Por d&oacute;nde empezar en tu caso?
-Son 30 minutos con un asesor acad&eacute;mico. Sin presentaci&oacute;n de ventas.
-Agenda una cita &#8594;
-30 minutos &middot; sin compromiso
-Un abrazo,
-Equipo Design Modeling Academy
-&iquest;Tienes alguna duda?
-Resp&oacute;ndeme este correo o escr&iacute;benos por WhatsApp. Te contestamos el mismo d&iacute;a.
-Escribir por WhatsApp
-Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
-designmodelingacademy.com
-{{unsubscribe_url}}
-```
-
-### 🟢Descarga Pack Dynamo Gratis_01
-
-- **id:** `6aa30ad196b1ac287473a07e`
-- **tipo:** html
-- **actualizada:** 2026-09-10T20:11:52.535Z
-- **Cuerpo:**
-
-```
-La guia de instalacion y los 5 scripts. Te dejo los enlaces otra vez.
-Registro confirmado &middot; 100% gratis
-Tu pack de Dynamo est&aacute; listo
-Hola {{contact.first_name}} ,
-Gracias por registrarte. Ya tienes acceso al pack starter de Dynamo : la gu&iacute;a de instalaci&oacute;n y los cinco scripts listos para correr en tus proyectos.
-Te dejo los enlaces otra vez, por si cerraste la p&aacute;gina antes de abrirlos.
-Abrir la gu&iacute;a de instalaci&oacute;n de Dynamo &#8594;
-Se lee en pantalla &middot; sin descargas
-Descargar los 5 scripts del pack starter (ZIP)
-Pack starter de Dynamo / Python para Revit &middot; en la comunidad
-Se abre en tu comunidad DMA
-Tres pasos para aprovecharlo
-La mayor&iacute;a descarga el ZIP y no lo abre. Estos tres pasos son la diferencia.
-01
-Instala primero
-Los scripts no corren si Dynamo no est&aacute; bien configurado, y ese es el punto donde la mayor&iacute;a abandona.
-02
-Prueba en una copia
-Nunca en el archivo bueno. Dynamo modifica el modelo de verdad y no todo se deshace con Ctrl+Z.
-03
-Empieza por el script 02
-El detector de duplicados. C&oacute;rrelo sobre un proyecto cerrado hace meses: casi siempre aparece algo.
-Tambi&eacute;n es gratis
-&Uacute;nete a la Comunidad Design Premium
-Masterclasses en vivo, plantillas descargables y networking con ingenieros y arquitectos
-de toda Latinoam&eacute;rica. Sin costo y sin tarjeta.
-Entrar gratis a la Comunidad &#8594;
-&iquest;No se abre o no encuentras el archivo?
-Revisa primero las carpetas de spam y promociones. Si aun as&iacute; no aparece, escr&iacute;benos y te lo reenviamos al instante.
-Escribir por WhatsApp
-Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
-designmodelingacademy.com
-{{unsubscribe_url}}
-```
-
-### 🟢Descarga Pack Dynamo Gratis_02
-
-- **id:** `6aa30b029988966370f76b3b`
-- **tipo:** html
-- **actualizada:** 2026-09-10T20:11:59.843Z
-- **Cuerpo:**
-
-```
-Los duplicados no se ven hasta que alguien presupuesta.
-Uso concreto
-Empieza por el script 02
-Hola {{contact.first_name}} ,
-De los cinco scripts del pack, empieza por el 02: el detector de duplicados .
-Recorre el modelo y te lista los elementos que est&aacute;n encima de otro id&eacute;ntico, por categor&iacute;a. Tarda segundos.
-Por qu&eacute; ese primero
-Los duplicados no rompen nada. El modelo abre, las vistas se generan, los planos salen. Se descubren despu&eacute;s, cuando alguien presupuesta y el metrado sale inflado &mdash; y para entonces el modelo ya se comparti&oacute; con las otras especialidades.
-Corre el 02 sobre un proyecto que tengas cerrado hace meses. Es la forma m&aacute;s r&aacute;pida de ver si esto te sirve: casi siempre aparece algo.
-Pack starter de Dynamo / Python para Revit &middot; en la comunidad
-Un abrazo,
-Equipo Design Modeling Academy
-&iquest;Tienes alguna duda?
-Resp&oacute;ndeme este correo o escr&iacute;benos por WhatsApp. Te contestamos el mismo d&iacute;a.
-Escribir por WhatsApp
-Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
-designmodelingacademy.com
-{{unsubscribe_url}}
-```
-
-### 🟢Descarga Pack Dynamo Gratis_03
-
-- **id:** `6aa30b131e4332fec4598c1a`
-- **tipo:** html
-- **actualizada:** 2026-09-10T20:12:07.773Z
-- **Cuerpo:**
-
-```
-Cinco scripts resuelven cinco tareas. Los tuyos resuelven las tuyas.
-El siguiente paso
-De usar scripts a escribir los tuyos
-Hola {{contact.first_name}} ,
-Cinco scripts resuelven cinco tareas. El salto real es escribir los tuyos , para los problemas que solo tienes t&uacute; en tus proyectos.
-Eso es lo que trabajamos en el bloque de BIM + Inteligencia Artificial del M&aacute;ster: automatizaci&oacute;n con Dynamo, programaci&oacute;n en Python e IA aplicada a procesos BIM.
-La diferencia
-Usar scripts de otros te vuelve m&aacute;s r&aacute;pido. Escribir los tuyos te vuelve la persona que el equipo necesita cuando aparece un problema que nadie hab&iacute;a tenido antes.
-&iquest;Te sirve para tu caso?
-Son 30 minutos con un asesor acad&eacute;mico. Te ubicamos y te decimos por d&oacute;nde empezar.
-Agenda una cita &#8594;
-30 minutos &middot; sin compromiso
-Un abrazo,
-Equipo Design Modeling Academy
-&iquest;Tienes alguna duda?
-Resp&oacute;ndeme este correo o escr&iacute;benos por WhatsApp. Te contestamos el mismo d&iacute;a.
 Escribir por WhatsApp
 Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
 designmodelingacademy.com
