@@ -77,7 +77,29 @@ comprobar("se listan las seis palabras de la matriz", len(filas) == 6)
 comprobar("las de OpenReply que la matriz no declara salen aparte",
           extra == ["BIM", "IA"], f"salió {extra}")
 
-print("\n3 · Detalles que ya han mordido")
+print("\n3 · Un cero de clics no siempre significa lo mismo")
+
+camps = orep.leer_los_clics([
+    {"nombre": "Con enlace", "enlaces_rastreados": 1, "enviados": 40, "clics": 17},
+    {"nombre": "Sin enlace", "enlaces_rastreados": 0, "enviados": 30, "clics": 0},
+    {"nombre": "Mide pero no ha enviado", "enlaces_rastreados": 1,
+     "enviados": 0, "clics": 0},
+])
+con, sin, mudo = camps
+
+comprobar("la que mide da CTR", con["mide_clics"] and con["ctr"] == 0.425)
+comprobar("la que NO mide deja el CTR en nulo, no en cero",
+          sin["mide_clics"] is False and sin["ctr"] is None,
+          "un 0.0 se promedia y se grafica; un nulo no")
+comprobar("y lo dice con todas las letras",
+          "SIN ENLACE RASTREADO" in sin["lectura_clics"]
+          and "del medidor" in sin["lectura_clics"])
+comprobar("30 enviados con 0 clics sin enlace NO se lee como fracaso",
+          "no mide clics" in sin["lectura_clics"])
+comprobar("la que mide pero no ha enviado no divide por cero",
+          mudo["ctr"] is None and "no ha enviado" in mudo["lectura_clics"])
+
+print("\n4 · Detalles que ya han mordido")
 comprobar("las palabras se comparan en mayúsculas",
           orep.cotejar_con_la_matriz(
               [{"palabra": "ZAPATA", "enviados": 3}],

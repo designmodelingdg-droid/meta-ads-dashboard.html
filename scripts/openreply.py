@@ -71,7 +71,8 @@ SELECT coalesce(json_agg(f ORDER BY f.enviados DESC), '[]'::json) FROM (
     coalesce(d.pendientes, 0)           AS pendientes,
     d.primer_envio,
     d.ultimo_envio,
-    coalesce(c.clics, 0)                AS clics
+    coalesce(c.clics, 0)                AS clics,
+    coalesce(e.enlaces, 0)              AS enlaces_rastreados
   FROM "Automation" a
   JOIN "InstagramAccount" ig ON ig.id = a."instagramAccountId"
   LEFT JOIN (
@@ -88,6 +89,10 @@ SELECT coalesce(json_agg(f ORDER BY f.enviados DESC), '[]'::json) FROM (
     SELECT "automationId" AS aid, count(*) AS clics
     FROM "LinkClick" GROUP BY "automationId"
   ) c ON c.aid = a.id
+  LEFT JOIN (
+    SELECT "automationId" AS aid, count(*) AS enlaces
+    FROM "TrackedLink" GROUP BY "automationId"
+  ) e ON e.aid = a.id
 ) f;
 """
 
@@ -207,6 +212,43 @@ def limpiar(texto, url):
     return re.sub(r"\w+://[^\s@]+@", "<URL OCULTA>@", texto)
 
 
+def leer_los_clics(campanas):
+    """Distingue «nadie hizo clic» de «esto no mide clics».
+
+    OpenReply solo crea un TrackedLink si la campaña se montó con un enlace
+    rastreado — es opcional. Una campaña que manda el enlace crudo devuelve
+    cero clics para siempre, y ese cero se lee igual que «el recurso no
+    interesa a nadie». No es lo mismo, y confundirlos lleva a retirar un
+    recurso que en realidad estaba funcionando.
+
+    Es el mismo error que la CAPI del 14-sep: un cero que era del medidor, no
+    del mundo.
+    """
+    for c in campanas:
+        enlaces = int(c.get("enlaces_rastreados") or 0)
+        enviados = int(c.get("enviados") or 0)
+        clics = int(c.get("clics") or 0)
+
+        if not enlaces:
+            c["mide_clics"] = False
+            c["ctr"] = None
+            c["lectura_clics"] = (
+                "SIN ENLACE RASTREADO: esta campaña no mide clics. El cero es "
+                "del medidor, no del público. Para medirla hay que montarle un "
+                "enlace rastreado en OpenReply.")
+            continue
+
+        c["mide_clics"] = True
+        c["ctr"] = round(clics / enviados, 4) if enviados else None
+        c["lectura_clics"] = (
+            "Mide clics, pero todavía no ha enviado ningún DM."
+            if not enviados else
+            f"{clics} clics sobre {enviados} DM enviados "
+            f"({clics / enviados:.0%})."
+        )
+    return campanas
+
+
 def cotejar_con_la_matriz(por_palabra, campanas):
     """Compara las seis palabras que la matriz declara contra lo que hay montado.
 
@@ -295,6 +337,9 @@ def main():
         salida[nombre] = datos
         print(f"  {nombre:18} ok ({len(datos)} filas)")
 
+    # Un cero de clics puede ser del medidor. Se marca antes de nada.
+    salida["campanas"] = leer_los_clics(salida.get("campanas") or [])
+
     # El cruce con la matriz, que es para lo que existe todo lo de arriba.
     filas, extra = cotejar_con_la_matriz(
         salida.get("por_palabra") or [], salida.get("campanas") or [])
@@ -316,6 +361,11 @@ def main():
         print(f"  SIN CAMPAÑA EN OPENREPLY: {', '.join(mudas)}")
     if extra:
         print(f"  montadas pero fuera de la matriz: {', '.join(extra)}")
+    sin_medir = [c["nombre"] for c in salida.get("campanas") or []
+                 if not c.get("mide_clics")]
+    if sin_medir:
+        print(f"  SIN ENLACE RASTREADO (su 0 de clics no significa nada): "
+              f"{', '.join(sin_medir)}")
     if salida["fallos"]:
         print(f"  {len(salida['fallos'])} consulta(s) fallaron — quedan anotadas.")
     return 0

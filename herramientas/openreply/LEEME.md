@@ -88,10 +88,28 @@ personas reales y llaves, y `fuentes/` acaba dentro de artefactos y PDF que se
 comparten. `scripts/prueba_openreply.py` lo comprueba en cada corrida y **falla
 la corrida** si una consulta nueva intenta leer una de esas columnas.
 
-Una honestidad del dato: **los clics cuelgan de la campaña y del enlace, no de
-la palabra.** `LinkClick` no guarda cuál palabra disparó, así que en una campaña
-con varias palabras el CTR no se puede repartir entre ellas — y aquí no se
-inventa.
+### Dos honestidades del dato
+
+**1. Los clics cuelgan de la campaña y del enlace, no de la palabra.**
+`LinkClick` no guarda cuál palabra disparó, así que en una campaña con varias
+palabras el CTR no se puede repartir entre ellas — y aquí no se inventa.
+
+**2. Una campaña solo mide clics si se montó con un enlace rastreado.** En
+OpenReply eso es OPCIONAL: si el DM lleva el enlace crudo, no se crea ningún
+`TrackedLink` y esa campaña marcará cero clics para siempre.
+
+Ese cero es el peligroso, porque se lee igual que «el recurso no le interesa a
+nadie». Por eso cada campaña trae `mide_clics` y una `lectura_clics` que lo
+dice con todas las letras, y **el CTR se deja en nulo, no en cero** — un cero se
+promedia y se grafica, un nulo no.
+
+> Es el mismo error que la CAPI el 14-sep: `capi_detectada: False` en los cinco
+> píxeles, incluido uno con 1.009 eventos de servidor. Un cero que era del
+> medidor y se leyó como del mundo.
+
+**Si quieres ver clics de una campaña que hoy no los mide**, hay que editarla en
+OpenReply y ponerle el enlace en el campo de enlace rastreado en vez de pegarlo
+dentro del mensaje.
 
 ## Cómo se probó
 
