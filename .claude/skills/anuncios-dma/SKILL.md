@@ -189,3 +189,13 @@ decir que va sin él en vez de dar un número que parece completo.
 - **Analizar a ojo en vez de con el método.** Ordenar por coste por lead
   encuentra los ganadores, pero no encuentra la falta de diversidad de
   creativo, que es lo que más está costando ahora mismo.
+- **Confundir repetido con canibalizado.** El 14-sep conté nueve copias del
+  anuncio de acero y dije que se estorbaban. Estaban las nueve en la MISMA
+  campaña, en tres geografías: geo-split, que es como debe ser. Lo corrigió
+  Patricio y tenía razón. El dato que faltaba mirar era la campaña, no el
+  anuncio — y al mirarlo apareció el problema de verdad: $457 en el Máster.
+  **Agrupa por campaña antes de acusar a nadie de clonarse** (§2.1 bis).
+- **Dar por hecho lo que solo se ve entrando al producto.** El estado del Tutor
+  de IA dentro de los cursos NO se puede comprobar desde aquí: viven detrás del
+  login de GoHighLevel. Si 18 anuncios prometen algo, se dice «no puedo
+  verificarlo, esto es lo que hay que abrir» en vez de suponer que está.
