@@ -69,9 +69,43 @@ print(len(activos), 'anuncios ·', len(firmas), 'textos distintos')
 ```
 
 Medido el 14-sep-2026: **65 activos, 15 textos distintos** — cada copy repetido
-en 4,3 anuncios. Nueve clones del anuncio de acero compitiendo entre ellos.
+en 4,3 anuncios. (El 15-sep, con la cuenta relanzada: 102 activos, 23 textos,
+4,4 por texto. El ratio no se movio.)
 
 Esto **no se ve** ordenando por coste por lead. Hay que preguntarlo aparte.
+
+### 2.1 bis · Repetido NO es lo mismo que canibalizado
+
+**Este es el error que cometi el 14-sep y que corrigio Patricio.** Conte textos
+repetidos, vi nueve copias del anuncio de acero y dije que se estorbaban. Era
+falso: hay que mirar en cuantas CAMPANAS vive cada texto, no en cuantos
+anuncios.
+
+| | Lo que es | Compite consigo mismo |
+|---|---|---|
+| Mismo texto en varios conjuntos de **una** campana | geo-split (`EC`, `MX`, `Resto`) | **No.** Es deliberado y necesario |
+| Mismo texto en **dos campanas** distintas | canibalismo | **Si.** Misma subasta, dos pujas |
+
+La comprobacion, antes de acusar a nadie de clonarse:
+
+```python
+# por cada texto, cuantas campanas DISTINTAS lo llevan
+for firma, filas in por_texto.items():
+    camps = {f['campana'] for f in filas}
+    if len(camps) > 1:
+        print(len(filas), 'anuncios en', len(camps), 'campanas:', camps)
+```
+
+El 14-sep eso devolvio ACERO limpio (31 anuncios, **1 campana**) y el Master
+sucio: seis textos en `[18MAYO] MASTER - ESCALADO` y `[27AGO] MASTER - TESTEO`
+a la vez, **$457,24 = el 34 % del gasto de la ventana**.
+
+Y la prueba de que duele, que es lo que hay que buscar: **el mismo texto sale
+dos y tres veces mas caro en una campana que en la otra.** «Esta es una de las
+preguntas» a $1,01 en ESCALADO contra $0,38 en TESTEO. «Quieres dominar» a
+$1,49 contra $0,50. Mismos dias, mismo publico: eso es la subasta contra si
+misma. Si el coste por lead del texto duplicado fuera parecido en las dos, el
+solapamiento estaria de adorno; cuando se separa asi, esta cobrando.
 
 ### 2.2 · Contradicciones entre el copy y la realidad
 
