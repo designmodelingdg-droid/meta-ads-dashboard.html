@@ -108,9 +108,22 @@ son de esos mismos ejes.
    reconoce. Salen de las clases de Gabriel, del tutor de IA y de los
    comentarios de las piezas que ya funcionaron.
 
-5. **En pauta: matar los clones.** 65 anuncios activos con 15 textos distintos.
-   Andromeda recorta la entrega a los casi idénticos, así que las nueve copias
-   del anuncio de acero se estorban entre ellas.
+5. **En pauta: separar los textos duplicados ENTRE CAMPAÑAS.** 65 anuncios
+   activos con 15 textos distintos, y Andromeda recorta la entrega a los casi
+   idénticos.
+
+   > **Corregido el 15-sep, y la corrección es de Patricio.** Este punto decía
+   > que «las nueve copias del anuncio de acero se estorban entre ellas». Es
+   > falso: ACERO son 31 anuncios en **una sola campaña**, repartidos en `EC`,
+   > `MX` y `Resto`. Eso es geo-split, es deliberado y no compite consigo mismo.
+   >
+   > El canibalismo real está en el **Máster**: seis textos corriendo en dos
+   > campañas a la vez (`[18MAYO] ESCALADO` y `[27AGO] TESTEO`), **$457,24 —
+   > el 34 % del gasto de la ventana**. Y el mismo texto sale a $1,01 en una y
+   > a $0,38 en la otra. Detalle en `COPYS-CORREGIDOS-ACERO.md`.
+
+   Lo que hay que contar no es cuántos anuncios repiten un texto, sino **en
+   cuántas campañas vive ese texto**. Un texto por ángulo, en una campaña.
 
 ---
 
