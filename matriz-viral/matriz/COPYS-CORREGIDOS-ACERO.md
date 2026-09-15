@@ -106,18 +106,69 @@ que hay 18 anuncios prometiendo algo que el comprador no va a encontrar. Eso es
 el incidente de julio otra vez, pero cobrado.
 
 **Si el tutor no está montado:** quitar «ahora con Tutor de IA» de las familias
-3, 4 y 5, y dejar la 1 en $199 hasta que lo esté. Es peor prometerlo que
-esperar.
+3, 4 y 5. **El precio se queda en $225.** Es peor prometer el tutor que esperar,
+pero bajar el anuncio a $199 ya no es una opción.
+
+> **CORREGIDO 15-sep, y la corrección es de Patricio.** Este párrafo decía
+> «dejar la 1 en $199 hasta que lo esté». Estaba mal: el checkout ya cobra
+> $225 —lo comprobó abriendo el enlace—, así que volver el anuncio a $199
+> recrearía exactamente el desajuste que se acababa de arreglar, con el lead
+> viendo un precio y pagando otro. El precio del anuncio lo manda el checkout,
+> no el estado del tutor. Lo que se quita es la promesa, no la cifra.
 
 ---
 
 ## Lo que NO se corrige aquí, y cuesta más
 
-**65 anuncios activos con 15 textos distintos** — cada copy repetido en 4,3
-anuncios. Desde octubre de 2025 el motor Andromeda de Meta agrupa creativos
-casi idénticos y **les recorta la entrega** cuando la similitud pasa del 60 %.
+**CORREGIDO 15-sep.** Este apartado decía que las nueve copias del anuncio de
+acero se estorbaban entre ellas. **Era falso, y lo corrigió Patricio.**
+Comprobado contra los datos:
 
-Las nueve copias de la familia 1 no compiten entre ellas: **se estorban**. El
-anuncio a $0,27 podría entregar más sin ocho clones detrás. Eso no se arregla
-reescribiendo texto — se arregla apagando duplicados y dejando un creativo por
-ángulo.
+| | Anuncios activos | Campañas | Conjuntos |
+|---|---|---|---|
+| **ACERO** | 31 | **1 sola** | `EC · Acero FORM`, `MX · Acero FORM`, `Resto` |
+
+Los repetidos de ACERO son **el mismo texto en tres geografías dentro de la
+misma campaña**. Eso es geo-split: es deliberado, es necesario, y no compite
+consigo mismo.
+
+### El canibalismo real está en el Máster
+
+Seis textos corriendo **en dos campañas a la vez** — `[18MAYO] MASTER -
+ESCALADO - GANADORES` y `[27AGO] MASTER - FORM (geo-split) - TESTEO`:
+
+| Texto | Anuncios | ESCALADO | TESTEO |
+|---|---|---|---|
+| «El Máster Internacional BIM Management…» | 5 | $102,47 · $0,65 | $73,22 · $0,68 |
+| «¿Sabías que los mejores sueldos…» | 3 | $122,10 · $0,84 | $3,75 · $0,47 |
+| «Esta es una de las preguntas que más nos dejan…» | 10 | $64,60 · **$1,01** | $28,46 · **$0,38** |
+| «¿Quieres dominar la construcción con BIM y IA?» | 8 | $5,96 · **$1,49** | $13,07 · **$0,50** |
+| «El mercado ya no busca modeladores…» | 3 | $8,56 · $0,54 | $8,31 · $1,66 |
+
+**$457,24 en textos duplicados entre campañas** — el 34 % del gasto de la
+ventana.
+
+Y el dato que lo cierra: **el mismo texto cuesta dos y tres veces más en una
+campaña que en la otra.** «Esta es una de las preguntas» sale a $1,01 en
+ESCALADO y a $0,38 en TESTEO. «¿Quieres dominar» sale a $1,49 y a $0,50. Mismo
+texto, mismos días, mismo público objetivo: eso es la subasta compitiendo
+contra sí misma.
+
+Hay además una tercera campaña del 14-sep que no aparece aquí porque la
+ventana de esta descarga termina el 13.
+
+**Qué hacer:** dejar el texto en UNA campaña por ángulo. No hace falta tocar
+ACERO.
+
+---
+
+## Cómo quedó (según Patricio, 15-sep)
+
+- **Los cinco cierres: aplicados.** 17 anuncios corregidos, sin tocar las nueve
+  primeras líneas del ganador.
+- **El precio: ya estaba resuelto.** Los nueve anuncios a $199 se pausaron el
+  domingo por la tarde; esta descarga los alcanzó todavía activos. Hoy hay 27
+  anuncios en aire y los 27 dicen $225.
+- **El checkout cobra $225.** Comprobado abriendo el enlace.
+- **Desde el relanzamiento del domingo: 27 leads a $1,13**, el mejor anuncio a
+  $0,98. Lejos todavía del $0,27 histórico, pero la entrega volvió.
