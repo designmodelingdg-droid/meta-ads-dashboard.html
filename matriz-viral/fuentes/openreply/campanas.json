@@ -3,6 +3,7 @@
  "ventana_series_dias": 30,
  "fuente": "OpenReply — base propia (Postgres), solo lectura",
  "nota_privacidad": "Solo agregados. No se lee `commenterName`, ni `commentText`, ni `accessToken`. Ningún dato personal sale de la base.",
+ "nota_alcance": "Esto solo ve OpenReply. Los disparadores de palabra de la matriz se montan en GoHighLevel, que es otro sistema y no se consulta aquí. Que una palabra no aparezca NO prueba que el comentario se quede sin respuesta.",
  "nota_cuenta": "No se dice a qué cuenta de Instagram pertenece cada campaña: `Automation.instagramAccountId` no está concedida al rol de solo lectura. Con una sola cuenta no hace falta; si algún día hay varias, hay que conceder esa columna.",
  "nota_dms_por_palabra": "Los DM SÍ se cuentan por palabra: `DmLog.matchedKeyword` guarda cuál disparó cada envío. Ver el bloque `por_palabra`.",
  "nota_clics": "Los clics cuelgan de la CAMPAÑA y del ENLACE, no de la palabra: `LinkClick` no guarda cuál palabra disparó. En una campaña con varias palabras no se pueden repartir entre ellas, y aquí no se inventa. Además son APERTURAS, no personas: la misma persona cuenta varias veces y los bots de vista previa también, así que los clics pueden superar a los envíos. Cuando eso pasa, `ctr` queda en nulo y se usa `clics_por_dm`.",
@@ -329,7 +330,7 @@
    "campana_activa": false,
    "campanas": [],
    "dms_enviados": 0,
-   "lectura": "No existe ninguna campaña con esta palabra. Si hay un CTA pidiéndola, el comentario no recibe nada."
+   "lectura": "No existe en OpenReply. OJO: los disparadores de la matriz se montan en GoHighLevel, que este conector NO ve — así que esto no prueba que el comentario se quede sin respuesta. Hay que comprobarlo en GHL."
   },
   {
    "palabra": "ACERO",
@@ -338,7 +339,7 @@
    "campana_activa": false,
    "campanas": [],
    "dms_enviados": 0,
-   "lectura": "No existe ninguna campaña con esta palabra. Si hay un CTA pidiéndola, el comentario no recibe nada."
+   "lectura": "No existe en OpenReply. OJO: los disparadores de la matriz se montan en GoHighLevel, que este conector NO ve — así que esto no prueba que el comentario se quede sin respuesta. Hay que comprobarlo en GHL."
   },
   {
    "palabra": "NIVEL",
@@ -347,7 +348,7 @@
    "campana_activa": false,
    "campanas": [],
    "dms_enviados": 0,
-   "lectura": "No existe ninguna campaña con esta palabra. Si hay un CTA pidiéndola, el comentario no recibe nada."
+   "lectura": "No existe en OpenReply. OJO: los disparadores de la matriz se montan en GoHighLevel, que este conector NO ve — así que esto no prueba que el comentario se quede sin respuesta. Hay que comprobarlo en GHL."
   },
   {
    "palabra": "CHATGPT",
@@ -356,7 +357,7 @@
    "campana_activa": false,
    "campanas": [],
    "dms_enviados": 0,
-   "lectura": "No existe ninguna campaña con esta palabra. Si hay un CTA pidiéndola, el comentario no recibe nada."
+   "lectura": "No existe en OpenReply. OJO: los disparadores de la matriz se montan en GoHighLevel, que este conector NO ve — así que esto no prueba que el comentario se quede sin respuesta. Hay que comprobarlo en GHL."
   },
   {
    "palabra": "MEMORIA",
@@ -365,7 +366,7 @@
    "campana_activa": false,
    "campanas": [],
    "dms_enviados": 0,
-   "lectura": "No existe ninguna campaña con esta palabra. Si hay un CTA pidiéndola, el comentario no recibe nada."
+   "lectura": "No existe en OpenReply. OJO: los disparadores de la matriz se montan en GoHighLevel, que este conector NO ve — así que esto no prueba que el comentario se quede sin respuesta. Hay que comprobarlo en GHL."
   },
   {
    "palabra": "DYNAMO",
@@ -374,7 +375,7 @@
    "campana_activa": false,
    "campanas": [],
    "dms_enviados": 0,
-   "lectura": "No existe ninguna campaña con esta palabra. Si hay un CTA pidiéndola, el comentario no recibe nada."
+   "lectura": "No existe en OpenReply. OJO: los disparadores de la matriz se montan en GoHighLevel, que este conector NO ve — así que esto no prueba que el comentario se quede sin respuesta. Hay que comprobarlo en GHL."
   }
  ],
  "otras_palabras_montadas": [
