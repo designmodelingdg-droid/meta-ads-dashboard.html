@@ -1,8 +1,8 @@
 {
- "generado": "2026-09-14",
- "revisadas": 96,
+ "generado": "2026-09-16",
+ "revisadas": 107,
  "caidas": 4,
- "criticas": 0,
+ "criticas": 1,
  "resultados": {
   "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/eficiencia-acero/": {
    "codigo": 200,
@@ -152,6 +152,7 @@
    "error": null,
    "aparece_en": [
     "guia-revit-ia/GUIA-MONTAJE.md",
+    "guia-revit-ia/ghl-gracias.html",
     "guia-revit-ia/gracias-agenda.html"
    ],
    "critico": null
@@ -160,7 +161,8 @@
    "codigo": 200,
    "error": null,
    "aparece_en": [
-    "guia-revit-ia/GUIA-MONTAJE.md"
+    "guia-revit-ia/GUIA-MONTAJE.md",
+    "guia-revit-ia/ghl-landing.html"
    ],
    "critico": null
   },
@@ -169,6 +171,7 @@
    "error": null,
    "aparece_en": [
     "memoria-calculo/GUIA-MONTAJE.md",
+    "memoria-calculo/ghl-gracias.html",
     "memoria-calculo/gracias-agenda.html"
    ],
    "critico": null
@@ -177,7 +180,8 @@
    "codigo": 200,
    "error": null,
    "aparece_en": [
-    "memoria-calculo/GUIA-MONTAJE.md"
+    "memoria-calculo/GUIA-MONTAJE.md",
+    "memoria-calculo/ghl-landing.html"
    ],
    "critico": null
   },
@@ -247,8 +251,8 @@
    "critico": null
   },
   "https://designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero": {
-   "codigo": 200,
-   "error": null,
+   "codigo": null,
+   "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'designmodelingacademy.com'. (_ssl.c:1000)>",
    "aparece_en": [
     "(destino del bot)",
     "eficiencia-acero/guia.html",
@@ -288,6 +292,7 @@
    "error": null,
    "aparece_en": [
     "pack-dynamo/GUIA-MONTAJE.md",
+    "pack-dynamo/ghl-gracias.html",
     "pack-dynamo/gracias-agenda.html"
    ],
    "critico": null
@@ -296,7 +301,8 @@
    "codigo": 200,
    "error": null,
    "aparece_en": [
-    "pack-dynamo/GUIA-MONTAJE.md"
+    "pack-dynamo/GUIA-MONTAJE.md",
+    "pack-dynamo/ghl-landing.html"
    ],
    "critico": null
   },
@@ -310,8 +316,8 @@
    "critico": null
   },
   "https://designmodelingacademy.com/workshop-dynamo": {
-   "codigo": 404,
-   "error": null,
+   "codigo": null,
+   "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'designmodelingacademy.com'. (_ssl.c:1000)>",
    "aparece_en": [
     ".claude/skills/landing-evento/SKILL.md"
    ],
@@ -510,6 +516,54 @@
    "critico": null
   },
   "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/historias/cuatro-puertas.jpg": {
+   "codigo": 200,
+   "error": null,
+   "aparece_en": [
+    "recursos/img/historias/LISTA-IMAGENES.md"
+   ],
+   "critico": null
+  },
+  "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/historias/manos-plano-A.jpg": {
+   "codigo": 200,
+   "error": null,
+   "aparece_en": [
+    "recursos/img/historias/LISTA-IMAGENES.md"
+   ],
+   "critico": null
+  },
+  "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/historias/manos-plano-B.jpg": {
+   "codigo": 200,
+   "error": null,
+   "aparece_en": [
+    "recursos/img/historias/LISTA-IMAGENES.md"
+   ],
+   "critico": null
+  },
+  "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/historias/dos-miradas.jpg": {
+   "codigo": 200,
+   "error": null,
+   "aparece_en": [
+    "recursos/img/historias/LISTA-IMAGENES.md"
+   ],
+   "critico": null
+  },
+  "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/historias/nudo-isometrico.jpg": {
+   "codigo": 200,
+   "error": null,
+   "aparece_en": [
+    "recursos/img/historias/LISTA-IMAGENES.md"
+   ],
+   "critico": null
+  },
+  "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/historias/perfil-acero-A.jpg": {
+   "codigo": 200,
+   "error": null,
+   "aparece_en": [
+    "recursos/img/historias/LISTA-IMAGENES.md"
+   ],
+   "critico": null
+  },
+  "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/recursos/img/historias/perfil-acero-B.jpg": {
    "codigo": 200,
    "error": null,
    "aparece_en": [
@@ -767,6 +821,18 @@
    ],
    "critico": "enlace roto en la pagina publicada: hub de recursos"
   },
+  "https://funnel.dgdesignmodeling.com/lider-bim-internacional": {
+   "codigo": 200,
+   "error": null,
+   "aparece_en": [
+    "matriz-viral/fuentes/ads-copys/anuncios.json",
+    "test-nivel-bim/ghl-gracias.html",
+    "test-nivel-bim/ghl-landing.html",
+    "test-nivel-bim/gracias-agenda.html",
+    "test-nivel-bim/index.html"
+   ],
+   "critico": null
+  },
   "https://funnel.dgdesignmodeling.com/acceso-gratis-calculadora-zapatas-gracias": {
    "codigo": 200,
    "error": null,
@@ -815,26 +881,67 @@
    ],
    "critico": null
   },
-  "https://funnel.dgdesignmodeling.com/lider-bim-internacional": {
+  "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/guia-revit-ia/guia.html": {
    "codigo": 200,
    "error": null,
    "aparece_en": [
-    "test-nivel-bim/ghl-gracias.html",
-    "test-nivel-bim/ghl-landing.html",
-    "test-nivel-bim/gracias-agenda.html",
-    "test-nivel-bim/index.html"
+    "guia-revit-ia/ghl-leccion.html"
    ],
    "critico": null
   },
-  "https://funnel.dgdesignmodeling.com/test-nivel-bim/gracias": {
-   "codigo": 404,
+  "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/memoria-calculo/guia.html": {
+   "codigo": 200,
    "error": null,
    "aparece_en": [
-    "guia-revit-ia/ghl-landing.html",
-    "memoria-calculo/ghl-landing.html",
-    "pack-dynamo/ghl-landing.html"
+    "memoria-calculo/ghl-leccion.html"
    ],
    "critico": null
+  },
+  "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/memoria-calculo/Plantilla-Memoria-de-Calculo-DMA.docx": {
+   "codigo": 200,
+   "error": null,
+   "aparece_en": [
+    "memoria-calculo/ghl-gracias.html"
+   ],
+   "critico": null
+  },
+  "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/memoria-calculo/Resumen-Verificaciones-DMA.xlsx": {
+   "codigo": 200,
+   "error": null,
+   "aparece_en": [
+    "memoria-calculo/ghl-gracias.html"
+   ],
+   "critico": null
+  },
+  "https://funnel.dgdesignmodeling.com/acceso-gratis-guia-revit-chatgpt-form": {
+   "codigo": 200,
+   "error": null,
+   "aparece_en": [
+    "EN VIVO en hub de recursos",
+    "recursos/ghl-recursos.html",
+    "recursos/index.html"
+   ],
+   "critico": "enlace roto en la pagina publicada: hub de recursos"
+  },
+  "https://funnel.dgdesignmodeling.com/acceso-gratis-memoria-calculo-form": {
+   "codigo": 200,
+   "error": null,
+   "aparece_en": [
+    "EN VIVO en hub de recursos",
+    "recursos/ghl-recursos.html",
+    "recursos/index.html"
+   ],
+   "critico": "enlace roto en la pagina publicada: hub de recursos"
+  },
+  "https://funnel.dgdesignmodeling.com/acceso-gratis-script-dynamo-form": {
+   "codigo": 200,
+   "error": null,
+   "aparece_en": [
+    "EN VIVO en hub de recursos",
+    "recursos/ghl-recursos.html",
+    "recursos/index.html"
+   ],
+   "critico": "enlace roto en la pagina publicada: hub de recursos"
   },
   "https://funnel.dgdesignmodeling.com/post/sap2000-etabs-o-robot-cual-elegir-comenta-bim-o-ia": {
    "codigo": 200,
@@ -866,29 +973,21 @@
    ],
    "critico": "enlace roto en la pagina publicada: hub de recursos"
   },
-  "https://funnel.dgdesignmodeling.com/acceso-gratis-guia-revit-chatgpt-form": {
+  "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/pack-dynamo/guia.html": {
    "codigo": 200,
    "error": null,
    "aparece_en": [
-    "EN VIVO en hub de recursos"
+    "pack-dynamo/ghl-leccion.html"
    ],
-   "critico": "enlace roto en la pagina publicada: hub de recursos"
+   "critico": null
   },
-  "https://funnel.dgdesignmodeling.com/acceso-gratis-memoria-calculo-form": {
+  "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/pack-dynamo/Pack-Dynamo-Starter-DMA.zip": {
    "codigo": 200,
    "error": null,
    "aparece_en": [
-    "EN VIVO en hub de recursos"
+    "pack-dynamo/ghl-gracias.html"
    ],
-   "critico": "enlace roto en la pagina publicada: hub de recursos"
-  },
-  "https://funnel.dgdesignmodeling.com/acceso-gratis-script-dynamo-form": {
-   "codigo": 200,
-   "error": null,
-   "aparece_en": [
-    "EN VIVO en hub de recursos"
-   ],
-   "critico": "enlace roto en la pagina publicada: hub de recursos"
+   "critico": null
   }
  }
 }

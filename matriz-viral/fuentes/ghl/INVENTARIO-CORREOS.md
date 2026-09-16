@@ -1,8 +1,8 @@
 # Inventario de correos — GoHighLevel
 
-Generado el 2026-09-14.
+Generado el 2026-09-16.
 
-**428 plantillas** en **52 carpetas**. 428 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
+**432 plantillas** en **52 carpetas**. 432 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
 
 > Lo que NO sale por API: que workflow usa que plantilla. El endpoint de automatizaciones devuelve solo metadatos. En esta cuenta las plantillas estan nombradas por su flujo, asi que el cruce se puede hacer leyendo.
 
@@ -11480,6 +11480,259 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
+### ✅ INFO Máster Bloque 1
+
+- **id:** `6aaabc5f66b1d9d00c386d0e`
+- **tipo:** html
+- **actualizada:** 2026-09-16T17:09:23.880Z
+- **Cuerpo:**
+
+```
+3 meses para estructurar la metodologia, no solo usarla. Descarga el temario.
+Bloque 01 &middot; M&aacute;ster BIM Management + IA
+BIM Professional &mdash; Gesti&oacute;n y Transformaci&oacute;n Digital de Proyectos
+Hola {{contact.first_name}} ,
+La mayor&iacute;a de profesionales AEC ya usa BIM. Pocos saben estructurarlo: definir el BEP, ordenar los flujos de informaci&oacute;n y establecer qui&eacute;n entrega qu&eacute; y bajo qu&eacute; est&aacute;ndar.
+El primer bloque del M&aacute;ster cubre exactamente ese salto. En 3 meses pasas de trabajar con BIM a ser quien define c&oacute;mo se trabaja con BIM dentro de un proyecto o una empresa.
+3 m&oacute;dulos &middot; 3 meses &middot; Primer bloque del M&aacute;ster
+ISO 19650 &middot; BEP &middot; LOD &middot; CDE &middot; Auditor&iacute;a e implementaci&oacute;n
+Descargar el temario &#8594;
+PDF con el plan de estudios bloque por bloque
+Qu&eacute; vas a dominar
+&#9654; Fundamentos BIM, ciclo de vida y rol del BIM Manager
+&#9654; ISO 19650 y est&aacute;ndares internacionales
+&#9654; Desarrollo de BEP y matrices de responsabilidad
+&#9654; Niveles de desarrollo LOD y Entornos Comunes de Datos
+&#9654; Diagn&oacute;stico, auditor&iacute;a y evaluaci&oacute;n de madurez BIM
+COMPRENDE &#8594; ESTRUCTURA &#8594; IMPLEMENTA
+Qu&eacute; incluye tu formaci&oacute;n
+&#9989; Acceso 24/7 a la plataforma interactiva, para ver y repetir las clases a tu ritmo.
+&#9989; Workshops en vivo cada semana y mentor&iacute;as personalizadas 1:1.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material descargable y ejercicios pr&aacute;cticos aplicados a proyectos reales.
+&#9989; DMA Engineering Suite: tu kit de apps de IA, con una herramienta nueva cada mes.
+Sin costo adicional
+Microcredenciales de este bloque
+Una por cada m&oacute;dulo completado, m&aacute;s la credencial que cierra el bloque.
+Estrategia BIM y Transformaci&oacute;n Digital
+Est&aacute;ndares BIM y Gesti&oacute;n de la Informaci&oacute;n
+Implementaci&oacute;n BIM en Empresas y Proyectos
+Y al cerrar el bloque
+Especialista BIM Professional
+Sin costo adicional
+Diplomas y certificaciones
+Lo que acreditas al avanzar por este bloque.
+Autodesk
+Design Modeling
+&#9989; Certificaci&oacute;n oficial de Autodesk al
+completar cada m&oacute;dulo &mdash; somos Centro de Entrenamiento Autorizado.
+&#9989; Microcredencial profesional al completar cada
+bloque del plan de estudios.
+Y si completas el recorrido, accedes a la titulaci&oacute;n universitaria del M&aacute;ster.
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver el m&aacute;ster completo en nuestra web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ INFO Máster Bloque 2
+
+- **id:** `6aaabc814fe3b49a54d6a722`
+- **tipo:** html
+- **actualizada:** 2026-09-16T17:09:07.125Z
+- **Cuerpo:**
+
+```
+3 meses de Revit, Navisworks, IFC y construccion digital. Descarga el temario.
+Bloque 02 &middot; M&aacute;ster BIM Management + IA
+BIM Coordination &mdash; Coordinaci&oacute;n y Control Digital de Proyectos
+Hola {{contact.first_name}} ,
+Una interferencia detectada en el modelo se resuelve en minutos. La misma interferencia detectada en obra se resuelve con tiempo, dinero y desgaste del equipo.
+El segundo bloque te da el m&eacute;todo para que esos conflictos aparezcan cuando todav&iacute;a son baratos : integrar disciplinas, federar modelos, dar seguimiento a las incidencias y conectar el modelo con lo que pasa en el sitio.
+3 m&oacute;dulos &middot; 3 meses &middot; Segundo bloque del M&aacute;ster
+Revit &middot; Navisworks &middot; IFC &middot; IoT &middot; Escaneo 3D &middot; Digital Twins
+Descargar el temario &#8594;
+PDF con el plan de estudios bloque por bloque
+Qu&eacute; vas a dominar
+&#9654; Modelado de Arquitectura, Estructuras y MEP en Revit
+&#9654; Vinculaci&oacute;n, control de versiones y documentaci&oacute;n
+&#9654; Modelos federados y Clash Detection en Navisworks
+&#9654; Interoperabilidad e intercambio mediante IFC
+&#9654; BIM en obra: IoT, realidad aumentada, escaneo 3D y Digital Twins
+INTEGRA &#8594; COORDINA &#8594; CONTROLA
+Qu&eacute; incluye tu formaci&oacute;n
+&#9989; Acceso 24/7 a la plataforma interactiva, para ver y repetir las clases a tu ritmo.
+&#9989; Workshops en vivo cada semana y mentor&iacute;as personalizadas 1:1.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material descargable y ejercicios pr&aacute;cticos aplicados a proyectos reales.
+&#9989; DMA Engineering Suite: tu kit de apps de IA, con una herramienta nueva cada mes.
+Sin costo adicional
+Microcredenciales de este bloque
+Una por cada m&oacute;dulo completado, m&aacute;s la credencial que cierra el bloque.
+Ecosistema Autodesk para Coordinaci&oacute;n BIM
+Coordinaci&oacute;n Multidisciplinaria y Clash Detection
+Construcci&oacute;n Digital y Control de Obra
+Y al cerrar el bloque
+Especialista BIM Coordination
+Sin costo adicional
+Diplomas y certificaciones
+Lo que acreditas al avanzar por este bloque.
+Autodesk
+Design Modeling
+&#9989; Certificaci&oacute;n oficial de Autodesk al
+completar cada m&oacute;dulo &mdash; somos Centro de Entrenamiento Autorizado.
+&#9989; Microcredencial profesional al completar cada
+bloque del plan de estudios.
+Y si completas el recorrido, accedes a la titulaci&oacute;n universitaria del M&aacute;ster.
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver el m&aacute;ster completo en nuestra web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ INFO Máster Bloque 3
+
+- **id:** `6aaabc937919774ef27d3430`
+- **tipo:** html
+- **actualizada:** 2026-09-16T17:08:51.345Z
+- **Cuerpo:**
+
+```
+Planificacion 4D, costos 5D, operacion del activo y direccion de equipos. Descarga el temario.
+Bloque 03 &middot; M&aacute;ster BIM Management + IA
+BIM Management &mdash; Planificaci&oacute;n, Costos y Gesti&oacute;n Integral
+Hola {{contact.first_name}} ,
+Hay un punto en toda carrera BIM donde la pregunta deja de ser &laquo;&iquest;c&oacute;mo modelo esto?&raquo; y pasa a ser &laquo;&iquest;cu&aacute;nto cuesta, cu&aacute;nto demora y qui&eacute;n responde por ello?&raquo;.
+El tercer bloque es el m&aacute;s corto del M&aacute;ster &mdash;2 meses&mdash; y el que m&aacute;s cambia tu posici&oacute;n dentro de un proyecto: es donde el modelo se convierte en cronograma, en presupuesto y en criterio de decisi&oacute;n.
+2 m&oacute;dulos &middot; 2 meses &middot; Tercer bloque del M&aacute;ster
+4D &middot; 5D &middot; 6D &middot; 7D &middot; PMI / IPD &middot; KPIs &middot; Direcci&oacute;n de equipos
+Descargar el temario &#8594;
+PDF con el plan de estudios bloque por bloque
+Qu&eacute; vas a dominar
+&#9654; Planificaci&oacute;n 4D y simulaci&oacute;n de secuencias constructivas
+&#9654; Costos 5D: cantidades, presupuestos y seguimiento financiero
+&#9654; Sostenibilidad 6D y gesti&oacute;n del activo en 7D
+&#9654; Gesti&oacute;n de proyectos con principios PMI e IPD
+&#9654; KPIs, gesti&oacute;n del cambio y decisiones basadas en informaci&oacute;n
+PLANIFICA &#8594; CONTROLA &#8594; DECIDE &#8594; LIDERA
+Qu&eacute; incluye tu formaci&oacute;n
+&#9989; Acceso 24/7 a la plataforma interactiva, para ver y repetir las clases a tu ritmo.
+&#9989; Workshops en vivo cada semana y mentor&iacute;as personalizadas 1:1.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
+&#9989; Material descargable y ejercicios pr&aacute;cticos aplicados a proyectos reales.
+&#9989; DMA Engineering Suite: tu kit de apps de IA, con una herramienta nueva cada mes.
+Sin costo adicional
+Microcredenciales de este bloque
+Una por cada m&oacute;dulo completado, m&aacute;s la credencial que cierra el bloque.
+Gesti&oacute;n BIM 4D-7D: Tiempo, Costos y Ciclo de Vida
+Direcci&oacute;n Estrat&eacute;gica de Proyectos BIM
+Y al cerrar el bloque
+Especialista BIM Management
+Sin costo adicional
+Diplomas y certificaciones
+Lo que acreditas al avanzar por este bloque.
+Autodesk
+Design Modeling
+&#9989; Certificaci&oacute;n oficial de Autodesk al
+completar cada m&oacute;dulo &mdash; somos Centro de Entrenamiento Autorizado.
+&#9989; Microcredencial profesional al completar cada
+bloque del plan de estudios.
+Y si completas el recorrido, accedes a la titulaci&oacute;n universitaria del M&aacute;ster.
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver el m&aacute;ster completo en nuestra web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ INFO Máster Bloque 4
+
+- **id:** `6aaabcd9b0cd6d0085aac58d`
+- **tipo:** html
+- **actualizada:** 2026-09-16T17:08:34.009Z
+- **Cuerpo:**
+
+```
+3 meses de automatizacion e Inteligencia Artificial aplicada a proyectos BIM. Descarga el temario.
+Bloque 04 &middot; M&aacute;ster BIM Management + IA
+BIM + AI &mdash; Automatizaci&oacute;n e Inteligencia Artificial Aplicada
+Hola
+{{contact.first_name}} ,
+Renombrar
+par&aacute;metros. Exportar planillas. Revisar nomenclaturas. Cuadrar cantidades entre el modelo y el
+Excel. Son horas de trabajo profesional dedicadas a tareas que una m&aacute;quina hace mejor.
+El cuarto bloque te
+ense&ntilde;a a devolv&eacute;rselas a la m&aacute;quina :
+automatizaci&oacute;n con Dynamo, programaci&oacute;n en Python, desarrollo con Revit API e IA aplicada
+al an&aacute;lisis y la predicci&oacute;n dentro de tus flujos BIM.
+3 m&oacute;dulos &middot; 3 meses &middot; Cuarto bloque del
+M&aacute;ster
+Dynamo &middot; Python &middot; Revit API &middot; IA aplicada a AEC &middot; SQL &middot; Excel
+Descargar el temario &#8594;
+PDF con el plan de estudios
+bloque por bloque
+Qu&eacute; vas
+a dominar
+&#9654; Programaci&oacute;n visual con Dynamo y automatizaci&oacute;n dentro de Revit
+&#9654; Python aplicado a BIM y desarrollo de scripts
+&#9654; IA aplicada al modelado, el an&aacute;lisis y la gesti&oacute;n de proyectos
+&#9654; Revit API y automatizaci&oacute;n avanzada de procesos
+&#9654;
+Conexi&oacute;n de modelos con bases de datos, SQL y Excel
+AUTOMATIZA &#8594; APLICA IA &#8594; DESARROLLA
+Qu&eacute;
+incluye tu formaci&oacute;n
+&#9989; Acceso 24/7 a la plataforma interactiva, para ver y repetir las clases a tu
+ritmo.
+&#9989; Workshops en vivo cada semana y mentor&iacute;as personalizadas 1:1.
+&#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos
+reales.
+&#9989; Material descargable y ejercicios pr&aacute;cticos aplicados a proyectos reales.
+&#9989;
+DMA Engineering Suite: tu kit de apps de IA, con una herramienta nueva cada mes.
+Sin costo adicional
+Microcredenciales de este bloque
+Una por cada
+m&oacute;dulo completado, m&aacute;s la credencial que cierra el bloque.
+Automatizaci&oacute;n BIM con Dynamo y Python
+Inteligencia
+Artificial Aplicada a Proyectos BIM
+Automatizaci&oacute;n Avanzada y Desarrollo de Soluciones
+Y al cerrar el bloque
+Especialista BIM + IA
+Sin costo adicional
+Diplomas y
+certificaciones
+Lo que acreditas al
+avanzar por este bloque.
+Autodesk
+Design Modeling
+&#9989; Certificaci&oacute;n oficial de Autodesk al
+completar cada m&oacute;dulo &mdash; somos Centro de Entrenamiento Autorizado.
+&#9989; Microcredencial profesional al completar cada
+bloque del plan de estudios.
+Y si completas el recorrido, accedes a la titulaci&oacute;n universitaria del M&aacute;ster.
+&iquest;Tienes dudas antes de inscribirte?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Tambi&eacute;n puedes
+ver el m&aacute;ster completo en nuestra web
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
 ### ✅INFO Diplomado Arquitectura
 
 - **id:** `6a7e0b72a9bd3238fcd3bb01`
@@ -11652,48 +11905,69 @@ designmodelingacademy.com
 
 - **id:** `6a7e0dcd66c34f90bed553aa`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:44:04.558Z
+- **actualizada:** 2026-09-16T17:09:36.753Z
 - **Cuerpo:**
 
 ```
-Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
-Imagenes embebidas en base64. Enlaces ya incrustados. Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
--->
-12 meses, 4 bloques y titulacion universitaria internacional. Descarga el temario completo.
+4 bloques, 12 modulos, proyecto final y titulacion universitaria internacional.
 M&aacute;ster internacional
 BIM Management e Inteligencia Artificial para la Construcci&oacute;n
 Hola {{contact.first_name}} ,
-El programa insignia de la academia: 12 meses organizados en cuatro bloques, donde cada bloque te acredita en un rol distinto &mdash; Modelador BIM Profesional, Coordinador BIM, BIM Manager 4D-5D y Especialista BIM+IA.
-Avanzas del modelado arquitect&oacute;nico y estructural a la coordinaci&oacute;n y el CDE, luego a la planificaci&oacute;n 4D y el control de costos 5D, y cierras con automatizaci&oacute;n en Dynamo , programaci&oacute;n en Python e IA aplicada a BIM , con un proyecto final integrador.
+No se trata de aprender m&aacute;s herramientas. Se trata de cambiar lo que eres capaz de hacer con ellas .
+El programa insignia de la academia: 12 meses organizados en cuatro bloques, donde cada bloque te acredita en una competencia distinta. Empiezas estructurando la metodolog&iacute;a, avanzas a coordinar disciplinas, sigues con la gesti&oacute;n de tiempo y costos, y cierras automatizando procesos con Dynamo, Python e IA. Al final, un proyecto integrador con defensa.
 4 bloques &middot; 12 m&oacute;dulos &middot; 12 meses
 Workshops en vivo semanales &middot; mentor&iacute;as 1:1 &middot; DMA Engineering Suite
-Ver el temario completo &#8594;
+Descargar el temario &#8594;
 PDF con el plan de estudios bloque por bloque
-Qu&eacute; incluye tu m&aacute;ster:
-&#9989; Acceso 24/7 a la plataforma interactiva, para ver y repetir todas las clases a tu ritmo.
-&#9989; Acompa&ntilde;amiento durante 12 meses, con workshops en vivo cada semana y mentor&iacute;as personalizadas 1:1.
+El recorrido
+01
+BIM PROFESSIONAL &middot; 3 meses
+Est&aacute;ndares, BEP, CDE e implementaci&oacute;n BIM.
+&#8594; Comprende, estructura, implementa.
+02
+BIM COORDINATION &middot; 3 meses
+Modelos federados, clash detection, IFC y construcci&oacute;n digital.
+&#8594; Integra, coordina, controla.
+03
+BIM MANAGEMENT &middot; 2 meses
+Planificaci&oacute;n 4D, costos 5D, ciclo de vida y direcci&oacute;n de proyectos.
+&#8594; Planifica, gestiona, lidera.
+04
+BIM + AI &middot; 3 meses
+Dynamo, Python, Revit API e Inteligencia Artificial aplicada.
+&#8594; Automatiza, aplica IA, desarrolla.
+&#10003;
+PROYECTO FINAL + DEFENSA &middot; 1 mes
+Integras todo el recorrido en un proyecto aplicado y lo defiendes.
+ESTRUCTURA &#8594; COORDINA &#8594; GESTIONA &#8594; AUTOMATIZA &#8594; LIDERA
+Qu&eacute; incluye tu formaci&oacute;n
+&#9989; Acceso 24/7 a la plataforma interactiva, para ver y repetir las clases a tu ritmo.
+&#9989; Workshops en vivo cada semana y mentor&iacute;as personalizadas 1:1.
 &#9989; Contenido 100% original, dise&ntilde;ado por expertos y basado en ejemplos reales.
-&#9989; Material complementario 100% descargable y ejercicios pr&aacute;cticos aplicados a ejemplos reales.
-&#9989; DMA Engineering Suite: tu propio kit de apps de IA, con una nueva herramienta liberada cada mes.
+&#9989; Material descargable y ejercicios pr&aacute;cticos aplicados a proyectos reales.
+&#9989; DMA Engineering Suite: tu kit de apps de IA, con una herramienta nueva cada mes.
 Sin costo adicional
-Sales con una titulaci&oacute;n completa
-Certificaciones Autodesk, microcredenciales NFT y t&iacute;tulos propios universitarios.
+Una microcredencial por bloque
+Cada bloque cerrado te acredita en una competencia distinta.
+Especialista BIM Professional
+Especialista BIM Coordination
+Especialista BIM Management
+Especialista BIM + IA
+Y al completar los cuatro
+M&aacute;ster BIM Management + IA
+Sin costo adicional
+Diplomas y certificaciones
+Certificaciones Autodesk por m&oacute;dulo y diplomas universitarios internacionales al finalizar.
 Autodesk
-Centro autorizado
 Design Modeling
-Con c&oacute;digo QR
 Doctrina Qualitas
-Aval universitario
 Sabal University
-Estados Unidos
 Univ. de las Naciones
-Equivalencia acad&eacute;mica
 ISTE Espa&ntilde;a
-T&iacute;tulo propio
-Al completar cada m&oacute;dulo obtienes una certificaci&oacute;n oficial de Autodesk &mdash; esto porque somos Centro de Entrenamiento Autorizado de la marca.
-Completando los m&oacute;dulos de cada bloque del plan de estudios obtienes una microcredencial NFT avalada por Silicon Valley .
-Adem&aacute;s, recibes diplomas de t&iacute;tulo propio de Sabal University, Universidad de las Naciones y Universidad ISTE Espa&ntilde;a .
-Y finalmente, un certificado universitario de Doctrinas Qualitas y Design Modeling Academy de 1440 horas acad&eacute;micas en l&iacute;nea. &#9989;
+&#9989; Certificaci&oacute;n oficial de Autodesk al completar cada m&oacute;dulo &mdash; somos Centro de Entrenamiento Autorizado.
+&#9989; Microcredencial profesional al completar cada bloque del plan de estudios.
+&#9989; Diplomas universitarios de las instituciones aliadas del programa.
+&#9989; Al culminar, certificado universitario de 1440 horas acad&eacute;micas .
 &iquest;Tienes dudas antes de inscribirte?
 Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
 Hablar por WhatsApp

@@ -176,6 +176,23 @@ jobs:
         continue-on-error: true      # se avisa, no se rompe la corrida
         run: python3 scripts/enlaces.py
 
+      # OpenReply es quien de verdad sabe si una palabra clave esta viva: es el
+      # que recibe el comentario y manda el DM. La matriz lo llevaba como una
+      # casilla que hay que acordarse de marcar, y por eso «montar el disparador
+      # CHATGPT» lleva semanas sin marcar sin que nadie sepa si esta puesto.
+      #
+      # La prueba corre PRIMERO y sin base de datos: comprueba que ninguna
+      # consulta lea nombres, textos de comentario ni tokens. Si eso falla, el
+      # paso siguiente no llega a conectarse.
+      - name: Probar el conector de OpenReply (sin base de datos)
+        run: python3 scripts/prueba_openreply.py
+
+      - name: Traer campanas y clics de OpenReply
+        env:
+          OPENREPLY_DATABASE_URL: ${{ secrets.OPENREPLY_DATABASE_URL }}
+        continue-on-error: true      # si falla, no rompe la actualización principal
+        run: python3 scripts/openreply.py --dias 30
+
       - name: Traer datos de la competencia
         env:
           META_TOKEN: ${{ secrets.META_TOKEN }}
@@ -186,7 +203,7 @@ jobs:
         id: commit
         run: |
           set -euo pipefail
-          RUTAS="matriz-viral/matriz/ matriz-viral/fuentes/ads-insights/ matriz-viral/fuentes/ingresos/ matriz-viral/fuentes/ghl-sonda.json matriz-viral/fuentes/ghl/ matriz-viral/fuentes/meta-pixel/ matriz-viral/fuentes/enlaces.json"
+          RUTAS="matriz-viral/matriz/ matriz-viral/fuentes/ads-insights/ matriz-viral/fuentes/ingresos/ matriz-viral/fuentes/ghl-sonda.json matriz-viral/fuentes/ghl/ matriz-viral/fuentes/meta-pixel/ matriz-viral/fuentes/openreply/ matriz-viral/fuentes/enlaces.json"
           if git diff --quiet -- $RUTAS && ! git status --porcelain -- $RUTAS | grep -q .; then
             echo "Sin cambios."
             echo "cambios=false" >> "$GITHUB_OUTPUT"
@@ -195,7 +212,7 @@ jobs:
           echo "cambios=true" >> "$GITHUB_OUTPUT"
           git config user.name  "matriz-bot"
           git config user.email "noreply@anthropic.com"
-          git add matriz-viral/matriz/ matriz-viral/fuentes/ads-insights/ matriz-viral/fuentes/ingresos/ matriz-viral/fuentes/ghl-sonda.json matriz-viral/fuentes/ghl/ matriz-viral/fuentes/meta-pixel/ matriz-viral/fuentes/enlaces.json
+          git add matriz-viral/matriz/ matriz-viral/fuentes/ads-insights/ matriz-viral/fuentes/ingresos/ matriz-viral/fuentes/ghl-sonda.json matriz-viral/fuentes/ghl/ matriz-viral/fuentes/meta-pixel/ matriz-viral/fuentes/openreply/ matriz-viral/fuentes/enlaces.json
           git commit -m "Métricas semanales automáticas (Meta Graph API)"
           # Puede haber commits nuevos desde que arrancó la corrida: se rebasa
           # antes de empujar. Sin esto el push se rechaza y se pierde el dato.

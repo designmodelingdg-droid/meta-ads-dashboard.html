@@ -63,6 +63,44 @@ Y una distinción que cambia las metas: **recurrente no es captación**. En agos
 Máster. Entran a caja solos; no los vendió nadie ese mes. Separarlos siempre
 antes de plantear el objetivo del mes siguiente.
 
+## Las palabras clave: quién sabe de verdad si están vivas
+
+**El estado de una palabra clave se lee en `fuentes/openreply/campanas.json`,
+nunca en la casilla de la matriz.** Lo llena `scripts/openreply.py` desde la
+base de OpenReply —la aplicación propia que recibe el comentario y manda el
+DM— dentro del Action semanal.
+
+> *De dónde sale esta regla:* la matriz llevaba «montar el disparador CHATGPT
+> en GHL» como una casilla sin marcar durante semanas, y nadie sabía si estaba
+> puesto. Una casilla no dice si el comentario dispara; OpenReply sí, porque es
+> quien lo recibe.
+
+El fichero trae un bloque `cotejo_con_la_matriz` que distingue cuatro estados,
+y **los dos del medio son los que hacen daño**:
+
+| Estado | Qué pasa cuando alguien comenta |
+|---|---|
+| Viva | Recibe el recurso |
+| Muda (montada y activa, sin disparar nunca) | Nadie ha comentado esa palabra todavía |
+| **Pausada** (existe pero apagada) | **No recibe nada** |
+| **Ausente** (no hay campaña) | **No recibe nada** |
+
+Antes de publicar una pieza cuyo CTA pida una palabra, se mira ese bloque. Si
+la palabra sale pausada o ausente, se cambia el CTA por el de reemplazo — no se
+publica la promesa vacía.
+
+Y trae además lo que la casilla nunca iba a decir: **cuántos DM ha mandado cada
+palabra y cuántos clics trajo su enlace**. Eso es lo que dice qué recurso vale
+la pena repetir.
+
+Dos honestidades del dato, para no leerlo mal:
+
+1. **Los clics cuelgan de la campaña y del enlace, no de la palabra.** Si una
+   campaña lleva varias palabras, el CTR no se reparte entre ellas.
+2. **No hay ni un dato personal ahí.** El conector no lee nombres, ni textos de
+   comentario, ni tokens, y una prueba rompe la corrida si alguien añade una
+   consulta que lo intente. Montaje y detalle en `herramientas/openreply/LEEME.md`.
+
 ## Reglas fijas
 
 0. **Toda afirmación técnica sobre una función de software se verifica contra la documentación oficial ANTES de publicar.** Si un guion dice que un programa "hace X", hay que abrir help.autodesk.com (o la documentación del fabricante) y comprobarlo. Si no se puede comprobar, no se publica: se cambia por algo que sí se pueda. Y si la función depende de una versión o de una licencia concreta, **eso se dice en la pieza**.
