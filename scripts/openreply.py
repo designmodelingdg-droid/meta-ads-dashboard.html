@@ -52,19 +52,26 @@ PALABRAS_MATRIZ = ["ZAPATA", "ACERO", "NIVEL", "CHATGPT", "MEMORIA", "DYNAMO"]
 # que los modelos — con mayusculas, y en Postgres eso obliga a comillas.
 CONSULTAS = {}
 
+# OJO — el rol `matriz_ro` tiene permisos POR COLUMNA, no por tabla. Pedir una
+# columna no concedida no devuelve nulo: tumba la consulta entera con
+# «permission denied for table». Por eso aqui se nombra cada columna y no se
+# usa `SELECT *` en ningun sitio.
+#
+# Falta a proposito la union con InstagramAccount: `Automation.instagramAccountId`
+# no esta concedida, asi que no se puede decir a que cuenta pertenece cada
+# campana. Se vive sin ello — hay una sola cuenta — y queda anotado en la salida.
 CONSULTAS["campanas"] = """
 SELECT coalesce(json_agg(f ORDER BY f.enviados DESC), '[]'::json) FROM (
   SELECT
     a.id,
     a.name                              AS nombre,
     a.keywords                          AS palabras,
+    a."matchAnyWord"                    AS casa_palabra_parcial,
     a."isActive"                        AS activa,
-    a."matchAnyPost"                    AS cualquier_post,
-    a."dmTriggerEnabled"                AS dispara_con_dm,
-    a."requireFollow"                   AS exige_seguir,
+    a."postId"                          AS post_id,
     a."postUrl"                         AS post_url,
     a."createdAt"                       AS creada,
-    ig.username                         AS cuenta,
+    a."updatedAt"                       AS actualizada,
     coalesce(d.enviados, 0)             AS enviados,
     coalesce(d.fallidos, 0)             AS fallidos,
     coalesce(d.saltados, 0)             AS saltados,
@@ -74,7 +81,6 @@ SELECT coalesce(json_agg(f ORDER BY f.enviados DESC), '[]'::json) FROM (
     coalesce(c.clics, 0)                AS clics,
     coalesce(e.enlaces, 0)              AS enlaces_rastreados
   FROM "Automation" a
-  JOIN "InstagramAccount" ig ON ig.id = a."instagramAccountId"
   LEFT JOIN (
     SELECT "automationId" AS aid,
       count(*) FILTER (WHERE status = 'SENT')                  AS enviados,
@@ -96,9 +102,6 @@ SELECT coalesce(json_agg(f ORDER BY f.enviados DESC), '[]'::json) FROM (
 ) f;
 """
 
-# Por que importa: una campana puede llevar varias palabras. Esta es la unica
-# consulta que dice cual de ellas disparo de verdad — `matchedKeyword` es lo
-# que el worker apunto al casar el comentario.
 CONSULTAS["por_palabra"] = """
 SELECT coalesce(json_agg(f ORDER BY f.enviados DESC), '[]'::json) FROM (
   SELECT
@@ -213,16 +216,31 @@ def limpiar(texto, url):
 
 
 def leer_los_clics(campanas):
-    """Distingue «nadie hizo clic» de «esto no mide clics».
+    """Distingue «nadie hizo clic» de «esto no mide clics» — y no llama CTR a
+    algo que no lo es.
 
-    OpenReply solo crea un TrackedLink si la campaña se montó con un enlace
-    rastreado — es opcional. Una campaña que manda el enlace crudo devuelve
-    cero clics para siempre, y ese cero se lee igual que «el recurso no
-    interesa a nadie». No es lo mismo, y confundirlos lleva a retirar un
-    recurso que en realidad estaba funcionando.
+    Dos trampas, las dos comprobadas contra el código de OpenReply:
 
-    Es el mismo error que la CAPI del 14-sep: un cero que era del medidor, no
-    del mundo.
+    1. **El cero del medidor.** OpenReply solo crea un TrackedLink si la
+       campaña se montó con un enlace rastreado — es opcional. Una campaña que
+       manda el enlace crudo devuelve cero clics para siempre, y ese cero se
+       lee igual que «el recurso no interesa a nadie». Es el mismo error que la
+       CAPI del 14-sep: un cero del medidor leído como del mundo.
+
+    2. **Clics no son personas.** `LinkClick` apunta cada apertura del
+       redirector, no cada persona: la misma persona que abre el enlace tres
+       veces cuenta tres, y los bots de vista previa de Instagram y WhatsApp
+       también cuentan. Por eso los clics PUEDEN superar a los envíos, y
+       `clics / enviados` no es un porcentaje de conversión.
+
+       OpenReply resuelve eso capando el número al 100 %
+       (`lib/tracking/analytics.ts`), y eso tira justo la señal: 1.200 clics
+       sobre 60 envíos y 60 sobre 60 se muestran los dos como «100 %». Aquí no
+       se capa. Cuando hay más clics que envíos se dice cuántos por envío y se
+       dice por qué, y **no se llama CTR**.
+
+    No se pueden contar clics ÚNICOS: haría falta `LinkClick.ipHash`, que está
+    deliberadamente fuera del rol de solo lectura por ser un dato de persona.
     """
     for c in campanas:
         enlaces = int(c.get("enlaces_rastreados") or 0)
@@ -232,6 +250,7 @@ def leer_los_clics(campanas):
         if not enlaces:
             c["mide_clics"] = False
             c["ctr"] = None
+            c["clics_por_dm"] = None
             c["lectura_clics"] = (
                 "SIN ENLACE RASTREADO: esta campaña no mide clics. El cero es "
                 "del medidor, no del público. Para medirla hay que montarle un "
@@ -239,22 +258,51 @@ def leer_los_clics(campanas):
             continue
 
         c["mide_clics"] = True
-        c["ctr"] = round(clics / enviados, 4) if enviados else None
-        c["lectura_clics"] = (
-            "Mide clics, pero todavía no ha enviado ningún DM."
-            if not enviados else
-            f"{clics} clics sobre {enviados} DM enviados "
-            f"({clics / enviados:.0%})."
-        )
+
+        if not enviados:
+            c["ctr"] = None
+            c["clics_por_dm"] = None
+            c["lectura_clics"] = (
+                f"{clics} clics registrados, pero esta campaña no ha enviado "
+                "ningún DM: esos clics vienen del enlace abierto por otra vía."
+                if clics else
+                "Mide clics, pero todavía no ha enviado ningún DM.")
+            continue
+
+        por_dm = round(clics / enviados, 2)
+        c["clics_por_dm"] = por_dm
+
+        if clics > enviados:
+            # No es una tasa. Decirlo, en vez de capar el número al 100 %.
+            c["ctr"] = None
+            c["lectura_clics"] = (
+                f"{clics} clics sobre {enviados} DM enviados — {por_dm} clics "
+                "por DM. Al haber MÁS clics que envíos esto NO es un porcentaje "
+                "de conversión: son aperturas repetidas de la misma persona, "
+                "bots de vista previa, o el enlace circulando fuera del DM. "
+                "El dato útil aquí es el número de clics, no una tasa.")
+        else:
+            c["ctr"] = round(clics / enviados, 4)
+            c["lectura_clics"] = (
+                f"{clics} clics sobre {enviados} DM enviados "
+                f"({clics / enviados:.0%}). Son clics, no personas: la misma "
+                "persona puede contar varias veces.")
     return campanas
 
 
-def cotejar_con_la_matriz(por_palabra, campanas):
-    """Compara las seis palabras que la matriz declara contra lo que hay montado.
+def cotejar_con_la_matriz(por_palabra, campanas, hubo_fallo):
+    """Compara lo que la matriz DECLARA contra lo que OpenReply tiene montado.
 
-    Es el corazón del asunto: la matriz DICE que seis palabras están activas;
-    OpenReply SABE cuáles lo están. Donde no coinciden es donde hay un CTA
-    publicándose contra un disparador que no existe.
+    `hubo_fallo` no es un adorno. Si la consulta de campañas murió, esta
+    función no sabe nada — y decir «ZAPATA no existe» cuando en realidad no se
+    pudo mirar es peor que no decir nada: se lee como un hecho comprobado. La
+    primera prueba con permisos reales hizo exactamente eso, y por eso está
+    aquí este parámetro.
+
+    Devuelve además TODAS las palabras montadas con sus números, no solo las
+    seis de la matriz. Lo que ya está funcionando importa más que lo que se
+    buscaba: si en producción viven GUIA y TUTORIAL con miles de clics, mirar
+    solo las seis declaradas es perderse lo único que está midiendo.
     """
     montadas = {}
     for c in campanas:
@@ -272,30 +320,38 @@ def cotejar_con_la_matriz(por_palabra, campanas):
         k = (f.get("palabra") or "").upper()
         envios[k] = envios.get(k, 0) + int(f.get("enviados") or 0)
 
-    filas = []
-    for palabra in PALABRAS_MATRIZ:
-        m = montadas.get(palabra)
-        filas.append({
+    def lectura(palabra, m):
+        if hubo_fallo:
+            return ("NO SE PUDO COMPROBAR: la consulta de campañas falló. "
+                    "Esto NO significa que la palabra no exista.")
+        if not m:
+            return ("No existe ninguna campaña con esta palabra. Si hay un CTA "
+                    "pidiéndola, el comentario no recibe nada.")
+        if not m["activa"]:
+            return "La campaña existe pero está PAUSADA: el comentario no dispara."
+        if not envios.get(palabra):
+            return "Montada y activa, pero todavía no ha disparado ni una vez."
+        return f"Viva: {envios[palabra]} DM enviados."
+
+    def fila(palabra, m, declarada):
+        return {
             "palabra": palabra,
-            "montada_en_openreply": bool(m),
-            "campana_activa": bool(m and m["activa"]),
+            "la_declara_la_matriz": declarada,
+            "montada_en_openreply": None if hubo_fallo else bool(m),
+            "campana_activa": None if hubo_fallo else bool(m and m["activa"]),
             "campanas": (m or {}).get("campanas", []),
             "dms_enviados": envios.get(palabra, 0),
-            "lectura": (
-                "No existe ninguna campaña con esta palabra. Si hay un CTA "
-                "pidiéndola, el comentario no recibe nada."
-                if not m else
-                "La campaña existe pero está PAUSADA: el comentario no dispara."
-                if not m["activa"] else
-                "Montada y activa, pero todavía no ha disparado ni una vez."
-                if not envios.get(palabra) else
-                f"Viva: {envios[palabra]} DM enviados."
-            ),
-        })
+            "lectura": lectura(palabra, m),
+        }
 
-    # Y al revés: palabras montadas en OpenReply que la matriz no declara.
-    extra = sorted(set(montadas) - set(PALABRAS_MATRIZ))
-    return filas, extra
+    # las seis que la matriz declara
+    filas = [fila(p, montadas.get(p), True) for p in PALABRAS_MATRIZ]
+
+    # y TODAS las demás que estén montadas, con sus números
+    otras = [fila(k, montadas[k], False)
+             for k in sorted(set(montadas) - set(PALABRAS_MATRIZ))]
+
+    return filas, otras
 
 
 def main():
@@ -319,11 +375,22 @@ def main():
         "nota_privacidad": (
             "Solo agregados. No se lee `commenterName`, ni `commentText`, ni "
             "`accessToken`. Ningún dato personal sale de la base."),
+        "nota_cuenta": (
+            "No se dice a qué cuenta de Instagram pertenece cada campaña: "
+            "`Automation.instagramAccountId` no está concedida al rol de solo "
+            "lectura. Con una sola cuenta no hace falta; si algún día hay "
+            "varias, hay que conceder esa columna."),
+        "nota_dms_por_palabra": (
+            "Los DM SÍ se cuentan por palabra: `DmLog.matchedKeyword` guarda "
+            "cuál disparó cada envío. Ver el bloque `por_palabra`."),
         "nota_clics": (
             "Los clics cuelgan de la CAMPAÑA y del ENLACE, no de la palabra: "
             "`LinkClick` no guarda cuál palabra disparó. En una campaña con "
-            "varias palabras, el CTR no se puede repartir entre ellas y aquí "
-            "no se inventa."),
+            "varias palabras no se pueden repartir entre ellas, y aquí no se "
+            "inventa. Además son APERTURAS, no personas: la misma persona "
+            "cuenta varias veces y los bots de vista previa también, así que "
+            "los clics pueden superar a los envíos. Cuando eso pasa, `ctr` "
+            "queda en nulo y se usa `clics_por_dm`."),
         "fallos": [],
     }
 
@@ -341,10 +408,14 @@ def main():
     salida["campanas"] = leer_los_clics(salida.get("campanas") or [])
 
     # El cruce con la matriz, que es para lo que existe todo lo de arriba.
-    filas, extra = cotejar_con_la_matriz(
-        salida.get("por_palabra") or [], salida.get("campanas") or [])
+    # Si la consulta de campañas murió, el cruce no puede afirmar nada.
+    fallo_campanas = any(f["consulta"] == "campanas" for f in salida["fallos"])
+    filas, otras = cotejar_con_la_matriz(
+        salida.get("por_palabra") or [], salida.get("campanas") or [],
+        fallo_campanas)
     salida["cotejo_con_la_matriz"] = filas
-    salida["palabras_en_openreply_que_la_matriz_no_declara"] = extra
+    salida["otras_palabras_montadas"] = otras
+    salida["cotejo_fiable"] = not fallo_campanas
 
     vivas = [f["palabra"] for f in filas if f["dms_enviados"] > 0]
     mudas = [f["palabra"] for f in filas if not f["montada_en_openreply"]]
@@ -355,12 +426,28 @@ def main():
                        encoding="utf-8")
 
     print(f"\nEscrito {destino}")
-    print(f"  palabras de la matriz que han disparado: {len(vivas)}/6"
-          + (f" — {', '.join(vivas)}" if vivas else ""))
-    if mudas:
-        print(f"  SIN CAMPAÑA EN OPENREPLY: {', '.join(mudas)}")
-    if extra:
-        print(f"  montadas pero fuera de la matriz: {', '.join(extra)}")
+
+    if fallo_campanas:
+        print("  ⚠ LA CONSULTA DE CAMPAÑAS FALLÓ: el cruce de palabras no vale. "
+              "No se puede decir qué está montado y qué no.")
+    else:
+        # Primero lo que esta VIVO, sea o no de las seis declaradas.
+        vivas = sorted(
+            [(f["palabra"], f["dms_enviados"]) for f in filas + otras
+             if f["dms_enviados"] > 0], key=lambda x: -x[1])
+        if vivas:
+            print("  palabras que están disparando: "
+                  + ", ".join(f"{p} ({n})" for p, n in vivas))
+        else:
+            print("  ninguna palabra ha disparado todavía.")
+
+        mudas = [f["palabra"] for f in filas if not f["montada_en_openreply"]]
+        if mudas:
+            print(f"  de las 6 que declara la matriz, SIN CAMPAÑA: {', '.join(mudas)}")
+        if otras:
+            print("  montadas y fuera de la matriz: "
+                  + ", ".join(f["palabra"] for f in otras))
+
     sin_medir = [c["nombre"] for c in salida.get("campanas") or []
                  if not c.get("mide_clics")]
     if sin_medir:
