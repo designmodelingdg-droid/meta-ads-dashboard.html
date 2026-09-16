@@ -49,10 +49,14 @@ def comprobar(nombre, condicion, detalle=""):
 # for table». La primera prueba con permisos reales se llevó por delante la
 # consulta de campañas por tres columnas de más y un JOIN.
 CONCEDIDO = {
-    "Automation": "id name keywords matchAnyWord isActive postId postUrl "
+    # Ampliado el 16-sep: Dayana concedio instagramAccountId (que devuelve el
+    # JOIN campana->cuenta), matchAnyPost, dmTriggerEnabled, requireFollow y
+    # dmDeliveryUnconfirmed (que evita contar como fallo un DM que si llego).
+    "Automation": "id name keywords matchAnyWord matchAnyPost dmTriggerEnabled "
+                  "requireFollow isActive postId postUrl instagramAccountId "
                   "createdAt updatedAt",
     "DmLog": "id automationId matchedKeyword status attempts dmSentAt "
-             "errorMessage publicReplySentAt createdAt",
+             "errorMessage publicReplySentAt dmDeliveryUnconfirmed createdAt",
     "TrackedLink": "id automationId slug label destinationUrl createdAt",
     "LinkClick": "id automationId trackedLinkId createdAt",
     "FollowerSnapshot": "id instagramAccountId date followersCount backfilled "
@@ -136,13 +140,35 @@ comprobar("si la consulta de campañas falla, el cruce NO afirma nada",
           and all("NO SE PUDO COMPROBAR" in f["lectura"] for f in rotas),
           "un fallo de permisos se leía como «la palabra no existe»")
 
+print("\n2 bis · El corte de bots del 15-sep")
+
+comprobar("el corte está fijado al 15-sep", orep.CORTE_BOTS == "2026-09-15")
+comprobar("todas las consultas de clics parten por el corte",
+          all("%(corte)s" in orep.CONSULTAS[q]
+              for q in ("campanas", "enlaces", "clics_por_dia")),
+          "una serie que cruce el corte mezcla bots con personas")
+
+# Lo que de verdad importa: que las tasas NO usen los clics sucios.
+sucia = orep.leer_los_clics([{"nombre": "x", "enlaces_rastreados": 1,
+                              "enviados": 27, "clics": 1825,
+                              "clics_limpios": 17, "clics_con_bots": 1808}])[0]
+comprobar("la tasa se calcula con los clics LIMPIOS, no con el total",
+          sucia["clics_por_dm"] == round(17 / 27, 2),
+          f"salió {sucia['clics_por_dm']} — con el total daría 67,6")
+comprobar("y avisa de los que se dejaron fuera",
+          "1808" in sucia["lectura_clics"] and "bots" in sucia["lectura_clics"])
+comprobar("17 sobre 27 sí es una tasa legítima",
+          sucia["ctr"] == round(17 / 27, 4))
+
 print("\n3 · Un cero de clics no siempre significa lo mismo")
 
 camps = orep.leer_los_clics([
-    {"nombre": "Con enlace", "enlaces_rastreados": 1, "enviados": 40, "clics": 17},
-    {"nombre": "Sin enlace", "enlaces_rastreados": 0, "enviados": 30, "clics": 0},
+    {"nombre": "Con enlace", "enlaces_rastreados": 1, "enviados": 40,
+     "clics": 17, "clics_limpios": 17, "clics_con_bots": 0},
+    {"nombre": "Sin enlace", "enlaces_rastreados": 0, "enviados": 30,
+     "clics": 0, "clics_limpios": 0, "clics_con_bots": 0},
     {"nombre": "Mide pero no ha enviado", "enlaces_rastreados": 1,
-     "enviados": 0, "clics": 0},
+     "enviados": 0, "clics": 0, "clics_limpios": 0, "clics_con_bots": 0},
 ])
 con, sin, mudo = camps
 
@@ -161,16 +187,20 @@ comprobar("la que mide pero no ha enviado no divide por cero",
 # La forma que tienen los datos REALES de produccion: decenas de envios y
 # miles de clics. OpenReply capa eso al 100 %; aqui se dice lo que es.
 mas = orep.leer_los_clics([{"nombre": "GUIA", "enlaces_rastreados": 1,
-                           "enviados": 60, "clics": 1200}])[0]
+                           "enviados": 60, "clics": 1200,
+                           "clics_limpios": 1200, "clics_con_bots": 0}])[0]
 comprobar("más clics que envíos NO se presenta como un 2000 % ni como 100 %",
           mas["ctr"] is None and mas["clics_por_dm"] == 20.0,
           f"ctr={mas['ctr']} clics_por_dm={mas['clics_por_dm']}")
 comprobar("y explica por qué no es una tasa",
           "NO es un porcentaje de conversión" in mas["lectura_clics"]
-          and "bots" in mas["lectura_clics"])
+          and "aperturas repetidas" in mas["lectura_clics"],
+          "pasado el corte los bots ya no son la explicación: lo que queda es "
+          "la misma persona abriendo varias veces, o el enlace circulando")
 comprobar("con clics pero cero envíos tampoco revienta",
           orep.leer_los_clics([{"nombre": "x", "enlaces_rastreados": 1,
-                                "enviados": 0, "clics": 9}])[0]["ctr"] is None)
+                                "enviados": 0, "clics": 9, "clics_limpios": 9,
+                                "clics_con_bots": 0}])[0]["ctr"] is None)
 
 print("\n4 · Detalles que ya han mordido")
 comprobar("las palabras se comparan en mayúsculas",

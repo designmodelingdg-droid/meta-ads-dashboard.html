@@ -50,8 +50,8 @@ Lo que el rol puede leer:
 
 | Tabla | Columnas |
 |---|---|
-| `Automation` | id, name, keywords, matchAnyWord, isActive, postId, postUrl, createdAt, updatedAt |
-| `DmLog` | id, automationId, matchedKeyword, status, attempts, dmSentAt, errorMessage, publicReplySentAt, createdAt |
+| `Automation` | id, name, keywords, matchAnyWord, **matchAnyPost**, **dmTriggerEnabled**, **requireFollow**, isActive, postId, postUrl, **instagramAccountId**, createdAt, updatedAt |
+| `DmLog` | id, automationId, matchedKeyword, status, attempts, dmSentAt, errorMessage, publicReplySentAt, **dmDeliveryUnconfirmed**, createdAt |
 | `TrackedLink` | id, automationId, slug, label, destinationUrl, createdAt |
 | `LinkClick` | id, automationId, trackedLinkId, createdAt |
 | `FollowerSnapshot` | id, instagramAccountId, date, followersCount, backfilled, createdAt |
@@ -65,10 +65,8 @@ una columna no concedida **no devuelve nulo — tumba la consulta entera** con
 contra ella antes de que toque producción. La primera versión pedía cuatro
 columnas de más y habría fallado en la primera corrida.
 
-**Una columna que falta y se echa en falta:** `Automation.instagramAccountId`
-no está concedida, así que no se puede decir a qué cuenta de Instagram
-pertenece cada campaña. Con una sola cuenta da igual; si algún día hay varias,
-hay que concederla.
+*(En negrita, las cinco ampliadas el 16-sep. Con `instagramAccountId` vuelve a
+funcionar la unión campaña→cuenta.)*
 
 ### 2 · Guardar la URL en los secretos del repositorio
 
@@ -132,6 +130,54 @@ nulo y se usa `clics_por_dm` con la explicación al lado.
 No se pueden contar clics **únicos**: haría falta `LinkClick.ipHash`, que está
 deliberadamente fuera del rol por ser un dato de persona. Es la decisión
 correcta; solo hay que saber que el número son aperturas.
+
+### El corte de los bots: `2026-09-15`
+
+**Hasta el 14-sep inclusive los clics están inflados por bots de vista previa.
+Desde el 15 son personas.** Ese día, a las 00:10 UTC, entró en producción el
+filtro de rastreadores.
+
+No es una deducción de la forma de la serie. Se verificó por vía directa: una
+página de un commit POSTERIOR al del filtro está sirviendo en producción, luego
+el filtro también está desplegado. Y sus pruebas pasan, incluida la que evita
+filtrar el navegador interno de Instagram — que es justo donde ocurre el clic
+bueno, y donde un filtro mal hecho habría borrado lo que sí vale.
+
+**Todas las tasas de este fichero usan SOLO los clics limpios.** Los anteriores
+se conservan en `clics_con_bots` para no perderlos, pero no entran en ningún
+cálculo. La diferencia no es cosmética:
+
+| | Con el total | Solo limpios |
+|---|---|---|
+| TUTORIAL, 27 DM | 1.825 clics · «67,59 por DM» | **17 clics · 63 %** |
+
+El primero no significa nada. El segundo es una tasa de conversión creíble.
+
+### ⚠️ Octubre va a parecer mucho peor que septiembre, y estará bien
+
+Desde el 15-sep hay **follow gate web**: en las campañas con el gate activo, el
+DM ya no lleva el enlace del recurso — lleva el de una página de verificación
+que detecta al rastreador, le enseña una pantalla neutra y **no cuenta nada**.
+En esas campañas el rastreador ni siquiera llega a ver el enlace del recurso.
+
+Consecuencia: **los números de octubre van a ser mucho más bajos que los de
+septiembre, y eso es correcto.** Comparar «1.825 en septiembre» contra «20 en
+octubre» y leer un desplome es el error — en septiembre se estaban contando
+bots.
+
+El fichero lo lleva escrito en `nota_octubre_va_a_parecer_peor`, para que la
+conclusión no se saque sola.
+
+### Un `FAILED` no siempre es un fallo
+
+Una fila con `status = FAILED` y `dmDeliveryUnconfirmed` **sí se entregó**:
+Meta devolvió un error genérico después de aceptar el envío. Contarla como
+fallo es contar como perdido un DM que llegó.
+
+Van aparte, en `entregados_sin_confirmar`. De los 2 fallos de septiembre, uno
+es de este tipo. El otro —`not the thread owner`— quedó resuelto el 15-sep, al
+pasar el follow gate a verificarse en una página web en vez de con un segundo
+DM: ese error ya no puede producirse.
 
 ### Y el cero que no significa nada
 

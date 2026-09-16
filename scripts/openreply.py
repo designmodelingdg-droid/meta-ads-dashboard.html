@@ -48,6 +48,18 @@ SALIDA = pathlib.Path("matriz-viral/fuentes/openreply")
 # justo lo que este script existe para enseñar.
 PALABRAS_MATRIZ = ["ZAPATA", "ACERO", "NIVEL", "CHATGPT", "MEMORIA", "DYNAMO"]
 
+# EL CORTE DE LOS BOTS. Hasta el 14-sep inclusive los clics estan inflados por
+# bots de vista previa; desde el 15 son personas. No es una deduccion de la
+# forma de la serie: el filtro de rastreadores entro en produccion el 15-sep a
+# las 00:10 UTC y Dayana lo verifico por via directa —una pagina de un commit
+# POSTERIOR esta sirviendo, luego el filtro tambien—, con las pruebas del
+# filtro en verde, incluida la que evita filtrar el navegador interno de
+# Instagram, que es justo donde ocurre el clic bueno.
+#
+# Cualquier serie que cruce esta fecha mezcla dos cosas distintas, asi que se
+# marca. Es la misma disciplina que `cotejo_fiable`.
+CORTE_BOTS = "2026-09-15"
+
 # Prisma no lleva @@map en este esquema, asi que las tablas se llaman igual
 # que los modelos — con mayusculas, y en Postgres eso obliga a comillas.
 CONSULTAS = {}
@@ -60,6 +72,10 @@ CONSULTAS = {}
 # Falta a proposito la union con InstagramAccount: `Automation.instagramAccountId`
 # no esta concedida, asi que no se puede decir a que cuenta pertenece cada
 # campana. Se vive sin ello — hay una sola cuenta — y queda anotado en la salida.
+# El rol `matriz_ro` tiene permisos POR COLUMNA. Pedir una no concedida no
+# devuelve nulo: tumba la consulta entera. Por eso se nombra cada columna y no
+# hay ningun `SELECT *`. La lista concedida vive en `prueba_openreply.py`, que
+# comprueba estas consultas contra ella antes de que toquen produccion.
 CONSULTAS["campanas"] = """
 SELECT coalesce(json_agg(f ORDER BY f.enviados DESC), '[]'::json) FROM (
   SELECT
@@ -67,24 +83,38 @@ SELECT coalesce(json_agg(f ORDER BY f.enviados DESC), '[]'::json) FROM (
     a.name                              AS nombre,
     a.keywords                          AS palabras,
     a."matchAnyWord"                    AS casa_palabra_parcial,
+    a."matchAnyPost"                    AS cualquier_post,
+    a."dmTriggerEnabled"                AS dispara_con_dm,
+    a."requireFollow"                   AS exige_seguir,
     a."isActive"                        AS activa,
     a."postId"                          AS post_id,
     a."postUrl"                         AS post_url,
     a."createdAt"                       AS creada,
     a."updatedAt"                       AS actualizada,
+    ig.username                         AS cuenta,
     coalesce(d.enviados, 0)             AS enviados,
     coalesce(d.fallidos, 0)             AS fallidos,
+    coalesce(d.entregados_sin_confirmar, 0) AS entregados_sin_confirmar,
     coalesce(d.saltados, 0)             AS saltados,
     coalesce(d.pendientes, 0)           AS pendientes,
     d.primer_envio,
     d.ultimo_envio,
     coalesce(c.clics, 0)                AS clics,
+    coalesce(c.clics_limpios, 0)        AS clics_limpios,
+    coalesce(c.clics_con_bots, 0)       AS clics_con_bots,
     coalesce(e.enlaces, 0)              AS enlaces_rastreados
   FROM "Automation" a
+  JOIN "InstagramAccount" ig ON ig.id = a."instagramAccountId"
   LEFT JOIN (
     SELECT "automationId" AS aid,
       count(*) FILTER (WHERE status = 'SENT')                  AS enviados,
-      count(*) FILTER (WHERE status = 'FAILED')                AS fallidos,
+      -- Un FAILED con `dmDeliveryUnconfirmed` SI se entrego: Meta devolvio un
+      -- error generico DESPUES de aceptar el envio. Contarlo como fallo es
+      -- contar un DM que llego como si no hubiera llegado.
+      count(*) FILTER (WHERE status = 'FAILED'
+                       AND NOT "dmDeliveryUnconfirmed")        AS fallidos,
+      count(*) FILTER (WHERE status = 'FAILED'
+                       AND "dmDeliveryUnconfirmed")            AS entregados_sin_confirmar,
       count(*) FILTER (WHERE status::text LIKE 'SKIPPED%%')    AS saltados,
       count(*) FILTER (WHERE status = 'PENDING')               AS pendientes,
       min("dmSentAt")                                          AS primer_envio,
@@ -92,7 +122,10 @@ SELECT coalesce(json_agg(f ORDER BY f.enviados DESC), '[]'::json) FROM (
     FROM "DmLog" GROUP BY "automationId"
   ) d ON d.aid = a.id
   LEFT JOIN (
-    SELECT "automationId" AS aid, count(*) AS clics
+    SELECT "automationId" AS aid,
+      count(*)                                                   AS clics,
+      count(*) FILTER (WHERE "createdAt" >= DATE '%(corte)s')     AS clics_limpios,
+      count(*) FILTER (WHERE "createdAt" <  DATE '%(corte)s')     AS clics_con_bots
     FROM "LinkClick" GROUP BY "automationId"
   ) c ON c.aid = a.id
   LEFT JOIN (
@@ -109,7 +142,10 @@ SELECT coalesce(json_agg(f ORDER BY f.enviados DESC), '[]'::json) FROM (
     a.name                                           AS campana,
     a."isActive"                                     AS campana_activa,
     count(*) FILTER (WHERE l.status = 'SENT')        AS enviados,
-    count(*) FILTER (WHERE l.status = 'FAILED')      AS fallidos,
+    count(*) FILTER (WHERE l.status = 'FAILED'
+                     AND NOT l."dmDeliveryUnconfirmed")  AS fallidos,
+    count(*) FILTER (WHERE l.status = 'FAILED'
+                     AND l."dmDeliveryUnconfirmed")      AS entregados_sin_confirmar,
     count(*) FILTER (WHERE l.status::text LIKE 'SKIPPED%%') AS saltados,
     min(l."dmSentAt")                                AS primer_envio,
     max(l."dmSentAt")                                AS ultimo_envio
@@ -126,12 +162,14 @@ CONSULTAS["motivos_de_fallo"] = """
 SELECT coalesce(json_agg(f ORDER BY f.veces DESC), '[]'::json) FROM (
   SELECT
     l.status::text                    AS estado,
+    l."dmDeliveryUnconfirmed"         AS pero_si_se_entrego,
     coalesce(l."errorMessage", '(sin mensaje)') AS motivo,
     count(*)                          AS veces,
     max(l."createdAt")                AS ultima_vez
   FROM "DmLog" l
   WHERE l.status <> 'SENT'
-  GROUP BY l.status::text, coalesce(l."errorMessage", '(sin mensaje)')
+  GROUP BY l.status::text, l."dmDeliveryUnconfirmed",
+           coalesce(l."errorMessage", '(sin mensaje)')
   LIMIT 50
 ) f;
 """
@@ -144,6 +182,8 @@ SELECT coalesce(json_agg(f ORDER BY f.clics DESC), '[]'::json) FROM (
     t."destinationUrl"         AS destino,
     a.name                     AS campana,
     count(k.id)                AS clics,
+    count(k.id) FILTER (WHERE k."createdAt" >= DATE '%(corte)s') AS clics_limpios,
+    count(k.id) FILTER (WHERE k."createdAt" <  DATE '%(corte)s') AS clics_con_bots,
     min(k."createdAt")         AS primer_clic,
     max(k."createdAt")         AS ultimo_clic
   FROM "TrackedLink" t
@@ -155,7 +195,8 @@ SELECT coalesce(json_agg(f ORDER BY f.clics DESC), '[]'::json) FROM (
 
 CONSULTAS["clics_por_dia"] = """
 SELECT coalesce(json_agg(f ORDER BY f.fecha), '[]'::json) FROM (
-  SELECT date_trunc('day', k."createdAt")::date AS fecha, count(*) AS clics
+  SELECT date_trunc('day', k."createdAt")::date AS fecha, count(*) AS clics,
+         (date_trunc('day', k."createdAt")::date >= DATE '%(corte)s') AS limpio
   FROM "LinkClick" k
   WHERE k."createdAt" >= now() - interval '%(dias)s days'
   GROUP BY 1
@@ -187,7 +228,7 @@ def consultar(url, sql, dias):
     try:
         r = subprocess.run(
             ["psql", url, "-X", "-q", "-t", "-A", "-v", "ON_ERROR_STOP=1",
-             "-c", sql % {"dias": dias}],
+             "-c", sql % {"dias": dias, "corte": CORTE_BOTS}],
             capture_output=True, text=True, timeout=120, env=entorno)
     except FileNotFoundError:
         return None, "No hay `psql` en este entorno."
@@ -258,35 +299,41 @@ def leer_los_clics(campanas):
             continue
 
         c["mide_clics"] = True
+        limpios = int(c.get("clics_limpios") or 0)
+        con_bots = int(c.get("clics_con_bots") or 0)
 
         if not enviados:
             c["ctr"] = None
             c["clics_por_dm"] = None
             c["lectura_clics"] = (
-                f"{clics} clics registrados, pero esta campaña no ha enviado "
+                f"{limpios} clics limpios, pero esta campaña no ha enviado "
                 "ningún DM: esos clics vienen del enlace abierto por otra vía."
-                if clics else
+                if limpios else
                 "Mide clics, pero todavía no ha enviado ningún DM.")
             continue
 
-        por_dm = round(clics / enviados, 2)
+        # A partir de aqui SOLO se razona con los limpios. Los de antes del
+        # corte se conservan en el JSON, pero no entran en ninguna tasa: son
+        # bots de vista previa y meterlos en un CTR es inventarse el dato.
+        por_dm = round(limpios / enviados, 2)
         c["clics_por_dm"] = por_dm
 
-        if clics > enviados:
-            # No es una tasa. Decirlo, en vez de capar el número al 100 %.
+        aviso = (f" ({con_bots} clics más son anteriores al {CORTE_BOTS} y NO "
+                 "se cuentan: eran bots de vista previa.)") if con_bots else ""
+
+        if limpios > enviados:
             c["ctr"] = None
             c["lectura_clics"] = (
-                f"{clics} clics sobre {enviados} DM enviados — {por_dm} clics "
-                "por DM. Al haber MÁS clics que envíos esto NO es un porcentaje "
-                "de conversión: son aperturas repetidas de la misma persona, "
-                "bots de vista previa, o el enlace circulando fuera del DM. "
-                "El dato útil aquí es el número de clics, no una tasa.")
+                f"{limpios} clics limpios sobre {enviados} DM enviados — "
+                f"{por_dm} clics por DM. Al haber MÁS clics que envíos esto NO "
+                "es un porcentaje de conversión: son aperturas repetidas de la "
+                "misma persona o el enlace circulando fuera del DM." + aviso)
         else:
-            c["ctr"] = round(clics / enviados, 4)
+            c["ctr"] = round(limpios / enviados, 4)
             c["lectura_clics"] = (
-                f"{clics} clics sobre {enviados} DM enviados "
-                f"({clics / enviados:.0%}). Son clics, no personas: la misma "
-                "persona puede contar varias veces.")
+                f"{limpios} clics limpios sobre {enviados} DM enviados "
+                f"({limpios / enviados:.0%}). Son aperturas, no personas: la "
+                "misma persona puede contar varias veces." + aviso)
     return campanas
 
 
@@ -383,6 +430,30 @@ def main():
         "nota_privacidad": (
             "Solo agregados. No se lee `commenterName`, ni `commentText`, ni "
             "`accessToken`. Ningún dato personal sale de la base."),
+        "corte_de_bots": CORTE_BOTS,
+        "nota_corte_de_bots": (
+            f"Hasta el 14-sep inclusive los clics están INFLADOS por bots de "
+            f"vista previa. Desde el {CORTE_BOTS} son personas: ese día entró "
+            "en producción el filtro de rastreadores (verificado por vía "
+            "directa, no por la forma de la serie). Todas las tasas de este "
+            "fichero usan SOLO los clics limpios; los anteriores se conservan "
+            "en `clics_con_bots` para no perderlos, pero no entran en ningún "
+            "cálculo."),
+        "nota_octubre_va_a_parecer_peor": (
+            "AVISO PARA CUANDO SE COMPARE MES CONTRA MES. Desde el 15-sep, en "
+            "las campañas con follow gate el DM ya no lleva el enlace del "
+            "recurso: lleva el de una página de verificación que detecta al "
+            "rastreador y no cuenta nada. Esos clics son doblemente limpios. "
+            "Consecuencia: los números de octubre van a ser MUCHO más bajos "
+            "que los de septiembre, y eso es CORRECTO. Comparar «1.825 en "
+            "septiembre» contra «20 en octubre» y leer un desplome es el "
+            "error: en septiembre se estaban contando bots."),
+        "nota_fallos": (
+            "Un `status = FAILED` con `dmDeliveryUnconfirmed` SÍ se entregó — "
+            "Meta devolvió un error genérico después de aceptar el envío. Esos "
+            "no se cuentan en `fallidos`, van aparte en "
+            "`entregados_sin_confirmar`. Contarlos como fallo es contar como "
+            "perdido un DM que llegó."),
         "nota_alcance": (
             "Esto solo ve OpenReply. Los disparadores de palabra de la matriz "
             "se montan en GoHighLevel, que es otro sistema y no se consulta "
