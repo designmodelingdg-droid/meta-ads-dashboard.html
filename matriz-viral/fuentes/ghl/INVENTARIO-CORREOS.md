@@ -1,8 +1,8 @@
 # Inventario de correos — GoHighLevel
 
-Generado el 2026-09-14.
+Generado el 2026-09-16.
 
-**428 plantillas** en **52 carpetas**. 428 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
+**432 plantillas** en **52 carpetas**. 432 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
 
 > Lo que NO sale por API: que workflow usa que plantilla. El endpoint de automatizaciones devuelve solo metadatos. En esta cuenta las plantillas estan nombradas por su flujo, asi que el cruce se puede hacer leyendo.
 
@@ -11291,6 +11291,236 @@ designmodelingacademy.com
 
 ## ⚠️ PRODUCTOS INFORMATIVOS  > ✅ HIGHTICKET
 
+### INFO Máster Bloque 1
+
+- **id:** `6aaabc5f66b1d9d00c386d0e`
+- **tipo:** html
+- **actualizada:** 2026-09-16T15:59:56.415Z
+- **Cuerpo:**
+
+```
+El bloque que te acredita como Especialista BIM Professional.
+Bloque 1 de 4
+Bloque 1 &middot; Especialista BIM Professional
+Hola {{contact.first_name}} ,
+Te cuento en detalle el Bloque 1 del M&aacute;ster Internacional en BIM Management e Inteligencia Artificial para la Construcci&oacute;n.
+Es el punto de partida: modelar con est&aacute;ndar y producir informaci&oacute;n confiable. Aqu&iacute; se fija la base sobre la que se apoyan los tres bloques siguientes, porque un modelo mal estructurado arrastra el error hasta la obra.
+Bloque 1 de 4 &middot; Especialista BIM Professional
+Estrategia BIM &middot; est&aacute;ndares &middot; implementaci&oacute;n en empresas
+El plan de estudios completo del bloque, m&oacute;dulo por m&oacute;dulo:
+Ver el temario del Bloque 1 &#8594;
+PDF con el detalle m&oacute;dulo por m&oacute;dulo
+Sin costo adicional
+Microcredenciales de este bloque
+Se emiten al completar cada m&oacute;dulo. Verificables y avaladas por el Silicon Valley Futures Institute.
+Estrategia BIM y Transformaci&oacute;n Digital
+Est&aacute;ndares BIM y Gesti&oacute;n de la Informaci&oacute;n
+Implementaci&oacute;n BIM en Empresas y Proyectos
+Sin costo adicional
+Y al cerrar el bloque
+La credencial de rol que acredita el nivel completo.
+Especialista BIM Professional
+Sin costo adicional
+Certificados de este bloque
+3 certificaciones con aval Autodesk, una por cada m&oacute;dulo completado.
+Aval Autodesk
+3 en este bloque
+Design Modeling
+Con c&oacute;digo QR
+Los diplomas universitarios internacionales &mdash; Doctrina Qualitas, Sabal University, Universidad de
+las Naciones e ISTE Espa&ntilde;a &mdash; se emiten al completar el M&aacute;ster entero, no por bloque.
+&iquest;Te sirve para tu caso?
+Son 30 minutos con un asesor acad&eacute;mico. Te ubicamos y te decimos por d&oacute;nde empezar.
+Agendar una cita &#8594;
+Sin compromiso
+Hablar por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### INFO Máster Bloque 2
+
+- **id:** `6aaabc814fe3b49a54d6a722`
+- **tipo:** html
+- **actualizada:** 2026-09-16T15:58:06.320Z
+- **Cuerpo:**
+
+```
+El bloque que te acredita como Especialista BIM Coordination.
+Bloque 2 de 4
+Bloque 2 &middot; Especialista BIM Coordination
+Hola
+{{contact.first_name}} ,
+Te cuento en detalle
+el Bloque 2 del M&aacute;ster Internacional en BIM Management e
+Inteligencia Artificial para la Construcci&oacute;n.
+Dejas de trabajar
+solo sobre tu disciplina: integras arquitectura, estructura y MEP, gestionas el entorno com&uacute;n de
+datos y resuelves interferencias antes de que lleguen a obra. Es el salto donde se atasca la
+mayor&iacute;a.
+Bloque 2 de 4 &middot; Especialista BIM
+Coordination
+Ecosistema Autodesk &middot; clash detection &middot; control de obra
+El plan de estudios
+completo del bloque, m&oacute;dulo por m&oacute;dulo:
+Ver el temario del Bloque 2 &#8594;
+PDF con el detalle
+m&oacute;dulo por m&oacute;dulo
+Sin costo adicional
+Microcredenciales de este bloque
+Se emiten al
+completar cada m&oacute;dulo. Verificables y avaladas por el Silicon Valley Futures Institute.
+Ecosistema
+Autodesk para Coordinaci&oacute;n BIM
+Coordinaci&oacute;n Multidisciplinaria y Clash Detection
+Construcci&oacute;n Digital y Control de Obra
+Sin costo adicional
+Y al cerrar el
+bloque
+La credencial
+de rol que acredita el nivel completo.
+Especialista
+BIM Coordination
+Sin costo adicional
+Certificados de este bloque
+3 certificaciones con aval Autodesk, una por cada m&oacute;dulo completado.
+Aval
+Autodesk
+3 en este
+bloque
+Design
+Modeling
+Con
+c&oacute;digo QR
+Los diplomas universitarios internacionales &mdash; Doctrina Qualitas, Sabal University,
+Universidad de
+las Naciones e ISTE Espa&ntilde;a &mdash; se emiten al completar el M&aacute;ster entero, no por
+bloque.
+&iquest;Te sirve para tu caso?
+Son 30 minutos con un asesor acad&eacute;mico. Te ubicamos y te decimos por d&oacute;nde empezar.
+Agendar una cita &#8594;
+Sin compromiso
+Hablar por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### INFO Máster Bloque 3
+
+- **id:** `6aaabc937919774ef27d3430`
+- **tipo:** html
+- **actualizada:** 2026-09-16T15:58:23.953Z
+- **Cuerpo:**
+
+```
+El bloque que te acredita como Especialista BIM Management.
+Bloque 3 de 4
+Bloque 3 &middot; Especialista BIM Management
+Hola
+{{contact.first_name}} ,
+Te cuento en detalle
+el Bloque 3 del M&aacute;ster Internacional en BIM Management e
+Inteligencia Artificial para la Construcci&oacute;n.
+El modelo deja de
+ser un dibujo y pasa a ser un instrumento de gesti&oacute;n: planificaci&oacute;n, control de costos,
+seguimiento de obra y decisiones que afectan el presupuesto del proyecto.
+Bloque 3 de 4 &middot; Especialista BIM
+Management
+Tiempo, costos y ciclo de vida &middot; direcci&oacute;n estrat&eacute;gica
+El plan de estudios
+completo del bloque, m&oacute;dulo por m&oacute;dulo:
+Ver el temario del Bloque 3 &#8594;
+PDF con el detalle
+m&oacute;dulo por m&oacute;dulo
+Sin costo adicional
+Microcredenciales de este bloque
+Se emiten al
+completar cada m&oacute;dulo. Verificables y avaladas por el Silicon Valley Futures Institute.
+Gesti&oacute;n
+BIM 4D-7D: Tiempo, Costos y Ciclo de Vida
+Direcci&oacute;n Estrat&eacute;gica de Proyectos BIM
+Sin costo adicional
+Y al cerrar el
+bloque
+La credencial
+de rol que acredita el nivel completo.
+Especialista
+BIM Management
+Sin costo adicional
+Certificados de este bloque
+2 certificaciones con aval Autodesk, una por cada m&oacute;dulo completado.
+Aval
+Autodesk
+2 en este
+bloque
+Design
+Modeling
+Con
+c&oacute;digo QR
+Los diplomas universitarios internacionales &mdash; Doctrina Qualitas, Sabal University,
+Universidad de
+las Naciones e ISTE Espa&ntilde;a &mdash; se emiten al completar el M&aacute;ster entero, no por
+bloque.
+&iquest;Te sirve para tu caso?
+Son 30 minutos con un asesor acad&eacute;mico. Te ubicamos y te decimos por d&oacute;nde empezar.
+Agendar una cita &#8594;
+Sin compromiso
+Hablar por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### INFO Máster Bloque 4
+
+- **id:** `6aaabcd9b0cd6d0085aac58d`
+- **tipo:** html
+- **actualizada:** 2026-09-16T15:59:32.221Z
+- **Cuerpo:**
+
+```
+El bloque que te acredita como Especialista BIM + IA.
+Bloque 4 de 4
+Bloque 4 &middot; Especialista BIM + IA
+Hola {{contact.first_name}} ,
+Te cuento en detalle el Bloque 4 del M&aacute;ster Internacional en BIM Management e Inteligencia Artificial para la Construcci&oacute;n.
+El bloque que hoy casi nadie ocupa: automatizas lo repetitivo con Dynamo y Python, desarrollas tus propias soluciones y aplicas inteligencia artificial a procesos BIM con criterio t&eacute;cnico.
+Bloque 4 de 4 &middot; Especialista BIM + IA
+Dynamo &middot; Python &middot; IA aplicada a BIM
+El plan de estudios completo del bloque, m&oacute;dulo por m&oacute;dulo:
+Ver el temario del Bloque 4 &#8594;
+PDF con el detalle m&oacute;dulo por m&oacute;dulo
+Sin costo adicional
+Microcredenciales de este bloque
+Se emiten al completar cada m&oacute;dulo. Verificables y avaladas por el Silicon Valley Futures Institute.
+Automatizaci&oacute;n BIM con Dynamo y Python
+Inteligencia Artificial Aplicada a Proyectos BIM
+Automatizaci&oacute;n Avanzada y Desarrollo de Soluciones
+Sin costo adicional
+Y al cerrar el bloque
+La credencial de rol que acredita el nivel completo.
+Especialista BIM + IA
+Sin costo adicional
+Certificados de este bloque
+3 certificaciones con aval Autodesk, una por cada m&oacute;dulo completado.
+Aval Autodesk
+3 en este bloque
+Design Modeling
+Con c&oacute;digo QR
+Los diplomas universitarios internacionales &mdash; Doctrina Qualitas, Sabal University, Universidad de
+las Naciones e ISTE Espa&ntilde;a &mdash; se emiten al completar el M&aacute;ster entero, no por bloque.
+&iquest;Te sirve para tu caso?
+Son 30 minutos con un asesor acad&eacute;mico. Te ubicamos y te decimos por d&oacute;nde empezar.
+Agendar una cita &#8594;
+Sin compromiso
+Hablar por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
 ### ✅ INFO Diplomado Arquitectos Ingenieros 4.0
 
 - **id:** `6a87259213ad6f85ed81a7e8`
@@ -11652,7 +11882,7 @@ designmodelingacademy.com
 
 - **id:** `6a7e0dcd66c34f90bed553aa`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:44:04.558Z
+- **actualizada:** 2026-09-16T15:56:53.753Z
 - **Cuerpo:**
 
 ```
@@ -11676,24 +11906,25 @@ Qu&eacute; incluye tu m&aacute;ster:
 &#9989; Material complementario 100% descargable y ejercicios pr&aacute;cticos aplicados a ejemplos reales.
 &#9989; DMA Engineering Suite: tu propio kit de apps de IA, con una nueva herramienta liberada cada mes.
 Sin costo adicional
-Sales con una titulaci&oacute;n completa
-Certificaciones Autodesk, microcredenciales NFT y t&iacute;tulos propios universitarios.
+Certificados y diplomas
+Certificaciones Autodesk por m&oacute;dulo y diplomas universitarios internacionales al finalizar.
 Autodesk
-Centro autorizado
 Design Modeling
-Con c&oacute;digo QR
 Doctrina Qualitas
-Aval universitario
 Sabal University
-Estados Unidos
 Univ. de las Naciones
-Equivalencia acad&eacute;mica
 ISTE Espa&ntilde;a
-T&iacute;tulo propio
-Al completar cada m&oacute;dulo obtienes una certificaci&oacute;n oficial de Autodesk &mdash; esto porque somos Centro de Entrenamiento Autorizado de la marca.
-Completando los m&oacute;dulos de cada bloque del plan de estudios obtienes una microcredencial NFT avalada por Silicon Valley .
-Adem&aacute;s, recibes diplomas de t&iacute;tulo propio de Sabal University, Universidad de las Naciones y Universidad ISTE Espa&ntilde;a .
-Y finalmente, un certificado universitario de Doctrinas Qualitas y Design Modeling Academy de 1440 horas acad&eacute;micas en l&iacute;nea. &#9989;
+Sin costo adicional
+Una credencial de rol por bloque
+Cada bloque cerrado te acredita en un rol distinto, en orden.
+Especialista BIM Professional
+Especialista BIM Coordination
+Especialista BIM Management
+Especialista BIM + IA
+Y al completar los cuatro
+M&aacute;ster BIM Management + IA
+Al terminar, el Certificado Universitario Internacional de Doctrina
+Qualitas y Design Modeling Academy de 1440 horas acad&eacute;micas en l&iacute;nea, Todo sin costo adicional. &#9989;
 &iquest;Tienes dudas antes de inscribirte?
 Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
 Hablar por WhatsApp

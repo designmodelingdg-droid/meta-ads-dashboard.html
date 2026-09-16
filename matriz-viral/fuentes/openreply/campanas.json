@@ -1,0 +1,405 @@
+{
+ "generado": "2026-09-16",
+ "ventana_series_dias": 30,
+ "fuente": "OpenReply — base propia (Postgres), solo lectura",
+ "nota_privacidad": "Solo agregados. No se lee `commenterName`, ni `commentText`, ni `accessToken`. Ningún dato personal sale de la base.",
+ "nota_cuenta": "No se dice a qué cuenta de Instagram pertenece cada campaña: `Automation.instagramAccountId` no está concedida al rol de solo lectura. Con una sola cuenta no hace falta; si algún día hay varias, hay que conceder esa columna.",
+ "nota_dms_por_palabra": "Los DM SÍ se cuentan por palabra: `DmLog.matchedKeyword` guarda cuál disparó cada envío. Ver el bloque `por_palabra`.",
+ "nota_clics": "Los clics cuelgan de la CAMPAÑA y del ENLACE, no de la palabra: `LinkClick` no guarda cuál palabra disparó. En una campaña con varias palabras no se pueden repartir entre ellas, y aquí no se inventa. Además son APERTURAS, no personas: la misma persona cuenta varias veces y los bots de vista previa también, así que los clics pueden superar a los envíos. Cuando eso pasa, `ctr` queda en nulo y se usa `clics_por_dm`.",
+ "fallos": [],
+ "campanas": [
+  {
+   "id": "cmtyii4hp000004l06x2awlzw",
+   "nombre": "TUTORIAL REVIT CHATGPT",
+   "palabras": [
+    "TUTORIAL"
+   ],
+   "casa_palabra_parcial": false,
+   "activa": true,
+   "post_id": "18058418423790058",
+   "post_url": "https://www.instagram.com/p/DdML72JCTFv/",
+   "creada": "2026-09-12T15:00:26.557",
+   "actualizada": "2026-09-15T18:08:16.634",
+   "enviados": 27,
+   "fallidos": 1,
+   "saltados": 0,
+   "pendientes": 0,
+   "primer_envio": "2026-09-12T15:01:42.345",
+   "ultimo_envio": "2026-09-15T17:46:44.414",
+   "clics": 1825,
+   "enlaces_rastreados": 2,
+   "mide_clics": true,
+   "clics_por_dm": 67.59,
+   "ctr": null,
+   "lectura_clics": "1825 clics sobre 27 DM enviados — 67.59 clics por DM. Al haber MÁS clics que envíos esto NO es un porcentaje de conversión: son aperturas repetidas de la misma persona, bots de vista previa, o el enlace circulando fuera del DM. El dato útil aquí es el número de clics, no una tasa."
+  },
+  {
+   "id": "cmtxm6vfz000604kwmijsiudi",
+   "nombre": "GUIA CHATGPT",
+   "palabras": [
+    "GUIA"
+   ],
+   "casa_palabra_parcial": false,
+   "activa": true,
+   "post_id": "18132563461711126",
+   "post_url": "https://www.instagram.com/reel/Dc36ISaE24d/",
+   "creada": "2026-09-11T23:55:53.903",
+   "actualizada": "2026-09-12T00:23:10.449",
+   "enviados": 3,
+   "fallidos": 1,
+   "saltados": 0,
+   "pendientes": 0,
+   "primer_envio": "2026-09-11T23:56:38.282",
+   "ultimo_envio": "2026-09-12T00:24:13.644",
+   "clics": 1,
+   "enlaces_rastreados": 1,
+   "mide_clics": true,
+   "clics_por_dm": 0.33,
+   "ctr": 0.3333,
+   "lectura_clics": "1 clics sobre 3 DM enviados (33%). Son clics, no personas: la misma persona puede contar varias veces."
+  }
+ ],
+ "por_palabra": [
+  {
+   "palabra": "TUTORIAL",
+   "campana": "TUTORIAL REVIT CHATGPT",
+   "campana_activa": true,
+   "enviados": 27,
+   "fallidos": 1,
+   "saltados": 0,
+   "primer_envio": "2026-09-12T15:01:42.345",
+   "ultimo_envio": "2026-09-15T17:46:44.414"
+  },
+  {
+   "palabra": "GUIA",
+   "campana": "GUIA CHATGPT",
+   "campana_activa": true,
+   "enviados": 3,
+   "fallidos": 0,
+   "saltados": 0,
+   "primer_envio": "2026-09-11T23:56:38.282",
+   "ultimo_envio": "2026-09-12T00:24:13.644"
+  }
+ ],
+ "motivos_de_fallo": [
+  {
+   "estado": "FAILED",
+   "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=A3ed7dK4_Y-8zwkdGrw6rvy]",
+   "veces": 1,
+   "ultima_vez": "2026-09-12T00:16:38.542"
+  },
+  {
+   "estado": "FAILED",
+   "motivo": "MetaApiError 1: An unknown error has occurred. (/v25.0/17841404048578200/messages) [code=1 sub=- type=OAuthException trace=AK8IoGPQfOgv-EaK82LvKAs]",
+   "veces": 1,
+   "ultima_vez": "2026-09-12T22:07:41.536"
+  }
+ ],
+ "enlaces": [
+  {
+   "slug": "zyl5qacW0Q",
+   "etiqueta": "Primary campaign link",
+   "destino": "https://designmodelingacademy.app.clientclub.net/communities/groups/comunidad-design/home?invite=6a580cbfb7771b9d30db799e",
+   "campana": "TUTORIAL REVIT CHATGPT",
+   "clics": 1808,
+   "primer_clic": "2026-09-12T15:03:09.041",
+   "ultimo_clic": "2026-09-15T17:48:13.246"
+  },
+  {
+   "slug": "-DRgWS-jxg",
+   "etiqueta": "Descargar la guía",
+   "destino": "https://funnel.dgdesignmodeling.com/acceso-gratis-guia-revit-chatgpt-form",
+   "campana": "TUTORIAL REVIT CHATGPT",
+   "clics": 17,
+   "primer_clic": "2026-09-12T15:03:20.564",
+   "ultimo_clic": "2026-09-15T17:51:44.63"
+  },
+  {
+   "slug": "CJFIJ9P32Q",
+   "etiqueta": "Primary campaign link",
+   "destino": "https://funnel.dgdesignmodeling.com/acceso-gratis-guia-revit-chatgpt-form",
+   "campana": "GUIA CHATGPT",
+   "clics": 1,
+   "primer_clic": "2026-09-12T00:25:12.035",
+   "ultimo_clic": "2026-09-12T00:25:12.035"
+  }
+ ],
+ "clics_por_dia": [
+  {
+   "fecha": "2026-09-12",
+   "clics": 73
+  },
+  {
+   "fecha": "2026-09-13",
+   "clics": 874
+  },
+  {
+   "fecha": "2026-09-14",
+   "clics": 869
+  },
+  {
+   "fecha": "2026-09-15",
+   "clics": 10
+  }
+ ],
+ "envios_por_dia": [
+  {
+   "fecha": "2026-09-11",
+   "enviados": 1
+  },
+  {
+   "fecha": "2026-09-12",
+   "enviados": 9
+  },
+  {
+   "fecha": "2026-09-13",
+   "enviados": 8
+  },
+  {
+   "fecha": "2026-09-14",
+   "enviados": 8
+  },
+  {
+   "fecha": "2026-09-15",
+   "enviados": 4
+  }
+ ],
+ "seguidores": [
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-08-17",
+   "seguidores": 79828
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-08-18",
+   "seguidores": 79856
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-08-19",
+   "seguidores": 79906
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-08-20",
+   "seguidores": 79954
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-08-21",
+   "seguidores": 79981
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-08-22",
+   "seguidores": 80001
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-08-23",
+   "seguidores": 80020
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-08-24",
+   "seguidores": 80041
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-08-25",
+   "seguidores": 80063
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-08-26",
+   "seguidores": 80093
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-08-27",
+   "seguidores": 80126
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-08-28",
+   "seguidores": 80170
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-08-29",
+   "seguidores": 80257
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-08-30",
+   "seguidores": 80313
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-08-31",
+   "seguidores": 80347
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-01",
+   "seguidores": 80393
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-02",
+   "seguidores": 80422
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-03",
+   "seguidores": 80462
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-04",
+   "seguidores": 80498
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-05",
+   "seguidores": 80539
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-06",
+   "seguidores": 80573
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-07",
+   "seguidores": 80608
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-08",
+   "seguidores": 80639
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-09",
+   "seguidores": 80639
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-10",
+   "seguidores": 80639
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-11",
+   "seguidores": 80639
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-12",
+   "seguidores": 80663
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-13",
+   "seguidores": 80725
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-14",
+   "seguidores": 80761
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-15",
+   "seguidores": 80787
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-16",
+   "seguidores": 80804
+  }
+ ],
+ "cotejo_con_la_matriz": [
+  {
+   "palabra": "ZAPATA",
+   "la_declara_la_matriz": true,
+   "montada_en_openreply": false,
+   "campana_activa": false,
+   "campanas": [],
+   "dms_enviados": 0,
+   "lectura": "No existe ninguna campaña con esta palabra. Si hay un CTA pidiéndola, el comentario no recibe nada."
+  },
+  {
+   "palabra": "ACERO",
+   "la_declara_la_matriz": true,
+   "montada_en_openreply": false,
+   "campana_activa": false,
+   "campanas": [],
+   "dms_enviados": 0,
+   "lectura": "No existe ninguna campaña con esta palabra. Si hay un CTA pidiéndola, el comentario no recibe nada."
+  },
+  {
+   "palabra": "NIVEL",
+   "la_declara_la_matriz": true,
+   "montada_en_openreply": false,
+   "campana_activa": false,
+   "campanas": [],
+   "dms_enviados": 0,
+   "lectura": "No existe ninguna campaña con esta palabra. Si hay un CTA pidiéndola, el comentario no recibe nada."
+  },
+  {
+   "palabra": "CHATGPT",
+   "la_declara_la_matriz": true,
+   "montada_en_openreply": false,
+   "campana_activa": false,
+   "campanas": [],
+   "dms_enviados": 0,
+   "lectura": "No existe ninguna campaña con esta palabra. Si hay un CTA pidiéndola, el comentario no recibe nada."
+  },
+  {
+   "palabra": "MEMORIA",
+   "la_declara_la_matriz": true,
+   "montada_en_openreply": false,
+   "campana_activa": false,
+   "campanas": [],
+   "dms_enviados": 0,
+   "lectura": "No existe ninguna campaña con esta palabra. Si hay un CTA pidiéndola, el comentario no recibe nada."
+  },
+  {
+   "palabra": "DYNAMO",
+   "la_declara_la_matriz": true,
+   "montada_en_openreply": false,
+   "campana_activa": false,
+   "campanas": [],
+   "dms_enviados": 0,
+   "lectura": "No existe ninguna campaña con esta palabra. Si hay un CTA pidiéndola, el comentario no recibe nada."
+  }
+ ],
+ "otras_palabras_montadas": [
+  {
+   "palabra": "GUIA",
+   "la_declara_la_matriz": false,
+   "montada_en_openreply": true,
+   "campana_activa": true,
+   "campanas": [
+    "GUIA CHATGPT"
+   ],
+   "dms_enviados": 3,
+   "lectura": "Viva: 3 DM enviados."
+  },
+  {
+   "palabra": "TUTORIAL",
+   "la_declara_la_matriz": false,
+   "montada_en_openreply": true,
+   "campana_activa": true,
+   "campanas": [
+    "TUTORIAL REVIT CHATGPT"
+   ],
+   "dms_enviados": 27,
+   "lectura": "Viva: 27 DM enviados."
+  }
+ ],
+ "cotejo_fiable": true
+}
