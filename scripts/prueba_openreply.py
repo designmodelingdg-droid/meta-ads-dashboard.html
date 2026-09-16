@@ -116,9 +116,12 @@ comprobar("pausada: CHATGPT está montada pero su campaña no está activa",
 comprobar("muda: NIVEL está activa pero nunca disparó",
           por["NIVEL"]["campana_activa"] and por["NIVEL"]["dms_enviados"] == 0
           and "todavía no ha disparado" in por["NIVEL"]["lectura"])
-comprobar("ausente: MEMORIA no existe en ninguna campaña",
+comprobar("ausente: MEMORIA no existe en ninguna campaña de OpenReply",
           not por["MEMORIA"]["montada_en_openreply"]
-          and "no recibe nada" in por["MEMORIA"]["lectura"])
+          and "No existe en OpenReply" in por["MEMORIA"]["lectura"])
+comprobar("y NO se afirma que el comentario se quede sin respuesta",
+          "GoHighLevel" in por["MEMORIA"]["lectura"],
+          "los disparadores de la matriz viven en GHL, que esto no ve")
 comprobar("se listan las seis palabras de la matriz", len(filas) == 6)
 comprobar("las de OpenReply que la matriz no declara salen aparte CON sus números",
           [f["palabra"] for f in otras] == ["BIM", "IA"]

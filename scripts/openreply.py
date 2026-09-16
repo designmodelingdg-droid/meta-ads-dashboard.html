@@ -325,8 +325,14 @@ def cotejar_con_la_matriz(por_palabra, campanas, hubo_fallo):
             return ("NO SE PUDO COMPROBAR: la consulta de campañas falló. "
                     "Esto NO significa que la palabra no exista.")
         if not m:
-            return ("No existe ninguna campaña con esta palabra. Si hay un CTA "
-                    "pidiéndola, el comentario no recibe nada.")
+            # OJO: esto NO significa que el comentario se quede sin respuesta.
+            # Los disparadores de la matriz se montan en GoHighLevel, que es
+            # otro sistema; OpenReply no sabe nada de el. Decir «no recibe
+            # nada» seria afirmar sobre un sistema que no se esta mirando.
+            return ("No existe en OpenReply. OJO: los disparadores de la matriz "
+                    "se montan en GoHighLevel, que este conector NO ve — así "
+                    "que esto no prueba que el comentario se quede sin "
+                    "respuesta. Hay que comprobarlo en GHL.")
         if not m["activa"]:
             return "La campaña existe pero está PAUSADA: el comentario no dispara."
         if not envios.get(palabra):
@@ -348,6 +354,8 @@ def cotejar_con_la_matriz(por_palabra, campanas, hubo_fallo):
     filas = [fila(p, montadas.get(p), True) for p in PALABRAS_MATRIZ]
 
     # y TODAS las demás que estén montadas, con sus números
+    # Las que viven en OpenReply y la matriz no declara. Importan mas que las
+    # seis buscadas: son las que estan midiendo de verdad.
     otras = [fila(k, montadas[k], False)
              for k in sorted(set(montadas) - set(PALABRAS_MATRIZ))]
 
@@ -375,6 +383,11 @@ def main():
         "nota_privacidad": (
             "Solo agregados. No se lee `commenterName`, ni `commentText`, ni "
             "`accessToken`. Ningún dato personal sale de la base."),
+        "nota_alcance": (
+            "Esto solo ve OpenReply. Los disparadores de palabra de la matriz "
+            "se montan en GoHighLevel, que es otro sistema y no se consulta "
+            "aquí. Que una palabra no aparezca NO prueba que el comentario se "
+            "quede sin respuesta."),
         "nota_cuenta": (
             "No se dice a qué cuenta de Instagram pertenece cada campaña: "
             "`Automation.instagramAccountId` no está concedida al rol de solo "
