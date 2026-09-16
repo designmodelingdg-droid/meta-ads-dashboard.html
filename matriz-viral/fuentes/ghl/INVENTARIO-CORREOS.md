@@ -11484,7 +11484,7 @@ designmodelingacademy.com
 
 - **id:** `6aaabc5f66b1d9d00c386d0e`
 - **tipo:** html
-- **actualizada:** 2026-09-16T16:11:53.748Z
+- **actualizada:** 2026-09-16T17:09:23.880Z
 - **Cuerpo:**
 
 ```
@@ -11513,14 +11513,17 @@ Qu&eacute; incluye tu formaci&oacute;n
 &#9989; DMA Engineering Suite: tu kit de apps de IA, con una herramienta nueva cada mes.
 Sin costo adicional
 Microcredenciales de este bloque
-Se emiten al completar cada m&oacute;dulo del bloque.
+Una por cada m&oacute;dulo completado, m&aacute;s la credencial que cierra el bloque.
 Estrategia BIM y Transformaci&oacute;n Digital
 Est&aacute;ndares BIM y Gesti&oacute;n de la Informaci&oacute;n
 Implementaci&oacute;n BIM en Empresas y Proyectos
-Sin costo adicional
 Y al cerrar el bloque
-La credencial que acredita el nivel completo.
 Especialista BIM Professional
+Sin costo adicional
+Diplomas y certificaciones
+Lo que acreditas al avanzar por este bloque.
+Autodesk
+Design Modeling
 &#9989; Certificaci&oacute;n oficial de Autodesk al
 completar cada m&oacute;dulo &mdash; somos Centro de Entrenamiento Autorizado.
 &#9989; Microcredencial profesional al completar cada
@@ -11540,7 +11543,7 @@ designmodelingacademy.com
 
 - **id:** `6aaabc814fe3b49a54d6a722`
 - **tipo:** html
-- **actualizada:** 2026-09-16T16:13:12.889Z
+- **actualizada:** 2026-09-16T17:09:07.125Z
 - **Cuerpo:**
 
 ```
@@ -11569,14 +11572,17 @@ Qu&eacute; incluye tu formaci&oacute;n
 &#9989; DMA Engineering Suite: tu kit de apps de IA, con una herramienta nueva cada mes.
 Sin costo adicional
 Microcredenciales de este bloque
-Se emiten al completar cada m&oacute;dulo del bloque.
+Una por cada m&oacute;dulo completado, m&aacute;s la credencial que cierra el bloque.
 Ecosistema Autodesk para Coordinaci&oacute;n BIM
 Coordinaci&oacute;n Multidisciplinaria y Clash Detection
 Construcci&oacute;n Digital y Control de Obra
-Sin costo adicional
 Y al cerrar el bloque
-La credencial que acredita el nivel completo.
 Especialista BIM Coordination
+Sin costo adicional
+Diplomas y certificaciones
+Lo que acreditas al avanzar por este bloque.
+Autodesk
+Design Modeling
 &#9989; Certificaci&oacute;n oficial de Autodesk al
 completar cada m&oacute;dulo &mdash; somos Centro de Entrenamiento Autorizado.
 &#9989; Microcredencial profesional al completar cada
@@ -11596,7 +11602,7 @@ designmodelingacademy.com
 
 - **id:** `6aaabc937919774ef27d3430`
 - **tipo:** html
-- **actualizada:** 2026-09-16T16:13:24.120Z
+- **actualizada:** 2026-09-16T17:08:51.345Z
 - **Cuerpo:**
 
 ```
@@ -11625,13 +11631,16 @@ Qu&eacute; incluye tu formaci&oacute;n
 &#9989; DMA Engineering Suite: tu kit de apps de IA, con una herramienta nueva cada mes.
 Sin costo adicional
 Microcredenciales de este bloque
-Se emiten al completar cada m&oacute;dulo del bloque.
+Una por cada m&oacute;dulo completado, m&aacute;s la credencial que cierra el bloque.
 Gesti&oacute;n BIM 4D-7D: Tiempo, Costos y Ciclo de Vida
 Direcci&oacute;n Estrat&eacute;gica de Proyectos BIM
-Sin costo adicional
 Y al cerrar el bloque
-La credencial que acredita el nivel completo.
 Especialista BIM Management
+Sin costo adicional
+Diplomas y certificaciones
+Lo que acreditas al avanzar por este bloque.
+Autodesk
+Design Modeling
 &#9989; Certificaci&oacute;n oficial de Autodesk al
 completar cada m&oacute;dulo &mdash; somos Centro de Entrenamiento Autorizado.
 &#9989; Microcredencial profesional al completar cada
@@ -11651,7 +11660,7 @@ designmodelingacademy.com
 
 - **id:** `6aaabcd9b0cd6d0085aac58d`
 - **tipo:** html
-- **actualizada:** 2026-09-16T16:13:33.281Z
+- **actualizada:** 2026-09-16T17:08:34.009Z
 - **Cuerpo:**
 
 ```
@@ -11694,24 +11703,24 @@ reales.
 DMA Engineering Suite: tu kit de apps de IA, con una herramienta nueva cada mes.
 Sin costo adicional
 Microcredenciales de este bloque
-Se emiten al
-completar cada m&oacute;dulo del bloque.
+Una por cada
+m&oacute;dulo completado, m&aacute;s la credencial que cierra el bloque.
 Automatizaci&oacute;n BIM con Dynamo y Python
 Inteligencia
 Artificial Aplicada a Proyectos BIM
 Automatizaci&oacute;n Avanzada y Desarrollo de Soluciones
+Y al cerrar el bloque
+Especialista BIM + IA
 Sin costo adicional
-Y al cerrar el
-bloque
-La credencial
-que acredita el nivel completo.
-Especialista
-BIM + IA
-&#9989; Certificaci&oacute;n oficial de Autodesk
-al
+Diplomas y
+certificaciones
+Lo que acreditas al
+avanzar por este bloque.
+Autodesk
+Design Modeling
+&#9989; Certificaci&oacute;n oficial de Autodesk al
 completar cada m&oacute;dulo &mdash; somos Centro de Entrenamiento Autorizado.
-&#9989; Microcredencial profesional al completar
-cada
+&#9989; Microcredencial profesional al completar cada
 bloque del plan de estudios.
 Y si completas el recorrido, accedes a la titulaci&oacute;n universitaria del M&aacute;ster.
 &iquest;Tienes dudas antes de inscribirte?
@@ -11896,7 +11905,7 @@ designmodelingacademy.com
 
 - **id:** `6a7e0dcd66c34f90bed553aa`
 - **tipo:** html
-- **actualizada:** 2026-09-16T16:17:45.149Z
+- **actualizada:** 2026-09-16T17:09:36.753Z
 - **Cuerpo:**
 
 ```
@@ -11938,7 +11947,16 @@ Qu&eacute; incluye tu formaci&oacute;n
 &#9989; Material descargable y ejercicios pr&aacute;cticos aplicados a proyectos reales.
 &#9989; DMA Engineering Suite: tu kit de apps de IA, con una herramienta nueva cada mes.
 Sin costo adicional
-Certificados y diplomas
+Una microcredencial por bloque
+Cada bloque cerrado te acredita en una competencia distinta.
+Especialista BIM Professional
+Especialista BIM Coordination
+Especialista BIM Management
+Especialista BIM + IA
+Y al completar los cuatro
+M&aacute;ster BIM Management + IA
+Sin costo adicional
+Diplomas y certificaciones
 Certificaciones Autodesk por m&oacute;dulo y diplomas universitarios internacionales al finalizar.
 Autodesk
 Design Modeling
@@ -11950,15 +11968,6 @@ ISTE Espa&ntilde;a
 &#9989; Microcredencial profesional al completar cada bloque del plan de estudios.
 &#9989; Diplomas universitarios de las instituciones aliadas del programa.
 &#9989; Al culminar, certificado universitario de 1440 horas acad&eacute;micas .
-Sin costo adicional
-Una credencial de rol por bloque
-Cada bloque cerrado te acredita en una competencia distinta.
-Especialista BIM Professional
-Especialista BIM Coordination
-Especialista BIM Management
-Especialista BIM + IA
-Y al completar los cuatro
-M&aacute;ster BIM Management + IA
 &iquest;Tienes dudas antes de inscribirte?
 Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
 Hablar por WhatsApp

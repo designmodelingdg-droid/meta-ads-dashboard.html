@@ -3,38 +3,38 @@
  "nota": "Agregados de conversaciones para perfilar leads. NO contiene nombres, telefonos ni correos: los fragmentos pasan por un limpiador antes de escribirse.",
  "conversaciones_traidas": 300,
  "con_mensajes_revisadas": 300,
- "menciona_master": 18,
+ "menciona_master": 19,
  "mensajes_por_conversacion": {
   "mediana": 27,
-  "media": 38.3,
+  "media": 39.3,
   "solo_un_mensaje": 0
  },
  "quien_habla_ultimo": {
-  "nosotros": 290,
-  "la persona (quedó sin responder)": 10
+  "nosotros": 293,
+  "la persona (quedó sin responder)": 7
  },
- "quedaron_sin_responder": 10,
+ "quedaron_sin_responder": 7,
  "canales": {
   "TYPE_PHONE": 300
  },
  "temas_todas": {
-  "software": 132,
-  "perfil_propio": 118,
-  "precio": 87,
-  "inicio": 72,
-  "duracion": 60,
-  "temario": 40,
-  "empleo": 39,
-  "certificado": 25,
+  "software": 131,
+  "perfil_propio": 119,
+  "precio": 85,
+  "inicio": 71,
+  "duracion": 61,
+  "temario": 43,
+  "empleo": 40,
+  "certificado": 30,
   "requisitos": 21,
-  "modalidad": 14
+  "modalidad": 16
  },
  "temas_solo_master": {
-  "perfil_propio": 14,
-  "certificado": 10,
+  "perfil_propio": 16,
+  "certificado": 12,
   "temario": 10,
-  "software": 9,
-  "duracion": 9,
+  "software": 10,
+  "duracion": 10,
   "precio": 9,
   "empleo": 7,
   "inicio": 6,
@@ -42,6 +42,26 @@
   "requisitos": 1
  },
  "ejemplos_anonimos": [
+  {
+   "mensajes": 60,
+   "quedo_sin_responder": false,
+   "primer_mensaje": "Full name: Ulises Hernandez Phone number: [telefono] Email: [correo] ¿Tienes experiencia utilizando software técnico (ejemplo: AutoCAD, Revit, SAP2000, etc.)?: Sí, manejo avanzado ¿A qué rubro perteneces?: Arquitecto ¿Ha"
+  },
+  {
+   "mensajes": 79,
+   "quedo_sin_responder": false,
+   "primer_mensaje": "↩️ Replied to: Veo que te interesa nuestro Máster Internacional en Big Management con Inteligencia artificial, es correcto?? ↪️ Message: Hola buen dia Es correcto 📱 [Received on Design Modeling Academy ([telefono])]"
+  },
+  {
+   "mensajes": 100,
+   "quedo_sin_responder": false,
+   "primer_mensaje": "Nombre: Ruben Fabian Garcia Herrera Cédula: [telefono] Correo electrónico: [correo] 📱 [Received on Design Modeling Academy ([telefono])]"
+  },
+  {
+   "mensajes": 18,
+   "quedo_sin_responder": false,
+   "primer_mensaje": "Buen día, no me ha llegado ninguna información, pero todavía no voy a tomar ese masterado 📱 [Received on Design Modeling Academy ([telefono])]"
+  },
   {
    "mensajes": 17,
    "quedo_sin_responder": false,
@@ -51,16 +71,6 @@
    "mensajes": 13,
    "quedo_sin_responder": false,
    "primer_mensaje": "Es una maestría avalado por el senescyt? 📱 [Received on Design Modeling Academy ([telefono])]"
-  },
-  {
-   "mensajes": 16,
-   "quedo_sin_responder": true,
-   "primer_mensaje": "Buen día, no me ha llegado ninguna información, pero todavía no voy a tomar ese masterado 📱 [Received on Design Modeling Academy ([telefono])]"
-  },
-  {
-   "mensajes": 74,
-   "quedo_sin_responder": false,
-   "primer_mensaje": "↩️ Replied to: Veo que te interesa nuestro Máster Internacional en Big Management con Inteligencia artificial, es correcto?? ↪️ Message: Hola buen dia Es correcto 📱 [Received on Design Modeling Academy ([telefono])]"
   },
   {
    "mensajes": 13,
@@ -126,11 +136,6 @@
    "mensajes": 100,
    "quedo_sin_responder": false,
    "primer_mensaje": "Si estoy interesado"
-  },
-  {
-   "mensajes": 100,
-   "quedo_sin_responder": true,
-   "primer_mensaje": "↩️ Replied to: Necesitamos que nos confirmes tu asistencia por favor ↪️ Message: Confirmado 📱 [Received on Design Modeling Academy ([telefono])]"
   }
  ],
  "limite_aplicado": 300,

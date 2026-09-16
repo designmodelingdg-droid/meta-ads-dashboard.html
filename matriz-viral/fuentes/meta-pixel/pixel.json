@@ -3003,16 +3003,6 @@
      "para_que": "cuantos eventos de cada tipo llegaron",
      "filas": [
       {
-       "start_time": "2026-08-19T16:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "PageView",
-         "count": 3
-        }
-       ]
-      },
-      {
        "start_time": "2026-08-19T17:00:00+0000",
        "aggregation": "event",
        "data": [
@@ -7269,16 +7259,6 @@
     "event_source": {
      "para_que": "WEB_ONLY vs SERVER_ONLY — asi se detecta si la CAPI vive",
      "filas": [
-      {
-       "start_time": "2026-08-19T16:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "BROWSER",
-         "count": 3
-        }
-       ]
-      },
       {
        "start_time": "2026-08-19T17:00:00+0000",
        "aggregation": "event_source",
@@ -16481,20 +16461,6 @@
      "para_que": "reparto por dispositivo",
      "filas": [
       {
-       "start_time": "2026-08-19T16:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 2
-        },
-        {
-         "value": "mobile_android_phone",
-         "count": 1
-        }
-       ]
-      },
-      {
        "start_time": "2026-08-19T17:00:00+0000",
        "aggregation": "device_type",
        "data": [
@@ -20351,20 +20317,6 @@
     "browser_type": {
      "para_que": "reparto por navegador",
      "filas": [
-      {
-       "start_time": "2026-08-19T16:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Chrome Desktop",
-         "count": 2
-        },
-        {
-         "value": "Samsung Browser",
-         "count": 1
-        }
-       ]
-      },
       {
        "start_time": "2026-08-19T17:00:00+0000",
        "aggregation": "browser_type",
@@ -24677,7 +24629,7 @@
     }
    },
    "eventos_servidor": 0,
-   "eventos_navegador": 2185,
+   "eventos_navegador": 2182,
    "capi_detectada": false,
    "nota_capi": "Cero eventos de servidor en la ventana. Si el pixel si dispara, la CAPI no esta desplegada — es el check M02, critico, y Meta cifra la perdida de datos sin el en 30-40%."
   },
@@ -24700,24 +24652,6 @@
     "event": {
      "para_que": "cuantos eventos de cada tipo llegaron",
      "filas": [
-      {
-       "start_time": "2026-08-19T16:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "CompleteRegistration",
-         "count": 3
-        },
-        {
-         "value": "Schedule",
-         "count": 2
-        },
-        {
-         "value": "PageView",
-         "count": 2
-        }
-       ]
-      },
       {
        "start_time": "2026-08-19T17:00:00+0000",
        "aggregation": "event",
@@ -30596,20 +30530,6 @@
      "para_que": "WEB_ONLY vs SERVER_ONLY — asi se detecta si la CAPI vive",
      "filas": [
       {
-       "start_time": "2026-08-19T16:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "SERVER",
-         "count": 5
-        },
-        {
-         "value": "BROWSER",
-         "count": 2
-        }
-       ]
-      },
-      {
        "start_time": "2026-08-19T17:00:00+0000",
        "aggregation": "event_source",
        "data": [
@@ -35688,82 +35608,6 @@
     "match_keys": {
      "para_que": "que parametros de emparejamiento se envian (insumo del EMQ)",
      "filas": [
-      {
-       "start_time": "2026-08-19T16:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "CompleteRegistration",
-         "value": "country",
-         "count": 3
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "email",
-         "count": 3
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "fn",
-         "count": 3
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "phone",
-         "count": 3
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "ln",
-         "count": 2
-        },
-        {
-         "event": "Schedule",
-         "value": "country",
-         "count": 2
-        },
-        {
-         "event": "Schedule",
-         "value": "fn",
-         "count": 2
-        },
-        {
-         "event": "Schedule",
-         "value": "ln",
-         "count": 2
-        },
-        {
-         "event": "Schedule",
-         "value": "phone",
-         "count": 2
-        },
-        {
-         "event": "PageView",
-         "value": "c_user_cookie",
-         "count": 2
-        },
-        {
-         "event": "PageView",
-         "value": "fr_cookie",
-         "count": 2
-        },
-        {
-         "event": "PageView",
-         "value": "raw_fr_cookie",
-         "count": 2
-        },
-        {
-         "event": "PageView",
-         "value": "true_fr_cookie",
-         "count": 2
-        },
-        {
-         "event": "Schedule",
-         "value": "email",
-         "count": 1
-        }
-       ]
-      },
       {
        "start_time": "2026-08-19T17:00:00+0000",
        "aggregation": "match_keys",
@@ -52475,16 +52319,6 @@
      "para_que": "reparto por dispositivo",
      "filas": [
       {
-       "start_time": "2026-08-19T16:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 7
-        }
-       ]
-      },
-      {
        "start_time": "2026-08-19T17:00:00+0000",
        "aggregation": "device_type",
        "data": [
@@ -57579,20 +57413,6 @@
     "browser_type": {
      "para_que": "reparto por navegador",
      "filas": [
-      {
-       "start_time": "2026-08-19T16:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Unknown",
-         "count": 5
-        },
-        {
-         "value": "Chrome Desktop",
-         "count": 2
-        }
-       ]
-      },
       {
        "start_time": "2026-08-19T17:00:00+0000",
        "aggregation": "browser_type",
@@ -63384,10 +63204,10 @@
      ]
     }
    },
-   "eventos_servidor": 953,
-   "eventos_navegador": 673,
+   "eventos_servidor": 948,
+   "eventos_navegador": 671,
    "capi_detectada": true,
-   "nota_capi": "Hay 953 eventos de SERVIDOR contra 673 de navegador: la Conversions API esta enviando."
+   "nota_capi": "Hay 948 eventos de SERVIDOR contra 671 de navegador: la Conversions API esta enviando."
   }
  ],
  "fallos": []
