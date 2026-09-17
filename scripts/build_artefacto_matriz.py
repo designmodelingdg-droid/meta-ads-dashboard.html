@@ -22,6 +22,43 @@ import sys
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
+
+# ── Secciones que no salen del JSON ────────────────────────────────────────
+#
+# Hay tres bloques del artefacto que se escribieron a mano sobre la copia
+# publicada y que este generador no sabia reproducir: la pestana «Que
+# funciona» entera, los copys corregidos de ACERO dentro de Publicidad, y los
+# dos videos del tutor. Quien regenerara y publicara los BORRABA sin enterarse
+# — y uno de ellos lleva las dos correcciones de Patricio.
+#
+# Ahora viven como fragmentos de HTML en `matriz/secciones-artefacto/` y se
+# insertan aqui. Se guardan como HTML y no como Markdown a proposito: usan las
+# clases de este artefacto (.gana, .copyliteral, .dato, .cifra) y convertirlos
+# desde Markdown cambiaria como se ven.
+#
+# El texto de referencia de esos bloques vive ademas en:
+#   matriz/OCTUBRE-QUE-FUNCIONA.md    → qfunciona.html
+#   matriz/COPYS-CORREGIDOS-ACERO.md  → pauta-copys-acero.html
+# Si se corrige el contenido, se corrigen LOS DOS. El .md es el que se lee; el
+# fragmento es el que se publica.
+SECCIONES = RAIZ / "matriz-viral" / "matriz" / "secciones-artefacto"
+
+
+def fragmento(nombre, obligatorio=True):
+    """Devuelve un trozo de HTML escrito a mano, o revienta si falta.
+
+    Revienta a proposito: si el fichero no esta, lo que sale es un artefacto
+    al que le falta una pestana, y eso no se nota mirando. Mejor que no
+    genere nada.
+    """
+    f = SECCIONES / nombre
+    if not f.exists():
+        if not obligatorio:
+            return ""
+        raise SystemExit(
+            f"::error::Falta {f}. Es una seccion del artefacto que no sale del "
+            "JSON; sin ella el artefacto se publica incompleto. No se genera.")
+    return f.read_text(encoding="utf-8").strip()
 MATRIZ = RAIZ / "matriz-viral" / "matriz"
 sys.path.insert(0, str(MATRIZ))
 
@@ -512,9 +549,22 @@ def ficha_anuncio(p):
     return "\n".join(o)
 
 
+def tab_quefunciona():
+    """El cruce de las 169 piezas, el sector, pixel/CAPI y los copys de ACERO.
+
+    No sale del JSON: es analisis escrito, y su fuente de lectura es
+    `matriz/OCTUBRE-QUE-FUNCIONA.md`.
+    """
+    return fragmento("qfunciona.html")
+
+
 def tab_pauta():
     pub = CAL["publicidad"]
     o = ['<h2>Publicidad — sale todo junto el lunes 7</h2>',
+         # Los copys corregidos de ACERO y el estado que reporto Patricio. Van
+         # ARRIBA, antes del calendario de la campana, porque son lo accionable
+         # de esta pestana: se pegan hoy.
+         fragmento("pauta-copys-acero.html"),
          f'<p class="intro">{e(pub["nota"])}</p>']
     if pub.get("indicaciones"):
         o.append('<div class="indic"><h3>Antes de subir nada</h3>')
@@ -628,6 +678,9 @@ def tab_tutor():
              '<tr><th>Límites</th><td>' + " · ".join(e(x) for x in t["limites"]) + '</td></tr>'
              '</tbody></table></div>')
     n = t["nombres_de_curso"]
+    # Los dos videos de presentacion (16:9 y 9:16). Se apoyan en ficheros de
+    # `video-tutor-ia/` y en el CSS .vids de este artefacto.
+    o.append(fragmento("tutor-videos.html"))
     o.append('<h2>Nombres de curso propuestos</h2>')
     o.append(f'<p class="intro">{e(n["regla"])}</p>')
     o.append('<div class="tabla-scroll"><table><thead><tr><th>Nombre actual</th>'
@@ -649,6 +702,7 @@ PESTANAS = [
     ("g5", "G5 · Historias", tab_historias),
     ("reels", "Reels", tab_reels),
     ("pauta", "Publicidad", tab_pauta),
+    ("qfunciona", "Qué funciona", tab_quefunciona),
     ("lm", "Lead magnets", tab_leadmagnets),
     ("tutor", "Tutor IA", tab_tutor),
 ]
