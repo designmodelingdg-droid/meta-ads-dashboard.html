@@ -288,6 +288,58 @@ def bloque_grabacion():
     return "\n".join(o)
 
 
+def contexto_frame(sem, d, i, total):
+    """Lo que hace que una tarjeta SUELTA se entienda sin subir a la cabecera.
+
+    Por que existe: Daniela reenvia los frames de uno en uno por WhatsApp para
+    pedirle a Gabriel que los grabe. En el artefacto el hilo de la semana y el
+    papel del dia estan arriba del todo, asi que en el reenvio se quedan atras
+    y el frame llega solo: «La verdad: nadie reviso el cruce» sin decir que
+    cruce, de que caso ni de que semana.
+
+    Con esto, cualquier captura de una tarjeta lleva encima de que va.
+    """
+    return (f'<p class="ctx"><b>S{sem["n"]} · {e(sem["hilo"])}</b> — '
+            f'{e(d["dia"])}: {e(d["titulo"])} · frame {i} de {total}</p>')
+
+
+def grabacion_semana(sem):
+    """Las tomas reales de ESA semana, con su historia al lado.
+
+    El bloque general de «Lo que hay que grabar» resume el mes entero en once
+    vinetas genericas, y la semana 2 sola pide 17 tomas. Una vineta que dice
+    «Gabriel hablando a camara, 3 tomas de 15 s» no le dice a Gabriel de que
+    habla en cada una. Esta tabla si: cada toma con su dia, su frame y el texto
+    que va en pantalla, que es lo que da el tema.
+    """
+    tomas = []
+    for d in sem["dias"]:
+        for i, hh in enumerate(d["historias"], 1):
+            fondo = hh.get("fondo") or ""
+            if "REAL" in fondo:
+                tomas.append((d["dia"], i, fondo, hh.get("prompt") or "",
+                              hh.get("texto") or ""))
+    if not tomas:
+        return ""
+
+    camara = sum(1 for x in tomas if "cámara" in x[2])
+    pantalla = len(tomas) - camara
+    o = ['<div class="grabar"><h3>Lo que Gabriel graba esta semana</h3>',
+         f'<p class="nota"><b>{len(tomas)} tomas</b> — {camara} de cámara y '
+         f'{pantalla} de pantalla. Cada una con la historia a la que pertenece, '
+         'para que se pueda pedir sin explicar nada aparte.</p>',
+         '<div class="tabla-scroll"><table><thead><tr><th>Cuándo</th>'
+         '<th>Qué se graba</th><th>Para qué historia</th></tr></thead><tbody>']
+    for dia, i, fondo, prompt, texto in tomas:
+        clase = "cam" if "cámara" in fondo else "pan"
+        o.append(f'<tr><td style="white-space:nowrap">{e(dia)}<br>'
+                 f'<span class="fondo f-{clase}">frame {i}</span></td>'
+                 f'<td>{e(prompt)}</td>'
+                 f'<td><i>«{e(texto)}»</i></td></tr>')
+    o.append('</tbody></table></div></div>')
+    return "".join(o)
+
+
 def tab_historias():
     g = CAL["grupos"][4]
     o = [f'<h2>{e(g["nombre"])}</h2>',
@@ -309,7 +361,8 @@ def tab_historias():
     for sem in H.SEMANAS:
         o.append(f'<div class="semana" data-sem="{sem["n"]}"><div class="semana-cab"><span class="snum">S{sem["n"]}</span>'
                  f'<div><h3>{e(sem["hilo"])}</h3><span class="rango">{e(sem["rango"])}</span></div></div>'
-                 f'<p class="nota">{e(sem["porque"])}</p>')
+                 f'<p class="nota">{e(sem["porque"])}</p>'
+                 + grabacion_semana(sem))
         for d in sem["dias"]:
             k = clave("g5", d["dia"])
             papel = (f'<span class="papel">{e(d["papel"])}</span>' if d.get("papel") else "")
@@ -321,6 +374,7 @@ def tab_historias():
                         f'{e(fondo)}</span>') if fondo else ""
                 o.append(f'<div class="hist"><div class="hist-cab"><span class="frame">{i}</span>'
                          f'<span class="rol rol-{hh["rol"][:4].lower()}">{e(hh["rol"])}</span>{chip}</div>')
+                o.append(contexto_frame(sem, d, i, len(d["historias"])))
                 o.append(bloque_pegar(hh["texto"]))
                 o.append(f'<p class="sticker"><b>Sticker:</b> {e(hh["sticker"])}</p>')
                 o.append(fondo_img(fondo, hh["prompt"]))
@@ -779,6 +833,10 @@ ol.slides li{font-size:14px;margin-bottom:9px}
 .hist{border-top:1px solid var(--line);padding:12px 0 4px}
 .hist:first-of-type{border-top:0;padding-top:0}
 .hist-cab{display:flex;align-items:center;gap:9px;margin-bottom:6px}
+/* El contexto viaja CON la tarjeta: una captura suelta tiene que decir de que va. */
+.ctx{font-family:var(--mono);font-size:10.5px;color:var(--ink-3);margin:0 0 6px;
+  line-height:1.45}
+.ctx b{color:var(--amber-deep);font-family:var(--display);font-size:11px}
 .frame{font-family:var(--mono);font-size:11px;font-weight:600;background:var(--navy);color:#fff;
   width:20px;height:20px;border-radius:50%;display:grid;place-items:center;flex:none}
 .rol{font-family:var(--display);font-weight:800;font-size:10.5px;letter-spacing:.09em;
