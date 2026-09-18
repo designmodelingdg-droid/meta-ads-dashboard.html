@@ -19,6 +19,7 @@ import os, sys, json, re, unicodedata, urllib.request, urllib.error
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MATRIZ = os.path.join(ROOT, "matriz-viral", "matriz", "matriz.json")
 ACTOR = "apify~instagram-scraper"   # posts (reels + carruseles + imágenes)
+TOPE_USD = 0.50                    # tope duro por corrida (regla 3 del CLAUDE.md)
 
 USERNAME = os.environ.get("USERNAME_IG", "design_modeling_dg")
 LIMIT = int(os.environ.get("LIMIT", "40"))
@@ -89,12 +90,24 @@ def _tipo(post):
 def scrape():
     if not TOKEN:
         print("ERROR: falta APIFY_TOKEN"); sys.exit(1)
+    # EL TOPE DURO, que faltaba. La regla 3 de matriz-viral/CLAUDE.md exige los
+    # DOS —`resultsLimit` y `maxTotalChargeUsd`— y aqui solo estaba el primero.
+    # `resultsLimit` acota cuantos resultados pide, no cuanto puede cobrar la
+    # corrida: si el actor cobra por otra unidad o se dispara, no hay freno.
+    # `maxTotalChargeUsd` si lo es: Apify corta ahi aunque falten resultados.
+    #
+    # Importa mas ahora que antes: este script corre SOLO todos los lunes y se
+    # come del mismo credito gratuito de $5/mes que necesita la prospeccion
+    # (skill `prospeccion-dg`). Sin tope, una corrida rara deja el mes seco.
+    #
+    # Va en el payload Y en la URL, igual que en `nicho_viral.py`.
     payload = json.dumps({
         "directUrls": [f"https://www.instagram.com/{USERNAME}/"],
         "resultsType": "posts", "resultsLimit": LIMIT, "addParentData": False,
+        "maxTotalChargeUsd": TOPE_USD,
     }).encode()
     url = (f"https://api.apify.com/v2/acts/{ACTOR}/run-sync-get-dataset-items"
-           f"?token={TOKEN}")
+           f"?token={TOKEN}&maxTotalChargeUsd={TOPE_USD}")
     req = urllib.request.Request(url, data=payload, headers={"Content-Type": "application/json"})
     try:
         with urllib.request.urlopen(req, timeout=280) as r:
