@@ -1,8 +1,8 @@
 {
- "generado": "2026-09-16",
+ "generado": "2026-09-18",
  "revisadas": 107,
- "caidas": 4,
- "criticas": 1,
+ "caidas": 3,
+ "criticas": 0,
  "resultados": {
   "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/eficiencia-acero/": {
    "codigo": 200,
@@ -251,8 +251,8 @@
    "critico": null
   },
   "https://designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero": {
-   "codigo": null,
-   "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'designmodelingacademy.com'. (_ssl.c:1000)>",
+   "codigo": 200,
+   "error": null,
    "aparece_en": [
     "(destino del bot)",
     "eficiencia-acero/guia.html",
@@ -316,8 +316,8 @@
    "critico": null
   },
   "https://designmodelingacademy.com/workshop-dynamo": {
-   "codigo": null,
-   "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'designmodelingacademy.com'. (_ssl.c:1000)>",
+   "codigo": 404,
+   "error": null,
    "aparece_en": [
     ".claude/skills/landing-evento/SKILL.md"
    ],
@@ -833,6 +833,17 @@
    ],
    "critico": null
   },
+  "https://funnel.dgdesignmodeling.com/acceso-gratis-guia-revit-chatgpt-form": {
+   "codigo": 200,
+   "error": null,
+   "aparece_en": [
+    "EN VIVO en hub de recursos",
+    "matriz-viral/fuentes/openreply/campanas.json",
+    "recursos/ghl-recursos.html",
+    "recursos/index.html"
+   ],
+   "critico": "enlace roto en la pagina publicada: hub de recursos"
+  },
   "https://funnel.dgdesignmodeling.com/acceso-gratis-calculadora-zapatas-gracias": {
    "codigo": 200,
    "error": null,
@@ -912,16 +923,6 @@
     "memoria-calculo/ghl-gracias.html"
    ],
    "critico": null
-  },
-  "https://funnel.dgdesignmodeling.com/acceso-gratis-guia-revit-chatgpt-form": {
-   "codigo": 200,
-   "error": null,
-   "aparece_en": [
-    "EN VIVO en hub de recursos",
-    "recursos/ghl-recursos.html",
-    "recursos/index.html"
-   ],
-   "critico": "enlace roto en la pagina publicada: hub de recursos"
   },
   "https://funnel.dgdesignmodeling.com/acceso-gratis-memoria-calculo-form": {
    "codigo": 200,
