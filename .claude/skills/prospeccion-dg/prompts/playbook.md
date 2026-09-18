@@ -1,15 +1,51 @@
-# El playbook — los ocho prompts, en orden
+# El playbook — ocho pasos, por teléfono y WhatsApp
 
-De la guía de tododeia sobre Apify, con los ajustes de DMA marcados **así**.
+De la guía de tododeia sobre Apify, **cambiado el canal**: en vez de correo en
+frío, teléfono y WhatsApp. Los ajustes de DMA van marcados **así**.
+
 Se pegan de a uno, esperando respuesta. Cada uno deja un archivo que el
 siguiente necesita.
+
+## Por qué por teléfono y no por correo
+
+| De 1.000 negocios de Google Maps | |
+|---|---|
+| Con **teléfono** | ~950 — viene directo del mapa |
+| Con **correo** | ~350 — hay que entrar a su web a buscarlo |
+
+Triplica la base contactable, gasta menos crédito (no hay que rastrear webs), y
+**no toca `info@dgdesignmodeling.com`**, que está en verde porque solo escribe a
+quien pidió algo. Ese verde es lo que está en juego, no lo que protege.
+
+## Las reglas del canal nuevo
+
+Un negocio publica su teléfono en Google Maps **para que lo llamen**. Escribirle
+o llamarle es contacto comercial normal — no es lo mismo que escribirle en frío
+a una persona que nunca publicó nada.
+
+Dicho eso, tres cosas que sí queman el número:
+
+1. **Número aparte, no el personal de nadie.** Un WhatsApp Business propio para
+   esto. Si lo bloquean, no se lleva por delante el teléfono con el que hablas
+   con alumnos y clientes.
+2. **Volumen bajo y creciendo despacio.** Un número nuevo mandando decenas de
+   mensajes el primer día es la forma conocida de que lo bloqueen. No te doy una
+   cifra exacta porque no la tengo verificada; empieza en unos pocos al día y
+   sube según vaya.
+3. **Nada de herramientas de envío masivo ni APIs no oficiales.** Ese es el
+   disparador de bloqueo más claro que hay. Se manda a mano o con WhatsApp
+   Business oficial.
+
+Y una que vale más que las tres: **a los de grado A se les llama, no se les
+escribe.** Una llamada de treinta segundos vale más que veinte mensajes.
 
 ---
 
 ## 1 · La entrevista que evita la lista basura
 
-> Vas a ayudarme a conseguir clientes para **Design Modeling DG, la parte de
-> consultoría** — no para la Academy. Antes de correr nada, entrevístame.
+> Vas a ayudarme a conseguir clientes para **Design Modeling DG, la consultoría**
+> — no para la Academy. El canal es **teléfono y WhatsApp**, no correo. Antes de
+> correr nada, entrevístame.
 >
 > Hazme las preguntas de a una, esperando mi respuesta, y no me des opciones de
 > más de cinco. Necesitas saber:
@@ -18,12 +54,13 @@ siguiente necesita.
 > 3. Dónde están: ciudad, país. Si son varios, en qué orden.
 > 4. Cuánto vale un cliente nuevo y cuántos hacen falta al mes.
 > 5. Cómo se contacta hoy y qué ha funcionado o fallado.
-> 6. Quién NO es cliente: los que ya sabemos que hacen perder el tiempo.
+> 6. Quién NO es cliente.
+> 7. **Quién va a llamar y en qué horario puede.** Esto manda: de nada sirve una
+>    lista de 50 si nadie tiene la tarde para llamar.
 >
 > Cuando tengas todo, escríbeme `perfil-cliente.md` con: el cliente ideal en un
-> párrafo; mínimo cinco señales de que alguien SÍ califica, concretas y
-> verificables desde fuera; mínimo cinco señales de descarte; la red donde
-> conviene buscarlos y por qué esa; y cinco búsquedas concretas para arrancar.
+> párrafo; mínimo cinco señales de que alguien SÍ califica, verificables desde
+> fuera; mínimo cinco de descarte; y cinco búsquedas concretas para arrancar.
 >
 > Muéstramelo antes de guardarlo. **Todavía no corras ningún actor ni gastes
 > crédito.**
@@ -34,153 +71,165 @@ siguiente necesita.
 
 > Vamos a probar antes de gastar. Lee `perfil-cliente.md`.
 >
-> Elige el actor de Apify correcto y, antes de correrlo: dime cuál elegiste y
-> por qué; enséñame los parámetros exactos; calcula el coste; **y dime cuánto
+> Elige el actor de Apify correcto — **el de Google Maps normal, no el de datos
+> de contacto: no necesitamos correos y ese cuesta más** — y antes de correrlo:
+> dime cuál elegiste y por qué; los parámetros exactos; el coste; **y cuánto
 > crédito queda este mes, contando que la matriz gasta de la misma cuenta todos
 > los lunes**. Espera mi OK.
 >
-> Con mi OK, saca SOLO 10 resultados. Después evalúa la muestra y dime sin
-> adornos: cuántos de los 10 cumplen mis señales, qué campos vinieron vacíos, y
-> qué cambiarías para que la lista de 50 salga mejor.
+> Con mi OK, saca SOLO 10. Después evalúa y dime sin adornos: cuántos cumplen mis
+> señales, **cuántos traen teléfono utilizable**, y qué cambiarías para que la
+> lista de 50 salga mejor.
 >
-> Si menos de 7 de 10 califican, no seguimos: propón la corrección y volvemos a
-> probar. Guarda la muestra en `leads/muestra.csv`.
+> Si menos de 7 de 10 califican, no seguimos: propón la corrección. Guarda en
+> `leads/muestra.csv`.
 
 ---
 
 ## 3 · Los 50, con tope de gasto
 
-> Con la búsqueda ya corregida, sácame 50 clientes potenciales.
+> Con la búsqueda corregida, sácame 50.
 >
-> Antes de correr, dime el coste estimado y espera mi OK. **Pon `maxItems` y
-> `maxTotalChargeUsd` en la llamada** — es la regla 3 de `matriz-viral/CLAUDE.md`
-> y aquí también rige. Si a media corrida ves que se va a pasar del doble de lo
-> estimado, párate y avísame.
+> Antes de correr, dime el coste y espera mi OK. **Pon `maxItems` y
+> `maxTotalChargeUsd`** — es la regla 3 de `matriz-viral/CLAUDE.md`. Si a media
+> corrida se va a pasar del doble, párate y avísame.
 >
-> Guarda en `leads/YYYY-MM-DD.csv` con estas columnas exactas y en este orden:
-> `negocio | contacto | puesto | telefono | correo | sitio_web | instagram |
-> linkedin | ciudad | rating | resenas | senal_de_calificacion | fuente | fecha`
+> Guarda en `leads/YYYY-MM-DD.csv` con estas columnas exactas:
+> `negocio | contacto | puesto | telefono | tiene_whatsapp | sitio_web |
+> instagram | ciudad | rating | resenas | senal_de_calificacion | fuente | fecha`
 >
-> Reglas de los datos:
-> - Si un dato no viene, escribe «sin dato». No lo deduzcas, no lo completes con
->   lo que parece lógico, **no inventes correos tipo contacto@**.
+> Reglas:
+> - Si un dato no viene, «sin dato». No lo deduzcas, no lo completes con lo que
+>   parece lógico.
+> - **`tiene_whatsapp` se queda en «por verificar»**. No lo adivines por el
+>   formato del número: se comprueba abriendo el chat, y eso lo hace una persona.
 > - En `senal_de_calificacion`, la razón concreta por la que entra.
-> - En `fuente`, el actor exacto que lo trajo.
-> - Si un negocio ya está en algún CSV de `leads/`, no lo repitas.
+> - En `fuente`, el actor exacto.
+> - Si ya está en algún CSV de `leads/`, no lo repitas.
 >
-> Al terminar: cuántos traen teléfono, cuántos correo, cuántos los dos. Y dime
-> con honestidad si esta cosecha sirve.
+> Al terminar: cuántos traen teléfono y **cuántos son fijos y cuántos móviles**,
+> que es lo que decide si se llama o se escribe.
 
 ---
 
-## 4 · Enriquecer sin inventar
+## 4 · Enriquecer, sin inventar y sin rastrear webs
 
-> Toma el CSV de hoy y compléta los huecos con otros actores — el crawler del
-> sitio del negocio, o el scraper de la red que ese negocio sí usa. En lotes de
-> 10, con el coste estimado antes del primero.
+> Toma el CSV de hoy y compléta **solo lo que sirve para llamar**.
 >
-> Agrega dos columnas:
-> - `origen_correo`: «scraper original», «sitio web», «red social» o «no encontrado».
-> - `confianza`: alta si el correo está en el sitio oficial; media si viene de un
->   directorio o una red; baja si es genérico tipo `info@`.
+> Para los que no traigan teléfono, mira si lo publican en su Instagram o en su
+> sitio. Para los que sí lo traigan, no gastes crédito en buscar nada más —
+> **no necesitamos correos**.
 >
-> Reglas que no se rompen:
-> - Sin correo verificable se queda en «sin dato» y sigue en la lista con su
->   teléfono. **Prefiero llamar que mandar un correo que rebote.**
-> - **Nada de generar correos por patrón** (`nombre.apellido@dominio`). Eso quema
->   dominios, y el nuestro manda los correos de los alumnos.
-> - Si el negocio cerró o el sitio no existe, márcalo «descartado» con el motivo.
+> Agrega:
+> - `origen_telefono`: «google maps», «sitio web», «red social» o «no encontrado».
+> - `mejor_hora`: si el negocio publica horario, la franja en la que conviene
+>   llamar. Si no lo publica, «sin dato». **No la supongas por el tipo de
+>   negocio.**
 >
-> Cierra diciendo cuántos quedaron con confianza alta, cuántos media y cuántos
-> solo con teléfono.
+> Reglas:
+> - Sin teléfono verificable se queda «sin dato» y baja de prioridad. No se
+>   inventa un número ni se deduce por el prefijo de la zona.
+> - Si el negocio cerró o el sitio no existe, «descartado» con el motivo.
+>
+> Cierra diciendo con cuántos se puede hablar hoy.
 
 ---
 
 ## 5 · Califica y ordena
 
-> Califica los leads con las señales de `perfil-cliente.md`. No inventes
-> criterios nuevos.
+> Califica con las señales de `perfil-cliente.md`. No inventes criterios.
 >
-> Agrega:
-> - `grado`: **A** = cumple ≥4 señales y tiene contacto confiable · **B** = 2-3
->   señales, o le falta la vía buena · **C** = apenas roza el perfil.
-> - `porque`: la evidencia concreta en una línea. Nada de «parece buen
->   prospecto»; quiero «4,8 estrellas con 210 reseñas, sin sitio web, publica
->   seguido en Instagram».
+> - `grado`: **A** = ≥4 señales y teléfono utilizable · **B** = 2-3 señales, o le
+>   falta el teléfono bueno · **C** = apenas roza el perfil.
+> - `porque`: la evidencia en una línea. Nada de «parece buen prospecto»; quiero
+>   «4,8 estrellas con 210 reseñas, sin sitio web, publica seguido en Instagram».
 >
-> Los que caigan en una señal de descarte van a `descartados.csv` con el motivo.
+> Los que caigan en señal de descarte van a `descartados.csv` con el motivo.
 >
-> Después: cuántos A, B y C, y los 10 por los que empezarías tú. Ordena el CSV
-> con los A arriba.
+> Después: cuántos A, B y C, y **los 10 a los que llamarías tú primero**. Ordena
+> el CSV con los A arriba.
 
 ---
 
-## 6 · Los correos que sí se leen
+## 6 · Los guiones — llamada para los A, WhatsApp para los B
 
-> ⚠️ **Antes de este paso: comprobar que el dominio de envío NO es
-> `dgdesignmodeling.com`.** Ver `montaje-local.md`. Si todavía no hay dominio
-> aparte y calentado, este paso se queda escrito pero no se manda.
+> ⚠️ **Antes de este paso: el número de envío es un WhatsApp Business aparte, no
+> el personal de nadie.** Ver `montaje-local.md`.
 >
-> Escribe el correo de primer contacto para los de grado A y B.
+> **Para los de grado A, escribe el guion de LLAMADA.** No un párrafo: el guion
+> hablado.
+> - Los primeros 10 segundos: quién eres, de dónde sacaste su número («los vi en
+>   Google Maps») y **una razón concreta de por qué les llamas a ellos** — un
+>   dato real del scraper. Sin dato real, no hay llamada: va a la lista de los
+>   que hay que investigar antes.
+> - La pregunta que abre: una que se conteste hablando, no con sí o no.
+> - **Las dos objeciones más probables y qué contestar**, en una línea cada una.
+> - El cierre: qué se pide exactamente. Una reunión de 15 minutos, no «le mando
+>   información».
 >
-> - **Asunto:** dos versiones, máximo 6 palabras, sin exclamaciones ni palabras
->   de promoción. Una directa y una en pregunta.
-> - **Primera línea:** un dato REAL de ese negocio sacado del scraper. **Si no
->   hay dato real, no escribas el correo:** márcalo «sin ángulo» y va a llamada.
-> - **Cuerpo:** el puente entre ese dato y lo que vendemos, en una o dos líneas.
->   Sin prometer números que no podemos probar.
-> - **Cierre:** una pregunta que se conteste con sí o no. Nada de «agenda en mi
->   calendario» en el primer correo.
+> **Para los de grado B, el mensaje de WhatsApp.**
+> - Máximo 4 líneas. Se lee en la vista previa o no se lee.
+> - Primera línea: el dato real de ese negocio. **Sin dato real, no hay mensaje**
+>   — se marca «sin ángulo».
+> - Di de dónde sacaste el número. Un desconocido que no explica cómo llegó da
+>   desconfianza.
+> - Cierra con una pregunta fácil.
+> - **Sin archivos adjuntos, sin enlaces en el primer mensaje, sin audio.** Un
+>   primer contacto con enlace parece estafa.
+> - Español de Ecuador, de usted, tono de persona no de empresa. Sin emojis.
 >
-> Máximo 90 palabras, español neutro, tono de persona que escribe rápido y bien,
-> no de agencia. Sin emojis, sin «espero que este correo te encuentre bien».
+> Guarda en `contactos/YYYY-MM-DD.csv`: `negocio | telefono | grado | canal |
+> angulo_usado | guion`.
 >
-> Guarda en `correos/YYYY-MM-DD.csv`: `negocio | correo | asunto_a | asunto_b |
-> cuerpo | angulo_usado | grado`.
->
-> Antes de los 50, escríbeme 3 y espera mi visto bueno del tono.
+> Antes de los 50, escríbeme 3 de cada tipo y espera mi visto bueno del tono.
 
 ---
 
-## 7 · Los dos seguimientos
+## 7 · El seguimiento — menos que en correo
 
-> Escribe los dos seguimientos para cada contacto al que ya escribimos.
+> **En WhatsApp se insiste menos que en correo.** El mensaje se ve aunque no
+> contesten, así que repetir molesta más y se nota más.
 >
-> **Seguimiento 1** — a los 3 días hábiles si no contestó. Máximo 50 palabras.
-> Aporta algo nuevo: un ejemplo corto, una idea aplicada a su negocio, un dato
-> de su industria. **Nunca «solo dando seguimiento» como toda la razón de
-> escribir.**
+> **Un solo seguimiento**, a los 4 o 5 días hábiles, máximo 3 líneas. Aporta algo
+> nuevo: un ejemplo corto, una idea aplicada a ese negocio. **Nunca «le escribo
+> para dar seguimiento»** como toda la razón.
 >
-> **Seguimiento 2** — 7 días después del primero si sigue en silencio. Máximo 35
-> palabras. Cerrar la puerta con elegancia: dejas de escribir, si en algún
-> momento le sirve ahí estás. Sin culpa, sin reclamo.
+> Si no contesta al segundo, se acabó. Nada de tres y cuatro mensajes.
+>
+> **Para los de grado A que no contestaron la llamada:** un segundo intento a
+> otra hora del día, y si no, un WhatsApp corto diciendo que llamaste.
 >
 > Reglas:
-> - Si alguien contesta, aunque sea que no, **sale de la secuencia** y entra en
+> - Si alguien contesta, aunque sea que no, **sale** y entra en
 >   `memoria/no-contactar.csv`.
-> - Dos seguimientos y se acabó. Nada de tres, cuatro y cinco.
-> - Cada uno va en el mismo hilo, respondiendo al anterior.
+> - **Si alguien pide que no le escriban, entra en esa lista para siempre.** Ese
+>   archivo no se limpia ni se reordena nunca.
+> - Nunca se vuelve a escribir a un número que ya está en `ya-contactados.csv`
+>   sin que yo lo pida.
 >
-> Guarda en `correos/seguimientos.csv`: `negocio | correo | seguimiento |
-> dias_espera | asunto | cuerpo`.
+> Guarda en `contactos/seguimientos.csv`: `negocio | telefono | intento |
+> dias_espera | canal | mensaje`.
 
 ---
 
 ## 8 · Qué funcionó, y afina la puntería
 
-> Vamos a cerrar el ciclo. Pregúntame primero: cuántos abrieron, cuántos
-> contestaron, cuántos dijeron que sí a una llamada, cuántos rebotaron y cuántos
-> pidieron que no les escribiera.
+> Vamos a cerrar el ciclo. Pregúntame primero: a cuántos llamé, cuántos
+> contestaron el teléfono, cuántos contestaron el WhatsApp, cuántas reuniones
+> salieron, cuántos números estaban malos y cuántos pidieron que no les
+> escribiera.
 >
 > Con eso:
-> 1. Compara a los que contestaron contra los que no. Qué tienen en común los
->    que sí: ciudad, tamaño, rating, si tenían sitio web, el ángulo, el asunto.
->    **Dime el patrón aunque sea incómodo.**
-> 2. Qué asunto y qué ángulo funcionaron mejor, con los números que haya.
-> 3. Si el rebote pasó del 3 %, qué hicimos mal al enriquecer.
+> 1. Compara a los que contestaron contra los que no: ciudad, tamaño, rating, si
+>    tenían sitio web, el ángulo, la hora a la que se llamó. **Dime el patrón
+>    aunque sea incómodo.**
+> 2. **Llamada contra WhatsApp: cuál trajo más reuniones**, con los números que
+>    haya. Si los A por teléfono no rinden más que los B por mensaje, el grado
+>    está mal puesto y hay que revisarlo.
+> 3. Si hubo muchos números malos, qué falló al enriquecer.
 > 4. Actualiza `perfil-cliente.md` con lo aprendido. Muéstrame los cambios
 >    marcados antes de guardar.
 >
-> Cierra con las tres cosas concretas que cambiamos en la siguiente ronda.
-> Cambios a las búsquedas, a los filtros o a los correos — **nada de consejos
-> generales de ventas.**
+> Cierra con las tres cosas concretas que cambiamos en la siguiente ronda:
+> búsquedas, filtros, guiones u horarios. **Nada de consejos generales de
+> ventas.**

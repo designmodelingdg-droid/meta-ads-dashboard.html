@@ -3,7 +3,7 @@ name: prospeccion-dg
 description: >
   Saca clientes B2B para Design Modeling DG (la consultoría) con los scrapers
   de Apify: define el cliente ideal, prueba con 10, saca la lista, la enriquece
-  sin inventar, la califica y escribe los correos de primer contacto.
+  sin inventar, la califica y escribe los guiones de llamada y de WhatsApp.
 
   Usa este skill cuando Dayana diga: "prospeccion-dg", "busquemos clientes para
   la consultoría", "saca una lista de constructoras", "prospección con Apify",
@@ -11,8 +11,7 @@ description: >
   del contenido.
 
   NO es para la Academy. La Academy vende cursos a personas por anuncios y
-  contenido; el correo en frío no encaja ahí y quemaría el dominio que ya usa
-  el CRM.
+  contenido; el contacto en frío no encaja ahí.
 ---
 
 # Prospección B2B para Design Modeling DG
@@ -28,23 +27,30 @@ siempre no tiene.
 ingeniería que necesitan consultoría BIM. Eso es **Design Modeling DG**.
 
 **A quién no:** particulares que quieren formarse. Esos ya llegan por la pauta
-y por el contenido, y son de la **Academy**. Un correo en frío a un ingeniero
-que no te conoce, ofreciéndole un curso, es spam.
+y por el contenido, y son de la **Academy**. Llamar en frío a un ingeniero para
+ofrecerle un curso es otra cosa, y no es lo que hace esta cuenta.
 
 ## Paso 1 · Las tres reglas que no se rompen, y por qué son de DMA
 
-### 1 · El dominio de los correos NUNCA es `dgdesignmodeling.com`
+### 1 · Se contacta por TELÉFONO, no por correo
 
-Ese dominio manda hoy los correos que de verdad importan: las secuencias de
-los recursos gratuitos, los del CRM, los de los alumnos matriculados.
+`info@dgdesignmodeling.com` está en verde, y lo está **porque solo le escribe a
+quien pidió algo**: quien descargó un recurso, quien llenó un formulario, los
+alumnos. El correo en frío es el tráfico contrario, y es lo que genera quejas y
+rebotes.
 
-**Si se manda correo en frío desde ahí y Google lo castiga, no se cae la
-prospección: se caen los correos a los alumnos que ya pagaron.** El daño no es
-perder una campaña, es perder la comunicación con quien ya compró.
+**Ese verde no protege: es lo que está en juego.** Si se cae, no se pierde la
+prospección — se pierde que le lleguen los correos a quien ya pagó.
 
-Dominio aparte, solo para esto. Con SPF, DKIM y DMARC. Empezando en cinco o
-diez correos al día y subiendo durante semanas. El techo sano son 20-50 por
-buzón al día, muy por debajo del límite técnico.
+Y además el teléfono rinde más. De 1.000 negocios de Google Maps, **~950 traen
+teléfono** (viene en el mapa) y **~350 traen correo** (hay que entrar a su web a
+buscarlo). Triplica la base contactable y gasta menos crédito.
+
+**El número de envío es un WhatsApp Business aparte**, nunca el personal de
+nadie. Volumen bajo al principio, subiendo despacio. Y **nada de herramientas de
+envío masivo ni APIs no oficiales**: ese es el disparador de bloqueo más claro.
+
+A los de grado A se les **llama**. A los B se les escribe.
 
 ### 2 · Los leads en frío NO entran al GoHighLevel de siempre
 
@@ -86,10 +92,10 @@ respuesta antes del siguiente**, no se pegan todos de golpe.
 | 1 | La entrevista | `perfil-cliente.md` |
 | 2 | Prueba de 10 | `leads/muestra.csv` |
 | 3 | Los 50, con tope | `leads/<fecha>.csv` |
-| 4 | Enriquecer sin inventar | las columnas `origen_correo` y `confianza` |
+| 4 | Enriquecer sin inventar | las columnas `origen_telefono` y `mejor_hora` |
 | 5 | Calificar A/B/C | el CSV ordenado + `descartados.csv` |
-| 6 | Correos de primer contacto | `correos/<fecha>.csv` |
-| 7 | Los dos seguimientos | `correos/seguimientos.csv` |
+| 6 | Guiones: llamada (A) y WhatsApp (B) | `contactos/<fecha>.csv` |
+| 7 | El seguimiento (uno solo) | `contactos/seguimientos.csv` |
 | 8 | Qué funcionó | `perfil-cliente.md` corregido |
 
 Los prompts completos están en `prompts/playbook.md`.
@@ -98,26 +104,28 @@ Los prompts completos están en `prompts/playbook.md`.
 
 - **Nunca inventar un dato.** Lo que no se encontró se queda en «sin dato». Es
   la regla 1 de `matriz-viral/CLAUDE.md` aplicada a otra cosa.
-- **Nada de correos por patrón** (`nombre.apellido@dominio`). Eso quema
-  dominios y es justo lo que el punto 1 intenta evitar.
+- **Nada de deducir un número por el prefijo de la zona.** Un teléfono que no
+  se encontró se queda en «sin dato».
 - **Probar con 10 antes de gastar en 50.** Si menos de 7 de 10 califican, se
   corrige la búsqueda, no se sigue.
-- **Sin dato real de ese negocio, no hay correo.** Se marca «sin ángulo» y se
-  deja para llamada.
+- **Sin dato real de ese negocio, no hay contacto.** Se marca «sin ángulo» y
+  se investiga antes de llamar.
 
 ## Paso 3 · Las cuentas honestas, antes de ilusionarse
 
-De **mil** negocios raspados salen unos 300-400 con correo — Google Maps no
-guarda correos, los actores entran al sitio del negocio a buscarlos, así que
-un negocio sin web se queda sin correo. Tras limpiar rebotes quedan ~300
-enviables. Con una tasa de respuesta buena del 3 %, son **nueve
-conversaciones**.
+De **1.000** negocios raspados salen ~950 con teléfono. No todos contestan, no
+todos son el que decide, y muchos números son del mostrador y no del dueño.
 
-**Nueve conversaciones reales de mil negocios es un buen mes.** El error es
-esperar mil clientes.
+**Nadie te puede dar la tasa de respuesta de tu nicho por teléfono sin haberlo
+probado**, así que el paso 8 existe para medirla y el paso 2 para no gastar
+antes de saber si la lista sirve.
 
-Y el coste: 50 negocios de Google Maps con contacto salen por unos **30
-centavos**. LinkedIn e Instagram se comen el crédito bastante más rápido.
+Lo que sí está medido es el coste: **50 negocios de Google Maps salen por unos
+30 centavos**. Sin pedir correos es aún más barato, porque no hay que rastrear
+webs.
+
+Y lo que la experiencia del correo sí enseña: **nueve conversaciones reales de
+mil contactos es un buen mes, no un fracaso.** El error es esperar mil clientes.
 
 ## Lo que este skill NO monta, y no es un olvido
 
@@ -138,5 +146,6 @@ dice la propia guía y es cierto.
 
 De la guía de la bóveda de **tododeia** sobre Apify (actualizada a julio 2026).
 Los prompts se conservan y se les añaden las tres reglas de arriba, que son de
-DMA y la guía no podía conocer: el dominio compartido con el CRM, el GHL que
-la matriz mide, y el crédito de Apify que ya se está gastando solo los lunes.
+DMA y la guía no podía conocer: el canal —teléfono en vez del correo que
+sostiene el CRM—, el GHL que la matriz mide, y el crédito de Apify que ya se
+está gastando solo los lunes.

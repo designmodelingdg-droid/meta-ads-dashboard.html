@@ -36,17 +36,27 @@ En apify.com, arriba a la derecha, el consumo del mes.
 las 13:00 UTC (`refresh-matriz.yml`, el scraper de Instagram). Tu presupuesto
 de prospección es lo que sobre de ahí.
 
-## 3 · El dominio de correo, antes de escribir a nadie
+## 3 · El número de WhatsApp, antes de escribirle a nadie
 
-Esto es lo que más caro sale si se hace mal, y lo explica el SKILL: **no uses
-`dgdesignmodeling.com`**. Ese dominio manda los correos de los alumnos.
+**No uses tu WhatsApp personal ni el de Gabriel.** Si bloquean ese número, se
+lleva por delante el teléfono con el que hablas con alumnos y clientes.
 
-Hace falta un dominio aparte, con SPF, DKIM y DMARC, y calentarlo durante
-semanas empezando por cinco o diez correos al día.
+Hace falta un **WhatsApp Business aparte**, con su propio número. Y tres reglas:
 
-**Hasta que eso esté, el playbook se corre igual** — sacar la lista,
-enriquecerla y calificarla no manda ningún correo. Lo que se para es el paso 6
-en adelante.
+- **Volumen bajo al principio**, subiendo despacio. Un número nuevo mandando
+  decenas de mensajes el primer día es la forma conocida de que lo bloqueen.
+- **Nada de herramientas de envío masivo** ni APIs no oficiales. Ese es el
+  disparador de bloqueo más claro que hay. Se manda a mano, o con la app oficial
+  de WhatsApp Business.
+- **A los de grado A se les llama.** Una llamada de treinta segundos vale más
+  que veinte mensajes, y no gasta número.
+
+**Hasta que ese número exista, el playbook se corre igual** — definir el
+cliente, sacar la lista, enriquecerla y calificarla no manda nada. Lo que se
+para es el paso 6.
+
+Y el correo de siempre, `info@dgdesignmodeling.com`, **no se toca**. Sigue
+haciendo lo que hace bien: escribirle a quien pidió algo.
 
 ## 4 · El agente con horario — solo cuando lo anterior funcione
 
