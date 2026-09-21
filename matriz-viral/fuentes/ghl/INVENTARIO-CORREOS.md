@@ -1,8 +1,8 @@
 # Inventario de correos — GoHighLevel
 
-Generado el 2026-09-16.
+Generado el 2026-09-18.
 
-**432 plantillas** en **52 carpetas**. 432 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
+**437 plantillas** en **54 carpetas**. 437 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
 
 > Lo que NO sale por API: que workflow usa que plantilla. El endpoint de automatizaciones devuelve solo metadatos. En esta cuenta las plantillas estan nombradas por su flujo, asi que el cruce se puede hacer leyendo.
 
@@ -3675,6 +3675,109 @@ Quedo a tu disposición para coordinar una nueva reunión. ¡Espero tu pronta re
 Saludos cordiales,
 Ing. Gabriel Pantoja
 ¡REAGENDA AQUÍ!
+```
+
+## CAMPAÑAS MENSUALES/ANUNCIOS
+
+### Campaña Esp Acero
+
+- **id:** `6aac28f1c1af78af0811227c`
+- **tipo:** html
+- **actualizada:** 2026-09-17T18:30:38.104Z
+- **Cuerpo:**
+
+```
+Sumamos un Tutor IA a la Especializacion en Acero. Responde a cualquier hora, sobre tu caso.
+Nueva actualizaci&oacute;n
+Ahora no estudias solo
+Hola {{contact.first_name}} ,
+Estudiar solo tiene un problema conocido: te trabas un jueves a las once de la noche, mandas la duda al foro y el proyecto se queda quieto hasta que alguien responde.
+Acabamos de resolver eso.
+Nuevo en la especializaci&oacute;n
+Ahora tienes un Tutor IA
+Entrenado con el contenido del programa y con la normativa que trabajamos: AISC 360-16, ASCE 7-16 y los c&oacute;digos latinoamericanos. Le preguntas a cualquier hora y te responde sobre tu caso, no con una b&uacute;squeda gen&eacute;rica de internet.
+Va incluido en la Especializaci&oacute;n en Dise&ntilde;o Estructural BIM en Acero para Edificaciones , sin costo extra y desde el primer d&iacute;a.
+Qu&eacute; hace el Tutor IA por ti
+&#9989; Resuelve dudas de c&aacute;lculo y de normativa a cualquier hora, sin esperar al foro.
+&#9989; Te explica el por qu&eacute; de cada verificaci&oacute;n, no solo el resultado.
+&#9989; Te acompa&ntilde;a mientras modelas en Revit, analizas en Robot y detallas en Advance Steel.
+&#9989; No reemplaza al instructor: las asesor&iacute;as uno a uno siguen igual.
+4 cursos &middot; 4 meses &middot; 120 horas acad&eacute;micas
+100% asincr&oacute;nico &middot; Tutor IA 24/7 &middot; asesor&iacute;as 1 a 1
+Con Tutor IA incluido
+USD 499.99
+USD 225
+Pago &uacute;nico &middot; 4 cursos &middot; 120 horas acad&eacute;micas &middot; cupos limitados por cohorte
+Inscribirme ahora &#8594;
+Acceso inmediato &middot; el Tutor IA se activa al entrar
+Ver el temario completo
+&iquest;Quieres verlo antes de decidir?
+Escr&iacute;benos por WhatsApp y te mostramos c&oacute;mo funciona el Tutor IA por dentro.
+Hablar por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### Campaña Máster
+
+- **id:** `6aac2964bbf4cb7988f74ca9`
+- **tipo:** html
+- **actualizada:** 2026-09-17T18:31:06.901Z
+- **Cuerpo:**
+
+```
+El Master ahora acredita desde el bloque uno: una microcredencial cada vez que cierras uno.
+Nueva estructura
+Ya no esperas 12 meses para tener algo que mostrar
+Hola {{contact.first_name}} ,
+Hasta ahora, en cualquier m&aacute;ster el diploma llegaba al final. Doce meses estudiando y, mientras tanto, nada que mostrarle a un reclutador.
+Reestructuramos el M&aacute;ster para que eso no pase.
+Nueva estructura
+Acreditas desde el bloque uno
+El programa ahora est&aacute; organizado en cuatro bloques, y cada uno te entrega su propia credencial al cerrarlo. A los tres meses ya tienes algo verificable en tu perfil, no una promesa para dentro de un a&ntilde;o.
+La nueva estructura
+01
+BIM PROFESSIONAL &middot; 3 meses
+Est&aacute;ndares, BEP, CDE e implementaci&oacute;n.
+&#8594; Microcredencial al cerrarlo
+02
+BIM COORDINATION &middot; 3 meses
+Modelos federados, clash detection, IFC y obra.
+&#8594; Microcredencial al cerrarlo
+03
+BIM MANAGEMENT &middot; 2 meses
+Planificaci&oacute;n 4D, costos 5D y ciclo de vida.
+&#8594; Microcredencial al cerrarlo
+04
+BIM + AI &middot; 3 meses
+Dynamo, Python, Revit API e IA aplicada.
+&#8594; Microcredencial al cerrarlo
+Sin costo adicional
+Una microcredencial por bloque
+Y al completar los cuatro, la credencial final del M&aacute;ster.
+Especialista BIM Professional
+Especialista BIM Coordination
+Especialista BIM Management
+Especialista BIM + IA
+Y al completar los cuatro
+M&aacute;ster BIM Management + IA
+Lo que acreditas en el camino
+&#9989; Certificaci&oacute;n oficial de Autodesk al completar cada m&oacute;dulo.
+&#9989; Microcredencial profesional al cerrar cada bloque, desde el primero.
+&#9989; Diplomas universitarios de las instituciones aliadas del programa.
+&#9989; Al culminar, certificado universitario de 1440 horas acad&eacute;micas.
+4 bloques &middot; 12 m&oacute;dulos &middot; 12 meses
+Workshops en vivo semanales &middot; mentor&iacute;as 1:1 &middot; DMA Engineering Suite
+Descargar el temario &#8594;
+PDF con el plan de estudios bloque por bloque
+Agendar una cita
+&iquest;Prefieres preguntarnos primero?
+Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
+Hablar por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
 ```
 
 ## COMUNIDAD DIPLOMADOS
@@ -7639,43 +7742,20 @@ Ing. Gabriel Pantoja
 
 - **id:** `6a87485bda320347a24b3acd`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:59:49.559Z
+- **actualizada:** 2026-09-18T15:08:29.183Z
 - **Cuerpo:**
 
 ```
-Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
-Enviar como accion del formulario: Enviar manualmente a quienes asistieron a la cita del Master BIM
-Banner y logo en base64. La portada se carga desde el CDN de GHL.
-Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
--->
-Gracias por asistir a la cita del Master Internacional BIM+IA. Te regalamos el Modulo 1 completo.
+Tu ruta de credenciales reconocida y tu acceso de regalo al Modulo 1 del Diplomado BIM.
 Regalo exclusivo &middot; 100% gratis
 Gracias por acompa&ntilde;arnos
-Hola {{contact.first_name}} , tenemos un regalo para ti &#127873;
-Queremos agradecerte por haber asistido a nuestra cita del M&aacute;ster Internacional en BIM Management e Inteligencia Artificial para la Construcci&oacute;n y por el tiempo que dedicaste a conocer el programa. Sabemos que tu agenda est&aacute; ocupada, y que hayas reservado ese espacio para nosotros significa mucho.
-Como parte de nuestro agradecimiento, preparamos algo para ti: acceso completo y gratuito al M&oacute;dulo 1 del Diplomado BIM en Estructuras .
-Es el mismo m&oacute;dulo que cursan nuestros alumnos del diplomado, sin recortes: las clases completas y los recursos y archivos de pr&aacute;ctica que se trabajan dentro. Sin costo y sin compromiso.
+{{contact.first_name}} &#128075;
+Gracias por asistir a la cita del M&aacute;ster BIM con Inteligencia Artificial . Por ac&aacute; te dejamos la siguiente imagen con tu progreso reconocido en cada etapa.
+Y como lo prometido es deuda &#128229; aqu&iacute; tienes tu acceso de regalo al M&oacute;dulo 1 del Diplomado BIM en Estructuras : el m&oacute;dulo completo, con sus clases y sus archivos de pr&aacute;ctica, sin costo y sin compromiso.
 ACCEDER A MI REGALO &#8594;
-Acceso 100% gratuito &middot; se abre en tu comunidad DMA
-C&oacute;mo aprovechar tu regalo
-Tenerlo no sirve de nada si no lo abres. Estos tres pasos son la diferencia.
-01
-Accede al m&oacute;dulo
-Ingresa desde el bot&oacute;n de arriba y comienza las clases. Empezar el mismo d&iacute;a es lo que separa a quien lo termina de quien no.
-02
-Revisa los recursos
-El m&oacute;dulo incluye material de pr&aacute;ctica. Desc&aacute;rgalo y tenlo abierto mientras sigues las clases.
-03
-Completa el m&oacute;dulo
-Avanza por todas las clases y aprovecha este primer acercamiento a nuestra metodolog&iacute;a de formaci&oacute;n BIM. Al completarlo recibes tu certificado de Design Modeling DG.
-Tambi&eacute;n es gratis
-&Uacute;nete a la Comunidad Design Premium
-Masterclasses en vivo, plantillas descargables y networking con ingenieros y arquitectos
-de toda Latinoam&eacute;rica. Sin costo y sin tarjeta.
-Entrar gratis a la Comunidad &#8594;
-&iquest;No se abre o no encuentras el acceso?
-Revisa primero las carpetas de spam y promociones. Si aun as&iacute; no aparece,
-escr&iacute;benos y te damos el acceso al instante.
+Acceso 100% gratuito &middot; al completarlo recibes tu certificado
+&iquest;No puedes entrar?
+Revisa primero spam y promociones. Si aun as&iacute; no aparece, escr&iacute;benos y te damos el acceso al instante.
 Escribir por WhatsApp
 Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
 designmodelingacademy.com
@@ -7686,70 +7766,29 @@ designmodelingacademy.com
 
 - **id:** `6a8888a78ced86da5a82e5f0`
 - **tipo:** html
-- **actualizada:** 2026-09-04T18:50:43.830Z
+- **actualizada:** 2026-09-18T15:09:04.975Z
 - **Cuerpo:**
 
 ```
-Dos cosas r&aacute;pidas antes de que hablemos, y un regalo por asistir.
+Antes de la llamada, un diagnostico de 5 minutos para que la cita rinda.
 Tu cita est&aacute; agendada
 Gracias por agendar tu cita para el M&aacute;ster
-Hola {{contact.first_name}} ,
-Bienvenido al M&aacute;ster Internacional en BIM Management e Inteligencia Artificial para la Construcci&oacute;n . Te saludamos desde todo el equipo de Design Modeling Academy, centro de entrenamiento internacional con aval de Autodesk, CYPE y aval universitario en EE.UU. y Europa.
-Agradecemos que hayas agendado una cita con nosotros. Tenemos una cantidad considerable de reservas de cupo, as&iacute; que para agilizar tu proceso necesitamos dos cosas de tu parte antes de que hablemos:
-1
-Mira este video, es importante.
-&#9654;
-Video de bienvenida
-Un mensaje del Ing. Gabriel Pantoja
-Dura pocos minutos y explica c&oacute;mo aprovechar la sesi&oacute;n que acabas de agendar.
-Ver el video &#8594;
-2
-Lee el PDF con el plan de estudios detallado.
-Ver el plan de estudios
-PDF con todos los m&oacute;dulos y contenidos del M&aacute;ster
-Descargar el brochure
-Beneficios de inscribirte
-Lo que entra contigo el primer d&iacute;a
-&#10003;
-Acceso 24/7 a la plataforma interactiva
-Ves y repites todas las clases a tu ritmo.
-&#10003;
-Acompa&ntilde;amiento durante 12 meses
-Workshops en vivo cada semana y mentor&iacute;as personalizadas 1:1.
-&#10003;
-Contenido 100% original
-Dise&ntilde;ado por expertos y basado en ejemplos reales.
-&#10003;
-Material 100% descargable
-Complementos y ejercicios pr&aacute;cticos aplicados a proyectos reales.
-&#10003;
-DMA Engineering Suite
-Tu propio kit de apps de IA, con una herramienta nueva cada mes.
-&#127891; Y todo lo que te llevas certificado
-Al completar cada m&oacute;dulo obtienes una certificaci&oacute;n oficial de Autodesk, porque somos Centro de Entrenamiento Autorizado de la marca.
-Al completar los m&oacute;dulos de cada bloque del plan de estudios, obtienes una microcredencial NFT avalada por Silicon Valley.
-Recibes diplomas de t&iacute;tulo propio de Sabal University , Universidad de las Naciones y Universidad ISTE Espa&ntilde;a .
-Y al cerrar el programa, un certificado universitario de Doctrina Qualitas y Design Modeling Academy por 1.440 horas acad&eacute;micas en l&iacute;nea. ✅
-Antes de la cita
-Cuatro recomendaciones para aprovecharla
-1
-Reserva de 30 a 45 minutos
-Es lo que dura la sesi&oacute;n. Que no te agarre entre reuniones.
-2
-Busca un espacio silencioso
-Sin ruido de fondo ni interrupciones.
-3
-Asegura una buena conexi&oacute;n
-Vamos a compartir pantalla y revisar el plan contigo.
-4
-Llega con la informaci&oacute;n le&iacute;da
-Temario, beneficios y certificaciones. As&iacute; la cita se va en tus dudas reales.
-&#127873; Solo por asistir a tu cita
-Te obsequiamos el M&oacute;dulo 1 completo
-Del Diplomado Universitario Internacional BIM: Edificaciones de Acero Estructural y Hormig&oacute;n Armado &mdash; “Fundamentos Estrat&eacute;gicos de la Metodolog&iacute;a BIM”. Tuyo sin costo, solo por presentarte a la cita.
-Aseg&uacute;rate de no faltar a la cita. Te espero. 👋
-Ing. Gabriel Pantoja
-BIM Manager y Fundador &middot; Design Modeling Academy
+Listo {{contact.first_name}} &#128075;
+Gracias por agendar tu cita para el M&aacute;ster Internacional en BIM Management e Inteligencia Artificial .
+Tu cita
+{{appointment.only_start_date}} &middot; {{appointment.only_start_time}}
+Antes de la llamada te paso un diagn&oacute;stico de 5 minutos : 20 preguntas sobre lo que ya sabes hacer dentro de un proyecto.
+Nuestro asesor {{appointment.user.name}} lo revisar&aacute; antes de hablar contigo, as&iacute; la cita no se va en explicarle desde cero por d&oacute;nde vas.
+Hacer el diagn&oacute;stico &#8594;
+20 preguntas &middot; 5 minutos
+&#9888; Importante: usa el mismo correo electr&oacute;nico
+del formulario &mdash; es lo que conecta tus respuestas con tu ficha &mdash; y al final pulsa
+Continuar , que ah&iacute; es cuando nos llega.
+Y para que llegues con el panorama completo, aqu&iacute; tienes el plan de estudios &iacute;ntegro del programa:
+Ver el temario completo
+&iquest;Tienes problemas con tu cita?
+Si necesitas reprogramar o algo no te funciona, escr&iacute;benos y lo resolvemos.
+Escribir por WhatsApp
 Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
 designmodelingacademy.com
 {{unsubscribe_url}}
@@ -8603,7 +8642,7 @@ designmodelingacademy.com
 
 - **id:** `6a91b6fe71d42e04f9e5d459`
 - **tipo:** html
-- **actualizada:** 2026-09-01T18:41:29.255Z
+- **actualizada:** 2026-09-16T18:04:36.086Z
 - **Cuerpo:**
 
 ```
@@ -11116,7 +11155,7 @@ designmodelingacademy.com
 
 - **id:** `6a7dee740d81f0f162d0058c`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:49:09.420Z
+- **actualizada:** 2026-09-18T15:02:51.805Z
 - **Cuerpo:**
 
 ```
@@ -11139,11 +11178,20 @@ bajo normas AISC 360-16 y ASCE 7-16.
 Nivel avanzado &middot; 100% asincrónico &middot; asesorías 1 a 1
 Ver el temario completo &#8594;
 PDF con el detalle módulo por módulo
+Nuevo &middot; incluido sin costo
+Tutor IA disponible 24/7
+Entrenado con el contenido del programa y con la normativa que trabajamos &mdash; AISC 360-16,
+ASCE 7-16 y los c&oacute;digos latinoamericanos. Le preguntas a cualquier hora y te responde sobre
+tu caso, no con una b&uacute;squeda gen&eacute;rica de internet.
+&#9654; Resuelve dudas de c&aacute;lculo y normativa sin esperar al foro
+&#9654; Te acompa&ntilde;a mientras modelas en Revit, analizas en Robot y detallas en Advance Steel
+&#9654; No reemplaza al instructor: las asesor&iacute;as uno a uno siguen igual
 Qué incluye tu especialización:
 &#9989; Acceso inmediato y por tiempo limitado a nuestra plataforma interactiva.
 &#9989; Contenido 100% original, diseñado por expertos y basado en ejemplos reales.
 &#9989; Material totalmente descargable, que te sirve como guía en tus futuros proyectos.
 &#9989; Acceso a la comunidad de estudiantes y docentes, con foro interactivo para resolver dudas.
+&#9989; Tutor IA disponible 24/7, entrenado con el contenido y la normativa del programa.
 Sin costo adicional
 Terminas con 5 certificados
 Cuatro de completación con aval Autodesk y uno internacional de 120 horas.
@@ -13218,6 +13266,122 @@ Ver Comunidad
 Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
 designmodelingacademy.com
 **** Este es un correo electrónico generado por el sistema ****
+{{unsubscribe_url}}
+```
+
+## ✅ ACCESOS A PRODUCTOS HUMAN TECH
+
+### ✅ Acceso Producto 01 Human
+
+- **id:** `6aaad69e1aff109e266e4dd1`
+- **tipo:** html
+- **actualizada:** 2026-09-16T23:14:25.555Z
+- **Cuerpo:**
+
+```
+Ingresa con tu correo, sin contrasena. Aqui te explicamos como.
+Acceso activo
+Automatizaci&oacute;n en Revit con Herramientas Nativas y Add-ins Inteligentes
+Hola {{contact.first_name}} ,
+Ya tienes acceso completo al curso Automatizaci&oacute;n en Revit con Herramientas Nativas y Add-ins Inteligentes. Puedes empezar hoy mismo y avanzar a tu ritmo.
+ENTRAR AL CURSO &#8594;
+Acceso inmediato &middot; sin contrase&ntilde;a
+C&oacute;mo ingresar
+Sin contrase&ntilde;as que recordar.
+01
+Haz clic en el bot&oacute;n de arriba.
+02
+Escribe el correo con el que te registraste &mdash; este mismo.
+03
+Recibir&aacute;s un enlace de acceso directo a tu correo.
+Lo que vas a encontrar adentro
+&#9654; Herramientas nativas de Revit que ya tienes y no est&aacute;s usando
+&#9654; Add-ins que te ahorran horas de modelado repetitivo
+&#9654; Flujos de trabajo aplicados a proyectos reales, no ejercicios de laboratorio
+&#9654; Archivos y plantillas descargables
+&iquest;Algo no carga o no puedes entrar?
+Escr&iacute;benos por WhatsApp y lo resolvemos el mismo d&iacute;a.
+Escribir por WhatsApp
+&iquest;Tienes m&aacute;s cursos con nosotros?
+M&iacute;ralos todos aqu&iacute;
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Acceso Producto 02 Human
+
+- **id:** `6aaad68bb4ebf9357ae72dea`
+- **tipo:** html
+- **actualizada:** 2026-09-16T23:15:08.191Z
+- **Cuerpo:**
+
+```
+Tu enlace de ingreso esta dentro. Empieza cuando quieras.
+Acceso activo
+AI Assistants para Autodesk: ChatGPT, Copilot y Firefly
+Hola {{contact.first_name}} ,
+Tu acceso al curso AI Assistants para Autodesk: ChatGPT, Copilot y Firefly ya est&aacute; habilitado .
+ENTRAR AL CURSO &#8594;
+Acceso inmediato &middot; sin contrase&ntilde;a
+C&oacute;mo ingresar
+Sin contrase&ntilde;as que recordar.
+01
+Haz clic en el bot&oacute;n de arriba.
+02
+Escribe el correo con el que te registraste &mdash; este mismo.
+03
+Recibir&aacute;s un enlace de acceso directo a tu correo.
+Lo que vas a encontrar adentro
+&#9654; C&oacute;mo usar ChatGPT para resolver errores y automatizar tareas en Revit
+&#9654; Copilot aplicado a documentaci&oacute;n y gesti&oacute;n del proyecto
+&#9654; Firefly para presentaciones y visualizaci&oacute;n r&aacute;pida
+&#9654; Prompts listos para copiar y adaptar a tus proyectos
+&iquest;Algo no carga o no puedes entrar?
+Escr&iacute;benos por WhatsApp y lo resolvemos el mismo d&iacute;a.
+Escribir por WhatsApp
+&iquest;Tienes m&aacute;s cursos con nosotros?
+M&iacute;ralos todos aqu&iacute;
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Acceso Producto 03 Human
+
+- **id:** `6aaad64e1aff109e266e424a`
+- **tipo:** html
+- **actualizada:** 2026-09-16T23:14:52.846Z
+- **Cuerpo:**
+
+```
+Entra con tu correo y empieza por la clase 1.
+Acceso activo
+BIM Data Dashboard: Revit + Power BI
+Hola {{contact.first_name}} ,
+Tu acceso al curso BIM Data Dashboard: Revit + Power BI ya est&aacute; activo .
+ENTRAR AL CURSO &#8594;
+Acceso inmediato &middot; sin contrase&ntilde;a
+C&oacute;mo ingresar
+Sin contrase&ntilde;as que recordar.
+01
+Haz clic en el bot&oacute;n de arriba.
+02
+Escribe el correo con el que te registraste &mdash; este mismo.
+03
+Recibir&aacute;s un enlace de acceso directo a tu correo.
+Lo que vas a encontrar adentro
+&#9654; C&oacute;mo extraer y limpiar la data de tu modelo Revit
+&#9654; Conexi&oacute;n Revit &#8594; Power BI paso a paso
+&#9654; Dashboards de control de cantidades, avance y costos
+&#9654; Plantilla de dashboard lista para usar en tus proyectos
+&iquest;Algo no carga o no puedes entrar?
+Escr&iacute;benos por WhatsApp y lo resolvemos el mismo d&iacute;a.
+Escribir por WhatsApp
+&iquest;Tienes m&aacute;s cursos con nosotros?
+M&iacute;ralos todos aqu&iacute;
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
