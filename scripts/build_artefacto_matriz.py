@@ -63,7 +63,23 @@ MATRIZ = RAIZ / "matriz-viral" / "matriz"
 sys.path.insert(0, str(MATRIZ))
 
 CAL = json.loads((MATRIZ / "calendario-septiembre.json").read_text(encoding="utf-8"))
-GUI = {p["id"]: p for p in json.loads((MATRIZ / "guiones-completos.json").read_text(encoding="utf-8"))["piezas"]}
+GUI = {p["id"]: p for p in json.loads((MATRIZ / "guiones-completos.json")
+       .read_text(encoding="utf-8"))["piezas"]}
+
+# Los carruseles de lead magnet se escriben en su propio fichero y NUNCA se
+# copiaron a guiones-completos.json, que es el unico que este generador leia.
+# Resultado: tres piezas con hook, diapositivas y caption escritos salian en el
+# artefacto como «Desarrollo» y una nota que mandaba a otra pestaña donde no
+# estaban. Lo vio Dayana en la del pack de Dynamo el 21-sep.
+#
+# Se superponen aqui en vez de copiarlas al otro fichero: duplicar el dato es
+# lo que produjo la deriva. Solo entran las que tienen `hook` — una pieza con
+# el hook vacio rendiria una ficha con los rotulos y nada debajo, que es peor
+# que decir que no esta escrita.
+for _p in json.loads((MATRIZ / "g1-carruseles-y-posts-septiembre.json")
+                     .read_text(encoding="utf-8"))["piezas"]:
+    if _p.get("id") and (_p.get("hook") or "").strip():
+        GUI[_p["id"]] = {**GUI.get(_p["id"], {}), **_p}
 
 import importlib.util
 
@@ -249,8 +265,10 @@ def tab_feed():
             if p.get("slides"):
                 o.append('<span class="rot">Slides</span><ol class="slides">')
                 for s in p["slides"]:
+                    vis = (s.get("visual") or "").strip()
                     o.append(f'<li><b>Slide {s["n"]}</b> — {e(s["texto"])}'
-                             f'<br><span class="visual">🖼 {e(s.get("visual",""))}</span></li>')
+                             + (f'<br><span class="visual">🖼 {e(vis)}</span>' if vis else "")
+                             + '</li>')
                 o.append('</ol>')
             if p.get("caption"):
                 o.append(f'<span class="rot">Caption (copiar tal cual)</span>{bloque_pegar(p["caption"])}')
@@ -259,11 +277,19 @@ def tab_feed():
         else:
             d = ent["idea"]
             o.append(f'<span class="rot">Desarrollo</span>{bloque_pegar(d["desarrollo"])}')
-            o.append('<p class="nota">El guion completo de este reel está en la pestaña <b>Reels</b>.</p>')
+            if "REEL" in ent["formato_publicacion"].upper():
+                o.append('<p class="nota">El guion completo de este reel está en '
+                         'la pestaña <b>Reels</b>.</p>')
+            else:
+                o.append('<p class="nota">⚠ Esta pieza todavía NO está escrita: '
+                         'hay idea y desarrollo, faltan el hook, las diapositivas '
+                         'y el caption.</p>')
         kp = pid if pid in R.FEED_PROMPTS else ("post-varilla" if "varilla" in titulo.lower() else None)
         if kp:
             medida, txt = R.FEED_PROMPTS[kp]
             o.append(prompt_img(medida, txt))
+        elif p and (p.get("prompt_imagenes") or "").strip():
+            o.append(prompt_img("ver medida en el texto", p["prompt_imagenes"]))
         o.append('</div>')
     return "\n".join(o)
 
