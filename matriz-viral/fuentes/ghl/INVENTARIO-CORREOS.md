@@ -1,8 +1,8 @@
 # Inventario de correos — GoHighLevel
 
-Generado el 2026-09-18.
+Generado el 2026-09-21.
 
-**437 plantillas** en **54 carpetas**. 437 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
+**448 plantillas** en **54 carpetas**. 448 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
 
 > Lo que NO sale por API: que workflow usa que plantilla. El endpoint de automatizaciones devuelve solo metadatos. En esta cuenta las plantillas estan nombradas por su flujo, asi que el cruce se puede hacer leyendo.
 
@@ -9123,7 +9123,7 @@ designmodelingacademy.com
 
 - **id:** `6a886c9b8ced86da5a802a02`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:54:04.719Z
+- **actualizada:** 2026-09-18T16:52:36.167Z
 - **Cuerpo:**
 
 ```
@@ -9169,7 +9169,7 @@ designmodelingacademy.com
 
 - **id:** `6a886ec517389f8e23dc7d8b`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:50:51.709Z
+- **actualizada:** 2026-09-18T17:07:50.066Z
 - **Cuerpo:**
 
 ```
@@ -9215,7 +9215,7 @@ designmodelingacademy.com
 
 - **id:** `6a886ee22096ea7b87d5e35e`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:50:26.561Z
+- **actualizada:** 2026-09-18T17:08:44.805Z
 - **Cuerpo:**
 
 ```
@@ -9265,7 +9265,7 @@ designmodelingacademy.com
 
 - **id:** `6a886e9bbc3bac7221b86bd9`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:50:35.108Z
+- **actualizada:** 2026-09-18T17:11:25.340Z
 - **Cuerpo:**
 
 ```
@@ -9331,7 +9331,7 @@ designmodelingacademy.com
 
 - **id:** `6a886e6d97eed9fbd01dc568`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:56:10.148Z
+- **actualizada:** 2026-09-18T16:53:48.757Z
 - **Cuerpo:**
 
 ```
@@ -9381,7 +9381,7 @@ designmodelingacademy.com
 
 - **id:** `6a886c3c676a1cd9c1f3cf81`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:53:35.979Z
+- **actualizada:** 2026-09-18T17:12:16.994Z
 - **Cuerpo:**
 
 ```
@@ -9427,7 +9427,7 @@ designmodelingacademy.com
 
 - **id:** `6a886d9e897d6716c6d81c0b`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:55:11.437Z
+- **actualizada:** 2026-09-18T16:54:48.131Z
 - **Cuerpo:**
 
 ```
@@ -9477,7 +9477,7 @@ designmodelingacademy.com
 
 - **id:** `6a886f36676a1cd9c1f4199d`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:50:01.259Z
+- **actualizada:** 2026-09-18T17:13:06.329Z
 - **Cuerpo:**
 
 ```
@@ -9523,7 +9523,7 @@ designmodelingacademy.com
 
 - **id:** `6a886f237e0c28b368117591`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:50:10.215Z
+- **actualizada:** 2026-09-18T17:14:06.551Z
 - **Cuerpo:**
 
 ```
@@ -9569,7 +9569,7 @@ designmodelingacademy.com
 
 - **id:** `6a886c4e17389f8e23dc3f10`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:53:43.552Z
+- **actualizada:** 2026-09-18T17:14:39.229Z
 - **Cuerpo:**
 
 ```
@@ -9615,7 +9615,7 @@ designmodelingacademy.com
 
 - **id:** `6a886f4cda320347a25fdc0b`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:49:45.869Z
+- **actualizada:** 2026-09-18T17:15:13.124Z
 - **Cuerpo:**
 
 ```
@@ -9661,7 +9661,7 @@ designmodelingacademy.com
 
 - **id:** `6a886d8b676a1cd9c1f3f1d6`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:55:02.013Z
+- **actualizada:** 2026-09-18T16:55:35.573Z
 - **Cuerpo:**
 
 ```
@@ -9711,7 +9711,7 @@ designmodelingacademy.com
 
 - **id:** `6a886dfd5111f4c77719b6a0`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:51:58.902Z
+- **actualizada:** 2026-09-18T17:15:45.036Z
 - **Cuerpo:**
 
 ```
@@ -9761,7 +9761,7 @@ designmodelingacademy.com
 
 - **id:** `6a886ef6e4cb7738346b9c07`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:50:17.645Z
+- **actualizada:** 2026-09-18T17:16:13.965Z
 - **Cuerpo:**
 
 ```
@@ -9807,7 +9807,7 @@ designmodelingacademy.com
 
 - **id:** `6a886c01473a54c041ea24c3`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:53:12.597Z
+- **actualizada:** 2026-09-18T17:16:45.034Z
 - **Cuerpo:**
 
 ```
@@ -9853,7 +9853,7 @@ designmodelingacademy.com
 
 - **id:** `6a886e24676a1cd9c1f400a0`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:55:32.117Z
+- **actualizada:** 2026-09-18T16:56:23.523Z
 - **Cuerpo:**
 
 ```
@@ -9903,7 +9903,7 @@ designmodelingacademy.com
 
 - **id:** `6a886e54897d6716c6d82fef`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:55:49.270Z
+- **actualizada:** 2026-09-18T16:57:04.762Z
 - **Cuerpo:**
 
 ```
@@ -9949,7 +9949,7 @@ designmodelingacademy.com
 
 - **id:** `6a886f0fe4cb7738346b9df9`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:51:03.155Z
+- **actualizada:** 2026-09-18T17:17:16.940Z
 - **Cuerpo:**
 
 ```
@@ -9999,7 +9999,7 @@ designmodelingacademy.com
 
 - **id:** `6a886db27e0c28b368114f6b`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:51:17.146Z
+- **actualizada:** 2026-09-18T17:18:00.201Z
 - **Cuerpo:**
 
 ```
@@ -10049,7 +10049,7 @@ designmodelingacademy.com
 
 - **id:** `6a886de7e4cb7738346b8037`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:51:46.575Z
+- **actualizada:** 2026-09-18T17:22:47.220Z
 - **Cuerpo:**
 
 ```
@@ -10099,7 +10099,7 @@ designmodelingacademy.com
 
 - **id:** `6a886e3be4cb7738346b8ab8`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:55:40.688Z
+- **actualizada:** 2026-09-18T16:58:20.583Z
 - **Cuerpo:**
 
 ```
@@ -10149,7 +10149,7 @@ designmodelingacademy.com
 
 - **id:** `6a886cb6e4cb7738346b60f6`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:54:18.327Z
+- **actualizada:** 2026-09-18T16:59:03.858Z
 - **Cuerpo:**
 
 ```
@@ -10195,7 +10195,7 @@ designmodelingacademy.com
 
 - **id:** `6a886c6a97eed9fbd01d9440`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:53:57.633Z
+- **actualizada:** 2026-09-18T16:59:51.425Z
 - **Cuerpo:**
 
 ```
@@ -10241,7 +10241,7 @@ designmodelingacademy.com
 
 - **id:** `6a886d76897d6716c6d81840`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:54:52.962Z
+- **actualizada:** 2026-09-18T17:01:00.626Z
 - **Cuerpo:**
 
 ```
@@ -10287,7 +10287,7 @@ designmodelingacademy.com
 
 - **id:** `6a886c18c95ab36931b21783`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:53:20.237Z
+- **actualizada:** 2026-09-18T17:24:08.588Z
 - **Cuerpo:**
 
 ```
@@ -10333,7 +10333,7 @@ designmodelingacademy.com
 
 - **id:** `6a886ccc676a1cd9c1f3df05`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:54:24.921Z
+- **actualizada:** 2026-09-18T17:02:16.335Z
 - **Cuerpo:**
 
 ```
@@ -10379,7 +10379,7 @@ designmodelingacademy.com
 
 - **id:** `6a886dd18ced86da5a804ae4`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:51:28.364Z
+- **actualizada:** 2026-09-18T17:24:41.533Z
 - **Cuerpo:**
 
 ```
@@ -10429,7 +10429,7 @@ designmodelingacademy.com
 
 - **id:** `6a88668fda320347a25ef8c6`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:52:17.955Z
+- **actualizada:** 2026-09-18T17:25:09.992Z
 - **Cuerpo:**
 
 ```
@@ -10479,7 +10479,7 @@ designmodelingacademy.com
 
 - **id:** `6a886eb2c3ca7ccb66a2158a`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:50:43.281Z
+- **actualizada:** 2026-09-18T17:25:36.761Z
 - **Cuerpo:**
 
 ```
@@ -10525,7 +10525,7 @@ designmodelingacademy.com
 
 - **id:** `6a886e107e0c28b368115b62`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:55:21.157Z
+- **actualizada:** 2026-09-18T17:02:59.664Z
 - **Cuerpo:**
 
 ```
@@ -10575,7 +10575,7 @@ designmodelingacademy.com
 
 - **id:** `6a886cebda320347a25f9e28`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:54:34.576Z
+- **actualizada:** 2026-09-18T17:04:31.618Z
 - **Cuerpo:**
 
 ```
@@ -10625,7 +10625,7 @@ designmodelingacademy.com
 
 - **id:** `6a886e83bc3bac7221b869a8`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:55:59.543Z
+- **actualizada:** 2026-09-18T17:05:31.152Z
 - **Cuerpo:**
 
 ```
@@ -10675,7 +10675,7 @@ designmodelingacademy.com
 
 - **id:** `6a886be4bc3bac7221b8245e`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:52:52.188Z
+- **actualizada:** 2026-09-18T17:26:07.965Z
 - **Cuerpo:**
 
 ```
@@ -10725,7 +10725,7 @@ designmodelingacademy.com
 
 - **id:** `6a886b8e676a1cd9c1f3bdbb`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:52:26.975Z
+- **actualizada:** 2026-09-18T17:26:36.590Z
 - **Cuerpo:**
 
 ```
@@ -12635,6 +12635,112 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
+## ⚠️ RECONTACTO Y REMARKETING GENERAL
+
+### RECONTACTO - 01 sigues en esto
+
+- **id:** `6aad84a4b18f87d94f04c854`
+- **tipo:** html
+- **actualizada:** 2026-09-18T19:00:07.191Z
+- **Cuerpo:**
+
+```
+Respuesta de una linea y listo.
+Una sola pregunta
+&iquest;Sigues metido en BIM?
+Hola {{contact.first_name}} ,
+Hace tiempo que no sabemos nada de ti, as&iacute; que voy directo.
+&iquest;Sigues trabajando o estudiando en esto?
+Si es que s&iacute;, resp&oacute;ndeme con una l&iacute;nea y te pongo al d&iacute;a con lo que sacamos este a&ntilde;o.
+Si es que no, resp&oacute;ndeme igual y te saco de la lista hoy mismo. Prefiero eso a seguir llen&aacute;ndote la bandeja.
+Un abrazo,
+[NOMBRE REAL DE QUIEN FIRMA] &mdash; Design Modeling Academy
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### RECONTACTO - 02 lo que cambio
+
+- **id:** `6aad8a4796b1ac28744c5db2`
+- **tipo:** html
+- **actualizada:** 2026-09-18T19:01:41.296Z
+- **Cuerpo:**
+
+```
+Coge lo que te sirva y deja el resto.
+Novedades
+Lo que cambi&oacute; por aqu&iacute; desde la &uacute;ltima vez
+Hola {{contact.first_name}} ,
+Desde la &uacute;ltima vez que hablamos salieron varias cosas. Te las dejo en orden, de lo gratuito a lo de pago:
+&#9654; Calculadora de zapatas. Predimensionas desde el celular, en obra, sin instalar nada.
+&#9654; Test de la ruta BIM. Te ubica en uno de los cuatro niveles y te dice qu&eacute; te falta para el siguiente.
+&#9654; GPT t&eacute;cnico. Configurado para trabajo de construcci&oacute;n, no para escribir textos bonitos.
+&#9654; Comunidad. Dudas resueltas entre colegas y egresados, no un grupo de anuncios.
+Y una novedad de pago que s&iacute; vale la pena nombrar: la Especializaci&oacute;n en Acero ahora incluye Tutor IA 24/7 dentro de la plataforma. Te trabas un s&aacute;bado a las once de la noche, preguntas y te responde.
+Todo est&aacute; en el mismo sitio. Coge lo que te sirva y deja el resto.
+VER TODOS LOS RECURSOS
+Acceso libre &middot; sin costo
+Un abrazo,
+Equipo Design Modeling Academy
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### RECONTACTO - 03 lo mas útil
+
+- **id:** `6aad8ac4b397941922aa70eb`
+- **tipo:** html
+- **actualizada:** 2026-09-18T19:03:24.635Z
+- **Cuerpo:**
+
+```
+Los tres articulos que mas se guardaron.
+Sin promoci&oacute;n
+Lo m&aacute;s &uacute;til que publicamos este a&ntilde;o
+Hola {{contact.first_name}} ,
+Sin vueltas: estos son los tres art&iacute;culos que m&aacute;s se leyeron y se guardaron este a&ntilde;o.
+&#9654; Qu&eacute; trae de verdad la IA en Revit, en qu&eacute; versi&oacute;n, y qu&eacute; todav&iacute;a no existe.
+&#9654; C&oacute;mo elegir el software de estructuras seg&uacute;n lo que haces, no seg&uacute;n lo que est&aacute; de moda.
+&#9654; Los errores m&aacute;s comunes al modelar y c&oacute;mo se evitan desde el primer d&iacute;a.
+No hay promoci&oacute;n de nada aqu&iacute;. Si alguno te sirve, con eso me doy por pagado.
+IR AL BLOG
+Tres lecturas &middot; cero promoci&oacute;n
+Un abrazo,
+Equipo Design Modeling Academy
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### RECONTACTO - 04 te sigo escribiendo
+
+- **id:** `6aad8aa7b397941922aa6df9`
+- **tipo:** html
+- **actualizada:** 2026-09-18T19:03:53.490Z
+- **Cuerpo:**
+
+```
+Un clic y decides tu.
+&Uacute;ltimo de esta serie
+&iquest;Te sigo escribiendo?
+Hola {{contact.first_name}} ,
+Este es el &uacute;ltimo correo de esta serie.
+No has abierto los anteriores, y est&aacute; bien: puede que no sea tu momento, o que esto sencillamente no sea lo tuyo.
+Si quieres seguir recibiendo los recursos, dale al bot&oacute;n y te dejo en la lista.
+Si no haces nada, dejo de escribirte y ya est&aacute;. Sin rencor y sin m&aacute;s correos.
+S&Iacute;, SIGUE MAND&Aacute;NDOME COSAS
+Un clic y sigues en la lista
+&iquest;Prefieres cerrar la puerta hoy mismo?
+Prefiero no recibir m&aacute;s correos
+Un abrazo,
+Equipo Design Modeling Academy
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
 ## ⚠️ SEGUIMIENTO CLIENTES CURSO + FRÍOS
 
 ### CURSO-01 ¿Llegaste a entrar?
@@ -12787,6 +12893,219 @@ VER LA ESPECIALIZACI&Oacute;N
 Y si prefieres hablarlo antes, resp&oacute;ndeme y coordinamos una llamada
 Un abrazo,
 Equipo Design Modeling Academy
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+## ⚠️ SEGUIMIENTO NUTRICIÓN (Clientes de Cursos y Suscripciones)
+
+### CLIENTE - 01 tu acceso
+
+- **id:** `6aad8b4fc1af78af0830be25`
+- **tipo:** html
+- **actualizada:** 2026-09-18T19:27:51.248Z
+- **Cuerpo:**
+
+```
+Esta todo incluido. Solo hay que saberlo.
+Tu acceso
+Tu acceso, y c&oacute;mo sacarle el m&aacute;ximo
+Hola {{contact.first_name}} ,
+Te dejo por escrito todo lo que tienes incluido, porque hay cosas que casi nadie usa y ya est&aacute;n pagadas:
+&#9654; El aula , con acceso permanente. Lo que compraste no caduca.
+&#9654; Soporte t&eacute;cnico de instalaci&oacute;n y licencias. Si el software no te arranca, escribe y lo resolvemos.
+&#9654; La comunidad , donde preguntas y responden alumnos y egresados que ya pasaron por ah&iacute;.
+&#9654; Los certificados , que se descargan al terminar y llevan c&oacute;digo QR de verificaci&oacute;n.
+[SOLO SI APLICA &mdash; etiqueta acero-completa] El Tutor IA, disponible 24/7 dentro del curso, para las dudas que aparecen a deshora.
+Cu&eacute;ntame una cosa: &iquest;en qu&eacute; proyecto est&aacute;s ahora? As&iacute; te mando material que te sirva de verdad y no lo mismo que a todos.
+ENTRAR AL AULA
+Tu acceso no caduca
+Un abrazo,
+[NOMBRE DE QUIEN FIRMA] &mdash; Design Modeling Academy
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### CLIENTE - 02 recurso del mes
+
+- **id:** `6aad8b7b9ed784b5dfe2cc4e`
+- **tipo:** html
+- **actualizada:** 2026-09-18T19:27:35.073Z
+- **Cuerpo:**
+
+```
+Funciona desde el celular, en obra.
+Recurso del mes
+El recurso de este mes
+Hola {{contact.first_name}} ,
+Las herramientas gratuitas que sacamos no son solo para captar gente nueva. A ti tambi&eacute;n te sirven, y probablemente m&aacute;s.
+Esta es la calculadora de zapatas : metes la carga y el esfuerzo admisible del suelo, y te devuelve el predimensionado. Funciona desde el celular, en obra, sin instalar nada.
+Es una herramienta de apoyo para predimensionar. No sustituye el criterio ni la revisi&oacute;n del profesional responsable.
+Si la usas y le ves algo que falta, d&iacute;melo. Varias mejoras salieron de alumnos.
+ABRIR LA CALCULADORA
+Funciona desde el celular &middot; sin instalar nada
+Un abrazo,
+Equipo Design Modeling Academy
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### CLIENTE - 03 caso real
+
+- **id:** `6aad8b8ab0cd6d0085ecf268`
+- **tipo:** html
+- **actualizada:** 2026-09-18T19:27:11.171Z
+- **Cuerpo:**
+
+```
+Un caso real, con nombre y apellido.
+Caso real
+De modelador a coordinador en 8 meses
+Hola {{contact.first_name}} ,
+Te cuento un caso, porque los n&uacute;meros solos no dicen nada.
+[NOMBRE DEL ALUMNO &mdash; sacar de la p&aacute;gina de testimonios] entr&oacute; sabiendo modelar, como casi todos. Lo que no sab&iacute;a era coordinar.
+Ocho meses despu&eacute;s lleva la coordinaci&oacute;n de su proyecto y detecta las interferencias antes de que lleguen a obra, no cuando ya hay que picar.
+Lo que cambi&oacute; no fue el software. Fue entender que el modelo sirve para decidir, no solo para dibujar.
+&iquest;Vas por ese camino? Resp&oacute;ndeme y te digo qu&eacute; te falta.
+VER M&Aacute;S TESTIMONIOS
+Casos reales de egresados
+Un abrazo,
+[NOMBRE DE QUIEN FIRMA] &mdash; Design Modeling Academy
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### CLIENTE - 04 lo que viene
+
+- **id:** `6aad8ba07620d978ef4ce1ed`
+- **tipo:** html
+- **actualizada:** 2026-09-18T19:26:51.552Z
+- **Cuerpo:**
+
+```
+Ya esta incluido en lo que tienes.
+Este mes
+Lo que viene en las pr&oacute;ximas semanas
+Hola {{contact.first_name}} ,
+Un resumen corto de lo que se viene este mes:
+&#9654; [SESIONES EN VIVO] &mdash; fechas y tema de cada una.
+&#9654; [HERRAMIENTA NUEVA] &mdash; la app del mes de la DMA Engineering Suite.
+&#9654; [CONTENIDO] &mdash; los art&iacute;culos o clases que salen este mes.
+Todo esto entra en lo que ya tienes. No hay que pagar nada aparte.
+VER EL CALENDARIO
+Ya est&aacute; incluido en lo que tienes
+Un abrazo,
+Equipo Design Modeling Academy
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### CLIENTE - 05 tu siguiente bloque
+
+- **id:** `6aad8bb59ed784b5dfe2d492`
+- **tipo:** html
+- **actualizada:** 2026-09-18T19:26:34.178Z
+- **Cuerpo:**
+
+```
+Donde estas en la ruta y que sigue.
+Tu ruta
+Cu&aacute;l es tu siguiente bloque
+Hola {{contact.first_name}} ,
+Te explico c&oacute;mo est&aacute; armada la ruta completa, porque cambi&oacute; algo importante.
+El M&aacute;ster son 12 meses divididos en cuatro bloques :
+01
+BIM Professional &middot; 3 meses
+Modelas arquitectura y estructura con criterio.
+02
+BIM Coordination &middot; 3 meses
+MEP, federaci&oacute;n en la nube y gesti&oacute;n del CDE.
+03
+BIM Management &middot; 2 meses
+Coordinaci&oacute;n y detecci&oacute;n de interferencias en Navisworks, y planificaci&oacute;n 4D.
+04
+BIM + AI &middot; 3 meses
+Presupuesto 5D, automatizaci&oacute;n con Dynamo y Python, e IA aplicada a BIM.
+&#10003;
+Proyecto Final y Defensa &middot; 1 mes
+Integras todo en un proyecto y lo defiendes.
+Lo que cambi&oacute;: ahora cada bloque se puede tomar por separado. No tienes que comprometerte con los 12 meses de golpe para empezar a avanzar en la ruta.
+Se suben en orden, eso s&iacute;. No se coordina bien sin modelar bien.
+Por lo que has hecho hasta ahora, hay un bloque que te toca. Si quieres que lo veamos juntos y te diga en concreto qu&eacute; te falta, resp&oacute;ndeme y coordinamos una llamada.
+Sin compromiso y sin presentaci&oacute;n de ventas. Es media hora mirando tu caso.
+AGENDAR UNA CONVERSACI&Oacute;N
+Media hora &middot; sin compromiso
+Un abrazo,
+[NOMBRE DE QUIEN FIRMA] &mdash; Design Modeling Academy
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### CLIENTE - 06A tutor ia acero completa
+
+- **id:** `6aad8bc5cbcc9427cbd3b83f`
+- **tipo:** html
+- **actualizada:** 2026-09-18T19:25:56.062Z
+- **Cuerpo:**
+
+```
+24/7, dentro de la plataforma, sin pagar nada aparte.
+Novedad en tu curso
+Tu Especializaci&oacute;n en Acero ahora viene con Tutor IA
+Hola {{contact.first_name}} ,
+Aviso corto y bueno: tu Especializaci&oacute;n en Acero ya tiene Tutor IA dentro de la plataforma.
+Qu&eacute; hace. Le preguntas lo que se te atore &mdash; un criterio de dise&ntilde;o, un error de Robot que no entiendes, c&oacute;mo llegar a una vista en Advance Steel &mdash; y te responde al momento, a la hora a la que est&eacute;s estudiando de verdad.
+Qu&eacute; no hace. No revisa tu proyecto ni valida tus resultados. El criterio sigue siendo tuyo y la revisi&oacute;n, del profesional responsable. El Tutor te desatasca; no firma.
+No tienes que activar nada ni pagar nada aparte. Entra al aula y lo encuentras dentro del curso.
+&Uacute;salo esta semana y dime qu&eacute; tal. Si algo te parece flojo, resp&oacute;ndeme: lo estamos afinando con casos reales de alumnos.
+PROBAR EL TUTOR IA
+Ya est&aacute; activo &middot; sin costo adicional
+Un abrazo,
+[NOMBRE DE QUIEN FIRMA] &mdash; Design Modeling Academy
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### CLIENTE - 06B tutor ia acero modulos
+
+- **id:** `6aad8bd99ed784b5dfe2d7d4`
+- **tipo:** html
+- **actualizada:** 2026-09-18T19:25:23.438Z
+- **Cuerpo:**
+
+```
+Te cuento que es y como se accede.
+Novedad en acero
+Hay un Tutor IA en la especializaci&oacute;n completa
+Hola
+{{contact.first_name}} ,
+Te escribo para
+contarte algo que acabamos de sumar y para ser transparente sobre c&oacute;mo funciona.
+La
+Especializaci&oacute;n en Acero ya tiene Tutor IA dentro de la
+plataforma: preguntas lo que se te atore mientras estudias y te responde al momento, a cualquier hora.
+Va con la
+especializaci&oacute;n completa. T&uacute; tomaste m&oacute;dulos sueltos, as&iacute; que no lo tienes
+activo todav&iacute;a.
+Si est&aacute;s
+pensando en completar la especializaci&oacute;n, d&iacute;melo y te digo qu&eacute; m&oacute;dulos te
+faltan y c&oacute;mo queda con lo que ya pagaste.
+Y si est&aacute;s
+bien as&iacute;, tambi&eacute;n est&aacute; perfecto. Sigues teniendo tu acceso permanente y el soporte
+de siempre.
+VER LA ESPECIALIZACI&Oacute;N COMPLETA
+El Tutor IA entra con la
+especializaci&oacute;n completa
+Un abrazo,
+[NOMBRE DE QUIEN
+FIRMA] &mdash; Design Modeling Academy
 Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
 designmodelingacademy.com
 {{unsubscribe_url}}
