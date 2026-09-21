@@ -1,7 +1,8 @@
 # El playbook — ocho pasos, por teléfono y WhatsApp
 
-De la guía de tododeia sobre Apify, **cambiado el canal**: en vez de correo en
-frío, teléfono y WhatsApp. Los ajustes de DMA van marcados **así**.
+De la guía de tododeia sobre Apify, **con el canal cambiado**: teléfono y
+WhatsApp primero, y el correo como tercer canal **solo para direcciones de
+confianza alta**. Los ajustes de DMA van marcados **así**.
 
 Se pegan de a uno, esperando respuesta. Cada uno deja un archivo que el
 siguiente necesita.
@@ -13,9 +14,18 @@ siguiente necesita.
 | Con **teléfono** | ~950 — viene directo del mapa |
 | Con **correo** | ~350 — hay que entrar a su web a buscarlo |
 
-Triplica la base contactable, gasta menos crédito (no hay que rastrear webs), y
-**no toca `info@dgdesignmodeling.com`**, que está en verde porque solo escribe a
-quien pidió algo. Ese verde es lo que está en juego, no lo que protege.
+Triplica la base contactable y gasta menos crédito. Por eso el teléfono va
+primero: no es prudencia, es que rinde más.
+
+**El correo entra para cubrir el hueco** — los que no traen teléfono utilizable.
+Pero con un filtro: solo `confianza: alta`, que es el correo que está en el sitio
+oficial del negocio. Los genéricos tipo `info@` y `contacto@` **nunca**: muchos
+están abandonados y algunos son trampas de spam, y un golpe a una trampa hace más
+daño que cien correos bien mandados.
+
+De 1.000 negocios salen ~350 con correo, y de esos los de confianza alta son una
+fracción: se acaba escribiendo a unos **50-80 por cada mil**. El volumen bajo sale
+del filtro, no de contenerse.
 
 ## Las reglas del canal nuevo
 
@@ -95,7 +105,7 @@ escribe.** Una llamada de treinta segundos vale más que veinte mensajes.
 > corrida se va a pasar del doble, párate y avísame.
 >
 > Guarda en `leads/YYYY-MM-DD.csv` con estas columnas exactas:
-> `negocio | contacto | puesto | telefono | tiene_whatsapp | sitio_web |
+> `negocio | contacto | puesto | telefono | tiene_whatsapp | correo | sitio_web |
 > instagram | ciudad | rating | resenas | senal_de_calificacion | fuente | fecha`
 >
 > Reglas:
@@ -103,6 +113,8 @@ escribe.** Una llamada de treinta segundos vale más que veinte mensajes.
 >   parece lógico.
 > - **`tiene_whatsapp` se queda en «por verificar»**. No lo adivines por el
 >   formato del número: se comprueba abriendo el chat, y eso lo hace una persona.
+> - **`correo` solo si el actor lo trae de serie.** No actives add-ons para
+>   buscarlo todavía — eso es el paso 4 y solo para los que hagan falta.
 > - En `senal_de_calificacion`, la razón concreta por la que entra.
 > - En `fuente`, el actor exacto.
 > - Si ya está en algún CSV de `leads/`, no lo repitas.
@@ -112,26 +124,36 @@ escribe.** Una llamada de treinta segundos vale más que veinte mensajes.
 
 ---
 
-## 4 · Enriquecer, sin inventar y sin rastrear webs
+## 4 · Enriquecer, sin inventar
 
-> Toma el CSV de hoy y compléta **solo lo que sirve para llamar**.
+> Toma el CSV de hoy y compléta **solo lo que sirve para contactar**.
 >
-> Para los que no traigan teléfono, mira si lo publican en su Instagram o en su
-> sitio. Para los que sí lo traigan, no gastes crédito en buscar nada más —
-> **no necesitamos correos**.
+> **Primero el teléfono**, que es el canal principal. Para los que no lo traigan,
+> mira si lo publican en su Instagram o en su sitio.
+>
+> **Después el correo, y SOLO para los que se quedaron sin teléfono utilizable.**
+> No gastes crédito buscando el correo de alguien a quien ya podemos llamar.
 >
 > Agrega:
 > - `origen_telefono`: «google maps», «sitio web», «red social» o «no encontrado».
-> - `mejor_hora`: si el negocio publica horario, la franja en la que conviene
->   llamar. Si no lo publica, «sin dato». **No la supongas por el tipo de
->   negocio.**
+> - `mejor_hora`: si el negocio publica horario, la franja para llamar. Si no lo
+>   publica, «sin dato». **No la supongas por el tipo de negocio.**
+> - `origen_correo`: «sitio web», «red social» o «no encontrado».
+> - `confianza`: **alta** si está en el sitio oficial del negocio, mejor si es de
+>   una persona con nombre · **media** si viene de un directorio o una red ·
+>   **baja** si es genérico tipo `info@` o `contacto@`.
 >
-> Reglas:
-> - Sin teléfono verificable se queda «sin dato» y baja de prioridad. No se
->   inventa un número ni se deduce por el prefijo de la zona.
+> Reglas que no se rompen:
+> - Sin teléfono verificable, «sin dato». **No se deduce un número por el prefijo
+>   de la zona.**
+> - **Nunca generes un correo por patrón** (`nombre.apellido@dominio`). Eso es lo
+>   que de verdad quema un dominio, y el nuestro manda los correos de los alumnos.
+> - Un correo que no encontraste se queda «sin dato». No lo inventes, no lo
+>   deduzcas del dominio de la web.
 > - Si el negocio cerró o el sitio no existe, «descartado» con el motivo.
 >
-> Cierra diciendo con cuántos se puede hablar hoy.
+> Cierra con tres números: **con cuántos se puede hablar por teléfono, a cuántos
+> se les puede escribir con confianza ALTA, y cuántos se quedaron sin ninguna vía.**
 
 ---
 
@@ -141,17 +163,20 @@ escribe.** Una llamada de treinta segundos vale más que veinte mensajes.
 >
 > - `grado`: **A** = ≥4 señales y teléfono utilizable · **B** = 2-3 señales, o le
 >   falta el teléfono bueno · **C** = apenas roza el perfil.
+> - `canal`: **llamada** si es A · **whatsapp** si es B con móvil · **correo** si
+>   es B sin teléfono utilizable pero con `confianza: alta` · **sin via** si no
+>   tiene ninguna de las tres. **A nadie se le contacta por dos canales.**
 > - `porque`: la evidencia en una línea. Nada de «parece buen prospecto»; quiero
 >   «4,8 estrellas con 210 reseñas, sin sitio web, publica seguido en Instagram».
 >
 > Los que caigan en señal de descarte van a `descartados.csv` con el motivo.
 >
-> Después: cuántos A, B y C, y **los 10 a los que llamarías tú primero**. Ordena
-> el CSV con los A arriba.
+> Después: cuántos A, B y C, **cuántos van por cada canal**, y los 10 a los que
+> llamarías tú primero. Ordena el CSV con los A arriba.
 
 ---
 
-## 6 · Los guiones — llamada para los A, WhatsApp para los B
+## 6 · Los guiones — llamada, WhatsApp o correo según el canal
 
 > ⚠️ **Antes de este paso: el número de envío es un WhatsApp Business aparte, no
 > el personal de nadie.** Ver `montaje-local.md`.
@@ -178,8 +203,20 @@ escribe.** Una llamada de treinta segundos vale más que veinte mensajes.
 >   primer contacto con enlace parece estafa.
 > - Español de Ecuador, de usted, tono de persona no de empresa. Sin emojis.
 >
-> Guarda en `contactos/YYYY-MM-DD.csv`: `negocio | telefono | grado | canal |
-> angulo_usado | guion`.
+> **Para los de canal `correo` — y SOLO los de `confianza: alta`.**
+> - **Asunto:** dos versiones, máximo 6 palabras, sin exclamaciones ni palabras de
+>   promoción. Una directa y una en pregunta.
+> - Primera línea: el dato real de ese negocio. **Sin dato real, no hay correo.**
+> - Di de dónde salió su contacto, igual que en WhatsApp.
+> - Máximo 90 palabras. Sin emojis, sin «espero que este correo te encuentre
+>   bien», sin párrafos de tres líneas.
+> - Cierre: una pregunta que se conteste con sí o no. **Nada de «agenda en mi
+>   calendario» en el primero.**
+> - **Ni un solo correo a una dirección de confianza media o baja.** Si el único
+>   contacto es `info@`, ese negocio se queda para llamada.
+>
+> Guarda en `contactos/YYYY-MM-DD.csv`: `negocio | telefono | correo | grado |
+> canal | confianza | angulo_usado | guion`.
 >
 > Antes de los 50, escríbeme 3 de cada tipo y espera mi visto bueno del tono.
 
@@ -198,6 +235,9 @@ escribe.** Una llamada de treinta segundos vale más que veinte mensajes.
 >
 > **Para los de grado A que no contestaron la llamada:** un segundo intento a
 > otra hora del día, y si no, un WhatsApp corto diciendo que llamaste.
+>
+> **Para los de canal correo:** un solo seguimiento, máximo 50 palabras, a los 3
+> días hábiles. En el mismo hilo, respondiendo al anterior, no como correo nuevo.
 >
 > Reglas:
 > - Si alguien contesta, aunque sea que no, **sale** y entra en
@@ -223,10 +263,16 @@ escribe.** Una llamada de treinta segundos vale más que veinte mensajes.
 > 1. Compara a los que contestaron contra los que no: ciudad, tamaño, rating, si
 >    tenían sitio web, el ángulo, la hora a la que se llamó. **Dime el patrón
 >    aunque sea incómodo.**
-> 2. **Llamada contra WhatsApp: cuál trajo más reuniones**, con los números que
+> 2. **Llamada, WhatsApp o correo: cuál trajo más reuniones**, con los números que
 >    haya. Si los A por teléfono no rinden más que los B por mensaje, el grado
 >    está mal puesto y hay que revisarlo.
 > 3. Si hubo muchos números malos, qué falló al enriquecer.
+> 4. **EL REBOTE DE LOS CORREOS.** Cuántos rebotaron sobre cuántos se mandaron.
+>    **Si pasa del 2 %, lo dices como aviso y paramos el canal de correo** hasta
+>    arreglar el enriquecimiento: por encima de ahí Google empieza a castigar la
+>    reputación del dominio, y ese dominio manda los correos de los alumnos.
+>    Dime también cuántos de los que rebotaron eran de `confianza` media, porque
+>    si son casi todos, el filtro tiene que subir a solo alta.
 > 4. Actualiza `perfil-cliente.md` con lo aprendido. Muéstrame los cambios
 >    marcados antes de guardar.
 >

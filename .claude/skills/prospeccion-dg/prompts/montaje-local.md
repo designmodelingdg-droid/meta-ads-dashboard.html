@@ -55,8 +55,21 @@ Hace falta un **WhatsApp Business aparte**, con su propio número. Y tres reglas
 cliente, sacar la lista, enriquecerla y calificarla no manda nada. Lo que se
 para es el paso 6.
 
-Y el correo de siempre, `info@dgdesignmodeling.com`, **no se toca**. Sigue
-haciendo lo que hace bien: escribirle a quien pidió algo.
+## 3 bis · El correo, desde el dominio de siempre
+
+Decidido el 20-sep: **sí se usa `dgdesignmodeling.com`**, después de comprobar
+que está en buen estado. Con dos condiciones que no son opcionales:
+
+- **Solo a direcciones de `confianza: alta`** — las que están en el sitio oficial
+  del negocio. Nunca a `info@` ni `contacto@`: muchas están abandonadas y algunas
+  son trampas de spam.
+- **Se miden los rebotes de la primera tanda.** Si pasan del **2 %**, se para el
+  canal de correo hasta arreglar el enriquecimiento. Por encima de ahí Google
+  castiga la reputación del dominio — y ese dominio manda los correos de los
+  alumnos y las secuencias de los recursos.
+
+El volumen sale bajo solo: de cada mil negocios raspados, los de confianza alta
+son unos 50-80.
 
 ## 4 · El agente con horario — solo cuando lo anterior funcione
 

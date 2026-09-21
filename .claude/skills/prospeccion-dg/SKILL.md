@@ -3,7 +3,7 @@ name: prospeccion-dg
 description: >
   Saca clientes B2B para Design Modeling DG (la consultoría) con los scrapers
   de Apify: define el cliente ideal, prueba con 10, saca la lista, la enriquece
-  sin inventar, la califica y escribe los guiones de llamada y de WhatsApp.
+  sin inventar, la califica y escribe los guiones de llamada, WhatsApp y correo.
 
   Usa este skill cuando Dayana diga: "prospeccion-dg", "busquemos clientes para
   la consultoría", "saca una lista de constructoras", "prospección con Apify",
@@ -32,25 +32,59 @@ ofrecerle un curso es otra cosa, y no es lo que hace esta cuenta.
 
 ## Paso 1 · Las tres reglas que no se rompen, y por qué son de DMA
 
-### 1 · Se contacta por TELÉFONO, no por correo
+### 1 · Teléfono primero, correo solo de confianza alta
 
-`info@dgdesignmodeling.com` está en verde, y lo está **porque solo le escribe a
-quien pidió algo**: quien descargó un recurso, quien llenó un formulario, los
-alumnos. El correo en frío es el tráfico contrario, y es lo que genera quejas y
-rebotes.
+**El teléfono es el canal principal, y no por prudencia sino porque rinde más.**
+De 1.000 negocios de Google Maps, ~950 traen teléfono —viene en la ficha— y solo
+~350 traen correo, que hay que ir a buscar entrando a su web. Triplica la base
+contactable y gasta menos crédito.
 
-**Ese verde no protege: es lo que está en juego.** Si se cae, no se pierde la
-prospección — se pierde que le lleguen los correos a quien ya pagó.
+**El correo entra como tercer canal**, decidido por Dayana el 20-sep tras
+comprobar el estado del dominio. Con un filtro que no se relaja.
 
-Y además el teléfono rinde más. De 1.000 negocios de Google Maps, **~950 traen
-teléfono** (viene en el mapa) y **~350 traen correo** (hay que entrar a su web a
-buscarlo). Triplica la base contactable y gasta menos crédito.
+#### Dónde está el riesgo de verdad
 
-**El número de envío es un WhatsApp Business aparte**, nunca el personal de
-nadie. Volumen bajo al principio, subiendo despacio. Y **nada de herramientas de
-envío masivo ni APIs no oficiales**: ese es el disparador de bloqueo más claro.
+No es el volumen: son **los rebotes y las direcciones genéricas**. Lo que un
+scraper saca del sitio de un negocio es en su mayoría `info@` y `contacto@`, y
+esas son las peores — muchas abandonadas, algunas trampas de spam. **Un golpe a
+una trampa hace más daño que cien correos bien mandados.** Y por encima del 2 %
+de rebotes Google empieza a castigar la reputación.
 
-A los de grado A se les **llama**. A los B se les escribe.
+#### El filtro
+
+| `confianza` | Qué es | ¿Se manda? |
+|---|---|---|
+| **alta** | está en el sitio oficial del negocio, mejor si es de una persona | **sí** |
+| media | viene de un directorio o una red social | solo si no hay teléfono |
+| baja | genérico tipo `info@`, `contacto@` | **nunca** |
+
+La cuenta sale sola: de 1.000 negocios, ~350 con correo, y de esos los de
+confianza alta son una fracción. **Se acaba mandando a unos 50-80 por cada mil
+raspados** — el volumen bajo sale del filtro, no de contenerse.
+
+#### El reparto de canales
+
+| Grado | Canal |
+|---|---|
+| **A** | **Llamada.** Rinde más y no gasta dominio |
+| **B** con móvil | WhatsApp |
+| **B** sin teléfono útil, con correo de confianza alta | Correo |
+
+El correo cubre el hueco que el teléfono no alcanza. **No se duplica**: a nadie
+se le escribe por dos canales a la vez.
+
+#### Las dos reglas del envío
+
+1. **Medir los rebotes de la primera tanda.** Si pasan del **2 %**, se para y se
+   arregla el enriquecimiento antes de seguir. Eso se detecta en el paso 8.
+2. **Nunca deducir un correo por patrón** (`nombre.apellido@dominio`). Eso es lo
+   que de verdad quema un dominio, y el nuestro manda los correos de los alumnos.
+
+#### Y el WhatsApp
+
+**Número de WhatsApp Business aparte**, nunca el personal de nadie. Volumen bajo
+subiendo despacio. Y **nada de herramientas de envío masivo ni APIs no
+oficiales**: ese es el disparador de bloqueo más claro que hay.
 
 ### 2 · Los leads en frío NO entran al GoHighLevel de siempre
 
@@ -92,9 +126,9 @@ respuesta antes del siguiente**, no se pegan todos de golpe.
 | 1 | La entrevista | `perfil-cliente.md` |
 | 2 | Prueba de 10 | `leads/muestra.csv` |
 | 3 | Los 50, con tope | `leads/<fecha>.csv` |
-| 4 | Enriquecer sin inventar | las columnas `origen_telefono` y `mejor_hora` |
+| 4 | Enriquecer sin inventar | `origen_telefono`, `mejor_hora`, `correo` y `confianza` |
 | 5 | Calificar A/B/C | el CSV ordenado + `descartados.csv` |
-| 6 | Guiones: llamada (A) y WhatsApp (B) | `contactos/<fecha>.csv` |
+| 6 | Guiones: llamada (A), WhatsApp o correo (B) | `contactos/<fecha>.csv` |
 | 7 | El seguimiento (uno solo) | `contactos/seguimientos.csv` |
 | 8 | Qué funcionó | `perfil-cliente.md` corregido |
 
@@ -109,7 +143,7 @@ Los prompts completos están en `prompts/playbook.md`.
 - **Probar con 10 antes de gastar en 50.** Si menos de 7 de 10 califican, se
   corrige la búsqueda, no se sigue.
 - **Sin dato real de ese negocio, no hay contacto.** Se marca «sin ángulo» y
-  se investiga antes de llamar.
+  se investiga antes de llamar o escribir.
 
 ## Paso 3 · Las cuentas honestas, antes de ilusionarse
 
@@ -146,6 +180,6 @@ dice la propia guía y es cierto.
 
 De la guía de la bóveda de **tododeia** sobre Apify (actualizada a julio 2026).
 Los prompts se conservan y se les añaden las tres reglas de arriba, que son de
-DMA y la guía no podía conocer: el canal —teléfono en vez del correo que
-sostiene el CRM—, el GHL que la matriz mide, y el crédito de Apify que ya se
+DMA y la guía no podía conocer: el canal —teléfono primero, y el correo
+solo de confianza alta para no tocar el dominio que sostiene el CRM—, el GHL que la matriz mide, y el crédito de Apify que ya se
 está gastando solo los lunes.
