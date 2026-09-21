@@ -435,19 +435,34 @@ en ningún sitio:
 
 El del Jue 10 no necesita cámara y la guía está publicada desde el 7-sep.
 
-**5 · 36 comentarios pidieron una palabra que hay que comprobar.** Los dos
-reels llevan CTA de palabra clave: CHATGPT el del miércoles, MEMORIA el del
+**5 · Los 36 comentarios de palabra clave sí tenían a quién contestarles.**
+Los dos reels llevan CTA de palabra: CHATGPT el del miércoles, MEMORIA el del
 viernes. Entre los dos juntaron **36 comentarios**.
 
-En OpenReply **no existe ninguna de las dos**. Lo que está vivo allí es
-TUTORIAL (34 DM de los 44 del mes), GUIA (8) y BIM (2).
+En OpenReply no aparece ninguna de las dos, y esa era la duda. **Está
+resuelta:** Dayana confirmó que los disparadores están todos montados en
+GoHighLevel, y la sonda de GHL lo corrobora con nombre y estado — las seis
+palabras de la matriz tienen workflow `published`:
 
-**Esto NO prueba que esos 36 no recibieran nada**: los disparadores de la
-matriz se montan en GoHighLevel, que es otro sistema y OpenReply no lo ve. Pero
-sí es la comprobación que falta y es de un minuto: **abrir GoHighLevel y ver si
-CHATGPT y MEMORIA están montadas.** Si no lo están, 36 personas comentaron una
-palabra que no le habla a nadie, que es exactamente lo que el CTA existe para
-evitar.
+| Palabra | Workflow en GoHighLevel | Estado |
+|---|---|---|
+| ZAPATA | Comentario ZAPATA · Calculadora de Zapatas | published |
+| ACERO | Comentario ACERO · Verificación de Acero | published |
+| NIVEL | Comentario NIVEL · Test de Nivel BIM | published |
+| CHATGPT | Comentario CHATGPT · Guía Revit + ChatGPT | published |
+| MEMORIA | Comentario MEMORIA · Memoria de Cálculo | published |
+| DYNAMO | Comentario DYNAMO · Pack Script Dynamo | published |
+
+Y la comprobación deja de hacerse a mano: el conector cruza ahora las seis
+palabras contra los 133 workflows que la sonda ya bajaba cada semana. **Lo que
+ese cruce no puede decir** es cómo está configurado el disparador: el listado
+de GHL da el nombre y el estado, no si el disparador es «comentario de
+Instagram con esta palabra». Un `draft` sí es concluyente — no dispara.
+
+**Lo que salió al mirar:** la campaña *MEMORIA DE CÁLCULO* está **pausada en
+OpenReply** mientras su workflow de GHL sigue publicado. El comentario se
+contesta, pero por GHL: no va a haber DM ni medición por OpenReply. Si es a
+propósito, bien; si no, es un medidor apagado.
 
 ### Lo que la API no da y hace falta pedir
 

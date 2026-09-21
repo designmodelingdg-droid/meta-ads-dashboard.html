@@ -31,7 +31,8 @@ estado: 🔴 pendiente · 🟡 en curso · 🟢 hecho · ⚫ descartada (con el 
 | 12 | **Las historias no tienen ni un slot de venta** (0 de 7 días) y los 15 «mándales DM» de la guía no tienen ni un guion escrito. Resuelto en `HISTORIAS-VENTA.md`: jueves de venta + 5 guiones de DM | Auditoría historias 14-ago | Dayana | 🔴 |
 | 13 | **ACERO es solo el 20 % de las historias** (3 de 15) siendo el producto de mejor CPL. Subir a 6 | Auditoría historias 14-ago | Dayana | 🔴 |
 | 14 | **Decidir si ACERO abre cohorte este mes** y con cuántos cupos reales. Sin ese dato, la secuencia de cuenta regresiva no se publica | Auditoría historias 14-ago | Dayana | 🔴 |
-| 15 | **Comprobar en GoHighLevel si CHATGPT y MEMORIA están montadas.** Los dos reels de la semana las pidieron y juntaron 36 comentarios. En OpenReply no existe ninguna de las dos; GHL es otro sistema y puede tenerlas. Es una comprobación de un minuto | Revisión 21-sep | Dayana | 🔴 |
+| 15 | ~~Comprobar en GHL si CHATGPT y MEMORIA están montadas~~ · **Resuelto:** Dayana confirma que están todos, y la sonda de GHL lo corrobora: las SEIS palabras tienen workflow `published` (`Comentario ZAPATA/ACERO/NIVEL/CHATGPT/MEMORIA/DYNAMO`). El cotejo ya lo mira solo | Revisión 21-sep | — | 🟢 |
+| 17 | **Decidir si la campaña MEMORIA DE CÁLCULO de OpenReply se reactiva.** Está pausada ahí mientras su workflow de GHL sigue publicado: el comentario se contesta, pero sin DM ni medición por OpenReply | Revisión 21-sep | Dayana | 🔴 |
 | 16 | **Tres piezas del calendario siguen sin salir:** `pauta-guia` (Mar 8, reel), `lm-revit-chatgpt-feed` (Jue 10, carrusel) y `reel-advertencias` (Vie 18, reel). El del Jue 10 no necesita cámara | Revisión 21-sep | Contenido | 🔴 |
 
 ---
@@ -80,6 +81,23 @@ Estas ya no se discuten cada semana. Salieron de medir.
 ---
 
 ## Historial
+
+### 21-sep-2026 · Los seis disparadores están montados (y el cotejo ya lo comprueba solo)
+
+Dayana confirmó que están todos en GoHighLevel, y la sonda de GHL lo corrobora
+con nombre y estado: las seis palabras de la matriz tienen workflow
+`published`. Los 36 comentarios de la semana tenían a quién contestarles.
+
+Así que la pregunta deja de hacerse a mano: `scripts/openreply.py` cruza ahora
+las seis palabras contra los 133 workflows que la sonda ya bajaba, y distingue
+cinco estados en vez de «existe / no existe». **Límite anotado:** el listado de
+GHL da el nombre y el estado, no la configuración del disparador — un `draft`
+sí es concluyente, un `published` es muy probable, no demostrado.
+
+**Lo que salió al mirar:** la campaña MEMORIA DE CÁLCULO está **pausada en
+OpenReply** mientras su workflow sigue publicado en GHL. El comentario se
+contesta, pero por GHL: no va a haber DM ni medición por OpenReply. Si eso es a
+propósito, bien; si no, es un medidor apagado. → recomendación #17.
 
 ### 21-sep-2026 · Revisión semanal (14-20 sep)
 

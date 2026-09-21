@@ -42,6 +42,10 @@ import subprocess
 import sys
 
 SALIDA = pathlib.Path("matriz-viral/fuentes/openreply")
+# La sonda de GoHighLevel ya trae los 133 workflows con nombre y estado, y
+# corre en el mismo Action unos pasos antes. Se reutiliza en vez de pedir
+# los workflows otra vez.
+SONDA_GHL = pathlib.Path("matriz-viral/fuentes/ghl-sonda.json")
 
 # Las seis palabras que la matriz declara activas (regla del 11-sep). Se
 # comparan contra lo que OpenReply tiene montado de verdad: esa diferencia es
@@ -337,7 +341,48 @@ def leer_los_clics(campanas):
     return campanas
 
 
-def cotejar_con_la_matriz(por_palabra, campanas, hubo_fallo):
+def workflows_de_ghl(ruta_sonda):
+    """Qué workflows de GoHighLevel lleva cada palabra en el nombre.
+
+    OpenReply no ve GoHighLevel, y ahí es donde viven los disparadores de las
+    seis palabras de la matriz. Hasta ahora el cotejo decía «hay que
+    comprobarlo en GHL» y alguien tenía que acordarse de mirarlo a mano; el
+    21-sep Dayana lo confirmó de palabra y esto lo vuelve automático.
+
+    La sonda ya trae los 133 workflows con su nombre y su estado, así que no
+    hace falta una llamada nueva.
+
+    LÍMITE, y es importante: el listado da NOMBRE y ESTADO, no la
+    configuración del disparador. Que exista «Comentario DYNAMO - Pack Script
+    Dynamo» publicado no demuestra que su disparador sea un comentario de
+    Instagram con esa palabra exacta — lo hace muy probable, nada más. Un
+    workflow en `draft` sí que es concluyente al revés: no dispara.
+
+    Devuelve None si la sonda no está o no trae la lista, para que quien lo use
+    pueda decir «no se pudo mirar» en vez de «no existe».
+    """
+    try:
+        with open(ruta_sonda, encoding="utf-8") as fh:
+            sonda = json.load(fh)
+    except (OSError, ValueError):
+        return None
+    lista = (((sonda.get("detalle_workflow") or {}).get("muestra") or {})
+             .get("lista"))
+    if not isinstance(lista, list) or not lista:
+        return None
+    fuera = {"generado": sonda.get("generado"), "total": len(lista), "por_palabra": {}}
+    for palabra in PALABRAS_MATRIZ:
+        hits = [{"nombre": w.get("nombre"), "estado": w.get("estado")}
+                for w in lista
+                if palabra in (w.get("nombre") or "").upper()]
+        fuera["por_palabra"][palabra] = {
+            "publicados": [h for h in hits if h["estado"] == "published"],
+            "en_borrador": [h for h in hits if h["estado"] != "published"],
+        }
+    return fuera
+
+
+def cotejar_con_la_matriz(por_palabra, campanas, hubo_fallo, ghl=None):
     """Compara lo que la matriz DECLARA contra lo que OpenReply tiene montado.
 
     `hubo_fallo` no es un adorno. Si la consulta de campañas murió, esta
@@ -376,12 +421,44 @@ def cotejar_con_la_matriz(por_palabra, campanas, hubo_fallo):
             # Los disparadores de la matriz se montan en GoHighLevel, que es
             # otro sistema; OpenReply no sabe nada de el. Decir «no recibe
             # nada» seria afirmar sobre un sistema que no se esta mirando.
-            return ("No existe en OpenReply. OJO: los disparadores de la matriz "
-                    "se montan en GoHighLevel, que este conector NO ve — así "
-                    "que esto no prueba que el comentario se quede sin "
-                    "respuesta. Hay que comprobarlo en GHL.")
+            g = (ghl or {}).get("por_palabra", {}).get(palabra) if ghl else None
+            if g is None:
+                return ("No existe en OpenReply, y no se pudo mirar GoHighLevel "
+                        "(falta la sonda). NO se afirma nada: los disparadores "
+                        "de la matriz viven en GHL, que este conector no ve.")
+            if g["publicados"]:
+                nombres = ", ".join(w["nombre"] for w in g["publicados"])
+                return (f"No está en OpenReply, pero SÍ en GoHighLevel y "
+                        f"publicada: {nombres}. Ahí es donde la monta la "
+                        "matriz, así que el comentario tiene a quién "
+                        "contestarle. (El listado da nombre y estado, no la "
+                        "configuración del disparador.)")
+            if g["en_borrador"]:
+                nombres = ", ".join(w["nombre"] for w in g["en_borrador"])
+                return (f"AVISO: en GoHighLevel existe pero está EN BORRADOR, "
+                        f"así que no dispara: {nombres}. Y en OpenReply no "
+                        "está. El comentario se queda sin respuesta.")
+            return ("No existe ni en OpenReply ni en GoHighLevel: ningún "
+                    "workflow publicado lleva esta palabra en el nombre. El "
+                    "comentario se queda sin respuesta.")
         if not m["activa"]:
-            return "La campaña existe pero está PAUSADA: el comentario no dispara."
+            # Una campaña pausada AQUÍ no significa que el comentario se quede
+            # sin respuesta: la misma palabra puede estar viva en GoHighLevel,
+            # que es donde la monta la matriz. Pasa con MEMORIA el 21-sep.
+            g = (ghl or {}).get("por_palabra", {}).get(palabra) if ghl else None
+            if g and g["publicados"]:
+                nombres = ", ".join(w["nombre"] for w in g["publicados"])
+                return ("La campaña de OpenReply está PAUSADA, pero en "
+                        f"GoHighLevel hay workflow publicado: {nombres}. El "
+                        "comentario tiene a quién contestarle por GHL; lo que "
+                        "no va a haber es DM ni medición por OpenReply.")
+            if g is None:
+                return ("La campaña de OpenReply está PAUSADA y no se pudo "
+                        "mirar GoHighLevel (falta la sonda): no se afirma si "
+                        "el comentario recibe algo o no.")
+            return ("La campaña existe pero está PAUSADA, y en GoHighLevel no "
+                    "hay ningún workflow publicado con esta palabra: el "
+                    "comentario no dispara en ningún sitio.")
         if not envios.get(palabra):
             return "Montada y activa, pero todavía no ha disparado ni una vez."
         return f"Viva: {envios[palabra]} DM enviados."
@@ -455,10 +532,13 @@ def main():
             "`entregados_sin_confirmar`. Contarlos como fallo es contar como "
             "perdido un DM que llegó."),
         "nota_alcance": (
-            "Esto solo ve OpenReply. Los disparadores de palabra de la matriz "
-            "se montan en GoHighLevel, que es otro sistema y no se consulta "
-            "aquí. Que una palabra no aparezca NO prueba que el comentario se "
-            "quede sin respuesta."),
+            "Los disparadores de palabra de la matriz NO viven aquí: se montan "
+            "en GoHighLevel. Que una palabra no aparezca en OpenReply no "
+            "prueba nada por sí solo, así que desde el 21-sep el cotejo mira "
+            "también los workflows de GHL (bloque `workflows_ghl`, sacado de "
+            "la sonda). Límite de ese cruce: el listado de GHL da el NOMBRE y "
+            "el ESTADO del workflow, no la configuración de su disparador. Un "
+            "`draft` sí es concluyente — no dispara."),
         "nota_cuenta": (
             "No se dice a qué cuenta de Instagram pertenece cada campaña: "
             "`Automation.instagramAccountId` no está concedida al rol de solo "
@@ -494,9 +574,15 @@ def main():
     # El cruce con la matriz, que es para lo que existe todo lo de arriba.
     # Si la consulta de campañas murió, el cruce no puede afirmar nada.
     fallo_campanas = any(f["consulta"] == "campanas" for f in salida["fallos"])
+    ghl = workflows_de_ghl(SONDA_GHL)
+    salida["workflows_ghl"] = ghl
+    if ghl is None:
+        salida["nota_ghl"] = (
+            "No se pudo leer la sonda de GoHighLevel, así que de las palabras "
+            "que no están en OpenReply no se afirma nada.")
     filas, otras = cotejar_con_la_matriz(
         salida.get("por_palabra") or [], salida.get("campanas") or [],
-        fallo_campanas)
+        fallo_campanas, ghl)
     salida["cotejo_con_la_matriz"] = filas
     salida["otras_palabras_montadas"] = otras
     salida["cotejo_fiable"] = not fallo_campanas
