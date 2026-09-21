@@ -366,3 +366,92 @@ Datos de la Graph API oficial, bajados el 14-sep. **Salieron 2 piezas.**
 
 4. **Los 95 comentarios piden ACERO,** que está montado. La conversación llega
    al bot entera.
+
+## Semana del 14 al 20 de septiembre
+
+Datos de la Graph API oficial, bajados hoy 21-sep. **Salieron las 3 piezas
+planificadas.** La cámara ocurrió: dos de las tres son reels, y la semana
+pasada el cuello de botella era justo ese.
+
+| Pieza | Vistas | Alcance | Coment. | Guard. | **c/1k** |
+|---|---|---|---|---|---|
+| Lun 14 · Navisworks no coordina solo (carrusel) | 1.998 | 813 | 6 | 6 | 3,00 |
+| Mié 16 · Elementos duplicados (reel) | 1.145 | 860 | **19** | 6 | **16,59** |
+| Vie 18 · Resistir no es funcionar (reel) | 2.012 | 1.545 | 17 | 9 | **8,45** |
+| *mediana de agosto, por pieza* | *3.565* | *—* | *3* | *6* | *1,34* |
+
+### Lecciones de la semana
+
+**1 · Los dos reels son la mejor tasa de conversación del mes, con un tercio
+del alcance de las virales.** El reel del miércoles hace **16,59 comentarios
+por cada mil vistas**. Las dos piezas que se volvieron virales el 11 y el 12
+—36.275 y 10.369 vistas— hicieron 3,31 y 7,91. Es decir: el reel pequeño
+convierte a conversación **cinco veces mejor** que la pieza de 36.000 vistas.
+
+Contra la mediana de agosto (1,34 c/1k) son **12 veces**.
+
+Lo que esto dice es incómodo y conviene decirlo entero: **el alcance y la
+conversación no son la misma carrera, y hasta ahora se venía midiendo la
+equivocada.** Una pieza de 36.000 vistas es buena para que nos conozcan. Una de
+1.145 vistas con 19 comentarios es buena para que el bot tenga a quién
+escribir. No compiten; hacen cosas distintas y hay que pedirle a cada una la
+suya.
+
+**2 · La regla de «acusar un hábito concreto» se confirma por tercera revisión
+seguida.** Los dos reels abren igual:
+
+- «Los planos salen bien y el presupuesto sale mal. Casi siempre es lo mismo:
+  elementos duplicados.» → 16,59 c/1k
+- «Que la estructura resista no significa que el edificio funcione bien.» →
+  8,45 c/1k
+
+Ninguno invita, ninguno pregunta al abrir: los dos **acusan algo que el que
+mira reconoce**. Es lo mismo que dijeron el 31-ago (ACERO 7+ c/1k contra la
+declaración genérica de IA en 1,75) y el 14-sep (la frontera concreta gana, el
+titular sobre IA no). Tres veces seguidas: **pasa a regla permanente**, deja de
+discutirse cada lunes.
+
+**3 · El mismo gancho rinde menos en carrusel que en reel.** El carrusel del
+lunes también acusa —«Navisworks no coordina solo: coordina el criterio de
+quien lo maneja»— y se queda en 3,00 c/1k contra 16,59 y 8,45. Es **una sola
+pieza**, así que no es regla todavía; es lo que hay que mirar las próximas dos
+semanas. Si se repite, el ángulo acusador se lleva a reel y el carrusel se
+reserva para lo que se guarda.
+
+**4 · La pieza del viernes no era la del viernes.** El calendario pedía
+`reel-advertencias` (los 400 avisos sin leer, CTA: comenta DYNAMO). Lo que
+salió es `reel-deriva`, **la pieza del miércoles 9 que se había quedado sin
+grabar**, publicada con nueve días de retraso en el hueco del viernes.
+
+No es un problema de calidad —rindió bien— pero sí de contabilidad: si nadie lo
+anota, el calendario parece cumplido y hay tres piezas atrasadas que no aparecen
+en ningún sitio:
+
+| Pendiente | Qué era | Desde |
+|---|---|---|
+| `pauta-guia` | REEL de lanzamiento del recurso, CTA CHATGPT | Mar 8 |
+| `lm-revit-chatgpt-feed` | CARRUSEL 7 slides del mismo recurso | Jue 10 |
+| `reel-advertencias` | REEL de los 400 avisos, CTA DYNAMO | Vie 18 |
+
+El del Jue 10 no necesita cámara y la guía está publicada desde el 7-sep.
+
+**5 · 36 comentarios pidieron una palabra que hay que comprobar.** Los dos
+reels llevan CTA de palabra clave: CHATGPT el del miércoles, MEMORIA el del
+viernes. Entre los dos juntaron **36 comentarios**.
+
+En OpenReply **no existe ninguna de las dos**. Lo que está vivo allí es
+TUTORIAL (34 DM de los 44 del mes), GUIA (8) y BIM (2).
+
+**Esto NO prueba que esos 36 no recibieran nada**: los disparadores de la
+matriz se montan en GoHighLevel, que es otro sistema y OpenReply no lo ve. Pero
+sí es la comprobación que falta y es de un minuto: **abrir GoHighLevel y ver si
+CHATGPT y MEMORIA están montadas.** Si no lo están, 36 personas comentaron una
+palabra que no le habla a nadie, que es exactamente lo que el CTA existe para
+evitar.
+
+### Lo que la API no da y hace falta pedir
+
+**Las vistas de Facebook de las tres piezas.** Meta las quitó de la API y solo
+se ven en la UI de Insights. No es un detalle: el ganador de julio sacó 9.103
+de sus 11.193 vistas en Facebook. Sin ese dato, las tres cifras de arriba son
+solo la mitad de Instagram.
