@@ -1,5 +1,5 @@
 {
- "generado": "2026-09-18",
+ "generado": "2026-09-21",
  "ventana_series_dias": 30,
  "fuente": "OpenReply — base propia (Postgres), solo lectura",
  "nota_privacidad": "Solo agregados. No se lee `commenterName`, ni `commentText`, ni `accessToken`. Ningún dato personal sale de la base.",
@@ -29,21 +29,21 @@
    "creada": "2026-09-12T15:00:26.557",
    "actualizada": "2026-09-15T18:08:16.634",
    "cuenta": "design_modeling_dg",
-   "enviados": 34,
+   "enviados": 39,
    "fallidos": 0,
    "entregados_sin_confirmar": 1,
    "saltados": 0,
    "pendientes": 0,
    "primer_envio": "2026-09-12T15:01:42.345",
-   "ultimo_envio": "2026-09-18T14:22:03.154",
-   "clics": 1829,
-   "clics_limpios": 14,
+   "ultimo_envio": "2026-09-20T13:49:23.489",
+   "clics": 1830,
+   "clics_limpios": 15,
    "clics_con_bots": 1815,
    "enlaces_rastreados": 2,
    "mide_clics": true,
-   "clics_por_dm": 0.41,
-   "ctr": 0.4118,
-   "lectura_clics": "14 clics limpios sobre 34 DM enviados (41%). Son aperturas, no personas: la misma persona puede contar varias veces. (1815 clics más son anteriores al 2026-09-15 y NO se cuentan: eran bots de vista previa.)"
+   "clics_por_dm": 0.38,
+   "ctr": 0.3846,
+   "lectura_clics": "15 clics limpios sobre 39 DM enviados (38%). Son aperturas, no personas: la misma persona puede contar varias veces. (1815 clics más son anteriores al 2026-09-15 y NO se cuentan: eran bots de vista previa.)"
   },
   {
    "id": "cmu5kuoa1000004l24jbpdqfo",
@@ -76,6 +76,38 @@
    "clics_por_dm": 1.6,
    "ctr": null,
    "lectura_clics": "8 clics limpios sobre 5 DM enviados — 1.6 clics por DM. Al haber MÁS clics que envíos esto NO es un porcentaje de conversión: son aperturas repetidas de la misma persona o el enlace circulando fuera del DM."
+  },
+  {
+   "id": "cmu7a81vd000004jkiwsba9dy",
+   "nombre": "MEMORIA DE CÁLCULO",
+   "palabras": [
+    "MEMORIA"
+   ],
+   "casa_palabra_parcial": false,
+   "cualquier_post": false,
+   "dispara_con_dm": true,
+   "exige_seguir": true,
+   "activa": false,
+   "post_id": "18124446184853329",
+   "post_url": "https://www.instagram.com/reel/DdbueT_lJ0h/",
+   "creada": "2026-09-18T18:18:35.257",
+   "actualizada": "2026-09-18T19:23:43.685",
+   "cuenta": "design_modeling_dg",
+   "enviados": 4,
+   "fallidos": 0,
+   "entregados_sin_confirmar": 0,
+   "saltados": 1,
+   "pendientes": 0,
+   "primer_envio": "2026-09-18T18:22:33.071",
+   "ultimo_envio": "2026-09-18T19:08:42.001",
+   "clics": 2,
+   "clics_limpios": 2,
+   "clics_con_bots": 0,
+   "enlaces_rastreados": 1,
+   "mide_clics": true,
+   "clics_por_dm": 0.5,
+   "ctr": 0.5,
+   "lectura_clics": "2 clics limpios sobre 4 DM enviados (50%). Son aperturas, no personas: la misma persona puede contar varias veces."
   },
   {
    "id": "cmtxm6vfz000604kwmijsiudi",
@@ -124,7 +156,7 @@
    "post_id": "18183196498413673",
    "post_url": "https://www.instagram.com/p/DdRyKTvm9mI/",
    "creada": "2026-09-17T15:24:01.843",
-   "actualizada": "2026-09-17T15:24:01.843",
+   "actualizada": "2026-09-18T18:32:34.079",
    "cuenta": "design_modeling_dg",
    "enviados": 2,
    "fallidos": 0,
@@ -148,12 +180,12 @@
    "palabra": "TUTORIAL",
    "campana": "TUTORIAL REVIT CHATGPT",
    "campana_activa": true,
-   "enviados": 34,
+   "enviados": 39,
    "fallidos": 0,
    "entregados_sin_confirmar": 1,
    "saltados": 0,
    "primer_envio": "2026-09-12T15:01:42.345",
-   "ultimo_envio": "2026-09-18T14:22:03.154"
+   "ultimo_envio": "2026-09-20T13:49:23.489"
   },
   {
    "palabra": "GUIA",
@@ -165,6 +197,17 @@
    "saltados": 0,
    "primer_envio": "2026-09-17T13:44:41.344",
    "ultimo_envio": "2026-09-17T14:33:17.537"
+  },
+  {
+   "palabra": "MEMORIA",
+   "campana": "MEMORIA DE CÁLCULO",
+   "campana_activa": false,
+   "enviados": 4,
+   "fallidos": 0,
+   "entregados_sin_confirmar": 0,
+   "saltados": 1,
+   "primer_envio": "2026-09-18T18:22:33.071",
+   "ultimo_envio": "2026-09-18T19:08:42.001"
   },
   {
    "palabra": "GUIA",
@@ -231,6 +274,13 @@
    "motivo": "MetaApiError 1: An unknown error has occurred. (/v25.0/17841404048578200/messages) [code=1 sub=- type=OAuthException trace=AmlIrWHBoNrHDhK7I2rX2gV]",
    "veces": 1,
    "ultima_vez": "2026-09-17T13:45:31.022"
+  },
+  {
+   "estado": "SKIPPED_DEDUP",
+   "pero_si_se_entrego": false,
+   "motivo": "This person already received this campaign's DM on an earlier comment",
+   "veces": 1,
+   "ultima_vez": "2026-09-18T18:27:24.854"
   }
  ],
  "enlaces": [
@@ -250,11 +300,11 @@
    "etiqueta": "Descargar la guía",
    "destino": "https://funnel.dgdesignmodeling.com/acceso-gratis-guia-revit-chatgpt-form",
    "campana": "TUTORIAL REVIT CHATGPT",
-   "clics": 20,
-   "clics_limpios": 6,
+   "clics": 21,
+   "clics_limpios": 7,
    "clics_con_bots": 14,
    "primer_clic": "2026-09-12T15:03:20.564",
-   "ultimo_clic": "2026-09-18T14:22:40.151"
+   "ultimo_clic": "2026-09-19T03:51:02.367"
   },
   {
    "slug": "7ZudR52CIA",
@@ -277,6 +327,17 @@
    "clics_con_bots": 1,
    "primer_clic": "2026-09-12T00:25:12.035",
    "ultimo_clic": "2026-09-17T13:45:33.571"
+  },
+  {
+   "slug": "P1jZRzaqQw",
+   "etiqueta": "Primary campaign link",
+   "destino": "https://funnel.dgdesignmodeling.com/acceso-gratis-memoria-calculo-form",
+   "campana": "MEMORIA DE CÁLCULO",
+   "clics": 2,
+   "clics_limpios": 2,
+   "clics_con_bots": 0,
+   "primer_clic": "2026-09-18T18:22:47.729",
+   "ultimo_clic": "2026-09-18T18:23:36.952"
   },
   {
    "slug": "iJX0Y_omBA",
@@ -323,7 +384,12 @@
   },
   {
    "fecha": "2026-09-18",
-   "clics": 3,
+   "clics": 5,
+   "limpio": true
+  },
+  {
+   "fecha": "2026-09-19",
+   "clics": 1,
    "limpio": true
   }
  ],
@@ -358,25 +424,18 @@
   },
   {
    "fecha": "2026-09-18",
-   "enviados": 2
+   "enviados": 7
+  },
+  {
+   "fecha": "2026-09-19",
+   "enviados": 3
+  },
+  {
+   "fecha": "2026-09-20",
+   "enviados": 1
   }
  ],
  "seguidores": [
-  {
-   "cuenta": "design_modeling_dg",
-   "fecha": "2026-08-19",
-   "seguidores": 79906
-  },
-  {
-   "cuenta": "design_modeling_dg",
-   "fecha": "2026-08-20",
-   "seguidores": 79954
-  },
-  {
-   "cuenta": "design_modeling_dg",
-   "fecha": "2026-08-21",
-   "seguidores": 79981
-  },
   {
    "cuenta": "design_modeling_dg",
    "fecha": "2026-08-22",
@@ -515,7 +574,22 @@
   {
    "cuenta": "design_modeling_dg",
    "fecha": "2026-09-18",
-   "seguidores": 80837
+   "seguidores": 80838
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-19",
+   "seguidores": 80841
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-20",
+   "seguidores": 80861
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-21",
+   "seguidores": 80865
   }
  ],
  "cotejo_con_la_matriz": [
@@ -558,11 +632,13 @@
   {
    "palabra": "MEMORIA",
    "la_declara_la_matriz": true,
-   "montada_en_openreply": false,
+   "montada_en_openreply": true,
    "campana_activa": false,
-   "campanas": [],
-   "dms_enviados": 0,
-   "lectura": "No existe en OpenReply. OJO: los disparadores de la matriz se montan en GoHighLevel, que este conector NO ve — así que esto no prueba que el comentario se quede sin respuesta. Hay que comprobarlo en GHL."
+   "campanas": [
+    "MEMORIA DE CÁLCULO"
+   ],
+   "dms_enviados": 4,
+   "lectura": "La campaña existe pero está PAUSADA: el comentario no dispara."
   },
   {
    "palabra": "DYNAMO",
@@ -617,8 +693,8 @@
    "campanas": [
     "TUTORIAL REVIT CHATGPT"
    ],
-   "dms_enviados": 34,
-   "lectura": "Viva: 34 DM enviados."
+   "dms_enviados": 39,
+   "lectura": "Viva: 39 DM enviados."
   }
  ],
  "cotejo_fiable": true
