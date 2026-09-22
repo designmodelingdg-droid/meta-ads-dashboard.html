@@ -29,6 +29,7 @@ on:
       - test-master-bim/**
       - guia-revit-ia/**
       - memoria-calculo/**
+      - navisworks-checklist/**
       - pack-dynamo/**
       - recursos/**
       - eficiencia-acero/**
@@ -98,6 +99,9 @@ jobs:
           # Lead magnet: memoria de calculo, guia + plantillas (palabra clave MEMORIA)
           cp -r memoria-calculo public/memoria-calculo
           rm -rf public/memoria-calculo/GUIA-MONTAJE.md public/memoria-calculo/prueba
+          # Lead magnet: checklist de coordinacion BIM en Navisworks (palabras BIM / IA)
+          cp -r navisworks-checklist public/navisworks-checklist
+          rm -rf public/navisworks-checklist/GUIA-MONTAJE.md
           # Lead magnet: pack starter de Dynamo (palabra clave DYNAMO).
           # scripts/ se publica: la guia enlaza al ZIP, pero tener los .py
           # sueltos ayuda a quien quiera mirarlos sin descargar nada.
