@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checklist de coordinación BIM en Navisworks · Design Modeling Academy</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@500;600;700;800;900&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#003e5c; --navy2:#001e30; --azul-medio:#0a5a80;
+    --orange:#ca7520; --orange-d:#e8a04a; --orange-p:#f7e8cc;
+    --crema:#fafaf7; --ink:#333; --ink2:#5a6b7b; --line:#e5e7eb; --ok:#1e9e6a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Nunito',system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.68}
+  h1,h2,h3,h4{font-family:'Overpass',sans-serif;line-height:1.22;text-wrap:balance}
+  .wrap{max-width:44rem;margin:0 auto;padding:0 20px}
+
+  .top{background:linear-gradient(135deg,var(--navy2),var(--navy));color:#fff;padding:44px 0 40px;text-align:center}
+  .top img{height:44px;margin-bottom:14px;filter:brightness(0) invert(1)}
+  .top .eyebrow{font-family:'Overpass',sans-serif;font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--orange-d)}
+  .top h1{font-size:clamp(1.7rem,4.4vw,2.5rem);font-weight:800;margin:12px 0 12px}
+  .top p{color:#c3d1dc;max-width:34rem;margin:0 auto}
+
+  .fuentes{background:var(--crema);border-bottom:1px solid var(--line);padding:16px 0;font-size:.84rem;color:var(--ink2)}
+  .fuentes b{color:var(--navy)}
+
+  /* Barra de progreso: fija arriba, cuenta los ítems marcados */
+  .barra{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .barra .wrap{display:flex;align-items:center;gap:12px;padding-top:9px;padding-bottom:9px;flex-wrap:wrap}
+  .barra .txt{font-family:'Overpass',sans-serif;font-weight:800;font-size:.8rem;color:var(--navy);white-space:nowrap}
+  .barra .pista{flex:1 1 140px;height:8px;background:var(--line);border-radius:99px;overflow:hidden;min-width:100px}
+  .barra .relleno{height:100%;width:0;background:linear-gradient(90deg,var(--orange),var(--orange-d));transition:width .25s}
+  .barra button{font:inherit;font-family:'Overpass',sans-serif;font-weight:700;font-size:.76rem;padding:6px 11px;border-radius:8px;border:1px solid var(--line);background:#fff;color:var(--navy);cursor:pointer;white-space:nowrap}
+  .barra button:hover{background:var(--crema)}
+  .barra button.pri{background:var(--navy);color:#fff;border-color:var(--navy)}
+
+  main{padding:14px 0 40px}
+  .intro{font-size:1.06rem;color:var(--ink2);margin:26px 0 10px}
+  .intro b{color:var(--ink)}
+
+  .sec{border-top:1px solid var(--line);padding:32px 0 8px}
+  .sec .cab{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}
+  .sec .n{display:inline-block;background:var(--navy);color:#fff;font-family:'Overpass',sans-serif;font-weight:800;font-size:.75rem;letter-spacing:.05em;padding:4px 12px;border-radius:99px}
+  .sec .cnt{font-family:'Overpass',sans-serif;font-weight:800;font-size:.78rem;color:var(--ink2);background:var(--crema);border:1px solid var(--line);padding:3px 10px;border-radius:99px}
+  .sec .cnt.full{background:#eef7f2;color:#146b48;border-color:#c9e8d9}
+  .sec h2{font-size:clamp(1.25rem,3vw,1.6rem);font-weight:800;color:var(--navy);margin-bottom:10px}
+  .sec h3{font-size:.8rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--orange);margin:20px 0 8px}
+  .sec p{margin-bottom:10px}
+  .sec p.obj{color:var(--ink2);font-size:.97rem;margin-bottom:14px}
+
+  /* Ítems del checklist */
+  .lista{list-style:none;display:flex;flex-direction:column;gap:6px;margin:8px 0 6px}
+  .item{display:grid;grid-template-columns:26px 1fr;gap:10px;align-items:start;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:#fff;cursor:pointer;transition:background .15s,border-color .15s}
+  .item:hover{background:var(--crema)}
+  .item:has(input:checked){background:#f2faf6;border-color:#c9e8d9}
+  .item input{width:20px;height:20px;margin-top:3px;accent-color:var(--navy);cursor:pointer}
+  .item .t{font-size:.96rem}
+  .item .t b{color:var(--navy)}
+  .item:has(input:checked) .t{color:var(--ink2)}
+  .item .por{display:block;font-size:.85rem;color:var(--ink2);margin-top:3px}
+  .item .por code{font-size:.85em}
+
+  table{border-collapse:collapse;width:100%;margin:14px 0;font-size:.9rem}
+  th,td{text-align:left;padding:9px 11px;border-bottom:1px solid var(--line);vertical-align:top}
+  thead th{background:var(--crema);font-family:'Overpass',sans-serif;font-size:.76rem;letter-spacing:.05em;text-transform:uppercase;color:var(--ink2)}
+  td b{color:var(--navy)}
+  .tabla-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .tabla-scroll table{min-width:520px}
+  @media(max-width:640px){.tabla-scroll::before{content:'Desliza la tabla para ver todas las columnas →';display:block;font-size:.78rem;color:var(--ink2);margin:0 0 4px}}
+  table.metricas td{height:38px}
+  table.metricas td.blank{background:#fff}
+
+  code{font-family:ui-monospace,'SFMono-Regular',Menlo,monospace;font-size:.9em;background:var(--crema);padding:1px 5px;border-radius:4px}
+
+  .regla{background:var(--orange-p);border-radius:10px;padding:15px 18px;margin:18px 0 6px;font-size:.97rem}
+  .regla b.lab{font-family:'Overpass',sans-serif;color:#7a4a10;display:block;font-size:.76rem;letter-spacing:.09em;text-transform:uppercase;margin-bottom:5px}
+  .regla b{color:var(--navy)}
+  .aviso{background:#fdf0ee;border-left:3px solid #c0442e;padding:12px 16px;border-radius:0 8px 8px 0;font-size:.9rem;margin:14px 0}
+  .aviso b{color:#8f2f1e;font-family:'Overpass',sans-serif;display:block;font-size:.74rem;letter-spacing:.09em;text-transform:uppercase;margin-bottom:5px}
+  .bien{background:#eef7f2;border-left:3px solid var(--ok);padding:12px 16px;border-radius:0 8px 8px 0;font-size:.9rem;margin:14px 0}
+  .bien b{color:#146b48;font-family:'Overpass',sans-serif;display:block;font-size:.74rem;letter-spacing:.09em;text-transform:uppercase;margin-bottom:5px}
+  .fuente{background:var(--crema);border-left:3px solid var(--azul-medio);padding:12px 16px;border-radius:0 8px 8px 0;font-size:.88rem;color:var(--ink2);margin:14px 0}
+  .fuente b{color:var(--navy)}
+
+  .indice{background:var(--crema);border-radius:12px;padding:20px 24px;margin:26px 0}
+  .indice h2{font-size:.8rem;letter-spacing:.09em;text-transform:uppercase;color:var(--ink2);margin-bottom:12px}
+  .indice ol{margin:0;padding-left:20px;columns:2;column-gap:26px;font-size:.93rem}
+  .indice li{margin-bottom:7px;break-inside:avoid}
+  .indice a{color:var(--navy);text-decoration:none}
+  .indice a:hover{text-decoration:underline}
+  @media(max-width:640px){.indice ol{columns:1}}
+
+  .cierre{background:linear-gradient(135deg,var(--navy),var(--azul-medio));color:#fff;border-radius:14px;padding:28px;margin:40px 0 10px}
+  .cierre h2{color:#fff;font-size:1.35rem;margin-bottom:14px}
+  .cierre ul{list-style:none;display:flex;flex-direction:column;gap:9px;margin:14px 0}
+  .cierre li{color:#c9d8e3;font-size:.94rem;display:grid;grid-template-columns:26px 1fr;gap:9px}
+  .cierre li b{color:var(--orange-d);font-family:'Overpass',sans-serif}
+  .cierre .punch{font-family:'Overpass',sans-serif;font-weight:800;font-size:1.18rem;margin-top:18px}
+
+  .modulos{border:1px solid var(--line);border-radius:12px;padding:22px;margin:34px 0 0}
+  .modulos h2{font-size:1.15rem;color:var(--navy);margin-bottom:6px}
+  .modulos p.m{font-size:.9rem;color:var(--ink2);margin-bottom:12px}
+  .cta{display:inline-block;margin-top:14px;background:var(--orange);color:#fff;font-family:'Overpass',sans-serif;font-weight:800;font-size:.92rem;padding:12px 22px;border-radius:10px;text-decoration:none}
+  .cta:hover{background:var(--orange-d)}
+
+  footer{background:var(--navy2);color:#8fa2b3;padding:32px 0;font-size:.8rem;text-align:center;line-height:1.7;margin-top:40px}
+  footer a{color:var(--orange-d)}
+  .disc{max-width:48rem;margin:0 auto 12px;font-size:.77rem;color:#7f93a4}
+
+  #lock{position:fixed;inset:0;background:rgba(10,27,43,.96);z-index:50;display:flex;align-items:center;justify-content:center;padding:20px}
+  #lock[hidden]{display:none}
+  #lock .box{background:#fff;border-radius:14px;padding:26px;max-width:400px;text-align:center}
+  #lock h2{font-size:1.1rem;color:var(--navy);margin-bottom:8px}
+  #lock p{font-size:.9rem;color:var(--ink2);margin-bottom:16px}
+  #lock a{display:block;padding:13px;border-radius:10px;background:var(--orange);color:#fff;font-family:'Overpass',sans-serif;font-weight:800;text-decoration:none}
+
+  /* Impresión / guardar como PDF desde el navegador */
+  @page{margin:14mm}
+  @media print{
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    #lock,.barra,footer .no-print{display:none!important}
+    body{background:#fff;font-size:11pt;line-height:1.45}
+    .wrap{max-width:none;padding:0}
+    .top{background:#fff!important;color:var(--navy)!important;padding:0 0 14px;text-align:left;border-bottom:2px solid var(--navy)}
+    .top img{filter:none;height:36px}
+    .top p{color:var(--ink2)}
+    .top .eyebrow{color:var(--orange)}
+    .fuentes{background:#fff;padding:8px 0}
+    .indice ol{columns:2}
+    .sec{padding:16px 0 4px;break-inside:auto}
+    .sec h2{break-after:avoid}
+    .item{break-inside:avoid;padding:6px 8px;border-color:#ccd}
+    .item .por{font-size:9.5pt}
+    .tabla-scroll{overflow:visible}
+    .tabla-scroll table{min-width:0}
+    .tabla-scroll::before{display:none}
+    .cierre{background:var(--crema)!important;color:var(--ink)!important;border:1px solid var(--line);break-inside:avoid}
+    .cierre h2,.cierre .punch{color:var(--navy)}
+    .cierre li{color:var(--ink)}
+    .modulos{break-inside:avoid}
+    .cta{display:none}
+    a{color:inherit;text-decoration:none}
+    footer{background:#fff;color:var(--ink2);margin-top:16px;padding:12px 0;border-top:1px solid var(--line)}
+    .disc{color:var(--ink2)}
+  }
+</style>
+</head>
+<body>
+
+<div id="lock" hidden><div class="box">
+  <h2>🔒 Acceso al checklist</h2>
+  <p>Es gratis. Déjanos tus datos y entras de inmediato — sin esperar correos.</p>
+  <a id="lockBtn" href="./index.html">Registrarme y entrar</a>
+</div></div>
+
+<div class="top"><div class="wrap">
+  <img src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04bbc1fa8afa3be0bb00d8.png" alt="Design Modeling Academy">
+  <div class="eyebrow">Checklist técnico · Design Modeling Academy</div>
+  <h1>Checklist de coordinación BIM en Navisworks</h1>
+  <p>Siete fases, del NWC a la reunión de coordinación, para que la detección de choques no se te vuelva una lista infinita e inútil.</p>
+</div></div>
+
+<div class="fuentes"><div class="wrap">
+  <b>Lo que dice de Navisworks está comprobado contra la documentación oficial</b> (help.autodesk.com, Navisworks Manage 2026 y 2027): tipos de test, estados, reglas, sets, lector de Revit e informes. <b>Las tolerancias son valores de arranque, no de norma:</b> las fija el BEP de tu proyecto y aquí se dicen para que no empieces en cero.
+</div></div>
+
+<div class="barra"><div class="wrap">
+  <span class="txt" id="progTxt">0 / 0 marcados</span>
+  <div class="pista"><div class="relleno" id="progFill"></div></div>
+  <button type="button" class="pri" id="btnPrint">Imprimir / PDF</button>
+  <button type="button" id="btnReset">Reiniciar</button>
+</div></div>
+
+<main><div class="wrap">
+
+  <p class="intro">Navisworks no coordina solo: <b>coordina el criterio de quien lo maneja</b>. Un test del modelo entero contra sí mismo devuelve cuatro mil resultados en dos minutos, y de esos cuatro mil nadie resuelve ninguno.</p>
+
+  <p class="intro">Este checklist está ordenado como un ciclo real de coordinación: lo que cada disciplina entrega, cómo se federa, cómo se configuran los tests, cómo se filtra lo que importa, cómo se documenta, cómo se reúne el equipo y cómo se cierra el ciclo para empezar el siguiente. <b>Marca los ítems según avanzas; se guardan en este navegador.</b> Si lo quieres en papel o en PDF, el botón de arriba lo imprime con las casillas.</p>
+
+  <div class="regla">
+    <b class="lab">La idea que ordena todo lo demás</b>
+    Un choque que no tiene <b>ID, vista, responsable y estado</b> no existe para el proyecto. Se discute en la reunión, se olvida, y vuelve a aparecer en el siguiente ciclo como si fuera nuevo. Todo lo que sigue sirve para que cada choque que importa tenga esas cuatro cosas, y para que los que no importan dejen de aparecer.
+  </div>
+
+  <div class="indice">
+    <h2>Las 7 fases</h2>
+    <ol>
+      <li><a href="#fa">Antes de federar: lo que entrega cada disciplina</a></li>
+      <li><a href="#fb">Al federar: origen, sets y visibilidad</a></li>
+      <li><a href="#fc">Configurar los clash tests</a></li>
+      <li><a href="#fd">Triage: qué importa y qué no</a></li>
+      <li><a href="#fe">Documentar y reportar</a></li>
+      <li><a href="#ff">La reunión de coordinación</a></li>
+      <li><a href="#fg">Cierre de ciclo y métricas</a></li>
+    </ol>
+  </div>
+
+  <!-- ══════════════ FASE A ══════════════ -->
+  <section class="sec" id="fa" data-fase="a">
+    <div class="cab"><span class="n">FASE A</span><span class="cnt">0/0</span></div>
+    <h2>Antes de federar: lo que entrega cada disciplina</h2>
+    <p class="obj">El 80 % de los problemas de coordinación nacen aquí, antes de abrir Navisworks. Si dos modelos no comparten origen, unidades y niveles, el clash test va a comparar dos edificios distintos.</p>
+
+    <h3>Acuerdos escritos</h3>
+    <ul class="lista">
+      <li class="item"><input type="checkbox" class="chk" data-id="a1"><span class="t">Existe un <b>acuerdo escrito</b> (BEP o equivalente) con: origen compartido, unidades, nomenclatura de archivos, frecuencia de entrega y responsable por disciplina.<span class="por">Si está solo en la cabeza del coordinador, cada disciplina entrega como le parece.</span></span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="a2"><span class="t"><b>Nomenclatura</b> de archivos acordada y cumplida: proyecto · disciplina · zona/edificio · nivel o «TODO» · versión. Un archivo que no sigue el nombre no entra a la federación.<span class="por">Ejemplo: <code>TORRE-EST-B1-N00-N12_v07.nwc</code>. El nombre dice qué es sin abrirlo.</span></span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="a3"><span class="t">Un <b>responsable con nombre</b> por disciplina, con fecha de entrega para este ciclo.</span></li>
+    </ul>
+
+    <h3>Geometría de referencia</h3>
+    <ul class="lista">
+      <li class="item"><input type="checkbox" class="chk" data-id="a4"><span class="t"><b>Unidades</b> del proyecto acordadas (metros o milímetros) y confirmadas en cada modelo antes de exportar.<span class="por">Un modelo mil veces más grande o más chico que el resto es un problema de unidades, no de geometría.</span></span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="a5"><span class="t"><b>Niveles y rejillas</b> de cada disciplina coinciden en nombre y cota con los del modelo de referencia (arquitectura o estructura, el que el BEP diga).<span class="por">Un «N02» a +3,60 en estructura y a +3,55 en MEP produce choques falsos en toda la planta.</span></span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="a6"><span class="t"><b>Punto base y coordenadas compartidas</b>: el modelo anfitrión publicó sus coordenadas compartidas a todos los vínculos, y todas las disciplinas parten del mismo origen y del mismo Norte de Proyecto.<span class="por">Es la causa n.º 1 de «los modelos no cuadran» al federar, y Autodesk lo documenta como tal en el lector de Revit de Navisworks.</span></span></li>
+    </ul>
+
+    <h3>Exportación a NWC</h3>
+    <ul class="lista">
+      <li class="item"><input type="checkbox" class="chk" data-id="a7"><span class="t">Todas las disciplinas exportan con <b>la misma opción de coordenadas</b> (Shared o Project Internal), la que diga el BEP. <b>Nunca mezclar.</b><span class="por">Es una opción del exportador de Navisworks para Revit. Una disciplina en Shared y otra en Internal aparecen desplazadas aunque los dos modelos estén bien.</span></span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="a8"><span class="t">Se exporta desde una <b>vista 3D dedicada</b> (p. ej. con «Navis» en el nombre) con solo lo que debe coordinarse: sin caja de sección olvidada, sin fases o worksets apagados por error, sin geometría de referencia ni elementos de trabajo.<span class="por">Lo que no está en la vista no llega al NWC; lo que sobra en la vista genera choques que nadie pidió.</span></span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="a9"><span class="t">Cada NWC se entrega con <b>versión o fecha</b> en el nombre y se archiva la anterior. El NWF del coordinador apunta siempre a la <b>ruta fija</b> del NWC vigente.<span class="por">Si la ruta cambia cada semana, el NWF pierde los archivos y los tests pierden su historial de estados.</span></span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="a10"><span class="t">El NWC lleva los <b>parámetros e IDs de elemento</b> activados en el exportador.<span class="por">Sin IDs no hay SwitchBack ni forma de decirle a la disciplina «este elemento, no aquel».</span></span></li>
+    </ul>
+  </section>
+
+  <!-- ══════════════ FASE B ══════════════ -->
+  <section class="sec" id="fb" data-fase="b">
+    <div class="cab"><span class="n">FASE B</span><span class="cnt">0/0</span></div>
+    <h2>Al federar: origen, sets y visibilidad</h2>
+    <p class="obj">Aquí se junta todo. Antes de correr un solo test hay que confirmar que los modelos están donde tienen que estar, y dejar armados los conjuntos que los tests van a usar.</p>
+
+    <h3>Origen y coordenadas</h3>
+    <ul class="lista">
+      <li class="item"><input type="checkbox" class="chk" data-id="b1"><span class="t">El <b>NWF abre con todos los NWC</b> desde su ruta fija; ningún archivo faltante ni duplicado en el árbol de selección.</span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="b2"><span class="t"><b>Prueba de origen</b>: aislar un elemento común en dos disciplinas (una rejilla, una columna, un muro de fachada) y comprobar que coinciden en planta y en cota.<span class="por">Si no coinciden, la primera sospecha es la opción de coordenadas del exportador (Fase A), no la transformación en Navisworks.</span></span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="b3"><span class="t"><b>Unidades verificadas</b> archivo por archivo en <code>Units and Transform</code>. Se ajustan unidades <b>antes</b> de tocar origen o rotación.<span class="por">Es el orden que recomienda la documentación: primero unidades, después alineación.</span></span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="b4"><span class="t"><b>Ninguna transformación manual «para que cuadre»</b> sin documentar. Si hubo que mover o rotar un archivo, queda anotado (qué, cuánto, por qué) y guardado en el NWF para que se reaplique al abrir.<span class="por">Una transform silenciosa se pierde al reemplazar el NWC y el modelo vuelve a descuadrar en el siguiente ciclo.</span></span></li>
+    </ul>
+
+    <h3>Conjuntos (sets)</h3>
+    <ul class="lista">
+      <li class="item"><input type="checkbox" class="chk" data-id="b5"><span class="t"><b>Search sets</b> por disciplina y por sistema (Estructura, Arquitectura, HVAC, Tuberías, Eléctrico, Sanitario, Contra incendios…), definidos por propiedades (archivo, categoría, sistema), <b>no selection sets estáticos</b>.<span class="por">Un search set se vuelve a evaluar sobre el modelo actual cada vez que se usa: incluye la geometría nueva del ciclo. Un selection set se queda con lo que había el día que se creó.</span></span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="b6"><span class="t">Sets ordenados en <b>carpetas con nombres consistentes</b> y <b>exportados a XML</b> para reutilizarlos en el siguiente ciclo y en el siguiente proyecto.</span></li>
+    </ul>
+
+    <h3>Visibilidad y archivo de trabajo</h3>
+    <ul class="lista">
+      <li class="item"><input type="checkbox" class="chk" data-id="b7"><span class="t"><b>Nada oculto</b> que deba coordinarse. Los elementos ocultos <b>no entran</b> al clash test.<span class="por">Está en la documentación de Clash Detective y es la forma más silenciosa de «resolver» choques sin resolverlos.</span></span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="b8"><span class="t">Se trabaja y se guarda en <b>NWF</b>. El <b>NWD</b> se publica solo como instantánea para compartir o archivar el ciclo.<span class="por">El NWF referencia los NWC y conserva tests, sets, estados y viewpoints; al reemplazar los NWC todo eso se hereda.</span></span></li>
+    </ul>
+  </section>
+
+  <!-- ══════════════ FASE C ══════════════ -->
+  <section class="sec" id="fc" data-fase="c">
+    <div class="cab"><span class="n">FASE C</span><span class="cnt">0/0</span></div>
+    <h2>Configurar los clash tests</h2>
+    <p class="obj">Reglas claras por disciplina, no «todo contra todo». Cada test cruza dos conjuntos con un tipo y una tolerancia pensados para ese par, y tiene un nombre que dice qué cruza.</p>
+
+    <ul class="lista">
+      <li class="item"><input type="checkbox" class="chk" data-id="c1"><span class="t"><b>Un test por par de disciplinas</b>, con nombre que diga el par y el tipo: <code>EST vs HVAC · Hard</code>, no «Test 1».</span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="c2"><span class="t">Selección A y Selección B se toman de los <b>search sets</b> de la Fase B, no del árbol completo.</span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="c3"><span class="t"><b>Tipo y tolerancia definidos por par</b> según la tabla de abajo, y anotados en el BEP cuando se ajusten.</span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="c4"><span class="t"><b>Reglas de ignorar</b> activas donde corresponde: <code>Items in Same File</code> en los tests entre disciplinas; <code>Items with Coincident Snap Points</code> en los de MEP (tuberías y accesorios conectados); <code>Insulation Thickness</code> como regla en tests de Clearance con distintos espesores de aislamiento.<span class="por">Son reglas y plantillas de fábrica de Clash Detective. Existen para quitar ruido antes de que llegue al informe.</span></span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="c5"><span class="t"><b>Lo que NO se cruza</b> está decidido y escrito: acabados contra mobiliario, elementos de una misma disciplina en un mismo archivo (salvo el test de duplicados), rooms/espacios, cualquier cosa que el BEP diga que se ajusta en obra.</span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="c6"><span class="t">Un test de <b>Duplicates</b> de cada modelo contra sí mismo, una vez por ciclo.<span class="por">Detecta el mismo elemento dibujado o vinculado dos veces: no es un choque, es una cantidad doble en el presupuesto.</span></span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="c7"><span class="t">La configuración de tests <b>exportada a XML</b> (Import/Export Clash Tests) para reutilizarla en el siguiente ciclo y en otros proyectos.</span></li>
+    </ul>
+
+    <h3>Pares, tipo y tolerancia de arranque</h3>
+    <div class="tabla-scroll"><table>
+      <thead><tr><th>Par</th><th>Tipo</th><th>Tolerancia de arranque</th><th>Por qué</th></tr></thead>
+      <tbody>
+        <tr><td><b>Estructura vs MEP</b> (ductos, tuberías, bandejas)</td><td>Hard</td><td>0 – 10 mm</td><td>Una penetración en viga, columna o losa es crítica por definición. La tolerancia solo filtra el ruido de facetado.</td></tr>
+        <tr><td><b>Estructura vs Arquitectura</b></td><td>Hard</td><td>10 mm</td><td>Recubrimientos, enlucidos y acabados generan choques de pocos milímetros que no son un problema de obra.</td></tr>
+        <tr><td><b>MEP vs MEP</b> (HVAC vs tuberías vs bandejas vs sanitario)</td><td>Hard</td><td>10 – 25 mm</td><td>Los cruces entre sistemas suelen resolverse con desvíos locales; lo menor que eso se ajusta en montaje.</td></tr>
+        <tr><td><b>Tuberías o ductos con aislamiento</b> vs cualquiera</td><td>Clearance</td><td>= espesor real del aislamiento</td><td>El modelo suele traer el tubo sin aislar. Clearance detecta también los hard, así que sustituye al test Hard para ese par.</td></tr>
+        <tr><td><b>Ductos y equipos</b> vs estructura y cielo (acceso, mantenimiento)</td><td>Clearance</td><td>según el acceso que exija el BEP</td><td>Un equipo que cabe pero no se puede abrir es un choque que aparece después de entregar.</td></tr>
+        <tr><td><b>Cada modelo contra sí mismo</b></td><td>Duplicates</td><td>0</td><td>Ver ítem C6.</td></tr>
+      </tbody>
+    </table></div>
+
+    <div class="fuente"><b>Cómo se lee la tolerancia.</b> En un test Hard, Navisworks deja fuera del informe los choques cuya penetración es menor que la tolerancia; en uno de Clearance, reporta todo lo que se acerque a menos de esa distancia. El valor se convierte solo a las unidades de visualización del archivo. <b>Los números de esta tabla son un punto de partida razonable para un edificio típico</b>: no salen de ninguna norma, y el BEP de tu proyecto manda sobre ellos. Si un par te devuelve cientos de resultados de 2 mm, la tolerancia está baja; si te está ocultando cruces que en obra son reales, está alta.</div>
+  </section>
+
+  <!-- ══════════════ FASE D ══════════════ -->
+  <section class="sec" id="fd" data-fase="d">
+    <div class="cab"><span class="n">FASE D</span><span class="cnt">0/0</span></div>
+    <h2>Triage: qué importa y qué no</h2>
+    <p class="obj">No todos los choques importan. Un ducto que atraviesa doce vigas es <b>un</b> problema, no doce; y un solape de 3 mm entre un enlucido y una columna no es un problema. Aquí se filtra lo crítico antes de que alguien lo lea.</p>
+
+    <ul class="lista">
+      <li class="item"><input type="checkbox" class="chk" data-id="d1"><span class="t">Correr el test y <b>agrupar</b> (Group) los resultados por causa: mismo elemento, misma zona, mismo recorrido. Un grupo es una decisión; los choques sueltos son ruido.<span class="por">Los grupos se reportan como un solo resultado, y el estado del grupo sigue al peor de sus choques abiertos.</span></span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="d2"><span class="t">Cada grupo <b>clasificado</b> como crítico, importante o ignorable con los criterios de la tabla de abajo.</span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="d3"><span class="t"><b>Choques de modelado separados de choques reales</b>: elementos anfitrión-anfitrionado (una luminaria dentro de su cielo), geometría de bajo nivel de detalle, el mismo elemento presente en dos archivos, rooms o espacios exportados por error.<span class="por">Se resuelven en el modelo o en la vista de exportación, no en la reunión de coordinación.</span></span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="d4"><span class="t">Los falsos positivos y los ignorables se marcan <b>Approved con un comentario</b> que diga por qué. <b>Nunca se borran del test.</b><span class="por">Un choque borrado vuelve como New en el siguiente ciclo y hay que volver a decidirlo. Un Approved se queda Approved aunque el test se vuelva a correr.</span></span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="d5"><span class="t">Al informe del ciclo salen <b>solo críticos e importantes</b>, ordenados por criticidad y por disciplina responsable.</span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="d6"><span class="t"><b>Prueba de cordura</b>: si un par devuelve cientos de grupos después de agrupar, el problema es de reglas, tolerancia o modelado, no de coordinación. Se vuelve a la Fase C antes de repartir trabajo.</span></li>
+    </ul>
+
+    <h3>Criterios de clasificación</h3>
+    <div class="tabla-scroll"><table>
+      <thead><tr><th>Nivel</th><th>Qué es</th><th>Qué se hace</th></tr></thead>
+      <tbody>
+        <tr><td><b>Crítico</b></td><td>Toca elemento estructural (viga, columna, losa, muro portante, cimentación). Obliga a cambiar el diseño de un sistema (recorrido principal, montante, cuarto técnico). Impide instalar o mantener un equipo.</td><td>Se resuelve <b>antes</b> de la siguiente reunión. Responsable y fecha el mismo día.</td></tr>
+        <tr><td><b>Importante</b></td><td>Cruce entre sistemas MEP resoluble con un desvío local. Afecta altura libre, acabados o pasos de instalación previstos.</td><td>Se resuelve dentro del ciclo. Entra en la agenda si no se cerró al llegar la reunión.</td></tr>
+        <tr><td><b>Ignorable</b></td><td>Penetración menor que la tolerancia de obra acordada (recubrimientos, solapes de acabados). Elementos que el BEP dice que se ajustan en obra. Geometría de modelado, no de diseño.</td><td><b>Approved con motivo.</b> No sale al informe, no entra a la reunión.</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <!-- ══════════════ FASE E ══════════════ -->
+  <section class="sec" id="fe" data-fase="e">
+    <div class="cab"><span class="n">FASE E</span><span class="cnt">0/0</span></div>
+    <h2>Documentar y reportar</h2>
+    <p class="obj">Si no se traza, no se resuelve. Cada choque que sale al informe lleva lo necesario para que la disciplina responsable lo encuentre, lo entienda y diga qué hizo, sin llamar a nadie.</p>
+
+    <ul class="lista">
+      <li class="item"><input type="checkbox" class="chk" data-id="e1"><span class="t">Cada choque o grupo tiene: <b>ID</b> (el de Navisworks), <b>nombre</b> que describe el problema («Ducto 600×400 cruza viga eje C/4, N03»), <b>viewpoint</b> guardado, <b>disciplina responsable</b>, <b>estado</b>, <b>fecha de detección</b> y <b>fecha compromiso</b>.<span class="por">Sin ID y sin vista, el mismo choque se discute tres veces con tres nombres distintos.</span></span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="e2"><span class="t">Asignado (<code>Assign</code>) a la disciplina que debe moverse, con un <b>comentario</b> que diga la acción esperada, no solo «revisar».</span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="e3"><span class="t">El <b>estado sigue el flujo de Navisworks</b>: New → Active → Reviewed → Approved o Resolved. Nadie inventa estados en el Excel que Navisworks no conoce.<span class="por">Resolved lo pone Navisworks solo cuando el choque desaparece del modelo nuevo. Approved lo pone una persona, con nombre y fecha. Esa diferencia es la trazabilidad.</span></span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="e4"><span class="t">El <b>viewpoint se entiende solo</b>: el choque centrado, contexto suficiente para ubicarse (nivel, eje), y el resto atenuado (<code>Dim Other</code>) o escondido (<code>Hide Other</code>).</span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="e5"><span class="t"><b>Informe exportado</b> en el formato que el equipo va a usar de verdad: <b>HTML (Tabular)</b> si se trabaja en Excel, <b>XML</b> si lo consume una plataforma, <b>As Viewpoints</b> para revisarlo dentro del modelo.<span class="por">Esos son los formatos nativos de Clash Detective (más HTML y Texto). <b>BCF no es nativo de Navisworks</b>: si el flujo lo exige, hace falta un complemento o pasar por una plataforma como Autodesk Construction Cloud.</span></span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="e6"><span class="t">Un <b>solo registro maestro</b> de choques (hoja o plataforma) con la misma numeración que Navisworks. Ningún choque vive solo en un chat o en un correo.</span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="e7"><span class="t">El informe sale <b>al menos 24 h antes</b> de la reunión, para que cada disciplina llegue habiendo visto lo suyo.</span></li>
+    </ul>
+  </section>
+
+  <!-- ══════════════ FASE F ══════════════ -->
+  <section class="sec" id="ff" data-fase="f">
+    <div class="cab"><span class="n">FASE F</span><span class="cnt">0/0</span></div>
+    <h2>La reunión de coordinación</h2>
+    <p class="obj">Con el modelo en vivo, no con PDFs muertos. La reunión existe para tomar decisiones sobre choques que ya están documentados, no para descubrirlos.</p>
+
+    <ul class="lista">
+      <li class="item"><input type="checkbox" class="chk" data-id="f1"><span class="t"><b>Agenda mínima</b>, en este orden: (1) estado de los compromisos del ciclo anterior, (2) críticos nuevos, (3) importantes, (4) decisiones, responsables y plazos. Entre 60 y 90 minutos; lo que no cabe se agenda aparte.</span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="f2"><span class="t">El <b>modelo federado abierto en vivo</b>, con los viewpoints del informe cargados y navegables. Las capturas y el PDF son apoyo, nunca la única fuente.<span class="por">En vivo se puede girar, medir, esconder y ver la alternativa en el momento. En un PDF se discute sobre lo que la foto no muestra.</span></span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="f3"><span class="t">Asiste <b>alguien con poder de decisión</b> por cada disciplina afectada. Si no está, los choques de esa disciplina no se «resuelven»: se aplazan con fecha.</span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="f4"><span class="t">Cada choque revisado sale con <b>decisión, responsable y fecha</b>, escritos en el momento (comentario en Navisworks o registro maestro), no después «de memoria».</span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="f5"><span class="t"><b>Acta corta el mismo día</b>: lista de acuerdos con el ID de cada choque. Nada más.</span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="f6"><span class="t">Antes de cerrar quedan fijadas la <b>fecha de la próxima entrega de modelos</b> y la de la <b>próxima reunión</b>.</span></li>
+    </ul>
+  </section>
+
+  <!-- ══════════════ FASE G ══════════════ -->
+  <section class="sec" id="fg" data-fase="g">
+    <div class="cab"><span class="n">FASE G</span><span class="cnt">0/0</span></div>
+    <h2>Cierre de ciclo y métricas</h2>
+    <p class="obj">Llegan los modelos corregidos. Lo que se hace aquí decide si el próximo ciclo empieza con historial o desde cero.</p>
+
+    <ul class="lista">
+      <li class="item"><input type="checkbox" class="chk" data-id="g1"><span class="t">Los NWC nuevos <b>reemplazan a los anteriores en la ruta fija</b>; se abre el NWF y se repite la prueba de origen (ítem B2).</span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="g2"><span class="t">Se <b>re-ejecutan los mismos tests</b> (Update All). No se crean tests nuevos: los estados, comentarios y asignaciones se heredan solo si el test es el mismo.</span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="g3"><span class="t">Se <b>leen los estados</b> que Navisworks asignó: <b>Resolved</b> desapareció, <b>Active</b> sigue, <b>New</b> apareció. Un New en una zona que ya se dio por resuelta es una <b>regresión</b> y se marca como tal.</span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="g4"><span class="t"><b>Métricas por par de disciplinas</b> anotadas antes de tocar nada: abiertos, cerrados, nuevos, regresiones. Comparadas contra el ciclo anterior.<span class="por">Es lo que permite decir «MEP cerró 40 y abrió 12» en vez de «vamos bien».</span></span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="g5"><span class="t"><code>Compact</code> (borrar los Resolved del test) <b>solo después</b> de registrar las métricas.<span class="por">Compact elimina los resueltos; si se hace antes de contar, el número de cerrados del ciclo se pierde.</span></span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="g6"><span class="t">NWF guardado con fecha del ciclo, y <b>NWD de instantánea</b> publicado si el equipo o el cliente lo requieren.</span></li>
+      <li class="item"><input type="checkbox" class="chk" data-id="g7"><span class="t"><b>Retro de cinco minutos</b>: ¿qué reglas o tolerancias generaron ruido? ¿Qué disciplina entregó fuera de acuerdo? Se ajusta en la Fase C y en la Fase A antes del próximo ciclo.</span></li>
+    </ul>
+
+    <h3>Tablero del ciclo (para imprimir)</h3>
+    <div class="tabla-scroll"><table class="metricas">
+      <thead><tr><th>Par de disciplinas</th><th>Abiertos</th><th>Cerrados</th><th>Nuevos</th><th>Regresiones</th><th>Ciclo anterior</th></tr></thead>
+      <tbody>
+        <tr><td>EST vs MEP</td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr>
+        <tr><td>EST vs ARQ</td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr>
+        <tr><td>HVAC vs Tuberías</td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr>
+        <tr><td>MEP vs ARQ</td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr>
+        <tr><td>&nbsp;</td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <!-- ══════════════ ERRORES ══════════════ -->
+  <section class="sec">
+    <div class="cab"><span class="n">LA OTRA MITAD</span></div>
+    <h2>Los 4 errores por los que la coordinación se vuelve una lista infinita</h2>
+    <p>Ninguno es un error de Navisworks. Los cuatro son de criterio, y los cuatro se arreglan en las Fases C y D, no comprando más horas de reunión.</p>
+  </section>
+
+  <section class="sec" id="e1">
+    <div class="cab"><span class="n">ERROR 1</span></div>
+    <h2>«Todo contra todo»</h2>
+    <p>Un solo test del modelo completo contra sí mismo. Cuatro mil resultados en dos minutos, el coordinador exporta el informe, y nadie lo abre porque nadie sabe por dónde empezar.</p>
+    <div class="aviso"><b>Cómo se ve</b>Test 1 · Selección A: todo el modelo · Selección B: todo el modelo · Hard · 0 mm · 4.312 resultados.</div>
+    <div class="bien"><b>Cómo se ve corregido</b>Siete tests con nombre de par, cada uno con sus search sets, su tipo y su tolerancia. El de EST vs MEP devuelve 38 grupos. De esos, 9 son críticos. Eso sí se puede reunir.</div>
+    <p><b>La regla: un test que nadie va a leer completo es un test mal configurado.</b></p>
+  </section>
+
+  <section class="sec" id="e2">
+    <div class="cab"><span class="n">ERROR 2</span></div>
+    <h2>Tolerancia cero en todos los pares</h2>
+    <p>Cada contacto entre un enlucido y una columna, cada solape de 2 mm entre un rodapié y un muro, cada triángulo de facetado de una tubería contra su accesorio: todos cuentan como choque. El informe se llena de cosas que en obra no existen.</p>
+    <div class="aviso"><b>Cómo se ve</b>EST vs ARQ · Hard · 0 mm · 640 resultados, de los que 590 miden menos de 5 mm.</div>
+    <div class="bien"><b>Cómo se ve corregido</b>EST vs ARQ · Hard · 10 mm, con <code>Items in Same File</code> activo. 50 resultados, todos con penetración real.</div>
+    <p><b>La regla: la tolerancia es un filtro, no una concesión. Se fija por par y se anota en el BEP.</b></p>
+  </section>
+
+  <section class="sec" id="e3">
+    <div class="cab"><span class="n">ERROR 3</span></div>
+    <h2>Borrar en vez de aprobar</h2>
+    <p>Aparece un falso positivo, se borra de la lista, y la semana siguiente vuelve como <b>New</b>. Alguien lo vuelve a mirar, lo vuelve a descartar, lo vuelve a borrar. El criterio nunca se acumula: cada ciclo empieza de cero.</p>
+    <div class="aviso"><b>Cómo se ve</b>El mismo cruce de una bandeja con un cielo falso revisado cuatro ciclos seguidos por tres personas distintas.</div>
+    <div class="bien"><b>Cómo se ve corregido</b>Marcado <b>Approved</b> con el comentario «bandeja sobre cielo registrable, se ajusta en montaje según BEP §4.2». Navisworks lo mantiene Approved en cada corrida. Nadie lo vuelve a mirar.</div>
+    <p><b>La regla: un choque descartado lleva un motivo escrito. Si no lo lleva, no está descartado; está pendiente de que alguien lo vuelva a encontrar.</b></p>
+  </section>
+
+  <section class="sec" id="e4">
+    <div class="cab"><span class="n">ERROR 4</span></div>
+    <h2>Coordinar por capturas de pantalla</h2>
+    <p>El choque se manda por chat con una captura. Sin ID, sin viewpoint, sin estado. La disciplina lo corrige —o no—, nadie lo comprueba en el modelo nuevo, y en la reunión siguiente se discute otra vez «ese ducto del tercer piso».</p>
+    <div class="aviso"><b>Cómo se ve</b>«Oye, mira este cruce en el N03, ¿lo puedes mover?» + una foto del monitor.</div>
+    <div class="bien"><b>Cómo se ve corregido</b>Choque #214 · Ducto 600×400 cruza viga eje C/4, N03 · viewpoint guardado · asignado a MEP · Active · detectado 3-oct · compromiso 10-oct. Aparece en el informe, en el registro maestro y en la agenda con el mismo número.</div>
+    <p><b>La regla: si no se traza, no se resuelve. Se vuelve a encontrar.</b></p>
+  </section>
+
+  <div class="cierre">
+    <h2>Lo que los cuatro tienen en común</h2>
+    <ul>
+      <li><b>1</b> Ninguno es un fallo del software. Los cuatro son decisiones que nadie tomó, y Navisworks rellenó el hueco con «todo».</li>
+      <li><b>2</b> Los cuatro se detectan con una pregunta: ¿este resultado va a leerlo alguien que pueda actuar? Si no, sobra.</li>
+      <li><b>3</b> Tres de los cuatro se arreglan en una hora, configurando tests y reglas una sola vez y exportándolos a XML.</li>
+      <li><b>4</b> El cuarto —trazar cada choque— es el único que exige disciplina cada ciclo. Por eso la Fase E es la más larga de este checklist.</li>
+    </ul>
+    <p class="punch">La detección de choques es lo fácil. Lo que se coordina es la decisión sobre cada uno, y eso no lo hace el software.</p>
+  </div>
+
+  <div class="modulos">
+    <h2>Dónde sigue esto</h2>
+    <p class="m">Este checklist cubre el ciclo de coordinación con Navisworks. Montarlo para un equipo entero —el BEP, los roles, la plataforma común, el 4D que sale después de coordinar— es lo que cubre el módulo BIM Coordination del Máster.</p>
+    <table>
+      <thead><tr><th>Lo que viste aquí</th><th>Dónde se profundiza</th></tr></thead>
+      <tbody>
+        <tr><td>Federación, sets y clash tests</td><td>Módulo BIM Coordination · COORDINA</td></tr>
+        <tr><td>BEP, roles y entregas por disciplina</td><td>Módulo BIM Coordination · misma unidad</td></tr>
+        <tr><td>Del modelo coordinado al 4D y al 5D</td><td>Módulo BIM Management 4D-5D · GESTIONA</td></tr>
+      </tbody>
+    </table>
+    <a class="cta" href="https://designmodelingacademy.com" target="_blank" rel="noopener">Ver el Máster Internacional BIM + IA →</a>
+  </div>
+
+</div></main>
+
+<footer><div class="wrap">
+  <p class="disc"><b>Material educativo.</b> Este checklist es una herramienta de apoyo para organizar la coordinación de modelos. No sustituye el criterio ni la responsabilidad del profesional que coordina o firma el proyecto, ni el Plan de Ejecución BIM acordado con el cliente. Las tolerancias indicadas son valores de arranque, no valores normativos. Las referencias a funciones de Navisworks corresponden a la documentación oficial de Autodesk para Navisworks Manage 2026 y 2027. No es una certificación ni un diploma.</p>
+  <p>Design Modeling Academy · <a href="https://www.dgdesignmodeling.com" target="_blank" rel="noopener">dgdesignmodeling.com</a></p>
+</div></footer>
+
+<script>
+const REQUIERE_REGISTRO = true;
+const TOKEN_ACCESO = 'dm2026';
+const URL_LANDING  = './index.html';
+(function candado(){
+  if(!REQUIERE_REGISTRO) return;
+  const p = new URLSearchParams(location.search);
+  if(p.get('acceso') === TOKEN_ACCESO){ try{localStorage.setItem('dm_navisworks_acceso', TOKEN_ACCESO);}catch(e){} return; }
+  try{ if(localStorage.getItem('dm_navisworks_acceso') === TOKEN_ACCESO) return; }catch(e){}
+  document.getElementById('lock').hidden = false;
+  document.getElementById('lockBtn').href = URL_LANDING;
+})();
+</script>
+<script>
+/* ── Casillas que persisten ───────────────────────────────────────────────
+   Cada ítem tiene un data-id estable (a1, b3, …). Lo marcado se guarda en
+   localStorage bajo UNA clave, como un objeto {id:true}. Si el navegador no
+   deja guardar (modo privado), el checklist funciona igual dentro de la
+   sesión; solo no recuerda al recargar. */
+(function(){
+  const CLAVE = 'dm_navisworks_checklist';
+  const cajas = Array.from(document.querySelectorAll('input.chk'));
+  let estado = {};
+  try{ estado = JSON.parse(localStorage.getItem(CLAVE) || '{}') || {}; }catch(e){ estado = {}; }
+
+  function guarda(){ try{ localStorage.setItem(CLAVE, JSON.stringify(estado)); }catch(e){} }
+
+  function pinta(){
+    const total = cajas.length, hechos = cajas.filter(c => c.checked).length;
+    document.getElementById('progTxt').textContent = hechos + ' / ' + total + ' marcados';
+    document.getElementById('progFill').style.width = (total ? Math.round(hechos/total*100) : 0) + '%';
+    document.querySelectorAll('section[data-fase]').forEach(sec => {
+      const cs = Array.from(sec.querySelectorAll('input.chk'));
+      const n  = cs.filter(c => c.checked).length;
+      const el = sec.querySelector('.cnt');
+      if(!el) return;
+      el.textContent = n + '/' + cs.length;
+      el.classList.toggle('full', cs.length > 0 && n === cs.length);
+    });
+  }
+
+  cajas.forEach(c => {
+    if(estado[c.dataset.id]) c.checked = true;
+    c.addEventListener('change', () => {
+      if(c.checked) estado[c.dataset.id] = true; else delete estado[c.dataset.id];
+      guarda(); pinta();
+    });
+  });
+
+  document.getElementById('btnPrint').addEventListener('click', () => window.print());
+  document.getElementById('btnReset').addEventListener('click', () => {
+    if(!confirm('¿Desmarcar todos los ítems del checklist?')) return;
+    estado = {}; cajas.forEach(c => c.checked = false); guarda(); pinta();
+  });
+
+  pinta();
+})();
+</script>
+<script>
+/* ── Modo incrustado ──────────────────────────────────────────────────────
+   Cuando esta guía vive dentro de una lección de GoHighLevel va en un
+   <iframe>, y un iframe no sabe cuánto mide lo que lleva dentro: se queda con
+   el alto que le pusieron y aparece una segunda barra de scroll. En teléfono
+   esa doble barra es justo lo que hace que la gente abandone la lección.
+
+   Aquí la página le dice al marco cuánto mide, y el marco se ajusta. Solo
+   viaja un número; no se manda nada más, por eso el destino puede ser «*». */
+(function(){
+  if (window.self === window.top) return;      /* no está dentro de un marco */
+  var ultimo = 0, pendiente = 0;
+  function mide(){
+    /* Se mide el BODY, no documentElement: scrollHeight del documento nunca
+       baja del alto de la ventana, y dentro de un marco la ventana ES el
+       marco. */
+    var caja = document.body.getBoundingClientRect();
+    var css  = getComputedStyle(document.body);
+    return Math.ceil(caja.height + parseFloat(css.marginTop) + parseFloat(css.marginBottom));
+  }
+  function avisa(){
+    var alto = mide();
+    if (Math.abs(alto - ultimo) < 24) return;  /* ruido de reflujo */
+    ultimo = alto;
+    parent.postMessage({ dma: 'alto', alto: alto }, '*');
+  }
+  function pide(){                             /* un aviso por cuadro, no 80 */
+    if (pendiente) return;
+    pendiente = requestAnimationFrame(function(){ pendiente = 0; avisa(); });
+  }
+  addEventListener('load', pide);
+  addEventListener('resize', pide);
+  if (window.ResizeObserver) new ResizeObserver(pide).observe(document.body);
+  /* Las imagenes y las fuentes web cambian el alto al terminar de cargar. */
+  setTimeout(avisa, 400); setTimeout(avisa, 1500); setTimeout(avisa, 3500);
+})();
+</script>
+</body>
+</html>
