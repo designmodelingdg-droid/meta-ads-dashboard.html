@@ -379,7 +379,7 @@ SEMANAS = [
       "sticker": "ENCUESTA: «Siempre» / «Casi nunca».",
       "fondo": "REAL · cámara",
       "prompt": "Gabriel negando con la cabeza, plano corto."},
-     {"rol": "CIERRE", "texto": "El lunes arrancó con una memoria devuelta. La de esta misma casa.",
+     {"rol": "CIERRE", "texto": "El lunes arranca con una memoria devuelta. La de esta misma casa.",
       "sticker": "CUENTA REGRESIVA al lunes.",
       "fondo": "REAL · cámara",
       "prompt": "La memoria impresa cerrandose sobre la mesa."}]},

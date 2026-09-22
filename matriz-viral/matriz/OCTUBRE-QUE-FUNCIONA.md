@@ -127,6 +127,39 @@ son de esos mismos ejes.
 
 ---
 
+## 6 · Antes de comparar octubre contra septiembre, leer esto
+
+Octubre va a **parecer** mucho peor que septiembre en los números del bot, y
+va a ser correcto. Son dos cambios de medición que ocurrieron a mitad de
+septiembre, no una caída de resultados.
+
+**1 · Hasta el 14-sep los clics estaban inflados por bots de vista previa.**
+El 15-sep entró en producción el filtro de rastreadores. Antes y después del
+corte no son la misma medida:
+
+| | 12-sep | 13-sep | 14-sep | ‖ | 15-sep | 16-sep | 17-sep | 18-sep |
+|---|---|---|---|---|---|---|---|---|
+| clics | 73 | 874 | 869 | ‖ | 10 | 1 | 15 | 3 |
+| | *con bots* | | | ‖ | *limpios* | | | |
+
+La campaña TUTORIAL pasó de «1.825 clics, 67,59 por DM» —un número que no
+significaba nada— a **10 clics sobre 27 DM**. El dato no empeoró: dejó de
+contar robots.
+
+**2 · Con el follow gate web, el enlace del recurso ya no viaja en el DM.**
+Desde el 15-sep el DM lleva el enlace de una página de verificación, que el
+rastreador no cuenta. Así que el contador de clics ve menos de lo que ocurre.
+
+**Qué hacer con esto.** Comparar octubre contra **la segunda quincena de
+septiembre**, nunca contra el mes entero ni contra agosto. Y la serie limpia
+empieza el 15-sep: cualquier gráfico que cruce esa fecha tiene un escalón que
+es del medidor, no del público.
+
+Vive con más detalle en `matriz-viral/fuentes/openreply/campanas.json`, en los
+campos `corte_de_bots`, `nota_corte_de_bots` y `nota_octubre_va_a_parecer_peor`.
+
+---
+
 ## Cómo se rehace este cruce
 
 ```bash

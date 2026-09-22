@@ -22,11 +22,64 @@ import sys
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
+
+# ── Secciones que no salen del JSON ────────────────────────────────────────
+#
+# Hay tres bloques del artefacto que se escribieron a mano sobre la copia
+# publicada y que este generador no sabia reproducir: la pestana «Que
+# funciona» entera, los copys corregidos de ACERO dentro de Publicidad, y los
+# dos videos del tutor. Quien regenerara y publicara los BORRABA sin enterarse
+# — y uno de ellos lleva las dos correcciones de Patricio.
+#
+# Ahora viven como fragmentos de HTML en `matriz/secciones-artefacto/` y se
+# insertan aqui. Se guardan como HTML y no como Markdown a proposito: usan las
+# clases de este artefacto (.gana, .copyliteral, .dato, .cifra) y convertirlos
+# desde Markdown cambiaria como se ven.
+#
+# El texto de referencia de esos bloques vive ademas en:
+#   matriz/OCTUBRE-QUE-FUNCIONA.md    → qfunciona.html
+#   matriz/COPYS-CORREGIDOS-ACERO.md  → pauta-copys-acero.html
+# Si se corrige el contenido, se corrigen LOS DOS. El .md es el que se lee; el
+# fragmento es el que se publica.
+SECCIONES = RAIZ / "matriz-viral" / "matriz" / "secciones-artefacto"
+
+
+def fragmento(nombre, obligatorio=True):
+    """Devuelve un trozo de HTML escrito a mano, o revienta si falta.
+
+    Revienta a proposito: si el fichero no esta, lo que sale es un artefacto
+    al que le falta una pestana, y eso no se nota mirando. Mejor que no
+    genere nada.
+    """
+    f = SECCIONES / nombre
+    if not f.exists():
+        if not obligatorio:
+            return ""
+        raise SystemExit(
+            f"::error::Falta {f}. Es una seccion del artefacto que no sale del "
+            "JSON; sin ella el artefacto se publica incompleto. No se genera.")
+    return f.read_text(encoding="utf-8").strip()
 MATRIZ = RAIZ / "matriz-viral" / "matriz"
 sys.path.insert(0, str(MATRIZ))
 
 CAL = json.loads((MATRIZ / "calendario-septiembre.json").read_text(encoding="utf-8"))
-GUI = {p["id"]: p for p in json.loads((MATRIZ / "guiones-completos.json").read_text(encoding="utf-8"))["piezas"]}
+GUI = {p["id"]: p for p in json.loads((MATRIZ / "guiones-completos.json")
+       .read_text(encoding="utf-8"))["piezas"]}
+
+# Los carruseles de lead magnet se escriben en su propio fichero y NUNCA se
+# copiaron a guiones-completos.json, que es el unico que este generador leia.
+# Resultado: tres piezas con hook, diapositivas y caption escritos salian en el
+# artefacto como «Desarrollo» y una nota que mandaba a otra pestaña donde no
+# estaban. Lo vio Dayana en la del pack de Dynamo el 21-sep.
+#
+# Se superponen aqui en vez de copiarlas al otro fichero: duplicar el dato es
+# lo que produjo la deriva. Solo entran las que tienen `hook` — una pieza con
+# el hook vacio rendiria una ficha con los rotulos y nada debajo, que es peor
+# que decir que no esta escrita.
+for _p in json.loads((MATRIZ / "g1-carruseles-y-posts-septiembre.json")
+                     .read_text(encoding="utf-8"))["piezas"]:
+    if _p.get("id") and (_p.get("hook") or "").strip():
+        GUI[_p["id"]] = {**GUI.get(_p["id"], {}), **_p}
 
 import importlib.util
 
@@ -212,8 +265,10 @@ def tab_feed():
             if p.get("slides"):
                 o.append('<span class="rot">Slides</span><ol class="slides">')
                 for s in p["slides"]:
+                    vis = (s.get("visual") or "").strip()
                     o.append(f'<li><b>Slide {s["n"]}</b> — {e(s["texto"])}'
-                             f'<br><span class="visual">🖼 {e(s.get("visual",""))}</span></li>')
+                             + (f'<br><span class="visual">🖼 {e(vis)}</span>' if vis else "")
+                             + '</li>')
                 o.append('</ol>')
             if p.get("caption"):
                 o.append(f'<span class="rot">Caption (copiar tal cual)</span>{bloque_pegar(p["caption"])}')
@@ -222,11 +277,19 @@ def tab_feed():
         else:
             d = ent["idea"]
             o.append(f'<span class="rot">Desarrollo</span>{bloque_pegar(d["desarrollo"])}')
-            o.append('<p class="nota">El guion completo de este reel está en la pestaña <b>Reels</b>.</p>')
+            if "REEL" in ent["formato_publicacion"].upper():
+                o.append('<p class="nota">El guion completo de este reel está en '
+                         'la pestaña <b>Reels</b>.</p>')
+            else:
+                o.append('<p class="nota">⚠ Esta pieza todavía NO está escrita: '
+                         'hay idea y desarrollo, faltan el hook, las diapositivas '
+                         'y el caption.</p>')
         kp = pid if pid in R.FEED_PROMPTS else ("post-varilla" if "varilla" in titulo.lower() else None)
         if kp:
             medida, txt = R.FEED_PROMPTS[kp]
             o.append(prompt_img(medida, txt))
+        elif p and (p.get("prompt_imagenes") or "").strip():
+            o.append(prompt_img("ver medida en el texto", p["prompt_imagenes"]))
         o.append('</div>')
     return "\n".join(o)
 
@@ -288,6 +351,58 @@ def bloque_grabacion():
     return "\n".join(o)
 
 
+def contexto_frame(sem, d, i, total):
+    """Lo que hace que una tarjeta SUELTA se entienda sin subir a la cabecera.
+
+    Por que existe: Daniela reenvia los frames de uno en uno por WhatsApp para
+    pedirle a Gabriel que los grabe. En el artefacto el hilo de la semana y el
+    papel del dia estan arriba del todo, asi que en el reenvio se quedan atras
+    y el frame llega solo: «La verdad: nadie reviso el cruce» sin decir que
+    cruce, de que caso ni de que semana.
+
+    Con esto, cualquier captura de una tarjeta lleva encima de que va.
+    """
+    return (f'<p class="ctx"><b>S{sem["n"]} · {e(sem["hilo"])}</b> — '
+            f'{e(d["dia"])}: {e(d["titulo"])} · frame {i} de {total}</p>')
+
+
+def grabacion_semana(sem):
+    """Las tomas reales de ESA semana, con su historia al lado.
+
+    El bloque general de «Lo que hay que grabar» resume el mes entero en once
+    vinetas genericas, y la semana 2 sola pide 17 tomas. Una vineta que dice
+    «Gabriel hablando a camara, 3 tomas de 15 s» no le dice a Gabriel de que
+    habla en cada una. Esta tabla si: cada toma con su dia, su frame y el texto
+    que va en pantalla, que es lo que da el tema.
+    """
+    tomas = []
+    for d in sem["dias"]:
+        for i, hh in enumerate(d["historias"], 1):
+            fondo = hh.get("fondo") or ""
+            if "REAL" in fondo:
+                tomas.append((d["dia"], i, fondo, hh.get("prompt") or "",
+                              hh.get("texto") or ""))
+    if not tomas:
+        return ""
+
+    camara = sum(1 for x in tomas if "cámara" in x[2])
+    pantalla = len(tomas) - camara
+    o = ['<div class="grabar"><h3>Lo que Gabriel graba esta semana</h3>',
+         f'<p class="nota"><b>{len(tomas)} tomas</b> — {camara} de cámara y '
+         f'{pantalla} de pantalla. Cada una con la historia a la que pertenece, '
+         'para que se pueda pedir sin explicar nada aparte.</p>',
+         '<div class="tabla-scroll"><table><thead><tr><th>Cuándo</th>'
+         '<th>Qué se graba</th><th>Para qué historia</th></tr></thead><tbody>']
+    for dia, i, fondo, prompt, texto in tomas:
+        clase = "cam" if "cámara" in fondo else "pan"
+        o.append(f'<tr><td style="white-space:nowrap">{e(dia)}<br>'
+                 f'<span class="fondo f-{clase}">frame {i}</span></td>'
+                 f'<td>{e(prompt)}</td>'
+                 f'<td><i>«{e(texto)}»</i></td></tr>')
+    o.append('</tbody></table></div></div>')
+    return "".join(o)
+
+
 def tab_historias():
     g = CAL["grupos"][4]
     o = [f'<h2>{e(g["nombre"])}</h2>',
@@ -309,7 +424,8 @@ def tab_historias():
     for sem in H.SEMANAS:
         o.append(f'<div class="semana" data-sem="{sem["n"]}"><div class="semana-cab"><span class="snum">S{sem["n"]}</span>'
                  f'<div><h3>{e(sem["hilo"])}</h3><span class="rango">{e(sem["rango"])}</span></div></div>'
-                 f'<p class="nota">{e(sem["porque"])}</p>')
+                 f'<p class="nota">{e(sem["porque"])}</p>'
+                 + grabacion_semana(sem))
         for d in sem["dias"]:
             k = clave("g5", d["dia"])
             papel = (f'<span class="papel">{e(d["papel"])}</span>' if d.get("papel") else "")
@@ -321,6 +437,7 @@ def tab_historias():
                         f'{e(fondo)}</span>') if fondo else ""
                 o.append(f'<div class="hist"><div class="hist-cab"><span class="frame">{i}</span>'
                          f'<span class="rol rol-{hh["rol"][:4].lower()}">{e(hh["rol"])}</span>{chip}</div>')
+                o.append(contexto_frame(sem, d, i, len(d["historias"])))
                 o.append(bloque_pegar(hh["texto"]))
                 o.append(f'<p class="sticker"><b>Sticker:</b> {e(hh["sticker"])}</p>')
                 o.append(fondo_img(fondo, hh["prompt"]))
@@ -458,9 +575,22 @@ def ficha_anuncio(p):
     return "\n".join(o)
 
 
+def tab_quefunciona():
+    """El cruce de las 169 piezas, el sector, pixel/CAPI y los copys de ACERO.
+
+    No sale del JSON: es analisis escrito, y su fuente de lectura es
+    `matriz/OCTUBRE-QUE-FUNCIONA.md`.
+    """
+    return fragmento("qfunciona.html")
+
+
 def tab_pauta():
     pub = CAL["publicidad"]
     o = ['<h2>Publicidad — sale todo junto el lunes 7</h2>',
+         # Los copys corregidos de ACERO y el estado que reporto Patricio. Van
+         # ARRIBA, antes del calendario de la campana, porque son lo accionable
+         # de esta pestana: se pegan hoy.
+         fragmento("pauta-copys-acero.html"),
          f'<p class="intro">{e(pub["nota"])}</p>']
     if pub.get("indicaciones"):
         o.append('<div class="indic"><h3>Antes de subir nada</h3>')
@@ -574,6 +704,9 @@ def tab_tutor():
              '<tr><th>Límites</th><td>' + " · ".join(e(x) for x in t["limites"]) + '</td></tr>'
              '</tbody></table></div>')
     n = t["nombres_de_curso"]
+    # Los dos videos de presentacion (16:9 y 9:16). Se apoyan en ficheros de
+    # `video-tutor-ia/` y en el CSS .vids de este artefacto.
+    o.append(fragmento("tutor-videos.html"))
     o.append('<h2>Nombres de curso propuestos</h2>')
     o.append(f'<p class="intro">{e(n["regla"])}</p>')
     o.append('<div class="tabla-scroll"><table><thead><tr><th>Nombre actual</th>'
@@ -595,6 +728,7 @@ PESTANAS = [
     ("g5", "G5 · Historias", tab_historias),
     ("reels", "Reels", tab_reels),
     ("pauta", "Publicidad", tab_pauta),
+    ("qfunciona", "Qué funciona", tab_quefunciona),
     ("lm", "Lead magnets", tab_leadmagnets),
     ("tutor", "Tutor IA", tab_tutor),
 ]
@@ -779,6 +913,10 @@ ol.slides li{font-size:14px;margin-bottom:9px}
 .hist{border-top:1px solid var(--line);padding:12px 0 4px}
 .hist:first-of-type{border-top:0;padding-top:0}
 .hist-cab{display:flex;align-items:center;gap:9px;margin-bottom:6px}
+/* El contexto viaja CON la tarjeta: una captura suelta tiene que decir de que va. */
+.ctx{font-family:var(--mono);font-size:10.5px;color:var(--ink-3);margin:0 0 6px;
+  line-height:1.45}
+.ctx b{color:var(--amber-deep);font-family:var(--display);font-size:11px}
 .frame{font-family:var(--mono);font-size:11px;font-weight:600;background:var(--navy);color:#fff;
   width:20px;height:20px;border-radius:50%;display:grid;place-items:center;flex:none}
 .rol{font-family:var(--display);font-weight:800;font-size:10.5px;letter-spacing:.09em;

@@ -31,6 +31,9 @@ estado: 🔴 pendiente · 🟡 en curso · 🟢 hecho · ⚫ descartada (con el 
 | 12 | **Las historias no tienen ni un slot de venta** (0 de 7 días) y los 15 «mándales DM» de la guía no tienen ni un guion escrito. Resuelto en `HISTORIAS-VENTA.md`: jueves de venta + 5 guiones de DM | Auditoría historias 14-ago | Dayana | 🔴 |
 | 13 | **ACERO es solo el 20 % de las historias** (3 de 15) siendo el producto de mejor CPL. Subir a 6 | Auditoría historias 14-ago | Dayana | 🔴 |
 | 14 | **Decidir si ACERO abre cohorte este mes** y con cuántos cupos reales. Sin ese dato, la secuencia de cuenta regresiva no se publica | Auditoría historias 14-ago | Dayana | 🔴 |
+| 15 | ~~Comprobar en GHL si CHATGPT y MEMORIA están montadas~~ · **Resuelto:** Dayana confirma que están todos, y la sonda de GHL lo corrobora: las SEIS palabras tienen workflow `published` (`Comentario ZAPATA/ACERO/NIVEL/CHATGPT/MEMORIA/DYNAMO`). El cotejo ya lo mira solo | Revisión 21-sep | — | 🟢 |
+| 17 | **Decidir si la campaña MEMORIA DE CÁLCULO de OpenReply se reactiva.** Está pausada ahí mientras su workflow de GHL sigue publicado: el comentario se contesta, pero sin DM ni medición por OpenReply | Revisión 21-sep | Dayana | 🔴 |
+| 16 | **Tres piezas del calendario siguen sin salir:** `pauta-guia` (Mar 8, reel), `lm-revit-chatgpt-feed` (Jue 10, carrusel) y `reel-advertencias` (Vie 18, reel). El del Jue 10 no necesita cámara | Revisión 21-sep | Contenido | 🔴 |
 
 ---
 
@@ -42,6 +45,8 @@ Estas ya no se discuten cada semana. Salieron de medir.
 
 | Regla | La evidencia |
 |---|---|
+| **El gancho ACUSA un hábito concreto, no invita ni declara.** Es lo que más sube la conversación por vista | 3 revisiones seguidas. 31-ago: ACERO 7+ c/1k contra 1,75 de la declaración genérica de IA. 14-sep: «la frontera concreta gana». 21-sep: los dos reels que acusan hacen 16,59 y 8,45 c/1k, contra 1,34 de la mediana de agosto |
+| **Alcance y conversación son dos carreras distintas.** Una pieza pequeña puede darle más gente al bot que una viral | 21-sep: el reel de 1.145 vistas hizo 16,59 c/1k; la pieza viral de 36.275 vistas hizo 3,31. Cinco veces mejor con un tercio del alcance |
 | **Escena al abrir + pregunta al cerrar.** Sin pregunta directa no hay comentarios | 3 semanas seguidas. El post del lanzamiento hizo 1.456 views (¼ del Civil 3D) y **21 comentarios contra 0** |
 | **El humor va en REEL, nunca en post plano** | El meme estático se quedó en 1.321 views; el humor en video pasa de 4.700 (y el de gremio hizo 8.373) |
 | **Humor + pregunta van juntos.** Uno sin el otro da alcance sin conversación | El reel de 8.373 views cerró sin pregunta: 3 comentarios. El del 25-jun que sí preguntaba: 623 |
@@ -76,6 +81,47 @@ Estas ya no se discuten cada semana. Salieron de medir.
 ---
 
 ## Historial
+
+### 21-sep-2026 · Los seis disparadores están montados (y el cotejo ya lo comprueba solo)
+
+Dayana confirmó que están todos en GoHighLevel, y la sonda de GHL lo corrobora
+con nombre y estado: las seis palabras de la matriz tienen workflow
+`published`. Los 36 comentarios de la semana tenían a quién contestarles.
+
+Así que la pregunta deja de hacerse a mano: `scripts/openreply.py` cruza ahora
+las seis palabras contra los 133 workflows que la sonda ya bajaba, y distingue
+cinco estados en vez de «existe / no existe». **Límite anotado:** el listado de
+GHL da el nombre y el estado, no la configuración del disparador — un `draft`
+sí es concluyente, un `published` es muy probable, no demostrado.
+
+**Lo que salió al mirar:** la campaña MEMORIA DE CÁLCULO está **pausada en
+OpenReply** mientras su workflow sigue publicado en GHL. El comentario se
+contesta, pero por GHL: no va a haber DM ni medición por OpenReply. Si eso es a
+propósito, bien; si no, es un medidor apagado. → recomendación #17.
+
+### 21-sep-2026 · Revisión semanal (14-20 sep)
+
+**La semana en que salió todo lo planificado y aun así hay tres piezas
+atrasadas.** Las 3 del calendario se publicaron —la cámara ocurrió, que era el
+cuello de botella de la semana pasada— pero la del viernes no era la del
+viernes: fue `reel-deriva`, la pieza del Mié 9, con nueve días de retraso. Así
+que `reel-advertencias` se suma a `pauta-guia` y `lm-revit-chatgpt-feed`, que
+llevan desde la semana 1. → recomendación #16.
+
+**El hallazgo:** los dos reels tienen la mejor tasa de conversación del mes
+—16,59 y 8,45 comentarios por mil vistas— con un tercio del alcance de las dos
+virales del 11 y el 12 (3,31 y 7,91). Un reel pequeño le da más gente al bot
+que una pieza de 36.000 vistas. Los dos abren acusando un hábito concreto, que
+es la tercera revisión seguida que lo confirma: **sube a regla permanente**,
+junto con la de que alcance y conversación son carreras distintas.
+
+**Lo que queda por comprobar:** 36 comentarios pidieron CHATGPT y MEMORIA y
+ninguna de las dos existe en OpenReply. Eso NO prueba que se quedaran sin
+respuesta —los disparadores de la matriz viven en GoHighLevel, que OpenReply no
+ve— pero es la comprobación que falta. → recomendación #15.
+
+**Lo que la API no da:** las vistas de Facebook de las tres piezas. Meta las
+quitó y solo están en la UI de Insights.
 
 ### 31-ago-2026 · Revisión semanal (24-30 ago)
 
