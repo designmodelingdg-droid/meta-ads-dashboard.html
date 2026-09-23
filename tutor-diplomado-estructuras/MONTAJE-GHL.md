@@ -74,8 +74,8 @@ no deja preguntar.
 **Tiene cargados los módulos 2 a 9.** El Módulo 1 (iniciación en Revit) son
 videos subidos directo a GHL, sin la transcripción que usa el tutor. Si un
 alumno pregunta por algo de ese módulo, el tutor le dice que ese módulo aún no
-lo tiene. El Módulo 2 está incompleto hasta que se generen sus subtítulos en
-Vimeo; al hacerlo se suma solo.
+lo tiene. Del Módulo 2 faltan 4 lecciones: las 3 de la Fase 7 (están en otra
+cuenta de Vimeo) y una con subtítulos solo en inglés.
 
 **No hay que activar a nadie.** Quien entra al área de miembros ya está
 identificado por GoHighLevel.
