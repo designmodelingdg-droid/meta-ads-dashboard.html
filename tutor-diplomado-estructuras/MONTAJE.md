@@ -1,8 +1,8 @@
 # Tutor IA del Diplomado BIM Estructuras — estado y montaje
 
-**Todavía NO está publicado, a propósito.** Esta carpeta no está en
-`publish-matriz.yml`, así que no sale a Pages. Se conecta el último, cuando el
-servidor ya tenga las clases del Diplomado cargadas.
+**Publicado el 23-sep-2026** en
+`https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/tutor-diplomado-estructuras/`.
+Lo único que falta es el botón en el curso de GHL: ver `MONTAJE-GHL.md`.
 
 ## Qué es
 
@@ -22,34 +22,27 @@ nuevo sin corpus— la caja queda cerrada con «todavía se está preparando» y
 se manda ninguna pregunta. Probado contra el servidor real el 23-sep: solo
 consultó `/tutor/salud` y no gastó ninguna pregunta.
 
-## Lo que falta, en orden
+## Estado
 
-| # | Qué | Quién |
+| # | Qué | Estado |
 |---|---|---|
-| 1 | Confirmar qué carpetas de Vimeo son del Diplomado (ver abajo) | quien haya visto el curso en GHL |
-| 2 | Bajar el corpus (Action «Tutor — bajar corpus», `programa=diplomado-estructuras`) | Claude |
-| 3 | Probar con preguntas reales y medir memoria | Claude |
-| 4 | Fusionar el PR del servidor → Render redespliega | Dayana |
-| 5 | Añadir esta carpeta a `publish-matriz.yml` y hacer la tarjeta con las horas reales | Claude |
-| 6 | Custom Block en el curso del Diplomado en GHL, como el del Acero | Ester y Aylin |
+| 1 | Qué video de Vimeo es cada lección | HECHO: el curso en GHL y en la plataforma anterior (LeadGods #29586), leídos con Claude en Chrome |
+| 2 | Bajar el corpus | HECHO: 190 videos, 115 h, módulos 2 a 9 |
+| 3 | Probar y medir memoria | HECHO: 189 MB con los dos tutores |
+| 4 | Fusionar el servidor (dma-sales-assistant #53) | HECHO |
+| 5 | Publicar esta carpeta y hacer la tarjeta | HECHO |
+| 6 | Custom Block en el curso del Diplomado en GHL | **Ester y Aylin** → `MONTAJE-GHL.md` |
+| 7 | Subtítulos en español del Módulo 2 en Vimeo, y volver a bajar el corpus | En curso |
+| — | Módulo 1 | Sin fuente: son videos nativos de GHL, sin Vimeo ni texto |
 
-**La tarjeta (`tarjeta-tutor.png`) no se copió del Acero**: dice «de tu
-Especialización», «tus 4 cursos» y «135 horas», y las tres cosas son falsas
-aquí. Se hace nueva en el paso 5, con las horas del corpus de verdad.
+**La tarjeta (`img/tarjeta-tutor.png`) es propia**: la del Acero dice «de tu
+Especialización» y «tus 4 cursos». Esta dice «de tu Diplomado» y las 115 horas
+que de verdad tiene indexadas.
 
-## Por qué el paso 1 no se adivina
+## Cómo se resolvió el paso 1
 
-Tres fuentes describen el Diplomado con módulos distintos:
-
-- **El temario oficial** (Drive, abril 2026): Fundamentos BIM · Hormigón armado ·
-  Acero · Cimentaciones · Documentación · Coordinación (Navisworks) · Análisis
-  (Robot/SAP2000) · Automatización (Dynamo) · Proyecto final.
-- **El bot de ventas** (`claude_agent.py`): Modelado inicial · Acero
-  sismorresistente · Conexiones precalificadas · HA sismorresistente · Refuerzo ·
-  Cimentaciones · Documentación · MEP con Navisworks · Presupuestos.
-- **Vimeo**: la carpeta «M8 - Diplomado de Estructuras» es de *instalaciones*,
-  que no es el módulo 8 del temario.
-
-Y la API de GoHighLevel no deja leer el contenido de los cursos. Si el tutor se
-arma con una carpeta que no es del Diplomado, le contesta a un alumno con una
-clase que no compró y le dice que está en su material.
+Tres fuentes describían el Diplomado con módulos distintos (el temario oficial,
+el bot de ventas y los nombres de carpeta de Vimeo), y la API de GHL no deja
+leer los cursos. Se resolvió leyendo el curso mismo: en GHL, lo que ve el
+alumno, y en LeadGods, que guarda el número de Vimeo de cada lección. El
+emparejamiento está en `dma-sales-assistant/tutor/fuentes/reparto-diplomado-estructuras.json`.
