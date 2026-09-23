@@ -80,6 +80,7 @@
   .v1{background:#fdf6e3;color:#a16207}
   .v2{background:#e8f2fb;color:#1d5b8f}
   .v3{background:var(--ok-s);color:var(--ok)}
+  .vn{background:#eef1f4;color:#6b7785;font-style:italic}
 
   .reco{background:linear-gradient(135deg,var(--navy),var(--azul));color:#fff;border-radius:13px;padding:22px}
   .reco h3{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--orange-d);margin-bottom:9px}
@@ -107,7 +108,20 @@ if(cadena.length < TODAS.length){
     <p style="margin-top:10px">Este enlace no trae las respuestas del diagnóstico.
     Ábrelo desde el campo <b>enlace_resultado</b> de la ficha del contacto.</p></div>`;
 } else {
-  pintar(calcular(desempaquetar(cadena)));
+  /* Enlaces anteriores al 23-sep no traen punto de partida: desempaquetarEntrada
+     devuelve null y el panel sale exactamente como antes. */
+  pintar(calcular(desempaquetar(cadena), desempaquetarEntrada(cadena)));
+}
+
+/* El titular lo lee el PROSPECTO en la llamada, no solo el asesor. «Tu nivel
+   es Sin experiencia BIM todavía» o «tu nivel es Nivel BIM inicial» se leen
+   mal y, para quien empieza, suenan a suspenso. La etiqueta interna (la que va
+   a nivel_bim en el CRM) no cambia: cambia solo cómo se le dice a la persona. */
+function titular(r){
+  const tu = nombre ? nombre + ', tu' : 'Tu';
+  if(r.sinBIM) return `${tu} ruta empieza por la base`;
+  if(r.nombreNivel === 'Nivel BIM inicial') return `${tu} nivel BIM es inicial`;
+  return nombre ? `${nombre}, tu nivel es ${r.nombreNivel}` : `Nivel: ${r.nombreNivel}`;
 }
 
 function pintar(r){
@@ -123,7 +137,12 @@ function pintar(r){
         <small>${b.modulo} · ${b.meses}</small>
         <span class="marca ${b.dominado?'ok':'no'}">${b.dominado?'Dominado':(i===r.nivel?'Tu siguiente paso':'Por delante')}</span>
       </div>
-      <div class="pct">${pct(b.pct)}%<br><small>${b.pts} de ${b.max}</small></div>
+      ${r.sinBIM
+        /* No se le preguntó: un «0 de 12» aquí sería puntuarle algo que no
+           contestó, y contradiría la lista de respuestas, que dice «No se
+           preguntó». La escalera sigue enseñando la ruta; solo sin nota. */
+        ? '<div class="pct">—<br><small>no se evaluó</small></div>'
+        : `<div class="pct">${pct(b.pct)}%<br><small>${b.pts} de ${b.max}</small></div>`}
     </div>`;
   }).join('');
 
@@ -145,8 +164,32 @@ function pintar(r){
     <div class="grupo">
       <h4>${g}</h4>
       ${qs.map(q => `<div class="r"><span>${q.texto}</span>
-        <span class="v v${q.v}">${OPCIONES[q.v].t}</span></div>`).join('')}
+        ${r.sinBIM && q.tipo==='bloque'
+          ? '<span class="v vn">No se preguntó</span>'
+          : `<span class="v v${q.v}">${OPCIONES[q.v].t}</span>`}</div>`).join('')}
     </div>`).join('');
+
+  const partida = r.entrada ? `
+    <section>
+      <h2>Tu punto de partida</h2>
+      <div class="card">
+        <div class="r"><span>¿En qué punto estás hoy con BIM?</span>
+          <span class="v v2">${r.entrada.exp.t}</span></div>
+        <div class="r"><span>¿Qué es lo que más te interesa del Máster?</span>
+          <span class="v v2">${r.entrada.int.t}</span></div>
+      </div>
+      ${r.quiereIA && r.nivel === 0 ? `
+      <div class="nota"><b>Te interesa sobre todo la IA, y es el destino correcto.</b> En el Máster la
+        IA se aplica sobre modelos BIM: automatiza lo que el modelo ya contiene. Por eso tu ruta
+        empieza por la base — es lo que le da a la IA algo sobre lo que trabajar.</div>` : ''}
+    </section>` : '';
+
+  /* Sin eje BIM tampoco hay «dominio global»: ese porcentaje sale solo de los
+     cuatro bloques, y ninguno se preguntó. Un «0 %» en la cabecera, delante
+     del prospecto, sería una nota que no se ganó ni se perdió. */
+  const evaluadas = r.sinBIM
+    ? `${TODAS.filter(q=>q.tipo==='eje').length} competencias técnicas evaluadas`
+    : `${TODAS.length} competencias evaluadas · ${r.global}% de dominio global`;
 
   const disperso = r.dispersos.length ? `
     <div class="nota"><b>Tienes piezas por encima de tu nivel</b> en
@@ -169,12 +212,13 @@ function pintar(r){
   app.innerHTML = `
     <div class="top"><div class="wrap">
       <p class="eyebrow">Máster Internacional BIM + IA · Diagnóstico</p>
-      <h1>${nombre ? nombre+', tu nivel es ' : 'Nivel: '}${r.nombreNivel}</h1>
+      <h1>${titular(r)}</h1>
       <span class="perfil">${r.perfil}</span>
-      <p class="quien">20 competencias evaluadas · ${r.global}% de dominio global · Código ${r.codigo}</p>
+      <p class="quien">${evaluadas} · Código ${r.codigo}</p>
     </div></div>
 
     <div class="wrap">
+      ${partida}
       <section>
         <h2>Los cuatro niveles de la ruta</h2>
         <div class="esc">${escalera}</div>

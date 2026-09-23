@@ -21,6 +21,53 @@ const OPCIONES = [
   { v:3, t:'Lo hago solo y se lo enseño a otro' },
 ];
 
+/* ── PUNTO DE PARTIDA (añadido 23-sep) ─────────────────────────────────
+ *
+ * Por qué existe: varios interesados le dijeron a Dayana que el test no tenía
+ * dónde decir «todavía no sé nada de BIM». Las 20 preguntas asumen que ya
+ * modelas, coordinas o gestionas, así que quien empieza de cero se encontraba
+ * con catorce afirmaciones que no le decían nada y sentía que el test no era
+ * para él. Y tampoco había forma de decir «a mí lo que me interesa es la IA».
+ *
+ * Se MUESTRAN primero, pero se GUARDAN al final del enlace. No es un capricho:
+ * el enlace del asesor lleva las 20 respuestas como 20 dígitos por posición, y
+ * ya hay enlaces enviados. Si estas dos fueran delante, cada enlace viejo se
+ * leería corrido una posición. Así, un enlace de 20 dígitos se lee exactamente
+ * igual que antes y uno de 22 trae además el punto de partida.
+ *
+ * Por eso tampoco entran en TODAS: TODAS son las 20 que PUNTÚAN. Estas no
+ * puntúan: cuentan desde dónde viene y qué busca.
+ */
+const ENTRADA = [
+  {
+    id:'EXP',
+    texto:'¿En qué punto estás hoy con BIM?',
+    ayuda:'No hay respuesta mala. Es para saber desde dónde empezar contigo.',
+    opciones:[
+      { v:0, t:'Todavía no he trabajado con BIM',        corto:'Sin experiencia BIM' },
+      { v:1, t:'Lo he probado, pero a nivel muy básico', corto:'BIM muy básico' },
+      { v:2, t:'Ya lo uso en proyectos reales',          corto:'Usa BIM en proyectos' },
+    ],
+  },
+  {
+    id:'INT',
+    texto:'¿Qué es lo que más te interesa del Máster?',
+    ayuda:'Elige la que más pese. Tu asesor ve las demás en la conversación.',
+    opciones:[
+      { v:0, t:'Aprender BIM desde la base',                               corto:'BIM desde la base' },
+      { v:1, t:'Subir de nivel: coordinar o gestionar proyectos BIM',      corto:'Subir de nivel en BIM' },
+      { v:2, t:'Sobre todo la inteligencia artificial y la automatización', corto:'Sobre todo la IA' },
+      { v:3, t:'La ruta completa, BIM + IA',                               corto:'La ruta completa' },
+    ],
+  },
+];
+/* Quien declara que no ha trabajado con BIM NO pasa por el eje A: esas
+ * catorce preguntas son justo las que le hacían sentir que el test no era
+ * para él, y su respuesta a todas sería «Nunca lo he hecho». Se guardan como
+ * 0 para que el cálculo no cambie, y el panel las marca «No se preguntó»:
+ * el asesor no puede enseñar como respuesta algo que la persona no contestó. */
+const SIN_BIM = 0;
+
 /* ── EJE A · NIVEL BIM ────────────────────────────────────────────────── */
 const BLOQUES = [
   {
@@ -109,7 +156,7 @@ BLOQUES.forEach((b,bi) => b.preguntas.forEach(t =>
 EJES.forEach((e,ei) => e.preguntas.forEach(t =>
   TODAS.push({ texto:t, tipo:'eje', idx:ei, grupo:e.nombre })));
 
-function calcular(R){
+function calcular(R, E){
   const bloques = BLOQUES.map((b,i) => {
     const pts = TODAS.reduce((s,q,qi) =>
       s + (q.tipo==='bloque' && q.idx===i ? (R[qi]||0) : 0), 0);
@@ -141,16 +188,66 @@ function calcular(R){
   const siguiente = nivel < BLOQUES.length ? BLOQUES[nivel] : null;
   const global = Math.round(bloques.reduce((s,b)=>s+b.pts,0) /
                             bloques.reduce((s,b)=>s+b.max,0) * 100);
+  /* El código NO cambia de formato: puede estar moviendo algo en GHL. Quien
+     declara no tener BIM sale B0, igual que salía antes con catorce ceros. */
   const codigo = `${nivel===0?'B0':BLOQUES[nivel-1].id}-${perfilCorto}-${global}`;
-  const nombreNivel = nivel===0 ? 'En camino a Modelador BIM' : BLOQUES[nivel-1].nivel;
+  let nombreNivel = nivel===0 ? 'En camino a Modelador BIM' : BLOQUES[nivel-1].nivel;
+
+  /* Sin punto de partida (E vacío = enlace anterior al 23-sep) todo lo de
+     abajo se queda en null y el resultado es idéntico al de siempre. */
+  const entrada = E ? {
+    exp: ENTRADA[0].opciones.find(o => o.v === E[0]) || null,
+    int: ENTRADA[1].opciones.find(o => o.v === E[1]) || null,
+  } : null;
+  const sinBIM   = !!(entrada && entrada.exp && entrada.exp.v === SIN_BIM);
+  const quiereIA = !!(entrada && entrada.int && entrada.int.v === 2);
+
+  if(sinBIM) nombreNivel = 'Sin experiencia BIM todavía';
+  else if(nivel===0 && entrada && entrada.exp && entrada.exp.v === 1) nombreNivel = 'Nivel BIM inicial';
+
+  /* Lo que la persona DICE de sí misma contra lo que MARCA. Cuando no
+     cuadran es justo lo que el asesor tiene que saber antes de hablar. */
+  const avisos = [];
+  if(entrada && entrada.exp){
+    if(entrada.exp.v === 2 && nivel === 0)
+      avisos.push('Dice que usa BIM en proyectos reales, pero no marcó dominio ni del primer '
+                + 'bloque (Modelador). Preguntarle qué hace exactamente en esos proyectos.');
+    if(entrada.exp.v === 1 && nivel >= 1)
+      avisos.push(`Se describe como «muy básico» y sin embargo domina hasta ${BLOQUES[nivel-1].corto}. `
+                + 'Se está infravalorando: conviene decírselo en la llamada.');
+  }
+  if(quiereIA){
+    if(nivel === 0)
+      avisos.push('Le interesa sobre todo la IA, pero todavía no tiene base BIM. La IA del Máster '
+                + 'automatiza sobre modelos BIM (Dynamo, scripts, datos del proyecto): sin esa base '
+                + 'no tiene sobre qué trabajar. La IA es el destino; la base BIM es el camino.');
+    else if(nivel < BLOQUES.length)
+      avisos.push(`Le interesa sobre todo la IA y ya tiene base (${BLOQUES[nivel-1].corto}). `
+                + 'Enseñarle dónde entra la IA en su ruta: el módulo BIM + IA · AUTOMATIZA.');
+  }
 
   return { bloques, nivel, nombreNivel, dispersos, ejes, est, arq,
-           perfil, perfilCorto, siguiente, global, codigo };
+           perfil, perfilCorto, siguiente, global, codigo,
+           entrada, sinBIM, quiereIA, avisos };
 }
 
 /* Las 20 respuestas caben en 20 caracteres: es lo que viaja en el enlace que
    el asesor abre en la llamada. Sin base de datos y sin backend — el enlace
    ES el dato, así que no puede caducar ni quedarse huérfano. */
 const empaquetar   = R => R.map(v => (v===null?0:v)).join('');
+
+/* El punto de partida va DETRÁS de las 20, nunca delante (ver ENTRADA). */
+const empaquetarEntrada = E => E.map(v => (v===null?'':v)).join('');
+
+/* Devuelve null si el enlace no lo trae: es un enlace anterior al 23-sep, o
+   uno tocado a mano. En los dos casos se lee como antes y no se inventa nada.
+   Solo se acepta si las dos respuestas existen y caben en sus opciones. */
+function desempaquetarEntrada(s){
+  const t = (s||'').slice(TODAS.length, TODAS.length + ENTRADA.length);
+  if(t.length < ENTRADA.length) return null;
+  const E = t.split('').map(c => /^[0-9]$/.test(c) ? +c : -1);
+  const valido = E.every((v,i) => ENTRADA[i].opciones.some(o => o.v === v));
+  return valido ? E : null;
+}
 const desempaquetar = s => (s||'').split('').slice(0, TODAS.length)
                              .map(c => Math.max(0, Math.min(3, +c || 0)));
