@@ -459,23 +459,25 @@ ese cruce no puede decir** es cómo está configurado el disparador: el listado
 de GHL da el nombre y el estado, no si el disparador es «comentario de
 Instagram con esta palabra». Un `draft` sí es concluyente — no dispara.
 
-> **CORREGIDO el 23-sep, con datos de GHL.** Lo de arriba se concluyó mirando
-> que existiera un workflow *publicado* con cada palabra. Era el límite que
-> quedó escrito —el listado da nombre y estado, no si el disparador funciona—
-> y resultó ser justo donde fallaba. Contando las etiquetas que ponen esos
-> workflows:
+> **CORREGIDO el 23-sep — y la primera corrección también estaba mal.**
+> Primero se dio por bueno que las seis palabras tenían bot porque sus
+> workflows de GHL estaban publicados. Después, contando etiquetas en GHL, se
+> dijo que CHATGPT y DYNAMO no tenían. Faltaba mirar **OpenReply**, donde se
+> montan ahora casi todos los recursos, con datos del día y no de dos días
+> antes. Cruzando cada campaña con su publicación:
 >
-> | Palabra | `origen-bot-…` (desde siempre) | Veredicto |
-> |---|---|---|
-> | ZAPATA | 167 | funciona |
-> | MEMORIA | 10 (4 esta semana) | funciona |
-> | NIVEL | 1 | casi sin uso |
-> | **CHATGPT** | **0** | **nunca ha etiquetado a nadie** |
-> | **DYNAMO** | **0** | **nunca ha etiquetado a nadie** |
+> - **El reel del miércoles no pedía CHATGPT, pedía GUIA.** Su campaña es
+>   «Guía Revit» en OpenReply (5 DM enviados). El recurso de ChatGPT sale por
+>   OpenReply con TUTORIAL (42 envíos) y GUIA. Que el workflow «CHATGPT» de GHL
+>   tenga cero es porque esa palabra no la pide nadie.
+> - **El reel del viernes pedía MEMORIA** y tiene su campaña (4 DM) además del
+>   workflow de GHL (10 etiquetas).
+> - **DYNAMO:** la campaña PACK DYNAMO se creó el 23-sep a las 16:27 UTC, ~19 h
+>   DESPUÉS de la historia del 22-sep. Las **13 respuestas** de esa historia
+>   llegaron sin nada que las contestara.
 >
-> Así que los **17 comentarios MEMORIA** del reel del viernes sí tenían bot.
-> Los **19 comentarios CHATGPT** del reel del miércoles, **no** —al menos no por
-> ese workflow. Qué recibieron esas personas solo se ve en el buzón.
+> La lección: una palabra se comprueba contra **la publicación** (qué pidió de
+> verdad) y contra **OpenReply y GHL a la vez**, con datos del día.
 
 **Lo que salió al mirar:** la campaña *MEMORIA DE CÁLCULO* está **pausada en
 OpenReply** mientras su workflow de GHL sigue publicado. El comentario se

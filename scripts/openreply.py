@@ -444,10 +444,14 @@ def cotejar_con_la_matriz(por_palabra, campanas, hubo_fallo, ghl=None):
                         "de la matriz viven en GHL, que este conector no ve.")
             if g["publicados"] and g.get("bot_total") == 0:
                 nombres = ", ".join(w["nombre"] for w in g["publicados"])
-                return (f"AVISO: en GoHighLevel está publicada ({nombres}) pero NUNCA "
-                        "ha etiquetado a nadie: 0 contactos con origen-bot en todo su "
-                        "historial. Publicado no es funcionando — hay que revisar el "
-                        "disparador. Y en OpenReply no está.")
+                # Dos causas posibles y desde aqui no se distinguen: el
+                # disparador no funciona, o nadie pide esa palabra (el 23-sep
+                # CHATGPT estaba asi: el recurso salia por OpenReply con
+                # TUTORIAL y GUIA). Lo que SI es seguro es la consecuencia.
+                return (f"AVISO: no está en OpenReply, y en GoHighLevel ({nombres}) "
+                        "nunca ha etiquetado a nadie. Si una pieza pide esta palabra, "
+                        "HOY NADIE LA CONTESTA. Puede que el recurso salga con otra "
+                        "palabra: comprobar qué pide la pieza antes de tocar GHL.")
             if g["publicados"]:
                 nombres = ", ".join(w["nombre"] for w in g["publicados"])
                 return (f"No está en OpenReply, pero SÍ en GoHighLevel y "

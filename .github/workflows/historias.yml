@@ -36,6 +36,16 @@ jobs:
           META_TOKEN: ${{ secrets.META_TOKEN }}
         run: python3 scripts/historias.py
 
+      # OpenReply antes que nada: el 23-sep se sacaron conclusiones sobre
+      # DYNAMO con datos de OpenReply de dos dias atras, y en esos dos dias se
+      # habian creado cinco campañas. Las campañas cambian cada dia.
+      - name: Campañas de OpenReply
+        continue-on-error: true
+        env:
+          OPENREPLY_DATABASE_URL: ${{ secrets.OPENREPLY_DATABASE_URL }}
+        run: |
+          python3 scripts/prueba_openreply.py
+          python3 scripts/openreply.py --dias 30
       - name: Embudo de los lead magnets (etiquetas de GHL)
         continue-on-error: true
         env:
@@ -45,7 +55,7 @@ jobs:
       - name: Commit si cambió
         run: |
           set -euo pipefail
-          RUTAS="matriz-viral/fuentes/historias/ matriz-viral/fuentes/ghl/embudo-leadmagnets.json"
+          RUTAS="matriz-viral/fuentes/historias/ matriz-viral/fuentes/ghl/embudo-leadmagnets.json matriz-viral/fuentes/openreply/"
           if git status --porcelain -- $RUTAS | grep -q .; then
             git config user.name  "matriz-bot"
             git config user.email "noreply@anthropic.com"

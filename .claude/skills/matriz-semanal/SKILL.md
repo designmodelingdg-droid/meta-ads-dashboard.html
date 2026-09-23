@@ -156,11 +156,18 @@ Cómo se leen en la revisión:
 contactos tienen `origen-bot-X` (el bot lo recogió), `lead-X` y `acceso-X`.
 Solo cuentas, ningún dato personal.
 
-**La regla que salió de ahí: publicado no es funcionando.** El 21-sep se dio
-por bueno que CHATGPT y DYNAMO tenían bot porque sus workflows estaban
-publicados. El embudo dijo después que nunca habían etiquetado a nadie. Antes
-de afirmar que un CTA de palabra «tiene quien lo conteste», mirar `bot_total`
-de esa palabra: si es 0, no lo tiene.
+**Cómo se comprueba que un CTA de palabra tiene quien lo conteste — tres
+pasos, en este orden, y el 23-sep se falló en los tres:**
+
+1. **Qué palabra pidió DE VERDAD la pieza.** El calendario decía CHATGPT para
+   el reel del 16-sep; la publicación pedía GUIA. Se mira la campaña de
+   OpenReply atada a ese post (`postUrl`), no el calendario.
+2. **OpenReply, con datos del día** (`fuentes/openreply/campanas.json`, se
+   refresca cada 4 h). Casi todos los recursos salen por ahí. Ojo con
+   `matchAnyPost`: si está apagado, la campaña solo escucha SU post.
+3. **GHL** (`embudo-leadmagnets.json`, `bot_total`). Publicado no es
+   funcionando, pero un cero en GHL tampoco es un fallo si la palabra vive en
+   OpenReply.
 
 **Y una respuesta a historia NO es un comentario.** Llega como DM. Un
 workflow «Comentario X» no la ve. Si la historia pide «Responde X», el
