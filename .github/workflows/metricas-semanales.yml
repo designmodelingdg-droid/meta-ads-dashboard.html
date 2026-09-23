@@ -31,6 +31,10 @@ on:
         description: "true = solo bajar imágenes de anuncios ganadores (scripts/ads_creativos.py)"
         required: false
         default: "false"
+      solo_historias:
+        description: "true = solo capturar las historias vivas (scripts/historias.py)"
+        required: false
+        default: "false"
       desde:
         description: "Ventana de creativos: inicio (YYYY-MM-DD)"
         required: false
@@ -94,8 +98,34 @@ jobs:
             echo "Sin creativos nuevos."
           fi
 
+  # Las historias desaparecen de la API a las 24 h. Este modo existe para
+  # capturarlas a mano cuando haga falta; la captura regular la hace
+  # historias.yml cada 4 h.
+  historias:
+    if: github.event.inputs.solo_historias == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Capturar las historias vivas
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN }}
+        run: python3 scripts/historias.py
+      - name: Commit si cambió
+        run: |
+          set -euo pipefail
+          if git status --porcelain -- matriz-viral/fuentes/historias/ | grep -q .; then
+            git config user.name  "matriz-bot"
+            git config user.email "noreply@anthropic.com"
+            git add matriz-viral/fuentes/historias/
+            git commit -m "Historias: lectura de las vivas (Graph API)"
+            git pull --rebase --autostash origin "$GITHUB_REF_NAME" && git push
+          else
+            echo "Sin historias nuevas."
+          fi
+
   metricas:
-    if: github.event.inputs.solo_creativos != 'true'
+    if: github.event.inputs.solo_creativos != 'true' && github.event.inputs.solo_historias != 'true'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
