@@ -1,11 +1,22 @@
 /* Prueba de punta a punta del Diagnóstico BIM del Máster.
  *
- * Contesta las 20 preguntas en el test, arma el enlace que se guarda en
- * `enlace_resultado` del CRM, lo abre como lo abriría el asesor y comprueba
- * que el panel dice lo mismo que calculó el test.
+ * Contesta el test, arma el enlace que se guarda en `enlace_resultado` del
+ * CRM, lo abre como lo abriría el asesor y comprueba que el panel dice lo
+ * mismo que calculó el test.
  *
  * Lo que de verdad vigila: que el test y el panel no se separen. Comparten
  * `preguntas.js` justamente para eso, y esta prueba lo verifica.
+ *
+ * Desde el 23-sep el test empieza con dos preguntas de PUNTO DE PARTIDA
+ * (¿cuánto BIM sabes? ¿qué te interesa?) y quien dice que no ha trabajado con
+ * BIM se salta el eje A. Por eso corre TRES recorridos:
+ *
+ *   A · con experiencia: los mismos 20 de siempre, más el punto de partida.
+ *       Tiene que salir el MISMO código que salía antes del cambio.
+ *   B · un enlace de 20 dígitos, de los que ya están enviados a citas. Tiene
+ *       que abrir exactamente igual que antes: es lo que no se puede romper.
+ *   C · sin BIM y con interés en la IA: 8 preguntas, «No se preguntó» en el
+ *       eje BIM, y los avisos para el asesor en el CRM pero NO en el panel.
  *
  *   node test-master-bim/prueba/e2e.js
  */
@@ -15,145 +26,167 @@ const GLOBAL = execSync('npm root -g').toString().trim();
 module.paths.push(GLOBAL);
 const { chromium } = require(require.resolve('playwright', {paths:[GLOBAL, __dirname]}));
 const path=require('path');
+const fs=require('fs');
 const BASE='file://'+path.join(__dirname,'..')+'/';
+
+/* Un enlace real de los de antes del 23-sep. Es la foto fija contra la que se
+   comprueba que el cambio no movió nada: su código era B2-EST-57. */
+const ENLACE_VIEJO = '33333322110000332110';
+const CODIGO_VIEJO = 'B2-EST-57';
+
+const fallos = [];
+const ok = (cond, texto) => { console.log(`  ${cond?'sí':'NO'} · ${texto}`); if(!cond) fallos.push(texto); };
+
+/* Hace el test como una persona: primero el punto de partida, luego lo que
+   toque. Devuelve lo que el test calculó y lo que de verdad va al CRM. */
+async function recorrer(b, entrada, respuestas){
+  const p=await b.newPage({viewport:{width:430,height:1000}});
+  const errs=[]; p.on('pageerror',e=>errs.push(e.message));
+  await p.goto(BASE+'app.html?cid=CT123&nombre=Andrea',{waitUntil:'load'});
+  const clics = [...entrada, ...respuestas];
+  for(const v of clics){ await p.locator('.op').nth(v).click(); await p.waitForTimeout(190); }
+  await p.waitForSelector('.cita');
+  const out = await p.evaluate(()=>{
+    const r = calcular(R, E);
+    return { r:{codigo:r.codigo, nombreNivel:r.nombreNivel, sinBIM:r.sinBIM, avisos:r.avisos},
+             datos: datosParaGHL(r), pasos: pasos().length };
+  });
+  out.visible = await p.locator('body').innerText();
+  out.errs = errs;
+  out.pagina = p;
+  return out;
+}
+
+async function abrirPanel(b, enlace){
+  const q=await b.newPage({viewport:{width:1280,height:1000}});
+  const errs=[]; q.on('pageerror',e=>errs.push(e.message));
+  await q.goto(enlace,{waitUntil:'load'});
+  await q.waitForSelector('.top h1');
+  const panel = {
+    titulo: (await q.locator('.top h1').innerText()).trim(),
+    texto:  await q.locator('body').innerText(),
+    nResp:  await q.locator('section', {hasText:'Lo que respondiste'}).locator('.r').count(),
+    noPreg: await q.locator('.vn').count(),
+    partida: await q.locator('section', {hasText:'Tu punto de partida'}).count(),
+    escalera: await q.locator('.esc').innerText(),
+    errs,
+  };
+  await q.close();
+  return panel;
+}
+
+/* Lo que nunca puede aparecer en la pantalla final del test: el resultado se
+   entrega en la llamada. Si se filtra aquí, la cita deja de tener motivo. */
+const FUGAS = ['Modelador BIM','Coordinador BIM','BIM Manager','Especialista BIM',
+               'cálculo y diseño estructural','Arquitectura y edificación',
+               'Sin experiencia BIM todavía','Nivel BIM inicial'];
+
 (async()=>{
   const b=await chromium.launch({executablePath:'/opt/pw-browsers/chromium'});
-  const p=await b.newPage({viewport:{width:430,height:1000}});
-  let fugas=0;
-  const errs=[]; p.on('pageerror',e=>errs.push('test: '+e.message));
-  await p.goto(BASE+'app.html?cid=CT123&nombre=Andrea',{waitUntil:'load'});
-  const resp=[3,3,3,3, 3,3,2,2, 1,1,0, 0,0,0, 3,3,2, 1,1,0];
-  for(let i=0;i<20;i++){ await p.locator('.op').nth(resp[i]).click(); await p.waitForTimeout(190); }
-  await p.waitForSelector('.cita');
 
-  const payload = await p.evaluate(()=>{
-    const r=calcular(R);
-    const e=new URL('resultado.html',location.href);
-    e.searchParams.set('r',empaquetar(R)); e.searchParams.set('n',CONTACTO.nombre);
-    return { enlace:e.toString(), codigo:r.codigo, nivel:r.nombreNivel };
-  });
-  console.log('enlace que se guarda en GHL:');
-  console.log('  ' + payload.enlace.replace(BASE,'…/test-master-bim/'));
-  console.log('  nivel real:', payload.nivel, '·', payload.codigo);
+  /* ═══ A · con experiencia ═══════════════════════════════════════════════ */
+  console.log('A · con experiencia (usa BIM en proyectos · ruta completa)');
+  const A = await recorrer(b, [2,3], [3,3,3,3, 3,3,2,2, 1,1,0, 0,0,0, 3,3,2, 1,1,0]);
+  ok(A.pasos === 22, `22 preguntas (2 de punto de partida + 20) — fueron ${A.pasos}`);
+  ok(A.r.codigo === CODIGO_VIEJO, `mismo código que antes del cambio: ${A.r.codigo}`);
+  const enlaceA = A.datos['enlace_del_resultado'];
+  const rA = new URL(enlaceA).searchParams.get('r');
+  ok(rA === ENLACE_VIEJO + '23', `el enlace = los 20 de siempre + 2 detrás: ${rA}`);
+  ok(!FUGAS.some(t => A.visible.includes(t)), 'la pantalla final no suelta el resultado');
 
-  /* Lo que mas importa: la pantalla final NO puede soltar el nivel ni el
-     perfil. El resultado se entrega en la llamada; si se filtra aqui, la cita
-     deja de tener motivo y no nos enteramos hasta ver caer la asistencia. */
-  const visible = await p.locator('body').innerText();
-  const filtra = ['Modelador BIM','Coordinador BIM','BIM Manager','Especialista BIM',
-                  'cálculo y diseño estructural','Arquitectura y edificación']
-                 .filter(t => visible.includes(t));
-  console.log('  pantalla final filtra el resultado:',
-              filtra.length ? 'SI — ' + filtra.join(', ') : 'no');
-  fugas = filtra.length;
-  const p2 = p;
   /* ── Montaje del formulario de GHL ──────────────────────────────────────
-     Estas cuatro comprobaciones existen porque los tres fallos que tuvo el
-     montaje del 9-sep no los veia nadie a simple vista:
+     Estas comprobaciones existen porque los tres fallos que tuvo el montaje
+     del 9-sep no los veia nadie a simple vista:
        · 6 de las 7 claves no coincidian con las del formulario (GHL las genera
          desde la etiqueta, CON TILDES) y esos campos llegaban vacios;
        · GHL borra el signo «+», asi que «Especialista BIM + IA» llegaba roto;
        · el formulario iba en un iframe de altura 0 y la pantalla decia «Listo,
          tu asesor ya lo tiene» sin que nadie lo hubiera enviado.
-     Las claves se comparan contra una copia de las `data-q` del formulario
-     real. Si alguien renombra una etiqueta en GHL, esto falla y se entera. */
+     Se comprueba el objeto que de verdad se envía (datosParaGHL), no una
+     copia: la copia fue lo que dejaba esto en verde aunque el envío cambiara. */
+  console.log('\nmontaje del formulario:');
   const CLAVES_DEL_FORM = ['nivel_bim','perfil_técnico','código_de_diagnóstico',
     'módulo_recomendado','enlace_del_resultado','detalle_del_diagnóstico',
     'puntajes_por_bloque'];
-
-  const fs2 = require('fs');
   const dir = path.join(__dirname,'..');
-  const appTxt = fs2.readFileSync(path.join(dir,'app.html'),'utf8');
-  const idxTxt = fs2.readFileSync(path.join(dir,'index.html'),'utf8');
-
-  console.log('\nmontaje del formulario:');
-  const gemelos = appTxt === idxTxt;
-  console.log('  app.html e index.html idénticos:', gemelos ? 'sí' : 'NO — se separaron');
+  const appTxt = fs.readFileSync(path.join(dir,'app.html'),'utf8');
+  const idxTxt = fs.readFileSync(path.join(dir,'index.html'),'utf8');
+  ok(appTxt === idxTxt, 'app.html e index.html idénticos (el enlace sirve index.html)');
   /* se le pregunta a la pagina, no al texto: la cadena PEGAR_ID tambien
-     aparece en el `if` que detecta el marcador, y buscarla en el fuente daba
-     un falso positivo */
-  const formUrl = await p2.evaluate(() => CFG.FORM_GHL);
-  const sinPegar = !formUrl.includes('PEGAR_ID');
-  console.log('  formulario conectado:', sinPegar ? 'sí — ' + formUrl.split('/').pop() : 'NO, sigue el marcador');
-
-  const envio = await p2.evaluate(()=>{
-    const r = calcular(R);
-    const e = new URL('resultado.html', location.href);
-    e.searchParams.set('r', empaquetar(R));
-    return {
-      [CFG.CAMPOS.nivel]:    paraGHL(r.nivel===0?'En camino a Modelador BIM':BLOQUES[r.nivel-1].nivel),
-      [CFG.CAMPOS.perfil]:   paraGHL(r.perfil),
-      [CFG.CAMPOS.modulo]:   paraGHL(r.siguiente ? r.siguiente.modulo : 'Ruta completa'),
-      [CFG.CAMPOS.codigo]:   r.codigo,
-      [CFG.CAMPOS.enlace]:   e.toString(),
-      [CFG.CAMPOS.detalle]:  paraGHL(detalleTexto(r)),
-      [CFG.CAMPOS.puntajes]: r.bloques.map(b=>b.id+':'+b.pts+'/'+b.max).join(' '),
-    };
-  });
-  const enviadas = Object.keys(envio);
-  const noExisten = enviadas.filter(k => !CLAVES_DEL_FORM.includes(k));
-  console.log('  las 7 claves existen en el formulario:',
-              noExisten.length ? 'NO — ' + noExisten.join(', ') : 'sí');
-  /* el enlace lleva «/» y «?» pero nunca «+»; los demas tampoco deben llevarlo */
-  const conMas = Object.entries(envio).filter(([k,v]) => String(v).includes('+'));
-  console.log('  ningún valor lleva «+» (GHL lo borra):',
-              conMas.length ? 'NO — ' + conMas.map(([k])=>k).join(', ') : 'sí');
-
-  const mienteEntrega = /ya lo tiene|Listo\. Tu asesor/.test(
-      appTxt.split('cont.innerHTML = `').pop());
-  console.log('  la pantalla NO da por enviado lo que no se envió:',
-              mienteEntrega ? 'NO — sigue diciéndolo' : 'sí');
-  const alturaCero = /iframe[^>]*height:0/.test(appTxt);
-  console.log('  el formulario se ve (no va en altura 0):', alturaCero ? 'NO' : 'sí');
-
+     aparece en el `if` que detecta el marcador */
+  const formUrl = await A.pagina.evaluate(() => CFG.FORM_GHL);
+  ok(!formUrl.includes('PEGAR_ID'), 'formulario conectado — ' + formUrl.split('/').pop());
+  ok(Object.keys(A.datos).length === 7 && Object.keys(A.datos).every(k => CLAVES_DEL_FORM.includes(k)),
+     'se mandan exactamente las 7 claves del formulario, ninguna nueva');
+  ok(!Object.values(A.datos).some(v => String(v).includes('+')), 'ningún valor lleva «+» (GHL lo borra)');
+  ok(!/ya lo tiene|Listo\. Tu asesor/.test(appTxt.split('cont.innerHTML = `').pop()),
+     'la pantalla NO da por enviado lo que no se envió');
+  ok(!/iframe[^>]*height:0/.test(appTxt), 'el formulario se ve (no va en altura 0)');
   /* El aviso del correo es lo unico que separa «se actualiza su ficha» de
-     «se crea un contacto duplicado». Casi todos llegan desde pauta y ya tienen
-     ficha: si escriben otro correo, el asesor acaba con la persona partida en
-     dos. Esta prueba corre SIN email en el enlace, asi que toca la rama que
-     pide escribir el mismo correo. */
-  const aviso = await p2.locator('.aviso-correo').innerText();
-  const avisaDelCorreo = /mismo correo/i.test(aviso);
-  console.log('  avisa de usar el mismo correo (evita duplicar):',
-              avisaDelCorreo ? 'sí' : 'NO');
+     «se crea un contacto duplicado». Esta prueba corre SIN email en el enlace. */
+  ok(/mismo correo/i.test(await A.pagina.locator('.aviso-correo').innerText()),
+     'avisa de usar el mismo correo (evita duplicar)');
+  const pasaTel = await A.pagina.evaluate(() =>
+    limpiaTel('0983241210') === '0983241210' && limpiaTel(' 593983241210') === '593983241210'
+    && limpiaTel('') === '' && limpiaTel('abc') === '');
+  ok(pasaTel && /datos\.phone\s*=\s*CONTACTO\.tel/.test(appTxt), 'el teléfono del enlace llega al formulario');
+  await A.pagina.close();
 
-  /* El telefono del formulario es obligatorio: si no viaja en el enlace, la
-     persona lo teclea y lo tecleado SUSTITUYE al del CRM. Se comprueba que el
-     enlace lo lleve hasta el formulario, con los dos nombres de parametro. */
-  const pasaTel = await p2.evaluate(() => {
-    /* se llama a la funcion DE LA PAGINA, no a una copia: si el saneador
-       cambia, la prueba lo nota */
-    const local   = limpiaTel('0983241210') === '0983241210';
-    const roto    = limpiaTel(' 593983241210') === '593983241210';
-    const basura  = limpiaTel('') === '' && limpiaTel('abc') === '';
-    return local && roto && basura;
-  });
-  const mandaTel = /datos\.phone\s*=\s*CONTACTO\.tel/.test(appTxt);
-  console.log('  el teléfono del enlace llega al formulario:',
-              pasaTel && mandaTel ? 'sí' : 'NO');
+  console.log('\npanel del asesor (A):');
+  const PA = await abrirPanel(b, enlaceA);
+  ok(PA.titulo.includes(A.r.nombreNivel), `título: ${PA.titulo}`);
+  ok(PA.nResp === 20, `20 respuestas en «Lo que respondiste» — son ${PA.nResp}`);
+  ok(PA.partida === 1, 'enseña el punto de partida');
 
-  const montajeMal = !gemelos || !sinPegar || noExisten.length || conMas.length
-                     || mienteEntrega || alturaCero || !avisaDelCorreo
-                     || !pasaTel || !mandaTel;
-  await p.close();
+  /* ═══ B · un enlace de los ya enviados ═══════════════════════════════════ */
+  console.log('\nB · enlace viejo de 20 dígitos (los que ya están en las citas)');
+  const PB = await abrirPanel(b, BASE+'resultado.html?r='+ENLACE_VIEJO+'&n=Andrea');
+  ok(PB.titulo === 'Andrea, tu nivel es Coordinador BIM', `título: ${PB.titulo}`);
+  ok(PB.texto.includes('Código '+CODIGO_VIEJO), 'mismo código que antes: '+CODIGO_VIEJO);
+  ok(PB.texto.includes('20 competencias evaluadas · 57% de dominio global'),
+     '«20 competencias evaluadas · 57% de dominio global», como antes');
+  ok(PB.nResp === 20 && PB.noPreg === 0, `20 respuestas y ninguna «No se preguntó»`);
+  ok(PB.partida === 0, 'no inventa un punto de partida que el enlace no trae');
 
-  // el asesor abre ese enlace
-  const q=await b.newPage({viewport:{width:1280,height:1000},deviceScaleFactor:2});
-  const e2=[]; q.on('pageerror',e=>e2.push('panel: '+e.message));
-  await q.goto(payload.enlace,{waitUntil:'load'});
-  await q.waitForSelector('.top h1');
-  const titulo=(await q.locator('.top h1').innerText()).trim();
-  const perfil=(await q.locator('.top .perfil').innerText()).trim();
-  const nResp=await q.locator('.r').count();
-  console.log('\npanel del asesor:');
-  console.log('  titulo   :', titulo);
-  console.log('  perfil   :', perfil);
-  console.log('  respuestas mostradas:', nResp, '(deben ser 20)');
-  console.log('  coincide con el test:', titulo.includes(payload.nivel) ? 'sí' : 'NO');
-  console.log(errs.concat(e2).length ? '\nJS: '+errs.concat(e2).join(' | ') : '\nsin errores de JS');
+  /* ═══ C · sin BIM, viene por la IA ═══════════════════════════════════════ */
+  console.log('\nC · sin BIM y con interés en la IA');
+  const C = await recorrer(b, [0,2], [3,3,2, 1,1,0]);
+  ok(C.pasos === 8, `solo 8 preguntas: 2 de punto de partida + 6 de base técnica — fueron ${C.pasos}`);
+  ok(C.r.codigo.startsWith('B0-'), `el código conserva su formato: ${C.r.codigo}`);
+  ok(C.datos['nivel_bim'] === 'Sin experiencia BIM todavía', `nivel_bim en el CRM: «${C.datos['nivel_bim']}»`);
+  const det = C.datos['detalle_del_diagnóstico'];
+  ok(det.includes('PUNTO DE PARTIDA: Sin experiencia BIM') && det.includes('LE INTERESA: Sobre todo la IA'),
+     'el detalle del CRM trae el punto de partida');
+  ok(det.includes('OJO:') && det.includes('la base BIM es el camino'),
+     'el detalle del CRM trae el aviso para el asesor');
+  ok(!Object.values(C.datos).some(v => String(v).includes('+')), 'ningún valor lleva «+»');
+  ok(!/Modelador BIM — \d/.test(det) && det.includes('Modelador BIM — no se preguntó'),
+     'el detalle del CRM tampoco puntúa lo que no se preguntó');
+  ok(!FUGAS.some(t => C.visible.includes(t)), 'la pantalla final no suelta el resultado');
+  await C.pagina.close();
+
+  console.log('\npanel del asesor (C):');
+  const PC = await abrirPanel(b, C.datos['enlace_del_resultado']);
+  ok(PC.titulo === 'Andrea, tu ruta empieza por la base', `título que ve la persona: ${PC.titulo}`);
+  ok(PC.noPreg === 14, `las 14 del eje BIM salen «No se preguntó» — son ${PC.noPreg}`);
+  ok(PC.texto.includes('6 competencias técnicas evaluadas'), 'dice cuántas se evaluaron de verdad');
+  /* Solo en la ESCALERA: la base técnica sí se preguntó y su «8 de 9» es
+     legítimo. La primera versión de esta comprobación miraba toda la página y
+     daba por fallo justo eso. */
+  ok(!/\d+ de \d+/.test(PC.escalera) && (PC.escalera.match(/no se evaluó/g)||[]).length === 4
+     && !PC.texto.includes('dominio global'),
+     'la escalera no puntúa lo que no se preguntó: 4 × «no se evaluó», sin «% de dominio»');
+  ok(PC.texto.includes('Te interesa sobre todo la IA'), 'le explica a la persona dónde entra la IA');
+  /* El panel se comparte EN PANTALLA con el prospecto. Los avisos son para el
+     asesor: no pueden aparecer aquí. */
+  ok(!PC.texto.includes('OJO') && !PC.texto.includes('la base BIM es el camino')
+     && !PC.texto.includes('Preguntarle'), 'los avisos del asesor NO salen en el panel compartido');
+
+  const errs = [...A.errs, ...PA.errs, ...PB.errs, ...C.errs, ...PC.errs];
+  console.log(errs.length ? '\nJS: '+errs.join(' | ') : '\nsin errores de JS');
+  if(errs.length) fallos.push('errores de JS');
   await b.close();
 
-  const mal = fugas || nResp!==20 || !titulo.includes(payload.nivel)
-              || errs.concat(e2).length || montajeMal;
-  if(mal){ console.log('\nPRUEBA FALLIDA'); process.exit(1); }
+  if(fallos.length){ console.log(`\nPRUEBA FALLIDA — ${fallos.length}:`); fallos.forEach(f=>console.log('  · '+f)); process.exit(1); }
   console.log('prueba OK');
 })();

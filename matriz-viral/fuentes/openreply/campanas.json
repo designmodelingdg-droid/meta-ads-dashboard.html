@@ -1,781 +1,1091 @@
 {
-  "generado": "2026-09-21",
-  "ventana_series_dias": 30,
-  "fuente": "OpenReply — base propia (Postgres), solo lectura",
-  "nota_privacidad": "Solo agregados. No se lee `commenterName`, ni `commentText`, ni `accessToken`. Ningún dato personal sale de la base.",
-  "corte_de_bots": "2026-09-15",
-  "nota_corte_de_bots": "Hasta el 14-sep inclusive los clics están INFLADOS por bots de vista previa. Desde el 2026-09-15 son personas: ese día entró en producción el filtro de rastreadores (verificado por vía directa, no por la forma de la serie). Todas las tasas de este fichero usan SOLO los clics limpios; los anteriores se conservan en `clics_con_bots` para no perderlos, pero no entran en ningún cálculo.",
-  "nota_octubre_va_a_parecer_peor": "AVISO PARA CUANDO SE COMPARE MES CONTRA MES. Desde el 15-sep, en las campañas con follow gate el DM ya no lleva el enlace del recurso: lleva el de una página de verificación que detecta al rastreador y no cuenta nada. Esos clics son doblemente limpios. Consecuencia: los números de octubre van a ser MUCHO más bajos que los de septiembre, y eso es CORRECTO. Comparar «1.825 en septiembre» contra «20 en octubre» y leer un desplome es el error: en septiembre se estaban contando bots.",
-  "nota_fallos": "Un `status = FAILED` con `dmDeliveryUnconfirmed` SÍ se entregó — Meta devolvió un error genérico después de aceptar el envío. Esos no se cuentan en `fallidos`, van aparte en `entregados_sin_confirmar`. Contarlos como fallo es contar como perdido un DM que llegó.",
-  "nota_alcance": "Los disparadores de palabra de la matriz NO viven aquí: se montan en GoHighLevel. Que una palabra no aparezca en OpenReply no prueba nada por sí solo, así que desde el 21-sep el cotejo mira también los workflows de GHL (bloque `workflows_ghl`, sacado de la sonda). Límite de ese cruce: el listado de GHL da el NOMBRE y el ESTADO del workflow, no la configuración de su disparador. Un `draft` sí es concluyente — no dispara.",
-  "nota_cuenta": "No se dice a qué cuenta de Instagram pertenece cada campaña: `Automation.instagramAccountId` no está concedida al rol de solo lectura. Con una sola cuenta no hace falta; si algún día hay varias, hay que conceder esa columna.",
-  "nota_dms_por_palabra": "Los DM SÍ se cuentan por palabra: `DmLog.matchedKeyword` guarda cuál disparó cada envío. Ver el bloque `por_palabra`.",
-  "nota_clics": "Los clics cuelgan de la CAMPAÑA y del ENLACE, no de la palabra: `LinkClick` no guarda cuál palabra disparó. En una campaña con varias palabras no se pueden repartir entre ellas, y aquí no se inventa. Además son APERTURAS, no personas: la misma persona cuenta varias veces y los bots de vista previa también, así que los clics pueden superar a los envíos. Cuando eso pasa, `ctr` queda en nulo y se usa `clics_por_dm`.",
-  "fallos": [],
-  "campanas": [
-    {
-      "id": "cmtyii4hp000004l06x2awlzw",
-      "nombre": "TUTORIAL REVIT CHATGPT",
-      "palabras": [
-        "TUTORIAL"
-      ],
-      "casa_palabra_parcial": false,
-      "cualquier_post": false,
-      "dispara_con_dm": false,
-      "exige_seguir": true,
-      "activa": true,
-      "post_id": "18058418423790058",
-      "post_url": "https://www.instagram.com/p/DdML72JCTFv/",
-      "creada": "2026-09-12T15:00:26.557",
-      "actualizada": "2026-09-15T18:08:16.634",
-      "cuenta": "design_modeling_dg",
-      "enviados": 39,
-      "fallidos": 0,
-      "entregados_sin_confirmar": 1,
-      "saltados": 0,
-      "pendientes": 0,
-      "primer_envio": "2026-09-12T15:01:42.345",
-      "ultimo_envio": "2026-09-20T13:49:23.489",
-      "clics": 1830,
-      "clics_limpios": 15,
-      "clics_con_bots": 1815,
-      "enlaces_rastreados": 2,
-      "mide_clics": true,
-      "clics_por_dm": 0.38,
-      "ctr": 0.3846,
-      "lectura_clics": "15 clics limpios sobre 39 DM enviados (38%). Son aperturas, no personas: la misma persona puede contar varias veces. (1815 clics más son anteriores al 2026-09-15 y NO se cuentan: eran bots de vista previa.)"
-    },
-    {
-      "id": "cmu5kuoa1000004l24jbpdqfo",
-      "nombre": "Guía Revit",
-      "palabras": [
-        "GUIA"
-      ],
-      "casa_palabra_parcial": false,
-      "cualquier_post": false,
-      "dispara_con_dm": true,
-      "exige_seguir": true,
-      "activa": true,
-      "post_id": "18019767053945223",
-      "post_url": "https://www.instagram.com/reel/DdXZ5fwJAig/",
-      "creada": "2026-09-17T13:40:34.537",
-      "actualizada": "2026-09-17T15:09:01.689",
-      "cuenta": "design_modeling_dg",
-      "enviados": 5,
-      "fallidos": 0,
-      "entregados_sin_confirmar": 3,
-      "saltados": 0,
-      "pendientes": 0,
-      "primer_envio": "2026-09-17T13:44:41.344",
-      "ultimo_envio": "2026-09-17T14:33:17.537",
-      "clics": 8,
-      "clics_limpios": 8,
-      "clics_con_bots": 0,
-      "enlaces_rastreados": 1,
-      "mide_clics": true,
-      "clics_por_dm": 1.6,
-      "ctr": null,
-      "lectura_clics": "8 clics limpios sobre 5 DM enviados — 1.6 clics por DM. Al haber MÁS clics que envíos esto NO es un porcentaje de conversión: son aperturas repetidas de la misma persona o el enlace circulando fuera del DM."
-    },
-    {
-      "id": "cmu7a81vd000004jkiwsba9dy",
-      "nombre": "MEMORIA DE CÁLCULO",
-      "palabras": [
-        "MEMORIA"
-      ],
-      "casa_palabra_parcial": false,
-      "cualquier_post": false,
-      "dispara_con_dm": true,
-      "exige_seguir": true,
-      "activa": false,
-      "post_id": "18124446184853329",
-      "post_url": "https://www.instagram.com/reel/DdbueT_lJ0h/",
-      "creada": "2026-09-18T18:18:35.257",
-      "actualizada": "2026-09-18T19:23:43.685",
-      "cuenta": "design_modeling_dg",
-      "enviados": 4,
-      "fallidos": 0,
-      "entregados_sin_confirmar": 0,
-      "saltados": 1,
-      "pendientes": 0,
-      "primer_envio": "2026-09-18T18:22:33.071",
-      "ultimo_envio": "2026-09-18T19:08:42.001",
-      "clics": 2,
-      "clics_limpios": 2,
-      "clics_con_bots": 0,
-      "enlaces_rastreados": 1,
-      "mide_clics": true,
-      "clics_por_dm": 0.5,
-      "ctr": 0.5,
-      "lectura_clics": "2 clics limpios sobre 4 DM enviados (50%). Son aperturas, no personas: la misma persona puede contar varias veces."
-    },
-    {
-      "id": "cmtxm6vfz000604kwmijsiudi",
-      "nombre": "GUIA CHATGPT",
-      "palabras": [
-        "GUIA"
-      ],
-      "casa_palabra_parcial": false,
-      "cualquier_post": false,
-      "dispara_con_dm": false,
-      "exige_seguir": false,
-      "activa": true,
-      "post_id": "18132563461711126",
-      "post_url": "https://www.instagram.com/reel/Dc36ISaE24d/",
-      "creada": "2026-09-11T23:55:53.903",
-      "actualizada": "2026-09-12T00:23:10.449",
-      "cuenta": "design_modeling_dg",
-      "enviados": 3,
-      "fallidos": 1,
-      "entregados_sin_confirmar": 0,
-      "saltados": 0,
-      "pendientes": 0,
-      "primer_envio": "2026-09-11T23:56:38.282",
-      "ultimo_envio": "2026-09-12T00:24:13.644",
-      "clics": 7,
-      "clics_limpios": 6,
-      "clics_con_bots": 1,
-      "enlaces_rastreados": 1,
-      "mide_clics": true,
-      "clics_por_dm": 2.0,
-      "ctr": null,
-      "lectura_clics": "6 clics limpios sobre 3 DM enviados — 2.0 clics por DM. Al haber MÁS clics que envíos esto NO es un porcentaje de conversión: son aperturas repetidas de la misma persona o el enlace circulando fuera del DM. (1 clics más son anteriores al 2026-09-15 y NO se cuentan: eran bots de vista previa.)"
-    },
-    {
-      "id": "cmu5ojpv7000004lbovu2ost5",
-      "nombre": "CHECKLIST NAVISWORKS",
-      "palabras": [
-        "BIM",
-        "IA"
-      ],
-      "casa_palabra_parcial": false,
-      "cualquier_post": false,
-      "dispara_con_dm": true,
-      "exige_seguir": true,
-      "activa": true,
-      "post_id": "18183196498413673",
-      "post_url": "https://www.instagram.com/p/DdRyKTvm9mI/",
-      "creada": "2026-09-17T15:24:01.843",
-      "actualizada": "2026-09-18T18:32:34.079",
-      "cuenta": "design_modeling_dg",
-      "enviados": 2,
-      "fallidos": 0,
-      "entregados_sin_confirmar": 1,
-      "saltados": 0,
-      "pendientes": 0,
-      "primer_envio": "2026-09-17T15:29:00.203",
-      "ultimo_envio": "2026-09-17T15:29:00.763",
-      "clics": 1,
-      "clics_limpios": 1,
-      "clics_con_bots": 0,
-      "enlaces_rastreados": 1,
-      "mide_clics": true,
-      "clics_por_dm": 0.5,
-      "ctr": 0.5,
-      "lectura_clics": "1 clics limpios sobre 2 DM enviados (50%). Son aperturas, no personas: la misma persona puede contar varias veces."
-    }
-  ],
-  "por_palabra": [
-    {
-      "palabra": "TUTORIAL",
-      "campana": "TUTORIAL REVIT CHATGPT",
-      "campana_activa": true,
-      "enviados": 39,
-      "fallidos": 0,
-      "entregados_sin_confirmar": 1,
-      "saltados": 0,
-      "primer_envio": "2026-09-12T15:01:42.345",
-      "ultimo_envio": "2026-09-20T13:49:23.489"
-    },
-    {
-      "palabra": "GUIA",
-      "campana": "Guía Revit",
-      "campana_activa": true,
-      "enviados": 5,
-      "fallidos": 0,
-      "entregados_sin_confirmar": 3,
-      "saltados": 0,
-      "primer_envio": "2026-09-17T13:44:41.344",
-      "ultimo_envio": "2026-09-17T14:33:17.537"
-    },
-    {
-      "palabra": "MEMORIA",
-      "campana": "MEMORIA DE CÁLCULO",
-      "campana_activa": false,
-      "enviados": 4,
-      "fallidos": 0,
-      "entregados_sin_confirmar": 0,
-      "saltados": 1,
-      "primer_envio": "2026-09-18T18:22:33.071",
-      "ultimo_envio": "2026-09-18T19:08:42.001"
-    },
-    {
-      "palabra": "GUIA",
-      "campana": "GUIA CHATGPT",
-      "campana_activa": true,
-      "enviados": 3,
-      "fallidos": 0,
-      "entregados_sin_confirmar": 0,
-      "saltados": 0,
-      "primer_envio": "2026-09-11T23:56:38.282",
-      "ultimo_envio": "2026-09-12T00:24:13.644"
-    },
-    {
-      "palabra": "BIM",
-      "campana": "CHECKLIST NAVISWORKS",
-      "campana_activa": true,
-      "enviados": 2,
-      "fallidos": 0,
-      "entregados_sin_confirmar": 1,
-      "saltados": 0,
-      "primer_envio": "2026-09-17T15:29:00.203",
-      "ultimo_envio": "2026-09-17T15:29:00.763"
-    }
-  ],
-  "motivos_de_fallo": [
-    {
-      "estado": "FAILED",
-      "pero_si_se_entrego": true,
-      "motivo": "MetaApiError 1: An unknown error has occurred. (/v25.0/17841404048578200/messages) [code=1 sub=- type=OAuthException trace=A1ZrUqY-Wb2kHu7asF1TuAe]",
-      "veces": 1,
-      "ultima_vez": "2026-09-17T13:45:31.018"
-    },
-    {
-      "estado": "FAILED",
-      "pero_si_se_entrego": false,
-      "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=A3ed7dK4_Y-8zwkdGrw6rvy]",
-      "veces": 1,
-      "ultima_vez": "2026-09-12T00:16:38.542"
-    },
-    {
-      "estado": "FAILED",
-      "pero_si_se_entrego": true,
-      "motivo": "MetaApiError 1: An unknown error has occurred. (/v25.0/17841404048578200/messages) [code=1 sub=- type=OAuthException trace=AK8IoGPQfOgv-EaK82LvKAs]",
-      "veces": 1,
-      "ultima_vez": "2026-09-12T22:07:41.536"
-    },
-    {
-      "estado": "FAILED",
-      "pero_si_se_entrego": true,
-      "motivo": "MetaApiError 1: An unknown error has occurred. (/v25.0/17841404048578200/messages) [code=1 sub=- type=OAuthException trace=AcFWhfypEeEPuN-HW5NVB-H]",
-      "veces": 1,
-      "ultima_vez": "2026-09-17T15:28:57.984"
-    },
-    {
-      "estado": "FAILED",
-      "pero_si_se_entrego": true,
-      "motivo": "MetaApiError 1: An unknown error has occurred. (/v25.0/17841404048578200/messages) [code=1 sub=- type=OAuthException trace=AZDnjfXD1G9U8-ueKVn7rwo]",
-      "veces": 1,
-      "ultima_vez": "2026-09-17T13:45:31.033"
-    },
-    {
-      "estado": "FAILED",
-      "pero_si_se_entrego": true,
-      "motivo": "MetaApiError 1: An unknown error has occurred. (/v25.0/17841404048578200/messages) [code=1 sub=- type=OAuthException trace=AmlIrWHBoNrHDhK7I2rX2gV]",
-      "veces": 1,
-      "ultima_vez": "2026-09-17T13:45:31.022"
-    },
-    {
-      "estado": "SKIPPED_DEDUP",
-      "pero_si_se_entrego": false,
-      "motivo": "This person already received this campaign's DM on an earlier comment",
-      "veces": 1,
-      "ultima_vez": "2026-09-18T18:27:24.854"
-    }
-  ],
-  "enlaces": [
-    {
-      "slug": "zyl5qacW0Q",
-      "etiqueta": "Primary campaign link",
-      "destino": "https://designmodelingacademy.app.clientclub.net/communities/groups/comunidad-design/home?invite=6a580cbfb7771b9d30db799e",
-      "campana": "TUTORIAL REVIT CHATGPT",
-      "clics": 1809,
-      "clics_limpios": 8,
-      "clics_con_bots": 1801,
-      "primer_clic": "2026-09-12T15:03:09.041",
-      "ultimo_clic": "2026-09-18T05:21:55.842"
-    },
-    {
-      "slug": "-DRgWS-jxg",
-      "etiqueta": "Descargar la guía",
-      "destino": "https://funnel.dgdesignmodeling.com/acceso-gratis-guia-revit-chatgpt-form",
-      "campana": "TUTORIAL REVIT CHATGPT",
-      "clics": 21,
-      "clics_limpios": 7,
-      "clics_con_bots": 14,
-      "primer_clic": "2026-09-12T15:03:20.564",
-      "ultimo_clic": "2026-09-19T03:51:02.367"
-    },
-    {
-      "slug": "7ZudR52CIA",
-      "etiqueta": "Primary campaign link",
-      "destino": "https://funnel.dgdesignmodeling.com/acceso-gratis-guia-revit-chatgpt-form",
-      "campana": "Guía Revit",
-      "clics": 8,
-      "clics_limpios": 8,
-      "clics_con_bots": 0,
-      "primer_clic": "2026-09-17T13:45:00.723",
-      "ultimo_clic": "2026-09-17T14:34:23.205"
-    },
-    {
-      "slug": "CJFIJ9P32Q",
-      "etiqueta": "Primary campaign link",
-      "destino": "https://funnel.dgdesignmodeling.com/acceso-gratis-guia-revit-chatgpt-form",
-      "campana": "GUIA CHATGPT",
-      "clics": 7,
-      "clics_limpios": 6,
-      "clics_con_bots": 1,
-      "primer_clic": "2026-09-12T00:25:12.035",
-      "ultimo_clic": "2026-09-17T13:45:33.571"
-    },
-    {
-      "slug": "P1jZRzaqQw",
-      "etiqueta": "Primary campaign link",
-      "destino": "https://funnel.dgdesignmodeling.com/acceso-gratis-memoria-calculo-form",
-      "campana": "MEMORIA DE CÁLCULO",
-      "clics": 2,
-      "clics_limpios": 2,
-      "clics_con_bots": 0,
-      "primer_clic": "2026-09-18T18:22:47.729",
-      "ultimo_clic": "2026-09-18T18:23:36.952"
-    },
-    {
-      "slug": "iJX0Y_omBA",
-      "etiqueta": "Primary campaign link",
-      "destino": "https://funnel.dgdesignmodeling.com/acceso-gratis-guia-revit-chatgpt-form",
-      "campana": "CHECKLIST NAVISWORKS",
-      "clics": 1,
-      "clics_limpios": 1,
-      "clics_con_bots": 0,
-      "primer_clic": "2026-09-17T15:29:11.889",
-      "ultimo_clic": "2026-09-17T15:29:11.889"
-    }
-  ],
-  "clics_por_dia": [
-    {
-      "fecha": "2026-09-12",
-      "clics": 73,
-      "limpio": false
-    },
-    {
-      "fecha": "2026-09-13",
-      "clics": 874,
-      "limpio": false
-    },
-    {
-      "fecha": "2026-09-14",
-      "clics": 869,
-      "limpio": false
-    },
-    {
-      "fecha": "2026-09-15",
-      "clics": 10,
-      "limpio": true
-    },
-    {
-      "fecha": "2026-09-16",
-      "clics": 1,
-      "limpio": true
-    },
-    {
-      "fecha": "2026-09-17",
-      "clics": 15,
-      "limpio": true
-    },
-    {
-      "fecha": "2026-09-18",
-      "clics": 5,
-      "limpio": true
-    },
-    {
-      "fecha": "2026-09-19",
-      "clics": 1,
-      "limpio": true
-    }
-  ],
-  "envios_por_dia": [
-    {
-      "fecha": "2026-09-11",
-      "enviados": 1
-    },
-    {
-      "fecha": "2026-09-12",
-      "enviados": 9
-    },
-    {
-      "fecha": "2026-09-13",
-      "enviados": 8
-    },
-    {
-      "fecha": "2026-09-14",
-      "enviados": 8
-    },
-    {
-      "fecha": "2026-09-15",
-      "enviados": 4
-    },
-    {
-      "fecha": "2026-09-16",
-      "enviados": 3
-    },
-    {
-      "fecha": "2026-09-17",
-      "enviados": 9
-    },
-    {
-      "fecha": "2026-09-18",
-      "enviados": 7
-    },
-    {
-      "fecha": "2026-09-19",
-      "enviados": 3
-    },
-    {
-      "fecha": "2026-09-20",
-      "enviados": 1
-    }
-  ],
-  "seguidores": [
-    {
-      "cuenta": "design_modeling_dg",
-      "fecha": "2026-08-22",
-      "seguidores": 80001
-    },
-    {
-      "cuenta": "design_modeling_dg",
-      "fecha": "2026-08-23",
-      "seguidores": 80020
-    },
-    {
-      "cuenta": "design_modeling_dg",
-      "fecha": "2026-08-24",
-      "seguidores": 80041
-    },
-    {
-      "cuenta": "design_modeling_dg",
-      "fecha": "2026-08-25",
-      "seguidores": 80063
-    },
-    {
-      "cuenta": "design_modeling_dg",
-      "fecha": "2026-08-26",
-      "seguidores": 80093
-    },
-    {
-      "cuenta": "design_modeling_dg",
-      "fecha": "2026-08-27",
-      "seguidores": 80126
-    },
-    {
-      "cuenta": "design_modeling_dg",
-      "fecha": "2026-08-28",
-      "seguidores": 80170
-    },
-    {
-      "cuenta": "design_modeling_dg",
-      "fecha": "2026-08-29",
-      "seguidores": 80257
-    },
-    {
-      "cuenta": "design_modeling_dg",
-      "fecha": "2026-08-30",
-      "seguidores": 80313
-    },
-    {
-      "cuenta": "design_modeling_dg",
-      "fecha": "2026-08-31",
-      "seguidores": 80347
-    },
-    {
-      "cuenta": "design_modeling_dg",
-      "fecha": "2026-09-01",
-      "seguidores": 80393
-    },
-    {
-      "cuenta": "design_modeling_dg",
-      "fecha": "2026-09-02",
-      "seguidores": 80422
-    },
-    {
-      "cuenta": "design_modeling_dg",
-      "fecha": "2026-09-03",
-      "seguidores": 80462
-    },
-    {
-      "cuenta": "design_modeling_dg",
-      "fecha": "2026-09-04",
-      "seguidores": 80498
-    },
-    {
-      "cuenta": "design_modeling_dg",
-      "fecha": "2026-09-05",
-      "seguidores": 80539
-    },
-    {
-      "cuenta": "design_modeling_dg",
-      "fecha": "2026-09-06",
-      "seguidores": 80573
-    },
-    {
-      "cuenta": "design_modeling_dg",
-      "fecha": "2026-09-07",
-      "seguidores": 80608
-    },
-    {
-      "cuenta": "design_modeling_dg",
-      "fecha": "2026-09-08",
-      "seguidores": 80639
-    },
-    {
-      "cuenta": "design_modeling_dg",
-      "fecha": "2026-09-09",
-      "seguidores": 80639
-    },
-    {
-      "cuenta": "design_modeling_dg",
-      "fecha": "2026-09-10",
-      "seguidores": 80639
-    },
-    {
-      "cuenta": "design_modeling_dg",
-      "fecha": "2026-09-11",
-      "seguidores": 80639
-    },
-    {
-      "cuenta": "design_modeling_dg",
-      "fecha": "2026-09-12",
-      "seguidores": 80663
-    },
-    {
-      "cuenta": "design_modeling_dg",
-      "fecha": "2026-09-13",
-      "seguidores": 80725
-    },
-    {
-      "cuenta": "design_modeling_dg",
-      "fecha": "2026-09-14",
-      "seguidores": 80761
-    },
-    {
-      "cuenta": "design_modeling_dg",
-      "fecha": "2026-09-15",
-      "seguidores": 80787
-    },
-    {
-      "cuenta": "design_modeling_dg",
-      "fecha": "2026-09-16",
-      "seguidores": 80811
-    },
-    {
-      "cuenta": "design_modeling_dg",
-      "fecha": "2026-09-17",
-      "seguidores": 80824
-    },
-    {
-      "cuenta": "design_modeling_dg",
-      "fecha": "2026-09-18",
-      "seguidores": 80838
-    },
-    {
-      "cuenta": "design_modeling_dg",
-      "fecha": "2026-09-19",
-      "seguidores": 80841
-    },
-    {
-      "cuenta": "design_modeling_dg",
-      "fecha": "2026-09-20",
-      "seguidores": 80861
-    },
-    {
-      "cuenta": "design_modeling_dg",
-      "fecha": "2026-09-21",
-      "seguidores": 80865
-    }
-  ],
-  "cotejo_con_la_matriz": [
-    {
-      "palabra": "ZAPATA",
-      "la_declara_la_matriz": true,
-      "montada_en_openreply": false,
-      "campana_activa": false,
-      "campanas": [],
-      "dms_enviados": 0,
-      "lectura": "No está en OpenReply, pero SÍ en GoHighLevel y publicada: ✅ Comentario ZAPATA - Calculadora de Zapatas, ✅ Seguimiento Zapatas → Especialización en ACERO. Ahí es donde la monta la matriz, así que el comentario tiene a quién contestarle. (El listado da nombre y estado, no la configuración del disparador.)"
-    },
-    {
-      "palabra": "ACERO",
-      "la_declara_la_matriz": true,
-      "montada_en_openreply": false,
-      "campana_activa": false,
-      "campanas": [],
-      "dms_enviados": 0,
-      "lectura": "No está en OpenReply, pero SÍ en GoHighLevel y publicada: ✅ Seguimientos 1,2,3 y 4 Especialización Acero, ✅ Comentario ACERO - Verificación de Acero, ✅ (SMS) FACEBOOK FORM PRE FILTRO ACERO, ✅ Seguimiento Zapatas → Especialización en ACERO. Ahí es donde la monta la matriz, así que el comentario tiene a quién contestarle. (El listado da nombre y estado, no la configuración del disparador.)"
-    },
-    {
-      "palabra": "NIVEL",
-      "la_declara_la_matriz": true,
-      "montada_en_openreply": false,
-      "campana_activa": false,
-      "campanas": [],
-      "dms_enviados": 0,
-      "lectura": "No está en OpenReply, pero SÍ en GoHighLevel y publicada: ✅ Comentario NIVEL - Test de Nivel BIM, ✅ Seguimiento Test de Nivel → Máster BIM+IA. Ahí es donde la monta la matriz, así que el comentario tiene a quién contestarle. (El listado da nombre y estado, no la configuración del disparador.)"
-    },
-    {
-      "palabra": "CHATGPT",
-      "la_declara_la_matriz": true,
-      "montada_en_openreply": false,
-      "campana_activa": false,
-      "campanas": [],
-      "dms_enviados": 0,
-      "lectura": "No está en OpenReply, pero SÍ en GoHighLevel y publicada: ✅ Comentario CHATGPT - Guia Revit + ChatGPT. Ahí es donde la monta la matriz, así que el comentario tiene a quién contestarle. (El listado da nombre y estado, no la configuración del disparador.)"
-    },
-    {
-      "palabra": "MEMORIA",
-      "la_declara_la_matriz": true,
-      "montada_en_openreply": true,
-      "campana_activa": false,
-      "campanas": [
-        "MEMORIA DE CÁLCULO"
-      ],
-      "dms_enviados": 4,
-      "lectura": "La campaña de OpenReply está PAUSADA, pero en GoHighLevel hay workflow publicado: ✅ Comentario MEMORIA - Memoria de Calculo. El comentario tiene a quién contestarle por GHL; lo que no va a haber es DM ni medición por OpenReply."
-    },
-    {
-      "palabra": "DYNAMO",
-      "la_declara_la_matriz": true,
-      "montada_en_openreply": false,
-      "campana_activa": false,
-      "campanas": [],
-      "dms_enviados": 0,
-      "lectura": "No está en OpenReply, pero SÍ en GoHighLevel y publicada: ✅ Comentario DYNAMO - Pack Script Dynamo. Ahí es donde la monta la matriz, así que el comentario tiene a quién contestarle. (El listado da nombre y estado, no la configuración del disparador.)"
-    }
-  ],
-  "otras_palabras_montadas": [
-    {
-      "palabra": "BIM",
-      "la_declara_la_matriz": false,
-      "montada_en_openreply": true,
-      "campana_activa": true,
-      "campanas": [
-        "CHECKLIST NAVISWORKS"
-      ],
-      "dms_enviados": 2,
-      "lectura": "Viva: 2 DM enviados."
-    },
-    {
-      "palabra": "GUIA",
-      "la_declara_la_matriz": false,
-      "montada_en_openreply": true,
-      "campana_activa": true,
-      "campanas": [
-        "Guía Revit",
-        "GUIA CHATGPT"
-      ],
-      "dms_enviados": 8,
-      "lectura": "Viva: 8 DM enviados."
-    },
-    {
-      "palabra": "IA",
-      "la_declara_la_matriz": false,
-      "montada_en_openreply": true,
-      "campana_activa": true,
-      "campanas": [
-        "CHECKLIST NAVISWORKS"
-      ],
-      "dms_enviados": 0,
-      "lectura": "Montada y activa, pero todavía no ha disparado ni una vez."
-    },
-    {
-      "palabra": "TUTORIAL",
-      "la_declara_la_matriz": false,
-      "montada_en_openreply": true,
-      "campana_activa": true,
-      "campanas": [
-        "TUTORIAL REVIT CHATGPT"
-      ],
-      "dms_enviados": 39,
-      "lectura": "Viva: 39 DM enviados."
-    }
-  ],
-  "cotejo_fiable": true,
-  "workflows_ghl": {
-    "generado": "2026-09-21",
-    "total": 133,
-    "por_palabra": {
-      "ZAPATA": {
-        "publicados": [
-          {
-            "nombre": "✅ Comentario ZAPATA - Calculadora de Zapatas",
-            "estado": "published"
-          },
-          {
-            "nombre": "✅ Seguimiento Zapatas → Especialización en ACERO",
-            "estado": "published"
-          }
-        ],
-        "en_borrador": []
-      },
-      "ACERO": {
-        "publicados": [
-          {
-            "nombre": "✅ Seguimientos 1,2,3 y 4 Especialización Acero",
-            "estado": "published"
-          },
-          {
-            "nombre": "✅ Comentario ACERO - Verificación de Acero",
-            "estado": "published"
-          },
-          {
-            "nombre": "✅ (SMS) FACEBOOK FORM PRE FILTRO ACERO",
-            "estado": "published"
-          },
-          {
-            "nombre": "✅ Seguimiento Zapatas → Especialización en ACERO",
-            "estado": "published"
-          }
-        ],
-        "en_borrador": []
-      },
-      "NIVEL": {
-        "publicados": [
-          {
-            "nombre": "✅ Comentario NIVEL - Test de Nivel BIM",
-            "estado": "published"
-          },
-          {
-            "nombre": "✅ Seguimiento Test de Nivel → Máster BIM+IA",
-            "estado": "published"
-          }
-        ],
-        "en_borrador": []
-      },
-      "CHATGPT": {
-        "publicados": [
-          {
-            "nombre": "✅ Comentario CHATGPT - Guia Revit + ChatGPT",
-            "estado": "published"
-          }
-        ],
-        "en_borrador": []
-      },
-      "MEMORIA": {
-        "publicados": [
-          {
-            "nombre": "✅ Comentario MEMORIA - Memoria de Calculo",
-            "estado": "published"
-          }
-        ],
-        "en_borrador": []
-      },
-      "DYNAMO": {
-        "publicados": [
-          {
-            "nombre": "✅ Comentario DYNAMO - Pack Script Dynamo",
-            "estado": "published"
-          }
-        ],
-        "en_borrador": []
-      }
-    }
+ "generado": "2026-09-23",
+ "ventana_series_dias": 30,
+ "fuente": "OpenReply — base propia (Postgres), solo lectura",
+ "nota_privacidad": "Solo agregados. No se lee `commenterName`, ni `commentText`, ni `accessToken`. Ningún dato personal sale de la base.",
+ "corte_de_bots": "2026-09-15",
+ "nota_corte_de_bots": "Hasta el 14-sep inclusive los clics están INFLADOS por bots de vista previa. Desde el 2026-09-15 son personas: ese día entró en producción el filtro de rastreadores (verificado por vía directa, no por la forma de la serie). Todas las tasas de este fichero usan SOLO los clics limpios; los anteriores se conservan en `clics_con_bots` para no perderlos, pero no entran en ningún cálculo.",
+ "nota_octubre_va_a_parecer_peor": "AVISO PARA CUANDO SE COMPARE MES CONTRA MES. Desde el 15-sep, en las campañas con follow gate el DM ya no lleva el enlace del recurso: lleva el de una página de verificación que detecta al rastreador y no cuenta nada. Esos clics son doblemente limpios. Consecuencia: los números de octubre van a ser MUCHO más bajos que los de septiembre, y eso es CORRECTO. Comparar «1.825 en septiembre» contra «20 en octubre» y leer un desplome es el error: en septiembre se estaban contando bots.",
+ "nota_fallos": "Un `status = FAILED` con `dmDeliveryUnconfirmed` SÍ se entregó — Meta devolvió un error genérico después de aceptar el envío. Esos no se cuentan en `fallidos`, van aparte en `entregados_sin_confirmar`. Contarlos como fallo es contar como perdido un DM que llegó.",
+ "nota_alcance": "Los disparadores de palabra de la matriz NO viven aquí: se montan en GoHighLevel. Que una palabra no aparezca en OpenReply no prueba nada por sí solo, así que desde el 21-sep el cotejo mira también los workflows de GHL (bloque `workflows_ghl`, sacado de la sonda). Límite de ese cruce: el listado de GHL da el NOMBRE y el ESTADO del workflow, no la configuración de su disparador. Un `draft` sí es concluyente — no dispara.",
+ "nota_cuenta": "No se dice a qué cuenta de Instagram pertenece cada campaña: `Automation.instagramAccountId` no está concedida al rol de solo lectura. Con una sola cuenta no hace falta; si algún día hay varias, hay que conceder esa columna.",
+ "nota_dms_por_palabra": "Los DM SÍ se cuentan por palabra: `DmLog.matchedKeyword` guarda cuál disparó cada envío. Ver el bloque `por_palabra`.",
+ "nota_clics": "Los clics cuelgan de la CAMPAÑA y del ENLACE, no de la palabra: `LinkClick` no guarda cuál palabra disparó. En una campaña con varias palabras no se pueden repartir entre ellas, y aquí no se inventa. Además son APERTURAS, no personas: la misma persona cuenta varias veces y los bots de vista previa también, así que los clics pueden superar a los envíos. Cuando eso pasa, `ctr` queda en nulo y se usa `clics_por_dm`.",
+ "fallos": [],
+ "campanas": [
+  {
+   "id": "cmtyii4hp000004l06x2awlzw",
+   "nombre": "TUTORIAL REVIT CHATGPT",
+   "palabras": [
+    "TUTORIAL"
+   ],
+   "casa_palabra_parcial": false,
+   "cualquier_post": false,
+   "dispara_con_dm": false,
+   "exige_seguir": true,
+   "activa": true,
+   "post_id": "18058418423790058",
+   "post_url": "https://www.instagram.com/p/DdML72JCTFv/",
+   "creada": "2026-09-12T15:00:26.557",
+   "actualizada": "2026-09-22T03:01:46.164",
+   "cuenta": "design_modeling_dg",
+   "enviados": 42,
+   "fallidos": 0,
+   "entregados_sin_confirmar": 1,
+   "saltados": 0,
+   "pendientes": 0,
+   "primer_envio": "2026-09-12T15:01:42.345",
+   "ultimo_envio": "2026-09-23T16:00:58.922",
+   "clics": 1810,
+   "clics_limpios": 9,
+   "clics_con_bots": 1801,
+   "enlaces_rastreados": 1,
+   "mide_clics": true,
+   "clics_por_dm": 0.21,
+   "ctr": 0.2143,
+   "lectura_clics": "9 clics limpios sobre 42 DM enviados (21%). Son aperturas, no personas: la misma persona puede contar varias veces. (1801 clics más son anteriores al 2026-09-15 y NO se cuentan: eran bots de vista previa.)"
+  },
+  {
+   "id": "cmuc38lqr000004lhs407u63j",
+   "nombre": "TUTORIAL PLANO BIM PARTE 2",
+   "palabras": [
+    "PARTE",
+    "PARTE2"
+   ],
+   "casa_palabra_parcial": false,
+   "cualquier_post": false,
+   "dispara_con_dm": true,
+   "exige_seguir": true,
+   "activa": true,
+   "post_id": "17910701415530190",
+   "post_url": "https://www.instagram.com/reel/DdkrVGsOcLz/",
+   "creada": "2026-09-22T03:01:54.579",
+   "actualizada": "2026-09-22T03:01:54.579",
+   "cuenta": "design_modeling_dg",
+   "enviados": 7,
+   "fallidos": 0,
+   "entregados_sin_confirmar": 0,
+   "saltados": 0,
+   "pendientes": 0,
+   "primer_envio": "2026-09-22T03:09:17.287",
+   "ultimo_envio": "2026-09-23T08:03:44.954",
+   "clics": 3,
+   "clics_limpios": 3,
+   "clics_con_bots": 0,
+   "enlaces_rastreados": 1,
+   "mide_clics": true,
+   "clics_por_dm": 0.43,
+   "ctr": 0.4286,
+   "lectura_clics": "3 clics limpios sobre 7 DM enviados (43%). Son aperturas, no personas: la misma persona puede contar varias veces."
+  },
+  {
+   "id": "cmu5kuoa1000004l24jbpdqfo",
+   "nombre": "Guía Revit",
+   "palabras": [
+    "GUIA"
+   ],
+   "casa_palabra_parcial": false,
+   "cualquier_post": false,
+   "dispara_con_dm": true,
+   "exige_seguir": true,
+   "activa": true,
+   "post_id": "18019767053945223",
+   "post_url": "https://www.instagram.com/reel/DdXZ5fwJAig/",
+   "creada": "2026-09-17T13:40:34.537",
+   "actualizada": "2026-09-17T15:09:01.689",
+   "cuenta": "design_modeling_dg",
+   "enviados": 5,
+   "fallidos": 0,
+   "entregados_sin_confirmar": 3,
+   "saltados": 0,
+   "pendientes": 0,
+   "primer_envio": "2026-09-17T13:44:41.344",
+   "ultimo_envio": "2026-09-17T14:33:17.537",
+   "clics": 8,
+   "clics_limpios": 8,
+   "clics_con_bots": 0,
+   "enlaces_rastreados": 1,
+   "mide_clics": true,
+   "clics_por_dm": 1.6,
+   "ctr": null,
+   "lectura_clics": "8 clics limpios sobre 5 DM enviados — 1.6 clics por DM. Al haber MÁS clics que envíos esto NO es un porcentaje de conversión: son aperturas repetidas de la misma persona o el enlace circulando fuera del DM."
+  },
+  {
+   "id": "cmu7a81vd000004jkiwsba9dy",
+   "nombre": "MEMORIA DE CÁLCULO",
+   "palabras": [
+    "MEMORIA"
+   ],
+   "casa_palabra_parcial": false,
+   "cualquier_post": false,
+   "dispara_con_dm": true,
+   "exige_seguir": true,
+   "activa": false,
+   "post_id": "18124446184853329",
+   "post_url": "https://www.instagram.com/reel/DdbueT_lJ0h/",
+   "creada": "2026-09-18T18:18:35.257",
+   "actualizada": "2026-09-22T03:08:21.222",
+   "cuenta": "design_modeling_dg",
+   "enviados": 4,
+   "fallidos": 0,
+   "entregados_sin_confirmar": 0,
+   "saltados": 1,
+   "pendientes": 0,
+   "primer_envio": "2026-09-18T18:22:33.071",
+   "ultimo_envio": "2026-09-18T19:08:42.001",
+   "clics": 2,
+   "clics_limpios": 2,
+   "clics_con_bots": 0,
+   "enlaces_rastreados": 1,
+   "mide_clics": true,
+   "clics_por_dm": 0.5,
+   "ctr": 0.5,
+   "lectura_clics": "2 clics limpios sobre 4 DM enviados (50%). Son aperturas, no personas: la misma persona puede contar varias veces."
+  },
+  {
+   "id": "cmtxm6vfz000604kwmijsiudi",
+   "nombre": "GUIA CHATGPT",
+   "palabras": [
+    "GUIA"
+   ],
+   "casa_palabra_parcial": false,
+   "cualquier_post": false,
+   "dispara_con_dm": false,
+   "exige_seguir": false,
+   "activa": true,
+   "post_id": "18132563461711126",
+   "post_url": "https://www.instagram.com/reel/Dc36ISaE24d/",
+   "creada": "2026-09-11T23:55:53.903",
+   "actualizada": "2026-09-12T00:23:10.449",
+   "cuenta": "design_modeling_dg",
+   "enviados": 3,
+   "fallidos": 1,
+   "entregados_sin_confirmar": 0,
+   "saltados": 0,
+   "pendientes": 0,
+   "primer_envio": "2026-09-11T23:56:38.282",
+   "ultimo_envio": "2026-09-12T00:24:13.644",
+   "clics": 7,
+   "clics_limpios": 6,
+   "clics_con_bots": 1,
+   "enlaces_rastreados": 1,
+   "mide_clics": true,
+   "clics_por_dm": 2.0,
+   "ctr": null,
+   "lectura_clics": "6 clics limpios sobre 3 DM enviados — 2.0 clics por DM. Al haber MÁS clics que envíos esto NO es un porcentaje de conversión: son aperturas repetidas de la misma persona o el enlace circulando fuera del DM. (1 clics más son anteriores al 2026-09-15 y NO se cuentan: eran bots de vista previa.)"
+  },
+  {
+   "id": "cmud2sii4000004l601kw0av0",
+   "nombre": "5 ERRORES REVIT",
+   "palabras": [
+    "BIM",
+    "IA"
+   ],
+   "casa_palabra_parcial": false,
+   "cualquier_post": false,
+   "dispara_con_dm": true,
+   "exige_seguir": true,
+   "activa": true,
+   "post_id": "18192494158398442",
+   "post_url": "https://www.instagram.com/p/DdjbuaijVrN/",
+   "creada": "2026-09-22T19:37:10.06",
+   "actualizada": "2026-09-22T19:37:10.06",
+   "cuenta": "design_modeling_dg",
+   "enviados": 2,
+   "fallidos": 0,
+   "entregados_sin_confirmar": 0,
+   "saltados": 0,
+   "pendientes": 0,
+   "primer_envio": "2026-09-22T19:38:56.264",
+   "ultimo_envio": "2026-09-22T19:40:31.401",
+   "clics": 1,
+   "clics_limpios": 1,
+   "clics_con_bots": 0,
+   "enlaces_rastreados": 1,
+   "mide_clics": true,
+   "clics_por_dm": 0.5,
+   "ctr": 0.5,
+   "lectura_clics": "1 clics limpios sobre 2 DM enviados (50%). Son aperturas, no personas: la misma persona puede contar varias veces."
+  },
+  {
+   "id": "cmu5ojpv7000004lbovu2ost5",
+   "nombre": "CHECKLIST NAVISWORKS",
+   "palabras": [
+    "BIM",
+    "IA"
+   ],
+   "casa_palabra_parcial": false,
+   "cualquier_post": false,
+   "dispara_con_dm": true,
+   "exige_seguir": true,
+   "activa": true,
+   "post_id": "18183196498413673",
+   "post_url": "https://www.instagram.com/p/DdRyKTvm9mI/",
+   "creada": "2026-09-17T15:24:01.843",
+   "actualizada": "2026-09-22T03:33:57.816",
+   "cuenta": "design_modeling_dg",
+   "enviados": 2,
+   "fallidos": 0,
+   "entregados_sin_confirmar": 1,
+   "saltados": 0,
+   "pendientes": 0,
+   "primer_envio": "2026-09-17T15:29:00.203",
+   "ultimo_envio": "2026-09-17T15:29:00.763",
+   "clics": 1,
+   "clics_limpios": 1,
+   "clics_con_bots": 0,
+   "enlaces_rastreados": 1,
+   "mide_clics": true,
+   "clics_por_dm": 0.5,
+   "ctr": 0.5,
+   "lectura_clics": "1 clics limpios sobre 2 DM enviados (50%). Son aperturas, no personas: la misma persona puede contar varias veces."
+  },
+  {
+   "id": "cmueb8c2u000004jyheyllvli",
+   "nombre": "4 PUERTAS RUTA BIM",
+   "palabras": [
+    "RUTA"
+   ],
+   "casa_palabra_parcial": false,
+   "cualquier_post": false,
+   "dispara_con_dm": true,
+   "exige_seguir": true,
+   "activa": true,
+   "post_id": "18114651212070666",
+   "post_url": "https://www.instagram.com/p/DdolTx9DPqP/",
+   "creada": "2026-09-23T16:21:11.334",
+   "actualizada": "2026-09-23T16:21:11.334",
+   "cuenta": "design_modeling_dg",
+   "enviados": 1,
+   "fallidos": 0,
+   "entregados_sin_confirmar": 0,
+   "saltados": 0,
+   "pendientes": 0,
+   "primer_envio": "2026-09-23T16:23:56.895",
+   "ultimo_envio": "2026-09-23T16:23:56.895",
+   "clics": 1,
+   "clics_limpios": 1,
+   "clics_con_bots": 0,
+   "enlaces_rastreados": 1,
+   "mide_clics": true,
+   "clics_por_dm": 1.0,
+   "ctr": 1.0,
+   "lectura_clics": "1 clics limpios sobre 1 DM enviados (100%). Son aperturas, no personas: la misma persona puede contar varias veces."
+  },
+  {
+   "id": "cmuebgoip000804jy0run8y19",
+   "nombre": "TUTOR IA ACERO",
+   "palabras": [
+    "TUTOR"
+   ],
+   "casa_palabra_parcial": false,
+   "cualquier_post": false,
+   "dispara_con_dm": true,
+   "exige_seguir": true,
+   "activa": true,
+   "post_id": "18111245060148632",
+   "post_url": "https://www.instagram.com/p/DdmKz_mjQy3/",
+   "creada": "2026-09-23T16:27:40.705",
+   "actualizada": "2026-09-23T16:27:40.705",
+   "cuenta": "design_modeling_dg",
+   "enviados": 0,
+   "fallidos": 0,
+   "entregados_sin_confirmar": 0,
+   "saltados": 0,
+   "pendientes": 0,
+   "primer_envio": null,
+   "ultimo_envio": null,
+   "clics": 0,
+   "clics_limpios": 0,
+   "clics_con_bots": 0,
+   "enlaces_rastreados": 1,
+   "mide_clics": true,
+   "ctr": null,
+   "clics_por_dm": null,
+   "lectura_clics": "Mide clics, pero todavía no ha enviado ningún DM."
+  },
+  {
+   "id": "cmuebgnsu000604jyzxl3pnjz",
+   "nombre": "PACK DYNAMO",
+   "palabras": [
+    "DYNAMO"
+   ],
+   "casa_palabra_parcial": false,
+   "cualquier_post": false,
+   "dispara_con_dm": true,
+   "exige_seguir": true,
+   "activa": true,
+   "post_id": "17968164066156025",
+   "post_url": "https://www.instagram.com/reel/Ddm_IPUCh-C/",
+   "creada": "2026-09-23T16:27:39.774",
+   "actualizada": "2026-09-23T16:27:39.774",
+   "cuenta": "design_modeling_dg",
+   "enviados": 0,
+   "fallidos": 0,
+   "entregados_sin_confirmar": 0,
+   "saltados": 0,
+   "pendientes": 0,
+   "primer_envio": null,
+   "ultimo_envio": null,
+   "clics": 0,
+   "clics_limpios": 0,
+   "clics_con_bots": 0,
+   "enlaces_rastreados": 1,
+   "mide_clics": true,
+   "ctr": null,
+   "clics_por_dm": null,
+   "lectura_clics": "Mide clics, pero todavía no ha enviado ningún DM."
   }
+ ],
+ "por_palabra": [
+  {
+   "palabra": "TUTORIAL",
+   "campana": "TUTORIAL REVIT CHATGPT",
+   "campana_activa": true,
+   "enviados": 42,
+   "fallidos": 0,
+   "entregados_sin_confirmar": 1,
+   "saltados": 0,
+   "primer_envio": "2026-09-12T15:01:42.345",
+   "ultimo_envio": "2026-09-23T16:00:58.922"
+  },
+  {
+   "palabra": "PARTE",
+   "campana": "TUTORIAL PLANO BIM PARTE 2",
+   "campana_activa": true,
+   "enviados": 7,
+   "fallidos": 0,
+   "entregados_sin_confirmar": 0,
+   "saltados": 0,
+   "primer_envio": "2026-09-22T03:09:17.287",
+   "ultimo_envio": "2026-09-23T08:03:44.954"
+  },
+  {
+   "palabra": "GUIA",
+   "campana": "Guía Revit",
+   "campana_activa": true,
+   "enviados": 5,
+   "fallidos": 0,
+   "entregados_sin_confirmar": 3,
+   "saltados": 0,
+   "primer_envio": "2026-09-17T13:44:41.344",
+   "ultimo_envio": "2026-09-17T14:33:17.537"
+  },
+  {
+   "palabra": "MEMORIA",
+   "campana": "MEMORIA DE CÁLCULO",
+   "campana_activa": false,
+   "enviados": 4,
+   "fallidos": 0,
+   "entregados_sin_confirmar": 0,
+   "saltados": 1,
+   "primer_envio": "2026-09-18T18:22:33.071",
+   "ultimo_envio": "2026-09-18T19:08:42.001"
+  },
+  {
+   "palabra": "GUIA",
+   "campana": "GUIA CHATGPT",
+   "campana_activa": true,
+   "enviados": 3,
+   "fallidos": 0,
+   "entregados_sin_confirmar": 0,
+   "saltados": 0,
+   "primer_envio": "2026-09-11T23:56:38.282",
+   "ultimo_envio": "2026-09-12T00:24:13.644"
+  },
+  {
+   "palabra": "BIM",
+   "campana": "CHECKLIST NAVISWORKS",
+   "campana_activa": true,
+   "enviados": 2,
+   "fallidos": 0,
+   "entregados_sin_confirmar": 1,
+   "saltados": 0,
+   "primer_envio": "2026-09-17T15:29:00.203",
+   "ultimo_envio": "2026-09-17T15:29:00.763"
+  },
+  {
+   "palabra": "BIM",
+   "campana": "5 ERRORES REVIT",
+   "campana_activa": true,
+   "enviados": 2,
+   "fallidos": 0,
+   "entregados_sin_confirmar": 0,
+   "saltados": 0,
+   "primer_envio": "2026-09-22T19:38:56.264",
+   "ultimo_envio": "2026-09-22T19:40:31.401"
+  },
+  {
+   "palabra": "RUTA",
+   "campana": "4 PUERTAS RUTA BIM",
+   "campana_activa": true,
+   "enviados": 1,
+   "fallidos": 0,
+   "entregados_sin_confirmar": 0,
+   "saltados": 0,
+   "primer_envio": "2026-09-23T16:23:56.895",
+   "ultimo_envio": "2026-09-23T16:23:56.895"
+  }
+ ],
+ "motivos_de_fallo": [
+  {
+   "estado": "FAILED",
+   "pero_si_se_entrego": true,
+   "motivo": "MetaApiError 1: An unknown error has occurred. (/v25.0/17841404048578200/messages) [code=1 sub=- type=OAuthException trace=A1ZrUqY-Wb2kHu7asF1TuAe]",
+   "veces": 1,
+   "ultima_vez": "2026-09-17T13:45:31.018"
+  },
+  {
+   "estado": "FAILED",
+   "pero_si_se_entrego": false,
+   "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=A3ed7dK4_Y-8zwkdGrw6rvy]",
+   "veces": 1,
+   "ultima_vez": "2026-09-12T00:16:38.542"
+  },
+  {
+   "estado": "FAILED",
+   "pero_si_se_entrego": true,
+   "motivo": "MetaApiError 1: An unknown error has occurred. (/v25.0/17841404048578200/messages) [code=1 sub=- type=OAuthException trace=AK8IoGPQfOgv-EaK82LvKAs]",
+   "veces": 1,
+   "ultima_vez": "2026-09-12T22:07:41.536"
+  },
+  {
+   "estado": "FAILED",
+   "pero_si_se_entrego": true,
+   "motivo": "MetaApiError 1: An unknown error has occurred. (/v25.0/17841404048578200/messages) [code=1 sub=- type=OAuthException trace=AcFWhfypEeEPuN-HW5NVB-H]",
+   "veces": 1,
+   "ultima_vez": "2026-09-17T15:28:57.984"
+  },
+  {
+   "estado": "FAILED",
+   "pero_si_se_entrego": true,
+   "motivo": "MetaApiError 1: An unknown error has occurred. (/v25.0/17841404048578200/messages) [code=1 sub=- type=OAuthException trace=AZDnjfXD1G9U8-ueKVn7rwo]",
+   "veces": 1,
+   "ultima_vez": "2026-09-17T13:45:31.033"
+  },
+  {
+   "estado": "FAILED",
+   "pero_si_se_entrego": true,
+   "motivo": "MetaApiError 1: An unknown error has occurred. (/v25.0/17841404048578200/messages) [code=1 sub=- type=OAuthException trace=AmlIrWHBoNrHDhK7I2rX2gV]",
+   "veces": 1,
+   "ultima_vez": "2026-09-17T13:45:31.022"
+  },
+  {
+   "estado": "SKIPPED_DEDUP",
+   "pero_si_se_entrego": false,
+   "motivo": "This person already received this campaign's DM on an earlier comment",
+   "veces": 1,
+   "ultima_vez": "2026-09-18T18:27:24.854"
+  }
+ ],
+ "enlaces": [
+  {
+   "slug": "zyl5qacW0Q",
+   "etiqueta": "Primary campaign link",
+   "destino": "https://www.instagram.com/reel/DdkrVGsOcLz/",
+   "campana": "TUTORIAL REVIT CHATGPT",
+   "clics": 1810,
+   "clics_limpios": 9,
+   "clics_con_bots": 1801,
+   "primer_clic": "2026-09-12T15:03:09.041",
+   "ultimo_clic": "2026-09-23T16:01:20.36"
+  },
+  {
+   "slug": "7ZudR52CIA",
+   "etiqueta": "Primary campaign link",
+   "destino": "https://funnel.dgdesignmodeling.com/acceso-gratis-guia-revit-chatgpt-form",
+   "campana": "Guía Revit",
+   "clics": 8,
+   "clics_limpios": 8,
+   "clics_con_bots": 0,
+   "primer_clic": "2026-09-17T13:45:00.723",
+   "ultimo_clic": "2026-09-17T14:34:23.205"
+  },
+  {
+   "slug": "CJFIJ9P32Q",
+   "etiqueta": "Primary campaign link",
+   "destino": "https://funnel.dgdesignmodeling.com/acceso-gratis-guia-revit-chatgpt-form",
+   "campana": "GUIA CHATGPT",
+   "clics": 7,
+   "clics_limpios": 6,
+   "clics_con_bots": 1,
+   "primer_clic": "2026-09-12T00:25:12.035",
+   "ultimo_clic": "2026-09-17T13:45:33.571"
+  },
+  {
+   "slug": "v7DsTpBjJg",
+   "etiqueta": "Primary campaign link",
+   "destino": "https://funnel.dgdesignmodeling.com/acceso-gratis-guia-revit-chatgpt-form",
+   "campana": "TUTORIAL PLANO BIM PARTE 2",
+   "clics": 3,
+   "clics_limpios": 3,
+   "clics_con_bots": 0,
+   "primer_clic": "2026-09-22T03:09:44.777",
+   "ultimo_clic": "2026-09-22T11:23:20.507"
+  },
+  {
+   "slug": "P1jZRzaqQw",
+   "etiqueta": "Primary campaign link",
+   "destino": "https://funnel.dgdesignmodeling.com/acceso-gratis-memoria-calculo-form",
+   "campana": "MEMORIA DE CÁLCULO",
+   "clics": 2,
+   "clics_limpios": 2,
+   "clics_con_bots": 0,
+   "primer_clic": "2026-09-18T18:22:47.729",
+   "ultimo_clic": "2026-09-18T18:23:36.952"
+  },
+  {
+   "slug": "eNT4UrTlxg",
+   "etiqueta": "Primary campaign link",
+   "destino": "https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form",
+   "campana": "4 PUERTAS RUTA BIM",
+   "clics": 1,
+   "clics_limpios": 1,
+   "clics_con_bots": 0,
+   "primer_clic": "2026-09-23T16:25:38.924",
+   "ultimo_clic": "2026-09-23T16:25:38.924"
+  },
+  {
+   "slug": "-ynblNwTaQ",
+   "etiqueta": "Primary campaign link",
+   "destino": "https://funnel.dgdesignmodeling.com/acceso-gratis-guia-revit-chatgpt-form",
+   "campana": "5 ERRORES REVIT",
+   "clics": 1,
+   "clics_limpios": 1,
+   "clics_con_bots": 0,
+   "primer_clic": "2026-09-22T19:40:49.607",
+   "ultimo_clic": "2026-09-22T19:40:49.607"
+  },
+  {
+   "slug": "iJX0Y_omBA",
+   "etiqueta": "Primary campaign link",
+   "destino": "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/navisworks-checklist/guia.html?acceso=dm2026",
+   "campana": "CHECKLIST NAVISWORKS",
+   "clics": 1,
+   "clics_limpios": 1,
+   "clics_con_bots": 0,
+   "primer_clic": "2026-09-17T15:29:11.889",
+   "ultimo_clic": "2026-09-17T15:29:11.889"
+  },
+  {
+   "slug": "T-7xnWGVLA",
+   "etiqueta": "Primary campaign link",
+   "destino": "https://funnel.dgdesignmodeling.com/acceso-gratis-script-dynamo-form",
+   "campana": "PACK DYNAMO",
+   "clics": 0,
+   "clics_limpios": 0,
+   "clics_con_bots": 0,
+   "primer_clic": null,
+   "ultimo_clic": null
+  },
+  {
+   "slug": "-UDNcxnVAg",
+   "etiqueta": "Primary campaign link",
+   "destino": "https://designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero",
+   "campana": "TUTOR IA ACERO",
+   "clics": 0,
+   "clics_limpios": 0,
+   "clics_con_bots": 0,
+   "primer_clic": null,
+   "ultimo_clic": null
+  }
+ ],
+ "clics_por_dia": [
+  {
+   "fecha": "2026-09-12",
+   "clics": 68,
+   "limpio": false
+  },
+  {
+   "fecha": "2026-09-13",
+   "clics": 867,
+   "limpio": false
+  },
+  {
+   "fecha": "2026-09-14",
+   "clics": 867,
+   "limpio": false
+  },
+  {
+   "fecha": "2026-09-15",
+   "clics": 7,
+   "limpio": true
+  },
+  {
+   "fecha": "2026-09-17",
+   "clics": 15,
+   "limpio": true
+  },
+  {
+   "fecha": "2026-09-18",
+   "clics": 3,
+   "limpio": true
+  },
+  {
+   "fecha": "2026-09-22",
+   "clics": 4,
+   "limpio": true
+  },
+  {
+   "fecha": "2026-09-23",
+   "clics": 2,
+   "limpio": true
+  }
+ ],
+ "envios_por_dia": [
+  {
+   "fecha": "2026-09-11",
+   "enviados": 1
+  },
+  {
+   "fecha": "2026-09-12",
+   "enviados": 9
+  },
+  {
+   "fecha": "2026-09-13",
+   "enviados": 8
+  },
+  {
+   "fecha": "2026-09-14",
+   "enviados": 8
+  },
+  {
+   "fecha": "2026-09-15",
+   "enviados": 4
+  },
+  {
+   "fecha": "2026-09-16",
+   "enviados": 3
+  },
+  {
+   "fecha": "2026-09-17",
+   "enviados": 9
+  },
+  {
+   "fecha": "2026-09-18",
+   "enviados": 7
+  },
+  {
+   "fecha": "2026-09-19",
+   "enviados": 3
+  },
+  {
+   "fecha": "2026-09-20",
+   "enviados": 1
+  },
+  {
+   "fecha": "2026-09-21",
+   "enviados": 2
+  },
+  {
+   "fecha": "2026-09-22",
+   "enviados": 7
+  },
+  {
+   "fecha": "2026-09-23",
+   "enviados": 4
+  }
+ ],
+ "seguidores": [
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-08-24",
+   "seguidores": 80041
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-08-25",
+   "seguidores": 80063
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-08-26",
+   "seguidores": 80093
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-08-27",
+   "seguidores": 80126
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-08-28",
+   "seguidores": 80170
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-08-29",
+   "seguidores": 80257
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-08-30",
+   "seguidores": 80313
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-08-31",
+   "seguidores": 80347
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-01",
+   "seguidores": 80393
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-02",
+   "seguidores": 80422
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-03",
+   "seguidores": 80462
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-04",
+   "seguidores": 80498
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-05",
+   "seguidores": 80539
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-06",
+   "seguidores": 80573
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-07",
+   "seguidores": 80608
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-08",
+   "seguidores": 80639
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-09",
+   "seguidores": 80639
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-10",
+   "seguidores": 80639
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-11",
+   "seguidores": 80639
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-12",
+   "seguidores": 80663
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-13",
+   "seguidores": 80725
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-14",
+   "seguidores": 80761
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-15",
+   "seguidores": 80787
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-16",
+   "seguidores": 80811
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-17",
+   "seguidores": 80824
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-18",
+   "seguidores": 80838
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-19",
+   "seguidores": 80841
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-20",
+   "seguidores": 80861
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-21",
+   "seguidores": 80865
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-22",
+   "seguidores": 80845
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-09-23",
+   "seguidores": 80851
+  }
+ ],
+ "workflows_ghl": {
+  "generado": "2026-09-21",
+  "total": 133,
+  "por_palabra": {
+   "ZAPATA": {
+    "publicados": [
+     {
+      "nombre": "✅ Comentario ZAPATA - Calculadora de Zapatas",
+      "estado": "published"
+     },
+     {
+      "nombre": "✅ Seguimiento Zapatas → Especialización en ACERO",
+      "estado": "published"
+     }
+    ],
+    "en_borrador": [],
+    "bot_total": 167,
+    "bot_nuevos_7d": 2
+   },
+   "ACERO": {
+    "publicados": [
+     {
+      "nombre": "✅ Seguimientos 1,2,3 y 4 Especialización Acero",
+      "estado": "published"
+     },
+     {
+      "nombre": "✅ Comentario ACERO - Verificación de Acero",
+      "estado": "published"
+     },
+     {
+      "nombre": "✅ (SMS) FACEBOOK FORM PRE FILTRO ACERO",
+      "estado": "published"
+     },
+     {
+      "nombre": "✅ Seguimiento Zapatas → Especialización en ACERO",
+      "estado": "published"
+     }
+    ],
+    "en_borrador": []
+   },
+   "NIVEL": {
+    "publicados": [
+     {
+      "nombre": "✅ Comentario NIVEL - Test de Nivel BIM",
+      "estado": "published"
+     },
+     {
+      "nombre": "✅ Seguimiento Test de Nivel → Máster BIM+IA",
+      "estado": "published"
+     }
+    ],
+    "en_borrador": [],
+    "bot_total": 1,
+    "bot_nuevos_7d": 0
+   },
+   "CHATGPT": {
+    "publicados": [
+     {
+      "nombre": "✅ Comentario CHATGPT - Guia Revit + ChatGPT",
+      "estado": "published"
+     }
+    ],
+    "en_borrador": [],
+    "bot_total": 0,
+    "bot_nuevos_7d": 0
+   },
+   "MEMORIA": {
+    "publicados": [
+     {
+      "nombre": "✅ Comentario MEMORIA - Memoria de Calculo",
+      "estado": "published"
+     }
+    ],
+    "en_borrador": [],
+    "bot_total": 10,
+    "bot_nuevos_7d": 4
+   },
+   "DYNAMO": {
+    "publicados": [
+     {
+      "nombre": "✅ Comentario DYNAMO - Pack Script Dynamo",
+      "estado": "published"
+     }
+    ],
+    "en_borrador": [],
+    "bot_total": 0,
+    "bot_nuevos_7d": 0
+   }
+  },
+  "embudo_generado": "2026-09-23T17:47Z"
+ },
+ "cotejo_con_la_matriz": [
+  {
+   "palabra": "ZAPATA",
+   "la_declara_la_matriz": true,
+   "montada_en_openreply": false,
+   "campana_activa": false,
+   "campanas": [],
+   "dms_enviados": 0,
+   "lectura": "No está en OpenReply, pero SÍ en GoHighLevel y publicada: ✅ Comentario ZAPATA - Calculadora de Zapatas, ✅ Seguimiento Zapatas → Especialización en ACERO. Ahí es donde la monta la matriz, así que el comentario tiene a quién contestarle. (El listado da nombre y estado, no la configuración del disparador.)"
+  },
+  {
+   "palabra": "ACERO",
+   "la_declara_la_matriz": true,
+   "montada_en_openreply": false,
+   "campana_activa": false,
+   "campanas": [],
+   "dms_enviados": 0,
+   "lectura": "No está en OpenReply, pero SÍ en GoHighLevel y publicada: ✅ Seguimientos 1,2,3 y 4 Especialización Acero, ✅ Comentario ACERO - Verificación de Acero, ✅ (SMS) FACEBOOK FORM PRE FILTRO ACERO, ✅ Seguimiento Zapatas → Especialización en ACERO. Ahí es donde la monta la matriz, así que el comentario tiene a quién contestarle. (El listado da nombre y estado, no la configuración del disparador.)"
+  },
+  {
+   "palabra": "NIVEL",
+   "la_declara_la_matriz": true,
+   "montada_en_openreply": false,
+   "campana_activa": false,
+   "campanas": [],
+   "dms_enviados": 0,
+   "lectura": "No está en OpenReply, pero SÍ en GoHighLevel y publicada: ✅ Comentario NIVEL - Test de Nivel BIM, ✅ Seguimiento Test de Nivel → Máster BIM+IA. Ahí es donde la monta la matriz, así que el comentario tiene a quién contestarle. (El listado da nombre y estado, no la configuración del disparador.)"
+  },
+  {
+   "palabra": "CHATGPT",
+   "la_declara_la_matriz": true,
+   "montada_en_openreply": false,
+   "campana_activa": false,
+   "campanas": [],
+   "dms_enviados": 0,
+   "lectura": "AVISO: no está en OpenReply, y en GoHighLevel (✅ Comentario CHATGPT - Guia Revit + ChatGPT) nunca ha etiquetado a nadie. Si una pieza pide esta palabra, HOY NADIE LA CONTESTA. Puede que el recurso salga con otra palabra: comprobar qué pide la pieza antes de tocar GHL."
+  },
+  {
+   "palabra": "MEMORIA",
+   "la_declara_la_matriz": true,
+   "montada_en_openreply": true,
+   "campana_activa": false,
+   "campanas": [
+    "MEMORIA DE CÁLCULO"
+   ],
+   "dms_enviados": 4,
+   "lectura": "La campaña de OpenReply está PAUSADA, pero en GoHighLevel hay workflow publicado: ✅ Comentario MEMORIA - Memoria de Calculo. El comentario tiene a quién contestarle por GHL; lo que no va a haber es DM ni medición por OpenReply."
+  },
+  {
+   "palabra": "DYNAMO",
+   "la_declara_la_matriz": true,
+   "montada_en_openreply": true,
+   "campana_activa": true,
+   "campanas": [
+    "PACK DYNAMO"
+   ],
+   "dms_enviados": 0,
+   "lectura": "Montada y activa, pero todavía no ha disparado ni una vez."
+  }
+ ],
+ "otras_palabras_montadas": [
+  {
+   "palabra": "BIM",
+   "la_declara_la_matriz": false,
+   "montada_en_openreply": true,
+   "campana_activa": true,
+   "campanas": [
+    "5 ERRORES REVIT",
+    "CHECKLIST NAVISWORKS"
+   ],
+   "dms_enviados": 4,
+   "lectura": "Viva: 4 DM enviados."
+  },
+  {
+   "palabra": "GUIA",
+   "la_declara_la_matriz": false,
+   "montada_en_openreply": true,
+   "campana_activa": true,
+   "campanas": [
+    "Guía Revit",
+    "GUIA CHATGPT"
+   ],
+   "dms_enviados": 8,
+   "lectura": "Viva: 8 DM enviados."
+  },
+  {
+   "palabra": "IA",
+   "la_declara_la_matriz": false,
+   "montada_en_openreply": true,
+   "campana_activa": true,
+   "campanas": [
+    "5 ERRORES REVIT",
+    "CHECKLIST NAVISWORKS"
+   ],
+   "dms_enviados": 0,
+   "lectura": "Montada y activa, pero todavía no ha disparado ni una vez."
+  },
+  {
+   "palabra": "PARTE",
+   "la_declara_la_matriz": false,
+   "montada_en_openreply": true,
+   "campana_activa": true,
+   "campanas": [
+    "TUTORIAL PLANO BIM PARTE 2"
+   ],
+   "dms_enviados": 7,
+   "lectura": "Viva: 7 DM enviados."
+  },
+  {
+   "palabra": "PARTE2",
+   "la_declara_la_matriz": false,
+   "montada_en_openreply": true,
+   "campana_activa": true,
+   "campanas": [
+    "TUTORIAL PLANO BIM PARTE 2"
+   ],
+   "dms_enviados": 0,
+   "lectura": "Montada y activa, pero todavía no ha disparado ni una vez."
+  },
+  {
+   "palabra": "RUTA",
+   "la_declara_la_matriz": false,
+   "montada_en_openreply": true,
+   "campana_activa": true,
+   "campanas": [
+    "4 PUERTAS RUTA BIM"
+   ],
+   "dms_enviados": 1,
+   "lectura": "Viva: 1 DM enviados."
+  },
+  {
+   "palabra": "TUTOR",
+   "la_declara_la_matriz": false,
+   "montada_en_openreply": true,
+   "campana_activa": true,
+   "campanas": [
+    "TUTOR IA ACERO"
+   ],
+   "dms_enviados": 0,
+   "lectura": "Montada y activa, pero todavía no ha disparado ni una vez."
+  },
+  {
+   "palabra": "TUTORIAL",
+   "la_declara_la_matriz": false,
+   "montada_en_openreply": true,
+   "campana_activa": true,
+   "campanas": [
+    "TUTORIAL REVIT CHATGPT"
+   ],
+   "dms_enviados": 42,
+   "lectura": "Viva: 42 DM enviados."
+  }
+ ],
+ "cotejo_fiable": true
 }

@@ -31,8 +31,10 @@ estado: 🔴 pendiente · 🟡 en curso · 🟢 hecho · ⚫ descartada (con el 
 | 12 | **Las historias no tienen ni un slot de venta** (0 de 7 días) y los 15 «mándales DM» de la guía no tienen ni un guion escrito. Resuelto en `HISTORIAS-VENTA.md`: jueves de venta + 5 guiones de DM | Auditoría historias 14-ago | Dayana | 🔴 |
 | 13 | **ACERO es solo el 20 % de las historias** (3 de 15) siendo el producto de mejor CPL. Subir a 6 | Auditoría historias 14-ago | Dayana | 🔴 |
 | 14 | **Decidir si ACERO abre cohorte este mes** y con cuántos cupos reales. Sin ese dato, la secuencia de cuenta regresiva no se publica | Auditoría historias 14-ago | Dayana | 🔴 |
-| 15 | ~~Comprobar en GHL si CHATGPT y MEMORIA están montadas~~ · **Resuelto:** Dayana confirma que están todos, y la sonda de GHL lo corrobora: las SEIS palabras tienen workflow `published` (`Comentario ZAPATA/ACERO/NIVEL/CHATGPT/MEMORIA/DYNAMO`). El cotejo ya lo mira solo | Revisión 21-sep | — | 🟢 |
+| 15 | ~~Los workflows CHATGPT y DYNAMO de GHL nunca dispararon~~ · **Resuelto, y la alarma era falsa en parte:** los recursos salen por **OpenReply**. CHATGPT se entrega con TUTORIAL (42) y GUIA; DYNAMO tiene campaña desde el 23-sep 16:27 UTC. Se concluyó con datos de OpenReply de dos días atrás: desde hoy se leen cada 4 h | Embudo 23-sep | — | 🟢 |
 | 17 | **Decidir si la campaña MEMORIA DE CÁLCULO de OpenReply se reactiva.** Está pausada ahí mientras su workflow de GHL sigue publicado: el comentario se contesta, pero sin DM ni medición por OpenReply | Revisión 21-sep | Dayana | 🔴 |
+| 18 | **Las 13 personas que respondieron DYNAMO a la historia del 22-sep no recibieron nada automático:** la campaña PACK DYNAMO se creó 19 h después. Mandarles el pack a mano desde el buzón de Instagram. Desde ahora PACK DYNAMO dispara también por DM, así que las respuestas a historia ya quedan cubiertas | Historias 23-sep | Dayana / quien atienda el buzón | 🔴 |
+| 19 | **El carrusel del Jue 24 pide COMENTA DYNAMO y PACK DYNAMO solo escucha el reel** (`matchAnyPost` apagado, atada a `/reel/Ddm_IPUCh-C/`). En cuanto se publique el carrusel, añadirlo a la campaña o activar «cualquier publicación»; si no, sus comentarios no reciben nada | Campañas 23-sep | quien monte OpenReply | 🔴 |
 | 16 | **Tres piezas del calendario siguen sin salir:** `pauta-guia` (Mar 8, reel), `lm-revit-chatgpt-feed` (Jue 10, carrusel) y `reel-advertencias` (Vie 18, reel). El del Jue 10 no necesita cámara | Revisión 21-sep | Contenido | 🔴 |
 
 ---
@@ -81,6 +83,31 @@ Estas ya no se discuten cada semana. Salieron de medir.
 ---
 
 ## Historial
+
+### 23-sep-2026 · Historias por API, y dos bots que nunca dispararon
+
+**Las historias ya se miden.** La API de Instagram las borra a las 24 h y
+nadie las estaba guardando; desde hoy `historias.yml` las lee cada 4 h. Las
+del 22-sep (lanzamiento del pack de Dynamo) se capturaron con 3 horas de
+margen:
+
+| Frame | Alcance | Respuestas | Salidas |
+|---|---|---|---|
+| «Fueron solo segundos» (video) | 767 | 3 | 76 |
+| «Yo no sé programar y lo uso igual» (video) | 656 | 0 | 33 |
+| «Son 5 scripts · Responde DYNAMO» | 593 | **13** | 49 |
+
+Se queda el **77 %** hasta el final, y el CTA saca **13 respuestas sobre 593
+(2,2 %)**. La historia funcionó.
+
+**Lo que no funcionó fue lo de después:** la campaña PACK DYNAMO de OpenReply
+se creó el 23-sep, 19 h después de la historia, así que esas 13 respuestas no
+tuvieron quién las contestara. → #18. Y el carrusel del jueves también pide
+DYNAMO, pero la campaña solo escucha el reel. → #19.
+
+*Se había escrito primero que los bots de CHATGPT y DYNAMO «nunca dispararon»
+mirando solo GHL. Era media verdad: los recursos salen por OpenReply. Ver el
+brief, apartado 5.*
 
 ### 21-sep-2026 · Los seis disparadores están montados (y el cotejo ya lo comprueba solo)
 

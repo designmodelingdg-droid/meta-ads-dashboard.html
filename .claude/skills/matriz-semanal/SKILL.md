@@ -131,3 +131,44 @@ Este skill sigue sirviendo para las lecturas y el ajuste, pero la recolección p
 APIFY_TOKEN=xxx python3 scripts/refresh_matriz.py
 ```
 y la Action `.github/workflows/refresh-matriz.yml` lo corre solo cada semana.
+
+---
+
+## Historias y embudo de lead magnets (desde el 23-sep)
+
+**Las historias ya se miden solas.** `historias.yml` las lee cada 4 h porque
+la API de Instagram las borra a las 24 h: la corrida del lunes llegaría tarde a
+todas las de la semana. Quedan en `matriz-viral/fuentes/historias/historias.json`,
+una fila por frame, con alcance, respuestas, compartidos, visitas al perfil y
+la **navegación** (`tap_forward`, `tap_back`, `tap_exit`, `swipe_forward`).
+
+Cómo se leen en la revisión:
+- **Retención de la secuencia:** alcance del último frame ÷ alcance del
+  primero. La del 22-sep (Dynamo) fue 77 %: la referencia de momento.
+- **Dónde se cae:** el frame con más `tap_exit` + `swipe_forward`.
+- **Si el CTA funcionó:** respuestas del frame del CTA ÷ su alcance. El 22-sep:
+  13 / 593 = 2,2 %.
+- Las historias se agrupan por día (mismo `publicada` ±30 min) y se cruzan con
+  `historias-septiembre.py` para saber qué frame era cuál.
+
+**El embudo de cada lead magnet** está en
+`matriz-viral/fuentes/ghl/embudo-leadmagnets.json`: por palabra, cuántos
+contactos tienen `origen-bot-X` (el bot lo recogió), `lead-X` y `acceso-X`.
+Solo cuentas, ningún dato personal.
+
+**Cómo se comprueba que un CTA de palabra tiene quien lo conteste — tres
+pasos, en este orden, y el 23-sep se falló en los tres:**
+
+1. **Qué palabra pidió DE VERDAD la pieza.** El calendario decía CHATGPT para
+   el reel del 16-sep; la publicación pedía GUIA. Se mira la campaña de
+   OpenReply atada a ese post (`postUrl`), no el calendario.
+2. **OpenReply, con datos del día** (`fuentes/openreply/campanas.json`, se
+   refresca cada 4 h). Casi todos los recursos salen por ahí. Ojo con
+   `matchAnyPost`: si está apagado, la campaña solo escucha SU post.
+3. **GHL** (`embudo-leadmagnets.json`, `bot_total`). Publicado no es
+   funcionando, pero un cero en GHL tampoco es un fallo si la palabra vive en
+   OpenReply.
+
+**Y una respuesta a historia NO es un comentario.** Llega como DM. Un
+workflow «Comentario X» no la ve. Si la historia pide «Responde X», el
+workflow de X necesita también un disparador por mensaje.

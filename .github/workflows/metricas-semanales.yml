@@ -31,6 +31,14 @@ on:
         description: "true = solo bajar imágenes de anuncios ganadores (scripts/ads_creativos.py)"
         required: false
         default: "false"
+      solo_historias:
+        description: "true = solo historias vivas + embudo de lead magnets (rápido)"
+        required: false
+        default: "false"
+      embudo_desde:
+        description: "Embudo: contar contactos tocados desde (ISO UTC, p.ej. 2026-09-22T21:00:00Z). Vacío = 7 días"
+        required: false
+        default: ""
       desde:
         description: "Ventana de creativos: inicio (YYYY-MM-DD)"
         required: false
@@ -94,8 +102,50 @@ jobs:
             echo "Sin creativos nuevos."
           fi
 
+  # Las historias desaparecen de la API a las 24 h. Este modo existe para
+  # capturarlas a mano cuando haga falta; la captura regular la hace
+  # historias.yml cada 4 h.
+  historias:
+    if: github.event.inputs.solo_historias == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Capturar las historias vivas
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN }}
+        run: python3 scripts/historias.py
+      # OpenReply antes que nada: el 23-sep se sacaron conclusiones sobre
+      # DYNAMO con datos de OpenReply de dos dias atras, y en esos dos dias se
+      # habian creado cinco campañas. Las campañas cambian cada dia.
+      - name: Campañas de OpenReply
+        continue-on-error: true
+        env:
+          OPENREPLY_DATABASE_URL: ${{ secrets.OPENREPLY_DATABASE_URL }}
+        run: |
+          python3 scripts/prueba_openreply.py
+          python3 scripts/openreply.py --dias 30
+      - name: Embudo de los lead magnets (etiquetas de GHL)
+        continue-on-error: true
+        env:
+          GHL_TOKEN: ${{ secrets.GHL_TOKEN }}
+          DESDE: ${{ github.event.inputs.embudo_desde }}
+        run: python3 scripts/embudo_leadmagnets.py ${DESDE:+--desde "$DESDE"}
+      - name: Commit si cambió
+        run: |
+          set -euo pipefail
+          if git status --porcelain -- matriz-viral/fuentes/historias/ matriz-viral/fuentes/ghl/embudo-leadmagnets.json matriz-viral/fuentes/openreply/ | grep -q .; then
+            git config user.name  "matriz-bot"
+            git config user.email "noreply@anthropic.com"
+            git add matriz-viral/fuentes/historias/ matriz-viral/fuentes/ghl/embudo-leadmagnets.json matriz-viral/fuentes/openreply/
+            git commit -m "Historias: lectura de las vivas (Graph API)"
+            git pull --rebase --autostash origin "$GITHUB_REF_NAME" && git push
+          else
+            echo "Sin historias nuevas."
+          fi
+
   metricas:
-    if: github.event.inputs.solo_creativos != 'true'
+    if: github.event.inputs.solo_creativos != 'true' && github.event.inputs.solo_historias != 'true'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -143,6 +193,18 @@ jobs:
         env:
           GHL_TOKEN: ${{ secrets.GHL_TOKEN }}
         run: python3 scripts/ghl_correos.py
+
+      - name: Embudo de los lead magnets (etiquetas de GHL)
+        continue-on-error: true
+        env:
+          GHL_TOKEN: ${{ secrets.GHL_TOKEN }}
+        run: python3 scripts/embudo_leadmagnets.py
+
+      - name: Capturar las historias vivas
+        continue-on-error: true
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN }}
+        run: python3 scripts/historias.py
 
       - name: Analizar conversaciones del CRM (perfilado de leads)
         continue-on-error: true
@@ -203,7 +265,7 @@ jobs:
         id: commit
         run: |
           set -euo pipefail
-          RUTAS="matriz-viral/matriz/ matriz-viral/fuentes/ads-insights/ matriz-viral/fuentes/ingresos/ matriz-viral/fuentes/ghl-sonda.json matriz-viral/fuentes/ghl/ matriz-viral/fuentes/meta-pixel/ matriz-viral/fuentes/openreply/ matriz-viral/fuentes/enlaces.json"
+          RUTAS="matriz-viral/fuentes/historias/ matriz-viral/matriz/ matriz-viral/fuentes/ads-insights/ matriz-viral/fuentes/ingresos/ matriz-viral/fuentes/ghl-sonda.json matriz-viral/fuentes/ghl/ matriz-viral/fuentes/meta-pixel/ matriz-viral/fuentes/openreply/ matriz-viral/fuentes/enlaces.json"
           if git diff --quiet -- $RUTAS && ! git status --porcelain -- $RUTAS | grep -q .; then
             echo "Sin cambios."
             echo "cambios=false" >> "$GITHUB_OUTPUT"
@@ -212,7 +274,7 @@ jobs:
           echo "cambios=true" >> "$GITHUB_OUTPUT"
           git config user.name  "matriz-bot"
           git config user.email "noreply@anthropic.com"
-          git add matriz-viral/matriz/ matriz-viral/fuentes/ads-insights/ matriz-viral/fuentes/ingresos/ matriz-viral/fuentes/ghl-sonda.json matriz-viral/fuentes/ghl/ matriz-viral/fuentes/meta-pixel/ matriz-viral/fuentes/openreply/ matriz-viral/fuentes/enlaces.json
+          git add matriz-viral/fuentes/historias/ matriz-viral/matriz/ matriz-viral/fuentes/ads-insights/ matriz-viral/fuentes/ingresos/ matriz-viral/fuentes/ghl-sonda.json matriz-viral/fuentes/ghl/ matriz-viral/fuentes/meta-pixel/ matriz-viral/fuentes/openreply/ matriz-viral/fuentes/enlaces.json
           git commit -m "Métricas semanales automáticas (Meta Graph API)"
           # Puede haber commits nuevos desde que arrancó la corrida: se rebasa
           # antes de empujar. Sin esto el push se rechaza y se pierde el dato.

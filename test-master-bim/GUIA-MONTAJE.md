@@ -1,7 +1,12 @@
 # Diagnóstico BIM del Máster — montaje
 
-Para **Ester y Aylin**. El test ya está construido y probado; lo que falta es
-conectarlo a GoHighLevel para que el resultado llegue al asesor.
+Para **Ester y Aylin**.
+
+> **✅ HECHO — montado y conectado a GoHighLevel.** El formulario
+> `c9q5RXwZp3kDRuwk1eCz` está vivo desde el 9-sep y Dayana confirmó el
+> 23-sep que el enrutado en GHL está listo. Esta guía queda como referencia
+> de cómo está montado y de qué NO tocar (las claves de los campos, el «+»,
+> el correo). No hay nada pendiente de montaje.
 
 ```
 https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/test-master-bim/
@@ -48,6 +53,62 @@ Manager, y añade que tiene conocimiento disperso por encima de su nivel.
 Es a propósito: decirle al asesor que tiene delante a un BIM Manager cuando le
 falta la coordinación entera hace que pierda la llamada en los primeros dos
 minutos.
+
+---
+
+## Añadido el 23-sep — el punto de partida (quien no sabe BIM, y quien viene por la IA)
+
+Varios interesados le dijeron a Dayana que el test no tenía dónde decir
+**«todavía no sé nada de BIM»**. Las 20 preguntas asumen que ya modelas,
+coordinas o gestionas, y quien empieza de cero se encontraba con catorce
+afirmaciones que no le decían nada. Tampoco había forma de decir **«a mí lo
+que me interesa es la IA»**.
+
+Ahora el test **empieza** con dos preguntas:
+
+| Pregunta | Opciones |
+|---|---|
+| ¿En qué punto estás hoy con BIM? | Todavía no he trabajado con BIM · Lo he probado, pero a nivel muy básico · Ya lo uso en proyectos reales |
+| ¿Qué es lo que más te interesa del Máster? | Aprender BIM desde la base · Subir de nivel: coordinar o gestionar · **Sobre todo la IA y la automatización** · La ruta completa, BIM + IA |
+
+**Quien responde «Todavía no he trabajado con BIM» se salta las 14 del eje
+BIM** y hace solo las 6 de base técnica: 8 preguntas en total en vez de 22.
+En el panel esas 14 salen como «No se preguntó», no como «Nunca lo he hecho».
+
+### Lo que NO cambió — y por qué importa
+
+- **La URL es la misma.** El enlace que manda el closer no se toca.
+- **Los enlaces ya enviados siguen abriendo igual.** El resultado viaja en el
+  propio enlace como 20 dígitos; las dos respuestas nuevas van *detrás*, así
+  que un enlace de antes se lee exactamente como antes. Está probado con uno
+  real: sigue dando `B2-EST-57`.
+- **Los 7 campos del formulario son los mismos.** No hay campo nuevo que crear.
+- **El código de diagnóstico tiene el mismo formato.** Quien no sabe BIM sale
+  `B0-…`, igual que salía antes con catorce ceros.
+
+### Lo único que hay que revisar en GoHighLevel
+
+El campo **`nivel_bim`** tiene ahora **dos valores nuevos**:
+
+| Valor nuevo | Cuándo |
+|---|---|
+| `Sin experiencia BIM todavía` | Dijo que no ha trabajado con BIM |
+| `Nivel BIM inicial` | Dijo «muy básico» y no dominó ni el primer bloque |
+
+Antes, los dos casos llegaban como `En camino a Modelador BIM`. **Si algún
+workflow, lista inteligente o filtro de GHL busca ese texto exacto, ya no
+atrapa a estas personas.** Hay que añadirles los dos valores nuevos. Si nada en
+GHL filtra por `nivel_bim`, no hay que hacer nada.
+
+### Dónde lo ve el asesor
+
+En `detalle_del_diagnóstico`, arriba del todo: **PUNTO DE PARTIDA** y **LE
+INTERESA**. Y cuando lo que la persona dice no cuadra con lo que marca, un
+bloque **OJO** — por ejemplo, quien dice que usa BIM en proyectos pero no
+domina ni el primer bloque, o quien viene por la IA sin base BIM.
+
+Esos avisos son **solo para el asesor**: van en el CRM, **no** en el panel que
+se comparte en pantalla con el prospecto.
 
 ---
 
