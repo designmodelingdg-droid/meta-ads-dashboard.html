@@ -1,0 +1,61 @@
+name: Historias (cada 4 h)
+
+# Las historias desaparecen de la API de Instagram a las 24 h, con sus números.
+# La corrida semanal (lunes y viernes) llega tarde a casi todas: una historia
+# del martes ya no existe el viernes. Por eso esto corre cada 4 h y guarda la
+# última lectura de cada una antes de que caduque.
+#
+# De paso cuenta el embudo de los lead magnets en GHL: es barato y así el
+# efecto de una historia con «Responde PALABRA» se ve el mismo día.
+#
+# OJO: un `schedule` de GitHub solo corre desde la rama por defecto. Hasta que
+# este fichero esté ahí, no se dispara solo — se puede lanzar a mano desde
+# metricas-semanales.yml con solo_historias=true.
+
+on:
+  schedule:
+    - cron: "17 */4 * * *"     # cada 4 h, a los :17 para no pisarse con las demás
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: historias
+  cancel-in-progress: false
+
+jobs:
+  historias:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Capturar las historias vivas
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN }}
+        run: python3 scripts/historias.py
+
+      - name: Embudo de los lead magnets (etiquetas de GHL)
+        continue-on-error: true
+        env:
+          GHL_TOKEN: ${{ secrets.GHL_TOKEN }}
+        run: python3 scripts/embudo_leadmagnets.py
+
+      - name: Commit si cambió
+        run: |
+          set -euo pipefail
+          RUTAS="matriz-viral/fuentes/historias/ matriz-viral/fuentes/ghl/embudo-leadmagnets.json"
+          if git status --porcelain -- $RUTAS | grep -q .; then
+            git config user.name  "matriz-bot"
+            git config user.email "noreply@anthropic.com"
+            git add $RUTAS
+            git commit -m "Historias y embudo: lectura automática"
+            for i in 1 2 3; do
+              git pull --rebase --autostash origin "$GITHUB_REF_NAME" && git push && exit 0
+              sleep 5
+            done
+            exit 1
+          else
+            echo "Sin cambios."
+          fi
