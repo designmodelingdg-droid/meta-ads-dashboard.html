@@ -627,7 +627,7 @@
       "campana_activa": false,
       "campanas": [],
       "dms_enviados": 0,
-      "lectura": "No está en OpenReply, pero SÍ en GoHighLevel y publicada: ✅ Comentario CHATGPT - Guia Revit + ChatGPT. Ahí es donde la monta la matriz, así que el comentario tiene a quién contestarle. (El listado da nombre y estado, no la configuración del disparador.)"
+      "lectura": "AVISO: en GoHighLevel está publicada (✅ Comentario CHATGPT - Guia Revit + ChatGPT) pero NUNCA ha etiquetado a nadie: 0 contactos con origen-bot en todo su historial. Publicado no es funcionando — hay que revisar el disparador. Y en OpenReply no está."
     },
     {
       "palabra": "MEMORIA",
@@ -647,7 +647,7 @@
       "campana_activa": false,
       "campanas": [],
       "dms_enviados": 0,
-      "lectura": "No está en OpenReply, pero SÍ en GoHighLevel y publicada: ✅ Comentario DYNAMO - Pack Script Dynamo. Ahí es donde la monta la matriz, así que el comentario tiene a quién contestarle. (El listado da nombre y estado, no la configuración del disparador.)"
+      "lectura": "AVISO: en GoHighLevel está publicada (✅ Comentario DYNAMO - Pack Script Dynamo) pero NUNCA ha etiquetado a nadie: 0 contactos con origen-bot en todo su historial. Publicado no es funcionando — hay que revisar el disparador. Y en OpenReply no está."
     }
   ],
   "otras_palabras_montadas": [
@@ -713,7 +713,9 @@
             "estado": "published"
           }
         ],
-        "en_borrador": []
+        "en_borrador": [],
+        "bot_total": 167,
+        "bot_nuevos_7d": 2
       },
       "ACERO": {
         "publicados": [
@@ -747,7 +749,9 @@
             "estado": "published"
           }
         ],
-        "en_borrador": []
+        "en_borrador": [],
+        "bot_total": 1,
+        "bot_nuevos_7d": 0
       },
       "CHATGPT": {
         "publicados": [
@@ -756,7 +760,9 @@
             "estado": "published"
           }
         ],
-        "en_borrador": []
+        "en_borrador": [],
+        "bot_total": 0,
+        "bot_nuevos_7d": 0
       },
       "MEMORIA": {
         "publicados": [
@@ -765,7 +771,9 @@
             "estado": "published"
           }
         ],
-        "en_borrador": []
+        "en_borrador": [],
+        "bot_total": 10,
+        "bot_nuevos_7d": 4
       },
       "DYNAMO": {
         "publicados": [
@@ -774,8 +782,11 @@
             "estado": "published"
           }
         ],
-        "en_borrador": []
+        "en_borrador": [],
+        "bot_total": 0,
+        "bot_nuevos_7d": 0
       }
-    }
+    },
+    "embudo_generado": "2026-09-23T17:47Z"
   }
 }

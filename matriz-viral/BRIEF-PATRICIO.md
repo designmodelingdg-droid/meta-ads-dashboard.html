@@ -459,6 +459,24 @@ ese cruce no puede decir** es cómo está configurado el disparador: el listado
 de GHL da el nombre y el estado, no si el disparador es «comentario de
 Instagram con esta palabra». Un `draft` sí es concluyente — no dispara.
 
+> **CORREGIDO el 23-sep, con datos de GHL.** Lo de arriba se concluyó mirando
+> que existiera un workflow *publicado* con cada palabra. Era el límite que
+> quedó escrito —el listado da nombre y estado, no si el disparador funciona—
+> y resultó ser justo donde fallaba. Contando las etiquetas que ponen esos
+> workflows:
+>
+> | Palabra | `origen-bot-…` (desde siempre) | Veredicto |
+> |---|---|---|
+> | ZAPATA | 167 | funciona |
+> | MEMORIA | 10 (4 esta semana) | funciona |
+> | NIVEL | 1 | casi sin uso |
+> | **CHATGPT** | **0** | **nunca ha etiquetado a nadie** |
+> | **DYNAMO** | **0** | **nunca ha etiquetado a nadie** |
+>
+> Así que los **17 comentarios MEMORIA** del reel del viernes sí tenían bot.
+> Los **19 comentarios CHATGPT** del reel del miércoles, **no** —al menos no por
+> ese workflow. Qué recibieron esas personas solo se ve en el buzón.
+
 **Lo que salió al mirar:** la campaña *MEMORIA DE CÁLCULO* está **pausada en
 OpenReply** mientras su workflow de GHL sigue publicado. El comentario se
 contesta, pero por GHL: no va a haber DM ni medición por OpenReply. Si es a

@@ -131,3 +131,37 @@ Este skill sigue sirviendo para las lecturas y el ajuste, pero la recolección p
 APIFY_TOKEN=xxx python3 scripts/refresh_matriz.py
 ```
 y la Action `.github/workflows/refresh-matriz.yml` lo corre solo cada semana.
+
+---
+
+## Historias y embudo de lead magnets (desde el 23-sep)
+
+**Las historias ya se miden solas.** `historias.yml` las lee cada 4 h porque
+la API de Instagram las borra a las 24 h: la corrida del lunes llegaría tarde a
+todas las de la semana. Quedan en `matriz-viral/fuentes/historias/historias.json`,
+una fila por frame, con alcance, respuestas, compartidos, visitas al perfil y
+la **navegación** (`tap_forward`, `tap_back`, `tap_exit`, `swipe_forward`).
+
+Cómo se leen en la revisión:
+- **Retención de la secuencia:** alcance del último frame ÷ alcance del
+  primero. La del 22-sep (Dynamo) fue 77 %: la referencia de momento.
+- **Dónde se cae:** el frame con más `tap_exit` + `swipe_forward`.
+- **Si el CTA funcionó:** respuestas del frame del CTA ÷ su alcance. El 22-sep:
+  13 / 593 = 2,2 %.
+- Las historias se agrupan por día (mismo `publicada` ±30 min) y se cruzan con
+  `historias-septiembre.py` para saber qué frame era cuál.
+
+**El embudo de cada lead magnet** está en
+`matriz-viral/fuentes/ghl/embudo-leadmagnets.json`: por palabra, cuántos
+contactos tienen `origen-bot-X` (el bot lo recogió), `lead-X` y `acceso-X`.
+Solo cuentas, ningún dato personal.
+
+**La regla que salió de ahí: publicado no es funcionando.** El 21-sep se dio
+por bueno que CHATGPT y DYNAMO tenían bot porque sus workflows estaban
+publicados. El embudo dijo después que nunca habían etiquetado a nadie. Antes
+de afirmar que un CTA de palabra «tiene quien lo conteste», mirar `bot_total`
+de esa palabra: si es 0, no lo tiene.
+
+**Y una respuesta a historia NO es un comentario.** Llega como DM. Un
+workflow «Comentario X» no la ve. Si la historia pide «Responde X», el
+workflow de X necesita también un disparador por mensaje.

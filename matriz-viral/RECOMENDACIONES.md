@@ -31,8 +31,9 @@ estado: 🔴 pendiente · 🟡 en curso · 🟢 hecho · ⚫ descartada (con el 
 | 12 | **Las historias no tienen ni un slot de venta** (0 de 7 días) y los 15 «mándales DM» de la guía no tienen ni un guion escrito. Resuelto en `HISTORIAS-VENTA.md`: jueves de venta + 5 guiones de DM | Auditoría historias 14-ago | Dayana | 🔴 |
 | 13 | **ACERO es solo el 20 % de las historias** (3 de 15) siendo el producto de mejor CPL. Subir a 6 | Auditoría historias 14-ago | Dayana | 🔴 |
 | 14 | **Decidir si ACERO abre cohorte este mes** y con cuántos cupos reales. Sin ese dato, la secuencia de cuenta regresiva no se publica | Auditoría historias 14-ago | Dayana | 🔴 |
-| 15 | ~~Comprobar en GHL si CHATGPT y MEMORIA están montadas~~ · **Resuelto:** Dayana confirma que están todos, y la sonda de GHL lo corrobora: las SEIS palabras tienen workflow `published` (`Comentario ZAPATA/ACERO/NIVEL/CHATGPT/MEMORIA/DYNAMO`). El cotejo ya lo mira solo | Revisión 21-sep | — | 🟢 |
+| 15 | **Los workflows CHATGPT y DYNAMO de GHL nunca han etiquetado a nadie** (0 contactos con `origen-bot-chatgpt` ni `origen-bot-dynamo`; MEMORIA 10 y ZAPATA 167 con la misma consulta). Existen y están publicados, pero no disparan. Abrir cada uno en GHL y revisar el disparador. *Se había dado por resuelto el 21-sep mirando solo que estuvieran publicados: fue un error.* | Embudo GHL 23-sep | Dayana / quien monte GHL | 🔴 |
 | 17 | **Decidir si la campaña MEMORIA DE CÁLCULO de OpenReply se reactiva.** Está pausada ahí mientras su workflow de GHL sigue publicado: el comentario se contesta, pero sin DM ni medición por OpenReply | Revisión 21-sep | Dayana | 🔴 |
+| 18 | **Las respuestas a historias no activan el bot.** La historia del 22-sep «Responde DYNAMO» tuvo **13 respuestas** y ninguna dejó etiqueta. Una respuesta a historia llega como **DM**, y los workflows se llaman «Comentario …»: escuchan comentarios. Añadir a cada workflow de palabra un segundo disparador por **mensaje de Instagram que contenga la palabra**, o cambiar el CTA de las historias a «comenta en el último post» | Historias 23-sep | quien monte GHL | 🔴 |
 | 16 | **Tres piezas del calendario siguen sin salir:** `pauta-guia` (Mar 8, reel), `lm-revit-chatgpt-feed` (Jue 10, carrusel) y `reel-advertencias` (Vie 18, reel). El del Jue 10 no necesita cámara | Revisión 21-sep | Contenido | 🔴 |
 
 ---
@@ -81,6 +82,26 @@ Estas ya no se discuten cada semana. Salieron de medir.
 ---
 
 ## Historial
+
+### 23-sep-2026 · Historias por API, y dos bots que nunca dispararon
+
+**Las historias ya se miden.** La API de Instagram las borra a las 24 h y
+nadie las estaba guardando; desde hoy `historias.yml` las lee cada 4 h. Las
+del 22-sep (lanzamiento del pack de Dynamo) se capturaron con 3 horas de
+margen:
+
+| Frame | Alcance | Respuestas | Salidas |
+|---|---|---|---|
+| «Fueron solo segundos» (video) | 767 | 3 | 76 |
+| «Yo no sé programar y lo uso igual» (video) | 656 | 0 | 33 |
+| «Son 5 scripts · Responde DYNAMO» | 593 | **13** | 49 |
+
+Se queda el **77 %** hasta el final, y el CTA saca **13 respuestas sobre 593
+(2,2 %)**. La historia funcionó.
+
+**Lo que no funcionó fue lo de después.** El embudo de GHL por etiquetas dice
+que el bot de DYNAMO —y el de CHATGPT— nunca han etiquetado a nadie. Solo 2
+personas recibieron el pack desde el martes. → recomendaciones #15 y #18.
 
 ### 21-sep-2026 · Los seis disparadores están montados (y el cotejo ya lo comprueba solo)
 

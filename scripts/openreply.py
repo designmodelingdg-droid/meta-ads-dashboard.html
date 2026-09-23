@@ -46,6 +46,9 @@ SALIDA = pathlib.Path("matriz-viral/fuentes/openreply")
 # corre en el mismo Action unos pasos antes. Se reutiliza en vez de pedir
 # los workflows otra vez.
 SONDA_GHL = pathlib.Path("matriz-viral/fuentes/ghl-sonda.json")
+# El embudo por etiquetas (embudo_leadmagnets.py). Es lo que dice si un
+# workflow publicado ha disparado alguna vez: «publicado» no lo garantiza.
+EMBUDO_GHL = pathlib.Path("matriz-viral/fuentes/ghl/embudo-leadmagnets.json")
 
 # Las seis palabras que la matriz declara activas (regla del 11-sep). Se
 # comparan contra lo que OpenReply tiene montado de verdad: esa diferencia es
@@ -379,6 +382,19 @@ def workflows_de_ghl(ruta_sonda):
             "publicados": [h for h in hits if h["estado"] == "published"],
             "en_borrador": [h for h in hits if h["estado"] != "published"],
         }
+    # Publicado no es lo mismo que funcionando: el 23-sep CHATGPT y DYNAMO
+    # estaban publicados y nunca habian etiquetado a nadie. Si el embudo esta,
+    # se anota cuantas veces disparo el bot de cada palabra.
+    try:
+        emb = json.load(open(EMBUDO_GHL, encoding="utf-8"))
+        for palabra, e in emb.get("embudos", {}).items():
+            if palabra in fuera["por_palabra"]:
+                bot = (e.get("etapas") or {}).get("bot") or {}
+                fuera["por_palabra"][palabra]["bot_total"] = bot.get("total")
+                fuera["por_palabra"][palabra]["bot_nuevos_7d"] = bot.get("nuevos_7d")
+        fuera["embudo_generado"] = emb.get("generado")
+    except (OSError, ValueError):
+        pass
     return fuera
 
 
@@ -426,6 +442,12 @@ def cotejar_con_la_matriz(por_palabra, campanas, hubo_fallo, ghl=None):
                 return ("No existe en OpenReply, y no se pudo mirar GoHighLevel "
                         "(falta la sonda). NO se afirma nada: los disparadores "
                         "de la matriz viven en GHL, que este conector no ve.")
+            if g["publicados"] and g.get("bot_total") == 0:
+                nombres = ", ".join(w["nombre"] for w in g["publicados"])
+                return (f"AVISO: en GoHighLevel está publicada ({nombres}) pero NUNCA "
+                        "ha etiquetado a nadie: 0 contactos con origen-bot en todo su "
+                        "historial. Publicado no es funcionando — hay que revisar el "
+                        "disparador. Y en OpenReply no está.")
             if g["publicados"]:
                 nombres = ", ".join(w["nombre"] for w in g["publicados"])
                 return (f"No está en OpenReply, pero SÍ en GoHighLevel y "
