@@ -191,21 +191,21 @@
    "creada": "2026-09-22T19:37:10.06",
    "actualizada": "2026-09-22T19:37:10.06",
    "cuenta": "design_modeling_dg",
-   "enviados": 2,
+   "enviados": 3,
    "fallidos": 0,
    "entregados_sin_confirmar": 0,
    "saltados": 0,
    "pendientes": 0,
    "primer_envio": "2026-09-22T19:38:56.264",
-   "ultimo_envio": "2026-09-22T19:40:31.401",
-   "clics": 1,
-   "clics_limpios": 1,
+   "ultimo_envio": "2026-09-23T18:17:24.041",
+   "clics": 2,
+   "clics_limpios": 2,
    "clics_con_bots": 0,
    "enlaces_rastreados": 1,
    "mide_clics": true,
-   "clics_por_dm": 0.5,
-   "ctr": 0.5,
-   "lectura_clics": "1 clics limpios sobre 2 DM enviados (50%). Son aperturas, no personas: la misma persona puede contar varias veces."
+   "clics_por_dm": 0.67,
+   "ctr": 0.6667,
+   "lectura_clics": "2 clics limpios sobre 3 DM enviados (67%). Son aperturas, no personas: la misma persona puede contar varias veces."
   },
   {
    "id": "cmu5ojpv7000004lbovu2ost5",
@@ -273,23 +273,23 @@
    "lectura_clics": "1 clics limpios sobre 1 DM enviados (100%). Son aperturas, no personas: la misma persona puede contar varias veces."
   },
   {
-   "id": "cmuebgoip000804jy0run8y19",
-   "nombre": "TUTOR IA ACERO",
+   "id": "cmuebgnsu000604jyzxl3pnjz",
+   "nombre": "PACK DYNAMO",
    "palabras": [
-    "TUTOR"
+    "DYNAMO"
    ],
    "casa_palabra_parcial": false,
    "cualquier_post": false,
    "dispara_con_dm": true,
    "exige_seguir": true,
    "activa": true,
-   "post_id": "18111245060148632",
-   "post_url": "https://www.instagram.com/p/DdmKz_mjQy3/",
-   "creada": "2026-09-23T16:27:40.705",
-   "actualizada": "2026-09-23T16:27:40.705",
+   "post_id": "17968164066156025",
+   "post_url": "https://www.instagram.com/reel/Ddm_IPUCh-C/",
+   "creada": "2026-09-23T16:27:39.774",
+   "actualizada": "2026-09-23T16:27:39.774",
    "cuenta": "design_modeling_dg",
    "enviados": 0,
-   "fallidos": 0,
+   "fallidos": 1,
    "entregados_sin_confirmar": 0,
    "saltados": 0,
    "pendientes": 0,
@@ -305,20 +305,20 @@
    "lectura_clics": "Mide clics, pero todavía no ha enviado ningún DM."
   },
   {
-   "id": "cmuebgnsu000604jyzxl3pnjz",
-   "nombre": "PACK DYNAMO",
+   "id": "cmuebgoip000804jy0run8y19",
+   "nombre": "TUTOR IA ACERO",
    "palabras": [
-    "DYNAMO"
+    "TUTOR"
    ],
    "casa_palabra_parcial": false,
    "cualquier_post": false,
    "dispara_con_dm": true,
    "exige_seguir": true,
    "activa": true,
-   "post_id": "17968164066156025",
-   "post_url": "https://www.instagram.com/reel/Ddm_IPUCh-C/",
-   "creada": "2026-09-23T16:27:39.774",
-   "actualizada": "2026-09-23T16:27:39.774",
+   "post_id": "18111245060148632",
+   "post_url": "https://www.instagram.com/p/DdmKz_mjQy3/",
+   "creada": "2026-09-23T16:27:40.705",
+   "actualizada": "2026-09-23T16:27:40.705",
    "cuenta": "design_modeling_dg",
    "enviados": 0,
    "fallidos": 0,
@@ -395,6 +395,17 @@
   },
   {
    "palabra": "BIM",
+   "campana": "5 ERRORES REVIT",
+   "campana_activa": true,
+   "enviados": 3,
+   "fallidos": 0,
+   "entregados_sin_confirmar": 0,
+   "saltados": 0,
+   "primer_envio": "2026-09-22T19:38:56.264",
+   "ultimo_envio": "2026-09-23T18:17:24.041"
+  },
+  {
+   "palabra": "BIM",
    "campana": "CHECKLIST NAVISWORKS",
    "campana_activa": true,
    "enviados": 2,
@@ -403,17 +414,6 @@
    "saltados": 0,
    "primer_envio": "2026-09-17T15:29:00.203",
    "ultimo_envio": "2026-09-17T15:29:00.763"
-  },
-  {
-   "palabra": "BIM",
-   "campana": "5 ERRORES REVIT",
-   "campana_activa": true,
-   "enviados": 2,
-   "fallidos": 0,
-   "entregados_sin_confirmar": 0,
-   "saltados": 0,
-   "primer_envio": "2026-09-22T19:38:56.264",
-   "ultimo_envio": "2026-09-22T19:40:31.401"
   },
   {
    "palabra": "RUTA",
@@ -425,9 +425,48 @@
    "saltados": 0,
    "primer_envio": "2026-09-23T16:23:56.895",
    "ultimo_envio": "2026-09-23T16:23:56.895"
+  },
+  {
+   "palabra": "DYNAMO",
+   "campana": "PACK DYNAMO",
+   "campana_activa": true,
+   "enviados": 0,
+   "fallidos": 1,
+   "entregados_sin_confirmar": 0,
+   "saltados": 0,
+   "primer_envio": null,
+   "ultimo_envio": null
   }
  ],
  "motivos_de_fallo": [
+  {
+   "estado": "FAILED",
+   "pero_si_se_entrego": false,
+   "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=AW2RsbYSQUjsSlTA461zkOH]",
+   "veces": 1,
+   "ultima_vez": "2026-09-23T20:46:52.533"
+  },
+  {
+   "estado": "FAILED",
+   "pero_si_se_entrego": true,
+   "motivo": "MetaApiError 1: An unknown error has occurred. (/v25.0/17841404048578200/messages) [code=1 sub=- type=OAuthException trace=AK8IoGPQfOgv-EaK82LvKAs]",
+   "veces": 1,
+   "ultima_vez": "2026-09-12T22:07:41.536"
+  },
+  {
+   "estado": "FAILED",
+   "pero_si_se_entrego": true,
+   "motivo": "MetaApiError 1: An unknown error has occurred. (/v25.0/17841404048578200/messages) [code=1 sub=- type=OAuthException trace=AZDnjfXD1G9U8-ueKVn7rwo]",
+   "veces": 1,
+   "ultima_vez": "2026-09-17T13:45:31.033"
+  },
+  {
+   "estado": "FAILED",
+   "pero_si_se_entrego": true,
+   "motivo": "MetaApiError 1: An unknown error has occurred. (/v25.0/17841404048578200/messages) [code=1 sub=- type=OAuthException trace=AmlIrWHBoNrHDhK7I2rX2gV]",
+   "veces": 1,
+   "ultima_vez": "2026-09-17T13:45:31.022"
+  },
   {
    "estado": "FAILED",
    "pero_si_se_entrego": true,
@@ -445,30 +484,9 @@
   {
    "estado": "FAILED",
    "pero_si_se_entrego": true,
-   "motivo": "MetaApiError 1: An unknown error has occurred. (/v25.0/17841404048578200/messages) [code=1 sub=- type=OAuthException trace=AK8IoGPQfOgv-EaK82LvKAs]",
-   "veces": 1,
-   "ultima_vez": "2026-09-12T22:07:41.536"
-  },
-  {
-   "estado": "FAILED",
-   "pero_si_se_entrego": true,
    "motivo": "MetaApiError 1: An unknown error has occurred. (/v25.0/17841404048578200/messages) [code=1 sub=- type=OAuthException trace=AcFWhfypEeEPuN-HW5NVB-H]",
    "veces": 1,
    "ultima_vez": "2026-09-17T15:28:57.984"
-  },
-  {
-   "estado": "FAILED",
-   "pero_si_se_entrego": true,
-   "motivo": "MetaApiError 1: An unknown error has occurred. (/v25.0/17841404048578200/messages) [code=1 sub=- type=OAuthException trace=AZDnjfXD1G9U8-ueKVn7rwo]",
-   "veces": 1,
-   "ultima_vez": "2026-09-17T13:45:31.033"
-  },
-  {
-   "estado": "FAILED",
-   "pero_si_se_entrego": true,
-   "motivo": "MetaApiError 1: An unknown error has occurred. (/v25.0/17841404048578200/messages) [code=1 sub=- type=OAuthException trace=AmlIrWHBoNrHDhK7I2rX2gV]",
-   "veces": 1,
-   "ultima_vez": "2026-09-17T13:45:31.022"
   },
   {
    "estado": "SKIPPED_DEDUP",
@@ -535,26 +553,15 @@
    "ultimo_clic": "2026-09-18T18:23:36.952"
   },
   {
-   "slug": "eNT4UrTlxg",
-   "etiqueta": "Primary campaign link",
-   "destino": "https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form",
-   "campana": "4 PUERTAS RUTA BIM",
-   "clics": 1,
-   "clics_limpios": 1,
-   "clics_con_bots": 0,
-   "primer_clic": "2026-09-23T16:25:38.924",
-   "ultimo_clic": "2026-09-23T16:25:38.924"
-  },
-  {
    "slug": "-ynblNwTaQ",
    "etiqueta": "Primary campaign link",
    "destino": "https://funnel.dgdesignmodeling.com/acceso-gratis-guia-revit-chatgpt-form",
    "campana": "5 ERRORES REVIT",
-   "clics": 1,
-   "clics_limpios": 1,
+   "clics": 2,
+   "clics_limpios": 2,
    "clics_con_bots": 0,
    "primer_clic": "2026-09-22T19:40:49.607",
-   "ultimo_clic": "2026-09-22T19:40:49.607"
+   "ultimo_clic": "2026-09-23T18:17:53.758"
   },
   {
    "slug": "iJX0Y_omBA",
@@ -566,6 +573,17 @@
    "clics_con_bots": 0,
    "primer_clic": "2026-09-17T15:29:11.889",
    "ultimo_clic": "2026-09-17T15:29:11.889"
+  },
+  {
+   "slug": "eNT4UrTlxg",
+   "etiqueta": "Primary campaign link",
+   "destino": "https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form",
+   "campana": "4 PUERTAS RUTA BIM",
+   "clics": 1,
+   "clics_limpios": 1,
+   "clics_con_bots": 0,
+   "primer_clic": "2026-09-23T16:25:38.924",
+   "ultimo_clic": "2026-09-23T16:25:38.924"
   },
   {
    "slug": "T-7xnWGVLA",
@@ -628,7 +646,7 @@
   },
   {
    "fecha": "2026-09-23",
-   "clics": 2,
+   "clics": 3,
    "limpio": true
   }
  ],
@@ -683,7 +701,7 @@
   },
   {
    "fecha": "2026-09-23",
-   "enviados": 4
+   "enviados": 5
   }
  ],
  "seguidores": [
@@ -932,7 +950,7 @@
     "bot_nuevos_7d": 0
    }
   },
-  "embudo_generado": "2026-09-23T17:58Z"
+  "embudo_generado": "2026-09-23T18:02Z"
  },
  "cotejo_con_la_matriz": [
   {
@@ -1004,8 +1022,8 @@
     "5 ERRORES REVIT",
     "CHECKLIST NAVISWORKS"
    ],
-   "dms_enviados": 4,
-   "lectura": "Viva: 4 DM enviados."
+   "dms_enviados": 5,
+   "lectura": "Viva: 5 DM enviados."
   },
   {
    "palabra": "GUIA",
