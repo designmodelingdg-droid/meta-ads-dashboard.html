@@ -76,13 +76,25 @@ Se pega **una sola línea**, y solo en el Diplomado:
    «IA» abajo a la derecha.
 
 **No pegarla en el Portal del cliente** (Configuración → Creación de marca →
-Avanzado): eso la cargaría en todos los cursos. Si algún día hiciera falta
-ponerla ahí, se pega esta otra versión, que solo la muestra en las páginas del
-Diplomado:
+Avanzado): va en el producto.
+
+**Si la pegaron en «Código de seguimiento del encabezado»**, ahí tiene que ir
+envuelta en etiquetas, o no se ejecuta:
 
 ```
-window.DMA_TUTOR_SOLO_DIPLOMADO=true;(function(){var s=document.createElement('script');s.src='https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/tutor-diplomado-estructuras/burbuja.js';s.defer=true;document.head.appendChild(s);})();
+<script>(function(){var s=document.createElement('script');s.src='https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/tutor-diplomado-estructuras/burbuja.js';s.defer=true;document.head.appendChild(s);})();</script>
 ```
+
+Lo más simple es dejar solo una de las dos: la de «Javascript personalizado»
+sin etiquetas, o la del encabezado con etiquetas. (Si quedan las dos, no pasa
+nada: sale una sola burbuja.)
+
+**Alumnos con el Acero y el Diplomado** (revisión del 24-sep): el portal no
+recarga la página al cambiar de curso. La burbuja mira la dirección cada
+segundo y muestra el tutor del curso en el que está el alumno: en el Diplomado
+el del Diplomado, en el Acero el del Acero, y en un curso sin tutor (Uniones o
+Modelado BIM vendidos aparte) no sale. El ID de cada producto lo toma de la
+dirección al cargar; el del Diplomado además va escrito en el código.
 
 El botón de la portada puede quedarse: son dos entradas al mismo tutor.
 

@@ -12,33 +12,50 @@
    Vive aqui, y no pegado entero en GHL, para poder corregirlo sin volver a
    tocar GoHighLevel: lo que se publica en Pages le llega a la burbuja solo.
 
-   Si alguien pega la linea en el nivel del PORTAL (que se carga en todos los
-   cursos), la burbuja solo aparece en las paginas del Diplomado: se reconoce
-   por el ID del producto en la direccion. El portal de GHL cambia de pagina
-   sin recargar, asi que eso se vuelve a mirar cada segundo.
+   Cada burbuja se muestra solo en las paginas de SU producto (por el ID en
+   la direccion), y el portal de GHL cambia de pagina sin recargar, asi que
+   eso se vuelve a mirar cada segundo. Ver «EL PORTAL NO RECARGA» abajo.
 */
 (function () {
-  if (window.__dmaTutorBurbuja) return;          // pegado dos veces: una sola burbuja
-  window.__dmaTutorBurbuja = true;
-
-  // UN archivo para los dos tutores (24-sep). La linea de GHL dice cual con
-  // «?programa=acero» en la direccion del script; sin eso es el Diplomado,
-  // que fue el primero en pegarse. Cada curso abre SU tutor: un alumno del
-  // Acero no puede recibir respuestas con clases del Diplomado, ni al reves.
+  // UN archivo para los dos tutores. La linea de GHL dice cual con
+  // «?programa=acero» en la direccion del script; sin eso es el Diplomado.
+  // Cada curso abre SU tutor: un alumno del Acero no puede recibir respuestas
+  // con clases del Diplomado, ni al reves.
   var BASE = 'https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/';
   var PROGRAMAS = {
     diplomado: { tutor: BASE + 'tutor-diplomado-estructuras/', nombre: 'Diplomado',
                  producto: 'b252f808-ce76-40b6-ba07-b9e13e29b4f4' },
-    acero:     { tutor: BASE + 'tutor-acero/', nombre: 'Acero', producto: null }
+    acero:     { tutor: BASE + 'tutor-acero/', nombre: 'Acero',
+                 producto: window.DMA_TUTOR_PRODUCTO_ACERO || null }
   };
   var yo = (document.currentScript && document.currentScript.src) || '';
-  var P = PROGRAMAS[/[?&]programa=acero\b/.test(yo) || window.DMA_TUTOR_PROGRAMA === 'acero'
-                    ? 'acero' : 'diplomado'];
-  var TUTOR = P.tutor;
-  // Nivel producto: se muestra donde se cargue. Nivel portal (todos los
-  // cursos): solo si la linea lo pide, y solo en paginas con el ID del producto.
-  var soloDiplomado = P.producto && !!window.DMA_TUTOR_SOLO_DIPLOMADO;
-  var PRODUCTO = P.producto;
+  var clave = /[?&]programa=acero\b/.test(yo) || window.DMA_TUTOR_PROGRAMA === 'acero'
+              ? 'acero' : 'diplomado';
+
+  /* EL PORTAL NO RECARGA AL CAMBIAR DE CURSO (revision del 24-sep).
+     Un alumno con los dos programas pasa del Acero al Diplomado sin recargar:
+     GHL carga la linea del segundo curso, pero la primera burbuja ya esta
+     montada. Antes la segunda se descartaba y el Diplomado mostraba el tutor
+     del Acero. Ahora hay UN registro compartido: cada linea que se carga
+     anota su programa y el ID de su producto, y una sola burbuja decide cada
+     segundo cual toca segun la direccion.
+
+     El ID del producto sale de la propia direccion en el momento de cargar:
+     GHL corre el codigo del producto estando dentro de ese producto
+     (/courses/products/<ID>/...). El del Diplomado ademas va escrito. */
+  var R = window.__dmaTutor = window.__dmaTutor || { progs: {}, montado: false };
+  var enUrl = location.href.match(/\/products\/([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})/i);
+  var idAhora = enUrl ? enUrl[1].toLowerCase() : null;
+  var reg = R.progs[clave];
+  if (!reg) {
+    reg = R.progs[clave] = { clave: clave, tutor: PROGRAMAS[clave].tutor,
+                             nombre: PROGRAMAS[clave].nombre,
+                             id: PROGRAMAS[clave].producto || idAhora };
+  } else if (!reg.id && idAhora) {
+    reg.id = idAhora;
+  }
+  if (R.montado) { if (R.revisar) R.revisar(); return; }   // la burbuja ya existe
+  R.montado = true;
 
   var css = [
     '#dma-tb-boton{position:fixed;right:20px;bottom:20px;z-index:2147483000;width:60px;height:60px;',
@@ -67,7 +84,8 @@
     '@media (prefers-reduced-motion:reduce){#dma-tb-boton{transition:none}}'
   ].join('');
 
-  var boton, etiqueta, panel, marco;
+  var boton, etiqueta, panel, marco, titulo, enlace;
+  var activo = null;          // programa cuya burbuja se ve ahora
 
   function montar() {
     var st = document.createElement('style');
@@ -78,7 +96,7 @@
     boton = document.createElement('button');
     boton.id = 'dma-tb-boton';
     boton.type = 'button';
-    boton.setAttribute('aria-label', 'Abrir el Tutor IA del ' + P.nombre);
+    boton.setAttribute('aria-label', 'Abrir el Tutor IA');
     boton.setAttribute('aria-expanded', 'false');
     boton.textContent = 'IA';
 
@@ -90,11 +108,13 @@
     panel = document.createElement('div');
     panel.id = 'dma-tb-panel';
     panel.setAttribute('role', 'dialog');
-    panel.setAttribute('aria-label', 'Tutor IA del ' + P.nombre);
+    panel.setAttribute('aria-label', 'Tutor IA');
     panel.innerHTML =
-      '<div id="dma-tb-cab"><span>Tutor IA \u00b7 ' + P.nombre + '</span>' +
-      '<a href="' + TUTOR + '" target="_blank" rel="noopener" title="Abrir en pantalla completa">Pantalla completa \u2197</a>' +
+      '<div id="dma-tb-cab"><span></span>' +
+      '<a target="_blank" rel="noopener" title="Abrir en pantalla completa">Pantalla completa \u2197</a>' +
       '<button type="button" aria-label="Cerrar el tutor">\u00d7</button></div>';
+    titulo = panel.querySelector('span');
+    enlace = panel.querySelector('a');
 
     boton.addEventListener('click', alternar);
     panel.querySelector('button').addEventListener('click', cerrar);
@@ -104,7 +124,7 @@
     // Con el cursor dentro del chat, las teclas las recibe el iframe: el tutor
     // avisa con un mensaje y aqui se cierra. Solo se acepta si viene del tutor.
     window.addEventListener('message', function (e) {
-      if (e.data === 'dma-tb-cerrar' && TUTOR.indexOf(e.origin) === 0) cerrar();
+      if (e.data === 'dma-tb-cerrar' && BASE.indexOf(e.origin) === 0) cerrar();
     });
 
     document.body.appendChild(panel);
@@ -117,8 +137,8 @@
     // la clase no paga ni un byte ni despierta el servidor.
     if (!marco) {
       marco = document.createElement('iframe');
-      marco.src = TUTOR + '?burbuja=1';
-      marco.title = 'Tutor IA del ' + P.nombre;
+      marco.src = activo.tutor + '?burbuja=1';
+      marco.title = 'Tutor IA del ' + activo.nombre;
       panel.appendChild(marco);
     }
     panel.classList.add('abierto');
@@ -141,14 +161,49 @@
     if (!si) { panel.classList.remove('abierto'); if (etiqueta) etiqueta.style.display = 'none'; }
   }
 
+  /* Cual toca. 1) El programa cuyo producto aparece en la direccion.
+     2) Si la direccion es de OTRO producto (p. ej. Uniones vendido aparte, que
+        no trae tutor): ninguno.
+     3) Si la direccion no nombra ningun producto (paginas sin ID): se queda
+        el ultimo que estuvo activo; la primera vez, el unico registrado.   */
+  function elegir() {
+    var m = location.href.match(/\/products\/([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})/i);
+    var id = m ? m[1].toLowerCase() : null;
+    var k, p;
+    if (id) {
+      for (k in R.progs) { p = R.progs[k]; if (p.id && p.id.toLowerCase() === id) return p; }
+      return null;
+    }
+    if (activo) return activo;
+    var claves = Object.keys(R.progs);
+    return claves.length === 1 ? R.progs[claves[0]] : null;
+  }
+
   function revisar() {
-    visible(!soloDiplomado || location.href.indexOf(PRODUCTO) !== -1);
+    var p = elegir();
+    if (p !== activo) {
+      // Cambio de curso: se cierra el panel y el tutor anterior se descarta,
+      // para que el siguiente abra el del curso nuevo y no el de antes.
+      activo = p;
+      panel.classList.remove('abierto');
+      boton.textContent = 'IA';
+      boton.setAttribute('aria-expanded', 'false');
+      if (marco) { marco.remove(); marco = null; }
+      if (p) {
+        titulo.textContent = 'Tutor IA \u00b7 ' + p.nombre;
+        enlace.href = p.tutor;
+        boton.setAttribute('aria-label', 'Abrir el Tutor IA del ' + p.nombre);
+      }
+    }
+    visible(!!p);
   }
 
   function arrancar() {
     montar();
+    R.revisar = revisar;
     revisar();
-    if (soloDiplomado) setInterval(revisar, 1000);
+    // El portal cambia de pagina sin recargar: se mira la direccion cada segundo.
+    setInterval(revisar, 1000);
   }
 
   if (document.body) arrancar();
