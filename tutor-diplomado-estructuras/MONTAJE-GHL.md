@@ -53,6 +53,46 @@ mientras se estudia.
 
 ---
 
+## La burbuja dentro del curso (24-sep)
+
+Además del botón, el tutor puede ir como una **burbuja abajo a la derecha** en
+todas las páginas del Diplomado: el alumno la toca y el tutor se abre en un
+panel encima de la clase, sin salir de ella (en el móvil ocupa la pantalla).
+
+Se pega **una sola línea**, y solo en el Diplomado:
+
+1. **Suscripciones → Cursos → Productos →** «Diplomado Universitario
+   Internacional BIM: Edificaciones de Acero Estructural y Hormigón Armado»
+   **→ Configuración** (menú de la izquierda).
+2. Bajar hasta el final y abrir **«Avanzada»**.
+3. En la pestaña **«Javascript personalizado»** pegar exactamente esto (sin
+   etiquetas `<script>`):
+
+```
+(function(){var s=document.createElement('script');s.src='https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/tutor-diplomado-estructuras/burbuja.js';s.defer=true;document.head.appendChild(s);})();
+```
+
+4. **Guardar**, abrir el curso como alumno y comprobar que sale la burbuja
+   «IA» abajo a la derecha.
+
+**No pegarla en el Portal del cliente** (Configuración → Creación de marca →
+Avanzado): eso la cargaría en todos los cursos. Si algún día hiciera falta
+ponerla ahí, se pega esta otra versión, que solo la muestra en las páginas del
+Diplomado:
+
+```
+window.DMA_TUTOR_SOLO_DIPLOMADO=true;(function(){var s=document.createElement('script');s.src='https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/tutor-diplomado-estructuras/burbuja.js';s.defer=true;document.head.appendChild(s);})();
+```
+
+El botón de la portada puede quedarse: son dos entradas al mismo tutor.
+
+Si la burbuja no aparece: el campo de «Javascript personalizado» del producto
+no se pudo inspeccionar por dentro, así que cabe que no acepte JavaScript. En
+ese caso, probar la misma línea envuelta en `<script>…</script>` en
+**«Código de seguimiento del encabezado»** del mismo producto.
+
+---
+
 ## Comprobar antes de darlo por hecho
 
 Abrir el curso **como alumno** y pulsar el botón. Preguntar, por ejemplo:
