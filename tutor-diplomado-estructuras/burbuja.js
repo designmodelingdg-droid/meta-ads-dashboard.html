@@ -26,7 +26,8 @@
     diplomado: { tutor: BASE + 'tutor-diplomado-estructuras/', nombre: 'Diplomado',
                  producto: 'b252f808-ce76-40b6-ba07-b9e13e29b4f4' },
     acero:     { tutor: BASE + 'tutor-acero/', nombre: 'Acero',
-                 producto: window.DMA_TUTOR_PRODUCTO_ACERO || null }
+                 // Especializacion en Acero (Tutor IA incluido), dato de GHL 24-sep
+                 producto: 'c1979fd7-46b8-44dc-b8ce-aafc8fb439a0' }
   };
   var yo = (document.currentScript && document.currentScript.src) || '';
   var clave = /[?&]programa=acero\b/.test(yo) || window.DMA_TUTOR_PROGRAMA === 'acero'
@@ -42,7 +43,7 @@
 
      El ID del producto sale de la propia direccion en el momento de cargar:
      GHL corre el codigo del producto estando dentro de ese producto
-     (/courses/products/<ID>/...). El del Diplomado ademas va escrito. */
+     (/courses/products/<ID>/...). Los dos ademas van escritos arriba. */
   var R = window.__dmaTutor = window.__dmaTutor || { progs: {}, montado: false };
   var enUrl = location.href.match(/\/products\/([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})/i);
   var idAhora = enUrl ? enUrl[1].toLowerCase() : null;

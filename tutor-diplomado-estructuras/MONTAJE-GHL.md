@@ -93,8 +93,9 @@ nada: sale una sola burbuja.)
 recarga la página al cambiar de curso. La burbuja mira la dirección cada
 segundo y muestra el tutor del curso en el que está el alumno: en el Diplomado
 el del Diplomado, en el Acero el del Acero, y en un curso sin tutor (Uniones o
-Modelado BIM vendidos aparte) no sale. El ID de cada producto lo toma de la
-dirección al cargar; el del Diplomado además va escrito en el código.
+Modelado BIM vendidos aparte) no sale. Los ID de los dos productos van
+escritos en el código: Diplomado `b252f808-ce76-40b6-ba07-b9e13e29b4f4`,
+Acero `c1979fd7-46b8-44dc-b8ce-aafc8fb439a0`.
 
 El botón de la portada puede quedarse: son dos entradas al mismo tutor.
 

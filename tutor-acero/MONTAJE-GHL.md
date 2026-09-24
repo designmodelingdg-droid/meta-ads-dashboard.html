@@ -88,6 +88,12 @@ respuestas con clases que no compró. Tampoco va en el Portal del cliente ni en
 los cursos sueltos de Uniones o Modelado BIM que se venden aparte: el tutor
 va incluido solo en la Especialización.
 
+**Pegada el 24-sep** en «Especialización en Diseño Estructural BIM en Acero
+para Edificaciones (Tutor IA incluido)», producto
+`c1979fd7-46b8-44dc-b8ce-aafc8fb439a0`. Ese ID va escrito en `burbuja.js`: la
+burbuja del Acero solo aparece en páginas de ese producto, y en un alumno que
+tiene también el Diplomado cambia de tutor sola al pasar de un curso a otro.
+
 Si la burbuja no aparece, probar la misma línea envuelta en
 `<script>…</script>` en **«Código de seguimiento del encabezado»** del mismo
 producto.
