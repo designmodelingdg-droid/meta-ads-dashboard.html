@@ -91,6 +91,8 @@
            padding:4px 9px;border-radius:99px;opacity:.92}
   .msg p{margin:0 0 .55em} .msg ul,.msg ol{margin:.2em 0 .7em;padding-left:1.3em} .msg li{margin:.25em 0}
   .msg .tit{font-weight:700;margin:.6em 0 .3em} .msg .fuentes{margin-top:.8em;padding-top:.6em;border-top:1px solid rgba(127,127,127,.25);font-size:.85em;opacity:.8}
+  .msg figure.captura{margin:.8em 0 0} .msg figure.captura img{display:block;width:100%;height:auto;border-radius:10px;border:1px solid rgba(127,127,127,.25)}
+  .msg figure.captura figcaption{font-size:.78em;opacity:.75;margin-top:.35em}
 </style>
 </head>
 <body>
@@ -241,6 +243,17 @@ async function enviar(){
     }
     let html='<div class="quien">Tutor DMA</div>'+formatear(d.respuesta);
     espera.innerHTML=html;
+    /* La imagen de la clase en el minuto citado (24-sep). Si el servidor no
+       la puede sacar, la figura desaparece sola y queda la respuesta. */
+    for(const c of (d.capturas||[])){
+      const f=document.createElement('figure'); f.className='captura';
+      const a=document.createElement('a'); a.href=SERVICIO_URL+c.url; a.target='_blank'; a.rel='noopener';
+      const im=document.createElement('img'); im.src=SERVICIO_URL+c.url; im.loading='lazy';
+      im.alt='Así se ve en tu clase: '+c.pie; im.onerror=()=>f.remove();
+      im.onload=()=>{chat.scrollTop=chat.scrollHeight;};
+      const fc=document.createElement('figcaption'); fc.textContent='Así se ve en tu clase · '+c.pie;
+      a.appendChild(im); f.appendChild(a); f.appendChild(fc); espera.appendChild(f);
+    }
     if(typeof d.restantes==='number') pintarUso(d.restantes, TOPE_DIA);
   }catch(e){
     espera.innerHTML='<div class="quien">Tutor DMA</div>Sin conexión con el tutor. '+
