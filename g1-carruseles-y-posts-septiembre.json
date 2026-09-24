@@ -1,0 +1,485 @@
+{
+  "generado": "2026-09-14",
+  "de": "Matriz de septiembre 2026 · Design Modeling Academy",
+  "alcance": "SOLO Grupo 1 (feed) y SOLO CARRUSEL y POST PLANO. Los reels y los demas grupos quedan fuera a proposito.",
+  "version_artefacto": 17,
+  "como_leer_las_diapositivas": "Cada diapositiva trae `n` (su numero), `texto` (lo que se lee) y `visual` (la direccion de arte). El texto NO repite el numero: ese prefijo se quito porque en el artefacto salia dos veces.",
+  "avisos": [
+    "Lun 21: El calendario dice 8 diapositivas y hay 7. Las 7 escritas estan completas (portada, cuerpo y cierre): lo que esta mal es la etiqueta del calendario. Pedir 7 imagenes.",
+    "Jue 1 oct: la campaña MEMORIA de OpenReply está pausada y atada a otro post; montarla para este post el mismo día (ver «aviso» de la pieza)."
+  ],
+  "total": 10,
+  "carruseles": 7,
+  "posts_planos": 3,
+  "completas": 10,
+  "piezas": [
+    {
+      "fecha": "Lun 7",
+      "semana": "Semana 1 (7-13 sep)",
+      "formato": "CARRUSEL (6 slides)",
+      "id": "ago-3-senales-bim-ia",
+      "estado": "COMPLETA",
+      "fuente": "guiones-completos.json",
+      "titulo": "3 señales de que tu oficina ya necesita BIM + IA",
+      "eje": "NUCLEO-IA",
+      "pilar": "Educativo",
+      "hook": "3 señales de que tu oficina YA necesita BIM + IA (la #2 te está costando plata).",
+      "slides": [
+        {
+          "n": 1,
+          "texto": "3 señales de que tu oficina YA necesita BIM + IA (la #2 te está costando plata) →",
+          "visual": "Portada. Fondo azul liso, título en 3 líneas con «3 SEÑALES» grande y «#2» en naranja. Sin imagen: el hook es el texto."
+        },
+        {
+          "n": 2,
+          "texto": "01 · Repites tareas que una máquina haría igual: renders, cantidades, documentación.",
+          "visual": "Número 01 en naranja. Ilustración de un reloj con tres tareas repetidas en bucle (flecha circular). Texto a la derecha."
+        },
+        {
+          "n": 3,
+          "texto": "02 · Descubres los choques en OBRA, no en el modelo. (Eso cuesta miles.)",
+          "visual": "Número 02. Split: a la izquierda un modelo con el choque visible; a la derecha una foto de obra con el mismo choque marcado en rojo. Este es el slide que duele: dale el mayor peso."
+        },
+        {
+          "n": 4,
+          "texto": "03 · Tu competencia entrega más rápido y no sabes cómo lo hacen.",
+          "visual": "Número 03. Dos barras de tiempo de entrega lado a lado — la de la competencia mucho más corta, en naranja."
+        },
+        {
+          "n": 5,
+          "texto": "Si te pasan 2 de 3, no es falta de gente — es falta de flujo BIM + IA.",
+          "visual": "Slide de mensaje. Texto grande centrado sobre azul, con «no es falta de gente» tachado y «es falta de flujo» destacado."
+        },
+        {
+          "n": 6,
+          "texto": "¿Cuántas te pasan? Comenta “BIM” o “IA” y te ayudo a cerrarlas.",
+          "visual": "Cierre. Fondo naranja invertido (naranja de fondo, texto azul). «¿Cuántas te pasan?» arriba y el CTA con BIM/IA en recuadro."
+        }
+      ],
+      "caption": "No es que necesites más gente. Necesitas mejor flujo. Estas son las 3 señales de que tu oficina ya está lista para BIM + IA:\n1. Repites tareas que una máquina haría igual.\n2. Descubres los choques en obra, no en el modelo.\n3. La competencia entrega más rápido.\n\n💬 Comenta “BIM” o “IA” y te cuento por dónde empezar.\n\n#BIM #IA #Productividad #Arquitectura #Ingeniería #DesignModelingDG",
+      "cta": {
+        "instagram": "Comenta “BIM” o “IA” y te mando la info por DM.",
+        "tiktok": "Comenta “BIM” o “IA” · link en bio.",
+        "linkedin": "3 señales de que una oficina ya necesita BIM + IA. ¿Cuántas ven en la suya?",
+        "youtube": "Todo el paso a paso en el video · link en la descripción."
+      },
+      "prompt_imagenes": "Carrusel IG 4:5 (1080×1350), 6 slides. Fondo azul marino #0E2438, acento naranja #EE8A3C, texto blanco. Tipografía sans gruesa. Números 01/02/03 gigantes en naranja. Estética técnica y limpia, sin fotos de stock. Firma abajo-izq «DG · @design_modeling_dg», número de slide arriba-der. Un slide por mensaje. Español, sin marcas de agua."
+    },
+    {
+      "fecha": "Jue 10",
+      "semana": "Semana 1 (7-13 sep)",
+      "formato": "CARRUSEL (7 slides) — EXTRA lanzamiento de recurso",
+      "id": "lm-revit-chatgpt-feed",
+      "estado": "COMPLETA",
+      "fuente": "leadmagnets-septiembre.json",
+      "titulo": "Guia «Revit + ChatGPT»: 5 de los 10 errores, con lo que significan de verdad",
+      "eje": "LEAD MAGNET",
+      "palabra_clave": "CHATGPT",
+      "hook": "El mensaje de error de Revit casi nunca dice cuál es el problema.",
+      "slides": [
+        {
+          "n": 1,
+          "texto": "EL MENSAJE DE ERROR TE ESTÁ DICIENDO OTRA COSA. Cinco de los diez que más tiempo hacen perder, y qué significan de verdad.",
+          "visual": ""
+        },
+        {
+          "n": 2,
+          "texto": "«No aparece en la vista» — y el elemento SÍ está. Es el que más tiempo hace perder de toda la lista, y casi nunca es un error: el elemento existe, pero la vista está configurada para no mostrarlo.",
+          "visual": ""
+        },
+        {
+          "n": 3,
+          "texto": "«Highlighted walls overlap». Dos muros ocupando el mismo espacio. Revit sigue trabajando, pero al calcular áreas de habitación va a ignorar uno de los dos — y el cuadro de áreas sale mal SIN AVISAR.",
+          "visual": ""
+        },
+        {
+          "n": 4,
+          "texto": "«There are identical instances in the same place». Dos elementos idénticos, uno exactamente encima del otro. Los planos se ven bien. El cuadro de cantidades cuenta el doble.",
+          "visual": ""
+        },
+        {
+          "n": 5,
+          "texto": "«Elements are joined but do not intersect». Siguen unidos, pero ya no se tocan: normalmente porque uno se movió después.",
+          "visual": ""
+        },
+        {
+          "n": 6,
+          "texto": "«The linked file could not be found». El vínculo apunta a una ruta que ya no existe. Alguien movió, renombró o guardó en otra carpeta.",
+          "visual": ""
+        },
+        {
+          "n": 7,
+          "texto": "Los diez, cada uno con su prompt. Y la página que importa más que las otras diez: cómo comprobar la respuesta antes de aplicarla. COMENTA CHATGPT.",
+          "visual": ""
+        }
+      ],
+      "caption": "El error que te frena la tarde casi siempre está mal explicado por el propio mensaje: dice una cosa y el problema es otra.\n\nLos dos peores no dan ningún aviso. Dos muros superpuestos hacen que el cuadro de áreas salga mal sin decírtelo, y dos elementos idénticos encima hacen que el de cantidades cuente el doble. Los planos, mientras tanto, se ven perfectos.\n\nJunté los 10 que más tiempo hacen perder, con el prompt exacto para cada uno y cómo verificar la respuesta antes de meterla en un modelo que vas a firmar.\n\nEs gratis. Comenta CHATGPT y te llega.\n\n¿Cuál de los cinco te ha tocado más veces?",
+      "cta": "Comenta CHATGPT",
+      "prompt_imagenes": "Siete imágenes de 1080x1080 px (1:1) de la misma familia, para carrusel. Fondo azul marino #0E2438. En cada una, un cuadro de diálogo de software dibujado en línea fina ámbar #E8A04A, siempre en la misma posición y a la misma escala, con el texto ilegible a propósito — solo se lee la forma de la ventana y su icono de advertencia. Lo que cambia de tarjeta a tarjeta es el fondo detrás del cuadro: una retícula de planta, dos muros solapados, dos objetos idénticos desfasados un milímetro, dos volúmenes que casi se tocan, y una carpeta vacía. Todo en línea blanca muy tenue. Sin texto legible en ninguna. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos en ámbar #E8A04A, tipografía sans-serif de palo seco muy gruesa, composición limpia y con aire, sin stock corporativo ni gente sonriendo a cámara. El texto final se monta en Canva: la IA entrega el fondo y los elementos, no las letras.",
+      "red": "Instagram + Facebook + LinkedIn (PDF)"
+    },
+    {
+      "fecha": "Vie 11",
+      "semana": "Semana 1 (7-13 sep)",
+      "formato": "POST PLANO (1 imagen)",
+      "id": "sep-dato-cuantia-minima",
+      "estado": "COMPLETA",
+      "fuente": "guiones-completos.json",
+      "titulo": "Dato de cálculo: la cuantía mínima de una columna",
+      "eje": "NUCLEO-ACERO",
+      "pilar": "Educativo",
+      "hook": "¿Cuánto acero mínimo lleva una columna? El código dice 1%. Menos de eso, te la rebotan.",
+      "slides": [
+        {
+          "n": 1,
+          "texto": "CUANTÍA MÍNIMA EN COLUMNAS = 1% del área bruta (ACI 318).\n\nColumna 30×30 → Ag = 900 cm² → As mín = 9,0 cm²\n✅ 4Ø18 = 10,2 cm² → CUMPLE\n❌ 4Ø16 = 8,0 cm² → NO CUMPLE",
+          "visual": "UNA SOLA IMAGEN 4:5, estilo pizarra técnica: el cálculo escrito grande paso a paso, el ✅ en verde y el ❌ en rojo/naranja. La sección de la columna 30×30 dibujada con sus 4 varillas. Nada más en el lienzo: el dato ES el post."
+        }
+      ],
+      "caption": "El 1% no es un capricho: por debajo de esa cuantía, el acero ni siquiera controla los efectos del flujo plástico del concreto.\n\nEl cálculo completo de la imagen:\n· Columna de 30×30 → área bruta Ag = 900 cm²\n· Mínimo de acero (ACI 318): 1% × 900 = 9,0 cm²\n· 4 varillas Ø18 mm = 10,2 cm² → cumple ✅\n· 4 varillas Ø16 mm = 8,0 cm² → no cumple ❌\n\n¿Con qué cuantía sueles arrancar tus columnas? 👇\n\n💬 Comenta “ACERO” y te paso gratis la herramienta de las 5 verificaciones.\n\n#AceroEstructural #ACI318 #Columnas #IngenieríaEstructural #Estructuras #DesignModelingDG",
+      "cta": {
+        "instagram": "Comenta “ACERO” y te paso la herramienta de verificación gratis.",
+        "tiktok": "Comenta “ACERO” · link en bio.",
+        "linkedin": "¿Qué cuantía usan como arranque en columnas? El mínimo normativo suele sorprender a más de uno.",
+        "youtube": "—"
+      },
+      "prompt_imagenes": "UNA imagen 4:5 (1080×1350) estilo pizarra técnica: fondo azul #0E2438, tiza/trazo blanco, acentos naranja #EE8A3C y verde para el CUMPLE. Sección de columna 30×30 con 4 varillas dibujada a línea. El cálculo ocupa el 70% del lienzo, legible en el teléfono. Firma «DG · @design_modeling_dg»."
+    },
+    {
+      "fecha": "Lun 14",
+      "semana": "Semana 2 (14-20 sep)",
+      "formato": "CARRUSEL (7 slides)",
+      "id": "ago-navisworks-coordinacion",
+      "estado": "COMPLETA",
+      "fuente": "guiones-completos.json",
+      "titulo": "Mejores prácticas para la coordinación en Navisworks",
+      "eje": "NUCLEO-BIM",
+      "pilar": "Educativo",
+      "hook": "Coordinar en Navisworks sin volverte loco: 5 buenas prácticas.",
+      "slides": [
+        {
+          "n": 1,
+          "texto": "Coordinación en Navisworks sin morir en el intento: 5 prácticas →",
+          "visual": ""
+        },
+        {
+          "n": 2,
+          "texto": "01 · Federa bien: junta todas las disciplinas con el mismo origen y coordenadas.",
+          "visual": ""
+        },
+        {
+          "n": 3,
+          "texto": "02 · Define reglas de Clash claras por disciplina (estructura vs MEP, etc.), no ‘todo contra todo’.",
+          "visual": ""
+        },
+        {
+          "n": 4,
+          "texto": "03 · Prioriza: no todos los choques importan. Filtra los críticos primero.",
+          "visual": ""
+        },
+        {
+          "n": 5,
+          "texto": "04 · Documenta cada choque con vista, responsable y estado. Si no se traza, no se resuelve.",
+          "visual": ""
+        },
+        {
+          "n": 6,
+          "texto": "05 · Reunión de coordinación con el modelo en vivo, no con PDFs muertos.",
+          "visual": ""
+        },
+        {
+          "n": 7,
+          "texto": "¿Coordinas así? Comenta “BIM” o “IA” y te paso mi checklist.",
+          "visual": ""
+        }
+      ],
+      "caption": "Navisworks no coordina solo: coordina el criterio de quien lo maneja. 5 prácticas para que la detección de choques no se te vuelva una lista infinita e inútil.\n\n💬 Comenta “BIM” o “IA” y te paso mi checklist de coordinación.\n\n#Navisworks #BIM #CoordinaciónBIM #DesignModelingDG",
+      "cta": {
+        "instagram": "Comenta “BIM” o “IA” y te mando la info por DM.",
+        "tiktok": "Comenta “BIM” o “IA” · link en bio.",
+        "linkedin": "5 buenas prácticas de coordinación en Navisworks. ¿Cuál es su regla de oro?",
+        "youtube": "Paso a paso completo en el video · link en la descripción."
+      },
+      "prompt_imagenes": "Carrusel de marca. Números 01-05. Un slide por mensaje."
+    },
+    {
+      "fecha": "Lun 21",
+      "semana": "Semana 3 (21-27 sep)",
+      "formato": "CARRUSEL (8 slides)",
+      "id": "ago-errores-modelar-revit",
+      "estado": "COMPLETA",
+      "fuente": "guiones-completos.json",
+      "titulo": "Errores comunes al modelar en Revit y cómo evitarlos",
+      "eje": "NUCLEO-BIM",
+      "pilar": "Educativo",
+      "hook": "5 errores al modelar en Revit que te van a costar caro en obra.",
+      "slides": [
+        {
+          "n": 1,
+          "texto": "5 errores al modelar en Revit que se pagan caro en obra → guárdalo",
+          "visual": "Portada. Captura de un modelo Revit con warnings visibles, velo azul encima. Título en 2 líneas."
+        },
+        {
+          "n": 2,
+          "texto": "01 · Modelar sin plantilla ni estándar. Cada quien nombra distinto = caos de coordinación.",
+          "visual": "Número 01. Dos árboles de proyecto lado a lado: uno ordenado (✅) y otro con nombres inventados (❌)."
+        },
+        {
+          "n": 3,
+          "texto": "02 · No usar niveles y rejillas como base. Todo lo demás queda mal referenciado.",
+          "visual": "Número 02. Vista de niveles y rejillas mal referenciados, con una línea roja marcando el desfase."
+        },
+        {
+          "n": 4,
+          "texto": "03 · Familias mal hechas o pesadas. Ralentizan el modelo y meten errores.",
+          "visual": "Número 03. Panel de familias con una marcada como pesada (MB en naranja)."
+        },
+        {
+          "n": 5,
+          "texto": "04 · Modelar con más detalle del necesario (LOD). Pierdes horas en lo que nadie va a usar.",
+          "visual": "Número 04. Comparación de LOD: un elemento simple vs el mismo sobre-detallado."
+        },
+        {
+          "n": 6,
+          "texto": "05 · No revisar interferencias antes de entregar. Los choques salen en obra, y cuestan miles.",
+          "visual": "Número 05. Reporte de interferencias con el conteo resaltado en naranja."
+        },
+        {
+          "n": 7,
+          "texto": "¿Cuál cometiste? Comenta “BIM” o “IA” y te mando cómo evitarlos.",
+          "visual": "Cierre. Fondo naranja invertido, CTA con BIM/IA en recuadro."
+        }
+      ],
+      "caption": "Modelar en Revit bien no es modelar bonito: es modelar coordinado. Estos 5 errores son los que más veo (y los que más caro se pagan en obra).\n\n💬 Comenta “BIM” o “IA” y te mando la guía para evitarlos.\n\n#Revit #BIM #Modelado #DesignModelingDG",
+      "cta": {
+        "instagram": "Comenta “BIM” o “IA” y te mando la info por DM.",
+        "tiktok": "Comenta “BIM” o “IA” · link en bio.",
+        "linkedin": "5 errores de modelado en Revit que salen caro en obra. ¿Cuál agregarían?",
+        "youtube": "Paso a paso completo en el video · link en la descripción."
+      },
+      "prompt_imagenes": "Carrusel de marca (azul #0E2438 + naranja). Números 01-05. Un slide por mensaje.",
+      "aviso": "El calendario dice 8 diapositivas y hay 7. Las 7 escritas estan completas (portada, cuerpo y cierre): lo que esta mal es la etiqueta del calendario. Pedir 7 imagenes."
+    },
+    {
+      "fecha": "Mie 23",
+      "semana": "Semana 3 (21-27 sep)",
+      "formato": "CARRUSEL (8 slides)",
+      "id": "sep-carrusel-4-puertas",
+      "estado": "COMPLETA",
+      "fuente": "guiones-completos.json",
+      "titulo": "Las 4 puertas: ¿en qué etapa BIM estás?",
+      "eje": "PROMO",
+      "pilar": "Venta blanda",
+      "hook": "¿En qué etapa BIM estás? Hay 4 puertas de entrada — y solo una es la tuya.",
+      "slides": [
+        {
+          "n": 1,
+          "texto": "¿EN QUÉ ETAPA BIM ESTÁS? Las 4 puertas de entrada (solo una es la tuya) →",
+          "visual": "Portada. Fondo azul #0E2438, cuatro puertas dibujadas en línea, una iluminada en naranja. «4 PUERTAS» gigante."
+        },
+        {
+          "n": 2,
+          "texto": "«Necesito implementar BIM correctamente.» → Puerta 1 · ESTRUCTURA: metodología, estándares, BEP, flujos de trabajo.",
+          "visual": "Número 01 naranja. Icono de checklist. La frase del profesional va entre comillas grandes, como cita real."
+        },
+        {
+          "n": 3,
+          "texto": "«Quiero coordinar disciplinas y modelos.» → Puerta 2 · COORDINA: interferencias, control de calidad, entregables.",
+          "visual": "Número 02. Icono de cubos ensamblándose. Mismo layout de cita + respuesta."
+        },
+        {
+          "n": 4,
+          "texto": "«Quiero planificar, controlar costos y liderar.» → Puerta 3 · GESTIONA: 4D, 5D y gestión integral del proyecto.",
+          "visual": "Número 03. Icono de gráfica con signo $. Mismo layout."
+        },
+        {
+          "n": 5,
+          "texto": "«Quiero automatizar y aplicar IA.» → Puerta 4 · AUTOMATIZA: Dynamo, Python e IA aplicada a proyectos reales.",
+          "visual": "Número 04. Icono de cerebro-circuito. Mismo layout."
+        },
+        {
+          "n": 6,
+          "texto": "¿Y si lo quieres todo? Esa es la ruta completa: 12 meses para pasar de «sé usar BIM» a liderar como BIM Manager + IA.",
+          "visual": "Slide de mensaje. Las 4 puertas en fila conectadas por una flecha que termina en un birrete. «12 MESES» destacado."
+        },
+        {
+          "n": 7,
+          "texto": "No enseñamos software. Te acompañamos a evolucionar: Estructura → Coordina → Gestiona → Automatiza.",
+          "visual": "Texto grande centrado. «software» tachado, «evolucionar» en naranja."
+        },
+        {
+          "n": 8,
+          "texto": "Comenta “NIVEL”: son 20 preguntas y al final sabes cuál de las 4 puertas es la tuya.",
+          "visual": "Cierre invertido (fondo naranja, texto azul). «NIVEL» en recuadro blanco."
+        }
+      ],
+      "caption": "Todos quieren «aprender BIM». Pero nadie está en la misma etapa.\n\nPor eso el recorrido tiene 4 puertas de entrada:\n1️⃣ ESTRUCTURA — implementar BIM con metodología.\n2️⃣ COORDINA — disciplinas, modelos, interferencias.\n3️⃣ GESTIONA — 4D, 5D, costos y liderazgo.\n4️⃣ AUTOMATIZA — Dynamo, Python e IA.\n\nY una ruta completa de 12 meses que las recorre todas: de «sé usar BIM» a BIM Manager + IA.\n\n💬 Comenta “NIVEL” y el test te dice cuál es tu puerta.\n\n#BIM #BIMManager #IA #Revit #GestiónDeProyectos #DesignModelingDG",
+      "cta": {
+        "instagram": "Comenta “NIVEL” y te mando el test que te ubica por DM.",
+        "tiktok": "Comenta “NIVEL” · link en bio.",
+        "linkedin": "¿En qué etapa del recorrido BIM está tu equipo? Leo respuestas.",
+        "youtube": "—"
+      },
+      "prompt_imagenes": "Carrusel IG 4:5 (1080×1350), 8 slides. Fondo azul marino #0E2438, acento naranja #EE8A3C, texto blanco. Tipografía sans gruesa. Cuatro puertas como motivo gráfico recurrente, la activa siempre en naranja. Citas de profesionales entre comillas gigantes. Estética técnica y limpia, sin fotos stock. Firma «DG · @design_modeling_dg», número de slide arriba-der. Español, sin marcas de agua."
+    },
+    {
+      "fecha": "Jue 24",
+      "semana": "Semana 3 (21-27 sep)",
+      "formato": "CARRUSEL (6 slides) — EXTRA lanzamiento de recurso",
+      "id": "lm-dynamo-python-feed",
+      "estado": "COMPLETA",
+      "fuente": "leadmagnets-septiembre.json",
+      "titulo": "Pack de Dynamo: las 5 tareas de Revit que no deberias seguir haciendo a mano",
+      "eje": "LEAD MAGNET",
+      "palabra_clave": "DYNAMO",
+      "hook": "Cinco tareas de Revit que no deberías seguir haciendo a mano.",
+      "slides": [
+        {
+          "n": 1,
+          "texto": "CINCO TAREAS DE REVIT QUE NO DEBERÍAS SEGUIR HACIENDO A MANO.",
+          "visual": ""
+        },
+        {
+          "n": 2,
+          "texto": "Abrir el cuadro de advertencias, ver el número y cerrarlo. → Script 01: las saca todas a un CSV, ordenables y con el ID del elemento culpable.",
+          "visual": ""
+        },
+        {
+          "n": 3,
+          "texto": "Buscar a ojo por qué el cuadro de cantidades cuenta de más. → Script 02: te lista los elementos duplicados exactamente en el mismo sitio. No borra: decides tú.",
+          "visual": ""
+        },
+        {
+          "n": 4,
+          "texto": "Renombrar vistas una por una. → Script 03: buscar y reemplazar en lote.",
+          "visual": ""
+        },
+        {
+          "n": 5,
+          "texto": "Revisar qué vistas quedaron fuera de las hojas antes de entregar. → Script 04: te las lista. Y el Script 05 rellena un parámetro en lote.",
+          "visual": ""
+        },
+        {
+          "n": 6,
+          "texto": "Los cinco vienen comentados por dentro para que los cambies. TRES SOLO LEEN: los puedes correr hoy en un archivo vivo. COMENTA DYNAMO.",
+          "visual": ""
+        }
+      ],
+      "caption": "Si abres el cuadro de advertencias, ves el número y lo cierras; si renombras vistas una por una; o si revisas a ojo cuáles quedaron fuera de las hojas: eso ya lo hace un script.\n\nArmamos un pack con cinco, comentados línea por línea para que los puedas cambiar y no solo ejecutar. Tres de los cinco solo leen: los puedes correr hoy en un archivo vivo sin arriesgar nada.\n\nEs gratis. Comenta DYNAMO y te llega.\n\n¿Cuál de las cinco te quitaría más tiempo de encima?",
+      "cta": "Comenta DYNAMO",
+      "prompt_imagenes": "Seis imágenes de 1080x1080 px (1:1) de la misma familia, para carrusel. Fondo azul marino #0E2438. Un grafo de nodos tipo Dynamo dibujado en línea fina ámbar #E8A04A — cajas conectadas por cables curvos — que en la primera tarjeta aparece enredado y en las siguientes se va ordenando hasta quedar en una sola línea limpia. Misma escala y mismo encuadre en las seis. Sin texto legible dentro de los nodos. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos en ámbar #E8A04A, tipografía sans-serif de palo seco muy gruesa, composición limpia y con aire, sin stock corporativo ni gente sonriendo a cámara. El texto final se monta en Canva: la IA entrega el fondo y los elementos, no las letras.",
+      "red": "Instagram + Facebook + LinkedIn (PDF)"
+    },
+    {
+      "fecha": "Lun 28",
+      "semana": "Semana 4 (28 sep - 2 oct)",
+      "formato": "CARRUSEL (6 slides)",
+      "id": "sep-acero-agente-ia",
+      "estado": "COMPLETA",
+      "fuente": "guiones-completos.json",
+      "titulo": "ACERO ahora responde: el tutor de IA de la Especialización",
+      "eje": "NUCLEO-ACERO",
+      "pilar": "Venta blanda",
+      "hook": "Tu especialización ahora te contesta. La duda de las 11 p.m. ya no espera a la tutoría.",
+      "slides": [
+        {
+          "n": 1,
+          "texto": "TU ESPECIALIZACIÓN AHORA TE CONTESTA. Tutor de IA incluido en la Especialización en Acero →",
+          "visual": "Portada. Burbuja de chat sobre fondo azul con una pregunta técnica real escrita a medias. «TUTOR DE IA» en naranja."
+        },
+        {
+          "n": 2,
+          "texto": "Es un asistente entrenado con las clases del programa: los 4 cursos de la especialización, más de 40 sesiones.",
+          "visual": "Esquema: 4 cursos → flechas → un cerebro-circuito. Debajo: «entrenado con TUS clases, no con internet»."
+        },
+        {
+          "n": 3,
+          "texto": "Le preguntas en lenguaje normal — «¿cómo verifico el pandeo lateral de esta viga?» — y te responde con lo que dice tu curso, y en qué sesión está.",
+          "visual": "Mockup de chat real: pregunta del alumno arriba, respuesta con cita de sesión abajo. Usar el mockup aprobado del tutor."
+        },
+        {
+          "n": 4,
+          "texto": "No es un chatbot genérico: si la respuesta no está en las clases, te lo dice. Cero inventos.",
+          "visual": "Split: «chatbot genérico» tachado a la izquierda / «tutor del curso» en naranja a la derecha."
+        },
+        {
+          "n": 5,
+          "texto": "Disponible mientras estudias, a la hora que estudies. Estudias a tu ritmo, pero nunca estudias solo.",
+          "visual": "Reloj + luna y sol. Texto grande centrado."
+        },
+        {
+          "n": 6,
+          "texto": "Comenta “ACERO” y te mando el temario completo + cómo funciona el tutor.",
+          "visual": "Cierre invertido naranja. «ACERO» en recuadro blanco."
+        }
+      ],
+      "caption": "La duda de las 11 p.m. era el punto débil de estudiar asincrónico. Ya no.\n\nLa Especialización en Acero ahora incluye un tutor de IA entrenado con las clases del programa (4 cursos, +40 sesiones):\n✅ Le preguntas en lenguaje normal.\n✅ Te responde con el contenido de TU curso — y te dice en qué sesión está.\n✅ Si algo no está en las clases, te lo dice. No inventa.\n\nEstudias a tu ritmo. Pero nunca estudias solo.\n\n💬 Comenta “ACERO” y te mando el temario + cómo funciona.\n\n#AceroEstructural #IA #Ingeniería #Estructuras #DesignModelingDG",
+      "cta": {
+        "instagram": "Comenta “ACERO” y te mando el temario + cómo funciona el tutor.",
+        "tiktok": "Comenta “ACERO” · link en bio.",
+        "linkedin": "¿Un curso asincrónico con acompañamiento 24/7? Así funciona nuestro tutor de IA.",
+        "youtube": "—"
+      },
+      "prompt_imagenes": "Carrusel IG 4:5 (1080×1350), 6 slides. Fondo azul #0E2438, naranja #EE8A3C. Motivo: burbujas de chat estilo interfaz limpia. El slide 3 usa el mockup REAL del tutor (pagina/index.html) — nunca uno inventado. Tipografía sans gruesa, español, sin marcas de agua. Firma «DG · @design_modeling_dg»."
+    },
+    {
+      "fecha": "Jue 1 oct",
+      "semana": "Semana 4 (28 sep - 2 oct)",
+      "formato": "POST PLANO (1 imagen) — EXTRA lanzamiento de recurso",
+      "id": "lm-memoria-calculo-feed",
+      "estado": "COMPLETA",
+      "fuente": "leadmagnets-septiembre.py (lm-memoria-calculo → posts, Jue 1 oct)",
+      "titulo": "Memoria de calculo: no se devuelve por los numeros",
+      "hook": "Una memoria de cálculo no se devuelve por los números. Se devuelve por lo que no está escrito.",
+      "slides": [
+        {
+          "n": 1,
+          "texto": "Una memoria de cálculo no se devuelve por los números.\nSe devuelve por lo que NO está escrito.\n\n✗ Hipótesis que no se declararon\n✗ Criterios adoptados sin justificar\n✗ Normativa citada sin versión\n\nComenta MEMORIA → guía + plantilla gratis",
+          "visual": "UNA SOLA IMAGEN 4:5. Documento técnico en línea fina ámbar sobre azul marino, texto del documento ilegible a propósito; dos secciones vacías marcadas con un recuadro ámbar grueso, como huecos. Las letras de arriba se montan en Canva sobre ese fondo: el hook grande arriba, las 3 líneas con ✗ debajo, «Comenta MEMORIA» abajo en ámbar. Nada de sellos rojos."
+        }
+      ],
+      "caption": "Hipótesis que no se declararon. Criterios que se adoptaron y no se justificaron. Normativa citada sin versión.\n\nEl cálculo estaba bien. El documento no lo demostraba.\n\nArmamos la guía con la estructura completa de una memoria que se sostiene ante revisión, y la plantilla editable para llenarla.\n\nEs gratis. Comenta MEMORIA y te llega.\n\n¿Por qué te devolvieron la última que entregaste?\n\n#MemoriaDeCalculo #IngenieriaEstructural #Estructuras #DesignModelingDG",
+      "cta": {
+        "instagram": "Comenta “MEMORIA” y te llega la guía + plantilla gratis.",
+        "facebook": "Comenta “MEMORIA” y te llega la guía + plantilla gratis.",
+        "tiktok": "—",
+        "linkedin": "—",
+        "youtube": "—"
+      },
+      "prompt_imagenes": "Imagen 1080x1350 px (4:5). Fondo azul marino #0E2438. Un documento técnico visto de frente y en perspectiva muy leve, dibujado en línea fina ámbar #E8A04A, con la silueta de párrafos y una tabla — el texto ilegible a propósito. Dos de sus secciones aparecen vacías, marcadas con un recuadro ámbar más grueso, como huecos. Sobrio, nada de sellos rojos ni de gestos de rechazo. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos en ámbar #E8A04A, tipografía sans-serif de palo seco muy gruesa, composición limpia y con aire, sin stock corporativo ni gente sonriendo a cámara. El texto final se monta en Canva: la IA entrega el fondo y los elementos, no las letras.",
+      "eje": "NUCLEO-ACERO",
+      "palabra_clave": "MEMORIA",
+      "red": "Instagram + Facebook",
+      "aviso": "Antes de publicar: en OpenReply la campaña MEMORIA DE CÁLCULO está PAUSADA y atada al reel del 18-sep, no a este post. Hay que crear (o reactivar y apuntar) una campaña MEMORIA para ESTE post el mismo día. En GHL el workflow «Comentario MEMORIA» sí está publicado."
+    },
+    {
+      "fecha": "Vie 2 oct",
+      "semana": "Semana 4 (28 sep - 2 oct)",
+      "formato": "POST PLANO (1 imagen)",
+      "id": "sep-dato-peso-varilla",
+      "estado": "COMPLETA",
+      "fuente": "calendario-septiembre.json (idea) · escrito el 24-sep",
+      "titulo": "Dato de cálculo: ¿cuánto pesa una varilla Ø12 de 12 m?",
+      "hook": "¿Cuánto pesa una varilla Ø12 de 12 m? Sin tabla y sin calculadora: 10,7 kg.",
+      "slides": [
+        {
+          "n": 1,
+          "texto": "PESO DE UNA VARILLA = Ø² ÷ 162  (kg/m, con Ø en mm)\n\nØ12 → 144 ÷ 162 = 0,888 kg/m\nVarilla de 12 m → 0,888 × 12 = 10,7 kg\n50 varillas → 533 kg",
+          "visual": "UNA SOLA IMAGEN 4:5, estilo pizarra técnica: la fórmula arriba y grande, el cálculo paso a paso debajo, y una varilla dibujada a lo largo con su cota «12 m» y el corte circular «Ø12». Nada más en el lienzo: el dato ES el post."
+        }
+      ],
+      "caption": "La fórmula que sirve para estimar el acero de un presupuesto sin abrir la planilla:\n\nPeso (kg/m) = Ø² ÷ 162, con el diámetro en milímetros.\n\nDe dónde sale el 162: el acero pesa 7.850 kg/m³ y el área de la barra es π·Ø²/4. Al pasar mm² a m², todo se reduce a Ø² ÷ 162,2.\n\n· Ø12 → 144 ÷ 162 = 0,888 kg/m\n· Una varilla de 12 m → 10,7 kg\n· 50 varillas → 533 kg\n\nSirve para cualquier diámetro: Ø10 → 0,617 kg/m · Ø16 → 1,58 kg/m · Ø20 → 2,47 kg/m.\n\n¿La usabas o siempre vas a la tabla? 👇\n\n💬 Comenta “ACERO” y te paso gratis la herramienta de las 5 verificaciones.\n\n#AceroEstructural #Varillas #Presupuestos #IngenieríaEstructural #DesignModelingDG",
+      "cta": {
+        "instagram": "Comenta “ACERO” y te paso la herramienta de verificación gratis.",
+        "facebook": "Comenta “ACERO” y te paso la herramienta de verificación gratis.",
+        "tiktok": "Comenta “ACERO” · link en bio.",
+        "linkedin": "¿Usan Ø²/162 para estimar acero o siempre van a la tabla?",
+        "youtube": "—"
+      },
+      "prompt_imagenes": "UNA imagen 4:5 (1080×1350) estilo pizarra técnica: fondo azul #0E2438, trazo blanco, acentos naranja #EE8A3C. Una varilla corrugada dibujada a línea en horizontal con cota «12 m» y su sección circular «Ø12». Dejar el 65% del lienzo libre para el cálculo, que se monta en Canva. Firma «DG · @design_modeling_dg».",
+      "eje": "NUCLEO-ACERO",
+      "pilar": "Educativo"
+    }
+  ],
+  "actualizado": "2026-09-24: escritas las piezas del Jue 1 oct (memoria) y Vie 2 oct (peso de varilla)"
+}
