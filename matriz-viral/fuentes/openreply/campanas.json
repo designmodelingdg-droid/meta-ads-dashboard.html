@@ -1,5 +1,5 @@
 {
- "generado": "2026-09-23",
+ "generado": "2026-09-24",
  "ventana_series_dias": 30,
  "fuente": "OpenReply — base propia (Postgres), solo lectura",
  "nota_privacidad": "Solo agregados. No se lee `commenterName`, ni `commentText`, ni `accessToken`. Ningún dato personal sale de la base.",
@@ -29,21 +29,21 @@
    "creada": "2026-09-12T15:00:26.557",
    "actualizada": "2026-09-22T03:01:46.164",
    "cuenta": "design_modeling_dg",
-   "enviados": 42,
+   "enviados": 43,
    "fallidos": 0,
    "entregados_sin_confirmar": 1,
    "saltados": 0,
    "pendientes": 0,
    "primer_envio": "2026-09-12T15:01:42.345",
-   "ultimo_envio": "2026-09-23T16:00:58.922",
-   "clics": 1810,
-   "clics_limpios": 9,
+   "ultimo_envio": "2026-09-24T00:42:13.362",
+   "clics": 1811,
+   "clics_limpios": 10,
    "clics_con_bots": 1801,
    "enlaces_rastreados": 1,
    "mide_clics": true,
-   "clics_por_dm": 0.21,
-   "ctr": 0.2143,
-   "lectura_clics": "9 clics limpios sobre 42 DM enviados (21%). Son aperturas, no personas: la misma persona puede contar varias veces. (1801 clics más son anteriores al 2026-09-15 y NO se cuentan: eran bots de vista previa.)"
+   "clics_por_dm": 0.23,
+   "ctr": 0.2326,
+   "lectura_clics": "10 clics limpios sobre 43 DM enviados (23%). Son aperturas, no personas: la misma persona puede contar varias veces. (1801 clics más son anteriores al 2026-09-15 y NO se cuentan: eran bots de vista previa.)"
   },
   {
    "id": "cmuc38lqr000004lhs407u63j",
@@ -225,7 +225,7 @@
    "actualizada": "2026-09-22T03:33:57.816",
    "cuenta": "design_modeling_dg",
    "enviados": 2,
-   "fallidos": 0,
+   "fallidos": 1,
    "entregados_sin_confirmar": 1,
    "saltados": 0,
    "pendientes": 0,
@@ -342,12 +342,12 @@
    "palabra": "TUTORIAL",
    "campana": "TUTORIAL REVIT CHATGPT",
    "campana_activa": true,
-   "enviados": 42,
+   "enviados": 43,
    "fallidos": 0,
    "entregados_sin_confirmar": 1,
    "saltados": 0,
    "primer_envio": "2026-09-12T15:01:42.345",
-   "ultimo_envio": "2026-09-23T16:00:58.922"
+   "ultimo_envio": "2026-09-24T00:42:13.362"
   },
   {
    "palabra": "PARTE",
@@ -383,17 +383,6 @@
    "ultimo_envio": "2026-09-18T19:08:42.001"
   },
   {
-   "palabra": "GUIA",
-   "campana": "GUIA CHATGPT",
-   "campana_activa": true,
-   "enviados": 3,
-   "fallidos": 0,
-   "entregados_sin_confirmar": 0,
-   "saltados": 0,
-   "primer_envio": "2026-09-11T23:56:38.282",
-   "ultimo_envio": "2026-09-12T00:24:13.644"
-  },
-  {
    "palabra": "BIM",
    "campana": "5 ERRORES REVIT",
    "campana_activa": true,
@@ -403,6 +392,17 @@
    "saltados": 0,
    "primer_envio": "2026-09-22T19:38:56.264",
    "ultimo_envio": "2026-09-23T18:17:24.041"
+  },
+  {
+   "palabra": "GUIA",
+   "campana": "GUIA CHATGPT",
+   "campana_activa": true,
+   "enviados": 3,
+   "fallidos": 0,
+   "entregados_sin_confirmar": 0,
+   "saltados": 0,
+   "primer_envio": "2026-09-11T23:56:38.282",
+   "ultimo_envio": "2026-09-12T00:24:13.644"
   },
   {
    "palabra": "BIM",
@@ -429,6 +429,17 @@
   {
    "palabra": "DYNAMO",
    "campana": "PACK DYNAMO",
+   "campana_activa": true,
+   "enviados": 0,
+   "fallidos": 1,
+   "entregados_sin_confirmar": 0,
+   "saltados": 0,
+   "primer_envio": null,
+   "ultimo_envio": null
+  },
+  {
+   "palabra": "IA",
+   "campana": "CHECKLIST NAVISWORKS",
    "campana_activa": true,
    "enviados": 0,
    "fallidos": 1,
@@ -489,6 +500,13 @@
    "ultima_vez": "2026-09-17T15:28:57.984"
   },
   {
+   "estado": "FAILED",
+   "pero_si_se_entrego": false,
+   "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=ARyiexKEaFhf0gzVTBxZppt]",
+   "veces": 1,
+   "ultima_vez": "2026-09-24T02:23:54.339"
+  },
+  {
    "estado": "SKIPPED_DEDUP",
    "pero_si_se_entrego": false,
    "motivo": "This person already received this campaign's DM on an earlier comment",
@@ -502,11 +520,11 @@
    "etiqueta": "Primary campaign link",
    "destino": "https://www.instagram.com/reel/DdkrVGsOcLz/",
    "campana": "TUTORIAL REVIT CHATGPT",
-   "clics": 1810,
-   "clics_limpios": 9,
+   "clics": 1811,
+   "clics_limpios": 10,
    "clics_con_bots": 1801,
    "primer_clic": "2026-09-12T15:03:09.041",
-   "ultimo_clic": "2026-09-23T16:01:20.36"
+   "ultimo_clic": "2026-09-24T00:42:41.92"
   },
   {
    "slug": "7ZudR52CIA",
@@ -648,6 +666,11 @@
    "fecha": "2026-09-23",
    "clics": 3,
    "limpio": true
+  },
+  {
+   "fecha": "2026-09-24",
+   "clics": 1,
+   "limpio": true
   }
  ],
  "envios_por_dia": [
@@ -702,14 +725,13 @@
   {
    "fecha": "2026-09-23",
    "enviados": 5
+  },
+  {
+   "fecha": "2026-09-24",
+   "enviados": 1
   }
  ],
  "seguidores": [
-  {
-   "cuenta": "design_modeling_dg",
-   "fecha": "2026-08-24",
-   "seguidores": 80041
-  },
   {
    "cuenta": "design_modeling_dg",
    "fecha": "2026-08-25",
@@ -950,7 +972,7 @@
     "bot_nuevos_7d": 0
    }
   },
-  "embudo_generado": "2026-09-23T18:02Z"
+  "embudo_generado": "2026-09-23T22:58Z"
  },
  "cotejo_con_la_matriz": [
   {
@@ -1101,8 +1123,8 @@
    "campanas": [
     "TUTORIAL REVIT CHATGPT"
    ],
-   "dms_enviados": 42,
-   "lectura": "Viva: 42 DM enviados."
+   "dms_enviados": 43,
+   "lectura": "Viva: 43 DM enviados."
   }
  ],
  "cotejo_fiable": true
