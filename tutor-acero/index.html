@@ -89,6 +89,8 @@
   .maqueta{position:fixed;top:8px;right:8px;background:#b3261e;color:#fff;z-index:9;
            font-family:'Overpass',sans-serif;font-size:.6rem;font-weight:800;letter-spacing:.1em;
            padding:4px 9px;border-radius:99px;opacity:.92}
+  .msg p{margin:0 0 .55em} .msg ul,.msg ol{margin:.2em 0 .7em;padding-left:1.3em} .msg li{margin:.25em 0}
+  .msg .tit{font-weight:700;margin:.6em 0 .3em} .msg .fuentes{margin-top:.8em;padding-top:.6em;border-top:1px solid rgba(127,127,127,.25);font-size:.85em;opacity:.8}
 </style>
 </head>
 <body>
@@ -191,6 +193,26 @@ function md(html,cls){const d=document.createElement('div');d.className='msg '+c
   d.innerHTML=html;chat.appendChild(d);chat.scrollTop=chat.scrollHeight;return d;}
 function esc(t){return t.replace(/&/g,'&amp;').replace(/</g,'&lt;');}
 
+/* El modelo contesta con formato de texto (**negrita**, viñetas con «* »,
+   listas numeradas). Antes se pintaba tal cual y el alumno veia los
+   asteriscos (24-sep). Se escapa PRIMERO y despues se da formato, asi que
+   nada de lo que devuelva el modelo puede meter HTML en la pagina. */
+function formatear(t){
+  const lineas=esc(t).split('\n'); let out='', lista=null;
+  const cerrar=()=>{ if(lista){ out+='</'+lista+'>'; lista=null; } };
+  const enl=s=>s.replace(/\*\*(.+?)\*\*/g,'<b>$1</b>').replace(/(^|\s)\*(\S[^*]*?)\*(?=\s|$|[.,;:])/g,'$1<i>$2</i>');
+  for(const l of lineas){
+    let m;
+    if(/^\s*FUENTES\s*:/i.test(l)){ cerrar(); out+='<div class="fuentes">'+enl(l.trim())+'</div>'; continue; }
+    if((m=l.match(/^\s*#{1,4}\s+(.*)$/))){ cerrar(); out+='<div class="tit">'+enl(m[1])+'</div>'; continue; }
+    if((m=l.match(/^\s*[*\-•]\s+(.*)$/))){ if(lista!=='ul'){ cerrar(); out+='<ul>'; lista='ul'; } out+='<li>'+enl(m[1])+'</li>'; continue; }
+    if((m=l.match(/^\s*\d+[.)]\s+(.*)$/))){ if(lista!=='ol'){ cerrar(); out+='<ol>'; lista='ol'; } out+='<li>'+enl(m[1])+'</li>'; continue; }
+    if(!l.trim()){ cerrar(); continue; }
+    cerrar(); out+='<p>'+enl(l)+'</p>';
+  }
+  cerrar(); return out;
+}
+
 async function enviar(){
   const t=caja.value.trim(); if(!t)return; caja.value='';
   md(esc(t),'alumno');
@@ -211,7 +233,7 @@ async function enviar(){
         esc(d.mensaje||d.error||'No se pudo responder. Intenta de nuevo.');
       return;
     }
-    let html='<div class="quien">Tutor DMA</div>'+esc(d.respuesta).replace(/\n/g,'<br>');
+    let html='<div class="quien">Tutor DMA</div>'+formatear(d.respuesta);
     espera.innerHTML=html;
     if(typeof d.restantes==='number') pintarUso(d.restantes, TOPE_DIA);
   }catch(e){
