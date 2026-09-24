@@ -175,3 +175,33 @@ etiqueta de Instagram devuelven los posts *recientes*, no los top: el 14-sep
 gastó $2 para traer 96 piezas sin una sola vista y sin un solo reel. El aviso
 ya estaba escrito dentro del propio script desde el 26-ago. Para el sector se
 usa `competencia.py`, que es la API oficial y es gratis.
+
+---
+
+## 7 · Lanzamiento del Tutor IA del Diplomado (pedido de Dayana, 24-sep)
+
+Octubre abre con este lanzamiento. El Diplomado BIM en Estructuras tiene tutor
+de IA desde el 24-sep (montado en el curso en GHL) y tiene que enterarse todo
+el mundo: los alumnos, para que lo usen, y los prospectos, como razón para
+inscribirse. Va por todos los canales en la semana del 5 al 11 de octubre, y la
+pauta sube el lunes 12.
+
+| Fichero | Qué es |
+|---|---|
+| `lanzamiento-tutor-ia-octubre.md` | El paquete para el equipo: bloqueantes, hechos y lo que no se dice, las dos audiencias, fechas, y el texto listo de cada canal |
+| `lanzamiento-tutor-ia-octubre.json` | Las 17 piezas con la forma de `g1-carruseles-y-posts-septiembre.json`, con id, fecha, redes y audiencia |
+
+**`matriz-mensual` tiene que meter esas piezas en `calendario-octubre.json`.**
+Su comprobación de ids solo mira `guiones-completos.json`, y estas piezas viven
+en el JSON del lanzamiento: o se copian allí, o se amplía la comprobación a ese
+fichero. Si no, el calendario las rechaza como ids inexistentes.
+
+Son piezas **PROMO** y no cuentan para el 60 % de núcleo. Encajan con el
+hallazgo de §1: el reel y el carrusel abren acusando un hábito («¿todavía
+rebobinas la clase para encontrar dónde explicaron el espectro sísmico?») y a
+los alumnos se les habla con «ya lo tienes en tu curso». La historia del jueves
+8 ocupa el slot de venta de la semana 1.
+
+Antes de publicar hay que montar la palabra **DIPLOMADO**, que hoy no existe, y
+no usar **TUTOR**, que dispara lo del tutor de ACERO. El resto de bloqueantes
+está en el §0 del paquete.

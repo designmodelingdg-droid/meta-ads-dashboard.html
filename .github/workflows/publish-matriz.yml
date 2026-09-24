@@ -34,6 +34,7 @@ on:
       - recursos/**
       - eficiencia-acero/**
       - tutor-acero/**
+      - tutor-diplomado-estructuras/**
       - cierre-agosto/**
       - .github/workflows/publish-matriz.yml
   workflow_dispatch: {}                      # permite correrla a mano desde la pestaña Actions
@@ -109,6 +110,10 @@ jobs:
           rm -rf public/pack-dynamo/GUIA-MONTAJE.md public/pack-dynamo/prueba
           # Tutor de IA de la Especializacion en Acero (se embebe en GHL)
           cp -r tutor-acero public/tutor-acero
+          # Tutor de IA del Diplomado BIM Estructuras (boton en su curso de GHL).
+          # MONTAJE*.md son instrucciones internas: no se publican.
+          cp -r tutor-diplomado-estructuras public/tutor-diplomado-estructuras
+          rm -f public/tutor-diplomado-estructuras/*.md
           # Creativos ganadores del cierre de mes (los usa el mazo de la reunion)
           cp -r cierre-agosto public/cierre-agosto
           # Entregables descargables: los Word y las plantillas que el equipo
