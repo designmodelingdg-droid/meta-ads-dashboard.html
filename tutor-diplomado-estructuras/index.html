@@ -237,15 +237,28 @@ let listo = !SERVICIO_URL;   // en maqueta no hay servidor al que preguntar
 async function comprobarPrograma(){
   if(!SERVICIO_URL) return;
   caja.disabled = true; document.getElementById('enviar').disabled = true;
-  try{
-    const d = await (await fetch(SERVICIO_URL+'/tutor/salud')).json();
-    const p = d.programas && d.programas[PROGRAMA];
-    if(p && p.cargado){
-      listo = true;
-      caja.disabled = false; document.getElementById('enviar').disabled = false;
-      return;
+  /* El servidor se duerme cuando nadie lo usa y tarda unos segundos en
+     despertar. Sin este aviso la caja se veia muerta, y la primera pregunta
+     (escrita con la caja aun cerrada) se perdia (24-sep). */
+  const aviso = caja.placeholder;
+  caja.placeholder = 'Conectando con el tutor… puede tardar unos segundos';
+  for(let intento = 0; intento < 2; intento++){
+    try{
+      const d = await (await fetch(SERVICIO_URL+'/tutor/salud')).json();
+      const p = d.programas && d.programas[PROGRAMA];
+      if(p && p.cargado){
+        listo = true;
+        caja.placeholder = aviso;
+        caja.disabled = false; document.getElementById('enviar').disabled = false;
+        caja.focus();
+        return;
+      }
+      break;                      // contesto pero sin el Diplomado: no reintentar
+    }catch(e){ /* un tropiezo de red al despertar: se reintenta una vez */
+      await new Promise(r => setTimeout(r, 4000));
     }
-  }catch(e){ /* sin conexion: se trata igual que «no esta listo» */ }
+  }
+  caja.placeholder = aviso;
   md('<div class="quien">Tutor DMA</div>El tutor de tu Diplomado <b>todavía se '+
      'está preparando</b>: estamos cargando tus clases. Mientras tanto, para '+
      'cualquier duda tienes la asesoría con los instructores, aquí abajo.','tutor');
