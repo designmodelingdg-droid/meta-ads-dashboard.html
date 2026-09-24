@@ -53,6 +53,63 @@ mientras se estudia.
 
 ---
 
+## La burbuja dentro del curso (24-sep)
+
+Además del botón, el tutor puede ir como una **burbuja abajo a la derecha** en
+todas las páginas del Diplomado: el alumno la toca y el tutor se abre en un
+panel encima de la clase, sin salir de ella (en el móvil ocupa la pantalla).
+
+Se pega **una sola línea**, y solo en el Diplomado:
+
+1. **Suscripciones → Cursos → Productos →** «Diplomado Universitario
+   Internacional BIM: Edificaciones de Acero Estructural y Hormigón Armado»
+   **→ Configuración** (menú de la izquierda).
+2. Bajar hasta el final y abrir **«Avanzada»**.
+3. En la pestaña **«Javascript personalizado»** pegar exactamente esto (sin
+   etiquetas `<script>`):
+
+```
+(function(){var s=document.createElement('script');s.src='https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/tutor-diplomado-estructuras/burbuja.js';s.defer=true;document.head.appendChild(s);})();
+```
+
+4. **Guardar**, abrir el curso como alumno y comprobar que sale la burbuja
+   «IA» abajo a la derecha.
+
+**No pegarla en el Portal del cliente** (Configuración → Creación de marca →
+Avanzado): va en el producto.
+
+**Si la pegaron en «Código de seguimiento del encabezado»**, ahí tiene que ir
+envuelta en etiquetas, o no se ejecuta:
+
+```
+<script>(function(){var s=document.createElement('script');s.src='https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/tutor-diplomado-estructuras/burbuja.js';s.defer=true;document.head.appendChild(s);})();</script>
+```
+
+Lo más simple es dejar solo una de las dos: la de «Javascript personalizado»
+sin etiquetas, o la del encabezado con etiquetas. (Si quedan las dos, no pasa
+nada: sale una sola burbuja.)
+
+**Alumnos con el Acero y el Diplomado** (revisión del 24-sep): el portal no
+recarga la página al cambiar de curso. La burbuja mira la dirección cada
+segundo y muestra el tutor del curso en el que está el alumno: en el Diplomado
+el del Diplomado, en el Acero el del Acero, y en un curso sin tutor (Uniones o
+Modelado BIM vendidos aparte) no sale. Los ID de los dos productos van
+escritos en el código: Diplomado `b252f808-ce76-40b6-ba07-b9e13e29b4f4`,
+Acero `c1979fd7-46b8-44dc-b8ce-aafc8fb439a0`.
+
+El botón de la portada puede quedarse: son dos entradas al mismo tutor.
+
+**Para la Especialización en Acero** es el mismo archivo con `?programa=acero`
+al final de la dirección: ver `tutor-acero/MONTAJE-GHL.md`. Sin ese final,
+abre el tutor del Diplomado.
+
+Si la burbuja no aparece: el campo de «Javascript personalizado» del producto
+no se pudo inspeccionar por dentro, así que cabe que no acepte JavaScript. En
+ese caso, probar la misma línea envuelta en `<script>…</script>` en
+**«Código de seguimiento del encabezado»** del mismo producto.
+
+---
+
 ## Comprobar antes de darlo por hecho
 
 Abrir el curso **como alumno** y pulsar el botón. Preguntar, por ejemplo:

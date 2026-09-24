@@ -62,6 +62,44 @@ portada del curso ya se cumple.
 
 ---
 
+## La burbuja dentro del curso (24-sep)
+
+Además del botón, el tutor puede ir como una **burbuja «IA» abajo a la
+derecha**: el alumno la toca y el tutor del Acero se abre encima de la clase,
+sin salir de ella.
+
+Se pega **una sola línea** en el producto de la **Especialización en Acero**
+(la que trae los 4 cursos y dice «Tutor IA incluido»):
+
+1. **Suscripciones → Cursos → Productos →** «Especialización en Diseño
+   Estructural BIM en Acero para Edificaciones (Tutor IA incluido)» **→
+   Configuración**.
+2. Bajar hasta el final y abrir **«Avanzada»** → pestaña **«Javascript
+   personalizado»**.
+3. Pegar exactamente esto y guardar:
+
+```
+(function(){var s=document.createElement('script');s.src='https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/tutor-diplomado-estructuras/burbuja.js?programa=acero';s.defer=true;document.head.appendChild(s);})();
+```
+
+**Ojo: es casi igual a la del Diplomado, pero termina en `?programa=acero`.**
+Sin eso abriría el tutor del Diplomado, y un alumno del Acero recibiría
+respuestas con clases que no compró. Tampoco va en el Portal del cliente ni en
+los cursos sueltos de Uniones o Modelado BIM que se venden aparte: el tutor
+va incluido solo en la Especialización.
+
+**Pegada el 24-sep** en «Especialización en Diseño Estructural BIM en Acero
+para Edificaciones (Tutor IA incluido)», producto
+`c1979fd7-46b8-44dc-b8ce-aafc8fb439a0`. Ese ID va escrito en `burbuja.js`: la
+burbuja del Acero solo aparece en páginas de ese producto, y en un alumno que
+tiene también el Diplomado cambia de tutor sola al pasar de un curso a otro.
+
+Si la burbuja no aparece, probar la misma línea envuelta en
+`<script>…</script>` en **«Código de seguimiento del encabezado»** del mismo
+producto.
+
+---
+
 ## Comprobar antes de darlo por hecho
 
 Abrir el curso **como alumno**, no desde el editor. Pulsar el botón y hacer una

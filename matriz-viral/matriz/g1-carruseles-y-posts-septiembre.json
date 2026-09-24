@@ -6,13 +6,12 @@
   "como_leer_las_diapositivas": "Cada diapositiva trae `n` (su numero), `texto` (lo que se lee) y `visual` (la direccion de arte). El texto NO repite el numero: ese prefijo se quito porque en el artefacto salia dos veces.",
   "avisos": [
     "Lun 21: El calendario dice 8 diapositivas y hay 7. Las 7 escritas estan completas (portada, cuerpo y cierre): lo que esta mal es la etiqueta del calendario. Pedir 7 imagenes.",
-    "Jue 1 oct: SIN ESCRIBIR — hay idea y desarrollo, faltan hook, diapositivas, caption y prompt — su nota manda a «la pestaña Lead magnets», pero ahi no esta.",
-    "Vie 2 oct: SIN ESCRIBIR — hay idea y desarrollo, faltan hook, diapositivas, caption y prompt"
+    "Jue 1 oct: la campaña MEMORIA de OpenReply está pausada y atada a otro post; montarla para este post el mismo día (ver «aviso» de la pieza)."
   ],
   "total": 10,
   "carruseles": 7,
   "posts_planos": 3,
-  "completas": 8,
+  "completas": 10,
   "piezas": [
     {
       "fecha": "Lun 7",
@@ -428,30 +427,59 @@
       "semana": "Semana 4 (28 sep - 2 oct)",
       "formato": "POST PLANO (1 imagen) — EXTRA lanzamiento de recurso",
       "id": "lm-memoria-calculo-feed",
-      "estado": "SIN ESCRIBIR — hay idea y desarrollo, faltan hook, diapositivas, caption y prompt",
-      "fuente": "calendario-septiembre.json (solo la idea)",
+      "estado": "COMPLETA",
+      "fuente": "leadmagnets-septiembre.py (lm-memoria-calculo → posts, Jue 1 oct)",
       "titulo": "Memoria de calculo: no se devuelve por los numeros",
-      "desarrollo": "Segunda pieza del mismo recurso, dos dias despues del reel del Mar 29. Va en post plano porque cumple la regla de la casa: lleva dato de calculo verificable. Cierra el mes pidiendo MEMORIA una vez mas. Desarrollo y prompt en la pestaña Lead magnets.",
-      "hook": "",
-      "slides": [],
-      "caption": "",
-      "cta": "",
-      "prompt_imagenes": ""
+      "hook": "Una memoria de cálculo no se devuelve por los números. Se devuelve por lo que no está escrito.",
+      "slides": [
+        {
+          "n": 1,
+          "texto": "Una memoria de cálculo no se devuelve por los números.\nSe devuelve por lo que NO está escrito.\n\n✗ Hipótesis que no se declararon\n✗ Criterios adoptados sin justificar\n✗ Normativa citada sin versión\n\nComenta MEMORIA → guía + plantilla gratis",
+          "visual": "UNA SOLA IMAGEN 4:5. Documento técnico en línea fina ámbar sobre azul marino, texto del documento ilegible a propósito; dos secciones vacías marcadas con un recuadro ámbar grueso, como huecos. Las letras de arriba se montan en Canva sobre ese fondo: el hook grande arriba, las 3 líneas con ✗ debajo, «Comenta MEMORIA» abajo en ámbar. Nada de sellos rojos."
+        }
+      ],
+      "caption": "Hipótesis que no se declararon. Criterios que se adoptaron y no se justificaron. Normativa citada sin versión.\n\nEl cálculo estaba bien. El documento no lo demostraba.\n\nArmamos la guía con la estructura completa de una memoria que se sostiene ante revisión, y la plantilla editable para llenarla.\n\nEs gratis. Comenta MEMORIA y te llega.\n\n¿Por qué te devolvieron la última que entregaste?\n\n#MemoriaDeCalculo #IngenieriaEstructural #Estructuras #DesignModelingDG",
+      "cta": {
+        "instagram": "Comenta “MEMORIA” y te llega la guía + plantilla gratis.",
+        "facebook": "Comenta “MEMORIA” y te llega la guía + plantilla gratis.",
+        "tiktok": "—",
+        "linkedin": "—",
+        "youtube": "—"
+      },
+      "prompt_imagenes": "Imagen 1080x1350 px (4:5). Fondo azul marino #0E2438. Un documento técnico visto de frente y en perspectiva muy leve, dibujado en línea fina ámbar #E8A04A, con la silueta de párrafos y una tabla — el texto ilegible a propósito. Dos de sus secciones aparecen vacías, marcadas con un recuadro ámbar más grueso, como huecos. Sobrio, nada de sellos rojos ni de gestos de rechazo. Estilo Design Modeling Academy: fondo azul marino #0E2438, acentos en ámbar #E8A04A, tipografía sans-serif de palo seco muy gruesa, composición limpia y con aire, sin stock corporativo ni gente sonriendo a cámara. El texto final se monta en Canva: la IA entrega el fondo y los elementos, no las letras.",
+      "eje": "NUCLEO-ACERO",
+      "palabra_clave": "MEMORIA",
+      "red": "Instagram + Facebook",
+      "aviso": "Antes de publicar: en OpenReply la campaña MEMORIA DE CÁLCULO está PAUSADA y atada al reel del 18-sep, no a este post. Hay que crear (o reactivar y apuntar) una campaña MEMORIA para ESTE post el mismo día. En GHL el workflow «Comentario MEMORIA» sí está publicado."
     },
     {
       "fecha": "Vie 2 oct",
       "semana": "Semana 4 (28 sep - 2 oct)",
-      "formato": "POST PLANO (crear imagen)",
-      "id": null,
-      "estado": "SIN ESCRIBIR — hay idea y desarrollo, faltan hook, diapositivas, caption y prompt",
-      "fuente": "calendario-septiembre.json (solo la idea)",
-      "titulo": "POST PLANO · ¿Cuanto pesa una varilla Ø12 de 12 m?",
-      "desarrollo": "Dato verificable: peso = Ø²/162 (kg/m, con Ø en mm) → 144/162 = 0,888 kg/m → una varilla Ø12 de 12 m pesa 10,7 kg. En la imagen: la formula, el calculo y el uso (estimar el acero de un presupuesto sin planilla). CTA: ¿la usabas? Comenta ACERO y te paso la herramienta de verificaciones. Cierra el mes con la formula ganadora.",
-      "hook": "",
-      "slides": [],
-      "caption": "",
-      "cta": "",
-      "prompt_imagenes": ""
+      "formato": "POST PLANO (1 imagen)",
+      "id": "sep-dato-peso-varilla",
+      "estado": "COMPLETA",
+      "fuente": "calendario-septiembre.json (idea) · escrito el 24-sep",
+      "titulo": "Dato de cálculo: ¿cuánto pesa una varilla Ø12 de 12 m?",
+      "hook": "¿Cuánto pesa una varilla Ø12 de 12 m? Sin tabla y sin calculadora: 10,7 kg.",
+      "slides": [
+        {
+          "n": 1,
+          "texto": "PESO DE UNA VARILLA = Ø² ÷ 162  (kg/m, con Ø en mm)\n\nØ12 → 144 ÷ 162 = 0,888 kg/m\nVarilla de 12 m → 0,888 × 12 = 10,7 kg\n50 varillas → 533 kg",
+          "visual": "UNA SOLA IMAGEN 4:5, estilo pizarra técnica: la fórmula arriba y grande, el cálculo paso a paso debajo, y una varilla dibujada a lo largo con su cota «12 m» y el corte circular «Ø12». Nada más en el lienzo: el dato ES el post."
+        }
+      ],
+      "caption": "La fórmula que sirve para estimar el acero de un presupuesto sin abrir la planilla:\n\nPeso (kg/m) = Ø² ÷ 162, con el diámetro en milímetros.\n\nDe dónde sale el 162: el acero pesa 7.850 kg/m³ y el área de la barra es π·Ø²/4. Al pasar mm² a m², todo se reduce a Ø² ÷ 162,2.\n\n· Ø12 → 144 ÷ 162 = 0,888 kg/m\n· Una varilla de 12 m → 10,7 kg\n· 50 varillas → 533 kg\n\nSirve para cualquier diámetro: Ø10 → 0,617 kg/m · Ø16 → 1,58 kg/m · Ø20 → 2,47 kg/m.\n\n¿La usabas o siempre vas a la tabla? 👇\n\n💬 Comenta “ACERO” y te paso gratis la herramienta de las 5 verificaciones.\n\n#AceroEstructural #Varillas #Presupuestos #IngenieríaEstructural #DesignModelingDG",
+      "cta": {
+        "instagram": "Comenta “ACERO” y te paso la herramienta de verificación gratis.",
+        "facebook": "Comenta “ACERO” y te paso la herramienta de verificación gratis.",
+        "tiktok": "Comenta “ACERO” · link en bio.",
+        "linkedin": "¿Usan Ø²/162 para estimar acero o siempre van a la tabla?",
+        "youtube": "—"
+      },
+      "prompt_imagenes": "UNA imagen 4:5 (1080×1350) estilo pizarra técnica: fondo azul #0E2438, trazo blanco, acentos naranja #EE8A3C. Una varilla corrugada dibujada a línea en horizontal con cota «12 m» y su sección circular «Ø12». Dejar el 65% del lienzo libre para el cálculo, que se monta en Canva. Firma «DG · @design_modeling_dg».",
+      "eje": "NUCLEO-ACERO",
+      "pilar": "Educativo"
     }
-  ]
+  ],
+  "actualizado": "2026-09-24: escritas las piezas del Jue 1 oct (memoria) y Vie 2 oct (peso de varilla)"
 }

@@ -104,6 +104,7 @@
     main{padding:26px max(30px, calc((100% - 1000px) / 2))}
     header,.uso,.entrada{padding-left:max(16px, calc((100% - 1000px) / 2));padding-right:max(16px, calc((100% - 1000px) / 2))}
   }
+  .en-burbuja header{display:none}
 </style>
 </head>
 <body>
@@ -112,6 +113,15 @@
 /* Si la pagina quedo incrustada dentro de otra (un bloque de GHL), se ve
    encajonada. No se puede sacar sola —el navegador bloquea abrir ventanas sin
    un toque—, asi que se ofrece el boton para abrirla completa en otra pestaña. */
+/* Dentro de la burbuja (?burbuja=1) no hace falta: la burbuja trae su propio
+   boton de pantalla completa en la cabecera del panel. Tampoco la cabecera
+   del tutor, que repetiria la del panel; y Esc tiene que cerrar el panel
+   aunque el cursor este aqui dentro. */
+if(/[?&]burbuja=1/.test(location.search)){
+  document.documentElement.classList.add('en-burbuja');
+  document.addEventListener('keydown',e=>{ if(e.key==='Escape') parent.postMessage('dma-tb-cerrar','*'); });
+}
+if(!/[?&]burbuja=1/.test(location.search))
 try{ if(window.self!==window.top){ const a=document.getElementById('completa');
   a.href=location.href; a.classList.add('ver'); } }catch(e){
   const a=document.getElementById('completa'); a.href=location.href; a.classList.add('ver'); }
@@ -199,7 +209,12 @@ const CLIENTE = (function(){
     if(!c){ c = 'c' + Math.random().toString(36).slice(2) + Date.now().toString(36);
             localStorage.setItem('dma-tutor-cliente', c); }
     return c;
-  }catch(e){ return 'sin-almacenamiento'; }
+  }catch(e){
+    /* Sin almacenamiento (p. ej. dentro de la burbuja en un navegador que
+       bloquea el de terceros) cada pagina se inventa el suyo. Antes todos
+       caian en el mismo «sin-almacenamiento» y compartian las 20 del dia. */
+    return 'sa' + Math.random().toString(36).slice(2) + Date.now().toString(36);
+  }
 })();
 
 const chat=document.getElementById('chat'), caja=document.getElementById('caja');
@@ -296,7 +311,7 @@ async function comprobarPrograma(){
      despertar. Sin este aviso la caja se veia muerta, y la primera pregunta
      (escrita con la caja aun cerrada) se perdia (24-sep). */
   const aviso = caja.placeholder;
-  caja.placeholder = 'Conectando con el tutor… puede tardar unos segundos';
+  caja.placeholder = 'Conectando con el tutor…';
   for(let intento = 0; intento < 2; intento++){
     try{
       const d = await (await fetch(SERVICIO_URL+'/tutor/salud')).json();
