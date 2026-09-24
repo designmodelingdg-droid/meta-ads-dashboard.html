@@ -311,7 +311,7 @@ async function comprobarPrograma(){
      despertar. Sin este aviso la caja se veia muerta, y la primera pregunta
      (escrita con la caja aun cerrada) se perdia (24-sep). */
   const aviso = caja.placeholder;
-  caja.placeholder = 'Conectando con el tutor… puede tardar unos segundos';
+  caja.placeholder = 'Conectando con el tutor…';
   for(let intento = 0; intento < 2; intento++){
     try{
       const d = await (await fetch(SERVICIO_URL+'/tutor/salud')).json();
