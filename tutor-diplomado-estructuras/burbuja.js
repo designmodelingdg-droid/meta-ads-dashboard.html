@@ -196,6 +196,21 @@
       }
     }
     visible(!!p);
+    if (p) despertar();
+  }
+
+  /* El servidor del tutor (Render, plan gratis) se duerme sin uso y tarda
+     hasta un minuto en despertar: el alumno abria la burbuja y veia
+     «Conectando…» (captura de Dayana, 24-sep). Se le da un toque en cuanto
+     el alumno entra al curso, mientras mira la clase, para que al abrir el
+     tutor ya este despierto. Es una lectura de /tutor/salud: no gasta
+     preguntas ni llama al modelo. Una vez por pagina cargada. */
+  var despertado = false;
+  function despertar() {
+    if (despertado || !window.fetch) return;
+    despertado = true;
+    try { fetch('https://dma-tutor.onrender.com/tutor/salud', { mode: 'no-cors', cache: 'no-store' }); }
+    catch (e) {}
   }
 
   function arrancar() {
