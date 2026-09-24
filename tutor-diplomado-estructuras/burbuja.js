@@ -1,7 +1,8 @@
 /* Solo caracteres ASCII en el codigo: los acentos van como \u00e1 etc. Asi se
    ven bien aunque la pagina que lo carga no declare su codificacion.
 
-   Burbuja del Tutor IA dentro del curso del Diplomado en GoHighLevel (24-sep).
+   Burbuja del Tutor IA dentro de los cursos en GoHighLevel (24-sep): el del
+   Diplomado BIM Estructuras y el de la Especializacion en Acero.
 
    Se pega UNA linea en GHL → Productos → el Diplomado → Configuracion →
    Avanzada → «Javascript personalizado» (ver MONTAJE-GHL.md). Esa linea carga
@@ -20,11 +21,24 @@
   if (window.__dmaTutorBurbuja) return;          // pegado dos veces: una sola burbuja
   window.__dmaTutorBurbuja = true;
 
-  var TUTOR = 'https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/tutor-diplomado-estructuras/';
-  var PRODUCTO = 'b252f808-ce76-40b6-ba07-b9e13e29b4f4';
-  // true = mostrar en cualquier pagina donde se cargue (nivel producto).
-  // Solo se filtra por la direccion si la linea de GHL lo pide (nivel portal).
-  var soloDiplomado = !!window.DMA_TUTOR_SOLO_DIPLOMADO;
+  // UN archivo para los dos tutores (24-sep). La linea de GHL dice cual con
+  // «?programa=acero» en la direccion del script; sin eso es el Diplomado,
+  // que fue el primero en pegarse. Cada curso abre SU tutor: un alumno del
+  // Acero no puede recibir respuestas con clases del Diplomado, ni al reves.
+  var BASE = 'https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/';
+  var PROGRAMAS = {
+    diplomado: { tutor: BASE + 'tutor-diplomado-estructuras/', nombre: 'Diplomado',
+                 producto: 'b252f808-ce76-40b6-ba07-b9e13e29b4f4' },
+    acero:     { tutor: BASE + 'tutor-acero/', nombre: 'Acero', producto: null }
+  };
+  var yo = (document.currentScript && document.currentScript.src) || '';
+  var P = PROGRAMAS[/[?&]programa=acero\b/.test(yo) || window.DMA_TUTOR_PROGRAMA === 'acero'
+                    ? 'acero' : 'diplomado'];
+  var TUTOR = P.tutor;
+  // Nivel producto: se muestra donde se cargue. Nivel portal (todos los
+  // cursos): solo si la linea lo pide, y solo en paginas con el ID del producto.
+  var soloDiplomado = P.producto && !!window.DMA_TUTOR_SOLO_DIPLOMADO;
+  var PRODUCTO = P.producto;
 
   var css = [
     '#dma-tb-boton{position:fixed;right:20px;bottom:20px;z-index:2147483000;width:60px;height:60px;',
@@ -64,7 +78,7 @@
     boton = document.createElement('button');
     boton.id = 'dma-tb-boton';
     boton.type = 'button';
-    boton.setAttribute('aria-label', 'Abrir el Tutor IA del Diplomado');
+    boton.setAttribute('aria-label', 'Abrir el Tutor IA del ' + P.nombre);
     boton.setAttribute('aria-expanded', 'false');
     boton.textContent = 'IA';
 
@@ -76,9 +90,9 @@
     panel = document.createElement('div');
     panel.id = 'dma-tb-panel';
     panel.setAttribute('role', 'dialog');
-    panel.setAttribute('aria-label', 'Tutor IA del Diplomado');
+    panel.setAttribute('aria-label', 'Tutor IA del ' + P.nombre);
     panel.innerHTML =
-      '<div id="dma-tb-cab"><span>Tutor IA \u00b7 Diplomado</span>' +
+      '<div id="dma-tb-cab"><span>Tutor IA \u00b7 ' + P.nombre + '</span>' +
       '<a href="' + TUTOR + '" target="_blank" rel="noopener" title="Abrir en pantalla completa">Pantalla completa \u2197</a>' +
       '<button type="button" aria-label="Cerrar el tutor">\u00d7</button></div>';
 
@@ -104,7 +118,7 @@
     if (!marco) {
       marco = document.createElement('iframe');
       marco.src = TUTOR + '?burbuja=1';
-      marco.title = 'Tutor IA del Diplomado';
+      marco.title = 'Tutor IA del ' + P.nombre;
       panel.appendChild(marco);
     }
     panel.classList.add('abierto');
