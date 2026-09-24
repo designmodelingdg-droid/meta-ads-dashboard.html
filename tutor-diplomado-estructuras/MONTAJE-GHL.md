@@ -86,6 +86,10 @@ window.DMA_TUTOR_SOLO_DIPLOMADO=true;(function(){var s=document.createElement('s
 
 El botón de la portada puede quedarse: son dos entradas al mismo tutor.
 
+**Para la Especialización en Acero** es el mismo archivo con `?programa=acero`
+al final de la dirección: ver `tutor-acero/MONTAJE-GHL.md`. Sin ese final,
+abre el tutor del Diplomado.
+
 Si la burbuja no aparece: el campo de «Javascript personalizado» del producto
 no se pudo inspeccionar por dentro, así que cabe que no acepte JavaScript. En
 ese caso, probar la misma línea envuelta en `<script>…</script>` en
