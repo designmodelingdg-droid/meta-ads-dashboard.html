@@ -31,7 +31,7 @@ consultó `/tutor/salud` y no gastó ninguna pregunta.
 | 3 | Probar y medir memoria | HECHO: 189 MB con los dos tutores |
 | 4 | Fusionar el servidor (dma-sales-assistant #53) | HECHO |
 | 5 | Publicar esta carpeta y hacer la tarjeta | HECHO |
-| 6 | Custom Block en el curso del Diplomado en GHL | **Ester y Aylin** → `MONTAJE-GHL.md` |
+| 6 | Custom Block en el curso del Diplomado en GHL | HECHO (24-sep). Probado: una pregunta llegó al servidor como Diplomado |
 | 7 | Subtítulos en español del Módulo 2 en Vimeo, y volver a bajar el corpus | HECHO: 26 videos. Quedan 7 con subtítulos solo en inglés (Vimeo rechaza el cambio de idioma) y 3 del M2 · Fase 7 en otra cuenta de Vimeo |
 | — | Módulo 1 | Sin fuente: son videos nativos de GHL, sin Vimeo ni texto |
 
