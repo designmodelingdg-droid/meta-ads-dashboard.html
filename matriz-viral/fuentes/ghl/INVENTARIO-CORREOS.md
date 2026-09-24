@@ -1,8 +1,8 @@
 # Inventario de correos — GoHighLevel
 
-Generado el 2026-09-21.
+Generado el 2026-09-24.
 
-**448 plantillas** en **54 carpetas**. 448 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
+**449 plantillas** en **54 carpetas**. 449 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
 
 > Lo que NO sale por API: que workflow usa que plantilla. El endpoint de automatizaciones devuelve solo metadatos. En esta cuenta las plantillas estan nombradas por su flujo, asi que el cruce se puede hacer leyendo.
 
@@ -3678,6 +3678,61 @@ Ing. Gabriel Pantoja
 ```
 
 ## CAMPAÑAS MENSUALES/ANUNCIOS
+
+### Campaña Diplomado Estructuras + Tutor IA
+
+- **id:** `6ab56dea9fea638c084bd4b9`
+- **tipo:** html
+- **actualizada:** 2026-09-24T18:48:37.589Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Imagenes por URL del CDN de GHL (sin base64).
+Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Resuelve tus dudas de c&aacute;lculo y modelado a cualquier hora, sin costo extra.
+Nueva actualizaci&oacute;n
+Tu Diplomado BIM en Estructuras ahora viene con Tutor IA
+Hola {{contact.first_name}} ,
+Estudiar solo tiene un problema conocido: te trabas un jueves a las once de la noche con una verificaci&oacute;n que no cuadra en Robot, mandas la duda al foro y el proyecto se queda quieto hasta que alguien responde.
+Acabamos de resolver eso.
+Nuevo en el diplomado
+Ahora tienes un Tutor IA
+Est&aacute; integrado en la plataforma, dentro del aula. Le preguntas lo que se te atore mientras estudias y te responde al momento, a cualquier hora, sobre el contenido del diplomado.
+Va incluido en el Diplomado Universitario Internacional BIM: Edificaciones de Acero Estructural y Hormig&oacute;n Armado , sin costo extra y desde el primer d&iacute;a.
+Qu&eacute; hace el Tutor IA por ti
+&#9989; Resuelve dudas de c&aacute;lculo y de normativa a cualquier hora, sin esperar al foro.
+&#9989; Te explica el por qu&eacute; de cada verificaci&oacute;n, no solo el resultado.
+&#9989; Te acompa&ntilde;a mientras modelas en Revit, analizas en Robot y detallas en Advance Steel.
+&#9989; No reemplaza al instructor: las mentor&iacute;as personalizadas siguen igual.
+9 m&oacute;dulos &middot; 600 horas &middot; 6 meses
+Tutor IA 24/7 &middot; mentor&iacute;as personalizadas &middot; MasterClass en vivo
+Sin costo adicional
+Titulaci&oacute;n con respaldo internacional
+Certificaciones Autodesk por cada m&oacute;dulo y diplomas universitarios al finalizar.
+Autodesk
+Uno por m&oacute;dulo
+Design Modeling
+Al finalizar
+Doctrina Qualitas
+Al finalizar
+Sabal University
+Estados Unidos
+Univ. de las Naciones
+M&eacute;xico
+Ver el Diplomado en Estructuras &#8594;
+El Tutor IA se activa al entrar al aula
+Ver el temario completo
+&iquest;Quieres verlo antes de decidir?
+Escr&iacute;benos por WhatsApp y te mostramos c&oacute;mo funciona el Tutor IA por dentro.
+Hablar por WhatsApp
+Nos vemos en el aula,
+Design Modeling Academy
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
 
 ### Campaña Esp Acero
 
