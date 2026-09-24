@@ -55,9 +55,23 @@ TEMAS = {
 MASTER = re.compile(r"\b(m[aá]ster|master|bim manager|maestr[ií]a)\w*", re.I)
 
 
+# Etiquetas de campo de los formularios de Meta y de GHL. Lo que va detras de
+# «Full name:» es un nombre y apellido: el 24-sep se colaron dos enteros en
+# conversaciones.json, que el propio fichero anuncia sin nombres. El correo y el
+# telefono ya se tapaban; el nombre no, porque no tiene forma reconocible.
+_CAMPO_NOMBRE = re.compile(
+    r"\b(full[ _]?name|first[ _]?name|last[ _]?name|nombre(?:s)?(?: completo| y apellidos?)?|apellidos?)"
+    r"\s*:\s*.*?(?=\s+(?:phone(?: number)?|email|e-mail|correo|tel[eé]fono|celular|whatsapp|pa[ií]s|country|city|ciudad|\u00bf)\b|[\n\r]|$)",
+    re.I)
+# Tarjeta de contacto compartida en WhatsApp: «👤 NOMBRE (telefono)».
+_TARJETA = re.compile(r"\U0001F464\s*[^(\[\n]{1,60}")
+
+
 def limpiar(texto):
     """Quita todo lo que pueda identificar a una persona."""
     t = texto or ""
+    t = _CAMPO_NOMBRE.sub(lambda m: m.group(1) + ": [nombre]", t)
+    t = _TARJETA.sub("\U0001F464 [nombre] ", t)
     t = re.sub(r"[\w\.\-+]+@[\w\.\-]+", "[correo]", t)
     t = re.sub(r"(?:\+?\d[\d\s\-\(\)]{7,}\d)", "[telefono]", t)
     t = re.sub(r"https?://\S+", "[enlace]", t)
