@@ -182,7 +182,7 @@ def tab_resumen():
         ("Grupo 2 · Comunidades", "12 mensajes cortos, sin hashtags, listos para pegar.", "Martes, jueves y viernes"),
         ("Grupo 3 · Blog", "4 artículos con su CTA y la portada.", "Sábados"),
         ("Grupo 4 · LinkedIn", "20 publicaciones repartidas entre las 3 páginas.", "Lunes a viernes"),
-        ("Grupo 5 · Historias", "80 historias. Cada semana es un arco: el lunes abre un bucle y el jueves lo paga.", "Todos los días L-V"),
+        ("Grupo 5 · Historias", "77 historias. Cada día cuelga de la pieza de feed del día y del recurso que pide (corregido 25-sep).", "Todos los días L-V"),
         ("Reels", "Guion segundo a segundo de los 14: 5 de valor, 3 de lead magnet y 6 de venta.", "Dos sesiones de grabación"),
         ("Publicidad", "Los 10 anuncios con su copy y su ficha de montaje. Sin precios: el Máster no lleva cifra.", "Todo junto el lunes 7"),
         ("Lead magnets", "Los 3 recursos nuevos, su post de lanzamiento y el paso a paso de GoHighLevel.", "Mar 8, Mar 22 y Mar 29"),
@@ -406,20 +406,15 @@ def grabacion_semana(sem):
 def tab_historias():
     g = CAL["grupos"][4]
     o = [f'<h2>{e(g["nombre"])}</h2>',
-         '<p class="intro"><b>La semana es un arco, no cinco días sueltos.</b> Desde la semana 2, '
-         'cada semana cuenta una sola historia con el caso real de Gabriel detrás — una vivienda de '
-         'dos pisos de hormigón armado, con estructuras, arquitectura e instalaciones. El lunes '
-         '<b>abre el bucle</b> con un número y una promesa a fecha fija; el martes trae <b>la '
-         'prueba</b>; el miércoles <b>la objeción</b>, y lo que contesten en la encuesta es el '
-         'contenido del jueves; el jueves <b>paga lo prometido</b> y ahí —solo ahí— aparece la '
-         'venta; el viernes <b>cierra</b> y suelta el recurso.</p>'
-         '<p class="intro">Los fondos ya no son todos generados: <b>REAL · cámara</b> (Gabriel, la '
-         'obra, la memoria impresa), <b>REAL · pantalla</b> (Revit, el correo del revisor, el tutor) '
-         'y <b>GENERADA</b> solo para lo que no se puede fotografiar. El mensaje principal de la '
-         'semana nunca va sobre una imagen generada: va sobre material real, que es lo que lo hace '
-         'creíble. Los números entre [ ] los confirma Gabriel antes de grabar.</p>']
+         '<p class="intro"><b>Cada día cuelga de la pieza de feed de ese día y del recurso que pide.</b> '
+         'Primer frame que frena el dedo, uno o dos de valor sacados del material real, una interacción '
+         'y un sticker que abre un DM o lleva al recurso. Solo se muestra lo que existe: la guía '
+         'publicada, la plantilla, la norma, el tutor, el post o el reel del día.</p>'
+         '<div class="dato"><strong>Corregido el 25-sep.</strong> Las semanas 2 y 3 se escribieron '
+         'como un «caso real de Gabriel» (una vivienda de dos pisos) que nunca se confirmó, y pedían '
+         'grabar material que no existe. Desde el viernes 25 las historias vuelven al formato de agosto. '
+         'No se vuelve a escribir un caso que no esté confirmado por escrito.</div>']
     o.append('<ul class="reglas">' + "".join(f'<li>{e(r)}</li>' for r in g["reglas"]) + '</ul>')
-    o.append(bloque_grabacion())
     o.append(filtro_semanas("g5") + barra_avance())
     for sem in H.SEMANAS:
         o.append(f'<div class="semana" data-sem="{sem["n"]}"><div class="semana-cab"><span class="snum">S{sem["n"]}</span>'
