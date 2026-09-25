@@ -3,10 +3,10 @@
  "nota": "Agregados de conversaciones para perfilar leads. NO contiene nombres, telefonos ni correos: los fragmentos pasan por un limpiador antes de escribirse.",
  "conversaciones_traidas": 300,
  "con_mensajes_revisadas": 300,
- "menciona_master": 25,
+ "menciona_master": 24,
  "mensajes_por_conversacion": {
   "mediana": 32,
-  "media": 44.8,
+  "media": 44.5,
   "solo_un_mensaje": 0
  },
  "quien_habla_ultimo": {
@@ -19,23 +19,23 @@
  },
  "temas_todas": {
   "software": 136,
-  "perfil_propio": 125,
+  "perfil_propio": 124,
   "precio": 102,
-  "duracion": 79,
+  "duracion": 78,
   "inicio": 77,
-  "temario": 53,
+  "temario": 52,
   "empleo": 34,
   "certificado": 32,
   "modalidad": 25,
   "requisitos": 18
  },
  "temas_solo_master": {
-  "perfil_propio": 20,
+  "perfil_propio": 19,
   "precio": 15,
-  "duracion": 15,
-  "temario": 14,
+  "duracion": 14,
   "software": 14,
   "certificado": 13,
+  "temario": 13,
   "empleo": 10,
   "inicio": 9,
   "modalidad": 5,
@@ -125,12 +125,12 @@
   {
    "mensajes": 100,
    "quedo_sin_responder": false,
-   "primer_mensaje": "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿A qué te dedicas?: Proyectista, dibujante o modelador BIM Full name: Alejandro Salazar Phone number: [telefono] Con las estructuras d"
+   "primer_mensaje": "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿A qué te dedicas?: Proyectista, dibujante o modelador BIM Full name: [nombre] Phone number: [telefono] Con las estructuras de acero, "
   },
   {
    "mensajes": 28,
    "quedo_sin_responder": false,
-   "primer_mensaje": "👤 LETZAR ([telefono]) [enlace] 📱 [Received on Design Modeling Academy ([telefono])]"
+   "primer_mensaje": "👤 [nombre] ([telefono]) [enlace] 📱 [Received on Design Modeling Academy ([telefono])]"
   },
   {
    "mensajes": 100,
@@ -155,17 +155,12 @@
   {
    "mensajes": 26,
    "quedo_sin_responder": false,
-   "primer_mensaje": "De¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿A qué te dedicas?: Ingeniero(a) civil o estructural Full name: Ronny Balcazar Chavez Phone number: [telefono] Con las estructuras d"
+   "primer_mensaje": "De¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿A qué te dedicas?: Ingeniero(a) civil o estructural Full name: [nombre] Phone number: [telefono] Con las estructuras de acero, ¿qué"
   },
   {
    "mensajes": 94,
    "quedo_sin_responder": false,
    "primer_mensaje": "Buenos dias, podrias darme informacion del valor del master? 📱 [Received on Design Modeling Academy ([telefono])]"
-  },
-  {
-   "mensajes": 74,
-   "quedo_sin_responder": false,
-   "primer_mensaje": "Hola buen día 📱 [Received on Design Modeling Academy ([telefono])]"
   }
  ],
  "limite_aplicado": 300,

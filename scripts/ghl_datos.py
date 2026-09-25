@@ -78,18 +78,23 @@ def oportunidades(paginas=12):
     """
     por_pipeline, por_etapa, por_fuente, por_estado = Counter(), Counter(), Counter(), Counter()
     por_mes, valor = Counter(), 0.0
-    total, sig, vueltas = 0, None, 0
+    # Se pagina con «page» y se descarta todo id ya visto. Hasta el 24-sep se
+    # mandaba solo startAfterId, que la API ignora sin su pareja startAfter:
+    # devolvia las MISMAS 100 oportunidades en las 12 vueltas. Por eso todos los
+    # conteos salian multiplos de 12 y el total era siempre 1.200.
+    total, vueltas, vistos, repetidas = 0, 0, set(), 0
     while vueltas < paginas:
-        p = {"location_id": LOCATION, "limit": 100}
-        if sig:
-            p["startAfterId"] = sig
+        p = {"location_id": LOCATION, "limit": 100, "page": vueltas + 1}
         d = api("/opportunities/search", **p)
         if "_error" in d:
             return {**d, "parcial": total}
         lote = d.get("opportunities", []) or []
-        if not lote:
+        nuevas = [o for o in lote if o.get("id") not in vistos]
+        repetidas += len(lote) - len(nuevas)
+        if not nuevas:
             break
-        for o in lote:
+        for o in nuevas:
+            vistos.add(o.get("id"))
             total += 1
             por_pipeline[o.get("pipelineId") or "sin pipeline"] += 1
             por_etapa[o.get("pipelineStageId") or "sin etapa"] += 1
@@ -102,10 +107,11 @@ def oportunidades(paginas=12):
                 valor += float(o.get("monetaryValue") or 0)
             except (TypeError, ValueError):
                 pass
-        sig = lote[-1].get("id")
         vueltas += 1
         time.sleep(0.3)
-    return {"total": total, "valor_declarado": round(valor, 2),
+    return {"total": total, "paginas_leidas": vueltas, "repetidas_descartadas": repetidas,
+            "tope_paginas": paginas,
+            "valor_declarado": round(valor, 2),
             "por_pipeline": dict(por_pipeline), "por_etapa": dict(por_etapa),
             "por_fuente": dict(por_fuente.most_common(30)),
             "por_estado": dict(por_estado),
