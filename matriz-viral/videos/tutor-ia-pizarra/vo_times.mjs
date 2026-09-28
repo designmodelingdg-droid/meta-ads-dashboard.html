@@ -1,0 +1,12 @@
+import { chromium } from 'playwright';
+import { createServer } from 'node:http';
+import { readFile } from 'node:fs/promises';
+import { extname, join } from 'node:path';
+const types = { '.html': 'text/html', '.js': 'text/javascript', '.json': 'application/json', '.css': 'text/css', '.png': 'image/png', '.woff2': 'font/woff2' };
+const server = createServer(async (req, res) => { try { const p = join(process.cwd(), decodeURIComponent(req.url.split('?')[0])); const b = await readFile(p); res.writeHead(200, { 'content-type': types[extname(p)] || 'application/octet-stream' }); res.end(b); } catch { res.writeHead(404); res.end(); } }).listen(0);
+const browser = await chromium.launch({ executablePath: process.env.CHROME_PATH });
+const page = await browser.newPage();
+await page.goto(`http://localhost:${server.address().port}/index.html?render=1`);
+await page.waitForFunction(() => window.READY === true, null, { timeout: 60000 });
+console.log(JSON.stringify(await page.evaluate(() => ({ vo: window.__VO, dur: window.DURATION }))));
+await browser.close(); server.close();
