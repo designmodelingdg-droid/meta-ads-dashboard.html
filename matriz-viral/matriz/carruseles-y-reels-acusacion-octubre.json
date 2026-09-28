@@ -1,0 +1,266 @@
+{
+  "generado": "2026-09-28",
+  "de": "Matriz de octubre 2026 · Design Modeling Academy · Carruseles y reels en formato «acusación» y «ranking»",
+  "pedido": "Dayana, 28-sep-2026: sacar reels y carruseles como dos piezas de aecode.ai que le gustaron, y meterlos en la matriz de octubre.",
+  "referencia": [
+    {
+      "cuenta": "aecode.ai",
+      "pieza": "Carrusel «Deja de usar IA en BIM si no quieres que te pasen las siguientes cosas» (8 láminas)",
+      "url": "https://www.instagram.com/p/DdpqqQ5DHi7/",
+      "metricas_publicas": "106 me gusta · 40 comentarios (leído el 28-sep de la página pública del post)",
+      "mecanica": "Portada con psicología inversa. Cada lámina: etiqueta «No la uses para X» + frase irónica «Si prefieres seguir haciéndolo a mano…» + «Ejemplo real» con el flujo exportas → defines la regla → la IA ordena → validas tú, sobre capturas reales de software. CTA: «Comenta 1, 2 o 3 y te enviamos la ruta ideal»."
+    },
+    {
+      "cuenta": "aecode.ai",
+      "pieza": "Reel «Ranking BIM 2026: ¿AutoCAD en último lugar?» (41 s)",
+      "url": "https://www.instagram.com/reel/Ddpe4jKNJ1z/",
+      "metricas_publicas": "1.421 vistas · 85 me gusta · 0 comentarios visibles",
+      "mecanica": "Presentadora sosteniendo un tablero de cartón tipo tier list con logos (PRO / NECESARIO / MUY BUENO / BUENO). Tema polémico, pide opinión en el caption."
+    }
+  ],
+  "por_que_encaja": "Es el mismo mecanismo que ya medimos en OCTUBRE-QUE-FUNCIONA.md §1: acusar un hábito concreto («Si prefieres seguir resolviendo manualmente…») da 16 veces más comentarios en esta cuenta. El carrusel de AECODE lo confirma fuera de casa: 40 comentarios, cuando la mejor pieza de las 11 cuentas del sector que medimos tenía 9. El reel NO lo demuestra (1.421 vistas, bajo nuestra mediana de 5.743): se toma el formato ranking, pero más corto.",
+  "alcance": "Semanas 2 y 3 de octubre (12-25 oct), después de la semana del lanzamiento del Tutor IA del Diplomado. Piezas de NÚCLEO (IA y BIM): sí cuentan para el 60 % de núcleo del mes.",
+  "como_se_usa": "matriz-mensual mete estas piezas en calendario-octubre.json por su id. Igual que con lanzamiento-tutor-ia-octubre.json: su comprobación de ids solo mira guiones-completos.json, así que hay que copiarlas allí o ampliar la comprobación a este fichero.",
+  "verificado": [
+    "Revit exporta tablas de planificación a texto delimitado (Archivo → Exportar → Informes → Tabla de planificación) que abre Excel: https://help.autodesk.com/view/RVT/2027/ENU/?guid=GUID-B2CCAC4F-1D38-4D5D-B4D1-95619D1B7EBE",
+    "Navisworks Clash Detective escribe el informe en XML, HTML, HTML (tabular) —que se abre y edita en Excel— o texto: https://help.autodesk.com/view/NAV/2027/ENU/?guid=GUID-BD25B5D3-CB5F-424F-BF94-4C9710E47D27",
+    "Robot Structural Analysis: clic derecho sobre una tabla → «Conversion to EXCEL (CSV) format», o copiar y pegar: https://www.autodesk.com/support/technical/article/caas/sfdcarticles/sfdcarticles/How-to-export-tables-to-Excel-from-Robot-Structural-Analysis.html",
+    "Dynamo lee Excel (Data.ImportExcel) y escribe parámetros en Revit (Element.SetParameterByName): https://www.autodesk.com/support/technical/article/caas/sfdcarticles/sfdcarticles/How-to-update-parameter-values-using-an-external-file-in-Revit.html",
+    "Robot Structural Analysis Professional sigue a la venta, con versión 2026 y sin anuncio de retiro (búsqueda del 28-sep-2026): https://www.autodesk.com/products/robot-structural-analysis/overview",
+    "Peso de varilla: Ø²/162 kg/m (Ø en mm), la misma fórmula del post del Vie 2-oct (sep-dato-peso-varilla)."
+  ],
+  "no_se_dice": [
+    "Que la IA «modela», «calcula» o «diseña» sola. Toda lámina termina en «validas tú».",
+    "Que Revit, Robot o Navisworks traen IA propia que haga estos flujos. La IA aquí es un asistente de chat (ChatGPT, Claude…) trabajando sobre lo que exportas.",
+    "Factores de carga o cifras de norma. La IA arma la matriz con la tabla que TÚ le das de tu norma; nunca se le piden los factores de memoria.",
+    "Que el ranking es un estudio de mercado. Es la opinión de la academia y se dice así: la gracia es que se discuta.",
+    "Precios o condiciones del Máster. El CTA lleva al test de nivel, no a una venta."
+  ],
+  "avisos": [
+    "Palabra NIVEL: viva en GoHighLevel (✅ Comentario NIVEL - Test de Nivel BIM, ✅ Seguimiento Test de Nivel → Máster BIM+IA) según fuentes/openreply/campanas.json del 27-sep. No está en OpenReply. Antes de publicar, Patricio confirma que el disparador de GHL contesta en Instagram y en Facebook con un comentario de prueba desde una cuenta ajena.",
+    "No se usa el «Comenta 1, 2 o 3» de AECODE: exige montar tres respuestas nuevas y un número suelto puede dispararse con cualquier comentario que lo contenga. NIVEL ya lleva al test que dice por dónde empezar, que es la misma promesa de «la ruta ideal».",
+    "Capturas: pantallazos reales de Revit, Robot y Navisworks de la academia (pedido de Dayana). Nada generado con IA ni capturas de otras cuentas. Sin nombres de clientes ni proyectos reales visibles.",
+    "No copiar el error de AECODE: sus láminas 6 y 7 repiten el mismo texto de «Ejemplo real». Cada lámina aquí tiene su propio ejemplo."
+  ],
+  "total": 4,
+  "por_grupo": {
+    "GRUPO 1 · Feed principal": 4
+  },
+  "piezas": [
+    {
+      "id": "oct-acusa-ia-calculo-carrusel",
+      "fecha": "Lun 12 oct",
+      "fecha_iso": "2026-10-12",
+      "semana": "Semana 2 (12-18 oct)",
+      "grupo": "GRUPO 1 · Feed principal",
+      "tipo": "valor",
+      "formato": "CARRUSEL (8 slides)",
+      "redes": ["instagram", "facebook"],
+      "audiencia": "ingenieros estructurales y modeladores BIM que ya probaron la IA y la dejaron",
+      "estado": "COMPLETA",
+      "titulo": "Deja de usar IA en tu cálculo estructural",
+      "eje": "NÚCLEO-IA",
+      "pilar": "Acusación · IA aplicada a estructuras",
+      "hook": "Deja de usar IA en tu cálculo estructural si no quieres que te pasen estas 5 cosas.",
+      "slides": [
+        {
+          "n": 1,
+          "texto": "DEJA DE USAR IA EN TU CÁLCULO ESTRUCTURAL · si no quieres que te pasen estas 5 cosas →",
+          "visual": "Portada. Foto REAL del escritorio de la academia con Revit y Robot abiertos en dos pantallas, oscurecida al 60 %. «DEJA DE USAR» en blanco, «IA EN TU CÁLCULO» en ámbar #E8A04A, en dos líneas enormes. Subtítulo fino en blanco y una flecha. Logo DMA arriba al centro."
+        },
+        {
+          "n": 2,
+          "texto": "1 · No la uses para la planilla de acero. | Si prefieres seguir sumando kilos de varilla a mano, diámetro por diámetro. | Ejemplo real: exportas la tabla de armaduras de Revit (Archivo → Exportar → Informes → Tabla de planificación). Le pides a la IA la fórmula de peso —Ø²/162 kg/m por la longitud— agrupada por diámetro. Tú compruebas tres filas a mano antes de fiarte.",
+          "visual": "Fondo: CAPTURA REAL de una tabla de planificación de armaduras en Revit. Etiqueta «1 · No la uses para la planilla de acero» en recuadro azul #003E5C con texto blanco. Frase irónica en recuadro navy #001E30. «Ejemplo real» en recuadros blancos con texto navy, abajo."
+        },
+        {
+          "n": 3,
+          "texto": "2 · No la uses para revisar tu memoria de cálculo. | Si te gusta enterarte de lo que falta cuando el revisor te la devuelve. | Ejemplo real: le pasas el índice de tu memoria y la lista de las 12 secciones que pide una memoria completa. La IA marca qué falta y qué quedó a medias. Tú lo corriges con tu criterio y con tu norma.",
+          "visual": "Fondo: la captura de las 12 secciones de nuestra guía de memoria de cálculo (matriz-viral/entregables/historias-capturas/mar29-frame3-las-12-secciones.png). Mismo sistema de recuadros que la lámina 2."
+        },
+        {
+          "n": 4,
+          "texto": "3 · No la uses para las combinaciones de carga. | Si prefieres escribirlas todas a mano y esperar no saltarte ninguna. | Ejemplo real: le das la tabla de combinaciones de TU norma (NEC-SE-CG, ASCE 7…) y tus casos de carga. La IA arma la matriz completa. Tú verificas cada factor contra la norma antes de meterla en Robot.",
+          "visual": "Fondo: CAPTURA REAL de Robot con el cuadro de combinaciones abierto (sin nombre de proyecto visible). Mismo sistema de recuadros."
+        },
+        {
+          "n": 5,
+          "texto": "4 · No la uses para leer resultados. | Si te sobra tiempo para recorrer tablas enteras de esfuerzos buscando el máximo. | Ejemplo real: en Robot, clic derecho sobre la tabla → exportar a Excel (CSV). La IA te arma el filtro de máximos por barra y por combinación. Tú revisas que ese máximo tenga sentido físico.",
+          "visual": "Fondo: CAPTURA REAL de una tabla de esfuerzos de Robot con el menú contextual abierto en la opción de exportar a Excel (CSV). Mismo sistema de recuadros."
+        },
+        {
+          "n": 6,
+          "texto": "5 · No la uses para coordinar. | Si te gusta ordenar las interferencias una por una. | Ejemplo real: en Navisworks, Clash Detective → Informe → formato HTML (tabular), que se abre en Excel. La IA agrupa por disciplina y nivel, prioriza y redacta las observaciones. Tú decides qué se corrige y quién.",
+          "visual": "Fondo: CAPTURA REAL de Navisworks, pestaña Informe del Clash Detective con «HTML (Tabular)» elegido. Mismo sistema de recuadros."
+        },
+        {
+          "n": 7,
+          "texto": "La IA ordena. Tú decides. | El criterio estructural sigue siendo tuyo. Lo que cambia es cuánto tiempo pierdes antes de poder usarlo.",
+          "visual": "Fondo navy #001E30 liso. «La IA ordena.» en blanco, «Tú decides.» en ámbar #E8A04A, enormes. Frase de apoyo en blanco fino."
+        },
+        {
+          "n": 8,
+          "texto": "¿Por dónde empiezas tú? Comenta NIVEL y te mandamos el test que te dice en qué punto estás con BIM + IA.",
+          "visual": "Cierre invertido: fondo ámbar #E8A04A, texto navy. «COMENTA NIVEL» en recuadro blanco grande. Firma «DG · @design_modeling_dg» abajo a la izquierda."
+        }
+      ],
+      "caption": "La IA no te sirve para calcular por ti. Te sirve para todo lo que haces alrededor del cálculo.\n\nAhí está el malentendido que hace que muchos la prueben una vez y la dejen: le piden que diseñe la viga, la respuesta no sirve y concluyen que la IA no funciona en estructuras.\n\nPero las horas no se van en el criterio. Se van en sumar kilos de varilla, armar combinaciones, recorrer tablas de esfuerzos, revisar la memoria y ordenar interferencias. Trabajo de información, no de ingeniería.\n\n📌 En el carrusel van 5 casos con el flujo exacto: qué exportas, qué le pides a la IA y en qué punto vuelves a validar tú.\n\n¿Cuál de los 5 te quita más horas? Dinos el número 👇\n\nY si quieres saber por dónde empezar, comenta NIVEL y te mandamos el test.\n\n#BIM #IngenieríaEstructural #Revit #RobotStructural #Navisworks #IA #DesignModelingDG",
+      "cta": {
+        "instagram": "Comenta NIVEL y te mandamos el test que te dice en qué punto estás con BIM + IA.",
+        "facebook": "Comenta NIVEL y te mandamos el test que te dice en qué punto estás con BIM + IA.",
+        "linkedin": "Se puede rediagramar a PDF horizontal para la cuenta de la Academy (Grupo 4) sin la palabra clave: «Escríbenos si quieres el test de nivel».",
+        "tiktok": "—",
+        "youtube": "—"
+      },
+      "condicion": "NIVEL debe contestar en Instagram y Facebook el día de publicar (ver avisos). Si no contesta, el CTA cambia a «Escríbenos NIVEL por DM y te mandamos el test». Las capturas de las láminas 4, 5 y 6 se sacan de un proyecto de la academia sin datos de clientes; si alguna no se puede sacar real, esa lámina se cae y el carrusel queda en 7, nunca con una captura inventada.",
+      "prompt_imagenes": "Carrusel IG 4:5 (1080x1350), 8 slides. Sistema de AECODE adaptado a la marca DMA: fondo = captura REAL de software a pantalla completa, con un velo navy suave abajo para que el texto se lea. Tres niveles de texto por lámina: etiqueta en recuadro azul #003E5C (texto blanco, la más corta), frase irónica en recuadro navy #001E30 (texto blanco, la más grande), y «Ejemplo real» en recuadros blancos pequeños con texto navy. Títulos Overpass, texto Nunito. Sin robots, sin cerebros de circuito, sin gente sonriendo a cámara. El texto se monta en Canva; nada de texto generado dentro de la imagen."
+    },
+    {
+      "id": "oct-ranking-software-estructural-reel",
+      "fecha": "Mié 14 oct",
+      "fecha_iso": "2026-10-14",
+      "semana": "Semana 2 (12-18 oct)",
+      "grupo": "GRUPO 1 · Feed principal",
+      "tipo": "valor",
+      "formato": "REEL (25-30 s)",
+      "redes": ["instagram", "facebook", "tiktok", "youtube_shorts"],
+      "audiencia": "ingenieros estructurales y estudiantes de últimos semestres",
+      "estado": "POR GRABAR",
+      "titulo": "Ranking de software estructural 2026: ¿AutoCAD en la última fila?",
+      "eje": "NÚCLEO-BIM",
+      "pilar": "Ranking polémico · opinión de la academia",
+      "hook": "¿AutoCAD en la última fila? Para un ingeniero estructural en 2026, sí. Y te explico por qué.",
+      "tablero": {
+        "fisico": "Cartón de 70x50 cm con cuatro filas de color y logos impresos en tarjetas con velcro o imán, para colocarlas en cámara. Es lo que hace que el formato se sienta real y no una plantilla.",
+        "filas": [
+          {"fila": "IMPRESCINDIBLE", "color": "#003E5C", "logos": ["Revit", "Robot Structural Analysis", "ETABS"]},
+          {"fila": "TE DIFERENCIA", "color": "#CA7520", "logos": ["Dynamo", "Navisworks", "IA de chat sobre lo que exportas (ChatGPT/Claude)"]},
+          {"fila": "ÚTIL SEGÚN EL PROYECTO", "color": "#E8A04A", "logos": ["SAP2000", "SAFE", "Tekla Structures"]},
+          {"fila": "YA SE DA POR HECHO", "color": "#8A99A8", "logos": ["AutoCAD", "Excel"]}
+        ],
+        "nota": "Es la opinión de la academia y se dice así en la voz. Los logos son marcas de sus fabricantes: se muestran tal cual, sin modificarlos."
+      },
+      "guion_columnas": ["tiempo", "plano", "voz", "texto_en_pantalla"],
+      "guion": [
+        ["0:00-0:03", "A cámara, plano medio, tablero ya en las manos con AutoCAD a medio colocar en la última fila. Sin intro. [PENDIENTE: quién graba, Gabriel o Dayana]", "¿AutoCAD en la última fila? Para un ingeniero estructural en 2026, sí.", "¿AUTOCAD EN LA **ÚLTIMA FILA**?"],
+        ["0:03-0:09", "Plano cenital del tablero: coloca Revit, Robot y ETABS arriba.", "Arriba: Revit para modelar y documentar, y un programa de análisis, Robot o ETABS. Sin esto no entras a un proyecto BIM de estructuras.", "IMPRESCINDIBLE"],
+        ["0:09-0:15", "Cenital: coloca Dynamo, Navisworks y la tarjeta de IA en la segunda fila.", "Lo que te diferencia: Dynamo para automatizar, Navisworks para coordinar, y la IA trabajando sobre lo que exportas.", "**TE DIFERENCIA**"],
+        ["0:15-0:20", "Cenital: coloca SAP2000, SAFE y Tekla en la tercera fila.", "Útiles según el proyecto: SAP2000, SAFE, Tekla. Buenos, pero no todos los usan.", "SEGÚN EL PROYECTO"],
+        ["0:20-0:25", "A cámara, termina de encajar AutoCAD y Excel abajo.", "Y abajo AutoCAD y Excel. No porque no sirvan: porque ya nadie te contrata por saberlos. Se da por hecho.", "YA SE DA **POR HECHO**"],
+        ["0:25-0:30", "A cámara, gira el tablero hacia la lente. CTA en el último tercio.", "Es nuestro ranking. ¿Qué moverías? Y si quieres saber en qué fila estás tú, comenta NIVEL.", "COMENTA **NIVEL**"]
+      ],
+      "version_tiktok": "Mismo montaje, sin palabra clave (TikTok no dispara el bot). Cierre: «¿Qué moverías de fila? Te leo.»",
+      "version_sin_grabar": "Si nadie puede grabar esa semana, se hace con el skill video-pizarra en estilo «minimal» con los colores DMA: el tablero se dibuja solo y los logos caen en su fila al ritmo. Pierde la cara, que es parte de lo que engancha; úsese solo como reserva.",
+      "caption": "Esto no es un ranking de qué programa es mejor. Es un ranking de qué te piden hoy para entrar a un proyecto de estructuras en BIM.\n\nAutoCAD sigue siendo enorme, pero pasó de ser el centro del flujo a ser algo que se da por hecho. Y Dynamo sube no por moda, sino porque automatizar empezó a aparecer en los requisitos.\n\nEs nuestra opinión. ¿Qué moverías de fila? 👇\n\nY si quieres saber en qué fila estás tú: comenta NIVEL y te mandamos el test.\n\n#IngenieríaEstructural #BIM #Revit #RobotStructural #ETABS #Dynamo #DesignModelingDG",
+      "cta": {
+        "instagram": "¿Qué moverías? Y si quieres saber en qué fila estás tú, comenta NIVEL.",
+        "facebook": "¿Qué moverías? Y si quieres saber en qué fila estás tú, comenta NIVEL.",
+        "tiktok": "¿Qué moverías de fila? Te leo.",
+        "youtube": "¿Qué moverías de fila? Te leo en comentarios.",
+        "linkedin": "No va a LinkedIn como reel vertical."
+      },
+      "condicion": "Igual que el carrusel: NIVEL tiene que contestar el día de publicar. 25-30 s como máximo: en esta cuenta los reels de menos de 30 s rinden más del doble que los de 30-60 s (patrones-de-viralidad.md), y el de AECODE, a 41 s, se quedó en 1.421 vistas.",
+      "prompt_imagenes": "Portada del reel 9:16: plano medio con el tablero de cartón sostenido a la altura del pecho, las cuatro filas visibles. Texto en el tercio superior: «RANKING ESTRUCTURAL 2026» y debajo «¿AutoCAD en la última fila?» con AutoCAD resaltado en recuadro ámbar. Fondo real de la oficina, pantalla con Robot encendida al fondo."
+    },
+    {
+      "id": "oct-ranking-perfil-bim-carrusel",
+      "fecha": "Lun 19 oct",
+      "fecha_iso": "2026-10-19",
+      "semana": "Semana 3 (19-25 oct)",
+      "grupo": "GRUPO 1 · Feed principal",
+      "tipo": "valor",
+      "formato": "CARRUSEL (7 slides)",
+      "redes": ["instagram", "facebook"],
+      "audiencia": "modeladores y coordinadores BIM que quieren subir de nivel (camino natural al Máster)",
+      "estado": "COMPLETA",
+      "titulo": "Ranking: ¿en qué fila estás tú?",
+      "eje": "NÚCLEO-BIM",
+      "pilar": "Ranking + acusación · camino profesional BIM",
+      "hook": "Ranking BIM: ¿en qué fila estás tú? Si todavía haces esto, estás en la primera.",
+      "slides": [
+        {
+          "n": 1,
+          "texto": "RANKING BIM · ¿En qué fila estás tú? · Si todavía haces lo de la primera, desliza →",
+          "visual": "Portada: el mismo tablero de cartón del reel del Mié 14, esta vez con cuatro filas de texto en lugar de logos: MODELA · COORDINA · GESTIONA · AUTOMATIZA. Una ficha con un signo de interrogación suelta al lado."
+        },
+        {
+          "n": 2,
+          "texto": "FILA 1 · MODELA | Si todavía esperas a que te pasen los planos para empezar, y tu trabajo termina cuando el modelo «se ve bien». | Lo que te falta: saber para qué va a servir la información que pones en el modelo.",
+          "visual": "Captura REAL de un modelo estructural en Revit, vista 3D. Etiqueta «FILA 1 · MODELA» en recuadro gris #8A99A8. Mismo sistema de recuadros que el carrusel del Lun 12."
+        },
+        {
+          "n": 3,
+          "texto": "FILA 2 · COORDINA | Si detectas interferencias pero las mandas por WhatsApp una por una, sin prioridad ni responsable. | Lo que te falta: convertir las interferencias en un informe que alguien pueda resolver.",
+          "visual": "Captura REAL de Navisworks, Clash Detective con resultados. Etiqueta «FILA 2 · COORDINA» en recuadro ámbar #E8A04A con texto navy."
+        },
+        {
+          "n": 4,
+          "texto": "FILA 3 · GESTIONA | Si el plan de ejecución BIM existe, pero nadie lo abre después de la primera reunión. | Lo que te falta: que el modelo sirva para el plazo y el costo (4D y 5D), no solo para la geometría.",
+          "visual": "Captura REAL de una simulación 4D (Navisworks TimeLiner) o de una tabla de cantidades enlazada a presupuesto, de la academia. Etiqueta «FILA 3 · GESTIONA» en recuadro naranja #CA7520."
+        },
+        {
+          "n": 5,
+          "texto": "FILA 4 · AUTOMATIZA | Si repites cada semana la misma tarea de datos (parámetros, tablas, informes) a mano. | Lo que te falta: Dynamo e IA sobre lo que exportas, para que esa tarea se haga sola y tú la revises.",
+          "visual": "Captura REAL de un gráfico de Dynamo con los nodos Data.ImportExcel y Element.SetParameterByName. Etiqueta «FILA 4 · AUTOMATIZA» en recuadro azul #003E5C."
+        },
+        {
+          "n": 6,
+          "texto": "Subir de fila no es aprender otro programa. | Es cambiar de pregunta: de «¿cómo lo modelo?» a «¿quién va a usar esto y para qué?».",
+          "visual": "Fondo navy #001E30 liso. Las dos preguntas en blanco, la segunda subrayada en ámbar."
+        },
+        {
+          "n": 7,
+          "texto": "¿En qué fila estás de verdad? Comenta NIVEL y te mandamos el test: te dice dónde estás y qué te falta para la siguiente.",
+          "visual": "Cierre invertido: fondo ámbar, texto navy, «COMENTA NIVEL» en recuadro blanco. Firma «DG · @design_modeling_dg»."
+        }
+      ],
+      "caption": "Casi todos los que trabajan en BIM creen estar una fila más arriba de donde están.\n\nNo es un tema de programas. Un modelador y un BIM Manager pueden usar el mismo Revit. Lo que cambia es la pregunta que se hacen antes de abrirlo.\n\n📌 En el carrusel van las 4 filas, con la señal de que estás en cada una y lo que te falta para subir.\n\n¿En qué fila te pusiste? Dinos el número 👇\n\nY si quieres comprobarlo, comenta NIVEL y te mandamos el test.\n\n#BIM #BIMManager #CoordinaciónBIM #Revit #Dynamo #DesignModelingDG",
+      "cta": {
+        "instagram": "Comenta NIVEL y te mandamos el test: te dice dónde estás y qué te falta para la siguiente fila.",
+        "facebook": "Comenta NIVEL y te mandamos el test: te dice dónde estás y qué te falta para la siguiente fila.",
+        "linkedin": "Buen candidato para el PDF de la cuenta de Gabriel (Grupo 4), sin palabra clave.",
+        "tiktok": "—",
+        "youtube": "—"
+      },
+      "condicion": "Mismo aviso de NIVEL. Las cuatro filas coinciden a propósito con las microcredenciales del Máster (Modelador → Coordinador → BIM Manager 4D-5D → Especialista BIM+IA), pero el carrusel NO nombra el Máster ni su precio: la venta la hace el seguimiento del test.",
+      "prompt_imagenes": "Carrusel IG 4:5, 7 slides, mismo sistema visual que oct-acusa-ia-calculo-carrusel (capturas reales de fondo + recuadros azul, navy y blanco) para que se lean como una serie. La portada usa foto real del tablero de cartón del reel del Mié 14 con fichas de texto."
+    },
+    {
+      "id": "oct-acusa-ia-calculo-reel-pizarra",
+      "fecha": "Mié 21 oct",
+      "fecha_iso": "2026-10-21",
+      "semana": "Semana 3 (19-25 oct)",
+      "grupo": "GRUPO 1 · Feed principal",
+      "tipo": "valor",
+      "formato": "REEL ANIMADO (30-35 s, sin grabar)",
+      "redes": ["instagram", "facebook", "tiktok", "youtube_shorts"],
+      "audiencia": "la misma del carrusel del Lun 12, en formato que no pide grabar a nadie",
+      "estado": "STORYBOARD (render con el skill video-pizarra cuando Dayana lo apruebe)",
+      "titulo": "La IA ordena, tú decides",
+      "eje": "NÚCLEO-IA",
+      "pilar": "Acusación · versión animada del carrusel del Lun 12",
+      "hook": "Si todavía sumas kilos de varilla a mano, este video es para ti.",
+      "herramienta": "Skill video-pizarra (.claude/skills/video-pizarra), estilo «cuaderno» con los colores DMA: hoja punteada, marcatextos ámbar, checkboxes. Texto en pantalla, sin voz. Música: pista sin derechos que elija Dayana o solo efectos (no hay llave de Suno).",
+      "storyboard_columnas": ["escena", "segundos", "fondo", "texto_en_pantalla", "accion", "transicion"],
+      "storyboard": [
+        ["1", "0-3", "Hoja punteada", "¿Todavía sumas kilos de varilla **a mano**?", "El texto se escribe con marcatextos ámbar; una calculadora dibujada tiembla al lado.", "La hoja se voltea"],
+        ["2", "3-9", "Captura REAL de la tabla de armaduras de Revit, enmarcada con washi tape", "Exportas la tabla → la IA arma la fórmula → **tú compruebas**", "Tres checkboxes se marcan uno a uno; «tú compruebas» queda subrayado.", "Borrado"],
+        ["3", "9-14", "Hoja punteada", "Combinaciones de carga: **con la tabla de TU norma**", "Aparece una tabla de combinaciones a medio llenar que se completa sola; al final, un sello «VERIFICA CADA FACTOR».", "Se arranca la hoja"],
+        ["4", "14-19", "Captura REAL de tabla de esfuerzos de Robot", "Tablas enteras → **el máximo que importa**", "La tabla se desliza y un marcatextos resalta una sola fila.", "Zoom a la fila resaltada"],
+        ["5", "19-24", "Captura REAL de Navisworks Clash Detective", "Interferencias sueltas → **observaciones con responsable**", "Las filas se agrupan en tres bloques con etiquetas de disciplina.", "Destello"],
+        ["6", "24-29", "Fondo navy", "La IA ordena. **Tú decides.**", "Texto enorme, sin herramienta: se estampa.", "Círculo de tinta"],
+        ["7", "29-34", "Fondo ámbar", "Comenta **NIVEL** y te mandamos el test", "El recuadro blanco con NIVEL rebota al ritmo; firma DG abajo.", "—"]
+      ],
+      "caption": "La versión en 30 segundos del carrusel del lunes 12: cinco trabajos de información que la IA te ordena y uno que nunca le vas a delegar, el criterio.\n\n¿Cuál de estos te quita más horas? 👇\n\nComenta NIVEL y te mandamos el test para saber por dónde empezar.\n\n#IA #IngenieríaEstructural #Revit #RobotStructural #BIM #DesignModelingDG",
+      "cta": {
+        "instagram": "Comenta NIVEL y te mandamos el test para saber por dónde empezar.",
+        "facebook": "Comenta NIVEL y te mandamos el test para saber por dónde empezar.",
+        "tiktok": "¿Cuál te quita más horas? Te leo.",
+        "youtube": "¿Cuál te quita más horas? Te leo en comentarios.",
+        "linkedin": "—"
+      },
+      "condicion": "Mismo aviso de NIVEL. Las capturas son las mismas del carrusel del Lun 12: se sacan una vez y sirven para las dos piezas.",
+      "prompt_imagenes": "Se genera por código con el skill video-pizarra; no lleva imágenes de IA. Solo entran las capturas reales de Revit, Robot y Navisworks."
+    }
+  ]
+}

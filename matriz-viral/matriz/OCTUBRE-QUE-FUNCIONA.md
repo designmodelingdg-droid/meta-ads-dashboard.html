@@ -205,3 +205,31 @@ los alumnos se les habla con «ya lo tienes en tu curso». La historia del jueve
 Antes de publicar hay que montar la palabra **DIPLOMADO**, que hoy no existe, y
 no usar **TUTOR**, que dispara lo del tutor de ACERO. El resto de bloqueantes
 está en el §0 del paquete.
+
+## 8 · Carruseles y reels «acusación» y «ranking» (pedido de Dayana, 28-sep)
+
+Dayana pasó dos piezas de **aecode.ai** para hacer algo así. El carrusel «Deja
+de usar IA en BIM si no quieres que te pasen las siguientes cosas» sacó **40
+comentarios** con 106 me gusta; la mejor pieza de las 11 cuentas del §3 tenía 9.
+Es el patrón del §1 aplicado por otro: cada lámina acusa un hábito («si
+prefieres seguir haciéndolo a mano…») y lo resuelve con un ejemplo real. Es
+decir, **alguien del sector ya empezó a disputar el comentario**: la ventana del
+§3 se está cerrando. `aecode.ai` entra desde hoy en `scripts/competencia.py`.
+
+Su reel de ranking (1.421 vistas, 41 s) no demuestra nada por sus números; se
+toma el formato, más corto.
+
+| Fichero | Qué es |
+|---|---|
+| `carruseles-y-reels-acusacion-octubre.json` | 4 piezas de núcleo para las semanas 2 y 3, con la forma de `lanzamiento-tutor-ia-octubre.json`, las fuentes oficiales de cada función que se muestra y lo que no se dice |
+
+| Fecha | Pieza | Formato |
+|---|---|---|
+| Lun 12 oct | «Deja de usar IA en tu cálculo estructural» | Carrusel 8 |
+| Mié 14 oct | «Ranking de software estructural 2026: ¿AutoCAD en la última fila?» | Reel 25-30 s, tablero de cartón |
+| Lun 19 oct | «Ranking BIM: ¿en qué fila estás tú?» | Carrusel 7 |
+| Mié 21 oct | «La IA ordena, tú decides» | Reel animado con el skill `video-pizarra`, sin grabar |
+
+Las cuatro cierran con **NIVEL** (viva en GHL → test de nivel → seguimiento al
+Máster). Como con el lanzamiento, `matriz-mensual` tiene que copiarlas a
+`guiones-completos.json` o ampliar su comprobación de ids a este fichero.
