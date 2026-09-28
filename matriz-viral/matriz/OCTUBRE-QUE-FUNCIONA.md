@@ -226,9 +226,11 @@ toma el formato, más corto.
 | Fecha | Pieza | Formato |
 |---|---|---|
 | Lun 12 oct | «Deja de usar IA en tu cálculo estructural» | Carrusel 8 |
-| Mié 14 oct | «Ranking de software estructural 2026: ¿AutoCAD en la última fila?» | Reel 25-30 s, tablero de cartón |
+| Mié 14 oct | «Ranking de software estructural 2026: ¿AutoCAD en la última fila?» | Reel 25-30 s, tablero de cartón, graba Gabriel |
 | Lun 19 oct | «Ranking BIM: ¿en qué fila estás tú?» | Carrusel 7 |
-| Mié 21 oct | «La IA ordena, tú decides» | Reel animado con el skill `video-pizarra`, sin grabar |
+| Mié 21 oct | «La IA ordena, tú decides» | Reel 30-35 s, graba Gabriel |
+
+Gabriel graba las cuatro. El skill `video-pizarra` queda para publicidad.
 
 Las cuatro cierran con **NIVEL** (viva en GHL → test de nivel → seguimiento al
 Máster). Como con el lanzamiento, `matriz-mensual` tiene que copiarlas a

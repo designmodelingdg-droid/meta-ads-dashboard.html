@@ -11,6 +11,8 @@ Instalado desde https://github.com/santmun/video-pizarra (commit `dc6adc4`, 26-s
 instalar: sin scripts de instalación; solo sale a internet para Google Fonts y, si hay llave, a Suno y
 AssemblyAI. Lo que cambia respecto al resto de este archivo:
 
+- **Para qué se usa aquí:** publicidad (anuncios de Meta y piezas de venta). El contenido orgánico de la
+  matriz lo graba Gabriel; no se sustituye por videos animados (decisión de Dayana, 28-sep-2026).
 - **Ruta del skill:** `$CLAUDE_PROJECT_DIR/.claude/skills/video-pizarra` (no `~/.claude/skills/...`).
 - **Proyectos de video:** en el scratchpad de la sesión. Los MP4 no se suben al repositorio: se entregan con
   SendUserFile. Al repo solo va el `STORYBOARD.md` y el `scenes.js`/`video.js` final, en

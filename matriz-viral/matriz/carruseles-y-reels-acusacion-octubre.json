@@ -55,7 +55,10 @@
       "grupo": "GRUPO 1 · Feed principal",
       "tipo": "valor",
       "formato": "CARRUSEL (8 slides)",
-      "redes": ["instagram", "facebook"],
+      "redes": [
+        "instagram",
+        "facebook"
+      ],
       "audiencia": "ingenieros estructurales y modeladores BIM que ya probaron la IA y la dejaron",
       "estado": "COMPLETA",
       "titulo": "Deja de usar IA en tu cálculo estructural",
@@ -123,7 +126,12 @@
       "grupo": "GRUPO 1 · Feed principal",
       "tipo": "valor",
       "formato": "REEL (25-30 s)",
-      "redes": ["instagram", "facebook", "tiktok", "youtube_shorts"],
+      "redes": [
+        "instagram",
+        "facebook",
+        "tiktok",
+        "youtube_shorts"
+      ],
       "audiencia": "ingenieros estructurales y estudiantes de últimos semestres",
       "estado": "POR GRABAR",
       "titulo": "Ranking de software estructural 2026: ¿AutoCAD en la última fila?",
@@ -133,24 +141,89 @@
       "tablero": {
         "fisico": "Cartón de 70x50 cm con cuatro filas de color y logos impresos en tarjetas con velcro o imán, para colocarlas en cámara. Es lo que hace que el formato se sienta real y no una plantilla.",
         "filas": [
-          {"fila": "IMPRESCINDIBLE", "color": "#003E5C", "logos": ["Revit", "Robot Structural Analysis", "ETABS"]},
-          {"fila": "TE DIFERENCIA", "color": "#CA7520", "logos": ["Dynamo", "Navisworks", "IA de chat sobre lo que exportas (ChatGPT/Claude)"]},
-          {"fila": "ÚTIL SEGÚN EL PROYECTO", "color": "#E8A04A", "logos": ["SAP2000", "SAFE", "Tekla Structures"]},
-          {"fila": "YA SE DA POR HECHO", "color": "#8A99A8", "logos": ["AutoCAD", "Excel"]}
+          {
+            "fila": "IMPRESCINDIBLE",
+            "color": "#003E5C",
+            "logos": [
+              "Revit",
+              "Robot Structural Analysis",
+              "ETABS"
+            ]
+          },
+          {
+            "fila": "TE DIFERENCIA",
+            "color": "#CA7520",
+            "logos": [
+              "Dynamo",
+              "Navisworks",
+              "IA de chat sobre lo que exportas (ChatGPT/Claude)"
+            ]
+          },
+          {
+            "fila": "ÚTIL SEGÚN EL PROYECTO",
+            "color": "#E8A04A",
+            "logos": [
+              "SAP2000",
+              "SAFE",
+              "Tekla Structures"
+            ]
+          },
+          {
+            "fila": "YA SE DA POR HECHO",
+            "color": "#8A99A8",
+            "logos": [
+              "AutoCAD",
+              "Excel"
+            ]
+          }
         ],
         "nota": "Es la opinión de la academia y se dice así en la voz. Los logos son marcas de sus fabricantes: se muestran tal cual, sin modificarlos."
       },
-      "guion_columnas": ["tiempo", "plano", "voz", "texto_en_pantalla"],
+      "guion_columnas": [
+        "tiempo",
+        "plano",
+        "voz",
+        "texto_en_pantalla"
+      ],
       "guion": [
-        ["0:00-0:03", "A cámara, plano medio, tablero ya en las manos con AutoCAD a medio colocar en la última fila. Sin intro. [PENDIENTE: quién graba, Gabriel o Dayana]", "¿AutoCAD en la última fila? Para un ingeniero estructural en 2026, sí.", "¿AUTOCAD EN LA **ÚLTIMA FILA**?"],
-        ["0:03-0:09", "Plano cenital del tablero: coloca Revit, Robot y ETABS arriba.", "Arriba: Revit para modelar y documentar, y un programa de análisis, Robot o ETABS. Sin esto no entras a un proyecto BIM de estructuras.", "IMPRESCINDIBLE"],
-        ["0:09-0:15", "Cenital: coloca Dynamo, Navisworks y la tarjeta de IA en la segunda fila.", "Lo que te diferencia: Dynamo para automatizar, Navisworks para coordinar, y la IA trabajando sobre lo que exportas.", "**TE DIFERENCIA**"],
-        ["0:15-0:20", "Cenital: coloca SAP2000, SAFE y Tekla en la tercera fila.", "Útiles según el proyecto: SAP2000, SAFE, Tekla. Buenos, pero no todos los usan.", "SEGÚN EL PROYECTO"],
-        ["0:20-0:25", "A cámara, termina de encajar AutoCAD y Excel abajo.", "Y abajo AutoCAD y Excel. No porque no sirvan: porque ya nadie te contrata por saberlos. Se da por hecho.", "YA SE DA **POR HECHO**"],
-        ["0:25-0:30", "A cámara, gira el tablero hacia la lente. CTA en el último tercio.", "Es nuestro ranking. ¿Qué moverías? Y si quieres saber en qué fila estás tú, comenta NIVEL.", "COMENTA **NIVEL**"]
+        [
+          "0:00-0:03",
+          "A cámara, plano medio, tablero ya en las manos con AutoCAD a medio colocar en la última fila. Sin intro. Graba Gabriel.",
+          "¿AutoCAD en la última fila? Para un ingeniero estructural en 2026, sí.",
+          "¿AUTOCAD EN LA **ÚLTIMA FILA**?"
+        ],
+        [
+          "0:03-0:09",
+          "Plano cenital del tablero: coloca Revit, Robot y ETABS arriba.",
+          "Arriba: Revit para modelar y documentar, y un programa de análisis, Robot o ETABS. Sin esto no entras a un proyecto BIM de estructuras.",
+          "IMPRESCINDIBLE"
+        ],
+        [
+          "0:09-0:15",
+          "Cenital: coloca Dynamo, Navisworks y la tarjeta de IA en la segunda fila.",
+          "Lo que te diferencia: Dynamo para automatizar, Navisworks para coordinar, y la IA trabajando sobre lo que exportas.",
+          "**TE DIFERENCIA**"
+        ],
+        [
+          "0:15-0:20",
+          "Cenital: coloca SAP2000, SAFE y Tekla en la tercera fila.",
+          "Útiles según el proyecto: SAP2000, SAFE, Tekla. Buenos, pero no todos los usan.",
+          "SEGÚN EL PROYECTO"
+        ],
+        [
+          "0:20-0:25",
+          "A cámara, termina de encajar AutoCAD y Excel abajo.",
+          "Y abajo AutoCAD y Excel. No porque no sirvan: porque ya nadie te contrata por saberlos. Se da por hecho.",
+          "YA SE DA **POR HECHO**"
+        ],
+        [
+          "0:25-0:30",
+          "A cámara, gira el tablero hacia la lente. CTA en el último tercio.",
+          "Es nuestro ranking. ¿Qué moverías? Y si quieres saber en qué fila estás tú, comenta NIVEL.",
+          "COMENTA **NIVEL**"
+        ]
       ],
       "version_tiktok": "Mismo montaje, sin palabra clave (TikTok no dispara el bot). Cierre: «¿Qué moverías de fila? Te leo.»",
-      "version_sin_grabar": "Si nadie puede grabar esa semana, se hace con el skill video-pizarra en estilo «minimal» con los colores DMA: el tablero se dibuja solo y los logos caen en su fila al ritmo. Pierde la cara, que es parte de lo que engancha; úsese solo como reserva.",
       "caption": "Esto no es un ranking de qué programa es mejor. Es un ranking de qué te piden hoy para entrar a un proyecto de estructuras en BIM.\n\nAutoCAD sigue siendo enorme, pero pasó de ser el centro del flujo a ser algo que se da por hecho. Y Dynamo sube no por moda, sino porque automatizar empezó a aparecer en los requisitos.\n\nEs nuestra opinión. ¿Qué moverías de fila? 👇\n\nY si quieres saber en qué fila estás tú: comenta NIVEL y te mandamos el test.\n\n#IngenieríaEstructural #BIM #Revit #RobotStructural #ETABS #Dynamo #DesignModelingDG",
       "cta": {
         "instagram": "¿Qué moverías? Y si quieres saber en qué fila estás tú, comenta NIVEL.",
@@ -170,7 +243,10 @@
       "grupo": "GRUPO 1 · Feed principal",
       "tipo": "valor",
       "formato": "CARRUSEL (7 slides)",
-      "redes": ["instagram", "facebook"],
+      "redes": [
+        "instagram",
+        "facebook"
+      ],
       "audiencia": "modeladores y coordinadores BIM que quieren subir de nivel (camino natural al Máster)",
       "estado": "COMPLETA",
       "titulo": "Ranking: ¿en qué fila estás tú?",
@@ -226,31 +302,25 @@
       "prompt_imagenes": "Carrusel IG 4:5, 7 slides, mismo sistema visual que oct-acusa-ia-calculo-carrusel (capturas reales de fondo + recuadros azul, navy y blanco) para que se lean como una serie. La portada usa foto real del tablero de cartón del reel del Mié 14 con fichas de texto."
     },
     {
-      "id": "oct-acusa-ia-calculo-reel-pizarra",
+      "id": "oct-acusa-ia-calculo-reel",
       "fecha": "Mié 21 oct",
       "fecha_iso": "2026-10-21",
       "semana": "Semana 3 (19-25 oct)",
       "grupo": "GRUPO 1 · Feed principal",
       "tipo": "valor",
-      "formato": "REEL ANIMADO (30-35 s, sin grabar)",
-      "redes": ["instagram", "facebook", "tiktok", "youtube_shorts"],
-      "audiencia": "la misma del carrusel del Lun 12, en formato que no pide grabar a nadie",
-      "estado": "STORYBOARD (render con el skill video-pizarra cuando Dayana lo apruebe)",
+      "formato": "REEL (30-35 s)",
+      "redes": [
+        "instagram",
+        "facebook",
+        "tiktok",
+        "youtube_shorts"
+      ],
+      "audiencia": "la misma del carrusel del Lun 12",
+      "estado": "POR GRABAR",
       "titulo": "La IA ordena, tú decides",
       "eje": "NÚCLEO-IA",
-      "pilar": "Acusación · versión animada del carrusel del Lun 12",
+      "pilar": "Acusación · versión en video del carrusel del Lun 12",
       "hook": "Si todavía sumas kilos de varilla a mano, este video es para ti.",
-      "herramienta": "Skill video-pizarra (.claude/skills/video-pizarra), estilo «cuaderno» con los colores DMA: hoja punteada, marcatextos ámbar, checkboxes. Texto en pantalla, sin voz. Música: pista sin derechos que elija Dayana o solo efectos (no hay llave de Suno).",
-      "storyboard_columnas": ["escena", "segundos", "fondo", "texto_en_pantalla", "accion", "transicion"],
-      "storyboard": [
-        ["1", "0-3", "Hoja punteada", "¿Todavía sumas kilos de varilla **a mano**?", "El texto se escribe con marcatextos ámbar; una calculadora dibujada tiembla al lado.", "La hoja se voltea"],
-        ["2", "3-9", "Captura REAL de la tabla de armaduras de Revit, enmarcada con washi tape", "Exportas la tabla → la IA arma la fórmula → **tú compruebas**", "Tres checkboxes se marcan uno a uno; «tú compruebas» queda subrayado.", "Borrado"],
-        ["3", "9-14", "Hoja punteada", "Combinaciones de carga: **con la tabla de TU norma**", "Aparece una tabla de combinaciones a medio llenar que se completa sola; al final, un sello «VERIFICA CADA FACTOR».", "Se arranca la hoja"],
-        ["4", "14-19", "Captura REAL de tabla de esfuerzos de Robot", "Tablas enteras → **el máximo que importa**", "La tabla se desliza y un marcatextos resalta una sola fila.", "Zoom a la fila resaltada"],
-        ["5", "19-24", "Captura REAL de Navisworks Clash Detective", "Interferencias sueltas → **observaciones con responsable**", "Las filas se agrupan en tres bloques con etiquetas de disciplina.", "Destello"],
-        ["6", "24-29", "Fondo navy", "La IA ordena. **Tú decides.**", "Texto enorme, sin herramienta: se estampa.", "Círculo de tinta"],
-        ["7", "29-34", "Fondo ámbar", "Comenta **NIVEL** y te mandamos el test", "El recuadro blanco con NIVEL rebota al ritmo; firma DG abajo.", "—"]
-      ],
       "caption": "La versión en 30 segundos del carrusel del lunes 12: cinco trabajos de información que la IA te ordena y uno que nunca le vas a delegar, el criterio.\n\n¿Cuál de estos te quita más horas? 👇\n\nComenta NIVEL y te mandamos el test para saber por dónde empezar.\n\n#IA #IngenieríaEstructural #Revit #RobotStructural #BIM #DesignModelingDG",
       "cta": {
         "instagram": "Comenta NIVEL y te mandamos el test para saber por dónde empezar.",
@@ -259,8 +329,59 @@
         "youtube": "¿Cuál te quita más horas? Te leo en comentarios.",
         "linkedin": "—"
       },
-      "condicion": "Mismo aviso de NIVEL. Las capturas son las mismas del carrusel del Lun 12: se sacan una vez y sirven para las dos piezas.",
-      "prompt_imagenes": "Se genera por código con el skill video-pizarra; no lleva imágenes de IA. Solo entran las capturas reales de Revit, Robot y Navisworks."
+      "condicion": "Mismo aviso de NIVEL. Las capturas y grabaciones de pantalla son las mismas del carrusel del Lun 12: se sacan una vez y sirven para las dos piezas.",
+      "prompt_imagenes": "Portada 9:16: Gabriel a cámara con Revit abierto detrás; texto «¿TODAVÍA SUMAS KILOS A MANO?» en el tercio superior.",
+      "guion_columnas": [
+        "tiempo",
+        "plano",
+        "voz",
+        "texto_en_pantalla"
+      ],
+      "guion": [
+        [
+          "0:00-0:03",
+          "Gabriel a cámara, primer plano, sin intro.",
+          "Si todavía sumas kilos de varilla a mano, este video es para ti.",
+          "¿TODAVÍA SUMAS KILOS **A MANO**?"
+        ],
+        [
+          "0:03-0:09",
+          "Grabación de pantalla: exporta la tabla de armaduras de Revit (Archivo → Exportar → Informes → Tabla de planificación) y la pega en el chat de IA.",
+          "Exporto la tabla de armaduras, le pido a la IA la fórmula de peso por diámetro, y compruebo tres filas a mano.",
+          "EXPORTAS → LA IA ORDENA → **TÚ COMPRUEBAS**"
+        ],
+        [
+          "0:09-0:14",
+          "Pantalla: tabla de combinaciones de la norma junto al chat.",
+          "Las combinaciones: le doy la tabla de mi norma y mis casos de carga. Arma la matriz. Yo verifico cada factor.",
+          "CON LA TABLA DE **TU NORMA**"
+        ],
+        [
+          "0:14-0:19",
+          "Pantalla: Robot, clic derecho sobre la tabla de esfuerzos → exportar a Excel (CSV).",
+          "Resultados: exporto la tabla de Robot y me arma el filtro de máximos. Yo reviso que tenga sentido.",
+          "EL MÁXIMO QUE **IMPORTA**"
+        ],
+        [
+          "0:19-0:24",
+          "Pantalla: Navisworks, informe del Clash Detective en HTML (tabular).",
+          "Coordinación: el informe de interferencias, agrupado por disciplina y con la observación redactada.",
+          "OBSERVACIONES CON **RESPONSABLE**"
+        ],
+        [
+          "0:24-0:29",
+          "Gabriel a cámara, plano medio.",
+          "La IA ordena. El criterio sigue siendo tuyo.",
+          "LA IA ORDENA. **TÚ DECIDES.**"
+        ],
+        [
+          "0:29-0:34",
+          "Gabriel a cámara. CTA en el último tercio.",
+          "Comenta NIVEL y te mando el test para saber por dónde empezar.",
+          "COMENTA **NIVEL**"
+        ]
+      ]
     }
-  ]
+  ],
+  "quien_graba": "Gabriel graba todas las piezas de octubre (carruseles con sus capturas y los dos reels). Decisión de Dayana, 28-sep. El skill video-pizarra se reserva para publicidad."
 }
