@@ -364,6 +364,16 @@ Las piezas de formato `historia` **no traen `slides` ni `caption`**: su guion
 vive entero en `historias`, cuadro a cuadro (`n` · `visual` · `texto` ·
 `sticker`).
 
+**`slides`, `historias` y `guion_reel` son SIEMPRE listas.** La app de Daniela
+las recorre lámina por lámina. Una nota de producción («los 7 slides del
+carrusel rediagramados a PDF») va en `slides_nota` o en `notas_produccion`,
+nunca como texto dentro de `slides`.
+> *De dónde sale:* en octubre `oct-tutor-dip-li-academy` traía `slides` como
+> texto y la app no la pudo mostrar. Patricio lo corrigió a mano en el archivo
+> publicado el 28-sep. Antes de publicar, comprobar:
+> `python3 -c "import json;g=json.load(open('matriz-viral/matriz/guiones-completos.json'));print([p['id'] for p in g['piezas'] for k in ('slides','historias','guion_reel') if k in p and not isinstance(p[k],list)])"`
+> tiene que imprimir `[]`.
+
 ```bash
 python3 -c "
 import json, collections
