@@ -11,6 +11,8 @@ Instalado desde https://github.com/santmun/video-pizarra (commit `dc6adc4`, 26-s
 instalar: sin scripts de instalación; solo sale a internet para Google Fonts y, si hay llave, a Suno y
 AssemblyAI. Lo que cambia respecto al resto de este archivo:
 
+- **Para videos de publicidad de DMA, usar el skill `video-publicidad-dma`**, que ya trae la receta de
+  marca (pizarrón + robot del tutor + voz verificada). Este archivo queda como referencia del motor.
 - **Para qué se usa aquí:** publicidad (anuncios de Meta y piezas de venta). El contenido orgánico de la
   matriz lo graba Gabriel; no se sustituye por videos animados (decisión de Dayana, 28-sep-2026).
 - **Ruta del skill:** `$CLAUDE_PROJECT_DIR/.claude/skills/video-pizarra` (no `~/.claude/skills/...`).
@@ -22,8 +24,16 @@ AssemblyAI. Lo que cambia respecto al resto de este archivo:
 - **ffmpeg, numpy y Pillow** los instala el hook de arranque de sesión.
 - **Llaves de Suno o AssemblyAI:** solo como secreto del entorno (`SUNO_API_KEY`, `ASSEMBLYAI_API_KEY`).
   Nunca pegadas en el chat ni escritas en archivos del repositorio. Sin llave: sin música generada.
-- **Marca DMA:** azul `#003e5c`, navy `#001e30`, naranja `#ca7520` (ámbar `#e8a04a` sobre fondos navy);
-  títulos Overpass, texto Nunito. Logo: preguntar a Dayana por el PNG antes de inventar uno.
+- **Marca DMA: usar el estilo `dma-plano`** (`template-estilos/styles/dma-plano.js`, hecho el 28-sep con el
+  video del Tutor IA). Navy `#0E2438` con cuadrícula de plano, pórtico en línea fina como la tarjeta del tutor,
+  acento ámbar `#E8A04A`, Overpass 900/700 y Nunito 400/700 **en local** (`template-estilos/fonts/`: el
+  Chromium del render no confía en el certificado del proxy y no llega a Google Fonts, así que no uses
+  `font:` en el spec), mascota `bot` en ámbar (la del Tutor IA) y el logo DMA abajo (`assets/logo-dma.png`).
+  En el spec: `style: 'dma-plano', format: '9:16', person: false, mascot: 'bot', mascotColor: '#E8A04A'`.
+  Referencia completa: `matriz-viral/videos/tutor-ia-dma/`.
+- **Capturas en vertical:** una captura de pantalla completa (1920 px) queda ilegible en 9:16. Recortar las
+  líneas reales que importan y apilarlas en renglones de ≤ 450 px sobre una tarjeta blanca: son píxeles reales,
+  solo reordenados. Así se hicieron las de `matriz-viral/videos/tutor-ia-dma/assets/`.
 - **Reglas de la casa que mandan sobre este skill** (ver `matriz-viral/CLAUDE.md`):
   1. Toda función de software que salga en pantalla se verifica en la documentación oficial antes del render.
   2. Ninguna cifra inventada: si falta, marcador visible y se avisa.
