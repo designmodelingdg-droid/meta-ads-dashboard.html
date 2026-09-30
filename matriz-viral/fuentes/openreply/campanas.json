@@ -191,7 +191,7 @@
    "actualizada": "2026-09-25T19:37:02.36",
    "cuenta": "design_modeling_dg",
    "enviados": 4,
-   "fallidos": 29,
+   "fallidos": 30,
    "entregados_sin_confirmar": 2,
    "saltados": 1,
    "pendientes": 0,
@@ -507,7 +507,7 @@
    "campana": "MEMORIA DE CÁLCULO",
    "campana_activa": true,
    "enviados": 4,
-   "fallidos": 29,
+   "fallidos": 30,
    "entregados_sin_confirmar": 2,
    "saltados": 1,
    "primer_envio": "2026-09-18T18:22:33.071",
@@ -675,6 +675,13 @@
   {
    "estado": "FAILED",
    "pero_si_se_entrego": false,
+   "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=A_6SEKu4MVbLUeRVmeBow63]",
+   "veces": 1,
+   "ultima_vez": "2026-09-30T18:58:37.759"
+  },
+  {
+   "estado": "FAILED",
+   "pero_si_se_entrego": false,
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=Aneq1P9zHQrbYzyhASSOiFS]",
    "veces": 1,
    "ultima_vez": "2026-09-30T12:57:55.689"
@@ -724,6 +731,13 @@
   {
    "estado": "FAILED",
    "pero_si_se_entrego": false,
+   "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=AJJ1o9_SCUHnZXrqXYRv7Hq]",
+   "veces": 1,
+   "ultima_vez": "2026-09-30T18:33:03.104"
+  },
+  {
+   "estado": "FAILED",
+   "pero_si_se_entrego": false,
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=AVGC9BAeiil46O_LBzzhjWs]",
    "veces": 1,
    "ultima_vez": "2026-09-30T13:02:55.781"
@@ -741,6 +755,13 @@
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=AjzGJaRYGc207BH0ppPwtxk]",
    "veces": 1,
    "ultima_vez": "2026-09-25T23:21:07.329"
+  },
+  {
+   "estado": "FAILED",
+   "pero_si_se_entrego": false,
+   "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=A5SQpMsl0qbVKec76CETetu]",
+   "veces": 1,
+   "ultima_vez": "2026-09-30T18:38:17.543"
   },
   {
    "estado": "FAILED",
@@ -804,13 +825,6 @@
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=A3ed7dK4_Y-8zwkdGrw6rvy]",
    "veces": 1,
    "ultima_vez": "2026-09-12T00:16:38.542"
-  },
-  {
-   "estado": "FAILED",
-   "pero_si_se_entrego": false,
-   "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=APrxU1dMGqKyk_J0vGV4M02]",
-   "veces": 1,
-   "ultima_vez": "2026-09-30T18:33:03.104"
   },
   {
    "estado": "FAILED",
@@ -881,13 +895,6 @@
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=AX_ZwDb3S89nB8rdOvgSM8y]",
    "veces": 1,
    "ultima_vez": "2026-09-30T03:02:51.449"
-  },
-  {
-   "estado": "FAILED",
-   "pero_si_se_entrego": false,
-   "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=ATOwkbT5l0fl1beFS6HKM7f]",
-   "veces": 1,
-   "ultima_vez": "2026-09-30T18:38:17.543"
   },
   {
    "estado": "FAILED",
@@ -1333,8 +1340,8 @@
   }
  ],
  "workflows_ghl": {
-  "generado": "2026-09-25",
-  "total": 133,
+  "generado": "2026-09-30",
+  "total": 134,
   "por_palabra": {
    "ZAPATA": {
     "publicados": [
@@ -1348,21 +1355,13 @@
      }
     ],
     "en_borrador": [],
-    "bot_total": 168,
+    "bot_total": 169,
     "bot_nuevos_7d": 2
    },
    "ACERO": {
     "publicados": [
      {
-      "nombre": "✅ Seguimientos 1,2,3 y 4 Especialización Acero",
-      "estado": "published"
-     },
-     {
       "nombre": "✅ Comentario ACERO - Verificación de Acero",
-      "estado": "published"
-     },
-     {
-      "nombre": "✅ (SMS) FACEBOOK FORM PRE FILTRO ACERO",
       "estado": "published"
      },
      {
@@ -1370,7 +1369,16 @@
       "estado": "published"
      }
     ],
-    "en_borrador": []
+    "en_borrador": [
+     {
+      "nombre": "✅ (SMS) FACEBOOK FORM PRE FILTRO ACERO",
+      "estado": "draft"
+     },
+     {
+      "nombre": "✅ Seguimientos 1,2,3 y 4 Especialización Acero",
+      "estado": "draft"
+     }
+    ]
    },
    "NIVEL": {
     "publicados": [
@@ -1406,8 +1414,8 @@
      }
     ],
     "en_borrador": [],
-    "bot_total": 23,
-    "bot_nuevos_7d": 4
+    "bot_total": 34,
+    "bot_nuevos_7d": 9
    },
    "DYNAMO": {
     "publicados": [
@@ -1421,7 +1429,7 @@
     "bot_nuevos_7d": 3
    }
   },
-  "embudo_generado": "2026-09-27T23:04Z"
+  "embudo_generado": "2026-09-30T19:07Z"
  },
  "cotejo_con_la_matriz": [
   {
@@ -1440,7 +1448,7 @@
    "campana_activa": false,
    "campanas": [],
    "dms_enviados": 0,
-   "lectura": "No está en OpenReply, pero SÍ en GoHighLevel y publicada: ✅ Seguimientos 1,2,3 y 4 Especialización Acero, ✅ Comentario ACERO - Verificación de Acero, ✅ (SMS) FACEBOOK FORM PRE FILTRO ACERO, ✅ Seguimiento Zapatas → Especialización en ACERO. Ahí es donde la monta la matriz, así que el comentario tiene a quién contestarle. (El listado da nombre y estado, no la configuración del disparador.)"
+   "lectura": "No está en OpenReply, pero SÍ en GoHighLevel y publicada: ✅ Comentario ACERO - Verificación de Acero, ✅ Seguimiento Zapatas → Especialización en ACERO. Ahí es donde la monta la matriz, así que el comentario tiene a quién contestarle. (El listado da nombre y estado, no la configuración del disparador.)"
   },
   {
    "palabra": "NIVEL",
