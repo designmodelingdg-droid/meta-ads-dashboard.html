@@ -7,6 +7,10 @@ Palabra clave: **COTIZA**. Lanzamiento propuesto: semana del 12 de octubre.
 Landing   https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/cotizador-honorarios/
 App       https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/cotizador-honorarios/app.html?acceso=dm2026
 Gracias   https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/cotizador-honorarios/gracias-agenda.html
+
+En GHL (se crean en el paso 2):
+Landing   https://funnel.dgdesignmodeling.com/acceso-gratis-cotizador-honorarios-form
+Gracias   https://funnel.dgdesignmodeling.com/acceso-gratis-cotizador-honorarios-gracias
 ```
 
 ## Qué funciona ya, sin montar nada
@@ -44,30 +48,47 @@ también fija esos números: se corre después del cambio.
 
 ### 1 · El formulario nativo de GHL (Ester y Aylin)
 
-1. Sites → Forms → duplicar «Calculadora de Zapatas - Registro».
+1. Sites → Forms → **duplicar** «Calculadora de Zapatas - Registro».
 2. Nombre: **Cotizador de Honorarios - Registro**.
-3. Campos: nombre, correo, teléfono y «¿Cómo trabajas hoy?» con estas opciones,
-   escritas igual:
+3. Campos: nombre, correo, teléfono y una pregunta desplegable **«¿Cómo trabajas
+   hoy?»** con estas opciones, escritas igual:
    - Ingeniero independiente: cotizo mis proyectos
    - Trabajo en empresa y cotizo proyectos aparte
    - Tengo una empresa de diseño o construcción
    - Arquitecto
    - Estudiante
    - Otro
-4. Al enviar: **redirigir** a la página de gracias del funnel (paso 2).
-5. Etiquetas al enviar: `lead-cotizador` y `origen-landing-cotizador`.
-6. Pasar a Claude la URL del formulario
-   (`https://api.leadconnectorhq.com/widget/form/<ID>`): se pega en
-   `GHL_FORM_IFRAME_URL` de `index.html` y se regenera `ghl-landing.html`.
+4. Opciones del formulario → al enviar: **Redirect to URL** →
+   `https://funnel.dgdesignmodeling.com/acceso-gratis-cotizador-honorarios-gracias`
+5. Guardar y copiar la URL del formulario
+   (`https://api.leadconnectorhq.com/widget/form/<ID>`) y pasársela a Claude:
+   va en `GHL_FORM_IFRAME_URL` de `index.html` y se regenera `ghl-landing.html`.
+   Hasta entonces la landing usa el formulario propio y el webhook: funciona
+   igual, así que **esto no bloquea el lanzamiento**.
 
-### 2 · El funnel en GHL
+### 2 · El funnel en GHL (Ester y Aylin)
 
-- Página 1 · slug sugerido `cotizador-honorarios`: Custom Code a ancho completo,
-  sin padding, con el contenido de **`ghl-landing.html`**.
-- Página 2 · slug sugerido `cotizador-honorarios-gracias`: Custom Code con
-  **`ghl-gracias.html`**.
-- Los `ghl-*.html` se generan solos: `python3 scripts/build_ghl_landing.py cotizador-honorarios`.
-  No se editan a mano.
+Los nombres de las páginas van **exactamente así**: `ghl-landing.html` ya
+redirige a la gracias con esa dirección, y la tarjeta del hub enlaza a la
+primera.
+
+1. Sites → Funnels → **duplicar** el funnel de la Calculadora de Zapatas.
+   Nombre: **Cotizador de Honorarios**.
+2. Página 1 · path **`acceso-gratis-cotizador-honorarios-form`**:
+   - borrar lo que traiga y dejar una sola sección a ancho completo, sin padding;
+   - elemento **Custom Code** con TODO el contenido de `cotizador-honorarios/ghl-landing.html`;
+   - SEO: título «Cotizador de Honorarios Estructurales gratis · Design Modeling
+     Academy» y la imagen para compartir
+     `https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/cotizador-honorarios/img/resultado.jpg`.
+3. Página 2 · path **`acceso-gratis-cotizador-honorarios-gracias`**: igual, con
+   `cotizador-honorarios/ghl-gracias.html`.
+4. Guardar y publicar. Abrir las dos en el celular.
+5. **Workflow de etiquetas** (duplicar el de zapatas): disparador «Form
+   Submitted: Cotizador de Honorarios - Registro» o «Inbound Webhook» con
+   `fuente = cotizador-honorarios` → etiquetas `lead-cotizador` y
+   `origen-landing-cotizador` → notificación interna al equipo de ventas.
+   El seguimiento natural después es la Especialización en Acero o el
+   Diplomado en Estructuras: quien cotiza estructuras es el perfil que compra.
 
 ### 3 · La palabra COTIZA (Patricio)
 
@@ -78,7 +99,7 @@ activar **«cualquier publicación»**: COTIZA solo se usa para este recurso.
 
 DM sugerido:
 
-> ¡Hola! Aquí tienes el Cotizador de Honorarios Estructurales: calcula tu tarifa mínima por hora, las horas del proyecto y te arma la propuesta en PDF con los impuestos de tu país. 👉 <URL de la landing>
+> ¡Hola! Aquí tienes el Cotizador de Honorarios Estructurales: calcula tu tarifa mínima por hora, las horas del proyecto y te arma la propuesta en PDF con los impuestos de tu país. 👉 https://funnel.dgdesignmodeling.com/acceso-gratis-cotizador-honorarios-form
 
 **Facebook · GHL.** Workflow «Comentario COTIZA», copia del de ZAPATA:
 disparador de comentario de Facebook filtrado por COTIZA → respuesta pública
@@ -97,7 +118,23 @@ en la copia de Facebook del mismo post. Llegan los dos DM, o no se publica.
 seis» del calendario hay que ampliarla, y `fuentes/openreply/campanas.json` la
 mostrará como viva cuando dispare el primer DM.
 
-### 4 · Opcional · en la membresía
+### 4 · En la página de recursos (Ester y Aylin, después del paso 2)
+
+La tarjeta ya está en `recursos/index.html`, primera de «Herramientas
+gratuitas», con la etiqueta **Nuevo**, enlazando a
+`https://funnel.dgdesignmodeling.com/acceso-gratis-cotizador-honorarios-form`.
+
+1. **Solo cuando la página 1 del funnel esté publicada** (si no, la tarjeta
+   lleva a un 404): abrir en GHL la página
+   `https://funnel.dgdesignmodeling.com/recursos`.
+2. Reemplazar el contenido del Custom Code por TODO `recursos/ghl-recursos.html`.
+3. Guardar, publicar y comprobar en el celular que la tarjeta abre la landing.
+4. La imagen de la tarjeta (`cotizador-honorarios/tarjeta-hub.png`, 1672×941,
+   fondo claro, igual que las demás) ya se sirve desde GitHub Pages. Si se
+   prefiere en el CDN de GHL como las otras: subirla a Media Storage y pasarle
+   la URL a Claude para cambiarla en la tarjeta.
+
+### 5 · Opcional · en la membresía
 
 Igual que zapatas: una lección que embebe la app por iframe con
 `?acceso=dm2026`, y la oferta gratis concedida con «Form Submitted».
