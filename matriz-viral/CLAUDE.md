@@ -101,6 +101,15 @@ Dos honestidades del dato, para no leerlo mal:
    comentario, ni tokens, y una prueba rompe la corrida si alguien añade una
    consulta que lo intente. Montaje y detalle en `herramientas/openreply/LEEME.md`.
 
+## Una palabra, una automatización (decidido el 30-sep-2026)
+
+Cada palabra la contesta **una sola** herramienta:
+- **GHL:** las palabras con embudo (ZAPATA, ACERO, NIVEL, MEMORIA, DYNAMO) y BIM/IA, que son el bot de ventas del Máster.
+- **OpenReply:** las palabras sueltas (TUTORIAL, GUIA, PARTE) y COTIZA en Instagram.
+- **Las campañas de OpenReply las hace Dayana.**
+
+> *De dónde sale esta regla:* en septiembre MEMORIA la escuchaban dos campañas de OpenReply y un workflow de GHL. La primera que contestaba se quedaba con la conversación y las demás fallaban: 30 DM fallidos. DYNAMO falló 4 de 4, y el checklist de Navisworks (BIM/IA) 3 de 5. `verificar_matriz_mes.py` avisa si una palabra del mes está montada en las dos.
+
 ## La matriz de cada mes: el método (desde octubre de 2026)
 
 La matriz del mes **no se escribe de memoria**. Todo sale de los datos, y estos
