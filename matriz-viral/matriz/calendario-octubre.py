@@ -97,12 +97,16 @@ def ficha_anuncio(pid, campana):
     if p.get("por_que"):
         cfg.append(["Por qué", p["por_que"]])
     guion = p.get("guion_video")
+    pngs = sorted(str(x.relative_to(M.parent.parent)) for x in (M.parent / "entregables" / "pauta-octubre").glob(f"{pid}-*.png"))
+    if pngs:
+        cfg.append(["Creativo listo (4:5 y 9:16)", " · ".join(pngs)])
     return {"id": pid, "titulo": p.get("titulo"), "campana": campana,
             "precio": "$225 USD" if "Acero" in (p.get("producto") or campana) else "sin precio (regla del Máster)",
             "formato": p.get("formato_detalle") or "anuncio", "hook": p.get("hook"), "cuerpo": p.get("texto_principal"),
             "titular": p.get("titular"), "descripcion": p.get("descripcion"), "creativo": p.get("creativo"),
             **({"guion": guion} if guion else {}),
-            "prompt": p.get("prompt_imagenes", ""), "cfg": cfg, "condicion": p.get("condicion", "")}
+            "prompt": p.get("prompt_imagenes", ""), "cfg": cfg, "condicion": p.get("condicion", ""),
+            **({"creativos_png": pngs} if pngs else {})}
 
 
 ADS = {
