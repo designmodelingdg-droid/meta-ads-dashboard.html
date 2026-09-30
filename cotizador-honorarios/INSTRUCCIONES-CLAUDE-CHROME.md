@@ -51,8 +51,11 @@ todo (Ctrl/Cmd + A), copias y pegas.
 | 2 · gracias | `https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/gh-pages/cotizador-honorarios/ghl-gracias.html` |
 | Página de recursos completa | `https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/gh-pages/recursos/ghl-recursos.html` |
 
-Antes de pegar, comprueba que lo copiado empieza por `<style>` y termina en
-`</script>`. Si no, se copió a medias.
+Antes de pegar, comprueba que lo copiado empieza por `<!-- ====` (un comentario
+que dice «versión para GoHighLevel») y termina en `</script>`. Si no, se
+copió a medias. Si la página de recursos copiada no trae la tarjeta
+«Cotizador de Honorarios Estructurales», espera cinco minutos y recarga: esas
+URLs tardan un poco en mostrar la última versión.
 
 ---
 
