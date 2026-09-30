@@ -26,6 +26,11 @@ on:
       - matriz-viral/matriz/competencia.json
       - matriz-viral/matriz/g1-carruseles-y-posts-*.json
       - matriz-viral/matriz/lanzamiento-*.json
+      - matriz-viral/matriz/angulos-*.json
+      - matriz-viral/matriz/carruseles-*.json
+      - matriz-viral/matriz/leadmagnet-*.json
+      - matriz-viral/matriz/historico-*.json
+      - matriz-viral/entregables/**
       - calculadora-zapatas/**
       - test-nivel-bim/**
       - test-master-bim/**
@@ -83,6 +88,12 @@ jobs:
           # y las piezas EXTRA que se escribian despues no le llegaban.
           cp matriz-viral/matriz/g1-carruseles-y-posts-*.json public/ 2>/dev/null || true
           cp matriz-viral/matriz/lanzamiento-*.json public/ 2>/dev/null || true
+          # Desde octubre las piezas por ángulo, los carruseles de acusación, el
+          # lead magnet del mes y el histórico jul-sep también los lee la app.
+          cp matriz-viral/matriz/angulos-*.json public/ 2>/dev/null || true
+          cp matriz-viral/matriz/carruseles-*.json public/ 2>/dev/null || true
+          cp matriz-viral/matriz/leadmagnet-*.json public/ 2>/dev/null || true
+          cp matriz-viral/matriz/historico-*.json public/ 2>/dev/null || true
           # Radar del sector (competencia)
           cp matriz-viral/matriz/competencia.json public/competencia.json 2>/dev/null || true
           # Lead magnet: landing + calculadora de zapatas
@@ -134,7 +145,11 @@ jobs:
           # WhatsApp sin adjuntar nada.
           mkdir -p public/entregables
           cp matriz-viral/entregables/*.docx public/entregables/ 2>/dev/null || true
-          cp matriz-viral/entregables/matriz-septiembre-artefacto.html public/entregables/ 2>/dev/null || true
+          # Artefacto y JSON completo de cada mes (el JSON completo es el archivo
+          # único que se sube a la app), y los creativos de pauta del mes.
+          cp matriz-viral/entregables/matriz-*-artefacto.html public/entregables/ 2>/dev/null || true
+          cp matriz-viral/entregables/matriz-*-COMPLETA.json public/entregables/ 2>/dev/null || true
+          cp -r matriz-viral/entregables/pauta-* public/entregables/ 2>/dev/null || true
           ls -la public/entregables/ || true
           # Sin procesamiento Jekyll
           touch public/.nojekyll
@@ -146,6 +161,7 @@ jobs:
           <h1>Design Modeling · datos de contenido</h1>
           <p>Matriz de contenido viral (JSON, legible por máquina):</p>
           <p><a href="./matriz.json"><code>matriz.json</code></a> · <a href="./guiones-completos.json"><code>guiones-completos.json</code></a> (contenido completo de cada pieza) · <a href="./calendario-actual.json"><code>calendario-actual.json</code></a> (orden de publicación del mes en curso) · <a href="./g1-carruseles-y-posts-septiembre.json"><code>g1-carruseles-y-posts-septiembre.json</code></a> (carruseles y posts planos del mes) · <a href="./lanzamiento-tutor-ia-octubre.json"><code>lanzamiento-tutor-ia-octubre.json</code></a></p>
+          <p>Matriz de octubre: <a href="./entregables/matriz-octubre-artefacto.html">artefacto por pestañas</a> · <a href="./entregables/matriz-octubre-2026-COMPLETA.json"><code>matriz-octubre-2026-COMPLETA.json</code></a> (archivo único para la app) · <a href="./entregables/Matriz-Contenido-Octubre-2026-DMA.docx">Word</a></p>
           <p>Lead magnets: <a href="./calculadora-zapatas/">Calculadora de Zapatas</a> · <a href="./test-nivel-bim/">Test de Nivel BIM</a> · <a href="./recursos/">Hub de recursos</a> · <a href="./eficiencia-acero/">5 verificaciones en acero</a> · <a href="./cotizador-honorarios/">Cotizador de honorarios</a></p>
           <p style="color:#5a6b7b">Se actualiza solo cuando cambia la matriz en el repo.</p>
           </body>

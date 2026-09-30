@@ -94,6 +94,8 @@ def correos():
 def ficha_anuncio(pid, campana):
     p = pieza(pid)
     cfg = [["Botón", p.get("boton", "")], ["Público", p.get("publico_sugerido", "")], ["Qué medir", p.get("que_medir", "")]]
+    if p.get("mensaje_bienvenida"):
+        cfg.append(["Mensaje de bienvenida (WhatsApp)", p["mensaje_bienvenida"]])
     if p.get("por_que"):
         cfg.append(["Por qué", p["por_que"]])
     guion = p.get("guion_video")
