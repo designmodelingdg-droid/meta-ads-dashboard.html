@@ -28,12 +28,20 @@ Gracias   https://funnel.dgdesignmodeling.com/acceso-gratis-cotizador-honorarios
 
 **Los dos workflows se quedan encendidos.** Con el formulario nativo se disparan los dos: el de Ester da el correo de acceso, la comunidad y la oportunidad; el del cotizador da `lead-cotizador` (que arranca la secuencia S5), el aviso interno y la membresía (Grant Offer). Solo se cruzan al crear el contacto, y eso no duplica nada.
 
+**Prueba de punta a punta hecha el 30-sep (Claude de Chrome): funciona.**
+- La landing ya muestra el formulario nativo.
+- Llegaron las tres etiquetas: `acceso-cotizador-honorarios`, `lead-cotizador` y `origen-landing-cotizador`.
+- Llegó el correo «🚀 ACCEDE AHORA COTIZADOR DE HONORARIOS - DMA», con el botón a `app.html?acceso=dm2026`.
+- Se creó la oportunidad en «NUEVO LEAD MAGNET».
+- Se dio la membresía.
+- Abrió la página de gracias.
+- El teléfono sale con Ecuador (+593) por la configuración de la cuenta: no hay nada que tocar.
+
 Pendiente:
-- **Volver a pegar `ghl-landing.html` en la página 1 del funnel**: la versión que se pegó todavía usa el formulario propio y el webhook de zapatas. La nueva trae el formulario nativo.
-- ~~Quitar del formulario la línea «Te la enviamos también al correo»~~ **Ya no hace falta**: desde el 30-sep la rama COTIZADOR manda el correo de acceso, así que la promesa se cumple. Sí falta poner Ecuador como país por defecto del teléfono (hoy sale EE. UU.).
-- Revisar que la plantilla «Acceso Pack Dynamo_01» quedó igual que antes: el Claude de Chrome la sobrescribió un momento y la restauró a la versión #2 de Aylin.
-- Borrar el contacto de prueba «Prueba Cotizador» (prueba.cotizador@example.com) que entró al mapear el webhook.
-- Hacer un envío real de punta a punta (checklist) y borrar ese contacto después.
+- **Revisar la membresía:** el contacto de prueba figura con 12 productos, no solo el cotizador. Comprobar si la oferta, o el acceso a la Comunidad Design Premium de la rama de Ester, da más de lo que debería.
+- Borrar los contactos de prueba «Prueba Cotizador E2E» y «Prueba Cotizador».
+- La línea «Te la enviamos también al correo» se queda: la rama COTIZADOR sí manda el correo.
+- Plantilla «Acceso Pack Dynamo_01»: ya está restaurada (asunto y vista previa de Dynamo). Falta que alguien mire el botón y el enlace, porque en Chrome la sección de plantillas se quedó en blanco.
 - Miniatura del producto de membresía: subir la imagen desde la computadora.
 
 ## Qué funciona ya, sin montar nada

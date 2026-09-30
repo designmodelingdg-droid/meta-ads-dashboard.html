@@ -16,7 +16,7 @@
     "Mínimo 60 % en el NÚCLEO (BIM / IA / modelado / acero). Cero OBRA.",
     "NINGUNA pieza repite un id o un gancho ya usado (historico-2026.json).",
     "PALABRAS DE COMENTARIO — SOLO ESTAS: NIVEL (Máster), ACERO, ZAPATA, MEMORIA, COTIZA (nueva) y DIPLOMADO (lanzamiento del tutor, si está montada). CHATGPT queda fuera: no tiene quien conteste. BIM e IA siguen siendo el bot de ventas del Máster.",
-    "UNA PALABRA, UNA AUTOMATIZACIÓN (auditoría de septiembre): MEMORIA la escuchaban dos campañas de OpenReply y un workflow de GHL y fallaron 30 DM; DYNAMO falló 4 de 4. Antes de publicar una pieza con palabra, se confirma que la contesta UNA sola herramienta.",
+    "UNA PALABRA, UNA AUTOMATIZACIÓN (auditoría de septiembre: MEMORIA con dos campañas de OpenReply y un workflow de GHL, 30 DM fallidos; DYNAMO, 4 de 4). DECIDIDO por Dayana el 30-sep: las palabras con embudo (ZAPATA, ACERO, NIVEL, MEMORIA, DYNAMO y BIM/IA, el bot de ventas) las contesta GHL; OpenReply queda para las palabras sueltas (TUTORIAL, GUIA, PARTE) y para COTIZA en Instagram. Las campañas de OpenReply las hace Dayana.",
     "BIM e IA NUNCA como palabra de un recurso: son el bot de ventas del Máster (el checklist de Navisworks falló 3 de 5).",
     "DYNAMO fuera de los CTA de octubre: 0 comentarios en su reel y falla en OpenReply.",
     "LOS DOS FORMATOS GANADORES DE SEPTIEMBRE se repiten: el dato de cálculo verificable (cuantía mínima: 44.589 vistas, 146 comentarios, 163 seguidores) y el tutorial paso a paso con palabra (plano 2D → BIM: 99 comentarios, 47 DM). Anunciar un producto («ahora tiene X») nunca va solo: siempre detrás de un problema.",
@@ -27,21 +27,21 @@
   ],
   "checklist_tareas": [
     {
-      "tarea": "Decidir y dejar UNA sola automatización por palabra: MEMORIA (hoy 2 campañas de OpenReply + GHL), DYNAMO (OpenReply + GHL) y COTIZA (se monta en una sola). Recomendación: GHL para las palabras con embudo, OpenReply solo para las sueltas.",
-      "desbloquea": "Que el DM no falle («no eres el dueño de la conversación»)",
+      "tarea": "DECIDIDO (Dayana, 30-sep): las palabras con embudo las contesta GHL. Pausar en OpenReply las campañas MEMORIA VERIFICABLE, MEMORIA VERIFICABLE copy, MEMORIA DE CÁLCULO, PACK DYNAMO, 5 ERRORES REVIT (BIM/IA) y CHECKLIST NAVISWORKS (BIM/IA). OpenReply queda para las palabras sueltas (TUTORIAL, GUIA, PARTE) y para COTIZA en Instagram; COTIZA en Facebook la contesta GHL.",
+      "desbloquea": "Que los DM de MEMORIA, DYNAMO y BIM/IA no fallen («no eres el dueño de la conversación»)",
       "cuando": "antes del lunes 5",
-      "para": "Dayana"
+      "para": "Dayana (OpenReply)"
     },
     {
-      "tarea": "Prueba de punta a punta de ACERO (comentar → DM → landing de las 5 verificaciones → etiqueta acceso-verificacion): en septiembre solo 43 de 174 leads llegaron al acceso.",
+      "tarea": "ACERO: subir el 25 % que llega al acceso. El flujo funciona (revisado en GHL el 30-sep): la caída es de gente que recibe el DM y no llena el formulario, y el DM de Instagram solo se entrega dentro de las 24 h del comentario. Acortar el formulario de la landing de las 5 verificaciones y sumar un recordatorio (correo o WhatsApp) a quien tiene lead-acero-verificaciones sin acceso-verificacion.",
       "desbloquea": "Las 6 piezas de octubre que piden ACERO (la primera el Vie 9)",
       "cuando": "antes del 9-oct",
       "para": "Ester y Aylin"
     },
     {
-      "tarea": "Prueba de punta a punta de NIVEL (comentar → DM → test → etiqueta acceso-test-nivel): en septiembre 0 accesos.",
-      "desbloquea": "El CTA de todas las piezas del Máster (la primera, la historia del creador del Jue 8)",
-      "cuando": "antes del 8-oct",
+      "tarea": "Quitar de GHL la duplicidad de accesos: «✅ OLD Acceso y Descarga PDF Recursos Gratis» sigue publicado (61 inscritos) junto al NEW y puede mandar el acceso dos veces. Comprobar y despublicar el OLD si ya no lo usa nada.",
+      "desbloquea": "Que nadie reciba dos correos de acceso",
+      "cuando": "antes del lunes 5",
       "para": "Ester y Aylin"
     },
     {
@@ -75,10 +75,10 @@
       "para": "Daniela"
     },
     {
-      "tarea": "Volver a pegar cotizador-honorarios/ghl-landing.html en la página 1 del funnel: ya trae el formulario nativo (CAekHpib0yvjFbYvxx1m). Sin eso, los leads siguen entrando por el webhook de Zapatas y no pasan por la rama COTIZADOR del workflow de recursos. Poner Ecuador como país por defecto del teléfono. Borrar el contacto «Prueba Cotizador». Revisar la plantilla «Acceso Pack Dynamo_01».",
-      "desbloquea": "Que el lead reciba el correo de acceso, la comunidad, la membresía y la secuencia S5",
+      "tarea": "Cotizador: borrar los contactos de prueba («Prueba Cotizador E2E» y «Prueba Cotizador»), revisar por qué el contacto de prueba figura con 12 productos de membresía (¿la oferta o la Comunidad Design Premium dan de más?) y mirar el botón y el enlace de la plantilla «Acceso Pack Dynamo_01». La landing con formulario nativo y la prueba de punta a punta ya están HECHAS (30-sep).",
+      "desbloquea": "Que el cotizador dé solo lo que promete",
       "cuando": "antes del 13-oct",
-      "para": "Ester y Aylin"
+      "para": "Dayana"
     },
     {
       "tarea": "Gabriel revisa las horas de ejemplo del cotizador (app.html, ENTREGABLES).",
@@ -117,10 +117,10 @@
       "para": "Patricio"
     },
     {
-      "tarea": "Crear la campaña COTIZA en OpenReply atada al post justo después de publicar, y la de Facebook en GHL; probar con una cuenta ajena.",
+      "tarea": "Crear la campaña COTIZA en OpenReply atada al post justo después de publicar (y la de Facebook en GHL); probar con una cuenta ajena.",
       "desbloquea": "Que el comentario COTIZA reciba el DM",
       "cuando": "13 y 15-oct, al publicar",
-      "para": "Patricio"
+      "para": "Dayana (las campañas de OpenReply las hace ella)"
     },
     {
       "tarea": "Pauta: aplicar las 6 decisiones de la sección de publicidad (WhatsApp de ACERO, pausar anuncios cansados, presupuesto, optimización del Máster, borradores, filtros).",
@@ -464,7 +464,7 @@
               "facebook": "Comenta NIVEL y te mando el test (20 preguntas, unos 5 minutos).",
               "tiktok": "Pregunta abierta: ¿de dónde nos escribes?"
             },
-            "notas_produccion": "REFERENCIA: carrusel de Juan Lombana (Mercatitlán) del 30-sep-2026, «Si acabas de llegar: hola, soy Juan», traído con Apify (matriz-viral/fuentes/referentes/post-Dd7FPe3FNma.json). Se copia la ESTRUCTURA (saludo a quien llega → ficha personal con humor → origen → giro → número grande del problema → lo que fundó → lo que hace hoy con IA → CTA con palabra), no el diseño: va con la marca DMA (navy y ámbar) y SOLO con fotos reales de Gabriel. Nada de imágenes generadas. | DATOS: el 74 sale del formulario de la Especialización en Acero (859 respuestas; 632 eligieron «diseñarlas, modelarlas o calcularlas en software»; ver COMPRADORES-VS-NO.md). Lo del tutor está verificado (Diplomado y Acero). TODO lo marcado [CONFIRMA GABRIEL] se llena con datos reales o la línea se quita: no se inventa ni la edad ni el año ni el número de alumnos. Si la historia es de Dayana y no de Gabriel, se cambia el nombre, la ficha y las fotos; la estructura se queda. | FIJAR en el perfil: es la bienvenida para los que llegan con el dato de cálculo del viernes 9. | CTA: NIVEL. Requiere que la prueba de punta a punta de NIVEL esté hecha ANTES del jueves 8 (auditoría de septiembre: 0 accesos). Si no está, el CTA pasa a «Escríbenos por DM».",
+            "notas_produccion": "REFERENCIA: carrusel de Juan Lombana (Mercatitlán) del 30-sep-2026, «Si acabas de llegar: hola, soy Juan», traído con Apify (matriz-viral/fuentes/referentes/post-Dd7FPe3FNma.json). Se copia la ESTRUCTURA (saludo a quien llega → ficha personal con humor → origen → giro → número grande del problema → lo que fundó → lo que hace hoy con IA → CTA con palabra), no el diseño: va con la marca DMA (navy y ámbar) y SOLO con fotos reales de Gabriel. Nada de imágenes generadas. | DATOS: el 74 sale del formulario de la Especialización en Acero (859 respuestas; 632 eligieron «diseñarlas, modelarlas o calcularlas en software»; ver COMPRADORES-VS-NO.md). Lo del tutor está verificado (Diplomado y Acero). TODO lo marcado [CONFIRMA GABRIEL] se llena con datos reales o la línea se quita: no se inventa ni la edad ni el año ni el número de alumnos. Si la historia es de Dayana y no de Gabriel, se cambia el nombre, la ficha y las fotos; la estructura se queda. | FIJAR en el perfil: es la bienvenida para los que llegan con el dato de cálculo del viernes 9. | CTA: NIVEL. El flujo está revisado y funciona (30-sep): comentario → DM → test → etiqueta acceso-nivelbim.",
             "adaptacion_redes": {
               "linkedin": "Cuenta de Gabriel Pantoja, en texto: la misma historia en primera persona, sin palabra clave; cierra con «¿Cómo empezaste tú con BIM?» y el test en el primer comentario.",
               "tiktok": "Sin palabra clave: pregunta abierta."
@@ -6446,12 +6446,12 @@
       {
         "nombre": "5 verificaciones en acero",
         "palabra": "ACERO",
-        "por_que": "Su post DM157 es el mejor PROMO de la cuenta (159 comentarios, 356 guardados). CTA de todas las piezas de ACERO. ⚠ Auditoría: 174 leads y solo 43 con acceso (25 %): prueba de punta a punta antes del 9-oct."
+        "por_que": "Su post DM157 es el mejor PROMO de la cuenta (159 comentarios, 356 guardados). CTA de todas las piezas de ACERO. Auditoría: 174 leads y 43 con acceso (25 %). El flujo funciona (revisado el 30-sep): es gente que no llena el formulario. Tarea para subir ese 25 % en el checklist."
       },
       {
         "nombre": "Test de Nivel BIM",
         "palabra": "NIVEL",
-        "por_que": "Puerta al Máster y CTA de todas sus piezas. ⚠ Auditoría: 2 al bot, 1 lead y 0 accesos en septiembre: probar el workflow antes del 12-oct."
+        "por_que": "Puerta al Máster y CTA de todas sus piezas. El flujo funciona (revisado el 30-sep); el acceso se marca con acceso-nivelbim. En septiembre casi nadie la pidió (2 al bot): octubre es la primera prueba de volumen."
       },
       {
         "nombre": "Memoria de cálculo",
@@ -7078,7 +7078,7 @@
       "matriz-viral/auditorias/2026-09-hallazgos.md",
       "matriz-viral/auditorias/2026-09-auditoria-mes.json"
     ],
-    "resumen": "Funcionó: el dato de cálculo verificable y el tutorial paso a paso con palabra. No funcionó: los anuncios del tutor, Dynamo, el carrusel de las 4 puertas y las campañas de pauta de lead magnets. Roto: MEMORIA y DYNAMO con dos automatizaciones, ACERO pierde el 75 % antes del acceso y NIVEL no entrega acceso."
+    "resumen": "Funcionó: el dato de cálculo verificable y el tutorial paso a paso con palabra. No funcionó: los anuncios del tutor, Dynamo, el carrusel de las 4 puertas y las campañas de pauta de lead magnets. Roto: MEMORIA y DYNAMO con dos automatizaciones. ACERO funciona pero el 75 % no llena el formulario. NIVEL funciona: el «0 accesos» era un error de medición, corregido el 30-sep."
   },
   "pendientes": [
     "El detalle operativo está en checklist_tareas, con responsable.",
