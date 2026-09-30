@@ -3,19 +3,59 @@
  "subtitulo": "Del lunes 5 al domingo 1 de noviembre · calendarios por grupo, misma información adaptada a cada canal · escrita para vender Máster y Especialización en ACERO",
  "reglas_del_mes": [
   "REGLA DE ORO: todos los grupos comparten la misma información la misma semana, adaptada a cada canal. El feed del lunes alimenta comunidades, historias, LinkedIn y el correo de la semana.",
-  "FEED: 18 piezas · formato 7 reels / 7 carruseles / 4 posts (40/40/20) · intención 9 problema / 4 solución / 5 objeción o testimonio (50/20/30, del análisis de compradores del 29-sep).",
+  "FEED: 19 piezas · formato 7 reels / 8 carruseles / 4 posts (40/40/20) · intención 9 problema / 4 solución / 6 objeción o testimonio (50/20/30, del análisis de compradores del 29-sep).",
   "A QUIÉN LE HABLAMOS: cada pieza nombra a un perfil comprador de COMPRADORES-VS-NO.md. Si no le habla a ninguno, no entra.",
   "EL PATRÓN: acusar un hábito concreto (8,61 comentarios por 1.000 vistas contra 0,54) o dar un dato de cálculo verificable (DM168: 130 comentarios, 611 guardados). Nada de «la IA te va a reemplazar» (0 comentarios en julio).",
   "POST PLANO = SOLO CON DATO VERIFICABLE, con su fuente en las notas de producción.",
   "Mínimo 60 % en el NÚCLEO (BIM / IA / modelado / acero). Cero OBRA.",
   "NINGUNA pieza repite un id o un gancho ya usado (historico-2026.json).",
   "PALABRAS DE COMENTARIO — SOLO ESTAS: NIVEL (Máster), ACERO, ZAPATA, MEMORIA, COTIZA (nueva) y DIPLOMADO (lanzamiento del tutor, si está montada). CHATGPT queda fuera: no tiene quien conteste. BIM e IA siguen siendo el bot de ventas del Máster.",
+  "UNA PALABRA, UNA AUTOMATIZACIÓN (auditoría de septiembre): MEMORIA la escuchaban dos campañas de OpenReply y un workflow de GHL y fallaron 30 DM; DYNAMO falló 4 de 4. Antes de publicar una pieza con palabra, se confirma que la contesta UNA sola herramienta.",
+  "BIM e IA NUNCA como palabra de un recurso: son el bot de ventas del Máster (el checklist de Navisworks falló 3 de 5).",
+  "DYNAMO fuera de los CTA de octubre: 0 comentarios en su reel y falla en OpenReply.",
+  "LOS DOS FORMATOS GANADORES DE SEPTIEMBRE se repiten: el dato de cálculo verificable (cuantía mínima: 44.589 vistas, 146 comentarios, 163 seguidores) y el tutorial paso a paso con palabra (plano 2D → BIM: 99 comentarios, 47 DM). Anunciar un producto («ahora tiene X») nunca va solo: siempre detrás de un problema.",
   "UNA venta por semana, el jueves, en historias: 8 tutor · 15 objeción de ACERO · 22 espejo del Máster · 29 ACERO por dentro.",
   "EL MÁSTER NUNCA LLEVA PRECIO. ACERO lleva $225 solo en pauta y en correo a la lista propia.",
   "Visuales = capturas reales de Revit/Robot y cámara de Gabriel. Imagen con IA solo con aprobación y costo a la vista.",
   "Reels de menos de 30 s (en esta cuenta rinden más del doble que los de 30–60 s)."
  ],
  "checklist_tareas": [
+  {
+   "tarea": "Decidir y dejar UNA sola automatización por palabra: MEMORIA (hoy 2 campañas de OpenReply + GHL), DYNAMO (OpenReply + GHL) y COTIZA (se monta en una sola). Recomendación: GHL para las palabras con embudo, OpenReply solo para las sueltas.",
+   "desbloquea": "Que el DM no falle («no eres el dueño de la conversación»)",
+   "cuando": "antes del lunes 5",
+   "para": "Dayana"
+  },
+  {
+   "tarea": "Prueba de punta a punta de ACERO (comentar → DM → landing de las 5 verificaciones → etiqueta acceso-verificacion): en septiembre solo 43 de 174 leads llegaron al acceso.",
+   "desbloquea": "Las 6 piezas de octubre que piden ACERO (la primera el Vie 9)",
+   "cuando": "antes del 9-oct",
+   "para": "Ester y Aylin"
+  },
+  {
+   "tarea": "Prueba de punta a punta de NIVEL (comentar → DM → test → etiqueta acceso-test-nivel): en septiembre 0 accesos.",
+   "desbloquea": "El CTA de todas las piezas del Máster (la primera, la historia del creador del Jue 8)",
+   "cuando": "antes del 8-oct",
+   "para": "Ester y Aylin"
+  },
+  {
+   "tarea": "Llenar los 7 datos personales del carrusel «Si acabas de llegar: hola, soy Gabriel» (edad, familia, fan de, origen, el momento del cambio, año de fundación y número REAL de alumnos) y juntar las fotos reales: clase, obra, época de AutoCAD/Excel.",
+   "desbloquea": "El carrusel del Jue 8, que se fija en el perfil",
+   "cuando": "antes del 6-oct",
+   "para": "Gabriel"
+  },
+  {
+   "tarea": "Apagar las 3 campañas «[25AGOSTO] LEAD MAGNETS» y pasar ese presupuesto a ACERO.",
+   "desbloquea": "$77 al mes que hoy no traen leads",
+   "cuando": "antes del lunes 5",
+   "para": "Olympus"
+  },
+  {
+   "tarea": "Confirmar que las tareas automáticas del repositorio volvieron solas (historias cada 4 h a los :17; métricas lunes y viernes). Estuvieron paradas del 27 al 30-sep por la suspensión de GitHub.",
+   "desbloquea": "Que la auditoría de octubre tenga las historias de todos los días",
+   "cuando": "1-oct",
+   "para": "Dayana"
+  },
   {
    "tarea": "Limpiar las 5 destacadas del perfil: quitar los frames que piden CHATGPT o DYNAMO, los que tienen fechas, cupos o precios vencidos, y revisar que las portadas sigan iguales y legibles.",
    "desbloquea": "Que quien llega nuevo al perfil no pida un recurso que nadie contesta",
@@ -102,7 +142,7 @@
   }
  ],
  "publicidad": {
-  "nota": "Primero se corrige lo que hace perder leads (6 decisiones); después los anuncios nuevos reemplazan a los cansados. Fichas completas por anuncio abajo.",
+  "nota": "Primero se corrige lo que hace perder leads (7 decisiones: las 6 del diagnóstico de Dayana y la de la auditoría de septiembre); después los anuncios nuevos reemplazan a los cansados. Fichas completas por anuncio abajo.",
   "campanas": [
    {
     "nombre": "ACERO · formulario (campaña [AGOSTO] ESPE.1 ACERO - FORM, geo-split)",
@@ -567,6 +607,10 @@
     "Formulario de ACERO de «mayor intención», con la pregunta del precio de $225 y otra sobre qué software usa. El Máster agenda solo a quien dijo SÍ a los $500. Recordatorios de la cita a 24 h, 2 h y 15 min. Un solo enlace de pago de ACERO ($225)."
    ],
    [
+    "7 · Apagar las 3 campañas «[25AGOSTO] LEAD MAGNETS»",
+    "Auditoría de septiembre (Meta, 31-ago al 29-sep): $77 gastados entre las tres, 0 leads de formulario y 7 conversaciones. Ese presupuesto pasa a ACERO. Si se quiere pauta para un recurso, se hace con el post del dato de cálculo (el mejor orgánico del año), no con los anuncios actuales."
+   ],
+   [
     "REGLA DE ORO",
     "El Máster no lleva precio en ninguna pieza. ACERO lleva $225 solo en pauta y en correo a la lista propia. Un texto por ángulo, en una sola campaña."
    ]
@@ -594,7 +638,7 @@
      "producto": "Diplomado",
      "cta": "Comenta DIPLOMADO (si no está montada: DM)",
      "estado": "COMPLETA",
-     "nota": "Abre el lanzamiento del Tutor IA del Diplomado."
+     "nota": "Abre el lanzamiento del Tutor IA del Diplomado. AUDITORÍA SEP: los anuncios del tutor de Acero sacaron 0–2 comentarios; por eso esta pieza abre con el problema (buscar a ciegas en 133 h) y no con «ahora tiene tutor». Medir el martes 6: si queda por debajo de 2,66 comentarios por 1.000 vistas (mediana de septiembre), la pauta del tutor del 12 no se enciende sin cambiar el gancho."
     },
     {
      "fecha": "Mié 7",
@@ -608,7 +652,21 @@
      "producto": "Diplomado",
      "cta": "Comenta DIPLOMADO / DM",
      "estado": "POR GRABAR",
-     "nota": "Reel de lanzamiento. Graba Gabriel."
+     "nota": "Reel de lanzamiento. Graba Gabriel. Abre con el problema (rebobinar la clase), no con el anuncio del tutor: auditoría de septiembre."
+    },
+    {
+     "fecha": "Jue 8",
+     "fecha_iso": "2026-10-08",
+     "semana": "Semana 1 (5-11 oct)",
+     "id": "oct-hola-soy-gabriel-carrusel",
+     "titulo": "Si acabas de llegar: hola, soy Gabriel",
+     "tipo": "confianza",
+     "formato_publicacion": "CARRUSEL (8 slides) — historia del creador",
+     "intencion": "objeción",
+     "producto": "Máster",
+     "cta": "Comenta NIVEL",
+     "estado": "COMPLETA · faltan 7 datos personales que confirma Gabriel (marcados [CONFIRMA GABRIEL])",
+     "nota": "Historia del creador (pedido de Dayana, 30-sep): estructura del carrusel de Juan Lombana «Si acabas de llegar: hola, soy Juan», con marca DMA y fotos reales de Gabriel. Responde la objeción de confianza («¿quién enseña?»). Se FIJA en el perfil: es la bienvenida de los que llegan con el dato del viernes 9. Gabriel confirma los 7 datos personales marcados."
     },
     {
      "fecha": "Vie 9",
@@ -1666,25 +1724,30 @@
    {
     "nombre": "Calculadora de Zapatas",
     "palabra": "ZAPATA",
-    "por_que": "El que más leads trajo (162 etiquetados) y alimenta ACERO."
+    "por_que": "El que más leads trajo (162 etiquetados) y alimenta ACERO. El que mejor convierte: 169 al bot → 151 con acceso (89 %)."
    },
    {
     "nombre": "5 verificaciones en acero",
     "palabra": "ACERO",
-    "por_que": "Su post DM157 es el mejor PROMO de la cuenta (159 comentarios, 356 guardados). CTA de todas las piezas de ACERO."
+    "por_que": "Su post DM157 es el mejor PROMO de la cuenta (159 comentarios, 356 guardados). CTA de todas las piezas de ACERO. ⚠ Auditoría: 174 leads y solo 43 con acceso (25 %): prueba de punta a punta antes del 9-oct."
    },
    {
     "nombre": "Test de Nivel BIM",
     "palabra": "NIVEL",
-    "por_que": "Puerta al Máster y CTA de todas sus piezas. Poco uso hasta ahora: se mide en octubre."
+    "por_que": "Puerta al Máster y CTA de todas sus piezas. ⚠ Auditoría: 2 al bot, 1 lead y 0 accesos en septiembre: probar el workflow antes del 12-oct."
    },
    {
     "nombre": "Memoria de cálculo",
     "palabra": "MEMORIA",
-    "por_que": "Vivo, 23 leads. Se usa solo si una pieza de cálculo lo pide."
+    "por_que": "Vivo: 34 al bot → 33 con acceso. Se usa solo si una pieza de cálculo lo pide. ⚠ Hoy lo escuchan 3 automatizaciones: dejar una sola antes de usarlo."
    }
   ],
   "retirados": [
+   {
+    "nombre": "Pack de 5 scripts de Dynamo",
+    "palabra": "DYNAMO",
+    "por_que": "Auditoría de septiembre: su reel sacó 0 comentarios y OpenReply falla 4 de 4 porque GHL también contesta. El recurso sigue en /recursos; la palabra sale de los CTA."
+   },
    {
     "nombre": "Guía Revit + ChatGPT",
     "palabra": "CHATGPT",
@@ -1694,7 +1757,7 @@
   "mapa_cta": [
    {
     "palabra": "NIVEL",
-    "fecha": "Lun 12, Mié 14, Lun 19, Mar 20, Mié 21, Jue 22, Vie 23, Vie 30",
+    "fecha": "Jue 8 (historia del creador), Lun 12, Mié 14, Lun 19, Mar 20, Mié 21, Jue 22, Vie 23, Vie 30",
     "producto": "Máster"
    },
    {
@@ -1867,6 +1930,15 @@
    "condicion": "SIN PRECIO (el precio de Acero solo va en el correo del Jue 15). La rama A menciona el tutor solo si el botón está en los 4 cursos de Acero; si no, se borra «y un tutor de IA entrenado con las clases». Si el testimonio del Mié 28 salió con alumno real y permiso, se puede añadir antes del cierre común una línea con enlace al reel; si salió el reserva, no. Sin cupos ni fechas de inicio."
   }
  ],
+ "auditoria_previa": {
+  "mes": "2026-09",
+  "artefacto": "https://claude.ai/artifact/BNSfUg4TDFQjibVyN4ATt8",
+  "archivos": [
+   "matriz-viral/auditorias/2026-09-hallazgos.md",
+   "matriz-viral/auditorias/2026-09-auditoria-mes.json"
+  ],
+  "resumen": "Funcionó: el dato de cálculo verificable y el tutorial paso a paso con palabra. No funcionó: los anuncios del tutor, Dynamo, el carrusel de las 4 puertas y las campañas de pauta de lead magnets. Roto: MEMORIA y DYNAMO con dos automatizaciones, ACERO pierde el 75 % antes del acceso y NIVEL no entrega acceso."
+ },
  "kpis_mensuales": {
   "nota": "De dónde arranca octubre (septiembre, del 1 al 27, sin los 403 contactos cargados a mano). Fuente: diagnóstico de Dayana del 30-sep sobre Meta y GHL; cobros en fuentes/ingresos/.",
   "gasto_meta": {
@@ -1897,7 +1969,7 @@
   "El detalle operativo está en checklist_tareas, con responsable.",
   "Qué funciona y de dónde sale: HISTORICO-JUL-SEP.md y COMPRADORES-VS-NO.md."
  ],
- "resumen_cierre": "Octubre por grupos: 18 piezas de feed escritas para vender Máster y ACERO, 1 lead magnet nuevo (COTIZA) y 4 de respaldo, historias diarias con 1 venta por semana, comunidades, 4 blogs, LinkedIn en 3 cuentas, correos semanales y una pauta que primero corrige lo que hizo perder leads en septiembre.",
+ "resumen_cierre": "Octubre por grupos: 19 piezas de feed escritas para vender Máster y ACERO, 1 lead magnet nuevo (COTIZA) y 4 de respaldo, historias diarias con 1 venta por semana, comunidades, 4 blogs, LinkedIn en 3 cuentas, correos semanales y una pauta que primero corrige lo que hizo perder leads en septiembre.",
  "pie": "Design Modeling Academy · Matriz de contenido octubre 2026 (5 oct – 1 nov) · construida sobre la matriz viral (métricas reales de Instagram vía Meta Graph API), el histórico jul-sep y el análisis de quién compra y quién no.",
  "artefactos": {
   "artefacto": "https://claude.ai/artifact/6Q8f77WzYEqSMExS1h9Mx3",
