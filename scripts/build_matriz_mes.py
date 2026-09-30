@@ -320,6 +320,12 @@ class Mes:
         filas.append(("Publicidad", f'{sum(len(x["piezas"]) for x in c.get("publicidad", {}).get("campanas", []))} anuncios',
                       "Primero las 6 decisiones que corrigen septiembre; después los anuncios nuevos."))
         o.append(tabla(["Pestaña", "Cuánto", "Qué es"], filas))
+        if c.get("auditoria_previa"):
+            ap = c["auditoria_previa"]
+            o.append(f'<div class="indic"><h3>De dónde sale este mes · auditoría de {e(ap.get("mes", ""))}</h3>'
+                     f'<p>{e(ap.get("resumen", ""))}</p>'
+                     f'<p><a href="{e(ap.get("artefacto", ""))}" target="_blank" rel="noopener">Abrir la auditoría completa</a> · '
+                     f'{e(" · ".join(ap.get("archivos", [])))}</p></div>')
         o.append("<h2>Las reglas que no se rompen</h2><ul class=\"reglas\">" + "".join(f"<li>{e(r)}</li>" for r in c["reglas_del_mes"]) + "</ul>")
         lm = c.get("lead_magnets", {})
         if lm:
@@ -438,6 +444,7 @@ class Mes:
             "correos": [con(x) for x in c.get("correos", [])],
             "banco_reserva": [con({"id": i}) for i in c.get("banco_reserva", [])],
             "kpis_mensuales": c.get("kpis_mensuales", {}),
+            "auditoria_previa": c.get("auditoria_previa", {}),
             "pendientes": c.get("pendientes", []),
             "artefactos": c.get("artefactos", {}),
         }

@@ -71,6 +71,18 @@ td a{color:var(--amber-deep)}
          '<p class="lede">Cada publicación con su palabra, los DM que salieron, los clics reales y los leads en GHL; los recursos del mes, las historias, la pauta y lo cobrado.</p>',
          '</div></header><div class="wrap">']
 
+    # Enlace a la matriz del mes siguiente, la que se escribió con esta auditoría.
+    m = int(mes[5:7])
+    sig = f"{int(mes[:4]) + (m == 12)}-{(m % 12) + 1:02d}"
+    cal_sig = R / "matriz-viral" / "matriz" / f"calendario-{MESES[sig[5:7]]}.json"
+    if cal_sig.exists():
+        art = (json.loads(cal_sig.read_text(encoding="utf-8")).get("artefactos") or {})
+        if art.get("artefacto"):
+            o.append(f'<div class="indic"><h3>La matriz de {MESES[sig[5:7]]} ya aplica esta auditoría</h3>'
+                     f'<p>Reglas, pauta, lead magnets, checklist y destacadas cambiaron con estos hallazgos. '
+                     f'<a href="{e(art["artefacto"])}" target="_blank" rel="noopener">Abrir la matriz de {MESES[sig[5:7]]}</a>'
+                     + (f' · <a href="{e(art["json_app"])}" target="_blank" rel="noopener">JSON para la app</a>' if art.get("json_app") else "")
+                     + "</p></div>")
     o.append('<section class="hallazgos">' + markdown_a_html(md, saltar_h1=True) + "</section>")
 
     # publicaciones

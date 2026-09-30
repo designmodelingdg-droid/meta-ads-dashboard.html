@@ -34,8 +34,9 @@ def pieza(pid):
 # ───────────────────────── GRUPO 1 · FEED ─────────────────────────
 # (día, id, intención 50/20/30, producto, CTA, nota)
 FEED = [
-    (5,  "oct-tutor-dip-carrusel",             "solución",   "Diplomado", "Comenta DIPLOMADO (si no está montada: DM)", "Abre el lanzamiento del Tutor IA del Diplomado."),
-    (7,  "oct-tutor-dip-reel",                 "solución",   "Diplomado", "Comenta DIPLOMADO / DM", "Reel de lanzamiento. Graba Gabriel."),
+    (5,  "oct-tutor-dip-carrusel",             "solución",   "Diplomado", "Comenta DIPLOMADO (si no está montada: DM)", "Abre el lanzamiento del Tutor IA del Diplomado. AUDITORÍA SEP: los anuncios del tutor de Acero sacaron 0–2 comentarios; por eso esta pieza abre con el problema (buscar a ciegas en 133 h) y no con «ahora tiene tutor». Medir el martes 6: si queda por debajo de 2,66 comentarios por 1.000 vistas (mediana de septiembre), la pauta del tutor del 12 no se enciende sin cambiar el gancho."),
+    (7,  "oct-tutor-dip-reel",                 "solución",   "Diplomado", "Comenta DIPLOMADO / DM", "Reel de lanzamiento. Graba Gabriel. Abre con el problema (rebobinar la clase), no con el anuncio del tutor: auditoría de septiembre."),
+    (8,  "oct-hola-soy-gabriel-carrusel",      "objeción",   "Máster",    "Comenta NIVEL", "Historia del creador (pedido de Dayana, 30-sep): estructura del carrusel de Juan Lombana «Si acabas de llegar: hola, soy Juan», con marca DMA y fotos reales de Gabriel. Responde la objeción de confianza («¿quién enseña?»). Se FIJA en el perfil: es la bienvenida de los que llegan con el dato del viernes 9. Gabriel confirma los 7 datos personales marcados."),
     (9,  "oct-dato-deriva-post",               "problema",   "Acero",     "Comenta ACERO", "Post con dato de cálculo verificable (el formato que más guarda la cuenta). En FB sale además oct-tutor-dip-post-fb."),
     (12, "oct-acusa-ia-calculo-carrusel",      "problema",   "Máster",    "Comenta NIVEL", "Acusación. Capturas reales de Revit/Robot."),
     (13, "oct-cotiza-reel",                    "problema",   "Cotizador", "Comenta COTIZA", "EXTRA lead magnet (martes). COTIZA se monta en OpenReply justo después de publicar."),
@@ -135,6 +136,8 @@ DECISIONES_PAUTA = [
      "Hay 26 borradores sin publicar, entre ellos «SEPTIEMBRE23» de ETABS + IDEA StatiCa. Se revisan y se publican los útiles antes de producir creativos nuevos."],
     ["6 · Filtros ya acordados (25-sep)",
      "Formulario de ACERO de «mayor intención», con la pregunta del precio de $225 y otra sobre qué software usa. El Máster agenda solo a quien dijo SÍ a los $500. Recordatorios de la cita a 24 h, 2 h y 15 min. Un solo enlace de pago de ACERO ($225)."],
+    ["7 · Apagar las 3 campañas «[25AGOSTO] LEAD MAGNETS»",
+     "Auditoría de septiembre (Meta, 31-ago al 29-sep): $77 gastados entre las tres, 0 leads de formulario y 7 conversaciones. Ese presupuesto pasa a ACERO. Si se quiere pauta para un recurso, se hace con el post del dato de cálculo (el mejor orgánico del año), no con los anuncios actuales."],
     ["REGLA DE ORO", "El Máster no lleva precio en ninguna pieza. ACERO lleva $225 solo en pauta y en correo a la lista propia. Un texto por ángulo, en una sola campaña."],
 ]
 
@@ -145,14 +148,15 @@ LEAD_MAGNETS = {
                "piezas": ["oct-cotiza-reel", "oct-cotiza-historias", "oct-cotiza-carrusel", "oct-blog-cobrar-diseno-estructural"],
                "puente": "Especialización en Acero / Diplomado en Estructuras (secuencia de correo S5)"}],
     "respaldo": [
-        {"nombre": "Calculadora de Zapatas", "palabra": "ZAPATA", "por_que": "El que más leads trajo (162 etiquetados) y alimenta ACERO."},
-        {"nombre": "5 verificaciones en acero", "palabra": "ACERO", "por_que": "Su post DM157 es el mejor PROMO de la cuenta (159 comentarios, 356 guardados). CTA de todas las piezas de ACERO."},
-        {"nombre": "Test de Nivel BIM", "palabra": "NIVEL", "por_que": "Puerta al Máster y CTA de todas sus piezas. Poco uso hasta ahora: se mide en octubre."},
-        {"nombre": "Memoria de cálculo", "palabra": "MEMORIA", "por_que": "Vivo, 23 leads. Se usa solo si una pieza de cálculo lo pide."},
+        {"nombre": "Calculadora de Zapatas", "palabra": "ZAPATA", "por_que": "El que más leads trajo (162 etiquetados) y alimenta ACERO. El que mejor convierte: 169 al bot → 151 con acceso (89 %)."},
+        {"nombre": "5 verificaciones en acero", "palabra": "ACERO", "por_que": "Su post DM157 es el mejor PROMO de la cuenta (159 comentarios, 356 guardados). CTA de todas las piezas de ACERO. ⚠ Auditoría: 174 leads y solo 43 con acceso (25 %): prueba de punta a punta antes del 9-oct."},
+        {"nombre": "Test de Nivel BIM", "palabra": "NIVEL", "por_que": "Puerta al Máster y CTA de todas sus piezas. ⚠ Auditoría: 2 al bot, 1 lead y 0 accesos en septiembre: probar el workflow antes del 12-oct."},
+        {"nombre": "Memoria de cálculo", "palabra": "MEMORIA", "por_que": "Vivo: 34 al bot → 33 con acceso. Se usa solo si una pieza de cálculo lo pide. ⚠ Hoy lo escuchan 3 automatizaciones: dejar una sola antes de usarlo."},
     ],
-    "retirados": [{"nombre": "Guía Revit + ChatGPT", "palabra": "CHATGPT", "por_que": "No tiene campaña ni workflow que conteste: nadie recibe nada. Fuera de los CTA hasta que se vuelva a montar."}],
+    "retirados": [{"nombre": "Pack de 5 scripts de Dynamo", "palabra": "DYNAMO", "por_que": "Auditoría de septiembre: su reel sacó 0 comentarios y OpenReply falla 4 de 4 porque GHL también contesta. El recurso sigue en /recursos; la palabra sale de los CTA."},
+                  {"nombre": "Guía Revit + ChatGPT", "palabra": "CHATGPT", "por_que": "No tiene campaña ni workflow que conteste: nadie recibe nada. Fuera de los CTA hasta que se vuelva a montar."}],
     "mapa_cta": [
-        {"palabra": "NIVEL", "fecha": "Lun 12, Mié 14, Lun 19, Mar 20, Mié 21, Jue 22, Vie 23, Vie 30", "producto": "Máster"},
+        {"palabra": "NIVEL", "fecha": "Jue 8 (historia del creador), Lun 12, Mié 14, Lun 19, Mar 20, Mié 21, Jue 22, Vie 23, Vie 30", "producto": "Máster"},
         {"palabra": "ACERO", "fecha": "Vie 9, Vie 16, Lun 26, Mar 27, Mié 28, Jue 29", "producto": "Acero"},
         {"palabra": "COTIZA", "fecha": "Mar 13, Jue 15 (+ historias Mar 13 y blog Sáb 17)", "producto": "Cotizador → Acero/Diplomado"},
         {"palabra": "DIPLOMADO", "fecha": "Lun 5, Mié 7 (lanzamiento del tutor)", "producto": "Diplomado · montar antes del 5 o CTA a DM"},
@@ -184,6 +188,12 @@ DESTACADA_DE = {i.split(" ")[0]: d["destacada"] for d in DESTACADAS for i in d["
 
 
 CHECKLIST = [
+    {"tarea": "Decidir y dejar UNA sola automatización por palabra: MEMORIA (hoy 2 campañas de OpenReply + GHL), DYNAMO (OpenReply + GHL) y COTIZA (se monta en una sola). Recomendación: GHL para las palabras con embudo, OpenReply solo para las sueltas.", "desbloquea": "Que el DM no falle («no eres el dueño de la conversación»)", "cuando": "antes del lunes 5", "para": "Dayana"},
+    {"tarea": "Prueba de punta a punta de ACERO (comentar → DM → landing de las 5 verificaciones → etiqueta acceso-verificacion): en septiembre solo 43 de 174 leads llegaron al acceso.", "desbloquea": "Las 6 piezas de octubre que piden ACERO (la primera el Vie 9)", "cuando": "antes del 9-oct", "para": "Ester y Aylin"},
+    {"tarea": "Prueba de punta a punta de NIVEL (comentar → DM → test → etiqueta acceso-test-nivel): en septiembre 0 accesos.", "desbloquea": "El CTA de todas las piezas del Máster (la primera, la historia del creador del Jue 8)", "cuando": "antes del 8-oct", "para": "Ester y Aylin"},
+    {"tarea": "Llenar los 7 datos personales del carrusel «Si acabas de llegar: hola, soy Gabriel» (edad, familia, fan de, origen, el momento del cambio, año de fundación y número REAL de alumnos) y juntar las fotos reales: clase, obra, época de AutoCAD/Excel.", "desbloquea": "El carrusel del Jue 8, que se fija en el perfil", "cuando": "antes del 6-oct", "para": "Gabriel"},
+    {"tarea": "Apagar las 3 campañas «[25AGOSTO] LEAD MAGNETS» y pasar ese presupuesto a ACERO.", "desbloquea": "$77 al mes que hoy no traen leads", "cuando": "antes del lunes 5", "para": "Olympus"},
+    {"tarea": "Confirmar que las tareas automáticas del repositorio volvieron solas (historias cada 4 h a los :17; métricas lunes y viernes). Estuvieron paradas del 27 al 30-sep por la suspensión de GitHub.", "desbloquea": "Que la auditoría de octubre tenga las historias de todos los días", "cuando": "1-oct", "para": "Dayana"},
     {"tarea": "Limpiar las 5 destacadas del perfil: quitar los frames que piden CHATGPT o DYNAMO, los que tienen fechas, cupos o precios vencidos, y revisar que las portadas sigan iguales y legibles.", "desbloquea": "Que quien llega nuevo al perfil no pida un recurso que nadie contesta", "cuando": "antes del lunes 5", "para": "Daniela"},
     {"tarea": "Cada viernes, guardar en su destacada las historias de la semana (columna «Destacada» del Grupo 5 y bloque «destacadas» del calendario).", "desbloquea": "Destacadas al día sin una jornada de limpieza a fin de mes", "cuando": "viernes 9, 16, 23 y 30", "para": "Daniela"},
     {"tarea": "Volver a pegar cotizador-honorarios/ghl-landing.html en la página 1 del funnel: ya trae el formulario nativo (CAekHpib0yvjFbYvxx1m). Sin eso, los leads siguen entrando por el webhook de Zapatas y no pasan por la rama COTIZADOR del workflow de recursos. Poner Ecuador como país por defecto del teléfono. Borrar el contacto «Prueba Cotizador». Revisar la plantilla «Acceso Pack Dynamo_01».", "desbloquea": "Que el lead reciba el correo de acceso, la comunidad, la membresía y la secuencia S5", "cuando": "antes del 13-oct", "para": "Ester y Aylin"},
@@ -219,6 +229,10 @@ def main():
             "Mínimo 60 % en el NÚCLEO (BIM / IA / modelado / acero). Cero OBRA.",
             "NINGUNA pieza repite un id o un gancho ya usado (historico-2026.json).",
             "PALABRAS DE COMENTARIO — SOLO ESTAS: NIVEL (Máster), ACERO, ZAPATA, MEMORIA, COTIZA (nueva) y DIPLOMADO (lanzamiento del tutor, si está montada). CHATGPT queda fuera: no tiene quien conteste. BIM e IA siguen siendo el bot de ventas del Máster.",
+            "UNA PALABRA, UNA AUTOMATIZACIÓN (auditoría de septiembre): MEMORIA la escuchaban dos campañas de OpenReply y un workflow de GHL y fallaron 30 DM; DYNAMO falló 4 de 4. Antes de publicar una pieza con palabra, se confirma que la contesta UNA sola herramienta.",
+            "BIM e IA NUNCA como palabra de un recurso: son el bot de ventas del Máster (el checklist de Navisworks falló 3 de 5).",
+            "DYNAMO fuera de los CTA de octubre: 0 comentarios en su reel y falla en OpenReply.",
+            "LOS DOS FORMATOS GANADORES DE SEPTIEMBRE se repiten: el dato de cálculo verificable (cuantía mínima: 44.589 vistas, 146 comentarios, 163 seguidores) y el tutorial paso a paso con palabra (plano 2D → BIM: 99 comentarios, 47 DM). Anunciar un producto («ahora tiene X») nunca va solo: siempre detrás de un problema.",
             "UNA venta por semana, el jueves, en historias: 8 tutor · 15 objeción de ACERO · 22 espejo del Máster · 29 ACERO por dentro.",
             "EL MÁSTER NUNCA LLEVA PRECIO. ACERO lleva $225 solo en pauta y en correo a la lista propia.",
             "Visuales = capturas reales de Revit/Robot y cámara de Gabriel. Imagen con IA solo con aprobación y costo a la vista.",
@@ -226,7 +240,7 @@ def main():
         ],
         "checklist_tareas": CHECKLIST,
         "publicidad": {
-            "nota": "Primero se corrige lo que hace perder leads (6 decisiones); después los anuncios nuevos reemplazan a los cansados. Fichas completas por anuncio abajo.",
+            "nota": "Primero se corrige lo que hace perder leads (7 decisiones: las 6 del diagnóstico de Dayana y la de la auditoría de septiembre); después los anuncios nuevos reemplazan a los cansados. Fichas completas por anuncio abajo.",
             "campanas": [{"nombre": k, "piezas": [ficha_anuncio(i, k) for i in v]} for k, v in ADS.items()],
             "indicaciones": DECISIONES_PAUTA,
         },
@@ -259,6 +273,9 @@ def main():
         "pauta": [],
         "banco_reserva": [i for i in ["ago-derivas-deformaciones", "ago-tip-revit-ia", "ago-revit-ia-futuro"] if i in G],
         "correos": correos(),
+        "auditoria_previa": {"mes": "2026-09", "artefacto": "https://claude.ai/artifact/BNSfUg4TDFQjibVyN4ATt8",
+                             "archivos": ["matriz-viral/auditorias/2026-09-hallazgos.md", "matriz-viral/auditorias/2026-09-auditoria-mes.json"],
+                             "resumen": "Funcionó: el dato de cálculo verificable y el tutorial paso a paso con palabra. No funcionó: los anuncios del tutor, Dynamo, el carrusel de las 4 puertas y las campañas de pauta de lead magnets. Roto: MEMORIA y DYNAMO con dos automatizaciones, ACERO pierde el 75 % antes del acceso y NIVEL no entrega acceso."},
         "kpis_mensuales": {
             "nota": "De dónde arranca octubre (septiembre, del 1 al 27, sin los 403 contactos cargados a mano). Fuente: diagnóstico de Dayana del 30-sep sobre Meta y GHL; cobros en fuentes/ingresos/.",
             "gasto_meta": {"agosto": 1144, "septiembre": 1151},

@@ -106,6 +106,19 @@ def main():
                     malas_pal.append(f"{i}: {w}")
     informe("FALLA" if malas_pal else "OK", "Palabras de comentario en la lista viva", "; ".join(sorted(set(malas_pal))))
 
+    # Una palabra, una automatización (auditoría de septiembre: MEMORIA y DYNAMO
+    # escuchadas a la vez por OpenReply y GHL, 34 DM fallidos).
+    orp = json.load(open("matriz-viral/fuentes/openreply/campanas.json", encoding="utf-8")) if pathlib.Path("matriz-viral/fuentes/openreply/campanas.json").exists() else {}
+    en_or = {p for c in orp.get("campanas", []) if c.get("activa") for p in c.get("palabras", [])}
+    en_ghl = {p for p, w in ((orp.get("workflows_ghl") or {}).get("por_palabra") or {}).items() if w.get("publicados")}
+    pedidas = set()
+    for i in set(ids):
+        for v in (G.get(i, {}).get("cta") or {}).values() if isinstance(G.get(i, {}).get("cta"), dict) else []:
+            pedidas |= set(re.findall(r"(?:[Cc]omenta|con)\s+«?([A-ZÁÉÍÓÚ]{2,})", str(v)))
+    dobles = sorted(p for p in pedidas if p in en_or and p in en_ghl)
+    informe("AVISO" if dobles else "OK", "Cada palabra que pide el mes la contesta UNA sola automatización (OpenReply o GHL)",
+            ("Montadas en las dos: " + ", ".join(dobles) + ". Dejar una antes de publicar.") if dobles else "")
+
     largas, wa = [], []
     for i in ads:
         p = G.get(i, {})

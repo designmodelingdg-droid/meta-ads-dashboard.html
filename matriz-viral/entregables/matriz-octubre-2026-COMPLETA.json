@@ -9,19 +9,59 @@
   },
   "reglas_del_mes": [
     "REGLA DE ORO: todos los grupos comparten la misma información la misma semana, adaptada a cada canal. El feed del lunes alimenta comunidades, historias, LinkedIn y el correo de la semana.",
-    "FEED: 18 piezas · formato 7 reels / 7 carruseles / 4 posts (40/40/20) · intención 9 problema / 4 solución / 5 objeción o testimonio (50/20/30, del análisis de compradores del 29-sep).",
+    "FEED: 19 piezas · formato 7 reels / 8 carruseles / 4 posts (40/40/20) · intención 9 problema / 4 solución / 6 objeción o testimonio (50/20/30, del análisis de compradores del 29-sep).",
     "A QUIÉN LE HABLAMOS: cada pieza nombra a un perfil comprador de COMPRADORES-VS-NO.md. Si no le habla a ninguno, no entra.",
     "EL PATRÓN: acusar un hábito concreto (8,61 comentarios por 1.000 vistas contra 0,54) o dar un dato de cálculo verificable (DM168: 130 comentarios, 611 guardados). Nada de «la IA te va a reemplazar» (0 comentarios en julio).",
     "POST PLANO = SOLO CON DATO VERIFICABLE, con su fuente en las notas de producción.",
     "Mínimo 60 % en el NÚCLEO (BIM / IA / modelado / acero). Cero OBRA.",
     "NINGUNA pieza repite un id o un gancho ya usado (historico-2026.json).",
     "PALABRAS DE COMENTARIO — SOLO ESTAS: NIVEL (Máster), ACERO, ZAPATA, MEMORIA, COTIZA (nueva) y DIPLOMADO (lanzamiento del tutor, si está montada). CHATGPT queda fuera: no tiene quien conteste. BIM e IA siguen siendo el bot de ventas del Máster.",
+    "UNA PALABRA, UNA AUTOMATIZACIÓN (auditoría de septiembre): MEMORIA la escuchaban dos campañas de OpenReply y un workflow de GHL y fallaron 30 DM; DYNAMO falló 4 de 4. Antes de publicar una pieza con palabra, se confirma que la contesta UNA sola herramienta.",
+    "BIM e IA NUNCA como palabra de un recurso: son el bot de ventas del Máster (el checklist de Navisworks falló 3 de 5).",
+    "DYNAMO fuera de los CTA de octubre: 0 comentarios en su reel y falla en OpenReply.",
+    "LOS DOS FORMATOS GANADORES DE SEPTIEMBRE se repiten: el dato de cálculo verificable (cuantía mínima: 44.589 vistas, 146 comentarios, 163 seguidores) y el tutorial paso a paso con palabra (plano 2D → BIM: 99 comentarios, 47 DM). Anunciar un producto («ahora tiene X») nunca va solo: siempre detrás de un problema.",
     "UNA venta por semana, el jueves, en historias: 8 tutor · 15 objeción de ACERO · 22 espejo del Máster · 29 ACERO por dentro.",
     "EL MÁSTER NUNCA LLEVA PRECIO. ACERO lleva $225 solo en pauta y en correo a la lista propia.",
     "Visuales = capturas reales de Revit/Robot y cámara de Gabriel. Imagen con IA solo con aprobación y costo a la vista.",
     "Reels de menos de 30 s (en esta cuenta rinden más del doble que los de 30–60 s)."
   ],
   "checklist_tareas": [
+    {
+      "tarea": "Decidir y dejar UNA sola automatización por palabra: MEMORIA (hoy 2 campañas de OpenReply + GHL), DYNAMO (OpenReply + GHL) y COTIZA (se monta en una sola). Recomendación: GHL para las palabras con embudo, OpenReply solo para las sueltas.",
+      "desbloquea": "Que el DM no falle («no eres el dueño de la conversación»)",
+      "cuando": "antes del lunes 5",
+      "para": "Dayana"
+    },
+    {
+      "tarea": "Prueba de punta a punta de ACERO (comentar → DM → landing de las 5 verificaciones → etiqueta acceso-verificacion): en septiembre solo 43 de 174 leads llegaron al acceso.",
+      "desbloquea": "Las 6 piezas de octubre que piden ACERO (la primera el Vie 9)",
+      "cuando": "antes del 9-oct",
+      "para": "Ester y Aylin"
+    },
+    {
+      "tarea": "Prueba de punta a punta de NIVEL (comentar → DM → test → etiqueta acceso-test-nivel): en septiembre 0 accesos.",
+      "desbloquea": "El CTA de todas las piezas del Máster (la primera, la historia del creador del Jue 8)",
+      "cuando": "antes del 8-oct",
+      "para": "Ester y Aylin"
+    },
+    {
+      "tarea": "Llenar los 7 datos personales del carrusel «Si acabas de llegar: hola, soy Gabriel» (edad, familia, fan de, origen, el momento del cambio, año de fundación y número REAL de alumnos) y juntar las fotos reales: clase, obra, época de AutoCAD/Excel.",
+      "desbloquea": "El carrusel del Jue 8, que se fija en el perfil",
+      "cuando": "antes del 6-oct",
+      "para": "Gabriel"
+    },
+    {
+      "tarea": "Apagar las 3 campañas «[25AGOSTO] LEAD MAGNETS» y pasar ese presupuesto a ACERO.",
+      "desbloquea": "$77 al mes que hoy no traen leads",
+      "cuando": "antes del lunes 5",
+      "para": "Olympus"
+    },
+    {
+      "tarea": "Confirmar que las tareas automáticas del repositorio volvieron solas (historias cada 4 h a los :17; métricas lunes y viernes). Estuvieron paradas del 27 al 30-sep por la suspensión de GitHub.",
+      "desbloquea": "Que la auditoría de octubre tenga las historias de todos los días",
+      "cuando": "1-oct",
+      "para": "Dayana"
+    },
     {
       "tarea": "Limpiar las 5 destacadas del perfil: quitar los frames que piden CHATGPT o DYNAMO, los que tienen fechas, cupos o precios vencidos, y revisar que las portadas sigan iguales y legibles.",
       "desbloquea": "Que quien llega nuevo al perfil no pida un recurso que nadie contesta",
@@ -129,7 +169,7 @@
           "producto": "Diplomado",
           "cta": "Comenta DIPLOMADO (si no está montada: DM)",
           "estado": "COMPLETA",
-          "nota": "Abre el lanzamiento del Tutor IA del Diplomado.",
+          "nota": "Abre el lanzamiento del Tutor IA del Diplomado. AUDITORÍA SEP: los anuncios del tutor de Acero sacaron 0–2 comentarios; por eso esta pieza abre con el problema (buscar a ciegas en 133 h) y no con «ahora tiene tutor». Medir el martes 6: si queda por debajo de 2,66 comentarios por 1.000 vistas (mediana de septiembre), la pauta del tutor del 12 no se enciende sin cambiar el gancho.",
           "contenido": {
             "id": "oct-tutor-dip-carrusel",
             "fecha": "Lun 5 oct",
@@ -220,7 +260,7 @@
           "producto": "Diplomado",
           "cta": "Comenta DIPLOMADO / DM",
           "estado": "POR GRABAR",
-          "nota": "Reel de lanzamiento. Graba Gabriel.",
+          "nota": "Reel de lanzamiento. Graba Gabriel. Abre con el problema (rebobinar la clase), no con el anuncio del tutor: auditoría de septiembre.",
           "contenido": {
             "id": "oct-tutor-dip-reel",
             "fecha": "Mié 7 oct",
@@ -339,6 +379,102 @@
             ],
             "notas_produccion": "La palabra DIPLOMADO NO existe hoy ni en OpenReply ni en GHL (cotejo de fuentes/openreply/campanas.json). Si no está montada y probada el día de publicar, el CTA de prospectos cambia a: «Escríbenos por DM y te contamos cómo es el Diplomado» y la historia usa el sticker de enlace a la agenda. No publicar la promesa vacía. La captura de la clase bajo la respuesta solo sale en el video si ya está activa el día de grabar; no se anuncia en la voz.",
             "origen": "lanzamiento-tutor-ia-octubre.json"
+          }
+        },
+        {
+          "fecha": "Jue 8",
+          "fecha_iso": "2026-10-08",
+          "semana": "Semana 1 (5-11 oct)",
+          "id": "oct-hola-soy-gabriel-carrusel",
+          "titulo": "Si acabas de llegar: hola, soy Gabriel",
+          "tipo": "confianza",
+          "formato_publicacion": "CARRUSEL (8 slides) — historia del creador",
+          "intencion": "objeción",
+          "producto": "Máster",
+          "cta": "Comenta NIVEL",
+          "estado": "COMPLETA · faltan 7 datos personales que confirma Gabriel (marcados [CONFIRMA GABRIEL])",
+          "nota": "Historia del creador (pedido de Dayana, 30-sep): estructura del carrusel de Juan Lombana «Si acabas de llegar: hola, soy Juan», con marca DMA y fotos reales de Gabriel. Responde la objeción de confianza («¿quién enseña?»). Se FIJA en el perfil: es la bienvenida de los que llegan con el dato del viernes 9. Gabriel confirma los 7 datos personales marcados.",
+          "contenido": {
+            "id": "oct-hola-soy-gabriel-carrusel",
+            "fecha": "Jue 8 oct",
+            "fecha_iso": "2026-10-08",
+            "semana": "Semana 1 (5-11 oct)",
+            "grupo": "GRUPO 1 · Feed principal",
+            "tipo": "confianza",
+            "formato": "carrusel",
+            "formato_detalle": "CARRUSEL (8 slides) — historia del creador",
+            "redes": [
+              "instagram",
+              "facebook"
+            ],
+            "red_principal": "instagram",
+            "producto": "Máster",
+            "audiencia": "quien acaba de llegar a la cuenta (los que trae el dato de cálculo del viernes 9 y la pauta) y todavía no sabe quién enseña",
+            "estado": "COMPLETA · faltan 7 datos personales que confirma Gabriel (marcados [CONFIRMA GABRIEL])",
+            "titulo": "Si acabas de llegar: hola, soy Gabriel",
+            "eje": "PRUEBA-SOCIAL",
+            "pilar": "Historia del creador · confianza (objeción «¿quién enseña?»)",
+            "angulo": "Objeción de confianza: ¿quién está detrás y por qué le haría caso?",
+            "hook": "Si acabas de llegar: hola, soy Gabriel.",
+            "slides": [
+              {
+                "n": 1,
+                "texto": "Si acabas de llegar:\nHola, soy Gabriel.",
+                "visual": "Foto REAL de Gabriel sonriendo a cámara, recortada sobre fondo navy #0E2438. «Si acabas de llegar:» en letra monoespaciada pequeña; «Hola, soy» en blanco y «Gabriel.» en ámbar #E8A04A, enorme. Alrededor, 3 o 4 recortes flotantes de capturas REALES (Revit, Robot, el tutor de IA) como tarjetas con sombra. Logo DMA pequeño."
+              },
+              {
+                "n": 2,
+                "texto": "NOMBRE: Ing. Gabriel Pantoja, [CONFIRMA GABRIEL: edad].\nTRABAJO: ingeniero estructural y docente en Design Modeling Academy (Quito).\nFAMILIA: [CONFIRMA GABRIEL: una línea humana].\nFAN DE: [CONFIRMA GABRIEL: dos o tres cosas suyas, una de ellas no técnica].\nODIA: los planos que no coinciden con el modelo.",
+                "visual": "Foto REAL de Gabriel dando clase o en obra, arriba. Debajo, la ficha como tabla: etiquetas en monoespaciada ámbar a la izquierda, respuestas en blanco a la derecha, líneas finas entre filas. El «ODIA» es el guiño: es una sugerencia, Gabriel puede cambiarla por la suya."
+              },
+              {
+                "n": 3,
+                "texto": "Érase una vez un ingeniero que calculaba en Excel y dibujaba en AutoCAD.\nCada cambio del arquitecto, dos veces. [CONFIRMA GABRIEL: dónde y cuándo empezó: primer trabajo u obra].",
+                "visual": "2 o 3 fotos REALES de esa época (obra, oficina, primer proyecto), en tarjetas inclinadas. Si no hay fotos, capturas reales de un plano de AutoCAD viejo junto a su Excel."
+              },
+              {
+                "n": 4,
+                "texto": "[CONFIRMA GABRIEL: el momento del cambio: el proyecto que lo obligó a pasar a BIM].\nMe dijeron que era perder el tiempo.\n\nPero yo no quería dibujar más rápido.\nQuería calcular con criterio y coordinar.",
+                "visual": "Foto REAL de Gabriel frente a la pantalla con Revit y Robot abiertos. La última línea en ámbar."
+              },
+              {
+                "n": 5,
+                "texto": "De 859 ingenieros que nos escribieron por la Especialización en Acero, 632 quieren diseñar, modelar o calcular en software.\n\n74\n\nde cada 100.\nGanas hay. Lo que falta es un camino.",
+                "visual": "El número 74 ENORME en ámbar con estilo de píxeles o de bloques, centrado. Texto arriba y abajo en blanco. Fuente del dato en letra pequeña al pie: «Formulario de la Especialización en Acero, 2026»."
+              },
+              {
+                "n": 6,
+                "texto": "Por eso [CONFIRMA GABRIEL: fundé / fundamos] Design Modeling Academy [CONFIRMA GABRIEL: año]: para que un ingeniero de Latinoamérica aprenda BIM con proyectos reales, sin irse de su país.\n\nYa son [CONFIRMA GABRIEL: número REAL de alumnos, sacado de GHL o de los cursos] alumnos.",
+                "visual": "Foto REAL de una clase en vivo, un grupo o una graduación (con permiso de quien sale). El número de alumnos en ámbar."
+              },
+              {
+                "n": 7,
+                "texto": "La IA no calcula por ti.\nTe ahorra el trabajo que no es criterio.\n\nPor eso el Diplomado y la Especialización en Acero ya traen un tutor de IA que responde con sus propias clases, con la lección y el minuto.",
+                "visual": "Captura REAL del tutor respondiendo con la lección y el minuto, dentro de un marco de teléfono, con Gabriel al lado señalándola."
+              },
+              {
+                "n": 8,
+                "texto": "Ese 74 no se tiene que quedar en ganas.\n\nComenta\nNIVEL\ny te mando el test: 20 preguntas, unos 5 minutos, para saber por dónde empezar.",
+                "visual": "«NIVEL» en una caja ámbar con letra navy, grande. Foto REAL de Gabriel a la derecha, recortada, mirando a cámara. Sin precio, sin «inscríbete»."
+              }
+            ],
+            "caption": "Comenta NIVEL y te mando el test de nivel BIM. 🚀\n\nY si acabas de llegar… hola, soy Gabriel. 👋\n\n[CONFIRMA GABRIEL: una línea de origen, p. ej. «Empecé calculando en Excel y dibujando en AutoCAD, cada cambio dos veces»]. Hoy mi trabajo es que un ingeniero de Latinoamérica aprenda BIM con proyectos reales, sin irse de su país.\n\n¿De dónde nos escribes? 👇\n\n#BIM #IngenieríaEstructural #Revit #IngenieríaCivil #DesignModelingDG",
+            "cta": {
+              "instagram": "Comenta NIVEL y te mando el test (20 preguntas, unos 5 minutos).",
+              "facebook": "Comenta NIVEL y te mando el test (20 preguntas, unos 5 minutos).",
+              "tiktok": "Pregunta abierta: ¿de dónde nos escribes?"
+            },
+            "notas_produccion": "REFERENCIA: carrusel de Juan Lombana (Mercatitlán) del 30-sep-2026, «Si acabas de llegar: hola, soy Juan», traído con Apify (matriz-viral/fuentes/referentes/post-Dd7FPe3FNma.json). Se copia la ESTRUCTURA (saludo a quien llega → ficha personal con humor → origen → giro → número grande del problema → lo que fundó → lo que hace hoy con IA → CTA con palabra), no el diseño: va con la marca DMA (navy y ámbar) y SOLO con fotos reales de Gabriel. Nada de imágenes generadas. | DATOS: el 74 sale del formulario de la Especialización en Acero (859 respuestas; 632 eligieron «diseñarlas, modelarlas o calcularlas en software»; ver COMPRADORES-VS-NO.md). Lo del tutor está verificado (Diplomado y Acero). TODO lo marcado [CONFIRMA GABRIEL] se llena con datos reales o la línea se quita: no se inventa ni la edad ni el año ni el número de alumnos. Si la historia es de Dayana y no de Gabriel, se cambia el nombre, la ficha y las fotos; la estructura se queda. | FIJAR en el perfil: es la bienvenida para los que llegan con el dato de cálculo del viernes 9. | CTA: NIVEL. Requiere que la prueba de punta a punta de NIVEL esté hecha ANTES del jueves 8 (auditoría de septiembre: 0 accesos). Si no está, el CTA pasa a «Escríbenos por DM».",
+            "adaptacion_redes": {
+              "linkedin": "Cuenta de Gabriel Pantoja, en texto: la misma historia en primera persona, sin palabra clave; cierra con «¿Cómo empezaste tú con BIM?» y el test en el primer comentario.",
+              "tiktok": "Sin palabra clave: pregunta abierta."
+            },
+            "origen": "referencia Juan Lombana (Apify, 30-sep) · pedido de Dayana",
+            "cta_por_red": {
+              "instagram": "Comenta NIVEL y te mando el test (20 preguntas, unos 5 minutos).",
+              "facebook": "Comenta NIVEL y te mando el test (20 preguntas, unos 5 minutos).",
+              "tiktok": "Pregunta abierta: ¿de dónde nos escribes?"
+            }
           }
         },
         {
@@ -5348,7 +5484,7 @@
     }
   ],
   "publicidad": {
-    "nota": "Primero se corrige lo que hace perder leads (6 decisiones); después los anuncios nuevos reemplazan a los cansados. Fichas completas por anuncio abajo.",
+    "nota": "Primero se corrige lo que hace perder leads (7 decisiones: las 6 del diagnóstico de Dayana y la de la auditoría de septiembre); después los anuncios nuevos reemplazan a los cansados. Fichas completas por anuncio abajo.",
     "campanas": [
       {
         "nombre": "ACERO · formulario (campaña [AGOSTO] ESPE.1 ACERO - FORM, geo-split)",
@@ -6276,6 +6412,10 @@
         "Formulario de ACERO de «mayor intención», con la pregunta del precio de $225 y otra sobre qué software usa. El Máster agenda solo a quien dijo SÍ a los $500. Recordatorios de la cita a 24 h, 2 h y 15 min. Un solo enlace de pago de ACERO ($225)."
       ],
       [
+        "7 · Apagar las 3 campañas «[25AGOSTO] LEAD MAGNETS»",
+        "Auditoría de septiembre (Meta, 31-ago al 29-sep): $77 gastados entre las tres, 0 leads de formulario y 7 conversaciones. Ese presupuesto pasa a ACERO. Si se quiere pauta para un recurso, se hace con el post del dato de cálculo (el mejor orgánico del año), no con los anuncios actuales."
+      ],
+      [
         "REGLA DE ORO",
         "El Máster no lleva precio en ninguna pieza. ACERO lleva $225 solo en pauta y en correo a la lista propia. Un texto por ángulo, en una sola campaña."
       ]
@@ -6301,25 +6441,30 @@
       {
         "nombre": "Calculadora de Zapatas",
         "palabra": "ZAPATA",
-        "por_que": "El que más leads trajo (162 etiquetados) y alimenta ACERO."
+        "por_que": "El que más leads trajo (162 etiquetados) y alimenta ACERO. El que mejor convierte: 169 al bot → 151 con acceso (89 %)."
       },
       {
         "nombre": "5 verificaciones en acero",
         "palabra": "ACERO",
-        "por_que": "Su post DM157 es el mejor PROMO de la cuenta (159 comentarios, 356 guardados). CTA de todas las piezas de ACERO."
+        "por_que": "Su post DM157 es el mejor PROMO de la cuenta (159 comentarios, 356 guardados). CTA de todas las piezas de ACERO. ⚠ Auditoría: 174 leads y solo 43 con acceso (25 %): prueba de punta a punta antes del 9-oct."
       },
       {
         "nombre": "Test de Nivel BIM",
         "palabra": "NIVEL",
-        "por_que": "Puerta al Máster y CTA de todas sus piezas. Poco uso hasta ahora: se mide en octubre."
+        "por_que": "Puerta al Máster y CTA de todas sus piezas. ⚠ Auditoría: 2 al bot, 1 lead y 0 accesos en septiembre: probar el workflow antes del 12-oct."
       },
       {
         "nombre": "Memoria de cálculo",
         "palabra": "MEMORIA",
-        "por_que": "Vivo, 23 leads. Se usa solo si una pieza de cálculo lo pide."
+        "por_que": "Vivo: 34 al bot → 33 con acceso. Se usa solo si una pieza de cálculo lo pide. ⚠ Hoy lo escuchan 3 automatizaciones: dejar una sola antes de usarlo."
       }
     ],
     "retirados": [
+      {
+        "nombre": "Pack de 5 scripts de Dynamo",
+        "palabra": "DYNAMO",
+        "por_que": "Auditoría de septiembre: su reel sacó 0 comentarios y OpenReply falla 4 de 4 porque GHL también contesta. El recurso sigue en /recursos; la palabra sale de los CTA."
+      },
       {
         "nombre": "Guía Revit + ChatGPT",
         "palabra": "CHATGPT",
@@ -6329,7 +6474,7 @@
     "mapa_cta": [
       {
         "palabra": "NIVEL",
-        "fecha": "Lun 12, Mié 14, Lun 19, Mar 20, Mié 21, Jue 22, Vie 23, Vie 30",
+        "fecha": "Jue 8 (historia del creador), Lun 12, Mié 14, Lun 19, Mar 20, Mié 21, Jue 22, Vie 23, Vie 30",
         "producto": "Máster"
       },
       {
@@ -6925,6 +7070,15 @@
       "Máster: todos los agendados con SÍ a los $500; asistencia > 50 %",
       "COTIZA: DM y leads etiquetados lead-cotizador"
     ]
+  },
+  "auditoria_previa": {
+    "mes": "2026-09",
+    "artefacto": "https://claude.ai/artifact/BNSfUg4TDFQjibVyN4ATt8",
+    "archivos": [
+      "matriz-viral/auditorias/2026-09-hallazgos.md",
+      "matriz-viral/auditorias/2026-09-auditoria-mes.json"
+    ],
+    "resumen": "Funcionó: el dato de cálculo verificable y el tutorial paso a paso con palabra. No funcionó: los anuncios del tutor, Dynamo, el carrusel de las 4 puertas y las campañas de pauta de lead magnets. Roto: MEMORIA y DYNAMO con dos automatizaciones, ACERO pierde el 75 % antes del acceso y NIVEL no entrega acceso."
   },
   "pendientes": [
     "El detalle operativo está en checklist_tareas, con responsable.",

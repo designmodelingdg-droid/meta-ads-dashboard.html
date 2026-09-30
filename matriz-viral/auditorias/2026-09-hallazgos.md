@@ -67,6 +67,19 @@
 
 ## Qué cambia en la matriz de octubre por esta auditoría
 
+**Ya está aplicado en `calendario-octubre.json`**, y lo muestran el artefacto, el Word y el JSON de la app:
+- 4 reglas nuevas del mes;
+- la decisión de pauta n.º 7;
+- las notas de ZAPATA, ACERO, NIVEL y MEMORIA;
+- DYNAMO retirada;
+- 5 tareas nuevas del checklist;
+- las notas de medición en las piezas del tutor;
+- las destacadas;
+- el bloque `auditoria_previa`.
+
+`verificar_matriz_mes.py` comprueba además que cada palabra que pide el mes la contesta una sola automatización.
+
+
 - Palabras de octubre: NIVEL, ACERO, ZAPATA, MEMORIA, COTIZA y DIPLOMADO, **cada una con una sola automatización**.
 - **COTIZA** se monta en **una** herramienta. Hoy tiene la respuesta de Facebook en GHL; en Instagram va OpenReply o GHL, no las dos.
 - Primero se prueban de punta a punta NIVEL y ACERO: son el CTA del Máster y el de Acero.
