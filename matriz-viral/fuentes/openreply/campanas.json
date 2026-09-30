@@ -61,21 +61,21 @@
    "creada": "2026-09-29T19:26:55.413",
    "actualizada": "2026-09-29T19:27:28.139",
    "cuenta": "design_modeling_dg",
-   "enviados": 12,
+   "enviados": 14,
    "fallidos": 0,
    "entregados_sin_confirmar": 0,
    "saltados": 0,
    "pendientes": 0,
    "primer_envio": "2026-09-29T19:28:07.163",
-   "ultimo_envio": "2026-09-30T17:23:09.874",
-   "clics": 7,
-   "clics_limpios": 7,
+   "ultimo_envio": "2026-09-30T19:53:50.861",
+   "clics": 8,
+   "clics_limpios": 8,
    "clics_con_bots": 0,
    "enlaces_rastreados": 1,
    "mide_clics": true,
-   "clics_por_dm": 0.58,
-   "ctr": 0.5833,
-   "lectura_clics": "7 clics limpios sobre 12 DM enviados (58%). Son aperturas, no personas: la misma persona puede contar varias veces."
+   "clics_por_dm": 0.57,
+   "ctr": 0.5714,
+   "lectura_clics": "8 clics limpios sobre 14 DM enviados (57%). Son aperturas, no personas: la misma persona puede contar varias veces."
   },
   {
    "id": "cmuc38lqr000004lhs407u63j",
@@ -95,7 +95,7 @@
    "actualizada": "2026-09-22T03:01:54.579",
    "cuenta": "design_modeling_dg",
    "enviados": 9,
-   "fallidos": 0,
+   "fallidos": 1,
    "entregados_sin_confirmar": 0,
    "saltados": 0,
    "pendientes": 0,
@@ -191,7 +191,7 @@
    "actualizada": "2026-09-25T19:37:02.36",
    "cuenta": "design_modeling_dg",
    "enviados": 4,
-   "fallidos": 30,
+   "fallidos": 31,
    "entregados_sin_confirmar": 2,
    "saltados": 1,
    "pendientes": 0,
@@ -451,19 +451,19 @@
    "palabra": "MEMORIA",
    "campana": "MEMORIA VERIFICABLE copy",
    "campana_activa": true,
-   "enviados": 12,
+   "enviados": 14,
    "fallidos": 0,
    "entregados_sin_confirmar": 0,
    "saltados": 0,
    "primer_envio": "2026-09-29T19:28:07.163",
-   "ultimo_envio": "2026-09-30T17:23:09.874"
+   "ultimo_envio": "2026-09-30T19:53:50.861"
   },
   {
    "palabra": "PARTE",
    "campana": "TUTORIAL PLANO BIM PARTE 2",
    "campana_activa": true,
    "enviados": 9,
-   "fallidos": 0,
+   "fallidos": 1,
    "entregados_sin_confirmar": 0,
    "saltados": 0,
    "primer_envio": "2026-09-22T03:09:17.287",
@@ -507,7 +507,7 @@
    "campana": "MEMORIA DE CÁLCULO",
    "campana_activa": true,
    "enviados": 4,
-   "fallidos": 30,
+   "fallidos": 31,
    "entregados_sin_confirmar": 2,
    "saltados": 1,
    "primer_envio": "2026-09-18T18:22:33.071",
@@ -675,13 +675,6 @@
   {
    "estado": "FAILED",
    "pero_si_se_entrego": false,
-   "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=A_6SEKu4MVbLUeRVmeBow63]",
-   "veces": 1,
-   "ultima_vez": "2026-09-30T18:58:37.759"
-  },
-  {
-   "estado": "FAILED",
-   "pero_si_se_entrego": false,
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=Aneq1P9zHQrbYzyhASSOiFS]",
    "veces": 1,
    "ultima_vez": "2026-09-30T12:57:55.689"
@@ -759,6 +752,13 @@
   {
    "estado": "FAILED",
    "pero_si_se_entrego": false,
+   "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=Aac9Bvuo2yde4kAeeqaFCkO]",
+   "veces": 1,
+   "ultima_vez": "2026-09-30T20:02:44.7"
+  },
+  {
+   "estado": "FAILED",
+   "pero_si_se_entrego": false,
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=A5SQpMsl0qbVKec76CETetu]",
    "veces": 1,
    "ultima_vez": "2026-09-30T18:38:17.543"
@@ -783,6 +783,13 @@
    "motivo": "MetaApiError 1: An unknown error has occurred. (/v25.0/17841404048578200/messages) [code=1 sub=- type=OAuthException trace=AQGdecvvuiq3KWYVJrzQq90]",
    "veces": 1,
    "ultima_vez": "2026-09-25T19:39:29.637"
+  },
+  {
+   "estado": "FAILED",
+   "pero_si_se_entrego": false,
+   "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=A2M3yv6b2iu_LWdM4JF_S-0]",
+   "veces": 1,
+   "ultima_vez": "2026-09-30T18:58:37.759"
   },
   {
    "estado": "FAILED",
@@ -839,6 +846,13 @@
    "motivo": "This person already received this campaign's DM on an earlier comment",
    "veces": 1,
    "ultima_vez": "2026-09-18T18:27:24.854"
+  },
+  {
+   "estado": "FAILED",
+   "pero_si_se_entrego": false,
+   "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=AN8IFWL-fImTXSi0bY6YRiT]",
+   "veces": 1,
+   "ultima_vez": "2026-09-30T21:27:08.002"
   },
   {
    "estado": "FAILED",
@@ -928,6 +942,17 @@
    "ultimo_clic": "2026-09-17T14:34:23.205"
   },
   {
+   "slug": "vrLviIG6Qg",
+   "etiqueta": "Primary campaign link",
+   "destino": "https://funnel.dgdesignmodeling.com/acceso-gratis-memoria-calculo-form",
+   "campana": "MEMORIA VERIFICABLE copy",
+   "clics": 8,
+   "clics_limpios": 8,
+   "clics_con_bots": 0,
+   "primer_clic": "2026-09-29T21:21:34.817",
+   "ultimo_clic": "2026-09-30T19:54:17.473"
+  },
+  {
    "slug": "CJFIJ9P32Q",
    "etiqueta": "Primary campaign link",
    "destino": "https://funnel.dgdesignmodeling.com/acceso-gratis-guia-revit-chatgpt-form",
@@ -937,17 +962,6 @@
    "clics_con_bots": 1,
    "primer_clic": "2026-09-12T00:25:12.035",
    "ultimo_clic": "2026-09-17T13:45:33.571"
-  },
-  {
-   "slug": "vrLviIG6Qg",
-   "etiqueta": "Primary campaign link",
-   "destino": "https://funnel.dgdesignmodeling.com/acceso-gratis-memoria-calculo-form",
-   "campana": "MEMORIA VERIFICABLE copy",
-   "clics": 7,
-   "clics_limpios": 7,
-   "clics_con_bots": 0,
-   "primer_clic": "2026-09-29T21:21:34.817",
-   "ultimo_clic": "2026-09-30T15:40:12.613"
   },
   {
    "slug": "v7DsTpBjJg",
@@ -961,17 +975,6 @@
    "ultimo_clic": "2026-09-22T11:23:20.507"
   },
   {
-   "slug": "-ynblNwTaQ",
-   "etiqueta": "Primary campaign link",
-   "destino": "https://funnel.dgdesignmodeling.com/acceso-gratis-guia-revit-chatgpt-form",
-   "campana": "5 ERRORES REVIT",
-   "clics": 2,
-   "clics_limpios": 2,
-   "clics_con_bots": 0,
-   "primer_clic": "2026-09-22T19:40:49.607",
-   "ultimo_clic": "2026-09-23T18:17:53.758"
-  },
-  {
    "slug": "P1jZRzaqQw",
    "etiqueta": "Primary campaign link",
    "destino": "https://funnel.dgdesignmodeling.com/acceso-gratis-memoria-calculo-form",
@@ -981,6 +984,17 @@
    "clics_con_bots": 0,
    "primer_clic": "2026-09-18T18:22:47.729",
    "ultimo_clic": "2026-09-18T18:23:36.952"
+  },
+  {
+   "slug": "-ynblNwTaQ",
+   "etiqueta": "Primary campaign link",
+   "destino": "https://funnel.dgdesignmodeling.com/acceso-gratis-guia-revit-chatgpt-form",
+   "campana": "5 ERRORES REVIT",
+   "clics": 2,
+   "clics_limpios": 2,
+   "clics_con_bots": 0,
+   "primer_clic": "2026-09-22T19:40:49.607",
+   "ultimo_clic": "2026-09-23T18:17:53.758"
   },
   {
    "slug": "cKgFa5DELA",
@@ -1016,10 +1030,10 @@
    "ultimo_clic": "2026-09-17T15:29:11.889"
   },
   {
-   "slug": "-UDNcxnVAg",
+   "slug": "T-7xnWGVLA",
    "etiqueta": "Primary campaign link",
-   "destino": "https://designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero",
-   "campana": "TUTOR IA ACERO",
+   "destino": "https://funnel.dgdesignmodeling.com/acceso-gratis-script-dynamo-form",
+   "campana": "PACK DYNAMO",
    "clics": 0,
    "clics_limpios": 0,
    "clics_con_bots": 0,
@@ -1027,10 +1041,10 @@
    "ultimo_clic": null
   },
   {
-   "slug": "T-7xnWGVLA",
+   "slug": "-UDNcxnVAg",
    "etiqueta": "Primary campaign link",
-   "destino": "https://funnel.dgdesignmodeling.com/acceso-gratis-script-dynamo-form",
-   "campana": "PACK DYNAMO",
+   "destino": "https://designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero",
+   "campana": "TUTOR IA ACERO",
    "clics": 0,
    "clics_limpios": 0,
    "clics_con_bots": 0,
@@ -1096,7 +1110,7 @@
   },
   {
    "fecha": "2026-09-30",
-   "clics": 6,
+   "clics": 7,
    "limpio": true
   }
  ],
@@ -1179,7 +1193,7 @@
   },
   {
    "fecha": "2026-09-30",
-   "enviados": 9
+   "enviados": 11
   }
  ],
  "seguidores": [
@@ -1378,7 +1392,9 @@
       "nombre": "✅ Seguimientos 1,2,3 y 4 Especialización Acero",
       "estado": "draft"
      }
-    ]
+    ],
+    "bot_total": 177,
+    "bot_nuevos_7d": 14
    },
    "NIVEL": {
     "publicados": [
@@ -1435,10 +1451,12 @@
       "estado": "published"
      }
     ],
-    "en_borrador": []
+    "en_borrador": [],
+    "bot_total": 0,
+    "bot_nuevos_7d": 0
    }
   },
-  "embudo_generado": "2026-09-30T19:07Z"
+  "embudo_generado": "2026-09-30T19:13Z"
  },
  "cotejo_con_la_matriz": [
   {
@@ -1487,8 +1505,8 @@
     "MEMORIA VERIFICABLE",
     "MEMORIA DE CÁLCULO"
    ],
-   "dms_enviados": 21,
-   "lectura": "Viva: 21 DM enviados."
+   "dms_enviados": 23,
+   "lectura": "Viva: 23 DM enviados."
   },
   {
    "palabra": "DYNAMO",
@@ -1508,7 +1526,7 @@
    "campana_activa": false,
    "campanas": [],
    "dms_enviados": 0,
-   "lectura": "No está en OpenReply, pero SÍ en GoHighLevel y publicada: Lead magnet · Cotizador de Honorarios. Ahí es donde la monta la matriz, así que el comentario tiene a quién contestarle. (El listado da nombre y estado, no la configuración del disparador.)"
+   "lectura": "AVISO: no está en OpenReply, y en GoHighLevel (Lead magnet · Cotizador de Honorarios) nunca ha etiquetado a nadie. Si una pieza pide esta palabra, HOY NADIE LA CONTESTA. Puede que el recurso salga con otra palabra: comprobar qué pide la pieza antes de tocar GHL."
   }
  ],
  "otras_palabras_montadas": [
