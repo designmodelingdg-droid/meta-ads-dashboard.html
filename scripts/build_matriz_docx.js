@@ -732,6 +732,12 @@ if(Array.isArray(CAL.grupos) && CAL.grupos.length){
       }
     });
     /* El grupo de historias lleva ademas la rutina completa de stickers */
+    if(g.n===5 && CAL.destacadas){
+      push(H2(`Destacadas del perfil — las actualiza ${CAL.destacadas.responsable}`));
+      push(P(CAL.destacadas.nota,{run:{color:GREY,italics:true}}));
+      push(tbl(["Destacada","Qué va","Se agrega este mes","Qué se quita"],
+        CAL.destacadas.lista.map(x=>[x.destacada,x.que_va,x.agregar.join('\n'),x.quitar]),[1700,2900,2900,2700]));
+    }
     if(g.n===5 && GUI.historias_rutina){
       const HR=GUI.historias_rutina;
       push(H2("Qué sticker usar según lo que buscas"));
@@ -745,7 +751,7 @@ if(Array.isArray(CAL.grupos) && CAL.grupos.length){
       ],[1900,1900,2900,3500]));
       push(H2("Las reglas de siempre"));
       (HR.reglas||[]).forEach(r=>push(bul(r)));
-      if(HR.destacadas){push(H2("Destacadas del perfil"));HR.destacadas.forEach(x=>push(bul(x)));}
+      if(HR.destacadas && !CAL.destacadas){push(H2("Destacadas del perfil"));HR.destacadas.forEach(x=>push(bul(x)));}
       push(note("Las secuencias de venta del jueves están escritas frame a frame en los guiones: venta-acero-cupos · venta-acero-objecion · venta-master-espejo · (tutor, cuando esté vivo)."));
     }
   });

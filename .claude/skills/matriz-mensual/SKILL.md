@@ -94,6 +94,13 @@ G1 Feed · G2 Comunidades · G3 Blog (sábados) · G4 LinkedIn (3 cuentas, sin
 palabra clave) · G5 Historias (lunes a viernes, venta solo el jueves). Los
 correos semanales van en `correos` y la pauta en `publicidad`.
 
+**Destacadas:** el calendario lleva un bloque `destacadas` (responsable:
+Daniela). Tiene las cinco destacadas, qué historias del mes se agregan a cada
+una y qué se quita. Se quita lo que pide palabras muertas y lo que tiene
+fechas, cupos o precios vencidos. Cada historia del G5 lleva su campo
+`destacada`. En el checklist van dos tareas: limpiar antes del primer lunes y
+guardar cada viernes.
+
 ### El flujo, con comandos
 
 ```bash

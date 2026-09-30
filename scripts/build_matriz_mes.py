@@ -248,6 +248,8 @@ class Mes:
                 chips.append(f'<span class="tipo">{e(ent["intencion"])}</span>')
             if ent.get("producto") or p.get("producto"):
                 chips.append(f'<span class="tipo">{e(ent.get("producto") or p.get("producto"))}</span>')
+            if ent.get("destacada"):
+                chips.append(f'<span class="tipo">Destacada {e(ent["destacada"])}</span>')
             if ent.get("cuenta") or p.get("cuenta"):
                 chips.append(f'<span class="tipo">{e(ent.get("cuenta") or p.get("cuenta"))}</span>')
             o.append(f'<div class="pieza col" data-sem="{self.num_semana(ent)}" data-k="{k}">'
@@ -333,6 +335,12 @@ class Mes:
                 o.append('<h3 class="camp">Retirados</h3>' + valor(lm["retirados"]))
             if lm.get("mapa_cta"):
                 o.append('<h3 class="camp">Qué pieza pide cada palabra</h3>' + valor(lm["mapa_cta"]))
+        if c.get("destacadas"):
+            d = c["destacadas"]
+            o.append(f"<h2>Destacadas del perfil · las actualiza {e(d.get('responsable', ''))}</h2>")
+            o.append(f'<p class="intro">{e(d.get("nota", ""))}</p>')
+            o.append(tabla(["Destacada", "Qué va", "Se agrega en octubre", "Qué se quita"],
+                           [[x["destacada"], x["que_va"], ", ".join(x["agregar"]), x["quitar"]] for x in d["lista"]]))
         if c.get("checklist_tareas"):
             o.append("<h2>Checklist del mes</h2><ul class=\"e2e\">")
             for t in c["checklist_tareas"]:
@@ -426,6 +434,7 @@ class Mes:
             "publicidad": {**c.get("publicidad", {}),
                            "campanas": [{**cp, "piezas": [con(a) for a in cp["piezas"]]} for cp in c.get("publicidad", {}).get("campanas", [])]},
             "lead_magnets": c.get("lead_magnets", {}),
+            "destacadas": c.get("destacadas", {}),
             "correos": [con(x) for x in c.get("correos", [])],
             "banco_reserva": [con({"id": i}) for i in c.get("banco_reserva", [])],
             "kpis_mensuales": c.get("kpis_mensuales", {}),

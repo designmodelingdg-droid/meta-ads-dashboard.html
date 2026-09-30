@@ -159,7 +159,33 @@ LEAD_MAGNETS = {
     ],
 }
 
+# ───────────────────────── DESTACADAS (las actualiza Daniela) ─────────────────────────
+# Las cinco de siempre. Cada historia de octubre dice en cuál se guarda (columna
+# «destacada» del Grupo 5). Lo que se QUITA sale de la auditoría de septiembre:
+# CHATGPT no la contesta nadie y DYNAMO falla en OpenReply.
+DESTACADAS = [
+    {"destacada": "🔩 ACERO", "que_va": "Verificaciones, conexiones, casos de obra al software y la venta de los jueves de Acero.",
+     "agregar": ["oct-hist-1009", "oct-hist-1015", "oct-hist-1016", "oct-hist-1026", "oct-hist-1029"],
+     "quitar": "Frames con fechas o cupos ya vencidos, y cualquier frame que muestre precio."},
+    {"destacada": "🎯 BIM + IA", "que_va": "Máster, test de nivel, ranking de software, el tutor de IA del Diplomado.",
+     "agregar": ["oct-hist-1005", "oct-hist-1007", "oct-tutor-dip-historias", "oct-hist-1012", "oct-hist-1014", "oct-hist-1019", "oct-hist-1022", "oct-hist-1023", "oct-hist-1030"],
+     "quitar": "Frames que piden comentar CHATGPT (nadie la contesta) y los que prometen funciones de IA en Revit que no existen."},
+    {"destacada": "🎁 HERRAMIENTAS", "que_va": "Los recursos gratis: cotizador, calculadora de zapatas, memoria de cálculo, 5 verificaciones, test de nivel.",
+     "agregar": ["oct-cotiza-historias"],
+     "quitar": "Frames que piden DYNAMO o CHATGPT: se cambian por un sticker de enlace a /recursos o se borran."},
+    {"destacada": "👥 COMUNIDAD", "que_va": "Detrás de cámara y las preguntas de la comunidad.",
+     "agregar": ["oct-hist-1006", "oct-hist-1020", "oct-hist-1027"],
+     "quitar": "Recaps de más de 3 meses."},
+    {"destacada": "⭐ ALUMNOS", "que_va": "Testimonios reales con permiso.",
+     "agregar": ["oct-hist-1028 (solo si sale el testimonio real; si sale la reserva, va a ACERO)"],
+     "quitar": "Nada, salvo que un alumno retire su permiso."},
+]
+DESTACADA_DE = {i.split(" ")[0]: d["destacada"] for d in DESTACADAS for i in d["agregar"]}
+
+
 CHECKLIST = [
+    {"tarea": "Limpiar las 5 destacadas del perfil: quitar los frames que piden CHATGPT o DYNAMO, los que tienen fechas, cupos o precios vencidos, y revisar que las portadas sigan iguales y legibles.", "desbloquea": "Que quien llega nuevo al perfil no pida un recurso que nadie contesta", "cuando": "antes del lunes 5", "para": "Daniela"},
+    {"tarea": "Cada viernes, guardar en su destacada las historias de la semana (columna «Destacada» del Grupo 5 y bloque «destacadas» del calendario).", "desbloquea": "Destacadas al día sin una jornada de limpieza a fin de mes", "cuando": "viernes 9, 16, 23 y 30", "para": "Daniela"},
     {"tarea": "Volver a pegar cotizador-honorarios/ghl-landing.html en la página 1 del funnel: ya trae el formulario nativo (CAekHpib0yvjFbYvxx1m). Sin eso, los leads siguen entrando por el webhook de Zapatas y no pasan por la rama COTIZADOR del workflow de recursos. Poner Ecuador como país por defecto del teléfono. Borrar el contacto «Prueba Cotizador». Revisar la plantilla «Acceso Pack Dynamo_01».", "desbloquea": "Que el lead reciba el correo de acceso, la comunidad, la membresía y la secuencia S5", "cuando": "antes del 13-oct", "para": "Ester y Aylin"},
     {"tarea": "Gabriel revisa las horas de ejemplo del cotizador (app.html, ENTREGABLES).", "desbloquea": "Reel del Mar 13 y carrusel del Jue 15", "cuando": "antes del 12-oct", "para": "Gabriel"},
     {"tarea": "Día de grabación 1: reels del 13, 14, 20 y 21 (+ tablero físico del ranking).", "desbloquea": "Semanas 2 y 3 del feed", "cuando": "Jue 8-oct", "para": "Gabriel"},
@@ -224,10 +250,11 @@ def main():
              "calendario": filas_de("GRUPO 4")},
             {"n": 5, "nombre": "GRUPO 5 · Historias de Instagram (y Facebook stories)",
              "descripcion": "Lunes a viernes, 3–5 frames. Cada día abre la puerta a la pieza del feed; los jueves 15, 22 y 29 son el único slot de venta de la semana.",
-             "reglas": ["El sticker es el CTA.", "Nunca precio ni «inscríbete».", "Máximo 5 frames.", "Las respuestas llegan como DM: se contestan a mano."],
-             "calendario": filas_de("GRUPO 5")},
+             "reglas": ["El sticker es el CTA.", "Nunca precio ni «inscríbete».", "Máximo 5 frames.", "Las respuestas llegan como DM: se contestan a mano.", "Cada historia dice en qué destacada se guarda. Daniela las guarda cada viernes (ver «destacadas»)."],
+             "calendario": [{**x, **({"destacada": DESTACADA_DE[x["id"]]} if x["id"] in DESTACADA_DE else {})} for x in filas_de("GRUPO 5")]},
         ],
         "lead_magnets": LEAD_MAGNETS,
+        "destacadas": {"responsable": "Daniela", "nota": "Las cinco de siempre. Se limpian antes del lunes 5 y se alimentan cada viernes con las historias de la semana.", "lista": DESTACADAS},
         "piezas": [],
         "pauta": [],
         "banco_reserva": [i for i in ["ago-derivas-deformaciones", "ago-tip-revit-ia", "ago-revit-ia-futuro"] if i in G],
