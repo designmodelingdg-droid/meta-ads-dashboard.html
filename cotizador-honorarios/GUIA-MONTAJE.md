@@ -14,6 +14,24 @@ Landing   https://funnel.dgdesignmodeling.com/acceso-gratis-cotizador-honorarios
 Gracias   https://funnel.dgdesignmodeling.com/acceso-gratis-cotizador-honorarios-gracias
 ```
 
+## Estado del montaje en GHL (30-sep-2026, hecho con el Claude de Chrome)
+
+| | |
+|---|---|
+| Formulario | «Cotizador de Honorarios - Registro» · `https://api.leadconnectorhq.com/widget/form/CAekHpib0yvjFbYvxx1m` · ya conectado en `index.html` |
+| Landing | `https://funnel.dgdesignmodeling.com/acceso-gratis-cotizador-honorarios-form` |
+| Gracias | `https://funnel.dgdesignmodeling.com/acceso-gratis-cotizador-honorarios-gracias` (noindex, con calendario) |
+| Recursos | `/recursos` publicada con la tarjeta del cotizador |
+| Workflow | «Lead magnet · Cotizador de Honorarios»: Form Submitted + webhook propio (`…/webhook-trigger/75367575-647f-4b0b-bc88-e6d2d2d1a39e`) → contacto, etiquetas `lead-cotizador` y `origen-landing-cotizador`, aviso interno, Grant Offer |
+| Membresía | producto «Cotizador de Honorarios», lección «Calcula tu precio real», oferta gratis publicada |
+
+Pendiente:
+- **Volver a pegar `ghl-landing.html` en la página 1 del funnel**: la versión que se pegó todavía usa el formulario propio y el webhook de zapatas. La nueva trae el formulario nativo.
+- **Quitar del formulario la línea «Te la enviamos también al correo para que la tengas siempre a mano»**, heredada de zapatas. No hay ningún correo que mande el cotizador, y la regla de la casa es no prometer envíos que no existen. Y poner Ecuador como país por defecto del teléfono (hoy sale EE. UU.).
+- Borrar el contacto de prueba «Prueba Cotizador» (prueba.cotizador@example.com) que entró al mapear el webhook.
+- Hacer un envío real de punta a punta (checklist) y borrar ese contacto después.
+- Miniatura del producto de membresía: subir la imagen desde la computadora.
+
 ## Qué funciona ya, sin montar nada
 
 - La landing, la app y la gracias están publicadas en GitHub Pages.
