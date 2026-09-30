@@ -113,6 +113,32 @@ def main():
             "lectura": " · ".join(lectura),
         })
 
+    # ── plan del mes contra lo publicado (feed, grupo 1) ──
+    MESES = {"01": "enero", "02": "febrero", "03": "marzo", "04": "abril", "05": "mayo", "06": "junio", "07": "julio",
+             "08": "agosto", "09": "septiembre", "10": "octubre", "11": "noviembre", "12": "diciembre"}
+    cal = cargar(MV / "matriz" / f"calendario-{MESES[mes[5:7]]}.json", {}) or {}
+    guiones = {p["id"]: p for p in (cargar(MV / "matriz" / "guiones-completos.json", {}) or {}).get("piezas", [])}
+    publicado_por_dia = defaultdict(list)
+    for x in filas:
+        publicado_por_dia[x["fecha"]].append(x)
+    plan = []
+    anio, m = int(mes[:4]), int(mes[5:7])
+    for e in ((cal.get("grupos") or [{}])[0].get("calendario") or cal.get("piezas") or []):
+        import re as _re
+        num = _re.findall(r"\d+", e.get("fecha") or "")
+        if not num:
+            continue
+        mm = m + 1 if any(x in (e.get("fecha") or "").lower() for x in ("oct", "nov", "dic", "ene")) and int(num[0]) < 15 else m
+        iso = e.get("fecha_iso") or f"{anio}-{mm:02d}-{int(num[0]):02d}"
+        g = guiones.get(e.get("id")) or {}
+        mismos = publicado_por_dia.get(iso, [])
+        plan.append({"fecha": iso, "id": e.get("id"), "titulo": g.get("titulo") or (e.get("idea") or {}).get("titulo"),
+                     "formato": e.get("formato_publicacion"),
+                     "publicado_ese_dia": [p["id"] for p in mismos],
+                     "estado": "hubo publicación ese día (coincidencia por fecha, revisar el tema)" if mismos else ("hoy o después del corte de datos" if iso >= (matriz.get("actualizado") or "") else "no se publicó ese día")})
+    planificados = {p["fecha"] for p in plan}
+    fuera_de_plan = [x["id"] for x in filas if x["fecha"] not in planificados]
+
     # ── palabras: OpenReply + GHL ──
     palabras = {}
     for c in orp.get("campanas", []):
@@ -137,8 +163,15 @@ def main():
         d["ghl_lead"] = (et.get("lead") or {}).get("total")
         d["ghl_acceso"] = (et.get("acceso") or {}).get("total")
         d["ghl_bot_desde"] = (et.get("bot") or {}).get("tocados_desde")
+    # Palabras que se estrenan el mes siguiente: todavía no pueden disparar.
+    sig = f"{anio + (m == 12)}-{(m % 12) + 1:02d}"
+    cal_sig = cargar(MV / "matriz" / f"calendario-{MESES[sig[5:7]]}.json", {}) or {}
+    nuevas = {x.get("palabra") for x in (cal_sig.get("lead_magnets") or {}).get("nuevo", [])}
     for d in palabras.values():
         d["donde"] = sorted(d["donde"])
+        if d["palabra"] in nuevas and not d["dm_enviados"] and not d.get("ghl_bot"):
+            d["veredicto"] = f"nueva: se lanza en {MESES[sig[5:7]]}"
+            continue
         ok = d["dm_enviados"] + (d.get("ghl_bot") or 0)
         if d["dm_fallidos"] > d["dm_enviados"] and d["dm_fallidos"] >= 3:
             d["veredicto"] = "falla de montaje: falla más de lo que envía"
@@ -182,6 +215,8 @@ def main():
                    "palabra": "una campaña que falla más DM de los que envía es un fallo de montaje"},
         "mediana_comentarios_por_mil": med,
         "publicaciones": filas,
+        "plan_contra_publicado": plan,
+        "publicado_fuera_de_plan": fuera_de_plan,
         "palabras": sorted(palabras.values(), key=lambda d: -(d["dm_enviados"] + (d.get("ghl_bot") or 0))),
         "motivos_de_fallo": orp.get("motivos_de_fallo", []),
         "historias": historias,

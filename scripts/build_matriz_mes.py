@@ -460,12 +460,29 @@ def markdown_a_html(md, saltar_h1=False):
             if not (saltar_h1 and len(m.group(1)) == 1):
                 o.append(f'<h{len(m.group(1)) + 1} class="camp">{inline(m.group(2))}</h{len(m.group(1)) + 1}>')
         elif re.match(r"^(\d+\.|-) ", ln):
+            # Lista con subpuntos: las líneas sangradas («   - …» o un párrafo
+            # sangrado) van dentro del punto anterior, no como puntos nuevos.
             tag = "ol" if ln[0].isdigit() else "ul"
             items = []
-            while i < len(lineas) and re.match(r"^\s*(\d+\.|-) ", lineas[i]):
-                items.append(re.sub(r"^\s*(\d+\.|-) ", "", lineas[i]))
+            while i < len(lineas):
+                cur = lineas[i]
+                if re.match(r"^(\d+\.|-) ", cur):
+                    items.append({"txt": re.sub(r"^(\d+\.|-) ", "", cur), "sub": [], "par": []})
+                elif items and re.match(r"^\s+(\d+\.|-) ", cur):
+                    items[-1]["sub"].append(re.sub(r"^\s+(\d+\.|-) ", "", cur))
+                elif items and cur.startswith("   ") and cur.strip():
+                    items[-1]["par"].append(cur.strip())
+                elif not cur.strip() and i + 1 < len(lineas) and (lineas[i + 1].startswith("   ") or re.match(r"^(\d+\.|-) ", lineas[i + 1])):
+                    pass
+                else:
+                    break
                 i += 1
-            o.append(f'<{tag} class="reglas">' + "".join(f"<li>{inline(x)}</li>" for x in items) + f"</{tag}>")
+            html_items = []
+            for it in items:
+                sub = ('<ul class="sub">' + "".join(f"<li>{inline(x)}</li>" for x in it["sub"]) + "</ul>") if it["sub"] else ""
+                par = "".join(f'<p class="sub-p">{inline(x)}</p>' for x in it["par"])
+                html_items.append(f"<li>{inline(it['txt'])}{sub}{par}</li>")
+            o.append(f'<{tag} class="reglas">' + "".join(html_items) + f"</{tag}>")
             continue
         elif ln.startswith(">"):
             txt = []

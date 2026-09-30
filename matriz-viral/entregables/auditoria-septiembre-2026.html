@@ -1,0 +1,264 @@
+<title>Auditoría Septiembre DMA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700;800;900&family=Nunito:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{
+  --navy:#0E2438; --amber:#E8A04A; --amber-deep:#B8752A;
+  --ground:#F2F5F8; --surface:#FFFFFF; --surface-2:#E9EEF3;
+  --ink:#0E2438; --ink-2:#4A5F73; --ink-3:#7A8CA0;
+  --line:#D3DDE6; --line-strong:#B3C2D0;
+  --ok:#1F7A5A; --ok-bg:#E4F2EC;
+  --stop:#A33B2A; --stop-bg:#F8E7E3;
+  --wait-bg:#FBF0DA;
+  --display:'Overpass',system-ui,sans-serif;
+  --body:'Nunito',system-ui,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --ground:#0B1A28; --surface:#122536; --surface-2:#193347;
+  --ink:#E8EFF5; --ink-2:#A9BDCE; --ink-3:#7B93A8;
+  --line:#24435C; --line-strong:#365A76;
+  --ok:#5DC79E; --ok-bg:#123028; --stop:#E4907E; --stop-bg:#3A1E19;
+  --wait-bg:#33280F; --amber-deep:#E8A04A;
+}}
+:root[data-theme="dark"]{
+  --ground:#0B1A28; --surface:#122536; --surface-2:#193347;
+  --ink:#E8EFF5; --ink-2:#A9BDCE; --ink-3:#7B93A8;
+  --line:#24435C; --line-strong:#365A76;
+  --ok:#5DC79E; --ok-bg:#123028; --stop:#E4907E; --stop-bg:#3A1E19;
+  --wait-bg:#33280F; --amber-deep:#E8A04A;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--body);
+  font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px 80px}
+header{background:var(--navy);color:#EAF1F7;padding:38px 0 30px;border-bottom:4px solid var(--amber)}
+.eyebrow{font-family:var(--display);font-weight:800;font-size:12px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--amber);margin:0 0 8px}
+h1{font-family:var(--display);font-weight:900;font-size:clamp(28px,4.6vw,42px);line-height:1.06;
+  margin:0 0 12px;text-wrap:balance}
+.lede{font-size:16.5px;color:#B9CBDA;max-width:64ch;margin:0}
+nav{position:sticky;top:0;z-index:30;background:var(--ground);border-bottom:1px solid var(--line);
+  overflow-x:auto;-webkit-overflow-scrolling:touch}
+nav .wrap{display:flex;gap:4px;padding:0 22px;min-width:max-content}
+nav button{appearance:none;background:none;border:0;border-bottom:3px solid transparent;
+  font-family:var(--display);font-weight:700;font-size:14px;color:var(--ink-2);
+  padding:14px 14px 11px;cursor:pointer;white-space:nowrap}
+nav button:hover{color:var(--ink)}
+nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--amber)}
+nav button:focus-visible{outline:3px solid var(--amber);outline-offset:-3px}
+section[hidden]{display:none}
+section{padding-top:26px}
+h2{font-family:var(--display);font-weight:800;font-size:24px;margin:0 0 12px;
+  padding-bottom:10px;border-bottom:2px solid var(--navy)}
+h3.camp{font-family:var(--display);font-weight:800;font-size:18px;color:var(--amber-deep);
+  margin:28px 0 10px}
+p.intro{color:var(--ink-2);font-size:15.5px;max-width:70ch}
+ul.reglas{padding-left:20px;margin:14px 0}
+ul.reglas li{font-size:14.5px;color:var(--ink-2);margin-bottom:7px}
+.tabla-scroll{overflow-x:auto;margin:16px 0;border:1px solid var(--line);border-radius:8px;
+  background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:620px;font-size:14px}
+th{background:var(--navy);color:#EAF1F7;font-family:var(--display);font-weight:700;text-align:left;
+  padding:10px 13px;font-size:12px;letter-spacing:.05em;text-transform:uppercase}
+td{padding:10px 13px;border-top:1px solid var(--line);vertical-align:top}
+td.t{font-family:var(--mono);font-size:12.5px;white-space:nowrap;color:var(--amber-deep)}
+b.amb{color:var(--amber-deep)}
+.pieza,.reel{background:var(--surface);border:1px solid var(--line);border-radius:9px;
+  padding:16px 18px;margin:14px 0}
+.reel.listo{border-left:4px solid var(--ok)}
+.reel.gated{border-left:4px solid var(--stop)}
+.pieza-cab{display:flex;align-items:baseline;gap:11px;flex-wrap:wrap;margin-bottom:8px}
+.pieza-cab h3{font-family:var(--display);font-weight:800;font-size:17px;margin:0;flex:1;min-width:200px}
+.fecha{font-family:var(--mono);font-size:12.5px;font-weight:600;color:var(--amber-deep);white-space:nowrap}
+.tipo{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.06em;
+  color:var(--ink-2);border:1px solid var(--line-strong);padding:2px 8px;border-radius:99px;white-space:nowrap}
+.estado{font-family:var(--display);font-weight:800;font-size:12px;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--amber-deep);margin:0 0 8px}
+.cta-linea{font-size:14px;margin:8px 0}
+.rot{font-family:var(--display);font-weight:800;font-size:10.5px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);display:block;margin:12px 0 4px}
+.pegar{background:var(--surface-2);border-left:3px solid var(--amber);padding:11px 13px;
+  border-radius:0 5px 5px 0;font-size:14.5px;white-space:pre-wrap}
+.prompt{margin-top:10px}
+/* ── lead magnets ── */
+.lm{background:var(--surface);border:1px solid var(--line);border-radius:10px;
+  padding:16px 18px;margin:16px 0}
+.lm>.pieza-cab h3{flex:1 1 auto}
+.pal{font-family:var(--mono);font-size:11.5px;font-weight:700;color:var(--navy);
+  background:var(--amber);border-radius:4px;padding:3px 9px;letter-spacing:.06em}
+:root[data-theme="dark"] .pal,:root:not([data-theme="light"]) .pal{color:#0E2438}
+.lm .promesa{font-family:var(--display);font-weight:800;font-size:16.5px;line-height:1.4;
+  margin:6px 0 12px}
+.lm .estado{font-family:var(--mono);font-size:12px;color:var(--stop);margin:0 0 6px}
+ul.reglas.prod li{color:var(--ink-2)}
+.lanz{background:var(--surface-2);border-radius:8px;padding:13px 15px;margin-top:14px}
+.lanz h4{font-family:var(--display);font-weight:800;font-size:15px;margin:0;flex:1 1 auto}
+ol.pasos{padding-left:20px;max-width:78ch}
+ol.pasos li{margin-bottom:12px;font-size:14.5px;color:var(--ink-2)}
+ol.pasos li b{color:var(--ink);font-family:var(--display);font-size:15px}
+ul.e2e{list-style:none;padding:0;max-width:78ch}
+li.chkline{display:flex;align-items:flex-start;gap:10px;padding:8px 0;
+  border-bottom:1px solid var(--line);font-size:14.5px}
+li.chkline .chk{margin-top:2px}
+li.chkline.hecha span{text-decoration:line-through;color:var(--ink-3)}
+/* ── casilla de «hecho»: cierra la pieza y deja solo el titulo ── */
+.chk{flex:0 0 auto;display:inline-flex;align-items:center;cursor:pointer;margin-right:2px}
+.chk input{position:absolute;opacity:0;width:0;height:0}
+.chk span{width:19px;height:19px;border:2px solid var(--line-strong);border-radius:5px;
+  background:var(--surface);display:block;position:relative;transition:.12s}
+.chk:hover span{border-color:var(--ok)}
+.chk input:focus-visible+span{outline:2px solid var(--amber);outline-offset:2px}
+.chk input:checked+span{background:var(--ok);border-color:var(--ok)}
+.chk input:checked+span::after{content:"";position:absolute;left:5px;top:1px;width:5px;height:10px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(43deg)}
+.col.hecha{background:var(--ok-bg);border-color:var(--ok)}
+.col.hecha>:not(.cab){display:none}
+.col.hecha>.cab{border-bottom:0;padding-bottom:0;margin-bottom:0}
+.col.hecha .fecha{background:transparent;color:var(--ok);border-color:var(--ok)}
+.col.hecha h3,.col.hecha h4{color:var(--ok)}
+.col.hecha .tipo,.col.hecha .precio-ad,.col.hecha h4>span{opacity:.6}
+.dia.col.hecha{padding-bottom:10px}
+/* barra de avance por pestaña */
+.avance{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:14px 0 4px;
+  font-size:13.5px;color:var(--ink-2)}
+.avance b{font-family:var(--mono);color:var(--ok)}
+.avance button{font:inherit;font-size:12.5px;background:var(--surface);color:var(--ink-2);
+  border:1px solid var(--line-strong);border-radius:999px;padding:4px 12px;cursor:pointer}
+.avance button:hover{border-color:var(--amber);color:var(--amber-deep)}
+/* ── anuncios ── */
+.ad{background:var(--surface);border:1px solid var(--line);border-radius:10px;
+  padding:16px 18px;margin:14px 0}
+.ad-cab{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;
+  border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:12px}
+.ad-cab h3{font-family:var(--display);font-weight:800;font-size:19px;margin:0;flex:1 1 auto}
+.precio-ad{font-family:var(--mono);font-size:13px;color:var(--amber-deep);font-weight:700}
+.hook{font-family:var(--display);font-weight:800;font-size:17px;line-height:1.35;
+  margin:0 0 12px;color:var(--ink)}
+.etq{font-family:var(--display);font-weight:800;font-size:10.5px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);display:block;margin:14px 0 5px}
+.campos{display:flex;gap:12px;flex-wrap:wrap;margin-top:4px}
+.campos>div{flex:1 1 200px}
+.campos .etq{margin-top:0}
+.campos code{display:block;background:var(--surface-2);border:1px solid var(--line);
+  border-radius:5px;padding:7px 10px;font-family:var(--mono);font-size:13px}
+.creativo{margin:0;font-size:14.5px;color:var(--ink-2)}
+table.cfg th{width:150px;text-align:left;vertical-align:top;font-family:var(--display);
+  font-weight:800;font-size:12.5px;color:var(--ink-2);white-space:normal}
+table.cfg td{font-size:14px}
+table.cfg tr.dura th{color:var(--stop)}
+table tr.dura td{background:var(--wait-bg)}
+table.cfg tr.dura td{background:var(--stop-bg)}
+.indic{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--amber);
+  border-radius:0 10px 10px 0;padding:14px 18px;margin:16px 0}
+.indic h3{font-family:var(--display);font-weight:800;font-size:15px;margin:0 0 8px;
+  text-transform:uppercase;letter-spacing:.06em;color:var(--amber-deep)}
+.indic p{margin:0 0 9px;font-size:14.5px}
+.indic p:last-child{margin-bottom:0}
+.prompt-txt{background:var(--wait-bg);border-left:3px solid var(--amber-deep);padding:10px 13px;
+  border-radius:0 5px 5px 0;font-size:13px;font-family:var(--mono);line-height:1.55}
+.nota{border-left:3px solid var(--line-strong);padding:2px 0 2px 12px;margin:10px 0;
+  font-size:13.5px;color:var(--ink-2);font-style:italic}
+.cuenta{display:inline-block;min-width:26px;padding:1px 9px;margin-left:8px;
+  border-radius:11px;background:var(--amber);color:var(--navy);
+  font:700 15px/1.5 var(--display);vertical-align:middle}
+.dato{background:var(--stop-bg);border-left:4px solid var(--stop);padding:13px 16px;
+  border-radius:0 6px 6px 0;margin:16px 0;font-size:14.5px}
+.dato strong{font-family:var(--display);font-weight:800}
+ol.slides{padding-left:20px;margin:6px 0}
+ol.slides li{font-size:14px;margin-bottom:9px}
+.visual{color:var(--ink-3);font-size:13px;font-style:italic}
+.semana{margin:26px 0 34px}
+.semana-cab{display:flex;align-items:center;gap:14px;border-bottom:2px solid var(--navy);
+  padding-bottom:10px;margin-bottom:8px}
+.snum{font-family:var(--display);font-weight:900;font-size:32px;color:var(--amber);line-height:1}
+.semana-cab h3{font-family:var(--display);font-weight:800;font-size:19px;margin:0}
+.rango{font-family:var(--mono);font-size:12px;color:var(--ink-2)}
+.dia{margin:18px 0;padding:14px 16px;background:var(--surface);border:1px solid var(--line);border-radius:9px}
+.dia h4{font-family:var(--display);font-weight:800;font-size:15.5px;margin:0 0 10px;
+  color:var(--amber-deep);display:flex;align-items:baseline;gap:7px;flex-wrap:wrap}
+.dia h4 span{color:var(--ink);font-weight:700}
+.hist{border-top:1px solid var(--line);padding:12px 0 4px}
+.hist:first-of-type{border-top:0;padding-top:0}
+.hist-cab{display:flex;align-items:center;gap:9px;margin-bottom:6px}
+/* El contexto viaja CON la tarjeta: una captura suelta tiene que decir de que va. */
+.ctx{font-family:var(--mono);font-size:10.5px;color:var(--ink-3);margin:0 0 6px;
+  line-height:1.45}
+.ctx b{color:var(--amber-deep);font-family:var(--display);font-size:11px}
+.frame{font-family:var(--mono);font-size:11px;font-weight:600;background:var(--navy);color:#fff;
+  width:20px;height:20px;border-radius:50%;display:grid;place-items:center;flex:none}
+.rol{font-family:var(--display);font-weight:800;font-size:10.5px;letter-spacing:.09em;
+  text-transform:uppercase;padding:2px 8px;border-radius:99px}
+.rol-rell{background:var(--surface-2);color:var(--ink-2)}
+.rol-valo{background:var(--ok-bg);color:var(--ok)}
+.rol-inte{background:var(--wait-bg);color:var(--amber-deep)}
+.rol-vent{background:var(--stop-bg);color:var(--stop)}
+.rol-cier{background:var(--surface-2);color:var(--ink-2)}
+.rol-recu{background:var(--wait-bg);color:var(--amber-deep)}
+.papel{margin-left:auto;font-family:var(--display);font-weight:800;font-size:10px;
+  letter-spacing:.1em;color:var(--ink-3)}
+.fondo{font-family:var(--display);font-weight:800;font-size:10px;letter-spacing:.06em;
+  padding:2px 7px;border-radius:99px;border:1px solid var(--line)}
+.f-cam{background:var(--ok-bg);color:var(--ok)}
+.f-pan{background:var(--surface-2);color:var(--ink-2)}
+.f-gen{background:var(--wait-bg);color:var(--amber-deep)}
+.prompt.graba{border-left-color:var(--ok)}
+.grabar{border:1px solid var(--line);border-radius:11px;padding:16px 18px;margin:14px 0;
+  background:var(--surface)}
+.grabar h3{margin:0 0 4px;font-size:1.05rem}
+.grabar-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,17rem),1fr));gap:14px;margin-top:10px}
+.grabar-cols h4{margin:0 0 6px}
+.grabar-cols ul{margin:0;padding-left:18px}
+.grabar-cols li{margin-bottom:5px;color:var(--ink-2);font-size:.9rem}
+.ojo{margin:10px 0 0;font-size:.85rem;color:var(--ink-3)}
+.sticker{font-size:13.5px;margin:8px 0 0;color:var(--ink-2)}
+.sticker b{font-family:var(--display);color:var(--ink)}
+.filtro{display:flex;gap:7px;flex-wrap:wrap;margin:16px 0 4px;padding:10px 0;
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.fbtn{appearance:none;font-family:var(--display);font-weight:700;font-size:12.5px;
+  padding:6px 13px;border-radius:99px;border:1px solid var(--line-strong);
+  background:var(--surface);color:var(--ink-2);cursor:pointer;white-space:nowrap}
+.fbtn:hover{border-color:var(--amber);color:var(--ink)}
+.fbtn[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.fbtn:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+.vacio{display:none;padding:20px;text-align:center;color:var(--ink-3);font-style:italic}
+.lm-nuevo{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--amber);
+  border-radius:0 8px 8px 0;padding:14px 17px;margin:12px 0}
+.lm-nuevo h4{font-family:var(--display);font-weight:800;font-size:16px;margin:0 0 4px}
+.lm-pal{font-family:var(--mono);font-size:12.5px;color:var(--amber-deep);font-weight:600}
+.lm-nuevo p{font-size:14px;color:var(--ink-2);margin:8px 0 0}
+.lm-cta{font-size:13.5px;margin:8px 0 0;color:var(--stop);font-weight:600}
+footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);
+  font-size:12.5px;color:var(--ink-3);font-family:var(--mono)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+.chip{display:inline-block;font:700 11.5px/1.45 var(--display);letter-spacing:.02em;padding:2px 9px;border-radius:10px;white-space:normal}
+ul.sub{margin:6px 0 4px;padding-left:20px;list-style:disc}ul.sub li{margin-bottom:3px;font-size:14.5px}p.sub-p{margin:8px 0 2px;font-size:14.5px}
+.chip.ok{background:var(--ok-bg);color:var(--ok)}.chip.bad{background:var(--stop-bg);color:var(--stop)}.chip.mid{background:var(--wait-bg);color:var(--amber-deep)}
+td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.hallazgos h2.camp,.hallazgos h3.camp{color:var(--ink);font-size:21px;margin-top:30px}
+.hallazgos ol.reglas li,.hallazgos ul.reglas li{color:var(--ink);font-size:15px}
+section{padding-top:8px}.fuente{font-size:13px;color:var(--ink-3)}
+td a{color:var(--amber-deep)}
+</style>
+<header><div class="wrap">
+<p class="eyebrow">Design Modeling Academy · auditoría de septiembre 2026</p>
+<h1>¿Funcionó septiembre?</h1>
+<p class="lede">Cada publicación con su palabra, los DM que salieron, los clics reales y los leads en GHL; los recursos del mes, las historias, la pauta y lo cobrado.</p>
+</div></header><div class="wrap">
+<section class="hallazgos"><p class="nota">Datos al 30-sep-2026, 19:13 UTC:<br>- publicaciones: Meta Graph API;<br>- palabras, DM y clics: OpenReply;<br>- leads y accesos: etiquetas de GHL;<br>- historias: Graph API;<br>- pauta: Meta Ads, del 31-ago al 29-sep;<br>- dinero: Stripe y PayPal.<br>Solo cuentas, ningún dato personal. Las tablas completas vienen debajo y en <code>2026-09-auditoria-mes.json</code>.</p>
+<h3 class="camp">Qué funcionó</h3>
+<ol class="reglas"><li><b>Dato de cálculo verificable</b> (post del 11-sep, cuantía mínima): 44.589 vistas, 146 comentarios, 715 guardados y <b>163 seguidores nuevos</b>. Es la mejor pieza del año.<ul class="sub"><li>Pedía <b>ACERO</b>, y esa palabra la contesta GHL. Hasta hoy <b>no se medía</b>. Ya se mide: el bot de ACERO suma 177 contactos en total (19 en los últimos 7 días).</li></ul></li><li><b>El tutorial «de un plano 2D a un modelo BIM»</b> (12-sep) no estaba en la matriz, y fue el segundo mejor:<ul class="sub"><li>12.122 vistas, 99 comentarios, 402 guardados y 107 seguidores;</li><li>la palabra TUTORIAL mandó <b>47 DM</b> y trajo 10 clics reales (solo se cuentan clics limpios desde el 15-sep);</li><li>su parte 2 (22-sep) sacó 18 comentarios y 9 DM.</li></ul></li><li><b>Reels que piden un recurso con palabra:</b> la conversación sale 5 a 8 veces por encima de la mediana del mes, que son 2,66 comentarios por 1.000 vistas.<ul class="sub"><li>Guía Revit + ChatGPT (16-sep): 14,7 comentarios por cada 1.000 vistas.</li><li>Memoria de cálculo (25-sep): 13,6 por 1.000.</li><li>Memoria de cálculo (29-sep): 22,4 por 1.000, con 12 DM y 7 clics.</li></ul></li><li><b>Embudos que convierten, del bot al acceso:</b><ul class="sub"><li>ZAPATA: 169 → 151 (89 %);</li><li>MEMORIA: 34 → 33;</li><li>la guía de Revit + ChatGPT funciona con la palabra <b>GUIA</b> en OpenReply (8 DM y 14 clics), no con CHATGPT.</li></ul></li><li><b>Cuenta:</b> de 80.347 a 80.875 seguidores (+528 en el mes). Cobrado neto del 31-ago al 29-sep: <b>$7.326,83</b> (Stripe $5.329,87 + PayPal $1.996,96).</li></ol>
+<h3 class="camp">Qué no funcionó</h3>
+<ol class="reglas"><li><b>Los anuncios orgánicos del Tutor IA:</b><ul class="sub"><li>post del 22-sep: 898 vistas y 0 comentarios;</li><li>reel del 23-sep: 0 comentarios;</li><li>reel del Diplomado del 24-sep: 2 comentarios y 1 DM.</li></ul><p class="sub-p">⚠ <b>Alerta para octubre:</b> la semana 1 abre con el lanzamiento del Tutor IA del Diplomado (5 y 7-oct). Anunciar «ahora tiene tutor» no genera conversación. Hay que abrir con el problema (rebobinar la clase) y dejar el tutor como la solución, que es como están escritos el carrusel y el reel de octubre. Hay que medirlo el mismo lunes.</p></li><li><b>Dynamo:</b><ul class="sub"><li>el reel del 23-sep sacó 0 comentarios;</li><li>en OpenReply, 0 DM enviados y 4 fallidos;</li><li>en GHL, 6 al bot y 4 accesos.</li></ul><p class="sub-p">Es un recurso con poca tracción: queda fuera de los CTA de octubre.</p></li><li><b>El carrusel de las 4 puertas</b> (23-sep, «la pieza del mes» en la matriz): 1.986 vistas, 2 comentarios y 1 DM de RUTA.</li><li><b>Posts sin gancho ni palabra</b> (3, 7 y 29-sep): 0 a 2 comentarios.</li><li><b>Las 3 campañas de pauta «LEAD MAGNETS»:</b> $77 gastados, 0 leads de formulario y 7 conversaciones. Se apagan o se rehacen con el anuncio del dato de cálculo.</li><li><b>NIVEL</b> (Test de Nivel → Máster): 2 al bot, 1 lead y 0 accesos en todo el mes. El CTA del Máster en octubre depende de esta palabra (ver «Roto», punto 5).</li></ol>
+<h3 class="camp">Qué está roto (arreglar antes de publicar en octubre)</h3>
+<ol class="reglas"><li><b>MEMORIA la escuchan tres automatizaciones:</b> dos campañas de OpenReply y el workflow de GHL.<ul class="sub"><li>30 DM fallaron el 29 y 30-sep con «no eres el dueño de la conversación»: la primera que contesta se queda con el hilo y las otras fallan.</li><li>GHL registró 34 contactos, así que la mayoría probablemente sí recibió el recurso, pero no hay forma de saberlo persona por persona.</li><li><b>Regla nueva: una palabra, una sola automatización.</b> Si la palabra tiene embudo en GHL (ZAPATA, ACERO, NIVEL, MEMORIA, DYNAMO, COTIZA), se pausa su campaña en OpenReply, o al revés, pero nunca las dos.</li></ul></li><li><b>DYNAMO</b>, el mismo choque: OpenReply falla 4 de 4 porque GHL contesta primero.</li><li><b>BIM e IA como palabra de un recurso</b> (checklist de Navisworks): 3 fallidos de 5. BIM e IA son las palabras del bot de ventas del Máster, así que no se usan para recursos.</li><li><b>ACERO: de 174 leads, solo 43 llegan al acceso (25 %)</b>, cuando ZAPATA llega al 89 %. Hay dos posibilidades:<ul class="sub"><li>la landing de las 5 verificaciones pierde gente;</li><li>la etiqueta de acceso no se pone siempre.</li></ul><p class="sub-p">Hay que hacer una prueba de punta a punta esta semana. Octubre pide ACERO en 6 piezas.</p></li><li><b>NIVEL no entrega acceso</b> (0). Hay que probar el workflow «Comentario NIVEL - Test de Nivel BIM» antes del 12-oct, porque es el CTA de todas las piezas del Máster.</li><li><b>Las automatizaciones del repositorio estuvieron paradas del 27 al 30-sep</b>, por la suspensión de la cuenta de GitHub.<ul class="sub"><li>Las historias del 26 al 28-sep no se midieron y ya no se pueden recuperar: la API las borra a las 24 h.</li><li>Se relanzaron a mano el 30-sep. Hay que confirmar que las programadas vuelven solas: la de historias corre cada 4 h, a los :17.</li></ul></li></ol>
+<h3 class="camp">Qué cambia en la matriz de octubre por esta auditoría</h3>
+<ul class="reglas"><li>Palabras de octubre: NIVEL, ACERO, ZAPATA, MEMORIA, COTIZA y DIPLOMADO, <b>cada una con una sola automatización</b>.</li><li><b>COTIZA</b> se monta en <b>una</b> herramienta. Hoy tiene la respuesta de Facebook en GHL; en Instagram va OpenReply o GHL, no las dos.</li><li>Primero se prueban de punta a punta NIVEL y ACERO: son el CTA del Máster y el de Acero.</li><li>El formato ganador se repite: un dato verificable y un tutorial paso a paso con palabra (los dos mejores del mes).</li><li>Los anuncios de producto («ahora tiene X») no van solos: siempre llevan detrás un problema.</li></ul></section>
+<section><h2>Cada publicación del mes</h2><p class="intro">Conversación = comentarios por 1.000 vistas contra la mediana del mes (2,66): alta ≥ 1,5 veces la mediana, baja &lt; 0,5 veces. DM y clics salen de la campaña de OpenReply atada a ese post; si la palabra la contesta GHL, sale en la tabla de palabras.</p><div class="tabla-scroll"><table class=""><thead><tr><th>Fecha</th><th>Post</th><th>Tipo</th><th>Gancho</th><th>Vistas</th><th>Com.</th><th>Guard.</th><th>Seg.</th><th>Com./1.000</th><th>Conversación</th><th>DM</th><th>DM fallidos</th><th>Clics</th><th>Lectura</th></tr></thead><tbody><tr><td>09-02</td><td><a href="https://www.instagram.com/reel/DcyiQxUxlC_/" target="_blank" rel="noopener">DM164</a></td><td>reel</td><td>🚀 El BIM cambió la forma de diseñar. La Inteligencia Artificial está cambiando l</td><td><span class="num">1.490</span></td><td>2</td><td>1</td><td>s/d</td><td>1,3</td><td><span class="chip mid">media</span></td><td>s/d</td><td>s/d</td><td>s/d</td><td>sin campaña de OpenReply atada a este post (la palabra, si la pedía, la contesta GHL o nadie)</td></tr><tr><td>09-03</td><td><a href="https://www.instagram.com/p/Dc18cknG4Jo/" target="_blank" rel="noopener">DM163</a></td><td>post</td><td>Esto pasó este mes en nuestra comunidad de BIM + IA 👇</td><td><span class="num">2.381</span></td><td>2</td><td>4</td><td>0</td><td>0,8</td><td><span class="chip bad">baja</span></td><td>s/d</td><td>s/d</td><td>s/d</td><td>sin campaña de OpenReply atada a este post (la palabra, si la pedía, la contesta GHL o nadie)</td></tr><tr><td>09-04</td><td><a href="https://www.instagram.com/reel/Dc36ISaE24d/" target="_blank" rel="noopener">DM165</a></td><td>reel</td><td>ChatGPT no reemplaza tu criterio, pero como asistente de Revit te ahorra horas: </td><td><span class="num">2.480</span></td><td>9</td><td>1</td><td>s/d</td><td>3,6</td><td><span class="chip mid">media</span></td><td>3</td><td>1</td><td>6</td><td>palabra GUIA: 3 DM enviados, 6 clics limpios · 1 DM fallidos</td></tr><tr><td>09-07</td><td><a href="https://www.instagram.com/p/DdAPhGQndXA/" target="_blank" rel="noopener">DM166</a></td><td>post</td><td>No es que necesites más gente. Necesitas mejor flujo. Estas son las 3 señales de</td><td><span class="num">2.295</span></td><td>0</td><td>8</td><td>1</td><td>0</td><td><span class="chip bad">baja</span></td><td>s/d</td><td>s/d</td><td>s/d</td><td>sin campaña de OpenReply atada a este post (la palabra, si la pedía, la contesta GHL o nadie)</td></tr><tr><td>09-11</td><td><a href="https://www.instagram.com/p/DdJ35DuD7Rk/" target="_blank" rel="noopener">DM168</a></td><td>post</td><td>El 1% no es un capricho: por debajo de esa cuantía, el acero ni siquiera control</td><td><span class="num">44.589</span></td><td>146</td><td>715</td><td>163</td><td>3,3</td><td><span class="chip mid">media</span></td><td>s/d</td><td>s/d</td><td>s/d</td><td>sin campaña de OpenReply atada a este post (la palabra, si la pedía, la contesta GHL o nadie)</td></tr><tr><td>09-12</td><td><a href="https://www.instagram.com/p/DdML72JCTFv/" target="_blank" rel="noopener">DM167</a></td><td>post</td><td>¿Y si pudieras pasar de un plano 2D a un modelo BIM en Revit con ayuda de IA? 👀</td><td><span class="num">12.122</span></td><td>99</td><td>402</td><td>107</td><td>8,2</td><td><span class="chip ok">alta</span></td><td>47</td><td>0</td><td>10</td><td>palabra TUTORIAL: 47 DM enviados, 10 clics limpios</td></tr><tr><td>09-14</td><td><a href="https://www.instagram.com/p/DdRyKTvm9mI/" target="_blank" rel="noopener">DM169</a></td><td>post</td><td>Navisworks no coordina solo: coordina el criterio de quien lo maneja. 5 práctica</td><td><span class="num">2.245</span></td><td>6</td><td>7</td><td>1</td><td>2,7</td><td><span class="chip mid">media</span></td><td>2</td><td>3</td><td>1</td><td>palabra BIM/IA: 2 DM enviados, 1 clics limpios · ⚠ fallaron 3 DM, más de los que salieron: montaje, no contenido</td></tr><tr><td>09-16</td><td><a href="https://www.instagram.com/reel/DdXZ5fwJAig/" target="_blank" rel="noopener">DM171</a></td><td>reel</td><td>Los planos salen bien y el presupuesto sale mal. Casi siempre es lo mismo: eleme</td><td><span class="num">1.295</span></td><td>19</td><td>6</td><td>s/d</td><td>14,7</td><td><span class="chip ok">alta</span></td><td>5</td><td>0</td><td>8</td><td>palabra GUIA: 5 DM enviados, 8 clics limpios</td></tr><tr><td>09-18</td><td><a href="https://www.instagram.com/reel/DdbueT_lJ0h/" target="_blank" rel="noopener">DM170</a></td><td>reel</td><td>Que la estructura resista no significa que el edificio funcione bien.</td><td><span class="num">2.214</span></td><td>25</td><td>9</td><td>s/d</td><td>11,3</td><td><span class="chip ok">alta</span></td><td>4</td><td>30</td><td>2</td><td>palabra MEMORIA: 4 DM enviados, 2 clics limpios · ⚠ fallaron 30 DM, más de los que salieron: montaje, no contenido</td></tr><tr><td>09-21</td><td><a href="https://www.instagram.com/p/DdjbuaijVrN/" target="_blank" rel="noopener">DM172</a></td><td>carrusel</td><td>Modelar en Revit bien no es modelar bonito: es modelar coordinado. Estos 5 error</td><td><span class="num">3.336</span></td><td>10</td><td>34</td><td>0</td><td>3</td><td><span class="chip mid">media</span></td><td>4</td><td>0</td><td>2</td><td>palabra BIM/IA: 4 DM enviados, 2 clics limpios</td></tr><tr><td>09-22</td><td><a href="https://www.instagram.com/reel/DdkrVGsOcLz/" target="_blank" rel="noopener">DM179</a></td><td>reel</td><td>De un plano PDF a un modelo BIM en Revit con ayuda de IA. 🔥</td><td><span class="num">1.994</span></td><td>18</td><td>30</td><td>s/d</td><td>9,0</td><td><span class="chip ok">alta</span></td><td>9</td><td>0</td><td>3</td><td>palabra PARTE/PARTE2: 9 DM enviados, 3 clics limpios</td></tr><tr><td>09-22</td><td><a href="https://www.instagram.com/p/DdmKz_mjQy3/" target="_blank" rel="noopener">DM178</a></td><td>post</td><td>Tu Especialización en Acero ahora viene con Tutor IA incluido 🤖</td><td><span class="num">898</span></td><td>0</td><td>0</td><td>0</td><td>0</td><td><span class="chip bad">baja</span></td><td>0</td><td>0</td><td>0</td><td>palabra TUTOR: 0 DM enviados, 0 clics limpios</td></tr><tr><td>09-23</td><td><a href="https://www.instagram.com/p/DdolTx9DPqP/" target="_blank" rel="noopener">DM176</a></td><td>post</td><td>Todos quieren «aprender BIM». Pero nadie está en la misma etapa.</td><td><span class="num">1.986</span></td><td>2</td><td>7</td><td>0</td><td>1,0</td><td><span class="chip bad">baja</span></td><td>1</td><td>0</td><td>1</td><td>palabra RUTA: 1 DM enviados, 1 clics limpios</td></tr><tr><td>09-23</td><td><a href="https://www.instagram.com/reel/Ddm_IPUCh-C/" target="_blank" rel="noopener">DM177</a></td><td>reel</td><td>Dynamo no tiene que empezar con un proyecto enorme.</td><td><span class="num">825</span></td><td>0</td><td>1</td><td>s/d</td><td>0</td><td><span class="chip bad">baja</span></td><td>0</td><td>4</td><td>0</td><td>palabra DYNAMO: 0 DM enviados, 0 clics limpios · ⚠ fallaron 4 DM, más de los que salieron: montaje, no contenido</td></tr><tr><td>09-23</td><td><a href="https://www.instagram.com/reel/Ddo7CuNgHlN/" target="_blank" rel="noopener">DM175</a></td><td>reel</td><td>Tu Especialización en Acero ahora viene con Tutor IA incluido 🤖</td><td><span class="num">636</span></td><td>0</td><td>2</td><td>s/d</td><td>0</td><td><span class="chip bad">baja</span></td><td>s/d</td><td>s/d</td><td>s/d</td><td>sin campaña de OpenReply atada a este post (la palabra, si la pedía, la contesta GHL o nadie)</td></tr><tr><td>09-24</td><td><a href="https://www.instagram.com/p/DdrWsHcjERZ/" target="_blank" rel="noopener">DM174</a></td><td>post</td><td>Si abres el cuadro de advertencias, ves el número y lo cierras; si renombras vis</td><td><span class="num">3.753</span></td><td>10</td><td>33</td><td>0</td><td>2,7</td><td><span class="chip mid">media</span></td><td>s/d</td><td>s/d</td><td>s/d</td><td>sin campaña de OpenReply atada a este post (la palabra, si la pedía, la contesta GHL o nadie)</td></tr><tr><td>09-24</td><td><a href="https://www.instagram.com/reel/Ddrj9bGpZXK/" target="_blank" rel="noopener">DM173</a></td><td>reel</td><td>👀 Tienes la respuesta grabada en algún minuto de tus clases. Lo difícil era enco</td><td><span class="num">1.038</span></td><td>2</td><td>1</td><td>s/d</td><td>1,9</td><td><span class="chip mid">media</span></td><td>1</td><td>0</td><td>0</td><td>palabra DIPLOMADO/IA/TUTOR: 1 DM enviados, 0 clics limpios</td></tr><tr><td>09-25</td><td><a href="https://www.instagram.com/reel/Ddtu5gagAom/" target="_blank" rel="noopener">DM180</a></td><td>reel</td><td>Una memoria de cálculo no solo tiene que estar bien calculada. También tiene que</td><td><span class="num">1.033</span></td><td>14</td><td>3</td><td>s/d</td><td>13,6</td><td><span class="chip ok">alta</span></td><td>5</td><td>0</td><td>2</td><td>palabra MEMORIA: 5 DM enviados, 2 clics limpios</td></tr><tr><td>09-28</td><td><a href="https://www.instagram.com/p/Dd1dSC8l7eQ/" target="_blank" rel="noopener">DM183</a></td><td>post</td><td>La duda de las 11 p.m. era el punto débil de estudiar asincrónico. Ya no.</td><td><span class="num">1.104</span></td><td>2</td><td>1</td><td>0</td><td>1,8</td><td><span class="chip mid">media</span></td><td>s/d</td><td>s/d</td><td>s/d</td><td>sin campaña de OpenReply atada a este post (la palabra, si la pedía, la contesta GHL o nadie)</td></tr><tr><td>09-29</td><td><a href="https://www.instagram.com/reel/Dd4f8p1zC29/" target="_blank" rel="noopener">DM181</a></td><td>reel</td><td>Una memoria no siempre vuelve porque el cálculo esté mal. A veces vuelve porque </td><td><span class="num">1.474</span></td><td>33</td><td>3</td><td>s/d</td><td>22,4</td><td><span class="chip ok">alta</span></td><td>12</td><td>0</td><td>7</td><td>palabra MEMORIA: 12 DM enviados, 7 clics limpios</td></tr><tr><td>09-29</td><td><a href="https://www.instagram.com/p/Dd4CEUVl1pn/" target="_blank" rel="noopener">DM182</a></td><td>post</td><td>El Máster BIM+IA cambió de estructura: ahora obtienes resultados y certificacion</td><td><span class="num">860</span></td><td>0</td><td>3</td><td>0</td><td>0</td><td><span class="chip bad">baja</span></td><td>s/d</td><td>s/d</td><td>s/d</td><td>sin campaña de OpenReply atada a este post (la palabra, si la pedía, la contesta GHL o nadie)</td></tr></tbody></table></div></section>
+<section><h2>Lo planificado contra lo publicado</h2><p class="intro">Por fecha. Que haya publicación ese día no garantiza que sea la pieza del plan: la columna «Tema» de arriba lo confirma.</p><div class="tabla-scroll"><table class=""><thead><tr><th>Fecha</th><th>Pieza del plan</th><th>Título</th><th>Formato</th><th>Publicado ese día</th><th>Estado</th></tr></thead><tbody><tr><td>09-07</td><td>ago-3-senales-bim-ia</td><td>3 señales de que tu oficina ya necesita BIM + IA</td><td>CARRUSEL (6 slides)</td><td>DM166</td><td>hubo publicación ese día (coincidencia por fecha, revisar el tema)</td></tr><tr><td>09-08</td><td>pauta-guia</td><td>Guia «Revit + ChatGPT»: los 10 errores y su prompt</td><td>REEL (grabar) — EXTRA lanzamiento de recurso</td><td>—</td><td>no se publicó ese día</td></tr><tr><td>09-09</td><td>reel-deriva</td><td>REEL · Cumple resistencia y el edificio es inhabitable (grabar)</td><td>REEL (grabar)</td><td>—</td><td>no se publicó ese día</td></tr><tr><td>09-10</td><td>lm-revit-chatgpt-feed</td><td>Guia «Revit + ChatGPT»: 5 de los 10 errores, con lo que significan de </td><td>CARRUSEL (7 slides) — EXTRA lanzamiento de recurso</td><td>—</td><td>no se publicó ese día</td></tr><tr><td>09-11</td><td>sep-dato-cuantia-minima</td><td>Dato de cálculo: la cuantía mínima de una columna</td><td>POST PLANO (1 imagen)</td><td>DM168</td><td>hubo publicación ese día (coincidencia por fecha, revisar el tema)</td></tr><tr><td>09-14</td><td>ago-navisworks-coordinacion</td><td>Mejores prácticas para la coordinación en Navisworks</td><td>CARRUSEL (7 slides)</td><td>DM169</td><td>hubo publicación ese día (coincidencia por fecha, revisar el tema)</td></tr><tr><td>09-16</td><td>reel-duplicados</td><td>REEL · Tus planos están bien. Tu presupuesto está mal. (grabar)</td><td>REEL (grabar)</td><td>DM171</td><td>hubo publicación ese día (coincidencia por fecha, revisar el tema)</td></tr><tr><td>09-18</td><td>reel-advertencias</td><td>REEL · 400 avisos sin leer (grabar)</td><td>REEL (grabar)</td><td>DM170</td><td>hubo publicación ese día (coincidencia por fecha, revisar el tema)</td></tr><tr><td>09-21</td><td>ago-errores-modelar-revit</td><td>Errores comunes al modelar en Revit y cómo evitarlos</td><td>CARRUSEL (8 slides)</td><td>DM172</td><td>hubo publicación ese día (coincidencia por fecha, revisar el tema)</td></tr><tr><td>09-22</td><td>pauta-dynamo</td><td>Pack de 5 scripts de Dynamo / Python para Revit</td><td>REEL (grabar) — EXTRA lanzamiento de recurso</td><td>DM179, DM178</td><td>hubo publicación ese día (coincidencia por fecha, revisar el tema)</td></tr><tr><td>09-23</td><td>sep-carrusel-4-puertas</td><td>Las 4 puertas: ¿en qué etapa BIM estás?</td><td>CARRUSEL (8 slides)</td><td>DM176, DM177, DM175</td><td>hubo publicación ese día (coincidencia por fecha, revisar el tema)</td></tr><tr><td>09-24</td><td>lm-dynamo-python-feed</td><td>Pack de Dynamo: las 5 tareas de Revit que no deberias seguir haciendo </td><td>CARRUSEL (6 slides) — EXTRA lanzamiento de recurso</td><td>DM174, DM173</td><td>hubo publicación ese día (coincidencia por fecha, revisar el tema)</td></tr><tr><td>09-25</td><td>reel-cita-norma</td><td>REEL · «Según la norma» no es una cita (grabar)</td><td>REEL (grabar)</td><td>DM180</td><td>hubo publicación ese día (coincidencia por fecha, revisar el tema)</td></tr><tr><td>09-28</td><td>sep-acero-agente-ia</td><td>ACERO ahora responde: el tutor de IA de la Especialización</td><td>CARRUSEL (6 slides)</td><td>DM183</td><td>hubo publicación ese día (coincidencia por fecha, revisar el tema)</td></tr><tr><td>09-29</td><td>pauta-memoria</td><td>Guia de memoria de calculo + plantilla</td><td>REEL (grabar) — EXTRA lanzamiento de recurso</td><td>DM181, DM182</td><td>hubo publicación ese día (coincidencia por fecha, revisar el tema)</td></tr><tr><td>09-30</td><td>reel-limite-ia</td><td>REEL · Lo que no hay que preguntarle a la IA (grabar)</td><td>REEL (grabar)</td><td>—</td><td>hoy o después del corte de datos</td></tr><tr><td>10-01</td><td>lm-memoria-calculo-feed</td><td>Memoria de calculo: no se devuelve por los numeros</td><td>POST PLANO (1 imagen) — EXTRA lanzamiento de recurso</td><td>—</td><td>hoy o después del corte de datos</td></tr><tr><td>10-02</td><td>—</td><td>POST PLANO · ¿Cuanto pesa una varilla Ø12 de 12 m?</td><td>POST PLANO (crear imagen)</td><td>—</td><td>hoy o después del corte de datos</td></tr></tbody></table></div><p class="fuente">Publicado fuera del plan: DM164, DM163, DM165, DM167.</p></section>
+<section><h2>Cada palabra y su embudo</h2><p class="intro">OpenReply cuenta DM y clics limpios (sin bots desde el 15-sep). GHL cuenta contactos con la etiqueta del bot, del lead y del acceso; son totales acumulados, no solo del mes.</p><div class="tabla-scroll"><table class=""><thead><tr><th>Palabra</th><th>Dónde vive</th><th>Recurso</th><th>DM</th><th>DM fallidos</th><th>Clics</th><th>GHL bot</th><th>GHL lead</th><th>GHL acceso</th><th>Veredicto</th></tr></thead><tbody><tr><td><b>ACERO</b></td><td>GHL</td><td>5 verificaciones en acero</td><td>0</td><td>0</td><td>0</td><td>177</td><td>174</td><td>43</td><td><span class="chip ok">viva</span></td></tr><tr><td><b>ZAPATA</b></td><td>GHL</td><td>Calculadora de zapatas</td><td>0</td><td>0</td><td>0</td><td>169</td><td>162</td><td>151</td><td><span class="chip ok">viva</span></td></tr><tr><td><b>MEMORIA</b></td><td>GHL + OpenReply</td><td>Guía de memoria de cálculo</td><td>21</td><td>30</td><td>11</td><td>34</td><td>33</td><td>33</td><td><span class="chip bad">falla de montaje: falla más de lo que envía</span></td></tr><tr><td><b>TUTORIAL</b></td><td>OpenReply</td><td></td><td>47</td><td>0</td><td>10</td><td>s/d</td><td>s/d</td><td>s/d</td><td><span class="chip ok">viva</span></td></tr><tr><td><b>PARTE</b></td><td>OpenReply</td><td></td><td>9</td><td>0</td><td>3</td><td>s/d</td><td>s/d</td><td>s/d</td><td><span class="chip ok">viva</span></td></tr><tr><td><b>PARTE2</b></td><td>OpenReply</td><td></td><td>9</td><td>0</td><td>3</td><td>s/d</td><td>s/d</td><td>s/d</td><td><span class="chip ok">viva</span></td></tr><tr><td><b>GUIA</b></td><td>OpenReply</td><td></td><td>8</td><td>1</td><td>14</td><td>s/d</td><td>s/d</td><td>s/d</td><td><span class="chip ok">viva</span></td></tr><tr><td><b>IA</b></td><td>OpenReply</td><td></td><td>7</td><td>3</td><td>3</td><td>s/d</td><td>s/d</td><td>s/d</td><td><span class="chip ok">viva</span></td></tr><tr><td><b>BIM</b></td><td>OpenReply</td><td></td><td>6</td><td>3</td><td>3</td><td>s/d</td><td>s/d</td><td>s/d</td><td><span class="chip ok">viva</span></td></tr><tr><td><b>DYNAMO</b></td><td>GHL + OpenReply</td><td>Pack de 5 scripts de Dynamo</td><td>0</td><td>4</td><td>0</td><td>6</td><td>5</td><td>4</td><td><span class="chip bad">falla de montaje: falla más de lo que envía</span></td></tr><tr><td><b>NIVEL</b></td><td>GHL</td><td>Test de nivel BIM</td><td>0</td><td>0</td><td>0</td><td>2</td><td>1</td><td>0</td><td><span class="chip mid">capta pero nadie llega al acceso (revisar la etiqueta de acceso)</span></td></tr><tr><td><b>RUTA</b></td><td>OpenReply</td><td></td><td>1</td><td>0</td><td>1</td><td>s/d</td><td>s/d</td><td>s/d</td><td><span class="chip ok">viva</span></td></tr><tr><td><b>TUTOR</b></td><td>OpenReply</td><td></td><td>1</td><td>0</td><td>0</td><td>s/d</td><td>s/d</td><td>s/d</td><td><span class="chip ok">viva</span></td></tr><tr><td><b>DIPLOMADO</b></td><td>OpenReply</td><td></td><td>1</td><td>0</td><td>0</td><td>s/d</td><td>s/d</td><td>s/d</td><td><span class="chip ok">viva</span></td></tr><tr><td><b>CHATGPT</b></td><td>GHL</td><td>Guía Revit + ChatGPT</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>11</td><td><span class="chip bad">no disparó en el mes</span></td></tr><tr><td><b>COTIZA</b></td><td>GHL</td><td>Cotizador de Honorarios Estructurales</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td><span class="chip mid">nueva: se lanza en octubre</span></td></tr></tbody></table></div></section>
+<section><h2>Historias</h2><p class="intro">Solo los días que se alcanzaron a leer: la API las borra a las 24 h, y la lectura automática empezó el 22-sep y estuvo parada del 27 al 30-sep.</p><div class="tabla-scroll"><table class=""><thead><tr><th>Día</th><th>Frames</th><th>Alcance 1.º</th><th>Alcance último</th><th>Retención</th><th>Respuestas</th><th>Visitas al perfil</th><th>Salidas</th></tr></thead><tbody><tr><td>09-22</td><td>3</td><td>781</td><td>612</td><td>78 %</td><td>16</td><td>9</td><td>161</td></tr><tr><td>09-23</td><td>4</td><td>252</td><td>176</td><td>70 %</td><td>3</td><td>0</td><td>72</td></tr><tr><td>09-24</td><td>5</td><td>172</td><td>101</td><td>59 %</td><td>1</td><td>1</td><td>64</td></tr><tr><td>09-25</td><td>5</td><td>162</td><td>91</td><td>56 %</td><td>0</td><td>3</td><td>49</td></tr><tr><td>09-29</td><td>4</td><td>828</td><td>619</td><td>75 %</td><td>27</td><td>9</td><td>255</td></tr></tbody></table></div></section>
+<section><h2>Pauta</h2><p class="intro">Meta Ads del 2026-08-31 al 2026-09-29: $1.298,6 en total. Costo por resultado según Meta; el diagnóstico con GHL es el de Dayana del 30-sep (en la matriz de octubre).</p><div class="tabla-scroll"><table class=""><thead><tr><th>Campaña</th><th>Gasto</th><th>Leads</th><th>Conversaciones</th><th>Costo por resultado</th><th>Frecuencia</th></tr></thead><tbody><tr><td>🟡[18MAYO] MASTER - ESCALADO - GANADORES</td><td>$256,1</td><td>155</td><td>1</td><td>$1,64</td><td>2,67</td></tr><tr><td>🔴 [AGOSTO] ESPE.1 ACERO - FORM (geo-split)</td><td>$475,6</td><td>447</td><td>307</td><td>$1,06</td><td>2,76</td></tr><tr><td>🟢[25AGOSTO] LEAD MAGNETS</td><td>$42,5</td><td>0</td><td>6</td><td>$7,08</td><td>1,34</td></tr><tr><td>🟡 [27AGO] MASTER - FORM (geo-split) - TESTEO</td><td>$233,0</td><td>158</td><td>2</td><td>$1,46</td><td>2,71</td></tr><tr><td>🟢[25AGOSTO] LEAD MAGNETS · ACERO</td><td>$17,6</td><td>0</td><td>1</td><td>$17,59</td><td>1,51</td></tr><tr><td>🟢[25AGOSTO] LEAD MAGNETS · MÁSTER</td><td>$17,2</td><td>0</td><td>0</td><td>—</td><td>1,49</td></tr><tr><td>🔴 [14SEP] MASTER - FORM (geo-split)</td><td>$256,6</td><td>214</td><td>9</td><td>$1,15</td><td>2,88</td></tr></tbody></table></div></section>
+<section><h2>Lo cobrado</h2><p class="intro">Del 2026-08-31 al 2026-09-29: <b>$7.326,83</b> netos (Stripe $5.329,87 en 27 cobros · PayPal $1.996,96 en 9). Incluye cuotas de contratos vigentes: recurrente no es captación.</p></section>
+<footer>Datos al 2026-09-30 · OpenReply 2026-09-30 · embudo 2026-09-30T19:13Z. Generado con scripts/auditoria_mes.py y scripts/build_auditoria_html.py --mes 2026-09. Sin datos personales.</footer></div>
