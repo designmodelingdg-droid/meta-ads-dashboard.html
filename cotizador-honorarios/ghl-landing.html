@@ -291,15 +291,14 @@
 
 <script>
 /* ==================== CONFIGURACIÓN GOHIGHLEVEL ====================
-   Vía A (activa mientras no exista el formulario nativo): el formulario
-   propio manda el lead al Inbound Webhook de GHL con fuente
-   «cotizador-honorarios». Es el mismo webhook de la Calculadora de Zapatas.
-   Vía B (preferida): cuando Ester y Aylin creen el formulario nativo
-   «Cotizador de Honorarios - Registro» (ver GUIA-MONTAJE.md), se pega su URL
-   en GHL_FORM_IFRAME_URL y reemplaza al propio. En GHL, la redirección al
-   terminar va a la página de gracias. */
-const GHL_WEBHOOK_URL     = 'https://services.leadconnectorhq.com/hooks/nkKbOarn5IwHeMv48uY9/webhook-trigger/ed7611f9-9e5a-46e9-ae57-dda3742220c2';
-const GHL_FORM_IFRAME_URL = '';
+   Vía B (ACTIVA desde el 30-sep-2026): formulario nativo «Cotizador de
+   Honorarios - Registro». Al enviarlo, GHL redirige a la gracias del funnel.
+   Vía A (respaldo, solo si se vacía GHL_FORM_IFRAME_URL): el formulario propio
+   manda el lead al Inbound Webhook PROPIO del workflow «Lead magnet ·
+   Cotizador de Honorarios». No es el de la Calculadora de Zapatas: en GHL
+   cada disparador de webhook tiene su URL. */
+const GHL_WEBHOOK_URL     = 'https://services.leadconnectorhq.com/hooks/nkKbOarn5IwHeMv48uY9/webhook-trigger/75367575-647f-4b0b-bc88-e6d2d2d1a39e';
+const GHL_FORM_IFRAME_URL = 'https://api.leadconnectorhq.com/widget/form/CAekHpib0yvjFbYvxx1m';
 const URL_GRACIAS         = 'https://funnel.dgdesignmodeling.com/acceso-gratis-cotizador-honorarios-gracias';
 const TOKEN_ACCESO        = 'dm2026'; // debe coincidir con app.html
 
