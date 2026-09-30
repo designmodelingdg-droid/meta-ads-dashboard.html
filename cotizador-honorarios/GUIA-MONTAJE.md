@@ -2,6 +2,7 @@
 
 Para **Ester y Aylin** (GHL), **Patricio** (OpenReply) y **Gabriel** (horas de ejemplo).
 Palabra clave: **COTIZA**. Lanzamiento propuesto: semana del 12 de octubre.
+Para el montaje en GHL con el Claude de Chrome: `INSTRUCCIONES-CLAUDE-CHROME.md`.
 
 ```
 Landing   https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/cotizador-honorarios/
@@ -90,7 +91,15 @@ primera.
    El seguimiento natural después es la Especialización en Acero o el
    Diplomado en Estructuras: quien cotiza estructuras es el perfil que compra.
 
-### 3 · La palabra COTIZA (Patricio)
+### 3 · La palabra COTIZA (Patricio) · DESPUÉS de publicar cada pieza
+
+Decisión de Dayana, 30-sep: la campaña de OpenReply se monta **cuando ya estén
+publicados el reel y el carrusel**, porque sus campañas van atadas a un post.
+El orden en el día de publicación es: publicar → crear la campaña atada a ese
+post (o activar «cualquier publicación») → comentar COTIZA desde una cuenta
+ajena → comprobar que llega el DM. Hasta que llegue, alguien del equipo
+contesta a mano los comentarios con el enlace de la landing.
+
 
 **Instagram · OpenReply.** Campaña nueva «COTIZA · Cotizador de honorarios»:
 palabra **COTIZA**, sin coincidencia parcial, exige seguir, DM con el enlace de
@@ -129,10 +138,9 @@ gratuitas», con la etiqueta **Nuevo**, enlazando a
    `https://funnel.dgdesignmodeling.com/recursos`.
 2. Reemplazar el contenido del Custom Code por TODO `recursos/ghl-recursos.html`.
 3. Guardar, publicar y comprobar en el celular que la tarjeta abre la landing.
-4. La imagen de la tarjeta (`cotizador-honorarios/tarjeta-hub.png`, 1672×941,
-   fondo claro, igual que las demás) ya se sirve desde GitHub Pages. Si se
-   prefiere en el CDN de GHL como las otras: subirla a Media Storage y pasarle
-   la URL a Claude para cambiarla en la tarjeta.
+4. La imagen de la tarjeta es la que subió Dayana a Media Storage el 30-sep
+   (`https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6abd2bf5568b00dcf9fec8e1.png`),
+   1672×941 como las demás. También es la imagen para compartir de la landing.
 
 ### 5 · Opcional · en la membresía
 
