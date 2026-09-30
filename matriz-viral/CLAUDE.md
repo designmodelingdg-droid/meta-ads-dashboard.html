@@ -101,6 +101,37 @@ Dos honestidades del dato, para no leerlo mal:
    comentario, ni tokens, y una prueba rompe la corrida si alguien añade una
    consulta que lo intente. Montaje y detalle en `herramientas/openreply/LEEME.md`.
 
+## La matriz de cada mes: el método (desde octubre de 2026)
+
+La matriz del mes **no se escribe de memoria**. Todo sale de los datos, y estos
+archivos se leen antes de proponer una sola pieza:
+
+1. **`matriz/matriz.json`**: el resultado real de cada publicación propia.
+   Viene de la Meta Graph API y se refresca lunes y viernes con la Action
+   «Métricas semanales». Los referentes y la competencia vienen de Apify
+   (`fuentes/`).
+2. **`matriz/historico-2026.json` y `HISTORICO-JUL-SEP.md`**: julio, agosto y
+   septiembre, lo planificado y lo publicado con su resultado. Lista los ids y
+   ganchos ya usados, que no se repiten. Se regenera con
+   `python3 scripts/historico_matriz.py`.
+3. **`matriz/COMPRADORES-VS-NO.md`**: a quién le hablamos. Cada pieza nombra a
+   un perfil que compra, y si no le habla a ninguno, no entra.
+4. **Reparto:** 40/40/20 de formato (reels / carruseles / posts) y **50/20/30
+   de intención** (problema / solución / objeciones y testimonios). Venta, una
+   por semana, el jueves en historias.
+5. **Lead magnets:** como máximo uno nuevo al mes. En octubre fue COTIZA; los de
+   respaldo son ZAPATA, ACERO, NIVEL y MEMORIA, y CHATGPT está retirada.
+6. **Pauta:** primero se corrige lo que el diagnóstico del mes dice que pierde
+   leads, y después los anuncios nuevos entran como reemplazo.
+7. **Flujo completo y comandos:** skill `matriz-mensual`, sección 0b. Antes de
+   entregar, `scripts/verificar_matriz_mes.py` tiene que dar 0 fallas.
+8. **Entregables:**
+   - `entregables/matriz-<mes>-AAAA-COMPLETA.json`, el archivo único que se
+     sube a la app;
+   - el artefacto por pestañas;
+   - el Word;
+   - los creativos de `entregables/pauta-<mes>/`.
+
 ## Reglas fijas
 
 0. **Toda afirmación técnica sobre una función de software se verifica contra la documentación oficial ANTES de publicar.** Si un guion dice que un programa "hace X", hay que abrir help.autodesk.com (o la documentación del fabricante) y comprobarlo. Si no se puede comprobar, no se publica: se cambia por algo que sí se pueda. Y si la función depende de una versión o de una licencia concreta, **eso se dice en la pieza**.
