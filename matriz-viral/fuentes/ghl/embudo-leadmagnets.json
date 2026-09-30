@@ -1,7 +1,7 @@
 {
- "generado": "2026-09-30T19:07Z",
- "ventana_7d_desde": "2026-09-23T19:07:38Z",
- "tocados_desde": "2026-09-23T19:07:38Z",
+ "generado": "2026-09-30T19:13Z",
+ "ventana_7d_desde": "2026-09-23T19:13:35Z",
+ "tocados_desde": "2026-09-23T19:13:35Z",
  "nota": "Solo cuentas, ningún dato personal. «tocados_desde» es una cota: GHL no guarda cuándo se puso cada etiqueta.",
  "embudos": {
   "DYNAMO": {
@@ -67,9 +67,9 @@
     },
     "acceso": {
      "etiqueta": "acceso-memoria-calculo",
-     "total": 32,
-     "nuevos_7d": 6,
-     "tocados_desde": 24
+     "total": 33,
+     "nuevos_7d": 7,
+     "tocados_desde": 25
     }
    }
   },
@@ -89,10 +89,33 @@
      "tocados_desde": 6
     },
     "acceso": {
-     "etiqueta": "guia-zapata",
-     "total": 0,
+     "etiqueta": "acceso-calculadora",
+     "total": 151,
      "nuevos_7d": 0,
-     "tocados_desde": 0
+     "tocados_desde": 23
+    }
+   }
+  },
+  "ACERO": {
+   "recurso": "5 verificaciones en acero",
+   "etapas": {
+    "bot": {
+     "etiqueta": "origen-bot-acero",
+     "total": 177,
+     "nuevos_7d": 14,
+     "tocados_desde": 19
+    },
+    "lead": {
+     "etiqueta": "lead-acero-verificaciones",
+     "total": 174,
+     "nuevos_7d": 14,
+     "tocados_desde": 18
+    },
+    "acceso": {
+     "etiqueta": "acceso-verificacion",
+     "total": 43,
+     "nuevos_7d": 1,
+     "tocados_desde": 10
     }
    }
   },
@@ -113,6 +136,29 @@
     },
     "acceso": {
      "etiqueta": "acceso-test-nivel",
+     "total": 0,
+     "nuevos_7d": 0,
+     "tocados_desde": 0
+    }
+   }
+  },
+  "COTIZA": {
+   "recurso": "Cotizador de Honorarios Estructurales",
+   "etapas": {
+    "bot": {
+     "etiqueta": "origen-bot-cotiza",
+     "total": 0,
+     "nuevos_7d": 0,
+     "tocados_desde": 0
+    },
+    "lead": {
+     "etiqueta": "lead-cotizador",
+     "total": 0,
+     "nuevos_7d": 0,
+     "tocados_desde": 0
+    },
+    "acceso": {
+     "etiqueta": "acceso-cotizador-honorarios",
      "total": 0,
      "nuevos_7d": 0,
      "tocados_desde": 0
