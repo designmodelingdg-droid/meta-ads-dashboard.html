@@ -1,8 +1,8 @@
 # Inventario de correos — GoHighLevel
 
-Generado el 2026-09-25.
+Generado el 2026-09-30.
 
-**449 plantillas** en **54 carpetas**. 449 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
+**450 plantillas** en **54 carpetas**. 450 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
 
 > Lo que NO sale por API: que workflow usa que plantilla. El endpoint de automatizaciones devuelve solo metadatos. En esta cuenta las plantillas estan nombradas por su flujo, asi que el cruce se puede hacer leyendo.
 
@@ -41,6 +41,51 @@ Quedo a tu disposición para coordinar una nueva reunión. ¡Espero tu pronta re
 Saludos cordiales,
 Ing. Gabriel Pantoja
 ¡REAGENDA AQUÍ!
+```
+
+### Acceso Cotizador Honorarios_01
+
+- **id:** `6abd518d72c7ea37601f9010`
+- **tipo:** html
+- **actualizada:** 2026-09-30T18:14:38.696Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Enviar como accion del formulario: https://funnel.dgdesignmodeling.com/acceso-gratis-cotizador-honorarios-form
+Banner y logo en base64. La portada se carga desde el CDN de GHL.
+Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+-->
+Calcula tu tarifa mínima por hora, las horas del proyecto y arma la propuesta en PDF con los impuestos de tu país.
+Registro confirmado &middot; 100% gratis
+Cotizador de Honorarios Estructurales
+Hola {{contact.first_name}} ,
+Gracias por registrarte. Ya tienes acceso al Cotizador de Honorarios Estructurales : calcula tu tarifa m&iacute;nima por hora, las horas del proyecto y arma la propuesta en PDF con los impuestos de tu pa&iacute;s.
+Abrir el Cotizador de Honorarios &#8594;
+Se abre en tu comunidad DMA &middot; sin costo y sin tarjeta
+Tres pasos para sacarle provecho
+La mayor&iacute;a se registra y nunca lo usa. Estos tres pasos son la diferencia.
+01
+Pru&eacute;balo con un proyecto real
+&Aacute;brelo con los m&sup2; y el alcance de un proyecto que tengas por cotizar. Ver tu precio real con tus propios n&uacute;meros es lo que hace que lo vuelvas a usar.
+02
+Gu&aacute;rdalo en el celular
+A&ntilde;ade el enlace a favoritos o a la pantalla de inicio del tel&eacute;fono: sirve para cotizar en reuniones con el cliente, cuando no tienes el computador cerca.
+03
+Compara con lo que cobras hoy
+Pon al lado tu tarifa actual por m&sup2; y mira cu&aacute;nto ganas de verdad por hora. Ah&iacute; se ve si est&aacute;s cobrando de menos.
+Tambi&eacute;n es gratis
+&Uacute;nete a la Comunidad Design Premium
+Masterclasses en vivo, plantillas descargables y networking con ingenieros y arquitectos
+de toda Latinoam&eacute;rica. Sin costo y sin tarjeta.
+Entrar gratis a la Comunidad &#8594;
+&iquest;No se abre o no encuentras el acceso?
+Revisa primero las carpetas de spam y promociones. Si aun as&iacute; no aparece,
+escr&iacute;benos y te damos el acceso al instante.
+Escribir por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
 ```
 
 ### CODX TEMPLATE editorContent
@@ -13996,7 +14041,7 @@ designmodelingacademy.com
 
 - **id:** `6aa30ad196b1ac287473a07e`
 - **tipo:** html
-- **actualizada:** 2026-09-11T17:13:51.686Z
+- **actualizada:** 2026-09-30T18:12:57.055Z
 - **Cuerpo:**
 
 ```
