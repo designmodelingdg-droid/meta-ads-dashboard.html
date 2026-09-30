@@ -11,7 +11,8 @@
   "test": "https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form",
   "blog": "https://funnel.dgdesignmodeling.com/blog",
   "comunidad": "https://designmodelingacademy.app.clientclub.net/communities/groups/comunidad-design/home",
-  "acero": "https://designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero"
+  "acero": "https://designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero",
+  "cotizador": "https://funnel.dgdesignmodeling.com/acceso-gratis-cotizador-honorarios-form"
  },
  "secuencias": [
   {
@@ -525,6 +526,105 @@
      },
      "imagen": "La ruta de 4 credenciales.",
      "nota": "NUNCA el precio del Máster. Este correo pide una conversación, no una compra."
+    }
+   ]
+  },
+  {
+   "id": "S5",
+   "carpeta": "⛔ SEGUIMIENTO COTIZADOR DE HONORARIOS",
+   "quien": "Quien entra al Cotizador de Honorarios Estructurales (etiqueta lead-cotizador): ingenieros que cotizan diseño estructural por su cuenta.",
+   "objetivo": "Que use el cotizador con sus números, que mande una propuesta mejor, y que vea que cobrar más empieza por poder aceptar proyectos más grandes: el puente es la Especialización en Acero (o el Diplomado en Estructuras si no trabaja con acero).",
+   "duracion": "4 correos · 10 días",
+   "salida": "Sale si responde, agenda, compra o pide baja. Si compra Acero, pasa a S4.",
+   "correos": [
+    {
+     "n": 1,
+     "cuando": "Inmediato",
+     "plantilla": "NUEVA · COTIZA-01 Tu cotizador",
+     "asunto": "Tu cotizador de honorarios (y el primer número que cambiar)",
+     "preencabezado": "Antes de usar el ejemplo, pon tus horas.",
+     "cuerpo": [
+      "Hola {{contact.first_name}},",
+      "Aquí tienes otra vez el acceso al Cotizador de Honorarios, por si cerraste la pestaña.",
+      "Un consejo antes de usarlo: las horas por entregable que trae cargadas son un ejemplo. Cámbialas por las tuyas. Con tus horas, el número de «cuánto cobras por hora» deja de ser nuestro y pasa a ser tuyo.",
+      "Empieza por la tarjeta 1: lo que quieres ganar al mes, lo que te cuesta trabajar y cuántas horas de verdad le cobras a un cliente. Casi siempre son menos de las que crees.",
+      "Un abrazo,",
+      "Equipo Design Modeling Academy"
+     ],
+     "cta": {
+      "texto": "ABRIR MI COTIZADOR",
+      "enlace": "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/cotizador-honorarios/app.html?acceso=dm2026"
+     },
+     "imagen": "La tarjeta del cotizador (misma imagen del hub).",
+     "nota": "Refuerza el acceso: no se promete ningún archivo adjunto."
+    },
+    {
+     "n": 2,
+     "cuando": "Día 2",
+     "plantilla": "NUEVA · COTIZA-02 Lo que no se escribe",
+     "asunto": "Lo que no está en tu propuesta te lo piden gratis",
+     "preencabezado": "Las 5 líneas que evitan la tercera ronda de cambios.",
+     "cuerpo": [
+      "Hola {{contact.first_name}},",
+      "La mayoría de las discusiones con un cliente no son por el precio. Son por lo que la propuesta no decía.",
+      "Cinco líneas que tu propuesta tiene que tener siempre:",
+      "1. El alcance, entregable por entregable.",
+      "2. Cuántas rondas de revisión incluye.",
+      "3. Lo que NO incluye: suelos, topografía, instalaciones, dirección de obra.",
+      "4. Los hitos de pago en porcentaje.",
+      "5. La validez de la oferta.",
+      "El cotizador ya las pone en el PDF. Solo tienes que marcar las tuyas.",
+      "Un abrazo,",
+      "Equipo Design Modeling Academy"
+     ],
+     "cta": {
+      "texto": "ARMAR MI PROPUESTA",
+      "enlace": "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/cotizador-honorarios/app.html?acceso=dm2026"
+     },
+     "imagen": "Captura real de la primera página de la propuesta (cotizador-honorarios/img/propuesta.jpg).",
+     "nota": ""
+    },
+    {
+     "n": 3,
+     "cuando": "Día 5",
+     "plantilla": "NUEVA · COTIZA-03 Lo caro",
+     "asunto": "Lo caro no es el curso",
+     "preencabezado": "Es el proyecto que no pudiste aceptar.",
+     "cuerpo": [
+      "Hola {{contact.first_name}},",
+      "En las llamadas con ingenieros lo escuchamos seguido: rechazaron una nave, un edificio más alto o una estructura de acero porque no sabían calcularla, o dependían de un externo que cobraba aparte y tardaba.",
+      "Uno nos contó que en dos años dijo que no a unos 8 proyectos.",
+      "Cobrar mejor tiene dos caminos: cobrar bien lo que ya haces, que es para lo que sirve el cotizador, y poder aceptar lo que hoy rechazas.",
+      "Si trabajas con acero, la Especialización en Diseño Estructural BIM en Acero es eso: cálculo y diseño sismorresistente, uniones y naves en Revit, Robot y Advance Steel, 4 certificaciones oficiales de Autodesk y un tutor de IA entrenado con las clases. Cuesta $225.",
+      "Un abrazo,",
+      "Equipo Design Modeling Academy"
+     ],
+     "cta": {
+      "texto": "VER LA ESPECIALIZACIÓN",
+      "enlace": "https://designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero"
+     },
+     "imagen": "Pieza de la Especialización en Acero (la del anuncio ganador).",
+     "nota": "Único correo con precio: la regla de la casa permite el precio de Acero en correo a lista propia."
+    },
+    {
+     "n": 4,
+     "cuando": "Día 10",
+     "plantilla": "NUEVA · COTIZA-04 Una pregunta",
+     "asunto": "¿Cuánto te salió?",
+     "preencabezado": "Respóndeme con un número.",
+     "cuerpo": [
+      "Hola {{contact.first_name}},",
+      "Una pregunta corta: cuando pusiste tus números en el cotizador, ¿cuánto te salió por hora?",
+      "Respóndeme con el número, sin más. Si te salió menos de lo que esperabas, te cuento en una llamada corta qué harían otros ingenieros en tu lugar, y si te sirve el Acero o el Diplomado en Estructuras.",
+      "Un abrazo,",
+      "Equipo Design Modeling Academy"
+     ],
+     "cta": {
+      "texto": "AGENDAR UNA LLAMADA",
+      "enlace": "https://funnel.dgdesignmodeling.com/acceso-gratis-cotizador-honorarios-gracias"
+     },
+     "imagen": "Sin imagen: correo corto, que parezca escrito a mano.",
+     "nota": "La respuesta la lee el setter: quien contesta con un número es lead caliente."
     }
    ]
   }
