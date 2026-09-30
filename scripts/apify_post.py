@@ -48,6 +48,13 @@ def main():
     pedido = json.loads(pathlib.Path(sys.argv[1]).read_text(encoding="utf-8"))
     url = pedido["url"].split("?")[0]
     tope = min(float(pedido.get("tope_usd", 0.10)), 0.25)
+    # Un pedido ya servido no se vuelve a cobrar: al fusionar la rama, el mismo
+    # pedido llega a la rama por defecto y el workflow corre otra vez (pasó el
+    # 30-sep con el post de Juan Lombana). Para refrescarlo: "forzar": true.
+    ya = SAL / f"post-{url.rstrip('/').split('/')[-1]}.json"
+    if ya.exists() and not pedido.get("forzar"):
+        print(f"Ya existe {ya.relative_to(R)}: no se vuelve a pedir a Apify.")
+        return
     items = actor("apify~instagram-scraper", {"directUrls": [url], "resultsType": "posts", "resultsLimit": 1,
                                               "addParentData": False}, tope)
     if not items:

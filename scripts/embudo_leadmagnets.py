@@ -59,7 +59,10 @@ EMBUDOS = {
                            ("acceso", "acceso-verificacion")]},
     "NIVEL":   {"recurso": "Test de nivel BIM",
                 "etapas": [("bot", "origen-bot-nivel"), ("lead", "lead-test-nivel"),
-                           ("acceso", "acceso-test-nivel")]},
+                           # La rama TEST NIVEL del workflow «NEW Acceso y Descarga»
+                           # pone acceso-nivelbim, no acceso-test-nivel (revisado en GHL
+                           # el 30-sep). Contar la otra dio «0 accesos» en la auditoría.
+                           ("acceso", "acceso-nivelbim")]},
     # Dos workflows se disparan con el formulario del cotizador (30-sep):
     # «Lead magnet · Cotizador de Honorarios» pone lead-cotizador y
     # origen-landing-cotizador; la rama COTIZADOR del workflow de recursos de

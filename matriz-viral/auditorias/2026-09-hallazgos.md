@@ -45,7 +45,7 @@
 3. **El carrusel de las 4 puertas** (23-sep, «la pieza del mes» en la matriz): 1.986 vistas, 2 comentarios y 1 DM de RUTA.
 4. **Posts sin gancho ni palabra** (3, 7 y 29-sep): 0 a 2 comentarios.
 5. **Las 3 campañas de pauta «LEAD MAGNETS»:** $77 gastados, 0 leads de formulario y 7 conversaciones. Se apagan o se rehacen con el anuncio del dato de cálculo.
-6. **NIVEL** (Test de Nivel → Máster): 2 al bot, 1 lead y 0 accesos en todo el mes. El CTA del Máster en octubre depende de esta palabra (ver «Roto», punto 5).
+6. **NIVEL** (Test de Nivel → Máster): solo 2 personas la pidieron en el mes. *Corregido el 30-sep:* el «0 accesos» era un error de medición, no de GHL (ver «Roto», punto 5). El problema real es de volumen: casi nadie la pidió.
 
 ## Qué está roto (arreglar antes de publicar en octubre)
 
@@ -55,13 +55,16 @@
    - **Regla nueva: una palabra, una sola automatización.** Si la palabra tiene embudo en GHL (ZAPATA, ACERO, NIVEL, MEMORIA, DYNAMO, COTIZA), se pausa su campaña en OpenReply, o al revés, pero nunca las dos.
 2. **DYNAMO**, el mismo choque: OpenReply falla 4 de 4 porque GHL contesta primero.
 3. **BIM e IA como palabra de un recurso** (checklist de Navisworks): 3 fallidos de 5. BIM e IA son las palabras del bot de ventas del Máster, así que no se usan para recursos.
-4. **ACERO: de 174 leads, solo 43 llegan al acceso (25 %)**, cuando ZAPATA llega al 89 %. Hay dos posibilidades:
-   - la landing de las 5 verificaciones pierde gente;
-   - la etiqueta de acceso no se pone siempre.
-
-   Hay que hacer una prueba de punta a punta esta semana. Octubre pide ACERO en 6 piezas.
-5. **NIVEL no entrega acceso** (0). Hay que probar el workflow «Comentario NIVEL - Test de Nivel BIM» antes del 12-oct, porque es el CTA de todas las piezas del Máster.
-6. **Las automatizaciones del repositorio estuvieron paradas del 27 al 30-sep**, por la suspensión de la cuenta de GitHub.
+4. **ACERO: de 174 leads, solo 43 llegan al acceso (25 %)**, cuando ZAPATA llega al 89 %.
+   - *Revisado en GHL el 30-sep:* el flujo funciona. El workflow «Comentario ACERO» manda al enlace correcto y el formulario pone `acceso-verificacion`.
+   - La caída es de gente que recibe el DM y no llena el formulario. Además, el DM de Instagram solo se entrega dentro de las 24 h del comentario.
+   - No está roto, **convierte poco**. La tarea es acortar el formulario y sumar un recordatorio. Octubre pide ACERO en 6 piezas.
+5. ~~NIVEL no entrega acceso~~ **Error de medición, corregido el 30-sep.**
+   - El flujo funciona: la rama TEST NIVEL pone `acceso-nivelbim`, y el embudo contaba `acceso-test-nivel`.
+   - Ya se cuenta la etiqueta correcta en `embudo_leadmagnets.py`.
+6. **En GHL siguen publicados dos workflows de accesos:** «✅ OLD Acceso y Descarga PDF Recursos Gratis» (61 inscritos) y el NEW. Pueden estar mandando el acceso dos veces. Hay que revisar y despublicar el OLD.
+7. **BIM e IA ya las contesta GHL** con los workflows GENERICO (Instagram y Facebook/TikTok). Por eso chocaron las campañas de OpenReply que usaban BIM/IA para un recurso (el checklist de Navisworks).
+8. **Las automatizaciones del repositorio estuvieron paradas del 27 al 30-sep**, por la suspensión de la cuenta de GitHub.
    - Las historias del 26 al 28-sep no se midieron y ya no se pueden recuperar: la API las borra a las 24 h.
    - Se relanzaron a mano el 30-sep. Hay que confirmar que las programadas vuelven solas: la de historias corre cada 4 h, a los :17.
 
@@ -82,6 +85,6 @@
 
 - Palabras de octubre: NIVEL, ACERO, ZAPATA, MEMORIA, COTIZA y DIPLOMADO, **cada una con una sola automatización**.
 - **COTIZA** se monta en **una** herramienta. Hoy tiene la respuesta de Facebook en GHL; en Instagram va OpenReply o GHL, no las dos.
-- Primero se prueban de punta a punta NIVEL y ACERO: son el CTA del Máster y el de Acero.
+- NIVEL y ACERO ya están revisados (30-sep): funcionan. En ACERO hay que subir la conversión del DM al formulario.
 - El formato ganador se repite: un dato verificable y un tutorial paso a paso con palabra (los dos mejores del mes).
 - Los anuncios de producto («ahora tiene X») no van solos: siempre llevan detrás un problema.
