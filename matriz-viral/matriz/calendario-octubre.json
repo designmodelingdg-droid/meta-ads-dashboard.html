@@ -1,0 +1,1980 @@
+{
+ "mes": "2026-10",
+ "subtitulo": "Del lunes 5 al domingo 1 de noviembre · calendarios por grupo, misma información adaptada a cada canal · escrita para vender Máster y Especialización en ACERO",
+ "reglas_del_mes": [
+  "REGLA DE ORO: todos los grupos comparten la misma información la misma semana, adaptada a cada canal. El feed del lunes alimenta comunidades, historias, LinkedIn y el correo de la semana.",
+  "FEED: 19 piezas · formato 7 reels / 8 carruseles / 4 posts (40/40/20) · intención 9 problema / 4 solución / 6 objeción o testimonio (50/20/30, del análisis de compradores del 29-sep).",
+  "A QUIÉN LE HABLAMOS: cada pieza nombra a un perfil comprador de COMPRADORES-VS-NO.md. Si no le habla a ninguno, no entra.",
+  "EL PATRÓN: acusar un hábito concreto (8,61 comentarios por 1.000 vistas contra 0,54) o dar un dato de cálculo verificable (DM168: 130 comentarios, 611 guardados). Nada de «la IA te va a reemplazar» (0 comentarios en julio).",
+  "POST PLANO = SOLO CON DATO VERIFICABLE, con su fuente en las notas de producción.",
+  "Mínimo 60 % en el NÚCLEO (BIM / IA / modelado / acero). Cero OBRA.",
+  "NINGUNA pieza repite un id o un gancho ya usado (historico-2026.json).",
+  "PALABRAS DE COMENTARIO — SOLO ESTAS: NIVEL (Máster), ACERO, ZAPATA, MEMORIA, COTIZA (nueva) y DIPLOMADO (lanzamiento del tutor, si está montada). CHATGPT queda fuera: no tiene quien conteste. BIM e IA siguen siendo el bot de ventas del Máster.",
+  "UNA PALABRA, UNA AUTOMATIZACIÓN (auditoría de septiembre): MEMORIA la escuchaban dos campañas de OpenReply y un workflow de GHL y fallaron 30 DM; DYNAMO falló 4 de 4. Antes de publicar una pieza con palabra, se confirma que la contesta UNA sola herramienta.",
+  "BIM e IA NUNCA como palabra de un recurso: son el bot de ventas del Máster (el checklist de Navisworks falló 3 de 5).",
+  "DYNAMO fuera de los CTA de octubre: 0 comentarios en su reel y falla en OpenReply.",
+  "LOS DOS FORMATOS GANADORES DE SEPTIEMBRE se repiten: el dato de cálculo verificable (cuantía mínima: 44.589 vistas, 146 comentarios, 163 seguidores) y el tutorial paso a paso con palabra (plano 2D → BIM: 99 comentarios, 47 DM). Anunciar un producto («ahora tiene X») nunca va solo: siempre detrás de un problema.",
+  "UNA venta por semana, el jueves, en historias: 8 tutor · 15 objeción de ACERO · 22 espejo del Máster · 29 ACERO por dentro.",
+  "EL MÁSTER NUNCA LLEVA PRECIO. ACERO lleva $225 solo en pauta y en correo a la lista propia.",
+  "Visuales = capturas reales de Revit/Robot y cámara de Gabriel. Imagen con IA solo con aprobación y costo a la vista.",
+  "Reels de menos de 30 s (en esta cuenta rinden más del doble que los de 30–60 s)."
+ ],
+ "checklist_tareas": [
+  {
+   "tarea": "Decidir y dejar UNA sola automatización por palabra: MEMORIA (hoy 2 campañas de OpenReply + GHL), DYNAMO (OpenReply + GHL) y COTIZA (se monta en una sola). Recomendación: GHL para las palabras con embudo, OpenReply solo para las sueltas.",
+   "desbloquea": "Que el DM no falle («no eres el dueño de la conversación»)",
+   "cuando": "antes del lunes 5",
+   "para": "Dayana"
+  },
+  {
+   "tarea": "Prueba de punta a punta de ACERO (comentar → DM → landing de las 5 verificaciones → etiqueta acceso-verificacion): en septiembre solo 43 de 174 leads llegaron al acceso.",
+   "desbloquea": "Las 6 piezas de octubre que piden ACERO (la primera el Vie 9)",
+   "cuando": "antes del 9-oct",
+   "para": "Ester y Aylin"
+  },
+  {
+   "tarea": "Prueba de punta a punta de NIVEL (comentar → DM → test → etiqueta acceso-test-nivel): en septiembre 0 accesos.",
+   "desbloquea": "El CTA de todas las piezas del Máster (la primera, la historia del creador del Jue 8)",
+   "cuando": "antes del 8-oct",
+   "para": "Ester y Aylin"
+  },
+  {
+   "tarea": "Llenar los 7 datos personales del carrusel «Si acabas de llegar: hola, soy Gabriel» (edad, familia, fan de, origen, el momento del cambio, año de fundación y número REAL de alumnos) y juntar las fotos reales: clase, obra, época de AutoCAD/Excel.",
+   "desbloquea": "El carrusel del Jue 8, que se fija en el perfil",
+   "cuando": "antes del 6-oct",
+   "para": "Gabriel"
+  },
+  {
+   "tarea": "Apagar las 3 campañas «[25AGOSTO] LEAD MAGNETS» y pasar ese presupuesto a ACERO.",
+   "desbloquea": "$77 al mes que hoy no traen leads",
+   "cuando": "antes del lunes 5",
+   "para": "Olympus"
+  },
+  {
+   "tarea": "Confirmar que las tareas automáticas del repositorio volvieron solas (historias cada 4 h a los :17; métricas lunes y viernes). Estuvieron paradas del 27 al 30-sep por la suspensión de GitHub.",
+   "desbloquea": "Que la auditoría de octubre tenga las historias de todos los días",
+   "cuando": "1-oct",
+   "para": "Dayana"
+  },
+  {
+   "tarea": "Limpiar las 5 destacadas del perfil: quitar los frames que piden CHATGPT o DYNAMO, los que tienen fechas, cupos o precios vencidos, y revisar que las portadas sigan iguales y legibles.",
+   "desbloquea": "Que quien llega nuevo al perfil no pida un recurso que nadie contesta",
+   "cuando": "antes del lunes 5",
+   "para": "Daniela"
+  },
+  {
+   "tarea": "Cada viernes, guardar en su destacada las historias de la semana (columna «Destacada» del Grupo 5 y bloque «destacadas» del calendario).",
+   "desbloquea": "Destacadas al día sin una jornada de limpieza a fin de mes",
+   "cuando": "viernes 9, 16, 23 y 30",
+   "para": "Daniela"
+  },
+  {
+   "tarea": "Volver a pegar cotizador-honorarios/ghl-landing.html en la página 1 del funnel: ya trae el formulario nativo (CAekHpib0yvjFbYvxx1m). Sin eso, los leads siguen entrando por el webhook de Zapatas y no pasan por la rama COTIZADOR del workflow de recursos. Poner Ecuador como país por defecto del teléfono. Borrar el contacto «Prueba Cotizador». Revisar la plantilla «Acceso Pack Dynamo_01».",
+   "desbloquea": "Que el lead reciba el correo de acceso, la comunidad, la membresía y la secuencia S5",
+   "cuando": "antes del 13-oct",
+   "para": "Ester y Aylin"
+  },
+  {
+   "tarea": "Gabriel revisa las horas de ejemplo del cotizador (app.html, ENTREGABLES).",
+   "desbloquea": "Reel del Mar 13 y carrusel del Jue 15",
+   "cuando": "antes del 12-oct",
+   "para": "Gabriel"
+  },
+  {
+   "tarea": "Día de grabación 1: reels del 13, 14, 20 y 21 (+ tablero físico del ranking).",
+   "desbloquea": "Semanas 2 y 3 del feed",
+   "cuando": "Jue 8-oct",
+   "para": "Gabriel"
+  },
+  {
+   "tarea": "Día de grabación 2: reels del 27 y 28 (testimonio o pieza de reserva) + capturas de Robot para el carrusel del 29.",
+   "desbloquea": "Semana 4 del feed",
+   "cuando": "Jue 22-oct",
+   "para": "Gabriel"
+  },
+  {
+   "tarea": "Conseguir un alumno de ACERO con permiso por escrito para el testimonio.",
+   "desbloquea": "Reel del Mié 28",
+   "cuando": "antes del 21-oct",
+   "para": "Dayana / soporte"
+  },
+  {
+   "tarea": "Confirmar la lista exacta de certificados del Máster y pasar los escaneos oficiales.",
+   "desbloquea": "Carrusel del Jue 22",
+   "cuando": "antes del 19-oct",
+   "para": "Dayana"
+  },
+  {
+   "tarea": "Montar la palabra DIPLOMADO (o dejar el CTA en DM).",
+   "desbloquea": "Lanzamiento del tutor 5–9 oct",
+   "cuando": "antes del 5-oct",
+   "para": "Patricio"
+  },
+  {
+   "tarea": "Crear la campaña COTIZA en OpenReply atada al post justo después de publicar, y la de Facebook en GHL; probar con una cuenta ajena.",
+   "desbloquea": "Que el comentario COTIZA reciba el DM",
+   "cuando": "13 y 15-oct, al publicar",
+   "para": "Patricio"
+  },
+  {
+   "tarea": "Pauta: aplicar las 6 decisiones de la sección de publicidad (WhatsApp de ACERO, pausar anuncios cansados, presupuesto, optimización del Máster, borradores, filtros).",
+   "desbloquea": "Que la pauta vuelva a traer compradores",
+   "cuando": "semana del 5-oct",
+   "para": "Olympus"
+  },
+  {
+   "tarea": "Subir los anuncios nuevos de octubre como reemplazo de los cansados.",
+   "desbloquea": "Pauta de las semanas 3 y 4",
+   "cuando": "Lun 19-oct (tutor: Lun 12)",
+   "para": "Olympus"
+  },
+  {
+   "tarea": "Montar la secuencia de correo S5 · SEGUIMIENTO COTIZADOR (matriz-viral/seguimiento/correos-nutricion.json).",
+   "desbloquea": "Seguimiento de los leads del cotizador",
+   "cuando": "antes del 13-oct",
+   "para": "Ester y Aylin"
+  },
+  {
+   "tarea": "Publicar los 3 blogs (17, 24 y 31) con su post de anuncio.",
+   "desbloquea": "G3 del mes",
+   "cuando": "cada sábado",
+   "para": "equipo de contenido"
+  }
+ ],
+ "publicidad": {
+  "nota": "Primero se corrige lo que hace perder leads (7 decisiones: las 6 del diagnóstico de Dayana y la de la auditoría de septiembre); después los anuncios nuevos reemplazan a los cansados. Fichas completas por anuncio abajo.",
+  "campanas": [
+   {
+    "nombre": "ACERO · formulario (campaña [AGOSTO] ESPE.1 ACERO - FORM, geo-split)",
+    "piezas": [
+     {
+      "id": "oct-ang-ads-acero-a-naves",
+      "titulo": "Acero A · Las naves que rechazas",
+      "campana": "ACERO · formulario (campaña [AGOSTO] ESPE.1 ACERO - FORM, geo-split)",
+      "precio": "$225 USD",
+      "formato": "anuncio",
+      "hook": "¿Cuántas naves industriales dijiste que no porque no sabías calcularlas?",
+      "cuerpo": "¿Cuántas naves industriales dijiste que no porque no sabías calcularlas?\n\nCada proyecto que rechazas, o que le pasas a un ingeniero externo, lo hace otro. Y el siguiente también se lo piden a él.\n\nEn la Especialización en Diseño Estructural BIM en Acero aprendes a hacerlo tú:\n✅ Cálculo estructural y diseño sismorresistente\n✅ Uniones, naves industriales, edificaciones y viviendas\n✅ Todo en BIM: Revit, Robot y Advance Steel\n✅ 4 certificaciones oficiales de Autodesk\n✅ Tutor de IA entrenado con las clases del programa\n\n💲 $225 USD.\n📝 Llena el formulario y vemos si tu perfil calza con la especialización 👇",
+      "titular": "Deja de rechazar proyectos de acero",
+      "descripcion": "Cálculo y diseño en acero con BIM + 4 certificaciones Autodesk",
+      "creativo": "Video pizarrón 9:16 de 20 s (skill video-pizarra) + imagen 4:5: una nave en línea fina con un sello «RECHAZADO» que se tacha y pasa a «CALCULADO».",
+      "guion": [
+       [
+        "0:00-0:03",
+        "Se dibuja una nave de pórticos; aparece un sello rojo «NO».",
+        "¿Cuántas naves dijiste que no porque no sabías calcularlas?",
+        "¿CUÁNTAS DIJISTE QUE **NO**?"
+       ],
+       [
+        "0:03-0:08",
+        "Una flecha lleva la nave a otra mano con casco.",
+        "Cada una que rechazas la hace otro. Y la próxima también se la piden a él.",
+        "LA HACE **OTRO**"
+       ],
+       [
+        "0:08-0:15",
+        "La nave pasa a una pantalla con Robot; se marcan uniones con checks.",
+        "En la Especialización en Acero aprendes a calcularla tú: sismo, uniones y planos, todo en BIM.",
+        "CALCÚLALA **TÚ**"
+       ],
+       [
+        "0:15-0:20",
+        "Placa final con logo DMA y 4 sellos Autodesk.",
+        "Cuatro certificaciones de Autodesk. Llena el formulario y vemos si calzas.",
+        "LLENA EL **FORMULARIO**"
+       ]
+      ],
+      "prompt": "",
+      "cfg": [
+       [
+        "Botón",
+        "Registrarte (formulario)"
+       ],
+       [
+        "Público",
+        "Igual a la campaña 🔴 [AGOSTO] ESPE.1 ACERO - FORM (geo-split: EC · MX · Resto). Intereses: Revit, Autodesk Robot Structural Analysis, SAP2000, ingeniería estructural, estructuras metálicas. EXCLUIR: alumnos de Acero (lista GHL inscrito-especializaciones)."
+       ],
+       [
+        "Qué medir",
+        "CPL, CTR y, sobre todo, ventas de Acero por cada 100 leads (etiqueta venta-acero en GHL). Las variantes en el MISMO conjunto. No decidir antes de 7 días completos. Lo que importa es la venta: en jul-sep el WhatsApp directo vendió 0,7 por cada 100 leads y el formulario 0,4."
+       ],
+       [
+        "Creativo listo (4:5 y 9:16)",
+        "matriz-viral/entregables/pauta-octubre/oct-ang-ads-acero-a-naves-4x5.png · matriz-viral/entregables/pauta-octubre/oct-ang-ads-acero-a-naves-9x16.png"
+       ]
+      ],
+      "condicion": "",
+      "creativos_png": [
+       "matriz-viral/entregables/pauta-octubre/oct-ang-ads-acero-a-naves-4x5.png",
+       "matriz-viral/entregables/pauta-octubre/oct-ang-ads-acero-a-naves-9x16.png"
+      ]
+     },
+     {
+      "id": "oct-ang-ads-acero-b-obra-software",
+      "titulo": "Acero B · De la obra al software",
+      "campana": "ACERO · formulario (campaña [AGOSTO] ESPE.1 ACERO - FORM, geo-split)",
+      "precio": "$225 USD",
+      "formato": "anuncio",
+      "hook": "Sabes montar una estructura de acero. ¿Por qué todavía no la calculas tú?",
+      "cuerpo": "Sabes montar una estructura de acero. ¿Por qué todavía no la calculas tú?\n\nLa experiencia de obra vale oro cuando pasas al lado que decide: modelar la estructura, calcularla y verificar las uniones antes de que llegue a obra.\n\nOjo: no es un curso de soldadura ni de fabricación. Es para quien quiere diseñar y calcular estructuras de acero en software (Revit, Robot, Advance Steel).\n\n✅ Cálculo y diseño sismorresistente\n✅ Naves industriales, edificaciones y uniones\n✅ 4 certificaciones oficiales de Autodesk\n✅ Tutor de IA con las clases del programa\n\n💲 $225 USD.\n📝 Llena el formulario y vemos si tu perfil calza 👇",
+      "titular": "De montar acero a calcularlo",
+      "descripcion": "Especialización en Diseño Estructural BIM en Acero",
+      "creativo": "Imagen 4:5 partida en dos: foto REAL de obra de acero (con permiso) | pantallazo REAL del mismo tipo de estructura en Revit. Versión video pizarrón 15 s opcional.",
+      "prompt": "",
+      "cfg": [
+       [
+        "Botón",
+        "Registrarte (formulario)"
+       ],
+       [
+        "Público",
+        "Igual a la campaña 🔴 [AGOSTO] ESPE.1 ACERO - FORM (geo-split: EC · MX · Resto). Intereses: Revit, Autodesk Robot Structural Analysis, SAP2000, ingeniería estructural, estructuras metálicas. EXCLUIR: alumnos de Acero (lista GHL inscrito-especializaciones)."
+       ],
+       [
+        "Qué medir",
+        "CPL, CTR y, sobre todo, ventas de Acero por cada 100 leads (etiqueta venta-acero en GHL). Las variantes en el MISMO conjunto. No decidir antes de 7 días completos. Lo que importa es la venta: en jul-sep el WhatsApp directo vendió 0,7 por cada 100 leads y el formulario 0,4. Mirar aparte cuántos leads de esta variante responden «fabricarlas/soldarlas» en el formulario: si baja frente a las otras, el filtro del texto funciona."
+       ],
+       [
+        "Por qué",
+        "En el formulario de Acero, 139 personas de obra quieren pasar al software (una compró) y 227 quieren fabricar o soldar (ninguna compró). El texto habla a los primeros y descarta a los segundos."
+       ]
+      ],
+      "condicion": ""
+     },
+     {
+      "id": "oct-ang-ads-acero-c-otro-curso",
+      "titulo": "Acero C · Otro curso más, no",
+      "campana": "ACERO · formulario (campaña [AGOSTO] ESPE.1 ACERO - FORM, geo-split)",
+      "precio": "$225 USD",
+      "formato": "anuncio",
+      "hook": "¿Ya viste tutoriales de acero y todavía no te atreves con un proyecto completo?",
+      "cuerpo": "¿Ya viste tutoriales de acero y todavía no te atreves con un proyecto completo?\n\nLos videos te enseñan dónde está cada botón. No te enseñan el orden: qué calculas primero, qué verificas y qué le entregas al cliente.\n\nEn la Especialización en Acero haces el proyecto de principio a fin: cargas, sismo, uniones y planos, en Revit, Robot y Advance Steel. Y cuando te trabas, el tutor de IA del programa te dice en qué lección y minuto se explicó.\n\n✅ 4 certificaciones oficiales de Autodesk\n💲 $225 USD.\n📝 Llena el formulario y vemos si tu perfil calza 👇",
+      "titular": "Un proyecto de acero completo, no botones sueltos",
+      "descripcion": "Con tutor de IA entrenado con las clases",
+      "creativo": "El reel orgánico oct-obj-cursos-youtube-reel recortado a 20 s (sin la palabra ACERO al final: placa «Llena el formulario») + 4:5 con el pantallazo real del tutor respondiendo.",
+      "prompt": "",
+      "cfg": [
+       [
+        "Botón",
+        "Registrarte (formulario)"
+       ],
+       [
+        "Público",
+        "Igual a la campaña 🔴 [AGOSTO] ESPE.1 ACERO - FORM (geo-split: EC · MX · Resto). Intereses: Revit, Autodesk Robot Structural Analysis, SAP2000, ingeniería estructural, estructuras metálicas. EXCLUIR: alumnos de Acero (lista GHL inscrito-especializaciones)."
+       ],
+       [
+        "Qué medir",
+        "CPL, CTR y, sobre todo, ventas de Acero por cada 100 leads (etiqueta venta-acero en GHL). Las variantes en el MISMO conjunto. No decidir antes de 7 días completos. Lo que importa es la venta: en jul-sep el WhatsApp directo vendió 0,7 por cada 100 leads y el formulario 0,4."
+       ]
+      ],
+      "condicion": ""
+     }
+    ]
+   },
+   {
+    "nombre": "ACERO · WhatsApp directo (se vuelve a encender, ~$390/mes)",
+    "piezas": [
+     {
+      "id": "oct-ang-ads-acero-wa-prueba",
+      "titulo": "Acero · WhatsApp directo (se vuelve a encender)",
+      "campana": "ACERO · WhatsApp directo (se vuelve a encender, ~$390/mes)",
+      "precio": "$225 USD",
+      "formato": "anuncio",
+      "hook": "¿Cuántas naves industriales dijiste que no porque no sabías calcularlas?",
+      "cuerpo": "¿Cuántas naves industriales dijiste que no porque no sabías calcularlas?\n\nCada proyecto que rechazas, o que le pasas a un ingeniero externo, lo hace otro. Y el siguiente también se lo piden a él.\n\nEn la Especialización en Diseño Estructural BIM en Acero aprendes a hacerlo tú:\n✅ Cálculo estructural y diseño sismorresistente\n✅ Uniones, naves industriales, edificaciones y viviendas\n✅ Todo en BIM: Revit, Robot y Advance Steel\n✅ 4 certificaciones oficiales de Autodesk\n✅ Tutor de IA entrenado con las clases del programa\n\n💲 $225 USD.\n💬 Escríbenos por WhatsApp y vemos si tu perfil calza 👇",
+      "titular": "Deja de rechazar proyectos de acero",
+      "descripcion": "Escríbenos por WhatsApp",
+      "creativo": "Los ganadores vigentes de ACERO («ACERO 1», «AceroAI1-1V04/V05/V06») y el video de pizarrón de la variante A. Nada de anuncios de julio (frecuencia 2,74).",
+      "prompt": "",
+      "cfg": [
+       [
+        "Botón",
+        "Enviar mensaje (WhatsApp)"
+       ],
+       [
+        "Público",
+        "Conjunto de mensajes dentro de la campaña de ACERO, mismo geo-split (EC · MX · Resto) e intereses que el formulario. Presupuesto ~$390/mes (≈ $13/día), el de agosto. EXCLUIR alumnos de ACERO."
+       ],
+       [
+        "Qué medir",
+        "Ventas a $225 que vengan de estos chats, a los 7 y 14 días (no conversaciones). Referencia de agosto: $0,77 por conversación."
+       ],
+       [
+        "Mensaje de bienvenida (WhatsApp)",
+        "Hola, quiero información de la Especialización en Acero ($225 con Tutor de IA)."
+       ],
+       [
+        "Por qué",
+        "Diagnóstico de Dayana (30-sep): «[JUL] ESPE.1 ACERO – WSP SMS» trajo 510 conversaciones a $0,77 en agosto; al apagarla, los leads sin origen bajaron de 499 a 96 y septiembre cayó −17 % en leads con el mismo gasto. En julio-agosto el WhatsApp vendió 0,7 por cada 100 leads y el formulario 0,4. Por eso vuelve a encenderse junto al formulario, no como prueba."
+       ]
+      ],
+      "condicion": ""
+     }
+    ]
+   },
+   {
+    "nombre": "MÁSTER · una sola campaña ([14SEP] MASTER - FORM)",
+    "piezas": [
+     {
+      "id": "oct-ang-ads-master-a-revit-no-es-bim",
+      "titulo": "Máster A · Saber Revit no es saber BIM",
+      "campana": "MÁSTER · una sola campaña ([14SEP] MASTER - FORM)",
+      "precio": "sin precio (regla del Máster)",
+      "formato": "anuncio",
+      "hook": "Sabes Revit. Pero ¿sabes BIM? No es lo mismo, y los proyectos grandes lo notan.",
+      "cuerpo": "Sabes Revit. Pero ¿sabes BIM? No es lo mismo, y los proyectos grandes lo notan.\n\n«Siento que yo solo estoy en la parte de saber Revit, no saber BIM.» Nos lo dijo alguien que hoy es alumno del Máster.\n\nSaber el programa te hace modelador. Coordinar, gestionar el modelo con otras disciplinas y trabajar con estándares es lo que te sube de puesto.\n\nEl Máster Internacional BIM + IA va en 4 bloques: BIM Professional → BIM Coordination → BIM Management → BIM + IA.\n🔹 Título convalidado en EE.UU.\n🔹 Certificaciones oficiales de Autodesk\n🔹 12 meses, 100 % online\n\n👉 Llena el formulario: te hacemos un test de nivel BIM gratis para saber en qué bloque empiezas.",
+      "titular": "Del modelado a la coordinación BIM",
+      "descripcion": "Máster BIM + IA · 4 bloques · título convalidado en EE.UU.",
+      "creativo": "Video pizarrón 9:16 de 20 s: un modelo de Revit solo (un edificio) al que se le suman estructura, instalaciones y un tablero de coordinación; texto «REVIT ≠ BIM».",
+      "guion": [
+       [
+        "0:00-0:03",
+        "Un edificio simple se dibuja con el logo de Revit al lado.",
+        "Sabes Revit. Pero ¿sabes BIM?",
+        "¿REVIT **=** BIM?"
+       ],
+       [
+        "0:03-0:09",
+        "Al edificio se le suman capas: estructura, tuberías, ductos; aparecen choques marcados en rojo.",
+        "BIM es coordinar tu modelo con estructura, instalaciones y todo el equipo, sin choques.",
+        "COORDINAR **ES OTRA COSA**"
+       ],
+       [
+        "0:09-0:16",
+        "Una escalera de 4 peldaños: Professional → Coordination → Management → BIM + IA.",
+        "El Máster va en cuatro bloques, del modelado a la gestión, con IA al final.",
+        "4 BLOQUES"
+       ],
+       [
+        "0:16-0:20",
+        "Placa final con logo DMA.",
+        "Llena el formulario y te decimos en qué bloque empiezas.",
+        "TEST DE NIVEL **GRATIS**"
+       ]
+      ],
+      "prompt": "",
+      "cfg": [
+       [
+        "Botón",
+        "Registrarte (formulario)"
+       ],
+       [
+        "Público",
+        "Igual a la campaña 🔴 [14SEP] MASTER - FORM (geo-split). Los textos nuevos viven SOLO en esta campaña, no se duplican en otra (OCTUBRE-QUE-FUNCIONA §5: el canibalismo real estaba en el Máster). EXCLUIR: alumnos del Máster y del Diplomado."
+       ],
+       [
+        "Qué medir",
+        "CPL, costo por cita agendada y citas que llegan a la llamada. Mismo conjunto. No decidir antes de 7 días completos."
+       ],
+       [
+        "Por qué",
+        "Es la frase más repetida por compradores y la misma idea del anuncio «MásterBloque1-1V05» («¿Sabes usar Revit pero sientes que ahí se quedó tu crecimiento?»), que salió a $0,20 por lead, el más barato del Máster en la ventana."
+       ],
+       [
+        "Creativo listo (4:5 y 9:16)",
+        "matriz-viral/entregables/pauta-octubre/oct-ang-ads-master-a-revit-no-es-bim-4x5.png · matriz-viral/entregables/pauta-octubre/oct-ang-ads-master-a-revit-no-es-bim-9x16.png"
+       ]
+      ],
+      "condicion": "",
+      "creativos_png": [
+       "matriz-viral/entregables/pauta-octubre/oct-ang-ads-master-a-revit-no-es-bim-4x5.png",
+       "matriz-viral/entregables/pauta-octubre/oct-ang-ads-master-a-revit-no-es-bim-9x16.png"
+      ]
+     },
+     {
+      "id": "oct-ang-ads-master-b-concurso",
+      "titulo": "Máster B · El concurso que pedía BIM",
+      "campana": "MÁSTER · una sola campaña ([14SEP] MASTER - FORM)",
+      "precio": "sin precio (regla del Máster)",
+      "formato": "anuncio",
+      "hook": "Perdió el concurso antes de presentarse: pedían certificación BIM.",
+      "cuerpo": "Perdió el concurso antes de presentarse: pedían certificación BIM.\n\nNos lo contó un ingeniero en una llamada. Tenía experiencia, equipo y precio. No pasó el primer filtro.\n\nCada vez más concursos, clientes y empresas piden BIM. Nadie avisa cuando cambia el requisito: te enteras cuando ya te dejó fuera.\n\nEl Máster Internacional BIM + IA de Design Modeling:\n🔹 Título convalidado en EE.UU.\n🔹 Certificaciones oficiales de Autodesk\n🔹 4 bloques, del modelado a la gestión BIM, con IA\n🔹 Proyecto final sobre tu trabajo real\n\n👉 Llena el formulario y te hacemos un test de nivel BIM gratis.",
+      "titular": "Que no te deje fuera un requisito",
+      "descripcion": "Máster BIM + IA con título convalidado en EE.UU.",
+      "creativo": "Imagen 4:5: hoja de bases de concurso en línea fina con la fila «Requisito: certificación BIM» en ámbar y una ✗. Sin logos de entidades reales.",
+      "prompt": "",
+      "cfg": [
+       [
+        "Botón",
+        "Registrarte (formulario)"
+       ],
+       [
+        "Público",
+        "Igual a la campaña 🔴 [14SEP] MASTER - FORM (geo-split). Los textos nuevos viven SOLO en esta campaña, no se duplican en otra (OCTUBRE-QUE-FUNCIONA §5: el canibalismo real estaba en el Máster). EXCLUIR: alumnos del Máster y del Diplomado."
+       ],
+       [
+        "Qué medir",
+        "CPL, costo por cita agendada y citas que llegan a la llamada. Mismo conjunto. No decidir antes de 7 días completos."
+       ],
+       [
+        "Creativo listo (4:5 y 9:16)",
+        "matriz-viral/entregables/pauta-octubre/oct-ang-ads-master-b-concurso-4x5.png · matriz-viral/entregables/pauta-octubre/oct-ang-ads-master-b-concurso-9x16.png"
+       ]
+      ],
+      "condicion": "",
+      "creativos_png": [
+       "matriz-viral/entregables/pauta-octubre/oct-ang-ads-master-b-concurso-4x5.png",
+       "matriz-viral/entregables/pauta-octubre/oct-ang-ads-master-b-concurso-9x16.png"
+      ]
+     },
+     {
+      "id": "oct-ang-ads-master-c-trabajar-afuera",
+      "titulo": "Máster C · Trabajar para afuera sin moverte",
+      "campana": "MÁSTER · una sola campaña ([14SEP] MASTER - FORM)",
+      "precio": "sin precio (regla del Máster)",
+      "formato": "anuncio",
+      "hook": "¿Quieres trabajar para proyectos de afuera sin tener que irte de tu país?",
+      "cuerpo": "¿Quieres trabajar para proyectos de afuera sin tener que irte de tu país?\n\n«Mejores oportunidades laborales sin tener que movilizarme de mi país.» Es lo que buscaba una de las personas que entró al Máster.\n\nPara eso no basta con saber el programa: te piden trabajar con metodología BIM, coordinar con equipos de otros países y demostrarlo con algo más que un certificado de participación.\n\nEl Máster Internacional BIM + IA:\n🔹 Título convalidado en EE.UU.\n🔹 Certificaciones oficiales de Autodesk\n🔹 100 % online, 12 meses\n🔹 Proyecto final con defensa\n\n👉 Llena el formulario y te hacemos un test de nivel BIM gratis.",
+      "titular": "Trabaja para afuera desde tu país",
+      "descripcion": "Máster BIM + IA 100 % online",
+      "creativo": "Imagen 4:5: un escritorio con Revit abierto y un mapa en línea fina detrás con rutas ámbar hacia varios países. Foto real del escritorio de la academia si existe.",
+      "prompt": "",
+      "cfg": [
+       [
+        "Botón",
+        "Registrarte (formulario)"
+       ],
+       [
+        "Público",
+        "Igual a la campaña 🔴 [14SEP] MASTER - FORM (geo-split). Los textos nuevos viven SOLO en esta campaña, no se duplican en otra (OCTUBRE-QUE-FUNCIONA §5: el canibalismo real estaba en el Máster). EXCLUIR: alumnos del Máster y del Diplomado."
+       ],
+       [
+        "Qué medir",
+        "CPL, costo por cita agendada y citas que llegan a la llamada. Mismo conjunto. No decidir antes de 7 días completos."
+       ],
+       [
+        "Creativo listo (4:5 y 9:16)",
+        "matriz-viral/entregables/pauta-octubre/oct-ang-ads-master-c-trabajar-afuera-4x5.png · matriz-viral/entregables/pauta-octubre/oct-ang-ads-master-c-trabajar-afuera-9x16.png"
+       ]
+      ],
+      "condicion": "No prometer empleo ni salarios. El texto dice qué piden, no qué vas a conseguir.",
+      "creativos_png": [
+       "matriz-viral/entregables/pauta-octubre/oct-ang-ads-master-c-trabajar-afuera-4x5.png",
+       "matriz-viral/entregables/pauta-octubre/oct-ang-ads-master-c-trabajar-afuera-9x16.png"
+      ]
+     },
+     {
+      "id": "oct-ang-ads-master-r-tiempo",
+      "titulo": "Máster R · Retargeting: ¿una hora al día alcanza?",
+      "campana": "MÁSTER · una sola campaña ([14SEP] MASTER - FORM)",
+      "precio": "sin precio (regla del Máster)",
+      "formato": "anuncio",
+      "hook": "¿Llenaste el formulario del Máster y lo dejaste para «cuando tengas tiempo»?",
+      "cuerpo": "¿Llenaste el formulario del Máster y lo dejaste para «cuando tengas tiempo»?\n\nCasi todos los que estudian con nosotros trabajan, muchos en obra. Lo que funciona no es esperar un mes libre: son una o dos horas al día, con clases grabadas a tu ritmo.\n\nY el proyecto final lo haces sobre tu trabajo real, así que lo que estudias vuelve a tu escritorio.\n\n👉 Agenda tu cita y te decimos, con el test de nivel, cuánto tiempo te tomaría tu bloque.",
+      "titular": "Una o dos horas al día alcanzan",
+      "descripcion": "Máster BIM + IA · a tu ritmo",
+      "creativo": "El reel orgánico oct-obj-tiempo-reel recortado a 20 s, con placa final «Agenda tu cita».",
+      "prompt": "",
+      "cfg": [
+       [
+        "Botón",
+        "Registrarte (formulario) · o Enviar mensaje si el conjunto va a WhatsApp"
+       ],
+       [
+        "Público",
+        "Conjunto de retargeting dentro de 🔴 [14SEP] MASTER - FORM: leads del formulario del Máster de los últimos 60 días SIN cita agendada + interacción IG/FB 90 días. EXCLUIR alumnos."
+       ],
+       [
+        "Qué medir",
+        "Costo por cita agendada entre quienes ya eran leads. Frecuencia máxima 3 por semana."
+       ],
+       [
+        "Por qué",
+        "El tiempo aparece en 3 de 5 compradores como la duda antes de pagar, y el retargeting ataca a quien ya mostró interés."
+       ]
+      ],
+      "condicion": ""
+     }
+    ]
+   },
+   {
+    "nombre": "DIPLOMADO · Tutor IA (desde el 12)",
+    "piezas": [
+     {
+      "id": "oct-tutor-dip-ads-a-rebobinar",
+      "titulo": "Variante A · acusar el hábito",
+      "campana": "DIPLOMADO · Tutor IA (desde el 12)",
+      "precio": "sin precio (regla del Máster)",
+      "formato": "ANUNCIO · reel 9:16 (el del Mié 7) + 4:5",
+      "hook": "¿Todavía rebobinas una clase de dos horas para encontrar dónde explicaron el espectro sísmico?",
+      "cuerpo": "¿Todavía rebobinas una clase de dos horas para encontrar dónde explicaron el espectro sísmico?\n\nEn el Diplomado BIM en Estructuras le preguntas al tutor de IA con tus palabras y te responde con las clases del propio Diplomado, con la lección y el minuto exactos. Si algo no está en las clases, te lo dice.\n\nLlena el formulario y un asesor te cuenta cómo es el Diplomado.",
+      "titular": "Tu duda, con la lección y el minuto",
+      "descripcion": "Diplomado BIM en Estructuras",
+      "creativo": "El reel oct-tutor-dip-reel recortado a 30 s + versión 4:5 con la barra de reproducción larga y «¿TODAVÍA REBOBINAS?» en la banda superior.",
+      "prompt": "",
+      "cfg": [
+       [
+        "Botón",
+        "Más información (formulario) · o Enviar mensaje si la campaña va a WhatsApp"
+       ],
+       [
+        "Público",
+        "Ingenieros civiles y arquitectos; edad y geo-split (EC · MX · Resto) iguales a los de la campaña de ACERO, que ya están probados. Intereses: Revit, Autodesk Robot Structural Analysis, ETABS, SAP2000, ingeniería estructural. Retargeting en conjunto aparte: leads del Módulo 1 gratis del Diplomado + interacción IG/FB 90 días. EXCLUIR: alumnos del Diplomado y de ACERO (listas GHL)."
+       ],
+       [
+        "Qué medir",
+        "CPL sumando las DOS vías (lead de formulario + messaging_conversation_started_7d de WhatsApp) · CTR · costo por agenda. Las tres variantes en el MISMO conjunto, una sola campaña (OCTUBRE-QUE-FUNCIONA §5: un texto por ángulo, en una campaña). No decidir antes de 7 días completos con la ventana cerrando ayer. En el CRM, que el setter marque si el lead menciona el tutor [PENDIENTE: campo en GHL]."
+       ]
+      ],
+      "condicion": ""
+     },
+     {
+      "id": "oct-tutor-dip-ads-b-minuto",
+      "titulo": "Variante B · la prueba en pantalla",
+      "campana": "DIPLOMADO · Tutor IA (desde el 12)",
+      "precio": "sin precio (regla del Máster)",
+      "formato": "ANUNCIO · imagen 4:5 (captura real) + 9:16",
+      "hook": "«¿Cómo creo el espectro sísmico y lo ingreso en Robot?» → Módulo 2 · Lección 25 · min 04:09.",
+      "cuerpo": "«¿Cómo creo el espectro sísmico y lo ingreso en Robot?» → Módulo 2 · Lección 25 · min 04:09.\n\nEso responde el tutor de IA del Diplomado BIM en Estructuras: tu duda, contestada con las clases del Diplomado y con el minuto donde se explica. Módulos 2 a 9, a cualquier hora.\n\nEscríbenos y te contamos cómo es el Diplomado.",
+      "titular": "El tutor que cita la clase",
+      "descripcion": "Responde con las clases del Diplomado",
+      "creativo": "Captura REAL de la respuesta del tutor, cita resaltada en ámbar #E8A04A, banda limpia arriba para el titular. Nunca un mockup.",
+      "prompt": "",
+      "cfg": [
+       [
+        "Botón",
+        "Enviar mensaje (WhatsApp) · o Más información si va a formulario"
+       ],
+       [
+        "Público",
+        "Ingenieros civiles y arquitectos; edad y geo-split (EC · MX · Resto) iguales a los de la campaña de ACERO, que ya están probados. Intereses: Revit, Autodesk Robot Structural Analysis, ETABS, SAP2000, ingeniería estructural. Retargeting en conjunto aparte: leads del Módulo 1 gratis del Diplomado + interacción IG/FB 90 días. EXCLUIR: alumnos del Diplomado y de ACERO (listas GHL)."
+       ],
+       [
+        "Qué medir",
+        "CPL sumando las DOS vías (lead de formulario + messaging_conversation_started_7d de WhatsApp) · CTR · costo por agenda. Las tres variantes en el MISMO conjunto, una sola campaña (OCTUBRE-QUE-FUNCIONA §5: un texto por ángulo, en una campaña). No decidir antes de 7 días completos con la ventana cerrando ayer. En el CRM, que el setter marque si el lead menciona el tutor [PENDIENTE: campo en GHL]."
+       ]
+      ],
+      "condicion": ""
+     },
+     {
+      "id": "oct-tutor-dip-ads-c-no-inventa",
+      "titulo": "Variante C · el límite como argumento",
+      "campana": "DIPLOMADO · Tutor IA (desde el 12)",
+      "precio": "sin precio (regla del Máster)",
+      "formato": "ANUNCIO · imagen 4:5",
+      "hook": "Un tutor de IA que te dice «esto no está en las clases» cuando no está.",
+      "cuerpo": "Un tutor de IA que te dice «esto no está en las clases» cuando no está.\n\nEl del Diplomado BIM en Estructuras responde solo con las 133 horas de clase del Diplomado y te da la lección y el minuto. Si la respuesta no está ahí, lo dice y te sugiere la asesoría con los instructores. Las cifras de norma te las manda a verificar en la norma vigente.\n\nLlena el formulario y un asesor te cuenta cómo es el Diplomado.",
+      "titular": "Responde con tus clases, o te lo dice",
+      "descripcion": "Diplomado BIM en Estructuras",
+      "creativo": "Fondo #0E2438 con la frase «esto no está en las clases» en burbuja de chat (captura real si la grabación la da). Banda limpia arriba.",
+      "prompt": "",
+      "cfg": [
+       [
+        "Botón",
+        "Más información (formulario)"
+       ],
+       [
+        "Público",
+        "Ingenieros civiles y arquitectos; edad y geo-split (EC · MX · Resto) iguales a los de la campaña de ACERO, que ya están probados. Intereses: Revit, Autodesk Robot Structural Analysis, ETABS, SAP2000, ingeniería estructural. Retargeting en conjunto aparte: leads del Módulo 1 gratis del Diplomado + interacción IG/FB 90 días. EXCLUIR: alumnos del Diplomado y de ACERO (listas GHL)."
+       ],
+       [
+        "Qué medir",
+        "CPL sumando las DOS vías (lead de formulario + messaging_conversation_started_7d de WhatsApp) · CTR · costo por agenda. Las tres variantes en el MISMO conjunto, una sola campaña (OCTUBRE-QUE-FUNCIONA §5: un texto por ángulo, en una campaña). No decidir antes de 7 días completos con la ventana cerrando ayer. En el CRM, que el setter marque si el lead menciona el tutor [PENDIENTE: campo en GHL]."
+       ]
+      ],
+      "condicion": "[PENDIENTE] Que el tutor conteste de verdad «no está en las clases» ante una pregunta fuera del temario, comprobado en la grabación. Si no, esta variante no sale."
+     }
+    ]
+   }
+  ],
+  "indicaciones": [
+   [
+    "Por qué hay que corregir antes de sumar anuncios",
+    "Septiembre gastó lo mismo que agosto (~$1.150) y trajo −33 % de resultados en Meta, +50 % de costo por lead y −17 % de leads en GHL. La semana del 21-sep entraron 153 leads contra 230–380 lo normal (diagnóstico de Dayana, 30-sep)."
+   ],
+   [
+    "1 · Volver a encender ACERO por WhatsApp",
+    "Junto al formulario, no en su lugar, con ~$390/mes como en agosto. «[JUL] ESPE.1 ACERO – WSP SMS» trajo 510 conversaciones a $0,77, y al apagarla los leads sin origen bajaron de 499 a 96. En julio-agosto el WhatsApp vendió 0,7 por cada 100 leads y el formulario 0,4. El texto es el ganador de la cuenta, con cierre «Escríbenos por WhatsApp», y el mensaje de bienvenida lleva el precio de $225 con Tutor de IA. Se mide por ventas a $225 a los 7 días."
+   ],
+   [
+    "2 · Pausar los anuncios cansados",
+    "El 59 % de los leads de septiembre viene de anuncios de enero a julio, con frecuencia 2,74 en ACERO. En ACERO el presupuesto pasa a «ACERO 1» y «AceroAI1-1V04/V05/V06». En el Máster pasa a «MásterBloque1-1V05», el único anuncio de septiembre con venta en GHL ($400). Se retiran las copias de enero y mayo. Los anuncios nuevos de octubre entran como reemplazo, no como capa extra."
+   ],
+   [
+    "3 · Devolver presupuesto a ACERO",
+    "En septiembre el Máster pasó de $420 a $700 y ACERO de $723 a $451. Un lead del Máster cuesta 2,8–3,6 $ en GHL y uno de ACERO 1–1,6 $."
+   ],
+   [
+    "4 · El Máster optimiza por UN evento de lead",
+    "No por «Conversiones múltiples»: «[14SEP]» cuenta 212 resultados y GHL ve 83. Revisar por qué «[27AGO] TESTEO» no registra resultados y dejar el Máster en una sola campaña (el mismo texto corría en dos, el 34 % del gasto)."
+   ],
+   [
+    "5 · Publicar lo que ya está hecho",
+    "Hay 26 borradores sin publicar, entre ellos «SEPTIEMBRE23» de ETABS + IDEA StatiCa. Se revisan y se publican los útiles antes de producir creativos nuevos."
+   ],
+   [
+    "6 · Filtros ya acordados (25-sep)",
+    "Formulario de ACERO de «mayor intención», con la pregunta del precio de $225 y otra sobre qué software usa. El Máster agenda solo a quien dijo SÍ a los $500. Recordatorios de la cita a 24 h, 2 h y 15 min. Un solo enlace de pago de ACERO ($225)."
+   ],
+   [
+    "7 · Apagar las 3 campañas «[25AGOSTO] LEAD MAGNETS»",
+    "Auditoría de septiembre (Meta, 31-ago al 29-sep): $77 gastados entre las tres, 0 leads de formulario y 7 conversaciones. Ese presupuesto pasa a ACERO. Si se quiere pauta para un recurso, se hace con el post del dato de cálculo (el mejor orgánico del año), no con los anuncios actuales."
+   ],
+   [
+    "REGLA DE ORO",
+    "El Máster no lleva precio en ninguna pieza. ACERO lleva $225 solo en pauta y en correo a la lista propia. Un texto por ángulo, en una sola campaña."
+   ]
+  ]
+ },
+ "grupos": [
+  {
+   "n": 1,
+   "nombre": "GRUPO 1 · Feed principal — Instagram, Facebook, TikTok, YouTube Shorts",
+   "descripcion": "Lun/Mié/Vie base + martes y jueves de lead magnet. Guion completo de cada pieza en guiones-completos.json (la app lo muestra por id).",
+   "reglas": [
+    "Cada pieza lleva el CTA de su producto: Máster → NIVEL; ACERO → ACERO; Cotizador → COTIZA.",
+    "En TikTok y YouTube Shorts, sin palabra clave: pregunta abierta."
+   ],
+   "calendario": [
+    {
+     "fecha": "Lun 5",
+     "fecha_iso": "2026-10-05",
+     "semana": "Semana 1 (5-11 oct)",
+     "id": "oct-tutor-dip-carrusel",
+     "titulo": "Tu Diplomado ya te dice la lección y el minuto",
+     "tipo": "lanzamiento",
+     "formato_publicacion": "CARRUSEL (7 slides)",
+     "intencion": "solución",
+     "producto": "Diplomado",
+     "cta": "Comenta DIPLOMADO (si no está montada: DM)",
+     "estado": "COMPLETA",
+     "nota": "Abre el lanzamiento del Tutor IA del Diplomado. AUDITORÍA SEP: los anuncios del tutor de Acero sacaron 0–2 comentarios; por eso esta pieza abre con el problema (buscar a ciegas en 133 h) y no con «ahora tiene tutor». Medir el martes 6: si queda por debajo de 2,66 comentarios por 1.000 vistas (mediana de septiembre), la pauta del tutor del 12 no se enciende sin cambiar el gancho."
+    },
+    {
+     "fecha": "Mié 7",
+     "fecha_iso": "2026-10-07",
+     "semana": "Semana 1 (5-11 oct)",
+     "id": "oct-tutor-dip-reel",
+     "titulo": "¿Todavía rebobinas la clase?",
+     "tipo": "lanzamiento",
+     "formato_publicacion": "REEL (38-42 s)",
+     "intencion": "solución",
+     "producto": "Diplomado",
+     "cta": "Comenta DIPLOMADO / DM",
+     "estado": "POR GRABAR",
+     "nota": "Reel de lanzamiento. Graba Gabriel. Abre con el problema (rebobinar la clase), no con el anuncio del tutor: auditoría de septiembre."
+    },
+    {
+     "fecha": "Jue 8",
+     "fecha_iso": "2026-10-08",
+     "semana": "Semana 1 (5-11 oct)",
+     "id": "oct-hola-soy-gabriel-carrusel",
+     "titulo": "Si acabas de llegar: hola, soy Gabriel",
+     "tipo": "confianza",
+     "formato_publicacion": "CARRUSEL (8 slides) — historia del creador",
+     "intencion": "objeción",
+     "producto": "Máster",
+     "cta": "Comenta NIVEL",
+     "estado": "COMPLETA · faltan 7 datos personales que confirma Gabriel (marcados [CONFIRMA GABRIEL])",
+     "nota": "Historia del creador (pedido de Dayana, 30-sep): estructura del carrusel de Juan Lombana «Si acabas de llegar: hola, soy Juan», con marca DMA y fotos reales de Gabriel. Responde la objeción de confianza («¿quién enseña?»). Se FIJA en el perfil: es la bienvenida de los que llegan con el dato del viernes 9. Gabriel confirma los 7 datos personales marcados."
+    },
+    {
+     "fecha": "Vie 9",
+     "fecha_iso": "2026-10-09",
+     "semana": "Semana 1 (5-11 oct)",
+     "id": "oct-dato-deriva-post",
+     "titulo": "La deriva que revisas al final",
+     "tipo": "problema",
+     "formato_publicacion": "POST (1 imagen 4:5)",
+     "intencion": "problema",
+     "producto": "Acero",
+     "cta": "Comenta ACERO",
+     "estado": "COMPLETA",
+     "nota": "Post con dato de cálculo verificable (el formato que más guarda la cuenta). En FB sale además oct-tutor-dip-post-fb."
+    },
+    {
+     "fecha": "Lun 12",
+     "fecha_iso": "2026-10-12",
+     "semana": "Semana 2 (12-18 oct)",
+     "id": "oct-acusa-ia-calculo-carrusel",
+     "titulo": "Deja de usar IA en tu cálculo estructural",
+     "tipo": "valor",
+     "formato_publicacion": "CARRUSEL (8 slides)",
+     "intencion": "problema",
+     "producto": "Máster",
+     "cta": "Comenta NIVEL",
+     "estado": "COMPLETA",
+     "nota": "Acusación. Capturas reales de Revit/Robot."
+    },
+    {
+     "fecha": "Mar 13",
+     "fecha_iso": "2026-10-13",
+     "semana": "Semana 2 (12-18 oct)",
+     "id": "oct-cotiza-reel",
+     "titulo": "¿Cuánto cobras por hora cuando cobras 5 dólares por m²?",
+     "tipo": "lead magnet",
+     "formato_publicacion": "REEL (25-30 s)",
+     "intencion": "problema",
+     "producto": "Cotizador",
+     "cta": "Comenta COTIZA",
+     "estado": "POR GRABAR",
+     "nota": "EXTRA lead magnet (martes). COTIZA se monta en OpenReply justo después de publicar."
+    },
+    {
+     "fecha": "Mié 14",
+     "fecha_iso": "2026-10-14",
+     "semana": "Semana 2 (12-18 oct)",
+     "id": "oct-ranking-software-estructural-reel",
+     "titulo": "Ranking de software estructural 2026: ¿AutoCAD en la última fila?",
+     "tipo": "valor",
+     "formato_publicacion": "REEL (25-30 s)",
+     "intencion": "problema",
+     "producto": "Máster",
+     "cta": "Comenta NIVEL",
+     "estado": "POR GRABAR",
+     "nota": "Ranking con tablero físico. Graba Gabriel."
+    },
+    {
+     "fecha": "Jue 15",
+     "fecha_iso": "2026-10-15",
+     "semana": "Semana 2 (12-18 oct)",
+     "id": "oct-cotiza-carrusel",
+     "titulo": "5 cosas que tu propuesta de honorarios tiene que decir",
+     "tipo": "lead magnet",
+     "formato_publicacion": "CARRUSEL (7 slides)",
+     "intencion": "solución",
+     "producto": "Cotizador",
+     "cta": "Comenta COTIZA",
+     "estado": "COMPLETA",
+     "nota": "EXTRA lead magnet (jueves)."
+    },
+    {
+     "fecha": "Vie 16",
+     "fecha_iso": "2026-10-16",
+     "semana": "Semana 2 (12-18 oct)",
+     "id": "oct-ang4-naves-rechazadas-post",
+     "titulo": "¿Cuántas naves dijiste que no?",
+     "tipo": "problema",
+     "formato_publicacion": "POST (1 imagen 4:5)",
+     "intencion": "problema",
+     "producto": "Acero",
+     "cta": "Comenta ACERO",
+     "estado": "COMPLETA",
+     "nota": "Ángulo 4 de compradores: los proyectos que rechazas."
+    },
+    {
+     "fecha": "Lun 19",
+     "fecha_iso": "2026-10-19",
+     "semana": "Semana 3 (19-25 oct)",
+     "id": "oct-ranking-perfil-bim-carrusel",
+     "titulo": "Ranking: ¿en qué fila estás tú?",
+     "tipo": "valor",
+     "formato_publicacion": "CARRUSEL (7 slides)",
+     "intencion": "problema",
+     "producto": "Máster",
+     "cta": "Comenta NIVEL",
+     "estado": "COMPLETA",
+     "nota": "Ranking: ¿en qué fila estás?"
+    },
+    {
+     "fecha": "Mar 20",
+     "fecha_iso": "2026-10-20",
+     "semana": "Semana 3 (19-25 oct)",
+     "id": "oct-obj-tiempo-reel",
+     "titulo": "¿Una hora al día alcanza?",
+     "tipo": "objeción",
+     "formato_publicacion": "REEL (30 s)",
+     "intencion": "objeción",
+     "producto": "Máster",
+     "cta": "Comenta NIVEL",
+     "estado": "POR GRABAR",
+     "nota": "Objeción de tiempo. Graba Gabriel."
+    },
+    {
+     "fecha": "Mié 21",
+     "fecha_iso": "2026-10-21",
+     "semana": "Semana 3 (19-25 oct)",
+     "id": "oct-acusa-ia-calculo-reel",
+     "titulo": "La IA ordena, tú decides",
+     "tipo": "valor",
+     "formato_publicacion": "REEL (30-35 s)",
+     "intencion": "solución",
+     "producto": "Máster",
+     "cta": "Comenta NIVEL",
+     "estado": "POR GRABAR",
+     "nota": "La IA ordena, tú decides. Graba Gabriel."
+    },
+    {
+     "fecha": "Jue 22",
+     "fecha_iso": "2026-10-22",
+     "semana": "Semana 3 (19-25 oct)",
+     "id": "oct-obj-certificado-carrusel",
+     "titulo": "¿Ese certificado sirve fuera de tu país?",
+     "tipo": "objeción",
+     "formato_publicacion": "CARRUSEL (7 slides)",
+     "intencion": "objeción",
+     "producto": "Máster",
+     "cta": "Comenta NIVEL",
+     "estado": "COMPLETA · falta confirmar lista de certificados",
+     "nota": "Objeción de certificado. Dayana confirma la lista de certificados antes de diseñar."
+    },
+    {
+     "fecha": "Vie 23",
+     "fecha_iso": "2026-10-23",
+     "semana": "Semana 3 (19-25 oct)",
+     "id": "oct-ang3-bim-se-exige-post",
+     "titulo": "Perdió el concurso antes de presentarse",
+     "tipo": "problema",
+     "formato_publicacion": "POST (1 imagen 4:5)",
+     "intencion": "problema",
+     "producto": "Máster",
+     "cta": "Comenta NIVEL",
+     "estado": "COMPLETA",
+     "nota": "Ángulo 3: BIM ya se exige."
+    },
+    {
+     "fecha": "Lun 26",
+     "fecha_iso": "2026-10-26",
+     "semana": "Semana 4 (26 oct-1 nov)",
+     "id": "oct-ang8-obra-software-carrusel",
+     "titulo": "Sabes montar una nave. ¿Por qué no la calculas tú?",
+     "tipo": "problema",
+     "formato_publicacion": "CARRUSEL (7 slides)",
+     "intencion": "problema",
+     "producto": "Acero",
+     "cta": "Comenta ACERO",
+     "estado": "COMPLETA",
+     "nota": "Ángulo 8: de la obra al software. Filtra a quien quiere soldar."
+    },
+    {
+     "fecha": "Mar 27",
+     "fecha_iso": "2026-10-27",
+     "semana": "Semana 4 (26 oct-1 nov)",
+     "id": "oct-obj-cursos-youtube-reel",
+     "titulo": "20 videos de acero y todavía no te atreves",
+     "tipo": "objeción",
+     "formato_publicacion": "REEL (30 s)",
+     "intencion": "objeción",
+     "producto": "Acero",
+     "cta": "Comenta ACERO",
+     "estado": "POR GRABAR",
+     "nota": "Objeción: muchos cursos, ninguno aplicable. Graba Gabriel."
+    },
+    {
+     "fecha": "Mié 28",
+     "fecha_iso": "2026-10-28",
+     "semana": "Semana 4 (26 oct-1 nov)",
+     "id": "oct-testimonio-acero-reel",
+     "titulo": "Testimonio de un alumno de Acero",
+     "tipo": "testimonio",
+     "formato_publicacion": "REEL (45-60 s)",
+     "intencion": "testimonio",
+     "producto": "Acero",
+     "cta": "Comenta ACERO",
+     "estado": "POR CONSEGUIR ALUMNO",
+     "nota": "Alumno real con permiso. Si el 21-oct no hay, sale la pieza de reserva descrita en la pieza."
+    },
+    {
+     "fecha": "Jue 29",
+     "fecha_iso": "2026-10-29",
+     "semana": "Semana 4 (26 oct-1 nov)",
+     "id": "oct-lm-acero-pandeo-lt-carrusel",
+     "titulo": "La verificación que más te saltas: pandeo lateral-torsional",
+     "tipo": "lead magnet",
+     "formato_publicacion": "CARRUSEL (7 slides)",
+     "intencion": "problema",
+     "producto": "Acero",
+     "cta": "Comenta ACERO",
+     "estado": "COMPLETA",
+     "nota": "EXTRA lead magnet ACERO (el PROMO de recurso es lo que más comenta la cuenta: DM157, 159 comentarios)."
+    },
+    {
+     "fecha": "Vie 30",
+     "fecha_iso": "2026-10-30",
+     "semana": "Semana 4 (26 oct-1 nov)",
+     "id": "oct-obj-dinero-post",
+     "titulo": "Lo caro no es el curso",
+     "tipo": "objeción",
+     "formato_publicacion": "POST (1 imagen 4:5)",
+     "intencion": "objeción",
+     "producto": "Máster",
+     "cta": "Comenta NIVEL",
+     "estado": "COMPLETA",
+     "nota": "Objeción de dinero sin precio: lo caro es el proyecto rechazado."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "nombre": "GRUPO 2 · Comunidades — WhatsApp, canal de IG, grupos de FB, comunidad de YouTube, comunidades GHL",
+   "descripcion": "Martes, jueves y viernes. Comparten la pieza de la semana con contexto y una pregunta. Sin hashtags.",
+   "reglas": [
+    "Nunca un enlace suelto: contexto + pregunta.",
+    "Canales de difusión: el recurso va con su enlace directo.",
+    "Comunidades de WhatsApp/GHL: se puede pedir «respóndeme NIVEL / ACERO / COTIZA», pero ahí no hay bot: una persona del equipo contesta a mano con el enlace el mismo día.",
+    "Grupos de Facebook y comunidad de YouTube: solo la pregunta, sin enlace."
+   ],
+   "calendario": [
+    {
+     "fecha": "Lun 5",
+     "fecha_iso": "2026-10-05",
+     "semana": "Semana 1 (5-11 oct)",
+     "id": "oct-tutor-dip-comunidad-diplomado",
+     "titulo": "Ya lo tienen en su curso",
+     "tipo": "adopción",
+     "formato_publicacion": "MENSAJE · comunidad exclusiva del Diplomado (GHL)",
+     "idea": {
+      "titulo": "Ya lo tienen en su curso",
+      "formato": "MENSAJE · comunidad exclusiva del Diplomado (GHL)",
+      "desarrollo": ""
+     }
+    },
+    {
+     "fecha": "Mar 6",
+     "fecha_iso": "2026-10-06",
+     "semana": "Semana 1 (5-11 oct)",
+     "id": "oct-tutor-dip-comunidades",
+     "titulo": "Novedad para los de estructuras",
+     "tipo": "lanzamiento",
+     "formato_publicacion": "MENSAJES · canal de WhatsApp, canal de Instagram, grupos de Facebook, comunidad de YouTube, comunidades GHL",
+     "idea": {
+      "titulo": "Novedad para los de estructuras",
+      "formato": "MENSAJES · canal de WhatsApp, canal de Instagram, grupos de Facebook, comunidad de YouTube, comunidades GHL",
+      "desarrollo": ""
+     }
+    },
+    {
+     "fecha": "Jue 8",
+     "fecha_iso": "2026-10-08",
+     "semana": "Semana 1 (5-11 oct)",
+     "id": "oct-comu-1008",
+     "titulo": "¿Qué tema han rebobinado más veces?",
+     "tipo": "valor",
+     "formato_publicacion": "MENSAJES · canal de WhatsApp, canal de Instagram, comunidades de WhatsApp, grupos de Facebook, comunidad de YouTube, comunidades GHL",
+     "idea": {
+      "titulo": "¿Qué tema han rebobinado más veces?",
+      "formato": "MENSAJES · canal de WhatsApp, canal de Instagram, comunidades de WhatsApp, grupos de Facebook, comunidad de YouTube, comunidades GHL",
+      "desarrollo": "Ayer subimos un reel sobre algo que todos hicimos alguna vez: rebobinar una clase de dos horas para encontrar un solo minuto."
+     }
+    },
+    {
+     "fecha": "Vie 9",
+     "fecha_iso": "2026-10-09",
+     "semana": "Semana 1 (5-11 oct)",
+     "id": "oct-comu-1009",
+     "titulo": "¿Cómo cobran un diseño estructural?",
+     "tipo": "interacción",
+     "formato_publicacion": "MENSAJES · canal de WhatsApp, canal de Instagram, comunidades de WhatsApp, grupos de Facebook, comunidad de YouTube, comunidades GHL",
+     "idea": {
+      "titulo": "¿Cómo cobran un diseño estructural?",
+      "formato": "MENSAJES · canal de WhatsApp, canal de Instagram, comunidades de WhatsApp, grupos de Facebook, comunidad de YouTube, comunidades GHL",
+      "desarrollo": "Pregunta de viernes para los que diseñan estructuras por su cuenta: ¿cómo cobran un proyecto?"
+     }
+    },
+    {
+     "fecha": "Mar 13",
+     "fecha_iso": "2026-10-13",
+     "semana": "Semana 2 (12-18 oct)",
+     "id": "oct-comu-1013",
+     "titulo": "¿Cuánto te queda por hora cuando cobras por m²?",
+     "tipo": "lead magnet",
+     "formato_publicacion": "MENSAJES · canal de WhatsApp, canal de Instagram, comunidades de WhatsApp, grupos de Facebook, comunidad de YouTube, comunidades GHL",
+     "idea": {
+      "titulo": "¿Cuánto te queda por hora cuando cobras por m²?",
+      "formato": "MENSAJES · canal de WhatsApp, canal de Instagram, comunidades de WhatsApp, grupos de Facebook, comunidad de YouTube, comunidades GHL",
+      "desarrollo": "El viernes les preguntamos cómo cobran. Hoy va la cuenta."
+     }
+    },
+    {
+     "fecha": "Jue 15",
+     "fecha_iso": "2026-10-15",
+     "semana": "Semana 2 (12-18 oct)",
+     "id": "oct-comu-1015",
+     "titulo": "Lo que no está escrito te lo piden gratis",
+     "tipo": "lead magnet",
+     "formato_publicacion": "MENSAJES · canal de WhatsApp, canal de Instagram, comunidades de WhatsApp, grupos de Facebook, comunidad de YouTube, comunidades GHL",
+     "idea": {
+      "titulo": "Lo que no está escrito te lo piden gratis",
+      "formato": "MENSAJES · canal de WhatsApp, canal de Instagram, comunidades de WhatsApp, grupos de Facebook, comunidad de YouTube, comunidades GHL",
+      "desarrollo": "Lo que no está escrito en tu propuesta te lo piden gratis."
+     }
+    },
+    {
+     "fecha": "Vie 16",
+     "fecha_iso": "2026-10-16",
+     "semana": "Semana 2 (12-18 oct)",
+     "id": "oct-comu-1016",
+     "titulo": "¿Cuántas naves dijeron que no?",
+     "tipo": "interacción",
+     "formato_publicacion": "MENSAJES · canal de WhatsApp, canal de Instagram, comunidades de WhatsApp, grupos de Facebook, comunidad de YouTube, comunidades GHL",
+     "idea": {
+      "titulo": "¿Cuántas naves dijeron que no?",
+      "formato": "MENSAJES · canal de WhatsApp, canal de Instagram, comunidades de WhatsApp, grupos de Facebook, comunidad de YouTube, comunidades GHL",
+      "desarrollo": "En una llamada, un ingeniero nos contó que en dos años rechazó unos 8 proyectos de acero."
+     }
+    },
+    {
+     "fecha": "Mar 20",
+     "fecha_iso": "2026-10-20",
+     "semana": "Semana 3 (19-25 oct)",
+     "id": "oct-comu-1020",
+     "titulo": "¿A qué hora estudian?",
+     "tipo": "objeción",
+     "formato_publicacion": "MENSAJES · canal de WhatsApp, canal de Instagram, comunidades de WhatsApp, grupos de Facebook, comunidad de YouTube, comunidades GHL",
+     "idea": {
+      "titulo": "¿A qué hora estudian?",
+      "formato": "MENSAJES · canal de WhatsApp, canal de Instagram, comunidades de WhatsApp, grupos de Facebook, comunidad de YouTube, comunidades GHL",
+      "desarrollo": "«No tengo tiempo» es la razón número uno para no empezar a estudiar BIM. Y es real: casi todos los que estudian con nosotros trabajan, muchos en obra."
+     }
+    },
+    {
+     "fecha": "Jue 22",
+     "fecha_iso": "2026-10-22",
+     "semana": "Semana 3 (19-25 oct)",
+     "id": "oct-comu-1022",
+     "titulo": "¿En qué fila estás de verdad?",
+     "tipo": "lead magnet",
+     "formato_publicacion": "MENSAJES · canal de WhatsApp, canal de Instagram, comunidades de WhatsApp, grupos de Facebook, comunidad de YouTube, comunidades GHL",
+     "idea": {
+      "titulo": "¿En qué fila estás de verdad?",
+      "formato": "MENSAJES · canal de WhatsApp, canal de Instagram, comunidades de WhatsApp, grupos de Facebook, comunidad de YouTube, comunidades GHL",
+      "desarrollo": "Casi todos los que trabajan en BIM creen estar una fila más arriba de donde están."
+     }
+    },
+    {
+     "fecha": "Vie 23",
+     "fecha_iso": "2026-10-23",
+     "semana": "Semana 3 (19-25 oct)",
+     "id": "oct-comu-1023",
+     "titulo": "Perdió el concurso antes de presentarse",
+     "tipo": "venta suave",
+     "formato_publicacion": "MENSAJES · canal de WhatsApp, canal de Instagram, comunidades de WhatsApp, grupos de Facebook, comunidad de YouTube, comunidades GHL",
+     "idea": {
+      "titulo": "Perdió el concurso antes de presentarse",
+      "formato": "MENSAJES · canal de WhatsApp, canal de Instagram, comunidades de WhatsApp, grupos de Facebook, comunidad de YouTube, comunidades GHL",
+      "desarrollo": "Nos lo contó un ingeniero en una llamada. Tenía la experiencia, el equipo y el precio. Perdió el concurso antes de presentar la propuesta: pedían certificación BIM."
+     }
+    },
+    {
+     "fecha": "Mar 27",
+     "fecha_iso": "2026-10-27",
+     "semana": "Semana 4 (26 oct-1 nov)",
+     "id": "oct-comu-1027",
+     "titulo": "Las 5 verificaciones en acero",
+     "tipo": "lead magnet",
+     "formato_publicacion": "MENSAJES · canal de WhatsApp, canal de Instagram, comunidades de WhatsApp, grupos de Facebook, comunidad de YouTube, comunidades GHL",
+     "idea": {
+      "titulo": "Las 5 verificaciones en acero",
+      "formato": "MENSAJES · canal de WhatsApp, canal de Instagram, comunidades de WhatsApp, grupos de Facebook, comunidad de YouTube, comunidades GHL",
+      "desarrollo": "Si ya viste 20 videos de acero y todavía no te atreves con una nave, no es tu culpa."
+     }
+    },
+    {
+     "fecha": "Jue 29",
+     "fecha_iso": "2026-10-29",
+     "semana": "Semana 4 (26 oct-1 nov)",
+     "id": "oct-comu-1029",
+     "titulo": "Del lado que decide",
+     "tipo": "venta",
+     "formato_publicacion": "MENSAJES · canal de WhatsApp, canal de Instagram, comunidades de WhatsApp, grupos de Facebook, comunidad de YouTube, comunidades GHL",
+     "idea": {
+      "titulo": "Del lado que decide",
+      "formato": "MENSAJES · canal de WhatsApp, canal de Instagram, comunidades de WhatsApp, grupos de Facebook, comunidad de YouTube, comunidades GHL",
+      "desarrollo": "Sabes montar una nave. ¿Por qué todavía no la calculas tú?"
+     }
+    },
+    {
+     "fecha": "Vie 30",
+     "fecha_iso": "2026-10-30",
+     "semana": "Semana 4 (26 oct-1 nov)",
+     "id": "oct-comu-1030",
+     "titulo": "¿Qué proyecto dejaron pasar?",
+     "tipo": "interacción",
+     "formato_publicacion": "MENSAJES · canal de WhatsApp, canal de Instagram, comunidades de WhatsApp, grupos de Facebook, comunidad de YouTube, comunidades GHL",
+     "idea": {
+      "titulo": "¿Qué proyecto dejaron pasar?",
+      "formato": "MENSAJES · canal de WhatsApp, canal de Instagram, comunidades de WhatsApp, grupos de Facebook, comunidad de YouTube, comunidades GHL",
+      "desarrollo": "Lo caro no es el curso. Es el proyecto que no pudiste aceptar: el concurso que pedía BIM, la nave que no sabías calcular, el cliente que se fue con otro."
+     }
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "nombre": "GRUPO 3 · Blog de Design Modeling Academy",
+   "descripcion": "Un artículo por semana, siempre sábado, con CTA a una campaña o a un recurso. El post de anuncio sale el mismo sábado.",
+   "reglas": [
+    "El CTA del blog nunca es genérico."
+   ],
+   "calendario": [
+    {
+     "fecha": "Sáb 10",
+     "fecha_iso": "2026-10-10",
+     "semana": "Semana 1 (5-11 oct)",
+     "id": "oct-tutor-dip-blog",
+     "titulo": "Tutor de IA del Diplomado BIM en Estructuras: cómo funciona",
+     "tipo": "blog",
+     "formato_publicacion": "ARTÍCULO + portada + post de anuncio en el feed",
+     "idea": {
+      "titulo": "Tutor de IA del Diplomado BIM en Estructuras: cómo funciona",
+      "formato": "ARTÍCULO + portada + post de anuncio en el feed",
+      "desarrollo": ""
+     }
+    },
+    {
+     "fecha": "Sáb 17",
+     "fecha_iso": "2026-10-17",
+     "semana": "Semana 2 (12-18 oct)",
+     "id": "oct-blog-cobrar-diseno-estructural",
+     "titulo": "Cómo cobrar un diseño estructural sin perder plata",
+     "tipo": "blog",
+     "formato_publicacion": "ARTÍCULO + portada + post de anuncio en el feed",
+     "idea": {
+      "titulo": "Cómo cobrar un diseño estructural sin perder plata",
+      "formato": "ARTÍCULO + portada + post de anuncio en el feed",
+      "desarrollo": "¿Cuánto cobras por hora cuando cobras 5 dólares por m²?"
+     }
+    },
+    {
+     "fecha": "Sáb 24",
+     "fecha_iso": "2026-10-24",
+     "semana": "Semana 3 (19-25 oct)",
+     "id": "oct-blog-bim-ya-se-exige",
+     "titulo": "BIM ya se exige, y te enteras cuando te deja fuera",
+     "tipo": "blog",
+     "formato_publicacion": "ARTÍCULO + portada + post de anuncio en el feed",
+     "idea": {
+      "titulo": "BIM ya se exige, y te enteras cuando te deja fuera",
+      "formato": "ARTÍCULO + portada + post de anuncio en el feed",
+      "desarrollo": "Nadie te avisa cuando un requisito cambia. Te enteras cuando ya te dejó fuera."
+     }
+    },
+    {
+     "fecha": "Sáb 31",
+     "fecha_iso": "2026-10-31",
+     "semana": "Semana 4 (26 oct-1 nov)",
+     "id": "oct-blog-de-la-obra-al-software",
+     "titulo": "De montar acero en obra a calcularlo en software",
+     "tipo": "blog",
+     "formato_publicacion": "ARTÍCULO + portada + post de anuncio en el feed",
+     "idea": {
+      "titulo": "De montar acero en obra a calcularlo en software",
+      "formato": "ARTÍCULO + portada + post de anuncio en el feed",
+      "desarrollo": "Sabes montar una nave. ¿Por qué todavía no la calculas tú?"
+     }
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "nombre": "GRUPO 4 · LinkedIn — Design Modeling Academy · Design Modeling DG · Gabriel Pantoja",
+   "descripcion": "Lun/Mié/Vie + texto de Gabriel los martes. Solo PDF, video horizontal o texto.",
+   "reglas": [
+    "NUNCA «comenta la palabra»: pregunta abierta y enlace en el primer comentario."
+   ],
+   "calendario": [
+    {
+     "fecha": "Lun 5",
+     "fecha_iso": "2026-10-05",
+     "semana": "Semana 1 (5-11 oct)",
+     "id": "oct-tutor-dip-li-academy",
+     "titulo": "216 videos y la lección exacta",
+     "tipo": "lanzamiento",
+     "formato_publicacion": "LINKEDIN · PDF (carrusel rediagramado a horizontal)",
+     "idea": {
+      "titulo": "216 videos y la lección exacta",
+      "formato": "LINKEDIN · PDF (carrusel rediagramado a horizontal)",
+      "desarrollo": "216 videos y 133 horas de clase: eso tenía que recorrer un alumno del Diplomado BIM en Estructuras para volver a una explicación concreta."
+     },
+     "cuenta": "Design Modeling Academy"
+    },
+    {
+     "fecha": "Mié 7",
+     "fecha_iso": "2026-10-07",
+     "semana": "Semana 1 (5-11 oct)",
+     "id": "oct-tutor-dip-li-gabriel",
+     "titulo": "Minuto 04:09",
+     "tipo": "lanzamiento",
+     "formato_publicacion": "LINKEDIN · texto + video HORIZONTAL (grabación de pantalla del demo, menos de 60 s)",
+     "idea": {
+      "titulo": "Minuto 04:09",
+      "formato": "LINKEDIN · texto + video HORIZONTAL (grabación de pantalla del demo, menos de 60 s)",
+      "desarrollo": "Le pregunté al tutor del Diplomado cómo crear el espectro sísmico e ingresarlo en Robot. Respuesta: Módulo 2, Lección 25, minuto 04:09."
+     },
+     "cuenta": "Gabriel Pantoja (primera persona)"
+    },
+    {
+     "fecha": "Vie 9",
+     "fecha_iso": "2026-10-09",
+     "semana": "Semana 1 (5-11 oct)",
+     "id": "oct-tutor-dip-li-dg",
+     "titulo": "Qué video es cada lección",
+     "tipo": "caso / metodología",
+     "formato_publicacion": "LINKEDIN · texto + 1 imagen (captura real con la cita resaltada)",
+     "idea": {
+      "titulo": "Qué video es cada lección",
+      "formato": "LINKEDIN · texto + 1 imagen (captura real con la cita resaltada)",
+      "desarrollo": "216 videos, 133 horas, 8 módulos. Antes de la primera respuesta del tutor del Diplomado, tuvimos que saber qué video era cada lección."
+     },
+     "cuenta": "Design Modeling DG"
+    },
+    {
+     "fecha": "Lun 12",
+     "fecha_iso": "2026-10-12",
+     "semana": "Semana 2 (12-18 oct)",
+     "id": "oct-li-1012-academy",
+     "titulo": "La IA ordena, tú decides",
+     "tipo": "valor",
+     "formato_publicacion": "LINKEDIN · PDF (carrusel rediagramado a horizontal)",
+     "idea": {
+      "titulo": "La IA ordena, tú decides",
+      "formato": "LINKEDIN · PDF (carrusel rediagramado a horizontal)",
+      "desarrollo": "La IA no te sirve para calcular por ti. Te sirve para todo lo que haces alrededor del cálculo."
+     },
+     "cuenta": "Design Modeling Academy"
+    },
+    {
+     "fecha": "Mar 13",
+     "fecha_iso": "2026-10-13",
+     "semana": "Semana 2 (12-18 oct)",
+     "id": "oct-li-1013-gabriel",
+     "titulo": "14,71 la hora",
+     "tipo": "valor",
+     "formato_publicacion": "LINKEDIN · post de texto",
+     "idea": {
+      "titulo": "14,71 la hora",
+      "formato": "LINKEDIN · post de texto",
+      "desarrollo": "¿Cuánto te queda por hora cuando cobras 5 dólares por m² de diseño estructural?"
+     },
+     "cuenta": "Gabriel Pantoja (primera persona)"
+    },
+    {
+     "fecha": "Mié 14",
+     "fecha_iso": "2026-10-14",
+     "semana": "Semana 2 (12-18 oct)",
+     "id": "oct-li-1014-dg",
+     "titulo": "5 cosas que una propuesta de honorarios tiene que decir",
+     "tipo": "caso / metodología",
+     "formato_publicacion": "LINKEDIN · PDF (carrusel rediagramado a horizontal)",
+     "idea": {
+      "titulo": "5 cosas que una propuesta de honorarios tiene que decir",
+      "formato": "LINKEDIN · PDF (carrusel rediagramado a horizontal)",
+      "desarrollo": "Lo que no está escrito en una propuesta de honorarios te lo piden gratis."
+     },
+     "cuenta": "Design Modeling DG"
+    },
+    {
+     "fecha": "Vie 16",
+     "fecha_iso": "2026-10-16",
+     "semana": "Semana 2 (12-18 oct)",
+     "id": "oct-li-1016-dg",
+     "titulo": "La nave que se rechaza",
+     "tipo": "caso / metodología",
+     "formato_publicacion": "LINKEDIN · post de texto",
+     "idea": {
+      "titulo": "La nave que se rechaza",
+      "formato": "LINKEDIN · post de texto",
+      "desarrollo": "¿Cuántas naves industriales dijiste que no porque no podías calcularlas?"
+     },
+     "cuenta": "Design Modeling DG"
+    },
+    {
+     "fecha": "Lun 19",
+     "fecha_iso": "2026-10-19",
+     "semana": "Semana 3 (19-25 oct)",
+     "id": "oct-li-1019-academy",
+     "titulo": "¿En qué fila estás?",
+     "tipo": "valor",
+     "formato_publicacion": "LINKEDIN · PDF (carrusel rediagramado a horizontal)",
+     "idea": {
+      "titulo": "¿En qué fila estás?",
+      "formato": "LINKEDIN · PDF (carrusel rediagramado a horizontal)",
+      "desarrollo": "Casi todos los que trabajan en BIM creen estar una fila más arriba de donde están."
+     },
+     "cuenta": "Design Modeling Academy"
+    },
+    {
+     "fecha": "Mar 20",
+     "fecha_iso": "2026-10-20",
+     "semana": "Semana 3 (19-25 oct)",
+     "id": "oct-li-1020-gabriel",
+     "titulo": "Una o dos horas al día",
+     "tipo": "objeción",
+     "formato_publicacion": "LINKEDIN · post de texto",
+     "idea": {
+      "titulo": "Una o dos horas al día",
+      "formato": "LINKEDIN · post de texto",
+      "desarrollo": "Si esperas a tener tiempo para estudiar BIM, no vas a empezar nunca."
+     },
+     "cuenta": "Gabriel Pantoja (primera persona)"
+    },
+    {
+     "fecha": "Mié 21",
+     "fecha_iso": "2026-10-21",
+     "semana": "Semana 3 (19-25 oct)",
+     "id": "oct-li-1021-dg",
+     "titulo": "Exportas, la IA ordena, tú compruebas",
+     "tipo": "caso / metodología",
+     "formato_publicacion": "LINKEDIN · video HORIZONTAL 16:9 (30-45 s) + texto",
+     "idea": {
+      "titulo": "Exportas, la IA ordena, tú compruebas",
+      "formato": "LINKEDIN · video HORIZONTAL 16:9 (30-45 s) + texto",
+      "desarrollo": "Exportas la tabla. La IA la ordena. Tú compruebas tres filas a mano antes de fiarte."
+     },
+     "cuenta": "Design Modeling DG"
+    },
+    {
+     "fecha": "Vie 23",
+     "fecha_iso": "2026-10-23",
+     "semana": "Semana 3 (19-25 oct)",
+     "id": "oct-li-1023-academy",
+     "titulo": "¿Ese certificado sirve fuera de tu país?",
+     "tipo": "objeción",
+     "formato_publicacion": "LINKEDIN · PDF (carrusel rediagramado a horizontal)",
+     "idea": {
+      "titulo": "¿Ese certificado sirve fuera de tu país?",
+      "formato": "LINKEDIN · PDF (carrusel rediagramado a horizontal)",
+      "desarrollo": "Antes de pagar un curso por el certificado, hay cinco preguntas que conviene hacer."
+     },
+     "cuenta": "Design Modeling Academy"
+    },
+    {
+     "fecha": "Lun 26",
+     "fecha_iso": "2026-10-26",
+     "semana": "Semana 4 (26 oct-1 nov)",
+     "id": "oct-li-1026-academy",
+     "titulo": "Sabes montar una nave",
+     "tipo": "problema",
+     "formato_publicacion": "LINKEDIN · PDF (carrusel rediagramado a horizontal)",
+     "idea": {
+      "titulo": "Sabes montar una nave",
+      "formato": "LINKEDIN · PDF (carrusel rediagramado a horizontal)",
+      "desarrollo": "Sabes montar una nave. ¿Por qué todavía no la calculas tú?"
+     },
+     "cuenta": "Design Modeling Academy"
+    },
+    {
+     "fecha": "Mar 27",
+     "fecha_iso": "2026-10-27",
+     "semana": "Semana 4 (26 oct-1 nov)",
+     "id": "oct-li-1027-gabriel",
+     "titulo": "Botones y orden",
+     "tipo": "objeción",
+     "formato_publicacion": "LINKEDIN · post de texto",
+     "idea": {
+      "titulo": "Botones y orden",
+      "formato": "LINKEDIN · post de texto",
+      "desarrollo": "Si ya viste 20 videos de acero y todavía no te atreves con una nave, no es tu culpa."
+     },
+     "cuenta": "Gabriel Pantoja (primera persona)"
+    },
+    {
+     "fecha": "Mié 28",
+     "fecha_iso": "2026-10-28",
+     "semana": "Semana 4 (26 oct-1 nov)",
+     "id": "oct-li-1028-dg",
+     "titulo": "Una nave, en el orden en que se revisa",
+     "tipo": "caso / metodología",
+     "formato_publicacion": "LINKEDIN · video HORIZONTAL 16:9 (30-45 s) + texto",
+     "idea": {
+      "titulo": "Una nave, en el orden en que se revisa",
+      "formato": "LINKEDIN · video HORIZONTAL 16:9 (30-45 s) + texto",
+      "desarrollo": "Una nave de acero no se aprueba por el modelo. Se aprueba por el orden en que se revisó."
+     },
+     "cuenta": "Design Modeling DG"
+    },
+    {
+     "fecha": "Vie 30",
+     "fecha_iso": "2026-10-30",
+     "semana": "Semana 4 (26 oct-1 nov)",
+     "id": "oct-li-1030-gabriel",
+     "titulo": "Lo caro no es el curso",
+     "tipo": "objeción",
+     "formato_publicacion": "LINKEDIN · post de texto",
+     "idea": {
+      "titulo": "Lo caro no es el curso",
+      "formato": "LINKEDIN · post de texto",
+      "desarrollo": "Lo caro no es el curso. Es el proyecto que no pudiste aceptar."
+     },
+     "cuenta": "Gabriel Pantoja (primera persona)"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "nombre": "GRUPO 5 · Historias de Instagram (y Facebook stories)",
+   "descripcion": "Lunes a viernes, 3–5 frames. Cada día abre la puerta a la pieza del feed; los jueves 15, 22 y 29 son el único slot de venta de la semana.",
+   "reglas": [
+    "El sticker es el CTA.",
+    "Nunca precio ni «inscríbete».",
+    "Máximo 5 frames.",
+    "Las respuestas llegan como DM: se contestan a mano.",
+    "Cada historia dice en qué destacada se guarda. Daniela las guarda cada viernes (ver «destacadas»)."
+   ],
+   "calendario": [
+    {
+     "fecha": "Lun 5",
+     "fecha_iso": "2026-10-05",
+     "semana": "Semana 1 (5-11 oct)",
+     "id": "oct-hist-1005",
+     "titulo": "216 videos y una duda",
+     "tipo": "lanzamiento",
+     "formato_publicacion": "HISTORIAS (4 frames)",
+     "idea": {
+      "titulo": "216 videos y una duda",
+      "formato": "HISTORIAS (4 frames)",
+      "desarrollo": "216 videos. ¿En cuál explicaron el espectro sísmico?"
+     },
+     "destacada": "🎯 BIM + IA"
+    },
+    {
+     "fecha": "Mar 6",
+     "fecha_iso": "2026-10-06",
+     "semana": "Semana 1 (5-11 oct)",
+     "id": "oct-hist-1006",
+     "titulo": "Sus preguntas, en el tutor",
+     "tipo": "detrás de cámara",
+     "formato_publicacion": "HISTORIAS (3 frames)",
+     "idea": {
+      "titulo": "Sus preguntas, en el tutor",
+      "formato": "HISTORIAS (3 frames)",
+      "desarrollo": "Martes de grabación. Y una de sus preguntas, sin editar."
+     },
+     "destacada": "👥 COMUNIDAD"
+    },
+    {
+     "fecha": "Mié 7",
+     "fecha_iso": "2026-10-07",
+     "semana": "Semana 1 (5-11 oct)",
+     "id": "oct-hist-1007",
+     "titulo": "¿En qué módulo estaba?",
+     "tipo": "lanzamiento",
+     "formato_publicacion": "HISTORIAS (4 frames)",
+     "idea": {
+      "titulo": "¿En qué módulo estaba?",
+      "formato": "HISTORIAS (4 frames)",
+      "desarrollo": "Levanta la mano si alguna vez volviste a ver una clase entera para encontrar un minuto."
+     },
+     "destacada": "🎯 BIM + IA"
+    },
+    {
+     "fecha": "Jue 8",
+     "fecha_iso": "2026-10-08",
+     "semana": "Semana 1 (5-11 oct)",
+     "id": "oct-tutor-dip-historias",
+     "titulo": "133 horas y una duda",
+     "tipo": "venta",
+     "formato_publicacion": "HISTORIAS (5 frames)",
+     "idea": {
+      "titulo": "133 horas y una duda",
+      "formato": "HISTORIAS (5 frames)",
+      "desarrollo": "133 horas de clase. Una duda. ¿En cuál estaba?"
+     },
+     "destacada": "🎯 BIM + IA"
+    },
+    {
+     "fecha": "Vie 9",
+     "fecha_iso": "2026-10-09",
+     "semana": "Semana 1 (5-11 oct)",
+     "id": "oct-hist-1009",
+     "titulo": "Aguanta, pero no pasa",
+     "tipo": "valor",
+     "formato_publicacion": "HISTORIAS (4 frames)",
+     "idea": {
+      "titulo": "Aguanta, pero no pasa",
+      "formato": "HISTORIAS (4 frames)",
+      "desarrollo": "La estructura aguanta. Y aun así te la devuelven."
+     },
+     "destacada": "🔩 ACERO"
+    },
+    {
+     "fecha": "Lun 12",
+     "fecha_iso": "2026-10-12",
+     "semana": "Semana 2 (12-18 oct)",
+     "id": "oct-hist-1012",
+     "titulo": "¿Para qué la usaste?",
+     "tipo": "valor",
+     "formato_publicacion": "HISTORIAS (4 frames)",
+     "idea": {
+      "titulo": "¿Para qué la usaste?",
+      "formato": "HISTORIAS (4 frames)",
+      "desarrollo": "Le pediste a la IA que diseñara una viga. No sirvió. ¿Y la dejaste?"
+     },
+     "destacada": "🎯 BIM + IA"
+    },
+    {
+     "fecha": "Mar 13",
+     "fecha_iso": "2026-10-13",
+     "semana": "Semana 2 (12-18 oct)",
+     "id": "oct-cotiza-historias",
+     "titulo": "¿Cuánto cobras por m²?",
+     "tipo": "lead magnet",
+     "formato_publicacion": "historias",
+     "idea": {
+      "titulo": "¿Cuánto cobras por m²?",
+      "formato": "historias",
+      "desarrollo": "¿Cuánto cobras por m² de diseño estructural?"
+     },
+     "destacada": "🎁 HERRAMIENTAS"
+    },
+    {
+     "fecha": "Mié 14",
+     "fecha_iso": "2026-10-14",
+     "semana": "Semana 2 (12-18 oct)",
+     "id": "oct-hist-1014",
+     "titulo": "¿Dónde pondrías AutoCAD?",
+     "tipo": "valor",
+     "formato_publicacion": "HISTORIAS (4 frames)",
+     "idea": {
+      "titulo": "¿Dónde pondrías AutoCAD?",
+      "formato": "HISTORIAS (4 frames)",
+      "desarrollo": "¿Dónde pondrías AutoCAD?"
+     },
+     "destacada": "🎯 BIM + IA"
+    },
+    {
+     "fecha": "Jue 15",
+     "fecha_iso": "2026-10-15",
+     "semana": "Semana 2 (12-18 oct)",
+     "id": "oct-hist-1015",
+     "titulo": "«Me interesa, pero no tengo tiempo»",
+     "tipo": "venta",
+     "formato_publicacion": "HISTORIAS (5 frames)",
+     "idea": {
+      "titulo": "«Me interesa, pero no tengo tiempo»",
+      "formato": "HISTORIAS (5 frames)",
+      "desarrollo": "La frase que más escuchamos antes de que alguien empiece Acero."
+     },
+     "destacada": "🔩 ACERO"
+    },
+    {
+     "fecha": "Vie 16",
+     "fecha_iso": "2026-10-16",
+     "semana": "Semana 2 (12-18 oct)",
+     "id": "oct-hist-1016",
+     "titulo": "¿Quién la calculó al final?",
+     "tipo": "problema",
+     "formato_publicacion": "HISTORIAS (4 frames)",
+     "idea": {
+      "titulo": "¿Quién la calculó al final?",
+      "formato": "HISTORIAS (4 frames)",
+      "desarrollo": "Esa nave que dijiste que no… ¿quién la calculó al final?"
+     },
+     "destacada": "🔩 ACERO"
+    },
+    {
+     "fecha": "Lun 19",
+     "fecha_iso": "2026-10-19",
+     "semana": "Semana 3 (19-25 oct)",
+     "id": "oct-hist-1019",
+     "titulo": "Una fila más arriba",
+     "tipo": "valor",
+     "formato_publicacion": "HISTORIAS (3 frames)",
+     "idea": {
+      "titulo": "Una fila más arriba",
+      "formato": "HISTORIAS (3 frames)",
+      "desarrollo": "Seamos honestos: ¿en qué fila estás?"
+     },
+     "destacada": "🎯 BIM + IA"
+    },
+    {
+     "fecha": "Mar 20",
+     "fecha_iso": "2026-10-20",
+     "semana": "Semana 3 (19-25 oct)",
+     "id": "oct-hist-1020",
+     "titulo": "Tres clics y una tabla",
+     "tipo": "detrás de cámara",
+     "formato_publicacion": "HISTORIAS (3 frames)",
+     "idea": {
+      "titulo": "Tres clics y una tabla",
+      "formato": "HISTORIAS (3 frames)",
+      "desarrollo": "Hoy toca grabar pantalla. Spoiler: hay una tabla de varillas."
+     },
+     "destacada": "👥 COMUNIDAD"
+    },
+    {
+     "fecha": "Mié 21",
+     "fecha_iso": "2026-10-21",
+     "semana": "Semana 3 (19-25 oct)",
+     "id": "oct-hist-1021",
+     "titulo": "Sin Google: el peso de la varilla",
+     "tipo": "valor",
+     "formato_publicacion": "HISTORIAS (4 frames)",
+     "idea": {
+      "titulo": "Sin Google: el peso de la varilla",
+      "formato": "HISTORIAS (4 frames)",
+      "desarrollo": "Sin Google: ¿cómo sacas el peso por metro de una varilla?"
+     }
+    },
+    {
+     "fecha": "Jue 22",
+     "fecha_iso": "2026-10-22",
+     "semana": "Semana 3 (19-25 oct)",
+     "id": "oct-hist-1022",
+     "titulo": "El espejo: cuatro bloques",
+     "tipo": "venta",
+     "formato_publicacion": "HISTORIAS (5 frames)",
+     "idea": {
+      "titulo": "El espejo: cuatro bloques",
+      "formato": "HISTORIAS (5 frames)",
+      "desarrollo": "Llevas años modelando bien. Y sigues esperando a que te digan qué modelar."
+     },
+     "destacada": "🎯 BIM + IA"
+    },
+    {
+     "fecha": "Vie 23",
+     "fecha_iso": "2026-10-23",
+     "semana": "Semana 3 (19-25 oct)",
+     "id": "oct-hist-1023",
+     "titulo": "Fuera antes de presentar",
+     "tipo": "problema",
+     "formato_publicacion": "HISTORIAS (4 frames)",
+     "idea": {
+      "titulo": "Fuera antes de presentar",
+      "formato": "HISTORIAS (4 frames)",
+      "desarrollo": "Lo dejaron fuera antes de abrir su propuesta."
+     },
+     "destacada": "🎯 BIM + IA"
+    },
+    {
+     "fecha": "Lun 26",
+     "fecha_iso": "2026-10-26",
+     "semana": "Semana 4 (26 oct-1 nov)",
+     "id": "oct-hist-1026",
+     "titulo": "¿Diseñarlo o montarlo?",
+     "tipo": "problema",
+     "formato_publicacion": "HISTORIAS (4 frames)",
+     "idea": {
+      "titulo": "¿Diseñarlo o montarlo?",
+      "formato": "HISTORIAS (4 frames)",
+      "desarrollo": "Tú ya sabes lo que el software no enseña."
+     },
+     "destacada": "🔩 ACERO"
+    },
+    {
+     "fecha": "Mar 27",
+     "fecha_iso": "2026-10-27",
+     "semana": "Semana 4 (26 oct-1 nov)",
+     "id": "oct-hist-1027",
+     "titulo": "Preparando el video de mañana",
+     "tipo": "detrás de cámara",
+     "formato_publicacion": "HISTORIAS (3 frames)",
+     "idea": {
+      "titulo": "Preparando el video de mañana",
+      "formato": "HISTORIAS (3 frames)",
+      "desarrollo": "Mañana sale un video distinto. Hoy lo preparamos."
+     },
+     "destacada": "👥 COMUNIDAD"
+    },
+    {
+     "fecha": "Mié 28",
+     "fecha_iso": "2026-10-28",
+     "semana": "Semana 4 (26 oct-1 nov)",
+     "id": "oct-hist-1028",
+     "titulo": "«¿Me sirve si vengo de obra?»",
+     "tipo": "testimonio",
+     "formato_publicacion": "HISTORIAS (4 frames)",
+     "idea": {
+      "titulo": "«¿Me sirve si vengo de obra?»",
+      "formato": "HISTORIAS (4 frames)",
+      "desarrollo": "«¿Me sirve si vengo de obra?»"
+     },
+     "destacada": "⭐ ALUMNOS"
+    },
+    {
+     "fecha": "Jue 29",
+     "fecha_iso": "2026-10-29",
+     "semana": "Semana 4 (26 oct-1 nov)",
+     "id": "oct-hist-1029",
+     "titulo": "Acero por dentro",
+     "tipo": "venta",
+     "formato_publicacion": "HISTORIAS (5 frames)",
+     "idea": {
+      "titulo": "Acero por dentro",
+      "formato": "HISTORIAS (5 frames)",
+      "desarrollo": "Te abro la Especialización en Acero. Sin filtro."
+     },
+     "destacada": "🔩 ACERO"
+    },
+    {
+     "fecha": "Vie 30",
+     "fecha_iso": "2026-10-30",
+     "semana": "Semana 4 (26 oct-1 nov)",
+     "id": "oct-hist-1030",
+     "titulo": "No te mandó factura",
+     "tipo": "objeción",
+     "formato_publicacion": "HISTORIAS (4 frames)",
+     "idea": {
+      "titulo": "No te mandó factura",
+      "formato": "HISTORIAS (4 frames)",
+      "desarrollo": "El proyecto que no aceptaste no te mandó factura."
+     },
+     "destacada": "🎯 BIM + IA"
+    }
+   ]
+  }
+ ],
+ "lead_magnets": {
+  "nota": "Octubre sale con UN lead magnet nuevo (COTIZA) y ninguno más. Los de respaldo ya existen y funcionan. Si en la semana 2 uno no genera DM, se reemplaza por otro de esta lista, no por uno nuevo.",
+  "nuevo": [
+   {
+    "nombre": "Cotizador de Honorarios Estructurales",
+    "palabra": "COTIZA",
+    "estado": "Funnel en GHL montado y probado por Dayana (30-sep). Entra en el workflow de recursos de Ester (rama COTIZADOR: acceso-cotizador-honorarios, correo de acceso, comunidad y oportunidad en NUEVO LEAD MAGNET) y en su workflow propio (lead-cotizador, aviso interno, membresía y secuencia S5). OpenReply se monta justo después de publicar el reel del 13 y el carrusel del 15. Falta volver a pegar ghl-landing.html con el formulario nativo.",
+    "piezas": [
+     "oct-cotiza-reel",
+     "oct-cotiza-historias",
+     "oct-cotiza-carrusel",
+     "oct-blog-cobrar-diseno-estructural"
+    ],
+    "puente": "Especialización en Acero / Diplomado en Estructuras (secuencia de correo S5)"
+   }
+  ],
+  "respaldo": [
+   {
+    "nombre": "Calculadora de Zapatas",
+    "palabra": "ZAPATA",
+    "por_que": "El que más leads trajo (162 etiquetados) y alimenta ACERO. El que mejor convierte: 169 al bot → 151 con acceso (89 %)."
+   },
+   {
+    "nombre": "5 verificaciones en acero",
+    "palabra": "ACERO",
+    "por_que": "Su post DM157 es el mejor PROMO de la cuenta (159 comentarios, 356 guardados). CTA de todas las piezas de ACERO. ⚠ Auditoría: 174 leads y solo 43 con acceso (25 %): prueba de punta a punta antes del 9-oct."
+   },
+   {
+    "nombre": "Test de Nivel BIM",
+    "palabra": "NIVEL",
+    "por_que": "Puerta al Máster y CTA de todas sus piezas. ⚠ Auditoría: 2 al bot, 1 lead y 0 accesos en septiembre: probar el workflow antes del 12-oct."
+   },
+   {
+    "nombre": "Memoria de cálculo",
+    "palabra": "MEMORIA",
+    "por_que": "Vivo: 34 al bot → 33 con acceso. Se usa solo si una pieza de cálculo lo pide. ⚠ Hoy lo escuchan 3 automatizaciones: dejar una sola antes de usarlo."
+   }
+  ],
+  "retirados": [
+   {
+    "nombre": "Pack de 5 scripts de Dynamo",
+    "palabra": "DYNAMO",
+    "por_que": "Auditoría de septiembre: su reel sacó 0 comentarios y OpenReply falla 4 de 4 porque GHL también contesta. El recurso sigue en /recursos; la palabra sale de los CTA."
+   },
+   {
+    "nombre": "Guía Revit + ChatGPT",
+    "palabra": "CHATGPT",
+    "por_que": "No tiene campaña ni workflow que conteste: nadie recibe nada. Fuera de los CTA hasta que se vuelva a montar."
+   }
+  ],
+  "mapa_cta": [
+   {
+    "palabra": "NIVEL",
+    "fecha": "Jue 8 (historia del creador), Lun 12, Mié 14, Lun 19, Mar 20, Mié 21, Jue 22, Vie 23, Vie 30",
+    "producto": "Máster"
+   },
+   {
+    "palabra": "ACERO",
+    "fecha": "Vie 9, Vie 16, Lun 26, Mar 27, Mié 28, Jue 29",
+    "producto": "Acero"
+   },
+   {
+    "palabra": "COTIZA",
+    "fecha": "Mar 13, Jue 15 (+ historias Mar 13 y blog Sáb 17)",
+    "producto": "Cotizador → Acero/Diplomado"
+   },
+   {
+    "palabra": "DIPLOMADO",
+    "fecha": "Lun 5, Mié 7 (lanzamiento del tutor)",
+    "producto": "Diplomado · montar antes del 5 o CTA a DM"
+   }
+  ]
+ },
+ "destacadas": {
+  "responsable": "Daniela",
+  "nota": "Las cinco de siempre. Se limpian antes del lunes 5 y se alimentan cada viernes con las historias de la semana.",
+  "lista": [
+   {
+    "destacada": "🔩 ACERO",
+    "que_va": "Verificaciones, conexiones, casos de obra al software y la venta de los jueves de Acero.",
+    "agregar": [
+     "oct-hist-1009",
+     "oct-hist-1015",
+     "oct-hist-1016",
+     "oct-hist-1026",
+     "oct-hist-1029"
+    ],
+    "quitar": "Frames con fechas o cupos ya vencidos, y cualquier frame que muestre precio."
+   },
+   {
+    "destacada": "🎯 BIM + IA",
+    "que_va": "Máster, test de nivel, ranking de software, el tutor de IA del Diplomado.",
+    "agregar": [
+     "oct-hist-1005",
+     "oct-hist-1007",
+     "oct-tutor-dip-historias",
+     "oct-hist-1012",
+     "oct-hist-1014",
+     "oct-hist-1019",
+     "oct-hist-1022",
+     "oct-hist-1023",
+     "oct-hist-1030"
+    ],
+    "quitar": "Frames que piden comentar CHATGPT (nadie la contesta) y los que prometen funciones de IA en Revit que no existen."
+   },
+   {
+    "destacada": "🎁 HERRAMIENTAS",
+    "que_va": "Los recursos gratis: cotizador, calculadora de zapatas, memoria de cálculo, 5 verificaciones, test de nivel.",
+    "agregar": [
+     "oct-cotiza-historias"
+    ],
+    "quitar": "Frames que piden DYNAMO o CHATGPT: se cambian por un sticker de enlace a /recursos o se borran."
+   },
+   {
+    "destacada": "👥 COMUNIDAD",
+    "que_va": "Detrás de cámara y las preguntas de la comunidad.",
+    "agregar": [
+     "oct-hist-1006",
+     "oct-hist-1020",
+     "oct-hist-1027"
+    ],
+    "quitar": "Recaps de más de 3 meses."
+   },
+   {
+    "destacada": "⭐ ALUMNOS",
+    "que_va": "Testimonios reales con permiso.",
+    "agregar": [
+     "oct-hist-1028 (solo si sale el testimonio real; si sale la reserva, va a ACERO)"
+    ],
+    "quitar": "Nada, salvo que un alumno retire su permiso."
+   }
+  ]
+ },
+ "piezas": [],
+ "pauta": [],
+ "banco_reserva": [
+  "ago-derivas-deformaciones",
+  "ago-tip-revit-ia",
+  "ago-revit-ia-futuro"
+ ],
+ "correos": [
+  {
+   "fecha": "Lun 5 · Semana 1",
+   "fecha_iso": "2026-10-05",
+   "id": "oct-tutor-dip-correo-alumnos",
+   "nombre": "Tu Diplomado ya te dice dónde está la respuesta",
+   "asunto": "Tu Diplomado ya te dice en qué lección y en qué minuto está la respuesta",
+   "preencabezado": "Está dentro de tu curso. No hay que activarlo.",
+   "segmento": "Alumnos activos del Diplomado Universitario Internacional BIM: Edificaciones de Acero Estructural y Hormigón Armado. [PENDIENTE: etiqueta exacta en GHL]",
+   "objetivo": "Tu Diplomado ya te dice en qué lección y en qué minuto está la respuesta",
+   "cuerpo": "Hola, {{contact.first_name}}:\n\nSi alguna vez tuviste que abrir tres clases para encontrar dónde se explicaba algo, esto te va a ahorrar ese rato.\n\nTu Diplomado BIM en Estructuras tiene ahora un Tutor IA. Le escribes la duda con tus palabras, por ejemplo «¿cómo creo el espectro sísmico y lo ingreso en Robot?», y te responde con las clases del propio Diplomado, diciéndote en qué lección y en qué minuto se explica. Para esa pregunta te manda al Módulo 2, Lección 25, minuto 04:09.\n\nDónde está: entra a tu curso y pulsa el botón «Abrir el Tutor IA». No hay que activarlo y funciona a cualquier hora. Tienes 20 preguntas al día.\n\nQué tiene cargado: los módulos 2 a 9, 216 videos. El Módulo 1, de iniciación en Revit, todavía no.\n\nHay dos cosas que hace a propósito. Si algo no está en las clases, te lo dice y te sugiere la asesoría con los instructores. Y si la pregunta pide una cifra de norma, te pide verificarla en la norma vigente. No revisa proyectos personales ni sustituye a tus instructores.\n\nPruébalo hoy con la duda que tengas pendiente. Si te responde algo que no te cuadra, contesta este correo con la pregunta tal cual: nos sirve para corregirlo.\n\n[BOTÓN: Abrir mi curso → PENDIENTE URL del área de miembros]\n\nEl equipo de Design Modeling Academy",
+   "condicion": "Plantilla ligera, sin imágenes en base64 (Gmail recorta a los 102 KB y se come el botón)."
+  },
+  {
+   "fecha": "Mar 6 · Semana 1",
+   "fecha_iso": "2026-10-06",
+   "id": "oct-tutor-dip-correo-prospectos",
+   "nombre": "133 horas de clase y el minuto 04:09",
+   "asunto": "133 horas de clase y la respuesta en el minuto 04:09",
+   "preencabezado": "Cómo se estudia ahora el Diplomado BIM en Estructuras.",
+   "segmento": "Leads del Módulo 1 gratis del Diplomado (principal). [DECISIÓN Dayana] sumar leads de ZAPATA sin compra. EXCLUIR: alumnos del Diplomado y alumnos de ACERO (ACERO tiene su propio tutor).",
+   "objetivo": "133 horas de clase y la respuesta en el minuto 04:09",
+   "cuerpo": "Hola, {{contact.first_name}}:\n\nUn curso largo tiene un problema que no sale en el temario: volver a encontrar algo. Sabes que el tema se explicó, pero no en cuál de las clases.\n\nEn el Diplomado BIM en Estructuras lo resolvimos con un tutor de IA dentro del curso. El alumno le pregunta con sus palabras y el tutor responde con las clases del propio Diplomado, indicando la lección y el minuto. A la pregunta «¿cómo creo el espectro sísmico y lo ingreso en Robot?» contesta con el Módulo 2, Lección 25, minuto 04:09.\n\nSirve para repasar antes de un proyecto o de una entrega, y para la duda que aparece a medianoche, cuando no hay a quién preguntar.\n\nTiene cargados los módulos 2 a 9: acero y hormigón sismorresistente, conexiones precalificadas, refuerzo en hormigón armado, cimentaciones, documentación BIM, instalaciones MEP y presupuestos.\n\nY tiene límites puestos a propósito: si algo no está en las clases, lo dice y sugiere la asesoría con los instructores. Las cifras de norma no las dicta: pide verificarlas en la norma vigente.\n\nSi estás pensando en especializarte en estructuras con BIM y quieres saber si el Diplomado encaja con lo que haces hoy, agenda 30 minutos con el equipo.\n\n[BOTÓN: Agendar 30 minutos → https://api.leadconnectorhq.com/widget/booking/bIVuNHNojGEgH3gf6yXe]\n\nEl equipo de Design Modeling Academy\n\nPD: si prefieres verlo primero, el Módulo 1 del Diplomado es gratuito: https://funnel.dgdesignmodeling.com/acceso-gratis-modulo-diplomado-bim-form. El tutor está en el Diplomado completo, no en el módulo gratuito.",
+   "condicion": "Sin precio del Diplomado (no hay dato aprobado) y sin fecha de convocatoria."
+  },
+  {
+   "fecha": "Jue 8 · Semana 1",
+   "fecha_iso": "2026-10-08",
+   "id": "oct-correo-1008",
+   "nombre": "Novedades de octubre y el test de nivel",
+   "asunto": "Lo nuevo de octubre (y un test de 5 minutos)",
+   "preencabezado": "20 preguntas para saber en qué nivel BIM estás de verdad.",
+   "segmento": "Lista propia completa: leads de recursos gratuitos (guía, ebook, ZAPATA, MEMORIA, Módulo 1) y compradores de cursos baratos. EXCLUIR: alumnos del Máster y del Diplomado, quien ya tenga resultado del test de nivel en GHL y quien recibió el 6-oct el correo del tutor (oct-tutor-dip-correo-prospectos) si abrió ese correo.",
+   "objetivo": "Lo nuevo de octubre (y un test de 5 minutos)",
+   "cuerpo": "Hola, {{contact.first_name}}:\n\nTe escribo corto, con lo nuevo de octubre.\n\nLo primero: el Diplomado BIM en Estructuras tiene un tutor de IA dentro del curso. El alumno le escribe la duda con sus palabras y el tutor responde con las clases del propio Diplomado, indicando la lección y el minuto.\n\nLo segundo: en los próximos días publicamos una herramienta gratuita para quienes cotizan diseños estructurales por su cuenta. Te aviso cuando esté.\n\nY lo tercero, si todavía no lo hiciste: el test de nivel BIM.\n\nCasi todos los que nos escriben dicen «manejo Revit». Pero manejar Revit y coordinar un proyecto BIM no son lo mismo, y esa diferencia es la que decide qué proyectos te llegan.\n\nEl test son 20 preguntas y unos 5 minutos. Al terminar sabes en cuál de los 4 niveles estás (Modelador BIM, Coordinador BIM, BIM Manager 4D-5D o Especialista BIM + IA) y qué te falta para el siguiente.\n\nUna aclaración honesta: no es una certificación ni un diploma. Es un diagnóstico para saber dónde estás parado.\n\nUn abrazo,\n\nEquipo Design Modeling Academy\n\nPD: si ya lo hiciste, respóndeme con tu nivel. Me sirve para saber qué contenido preparar.",
+   "condicion": "Sin precio de nada. El segundo punto (herramienta para cotizar) se deja solo si el funnel del cotizador está montado para el Mar 13; si no, se borra ese párrafo. Sin fechas de inicio ni cupos."
+  },
+  {
+   "fecha": "Mié 14 · Semana 2",
+   "fecha_iso": "2026-10-14",
+   "id": "oct-tutor-dip-correo-alumnos-recordatorio",
+   "nombre": "Recordatorio: tres preguntas para estrenarlo",
+   "asunto": "Una pregunta para estrenar tu Tutor IA",
+   "preencabezado": "Botón «Abrir el Tutor IA», dentro de tu curso.",
+   "segmento": "Mismo segmento del Lun 5, filtrado a quien no lo abrió. [PENDIENTE: confirmar que GHL permite ese filtro]",
+   "objetivo": "Una pregunta para estrenar tu Tutor IA",
+   "cuerpo": "Hola, {{contact.first_name}}:\n\nTe lo contamos la semana pasada y por si se quedó en la bandeja: tu Diplomado BIM en Estructuras tiene un Tutor IA dentro del curso.\n\nSi no sabes por dónde empezar, pregúntale lo que tengas que repasar antes de tu próxima entrega. Te dirá en qué lección y en qué minuto está.\n\n[BOTÓN: Abrir mi curso → PENDIENTE URL del área de miembros]\n\nEl equipo de Design Modeling Academy",
+   "condicion": ""
+  },
+  {
+   "fecha": "Jue 15 · Semana 2",
+   "fecha_iso": "2026-10-15",
+   "id": "oct-correo-1015",
+   "nombre": "La Especialización en Acero, con precio",
+   "asunto": "¿Cuántas naves dijiste que no este año?",
+   "preencabezado": "La Especialización en Acero, ahora con tutor de IA: qué incluye y cuánto cuesta.",
+   "segmento": "Leads de ACERO (bot de comentarios y formulario) sin compra + leads de ZAPATA y COTIZA sin compra + compradores de cursos baratos (la escalera que más compra Acero). EXCLUIR: alumnos de Acero y quien respondió en el formulario que quiere «fabricar, soldar o montar».",
+   "objetivo": "¿Cuántas naves dijiste que no este año?",
+   "cuerpo": "Hola, {{contact.first_name}}:\n\nUna pregunta directa: ¿cuántos proyectos de acero dijiste que no porque no podías calcularlos tú?\n\nEn una llamada, un ingeniero nos contó que en dos años rechazó unos 8. No le faltaban clientes. Le faltaba poder calcularlos, y el ingeniero externo del que dependía cobraba aparte y tardaba.\n\nPara eso existe la Especialización en Diseño Estructural BIM en Acero. Es para quien quiere diseñar y calcular en software, no para fabricar ni soldar.\n\nLo que incluye:\n\n· 4 cursos: Análisis y Diseño Simplificado de Estructuras Complejas de Acero; Guía Práctica para el Cálculo Tipo Cerchas en Naves Industriales; Modelado BIM en Hormigón Armado y Acero Estructural; y Teoría y Cálculo de Uniones Metálicas en Edificaciones.\n\n· Revit, Robot Structural Analysis y Advance Steel, con 4 certificaciones oficiales de Autodesk.\n\n· 100 % asincrónica: estudias a tu ritmo, sin horario al que llegar tarde, y el acceso no caduca.\n\n· Un tutor de IA entrenado con las clases del programa. Le escribes la duda y te dice en qué sesión y en qué minuto se explicó. Si algo no está en las clases, te lo dice.\n\nEl precio es de $225 USD, con el tutor de IA incluido.\n\nEl temario completo y la inscripción están en el botón de abajo. Y si tienes una duda antes de decidir, responde este correo: te contesta una persona del equipo.\n\nUn abrazo,\n\nEquipo Design Modeling Academy\n\nPD: si cotizas diseños por tu cuenta, esta semana lanzamos un cotizador de honorarios gratis que te dice cuánto te queda por hora: https://funnel.dgdesignmodeling.com/acceso-gratis-cotizador-honorarios-form",
+   "condicion": "ÚNICA pieza de octubre con precio (regla: $225 en pauta y en este correo, nunca en orgánico). Antes de enviar: (1) abrir el enlace de pago y comprobar que cobra $225; (2) comprobar que el botón del Tutor IA está en los 4 cursos de Acero (tutor-acero/MONTAJE-GHL.md). Si el tutor no está, se borran el punto del tutor y «con el tutor de IA incluido»; el precio se queda en $225. Sin cupos ni fechas de inicio."
+  },
+  {
+   "fecha": "Mar 20 · Semana 3",
+   "fecha_iso": "2026-10-20",
+   "id": "oct-correo-1020",
+   "nombre": "Diagnóstico BIM gratis y cita",
+   "asunto": "Antes de decidir nada: un diagnóstico BIM de 20 preguntas",
+   "preencabezado": "Agendas 30 minutos y un asesor lo revisa contigo.",
+   "segmento": "Leads del Máster sin cita + quienes hicieron el test de nivel + lista propia con perfil «trabajando en proyectos». EXCLUIR: alumnos del Máster, quien ya tiene cita agendada, y quien dijo NO a la reserva con el setter (a esos se les ofrece Diplomado o Acero, no el Máster).",
+   "objetivo": "Antes de decidir nada: un diagnóstico BIM de 20 preguntas",
+   "cuerpo": "Hola, {{contact.first_name}}:\n\nSi llevas tiempo pensando en el Máster y lo dejas para «cuando tenga tiempo», te entiendo. Casi todos los que estudian con nosotros trabajan: en obra, en oficina, algunos con otra maestría encima.\n\nPor eso las clases están grabadas y van a tu ritmo. Una o dos horas al día, cuando puedas. Y el proyecto final lo haces sobre tu trabajo real.\n\nPero antes de hablar de tiempo hay una pregunta más útil: ¿desde dónde empiezas?\n\nPara eso tenemos un diagnóstico BIM gratuito. Funciona así:\n\n1. Agendas 30 minutos con un asesor del equipo.\n\n2. Antes de la cita te llega el diagnóstico: 20 preguntas sobre tu nivel BIM y tu base técnica, sea estructural o de arquitectura.\n\n3. En la llamada, el asesor lo revisa contigo: dónde estás, qué te falta y si el Máster Internacional en BIM Management e Inteligencia Artificial encaja con lo que haces hoy.\n\nSin compromiso. A veces la respuesta es que todavía no es tu momento, y preferimos decírtelo antes que venderte algo que no necesitas.\n\nUn abrazo,\n\nEquipo Design Modeling Academy\n\nPD: si prefieres empezar por tu cuenta, el test de nivel BIM es gratis y te da el resultado al momento: https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form",
+   "condicion": "SIN PRECIO del Máster ni de la reserva en todo el correo: el precio vive en la llamada. Antes de enviar, Patricio confirma: (1) que el calendario bIVuNHNojGEgH3gf6yXe es el de las citas del Máster; (2) que el closer manda el diagnóstico (test-master-bim, formulario c9q5RXwZp3kDRuwk1eCz) por WhatsApp a todo el que agende desde este correo; (3) que los recordatorios de cita están activos (la mitad de los agendados no se presenta)."
+  },
+  {
+   "fecha": "Mié 28 · Semana 4",
+   "fecha_iso": "2026-10-28",
+   "id": "oct-correo-1028",
+   "nombre": "Lo caro no es el curso",
+   "asunto": "Lo caro no es el curso",
+   "preencabezado": "Es el proyecto que no pudiste aceptar.",
+   "segmento": "Dos plantillas. RAMA A (Acero): leads de ACERO, ZAPATA y COTIZA sin compra que respondieron «diseñar, modelar o calcular en software»; EXCLUIR a quien respondió «fabricar, soldar o montar» y a los alumnos de Acero. RAMA B (Diplomado): leads del Módulo 1 gratis del Diplomado y leads del Máster que dijeron NO a la reserva; EXCLUIR alumnos del Diplomado. Nadie recibe las dos ramas.",
+   "objetivo": "Lo caro no es el curso",
+   "cuerpo": "Hola, {{contact.first_name}}:\n\nCuando alguien nos dice que no se forma por dinero, casi siempre usa la misma frase: «cuando me paguen».\n\nEs una razón real. El flujo de caja de un ingeniero independiente es irregular, y nadie debería endeudarse por un curso.\n\nPero hay otro costo que no llega en factura. La nave que dijiste que no porque no podías calcularla. El proyecto que le pasaste a otro, que la próxima vez se lo piden directamente a él.\n\nEse costo no se ve en el mes. Se ve al final del año, sumando lo que no entró.\n\n[RAMA A · Acero]\n\nSi quieres calcular tú lo que hoy le pasas a otro, la Especialización en Diseño Estructural BIM en Acero es el camino corto: 4 cursos en Revit, Robot y Advance Steel, 100 % asincrónica, con acceso que no caduca y un tutor de IA entrenado con las clases.\n\n[RAMA B · Diplomado]\n\nSi lo que buscas es especializarte en estructuras con BIM de principio a fin, el Diplomado BIM en Estructuras cubre acero y hormigón sismorresistente, cimentaciones, documentación BIM y presupuestos. Y tiene un tutor de IA que te dice la lección y el minuto donde se explicó cada tema.\n\n[CIERRE COMÚN]\n\nY si hoy no llegas a fin de mes, no te inscribas. Empieza por lo gratis y vuelve cuando puedas. Te seguimos mandando recursos.\n\nSi tienes dudas sobre cuál te conviene, responde este correo. Te contesta una persona del equipo.\n\nUn abrazo,\n\nEquipo Design Modeling Academy\n\n[SOLO RAMA B] PD: si prefieres verlo primero, el Módulo 1 del Diplomado es gratuito: https://funnel.dgdesignmodeling.com/acceso-gratis-modulo-diplomado-bim-form",
+   "condicion": "SIN PRECIO (el precio de Acero solo va en el correo del Jue 15). La rama A menciona el tutor solo si el botón está en los 4 cursos de Acero; si no, se borra «y un tutor de IA entrenado con las clases». Si el testimonio del Mié 28 salió con alumno real y permiso, se puede añadir antes del cierre común una línea con enlace al reel; si salió el reserva, no. Sin cupos ni fechas de inicio."
+  }
+ ],
+ "auditoria_previa": {
+  "mes": "2026-09",
+  "artefacto": "https://claude.ai/artifact/BNSfUg4TDFQjibVyN4ATt8",
+  "archivos": [
+   "matriz-viral/auditorias/2026-09-hallazgos.md",
+   "matriz-viral/auditorias/2026-09-auditoria-mes.json"
+  ],
+  "resumen": "Funcionó: el dato de cálculo verificable y el tutorial paso a paso con palabra. No funcionó: los anuncios del tutor, Dynamo, el carrusel de las 4 puertas y las campañas de pauta de lead magnets. Roto: MEMORIA y DYNAMO con dos automatizaciones, ACERO pierde el 75 % antes del acceso y NIVEL no entrega acceso."
+ },
+ "kpis_mensuales": {
+  "nota": "De dónde arranca octubre (septiembre, del 1 al 27, sin los 403 contactos cargados a mano). Fuente: diagnóstico de Dayana del 30-sep sobre Meta y GHL; cobros en fuentes/ingresos/.",
+  "gasto_meta": {
+   "agosto": 1144,
+   "septiembre": 1151
+  },
+  "resultados_meta": {
+   "agosto": 1177,
+   "septiembre": 789
+  },
+  "costo_por_resultado": {
+   "agosto": 0.97,
+   "septiembre": 1.46
+  },
+  "leads_ghl": {
+   "agosto": 1016,
+   "septiembre": 844
+  },
+  "cobrado_neto_26ago_24sep": 7486.81,
+  "metas_octubre": [
+   "Leads en GHL de vuelta a ≥ 230 por semana",
+   "Ventas de ACERO a $225 atribuibles a WhatsApp o formulario, medidas por semana",
+   "Máster: todos los agendados con SÍ a los $500; asistencia > 50 %",
+   "COTIZA: DM y leads etiquetados lead-cotizador"
+  ]
+ },
+ "pendientes": [
+  "El detalle operativo está en checklist_tareas, con responsable.",
+  "Qué funciona y de dónde sale: HISTORICO-JUL-SEP.md y COMPRADORES-VS-NO.md."
+ ],
+ "resumen_cierre": "Octubre por grupos: 19 piezas de feed escritas para vender Máster y ACERO, 1 lead magnet nuevo (COTIZA) y 4 de respaldo, historias diarias con 1 venta por semana, comunidades, 4 blogs, LinkedIn en 3 cuentas, correos semanales y una pauta que primero corrige lo que hizo perder leads en septiembre.",
+ "pie": "Design Modeling Academy · Matriz de contenido octubre 2026 (5 oct – 1 nov) · construida sobre la matriz viral (métricas reales de Instagram vía Meta Graph API), el histórico jul-sep y el análisis de quién compra y quién no.",
+ "artefactos": {
+  "artefacto": "https://claude.ai/artifact/6Q8f77WzYEqSMExS1h9Mx3",
+  "pages": "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/entregables/matriz-octubre-artefacto.html",
+  "json_app": "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/entregables/matriz-octubre-2026-COMPLETA.json",
+  "word": "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/entregables/Matriz-Contenido-Octubre-2026-DMA.docx"
+ }
+}

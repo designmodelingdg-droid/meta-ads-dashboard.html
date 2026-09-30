@@ -50,10 +50,12 @@ SONDA_GHL = pathlib.Path("matriz-viral/fuentes/ghl-sonda.json")
 # workflow publicado ha disparado alguna vez: «publicado» no lo garantiza.
 EMBUDO_GHL = pathlib.Path("matriz-viral/fuentes/ghl/embudo-leadmagnets.json")
 
-# Las seis palabras que la matriz declara activas (regla del 11-sep). Se
-# comparan contra lo que OpenReply tiene montado de verdad: esa diferencia es
-# justo lo que este script existe para enseñar.
-PALABRAS_MATRIZ = ["ZAPATA", "ACERO", "NIVEL", "CHATGPT", "MEMORIA", "DYNAMO"]
+# Las palabras que la matriz declara activas: las seis de la regla del 11-sep
+# y COTIZA, que se suma el 30-sep con el Cotizador de Honorarios. Se comparan
+# contra lo que OpenReply tiene montado de verdad: esa diferencia es justo lo
+# que este script existe para enseñar. COTIZA sale «ausente» hasta que se
+# publique su primer post (su campaña se monta después, por decisión de Dayana).
+PALABRAS_MATRIZ = ["ZAPATA", "ACERO", "NIVEL", "CHATGPT", "MEMORIA", "DYNAMO", "COTIZA"]
 
 # EL CORTE DE LOS BOTS. Hasta el 14-sep inclusive los clics estan inflados por
 # bots de vista previa; desde el 15 son personas. No es una deduccion de la

@@ -70,14 +70,21 @@ REELS = [
   "duracion": "30-35 s",
   "cta": "DYNAMO → pack de 5 scripts (recurso ya publicado)",
   "nota": "El dato que ordena la pieza es la frase del cierre, y es la más compartible de "
-          "las cinco. El cuadro de advertencias de Revit no se puede ordenar ni filtrar ni "
-          "pasarle a nadie: ese es justo el hueco que llena el script 01 del pack.",
+          "las cinco. El cuadro de advertencias de Revit agrupa por tipo pero no ordena por "
+          "gravedad ni filtra, y su exportación nativa es un HTML que hay que limpiar: ese es "
+          "el hueco que llena el script 01 del pack. CORREGIDO 30-sep: el guion decía que el "
+          "cuadro «no se le puede pasar a nadie», y Revit sí exporta las advertencias "
+          "(help.autodesk.com, «Export Warnings to a File»: HTML que se abre en Excel). "
+          "ANTES DE PUBLICAR: una sola automatización para DYNAMO (auditoría de septiembre: "
+          "OpenReply y GHL chocan y fallan los DM).",
   "guion": [
    ("0:00-0:05", "Primer plano.", "Un modelo con cuatrocientos avisos sin leer no es un modelo grande. Es un presupuesto con cuatrocientas sorpresas dentro.", "400 SORPRESAS **DENTRO**"),
    ("0:05-0:13", "Screen-record: abriendo Manage → Warnings, la lista larga.", "Este cuadro lo abre todo el mundo una vez, ve el número, lo cierra y sigue trabajando.", "SE ABRE UNA VEZ Y SE **CIERRA**"),
-   ("0:13-0:22", "Pantalla: el cuadro, intentando ordenar sin poder.", "Y hay una razón: no se puede ordenar, no se puede filtrar y no se le puede pasar a nadie. Así no se revisa nada.", "NO SE ORDENA. NO SE **FILTRA**"),
-   ("0:22-0:30", "Pantalla: el mismo contenido ya en una hoja ordenable.", "En una hoja sí. Ordenado por gravedad, con el ID de cada elemento culpable, y se lo puedes mandar a quien modeló.", "EN UNA HOJA **SÍ**"),
-   ("0:30-0:36", "Cierre a cámara.", "Eso lo hace un script de veinte líneas. Comenta DYNAMO y te paso cinco, con el código explicado por dentro. Tres de ellos ni siquiera tocan tu modelo.", "COMENTA **DYNAMO**")]},
+   ("0:13-0:22", "Pantalla: el cuadro agrupado por tipo, desplegando grupos; luego el HTML exportado, desordenado.", "Y hay una razón: el cuadro agrupa por tipo, pero no ordena por gravedad ni filtra. Y lo que exporta es un HTML que hay que limpiar. Así no se revisa nada.", "NO ORDENA POR **GRAVEDAD**"),
+   ("0:22-0:30", "Pantalla: el CSV abierto en Excel, ordenado por gravedad, con la columna de ID.", "En una hoja sí. Una fila por aviso, con su gravedad y el ID de cada elemento culpable, y se la mandas a quien modeló.", "EN UNA HOJA **SÍ**"),
+   ("0:30-0:36", "Cierre a cámara.", "Eso lo hace un script corto de Dynamo que solo lee el modelo. Comenta DYNAMO y te paso cinco, con el código explicado por dentro. Tres de ellos ni siquiera tocan tu modelo.", "COMENTA **DYNAMO**")],
+  "caption": "Un modelo con 400 avisos sin leer no es un modelo grande. Es un presupuesto con 400 sorpresas dentro. 😬\n\nEl cuadro de advertencias de Revit (Gestionar → Advertencias) lo abre todo el mundo una vez: ve el número, lo cierra y sigue modelando.\n\nNo es pereza. El cuadro agrupa por tipo, pero no te deja ordenar por gravedad ni filtrar, y lo que exporta es un HTML que hay que limpiar antes de poder trabajar con él.\n\nEn una hoja cambia todo:\n✅ una fila por advertencia\n✅ su gravedad\n✅ el ID de cada elemento que la causa\n✅ lista para mandársela a quien modeló\n\nEso lo hace un script corto de Dynamo que solo lee el modelo: no cambia nada.\n\n💬 Comenta DYNAMO y te paso el pack de 5 scripts, con el código explicado por dentro.\n\n¿Cuántos avisos tiene tu modelo ahora mismo? Dinos el número 👇\n\n#Revit #Dynamo #BIM #ModeladoBIM #RevitTips #DesignModelingDG",
+  "caption_tiktok_youtube": "Un modelo con 400 avisos sin leer es un presupuesto con 400 sorpresas dentro. El cuadro de advertencias de Revit agrupa por tipo, pero no ordena por gravedad ni filtra; en una hoja, sí. ¿Cuántos avisos tiene tu modelo ahora mismo? 👇 #Revit #Dynamo #BIM"},
 
  {"id": "reel-cita-norma", "fecha": "Viernes 25", "titulo": "«Según la norma» no es una cita",
   "estado": "POR GRABAR",

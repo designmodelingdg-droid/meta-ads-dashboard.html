@@ -8,8 +8,9 @@ Qué hace
 
 Por qué es el primero del pack
     Un modelo con 400 avisos sin leer no es un modelo grande: es un presupuesto
-    con 400 sorpresas dentro. El cuadro de advertencias de Revit no se puede
-    ordenar, ni filtrar, ni pasar a nadie. En CSV sí.
+    con 400 sorpresas dentro. El cuadro de advertencias de Revit las agrupa
+    por tipo, pero no las ordena por gravedad ni las filtra, y su exportación
+    nativa es un HTML que hay que limpiar. En CSV salen listas para trabajar.
 
 Entradas (Dynamo)
     IN[0]  ruta de salida, p. ej. "C:\\temp\\advertencias.csv"

@@ -50,6 +50,86 @@ corrida.
 
 ---
 
+## 0b. El método del mes (desde octubre de 2026) — leer SIEMPRE antes de empezar
+
+Octubre fue el primer mes armado con este método, y es el que se repite. Los
+meses anteriores (julio, agosto y septiembre) están cruzados con su resultado
+real en `historico-2026.json`.
+
+### De dónde sale cada dato (nunca de memoria)
+
+| Qué | De dónde | Quién lo trae |
+|---|---|---|
+| Lo que funcionó en la cuenta propia | `matriz.json` (vistas, comentarios, guardados y seguidores por pieza) | **Meta Graph API**, Action «Métricas semanales» (lunes y viernes) |
+| Referentes y competencia | `fuentes/` y `competencia.json` | **Apify** (con topes de costo, ver `matriz-viral/CLAUDE.md`) |
+| Qué ya se publicó o planificó (jul–sep) | `historico-2026.json` + `HISTORICO-JUL-SEP.md` | `python3 scripts/historico_matriz.py` |
+| Quién compra y quién no | `COMPRADORES-VS-NO.md` (GHL, Fathom, formulario de Acero, diagnóstico de pauta) | análisis sin datos personales |
+| Si una palabra clave responde | `fuentes/openreply/campanas.json` | `scripts/openreply.py` |
+| Pauta | `fuentes/ads-insights/` + el diagnóstico de Dayana del mes | Action + Dayana |
+
+### Las reglas de contenido
+
+- **Feed de ~18 piezas: 40/40/20 de formato** (reels / carruseles / posts) y
+  **50/20/30 de intención** (problema / solución / objeciones y testimonios).
+- **Cada pieza le habla a un perfil comprador** de `COMPRADORES-VS-NO.md`. Si no
+  le habla a ninguno, no entra.
+- **El patrón que funciona:** acusar un hábito concreto (8,61 comentarios por
+  1.000 vistas contra 0,54) o dar un dato de cálculo verificable (DM168: 130
+  comentarios y 611 guardados). No hacer «la IA te va a reemplazar» (0
+  comentarios en julio).
+- **Palabras vivas:** NIVEL (Máster), ACERO, ZAPATA, MEMORIA, COTIZA y, en los
+  lanzamientos, DIPLOMADO. CHATGPT está retirada. Antes de usar una palabra, se
+  mira `campanas.json`.
+- **Lead magnets:** como máximo uno nuevo al mes. Los demás son de respaldo y
+  ya existen. Si uno no genera DM en la semana 2, se cambia por otro de
+  respaldo, no por uno nuevo.
+- **Pauta:** primero se corrige lo que el diagnóstico del mes dice que hace
+  perder leads, y después los anuncios nuevos entran **como reemplazo** de los
+  cansados. Va un texto por ángulo y en una sola campaña. El Máster no lleva
+  precio. ACERO lleva $225 solo en pauta y en correo a la lista propia.
+
+### Los cinco grupos (calendario en modo `grupos`)
+
+G1 Feed · G2 Comunidades · G3 Blog (sábados) · G4 LinkedIn (3 cuentas, sin
+palabra clave) · G5 Historias (lunes a viernes, venta solo el jueves). Los
+correos semanales van en `correos` y la pauta en `publicidad`.
+
+**Destacadas:** el calendario lleva un bloque `destacadas` (responsable:
+Daniela). Tiene las cinco destacadas, qué historias del mes se agregan a cada
+una y qué se quita. Se quita lo que pide palabras muertas y lo que tiene
+fechas, cupos o precios vencidos. Cada historia del G5 lleva su campo
+`destacada`. En el checklist van dos tareas: limpiar antes del primer lunes y
+guardar cada viernes.
+
+### El flujo, con comandos
+
+```bash
+# 1. histórico al día (qué ya se usó y qué funcionó)
+python3 scripts/historico_matriz.py
+# 2. piezas nuevas escritas en JSON {"piezas":[...]} → a guiones-completos.json
+python3 scripts/sumar_piezas.py archivo1.json archivo2.json --nota "qué se sumó"
+# 3. el calendario del mes (ordena ids; el contenido vive en guiones-completos)
+python3 matriz-viral/matriz/calendario-<mes>.py
+# 4. las reglas: ids, listas, 40/40/20, 50/20/30, venta semanal, nada repetido,
+#    palabras vivas, anuncios ≤125 caracteres en la primera línea, precios
+python3 scripts/verificar_matriz_mes.py --mes AAAA-MM      # tiene que dar 0 fallas
+# 5. entregables: artefacto por pestañas + JSON completo para la app + Word
+python3 scripts/build_matriz_mes.py --mes AAAA-MM
+node scripts/build_matriz_docx.js --mes AAAA-MM            # necesita `npm i docx`
+# 6. creativos estáticos de pauta dibujados por código (copiar el de octubre)
+node scripts/creativos_<mes>.mjs
+```
+
+Con eso salen `entregables/matriz-<mes>-artefacto.html` (se publica como
+artefacto), `entregables/matriz-<mes>-AAAA-COMPLETA.json`, que es **el archivo
+único que se sube a la app**, y el Word. `publish-matriz.yml` los publica en
+GitHub Pages, y `calendario-actual.json` pasa solo al mes más reciente.
+
+**La app de Daniela exige** que `slides`, `historias` y `guion_reel` sean
+listas; `sumar_piezas.py` y `verificar_matriz_mes.py` lo comprueban.
+
+---
+
 ## 1. Antes de generar: comprobar que el dato está fresco
 
 ```bash
@@ -102,8 +182,8 @@ PY
 4. **Los reels se agrupan** en dos días de grabación, no repartidos.
 5. **Un slot de venta por semana, los jueves, en historias.** Nunca más de uno.
 6. **Un blog por semana**, el sábado, anunciado con un post que lleva el enlace.
-7. **No repetir pieza** que ya se usó otro mes: comparar contra los calendarios
-   anteriores.
+7. **No repetir pieza** que ya se usó otro mes: `verificar_matriz_mes.py` lo
+   compara contra `historico-2026.json` (ids y ganchos casi iguales).
 
 ---
 

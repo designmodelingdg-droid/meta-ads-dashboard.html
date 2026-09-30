@@ -12,6 +12,11 @@ const ESPERADO = {
   'guia-revit-ia':   'plyahRxXWHMgtqPPSsog',
   'memoria-calculo': 'BXVAWaiA6dYGPYZiQiRg',
   'pack-dynamo':     'Io7ZfUKHiS08NO9C5VBs',
+  'cotizador-honorarios': 'CAekHpib0yvjFbYvxx1m',
+};
+// Las landings de las apps (patrón zapatas) usan otra caja y otro formulario propio.
+const SELECTORES = {
+  'cotizador-honorarios': { caja: '#ghlIframe', propio: '#leadForm:not([hidden])' },
 };
 
 (async () => {
@@ -24,16 +29,17 @@ const ESPERADO = {
       p.on('pageerror', e => errs.push(e.message));
       await p.goto('file://' + REPO + d + '/' + cual, { waitUntil: 'load' });
       await p.waitForTimeout(700);
-      const r = await p.evaluate(() => {
-        const box = document.getElementById('formBox');
+      const sel = SELECTORES[d] || { caja: '#formBox', propio: '#form input#email' };
+      const r = await p.evaluate((sel) => {
+        const box = document.querySelector(sel.caja);
         const f = box ? box.querySelector('iframe') : null;
         return {
           hayCaja: !!box,
           src: f ? f.getAttribute('src') : null,
           formId: f ? f.getAttribute('data-form-id') : null,
-          propio: !!document.querySelector('#form input#email'),
+          propio: !!document.querySelector(sel.propio),
         };
-      });
+      }, sel);
       // el formulario nativo debe estar puesto, y el propio de respaldo fuera
       const ok = r.hayCaja && r.src && r.src.includes(id) && r.formId === id && !r.propio && !errs.length;
       console.log((d + '/' + cual).padEnd(34), ok ? 'OK' : 'MAL',

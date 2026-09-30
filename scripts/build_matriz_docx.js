@@ -59,19 +59,22 @@ const {archivo:CAL_FILE,datos:CAL}=resolverCalendario();
 const GUI=JSON.parse(fs.readFileSync(path.join(MATRIZ_DIR,'guiones-completos.json'),'utf8'));
 /* Los lead magnets se escriben en Python (viven junto a historias y reels) y
    aqui se leen por su JSON exportado: un solo origen, dos salidas. */
-const LM_JSON=path.join(MATRIZ_DIR,'leadmagnets-septiembre.json');
-const LM=fs.existsSync(LM_JSON)?JSON.parse(fs.readFileSync(LM_JSON,'utf8')):null;
+/* (se cargan más abajo, por el mes del calendario) */
 /* Los 14 reels del mes, por el mismo camino que los lead magnets: se escriben
    en Python y se leen aqui por su JSON exportado. Antes el Word solo rendia los
    5 de valor —los otros 9 existian pero no se veian en el documento que el
    equipo imprime. */
-const RE_JSON=path.join(MATRIZ_DIR,'reels-septiembre.json');
-const REELS=fs.existsSync(RE_JSON)?JSON.parse(fs.readFileSync(RE_JSON,'utf8')):null;
 const BY={}; GUI.piezas.forEach(p=>BY[p.id]=p);
 
 const [ANIO,MES_NUM]=CAL.mes.split('-');
 const MES_NOMBRE=MESES_ES[parseInt(MES_NUM,10)-1];
 const MES_TITULO=MES_NOMBRE.charAt(0).toUpperCase()+MES_NOMBRE.slice(1);
+/* Lead magnets y reels del MES del calendario (antes estaba fijo septiembre y
+   octubre habría salido con los recursos y reels de septiembre). */
+const LM_JSON=path.join(MATRIZ_DIR,`leadmagnets-${MES_NOMBRE}.json`);
+const LM=fs.existsSync(LM_JSON)?JSON.parse(fs.readFileSync(LM_JSON,'utf8')):null;
+const RE_JSON=path.join(MATRIZ_DIR,`reels-${MES_NOMBRE}.json`);
+const REELS=fs.existsSync(RE_JSON)?JSON.parse(fs.readFileSync(RE_JSON,'utf8')):null;
 
 /* Fuentes opcionales. Se leen con tolerancia a fallo a propósito: el documento
    tiene que poder generarse aunque la Action no haya corrido todavía. */
@@ -128,14 +131,18 @@ const tbl=(head,rows,widths)=>new Table({columnWidths:widths,
       children:[new Paragraph({children:[new TextRun({text:h,bold:true,color:"FFFFFF",size:18})]})]}))}),
     ...rows.map(r=>new TableRow({children:r.map((c,i)=>new TableCell({
       width:{size:widths[i],type:WidthType.DXA},
-      children:String(c).split('\n').map(line=>new Paragraph({
+      children:String(c??'').split('\n').map(line=>new Paragraph({
         children:[new TextRun({text:line,size:18})]}))}))}))]});
 
 const b=[];
 const push=(...x)=>x.flat().forEach(p=>b.push(p));
 
 /* ───────────────────────────── datos de apoyo ───────────────────────────── */
-const CTA_DE=eje=>eje&&eje.includes('ACERO')
+const PALABRAS=['ZAPATA','ACERO','NIVEL','MEMORIA','DYNAMO','COTIZA','DIPLOMADO','CHATGPT'];
+const PAL_EN=p=>{const t=JSON.stringify(p.cta||'');return PALABRAS.find(w=>t.includes(w));};
+const CTA_DE=(eje,p={})=>PAL_EN(p)
+  ? {prod:p.producto||(eje&&eje.includes('ACERO')?'Especialización en ACERO':'Máster BIM + IA'),pal:PAL_EN(p)}
+  : eje&&eje.includes('ACERO')
   ? {prod:'Especialización en ACERO',pal:'ACERO'}
   : {prod:'Máster BIM + IA',pal:'BIM / IA'};
 const REDES=['instagram','facebook','linkedin','tiktok','youtube','blog','meta-ads'];
@@ -159,9 +166,10 @@ function renderPieza(entry,idx){
     return out;
   }
 
-  const cta=CTA_DE(p.eje);
+  const cta=CTA_DE(p.eje,p);
+  const eje=String(p.eje||'—').replace(/N[UÚ]CLEO-/,'')+(p.pilar?' · '+p.pilar:'');
   out.push(tbl(['Formato','Redes','Eje','Producto / palabra clave'],
-    [[entry.formato_publicacion,entry.redes,p.eje.replace('NUCLEO-','')+' · '+p.pilar,
+    [[entry.formato_publicacion||p.formato_detalle||p.formato,entry.redes||(p.redes||[]).join(', '),eje,
       cta.prod+'\n→ «'+cta.pal+'»']],[1900,3400,1700,3200]));
   if(entry.nota) out.push(note(entry.nota));
 
@@ -179,6 +187,21 @@ function renderPieza(entry,idx){
     out.push(new Paragraph({spacing:{after:80},
       children:[new TextRun({text:'🖼  Miniatura: ',bold:true,size:19,color:NAVY}),
                 new TextRun({text:p.youtube.miniatura,size:19,italics:true,color:GREY})]}));
+  }
+
+  /* ── GUION EN FILAS (octubre): [tiempo, escena, voz, en pantalla] ── */
+  const filas=(!p.guion_reel&&Array.isArray(p.guion)&&p.guion.length&&Array.isArray(p.guion[0]))?p.guion:null;
+  [[filas,p.guion_columnas,'Guion del reel — segundo a segundo'],
+   [p.guion_video,p.guion_video_columnas,'Guion del video de pizarrón']].forEach(([g,cols,lab])=>{
+    if(!Array.isArray(g)||!g.length||!Array.isArray(g[0])) return;
+    const c=cols||['tiempo','escena','voz','en pantalla'];
+    out.push(LBL(lab));
+    const w=c.length===4?[1100,3000,3700,2400]:[1300,3100,5800];
+    out.push(tbl(c.map(x=>x.charAt(0).toUpperCase()+x.slice(1)),g.map(r=>c.map((_,i)=>r[i])),w.slice(0,c.length)));
+  });
+  if(filas&&p.notas_produccion){
+    out.push(LBL('Notas de producción'));
+    out.push(P(p.notas_produccion,{run:{color:RED}}));
   }
 
   /* ── REEL / VIDEO: guion segundo a segundo ── */
@@ -232,6 +255,49 @@ function renderPieza(entry,idx){
     out.push(LBL('Estructura del artículo (un bloque por punto)'));
     (p.blog.estructura||p.blog.secciones||[]).forEach(t=>out.push(bul(t)));
   }
+  if(p.seo){
+    out.push(LBL('Blog — SEO'));
+    out.push(tbl(['Campo','Valor'],Object.entries(p.seo).map(([k,v])=>[k.replace(/_/g,' '),Array.isArray(v)?v.join(', '):v]),[2400,7800]));
+  }
+  if(!p.blog&&Array.isArray(p.estructura)){
+    out.push(LBL('Estructura del artículo'));
+    p.estructura.forEach(t=>out.push(bul(String(t))));
+  }
+  if(p.articulo_markdown){
+    out.push(LBL('Artículo completo — listo para pegar en el blog'));
+    out.push(...block(p.articulo_markdown));
+  }
+  if(p.post_anuncio_feed){
+    out.push(LBL('Post que anuncia el artículo'));
+    out.push(...block(p.post_anuncio_feed));
+  }
+  /* ── CORREO ── */
+  if(p.asunto){
+    out.push(LBL('Correo'));
+    out.push(tbl(['Campo','Contenido'],[['Asunto',p.asunto],['Preencabezado',p.preencabezado],['A quién',p.segmento],['Enlace',p.enlace_recurso]].filter(r=>r[1]),[2400,7800]));
+  }
+  if(p.cuerpo){
+    out.push(LBL('Cuerpo del correo — listo para pegar'));
+    out.push(...block(Array.isArray(p.cuerpo)?p.cuerpo.join('\n\n'):p.cuerpo));
+  }
+  /* ── COMUNIDADES / LINKEDIN ── */
+  if(p.copy){
+    out.push(LBL((p.formato==='linkedin'?'Post de LinkedIn':'Mensaje')+(p.cuenta?' · '+p.cuenta:'')+' — listo para copiar'));
+    out.push(...block(p.copy));
+  }
+  if(Array.isArray(p.mensajes)){
+    out.push(LBL(`Mensajes (${p.mensajes.length})`));
+    p.mensajes.forEach(m=>{
+      if(typeof m==='string'){ out.push(...block(m)); return; }
+      const cab=[m.dia||m.fecha,m.grupo||m.canal||m.comunidad].filter(Boolean).join(' · ');
+      if(cab) out.push(P(cab,{run:{bold:true,color:NAVY,size:19}}));
+      out.push(...block(m.texto||m.copy||JSON.stringify(m)));
+    });
+  }
+  if(p.primer_comentario){
+    out.push(LBL('Primer comentario'));
+    out.push(P(p.primer_comentario));
+  }
   if(p.post_linkedin){
     out.push(LBL('Post de LinkedIn — texto listo para copiar'));
     out.push(...block(p.post_linkedin));
@@ -264,12 +330,26 @@ function renderPieza(entry,idx){
     if(a.prohibido) out.push(note('⛔ '+a.prohibido));
   }
 
+  /* ── ANUNCIO DE PAUTA (octubre: campos sueltos) ── */
+  if(!p.anuncio&&p.texto_principal){
+    out.push(LBL('Ficha del anuncio'));
+    out.push(tbl(['Campo','Contenido'],[
+      ['Producto',p.producto],['Público',p.publico_sugerido],['Botón',p.boton],
+      ['Mensaje de bienvenida',p.mensaje_bienvenida],['Qué medir',p.que_medir],['Por qué',p.por_que],
+    ].filter(r=>r[1]),[2800,7400]));
+    if(p.creativo){ out.push(LBL('Creativo')); out.push(P(p.creativo)); }
+    out.push(LBL('Texto principal del anuncio — listo para pegar'));
+    out.push(...block(p.texto_principal));
+    out.push(P('Titular: '+(p.titular||'—'),{run:{bold:true}}));
+    if(p.descripcion) out.push(P('Descripción: '+p.descripcion));
+  }
+
   /* ── HISTORIAS ── */
   if(p.historias){
     out.push(LBL(`Historias — secuencia de ${p.historias.length} frames`));
     out.push(P('La historia no repite el post: le abre la puerta. El sticker es el CTA, y quien responde recibe DM.',{run:{color:GREY,italics:true,size:19}}));
     out.push(tbl(['#','Qué se ve','Texto en pantalla','Sticker','Qué hacer con quien responde'],
-      p.historias.map(h=>[String(h.n),h.visual,h.texto,h.sticker,h.seguimiento]),
+      p.historias.map((h,i)=>[String(h.n??i+1),h.visual,h.texto,h.sticker,h.seguimiento||h.captura||'']),
       [500,2500,2400,2300,2500]));
   }
 
@@ -512,7 +592,7 @@ if(Array.isArray(CAL.grupos) && CAL.grupos.length){
   /* ── 5 · PUBLICIDAD: listado, no calendario ── */
   if(CAL.publicidad){
     push(pageBreak());
-    push(H1("5 · PUBLICIDAD — el paquete completo (sale junto el 7-sep)"));
+    push(H1("5 · PUBLICIDAD — el paquete completo"+(CAL.publicidad&&CAL.publicidad.sale?` (${CAL.publicidad.sale})`:"")));
     push(note(CAL.publicidad.nota));
     (CAL.publicidad.indicaciones||[]).forEach(([k,v])=>push(P(k+'. '+v,{run:{size:19}})));
     (CAL.publicidad.campanas||[]).forEach(c=>{
@@ -652,6 +732,12 @@ if(Array.isArray(CAL.grupos) && CAL.grupos.length){
       }
     });
     /* El grupo de historias lleva ademas la rutina completa de stickers */
+    if(g.n===5 && CAL.destacadas){
+      push(H2(`Destacadas del perfil — las actualiza ${CAL.destacadas.responsable}`));
+      push(P(CAL.destacadas.nota,{run:{color:GREY,italics:true}}));
+      push(tbl(["Destacada","Qué va","Se agrega este mes","Qué se quita"],
+        CAL.destacadas.lista.map(x=>[x.destacada,x.que_va,x.agregar.join('\n'),x.quitar]),[1700,2900,2900,2700]));
+    }
     if(g.n===5 && GUI.historias_rutina){
       const HR=GUI.historias_rutina;
       push(H2("Qué sticker usar según lo que buscas"));
@@ -665,7 +751,7 @@ if(Array.isArray(CAL.grupos) && CAL.grupos.length){
       ],[1900,1900,2900,3500]));
       push(H2("Las reglas de siempre"));
       (HR.reglas||[]).forEach(r=>push(bul(r)));
-      if(HR.destacadas){push(H2("Destacadas del perfil"));HR.destacadas.forEach(x=>push(bul(x)));}
+      if(HR.destacadas && !CAL.destacadas){push(H2("Destacadas del perfil"));HR.destacadas.forEach(x=>push(bul(x)));}
       push(note("Las secuencias de venta del jueves están escritas frame a frame en los guiones: venta-acero-cupos · venta-acero-objecion · venta-master-espejo · (tutor, cuando esté vivo)."));
     }
   });
@@ -676,16 +762,39 @@ if(Array.isArray(CAL.grupos) && CAL.grupos.length){
     push(H1(`${sec} · LEAD MAGNETS — recursos gratis: qué existe y qué falta`));
     sec++;
     push(note(CAL.lead_magnets.nota));
-    push(H2("Existentes y a qué contenido del mes se vinculan"));
-    push(tbl(["Recurso","Palabra clave","Vinculado a"],
-      CAL.lead_magnets.existentes.map(l=>[l.nombre,l.palabra,l.vinculado_a]),
-      [2800,2300,6000]));
-    push(H2("Por crear desde cero"));
-    CAL.lead_magnets.por_crear.forEach(l=>{
-      push(H3(l.nombre+'  →  palabra sugerida: «'+l.palabra_sugerida+'»'));
-      push(P(l.para_que));
+    const LMc=CAL.lead_magnets;
+    if(LMc.existentes){
+      push(H2("Existentes y a qué contenido del mes se vinculan"));
+      push(tbl(["Recurso","Palabra clave","Vinculado a"],
+        LMc.existentes.map(l=>[l.nombre,l.palabra,l.vinculado_a]),
+        [2800,2300,6000]));
+    }
+    if(LMc.por_crear){
+      push(H2("Por crear desde cero"));
+      LMc.por_crear.forEach(l=>{
+        push(H3(l.nombre+'  →  palabra sugerida: «'+l.palabra_sugerida+'»'));
+        push(P(l.para_que));
+      });
+    }
+    /* octubre en adelante: nuevo / respaldo / retirados */
+    (LMc.nuevo||[]).forEach(l=>{
+      push(H2(`Nuevo del mes: ${l.nombre}  →  «${l.palabra}»`));
+      if(l.estado) push(P(l.estado));
+      if(l.piezas) push(P('Piezas que lo piden: '+l.piezas.join(' · '),{run:{color:GREY}}));
+      if(l.puente) push(P('Puente a la venta: '+l.puente,{run:{bold:true}}));
     });
-    if(CAL.lead_magnets.mapa_cta){
+    if(LMc.respaldo){
+      push(H2("De respaldo (ya existen y funcionan)"));
+      push(tbl(["Recurso","Palabra","Por qué"],LMc.respaldo.map(l=>[l.nombre,l.palabra,l.por_que]),[2800,1600,6700]));
+    }
+    if(LMc.retirados){
+      push(H2("Retirados de los CTA"));
+      push(tbl(["Recurso","Palabra","Por qué"],LMc.retirados.map(l=>[l.nombre,l.palabra,l.por_que]),[2800,1600,6700]));
+    }
+    if(LMc.mapa_cta && LMc.mapa_cta.length && LMc.mapa_cta[0].palabra){
+      push(H2("Qué piezas piden cada palabra"));
+      push(tbl(["Palabra","Cuándo","Producto"],LMc.mapa_cta.map(m=>[m.palabra,m.fecha,m.producto]),[1800,6000,3300]));
+    }else if(LMc.mapa_cta){
       push(H2("Mapa CTA → recurso: cada promesa del mes, verificada"));
       if(CAL.lead_magnets.regla) push(P(CAL.lead_magnets.regla,{run:{color:RED,bold:true}}));
       push(tbl(["Cuándo","Pieza","CTA","Recurso que entrega","Estado","Reemplazo si no llega"],

@@ -668,9 +668,9 @@
   },
   {
    "id": "oct-ang-ads-acero-wa-prueba",
-   "fecha": "Lun 19 oct (suben juntas)",
-   "fecha_iso": "2026-10-19",
-   "semana": "Semana 3 (19-25 oct)",
+   "fecha": "Semana del 5-oct (antes que las demás)",
+   "fecha_iso": "2026-10-05",
+   "semana": "Semana 1 (5-11 oct)",
    "grupo": "Pauta Meta",
    "tipo": "anuncio",
    "formato": "anuncio",
@@ -679,8 +679,8 @@
    ],
    "producto": "Acero",
    "audiencia": "prospectos",
-   "estado": "PRUEBA · la decide Olympus",
-   "titulo": "Acero · prueba WhatsApp directo",
+   "estado": "COMPLETA · se enciende la semana del 5-oct",
+   "titulo": "Acero · WhatsApp directo (se vuelve a encender)",
    "eje": "PROMO",
    "pilar": "",
    "angulo": "4 · Los proyectos que rechazas (mismo texto que A)",
@@ -689,18 +689,19 @@
    "titular": "Deja de rechazar proyectos de acero",
    "descripcion": "Escríbenos por WhatsApp",
    "boton": "Enviar mensaje (WhatsApp)",
-   "creativo": "Los mismos creativos que la variante A.",
-   "publico_sugerido": "Igual a la campaña 🔴 [AGOSTO] ESPE.1 ACERO - FORM (geo-split: EC · MX · Resto). Intereses: Revit, Autodesk Robot Structural Analysis, SAP2000, ingeniería estructural, estructuras metálicas. EXCLUIR: alumnos de Acero (lista GHL inscrito-especializaciones). Conjunto APARTE con objetivo de mensajes y el mismo presupuesto diario que el conjunto de formulario de la variante A.",
-   "que_medir": "Comparar contra la variante A: ventas de Acero por cada 100 leads (no CPL). Mensaje de bienvenida del bot: el de siempre («Vi el anuncio de la Especialización en Acero… quiero saber si califico»). Correr 14 días.",
+   "creativo": "Los ganadores vigentes de ACERO («ACERO 1», «AceroAI1-1V04/V05/V06») y el video de pizarrón de la variante A. Nada de anuncios de julio (frecuencia 2,74).",
+   "publico_sugerido": "Conjunto de mensajes dentro de la campaña de ACERO, mismo geo-split (EC · MX · Resto) e intereses que el formulario. Presupuesto ~$390/mes (≈ $13/día), el de agosto. EXCLUIR alumnos de ACERO.",
+   "que_medir": "Ventas a $225 que vengan de estos chats, a los 7 y 14 días (no conversaciones). Referencia de agosto: $0,77 por conversación.",
    "red_principal": "meta_ads",
    "origen": "angulos-ganadores-octubre.json",
-   "por_que": "Entre julio y agosto, 821 leads por WhatsApp directo dieron 6 ventas (0,7 %). Entre agosto y septiembre, 668 por formulario dieron 3 (0,4 %). Desde el 3-sep no hay ventas de Acero registradas en GHL. Es una muestra chica: por eso es una prueba y no un cambio.",
+   "por_que": "Diagnóstico de Dayana (30-sep): «[JUL] ESPE.1 ACERO – WSP SMS» trajo 510 conversaciones a $0,77 en agosto; al apagarla, los leads sin origen bajaron de 499 a 96 y septiembre cayó −17 % en leads con el mismo gasto. En julio-agosto el WhatsApp vendió 0,7 por cada 100 leads y el formulario 0,4. Por eso vuelve a encenderse junto al formulario, no como prueba.",
    "cta": {
     "meta_ads": "Enviar mensaje (WhatsApp)"
    },
    "cta_por_red": {
     "meta_ads": "Enviar mensaje (WhatsApp)"
-   }
+   },
+   "mensaje_bienvenida": "Hola, quiero información de la Especialización en Acero ($225 con Tutor de IA)."
   },
   {
    "id": "oct-ang-ads-master-a-revit-no-es-bim",

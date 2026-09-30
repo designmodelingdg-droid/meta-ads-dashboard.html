@@ -1,0 +1,41 @@
+name: Traer un post (Apify)
+
+# Trae UN post público de Instagram cuando cambia matriz-viral/pedidos/apify-post.json.
+# Se dispara por push (y a mano) para que funcione desde cualquier rama: un
+# workflow_dispatch solo existe cuando el archivo ya está en la rama por
+# defecto. Tope duro de gasto en el pedido (máximo $0,25 aunque pidan más).
+
+on:
+  push:
+    paths:
+      - matriz-viral/pedidos/apify-post.json
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: apify-post-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  traer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Traer el post
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+        run: python3 scripts/apify_post.py matriz-viral/pedidos/apify-post.json
+      - name: Commit si cambió
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add matriz-viral/fuentes/referentes/ || true
+          git diff --staged --quiet && echo "Nada nuevo que guardar." && exit 0
+          git commit -m "Post de referencia traído con Apify"
+          for i in 1 2 3; do git pull --rebase -q && git push && exit 0; sleep 5; done
+          exit 1
