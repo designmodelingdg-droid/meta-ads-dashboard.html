@@ -522,6 +522,12 @@ def tab_reels():
             if r.get("destino"):
                 o.append(f'<p class="cta-linea"><b>Destino:</b> {e(r["destino"])}</p>')
             o.append(fila_guion(r["guion"]))
+            # El copy va con el guion: un reel grabado sin su texto se publica
+            # con un caption improvisado (lo notó Dayana con el del Vie 18).
+            if r.get("caption"):
+                o.append(f'<span class="rot">Caption Instagram y Facebook (copiar tal cual)</span>{bloque_pegar(r["caption"])}')
+            if r.get("caption_tiktok_youtube"):
+                o.append(f'<span class="rot">Caption TikTok y YouTube Shorts (sin palabra clave)</span>{bloque_pegar(r["caption_tiktok_youtube"])}')
             o.append('</div>')
     return "\n".join(o)
 
