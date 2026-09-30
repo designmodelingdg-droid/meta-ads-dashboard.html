@@ -430,6 +430,7 @@ class Mes:
             "banco_reserva": [con({"id": i}) for i in c.get("banco_reserva", [])],
             "kpis_mensuales": c.get("kpis_mensuales", {}),
             "pendientes": c.get("pendientes", []),
+            "artefactos": c.get("artefactos", {}),
         }
         salida = ENTREGABLES / f"matriz-{self.nombre}-{self.mes[:4]}-COMPLETA.json"
         salida.write_text(json.dumps(datos, ensure_ascii=False, indent=2), encoding="utf-8")
