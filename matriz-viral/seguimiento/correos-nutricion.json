@@ -539,7 +539,7 @@
    "correos": [
     {
      "n": 1,
-     "cuando": "Inmediato",
+     "cuando": "Día 1 (24 h después)",
      "plantilla": "NUEVA · COTIZA-01 Tu cotizador",
      "asunto": "Tu cotizador de honorarios (y el primer número que cambiar)",
      "preencabezado": "Antes de usar el ejemplo, pon tus horas.",
@@ -556,7 +556,7 @@
       "enlace": "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/cotizador-honorarios/app.html?acceso=dm2026"
      },
      "imagen": "La tarjeta del cotizador (misma imagen del hub).",
-     "nota": "Refuerza el acceso: no se promete ningún archivo adjunto."
+     "nota": "El acceso INMEDIATO ya lo manda la rama COTIZADOR del workflow «✅ NEW Acceso y Descarga PDF Recursos Gratis» (plantilla «Acceso Cotizador Honorarios_01», 30-sep). Este sale al día siguiente como recordatorio: por eso dice «otra vez». No se promete ningún archivo adjunto."
     },
     {
      "n": 2,
@@ -626,7 +626,8 @@
      "imagen": "Sin imagen: correo corto, que parezca escrito a mano.",
      "nota": "La respuesta la lee el setter: quien contesta con un número es lead caliente."
     }
-   ]
+   ],
+   "entrada": "Etiqueta lead-cotizador (la pone el workflow «Lead magnet · Cotizador de Honorarios», disparado por el formulario nativo)."
   }
  ]
 }

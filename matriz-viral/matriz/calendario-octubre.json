@@ -17,8 +17,8 @@
  ],
  "checklist_tareas": [
   {
-   "tarea": "Volver a pegar cotizador-honorarios/ghl-landing.html en la página 1 del funnel (trae el formulario nativo). Quitar del formulario la línea «Te la enviamos también al correo» y poner Ecuador como país por defecto. Borrar el contacto «Prueba Cotizador».",
-   "desbloquea": "Que los leads de COTIZA entren a su workflow y no al de Zapatas",
+   "tarea": "Volver a pegar cotizador-honorarios/ghl-landing.html en la página 1 del funnel: ya trae el formulario nativo (CAekHpib0yvjFbYvxx1m). Sin eso, los leads siguen entrando por el webhook de Zapatas y no pasan por la rama COTIZADOR del workflow de recursos. Poner Ecuador como país por defecto del teléfono. Borrar el contacto «Prueba Cotizador». Revisar la plantilla «Acceso Pack Dynamo_01».",
+   "desbloquea": "Que el lead reciba el correo de acceso, la comunidad, la membresía y la secuencia S5",
    "cuando": "antes del 13-oct",
    "para": "Ester y Aylin"
   },
@@ -1620,7 +1620,7 @@
    {
     "nombre": "Cotizador de Honorarios Estructurales",
     "palabra": "COTIZA",
-    "estado": "Funnel en GHL montado y probado por Dayana (30-sep). OpenReply se monta justo después de publicar el reel del 13 y el carrusel del 15. Falta volver a pegar ghl-landing.html con el formulario nativo.",
+    "estado": "Funnel en GHL montado y probado por Dayana (30-sep). Entra en el workflow de recursos de Ester (rama COTIZADOR: acceso-cotizador-honorarios, correo de acceso, comunidad y oportunidad en NUEVO LEAD MAGNET) y en su workflow propio (lead-cotizador, aviso interno, membresía y secuencia S5). OpenReply se monta justo después de publicar el reel del 13 y el carrusel del 15. Falta volver a pegar ghl-landing.html con el formulario nativo.",
     "piezas": [
      "oct-cotiza-reel",
      "oct-cotiza-historias",

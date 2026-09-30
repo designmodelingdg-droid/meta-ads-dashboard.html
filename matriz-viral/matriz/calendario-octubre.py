@@ -141,7 +141,7 @@ DECISIONES_PAUTA = [
 LEAD_MAGNETS = {
     "nota": "Octubre sale con UN lead magnet nuevo (COTIZA) y ninguno más. Los de respaldo ya existen y funcionan. Si en la semana 2 uno no genera DM, se reemplaza por otro de esta lista, no por uno nuevo.",
     "nuevo": [{"nombre": "Cotizador de Honorarios Estructurales", "palabra": "COTIZA",
-               "estado": "Funnel en GHL montado y probado por Dayana (30-sep). OpenReply se monta justo después de publicar el reel del 13 y el carrusel del 15. Falta volver a pegar ghl-landing.html con el formulario nativo.",
+               "estado": "Funnel en GHL montado y probado por Dayana (30-sep). Entra en el workflow de recursos de Ester (rama COTIZADOR: acceso-cotizador-honorarios, correo de acceso, comunidad y oportunidad en NUEVO LEAD MAGNET) y en su workflow propio (lead-cotizador, aviso interno, membresía y secuencia S5). OpenReply se monta justo después de publicar el reel del 13 y el carrusel del 15. Falta volver a pegar ghl-landing.html con el formulario nativo.",
                "piezas": ["oct-cotiza-reel", "oct-cotiza-historias", "oct-cotiza-carrusel", "oct-blog-cobrar-diseno-estructural"],
                "puente": "Especialización en Acero / Diplomado en Estructuras (secuencia de correo S5)"}],
     "respaldo": [
@@ -160,7 +160,7 @@ LEAD_MAGNETS = {
 }
 
 CHECKLIST = [
-    {"tarea": "Volver a pegar cotizador-honorarios/ghl-landing.html en la página 1 del funnel (trae el formulario nativo). Quitar del formulario la línea «Te la enviamos también al correo» y poner Ecuador como país por defecto. Borrar el contacto «Prueba Cotizador».", "desbloquea": "Que los leads de COTIZA entren a su workflow y no al de Zapatas", "cuando": "antes del 13-oct", "para": "Ester y Aylin"},
+    {"tarea": "Volver a pegar cotizador-honorarios/ghl-landing.html en la página 1 del funnel: ya trae el formulario nativo (CAekHpib0yvjFbYvxx1m). Sin eso, los leads siguen entrando por el webhook de Zapatas y no pasan por la rama COTIZADOR del workflow de recursos. Poner Ecuador como país por defecto del teléfono. Borrar el contacto «Prueba Cotizador». Revisar la plantilla «Acceso Pack Dynamo_01».", "desbloquea": "Que el lead reciba el correo de acceso, la comunidad, la membresía y la secuencia S5", "cuando": "antes del 13-oct", "para": "Ester y Aylin"},
     {"tarea": "Gabriel revisa las horas de ejemplo del cotizador (app.html, ENTREGABLES).", "desbloquea": "Reel del Mar 13 y carrusel del Jue 15", "cuando": "antes del 12-oct", "para": "Gabriel"},
     {"tarea": "Día de grabación 1: reels del 13, 14, 20 y 21 (+ tablero físico del ranking).", "desbloquea": "Semanas 2 y 3 del feed", "cuando": "Jue 8-oct", "para": "Gabriel"},
     {"tarea": "Día de grabación 2: reels del 27 y 28 (testimonio o pieza de reserva) + capturas de Robot para el carrusel del 29.", "desbloquea": "Semana 4 del feed", "cuando": "Jue 22-oct", "para": "Gabriel"},

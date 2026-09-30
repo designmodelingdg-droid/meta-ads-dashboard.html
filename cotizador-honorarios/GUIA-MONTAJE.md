@@ -24,10 +24,14 @@ Gracias   https://funnel.dgdesignmodeling.com/acceso-gratis-cotizador-honorarios
 | Recursos | `/recursos` publicada con la tarjeta del cotizador |
 | Workflow | «Lead magnet · Cotizador de Honorarios»: Form Submitted + webhook propio (`…/webhook-trigger/75367575-647f-4b0b-bc88-e6d2d2d1a39e`) → contacto, etiquetas `lead-cotizador` y `origen-landing-cotizador`, aviso interno, Grant Offer |
 | Membresía | producto «Cotizador de Honorarios», lección «Calcula tu precio real», oferta gratis publicada |
+| Workflow de recursos (el de Ester) | «✅ NEW Acceso y Descarga PDF Recursos Gratis»: activador «Formulario COTIZADOR» (Form Submitted · Cotizador de Honorarios - Registro) → rama COTIZADOR, copia de la de Dynamo: contacto, OLYMPUS BOT, etiqueta `acceso-cotizador-honorarios`, acceso a Comunidad Design Premium, oportunidad «Form Cotizador Honorarios - {nombre}» (fuente «formulario recurso gratis», etapa «NUEVO LEAD MAGNET» del pipeline «✅ INSTAGRAM - FACEBOOK - TIKTOK»), canal de conversación y correo con la plantilla «Acceso Cotizador Honorarios_01» (asunto «🚀 ACCEDE AHORA COTIZADOR DE HONORARIOS - DMA», botón al cotizador con `?acceso=dm2026`) |
+
+**Los dos workflows se quedan encendidos.** Con el formulario nativo se disparan los dos: el de Ester da el correo de acceso, la comunidad y la oportunidad; el del cotizador da `lead-cotizador` (que arranca la secuencia S5), el aviso interno y la membresía (Grant Offer). Solo se cruzan al crear el contacto, y eso no duplica nada.
 
 Pendiente:
 - **Volver a pegar `ghl-landing.html` en la página 1 del funnel**: la versión que se pegó todavía usa el formulario propio y el webhook de zapatas. La nueva trae el formulario nativo.
-- **Quitar del formulario la línea «Te la enviamos también al correo para que la tengas siempre a mano»**, heredada de zapatas. No hay ningún correo que mande el cotizador, y la regla de la casa es no prometer envíos que no existen. Y poner Ecuador como país por defecto del teléfono (hoy sale EE. UU.).
+- ~~Quitar del formulario la línea «Te la enviamos también al correo»~~ **Ya no hace falta**: desde el 30-sep la rama COTIZADOR manda el correo de acceso, así que la promesa se cumple. Sí falta poner Ecuador como país por defecto del teléfono (hoy sale EE. UU.).
+- Revisar que la plantilla «Acceso Pack Dynamo_01» quedó igual que antes: el Claude de Chrome la sobrescribió un momento y la restauró a la versión #2 de Aylin.
 - Borrar el contacto de prueba «Prueba Cotizador» (prueba.cotizador@example.com) que entró al mapear el webhook.
 - Hacer un envío real de punta a punta (checklist) y borrar ese contacto después.
 - Miniatura del producto de membresía: subir la imagen desde la computadora.
