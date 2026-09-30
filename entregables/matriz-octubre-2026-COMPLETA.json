@@ -23,6 +23,18 @@
   ],
   "checklist_tareas": [
     {
+      "tarea": "Limpiar las 5 destacadas del perfil: quitar los frames que piden CHATGPT o DYNAMO, los que tienen fechas, cupos o precios vencidos, y revisar que las portadas sigan iguales y legibles.",
+      "desbloquea": "Que quien llega nuevo al perfil no pida un recurso que nadie contesta",
+      "cuando": "antes del lunes 5",
+      "para": "Daniela"
+    },
+    {
+      "tarea": "Cada viernes, guardar en su destacada las historias de la semana (columna «Destacada» del Grupo 5 y bloque «destacadas» del calendario).",
+      "desbloquea": "Destacadas al día sin una jornada de limpieza a fin de mes",
+      "cuando": "viernes 9, 16, 23 y 30",
+      "para": "Daniela"
+    },
+    {
       "tarea": "Volver a pegar cotizador-honorarios/ghl-landing.html en la página 1 del funnel: ya trae el formulario nativo (CAekHpib0yvjFbYvxx1m). Sin eso, los leads siguen entrando por el webhook de Zapatas y no pasan por la rama COTIZADOR del workflow de recursos. Poner Ecuador como país por defecto del teléfono. Borrar el contacto «Prueba Cotizador». Revisar la plantilla «Acceso Pack Dynamo_01».",
       "desbloquea": "Que el lead reciba el correo de acceso, la comunidad, la membresía y la secuencia S5",
       "cuando": "antes del 13-oct",
@@ -3880,7 +3892,8 @@
         "El sticker es el CTA.",
         "Nunca precio ni «inscríbete».",
         "Máximo 5 frames.",
-        "Las respuestas llegan como DM: se contestan a mano."
+        "Las respuestas llegan como DM: se contestan a mano.",
+        "Cada historia dice en qué destacada se guarda. Daniela las guarda cada viernes (ver «destacadas»)."
       ],
       "calendario": [
         {
@@ -3896,6 +3909,7 @@
             "formato": "HISTORIAS (4 frames)",
             "desarrollo": "216 videos. ¿En cuál explicaron el espectro sísmico?"
           },
+          "destacada": "🎯 BIM + IA",
           "contenido": {
             "id": "oct-hist-1005",
             "fecha": "Lun 5 oct",
@@ -3968,6 +3982,7 @@
             "formato": "HISTORIAS (3 frames)",
             "desarrollo": "Martes de grabación. Y una de sus preguntas, sin editar."
           },
+          "destacada": "👥 COMUNIDAD",
           "contenido": {
             "id": "oct-hist-1006",
             "fecha": "Mar 6 oct",
@@ -4034,6 +4049,7 @@
             "formato": "HISTORIAS (4 frames)",
             "desarrollo": "Levanta la mano si alguna vez volviste a ver una clase entera para encontrar un minuto."
           },
+          "destacada": "🎯 BIM + IA",
           "contenido": {
             "id": "oct-hist-1007",
             "fecha": "Mié 7 oct",
@@ -4106,6 +4122,7 @@
             "formato": "HISTORIAS (5 frames)",
             "desarrollo": "133 horas de clase. Una duda. ¿En cuál estaba?"
           },
+          "destacada": "🎯 BIM + IA",
           "contenido": {
             "id": "oct-tutor-dip-historias",
             "fecha": "Jue 8 oct",
@@ -4184,6 +4201,7 @@
             "formato": "HISTORIAS (4 frames)",
             "desarrollo": "La estructura aguanta. Y aun así te la devuelven."
           },
+          "destacada": "🔩 ACERO",
           "contenido": {
             "id": "oct-hist-1009",
             "fecha": "Vie 9 oct",
@@ -4256,6 +4274,7 @@
             "formato": "HISTORIAS (4 frames)",
             "desarrollo": "Le pediste a la IA que diseñara una viga. No sirvió. ¿Y la dejaste?"
           },
+          "destacada": "🎯 BIM + IA",
           "contenido": {
             "id": "oct-hist-1012",
             "fecha": "Lun 12 oct",
@@ -4328,6 +4347,7 @@
             "formato": "historias",
             "desarrollo": "¿Cuánto cobras por m² de diseño estructural?"
           },
+          "destacada": "🎁 HERRAMIENTAS",
           "contenido": {
             "id": "oct-cotiza-historias",
             "fecha": "Mar 13 oct",
@@ -4389,6 +4409,7 @@
             "formato": "HISTORIAS (4 frames)",
             "desarrollo": "¿Dónde pondrías AutoCAD?"
           },
+          "destacada": "🎯 BIM + IA",
           "contenido": {
             "id": "oct-hist-1014",
             "fecha": "Mié 14 oct",
@@ -4461,6 +4482,7 @@
             "formato": "HISTORIAS (5 frames)",
             "desarrollo": "La frase que más escuchamos antes de que alguien empiece Acero."
           },
+          "destacada": "🔩 ACERO",
           "contenido": {
             "id": "oct-hist-1015",
             "fecha": "Jue 15 oct",
@@ -4539,6 +4561,7 @@
             "formato": "HISTORIAS (4 frames)",
             "desarrollo": "Esa nave que dijiste que no… ¿quién la calculó al final?"
           },
+          "destacada": "🔩 ACERO",
           "contenido": {
             "id": "oct-hist-1016",
             "fecha": "Vie 16 oct",
@@ -4611,6 +4634,7 @@
             "formato": "HISTORIAS (3 frames)",
             "desarrollo": "Seamos honestos: ¿en qué fila estás?"
           },
+          "destacada": "🎯 BIM + IA",
           "contenido": {
             "id": "oct-hist-1019",
             "fecha": "Lun 19 oct",
@@ -4677,6 +4701,7 @@
             "formato": "HISTORIAS (3 frames)",
             "desarrollo": "Hoy toca grabar pantalla. Spoiler: hay una tabla de varillas."
           },
+          "destacada": "👥 COMUNIDAD",
           "contenido": {
             "id": "oct-hist-1020",
             "fecha": "Mar 20 oct",
@@ -4815,6 +4840,7 @@
             "formato": "HISTORIAS (5 frames)",
             "desarrollo": "Llevas años modelando bien. Y sigues esperando a que te digan qué modelar."
           },
+          "destacada": "🎯 BIM + IA",
           "contenido": {
             "id": "oct-hist-1022",
             "fecha": "Jue 22 oct",
@@ -4893,6 +4919,7 @@
             "formato": "HISTORIAS (4 frames)",
             "desarrollo": "Lo dejaron fuera antes de abrir su propuesta."
           },
+          "destacada": "🎯 BIM + IA",
           "contenido": {
             "id": "oct-hist-1023",
             "fecha": "Vie 23 oct",
@@ -4965,6 +4992,7 @@
             "formato": "HISTORIAS (4 frames)",
             "desarrollo": "Tú ya sabes lo que el software no enseña."
           },
+          "destacada": "🔩 ACERO",
           "contenido": {
             "id": "oct-hist-1026",
             "fecha": "Lun 26 oct",
@@ -5037,6 +5065,7 @@
             "formato": "HISTORIAS (3 frames)",
             "desarrollo": "Mañana sale un video distinto. Hoy lo preparamos."
           },
+          "destacada": "👥 COMUNIDAD",
           "contenido": {
             "id": "oct-hist-1027",
             "fecha": "Mar 27 oct",
@@ -5103,6 +5132,7 @@
             "formato": "HISTORIAS (4 frames)",
             "desarrollo": "«¿Me sirve si vengo de obra?»"
           },
+          "destacada": "⭐ ALUMNOS",
           "contenido": {
             "id": "oct-hist-1028",
             "fecha": "Mié 28 oct",
@@ -5175,6 +5205,7 @@
             "formato": "HISTORIAS (5 frames)",
             "desarrollo": "Te abro la Especialización en Acero. Sin filtro."
           },
+          "destacada": "🔩 ACERO",
           "contenido": {
             "id": "oct-hist-1029",
             "fecha": "Jue 29 oct",
@@ -5253,6 +5284,7 @@
             "formato": "HISTORIAS (4 frames)",
             "desarrollo": "El proyecto que no aceptaste no te mandó factura."
           },
+          "destacada": "🎯 BIM + IA",
           "contenido": {
             "id": "oct-hist-1030",
             "fecha": "Vie 30 oct",
@@ -6314,6 +6346,66 @@
         "palabra": "DIPLOMADO",
         "fecha": "Lun 5, Mié 7 (lanzamiento del tutor)",
         "producto": "Diplomado · montar antes del 5 o CTA a DM"
+      }
+    ]
+  },
+  "destacadas": {
+    "responsable": "Daniela",
+    "nota": "Las cinco de siempre. Se limpian antes del lunes 5 y se alimentan cada viernes con las historias de la semana.",
+    "lista": [
+      {
+        "destacada": "🔩 ACERO",
+        "que_va": "Verificaciones, conexiones, casos de obra al software y la venta de los jueves de Acero.",
+        "agregar": [
+          "oct-hist-1009",
+          "oct-hist-1015",
+          "oct-hist-1016",
+          "oct-hist-1026",
+          "oct-hist-1029"
+        ],
+        "quitar": "Frames con fechas o cupos ya vencidos, y cualquier frame que muestre precio."
+      },
+      {
+        "destacada": "🎯 BIM + IA",
+        "que_va": "Máster, test de nivel, ranking de software, el tutor de IA del Diplomado.",
+        "agregar": [
+          "oct-hist-1005",
+          "oct-hist-1007",
+          "oct-tutor-dip-historias",
+          "oct-hist-1012",
+          "oct-hist-1014",
+          "oct-hist-1019",
+          "oct-hist-1022",
+          "oct-hist-1023",
+          "oct-hist-1030"
+        ],
+        "quitar": "Frames que piden comentar CHATGPT (nadie la contesta) y los que prometen funciones de IA en Revit que no existen."
+      },
+      {
+        "destacada": "🎁 HERRAMIENTAS",
+        "que_va": "Los recursos gratis: cotizador, calculadora de zapatas, memoria de cálculo, 5 verificaciones, test de nivel.",
+        "agregar": [
+          "oct-cotiza-historias"
+        ],
+        "quitar": "Frames que piden DYNAMO o CHATGPT: se cambian por un sticker de enlace a /recursos o se borran."
+      },
+      {
+        "destacada": "👥 COMUNIDAD",
+        "que_va": "Detrás de cámara y las preguntas de la comunidad.",
+        "agregar": [
+          "oct-hist-1006",
+          "oct-hist-1020",
+          "oct-hist-1027"
+        ],
+        "quitar": "Recaps de más de 3 meses."
+      },
+      {
+        "destacada": "⭐ ALUMNOS",
+        "que_va": "Testimonios reales con permiso.",
+        "agregar": [
+          "oct-hist-1028 (solo si sale el testimonio real; si sale la reserva, va a ACERO)"
+        ],
+        "quitar": "Nada, salvo que un alumno retire su permiso."
       }
     ]
   },
