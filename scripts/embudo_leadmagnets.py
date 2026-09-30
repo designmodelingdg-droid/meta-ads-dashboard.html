@@ -49,7 +49,14 @@ EMBUDOS = {
                            ("acceso", "acceso-memoria-calculo")]},
     "ZAPATA":  {"recurso": "Calculadora de zapatas",
                 "etapas": [("bot", "origen-bot-zapata"), ("lead", "lead-calculadora-zapatas"),
-                           ("acceso", "guia-zapata")]},
+                           # «guia-zapata» existe pero nadie la pone (0 contactos): el
+                           # acceso a la calculadora lo marca «acceso-calculadora».
+                           ("acceso", "acceso-calculadora")]},
+    # La palabra ACERO (post de las 5 verificaciones y los del mes que la piden)
+    # la contesta GHL: «Comentario ACERO - Verificación de Acero».
+    "ACERO":   {"recurso": "5 verificaciones en acero",
+                "etapas": [("bot", "origen-bot-acero"), ("lead", "lead-acero-verificaciones"),
+                           ("acceso", "acceso-verificacion")]},
     "NIVEL":   {"recurso": "Test de nivel BIM",
                 "etapas": [("bot", "origen-bot-nivel"), ("lead", "lead-test-nivel"),
                            ("acceso", "acceso-test-nivel")]},
