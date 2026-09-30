@@ -35,6 +35,7 @@ on:
       - pack-dynamo/**
       - recursos/**
       - eficiencia-acero/**
+      - cotizador-honorarios/**
       - tutor-acero/**
       - tutor-diplomado-estructuras/**
       - cierre-agosto/**
@@ -116,6 +117,10 @@ jobs:
           # sueltos ayuda a quien quiera mirarlos sin descargar nada.
           cp -r pack-dynamo public/pack-dynamo
           rm -rf public/pack-dynamo/GUIA-MONTAJE.md public/pack-dynamo/prueba
+          # Lead magnet: cotizador de honorarios estructurales (palabra clave COTIZA).
+          # DISEÑO.md, la guia de montaje y las pruebas no se publican.
+          cp -r cotizador-honorarios public/cotizador-honorarios
+          rm -rf public/cotizador-honorarios/*.md public/cotizador-honorarios/prueba
           # Tutor de IA de la Especializacion en Acero (se embebe en GHL)
           cp -r tutor-acero public/tutor-acero
           # Tutor de IA del Diplomado BIM Estructuras (boton en su curso de GHL).
@@ -141,7 +146,7 @@ jobs:
           <h1>Design Modeling · datos de contenido</h1>
           <p>Matriz de contenido viral (JSON, legible por máquina):</p>
           <p><a href="./matriz.json"><code>matriz.json</code></a> · <a href="./guiones-completos.json"><code>guiones-completos.json</code></a> (contenido completo de cada pieza) · <a href="./calendario-actual.json"><code>calendario-actual.json</code></a> (orden de publicación del mes en curso) · <a href="./g1-carruseles-y-posts-septiembre.json"><code>g1-carruseles-y-posts-septiembre.json</code></a> (carruseles y posts planos del mes) · <a href="./lanzamiento-tutor-ia-octubre.json"><code>lanzamiento-tutor-ia-octubre.json</code></a></p>
-          <p>Lead magnets: <a href="./calculadora-zapatas/">Calculadora de Zapatas</a> · <a href="./test-nivel-bim/">Test de Nivel BIM</a> · <a href="./recursos/">Hub de recursos</a> · <a href="./eficiencia-acero/">5 verificaciones en acero</a></p>
+          <p>Lead magnets: <a href="./calculadora-zapatas/">Calculadora de Zapatas</a> · <a href="./test-nivel-bim/">Test de Nivel BIM</a> · <a href="./recursos/">Hub de recursos</a> · <a href="./eficiencia-acero/">5 verificaciones en acero</a> · <a href="./cotizador-honorarios/">Cotizador de honorarios</a></p>
           <p style="color:#5a6b7b">Se actualiza solo cuando cambia la matriz en el repo.</p>
           </body>
           HTML
