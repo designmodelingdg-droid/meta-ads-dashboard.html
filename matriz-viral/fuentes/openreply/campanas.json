@@ -289,7 +289,7 @@
    "actualizada": "2026-09-22T03:33:57.816",
    "cuenta": "design_modeling_dg",
    "enviados": 2,
-   "fallidos": 3,
+   "fallidos": 4,
    "entregados_sin_confirmar": 1,
    "saltados": 0,
    "pendientes": 0,
@@ -529,7 +529,7 @@
    "campana": "CHECKLIST NAVISWORKS",
    "campana_activa": true,
    "enviados": 2,
-   "fallidos": 1,
+   "fallidos": 2,
    "entregados_sin_confirmar": 1,
    "saltados": 0,
    "primer_envio": "2026-09-17T15:29:00.203",
@@ -811,6 +811,13 @@
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=A6drGiEsU9UMcoJLI1M1bMZ]",
    "veces": 1,
    "ultima_vez": "2026-09-25T23:28:33.872"
+  },
+  {
+   "estado": "FAILED",
+   "pero_si_se_entrego": false,
+   "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=AF-ltannLQXpkquXocuDwNj]",
+   "veces": 1,
+   "ultima_vez": "2026-10-01T20:41:33.679"
   },
   {
    "estado": "FAILED",
@@ -1379,7 +1386,7 @@
     ],
     "en_borrador": [],
     "bot_total": 170,
-    "bot_nuevos_7d": 3
+    "bot_nuevos_7d": 2
    },
    "ACERO": {
     "publicados": [
@@ -1450,8 +1457,8 @@
      }
     ],
     "en_borrador": [],
-    "bot_total": 11,
-    "bot_nuevos_7d": 6
+    "bot_total": 12,
+    "bot_nuevos_7d": 7
    },
    "COTIZA": {
     "publicados": [
@@ -1465,7 +1472,7 @@
     "bot_nuevos_7d": 0
    }
   },
-  "embudo_generado": "2026-10-01T05:51Z"
+  "embudo_generado": "2026-10-01T15:27Z"
  },
  "cotejo_con_la_matriz": [
   {
