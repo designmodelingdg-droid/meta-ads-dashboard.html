@@ -1,5 +1,5 @@
 {
- "generado": "2026-09-30",
+ "generado": "2026-10-01",
  "ventana_series_dias": 30,
  "fuente": "OpenReply — base propia (Postgres), solo lectura",
  "nota_privacidad": "Solo agregados. No se lee `commenterName`, ni `commentText`, ni `accessToken`. Ningún dato personal sale de la base.",
@@ -61,21 +61,21 @@
    "creada": "2026-09-29T19:26:55.413",
    "actualizada": "2026-09-29T19:27:28.139",
    "cuenta": "design_modeling_dg",
-   "enviados": 14,
+   "enviados": 15,
    "fallidos": 0,
    "entregados_sin_confirmar": 0,
    "saltados": 0,
    "pendientes": 0,
    "primer_envio": "2026-09-29T19:28:07.163",
-   "ultimo_envio": "2026-09-30T19:53:50.861",
+   "ultimo_envio": "2026-10-01T03:05:25.535",
    "clics": 8,
    "clics_limpios": 8,
    "clics_con_bots": 0,
    "enlaces_rastreados": 1,
    "mide_clics": true,
-   "clics_por_dm": 0.57,
-   "ctr": 0.5714,
-   "lectura_clics": "8 clics limpios sobre 14 DM enviados (57%). Son aperturas, no personas: la misma persona puede contar varias veces."
+   "clics_por_dm": 0.53,
+   "ctr": 0.5333,
+   "lectura_clics": "8 clics limpios sobre 15 DM enviados (53%). Son aperturas, no personas: la misma persona puede contar varias veces."
   },
   {
    "id": "cmuc38lqr000004lhs407u63j",
@@ -451,12 +451,12 @@
    "palabra": "MEMORIA",
    "campana": "MEMORIA VERIFICABLE copy",
    "campana_activa": true,
-   "enviados": 14,
+   "enviados": 15,
    "fallidos": 0,
    "entregados_sin_confirmar": 0,
    "saltados": 0,
    "primer_envio": "2026-09-29T19:28:07.163",
-   "ultimo_envio": "2026-09-30T19:53:50.861"
+   "ultimo_envio": "2026-10-01T03:05:25.535"
   },
   {
    "palabra": "PARTE",
@@ -1194,14 +1194,13 @@
   {
    "fecha": "2026-09-30",
    "enviados": 11
+  },
+  {
+   "fecha": "2026-10-01",
+   "enviados": 1
   }
  ],
  "seguidores": [
-  {
-   "cuenta": "design_modeling_dg",
-   "fecha": "2026-08-31",
-   "seguidores": 80347
-  },
   {
    "cuenta": "design_modeling_dg",
    "fecha": "2026-09-01",
@@ -1394,7 +1393,7 @@
      }
     ],
     "bot_total": 177,
-    "bot_nuevos_7d": 14
+    "bot_nuevos_7d": 12
    },
    "NIVEL": {
     "publicados": [
@@ -1409,7 +1408,7 @@
     ],
     "en_borrador": [],
     "bot_total": 2,
-    "bot_nuevos_7d": 1
+    "bot_nuevos_7d": 0
    },
    "CHATGPT": {
     "publicados": [
@@ -1430,7 +1429,7 @@
      }
     ],
     "en_borrador": [],
-    "bot_total": 34,
+    "bot_total": 36,
     "bot_nuevos_7d": 9
    },
    "DYNAMO": {
@@ -1441,8 +1440,8 @@
      }
     ],
     "en_borrador": [],
-    "bot_total": 6,
-    "bot_nuevos_7d": 3
+    "bot_total": 10,
+    "bot_nuevos_7d": 5
    },
    "COTIZA": {
     "publicados": [
@@ -1456,7 +1455,7 @@
     "bot_nuevos_7d": 0
    }
   },
-  "embudo_generado": "2026-09-30T19:13Z"
+  "embudo_generado": "2026-09-30T23:54Z"
  },
  "cotejo_con_la_matriz": [
   {
@@ -1505,8 +1504,8 @@
     "MEMORIA VERIFICABLE",
     "MEMORIA DE CÁLCULO"
    ],
-   "dms_enviados": 23,
-   "lectura": "Viva: 23 DM enviados."
+   "dms_enviados": 24,
+   "lectura": "Viva: 24 DM enviados."
   },
   {
    "palabra": "DYNAMO",
