@@ -1,0 +1,193 @@
+{
+ "mes": "2026-09",
+ "ventana": {
+  "desde": "2026-09-06",
+  "hasta": "2026-10-05"
+ },
+ "corte": "PROVISIONAL al 2026-10-01 (datos de pasarelas y Meta hasta ayer). Se regenera el lunes 5-oct con datos hasta el 4-oct; el día 5 no está cerrado antes de la reunión.",
+ "validado_por": "Dayana, 2-oct-2026: ventana 6-sep → 5-oct, los dos cobros PayPal de $199,99 son dos ventas reales, meta de octubre $10.000. Lista nominal pendiente de validar con el corte final. 2-oct: los $100 de Stripe del 1-oct son de software (fuera); el 2.º PayPal de $199,99 es otro comprador sin registrar en el CRM.",
+ "dinero": {
+  "cobrado_pasarelas": 3599.95,
+  "recurrente": 1609.99,
+  "captacion": 1989.96,
+  "recurrente_detalle": "9 cuotas de $160 del Máster, 1 de $140 y 1 de $29,99 (Subscription update / Matrícula mensual)",
+  "excluido": "$50 PayPal del equipo (9-sep), prueba; $100 Stripe del 1-oct, venta de software (otro negocio, no cursos), confirmado por Dayana el 2-oct",
+  "cobertura": "Stripe 2-sep → 1-oct. PayPal: el último cobro del archivo es del 16-sep; del 17-sep al 1-oct no aparece ningún cobro por PayPal (preguntado a Dayana si alguien pagó por PayPal en esas fechas).",
+  "crm_ganadas_depuradas": {
+   "valor": 1919.96,
+   "n": 9
+  },
+  "conciliacion": "captación en pasarelas ($1.989,96) = CRM depurado ($1.919,96) − 2 ganadas sin cobro identificado ($100 + $29,99) + 1 venta de Acero cobrada por PayPal que no está registrada en el CRM ($199,99, confirmada por Dayana el 2-oct)"
+ },
+ "ventas_por_producto": [
+  {
+   "producto": "Máster (matrícula)",
+   "n": 1,
+   "ingreso": 500.0
+  },
+  {
+   "producto": "Diplomados (Estructuras y Arquitectura)",
+   "n": 2,
+   "ingreso": 1016.0
+  },
+  {
+   "producto": "Especialización Acero (a $199,99, precio anterior)",
+   "n": 2,
+   "ingreso": 399.98
+  },
+  {
+   "producto": "Cursos y suscripciones lowcost",
+   "n": 3,
+   "ingreso": 73.98
+  }
+ ],
+ "acero_a_225": 0,
+ "pauta": {
+  "ventana": "2026-09-06 → 2026-10-01",
+  "gasto": 1080.71,
+  "leads": 800,
+  "conversaciones_wa": 264,
+  "cpl": 1.35,
+  "por_campana": [
+   [
+    "[AGOSTO] ESPE.1 ACERO - FORM",
+    384.36,
+    347
+   ],
+   [
+    "[14SEP] MASTER - FORM",
+    256.56,
+    214
+   ],
+   [
+    "[18MAYO] MASTER - ESCALADO",
+    171.01,
+    110
+   ],
+   [
+    "[27AGO] MASTER - FORM - TESTEO",
+    142.74,
+    102
+   ],
+   [
+    "LEAD MAGNETS (3 campañas)",
+    64.75,
+    0
+   ],
+   [
+    "[29SEP] MASTER - FORM",
+    23.58,
+    18
+   ],
+   [
+    "[29SEPT] ACERO - WSP SMS",
+    19.58,
+    0
+   ],
+   [
+    "[29SEPT] ACERO - FORM",
+    18.13,
+    9
+   ]
+  ],
+  "roas_caja": 3.33,
+  "roas_adquisicion": 0.86,
+  "captacion_sobre_pauta": 1.84
+ },
+ "ganadores_pauta": {
+  "ventana_archivo": "2026-09-04 → 2026-10-01",
+  "creativos_distintos": 4,
+  "leads_top": 686,
+  "lista": [
+   [
+    "AceroADS-JulioV01 ($225 TutorIA en el nombre, $199,99 impreso)",
+    95.09,
+    358,
+    0.27
+   ],
+   [
+    "ACERO 1 ($199,99 impreso)",
+    73.96,
+    195,
+    0.38
+   ],
+   [
+    "Máster ADS 1 (19-01)",
+    117.47,
+    120,
+    0.98
+   ],
+   [
+    "Máster «master 1» (dice 12 meses / 12 módulos)",
+    64.31,
+    113,
+    0.57
+   ]
+  ],
+  "imagenes": "cierre-septiembre/img/"
+ },
+ "organico": {
+  "piezas": 21,
+  "vistas": 92859,
+  "comentarios": 431,
+  "guardados": 1338,
+  "seguidores_cuenta": "+528 (80.347 → 80.875)",
+  "por_pieza": {
+   "vistas": "4.066 → 4.422 (+9%)",
+   "comentarios": "23,0 → 20,5 (−11%)",
+   "guardados": "31,8 → 63,7 (+100%)"
+  },
+  "ganador": "Dato de cálculo de cuantía mínima: 45.983 vistas, 148 comentarios, 739 guardados, 176 seguidores",
+  "auditoria": "matriz-viral/auditorias/2026-09-hallazgos.md"
+ },
+ "seguimiento_correo_lead_magnets": "Solo ZAPATA y NIVEL tienen nutrición por correo activa; MEMORIA, DYNAMO, Guía Revit+ChatGPT y COTIZA solo reciben el acceso; ACERO recibe la reactivación genérica (fuentes/ghl/seguimiento-correos-lm.json).",
+ "meta_septiembre": {
+  "objetivo": 10000,
+  "logrado_provisional": 3599.95,
+  "pct": 36
+ },
+ "meta_octubre": {
+  "objetivo": 10000,
+  "recurrente_esperado": 1600,
+  "captacion_necesaria": 8400,
+  "mezcla": [
+   [
+    "Módulos del Máster",
+    5,
+    750,
+    3750
+   ],
+   [
+    "Diplomados",
+    3,
+    500,
+    1500
+   ],
+   [
+    "Especialización Acero a $225",
+    14,
+    225,
+    3150
+   ]
+  ],
+  "conversion_necesaria": {
+   "acero": "14 de ~356 leads = 3,9% (septiembre: 2 de 356 = 0,6%)",
+   "master_diplomado": "8 de ~444 leads = 1,8% (septiembre: 3 de 444 = 0,7%)"
+  }
+ },
+ "higiene": [
+  "3 oportunidades de prueba a $0 en Landing (borrar)",
+  "1 reserva a $0 en COMPRA CURSO AUTODESK (monto o sacar de ganadas)",
+  "2 ganadas sin cobro identificado ($100 y $29,99)",
+  "5 de 9 ventas sin fuente",
+  "2 contactos de prueba del cotizador",
+  "workflows de seguimiento de Acero en borrador desde el 28-sep",
+  "workflow OLD de accesos publicado junto al NEW",
+  "registrar en el CRM la 2.ª venta de Acero cobrada por PayPal el 7-sep ($199,99)"
+ ],
+ "ventas_captacion_cobradas": 8,
+ "presentaciones": {
+  "equipo": "sin montos de facturación del mes: solo % de la meta y ventas por cliente (pedido de Dayana el 2-oct)",
+  "gerencia": "con la conciliación completa"
+ }
+}
