@@ -5,19 +5,19 @@
   "hasta": "2026-10-05"
  },
  "corte": "PROVISIONAL al 2026-10-01 (datos de pasarelas y Meta hasta ayer). Se regenera el lunes 5-oct con datos hasta el 4-oct; el día 5 no está cerrado antes de la reunión.",
- "validado_por": "Dayana, 2-oct-2026: ventana 6-sep → 5-oct, los dos cobros PayPal de $199,99 son dos ventas reales, meta de octubre $10.000. Lista nominal pendiente de validar con el corte final.",
+ "validado_por": "Dayana, 2-oct-2026: ventana 6-sep → 5-oct, los dos cobros PayPal de $199,99 son dos ventas reales, meta de octubre $10.000. Lista nominal pendiente de validar con el corte final. 2-oct: los $100 de Stripe del 1-oct son de software (fuera); el 2.º PayPal de $199,99 es otro comprador sin registrar en el CRM.",
  "dinero": {
-  "cobrado_pasarelas": 3699.95,
+  "cobrado_pasarelas": 3599.95,
   "recurrente": 1609.99,
-  "captacion": 2089.96,
+  "captacion": 1989.96,
   "recurrente_detalle": "9 cuotas de $160 del Máster, 1 de $140 y 1 de $29,99 (Subscription update / Matrícula mensual)",
-  "excluido": "$50 PayPal del equipo (9-sep), prueba",
-  "cobertura": "Stripe 2-sep → 1-oct; PayPal: el último cobro del archivo es del 16-sep (confirmar que no falta otra cuenta).",
+  "excluido": "$50 PayPal del equipo (9-sep), prueba; $100 Stripe del 1-oct, venta de software (otro negocio, no cursos), confirmado por Dayana el 2-oct",
+  "cobertura": "Stripe 2-sep → 1-oct. PayPal: el último cobro del archivo es del 16-sep; del 17-sep al 1-oct no aparece ningún cobro por PayPal (preguntado a Dayana si alguien pagó por PayPal en esas fechas).",
   "crm_ganadas_depuradas": {
    "valor": 1919.96,
    "n": 9
   },
-  "conciliacion": "captación en pasarelas = CRM − 2 ventas sin cobro identificado ($100 + $29,99) + 2.º cobro de $199,99 sin oportunidad + $100 del 1-oct sin oportunidad"
+  "conciliacion": "captación en pasarelas ($1.989,96) = CRM depurado ($1.919,96) − 2 ganadas sin cobro identificado ($100 + $29,99) + 1 venta de Acero cobrada por PayPal que no está registrada en el CRM ($199,99, confirmada por Dayana el 2-oct)"
  },
  "ventas_por_producto": [
   {
@@ -39,11 +39,6 @@
    "producto": "Cursos y suscripciones lowcost",
    "n": 3,
    "ingreso": 73.98
-  },
-  {
-   "producto": "Sin identificar (suscripción creada el 1-oct)",
-   "n": 1,
-   "ingreso": 100.0
   }
  ],
  "acero_a_225": 0,
@@ -95,9 +90,9 @@
     9
    ]
   ],
-  "roas_caja": 3.42,
+  "roas_caja": 3.33,
   "roas_adquisicion": 0.86,
-  "captacion_sobre_pauta": 1.93
+  "captacion_sobre_pauta": 1.84
  },
  "ganadores_pauta": {
   "ventana_archivo": "2026-09-04 → 2026-10-01",
@@ -148,8 +143,8 @@
  "seguimiento_correo_lead_magnets": "Solo ZAPATA y NIVEL tienen nutrición por correo activa; MEMORIA, DYNAMO, Guía Revit+ChatGPT y COTIZA solo reciben el acceso; ACERO recibe la reactivación genérica (fuentes/ghl/seguimiento-correos-lm.json).",
  "meta_septiembre": {
   "objetivo": 10000,
-  "logrado_provisional": 3699.95,
-  "pct": 37
+  "logrado_provisional": 3599.95,
+  "pct": 36
  },
  "meta_octubre": {
   "objetivo": 10000,
@@ -183,12 +178,16 @@
  "higiene": [
   "3 oportunidades de prueba a $0 en Landing (borrar)",
   "1 reserva a $0 en COMPRA CURSO AUTODESK (monto o sacar de ganadas)",
-  "2.º cobro PayPal de $199,99 sin oportunidad",
   "2 ganadas sin cobro identificado ($100 y $29,99)",
-  "$100 en Stripe del 1-oct sin oportunidad",
   "5 de 9 ventas sin fuente",
   "2 contactos de prueba del cotizador",
   "workflows de seguimiento de Acero en borrador desde el 28-sep",
-  "workflow OLD de accesos publicado junto al NEW"
- ]
+  "workflow OLD de accesos publicado junto al NEW",
+  "registrar en el CRM la 2.ª venta de Acero cobrada por PayPal el 7-sep ($199,99)"
+ ],
+ "ventas_captacion_cobradas": 8,
+ "presentaciones": {
+  "equipo": "sin montos de facturación del mes: solo % de la meta y ventas por cliente (pedido de Dayana el 2-oct)",
+  "gerencia": "con la conciliación completa"
+ }
 }
