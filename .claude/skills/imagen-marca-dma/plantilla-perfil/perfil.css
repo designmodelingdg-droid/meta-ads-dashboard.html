@@ -1,0 +1,17 @@
+@import url('fonts.css');
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1350px;overflow:hidden}
+body{background:radial-gradient(ellipse at 50% 0%,#0C2442 0%,#071A2F 55%,#05142A 100%);color:#fff;font-family:'Montserrat',sans-serif;position:relative}
+.o{color:#E8893A}
+.bp{position:absolute;inset:0;opacity:.16}
+.img{position:absolute;-webkit-mask-image:radial-gradient(ellipse 48% 46% at 50% 50%,#000 55%,transparent 100%);mask-image:radial-gradient(ellipse 48% 46% at 50% 50%,#000 55%,transparent 100%)}
+.logo{position:absolute;left:52px;top:44px;width:330px}
+.count{position:absolute;right:60px;top:62px;font-weight:800;font-size:26px;letter-spacing:1px}
+.count i{font-style:normal;color:#E8893A}
+.rule{position:absolute;width:120px;height:7px;background:#E8893A;border-radius:2px}
+.foot{position:absolute;left:0;right:0;bottom:46px;height:30px}
+.foot .tag{position:absolute;left:50%;transform:translateX(-50%);font-weight:800;font-size:19px;letter-spacing:6px;white-space:nowrap}
+.foot .tag i{font-style:normal;color:#E8893A;margin:0 14px}
+.foot .sw{position:absolute;right:60px;font-weight:800;font-size:19px;letter-spacing:4px}
+.foot .sw i{font-style:normal;color:#E8893A;font-size:24px;letter-spacing:0}
+.shade{position:absolute;left:0;right:0;bottom:0;height:260px;background:linear-gradient(transparent,#05142A 80%)}
