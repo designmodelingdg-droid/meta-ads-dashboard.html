@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-01",
+ "generado": "2026-10-02",
  "ventana_series_dias": 30,
  "fuente": "OpenReply — base propia (Postgres), solo lectura",
  "nota_privacidad": "Solo agregados. No se lee `commenterName`, ni `commentText`, ni `accessToken`. Ningún dato personal sale de la base.",
@@ -815,7 +815,7 @@
   {
    "estado": "FAILED",
    "pero_si_se_entrego": false,
-   "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=AF-ltannLQXpkquXocuDwNj]",
+   "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=A_EtLUAgdkmqkQgmGSsPefN]",
    "veces": 1,
    "ultima_vez": "2026-10-01T20:41:33.679"
   },
@@ -1215,11 +1215,6 @@
  "seguidores": [
   {
    "cuenta": "design_modeling_dg",
-   "fecha": "2026-09-01",
-   "seguidores": 80393
-  },
-  {
-   "cuenta": "design_modeling_dg",
    "fecha": "2026-09-02",
    "seguidores": 80422
   },
@@ -1409,8 +1404,8 @@
       "estado": "draft"
      }
     ],
-    "bot_total": 177,
-    "bot_nuevos_7d": 11
+    "bot_total": 178,
+    "bot_nuevos_7d": 12
    },
    "NIVEL": {
     "publicados": [
@@ -1446,8 +1441,8 @@
      }
     ],
     "en_borrador": [],
-    "bot_total": 37,
-    "bot_nuevos_7d": 10
+    "bot_total": 54,
+    "bot_nuevos_7d": 21
    },
    "DYNAMO": {
     "publicados": [
@@ -1457,8 +1452,8 @@
      }
     ],
     "en_borrador": [],
-    "bot_total": 12,
-    "bot_nuevos_7d": 7
+    "bot_total": 13,
+    "bot_nuevos_7d": 5
    },
    "COTIZA": {
     "publicados": [
@@ -1472,7 +1467,7 @@
     "bot_nuevos_7d": 0
    }
   },
-  "embudo_generado": "2026-10-01T15:27Z"
+  "embudo_generado": "2026-10-01T21:01Z"
  },
  "cotejo_con_la_matriz": [
   {
