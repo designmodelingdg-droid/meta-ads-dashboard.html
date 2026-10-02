@@ -95,7 +95,7 @@
    "actualizada": "2026-09-22T03:01:54.579",
    "cuenta": "design_modeling_dg",
    "enviados": 9,
-   "fallidos": 1,
+   "fallidos": 2,
    "entregados_sin_confirmar": 0,
    "saltados": 0,
    "pendientes": 0,
@@ -463,7 +463,7 @@
    "campana": "TUTORIAL PLANO BIM PARTE 2",
    "campana_activa": true,
    "enviados": 9,
-   "fallidos": 1,
+   "fallidos": 2,
    "entregados_sin_confirmar": 0,
    "saltados": 0,
    "primer_envio": "2026-09-22T03:09:17.287",
@@ -587,6 +587,13 @@
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=AxZgkDZVjfRez-8RxesMDFN]",
    "veces": 1,
    "ultima_vez": "2026-09-24T15:55:24.364"
+  },
+  {
+   "estado": "FAILED",
+   "pero_si_se_entrego": false,
+   "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=AP33unJWbaKlKOB-bXxtz7Y]",
+   "veces": 1,
+   "ultima_vez": "2026-10-02T15:19:48.087"
   },
   {
    "estado": "FAILED",
@@ -1379,7 +1386,7 @@
   }
  ],
  "workflows_ghl": {
-  "generado": "2026-09-30",
+  "generado": "2026-10-02",
   "total": 134,
   "por_palabra": {
    "ZAPATA": {
@@ -1394,8 +1401,8 @@
      }
     ],
     "en_borrador": [],
-    "bot_total": 171,
-    "bot_nuevos_7d": 3
+    "bot_total": 172,
+    "bot_nuevos_7d": 4
    },
    "ACERO": {
     "publicados": [
@@ -1418,7 +1425,7 @@
       "estado": "draft"
      }
     ],
-    "bot_total": 178,
+    "bot_total": 179,
     "bot_nuevos_7d": 12
    },
    "NIVEL": {
@@ -1455,8 +1462,8 @@
      }
     ],
     "en_borrador": [],
-    "bot_total": 110,
-    "bot_nuevos_7d": 72
+    "bot_total": 116,
+    "bot_nuevos_7d": 77
    },
    "DYNAMO": {
     "publicados": [
@@ -1466,8 +1473,8 @@
      }
     ],
     "en_borrador": [],
-    "bot_total": 15,
-    "bot_nuevos_7d": 7
+    "bot_total": 16,
+    "bot_nuevos_7d": 8
    },
    "COTIZA": {
     "publicados": [
@@ -1481,7 +1488,7 @@
     "bot_nuevos_7d": 0
    }
   },
-  "embudo_generado": "2026-10-02T05:35Z"
+  "embudo_generado": "2026-10-02T15:31Z"
  },
  "cotejo_con_la_matriz": [
   {
