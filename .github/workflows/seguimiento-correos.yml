@@ -29,7 +29,7 @@ jobs:
       - name: Contar los correos de seguimiento
         env:
           GHL_TOKEN: ${{ secrets.GHL_TOKEN }}
-        run: python3 scripts/seguimiento_correos_lm.py --muestra 15
+        run: python3 scripts/seguimiento_correos_lm.py --muestra 20
       - name: Commit si cambió
         run: |
           git config user.name  "github-actions[bot]"

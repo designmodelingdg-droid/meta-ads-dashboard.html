@@ -40,16 +40,21 @@ CAB = {"Authorization": f"Bearer {TOKEN}", "Accept": "application/json", "Conten
        "Version": "2021-07-28",
        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/126.0 Safari/537.36"}
 
-# La etiqueta que marca que la persona pidió el recurso (la más poblada de su embudo).
+# La etiqueta de ACCESO: la pone el formulario, así que el contacto ya tiene
+# correo. Con la del bot (lead-…) casi nadie lo tiene: el contacto entra por
+# Instagram sin correo, y salía «0 correos» sin que eso dijera nada (30-sep).
 RECURSOS = {
-    "ZAPATA": "lead-calculadora-zapatas",
-    "NIVEL": "lead-test-nivel",
-    "MEMORIA": "lead-memoria",
-    "DYNAMO": "lead-dynamo",
+    "ZAPATA": "acceso-calculadora",
+    "NIVEL": "acceso-nivelbim",
+    "MEMORIA": "acceso-memoria-calculo",
+    "DYNAMO": "acceso-script-dynamo",
     "GUIA REVIT+CHATGPT": "acceso-guia-revitchatgpt",
-    "ACERO (5 verificaciones)": "lead-acero-verificaciones",
-    "COTIZA": "lead-cotizador",
+    "ACERO (5 verificaciones)": "acceso-verificacion",
+    "COTIZA": "acceso-cotizador-honorarios",
 }
+# Un contacto con decenas de correos es del equipo (recibe avisos internos con
+# nombres de leads): no cuenta y sus asuntos no se miran.
+TOPE_INTERNO = 30
 
 
 def pedir(ruta, cuerpo=None, **params):
@@ -125,12 +130,17 @@ def main():
               "recursos": {}}
     for recurso, tag in RECURSOS.items():
         cs, total, err = contactos(tag, a.muestra)
-        por_contacto, asuntos, dias_ultimo = [], Counter(), []
+        por_contacto, asuntos, dias_ultimo, internos = [], Counter(), [], 0
+        contactos_por_asunto = defaultdict(set)
         for c in cs:
             mails = correos_salientes(c)
+            if len(mails) > TOPE_INTERNO:
+                internos += 1
+                continue
             por_contacto.append(len(mails))
             for _, s in mails:
                 asuntos[s] += 1
+                contactos_por_asunto[s].add(c["id"])
             if len(mails) >= 2:
                 try:
                     f0 = datetime.fromisoformat(mails[0][0].replace("Z", "+00:00"))
@@ -139,14 +149,19 @@ def main():
                 except ValueError:
                     pass
         con_seguimiento = sum(1 for n in por_contacto if n >= 2)
+        # Solo se guardan asuntos que recibieron al menos 2 contactos distintos:
+        # un asunto con el nombre de OTRA persona (aviso interno) sale una vez y
+        # no se escribe.
+        comunes = [(s_, n) for s_, n in asuntos.most_common() if len(contactos_por_asunto[s_]) >= 2][:12]
         salida["recursos"][recurso] = {
-            "etiqueta": tag, "contactos_con_etiqueta": total, "muestra": len(cs), "error": err,
+            "etiqueta": tag, "contactos_con_etiqueta": total, "muestra": len(cs) - internos,
+            "excluidos_por_ser_del_equipo": internos, "error": err,
             "correos_por_contacto": dict(sorted(Counter(por_contacto).items())),
             "contactos_con_2_o_mas_correos": con_seguimiento,
             "dias_entre_primer_y_ultimo_correo_mediana": st.median(dias_ultimo) if dias_ultimo else None,
-            "asuntos_mas_frecuentes": asuntos.most_common(12),
-            "lectura": ("sin muestra" if not cs else
-                        "hay seguimiento por correo: a la mayoría le llegan 2 o más" if con_seguimiento * 2 >= len(cs) else
+            "asuntos_recibidos_por_2_o_mas": comunes,
+            "lectura": ("sin muestra" if not por_contacto else
+                        "hay seguimiento por correo: a la mayoría le llegan 2 o más" if con_seguimiento * 2 >= len(por_contacto) else
                         "NO hay seguimiento activo: a la mayoría solo le llega 1 correo (o ninguno)"),
         }
         print(f"{recurso}: {len(cs)} contactos · {con_seguimiento} con 2+ correos · {dict(Counter(por_contacto))}")
