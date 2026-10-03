@@ -126,21 +126,21 @@
    "creada": "2026-09-25T19:37:01.511",
    "actualizada": "2026-09-25T19:37:01.511",
    "cuenta": "design_modeling_dg",
-   "enviados": 5,
+   "enviados": 6,
    "fallidos": 0,
    "entregados_sin_confirmar": 0,
    "saltados": 0,
    "pendientes": 0,
    "primer_envio": "2026-09-25T19:39:33.828",
-   "ultimo_envio": "2026-09-27T16:08:48.165",
+   "ultimo_envio": "2026-10-03T13:39:39.695",
    "clics": 2,
    "clics_limpios": 2,
    "clics_con_bots": 0,
    "enlaces_rastreados": 1,
    "mide_clics": true,
-   "clics_por_dm": 0.4,
-   "ctr": 0.4,
-   "lectura_clics": "2 clics limpios sobre 5 DM enviados (40%). Son aperturas, no personas: la misma persona puede contar varias veces."
+   "clics_por_dm": 0.33,
+   "ctr": 0.3333,
+   "lectura_clics": "2 clics limpios sobre 6 DM enviados (33%). Son aperturas, no personas: la misma persona puede contar varias veces."
   },
   {
    "id": "cmtxm6vfz000604kwmijsiudi",
@@ -470,6 +470,17 @@
    "ultimo_envio": "2026-09-28T03:28:51.023"
   },
   {
+   "palabra": "MEMORIA",
+   "campana": "MEMORIA VERIFICABLE",
+   "campana_activa": true,
+   "enviados": 6,
+   "fallidos": 0,
+   "entregados_sin_confirmar": 0,
+   "saltados": 0,
+   "primer_envio": "2026-09-25T19:39:33.828",
+   "ultimo_envio": "2026-10-03T13:39:39.695"
+  },
+  {
    "palabra": "GUIA",
    "campana": "Guía Revit",
    "campana_activa": true,
@@ -490,17 +501,6 @@
    "saltados": 0,
    "primer_envio": "2026-09-11T23:56:38.282",
    "ultimo_envio": "2026-10-03T09:47:09.764"
-  },
-  {
-   "palabra": "MEMORIA",
-   "campana": "MEMORIA VERIFICABLE",
-   "campana_activa": true,
-   "enviados": 5,
-   "fallidos": 0,
-   "entregados_sin_confirmar": 0,
-   "saltados": 0,
-   "primer_envio": "2026-09-25T19:39:33.828",
-   "ultimo_envio": "2026-09-27T16:08:48.165"
   },
   {
    "palabra": "BIM",
@@ -547,17 +547,6 @@
    "ultimo_envio": "2026-10-02T11:42:39.253"
   },
   {
-   "palabra": "TUTOR",
-   "campana": "TUTOR IA DIPLOMADO",
-   "campana_activa": true,
-   "enviados": 1,
-   "fallidos": 0,
-   "entregados_sin_confirmar": 0,
-   "saltados": 0,
-   "primer_envio": "2026-09-24T19:12:58.28",
-   "ultimo_envio": "2026-09-24T19:12:58.28"
-  },
-  {
    "palabra": "RUTA",
    "campana": "4 PUERTAS RUTA BIM",
    "campana_activa": true,
@@ -567,6 +556,17 @@
    "saltados": 0,
    "primer_envio": "2026-09-23T16:23:56.895",
    "ultimo_envio": "2026-09-23T16:23:56.895"
+  },
+  {
+   "palabra": "TUTOR",
+   "campana": "TUTOR IA DIPLOMADO",
+   "campana_activa": true,
+   "enviados": 1,
+   "fallidos": 0,
+   "entregados_sin_confirmar": 0,
+   "saltados": 0,
+   "primer_envio": "2026-09-24T19:12:58.28",
+   "ultimo_envio": "2026-09-24T19:12:58.28"
   },
   {
    "palabra": "IA",
@@ -1229,7 +1229,7 @@
   },
   {
    "fecha": "2026-10-03",
-   "enviados": 3
+   "enviados": 4
   }
  ],
  "seguidores": [
@@ -1429,8 +1429,8 @@
       "estado": "draft"
      }
     ],
-    "bot_total": 191,
-    "bot_nuevos_7d": 18
+    "bot_total": 192,
+    "bot_nuevos_7d": 19
    },
    "NIVEL": {
     "publicados": [
@@ -1466,8 +1466,8 @@
      }
     ],
     "en_borrador": [],
-    "bot_total": 126,
-    "bot_nuevos_7d": 85
+    "bot_total": 128,
+    "bot_nuevos_7d": 86
    },
    "DYNAMO": {
     "publicados": [
@@ -1492,7 +1492,7 @@
     "bot_nuevos_7d": 0
    }
   },
-  "embudo_generado": "2026-10-03T05:17Z"
+  "embudo_generado": "2026-10-03T13:22Z"
  },
  "cotejo_con_la_matriz": [
   {
@@ -1541,8 +1541,8 @@
     "MEMORIA VERIFICABLE",
     "MEMORIA DE CÁLCULO"
    ],
-   "dms_enviados": 26,
-   "lectura": "Viva: 26 DM enviados."
+   "dms_enviados": 27,
+   "lectura": "Viva: 27 DM enviados."
   },
   {
    "palabra": "DYNAMO",
