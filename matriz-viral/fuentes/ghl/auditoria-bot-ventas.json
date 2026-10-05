@@ -1,138 +1,137 @@
 {
- "generado": "2026-10-05T03:43Z",
+ "generado": "2026-10-05T14:24Z",
  "nota": "Agregados y ejemplos anonimizados (nombre del contacto, correos, teléfonos y enlaces tapados). Muestra de las conversaciones más recientes, no el total.",
  "conversaciones_traidas": 400,
- "conversaciones_revisadas": 239,
+ "conversaciones_revisadas": 247,
  "tipos_de_conversacion": {
   "TYPE_PHONE": 400
  },
  "tipos_de_mensaje": {
-  "TYPE_CUSTOM_SMS": 6048,
-  "TYPE_EMAIL": 2680,
-  "TYPE_ACTIVITY_OPPORTUNITY": 1974,
-  "TYPE_WHATSAPP": 261,
-  "TYPE_INSTAGRAM": 183,
-  "TYPE_CALL": 148,
-  "TYPE_FACEBOOK": 124,
-  "TYPE_FACEBOOK_COMMENT": 85,
-  "TYPE_INSTAGRAM_COMMENT": 52,
+  "TYPE_CUSTOM_SMS": 6005,
+  "TYPE_EMAIL": 2729,
+  "TYPE_ACTIVITY_OPPORTUNITY": 2009,
+  "TYPE_WHATSAPP": 272,
+  "TYPE_INSTAGRAM": 187,
+  "TYPE_CALL": 149,
+  "TYPE_FACEBOOK": 139,
+  "TYPE_FACEBOOK_COMMENT": 84,
+  "TYPE_INSTAGRAM_COMMENT": 56,
   "TYPE_ACTIVITY_APPOINTMENT": 39,
-  "TYPE_INTERNAL_COMMENT": 10,
-  "TYPE_ACTIVITY_CONTACT": 9,
-  "TYPE_ACTIVITY_EMPLOYEE_ACTION_LOG": 8,
+  "TYPE_ACTIVITY_EMPLOYEE_ACTION_LOG": 10,
+  "TYPE_INTERNAL_COMMENT": 8,
+  "TYPE_ACTIVITY_CONTACT": 8,
   "TYPE_ACTIVITY_WHATSAPP": 4,
   "TYPE_LIVE_CHAT_INFO_MESSAGE": 3,
   "TYPE_ACTIVITY_PAYMENT": 2,
   "TYPE_ACTIVITY_INVOICE": 2,
-  "TYPE_CUSTOM_PROVIDER_SMS": 2,
   "TYPE_SMS_REVIEW_REQUEST": 2,
   "TYPE_LIVE_CHAT": 2,
+  "TYPE_CUSTOM_PROVIDER_SMS": 1,
   "TYPE_WEBCHAT": 1,
   "TYPE_CUSTOM_EMAIL": 1
  },
- "terminan_con_mensaje_nuestro": 228,
+ "terminan_con_mensaje_nuestro": 236,
  "con_etiqueta_de_compra": 56,
  "conversaciones_con_propuesta_de_llamada": 75,
- "conversaciones_con_enlace_de_pago": 23,
+ "conversaciones_con_enlace_de_pago": 22,
  "fuente_de_los_mensajes_salientes": {
-  "api": 3223,
-  "workflow": 1506,
-  "app": 226,
+  "api": 3181,
+  "workflow": 1521,
+  "app": 242,
   "bulk_actions": 1
  },
  "largo_mensajes_bot": {
-  "mediana": 151,
-  "p90": 332,
-  "n": 4956
+  "mediana": 154,
+  "p90": 335,
+  "n": 4945
  },
  "como_terminan_los_mensajes_del_bot": {
-  "pregunta": 1445,
-  "menciona_precio": 642,
-  "da_opciones": 506,
-  "temario_o_pdf": 421,
-  "propone_llamada": 419,
+  "pregunta": 1453,
+  "menciona_precio": 632,
+  "da_opciones": 522,
+  "temario_o_pdf": 430,
+  "propone_llamada": 420,
   "revisalo_y_me_cuentas": 198,
-  "enlace_de_pago": 42
+  "enlace_de_pago": 39
  },
  "ultimo_mensaje_nuestro_de_cada_conversacion": {
-  "sin_pregunta_ni_paso": 156,
-  "pregunta": 51,
-  "da_opciones": 43,
-  "revisalo_y_me_cuentas": 16,
-  "propone_llamada": 15,
-  "temario_o_pdf": 10,
-  "menciona_precio": 8
+  "sin_pregunta_ni_paso": 155,
+  "pregunta": 57,
+  "da_opciones": 47,
+  "revisalo_y_me_cuentas": 19,
+  "propone_llamada": 16,
+  "temario_o_pdf": 13,
+  "menciona_precio": 9
  },
  "objeciones": {
-  "pide_descuento": 43,
-  "lo_pienso": 42,
-  "confianza": 12,
+  "pide_descuento": 44,
+  "lo_pienso": 43,
   "clases_grabadas": 11,
+  "confianza": 11,
   "tiempo": 8,
-  "sin_presupuesto": 6,
-  "cuotas": 5,
-  "es_un_bot": 3,
-  "precio_caro": 2
+  "sin_presupuesto": 5,
+  "cuotas": 4,
+  "precio_caro": 3,
+  "es_un_bot": 3
  },
  "ejemplos_de_objecion": {
   "clases_grabadas": [
+   "O todas quedan siempre grabadas?",
    "👤 [nombre] ([telefono]) Ing. [nombre] qué programa??.la Capacitación es en vivo??. Le solicitó más informacion",
    "Cuando inicia ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: Chatea con nosotros 🔗 Description: Evita fallas estructurales desde la base del proyecto. Aprende a diseñar y analizar cimentaciones superf",
    "Cual el costo?, no hay sesiones en vivo?",
-   "O todas quedan siempre grabadas?",
    "Son grabadas las clases para poder repasar más adelante.",
    "El curso es grabado?"
   ],
+  "tiempo": [
+   "En orden de prioridades 1)que lo aprendido tenga demanda real de campo 2) que los horarios me permitan continuar mi trabajo 3) que tenga acreditación nacional y internacional valida",
+   "Ayuda con horarios fechas y métodos de pago",
+   "↪︎ Image Cuáles son los horarios de clases",
+   "Cuales serian los horarios?",
+   "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿A qué te dedicas?: Proyectista, dibujante o modelador BIM Full name: [nombre] Phone number: [telefono] Con las es",
+   "Déjame revisar diferencia de horario con México"
+  ],
   "pide_descuento": [
+   "*Headline:* 🔥 ¡Precio especial: $199 USD! *Source URL:* [enlace] Hola, me interesa la especialización de estructuras de Acero",
+   "Hola, quiero info de la Colección BIM + IA 2026 con descuento Autodesk ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: Chatea con nosotros 🔗 Description: ¿Estás listo para liderar la construcción digit",
+   "Hola, quiero info de la Colección BIM + IA 2026 con descuento Autodesk ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: Chatea con nosotros 🔗 Description: ¿Estás listo para liderar la construcción digit",
    "Tienes algún descuento extra?",
    "¡Hola! Deseo más información sobre el Curso de Revit con Inteligencia Artificial ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: Automatización Inteligente en Revit 🔗 Description: 🚀 ¿Sigues haciendo ta",
-   "¡Hola! Deseo más información sobre el Curso de Revit con Inteligencia Artificial ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: Automatización Inteligente en Revit 🔗 Description: 🚀 ¿Sigues haciendo ta",
-   "Hola, me interesa la especialización de estructuras de Acero ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: 💥 Precio especial: $199 USD por tiempo limitado. 🔗 Description: 📲 Escríbenos y te enviamos e",
-   "Hola, me interesa la especialización de estructuras de Acero ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: 💥 Precio especial: $199 USD por tiempo limitado. 🔗 Description: ¿Quieres dominar el diseño d",
-   "*Headline:* 🔥 ¡Precio especial: $199 USD! *Source URL:* [enlace] Hola, me interesa la especialización de estructuras de Acero"
+   "¡Hola! Deseo más información sobre el Curso de Revit con Inteligencia Artificial ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: Automatización Inteligente en Revit 🔗 Description: 🚀 ¿Sigues haciendo ta"
+  ],
+  "lo_pienso": [
+   "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿A qué te dedicas?: Ingeniero(a) civil o estructural Full name: [nombre] Phone number: [telefono] Con las estructu",
+   "Despues te escribo gracias",
+   "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿A qué te dedicas?: Ingeniero(a) civil o estructural Con las estructuras de acero, ¿qué quieres hacer?: Diseñarlas",
+   "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿Cuándo quieres empezar?: Más adelante / solo estoy viendo Full name: [nombre] Con las estructuras de acero, ¿qué ",
+   "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿Cuándo quieres empezar?: Más adelante / solo estoy viendo Full name: [nombre] Con las estructuras de acero, ¿qué ",
+   "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿A qué te dedicas?: Arquitecto(a) Con las estructuras de acero, ¿qué quieres hacer?: Diseñarlas, modelarlas o calc"
+  ],
+  "confianza": [
+   "1 Juan 2 24 Lo que habéis oído desde el principio, permanezca en vosotros. Si lo que habéis oído desde el principio permanece en vosotros, también vosotros permaneceréis en el Hijo y en el Padre. 25 Y",
+   "1 Juan 3 19 Y en esto conocemos que somos de la verdad, y aseguraremos nuestros corazones delante de él; 20 pues si nuestro corazón nos reprende, mayor que nuestro corazón es Dios, y él sabe todas las",
+   "1 Juan 4 15 Todo aquel que confiese que Jesús es el Hijo de Dios, Dios permanece en él, y él en Dios. 16 Y nosotros hemos conocido y creído el amor que Dios tiene para con nosotros. Dios es amor; y el",
+   "Sí, me interesa la Especialización en Cimentaciones. ¿Pueden darme info? ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: Chatea con nosotros 🔗 Description: Muchos errores estructurales no empiezan en l",
+   "Sí, me interesa: la oferta de Planos BIM Arquitectónicos y Estructurales ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: Chatea con nosotros 🔗 Description: ¿Cuántas veces entregaste un plano y luego de",
+   "Sí, me interesa: la oferta de Planos BIM Arquitectónicos y Estructurales ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: Chatea con nosotros 🔗 Description: ¿Cuántas veces entregaste un plano y luego de"
+  ],
+  "precio_caro": [
+   "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿Cuándo quieres empezar?: Más adelante / solo estoy viendo Full name: [nombre] Con las estructuras de acero, ¿qué ",
+   "Revit tengo conocimiento básicos Los demás programas medios nos explicaron en una materia de concreto estructural pero no específicamente acero",
+   "No se me acomoda, lo siento un poco caro"
   ],
   "sin_presupuesto": [
    "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿Has cursado estudios universitarios en áreas relacionadas con construcción/ingeniería/arquitectura?: No ¿A qué ru",
    "Desempleado",
    "No tengo dinero muchas gracias será para otra ocasión Received on 📱[Design Modeling [nombre] ]",
    "No, estoy desempleado por eso por ahora sólo estoy viendo para en cuanto me llegue dinero acceder al curso",
-   "Actual mente no trabajo en proyectos de acero, quisiera reforzar el conocimiento que tengo para poder brindar un mejor servicio",
-   "Full name: [nombre] Phone number: [telefono] Email: [correo] ¿A qué rubro perteneces?: Arquitecto ¿Has cursado estudios universitarios en áreas relacionadas con construcción/ingeniería/arquitectura?: "
-  ],
-  "confianza": [
-   "Sí, me interesa la Especialización en Cimentaciones. ¿Pueden darme info? ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: Chatea con nosotros 🔗 Description: Muchos errores estructurales no empiezan en l",
-   "1 Juan 2 24 Lo que habéis oído desde el principio, permanezca en vosotros. Si lo que habéis oído desde el principio permanece en vosotros, también vosotros permaneceréis en el Hijo y en el Padre. 25 Y",
-   "1 Juan 3 19 Y en esto conocemos que somos de la verdad, y aseguraremos nuestros corazones delante de él; 20 pues si nuestro corazón nos reprende, mayor que nuestro corazón es Dios, y él sabe todas las",
-   "1 Juan 4 15 Todo aquel que confiese que Jesús es el Hijo de Dios, Dios permanece en él, y él en Dios. 16 Y nosotros hemos conocido y creído el amor que Dios tiene para con nosotros. Dios es amor; y el",
-   "Sí, me interesa: la oferta de Planos BIM Arquitectónicos y Estructurales ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: Chatea con nosotros 🔗 Description: ¿Cuántas veces entregaste un plano y luego de",
-   "Sí, me interesa: la oferta de Planos BIM Arquitectónicos y Estructurales ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: Chatea con nosotros 🔗 Description: ¿Cuántas veces entregaste un plano y luego de"
-  ],
-  "lo_pienso": [
-   "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿A qué te dedicas?: Arquitecto(a) Con las estructuras de acero, ¿qué quieres hacer?: Diseñarlas, modelarlas o calc",
-   "Son grabadas las clases para poder repasar más adelante.",
-   "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿Cuándo quieres empezar?: Más adelante / solo estoy viendo Full name: [nombre] Con las estructuras de acero, ¿qué ",
-   "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿A qué te dedicas?: Ingeniero(a) civil o estructural Full name: [nombre] Phone number: [telefono] Con las estructu",
-   "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿A qué te dedicas?: Ingeniero(a) civil o estructural Con las estructuras de acero, ¿qué quieres hacer?: Diseñarlas",
-   "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿Cuándo quieres empezar?: Más adelante / solo estoy viendo Full name: [nombre] Con las estructuras de acero, ¿qué "
-  ],
-  "tiempo": [
-   "Ambas especializaciones son *100% a tu ritmo*, no hay fechas fijas ni horarios. Acceso de por vida.",
-   "↪︎ Image Cuáles son los horarios de clases",
-   "Cuales serian los horarios?",
-   "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿A qué te dedicas?: Proyectista, dibujante o modelador BIM Full name: [nombre] Phone number: [telefono] Con las es",
-   "Déjame revisar diferencia de horario con México",
-   "No hay horarios a respetar, es conforme al tiempo que podamos ingressr"
-  ],
-  "precio_caro": [
-   "Revit tengo conocimiento básicos Los demás programas medios nos explicaron en una materia de concreto estructural pero no específicamente acero",
-   "No se me acomoda, lo siento un poco caro"
+   "Actual mente no trabajo en proyectos de acero, quisiera reforzar el conocimiento que tengo para poder brindar un mejor servicio"
   ],
   "cuotas": [
    "Ok, perfecto",
    "Algun mejor precio de los $ 199,",
    "Este pero con un mejor precio,",
-   "Tipo $ 75 dos cuotas",
-   "Si por mensualidad"
+   "Tipo $ 75 dos cuotas"
   ],
   "es_un_bot": [
    "Yo sé que me está escribiendo un bot",
@@ -141,27 +140,26 @@
   ]
  },
  "respuesta_justo_despues_de_una_objecion": {
-  "n": 123,
+  "n": 122,
   "largo_mediana": 102,
-  "terminan_en_pregunta": 25,
+  "terminan_en_pregunta": 24,
   "tipos": {
-   "sin_pregunta_ni_paso": 87,
-   "pregunta": 25,
-   "menciona_precio": 11,
+   "sin_pregunta_ni_paso": 90,
+   "pregunta": 24,
    "da_opciones": 10,
+   "menciona_precio": 9,
    "temario_o_pdf": 9,
-   "propone_llamada": 1,
-   "enlace_de_pago": 1
+   "propone_llamada": 1
   }
  },
  "frases_del_bot_mas_repetidas": [
   [
    "¡Solo por hoy, [nombre]! Al inscribirte hoy en la Especialización de Acero Estructural te llevas el curso de Cimentaciones BIM sin costo adicional. 🎁 Es la oportunidad ideal para dominar ambas áreas con una sola inversión. ¿Te ayudo con tu inscripción?",
-   144
+   145
   ],
   [
    "Esperamos ser parte de su crecimiento profesional en un futuro🫱🏻‍🫲🏼 ¡Pero no te vas con las manos vacias! 🎁 Te obsequiamos un curso introductorio BIM dentro de nuestra Comunidad Design Premium DG 🎓 Tu acceso ya está activo y puedes ingresar en el siguiente enlace [enlace]",
-   129
+   130
   ],
   [
    "Últimos cupos ⏳ [nombre] aún estás a tiempo de aprovechar el 2x1 en la Especialización de Acero Estructural. El día de hoy cerramos todos los cupos disponibles en promoción. Respóndeme y aseguro tu lugar de inmediato.",
@@ -173,11 +171,11 @@
   ],
   [
    "Hola [nombre] 👋 ¿Sigues interesado en la Especialización en Acero Estructural? Puedo enviarte el temario completo ahora mismo con todos los módulos detallados. ¿Te lo comparto?",
-   82
+   86
   ],
   [
    "¿Qué tal, [nombre]? Quería saber si lograste revisar la información que te envié sobre la Especialización en Acero Estructural. Cualquier duda sobre el temario, horarios o inversión, te la resuelvo por aquí mismo.",
-   69
+   64
   ],
   [
    "Si te interesa me avisas, ya que son únicamente 𝟭𝟬 𝗽𝗹𝗮𝘇𝗮𝘀 disponibles👍",
@@ -192,15 +190,7 @@
    22
   ],
   [
-   "Veo que estás interesado en nuestra especialización en Acero Estructural ¿Es correcto?",
-   21
-  ],
-  [
    "Nuevo programa 𝗔𝗨𝗧𝗢𝗗𝗘𝗦𝗞 𝗜𝗡𝗧𝗘𝗟𝗜𝗚𝗘𝗡𝗖𝗜𝗔 𝗔𝗥𝗧𝗜𝗙𝗜𝗖𝗜𝗔𝗟 – 12 Cursos Avanzados de 𝗕𝗜𝗠 + 𝗜𝗔 por solo $𝟮𝟵𝟵.𝟵𝟵 𝗨𝗦𝗗 (valor real $2399.99).🔥",
-   21
-  ],
-  [
-   "Super, acá te dejo el PDF para que revises a detalle todo el contenido de la especialización 👇",
    21
   ],
   [
@@ -208,12 +198,16 @@
    21
   ],
   [
-   "🎓 Al completar cada curso obtendrás certificaciones oficiales de Autodesk y Design Modeling [nombre]",
-   19
+   "Super, acá te dejo el PDF para que revises a detalle todo el contenido de la especialización 👇",
+   21
   ],
   [
-   "¡Hola [nombre]👋! Vimos tu interés en nuestra Especialización en Acero Estructural BIM ¿Tienes 5 minutos ahora para contarte cómo funciona? 🎯",
-   18
+   "Veo que estás interesado en nuestra especialización en Acero Estructural ¿Es correcto?",
+   21
+  ],
+  [
+   "🎓 Al completar cada curso obtendrás certificaciones oficiales de Autodesk y Design Modeling [nombre]",
+   19
   ],
   [
    "Buenos días 👋 te saluda tu asesor comercial asignado de Design Modeling. [nombre] para acompañarte en todo el proceso.",
@@ -224,7 +218,7 @@
    17
   ],
   [
-   "Buenos Días, te saluda tu asesor comercial asignado de Design Modeling, para ayudarte en todo momento.",
+   "Te dejo el temario completo para que veas todo lo que incluye 👉 [enlace]",
    16
   ],
   [
@@ -232,51 +226,51 @@
    16
   ],
   [
+   "¡Hola [nombre]👋! Vimos tu interés en nuestra Especialización en Acero Estructural BIM ¿Tienes 5 minutos ahora para contarte cómo funciona? 🎯",
+   16
+  ],
+  [
+   "Revísalo con calma y me cuentas qué te parece 🙌",
+   15
+  ],
+  [
    "Hola [nombre], 👋🏼 Si te interesa aprender metodología BIM y ponerla en práctica en tus proyectos, puedes empezar por conocer ¿Qué es un modelador BIM? y que funciones realiza, cuanto debe cobrar por sus servicios y mucho más 👇🏼 [enlace] Además, un 🎁 BONO Adicional sobre cómo nuestro Diplomado Internacional BIM te sirve para continuar tus estudios en EE. UU. y Europa👇🏼 [enlace]",
    15
+  ],
+  [
+   "Buenos Días, te saluda tu asesor comercial asignado de Design Modeling, para ayudarte en todo momento.",
+   14
   ],
   [
    "Adicional colgea, me gustaría mostrarte como son nuestras clases y plataforma, puedes verlo en el enlace 🔗👇🏼 [enlace]",
    13
   ],
   [
-   "Buenas tardes colega, cuéntame ¿Lograste revisar la información que le envié?",
-   13
-  ],
-  [
-   "Te dejo el temario completo para que veas todo lo que incluye 👉 [enlace]",
-   13
-  ],
-  [
    "👆🏼 Adicional te dejo aca la siguiente imagen para que puedas ver la estructura del Máster Internacional BIM+IA",
-   13
-  ],
-  [
-   "Revísalo con calma y me cuentas qué te parece 🙌",
    12
-  ],
-  [
-   "Acá te comparto el siguiente PDF para que puedas revisar a detalle el temario de la especialización",
-   12
-  ],
-  [
-   "Perfecto, primero te comento de qué va la especialización.",
-   12
-  ],
-  [
-   "¿Te envío el temario detallado?",
-   12
-  ],
-  [
-   "¿Qué te pareció?🤔 ¿Se adapta a lo que estás buscando?",
-   11
   ],
   [
    "En esta especialización aprenderás a diseñar, analizar y modelar estructuras de acero con metodología BIM, integrando el cálculo estructural, el detallado de conexiones y la documentación técnica que se usa en proyectos reales de edificaciones.",
-   11
+   12
   ],
   [
    "Está organizada en módulos que te llevan de 0 a 100 en el manejo de los programas de diseño y cálculo, aplicado a proyectos reales de ingeniería estructural.",
+   12
+  ],
+  [
+   "¡Hola 👋🏼 Un saludo colega. Vi que estas interesado en especializarte. *¿Tienes 5 minutos ahora para contarte cómo funciona? 🎯* ¿No le interesa? Toque en «Detener promociones»",
+   11
+  ],
+  [
+   "Perfecto 🙌 Te cuento brevemente de qué se trata.",
+   11
+  ],
+  [
+   "Antes de pasarte el temario, cuéntame 👇 ¿lo quieres desde cero o ya manejas algo de acero/BIM y buscas profundizar?",
+   11
+  ],
+  [
+   "Buenas tardes colega, cuéntame ¿Lograste revisar la información que le envié?",
    11
   ],
   [
@@ -284,19 +278,23 @@
    11
   ],
   [
-   "¿Cómo lo ves?🤔 ¿Se adapta a lo que estás buscando?",
+   "¿Sigue ahí?🤔 Aca estoy esperando tu respuesta para asesorarte en herramientas IA aplicada a proyectos estructurales/arquitectónicos. Ahora cuentame ¿Qué te interesa más: aprender Revit desde cero, o integrar IA en proyectos que ya manejas?",
    10
   ],
   [
-   "¡Hola 👋🏼 Un saludo colega. Vi que estas interesado en especializarte. *¿Tienes 5 minutos ahora para contarte cómo funciona? 🎯* ¿No le interesa? Toque en «Detener promociones»",
+   "¿Qué te pareció?🤔 ¿Se adapta a lo que estás buscando?",
    10
   ],
   [
-   "Perfecto 🙌 Te cuento brevemente de qué se trata.",
+   "Acá te comparto el siguiente PDF para que puedas revisar a detalle el temario de la especialización",
    10
   ],
   [
-   "Antes de pasarte el temario, cuéntame 👇 ¿lo quieres desde cero o ya manejas algo de acero/BIM y buscas profundizar?",
+   "Perfecto, primero te comento de qué va la especialización.",
+   10
+  ],
+  [
+   "¿Te envío el temario detallado?",
    10
   ],
   [
@@ -312,335 +310,13 @@
    9
   ],
   [
-   "Perfecto colega, te comparto el siguiente PDF para que puedas revisar a detalle el temario de la especialización",
+   "¡Hola ! 👋🏼 ¿𝗦𝗶𝗴𝘂𝗲𝘀 𝗶𝗻𝘁𝗲𝗿𝗲𝘀𝗮𝗱𝗼 𝗲𝗻 𝗲𝗹 Máster BIM+IA? 🏗️ Mira cómo otros profesionales transformaron su carrera con nosotros 👉 [enlace] ¿𝗧𝗲 𝗴𝘂𝘀𝘁𝗮𝗿í𝗮 𝘃𝗶𝘃𝗶𝗿 𝗹𝗼 𝗺𝗶𝘀𝗺𝗼? ⏳ ¡Comenzamos en Marzo 2026🗓️! ¡No pierdas tu lugar! 𝗔𝗴𝗲𝗻𝗱𝗮 𝘁𝘂 𝗰𝗶𝘁𝗮 👉🏼 [enlace] ¡Te espero! 😊",
    9
   ]
  ],
  "ejemplos_final_de_conversacion": [
   {
-   "mensajes": 25,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "bot",
-     "texto": "Con una duración de 3 meses cada Bloque"
-    },
-    {
-     "de": "bot",
-     "texto": "Y el Bloque de BIM Magnament tiene un costo de $600 con una duración de dos meses"
-    },
-    {
-     "de": "bot",
-     "texto": "El valor expresado es en dólares americanos"
-    },
-    {
-     "de": "bot",
-     "texto": "Tienes alguno en mente o cuál te llama más la atención?"
-    }
-   ]
-  },
-  {
-   "mensajes": 58,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "persona",
-     "texto": "👤 [nombre] ([telefono]) Buenas noches"
-    },
-    {
-     "de": "bot",
-     "texto": "Buenas noches [nombre] en qué podemos ayudarte?"
-    },
-    {
-     "de": "persona",
-     "texto": "👤 [nombre] ([telefono]) Interesado curso de [nombre]"
-    },
-    {
-     "de": "bot",
-     "texto": "Claro con mucho gusto te envío la información por privado"
-    }
-   ]
-  },
-  {
-   "mensajes": 56,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "bot",
-     "texto": "Nombres y Apellidos Correo Elex"
-    },
-    {
-     "de": "bot",
-     "texto": "Correo Electrónico"
-    },
-    {
-     "de": "bot",
-     "texto": "Número de Celular"
-    },
-    {
-     "de": "bot",
-     "texto": "Que tal [nombre], quedé esperando tu confirmación para darte los accesos, te quedó alguna duda para ingresar a la especialización?"
-    }
-   ]
-  },
-  {
-   "mensajes": 31,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "bot",
-     "texto": "¡Hola 👋🏼 Un saludo colega. Vi que estas interesado en especializarte. *¿Tienes 5 minutos ahora para contarte cómo funciona? 🎯* ¿No le interesa? Toque en «Detener promociones»"
-    },
-    {
-     "de": "bot",
-     "texto": "Hola [nombre] 👋 ¿Sigues interesado en la *Especialización en Acero Estructural?* Puedo enviarte el temario completo ahora mismo con todos los módulos detallados. *¿Te lo comparto?* Design Modeling [nombre]"
-    },
-    {
-     "de": "persona",
-     "texto": "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿Has cursado estudios universitarios en áreas relacionadas con construcción/ingeniería/arquitectura?: No ¿A qué rubro perteneces?: Arquitecto ¿Tienes expe"
-    },
-    {
-     "de": "bot",
-     "texto": "¡Hola [nombre]! 👋 Perfecto, vi tu formulario. Eres arquitecto con experiencia en software, eso es una base sólida para crecer en BIM."
-    }
-   ]
-  },
-  {
-   "mensajes": 3,
-   "compro_por_etiqueta": true,
-   "final": [
-    {
-     "de": "bot",
-     "texto": "{WA#1}"
-    },
-    {
-     "de": "bot",
-     "texto": "{WA#1} hola"
-    },
-    {
-     "de": "bot",
-     "texto": "{WA#1} pruebas"
-    }
-   ]
-  },
-  {
-   "mensajes": 89,
-   "compro_por_etiqueta": true,
-   "final": [
-    {
-     "de": "bot",
-     "texto": "¡Hola [nombre]! 🙌"
-    },
-    {
-     "de": "bot",
-     "texto": "Excelente elección, la Especialización en Acero es justo lo que necesitas si quieres dominar el diseño y análisis de estructuras metálicas de verdad."
-    },
-    {
-     "de": "bot",
-     "texto": "Lo mejor es que ahora incluye un *Tutor IA integrado* que te resuelve dudas las 24h sin esperar respuesta 🤖"
-    },
-    {
-     "de": "bot",
-     "texto": "¿A qué te dedicas, ingeniería, arquitectura o construcción?"
-    }
-   ]
-  },
-  {
-   "mensajes": 3,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "bot",
-     "texto": "Hola [nombre] ! Qué bueno que te interesó lo de BIM + IA. Aquí está lo que te prometí 👇🏼 📄 [enlace] ✅ Están todas nuestras herramientas gratis en un solo sitio — calculadora de zapatas, test de nivel BIM, ebooks y nuestros artículos de BIM+"
-    },
-    {
-     "de": "bot",
-     "texto": "Hola [nombre] ! Qué bueno que te interesó lo de BIM + IA. Aquí está lo que te prometí 👇🏼 📄 [enlace] ✅ Están todas nuestras herramientas gratis en un solo sitio — calculadora de zapatas, test de nivel BIM, ebooks y nuestros artículos de BIM+"
-    },
-    {
-     "de": "bot",
-     "texto": "¡Hola! 👋 sigo esperando tu respuesta para poderte asesorar y que puedas aplicar la IA en tus proyectos usando el criterior adecuado. Ahora cuentame ¿Qué te interesa más: aprender Revit desde cero, o integrar IA en proyectos que ya manejas?"
-    }
-   ]
-  },
-  {
-   "mensajes": 75,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "bot",
-     "texto": "Perfecto, [nombre] 🚀 La Especialización en Acero es ideal para ti, diseño, cálculo y modelado BIM de estructuras metálicas desde cero."
-    },
-    {
-     "de": "bot",
-     "texto": "Incluye 4 cursos (Robot, diseño sísmico, naves industriales, uniones metálicas, Revit Structure), ~120 horas, acceso de por vida, y lo nuevo: *Tutor IA integrado que resuelve tus dudas 24h* 🤖"
-    },
-    {
-     "de": "bot",
-     "texto": "Te dejo el temario completo para que veas todo lo que incluye 👉 [enlace]"
-    },
-    {
-     "de": "bot",
-     "texto": "Revísalo con calma y me cuentas qué te parece."
-    }
-   ]
-  },
-  {
-   "mensajes": 9,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "bot",
-     "texto": "Hola [nombre] 👋 ¿Sigues interesado en la Especialización en Acero Estructural? Puedo enviarte el temario completo ahora mismo con todos los módulos detallados. ¿Te lo comparto?"
-    },
-    {
-     "de": "bot",
-     "texto": "¡Solo por hoy, [nombre]! Al inscribirte hoy en la Especialización de Acero Estructural te llevas el curso de Cimentaciones BIM sin costo adicional. 🎁 Es la oportunidad ideal para dominar ambas áreas con una sola inversión. ¿Te ayudo con tu "
-    },
-    {
-     "de": "bot",
-     "texto": "Últimos cupos ⏳ [nombre] aún estás a tiempo de aprovechar el 2x1 en la Especialización de Acero Estructural. El día de hoy cerramos todos los cupos disponibles en promoción. Respóndeme y aseguro tu lugar de inmediato."
-    },
-    {
-     "de": "bot",
-     "texto": "Esperamos ser parte de su crecimiento profesional en un futuro🫱🏻‍🫲🏼 ¡Pero no te vas con las manos vacias! 🎁 Te obsequiamos un curso introductorio BIM dentro de nuestra Comunidad Design Premium DG 🎓 Tu acceso ya está activo y puedes ingresar"
-    }
-   ]
-  },
-  {
-   "mensajes": 18,
-   "compro_por_etiqueta": true,
-   "final": [
-    {
-     "de": "persona",
-     "texto": "Gracias! Me llegará por e-mail?"
-    },
-    {
-     "de": "bot",
-     "texto": "Exacto, te contactan por aquí mismo en WhatsApp o por correo, el equipo te reenvía el acceso hoy."
-    },
-    {
-     "de": "persona",
-     "texto": "Listo"
-    },
-    {
-     "de": "bot",
-     "texto": "Perfecto 🙌 Cualquier cosa me avisas."
-    }
-   ]
-  },
-  {
-   "mensajes": 27,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "bot",
-     "texto": "Buenos dias colega, cuentame ¿Lograste revisar la información que le envié?"
-    },
-    {
-     "de": "bot",
-     "texto": "Buenas tardes colega, cuentame ¿Lograste revisar la información que le envié?"
-    },
-    {
-     "de": "bot",
-     "texto": "¡Buenas tardes colega!🔥 El día de hoy cerramos los cupos disponibles en la 𝗘𝘀𝗽𝗲𝗰𝗶𝗮𝗹𝗶𝘇𝗮𝗰𝗶𝗼́𝗻 al 𝟯𝟬% 𝗼𝗳𝗳 ¿Te animas a tomar la oferta?🎁"
-    },
-    {
-     "de": "bot",
-     "texto": "Buenas tardes [nombre] 👋 Este será mi último mensaje, cuéntame ¿sigues interesado en estudiar con nosotros? ¿Si o No?"
-    }
-   ]
-  },
-  {
-   "mensajes": 36,
-   "compro_por_etiqueta": true,
-   "final": [
-    {
-     "de": "bot",
-     "texto": "¡Hola ! 👋🏼⏰ ¡Ya casi estamos listos para comenzar el 𝗗𝗶𝗽𝗹𝗼𝗺𝗮𝗱𝗼 𝗕𝗜𝗠! Empezamos este 05 de febrero de 2026 🗓️. ¿𝗧𝘂𝘃𝗶𝘀𝘁𝗲 𝗰𝗵𝗮𝗻𝗰𝗲 𝗱𝗲 𝗿𝗲𝘃𝗶𝘀𝗮𝗿 𝗹𝗮 𝗴𝘂í𝗮 𝘀𝗼𝗯𝗿𝗲 𝗺𝗲𝘁𝗼𝗱𝗼𝗹𝗼𝗴í𝗮 𝗕𝗜𝗠 𝗾𝘂𝗲 𝘁𝗲 𝗲𝗻𝘃𝗶𝗲́? 😊 Me encantaría saber tu opinión."
-    },
-    {
-     "de": "bot",
-     "texto": "¡Hola ! 👋🏼 ¿𝗟𝗶𝘀𝘁𝗼 𝗽𝗮𝗿𝗮 𝗱𝗮𝗿 𝗲𝗹 𝘀𝗮𝗹𝘁𝗼 𝗽𝗿𝗼𝗳𝗲𝘀𝗶𝗼𝗻𝗮𝗹 𝗾𝘂𝗲 𝗺𝗲𝗿𝗲𝗰𝗲𝘀? 🚀 Con el Diplomado BIM puedes certificarte internacionalmente y abrir nuevas oportunidades. 🌎 ⏰ Empezamos este 05 de febrero de 2026. ¡𝗔𝗴𝗲𝗻𝗱𝗮 𝘁𝘂 𝗶𝗻𝘀𝗰𝗿𝗶𝗽𝗰𝗶𝗼́𝗻 hoy! 👉🏼 [enlace]"
-    },
-    {
-     "de": "persona",
-     "texto": "¿Puedes aceptar mi invitación así que puedo obtener un regalo gratis? [enlace]"
-    },
-    {
-     "de": "bot",
-     "texto": "¡Gracias por escribirnos! 🙌 Por lo que me cuentas, quizá este programa puntual no sea lo ideal para ti en este momento, pero tenemos varias opciones y con gusto te orientamos cuando quieras. Aquí estaremos 💛"
-    }
-   ]
-  },
-  {
-   "mensajes": 25,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "bot",
-     "texto": "¿Qué tal, [nombre]? Quería saber si lograste revisar la información que te envié sobre la Especialización en Acero Estructural. Cualquier duda sobre el temario, horarios o inversión, te la resuelvo por aquí mismo."
-    },
-    {
-     "de": "bot",
-     "texto": "¡Solo por hoy, [nombre]! Al inscribirte hoy en la Especialización de Acero Estructural te llevas el curso de Cimentaciones BIM sin costo adicional. 🎁 Es la oportunidad ideal para dominar ambas áreas con una sola inversión. ¿Te ayudo con tu "
-    },
-    {
-     "de": "bot",
-     "texto": "Últimos cupos ⏳ [nombre] aún estás a tiempo de aprovechar el 2x1 en la Especialización de Acero Estructural. El día de hoy cerramos todos los cupos disponibles en promoción. Respóndeme y aseguro tu lugar de inmediato."
-    },
-    {
-     "de": "bot",
-     "texto": "Esperamos ser parte de su crecimiento profesional en un futuro🫱🏻‍🫲🏼 ¡Pero no te vas con las manos vacias! 🎁 Te obsequiamos un curso introductorio BIM dentro de nuestra Comunidad Design Premium DG 🎓 Tu acceso ya está activo y puedes ingresar"
-    }
-   ]
-  },
-  {
-   "mensajes": 74,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "bot",
-     "texto": "¡Solo por hoy, [nombre]! Al inscribirte hoy en la Especialización de Acero Estructural te llevas el curso de Cimentaciones BIM sin costo adicional. 🎁 Es la oportunidad ideal para dominar ambas áreas con una sola inversión. ¿Te ayudo con tu "
-    },
-    {
-     "de": "bot",
-     "texto": "Últimos cupos ⏳ [nombre] aún estás a tiempo de aprovechar el 2x1 en la Especialización de Acero Estructural. El día de hoy cerramos todos los cupos disponibles en promoción. Respóndeme y aseguro tu lugar de inmediato."
-    },
-    {
-     "de": "bot",
-     "texto": "Esperamos ser parte de su crecimiento profesional en un futuro🫱🏻‍🫲🏼 ¡Pero no te vas con las manos vacias! 🎁 Te obsequiamos un curso introductorio BIM dentro de nuestra Comunidad Design Premium DG 🎓 Tu acceso ya está activo y puedes ingresar"
-    },
-    {
-     "de": "persona",
-     "texto": "Hola, me interesa la especialización de estructuras de Acero • adContextPreviewDismissed: false • automatedGreetingMessageShown: true • body: ¿Modelas estructuras de acero en BIM… pero dependes de otro para el cálculo? Entonces todavía eres"
-    }
-   ]
-  },
-  {
-   "mensajes": 69,
-   "compro_por_etiqueta": true,
-   "final": [
-    {
-     "de": "bot",
-     "texto": "¿Qué tal, [nombre]? Quería saber si lograste revisar la información que te envié sobre la Especialización en Acero Estructural. Cualquier duda sobre el temario, horarios o inversión, te la resuelvo por aquí mismo."
-    },
-    {
-     "de": "bot",
-     "texto": "¡Solo por hoy, [nombre]! Al inscribirte hoy en la Especialización de Acero Estructural te llevas el curso de Cimentaciones BIM sin costo adicional. 🎁 Es la oportunidad ideal para dominar ambas áreas con una sola inversión. ¿Te ayudo con tu "
-    },
-    {
-     "de": "bot",
-     "texto": "Últimos cupos ⏳ [nombre] aún estás a tiempo de aprovechar el 2x1 en la Especialización de Acero Estructural. El día de hoy cerramos todos los cupos disponibles en promoción. Respóndeme y aseguro tu lugar de inmediato."
-    },
-    {
-     "de": "bot",
-     "texto": "Esperamos ser parte de su crecimiento profesional en un futuro🫱🏻‍🫲🏼 ¡Pero no te vas con las manos vacias! 🎁 Te obsequiamos un curso introductorio BIM dentro de nuestra Comunidad Design Premium DG 🎓 Tu acceso ya está activo y puedes ingresar"
-    }
-   ]
-  },
-  {
-   "mensajes": 86,
+   "mensajes": 85,
    "compro_por_etiqueta": false,
    "final": [
     {
@@ -658,182 +334,6 @@
     {
      "de": "persona",
      "texto": "O todas quedan siempre grabadas?"
-    }
-   ]
-  },
-  {
-   "mensajes": 53,
-   "compro_por_etiqueta": true,
-   "final": [
-    {
-     "de": "bot",
-     "texto": "Design Modeling [nombre] , por pertenecer a la comunidad de Design Modeling [nombre] , te comparto el acceso a la 𝗕𝗼𝗹𝘀𝗮 𝗱𝗲 𝗧𝗿𝗮𝗯𝗮𝗷𝗼 𝗜𝗻𝘁𝗲𝗿𝗻𝗮𝗰𝗶𝗼𝗻𝗮𝗹 𝗕𝗜𝗠 👇🏼"
-    },
-    {
-     "de": "bot",
-     "texto": "Hola [nombre] 👋 ¿Estas interesado en el Máster BIM+IA? Puedo enviarte el temario completo ahora mismo con todos los módulos detallados ¿Te lo comparto?"
-    },
-    {
-     "de": "persona",
-     "texto": ">AUDIO<"
-    },
-    {
-     "de": "bot",
-     "texto": "No recibí el mensaje completo, [nombre]. ¿Qué necesitas? 👂"
-    }
-   ]
-  },
-  {
-   "mensajes": 15,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "persona",
-     "texto": "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿A qué te dedicas?: Ingeniero(a) civil o estructural Con las estructuras de acero, ¿qué quieres hacer?: Diseñarlas, modelarlas o calcularlas en software ("
-    },
-    {
-     "de": "bot",
-     "texto": "¡Perfecto, [nombre]! 👏 Ingeniero civil con ganas de dominar acero, ese es exactamente el perfil de la Especialización."
-    },
-    {
-     "de": "bot",
-     "texto": "Te dejo el temario completo para que veas todo lo que incluye 👉 [enlace]"
-    },
-    {
-     "de": "bot",
-     "texto": "Revísalo con calma y me cuentas qué te parece 🙌"
-    }
-   ]
-  },
-  {
-   "mensajes": 6,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "bot",
-     "texto": "¡Hola [nombre]! 👋 De nada, ¿ya accediste al recurso?"
-    },
-    {
-     "de": "bot",
-     "texto": "Te dejo el link por si aún no lo hiciste 👉 [enlace]"
-    },
-    {
-     "de": "bot",
-     "texto": "¿A qué te dedicas, ingeniería, arquitectura o construcción?"
-    },
-    {
-     "de": "bot",
-     "texto": "¿Sigue ahí?🤔 Aca estoy esperando tu respuesta para asesorarte en herramientas IA aplicada a proyectos estructurales/arquitectónicos. Ahora cuentame ¿Qué te interesa más: aprender Revit desde cero, o integrar IA en proyectos que ya manejas?"
-    }
-   ]
-  },
-  {
-   "mensajes": 4,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "bot",
-     "texto": "¡Hola [nombre]! 👋 Aquí está tu acceso a la Memoria de Cálculo GRATIS. Llena el siguiente formulario en menos de 2 minutos y obtén tu recurso gratuito ahora 🎁 [enlace]"
-    },
-    {
-     "de": "bot",
-     "texto": "¡Hola [nombre]! 👋 Aquí está tu acceso a la Memoria de Cálculo GRATIS. Llena el siguiente formulario en menos de 2 minutos y obtén tu recurso gratuito ahora 🎁 [enlace]"
-    },
-    {
-     "de": "bot",
-     "texto": "Mientras la pruebas, cuéntame ¿a qué te dedicas para orientar mejor tu perfil? 🙂 (Estudiante de ingeniería/arquitectura, Ingeniero(a) o arquitecto(a), independiente, Trabajo en constructora/consultora, Docente)"
-    },
-    {
-     "de": "bot",
-     "texto": "¿Sigue ahí?🤔 Aca estoy esperando tu respuesta para asesorarte en herramientas IA aplicada a proyectos estructurales/arquitectónicos. Ahora cuentame ¿Qué te interesa más: aprender Revit desde cero, o integrar IA en proyectos que ya manejas?"
-    }
-   ]
-  },
-  {
-   "mensajes": 5,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "bot",
-     "texto": "Hola [nombre] 👋 ¿Sigues interesado en la Especialización en Acero Estructural? Puedo enviarte el temario completo ahora mismo con todos los módulos detallados. ¿Te lo comparto?"
-    },
-    {
-     "de": "bot",
-     "texto": "¡Solo por hoy, [nombre]! Al inscribirte hoy en la Especialización de Acero Estructural te llevas el curso de Cimentaciones BIM sin costo adicional. 🎁 Es la oportunidad ideal para dominar ambas áreas con una sola inversión. ¿Te ayudo con tu "
-    },
-    {
-     "de": "bot",
-     "texto": "Últimos cupos ⏳ [nombre] aún estás a tiempo de aprovechar el 2x1 en la Especialización de Acero Estructural. El día de hoy cerramos todos los cupos disponibles en promoción. Respóndeme y aseguro tu lugar de inmediato."
-    },
-    {
-     "de": "bot",
-     "texto": "Esperamos ser parte de su crecimiento profesional en un futuro🫱🏻‍🫲🏼 ¡Pero no te vas con las manos vacias! 🎁 Te obsequiamos un curso introductorio BIM dentro de nuestra Comunidad Design Premium DG 🎓 Tu acceso ya está activo y puedes ingresar"
-    }
-   ]
-  },
-  {
-   "mensajes": 10,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "bot",
-     "texto": "¡Solo por hoy, [nombre]! Al inscribirte hoy en la Especialización de Acero Estructural te llevas el curso de Cimentaciones BIM sin costo adicional. 🎁 Es la oportunidad ideal para dominar ambas áreas con una sola inversión. ¿Te ayudo con tu "
-    },
-    {
-     "de": "bot",
-     "texto": "¡Solo por hoy, [nombre]! Al inscribirte hoy en la Especialización de Acero Estructural te llevas el curso de Cimentaciones BIM sin costo adicional. 🎁 Es la oportunidad ideal para dominar ambas áreas con una sola inversión. ¿Te ayudo con tu "
-    },
-    {
-     "de": "bot",
-     "texto": "Últimos cupos ⏳ [nombre] aún estás a tiempo de aprovechar el 2x1 en la Especialización de Acero Estructural. El día de hoy cerramos todos los cupos disponibles en promoción. Respóndeme y aseguro tu lugar de inmediato."
-    },
-    {
-     "de": "bot",
-     "texto": "Esperamos ser parte de su crecimiento profesional en un futuro🫱🏻‍🫲🏼 ¡Pero no te vas con las manos vacias! 🎁 Te obsequiamos un curso introductorio BIM dentro de nuestra Comunidad Design Premium DG 🎓 Tu acceso ya está activo y puedes ingresar"
-    }
-   ]
-  },
-  {
-   "mensajes": 15,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "bot",
-     "texto": "¿Qué tal, [nombre]? Quería saber si lograste revisar la información que te envié sobre la Especialización en Acero Estructural. Cualquier duda sobre el temario, horarios o inversión, te la resuelvo por aquí mismo."
-    },
-    {
-     "de": "bot",
-     "texto": "¡Solo por hoy, [nombre]! Al inscribirte hoy en la Especialización de Acero Estructural te llevas el curso de Cimentaciones BIM sin costo adicional. 🎁 Es la oportunidad ideal para dominar ambas áreas con una sola inversión. ¿Te ayudo con tu "
-    },
-    {
-     "de": "bot",
-     "texto": "Últimos cupos ⏳ [nombre] aún estás a tiempo de aprovechar el 2x1 en la Especialización de Acero Estructural. El día de hoy cerramos todos los cupos disponibles en promoción. Respóndeme y aseguro tu lugar de inmediato."
-    },
-    {
-     "de": "bot",
-     "texto": "Esperamos ser parte de su crecimiento profesional en un futuro🫱🏻‍🫲🏼 ¡Pero no te vas con las manos vacias! 🎁 Te obsequiamos un curso introductorio BIM dentro de nuestra Comunidad Design Premium DG 🎓 Tu acceso ya está activo y puedes ingresar"
-    }
-   ]
-  },
-  {
-   "mensajes": 26,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "bot",
-     "texto": "¿Qué tal, [nombre]? Quería saber si lograste revisar la información que te envié sobre la Especialización en Acero Estructural. Cualquier duda sobre el temario, horarios o inversión, te la resuelvo por aquí mismo."
-    },
-    {
-     "de": "bot",
-     "texto": "¡Solo por hoy, [nombre]! Al inscribirte hoy en la Especialización de Acero Estructural te llevas el curso de Cimentaciones BIM sin costo adicional. 🎁 Es la oportunidad ideal para dominar ambas áreas con una sola inversión. ¿Te ayudo con tu "
-    },
-    {
-     "de": "bot",
-     "texto": "Últimos cupos ⏳ [nombre] aún estás a tiempo de aprovechar el 2x1 en la Especialización de Acero Estructural. El día de hoy cerramos todos los cupos disponibles en promoción. Respóndeme y aseguro tu lugar de inmediato."
-    },
-    {
-     "de": "bot",
-     "texto": "Esperamos ser parte de su crecimiento profesional en un futuro🫱🏻‍🫲🏼 ¡Pero no te vas con las manos vacias! 🎁 Te obsequiamos un curso introductorio BIM dentro de nuestra Comunidad Design Premium DG 🎓 Tu acceso ya está activo y puedes ingresar"
     }
    ]
   },
@@ -860,51 +360,7 @@
    ]
   },
   {
-   "mensajes": 60,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "persona",
-     "texto": "Ustedes hacen con Autodesk structures q es eso"
-    },
-    {
-     "de": "bot",
-     "texto": "Buena pregunta. Usamos *Robot Structural Analysis* (de Autodesk) porque es más potente para análisis sísmico y diseño automático en acero, te ahorra mucho tiempo en iteraciones."
-    },
-    {
-     "de": "bot",
-     "texto": "SAP2000 también es excelente, pero Robot integra mejor con Revit (modelado BIM) y automatiza más el diseño, lo que es clave en este programa."
-    },
-    {
-     "de": "bot",
-     "texto": "¿Trabajas solo en SAP2000 o también manejas Revit para el modelado?"
-    }
-   ]
-  },
-  {
-   "mensajes": 5,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "bot",
-     "texto": "¡Hola [nombre] ! 👋"
-    },
-    {
-     "de": "bot",
-     "texto": "Veo que trabajas en construcción y quieres aprender a diseñar y calcular estructuras de acero en software, perfecto, eso es justo lo que enseñamos."
-    },
-    {
-     "de": "bot",
-     "texto": "La Especialización en Acero es exactamente lo tuyo: aprenderás Robot (cálculo y análisis sísmico), Advance Steel (modelado de conexiones), y Revit Structure (BIM), todo en proyectos reales de naves, galpones y estructuras metálicas. Además "
-    },
-    {
-     "de": "bot",
-     "texto": "Te dejo el temario completo para que veas todo lo que incluye 👉 [enlace] Revísalo con calma y me cuentas qué te parece 🙌"
-    }
-   ]
-  },
-  {
-   "mensajes": 5,
+   "mensajes": 10,
    "compro_por_etiqueta": false,
    "final": [
     {
@@ -926,12 +382,444 @@
    ]
   },
   {
-   "mensajes": 27,
+   "mensajes": 42,
+   "compro_por_etiqueta": true,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "👆🏼 Adicional te dejo aca la siguiente imagen para que puedas ver la estructura del Máster Internacional BIM+IA"
+    },
+    {
+     "de": "persona",
+     "texto": "V • adContextPreviewDismissed: false • automatedGreetingMessageShown: false • body: ¿Sabes usar Revit pero sientes que ahí se quedó tu crecimiento? El Máster Internacional BIM + IA de Design Modeling ahora está organizado en 4 bloques progr"
+    },
+    {
+     "de": "bot",
+     "texto": "¿Qué necesitas, [nombre]? 😊"
+    },
+    {
+     "de": "bot",
+     "texto": "¿Preguntas sobre el curso, el temario o algo más?"
+    }
+   ]
+  },
+  {
+   "mensajes": 7,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "persona",
+     "texto": "Temario y costo"
+    },
+    {
+     "de": "bot",
+     "texto": "Perfecto, te dejo el temario completo 👉 [enlace]"
+    },
+    {
+     "de": "bot",
+     "texto": "La Especialización en Acero está en *$225 USD* (normalmente $499.99, 55% off) y ahora incluye *Tutor IA 24h* que te resuelve dudas dentro de las lecciones sin esperar respuesta 🤖"
+    },
+    {
+     "de": "bot",
+     "texto": "Mira el temario y cuéntame: ¿lo buscas más para *cálculo y diseño* de estructuras o para *modelado en Revit*?"
+    }
+   ]
+  },
+  {
+   "mensajes": 46,
    "compro_por_etiqueta": false,
    "final": [
     {
      "de": "bot",
-     "texto": "¿Qué tal, [nombre]? Quería saber si lograste revisar la información que te envié sobre la Especialización en Acero Estructural. Cualquier duda sobre el temario, horarios o inversión, te la resuelvo por aquí mismo."
+     "texto": "Antes de ingresar a tu cita, te recomendamos leer el siguiente PDF informativo, y no te olvides de anotar todas tus dudas🫱🏻‍🫲🏼 ¡Te esperamos!"
+    },
+    {
+     "de": "bot",
+     "texto": "Hola [nombre] saludos cordiales te Saluda Franklin Acesor de Desing [nombre] tenemos una cita programada por Zoom para el día de hoy las 11 a.m. Quería que me confirmes tu asistencia 👍"
+    },
+    {
+     "de": "persona",
+     "texto": "Buenos días si está bien a esa hora"
+    },
+    {
+     "de": "bot",
+     "texto": "Perfecto [nombre] Muchas gracias por tu confirmación 30 minutos antes de la reunión es decir 10:30 te enviaremos el enlace zoom por este medio nos vemos en la cita 👍🙂"
+    }
+   ]
+  },
+  {
+   "mensajes": 25,
+   "compro_por_etiqueta": true,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "[nombre] gracias por tu tiempo si necesitas alguna Información adicional estamos a las órdenes quedamos pendientes de tu confirmación de pago para el día Viernes que tengas un excelente día 👍🙂"
+    },
+    {
+     "de": "bot",
+     "texto": "Adicional te envio la información tratada para que la puedas tener a la mano. [enlace]"
+    },
+    {
+     "de": "bot",
+     "texto": "Hola [nombre] un exlente día te escribo para la confirmación de tu ingreso en el Máster. Deas que te pase el link para realizar la inscripción en el Máster BIM Internacional +IA"
+    },
+    {
+     "de": "bot",
+     "texto": "Saludos [nombre] un excelente inicio de semana estábamos pendientes de tu inscripción para el Máster que esta por iniciar la próxima semana no se tienes alguna duda o alguna pregunta antes de realizar la inscripción??"
+    }
+   ]
+  },
+  {
+   "mensajes": 9,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "Mientras la pruebas, cuéntame ¿a qué te dedicas para orientar mejor tu perfil? 🙂 (Estudiante de ingeniería/arquitectura, Ingeniero(a) o arquitecto(a), independiente, Trabajo en constructora/consultora, Docente)"
+    },
+    {
+     "de": "bot",
+     "texto": "Hola [nombre] ! Qué bueno que te interesó lo de BIM + IA. Aquí está lo que te prometí 👇🏼 📄 [enlace] ✅ Están todas nuestras herramientas gratis en un solo sitio — calculadora de zapatas, test de nivel BIM, ebooks y nuestros artículos de BIM+"
+    },
+    {
+     "de": "bot",
+     "texto": "¿Sigue ahí?🤔 Aca estoy esperando tu respuesta para asesorarte en herramientas IA aplicada a proyectos estructurales/arquitectónicos. Ahora cuentame ¿Qué te interesa más: aprender Revit desde cero, o integrar IA en proyectos que ya manejas?"
+    },
+    {
+     "de": "bot",
+     "texto": "¿Sigue ahí?🤔 Aca estoy esperando tu respuesta para asesorarte en herramientas IA aplicada a proyectos estructurales/arquitectónicos. Ahora cuentame ¿Qué te interesa más: aprender Revit desde cero, o integrar IA en proyectos que ya manejas?"
+    }
+   ]
+  },
+  {
+   "mensajes": 66,
+   "compro_por_etiqueta": true,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "le actualizo su correo en nuestra base de datos para futuros accesos"
+    },
+    {
+     "de": "bot",
+     "texto": "Me confirmas que puedas ver el diplomado en la plataforma?"
+    },
+    {
+     "de": "persona",
+     "texto": "si, gracias"
+    },
+    {
+     "de": "bot",
+     "texto": "Perfecto una vez más gracias por confiar en nosotros"
+    }
+   ]
+  },
+  {
+   "mensajes": 7,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "Cuéntame, ¿a qué te dedicas, eres ingeniero, arquitecto, o estás en construcción/BIM?"
+    },
+    {
+     "de": "persona",
+     "texto": "Arquitectura"
+    },
+    {
+     "de": "bot",
+     "texto": "Perfecto 🙌 Muchos arquitectos entran a esto para entender el lado estructural a fondo y coordinar mejor con los cálculos."
+    },
+    {
+     "de": "bot",
+     "texto": "¿Lo necesitas para un proyecto actual, para crecer en tu trabajo, o simplemente profundizar en el tema?"
+    }
+   ]
+  },
+  {
+   "mensajes": 23,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "persona",
+     "texto": "Crecer"
+    },
+    {
+     "de": "bot",
+     "texto": "Claro, eso es lo más inteligente 🚀 Con esta especialización vas a estar en otro nivel, proyectos BIM de estructuras de acero, consultorías, hasta ingresos propios."
+    },
+    {
+     "de": "bot",
+     "texto": "Te dejo el temario completo para que veas todo lo que incluye 👉 [enlace]"
+    },
+    {
+     "de": "bot",
+     "texto": "Revísalo con calma y me cuentas qué te parece 🙌"
+    }
+   ]
+  },
+  {
+   "mensajes": 7,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "persona",
+     "texto": "¡Hola! He completado el formulario y me gustaría recibir más información sobre vuestro negocio. ¿A qué te dedicas?: Soldadura, herrería, construcción u obra Full name: [nombre] Phone number: [telefono] Con las estructuras de acero, ¿qué qui"
+    },
+    {
+     "de": "bot",
+     "texto": "¡Gracias por tu interés en la Especialización en Acero! 🙌 Por lo que nos cuentas quizá no es el ideal para ti ahora, pero tenemos opciones más prácticas. Si te interesa, escríbenos 💛"
+    },
+    {
+     "de": "bot",
+     "texto": "Esperamos ser parte de su crecimiento profesional en un futuro🫱🏻‍🫲🏼 ¡Pero no te vas con las manos vacias! 🎁 Te obsequiamos un curso introductorio BIM dentro de nuestra Comunidad Design Premium DG 🎓 Tu acceso ya está activo y puedes ingresar"
+    },
+    {
+     "de": "bot",
+     "texto": "[nombre], ¿cómo vas con el curso introductorio BIM que te dejamos? 🙂 Si ya te dieron ganas de ir por algo más completo, cuéntame y te armo la opción que mejor te calce; si decides hoy te sostengo un 10% de descuento por 24 horas."
+    }
+   ]
+  },
+  {
+   "mensajes": 3,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "persona",
+     "texto": "mola , eso es claude por casualidad?? suele usar esos coolores"
+    },
+    {
+     "de": "bot",
+     "texto": "Jaja, no, soy un asesor de Design Modeling [nombre] , no Claude 🙌"
+    },
+    {
+     "de": "bot",
+     "texto": "¿Qué te trae por aquí, [nombre]? ¿Buscas algo de BIM, estructuras o automatización?"
+    }
+   ]
+  },
+  {
+   "mensajes": 61,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "Buena pregunta. Usamos *Robot Structural Analysis* (de Autodesk) porque es más potente para análisis sísmico y diseño automático en acero, te ahorra mucho tiempo en iteraciones."
+    },
+    {
+     "de": "bot",
+     "texto": "SAP2000 también es excelente, pero Robot integra mejor con Revit (modelado BIM) y automatiza más el diseño, lo que es clave en este programa."
+    },
+    {
+     "de": "bot",
+     "texto": "¿Trabajas solo en SAP2000 o también manejas Revit para el modelado?"
+    },
+    {
+     "de": "bot",
+     "texto": "Hola de nuevo 👋 Vi que trabajas con SAP2000, justamente por eso Robot te va a servir un montón: hace lo mismo que SAP pero con integración BIM directa, y el curso te enseña a llevarlo a otro nivel con diseño sísmico y conexiones reales. Te "
+    }
+   ]
+  },
+  {
+   "mensajes": 77,
+   "compro_por_etiqueta": true,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "Este tutor es un buscador inteligente para las clases del curso que compraste y va a darte: Precisión total: Responde tu duda y te da la sesión y minuto exacto del video. Disponible 24/7: Te ayuda en el momento exacto en que estás estudiand"
+    },
+    {
+     "de": "bot",
+     "texto": "Entonces, ¿te gustaría que tu tiempo rinda el doble? 👉 Activa tu Tutor IA de Acero por $ 50. Pídeme el enlace de inscripción y pago. Si te quedan dudas, aquí estoy para resolverlas. Lindo día. 😊"
+    },
+    {
+     "de": "bot",
+     "texto": "Esperamos ser parte de su crecimiento profesional en un futuro🫱🏻‍🫲🏼 ¡Pero no te vas con las manos vacias! 🎁 Te obsequiamos un curso introductorio BIM dentro de nuestra Comunidad Design Premium DG 🎓 Tu acceso ya está activo y puedes ingresar"
+    },
+    {
+     "de": "bot",
+     "texto": "Hola, [nombre]. 👋 ¿Pudiste ver mi mensaje anterior sobre el nuevo Tutor IA para ayudarte 24/7 en tus clases de Acero? Cuéntame si te gustaría activarlo para tus repasos y te paso los detalles. 😊"
+    }
+   ]
+  },
+  {
+   "mensajes": 18,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "Sobre los otros cursos que ves: tenemos opciones según lo que necesites. ¿Cuál es tu objetivo ahora, quieres formarte en BIM completo como arquitecto, o hay un tema específico (estructuras, presupuestos, planos) que te urja más?"
+    },
+    {
+     "de": "persona",
+     "texto": "Q costo tiene?"
+    },
+    {
+     "de": "persona",
+     "texto": "En la metodología BIM y costos"
+    },
+    {
+     "de": "bot",
+     "texto": "Perfecto 🙌 ¿Qué día y a qué hora te acomoda? Atendemos de lunes a viernes, entre las 12 del día y las 7 de la tarde (hora Ecuador)."
+    }
+   ]
+  },
+  {
+   "mensajes": 54,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "persona",
+     "texto": "1 Pedro 4 7 Mas el fin de todas las cosas se acerca; sed, pues, sobrios, y velad en oración. 8 Y ante todo, tened entre vosotros ferviente amor; porque el amor cubrirá multitud de pecados. 9 Hospedaos los unos a los otros sin murmuraciones."
+    },
+    {
+     "de": "persona",
+     "texto": "1 Pedro 4 13 sino gozaos por cuanto sois participantes de los padecimientos de Cristo, para que también en la revelación de su gloria os gocéis con gran alegría. 14 Si sois vituperados por el nombre de Cristo, sois bienaventurados, porque e"
+    },
+    {
+     "de": "persona",
+     "texto": "Filipenses 1 1 Pablo y Timoteo, siervos de Jesucristo, a todos los santos en Cristo Jesús que están en Filipos, con los obispos y diáconos: 2 Gracia y paz a vosotros, de Dios nuestro Padre y del Señor Jesucristo. 3 Doy gracias a mi Dios sie"
+    },
+    {
+     "de": "persona",
+     "texto": "Filipenses 1 7 como me es justo sentir esto de todos vosotros, por cuanto os tengo en el corazón; y en mis prisiones, y en la defensa y confirmación del evangelio, todos vosotros sois participantes conmigo de la gracia. 8 Porque Dios me es "
+    }
+   ]
+  },
+  {
+   "mensajes": 27,
+   "compro_por_etiqueta": true,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "Hola [nombre] 👋 ¿Sigues interesado en la Especialización en Acero Estructural? Puedo enviarte el temario completo ahora mismo con todos los módulos detallados. ¿Te lo comparto?"
+    },
+    {
+     "de": "bot",
+     "texto": "¡Solo por hoy, [nombre]! Al inscribirte hoy en la Especialización de Acero Estructural te llevas el curso de Cimentaciones BIM sin costo adicional. 🎁 Es la oportunidad ideal para dominar ambas áreas con una sola inversión. ¿Te ayudo con tu "
+    },
+    {
+     "de": "bot",
+     "texto": "Últimos cupos ⏳ [nombre] aún estás a tiempo de aprovechar el 2x1 en la Especialización de Acero Estructural. El día de hoy cerramos todos los cupos disponibles en promoción. Respóndeme y aseguro tu lugar de inmediato."
+    },
+    {
+     "de": "bot",
+     "texto": "Esperamos ser parte de su crecimiento profesional en un futuro🫱🏻‍🫲🏼 ¡Pero no te vas con las manos vacias! 🎁 Te obsequiamos un curso introductorio BIM dentro de nuestra Comunidad Design Premium DG 🎓 Tu acceso ya está activo y puedes ingresar"
+    }
+   ]
+  },
+  {
+   "mensajes": 10,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "persona",
+     "texto": "Diferenciar te en el trbajao"
+    },
+    {
+     "de": "bot",
+     "texto": "Listo, eso tiene todo el sentido 💪 En el mercado hoy casi todos modelan, pero pocos CALCULAN y DISEÑAN estructuras de acero de verdad, ahí es donde se factura."
+    },
+    {
+     "de": "bot",
+     "texto": "Te dejo el temario completo para que veas todo lo que incluye 👉 [enlace]"
+    },
+    {
+     "de": "bot",
+     "texto": "Revísalo con calma y me cuentas qué te parece 🙌"
+    }
+   ]
+  },
+  {
+   "mensajes": 9,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "Hola [nombre] 👋 ¿Sigues interesado en la Especialización en Acero Estructural? Puedo enviarte el temario completo ahora mismo con todos los módulos detallados. ¿Te lo comparto?"
+    },
+    {
+     "de": "bot",
+     "texto": "¡Solo por hoy, [nombre]! Al inscribirte hoy en la Especialización de Acero Estructural te llevas el curso de Cimentaciones BIM sin costo adicional. 🎁 Es la oportunidad ideal para dominar ambas áreas con una sola inversión. ¿Te ayudo con tu "
+    },
+    {
+     "de": "bot",
+     "texto": "Últimos cupos ⏳ [nombre] aún estás a tiempo de aprovechar el 2x1 en la Especialización de Acero Estructural. El día de hoy cerramos todos los cupos disponibles en promoción. Respóndeme y aseguro tu lugar de inmediato."
+    },
+    {
+     "de": "bot",
+     "texto": "Esperamos ser parte de su crecimiento profesional en un futuro🫱🏻‍🫲🏼 ¡Pero no te vas con las manos vacias! 🎁 Te obsequiamos un curso introductorio BIM dentro de nuestra Comunidad Design Premium DG 🎓 Tu acceso ya está activo y puedes ingresar"
+    }
+   ]
+  },
+  {
+   "mensajes": 10,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "Hola [nombre] 👋 ¿Sigues interesado en la Especialización en Acero Estructural? Puedo enviarte el temario completo ahora mismo con todos los módulos detallados. ¿Te lo comparto?"
+    },
+    {
+     "de": "bot",
+     "texto": "¡Solo por hoy, [nombre]! Al inscribirte hoy en la Especialización de Acero Estructural te llevas el curso de Cimentaciones BIM sin costo adicional. 🎁 Es la oportunidad ideal para dominar ambas áreas con una sola inversión. ¿Te ayudo con tu "
+    },
+    {
+     "de": "bot",
+     "texto": "Últimos cupos ⏳ [nombre] aún estás a tiempo de aprovechar el 2x1 en la Especialización de Acero Estructural. El día de hoy cerramos todos los cupos disponibles en promoción. Respóndeme y aseguro tu lugar de inmediato."
+    },
+    {
+     "de": "bot",
+     "texto": "Esperamos ser parte de su crecimiento profesional en un futuro🫱🏻‍🫲🏼 ¡Pero no te vas con las manos vacias! 🎁 Te obsequiamos un curso introductorio BIM dentro de nuestra Comunidad Design Premium DG 🎓 Tu acceso ya está activo y puedes ingresar"
+    }
+   ]
+  },
+  {
+   "mensajes": 3,
+   "compro_por_etiqueta": true,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "{WA#1}"
+    },
+    {
+     "de": "bot",
+     "texto": "{WA#1} hola"
+    },
+    {
+     "de": "bot",
+     "texto": "{WA#1} pruebas"
+    }
+   ]
+  },
+  {
+   "mensajes": 41,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "¡Hola! 👋 Bienvenido a DMA, colega."
+    },
+    {
+     "de": "bot",
+     "texto": "Veo que eres ingeniero civil/estructural y quieres dominar el diseño y cálculo de acero en software, justo para eso es la Especialización en Acero que tenemos 🎯"
+    },
+    {
+     "de": "bot",
+     "texto": "Te dejo el temario completo para que veas todo lo que incluye 👉 [enlace]"
+    },
+    {
+     "de": "bot",
+     "texto": "Revísalo con calma y me cuentas qué te parece 🙌"
+    }
+   ]
+  },
+  {
+   "mensajes": 9,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "Hola [nombre] 👋 ¿Sigues interesado en la Especialización en Acero Estructural? Puedo enviarte el temario completo ahora mismo con todos los módulos detallados. ¿Te lo comparto?"
     },
     {
      "de": "bot",
@@ -953,19 +841,129 @@
    "final": [
     {
      "de": "persona",
+     "texto": "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿A qué te dedicas?: Otro Con las estructuras de acero, ¿qué quieres hacer?: Diseñarlas, modelarlas o calcularlas en software (Revit, Robot, SAP2000) ¿Cuán"
+    },
+    {
+     "de": "bot",
+     "texto": "¡Gracias por tu interés en la Especialización en Acero! 🙌 Por lo que nos cuentas quizá no es el ideal para ti ahora, pero tenemos opciones más prácticas. Si te interesa, escríbenos 💛"
+    },
+    {
+     "de": "persona",
+     "texto": "Soy ingeniero mecánico, me gustaría aprender a calcular techados y naves industriales"
+    },
+    {
+     "de": "persona",
      "texto": "Hola, me interesa la especialización de estructuras de Acero • adContextPreviewDismissed: false • automatedGreetingMessageShown: true • body: ¿Modelas estructuras de acero en BIM… pero dependes de otro para el cálculo? Entonces todavía eres"
+    }
+   ]
+  },
+  {
+   "mensajes": 21,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "¡Hola 👋"
     },
     {
      "de": "bot",
-     "texto": "¡Hola [nombre]! 👋 Excelente, justo eso es lo que necesitas para diferenciarte en el mercado."
+     "texto": "Perfecto, vi que completaste el formulario 🙌 Con tu perfil de arquitecto + Revit básico, tengo dos caminos claros para ti."
     },
     {
      "de": "bot",
-     "texto": "La Especialización en Acero te forma desde cálculo sísmico y conexiones hasta naves industriales y modelado BIM, y la novedad es que ahora incluye un *Tutor IA integrado* que te resuelve dudas las 24h dentro de las lecciones 🤖"
+     "texto": "El *Diplomado BIM en Arquitectura* es tu punto de entrada ideal: te lleva de Revit básico a coordinador BIM en 4 meses, mucho más accesible que el Máster, y con la misma calidad y avales internacionales."
     },
     {
      "de": "bot",
-     "texto": "Antes de avanzar, cuéntame: ¿a qué te dedicas, ingeniería civil, estructuras, o estás en otro área?"
+     "texto": "Te dejo el temario completo 👉 [enlace] ¿Lo revisas y me cuentas qué te parece?"
+    }
+   ]
+  },
+  {
+   "mensajes": 4,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "persona",
+     "texto": "Hola, me interesa la especialización de estructuras de Acero"
+    },
+    {
+     "de": "bot",
+     "texto": "¡Hola [nombre]! 🙌 Excelente, justo eso es lo que necesitas si quieres dominar el diseño estructural en acero."
+    },
+    {
+     "de": "bot",
+     "texto": "Te cuento rápido: la Especialización en Acero ahora incluye un *Tutor IA dentro de las lecciones* que te resuelve dudas las 24h 🤖, es la novedad de este año."
+    },
+    {
+     "de": "bot",
+     "texto": "¿A qué te dedicas, ingeniería estructural, civil, o estás en construcción/BIM?"
+    }
+   ]
+  },
+  {
+   "mensajes": 58,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "¿En qué área te desempeñas, diseño, cálculo, o trabajas en proyectos de estructuras metálicas?"
+    },
+    {
+     "de": "persona",
+     "texto": "Trabajo en proyecto de estructuras y diseño"
+    },
+    {
+     "de": "bot",
+     "texto": "Perfecto, ese es exactamente el perfil 💪"
+    },
+    {
+     "de": "bot",
+     "texto": "¿Y qué te está llevando a buscar esto ahora, un proyecto actual que necesita acero, o quieres profundizar en el diseño y cálculo con Revit y Robot?"
+    }
+   ]
+  },
+  {
+   "mensajes": 21,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "¡Hola [nombre] ! 👋"
+    },
+    {
+     "de": "bot",
+     "texto": "Perfecto, veo que quieres dominar el diseño y cálculo en acero, exactamente lo que te abre las puertas a otro nivel profesional."
+    },
+    {
+     "de": "bot",
+     "texto": "Te dejo el temario completo del Diplomado BIM en Estructuras para que veas todo lo que incluye 👉 [enlace]"
+    },
+    {
+     "de": "bot",
+     "texto": "El diplomado te lleva de modelar en Revit a CALCULAR y DISEÑAR estructuras de acero con Robot y SAP2000, todo integrado, 9 módulos, 100% práctico con proyectos reales. ¿Ya revisaste el temario o tienes dudas sobre algún módulo en particular"
+    }
+   ]
+  },
+  {
+   "mensajes": 19,
+   "compro_por_etiqueta": true,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "¡Hola ! 👋🏼 Espero que estés bien. 😊 Quiero saber si ya decidiste sobre el Diplomado BIM. Este programa puede ser el cambio que tu carrera necesita. 𝗖𝗼𝗻 𝗲𝗹 𝗗𝗶𝗽𝗹𝗼𝗺𝗮𝗱𝗼 𝗕𝗜𝗠, 𝗼𝗯𝘁𝗶𝗲𝗻𝗲𝘀: ✅ Títulos avalados en EE. UU. 🇺🇸 y Europa 🇪🇺 ✅ Certificacion"
+    },
+    {
+     "de": "bot",
+     "texto": "¡Hola ! ⚠️ ¿Estás listo para dar el siguiente paso en tu carrera con el Diplomado BIM? 🏗️ ¡𝗤𝘂𝗲𝗱𝗮𝗻 𝗦𝗢𝗟𝗢 𝟱 𝗰𝘂𝗽𝗼𝘀! ✅ 9 Certificaciones Internacionales ✅ Títulos universitarios ✅ Bolsa de Trabajo 💲 Inversión: 1999.99 USD (pago en cuotas). 👉🏼 De"
+    },
+    {
+     "de": "bot",
+     "texto": "¡Hola ! 👋🏼⏰ ¡Ya casi estamos listos para comenzar el 𝗗𝗶𝗽𝗹𝗼𝗺𝗮𝗱𝗼 𝗕𝗜𝗠! Empezamos este 05 de febrero de 2026 🗓️. ¿𝗧𝘂𝘃𝗶𝘀𝘁𝗲 𝗰𝗵𝗮𝗻𝗰𝗲 𝗱𝗲 𝗿𝗲𝘃𝗶𝘀𝗮𝗿 𝗹𝗮 𝗴𝘂í𝗮 𝘀𝗼𝗯𝗿𝗲 𝗺𝗲𝘁𝗼𝗱𝗼𝗹𝗼𝗴í𝗮 𝗕𝗜𝗠 𝗾𝘂𝗲 𝘁𝗲 𝗲𝗻𝘃𝗶𝗲́? 😊 Me encantaría saber tu opinión."
+    },
+    {
+     "de": "bot",
+     "texto": "¡Hola ! 👋🏼 ¿𝗟𝗶𝘀𝘁𝗼 𝗽𝗮𝗿𝗮 𝗱𝗮𝗿 𝗲𝗹 𝘀𝗮𝗹𝘁𝗼 𝗽𝗿𝗼𝗳𝗲𝘀𝗶𝗼𝗻𝗮𝗹 𝗾𝘂𝗲 𝗺𝗲𝗿𝗲𝗰𝗲𝘀? 🚀 Con el Diplomado BIM puedes certificarte internacionalmente y abrir nuevas oportunidades. 🌎 ⏰ Empezamos este 05 de febrero de 2026. ¡𝗔𝗴𝗲𝗻𝗱𝗮 𝘁𝘂 𝗶𝗻𝘀𝗰𝗿𝗶𝗽𝗰𝗶𝗼́𝗻 hoy! 👉🏼 [enlace]"
     }
    ]
   }
