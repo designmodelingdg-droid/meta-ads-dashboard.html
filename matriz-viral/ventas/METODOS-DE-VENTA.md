@@ -16,10 +16,10 @@ Lo que el agente toma de aquí:
 - **El miedo a decidir mal frena más que el precio.** Hay que bajarle el riesgo a la decisión: garantías reales, prueba social, alguien que ya lo hizo.
 - **Técnicas de cierre** (se usan cuando la persona ya mostró interés, nunca en frío):
   - **Cierre por invitación:** «¿Por qué no lo intentas? Te reservo el cupo hoy.»
-  - **Cierre por alternativa:** dos opciones, las dos son un sí. «¿Prefieres pagar completo o en dos cuotas?», «¿Te llamo hoy a las 7 o mañana a las 10?»
+  - **Cierre por alternativa:** dos opciones, las dos son un sí. «¿Te paso el enlace para tarjeta o prefieres PayPal?», «¿Te llamo hoy a las 7 o mañana a las 10?»
   - **Cierre de detalle secundario:** se decide algo pequeño que da por hecho lo grande. «¿A qué correo te mando el acceso?»
   - **Cierre por resumen:** se repite lo que la persona dijo que quería y cómo el programa lo resuelve, y se pregunta si avanzamos.
-  - **Cierre de ángulo agudo:** si pide algo («¿me lo dejan en cuotas?»), se responde con una pregunta de compromiso: «Si te lo dejo en cuotas, ¿lo cerramos hoy?»
+  - **Cierre de ángulo agudo:** si pide algo («¿me lo dejan en cuotas?»), se responde con una pregunta de compromiso: «Si te lo dejo en cuotas, ¿lo cerramos hoy?» (En DMA las cuotas solo se ofrecen cuando la persona dice que no puede pagar de una vez.)
 - **Después del sí, se deja de vender.** Solo se dan los pasos: pago, acceso, bienvenida.
 
 ## 2. Neil Rackham · *SPIN Selling*

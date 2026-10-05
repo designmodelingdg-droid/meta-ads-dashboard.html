@@ -43,7 +43,7 @@
 > ¿Es el tipo de nave que te piden en tu trabajo, o vas más por edificios?
 
 *(Cuando confirme:)*
-> Entonces te sirve. Está en USD 225 con el tutor IA incluido y acceso de por vida. ¿Te paso el enlace para pagar ahora o prefieres en dos partes? [CONFIRMAR cuotas]
+> Entonces te sirve. Está en USD 225 con el tutor IA incluido y acceso de por vida. ¿Te paso el enlace para pagar con tarjeta o prefieres PayPal?
 
 ---
 
@@ -59,18 +59,18 @@
 **Qué falló**
 - Un párrafo largo de beneficios en vez de reconocer y preguntar.
 - No respondió la pregunta concreta (¿la asistencia se paga?).
-- Prometió un «equipo académico disponible» sin que esté confirmado cómo funciona.
+- No dijo lo que sí tiene: asesorías en vivo con los instructores, sin costo.
 - Siguió actuando como si fuera una persona, y la persona lo detectó.
 - Al final no le ofreció hablar con alguien real.
 
 **Después** (al primer mensaje de duda sobre las clases grabadas)
 > Es una duda muy válida, y prefiero ser claro: soy el asistente de DMA.
 >
-> Sobre lo que preguntas de la asistencia: [respuesta oficial confirmada, o «te lo confirmo con el equipo hoy mismo»].
+> Sobre la asistencia: no tiene costo. Mientras haces el curso agendas asesorías en vivo con los instructores, y el tutor IA te responde hasta 20 dudas al día.
 >
-> ¿Te escribe [asesor], que es del equipo académico, para que te cuente cómo funcionan las clases y el soporte? ¿O prefieres una llamada corta hoy?
+> ¿Te escribe Ester, del equipo de DMA, para contarte cómo funcionan las clases y las asesorías? ¿O prefieres una llamada corta hoy?
 
-*(Y se pasa la conversación a una persona.)*
+*(Y se pasa la conversación a Ester.)*
 
 ---
 

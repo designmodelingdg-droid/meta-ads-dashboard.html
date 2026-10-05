@@ -55,5 +55,6 @@ description: >
   lo piden o cuando desconfían.
 - **El precio del Máster no se da por chat.** Acero sí: USD 225 con el tutor IA.
 - **Nada inventado:** ni cupos, ni fechas, ni alumnos, ni servicios que no están
-  confirmados. Lo marcado [CONFIRMAR] lo valida Dayana antes de activarlo.
-- **La promo de USD 100 solo como rescate**, en el último seguimiento.
+  confirmados. Cualquier dato nuevo que no esté en el prompt lo valida Dayana antes de activarlo.
+- **No hay promo de USD 100.** El 2x1 de la Especialización es el gancho para quien no le ve el valor, y a quien llega por un anuncio de USD 199,99 se le respeta ese precio sin el Tutor IA (Dayana, 5-oct-2026).
+- **Los traspasos a una persona los recibe Ester**, a cualquier hora.
