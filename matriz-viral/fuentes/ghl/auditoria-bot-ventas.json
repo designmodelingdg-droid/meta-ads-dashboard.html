@@ -1,0 +1,463 @@
+{
+ "generado": "2026-10-05T03:27Z",
+ "nota": "Agregados y ejemplos anonimizados (nombre del contacto, correos, teléfonos y enlaces tapados). Muestra de las conversaciones más recientes, no el total.",
+ "conversaciones_revisadas": 18,
+ "terminan_con_mensaje_nuestro": 17,
+ "con_etiqueta_de_compra": 5,
+ "conversaciones_con_propuesta_de_llamada": 4,
+ "conversaciones_con_enlace_de_pago": 0,
+ "fuente_de_los_mensajes_salientes": {
+  "app": 141,
+  "workflow": 33,
+  "bulk_actions": 1
+ },
+ "largo_mensajes_bot": {
+  "mediana": 164,
+  "p90": 281,
+  "n": 175
+ },
+ "como_terminan_los_mensajes_del_bot": {
+  "pregunta": 80,
+  "da_opciones": 43,
+  "menciona_precio": 26,
+  "temario_o_pdf": 22,
+  "revisalo_y_me_cuentas": 6,
+  "propone_llamada": 5
+ },
+ "ultimo_mensaje_nuestro_de_cada_conversacion": {
+  "pregunta": 11,
+  "sin_pregunta_ni_paso": 6,
+  "temario_o_pdf": 4,
+  "da_opciones": 4,
+  "menciona_precio": 3,
+  "propone_llamada": 3,
+  "revisalo_y_me_cuentas": 1
+ },
+ "objeciones": {},
+ "respuesta_justo_despues_de_una_objecion": {
+  "n": 0,
+  "largo_mediana": null,
+  "terminan_en_pregunta": 0,
+  "tipos": {}
+ },
+ "frases_del_bot_mas_repetidas": [
+  [
+   "¡Hola 👋🏼 Un saludo colega. Vi que estas interesado en especializarte. *¿Tienes 5 minutos ahora para contarte cómo funciona? 🎯* ¿No le interesa? Toque en «Detener promociones»",
+   9
+  ],
+  [
+   "Design Modeling Academy Hola [nombre] 👋 ¿Sigues interesado en la *Especialización en Acero Estructural?* Puedo enviarte el temario completo ahora mismo con todos los módulos detallados. *¿Te lo comparto?*",
+   4
+  ],
+  [
+   "Design Modeling Academy ¡Solo por hoy, [nombre]! Al inscribirte hoy en la *Especialización de Acero Estructural* te llevas el curso de Cimentaciones BIM *sin costo adicional.* 🎁 Es la oportunidad ideal para dominar ambas áreas con una sola inversión. *¿Te ayudo con tu inscripción?*",
+   4
+  ],
+  [
+   "Design Modeling Academy Últimos cupos ⏳ [nombre] aún estás a tiempo de aprovechar el *2x1 en la Especialización de Acero Estructural.* El día de hoy cerramos todos los cupos disponibles en promoción. Respóndeme y aseguro tu *lugar de inmediato.*",
+   4
+  ],
+  [
+   "Design Modeling Academy ¡Hola [nombre]👋! Vimos tu interés en nuestra *Especialización en Acero Estructural BIM* ¿Tienes 5 minutos ahora para contarte cómo funciona? 🎯",
+   3
+  ],
+  [
+   "Design Modeling Academy ¿Qué tal, [nombre]? Quería saber si lograste revisar la información que te envié sobre la *Especialización en Acero Estructural.* Cualquier duda sobre el temario, horarios o inversión, *te la resuelvo por aquí mismo.*",
+   3
+  ]
+ ],
+ "ejemplos_final_de_conversacion": [
+  {
+   "mensajes": 9,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "Design Modeling Academy Hola [nombre] 👋 ¿Sigues interesado en el *Curso de Automatización en Revit?* Puedo enviarte el temario completo ahora mismo con todos los módulos detallados. *¿Te lo comparto?*"
+    },
+    {
+     "de": "bot",
+     "texto": "Design Modeling Academy ¡Solo por hoy, [nombre]! 🎁 El día de hoy cerramos los cupos de inscripción con ofertas. Aún estás a tiempo de conseguir el *Curso de Automatización en Revit* por tan solo $149.99 USD. *¿Te animas con la inscripción?*"
+    },
+    {
+     "de": "bot",
+     "texto": "Design Modeling Academy Últimos cupos, [nombre] ⏳ Este será mi último mensaje de seguimiento sobre su interés en el curso de *Autodesk con IA.* Cuénteme, ¿sigue interesado en tomarlo? Si la respuesta es sí, con gusto *le ayudo con todo el p"
+    },
+    {
+     "de": "bot",
+     "texto": "Design Modeling Academy Hola [nombre] 👋 ¿Sigues interesado en la *Especialización en Acero Estructural?* Puedo enviarte el temario completo ahora mismo con todos los módulos detallados. *¿Te lo comparto?*"
+    }
+   ]
+  },
+  {
+   "mensajes": 21,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "Y claro, te escribo el 16 de julio (pasado mañana) para cerrar esto 💪 ¿Te parece en la mañana o en la tarde?"
+    },
+    {
+     "de": "bot",
+     "texto": "Perfecto, entonces el 16 de julio después de las 5 de la tarde te escribo para cerrar esto 🙌"
+    },
+    {
+     "de": "bot",
+     "texto": "Mientras tanto revisa el temario con calma, cualquier duda me avisas."
+    },
+    {
+     "de": "bot",
+     "texto": "Nos hablamos pasado mañana 💛"
+    }
+   ]
+  },
+  {
+   "mensajes": 21,
+   "compro_por_etiqueta": true,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "Mira, justamente por eso te dije lo que te dije — tú trabajas con las manos, con experiencia de campo, y eso vale oro. Los cursos que ofrecemos aquí son más para el lado de quien *diseña y calcula* antes de que llegues tú a soldar, ¿me enti"
+    },
+    {
+     "de": "bot",
+     "texto": "Pero te dejo la puerta abierta: si algún día quieres entender la teoría detrás de lo que soldás, o moverte hacia diseño/inspección de estructuras, me escribes y te ayudo sin drama 💪"
+    },
+    {
+     "de": "bot",
+     "texto": "¡Éxito con los proyectos!"
+    },
+    {
+     "de": "bot",
+     "texto": "👍"
+    }
+   ]
+  },
+  {
+   "mensajes": 24,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "Design Modeling Academy ¡Solo por hoy, [nombre]! Al inscribirte hoy en la *Especialización de Acero Estructural* te llevas el curso de Cimentaciones BIM *sin costo adicional.* 🎁 Es la oportunidad ideal para dominar ambas áreas con una sola "
+    },
+    {
+     "de": "bot",
+     "texto": "Design Modeling Academy Últimos cupos ⏳ [nombre] aún estás a tiempo de aprovechar el *2x1 en la Especialización de Acero Estructural.* El día de hoy cerramos todos los cupos disponibles en promoción. Respóndeme y aseguro tu *lugar de inmedi"
+    },
+    {
+     "de": "bot",
+     "texto": "Design Modeling Academy Esperamos ser parte de su crecimiento profesional en un futuro🫱🏻‍🫲🏼 *¡Pero no te vas con las manos vacias!* 🎁 Te obsequiamos un curso introductorio BIM dentro de nuestra *Comunidad Design Premium DG* 🎓 Tu acceso ya e"
+    },
+    {
+     "de": "bot",
+     "texto": "Design Modeling Academy ¡Hola [nombre]!👋 Un gusto poder saludarte nuevamente🎁 El día de hoy tenemos un obsequio exclusivo para ti, nuestro curso *Naves Industriales PRO de 30 horas en SAP2000* a tan solo *$27 USD* ¿Tienes 5 minutos ahora pa"
+    }
+   ]
+  },
+  {
+   "mensajes": 6,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "¿Qué hace ahora en el área de estructuras — trabajas en proyectos, estás en formación, o buscas hacer el cambio?"
+    },
+    {
+     "de": "persona",
+     "texto": "Si quiero más información"
+    },
+    {
+     "de": "bot",
+     "texto": "Perfecto Sebastián. Te dejo aquí el temario completo con todo el detalle de la especialización 👉 [enlace] Son 4 cursos intensos — Robot, Advance Steel, Revit Structure y análisis sísmico. 120 horas en 4 meses, y terminas con 4 certificados "
+    },
+    {
+     "de": "bot",
+     "texto": "Design Modeling Academy ¿Qué tal, Sebastián? Quería saber si lograste revisar la información que te envié sobre la *Especialización en Acero Estructural.* Cualquier duda sobre el temario, horarios o inversión, *te la resuelvo por aquí mismo"
+    }
+   ]
+  },
+  {
+   "mensajes": 7,
+   "compro_por_etiqueta": true,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "Antes que nada, cuéntame: *¿eres ingeniero civil, arquitecto o estás en el área estructural/BIM?*"
+    },
+    {
+     "de": "persona",
+     "texto": "Arquitecto"
+    },
+    {
+     "de": "bot",
+     "texto": "Perfecto, arquitecto 🙌"
+    },
+    {
+     "de": "bot",
+     "texto": "Te pregunto: ¿lo que buscas es profundizar en el cálculo y diseño de estructuras metálicas, o más bien modelar y documentar proyectos de acero en Revit?"
+    }
+   ]
+  },
+  {
+   "mensajes": 3,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "persona",
+     "texto": "*Headline:* 🔥 ¡Precio especial: $199 USD! *Source URL:* [enlace] Hola, me interesa la especialización de estructuras de Acero"
+    },
+    {
+     "de": "bot",
+     "texto": "Design Modeling Academy ¡Hola Nelson👋! Vimos tu interés en nuestra *Especialización en Acero Estructural BIM* ¿Tienes 5 minutos ahora para contarte cómo funciona? 🎯"
+    },
+    {
+     "de": "bot",
+     "texto": "Primero déjame preguntarte algo rápido: ¿en qué área te desempeñas — ingeniería civil, arquitectura o construcción?"
+    }
+   ]
+  },
+  {
+   "mensajes": 6,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "Perfecto [nombre], excelente elección. La especialización de Acero es de las más demandadas ahora — muchos colegas están facturando proyectos metálicos solo con esto. Cuéntame rápido: ¿ya trabajas con Revit o vienes más del lado del cálculo"
+    },
+    {
+     "de": "bot",
+     "texto": "Design Modeling Academy Hola [nombre] 👋 ¿Sigues interesado en la *Especialización en Acero Estructural?* Puedo enviarte el temario completo ahora mismo con todos los módulos detallados. *¿Te lo comparto?*"
+    },
+    {
+     "de": "bot",
+     "texto": "Design Modeling Academy ¡Solo por hoy, [nombre]! Al inscribirte hoy en la *Especialización de Acero Estructural* te llevas el curso de Cimentaciones BIM *sin costo adicional.* 🎁 Es la oportunidad ideal para dominar ambas áreas con una sola "
+    },
+    {
+     "de": "bot",
+     "texto": "Design Modeling Academy Últimos cupos ⏳ [nombre] aún estás a tiempo de aprovechar el *2x1 en la Especialización de Acero Estructural.* El día de hoy cerramos todos los cupos disponibles en promoción. Respóndeme y aseguro tu *lugar de inmedi"
+    }
+   ]
+  },
+  {
+   "mensajes": 25,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "¡Solo por hoy, [nombre]! Al inscribirte hoy en la Especialización de Acero Estructural te llevas el curso de Cimentaciones BIM sin costo adicional. 🎁 Es la oportunidad ideal para dominar ambas áreas con una sola inversión. ¿Te ayudo con tu "
+    },
+    {
+     "de": "bot",
+     "texto": "Design Modeling Academy Últimos cupos ⏳ [nombre] aún estás a tiempo de aprovechar el *2x1 en la Especialización de Acero Estructural.* El día de hoy cerramos todos los cupos disponibles en promoción. Respóndeme y aseguro tu *lugar de inmedi"
+    },
+    {
+     "de": "bot",
+     "texto": "Design Modeling Academy Esperamos ser parte de su crecimiento profesional en un futuro🫱🏻‍🫲🏼 *¡Pero no te vas con las manos vacias!* 🎁 Te obsequiamos un curso introductorio BIM dentro de nuestra *Comunidad Design Premium DG* 🎓 Tu acceso ya e"
+    },
+    {
+     "de": "bot",
+     "texto": "Design Modeling Academy ¡Hola [nombre]!👋 Un gusto poder saludarte nuevamente🎁 El día de hoy tenemos un obsequio exclusivo para ti, nuestro curso *Naves Industriales PRO de 30 horas en SAP2000* a tan solo *$27 USD* ¿Tienes 5 minutos ahora pa"
+    }
+   ]
+  },
+  {
+   "mensajes": 15,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "persona",
+     "texto": "Explorar opciones"
+    },
+    {
+     "de": "bot",
+     "texto": "Entendido, está bien explorar primero 🙌"
+    },
+    {
+     "de": "bot",
+     "texto": "Te cuento: la mejor forma de ver si el Máster es para ti es una sesión de 30 min con un especialista, te muestra la ruta exacta, qué software dominarías, cómo funciona la certificación por bloques (ves logros desde el primer trimestre, no e"
+    },
+    {
+     "de": "bot",
+     "texto": "¿Te gustaría agendar esa llamada? ¿Qué día te acomoda y prefieres en la mañana o en la tarde?"
+    }
+   ]
+  },
+  {
+   "mensajes": 5,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "¡Hola 👋🏼 Un saludo colega. Vi que estas interesado en especializarte. *¿Tienes 5 minutos ahora para contarte cómo funciona? 🎯* ¿No le interesa? Toque en «Detener promociones»"
+    },
+    {
+     "de": "bot",
+     "texto": "Hola [nombre] 👋 Vi que te interesa la Especialización en Acero Estructural BIM — excelente, es de las más demandadas ahora en LATAM. Para orientarte bien, cuéntame: ¿en qué área trabajas actualmente — ingeniería, arquitectura o construcción"
+    },
+    {
+     "de": "bot",
+     "texto": "Hola [nombre] 👋 Te escribo de Design Modeling. Un dato que te va a servir: un ingeniero que cerró la semana pasada pasó de dimensionar vigas en Excel a entregar naves industriales completas con planos ejecutivos — con la Especialización en "
+    },
+    {
+     "de": "bot",
+     "texto": "Hola, ¿podría hacerte una llamada rápida por aqui por WhatsaApp para ampliarte toda la información por favor?"
+    }
+   ]
+  },
+  {
+   "mensajes": 9,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "M.[nombre], retomo contigo 🙌 Una pregunta directa: ¿qué te frena de avanzar con la Especialización en Acero — el precio, el tiempo, o querías ver algo específico del temario? Si me dices en qué estás trabado lo resolvemos concreto 🎯"
+    },
+    {
+     "de": "bot",
+     "texto": "Vi que un colega ingeniero acaba de cerrar un contrato para naves industriales gracias a la certificación en Acero BIM — exactamente lo que cubre la Especialización. ¿Qué tipo de proyecto te gustaría tomar primero cuando termines?"
+    },
+    {
+     "de": "bot",
+     "texto": "Vi que un colega ingeniero acaba de cerrar un contrato importante de naves en acero gracias a la especialización. Por eso te pregunto: ¿tienes algún proyecto real en mente que te gustaría dominar con BIM, o es más por abrir puertas en el me"
+    },
+    {
+     "de": "bot",
+     "texto": "M.[nombre] 👋 vi que un colega ingeniero acaba de cerrar un contrato importante de naves en acero gracias a la especialización. Por eso te pregunto: ¿tienes algún proyecto real en mente que te gustaría dominar con BIM, o es más por abrir pue"
+    }
+   ]
+  },
+  {
+   "mensajes": 6,
+   "compro_por_etiqueta": true,
+   "final": [
+    {
+     "de": "persona",
+     "texto": "Si quiero más información"
+    },
+    {
+     "de": "bot",
+     "texto": "Perfecto Dibanez 👊 La Especialización en Acero BIM básicamente te lleva de cero a dominar proyectos estructurales completos en acero — desde el análisis y diseño sísmico en Robot hasta el modelado BIM en Revit y los planos constructivos lis"
+    },
+    {
+     "de": "bot",
+     "texto": "Es lo que estas buscando hoy en dia ?"
+    },
+    {
+     "de": "bot",
+     "texto": "Design Modeling Academy Hola Dibanez 👋 ¿Sigues interesado en la *Especialización en Acero Estructural?* Puedo enviarte el temario completo ahora mismo con todos los módulos detallados. *¿Te lo comparto?*"
+    }
+   ]
+  },
+  {
+   "mensajes": 15,
+   "compro_por_etiqueta": true,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "[enlace]"
+    },
+    {
+     "de": "bot",
+     "texto": "Design Modeling Academy ¿Qué tal, [nombre]? Quería saber si lograste revisar la información que te envié sobre la *Especialización en Acero Estructural.* Cualquier duda sobre el temario, horarios o inversión, *te la resuelvo por aquí mismo."
+    },
+    {
+     "de": "bot",
+     "texto": "Design Modeling Academy ¡Solo por hoy, [nombre]! Al inscribirte hoy en la *Especialización de Acero Estructural* te llevas el curso de Cimentaciones BIM *sin costo adicional.* 🎁 Es la oportunidad ideal para dominar ambas áreas con una sola "
+    },
+    {
+     "de": "bot",
+     "texto": "Design Modeling Academy Hola [nombre] [nombre], 👋🏼 Gracias por tu interés en el *Master BIM+IA* y por llenar los datos del formulario. En unos minutos, se comunicará contigo tu asesor asignado. *¿Puedes recibir una llamada en este momento?*"
+    }
+   ]
+  },
+  {
+   "mensajes": 18,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "persona",
+     "texto": "Si"
+    },
+    {
+     "de": "bot",
+     "texto": "¡Genial! 🎉 Antes de avanzar con tu inscripción, necesito tu correo electrónico para registrarte y activarte el acceso."
+    },
+    {
+     "de": "bot",
+     "texto": "¿Cuál es tu correo?"
+    },
+    {
+     "de": "bot",
+     "texto": "Hola Soy Sabrina, asesora comercial de Design Modeling. Quedamos pendientes de tu correo electrónico para continuar con la inscripción a la Especialización en Acero Estructural BIM. Cuando tengas un momento, envíamelo por aquí y seguimos co"
+    }
+   ]
+  },
+  {
+   "mensajes": 27,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "Design Modeling Academy Últimos cupos ⏳ [nombre] aún estás a tiempo de aprovechar el *2x1 en la Especialización de Acero Estructural.* El día de hoy cerramos todos los cupos disponibles en promoción. Respóndeme y aseguro tu *lugar de inmedi"
+    },
+    {
+     "de": "persona",
+     "texto": "hola buenas tardes"
+    },
+    {
+     "de": "persona",
+     "texto": "ya tengo algunos cursos comprados con ustedes"
+    },
+    {
+     "de": "persona",
+     "texto": "me podrian ayudar a descargar etabs"
+    }
+   ]
+  },
+  {
+   "mensajes": 8,
+   "compro_por_etiqueta": true,
+   "final": [
+    {
+     "de": "persona",
+     "texto": "No puedo entrar a la plataforma"
+    },
+    {
+     "de": "bot",
+     "texto": "¡Gracias por escribir! 🙌 Eso lo gestiona directamente nuestro equipo académico, que es quien puede ayudarte a resolverlo bien. Le paso tu caso ahora mismo y te contactan por aquí. 💛"
+    },
+    {
+     "de": "persona",
+     "texto": "No puedo entrar a la plataforma"
+    },
+    {
+     "de": "bot",
+     "texto": "Hola [nombre], gracias por escribirnos. Por favor, intenta ingresar a la plataforma con el correo con el que te inscribiste en [enlace] Si el inconveniente persiste, te ayudamos a reactivar tu acceso en unos minutos."
+    }
+   ]
+  },
+  {
+   "mensajes": 5,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "¡Hola 👋🏼 Un saludo colega. Vi que estas interesado en especializarte. *¿Tienes 5 minutos ahora para contarte cómo funciona? 🎯* ¿No le interesa? Toque en «Detener promociones»"
+    },
+    {
+     "de": "bot",
+     "texto": "Hola [nombre] 👋 Vi que te interesa la Especialización en Acero BIM — excelente elección, es de las más demandadas ahora mismo. Para orientarte bien, cuéntame: ¿en qué área te desempeñas — ingeniería, arquitectura o construcción?"
+    },
+    {
+     "de": "bot",
+     "texto": "Te voy a ser franco, [nombre]: a esta altura muchos están dudando entre empezar ya o esperar. La verdad es que los que pagan esta semana entran a la cohorte con mentor en vivo — después suben el precio. ¿Qué es lo que te detiene ahorita — e"
+    },
+    {
+     "de": "bot",
+     "texto": "Design Modeling Academy Hola [nombre] 👋 ¿Sigues interesado en la *Especialización en Acero Estructural?* Puedo enviarte el temario completo ahora mismo con todos los módulos detallados. *¿Te lo comparto?*"
+    }
+   ]
+  }
+ ]
+}
