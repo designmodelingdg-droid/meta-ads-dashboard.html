@@ -4,20 +4,21 @@
   "desde": "2026-09-06",
   "hasta": "2026-10-05"
  },
- "corte": "PROVISIONAL al 2026-10-01 (datos de pasarelas y Meta hasta ayer). Se regenera el lunes 5-oct con datos hasta el 4-oct; el día 5 no está cerrado antes de la reunión.",
- "validado_por": "Dayana, 2-oct-2026: ventana 6-sep → 5-oct, los dos cobros PayPal de $199,99 son dos ventas reales, meta de octubre $10.000. Lista nominal pendiente de validar con el corte final. 2-oct: los $100 de Stripe del 1-oct son de software (fuera); el 2.º PayPal de $199,99 es otro comprador sin registrar en el CRM.",
+ "corte": "FINAL con datos hasta el 2026-10-04 (pasarelas y Meta hasta el día anterior a la reunión del lunes 5-oct).",
+ "validado_por": "Dayana, 2-oct-2026: ventana 6-sep → 5-oct, los dos cobros PayPal de $199,99 son dos ventas reales, meta de octubre $10.000. Lista nominal pendiente de validar con el corte final. 2-oct: los $100 de Stripe del 1-oct son de software (fuera); el 2.º PayPal de $199,99 es otro comprador sin registrar en el CRM. 5-oct: corte final regenerado al 4-oct; el CRM no tiene ventas nuevas ganadas entre el 1 y el 5-oct.",
  "dinero": {
-  "cobrado_pasarelas": 3599.95,
-  "recurrente": 1609.99,
+  "cobrado_pasarelas": 3759.95,
+  "recurrente": 1769.99,
   "captacion": 1989.96,
-  "recurrente_detalle": "9 cuotas de $160 del Máster, 1 de $140 y 1 de $29,99 (Subscription update / Matrícula mensual)",
+  "recurrente_detalle": "10 cuotas de $160 del Máster, 1 de $140 y 1 de $29,99 (Subscription update / Matrícula mensual). Del 1 al 4-oct entró 1 cuota más ($160 el 2-oct).",
   "excluido": "$50 PayPal del equipo (9-sep), prueba; $100 Stripe del 1-oct, venta de software (otro negocio, no cursos), confirmado por Dayana el 2-oct",
-  "cobertura": "Stripe 2-sep → 1-oct. PayPal: el último cobro del archivo es del 16-sep; del 17-sep al 1-oct no aparece ningún cobro por PayPal (preguntado a Dayana si alguien pagó por PayPal en esas fechas).",
+  "cobertura": "Stripe 6-sep → 2-oct (no hay cobros el 3 y 4-oct). PayPal: el último cobro del archivo sigue siendo del 16-sep; del 17-sep al 4-oct no aparece ningún cobro por PayPal.",
   "crm_ganadas_depuradas": {
    "valor": 1919.96,
    "n": 9
   },
-  "conciliacion": "captación en pasarelas ($1.989,96) = CRM depurado ($1.919,96) − 2 ganadas sin cobro identificado ($100 + $29,99) + 1 venta de Acero cobrada por PayPal que no está registrada en el CRM ($199,99, confirmada por Dayana el 2-oct)"
+  "conciliacion": "captación en pasarelas ($1.989,96) = CRM depurado ($1.919,96) − 2 ganadas sin cobro identificado ($100 + $29,99) + 1 venta de Acero cobrada por PayPal que no está registrada en el CRM ($199,99, confirmada por Dayana el 2-oct)",
+  "nota_paypal": "Los dos cobros de $199,99 del 7-sep salen del mismo pagador de PayPal; Dayana confirmó que son dos alumnos distintos (uno pagó por el otro, o el segundo falta en el CRM)."
  },
  "ventas_por_producto": [
   {
@@ -43,11 +44,11 @@
  ],
  "acero_a_225": 0,
  "pauta": {
-  "ventana": "2026-09-06 → 2026-10-01",
-  "gasto": 1080.71,
-  "leads": 800,
-  "conversaciones_wa": 264,
-  "cpl": 1.35,
+  "ventana": "2026-09-06 → 2026-10-04",
+  "gasto": 1188.7,
+  "leads": 851,
+  "conversaciones_wa": 310,
+  "cpl": 1.4,
   "por_campana": [
    [
     "[AGOSTO] ESPE.1 ACERO - FORM",
@@ -71,28 +72,29 @@
    ],
    [
     "LEAD MAGNETS (3 campañas)",
-    64.75,
+    71.28,
     0
    ],
    [
     "[29SEP] MASTER - FORM",
-    23.58,
-    18
+    70.67,
+    45
    ],
    [
     "[29SEPT] ACERO - WSP SMS",
-    19.58,
+    46.82,
     0
    ],
    [
     "[29SEPT] ACERO - FORM",
-    18.13,
-    9
+    45.26,
+    33
    ]
   ],
-  "roas_caja": 3.33,
-  "roas_adquisicion": 0.86,
-  "captacion_sobre_pauta": 1.84
+  "roas_caja": 3.16,
+  "roas_adquisicion": 0.78,
+  "captacion_sobre_pauta": 1.67,
+  "cambio_1_oct": "Desde el 1-oct solo gastan [29SEP] MASTER - FORM, [29SEPT] ACERO - FORM y [29SEPT] ACERO - WSP SMS (27 conversaciones de WhatsApp a $1,73) más los lead magnets: las campañas viejas de Acero y del Máster dejaron de gastar."
  },
  "ganadores_pauta": {
   "ventana_archivo": "2026-09-04 → 2026-10-01",
@@ -128,23 +130,24 @@
  },
  "organico": {
   "piezas": 21,
-  "vistas": 92859,
-  "comentarios": 431,
-  "guardados": 1338,
+  "vistas": 97950,
+  "comentarios": 477,
+  "guardados": 1470,
   "seguidores_cuenta": "+528 (80.347 → 80.875)",
   "por_pieza": {
    "vistas": "4.066 → 4.422 (+9%)",
    "comentarios": "23,0 → 20,5 (−11%)",
    "guardados": "31,8 → 63,7 (+100%)"
   },
-  "ganador": "Dato de cálculo de cuantía mínima: 45.983 vistas, 148 comentarios, 739 guardados, 176 seguidores",
-  "auditoria": "matriz-viral/auditorias/2026-09-hallazgos.md"
+  "ganador": "Dato de cálculo de cuantía mínima (11-sep): 46.592 vistas, 150 comentarios, 756 guardados, 176 seguidores",
+  "auditoria": "matriz-viral/auditorias/2026-09-hallazgos.md",
+  "ventana": "6-sep → 4-oct (publicadas del 7-sep al 2-oct)"
  },
  "seguimiento_correo_lead_magnets": "Solo ZAPATA y NIVEL tienen nutrición por correo activa; MEMORIA, DYNAMO, Guía Revit+ChatGPT y COTIZA solo reciben el acceso; ACERO recibe la reactivación genérica (fuentes/ghl/seguimiento-correos-lm.json).",
  "meta_septiembre": {
   "objetivo": 10000,
-  "logrado_provisional": 3599.95,
-  "pct": 36
+  "logrado": 3759.95,
+  "pct": 38
  },
  "meta_octubre": {
   "objetivo": 10000,
@@ -171,8 +174,8 @@
    ]
   ],
   "conversion_necesaria": {
-   "acero": "14 de ~356 leads = 3,9% (septiembre: 2 de 356 = 0,6%)",
-   "master_diplomado": "8 de ~444 leads = 1,8% (septiembre: 3 de 444 = 0,7%)"
+   "acero": "14 de ~380 leads = 3,7% (septiembre: 2 de 380 = 0,5%)",
+   "master_diplomado": "8 de ~471 leads = 1,7% (septiembre: 3 de 471 = 0,6%)"
   }
  },
  "higiene": [
@@ -188,6 +191,36 @@
  "ventas_captacion_cobradas": 8,
  "presentaciones": {
   "equipo": "sin montos de facturación del mes: solo % de la meta y ventas por cliente (pedido de Dayana el 2-oct)",
-  "gerencia": "con la conciliación completa"
+  "gerencia": "con la conciliación completa",
+  "corte": "Regeneradas el 5-oct con el corte al 4-oct",
+  "gamma_equipo": "https://gamma.app/docs/8oxrzfpvutzw8lq",
+  "gamma_gerencia": "https://gamma.app/docs/dnxvu1u3e8ekrno"
+ },
+ "lead_magnets_5oct": {
+  "ZAPATA": [
+   176,
+   153
+  ],
+  "ACERO": [
+   195,
+   50
+  ],
+  "MEMORIA": [
+   152,
+   85
+  ],
+  "DYNAMO": [
+   18,
+   7
+  ],
+  "NIVEL": [
+   3,
+   6
+  ],
+  "COTIZA": [
+   0,
+   1
+  ],
+  "nota": "[pidió por el bot, recibió el acceso], totales acumulados por etiqueta en GHL al 5-oct"
  }
 }
