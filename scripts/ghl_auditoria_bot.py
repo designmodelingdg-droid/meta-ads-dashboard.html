@@ -31,6 +31,7 @@ import os
 import re
 import sys
 import time
+import unicodedata
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -73,7 +74,20 @@ COMPRA = re.compile(r"(compr|inscrit|pagad|pago confirmado|cliente|alumno|matric
 
 SIGLAS = {"BIM", "IA", "DMA", "USD", "PDF", "REVIT", "ROBOT", "ACERO", "MASTER", "MÁSTER", "AUTODESK",
           "WHATSAPP", "CAD", "MEP", "LATAM", "HOLA", "GRACIAS", "INFO", "SI", "SÍ", "NO", "OK", "DG"}
+PALABRAS_DEL_RUBRO = {"revit", "robot", "acero", "bim", "ia", "máster", "master", "autocad", "etabs", "sap2000",
+                      "tekla", "navisworks", "dynamo", "civil3d", "colega", "perfecto", "gracias", "hola", "excelente",
+                      "genial", "listo", "claro", "ok", "diplomado", "especialización", "cimentaciones", "hormigón"}
 SALUDO = r"((?i:hola|buen[oa]s? (d[ií]as|tardes|noches)|estimad[oa]|saludos|gracias|ing\.?|arq\.?|colega|qu[eé] tal))"
+
+
+VOCALES = {"a": "[aáàä]", "e": "[eéèë]", "i": "[iíìï]", "o": "[oóòö]", "u": "[uúùü]", "n": "[nñ]"}
+
+
+def sin_tildes(palabra):
+    """Patrón que encuentra la palabra con o sin tildes (Josué = Josue)."""
+    base = unicodedata.normalize("NFD", palabra.lower())
+    base = "".join(ch for ch in base if unicodedata.category(ch) != "Mn")
+    return "".join(VOCALES.get(ch, re.escape(ch)) for ch in base)
 
 
 def limpiar(texto, nombres=()):
@@ -84,13 +98,16 @@ def limpiar(texto, nombres=()):
     t = re.sub(r"📱\s*\[Received on[^\]]*\]", "", t)
     t = re.sub(r"↩️ Replied to:.*?↪️ Message:", "", t, flags=re.S)
     for n in nombres:
-        for parte in (n or "").split():
-            if len(parte) > 2:
-                t = re.sub(r"\b" + re.escape(parte) + r"\b", "[nombre]", t, flags=re.I)
+        for parte in re.split(r"[\s,.]+", n or ""):
+            if len(parte) >= 2:
+                t = re.sub(r"\b" + sin_tildes(parte) + r"\b", "[nombre]", t, flags=re.I)
     t = re.sub(r"(full ?name|nombre)\s*:\s*[^\n]{1,60}", r"\1: [nombre]", t, flags=re.I)
     # Nombre propio justo después de un saludo («Buenas noches Juan», «Hola Ing. Pérez»).
     t = re.sub(SALUDO + r"(,?\s+)((?:[A-ZÁÉÍÓÚÑ][\wáéíóúñ]+\.?\s*){1,3})",
                lambda m: m.group(1) + m.group(3) + "[nombre] ", t)
+    # Nombre de pila metido en una plantilla: «¡Solo por hoy, Ana!», «¡Perfecto, Ana!», «⏳ Ana aún…».
+    t = re.sub(r"(,\s*|⏳\s*)([A-ZÁÉÍÓÚÑ][\wáéíóúñ]*)(\s*[!¡?,]|\s+a[uú]n\b)",
+               lambda m: m.group(0) if m.group(2).lower() in PALABRAS_DEL_RUBRO else m.group(1) + "[nombre]" + m.group(3), t)
     # Dos a cuatro palabras seguidas en MAYÚSCULAS que no son siglas del rubro: casi siempre un nombre.
     t = re.sub(r"\b(?:[A-ZÁÉÍÓÚÑ]{3,}\s+){1,3}[A-ZÁÉÍÓÚÑ]{3,}\b",
                lambda m: m.group(0) if all(w in SIGLAS for w in m.group(0).split()) else "[nombre]", t)
