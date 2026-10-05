@@ -71,13 +71,29 @@ OBJECIONES = {
 COMPRA = re.compile(r"(compr|inscrit|pagad|pago confirmado|cliente|alumno|matricul)", re.I)
 
 
+SIGLAS = {"BIM", "IA", "DMA", "USD", "PDF", "REVIT", "ROBOT", "ACERO", "MASTER", "MÁSTER", "AUTODESK",
+          "WHATSAPP", "CAD", "MEP", "LATAM", "HOLA", "GRACIAS", "INFO", "SI", "SÍ", "NO", "OK", "DG"}
+SALUDO = r"((?i:hola|buen[oa]s? (d[ií]as|tardes|noches)|estimad[oa]|saludos|gracias|ing\.?|arq\.?|colega|qu[eé] tal))"
+
+
 def limpiar(texto, nombres=()):
     t = texto or ""
+    # Ruido del conector de WhatsApp: encabezado con el nombre del perfil, «enviado desde», «respondido a».
+    t = re.sub(r"👤[^(\n]{0,80}\(", "👤 [nombre] (", t)
+    t = re.sub(r"🔁\s*Sent from another device.*?🔁", "", t, flags=re.S)
+    t = re.sub(r"📱\s*\[Received on[^\]]*\]", "", t)
+    t = re.sub(r"↩️ Replied to:.*?↪️ Message:", "", t, flags=re.S)
     for n in nombres:
         for parte in (n or "").split():
             if len(parte) > 2:
                 t = re.sub(r"\b" + re.escape(parte) + r"\b", "[nombre]", t, flags=re.I)
     t = re.sub(r"(full ?name|nombre)\s*:\s*[^\n]{1,60}", r"\1: [nombre]", t, flags=re.I)
+    # Nombre propio justo después de un saludo («Buenas noches Juan», «Hola Ing. Pérez»).
+    t = re.sub(SALUDO + r"(,?\s+)((?:[A-ZÁÉÍÓÚÑ][\wáéíóúñ]+\.?\s*){1,3})",
+               lambda m: m.group(1) + m.group(3) + "[nombre] ", t)
+    # Dos a cuatro palabras seguidas en MAYÚSCULAS que no son siglas del rubro: casi siempre un nombre.
+    t = re.sub(r"\b(?:[A-ZÁÉÍÓÚÑ]{3,}\s+){1,3}[A-ZÁÉÍÓÚÑ]{3,}\b",
+               lambda m: m.group(0) if all(w in SIGLAS for w in m.group(0).split()) else "[nombre]", t)
     t = re.sub(r"[\w\.\-+]+@[\w\.\-]+", "[correo]", t)
     t = re.sub(r"(?:\+?\d[\d\s\-\(\)]{7,}\d)", "[telefono]", t)
     t = re.sub(r"https?://\S+", "[enlace]", t)
