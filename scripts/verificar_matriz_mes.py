@@ -30,7 +30,8 @@ from historico_matriz import ya_usado  # noqa: E402
 
 M = pathlib.Path("matriz-viral/matriz")
 MESES = {"10": "octubre", "11": "noviembre", "12": "diciembre", "09": "septiembre"}
-PALABRAS_VIVAS = {"NIVEL", "ACERO", "ZAPATA", "MEMORIA", "COTIZA", "DIPLOMADO", "BIM", "IA"}
+PALABRAS_VIVAS = {"NIVEL", "ACERO", "ZAPATA", "MEMORIA", "COTIZA", "DIPLOMADO", "BIM", "IA",
+                  "GUIA"}  # GUIA: OpenReply, campaña «Guía Revit» (reel del Mié 7, cambio del 5-oct)
 PRECIO_MASTER = re.compile(r"2[.,]?699|\$\s?499|\$\s?500\b|\$\s?160\b|12 cuotas", re.I)
 
 resultado = {"FALLA": 0, "AVISO": 0}

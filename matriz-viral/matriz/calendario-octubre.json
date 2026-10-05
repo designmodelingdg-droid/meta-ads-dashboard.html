@@ -3,17 +3,18 @@
  "subtitulo": "Del lunes 5 al domingo 1 de noviembre · calendarios por grupo, misma información adaptada a cada canal · escrita para vender Máster y Especialización en ACERO",
  "reglas_del_mes": [
   "REGLA DE ORO: todos los grupos comparten la misma información la misma semana, adaptada a cada canal. El feed del lunes alimenta comunidades, historias, LinkedIn y el correo de la semana.",
-  "FEED: 19 piezas · formato 7 reels / 8 carruseles / 4 posts (40/40/20) · intención 9 problema / 4 solución / 6 objeción o testimonio (50/20/30, del análisis de compradores del 29-sep).",
+  "FEED: 19 piezas · formato 7 reels / 8 carruseles / 4 posts (40/40/20) · intención 10 problema / 3 solución / 6 objeción o testimonio (50/20/30, del análisis de compradores del 29-sep).",
   "A QUIÉN LE HABLAMOS: cada pieza nombra a un perfil comprador de COMPRADORES-VS-NO.md. Si no le habla a ninguno, no entra.",
   "EL PATRÓN: acusar un hábito concreto (8,61 comentarios por 1.000 vistas contra 0,54) o dar un dato de cálculo verificable (DM168: 130 comentarios, 611 guardados). Nada de «la IA te va a reemplazar» (0 comentarios en julio).",
   "POST PLANO = SOLO CON DATO VERIFICABLE, con su fuente en las notas de producción.",
   "Mínimo 60 % en el NÚCLEO (BIM / IA / modelado / acero). Cero OBRA.",
   "NINGUNA pieza repite un id o un gancho ya usado (historico-2026.json).",
-  "PALABRAS DE COMENTARIO — SOLO ESTAS: NIVEL (Máster), ACERO, ZAPATA, MEMORIA, COTIZA (nueva) y DIPLOMADO (lanzamiento del tutor, si está montada). CHATGPT queda fuera: no tiene quien conteste. BIM e IA siguen siendo el bot de ventas del Máster.",
+  "PALABRAS DE COMENTARIO — SOLO ESTAS: NIVEL (Máster), ACERO, ZAPATA, MEMORIA, COTIZA (nueva), DIPLOMADO (lanzamiento del tutor, si está montada) y GUIA (reel del Mié 7, cambio del 5-oct; la contesta OpenReply). CHATGPT queda fuera: no tiene quien conteste. BIM e IA siguen siendo el bot de ventas del Máster.",
   "UNA PALABRA, UNA AUTOMATIZACIÓN (auditoría de septiembre: MEMORIA con dos campañas de OpenReply y un workflow de GHL, 30 DM fallidos; DYNAMO, 4 de 4). DECIDIDO por Dayana el 30-sep: las palabras con embudo (ZAPATA, ACERO, NIVEL, MEMORIA, DYNAMO y BIM/IA, el bot de ventas) las contesta GHL; OpenReply queda para las palabras sueltas (TUTORIAL, GUIA, PARTE) y para COTIZA en Instagram. Las campañas de OpenReply las hace Dayana.",
   "BIM e IA NUNCA como palabra de un recurso: son el bot de ventas del Máster (el checklist de Navisworks falló 3 de 5).",
   "DYNAMO fuera de los CTA de octubre: 0 comentarios en su reel y falla en OpenReply.",
   "LOS DOS FORMATOS GANADORES DE SEPTIEMBRE se repiten: el dato de cálculo verificable (cuantía mínima: 44.589 vistas, 146 comentarios, 163 seguidores) y el tutorial paso a paso con palabra (plano 2D → BIM: 99 comentarios, 47 DM). Anunciar un producto («ahora tiene X») nunca va solo: siempre detrás de un problema.",
+  "CAMBIOS DEL 5-OCT (revisión semanal, auditoría orgánica de septiembre y reunión de cierre): historias de 4 frames como máximo; cada dato de cálculo cierra con palabra de recurso; los posts del recurso se cuidan también en Facebook (192 comentarios del post de MEMORIA); el reel del tutor queda aplazado hasta que se grabe y en su lugar sale «Una IA no sabe cuándo no sabe», que no se promociona en historias.",
   "UNA venta por semana, el jueves, en historias: 8 tutor · 15 objeción de ACERO · 22 espejo del Máster · 29 ACERO por dentro.",
   "EL MÁSTER NUNCA LLEVA PRECIO. ACERO lleva $225 solo en pauta y en correo a la lista propia.",
   "Visuales = capturas reales de Revit/Robot y cámara de Gabriel. Imagen con IA solo con aprobación y costo a la vista.",
@@ -123,10 +124,34 @@
    "para": "Olympus"
   },
   {
-   "tarea": "Subir los anuncios nuevos de octubre como reemplazo de los cansados.",
+   "tarea": "Subir los anuncios nuevos de octubre como reemplazo de los cansados, SOLO después de probar los de septiembre (reunión del 5-oct). Los del tutor esperan al reel, que no está grabado.",
    "desbloquea": "Pauta de las semanas 3 y 4",
-   "cuando": "Lun 19-oct (tutor: Lun 12)",
+   "cuando": "Lun 19-oct",
    "para": "Olympus"
+  },
+  {
+   "tarea": "Añadir el reel del Mié 7 («Una IA no sabe cuándo no sabe») a la campaña «Guía Revit» de OpenReply (palabra GUIA, dispara también por DM) y comprobar que solo esa campaña lo escucha.",
+   "desbloquea": "Que el comentario GUIA del reel reciba la guía",
+   "cuando": "Mié 7, al publicar",
+   "para": "Dayana (OpenReply)"
+  },
+  {
+   "tarea": "Revisión semanal del 5-oct: cada post con dato de cálculo cierra con una palabra de recurso (el de la fórmula del acero sacó 91 guardados y solo 10 comentarios).",
+   "desbloquea": "Que los datos verificables también traigan leads",
+   "cuando": "todo octubre",
+   "para": "equipo de contenido"
+  },
+  {
+   "tarea": "Revisión semanal del 5-oct: comprobar que los comentarios de Facebook reciben el DM del recurso. El post de MEMORIA del 1-oct sacó 192 comentarios en Facebook contra 32 en Instagram.",
+   "desbloquea": "Que la conversación de Facebook llegue al bot",
+   "cuando": "semana del 5-oct",
+   "para": "Patricio / Dayana"
+  },
+  {
+   "tarea": "Reunión del 5-oct: historias de 4 frames como máximo por día (ya aplicado en la matriz).",
+   "desbloquea": "Retención de las historias por encima del 60 %",
+   "cuando": "desde el Lun 5",
+   "para": "Daniela"
   },
   {
    "tarea": "Montar la secuencia de correo S5 · SEGUIMIENTO COTIZADOR (matriz-viral/seguimiento/correos-nutricion.json).",
@@ -611,6 +636,10 @@
     "Auditoría de septiembre (Meta, 31-ago al 29-sep): $77 gastados entre las tres, 0 leads de formulario y 7 conversaciones. Ese presupuesto pasa a ACERO. Si se quiere pauta para un recurso, se hace con el post del dato de cálculo (el mejor orgánico del año), no con los anuncios actuales."
    ],
    [
+    "8 · Reunión del 5-oct",
+    "Se reactivan los anuncios de septiembre y se pausan todos los de enero a julio. No se suben anuncios NUEVOS de venta hasta probar los actuales, y Gabriel graba solo contenido de valor para el feed. Formulario de ACERO con preguntas que filtren a quien no tiene trabajo ni presupuesto. Ventas pone la fuente a cada oportunidad."
+   ],
+   [
     "REGLA DE ORO",
     "El Máster no lleva precio en ninguna pieza. ACERO lleva $225 solo en pauta y en correo a la lista propia. Un texto por ángulo, en una sola campaña."
    ]
@@ -644,15 +673,15 @@
      "fecha": "Mié 7",
      "fecha_iso": "2026-10-07",
      "semana": "Semana 1 (5-11 oct)",
-     "id": "oct-tutor-dip-reel",
-     "titulo": "¿Todavía rebobinas la clase?",
-     "tipo": "lanzamiento",
-     "formato_publicacion": "REEL (38-42 s)",
-     "intencion": "solución",
-     "producto": "Diplomado",
-     "cta": "Comenta DIPLOMADO / DM",
-     "estado": "POR GRABAR",
-     "nota": "Reel de lanzamiento. Graba Gabriel. Abre con el problema (rebobinar la clase), no con el anuncio del tutor: auditoría de septiembre."
+     "id": "oct-ia-no-sabe-reel",
+     "titulo": "Una IA no sabe cuándo no sabe",
+     "tipo": "valor",
+     "formato_publicacion": "REEL (40 s)",
+     "intencion": "problema",
+     "producto": "Máster",
+     "cta": "Comenta GUIA",
+     "estado": "GRABADO · reemplaza a oct-tutor-dip-reel",
+     "nota": "CAMBIO 5-oct (Dayana): reemplaza al reel del tutor, que no se grabó (pasa al banco de reserva). «Una IA no sabe cuándo no sabe», ya grabado. La palabra es GUIA: añadir el reel a la campaña «Guía Revit» de OpenReply. No se promociona en historias."
     },
     {
      "fecha": "Jue 8",
@@ -944,7 +973,7 @@
      "idea": {
       "titulo": "¿Qué tema han rebobinado más veces?",
       "formato": "MENSAJES · canal de WhatsApp, canal de Instagram, comunidades de WhatsApp, grupos de Facebook, comunidad de YouTube, comunidades GHL",
-      "desarrollo": "Ayer subimos un reel sobre algo que todos hicimos alguna vez: rebobinar una clase de dos horas para encontrar un solo minuto."
+      "desarrollo": "El lunes subimos un carrusel sobre algo que todos hicimos alguna vez: rebobinar una clase de dos horas para encontrar un solo minuto."
      }
     },
     {
@@ -1393,11 +1422,11 @@
   {
    "n": 5,
    "nombre": "GRUPO 5 · Historias de Instagram (y Facebook stories)",
-   "descripcion": "Lunes a viernes, 3–5 frames. Cada día abre la puerta a la pieza del feed; los jueves 15, 22 y 29 son el único slot de venta de la semana.",
+   "descripcion": "Lunes a viernes, 3–4 frames. Cada día abre la puerta a la pieza del feed; los jueves 15, 22 y 29 son el único slot de venta de la semana.",
    "reglas": [
     "El sticker es el CTA.",
     "Nunca precio ni «inscríbete».",
-    "Máximo 5 frames.",
+    "Máximo 4 frames (auditoría orgánica de septiembre y reunión del 5-oct).",
     "Las respuestas llegan como DM: se contestan a mano.",
     "Cada historia dice en qué destacada se guarda. Daniela las guarda cada viernes (ver «destacadas»)."
    ],
@@ -1454,10 +1483,10 @@
      "id": "oct-tutor-dip-historias",
      "titulo": "133 horas y una duda",
      "tipo": "venta",
-     "formato_publicacion": "HISTORIAS (5 frames)",
+     "formato_publicacion": "HISTORIAS (4 frames)",
      "idea": {
       "titulo": "133 horas y una duda",
-      "formato": "HISTORIAS (5 frames)",
+      "formato": "HISTORIAS (4 frames)",
       "desarrollo": "133 horas de clase. Una duda. ¿En cuál estaba?"
      },
      "destacada": "🎯 BIM + IA"
@@ -1529,10 +1558,10 @@
      "id": "oct-hist-1015",
      "titulo": "«Me interesa, pero no tengo tiempo»",
      "tipo": "venta",
-     "formato_publicacion": "HISTORIAS (5 frames)",
+     "formato_publicacion": "HISTORIAS (4 frames)",
      "idea": {
       "titulo": "«Me interesa, pero no tengo tiempo»",
-      "formato": "HISTORIAS (5 frames)",
+      "formato": "HISTORIAS (4 frames)",
       "desarrollo": "La frase que más escuchamos antes de que alguien empiece Acero."
      },
      "destacada": "🔩 ACERO"
@@ -1603,10 +1632,10 @@
      "id": "oct-hist-1022",
      "titulo": "El espejo: cuatro bloques",
      "tipo": "venta",
-     "formato_publicacion": "HISTORIAS (5 frames)",
+     "formato_publicacion": "HISTORIAS (4 frames)",
      "idea": {
       "titulo": "El espejo: cuatro bloques",
-      "formato": "HISTORIAS (5 frames)",
+      "formato": "HISTORIAS (4 frames)",
       "desarrollo": "Llevas años modelando bien. Y sigues esperando a que te digan qué modelar."
      },
      "destacada": "🎯 BIM + IA"
@@ -1678,10 +1707,10 @@
      "id": "oct-hist-1029",
      "titulo": "Acero por dentro",
      "tipo": "venta",
-     "formato_publicacion": "HISTORIAS (5 frames)",
+     "formato_publicacion": "HISTORIAS (4 frames)",
      "idea": {
       "titulo": "Acero por dentro",
-      "formato": "HISTORIAS (5 frames)",
+      "formato": "HISTORIAS (4 frames)",
       "desarrollo": "Te abro la Especialización en Acero. Sin filtro."
      },
      "destacada": "🔩 ACERO"
@@ -1751,7 +1780,7 @@
    {
     "nombre": "Guía Revit + ChatGPT",
     "palabra": "CHATGPT",
-    "por_que": "No tiene campaña ni workflow que conteste: nadie recibe nada. Fuera de los CTA hasta que se vuelva a montar."
+    "por_que": "No tiene campaña ni workflow que conteste: nadie recibe nada. La guía se pide con GUIA (OpenReply), que es la palabra que usa el reel del Mié 7."
    }
   ],
   "mapa_cta": [
@@ -1772,8 +1801,13 @@
    },
    {
     "palabra": "DIPLOMADO",
-    "fecha": "Lun 5, Mié 7 (lanzamiento del tutor)",
+    "fecha": "Lun 5 (lanzamiento del tutor; el reel del Mié 7 quedó aplazado)",
     "producto": "Diplomado · montar antes del 5 o CTA a DM"
+   },
+   {
+    "palabra": "GUIA",
+    "fecha": "Mié 7 (reel «Una IA no sabe cuándo no sabe», cambio del 5-oct)",
+    "producto": "Guía Revit + ChatGPT (OpenReply, campaña «Guía Revit») → Máster"
    }
   ]
  },
@@ -1840,6 +1874,7 @@
  "piezas": [],
  "pauta": [],
  "banco_reserva": [
+  "oct-tutor-dip-reel",
   "ago-derivas-deformaciones",
   "ago-tip-revit-ia",
   "ago-revit-ia-futuro"
