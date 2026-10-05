@@ -490,3 +490,28 @@ propósito, bien; si no, es un medidor apagado.
 se ven en la UI de Insights. No es un detalle: el ganador de julio sacó 9.103
 de sus 11.193 vistas en Facebook. Sin ese dato, las tres cifras de arriba son
 solo la mitad de Instagram.
+
+## Actualización 2026-10-05 — semana 28 sep – 4 oct · MEMORIA y Facebook se llevan la conversación
+
+Datos de la Graph API (Instagram; de Facebook solo hay comentarios, la API no da sus vistas).
+
+| Fecha | Pieza | Formato | Vistas IG | Coment. IG | Coment. FB | Guardados |
+|---|---|---|---|---|---|---|
+| Jue 1 | Post de MEMORIA («hipótesis que no se declararon») | post | 3.599 | 32 | **192** | 19 |
+| Mar 29 | Reel de MEMORIA («la memoria no vuelve por el cálculo») | reel | 1.853 | **50** | 2 | 5 |
+| Vie 2 | Dato: fórmula para estimar el acero de un presupuesto | post | **3.813** | 10 | — | **91** |
+| Mié 30 | «400 avisos sin leer» | reel | 1.926 | 8 | 7 | 19 |
+| Lun 28 | Tutor IA («la duda de las 11 p.m.») | post | 1.357 | 2 | — | 2 |
+| Mar 29 | «El Máster cambió de estructura» | post | 1.299 | 1 | — | 5 |
+
+Mediana de la semana: 1.890 vistas, 9 comentarios y 12 guardados por pieza. Septiembre (6-27): 2.217 / 13 / 8. Agosto: 3.015 / 3 / 4.
+
+**Lecciones**
+1. **El recurso con palabra sigue siendo el formato ganador.** Las dos piezas de MEMORIA sumaron 82 comentarios en Instagram y 194 en Facebook, y el bot sumó 104 contactos de MEMORIA en 7 días.
+2. **Facebook trajo 6 veces más comentarios que Instagram en el mismo post** (192 contra 32). Facebook es canal propio: el post del recurso se publica cuidado ahí y hay que comprobar que esos comentarios reciben el DM.
+3. **El dato verificable es lo más guardado (91), pero sin palabra no conversa** (10 comentarios). El calendario pedía la varilla Ø12; salió otra fórmula, igual de buena. A cada dato de cálculo hay que ponerle una palabra de recurso al final.
+4. **Anunciar el producto solo no conversa, por segunda semana seguida:** tutor 2 comentarios, Máster 1. El lunes 28 el calendario pedía un carrusel condicionado y salió un post plano.
+
+**Plan contra lo publicado:** salieron las 4 piezas del calendario de la semana 4 (Lun 28, Mar 29, Jue 1, Vie 2), más 2 fuera de calendario (Máster y «400 avisos»). Esta semana el cuello de botella no fue publicar.
+
+**Historias:** el 29-sep (CTA de MEMORIA) tuvo 27 respuestas con 75 % de retención. Los otros días, 0 respuestas: no tenían CTA.

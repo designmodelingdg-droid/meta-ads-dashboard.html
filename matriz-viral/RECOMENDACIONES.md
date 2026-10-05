@@ -32,9 +32,12 @@ estado: 🔴 pendiente · 🟡 en curso · 🟢 hecho · ⚫ descartada (con el 
 | 13 | **ACERO es solo el 20 % de las historias** (3 de 15) siendo el producto de mejor CPL. Subir a 6 | Auditoría historias 14-ago | Dayana | 🔴 |
 | 14 | **Decidir si ACERO abre cohorte este mes** y con cuántos cupos reales. Sin ese dato, la secuencia de cuenta regresiva no se publica | Auditoría historias 14-ago | Dayana | 🔴 |
 | 15 | ~~Los workflows CHATGPT y DYNAMO de GHL nunca dispararon~~ · **Resuelto, y la alarma era falsa en parte:** los recursos salen por **OpenReply**. CHATGPT se entrega con TUTORIAL (42) y GUIA; DYNAMO tiene campaña desde el 23-sep 16:27 UTC. Se concluyó con datos de OpenReply de dos días atrás: desde hoy se leen cada 4 h | Embudo 23-sep | — | 🟢 |
-| 17 | **Decidir si la campaña MEMORIA DE CÁLCULO de OpenReply se reactiva.** Está pausada ahí mientras su workflow de GHL sigue publicado: el comentario se contesta, pero sin DM ni medición por OpenReply | Revisión 21-sep | Dayana | 🔴 |
+| 17 | ~~Decidir si la campaña MEMORIA DE CÁLCULO de OpenReply se reactiva~~ · **Descartada:** el 30-sep se decidió «una palabra, una automatización» y MEMORIA vive en GHL | Revisión 21-sep | — | ⚫ |
 | 18 | **Las 13 personas que respondieron DYNAMO a la historia del 22-sep no recibieron nada automático:** la campaña PACK DYNAMO se creó 19 h después. Mandarles el pack a mano desde el buzón de Instagram. Desde ahora PACK DYNAMO dispara también por DM, así que las respuestas a historia ya quedan cubiertas | Historias 23-sep | Dayana / quien atienda el buzón | 🔴 |
 | 19 | **El carrusel del Jue 24 pide COMENTA DYNAMO y PACK DYNAMO solo escucha el reel** (`matchAnyPost` apagado, atada a `/reel/Ddm_IPUCh-C/`). En cuanto se publique el carrusel, añadirlo a la campaña o activar «cualquier publicación»; si no, sus comentarios no reciben nada | Campañas 23-sep | quien monte OpenReply | 🔴 |
+| 20 | **Ponerle palabra de recurso a cada dato de cálculo.** El de la fórmula del acero (2-oct) fue lo más guardado de la semana (91) y solo sacó 10 comentarios | Revisión 5-oct | Contenido | 🔴 |
+| 21 | **Comprobar que los comentarios de Facebook reciben el DM.** El post de MEMORIA del 1-oct sacó 192 comentarios en FB (6 veces Instagram). Si el workflow de GHL solo escucha Instagram, esa gente se queda sin el recurso | Revisión 5-oct | Patricio / Dayana | 🔴 |
+| 22 | **Conectar el seguimiento por correo de MEMORIA.** Entraron 104 contactos en 7 días y después del acceso no reciben nada | Revisión 5-oct | Ester | 🔴 |
 | 16 | **Tres piezas del calendario siguen sin salir:** `pauta-guia` (Mar 8, reel), `lm-revit-chatgpt-feed` (Jue 10, carrusel) y `reel-advertencias` (Vie 18, reel). El del Jue 10 no necesita cámara | Revisión 21-sep | Contenido | 🔴 |
 
 ---
@@ -83,6 +86,13 @@ Estas ya no se discuten cada semana. Salieron de medir.
 ---
 
 ## Historial
+
+### 5-oct-2026 · Revisión semanal (28 sep – 4 oct)
+
+**MEMORIA y Facebook se llevan la conversación.** Las dos piezas del recurso sumaron 82 comentarios en Instagram y **194 en Facebook**; el post del 1-oct tuvo 192 comentarios en FB contra 32 en IG. El bot sumó 104 contactos de MEMORIA en 7 días. Salieron las 4 piezas del calendario de la semana, así que esta vez el cuello de botella no fue publicar.
+
+**Lo que no funcionó:** los dos anuncios de producto (tutor y Máster) quedaron en 2 y 1 comentarios, por segunda semana seguida. El dato de cálculo de la fórmula del acero fue lo más guardado (91), pero sin palabra solo hizo 10 comentarios. → recomendaciones #20, #21 y #22.
+
 
 ### 23-sep-2026 · Historias por API, y dos bots que nunca dispararon
 
