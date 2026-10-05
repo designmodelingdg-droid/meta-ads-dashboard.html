@@ -142,12 +142,17 @@ def main():
     tras_objecion_largo, tras_objecion_pregunta, tras_objecion_n = [], 0, 0
     ejemplos = []
 
+    tipos_conv, tipos_msg = Counter(), Counter()
     for c in convs:
-        if (c.get("type") or "") not in ("TYPE_PHONE", "TYPE_WHATSAPP", ""):
-            continue
+        tipos_conv[c.get("type") or "?"] += 1
         d = api(f"/conversations/{c['id']}/messages", limit=100)
         ms = lista(d, "messages")
-        ms = [m for m in ms if (m.get("messageType") or "") in ("TYPE_WHATSAPP", "TYPE_SMS", "TYPE_PHONE", "") and (m.get("body") or "").strip()]
+        for m in ms:
+            tipos_msg[m.get("messageType") or "?"] += 1
+        # Fuera llamadas, correos, comentarios internos y registros de actividad:
+        # solo quedan mensajes de chat con texto.
+        ms = [m for m in ms if (m.get("body") or "").strip()
+              and not re.search(r"ACTIVITY|CALL|EMAIL|COMMENT|NOTE|CUSTOM_PROVIDER_EMAIL", m.get("messageType") or "")]
         if len(ms) < 3:
             continue
         ms.sort(key=lambda m: m.get("dateAdded") or "")
@@ -203,7 +208,10 @@ def main():
     res = {
         "generado": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ"),
         "nota": "Agregados y ejemplos anonimizados (nombre del contacto, correos, teléfonos y enlaces tapados). Muestra de las conversaciones más recientes, no el total.",
+        "conversaciones_traidas": len(convs),
         "conversaciones_revisadas": revisadas,
+        "tipos_de_conversacion": dict(tipos_conv.most_common()),
+        "tipos_de_mensaje": dict(tipos_msg.most_common()),
         "terminan_con_mensaje_nuestro": termina_nuestro,
         "con_etiqueta_de_compra": compra,
         "conversaciones_con_propuesta_de_llamada": con_llamada,
