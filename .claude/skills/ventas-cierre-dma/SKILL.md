@@ -21,6 +21,7 @@ description: >
 | `matriz-viral/ventas/OBJECIONES-DMA.md` | Las respuestas a cada objeción, con el patrón reconocer → preguntar → responder corto → pedir el paso. |
 | `matriz-viral/ventas/METODOS-DE-VENTA.md` | Los libros de ventas resumidos con palabras propias y aplicados a DMA. **No se copian los libros** (derechos de autor). |
 | `matriz-viral/ventas/ANTES-Y-DESPUES.md` | Conversaciones reales (anonimizadas) reescritas: lo que mandó el agente y lo que debió mandar. |
+| `matriz-viral/ventas/PLANTILLAS-GHL-A-CORREGIR.md` | Mensajes de los workflows de GHL con urgencia falsa, fechas vencidas o precios viejos. |
 | `scripts/ghl_auditoria_bot.py` | Lee las conversaciones de GHL y mide cómo terminan, qué objeciones aparecen y qué contesta el agente. |
 | `.github/workflows/auditoria-bot.yml` | Corre el script con el secreto `GHL_TOKEN` y guarda el resultado. |
 | `matriz-viral/fuentes/ghl/auditoria-bot-ventas.json` | El resultado de la auditoría. Sin nombres, teléfonos ni correos. |

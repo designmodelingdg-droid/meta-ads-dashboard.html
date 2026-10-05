@@ -59,3 +59,12 @@
 ## «¿Me sirve si no tengo experiencia?»
 - **Pregunta:** «¿Has usado Revit o AutoCAD aunque sea en la universidad?»
 - **Responde honesto según el programa:** Acero arranca desde Robot simplificado; el Máster pide base [CONFIRMAR requisitos]. Si no tiene base, empieza por un recurso gratis o el test de nivel.
+
+## «El anuncio decía USD 199» / «¿Algún mejor precio de los 199?»
+- **Pasa seguido:** todavía hay anuncios activos con «Precio especial: $199». No lo esquives.
+- **Responde:** «Tienes razón, ese anuncio es de antes de que sumáramos el Tutor IA. Hoy está en USD 225 con el tutor incluido.» [CONFIRMAR con Dayana si a quien llega por ese anuncio se le respeta el precio de 199.]
+- **Pregunta:** «¿Lo que te frena es la diferencia de precio o quieres ver primero qué hace el tutor?»
+
+## «¿Cuándo empieza?» / «¿Cuáles son los horarios?»
+- **Responde corto:** «Empiezas el mismo día que te inscribes. No hay horarios: vas a tu ritmo, con acceso de por vida.»
+- **Pregunta:** «¿Cuántas horas a la semana le podrías dedicar?» Con la respuesta: «Con eso terminas en unos X meses. ¿Arrancamos esta semana?»

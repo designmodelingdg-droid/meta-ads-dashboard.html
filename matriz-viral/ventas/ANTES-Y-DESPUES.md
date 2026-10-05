@@ -1,6 +1,6 @@
-# Antes y después: 4 conversaciones reales del agente, reescritas
+# Antes y después: conversaciones reales del agente, reescritas
 
-> Casos de capturas de WhatsApp del 2 al 4 de octubre de 2026, sin nombres ni teléfonos. «Antes» es lo que mandó el agente; «después» es lo que debió mandar con las instrucciones nuevas.
+> Casos 1 a 4: capturas de WhatsApp del 2 al 4 de octubre de 2026. Casos 5 y 6: la auditoría de GHL del 5 de octubre. Todo sin nombres ni teléfonos. «Antes» es lo que mandó el agente; «después» es lo que debió mandar con las instrucciones nuevas.
 
 ---
 
@@ -74,7 +74,59 @@
 
 ---
 
-## El patrón que se repite en los 4 casos
+## Caso 5 · Seguimiento automático: cuatro mensajes seguidos sin respuesta
+*(Sale de la auditoría de GHL: es el final más repetido entre las 239 conversaciones.)*
+
+**Antes**
+> ¿Qué tal? Quería saber si lograste revisar la información que te envié… Cualquier duda te la resuelvo por aquí mismo.
+>
+> ¡Solo por hoy! Al inscribirte hoy te llevas el curso de Cimentaciones BIM sin costo adicional. 🎁
+>
+> Últimos cupos ⏳ aún estás a tiempo de aprovechar el 2x1… El día de hoy cerramos todos los cupos disponibles en promoción.
+>
+> Esperamos ser parte de su crecimiento profesional en un futuro…
+
+**Qué falló**
+- Dos urgencias de «hoy» distintas para la misma persona: se nota que no son verdad.
+- Ningún mensaje habla de lo que la persona necesita.
+- El primero es el típico «¿lograste revisar?», que no aporta nada.
+
+**Después** (ver la cadencia en `PROMPT-AGENTE-VENTAS.md` y `PLANTILLAS-GHL-A-CORREGIR.md`)
+> *24 h:* Me quedé pensando en lo que me dijiste de las naves: en esta clase se ve cómo se calcula la cercha [enlace]. ¿Es el tipo de proyecto que te piden?
+>
+> *48 h:* ¿Sigues buscando aprender cálculo en acero o lo dejamos para más adelante?
+>
+> *5 días:* No quiero llenarte de mensajes. ¿Lo dejamos para otro momento o te reservo el cupo de este mes?
+
+---
+
+## Caso 6 · La persona manda un audio
+
+**Antes**
+> No recibí el mensaje completo. ¿Qué necesitas? 👂
+
+**Qué falló:** la persona sintió que no la escucharon, y nadie del equipo escuchó el audio.
+
+**Después**
+> Tu audio no me llega bien por aquí. ¿Me lo escribes en una línea, o prefieres que te llame alguien del equipo?
+
+*(Y se avisa a una persona para que escuche el audio.)*
+
+---
+
+## Lo que sí funciona (un ejemplo real para copiar)
+
+> **Persona:** Ustedes hacen con Autodesk structures, ¿qué es eso?
+>
+> **Agente:** Buena pregunta. Usamos Robot Structural Analysis (de Autodesk) porque integra mejor con Revit y automatiza más el diseño en acero. SAP2000 también es excelente.
+>
+> ¿Trabajas solo en SAP2000 o también manejas Revit para el modelado?
+
+Responde corto, con un dato técnico, sin hablar mal de otro programa, y **termina en una pregunta sobre la persona**. Así tienen que ser todos los mensajes.
+
+---
+
+## El patrón que se repite en todos los casos
 
 | Error | Regla que lo corrige |
 |---|---|
@@ -84,3 +136,5 @@
 | Párrafos largos ante una objeción | Regla 7: reconocer, preguntar, responder corto y pedir el paso |
 | Promete lo que no está confirmado | Regla 8: no inventar |
 | Se hace pasar por persona | Nunca negar que es un asistente, y pasar a una persona |
+| Urgencias falsas en los seguimientos automáticos | Regla 8 y `PLANTILLAS-GHL-A-CORREGIR.md` |
+| «¿Lograste revisar?» | Regla 10: cada seguimiento aporta algo nuevo |
