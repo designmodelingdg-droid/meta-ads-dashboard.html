@@ -2,24 +2,25 @@
   "_meta": {
     "titulo": "Matriz de contenido — Design Modeling Academy — octubre 2026",
     "periodo": "Del lunes 5 al domingo 1 de noviembre",
-    "generado": "2026-09-30",
+    "generado": "2026-10-05",
     "como_se_regenera": "python3 matriz-viral/matriz/calendario-octubre.py && python3 scripts/build_matriz_mes.py --mes 2026-10",
     "origen": "calendario-octubre.json (orden) + guiones-completos.json (contenido de cada pieza)",
     "fuente_de_datos": "Métricas de Instagram por Meta Graph API (matriz.json, Action «Métricas semanales») y Apify para referentes; histórico en historico-2026.json; compradores en COMPRADORES-VS-NO.md."
   },
   "reglas_del_mes": [
     "REGLA DE ORO: todos los grupos comparten la misma información la misma semana, adaptada a cada canal. El feed del lunes alimenta comunidades, historias, LinkedIn y el correo de la semana.",
-    "FEED: 19 piezas · formato 7 reels / 8 carruseles / 4 posts (40/40/20) · intención 9 problema / 4 solución / 6 objeción o testimonio (50/20/30, del análisis de compradores del 29-sep).",
+    "FEED: 19 piezas · formato 7 reels / 8 carruseles / 4 posts (40/40/20) · intención 10 problema / 3 solución / 6 objeción o testimonio (50/20/30, del análisis de compradores del 29-sep).",
     "A QUIÉN LE HABLAMOS: cada pieza nombra a un perfil comprador de COMPRADORES-VS-NO.md. Si no le habla a ninguno, no entra.",
     "EL PATRÓN: acusar un hábito concreto (8,61 comentarios por 1.000 vistas contra 0,54) o dar un dato de cálculo verificable (DM168: 130 comentarios, 611 guardados). Nada de «la IA te va a reemplazar» (0 comentarios en julio).",
     "POST PLANO = SOLO CON DATO VERIFICABLE, con su fuente en las notas de producción.",
     "Mínimo 60 % en el NÚCLEO (BIM / IA / modelado / acero). Cero OBRA.",
     "NINGUNA pieza repite un id o un gancho ya usado (historico-2026.json).",
-    "PALABRAS DE COMENTARIO — SOLO ESTAS: NIVEL (Máster), ACERO, ZAPATA, MEMORIA, COTIZA (nueva) y DIPLOMADO (lanzamiento del tutor, si está montada). CHATGPT queda fuera: no tiene quien conteste. BIM e IA siguen siendo el bot de ventas del Máster.",
+    "PALABRAS DE COMENTARIO — SOLO ESTAS: NIVEL (Máster), ACERO, ZAPATA, MEMORIA, COTIZA (nueva), DIPLOMADO (lanzamiento del tutor, si está montada) y GUIA (reel del Mié 7, cambio del 5-oct; la contesta OpenReply). CHATGPT queda fuera: no tiene quien conteste. BIM e IA siguen siendo el bot de ventas del Máster.",
     "UNA PALABRA, UNA AUTOMATIZACIÓN (auditoría de septiembre: MEMORIA con dos campañas de OpenReply y un workflow de GHL, 30 DM fallidos; DYNAMO, 4 de 4). DECIDIDO por Dayana el 30-sep: las palabras con embudo (ZAPATA, ACERO, NIVEL, MEMORIA, DYNAMO y BIM/IA, el bot de ventas) las contesta GHL; OpenReply queda para las palabras sueltas (TUTORIAL, GUIA, PARTE) y para COTIZA en Instagram. Las campañas de OpenReply las hace Dayana.",
     "BIM e IA NUNCA como palabra de un recurso: son el bot de ventas del Máster (el checklist de Navisworks falló 3 de 5).",
     "DYNAMO fuera de los CTA de octubre: 0 comentarios en su reel y falla en OpenReply.",
     "LOS DOS FORMATOS GANADORES DE SEPTIEMBRE se repiten: el dato de cálculo verificable (cuantía mínima: 44.589 vistas, 146 comentarios, 163 seguidores) y el tutorial paso a paso con palabra (plano 2D → BIM: 99 comentarios, 47 DM). Anunciar un producto («ahora tiene X») nunca va solo: siempre detrás de un problema.",
+    "CAMBIOS DEL 5-OCT (revisión semanal, auditoría orgánica de septiembre y reunión de cierre): historias de 4 frames como máximo; cada dato de cálculo cierra con palabra de recurso; los posts del recurso se cuidan también en Facebook (192 comentarios del post de MEMORIA); el reel del tutor queda aplazado hasta que se grabe y en su lugar sale «Una IA no sabe cuándo no sabe», que no se promociona en historias.",
     "UNA venta por semana, el jueves, en historias: 8 tutor · 15 objeción de ACERO · 22 espejo del Máster · 29 ACERO por dentro.",
     "EL MÁSTER NUNCA LLEVA PRECIO. ACERO lleva $225 solo en pauta y en correo a la lista propia.",
     "Visuales = capturas reales de Revit/Robot y cámara de Gabriel. Imagen con IA solo con aprobación y costo a la vista.",
@@ -129,10 +130,34 @@
       "para": "Olympus"
     },
     {
-      "tarea": "Subir los anuncios nuevos de octubre como reemplazo de los cansados.",
+      "tarea": "Subir los anuncios nuevos de octubre como reemplazo de los cansados, SOLO después de probar los de septiembre (reunión del 5-oct). Los del tutor esperan al reel, que no está grabado.",
       "desbloquea": "Pauta de las semanas 3 y 4",
-      "cuando": "Lun 19-oct (tutor: Lun 12)",
+      "cuando": "Lun 19-oct",
       "para": "Olympus"
+    },
+    {
+      "tarea": "Añadir el reel del Mié 7 («Una IA no sabe cuándo no sabe») a la campaña «Guía Revit» de OpenReply (palabra GUIA, dispara también por DM) y comprobar que solo esa campaña lo escucha.",
+      "desbloquea": "Que el comentario GUIA del reel reciba la guía",
+      "cuando": "Mié 7, al publicar",
+      "para": "Dayana (OpenReply)"
+    },
+    {
+      "tarea": "Revisión semanal del 5-oct: cada post con dato de cálculo cierra con una palabra de recurso (el de la fórmula del acero sacó 91 guardados y solo 10 comentarios).",
+      "desbloquea": "Que los datos verificables también traigan leads",
+      "cuando": "todo octubre",
+      "para": "equipo de contenido"
+    },
+    {
+      "tarea": "Revisión semanal del 5-oct: comprobar que los comentarios de Facebook reciben el DM del recurso. El post de MEMORIA del 1-oct sacó 192 comentarios en Facebook contra 32 en Instagram.",
+      "desbloquea": "Que la conversación de Facebook llegue al bot",
+      "cuando": "semana del 5-oct",
+      "para": "Patricio / Dayana"
+    },
+    {
+      "tarea": "Reunión del 5-oct: historias de 4 frames como máximo por día (ya aplicado en la matriz).",
+      "desbloquea": "Retención de las historias por encima del 60 %",
+      "cuando": "desde el Lun 5",
+      "para": "Daniela"
     },
     {
       "tarea": "Montar la secuencia de correo S5 · SEGUIMIENTO COTIZADOR (matriz-viral/seguimiento/correos-nutricion.json).",
@@ -252,35 +277,37 @@
           "fecha": "Mié 7",
           "fecha_iso": "2026-10-07",
           "semana": "Semana 1 (5-11 oct)",
-          "id": "oct-tutor-dip-reel",
-          "titulo": "¿Todavía rebobinas la clase?",
-          "tipo": "lanzamiento",
-          "formato_publicacion": "REEL (38-42 s)",
-          "intencion": "solución",
-          "producto": "Diplomado",
-          "cta": "Comenta DIPLOMADO / DM",
-          "estado": "POR GRABAR",
-          "nota": "Reel de lanzamiento. Graba Gabriel. Abre con el problema (rebobinar la clase), no con el anuncio del tutor: auditoría de septiembre.",
+          "id": "oct-ia-no-sabe-reel",
+          "titulo": "Una IA no sabe cuándo no sabe",
+          "tipo": "valor",
+          "formato_publicacion": "REEL (40 s)",
+          "intencion": "problema",
+          "producto": "Máster",
+          "cta": "Comenta GUIA",
+          "estado": "GRABADO · reemplaza a oct-tutor-dip-reel",
+          "nota": "CAMBIO 5-oct (Dayana): reemplaza al reel del tutor, que no se grabó (pasa al banco de reserva). «Una IA no sabe cuándo no sabe», ya grabado. La palabra es GUIA: añadir el reel a la campaña «Guía Revit» de OpenReply. No se promociona en historias.",
           "contenido": {
-            "id": "oct-tutor-dip-reel",
+            "id": "oct-ia-no-sabe-reel",
             "fecha": "Mié 7 oct",
             "fecha_iso": "2026-10-07",
             "semana": "Semana 1 (5-11 oct)",
             "grupo": "GRUPO 1 · Feed principal",
-            "tipo": "lanzamiento",
+            "tipo": "valor",
             "formato": "reel",
+            "formato_detalle": "REEL (40 s)",
             "redes": [
               "instagram",
               "facebook",
               "tiktok",
               "youtube_shorts"
             ],
-            "audiencia": "prospectos (principal) · alumnos (cierre)",
-            "estado": "POR GRABAR",
-            "titulo": "¿Todavía rebobinas la clase?",
-            "eje": "PROMO",
-            "pilar": "Venta blanda · lanzamiento",
-            "hook": "Si todavía rebobinas una clase de dos horas para encontrar dónde explicaron el espectro sísmico…",
+            "red_principal": "instagram",
+            "audiencia": "ingenieros que ya usan ChatGPT para decidir secciones",
+            "estado": "GRABADO · reemplaza a oct-tutor-dip-reel",
+            "titulo": "Una IA no sabe cuándo no sabe",
+            "eje": "NÚCLEO-IA",
+            "pilar": "Valor · criterio frente a la IA (reemplazo del reel del tutor)",
+            "hook": "Una inteligencia artificial no sabe cuándo no sabe.",
             "guion_columnas": [
               "tiempo",
               "plano",
@@ -289,96 +316,51 @@
             ],
             "guion": [
               [
-                "0:00-0:03",
-                "A cámara, primer plano, sin intro. [PENDIENTE: quién graba, Gabriel o Dayana]",
-                "Si todavía rebobinas una clase de dos horas para encontrar dónde explicaron el espectro sísmico…",
-                "¿TODAVÍA **REBOBINAS** LA CLASE?"
+                "0:00-0:05",
+                "Primer plano, tono tranquilo.",
+                "Una inteligencia artificial no sabe cuándo no sabe.",
+                "NO SABE CUÁNDO NO SABE"
               ],
               [
-                "0:03-0:09",
-                "Pantalla: reproductor de video con la barra arrastrándose adelante y atrás.",
-                "…mira esto. El Diplomado BIM en Estructuras tiene 133 horas de clase, y ahora un tutor de IA que responde con ellas.",
-                "133 HORAS DE CLASE"
+                "0:05-0:13",
+                "Plano medio.",
+                "Cuando se equivoca, se equivoca con el mismo tono de seguridad con el que acierta. Y eso es justo lo que la hace peligrosa en un modelo que alguien va a firmar.",
+                "SE EQUIVOCA CON EL MISMO TONO"
               ],
               [
-                "0:09-0:19",
-                "Grabación de pantalla del tutor real, sin barra de direcciones. Se escribe la pregunta y aparece la respuesta tal cual.",
-                "Le escribo: ¿cómo creo el espectro sísmico y lo ingreso en Robot? Me manda al Módulo 2, Lección 25, minuto 04:09. Y a la 24 como apoyo.",
-                "M2 · LECCIÓN 25 · **MIN 04:09**"
+                "0:13-0:23",
+                "Screen-record: una respuesta segura de sí misma en pantalla.",
+                "Le pregunté qué sección poner. Me dio un número. Sonaba razonable. Pero no tiene mis cargas, ni mi norma, ni mi suelo — y ese número lleva mi firma, no la suya.",
+                "ESE NÚMERO LLEVA MI FIRMA"
               ],
               [
-                "0:19-0:27",
-                "Pantalla: una pregunta que no está en el temario, con la respuesta real del tutor. [Elegirla en la grabación y comprobar que contesta que no está; si no lo hace, se corta la escena]",
-                "Si le pregunto algo que no está en las clases, me lo dice y me sugiere la asesoría con los instructores. Las cifras de norma tampoco las dicta: me manda a la norma vigente.",
-                "SI NO ESTÁ EN LAS CLASES, **LO DICE**"
+                "0:23-0:32",
+                "Vuelve a cámara.",
+                "Úsala para entender qué te está diciendo el programa y para buscar más rápido. No para decidir. La línea está justo ahí, y está más cerca de lo que parece.",
+                "PARA ENTENDER, NO PARA DECIDIR"
               ],
               [
-                "0:27-0:34",
-                "A cámara, plano medio.",
-                "No sustituye al instructor. Te ahorra la búsqueda, y ese rato vuelve a ser de estudio.",
-                "TE AHORRA LA **BÚSQUEDA**"
-              ],
-              [
-                "0:34-0:42",
-                "A cámara. CTA en el último tercio del cuadro.",
-                "Si eres alumno, ya lo tienes en tu curso: botón Abrir el Tutor IA. Si no, comenta DIPLOMADO y te cuento cómo es el Diplomado.",
-                "COMENTA **DIPLOMADO**"
+                "0:32-0:40",
+                "Cierre.",
+                "Yo compruebo tres cosas antes de aplicar nada. Comenta GUIA y te paso los diez errores con su prompt, y la página donde explico esas tres comprobaciones.",
+                "COMENTA GUIA"
               ]
             ],
-            "version_tiktok": "Mismo montaje, con el texto «¿TODAVÍA REBOBINAS LA CLASE?» desde el fotograma 0 y el corte a pantalla en el segundo 2. Cierre: «El enlace está en la bio». Sin palabra clave: TikTok no dispara el bot.",
-            "caption": "Sabías que el tema se explicó. No sabías en cuál de las 133 horas.\n\nEl Diplomado BIM en Estructuras ya tiene un Tutor IA: le preguntas con tus palabras y te responde con las clases del propio Diplomado, con la lección y el minuto. Si algo no está en las clases, te lo dice.\n\nAlumnos: botón «Abrir el Tutor IA» dentro de su curso.\n¿Todavía no estás? Comenta DIPLOMADO.\n\n¿Qué le preguntarías primero?\n\n#BIM #IngenieríaEstructural #Revit #RobotStructural #IA #DesignModelingDG",
+            "caption": "La IA se equivoca con el mismo tono con el que acierta.\n\nLe pedí una sección y me dio un número razonable. Pero no tenía mis cargas, ni mi norma, ni mi suelo, y ese número lleva mi firma.\n\nÚsala para entender lo que te dice el programa y para buscar más rápido. No para decidir.\n\nComenta GUIA y te paso los 10 errores con su prompt, y la página con las tres comprobaciones que hago antes de aplicar nada.",
             "cta": {
-              "instagram": "Comenta DIPLOMADO y te contamos cómo es el Diplomado.",
-              "facebook": "Comenta DIPLOMADO y te contamos cómo es el Diplomado.",
-              "tiktok": "El enlace está en la bio. ¿Qué le preguntarías primero?",
-              "youtube": "Cómo es el Diplomado: enlace en la descripción.",
-              "linkedin": "El reel vertical NO va a LinkedIn. Allí va la grabación de pantalla en horizontal (ver oct-tutor-dip-li-gabriel)."
+              "instagram": "Comenta GUIA",
+              "facebook": "Comenta GUIA",
+              "tiktok": "Pregunta abierta, sin palabra clave",
+              "youtube_shorts": "Pregunta abierta, sin palabra clave"
             },
-            "condicion": "La palabra DIPLOMADO NO existe hoy ni en OpenReply ni en GHL (cotejo de fuentes/openreply/campanas.json). Si no está montada y probada el día de publicar, el CTA de prospectos cambia a: «Escríbenos por DM y te contamos cómo es el Diplomado» y la historia usa el sticker de enlace a la agenda. No publicar la promesa vacía. La captura de la clase bajo la respuesta solo sale en el video si ya está activa el día de grabar; no se anuncia en la voz.",
-            "prompt_imagenes": "Portada del reel 9:16: primer plano a cámara con el texto «¿TODAVÍA REBOBINAS LA CLASE?» en el tercio superior. Fondo real de oficina, pantalla con Robot encendida. Sin casco ni chaleco.",
-            "formato_detalle": "REEL (38-42 s)",
-            "red_principal": "instagram",
             "cta_por_red": {
-              "instagram": "Comenta DIPLOMADO y te contamos cómo es el Diplomado.",
-              "facebook": "Comenta DIPLOMADO y te contamos cómo es el Diplomado.",
-              "tiktok": "El enlace está en la bio. ¿Qué le preguntarías primero?",
-              "youtube": "Cómo es el Diplomado: enlace en la descripción.",
-              "linkedin": "El reel vertical NO va a LinkedIn. Allí va la grabación de pantalla en horizontal (ver oct-tutor-dip-li-gabriel)."
+              "instagram": "Comenta GUIA",
+              "facebook": "Comenta GUIA",
+              "tiktok": "Pregunta abierta, sin palabra clave",
+              "youtube_shorts": "Pregunta abierta, sin palabra clave"
             },
-            "guion_reel": [
-              {
-                "tiempo": "0:00-0:03",
-                "accion": "A cámara, primer plano, sin intro. [PENDIENTE: quién graba, Gabriel o Dayana] · En pantalla: ¿TODAVÍA **REBOBINAS** LA CLASE?",
-                "voz": "Si todavía rebobinas una clase de dos horas para encontrar dónde explicaron el espectro sísmico…"
-              },
-              {
-                "tiempo": "0:03-0:09",
-                "accion": "Pantalla: reproductor de video con la barra arrastrándose adelante y atrás. · En pantalla: 133 HORAS DE CLASE",
-                "voz": "…mira esto. El Diplomado BIM en Estructuras tiene 133 horas de clase, y ahora un tutor de IA que responde con ellas."
-              },
-              {
-                "tiempo": "0:09-0:19",
-                "accion": "Grabación de pantalla del tutor real, sin barra de direcciones. Se escribe la pregunta y aparece la respuesta tal cual. · En pantalla: M2 · LECCIÓN 25 · **MIN 04:09**",
-                "voz": "Le escribo: ¿cómo creo el espectro sísmico y lo ingreso en Robot? Me manda al Módulo 2, Lección 25, minuto 04:09. Y a la 24 como apoyo."
-              },
-              {
-                "tiempo": "0:19-0:27",
-                "accion": "Pantalla: una pregunta que no está en el temario, con la respuesta real del tutor. [Elegirla en la grabación y comprobar que contesta que no está; si no lo hace, se corta la escena] · En pantalla: SI NO ESTÁ EN LAS CLASES, **LO DICE**",
-                "voz": "Si le pregunto algo que no está en las clases, me lo dice y me sugiere la asesoría con los instructores. Las cifras de norma tampoco las dicta: me manda a la norma vigente."
-              },
-              {
-                "tiempo": "0:27-0:34",
-                "accion": "A cámara, plano medio. · En pantalla: TE AHORRA LA **BÚSQUEDA**",
-                "voz": "No sustituye al instructor. Te ahorra la búsqueda, y ese rato vuelve a ser de estudio."
-              },
-              {
-                "tiempo": "0:34-0:42",
-                "accion": "A cámara. CTA en el último tercio del cuadro. · En pantalla: COMENTA **DIPLOMADO**",
-                "voz": "Si eres alumno, ya lo tienes en tu curso: botón Abrir el Tutor IA. Si no, comenta DIPLOMADO y te cuento cómo es el Diplomado."
-              }
-            ],
-            "notas_produccion": "La palabra DIPLOMADO NO existe hoy ni en OpenReply ni en GHL (cotejo de fuentes/openreply/campanas.json). Si no está montada y probada el día de publicar, el CTA de prospectos cambia a: «Escríbenos por DM y te contamos cómo es el Diplomado» y la historia usa el sticker de enlace a la agenda. No publicar la promesa vacía. La captura de la clase bajo la respuesta solo sale en el video si ya está activa el día de grabar; no se anuncia en la voz.",
-            "origen": "lanzamiento-tutor-ia-octubre.json"
+            "notas_produccion": "5-oct (Dayana): reemplaza al reel del tutor, que no se grabó. La palabra es GUIA (no CHATGPT, que no la contesta nadie). Las dos campañas de GUIA en OpenReply escuchan reels viejos: hay que añadir este reel a «Guía Revit» (que además dispara por DM) y dejar que solo una campaña lo escuche. Este reel NO se promociona en historias (decisión de Dayana).",
+            "origen": "cambio del 5-oct (Dayana)"
           }
         },
         {
@@ -2217,7 +2199,7 @@
           "idea": {
             "titulo": "¿Qué tema han rebobinado más veces?",
             "formato": "MENSAJES · canal de WhatsApp, canal de Instagram, comunidades de WhatsApp, grupos de Facebook, comunidad de YouTube, comunidades GHL",
-            "desarrollo": "Ayer subimos un reel sobre algo que todos hicimos alguna vez: rebobinar una clase de dos horas para encontrar un solo minuto."
+            "desarrollo": "El lunes subimos un carrusel sobre algo que todos hicimos alguna vez: rebobinar una clase de dos horas para encontrar un solo minuto."
           },
           "contenido": {
             "id": "oct-comu-1008",
@@ -2243,16 +2225,16 @@
             "titulo": "¿Qué tema han rebobinado más veces?",
             "eje": "PROMO",
             "pilar": "Comunidad · pregunta sobre la pieza de la semana",
-            "hook": "Ayer subimos un reel sobre algo que todos hicimos alguna vez: rebobinar una clase de dos horas para encontrar un solo minuto.",
-            "pieza_base": "oct-tutor-dip-reel (Mié 7)",
+            "hook": "El lunes subimos un carrusel sobre algo que todos hicimos alguna vez: rebobinar una clase de dos horas para encontrar un solo minuto.",
+            "pieza_base": "oct-tutor-dip-carrusel (Lun 5)",
             "mensajes": [
               {
                 "canal": "Canal de WhatsApp y canal de Instagram (difusión, sin respuesta)",
-                "texto": "Ayer subimos un reel sobre algo que todos hicimos alguna vez: rebobinar una clase de dos horas para encontrar un solo minuto.\n\nEn el Diplomado BIM en Estructuras eso ya no hace falta. El tutor de IA del curso te dice la lección y el minuto donde se explicó el tema.\n\nSi quieres ver cómo enseñamos antes de decidir nada, el Módulo 1 del Diplomado es gratis: https://funnel.dgdesignmodeling.com/acceso-gratis-modulo-diplomado-bim-form"
+                "texto": "El lunes subimos un carrusel sobre algo que todos hicimos alguna vez: rebobinar una clase de dos horas para encontrar un solo minuto.\n\nEn el Diplomado BIM en Estructuras eso ya no hace falta. El tutor de IA del curso te dice la lección y el minuto donde se explicó el tema.\n\nSi quieres ver cómo enseñamos antes de decidir nada, el Módulo 1 del Diplomado es gratis: https://funnel.dgdesignmodeling.com/acceso-gratis-modulo-diplomado-bim-form"
               },
               {
                 "canal": "Comunidades de WhatsApp y comunidades GHL (conversación)",
-                "texto": "Pregunta rápida para los que estudian con clases grabadas: ¿qué tema han tenido que rebobinar más veces?\n\nEl reel de ayer va de eso, y de cómo se resuelve en el Diplomado. Está en el feed, son 30 segundos.\n\nLos leo."
+                "texto": "Pregunta rápida para los que estudian con clases grabadas: ¿qué tema han tenido que rebobinar más veces?\n\nEl carrusel del lunes va de eso, y de cómo se resuelve en el Diplomado. Está en el feed.\n\nLos leo."
               },
               {
                 "canal": "Grupos de Facebook y comunidad de YouTube (solo la pregunta; el enlace, si lo hay, va en el primer comentario)",
@@ -4023,11 +4005,11 @@
     {
       "n": 5,
       "nombre": "GRUPO 5 · Historias de Instagram (y Facebook stories)",
-      "descripcion": "Lunes a viernes, 3–5 frames. Cada día abre la puerta a la pieza del feed; los jueves 15, 22 y 29 son el único slot de venta de la semana.",
+      "descripcion": "Lunes a viernes, 3–4 frames. Cada día abre la puerta a la pieza del feed; los jueves 15, 22 y 29 son el único slot de venta de la semana.",
       "reglas": [
         "El sticker es el CTA.",
         "Nunca precio ni «inscríbete».",
-        "Máximo 5 frames.",
+        "Máximo 4 frames (auditoría orgánica de septiembre y reunión del 5-oct).",
         "Las respuestas llegan como DM: se contestan a mano.",
         "Cada historia dice en qué destacada se guarda. Daniela las guarda cada viernes (ver «destacadas»)."
       ],
@@ -4138,13 +4120,13 @@
             "estado": "COMPLETA",
             "titulo": "Sus preguntas, en el tutor",
             "eje": "COMUNIDAD",
-            "pilar": "Detrás de cámara · Gabriel prepara y graba el reel del tutor (sale el Mié 7)",
+            "pilar": "Detrás de cámara · respuesta a una pregunta de la caja del Lun 5 (sin promocionar ningún reel)",
             "hook": "Martes de grabación. Y una de sus preguntas, sin editar.",
             "historias": [
               {
                 "n": 1,
-                "visual": "Cámara: Gabriel de espaldas frente al monitor con el tutor abierto; al lado, el teléfono en trípode y el aro de luz encendido. 5 s, sin hablar.",
-                "texto": "Martes de grabación. Esto no sale en el reel.",
+                "visual": "Cámara: Gabriel de espaldas frente al monitor con el tutor abierto. 5 s, sin hablar.",
+                "texto": "Martes de grabación.",
                 "sticker": "Ninguno."
               },
               {
@@ -4155,8 +4137,8 @@
               },
               {
                 "n": 3,
-                "visual": "Cámara: la toma del set del reel de mañana, Gabriel repasando la primera frase con el teléfono en la mano.",
-                "texto": "Mañana sale el reel. ¿Tú estudias con cursos grabados?",
+                "visual": "Cámara: Gabriel frente al monitor, revisando la respuesta del tutor.",
+                "texto": "¿Tú estudias con cursos grabados?",
                 "sticker": "ENCUESTA: «Sí, y me pierdo buscando» / «No, prefiero en vivo». A quien marque «me pierdo buscando» se le escribe por DM a mano."
               }
             ],
@@ -4168,7 +4150,7 @@
               "instagram": "Encuesta: «¿Estudias con cursos grabados?» (DM a mano a quien se pierde buscando).",
               "facebook": "Misma encuesta en la historia de Facebook."
             },
-            "notas_produccion": "Las respuestas a una historia llegan como DM y ni OpenReply ni GHL las contestan: alguien del equipo responde a mano desde la bandeja, con el nombre de la persona y una pregunta al final (guiones en matriz-viral/HISTORIAS-VENTA.md §4). Nunca precio en el DM del Máster: si lo preguntan, se pasa a la cita. | Los votos de encuesta y quiz y lo que escriben en la caja de preguntas se quedan en el panel de la historia: se revisan el mismo día y se escribe por DM a mano a quien votó o preguntó. | Todo el material es real: capturas o grabaciones de pantalla y cámara de Gabriel. Nada de imágenes generadas. «Texto sobre azul» es un fondo liso #0E2438 con el texto de Instagram, no una imagen. | El frame 2 solo se publica con una pregunta real de la caja del Lun 5. Si la pregunta cae fuera de los módulos 2 a 9 y el tutor responde que no está en las clases, también vale: es lo que promete. Si no llegaron preguntas, se usa una de Gabriel y el texto cambia a «Una pregunta que le hicimos hoy. Sin editar.». | Sin producción: luz de oficina, sin música de fondo encima de la voz.",
+            "notas_produccion": "Las respuestas a una historia llegan como DM y ni OpenReply ni GHL las contestan: alguien del equipo responde a mano desde la bandeja, con el nombre de la persona y una pregunta al final (guiones en matriz-viral/HISTORIAS-VENTA.md §4). Nunca precio en el DM del Máster: si lo preguntan, se pasa a la cita. | Los votos de encuesta y quiz y lo que escriben en la caja de preguntas se quedan en el panel de la historia: se revisan el mismo día y se escribe por DM a mano a quien votó o preguntó. | Todo el material es real: capturas o grabaciones de pantalla y cámara de Gabriel. Nada de imágenes generadas. «Texto sobre azul» es un fondo liso #0E2438 con el texto de Instagram, no una imagen. | El frame 2 solo se publica con una pregunta real de la caja del Lun 5. Si la pregunta cae fuera de los módulos 2 a 9 y el tutor responde que no está en las clases, también vale: es lo que promete. Si no llegaron preguntas, se usa una de Gabriel y el texto cambia a «Una pregunta que le hicimos hoy. Sin editar.». | Sin producción: luz de oficina, sin música de fondo encima de la voz. | 5-oct (Dayana): se quitó toda mención al reel («Esto no sale en el reel», «Mañana sale el reel»): el reel del tutor no se grabó y el reel que sale en su lugar no se promociona en historias.",
             "origen": "calendario-octubre (fase 2)"
           }
         },
@@ -4205,12 +4187,12 @@
             "estado": "COMPLETA",
             "titulo": "¿En qué módulo estaba?",
             "eje": "PROMO",
-            "pilar": "Pieza del día · abre la puerta a oct-tutor-dip-reel",
+            "pilar": "Pieza del día · abre la puerta al carrusel del tutor (oct-tutor-dip-carrusel)",
             "hook": "Levanta la mano si alguna vez volviste a ver una clase entera para encontrar un minuto.",
             "historias": [
               {
                 "n": 1,
-                "visual": "Cámara: Gabriel levanta la mano a cámara, plano medio, 3 s, sin hablar (toma del set del martes).",
+                "visual": "Cámara: Gabriel levanta la mano a cámara, plano medio, 3 s, sin hablar.",
                 "texto": "Levanta la mano si alguna vez volviste a ver una clase entera para encontrar UN minuto.",
                 "sticker": "Ninguno."
               },
@@ -4222,8 +4204,8 @@
               },
               {
                 "n": 3,
-                "visual": "Captura del reel del día, compartido en historia.",
-                "texto": "La respuesta, con lección y minuto, en el reel de hoy.",
+                "visual": "Captura de la portada del carrusel del lunes (oct-tutor-dip-carrusel), compartida en historia: al tocarla lleva al post.",
+                "texto": "La respuesta, con lección y minuto, está en el carrusel del lunes.",
                 "sticker": "Ninguno."
               },
               {
@@ -4241,7 +4223,7 @@
               "instagram": "Responder a la historia: te contamos por DM cómo es el Diplomado.",
               "facebook": "Responder a la historia: te contamos por Messenger cómo es el Diplomado."
             },
-            "notas_produccion": "Las respuestas a una historia llegan como DM y ni OpenReply ni GHL las contestan: alguien del equipo responde a mano desde la bandeja, con el nombre de la persona y una pregunta al final (guiones en matriz-viral/HISTORIAS-VENTA.md §4). Nunca precio en el DM del Máster: si lo preguntan, se pasa a la cita. | Los votos de encuesta y quiz y lo que escriben en la caja de preguntas se quedan en el panel de la historia: se revisan el mismo día y se escribe por DM a mano a quien votó o preguntó. | En Facebook, si la historia no ofrece el sticker de quiz o de preguntas, ese frame lleva la misma pregunta con «Respóndeme esta historia». | Todo el material es real: capturas o grabaciones de pantalla y cámara de Gabriel. Nada de imágenes generadas. «Texto sobre azul» es un fondo liso #0E2438 con el texto de Instagram, no una imagen. | Antes de publicar, comprobar en la plataforma que la Lección 25 del Módulo 2 es la del espectro sísmico (es la que cita el tutor en la grabación del lanzamiento). Si no coincide, el quiz se cae y el frame 2 pasa a «¿Cuánto tardas en encontrar un minuto concreto en un curso grabado?» con encuesta. | No se usan DIPLOMADO ni TUTOR como palabra: el frame 4 pide responder sin palabra y lo atiende una persona.",
+            "notas_produccion": "Las respuestas a una historia llegan como DM y ni OpenReply ni GHL las contestan: alguien del equipo responde a mano desde la bandeja, con el nombre de la persona y una pregunta al final (guiones en matriz-viral/HISTORIAS-VENTA.md §4). Nunca precio en el DM del Máster: si lo preguntan, se pasa a la cita. | Los votos de encuesta y quiz y lo que escriben en la caja de preguntas se quedan en el panel de la historia: se revisan el mismo día y se escribe por DM a mano a quien votó o preguntó. | En Facebook, si la historia no ofrece el sticker de quiz o de preguntas, ese frame lleva la misma pregunta con «Respóndeme esta historia». | Todo el material es real: capturas o grabaciones de pantalla y cámara de Gabriel. Nada de imágenes generadas. «Texto sobre azul» es un fondo liso #0E2438 con el texto de Instagram, no una imagen. | Antes de publicar, comprobar en la plataforma que la Lección 25 del Módulo 2 es la del espectro sísmico (es la que cita el tutor en la grabación del lanzamiento). Si no coincide, el quiz se cae y el frame 2 pasa a «¿Cuánto tardas en encontrar un minuto concreto en un curso grabado?» con encuesta. | No se usan DIPLOMADO ni TUTOR como palabra: el frame 4 pide responder sin palabra y lo atiende una persona. | 5-oct (Dayana): el frame 3 manda al carrusel del lunes y no al reel, porque el reel del tutor no se grabó.",
             "origen": "calendario-octubre (fase 2)"
           }
         },
@@ -4252,10 +4234,10 @@
           "id": "oct-tutor-dip-historias",
           "titulo": "133 horas y una duda",
           "tipo": "venta",
-          "formato_publicacion": "HISTORIAS (5 frames)",
+          "formato_publicacion": "HISTORIAS (4 frames)",
           "idea": {
             "titulo": "133 horas y una duda",
-            "formato": "HISTORIAS (5 frames)",
+            "formato": "HISTORIAS (4 frames)",
             "desarrollo": "133 horas de clase. Una duda. ¿En cuál estaba?"
           },
           "destacada": "🎯 BIM + IA",
@@ -4298,12 +4280,6 @@
               },
               {
                 "n": 4,
-                "visual": "Texto sobre azul.",
-                "texto": "¿Cuánto tardas tú en encontrar una explicación concreta en un curso grabado?",
-                "sticker": "ENCUESTA: «Minutos» / «Me rindo y lo busco en YouTube». Solo alcance."
-              },
-              {
-                "n": 5,
                 "visual": "Cierre invertido ámbar.",
                 "texto": "¿Eres alumno? Botón «Abrir el Tutor IA» en tu curso. ¿No lo eres? Responde esta historia con DIPLOMADO.",
                 "sticker": "RESPONDER CON PALABRA «DIPLOMADO» (la respuesta llega al DM y la agarra el bot) + sticker de ENLACE a la agenda de 30 min."
@@ -4314,14 +4290,15 @@
               "facebook": "Responde esta historia con DIPLOMADO."
             },
             "condicion": "La palabra DIPLOMADO NO existe hoy ni en OpenReply ni en GHL (cotejo de fuentes/openreply/campanas.json). Si no está montada y probada el día de publicar, el CTA de prospectos cambia a: «Escríbenos por DM y te contamos cómo es el Diplomado» y la historia usa el sticker de enlace a la agenda. No publicar la promesa vacía. Es el slot de venta del jueves de la semana 1: esa semana no va otra historia de venta.",
-            "notas_produccion": "Los stickers de encuesta y quiz no se automatizan. Lo único que llega al DM es la respuesta a la historia del frame 5. Guardar en destacadas «Alumnos» o crear «Tutor IA». | La palabra DIPLOMADO NO existe hoy ni en OpenReply ni en GHL (cotejo de fuentes/openreply/campanas.json). Si no está montada y probada el día de publicar, el CTA de prospectos cambia a: «Escríbenos por DM y te contamos cómo es el Diplomado» y la historia usa el sticker de enlace a la agenda. No publicar la promesa vacía. Es el slot de venta del jueves de la semana 1: esa semana no va otra historia de venta.",
-            "formato_detalle": "HISTORIAS (5 frames)",
+            "notas_produccion": "Los stickers de encuesta y quiz no se automatizan. Lo único que llega al DM es la respuesta a la historia del frame 5. Guardar en destacadas «Alumnos» o crear «Tutor IA». | La palabra DIPLOMADO NO existe hoy ni en OpenReply ni en GHL (cotejo de fuentes/openreply/campanas.json). Si no está montada y probada el día de publicar, el CTA de prospectos cambia a: «Escríbenos por DM y te contamos cómo es el Diplomado» y la historia usa el sticker de enlace a la agenda. No publicar la promesa vacía. Es el slot de venta del jueves de la semana 1: esa semana no va otra historia de venta. | 5-oct: recortada a 4 frames (sale la encuesta de solo alcance). Auditoría orgánica de septiembre: con 5 frames la retención cae por debajo del 60 %; reunión del 5-oct: máximo 4 por día.",
+            "formato_detalle": "HISTORIAS (4 frames)",
             "red_principal": "instagram_stories",
             "cta_por_red": {
               "instagram": "Responde esta historia con DIPLOMADO.",
               "facebook": "Responde esta historia con DIPLOMADO."
             },
-            "origen": "lanzamiento-tutor-ia-octubre.json"
+            "origen": "lanzamiento-tutor-ia-octubre.json",
+            "formato_publicacion": ""
           }
         },
         {
@@ -4612,10 +4589,10 @@
           "id": "oct-hist-1015",
           "titulo": "«Me interesa, pero no tengo tiempo»",
           "tipo": "venta",
-          "formato_publicacion": "HISTORIAS (5 frames)",
+          "formato_publicacion": "HISTORIAS (4 frames)",
           "idea": {
             "titulo": "«Me interesa, pero no tengo tiempo»",
-            "formato": "HISTORIAS (5 frames)",
+            "formato": "HISTORIAS (4 frames)",
             "desarrollo": "La frase que más escuchamos antes de que alguien empiece Acero."
           },
           "destacada": "🔩 ACERO",
@@ -4627,7 +4604,7 @@
             "grupo": "GRUPO 5 · Historias (IG/FB)",
             "tipo": "venta",
             "formato": "historias",
-            "formato_detalle": "HISTORIAS (5 frames)",
+            "formato_detalle": "HISTORIAS (4 frames)",
             "redes": [
               "instagram",
               "facebook"
@@ -4643,30 +4620,24 @@
             "historias": [
               {
                 "n": 1,
-                "visual": "Cámara: Gabriel a cámara, sin producción, plano medio. 3 s.",
-                "texto": "La frase que más escuchamos antes de que alguien empiece Acero:",
+                "visual": "Captura real de un DM o WhatsApp con esa objeción, con nombre y foto tapados. Si no hay captura real, texto sobre azul: nunca un chat simulado.",
+                "texto": "La frase que más escuchamos antes de que alguien empiece Acero: «Me interesa, pero no tengo tiempo.»",
                 "sticker": "Ninguno."
               },
               {
                 "n": 2,
-                "visual": "Captura real de un DM o WhatsApp con esa objeción, con nombre y foto tapados. Si no hay captura real, texto sobre azul: nunca un chat simulado.",
-                "texto": "«Me interesa, pero no tengo tiempo.»",
-                "sticker": "Ninguno."
-              },
-              {
-                "n": 3,
                 "visual": "Grabación de pantalla real de la plataforma de Acero: una clase grabada reproduciéndose y la barra de progreso del curso (sin precio visible).",
                 "texto": "Las clases están grabadas: una o dos horas al día, a tu ritmo, antes de salir a obra o en la noche. Y si te trabas, el tutor de IA del curso te dice en qué clase está.",
                 "sticker": "ENCUESTA: «¿Ese era tu freno?» · «Sí» / «El mío es otro». A quien marque «El mío es otro» se le escribe por DM a mano: esa es la objeción real."
               },
               {
-                "n": 4,
+                "n": 3,
                 "visual": "Cámara: Gabriel a cámara.",
                 "texto": "Y si hoy no tienes ni una hora libre al día, no es el momento. Prefiero decírtelo.",
                 "sticker": "Ninguno."
               },
               {
-                "n": 5,
+                "n": 4,
                 "visual": "Cierre invertido ámbar.",
                 "texto": "¿Quieres ver el temario y si te calza? Respóndeme ACERO. Te contesta una persona del equipo.",
                 "sticker": "RESPONDER CON PALABRA «ACERO». Llega como DM y se contesta a mano: primero se pregunta en qué trabaja, luego el temario."
@@ -4680,8 +4651,9 @@
               "instagram": "Responde esta historia con ACERO y te contamos cómo es la Especialización.",
               "facebook": "Responde esta historia con ACERO y te contamos cómo es la Especialización."
             },
-            "notas_produccion": "Las respuestas a una historia llegan como DM y ni OpenReply ni GHL las contestan: alguien del equipo responde a mano desde la bandeja, con el nombre de la persona y una pregunta al final (guiones en matriz-viral/HISTORIAS-VENTA.md §4). Nunca precio en el DM del Máster: si lo preguntan, se pasa a la cita. | Los votos de encuesta y quiz y lo que escriben en la caja de preguntas se quedan en el panel de la historia: se revisan el mismo día y se escribe por DM a mano a quien votó o preguntó. | Todo el material es real: capturas o grabaciones de pantalla y cámara de Gabriel. Nada de imágenes generadas. «Texto sobre azul» es un fondo liso #0E2438 con el texto de Instagram, no una imagen. | Único slot de venta de la semana 2. Sin precio, sin cupos, sin «inscríbete». | DM de venta (HISTORIAS-VENTA.md §4, DM 4): preguntar en qué trabaja antes de ofrecer. El precio de Acero solo se da si lo pide, en el DM, nunca en la historia. | Antes de publicar, confirmar con Dayana que el tutor de IA sigue activo en los cursos de Acero y que el acceso sigue sin caducar; si algo cambió, se quita esa frase, no se matiza. | El «una o dos horas al día» sale de las llamadas de venta (COMPRADORES-VS-NO.md): es la respuesta que funcionó con los que compraron. | Guardar en destacada ACERO.",
-            "origen": "calendario-octubre (fase 2)"
+            "notas_produccion": "Las respuestas a una historia llegan como DM y ni OpenReply ni GHL las contestan: alguien del equipo responde a mano desde la bandeja, con el nombre de la persona y una pregunta al final (guiones en matriz-viral/HISTORIAS-VENTA.md §4). Nunca precio en el DM del Máster: si lo preguntan, se pasa a la cita. | Los votos de encuesta y quiz y lo que escriben en la caja de preguntas se quedan en el panel de la historia: se revisan el mismo día y se escribe por DM a mano a quien votó o preguntó. | Todo el material es real: capturas o grabaciones de pantalla y cámara de Gabriel. Nada de imágenes generadas. «Texto sobre azul» es un fondo liso #0E2438 con el texto de Instagram, no una imagen. | Único slot de venta de la semana 2. Sin precio, sin cupos, sin «inscríbete». | DM de venta (HISTORIAS-VENTA.md §4, DM 4): preguntar en qué trabaja antes de ofrecer. El precio de Acero solo se da si lo pide, en el DM, nunca en la historia. | Antes de publicar, confirmar con Dayana que el tutor de IA sigue activo en los cursos de Acero y que el acceso sigue sin caducar; si algo cambió, se quita esa frase, no se matiza. | El «una o dos horas al día» sale de las llamadas de venta (COMPRADORES-VS-NO.md): es la respuesta que funcionó con los que compraron. | Guardar en destacada ACERO. | 5-oct: recortada a 4 frames (el frame 1 se junta con el 2). Auditoría orgánica de septiembre: con 5 frames la retención cae por debajo del 60 %; reunión del 5-oct: máximo 4 por día.",
+            "origen": "calendario-octubre (fase 2)",
+            "formato_publicacion": ""
           }
         },
         {
@@ -4970,10 +4942,10 @@
           "id": "oct-hist-1022",
           "titulo": "El espejo: cuatro bloques",
           "tipo": "venta",
-          "formato_publicacion": "HISTORIAS (5 frames)",
+          "formato_publicacion": "HISTORIAS (4 frames)",
           "idea": {
             "titulo": "El espejo: cuatro bloques",
-            "formato": "HISTORIAS (5 frames)",
+            "formato": "HISTORIAS (4 frames)",
             "desarrollo": "Llevas años modelando bien. Y sigues esperando a que te digan qué modelar."
           },
           "destacada": "🎯 BIM + IA",
@@ -4985,7 +4957,7 @@
             "grupo": "GRUPO 5 · Historias (IG/FB)",
             "tipo": "venta",
             "formato": "historias",
-            "formato_detalle": "HISTORIAS (5 frames)",
+            "formato_detalle": "HISTORIAS (4 frames)",
             "redes": [
               "instagram",
               "facebook"
@@ -5019,12 +4991,6 @@
               },
               {
                 "n": 4,
-                "visual": "Cámara: Gabriel a cámara.",
-                "texto": "El salto que más cuesta no es de software. Es dejar de ejecutar y empezar a decidir.",
-                "sticker": "Ninguno."
-              },
-              {
-                "n": 5,
                 "visual": "Cierre invertido ámbar.",
                 "texto": "Antes de elegir bloque: el diagnóstico BIM, gratis, y una cita con nosotros para ver por dónde te conviene empezar. Respóndeme NIVEL y te mando las dos cosas.",
                 "sticker": "RESPONDER CON PALABRA «NIVEL». Llega como DM y se contesta a mano con el enlace del diagnóstico y el de la agenda."
@@ -5038,8 +5004,9 @@
               "instagram": "Responde esta historia con NIVEL y te mandamos el diagnóstico BIM gratis y la agenda.",
               "facebook": "Responde esta historia con NIVEL y te mandamos el diagnóstico BIM gratis y la agenda."
             },
-            "notas_produccion": "Las respuestas a una historia llegan como DM y ni OpenReply ni GHL las contestan: alguien del equipo responde a mano desde la bandeja, con el nombre de la persona y una pregunta al final (guiones en matriz-viral/HISTORIAS-VENTA.md §4). Nunca precio en el DM del Máster: si lo preguntan, se pasa a la cita. | Los votos de encuesta y quiz y lo que escriben en la caja de preguntas se quedan en el panel de la historia: se revisan el mismo día y se escribe por DM a mano a quien votó o preguntó. | Todo el material es real: capturas o grabaciones de pantalla y cámara de Gabriel. Nada de imágenes generadas. «Texto sobre azul» es un fondo liso #0E2438 con el texto de Instagram, no una imagen. | Único slot de venta de la semana 3. Sin precio, sin reserva, sin «inscríbete». El Máster nunca se cotiza en historia ni en DM: el precio se habla en la cita. | Confirmar con Dayana antes de publicar: (1) si el «diagnóstico BIM» es el Test de Nivel (20 preguntas) o el formulario que se llena al agendar, y (2) el enlace vigente de la agenda del Máster. El texto del frame 5 se ajusta a lo que sea, sin prometer nada que no exista. | Recordatorio de la cita a quien agende: la mitad de los agendados no se presenta (COMPRADORES-VS-NO.md). El DM que manda la agenda pide confirmar día y hora. | Se puede usar el resultado real de la encuesta del Lun 19 en el DM («casi todos votaron X»), nunca en la historia con cifras inventadas. | Guardar en destacada BIM + IA.",
-            "origen": "calendario-octubre (fase 2)"
+            "notas_produccion": "Las respuestas a una historia llegan como DM y ni OpenReply ni GHL las contestan: alguien del equipo responde a mano desde la bandeja, con el nombre de la persona y una pregunta al final (guiones en matriz-viral/HISTORIAS-VENTA.md §4). Nunca precio en el DM del Máster: si lo preguntan, se pasa a la cita. | Los votos de encuesta y quiz y lo que escriben en la caja de preguntas se quedan en el panel de la historia: se revisan el mismo día y se escribe por DM a mano a quien votó o preguntó. | Todo el material es real: capturas o grabaciones de pantalla y cámara de Gabriel. Nada de imágenes generadas. «Texto sobre azul» es un fondo liso #0E2438 con el texto de Instagram, no una imagen. | Único slot de venta de la semana 3. Sin precio, sin reserva, sin «inscríbete». El Máster nunca se cotiza en historia ni en DM: el precio se habla en la cita. | Confirmar con Dayana antes de publicar: (1) si el «diagnóstico BIM» es el Test de Nivel (20 preguntas) o el formulario que se llena al agendar, y (2) el enlace vigente de la agenda del Máster. El texto del frame 5 se ajusta a lo que sea, sin prometer nada que no exista. | Recordatorio de la cita a quien agende: la mitad de los agendados no se presenta (COMPRADORES-VS-NO.md). El DM que manda la agenda pide confirmar día y hora. | Se puede usar el resultado real de la encuesta del Lun 19 en el DM («casi todos votaron X»), nunca en la historia con cifras inventadas. | Guardar en destacada BIM + IA. | 5-oct: recortada a 4 frames (sale el frame de cámara del salto de ejecutar a decidir). Auditoría orgánica de septiembre: con 5 frames la retención cae por debajo del 60 %; reunión del 5-oct: máximo 4 por día.",
+            "origen": "calendario-octubre (fase 2)",
+            "formato_publicacion": ""
           }
         },
         {
@@ -5335,10 +5302,10 @@
           "id": "oct-hist-1029",
           "titulo": "Acero por dentro",
           "tipo": "venta",
-          "formato_publicacion": "HISTORIAS (5 frames)",
+          "formato_publicacion": "HISTORIAS (4 frames)",
           "idea": {
             "titulo": "Acero por dentro",
-            "formato": "HISTORIAS (5 frames)",
+            "formato": "HISTORIAS (4 frames)",
             "desarrollo": "Te abro la Especialización en Acero. Sin filtro."
           },
           "destacada": "🔩 ACERO",
@@ -5350,7 +5317,7 @@
             "grupo": "GRUPO 5 · Historias (IG/FB)",
             "tipo": "venta",
             "formato": "historias",
-            "formato_detalle": "HISTORIAS (5 frames)",
+            "formato_detalle": "HISTORIAS (4 frames)",
             "redes": [
               "instagram",
               "facebook"
@@ -5372,24 +5339,18 @@
               },
               {
                 "n": 2,
-                "visual": "Grabación de pantalla real: recorrido por los cursos y una clase reproduciéndose con Revit, Robot o Advance Steel en pantalla.",
-                "texto": "Cuatro cursos: análisis, diseño, conexiones y proyecto. En Revit, Robot y Advance Steel. Clases grabadas, a tu ritmo.",
+                "visual": "Grabación de pantalla real: recorrido por los cursos y una clase reproduciéndose con Revit, Robot o Advance Steel en pantalla. Cierra con 3 s del tutor de IA del Acero respondiendo.",
+                "texto": "Cuatro cursos: análisis, diseño, conexiones y proyecto. En Revit, Robot y Advance Steel. Clases grabadas, a tu ritmo. Y si te trabas, el tutor de IA del curso te dice en qué clase está.",
                 "sticker": "Ninguno."
               },
               {
                 "n": 3,
-                "visual": "Grabación de pantalla real del tutor de IA del Acero respondiendo una pregunta de conexiones, con la clase citada visible.",
-                "texto": "Y el tutor de IA del curso: le preguntas con tus palabras y te dice en qué clase está. Si no está en las clases, te lo dice.",
-                "sticker": "Ninguno."
-              },
-              {
-                "n": 4,
                 "visual": "Cámara: Gabriel a cámara, plano medio.",
                 "texto": "Te sirve si quieres diseñar y calcular acero en software. No te sirve si lo que buscas es fabricar o soldar mejor.",
                 "sticker": "ENCUESTA: «Me sirve» / «Todavía no es mi momento». A quien vote «Me sirve» se le escribe por DM a mano."
               },
               {
-                "n": 5,
+                "n": 4,
                 "visual": "Cierre invertido ámbar.",
                 "texto": "¿Quieres ver el temario y si calza con tu trabajo? Respóndeme ACERO o escríbenos por WhatsApp. Te contesta una persona.",
                 "sticker": "RESPONDER CON PALABRA «ACERO» (llega como DM y se contesta a mano) + sticker de ENLACE a WhatsApp (wa.me del número de ventas de Acero, el mismo de la campaña de WhatsApp): abre la conversación con el equipo."
@@ -5403,8 +5364,9 @@
               "instagram": "Responde esta historia con ACERO o escríbenos por WhatsApp.",
               "facebook": "Responde esta historia con ACERO o escríbenos por WhatsApp."
             },
-            "notas_produccion": "Las respuestas a una historia llegan como DM y ni OpenReply ni GHL las contestan: alguien del equipo responde a mano desde la bandeja, con el nombre de la persona y una pregunta al final (guiones en matriz-viral/HISTORIAS-VENTA.md §4). Nunca precio en el DM del Máster: si lo preguntan, se pasa a la cita. | Los votos de encuesta y quiz y lo que escriben en la caja de preguntas se quedan en el panel de la historia: se revisan el mismo día y se escribe por DM a mano a quien votó o preguntó. | Todo el material es real: capturas o grabaciones de pantalla y cámara de Gabriel. Nada de imágenes generadas. «Texto sobre azul» es un fondo liso #0E2438 con el texto de Instagram, no una imagen. | Único slot de venta de la semana 4. Sin precio, sin cupos, sin fechas de cierre, sin «inscríbete». | Antes de publicar, confirmar con Dayana: (1) que los cuatro cursos siguen siendo análisis, diseño, conexiones y proyecto, y en Revit, Robot y Advance Steel; (2) que el tutor de IA está activo en los cuatro cursos; (3) el número de WhatsApp de ventas de Acero vigente. Lo que no se confirme, se quita del frame. | Las preguntas de la caja del Mar 27 se contestan por DM; si alguna sirve para todos, se contesta en historia el Vie 30 antes del frame 1 (sin pasar de 5 frames). | DM de venta: preguntar en qué trabaja antes de ofrecer. El precio de Acero solo si lo pide, y en el DM o el WhatsApp. | Guardar en destacada ACERO.",
-            "origen": "calendario-octubre (fase 2)"
+            "notas_produccion": "Las respuestas a una historia llegan como DM y ni OpenReply ni GHL las contestan: alguien del equipo responde a mano desde la bandeja, con el nombre de la persona y una pregunta al final (guiones en matriz-viral/HISTORIAS-VENTA.md §4). Nunca precio en el DM del Máster: si lo preguntan, se pasa a la cita. | Los votos de encuesta y quiz y lo que escriben en la caja de preguntas se quedan en el panel de la historia: se revisan el mismo día y se escribe por DM a mano a quien votó o preguntó. | Todo el material es real: capturas o grabaciones de pantalla y cámara de Gabriel. Nada de imágenes generadas. «Texto sobre azul» es un fondo liso #0E2438 con el texto de Instagram, no una imagen. | Único slot de venta de la semana 4. Sin precio, sin cupos, sin fechas de cierre, sin «inscríbete». | Antes de publicar, confirmar con Dayana: (1) que los cuatro cursos siguen siendo análisis, diseño, conexiones y proyecto, y en Revit, Robot y Advance Steel; (2) que el tutor de IA está activo en los cuatro cursos; (3) el número de WhatsApp de ventas de Acero vigente. Lo que no se confirme, se quita del frame. | Las preguntas de la caja del Mar 27 se contestan por DM; si alguna sirve para todos, se contesta en historia el Vie 30 antes del frame 1 (sin pasar de 5 frames). | DM de venta: preguntar en qué trabaja antes de ofrecer. El precio de Acero solo si lo pide, y en el DM o el WhatsApp. | Guardar en destacada ACERO. | 5-oct: recortada a 4 frames (el frame del tutor se junta con el del recorrido). Auditoría orgánica de septiembre: con 5 frames la retención cae por debajo del 60 %; reunión del 5-oct: máximo 4 por día.",
+            "origen": "calendario-octubre (fase 2)",
+            "formato_publicacion": ""
           }
         },
         {
@@ -6250,7 +6212,8 @@
                 "meta_ads": "Formulario o WhatsApp. Nunca a landing."
               },
               "pilar": "",
-              "origen": "lanzamiento-tutor-ia-octubre.json"
+              "origen": "lanzamiento-tutor-ia-octubre.json",
+              "notas_produccion": " | 5-oct (Dayana): el reel oct-tutor-dip-reel no está grabado. Hasta que exista, este anuncio no sale (o sale solo la versión estática 4:5). Además, la reunión del 5-oct decidió no subir anuncios nuevos de venta hasta probar los de septiembre."
             }
           },
           {
@@ -6416,6 +6379,10 @@
         "Auditoría de septiembre (Meta, 31-ago al 29-sep): $77 gastados entre las tres, 0 leads de formulario y 7 conversaciones. Ese presupuesto pasa a ACERO. Si se quiere pauta para un recurso, se hace con el post del dato de cálculo (el mejor orgánico del año), no con los anuncios actuales."
       ],
       [
+        "8 · Reunión del 5-oct",
+        "Se reactivan los anuncios de septiembre y se pausan todos los de enero a julio. No se suben anuncios NUEVOS de venta hasta probar los actuales, y Gabriel graba solo contenido de valor para el feed. Formulario de ACERO con preguntas que filtren a quien no tiene trabajo ni presupuesto. Ventas pone la fuente a cada oportunidad."
+      ],
+      [
         "REGLA DE ORO",
         "El Máster no lleva precio en ninguna pieza. ACERO lleva $225 solo en pauta y en correo a la lista propia. Un texto por ángulo, en una sola campaña."
       ]
@@ -6468,7 +6435,7 @@
       {
         "nombre": "Guía Revit + ChatGPT",
         "palabra": "CHATGPT",
-        "por_que": "No tiene campaña ni workflow que conteste: nadie recibe nada. Fuera de los CTA hasta que se vuelva a montar."
+        "por_que": "No tiene campaña ni workflow que conteste: nadie recibe nada. La guía se pide con GUIA (OpenReply), que es la palabra que usa el reel del Mié 7."
       }
     ],
     "mapa_cta": [
@@ -6489,8 +6456,13 @@
       },
       {
         "palabra": "DIPLOMADO",
-        "fecha": "Lun 5, Mié 7 (lanzamiento del tutor)",
+        "fecha": "Lun 5 (lanzamiento del tutor; el reel del Mié 7 quedó aplazado)",
         "producto": "Diplomado · montar antes del 5 o CTA a DM"
+      },
+      {
+        "palabra": "GUIA",
+        "fecha": "Mié 7 (reel «Una IA no sabe cuándo no sabe», cambio del 5-oct)",
+        "producto": "Guía Revit + ChatGPT (OpenReply, campaña «Guía Revit») → Máster"
       }
     ]
   },
@@ -6934,6 +6906,128 @@
     }
   ],
   "banco_reserva": [
+    {
+      "id": "oct-tutor-dip-reel",
+      "contenido": {
+        "id": "oct-tutor-dip-reel",
+        "fecha": "Mié 7 oct",
+        "fecha_iso": "2026-10-07",
+        "semana": "Semana 1 (5-11 oct)",
+        "grupo": "GRUPO 1 · Feed principal",
+        "tipo": "lanzamiento",
+        "formato": "reel",
+        "redes": [
+          "instagram",
+          "facebook",
+          "tiktok",
+          "youtube_shorts"
+        ],
+        "audiencia": "prospectos (principal) · alumnos (cierre)",
+        "estado": "APLAZADO · sin grabar",
+        "titulo": "¿Todavía rebobinas la clase?",
+        "eje": "PROMO",
+        "pilar": "Venta blanda · lanzamiento",
+        "hook": "Si todavía rebobinas una clase de dos horas para encontrar dónde explicaron el espectro sísmico…",
+        "guion_columnas": [
+          "tiempo",
+          "plano",
+          "voz",
+          "texto_en_pantalla"
+        ],
+        "guion": [
+          [
+            "0:00-0:03",
+            "A cámara, primer plano, sin intro. [PENDIENTE: quién graba, Gabriel o Dayana]",
+            "Si todavía rebobinas una clase de dos horas para encontrar dónde explicaron el espectro sísmico…",
+            "¿TODAVÍA **REBOBINAS** LA CLASE?"
+          ],
+          [
+            "0:03-0:09",
+            "Pantalla: reproductor de video con la barra arrastrándose adelante y atrás.",
+            "…mira esto. El Diplomado BIM en Estructuras tiene 133 horas de clase, y ahora un tutor de IA que responde con ellas.",
+            "133 HORAS DE CLASE"
+          ],
+          [
+            "0:09-0:19",
+            "Grabación de pantalla del tutor real, sin barra de direcciones. Se escribe la pregunta y aparece la respuesta tal cual.",
+            "Le escribo: ¿cómo creo el espectro sísmico y lo ingreso en Robot? Me manda al Módulo 2, Lección 25, minuto 04:09. Y a la 24 como apoyo.",
+            "M2 · LECCIÓN 25 · **MIN 04:09**"
+          ],
+          [
+            "0:19-0:27",
+            "Pantalla: una pregunta que no está en el temario, con la respuesta real del tutor. [Elegirla en la grabación y comprobar que contesta que no está; si no lo hace, se corta la escena]",
+            "Si le pregunto algo que no está en las clases, me lo dice y me sugiere la asesoría con los instructores. Las cifras de norma tampoco las dicta: me manda a la norma vigente.",
+            "SI NO ESTÁ EN LAS CLASES, **LO DICE**"
+          ],
+          [
+            "0:27-0:34",
+            "A cámara, plano medio.",
+            "No sustituye al instructor. Te ahorra la búsqueda, y ese rato vuelve a ser de estudio.",
+            "TE AHORRA LA **BÚSQUEDA**"
+          ],
+          [
+            "0:34-0:42",
+            "A cámara. CTA en el último tercio del cuadro.",
+            "Si eres alumno, ya lo tienes en tu curso: botón Abrir el Tutor IA. Si no, comenta DIPLOMADO y te cuento cómo es el Diplomado.",
+            "COMENTA **DIPLOMADO**"
+          ]
+        ],
+        "version_tiktok": "Mismo montaje, con el texto «¿TODAVÍA REBOBINAS LA CLASE?» desde el fotograma 0 y el corte a pantalla en el segundo 2. Cierre: «El enlace está en la bio». Sin palabra clave: TikTok no dispara el bot.",
+        "caption": "Sabías que el tema se explicó. No sabías en cuál de las 133 horas.\n\nEl Diplomado BIM en Estructuras ya tiene un Tutor IA: le preguntas con tus palabras y te responde con las clases del propio Diplomado, con la lección y el minuto. Si algo no está en las clases, te lo dice.\n\nAlumnos: botón «Abrir el Tutor IA» dentro de su curso.\n¿Todavía no estás? Comenta DIPLOMADO.\n\n¿Qué le preguntarías primero?\n\n#BIM #IngenieríaEstructural #Revit #RobotStructural #IA #DesignModelingDG",
+        "cta": {
+          "instagram": "Comenta DIPLOMADO y te contamos cómo es el Diplomado.",
+          "facebook": "Comenta DIPLOMADO y te contamos cómo es el Diplomado.",
+          "tiktok": "El enlace está en la bio. ¿Qué le preguntarías primero?",
+          "youtube": "Cómo es el Diplomado: enlace en la descripción.",
+          "linkedin": "El reel vertical NO va a LinkedIn. Allí va la grabación de pantalla en horizontal (ver oct-tutor-dip-li-gabriel)."
+        },
+        "condicion": "5-oct (Dayana): no se grabó para el Mié 7. Pasa al banco de reserva y sale cuando Gabriel lo grabe. Mientras tanto ninguna historia, comunidad ni anuncio lo menciona.",
+        "prompt_imagenes": "Portada del reel 9:16: primer plano a cámara con el texto «¿TODAVÍA REBOBINAS LA CLASE?» en el tercio superior. Fondo real de oficina, pantalla con Robot encendida. Sin casco ni chaleco.",
+        "formato_detalle": "REEL (38-42 s)",
+        "red_principal": "instagram",
+        "cta_por_red": {
+          "instagram": "Comenta DIPLOMADO y te contamos cómo es el Diplomado.",
+          "facebook": "Comenta DIPLOMADO y te contamos cómo es el Diplomado.",
+          "tiktok": "El enlace está en la bio. ¿Qué le preguntarías primero?",
+          "youtube": "Cómo es el Diplomado: enlace en la descripción.",
+          "linkedin": "El reel vertical NO va a LinkedIn. Allí va la grabación de pantalla en horizontal (ver oct-tutor-dip-li-gabriel)."
+        },
+        "guion_reel": [
+          {
+            "tiempo": "0:00-0:03",
+            "accion": "A cámara, primer plano, sin intro. [PENDIENTE: quién graba, Gabriel o Dayana] · En pantalla: ¿TODAVÍA **REBOBINAS** LA CLASE?",
+            "voz": "Si todavía rebobinas una clase de dos horas para encontrar dónde explicaron el espectro sísmico…"
+          },
+          {
+            "tiempo": "0:03-0:09",
+            "accion": "Pantalla: reproductor de video con la barra arrastrándose adelante y atrás. · En pantalla: 133 HORAS DE CLASE",
+            "voz": "…mira esto. El Diplomado BIM en Estructuras tiene 133 horas de clase, y ahora un tutor de IA que responde con ellas."
+          },
+          {
+            "tiempo": "0:09-0:19",
+            "accion": "Grabación de pantalla del tutor real, sin barra de direcciones. Se escribe la pregunta y aparece la respuesta tal cual. · En pantalla: M2 · LECCIÓN 25 · **MIN 04:09**",
+            "voz": "Le escribo: ¿cómo creo el espectro sísmico y lo ingreso en Robot? Me manda al Módulo 2, Lección 25, minuto 04:09. Y a la 24 como apoyo."
+          },
+          {
+            "tiempo": "0:19-0:27",
+            "accion": "Pantalla: una pregunta que no está en el temario, con la respuesta real del tutor. [Elegirla en la grabación y comprobar que contesta que no está; si no lo hace, se corta la escena] · En pantalla: SI NO ESTÁ EN LAS CLASES, **LO DICE**",
+            "voz": "Si le pregunto algo que no está en las clases, me lo dice y me sugiere la asesoría con los instructores. Las cifras de norma tampoco las dicta: me manda a la norma vigente."
+          },
+          {
+            "tiempo": "0:27-0:34",
+            "accion": "A cámara, plano medio. · En pantalla: TE AHORRA LA **BÚSQUEDA**",
+            "voz": "No sustituye al instructor. Te ahorra la búsqueda, y ese rato vuelve a ser de estudio."
+          },
+          {
+            "tiempo": "0:34-0:42",
+            "accion": "A cámara. CTA en el último tercio del cuadro. · En pantalla: COMENTA **DIPLOMADO**",
+            "voz": "Si eres alumno, ya lo tienes en tu curso: botón Abrir el Tutor IA. Si no, comenta DIPLOMADO y te cuento cómo es el Diplomado."
+          }
+        ],
+        "notas_produccion": "La palabra DIPLOMADO NO existe hoy ni en OpenReply ni en GHL (cotejo de fuentes/openreply/campanas.json). Si no está montada y probada el día de publicar, el CTA de prospectos cambia a: «Escríbenos por DM y te contamos cómo es el Diplomado» y la historia usa el sticker de enlace a la agenda. No publicar la promesa vacía. La captura de la clase bajo la respuesta solo sale en el video si ya está activa el día de grabar; no se anuncia en la voz.",
+        "origen": "lanzamiento-tutor-ia-octubre.json"
+      }
+    },
     {
       "id": "ago-derivas-deformaciones",
       "contenido": {
