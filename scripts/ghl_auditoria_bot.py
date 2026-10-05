@@ -34,7 +34,7 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
-from collections import Counter
+from collections import Counter, defaultdict
 from datetime import datetime, timezone
 
 TOKEN = os.environ.get("GHL_TOKEN", "").strip()
@@ -60,10 +60,11 @@ OBJECIONES = {
     "sin_presupuesto": r"(no tengo (el )?(dinero|presupuesto|plata)|sin presupuesto|desemplead|no trabajo|sin trabajo)",
     "tiempo": r"(no tengo tiempo|poco tiempo|trabajo todo el d[ií]a|horario)",
     "confianza": r"(confia|estafa|seguro que|garant[ií]a|es real|referencias|no me da confianza|confiabilidad)",
-    "es_un_bot": r"(\bbot\b|robot|no es una persona|eres una ia|inteligencia artificial me|persona real|humano)",
+    # «Robot» es Robot Structural Analysis: no cuenta como «es un bot».
+    "es_un_bot": r"(\bbot\b|\bun robot\b|no es una persona|eres una ia|eres (un )?humano|persona real|hablar con (una )?persona|hablar con alguien)",
     "clases_grabadas": r"(grabad|en vivo|online en vivo|clases en directo|profesor real|tutor real)",
-    "lo_pienso": r"(lo pienso|lo voy a pensar|lo veo|despu[eé]s te (escribo|aviso|confirmo)|m[aá]s adelante|luego te)",
-    "pide_descuento": r"(descuento|beca|promoci[oó]n|rebaja|oferta)",
+    "lo_pienso": r"(lo pienso|lo voy a pensar|despu[eé]s te (escribo|aviso|confirmo)|m[aá]s adelante|luego te)",
+    "pide_descuento": r"(descuento|beca|rebaja|precio especial|m[aá]s barato)",
     "cuotas": r"(cuotas|pagar en partes|financ|mensualidad|a plazos)",
 }
 
@@ -137,6 +138,7 @@ def main():
     convs = conversaciones(a.limite)
     fuentes, cierres_ultimo, cierres_todos = Counter(), Counter(), Counter()
     objeciones, respuesta_a_objecion = Counter(), Counter()
+    ejemplos_objecion = defaultdict(list)
     largos_bot, frases_bot = [], Counter()
     revisadas = termina_nuestro = compra = con_llamada = con_pago = 0
     tras_objecion_largo, tras_objecion_pregunta, tras_objecion_n = [], 0, 0
@@ -174,6 +176,9 @@ def main():
             else:
                 obs = clasifica(cuerpo, OBJECIONES)
                 objeciones.update(obs)
+                for o in obs:
+                    if len(ejemplos_objecion[o]) < 6:
+                        ejemplos_objecion[o].append(limpiar(cuerpo, nombres)[:200])
                 if obs:
                     sig = next((x for x in ms[i + 1:] if (x.get("direction") or "").lower() == "outbound"), None)
                     if sig:
@@ -223,6 +228,7 @@ def main():
         "como_terminan_los_mensajes_del_bot": dict(cierres_todos.most_common()),
         "ultimo_mensaje_nuestro_de_cada_conversacion": dict(cierres_ultimo.most_common()),
         "objeciones": dict(objeciones.most_common()),
+        "ejemplos_de_objecion": {k: v for k, v in ejemplos_objecion.items()},
         "respuesta_justo_despues_de_una_objecion": {
             "n": tras_objecion_n,
             "largo_mediana": sorted(tras_objecion_largo)[len(tras_objecion_largo) // 2] if tras_objecion_largo else None,
