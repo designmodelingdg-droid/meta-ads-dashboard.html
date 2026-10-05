@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-05T03:31Z",
+ "generado": "2026-10-05T03:38Z",
  "nota": "Agregados y ejemplos anonimizados (nombre del contacto, correos, teléfonos y enlaces tapados). Muestra de las conversaciones más recientes, no el total.",
  "conversaciones_traidas": 400,
  "conversaciones_revisadas": 239,
@@ -64,28 +64,93 @@
   "menciona_precio": 8
  },
  "objeciones": {
-  "es_un_bot": 155,
+  "pide_descuento": 43,
   "lo_pienso": 42,
-  "pide_descuento": 36,
   "confianza": 12,
   "clases_grabadas": 11,
   "tiempo": 8,
   "sin_presupuesto": 6,
   "cuotas": 5,
+  "es_un_bot": 3,
   "precio_caro": 2
  },
+ "ejemplos_de_objecion": {
+  "clases_grabadas": [
+   "👤 [nombre] ([telefono]) Ing. [nombre] qué programa??.la Capacitación es en vivo??. Le solicitó más informacion",
+   "Cuando inicia ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: Chatea con nosotros 🔗 Description: Evita fallas estructurales desde la base del proyecto. Aprende a diseñar y analizar cimentaciones superf",
+   "Cual el costo?, no hay sesiones en vivo?",
+   "O todas quedan siempre grabadas?",
+   "Son grabadas las clases para poder repasar más adelante.",
+   "El curso es grabado?"
+  ],
+  "pide_descuento": [
+   "Tienes algún descuento extra?",
+   "¡Hola! Deseo más información sobre el Curso de Revit con Inteligencia Artificial ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: Automatización Inteligente en Revit 🔗 Description: 🚀 ¿Sigues haciendo ta",
+   "¡Hola! Deseo más información sobre el Curso de Revit con Inteligencia Artificial ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: Automatización Inteligente en Revit 🔗 Description: 🚀 ¿Sigues haciendo ta",
+   "Hola, me interesa la especialización de estructuras de Acero ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: 💥 Precio especial: $199 USD por tiempo limitado. 🔗 Description: 📲 Escríbenos y te enviamos e",
+   "Hola, me interesa la especialización de estructuras de Acero ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: 💥 Precio especial: $199 USD por tiempo limitado. 🔗 Description: ¿Quieres dominar el diseño d",
+   "*Headline:* 🔥 ¡Precio especial: $199 USD! *Source URL:* [enlace] Hola, me interesa la especialización de estructuras de Acero"
+  ],
+  "sin_presupuesto": [
+   "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿Has cursado estudios universitarios en áreas relacionadas con construcción/ingeniería/arquitectura?: No ¿A qué ru",
+   "Desempleado",
+   "No tengo dinero muchas gracias será para otra ocasión Received on 📱[Design Modeling [nombre] ]",
+   "No, estoy desempleado por eso por ahora sólo estoy viendo para en cuanto me llegue dinero acceder al curso",
+   "Actual mente no trabajo en proyectos de acero, quisiera reforzar el conocimiento que tengo para poder brindar un mejor servicio",
+   "Full name: [nombre] Phone number: [telefono] Email: [correo] ¿A qué rubro perteneces?: Arquitecto ¿Has cursado estudios universitarios en áreas relacionadas con construcción/ingeniería/arquitectura?: "
+  ],
+  "confianza": [
+   "Sí, me interesa la Especialización en Cimentaciones. ¿Pueden darme info? ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: Chatea con nosotros 🔗 Description: Muchos errores estructurales no empiezan en l",
+   "1 Juan 2 24 Lo que habéis oído desde el principio, permanezca en vosotros. Si lo que habéis oído desde el principio permanece en vosotros, también vosotros permaneceréis en el Hijo y en el Padre. 25 Y",
+   "1 Juan 3 19 Y en esto conocemos que somos de la verdad, y aseguraremos nuestros corazones delante de él; 20 pues si nuestro corazón nos reprende, mayor que nuestro corazón es Dios, y él sabe todas las",
+   "1 Juan 4 15 Todo aquel que confiese que Jesús es el Hijo de Dios, Dios permanece en él, y él en Dios. 16 Y nosotros hemos conocido y creído el amor que Dios tiene para con nosotros. Dios es amor; y el",
+   "Sí, me interesa: la oferta de Planos BIM Arquitectónicos y Estructurales ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: Chatea con nosotros 🔗 Description: ¿Cuántas veces entregaste un plano y luego de",
+   "Sí, me interesa: la oferta de Planos BIM Arquitectónicos y Estructurales ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: Chatea con nosotros 🔗 Description: ¿Cuántas veces entregaste un plano y luego de"
+  ],
+  "lo_pienso": [
+   "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿A qué te dedicas?: Arquitecto(a) Con las estructuras de acero, ¿qué quieres hacer?: Diseñarlas, modelarlas o calc",
+   "Son grabadas las clases para poder repasar más adelante.",
+   "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿Cuándo quieres empezar?: Más adelante / solo estoy viendo Full name: [nombre] Con las estructuras de acero, ¿qué ",
+   "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿A qué te dedicas?: Ingeniero(a) civil o estructural Full name: [nombre] Phone number: [telefono] Con las estructu",
+   "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿A qué te dedicas?: Ingeniero(a) civil o estructural Con las estructuras de acero, ¿qué quieres hacer?: Diseñarlas",
+   "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿Cuándo quieres empezar?: Más adelante / solo estoy viendo Full name: [nombre] Con las estructuras de acero, ¿qué "
+  ],
+  "tiempo": [
+   "Ambas especializaciones son *100% a tu ritmo*, no hay fechas fijas ni horarios. Acceso de por vida.",
+   "↪︎ Image Cuáles son los horarios de clases",
+   "Cuales serian los horarios?",
+   "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿A qué te dedicas?: Proyectista, dibujante o modelador BIM Full name: [nombre] Phone number: [telefono] Con las es",
+   "Déjame revisar diferencia de horario con México",
+   "No hay horarios a respetar, es conforme al tiempo que podamos ingressr"
+  ],
+  "precio_caro": [
+   "Revit tengo conocimiento básicos Los demás programas medios nos explicaron en una materia de concreto estructural pero no específicamente acero",
+   "No se me acomoda, lo siento un poco caro"
+  ],
+  "cuotas": [
+   "Ok, perfecto",
+   "Algun mejor precio de los $ 199,",
+   "Este pero con un mejor precio,",
+   "Tipo $ 75 dos cuotas",
+   "Si por mensualidad"
+  ],
+  "es_un_bot": [
+   "Yo sé que me está escribiendo un bot",
+   "No es una persona",
+   "Puedo hablar con alguien, mediante una llamada .?"
+  ]
+ },
  "respuesta_justo_despues_de_una_objecion": {
-  "n": 217,
-  "largo_mediana": 101,
-  "terminan_en_pregunta": 46,
+  "n": 123,
+  "largo_mediana": 102,
+  "terminan_en_pregunta": 25,
   "tipos": {
-   "sin_pregunta_ni_paso": 152,
-   "pregunta": 46,
-   "menciona_precio": 18,
-   "da_opciones": 9,
+   "sin_pregunta_ni_paso": 87,
+   "pregunta": 25,
+   "menciona_precio": 11,
+   "da_opciones": 10,
    "temario_o_pdf": 9,
-   "propone_llamada": 2,
-   "revisalo_y_me_cuentas": 1,
+   "propone_llamada": 1,
    "enlace_de_pago": 1
   }
  },
@@ -108,7 +173,7 @@
   ],
   [
    "Hola [nombre] 👋 ¿Sigues interesado en la Especialización en Acero Estructural? Puedo enviarte el temario completo ahora mismo con todos los módulos detallados. ¿Te lo comparto?",
-   77
+   82
   ],
   [
    "¿Qué tal, [nombre]? Quería saber si lograste revisar la información que te envié sobre la Especialización en Acero Estructural. Cualquier duda sobre el temario, horarios o inversión, te la resuelvo por aquí mismo.",
@@ -143,11 +208,11 @@
    20
   ],
   [
-   "🎓 Al completar cada curso obtendrás certificaciones oficiales de Autodesk y Design Modeling Academy.",
+   "🎓 Al completar cada curso obtendrás certificaciones oficiales de Autodesk y Design Modeling [nombre]",
    19
   ],
   [
-   "Buenos días 👋 te saluda tu asesor comercial asignado de Design Modeling. Estoy para acompañarte en todo el proceso.",
+   "Buenos días 👋 te saluda tu asesor comercial asignado de Design Modeling. [nombre] para acompañarte en todo el proceso.",
    18
   ],
   [
@@ -215,7 +280,7 @@
    11
   ],
   [
-   "¡Hola ! 😊 No olvides agendar tu cita para el Máster BIM+IA 🏗️, ¡una excelente oportunidad para transformar tus proyectos! 🎁 Descarga gratis el PDF “Personal Project IA Pro”. 👉🏼 [enlace] Agenda tu cita aquí 👉🏼 [enlace] Si no pudiste asistir antes, ¿qué pasó? ¡Estoy aquí para ayudarte! 😊",
+   "¡Hola ! 😊 No olvides agendar tu cita para el Máster BIM+IA 🏗️, ¡una excelente oportunidad para transformar tus proyectos! 🎁 Descarga gratis el PDF “Personal Project IA Pro”. 👉🏼 [enlace] [nombre] tu cita aquí 👉🏼 [enlace] Si no pudiste asistir antes, ¿qué pasó? ¡Estoy aquí para ayudarte! 😊",
    11
   ],
   [
@@ -258,19 +323,19 @@
    "final": [
     {
      "de": "bot",
-     "texto": "Con una duración de 3 meses cada Bloque 🔁 Sent from another device ([telefono] ) 🔁"
+     "texto": "Con una duración de 3 meses cada Bloque"
     },
     {
      "de": "bot",
-     "texto": "Y el Bloque de BIM Magnament tiene un costo de $600 con una duración de dos meses 🔁 Sent from another device ([telefono] ) 🔁"
+     "texto": "Y el Bloque de BIM Magnament tiene un costo de $600 con una duración de dos meses"
     },
     {
      "de": "bot",
-     "texto": "El valor expresado es en dólares americanos 🔁 Sent from another device ([telefono] ) 🔁"
+     "texto": "El valor expresado es en dólares americanos"
     },
     {
      "de": "bot",
-     "texto": "Tienes alguno en mente o cuál te llama más la atención? 🔁 Sent from another device ([telefono] ) 🔁"
+     "texto": "Tienes alguno en mente o cuál te llama más la atención?"
     }
    ]
   },
@@ -280,19 +345,19 @@
    "final": [
     {
      "de": "persona",
-     "texto": "👤 Ing MIGUEL GARCIA ROMANI ([telefono]) Buenas noches 📱 [Received on Design Modeling Academy ([telefono])]"
+     "texto": "👤 [nombre] ([telefono]) Buenas noches"
     },
     {
      "de": "bot",
-     "texto": "↩️ Replied to: Buenas noches ↪️ Message: Buenas noches Miguel en qué podemos ayudarte? 🔁 Sent from another device ([telefono] ) 🔁"
+     "texto": "Buenas noches [nombre] en qué podemos ayudarte?"
     },
     {
      "de": "persona",
-     "texto": "👤 Ing MIGUEL GARCIA ROMANI ([telefono]) Interesado curso de [nombre] 📱 [Received on Design Modeling Academy ([telefono])]"
+     "texto": "👤 [nombre] ([telefono]) Interesado curso de [nombre]"
     },
     {
      "de": "bot",
-     "texto": "↩️ Replied to: Interesado curso de [nombre] ↪️ Message: Claro con mucho gusto te envío la información por privado 🔁 Sent from another device ([telefono] ) 🔁"
+     "texto": "Claro con mucho gusto te envío la información por privado"
     }
    ]
   },
@@ -314,7 +379,7 @@
     },
     {
      "de": "bot",
-     "texto": "Que tal [nombre], quedé esperando tu confirmación para darte los accesos, te quedó alguna duda para ingresar a la especialización? 🔁 Sent from another device ([telefono] ) 🔁"
+     "texto": "Que tal [nombre], quedé esperando tu confirmación para darte los accesos, te quedó alguna duda para ingresar a la especialización?"
     }
    ]
   },
@@ -328,7 +393,7 @@
     },
     {
      "de": "bot",
-     "texto": "Hola [nombre] 👋 ¿Sigues interesado en la *Especialización en Acero Estructural?* Puedo enviarte el temario completo ahora mismo con todos los módulos detallados. *¿Te lo comparto?* Design Modeling Academy"
+     "texto": "Hola [nombre] 👋 ¿Sigues interesado en la *Especialización en Acero Estructural?* Puedo enviarte el temario completo ahora mismo con todos los módulos detallados. *¿Te lo comparto?* Design Modeling [nombre]"
     },
     {
      "de": "persona",
@@ -386,11 +451,11 @@
    "final": [
     {
      "de": "bot",
-     "texto": "Hola Colega! Qué bueno que te interesó lo de BIM + IA. Aquí está lo que te prometí 👇🏼 📄 [enlace] ✅ Están todas nuestras herramientas gratis en un solo sitio — calculadora de zapatas, test de nivel BIM, ebooks y nuestros artículos de BIM+IA "
+     "texto": "Hola [nombre] ! Qué bueno que te interesó lo de BIM + IA. Aquí está lo que te prometí 👇🏼 📄 [enlace] ✅ Están todas nuestras herramientas gratis en un solo sitio — calculadora de zapatas, test de nivel BIM, ebooks y nuestros artículos de BIM+"
     },
     {
      "de": "bot",
-     "texto": "Hola Colega! Qué bueno que te interesó lo de BIM + IA. Aquí está lo que te prometí 👇🏼 📄 [enlace] ✅ Están todas nuestras herramientas gratis en un solo sitio — calculadora de zapatas, test de nivel BIM, ebooks y nuestros artículos de BIM+IA "
+     "texto": "Hola [nombre] ! Qué bueno que te interesó lo de BIM + IA. Aquí está lo que te prometí 👇🏼 📄 [enlace] ✅ Están todas nuestras herramientas gratis en un solo sitio — calculadora de zapatas, test de nivel BIM, ebooks y nuestros artículos de BIM+"
     },
     {
      "de": "bot",
@@ -448,7 +513,7 @@
    "final": [
     {
      "de": "persona",
-     "texto": "Gracias! Me llegará por e-mail? 📱 [Received on Design Modeling Academy ([telefono])]"
+     "texto": "Gracias! Me llegará por e-mail?"
     },
     {
      "de": "bot",
@@ -456,7 +521,7 @@
     },
     {
      "de": "persona",
-     "texto": "Listo 📱 [Received on Design Modeling Academy ([telefono])]"
+     "texto": "Listo"
     },
     {
      "de": "bot",
@@ -482,7 +547,7 @@
     },
     {
      "de": "bot",
-     "texto": "Buenas tardes Colega 👋 Este será mi último mensaje, cuéntame ¿sigues interesado en estudiar con nosotros? ¿Si o No?"
+     "texto": "Buenas tardes [nombre] 👋 Este será mi último mensaje, cuéntame ¿sigues interesado en estudiar con nosotros? ¿Si o No?"
     }
    ]
   },
@@ -500,7 +565,7 @@
     },
     {
      "de": "persona",
-     "texto": "¿Puedes aceptar mi invitación así que puedo obtener un regalo gratis? [enlace] 📱 [Received on Design Modeling Academy ([telefono])]"
+     "texto": "¿Puedes aceptar mi invitación así que puedo obtener un regalo gratis? [enlace]"
     },
     {
      "de": "bot",
@@ -580,19 +645,19 @@
    "final": [
     {
      "de": "persona",
-     "texto": "Tengo límite de tiempo para mis clases? 📱 [Received on Design Modeling Academy ([telefono])]"
+     "texto": "Tengo límite de tiempo para mis clases?"
     },
     {
      "de": "persona",
-     "texto": "No he podido entrar 🥹 📱 [Received on Design Modeling Academy ([telefono])]"
+     "texto": "No he podido entrar 🥹"
     },
     {
      "de": "persona",
-     "texto": "Y escuché algo de clases en línea 📱 [Received on Design Modeling Academy ([telefono])]"
+     "texto": "Y escuché algo de clases en línea"
     },
     {
      "de": "persona",
-     "texto": "O todas quedan siempre grabadas? 📱 [Received on Design Modeling Academy ([telefono])]"
+     "texto": "O todas quedan siempre grabadas?"
     }
    ]
   },
@@ -602,7 +667,7 @@
    "final": [
     {
      "de": "bot",
-     "texto": "Design Modeling Academy Adicional, por pertenecer a la comunidad de Design Modeling Academy, te comparto el acceso a la 𝗕𝗼𝗹𝘀𝗮 𝗱𝗲 𝗧𝗿𝗮𝗯𝗮𝗷𝗼 𝗜𝗻𝘁𝗲𝗿𝗻𝗮𝗰𝗶𝗼𝗻𝗮𝗹 𝗕𝗜𝗠 👇🏼"
+     "texto": "Design Modeling [nombre] , por pertenecer a la comunidad de Design Modeling [nombre] , te comparto el acceso a la 𝗕𝗼𝗹𝘀𝗮 𝗱𝗲 𝗧𝗿𝗮𝗯𝗮𝗷𝗼 𝗜𝗻𝘁𝗲𝗿𝗻𝗮𝗰𝗶𝗼𝗻𝗮𝗹 𝗕𝗜𝗠 👇🏼"
     },
     {
      "de": "bot",
@@ -610,7 +675,7 @@
     },
     {
      "de": "persona",
-     "texto": ">AUDIO< 📱 [Received on Design Modeling Academy ([telefono])]"
+     "texto": ">AUDIO<"
     },
     {
      "de": "bot",
@@ -734,7 +799,7 @@
    "final": [
     {
      "de": "bot",
-     "texto": "¿Qué tal, Josue? Quería saber si lograste revisar la información que te envié sobre la Especialización en Acero Estructural. Cualquier duda sobre el temario, horarios o inversión, te la resuelvo por aquí mismo."
+     "texto": "¿Qué tal, [nombre] ? Quería saber si lograste revisar la información que te envié sobre la Especialización en Acero Estructural. Cualquier duda sobre el temario, horarios o inversión, te la resuelvo por aquí mismo."
     },
     {
      "de": "bot",
@@ -800,7 +865,7 @@
    "final": [
     {
      "de": "persona",
-     "texto": "Ustedes hacen con Autodesk structures q es eso 📱 [Received on Design Modeling Academy ([telefono])]"
+     "texto": "Ustedes hacen con Autodesk structures q es eso"
     },
     {
      "de": "bot",
@@ -822,7 +887,7 @@
    "final": [
     {
      "de": "bot",
-     "texto": "¡Hola Aldo! 👋"
+     "texto": "¡Hola [nombre] ! 👋"
     },
     {
      "de": "bot",
@@ -866,7 +931,7 @@
    "final": [
     {
      "de": "bot",
-     "texto": "¿Qué tal, TC? Quería saber si lograste revisar la información que te envié sobre la Especialización en Acero Estructural. Cualquier duda sobre el temario, horarios o inversión, te la resuelvo por aquí mismo."
+     "texto": "¿Qué tal, [nombre] ? Quería saber si lograste revisar la información que te envié sobre la Especialización en Acero Estructural. Cualquier duda sobre el temario, horarios o inversión, te la resuelvo por aquí mismo."
     },
     {
      "de": "bot",
