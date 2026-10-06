@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-05",
+ "generado": "2026-10-06",
  "ventana_series_dias": 30,
  "fuente": "OpenReply — base propia (Postgres), solo lectura",
  "nota_privacidad": "Solo agregados. No se lee `commenterName`, ni `commentText`, ni `accessToken`. Ningún dato personal sale de la base.",
@@ -63,11 +63,11 @@
    "cuenta": "design_modeling_dg",
    "enviados": 18,
    "fallidos": 0,
-   "entregados_sin_confirmar": 0,
+   "entregados_sin_confirmar": 1,
    "saltados": 0,
    "pendientes": 0,
    "primer_envio": "2026-09-29T19:28:07.163",
-   "ultimo_envio": "2026-10-04T16:22:54.099",
+   "ultimo_envio": "2026-10-06T01:06:57.716",
    "clics": 11,
    "clics_limpios": 11,
    "clics_con_bots": 0,
@@ -94,21 +94,21 @@
    "creada": "2026-09-22T03:01:54.579",
    "actualizada": "2026-09-22T03:01:54.579",
    "cuenta": "design_modeling_dg",
-   "enviados": 9,
+   "enviados": 10,
    "fallidos": 2,
    "entregados_sin_confirmar": 0,
    "saltados": 0,
    "pendientes": 0,
    "primer_envio": "2026-09-22T03:09:17.287",
-   "ultimo_envio": "2026-09-28T03:28:51.023",
+   "ultimo_envio": "2026-10-05T20:16:50.979",
    "clics": 3,
    "clics_limpios": 3,
    "clics_con_bots": 0,
    "enlaces_rastreados": 1,
    "mide_clics": true,
-   "clics_por_dm": 0.33,
-   "ctr": 0.3333,
-   "lectura_clics": "3 clics limpios sobre 9 DM enviados (33%). Son aperturas, no personas: la misma persona puede contar varias veces."
+   "clics_por_dm": 0.3,
+   "ctr": 0.3,
+   "lectura_clics": "3 clics limpios sobre 10 DM enviados (30%). Son aperturas, no personas: la misma persona puede contar varias veces."
   },
   {
    "id": "cmuhd3vwn000004l7gm7ypdtn",
@@ -289,7 +289,7 @@
    "actualizada": "2026-09-22T03:33:57.816",
    "cuenta": "design_modeling_dg",
    "enviados": 2,
-   "fallidos": 4,
+   "fallidos": 5,
    "entregados_sin_confirmar": 1,
    "saltados": 0,
    "pendientes": 0,
@@ -453,21 +453,21 @@
    "campana_activa": true,
    "enviados": 18,
    "fallidos": 0,
-   "entregados_sin_confirmar": 0,
+   "entregados_sin_confirmar": 1,
    "saltados": 0,
    "primer_envio": "2026-09-29T19:28:07.163",
-   "ultimo_envio": "2026-10-04T16:22:54.099"
+   "ultimo_envio": "2026-10-06T01:06:57.716"
   },
   {
    "palabra": "PARTE",
    "campana": "TUTORIAL PLANO BIM PARTE 2",
    "campana_activa": true,
-   "enviados": 9,
+   "enviados": 10,
    "fallidos": 2,
    "entregados_sin_confirmar": 0,
    "saltados": 0,
    "primer_envio": "2026-09-22T03:09:17.287",
-   "ultimo_envio": "2026-09-28T03:28:51.023"
+   "ultimo_envio": "2026-10-05T20:16:50.979"
   },
   {
    "palabra": "MEMORIA",
@@ -573,7 +573,7 @@
    "campana": "CHECKLIST NAVISWORKS",
    "campana_activa": true,
    "enviados": 0,
-   "fallidos": 2,
+   "fallidos": 3,
    "entregados_sin_confirmar": 0,
    "saltados": 0,
    "primer_envio": null,
@@ -699,6 +699,13 @@
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=Ai_4576QS-0dr3rcZSG1-VD]",
    "veces": 1,
    "ultima_vez": "2026-09-29T19:52:31.131"
+  },
+  {
+   "estado": "FAILED",
+   "pero_si_se_entrego": true,
+   "motivo": "MetaApiError 1: An unknown error has occurred. (/v25.0/17841404048578200/messages) [code=1 sub=- type=OAuthException trace=ADi07oqxKQLjI2nAPkL9y33]",
+   "veces": 1,
+   "ultima_vez": "2026-10-06T01:06:53.126"
   },
   {
    "estado": "FAILED",
@@ -836,6 +843,13 @@
   {
    "estado": "FAILED",
    "pero_si_se_entrego": false,
+   "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=AQeCqMzI6cHpkwiXzX4qLAW]",
+   "veces": 1,
+   "ultima_vez": "2026-10-06T10:18:37.858"
+  },
+  {
+   "estado": "FAILED",
+   "pero_si_se_entrego": false,
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=ALlwIzvj5qa8tGmpYhUV7YH]",
    "veces": 1,
    "ultima_vez": "2026-09-30T00:32:12.382"
@@ -916,20 +930,6 @@
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=ALkIibRiGiUh5--6E48gILl]",
    "veces": 1,
    "ultima_vez": "2026-09-30T13:36:52.562"
-  },
-  {
-   "estado": "FAILED",
-   "pero_si_se_entrego": false,
-   "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=AX_ZwDb3S89nB8rdOvgSM8y]",
-   "veces": 1,
-   "ultima_vez": "2026-09-30T03:02:51.449"
-  },
-  {
-   "estado": "FAILED",
-   "pero_si_se_entrego": false,
-   "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=Aa9TcbBrrQ4lwB9wijdDySM]",
-   "veces": 1,
-   "ultima_vez": "2026-09-30T12:16:06.13"
   }
  ],
  "enlaces": [
@@ -1244,14 +1244,13 @@
   {
    "fecha": "2026-10-04",
    "enviados": 3
+  },
+  {
+   "fecha": "2026-10-05",
+   "enviados": 1
   }
  ],
  "seguidores": [
-  {
-   "cuenta": "design_modeling_dg",
-   "fecha": "2026-09-05",
-   "seguidores": 80539
-  },
   {
    "cuenta": "design_modeling_dg",
    "fecha": "2026-09-06",
@@ -1401,6 +1400,11 @@
    "cuenta": "design_modeling_dg",
    "fecha": "2026-10-05",
    "seguidores": 81005
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-10-06",
+   "seguidores": 81022
   }
  ],
  "workflows_ghl": {
@@ -1419,8 +1423,8 @@
      }
     ],
     "en_borrador": [],
-    "bot_total": 176,
-    "bot_nuevos_7d": 8
+    "bot_total": 177,
+    "bot_nuevos_7d": 9
    },
    "ACERO": {
     "publicados": [
@@ -1443,7 +1447,7 @@
       "estado": "draft"
      }
     ],
-    "bot_total": 195,
+    "bot_total": 196,
     "bot_nuevos_7d": 18
    },
    "NIVEL": {
@@ -1480,8 +1484,8 @@
      }
     ],
     "en_borrador": [],
-    "bot_total": 152,
-    "bot_nuevos_7d": 104
+    "bot_total": 166,
+    "bot_nuevos_7d": 118
    },
    "DYNAMO": {
     "publicados": [
@@ -1506,7 +1510,7 @@
     "bot_nuevos_7d": 0
    }
   },
-  "embudo_generado": "2026-10-05T12:07Z"
+  "embudo_generado": "2026-10-06T11:15Z"
  },
  "cotejo_con_la_matriz": [
   {
@@ -1636,8 +1640,8 @@
    "campanas": [
     "TUTORIAL PLANO BIM PARTE 2"
    ],
-   "dms_enviados": 9,
-   "lectura": "Viva: 9 DM enviados."
+   "dms_enviados": 10,
+   "lectura": "Viva: 10 DM enviados."
   },
   {
    "palabra": "PARTE2",
