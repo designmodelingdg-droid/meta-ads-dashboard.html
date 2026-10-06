@@ -3,7 +3,7 @@
  "subtitulo": "Del lunes 5 al domingo 1 de noviembre · calendarios por grupo, misma información adaptada a cada canal · escrita para vender Máster y Especialización en ACERO",
  "reglas_del_mes": [
   "REGLA DE ORO: todos los grupos comparten la misma información la misma semana, adaptada a cada canal. El feed del lunes alimenta comunidades, historias, LinkedIn y el correo de la semana.",
-  "FEED: 19 piezas · formato 7 reels / 8 carruseles / 4 posts (40/40/20) · intención 10 problema / 3 solución / 6 objeción o testimonio (50/20/30, del análisis de compradores del 29-sep).",
+  "FEED: 20 piezas · formato 7 reels / 8 carruseles / 5 posts (40/40/20) · intención 10 problema / 4 solución / 6 objeción o testimonio (50/20/30, del análisis de compradores del 29-sep).",
   "A QUIÉN LE HABLAMOS: cada pieza nombra a un perfil comprador de COMPRADORES-VS-NO.md. Si no le habla a ninguno, no entra.",
   "EL PATRÓN: acusar un hábito concreto (8,61 comentarios por 1.000 vistas contra 0,54) o dar un dato de cálculo verificable (DM168: 130 comentarios, 611 guardados). Nada de «la IA te va a reemplazar» (0 comentarios en julio).",
   "POST PLANO = SOLO CON DATO VERIFICABLE, con su fuente en las notas de producción.",
@@ -14,6 +14,7 @@
   "BIM e IA NUNCA como palabra de un recurso: son el bot de ventas del Máster (el checklist de Navisworks falló 3 de 5).",
   "DYNAMO fuera de los CTA de octubre: 0 comentarios en su reel y falla en OpenReply.",
   "LOS DOS FORMATOS GANADORES DE SEPTIEMBRE se repiten: el dato de cálculo verificable (cuantía mínima: 44.589 vistas, 146 comentarios, 163 seguidores) y el tutorial paso a paso con palabra (plano 2D → BIM: 99 comentarios, 47 DM). Anunciar un producto («ahora tiene X») nunca va solo: siempre detrás de un problema.",
+  "CAMBIOS DEL 6-OCT: Daniela viaja y no se graban videos nuevos hasta que vuelva. El Mié 7 sale el reel de valor 5 de septiembre («Una IA no sabe cuándo no sabe»). Testimonio de Acero al Mar 13 y reel de COTIZA al Mié 28; ranking al Vie 23; post de clases grabadas al Mié 14. Las historias de la semana 1 se corren un día y ninguna promociona un reel que no sale ese día.",
   "CAMBIOS DEL 5-OCT (revisión semanal, auditoría orgánica de septiembre y reunión de cierre): historias de 4 frames como máximo; cada dato de cálculo cierra con palabra de recurso; los posts del recurso se cuidan también en Facebook (192 comentarios del post de MEMORIA); el reel del tutor queda aplazado hasta que se grabe y en su lugar sale «Una IA no sabe cuándo no sabe», que no se promociona en historias.",
   "UNA venta por semana, el jueves, en historias: 8 tutor · 15 objeción de ACERO · 22 espejo del Máster · 29 ACERO por dentro.",
   "EL MÁSTER NUNCA LLEVA PRECIO. ACERO lleva $225 solo en pauta y en correo a la lista propia.",
@@ -82,10 +83,10 @@
    "para": "Gabriel"
   },
   {
-   "tarea": "Día de grabación 1: reels del 13, 14, 20 y 21 (+ tablero físico del ranking).",
-   "desbloquea": "Semanas 2 y 3 del feed",
-   "cuando": "Jue 8-oct",
-   "para": "Gabriel"
+   "tarea": "PAUSA DE GRABACIÓN (6-oct): Daniela viaja y no se graban videos nuevos hasta que vuelva. Quedan por grabar: testimonio o su reserva (Mar 13), reels del 20 y 21, ranking (Vie 23, con tablero físico), reel del 27 y reel de COTIZA (Mié 28). Si al volver no da el tiempo, se reemplazan por piezas que no necesiten cámara.",
+   "desbloquea": "Semanas 2 a 4 del feed",
+   "cuando": "cuando vuelva Daniela",
+   "para": "Gabriel y Daniela"
   },
   {
    "tarea": "Día de grabación 2: reels del 27 y 28 (testimonio o pieza de reserva) + capturas de Robot para el carrusel del 29.",
@@ -112,9 +113,9 @@
    "para": "Patricio"
   },
   {
-   "tarea": "Crear la campaña COTIZA en OpenReply atada al post justo después de publicar (y la de Facebook en GHL); probar con una cuenta ajena.",
+   "tarea": "Crear la campaña COTIZA en OpenReply atada al carrusel del Jue 15 al publicarlo (y la de Facebook en GHL); probar con una cuenta ajena. El Mié 28 se le añade el reel.",
    "desbloquea": "Que el comentario COTIZA reciba el DM",
-   "cuando": "13 y 15-oct, al publicar",
+   "cuando": "15-oct al publicar, y 28-oct",
    "para": "Dayana (las campañas de OpenReply las hace ella)"
   },
   {
@@ -709,7 +710,7 @@
      "producto": "Acero",
      "cta": "Comenta ACERO",
      "estado": "COMPLETA",
-     "nota": "Post con dato de cálculo verificable (el formato que más guarda la cuenta). En FB sale además oct-tutor-dip-post-fb."
+     "nota": "Post con dato de cálculo verificable (el formato que más guarda la cuenta). El post de clases grabadas (oct-tutor-dip-post-fb) pasó al Mié 14."
     },
     {
      "fecha": "Lun 12",
@@ -729,29 +730,29 @@
      "fecha": "Mar 13",
      "fecha_iso": "2026-10-13",
      "semana": "Semana 2 (12-18 oct)",
-     "id": "oct-cotiza-reel",
-     "titulo": "¿Cuánto cobras por hora cuando cobras 5 dólares por m²?",
-     "tipo": "lead magnet",
-     "formato_publicacion": "REEL (25-30 s)",
-     "intencion": "problema",
-     "producto": "Cotizador",
-     "cta": "Comenta COTIZA",
-     "estado": "POR GRABAR",
-     "nota": "EXTRA lead magnet (martes). COTIZA se monta en OpenReply justo después de publicar."
+     "id": "oct-testimonio-acero-reel",
+     "titulo": "Testimonio de un alumno de Acero",
+     "tipo": "testimonio",
+     "formato_publicacion": "REEL (45-60 s)",
+     "intencion": "testimonio",
+     "producto": "Acero",
+     "cta": "Comenta ACERO",
+     "estado": "POR CONSEGUIR ALUMNO",
+     "nota": "CAMBIO 6-oct: pasa del Mié 28 al Mar 13 (intercambio con el reel de COTIZA). Alumno real con permiso por escrito; si no se consigue o no se puede grabar (Daniela de viaje), sale la pieza de reserva descrita en la pieza."
     },
     {
      "fecha": "Mié 14",
      "fecha_iso": "2026-10-14",
      "semana": "Semana 2 (12-18 oct)",
-     "id": "oct-ranking-software-estructural-reel",
-     "titulo": "Ranking de software estructural 2026: ¿AutoCAD en la última fila?",
-     "tipo": "valor",
-     "formato_publicacion": "REEL (25-30 s)",
-     "intencion": "problema",
-     "producto": "Máster",
-     "cta": "Comenta NIVEL",
-     "estado": "POR GRABAR",
-     "nota": "Ranking con tablero físico. Graba Gabriel."
+     "id": "oct-tutor-dip-post-fb",
+     "titulo": "Volver a encontrar dónde se explicó algo",
+     "tipo": "lanzamiento",
+     "formato_publicacion": "POST (1 imagen: captura real) · Instagram y Facebook",
+     "intencion": "solución",
+     "producto": "Diplomado",
+     "cta": "Comenta DIPLOMADO (si no está montada: DM)",
+     "estado": "COMPLETA",
+     "nota": "CAMBIO 6-oct: el post de clases grabadas pasa del Vie 9 al Mié 14 y sale en Instagram y Facebook, porque el reel del ranking se movió al Vie 23."
     },
     {
      "fecha": "Jue 15",
@@ -841,6 +842,20 @@
      "fecha": "Vie 23",
      "fecha_iso": "2026-10-23",
      "semana": "Semana 3 (19-25 oct)",
+     "id": "oct-ranking-software-estructural-reel",
+     "titulo": "Ranking de software estructural 2026: ¿AutoCAD en la última fila?",
+     "tipo": "valor",
+     "formato_publicacion": "REEL (25-30 s)",
+     "intencion": "problema",
+     "producto": "Máster",
+     "cta": "Comenta NIVEL",
+     "estado": "POR GRABAR",
+     "nota": "CAMBIO 6-oct: pasa del Mié 14 al Vie 23. Ranking con tablero físico; se graba cuando vuelva Daniela."
+    },
+    {
+     "fecha": "Vie 23",
+     "fecha_iso": "2026-10-23",
+     "semana": "Semana 3 (19-25 oct)",
      "id": "oct-ang3-bim-se-exige-post",
      "titulo": "Perdió el concurso antes de presentarse",
      "tipo": "problema",
@@ -883,15 +898,15 @@
      "fecha": "Mié 28",
      "fecha_iso": "2026-10-28",
      "semana": "Semana 4 (26 oct-1 nov)",
-     "id": "oct-testimonio-acero-reel",
-     "titulo": "Testimonio de un alumno de Acero",
-     "tipo": "testimonio",
-     "formato_publicacion": "REEL (45-60 s)",
-     "intencion": "testimonio",
-     "producto": "Acero",
-     "cta": "Comenta ACERO",
-     "estado": "POR CONSEGUIR ALUMNO",
-     "nota": "Alumno real con permiso. Si el 21-oct no hay, sale la pieza de reserva descrita en la pieza."
+     "id": "oct-cotiza-reel",
+     "titulo": "¿Cuánto cobras por hora cuando cobras 5 dólares por m²?",
+     "tipo": "lead magnet",
+     "formato_publicacion": "REEL (25-30 s)",
+     "intencion": "problema",
+     "producto": "Cotizador",
+     "cta": "Comenta COTIZA",
+     "estado": "POR GRABAR",
+     "nota": "CAMBIO 6-oct: pasa del Mar 13 al Mié 28 (intercambio con el testimonio). COTIZA ya se lanzó el Mar 13 (comunidades y LinkedIn) y el Jue 15 (carrusel): este reel se suma a la campaña que exista. Se graba cuando vuelva Daniela."
     },
     {
      "fecha": "Jue 29",
@@ -1432,8 +1447,8 @@
    ],
    "calendario": [
     {
-     "fecha": "Lun 5",
-     "fecha_iso": "2026-10-05",
+     "fecha": "Mar 6",
+     "fecha_iso": "2026-10-06",
      "semana": "Semana 1 (5-11 oct)",
      "id": "oct-hist-1005",
      "titulo": "216 videos y una duda",
@@ -1447,8 +1462,8 @@
      "destacada": "🎯 BIM + IA"
     },
     {
-     "fecha": "Mar 6",
-     "fecha_iso": "2026-10-06",
+     "fecha": "Mié 7",
+     "fecha_iso": "2026-10-07",
      "semana": "Semana 1 (5-11 oct)",
      "id": "oct-hist-1006",
      "titulo": "Sus preguntas, en el tutor",
@@ -1460,21 +1475,6 @@
       "desarrollo": "Martes de grabación. Y una de sus preguntas, sin editar."
      },
      "destacada": "👥 COMUNIDAD"
-    },
-    {
-     "fecha": "Mié 7",
-     "fecha_iso": "2026-10-07",
-     "semana": "Semana 1 (5-11 oct)",
-     "id": "oct-hist-1007",
-     "titulo": "¿En qué módulo estaba?",
-     "tipo": "lanzamiento",
-     "formato_publicacion": "HISTORIAS (4 frames)",
-     "idea": {
-      "titulo": "¿En qué módulo estaba?",
-      "formato": "HISTORIAS (4 frames)",
-      "desarrollo": "Levanta la mano si alguna vez volviste a ver una clase entera para encontrar un minuto."
-     },
-     "destacada": "🎯 BIM + IA"
     },
     {
      "fecha": "Jue 8",
@@ -1525,29 +1525,29 @@
      "fecha": "Mar 13",
      "fecha_iso": "2026-10-13",
      "semana": "Semana 2 (12-18 oct)",
-     "id": "oct-cotiza-historias",
-     "titulo": "¿Cuánto cobras por m²?",
-     "tipo": "lead magnet",
-     "formato_publicacion": "historias",
+     "id": "oct-hist-1028",
+     "titulo": "«¿Me sirve si vengo de obra?»",
+     "tipo": "testimonio",
+     "formato_publicacion": "HISTORIAS (4 frames)",
      "idea": {
-      "titulo": "¿Cuánto cobras por m²?",
-      "formato": "historias",
-      "desarrollo": "¿Cuánto cobras por m² de diseño estructural?"
+      "titulo": "«¿Me sirve si vengo de obra?»",
+      "formato": "HISTORIAS (4 frames)",
+      "desarrollo": "«¿Me sirve si vengo de obra?»"
      },
-     "destacada": "🎁 HERRAMIENTAS"
+     "destacada": "⭐ ALUMNOS"
     },
     {
      "fecha": "Mié 14",
      "fecha_iso": "2026-10-14",
      "semana": "Semana 2 (12-18 oct)",
-     "id": "oct-hist-1014",
-     "titulo": "¿Dónde pondrías AutoCAD?",
-     "tipo": "valor",
+     "id": "oct-hist-1007",
+     "titulo": "¿En qué módulo estaba?",
+     "tipo": "lanzamiento",
      "formato_publicacion": "HISTORIAS (4 frames)",
      "idea": {
-      "titulo": "¿Dónde pondrías AutoCAD?",
+      "titulo": "¿En qué módulo estaba?",
       "formato": "HISTORIAS (4 frames)",
-      "desarrollo": "¿Dónde pondrías AutoCAD?"
+      "desarrollo": "Levanta la mano si alguna vez volviste a ver una clase entera para encontrar un minuto."
      },
      "destacada": "🎯 BIM + IA"
     },
@@ -1645,11 +1645,11 @@
      "fecha_iso": "2026-10-23",
      "semana": "Semana 3 (19-25 oct)",
      "id": "oct-hist-1023",
-     "titulo": "Fuera antes de presentar",
+     "titulo": "¿Dónde pondrías AutoCAD? · Fuera antes de presentar",
      "tipo": "problema",
      "formato_publicacion": "HISTORIAS (4 frames)",
      "idea": {
-      "titulo": "Fuera antes de presentar",
+      "titulo": "¿Dónde pondrías AutoCAD? · Fuera antes de presentar",
       "formato": "HISTORIAS (4 frames)",
       "desarrollo": "Lo dejaron fuera antes de abrir su propuesta."
      },
@@ -1689,16 +1689,16 @@
      "fecha": "Mié 28",
      "fecha_iso": "2026-10-28",
      "semana": "Semana 4 (26 oct-1 nov)",
-     "id": "oct-hist-1028",
-     "titulo": "«¿Me sirve si vengo de obra?»",
-     "tipo": "testimonio",
-     "formato_publicacion": "HISTORIAS (4 frames)",
+     "id": "oct-cotiza-historias",
+     "titulo": "¿Cuánto cobras por m²?",
+     "tipo": "lead magnet",
+     "formato_publicacion": "historias",
      "idea": {
-      "titulo": "«¿Me sirve si vengo de obra?»",
-      "formato": "HISTORIAS (4 frames)",
-      "desarrollo": "«¿Me sirve si vengo de obra?»"
+      "titulo": "¿Cuánto cobras por m²?",
+      "formato": "historias",
+      "desarrollo": "¿Cuánto cobras por m² de diseño estructural?"
      },
-     "destacada": "⭐ ALUMNOS"
+     "destacada": "🎁 HERRAMIENTAS"
     },
     {
      "fecha": "Jue 29",
@@ -1739,12 +1739,12 @@
    {
     "nombre": "Cotizador de Honorarios Estructurales",
     "palabra": "COTIZA",
-    "estado": "Funnel en GHL montado y probado por Dayana (30-sep). Entra en el workflow de recursos de Ester (rama COTIZADOR: acceso-cotizador-honorarios, correo de acceso, comunidad y oportunidad en NUEVO LEAD MAGNET) y en su workflow propio (lead-cotizador, aviso interno, membresía y secuencia S5). OpenReply se monta justo después de publicar el reel del 13 y el carrusel del 15. Falta volver a pegar ghl-landing.html con el formulario nativo.",
+    "estado": "Funnel en GHL montado y probado por Dayana (30-sep). Entra en el workflow de recursos de Ester (rama COTIZADOR: acceso-cotizador-honorarios, correo de acceso, comunidad y oportunidad en NUEVO LEAD MAGNET) y en su workflow propio (lead-cotizador, aviso interno, membresía y secuencia S5). OpenReply se monta al publicar el carrusel del Jue 15 (el reel pasó al Mié 28, cambio del 6-oct). Falta volver a pegar ghl-landing.html con el formulario nativo.",
     "piezas": [
-     "oct-cotiza-reel",
-     "oct-cotiza-historias",
      "oct-cotiza-carrusel",
-     "oct-blog-cobrar-diseno-estructural"
+     "oct-blog-cobrar-diseno-estructural",
+     "oct-cotiza-reel",
+     "oct-cotiza-historias"
     ],
     "puente": "Especialización en Acero / Diplomado en Estructuras (secuencia de correo S5)"
    }
@@ -1786,22 +1786,22 @@
   "mapa_cta": [
    {
     "palabra": "NIVEL",
-    "fecha": "Jue 8 (historia del creador), Lun 12, Mié 14, Lun 19, Mar 20, Mié 21, Jue 22, Vie 23, Vie 30",
+    "fecha": "Jue 8 (historia del creador), Lun 12, Lun 19, Mar 20, Mié 21, Jue 22, Vie 23 (ranking y post), Vie 30",
     "producto": "Máster"
    },
    {
     "palabra": "ACERO",
-    "fecha": "Vie 9, Vie 16, Lun 26, Mar 27, Mié 28, Jue 29",
+    "fecha": "Vie 9, Mar 13 (testimonio), Vie 16, Lun 26, Mar 27, Jue 29",
     "producto": "Acero"
    },
    {
     "palabra": "COTIZA",
-    "fecha": "Mar 13, Jue 15 (+ historias Mar 13 y blog Sáb 17)",
+    "fecha": "Mar 13 (comunidades y LinkedIn), Jue 15 (carrusel), Sáb 17 (blog), Mié 28 (reel e historias)",
     "producto": "Cotizador → Acero/Diplomado"
    },
    {
     "palabra": "DIPLOMADO",
-    "fecha": "Lun 5 (lanzamiento del tutor; el reel del Mié 7 quedó aplazado)",
+    "fecha": "Lun 5 (lanzamiento del tutor) y Mié 14 (post de clases grabadas)",
     "producto": "Diplomado · montar antes del 5 o CTA a DM"
    },
    {
@@ -1835,7 +1835,6 @@
      "oct-hist-1007",
      "oct-tutor-dip-historias",
      "oct-hist-1012",
-     "oct-hist-1014",
      "oct-hist-1019",
      "oct-hist-1022",
      "oct-hist-1023",
@@ -1962,7 +1961,7 @@
    "segmento": "Dos plantillas. RAMA A (Acero): leads de ACERO, ZAPATA y COTIZA sin compra que respondieron «diseñar, modelar o calcular en software»; EXCLUIR a quien respondió «fabricar, soldar o montar» y a los alumnos de Acero. RAMA B (Diplomado): leads del Módulo 1 gratis del Diplomado y leads del Máster que dijeron NO a la reserva; EXCLUIR alumnos del Diplomado. Nadie recibe las dos ramas.",
    "objetivo": "Lo caro no es el curso",
    "cuerpo": "Hola, {{contact.first_name}}:\n\nCuando alguien nos dice que no se forma por dinero, casi siempre usa la misma frase: «cuando me paguen».\n\nEs una razón real. El flujo de caja de un ingeniero independiente es irregular, y nadie debería endeudarse por un curso.\n\nPero hay otro costo que no llega en factura. La nave que dijiste que no porque no podías calcularla. El proyecto que le pasaste a otro, que la próxima vez se lo piden directamente a él.\n\nEse costo no se ve en el mes. Se ve al final del año, sumando lo que no entró.\n\n[RAMA A · Acero]\n\nSi quieres calcular tú lo que hoy le pasas a otro, la Especialización en Diseño Estructural BIM en Acero es el camino corto: 4 cursos en Revit, Robot y Advance Steel, 100 % asincrónica, con acceso que no caduca y un tutor de IA entrenado con las clases.\n\n[RAMA B · Diplomado]\n\nSi lo que buscas es especializarte en estructuras con BIM de principio a fin, el Diplomado BIM en Estructuras cubre acero y hormigón sismorresistente, cimentaciones, documentación BIM y presupuestos. Y tiene un tutor de IA que te dice la lección y el minuto donde se explicó cada tema.\n\n[CIERRE COMÚN]\n\nY si hoy no llegas a fin de mes, no te inscribas. Empieza por lo gratis y vuelve cuando puedas. Te seguimos mandando recursos.\n\nSi tienes dudas sobre cuál te conviene, responde este correo. Te contesta una persona del equipo.\n\nUn abrazo,\n\nEquipo Design Modeling Academy\n\n[SOLO RAMA B] PD: si prefieres verlo primero, el Módulo 1 del Diplomado es gratuito: https://funnel.dgdesignmodeling.com/acceso-gratis-modulo-diplomado-bim-form",
-   "condicion": "SIN PRECIO (el precio de Acero solo va en el correo del Jue 15). La rama A menciona el tutor solo si el botón está en los 4 cursos de Acero; si no, se borra «y un tutor de IA entrenado con las clases». Si el testimonio del Mié 28 salió con alumno real y permiso, se puede añadir antes del cierre común una línea con enlace al reel; si salió el reserva, no. Sin cupos ni fechas de inicio."
+   "condicion": "SIN PRECIO (el precio de Acero solo va en el correo del Jue 15). La rama A menciona el tutor solo si el botón está en los 4 cursos de Acero; si no, se borra «y un tutor de IA entrenado con las clases». Si el testimonio del Mar 13 salió con alumno real y permiso, se puede añadir antes del cierre común una línea con enlace al reel; si salió el reserva, no. Sin cupos ni fechas de inicio."
   }
  ],
  "auditoria_previa": {
@@ -2004,7 +2003,7 @@
   "El detalle operativo está en checklist_tareas, con responsable.",
   "Qué funciona y de dónde sale: HISTORICO-JUL-SEP.md y COMPRADORES-VS-NO.md."
  ],
- "resumen_cierre": "Octubre por grupos: 19 piezas de feed escritas para vender Máster y ACERO, 1 lead magnet nuevo (COTIZA) y 4 de respaldo, historias diarias con 1 venta por semana, comunidades, 4 blogs, LinkedIn en 3 cuentas, correos semanales y una pauta que primero corrige lo que hizo perder leads en septiembre.",
+ "resumen_cierre": "Octubre por grupos: 20 piezas de feed escritas para vender Máster y ACERO, 1 lead magnet nuevo (COTIZA) y 4 de respaldo, historias diarias con 1 venta por semana, comunidades, 4 blogs, LinkedIn en 3 cuentas, correos semanales y una pauta que primero corrige lo que hizo perder leads en septiembre.",
  "pie": "Design Modeling Academy · Matriz de contenido octubre 2026 (5 oct – 1 nov) · construida sobre la matriz viral (métricas reales de Instagram vía Meta Graph API), el histórico jul-sep y el análisis de quién compra y quién no.",
  "artefactos": {
   "artefacto": "https://claude.ai/artifact/6Q8f77WzYEqSMExS1h9Mx3",

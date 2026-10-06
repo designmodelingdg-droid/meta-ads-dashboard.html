@@ -2,14 +2,14 @@
   "_meta": {
     "titulo": "Matriz de contenido — Design Modeling Academy — octubre 2026",
     "periodo": "Del lunes 5 al domingo 1 de noviembre",
-    "generado": "2026-10-05",
+    "generado": "2026-10-06",
     "como_se_regenera": "python3 matriz-viral/matriz/calendario-octubre.py && python3 scripts/build_matriz_mes.py --mes 2026-10",
     "origen": "calendario-octubre.json (orden) + guiones-completos.json (contenido de cada pieza)",
     "fuente_de_datos": "Métricas de Instagram por Meta Graph API (matriz.json, Action «Métricas semanales») y Apify para referentes; histórico en historico-2026.json; compradores en COMPRADORES-VS-NO.md."
   },
   "reglas_del_mes": [
     "REGLA DE ORO: todos los grupos comparten la misma información la misma semana, adaptada a cada canal. El feed del lunes alimenta comunidades, historias, LinkedIn y el correo de la semana.",
-    "FEED: 19 piezas · formato 7 reels / 8 carruseles / 4 posts (40/40/20) · intención 10 problema / 3 solución / 6 objeción o testimonio (50/20/30, del análisis de compradores del 29-sep).",
+    "FEED: 20 piezas · formato 7 reels / 8 carruseles / 5 posts (40/40/20) · intención 10 problema / 4 solución / 6 objeción o testimonio (50/20/30, del análisis de compradores del 29-sep).",
     "A QUIÉN LE HABLAMOS: cada pieza nombra a un perfil comprador de COMPRADORES-VS-NO.md. Si no le habla a ninguno, no entra.",
     "EL PATRÓN: acusar un hábito concreto (8,61 comentarios por 1.000 vistas contra 0,54) o dar un dato de cálculo verificable (DM168: 130 comentarios, 611 guardados). Nada de «la IA te va a reemplazar» (0 comentarios en julio).",
     "POST PLANO = SOLO CON DATO VERIFICABLE, con su fuente en las notas de producción.",
@@ -20,6 +20,7 @@
     "BIM e IA NUNCA como palabra de un recurso: son el bot de ventas del Máster (el checklist de Navisworks falló 3 de 5).",
     "DYNAMO fuera de los CTA de octubre: 0 comentarios en su reel y falla en OpenReply.",
     "LOS DOS FORMATOS GANADORES DE SEPTIEMBRE se repiten: el dato de cálculo verificable (cuantía mínima: 44.589 vistas, 146 comentarios, 163 seguidores) y el tutorial paso a paso con palabra (plano 2D → BIM: 99 comentarios, 47 DM). Anunciar un producto («ahora tiene X») nunca va solo: siempre detrás de un problema.",
+    "CAMBIOS DEL 6-OCT: Daniela viaja y no se graban videos nuevos hasta que vuelva. El Mié 7 sale el reel de valor 5 de septiembre («Una IA no sabe cuándo no sabe»). Testimonio de Acero al Mar 13 y reel de COTIZA al Mié 28; ranking al Vie 23; post de clases grabadas al Mié 14. Las historias de la semana 1 se corren un día y ninguna promociona un reel que no sale ese día.",
     "CAMBIOS DEL 5-OCT (revisión semanal, auditoría orgánica de septiembre y reunión de cierre): historias de 4 frames como máximo; cada dato de cálculo cierra con palabra de recurso; los posts del recurso se cuidan también en Facebook (192 comentarios del post de MEMORIA); el reel del tutor queda aplazado hasta que se grabe y en su lugar sale «Una IA no sabe cuándo no sabe», que no se promociona en historias.",
     "UNA venta por semana, el jueves, en historias: 8 tutor · 15 objeción de ACERO · 22 espejo del Máster · 29 ACERO por dentro.",
     "EL MÁSTER NUNCA LLEVA PRECIO. ACERO lleva $225 solo en pauta y en correo a la lista propia.",
@@ -88,10 +89,10 @@
       "para": "Gabriel"
     },
     {
-      "tarea": "Día de grabación 1: reels del 13, 14, 20 y 21 (+ tablero físico del ranking).",
-      "desbloquea": "Semanas 2 y 3 del feed",
-      "cuando": "Jue 8-oct",
-      "para": "Gabriel"
+      "tarea": "PAUSA DE GRABACIÓN (6-oct): Daniela viaja y no se graban videos nuevos hasta que vuelva. Quedan por grabar: testimonio o su reserva (Mar 13), reels del 20 y 21, ranking (Vie 23, con tablero físico), reel del 27 y reel de COTIZA (Mié 28). Si al volver no da el tiempo, se reemplazan por piezas que no necesiten cámara.",
+      "desbloquea": "Semanas 2 a 4 del feed",
+      "cuando": "cuando vuelva Daniela",
+      "para": "Gabriel y Daniela"
     },
     {
       "tarea": "Día de grabación 2: reels del 27 y 28 (testimonio o pieza de reserva) + capturas de Robot para el carrusel del 29.",
@@ -118,9 +119,9 @@
       "para": "Patricio"
     },
     {
-      "tarea": "Crear la campaña COTIZA en OpenReply atada al post justo después de publicar (y la de Facebook en GHL); probar con una cuenta ajena.",
+      "tarea": "Crear la campaña COTIZA en OpenReply atada al carrusel del Jue 15 al publicarlo (y la de Facebook en GHL); probar con una cuenta ajena. El Mié 28 se le añade el reel.",
       "desbloquea": "Que el comentario COTIZA reciba el DM",
-      "cuando": "13 y 15-oct, al publicar",
+      "cuando": "15-oct al publicar, y 28-oct",
       "para": "Dayana (las campañas de OpenReply las hace ella)"
     },
     {
@@ -359,7 +360,7 @@
               "tiktok": "Pregunta abierta, sin palabra clave",
               "youtube_shorts": "Pregunta abierta, sin palabra clave"
             },
-            "notas_produccion": "5-oct (Dayana): reemplaza al reel del tutor, que no se grabó. La palabra es GUIA (no CHATGPT, que no la contesta nadie). Las dos campañas de GUIA en OpenReply escuchan reels viejos: hay que añadir este reel a «Guía Revit» (que además dispara por DM) y dejar que solo una campaña lo escuche. Este reel NO se promociona en historias (decisión de Dayana).",
+            "notas_produccion": "5-oct (Dayana): reemplaza al reel del tutor, que no se grabó. La palabra es GUIA (no CHATGPT, que no la contesta nadie). Las dos campañas de GUIA en OpenReply escuchan reels viejos: hay que añadir este reel a «Guía Revit» (que además dispara por DM) y dejar que solo una campaña lo escuche. Este reel NO se promociona en historias (decisión de Dayana). | 6-oct: es el reel de valor 5 de septiembre (reel-limite-ia), que quedó pendiente; sale el Mié 7 con CTA GUIA.",
             "origen": "cambio del 5-oct (Dayana)"
           }
         },
@@ -471,7 +472,7 @@
           "producto": "Acero",
           "cta": "Comenta ACERO",
           "estado": "COMPLETA",
-          "nota": "Post con dato de cálculo verificable (el formato que más guarda la cuenta). En FB sale además oct-tutor-dip-post-fb.",
+          "nota": "Post con dato de cálculo verificable (el formato que más guarda la cuenta). El post de clases grabadas (oct-tutor-dip-post-fb) pasó al Mié 14.",
           "contenido": {
             "id": "oct-dato-deriva-post",
             "fecha": "Vie 9 oct",
@@ -616,22 +617,22 @@
           "fecha": "Mar 13",
           "fecha_iso": "2026-10-13",
           "semana": "Semana 2 (12-18 oct)",
-          "id": "oct-cotiza-reel",
-          "titulo": "¿Cuánto cobras por hora cuando cobras 5 dólares por m²?",
-          "tipo": "lead magnet",
-          "formato_publicacion": "REEL (25-30 s)",
-          "intencion": "problema",
-          "producto": "Cotizador",
-          "cta": "Comenta COTIZA",
-          "estado": "POR GRABAR",
-          "nota": "EXTRA lead magnet (martes). COTIZA se monta en OpenReply justo después de publicar.",
+          "id": "oct-testimonio-acero-reel",
+          "titulo": "Testimonio de un alumno de Acero",
+          "tipo": "testimonio",
+          "formato_publicacion": "REEL (45-60 s)",
+          "intencion": "testimonio",
+          "producto": "Acero",
+          "cta": "Comenta ACERO",
+          "estado": "POR CONSEGUIR ALUMNO",
+          "nota": "CAMBIO 6-oct: pasa del Mié 28 al Mar 13 (intercambio con el reel de COTIZA). Alumno real con permiso por escrito; si no se consigue o no se puede grabar (Daniela de viaje), sale la pieza de reserva descrita en la pieza.",
           "contenido": {
-            "id": "oct-cotiza-reel",
+            "id": "oct-testimonio-acero-reel",
             "fecha": "Mar 13 oct",
             "fecha_iso": "2026-10-13",
             "semana": "Semana 2 (12-18 oct)",
             "grupo": "GRUPO 1 · Feed principal",
-            "tipo": "lead magnet",
+            "tipo": "testimonio",
             "formato": "reel",
             "redes": [
               "instagram",
@@ -639,15 +640,37 @@
               "tiktok",
               "youtube_shorts"
             ],
-            "producto": "Lead magnet · Cotizador (puente a Acero y Diplomado Estructuras)",
-            "audiencia": "ingenieros que cotizan diseños estructurales por su cuenta y cobran por m² sin saber si les alcanza",
-            "estado": "POR GRABAR",
-            "titulo": "¿Cuánto cobras por hora cuando cobras 5 dólares por m²?",
-            "eje": "NÚCLEO-BIM",
-            "pilar": "Lead magnet · acusar el hábito (cobrar por m² a ciegas)",
-            "angulo": "4 · Los proyectos que rechazas / objeción de dinero",
-            "reparto": "50 % problema",
-            "hook": "¿Cuánto cobras por hora cuando cobras 5 dólares por m²? Casi nadie lo sabe.",
+            "producto": "Acero",
+            "audiencia": "prospectos de Acero que dudan si el programa se aplica a su trabajo",
+            "estado": "POR CONSEGUIR ALUMNO",
+            "titulo": "Testimonio de un alumno de Acero",
+            "eje": "PRUEBA-SOCIAL",
+            "pilar": "Testimonio real",
+            "angulo": "4 u 8, según el alumno",
+            "reparto": "30 % objeciones y testimonios",
+            "hook": "(Lo dice el alumno con sus palabras. Se elige en edición la frase más fuerte de su respuesta a la pregunta 2.)",
+            "entrevista": [
+              {
+                "n": 1,
+                "pregunta": "¿A qué te dedicabas antes de entrar y qué te frenaba con el acero?"
+              },
+              {
+                "n": 2,
+                "pregunta": "¿Hubo algún proyecto que tuviste que rechazar o pasarle a otro por no poder calcularlo?"
+              },
+              {
+                "n": 3,
+                "pregunta": "¿Qué dudabas antes de inscribirte? (tiempo, dinero, si te iba a servir)"
+              },
+              {
+                "n": 4,
+                "pregunta": "¿Qué es lo primero que aplicaste en tu trabajo?"
+              },
+              {
+                "n": 5,
+                "pregunta": "¿Qué le dirías a alguien que está donde tú estabas?"
+              }
+            ],
             "guion_columnas": [
               "tiempo",
               "plano",
@@ -656,257 +679,136 @@
             ],
             "guion": [
               [
-                "0:00-0:03",
-                "A cámara, Gabriel. Sin intro.",
-                "¿Cuánto cobras por hora cuando cobras 5 dólares por m²? Casi nadie lo sabe.",
-                "¿CUÁNTO COBRAS **POR HORA**?"
+                "0:00-0:04",
+                "Alumno a cámara (videollamada grabada o video propio vertical).",
+                "La frase más fuerte de la respuesta 2.",
+                "Frase clave en ámbar"
               ],
               [
-                "0:03-0:09",
-                "Pantalla: el cotizador, tarjeta 1 llenándose (tarifa mínima).",
-                "Primero tu piso: lo que quieres ganar más lo que te cuesta trabajar, dividido entre las horas que de verdad cobras.",
-                "TU PISO · **17,31 USD/h**"
+                "0:04-0:20",
+                "Alumno + recortes de pantallazos REALES de su trabajo (con permiso).",
+                "Respuestas 1 y 3, recortadas.",
+                "Nombre de pila · país · profesión"
               ],
               [
-                "0:09-0:16",
-                "Pantalla: la tabla de entregables y las revisiones.",
-                "Después, las horas del proyecto: modelo, diseño, planos, memoria y las revisiones que siempre piden.",
-                "**122 HORAS**"
+                "0:20-0:40",
+                "Pantallazos REALES de lo que aplicó.",
+                "Respuesta 4.",
+                "LO QUE APLICÓ"
               ],
               [
-                "0:16-0:22",
-                "Pantalla: la tarjeta del resultado en rojo.",
-                "Con 5 dólares por m², esta vivienda te paga 14,71 la hora. Te faltan 317 dólares.",
-                "14,71 USD/h · **NO CUBRE**"
+                "0:40-0:50",
+                "Alumno a cámara.",
+                "Respuesta 5.",
+                "—"
               ],
               [
-                "0:22-0:30",
-                "A cámara. CTA en el último tercio.",
-                "El cotizador es gratis y te arma la propuesta en PDF. Comenta COTIZA y te lo mando.",
-                "COMENTA **COTIZA**"
+                "0:50-0:55",
+                "Placa final.",
+                "(sin voz)",
+                "Comenta **ACERO**"
               ]
             ],
-            "version_tiktok": "Sin palabra clave. Cierre: «¿Cuánto cobras tú por m²? Te leo.»",
-            "caption": "¿Cuánto cobras por hora cuando cobras 5 dólares por m²?\n\nHicimos la cuenta con una vivienda de 3 niveles de 120 m²: con un piso de 17,31 USD por hora, a 5 dólares por m² el proyecto te paga 14,71 la hora. Faltaban 317 dólares, y salían de tu bolsillo.\n\nEl precio por m² no te dice si ganas o pierdes. Te lo dicen tus horas, y las que cobras son menos de las que trabajas.\n\nArmamos un cotizador gratis: calcula tu tarifa mínima, las horas del proyecto según lo que entregas y te arma la propuesta en PDF con alcance, lo que no incluye, pagos e impuestos de tu país.\n\nComenta COTIZA y te lo mando.\n\n(Las horas del ejemplo son de referencia: con las tuyas sale otra cosa, y esa es la idea.)",
+            "caption": "(Se escribe con las palabras reales del alumno después de la entrevista. Cierre: «Comenta ACERO y te llega gratis nuestro recurso de verificación de acero.»)",
             "cta": {
-              "instagram": "Comenta COTIZA",
-              "facebook": "Comenta COTIZA",
+              "instagram": "Comenta ACERO",
+              "facebook": "Comenta ACERO",
               "tiktok": "Pregunta abierta",
               "youtube_shorts": "Pregunta abierta"
             },
-            "condicion": "Palabra COTIZA: se monta en OpenReply JUSTO DESPUÉS de publicar esta pieza (decisión de Dayana, 30-sep: la campaña va atada al post). Orden del día: publicar → Patricio crea la campaña atada al post → comentario de prueba desde una cuenta ajena → llega el DM. En Facebook contesta el workflow «Comentario COTIZA» de GHL. Hasta que el DM llegue, alguien del equipo responde a mano los comentarios con el enlace de la landing: https://funnel.dgdesignmodeling.com/acceso-gratis-cotizador-honorarios-form",
-            "enlace_recurso": "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/cotizador-honorarios/",
-            "origen": "leadmagnet-cotiza-octubre.json",
-            "formato_detalle": "REEL (25-30 s)",
+            "condicion": "Tiene que ser un alumno REAL con permiso por escrito para usar su imagen, su nombre de pila y su trabajo. No se le escribe un guion ni se le ponen palabras en la boca: se hacen las 5 preguntas y se edita. Candidatos: alumnos de Acero con etiqueta actividad_curso_reciente en GHL; se les escribe desde soporte. Si el 21-oct no hay alumno confirmado, se publica el reserva: Gabriel responde a cámara «3 preguntas que nos hacen antes de inscribirse en Acero» (¿me sirve si vengo de obra?, ¿cuánto tiempo al día?, ¿qué certificados da?), 30 s, mismo CTA. Palabra ACERO: viva en GoHighLevel (✅ Comentario ACERO - Verificación de Acero → ✅ Seguimientos 1-4 Especialización Acero). Antes de publicar, Patricio confirma con un comentario de prueba desde una cuenta ajena que responde en Instagram y en Facebook.",
+            "origen": "angulos-ganadores-octubre.json",
+            "formato_detalle": "REEL (45-60 s)",
             "red_principal": "instagram",
             "cta_por_red": {
-              "instagram": "Comenta COTIZA",
-              "facebook": "Comenta COTIZA",
+              "instagram": "Comenta ACERO",
+              "facebook": "Comenta ACERO",
               "tiktok": "Pregunta abierta",
               "youtube_shorts": "Pregunta abierta"
             },
             "guion_reel": [
               {
-                "tiempo": "0:00-0:03",
-                "accion": "A cámara, Gabriel. Sin intro. · En pantalla: ¿CUÁNTO COBRAS **POR HORA**?",
-                "voz": "¿Cuánto cobras por hora cuando cobras 5 dólares por m²? Casi nadie lo sabe."
+                "tiempo": "0:00-0:04",
+                "accion": "Alumno a cámara (videollamada grabada o video propio vertical). · En pantalla: Frase clave en ámbar",
+                "voz": "La frase más fuerte de la respuesta 2."
               },
               {
-                "tiempo": "0:03-0:09",
-                "accion": "Pantalla: el cotizador, tarjeta 1 llenándose (tarifa mínima). · En pantalla: TU PISO · **17,31 USD/h**",
-                "voz": "Primero tu piso: lo que quieres ganar más lo que te cuesta trabajar, dividido entre las horas que de verdad cobras."
+                "tiempo": "0:04-0:20",
+                "accion": "Alumno + recortes de pantallazos REALES de su trabajo (con permiso). · En pantalla: Nombre de pila · país · profesión",
+                "voz": "Respuestas 1 y 3, recortadas."
               },
               {
-                "tiempo": "0:09-0:16",
-                "accion": "Pantalla: la tabla de entregables y las revisiones. · En pantalla: **122 HORAS**",
-                "voz": "Después, las horas del proyecto: modelo, diseño, planos, memoria y las revisiones que siempre piden."
+                "tiempo": "0:20-0:40",
+                "accion": "Pantallazos REALES de lo que aplicó. · En pantalla: LO QUE APLICÓ",
+                "voz": "Respuesta 4."
               },
               {
-                "tiempo": "0:16-0:22",
-                "accion": "Pantalla: la tarjeta del resultado en rojo. · En pantalla: 14,71 USD/h · **NO CUBRE**",
-                "voz": "Con 5 dólares por m², esta vivienda te paga 14,71 la hora. Te faltan 317 dólares."
+                "tiempo": "0:40-0:50",
+                "accion": "Alumno a cámara. · En pantalla: —",
+                "voz": "Respuesta 5."
               },
               {
-                "tiempo": "0:22-0:30",
-                "accion": "A cámara. CTA en el último tercio. · En pantalla: COMENTA **COTIZA**",
-                "voz": "El cotizador es gratis y te arma la propuesta en PDF. Comenta COTIZA y te lo mando."
+                "tiempo": "0:50-0:55",
+                "accion": "Placa final. · En pantalla: Comenta **ACERO**",
+                "voz": "(sin voz)"
               }
             ],
-            "notas_produccion": "Palabra COTIZA: se monta en OpenReply JUSTO DESPUÉS de publicar esta pieza (decisión de Dayana, 30-sep: la campaña va atada al post). Orden del día: publicar → Patricio crea la campaña atada al post → comentario de prueba desde una cuenta ajena → llega el DM. En Facebook contesta el workflow «Comentario COTIZA» de GHL. Hasta que el DM llegue, alguien del equipo responde a mano los comentarios con el enlace de la landing: https://funnel.dgdesignmodeling.com/acceso-gratis-cotizador-honorarios-form"
+            "notas_produccion": "Tiene que ser un alumno REAL con permiso por escrito para usar su imagen, su nombre de pila y su trabajo. No se le escribe un guion ni se le ponen palabras en la boca: se hacen las 5 preguntas y se edita. Candidatos: alumnos de Acero con etiqueta actividad_curso_reciente en GHL; se les escribe desde soporte. Si el 21-oct no hay alumno confirmado, se publica el reserva: Gabriel responde a cámara «3 preguntas que nos hacen antes de inscribirse en Acero» (¿me sirve si vengo de obra?, ¿cuánto tiempo al día?, ¿qué certificados da?), 30 s, mismo CTA. Palabra ACERO: viva en GoHighLevel (✅ Comentario ACERO - Verificación de Acero → ✅ Seguimientos 1-4 Especialización Acero). Antes de publicar, Patricio confirma con un comentario de prueba desde una cuenta ajena que responde en Instagram y en Facebook. | 6-oct (Dayana): Daniela viaja y no se graban videos nuevos hasta que vuelva. Pasa del Mié 28 al Mar 13 (intercambio con el reel de COTIZA). Sigue condicionado a tener un alumno real con permiso y a poder grabarlo: si no, sale la reserva descrita en la pieza."
           }
         },
         {
           "fecha": "Mié 14",
           "fecha_iso": "2026-10-14",
           "semana": "Semana 2 (12-18 oct)",
-          "id": "oct-ranking-software-estructural-reel",
-          "titulo": "Ranking de software estructural 2026: ¿AutoCAD en la última fila?",
-          "tipo": "valor",
-          "formato_publicacion": "REEL (25-30 s)",
-          "intencion": "problema",
-          "producto": "Máster",
-          "cta": "Comenta NIVEL",
-          "estado": "POR GRABAR",
-          "nota": "Ranking con tablero físico. Graba Gabriel.",
+          "id": "oct-tutor-dip-post-fb",
+          "titulo": "Volver a encontrar dónde se explicó algo",
+          "tipo": "lanzamiento",
+          "formato_publicacion": "POST (1 imagen: captura real) · Instagram y Facebook",
+          "intencion": "solución",
+          "producto": "Diplomado",
+          "cta": "Comenta DIPLOMADO (si no está montada: DM)",
+          "estado": "COMPLETA",
+          "nota": "CAMBIO 6-oct: el post de clases grabadas pasa del Vie 9 al Mié 14 y sale en Instagram y Facebook, porque el reel del ranking se movió al Vie 23.",
           "contenido": {
-            "id": "oct-ranking-software-estructural-reel",
+            "id": "oct-tutor-dip-post-fb",
             "fecha": "Mié 14 oct",
             "fecha_iso": "2026-10-14",
             "semana": "Semana 2 (12-18 oct)",
-            "grupo": "GRUPO 1 · Feed principal",
-            "tipo": "valor",
-            "formato": "reel",
+            "grupo": "GRUPO 1 · Feed principal (Facebook como canal propio)",
+            "tipo": "lanzamiento",
+            "formato": "post",
             "redes": [
               "instagram",
-              "facebook",
-              "tiktok",
-              "youtube_shorts"
+              "facebook"
             ],
-            "audiencia": "ingenieros estructurales y estudiantes de últimos semestres",
-            "estado": "POR GRABAR",
-            "titulo": "Ranking de software estructural 2026: ¿AutoCAD en la última fila?",
-            "eje": "NÚCLEO-BIM",
-            "pilar": "Ranking polémico · opinión de la academia",
-            "hook": "¿AutoCAD en la última fila? Para un ingeniero estructural en 2026, sí. Y te explico por qué.",
-            "tablero": {
-              "fisico": "Cartón de 70x50 cm con cuatro filas de color y logos impresos en tarjetas con velcro o imán, para colocarlas en cámara. Es lo que hace que el formato se sienta real y no una plantilla.",
-              "filas": [
-                {
-                  "fila": "IMPRESCINDIBLE",
-                  "color": "#003E5C",
-                  "logos": [
-                    "Revit",
-                    "Robot Structural Analysis",
-                    "ETABS"
-                  ]
-                },
-                {
-                  "fila": "TE DIFERENCIA",
-                  "color": "#CA7520",
-                  "logos": [
-                    "Dynamo",
-                    "Navisworks",
-                    "IA de chat sobre lo que exportas (ChatGPT/Claude)"
-                  ]
-                },
-                {
-                  "fila": "ÚTIL SEGÚN EL PROYECTO",
-                  "color": "#E8A04A",
-                  "logos": [
-                    "SAP2000",
-                    "SAFE",
-                    "Tekla Structures"
-                  ]
-                },
-                {
-                  "fila": "YA SE DA POR HECHO",
-                  "color": "#8A99A8",
-                  "logos": [
-                    "AutoCAD",
-                    "Excel"
-                  ]
-                }
-              ],
-              "nota": "Es la opinión de la academia y se dice así en la voz. Los logos son marcas de sus fabricantes: se muestran tal cual, sin modificarlos."
-            },
-            "guion_columnas": [
-              "tiempo",
-              "plano",
-              "voz",
-              "texto_en_pantalla"
-            ],
-            "guion": [
-              [
-                "0:00-0:03",
-                "A cámara, plano medio, tablero ya en las manos con AutoCAD a medio colocar en la última fila. Sin intro. Graba Gabriel.",
-                "¿AutoCAD en la última fila? Para un ingeniero estructural en 2026, sí.",
-                "¿AUTOCAD EN LA **ÚLTIMA FILA**?"
-              ],
-              [
-                "0:03-0:09",
-                "Plano cenital del tablero: coloca Revit, Robot y ETABS arriba.",
-                "Arriba: Revit para modelar y documentar, y un programa de análisis, Robot o ETABS. Sin esto no entras a un proyecto BIM de estructuras.",
-                "IMPRESCINDIBLE"
-              ],
-              [
-                "0:09-0:15",
-                "Cenital: coloca Dynamo, Navisworks y la tarjeta de IA en la segunda fila.",
-                "Lo que te diferencia: Dynamo para automatizar, Navisworks para coordinar, y la IA trabajando sobre lo que exportas.",
-                "**TE DIFERENCIA**"
-              ],
-              [
-                "0:15-0:20",
-                "Cenital: coloca SAP2000, SAFE y Tekla en la tercera fila.",
-                "Útiles según el proyecto: SAP2000, SAFE, Tekla. Buenos, pero no todos los usan.",
-                "SEGÚN EL PROYECTO"
-              ],
-              [
-                "0:20-0:25",
-                "A cámara, termina de encajar AutoCAD y Excel abajo.",
-                "Y abajo AutoCAD y Excel. No porque no sirvan: porque ya nadie te contrata por saberlos. Se da por hecho.",
-                "YA SE DA **POR HECHO**"
-              ],
-              [
-                "0:25-0:30",
-                "A cámara, gira el tablero hacia la lente. CTA en el último tercio.",
-                "Es nuestro ranking. ¿Qué moverías? Y si quieres saber en qué fila estás tú, comenta NIVEL.",
-                "COMENTA **NIVEL**"
-              ]
-            ],
-            "version_tiktok": "Mismo montaje, sin palabra clave (TikTok no dispara el bot). Cierre: «¿Qué moverías de fila? Te leo.»",
-            "caption": "Esto no es un ranking de qué programa es mejor. Es un ranking de qué te piden hoy para entrar a un proyecto de estructuras en BIM.\n\nAutoCAD sigue siendo enorme, pero pasó de ser el centro del flujo a ser algo que se da por hecho. Y Dynamo sube no por moda, sino porque automatizar empezó a aparecer en los requisitos.\n\nEs nuestra opinión. ¿Qué moverías de fila? 👇\n\nY si quieres saber en qué fila estás tú: comenta NIVEL y te mandamos el test.\n\n#IngenieríaEstructural #BIM #Revit #RobotStructural #ETABS #Dynamo #DesignModelingDG",
-            "cta": {
-              "instagram": "¿Qué moverías? Y si quieres saber en qué fila estás tú, comenta NIVEL.",
-              "facebook": "¿Qué moverías? Y si quieres saber en qué fila estás tú, comenta NIVEL.",
-              "tiktok": "¿Qué moverías de fila? Te leo.",
-              "youtube": "¿Qué moverías de fila? Te leo en comentarios.",
-              "linkedin": "No va a LinkedIn como reel vertical."
-            },
-            "condicion": "Igual que el carrusel: NIVEL tiene que contestar el día de publicar. 25-30 s como máximo: en esta cuenta los reels de menos de 30 s rinden más del doble que los de 30-60 s (patrones-de-viralidad.md), y el de AECODE, a 41 s, se quedó en 1.421 vistas.",
-            "prompt_imagenes": "Portada del reel 9:16: plano medio con el tablero de cartón sostenido a la altura del pecho, las cuatro filas visibles. Texto en el tercio superior: «RANKING ESTRUCTURAL 2026» y debajo «¿AutoCAD en la última fila?» con AutoCAD resaltado en recuadro ámbar. Fondo real de la oficina, pantalla con Robot encendida al fondo.",
-            "formato_detalle": "REEL (25-30 s)",
-            "red_principal": "instagram",
-            "cta_por_red": {
-              "instagram": "¿Qué moverías? Y si quieres saber en qué fila estás tú, comenta NIVEL.",
-              "facebook": "¿Qué moverías? Y si quieres saber en qué fila estás tú, comenta NIVEL.",
-              "tiktok": "¿Qué moverías de fila? Te leo.",
-              "youtube": "¿Qué moverías de fila? Te leo en comentarios.",
-              "linkedin": "No va a LinkedIn como reel vertical."
-            },
-            "guion_reel": [
+            "audiencia": "prospectos · alumnos",
+            "estado": "COMPLETA",
+            "titulo": "Volver a encontrar dónde se explicó algo",
+            "eje": "PROMO",
+            "pilar": "Venta blanda · lanzamiento",
+            "hook": "Estudiar con clases grabadas tiene una parte que nadie pone en el temario: volver a encontrar dónde se explicó algo.",
+            "slides": [
               {
-                "tiempo": "0:00-0:03",
-                "accion": "A cámara, plano medio, tablero ya en las manos con AutoCAD a medio colocar en la última fila. Sin intro. Graba Gabriel. · En pantalla: ¿AUTOCAD EN LA **ÚLTIMA FILA**?",
-                "voz": "¿AutoCAD en la última fila? Para un ingeniero estructural en 2026, sí."
-              },
-              {
-                "tiempo": "0:03-0:09",
-                "accion": "Plano cenital del tablero: coloca Revit, Robot y ETABS arriba. · En pantalla: IMPRESCINDIBLE",
-                "voz": "Arriba: Revit para modelar y documentar, y un programa de análisis, Robot o ETABS. Sin esto no entras a un proyecto BIM de estructuras."
-              },
-              {
-                "tiempo": "0:09-0:15",
-                "accion": "Cenital: coloca Dynamo, Navisworks y la tarjeta de IA en la segunda fila. · En pantalla: **TE DIFERENCIA**",
-                "voz": "Lo que te diferencia: Dynamo para automatizar, Navisworks para coordinar, y la IA trabajando sobre lo que exportas."
-              },
-              {
-                "tiempo": "0:15-0:20",
-                "accion": "Cenital: coloca SAP2000, SAFE y Tekla en la tercera fila. · En pantalla: SEGÚN EL PROYECTO",
-                "voz": "Útiles según el proyecto: SAP2000, SAFE, Tekla. Buenos, pero no todos los usan."
-              },
-              {
-                "tiempo": "0:20-0:25",
-                "accion": "A cámara, termina de encajar AutoCAD y Excel abajo. · En pantalla: YA SE DA **POR HECHO**",
-                "voz": "Y abajo AutoCAD y Excel. No porque no sirvan: porque ya nadie te contrata por saberlos. Se da por hecho."
-              },
-              {
-                "tiempo": "0:25-0:30",
-                "accion": "A cámara, gira el tablero hacia la lente. CTA en el último tercio. · En pantalla: COMENTA **NIVEL**",
-                "voz": "Es nuestro ranking. ¿Qué moverías? Y si quieres saber en qué fila estás tú, comenta NIVEL."
+                "n": 1,
+                "texto": "(sin texto en la imagen o solo «M2 · Lección 25 · min 04:09» resaltado)",
+                "visual": "Captura real de la respuesta del tutor a la pregunta del espectro sísmico, 4:5, con la cita marcada en ámbar."
               }
             ],
-            "notas_produccion": "Igual que el carrusel: NIVEL tiene que contestar el día de publicar. 25-30 s como máximo: en esta cuenta los reels de menos de 30 s rinden más del doble que los de 30-60 s (patrones-de-viralidad.md), y el de AECODE, a 41 s, se quedó en 1.421 vistas.",
-            "origen": "carruseles-y-reels-acusacion-octubre.json"
+            "caption": "Estudiar con clases grabadas tiene una parte que nadie pone en el temario: volver a encontrar dónde se explicó algo.\n\nEn el Diplomado BIM en Estructuras son 216 videos y 133 horas de clase. Ahora el alumno tiene un Tutor IA dentro del curso: le escribe la duda con sus palabras y el tutor responde con las clases del propio Diplomado, indicando la lección y el minuto.\n\nLo probamos con una pregunta real: «¿Cómo creo el espectro sísmico y lo ingreso en Robot?». Respondió con el Módulo 2, Lección 25, minuto 04:09, y la Lección 24 como apoyo. En la imagen está la respuesta tal cual salió.\n\nTiene límites puestos a propósito. Si algo no está en las clases, lo dice y sugiere la asesoría con los instructores. Las cifras de norma no las dicta: pide verificarlas en la norma vigente. Tampoco revisa proyectos personales.\n\nCubre los módulos 2 a 9. El Módulo 1, de iniciación en Revit, todavía no está cargado.\n\nSi ya eres alumno del Diplomado, lo encuentras en tu curso con el botón «Abrir el Tutor IA». Si no, comenta DIPLOMADO y te contamos cómo es el Diplomado.\n\n¿Qué tema de estructuras te costaría más encontrar en un curso de 133 horas?",
+            "cta": {
+              "instagram": "Comenta DIPLOMADO y te contamos cómo es el Diplomado (si DIPLOMADO no está montada: «Escríbenos por DM»).",
+              "facebook": "Comenta DIPLOMADO y te contamos cómo es el Diplomado."
+            },
+            "condicion": "La palabra DIPLOMADO NO existe hoy ni en OpenReply ni en GHL (cotejo de fuentes/openreply/campanas.json). Si no está montada y probada el día de publicar, el CTA de prospectos cambia a: «Escríbenos por DM y te contamos cómo es el Diplomado» y la historia usa el sticker de enlace a la agenda. No publicar la promesa vacía.",
+            "prompt_imagenes": "No se genera con IA: es la captura real del tutor, recortada a 4:5 sobre fondo #0E2438, con la cita en recuadro ámbar #E8A04A.",
+            "formato_detalle": "POST (1 imagen: captura real) · Instagram y Facebook",
+            "red_principal": "instagram",
+            "cta_por_red": {
+              "instagram": "Comenta DIPLOMADO y te contamos cómo es el Diplomado (si DIPLOMADO no está montada: «Escríbenos por DM»).",
+              "facebook": "Comenta DIPLOMADO y te contamos cómo es el Diplomado."
+            },
+            "notas_produccion": "La palabra DIPLOMADO NO existe hoy ni en OpenReply ni en GHL (cotejo de fuentes/openreply/campanas.json). Si no está montada y probada el día de publicar, el CTA de prospectos cambia a: «Escríbenos por DM y te contamos cómo es el Diplomado» y la historia usa el sticker de enlace a la agenda. No publicar la promesa vacía. | 6-oct (Dayana): Daniela viaja y no se graban videos nuevos hasta que vuelva. Pasa del Vie 9 al Mié 14 y sale también en Instagram: es la pieza del día, que se había quedado vacío.",
+            "origen": "lanzamiento-tutor-ia-octubre.json"
           }
         },
         {
@@ -1510,6 +1412,180 @@
           "fecha": "Vie 23",
           "fecha_iso": "2026-10-23",
           "semana": "Semana 3 (19-25 oct)",
+          "id": "oct-ranking-software-estructural-reel",
+          "titulo": "Ranking de software estructural 2026: ¿AutoCAD en la última fila?",
+          "tipo": "valor",
+          "formato_publicacion": "REEL (25-30 s)",
+          "intencion": "problema",
+          "producto": "Máster",
+          "cta": "Comenta NIVEL",
+          "estado": "POR GRABAR",
+          "nota": "CAMBIO 6-oct: pasa del Mié 14 al Vie 23. Ranking con tablero físico; se graba cuando vuelva Daniela.",
+          "contenido": {
+            "id": "oct-ranking-software-estructural-reel",
+            "fecha": "Vie 23 oct",
+            "fecha_iso": "2026-10-23",
+            "semana": "Semana 3 (19-25 oct)",
+            "grupo": "GRUPO 1 · Feed principal",
+            "tipo": "valor",
+            "formato": "reel",
+            "redes": [
+              "instagram",
+              "facebook",
+              "tiktok",
+              "youtube_shorts"
+            ],
+            "audiencia": "ingenieros estructurales y estudiantes de últimos semestres",
+            "estado": "POR GRABAR",
+            "titulo": "Ranking de software estructural 2026: ¿AutoCAD en la última fila?",
+            "eje": "NÚCLEO-BIM",
+            "pilar": "Ranking polémico · opinión de la academia",
+            "hook": "¿AutoCAD en la última fila? Para un ingeniero estructural en 2026, sí. Y te explico por qué.",
+            "tablero": {
+              "fisico": "Cartón de 70x50 cm con cuatro filas de color y logos impresos en tarjetas con velcro o imán, para colocarlas en cámara. Es lo que hace que el formato se sienta real y no una plantilla.",
+              "filas": [
+                {
+                  "fila": "IMPRESCINDIBLE",
+                  "color": "#003E5C",
+                  "logos": [
+                    "Revit",
+                    "Robot Structural Analysis",
+                    "ETABS"
+                  ]
+                },
+                {
+                  "fila": "TE DIFERENCIA",
+                  "color": "#CA7520",
+                  "logos": [
+                    "Dynamo",
+                    "Navisworks",
+                    "IA de chat sobre lo que exportas (ChatGPT/Claude)"
+                  ]
+                },
+                {
+                  "fila": "ÚTIL SEGÚN EL PROYECTO",
+                  "color": "#E8A04A",
+                  "logos": [
+                    "SAP2000",
+                    "SAFE",
+                    "Tekla Structures"
+                  ]
+                },
+                {
+                  "fila": "YA SE DA POR HECHO",
+                  "color": "#8A99A8",
+                  "logos": [
+                    "AutoCAD",
+                    "Excel"
+                  ]
+                }
+              ],
+              "nota": "Es la opinión de la academia y se dice así en la voz. Los logos son marcas de sus fabricantes: se muestran tal cual, sin modificarlos."
+            },
+            "guion_columnas": [
+              "tiempo",
+              "plano",
+              "voz",
+              "texto_en_pantalla"
+            ],
+            "guion": [
+              [
+                "0:00-0:03",
+                "A cámara, plano medio, tablero ya en las manos con AutoCAD a medio colocar en la última fila. Sin intro. Graba Gabriel.",
+                "¿AutoCAD en la última fila? Para un ingeniero estructural en 2026, sí.",
+                "¿AUTOCAD EN LA **ÚLTIMA FILA**?"
+              ],
+              [
+                "0:03-0:09",
+                "Plano cenital del tablero: coloca Revit, Robot y ETABS arriba.",
+                "Arriba: Revit para modelar y documentar, y un programa de análisis, Robot o ETABS. Sin esto no entras a un proyecto BIM de estructuras.",
+                "IMPRESCINDIBLE"
+              ],
+              [
+                "0:09-0:15",
+                "Cenital: coloca Dynamo, Navisworks y la tarjeta de IA en la segunda fila.",
+                "Lo que te diferencia: Dynamo para automatizar, Navisworks para coordinar, y la IA trabajando sobre lo que exportas.",
+                "**TE DIFERENCIA**"
+              ],
+              [
+                "0:15-0:20",
+                "Cenital: coloca SAP2000, SAFE y Tekla en la tercera fila.",
+                "Útiles según el proyecto: SAP2000, SAFE, Tekla. Buenos, pero no todos los usan.",
+                "SEGÚN EL PROYECTO"
+              ],
+              [
+                "0:20-0:25",
+                "A cámara, termina de encajar AutoCAD y Excel abajo.",
+                "Y abajo AutoCAD y Excel. No porque no sirvan: porque ya nadie te contrata por saberlos. Se da por hecho.",
+                "YA SE DA **POR HECHO**"
+              ],
+              [
+                "0:25-0:30",
+                "A cámara, gira el tablero hacia la lente. CTA en el último tercio.",
+                "Es nuestro ranking. ¿Qué moverías? Y si quieres saber en qué fila estás tú, comenta NIVEL.",
+                "COMENTA **NIVEL**"
+              ]
+            ],
+            "version_tiktok": "Mismo montaje, sin palabra clave (TikTok no dispara el bot). Cierre: «¿Qué moverías de fila? Te leo.»",
+            "caption": "Esto no es un ranking de qué programa es mejor. Es un ranking de qué te piden hoy para entrar a un proyecto de estructuras en BIM.\n\nAutoCAD sigue siendo enorme, pero pasó de ser el centro del flujo a ser algo que se da por hecho. Y Dynamo sube no por moda, sino porque automatizar empezó a aparecer en los requisitos.\n\nEs nuestra opinión. ¿Qué moverías de fila? 👇\n\nY si quieres saber en qué fila estás tú: comenta NIVEL y te mandamos el test.\n\n#IngenieríaEstructural #BIM #Revit #RobotStructural #ETABS #Dynamo #DesignModelingDG",
+            "cta": {
+              "instagram": "¿Qué moverías? Y si quieres saber en qué fila estás tú, comenta NIVEL.",
+              "facebook": "¿Qué moverías? Y si quieres saber en qué fila estás tú, comenta NIVEL.",
+              "tiktok": "¿Qué moverías de fila? Te leo.",
+              "youtube": "¿Qué moverías de fila? Te leo en comentarios.",
+              "linkedin": "No va a LinkedIn como reel vertical."
+            },
+            "condicion": "Igual que el carrusel: NIVEL tiene que contestar el día de publicar. 25-30 s como máximo: en esta cuenta los reels de menos de 30 s rinden más del doble que los de 30-60 s (patrones-de-viralidad.md), y el de AECODE, a 41 s, se quedó en 1.421 vistas.",
+            "prompt_imagenes": "Portada del reel 9:16: plano medio con el tablero de cartón sostenido a la altura del pecho, las cuatro filas visibles. Texto en el tercio superior: «RANKING ESTRUCTURAL 2026» y debajo «¿AutoCAD en la última fila?» con AutoCAD resaltado en recuadro ámbar. Fondo real de la oficina, pantalla con Robot encendida al fondo.",
+            "formato_detalle": "REEL (25-30 s)",
+            "red_principal": "instagram",
+            "cta_por_red": {
+              "instagram": "¿Qué moverías? Y si quieres saber en qué fila estás tú, comenta NIVEL.",
+              "facebook": "¿Qué moverías? Y si quieres saber en qué fila estás tú, comenta NIVEL.",
+              "tiktok": "¿Qué moverías de fila? Te leo.",
+              "youtube": "¿Qué moverías de fila? Te leo en comentarios.",
+              "linkedin": "No va a LinkedIn como reel vertical."
+            },
+            "guion_reel": [
+              {
+                "tiempo": "0:00-0:03",
+                "accion": "A cámara, plano medio, tablero ya en las manos con AutoCAD a medio colocar en la última fila. Sin intro. Graba Gabriel. · En pantalla: ¿AUTOCAD EN LA **ÚLTIMA FILA**?",
+                "voz": "¿AutoCAD en la última fila? Para un ingeniero estructural en 2026, sí."
+              },
+              {
+                "tiempo": "0:03-0:09",
+                "accion": "Plano cenital del tablero: coloca Revit, Robot y ETABS arriba. · En pantalla: IMPRESCINDIBLE",
+                "voz": "Arriba: Revit para modelar y documentar, y un programa de análisis, Robot o ETABS. Sin esto no entras a un proyecto BIM de estructuras."
+              },
+              {
+                "tiempo": "0:09-0:15",
+                "accion": "Cenital: coloca Dynamo, Navisworks y la tarjeta de IA en la segunda fila. · En pantalla: **TE DIFERENCIA**",
+                "voz": "Lo que te diferencia: Dynamo para automatizar, Navisworks para coordinar, y la IA trabajando sobre lo que exportas."
+              },
+              {
+                "tiempo": "0:15-0:20",
+                "accion": "Cenital: coloca SAP2000, SAFE y Tekla en la tercera fila. · En pantalla: SEGÚN EL PROYECTO",
+                "voz": "Útiles según el proyecto: SAP2000, SAFE, Tekla. Buenos, pero no todos los usan."
+              },
+              {
+                "tiempo": "0:20-0:25",
+                "accion": "A cámara, termina de encajar AutoCAD y Excel abajo. · En pantalla: YA SE DA **POR HECHO**",
+                "voz": "Y abajo AutoCAD y Excel. No porque no sirvan: porque ya nadie te contrata por saberlos. Se da por hecho."
+              },
+              {
+                "tiempo": "0:25-0:30",
+                "accion": "A cámara, gira el tablero hacia la lente. CTA en el último tercio. · En pantalla: COMENTA **NIVEL**",
+                "voz": "Es nuestro ranking. ¿Qué moverías? Y si quieres saber en qué fila estás tú, comenta NIVEL."
+              }
+            ],
+            "notas_produccion": "Igual que el carrusel: NIVEL tiene que contestar el día de publicar. 25-30 s como máximo: en esta cuenta los reels de menos de 30 s rinden más del doble que los de 30-60 s (patrones-de-viralidad.md), y el de AECODE, a 41 s, se quedó en 1.421 vistas. | 6-oct (Dayana): Daniela viaja y no se graban videos nuevos hasta que vuelva. Pasa del Mié 14 al Vie 23. Comparte el día con el post «Perdió el concurso». Se graba cuando vuelva Daniela.",
+            "origen": "carruseles-y-reels-acusacion-octubre.json"
+          }
+        },
+        {
+          "fecha": "Vie 23",
+          "fecha_iso": "2026-10-23",
+          "semana": "Semana 3 (19-25 oct)",
           "id": "oct-ang3-bim-se-exige-post",
           "titulo": "Perdió el concurso antes de presentarse",
           "tipo": "problema",
@@ -1781,22 +1857,22 @@
           "fecha": "Mié 28",
           "fecha_iso": "2026-10-28",
           "semana": "Semana 4 (26 oct-1 nov)",
-          "id": "oct-testimonio-acero-reel",
-          "titulo": "Testimonio de un alumno de Acero",
-          "tipo": "testimonio",
-          "formato_publicacion": "REEL (45-60 s)",
-          "intencion": "testimonio",
-          "producto": "Acero",
-          "cta": "Comenta ACERO",
-          "estado": "POR CONSEGUIR ALUMNO",
-          "nota": "Alumno real con permiso. Si el 21-oct no hay, sale la pieza de reserva descrita en la pieza.",
+          "id": "oct-cotiza-reel",
+          "titulo": "¿Cuánto cobras por hora cuando cobras 5 dólares por m²?",
+          "tipo": "lead magnet",
+          "formato_publicacion": "REEL (25-30 s)",
+          "intencion": "problema",
+          "producto": "Cotizador",
+          "cta": "Comenta COTIZA",
+          "estado": "POR GRABAR",
+          "nota": "CAMBIO 6-oct: pasa del Mar 13 al Mié 28 (intercambio con el testimonio). COTIZA ya se lanzó el Mar 13 (comunidades y LinkedIn) y el Jue 15 (carrusel): este reel se suma a la campaña que exista. Se graba cuando vuelva Daniela.",
           "contenido": {
-            "id": "oct-testimonio-acero-reel",
+            "id": "oct-cotiza-reel",
             "fecha": "Mié 28 oct",
             "fecha_iso": "2026-10-28",
-            "semana": "Semana 4 (26-31 oct)",
+            "semana": "Semana 4 (26 oct-1 nov)",
             "grupo": "GRUPO 1 · Feed principal",
-            "tipo": "testimonio",
+            "tipo": "lead magnet",
             "formato": "reel",
             "redes": [
               "instagram",
@@ -1804,37 +1880,15 @@
               "tiktok",
               "youtube_shorts"
             ],
-            "producto": "Acero",
-            "audiencia": "prospectos de Acero que dudan si el programa se aplica a su trabajo",
-            "estado": "POR CONSEGUIR ALUMNO",
-            "titulo": "Testimonio de un alumno de Acero",
-            "eje": "PRUEBA-SOCIAL",
-            "pilar": "Testimonio real",
-            "angulo": "4 u 8, según el alumno",
-            "reparto": "30 % objeciones y testimonios",
-            "hook": "(Lo dice el alumno con sus palabras. Se elige en edición la frase más fuerte de su respuesta a la pregunta 2.)",
-            "entrevista": [
-              {
-                "n": 1,
-                "pregunta": "¿A qué te dedicabas antes de entrar y qué te frenaba con el acero?"
-              },
-              {
-                "n": 2,
-                "pregunta": "¿Hubo algún proyecto que tuviste que rechazar o pasarle a otro por no poder calcularlo?"
-              },
-              {
-                "n": 3,
-                "pregunta": "¿Qué dudabas antes de inscribirte? (tiempo, dinero, si te iba a servir)"
-              },
-              {
-                "n": 4,
-                "pregunta": "¿Qué es lo primero que aplicaste en tu trabajo?"
-              },
-              {
-                "n": 5,
-                "pregunta": "¿Qué le dirías a alguien que está donde tú estabas?"
-              }
-            ],
+            "producto": "Lead magnet · Cotizador (puente a Acero y Diplomado Estructuras)",
+            "audiencia": "ingenieros que cotizan diseños estructurales por su cuenta y cobran por m² sin saber si les alcanza",
+            "estado": "POR GRABAR",
+            "titulo": "¿Cuánto cobras por hora cuando cobras 5 dólares por m²?",
+            "eje": "NÚCLEO-BIM",
+            "pilar": "Lead magnet · acusar el hábito (cobrar por m² a ciegas)",
+            "angulo": "4 · Los proyectos que rechazas / objeción de dinero",
+            "reparto": "50 % problema",
+            "hook": "¿Cuánto cobras por hora cuando cobras 5 dólares por m²? Casi nadie lo sabe.",
             "guion_columnas": [
               "tiempo",
               "plano",
@@ -1843,81 +1897,83 @@
             ],
             "guion": [
               [
-                "0:00-0:04",
-                "Alumno a cámara (videollamada grabada o video propio vertical).",
-                "La frase más fuerte de la respuesta 2.",
-                "Frase clave en ámbar"
+                "0:00-0:03",
+                "A cámara, Gabriel. Sin intro.",
+                "¿Cuánto cobras por hora cuando cobras 5 dólares por m²? Casi nadie lo sabe.",
+                "¿CUÁNTO COBRAS **POR HORA**?"
               ],
               [
-                "0:04-0:20",
-                "Alumno + recortes de pantallazos REALES de su trabajo (con permiso).",
-                "Respuestas 1 y 3, recortadas.",
-                "Nombre de pila · país · profesión"
+                "0:03-0:09",
+                "Pantalla: el cotizador, tarjeta 1 llenándose (tarifa mínima).",
+                "Primero tu piso: lo que quieres ganar más lo que te cuesta trabajar, dividido entre las horas que de verdad cobras.",
+                "TU PISO · **17,31 USD/h**"
               ],
               [
-                "0:20-0:40",
-                "Pantallazos REALES de lo que aplicó.",
-                "Respuesta 4.",
-                "LO QUE APLICÓ"
+                "0:09-0:16",
+                "Pantalla: la tabla de entregables y las revisiones.",
+                "Después, las horas del proyecto: modelo, diseño, planos, memoria y las revisiones que siempre piden.",
+                "**122 HORAS**"
               ],
               [
-                "0:40-0:50",
-                "Alumno a cámara.",
-                "Respuesta 5.",
-                "—"
+                "0:16-0:22",
+                "Pantalla: la tarjeta del resultado en rojo.",
+                "Con 5 dólares por m², esta vivienda te paga 14,71 la hora. Te faltan 317 dólares.",
+                "14,71 USD/h · **NO CUBRE**"
               ],
               [
-                "0:50-0:55",
-                "Placa final.",
-                "(sin voz)",
-                "Comenta **ACERO**"
+                "0:22-0:30",
+                "A cámara. CTA en el último tercio.",
+                "El cotizador es gratis y te arma la propuesta en PDF. Comenta COTIZA y te lo mando.",
+                "COMENTA **COTIZA**"
               ]
             ],
-            "caption": "(Se escribe con las palabras reales del alumno después de la entrevista. Cierre: «Comenta ACERO y te llega gratis nuestro recurso de verificación de acero.»)",
+            "version_tiktok": "Sin palabra clave. Cierre: «¿Cuánto cobras tú por m²? Te leo.»",
+            "caption": "¿Cuánto cobras por hora cuando cobras 5 dólares por m²?\n\nHicimos la cuenta con una vivienda de 3 niveles de 120 m²: con un piso de 17,31 USD por hora, a 5 dólares por m² el proyecto te paga 14,71 la hora. Faltaban 317 dólares, y salían de tu bolsillo.\n\nEl precio por m² no te dice si ganas o pierdes. Te lo dicen tus horas, y las que cobras son menos de las que trabajas.\n\nArmamos un cotizador gratis: calcula tu tarifa mínima, las horas del proyecto según lo que entregas y te arma la propuesta en PDF con alcance, lo que no incluye, pagos e impuestos de tu país.\n\nComenta COTIZA y te lo mando.\n\n(Las horas del ejemplo son de referencia: con las tuyas sale otra cosa, y esa es la idea.)",
             "cta": {
-              "instagram": "Comenta ACERO",
-              "facebook": "Comenta ACERO",
+              "instagram": "Comenta COTIZA",
+              "facebook": "Comenta COTIZA",
               "tiktok": "Pregunta abierta",
               "youtube_shorts": "Pregunta abierta"
             },
-            "condicion": "Tiene que ser un alumno REAL con permiso por escrito para usar su imagen, su nombre de pila y su trabajo. No se le escribe un guion ni se le ponen palabras en la boca: se hacen las 5 preguntas y se edita. Candidatos: alumnos de Acero con etiqueta actividad_curso_reciente en GHL; se les escribe desde soporte. Si el 21-oct no hay alumno confirmado, se publica el reserva: Gabriel responde a cámara «3 preguntas que nos hacen antes de inscribirse en Acero» (¿me sirve si vengo de obra?, ¿cuánto tiempo al día?, ¿qué certificados da?), 30 s, mismo CTA. Palabra ACERO: viva en GoHighLevel (✅ Comentario ACERO - Verificación de Acero → ✅ Seguimientos 1-4 Especialización Acero). Antes de publicar, Patricio confirma con un comentario de prueba desde una cuenta ajena que responde en Instagram y en Facebook.",
-            "origen": "angulos-ganadores-octubre.json",
-            "formato_detalle": "REEL (45-60 s)",
+            "condicion": "Palabra COTIZA: se monta en OpenReply JUSTO DESPUÉS de publicar esta pieza (decisión de Dayana, 30-sep: la campaña va atada al post). Orden del día: publicar → Patricio crea la campaña atada al post → comentario de prueba desde una cuenta ajena → llega el DM. En Facebook contesta el workflow «Comentario COTIZA» de GHL. Hasta que el DM llegue, alguien del equipo responde a mano los comentarios con el enlace de la landing: https://funnel.dgdesignmodeling.com/acceso-gratis-cotizador-honorarios-form",
+            "enlace_recurso": "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/cotizador-honorarios/",
+            "origen": "leadmagnet-cotiza-octubre.json",
+            "formato_detalle": "REEL (25-30 s)",
             "red_principal": "instagram",
             "cta_por_red": {
-              "instagram": "Comenta ACERO",
-              "facebook": "Comenta ACERO",
+              "instagram": "Comenta COTIZA",
+              "facebook": "Comenta COTIZA",
               "tiktok": "Pregunta abierta",
               "youtube_shorts": "Pregunta abierta"
             },
             "guion_reel": [
               {
-                "tiempo": "0:00-0:04",
-                "accion": "Alumno a cámara (videollamada grabada o video propio vertical). · En pantalla: Frase clave en ámbar",
-                "voz": "La frase más fuerte de la respuesta 2."
+                "tiempo": "0:00-0:03",
+                "accion": "A cámara, Gabriel. Sin intro. · En pantalla: ¿CUÁNTO COBRAS **POR HORA**?",
+                "voz": "¿Cuánto cobras por hora cuando cobras 5 dólares por m²? Casi nadie lo sabe."
               },
               {
-                "tiempo": "0:04-0:20",
-                "accion": "Alumno + recortes de pantallazos REALES de su trabajo (con permiso). · En pantalla: Nombre de pila · país · profesión",
-                "voz": "Respuestas 1 y 3, recortadas."
+                "tiempo": "0:03-0:09",
+                "accion": "Pantalla: el cotizador, tarjeta 1 llenándose (tarifa mínima). · En pantalla: TU PISO · **17,31 USD/h**",
+                "voz": "Primero tu piso: lo que quieres ganar más lo que te cuesta trabajar, dividido entre las horas que de verdad cobras."
               },
               {
-                "tiempo": "0:20-0:40",
-                "accion": "Pantallazos REALES de lo que aplicó. · En pantalla: LO QUE APLICÓ",
-                "voz": "Respuesta 4."
+                "tiempo": "0:09-0:16",
+                "accion": "Pantalla: la tabla de entregables y las revisiones. · En pantalla: **122 HORAS**",
+                "voz": "Después, las horas del proyecto: modelo, diseño, planos, memoria y las revisiones que siempre piden."
               },
               {
-                "tiempo": "0:40-0:50",
-                "accion": "Alumno a cámara. · En pantalla: —",
-                "voz": "Respuesta 5."
+                "tiempo": "0:16-0:22",
+                "accion": "Pantalla: la tarjeta del resultado en rojo. · En pantalla: 14,71 USD/h · **NO CUBRE**",
+                "voz": "Con 5 dólares por m², esta vivienda te paga 14,71 la hora. Te faltan 317 dólares."
               },
               {
-                "tiempo": "0:50-0:55",
-                "accion": "Placa final. · En pantalla: Comenta **ACERO**",
-                "voz": "(sin voz)"
+                "tiempo": "0:22-0:30",
+                "accion": "A cámara. CTA en el último tercio. · En pantalla: COMENTA **COTIZA**",
+                "voz": "El cotizador es gratis y te arma la propuesta en PDF. Comenta COTIZA y te lo mando."
               }
             ],
-            "notas_produccion": "Tiene que ser un alumno REAL con permiso por escrito para usar su imagen, su nombre de pila y su trabajo. No se le escribe un guion ni se le ponen palabras en la boca: se hacen las 5 preguntas y se edita. Candidatos: alumnos de Acero con etiqueta actividad_curso_reciente en GHL; se les escribe desde soporte. Si el 21-oct no hay alumno confirmado, se publica el reserva: Gabriel responde a cámara «3 preguntas que nos hacen antes de inscribirse en Acero» (¿me sirve si vengo de obra?, ¿cuánto tiempo al día?, ¿qué certificados da?), 30 s, mismo CTA. Palabra ACERO: viva en GoHighLevel (✅ Comentario ACERO - Verificación de Acero → ✅ Seguimientos 1-4 Especialización Acero). Antes de publicar, Patricio confirma con un comentario de prueba desde una cuenta ajena que responde en Instagram y en Facebook."
+            "notas_produccion": "Palabra COTIZA: se monta en OpenReply JUSTO DESPUÉS de publicar esta pieza (decisión de Dayana, 30-sep: la campaña va atada al post). Orden del día: publicar → Patricio crea la campaña atada al post → comentario de prueba desde una cuenta ajena → llega el DM. En Facebook contesta el workflow «Comentario COTIZA» de GHL. Hasta que el DM llegue, alguien del equipo responde a mano los comentarios con el enlace de la landing: https://funnel.dgdesignmodeling.com/acceso-gratis-cotizador-honorarios-form | 6-oct (Dayana): Daniela viaja y no se graban videos nuevos hasta que vuelva. Pasa del Mar 13 al Mié 28 (intercambio con el testimonio). COTIZA se lanza antes, el Mar 13 en comunidades y LinkedIn y el Jue 15 con el carrusel; este reel se añade a la campaña de COTIZA que ya exista."
           }
         },
         {
@@ -2320,7 +2376,7 @@
               "facebook_grupos": "Encuesta nativa del grupo, sin enlace.",
               "youtube_comunidad": "Encuesta nativa de la comunidad."
             },
-            "notas_produccion": "Sin hashtags. Tono de persona, no de marca. En las comunidades no hay bot: a quien responda la palabra, alguien del equipo le manda el enlace a mano el mismo día. En los grupos de Facebook el enlace nunca va en el texto del post (baja el alcance del grupo): si hace falta, va en el primer comentario. Usar la encuesta nativa de cada canal (WhatsApp, Instagram, Facebook y YouTube la tienen). No se nombra el cotizador todavía: el martes 13 se lanza con el reel. Guardar el resultado de la encuesta: sirve de dato para el mensaje del Mar 13.",
+            "notas_produccion": "Sin hashtags. Tono de persona, no de marca. En las comunidades no hay bot: a quien responda la palabra, alguien del equipo le manda el enlace a mano el mismo día. En los grupos de Facebook el enlace nunca va en el texto del post (baja el alcance del grupo): si hace falta, va en el primer comentario. Usar la encuesta nativa de cada canal (WhatsApp, Instagram, Facebook y YouTube la tienen). No se nombra el cotizador todavía: el martes 13 se lanza con el reel. Guardar el resultado de la encuesta: sirve de dato para el mensaje del Mar 13. | 6-oct (Dayana): Daniela viaja y no se graban videos nuevos hasta que vuelva. El cotizador se lanza el Mar 13 por comunidades y LinkedIn; el reel pasó al Mié 28.",
             "origen": "calendario-octubre (fase 2)"
           }
         },
@@ -2388,7 +2444,7 @@
               "facebook_grupos": "Solo la pregunta. Enlace en el primer comentario.",
               "youtube_comunidad": "Pregunta. Enlace en el primer comentario."
             },
-            "notas_produccion": "Sin hashtags. Tono de persona, no de marca. En las comunidades no hay bot: a quien responda la palabra, alguien del equipo le manda el enlace a mano el mismo día. En los grupos de Facebook el enlace nunca va en el texto del post (baja el alcance del grupo): si hace falta, va en el primer comentario. Primer comentario de grupos de Facebook y YouTube: «El cotizador es gratis y arma la propuesta en PDF: https://funnel.dgdesignmodeling.com/acceso-gratis-cotizador-honorarios-form». Se envía DESPUÉS de publicar el reel del Mar 13 y con el funnel de GHL montado (bloqueante del brief). Cifras del ejemplo tal cual salen del cotizador, validadas por Gabriel. No se dan precios de mercado ni aranceles de ningún colegio. Este es el mensaje de recurso de la semana (cuenta como valor, no como venta).",
+            "notas_produccion": "Sin hashtags. Tono de persona, no de marca. En las comunidades no hay bot: a quien responda la palabra, alguien del equipo le manda el enlace a mano el mismo día. En los grupos de Facebook el enlace nunca va en el texto del post (baja el alcance del grupo): si hace falta, va en el primer comentario. Primer comentario de grupos de Facebook y YouTube: «El cotizador es gratis y arma la propuesta en PDF: https://funnel.dgdesignmodeling.com/acceso-gratis-cotizador-honorarios-form». Se envía DESPUÉS de publicar el reel del Mar 13 y con el funnel de GHL montado (bloqueante del brief). Cifras del ejemplo tal cual salen del cotizador, validadas por Gabriel. No se dan precios de mercado ni aranceles de ningún colegio. Este es el mensaje de recurso de la semana (cuenta como valor, no como venta). | 6-oct (Dayana): Daniela viaja y no se graban videos nuevos hasta que vuelva. El reel de COTIZA pasó al Mié 28: este mensaje ya no espera al reel. Sale el Mar 13 con el funnel de GHL montado.",
             "origen": "calendario-octubre (fase 2)"
           }
         },
@@ -2838,7 +2894,7 @@
             "eje": "NÚCLEO-BIM",
             "pilar": "Ángulo 8 · De la obra al software",
             "hook": "Sabes montar una nave. ¿Por qué todavía no la calculas tú?",
-            "pieza_base": "oct-ang8-obra-software-carrusel (Lun 26) + oct-testimonio-acero-reel (Mié 28, condicionado)",
+            "pieza_base": "oct-ang8-obra-software-carrusel (Lun 26) + oct-testimonio-acero-reel (Mar 13, condicionado)",
             "mensajes": [
               {
                 "canal": "Canal de WhatsApp y canal de Instagram (difusión, sin respuesta)",
@@ -2864,7 +2920,7 @@
               "facebook_grupos": "Solo la pregunta, sin venta.",
               "youtube_comunidad": "Solo la pregunta, sin venta."
             },
-            "notas_produccion": "Sin hashtags. Tono de persona, no de marca. En las comunidades no hay bot: a quien responda la palabra, alguien del equipo le manda el enlace a mano el mismo día. En los grupos de Facebook el enlace nunca va en el texto del post (baja el alcance del grupo): si hace falta, va en el primer comentario. Único mensaje de venta de la semana. SIN PRECIO (el precio de Acero solo va en el correo del Jue 15). Sin cupos ni fechas de inicio. Si el Mié 28 salió el testimonio con alumno real y permiso, se añade al final del mensaje del canal: «Ayer subimos el testimonio de un alumno que pasó por ahí. Está en el feed.» Si salió el reserva, no se menciona. Quien responda ACERO lo atiende una persona (8 de 11 ventas con rastro del bot tuvieron a alguien cerrando).",
+            "notas_produccion": "Sin hashtags. Tono de persona, no de marca. En las comunidades no hay bot: a quien responda la palabra, alguien del equipo le manda el enlace a mano el mismo día. En los grupos de Facebook el enlace nunca va en el texto del post (baja el alcance del grupo): si hace falta, va en el primer comentario. Único mensaje de venta de la semana. SIN PRECIO (el precio de Acero solo va en el correo del Jue 15). Sin cupos ni fechas de inicio. Si el Mar 13 salió el testimonio con alumno real y permiso, se añade al final del mensaje del canal: «Hace dos semanas subimos el testimonio de un alumno que pasó por ahí. Está en el feed.» Si salió el reserva, no se menciona. Quien responda ACERO lo atiende una persona (8 de 11 ventas con rastro del bot tuvieron a alguien cerrando).",
             "origen": "calendario-octubre (fase 2)"
           }
         },
@@ -3498,7 +3554,7 @@
             "cta_por_red": {
               "linkedin": "Pregunta abierta al cierre. Enlace en el primer comentario."
             },
-            "notas_produccion": "Primera persona, sin hashtags. Se publica después del reel del mismo día. Cifras del ejemplo tal cual salen del cotizador (BRIEF-COTIZADOR-HONORARIOS.md): no se añaden precios de mercado ni aranceles.",
+            "notas_produccion": "Primera persona, sin hashtags. Se publica después del reel del mismo día. Cifras del ejemplo tal cual salen del cotizador (BRIEF-COTIZADOR-HONORARIOS.md): no se añaden precios de mercado ni aranceles. | 6-oct (Dayana): Daniela viaja y no se graban videos nuevos hasta que vuelva. El reel de COTIZA pasó al Mié 28: este post ya no depende del reel del mismo día.",
             "origen": "calendario-octubre (fase 2)",
             "condicion": "[PENDIENTE Gabriel] Validar el texto y las horas de ejemplo antes de publicar (bloqueante del brief del cotizador)."
           }
@@ -4015,8 +4071,8 @@
       ],
       "calendario": [
         {
-          "fecha": "Lun 5",
-          "fecha_iso": "2026-10-05",
+          "fecha": "Mar 6",
+          "fecha_iso": "2026-10-06",
           "semana": "Semana 1 (5-11 oct)",
           "id": "oct-hist-1005",
           "titulo": "216 videos y una duda",
@@ -4030,8 +4086,8 @@
           "destacada": "🎯 BIM + IA",
           "contenido": {
             "id": "oct-hist-1005",
-            "fecha": "Lun 5 oct",
-            "fecha_iso": "2026-10-05",
+            "fecha": "Mar 6 oct",
+            "fecha_iso": "2026-10-06",
             "semana": "Semana 1 (5-11 oct)",
             "grupo": "GRUPO 5 · Historias (IG/FB)",
             "tipo": "lanzamiento",
@@ -4059,12 +4115,12 @@
               {
                 "n": 2,
                 "visual": "Grabación de pantalla real del tutor: se teclea la pregunta del espectro sísmico y se corta justo antes de que aparezca la respuesta.",
-                "texto": "Se lo preguntamos al tutor de IA del Diplomado, con nuestras palabras. La lección y el minuto que nos dio están en el carrusel de hoy.",
+                "texto": "Se lo preguntamos al tutor de IA del Diplomado, con nuestras palabras. La lección y el minuto que nos dio están en el carrusel del feed.",
                 "sticker": "Ninguno."
               },
               {
                 "n": 3,
-                "visual": "Captura de la portada del carrusel del día, compartida en historia (se toca y lleva al post).",
+                "visual": "Captura de la portada del carrusel oct-tutor-dip-carrusel, compartida en historia (se toca y lleva al post).",
                 "texto": "¿Eres alumno? Ya lo tienes dentro de tu curso: botón «Abrir el Tutor IA».",
                 "sticker": "Ninguno."
               },
@@ -4083,13 +4139,13 @@
               "instagram": "Caja de preguntas: «¿Qué le preguntarías al tutor?» (respuesta por DM a mano).",
               "facebook": "Misma caja; si Facebook no ofrece el sticker de preguntas: «Respóndeme esta historia con tu pregunta»."
             },
-            "notas_produccion": "Las respuestas a una historia llegan como DM y ni OpenReply ni GHL las contestan: alguien del equipo responde a mano desde la bandeja, con el nombre de la persona y una pregunta al final (guiones en matriz-viral/HISTORIAS-VENTA.md §4). Nunca precio en el DM del Máster: si lo preguntan, se pasa a la cita. | Los votos de encuesta y quiz y lo que escriben en la caja de preguntas se quedan en el panel de la historia: se revisan el mismo día y se escribe por DM a mano a quien votó o preguntó. | En Facebook, si la historia no ofrece el sticker de quiz o de preguntas, ese frame lleva la misma pregunta con «Respóndeme esta historia». | Todo el material es real: capturas o grabaciones de pantalla y cámara de Gabriel. Nada de imágenes generadas. «Texto sobre azul» es un fondo liso #0E2438 con el texto de Instagram, no una imagen. | La palabra DIPLOMADO no se usa en historias (no está en la lista de palabras de octubre): el frame 4 abre la conversación con la caja y el DM a mano explica cómo es el Diplomado y ofrece la agenda. | No se repite en historia la cita «M2 · Lección 25 · min 04:09»: vive en el carrusel. El frame 2 corta antes de la respuesta a propósito. | Guardar en destacada BIM + IA o crear «Tutor IA».",
+            "notas_produccion": "Las respuestas a una historia llegan como DM y ni OpenReply ni GHL las contestan: alguien del equipo responde a mano desde la bandeja, con el nombre de la persona y una pregunta al final (guiones en matriz-viral/HISTORIAS-VENTA.md §4). Nunca precio en el DM del Máster: si lo preguntan, se pasa a la cita. | Los votos de encuesta y quiz y lo que escriben en la caja de preguntas se quedan en el panel de la historia: se revisan el mismo día y se escribe por DM a mano a quien votó o preguntó. | En Facebook, si la historia no ofrece el sticker de quiz o de preguntas, ese frame lleva la misma pregunta con «Respóndeme esta historia». | Todo el material es real: capturas o grabaciones de pantalla y cámara de Gabriel. Nada de imágenes generadas. «Texto sobre azul» es un fondo liso #0E2438 con el texto de Instagram, no una imagen. | La palabra DIPLOMADO no se usa en historias (no está en la lista de palabras de octubre): el frame 4 abre la conversación con la caja y el DM a mano explica cómo es el Diplomado y ofrece la agenda. | No se repite en historia la cita «M2 · Lección 25 · min 04:09»: vive en el carrusel. El frame 2 corta antes de la respuesta a propósito. | Guardar en destacada BIM + IA o crear «Tutor IA». | 6-oct (Dayana): Daniela viaja y no se graban videos nuevos hasta que vuelva. El lunes 5 no se subieron historias: esta secuencia sale el Mar 6.",
             "origen": "calendario-octubre (fase 2)"
           }
         },
         {
-          "fecha": "Mar 6",
-          "fecha_iso": "2026-10-06",
+          "fecha": "Mié 7",
+          "fecha_iso": "2026-10-07",
           "semana": "Semana 1 (5-11 oct)",
           "id": "oct-hist-1006",
           "titulo": "Sus preguntas, en el tutor",
@@ -4103,8 +4159,8 @@
           "destacada": "👥 COMUNIDAD",
           "contenido": {
             "id": "oct-hist-1006",
-            "fecha": "Mar 6 oct",
-            "fecha_iso": "2026-10-06",
+            "fecha": "Mié 7 oct",
+            "fecha_iso": "2026-10-07",
             "semana": "Semana 1 (5-11 oct)",
             "grupo": "GRUPO 5 · Historias (IG/FB)",
             "tipo": "detrás de cámara",
@@ -4126,7 +4182,7 @@
               {
                 "n": 1,
                 "visual": "Cámara: Gabriel de espaldas frente al monitor con el tutor abierto. 5 s, sin hablar.",
-                "texto": "Martes de grabación.",
+                "texto": "Hoy, con el tutor abierto.",
                 "sticker": "Ninguno."
               },
               {
@@ -4150,80 +4206,7 @@
               "instagram": "Encuesta: «¿Estudias con cursos grabados?» (DM a mano a quien se pierde buscando).",
               "facebook": "Misma encuesta en la historia de Facebook."
             },
-            "notas_produccion": "Las respuestas a una historia llegan como DM y ni OpenReply ni GHL las contestan: alguien del equipo responde a mano desde la bandeja, con el nombre de la persona y una pregunta al final (guiones en matriz-viral/HISTORIAS-VENTA.md §4). Nunca precio en el DM del Máster: si lo preguntan, se pasa a la cita. | Los votos de encuesta y quiz y lo que escriben en la caja de preguntas se quedan en el panel de la historia: se revisan el mismo día y se escribe por DM a mano a quien votó o preguntó. | Todo el material es real: capturas o grabaciones de pantalla y cámara de Gabriel. Nada de imágenes generadas. «Texto sobre azul» es un fondo liso #0E2438 con el texto de Instagram, no una imagen. | El frame 2 solo se publica con una pregunta real de la caja del Lun 5. Si la pregunta cae fuera de los módulos 2 a 9 y el tutor responde que no está en las clases, también vale: es lo que promete. Si no llegaron preguntas, se usa una de Gabriel y el texto cambia a «Una pregunta que le hicimos hoy. Sin editar.». | Sin producción: luz de oficina, sin música de fondo encima de la voz. | 5-oct (Dayana): se quitó toda mención al reel («Esto no sale en el reel», «Mañana sale el reel»): el reel del tutor no se grabó y el reel que sale en su lugar no se promociona en historias.",
-            "origen": "calendario-octubre (fase 2)"
-          }
-        },
-        {
-          "fecha": "Mié 7",
-          "fecha_iso": "2026-10-07",
-          "semana": "Semana 1 (5-11 oct)",
-          "id": "oct-hist-1007",
-          "titulo": "¿En qué módulo estaba?",
-          "tipo": "lanzamiento",
-          "formato_publicacion": "HISTORIAS (4 frames)",
-          "idea": {
-            "titulo": "¿En qué módulo estaba?",
-            "formato": "HISTORIAS (4 frames)",
-            "desarrollo": "Levanta la mano si alguna vez volviste a ver una clase entera para encontrar un minuto."
-          },
-          "destacada": "🎯 BIM + IA",
-          "contenido": {
-            "id": "oct-hist-1007",
-            "fecha": "Mié 7 oct",
-            "fecha_iso": "2026-10-07",
-            "semana": "Semana 1 (5-11 oct)",
-            "grupo": "GRUPO 5 · Historias (IG/FB)",
-            "tipo": "lanzamiento",
-            "formato": "historias",
-            "formato_detalle": "HISTORIAS (4 frames)",
-            "redes": [
-              "instagram",
-              "facebook"
-            ],
-            "red_principal": "instagram",
-            "producto": "Diplomado BIM en Estructuras",
-            "audiencia": "prospectos del Diplomado · alumnos",
-            "estado": "COMPLETA",
-            "titulo": "¿En qué módulo estaba?",
-            "eje": "PROMO",
-            "pilar": "Pieza del día · abre la puerta al carrusel del tutor (oct-tutor-dip-carrusel)",
-            "hook": "Levanta la mano si alguna vez volviste a ver una clase entera para encontrar un minuto.",
-            "historias": [
-              {
-                "n": 1,
-                "visual": "Cámara: Gabriel levanta la mano a cámara, plano medio, 3 s, sin hablar.",
-                "texto": "Levanta la mano si alguna vez volviste a ver una clase entera para encontrar UN minuto.",
-                "sticker": "Ninguno."
-              },
-              {
-                "n": 2,
-                "visual": "Texto sobre azul.",
-                "texto": "Sin buscar: ¿en qué módulo del Diplomado se explica cómo crear el espectro sísmico y meterlo en Robot?",
-                "sticker": "QUIZ: A) Módulo 2 · Acero sismorresistente (correcta) · B) Módulo 4 · Hormigón sismorresistente. A quien falle se le escribe por DM a mano con la respuesta y la lección."
-              },
-              {
-                "n": 3,
-                "visual": "Captura de la portada del carrusel del lunes (oct-tutor-dip-carrusel), compartida en historia: al tocarla lleva al post.",
-                "texto": "La respuesta, con lección y minuto, está en el carrusel del lunes.",
-                "sticker": "Ninguno."
-              },
-              {
-                "n": 4,
-                "visual": "Cierre invertido: fondo ámbar #E8A04A, texto azul.",
-                "texto": "¿No eres alumno y quieres saber cómo es el Diplomado? Respóndeme esta historia y te lo contamos por DM.",
-                "sticker": "RESPONDER A LA HISTORIA (sin palabra clave). Llega como DM y se contesta a mano: cómo es el Diplomado y la agenda de 30 min."
-              }
-            ],
-            "cta": {
-              "instagram": "Responder a la historia: te contamos por DM cómo es el Diplomado.",
-              "facebook": "Responder a la historia: te contamos por Messenger cómo es el Diplomado."
-            },
-            "cta_por_red": {
-              "instagram": "Responder a la historia: te contamos por DM cómo es el Diplomado.",
-              "facebook": "Responder a la historia: te contamos por Messenger cómo es el Diplomado."
-            },
-            "notas_produccion": "Las respuestas a una historia llegan como DM y ni OpenReply ni GHL las contestan: alguien del equipo responde a mano desde la bandeja, con el nombre de la persona y una pregunta al final (guiones en matriz-viral/HISTORIAS-VENTA.md §4). Nunca precio en el DM del Máster: si lo preguntan, se pasa a la cita. | Los votos de encuesta y quiz y lo que escriben en la caja de preguntas se quedan en el panel de la historia: se revisan el mismo día y se escribe por DM a mano a quien votó o preguntó. | En Facebook, si la historia no ofrece el sticker de quiz o de preguntas, ese frame lleva la misma pregunta con «Respóndeme esta historia». | Todo el material es real: capturas o grabaciones de pantalla y cámara de Gabriel. Nada de imágenes generadas. «Texto sobre azul» es un fondo liso #0E2438 con el texto de Instagram, no una imagen. | Antes de publicar, comprobar en la plataforma que la Lección 25 del Módulo 2 es la del espectro sísmico (es la que cita el tutor en la grabación del lanzamiento). Si no coincide, el quiz se cae y el frame 2 pasa a «¿Cuánto tardas en encontrar un minuto concreto en un curso grabado?» con encuesta. | No se usan DIPLOMADO ni TUTOR como palabra: el frame 4 pide responder sin palabra y lo atiende una persona. | 5-oct (Dayana): el frame 3 manda al carrusel del lunes y no al reel, porque el reel del tutor no se grabó.",
+            "notas_produccion": "Las respuestas a una historia llegan como DM y ni OpenReply ni GHL las contestan: alguien del equipo responde a mano desde la bandeja, con el nombre de la persona y una pregunta al final (guiones en matriz-viral/HISTORIAS-VENTA.md §4). Nunca precio en el DM del Máster: si lo preguntan, se pasa a la cita. | Los votos de encuesta y quiz y lo que escriben en la caja de preguntas se quedan en el panel de la historia: se revisan el mismo día y se escribe por DM a mano a quien votó o preguntó. | Todo el material es real: capturas o grabaciones de pantalla y cámara de Gabriel. Nada de imágenes generadas. «Texto sobre azul» es un fondo liso #0E2438 con el texto de Instagram, no una imagen. | El frame 2 solo se publica con una pregunta real de la caja del Lun 5. Si la pregunta cae fuera de los módulos 2 a 9 y el tutor responde que no está en las clases, también vale: es lo que promete. Si no llegaron preguntas, se usa una de Gabriel y el texto cambia a «Una pregunta que le hicimos hoy. Sin editar.». | Sin producción: luz de oficina, sin música de fondo encima de la voz. | 5-oct (Dayana): se quitó toda mención al reel («Esto no sale en el reel», «Mañana sale el reel»): el reel del tutor no se grabó y el reel que sale en su lugar no se promociona en historias. | 6-oct (Dayana): Daniela viaja y no se graban videos nuevos hasta que vuelva. Sale el Mié 7 (la semana de historias se corrió un día). El reel del Mié 7 no se promociona en historias. Pregunta sugerida si no llegaron preguntas a la caja: «¿Cómo reviso el punzonamiento de una zapata en Robot?» (el buscador del tutor la lleva a M6 · Lección 37), con el texto «Una pregunta que le hicimos hoy. Sin editar.».",
             "origen": "calendario-octubre (fase 2)"
           }
         },
@@ -4451,85 +4434,23 @@
           "fecha": "Mar 13",
           "fecha_iso": "2026-10-13",
           "semana": "Semana 2 (12-18 oct)",
-          "id": "oct-cotiza-historias",
-          "titulo": "¿Cuánto cobras por m²?",
-          "tipo": "lead magnet",
-          "formato_publicacion": "historias",
+          "id": "oct-hist-1028",
+          "titulo": "«¿Me sirve si vengo de obra?»",
+          "tipo": "testimonio",
+          "formato_publicacion": "HISTORIAS (4 frames)",
           "idea": {
-            "titulo": "¿Cuánto cobras por m²?",
-            "formato": "historias",
-            "desarrollo": "¿Cuánto cobras por m² de diseño estructural?"
+            "titulo": "«¿Me sirve si vengo de obra?»",
+            "formato": "HISTORIAS (4 frames)",
+            "desarrollo": "«¿Me sirve si vengo de obra?»"
           },
-          "destacada": "🎁 HERRAMIENTAS",
+          "destacada": "⭐ ALUMNOS",
           "contenido": {
-            "id": "oct-cotiza-historias",
+            "id": "oct-hist-1028",
             "fecha": "Mar 13 oct",
             "fecha_iso": "2026-10-13",
             "semana": "Semana 2 (12-18 oct)",
             "grupo": "GRUPO 5 · Historias (IG/FB)",
-            "tipo": "lead magnet",
-            "formato": "historias",
-            "redes": [
-              "instagram",
-              "facebook"
-            ],
-            "producto": "Lead magnet · Cotizador",
-            "audiencia": "seguidores",
-            "estado": "COMPLETA",
-            "titulo": "¿Cuánto cobras por m²?",
-            "hook": "¿Cuánto cobras por m² de diseño estructural?",
-            "historias": [
-              {
-                "n": 1,
-                "visual": "Fondo navy con cuadrícula. Sticker de ENCUESTA.",
-                "texto": "¿Cuánto cobras por m² de diseño estructural? · Menos de 5 USD / 5 o más"
-              },
-              {
-                "n": 2,
-                "visual": "Captura del reel del día publicado.",
-                "texto": "Hicimos la cuenta: a 5 USD por m² una vivienda de 3 niveles te paga 14,71 la hora."
-              },
-              {
-                "n": 3,
-                "visual": "Captura real de la tarjeta de resultado del cotizador (img/resultado.jpg).",
-                "texto": "El cotizador es gratis. Respóndeme COTIZA y te mando el enlace."
-              }
-            ],
-            "cta": {
-              "instagram": "Respuesta a la historia (DM manual con el enlace)"
-            },
-            "condicion": "Las respuestas a una historia llegan como DM y OpenReply no las contesta: alguien del equipo manda el enlace a mano desde la bandeja.",
-            "enlace_recurso": "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/cotizador-honorarios/",
-            "origen": "leadmagnet-cotiza-octubre.json",
-            "formato_detalle": "historias",
-            "red_principal": "instagram",
-            "cta_por_red": {
-              "instagram": "Respuesta a la historia (DM manual con el enlace)"
-            },
-            "notas_produccion": "Las respuestas a una historia llegan como DM y OpenReply no las contesta: alguien del equipo manda el enlace a mano desde la bandeja."
-          }
-        },
-        {
-          "fecha": "Mié 14",
-          "fecha_iso": "2026-10-14",
-          "semana": "Semana 2 (12-18 oct)",
-          "id": "oct-hist-1014",
-          "titulo": "¿Dónde pondrías AutoCAD?",
-          "tipo": "valor",
-          "formato_publicacion": "HISTORIAS (4 frames)",
-          "idea": {
-            "titulo": "¿Dónde pondrías AutoCAD?",
-            "formato": "HISTORIAS (4 frames)",
-            "desarrollo": "¿Dónde pondrías AutoCAD?"
-          },
-          "destacada": "🎯 BIM + IA",
-          "contenido": {
-            "id": "oct-hist-1014",
-            "fecha": "Mié 14 oct",
-            "fecha_iso": "2026-10-14",
-            "semana": "Semana 2 (12-18 oct)",
-            "grupo": "GRUPO 5 · Historias (IG/FB)",
-            "tipo": "valor",
+            "tipo": "testimonio",
             "formato": "historias",
             "formato_detalle": "HISTORIAS (4 frames)",
             "redes": [
@@ -4537,48 +4458,121 @@
               "facebook"
             ],
             "red_principal": "instagram",
-            "producto": "Máster",
-            "audiencia": "ingenieros estructurales y estudiantes de últimos semestres",
+            "producto": "Acero",
+            "audiencia": "prospectos de Acero que dudan si el programa se aplica a su trabajo",
             "estado": "COMPLETA",
-            "titulo": "¿Dónde pondrías AutoCAD?",
-            "eje": "NUCLEO-BIM",
-            "pilar": "Pieza del día · abre la puerta a oct-ranking-software-estructural-reel",
-            "hook": "¿Dónde pondrías AutoCAD?",
+            "titulo": "«¿Me sirve si vengo de obra?»",
+            "eje": "PRUEBA-SOCIAL",
+            "pilar": "Pieza del día · abre la puerta a oct-testimonio-acero-reel (o su reserva «3 preguntas antes de empezar Acero»), Mar 13",
+            "hook": "«¿Me sirve si vengo de obra?»",
             "historias": [
               {
                 "n": 1,
-                "visual": "Cámara: Gabriel sostiene la tarjeta de AutoCAD frente al tablero de cartón vacío. 3 s.",
-                "texto": "¿Dónde pondrías AutoCAD?",
-                "sticker": "ENCUESTA: «Arriba» / «Abajo». Se escribe por DM a mano a quien vote «Arriba»: ahí está la conversación."
+                "visual": "RESERVA: cámara, Gabriel leyendo la pregunta en su teléfono y levantando la vista a la lente, 3 s. TESTIMONIO: 3 s del alumno a cámara, con su permiso por escrito.",
+                "texto": "«¿Me sirve si vengo de obra?»",
+                "sticker": "Ninguno."
               },
               {
                 "n": 2,
-                "visual": "Cámara: recorte del rodaje del reel, las manos pegando tarjetas en el tablero (plano cenital, sin que se lean todas las filas).",
-                "texto": "Nosotros lo pusimos en la última fila. Y tenemos argumentos.",
+                "visual": "Captura del reel del día, compartido en historia.",
+                "texto": "Esa y otras dos preguntas, respondidas en el reel de hoy.",
                 "sticker": "Ninguno."
               },
               {
                 "n": 3,
-                "visual": "Captura del reel del día, compartido en historia.",
-                "texto": "El ranking completo, en el reel de hoy. Es nuestra opinión: discútela.",
+                "visual": "Texto sobre azul.",
+                "texto": "¿Cuál es tu duda antes de empezar?",
+                "sticker": "ENCUESTA de 4 opciones: «Si me sirve» / «El tiempo» / «Los certificados» / «Otra». A quien vote se le escribe por DM a mano."
+              },
+              {
+                "n": 4,
+                "visual": "Captura real de la herramienta gratis de verificación de acero.",
+                "texto": "Mientras lo piensas, prueba tu diseño. Respóndeme ACERO y te mando el recurso gratis de verificación de acero.",
+                "sticker": "RESPONDER CON PALABRA «ACERO». Llega como DM y se contesta a mano con el enlace del recurso."
+              }
+            ],
+            "cta": {
+              "instagram": "Responde esta historia con ACERO y te mando el recurso gratis de verificación de acero.",
+              "facebook": "Responde esta historia con ACERO y te mando el recurso gratis de verificación de acero."
+            },
+            "cta_por_red": {
+              "instagram": "Responde esta historia con ACERO y te mando el recurso gratis de verificación de acero.",
+              "facebook": "Responde esta historia con ACERO y te mando el recurso gratis de verificación de acero."
+            },
+            "notas_produccion": "Las respuestas a una historia llegan como DM y ni OpenReply ni GHL las contestan: alguien del equipo responde a mano desde la bandeja, con el nombre de la persona y una pregunta al final (guiones en matriz-viral/HISTORIAS-VENTA.md §4). Nunca precio en el DM del Máster: si lo preguntan, se pasa a la cita. | Quien responda ACERO recibe a mano el enlace del recurso gratis de verificación de acero (funnel.dgdesignmodeling.com/acceso-gratis-verificacion-acero-form). ACERO está viva en GHL para comentarios; la respuesta a una historia no la recoge el bot. | Los votos de encuesta y quiz y lo que escriben en la caja de preguntas se quedan en el panel de la historia: se revisan el mismo día y se escribe por DM a mano a quien votó o preguntó. | Todo el material es real: capturas o grabaciones de pantalla y cámara de Gabriel. Nada de imágenes generadas. «Texto sobre azul» es un fondo liso #0E2438 con el texto de Instagram, no una imagen. | Escrita para la RESERVA (Gabriel responde «3 preguntas antes de empezar Acero»). Si el 21-oct hay alumno confirmado y sale el testimonio, los frames 1 y 2 se reescriben el día de edición con la frase real del alumno (nunca palabras puestas en su boca) y los frames 3 y 4 no cambian. | Nada de alumnos, nombres ni resultados inventados. Sin permiso por escrito, no hay testimonio. | Guardar en destacada ALUMNOS si es testimonio; en ACERO si es la reserva. | 6-oct (Dayana): Daniela viaja y no se graban videos nuevos hasta que vuelva. Pasa del Mié 28 al Mar 13 junto con el testimonio.",
+            "origen": "calendario-octubre (fase 2)"
+          }
+        },
+        {
+          "fecha": "Mié 14",
+          "fecha_iso": "2026-10-14",
+          "semana": "Semana 2 (12-18 oct)",
+          "id": "oct-hist-1007",
+          "titulo": "¿En qué módulo estaba?",
+          "tipo": "lanzamiento",
+          "formato_publicacion": "HISTORIAS (4 frames)",
+          "idea": {
+            "titulo": "¿En qué módulo estaba?",
+            "formato": "HISTORIAS (4 frames)",
+            "desarrollo": "Levanta la mano si alguna vez volviste a ver una clase entera para encontrar un minuto."
+          },
+          "destacada": "🎯 BIM + IA",
+          "contenido": {
+            "id": "oct-hist-1007",
+            "fecha": "Mié 14 oct",
+            "fecha_iso": "2026-10-14",
+            "semana": "Semana 2 (12-18 oct)",
+            "grupo": "GRUPO 5 · Historias (IG/FB)",
+            "tipo": "lanzamiento",
+            "formato": "historias",
+            "formato_detalle": "HISTORIAS (4 frames)",
+            "redes": [
+              "instagram",
+              "facebook"
+            ],
+            "red_principal": "instagram",
+            "producto": "Diplomado BIM en Estructuras",
+            "audiencia": "prospectos del Diplomado · alumnos",
+            "estado": "COMPLETA",
+            "titulo": "¿En qué módulo estaba?",
+            "eje": "PROMO",
+            "pilar": "Pieza del día · abre la puerta a oct-tutor-dip-post-fb (post de clases grabadas)",
+            "hook": "Levanta la mano si alguna vez volviste a ver una clase entera para encontrar un minuto.",
+            "historias": [
+              {
+                "n": 1,
+                "visual": "Cámara: Gabriel levanta la mano a cámara, plano medio, 3 s, sin hablar.",
+                "texto": "Levanta la mano si alguna vez volviste a ver una clase entera para encontrar UN minuto.",
+                "sticker": "Ninguno."
+              },
+              {
+                "n": 2,
+                "visual": "Texto sobre azul.",
+                "texto": "Sin buscar: ¿en qué módulo del Diplomado se explica cómo crear el espectro sísmico y meterlo en Robot?",
+                "sticker": "QUIZ: A) Módulo 2 · Acero sismorresistente (correcta) · B) Módulo 4 · Hormigón sismorresistente. A quien falle se le escribe por DM a mano con la respuesta y la lección."
+              },
+              {
+                "n": 3,
+                "visual": "Captura del post del día (oct-tutor-dip-post-fb), compartida en historia: al tocarla lleva al post.",
+                "texto": "La respuesta, con lección y minuto, está en el post de hoy.",
                 "sticker": "Ninguno."
               },
               {
                 "n": 4,
-                "visual": "Cierre invertido ámbar.",
-                "texto": "¿En qué fila estás tú? Respóndeme NIVEL y te mando el test.",
-                "sticker": "RESPONDER CON PALABRA «NIVEL». Llega como DM y se contesta a mano con el enlace del test."
+                "visual": "Cierre invertido: fondo ámbar #E8A04A, texto azul.",
+                "texto": "¿No eres alumno y quieres saber cómo es el Diplomado? Respóndeme esta historia y te lo contamos por DM.",
+                "sticker": "RESPONDER A LA HISTORIA (sin palabra clave). Llega como DM y se contesta a mano: cómo es el Diplomado y la agenda de 30 min."
               }
             ],
             "cta": {
-              "instagram": "Responde esta historia con NIVEL y te mando el test.",
-              "facebook": "Responde esta historia con NIVEL y te mando el test."
+              "instagram": "Responder a la historia: te contamos por DM cómo es el Diplomado.",
+              "facebook": "Responder a la historia: te contamos por Messenger cómo es el Diplomado."
             },
             "cta_por_red": {
-              "instagram": "Responde esta historia con NIVEL y te mando el test.",
-              "facebook": "Responde esta historia con NIVEL y te mando el test."
+              "instagram": "Responder a la historia: te contamos por DM cómo es el Diplomado.",
+              "facebook": "Responder a la historia: te contamos por Messenger cómo es el Diplomado."
             },
-            "notas_produccion": "Las respuestas a una historia llegan como DM y ni OpenReply ni GHL las contestan: alguien del equipo responde a mano desde la bandeja, con el nombre de la persona y una pregunta al final (guiones en matriz-viral/HISTORIAS-VENTA.md §4). Nunca precio en el DM del Máster: si lo preguntan, se pasa a la cita. | Quien responda NIVEL recibe a mano el enlace del Test de Nivel BIM (20 preguntas, 5 minutos, gratis). NIVEL está viva en GHL para comentarios; la respuesta a una historia no la recoge el bot. | Los votos de encuesta y quiz y lo que escriben en la caja de preguntas se quedan en el panel de la historia: se revisan el mismo día y se escribe por DM a mano a quien votó o preguntó. | Todo el material es real: capturas o grabaciones de pantalla y cámara de Gabriel. Nada de imágenes generadas. «Texto sobre azul» es un fondo liso #0E2438 con el texto de Instagram, no una imagen. | El frame 2 no enseña el tablero completo: el orden de las filas es lo que hace ver el reel. | Los logos son marcas de sus fabricantes y se muestran tal cual.",
+            "notas_produccion": "Las respuestas a una historia llegan como DM y ni OpenReply ni GHL las contestan: alguien del equipo responde a mano desde la bandeja, con el nombre de la persona y una pregunta al final (guiones en matriz-viral/HISTORIAS-VENTA.md §4). Nunca precio en el DM del Máster: si lo preguntan, se pasa a la cita. | Los votos de encuesta y quiz y lo que escriben en la caja de preguntas se quedan en el panel de la historia: se revisan el mismo día y se escribe por DM a mano a quien votó o preguntó. | En Facebook, si la historia no ofrece el sticker de quiz o de preguntas, ese frame lleva la misma pregunta con «Respóndeme esta historia». | Todo el material es real: capturas o grabaciones de pantalla y cámara de Gabriel. Nada de imágenes generadas. «Texto sobre azul» es un fondo liso #0E2438 con el texto de Instagram, no una imagen. | Antes de publicar, comprobar en la plataforma que la Lección 25 del Módulo 2 es la del espectro sísmico (es la que cita el tutor en la grabación del lanzamiento). Si no coincide, el quiz se cae y el frame 2 pasa a «¿Cuánto tardas en encontrar un minuto concreto en un curso grabado?» con encuesta. | No se usan DIPLOMADO ni TUTOR como palabra: el frame 4 pide responder sin palabra y lo atiende una persona. | 5-oct (Dayana): el frame 3 manda al carrusel del lunes y no al reel, porque el reel del tutor no se grabó. | 6-oct (Dayana): Daniela viaja y no se graban videos nuevos hasta que vuelva. Pasa del Mié 7 al Mié 14, el día del post de clases grabadas: el Mié 7 lo ocupa la secuencia del martes.",
             "origen": "calendario-octubre (fase 2)"
           }
         },
@@ -5014,11 +5008,11 @@
           "fecha_iso": "2026-10-23",
           "semana": "Semana 3 (19-25 oct)",
           "id": "oct-hist-1023",
-          "titulo": "Fuera antes de presentar",
+          "titulo": "¿Dónde pondrías AutoCAD? · Fuera antes de presentar",
           "tipo": "problema",
           "formato_publicacion": "HISTORIAS (4 frames)",
           "idea": {
-            "titulo": "Fuera antes de presentar",
+            "titulo": "¿Dónde pondrías AutoCAD? · Fuera antes de presentar",
             "formato": "HISTORIAS (4 frames)",
             "desarrollo": "Lo dejaron fuera antes de abrir su propuesta."
           },
@@ -5040,27 +5034,27 @@
             "producto": "Máster",
             "audiencia": "ingenieros civiles y arquitectos que trabajan con AutoCAD y todavía no ven BIM como requisito",
             "estado": "COMPLETA",
-            "titulo": "Fuera antes de presentar",
+            "titulo": "¿Dónde pondrías AutoCAD? · Fuera antes de presentar",
             "eje": "NUCLEO-BIM",
-            "pilar": "Pieza del día · abre la puerta a oct-ang3-bim-se-exige-post",
+            "pilar": "Pieza del día · abre la puerta a oct-ranking-software-estructural-reel y a oct-ang3-bim-se-exige-post (Vie 23)",
             "hook": "Lo dejaron fuera antes de abrir su propuesta.",
             "historias": [
               {
                 "n": 1,
-                "visual": "Cámara: Gabriel a cámara, serio, 3 s, sin hablar.",
-                "texto": "Lo dejaron fuera antes de abrir su propuesta.",
-                "sticker": "Ninguno."
+                "visual": "Cámara: Gabriel sostiene la tarjeta de AutoCAD frente al tablero de cartón vacío. 3 s.",
+                "texto": "¿Dónde pondrías AutoCAD?",
+                "sticker": "ENCUESTA: «Arriba» / «Abajo». Se escribe por DM a mano a quien vote «Arriba»: ahí está la conversación."
               },
               {
                 "n": 2,
-                "visual": "Texto sobre azul.",
-                "texto": "¿Ya te pidieron BIM en un concurso o en un trabajo?",
-                "sticker": "ENCUESTA: «Sí, ya me lo pidieron» / «Todavía no». A quien marque «Sí» se le escribe por DM a mano."
+                "visual": "Captura del reel del día, compartido en historia.",
+                "texto": "El ranking completo de software estructural, en el reel de hoy. Es nuestra opinión: discútela.",
+                "sticker": "Ninguno."
               },
               {
                 "n": 3,
                 "visual": "Captura del post del día, compartido en historia.",
-                "texto": "Hoy en el feed: dos casos que nos contaron en llamadas. Sin nombres, sin países.",
+                "texto": "Y en el feed: dos casos que nos contaron en llamadas. Sin nombres, sin países.",
                 "sticker": "Ninguno."
               },
               {
@@ -5078,7 +5072,7 @@
               "instagram": "Responde esta historia con NIVEL y te mando el test.",
               "facebook": "Responde esta historia con NIVEL y te mando el test."
             },
-            "notas_produccion": "Las respuestas a una historia llegan como DM y ni OpenReply ni GHL las contestan: alguien del equipo responde a mano desde la bandeja, con el nombre de la persona y una pregunta al final (guiones en matriz-viral/HISTORIAS-VENTA.md §4). Nunca precio en el DM del Máster: si lo preguntan, se pasa a la cita. | Quien responda NIVEL recibe a mano el enlace del Test de Nivel BIM (20 preguntas, 5 minutos, gratis). NIVEL está viva en GHL para comentarios; la respuesta a una historia no la recoge el bot. | Los votos de encuesta y quiz y lo que escriben en la caja de preguntas se quedan en el panel de la historia: se revisan el mismo día y se escribe por DM a mano a quien votó o preguntó. | Todo el material es real: capturas o grabaciones de pantalla y cámara de Gabriel. Nada de imágenes generadas. «Texto sobre azul» es un fondo liso #0E2438 con el texto de Instagram, no una imagen. | No se nombra ninguna norma ni país concreto: el post tampoco lo hace. | Quien respondió NIVEL ayer ya tiene el test: no se le manda de nuevo, se le pregunta si agendó.",
+            "notas_produccion": "Las respuestas a una historia llegan como DM y ni OpenReply ni GHL las contestan: alguien del equipo responde a mano desde la bandeja, con el nombre de la persona y una pregunta al final (guiones en matriz-viral/HISTORIAS-VENTA.md §4). Nunca precio en el DM del Máster: si lo preguntan, se pasa a la cita. | Quien responda NIVEL recibe a mano el enlace del Test de Nivel BIM (20 preguntas, 5 minutos, gratis). NIVEL está viva en GHL para comentarios; la respuesta a una historia no la recoge el bot. | Los votos de encuesta y quiz y lo que escriben en la caja de preguntas se quedan en el panel de la historia: se revisan el mismo día y se escribe por DM a mano a quien votó o preguntó. | Todo el material es real: capturas o grabaciones de pantalla y cámara de Gabriel. Nada de imágenes generadas. «Texto sobre azul» es un fondo liso #0E2438 con el texto de Instagram, no una imagen. | No se nombra ninguna norma ni país concreto: el post tampoco lo hace. | Quien respondió NIVEL ayer ya tiene el test: no se le manda de nuevo, se le pregunta si agendó. | 6-oct (Dayana): Daniela viaja y no se graban videos nuevos hasta que vuelva. Junta en 4 frames las historias del ranking (antes Mié 14) y las del post «Perdió el concurso»: los dos salen el Vie 23.",
             "origen": "calendario-octubre (fase 2)"
           }
         },
@@ -5188,13 +5182,13 @@
             "estado": "COMPLETA",
             "titulo": "Preparando el video de mañana",
             "eje": "COMUNIDAD",
-            "pilar": "Detrás de cámara · se prepara el reel del Mié 28 (testimonio o reserva)",
+            "pilar": "Detrás de cámara · las dudas antes de empezar Acero (ya no anuncia el video del Mié 28, que ahora es el reel de COTIZA)",
             "hook": "Mañana sale un video distinto. Hoy lo preparamos.",
             "historias": [
               {
                 "n": 1,
                 "visual": "Cámara: Gabriel montando el trípode y el aro de luz en la oficina. 5 s, sin hablar.",
-                "texto": "Mañana sale un video distinto. Hoy lo preparamos.",
+                "texto": "Esta semana es de Acero. Hoy juntamos sus dudas.",
                 "sticker": "Ninguno."
               },
               {
@@ -5218,7 +5212,7 @@
               "instagram": "Caja de preguntas: «Tu duda sobre Acero» (respuesta por DM a mano).",
               "facebook": "Misma caja; si Facebook no ofrece el sticker de preguntas: «Respóndeme esta historia con tu duda sobre Acero»."
             },
-            "notas_produccion": "Las respuestas a una historia llegan como DM y ni OpenReply ni GHL las contestan: alguien del equipo responde a mano desde la bandeja, con el nombre de la persona y una pregunta al final (guiones en matriz-viral/HISTORIAS-VENTA.md §4). Nunca precio en el DM del Máster: si lo preguntan, se pasa a la cita. | Los votos de encuesta y quiz y lo que escriben en la caja de preguntas se quedan en el panel de la historia: se revisan el mismo día y se escribe por DM a mano a quien votó o preguntó. | En Facebook, si la historia no ofrece el sticker de quiz o de preguntas, ese frame lleva la misma pregunta con «Respóndeme esta historia». | Todo el material es real: capturas o grabaciones de pantalla y cámara de Gabriel. Nada de imágenes generadas. «Texto sobre azul» es un fondo liso #0E2438 con el texto de Instagram, no una imagen. | Si el Mié 28 sale el testimonio: el frame 1 enseña la preparación de la videollamada (sin la cara ni el nombre del alumno hasta mañana) y el frame 2 dice «Mañana habla alguien que ya lo hizo». Si sale la reserva: se queda como está. | Ninguna respuesta con precio en el DM salvo que la persona lo pida (Acero sí admite precio por DM; nunca en historia).",
+            "notas_produccion": "Las respuestas a una historia llegan como DM y ni OpenReply ni GHL las contestan: alguien del equipo responde a mano desde la bandeja, con el nombre de la persona y una pregunta al final (guiones en matriz-viral/HISTORIAS-VENTA.md §4). Nunca precio en el DM del Máster: si lo preguntan, se pasa a la cita. | Los votos de encuesta y quiz y lo que escriben en la caja de preguntas se quedan en el panel de la historia: se revisan el mismo día y se escribe por DM a mano a quien votó o preguntó. | En Facebook, si la historia no ofrece el sticker de quiz o de preguntas, ese frame lleva la misma pregunta con «Respóndeme esta historia». | Todo el material es real: capturas o grabaciones de pantalla y cámara de Gabriel. Nada de imágenes generadas. «Texto sobre azul» es un fondo liso #0E2438 con el texto de Instagram, no una imagen. | Si el Mié 28 sale el testimonio: el frame 1 enseña la preparación de la videollamada (sin la cara ni el nombre del alumno hasta mañana) y el frame 2 dice «Mañana habla alguien que ya lo hizo». Si sale la reserva: se queda como está. | Ninguna respuesta con precio en el DM salvo que la persona lo pida (Acero sí admite precio por DM; nunca en historia). | 6-oct (Dayana): Daniela viaja y no se graban videos nuevos hasta que vuelva. Se quitó «Mañana sale un video distinto»: el testimonio pasó al Mar 13 y el Mié 28 sale el reel de COTIZA.",
             "origen": "calendario-octubre (fase 2)"
           }
         },
@@ -5226,73 +5220,62 @@
           "fecha": "Mié 28",
           "fecha_iso": "2026-10-28",
           "semana": "Semana 4 (26 oct-1 nov)",
-          "id": "oct-hist-1028",
-          "titulo": "«¿Me sirve si vengo de obra?»",
-          "tipo": "testimonio",
-          "formato_publicacion": "HISTORIAS (4 frames)",
+          "id": "oct-cotiza-historias",
+          "titulo": "¿Cuánto cobras por m²?",
+          "tipo": "lead magnet",
+          "formato_publicacion": "historias",
           "idea": {
-            "titulo": "«¿Me sirve si vengo de obra?»",
-            "formato": "HISTORIAS (4 frames)",
-            "desarrollo": "«¿Me sirve si vengo de obra?»"
+            "titulo": "¿Cuánto cobras por m²?",
+            "formato": "historias",
+            "desarrollo": "¿Cuánto cobras por m² de diseño estructural?"
           },
-          "destacada": "⭐ ALUMNOS",
+          "destacada": "🎁 HERRAMIENTAS",
           "contenido": {
-            "id": "oct-hist-1028",
+            "id": "oct-cotiza-historias",
             "fecha": "Mié 28 oct",
             "fecha_iso": "2026-10-28",
             "semana": "Semana 4 (26 oct-1 nov)",
             "grupo": "GRUPO 5 · Historias (IG/FB)",
-            "tipo": "testimonio",
+            "tipo": "lead magnet",
             "formato": "historias",
-            "formato_detalle": "HISTORIAS (4 frames)",
             "redes": [
               "instagram",
               "facebook"
             ],
-            "red_principal": "instagram",
-            "producto": "Acero",
-            "audiencia": "prospectos de Acero que dudan si el programa se aplica a su trabajo",
+            "producto": "Lead magnet · Cotizador",
+            "audiencia": "seguidores",
             "estado": "COMPLETA",
-            "titulo": "«¿Me sirve si vengo de obra?»",
-            "eje": "PRUEBA-SOCIAL",
-            "pilar": "Pieza del día · abre la puerta a oct-testimonio-acero-reel (o su reserva «3 preguntas antes de empezar Acero»)",
-            "hook": "«¿Me sirve si vengo de obra?»",
+            "titulo": "¿Cuánto cobras por m²?",
+            "hook": "¿Cuánto cobras por m² de diseño estructural?",
             "historias": [
               {
                 "n": 1,
-                "visual": "RESERVA: cámara, Gabriel leyendo la pregunta en su teléfono y levantando la vista a la lente, 3 s. TESTIMONIO: 3 s del alumno a cámara, con su permiso por escrito.",
-                "texto": "«¿Me sirve si vengo de obra?»",
-                "sticker": "Ninguno."
+                "visual": "Fondo navy con cuadrícula. Sticker de ENCUESTA.",
+                "texto": "¿Cuánto cobras por m² de diseño estructural? · Menos de 5 USD / 5 o más"
               },
               {
                 "n": 2,
-                "visual": "Captura del reel del día, compartido en historia.",
-                "texto": "Esa y otras dos preguntas, respondidas en el reel de hoy.",
-                "sticker": "Ninguno."
+                "visual": "Captura del reel del día publicado.",
+                "texto": "Hicimos la cuenta: a 5 USD por m² una vivienda de 3 niveles te paga 14,71 la hora."
               },
               {
                 "n": 3,
-                "visual": "Texto sobre azul.",
-                "texto": "¿Cuál es tu duda antes de empezar?",
-                "sticker": "ENCUESTA de 4 opciones: «Si me sirve» / «El tiempo» / «Los certificados» / «Otra». A quien vote se le escribe por DM a mano."
-              },
-              {
-                "n": 4,
-                "visual": "Captura real de la herramienta gratis de verificación de acero.",
-                "texto": "Mientras lo piensas, prueba tu diseño. Respóndeme ACERO y te mando el recurso gratis de verificación de acero.",
-                "sticker": "RESPONDER CON PALABRA «ACERO». Llega como DM y se contesta a mano con el enlace del recurso."
+                "visual": "Captura real de la tarjeta de resultado del cotizador (img/resultado.jpg).",
+                "texto": "El cotizador es gratis. Respóndeme COTIZA y te mando el enlace."
               }
             ],
             "cta": {
-              "instagram": "Responde esta historia con ACERO y te mando el recurso gratis de verificación de acero.",
-              "facebook": "Responde esta historia con ACERO y te mando el recurso gratis de verificación de acero."
+              "instagram": "Respuesta a la historia (DM manual con el enlace)"
             },
+            "condicion": "Las respuestas a una historia llegan como DM y OpenReply no las contesta: alguien del equipo manda el enlace a mano desde la bandeja.",
+            "enlace_recurso": "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/cotizador-honorarios/",
+            "origen": "leadmagnet-cotiza-octubre.json",
+            "formato_detalle": "historias",
+            "red_principal": "instagram",
             "cta_por_red": {
-              "instagram": "Responde esta historia con ACERO y te mando el recurso gratis de verificación de acero.",
-              "facebook": "Responde esta historia con ACERO y te mando el recurso gratis de verificación de acero."
+              "instagram": "Respuesta a la historia (DM manual con el enlace)"
             },
-            "notas_produccion": "Las respuestas a una historia llegan como DM y ni OpenReply ni GHL las contestan: alguien del equipo responde a mano desde la bandeja, con el nombre de la persona y una pregunta al final (guiones en matriz-viral/HISTORIAS-VENTA.md §4). Nunca precio en el DM del Máster: si lo preguntan, se pasa a la cita. | Quien responda ACERO recibe a mano el enlace del recurso gratis de verificación de acero (funnel.dgdesignmodeling.com/acceso-gratis-verificacion-acero-form). ACERO está viva en GHL para comentarios; la respuesta a una historia no la recoge el bot. | Los votos de encuesta y quiz y lo que escriben en la caja de preguntas se quedan en el panel de la historia: se revisan el mismo día y se escribe por DM a mano a quien votó o preguntó. | Todo el material es real: capturas o grabaciones de pantalla y cámara de Gabriel. Nada de imágenes generadas. «Texto sobre azul» es un fondo liso #0E2438 con el texto de Instagram, no una imagen. | Escrita para la RESERVA (Gabriel responde «3 preguntas antes de empezar Acero»). Si el 21-oct hay alumno confirmado y sale el testimonio, los frames 1 y 2 se reescriben el día de edición con la frase real del alumno (nunca palabras puestas en su boca) y los frames 3 y 4 no cambian. | Nada de alumnos, nombres ni resultados inventados. Sin permiso por escrito, no hay testimonio. | Guardar en destacada ALUMNOS si es testimonio; en ACERO si es la reserva.",
-            "origen": "calendario-octubre (fase 2)"
+            "notas_produccion": "Las respuestas a una historia llegan como DM y OpenReply no las contesta: alguien del equipo manda el enlace a mano desde la bandeja. | 6-oct (Dayana): Daniela viaja y no se graban videos nuevos hasta que vuelva. Pasa del Mar 13 al Mié 28 junto con el reel de COTIZA (su frame 2 es la captura del reel del día)."
           }
         },
         {
@@ -6394,12 +6377,12 @@
       {
         "nombre": "Cotizador de Honorarios Estructurales",
         "palabra": "COTIZA",
-        "estado": "Funnel en GHL montado y probado por Dayana (30-sep). Entra en el workflow de recursos de Ester (rama COTIZADOR: acceso-cotizador-honorarios, correo de acceso, comunidad y oportunidad en NUEVO LEAD MAGNET) y en su workflow propio (lead-cotizador, aviso interno, membresía y secuencia S5). OpenReply se monta justo después de publicar el reel del 13 y el carrusel del 15. Falta volver a pegar ghl-landing.html con el formulario nativo.",
+        "estado": "Funnel en GHL montado y probado por Dayana (30-sep). Entra en el workflow de recursos de Ester (rama COTIZADOR: acceso-cotizador-honorarios, correo de acceso, comunidad y oportunidad en NUEVO LEAD MAGNET) y en su workflow propio (lead-cotizador, aviso interno, membresía y secuencia S5). OpenReply se monta al publicar el carrusel del Jue 15 (el reel pasó al Mié 28, cambio del 6-oct). Falta volver a pegar ghl-landing.html con el formulario nativo.",
         "piezas": [
-          "oct-cotiza-reel",
-          "oct-cotiza-historias",
           "oct-cotiza-carrusel",
-          "oct-blog-cobrar-diseno-estructural"
+          "oct-blog-cobrar-diseno-estructural",
+          "oct-cotiza-reel",
+          "oct-cotiza-historias"
         ],
         "puente": "Especialización en Acero / Diplomado en Estructuras (secuencia de correo S5)"
       }
@@ -6441,22 +6424,22 @@
     "mapa_cta": [
       {
         "palabra": "NIVEL",
-        "fecha": "Jue 8 (historia del creador), Lun 12, Mié 14, Lun 19, Mar 20, Mié 21, Jue 22, Vie 23, Vie 30",
+        "fecha": "Jue 8 (historia del creador), Lun 12, Lun 19, Mar 20, Mié 21, Jue 22, Vie 23 (ranking y post), Vie 30",
         "producto": "Máster"
       },
       {
         "palabra": "ACERO",
-        "fecha": "Vie 9, Vie 16, Lun 26, Mar 27, Mié 28, Jue 29",
+        "fecha": "Vie 9, Mar 13 (testimonio), Vie 16, Lun 26, Mar 27, Jue 29",
         "producto": "Acero"
       },
       {
         "palabra": "COTIZA",
-        "fecha": "Mar 13, Jue 15 (+ historias Mar 13 y blog Sáb 17)",
+        "fecha": "Mar 13 (comunidades y LinkedIn), Jue 15 (carrusel), Sáb 17 (blog), Mié 28 (reel e historias)",
         "producto": "Cotizador → Acero/Diplomado"
       },
       {
         "palabra": "DIPLOMADO",
-        "fecha": "Lun 5 (lanzamiento del tutor; el reel del Mié 7 quedó aplazado)",
+        "fecha": "Lun 5 (lanzamiento del tutor) y Mié 14 (post de clases grabadas)",
         "producto": "Diplomado · montar antes del 5 o CTA a DM"
       },
       {
@@ -6490,7 +6473,6 @@
           "oct-hist-1007",
           "oct-tutor-dip-historias",
           "oct-hist-1012",
-          "oct-hist-1014",
           "oct-hist-1019",
           "oct-hist-1022",
           "oct-hist-1023",
@@ -6851,7 +6833,7 @@
       "segmento": "Dos plantillas. RAMA A (Acero): leads de ACERO, ZAPATA y COTIZA sin compra que respondieron «diseñar, modelar o calcular en software»; EXCLUIR a quien respondió «fabricar, soldar o montar» y a los alumnos de Acero. RAMA B (Diplomado): leads del Módulo 1 gratis del Diplomado y leads del Máster que dijeron NO a la reserva; EXCLUIR alumnos del Diplomado. Nadie recibe las dos ramas.",
       "objetivo": "Lo caro no es el curso",
       "cuerpo": "Hola, {{contact.first_name}}:\n\nCuando alguien nos dice que no se forma por dinero, casi siempre usa la misma frase: «cuando me paguen».\n\nEs una razón real. El flujo de caja de un ingeniero independiente es irregular, y nadie debería endeudarse por un curso.\n\nPero hay otro costo que no llega en factura. La nave que dijiste que no porque no podías calcularla. El proyecto que le pasaste a otro, que la próxima vez se lo piden directamente a él.\n\nEse costo no se ve en el mes. Se ve al final del año, sumando lo que no entró.\n\n[RAMA A · Acero]\n\nSi quieres calcular tú lo que hoy le pasas a otro, la Especialización en Diseño Estructural BIM en Acero es el camino corto: 4 cursos en Revit, Robot y Advance Steel, 100 % asincrónica, con acceso que no caduca y un tutor de IA entrenado con las clases.\n\n[RAMA B · Diplomado]\n\nSi lo que buscas es especializarte en estructuras con BIM de principio a fin, el Diplomado BIM en Estructuras cubre acero y hormigón sismorresistente, cimentaciones, documentación BIM y presupuestos. Y tiene un tutor de IA que te dice la lección y el minuto donde se explicó cada tema.\n\n[CIERRE COMÚN]\n\nY si hoy no llegas a fin de mes, no te inscribas. Empieza por lo gratis y vuelve cuando puedas. Te seguimos mandando recursos.\n\nSi tienes dudas sobre cuál te conviene, responde este correo. Te contesta una persona del equipo.\n\nUn abrazo,\n\nEquipo Design Modeling Academy\n\n[SOLO RAMA B] PD: si prefieres verlo primero, el Módulo 1 del Diplomado es gratuito: https://funnel.dgdesignmodeling.com/acceso-gratis-modulo-diplomado-bim-form",
-      "condicion": "SIN PRECIO (el precio de Acero solo va en el correo del Jue 15). La rama A menciona el tutor solo si el botón está en los 4 cursos de Acero; si no, se borra «y un tutor de IA entrenado con las clases». Si el testimonio del Mié 28 salió con alumno real y permiso, se puede añadir antes del cierre común una línea con enlace al reel; si salió el reserva, no. Sin cupos ni fechas de inicio.",
+      "condicion": "SIN PRECIO (el precio de Acero solo va en el correo del Jue 15). La rama A menciona el tutor solo si el botón está en los 4 cursos de Acero; si no, se borra «y un tutor de IA entrenado con las clases». Si el testimonio del Mar 13 salió con alumno real y permiso, se puede añadir antes del cierre común una línea con enlace al reel; si salió el reserva, no. Sin cupos ni fechas de inicio.",
       "contenido": {
         "id": "oct-correo-1028",
         "fecha": "Mié 28 oct",
@@ -6899,7 +6881,7 @@
           "email": "Botón «RAMA A: VER LA ESPECIALIZACIÓN · RAMA B: AGENDAR 30 MINUTOS»."
         },
         "segmento": "Dos plantillas. RAMA A (Acero): leads de ACERO, ZAPATA y COTIZA sin compra que respondieron «diseñar, modelar o calcular en software»; EXCLUIR a quien respondió «fabricar, soldar o montar» y a los alumnos de Acero. RAMA B (Diplomado): leads del Módulo 1 gratis del Diplomado y leads del Máster que dijeron NO a la reserva; EXCLUIR alumnos del Diplomado. Nadie recibe las dos ramas.",
-        "condicion": "SIN PRECIO (el precio de Acero solo va en el correo del Jue 15). La rama A menciona el tutor solo si el botón está en los 4 cursos de Acero; si no, se borra «y un tutor de IA entrenado con las clases». Si el testimonio del Mié 28 salió con alumno real y permiso, se puede añadir antes del cierre común una línea con enlace al reel; si salió el reserva, no. Sin cupos ni fechas de inicio.",
+        "condicion": "SIN PRECIO (el precio de Acero solo va en el correo del Jue 15). La rama A menciona el tutor solo si el botón está en los 4 cursos de Acero; si no, se borra «y un tutor de IA entrenado con las clases». Si el testimonio del Mar 13 salió con alumno real y permiso, se puede añadir antes del cierre común una línea con enlace al reel; si salió el reserva, no. Sin cupos ni fechas de inicio.",
         "notas_produccion": "Es la objeción de dinero (la más repetida en las llamadas sin venta), respondida sin descuento y con la salida honesta de no endeudarse. Mismo ángulo que el post del Vie 30 (oct-obj-dinero-post), aplicado a Acero y Diplomado.",
         "origen": "calendario-octubre (fase 2)"
       }
