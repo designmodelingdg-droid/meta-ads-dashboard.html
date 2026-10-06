@@ -289,7 +289,7 @@
    "actualizada": "2026-09-22T03:33:57.816",
    "cuenta": "design_modeling_dg",
    "enviados": 2,
-   "fallidos": 4,
+   "fallidos": 5,
    "entregados_sin_confirmar": 1,
    "saltados": 0,
    "pendientes": 0,
@@ -573,7 +573,7 @@
    "campana": "CHECKLIST NAVISWORKS",
    "campana_activa": true,
    "enviados": 0,
-   "fallidos": 2,
+   "fallidos": 3,
    "entregados_sin_confirmar": 0,
    "saltados": 0,
    "primer_envio": null,
@@ -843,6 +843,13 @@
   {
    "estado": "FAILED",
    "pero_si_se_entrego": false,
+   "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=AQeCqMzI6cHpkwiXzX4qLAW]",
+   "veces": 1,
+   "ultima_vez": "2026-10-06T10:18:37.858"
+  },
+  {
+   "estado": "FAILED",
+   "pero_si_se_entrego": false,
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=ALlwIzvj5qa8tGmpYhUV7YH]",
    "veces": 1,
    "ultima_vez": "2026-09-30T00:32:12.382"
@@ -923,13 +930,6 @@
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=ALkIibRiGiUh5--6E48gILl]",
    "veces": 1,
    "ultima_vez": "2026-09-30T13:36:52.562"
-  },
-  {
-   "estado": "FAILED",
-   "pero_si_se_entrego": false,
-   "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=AX_ZwDb3S89nB8rdOvgSM8y]",
-   "veces": 1,
-   "ultima_vez": "2026-09-30T03:02:51.449"
   }
  ],
  "enlaces": [
@@ -1400,6 +1400,11 @@
    "cuenta": "design_modeling_dg",
    "fecha": "2026-10-05",
    "seguidores": 81005
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-10-06",
+   "seguidores": 81022
   }
  ],
  "workflows_ghl": {
@@ -1443,7 +1448,7 @@
      }
     ],
     "bot_total": 196,
-    "bot_nuevos_7d": 19
+    "bot_nuevos_7d": 18
    },
    "NIVEL": {
     "publicados": [
@@ -1479,8 +1484,8 @@
      }
     ],
     "en_borrador": [],
-    "bot_total": 156,
-    "bot_nuevos_7d": 108
+    "bot_total": 165,
+    "bot_nuevos_7d": 117
    },
    "DYNAMO": {
     "publicados": [
@@ -1505,7 +1510,7 @@
     "bot_nuevos_7d": 0
    }
   },
-  "embudo_generado": "2026-10-05T17:08Z"
+  "embudo_generado": "2026-10-06T01:17Z"
  },
  "cotejo_con_la_matriz": [
   {
