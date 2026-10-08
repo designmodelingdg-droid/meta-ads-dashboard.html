@@ -1,0 +1,20 @@
+name: Abrir almacén de Apify (solo lectura con ID)
+
+on:
+  push:
+    paths:
+      - matriz-viral/pedidos/apify-acceso.json
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  abrir:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Abrir
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+        run: python3 scripts/apify_acceso.py matriz-viral/pedidos/apify-acceso.json
