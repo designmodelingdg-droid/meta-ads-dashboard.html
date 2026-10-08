@@ -197,6 +197,10 @@ def cuerpo_pieza(p):
     if p.get("notas_produccion") and p.get("notas_produccion") != p.get("condicion"):
         o.append(f'<p class="nota">{e(p["notas_produccion"])}</p>')
     hecho.add("notas_produccion")
+    # Video ya editado (lo deja Claude al editar el crudo); la app de contenido lo importa en meta.video.
+    if p.get("video"):
+        o.append(rot("Video editado") + f'<p><a href="{e(p["video"])}">▶ Ver / descargar el video final</a></p>')
+    hecho.add("video")
     for k, v in p.items():
         if k not in hecho and v not in (None, "", [], {}):
             o.append(rot(k.replace("_", " ")) + valor(v))
