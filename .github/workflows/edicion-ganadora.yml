@@ -1,0 +1,46 @@
+name: Edición ganadora del nicho (Apify)
+
+# Qué formato y qué edición funcionan en el nicho BIM + IA: reels de Instagram,
+# TikTok y YouTube Shorts por palabra, y anuncios activos de la Biblioteca de
+# Meta. Se dispara cuando cambia el pedido (o a mano). Cada actor lleva su tope
+# duro de gasto y la suma no pasa de `tope_total_usd`. Es dinero de Dayana.
+
+on:
+  push:
+    paths:
+      - matriz-viral/pedidos/edicion-ganadora.json
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: edicion-ganadora-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  investigar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Herramientas de video
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+          pip install -q yt-dlp
+      - name: Investigar
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+        run: python3 scripts/edicion_ganadora.py matriz-viral/pedidos/edicion-ganadora.json
+      - name: Commit si cambió
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add matriz-viral/fuentes/edicion-ganadora/ || true
+          git diff --staged --quiet && echo "Nada nuevo que guardar." && exit 0
+          git commit -m "Edición ganadora del nicho: datos de Apify"
+          for i in 1 2 3; do git pull --rebase -q && git push && exit 0; sleep 5; done
+          exit 1

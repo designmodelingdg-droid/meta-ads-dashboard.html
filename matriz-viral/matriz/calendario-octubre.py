@@ -43,7 +43,7 @@ FEED = [
     (14, "oct-tutor-dip-post-fb",              "solución",   "Diplomado", "Comenta DIPLOMADO (si no está montada: DM)", "CAMBIO 6-oct: el post de clases grabadas pasa del Vie 9 al Mié 14 y sale en Instagram y Facebook, porque el reel del ranking se movió al Vie 23."),
     (15, "oct-cotiza-carrusel",                "solución",   "Cotizador", "Comenta COTIZA", "EXTRA lead magnet (jueves)."),
     (16, "oct-ang4-naves-rechazadas-post",     "problema",   "Acero",     "Comenta ACERO", "Ángulo 4 de compradores: los proyectos que rechazas."),
-    (19, "oct-ranking-perfil-bim-carrusel",    "problema",   "Máster",    "Comenta NIVEL", "Ranking: ¿en qué fila estás?"),
+    (19, "oct-workshop-antes-ahora-carrusel",  "solución",   "Workshop → Máster", "Comenta WORKSHOP (si no está montada: DM)", "CAMBIO 8-oct (Dayana): carrusel del workshop del jue 22 con el formato «Antes / Ahora» del post de AECODE del 7-oct. Capturas REALES de Revit 2027 (Assistant y servidor MCP, de solo lectura). Reemplaza al carrusel del ranking, que pasa a reserva y vuelve si no hay capturas a tiempo."),
     (20, "oct-obj-tiempo-reel",                "objeción",   "Máster",    "Comenta NIVEL", "Objeción de tiempo. Graba Gabriel."),
     (21, "oct-acusa-ia-calculo-reel",          "solución",   "Máster",    "Comenta NIVEL", "La IA ordena, tú decides. Graba Gabriel."),
     (22, "oct-obj-certificado-carrusel",       "objeción",   "Máster",    "Comenta NIVEL", "Objeción de certificado. Dayana confirma la lista de certificados antes de diseñar."),
@@ -159,11 +159,12 @@ LEAD_MAGNETS = {
     "retirados": [{"nombre": "Pack de 5 scripts de Dynamo", "palabra": "DYNAMO", "por_que": "Auditoría de septiembre: su reel sacó 0 comentarios y OpenReply falla 4 de 4 porque GHL también contesta. El recurso sigue en /recursos; la palabra sale de los CTA."},
                   {"nombre": "Guía Revit + ChatGPT", "palabra": "CHATGPT", "por_que": "No tiene campaña ni workflow que conteste: nadie recibe nada. La guía se pide con GUIA (OpenReply), que es la palabra que usa el reel del Mié 7."}],
     "mapa_cta": [
-        {"palabra": "NIVEL", "fecha": "Jue 8 (historia del creador), Lun 12, Lun 19, Mar 20, Mié 21, Jue 22, Vie 23 (ranking y post), Vie 30", "producto": "Máster"},
+        {"palabra": "NIVEL", "fecha": "Jue 8 (historia del creador), Lun 12, Mar 20, Mié 21, Jue 22, Vie 23 (ranking y post), Vie 30", "producto": "Máster"},
         {"palabra": "ACERO", "fecha": "Vie 9, Mar 13 (testimonio), Vie 16, Lun 26, Mar 27, Jue 29", "producto": "Acero"},
         {"palabra": "COTIZA", "fecha": "Mar 13 (comunidades y LinkedIn), Jue 15 (carrusel), Sáb 17 (blog), Mié 28 (reel e historias)", "producto": "Cotizador → Acero/Diplomado"},
         {"palabra": "DIPLOMADO", "fecha": "Lun 5 (lanzamiento del tutor) y Mié 14 (post de clases grabadas)", "producto": "Diplomado · montar antes del 5 o CTA a DM"},
         {"palabra": "GUIA", "fecha": "Mié 7 (reel «Una IA no sabe cuándo no sabe», cambio del 5-oct)", "producto": "Guía Revit + ChatGPT (OpenReply, campaña «Guía Revit») → Máster"},
+        {"palabra": "WORKSHOP", "fecha": "Lun 19 (carrusel «Antes / ahora» e historias con cuenta regresiva)", "producto": "Workshop Revit + IA del jue 22-oct → cita de ruta del Máster · la contesta GHL con el enlace de la landing; montar antes del 19 o CTA a DM"},
     ],
 }
 
@@ -192,6 +193,8 @@ DESTACADA_DE = {i.split(" ")[0]: d["destacada"] for d in DESTACADAS for i in d["
 
 
 CHECKLIST = [
+    {"tarea": "WORKSHOP: montar en GHL el disparador de la palabra WORKSHOP (Instagram y Facebook) con el enlace de la landing de registro del workshop, y probarlo desde una cuenta ajena.", "desbloquea": "El carrusel del Lun 19 y sus historias (si no está, el CTA pasa a «Escríbenos por DM»)", "cuando": "antes del 19-oct", "para": "Patricio · Ester y Aylin"},
+    {"tarea": "Capturas reales del carrusel «Antes / ahora» desde Revit 2027: panel del Autodesk Assistant respondiendo, Claude Desktop conectado por el MCP respondiendo con datos del modelo, una tabla de planificación filtrada a mano, láminas hechas a mano y el Assistant creando una lámina. Modelo de DMA o del Diplomado, sin datos de clientes.", "desbloquea": "El carrusel del Lun 19 (sin capturas vuelve el ranking)", "cuando": "antes del 16-oct (puede salir del ensayo del jue 15)", "para": "Gabriel"},
     {"tarea": "DECIDIDO (Dayana, 30-sep): las palabras con embudo las contesta GHL. Pausar en OpenReply las campañas MEMORIA VERIFICABLE, MEMORIA VERIFICABLE copy, MEMORIA DE CÁLCULO, PACK DYNAMO, 5 ERRORES REVIT (BIM/IA) y CHECKLIST NAVISWORKS (BIM/IA). OpenReply queda para las palabras sueltas (TUTORIAL, GUIA, PARTE) y para COTIZA en Instagram; COTIZA en Facebook la contesta GHL.", "desbloquea": "Que los DM de MEMORIA, DYNAMO y BIM/IA no fallen («no eres el dueño de la conversación»)", "cuando": "antes del lunes 5", "para": "Dayana (OpenReply)"},
     {"tarea": "ACERO: subir el 25 % que llega al acceso. El flujo funciona (revisado en GHL el 30-sep): la caída es de gente que recibe el DM y no llena el formulario, y el DM de Instagram solo se entrega dentro de las 24 h del comentario. Acortar el formulario de la landing de las 5 verificaciones y sumar un recordatorio (correo o WhatsApp) a quien tiene lead-acero-verificaciones sin acceso-verificacion.", "desbloquea": "Las 6 piezas de octubre que piden ACERO (la primera el Vie 9)", "cuando": "antes del 9-oct", "para": "Ester y Aylin"},
     {"tarea": "Quitar de GHL la duplicidad de accesos: «✅ OLD Acceso y Descarga PDF Recursos Gratis» sigue publicado (61 inscritos) junto al NEW y puede mandar el acceso dos veces. Comprobar y despublicar el OLD si ya no lo usa nada.", "desbloquea": "Que nadie reciba dos correos de acceso", "cuando": "antes del lunes 5", "para": "Ester y Aylin"},
@@ -241,6 +244,7 @@ def main():
             "BIM e IA NUNCA como palabra de un recurso: son el bot de ventas del Máster (el checklist de Navisworks falló 3 de 5).",
             "DYNAMO fuera de los CTA de octubre: 0 comentarios en su reel y falla en OpenReply.",
             "LOS DOS FORMATOS GANADORES DE SEPTIEMBRE se repiten: el dato de cálculo verificable (cuantía mínima: 44.589 vistas, 146 comentarios, 163 seguidores) y el tutorial paso a paso con palabra (plano 2D → BIM: 99 comentarios, 47 DM). Anunciar un producto («ahora tiene X») nunca va solo: siempre detrás de un problema.",
+            "CAMBIOS DEL 8-OCT: el Lun 19 sale el carrusel del workshop «Antes / ahora: Revit con IA» (formato del post de AECODE del 7-oct que le gustó a Dayana, CTA WORKSHOP); el carrusel del ranking pasa a reserva y las historias del 19 promocionan el workshop con cuenta regresiva.",
             "CAMBIOS DEL 6-OCT: Daniela viaja y no se graban videos nuevos hasta que vuelva. El Mié 7 sale el reel de valor 5 de septiembre («Una IA no sabe cuándo no sabe»). Testimonio de Acero al Mar 13 y reel de COTIZA al Mié 28; ranking al Vie 23; post de clases grabadas al Mié 14. Las historias de la semana 1 se corren un día y ninguna promociona un reel que no sale ese día.",
             "CAMBIOS DEL 5-OCT (revisión semanal, auditoría orgánica de septiembre y reunión de cierre): historias de 4 frames como máximo; cada dato de cálculo cierra con palabra de recurso; los posts del recurso se cuidan también en Facebook (192 comentarios del post de MEMORIA); el reel del tutor queda aplazado hasta que se grabe y en su lugar sale «Una IA no sabe cuándo no sabe», que no se promociona en historias.",
             "UNA venta por semana, el jueves, en historias: 8 tutor · 15 objeción de ACERO · 22 espejo del Máster · 29 ACERO por dentro.",
@@ -281,7 +285,7 @@ def main():
         "destacadas": {"responsable": "Daniela", "nota": "Las cinco de siempre. Se limpian antes del lunes 5 y se alimentan cada viernes con las historias de la semana.", "lista": DESTACADAS},
         "piezas": [],
         "pauta": [],
-        "banco_reserva": [i for i in ["oct-tutor-dip-reel", "ago-derivas-deformaciones", "ago-tip-revit-ia", "ago-revit-ia-futuro"] if i in G],
+        "banco_reserva": [i for i in ["oct-ranking-perfil-bim-carrusel", "oct-tutor-dip-reel", "ago-derivas-deformaciones", "ago-tip-revit-ia", "ago-revit-ia-futuro"] if i in G],
         "correos": correos(),
         "auditoria_previa": {"mes": "2026-09", "artefacto": "https://claude.ai/artifact/BNSfUg4TDFQjibVyN4ATt8",
                              "archivos": ["matriz-viral/auditorias/2026-09-hallazgos.md", "matriz-viral/auditorias/2026-09-auditoria-mes.json"],
