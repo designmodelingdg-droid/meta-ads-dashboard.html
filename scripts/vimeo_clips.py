@@ -103,15 +103,19 @@ def transcribir(tema, carpeta, maximo):
     os.makedirs(destino, exist_ok=True)
     vids, origen = [], ''
     if carpeta:
-        cs = [c for c in paginar('/me/projects', 'uri,name') if c['name'].strip().lower() == carpeta.strip().lower()]
+        todas = paginar('/me/projects', 'uri,name', 1000)
+        cs = [c for c in todas if c['name'].strip().lower() == carpeta.strip().lower()]
         if cs:
             origen = f"carpeta «{cs[0]['name']}»"
             vids = paginar(f"/me/projects/{cs[0]['uri'].split('/')[-1]}/videos", 'uri,name,duration,created_time', maximo)
         else:
             print(f'  AVISO: no encontré la carpeta «{carpeta}»; busco por nombre')
+            palabras = [w for w in re.split(r'\W+', carpeta.lower()) if len(w) > 1]
+            parecidas = [x['name'] for x in todas if any(w in x['name'].lower() for w in palabras)]
+            print('  Carpetas parecidas: ' + ' | '.join(parecidas[:60]))
     if not vids and tema:
         origen = f'búsqueda «{tema}»'
-        vids = paginar(f'/me/videos?query={urllib.parse.quote(tema)}&sort=relevant', 'uri,name,duration,created_time', maximo)
+        vids = paginar(f'/me/videos?query={urllib.parse.quote(tema)}', 'uri,name,duration,created_time', maximo)
     vids = vids[:maximo]
     print(f'→ {len(vids)} videos ({origen})')
 
