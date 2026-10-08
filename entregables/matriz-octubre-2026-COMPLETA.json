@@ -2,14 +2,14 @@
   "_meta": {
     "titulo": "Matriz de contenido — Design Modeling Academy — octubre 2026",
     "periodo": "Del lunes 5 al domingo 1 de noviembre",
-    "generado": "2026-10-06",
+    "generado": "2026-10-08",
     "como_se_regenera": "python3 matriz-viral/matriz/calendario-octubre.py && python3 scripts/build_matriz_mes.py --mes 2026-10",
     "origen": "calendario-octubre.json (orden) + guiones-completos.json (contenido de cada pieza)",
     "fuente_de_datos": "Métricas de Instagram por Meta Graph API (matriz.json, Action «Métricas semanales») y Apify para referentes; histórico en historico-2026.json; compradores en COMPRADORES-VS-NO.md."
   },
   "reglas_del_mes": [
     "REGLA DE ORO: todos los grupos comparten la misma información la misma semana, adaptada a cada canal. El feed del lunes alimenta comunidades, historias, LinkedIn y el correo de la semana.",
-    "FEED: 20 piezas · formato 7 reels / 8 carruseles / 5 posts (40/40/20) · intención 10 problema / 4 solución / 6 objeción o testimonio (50/20/30, del análisis de compradores del 29-sep).",
+    "FEED: 20 piezas · formato 7 reels / 8 carruseles / 5 posts (40/40/20) · intención 9 problema / 5 solución / 6 objeción o testimonio (50/20/30, del análisis de compradores del 29-sep).",
     "A QUIÉN LE HABLAMOS: cada pieza nombra a un perfil comprador de COMPRADORES-VS-NO.md. Si no le habla a ninguno, no entra.",
     "EL PATRÓN: acusar un hábito concreto (8,61 comentarios por 1.000 vistas contra 0,54) o dar un dato de cálculo verificable (DM168: 130 comentarios, 611 guardados). Nada de «la IA te va a reemplazar» (0 comentarios en julio).",
     "POST PLANO = SOLO CON DATO VERIFICABLE, con su fuente en las notas de producción.",
@@ -20,6 +20,7 @@
     "BIM e IA NUNCA como palabra de un recurso: son el bot de ventas del Máster (el checklist de Navisworks falló 3 de 5).",
     "DYNAMO fuera de los CTA de octubre: 0 comentarios en su reel y falla en OpenReply.",
     "LOS DOS FORMATOS GANADORES DE SEPTIEMBRE se repiten: el dato de cálculo verificable (cuantía mínima: 44.589 vistas, 146 comentarios, 163 seguidores) y el tutorial paso a paso con palabra (plano 2D → BIM: 99 comentarios, 47 DM). Anunciar un producto («ahora tiene X») nunca va solo: siempre detrás de un problema.",
+    "CAMBIOS DEL 8-OCT: el Lun 19 sale el carrusel del workshop «Antes / ahora: Revit con IA» (formato del post de AECODE del 7-oct que le gustó a Dayana, CTA WORKSHOP); el carrusel del ranking pasa a reserva y las historias del 19 promocionan el workshop con cuenta regresiva.",
     "CAMBIOS DEL 6-OCT: Daniela viaja y no se graban videos nuevos hasta que vuelva. El Mié 7 sale el reel de valor 5 de septiembre («Una IA no sabe cuándo no sabe»). Testimonio de Acero al Mar 13 y reel de COTIZA al Mié 28; ranking al Vie 23; post de clases grabadas al Mié 14. Las historias de la semana 1 se corren un día y ninguna promociona un reel que no sale ese día.",
     "CAMBIOS DEL 5-OCT (revisión semanal, auditoría orgánica de septiembre y reunión de cierre): historias de 4 frames como máximo; cada dato de cálculo cierra con palabra de recurso; los posts del recurso se cuidan también en Facebook (192 comentarios del post de MEMORIA); el reel del tutor queda aplazado hasta que se grabe y en su lugar sale «Una IA no sabe cuándo no sabe», que no se promociona en historias.",
     "UNA venta por semana, el jueves, en historias: 8 tutor · 15 objeción de ACERO · 22 espejo del Máster · 29 ACERO por dentro.",
@@ -28,6 +29,18 @@
     "Reels de menos de 30 s (en esta cuenta rinden más del doble que los de 30–60 s)."
   ],
   "checklist_tareas": [
+    {
+      "tarea": "WORKSHOP: montar en GHL el disparador de la palabra WORKSHOP (Instagram y Facebook) con el enlace de la landing de registro del workshop, y probarlo desde una cuenta ajena.",
+      "desbloquea": "El carrusel del Lun 19 y sus historias (si no está, el CTA pasa a «Escríbenos por DM»)",
+      "cuando": "antes del 19-oct",
+      "para": "Patricio · Ester y Aylin"
+    },
+    {
+      "tarea": "Capturas reales del carrusel «Antes / ahora» desde Revit 2027: panel del Autodesk Assistant respondiendo, Claude Desktop conectado por el MCP respondiendo con datos del modelo, una tabla de planificación filtrada a mano, láminas hechas a mano y el Assistant creando una lámina. Modelo de DMA o del Diplomado, sin datos de clientes.",
+      "desbloquea": "El carrusel del Lun 19 (sin capturas vuelve el ranking)",
+      "cuando": "antes del 16-oct (puede salir del ensayo del jue 15)",
+      "para": "Gabriel"
+    },
     {
       "tarea": "DECIDIDO (Dayana, 30-sep): las palabras con embudo las contesta GHL. Pausar en OpenReply las campañas MEMORIA VERIFICABLE, MEMORIA VERIFICABLE copy, MEMORIA DE CÁLCULO, PACK DYNAMO, 5 ERRORES REVIT (BIM/IA) y CHECKLIST NAVISWORKS (BIM/IA). OpenReply queda para las palabras sueltas (TUTORIAL, GUIA, PARTE) y para COTIZA en Instagram; COTIZA en Facebook la contesta GHL.",
       "desbloquea": "Que los DM de MEMORIA, DYNAMO y BIM/IA no fallen («no eres el dueño de la conversación»)",
@@ -965,91 +978,91 @@
           "fecha": "Lun 19",
           "fecha_iso": "2026-10-19",
           "semana": "Semana 3 (19-25 oct)",
-          "id": "oct-ranking-perfil-bim-carrusel",
-          "titulo": "Ranking: ¿en qué fila estás tú?",
+          "id": "oct-workshop-antes-ahora-carrusel",
+          "titulo": "Antes / ahora: Revit con IA (y lo que no cambió)",
           "tipo": "valor",
-          "formato_publicacion": "CARRUSEL (7 slides)",
-          "intencion": "problema",
-          "producto": "Máster",
-          "cta": "Comenta NIVEL",
-          "estado": "COMPLETA",
-          "nota": "Ranking: ¿en qué fila estás?",
+          "formato_publicacion": "CARRUSEL (6 láminas 4:5)",
+          "intencion": "solución",
+          "producto": "Workshop → Máster",
+          "cta": "Comenta WORKSHOP (si no está montada: DM)",
+          "estado": "PENDIENTE DE CAPTURAS",
+          "nota": "CAMBIO 8-oct (Dayana): carrusel del workshop del jue 22 con el formato «Antes / Ahora» del post de AECODE del 7-oct. Capturas REALES de Revit 2027 (Assistant y servidor MCP, de solo lectura). Reemplaza al carrusel del ranking, que pasa a reserva y vuelve si no hay capturas a tiempo.",
           "contenido": {
-            "id": "oct-ranking-perfil-bim-carrusel",
+            "id": "oct-workshop-antes-ahora-carrusel",
             "fecha": "Lun 19 oct",
             "fecha_iso": "2026-10-19",
             "semana": "Semana 3 (19-25 oct)",
             "grupo": "GRUPO 1 · Feed principal",
             "tipo": "valor",
             "formato": "carrusel",
+            "formato_detalle": "CARRUSEL (6 láminas 4:5)",
             "redes": [
               "instagram",
               "facebook"
             ],
-            "audiencia": "modeladores y coordinadores BIM que quieren subir de nivel (camino natural al Máster)",
-            "estado": "COMPLETA",
-            "titulo": "Ranking: ¿en qué fila estás tú?",
+            "red_principal": "instagram",
+            "producto": "Workshop Revit + IA (jue 22-oct) → Máster por bloques",
+            "audiencia": "ingenieros y arquitectos que ya usan Revit en su trabajo (los que pide el workshop)",
+            "estado": "PENDIENTE DE CAPTURAS",
+            "titulo": "Antes / ahora: Revit con IA (y lo que no cambió)",
             "eje": "NÚCLEO-BIM",
-            "pilar": "Ranking + acusación · camino profesional BIM",
-            "hook": "Ranking BIM: ¿en qué fila estás tú? Si todavía haces esto, estás en la primera.",
+            "pilar": "Antes / ahora con capturas reales · promo del workshop",
+            "angulo": "Comparar el flujo de antes con el de ahora, con capturas reales, y cerrar con lo que la IA NO hace (nuestro sello).",
+            "reparto": "20 % solución",
+            "referencia": "Formato «Antes / Ahora» del carrusel de AECODE del 7-oct-2026 (matriz-viral/fuentes/referentes/post-DeNfWbRERzI.json), que le gustó a Dayana. Se copia la estructura (captura de antes arriba, captura de ahora abajo, una línea en cada una y «vs» en el medio), no el diseño ni las afirmaciones: su lámina 1 dice que Claude modifica Revit y el MCP oficial de Revit 2027 es de solo lectura.",
+            "hook": "Revit con IA: lo que cambió de verdad (y lo que no).",
             "slides": [
               {
                 "n": 1,
-                "texto": "RANKING BIM · ¿En qué fila estás tú? · Si todavía haces lo de la primera, desliza →",
-                "visual": "Portada: el mismo tablero de cartón del reel del Mié 14, esta vez con cuatro filas de texto en lugar de logos: MODELA · COORDINA · GESTIONA · AUTOMATIZA. Una ficha con un signo de interrogación suelta al lado."
+                "texto": "ANTES / AHORA · Revit con IA: lo que cambió de verdad (y lo que no) →",
+                "visual": "Portada con el estilo del perfil (navy oscuro, cuadrícula de plano, Bebas Neue, naranja #E8893A). Etiqueta «ANTES / AHORA» arriba. Dos recortes de capturas REALES superpuestos e inclinados: una tabla de planificación de Revit (antes) y la conversación de Claude Desktop respondiendo con datos del modelo (ahora). Logo DMA y contador 01/06."
               },
               {
                 "n": 2,
-                "texto": "FILA 1 · MODELA | Si todavía esperas a que te pasen los planos para empezar, y tu trabajo termina cuando el modelo «se ve bien». | Lo que te falta: saber para qué va a servir la información que pones en el modelo.",
-                "visual": "Captura REAL de un modelo estructural en Revit, vista 3D. Etiqueta «FILA 1 · MODELA» en recuadro gris #8A99A8. Mismo sistema de recuadros que el carrusel del Lun 12."
+                "texto": "RESOLVER UNA DUDA | ANTES: buscabas en el manual o rebobinabas una clase de 2 horas. | vs | AHORA: se lo preguntas al Autodesk Assistant dentro de Revit 2027 (Technical Preview), o al tutor de IA de tu curso, que te dice la lección y el minuto.",
+                "visual": "Arriba, etiqueta ANTES: captura real de un reproductor de video con la barra a medias (o la ayuda de Revit con el índice abierto). Abajo, etiqueta AHORA: captura real del panel del Autodesk Assistant en Revit 2027 con una pregunta y su respuesta. Si el Assistant no está instalado en el equipo de Gabriel, la captura de abajo es la del tutor de IA del Diplomado con la lección y el minuto. «vs» al centro."
               },
               {
                 "n": 3,
-                "texto": "FILA 2 · COORDINA | Si detectas interferencias pero las mandas por WhatsApp una por una, sin prioridad ni responsable. | Lo que te falta: convertir las interferencias en un informe que alguien pueda resolver.",
-                "visual": "Captura REAL de Navisworks, Clash Detective con resultados. Etiqueta «FILA 2 · COORDINA» en recuadro ámbar #E8A04A con texto navy."
+                "texto": "PREGUNTARLE AL MODELO | ANTES: filtrar tabla por tabla para saber qué elementos del Nivel 3 no tienen un parámetro lleno. | vs | AHORA: conectas la IA al modelo con el servidor MCP de Revit 2027 y se lo preguntas en tu idioma. Responde con los datos del modelo, sin exportar a Excel.",
+                "visual": "Arriba: captura real de una tabla de planificación de Revit filtrada a mano. Abajo: captura real de Claude Desktop conectado por el MCP de Revit 2027 respondiendo «¿qué elementos del Nivel 3 no tienen lleno el parámetro…?» con la lista. Modelo de DMA o del Diplomado, sin datos de clientes."
               },
               {
                 "n": 4,
-                "texto": "FILA 3 · GESTIONA | Si el plan de ejecución BIM existe, pero nadie lo abre después de la primera reunión. | Lo que te falta: que el modelo sirva para el plazo y el costo (4D y 5D), no solo para la geometría.",
-                "visual": "Captura REAL de una simulación 4D (Navisworks TimeLiner) o de una tabla de cantidades enlazada a presupuesto, de la academia. Etiqueta «FILA 3 · GESTIONA» en recuadro naranja #CA7520."
+                "texto": "LÁMINAS Y TABLAS | ANTES: crear y llenar láminas, clic por clic. | vs | AHORA: se las pides al Autodesk Assistant en lenguaje natural, y revisas lo que armó.",
+                "visual": "Arriba: captura real del navegador de proyecto con láminas creadas a mano. Abajo: captura real del Autodesk Assistant creando una lámina o una tabla a partir de una instrucción escrita."
               },
               {
                 "n": 5,
-                "texto": "FILA 4 · AUTOMATIZA | Si repites cada semana la misma tarea de datos (parámetros, tablas, informes) a mano. | Lo que te falta: Dynamo e IA sobre lo que exportas, para que esa tarea se haga sola y tú la revises.",
-                "visual": "Captura REAL de un gráfico de Dynamo con los nodos Data.ImportExcel y Element.SetParameterByName. Etiqueta «FILA 4 · AUTOMATIZA» en recuadro azul #003E5C."
+                "texto": "LO QUE NO CAMBIÓ | La IA no modela por ti: el conector oficial de Revit es de solo lectura. | Consulta, revisa y exporta. | Y el número del plano lo sigue firmando un ingeniero.",
+                "visual": "Fondo navy liso con cuadrícula. «LO QUE NO CAMBIÓ» en blanco, las tres líneas debajo y «lo firma un ingeniero» en naranja. Sin capturas: es la lámina de criterio."
               },
               {
                 "n": 6,
-                "texto": "Subir de fila no es aprender otro programa. | Es cambiar de pregunta: de «¿cómo lo modelo?» a «¿quién va a usar esto y para qué?».",
-                "visual": "Fondo navy #001E30 liso. Las dos preguntas en blanco, la segunda subrayada en ámbar."
-              },
-              {
-                "n": 7,
-                "texto": "¿En qué fila estás de verdad? Comenta NIVEL y te mandamos el test: te dice dónde estás y qué te falta para la siguiente.",
-                "visual": "Cierre invertido: fondo ámbar, texto navy, «COMENTA NIVEL» en recuadro blanco. Firma «DG · @design_modeling_dg»."
+                "texto": "El jueves 22 a las 19:00 (Ecuador), Gabriel conecta una IA a un modelo real de Revit, en vivo y gratis. | Comenta WORKSHOP y te paso el registro.",
+                "visual": "Cierre invertido: fondo naranja #E8893A, texto navy. Foto REAL de Gabriel frente a Revit (la del carrusel del 8 o una nueva). Caja navy con «WORKSHOP». Fecha y hora grandes. Sin precio."
               }
             ],
-            "caption": "Casi todos los que trabajan en BIM creen estar una fila más arriba de donde están.\n\nNo es un tema de programas. Un modelador y un BIM Manager pueden usar el mismo Revit. Lo que cambia es la pregunta que se hacen antes de abrirlo.\n\n📌 En el carrusel van las 4 filas, con la señal de que estás en cada una y lo que te falta para subir.\n\n¿En qué fila te pusiste? Dinos el número 👇\n\nY si quieres comprobarlo, comenta NIVEL y te mandamos el test.\n\n#BIM #BIMManager #CoordinaciónBIM #Revit #Dynamo #DesignModelingDG",
+            "caption": "Revit no cambió de botones. Cambió lo que puedes preguntarle.\n\nDesliza y compara: antes y ahora, con capturas reales de nuestro equipo.\n\n1️⃣ Resolver una duda: antes, el manual o la clase de 2 horas. Ahora, el Autodesk Assistant dentro de Revit 2027 (Technical Preview), o el tutor de IA de tu curso.\n\n2️⃣ Preguntarle al modelo: antes, filtrar tabla por tabla. Ahora, conectas la IA al modelo con el servidor MCP de Revit 2027 y se lo preguntas en tu idioma.\n\n3️⃣ Láminas y tablas: antes, clic por clic. Ahora, se las pides al Assistant y revisas lo que armó.\n\nY lo que no cambió: la IA no modela por ti (el conector oficial es de solo lectura) y el número lo sigue firmando un ingeniero.\n\n📅 Jueves 22 de octubre · 19:00 (Ecuador) · en vivo y gratis\nGabriel conecta una IA a un modelo real de Revit y le hace preguntas delante de ti. Es para quien ya usa Revit en su trabajo.\n\nComenta WORKSHOP y te paso el registro 👇\n\n#Revit #BIM #InteligenciaArtificial #IngenieriaCivil #DesignModelingDG",
             "cta": {
-              "instagram": "Comenta NIVEL y te mandamos el test: te dice dónde estás y qué te falta para la siguiente fila.",
-              "facebook": "Comenta NIVEL y te mandamos el test: te dice dónde estás y qué te falta para la siguiente fila.",
-              "linkedin": "Buen candidato para el PDF de la cuenta de Gabriel (Grupo 4), sin palabra clave.",
-              "tiktok": "—",
-              "youtube": "—"
+              "instagram": "Comenta WORKSHOP (si la palabra no está montada en GHL el día de publicar: «Escríbenos por DM y te pasamos el registro»)",
+              "facebook": "Comenta WORKSHOP (mismo reemplazo si no está montada)"
             },
-            "condicion": "Mismo aviso de NIVEL. Las cuatro filas coinciden a propósito con las microcredenciales del Máster (Modelador → Coordinador → BIM Manager 4D-5D → Especialista BIM+IA), pero el carrusel NO nombra el Máster ni su precio: la venta la hace el seguimiento del test.",
-            "prompt_imagenes": "Carrusel IG 4:5, 7 slides, mismo sistema visual que oct-acusa-ia-calculo-carrusel (capturas reales de fondo + recuadros azul, navy y blanco) para que se lean como una serie. La portada usa foto real del tablero de cartón del reel del Mié 14 con fichas de texto.",
-            "formato_detalle": "CARRUSEL (7 slides)",
-            "red_principal": "instagram",
             "cta_por_red": {
-              "instagram": "Comenta NIVEL y te mandamos el test: te dice dónde estás y qué te falta para la siguiente fila.",
-              "facebook": "Comenta NIVEL y te mandamos el test: te dice dónde estás y qué te falta para la siguiente fila.",
-              "linkedin": "Buen candidato para el PDF de la cuenta de Gabriel (Grupo 4), sin palabra clave.",
-              "tiktok": "—",
-              "youtube": "—"
+              "instagram": "Comenta WORKSHOP",
+              "facebook": "Comenta WORKSHOP"
             },
-            "notas_produccion": "Mismo aviso de NIVEL. Las cuatro filas coinciden a propósito con las microcredenciales del Máster (Modelador → Coordinador → BIM Manager 4D-5D → Especialista BIM+IA), pero el carrusel NO nombra el Máster ni su precio: la venta la hace el seguimiento del test.",
-            "origen": "carruseles-y-reels-acusacion-octubre.json"
+            "prompt_imagenes": "No se genera con IA: todas las capturas son reales, tomadas por Gabriel en su equipo con Revit 2027. Se arma con las plantillas del perfil (.claude/skills/imagen-marca-dma/plantilla-perfil).",
+            "capturas_necesarias": [
+              "L1 · recortes de las capturas de las láminas 3 (tabla y Claude).",
+              "L2 · reproductor de una clase con la barra a medias (o la ayuda de Revit) + panel del Autodesk Assistant respondiendo una pregunta (o el tutor del Diplomado).",
+              "L3 · tabla de planificación filtrada a mano + Claude Desktop conectado por el MCP de Revit 2027 respondiendo con datos del modelo.",
+              "L4 · láminas creadas a mano en el navegador de proyecto + Autodesk Assistant creando una lámina o tabla.",
+              "L6 · foto real de Gabriel frente a Revit."
+            ],
+            "condicion": "Sale solo si Gabriel tiene Revit 2027 con el Autodesk Assistant y el servidor MCP instalados (es lo mismo que necesita el workshop) y la palabra WORKSHOP está montada en GHL con el enlace de la landing. Sin capturas reales del «ahora», la pieza no sale: vuelve el carrusel del ranking.",
+            "notas_produccion": "8-oct (Dayana): carrusel del workshop, con el formato «Antes / Ahora» del post de AECODE que le gustó. Reemplaza en el Lun 19 al carrusel del ranking (oct-ranking-perfil-bim-carrusel), que pasa al banco de reserva. Es la pieza de feed «5 preguntas que le hice a mi modelo» del plan del workshop: las capturas del «ahora» son preguntas reales al modelo. | Fuentes verificadas para el plan del workshop (5-oct): Revit Public MCP Server (Tech Preview) en Autodesk Help; «Usage of Revit 2027 MCP Server» (Autodesk); blog de Autodesk del 17-jun-2026; Autodesk Assistant in Revit (Tech Preview). El servidor MCP es de SOLO LECTURA (consulta, reporta, navega y exporta; no modela) y Autodesk lo documenta con Claude Desktop y Cursor. Antes de publicar, Gabriel vuelve a abrir esas páginas y confirma que nada cambió. | Lo que NO se dice: que la IA modela, mueve o cambia elementos (el MCP oficial es de solo lectura); que funciona con ChatGPT en la web (no se conecta al servidor local); ningún precio del Máster. Los servidores MCP de terceros que sí editan no se mencionan. | WORKSHOP la contesta solo GHL con el enlace de la landing (decisión del 5-oct). Antes de publicar, Patricio comenta WORKSHOP desde una cuenta ajena en Instagram y en Facebook y confirma que llega el enlace. | Si el ensayo del jueves 15 falla y la demo se graba, las capturas salen de esa grabación.",
+            "origen": "workshop-revit-ia (plan del 5-oct) · referencia AECODE 7-oct"
           }
         },
         {
@@ -4728,13 +4741,13 @@
           "fecha_iso": "2026-10-19",
           "semana": "Semana 3 (19-25 oct)",
           "id": "oct-hist-1019",
-          "titulo": "Una fila más arriba",
+          "titulo": "¿Todavía filtras tabla por tabla?",
           "tipo": "valor",
           "formato_publicacion": "HISTORIAS (3 frames)",
           "idea": {
-            "titulo": "Una fila más arriba",
+            "titulo": "¿Todavía filtras tabla por tabla?",
             "formato": "HISTORIAS (3 frames)",
-            "desarrollo": "Seamos honestos: ¿en qué fila estás?"
+            "desarrollo": "¿Todavía filtras tabla por tabla para saber qué tiene tu modelo?"
           },
           "destacada": "🎯 BIM + IA",
           "contenido": {
@@ -4751,42 +4764,42 @@
               "facebook"
             ],
             "red_principal": "instagram",
-            "producto": "Máster",
-            "audiencia": "modeladores y coordinadores BIM que quieren subir de nivel",
+            "producto": "Workshop Revit + IA (jue 22-oct)",
+            "audiencia": "quienes ya usan Revit en su trabajo",
             "estado": "COMPLETA",
-            "titulo": "Una fila más arriba",
+            "titulo": "¿Todavía filtras tabla por tabla?",
             "eje": "NUCLEO-BIM",
-            "pilar": "Pieza del día · abre la puerta a oct-ranking-perfil-bim-carrusel",
-            "hook": "Seamos honestos: ¿en qué fila estás?",
+            "pilar": "Pieza del día · abre la puerta a oct-workshop-antes-ahora-carrusel y arranca la cuenta regresiva del workshop",
+            "hook": "¿Todavía filtras tabla por tabla para saber qué tiene tu modelo?",
             "historias": [
               {
                 "n": 1,
-                "visual": "Texto sobre azul, las cuatro palabras en columna, la primera en ámbar.",
-                "texto": "Seamos honestos: ¿en qué fila estás?",
-                "sticker": "ENCUESTA de 4 opciones: «Modela» / «Coordina» / «Gestiona» / «Automatiza». A quien vote se le escribe por DM a mano: «¿Quieres comprobarlo con el test?»."
+                "visual": "Texto sobre azul #0E2438.",
+                "texto": "¿Todavía filtras tabla por tabla para saber qué tiene tu modelo?",
+                "sticker": "ENCUESTA: «Sí, a mano» / «Ya le pregunto a la IA». A quien marque «Sí, a mano» se le escribe por DM a mano con el registro del workshop."
               },
               {
                 "n": 2,
-                "visual": "Captura de la portada del carrusel del día, compartida en historia.",
-                "texto": "Casi todos se ponen una fila más arriba. La señal de cada una está en el carrusel de hoy.",
+                "visual": "Captura de la portada del carrusel del día, compartida en historia (se toca y lleva al post).",
+                "texto": "Antes y ahora, con capturas reales. Y lo que la IA todavía no hace. Está en el carrusel de hoy.",
                 "sticker": "Ninguno."
               },
               {
                 "n": 3,
-                "visual": "Grabación de pantalla real: el Test de Nivel BIM abierto en el teléfono, con la barra de progreso a medias.",
-                "texto": "¿Quieres comprobarlo? Son 20 preguntas y 5 minutos. Respóndeme NIVEL y te mando el test.",
-                "sticker": "RESPONDER CON PALABRA «NIVEL». Llega como DM y se contesta a mano con el enlace del test."
+                "visual": "Cierre invertido ámbar.",
+                "texto": "El jueves 22 a las 19:00 (Ecuador), Gabriel conecta una IA a un modelo real de Revit. En vivo y gratis. Respóndeme WORKSHOP y te paso el registro.",
+                "sticker": "CUENTA REGRESIVA de Instagram al jueves 22, 19:00 (avisa sola a quien la active) + RESPONDER CON PALABRA «WORKSHOP» (llega como DM y se contesta a mano con el enlace de la landing)."
               }
             ],
             "cta": {
-              "instagram": "Responde esta historia con NIVEL y te mando el test.",
-              "facebook": "Responde esta historia con NIVEL y te mando el test."
+              "instagram": "Responde esta historia con WORKSHOP y te paso el registro.",
+              "facebook": "Responde esta historia con WORKSHOP y te paso el registro."
             },
             "cta_por_red": {
-              "instagram": "Responde esta historia con NIVEL y te mando el test.",
-              "facebook": "Responde esta historia con NIVEL y te mando el test."
+              "instagram": "Responde esta historia con WORKSHOP y te paso el registro.",
+              "facebook": "Responde esta historia con WORKSHOP y te paso el registro."
             },
-            "notas_produccion": "Las respuestas a una historia llegan como DM y ni OpenReply ni GHL las contestan: alguien del equipo responde a mano desde la bandeja, con el nombre de la persona y una pregunta al final (guiones en matriz-viral/HISTORIAS-VENTA.md §4). Nunca precio en el DM del Máster: si lo preguntan, se pasa a la cita. | Quien responda NIVEL recibe a mano el enlace del Test de Nivel BIM (20 preguntas, 5 minutos, gratis). NIVEL está viva en GHL para comentarios; la respuesta a una historia no la recoge el bot. | Los votos de encuesta y quiz y lo que escriben en la caja de preguntas se quedan en el panel de la historia: se revisan el mismo día y se escribe por DM a mano a quien votó o preguntó. | Todo el material es real: capturas o grabaciones de pantalla y cámara de Gabriel. Nada de imágenes generadas. «Texto sobre azul» es un fondo liso #0E2438 con el texto de Instagram, no una imagen. | El resultado de la encuesta del frame 1 se guarda (captura) para el Jue 22. | No se nombra el Máster ni su precio: la venta la hace el jueves y el seguimiento del test.",
+            "notas_produccion": "Las respuestas a una historia llegan como DM y ni OpenReply ni GHL las contestan: alguien del equipo responde a mano desde la bandeja, con el nombre de la persona y una pregunta al final (guiones en matriz-viral/HISTORIAS-VENTA.md §4). Nunca precio en el DM del Máster: si lo preguntan, se pasa a la cita. | Quien responda WORKSHOP recibe a mano el enlace de la landing del workshop. WORKSHOP en comentarios la contesta GHL; la respuesta a una historia no la recoge el bot. | Los votos de encuesta y quiz y lo que escriben en la caja de preguntas se quedan en el panel de la historia: se revisan el mismo día y se escribe por DM a mano a quien votó o preguntó. | Todo el material es real: capturas o grabaciones de pantalla y cámara de Gabriel. Nada de imágenes generadas. «Texto sobre azul» es un fondo liso #0E2438 con el texto de Instagram, no una imagen. | El resultado de la encuesta del frame 1 se guarda (captura): sirve de dato para abrir el workshop. | No se nombra el Máster ni su precio: la venta la hace el jueves y el seguimiento del test. | 8-oct (Dayana): las historias del Lun 19 pasan a promocionar el carrusel del workshop (antes: el ranking, que pasó a reserva) y arrancan la cuenta regresiva del jueves 22.",
             "origen": "calendario-octubre (fase 2)"
           }
         },
@@ -6424,7 +6437,7 @@
     "mapa_cta": [
       {
         "palabra": "NIVEL",
-        "fecha": "Jue 8 (historia del creador), Lun 12, Lun 19, Mar 20, Mié 21, Jue 22, Vie 23 (ranking y post), Vie 30",
+        "fecha": "Jue 8 (historia del creador), Lun 12, Mar 20, Mié 21, Jue 22, Vie 23 (ranking y post), Vie 30",
         "producto": "Máster"
       },
       {
@@ -6446,6 +6459,11 @@
         "palabra": "GUIA",
         "fecha": "Mié 7 (reel «Una IA no sabe cuándo no sabe», cambio del 5-oct)",
         "producto": "Guía Revit + ChatGPT (OpenReply, campaña «Guía Revit») → Máster"
+      },
+      {
+        "palabra": "WORKSHOP",
+        "fecha": "Lun 19 (carrusel «Antes / ahora» e historias con cuenta regresiva)",
+        "producto": "Workshop Revit + IA del jue 22-oct → cita de ruta del Máster · la contesta GHL con el enlace de la landing; montar antes del 19 o CTA a DM"
       }
     ]
   },
@@ -6888,6 +6906,86 @@
     }
   ],
   "banco_reserva": [
+    {
+      "id": "oct-ranking-perfil-bim-carrusel",
+      "contenido": {
+        "id": "oct-ranking-perfil-bim-carrusel",
+        "fecha": "Lun 19 oct",
+        "fecha_iso": "",
+        "semana": "Semana 3 (19-25 oct)",
+        "grupo": "GRUPO 1 · Feed principal",
+        "tipo": "valor",
+        "formato": "carrusel",
+        "redes": [
+          "instagram",
+          "facebook"
+        ],
+        "audiencia": "modeladores y coordinadores BIM que quieren subir de nivel (camino natural al Máster)",
+        "estado": "COMPLETA",
+        "titulo": "Ranking: ¿en qué fila estás tú?",
+        "eje": "NÚCLEO-BIM",
+        "pilar": "Ranking + acusación · camino profesional BIM",
+        "hook": "Ranking BIM: ¿en qué fila estás tú? Si todavía haces esto, estás en la primera.",
+        "slides": [
+          {
+            "n": 1,
+            "texto": "RANKING BIM · ¿En qué fila estás tú? · Si todavía haces lo de la primera, desliza →",
+            "visual": "Portada: el mismo tablero de cartón del reel del Mié 14, esta vez con cuatro filas de texto en lugar de logos: MODELA · COORDINA · GESTIONA · AUTOMATIZA. Una ficha con un signo de interrogación suelta al lado."
+          },
+          {
+            "n": 2,
+            "texto": "FILA 1 · MODELA | Si todavía esperas a que te pasen los planos para empezar, y tu trabajo termina cuando el modelo «se ve bien». | Lo que te falta: saber para qué va a servir la información que pones en el modelo.",
+            "visual": "Captura REAL de un modelo estructural en Revit, vista 3D. Etiqueta «FILA 1 · MODELA» en recuadro gris #8A99A8. Mismo sistema de recuadros que el carrusel del Lun 12."
+          },
+          {
+            "n": 3,
+            "texto": "FILA 2 · COORDINA | Si detectas interferencias pero las mandas por WhatsApp una por una, sin prioridad ni responsable. | Lo que te falta: convertir las interferencias en un informe que alguien pueda resolver.",
+            "visual": "Captura REAL de Navisworks, Clash Detective con resultados. Etiqueta «FILA 2 · COORDINA» en recuadro ámbar #E8A04A con texto navy."
+          },
+          {
+            "n": 4,
+            "texto": "FILA 3 · GESTIONA | Si el plan de ejecución BIM existe, pero nadie lo abre después de la primera reunión. | Lo que te falta: que el modelo sirva para el plazo y el costo (4D y 5D), no solo para la geometría.",
+            "visual": "Captura REAL de una simulación 4D (Navisworks TimeLiner) o de una tabla de cantidades enlazada a presupuesto, de la academia. Etiqueta «FILA 3 · GESTIONA» en recuadro naranja #CA7520."
+          },
+          {
+            "n": 5,
+            "texto": "FILA 4 · AUTOMATIZA | Si repites cada semana la misma tarea de datos (parámetros, tablas, informes) a mano. | Lo que te falta: Dynamo e IA sobre lo que exportas, para que esa tarea se haga sola y tú la revises.",
+            "visual": "Captura REAL de un gráfico de Dynamo con los nodos Data.ImportExcel y Element.SetParameterByName. Etiqueta «FILA 4 · AUTOMATIZA» en recuadro azul #003E5C."
+          },
+          {
+            "n": 6,
+            "texto": "Subir de fila no es aprender otro programa. | Es cambiar de pregunta: de «¿cómo lo modelo?» a «¿quién va a usar esto y para qué?».",
+            "visual": "Fondo navy #001E30 liso. Las dos preguntas en blanco, la segunda subrayada en ámbar."
+          },
+          {
+            "n": 7,
+            "texto": "¿En qué fila estás de verdad? Comenta NIVEL y te mandamos el test: te dice dónde estás y qué te falta para la siguiente.",
+            "visual": "Cierre invertido: fondo ámbar, texto navy, «COMENTA NIVEL» en recuadro blanco. Firma «DG · @design_modeling_dg»."
+          }
+        ],
+        "caption": "Casi todos los que trabajan en BIM creen estar una fila más arriba de donde están.\n\nNo es un tema de programas. Un modelador y un BIM Manager pueden usar el mismo Revit. Lo que cambia es la pregunta que se hacen antes de abrirlo.\n\n📌 En el carrusel van las 4 filas, con la señal de que estás en cada una y lo que te falta para subir.\n\n¿En qué fila te pusiste? Dinos el número 👇\n\nY si quieres comprobarlo, comenta NIVEL y te mandamos el test.\n\n#BIM #BIMManager #CoordinaciónBIM #Revit #Dynamo #DesignModelingDG",
+        "cta": {
+          "instagram": "Comenta NIVEL y te mandamos el test: te dice dónde estás y qué te falta para la siguiente fila.",
+          "facebook": "Comenta NIVEL y te mandamos el test: te dice dónde estás y qué te falta para la siguiente fila.",
+          "linkedin": "Buen candidato para el PDF de la cuenta de Gabriel (Grupo 4), sin palabra clave.",
+          "tiktok": "—",
+          "youtube": "—"
+        },
+        "condicion": "Mismo aviso de NIVEL. Las cuatro filas coinciden a propósito con las microcredenciales del Máster (Modelador → Coordinador → BIM Manager 4D-5D → Especialista BIM+IA), pero el carrusel NO nombra el Máster ni su precio: la venta la hace el seguimiento del test.",
+        "prompt_imagenes": "Carrusel IG 4:5, 7 slides, mismo sistema visual que oct-acusa-ia-calculo-carrusel (capturas reales de fondo + recuadros azul, navy y blanco) para que se lean como una serie. La portada usa foto real del tablero de cartón del reel del Mié 14 con fichas de texto.",
+        "formato_detalle": "CARRUSEL (7 slides)",
+        "red_principal": "instagram",
+        "cta_por_red": {
+          "instagram": "Comenta NIVEL y te mandamos el test: te dice dónde estás y qué te falta para la siguiente fila.",
+          "facebook": "Comenta NIVEL y te mandamos el test: te dice dónde estás y qué te falta para la siguiente fila.",
+          "linkedin": "Buen candidato para el PDF de la cuenta de Gabriel (Grupo 4), sin palabra clave.",
+          "tiktok": "—",
+          "youtube": "—"
+        },
+        "notas_produccion": "Mismo aviso de NIVEL. Las cuatro filas coinciden a propósito con las microcredenciales del Máster (Modelador → Coordinador → BIM Manager 4D-5D → Especialista BIM+IA), pero el carrusel NO nombra el Máster ni su precio: la venta la hace el seguimiento del test. | 8-oct (Dayana): pasa al banco de reserva. El Lun 19 sale el carrusel del workshop (oct-workshop-antes-ahora-carrusel). Si ese carrusel no tiene capturas reales a tiempo, vuelve este.",
+        "origen": "carruseles-y-reels-acusacion-octubre.json"
+      }
+    },
     {
       "id": "oct-tutor-dip-reel",
       "contenido": {
