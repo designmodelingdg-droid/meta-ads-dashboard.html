@@ -1,0 +1,99 @@
+name: Vimeo — clips de clases
+
+# Para los reels de prueba social (skill clips-clases-vimeo).
+# 1) modo «transcribir»: pon un tema (o una carpeta) y guarda la transcripción
+#    de esas clases para elegir los momentos.
+# 2) modo «recortar»: pon el id del video y los minutos elegidos; baja solo ese
+#    tramo en 720p.
+# Todo se guarda en la rama `vimeo-clips`, nunca en la principal.
+# Solo LEE de Vimeo: no toca la privacidad ni el estado de ningún video.
+
+on:
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: "Qué hacer"
+        type: choice
+        options: [transcribir, recortar]
+        default: transcribir
+      tema:
+        description: "transcribir · tema a buscar en los nombres (p. ej. conexiones, naves, Revit IA)"
+        required: false
+      carpeta:
+        description: "transcribir · nombre exacto de la carpeta de Vimeo (opcional; manda sobre el tema)"
+        required: false
+      max_videos:
+        description: "transcribir · cuántas clases como mucho (1-20)"
+        required: false
+        default: "8"
+      video:
+        description: "recortar · id del video de Vimeo"
+        required: false
+      desde:
+        description: "recortar · inicio (12:30 o 1:02:15). Varios tramos separados por coma"
+        required: false
+      hasta:
+        description: "recortar · fin (13:20). Mismo número de tramos que «desde», máx. 90 s cada uno"
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: vimeo-clips
+  cancel-in-progress: false
+
+jobs:
+  clips:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: ffmpeg
+        if: ${{ inputs.modo == 'recortar' }}
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - name: Preparar la rama vimeo-clips
+        run: |
+          cp scripts/vimeo_clips.py /tmp/vimeo_clips.py
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin vimeo-clips >/dev/null; then
+            git fetch --depth 1 origin vimeo-clips
+            git checkout -B vimeo-clips FETCH_HEAD
+          else
+            git checkout --orphan vimeo-clips
+            git rm -rq --cached . && git clean -fdq
+            echo "# Clips de clases desde Vimeo (rama de trabajo, la llena la Action «Vimeo — clips»)" > README.md
+            git add README.md && git commit -qm "Rama vimeo-clips"
+          fi
+
+      - name: Transcribir
+        if: ${{ inputs.modo == 'transcribir' }}
+        env:
+          VIMEO_TOKEN: ${{ secrets.VIMEO_TOKEN }}
+          TEMA: ${{ inputs.tema }}
+          CARPETA: ${{ inputs.carpeta }}
+          MAXV: ${{ inputs.max_videos }}
+        run: python3 /tmp/vimeo_clips.py transcribir --tema "$TEMA" --carpeta "$CARPETA" --max "${MAXV:-8}"
+
+      - name: Recortar
+        if: ${{ inputs.modo == 'recortar' }}
+        env:
+          VIMEO_TOKEN: ${{ secrets.VIMEO_TOKEN }}
+          VIDEO: ${{ inputs.video }}
+          DESDE: ${{ inputs.desde }}
+          HASTA: ${{ inputs.hasta }}
+        run: python3 /tmp/vimeo_clips.py recortar --video "$VIDEO" --desde "$DESDE" --hasta "$HASTA"
+
+      - name: Guardar en la rama vimeo-clips
+        run: |
+          git add vimeo-clips
+          git diff --staged --quiet && echo "Nada nuevo." && exit 0
+          git commit -qm "Vimeo clips: ${{ inputs.modo }} ${{ inputs.tema }}${{ inputs.carpeta }}${{ inputs.video }}"
+          git push origin vimeo-clips
