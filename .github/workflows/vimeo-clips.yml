@@ -63,7 +63,7 @@ jobs:
           cp scripts/vimeo_clips.py /tmp/vimeo_clips.py
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if git ls-remote --exit-code --heads origin vimeo-clips >/dev/null; then
+          if git ls-remote --exit-code origin refs/heads/vimeo-clips >/dev/null; then
             git fetch --depth 1 origin vimeo-clips
             git checkout -B vimeo-clips FETCH_HEAD
           else
