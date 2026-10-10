@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-09",
+ "generado": "2026-10-10",
  "ventana_series_dias": 30,
  "fuente": "OpenReply — base propia (Postgres), solo lectura",
  "nota_privacidad": "Solo agregados. No se lee `commenterName`, ni `commentText`, ni `accessToken`. Ningún dato personal sale de la base.",
@@ -94,21 +94,21 @@
    "creada": "2026-09-22T03:01:54.579",
    "actualizada": "2026-09-22T03:01:54.579",
    "cuenta": "design_modeling_dg",
-   "enviados": 10,
+   "enviados": 11,
    "fallidos": 2,
    "entregados_sin_confirmar": 0,
    "saltados": 0,
    "pendientes": 0,
    "primer_envio": "2026-09-22T03:09:17.287",
-   "ultimo_envio": "2026-10-05T20:16:50.979",
-   "clics": 3,
-   "clics_limpios": 3,
+   "ultimo_envio": "2026-10-10T03:42:58.937",
+   "clics": 4,
+   "clics_limpios": 4,
    "clics_con_bots": 0,
    "enlaces_rastreados": 1,
    "mide_clics": true,
-   "clics_por_dm": 0.3,
-   "ctr": 0.3,
-   "lectura_clics": "3 clics limpios sobre 10 DM enviados (30%). Son aperturas, no personas: la misma persona puede contar varias veces."
+   "clics_por_dm": 0.36,
+   "ctr": 0.3636,
+   "lectura_clics": "4 clics limpios sobre 11 DM enviados (36%). Son aperturas, no personas: la misma persona puede contar varias veces."
   },
   {
    "id": "cmuhd3vwn000004l7gm7ypdtn",
@@ -494,12 +494,12 @@
    "palabra": "PARTE",
    "campana": "TUTORIAL PLANO BIM PARTE 2",
    "campana_activa": true,
-   "enviados": 10,
+   "enviados": 11,
    "fallidos": 2,
    "entregados_sin_confirmar": 0,
    "saltados": 0,
    "primer_envio": "2026-09-22T03:09:17.287",
-   "ultimo_envio": "2026-10-05T20:16:50.979"
+   "ultimo_envio": "2026-10-10T03:42:58.937"
   },
   {
    "palabra": "MEMORIA",
@@ -1025,11 +1025,11 @@
    "etiqueta": "Primary campaign link",
    "destino": "https://funnel.dgdesignmodeling.com/acceso-gratis-guia-revit-chatgpt-form",
    "campana": "TUTORIAL PLANO BIM PARTE 2",
-   "clics": 3,
-   "clics_limpios": 3,
+   "clics": 4,
+   "clics_limpios": 4,
    "clics_con_bots": 0,
    "primer_clic": "2026-09-22T03:09:44.777",
-   "ultimo_clic": "2026-09-22T11:23:20.507"
+   "ultimo_clic": "2026-10-10T03:58:29.082"
   },
   {
    "slug": "-ynblNwTaQ",
@@ -1205,6 +1205,11 @@
    "fecha": "2026-10-07",
    "clics": 1,
    "limpio": true
+  },
+  {
+   "fecha": "2026-10-10",
+   "clics": 1,
+   "limpio": true
   }
  ],
  "envios_por_dia": [
@@ -1311,14 +1316,13 @@
   {
    "fecha": "2026-10-07",
    "enviados": 1
+  },
+  {
+   "fecha": "2026-10-10",
+   "enviados": 1
   }
  ],
  "seguidores": [
-  {
-   "cuenta": "design_modeling_dg",
-   "fecha": "2026-09-09",
-   "seguidores": 80639
-  },
   {
    "cuenta": "design_modeling_dg",
    "fecha": "2026-09-10",
@@ -1487,7 +1491,7 @@
     ],
     "en_borrador": [],
     "bot_total": 177,
-    "bot_nuevos_7d": 5
+    "bot_nuevos_7d": 4
    },
    "ACERO": {
     "publicados": [
@@ -1511,7 +1515,7 @@
      }
     ],
     "bot_total": 196,
-    "bot_nuevos_7d": 10
+    "bot_nuevos_7d": 9
    },
    "NIVEL": {
     "publicados": [
@@ -1548,7 +1552,7 @@
     ],
     "en_borrador": [],
     "bot_total": 182,
-    "bot_nuevos_7d": 54
+    "bot_nuevos_7d": 53
    },
    "DYNAMO": {
     "publicados": [
@@ -1573,7 +1577,7 @@
     "bot_nuevos_7d": 0
    }
   },
-  "embudo_generado": "2026-10-09T18:19Z"
+  "embudo_generado": "2026-10-09T20:54Z"
  },
  "cotejo_con_la_matriz": [
   {
@@ -1704,8 +1708,8 @@
    "campanas": [
     "TUTORIAL PLANO BIM PARTE 2"
    ],
-   "dms_enviados": 10,
-   "lectura": "Viva: 10 DM enviados."
+   "dms_enviados": 11,
+   "lectura": "Viva: 11 DM enviados."
   },
   {
    "palabra": "PARTE2",
