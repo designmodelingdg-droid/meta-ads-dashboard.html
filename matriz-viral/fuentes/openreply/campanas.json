@@ -451,7 +451,7 @@
    "actualizada": "2026-09-23T16:27:40.705",
    "cuenta": "design_modeling_dg",
    "enviados": 0,
-   "fallidos": 0,
+   "fallidos": 1,
    "entregados_sin_confirmar": 0,
    "saltados": 0,
    "pendientes": 0,
@@ -590,6 +590,17 @@
    "ultimo_envio": "2026-10-02T11:42:39.253"
   },
   {
+   "palabra": "RUTA",
+   "campana": "4 PUERTAS RUTA BIM",
+   "campana_activa": true,
+   "enviados": 1,
+   "fallidos": 0,
+   "entregados_sin_confirmar": 0,
+   "saltados": 0,
+   "primer_envio": "2026-09-23T16:23:56.895",
+   "ultimo_envio": "2026-09-23T16:23:56.895"
+  },
+  {
    "palabra": "TUTOR",
    "campana": "TUTOR IA DIPLOMADO",
    "campana_activa": true,
@@ -601,15 +612,15 @@
    "ultimo_envio": "2026-09-24T19:12:58.28"
   },
   {
-   "palabra": "RUTA",
-   "campana": "4 PUERTAS RUTA BIM",
+   "palabra": "TUTOR",
+   "campana": "TUTOR IA ACERO",
    "campana_activa": true,
-   "enviados": 1,
-   "fallidos": 0,
+   "enviados": 0,
+   "fallidos": 1,
    "entregados_sin_confirmar": 0,
    "saltados": 0,
-   "primer_envio": "2026-09-23T16:23:56.895",
-   "ultimo_envio": "2026-09-23T16:23:56.895"
+   "primer_envio": null,
+   "ultimo_envio": null
   },
   {
    "palabra": "IA",
@@ -921,6 +932,13 @@
   {
    "estado": "FAILED",
    "pero_si_se_entrego": false,
+   "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=AEU3cofiY-Cc3Pm5LSpo9cF]",
+   "veces": 1,
+   "ultima_vez": "2026-10-10T16:51:21.796"
+  },
+  {
+   "estado": "FAILED",
+   "pero_si_se_entrego": false,
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=AN8IFWL-fImTXSi0bY6YRiT]",
    "veces": 1,
    "ultima_vez": "2026-09-30T21:27:08.002"
@@ -966,13 +984,6 @@
    "motivo": "MetaApiError 1: An unknown error has occurred. (/v25.0/17841404048578200/messages) [code=1 sub=- type=OAuthException trace=AablA1Zji2QkmNRiFZE_LUB]",
    "veces": 1,
    "ultima_vez": "2026-09-25T19:39:29.636"
-  },
-  {
-   "estado": "FAILED",
-   "pero_si_se_entrego": false,
-   "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=ALkIibRiGiUh5--6E48gILl]",
-   "veces": 1,
-   "ultima_vez": "2026-09-30T13:36:52.562"
   }
  ],
  "enlaces": [
@@ -1519,8 +1530,8 @@
       "estado": "draft"
      }
     ],
-    "bot_total": 196,
-    "bot_nuevos_7d": 5
+    "bot_total": 197,
+    "bot_nuevos_7d": 3
    },
    "NIVEL": {
     "publicados": [
@@ -1557,7 +1568,7 @@
     ],
     "en_borrador": [],
     "bot_total": 182,
-    "bot_nuevos_7d": 47
+    "bot_nuevos_7d": 42
    },
    "DYNAMO": {
     "publicados": [
@@ -1582,7 +1593,7 @@
     "bot_nuevos_7d": 0
    }
   },
-  "embudo_generado": "2026-10-10T05:51Z"
+  "embudo_generado": "2026-10-10T14:27Z"
  },
  "cotejo_con_la_matriz": [
   {
