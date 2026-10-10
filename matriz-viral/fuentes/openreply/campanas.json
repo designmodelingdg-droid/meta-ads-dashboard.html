@@ -191,7 +191,7 @@
    "actualizada": "2026-09-17T15:09:01.689",
    "cuenta": "design_modeling_dg",
    "enviados": 5,
-   "fallidos": 0,
+   "fallidos": 1,
    "entregados_sin_confirmar": 3,
    "saltados": 0,
    "pendientes": 0,
@@ -517,7 +517,7 @@
    "campana": "Guía Revit",
    "campana_activa": true,
    "enviados": 5,
-   "fallidos": 0,
+   "fallidos": 1,
    "entregados_sin_confirmar": 3,
    "saltados": 0,
    "primer_envio": "2026-09-17T13:44:41.344",
@@ -932,6 +932,13 @@
   {
    "estado": "FAILED",
    "pero_si_se_entrego": false,
+   "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=An5yc6TaIDgq-vSGpgnTvT1]",
+   "veces": 1,
+   "ultima_vez": "2026-10-10T20:18:16.317"
+  },
+  {
+   "estado": "FAILED",
+   "pero_si_se_entrego": false,
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=AEU3cofiY-Cc3Pm5LSpo9cF]",
    "veces": 1,
    "ultima_vez": "2026-10-10T16:51:21.796"
@@ -977,13 +984,6 @@
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=AnGw9kpxdlAxVz5QDJnDt7J]",
    "veces": 1,
    "ultima_vez": "2026-09-30T03:04:26.163"
-  },
-  {
-   "estado": "FAILED",
-   "pero_si_se_entrego": true,
-   "motivo": "MetaApiError 1: An unknown error has occurred. (/v25.0/17841404048578200/messages) [code=1 sub=- type=OAuthException trace=AablA1Zji2QkmNRiFZE_LUB]",
-   "veces": 1,
-   "ultima_vez": "2026-09-25T19:39:29.636"
   }
  ],
  "enlaces": [
@@ -1507,7 +1507,7 @@
     ],
     "en_borrador": [],
     "bot_total": 178,
-    "bot_nuevos_7d": 3
+    "bot_nuevos_7d": 2
    },
    "ACERO": {
     "publicados": [
@@ -1531,7 +1531,7 @@
      }
     ],
     "bot_total": 197,
-    "bot_nuevos_7d": 3
+    "bot_nuevos_7d": 1
    },
    "NIVEL": {
     "publicados": [
@@ -1568,7 +1568,7 @@
     ],
     "en_borrador": [],
     "bot_total": 182,
-    "bot_nuevos_7d": 42
+    "bot_nuevos_7d": 39
    },
    "DYNAMO": {
     "publicados": [
@@ -1593,7 +1593,7 @@
     "bot_nuevos_7d": 0
    }
   },
-  "embudo_generado": "2026-10-10T14:27Z"
+  "embudo_generado": "2026-10-10T20:03Z"
  },
  "cotejo_con_la_matriz": [
   {
