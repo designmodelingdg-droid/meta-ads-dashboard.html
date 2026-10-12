@@ -25,7 +25,7 @@ En muchas conversaciones, los cuatro últimos mensajes son siempre estos, en est
 
 | Cuándo | Mensaje |
 |---|---|
-| 24 h | Algo útil ligado a lo que dijo, más una pregunta fácil. «Me quedé pensando en lo que me contaste de las naves: en esta clase se ve cómo se calcula la cercha [enlace]. ¿Es el tipo de proyecto que te piden?» |
+| 24 h | Algo útil ligado a lo que dijo, más una pregunta fácil. «Me quedé pensando en lo que me contaste de las naves: en el curso de cerchas de la Especialización se calcula una nave así, paso a paso en Robot. ¿Es el tipo de proyecto que te piden?» (Sin corchetes: lo que vaya entre corchetes en una plantilla le llega tal cual a la persona.) |
 | 48 h | «¿Sigues buscando aprender cálculo en acero o lo dejamos para más adelante?» |
 | 5 días | «No quiero llenarte de mensajes. ¿Lo dejamos para otro momento o te reservo el cupo de este mes?» Si dijo que no le ve el valor, aquí va el 2x1 (sin «solo por hoy»). La promo de USD 100 ya no existe. |
 | Después | La despedida con el curso de regalo está bien, pero **sola**, sin las dos urgencias antes. |

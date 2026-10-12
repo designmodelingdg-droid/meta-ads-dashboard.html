@@ -19,6 +19,12 @@ Qué mide:
   - qué objeciones aparecen (precio, presupuesto, tiempo, confianza, «es un
     bot», clases grabadas, «lo pienso») y cómo responde el bot justo después;
   - cuántas conversaciones terminan en una etiqueta de compra.
+  - (desde el 12-oct-2026) las fallas que vio Dayana en capturas: respuestas
+    del cliente sin contestar (sobre todo las cortas o solo un número), texto
+    técnico filtrado («campo sin completar», «marcador», corchetes o llaves),
+    saludos repetidos, dos mensajes nuestros casi iguales seguidos, «¿te
+    contacta una persona del equipo?» y pedidos de soporte sin la etiqueta
+    `soporte-aylin`.
 
 Sin datos personales: se tapan el nombre y el apellido del contacto (los saca
 de la propia conversación), correos, teléfonos y enlaces. Las frases del bot
@@ -36,6 +42,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from collections import Counter, defaultdict
+from difflib import SequenceMatcher
 from datetime import datetime, timezone
 
 TOKEN = os.environ.get("GHL_TOKEN", "").strip()
@@ -68,6 +75,22 @@ OBJECIONES = {
     "pide_descuento": r"(descuento|beca|rebaja|precio especial|m[aá]s barato)",
     "cuotas": r"(cuotas|pagar en partes|financ|mensualidad|a plazos)",
 }
+
+# Fallas del 12-oct-2026 (capturas de Dayana). Ver matriz-viral/ventas/PARA-PATRICIO.md.
+FUGA_TECNICA = re.compile(r"(\[[^\]\n]{2,30}\]|\{\{|campo sin (completar|llenar)|marcador|mensaje (se cort|lleg[oó] (cortado|incompleto|con))|lleg[aó] (cortado|incompleto))", re.I)
+SALUDO_BOT = re.compile(r"^\W{0,3}(hola|buen[oa]s (d[ií]as|tardes|noches))\b", re.I)
+DESVIO = re.compile(r"(te contacte una persona|te escriba (una persona|alguien)|una persona del equipo\?|te escribo por aqu[ií] o|si quieres,? te escribo para orientarte)", re.I)
+INTERES = re.compile(r"^\W*(quiero|me interesa|eso|excelente|dale|s[ií],? quiero)\b", re.I)
+SOPORTE = re.compile(r"(no puedo (entrar|ingresar|acceder)|mi acceso|contrase[nñ]a|no me aparece el curso|no veo (el|mi) curso|certificado|plataforma|ya pagu[eé]|reactiv)", re.I)
+CORTO = re.compile(r"^\W*(\d{1,3}|s[ií]|no|ok|dale|listo|[\U0001F300-\U0001FAFF\u2600-\u27BF]+)\W*$", re.I)
+
+
+def fecha(m):
+    try:
+        return datetime.fromisoformat((m.get("dateAdded") or "").replace("Z", "+00:00"))
+    except ValueError:
+        return None
+
 
 COMPRA = re.compile(r"(compr|inscrit|pagad|pago confirmado|cliente|alumno|matricul)", re.I)
 
@@ -176,6 +199,14 @@ def main():
     revisadas = termina_nuestro = compra = con_llamada = con_pago = 0
     tras_objecion_largo, tras_objecion_pregunta, tras_objecion_n = [], 0, 0
     ejemplos = []
+    fallas = Counter()
+    ejemplos_falla = defaultdict(list)
+    ahora = datetime.now(timezone.utc)
+
+    def anota(clave, texto, nombres):
+        fallas[clave] += 1
+        if len(ejemplos_falla[clave]) < 6:
+            ejemplos_falla[clave].append(limpiar(texto, nombres)[:200])
 
     tipos_conv, tipos_msg = Counter(), Counter()
     for c in convs:
@@ -220,6 +251,37 @@ def main():
                         t2 = clasifica((sig.get("body") or "").strip(), CIERRES)
                         tras_objecion_pregunta += "pregunta" in t2
                         respuesta_a_objecion.update(t2 or ["sin_pregunta_ni_paso"])
+        # Fallas del 12-oct, una vez por conversación.
+        salientes = [m for m in ms if (m.get("direction") or "").lower() == "outbound"]
+        fuga = next((m for m in salientes if FUGA_TECNICA.search(m.get("body") or "")), None)
+        if fuga:
+            anota("texto_tecnico_filtrado", fuga.get("body"), nombres)
+        saludos = [m for m in salientes if SALUDO_BOT.search(m.get("body") or "")]
+        if len(saludos) >= 3:
+            anota("saludo_repetido_3_o_mas", saludos[-1].get("body"), nombres)
+        for x, y in zip(ms, ms[1:]):
+            if all((z.get("direction") or "").lower() == "outbound" for z in (x, y)) and \
+               SequenceMatcher(None, (x.get("body") or "").lower(), (y.get("body") or "").lower()).ratio() >= .75:
+                anota("dos_mensajes_nuestros_casi_iguales_seguidos", y.get("body"), nombres)
+                break
+        for x, y in zip(ms, ms[1:]):
+            if (x.get("direction") or "").lower() != "outbound" and INTERES.search(x.get("body") or "") \
+               and DESVIO.search(y.get("body") or ""):
+                anota("quiero_respondido_con_una_persona_del_equipo", y.get("body"), nombres)
+                break
+        if any(DESVIO.search(m.get("body") or "") for m in salientes):
+            fallas["ofrece_una_persona_del_equipo"] += 1
+        entrantes = [m for m in ms if (m.get("direction") or "").lower() != "outbound"]
+        if any(SOPORTE.search(m.get("body") or "") for m in entrantes):
+            fallas["pide_soporte"] += 1
+            if not any("soporte-aylin" in (t or "").lower() for t in (c.get("tags") or [])):
+                fallas["pide_soporte_sin_etiqueta_soporte_aylin"] += 1
+        ult = ms[-1]
+        f_ult = fecha(ult)
+        if (ult.get("direction") or "").lower() != "outbound" and f_ult and (ahora - f_ult).total_seconds() > 1800:
+            anota("respuesta_del_cliente_sin_contestar", ult.get("body"), nombres)
+            if CORTO.search(ult.get("body") or ""):
+                anota("respuesta_corta_o_numero_sin_contestar", ult.get("body"), nombres)
         con_llamada += hubo_llamada
         con_pago += hubo_pago
         ultimo = ms[-1]
@@ -268,6 +330,11 @@ def main():
             "terminan_en_pregunta": tras_objecion_pregunta,
             "tipos": dict(respuesta_a_objecion.most_common()),
         },
+        "fallas_12_oct": {
+            "nota": "Conversaciones con cada falla (una vez por conversación). «Sin contestar» = el último mensaje es del cliente y lleva más de 30 min.",
+            **dict(fallas.most_common()),
+        },
+        "ejemplos_de_falla": {k: v for k, v in ejemplos_falla.items()},
         "frases_del_bot_mas_repetidas": [[f, n] for f, n in frases_bot.most_common(40) if n >= 3],
         "ejemplos_final_de_conversacion": ejemplos,
     }
