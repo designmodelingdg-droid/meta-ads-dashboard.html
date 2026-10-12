@@ -4,7 +4,7 @@ Todo lo que hace falta para editar los reels y anuncios de DMA en cualquier conv
 
 ## 1. Recursos de Drive (logos, B-roll, fotos de Gabriel)
 
-921 archivos (~7,4 GB) en **PLANIFICACIONES INTERNAS / Contenido Adicional**. El manifiesto con el id de cada archivo **no se sube a este repo, que es público** (los archivos están compartidos por enlace y quedarían expuestos): vive en esa misma carpeta del Drive como `manifest-recursos-video.tsv`. Se baja con el conector de Google Drive y luego:
+921 archivos (~7,4 GB) en **PLANIFICACIONES INTERNAS / Contenido Adicional**. El manifiesto con el id de cada archivo **no se sube a este repo, que es público** (los archivos están compartidos por enlace y quedarían expuestos): vive en esa misma carpeta del Drive, partido en 18 archivos `manifest-recursos-video-parte-1.tsv` … `-parte-18.tsv` (y las carpetas en `folders-recursos-video-parte-1..3.tsv`). Se bajan con el conector de Google Drive, se pegan en orden (`cat manifest-recursos-video-parte-{1..18}.tsv > manifest.tsv`) y luego:
 
 ```bash
 python3 video-recursos/scripts/bajar_recursos.py "Logos de Marcas" --manifiesto manifest.tsv             # solo logos (~76 MB)

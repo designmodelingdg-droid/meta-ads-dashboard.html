@@ -5,8 +5,8 @@ Carpeta: PLANIFICACIONES INTERNAS / Contenido Adicional (921 archivos, ~7,4 GB).
 Los archivos están compartidos por enlace, así que basta con curl; no hace falta token.
 
 El manifiesto (ruta · id · tipo · tamaño) NO está en este repo, que es público: vive en el
-Drive de Dayana, en esa misma carpeta, como «manifest-recursos-video.tsv». Se baja con el
-conector de Google Drive y se pasa con --manifiesto.
+Drive de Dayana, en esa misma carpeta, partido en «manifest-recursos-video-parte-1..18.tsv».
+Se bajan con el conector de Google Drive, se pegan en orden y se pasa con --manifiesto.
 
     python3 video-recursos/scripts/bajar_recursos.py --manifiesto manifest.tsv                     # todo
     python3 video-recursos/scripts/bajar_recursos.py "Logos de Marcas" --manifiesto manifest.tsv   # filtro por ruta
@@ -19,7 +19,7 @@ import argparse, concurrent.futures as cf, csv, os, subprocess
 
 ap = argparse.ArgumentParser()
 ap.add_argument('filtro', nargs='?', default='')
-ap.add_argument('--manifiesto', required=True, help='manifest-recursos-video.tsv bajado del Drive')
+ap.add_argument('--manifiesto', required=True, help='manifiesto armado con las 18 partes del Drive')
 ap.add_argument('--dest', default=os.path.expanduser('~/drive-recursos/Contenido Adicional'))
 ap.add_argument('--hilos', type=int, default=6)
 a = ap.parse_args()
