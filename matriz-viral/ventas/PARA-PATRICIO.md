@@ -54,6 +54,18 @@ La auditoría semanal de GHL va a contar además:
 - saludos repetidos y mensajes casi iguales seguidos;
 - ofertas de «una persona del equipo» después de un «quiero».
 
+**Punto de partida (auditoría del 12-oct, 351 conversaciones recientes):**
+
+| Falla | Conversaciones |
+|---|---|
+| 3 o más saludos nuestros | 145 |
+| Dos mensajes nuestros casi iguales seguidos | 79 |
+| Piden soporte, ninguna con la etiqueta `soporte-aylin` | 24 de 24 |
+| Texto técnico filtrado (corchetes, «campo sin completar», «marcador») | 21 |
+| El cliente escribió y nadie le contestó en más de 30 min | 20 |
+
+Estos conteos incluyen los mensajes de los workflows de GHL, no solo los del agente. Varias plantillas viejas («¡Solo por hoy…!», «últimos 2 cupos») también saludan y se repiten. Por eso este conteo tiene que bajar cuando se carguen las instrucciones nuevas **y** se apaguen las plantillas de `PLANTILLAS-GHL-A-CORREGIR.md`.
+
 ### La evidencia
 
 Capturas reales de WhatsApp, sin teléfonos, nombres, fotos ni correos.
