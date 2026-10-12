@@ -1,8 +1,8 @@
 # Inventario de correos — GoHighLevel
 
-Generado el 2026-10-09.
+Generado el 2026-10-12.
 
-**446 plantillas** en **54 carpetas**. 446 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
+**450 plantillas** en **54 carpetas**. 450 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
 
 > Lo que NO sale por API: que workflow usa que plantilla. El endpoint de automatizaciones devuelve solo metadatos. En esta cuenta las plantillas estan nombradas por su flujo, asi que el cruce se puede hacer leyendo.
 
@@ -8691,6 +8691,307 @@ Hablar por WhatsApp
 &iquest;Y si prefieres que te deje tranquilo?
 Sin problema y sin resentimientos. Un clic aqu&iacute; y dejas de recibir estos correos hoy mismo.
 Darme de baja
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+## ⚠️ AUTOMATIZACIONES PIPELINE > ✅ COMPRA DIRECTA > ✅SEGUIMIENTO TEST BIM
+
+### ✅ Seg 01 - Cuatro Niveles BIM
+
+- **id:** `6a91b6c7779240a94e04f2ff`
+- **tipo:** html
+- **actualizada:** 2026-09-01T18:41:07.790Z
+- **Cuerpo:**
+
+```
+Casi nadie se ubica bien. Estos son los cuatro niveles y como saber en cual estas de verdad.
+Diagn&oacute;stico de nivel
+Los 4 niveles BIM, sin humo
+Hola {{contact.first_name}} ,
+Casi todos los ingenieros y arquitectos que llegan aqu&iacute; hacen lo mismo: se ponen una etiqueta que no les corresponde. Unos se creen m&aacute;s arriba de lo que est&aacute;n. La mayor&iacute;a, y esto es lo que sorprende, se subestima.
+Dicen &laquo;yo solo modelo&raquo; cuando en realidad ya est&aacute;n coordinando. O se quedan a&ntilde;os en un nivel porque nadie les dijo qu&eacute; competencia concreta les faltaba para pasar al siguiente.
+Estos son los cuatro niveles, sin humo:
+Modelador &#8594; Coordinador &#8594; BIM Manager &#8594; BIM+IA
+Cada salto exige competencias distintas, no m&aacute;s a&ntilde;os de experiencia
+01
+Modelador BIM Profesional
+Modelas arquitectura y estructura con est&aacute;ndar, sacas planos limpios y resuelves tu disciplina. Es el nivel donde est&aacute; la mayor&iacute;a &mdash; y donde muchos creen que ya tocaron techo.
+02
+Coordinador BIM
+Dejas de trabajar solo sobre tu modelo: integras disciplinas, detectas interferencias antes de la obra y respondes por la informaci&oacute;n que entregas. Aqu&iacute; se atasca la mayor&iacute;a.
+03
+BIM Manager 4D-5D
+El modelo deja de ser un dibujo y pasa a ser un instrumento de gesti&oacute;n: planificaci&oacute;n, control de costos y decisiones que afectan el presupuesto de la obra.
+04
+Especialista BIM+IA
+Automatizas lo repetitivo, programas tus propios flujos y aplicas IA con criterio t&eacute;cnico. Es el nivel que hoy casi nadie ocupa, y por eso se paga distinto.
+Leerlos no basta: casi nadie se ubica bien a s&iacute; mismo. Por eso armamos un test de 20 preguntas sobre lo que sabes hacer en un proyecto, no sobre lo que has le&iacute;do. Toma 5 minutos y no regala niveles: te dice en cu&aacute;l est&aacute;s y qu&eacute; competencia te falta cerrar.
+Hacer el test &#8594;
+Gratis &middot; 5 minutos &middot; diagn&oacute;stico honesto
+P.D. Si el resultado te da un nivel m&aacute;s alto del que esperabas, no es un halago del sistema: es que llevas tiempo haciendo trabajo que no te est&aacute;s cobrando.
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Seg 02 - Modelador a Coordinador
+
+- **id:** `6a91b6fe71d42e04f9e5d459`
+- **tipo:** html
+- **actualizada:** 2026-09-16T18:04:36.086Z
+- **Cuerpo:**
+
+```
+El salto no se da modelando mejor. Es otro oficio, y se aprende en otro orden.
+El salto que m&aacute;s cuesta
+De modelador a coordinador: por qu&eacute; se atasca ah&iacute;
+Hola
+{{contact.first_name}} ,
+De los cuatro
+niveles del correo anterior, hay uno donde se detiene casi todo el mundo: el paso de
+modelador a coordinador .
+No es por falta de
+ganas ni de horas. Es que el salto no se da modelando mejor.
+01
+El salto no es
+t&eacute;cnico, es de responsabilidad
+Modelar bien es
+resolver tu disciplina. Coordinar es responder por la informaci&oacute;n de todas. Nadie te
+ense&ntilde;a eso modelando m&aacute;s horas: es otro oficio.
+02
+Falta el
+lenguaje com&uacute;n
+Coordinar exige
+entender qu&eacute; necesita estructuras de arquitectura, y qu&eacute; necesita MEP de ambas. Si
+solo dominas tu disciplina, no puedes anticipar el choque; solo lo reportas cuando ya
+ocurri&oacute;.
+03
+Nadie te da el
+puesto para que aprendas
+El coordinador se
+contrata con experiencia demostrable. Es el c&iacute;rculo cl&aacute;sico: no te dan el rol porque
+no lo has hecho, y no lo has hecho porque no te dan el rol.
+Ese es exactamente
+el problema que resuelve el
+M&aacute;ster Internacional en BIM Management e Inteligencia Artificial para la Construcci&oacute;n :
+est&aacute; organizado en cuatro bloques y cada uno te acredita en un rol distinto, en orden. No es un
+curso largo: es una ruta de carrera.
+4 bloques &middot; 12 m&oacute;dulos &middot; 12
+meses
+Modelador &#8594; Coordinador &#8594; BIM Manager 4D-5D &#8594; Especialista BIM+IA
+C&oacute;mo se
+trabaja el salto a coordinador
+&#9989; Coordinaci&oacute;n interdisciplinaria real: arquitectura, estructura y MEP
+sobre un mismo proyecto.
+&#9989; Gesti&oacute;n del entorno com&uacute;n de datos y control de versiones.
+&#9989; Detecci&oacute;n y resoluci&oacute;n de interferencias antes de que lleguen a
+obra.
+&#9989;
+Workshops en vivo cada semana y mentor&iacute;as personalizadas uno a uno.
+Sin costo adicional
+Con qu&eacute;
+sales acreditado
+Certificaciones Autodesk por m&oacute;dulo y t&iacute;tulos propios universitarios al finalizar.
+Autodesk
+Una por
+m&oacute;dulo
+Design Modeling
+Con
+c&oacute;digo QR
+Doctrina
+Qualitas
+1440 horas
+Sabal
+University
+Estados Unidos
+Univ. de las
+Naciones
+Equivalencia
+acad&eacute;mica
+ISTE
+Espa&ntilde;a
+T&iacute;tulo
+propio
+Si quieres saber si
+tiene sentido para tu caso, la forma corta es que te lo cuenten y ver el plan de estudios completo:
+Quiero que me cuenten &#8594;
+Sesi&oacute;n con un asesor
+acad&eacute;mico &middot; sin compromiso
+Ver el temario del M&aacute;ster
+Hablar por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Seg 03 - Microcredenciales
+
+- **id:** `6a91b73fd4079d1320de1aba`
+- **tipo:** html
+- **actualizada:** 2026-09-01T18:42:14.451Z
+- **Cuerpo:**
+
+```
+Una microcredencial NFT por bloque, avalada por Silicon Valley, mas tu kit de apps de IA.
+El diferenciador
+Microcredenciales, no un PDF al final
+Hola
+{{contact.first_name}} ,
+Un diploma en PDF al
+final de un programa dice poco. No se verifica, no se actualiza y quien lo recibe tiene que explicar
+qu&eacute; hay detr&aacute;s.
+En el M&aacute;ster
+funciona distinto: no esperas doce meses para tener algo que mostrar.
+Al cerrar cada bloque obtienes una microcredencial NFT avalada por el Silicon Valley Futures Institute ,
+verificable y ligada a un rol concreto.
+4 microcredenciales &middot; una por
+bloque
+Avaladas por el Silicon Valley Futures Institute &middot; verificables en l&iacute;nea
+01
+Modelador BIM
+Profesional
+Se emite al cerrar el
+primer bloque. Acredita que modelas arquitectura y estructura con est&aacute;ndar y documentas el
+proyecto.
+02
+Coordinador BIM
+Acredita que integras
+disciplinas, gestionas el entorno com&uacute;n de datos y resuelves interferencias antes de la
+obra.
+03
+BIM Manager
+4D-5D
+Acredita
+planificaci&oacute;n 4D y control de costos 5D: el modelo como instrumento de gesti&oacute;n del
+proyecto.
+04
+Especialista
+BIM+IA
+Acredita
+automatizaci&oacute;n con Dynamo, programaci&oacute;n en Python e inteligencia artificial aplicada
+a procesos BIM.
+Respaldado por
+Agencia
+Universitaria
+Doctrina
+Qualitas
+La diferencia
+pr&aacute;ctica: a los tres meses ya tienes una acreditaci&oacute;n que puedes poner en tu perfil y que
+un reclutador puede verificar, en lugar de un &laquo;estoy estudiando un m&aacute;ster&raquo;.
+Y adem&aacute;s
+DMA Engineering Suite
+Tu propio kit de aplicaciones de inteligencia artificial para ingenier&iacute;a, con una
+herramienta
+nueva liberada cada mes durante el programa. No son demos: son apps que usas en proyectos reales.
+&#9654; Una herramienta nueva cada mes
+&#9654; Automatizaci&oacute;n de tareas
+repetitivas de modelado y documentaci&oacute;n
+&#9654; Acceso durante los 12 meses del
+programa
+Sin costo adicional
+M&aacute;s la
+titulaci&oacute;n universitaria
+Certificaciones Autodesk por m&oacute;dulo y t&iacute;tulos propios al finalizar.
+Autodesk
+Una por
+m&oacute;dulo
+Design Modeling
+Con
+c&oacute;digo QR
+Doctrina
+Qualitas
+1440 horas
+Sabal
+University
+Estados Unidos
+Univ. de las
+Naciones
+Equivalencia
+acad&eacute;mica
+ISTE
+Espa&ntilde;a
+T&iacute;tulo
+propio
+Todos nuestros
+avales son p&uacute;blicos y verificables. Puedes revisarlos uno por uno:
+Ver acreditaciones &#8594;
+Avales verificables
+&middot; Autodesk, DQ, Sabal, ISTE y m&aacute;s
+Agendar una sesi&oacute;n informativa
+Hablar por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Seg 04 - Agenda Llamada
+
+- **id:** `6a91b7709dcfa20100659146`
+- **tipo:** html
+- **actualizada:** 2026-09-01T18:42:34.607Z
+- **Cuerpo:**
+
+```
+Preventa abierta para el nuevo grupo. Agenda 30 minutos y definimos tu punto de partida.
+&Uacute;ltimo paso
+30 minutos y te digo por d&oacute;nde empezar
+Preventa abierta &middot; nuevo grupo
+Condiciones de preventa mientras se completa el cupo del grupo que inicia
+Hola
+{{contact.first_name}} ,
+Llevamos varios
+correos hablando de niveles, del salto a coordinador y de c&oacute;mo se acredita cada bloque. Todo eso
+sirve de poco si no se aterriza en tu caso.
+Por eso el
+&uacute;ltimo paso es una conversaci&oacute;n de 30 minutos , sin
+presentaci&oacute;n de ventas y sin compromiso.
+01
+Te ubicamos con
+precisi&oacute;n
+Revisamos qu&eacute;
+haces hoy en un proyecto real y en cu&aacute;l de los cuatro niveles est&aacute;s de verdad, no en
+cu&aacute;l crees estar.
+02
+Te decimos por
+d&oacute;nde empezar
+Puede que el
+M&aacute;ster completo sea lo tuyo, o que te convenga cerrar antes una competencia puntual. Si no
+es el momento, tambi&eacute;n te lo decimos.
+03
+Resolvemos lo
+pr&aacute;ctico
+Tiempo semanal real,
+c&oacute;mo funcionan las mentor&iacute;as, qu&eacute; pasa si una semana no puedes avanzar y
+c&oacute;mo se emiten las acreditaciones.
+Y hay una
+raz&oacute;n para no dejarlo para el mes que viene: estamos en
+preventa para el nuevo grupo , con las condiciones y los cupos
+que aplican a quienes entran antes del inicio. Cuando el grupo se completa, se cierra y el siguiente
+arranca meses despu&eacute;s.
+4 bloques &middot; 12 m&oacute;dulos &middot; 12
+meses
+Workshops en vivo semanales &middot; mentor&iacute;as 1:1 &middot; DMA Engineering Suite
+Lo que ya
+sabes que incluye
+&#9989; 4 microcredenciales NFT avaladas por el Silicon Valley Futures Institute, una
+por bloque.
+&#9989; Certificaciones oficiales de Autodesk por cada m&oacute;dulo completado.
+&#9989; T&iacute;tulos propios de Sabal University, Universidad de las Naciones e ISTE
+Espa&ntilde;a.
+&#9989; Certificado universitario DQ y Design Modeling de 1440 horas acad&eacute;micas.
+&#9989;
+DMA Engineering Suite: una herramienta de IA nueva cada mes.
+Elige el horario que
+te sirva. Si ninguno calza, escr&iacute;benos y lo acomodamos.
+Agendar mis 30 minutos &#8594;
+Sin compromiso &middot;
+cupos de preventa mientras dure el grupo
+Hablar por WhatsApp
+P.D. Si en la llamada concluimos que el M&aacute;ster no es
+para ti ahora, te lo diremos y te propondremos otra ruta. Preferimos eso a tener a alguien
+matriculado en un programa que no le corresponde.
 Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
 designmodelingacademy.com
 {{unsubscribe_url}}
