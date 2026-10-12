@@ -54,18 +54,22 @@ Stripe y PayPal, del 9-sep al 8-oct (el archivo se actualiza solo el lunes a las
 | 28 sep–4 oct | 8 | USD 1.220 | 7 cuotas o matrículas del Máster (USD 160) y una reserva de USD 100 |
 | 5–8 oct | 11 | USD 18.072 | Ver abajo |
 
-La semana del 5 al 8 de octubre tiene:
-- **un cobro único de USD 15.239,14 de una empresa constructora**: hay que confirmar si es de la Academy (formación para empresa) o de la consultoría DG antes de contarlo como venta de cursos;
-- un cobro de USD 750 (el precio del módulo BIM Professional del Máster) y otro de USD 1.000;
-- el resto, cuotas recurrentes del Máster (USD 160, 140, 113 y 30). Son ingreso recurrente, no captación nueva.
+La semana del 5 al 8 de octubre, con lo que confirmó Dayana el 12-oct:
+- **el cobro de USD 15.239,14 es de un proyecto de la consultoría DG, no de la Academy**: no cuenta para las ventas de cursos. Sin él, la Academy cobró **USD 2.833** en Stripe esa semana;
+- USD 750 (módulo BIM Professional) y USD 1.000, los dos del Máster;
+- el resto, cuotas recurrentes del Máster (USD 160, 140, 113 y 30): ingreso recurrente, no captación nueva.
 
-**En las tres semanas no hay ningún cobro de USD 225 ni de USD 199,99**: no aparece ninguna venta de la Especialización en Acero por Stripe ni por PayPal, aunque 41 conversaciones recibieron un enlace de pago. O los pagos de Acero entran por otra pasarela que no está en estos archivos, o los enlaces no se están pagando. Hay que confirmarlo con Ester.
+**Acero:** en Stripe no aparece ningún cobro de USD 225 ni de USD 199,99 en tres semanas. Dayana confirmó que esta semana entraron **dos Acero por otras vías**:
+- **una de USD 225 por PayPhone**, que no está en `fuentes/ingresos/` y por eso la auditoría no la ve;
+- **otra por PayPal el domingo 11**, que entra en la actualización automática del lunes 12 (el archivo llegaba hasta el 8).
+
+Mientras PayPhone (y Datafast, que empieza ahora) no estén en `fuentes/ingresos/`, el total de la Academy sale corto. Para sumarlas hace falta su API o su reporte; las claves se cargan como secreto del repositorio, nunca por chat.
 
 ## Qué hacer esta semana
 
 1. **Patricio:** cargar la versión 2 del prompt y los enlaces de pago por país (Datafast, Stripe y PayPal).
 2. **Ester:** apagar las plantillas de urgencia falsa y los mensajes repetidos, y cortar el flujo que deja pasar leads sin presupuesto.
-3. **Confirmar por dónde entran los pagos de Acero.** Si existe otra pasarela (por ejemplo Datafast, o el checkout de la plataforma), sumarla a `fuentes/ingresos/` para que la auditoría vea las ventas.
+3. **Sumar PayPhone y Datafast a `fuentes/ingresos/`**, y registrar cada venta en GHL como oportunidad ganada con su pasarela, para que la auditoría vea todas las ventas.
 4. **El lunes 19 se repite esta auditoría.** La meta para esa fecha:
    - más de 60 % de últimos mensajes con pregunta;
    - ninguna conversación con texto técnico filtrado;

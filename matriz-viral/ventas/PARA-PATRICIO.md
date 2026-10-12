@@ -10,7 +10,7 @@ Patricio, Dayana revisó conversaciones del agente de la semana del 5 al 11 de o
 
 | Archivo | Dónde va | Qué cambió |
 |---|---|---|
-| `PROMPT-AGENTE-VENTAS.md` | Instrucción de sistema. **Se pega desde «Quién eres» hasta el final**, sin el recuadro de arriba | 7 reglas nuevas (11 a 17), «La siguiente pregunta», paquete Acero + Hormigón, soporte a Aylin, nada de consultoría gratis, tabla de tiempos. Los ejemplos ya no llevan corchetes |
+| `PROMPT-AGENTE-VENTAS.md` | Instrucción de sistema. **Se pega desde «Quién eres» hasta el final**, sin el recuadro de arriba | Etiquetas `pago-por-confirmar` y `sin-presupuesto`, precios de Hormigón y del paquete, enlace de pago por país, 7 reglas nuevas (11 a 17), «La siguiente pregunta», paquete Acero + Hormigón, soporte a Aylin, nada de consultoría gratis, tabla de tiempos. Los ejemplos ya no llevan corchetes |
 | `OBJECIONES-DMA.md` | Base de conocimiento | 4 casos nuevos: «quiero las dos», «ayúdame con mi proyecto», «quiero», soporte |
 | `ANTES-Y-DESPUES.md` | Base de conocimiento | Casos 7 a 14, sacados de estas capturas |
 
@@ -45,6 +45,28 @@ Patricio, Dayana revisó conversaciones del agente de la semana del 5 al 11 de o
   Necesitas cargar en la base de conocimiento del agente los enlaces de Datafast (Ester los tiene desde hoy), Stripe y PayPal de cada producto: Acero USD 225, Acero sin tutor USD 199,99, Hormigón USD 199,99 y las dos USD 299,99. **Sin esos enlaces cargados, el agente no tiene qué mandar.**
 
 Y una que encontramos al revisar: el agente le ofreció a una persona un «Diplomado de Instalaciones en BIM» que **no existe en el catálogo**. El prompt ahora le prohíbe inventar programas; lo más cercano real es la Especialización en Modelado BIM Arquitectura y MEP.
+
+### Lo que sigue para cerrar ventas reales
+
+Esto sale de la auditoría del 12-oct (`AUDITORIA-SEMANA-2026-10-12.md`). Con la versión 1 ya mejoró el cierre: el último mensaje termina en pregunta en el 47 % de las conversaciones (antes 23 %) y el 11,7 % llega al enlace de pago (antes 8,9 %). Lo que todavía hace perder ventas:
+
+| # | Qué pasa hoy | Qué tiene que hacer el agente o GHL |
+|---|---|---|
+| A | **Después de una objeción, solo el 20 % de las respuestas termina en pregunta** (no cambió en la semana). Las que más salen: «lo pienso» (55) y pedir descuento (51) | Usar `OBJECIONES-DMA.md` tal cual: reconocer, preguntar qué hay detrás, responder corto y volver a pedir el paso |
+| B | 20 conversaciones donde el cliente escribió y nadie contestó en más de 30 minutos | El agente contesta todo, a cualquier hora. Revisar que no quede pausado por una pausa vieja ni por un filtro de mensajes cortos |
+| C | Los seguimientos los mandan los workflows con plantillas repetidas («¡Solo por hoy!» 235 veces, «Últimos cupos… hoy cerramos» 100) | Apagar esas plantillas. El seguimiento manual lo hace el equipo en cada etapa, y solo en la última etapa va una automatización de recontacto (lo coordina Ester). **Un solo emisor por conversación** |
+| D | **No sabemos qué conversaciones terminan en venta.** Esta semana entraron 2 Acero (una por PayPhone y otra por PayPal) y en el CRM no se ven | Cuando la persona dice «ya pagué»: pedir el comprobante, poner la etiqueta `pago-por-confirmar` y avisar a Ester. Cuando Ester confirma: oportunidad **ganada**, con el monto y la pasarela (Datafast, PayPhone, Stripe, PayPal o transferencia). Sin eso no se puede medir qué funciona |
+| E | Llegan leads que respondieron «No» al presupuesto o que están desempleados | El agente no los manda a la llamada del Máster: les ofrece la ruta barata (Acero) o un recurso gratis, y les pone la etiqueta `sin-presupuesto` para que no lleguen al closer. El flujo de GHL que hoy los deja pasar lo corrige Ester |
+| F | Bajaron las conversaciones con propuesta de llamada (del 30 % al 25 %) | Máster y Diplomados: siempre dos horarios concretos y el enlace de agenda, nunca «¿cuándo puedes?» |
+| G | No podemos ver ni corregir el agente sin molestarte | Dayana te pregunta por privado cuándo se puede pasar el bot a la plataforma de DG Operaciones |
+
+**Cómo lo medimos el lunes 19:**
+- más de 60 % de últimos mensajes con pregunta;
+- más de 40 % de respuestas a objeciones con pregunta;
+- ninguna conversación con texto técnico filtrado;
+- menos de 20 con saludos repetidos;
+- todo pedido de soporte con `soporte-aylin`;
+- toda venta registrada como oportunidad ganada con su pasarela.
 
 ### Aviso automático a Aylin (soporte)
 
