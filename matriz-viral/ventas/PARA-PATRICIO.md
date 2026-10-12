@@ -68,6 +68,14 @@ Esto sale de la auditoría del 12-oct (`AUDITORIA-SEMANA-2026-10-12.md`). Con la
 - todo pedido de soporte con `soporte-aylin`;
 - toda venta registrada como oportunidad ganada con su pasarela.
 
+### Ajustes del 12-oct, después de tu respuesta
+
+- **Certificado DQ en Acero:** confirmado, **no lo incluye** (Ester, 8-oct). Ya se quitó del prompt.
+- **Leads con «No» al presupuesto:** solo el PDF del programa y una pregunta directa sobre el presupuesto. Si dice que no, ruta barata o recurso gratis, etiqueta `sin-presupuesto` y no se le escribe más, para no gastar mensajes.
+- **Nunca decir que inscribió a alguien ni que le activó el acceso** sin un pago confirmado por el equipo. Dayana vio un caso donde el bot «inscribió» a una clienta que solo pidió información.
+- **Conversaciones que se alargan sin avanzar:** a los 3 intercambios sin avance, se pide el paso concreto; si no responde, seguimiento y se para.
+- **Los mensajes repetidos de «ya activé / ya reactivé tu acceso»:** tenías razón, no son de tu agente. Los manda el «Supervisor Académico» del servidor de DMA en Render, y lo corregimos nosotros. Ese mismo servidor le contestó por error al grupo de soporte el 12-oct.
+
 ### Aviso automático a Aylin (soporte)
 
 Cuando quien escribe ya es alumna o alumno y tiene un problema (no entra a la plataforma, no ve su curso, se le venció el acceso, no le llegó el certificado, pagó y no tiene acceso), el agente:

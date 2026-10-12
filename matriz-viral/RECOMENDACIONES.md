@@ -38,6 +38,9 @@ estado: 🔴 pendiente · 🟡 en curso · 🟢 hecho · ⚫ descartada (con el 
 | 20 | **Ponerle palabra de recurso a cada dato de cálculo.** El de la fórmula del acero (2-oct) fue lo más guardado de la semana (91) y solo sacó 10 comentarios | Revisión 5-oct | Contenido | 🔴 |
 | 21 | **Comprobar que los comentarios de Facebook reciben el DM.** El post de MEMORIA del 1-oct sacó 192 comentarios en FB (6 veces Instagram). Si el workflow de GHL solo escucha Instagram, esa gente se queda sin el recurso | Revisión 5-oct | Patricio / Dayana | 🔴 |
 | 22 | **Conectar el seguimiento por correo de MEMORIA.** Entraron 104 contactos en 7 días y después del acceso no reciben nada | Revisión 5-oct | Ester | 🔴 |
+| 23 | **El post de la deriva (9-oct) pedía ACERO, tuvo 10 comentarios y el embudo ACERO no sumó a nadie en 7 días.** Revisar que el workflow «Comentario ACERO» de GHL escuche ese post (o cualquier publicación) y mandar el recurso a mano a quienes comentaron | Revisión 12-oct | Patricio / Dayana | 🔴 |
+| 24 | **Publicar el reel del sábado 10 (`oct-clase-chatgpt-seguidor-reel`)**, que está editado y no salió. Si ya no cabe, pasarlo al banco de reserva | Revisión 12-oct | Contenido | 🔴 |
+| 25 | **Las piezas de producto llevan palabra viva y pregunta.** El carrusel del tutor del Diplomado pedía DIPLOMADO o DM, palabra que no está montada, y quedó en 0 comentarios con 3.230 vistas | Revisión 12-oct | Contenido | 🔴 |
 | 16 | **Tres piezas del calendario siguen sin salir:** `pauta-guia` (Mar 8, reel), `lm-revit-chatgpt-feed` (Jue 10, carrusel) y `reel-advertencias` (Vie 18, reel). El del Jue 10 no necesita cámara | Revisión 21-sep | Contenido | 🔴 |
 
 ---
@@ -59,6 +62,7 @@ Estas ya no se discuten cada semana. Salieron de medir.
 | **Lo institucional va a historias, no a feed** | «Somos el equipo detrás»: 2.164 views, 7 likes, 0 guardados |
 | **Las piezas de evento no llevan CTA de producto** y se miden por alcance, no por comentarios | Civil 3D: 5.469 views, 0 comentarios, 0 guardados. Es presencia |
 | **Facebook es canal propio, no espejo.** Cada pieza fuerte se publica cuidada en FB | 9.103 de las 11.193 views del ganador vinieron de Facebook |
+| **Anunciar el producto, solo, no conversa.** Toda pieza de producto lleva una palabra viva y una pregunta al lector | 3 semanas seguidas. 21-sep y 28-sep: tutor 2 comentarios, Máster 1. 5-oct: tutor del Diplomado 3.230 vistas y 0 comentarios. En las mismas semanas, los datos de cálculo con palabra hicieron 10 (deriva) y los recursos MEMORIA 82 |
 
 ### Pauta
 
@@ -86,6 +90,10 @@ Estas ya no se discuten cada semana. Salieron de medir.
 ---
 
 ## Historial
+
+### 12-oct-2026 · Revisión semanal (5–11 oct)
+
+**El dato de cálculo con palabra volvió a ganar.** La deriva (Vie 9) sacó 10 comentarios y 19 guardados. **Anunciar el producto no conversa por tercera semana seguida:** el tutor del Diplomado tuvo 3.230 vistas y 0 comentarios, y su CTA pedía una palabra que no está montada. El peor fue el reel de opinión sobre la IA (491 vistas). Mediana de la semana: 2.843 vistas, 2 comentarios y 7 guardados, contra 2.224 / 11 / 8 de septiembre. Salieron 4 de las 5 piezas; el reel del sábado estaba editado y no se publicó. → recomendaciones #23, #24 y #25.
 
 ### 5-oct-2026 · Revisión semanal (28 sep – 4 oct)
 

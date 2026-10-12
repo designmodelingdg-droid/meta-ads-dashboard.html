@@ -1,85 +1,103 @@
 {
- "generado": "2026-10-12T05:20Z",
+ "generado": "2026-10-12T13:48Z",
  "nota": "Agregados y ejemplos anonimizados (nombre del contacto, correos, teléfonos y enlaces tapados). Muestra de las conversaciones más recientes, no el total.",
  "conversaciones_traidas": 400,
- "conversaciones_revisadas": 350,
+ "conversaciones_revisadas": 352,
  "tipos_de_conversacion": {
   "TYPE_PHONE": 400
  },
  "tipos_de_mensaje": {
-  "TYPE_CUSTOM_SMS": 9285,
-  "TYPE_ACTIVITY_OPPORTUNITY": 2983,
-  "TYPE_EMAIL": 2464,
-  "TYPE_WHATSAPP": 397,
+  "TYPE_CUSTOM_SMS": 9266,
+  "TYPE_ACTIVITY_OPPORTUNITY": 2980,
+  "TYPE_EMAIL": 2552,
+  "TYPE_WHATSAPP": 416,
   "TYPE_INSTAGRAM": 221,
-  "TYPE_CALL": 94,
   "TYPE_CUSTOM_PROVIDER_SMS": 92,
-  "TYPE_ACTIVITY_APPOINTMENT": 61,
-  "TYPE_FACEBOOK": 43,
+  "TYPE_CALL": 89,
+  "TYPE_ACTIVITY_APPOINTMENT": 58,
+  "TYPE_FACEBOOK": 42,
   "TYPE_INTERNAL_COMMENT": 30,
   "TYPE_INSTAGRAM_COMMENT": 22,
-  "TYPE_FACEBOOK_COMMENT": 18,
-  "TYPE_ACTIVITY_EMPLOYEE_ACTION_LOG": 16,
+  "TYPE_ACTIVITY_EMPLOYEE_ACTION_LOG": 17,
+  "TYPE_FACEBOOK_COMMENT": 17,
   "TYPE_TIKTOK": 10,
   "TYPE_SMS_REVIEW_REQUEST": 8,
   "TYPE_WEBCHAT": 6,
   "TYPE_ACTIVITY_CONTACT": 6,
+  "TYPE_LIVE_CHAT_INFO_MESSAGE": 3,
   "TYPE_TIKTOK_COMMENT": 2,
+  "TYPE_LIVE_CHAT": 1,
   "TYPE_CUSTOM_EMAIL": 1
  },
- "terminan_con_mensaje_nuestro": 330,
- "con_etiqueta_de_compra": 71,
- "conversaciones_con_propuesta_de_llamada": 85,
- "conversaciones_con_enlace_de_pago": 40,
+ "terminan_con_mensaje_nuestro": 332,
+ "con_etiqueta_de_compra": 72,
+ "conversaciones_con_propuesta_de_llamada": 89,
+ "conversaciones_con_enlace_de_pago": 41,
  "fuente_de_los_mensajes_salientes": {
-  "api": 5047,
-  "workflow": 1759,
-  "app": 336,
+  "api": 4998,
+  "workflow": 1750,
+  "app": 351,
   "bulk_actions": 1
  },
  "largo_mensajes_bot": {
-  "mediana": 144,
-  "p90": 295,
-  "n": 7143
+  "mediana": 143,
+  "p90": 296,
+  "n": 7100
  },
  "como_terminan_los_mensajes_del_bot": {
-  "pregunta": 2206,
-  "da_opciones": 912,
-  "menciona_precio": 883,
-  "temario_o_pdf": 494,
-  "propone_llamada": 399,
-  "revisalo_y_me_cuentas": 237,
+  "pregunta": 2182,
+  "da_opciones": 907,
+  "menciona_precio": 872,
+  "temario_o_pdf": 485,
+  "propone_llamada": 395,
+  "revisalo_y_me_cuentas": 228,
   "enlace_de_pago": 68
  },
  "ultimo_mensaje_nuestro_de_cada_conversacion": {
-  "pregunta": 166,
-  "sin_pregunta_ni_paso": 163,
-  "menciona_precio": 87,
-  "da_opciones": 54,
-  "propone_llamada": 11,
+  "sin_pregunta_ni_paso": 165,
+  "pregunta": 165,
+  "menciona_precio": 88,
+  "da_opciones": 53,
+  "propone_llamada": 13,
   "revisalo_y_me_cuentas": 8,
   "temario_o_pdf": 6,
-  "enlace_de_pago": 3
+  "enlace_de_pago": 2
  },
  "objeciones": {
   "lo_pienso": 55,
-  "pide_descuento": 53,
+  "pide_descuento": 51,
   "clases_grabadas": 19,
   "tiempo": 17,
   "confianza": 13,
-  "es_un_bot": 6,
+  "es_un_bot": 9,
   "cuotas": 5,
   "precio_caro": 4,
   "sin_presupuesto": 2
  },
  "ejemplos_de_objecion": {
+  "es_un_bot": [
+   "Equipo, update de DG 📊 (avances de estos días) ✅ LISTO • Panel de DG ahora muestra las [nombre] del CRM: compras, plata, CPA y ROAS por producto, país y anuncio. Abre directo en \"Ventas reales (CRM)\".",
+   "👤 [nombre] ([telefono]) Gracias [nombre] , ya lo revisé. Fernando era un lead de agosto que tenía marcado que alguien le había respondido desde el teléfono, y el bot respetaba esa marca aunque había p",
+   "👤 [nombre] ([telefono]) Buen dia equipo @[telefono] por aca te envio 2 PDF actualizados para la información del Especializacion de Acero que es importante que el bot tenga, lo ideal siempre es enviar ",
+   "👤 [nombre] ([telefono]) ¡Gracias [nombre] ! 🙌 Listo, el bot ya tiene los dos PDF nuevos de Acero: manda siempre el brochure y el temario detallado solo cuando lo piden. Una confirmación: el brochure d",
+   "👤 [nombre] ([telefono]) ¡Gracias [nombre] ! 🙌 Listo, el bot ya manda el brochure corregido y no ofrece el certificado DQ en Acero. El temario detallado lo manda solo cuando lo piden.",
+   "👤 [nombre] ([telefono]) Hola [nombre] 🙌 Ya quedaron aplicadas las 9 correcciones. Encontramos la causa de fondo: cada mensaje que entra por el número de WhatsApp trae un texto técnico al final, y el b"
+  ],
   "pide_descuento": [
+   "les hice un pequeño descuento para apoyarles un poco mientras se recuperan",
    "Hola, quiero info de la Colección BIM + IA 2026 con descuento Autodesk ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: Chatea con nosotros 🔗 Description: ¿Estás listo para liderar la construcción digit",
    "Hola, me interesa la especialización de estructuras de Acero ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: 🔥 ¡Precio especial: $199 USD! 🔗 Description: ¿Quieres dominar el diseño de estructuras metál",
    "Hola, me interesa la especialización de estructuras de Acero ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: 💥 Precio especial: $199 USD por tiempo limitado. 🔗 Description: 📲 Escríbenos y te enviamos e",
    "Hola, quiero info de la Colección BIM + IA 2026 con descuento Autodesk • body: ¿Estás listo para liderar la construcción digital en 2026? Olvida saber solo Revit... El futuro es BIM + Inteligencia Art",
-   "Hay algún descuento para antiguos estudiantes",
-   "Quedo pendiente"
+   "Hay algún descuento para antiguos estudiantes"
+  ],
+  "confianza": [
+   "1 Juan 2 24 Lo que habéis oído desde el principio, permanezca en vosotros. Si lo que habéis oído desde el principio permanece en vosotros, también vosotros permaneceréis en el Hijo y en el Padre. 25 Y",
+   "1 Juan 3 19 Y en esto conocemos que somos de la verdad, y aseguraremos nuestros corazones delante de él; 20 pues si nuestro corazón nos reprende, mayor que nuestro corazón es Dios, y él sabe todas las",
+   "1 Juan 4 15 Todo aquel que confiese que Jesús es el Hijo de Dios, Dios permanece en él, y él en Dios. 16 Y nosotros hemos conocido y creído el amor que Dios tiene para con nosotros. Dios es amor; y el",
+   "Filipenses 1 19 Porque sé que por vuestra oración y la suministración del Espíritu de Jesucristo, esto resultará en mi liberación, 20 conforme a mi anhelo y esperanza de que en nada seré avergonzado; ",
+   "Filipenses 1 25 Y confiado en esto, sé que quedaré, que aún permaneceré con todos vosotros, para vuestro provecho y gozo de la fe, 26 para que abunde vuestra gloria de mí en Cristo Jesús por mi presen",
+   "Y estar mas confiado"
   ],
   "tiempo": [
    "El otro problema creo el más difícil sería el costo, y horarios",
@@ -111,14 +129,6 @@
    "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿A qué te dedicas?: Ingeniero(a) civil o estructural Con las estructuras [nombre] acero, ¿qué quieres hacer?: Dise",
    "Ok ¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿A qué te dedicas?: Estudiante de ingeniería o arquitectura Full name: [nombre] Phone number: [telefono] Con la"
   ],
-  "confianza": [
-   "Y estar mas confiado",
-   "1 Juan 2 24 Lo que habéis oído desde el principio, permanezca en vosotros. Si lo que habéis oído desde el principio permanece en vosotros, también vosotros permaneceréis en el Hijo y en el Padre. 25 Y",
-   "1 Juan 3 19 Y en esto conocemos que somos de la verdad, y aseguraremos nuestros corazones delante de él; 20 pues si nuestro corazón nos reprende, mayor que nuestro corazón es Dios, y él sabe todas las",
-   "1 Juan 4 15 Todo aquel que confiese que Jesús es el Hijo de Dios, Dios permanece en él, y él en Dios. 16 Y nosotros hemos conocido y creído el amor que Dios tiene para con nosotros. Dios es amor; y el",
-   "Filipenses 1 19 Porque sé que por vuestra oración y la suministración del Espíritu de Jesucristo, esto resultará en mi liberación, 20 conforme a mi anhelo y esperanza de que en nada seré avergonzado; ",
-   "Filipenses 1 25 Y confiado en esto, sé que quedaré, que aún permaneceré con todos vosotros, para vuestro provecho y gozo de la fe, 26 para que abunde vuestra gloria de mí en Cristo Jesús por mi presen"
-  ],
   "cuotas": [
    "Buen dia mi estimado, me quedare con la opcion de pago inicial de $500 y las mensualidades de $160",
    "Buen día mi estimado tengo una pregunta a las 12 cuotas a cancelar a partir de qué fecha inician el pago de la primera o hay una candelarizacion?",
@@ -129,73 +139,65 @@
   "sin_presupuesto": [
    "Actual mente no trabajo en proyectos de acero, quisiera reforzar el conocimiento que tengo para poder brindar un mejor servicio",
    "Hola buenas tardes saludos como estas amigo. Disculpe por ahora no tengo el dinero para pagar el curso pero tal vez para el próximo mes si pueda. Estaré en contacto con usted muchas gracias 🙏🏽 bendici"
-  ],
-  "es_un_bot": [
-   "Puedo hablar con alguien, mediante una llamada .?",
-   "👤 [nombre] ([telefono]) Gracias [nombre] , ya lo revisé. Fernando era un lead de agosto que tenía marcado que alguien le había respondido desde el teléfono, y el bot respetaba esa marca aunque había p",
-   "👤 [nombre] ([telefono]) Buen dia equipo @[telefono] por aca te envio 2 PDF actualizados para la información del Especializacion de Acero que es importante que el bot tenga, lo ideal siempre es enviar ",
-   "👤 [nombre] ([telefono]) ¡Gracias [nombre] ! 🙌 Listo, el bot ya tiene los dos PDF nuevos de Acero: manda siempre el brochure y el temario detallado solo cuando lo piden. Una confirmación: el brochure d",
-   "👤 [nombre] ([telefono]) ¡Gracias [nombre] ! 🙌 Listo, el bot ya manda el brochure corregido y no ofrece el certificado DQ en Acero. El temario detallado lo manda solo cuando lo piden.",
-   "acá va sobre agentes [nombre] [enlace]"
   ]
  },
  "respuesta_justo_despues_de_una_objecion": {
-  "n": 166,
-  "largo_mediana": 113,
-  "terminan_en_pregunta": 34,
+  "n": 167,
+  "largo_mediana": 112,
+  "terminan_en_pregunta": 33,
   "tipos": {
-   "sin_pregunta_ni_paso": 110,
-   "pregunta": 34,
+   "sin_pregunta_ni_paso": 113,
+   "pregunta": 33,
    "da_opciones": 18,
-   "menciona_precio": 15,
-   "temario_o_pdf": 11,
+   "menciona_precio": 16,
+   "temario_o_pdf": 8,
+   "propone_llamada": 2,
    "enlace_de_pago": 2,
-   "revisalo_y_me_cuentas": 2,
-   "propone_llamada": 2
+   "revisalo_y_me_cuentas": 2
   }
  },
  "fallas_12_oct": {
   "nota": "Conversaciones con cada falla (una vez por conversación). «Sin contestar» = el último mensaje es del cliente y lleva más de 30 min.",
-  "saludo_repetido_3_o_mas": 143,
-  "dos_mensajes_nuestros_casi_iguales_seguidos": 80,
+  "saludo_repetido_3_o_mas": 142,
+  "dos_mensajes_nuestros_casi_iguales_seguidos": 81,
   "pide_soporte": 25,
   "pide_soporte_sin_etiqueta_soporte_aylin": 25,
-  "texto_tecnico_filtrado": 21,
-  "respuesta_del_cliente_sin_contestar": 20,
+  "texto_tecnico_filtrado": 23,
+  "respuesta_del_cliente_sin_contestar": 19,
   "ofrece_una_persona_del_equipo": 1
  },
  "ejemplos_de_falla": {
+  "texto_tecnico_filtrado": [
+   "ah oko entonces no muevo nada va Sent from 📱[Ester Alvarez - Sales Team]",
+   "Hola @Patricio, por favor 🙏 necesito tu ayuda urgente corrigiendo estos errores del bot 👇🏼 En el PDF adjunto está todo: cada falla con su captura, qué se arregla en el prompt y qué en GHL, y en los an",
+   "Buenas tardes [nombre], me comento daya que meli ya no estará trabajando, ella me ayudaba mensualmente a darme una factura por la licencia que pago a la empresa Sent from 📱[Ester Alvarez - Sales Team]",
+   "[nombre], parece que el mensaje llegó con un campo sin completar. ¿Me confirmas si quieres empezar ya con la Especialización en Acero ($225 USD, pago único) y dejamos Hormigón para la asesoría?",
+   "Buenos días [nombre] [nombre] Te saluda el Equipo de *Design Modeling [nombre] * ¡El día de hoy tenemos los últimos 2 cupos en promoción disponibles! 👉 *Automatización en Revit con IA & Add-ins* Inclu",
+   "Veo que el mensaje se cortó, ¿qué información buscas? ¿Es sobre algún curso o especialización en particular, o quieres conocer qué opciones tenemos?"
+  ],
   "saludo_repetido_3_o_mas": [
-   "Hola [nombre], ¿cómo estás? 👋 Te escribo porque hace un tiempo conversamos sobre nuestras formaciones y vi que no pudiste avanzar en ese momento.",
-   "¡Hola! Gracias por elegir 𝗗𝗲𝘀𝗶𝗴𝗻 𝗠𝗼𝗱𝗲𝗹𝗶𝗻𝗴 𝗔𝗰𝗮𝗱𝗲𝗺𝘆.💻🏆 ¿Te gustaría tomarte 30 segundos para dejarnos una reseña rápida?👉🏼 En el siguiente enlace lo puedes hacer 𝗺𝘂𝘆 𝗳𝗮́𝗰𝗶𝗹: [enlace]",
-   "Buenas tardes colega, nuevamente te saludamos de *Design Modeling [nombre] * para comentarte que ya nos quedan los *dos últimos cupos de especialización,* si te animas el día de hoy te ofrecemos un de",
-   "Buenas tardes colega, ¡Solo por hoy en tu inscripción! Puedes llevarte la especialización de Acero Estructural + Cimentaciones BIM totalmente gratis.🎁",
-   "¡Hola [nombre]! 🙌 Gracias por el dato.",
-   "¡Hola [nombre]! 👋 Aquí está tu acceso a la Verificación de Aceros GRATIS. Llena el siguiente formulario en menos de 2 minutos y obtén tu recurso gratuito ahora 🎁 [enlace]"
+   "¡Hola! 🎉 Soy el Supervisor Académico de Design Modeling [nombre] ¡Bienvenido/a! Tu pago quedó confirmado y ya activamos tu acceso ✅ Entra a la plataforma de Design Modeling [nombre] aquí 👉 [enlace] In",
+   "Hola [nombre] muchas gracias",
+   "Hola [nombre], ¿cómo estás? Te iba a preguntar qué posibilidad hay ya de que puedas añadir el bot a la plataforma de DG Operaciones. Fíjate que tiene un montón de fallas que quería corregir este fin d",
+   "Buenos días [nombre], ¿cómo estás? Fíjate, varias cosas urgentes que vi el fin de semana con las automatizaciones, para que las pauses: 1. Necesito reunirme contigo hoy unos 20 min para explicarte y d",
+   "Buenos días, [nombre] lo que pasó con tu estructura 🙏",
+   "¡Hola [nombre]! 🙌 Qué bueno que te interese la Especialización en Acero."
   ],
   "dos_mensajes_nuestros_casi_iguales_seguidos": [
+   "ya reviso Sent from 📱[Ester Alvarez - Sales Team]",
+   "Tienes un Lead a la espera de una respuesta, por favor responder de inmediato. Sus datos son: James [telefono]",
    "Hola, [nombre] 👋🏼 Quería ayudarte a impulsar tu carrera enviándote nuestro curso gratuito sobre INTRODUCCIÓN A LA [nombre] EN [nombre] 🎁 Serán 8 sesiones de clases vistas desde nuestra plataforma. Ade",
    "↪︎ Sinceramente la estoy pensando Excelente estimado, fíjate te comento",
    "Hola, [nombre] 👋🏼 Quería ayudarte a impulsar tu carrera enviándote nuestro curso gratuito sobre INTRODUCCIÓN A LA [nombre] EN [nombre] 🎁 Serán 8 sesiones de clases vistas desde nuestra plataforma. Ade",
-   "Hola [nombre] [nombre], Hace algún tiempo participaste en nuestro Workshop de Revit BIM + Inteligencia Artificial y queríamos saber si aún estás interesado en especializarte en esta área para fortalec",
-   "¡Solo por hoy, [nombre]! Al inscribirte hoy en la Especialización de Acero Estructural te llevas el curso de Cimentaciones BIM sin costo adicional. 🎁 y el Tutor IA 24/7 incluido 🤖 Es la oportunidad id",
-   "¡Solo por hoy, [nombre]! Al inscribirte hoy en la Especialización de Acero Estructural te llevas el curso de Cimentaciones BIM sin costo adicional. 🎁 y el Tutor IA 24/7 incluido 🤖 Es la oportunidad id"
+   "Hola [nombre] [nombre], Hace algún tiempo participaste en nuestro Workshop de Revit BIM + Inteligencia Artificial y queríamos saber si aún estás interesado en especializarte en esta área para fortalec"
   ],
   "respuesta_del_cliente_sin_contestar": [
-   "3",
+   "👤 [nombre] ([telefono]) Buenos días equipo! 🖐️ Muy feliz incio de semana 🎉 que tengan excelente jornada, quedamos atentos a lo que necesiten 💪",
+   "Filipenses 2 19 Espero en el Señor Jesús enviaros pronto a Timoteo, para que yo también esté de buen ánimo al saber de vuestro estado; 20 pues a ninguno tengo del mismo ánimo, y que tan sinceramente s",
    "Quedo atento!",
    "Si tenía incluido el diseño de concreto",
    "No estoy segura que pueda continuar, tengo otras asignaciones de las que tengo que salir antes de fin de año",
-   "Filipenses 2 13 porque Dios es el que en vosotros produce así el querer como el hacer, por su buena voluntad. 14 Haced todo sin murmuraciones y contiendas, 15 para que seáis irreprensibles y sencillos",
    "5"
-  ],
-  "texto_tecnico_filtrado": [
-   "[nombre], parece que el mensaje llegó con un campo sin completar. ¿Me confirmas si quieres empezar ya con la Especialización en Acero ($225 USD, pago único) y dejamos Hormigón para la asesoría?",
-   "Buenos días [nombre] [nombre] Te saluda el Equipo de *Design Modeling [nombre] * ¡El día de hoy tenemos los últimos 2 cupos en promoción disponibles! 👉 *Automatización en Revit con IA & Add-ins* Inclu",
-   "Veo que el mensaje se cortó, ¿qué información buscas? ¿Es sobre algún curso o especialización en particular, o quieres conocer qué opciones tenemos?",
-   "Buenos Días, te saluda tu asesor comercial asignado de Design Modeling, para ayudarte en todo momento. Sent from 📱[Design Modeling [nombre] ]",
-   "Parece que tu mensaje se cortó. ¿Me cuentas qué te gustaría saber de la Especialización en Acero?",
-   "Buenos días estimado nuevamente te saluda tu asesor comercial asignado Sent from 📱[Design Modeling [nombre] ]"
   ]
  },
  "frases_del_bot_mas_repetidas": [
@@ -205,42 +207,38 @@
   ],
   [
    "¡Solo por hoy, [nombre]! Al inscribirte hoy en la Especialización de Acero Estructural te llevas el curso de Cimentaciones BIM sin costo adicional. 🎁 Es la oportunidad ideal para dominar ambas áreas con una sola inversión. ¿Te ayudo con tu inscripción?",
-   107
+   104
   ],
   [
    "Esperamos ser parte de su crecimiento profesional en un futuro🫱🏻‍🫲🏼 ¡Pero no te vas con las manos vacias! 🎁 Te obsequiamos un curso introductorio BIM dentro de nuestra Comunidad Design Premium DG 🎓 Tu acceso ya está activo y puedes ingresar en el siguiente enlace [enlace]",
-   106
-  ],
-  [
-   "Últimos cupos ⏳ [nombre] aún estás a tiempo de aprovechar el 2x1 en la Especialización de Acero Estructural. El día de hoy cerramos todos los cupos disponibles en promoción. Respóndeme y aseguro tu lugar de inmediato.",
-   99
+   104
   ],
   [
    "[nombre], algo que muchos no saben 👇 la Especialización en Acero Estructural incluye un Tutor IA 24/7 que resuelve tus dudas mientras estudias, a la hora que sea. Solo aplica al tomar la especialización completa. ¿Te cuento cómo funciona?",
    98
   ],
   [
-   "¿Qué tal, [nombre]? Quería saber si lograste revisar la información que te envié sobre la Especialización en Acero Estructural. Cualquier duda sobre el temario, horarios o inversión, te la resuelvo por aquí mismo.",
-   85
+   "Últimos cupos ⏳ [nombre] aún estás a tiempo de aprovechar el 2x1 en la Especialización de Acero Estructural. El día de hoy cerramos todos los cupos disponibles en promoción. Respóndeme y aseguro tu lugar de inmediato.",
+   98
   ],
   [
-   "¡Hola [nombre]! 🙌 Vimos tu interés en nuestra Especialización en Acero Estructural BIM ¿Tienes 5 minutos ahora para contarte cómo funciona? 🎯",
+   "¿Qué tal, [nombre]? Quería saber si lograste revisar la información que te envié sobre la Especialización en Acero Estructural. Cualquier duda sobre el temario, horarios o inversión, te la resuelvo por aquí mismo.",
    83
   ],
   [
+   "¡Hola [nombre]! 🙌 Vimos tu interés en nuestra Especialización en Acero Estructural BIM ¿Tienes 5 minutos ahora para contarte cómo funciona? 🎯",
+   82
+  ],
+  [
    "Hola [nombre] 👋 ¿Sigues interesado en la Especialización en Acero Estructural? Puedo enviarte el temario completo ahora mismo con todos los módulos detallados. ¿Te lo comparto?",
-   71
+   70
   ],
   [
    "Adicional colgea, me gustaría mostrarte como son nuestras clases y plataforma, puedes verlo en el enlace 🔗👇🏼 [enlace]",
-   21
+   20
   ],
   [
    "¿Cómo lo ves? 🤔 ¿Te explico la metodología de estudio y los beneficios?",
-   21
-  ],
-  [
-   "¡Hola [nombre]👋! Vimos tu interés en nuestra Especialización en Acero Estructural BIM ¿Tienes 5 minutos ahora para contarte cómo funciona? 🎯",
    20
   ],
   [
@@ -248,12 +246,20 @@
    19
   ],
   [
-   "Super, acá te dejo el PDF para que revises a detalle todo el contenido de la especialización 👇",
+   "¡Hola [nombre]👋! Vimos tu interés en nuestra Especialización en Acero Estructural BIM ¿Tienes 5 minutos ahora para contarte cómo funciona? 🎯",
    19
   ],
   [
+   "Hola [nombre], 👋🏼 Gracias por tu interés en el Master BIM+IA y por llenar los datos del formulario. En unos minutos, se comunicará contigo tu asesor asignado. ¿Puedes recibir una llamada en este momento?",
+   18
+  ],
+  [
+   "Super, acá te dejo el PDF para que revises a detalle todo el contenido de la especialización 👇",
+   18
+  ],
+  [
    "La especialización se desarrolla en 4 módulos principales 🎓 y al completar cada curso obtienes certificaciones oficiales de Autodesk.",
-   19
+   18
   ],
   [
    "Nuevo programa 𝗔𝗨𝗧𝗢𝗗𝗘𝗦𝗞 𝗜𝗡𝗧𝗘𝗟𝗜𝗚𝗘𝗡𝗖𝗜𝗔 𝗔𝗥𝗧𝗜𝗙𝗜𝗖𝗜𝗔𝗟 – 12 Cursos Avanzados de 𝗕𝗜𝗠 + 𝗜𝗔 por solo $𝟮𝟵𝟵.𝟵𝟵 𝗨𝗦𝗗 (valor real $2399.99).🔥",
@@ -264,12 +270,16 @@
    17
   ],
   [
-   "Hola [nombre], 👋🏼 Gracias por tu interés en el Master BIM+IA y por llenar los datos del formulario. En unos minutos, se comunicará contigo tu asesor asignado. ¿Puedes recibir una llamada en este momento?",
-   17
-  ],
-  [
    "Buenos Días, te saluda tu asesor comercial asignado de Design Modeling, para ayudarte en todo momento.",
    16
+  ],
+  [
+   "Buenos días 👋 te saluda tu asesor comercial asignado de Design Modeling. [nombre] para acompañarte en todo el proceso.",
+   15
+  ],
+  [
+   "👆🏼 Adicional te dejo aca la siguiente imagen para que puedas ver la estructura del Máster Internacional BIM+IA",
+   15
   ],
   [
    "Veo que estás interesado en nuestra especialización en Acero Estructural ¿Es correcto?",
@@ -284,16 +294,12 @@
    14
   ],
   [
-   "👆🏼 Adicional te dejo aca la siguiente imagen para que puedas ver la estructura del Máster Internacional BIM+IA",
-   14
-  ],
-  [
-   "Buenos días 👋 te saluda tu asesor comercial asignado de Design Modeling. [nombre] para acompañarte en todo el proceso.",
-   14
-  ],
-  [
    "Últimos cupos, [nombre] ⏳ Este será mi último mensaje de seguimiento sobre su interés en el curso de Naves Industriales en SAP2000. Cuénteme, ¿sigue interesado en tomarlo? Si la respuesta es sí, con gusto le ayudo con todo el proceso.",
    14
+  ],
+  [
+   "¿Cómo lo ves? ¿Te parece si avanzamos con tu inscripción? Te acompaño en el proceso paso a paso 🙌",
+   13
   ],
   [
    "¡Hola ! 👋🏼⏰ ¡Ya casi estamos listos para comenzar el Máster BIM+IA! Empezamos en Marzo 2026🗓️. ¿𝗧𝘂𝘃𝗶𝘀𝘁𝗲 𝗰𝗵𝗮𝗻𝗰𝗲 𝗱𝗲 𝗿𝗲𝘃𝗶𝘀𝗮𝗿 el PDF “Personal Project IA Pro” 𝗾𝘂𝗲 𝘁𝗲 𝗲𝗻𝘃𝗶𝗲́? 😊 Me encantaría saber tu opinión.",
@@ -305,10 +311,6 @@
   ],
   [
    "¿Te envío el temario detallado?",
-   13
-  ],
-  [
-   "¿Cómo lo ves? ¿Te parece si avanzamos con tu inscripción? Te acompaño en el proceso paso a paso 🙌",
    13
   ],
   [
@@ -332,16 +334,12 @@
    12
   ],
   [
-   "¡Hola! Gracias por elegir 𝗗𝗲𝘀𝗶𝗴𝗻 𝗠𝗼𝗱𝗲𝗹𝗶𝗻𝗴 𝗔𝗰𝗮𝗱𝗲𝗺𝘆.💻🏆 ¿Te gustaría tomarte 30 segundos para dejarnos una reseña rápida?👉🏼 En el siguiente enlace lo puedes hacer 𝗺𝘂𝘆 𝗳𝗮́𝗰𝗶𝗹: [enlace]",
-   11
-  ],
-  [
    "Ese valor incluye las 4 formaciones certificadas, con todos los beneficios y certificaciones que te comenté.",
    11
   ],
   [
-   "¡Hola ! 😊 No olvides agendar tu cita para el Máster BIM+IA 🏗️, ¡una excelente oportunidad para transformar tus proyectos! 🎁 Descarga gratis el PDF “Personal Project IA Pro”. 👉🏼 [enlace] [nombre] tu cita aquí 👉🏼 [enlace] Si no pudiste asistir antes, ¿qué pasó? ¡Estoy aquí para ayudarte! 😊",
-   10
+   "¡Hola! Gracias por elegir 𝗗𝗲𝘀𝗶𝗴𝗻 𝗠𝗼𝗱𝗲𝗹𝗶𝗻𝗴 𝗔𝗰𝗮𝗱𝗲𝗺𝘆.💻🏆 ¿Te gustaría tomarte 30 segundos para dejarnos una reseña rápida?👉🏼 En el siguiente enlace lo puedes hacer 𝗺𝘂𝘆 𝗳𝗮́𝗰𝗶𝗹: [enlace]",
+   11
   ],
   [
    "Mira, si tomas cada módulo de la especialización por separado, el valor sería de $154.99 USD cada uno.",
@@ -352,15 +350,381 @@
    10
   ],
   [
+   "¡Hola ! 😊 No olvides agendar tu cita para el Máster BIM+IA 🏗️, ¡una excelente oportunidad para transformar tus proyectos! 🎁 Descarga gratis el PDF “Personal Project IA Pro”. 👉🏼 [enlace] [nombre] tu cita aquí 👉🏼 [enlace] Si no pudiste asistir antes, ¿qué pasó? ¡Estoy aquí para ayudarte! 😊",
+   10
+  ],
+  [
    "Está organizada en módulos que te llevan de 0 a 100 en el manejo de los programas de diseño y cálculo, aplicado a proyectos reales de ingeniería estructural.",
    10
   ],
   [
-   "Antes de la llamada te paso un diagnóstico de 5 minutos: 20 preguntas sobre lo que ya sabes hacer dentro de un proyecto. Nuestro asesor Eber Martínez lo revisará antes de hablar contigo, así la cita no se va en explicarle desde cero por dónde vas.",
-   10
+   "¡Hola [nombre]! 🙌 Qué bueno que te interese la Especialización en Acero.",
+   9
   ]
  ],
  "ejemplos_final_de_conversacion": [
+  {
+   "mensajes": 96,
+   "compro_por_etiqueta": true,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "Te paso por el grupo Pato. Igual me avisas si hay posibilidad de hacerlo así para nosotros poder corregir si tú no estás"
+    },
+    {
+     "de": "persona",
+     "texto": "claro en ese caso conviene ya mejor traspasarte todo a tu entorno"
+    },
+    {
+     "de": "bot",
+     "texto": "Si se puede poner ahí en DG operaciones"
+    },
+    {
+     "de": "persona",
+     "texto": "cómo? un chatbot que te levante las modificaciones o que te traspase la app a tu etorno de github, vercel y supabase?"
+    }
+   ]
+  },
+  {
+   "mensajes": 51,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "persona",
+     "texto": "👤 [nombre] ([telefono]) >IMAGE<"
+    },
+    {
+     "de": "persona",
+     "texto": "👤 [nombre] ([telefono]) Y sigue mandando que no ve el mensaje @[telefono]"
+    },
+    {
+     "de": "bot",
+     "texto": ">IMAGE< Y estos otros casos donde el cliente no tiene el presupuesto aquí el bot debería leer los campos y solo pasarle el pdf y preguntar si tiene o no el presupuesto a ver si seguimos o dejamos de gastar estos tokens"
+    },
+    {
+     "de": "bot",
+     "texto": "@[telefono]"
+    }
+   ]
+  },
+  {
+   "mensajes": 4,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "persona",
+     "texto": "¡Hola! Completé el formulario y me gustaría obtener más información sobre el negocio. Full name: [nombre] Phone number: [telefono] Email: [correo] ¿A qué rubro perteneces?: Arquitecto ¿Has cursado estudios universitarios en áreas relacionad"
+    },
+    {
+     "de": "bot",
+     "texto": "[nombre], con tu perfil de arquitecto y tu experiencia en Revit, el Diplomado BIM en Arquitectura es un buen primer paso: más directo y accesible, con la misma calidad y avales."
+    },
+    {
+     "de": "bot",
+     "texto": "Te dejo el temario para que veas el contenido 👉 [enlace]"
+    },
+    {
+     "de": "bot",
+     "texto": "¿Lo que más te interesa es modelar mejor en tu trabajo actual o llevar proyectos BIM de punta a punta?"
+    }
+   ]
+  },
+  {
+   "mensajes": 95,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "Con eso en mente, la Especialización en Acero te sirve porque aprendes a verificar en Robot con el método completo, desde cargas hasta conexiones, y a dejar el respaldo listo para presentar al cliente."
+    },
+    {
+     "de": "bot",
+     "texto": "¿Cuántas horas a la semana podrías darle al programa, 3 o 5?"
+    },
+    {
+     "de": "persona",
+     "texto": "3"
+    },
+    {
+     "de": "bot",
+     "texto": "Con 3 horas a la semana terminas toda la Especialización en unos 9 meses, y el primer curso, el de Robot, en 2 o 3. ¿Te paso el enlace para empezar esta semana?"
+    }
+   ]
+  },
+  {
+   "mensajes": 53,
+   "compro_por_etiqueta": true,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "gracias! Sent from 📱[Ester Alvarez - Sales Team]"
+    },
+    {
+     "de": "bot",
+     "texto": "Hola [nombre], porfa no te olvides de enviarme o avisarme cómo va el tema de la solicitud que me pidieron de Datafast."
+    },
+    {
+     "de": "persona",
+     "texto": "Daya buenos días no tranquila hoy veo eso"
+    },
+    {
+     "de": "bot",
+     "texto": "Hola [nombre] muchas gracias"
+    }
+   ]
+  },
+  {
+   "mensajes": 5,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "persona",
+     "texto": "👍🏼"
+    },
+    {
+     "de": "bot",
+     "texto": "{WA#1} Indicame por mi whatsapp que enlace te llego, y se abre este enlace"
+    },
+    {
+     "de": "bot",
+     "texto": "{WA#1} Indicame por mi whatsapp que enlace te llego, y se abre este enlace [enlace]"
+    },
+    {
+     "de": "bot",
+     "texto": "Hola [nombre], porfa revisa uno por uno qué clientes están para soporte: llegaron varios este fin de semana, además de Helen, que está solicitando su certificado. Porfa."
+    }
+   ]
+  },
+  {
+   "mensajes": 5,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "Hola [nombre] [nombre], ¿cómo estás? 😊 Te saluda [nombre], asesor de Design Modeling [nombre] comunicarme contigo hace unos minutos, pero la llamada entró como **línea ocupada**. ¿Tienes unos minutos ahora o prefieres que te llame en otro h"
+    },
+    {
+     "de": "bot",
+     "texto": "Buenos días 👋 te saluda tu asesor comercial asignado de Design Modeling. [nombre] para acompañarte en todo el proceso."
+    },
+    {
+     "de": "bot",
+     "texto": "Veo que te interesa nuestro Máster Internacional BIM Management con Inteligencia Artificial ¿es correcto?"
+    },
+    {
+     "de": "bot",
+     "texto": "Hola [nombre], ¿cómo estás? Te iba a preguntar qué posibilidad hay ya de que puedas añadir el bot a la plataforma de DG Operaciones. Fíjate que tiene un montón de fallas que quería corregir este fin de semana y me dio pena molestarte, pero "
+    }
+   ]
+  },
+  {
+   "mensajes": 68,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "persona",
+     "texto": "👤 [nombre] ([telefono]) Ya te mando comprobante"
+    },
+    {
+     "de": "persona",
+     "texto": "👤 [nombre] ([telefono]) >IMAGE< de echo ese ya tiene conversaciones"
+    },
+    {
+     "de": "persona",
+     "texto": "👤 [nombre] ([telefono]) Genial Fabi gracias 🙏 @[telefono]"
+    },
+    {
+     "de": "persona",
+     "texto": "👤 [nombre] ([telefono]) Buenos días equipo! 🖐️ Muy feliz incio de semana 🎉 que tengan excelente jornada, quedamos atentos a lo que necesiten 💪"
+    }
+   ]
+  },
+  {
+   "mensajes": 90,
+   "compro_por_etiqueta": true,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "{WA#1} Tienes un nuevo Lead calificado por el BOT a la espera de cierre de venta, por favor responder de inmediato. Sus datos son: Santiago O. [telefono] [correo]"
+    },
+    {
+     "de": "bot",
+     "texto": "Tienes un Lead a la espera de una respuesta, por favor responder de inmediato. Sus datos son: [correo] [telefono] [correo]"
+    },
+    {
+     "de": "bot",
+     "texto": "Tienes un Lead a la espera de una respuesta, por favor responder de inmediato. Sus datos son: Antonio Flores [telefono]"
+    },
+    {
+     "de": "bot",
+     "texto": "Buenos días [nombre], ¿cómo estás? Fíjate, varias cosas urgentes que vi el fin de semana con las automatizaciones, para que las pauses: 1. Necesito reunirme contigo hoy unos 20 min para explicarte y darte el acceso a los enlaces de pago de "
+    }
+   ]
+  },
+  {
+   "mensajes": 100,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "persona",
+     "texto": ">DOCUMENT< CAP IV RIGIDECES-[nombre] C. SISMICAS.xlsx"
+    },
+    {
+     "de": "persona",
+     "texto": ">DOCUMENT< [nombre]-[nombre]-P (version 1).xls"
+    },
+    {
+     "de": "bot",
+     "texto": "Recibí los archivos, José. Lo del CD3 a $30 no lo puedo confirmar desde aquí, así que lo paso con Ester para que te den la respuesta exacta."
+    },
+    {
+     "de": "bot",
+     "texto": "Ella revisa los ejercicios de vigas altas, costos y el modelo del edificio. ¿Te escribe por este mismo chat o prefieres una llamada corta hoy?"
+    }
+   ]
+  },
+  {
+   "mensajes": 25,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "Buenísimo, una nave industrial es justo lo que más se pide en acero 🏗️"
+    },
+    {
+     "de": "bot",
+     "texto": "Con la Especialización en Acero aprendes a calcular la nave en Robot y a llevarla a Revit con planos, en unos 4 meses con tus 3 horas semanales."
+    },
+    {
+     "de": "bot",
+     "texto": "Está en $225 USD (normalmente $499.99) e incluye el Tutor IA. ¿Te paso el enlace para pagar con tarjeta o prefieres PayPal?"
+    },
+    {
+     "de": "bot",
+     "texto": "[nombre], pensando en tu nave industrial: lo que más se valora es que la calcules en Robot y la entregues modelada en Revit, y eso lo practicas desde las primeras clases del programa. Aquí tienes el enlace para inscribirte hoy 👉 [enlace] ¿T"
+    }
+   ]
+  },
+  {
+   "mensajes": 3,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "persona",
+     "texto": "¡Hola! Completé el formulario y me gustaría obtener más información sobre el negocio. ¿Has cursado estudios universitarios en áreas relacionadas con construcción/ingeniería/arquitectura?: Sí, soy graduado ¿A qué rubro perteneces?: Arquitect"
+    },
+    {
+     "de": "bot",
+     "texto": "Hola [nombre], 👋🏼 Gracias por tu interés en el Master BIM+IA y por llenar los datos del formulario. En unos minutos, se comunicará contigo tu asesor asignado. ¿Puedes recibir una llamada en este momento?"
+    },
+    {
+     "de": "bot",
+     "texto": "👆🏼 Adicional te dejo aca la siguiente imagen para que puedas ver la estructura del Máster Internacional BIM+IA"
+    }
+   ]
+  },
+  {
+   "mensajes": 3,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "persona",
+     "texto": ". • adContextPreviewDismissed: false • automatedGreetingMessageShown: false • body: Esta es una de las preguntas que más nos dejan quienes quieren dar el salto al BIM 👇 Y la verdad, es normal tener dudas antes de invertir en tu formación. P"
+    },
+    {
+     "de": "bot",
+     "texto": "¡Hola [nombre]! 👋 Vi que llegaste desde nuestro anuncio del Máster BIM + IA."
+    },
+    {
+     "de": "bot",
+     "texto": "¿En qué área trabajas hoy y qué te gustaría lograr con BIM en los próximos meses?"
+    }
+   ]
+  },
+  {
+   "mensajes": 10,
+   "compro_por_etiqueta": true,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "[nombre], quedo pendiente tu respuesta: trabajas en algun proyecto de acero ahora o buscas diferenciarte en el mercado? Con eso te digo por donde arrancar. La especializacion completa esta en 225 dolares con Tutor IA 24h y 4 certificados Au"
+    },
+    {
+     "de": "persona",
+     "texto": "Hola, me interesa la especialización de estructuras de Acero"
+    },
+    {
+     "de": "bot",
+     "texto": "¡Hola [nombre]! 🙌 Qué bueno que te interese la Especialización en Acero."
+    },
+    {
+     "de": "bot",
+     "texto": "Antes de pasarte el detalle, cuéntame: ¿buscas aplicarla en proyectos que ya tienes entre manos o quieres abrirte camino en el mercado?"
+    }
+   ]
+  },
+  {
+   "mensajes": 3,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "persona",
+     "texto": "buen dia no se usar revit solo se usar civil cad 3d aqui enseñan cierto?"
+    },
+    {
+     "de": "bot",
+     "texto": "Please share contact details"
+    },
+    {
+     "de": "bot",
+     "texto": "Your chat has ended"
+    }
+   ]
+  },
+  {
+   "mensajes": 61,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "persona",
+     "texto": "Filipenses 2 1 Por tanto, si hay alguna consolación en Cristo, si algún consuelo de amor, si alguna comunión del Espíritu, si algún afecto entrañable, si alguna misericordia, 2 completad mi gozo, sintiendo lo mismo, teniendo el mismo amor, "
+    },
+    {
+     "de": "persona",
+     "texto": "Filipenses 2 7 sino que se despojó a sí mismo, tomando forma de siervo, hecho semejante a los hombres; 8 y estando en la condición de hombre, se humilló a sí mismo, haciéndose obediente hasta la muerte, y muerte de cruz. 9 Por lo cual Dios "
+    },
+    {
+     "de": "persona",
+     "texto": "Filipenses 2 13 porque Dios es el que en vosotros produce así el querer como el hacer, por su buena voluntad. 14 Haced todo sin murmuraciones y contiendas, 15 para que seáis irreprensibles y sencillos, hijos de Dios sin mancha en medio de u"
+    },
+    {
+     "de": "persona",
+     "texto": "Filipenses 2 19 Espero en el Señor Jesús enviaros pronto a Timoteo, para que yo también esté de buen ánimo al saber de vuestro estado; 20 pues a ninguno tengo del mismo ánimo, y que tan sinceramente se interese por vosotros. 21 Porque todos"
+    }
+   ]
+  },
+  {
+   "mensajes": 8,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "persona",
+     "texto": "Hago las dos cosas"
+    },
+    {
+     "de": "bot",
+     "texto": "Entonces modelas y calculas tú, [nombre]. Eso es justo lo que trabaja el programa."
+    },
+    {
+     "de": "bot",
+     "texto": "¿Qué te cuesta más hoy: que el cálculo te tome demasiado tiempo, o que tus modelos no te estén abriendo proyectos?"
+    },
+    {
+     "de": "bot",
+     "texto": "Y el mensaje se te cortó al final (solo veo \"📱 [\"). ¿Me lo escribes de nuevo?"
+    }
+   ]
+  },
   {
    "mensajes": 36,
    "compro_por_etiqueta": false,
@@ -512,28 +876,6 @@
    ]
   },
   {
-   "mensajes": 95,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "bot",
-     "texto": "Entendido, trabajas por tu cuenta y necesitas que tus cálculos sean óptimos. Eso cambia el enfoque: como independiente, cada proyecto que propones tiene que sostenerse solo."
-    },
-    {
-     "de": "bot",
-     "texto": "Con eso en mente, la Especialización en Acero te sirve porque aprendes a verificar en Robot con el método completo, desde cargas hasta conexiones, y a dejar el respaldo listo para presentar al cliente."
-    },
-    {
-     "de": "bot",
-     "texto": "¿Cuántas horas a la semana podrías darle al programa, 3 o 5?"
-    },
-    {
-     "de": "persona",
-     "texto": "3"
-    }
-   ]
-  },
-  {
    "mensajes": 97,
    "compro_por_etiqueta": true,
    "final": [
@@ -654,354 +996,6 @@
     {
      "de": "bot",
      "texto": "Si lo vas adquirir por favor me comentas"
-    }
-   ]
-  },
-  {
-   "mensajes": 4,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "persona",
-     "texto": "Hola, me interesa la especialización de estructuras de Acero • adContextPreviewDismissed: false • automatedGreetingMessageShown: true • body: ¿Modelas estructuras de acero en BIM… pero dependes de otro para el cálculo? Entonces todavía eres"
-    },
-    {
-     "de": "bot",
-     "texto": "La Especialización en Acero es para quien modela estructuras pero depende de otro para el cálculo."
-    },
-    {
-     "de": "bot",
-     "texto": "Ahora incluye un *Tutor IA* dentro de las lecciones que resuelve tus dudas las 24 horas 🤖"
-    },
-    {
-     "de": "bot",
-     "texto": "¿Hoy tú calculas tus estructuras o te toca solo el modelado?"
-    }
-   ]
-  },
-  {
-   "mensajes": 28,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "bot",
-     "texto": "Buena elección, Stephen 🏗️ Las naves son justo donde más se pide cálculo propio en acero."
-    },
-    {
-     "de": "bot",
-     "texto": "Con la Especialización en Acero aprendes a calcular una nave completa en Robot, verificar uniones y pasarla a Revit con planos listos para obra."
-    },
-    {
-     "de": "bot",
-     "texto": "Tienes el Tutor IA para resolver dudas las 24 horas, y el precio hoy es $225 USD (normalmente $499.99)."
-    },
-    {
-     "de": "bot",
-     "texto": "¿Te paso el enlace para pagar con tarjeta o prefieres PayPal?"
-    }
-   ]
-  },
-  {
-   "mensajes": 64,
-   "compro_por_etiqueta": true,
-   "final": [
-    {
-     "de": "bot",
-     "texto": "Perfecto, ya tengo tu correo, gracias 🙌"
-    },
-    {
-     "de": "bot",
-     "texto": "Le paso tu caso al equipo académico con la entrega del Módulo 3 y la solicitud del certificado. Te contactan por este mismo chat."
-    },
-    {
-     "de": "persona",
-     "texto": "Ok, gracias [nombre]"
-    },
-    {
-     "de": "persona",
-     "texto": "Quedo atento!"
-    }
-   ]
-  },
-  {
-   "mensajes": 36,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "bot",
-     "texto": "¡Perfecto! 🙌 La Especialización en Acero está en $225 USD (normalmente $499.99) e incluye el Tutor IA 24h. Te aclaro que ese es el precio final, no hay un 55% adicional. Aquí tienes el enlace para inscribirte de forma segura: [enlace] Cuand"
-    },
-    {
-     "de": "bot",
-     "texto": "¡Solo por hoy, [nombre].! Al inscribirte hoy en la Especialización de Acero Estructural te llevas el curso de Cimentaciones BIM sin costo adicional. 🎁 y el Tutor IA 24/7 incluido 🤖 Es la oportunidad ideal para dominar ambas áreas con una so"
-    },
-    {
-     "de": "bot",
-     "texto": "[nombre].me quedé pensando en que dijiste \"listo\": el enlace ya está arriba para que dejes tu acceso activo y empieces con Robot y las naves hoy 👉 [enlace] ¿Te lo dejo listo hoy?"
-    },
-    {
-     "de": "bot",
-     "texto": "Últimos cupos, [nombre]. ⏳ Este será mi último mensaje de seguimiento sobre su interés en el curso de Naves Industriales en SAP2000. Cuénteme, ¿sigue interesado en tomarlo? Si la respuesta es sí, con gusto le ayudo con todo el proceso."
-    }
-   ]
-  },
-  {
-   "mensajes": 10,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "bot",
-     "texto": "[nombre], algo que muchos no saben 👇 la Especialización en Acero Estructural incluye un Tutor IA 24/7 que resuelve tus dudas mientras estudias, a la hora que sea. Solo aplica al tomar la especialización completa. ¿Te cuento cómo funciona?"
-    },
-    {
-     "de": "bot",
-     "texto": "¡Solo por hoy, [nombre]! Al inscribirte hoy en la Especialización de Acero Estructural te llevas el curso de Cimentaciones BIM sin costo adicional. 🎁 y el Tutor IA 24/7 incluido 🤖 Es la oportunidad ideal para dominar ambas áreas con una sol"
-    },
-    {
-     "de": "bot",
-     "texto": "¡Solo por hoy, [nombre]! Al inscribirte hoy en la Especialización de Acero Estructural te llevas el curso de Cimentaciones BIM sin costo adicional. 🎁 y el Tutor IA 24/7 incluido 🤖 Es la oportunidad ideal para dominar ambas áreas con una sol"
-    },
-    {
-     "de": "bot",
-     "texto": "Últimos cupos, [nombre] ⏳ Este será mi último mensaje de seguimiento sobre su interés en el curso de Naves Industriales en SAP2000. Cuénteme, ¿sigue interesado en tomarlo? Si la respuesta es sí, con gusto le ayudo con todo el proceso."
-    }
-   ]
-  },
-  {
-   "mensajes": 9,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "bot",
-     "texto": "[nombre], algo que muchos no saben 👇 la Especialización en Acero Estructural incluye un Tutor IA 24/7 que resuelve tus dudas mientras estudias, a la hora que sea. Solo aplica al tomar la especialización completa. ¿Te cuento cómo funciona?"
-    },
-    {
-     "de": "bot",
-     "texto": "¡Solo por hoy, [nombre]! Al inscribirte hoy en la Especialización de Acero Estructural te llevas el curso de Cimentaciones BIM sin costo adicional. 🎁 y el Tutor IA 24/7 incluido 🤖 Es la oportunidad ideal para dominar ambas áreas con una sol"
-    },
-    {
-     "de": "bot",
-     "texto": "¡Solo por hoy, [nombre]! Al inscribirte hoy en la Especialización de Acero Estructural te llevas el curso de Cimentaciones BIM sin costo adicional. 🎁 y el Tutor IA 24/7 incluido 🤖 Es la oportunidad ideal para dominar ambas áreas con una sol"
-    },
-    {
-     "de": "bot",
-     "texto": "Últimos cupos, [nombre] ⏳ Este será mi último mensaje de seguimiento sobre su interés en el curso de Naves Industriales en SAP2000. Cuénteme, ¿sigue interesado en tomarlo? Si la respuesta es sí, con gusto le ayudo con todo el proceso."
-    }
-   ]
-  },
-  {
-   "mensajes": 39,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "bot",
-     "texto": "[nombre], algo que muchos no saben 👇 la Especialización en Acero Estructural incluye un Tutor IA 24/7 que resuelve tus dudas mientras estudias, a la hora que sea. Solo aplica al tomar la especialización completa. ¿Te cuento cómo funciona?"
-    },
-    {
-     "de": "bot",
-     "texto": "¡Solo por hoy, [nombre]! Al inscribirte hoy en la Especialización de Acero Estructural te llevas el curso de Cimentaciones BIM sin costo adicional. 🎁 y el Tutor IA 24/7 incluido 🤖 Es la oportunidad ideal para dominar ambas áreas con una sol"
-    },
-    {
-     "de": "bot",
-     "texto": "¡Solo por hoy, [nombre]! Al inscribirte hoy en la Especialización de Acero Estructural te llevas el curso de Cimentaciones BIM sin costo adicional. 🎁 y el Tutor IA 24/7 incluido 🤖 Es la oportunidad ideal para dominar ambas áreas con una sol"
-    },
-    {
-     "de": "bot",
-     "texto": "Últimos cupos, [nombre] ⏳ Este será mi último mensaje de seguimiento sobre su interés en el curso de Naves Industriales en SAP2000. Cuénteme, ¿sigue interesado en tomarlo? Si la respuesta es sí, con gusto le ayudo con todo el proceso."
-    }
-   ]
-  },
-  {
-   "mensajes": 37,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "bot",
-     "texto": "[nombre], algo que muchos no saben 👇 la Especialización en Acero Estructural incluye un Tutor IA 24/7 que resuelve tus dudas mientras estudias, a la hora que sea. Solo aplica al tomar la especialización completa. ¿Te cuento cómo funciona?"
-    },
-    {
-     "de": "bot",
-     "texto": "¡Solo por hoy, [nombre]! Al inscribirte hoy en la Especialización de Acero Estructural te llevas el curso de Cimentaciones BIM sin costo adicional. 🎁 y el Tutor IA 24/7 incluido 🤖 Es la oportunidad ideal para dominar ambas áreas con una sol"
-    },
-    {
-     "de": "bot",
-     "texto": "¡Solo por hoy, [nombre]! Al inscribirte hoy en la Especialización de Acero Estructural te llevas el curso de Cimentaciones BIM sin costo adicional. 🎁 y el Tutor IA 24/7 incluido 🤖 Es la oportunidad ideal para dominar ambas áreas con una sol"
-    },
-    {
-     "de": "bot",
-     "texto": "Últimos cupos, [nombre] ⏳ Este será mi último mensaje de seguimiento sobre su interés en el curso de Naves Industriales en SAP2000. Cuénteme, ¿sigue interesado en tomarlo? Si la respuesta es sí, con gusto le ayudo con todo el proceso."
-    }
-   ]
-  },
-  {
-   "mensajes": 53,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "persona",
-     "texto": "Y si prefiero revisar el temario"
-    },
-    {
-     "de": "bot",
-     "texto": "Sí, el precio de $225 USD es por la Especialización completa: 4 cursos (Robot, Advance Steel, Revit Structure y uniones), con licencias Autodesk, acceso de por vida y certificado. Normalmente vale $499.99 y ahora está con 55% de descuento."
-    },
-    {
-     "de": "bot",
-     "texto": "Si prefieres revisarlo primero, aquí tienes el brochure con el programa completo 👉 [enlace]"
-    },
-    {
-     "de": "bot",
-     "texto": "Mientras lo ves, ¿qué te pesa más en tus naves: que el cálculo tarde mucho o que los cambios te obliguen a rehacer el modelo?"
-    }
-   ]
-  },
-  {
-   "mensajes": 3,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "persona",
-     "texto": "Hola, me interesa la especialización de estructuras de Acero • automatedGreetingMessageShown: true • body: ¿Modelas estructuras de acero en BIM… pero dependes de otro para el cálculo? Entonces todavía eres un ejecutor, no un especialista. Y"
-    },
-    {
-     "de": "bot",
-     "texto": "Hola [nombre] 🙌 Qué bueno que te interese el Acero. Vi que llegaste desde el anuncio, así que te cuento: ¿modelas estructuras de acero en BIM pero dependes de alguien más para el cálculo, o ya haces también el análisis tú mismo?"
-    },
-    {
-     "de": "bot",
-     "texto": "Según lo que quieras lograr, te digo si la Especialización te encaja."
-    }
-   ]
-  },
-  {
-   "mensajes": 23,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "bot",
-     "texto": "[nombre], te pregunte si el rango de precio te acomodaba y no me contestaste. Te recuerdo: 225 dolares por los 4 cursos completos, o 2 cuotas de 112.50 sin intereses. Que te frena, el monto o el momento?"
-    },
-    {
-     "de": "persona",
-     "texto": "No está dentro de mi alcance en estos momentos,.estoy dando otras prioridades"
-    },
-    {
-     "de": "bot",
-     "texto": "¡Gracias por escribirnos! 🙌 Por lo que me cuentas, quizá este programa puntual no sea lo ideal para ti en este momento, pero tenemos varias opciones y con gusto te orientamos cuando quieras. Aquí estaremos 💛"
-    },
-    {
-     "de": "bot",
-     "texto": "Esperamos ser parte de su crecimiento profesional en un futuro🫱🏻‍🫲🏼 ¡Pero no te vas con las manos vacias! 🎁 Te obsequiamos un curso introductorio BIM dentro de nuestra Comunidad Design Premium DG 🎓 Tu acceso ya está activo y puedes ingresar"
-    }
-   ]
-  },
-  {
-   "mensajes": 16,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "bot",
-     "texto": "¿Qué tal, [nombre]? Quería saber si lograste revisar la información que te envié sobre la Especialización en Acero Estructural. Cualquier duda sobre el temario, horarios o inversión, te la resuelvo por aquí mismo."
-    },
-    {
-     "de": "bot",
-     "texto": "[nombre], algo que muchos no saben 👇 la Especialización en Acero Estructural incluye un Tutor IA 24/7 que resuelve tus dudas mientras estudias, a la hora que sea. Solo aplica al tomar la especialización completa. ¿Te cuento cómo funciona?"
-    },
-    {
-     "de": "bot",
-     "texto": "¡Solo por hoy, [nombre]! Al inscribirte hoy en la Especialización de Acero Estructural te llevas el curso de Cimentaciones BIM sin costo adicional. 🎁 y el Tutor IA 24/7 incluido 🤖 Es la oportunidad ideal para dominar ambas áreas con una sol"
-    },
-    {
-     "de": "bot",
-     "texto": "Esperamos ser parte de su crecimiento profesional en un futuro🫱🏻‍🫲🏼 ¡Pero no te vas con las manos vacias! 🎁 Te obsequiamos un curso introductorio BIM dentro de nuestra Comunidad Design Premium DG 🎓 Tu acceso ya está activo y puedes ingresar"
-    }
-   ]
-  },
-  {
-   "mensajes": 16,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "bot",
-     "texto": "Hola [nombre] 👋 ¿Sigues interesado en la Especialización en Acero Estructural? Puedo enviarte el temario completo ahora mismo con todos los módulos detallados. ¿Te lo comparto?"
-    },
-    {
-     "de": "bot",
-     "texto": "[nombre], algo que muchos no saben 👇 la Especialización en Acero Estructural incluye un Tutor IA 24/7 que resuelve tus dudas mientras estudias, a la hora que sea. Solo aplica al tomar la especialización completa. ¿Te cuento cómo funciona?"
-    },
-    {
-     "de": "bot",
-     "texto": "¡Solo por hoy, [nombre]! Al inscribirte hoy en la Especialización de Acero Estructural te llevas el curso de Cimentaciones BIM sin costo adicional. 🎁 y el Tutor IA 24/7 incluido 🤖 Es la oportunidad ideal para dominar ambas áreas con una sol"
-    },
-    {
-     "de": "bot",
-     "texto": "Esperamos ser parte de su crecimiento profesional en un futuro🫱🏻‍🫲🏼 ¡Pero no te vas con las manos vacias! 🎁 Te obsequiamos un curso introductorio BIM dentro de nuestra Comunidad Design Premium DG 🎓 Tu acceso ya está activo y puedes ingresar"
-    }
-   ]
-  },
-  {
-   "mensajes": 24,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "persona",
-     "texto": "Nave industrial"
-    },
-    {
-     "de": "bot",
-     "texto": "Buenísimo, una nave industrial es justo lo que más se pide en acero 🏗️"
-    },
-    {
-     "de": "bot",
-     "texto": "Con la Especialización en Acero aprendes a calcular la nave en Robot y a llevarla a Revit con planos, en unos 4 meses con tus 3 horas semanales."
-    },
-    {
-     "de": "bot",
-     "texto": "Está en $225 USD (normalmente $499.99) e incluye el Tutor IA. ¿Te paso el enlace para pagar con tarjeta o prefieres PayPal?"
-    }
-   ]
-  },
-  {
-   "mensajes": 25,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "bot",
-     "texto": "[nombre], quedó pendiente tu respuesta 🙂 ¿A qué te dedicas: ingeniería, arquitectura o construcción? Con eso te confirmo si el programa de Tanques es justo lo que buscas."
-    },
-    {
-     "de": "bot",
-     "texto": "F, algo que muchos no saben 👇 la Especialización en Acero Estructural incluye un Tutor IA 24/7 que resuelve tus dudas mientras estudias, a la hora que sea. Solo aplica al tomar la especialización completa. ¿Te cuento cómo funciona?"
-    },
-    {
-     "de": "bot",
-     "texto": "¡Solo por hoy, [nombre]! Al inscribirte hoy en la Especialización de Acero Estructural te llevas el curso de Cimentaciones BIM sin costo adicional. 🎁 y el Tutor IA 24/7 incluido 🤖 Es la oportunidad ideal para dominar ambas áreas con una sol"
-    },
-    {
-     "de": "bot",
-     "texto": "Últimos cupos, F ⏳ Este será mi último mensaje de seguimiento sobre su interés en el curso de Autodesk con IA. Cuénteme, ¿sigue interesado en tomarlo? Si la respuesta es sí, con gusto le ayudo con todo el proceso."
-    }
-   ]
-  },
-  {
-   "mensajes": 8,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "bot",
-     "texto": "[nombre], quedó en el aire mi pregunta 🙂 ¿Estás en un proyecto [nombre] acero ahora o es más por crecer profesionalmente en esa área? Con eso te oriento mejor."
-    },
-    {
-     "de": "bot",
-     "texto": "[nombre], algo que muchos no saben 👇 la Especialización en Acero Estructural incluye un Tutor IA 24/7 que resuelve tus dudas mientras estudias, a la hora que sea. Solo aplica al tomar la especialización completa. ¿Te cuento cómo funciona?"
-    },
-    {
-     "de": "bot",
-     "texto": "¡Solo por hoy, [nombre]! Al inscribirte hoy en la Especialización [nombre] Acero Estructural te llevas el curso [nombre] Cimentaciones BIM sin costo adicional. 🎁 y el Tutor IA 24/7 incluido 🤖 Es la oportunidad ideal para dominar ambas áreas"
-    },
-    {
-     "de": "bot",
-     "texto": "Últimos cupos, [nombre] ⏳ Este será mi último mensaje [nombre] seguimiento sobre su interés en el curso [nombre] Autodesk con IA. Cuénteme, ¿sigue interesado en tomarlo? Si la respuesta es sí, con gusto le ayudo con todo el proceso."
     }
    ]
   }

@@ -61,7 +61,9 @@ La semana del 5 al 8 de octubre, con lo que confirmó Dayana el 12-oct:
 
 **Acero:** en Stripe no aparece ningún cobro de USD 225 ni de USD 199,99 en tres semanas. Dayana confirmó que esta semana entraron **dos Acero por otras vías**:
 - **una de USD 225 por PayPhone**, que no está en `fuentes/ingresos/` y por eso la auditoría no la ve;
-- **otra por PayPal el domingo 11**, que entra en la actualización automática del lunes 12 (el archivo llegaba hasta el 8).
+- **otra por PayPal el domingo 11, confirmada en la actualización del 12-oct: USD 199,99**. Es el precio de Acero sin el Tutor IA (el del anuncio) y cuadra con la regla nueva: por menos de USD 200, fuera de Ecuador, se cobra por PayPal.
+
+Del 9 al 11 de octubre Stripe sumó además cuotas del Máster (USD 160, 160, 29,99 y 19,99).
 
 Mientras PayPhone (y Datafast, que empieza ahora) no estén en `fuentes/ingresos/`, el total de la Academy sale corto. Para sumarlas hace falta su API o su reporte; las claves se cargan como secreto del repositorio, nunca por chat.
 
