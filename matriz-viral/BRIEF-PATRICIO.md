@@ -515,3 +515,40 @@ Mediana de la semana: 1.890 vistas, 9 comentarios y 12 guardados por pieza. Sept
 **Plan contra lo publicado:** salieron las 4 piezas del calendario de la semana 4 (Lun 28, Mar 29, Jue 1, Vie 2), más 2 fuera de calendario (Máster y «400 avisos»). Esta semana el cuello de botella no fue publicar.
 
 **Historias:** el 29-sep (CTA de MEMORIA) tuvo 27 respuestas con 75 % de retención. Los otros días, 0 respuestas: no tenían CTA.
+
+## Actualización 2026-10-12 · semana 5–11 oct: el dato de cálculo gana; anunciar el producto sigue sin conversar
+
+Datos de la Graph API (Instagram). De Facebook solo llegan los comentarios: la API no da sus vistas.
+
+| Fecha | Pieza | Formato | Vistas IG | Coment. IG | Coment. FB | Guardados | Visitas al perfil |
+|---|---|---|---|---|---|---|---|
+| Vie 9 | Dato: «¿Y la deriva, la revisaste?» (CTA ACERO) | post | 2.852 | **10** | — | **19** | 4 |
+| Lun 5 | Tutor IA del Diplomado (CTA DIPLOMADO) | carrusel | **3.230** | 0 | — | 2 | 4 |
+| Jue 8 | «Hola, soy Gabriel» (CTA NIVEL) | carrusel | 2.833 | 2 | 2 | 11 | **14** |
+| Mié 7 | «Una IA no sabe cuándo no sabe» (CTA GUIA) | reel | 491 | 2 | — | 2 | — |
+
+**Medianas por pieza:**
+
+| Periodo | Vistas | Comentarios | Guardados |
+|---|---|---|---|
+| Esta semana | 2.843 | **2** | 7 |
+| Septiembre (7-sep a 4-oct) | 2.224 | 11 | 8 |
+
+Más vistas que septiembre y muchos menos comentarios.
+
+**Lecciones**
+1. **El dato de cálculo verificable con palabra volvió a ganar.** La deriva sacó 10 comentarios y 19 guardados con menos vistas que el carrusel del tutor. Es la misma regla de DM168 y de la fórmula del acero.
+2. **Anunciar el producto no conversa, por tercera semana seguida.** El tutor del Diplomado tuvo la mayor cantidad de vistas (3.230) y 0 comentarios. El CTA pedía DIPLOMADO o DM, y no hay ninguna palabra montada que lo recoja. Desde ya, toda pieza de producto lleva una palabra viva y una pregunta al lector.
+3. **El reel de opinión sobre la IA es el peor formato de la cuenta:** 491 vistas y 2 comentarios. Lo que gana en el nicho es la demo en pantalla con titular fijo arriba («Tres bandas», ver `matriz/EDICION-GANADORA-NICHO.md`), no la frase de opinión.
+4. **La historia del creador presenta, pero no vende.** Trajo 14 visitas al perfil, el máximo de la semana, y solo 4 comentarios entre IG y FB. Funciona como pieza de confianza; no hay que medirla por comentarios.
+
+**Plan contra lo publicado:**
+- De las 5 piezas del feed de la semana 1 salieron 4 (Lun 5, Mié 7, Jue 8 y Vie 9).
+- No salió el reel del sábado 10 (`oct-clase-chatgpt-seguidor-reel`), que estaba EDITADO y listo para publicar. **Esa falta es de publicación, no de producción.**
+
+**Historias:** 15 frames en 4 días con 2 respuestas en total. El jueves 8, día de venta (tutor), tuvo 0 respuestas, con 66 % de retención. La mejor retención fue la del viernes 9 (76 %, 1 respuesta).
+
+**Embudos:**
+- **ACERO no sumó ningún contacto en 7 días**, aunque el post de la deriva que pedía ACERO sacó 10 comentarios. Hay que revisar que el disparador de GHL escuche ese post.
+- NIVEL sumó 1.
+- MEMORIA siguió sola con 24 contactos nuevos.
