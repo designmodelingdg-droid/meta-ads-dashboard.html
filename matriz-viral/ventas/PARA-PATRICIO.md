@@ -23,12 +23,26 @@ Patricio, Dayana revisó conversaciones del agente de la semana del 5 al 11 de o
 | 1 | La persona responde «3» a «¿3 o 5 horas?» y el agente no vuelve a escribir | Prompt (regla 11) **y GHL** | Revisa si el agente o algún filtro ignora mensajes cortos o solo numéricos, o si tiene un mínimo de caracteres. Tiene que contestar todo |
 | 2 | Si el cliente ya tenía una conversación anterior en ese WhatsApp, el agente no contesta | **GHL** y prompt (regla 12) | Revisa la condición que enciende el agente: si solo se activa en conversaciones o contactos nuevos, cámbiala para que también conteste a contactos con historial. Y que no se quede apagado por una pausa vieja de cuando escribió alguien del equipo |
 | 3 | Le dice a la persona que su mensaje «llegó con un campo sin completar» o que «salió con un marcador sin llenar» | Prompt (regla 13, sin corchetes) **y GHL** | Busca en el agente y en los workflows cualquier `[nombre]`, `[enlace]` o `{{campo}}` que pueda llegar vacío |
-| 4 | Ante «quiero Acero y Hormigón» inventa «un paquete distinto» con «asesoría de 30 minutos con un especialista» | Prompt | Ahora vende las dos con descuento por llevar más de una. Cuando la persona acepta, marca la conversación para Ester con «paquete Acero + Hormigón» y Ester manda el enlace. **Falta que Dayana fije el precio del paquete:** cuando lo haga, se escribe en el prompt y el agente lo da directo |
+| 4 | Ante «quiero Acero y Hormigón» inventa «un paquete distinto» con «asesoría de 30 minutos con un especialista» | Prompt | Ahora vende las dos con descuento por llevar más de una. Las dos quedan en USD 299,99 y el agente manda el enlace directo |
 | 5 | Termina con preguntas de relleno o que no siguen el hilo (pregunta el nombre que ya está en el formulario, dos preguntas juntas) | Prompt (regla 15 y «La siguiente pregunta») | Si quedaron en que la persona revisaba la información, la siguiente pregunta es «¿qué te pareció?» o «¿seguimos?» |
 | 6 | Repite el saludo y la misma pregunta hasta 8 veces, y a veces manda dos mensajes casi iguales en el mismo minuto | Prompt (regla 14) **y GHL** | Los mensajes dobles casi idénticos suelen ser **dos automatizaciones contestando a la vez**: el agente de GHL y otro workflow, o el servidor del bot (`/webhook/ghl`). Deja **un solo** responder por conversación |
 | 7 | Al que dijo «Quiero» le contesta «¿te escribo por aquí o prefieres que te contacte una persona del equipo?» | Prompt (regla 16 y traspaso) | Ahora da la información en ese turno y pide el paso. A una persona solo pasa en los casos de la lista (pide una persona, cuotas, paquete, factura, queja) |
 | 8 | Las conversaciones de soporte no le llegan a nadie | Prompt **y un workflow en GHL** | Ver «Aviso automático a Aylin» abajo |
 | 9 | Le resuelve gratis a la persona su proyecto (la altura de sus niveles en Revit, ocho mensajes a la 1 a. m.) | Prompt (regla 17) | Ahora reconoce la duda, la lleva al curso (tutor IA y asesoría en vivo incluidos) y pide el paso |
+
+### Precios y enlaces de pago nuevos (confirmados por Dayana el 12-oct)
+
+- **Hormigón:** USD 199,99.
+- **Acero + Hormigón juntas:** USD 299,99 (por separado serían USD 424,99). Ya está en el prompt y el agente lo da directo.
+- **Qué enlace manda el agente:**
+
+  | Cliente | Monto | Enlace |
+  |---|---|---|
+  | Ecuador (+593 o país del formulario) | Cualquiera | **Datafast**; si no puede, transferencia bancaria (lo pasa a Ester) |
+  | Fuera de Ecuador | Más de USD 200 | **Stripe** |
+  | Fuera de Ecuador | Menos de USD 200 | **PayPal** |
+
+  Necesitas cargar en la base de conocimiento del agente los enlaces de Datafast (Ester los tiene desde hoy), Stripe y PayPal de cada producto: Acero USD 225, Acero sin tutor USD 199,99, Hormigón USD 199,99 y las dos USD 299,99. **Sin esos enlaces cargados, el agente no tiene qué mandar.**
 
 Y una que encontramos al revisar: el agente le ofreció a una persona un «Diplomado de Instalaciones en BIM» que **no existe en el catálogo**. El prompt ahora le prohíbe inventar programas; lo más cercano real es la Especialización en Modelado BIM Arquitectura y MEP.
 
@@ -132,7 +146,7 @@ El agente informa bien, pero no lleva a la persona al siguiente paso.
 - Mensajes de 2 a 4 líneas. Primero pregunta qué necesita la persona y después presenta.
 - Usa lo que la persona respondió en el formulario.
 - Nunca niega que es un asistente. Cuando le piden una persona, o cuando desconfían, pasa la conversación a **Ester (a cualquier hora)**.
-- **Cierre de Acero:** «¿Te paso el enlace para pagar con tarjeta o prefieres PayPal?»
+- **Cierre de Acero:** «¿Te paso el enlace para que empieces hoy?» (desde el 12-oct, el enlace depende del país y el monto)
 
 ### 3. Reglas de precio y promos (confirmadas por Dayana)
 

@@ -43,7 +43,7 @@
 > ¿Es el tipo de nave que te piden en tu trabajo, o vas más por edificios?
 
 *(Cuando confirme:)*
-> Entonces te sirve. Está en USD 225 con el tutor IA incluido y acceso de por vida. ¿Te paso el enlace para pagar con tarjeta o prefieres PayPal?
+> Entonces te sirve. Está en USD 225 con el tutor IA incluido y acceso de por vida. ¿Te paso el enlace para que empieces hoy?
 
 ---
 
@@ -165,9 +165,9 @@
 - Cuando llega el correo, habla de un «campo sin completar».
 
 **Después**
-> Buena elección: con las dos cubres acero y hormigón, que es lo que más piden en edificaciones. Por llevar las dos tienes descuento. ¿Las pagas juntas con tarjeta o prefieres PayPal?
+> Buena elección: con las dos cubres acero y hormigón, que es lo que más piden en edificaciones. Por separado salen en USD 424,99; llevando las dos te quedan en USD 299,99. ¿Te paso el enlace?
 > **Persona:** *(manda su correo)*
-> **Agente:** Listo, con ese correo te llegan los dos accesos. En unos minutos te mando el enlace de las dos con el descuento aplicado. ¿Pagas con tarjeta o con PayPal?
+> **Agente:** Listo, con ese correo te llegan los dos accesos apenas se confirme el pago. Este es el enlace de las dos por USD 299,99: *(enlace de Stripe, o de Datafast si es de Ecuador)*. ¿Lo pagas hoy?
 
 ---
 
