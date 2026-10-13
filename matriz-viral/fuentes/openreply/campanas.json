@@ -289,7 +289,7 @@
    "actualizada": "2026-09-22T03:33:57.816",
    "cuenta": "design_modeling_dg",
    "enviados": 2,
-   "fallidos": 5,
+   "fallidos": 6,
    "entregados_sin_confirmar": 1,
    "saltados": 0,
    "pendientes": 0,
@@ -561,7 +561,7 @@
    "campana": "CHECKLIST NAVISWORKS",
    "campana_activa": true,
    "enviados": 2,
-   "fallidos": 2,
+   "fallidos": 3,
    "entregados_sin_confirmar": 1,
    "saltados": 0,
    "primer_envio": "2026-09-17T15:29:00.203",
@@ -641,6 +641,13 @@
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=AxZgkDZVjfRez-8RxesMDFN]",
    "veces": 1,
    "ultima_vez": "2026-09-24T15:55:24.364"
+  },
+  {
+   "estado": "FAILED",
+   "pero_si_se_entrego": false,
+   "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=AoDH8FEtt2u2dOgccYK5Pyf]",
+   "veces": 1,
+   "ultima_vez": "2026-10-13T14:58:20.339"
   },
   {
    "estado": "FAILED",
@@ -977,13 +984,6 @@
    "motivo": "MetaApiError 1: An unknown error has occurred. (/v25.0/17841404048578200/messages) [code=1 sub=- type=OAuthException trace=AmlIrWHBoNrHDhK7I2rX2gV]",
    "veces": 1,
    "ultima_vez": "2026-09-17T13:45:31.022"
-  },
-  {
-   "estado": "FAILED",
-   "pero_si_se_entrego": false,
-   "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=AnGw9kpxdlAxVz5QDJnDt7J]",
-   "veces": 1,
-   "ultima_vez": "2026-09-30T03:04:26.163"
   }
  ],
  "enlaces": [
@@ -1134,7 +1134,7 @@
  "clics_por_dia": [
   {
    "fecha": "2026-09-13",
-   "clics": 443,
+   "clics": 171,
    "limpio": false
   },
   {
@@ -1221,7 +1221,7 @@
  "envios_por_dia": [
   {
    "fecha": "2026-09-13",
-   "enviados": 5
+   "enviados": 1
   },
   {
    "fecha": "2026-09-14",
@@ -1555,7 +1555,7 @@
     ],
     "en_borrador": [],
     "bot_total": 183,
-    "bot_nuevos_7d": 14
+    "bot_nuevos_7d": 13
    },
    "DYNAMO": {
     "publicados": [
@@ -1580,7 +1580,7 @@
     "bot_nuevos_7d": 0
    }
   },
-  "embudo_generado": "2026-10-13T02:01Z"
+  "embudo_generado": "2026-10-13T11:46Z"
  },
  "cotejo_con_la_matriz": [
   {
