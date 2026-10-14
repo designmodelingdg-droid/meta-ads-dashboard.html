@@ -273,7 +273,7 @@ def main():
              "reglas": ["Nunca un enlace suelto: contexto + pregunta.", "Canales de difusión: el recurso va con su enlace directo.", "Comunidades de WhatsApp/GHL: se puede pedir «respóndeme NIVEL / ACERO / COTIZA», pero ahí no hay bot: una persona del equipo contesta a mano con el enlace el mismo día.", "Grupos de Facebook y comunidad de YouTube: solo la pregunta, sin enlace."],
              "calendario": filas_de("GRUPO 2")},
             {"n": 3, "nombre": "GRUPO 3 · Blog de Design Modeling Academy",
-             "descripcion": "Un artículo por semana, siempre sábado, con CTA a una campaña o a un recurso. El post de anuncio sale el mismo sábado.",
+             "descripcion": "Un artículo por semana, siempre viernes (desde el 14-oct; antes sábado), con CTA a una campaña o a un recurso. El post de anuncio sale el mismo viernes.",
              "reglas": ["El CTA del blog nunca es genérico."],
              "calendario": filas_de("GRUPO 3")},
             {"n": 4, "nombre": "GRUPO 4 · LinkedIn — Design Modeling Academy · Design Modeling DG · Gabriel Pantoja",
