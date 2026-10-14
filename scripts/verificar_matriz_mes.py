@@ -64,6 +64,34 @@ def main():
     faltan = sorted({i for i in ids if i not in G})
     informe("FALLA" if faltan else "OK", "Todo id existe en guiones-completos.json", ", ".join(faltan))
 
+    # La app de contenido sincroniza también los paquetes del mes (lanzamiento-*,
+    # angulos-*, carruseles-*, leadmagnet-*), no solo el calendario. El 6-oct se
+    # movieron piezas en el calendario y no en los paquetes, y el 14-oct la app
+    # mostró esas piezas duplicadas y con la fecha vieja.
+    fecha_cal = {}
+
+    def _fechas(o, destino):
+        if isinstance(o, dict):
+            if o.get("id") and o.get("fecha_iso"):
+                destino.setdefault(o["id"], set()).add(o["fecha_iso"])
+            for v in o.values():
+                _fechas(v, destino)
+        elif isinstance(o, list):
+            for v in o:
+                _fechas(v, destino)
+
+    _fechas(cal, fecha_cal)
+    desfasadas = []
+    for pq in sorted(M.glob(f"*-{nombre}.json")):
+        if pq.name.startswith("calendario-"):
+            continue
+        en_pq = {}
+        _fechas(json.load(open(pq, encoding="utf-8")), en_pq)
+        desfasadas += [f"{i} ({pq.name}: {', '.join(sorted(f))} · calendario: {', '.join(sorted(fecha_cal[i]))})"
+                       for i, f in en_pq.items() if i in fecha_cal and f - fecha_cal[i]]
+    informe("FALLA" if desfasadas else "OK", "Las fechas de los paquetes del mes coinciden con el calendario",
+            "; ".join(desfasadas))
+
     malas = [p["id"] for p in G.values() for k in ("slides", "historias", "guion_reel") if k in p and not isinstance(p[k], list)]
     informe("FALLA" if malas else "OK", "slides / historias / guion_reel son listas", ", ".join(malas))
 
