@@ -42,6 +42,15 @@ Cada archivo es el `src/Composition.tsx` de un video ya aprobado; se copian a un
 
 ## 3. Scripts
 
+- `scripts/editar.py` (**/editar**, el primer paso de todo reel): del crudo a `gabriel_editado.mp4` + `words.json`.
+  ```bash
+  python3 video-recursos/scripts/editar.py preparar trabajo/ hook.mov d1.mov d2.mov cierre.mov   # escribe trabajo/receta.json
+  python3 video-recursos/scripts/editar.py render trabajo/                                         # corta, acelera, normaliza, transcribe
+  ```
+  - **Silero** (el VAD que ya trae faster-whisper) decide dónde hay voz; **Whisper** solo corrige los bordes para no comerse el final de una palabra. Probado con el crudo del Pack de Dynamo: salieron los mismos cortes que se habían hecho a mano.
+  - **Encuadre a la cara**: si el clip es horizontal, YuNet (OpenCV) busca la cara y recorta el 9:16 centrado en ella (mediana, para que no baile).
+  - **Receta** (`receta.json`): tramos por clip, velocidad (1.2× Gabriel, 1.1× clases) y LUFS. Se edita a mano y `render` rehace solo los clips cuya parte cambió.
+  - **Volumen** a −14 LUFS en dos pasadas con pico máximo −1 dBTP (en voz suele quedar en −14,5 a −15 por el límite de pico).
 - `scripts/bajar_recursos.py`: baja del manifiesto lo que se le pida.
 - `scripts/recortar_gabriel.sh`: recorta a Gabriel (rembg `u2net_human_seg`) y deja un WebM con transparencia para el estilo 8a.
 
