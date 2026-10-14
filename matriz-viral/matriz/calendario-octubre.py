@@ -164,7 +164,7 @@ LEAD_MAGNETS = {
     "mapa_cta": [
         {"palabra": "NIVEL", "fecha": "Jue 8 (historia del creador), Lun 12, Mar 20, Mié 21, Jue 22, Vie 23 (ranking y post), Vie 30", "producto": "Máster"},
         {"palabra": "ACERO", "fecha": "Vie 9, Mar 13 (testimonio), Vie 16, Lun 26, Mar 27, Jue 29", "producto": "Acero"},
-        {"palabra": "COTIZA", "fecha": "Mar 13 (comunidades y LinkedIn), Jue 15 (carrusel), Sáb 17 (blog), Mié 28 (reel e historias)", "producto": "Cotizador → Acero/Diplomado"},
+        {"palabra": "COTIZA", "fecha": "Mar 13 (comunidades y LinkedIn), Jue 15 (carrusel), Vie 16 (blog), Mié 28 (reel e historias)", "producto": "Cotizador → Acero/Diplomado"},
         {"palabra": "DIPLOMADO", "fecha": "Lun 5 (lanzamiento del tutor) y Mié 14 (post de clases grabadas)", "producto": "Diplomado · montar antes del 5 o CTA a DM"},
         {"palabra": "GUIA", "fecha": "Mié 7 (reel «Una IA no sabe cuándo no sabe», cambio del 5-oct)", "producto": "Guía Revit + ChatGPT (OpenReply, campaña «Guía Revit») → Máster"},
         {"palabra": "WORKSHOP", "fecha": "Lun 19 (carrusel «Antes / ahora» e historias con cuenta regresiva)", "producto": "Workshop Revit + IA del jue 22-oct → cita de ruta del Máster · la contesta GHL con el enlace de la landing; montar antes del 19 o CTA a DM"},
@@ -221,7 +221,7 @@ CHECKLIST = [
     {"tarea": "Revisión semanal del 5-oct: comprobar que los comentarios de Facebook reciben el DM del recurso. El post de MEMORIA del 1-oct sacó 192 comentarios en Facebook contra 32 en Instagram.", "desbloquea": "Que la conversación de Facebook llegue al bot", "cuando": "semana del 5-oct", "para": "Patricio / Dayana"},
     {"tarea": "Reunión del 5-oct: historias de 4 frames como máximo por día (ya aplicado en la matriz).", "desbloquea": "Retención de las historias por encima del 60 %", "cuando": "desde el Lun 5", "para": "Daniela"},
     {"tarea": "Montar la secuencia de correo S5 · SEGUIMIENTO COTIZADOR (matriz-viral/seguimiento/correos-nutricion.json).", "desbloquea": "Seguimiento de los leads del cotizador", "cuando": "antes del 13-oct", "para": "Ester y Aylin"},
-    {"tarea": "Publicar los 3 blogs (17, 24 y 31) con su post de anuncio.", "desbloquea": "G3 del mes", "cuando": "cada sábado", "para": "equipo de contenido"},
+    {"tarea": "Publicar los 3 blogs (16, 23 y 30) con su post de anuncio.", "desbloquea": "G3 del mes", "cuando": "cada viernes", "para": "equipo de contenido"},
 ]
 
 
@@ -247,6 +247,7 @@ def main():
             "BIM e IA NUNCA como palabra de un recurso: son el bot de ventas del Máster (el checklist de Navisworks falló 3 de 5).",
             "DYNAMO fuera de los CTA de octubre: 0 comentarios en su reel y falla en OpenReply.",
             "LOS DOS FORMATOS GANADORES DE SEPTIEMBRE se repiten: el dato de cálculo verificable (cuantía mínima: 44.589 vistas, 146 comentarios, 163 seguidores) y el tutorial paso a paso con palabra (plano 2D → BIM: 99 comentarios, 47 DM). Anunciar un producto («ahora tiene X») nunca va solo: siempre detrás de un problema.",
+            "CAMBIOS DEL 14-OCT (Dayana): los blogs salen los viernes (16, 23 y 30) en vez de los sábados. El del Sáb 10 ya pasó y queda donde estaba.",
             "CAMBIOS DEL 8-OCT: el Lun 19 sale el carrusel del workshop «Antes / ahora: Revit con IA» (formato del post de AECODE del 7-oct que le gustó a Dayana, CTA WORKSHOP); el carrusel del ranking pasa a reserva y las historias del 19 promocionan el workshop con cuenta regresiva.",
             "CAMBIOS DEL 6-OCT: Daniela viaja y no se graban videos nuevos hasta que vuelva. El Mié 7 sale el reel de valor 5 de septiembre («Una IA no sabe cuándo no sabe»). Testimonio de Acero al Mar 13 y reel de COTIZA al Mié 28; ranking al Vie 23; post de clases grabadas al Mié 14. Las historias de la semana 1 se corren un día y ninguna promociona un reel que no sale ese día.",
             "CAMBIOS DEL 5-OCT (revisión semanal, auditoría orgánica de septiembre y reunión de cierre): historias de 4 frames como máximo; cada dato de cálculo cierra con palabra de recurso; los posts del recurso se cuidan también en Facebook (192 comentarios del post de MEMORIA); el reel del tutor queda aplazado hasta que se grabe y en su lugar sale «Una IA no sabe cuándo no sabe», que no se promociona en historias.",
