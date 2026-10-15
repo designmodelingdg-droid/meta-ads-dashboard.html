@@ -2,7 +2,7 @@
   "_meta": {
     "titulo": "Matriz de contenido — Design Modeling Academy — octubre 2026",
     "periodo": "Del lunes 5 al domingo 1 de noviembre",
-    "generado": "2026-10-14",
+    "generado": "2026-10-15",
     "como_se_regenera": "python3 matriz-viral/matriz/calendario-octubre.py && python3 scripts/build_matriz_mes.py --mes 2026-10",
     "origen": "calendario-octubre.json (orden) + guiones-completos.json (contenido de cada pieza)",
     "fuente_de_datos": "Métricas de Instagram por Meta Graph API (matriz.json, Action «Métricas semanales») y Apify para referentes; histórico en historico-2026.json; compradores en COMPRADORES-VS-NO.md."
@@ -935,24 +935,24 @@
             "slides": [
               {
                 "n": 1,
-                "texto": "(sin texto en la imagen o solo «M2 · Lección 25 · min 04:09» resaltado)",
-                "visual": "Captura real de la respuesta del tutor a la pregunta del espectro sísmico, 4:5, con la cita marcada en ámbar."
+                "texto": "(sin texto en la imagen; la cita «M2 Acero sismorresistente · Lección 24 · Creación del espectro sísmico · min 00:03» resaltada en ámbar)",
+                "visual": "Captura de la respuesta real del tutor a «cómo se calcula el espectro sísmico» (Gabriel, 14-oct), 4:5 sobre #0E2438, con la cita marcada en ámbar. Archivo: matriz-viral/entregables/posts/oct-tutor-dip-post-fb-4x5.png"
               }
             ],
-            "caption": "Estudiar con clases grabadas tiene una parte que nadie pone en el temario: volver a encontrar dónde se explicó algo.\n\nEn el Diplomado BIM en Estructuras son 216 videos y 133 horas de clase. Ahora el alumno tiene un Tutor IA dentro del curso: le escribe la duda con sus palabras y el tutor responde con las clases del propio Diplomado, indicando la lección y el minuto.\n\nLo probamos con una pregunta real: «¿Cómo creo el espectro sísmico y lo ingreso en Robot?». Respondió con el Módulo 2, Lección 25, minuto 04:09, y la Lección 24 como apoyo. En la imagen está la respuesta tal cual salió.\n\nTiene límites puestos a propósito. Si algo no está en las clases, lo dice y sugiere la asesoría con los instructores. Las cifras de norma no las dicta: pide verificarlas en la norma vigente. Tampoco revisa proyectos personales.\n\nCubre los módulos 2 a 9. El Módulo 1, de iniciación en Revit, todavía no está cargado.\n\nSi ya eres alumno del Diplomado, lo encuentras en tu curso con el botón «Abrir el Tutor IA». Si no, comenta DIPLOMADO y te contamos cómo es el Diplomado.\n\n¿Qué tema de estructuras te costaría más encontrar en un curso de 133 horas?",
+            "caption": "Estudiar con clases grabadas tiene una parte que nadie pone en el temario: volver a encontrar dónde se explicó algo.\n\nEn el Diplomado BIM en Estructuras son 216 videos y 133 horas de clase. Ahora el alumno tiene un Tutor IA dentro del curso: le escribe la duda con sus palabras y el tutor responde con las clases del propio Diplomado, indicando la lección y el minuto.\n\nLo probamos con una pregunta real: cómo se calcula el espectro sísmico. Respondió con el Módulo 2, Lección 24 («Creación del espectro sísmico»), minutos 00:03 y 02:06, y con el Módulo 4, Lección 21, como apoyo. En la imagen está el final de la respuesta con las clases que citó.\n\nTiene límites puestos a propósito. Si algo no está en las clases, lo dice y sugiere la asesoría con los instructores. Las cifras de norma no las dicta: pide verificarlas en la norma vigente. Tampoco revisa proyectos personales.\n\nCubre los módulos 2 a 9. El Módulo 1, de iniciación en Revit, todavía no está cargado.\n\nSi ya eres alumno del Diplomado, lo encuentras en tu curso con el botón «Abrir el Tutor IA». Si no, comenta DIPLOMADO y te contamos cómo es el Diplomado.\n\n¿Qué tema de estructuras te costaría más encontrar en un curso de 133 horas?",
             "cta": {
               "instagram": "Comenta DIPLOMADO y te contamos cómo es el Diplomado (si DIPLOMADO no está montada: «Escríbenos por DM»).",
               "facebook": "Comenta DIPLOMADO y te contamos cómo es el Diplomado."
             },
             "condicion": "La palabra DIPLOMADO NO existe hoy ni en OpenReply ni en GHL (cotejo de fuentes/openreply/campanas.json). Si no está montada y probada el día de publicar, el CTA de prospectos cambia a: «Escríbenos por DM y te contamos cómo es el Diplomado» y la historia usa el sticker de enlace a la agenda. No publicar la promesa vacía.",
-            "prompt_imagenes": "No se genera con IA: es la captura real del tutor, recortada a 4:5 sobre fondo #0E2438, con la cita en recuadro ámbar #E8A04A.",
+            "prompt_imagenes": "No se genera con IA: interfaz real del tutor con el texto exacto de la respuesta que obtuvo Gabriel el 14-oct, 4:5 sobre fondo #0E2438, con la cita en ámbar #E8A04A.",
             "formato_detalle": "POST (1 imagen: captura real) · Instagram y Facebook",
             "red_principal": "instagram",
             "cta_por_red": {
               "instagram": "Comenta DIPLOMADO y te contamos cómo es el Diplomado (si DIPLOMADO no está montada: «Escríbenos por DM»).",
               "facebook": "Comenta DIPLOMADO y te contamos cómo es el Diplomado."
             },
-            "notas_produccion": "La palabra DIPLOMADO NO existe hoy ni en OpenReply ni en GHL (cotejo de fuentes/openreply/campanas.json). Si no está montada y probada el día de publicar, el CTA de prospectos cambia a: «Escríbenos por DM y te contamos cómo es el Diplomado» y la historia usa el sticker de enlace a la agenda. No publicar la promesa vacía. | 6-oct (Dayana): Daniela viaja y no se graban videos nuevos hasta que vuelva. Pasa del Vie 9 al Mié 14 y sale también en Instagram: es la pieza del día, que se había quedado vacío.",
+            "notas_produccion": "La palabra DIPLOMADO NO existe hoy ni en OpenReply ni en GHL (cotejo de fuentes/openreply/campanas.json). Si no está montada y probada el día de publicar, el CTA de prospectos cambia a: «Escríbenos por DM y te contamos cómo es el Diplomado» y la historia usa el sticker de enlace a la agenda. No publicar la promesa vacía. | 6-oct (Dayana): Daniela viaja y no se graban videos nuevos hasta que vuelva. Pasa del Vie 9 al Mié 14 y sale también en Instagram: es la pieza del día, que se había quedado vacío. | 15-oct: la captura sale del video que grabó Gabriel el 14-oct con una pregunta real al tutor. La respuesta citó M2 · Lección 24 (min 00:03 y 02:06) y M4 · Lección 21 (min 00:05), no la Lección 25 del guion original: el caption se corrigió para decir lo que de verdad respondió. La imagen es la interfaz real del tutor con el texto exacto de esa respuesta (la foto del monitor tenía moiré). Se deja fuera el primer párrafo de la respuesta porque dice «Fa y Fb» y en ASCE 7 son Fa y Fv.",
             "origen": "lanzamiento-tutor-ia-octubre.json"
           }
         },
