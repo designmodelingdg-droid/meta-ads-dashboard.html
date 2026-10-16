@@ -1,8 +1,8 @@
 # Inventario de correos — GoHighLevel
 
-Generado el 2026-10-12.
+Generado el 2026-10-16.
 
-**450 plantillas** en **54 carpetas**. 450 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
+**451 plantillas** en **54 carpetas**. 451 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
 
 > Lo que NO sale por API: que workflow usa que plantilla. El endpoint de automatizaciones devuelve solo metadatos. En esta cuenta las plantillas estan nombradas por su flujo, asi que el cruce se puede hacer leyendo.
 
@@ -6799,7 +6799,7 @@ Ing. Gabriel Pantoja
 
 - **id:** `68658966dde9f36e20d68f53`
 - **tipo:** builder
-- **actualizada:** 2025-07-16T21:15:59.651Z
+- **actualizada:** 2026-10-15T14:55:36.647Z
 - **Cuerpo:**
 
 ```
@@ -6818,7 +6818,7 @@ Ing. Gabriel Pantoja
 
 - **id:** `687816ab5d9d00f3fd9bd156`
 - **tipo:** builder
-- **actualizada:** 2025-07-16T21:39:17.967Z
+- **actualizada:** 2026-10-15T14:57:36.727Z
 - **Cuerpo:**
 
 ```
@@ -7734,6 +7734,39 @@ Presentado por:
 
 ## ⚠️ AUTOMATIZACIONES PIPELINE > ⚠️ MASTER HIGHTICKETS
 
+### CITA Reagendada Máster
+
+- **id:** `6ad0ebb39c0b9f54fd2a5cc7`
+- **tipo:** html
+- **actualizada:** 2026-10-15T15:10:20.544Z
+- **Cuerpo:**
+
+```
+Emails -> Templates -> Code Editor (Ctrl+A, Ctrl+V)
+Merge tags: {{contact.first_name}} y {{unsubscribe_url}}
+Valor personalizado: broshure_mster_bimia_2025
+-->
+Entiendo que surgen imprevistos. Elige un nuevo horario aqu&iacute;.
+M&aacute;ster BIM + IA
+&iquest;Reagendamos tu reuni&oacute;n?
+Hola, {{contact.first_name}}
+Espero que todo est&eacute; bien.
+Not&eacute; que no pudiste asistir a la reuni&oacute;n programada, pero entiendo que surgen imprevistos. &iquest;Te gustar&iacute;a reagendar para discutir c&oacute;mo nuestro M&aacute;ster BIM+IA puede beneficiar tu trabajo?
+Estoy seguro de que esta herramienta revolucionaria puede optimizar tus proyectos y aumentar la eficiencia de tu equipo.
+No pierdas la oportunidad de aprender m&aacute;s sobre la metodolog&iacute;a BIM. Puedes reagendar en el bot&oacute;n del final del correo.
+Quedo a tu disposici&oacute;n para coordinar una nueva reuni&oacute;n. &iexcl;Espero tu pronta respuesta!
+Saludos cordiales,
+Ing. Gabriel Pantoja
+Elige un nuevo horario
+Toma menos de un minuto y la reuni&oacute;n es sin costo.
+Reagendar mi reuni&oacute;n &#8594;
+Mientras tanto, puedes
+ver el brochure del M&aacute;ster BIM+IA
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
 ### MASTER2RC - Seguimiento 1
 
 - **id:** `68648a60fdb5735640736fe5`
@@ -7866,7 +7899,7 @@ designmodelingacademy.com
 
 - **id:** `6a8888a78ced86da5a82e5f0`
 - **tipo:** html
-- **actualizada:** 2026-10-06T19:20:32.096Z
+- **actualizada:** 2026-10-15T14:54:16.611Z
 - **Cuerpo:**
 
 ```
@@ -7896,7 +7929,7 @@ designmodelingacademy.com
 
 - **id:** `6a9ee9408b9ab4e0810c7d19`
 - **tipo:** html
-- **actualizada:** 2026-09-07T16:45:35.833Z
+- **actualizada:** 2026-10-15T15:05:03.850Z
 - **Cuerpo:**
 
 ```
