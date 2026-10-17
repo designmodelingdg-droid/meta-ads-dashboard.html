@@ -43,10 +43,11 @@ FEED = [
     (14, "oct-tutor-dip-post-fb",              "solución",   "Diplomado", "Comenta DIPLOMADO (si no está montada: DM)", "CAMBIO 6-oct: el post de clases grabadas pasa del Vie 9 al Mié 14 y sale en Instagram y Facebook, porque el reel del ranking se movió al Vie 23."),
     (15, "oct-cotiza-carrusel",                "solución",   "Cotizador", "Comenta COTIZA", "EXTRA lead magnet (jueves)."),
     (16, "oct-ang4-naves-rechazadas-post",     "problema",   "Acero",     "Comenta ACERO", "Ángulo 4 de compradores: los proyectos que rechazas."),
-    (19, "oct-workshop-antes-ahora-carrusel",  "solución",   "Workshop → Máster", "Comenta WORKSHOP (si no está montada: DM)", "CAMBIO 8-oct (Dayana): carrusel del workshop del jue 22 con el formato «Antes / Ahora» del post de AECODE del 7-oct. Capturas REALES de Revit 2027 (Assistant y servidor MCP, de solo lectura). Reemplaza al carrusel del ranking, que pasa a reserva y vuelve si no hay capturas a tiempo."),
+    (17, "oct-clase-onefilter-reel",           "solución",   "Máster",    "Comenta NIVEL", "17-oct (Dayana): los reels de los sábados ya están grabados y se quedan en su fecha. SÁBADOS DE CLASE REAL: tip de OneFilter (DiRoots) sacado de una clase del Máster, ya editado (estilo tutorial). «Gratis» solo para OneFilter; no decir que exportar a Excel es gratis."),
+    (19, "oct-ranking-perfil-bim-carrusel",    "problema",   "Máster",    "Comenta NIVEL", "CAMBIO 17-oct (Dayana): el workshop del jue 22 NO se dicta; su carrusel no se publica y vuelve el ranking «¿En qué fila estás tú?» (estaba en reserva desde el 8-oct). Es el único carrusel del día."),
     (20, "oct-lm-acero-pandeo-lt-carrusel",    "problema",   "Acero",     "Comenta ACERO", "CAMBIO 17-oct: pasa del Jue 29 al Mar 20 (sin reels hasta el Vie 23). EXTRA lead magnet ACERO (el PROMO de recurso es lo que más comenta la cuenta: DM157, 159 comentarios). Capturas reales de Revit/Robot."),
     (21, "oct-ang8-obra-software-carrusel",    "problema",   "Acero",     "Comenta ACERO", "CAMBIO 17-oct: pasa del Lun 26 al Mié 21. Ángulo 8: de la obra al software. Filtra a quien quiere soldar."),
-    (22, "oct-obj-certificado-carrusel",       "objeción",   "Máster",    "Comenta NIVEL", "Objeción de certificado. Dayana confirma la lista de certificados antes de diseñar. Mismo día del workshop (19:00)."),
+    (22, "oct-obj-certificado-carrusel",       "objeción",   "Máster",    "Comenta NIVEL", "Objeción de certificado. Dayana confirma la lista de certificados antes de diseñar. "),
     (23, "oct-testimonio-acero-reel",          "testimonio", "Acero",     "Comenta ACERO", "CAMBIO 17-oct: el testimonio del alumno de Acero ya está EDITADO y sin publicar. Sale hoy, primer reel después de la pausa. Antes de publicar: permiso por escrito guardado y comentario de prueba de ACERO."),
     (23, "oct-ang3-bim-se-exige-post",         "problema",   "Máster",    "Comenta NIVEL", "Ángulo 3: BIM ya se exige. Sale con el blog del viernes."),
     (24, "oct-clase-addin-no-piensa-reel",     "problema",   "Máster",    "Comenta GUIA", "SÁBADOS DE CLASE REAL: «los add-ins solo ejecutan, no piensan», de una clase del Máster, ya editado (pizarra + clase). GUIA: añadir el reel a la campaña «Guía Revit» de OpenReply."),
@@ -56,7 +57,6 @@ FEED = [
     (29, "oct-obj-cursos-youtube-reel",        "objeción",   "Acero",     "Comenta ACERO", "CAMBIO 17-oct: pasa del Mar 27 al Jue 29, el día de la venta de Acero en historias. Objeción: muchos cursos, ninguno aplicable. Reel de valor: graba Gabriel."),
     (30, "oct-ranking-software-estructural-reel", "problema", "Máster",   "Comenta NIVEL", "CAMBIO 17-oct: pasa del Vie 23 al Vie 30 (antes, 6-oct: del Mié 14 al Vie 23). Ranking con tablero físico; es el último que se graba. No se anuncia en historias."),
     (30, "oct-obj-dinero-post",                "objeción",   "Máster",    "Comenta NIVEL", "Objeción de dinero sin precio: lo caro es el proyecto rechazado."),
-    (31, "oct-clase-onefilter-reel",           "solución",   "Máster",    "Comenta NIVEL", "CAMBIO 17-oct: pasa del Sáb 17 al Sáb 31 (sin reels hasta el Vie 23). SÁBADOS DE CLASE REAL: tip de OneFilter (DiRoots) sacado de una clase del Máster, ya editado (estilo tutorial). «Gratis» solo para OneFilter; no decir que exportar a Excel es gratis."),
 ]
 
 
@@ -162,12 +162,11 @@ LEAD_MAGNETS = {
     "retirados": [{"nombre": "Pack de 5 scripts de Dynamo", "palabra": "DYNAMO", "por_que": "Auditoría de septiembre: su reel sacó 0 comentarios y OpenReply falla 4 de 4 porque GHL también contesta. El recurso sigue en /recursos; la palabra sale de los CTA."},
                   {"nombre": "Guía Revit + ChatGPT", "palabra": "CHATGPT", "por_que": "No tiene campaña ni workflow que conteste: nadie recibe nada. La guía se pide con GUIA (OpenReply), que es la palabra que usa el reel del Mié 7."}],
     "mapa_cta": [
-        {"palabra": "NIVEL", "fecha": "Jue 8 (historia del creador), Lun 12, Jue 22, Vie 23 (post), Lun 26, Mar 27, Vie 30 (ranking y post), Sáb 31", "producto": "Máster"},
+        {"palabra": "NIVEL", "fecha": "Jue 8 (historia del creador), Lun 12, Sáb 17, Lun 19 (ranking), Jue 22, Vie 23 (post), Lun 26, Mar 27, Vie 30 (ranking de software y post)", "producto": "Máster"},
         {"palabra": "ACERO", "fecha": "Vie 9, Vie 16, Mar 20, Mié 21, Vie 23 (testimonio), Jue 29", "producto": "Acero"},
         {"palabra": "COTIZA", "fecha": "Mar 13 (comunidades y LinkedIn), Jue 15 (carrusel), Vie 16 (blog), Mié 28 (reel e historias)", "producto": "Cotizador → Acero/Diplomado"},
         {"palabra": "DIPLOMADO", "fecha": "Lun 5 (lanzamiento del tutor) y Mié 14 (post de clases grabadas)", "producto": "Diplomado · montar antes del 5 o CTA a DM"},
         {"palabra": "GUIA", "fecha": "Mié 7 (reel «Una IA no sabe cuándo no sabe», cambio del 5-oct)", "producto": "Guía Revit + ChatGPT (OpenReply, campaña «Guía Revit») → Máster"},
-        {"palabra": "WORKSHOP", "fecha": "Lun 19 (carrusel «Antes / ahora» e historias con cuenta regresiva)", "producto": "Workshop Revit + IA del jue 22-oct → cita de ruta del Máster · la contesta GHL con el enlace de la landing; montar antes del 19 o CTA a DM"},
     ],
 }
 
@@ -196,8 +195,6 @@ DESTACADA_DE = {i.split(" ")[0]: d["destacada"] for d in DESTACADAS for i in d["
 
 
 CHECKLIST = [
-    {"tarea": "WORKSHOP: montar en GHL el disparador de la palabra WORKSHOP (Instagram y Facebook) con el enlace de la landing de registro del workshop, y probarlo desde una cuenta ajena.", "desbloquea": "El carrusel del Lun 19 y sus historias (si no está, el CTA pasa a «Escríbenos por DM»)", "cuando": "antes del 19-oct", "para": "Patricio · Ester y Aylin"},
-    {"tarea": "Capturas reales del carrusel «Antes / ahora» desde Revit 2027: panel del Autodesk Assistant respondiendo, Claude Desktop conectado por el MCP respondiendo con datos del modelo, una tabla de planificación filtrada a mano, láminas hechas a mano y el Assistant creando una lámina. Modelo de DMA o del Diplomado, sin datos de clientes.", "desbloquea": "El carrusel del Lun 19 (sin capturas vuelve el ranking)", "cuando": "antes del 16-oct (puede salir del ensayo del jue 15)", "para": "Gabriel"},
     {"tarea": "DECIDIDO (Dayana, 30-sep): las palabras con embudo las contesta GHL. Pausar en OpenReply las campañas MEMORIA VERIFICABLE, MEMORIA VERIFICABLE copy, MEMORIA DE CÁLCULO, PACK DYNAMO, 5 ERRORES REVIT (BIM/IA) y CHECKLIST NAVISWORKS (BIM/IA). OpenReply queda para las palabras sueltas (TUTORIAL, GUIA, PARTE) y para COTIZA en Instagram; COTIZA en Facebook la contesta GHL.", "desbloquea": "Que los DM de MEMORIA, DYNAMO y BIM/IA no fallen («no eres el dueño de la conversación»)", "cuando": "antes del lunes 5", "para": "Dayana (OpenReply)"},
     {"tarea": "ACERO: subir el 25 % que llega al acceso. El flujo funciona (revisado en GHL el 30-sep): la caída es de gente que recibe el DM y no llena el formulario, y el DM de Instagram solo se entrega dentro de las 24 h del comentario. Acortar el formulario de la landing de las 5 verificaciones y sumar un recordatorio (correo o WhatsApp) a quien tiene lead-acero-verificaciones sin acceso-verificacion.", "desbloquea": "Las 6 piezas de octubre que piden ACERO (la primera el Vie 9)", "cuando": "antes del 9-oct", "para": "Ester y Aylin"},
     {"tarea": "Quitar de GHL la duplicidad de accesos: «✅ OLD Acceso y Descarga PDF Recursos Gratis» sigue publicado (61 inscritos) junto al NEW y puede mandar el acceso dos veces. Comprobar y despublicar el OLD si ya no lo usa nada.", "desbloquea": "Que nadie reciba dos correos de acceso", "cuando": "antes del lunes 5", "para": "Ester y Aylin"},
@@ -210,7 +207,7 @@ CHECKLIST = [
     {"tarea": "Gabriel revisa las horas de ejemplo del cotizador (app.html, ENTREGABLES).", "desbloquea": "Reel del Mar 13 y carrusel del Jue 15", "cuando": "antes del 12-oct", "para": "Gabriel"},
     {"tarea": "GRABAR LOS REELS DE VALOR (17-oct): no sale ningún reel antes del Vie 23. Orden y fecha límite: objeción de tiempo (sale Lun 26), «La IA ordena, tú decides» (Mar 27), reel de COTIZA (Mié 28), «20 videos de acero» (Jue 29) y el ranking con tablero físico (Vie 30). Si un reel no está grabado la víspera, ese día no sale reel y la historia quita su frame: nada de «en el reel de hoy» sin reel.", "desbloquea": "Semana 4 del feed y sus historias", "cuando": "antes del Lun 26 (los dos primeros) y antes del Jue 29 (el resto)", "para": "Gabriel y Daniela"},
     {"tarea": "Testimonio de Acero (ya editado): guardar el permiso por escrito del alumno y escribir el caption con sus palabras reales. Las historias del Vie 23 toman su frase del mismo video.", "desbloquea": "Reel e historias del Vie 23", "cuando": "antes del Vie 23", "para": "Daniela / Dayana"},
-    {"tarea": "En la app de contenido, borrar las piezas movidas que queden con la fecha vieja (el feed movido el 17-oct: OneFilter 17, objeción de tiempo 20, IA ordena 21, ranking 23, «Sabes montar una nave» 26, «20 videos de acero» 27, pandeo 29; testimonio 13; comunidades del 20 y 27; LinkedIn del 21 y 28). Las historias conservan su id y su día.", "desbloquea": "Que la app no muestre duplicados", "cuando": "al sincronizar", "para": "Daniela / Patricio"},
+    {"tarea": "En la app de contenido, borrar las piezas movidas que queden con la fecha vieja (el feed movido el 17-oct: objeción de tiempo 20, IA ordena 21, ranking 23, «Sabes montar una nave» 26, «20 videos de acero» 27, pandeo 29; testimonio 13; comunidades del 20 y 27; LinkedIn del 21 y 28). Las historias conservan su id y su día.", "desbloquea": "Que la app no muestre duplicados", "cuando": "al sincronizar", "para": "Daniela / Patricio"},
     {"tarea": "Confirmar la lista exacta de certificados del Máster y pasar los escaneos oficiales.", "desbloquea": "Carrusel del Jue 22", "cuando": "antes del 19-oct", "para": "Dayana"},
     {"tarea": "Montar la palabra DIPLOMADO (o dejar el CTA en DM).", "desbloquea": "Lanzamiento del tutor 5–9 oct", "cuando": "antes del 5-oct", "para": "Patricio"},
     {"tarea": "Crear la campaña COTIZA en OpenReply atada al carrusel del Jue 15 al publicarlo (y la de Facebook en GHL); probar con una cuenta ajena. El Mié 28 se le añade el reel.", "desbloquea": "Que el comentario COTIZA reciba el DM", "cuando": "15-oct al publicar, y 28-oct", "para": "Dayana (las campañas de OpenReply las hace ella)"},
@@ -247,7 +244,7 @@ def main():
             "BIM e IA NUNCA como palabra de un recurso: son el bot de ventas del Máster (el checklist de Navisworks falló 3 de 5).",
             "DYNAMO fuera de los CTA de octubre: 0 comentarios en su reel y falla en OpenReply.",
             "LOS DOS FORMATOS GANADORES DE SEPTIEMBRE se repiten: el dato de cálculo verificable (cuantía mínima: 44.589 vistas, 146 comentarios, 163 seguidores) y el tutorial paso a paso con palabra (plano 2D → BIM: 99 comentarios, 47 DM). Anunciar un producto («ahora tiene X») nunca va solo: siempre detrás de un problema.",
-            "CAMBIOS DEL 17-OCT (Dayana): los reels de valor todavía no se graban, así que NO SALE NINGÚN REEL ANTES DEL VIE 23. Del 19 al 22 salen carruseles (workshop, pandeo lateral-torsional, «Sabes montar una nave», certificado). El Vie 23 sale el testimonio del alumno de Acero, ya editado. La semana 4 trae los reels de valor (26, 27, 28, 29 y el ranking el 30) y OneFilter pasa al Sáb 31. Las historias de cada día solo anuncian lo que sale ese día, y el frame que comparte un reel se quita si el reel no salió.",
+            "CAMBIOS DEL 17-OCT (Dayana): los reels de valor todavía no se graban, así que NO SALE NINGÚN REEL DE VALOR ANTES DEL VIE 23 (los de los sábados ya están grabados y se quedan: OneFilter el 17 y el add-in el 24). EL WORKSHOP NO SE DICTA: su carrusel no se publica y ninguna historia lo menciona; el Lun 19 vuelve el carrusel del ranking «¿En qué fila estás tú?». Del 19 al 22 salen carruseles (ranking, pandeo lateral-torsional, «Sabes montar una nave», certificado). El Vie 23 sale el testimonio del alumno de Acero, ya editado. La semana 4 trae los reels de valor (26, 27, 28, 29 y el ranking de software el 30). COMUNIDADES: un solo post completo, igual para todos los canales y grupos de WhatsApp, Instagram, Facebook, YouTube y GHL; si hay regalo, el enlace va directo en el post (nada de «respóndeme X») y nunca en el primer comentario. En LinkedIn el enlace también va dentro del post. Las historias de cada día solo anuncian lo que sale ese día, y el frame que comparte un reel se quita si el reel no salió.",
             "CAMBIOS DEL 14-OCT (Dayana): los blogs salen los viernes (16, 23 y 30) en vez de los sábados. El del Sáb 10 ya pasó y queda donde estaba.",
             "CAMBIOS DEL 8-OCT: el Lun 19 sale el carrusel del workshop «Antes / ahora: Revit con IA» (formato del post de AECODE del 7-oct que le gustó a Dayana, CTA WORKSHOP); el carrusel del ranking pasa a reserva y las historias del 19 promocionan el workshop con cuenta regresiva.",
             "CAMBIOS DEL 6-OCT: Daniela viaja y no se graban videos nuevos hasta que vuelva. El Mié 7 sale el reel de valor 5 de septiembre («Una IA no sabe cuándo no sabe»). Testimonio de Acero al Mar 13 y reel de COTIZA al Mié 28; ranking al Vie 23; post de clases grabadas al Mié 14. Las historias de la semana 1 se corren un día y ninguna promociona un reel que no sale ese día.",
@@ -270,8 +267,8 @@ def main():
                         "En TikTok y YouTube Shorts, sin palabra clave: pregunta abierta."],
              "calendario": feed},
             {"n": 2, "nombre": "GRUPO 2 · Comunidades — WhatsApp, canal de IG, grupos de FB, comunidad de YouTube, comunidades GHL",
-             "descripcion": "Martes, jueves y viernes. Comparten la pieza de la semana con contexto y una pregunta. Sin hashtags.",
-             "reglas": ["Nunca un enlace suelto: contexto + pregunta.", "Canales de difusión: el recurso va con su enlace directo.", "Comunidades de WhatsApp/GHL: se puede pedir «respóndeme NIVEL / ACERO / COTIZA», pero ahí no hay bot: una persona del equipo contesta a mano con el enlace el mismo día.", "Grupos de Facebook y comunidad de YouTube: solo la pregunta, sin enlace."],
+             "descripcion": "Martes, jueves y viernes. Un solo post completo, el mismo en todos los canales y grupos: la pieza de la semana con contexto, el enlace directo si hay regalo y una pregunta. Sin hashtags.",
+             "reglas": ["17-oct (Dayana): UN SOLO POST COMPLETO, el mismo para canales y grupos de WhatsApp, canal de Instagram, grupos de Facebook, comunidad de YouTube y comunidades GHL.", "Si hay regalo (test, guía, cotizador), el enlace va directo en el post. Nada de «respóndeme X y te lo paso»: la gente no lo hace.", "Nunca el enlace en el primer comentario: va dentro del post.", "Contexto + enlace + una pregunta al final. Sin hashtags."],
              "calendario": filas_de("GRUPO 2")},
             {"n": 3, "nombre": "GRUPO 3 · Blog de Design Modeling Academy",
              "descripcion": "Un artículo por semana, siempre viernes (desde el 14-oct; antes sábado), con CTA a una campaña o a un recurso. El post de anuncio sale el mismo viernes.",
@@ -279,7 +276,7 @@ def main():
              "calendario": filas_de("GRUPO 3")},
             {"n": 4, "nombre": "GRUPO 4 · LinkedIn — Design Modeling Academy · Design Modeling DG · Gabriel Pantoja",
              "descripcion": "Lun/Mié/Vie + texto de Gabriel los martes. Solo PDF, video horizontal o texto.",
-             "reglas": ["NUNCA «comenta la palabra»: pregunta abierta y enlace en el primer comentario."],
+             "reglas": ["NUNCA «comenta la palabra»: pregunta abierta al final.", "17-oct (Dayana): el enlace va dentro del post, nunca en el primer comentario."],
              "calendario": filas_de("GRUPO 4")},
             {"n": 5, "nombre": "GRUPO 5 · Historias de Instagram (y Facebook stories)",
              "descripcion": "Lunes a viernes, 3–4 frames. Cada día abre la puerta a la pieza del feed; los jueves 15, 22 y 29 son el único slot de venta de la semana.",
@@ -290,7 +287,7 @@ def main():
         "destacadas": {"responsable": "Daniela", "nota": "Las cinco de siempre. Se limpian antes del lunes 5 y se alimentan cada viernes con las historias de la semana.", "lista": DESTACADAS},
         "piezas": [],
         "pauta": [],
-        "banco_reserva": [i for i in ["oct-ranking-perfil-bim-carrusel", "oct-tutor-dip-reel", "ago-derivas-deformaciones", "ago-tip-revit-ia", "ago-revit-ia-futuro"] if i in G],
+        "banco_reserva": [i for i in ["oct-tutor-dip-reel", "ago-derivas-deformaciones", "ago-tip-revit-ia", "ago-revit-ia-futuro"] if i in G],
         "correos": correos(),
         "auditoria_previa": {"mes": "2026-09", "artefacto": "https://claude.ai/artifact/BNSfUg4TDFQjibVyN4ATt8",
                              "archivos": ["matriz-viral/auditorias/2026-09-hallazgos.md", "matriz-viral/auditorias/2026-09-auditoria-mes.json"],
