@@ -14,11 +14,12 @@
   "BIM e IA NUNCA como palabra de un recurso: son el bot de ventas del Máster (el checklist de Navisworks falló 3 de 5).",
   "DYNAMO fuera de los CTA de octubre: 0 comentarios en su reel y falla en OpenReply.",
   "LOS DOS FORMATOS GANADORES DE SEPTIEMBRE se repiten: el dato de cálculo verificable (cuantía mínima: 44.589 vistas, 146 comentarios, 163 seguidores) y el tutorial paso a paso con palabra (plano 2D → BIM: 99 comentarios, 47 DM). Anunciar un producto («ahora tiene X») nunca va solo: siempre detrás de un problema.",
+  "CAMBIOS DEL 17-OCT (Dayana): los reels de valor todavía no se graban, así que NO SALE NINGÚN REEL ANTES DEL VIE 23. Del 19 al 22 salen carruseles (workshop, pandeo lateral-torsional, «Sabes montar una nave», certificado). El Vie 23 sale el testimonio del alumno de Acero, ya editado. La semana 4 trae los reels de valor (26, 27, 28, 29 y el ranking el 30) y OneFilter pasa al Sáb 31. Las historias de cada día solo anuncian lo que sale ese día, y el frame que comparte un reel se quita si el reel no salió.",
   "CAMBIOS DEL 14-OCT (Dayana): los blogs salen los viernes (16, 23 y 30) en vez de los sábados. El del Sáb 10 ya pasó y queda donde estaba.",
   "CAMBIOS DEL 8-OCT: el Lun 19 sale el carrusel del workshop «Antes / ahora: Revit con IA» (formato del post de AECODE del 7-oct que le gustó a Dayana, CTA WORKSHOP); el carrusel del ranking pasa a reserva y las historias del 19 promocionan el workshop con cuenta regresiva.",
   "CAMBIOS DEL 6-OCT: Daniela viaja y no se graban videos nuevos hasta que vuelva. El Mié 7 sale el reel de valor 5 de septiembre («Una IA no sabe cuándo no sabe»). Testimonio de Acero al Mar 13 y reel de COTIZA al Mié 28; ranking al Vie 23; post de clases grabadas al Mié 14. Las historias de la semana 1 se corren un día y ninguna promociona un reel que no sale ese día.",
   "CAMBIOS DEL 5-OCT (revisión semanal, auditoría orgánica de septiembre y reunión de cierre): historias de 4 frames como máximo; cada dato de cálculo cierra con palabra de recurso; los posts del recurso se cuidan también en Facebook (192 comentarios del post de MEMORIA); el reel del tutor queda aplazado hasta que se grabe y en su lugar sale «Una IA no sabe cuándo no sabe», que no se promociona en historias.",
-  "UNA venta por semana, el jueves, en historias: 8 tutor · 15 objeción de ACERO · 22 espejo del Máster · 29 ACERO por dentro.",
+  "UNA venta por semana, el jueves, en historias: 8 tutor · 15 objeción de ACERO · 22 espejo del Máster · 29 ACERO por dentro (con el reel «20 videos de acero» el mismo día).",
   "EL MÁSTER NUNCA LLEVA PRECIO. ACERO lleva $225 solo en pauta y en correo a la lista propia.",
   "Visuales = capturas reales de Revit/Robot y cámara de Gabriel. Imagen con IA solo con aprobación y costo a la vista.",
   "Reels de menos de 30 s (en esta cuenta rinden más del doble que los de 30–60 s)."
@@ -97,22 +98,22 @@
    "para": "Gabriel"
   },
   {
-   "tarea": "PAUSA DE GRABACIÓN (6-oct): Daniela viaja y no se graban videos nuevos hasta que vuelva. Quedan por grabar: testimonio o su reserva (Mar 13), reels del 20 y 21, ranking (Vie 23, con tablero físico), reel del 27 y reel de COTIZA (Mié 28). Si al volver no da el tiempo, se reemplazan por piezas que no necesiten cámara.",
-   "desbloquea": "Semanas 2 a 4 del feed",
-   "cuando": "cuando vuelva Daniela",
+   "tarea": "GRABAR LOS REELS DE VALOR (17-oct): no sale ningún reel antes del Vie 23. Orden y fecha límite: objeción de tiempo (sale Lun 26), «La IA ordena, tú decides» (Mar 27), reel de COTIZA (Mié 28), «20 videos de acero» (Jue 29) y el ranking con tablero físico (Vie 30). Si un reel no está grabado la víspera, ese día no sale reel y la historia quita su frame: nada de «en el reel de hoy» sin reel.",
+   "desbloquea": "Semana 4 del feed y sus historias",
+   "cuando": "antes del Lun 26 (los dos primeros) y antes del Jue 29 (el resto)",
    "para": "Gabriel y Daniela"
   },
   {
-   "tarea": "Día de grabación 2: reels del 27 y 28 (testimonio o pieza de reserva) + capturas de Robot para el carrusel del 29.",
-   "desbloquea": "Semana 4 del feed",
-   "cuando": "Jue 22-oct",
-   "para": "Gabriel"
+   "tarea": "Testimonio de Acero (ya editado): guardar el permiso por escrito del alumno y escribir el caption con sus palabras reales. Las historias del Vie 23 toman su frase del mismo video.",
+   "desbloquea": "Reel e historias del Vie 23",
+   "cuando": "antes del Vie 23",
+   "para": "Daniela / Dayana"
   },
   {
-   "tarea": "Conseguir un alumno de ACERO con permiso por escrito para el testimonio.",
-   "desbloquea": "Reel del Mié 28",
-   "cuando": "antes del 21-oct",
-   "para": "Dayana / soporte"
+   "tarea": "En la app de contenido, borrar las piezas movidas que queden con la fecha vieja (el feed movido el 17-oct: OneFilter 17, objeción de tiempo 20, IA ordena 21, ranking 23, «Sabes montar una nave» 26, «20 videos de acero» 27, pandeo 29; testimonio 13; comunidades del 20 y 27; LinkedIn del 21 y 28). Las historias conservan su id y su día.",
+   "desbloquea": "Que la app no muestre duplicados",
+   "cuando": "al sincronizar",
+   "para": "Daniela / Patricio"
   },
   {
    "tarea": "Confirmar la lista exacta de certificados del Máster y pasar los escaneos oficiales.",
@@ -523,7 +524,7 @@
         "El tiempo aparece en 3 de 5 compradores como la duda antes de pagar, y el retargeting ataca a quien ya mostró interés."
        ]
       ],
-      "condicion": ""
+      "condicion": "17-oct: el reel de la objeción de tiempo se publica el Lun 26; este anuncio de retargeting no se sube hasta tener ese reel."
      }
     ]
    },
@@ -755,20 +756,6 @@
      "nota": "Acusación. Capturas reales de Revit/Robot."
     },
     {
-     "fecha": "Mar 13",
-     "fecha_iso": "2026-10-13",
-     "semana": "Semana 2 (12-18 oct)",
-     "id": "oct-testimonio-acero-reel",
-     "titulo": "Testimonio de un alumno de Acero",
-     "tipo": "testimonio",
-     "formato_publicacion": "REEL (45-60 s)",
-     "intencion": "testimonio",
-     "producto": "Acero",
-     "cta": "Comenta ACERO",
-     "estado": "POR CONSEGUIR ALUMNO",
-     "nota": "CAMBIO 6-oct: pasa del Mié 28 al Mar 13 (intercambio con el reel de COTIZA). Alumno real con permiso por escrito; si no se consigue o no se puede grabar (Daniela de viaje), sale la pieza de reserva descrita en la pieza."
-    },
-    {
      "fecha": "Mié 14",
      "fecha_iso": "2026-10-14",
      "semana": "Semana 2 (12-18 oct)",
@@ -811,20 +798,6 @@
      "nota": "Ángulo 4 de compradores: los proyectos que rechazas."
     },
     {
-     "fecha": "Sáb 17",
-     "fecha_iso": "2026-10-17",
-     "semana": "Semana 2 (12-18 oct)",
-     "id": "oct-clase-onefilter-reel",
-     "titulo": "Revit no te deja hacer esto. Este add-in gratis, sí",
-     "tipo": "valor",
-     "formato_publicacion": "REEL (30 s) · clip de clase real, estilo tutorial con pasos",
-     "intencion": "solución",
-     "producto": "Máster",
-     "cta": "Comenta NIVEL",
-     "estado": "EDITADO · listo para publicar",
-     "nota": "SÁBADOS DE CLASE REAL: tip de OneFilter (DiRoots) sacado de una clase del Máster, ya editado (estilo tutorial). «Gratis» solo para OneFilter; no decir que exportar a Excel es gratis."
-    },
-    {
      "fecha": "Lun 19",
      "fecha_iso": "2026-10-19",
      "semana": "Semana 3 (19-25 oct)",
@@ -842,29 +815,29 @@
      "fecha": "Mar 20",
      "fecha_iso": "2026-10-20",
      "semana": "Semana 3 (19-25 oct)",
-     "id": "oct-obj-tiempo-reel",
-     "titulo": "¿Una hora al día alcanza?",
-     "tipo": "objeción",
-     "formato_publicacion": "REEL (30 s)",
-     "intencion": "objeción",
-     "producto": "Máster",
-     "cta": "Comenta NIVEL",
-     "estado": "POR GRABAR",
-     "nota": "Objeción de tiempo. Graba Gabriel."
+     "id": "oct-lm-acero-pandeo-lt-carrusel",
+     "titulo": "La verificación que más te saltas: pandeo lateral-torsional",
+     "tipo": "lead magnet",
+     "formato_publicacion": "CARRUSEL (7 slides)",
+     "intencion": "problema",
+     "producto": "Acero",
+     "cta": "Comenta ACERO",
+     "estado": "COMPLETA",
+     "nota": "CAMBIO 17-oct: pasa del Jue 29 al Mar 20 (sin reels hasta el Vie 23). EXTRA lead magnet ACERO (el PROMO de recurso es lo que más comenta la cuenta: DM157, 159 comentarios). Capturas reales de Revit/Robot."
     },
     {
      "fecha": "Mié 21",
      "fecha_iso": "2026-10-21",
      "semana": "Semana 3 (19-25 oct)",
-     "id": "oct-acusa-ia-calculo-reel",
-     "titulo": "La IA ordena, tú decides",
-     "tipo": "valor",
-     "formato_publicacion": "REEL (30-35 s)",
-     "intencion": "solución",
-     "producto": "Máster",
-     "cta": "Comenta NIVEL",
-     "estado": "POR GRABAR",
-     "nota": "La IA ordena, tú decides. Graba Gabriel."
+     "id": "oct-ang8-obra-software-carrusel",
+     "titulo": "Sabes montar una nave. ¿Por qué no la calculas tú?",
+     "tipo": "problema",
+     "formato_publicacion": "CARRUSEL (7 slides)",
+     "intencion": "problema",
+     "producto": "Acero",
+     "cta": "Comenta ACERO",
+     "estado": "COMPLETA",
+     "nota": "CAMBIO 17-oct: pasa del Lun 26 al Mié 21. Ángulo 8: de la obra al software. Filtra a quien quiere soldar."
     },
     {
      "fecha": "Jue 22",
@@ -878,21 +851,21 @@
      "producto": "Máster",
      "cta": "Comenta NIVEL",
      "estado": "COMPLETA · falta confirmar lista de certificados",
-     "nota": "Objeción de certificado. Dayana confirma la lista de certificados antes de diseñar."
+     "nota": "Objeción de certificado. Dayana confirma la lista de certificados antes de diseñar. Mismo día del workshop (19:00)."
     },
     {
      "fecha": "Vie 23",
      "fecha_iso": "2026-10-23",
      "semana": "Semana 3 (19-25 oct)",
-     "id": "oct-ranking-software-estructural-reel",
-     "titulo": "Ranking de software estructural 2026: ¿AutoCAD en la última fila?",
-     "tipo": "valor",
-     "formato_publicacion": "REEL (25-30 s)",
-     "intencion": "problema",
-     "producto": "Máster",
-     "cta": "Comenta NIVEL",
-     "estado": "POR GRABAR",
-     "nota": "CAMBIO 6-oct: pasa del Mié 14 al Vie 23. Ranking con tablero físico; se graba cuando vuelva Daniela."
+     "id": "oct-testimonio-acero-reel",
+     "titulo": "Testimonio de un alumno de Acero",
+     "tipo": "testimonio",
+     "formato_publicacion": "REEL (45-60 s)",
+     "intencion": "testimonio",
+     "producto": "Acero",
+     "cta": "Comenta ACERO",
+     "estado": "EDITADO · listo para publicar",
+     "nota": "CAMBIO 17-oct: el testimonio del alumno de Acero ya está EDITADO y sin publicar. Sale hoy, primer reel después de la pausa. Antes de publicar: permiso por escrito guardado y comentario de prueba de ACERO."
     },
     {
      "fecha": "Vie 23",
@@ -906,7 +879,7 @@
      "producto": "Máster",
      "cta": "Comenta NIVEL",
      "estado": "COMPLETA",
-     "nota": "Ángulo 3: BIM ya se exige."
+     "nota": "Ángulo 3: BIM ya se exige. Sale con el blog del viernes."
     },
     {
      "fecha": "Sáb 24",
@@ -926,29 +899,29 @@
      "fecha": "Lun 26",
      "fecha_iso": "2026-10-26",
      "semana": "Semana 4 (26 oct-1 nov)",
-     "id": "oct-ang8-obra-software-carrusel",
-     "titulo": "Sabes montar una nave. ¿Por qué no la calculas tú?",
-     "tipo": "problema",
-     "formato_publicacion": "CARRUSEL (7 slides)",
-     "intencion": "problema",
-     "producto": "Acero",
-     "cta": "Comenta ACERO",
-     "estado": "COMPLETA",
-     "nota": "Ángulo 8: de la obra al software. Filtra a quien quiere soldar."
+     "id": "oct-obj-tiempo-reel",
+     "titulo": "¿Una hora al día alcanza?",
+     "tipo": "objeción",
+     "formato_publicacion": "REEL (30 s)",
+     "intencion": "objeción",
+     "producto": "Máster",
+     "cta": "Comenta NIVEL",
+     "estado": "POR GRABAR",
+     "nota": "CAMBIO 17-oct: pasa del Mar 20 al Lun 26. Reel de valor: graba Gabriel antes del Lun 26. Si no está grabado, ese día no sale reel y la historia quita su frame."
     },
     {
      "fecha": "Mar 27",
      "fecha_iso": "2026-10-27",
      "semana": "Semana 4 (26 oct-1 nov)",
-     "id": "oct-obj-cursos-youtube-reel",
-     "titulo": "20 videos de acero y todavía no te atreves",
-     "tipo": "objeción",
-     "formato_publicacion": "REEL (30 s)",
-     "intencion": "objeción",
-     "producto": "Acero",
-     "cta": "Comenta ACERO",
+     "id": "oct-acusa-ia-calculo-reel",
+     "titulo": "La IA ordena, tú decides",
+     "tipo": "valor",
+     "formato_publicacion": "REEL (30-35 s)",
+     "intencion": "solución",
+     "producto": "Máster",
+     "cta": "Comenta NIVEL",
      "estado": "POR GRABAR",
-     "nota": "Objeción: muchos cursos, ninguno aplicable. Graba Gabriel."
+     "nota": "CAMBIO 17-oct: pasa del Mié 21 al Mar 27. La IA ordena, tú decides. Reel de valor: graba Gabriel (pantallas de Revit, chat de IA y Excel)."
     },
     {
      "fecha": "Mié 28",
@@ -962,21 +935,35 @@
      "producto": "Cotizador",
      "cta": "Comenta COTIZA",
      "estado": "POR GRABAR",
-     "nota": "CAMBIO 6-oct: pasa del Mar 13 al Mié 28 (intercambio con el testimonio). COTIZA ya se lanzó el Mar 13 (comunidades y LinkedIn) y el Jue 15 (carrusel): este reel se suma a la campaña que exista. Se graba cuando vuelva Daniela."
+     "nota": "CAMBIO 6-oct: pasa del Mar 13 al Mié 28 (intercambio con el testimonio). COTIZA ya se lanzó el Mar 13 (comunidades y LinkedIn) y el Jue 15 (carrusel): este reel se suma a la campaña que exista. Reel de valor: se graba antes del 28."
     },
     {
      "fecha": "Jue 29",
      "fecha_iso": "2026-10-29",
      "semana": "Semana 4 (26 oct-1 nov)",
-     "id": "oct-lm-acero-pandeo-lt-carrusel",
-     "titulo": "La verificación que más te saltas: pandeo lateral-torsional",
-     "tipo": "lead magnet",
-     "formato_publicacion": "CARRUSEL (7 slides)",
-     "intencion": "problema",
+     "id": "oct-obj-cursos-youtube-reel",
+     "titulo": "20 videos de acero y todavía no te atreves",
+     "tipo": "objeción",
+     "formato_publicacion": "REEL (30 s)",
+     "intencion": "objeción",
      "producto": "Acero",
      "cta": "Comenta ACERO",
-     "estado": "COMPLETA",
-     "nota": "EXTRA lead magnet ACERO (el PROMO de recurso es lo que más comenta la cuenta: DM157, 159 comentarios)."
+     "estado": "POR GRABAR",
+     "nota": "CAMBIO 17-oct: pasa del Mar 27 al Jue 29, el día de la venta de Acero en historias. Objeción: muchos cursos, ninguno aplicable. Reel de valor: graba Gabriel."
+    },
+    {
+     "fecha": "Vie 30",
+     "fecha_iso": "2026-10-30",
+     "semana": "Semana 4 (26 oct-1 nov)",
+     "id": "oct-ranking-software-estructural-reel",
+     "titulo": "Ranking de software estructural 2026: ¿AutoCAD en la última fila?",
+     "tipo": "valor",
+     "formato_publicacion": "REEL (25-30 s)",
+     "intencion": "problema",
+     "producto": "Máster",
+     "cta": "Comenta NIVEL",
+     "estado": "POR GRABAR",
+     "nota": "CAMBIO 17-oct: pasa del Vie 23 al Vie 30 (antes, 6-oct: del Mié 14 al Vie 23). Ranking con tablero físico; es el último que se graba. No se anuncia en historias."
     },
     {
      "fecha": "Vie 30",
@@ -991,6 +978,20 @@
      "cta": "Comenta NIVEL",
      "estado": "COMPLETA",
      "nota": "Objeción de dinero sin precio: lo caro es el proyecto rechazado."
+    },
+    {
+     "fecha": "Sáb 31",
+     "fecha_iso": "2026-10-31",
+     "semana": "Semana 4 (26 oct-1 nov)",
+     "id": "oct-clase-onefilter-reel",
+     "titulo": "Revit no te deja hacer esto. Este add-in gratis, sí",
+     "tipo": "valor",
+     "formato_publicacion": "REEL (30 s) · clip de clase real, estilo tutorial con pasos",
+     "intencion": "solución",
+     "producto": "Máster",
+     "cta": "Comenta NIVEL",
+     "estado": "EDITADO · listo para publicar",
+     "nota": "CAMBIO 17-oct: pasa del Sáb 17 al Sáb 31 (sin reels hasta el Vie 23). SÁBADOS DE CLASE REAL: tip de OneFilter (DiRoots) sacado de una clase del Máster, ya editado (estilo tutorial). «Gratis» solo para OneFilter; no decir que exportar a Excel es gratis."
     }
    ]
   },
@@ -1104,20 +1105,6 @@
      }
     },
     {
-     "fecha": "Mar 20",
-     "fecha_iso": "2026-10-20",
-     "semana": "Semana 3 (19-25 oct)",
-     "id": "oct-comu-1020",
-     "titulo": "¿A qué hora estudian?",
-     "tipo": "objeción",
-     "formato_publicacion": "MENSAJES · canal de WhatsApp, canal de Instagram, comunidades de WhatsApp, grupos de Facebook, comunidad de YouTube, comunidades GHL",
-     "idea": {
-      "titulo": "¿A qué hora estudian?",
-      "formato": "MENSAJES · canal de WhatsApp, canal de Instagram, comunidades de WhatsApp, grupos de Facebook, comunidad de YouTube, comunidades GHL",
-      "desarrollo": "«No tengo tiempo» es la razón número uno para no empezar a estudiar BIM. Y es real: casi todos los que estudian con nosotros trabajan, muchos en obra."
-     }
-    },
-    {
      "fecha": "Jue 22",
      "fecha_iso": "2026-10-22",
      "semana": "Semana 3 (19-25 oct)",
@@ -1146,22 +1133,22 @@
      }
     },
     {
-     "fecha": "Mar 27",
-     "fecha_iso": "2026-10-27",
+     "fecha": "Lun 26",
+     "fecha_iso": "2026-10-26",
      "semana": "Semana 4 (26 oct-1 nov)",
-     "id": "oct-comu-1027",
-     "titulo": "Las 5 verificaciones en acero",
-     "tipo": "lead magnet",
+     "id": "oct-comu-1020",
+     "titulo": "¿A qué hora estudian?",
+     "tipo": "objeción",
      "formato_publicacion": "MENSAJES · canal de WhatsApp, canal de Instagram, comunidades de WhatsApp, grupos de Facebook, comunidad de YouTube, comunidades GHL",
      "idea": {
-      "titulo": "Las 5 verificaciones en acero",
+      "titulo": "¿A qué hora estudian?",
       "formato": "MENSAJES · canal de WhatsApp, canal de Instagram, comunidades de WhatsApp, grupos de Facebook, comunidad de YouTube, comunidades GHL",
-      "desarrollo": "Si ya viste 20 videos de acero y todavía no te atreves con una nave, no es tu culpa."
+      "desarrollo": "«No tengo tiempo» es la razón número uno para no empezar a estudiar BIM. Y es real: casi todos los que estudian con nosotros trabajan, muchos en obra."
      }
     },
     {
-     "fecha": "Jue 29",
-     "fecha_iso": "2026-10-29",
+     "fecha": "Mar 27",
+     "fecha_iso": "2026-10-27",
      "semana": "Semana 4 (26 oct-1 nov)",
      "id": "oct-comu-1029",
      "titulo": "Del lado que decide",
@@ -1171,6 +1158,20 @@
       "titulo": "Del lado que decide",
       "formato": "MENSAJES · canal de WhatsApp, canal de Instagram, comunidades de WhatsApp, grupos de Facebook, comunidad de YouTube, comunidades GHL",
       "desarrollo": "Sabes montar una nave. ¿Por qué todavía no la calculas tú?"
+     }
+    },
+    {
+     "fecha": "Jue 29",
+     "fecha_iso": "2026-10-29",
+     "semana": "Semana 4 (26 oct-1 nov)",
+     "id": "oct-comu-1027",
+     "titulo": "Las 5 verificaciones en acero",
+     "tipo": "lead magnet",
+     "formato_publicacion": "MENSAJES · canal de WhatsApp, canal de Instagram, comunidades de WhatsApp, grupos de Facebook, comunidad de YouTube, comunidades GHL",
+     "idea": {
+      "titulo": "Las 5 verificaciones en acero",
+      "formato": "MENSAJES · canal de WhatsApp, canal de Instagram, comunidades de WhatsApp, grupos de Facebook, comunidad de YouTube, comunidades GHL",
+      "desarrollo": "Si ya viste 20 videos de acero y todavía no te atreves con una nave, no es tu culpa."
      }
     },
     {
@@ -1399,21 +1400,6 @@
      "cuenta": "Gabriel Pantoja (primera persona)"
     },
     {
-     "fecha": "Mié 21",
-     "fecha_iso": "2026-10-21",
-     "semana": "Semana 3 (19-25 oct)",
-     "id": "oct-li-1021-dg",
-     "titulo": "Exportas, la IA ordena, tú compruebas",
-     "tipo": "caso / metodología",
-     "formato_publicacion": "LINKEDIN · video HORIZONTAL 16:9 (30-45 s) + texto",
-     "idea": {
-      "titulo": "Exportas, la IA ordena, tú compruebas",
-      "formato": "LINKEDIN · video HORIZONTAL 16:9 (30-45 s) + texto",
-      "desarrollo": "Exportas la tabla. La IA la ordena. Tú compruebas tres filas a mano antes de fiarte."
-     },
-     "cuenta": "Design Modeling DG"
-    },
-    {
      "fecha": "Vie 23",
      "fecha_iso": "2026-10-23",
      "semana": "Semana 3 (19-25 oct)",
@@ -1447,6 +1433,21 @@
      "fecha": "Mar 27",
      "fecha_iso": "2026-10-27",
      "semana": "Semana 4 (26 oct-1 nov)",
+     "id": "oct-li-1021-dg",
+     "titulo": "Exportas, la IA ordena, tú compruebas",
+     "tipo": "caso / metodología",
+     "formato_publicacion": "LINKEDIN · video HORIZONTAL 16:9 (30-45 s) + texto",
+     "idea": {
+      "titulo": "Exportas, la IA ordena, tú compruebas",
+      "formato": "LINKEDIN · video HORIZONTAL 16:9 (30-45 s) + texto",
+      "desarrollo": "Exportas la tabla. La IA la ordena. Tú compruebas tres filas a mano antes de fiarte."
+     },
+     "cuenta": "Design Modeling DG"
+    },
+    {
+     "fecha": "Mar 27",
+     "fecha_iso": "2026-10-27",
+     "semana": "Semana 4 (26 oct-1 nov)",
      "id": "oct-li-1027-gabriel",
      "titulo": "Botones y orden",
      "tipo": "objeción",
@@ -1459,8 +1460,8 @@
      "cuenta": "Gabriel Pantoja (primera persona)"
     },
     {
-     "fecha": "Mié 28",
-     "fecha_iso": "2026-10-28",
+     "fecha": "Vie 30",
+     "fecha_iso": "2026-10-30",
      "semana": "Semana 4 (26 oct-1 nov)",
      "id": "oct-li-1028-dg",
      "titulo": "Una nave, en el orden en que se revisa",
@@ -1589,8 +1590,7 @@
       "titulo": "«¿Me sirve si vengo de obra?»",
       "formato": "HISTORIAS (4 frames)",
       "desarrollo": "«¿Me sirve si vengo de obra?»"
-     },
-     "destacada": "⭐ ALUMNOS"
+     }
     },
     {
      "fecha": "Mié 14",
@@ -1657,29 +1657,30 @@
      "fecha_iso": "2026-10-20",
      "semana": "Semana 3 (19-25 oct)",
      "id": "oct-hist-1020",
-     "titulo": "Tres clics y una tabla",
-     "tipo": "detrás de cámara",
+     "titulo": "¿Revisaste el pandeo lateral-torsional?",
+     "tipo": "lead magnet",
      "formato_publicacion": "HISTORIAS (3 frames)",
      "idea": {
-      "titulo": "Tres clics y una tabla",
+      "titulo": "¿Revisaste el pandeo lateral-torsional?",
       "formato": "HISTORIAS (3 frames)",
-      "desarrollo": "Hoy toca grabar pantalla. Spoiler: hay una tabla de varillas."
+      "desarrollo": "Tu viga pasa por flexión. ¿Revisaste el pandeo lateral-torsional?"
      },
-     "destacada": "👥 COMUNIDAD"
+     "destacada": "🔩 ACERO"
     },
     {
      "fecha": "Mié 21",
      "fecha_iso": "2026-10-21",
      "semana": "Semana 3 (19-25 oct)",
      "id": "oct-hist-1021",
-     "titulo": "Sin Google: el peso de la varilla",
-     "tipo": "valor",
+     "titulo": "¿Diseñarlo o montarlo?",
+     "tipo": "problema",
      "formato_publicacion": "HISTORIAS (4 frames)",
      "idea": {
-      "titulo": "Sin Google: el peso de la varilla",
+      "titulo": "¿Diseñarlo o montarlo?",
       "formato": "HISTORIAS (4 frames)",
-      "desarrollo": "Sin Google: ¿cómo sacas el peso por metro de una varilla?"
-     }
+      "desarrollo": "Tú ya sabes lo que el software no enseña."
+     },
+     "destacada": "🔩 ACERO"
     },
     {
      "fecha": "Jue 22",
@@ -1701,45 +1702,45 @@
      "fecha_iso": "2026-10-23",
      "semana": "Semana 3 (19-25 oct)",
      "id": "oct-hist-1023",
-     "titulo": "¿Dónde pondrías AutoCAD? · Fuera antes de presentar",
-     "tipo": "problema",
+     "titulo": "Lo cuenta un alumno de Acero",
+     "tipo": "testimonio",
      "formato_publicacion": "HISTORIAS (4 frames)",
      "idea": {
-      "titulo": "¿Dónde pondrías AutoCAD? · Fuera antes de presentar",
+      "titulo": "Lo cuenta un alumno de Acero",
       "formato": "HISTORIAS (4 frames)",
-      "desarrollo": "Lo dejaron fuera antes de abrir su propuesta."
+      "desarrollo": "(La frase más fuerte del alumno, tal cual la dice en el testimonio editado.)"
      },
-     "destacada": "🎯 BIM + IA"
+     "destacada": "⭐ ALUMNOS"
     },
     {
      "fecha": "Lun 26",
      "fecha_iso": "2026-10-26",
      "semana": "Semana 4 (26 oct-1 nov)",
      "id": "oct-hist-1026",
-     "titulo": "¿Diseñarlo o montarlo?",
-     "tipo": "problema",
-     "formato_publicacion": "HISTORIAS (4 frames)",
+     "titulo": "¿Cuándo estudiarías?",
+     "tipo": "objeción",
+     "formato_publicacion": "HISTORIAS (3 frames)",
      "idea": {
-      "titulo": "¿Diseñarlo o montarlo?",
-      "formato": "HISTORIAS (4 frames)",
-      "desarrollo": "Tú ya sabes lo que el software no enseña."
+      "titulo": "¿Cuándo estudiarías?",
+      "formato": "HISTORIAS (3 frames)",
+      "desarrollo": "Si esperas a tener tiempo para estudiar BIM, no vas a empezar nunca."
      },
-     "destacada": "🔩 ACERO"
+     "destacada": "🎯 BIM + IA"
     },
     {
      "fecha": "Mar 27",
      "fecha_iso": "2026-10-27",
      "semana": "Semana 4 (26 oct-1 nov)",
      "id": "oct-hist-1027",
-     "titulo": "Preparando el video de mañana",
-     "tipo": "detrás de cámara",
-     "formato_publicacion": "HISTORIAS (3 frames)",
+     "titulo": "Sin Google: el peso de la varilla",
+     "tipo": "valor",
+     "formato_publicacion": "HISTORIAS (4 frames)",
      "idea": {
-      "titulo": "Preparando el video de mañana",
-      "formato": "HISTORIAS (3 frames)",
-      "desarrollo": "Mañana sale un video distinto. Hoy lo preparamos."
+      "titulo": "Sin Google: el peso de la varilla",
+      "formato": "HISTORIAS (4 frames)",
+      "desarrollo": "Sin Google: ¿cómo sacas el peso por metro de una varilla?"
      },
-     "destacada": "👥 COMUNIDAD"
+     "destacada": "🎯 BIM + IA"
     },
     {
      "fecha": "Mié 28",
@@ -1842,12 +1843,12 @@
   "mapa_cta": [
    {
     "palabra": "NIVEL",
-    "fecha": "Jue 8 (historia del creador), Lun 12, Mar 20, Mié 21, Jue 22, Vie 23 (ranking y post), Vie 30",
+    "fecha": "Jue 8 (historia del creador), Lun 12, Jue 22, Vie 23 (post), Lun 26, Mar 27, Vie 30 (ranking y post), Sáb 31",
     "producto": "Máster"
    },
    {
     "palabra": "ACERO",
-    "fecha": "Vie 9, Mar 13 (testimonio), Vie 16, Lun 26, Mar 27, Jue 29",
+    "fecha": "Vie 9, Vie 16, Mar 20, Mié 21, Vie 23 (testimonio), Jue 29",
     "producto": "Acero"
    },
    {
@@ -1883,7 +1884,8 @@
      "oct-hist-1009",
      "oct-hist-1015",
      "oct-hist-1016",
-     "oct-hist-1026",
+     "oct-hist-1020",
+     "oct-hist-1021",
      "oct-hist-1029"
     ],
     "quitar": "Frames con fechas o cupos ya vencidos, y cualquier frame que muestre precio."
@@ -1898,7 +1900,8 @@
      "oct-hist-1012",
      "oct-hist-1019",
      "oct-hist-1022",
-     "oct-hist-1023",
+     "oct-hist-1026",
+     "oct-hist-1027",
      "oct-hist-1030"
     ],
     "quitar": "Frames que piden comentar CHATGPT (nadie la contesta) y los que prometen funciones de IA en Revit que no existen."
@@ -1915,9 +1918,7 @@
     "destacada": "👥 COMUNIDAD",
     "que_va": "Detrás de cámara y las preguntas de la comunidad.",
     "agregar": [
-     "oct-hist-1006",
-     "oct-hist-1020",
-     "oct-hist-1027"
+     "oct-hist-1006"
     ],
     "quitar": "Recaps de más de 3 meses."
    },
@@ -1925,7 +1926,7 @@
     "destacada": "⭐ ALUMNOS",
     "que_va": "Testimonios reales con permiso.",
     "agregar": [
-     "oct-hist-1028 (solo si sale el testimonio real; si sale la reserva, va a ACERO)"
+     "oct-hist-1023 (testimonio del alumno de Acero, Vie 23)"
     ],
     "quitar": "Nada, salvo que un alumno retire su permiso."
    }
@@ -2023,7 +2024,7 @@
    "segmento": "Dos plantillas. RAMA A (Acero): leads de ACERO, ZAPATA y COTIZA sin compra que respondieron «diseñar, modelar o calcular en software»; EXCLUIR a quien respondió «fabricar, soldar o montar» y a los alumnos de Acero. RAMA B (Diplomado): leads del Módulo 1 gratis del Diplomado y leads del Máster que dijeron NO a la reserva; EXCLUIR alumnos del Diplomado. Nadie recibe las dos ramas.",
    "objetivo": "Lo caro no es el curso",
    "cuerpo": "Hola, {{contact.first_name}}:\n\nCuando alguien nos dice que no se forma por dinero, casi siempre usa la misma frase: «cuando me paguen».\n\nEs una razón real. El flujo de caja de un ingeniero independiente es irregular, y nadie debería endeudarse por un curso.\n\nPero hay otro costo que no llega en factura. La nave que dijiste que no porque no podías calcularla. El proyecto que le pasaste a otro, que la próxima vez se lo piden directamente a él.\n\nEse costo no se ve en el mes. Se ve al final del año, sumando lo que no entró.\n\n[RAMA A · Acero]\n\nSi quieres calcular tú lo que hoy le pasas a otro, la Especialización en Diseño Estructural BIM en Acero es el camino corto: 4 cursos en Revit, Robot y Advance Steel, 100 % asincrónica, con acceso que no caduca y un tutor de IA entrenado con las clases.\n\n[RAMA B · Diplomado]\n\nSi lo que buscas es especializarte en estructuras con BIM de principio a fin, el Diplomado BIM en Estructuras cubre acero y hormigón sismorresistente, cimentaciones, documentación BIM y presupuestos. Y tiene un tutor de IA que te dice la lección y el minuto donde se explicó cada tema.\n\n[CIERRE COMÚN]\n\nY si hoy no llegas a fin de mes, no te inscribas. Empieza por lo gratis y vuelve cuando puedas. Te seguimos mandando recursos.\n\nSi tienes dudas sobre cuál te conviene, responde este correo. Te contesta una persona del equipo.\n\nUn abrazo,\n\nEquipo Design Modeling Academy\n\n[SOLO RAMA B] PD: si prefieres verlo primero, el Módulo 1 del Diplomado es gratuito: https://funnel.dgdesignmodeling.com/acceso-gratis-modulo-diplomado-bim-form",
-   "condicion": "SIN PRECIO (el precio de Acero solo va en el correo del Jue 15). La rama A menciona el tutor solo si el botón está en los 4 cursos de Acero; si no, se borra «y un tutor de IA entrenado con las clases». Si el testimonio del Mar 13 salió con alumno real y permiso, se puede añadir antes del cierre común una línea con enlace al reel; si salió el reserva, no. Sin cupos ni fechas de inicio."
+   "condicion": "SIN PRECIO (el precio de Acero solo va en el correo del Jue 15). La rama A menciona el tutor solo si el botón está en los 4 cursos de Acero; si no, se borra «y un tutor de IA entrenado con las clases». El testimonio del alumno de Acero sale el Vie 23: se puede añadir antes del cierre común una línea con enlace al reel, si ya está publicado. Sin cupos ni fechas de inicio."
   }
  ],
  "auditoria_previa": {
