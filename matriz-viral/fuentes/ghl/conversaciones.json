@@ -1,81 +1,66 @@
 {
- "generado": "2026-10-16",
+ "generado": "2026-10-19",
  "nota": "Agregados de conversaciones para perfilar leads. NO contiene nombres, telefonos ni correos: los fragmentos pasan por un limpiador antes de escribirse.",
  "conversaciones_traidas": 300,
  "con_mensajes_revisadas": 300,
- "menciona_master": 44,
+ "menciona_master": 29,
  "mensajes_por_conversacion": {
-  "mediana": 23,
-  "media": 34.5,
-  "solo_un_mensaje": 3
+  "mediana": 16,
+  "media": 32.6,
+  "solo_un_mensaje": 0
  },
  "quien_habla_ultimo": {
-  "nosotros": 290,
-  "la persona (quedó sin responder)": 10
+  "nosotros": 291,
+  "la persona (quedó sin responder)": 9
  },
- "quedaron_sin_responder": 10,
+ "quedaron_sin_responder": 9,
  "canales": {
   "TYPE_PHONE": 300
  },
  "temas_todas": {
-  "software": 152,
-  "perfil_propio": 145,
-  "precio": 97,
-  "inicio": 93,
-  "duracion": 82,
-  "temario": 56,
-  "empleo": 56,
-  "certificado": 47,
-  "modalidad": 32,
-  "requisitos": 17
+  "software": 147,
+  "perfil_propio": 126,
+  "precio": 94,
+  "duracion": 81,
+  "inicio": 78,
+  "certificado": 46,
+  "temario": 46,
+  "empleo": 42,
+  "modalidad": 24,
+  "requisitos": 16
  },
  "temas_solo_master": {
-  "perfil_propio": 35,
-  "precio": 32,
-  "certificado": 27,
-  "software": 26,
-  "duracion": 23,
-  "empleo": 23,
-  "temario": 20,
-  "modalidad": 16,
-  "inicio": 12,
-  "requisitos": 3
+  "perfil_propio": 23,
+  "precio": 22,
+  "duracion": 20,
+  "certificado": 20,
+  "software": 19,
+  "temario": 11,
+  "modalidad": 10,
+  "empleo": 9,
+  "inicio": 7,
+  "requisitos": 5
  },
  "ejemplos_anonimos": [
+  {
+   "mensajes": 100,
+   "quedo_sin_responder": false,
+   "primer_mensaje": "Me pareció excelente"
+  },
+  {
+   "mensajes": 51,
+   "quedo_sin_responder": true,
+   "primer_mensaje": "👤 [nombre] ([telefono]) Grabación de la reunión en Fathom: [enlace] 📱 [Received on Design Modeling Academy ([telefono])]"
+  },
   {
    "mensajes": 100,
    "quedo_sin_responder": false,
    "primer_mensaje": "Perdón no he podido contestar los mensajes 📱 [Received on Design Modeling Academy ([telefono])]"
   },
   {
-   "mensajes": 24,
+   "mensajes": 16,
    "quedo_sin_responder": false,
-   "primer_mensaje": "¡Hola! Vi el anuncio del Máster BIM+IA quiero más información sobre ello sobre cursos, horarios y costos • adContextPreviewDismissed: false • automatedGreetingMessageShown: false • body: 🤖 El mercado ya no busca modelado"
-  },
-  {
-   "mensajes": 100,
-   "quedo_sin_responder": true,
-   "primer_mensaje": "Si muchas gracias, mas tarde reviso el brochure Received on 📱[Design Modeling DG]"
-  },
-  {
-   "mensajes": 97,
-   "quedo_sin_responder": true,
-   "primer_mensaje": "👤 [nombre] ([telefono]) Hola, buen día 👋 Veo que mencionas a un cliente con el correo [correo] — ¿me puedes contar un poco más? ¿Qué te escribió o qué necesita específicamente? Así puedo orientarte mejor con ese caso."
-  },
-  {
-   "mensajes": 45,
-   "quedo_sin_responder": false,
-   "primer_mensaje": "👤 [nombre] ([telefono]) Grabación de la reunión en Fathom: [enlace] 📱 [Received on Design Modeling Academy ([telefono])]"
-  },
-  {
-   "mensajes": 28,
-   "quedo_sin_responder": false,
-   "primer_mensaje": "Me podría dar mas información • adContextPreviewDismissed: false • automatedGreetingMessageShown: false • body: Esta es una de las preguntas que más nos dejan quienes quieren dar el salto al BIM 👇 Y la verdad, es normal "
-  },
-  {
-   "mensajes": 28,
-   "quedo_sin_responder": false,
-   "primer_mensaje": "De¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿A qué te dedicas?: Ingeniero(a) civil o estructural Full name: [nombre] Phone number: [telefono] Con las estructuras de acero, ¿qué"
+   "primer_mensaje": "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿Has cursado estudios universitarios en áreas relacionadas con construcción/ingeniería/arquitectura?: Sí, soy graduado ¿A qué rubro pe"
   },
   {
    "mensajes": 100,
@@ -83,89 +68,104 @@
    "primer_mensaje": "👤 [nombre] ([telefono]) Hola ester y equipo buenos dias! espero esten bien.."
   },
   {
-   "mensajes": 97,
-   "quedo_sin_responder": false,
-   "primer_mensaje": "Sí, me interesa: la oferta de Planos BIM Arquitectónicos y Estructurales ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: Chatea con nosotros 🔗 Description: ¿Cuántas veces entregaste un plano y luego descubriste errores qu"
-  },
-  {
-   "mensajes": 8,
-   "quedo_sin_responder": false,
-   "primer_mensaje": "¡Hola! Completé el formulario y me gustaría obtener más información sobre el negocio. Full name: [nombre] Phone number: [telefono] Email: [correo] ¿A qué rubro perteneces?: Arquitecto ¿Has cursado estudios universitarios"
-  },
-  {
-   "mensajes": 88,
-   "quedo_sin_responder": false,
-   "primer_mensaje": "Hola, quiero info de la Colección BIM + IA 2026 con descuento Autodesk ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: Chatea con nosotros 🔗 Description: ¿Estás listo para liderar la construcción digital en 2026? Olvida s"
+   "mensajes": 96,
+   "quedo_sin_responder": true,
+   "primer_mensaje": "👤 [nombre] ([telefono]) Grabación de la reunión en Fathom: [enlace] 📱 [Received on Design Modeling Academy ([telefono])]"
   },
   {
    "mensajes": 100,
    "quedo_sin_responder": false,
-   "primer_mensaje": "[telefono]"
-  },
-  {
-   "mensajes": 42,
-   "quedo_sin_responder": false,
-   "primer_mensaje": "¡Hola! Vi el anuncio del Máster BIM+IA quiero más información sobre ello 📱 [Received on Design Modeling Academy ([telefono])]"
-  },
-  {
-   "mensajes": 98,
-   "quedo_sin_responder": false,
-   "primer_mensaje": "Hola, me interesa la especialización de estructuras de Acero ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: 💥 Precio especial: $199 USD por tiempo limitado. 🔗 Description: 📲 Escríbenos y te enviamos el programa completo "
-  },
-  {
-   "mensajes": 18,
-   "quedo_sin_responder": false,
-   "primer_mensaje": "¿Has cursado estudios universitarios en áreas relacionadas con construcción/ingeniería/arquitectura?: Sí, soy graduado ¿A qué rubro perteneces?: Arquitecto Actualmente te encuentras:: Dueño de empresa / independiente ¿Cu"
+   "primer_mensaje": "👤 [nombre] ([telefono]) Hola, buen día 👋 Veo que mencionas a un cliente con el correo [correo] — ¿me puedes contar un poco más? ¿Qué te escribió o qué necesita específicamente? Así puedo orientarte mejor con ese caso."
   },
   {
    "mensajes": 100,
    "quedo_sin_responder": false,
-   "primer_mensaje": "Full name: [nombre] ¿Has cursado estudios universitarios en áreas relacionadas con construcción/ingeniería/arquitectura?: Sí, soy graduado ¿Tienes experiencia utilizando software técnico (ejemplo: AutoCAD, Revit, SAP2000"
+   "primer_mensaje": "¿Has cursado estudios universitarios en áreas relacionadas con construcción/ingeniería/arquitectura?: Sí, soy graduado 🚨Atención ¿Para poder inscribirte al Diplomado es necesaria una inversión mínima de 499,99 dólares am"
+  },
+  {
+   "mensajes": 4,
+   "quedo_sin_responder": false,
+   "primer_mensaje": "¡Hola! Completé el formulario y me gustaría obtener más información sobre el negocio. Full name: [nombre] Phone number: [telefono] Email: [correo] ¿A qué rubro perteneces?: Ingeniero de obra ¿Has cursado estudios univers"
+  },
+  {
+   "mensajes": 24,
+   "quedo_sin_responder": false,
+   "primer_mensaje": "¡Hola! Deseo más información sobre el Curso de Revit con Inteligencia Artificial"
+  },
+  {
+   "mensajes": 47,
+   "quedo_sin_responder": false,
+   "primer_mensaje": "Buenos días, me gustaría saber sobre el curso de coordinador, manager y especialista BIM Gracias • automatedGreetingMessageShown: true • body: ¿Estás listo para liderar la construcción digital en 2026? Olvida saber solo "
+  },
+  {
+   "mensajes": 100,
+   "quedo_sin_responder": false,
+   "primer_mensaje": "Hola 📱 [Received on Design Modeling Academy ([telefono])]"
+  },
+  {
+   "mensajes": 5,
+   "quedo_sin_responder": false,
+   "primer_mensaje": "¡Hola! Completé el formulario y me gustaría obtener más información sobre el negocio. ¿Has cursado estudios universitarios en áreas relacionadas con construcción/ingeniería/arquitectura?: Sí, estudiante universitario ¿A "
+  },
+  {
+   "mensajes": 32,
+   "quedo_sin_responder": false,
+   "primer_mensaje": "De¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿A qué te dedicas?: Ingeniero(a) civil o estructural Full name: [nombre] Phone number: [telefono] Con las estructuras de acero, ¿qué"
+  },
+  {
+   "mensajes": 100,
+   "quedo_sin_responder": false,
+   "primer_mensaje": "*Headline:* Chatea con nosotros *Source URL:* [enlace] Hola, me interesa la especialización de estructuras de Acero"
+  },
+  {
+   "mensajes": 83,
+   "quedo_sin_responder": false,
+   "primer_mensaje": "Hola, me interesa la Especialización en Diseño Estructural en Acero BIM"
   },
   {
    "mensajes": 15,
    "quedo_sin_responder": false,
-   "primer_mensaje": "Buenas tardes • adContextPreviewDismissed: false • automatedGreetingMessageShown: false • body: Esta es una de las preguntas que más nos dejan quienes quieren dar el salto al BIM 👇 Y la verdad, es normal tener dudas ante"
-  },
-  {
-   "mensajes": 14,
-   "quedo_sin_responder": false,
-   "primer_mensaje": "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. Full name: [nombre] Phone number: [telefono] Email: [correo] ¿A qué rubro perteneces?: Ingeniero civil / estructural ¿Has cursado estu"
-  },
-  {
-   "mensajes": 51,
-   "quedo_sin_responder": false,
-   "primer_mensaje": "*Headline:* 🔥 ¡Precio especial: $199 USD! *Source URL:* [enlace] Hola, me interesa la especialización de estructuras de Acero"
-  },
-  {
-   "mensajes": 64,
-   "quedo_sin_responder": false,
-   "primer_mensaje": "Hola, me interesa la especialización de estructuras de Acero ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: Design Modeling Academy 🔗 Description: ¡𝗗𝗘𝗝𝗔 𝗗𝗘 𝗛𝗔𝗖𝗘𝗥 𝗧𝗨𝗦 𝗣𝗟𝗔𝗡𝗢𝗦 𝗘𝗡 𝗔𝗨𝗧𝗢𝗖𝗔𝗗! 🚀 ¿Aún haces planos 2D en AutoCAD p"
-  },
-  {
-   "mensajes": 14,
-   "quedo_sin_responder": false,
-   "primer_mensaje": "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿Has cursado estudios universitarios en áreas relacionadas con construcción/ingeniería/arquitectura?: Sí, soy graduado ¿A qué rubro pe"
-  },
-  {
-   "mensajes": 16,
-   "quedo_sin_responder": false,
-   "primer_mensaje": "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿Has cursado estudios universitarios en áreas relacionadas con construcción/ingeniería/arquitectura?: No ¿A qué rubro perteneces?: Due"
-  },
-  {
-   "mensajes": 39,
-   "quedo_sin_responder": true,
-   "primer_mensaje": "👤 [nombre] ([telefono]) [enlace] 📱 [Received on Design Modeling Academy ([telefono])]"
-  },
-  {
-   "mensajes": 90,
-   "quedo_sin_responder": false,
-   "primer_mensaje": "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. Full name: [nombre] Phone number: [telefono] Email: [correo] ¿A qué rubro perteneces?: Ingeniero de obra ¿Has cursado estudios univers"
+   "primer_mensaje": "Hola, me interesa el Master Internacional en Preventa ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: Aprende BIM desde cero y certifícate con 50% OFF 🔗 Description: ¿Quién liderará la revolución en construcción con BIM y"
   },
   {
    "mensajes": 93,
    "quedo_sin_responder": false,
-   "primer_mensaje": "👤 [nombre] ([telefono]) Grabación de la reunión en Fathom: [enlace] 📱 [Received on Design Modeling Academy ([telefono])]"
+   "primer_mensaje": "Hola, quiero info de la Colección BIM + IA 2026 con descuento Autodesk ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: Chatea con nosotros 🔗 Description: ¿Estás listo para liderar la construcción digital en 2026? Olvida s"
+  },
+  {
+   "mensajes": 47,
+   "quedo_sin_responder": false,
+   "primer_mensaje": "Hola, me interesa el Master Internacional en Preventa ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: Aprende BIM desde cero y certifícate con 50% OFF 🔗 Description: ¿Quién liderará la revolución en construcción con BIM y"
+  },
+  {
+   "mensajes": 73,
+   "quedo_sin_responder": false,
+   "primer_mensaje": "BIM"
+  },
+  {
+   "mensajes": 100,
+   "quedo_sin_responder": false,
+   "primer_mensaje": "Si asisti, me supieron indicar que en Agosto empezaran clase para El Master ( titulo de 4to Nivel) que por el momento solo tienen un diplomado BIM Received on 📱[Design Modeling DG]"
+  },
+  {
+   "mensajes": 59,
+   "quedo_sin_responder": false,
+   "primer_mensaje": "BIM"
+  },
+  {
+   "mensajes": 12,
+   "quedo_sin_responder": false,
+   "primer_mensaje": "Por favor información • adContextPreviewDismissed: false • automatedGreetingMessageShown: false • body: Si tu estrategia para llegar a BIM Manager es ver tutoriales sueltos de YouTube, ya sabes cómo termina: sabes más co"
+  },
+  {
+   "mensajes": 100,
+   "quedo_sin_responder": false,
+   "primer_mensaje": "↪︎ ¿O prefieres que hablemos un poco de costos y becas disponibles? Sii por favor Received on 📱[Design Modeling DG]"
+  },
+  {
+   "mensajes": 100,
+   "quedo_sin_responder": true,
+   "primer_mensaje": "Buenos días 📱 [Received on Design Modeling Academy ([telefono])]"
   }
  ],
  "limite_aplicado": 300,

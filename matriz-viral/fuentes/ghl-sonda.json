@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-16",
+  "generado": "2026-10-19",
   "location": "nkKbOarn5IwHeMv48uY9",
   "nota": "Sonda: comprueba QUE endpoints responden con nuestro token. No baja datos de negocio. Lo importante es si abren 'cursos · productos' y 'membresias': ahi vive el progreso de los alumnos, que Windsor NO expone.",
   "resultados": {
@@ -121,7 +121,7 @@
     "workflows": {
       "ok": true,
       "http": 200,
-      "registros": "136+",
+      "registros": "137+",
       "claves": [
         "traceId",
         "workflows"
@@ -131,7 +131,7 @@
     "etiquetas": {
       "ok": true,
       "http": 200,
-      "registros": "554+",
+      "registros": "555+",
       "claves": [
         "tags",
         "traceId"
@@ -151,7 +151,7 @@
     "conversaciones": {
       "ok": true,
       "http": 200,
-      "registros": 26970,
+      "registros": 27069,
       "claves": [
         "conversations",
         "total",
@@ -221,8 +221,26 @@
         "updatedAt",
         "version"
       ],
-      "total": 136,
+      "total": 137,
       "lista": [
+        {
+          "nombre": "✅ Acceso GHL Cursos BIM Catalogo",
+          "estado": "published",
+          "actualizado": "2026-10-16",
+          "id": "c63694c5-c5d1-4d89-aede-cf0c5055c802"
+        },
+        {
+          "nombre": "✅ Acceso GHL Especializaciones BIM paquete",
+          "estado": "published",
+          "actualizado": "2026-10-16",
+          "id": "58c109cf-ef91-4f1c-8ec5-cf4cd43081b1"
+        },
+        {
+          "nombre": "✅ Seguimiento 5 de Especialización en Acero",
+          "estado": "draft",
+          "actualizado": "2026-10-16",
+          "id": "d0716285-9f49-427c-995e-d5826426feff"
+        },
         {
           "nombre": "Comentario Facebook/TikTok - GENERICO (rutea por palabra BIM/IA)",
           "estado": "draft",
@@ -246,18 +264,6 @@
           "estado": "published",
           "actualizado": "2026-10-15",
           "id": "a909c2ab-a215-4b47-bda6-30df94da36ac"
-        },
-        {
-          "nombre": "✅ Acceso GHL Cursos BIM Catalogo",
-          "estado": "published",
-          "actualizado": "2026-10-15",
-          "id": "c63694c5-c5d1-4d89-aede-cf0c5055c802"
-        },
-        {
-          "nombre": "✅ Acceso GHL Especializaciones BIM paquete",
-          "estado": "published",
-          "actualizado": "2026-10-15",
-          "id": "58c109cf-ef91-4f1c-8ec5-cf4cd43081b1"
         },
         {
           "nombre": "✅ Acceso Upsell - PDF Ebook BIM",
