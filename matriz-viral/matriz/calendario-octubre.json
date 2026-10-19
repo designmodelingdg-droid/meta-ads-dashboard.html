@@ -14,6 +14,7 @@
   "BIM e IA NUNCA como palabra de un recurso: son el bot de ventas del Máster (el checklist de Navisworks falló 3 de 5).",
   "DYNAMO fuera de los CTA de octubre: 0 comentarios en su reel y falla en OpenReply.",
   "LOS DOS FORMATOS GANADORES DE SEPTIEMBRE se repiten: el dato de cálculo verificable (cuantía mínima: 44.589 vistas, 146 comentarios, 163 seguidores) y el tutorial paso a paso con palabra (plano 2D → BIM: 99 comentarios, 47 DM). Anunciar un producto («ahora tiene X») nunca va solo: siempre detrás de un problema.",
+  "CAMBIOS DEL 19-OCT (Dayana): LINKEDIN lo publica Daniela, solo en la página de Design Modeling Academy y solo los 4 carruseles de la semana del 19 (ranking, pandeo, «Sabes montar una nave», certificado), 2 por semana: Mar 20, Jue 22, Mar 27 y Jue 29. Copys formales, sin hashtags, con el enlace dentro del post. Se cancelan los textos de Gabriel y los videos de Design Modeling DG que quedaban del mes.",
   "CAMBIOS DEL 17-OCT (Dayana): los reels de valor todavía no se graban, así que NO SALE NINGÚN REEL DE VALOR ANTES DEL VIE 23 (los de los sábados ya están grabados y se quedan: OneFilter el 17 y el add-in el 24). EL WORKSHOP NO SE DICTA: su carrusel no se publica y ninguna historia lo menciona; el Lun 19 vuelve el carrusel del ranking «¿En qué fila estás tú?». Del 19 al 22 salen carruseles (ranking, pandeo lateral-torsional, «Sabes montar una nave», certificado). El Vie 23 sale el testimonio del alumno de Acero, ya editado. La semana 4 trae los reels de valor (26, 27, 28, 29 y el ranking de software el 30). COMUNIDADES: un solo post completo, igual para todos los canales y grupos de WhatsApp, Instagram, Facebook, YouTube y GHL; si hay regalo, el enlace va directo en el post (nada de «respóndeme X») y nunca en el primer comentario. En LinkedIn el enlace también va dentro del post. Las historias de cada día solo anuncian lo que sale ese día, y el frame que comparte un reel se quita si el reel no salió.",
   "CAMBIOS DEL 14-OCT (Dayana): los blogs salen los viernes (16, 23 y 30) en vez de los sábados. El del Sáb 10 ya pasó y queda donde estaba.",
   "CAMBIOS DEL 8-OCT: el Lun 19 sale el carrusel del workshop «Antes / ahora: Revit con IA» (formato del post de AECODE del 7-oct que le gustó a Dayana, CTA WORKSHOP); el carrusel del ranking pasa a reserva y las historias del 19 promocionan el workshop con cuenta regresiva.",
@@ -96,6 +97,12 @@
    "desbloquea": "Reel e historias del Vie 23",
    "cuando": "antes del Vie 23",
    "para": "Daniela / Dayana"
+  },
+  {
+   "tarea": "LinkedIn (19-oct): publicar en la página de Design Modeling Academy los 4 carruseles en PDF (sin la última lámina) con el copy formal de cada ficha: ranking Mar 20, pandeo Jue 22, «Sabes montar una nave» Mar 27 y certificado Jue 29. En la app, borrar los LinkedIn cancelados (textos de Gabriel del 20, 27 y 30; videos de DG del 27 y 30) y los que cambiaron de fecha (Academy del 19, 23 y 26).",
+   "desbloquea": "LinkedIn de fin de mes",
+   "cuando": "Mar 20 a Jue 29",
+   "para": "Daniela"
   },
   {
    "tarea": "En la app de contenido, borrar las piezas movidas que queden con la fecha vieja (el feed movido el 17-oct: objeción de tiempo 20, IA ordena 21, ranking 23, «Sabes montar una nave» 26, «20 videos de acero» 27, pandeo 29; testimonio 13; comunidades del 20 y 27; LinkedIn del 21 y 28). Las historias conservan su id y su día.",
@@ -1247,10 +1254,12 @@
   {
    "n": 4,
    "nombre": "GRUPO 4 · LinkedIn — Design Modeling Academy · Design Modeling DG · Gabriel Pantoja",
-   "descripcion": "Lun/Mié/Vie + texto de Gabriel los martes. Solo PDF, video horizontal o texto.",
+   "descripcion": "Desde el 19-oct y hasta fin de mes: solo la página de Design Modeling Academy, solo carruseles (las mismas láminas del feed en PDF), 2 por semana: Mar 20, Jue 22, Mar 27 y Jue 29. Publica Daniela. Lo anterior al 19 queda como estaba.",
    "reglas": [
+    "19-oct (Dayana): tono formal, sin hashtags ni emojis.",
     "NUNCA «comenta la palabra»: pregunta abierta al final.",
-    "17-oct (Dayana): el enlace va dentro del post, nunca en el primer comentario."
+    "El enlace va dentro del post, nunca en el primer comentario.",
+    "Del PDF se quita la última lámina (la de «Comenta …»): en LinkedIn no hay bot que conteste."
    ],
    "calendario": [
     {
@@ -1359,124 +1368,64 @@
      "cuenta": "Design Modeling DG"
     },
     {
-     "fecha": "Lun 19",
-     "fecha_iso": "2026-10-19",
+     "fecha": "Mar 20",
+     "fecha_iso": "2026-10-20",
      "semana": "Semana 3 (19-25 oct)",
      "id": "oct-li-1019-academy",
      "titulo": "¿En qué fila estás?",
      "tipo": "valor",
-     "formato_publicacion": "LINKEDIN · PDF (carrusel rediagramado a horizontal)",
+     "formato_publicacion": "LINKEDIN · carrusel en PDF (documento)",
      "idea": {
       "titulo": "¿En qué fila estás?",
-      "formato": "LINKEDIN · PDF (carrusel rediagramado a horizontal)",
-      "desarrollo": "Casi todos los que trabajan en BIM creen estar una fila más arriba de donde están."
+      "formato": "LINKEDIN · carrusel en PDF (documento)",
+      "desarrollo": "La mayoría de los profesionales que trabajan con BIM se ubica un nivel por encima de donde realmente está."
      },
      "cuenta": "Design Modeling Academy"
     },
     {
-     "fecha": "Mar 20",
-     "fecha_iso": "2026-10-20",
+     "fecha": "Jue 22",
+     "fecha_iso": "2026-10-22",
      "semana": "Semana 3 (19-25 oct)",
-     "id": "oct-li-1020-gabriel",
-     "titulo": "Una o dos horas al día",
-     "tipo": "objeción",
-     "formato_publicacion": "LINKEDIN · post de texto",
+     "id": "oct-li-1022-academy",
+     "titulo": "La verificación que más se omite: pandeo lateral-torsional",
+     "tipo": "valor",
+     "formato_publicacion": "LINKEDIN · carrusel en PDF (documento)",
      "idea": {
-      "titulo": "Una o dos horas al día",
-      "formato": "LINKEDIN · post de texto",
-      "desarrollo": "Si esperas a tener tiempo para estudiar BIM, no vas a empezar nunca."
-     },
-     "cuenta": "Gabriel Pantoja (primera persona)"
-    },
-    {
-     "fecha": "Vie 23",
-     "fecha_iso": "2026-10-23",
-     "semana": "Semana 3 (19-25 oct)",
-     "id": "oct-li-1023-academy",
-     "titulo": "¿Ese certificado sirve fuera de tu país?",
-     "tipo": "objeción",
-     "formato_publicacion": "LINKEDIN · PDF (carrusel rediagramado a horizontal)",
-     "idea": {
-      "titulo": "¿Ese certificado sirve fuera de tu país?",
-      "formato": "LINKEDIN · PDF (carrusel rediagramado a horizontal)",
-      "desarrollo": "Antes de pagar un curso por el certificado, hay cinco preguntas que conviene hacer."
+      "titulo": "La verificación que más se omite: pandeo lateral-torsional",
+      "formato": "LINKEDIN · carrusel en PDF (documento)",
+      "desarrollo": "Una viga que verifica a flexión no necesariamente es una viga segura. El pandeo lateral-torsional es una de las verificaciones que con mayor frecuencia se omite en el diseño de estructuras de acero."
      },
      "cuenta": "Design Modeling Academy"
     },
     {
-     "fecha": "Lun 26",
-     "fecha_iso": "2026-10-26",
+     "fecha": "Mar 27",
+     "fecha_iso": "2026-10-27",
      "semana": "Semana 4 (26 oct-1 nov)",
      "id": "oct-li-1026-academy",
      "titulo": "Sabes montar una nave",
      "tipo": "problema",
-     "formato_publicacion": "LINKEDIN · PDF (carrusel rediagramado a horizontal)",
+     "formato_publicacion": "LINKEDIN · carrusel en PDF (documento)",
      "idea": {
       "titulo": "Sabes montar una nave",
-      "formato": "LINKEDIN · PDF (carrusel rediagramado a horizontal)",
-      "desarrollo": "Sabes montar una nave. ¿Por qué todavía no la calculas tú?"
+      "formato": "LINKEDIN · carrusel en PDF (documento)",
+      "desarrollo": "La experiencia en obra aporta un conocimiento que ningún software enseña: cómo se ensambla una estructura de acero, qué detalles fallan y qué uniones no pueden soldarse en sitio."
      },
      "cuenta": "Design Modeling Academy"
     },
     {
-     "fecha": "Mar 27",
-     "fecha_iso": "2026-10-27",
+     "fecha": "Jue 29",
+     "fecha_iso": "2026-10-29",
      "semana": "Semana 4 (26 oct-1 nov)",
-     "id": "oct-li-1021-dg",
-     "titulo": "Exportas, la IA ordena, tú compruebas",
-     "tipo": "caso / metodología",
-     "formato_publicacion": "LINKEDIN · video HORIZONTAL 16:9 (30-45 s) + texto",
-     "idea": {
-      "titulo": "Exportas, la IA ordena, tú compruebas",
-      "formato": "LINKEDIN · video HORIZONTAL 16:9 (30-45 s) + texto",
-      "desarrollo": "Exportas la tabla. La IA la ordena. Tú compruebas tres filas a mano antes de fiarte."
-     },
-     "cuenta": "Design Modeling DG"
-    },
-    {
-     "fecha": "Mar 27",
-     "fecha_iso": "2026-10-27",
-     "semana": "Semana 4 (26 oct-1 nov)",
-     "id": "oct-li-1027-gabriel",
-     "titulo": "Botones y orden",
+     "id": "oct-li-1023-academy",
+     "titulo": "¿Ese certificado sirve fuera de tu país?",
      "tipo": "objeción",
-     "formato_publicacion": "LINKEDIN · post de texto",
+     "formato_publicacion": "LINKEDIN · carrusel en PDF (documento)",
      "idea": {
-      "titulo": "Botones y orden",
-      "formato": "LINKEDIN · post de texto",
-      "desarrollo": "Si ya viste 20 videos de acero y todavía no te atreves con una nave, no es tu culpa."
+      "titulo": "¿Ese certificado sirve fuera de tu país?",
+      "formato": "LINKEDIN · carrusel en PDF (documento)",
+      "desarrollo": "Antes de invertir en un programa de formación por su certificación, recomendamos plantear cinco preguntas:"
      },
-     "cuenta": "Gabriel Pantoja (primera persona)"
-    },
-    {
-     "fecha": "Vie 30",
-     "fecha_iso": "2026-10-30",
-     "semana": "Semana 4 (26 oct-1 nov)",
-     "id": "oct-li-1028-dg",
-     "titulo": "Una nave, en el orden en que se revisa",
-     "tipo": "caso / metodología",
-     "formato_publicacion": "LINKEDIN · video HORIZONTAL 16:9 (30-45 s) + texto",
-     "idea": {
-      "titulo": "Una nave, en el orden en que se revisa",
-      "formato": "LINKEDIN · video HORIZONTAL 16:9 (30-45 s) + texto",
-      "desarrollo": "Una nave de acero no se aprueba por el modelo. Se aprueba por el orden en que se revisó."
-     },
-     "cuenta": "Design Modeling DG"
-    },
-    {
-     "fecha": "Vie 30",
-     "fecha_iso": "2026-10-30",
-     "semana": "Semana 4 (26 oct-1 nov)",
-     "id": "oct-li-1030-gabriel",
-     "titulo": "Lo caro no es el curso",
-     "tipo": "objeción",
-     "formato_publicacion": "LINKEDIN · post de texto",
-     "idea": {
-      "titulo": "Lo caro no es el curso",
-      "formato": "LINKEDIN · post de texto",
-      "desarrollo": "Lo caro no es el curso. Es el proyecto que no pudiste aceptar."
-     },
-     "cuenta": "Gabriel Pantoja (primera persona)"
+     "cuenta": "Design Modeling Academy"
     }
    ]
   },
