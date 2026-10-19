@@ -552,3 +552,44 @@ Más vistas que septiembre y muchos menos comentarios.
 - **ACERO no sumó ningún contacto en 7 días**, aunque el post de la deriva que pedía ACERO sacó 10 comentarios. Hay que revisar que el disparador de GHL escuche ese post.
 - NIVEL sumó 1.
 - MEMORIA siguió sola con 24 contactos nuevos.
+
+## Actualización 2026-10-19 · semana 12–18 oct: el gancho que acusa y el recurso con palabra se llevan todo; los reels no conversan
+
+Datos de la Graph API (Instagram). De Facebook solo llegan comentarios y likes: la API no da sus vistas.
+
+| Fecha | Pieza | Formato | Vistas IG | Coment. IG | Guardados | Compartidos | Seguidores nuevos |
+|---|---|---|---|---|---|---|---|
+| Lun 12 | «La IA no te sirve para calcular por ti» (CTA NIVEL) | post | **9.945** | 13 | **144** | **28** | **14** |
+| Jue 15 | COTIZA: «Lo que no está escrito te lo piden gratis» | post | 3.835 | **21** | 45 | 9 | 1 |
+| Vie 16 | «¿A cuántas naves dijiste que no?» (CTA ACERO) | post | 3.933 | 18 | 15 | 0 | 2 |
+| Mié 14 | Reel «me recomendó la opción A» (fuera del calendario) | reel | 1.041 | 0 (4 en FB) | 3 | 0 | — |
+| Jue 15 | Clases grabadas del Diplomado (tutor IA) | post | 946 | 0 | 0 | 0 | 0 |
+| Sáb 17 | Clase real: OneFilter (CTA NIVEL) | reel | 787 | 0 | 2 | 0 | — |
+
+**Medianas por pieza:**
+
+| Periodo | Vistas | Comentarios | Guardados |
+|---|---|---|---|
+| Esta semana (6 piezas) | 2.438 | **6,5** | 9 |
+| Semana anterior (5–11 oct) | 3.405 | 4 | 8,5 |
+| Septiembre | 2.224 | 8,5 | 7 |
+
+Los comentarios se recuperan frente a la semana pasada, pero todos vienen de tres posts. Los dos reels y el post del producto sacaron 0.
+
+**Lecciones**
+1. **La pieza más grande de octubre acusa un hábito y da el trabajo útil de alrededor.** «La IA no te sirve para calcular por ti»: 9.945 vistas, 144 guardados, 28 compartidos y 14 seguidores nuevos. Igual que DM168, se guarda más de lo que se comenta: es contenido de consulta. La palabra NIVEL recogió solo 2 contactos nuevos, así que a los datos de consulta les conviene una palabra de recurso concreto, no el test.
+2. **El recurso gratis con palabra es lo que más conversa.** COTIZA (21 comentarios) y las naves rechazadas con ACERO (18) hicieron 39 de los 52 comentarios de la semana. Es lo mismo que pasó con la deriva (semana pasada) y con MEMORIA (la anterior).
+3. **Los reels no conversan este mes.** Los tres reels de octubre suman 2 comentarios en Instagram (491, 1.041 y 787 vistas). Los que vienen la semana del 26 tienen que salir con la edición ganadora del nicho (demo en pantalla con titular fijo, `matriz/EDICION-GANADORA-NICHO.md`) y cerrar con una pregunta directa más la palabra. El reel de opinión sobre la IA no se repite.
+4. **Anunciar el producto no conversa, cuarta semana seguida.** El post de las clases grabadas del Diplomado: 946 vistas y 0 en todo. Pasa a regla permanente.
+
+**Plan contra lo publicado:**
+- Salieron 5 de las 6 piezas del feed de la semana (Lun 12, Jue 15 ×2, Vie 16, Sáb 17). El post del tutor se corrió del Mié 14 al Jue 15 y compartió día con COTIZA.
+- El testimonio de Acero del Mar 13 no salió; ya está editado y pasa al Vie 23 (cambio del 17-oct).
+- El Mié 14 salió un reel que no estaba en el calendario.
+
+**Historias:** 18 frames en 5 días, 10 respuestas en total. Retención entre 64 % y 71 % (la referencia es 77 %), salvo el jueves 15: 94 %, pero con solo 102 personas de alcance. El primer frame es donde más se van, todos los días (90 salidas el lunes, 137 el viernes): el arranque tiene que enganchar más.
+
+**Embudos (7 días):**
+- ACERO sumó 21 contactos del bot y 21 leads, pero solo 3 accesos (14 %). El disparador ya funciona; la caída sigue en el formulario.
+- COTIZA sumó 1 contacto del bot con 21 comentarios en el carrusel. No hay campaña de COTIZA en OpenReply. Hay que comprobar quién recibió el cotizador.
+- NIVEL sumó 2. MEMORIA y ZAPATA casi en cero: no hubo piezas que los pidieran.
