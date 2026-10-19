@@ -87,7 +87,7 @@ export class Scene {
   }
   text(x: number, y: number, txt: string, size = 44, opts: { color?: string; anchor?: "start" | "middle"; font?: string; weight?: number; dur?: number; bg?: string } = {}) {
     const d = opts.dur ?? Math.max(0.25, txt.length * 0.045) / this.speed;
-    this.els.push({ k: "text", x, y, txt, size, t0: this.cur, dur: d, color: opts.color ?? INK, anchor: opts.anchor ?? "middle", font: opts.font ?? "Kalam", scene: this.id, weight: opts.weight ?? 700, bg: opts.bg });
+    this.els.push({ k: "text", x, y, txt, size, t0: this.cur, dur: d, color: opts.color ?? INK, anchor: opts.anchor ?? "middle", font: opts.font ?? "Anton", scene: this.id, weight: opts.weight ?? ((opts.font ?? "Anton") === "Anton" ? 400 : 800), bg: opts.bg });
     this.cur += d + 0.08;
     return this;
   }

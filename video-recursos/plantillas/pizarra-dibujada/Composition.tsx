@@ -9,6 +9,10 @@ import WORDS from "./words.json";
 loadFont({ family: "Kalam", url: staticFile("kalam-latin-700-normal.woff2"), weight: "700" });
 loadFont({ family: "Kalam", url: staticFile("kalam-latin-ext-700-normal.woff2"), weight: "700", unicodeRange: "U+0100-024F" });
 loadFont({ family: "Kalam", url: staticFile("kalam-latin-400-normal.woff2"), weight: "400" });
+loadFont({ family: "Anton", url: staticFile("anton-latin-400-normal.woff2"), weight: "400" });
+loadFont({ family: "Anton", url: staticFile("anton-latin-ext-400-normal.woff2"), weight: "400", unicodeRange: "U+0100-024F" });
+loadFont({ family: "Overpass", url: staticFile("overpass-latin-800-normal.woff2"), weight: "800" });
+loadFont({ family: "Overpass", url: staticFile("overpass-latin-ext-800-normal.woff2"), weight: "800", unicodeRange: "U+0100-024F" });
 loadFont({ family: "PermanentMarker", url: staticFile("permanent-marker-latin-400-normal.woff2"), weight: "400" });
 
 const FPS = 30;
@@ -26,8 +30,13 @@ const SLIDE = 0.32;
 
 // ancho aproximado de un texto (para que la punta siga la escritura)
 const textW = (e: Extract<El, { k: "text" }>) => {
+  const anton = e.font === "Anton";
+  const over = e.font === "Overpass";
   let w = 0;
-  for (const ch of e.txt) w += ch === " " ? 0.28 : /[A-ZÁÉÍÓÚÑ¿?0-9]/.test(ch) ? 0.6 : 0.47;
+  for (const ch of e.txt) {
+    const up = /[A-ZÁÉÍÓÚÑ¿?0-9±+]/.test(ch);
+    w += ch === " " ? (anton ? 0.2 : 0.28) : anton ? (up ? 0.47 : 0.4) : over ? (up ? 0.7 : 0.56) : up ? 0.6 : 0.47;
+  }
   return w * e.size * (e.font === "PermanentMarker" ? 1.08 : 1);
 };
 
@@ -137,6 +146,13 @@ const Papel: React.FC = () => (
       background: `radial-gradient(130% 90% at 50% 40%, ${PAPER} 0%, #EEF2F6 100%)`,
     }}
   >
+    <AbsoluteFill
+      style={{
+        backgroundImage: "linear-gradient(rgba(13,30,58,.11) 1.5px, transparent 1.5px), linear-gradient(90deg, rgba(13,30,58,.11) 1.5px, transparent 1.5px)",
+        backgroundSize: "60px 60px",
+        backgroundPosition: "0 0",
+      }}
+    />
     <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 150, display: "flex", alignItems: "center", justifyContent: "center", gap: 22, opacity: 0.9 }}>
       <Img src={staticFile("logo-dma-dark.png")} style={{ width: 230 }} />
     </div>
@@ -220,7 +236,7 @@ const Marcador: React.FC = () => {
         <path d="M -14 -26 L 14 -26 L 22 -70 L -22 -70 Z" fill="#1E3A60" />
         <rect x={-27} y={-470} width={54} height={402} rx={22} fill="url(#body)" />
         <rect x={-27} y={-300} width={54} height={92} fill={AMBER} />
-        <text x={0} y={-238} transform="rotate(-90 0 -254)" textAnchor="middle" fontFamily="Kalam" fontWeight={700} fontSize={30} fill={NAVY}>
+        <text x={0} y={-238} transform="rotate(-90 0 -254)" textAnchor="middle" fontFamily="Anton" fontWeight={400} fontSize={30} fill={NAVY}>
           DMA
         </text>
         <rect x={-27} y={-470} width={54} height={60} rx={22} fill="#2E4A70" />
@@ -260,14 +276,15 @@ const Subtitulos: React.FC = () => {
       <span
         style={{
           display: "inline-block",
-          fontFamily: "Kalam",
-          fontWeight: 700,
-          fontSize: 62,
-          color: NAVY,
-          background: "rgba(215,134,49,.42)",
-          padding: "0 22px",
-          borderRadius: 10,
-          transform: `scale(${0.85 + 0.15 * k}) rotate(-1deg)`,
+          fontFamily: "Anton",
+          fontWeight: 400,
+          fontSize: 66,
+          color: "#FFFFFF",
+          background: "#D78631",
+          padding: "4px 22px 0",
+          borderRadius: 12,
+          letterSpacing: 1,
+          transform: `scale(${0.85 + 0.15 * k})`,
         }}
       >
         {g.txt.replace(/[.,:]$/, "").toUpperCase()}
@@ -286,5 +303,5 @@ const Reel: React.FC = () => (
 );
 
 export const MyComposition: React.FC = () => (
-  <Composition id="Cimentaciones" component={Reel} durationInFrames={Math.round(TOTAL * FPS)} fps={FPS} width={W} height={H} />
+  <Composition id="Niveles" component={Reel} durationInFrames={Math.round(TOTAL * FPS)} fps={FPS} width={W} height={H} />
 );
