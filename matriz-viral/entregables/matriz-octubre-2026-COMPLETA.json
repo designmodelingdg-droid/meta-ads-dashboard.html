@@ -20,6 +20,7 @@
     "BIM e IA NUNCA como palabra de un recurso: son el bot de ventas del Máster (el checklist de Navisworks falló 3 de 5).",
     "DYNAMO fuera de los CTA de octubre: 0 comentarios en su reel y falla en OpenReply.",
     "LOS DOS FORMATOS GANADORES DE SEPTIEMBRE se repiten: el dato de cálculo verificable (cuantía mínima: 44.589 vistas, 146 comentarios, 163 seguidores) y el tutorial paso a paso con palabra (plano 2D → BIM: 99 comentarios, 47 DM). Anunciar un producto («ahora tiene X») nunca va solo: siempre detrás de un problema.",
+    "CAMBIOS DEL 19-OCT (Dayana): LINKEDIN lo publica Daniela, solo en la página de Design Modeling Academy y solo los 4 carruseles de la semana del 19 (ranking, pandeo, «Sabes montar una nave», certificado), 2 por semana: Mar 20, Jue 22, Mar 27 y Jue 29. Copys formales, sin hashtags, con el enlace dentro del post. Se cancelan los textos de Gabriel y los videos de Design Modeling DG que quedaban del mes.",
     "CAMBIOS DEL 17-OCT (Dayana): los reels de valor todavía no se graban, así que NO SALE NINGÚN REEL DE VALOR ANTES DEL VIE 23 (los de los sábados ya están grabados y se quedan: OneFilter el 17 y el add-in el 24). EL WORKSHOP NO SE DICTA: su carrusel no se publica y ninguna historia lo menciona; el Lun 19 vuelve el carrusel del ranking «¿En qué fila estás tú?». Del 19 al 22 salen carruseles (ranking, pandeo lateral-torsional, «Sabes montar una nave», certificado). El Vie 23 sale el testimonio del alumno de Acero, ya editado. La semana 4 trae los reels de valor (26, 27, 28, 29 y el ranking de software el 30). COMUNIDADES: un solo post completo, igual para todos los canales y grupos de WhatsApp, Instagram, Facebook, YouTube y GHL; si hay regalo, el enlace va directo en el post (nada de «respóndeme X») y nunca en el primer comentario. En LinkedIn el enlace también va dentro del post. Las historias de cada día solo anuncian lo que sale ese día, y el frame que comparte un reel se quita si el reel no salió.",
     "CAMBIOS DEL 14-OCT (Dayana): los blogs salen los viernes (16, 23 y 30) en vez de los sábados. El del Sáb 10 ya pasó y queda donde estaba.",
     "CAMBIOS DEL 8-OCT: el Lun 19 sale el carrusel del workshop «Antes / ahora: Revit con IA» (formato del post de AECODE del 7-oct que le gustó a Dayana, CTA WORKSHOP); el carrusel del ranking pasa a reserva y las historias del 19 promocionan el workshop con cuenta regresiva.",
@@ -102,6 +103,12 @@
       "desbloquea": "Reel e historias del Vie 23",
       "cuando": "antes del Vie 23",
       "para": "Daniela / Dayana"
+    },
+    {
+      "tarea": "LinkedIn (19-oct): publicar en la página de Design Modeling Academy los 4 carruseles en PDF (sin la última lámina) con el copy formal de cada ficha: ranking Mar 20, pandeo Jue 22, «Sabes montar una nave» Mar 27 y certificado Jue 29. En la app, borrar los LinkedIn cancelados (textos de Gabriel del 20, 27 y 30; videos de DG del 27 y 30) y los que cambiaron de fecha (Academy del 19, 23 y 26).",
+      "desbloquea": "LinkedIn de fin de mes",
+      "cuando": "Mar 20 a Jue 29",
+      "para": "Daniela"
     },
     {
       "tarea": "En la app de contenido, borrar las piezas movidas que queden con la fecha vieja (el feed movido el 17-oct: objeción de tiempo 20, IA ordena 21, ranking 23, «Sabes montar una nave» 26, «20 videos de acero» 27, pandeo 29; testimonio 13; comunidades del 20 y 27; LinkedIn del 21 y 28). Las historias conservan su id y su día.",
@@ -3652,10 +3659,12 @@
     {
       "n": 4,
       "nombre": "GRUPO 4 · LinkedIn — Design Modeling Academy · Design Modeling DG · Gabriel Pantoja",
-      "descripcion": "Lun/Mié/Vie + texto de Gabriel los martes. Solo PDF, video horizontal o texto.",
+      "descripcion": "Desde el 19-oct y hasta fin de mes: solo la página de Design Modeling Academy, solo carruseles (las mismas láminas del feed en PDF), 2 por semana: Mar 20, Jue 22, Mar 27 y Jue 29. Publica Daniela. Lo anterior al 19 queda como estaba.",
       "reglas": [
+        "19-oct (Dayana): tono formal, sin hashtags ni emojis.",
         "NUNCA «comenta la palabra»: pregunta abierta al final.",
-        "17-oct (Dayana): el enlace va dentro del post, nunca en el primer comentario."
+        "El enlace va dentro del post, nunca en el primer comentario.",
+        "Del PDF se quita la última lámina (la de «Comenta …»): en LinkedIn no hay bot que conteste."
       ],
       "calendario": [
         {
@@ -3998,29 +4007,29 @@
           }
         },
         {
-          "fecha": "Lun 19",
-          "fecha_iso": "2026-10-19",
+          "fecha": "Mar 20",
+          "fecha_iso": "2026-10-20",
           "semana": "Semana 3 (19-25 oct)",
           "id": "oct-li-1019-academy",
           "titulo": "¿En qué fila estás?",
           "tipo": "valor",
-          "formato_publicacion": "LINKEDIN · PDF (carrusel rediagramado a horizontal)",
+          "formato_publicacion": "LINKEDIN · carrusel en PDF (documento)",
           "idea": {
             "titulo": "¿En qué fila estás?",
-            "formato": "LINKEDIN · PDF (carrusel rediagramado a horizontal)",
-            "desarrollo": "Casi todos los que trabajan en BIM creen estar una fila más arriba de donde están."
+            "formato": "LINKEDIN · carrusel en PDF (documento)",
+            "desarrollo": "La mayoría de los profesionales que trabajan con BIM se ubica un nivel por encima de donde realmente está."
           },
           "cuenta": "Design Modeling Academy",
           "contenido": {
             "id": "oct-li-1019-academy",
-            "fecha": "Lun 19 oct",
-            "fecha_iso": "2026-10-19",
+            "fecha": "Mar 20 oct",
+            "fecha_iso": "2026-10-20",
             "semana": "Semana 3 (19-25 oct)",
             "grupo": "GRUPO 4 · LinkedIn",
             "cuenta": "Design Modeling Academy",
             "tipo": "valor",
             "formato": "linkedin",
-            "formato_detalle": "LINKEDIN · PDF (carrusel rediagramado a horizontal)",
+            "formato_detalle": "LINKEDIN · carrusel en PDF (documento)",
             "redes": [
               "linkedin"
             ],
@@ -4031,145 +4040,94 @@
             "titulo": "¿En qué fila estás?",
             "eje": "NÚCLEO-BIM",
             "pilar": "Ranking + acusación · camino profesional BIM",
-            "hook": "Casi todos los que trabajan en BIM creen estar una fila más arriba de donde están.",
-            "pieza_base": "oct-ranking-perfil-bim-carrusel (Lun 19)",
-            "copy": "Casi todos los que trabajan en BIM creen estar una fila más arriba de donde están.\n\nNo es un tema de programas. Un modelador y un BIM Manager pueden usar el mismo Revit. Lo que cambia es la pregunta que se hacen antes de abrirlo.\n\nLas cuatro filas, con la señal de que estás en cada una:\n\nModela: esperas los planos para empezar y tu trabajo termina cuando el modelo «se ve bien».\nCoordina: detectas interferencias, pero las mandas una por una, sin prioridad ni responsable.\nGestiona: el plan de ejecución BIM existe, pero nadie lo abre después de la primera reunión.\nAutomatiza: repites cada semana la misma tarea de datos a mano.\n\nSubir de fila no es aprender otro programa. Es pasar de «¿cómo lo modelo?» a «¿quién va a usar esto y para qué?».\n\nEn el documento va lo que falta para pasar de cada fila a la siguiente.\n\n¿En qué fila se ubican hoy, y qué les falta para la siguiente?\n\n#BIM #BIMManagement\n\nPara comprobarlo, el test de nivel BIM es gratis: 20 preguntas y el resultado al momento. https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form",
+            "hook": "La mayoría de los profesionales que trabajan con BIM se ubica un nivel por encima de donde realmente está.",
+            "pieza_base": "oct-ranking-perfil-bim-carrusel (mismas láminas)",
+            "copy": "La mayoría de los profesionales que trabajan con BIM se ubica un nivel por encima de donde realmente está.\n\nLa diferencia entre niveles no depende del software. Un modelador y un BIM Manager pueden trabajar con la misma versión de Revit; lo que cambia es la pregunta que se plantean antes de abrir el modelo.\n\nEn el documento presentamos cuatro niveles y la señal que identifica a cada uno:\n\n1. Modelado: el trabajo comienza cuando llegan los planos y termina cuando el modelo se ve completo.\n2. Coordinación: las interferencias se detectan, pero se comunican una por una, sin prioridad ni responsable asignado.\n3. Gestión: existe un plan de ejecución BIM, pero no se vuelve a consultar después de la primera reunión.\n4. Automatización: las mismas tareas de datos se repiten cada semana de forma manual.\n\nAvanzar de nivel no consiste en aprender otro programa, sino en cambiar el enfoque: pasar de «¿cómo lo modelo?» a «¿quién utilizará esta información y con qué fin?».\n\nPara conocer su nivel actual, ponemos a su disposición un test gratuito de 20 preguntas con resultado inmediato: https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form\n\n¿En qué nivel se ubica hoy su equipo y qué considera que le falta para alcanzar el siguiente?",
             "primer_comentario": "",
-            "slides_nota": "Láminas 1 a 6 de oct-ranking-perfil-bim-carrusel a PDF horizontal, con cada captura real (Revit, Navisworks, TimeLiner, Dynamo) en su proporción original. La lámina 7 cambia: sin «Comenta NIVEL»; cierra con la pregunta del post. Firma de la Academy, no «DG · @design_modeling_dg».",
+            "slides_nota": "Las mismas láminas del carrusel de Instagram, exportadas a PDF y subidas como documento. Se quita la última lámina (la de «Comenta …»): en LinkedIn no hay bot que conteste; el enlace va en el texto del post.",
             "cta": {
-              "linkedin": "Pregunta abierta al cierre. Enlace dentro del post (no en el primer comentario)."
+              "linkedin": "Pregunta abierta al cierre. Enlace dentro del post. Sin hashtags ni emojis."
             },
             "cta_por_red": {
-              "linkedin": "Pregunta abierta al cierre. Enlace dentro del post (no en el primer comentario)."
+              "linkedin": "Pregunta abierta al cierre. Enlace dentro del post. Sin hashtags ni emojis."
             },
-            "notas_produccion": "Voz de marca. Sin precio ni condiciones del Máster: el CTA lleva al test, no a una venta. | 17-oct (Dayana): nada de enlaces en el primer comentario; el enlace va dentro del post.",
+            "notas_produccion": "Publica Daniela en la página de Design Modeling Academy. 19-oct (Dayana): en lo que queda de octubre LinkedIn lo publica Daniela, solo en la cuenta de Design Modeling Academy y solo los carruseles (2 por semana). Tono formal, sin hashtags ni emojis, enlace dentro del post. Sin precio del Máster.",
             "origen": "calendario-octubre (fase 2)"
           }
         },
         {
-          "fecha": "Mar 20",
-          "fecha_iso": "2026-10-20",
+          "fecha": "Jue 22",
+          "fecha_iso": "2026-10-22",
           "semana": "Semana 3 (19-25 oct)",
-          "id": "oct-li-1020-gabriel",
-          "titulo": "Una o dos horas al día",
-          "tipo": "objeción",
-          "formato_publicacion": "LINKEDIN · post de texto",
+          "id": "oct-li-1022-academy",
+          "titulo": "La verificación que más se omite: pandeo lateral-torsional",
+          "tipo": "valor",
+          "formato_publicacion": "LINKEDIN · carrusel en PDF (documento)",
           "idea": {
-            "titulo": "Una o dos horas al día",
-            "formato": "LINKEDIN · post de texto",
-            "desarrollo": "Si esperas a tener tiempo para estudiar BIM, no vas a empezar nunca."
-          },
-          "cuenta": "Gabriel Pantoja (primera persona)",
-          "contenido": {
-            "id": "oct-li-1020-gabriel",
-            "fecha": "Mar 20 oct",
-            "fecha_iso": "2026-10-20",
-            "semana": "Semana 3 (19-25 oct)",
-            "grupo": "GRUPO 4 · LinkedIn",
-            "cuenta": "Gabriel Pantoja (primera persona)",
-            "tipo": "objeción",
-            "formato": "linkedin",
-            "formato_detalle": "LINKEDIN · post de texto",
-            "redes": [
-              "linkedin"
-            ],
-            "red_principal": "linkedin",
-            "producto": "Máster",
-            "audiencia": "profesionales que trabajan a tiempo completo y posponen su formación",
-            "estado": "COMPLETA",
-            "titulo": "Una o dos horas al día",
-            "eje": "NÚCLEO-BIM",
-            "pilar": "Objeción · tiempo",
-            "hook": "Si esperas a tener tiempo para estudiar BIM, no vas a empezar nunca.",
-            "pieza_base": "oct-obj-tiempo-reel (Mar 20)",
-            "copy": "Si esperas a tener tiempo para estudiar BIM, no vas a empezar nunca.\n\n«No tengo tiempo» es la razón que más escuchamos para no empezar. Y es real. Casi todos los que estudian con nosotros trabajan: en obra, en oficina, algunos con otra maestría encima.\n\nLo que les funciona no es encontrar un mes libre. Es una o dos horas al día, antes de salir a obra o en la noche, con clases grabadas que van a su ritmo.\n\nLa otra parte pesa igual: que lo que estudias vuelva a tu escritorio. Cuando el proyecto final se hace sobre tu propio trabajo, esas horas no se sienten robadas.\n\nY si hoy no tienes ni una hora libre al día, no es el momento. Prefiero decirlo así.\n\nPara no perder horas empezando por donde no toca, el test de nivel BIM es gratis: https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form\n\n¿A qué hora del día estudian ustedes, los que trabajan y estudian a la vez?",
-            "primer_comentario": "",
-            "slides_nota": "No aplica: post de texto sin adjunto.",
-            "cta": {
-              "linkedin": "Pregunta abierta al cierre. Enlace dentro del post (no en el primer comentario)."
-            },
-            "cta_por_red": {
-              "linkedin": "Pregunta abierta al cierre. Enlace dentro del post (no en el primer comentario)."
-            },
-            "notas_produccion": "Primera persona, sin hashtags. Mismo día que el reel de la objeción de tiempo y el correo del diagnóstico BIM. Sin precio del Máster. | 17-oct (Dayana): nada de enlaces en el primer comentario; el enlace va dentro del post.",
-            "origen": "calendario-octubre (fase 2)",
-            "condicion": "[PENDIENTE Gabriel] Validar el texto antes de publicar."
-          }
-        },
-        {
-          "fecha": "Vie 23",
-          "fecha_iso": "2026-10-23",
-          "semana": "Semana 3 (19-25 oct)",
-          "id": "oct-li-1023-academy",
-          "titulo": "¿Ese certificado sirve fuera de tu país?",
-          "tipo": "objeción",
-          "formato_publicacion": "LINKEDIN · PDF (carrusel rediagramado a horizontal)",
-          "idea": {
-            "titulo": "¿Ese certificado sirve fuera de tu país?",
-            "formato": "LINKEDIN · PDF (carrusel rediagramado a horizontal)",
-            "desarrollo": "Antes de pagar un curso por el certificado, hay cinco preguntas que conviene hacer."
+            "titulo": "La verificación que más se omite: pandeo lateral-torsional",
+            "formato": "LINKEDIN · carrusel en PDF (documento)",
+            "desarrollo": "Una viga que verifica a flexión no necesariamente es una viga segura. El pandeo lateral-torsional es una de las verificaciones que con mayor frecuencia se omite en el diseño de estructuras de acero."
           },
           "cuenta": "Design Modeling Academy",
           "contenido": {
-            "id": "oct-li-1023-academy",
-            "fecha": "Vie 23 oct",
-            "fecha_iso": "2026-10-23",
+            "id": "oct-li-1022-academy",
+            "fecha": "Jue 22 oct",
+            "fecha_iso": "2026-10-22",
             "semana": "Semana 3 (19-25 oct)",
             "grupo": "GRUPO 4 · LinkedIn",
             "cuenta": "Design Modeling Academy",
-            "tipo": "objeción",
+            "tipo": "valor",
             "formato": "linkedin",
-            "formato_detalle": "LINKEDIN · PDF (carrusel rediagramado a horizontal)",
+            "formato_detalle": "LINKEDIN · carrusel en PDF (documento)",
             "redes": [
               "linkedin"
             ],
             "red_principal": "linkedin",
-            "producto": "Máster",
-            "audiencia": "prospectos del Máster que comparan programas y dudan de la validez del certificado",
+            "producto": "Acero",
+            "audiencia": "ingenieros que calculan vigas de acero en software",
             "estado": "COMPLETA",
-            "titulo": "¿Ese certificado sirve fuera de tu país?",
-            "eje": "NÚCLEO-BIM",
-            "pilar": "Objeción · certificado",
-            "hook": "Antes de pagar un curso por el certificado, hay cinco preguntas que conviene hacer.",
-            "pieza_base": "oct-obj-certificado-carrusel (Jue 22)",
-            "copy": "Antes de pagar un curso por el certificado, hay cinco preguntas que conviene hacer.\n\n1. ¿Quién lo emite? Un certificado de participación de una academia no es lo mismo que una certificación del fabricante del software o un título universitario.\n2. ¿Se puede comprobar? Pregunta cómo verifica un empleador que es real.\n3. ¿Qué valida exactamente? Un programa, una metodología o un grado académico. No abren las mismas puertas.\n4. ¿Qué NO es? Ningún certificado de curso reemplaza tu título profesional ni tu registro para firmar planos.\n5. ¿Lo piden donde quieres trabajar? Pregúntale a una empresa de allá. Esa respuesta vale más que cualquier anuncio, incluido el nuestro.\n\nNuestra respuesta, sin adornos: el Máster Internacional en BIM Management e Inteligencia Artificial da título convalidado en EE. UU., certificaciones oficiales de Autodesk y una microcredencial por bloque. No reemplaza tu título ni tu registro profesional.\n\n¿Qué otra pregunta le harían a un curso antes de pagarlo?\n\n#BIM #FormaciónProfesional\n\nSi quieren saber en qué bloque del Máster les conviene empezar, el test de nivel es gratis: https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form",
+            "titulo": "La verificación que más se omite: pandeo lateral-torsional",
+            "eje": "NÚCLEO-ACERO",
+            "pilar": "Lead magnet ACERO · pandeo lateral-torsional",
+            "hook": "Una viga que verifica a flexión no necesariamente es una viga segura. El pandeo lateral-torsional es una de las verificaciones que con mayor frecuencia se omite en el diseño de estructuras de acero.",
+            "pieza_base": "oct-lm-acero-pandeo-lt-carrusel (mismas láminas)",
+            "copy": "Una viga que verifica a flexión no necesariamente es una viga segura. El pandeo lateral-torsional es una de las verificaciones que con mayor frecuencia se omite en el diseño de estructuras de acero.\n\nEl motivo es comprensible: en el modelo, la viga es una línea, y esa línea no distingue si el ala comprimida está arriostrada por viguetas cada 2 m o si no tiene apoyo lateral en un vano de 9 m.\n\nLa capacidad de la viga depende de la longitud no arriostrada del ala en compresión, no únicamente del perfil. Por ello conviene revisar:\n\n- La longitud no arriostrada Lb frente a los límites Lp y Lr.\n- El coeficiente Cb correspondiente al diagrama de momento real, en lugar de adoptar 1,0 por costumbre. En ocasiones, esto permite optimizar el perfil.\n\nReferencia: AISC 360-16, capítulo F, sección F2.\n\nUna recomendación práctica antes de aceptar un perfil: verificar dónde estará arriostrada el ala superior en obra, no solo en el modelo. Si ese arriostramiento no se va a construir, el cálculo deja de ser válido.\n\nCompartimos sin costo una guía con las 5 verificaciones esenciales en acero, dirigida a quienes diseñan y calculan en software: https://funnel.dgdesignmodeling.com/acceso-gratis-verificacion-acero-form\n\n¿Qué criterio aplica su equipo para definir el arriostramiento lateral de las vigas?",
             "primer_comentario": "",
-            "slides_nota": "Láminas 1 a 6 de oct-obj-certificado-carrusel a PDF horizontal. La lámina 7 se queda con los certificados reales del Máster (escaneos o PDF oficiales, sin datos de ningún alumno), pero sin «Comenta NIVEL»: cierra con la pregunta del post.",
+            "slides_nota": "Las mismas láminas del carrusel de Instagram, exportadas a PDF y subidas como documento. Se quita la última lámina (la de «Comenta …»): en LinkedIn no hay bot que conteste; el enlace va en el texto del post.",
             "cta": {
-              "linkedin": "Pregunta abierta al cierre. Enlace dentro del post (no en el primer comentario)."
+              "linkedin": "Pregunta abierta al cierre. Enlace dentro del post. Sin hashtags ni emojis."
             },
             "cta_por_red": {
-              "linkedin": "Pregunta abierta al cierre. Enlace dentro del post (no en el primer comentario)."
+              "linkedin": "Pregunta abierta al cierre. Enlace dentro del post. Sin hashtags ni emojis."
             },
-            "notas_produccion": "Voz de marca. Sin precio del Máster. La lista de certificados del texto tiene que ser idéntica a la de la lámina 7. | 17-oct (Dayana): nada de enlaces en el primer comentario; el enlace va dentro del post.",
-            "origen": "calendario-octubre (fase 2)",
-            "condicion": "El carrusel del feed está «COMPLETA · falta confirmar lista de certificados». Si la lista cambia, se cambia también el párrafo «Nuestra respuesta» del post."
+            "notas_produccion": "Publica Daniela en la página de Design Modeling Academy. 19-oct (Dayana): en lo que queda de octubre LinkedIn lo publica Daniela, solo en la cuenta de Design Modeling Academy y solo los carruseles (2 por semana). Tono formal, sin hashtags ni emojis, enlace dentro del post. Sin precio de Acero.",
+            "origen": "calendario-octubre (fase 2)"
           }
         },
         {
-          "fecha": "Lun 26",
-          "fecha_iso": "2026-10-26",
+          "fecha": "Mar 27",
+          "fecha_iso": "2026-10-27",
           "semana": "Semana 4 (26 oct-1 nov)",
           "id": "oct-li-1026-academy",
           "titulo": "Sabes montar una nave",
           "tipo": "problema",
-          "formato_publicacion": "LINKEDIN · PDF (carrusel rediagramado a horizontal)",
+          "formato_publicacion": "LINKEDIN · carrusel en PDF (documento)",
           "idea": {
             "titulo": "Sabes montar una nave",
-            "formato": "LINKEDIN · PDF (carrusel rediagramado a horizontal)",
-            "desarrollo": "Sabes montar una nave. ¿Por qué todavía no la calculas tú?"
+            "formato": "LINKEDIN · carrusel en PDF (documento)",
+            "desarrollo": "La experiencia en obra aporta un conocimiento que ningún software enseña: cómo se ensambla una estructura de acero, qué detalles fallan y qué uniones no pueden soldarse en sitio."
           },
           "cuenta": "Design Modeling Academy",
           "contenido": {
             "id": "oct-li-1026-academy",
-            "fecha": "Lun 26 oct",
-            "fecha_iso": "2026-10-26",
+            "fecha": "Mar 27 oct",
+            "fecha_iso": "2026-10-27",
             "semana": "Semana 4 (26 oct-1 nov)",
             "grupo": "GRUPO 4 · LinkedIn",
             "cuenta": "Design Modeling Academy",
             "tipo": "problema",
             "formato": "linkedin",
-            "formato_detalle": "LINKEDIN · PDF (carrusel rediagramado a horizontal)",
+            "formato_detalle": "LINKEDIN · carrusel en PDF (documento)",
             "redes": [
               "linkedin"
             ],
@@ -4180,218 +4138,69 @@
             "titulo": "Sabes montar una nave",
             "eje": "NÚCLEO-BIM",
             "pilar": "Ángulo 8 · De la obra al software",
-            "hook": "Sabes montar una nave. ¿Por qué todavía no la calculas tú?",
-            "pieza_base": "oct-ang8-obra-software-carrusel (Lun 26)",
-            "copy": "Sabes montar una nave. ¿Por qué todavía no la calculas tú?\n\nEn obra se aprende lo que ningún software enseña: cómo se arma una estructura de acero, qué falla y qué no se puede soldar en sitio.\n\nPero el plano llega hecho. Y el que decide la estructura es el que la calcula.\n\nEl salto no es soldar mejor. Es llevar esa experiencia a Revit y Robot: modelar la nave, calcularla y verificar las uniones. Ahí la obra vale doble, porque sabes si una unión se puede armar antes de dibujarla.\n\nY conviene decirlo claro: si lo que quieres es fabricar o montar mejor, este camino no es para ti. Es para quien quiere diseñar y calcular en software.\n\n¿Cuántos años de obra tienen, y cuántos de esos proyectos habrían podido calcular ustedes?\n\n#Acero #IngenieríaEstructural\n\nPara probar si un diseño en acero aguanta, la guía gratuita de las 5 verificaciones: https://funnel.dgdesignmodeling.com/acceso-gratis-verificacion-acero-form",
+            "hook": "La experiencia en obra aporta un conocimiento que ningún software enseña: cómo se ensambla una estructura de acero, qué detalles fallan y qué uniones no pueden soldarse en sitio.",
+            "pieza_base": "oct-ang8-obra-software-carrusel (mismas láminas)",
+            "copy": "La experiencia en obra aporta un conocimiento que ningún software enseña: cómo se ensambla una estructura de acero, qué detalles fallan y qué uniones no pueden soldarse en sitio.\n\nSin embargo, en la mayoría de los proyectos el plano llega definido, y las decisiones estructurales las toma quien realiza el cálculo.\n\nPara un profesional con experiencia en montaje, el paso siguiente no es perfeccionar la ejecución, sino trasladar ese conocimiento al diseño: modelar la nave en Revit, calcularla en Robot y verificar sus uniones. En esa etapa, la experiencia de obra adquiere un valor adicional, porque permite anticipar si una unión es constructible antes de dibujarla.\n\nConviene precisarlo: este camino está orientado a quienes desean diseñar y calcular estructuras en software, no a quienes buscan especializarse en fabricación o montaje.\n\nPara evaluar un diseño en acero, compartimos sin costo nuestra guía de las 5 verificaciones esenciales: https://funnel.dgdesignmodeling.com/acceso-gratis-verificacion-acero-form\n\n¿Cuántos de los proyectos en los que ha participado en obra podría haber calculado su propio equipo?",
             "primer_comentario": "",
-            "slides_nota": "Láminas 1 a 6 de oct-ang8-obra-software-carrusel a PDF horizontal: foto real de obra (con permiso) y pantallazo real de Revit/Robot lado a lado, que en horizontal respiran mejor. La lámina 7 cambia: sin «Comenta ACERO»; cierra con la pregunta del post.",
+            "slides_nota": "Las mismas láminas del carrusel de Instagram, exportadas a PDF y subidas como documento. Se quita la última lámina (la de «Comenta …»): en LinkedIn no hay bot que conteste; el enlace va en el texto del post.",
             "cta": {
-              "linkedin": "Pregunta abierta al cierre. Enlace dentro del post (no en el primer comentario)."
+              "linkedin": "Pregunta abierta al cierre. Enlace dentro del post. Sin hashtags ni emojis."
             },
             "cta_por_red": {
-              "linkedin": "Pregunta abierta al cierre. Enlace dentro del post (no en el primer comentario)."
+              "linkedin": "Pregunta abierta al cierre. Enlace dentro del post. Sin hashtags ni emojis."
             },
-            "notas_produccion": "Voz de marca. Sin precio de Acero en orgánico. La lámina 6 (fabricar ✗ · diseñar y calcular ✓) se mantiene: filtra a propósito. | 17-oct (Dayana): nada de enlaces en el primer comentario; el enlace va dentro del post.",
+            "notas_produccion": "Publica Daniela en la página de Design Modeling Academy. 19-oct (Dayana): en lo que queda de octubre LinkedIn lo publica Daniela, solo en la cuenta de Design Modeling Academy y solo los carruseles (2 por semana). Tono formal, sin hashtags ni emojis, enlace dentro del post. Sin precio de Acero.",
             "origen": "calendario-octubre (fase 2)"
           }
         },
         {
-          "fecha": "Mar 27",
-          "fecha_iso": "2026-10-27",
+          "fecha": "Jue 29",
+          "fecha_iso": "2026-10-29",
           "semana": "Semana 4 (26 oct-1 nov)",
-          "id": "oct-li-1021-dg",
-          "titulo": "Exportas, la IA ordena, tú compruebas",
-          "tipo": "caso / metodología",
-          "formato_publicacion": "LINKEDIN · video HORIZONTAL 16:9 (30-45 s) + texto",
-          "idea": {
-            "titulo": "Exportas, la IA ordena, tú compruebas",
-            "formato": "LINKEDIN · video HORIZONTAL 16:9 (30-45 s) + texto",
-            "desarrollo": "Exportas la tabla. La IA la ordena. Tú compruebas tres filas a mano antes de fiarte."
-          },
-          "cuenta": "Design Modeling DG",
-          "contenido": {
-            "id": "oct-li-1021-dg",
-            "fecha": "Mar 27 oct",
-            "fecha_iso": "2026-10-27",
-            "semana": "Semana 4 (26 oct-1 nov)",
-            "grupo": "GRUPO 4 · LinkedIn",
-            "cuenta": "Design Modeling DG",
-            "tipo": "caso / metodología",
-            "formato": "linkedin",
-            "formato_detalle": "LINKEDIN · video HORIZONTAL 16:9 (30-45 s) + texto",
-            "redes": [
-              "linkedin"
-            ],
-            "red_principal": "linkedin",
-            "producto": "Máster (test de nivel)",
-            "audiencia": "ingenieros estructurales y coordinadores BIM (perfil técnico)",
-            "estado": "COMPLETA",
-            "titulo": "Exportas, la IA ordena, tú compruebas",
-            "eje": "NÚCLEO-IA",
-            "pilar": "Metodología · IA sobre lo que exportas",
-            "hook": "Exportas la tabla. La IA la ordena. Tú compruebas tres filas a mano antes de fiarte.",
-            "pieza_base": "oct-acusa-ia-calculo-reel (Mar 27)",
-            "copy": "Exportas la tabla. La IA la ordena. Tú compruebas tres filas a mano antes de fiarte.\n\nEse es el flujo que usamos para el trabajo de información de un proyecto de estructuras. Es lo que se ve en el video:\n\nArmaduras: la tabla de planificación de Revit exportada, y el peso por diámetro con Ø²/162 kg/m por la longitud.\nCombinaciones: la tabla de la norma del proyecto y los casos de carga. La matriz la arma la IA; cada factor se verifica contra la norma antes de entrar a Robot.\nResultados: la tabla de esfuerzos de Robot exportada a Excel (CSV) y un filtro de máximos por barra y por combinación. El máximo tiene que tener sentido físico.\nCoordinación: el informe del Clash Detective de Navisworks en HTML tabular, agrupado por disciplina y nivel, con las observaciones redactadas.\n\nLa IA aquí es un asistente de chat que trabaja sobre lo que exportas. No modela, no calcula y no firma.\n\n¿En qué punto de su flujo meterían la IA primero?\n\n#BIM #IngenieríaEstructural\n\nSi quieren saber por dónde empezar con BIM + IA, el test de nivel es gratis: https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form",
-            "primer_comentario": "",
-            "slides_nota": "No es PDF. Video: las grabaciones de pantalla del reel oct-acusa-ia-calculo-reel (Revit, chat de IA, Robot, Navisworks) en su 16:9 original, antes del recorte vertical. Sin los planos de Gabriel a cámara (son verticales). Subtítulos quemados: EXPORTAS → LA IA ORDENA → TÚ COMPRUEBAS. Sin placa de «Comenta NIVEL».",
-            "cta": {
-              "linkedin": "Pregunta abierta al cierre. Enlace dentro del post (no en el primer comentario)."
-            },
-            "cta_por_red": {
-              "linkedin": "Pregunta abierta al cierre. Enlace dentro del post (no en el primer comentario)."
-            },
-            "notas_produccion": "Voz de marca DG. Rutas de exportación verificadas en carruseles-y-reels-acusacion-octubre.json (campo verificado). Sin nombres de clientes ni proyectos visibles en pantalla. | 17-oct (Dayana): nada de enlaces en el primer comentario; el enlace va dentro del post.",
-            "origen": "calendario-octubre (fase 2)",
-            "condicion": "[PENDIENTE Dayana] Confirmar que DG usa este flujo en sus proyectos; si no, cambiar «el flujo que usamos» por «el flujo que enseñamos»."
-          }
-        },
-        {
-          "fecha": "Mar 27",
-          "fecha_iso": "2026-10-27",
-          "semana": "Semana 4 (26 oct-1 nov)",
-          "id": "oct-li-1027-gabriel",
-          "titulo": "Botones y orden",
+          "id": "oct-li-1023-academy",
+          "titulo": "¿Ese certificado sirve fuera de tu país?",
           "tipo": "objeción",
-          "formato_publicacion": "LINKEDIN · post de texto",
+          "formato_publicacion": "LINKEDIN · carrusel en PDF (documento)",
           "idea": {
-            "titulo": "Botones y orden",
-            "formato": "LINKEDIN · post de texto",
-            "desarrollo": "Si ya viste 20 videos de acero y todavía no te atreves con una nave, no es tu culpa."
+            "titulo": "¿Ese certificado sirve fuera de tu país?",
+            "formato": "LINKEDIN · carrusel en PDF (documento)",
+            "desarrollo": "Antes de invertir en un programa de formación por su certificación, recomendamos plantear cinco preguntas:"
           },
-          "cuenta": "Gabriel Pantoja (primera persona)",
+          "cuenta": "Design Modeling Academy",
           "contenido": {
-            "id": "oct-li-1027-gabriel",
-            "fecha": "Mar 27 oct",
-            "fecha_iso": "2026-10-27",
+            "id": "oct-li-1023-academy",
+            "fecha": "Jue 29 oct",
+            "fecha_iso": "2026-10-29",
             "semana": "Semana 4 (26 oct-1 nov)",
             "grupo": "GRUPO 4 · LinkedIn",
-            "cuenta": "Gabriel Pantoja (primera persona)",
+            "cuenta": "Design Modeling Academy",
             "tipo": "objeción",
             "formato": "linkedin",
-            "formato_detalle": "LINKEDIN · post de texto",
-            "redes": [
-              "linkedin"
-            ],
-            "red_principal": "linkedin",
-            "producto": "Acero",
-            "audiencia": "ingenieros que ya vieron tutoriales de acero y no se atreven con un proyecto completo",
-            "estado": "COMPLETA",
-            "titulo": "Botones y orden",
-            "eje": "NÚCLEO-BIM",
-            "pilar": "Objeción · muchos cursos, ninguno aplicable",
-            "hook": "Si ya viste 20 videos de acero y todavía no te atreves con una nave, no es tu culpa.",
-            "pieza_base": "oct-obj-cursos-youtube-reel (Mar 27)",
-            "copy": "Si ya viste 20 videos de acero y todavía no te atreves con una nave, no es tu culpa.\n\nVer tutoriales no es perder el tiempo. Pero casi todos enseñan botones: dónde está cada comando. Muy pocos enseñan el orden de un proyecto: qué calculas primero, qué verificas después y qué entregas al final.\n\nLo que da confianza para aceptar una nave es haber hecho una completa, de las cargas a los planos. Y tener a quién preguntar cuando te trabas.\n\nEsa segunda parte era el punto débil de estudiar en diferido. La duda aparece de noche, cuando no hay nadie al otro lado. En la Especialización en Acero la resolvimos con un tutor de IA entrenado con las clases del programa: le escribes la duda y te dice en qué lección y en qué minuto se explicó. Si algo no está en las clases, lo dice.\n\nNo reemplaza el criterio ni la asesoría. Acorta el «¿dónde estaba esto?».\n\nPara quien quiera ver el temario de la Especialización en Diseño Estructural BIM en Acero: https://designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero\n\n¿Qué fue lo último que no les salió en un proyecto de acero?",
-            "primer_comentario": "",
-            "slides_nota": "No aplica: post de texto sin adjunto.",
-            "cta": {
-              "linkedin": "Pregunta abierta al cierre. Enlace dentro del post (no en el primer comentario)."
-            },
-            "cta_por_red": {
-              "linkedin": "Pregunta abierta al cierre. Enlace dentro del post (no en el primer comentario)."
-            },
-            "notas_produccion": "Primera persona, sin hashtags. Sin precio de Acero en orgánico. | 17-oct (Dayana): nada de enlaces en el primer comentario; el enlace va dentro del post.",
-            "origen": "calendario-octubre (fase 2)",
-            "condicion": "Solo si el botón del Tutor IA ya está en los 4 cursos de Acero (tutor-acero/MONTAJE-GHL.md). Si no, se borra el párrafo del tutor y el post cierra en «Y tener a quién preguntar cuando te trabas». [PENDIENTE Gabriel] Validar el texto."
-          }
-        },
-        {
-          "fecha": "Vie 30",
-          "fecha_iso": "2026-10-30",
-          "semana": "Semana 4 (26 oct-1 nov)",
-          "id": "oct-li-1028-dg",
-          "titulo": "Una nave, en el orden en que se revisa",
-          "tipo": "caso / metodología",
-          "formato_publicacion": "LINKEDIN · video HORIZONTAL 16:9 (30-45 s) + texto",
-          "idea": {
-            "titulo": "Una nave, en el orden en que se revisa",
-            "formato": "LINKEDIN · video HORIZONTAL 16:9 (30-45 s) + texto",
-            "desarrollo": "Una nave de acero no se aprueba por el modelo. Se aprueba por el orden en que se revisó."
-          },
-          "cuenta": "Design Modeling DG",
-          "contenido": {
-            "id": "oct-li-1028-dg",
-            "fecha": "Vie 30 oct",
-            "fecha_iso": "2026-10-30",
-            "semana": "Semana 4 (26 oct-1 nov)",
-            "grupo": "GRUPO 4 · LinkedIn",
-            "cuenta": "Design Modeling DG",
-            "tipo": "caso / metodología",
-            "formato": "linkedin",
-            "formato_detalle": "LINKEDIN · video HORIZONTAL 16:9 (30-45 s) + texto",
-            "redes": [
-              "linkedin"
-            ],
-            "red_principal": "linkedin",
-            "producto": "Acero",
-            "audiencia": "ingenieros estructurales y oficinas que diseñan acero (perfil técnico)",
-            "estado": "COMPLETA",
-            "titulo": "Una nave, en el orden en que se revisa",
-            "eje": "NÚCLEO-BIM",
-            "pilar": "Metodología · proyecto de acero de principio a fin",
-            "hook": "Una nave de acero no se aprueba por el modelo. Se aprueba por el orden en que se revisó.",
-            "pieza_base": "oct-obj-cursos-youtube-reel (Jue 29) · pantallazos del proyecto del curso",
-            "copy": "Una nave de acero no se aprueba por el modelo. Se aprueba por el orden en que se revisó.\n\nEn el video va la secuencia completa de una nave de pórticos, con pantallazos reales:\n\n1. El modelo analítico en Robot.\n2. Las cargas y sus combinaciones, con la tabla de la norma del proyecto.\n3. El análisis sísmico.\n4. La verificación de las uniones.\n5. Los planos que salen de Revit.\n\nSaltarse un paso no siempre se nota en el render. Se nota cuando la unión no se puede armar en obra o cuando el revisor devuelve la memoria.\n\n¿Qué paso de esta secuencia es el que más se omite cuando hay prisa?\n\n#Acero #BIM\n\nPara revisar un diseño en acero antes de firmarlo, la guía gratuita de las 5 verificaciones: https://funnel.dgdesignmodeling.com/acceso-gratis-verificacion-acero-form",
-            "primer_comentario": "",
-            "slides_nota": "No es PDF. Video 16:9 montado con los pantallazos reales del proyecto del curso que usa el reel del Mar 27 (nave → cargas → sismo → uniones → plano), en su proporción original. Texto en pantalla: el número y el nombre de cada paso. Sin voz o con locución de Gabriel grabada aparte. Sin placa de «Comenta ACERO».",
-            "cta": {
-              "linkedin": "Pregunta abierta al cierre. Enlace dentro del post (no en el primer comentario)."
-            },
-            "cta_por_red": {
-              "linkedin": "Pregunta abierta al cierre. Enlace dentro del post (no en el primer comentario)."
-            },
-            "notas_produccion": "Voz de marca DG. Pantallazos sin nombre de cliente ni de proyecto. Sin cifras de norma en pantalla. | 17-oct (Dayana): nada de enlaces en el primer comentario; el enlace va dentro del post.",
-            "origen": "calendario-octubre (fase 2)"
-          }
-        },
-        {
-          "fecha": "Vie 30",
-          "fecha_iso": "2026-10-30",
-          "semana": "Semana 4 (26 oct-1 nov)",
-          "id": "oct-li-1030-gabriel",
-          "titulo": "Lo caro no es el curso",
-          "tipo": "objeción",
-          "formato_publicacion": "LINKEDIN · post de texto",
-          "idea": {
-            "titulo": "Lo caro no es el curso",
-            "formato": "LINKEDIN · post de texto",
-            "desarrollo": "Lo caro no es el curso. Es el proyecto que no pudiste aceptar."
-          },
-          "cuenta": "Gabriel Pantoja (primera persona)",
-          "contenido": {
-            "id": "oct-li-1030-gabriel",
-            "fecha": "Vie 30 oct",
-            "fecha_iso": "2026-10-30",
-            "semana": "Semana 4 (26 oct-1 nov)",
-            "grupo": "GRUPO 4 · LinkedIn",
-            "cuenta": "Gabriel Pantoja (primera persona)",
-            "tipo": "objeción",
-            "formato": "linkedin",
-            "formato_detalle": "LINKEDIN · post de texto",
+            "formato_detalle": "LINKEDIN · carrusel en PDF (documento)",
             "redes": [
               "linkedin"
             ],
             "red_principal": "linkedin",
             "producto": "Máster",
-            "audiencia": "prospectos que frenan por dinero y flujo de caja",
+            "audiencia": "prospectos del Máster que comparan programas y dudan de la validez del certificado",
             "estado": "COMPLETA",
-            "titulo": "Lo caro no es el curso",
+            "titulo": "¿Ese certificado sirve fuera de tu país?",
             "eje": "NÚCLEO-BIM",
-            "pilar": "Objeción · dinero",
-            "hook": "Lo caro no es el curso. Es el proyecto que no pudiste aceptar.",
-            "pieza_base": "oct-obj-dinero-post (Vie 30)",
-            "copy": "Lo caro no es el curso. Es el proyecto que no pudiste aceptar.\n\nEn las llamadas de venta del equipo, la objeción que más se repite no habla del temario. Es «cuando me paguen».\n\nLa entiendo. El flujo de caja de un ingeniero independiente es irregular, y nadie debería endeudarse por un curso.\n\nPero hay otro costo que no llega en factura. El concurso que pedía certificación BIM y no pasó el primer filtro. Las naves que se rechazaron porque no había quién las calculara. El cliente que se fue con otro que entregaba en la mitad de tiempo.\n\nEse costo no se ve en el mes. Se ve al final del año, sumando lo que no entró.\n\nSi hoy no llegas a fin de mes, empieza por lo gratis y vuelve cuando puedas. Y si ya estás dejando pasar proyectos, haz la cuenta de cuánto te costaron.\n\nPara empezar por lo gratis: el test de nivel BIM te dice en qué punto estás y qué te falta. https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form\n\n¿Qué proyecto dejaron pasar por no saber algo?",
+            "pilar": "Objeción · certificado",
+            "hook": "Antes de invertir en un programa de formación por su certificación, recomendamos plantear cinco preguntas:",
+            "pieza_base": "oct-obj-certificado-carrusel (mismas láminas)",
+            "copy": "Antes de invertir en un programa de formación por su certificación, recomendamos plantear cinco preguntas:\n\n1. ¿Quién la emite? Un certificado de participación otorgado por una academia no equivale a una certificación del fabricante del software ni a un título universitario.\n2. ¿Es verificable? Es importante saber cómo puede un empleador comprobar su autenticidad.\n3. ¿Qué valida exactamente? El dominio de un programa, una metodología (por ejemplo, ISO 19650) o un grado académico. Cada uno tiene un alcance distinto.\n4. ¿Qué no reemplaza? Ningún certificado de curso sustituye el título profesional ni el registro habilitante para firmar planos.\n5. ¿Es requerido en el mercado de interés? La mejor referencia es consultar directamente a las empresas del país donde se desea trabajar.\n\nEn el caso del Máster Internacional en BIM Management e Inteligencia Artificial, la respuesta es concreta: título convalidado en Estados Unidos, certificaciones oficiales de Autodesk y una microcredencial por cada bloque. No reemplaza el título ni el registro profesional.\n\nSi desea identificar el bloque más adecuado para comenzar, puede realizar nuestro test de nivel BIM gratuito: https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form\n\n¿Qué otro criterio considera indispensable al evaluar un programa de formación?",
             "primer_comentario": "",
-            "slides_nota": "No aplica: post de texto sin adjunto.",
+            "slides_nota": "Las mismas láminas del carrusel de Instagram, exportadas a PDF y subidas como documento. Se quita la última lámina (la de «Comenta …»): en LinkedIn no hay bot que conteste; el enlace va en el texto del post.",
             "cta": {
-              "linkedin": "Pregunta abierta al cierre. Enlace dentro del post (no en el primer comentario)."
+              "linkedin": "Pregunta abierta al cierre. Enlace dentro del post. Sin hashtags ni emojis."
             },
             "cta_por_red": {
-              "linkedin": "Pregunta abierta al cierre. Enlace dentro del post (no en el primer comentario)."
+              "linkedin": "Pregunta abierta al cierre. Enlace dentro del post. Sin hashtags ni emojis."
             },
-            "notas_produccion": "Primera persona, sin hashtags. SIN PRECIO ni descuento: el precio del Máster se habla en la llamada. La respuesta honesta sobre no endeudarse va a propósito. | 17-oct (Dayana): nada de enlaces en el primer comentario; el enlace va dentro del post.",
+            "notas_produccion": "Publica Daniela en la página de Design Modeling Academy. 19-oct (Dayana): en lo que queda de octubre LinkedIn lo publica Daniela, solo en la cuenta de Design Modeling Academy y solo los carruseles (2 por semana). Tono formal, sin hashtags ni emojis, enlace dentro del post. La lista de certificados del texto tiene que ser idéntica a la de la lámina; Dayana la confirma antes de publicar. Sin precio del Máster.",
             "origen": "calendario-octubre (fase 2)",
-            "condicion": "[PENDIENTE Gabriel] Validar el texto antes de publicar."
+            "condicion": "El carrusel del feed está «COMPLETA · falta confirmar lista de certificados». Si la lista cambia, se cambia también el párrafo «Nuestra respuesta» del post."
           }
         }
       ]
