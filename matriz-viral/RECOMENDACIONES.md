@@ -38,9 +38,11 @@ estado: 🔴 pendiente · 🟡 en curso · 🟢 hecho · ⚫ descartada (con el 
 | 20 | **Ponerle palabra de recurso a cada dato de cálculo.** El de la fórmula del acero (2-oct) fue lo más guardado de la semana (91) y solo sacó 10 comentarios | Revisión 5-oct | Contenido | 🔴 |
 | 21 | **Comprobar que los comentarios de Facebook reciben el DM.** El post de MEMORIA del 1-oct sacó 192 comentarios en FB (6 veces Instagram). Si el workflow de GHL solo escucha Instagram, esa gente se queda sin el recurso | Revisión 5-oct | Patricio / Dayana | 🔴 |
 | 22 | **Conectar el seguimiento por correo de MEMORIA.** Entraron 104 contactos en 7 días y después del acceso no reciben nada | Revisión 5-oct | Ester | 🔴 |
-| 23 | **El post de la deriva (9-oct) pedía ACERO, tuvo 10 comentarios y el embudo ACERO no sumó a nadie en 7 días.** Revisar que el workflow «Comentario ACERO» de GHL escuche ese post (o cualquier publicación) y mandar el recurso a mano a quienes comentaron | Revisión 12-oct | Patricio / Dayana | 🔴 |
+| 23 | ~~El embudo ACERO no sumaba a nadie~~ · **Resuelto:** en la semana del 12 al 18 sumó 21 contactos del bot y 21 leads (el post de las naves pidió ACERO y sacó 18 comentarios). Lo que queda es el formulario: solo 3 accesos (14 %), ya en el checklist de octubre | Revisión 12-oct → 19-oct | — | 🟢 |
 | 24 | **Publicar el reel del sábado 10 (`oct-clase-chatgpt-seguidor-reel`)**, que está editado y no salió. Si ya no cabe, pasarlo al banco de reserva | Revisión 12-oct | Contenido | 🔴 |
 | 25 | **Las piezas de producto llevan palabra viva y pregunta.** El carrusel del tutor del Diplomado pedía DIPLOMADO o DM, palabra que no está montada, y quedó en 0 comentarios con 3.230 vistas | Revisión 12-oct | Contenido | 🔴 |
+| 26 | **Comprobar que los 21 comentarios COTIZA del carrusel del Jue 15 recibieron el cotizador.** COTIZA no tiene campaña en OpenReply y GHL solo sumó 1 contacto del bot en 7 días. Crear la campaña de Instagram en OpenReply (la arma Dayana) y mandar el enlace a mano a quienes comentaron sin respuesta | Revisión 19-oct | Dayana | 🔴 |
+| 27 | **Los reels de valor de la semana del 26 salen con la edición ganadora del nicho** (demo en pantalla con titular fijo, `matriz/EDICION-GANADORA-NICHO.md`) y cierran con pregunta directa + palabra. Los tres reels de octubre suman 2 comentarios en Instagram | Revisión 19-oct | Gabriel / Daniela | 🔴 |
 | 16 | **Tres piezas del calendario siguen sin salir:** `pauta-guia` (Mar 8, reel), `lm-revit-chatgpt-feed` (Jue 10, carrusel) y `reel-advertencias` (Vie 18, reel). El del Jue 10 no necesita cámara | Revisión 21-sep | Contenido | 🔴 |
 
 ---
@@ -62,7 +64,7 @@ Estas ya no se discuten cada semana. Salieron de medir.
 | **Lo institucional va a historias, no a feed** | «Somos el equipo detrás»: 2.164 views, 7 likes, 0 guardados |
 | **Las piezas de evento no llevan CTA de producto** y se miden por alcance, no por comentarios | Civil 3D: 5.469 views, 0 comentarios, 0 guardados. Es presencia |
 | **Facebook es canal propio, no espejo.** Cada pieza fuerte se publica cuidada en FB | 9.103 de las 11.193 views del ganador vinieron de Facebook |
-| **Anunciar el producto, solo, no conversa.** Toda pieza de producto lleva una palabra viva y una pregunta al lector | 3 semanas seguidas. 21-sep y 28-sep: tutor 2 comentarios, Máster 1. 5-oct: tutor del Diplomado 3.230 vistas y 0 comentarios. En las mismas semanas, los datos de cálculo con palabra hicieron 10 (deriva) y los recursos MEMORIA 82 |
+| **Anunciar el producto, solo, no conversa.** Toda pieza de producto lleva una palabra viva y una pregunta al lector | 3 semanas seguidas. 21-sep y 28-sep: tutor 2 comentarios, Máster 1. 5-oct: tutor del Diplomado 3.230 vistas y 0 comentarios. 12-oct: post de las clases grabadas del Diplomado, 946 vistas y 0 en todo. En las mismas semanas, los datos de cálculo con palabra hicieron 10 (deriva) y los recursos MEMORIA 82 |
 
 ### Pauta
 
@@ -90,6 +92,10 @@ Estas ya no se discuten cada semana. Salieron de medir.
 ---
 
 ## Historial
+
+### 19-oct-2026 · Revisión semanal (12–18 oct)
+
+**La pieza más grande de octubre:** «La IA no te sirve para calcular por ti» (Lun 12) con 9.945 vistas, 144 guardados, 28 compartidos y 14 seguidores nuevos: gancho que acusa un hábito + el trabajo útil de alrededor. **Los recursos con palabra se llevaron la conversación:** COTIZA (21 comentarios) y las naves con ACERO (18) suman 39 de los 52 comentarios. **Los reels no conversan:** el de OneFilter y uno fuera del calendario, 0 comentarios cada uno. El post del producto (clases grabadas) volvió a 0, cuarta semana. Mediana: 2.438 vistas, 6,5 comentarios y 9 guardados (septiembre: 2.224 / 8,5 / 7). Salieron 5 de 6 piezas; el testimonio pasa al Vie 23. ACERO ya suma contactos (21 en 7 días) pero solo 3 accesos. → recomendaciones #23 (🟢), #26 y #27.
 
 ### 12-oct-2026 · Revisión semanal (5–11 oct)
 
