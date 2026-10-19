@@ -52,6 +52,7 @@ Cada archivo es el `src/Composition.tsx` de un video ya aprobado; se copian a un
   - **Encuadre a la cara**: si el clip es horizontal, YuNet (OpenCV) busca la cara y recorta el 9:16 centrado en ella (mediana, para que no baile).
   - **Receta** (`receta.json`): tramos por clip, velocidad (1.2× Gabriel, 1.1× clases) y LUFS. Se edita a mano y `render` rehace solo los clips cuya parte cambió.
   - **Volumen** a −14 LUFS en dos pasadas con pico máximo −1 dBTP (en voz suele quedar en −14,5 a −15 por el límite de pico).
+- `scripts/musica_original.py`: música de fondo generada por código (lo-fi suave, sin muestras de terceros, sin reclamos de copyright). `python3 video-recursos/scripts/musica_original.py 31 musica.wav` y se mezcla a `volume=0.13` bajo la voz.
 - `scripts/bajar_recursos.py`: baja del manifiesto lo que se le pida.
 - `scripts/recortar_gabriel.sh`: recorta a Gabriel (rembg `u2net_human_seg`) y deja un WebM con transparencia para el estilo 8a.
 

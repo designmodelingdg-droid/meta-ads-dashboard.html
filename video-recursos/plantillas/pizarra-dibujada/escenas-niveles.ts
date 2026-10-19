@@ -110,20 +110,20 @@ const pagina = (id: number, tm: Tm, n: string, code: string, label: string, k: n
 
 // ---------- 0 · Portada (ya dibujada en el fotograma 0) ----------
 const portada = (tm: Tm) => {
+  // PORTADA dentro del recorte 3:4 de la cuadrícula de Instagram (y 240–1680): todo entre y≈300 y 1580
   const pre = new Scene(0, -8, 4);
-  pre.text(540, 380, "SIMBOLOGÍA", 172, { color: NAVY });
-  pre.text(540, 560, "DE NIVELES", 172, { color: NAVY });
-  pre.text(540, 700, "EN PLANOS", 112, { color: "#D78631" });
-  pre.stroke([[230, 655], [300, 655]], "#D78631", 7, { wob: 0.5 });
-  pre.stroke([[780, 655], [850, 655]], "#D78631", 7, { wob: 0.5 });
-  simbolo(pre, 300, 1080, 150, 520, 9);
+  pre.text(540, 470, "SIMBOLOGÍA", 160, { color: NAVY });
+  pre.text(540, 630, "DE NIVELES", 160, { color: NAVY });
+  pre.text(540, 760, "EN PLANOS", 104, { color: "#D78631" });
+  pre.stroke([[250, 718], [320, 718]], "#D78631", 7, { wob: 0.5 });
+  pre.stroke([[760, 718], [830, 718]], "#D78631", 7, { wob: 0.5 });
+  simbolo(pre, 320, 1150, 140, 540, 9);
   const codes = ["N±0.00", "NPT", "NCP", "NFP", "NR", "NTN"];
   codes.forEach((c, i) => {
-    const y = 905 + i * 72;
-    pre.text(600, y, c, 64, { anchor: "start", color: i === 0 ? "#D78631" : NAVY });
+    pre.text(610, 985 + i * 70, c, 62, { anchor: "start", color: i === 0 ? "#D78631" : NAVY });
   });
   const sc = new Scene(0, tm.start + 0.35, 1.2);
-  sc.text(540, 1460, "y qué significa cada una", 50, { font: "Overpass", color: COBRE });
+  sc.text(540, 1530, "y qué significa cada una", 50, { font: "Overpass", color: COBRE });
   return [...pre.els, ...fit(sc, tm, 0.95)];
 };
 
