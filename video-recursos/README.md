@@ -39,6 +39,7 @@ Cada archivo es el `src/Composition.tsx` de un video ya aprobado; se copian a un
 | `demo-recurso-tres-bandas.tsx` | 3 · Demo de recurso «Tres bandas» | Pack de Dynamo (lead magnet) |
 | `gabriel-motion-graphics.tsx` | 8a · Gabriel + motion graphics (gráficas detrás de él) | Acero «sobredimensionar» |
 | `brag-web-en-celular.tsx` + `brag-plan-ejemplo.md` | 8b · 100 % animado (Brag), web real dentro de un celular | Pack de Dynamo |
+| `pizarra-dibujada/` (motor + escenas + voz + SFX) | 9 · Pizarra dibujada a mano con voz de Gabriel (IA) | «5 tipos de cimentación» |
 
 ## 3. Scripts
 
