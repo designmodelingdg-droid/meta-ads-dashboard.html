@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-19",
+  "generado": "2026-10-23",
   "location": "nkKbOarn5IwHeMv48uY9",
   "nota": "Sonda: comprueba QUE endpoints responden con nuestro token. No baja datos de negocio. Lo importante es si abren 'cursos · productos' y 'membresias': ahi vive el progreso de los alumnos, que Windsor NO expone.",
   "resultados": {
@@ -88,7 +88,7 @@
     "formularios": {
       "ok": true,
       "http": 200,
-      "registros": 54,
+      "registros": 56,
       "claves": [
         "forms",
         "total",
@@ -121,7 +121,7 @@
     "workflows": {
       "ok": true,
       "http": 200,
-      "registros": "137+",
+      "registros": "139+",
       "claves": [
         "traceId",
         "workflows"
@@ -131,7 +131,7 @@
     "etiquetas": {
       "ok": true,
       "http": 200,
-      "registros": "557+",
+      "registros": "577+",
       "claves": [
         "tags",
         "traceId"
@@ -141,7 +141,7 @@
     "campos propios": {
       "ok": true,
       "http": 200,
-      "registros": "111+",
+      "registros": "113+",
       "claves": [
         "customFields",
         "traceId"
@@ -151,7 +151,7 @@
     "conversaciones": {
       "ok": true,
       "http": 200,
-      "registros": 27078,
+      "registros": 27310,
       "claves": [
         "conversations",
         "total",
@@ -162,7 +162,7 @@
     "pagos · órdenes": {
       "ok": true,
       "http": 200,
-      "registros": 179,
+      "registros": 183,
       "claves": [
         "data",
         "totalCount",
@@ -173,7 +173,7 @@
     "pagos · suscripciones": {
       "ok": true,
       "http": 200,
-      "registros": 68,
+      "registros": 70,
       "claves": [
         "data",
         "totalCount",
@@ -184,7 +184,7 @@
     "pagos · transacciones": {
       "ok": true,
       "http": 200,
-      "registros": 439,
+      "registros": 443,
       "claves": [
         "data",
         "totalCount",
@@ -221,13 +221,115 @@
         "updatedAt",
         "version"
       ],
-      "total": 137,
+      "total": 139,
       "lista": [
+        {
+          "nombre": "✅ Palabras Claves en Historias IG",
+          "estado": "published",
+          "actualizado": "2026-10-22",
+          "id": "d0430404-2323-4e27-a4d7-28316b6ba8b9"
+        },
+        {
+          "nombre": "✅ Seguimientos 1,2,3 y 4 Automatización Revit",
+          "estado": "published",
+          "actualizado": "2026-10-22",
+          "id": "e061dc2e-0af6-479c-a8cd-ca032d7a50a2"
+        },
+        {
+          "nombre": "✅ Seguimientos 1,2,3 y 4 Naves SAP2000",
+          "estado": "published",
+          "actualizado": "2026-10-22",
+          "id": "e3eeb341-65ba-4256-907a-b3ff3ea07efd"
+        },
+        {
+          "nombre": "✅ Workshop - Conecta la IA a Autodesk Revit",
+          "estado": "published",
+          "actualizado": "2026-10-22",
+          "id": "2ed89600-e657-4604-b52a-9eff31ac7444"
+        },
+        {
+          "nombre": "🤖 Sofía IA - Llamada leads Máster calificados (noche/mañana)",
+          "estado": "published",
+          "actualizado": "2026-10-22",
+          "id": "61751a0c-462a-4f40-bcdb-ebbfde71fefe"
+        },
+        {
+          "nombre": "✅ Comentario WORKSHOP - Workshop IA en Revit",
+          "estado": "published",
+          "actualizado": "2026-10-21",
+          "id": "b499a76d-ce52-4252-913b-c43b9aff7949"
+        },
+        {
+          "nombre": "✅ TikTok DM – Entrega lead magnets",
+          "estado": "published",
+          "actualizado": "2026-10-21",
+          "id": "ca9f4186-991a-45f7-9dba-184287170adb"
+        },
+        {
+          "nombre": "✅ Comentario ACERO - Verificación de Acero",
+          "estado": "published",
+          "actualizado": "2026-10-20",
+          "id": "1b95d30a-f6c9-4ec0-aaa4-71ef1f7776ac"
+        },
+        {
+          "nombre": "✅ Comentario CHATGPT - Guia Revit + ChatGPT",
+          "estado": "published",
+          "actualizado": "2026-10-20",
+          "id": "506bc185-2369-4173-b5a4-be192e0d32e6"
+        },
+        {
+          "nombre": "✅ Comentario COTIZA - Cotizador de Honorarios",
+          "estado": "published",
+          "actualizado": "2026-10-20",
+          "id": "48828ff8-232e-4074-a175-56b537838206"
+        },
+        {
+          "nombre": "✅ Comentario DYNAMO - Pack Script Dynamo",
+          "estado": "published",
+          "actualizado": "2026-10-20",
+          "id": "02ea4d5e-7c76-4b99-b852-f896ddb9ca25"
+        },
+        {
+          "nombre": "✅ Comentario MEMORIA - Memoria de Calculo",
+          "estado": "published",
+          "actualizado": "2026-10-20",
+          "id": "25860d62-497d-4ff1-801c-adb201be570f"
+        },
         {
           "nombre": "✅ Comentario NIVEL - Test de Nivel BIM",
           "estado": "published",
-          "actualizado": "2026-10-19",
+          "actualizado": "2026-10-20",
           "id": "82c920d9-86e8-46c9-9707-e4dd21597ac1"
+        },
+        {
+          "nombre": "✅ Comentario ZAPATA - Calculadora de Zapatas",
+          "estado": "published",
+          "actualizado": "2026-10-20",
+          "id": "727932ca-e290-46a5-bdaa-e1a87c75e749"
+        },
+        {
+          "nombre": "✅ ETIQUETAS + FUENTES DE CAMPAÑA GENERAL",
+          "estado": "published",
+          "actualizado": "2026-10-20",
+          "id": "11af208b-7646-422d-bccb-0781efd58f24"
+        },
+        {
+          "nombre": "✅ Lead Agenda Directa + Manual Máster BIM+IA",
+          "estado": "published",
+          "actualizado": "2026-10-20",
+          "id": "64c7187b-38f7-41c2-824d-6ee0501c74df"
+        },
+        {
+          "nombre": "✅ Seguimiento 5 de Especialización en Acero",
+          "estado": "draft",
+          "actualizado": "2026-10-20",
+          "id": "d0716285-9f49-427c-995e-d5826426feff"
+        },
+        {
+          "nombre": "✅ Seguimientos 1,2,3 y 4 Especialización Acero",
+          "estado": "published",
+          "actualizado": "2026-10-20",
+          "id": "87fe06b9-861b-4226-8b97-f79aa95c7109"
         },
         {
           "nombre": "✅ Acceso GHL Cursos BIM Catalogo",
@@ -242,12 +344,6 @@
           "id": "58c109cf-ef91-4f1c-8ec5-cf4cd43081b1"
         },
         {
-          "nombre": "✅ Seguimiento 5 de Especialización en Acero",
-          "estado": "draft",
-          "actualizado": "2026-10-16",
-          "id": "d0716285-9f49-427c-995e-d5826426feff"
-        },
-        {
           "nombre": "Comentario Facebook/TikTok - GENERICO (rutea por palabra BIM/IA)",
           "estado": "draft",
           "actualizado": "2026-10-15",
@@ -258,12 +354,6 @@
           "estado": "draft",
           "actualizado": "2026-10-15",
           "id": "8e0eeb83-95bd-4cdc-87eb-dca27c45952e"
-        },
-        {
-          "nombre": "Lead magnet · Cotizador de Honorarios",
-          "estado": "draft",
-          "actualizado": "2026-10-15",
-          "id": "555735e5-90e8-4319-a8e6-1af624afdfcc"
         },
         {
           "nombre": "✅ Acceso GHL Curso 1 Automatización Revit",
@@ -302,42 +392,6 @@
           "id": "cf3e5cfd-4d3a-46af-87ad-4d80ebd1ba8c"
         },
         {
-          "nombre": "✅ Comentario ACERO - Verificación de Acero",
-          "estado": "published",
-          "actualizado": "2026-10-15",
-          "id": "1b95d30a-f6c9-4ec0-aaa4-71ef1f7776ac"
-        },
-        {
-          "nombre": "✅ Comentario CHATGPT - Guia Revit + ChatGPT",
-          "estado": "published",
-          "actualizado": "2026-10-15",
-          "id": "506bc185-2369-4173-b5a4-be192e0d32e6"
-        },
-        {
-          "nombre": "✅ Comentario COTIZA - Cotizador de Honorarios",
-          "estado": "published",
-          "actualizado": "2026-10-15",
-          "id": "48828ff8-232e-4074-a175-56b537838206"
-        },
-        {
-          "nombre": "✅ Comentario DYNAMO - Pack Script Dynamo",
-          "estado": "published",
-          "actualizado": "2026-10-15",
-          "id": "02ea4d5e-7c76-4b99-b852-f896ddb9ca25"
-        },
-        {
-          "nombre": "✅ Comentario MEMORIA - Memoria de Calculo",
-          "estado": "published",
-          "actualizado": "2026-10-15",
-          "id": "25860d62-497d-4ff1-801c-adb201be570f"
-        },
-        {
-          "nombre": "✅ Comentario ZAPATA - Calculadora de Zapatas",
-          "estado": "published",
-          "actualizado": "2026-10-15",
-          "id": "727932ca-e290-46a5-bdaa-e1a87c75e749"
-        },
-        {
           "nombre": "✅ Comentarios General IG-FB-TIKTOK",
           "estado": "published",
           "actualizado": "2026-10-15",
@@ -350,30 +404,6 @@
           "id": "499ade5c-ad39-4458-8aaf-38c0bfb829fd"
         },
         {
-          "nombre": "✅ Seguimientos 1,2,3 y 4 Automatización Revit",
-          "estado": "published",
-          "actualizado": "2026-10-15",
-          "id": "e061dc2e-0af6-479c-a8cd-ca032d7a50a2"
-        },
-        {
-          "nombre": "✅ Seguimientos 1,2,3 y 4 Especialización Acero",
-          "estado": "published",
-          "actualizado": "2026-10-15",
-          "id": "87fe06b9-861b-4226-8b97-f79aa95c7109"
-        },
-        {
-          "nombre": "✅ Seguimientos 1,2,3 y 4 Naves SAP2000",
-          "estado": "published",
-          "actualizado": "2026-10-15",
-          "id": "e3eeb341-65ba-4256-907a-b3ff3ea07efd"
-        },
-        {
-          "nombre": "✅ TikTok DM – Entrega lead magnets",
-          "estado": "published",
-          "actualizado": "2026-10-15",
-          "id": "ca9f4186-991a-45f7-9dba-184287170adb"
-        },
-        {
           "nombre": "✅ (SMS) FACEBOOK FORM MASTER",
           "estado": "published",
           "actualizado": "2026-10-14",
@@ -384,18 +414,6 @@
           "estado": "published",
           "actualizado": "2026-10-14",
           "id": "b5e1468c-f346-4c33-ac0f-348042af6087"
-        },
-        {
-          "nombre": "✅ ETIQUETAS + FUENTES DE CAMPAÑA GENERAL",
-          "estado": "published",
-          "actualizado": "2026-10-14",
-          "id": "11af208b-7646-422d-bccb-0781efd58f24"
-        },
-        {
-          "nombre": "✅ Lead Agenda Directa + Manual Máster BIM+IA",
-          "estado": "published",
-          "actualizado": "2026-10-14",
-          "id": "64c7187b-38f7-41c2-824d-6ee0501c74df"
         },
         {
           "nombre": "✅ Lead Recontacto Máster BIM+IA",
@@ -630,12 +648,6 @@
           "estado": "published",
           "actualizado": "2026-09-08",
           "id": "46aed067-3e9a-4d3b-b16c-33840c5f2ae9"
-        },
-        {
-          "nombre": "New Workflow : 1788533768459",
-          "estado": "draft",
-          "actualizado": "2026-09-04",
-          "id": "f7eae1d8-6bec-4a89-a69f-4f6efefa2796"
         },
         {
           "nombre": "✅ Facturas Mensuales Clientes Master BIM + IA",

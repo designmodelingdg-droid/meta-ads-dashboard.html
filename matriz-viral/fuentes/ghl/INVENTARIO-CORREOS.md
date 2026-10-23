@@ -1,8 +1,8 @@
 # Inventario de correos — GoHighLevel
 
-Generado el 2026-10-19.
+Generado el 2026-10-23.
 
-**451 plantillas** en **54 carpetas**. 451 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
+**459 plantillas** en **57 carpetas**. 459 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
 
 > Lo que NO sale por API: que workflow usa que plantilla. El endpoint de automatizaciones devuelve solo metadatos. En esta cuenta las plantillas estan nombradas por su flujo, asi que el cruce se puede hacer leyendo.
 
@@ -2821,7 +2821,7 @@ Para dejar de recibir estos correos, haz clic aquí para darte de baja .
 
 - **id:** `6a0f6a8990da9b1539e346dd`
 - **tipo:** builder
-- **actualizada:** 2026-05-21T20:45:31.604Z
+- **actualizada:** 2026-10-22T15:15:25.890Z
 - **Cuerpo:**
 
 ```
@@ -14449,6 +14449,276 @@ Entrar gratis a la Comunidad &#8594;
 Revisa primero las carpetas de spam y promociones. Si aun as&iacute; no aparece,
 escr&iacute;benos y te lo reenviamos al instante.
 Escribir por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+## ✅ WORKSHOP Y EVENTOS > ✅ Conecta la IA con Revit 17/11/26
+
+### Workshop revit ia 04 grabacion
+
+- **id:** `6ada641ad2524647584f7728`
+- **tipo:** html
+- **actualizada:** 2026-10-22T19:29:44.571Z
+- **Cuerpo:**
+
+```
+Marketing -> Correos -> Plantillas -> Code Editor (Ctrl+A, Ctrl+V)
+PENDIENTE (TAREA): el martes 17, al terminar la sesion, subir la grabacion y pegar el enlace en el valor personalizado ws_revit_ia_grabacion.
+-->
+Aquí tienes la grabación de IA conectada a Revit
+Grabaci&oacute;n disponible
+La grabaci&oacute;n del workshop
+Hola {{contact.first_name}} ,
+Gracias por inscribirte al workshop &ldquo;IA conectada a Autodesk Revit&rdquo; . Aqu&iacute; tienes la grabaci&oacute;n de la sesi&oacute;n.
+Ver la grabación &#8594;
+La demo empieza en el minuto 20
+Como complemento, haz tu test de nivel BIM gratis (5 minutos) y descubre en qu&eacute; nivel est&aacute;s hoy:
+Hacer mi test de nivel BIM
+Equipo Design Modeling
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Workshop revit 06 preguntas frecuentes 
+
+- **id:** `6ada63d07d13c3c7314f426a`
+- **tipo:** html
+- **actualizada:** 2026-10-22T19:28:33.331Z
+- **Cuerpo:**
+
+```
+Marketing -> Correos -> Plantillas -> Code Editor (Ctrl+A, Ctrl+V)
+-->
+Y cómo saber si es para ti
+Preguntas frecuentes
+Las 5 preguntas antes de entrar al M&aacute;ster
+Hola {{contact.first_name}} ,
+Estas son las preguntas que m&aacute;s nos hacen antes de entrar al M&aacute;ster BIM + IA:
+&iquest;Tengo que hacer los 12 meses de golpe?
+No. El M&aacute;ster va por bloques y cada uno se certifica por separado. Empiezas por el que va con tu nivel.
+&iquest;Necesito saber Revit?
+Depende del bloque. Si ya modelas, seguramente no empiezas en el primero. En la cita lo vemos con tu perfil.
+&iquest;C&oacute;mo son las clases?
+100% online, en modalidad h&iacute;brida, con un proyecto real que avanza bloque a bloque.
+&iquest;Qu&eacute; certificados obtengo?
+Una microcredencial por bloque, certificaci&oacute;n internacional Autodesk por m&oacute;dulo y, al terminar el M&aacute;ster, el Certificado Universitario Internacional.
+&iquest;Cu&aacute;nto cuesta?
+Depende del bloque en el que empieces y de la forma de pago que elijas. Te lo explica el asesor en la cita, sin compromiso.
+Es para ti si...
+&#10003; Ya usas Revit en tu trabajo y quieres pasar de modelar a coordinar o liderar
+&#10003; Te piden BIM en las ofertas de trabajo y no sabes por d&oacute;nde avanzar
+&#10003; Quieres usar la IA con criterio, no solo probarla
+Resolver mis dudas en una cita &#8594;
+Equipo Design Modeling
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Workshop revit 07 ultima oportunidad
+
+- **id:** `6ada63f3dc24f3ddd6b2c82c`
+- **tipo:** html
+- **actualizada:** 2026-10-22T19:29:08.059Z
+- **Cuerpo:**
+
+```
+Marketing -> Correos -> Plantillas -> Code Editor (Ctrl+A, Ctrl+V)
+-->
+Con tu diagnóstico de nivel BIM personalizado
+&Uacute;ltima oportunidad
+Tu cita gratis con diagn&oacute;stico BIM
+Hola {{contact.first_name}} ,
+Esta semana cerramos las citas gratuitas para quienes se inscribieron al workshop.
+En 20 minutos con un asesor recibes tu diagn&oacute;stico de nivel BIM, gratis y personalizado:
+&#9989;
+En qu&eacute; nivel est&aacute;s hoy
+&#9989;
+Qu&eacute; te falta para el siguiente
+&#9989;
+En qu&eacute; bloque del M&aacute;ster te conviene empezar
+Sin costo y sin compromiso.
+Agendar mi cita gratis &#8594;
+Si prefieres empezar por tu cuenta, haz antes el test de nivel BIM (5 minutos) y llega a la cita con tu resultado: hacer mi test de nivel BIM .
+Equipo Design Modeling
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Workshop revit ia 00 invitacion
+
+- **id:** `6ada608d689f299f34dc9dc4`
+- **tipo:** html
+- **actualizada:** 2026-10-22T19:20:20.282Z
+- **Cuerpo:**
+
+```
+Marketing -> Correos -> Plantillas -> Code Editor (Ctrl+A, Ctrl+V)
+-->
+Workshop gratis en vivo · martes 17 de noviembre
+Workshop gratuito &middot; en vivo
+Le hicimos preguntas a un modelo de Revit (y respondi&oacute;)
+Hola {{contact.first_name}} ,
+&iquest;Y si en vez de exportar tablas a Excel le pudieras preguntar directo a tu modelo de Revit?
+Eso es lo que vamos a hacer en vivo en el workshop gratuito &ldquo;IA conectada a Autodesk Revit&rdquo; .
+Qu&eacute; vas a ver
+&#9654;
+C&oacute;mo se conecta una IA a Revit 2027 con el servidor oficial de Autodesk
+&#9654;
+Preguntas al modelo: &ldquo;lista las puertas del Nivel 1&rdquo;, &ldquo;&iquest;cu&aacute;les no tienen resistencia al fuego?&rdquo;
+&#9654;
+Auditor&iacute;a en segundos: qu&eacute; elementos tienen par&aacute;metros vac&iacute;os
+&#9654;
+Un reporte de muros, puertas y ventanas que se arma solo
+&#9654;
+D&oacute;nde se equivoca la IA y por qu&eacute; la firma sigue siendo del ingeniero
+Qu&eacute; te llevas
+&#9989;
+La gu&iacute;a paso a paso para conectar la IA a tu Revit
+&#9989;
+Una cita de 20 minutos para ver en qu&eacute; nivel BIM est&aacute;s
+Martes 17 de noviembre &middot; 8:00 PM (Ecuador) &middot; Zoom &middot; 90 min &middot; Gratis
+7:00 PM M&eacute;xico &middot; 10:00 PM Argentina y Chile &middot; Anfitri&oacute;n: Ing. Gabriel Pantoja
+Quiero mi lugar gratis &#8594;
+Los cupos son limitados por la sala de Zoom.
+Equipo Design Modeling
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Workshop revit ia 01 confirmacion
+
+- **id:** `6ada61a03a4398af1424c3bc`
+- **tipo:** html
+- **actualizada:** 2026-10-22T19:19:49.480Z
+- **Cuerpo:**
+
+```
+Marketing -> Correos -> Plantillas -> Code Editor (Ctrl+A, Ctrl+V)
+-->
+Martes 17 de noviembre, 8:00 PM (Ecuador)
+Inscripci&oacute;n confirmada
+Tu cupo est&aacute; reservado
+Hola {{contact.first_name}} ,
+Tu cupo en el workshop gratuito &ldquo;IA conectada a Autodesk Revit&rdquo; est&aacute; reservado.
+Datos del workshop
+&#9654;
+Cu&aacute;ndo: martes 17 de noviembre de 2026
+&#9654;
+Hora: 8:00 PM Ecuador, Per&uacute; y Colombia &middot; 7:00 PM M&eacute;xico &middot; 10:00 PM Argentina y Chile &middot; 2:00 AM Espa&ntilde;a (mi&eacute;rcoles 18)
+&#9654;
+D&oacute;nde: Zoom
+&#9654;
+Duraci&oacute;n: 90 minutos
+&#9654;
+Anfitri&oacute;n: Ing. Gabriel Pantoja
+Agr&eacute;galo a tu calendario para que no se te pase:
+Añadir a mi calendario &#8594;
+&Uacute;nete tambi&eacute;n al grupo de WhatsApp del workshop. Ah&iacute; te avisamos cuando abramos la sala y compartimos el material:
+Unirme al grupo de WhatsApp
+El enlace de Zoom te llega por correo el mismo d&iacute;a, cuando abramos la sala.
+Si quieres llegar con tu perfil claro, haz tu test de nivel BIM gratis (5 minutos):
+Hacer mi test de nivel BIM
+Equipo Design Modeling
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Workshop revit ia 02 es hoy
+
+- **id:** `6ada626cd2524647584f43d3`
+- **tipo:** html
+- **actualizada:** 2026-10-22T19:22:51.811Z
+- **Cuerpo:**
+
+```
+Marketing -> Correos -> Plantillas -> Code Editor (Ctrl+A, Ctrl+V)
+-->
+Agéndalo para no perdértelo
+Es hoy &middot; 8:00 PM (Ecuador)
+IA conectada a Autodesk Revit
+Hola {{contact.first_name}} ,
+Hoy a las 8:00 PM (Ecuador) Gabriel abre un modelo real de Revit y le hace preguntas a la IA en vivo.
+Hoy &middot; 8:00 PM Ecuador, Per&uacute; y Colombia
+7:00 PM M&eacute;xico &middot; 10:00 PM Argentina y Chile
+Si a&uacute;n no lo tienes en tu calendario, agr&eacute;galo aqu&iacute;:
+Añadir a mi calendario &#8594;
+Si a&uacute;n no est&aacute;s en el grupo de WhatsApp del workshop, &uacute;nete aqu&iacute;. Por ah&iacute; compartimos el enlace apenas abramos la sala:
+Unirme al grupo de WhatsApp
+El enlace de Zoom tambi&eacute;n te llega por correo justo antes de empezar. Con&eacute;ctate desde la computadora para ver bien el modelo.
+Nos vemos en la noche.
+Equipo Design Modeling
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Workshop revit ia 03 en vivo
+
+- **id:** `6ada62ee89a6fce2432f7e7c`
+- **tipo:** html
+- **actualizada:** 2026-10-22T19:25:00.513Z
+- **Cuerpo:**
+
+```
+Marketing -> Correos -> Plantillas -> Code Editor (Ctrl+A, Ctrl+V)
+-->
+Tu enlace de Zoom para el workshop
+&#128308; En vivo ahora
+Estamos en vivo: entra aqu&iacute;
+Hola {{contact.first_name}} ,
+Ya abrimos la sala. Este es tu enlace para entrar al workshop:
+Entrar al Zoom &#8594;
+ID de reuni&oacute;n: 848 7778 1010
+Lo mejor, la IA respondiendo con datos del modelo, viene en los primeros minutos.
+Equipo Design Modeling
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Workshop revit ia 05 bloques
+
+- **id:** `6ada633a327da0b1d9ee6fa0`
+- **tipo:** html
+- **actualizada:** 2026-10-22T19:27:50.949Z
+- **Cuerpo:**
+
+```
+Marketing -> Correos -> Plantillas -> Code Editor (Ctrl+A, Ctrl+V)
+-->
+El Máster BIM + IA ahora va por bloques
+M&aacute;ster BIM + IA &middot; por bloques
+No tienes que empezar de cero
+Hola {{contact.first_name}} ,
+Lo que viste en el workshop, la IA consultando el modelo, es el &uacute;ltimo bloque del M&aacute;ster. Pero no hace falta empezar desde el principio: entras en el bloque que va con tu nivel.
+M&Aacute;STER INTERNACIONAL BIM + IA &middot; 12 meses &middot; 100% online
+Bloque 1 &middot; 3 meses
+BIM Professional
+Fundamentos de la metodolog&iacute;a BIM &middot; Modelado arquitect&oacute;nico &middot; Modelado estructural y emplazamiento
+Bloque 2 &middot; 3 meses
+BIM Coordination
+Instalaciones MEP &middot; Federaci&oacute;n y trabajo colaborativo en la nube &middot; Gesti&oacute;n BIM y entornos colaborativos (CDE)
+Bloque 3 &middot; 2 meses
+BIM Management
+Coordinaci&oacute;n y detecci&oacute;n de interferencias con Navisworks &middot; Planificaci&oacute;n y simulaci&oacute;n 4D
+Bloque 4 &middot; 3 meses + proyecto final
+BIM + AI
+Presupuesto y costos 5D &middot; Automatizaci&oacute;n con Dynamo y Python &middot; IA aplicada a BIM &middot; Proyecto final con defensa
+Lo que obtienes:
+&#127941; Una microcredencial por cada bloque
+&#127941; Certificado de completaci&oacute;n con certificaci&oacute;n internacional Autodesk por cada m&oacute;dulo
+&#127941; Certificado Universitario Internacional al completar el M&aacute;ster
+&#127941; Un entregable para tu portafolio en cada bloque
+&iquest;En cu&aacute;l te toca empezar? Lo vemos en 20 minutos:
+Ver cuál es mi bloque &#8594;
+Equipo Design Modeling
 Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
 designmodelingacademy.com
 {{unsubscribe_url}}
