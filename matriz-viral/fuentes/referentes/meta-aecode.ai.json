@@ -1,5 +1,5 @@
 {
- "traido": "2026-10-23T11:33Z",
+ "traido": "2026-10-23T11:35Z",
  "fuente": "Meta Graph API · business_discovery (datos públicos)",
  "motivo": "Dayana (23-oct): referentes para la matriz de noviembre 2026. Apify devolvió «Monthly usage hard limit exceeded»; plan B por Graph API.",
  "cuenta": "aecode.ai",
@@ -371,7 +371,858 @@
      "cortes_primeros_3s": 3
     },
     "transcripcion": {
-     "error": "open() got an unexpected keyword argument 'metadata_errors'"
+     "motor": "faster-whisper small (automática, revisar)",
+     "idioma": "es",
+     "texto": "Si acuerdas que hace unas semanas fue Autodesk University, el evento donde Autodesk cuenta para donde va todo el sector. Pasó en Las Vegas, en inglés. Lo más probable es que no lo hayas visto. Tranquilo, porque mañana te lo contamos. Pero no un resumen de alguien que lo vio por internet. Te lo cuenta José Vallejo, que trabaja en Autodesk. Eso es especialista técnico para el sector AS, ingeniero civil, con más de 15 años en infraestructura vial. APP y BIM. Y como trabaja ahí adentro, no te va a decir solo qué se anunció. Te va a explicar cómo el BIM se está moviendo hacia la inteligencia artificial. Y qué significa eso para las herramientas que abres todos los días. Y como es en vivo, si algo no te queda claro, le preguntas ahí mismo. Eso ningún video de YouTube te lo da. Ah, y si te quedas hasta el final, te llevas un pack de prompts para Revit y Dynamo. Es este miércoles 7.30 de la noche, libre con inscripción previa. Haz clic en el botón o comenta BIM para obtener el link de inscripción.",
+     "segmentos": [
+      {
+       "ini": 0.0,
+       "fin": 3.6,
+       "texto": "Si acuerdas que hace unas semanas fue Autodesk University, el evento donde Autodesk cuenta",
+       "palabras": [
+        [
+         0.0,
+         "Si"
+        ],
+        [
+         0.04,
+         "acuerdas"
+        ],
+        [
+         0.3,
+         "que"
+        ],
+        [
+         0.48,
+         "hace"
+        ],
+        [
+         0.62,
+         "unas"
+        ],
+        [
+         0.76,
+         "semanas"
+        ],
+        [
+         1.04,
+         "fue"
+        ],
+        [
+         1.26,
+         "Autodesk"
+        ],
+        [
+         1.78,
+         "University,"
+        ],
+        [
+         2.42,
+         "el"
+        ],
+        [
+         2.48,
+         "evento"
+        ],
+        [
+         2.7,
+         "donde"
+        ],
+        [
+         2.92,
+         "Autodesk"
+        ],
+        [
+         3.4,
+         "cuenta"
+        ]
+       ]
+      },
+      {
+       "ini": 3.6,
+       "fin": 6.9,
+       "texto": "para donde va todo el sector. Pasó en Las Vegas, en inglés. Lo más probable es que",
+       "palabras": [
+        [
+         3.6,
+         "para"
+        ],
+        [
+         3.8,
+         "donde"
+        ],
+        [
+         3.96,
+         "va"
+        ],
+        [
+         4.16,
+         "todo"
+        ],
+        [
+         4.32,
+         "el"
+        ],
+        [
+         4.44,
+         "sector."
+        ],
+        [
+         4.82,
+         "Pasó"
+        ],
+        [
+         5.04,
+         "en"
+        ],
+        [
+         5.12,
+         "Las"
+        ],
+        [
+         5.24,
+         "Vegas,"
+        ],
+        [
+         5.66,
+         "en"
+        ],
+        [
+         5.72,
+         "inglés."
+        ],
+        [
+         6.12,
+         "Lo"
+        ],
+        [
+         6.18,
+         "más"
+        ],
+        [
+         6.3,
+         "probable"
+        ],
+        [
+         6.56,
+         "es"
+        ],
+        [
+         6.82,
+         "que"
+        ]
+       ]
+      },
+      {
+       "ini": 6.9,
+       "fin": 9.4,
+       "texto": "no lo hayas visto. Tranquilo, porque mañana te lo contamos.",
+       "palabras": [
+        [
+         6.9,
+         "no"
+        ],
+        [
+         7.04,
+         "lo"
+        ],
+        [
+         7.14,
+         "hayas"
+        ],
+        [
+         7.34,
+         "visto."
+        ],
+        [
+         7.94,
+         "Tranquilo,"
+        ],
+        [
+         8.46,
+         "porque"
+        ],
+        [
+         8.56,
+         "mañana"
+        ],
+        [
+         8.8,
+         "te"
+        ],
+        [
+         8.98,
+         "lo"
+        ],
+        [
+         9.04,
+         "contamos."
+        ]
+       ]
+      },
+      {
+       "ini": 9.8,
+       "fin": 13.8,
+       "texto": "Pero no un resumen de alguien que lo vio por internet. Te lo cuenta José Vallejo, que trabaja",
+       "palabras": [
+        [
+         9.82,
+         "Pero"
+        ],
+        [
+         9.96,
+         "no"
+        ],
+        [
+         10.08,
+         "un"
+        ],
+        [
+         10.2,
+         "resumen"
+        ],
+        [
+         10.44,
+         "de"
+        ],
+        [
+         10.6,
+         "alguien"
+        ],
+        [
+         10.76,
+         "que"
+        ],
+        [
+         10.94,
+         "lo"
+        ],
+        [
+         11.06,
+         "vio"
+        ],
+        [
+         11.16,
+         "por"
+        ],
+        [
+         11.34,
+         "internet."
+        ],
+        [
+         12.08,
+         "Te"
+        ],
+        [
+         12.18,
+         "lo"
+        ],
+        [
+         12.28,
+         "cuenta"
+        ],
+        [
+         12.5,
+         "José"
+        ],
+        [
+         12.8,
+         "Vallejo,"
+        ],
+        [
+         13.42,
+         "que"
+        ],
+        [
+         13.44,
+         "trabaja"
+        ]
+       ]
+      },
+      {
+       "ini": 13.8,
+       "fin": 18.0,
+       "texto": "en Autodesk. Eso es especialista técnico para el sector AS, ingeniero civil, con más de",
+       "palabras": [
+        [
+         13.82,
+         "en"
+        ],
+        [
+         13.9,
+         "Autodesk."
+        ],
+        [
+         14.6,
+         "Eso"
+        ],
+        [
+         14.76,
+         "es"
+        ],
+        [
+         14.92,
+         "especialista"
+        ],
+        [
+         15.3,
+         "técnico"
+        ],
+        [
+         15.68,
+         "para"
+        ],
+        [
+         15.86,
+         "el"
+        ],
+        [
+         15.98,
+         "sector"
+        ],
+        [
+         16.14,
+         "AS,"
+        ],
+        [
+         16.82,
+         "ingeniero"
+        ],
+        [
+         17.24,
+         "civil,"
+        ],
+        [
+         17.7,
+         "con"
+        ],
+        [
+         17.76,
+         "más"
+        ],
+        [
+         17.86,
+         "de"
+        ]
+       ]
+      },
+      {
+       "ini": 18.0,
+       "fin": 22.5,
+       "texto": "15 años en infraestructura vial. APP y BIM. Y como trabaja ahí adentro, no te va",
+       "palabras": [
+        [
+         17.96,
+         "15"
+        ],
+        [
+         18.16,
+         "años"
+        ],
+        [
+         18.4,
+         "en"
+        ],
+        [
+         18.56,
+         "infraestructura"
+        ],
+        [
+         19.08,
+         "vial."
+        ],
+        [
+         19.48,
+         "APP"
+        ],
+        [
+         19.82,
+         "y"
+        ],
+        [
+         20.16,
+         "BIM."
+        ],
+        [
+         20.82,
+         "Y"
+        ],
+        [
+         20.94,
+         "como"
+        ],
+        [
+         21.06,
+         "trabaja"
+        ],
+        [
+         21.54,
+         "ahí"
+        ],
+        [
+         21.74,
+         "adentro,"
+        ],
+        [
+         22.2,
+         "no"
+        ],
+        [
+         22.28,
+         "te"
+        ],
+        [
+         22.38,
+         "va"
+        ]
+       ]
+      },
+      {
+       "ini": 22.5,
+       "fin": 25.3,
+       "texto": "a decir solo qué se anunció. Te va a explicar cómo el BIM se está moviendo",
+       "palabras": [
+        [
+         22.5,
+         "a"
+        ],
+        [
+         22.56,
+         "decir"
+        ],
+        [
+         22.74,
+         "solo"
+        ],
+        [
+         22.94,
+         "qué"
+        ],
+        [
+         23.14,
+         "se"
+        ],
+        [
+         23.26,
+         "anunció."
+        ],
+        [
+         23.72,
+         "Te"
+        ],
+        [
+         23.82,
+         "va"
+        ],
+        [
+         23.94,
+         "a"
+        ],
+        [
+         23.98,
+         "explicar"
+        ],
+        [
+         24.2,
+         "cómo"
+        ],
+        [
+         24.46,
+         "el"
+        ],
+        [
+         24.58,
+         "BIM"
+        ],
+        [
+         24.74,
+         "se"
+        ],
+        [
+         24.86,
+         "está"
+        ],
+        [
+         25.02,
+         "moviendo"
+        ]
+       ]
+      },
+      {
+       "ini": 25.3,
+       "fin": 28.0,
+       "texto": "hacia la inteligencia artificial. Y qué significa eso para las herramientas",
+       "palabras": [
+        [
+         25.32,
+         "hacia"
+        ],
+        [
+         25.46,
+         "la"
+        ],
+        [
+         25.58,
+         "inteligencia"
+        ],
+        [
+         26.0,
+         "artificial."
+        ],
+        [
+         26.6,
+         "Y"
+        ],
+        [
+         26.68,
+         "qué"
+        ],
+        [
+         26.76,
+         "significa"
+        ],
+        [
+         27.02,
+         "eso"
+        ],
+        [
+         27.32,
+         "para"
+        ],
+        [
+         27.48,
+         "las"
+        ],
+        [
+         27.6,
+         "herramientas"
+        ]
+       ]
+      },
+      {
+       "ini": 28.0,
+       "fin": 31.9,
+       "texto": "que abres todos los días. Y como es en vivo, si algo no te queda claro, le preguntas ahí",
+       "palabras": [
+        [
+         28.04,
+         "que"
+        ],
+        [
+         28.18,
+         "abres"
+        ],
+        [
+         28.44,
+         "todos"
+        ],
+        [
+         28.64,
+         "los"
+        ],
+        [
+         28.9,
+         "días."
+        ],
+        [
+         29.64,
+         "Y"
+        ],
+        [
+         29.7,
+         "como"
+        ],
+        [
+         29.84,
+         "es"
+        ],
+        [
+         29.98,
+         "en"
+        ],
+        [
+         30.08,
+         "vivo,"
+        ],
+        [
+         30.4,
+         "si"
+        ],
+        [
+         30.44,
+         "algo"
+        ],
+        [
+         30.56,
+         "no"
+        ],
+        [
+         30.66,
+         "te"
+        ],
+        [
+         30.78,
+         "queda"
+        ],
+        [
+         30.94,
+         "claro,"
+        ],
+        [
+         31.3,
+         "le"
+        ],
+        [
+         31.36,
+         "preguntas"
+        ],
+        [
+         31.74,
+         "ahí"
+        ]
+       ]
+      },
+      {
+       "ini": 31.9,
+       "fin": 35.8,
+       "texto": "mismo. Eso ningún video de YouTube te lo da. Ah, y si te quedas hasta el final, te llevas",
+       "palabras": [
+        [
+         31.88,
+         "mismo."
+        ],
+        [
+         32.32,
+         "Eso"
+        ],
+        [
+         32.44,
+         "ningún"
+        ],
+        [
+         32.66,
+         "video"
+        ],
+        [
+         32.98,
+         "de"
+        ],
+        [
+         33.1,
+         "YouTube"
+        ],
+        [
+         33.34,
+         "te"
+        ],
+        [
+         33.56,
+         "lo"
+        ],
+        [
+         33.64,
+         "da."
+        ],
+        [
+         34.22,
+         "Ah,"
+        ],
+        [
+         34.52,
+         "y"
+        ],
+        [
+         34.58,
+         "si"
+        ],
+        [
+         34.64,
+         "te"
+        ],
+        [
+         34.74,
+         "quedas"
+        ],
+        [
+         34.98,
+         "hasta"
+        ],
+        [
+         35.12,
+         "el"
+        ],
+        [
+         35.22,
+         "final,"
+        ],
+        [
+         35.54,
+         "te"
+        ],
+        [
+         35.58,
+         "llevas"
+        ]
+       ]
+      },
+      {
+       "ini": 35.8,
+       "fin": 40.2,
+       "texto": "un pack de prompts para Revit y Dynamo. Es este miércoles 7.30 de la noche, libre",
+       "palabras": [
+        [
+         35.82,
+         "un"
+        ],
+        [
+         35.9,
+         "pack"
+        ],
+        [
+         36.04,
+         "de"
+        ],
+        [
+         36.16,
+         "prompts"
+        ],
+        [
+         36.38,
+         "para"
+        ],
+        [
+         36.62,
+         "Revit"
+        ],
+        [
+         36.94,
+         "y"
+        ],
+        [
+         37.1,
+         "Dynamo."
+        ],
+        [
+         37.96,
+         "Es"
+        ],
+        [
+         38.16,
+         "este"
+        ],
+        [
+         38.34,
+         "miércoles"
+        ],
+        [
+         38.74,
+         "7"
+        ],
+        [
+         39.0,
+         ".30"
+        ],
+        [
+         39.28,
+         "de"
+        ],
+        [
+         39.52,
+         "la"
+        ],
+        [
+         39.6,
+         "noche,"
+        ],
+        [
+         39.98,
+         "libre"
+        ]
+       ]
+      },
+      {
+       "ini": 40.2,
+       "fin": 43.5,
+       "texto": "con inscripción previa. Haz clic en el botón o comenta BIM para obtener el link",
+       "palabras": [
+        [
+         40.18,
+         "con"
+        ],
+        [
+         40.36,
+         "inscripción"
+        ],
+        [
+         40.8,
+         "previa."
+        ],
+        [
+         41.26,
+         "Haz"
+        ],
+        [
+         41.38,
+         "clic"
+        ],
+        [
+         41.52,
+         "en"
+        ],
+        [
+         41.68,
+         "el"
+        ],
+        [
+         41.74,
+         "botón"
+        ],
+        [
+         42.02,
+         "o"
+        ],
+        [
+         42.16,
+         "comenta"
+        ],
+        [
+         42.5,
+         "BIM"
+        ],
+        [
+         42.74,
+         "para"
+        ],
+        [
+         42.92,
+         "obtener"
+        ],
+        [
+         43.26,
+         "el"
+        ],
+        [
+         43.32,
+         "link"
+        ]
+       ]
+      },
+      {
+       "ini": 43.5,
+       "fin": 44.0,
+       "texto": "de inscripción.",
+       "palabras": [
+        [
+         43.46,
+         "de"
+        ],
+        [
+         43.56,
+         "inscripción."
+        ]
+       ]
+      }
+     ]
     }
    }
   },
@@ -457,7 +1308,543 @@
      "cortes_primeros_3s": 0
     },
     "transcripcion": {
-     "error": "open() got an unexpected keyword argument 'metadata_errors'"
+     "motor": "faster-whisper small (automática, revisar)",
+     "idioma": "es",
+     "texto": "Scrap Chop. Muy bueno. Revit. Pero definitivamente por todo lo que está pidiendo el mercado, Revit es Pro. Archicat. Bueno. Dynamo. Dynamo es súper necesario, te automatiza todo lo manual y te ahorro un montón de obras. Lumion. Muy bueno. Grasshopper. Pro. Tecla. Necesario. Bonsai. Muy bueno. Civil 3D. Necesario. Navy's Ward. Pro, definitivamente te puedes salvar toda la obra. Y AutoCAD. Es bueno, aunque Revit ya le agarró bastante cancha, yo creería que es un conocimiento básico. Y tú, ¿estás de acuerdo con esta lista? Te leo en los comentarios.",
+     "segmentos": [
+      {
+       "ini": 0.0,
+       "fin": 0.5,
+       "texto": "Scrap Chop.",
+       "palabras": [
+        [
+         0.0,
+         "Scrap"
+        ],
+        [
+         0.28,
+         "Chop."
+        ]
+       ]
+      },
+      {
+       "ini": 1.0,
+       "fin": 1.2,
+       "texto": "Muy bueno.",
+       "palabras": [
+        [
+         0.96,
+         "Muy"
+        ],
+        [
+         0.96,
+         "bueno."
+        ]
+       ]
+      },
+      {
+       "ini": 1.9,
+       "fin": 2.4,
+       "texto": "Revit.",
+       "palabras": [
+        [
+         1.9,
+         "Revit."
+        ]
+       ]
+      },
+      {
+       "ini": 3.2,
+       "fin": 6.8,
+       "texto": "Pero definitivamente por todo lo que está pidiendo el mercado, Revit es Pro.",
+       "palabras": [
+        [
+         3.22,
+         "Pero"
+        ],
+        [
+         3.4,
+         "definitivamente"
+        ],
+        [
+         4.02,
+         "por"
+        ],
+        [
+         4.38,
+         "todo"
+        ],
+        [
+         4.52,
+         "lo"
+        ],
+        [
+         4.68,
+         "que"
+        ],
+        [
+         4.76,
+         "está"
+        ],
+        [
+         4.9,
+         "pidiendo"
+        ],
+        [
+         5.22,
+         "el"
+        ],
+        [
+         5.36,
+         "mercado,"
+        ],
+        [
+         6.18,
+         "Revit"
+        ],
+        [
+         6.52,
+         "es"
+        ],
+        [
+         6.72,
+         "Pro."
+        ]
+       ]
+      },
+      {
+       "ini": 7.7,
+       "fin": 8.2,
+       "texto": "Archicat.",
+       "palabras": [
+        [
+         7.7,
+         "Archicat."
+        ]
+       ]
+      },
+      {
+       "ini": 8.5,
+       "fin": 8.6,
+       "texto": "Bueno.",
+       "palabras": [
+        [
+         8.5,
+         "Bueno."
+        ]
+       ]
+      },
+      {
+       "ini": 9.3,
+       "fin": 9.8,
+       "texto": "Dynamo.",
+       "palabras": [
+        [
+         9.34,
+         "Dynamo."
+        ]
+       ]
+      },
+      {
+       "ini": 10.4,
+       "fin": 15.3,
+       "texto": "Dynamo es súper necesario, te automatiza todo lo manual y te ahorro un montón de obras.",
+       "palabras": [
+        [
+         10.44,
+         "Dynamo"
+        ],
+        [
+         11.08,
+         "es"
+        ],
+        [
+         11.2,
+         "súper"
+        ],
+        [
+         11.44,
+         "necesario,"
+        ],
+        [
+         12.22,
+         "te"
+        ],
+        [
+         12.28,
+         "automatiza"
+        ],
+        [
+         12.9,
+         "todo"
+        ],
+        [
+         13.14,
+         "lo"
+        ],
+        [
+         13.3,
+         "manual"
+        ],
+        [
+         13.6,
+         "y"
+        ],
+        [
+         14.18,
+         "te"
+        ],
+        [
+         14.4,
+         "ahorro"
+        ],
+        [
+         14.6,
+         "un"
+        ],
+        [
+         14.72,
+         "montón"
+        ],
+        [
+         14.98,
+         "de"
+        ],
+        [
+         15.16,
+         "obras."
+        ]
+       ]
+      },
+      {
+       "ini": 16.1,
+       "fin": 16.4,
+       "texto": "Lumion.",
+       "palabras": [
+        [
+         16.1,
+         "Lumion."
+        ]
+       ]
+      },
+      {
+       "ini": 17.0,
+       "fin": 17.4,
+       "texto": "Muy bueno.",
+       "palabras": [
+        [
+         16.98,
+         "Muy"
+        ],
+        [
+         17.18,
+         "bueno."
+        ]
+       ]
+      },
+      {
+       "ini": 18.3,
+       "fin": 18.7,
+       "texto": "Grasshopper.",
+       "palabras": [
+        [
+         18.3,
+         "Grasshopper."
+        ]
+       ]
+      },
+      {
+       "ini": 19.6,
+       "fin": 19.8,
+       "texto": "Pro.",
+       "palabras": [
+        [
+         19.56,
+         "Pro."
+        ]
+       ]
+      },
+      {
+       "ini": 20.3,
+       "fin": 20.5,
+       "texto": "Tecla.",
+       "palabras": [
+        [
+         20.3,
+         "Tecla."
+        ]
+       ]
+      },
+      {
+       "ini": 21.1,
+       "fin": 21.7,
+       "texto": "Necesario.",
+       "palabras": [
+        [
+         21.12,
+         "Necesario."
+        ]
+       ]
+      },
+      {
+       "ini": 22.4,
+       "fin": 22.8,
+       "texto": "Bonsai.",
+       "palabras": [
+        [
+         22.42,
+         "Bonsai."
+        ]
+       ]
+      },
+      {
+       "ini": 23.4,
+       "fin": 23.9,
+       "texto": "Muy bueno.",
+       "palabras": [
+        [
+         23.44,
+         "Muy"
+        ],
+        [
+         23.66,
+         "bueno."
+        ]
+       ]
+      },
+      {
+       "ini": 24.5,
+       "fin": 25.1,
+       "texto": "Civil 3D.",
+       "palabras": [
+        [
+         24.54,
+         "Civil"
+        ],
+        [
+         24.84,
+         "3D."
+        ]
+       ]
+      },
+      {
+       "ini": 25.7,
+       "fin": 26.3,
+       "texto": "Necesario.",
+       "palabras": [
+        [
+         25.72,
+         "Necesario."
+        ]
+       ]
+      },
+      {
+       "ini": 26.7,
+       "fin": 27.2,
+       "texto": "Navy's Ward.",
+       "palabras": [
+        [
+         26.68,
+         "Navy's"
+        ],
+        [
+         27.02,
+         "Ward."
+        ]
+       ]
+      },
+      {
+       "ini": 27.8,
+       "fin": 30.5,
+       "texto": "Pro, definitivamente te puedes salvar toda la obra.",
+       "palabras": [
+        [
+         27.76,
+         "Pro,"
+        ],
+        [
+         28.36,
+         "definitivamente"
+        ],
+        [
+         28.76,
+         "te"
+        ],
+        [
+         29.12,
+         "puedes"
+        ],
+        [
+         29.38,
+         "salvar"
+        ],
+        [
+         29.8,
+         "toda"
+        ],
+        [
+         30.1,
+         "la"
+        ],
+        [
+         30.3,
+         "obra."
+        ]
+       ]
+      },
+      {
+       "ini": 30.8,
+       "fin": 31.4,
+       "texto": "Y AutoCAD.",
+       "palabras": [
+        [
+         30.82,
+         "Y"
+        ],
+        [
+         30.98,
+         "AutoCAD."
+        ]
+       ]
+      },
+      {
+       "ini": 31.7,
+       "fin": 38.5,
+       "texto": "Es bueno, aunque Revit ya le agarró bastante cancha, yo creería que es un conocimiento básico.",
+       "palabras": [
+        [
+         31.68,
+         "Es"
+        ],
+        [
+         31.9,
+         "bueno,"
+        ],
+        [
+         32.92,
+         "aunque"
+        ],
+        [
+         33.26,
+         "Revit"
+        ],
+        [
+         33.76,
+         "ya"
+        ],
+        [
+         33.98,
+         "le"
+        ],
+        [
+         34.18,
+         "agarró"
+        ],
+        [
+         34.52,
+         "bastante"
+        ],
+        [
+         34.78,
+         "cancha,"
+        ],
+        [
+         35.98,
+         "yo"
+        ],
+        [
+         36.12,
+         "creería"
+        ],
+        [
+         36.6,
+         "que"
+        ],
+        [
+         36.76,
+         "es"
+        ],
+        [
+         36.92,
+         "un"
+        ],
+        [
+         37.02,
+         "conocimiento"
+        ],
+        [
+         37.52,
+         "básico."
+        ]
+       ]
+      },
+      {
+       "ini": 38.5,
+       "fin": 40.2,
+       "texto": "Y tú, ¿estás de acuerdo con esta lista?",
+       "palabras": [
+        [
+         38.5,
+         "Y"
+        ],
+        [
+         38.8,
+         "tú,"
+        ],
+        [
+         39.04,
+         "¿estás"
+        ],
+        [
+         39.22,
+         "de"
+        ],
+        [
+         39.32,
+         "acuerdo"
+        ],
+        [
+         39.48,
+         "con"
+        ],
+        [
+         39.74,
+         "esta"
+        ],
+        [
+         39.9,
+         "lista?"
+        ]
+       ]
+      },
+      {
+       "ini": 40.3,
+       "fin": 41.0,
+       "texto": "Te leo en los comentarios.",
+       "palabras": [
+        [
+         40.34,
+         "Te"
+        ],
+        [
+         40.4,
+         "leo"
+        ],
+        [
+         40.58,
+         "en"
+        ],
+        [
+         40.62,
+         "los"
+        ],
+        [
+         40.7,
+         "comentarios."
+        ]
+       ]
+      }
+     ]
     }
    }
   },
@@ -687,7 +2074,818 @@
      "cortes_primeros_3s": 0
     },
     "transcripcion": {
-     "error": "open() got an unexpected keyword argument 'metadata_errors'"
+     "motor": "faster-whisper small (automática, revisar)",
+     "idioma": "es",
+     "texto": "Ya he tenido, obviamente, la experiencia de poder colaborar con ustedes por intermedio en mis organizaciones estudiantiles para desarrollar la demo y en mi universidad. La plenitud que da no solamente la ver aprendido PowerSkills, habilidades landas, sino también de poder conectar con diferentes estudiantes profesionales, todos en un solo espacio. Es invaluable. Es increíble la capacidad que tiene ECO de poder integrar a la comunidad del sector AEC en un solo espacio, independientemente del país, independientemente de las universidades de la región. Y bueno, si hay esa oportunidad, se puede dar más adelante con los próximos eventos y sobre todo de que sea a favor de poder integrar a la comunidad para que puedan desarrollar habilidades que les ayuden su empleabilidad y sobre todo en la resolución de problemas en el sector. Es increíble. Esto dice Piero, parte de la comunidad de AECO. Conectar con profesionales de todo el sector en un solo espacio es invaluable. Y esa misma comunidad la vive en la beca a Italen, ya quedan solamente horas para poder postular, así que postula ya.",
+     "segmentos": [
+      {
+       "ini": 0.0,
+       "fin": 2.7,
+       "texto": "Ya he tenido, obviamente, la experiencia de poder colaborar con ustedes por intermedio",
+       "palabras": [
+        [
+         0.0,
+         "Ya"
+        ],
+        [
+         0.08,
+         "he"
+        ],
+        [
+         0.16,
+         "tenido,"
+        ],
+        [
+         0.34,
+         "obviamente,"
+        ],
+        [
+         0.62,
+         "la"
+        ],
+        [
+         0.68,
+         "experiencia"
+        ],
+        [
+         0.96,
+         "de"
+        ],
+        [
+         1.18,
+         "poder"
+        ],
+        [
+         1.3,
+         "colaborar"
+        ],
+        [
+         1.66,
+         "con"
+        ],
+        [
+         1.8,
+         "ustedes"
+        ],
+        [
+         2.1,
+         "por"
+        ],
+        [
+         2.38,
+         "intermedio"
+        ]
+       ]
+      },
+      {
+       "ini": 2.7,
+       "fin": 5.6,
+       "texto": "en mis organizaciones estudiantiles para desarrollar la demo y en mi universidad.",
+       "palabras": [
+        [
+         2.7,
+         "en"
+        ],
+        [
+         2.8,
+         "mis"
+        ],
+        [
+         2.88,
+         "organizaciones"
+        ],
+        [
+         3.32,
+         "estudiantiles"
+        ],
+        [
+         3.78,
+         "para"
+        ],
+        [
+         4.02,
+         "desarrollar"
+        ],
+        [
+         4.42,
+         "la"
+        ],
+        [
+         4.56,
+         "demo"
+        ],
+        [
+         4.76,
+         "y"
+        ],
+        [
+         4.92,
+         "en"
+        ],
+        [
+         5.02,
+         "mi"
+        ],
+        [
+         5.1,
+         "universidad."
+        ]
+       ]
+      },
+      {
+       "ini": 5.8,
+       "fin": 12.3,
+       "texto": "La plenitud que da no solamente la ver aprendido PowerSkills, habilidades landas, sino también",
+       "palabras": [
+        [
+         5.82,
+         "La"
+        ],
+        [
+         6.3,
+         "plenitud"
+        ],
+        [
+         6.64,
+         "que"
+        ],
+        [
+         6.88,
+         "da"
+        ],
+        [
+         6.98,
+         "no"
+        ],
+        [
+         7.12,
+         "solamente"
+        ],
+        [
+         7.46,
+         "la"
+        ],
+        [
+         7.68,
+         "ver"
+        ],
+        [
+         7.78,
+         "aprendido"
+        ],
+        [
+         8.28,
+         "PowerSkills,"
+        ],
+        [
+         10.12,
+         "habilidades"
+        ],
+        [
+         11.46,
+         "landas,"
+        ],
+        [
+         12.0,
+         "sino"
+        ],
+        [
+         12.08,
+         "también"
+        ]
+       ]
+      },
+      {
+       "ini": 12.3,
+       "fin": 18.5,
+       "texto": "de poder conectar con diferentes estudiantes profesionales, todos en un solo espacio.",
+       "palabras": [
+        [
+         12.34,
+         "de"
+        ],
+        [
+         12.44,
+         "poder"
+        ],
+        [
+         12.6,
+         "conectar"
+        ],
+        [
+         13.38,
+         "con"
+        ],
+        [
+         13.8,
+         "diferentes"
+        ],
+        [
+         14.24,
+         "estudiantes"
+        ],
+        [
+         14.9,
+         "profesionales,"
+        ],
+        [
+         16.54,
+         "todos"
+        ],
+        [
+         17.38,
+         "en"
+        ],
+        [
+         17.66,
+         "un"
+        ],
+        [
+         17.8,
+         "solo"
+        ],
+        [
+         17.98,
+         "espacio."
+        ]
+       ]
+      },
+      {
+       "ini": 18.8,
+       "fin": 23.8,
+       "texto": "Es invaluable. Es increíble la capacidad que tiene ECO de poder integrar a la comunidad",
+       "palabras": [
+        [
+         18.8,
+         "Es"
+        ],
+        [
+         18.96,
+         "invaluable."
+        ],
+        [
+         19.78,
+         "Es"
+        ],
+        [
+         20.12,
+         "increíble"
+        ],
+        [
+         20.58,
+         "la"
+        ],
+        [
+         21.46,
+         "capacidad"
+        ],
+        [
+         21.72,
+         "que"
+        ],
+        [
+         21.88,
+         "tiene"
+        ],
+        [
+         22.04,
+         "ECO"
+        ],
+        [
+         22.24,
+         "de"
+        ],
+        [
+         22.4,
+         "poder"
+        ],
+        [
+         22.62,
+         "integrar"
+        ],
+        [
+         23.0,
+         "a"
+        ],
+        [
+         23.3,
+         "la"
+        ],
+        [
+         23.5,
+         "comunidad"
+        ]
+       ]
+      },
+      {
+       "ini": 23.8,
+       "fin": 28.9,
+       "texto": "del sector AEC en un solo espacio, independientemente del país, independientemente de las universidades",
+       "palabras": [
+        [
+         23.78,
+         "del"
+        ],
+        [
+         24.12,
+         "sector"
+        ],
+        [
+         24.36,
+         "AEC"
+        ],
+        [
+         24.74,
+         "en"
+        ],
+        [
+         25.14,
+         "un"
+        ],
+        [
+         25.3,
+         "solo"
+        ],
+        [
+         25.42,
+         "espacio,"
+        ],
+        [
+         25.84,
+         "independientemente"
+        ],
+        [
+         26.84,
+         "del"
+        ],
+        [
+         27.16,
+         "país,"
+        ],
+        [
+         27.54,
+         "independientemente"
+        ],
+        [
+         28.22,
+         "de"
+        ],
+        [
+         28.38,
+         "las"
+        ],
+        [
+         28.48,
+         "universidades"
+        ]
+       ]
+      },
+      {
+       "ini": 28.9,
+       "fin": 32.7,
+       "texto": "de la región. Y bueno, si hay esa oportunidad, se puede dar más adelante con los próximos",
+       "palabras": [
+        [
+         28.88,
+         "de"
+        ],
+        [
+         29.08,
+         "la"
+        ],
+        [
+         29.08,
+         "región."
+        ],
+        [
+         29.8,
+         "Y"
+        ],
+        [
+         29.88,
+         "bueno,"
+        ],
+        [
+         30.16,
+         "si"
+        ],
+        [
+         30.26,
+         "hay"
+        ],
+        [
+         30.36,
+         "esa"
+        ],
+        [
+         30.48,
+         "oportunidad,"
+        ],
+        [
+         30.92,
+         "se"
+        ],
+        [
+         30.96,
+         "puede"
+        ],
+        [
+         31.1,
+         "dar"
+        ],
+        [
+         31.28,
+         "más"
+        ],
+        [
+         31.46,
+         "adelante"
+        ],
+        [
+         31.76,
+         "con"
+        ],
+        [
+         32.04,
+         "los"
+        ],
+        [
+         32.22,
+         "próximos"
+        ]
+       ]
+      },
+      {
+       "ini": 32.7,
+       "fin": 37.6,
+       "texto": "eventos y sobre todo de que sea a favor de poder integrar a la comunidad para que puedan",
+       "palabras": [
+        [
+         32.68,
+         "eventos"
+        ],
+        [
+         33.08,
+         "y"
+        ],
+        [
+         33.2,
+         "sobre"
+        ],
+        [
+         33.36,
+         "todo"
+        ],
+        [
+         33.6,
+         "de"
+        ],
+        [
+         34.14,
+         "que"
+        ],
+        [
+         34.24,
+         "sea"
+        ],
+        [
+         34.84,
+         "a"
+        ],
+        [
+         35.06,
+         "favor"
+        ],
+        [
+         35.28,
+         "de"
+        ],
+        [
+         35.44,
+         "poder"
+        ],
+        [
+         35.7,
+         "integrar"
+        ],
+        [
+         36.38,
+         "a"
+        ],
+        [
+         36.44,
+         "la"
+        ],
+        [
+         36.56,
+         "comunidad"
+        ],
+        [
+         36.9,
+         "para"
+        ],
+        [
+         37.22,
+         "que"
+        ],
+        [
+         37.34,
+         "puedan"
+        ]
+       ]
+      },
+      {
+       "ini": 37.6,
+       "fin": 42.1,
+       "texto": "desarrollar habilidades que les ayuden su empleabilidad y sobre todo en la resolución de problemas",
+       "palabras": [
+        [
+         37.6,
+         "desarrollar"
+        ],
+        [
+         38.44,
+         "habilidades"
+        ],
+        [
+         38.86,
+         "que"
+        ],
+        [
+         39.08,
+         "les"
+        ],
+        [
+         39.26,
+         "ayuden"
+        ],
+        [
+         39.74,
+         "su"
+        ],
+        [
+         39.92,
+         "empleabilidad"
+        ],
+        [
+         40.56,
+         "y"
+        ],
+        [
+         40.74,
+         "sobre"
+        ],
+        [
+         40.86,
+         "todo"
+        ],
+        [
+         41.1,
+         "en"
+        ],
+        [
+         41.26,
+         "la"
+        ],
+        [
+         41.32,
+         "resolución"
+        ],
+        [
+         41.7,
+         "de"
+        ],
+        [
+         41.82,
+         "problemas"
+        ]
+       ]
+      },
+      {
+       "ini": 42.1,
+       "fin": 43.8,
+       "texto": "en el sector. Es increíble.",
+       "palabras": [
+        [
+         42.1,
+         "en"
+        ],
+        [
+         42.28,
+         "el"
+        ],
+        [
+         42.38,
+         "sector."
+        ],
+        [
+         43.02,
+         "Es"
+        ],
+        [
+         43.02,
+         "increíble."
+        ]
+       ]
+      },
+      {
+       "ini": 44.7,
+       "fin": 48.5,
+       "texto": "Esto dice Piero, parte de la comunidad de AECO. Conectar con profesionales de todo",
+       "palabras": [
+        [
+         44.74,
+         "Esto"
+        ],
+        [
+         45.02,
+         "dice"
+        ],
+        [
+         45.18,
+         "Piero,"
+        ],
+        [
+         45.58,
+         "parte"
+        ],
+        [
+         45.72,
+         "de"
+        ],
+        [
+         45.88,
+         "la"
+        ],
+        [
+         45.96,
+         "comunidad"
+        ],
+        [
+         46.2,
+         "de"
+        ],
+        [
+         46.56,
+         "AECO."
+        ],
+        [
+         47.08,
+         "Conectar"
+        ],
+        [
+         47.42,
+         "con"
+        ],
+        [
+         47.6,
+         "profesionales"
+        ],
+        [
+         48.22,
+         "de"
+        ],
+        [
+         48.32,
+         "todo"
+        ]
+       ]
+      },
+      {
+       "ini": 48.5,
+       "fin": 53.0,
+       "texto": "el sector en un solo espacio es invaluable. Y esa misma comunidad la vive en la beca",
+       "palabras": [
+        [
+         48.48,
+         "el"
+        ],
+        [
+         48.64,
+         "sector"
+        ],
+        [
+         48.88,
+         "en"
+        ],
+        [
+         49.08,
+         "un"
+        ],
+        [
+         49.2,
+         "solo"
+        ],
+        [
+         49.36,
+         "espacio"
+        ],
+        [
+         49.74,
+         "es"
+        ],
+        [
+         50.12,
+         "invaluable."
+        ],
+        [
+         51.02,
+         "Y"
+        ],
+        [
+         51.1,
+         "esa"
+        ],
+        [
+         51.26,
+         "misma"
+        ],
+        [
+         51.52,
+         "comunidad"
+        ],
+        [
+         52.04,
+         "la"
+        ],
+        [
+         52.28,
+         "vive"
+        ],
+        [
+         52.4,
+         "en"
+        ],
+        [
+         52.62,
+         "la"
+        ],
+        [
+         52.74,
+         "beca"
+        ]
+       ]
+      },
+      {
+       "ini": 53.0,
+       "fin": 56.7,
+       "texto": "a Italen, ya quedan solamente horas para poder postular, así que postula ya.",
+       "palabras": [
+        [
+         53.0,
+         "a"
+        ],
+        [
+         53.26,
+         "Italen,"
+        ],
+        [
+         53.9,
+         "ya"
+        ],
+        [
+         54.0,
+         "quedan"
+        ],
+        [
+         54.24,
+         "solamente"
+        ],
+        [
+         54.44,
+         "horas"
+        ],
+        [
+         54.94,
+         "para"
+        ],
+        [
+         55.2,
+         "poder"
+        ],
+        [
+         55.44,
+         "postular,"
+        ],
+        [
+         55.98,
+         "así"
+        ],
+        [
+         56.1,
+         "que"
+        ],
+        [
+         56.22,
+         "postula"
+        ],
+        [
+         56.56,
+         "ya."
+        ]
+       ]
+      }
+     ]
     }
    }
   },
@@ -713,7 +2911,439 @@
      "cortes_primeros_3s": 0
     },
     "transcripcion": {
-     "error": "open() got an unexpected keyword argument 'metadata_errors'"
+     "motor": "faster-whisper small (automática, revisar)",
+     "idioma": "es",
+     "texto": "Mi jefa, no sé cómo hizo, se enteró de proyectos, me decidió por LinkedIn, no sé qué pasó, y dame librar un medio tiempo de mi agenda con ese proyecto para seguir trabajando, perfeccionando sobre automatización. Entonces es una oportunidad grande, no solo para mí, sino para todos ustedes, de poder también intervenar todos en sus labores. Él fue parte de la primera generación de la beca Aetal. Hoy la idea es parte de su trabajo. Hostula hoy a la segunda generación y convierte la idea en una ventaja para tu perfil profesional.",
+     "segmentos": [
+      {
+       "ini": 0.0,
+       "fin": 4.5,
+       "texto": "Mi jefa, no sé cómo hizo, se enteró de proyectos, me decidió por LinkedIn, no sé qué pasó,",
+       "palabras": [
+        [
+         0.0,
+         "Mi"
+        ],
+        [
+         0.46,
+         "jefa,"
+        ],
+        [
+         0.82,
+         "no"
+        ],
+        [
+         0.92,
+         "sé"
+        ],
+        [
+         1.02,
+         "cómo"
+        ],
+        [
+         1.16,
+         "hizo,"
+        ],
+        [
+         1.62,
+         "se"
+        ],
+        [
+         1.68,
+         "enteró"
+        ],
+        [
+         1.98,
+         "de"
+        ],
+        [
+         2.06,
+         "proyectos,"
+        ],
+        [
+         2.56,
+         "me"
+        ],
+        [
+         2.68,
+         "decidió"
+        ],
+        [
+         2.94,
+         "por"
+        ],
+        [
+         3.2,
+         "LinkedIn,"
+        ],
+        [
+         3.74,
+         "no"
+        ],
+        [
+         3.82,
+         "sé"
+        ],
+        [
+         3.98,
+         "qué"
+        ],
+        [
+         4.14,
+         "pasó,"
+        ]
+       ]
+      },
+      {
+       "ini": 5.2,
+       "fin": 9.5,
+       "texto": "y dame librar un medio tiempo de mi agenda con ese proyecto para seguir trabajando,",
+       "palabras": [
+        [
+         5.24,
+         "y"
+        ],
+        [
+         5.36,
+         "dame"
+        ],
+        [
+         5.82,
+         "librar"
+        ],
+        [
+         6.08,
+         "un"
+        ],
+        [
+         6.28,
+         "medio"
+        ],
+        [
+         6.48,
+         "tiempo"
+        ],
+        [
+         6.86,
+         "de"
+        ],
+        [
+         7.08,
+         "mi"
+        ],
+        [
+         7.2,
+         "agenda"
+        ],
+        [
+         7.56,
+         "con"
+        ],
+        [
+         8.22,
+         "ese"
+        ],
+        [
+         8.32,
+         "proyecto"
+        ],
+        [
+         8.66,
+         "para"
+        ],
+        [
+         8.92,
+         "seguir"
+        ],
+        [
+         9.18,
+         "trabajando,"
+        ]
+       ]
+      },
+      {
+       "ini": 10.2,
+       "fin": 11.7,
+       "texto": "perfeccionando sobre automatización.",
+       "palabras": [
+        [
+         10.16,
+         "perfeccionando"
+        ],
+        [
+         10.68,
+         "sobre"
+        ],
+        [
+         11.08,
+         "automatización."
+        ]
+       ]
+      },
+      {
+       "ini": 12.0,
+       "fin": 14.8,
+       "texto": "Entonces es una oportunidad grande, no solo para mí, sino para todos ustedes,",
+       "palabras": [
+        [
+         12.04,
+         "Entonces"
+        ],
+        [
+         12.26,
+         "es"
+        ],
+        [
+         12.54,
+         "una"
+        ],
+        [
+         12.62,
+         "oportunidad"
+        ],
+        [
+         12.92,
+         "grande,"
+        ],
+        [
+         13.26,
+         "no"
+        ],
+        [
+         13.48,
+         "solo"
+        ],
+        [
+         13.64,
+         "para"
+        ],
+        [
+         13.78,
+         "mí,"
+        ],
+        [
+         13.98,
+         "sino"
+        ],
+        [
+         14.02,
+         "para"
+        ],
+        [
+         14.24,
+         "todos"
+        ],
+        [
+         14.48,
+         "ustedes,"
+        ]
+       ]
+      },
+      {
+       "ini": 15.0,
+       "fin": 18.7,
+       "texto": "de poder también intervenar todos en sus labores.",
+       "palabras": [
+        [
+         15.0,
+         "de"
+        ],
+        [
+         15.1,
+         "poder"
+        ],
+        [
+         15.24,
+         "también"
+        ],
+        [
+         15.8,
+         "intervenar"
+        ],
+        [
+         16.68,
+         "todos"
+        ],
+        [
+         16.94,
+         "en"
+        ],
+        [
+         17.54,
+         "sus"
+        ],
+        [
+         17.78,
+         "labores."
+        ]
+       ]
+      },
+      {
+       "ini": 19.8,
+       "fin": 23.3,
+       "texto": "Él fue parte de la primera generación de la beca Aetal.",
+       "palabras": [
+        [
+         19.82,
+         "Él"
+        ],
+        [
+         20.34,
+         "fue"
+        ],
+        [
+         20.46,
+         "parte"
+        ],
+        [
+         20.7,
+         "de"
+        ],
+        [
+         20.9,
+         "la"
+        ],
+        [
+         21.0,
+         "primera"
+        ],
+        [
+         21.38,
+         "generación"
+        ],
+        [
+         22.02,
+         "de"
+        ],
+        [
+         22.24,
+         "la"
+        ],
+        [
+         22.4,
+         "beca"
+        ],
+        [
+         22.66,
+         "Aetal."
+        ]
+       ]
+      },
+      {
+       "ini": 23.6,
+       "fin": 25.6,
+       "texto": "Hoy la idea es parte de su trabajo.",
+       "palabras": [
+        [
+         23.58,
+         "Hoy"
+        ],
+        [
+         23.92,
+         "la"
+        ],
+        [
+         24.18,
+         "idea"
+        ],
+        [
+         24.36,
+         "es"
+        ],
+        [
+         24.7,
+         "parte"
+        ],
+        [
+         24.94,
+         "de"
+        ],
+        [
+         25.12,
+         "su"
+        ],
+        [
+         25.18,
+         "trabajo."
+        ]
+       ]
+      },
+      {
+       "ini": 25.6,
+       "fin": 31.2,
+       "texto": "Hostula hoy a la segunda generación y convierte la idea en una ventaja para tu perfil profesional.",
+       "palabras": [
+        [
+         25.56,
+         "Hostula"
+        ],
+        [
+         26.32,
+         "hoy"
+        ],
+        [
+         26.6,
+         "a"
+        ],
+        [
+         26.82,
+         "la"
+        ],
+        [
+         26.9,
+         "segunda"
+        ],
+        [
+         27.16,
+         "generación"
+        ],
+        [
+         27.84,
+         "y"
+        ],
+        [
+         28.18,
+         "convierte"
+        ],
+        [
+         28.72,
+         "la"
+        ],
+        [
+         29.0,
+         "idea"
+        ],
+        [
+         29.14,
+         "en"
+        ],
+        [
+         29.4,
+         "una"
+        ],
+        [
+         29.56,
+         "ventaja"
+        ],
+        [
+         30.1,
+         "para"
+        ],
+        [
+         30.32,
+         "tu"
+        ],
+        [
+         30.48,
+         "perfil"
+        ],
+        [
+         30.86,
+         "profesional."
+        ]
+       ]
+      }
+     ]
     }
    }
   },
