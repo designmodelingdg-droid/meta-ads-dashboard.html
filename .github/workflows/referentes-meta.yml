@@ -1,0 +1,54 @@
+name: Referentes por Graph API (sin Apify)
+
+# Plan B de «Traer un post (Apify)»: lee cuentas públicas business/creator con
+# business_discovery (gratis), y transcribe y mide la edición de los reels
+# pedidos. Se dispara cuando cambia matriz-viral/pedidos/referentes-meta.json.
+
+on:
+  push:
+    paths:
+      - matriz-viral/pedidos/referentes-meta.json
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: referentes-meta-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  traer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Herramientas de video
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+          pip install -q yt-dlp faster-whisper
+      - name: Traer referentes
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN }}
+          FRAMES_DIR: /tmp/frames
+        run: python3 scripts/referentes_meta.py matriz-viral/pedidos/referentes-meta.json
+      - name: Fotogramas (artefacto temporal, no se commitean)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fotogramas-referentes
+          path: /tmp/frames
+          retention-days: 3
+          if-no-files-found: ignore
+      - name: Commit si cambió
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add matriz-viral/fuentes/referentes/ || true
+          git diff --staged --quiet && echo "Nada nuevo que guardar." && exit 0
+          git commit -m "Referentes traídos por Graph API (business_discovery)"
+          for i in 1 2 3; do git pull --rebase -q && git push && exit 0; sleep 5; done
+          exit 1
