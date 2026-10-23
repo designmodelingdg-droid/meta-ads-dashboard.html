@@ -58,6 +58,8 @@ Tres cosas que hay que comprobar cada vez, y que en agosto fallaron:
    de PayPal. Transferencias bancarias, otra cuenta o cobros por un tercero no
    están: hay que preguntarle a Dayana qué falta antes de cerrar un total.
 
+**La consultoría no es la Academy** (Dayana, 23-oct): los cobros altos sin descripción en Stripe/PayPal (en octubre, uno de $15.239,14 y tres de un mismo pagador por $6.928,75) son proyectos de consultoría de Design Modeling DG y NO se cuentan como ingreso de la Academy. Un cobro de $750 sin descripción sí era un módulo del Máster (BIM Professional). Ante un cobro sin descripción, preguntar antes de sumarlo.
+
 Y una distinción que cambia las metas: **recurrente no es captación**. En agosto
 16 cobros de $160 («Subscription update») eran cuotas de contratos vigentes del
 Máster. Entran a caja solos; no los vendió nadie ese mes. Separarlos siempre

@@ -116,9 +116,12 @@ def main():
         p = G.get(e["id"], {})
         if p.get("venta") or "VENTA" in str(p.get("tipo", "")).upper():
             ventas[e.get("semana")] += 1
-    exceso = {k: v for k, v in ventas.items() if v > 1}
+    # Hasta octubre: una venta por semana (jueves). 23-oct (Dayana): más venta en
+    # historias; el calendario fija su tope con «ventas_por_semana_max».
+    tope = int(cal.get("ventas_por_semana_max", 1))
+    exceso = {k: v for k, v in ventas.items() if v > tope}
     informe("FALLA" if exceso else ("OK" if ventas else "AVISO"),
-            "A lo sumo una venta por semana en historias", str(dict(ventas)) if ventas else "No hay historias marcadas como venta.")
+            f"A lo sumo {tope} venta(s) por semana en historias", str(dict(ventas)) if ventas else "No hay historias marcadas como venta.")
 
     usados = set(hist["usados_ids"])
     rep = [i for i in ids if i in usados]
