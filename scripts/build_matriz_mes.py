@@ -320,9 +320,9 @@ class Mes:
              'Cada ficha tiene una casilla: al marcarla la pieza se cierra, y la marca queda guardada en tu navegador.</p>']
         filas = [(g["nombre"].split(" — ")[0].split(" · ")[0] + " · " + g["nombre"].split(" · ")[1].split(" — ")[0],
                   f'{sum(1 for x in g["calendario"] if x.get("id"))} piezas', g.get("descripcion", "")) for g in c["grupos"]]
-        filas.append(("Correos", f'{len(c.get("correos", []))} correos', "A la lista propia, uno por semana."))
+        filas.append(("Correos", f'{len(c.get("correos", []))} correos', c.get("correos_nota", "A la lista propia.")))
         filas.append(("Publicidad", f'{sum(len(x["piezas"]) for x in c.get("publicidad", {}).get("campanas", []))} anuncios',
-                      "Primero las 6 decisiones que corrigen septiembre; después los anuncios nuevos."))
+                      c.get("publicidad", {}).get("nota", "")))
         o.append(tabla(["Pestaña", "Cuánto", "Qué es"], filas))
         if c.get("auditoria_previa"):
             ap = c["auditoria_previa"]
@@ -349,8 +349,16 @@ class Mes:
             d = c["destacadas"]
             o.append(f"<h2>Destacadas del perfil · las actualiza {e(d.get('responsable', ''))}</h2>")
             o.append(f'<p class="intro">{e(d.get("nota", ""))}</p>')
-            o.append(tabla(["Destacada", "Qué va", "Se agrega en octubre", "Qué se quita"],
+            o.append(tabla(["Destacada", "Qué va", f"Se agrega en {self.nombre}", "Qué se quita"],
                            [[x["destacada"], x["que_va"], ", ".join(x["agregar"]), x["quitar"]] for x in d["lista"]]))
+        if c.get("efemerides"):
+            o.append("<h2>Efemérides y fechas comerciales del mes</h2>"
+                     + tabla(["Fecha", "Qué pasa", "Qué hacemos"], c["efemerides"]))
+        if c.get("estrategia_comercial"):
+            ec = c["estrategia_comercial"]
+            o.append("<h2>Estrategia comercial del mes</h2>" + (f'<p class="intro">{e(ec.get("nota", ""))}</p>' if ec.get("nota") else "")
+                     + tabla(["Ventana", "Cuándo", "Qué se ofrece", "Dónde se comunica"], ec.get("ventanas", []))
+                     + ("<ul class=\"reglas\">" + "".join(f"<li>{e(x)}</li>" for x in ec.get("falta_para_decidir", [])) + "</ul>" if ec.get("falta_para_decidir") else ""))
         if c.get("checklist_tareas"):
             o.append("<h2>Checklist del mes</h2><ul class=\"e2e\">")
             for t in c["checklist_tareas"]:
