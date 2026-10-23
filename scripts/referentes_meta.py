@@ -110,8 +110,14 @@ def transcribir(path):
         from faster_whisper import WhisperModel
         if _modelo is None:
             _modelo = WhisperModel("small", device="cpu", compute_type="int8")
-        segs, info = _modelo.transcribe(path, language="es", vad_filter=False)
-        segs = [{"ini": round(s.start, 1), "fin": round(s.end, 1), "texto": s.text.strip()} for s in segs]
+        # Se decodifica con ffmpeg (no con PyAV, que choca de versión con faster-whisper).
+        import numpy as np
+        pcm = subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-i", path, "-ac", "1", "-ar", "16000",
+                              "-f", "s16le", "-"], capture_output=True, timeout=300).stdout
+        audio = np.frombuffer(pcm, np.int16).astype(np.float32) / 32768.0
+        segs, info = _modelo.transcribe(audio, language="es", vad_filter=False, word_timestamps=True)
+        segs = [{"ini": round(s.start, 1), "fin": round(s.end, 1), "texto": s.text.strip(),
+                 "palabras": [[round(w.start, 2), w.word.strip()] for w in (s.words or [])]} for s in segs]
         return {"motor": "faster-whisper small (automática, revisar)", "idioma": info.language,
                 "texto": " ".join(s["texto"] for s in segs), "segmentos": segs}
     except Exception as e:  # noqa: BLE001
