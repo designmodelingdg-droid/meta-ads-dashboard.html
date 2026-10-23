@@ -46,6 +46,12 @@ def main():
         print("Sin APIFY_TOKEN: no se corre nada.")
         return
     pedido = json.loads(pathlib.Path(sys.argv[1]).read_text(encoding="utf-8"))
+    if pedido.get("perfiles"):
+        # Modo cuentas: últimos reels con transcripción + posts (tope total ≤ $1).
+        sys.path.insert(0, str(R / "scripts"))
+        import apify_referentes
+        apify_referentes.main(pedido)
+        return
     url = pedido["url"].split("?")[0]
     tope = min(float(pedido.get("tope_usd", 0.10)), 0.25)
     # Un pedido ya servido no se vuelve a cobrar: al fusionar la rama, el mismo
