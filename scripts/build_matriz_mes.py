@@ -357,8 +357,19 @@ class Mes:
         if c.get("estrategia_comercial"):
             ec = c["estrategia_comercial"]
             o.append("<h2>Estrategia comercial del mes</h2>" + (f'<p class="intro">{e(ec.get("nota", ""))}</p>' if ec.get("nota") else "")
+                     + ("<h3 class=\"camp\">Cómo se habla de la oferta</h3><ul class=\"reglas\">" + "".join(f"<li>{e(x)}</li>" for x in ec["reglas"]) + "</ul>" if ec.get("reglas") else "")
                      + tabla(["Ventana", "Cuándo", "Qué se ofrece", "Dónde se comunica"], ec.get("ventanas", []))
                      + ("<ul class=\"reglas\">" + "".join(f"<li>{e(x)}</li>" for x in ec.get("falta_para_decidir", [])) + "</ul>" if ec.get("falta_para_decidir") else ""))
+        if c.get("formatos_prueba"):
+            fp = c["formatos_prueba"]
+            o.append("<h2>Formatos en prueba · se revisan cada mes</h2>" + (f'<p class="intro">{e(fp.get("nota", ""))}</p>' if fp.get("nota") else "")
+                     + tabla(["Qué se mide", "Umbral", "De dónde sale"], fp.get("criterios", []))
+                     + "<ul class=\"reglas\">" + "".join(f"<li>{e(x)}</li>" for x in fp.get("decision", [])) + "</ul>"
+                     + tabla(["Formato", "Estado", "Piezas", "Qué falta saber"],
+                             [[x["formato"] + " · " + x.get("plantilla", ""), x.get("estado", ""),
+                               ", ".join(p["id"] + (f' ({p["shortCode"]})' if p.get("shortCode") else "") for p in x["piezas"])
+                               + (f' · control: {x["control"]}' if x.get("control") else ""), x.get("que_falta_saber", "")] for x in fp["formatos"]])
+                     + (f'<p class="intro">Revisiones: {e(" · ".join(fp.get("revisiones", [])))}</p>' if fp.get("revisiones") else ""))
         if c.get("checklist_tareas"):
             o.append("<h2>Checklist del mes</h2><ul class=\"e2e\">")
             for t in c["checklist_tareas"]:

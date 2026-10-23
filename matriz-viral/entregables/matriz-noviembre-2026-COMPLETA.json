@@ -16,7 +16,8 @@
     "HISTORIAS CON MÁS VENTA Y CON GABRIEL (Dayana, 23-oct): 12 historias de venta en el mes (2 por semana hasta el workshop, más en la Black Week) y Gabriel a cámara en 8 días (al menos 2 por semana), grabadas en una sola sesión con Daniela.",
     "DAR A CONOCER LOS PROGRAMAS: el Máster por bloques (BIM Professional · Coordination · Management · BIM + IA) y la Especialización en Acero se explican con piezas propias (13, 20 y 23-nov), siempre desde el problema y sin precio en el feed.",
     "PALABRAS DE COMENTARIO: NIVEL (Máster), ACERO, ZAPATA y WORKSHOP (hasta el 17-nov). En historias, las respuestas (SUSTO, NAVES, LISTA, BLACK) llegan por DM y las contesta una persona. No hay lead magnet nuevo este mes.",
-    "EL MÁSTER NUNCA LLEVA PRECIO. Los precios de Acero, cursos y Black Friday van solo en pauta, correo y DM. Toda oferta cierra a la hora dicha (Ecuador) y NO se reabre.",
+    "LA PROMO SOLO POR WHATSAPP (Dayana, 23-oct): ninguna pieza pública lleva el precio de la oferta ni enlaza la página vieja. Quien responde o escribe al WhatsApp recibe el precio y la mini landing de su oferta. Ester decide los precios y cómo se nombran. El Máster nunca lleva precio. Toda oferta cierra a la hora dicha (Ecuador) y NO se reabre.",
+    "FORMATOS EN PRUEBA: chuleta visual sin voz, pizarra con voz de Gabriel (estilo 9) y Gabriel con motion cromado (estilo 10). Se revisan el 9 y el 30-nov. Un formato entra fijo solo si genera interés, interacción y ventas (pestaña Resumen).",
     "Visuales = capturas reales de Revit/Robot/Navisworks y cámara de Gabriel. Nada técnico se publica sin que Gabriel lo revise (regla 0).",
     "Mínimo 60 % en el NÚCLEO. Cero OBRA. Ninguna pieza repite un id o un gancho ya usado."
   ],
@@ -40,7 +41,7 @@
       "para": "Gabriel y Daniela"
     },
     {
-      "tarea": "Editar las 4 chuletas (perfiles de acero, cerchas, LOD, uniones) con el mismo formato de los reels del 19 y 20-oct que funcionaron. Gabriel revisa cada lámina técnica antes de publicar.",
+      "tarea": "Editar las 4 chuletas (perfiles de acero, cerchas, LOD, uniones) con los formatos de los reels del 19 y 20-oct que funcionaron: la 1, la 3 y la 4 como «Simbología de niveles» (lista visual sin voz) y la 2 como «5 tipos de cimentación» (pizarra con voz). Gabriel revisa cada lámina técnica antes de publicar.",
       "desbloquea": "La serie que se llevó octubre",
       "cuando": "una por semana, 2 días antes",
       "para": "Daniela / Dayana"
@@ -52,16 +53,34 @@
       "para": "Ester / Patricio"
     },
     {
-      "tarea": "Confirmar precios y bonos de Halloween y Black Friday (propuesta en la pestaña Resumen) y crear los cupones SUSTO y BLACK con un solo enlace de pago por producto.",
+      "tarea": "Decidir precios, bonos y cómo se nombra cada oferta de Halloween y Black Friday (propuesta en la pestaña Resumen). La promo va SOLO por WhatsApp: no se cambia la página vieja. Crear los cupones, las 3 mini landings (SUSTO; BLACK · Acero; BLACK · cursos) y el enlace de WhatsApp con cada palabra ya escrita, y ponerlo donde las piezas dicen [enlace de WhatsApp…].",
       "desbloquea": "Halloween (30-oct) y Black Week (18-nov)",
       "cuando": "Halloween antes del jue 29-oct; Black Friday antes del lun 16-nov",
-      "para": "Dayana (decide) · Ester (crea)"
+      "para": "Ester (decide y crea)"
     },
     {
-      "tarea": "Respuestas por DM de las palabras de historias (SUSTO, NIVEL, ACERO, ZAPATA, NAVES, LISTA, BLACK): las contesta una persona con el enlace o el precio. Dejar plantillas listas en la bandeja.",
+      "tarea": "Respuestas a las palabras de historias, correos y comunidades (SUSTO, LISTA, BLACK, NAVES, NIVEL, ACERO, ZAPATA): las contesta una persona; las de oferta pasan a WhatsApp, donde va el precio y la mini landing. Dejar plantillas listas en la bandeja.",
       "desbloquea": "Que las historias de venta conviertan",
-      "cuando": "antes del 31-oct",
+      "cuando": "antes del 30-oct",
       "para": "Ester y Aylin"
+    },
+    {
+      "tarea": "Publicar los 2 reels de prueba ya editados («6 uniones acero-hormigón» y «¿La IA te va a reemplazar?») antes del 31-oct, y anotar su enlace para la revisión de formatos.",
+      "desbloquea": "La revisión de formatos del 9-nov",
+      "cuando": "antes del sáb 31-oct",
+      "para": "Daniela"
+    },
+    {
+      "tarea": "Producir la chuleta 2 (cerchas) en estilo 9, pizarra con voz, y «no compres por el descuento» en estilo 10, motion cromado. Son las piezas de prueba de formato del mes.",
+      "desbloquea": "Comparar formatos con el mismo tipo de tema",
+      "cuando": "2 días antes de cada fecha",
+      "para": "Daniela / Dayana"
+    },
+    {
+      "tarea": "Revisión de formatos en prueba: correr scripts/formatos_prueba.py --mes 2026-11 y anotar en el calendario, por pieza, cuántos llegaron al WhatsApp y cuántas ventas salieron en 14 días (GHL).",
+      "desbloquea": "Qué formato entra fijo en diciembre",
+      "cuando": "lun 9-nov y lun 30-nov",
+      "para": "Ester (datos de GHL) · Dayana (decide)"
     },
     {
       "tarea": "Confirmar con Dayana los nombres de los 4 bloques del Máster y qué certificación da cada uno, y los nombres de los 4 módulos de Acero.",
@@ -1042,7 +1061,7 @@
             ],
             "caption": "Tipos de cercha para naves industriales 👇\n\n1 · Pratt · 2 · Howe · 3 · Warren · 4 · Pórtico de alma llena\n\n¿Cuál usas más? Dinos el número.\n\nComenta ACERO y te mandamos gratis las 5 verificaciones en acero.",
             "version_tiktok": "Mismo montaje. Cierre: «¿Cuál usas tú? Te leo.»",
-            "notas_produccion": "SERIE «CHULETA DEL INGENIERO» (nace de los dos reels fuera de matriz de octubre: «Simbología de niveles en planos ¿Cuál usas más?», 20-oct, 57.230 vistas, 220 comentarios, 2.455 guardados y 705 compartidos, el más compartido de la cuenta; y «5 tipos de cimentación», 19-oct, 8.598 vistas, 7,33 comentarios por 1.000). Formato: reel de 15-25 s armado con láminas limpias (fondo blanco, trazo técnico, una opción por lámina, numeradas), música en tendencia, texto grande, SIN voz o con voz mínima. Termina con «¿Cuál usas tú?» para que comenten la opción. La palabra va en el caption y en la última lámina. Se arma en edición, no hace falta grabar a Gabriel. Efeméride: 10-nov, Día Mundial de la Ciencia (UNESCO): «la física detrás de una nave». Gabriel confirma en 2 minutos cómo trabaja cada diagonal (tracción/compresión) para la carga gravitatoria típica.",
+            "notas_produccion": "PRUEBA DE FORMATO (estilo 9 · pizarra dibujada con voz de Gabriel por IA, como «5 tipos de cimentación»). Las otras 3 chuletas van como «Simbología de niveles» (lista visual sin voz): así la serie compara los dos formatos con el mismo tipo de tema. Plantilla: video-recursos/plantillas/pizarra-dibujada. SERIE «CHULETA DEL INGENIERO» (nace de los dos reels fuera de matriz de octubre: «Simbología de niveles en planos ¿Cuál usas más?», 20-oct, 57.230 vistas, 220 comentarios, 2.455 guardados y 705 compartidos, el más compartido de la cuenta; y «5 tipos de cimentación», 19-oct, 8.598 vistas, 7,33 comentarios por 1.000). Formato: reel de 15-25 s armado con láminas limpias (fondo blanco, trazo técnico, una opción por lámina, numeradas), música en tendencia, texto grande, SIN voz o con voz mínima. Termina con «¿Cuál usas tú?» para que comenten la opción. La palabra va en el caption y en la última lámina. Se arma en edición, no hace falta grabar a Gabriel. Efeméride: 10-nov, Día Mundial de la Ciencia (UNESCO): «la física detrás de una nave». Gabriel confirma en 2 minutos cómo trabaja cada diagonal (tracción/compresión) para la carga gravitatoria típica.",
             "condicion": "SERIE «CHULETA DEL INGENIERO» (nace de los dos reels fuera de matriz de octubre: «Simbología de niveles en planos ¿Cuál usas más?», 20-oct, 57.230 vistas, 220 comentarios, 2.455 guardados y 705 compartidos, el más compartido de la cuenta; y «5 tipos de cimentación», 19-oct, 8.598 vistas, 7,33 comentarios por 1.000). Formato: reel de 15-25 s armado con láminas limpias (fondo blanco, trazo técnico, una opción por lámina, numeradas), música en tendencia, texto grande, SIN voz o con voz mínima. Termina con «¿Cuál usas tú?» para que comenten la opción. La palabra va en el caption y en la última lámina. Se arma en edición, no hace falta grabar a Gabriel. Efeméride: 10-nov, Día Mundial de la Ciencia (UNESCO): «la física detrás de una nave». Gabriel confirma en 2 minutos cómo trabaja cada diagonal (tracción/compresión) para la carga gravitatoria típica.",
             "formato_detalle": "REEL (20-23 s)",
             "red_principal": "instagram",
@@ -1083,7 +1102,8 @@
                 "accion": "Lámina final con las 4 y número grande · En pantalla: ¿CUÁL USAS TÚ? · COMENTA ACERO Y TE MANDO LAS 5 VERIFICACIONES",
                 "voz": ""
               }
-            ]
+            ],
+            "formato_prueba": "estilo 9 · pizarra dibujada con voz de Gabriel por IA, como «5 tipos de cimentación»"
           }
         },
         {
@@ -1884,8 +1904,8 @@
               }
             ],
             "caption": "Antes de preguntar el precio, pregúntate qué vas a poder hacer al terminar.\n\nEn la Especialización en Acero: modelar la nave en Revit, calcularla en Robot, verificar las uniones en Advance Steel y sacar los planos. Con un tutor de IA que te dice en qué lección y minuto se explicó cada cosa.\n\nY lo decimos claro: no es para fabricar o soldar, es para diseñar y calcular en software.\n\n¿Qué módulo te hace más falta hoy? 👇\n\nComenta ACERO y te mandamos el temario y la guía de las 5 verificaciones.",
-            "notas_produccion": "SIN PRECIO en el feed (regla: $225 solo en pauta y correo). Confirmar con Dayana los nombres reales de los 4 módulos antes de diseñar. 20-nov: feriado y Black Friday en Ecuador (Primicias, 30-sep-2026): las historias y el correo de ese día llevan la oferta; el feed se queda en el valor.",
-            "condicion": "SIN PRECIO en el feed (regla: $225 solo en pauta y correo). Confirmar con Dayana los nombres reales de los 4 módulos antes de diseñar. 20-nov: feriado y Black Friday en Ecuador (Primicias, 30-sep-2026): las historias y el correo de ese día llevan la oferta; el feed se queda en el valor.",
+            "notas_produccion": "SIN PRECIO en el feed (regla de noviembre: ningún precio en público; la oferta va solo por WhatsApp). Confirmar con Dayana los nombres reales de los 4 módulos antes de diseñar. 20-nov: feriado y Black Friday en Ecuador (Primicias, 30-sep-2026): las historias y el correo de ese día llevan la oferta; el feed se queda en el valor.",
+            "condicion": "SIN PRECIO en el feed (regla de noviembre: ningún precio en público; la oferta va solo por WhatsApp). Confirmar con Dayana los nombres reales de los 4 módulos antes de diseñar. 20-nov: feriado y Black Friday en Ecuador (Primicias, 30-sep-2026): las historias y el correo de ese día llevan la oferta; el feed se queda en el valor.",
             "prompt_imagenes": "",
             "formato_detalle": "CARRUSEL (7 láminas)",
             "red_principal": "instagram",
@@ -2305,7 +2325,7 @@
             ],
             "caption": "Esta semana todos te van a vender cursos con descuento. Antes de comprar uno, incluso el nuestro, hazte tres preguntas:\n\n1 · ¿Qué voy a poder hacer al terminar que hoy no puedo?\n2 · ¿Dónde lo voy a usar en los próximos tres meses?\n3 · ¿Tengo una o dos horas al día para estudiarlo?\n\nSi alguna es «no», ningún descuento lo hace barato.\n\nSi respondiste que sí a las tres y lo tuyo es diseñar acero en software, comenta ACERO y te contamos qué incluye la especialización.",
             "version_tiktok": "Sin palabra. Cierre: «¿Cuál de las tres te frena? Te leo.»",
-            "notas_produccion": "Gabriel a cámara (pedido de Dayana: más Gabriel). Objeción de dinero sin precio. La honestidad es el ángulo: en octubre la objeción de tiempo resolvió 3 de 5 casos (COMPRADORES-VS-NO.md).",
+            "notas_produccion": "PRUEBA DE FORMATO (estilo 10 · Gabriel + motion cromado). El control es «el error que más veo» (14-nov), Gabriel a cámara sin motion. Plantilla: video-recursos/plantillas/gabriel-motion-cromado. Gabriel a cámara (pedido de Dayana: más Gabriel). Objeción de dinero sin precio. La honestidad es el ángulo: en octubre la objeción de tiempo resolvió 3 de 5 casos (COMPRADORES-VS-NO.md).",
             "condicion": "Gabriel a cámara (pedido de Dayana: más Gabriel). Objeción de dinero sin precio. La honestidad es el ángulo: en octubre la objeción de tiempo resolvió 3 de 5 casos (COMPRADORES-VS-NO.md).",
             "formato_detalle": "REEL (28-30 s)",
             "red_principal": "instagram",
@@ -2341,7 +2361,8 @@
                 "accion": "Primer plano, CTA · En pantalla: COMENTA ACERO",
                 "voz": "Si respondiste que sí a las tres y lo tuyo es diseñar acero en software, comenta ACERO y te cuento qué incluye la especialización."
               }
-            ]
+            ],
+            "formato_prueba": "estilo 10 · Gabriel + motion cromado"
           }
         },
         {
@@ -2412,7 +2433,8 @@
       "nombre": "GRUPO 2 · Comunidades — WhatsApp, canal de IG, grupos de FB, comunidad de YouTube, comunidades GHL",
       "descripcion": "Un solo post completo, el mismo en todos los canales: 6 del workshop (plan), Halloween, Acero, Máster por bloques y 4 de Black Friday.",
       "reglas": [
-        "Si hay regalo o registro, el enlace va directo en el post. Nada de «respóndeme X». Sin hashtags."
+        "Si hay regalo o registro, el enlace va directo en el post. Nada de «respóndeme X». Sin hashtags.",
+        "Si es oferta, el único enlace es el de WhatsApp con la palabra ya escrita. Nunca el precio ni la página vieja."
       ],
       "calendario": [
         {
@@ -2505,14 +2527,14 @@
             "mensajes": [
               {
                 "canal": "Todos: canales y grupos de WhatsApp, canal de Instagram, grupos de Facebook, comunidad de YouTube y comunidades GHL (el mismo post)",
-                "texto": "Lo más terrorífico de Halloween no es un fantasma: es entregar un modelo sin revisar interferencias. 🎃\n\nPara que no te pase, este fin de semana los cursos de bajo costo tienen precio de Halloween con el cupón SUSTO, hasta el domingo 1 de noviembre a las 23:59 (hora de Ecuador). Después vuelven a su precio.\n\nEl más pedido es Naves Industriales PRO: una nave industrial completa, paso a paso.\nhttps://funnel.dgdesignmodeling.com/naves-industriales-pro-page-574823\n\n¿Cuál ha sido el susto más grande que te dio un modelo?"
+                "texto": "Lo más terrorífico de Halloween no es un fantasma: es entregar un modelo sin revisar interferencias. 🎃\n\nPara que no te pase, este fin de semana hay oferta de Halloween en los cursos de bajo costo, como Naves Industriales PRO. No está en la web: es solo para quien nos escriba por WhatsApp, hasta el domingo 1 de noviembre a las 23:59 (hora de Ecuador).\n\nEscríbenos SUSTO y te mandamos la oferta: [enlace de WhatsApp de la academia con «SUSTO» ya escrito, lo pone Ester]\n\n¿Cuál ha sido el susto más grande que te dio un modelo?"
               }
             ],
             "arte": "Arte de Halloween (calabaza de líneas técnicas + cupón SUSTO)",
             "cta": {
               "comunidades": "Post completo, igual en todas las redes. Enlace dentro del post. Pregunta abierta al final."
             },
-            "notas_produccion": "El mismo post completo en todos los canales y grupos. Si hay regalo o registro, el enlace va directo en el post: nada de «respóndeme X» ni enlace en el primer comentario. Sin hashtags. Halloween flash: propuesta de $19,99 con SUSTO en los cursos de ~$26,99 (lo confirma Dayana). Ester crea el cupón en GHL antes del 30.",
+            "notas_produccion": "El mismo post completo en todos los canales y grupos. Si hay regalo o registro, el enlace va directo en el post: nada de «respóndeme X» ni enlace en el primer comentario. Sin hashtags. Si es oferta, el único enlace es el de WhatsApp con la palabra ya escrita. REGLA DE NOVIEMBRE: el precio de la oferta NO va en público ni se enlaza la página vieja. Quien responde o escribe al WhatsApp recibe el precio y la mini landing de la oferta. Precio y forma de nombrarlo: los decide Ester.",
             "origen": "matriz noviembre 2026",
             "cta_por_red": {
               "comunidades": "Post completo, igual en todas las redes. Enlace dentro del post. Pregunta abierta al final."
@@ -2869,14 +2891,14 @@
             "mensajes": [
               {
                 "canal": "Todos: canales y grupos de WhatsApp, canal de Instagram, grupos de Facebook, comunidad de YouTube y comunidades GHL (el mismo post)",
-                "texto": "Gracias a todos los que estuvieron ayer en el workshop. 🙌\n\nDesde hoy y hasta el domingo 22 abrimos el acceso anticipado de Black Friday: la Especialización en Acero y los cursos de bajo costo con el precio de Black Friday, antes que nadie.\n\nTemario de Acero: https://designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero\nNaves Industriales PRO: https://funnel.dgdesignmodeling.com/naves-industriales-pro-page-574823\n\nSi quieres el precio y el enlace, escríbenos por WhatsApp al número de la academia y te contesta una persona del equipo.\n\n¿Qué fue lo que más te sirvió del workshop?"
+                "texto": "Gracias a todos los que estuvieron ayer en el workshop. 🙌\n\nDesde hoy y hasta el domingo 22 abrimos el acceso anticipado de Black Friday para la Especialización en Acero y los cursos de bajo costo, antes que nadie.\n\nLa oferta no está en la web. Escríbenos LISTA por WhatsApp y una persona del equipo te manda el precio y el enlace: [enlace de WhatsApp de la academia con «LISTA» ya escrito, lo pone Ester]\n\n¿Qué fue lo que más te sirvió del workshop?"
               }
             ],
             "arte": "Arte de acceso anticipado",
             "cta": {
               "comunidades": "Post completo, igual en todas las redes. Enlace dentro del post. Pregunta abierta al final."
             },
-            "notas_produccion": "El mismo post completo en todos los canales y grupos. Si hay regalo o registro, el enlace va directo en el post: nada de «respóndeme X» ni enlace en el primer comentario. Sin hashtags. Los precios de Black Friday los confirma Dayana (propuesta en la sección de Black Friday).",
+            "notas_produccion": "El mismo post completo en todos los canales y grupos. Si hay regalo o registro, el enlace va directo en el post: nada de «respóndeme X» ni enlace en el primer comentario. Sin hashtags. Si es oferta, el único enlace es el de WhatsApp con la palabra ya escrita. REGLA DE NOVIEMBRE: el precio de la oferta NO va en público ni se enlaza la página vieja. Quien responde o escribe al WhatsApp recibe el precio y la mini landing de la oferta. Precio y forma de nombrarlo: los decide Ester.",
             "origen": "matriz noviembre 2026",
             "cta_por_red": {
               "comunidades": "Post completo, igual en todas las redes. Enlace dentro del post. Pregunta abierta al final."
@@ -2921,14 +2943,14 @@
             "mensajes": [
               {
                 "canal": "Todos: canales y grupos de WhatsApp, canal de Instagram, grupos de Facebook, comunidad de YouTube y comunidades GHL (el mismo post)",
-                "texto": "Empieza la semana de Black Friday, sin letra pequeña:\n\n🔩 Especialización en Acero: diseñar, calcular y verificar naves en software, con tutor de IA.\n🎯 Cursos de bajo costo: una herramienta concreta en pocas horas.\n🎓 Máster por bloques: si empiezas un bloque esta semana, va con un bono de regalo.\n\nCierra el lunes 30 a las 23:59 (hora de Ecuador) y no se reabre.\n\nAcero: https://designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero\nCursos: https://funnel.dgdesignmodeling.com/naves-industriales-pro-page-574823\nMáster (20 minutos con un asesor): https://api.leadconnectorhq.com/widget/booking/bIVuNHNojGEgH3gf6yXe\n\n¿Cuál de los tres te hace más falta hoy?"
+                "texto": "Empieza la semana de Black Friday, sin letra pequeña:\n\n🔩 Especialización en Acero: diseñar, calcular y verificar naves en software, con tutor de IA.\n🎯 Cursos de bajo costo: una herramienta concreta en pocas horas.\n🎓 Máster por bloques: si empiezas un bloque esta semana, va con un bono de regalo.\n\nCierra el lunes 30 a las 23:59 (hora de Ecuador) y no se reabre.\n\nLa oferta no está en la web: escríbenos BLACK por WhatsApp y te la mandamos: [enlace de WhatsApp de la academia con «BLACK» ya escrito, lo pone Ester]\nMáster (20 minutos con un asesor): https://api.leadconnectorhq.com/widget/booking/bIVuNHNojGEgH3gf6yXe\n\n¿Cuál de los tres te hace más falta hoy?"
               }
             ],
             "arte": "Arte de la Black Week (tres columnas)",
             "cta": {
               "comunidades": "Post completo, igual en todas las redes. Enlace dentro del post. Pregunta abierta al final."
             },
-            "notas_produccion": "El mismo post completo en todos los canales y grupos. Si hay regalo o registro, el enlace va directo en el post: nada de «respóndeme X» ni enlace en el primer comentario. Sin hashtags. Sin precio del Máster. Precios de Acero y cursos en la landing o por WhatsApp.",
+            "notas_produccion": "El mismo post completo en todos los canales y grupos. Si hay regalo o registro, el enlace va directo en el post: nada de «respóndeme X» ni enlace en el primer comentario. Sin hashtags. Si es oferta, el único enlace es el de WhatsApp con la palabra ya escrita. REGLA DE NOVIEMBRE: el precio de la oferta NO va en público ni se enlaza la página vieja. Quien responde o escribe al WhatsApp recibe el precio y la mini landing de la oferta. Precio y forma de nombrarlo: los decide Ester.",
             "origen": "matriz noviembre 2026",
             "cta_por_red": {
               "comunidades": "Post completo, igual en todas las redes. Enlace dentro del post. Pregunta abierta al final."
@@ -2973,14 +2995,14 @@
             "mensajes": [
               {
                 "canal": "Todos: canales y grupos de WhatsApp, canal de Instagram, grupos de Facebook, comunidad de YouTube y comunidades GHL (el mismo post)",
-                "texto": "Hoy es Black Friday. Si lo tuyo es diseñar acero en software, es el mejor momento del año para empezar la Especialización en Acero.\n\nLo que incluye: https://designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero\nCursos de bajo costo: https://funnel.dgdesignmodeling.com/naves-industriales-pro-page-574823\n\nCierra el lunes 30 a las 23:59 (Ecuador). ¿Te queda alguna duda? Escríbenos y te contesta una persona."
+                "texto": "Hoy es Black Friday. Si lo tuyo es diseñar acero en software, es el mejor momento del año para empezar la Especialización en Acero.\n\nLa oferta de Acero y de los cursos de bajo costo va solo por WhatsApp. Escríbenos BLACK: [enlace de WhatsApp de la academia con «BLACK» ya escrito, lo pone Ester]\n\nCierra el lunes 30 a las 23:59 (Ecuador). ¿Te queda alguna duda? Te contesta una persona."
               }
             ],
             "arte": "Arte de Black Friday",
             "cta": {
               "comunidades": "Post completo, igual en todas las redes. Enlace dentro del post. Pregunta abierta al final."
             },
-            "notas_produccion": "El mismo post completo en todos los canales y grupos. Si hay regalo o registro, el enlace va directo en el post: nada de «respóndeme X» ni enlace en el primer comentario. Sin hashtags. ",
+            "notas_produccion": "El mismo post completo en todos los canales y grupos. Si hay regalo o registro, el enlace va directo en el post: nada de «respóndeme X» ni enlace en el primer comentario. Sin hashtags. Si es oferta, el único enlace es el de WhatsApp con la palabra ya escrita. REGLA DE NOVIEMBRE: el precio de la oferta NO va en público ni se enlaza la página vieja. Quien responde o escribe al WhatsApp recibe el precio y la mini landing de la oferta. Precio y forma de nombrarlo: los decide Ester.",
             "origen": "matriz noviembre 2026",
             "cta_por_red": {
               "comunidades": "Post completo, igual en todas las redes. Enlace dentro del post. Pregunta abierta al final."
@@ -3025,14 +3047,14 @@
             "mensajes": [
               {
                 "canal": "Todos: canales y grupos de WhatsApp, canal de Instagram, grupos de Facebook, comunidad de YouTube y comunidades GHL (el mismo post)",
-                "texto": "Último día: hoy a las 23:59 (hora de Ecuador) cierra la Black Week y no se reabre.\n\nAcero: https://designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero\nCursos de bajo costo: https://funnel.dgdesignmodeling.com/naves-industriales-pro-page-574823\n\nGracias a todos los que entraron esta semana. 🙌"
+                "texto": "Último día: hoy a las 23:59 (hora de Ecuador) cierra la Black Week y no se reabre.\n\nSi todavía la quieres, escríbenos BLACK por WhatsApp antes de esa hora: [enlace de WhatsApp de la academia con «BLACK» ya escrito, lo pone Ester]\n\nGracias a todos los que entraron esta semana. 🙌"
               }
             ],
             "arte": "Arte «Cierra hoy»",
             "cta": {
               "comunidades": "Post completo, igual en todas las redes. Enlace dentro del post. Pregunta abierta al final."
             },
-            "notas_produccion": "El mismo post completo en todos los canales y grupos. Si hay regalo o registro, el enlace va directo en el post: nada de «respóndeme X» ni enlace en el primer comentario. Sin hashtags. ",
+            "notas_produccion": "El mismo post completo en todos los canales y grupos. Si hay regalo o registro, el enlace va directo en el post: nada de «respóndeme X» ni enlace en el primer comentario. Sin hashtags. Si es oferta, el único enlace es el de WhatsApp con la palabra ya escrita. REGLA DE NOVIEMBRE: el precio de la oferta NO va en público ni se enlaza la página vieja. Quien responde o escribe al WhatsApp recibe el precio y la mini landing de la oferta. Precio y forma de nombrarlo: los decide Ester.",
             "origen": "matriz noviembre 2026",
             "cta_por_red": {
               "comunidades": "Post completo, igual en todas las redes. Enlace dentro del post. Pregunta abierta al final."
@@ -3612,7 +3634,7 @@
       "descripcion": "Lunes a viernes (y Halloween), 3-4 frames. 12 días de venta y 8 con Gabriel a cámara.",
       "reglas": [
         "El sticker es el CTA.",
-        "Precio nunca en la historia: va por DM.",
+        "Precio nunca en la historia: va por DM o WhatsApp, con la mini landing de la oferta.",
         "Máximo 4 frames.",
         "Las respuestas llegan como DM: se contestan a mano."
       ],
@@ -3677,7 +3699,7 @@
                 "n": 4,
                 "visual": "Texto sobre azul.",
                 "texto": "Respóndeme SUSTO y te paso el enlace con el descuento.",
-                "sticker": "RESPONDER CON «SUSTO» (se contesta a mano con el enlace del cupón)."
+                "sticker": "RESPONDER CON «SUSTO» (se contesta a mano y se manda la oferta por WhatsApp)."
               }
             ],
             "cta": {
@@ -3685,7 +3707,7 @@
               "facebook": "Respóndeme SUSTO"
             },
             "origen": "matriz noviembre 2026",
-            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. HALLOWEEN FLASH (propuesta, la confirma Dayana): solo cursos de bajo costo (Naves Industriales PRO y los demás de ~$26,99) a precio especial con el cupón SUSTO, del vie 30-oct 00:00 al dom 1-nov 23:59 (hora de Ecuador). Precio propuesto: $19,99. Cierra a la hora dicha y NO se reabre. En historias no va el precio: va en el DM y en el correo. 31-oct es sábado y feriado largo en Ecuador (puente al 3-nov): historias cortas.",
+            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. HALLOWEEN FLASH (propuesta, la confirma Dayana): solo cursos de bajo costo (Naves Industriales PRO y los demás de ~$26,99) a precio especial con el cupón SUSTO, del vie 30-oct 00:00 al dom 1-nov 23:59 (hora de Ecuador). Precio propuesto: $19,99. Cierra a la hora dicha y NO se reabre. En historias no va el precio: va en el DM y en el correo. 31-oct es sábado y feriado largo en Ecuador (puente al 3-nov): historias cortas. La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja.",
             "cta_por_red": {
               "instagram": "Respóndeme SUSTO",
               "facebook": "Respóndeme SUSTO"
@@ -3754,7 +3776,7 @@
               "facebook": "Respóndeme SUSTO"
             },
             "origen": "matriz noviembre 2026",
-            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. HALLOWEEN FLASH (propuesta, la confirma Dayana): solo cursos de bajo costo (Naves Industriales PRO y los demás de ~$26,99) a precio especial con el cupón SUSTO, del vie 30-oct 00:00 al dom 1-nov 23:59 (hora de Ecuador). Precio propuesto: $19,99. Cierra a la hora dicha y NO se reabre. En historias no va el precio: va en el DM y en el correo.",
+            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. HALLOWEEN FLASH (propuesta, la confirma Dayana): solo cursos de bajo costo (Naves Industriales PRO y los demás de ~$26,99) a precio especial con el cupón SUSTO, del vie 30-oct 00:00 al dom 1-nov 23:59 (hora de Ecuador). Precio propuesto: $19,99. Cierra a la hora dicha y NO se reabre. En historias no va el precio: va en el DM y en el correo. La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja.",
             "cta_por_red": {
               "instagram": "Respóndeme SUSTO",
               "facebook": "Respóndeme SUSTO"
@@ -3897,7 +3919,7 @@
               "facebook": "Agenda 20 minutos"
             },
             "origen": "matriz noviembre 2026",
-            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 🎥 GABRIEL A CÁMARA (Dayana, 23-oct: al menos 2 veces por semana). Selfie vertical, 10-15 s, luz de ventana, sin guion leído: dice la idea con sus palabras. Se graban todas las de la semana en la sesión con Daniela. VENTA del Máster sin precio: el precio lo da el asesor en la llamada. 3-nov feriado de Cuenca. Enlace: el calendario de citas del Máster (bIVuNHNojGEgH3gf6yXe).",
+            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 🎥 GABRIEL A CÁMARA (Dayana, 23-oct: al menos 2 veces por semana). Selfie vertical, 10-15 s, luz de ventana, sin guion leído: dice la idea con sus palabras. Se graban todas las de la semana en la sesión con Daniela. VENTA del Máster sin precio: el precio lo da el asesor en la llamada. 3-nov feriado de Cuenca. Enlace: el calendario de citas del Máster (bIVuNHNojGEgH3gf6yXe). La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja.",
             "cta_por_red": {
               "instagram": "Agenda 20 minutos",
               "facebook": "Agenda 20 minutos"
@@ -4034,7 +4056,7 @@
               "facebook": "Respóndeme ACERO"
             },
             "origen": "matriz noviembre 2026",
-            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 🎥 GABRIEL A CÁMARA (Dayana, 23-oct: al menos 2 veces por semana). Selfie vertical, 10-15 s, luz de ventana, sin guion leído: dice la idea con sus palabras. Se graban todas las de la semana en la sesión con Daniela. VENTA de Acero: el precio solo por DM. A quien diga que quiere fabricar o soldar, se le dice con honestidad que Acero no es para eso. Mismo día del reel «Para quién es el workshop».",
+            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 🎥 GABRIEL A CÁMARA (Dayana, 23-oct: al menos 2 veces por semana). Selfie vertical, 10-15 s, luz de ventana, sin guion leído: dice la idea con sus palabras. Se graban todas las de la semana en la sesión con Daniela. VENTA de Acero: el precio solo por DM. A quien diga que quiere fabricar o soldar, se le dice con honestidad que Acero no es para eso. Mismo día del reel «Para quién es el workshop». La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja.",
             "cta_por_red": {
               "instagram": "Respóndeme ACERO",
               "facebook": "Respóndeme ACERO"
@@ -4238,7 +4260,7 @@
               "facebook": "Respóndeme NAVES / enlace al funnel"
             },
             "origen": "matriz noviembre 2026",
-            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 🎥 GABRIEL A CÁMARA (Dayana, 23-oct: al menos 2 veces por semana). Selfie vertical, 10-15 s, luz de ventana, sin guion leído: dice la idea con sus palabras. Se graban todas las de la semana en la sesión con Daniela. VENTA del curso de bajo costo (las historias de Naves PRO del 19-oct llamaron la atención). Enlace: https://funnel.dgdesignmodeling.com/naves-industriales-pro-page-574823. NAVES por DM lo contesta UNA sola automatización (OpenReply o el bot de Pato, no las dos).",
+            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 🎥 GABRIEL A CÁMARA (Dayana, 23-oct: al menos 2 veces por semana). Selfie vertical, 10-15 s, luz de ventana, sin guion leído: dice la idea con sus palabras. Se graban todas las de la semana en la sesión con Daniela. VENTA del curso de bajo costo (las historias de Naves PRO del 19-oct llamaron la atención). Enlace: https://funnel.dgdesignmodeling.com/naves-industriales-pro-page-574823. NAVES por DM lo contesta UNA sola automatización (OpenReply o el bot de Pato, no las dos). La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja.",
             "cta_por_red": {
               "instagram": "Respóndeme NAVES / enlace al funnel",
               "facebook": "Respóndeme NAVES / enlace al funnel"
@@ -4375,7 +4397,7 @@
               "facebook": "Agenda 20 minutos"
             },
             "origen": "matriz noviembre 2026",
-            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 🎥 GABRIEL A CÁMARA (Dayana, 23-oct: al menos 2 veces por semana). Selfie vertical, 10-15 s, luz de ventana, sin guion leído: dice la idea con sus palabras. Se graban todas las de la semana en la sesión con Daniela. VENTA del Máster sin precio. 12-nov: World Quality Day.",
+            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 🎥 GABRIEL A CÁMARA (Dayana, 23-oct: al menos 2 veces por semana). Selfie vertical, 10-15 s, luz de ventana, sin guion leído: dice la idea con sus palabras. Se graban todas las de la semana en la sesión con Daniela. VENTA del Máster sin precio. 12-nov: World Quality Day. La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja.",
             "cta_por_red": {
               "instagram": "Agenda 20 minutos",
               "facebook": "Agenda 20 minutos"
@@ -4651,7 +4673,7 @@
                 "n": 4,
                 "visual": "Texto sobre azul.",
                 "texto": "Respóndeme LISTA y te paso las condiciones por mensaje.",
-                "sticker": "RESPONDER CON «LISTA» (se contesta a mano con precio y enlace)."
+                "sticker": "RESPONDER CON «LISTA» (se contesta a mano y se manda la oferta por WhatsApp)."
               }
             ],
             "cta": {
@@ -4659,7 +4681,7 @@
               "facebook": "Respóndeme LISTA"
             },
             "origen": "matriz noviembre 2026",
-            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 🎥 GABRIEL A CÁMARA (Dayana, 23-oct: al menos 2 veces por semana). Selfie vertical, 10-15 s, luz de ventana, sin guion leído: dice la idea con sus palabras. Se graban todas las de la semana en la sesión con Daniela. VENTA · ACCESO ANTICIPADO (propuesta: 18 al 22-nov, mismos precios que la Black Week + un bono). Precios en DM y correo, nunca en la historia.",
+            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 🎥 GABRIEL A CÁMARA (Dayana, 23-oct: al menos 2 veces por semana). Selfie vertical, 10-15 s, luz de ventana, sin guion leído: dice la idea con sus palabras. Se graban todas las de la semana en la sesión con Daniela. VENTA · ACCESO ANTICIPADO (propuesta: 18 al 22-nov, mismos precios que la Black Week + un bono). Precios en DM y correo, nunca en la historia. La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja.",
             "cta_por_red": {
               "instagram": "Respóndeme LISTA",
               "facebook": "Respóndeme LISTA"
@@ -4795,7 +4817,7 @@
               "facebook": "Respóndeme LISTA"
             },
             "origen": "matriz noviembre 2026",
-            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 20-nov: día libre en Ecuador (Decreto 507) y Black Friday ecuatoriano, adelantado una semana por las elecciones (Primicias, 30-sep-2026). Mismo precio de la lista: no hay un tercer precio.",
+            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 20-nov: día libre en Ecuador (Decreto 507) y Black Friday ecuatoriano, adelantado una semana por las elecciones (Primicias, 30-sep-2026). Mismo precio de la lista: no hay un tercer precio. La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja.",
             "cta_por_red": {
               "instagram": "Respóndeme LISTA",
               "facebook": "Respóndeme LISTA"
@@ -4871,7 +4893,7 @@
               "facebook": "Respóndeme BLACK"
             },
             "origen": "matriz noviembre 2026",
-            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 🎥 GABRIEL A CÁMARA (Dayana, 23-oct: al menos 2 veces por semana). Selfie vertical, 10-15 s, luz de ventana, sin guion leído: dice la idea con sus palabras. Se graban todas las de la semana en la sesión con Daniela. VENTA · BLACK WEEK (23 al 30-nov, cierre lun 30 23:59 Ecuador, no se reabre). Máster: solo el bono, nunca el precio. Elecciones en Ecuador el dom 29 (silencio electoral 27-29): no afecta el orgánico comercial.",
+            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 🎥 GABRIEL A CÁMARA (Dayana, 23-oct: al menos 2 veces por semana). Selfie vertical, 10-15 s, luz de ventana, sin guion leído: dice la idea con sus palabras. Se graban todas las de la semana en la sesión con Daniela. VENTA · BLACK WEEK (23 al 30-nov, cierre lun 30 23:59 Ecuador, no se reabre). Máster: solo el bono, nunca el precio. Elecciones en Ecuador el dom 29 (silencio electoral 27-29): no afecta el orgánico comercial. La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja.",
             "cta_por_red": {
               "instagram": "Respóndeme BLACK",
               "facebook": "Respóndeme BLACK"
@@ -5013,7 +5035,7 @@
               "facebook": "Caja de preguntas"
             },
             "origen": "matriz noviembre 2026",
-            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. VENTA (resolver objeciones). Confirmar las respuestas con Dayana antes de publicar (acceso que no caduca y requisitos de Acero, como dice la comunidad del 29-oct).",
+            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. VENTA (resolver objeciones). Confirmar las respuestas con Dayana antes de publicar (acceso que no caduca y requisitos de Acero, como dice la comunidad del 29-oct). La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja.",
             "cta_por_red": {
               "instagram": "Caja de preguntas",
               "facebook": "Caja de preguntas"
@@ -5156,7 +5178,7 @@
               "facebook": "Respóndeme BLACK"
             },
             "origen": "matriz noviembre 2026",
-            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 🎥 GABRIEL A CÁMARA (Dayana, 23-oct: al menos 2 veces por semana). Selfie vertical, 10-15 s, luz de ventana, sin guion leído: dice la idea con sus palabras. Se graban todas las de la semana en la sesión con Daniela. VENTA · BLACK FRIDAY (27-nov).",
+            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 🎥 GABRIEL A CÁMARA (Dayana, 23-oct: al menos 2 veces por semana). Selfie vertical, 10-15 s, luz de ventana, sin guion leído: dice la idea con sus palabras. Se graban todas las de la semana en la sesión con Daniela. VENTA · BLACK FRIDAY (27-nov). La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja.",
             "cta_por_red": {
               "instagram": "Respóndeme BLACK",
               "facebook": "Respóndeme BLACK"
@@ -5225,7 +5247,7 @@
               "facebook": "Respóndeme BLACK"
             },
             "origen": "matriz noviembre 2026",
-            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. VENTA · CYBER MONDAY. A las 23:59 se apagan los enlaces y no se reabre.",
+            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. VENTA · CYBER MONDAY. A las 23:59 se apagan los enlaces y no se reabre. La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja.",
             "cta_por_red": {
               "instagram": "Respóndeme BLACK",
               "facebook": "Respóndeme BLACK"
@@ -5383,7 +5405,7 @@
             "precio": "precio de Black Friday (lo confirma Dayana)",
             "formato": "ANUNCIO Meta (4:5 y 9:16)",
             "hook": "Diseña y calcula naves de acero en software. Precio de Black Friday hasta el lunes 30.",
-            "cuerpo": "Diseña y calcula naves de acero en software. Precio de Black Friday hasta el lunes 30.\n\nEspecialización en Diseño Estructural BIM en Acero con Tutor IA: [PRECIO BF] en lugar de $225. Revit, Robot y Advance Steel, de principio a fin.\n\nCierra el lunes 30 a las 23:59 (hora de Ecuador).",
+            "cuerpo": "Diseña y calcula naves de acero en software. Oferta de Black Friday hasta el lunes 30, solo por WhatsApp.\n\nEspecialización en Diseño Estructural BIM en Acero con Tutor IA: Revit, Robot y Advance Steel, de principio a fin. Escríbenos y te mandamos el precio.\n\nCierra el lunes 30 a las 23:59 (hora de Ecuador).",
             "titular": "Acero con Tutor IA · Black Friday",
             "descripcion": "Cierra el lun 30 · 23:59 (Ecuador)",
             "creativo": "Creativo del módulo a módulo (carrusel del 20-nov) o captura del Tutor IA",
@@ -5399,10 +5421,10 @@
               ],
               [
                 "Qué medir",
-                "Ventas atribuidas (WhatsApp y formulario) por día; CPL"
+                "Conversaciones de WhatsApp iniciadas, costo por conversación y ventas que salen de ellas (GHL)"
               ]
             ],
-            "condicion": "El precio de Black Friday lo confirma Dayana (propuesta $179). Un solo enlace de pago.",
+            "condicion": "Destino: WhatsApp (botón «Enviar mensaje»), nunca la página vieja. Por WhatsApp se manda el precio y la mini landing BLACK · Acero. REGLA DE NOVIEMBRE: el precio de la oferta NO va en público ni se enlaza la página vieja. Quien responde o escribe al WhatsApp recibe el precio y la mini landing de la oferta. Precio y forma de nombrarlo: los decide Ester.",
             "contenido": {
               "id": "nov-ads-acero-bf",
               "grupo": "Pauta Meta",
@@ -5422,19 +5444,19 @@
               "titulo": "Acero: Black Friday",
               "campana": "ACERO · Black Friday (18 al 30-nov)",
               "hook": "Diseña y calcula naves de acero en software. Precio de Black Friday hasta el lunes 30.",
-              "texto_principal": "Diseña y calcula naves de acero en software. Precio de Black Friday hasta el lunes 30.\n\nEspecialización en Diseño Estructural BIM en Acero con Tutor IA: [PRECIO BF] en lugar de $225. Revit, Robot y Advance Steel, de principio a fin.\n\nCierra el lunes 30 a las 23:59 (hora de Ecuador).",
+              "texto_principal": "Diseña y calcula naves de acero en software. Oferta de Black Friday hasta el lunes 30, solo por WhatsApp.\n\nEspecialización en Diseño Estructural BIM en Acero con Tutor IA: Revit, Robot y Advance Steel, de principio a fin. Escríbenos y te mandamos el precio.\n\nCierra el lunes 30 a las 23:59 (hora de Ecuador).",
               "titular": "Acero con Tutor IA · Black Friday",
               "descripcion": "Cierra el lun 30 · 23:59 (Ecuador)",
               "boton": "Enviar mensaje",
               "publico_sugerido": "Leads de Acero de 90 días + compradores de cursos de bajo costo + interacción con las chuletas de acero. Ecuador: concentrar del 18 al 26 y bajar del 27 al 29 (silencio electoral y elecciones)",
-              "que_medir": "Ventas atribuidas (WhatsApp y formulario) por día; CPL",
+              "que_medir": "Conversaciones de WhatsApp iniciadas, costo por conversación y ventas que salen de ellas (GHL)",
               "creativo": "Creativo del módulo a módulo (carrusel del 20-nov) o captura del Tutor IA",
               "eje": "NÚCLEO-BIM",
               "cta": {
                 "anuncio": "Enviar mensaje"
               },
-              "condicion": "El precio de Black Friday lo confirma Dayana (propuesta $179). Un solo enlace de pago.",
-              "notas_produccion": "El precio de Black Friday lo confirma Dayana (propuesta $179). Un solo enlace de pago.",
+              "condicion": "Destino: WhatsApp (botón «Enviar mensaje»), nunca la página vieja. Por WhatsApp se manda el precio y la mini landing BLACK · Acero. REGLA DE NOVIEMBRE: el precio de la oferta NO va en público ni se enlaza la página vieja. Quien responde o escribe al WhatsApp recibe el precio y la mini landing de la oferta. Precio y forma de nombrarlo: los decide Ester.",
+              "notas_produccion": "Destino: WhatsApp (botón «Enviar mensaje»), nunca la página vieja. Por WhatsApp se manda el precio y la mini landing BLACK · Acero. REGLA DE NOVIEMBRE: el precio de la oferta NO va en público ni se enlaza la página vieja. Quien responde o escribe al WhatsApp recibe el precio y la mini landing de la oferta. Precio y forma de nombrarlo: los decide Ester.",
               "origen": "matriz noviembre 2026",
               "cta_por_red": {
                 "anuncio": "Enviar mensaje"
@@ -5453,7 +5475,7 @@
             "precio": "precio de Black Friday (lo confirma Dayana)",
             "formato": "ANUNCIO Meta (4:5 y 9:16)",
             "hook": "Una nave industrial completa, paso a paso, en pocas horas.",
-            "cuerpo": "Una nave industrial completa, paso a paso, en pocas horas.\n\nNaves Industriales PRO con precio especial por tiempo limitado: el cupón vence a la hora indicada y no se renueva.",
+            "cuerpo": "Una nave industrial completa, paso a paso, en pocas horas.\n\nNaves Industriales PRO con oferta por tiempo limitado, solo por WhatsApp: escríbenos y te mandamos el precio y el enlace. Vence a la hora indicada y no se renueva.",
             "titular": "Naves Industriales PRO",
             "descripcion": "Precio especial por tiempo limitado",
             "creativo": "Historias de Naves PRO del 19-oct (frames 1 a 4)",
@@ -5461,18 +5483,18 @@
             "cfg": [
               [
                 "Botón",
-                "Comprar"
+                "Enviar mensaje"
               ],
               [
                 "Público",
-                "Interacción 90 días + visitantes de la landing de Naves PRO"
+                "Interacción 90 días + visitantes de la landing de Naves PRO (como público, no como destino)"
               ],
               [
                 "Qué medir",
-                "Compras y costo por compra"
+                "Conversaciones de WhatsApp, compras y costo por compra"
               ]
             ],
-            "condicion": "Dos ventanas: Halloween (30-oct al 1-nov) y Black Week. Precio en la landing.",
+            "condicion": "Dos ventanas: Halloween (30-oct al 1-nov) y Black Week. Destino: WhatsApp, no la landing de Naves PRO. Por WhatsApp va la mini landing de la oferta. REGLA DE NOVIEMBRE: el precio de la oferta NO va en público ni se enlaza la página vieja. Quien responde o escribe al WhatsApp recibe el precio y la mini landing de la oferta. Precio y forma de nombrarlo: los decide Ester.",
             "contenido": {
               "id": "nov-ads-cursos-bf",
               "grupo": "Pauta Meta",
@@ -5492,19 +5514,19 @@
               "titulo": "Cursos de bajo costo: Halloween y Black Friday",
               "campana": "CURSOS DE BAJO COSTO · Halloween (30-oct al 1-nov) y Black Friday (18 al 30-nov)",
               "hook": "Una nave industrial completa, paso a paso, en pocas horas.",
-              "texto_principal": "Una nave industrial completa, paso a paso, en pocas horas.\n\nNaves Industriales PRO con precio especial por tiempo limitado: el cupón vence a la hora indicada y no se renueva.",
+              "texto_principal": "Una nave industrial completa, paso a paso, en pocas horas.\n\nNaves Industriales PRO con oferta por tiempo limitado, solo por WhatsApp: escríbenos y te mandamos el precio y el enlace. Vence a la hora indicada y no se renueva.",
               "titular": "Naves Industriales PRO",
               "descripcion": "Precio especial por tiempo limitado",
-              "boton": "Comprar",
-              "publico_sugerido": "Interacción 90 días + visitantes de la landing de Naves PRO",
-              "que_medir": "Compras y costo por compra",
+              "boton": "Enviar mensaje",
+              "publico_sugerido": "Interacción 90 días + visitantes de la landing de Naves PRO (como público, no como destino)",
+              "que_medir": "Conversaciones de WhatsApp, compras y costo por compra",
               "creativo": "Historias de Naves PRO del 19-oct (frames 1 a 4)",
               "eje": "NÚCLEO-BIM",
               "cta": {
-                "anuncio": "Comprar"
+                "anuncio": "Enviar mensaje"
               },
-              "condicion": "Dos ventanas: Halloween (30-oct al 1-nov) y Black Week. Precio en la landing.",
-              "notas_produccion": "Dos ventanas: Halloween (30-oct al 1-nov) y Black Week. Precio en la landing.",
+              "condicion": "Dos ventanas: Halloween (30-oct al 1-nov) y Black Week. Destino: WhatsApp, no la landing de Naves PRO. Por WhatsApp va la mini landing de la oferta. REGLA DE NOVIEMBRE: el precio de la oferta NO va en público ni se enlaza la página vieja. Quien responde o escribe al WhatsApp recibe el precio y la mini landing de la oferta. Precio y forma de nombrarlo: los decide Ester.",
+              "notas_produccion": "Dos ventanas: Halloween (30-oct al 1-nov) y Black Week. Destino: WhatsApp, no la landing de Naves PRO. Por WhatsApp va la mini landing de la oferta. REGLA DE NOVIEMBRE: el precio de la oferta NO va en público ni se enlaza la página vieja. Quien responde o escribe al WhatsApp recibe el precio y la mini landing de la oferta. Precio y forma de nombrarlo: los decide Ester.",
               "origen": "matriz noviembre 2026",
               "cta_por_red": {
                 "anuncio": "Comprar"
@@ -5730,8 +5752,8 @@
       "preencabezado": "Solo este fin de semana: cursos de bajo costo con precio de Halloween.",
       "segmento": "Lista general + alumnos de cursos de bajo costo",
       "objetivo": "Vender cursos de bajo costo en un fin de semana largo",
-      "cuerpo": "Lo más terrorífico de Halloween no es un fantasma: es entregar un modelo sin revisar interferencias.\n\nPara que no te pase, este fin de semana los cursos de bajo costo tienen precio de Halloween: [PRECIO HALLOWEEN, propuesta $19,99] con el cupón SUSTO.\n\nEl más pedido es Naves Industriales PRO: una nave completa, paso a paso. https://funnel.dgdesignmodeling.com/naves-industriales-pro-page-574823\n\nEl cupón vence el domingo 1 de noviembre a las 23:59 (hora de Ecuador) y no se renueva.",
-      "condicion": "Precio y cupón los confirma Dayana; Ester crea el cupón SUSTO en GHL antes del 30-oct.",
+      "cuerpo": "Lo más terrorífico de Halloween no es un fantasma: es entregar un modelo sin revisar interferencias.\n\nPara que no te pase, este fin de semana hay oferta de Halloween en los cursos de bajo costo. El más pedido es Naves Industriales PRO: una nave completa, paso a paso.\n\nLa oferta no está en la web. Responde este correo con la palabra SUSTO o escríbenos por WhatsApp ([enlace de WhatsApp de la academia con «SUSTO» ya escrito, lo pone Ester]) y te mandamos el precio y el enlace.\n\nVence el domingo 1 de noviembre a las 23:59 (hora de Ecuador) y no se renueva.",
+      "condicion": "REGLA DE NOVIEMBRE: el precio de la oferta NO va en público ni se enlaza la página vieja. Quien responde o escribe al WhatsApp recibe el precio y la mini landing de la oferta. Precio y forma de nombrarlo: los decide Ester.",
       "contenido": {
         "id": "nov-correo-1030-halloween",
         "grupo": "Correos",
@@ -5754,16 +5776,16 @@
         "hook": "Vender cursos de bajo costo en un fin de semana largo",
         "cuerpo": [
           "Lo más terrorífico de Halloween no es un fantasma: es entregar un modelo sin revisar interferencias.",
-          "Para que no te pase, este fin de semana los cursos de bajo costo tienen precio de Halloween: [PRECIO HALLOWEEN, propuesta $19,99] con el cupón SUSTO.",
-          "El más pedido es Naves Industriales PRO: una nave completa, paso a paso. https://funnel.dgdesignmodeling.com/naves-industriales-pro-page-574823",
-          "El cupón vence el domingo 1 de noviembre a las 23:59 (hora de Ecuador) y no se renueva."
+          "Para que no te pase, este fin de semana hay oferta de Halloween en los cursos de bajo costo. El más pedido es Naves Industriales PRO: una nave completa, paso a paso.",
+          "La oferta no está en la web. Responde este correo con la palabra SUSTO o escríbenos por WhatsApp ([enlace de WhatsApp de la academia con «SUSTO» ya escrito, lo pone Ester]) y te mandamos el precio y el enlace.",
+          "Vence el domingo 1 de noviembre a las 23:59 (hora de Ecuador) y no se renueva."
         ],
         "eje": "NÚCLEO-BIM",
         "cta": {
           "email": "Botón del correo"
         },
-        "condicion": "Precio y cupón los confirma Dayana; Ester crea el cupón SUSTO en GHL antes del 30-oct.",
-        "notas_produccion": "Precio y cupón los confirma Dayana; Ester crea el cupón SUSTO en GHL antes del 30-oct.",
+        "condicion": "REGLA DE NOVIEMBRE: el precio de la oferta NO va en público ni se enlaza la página vieja. Quien responde o escribe al WhatsApp recibe el precio y la mini landing de la oferta. Precio y forma de nombrarlo: los decide Ester.",
+        "notas_produccion": "REGLA DE NOVIEMBRE: el precio de la oferta NO va en público ni se enlaza la página vieja. Quien responde o escribe al WhatsApp recibe el precio y la mini landing de la oferta. Precio y forma de nombrarlo: los decide Ester.",
         "origen": "matriz noviembre 2026",
         "cta_por_red": {
           "email": "Botón del correo"
@@ -5779,8 +5801,8 @@
       "preencabezado": "Cierra hoy a las 23:59 (Ecuador).",
       "segmento": "Quien abrió el correo del 30 y no compró",
       "objetivo": "Cierre honesto del flash",
-      "cuerpo": "Hoy a las 23:59 (hora de Ecuador) vence el cupón SUSTO.\n\nNaves Industriales PRO y los demás cursos de bajo costo: https://funnel.dgdesignmodeling.com/naves-industriales-pro-page-574823\n\nDespués vuelven a su precio normal.",
-      "condicion": "",
+      "cuerpo": "Hoy a las 23:59 (hora de Ecuador) vence la oferta de Halloween en los cursos de bajo costo.\n\nSi la quieres, responde SUSTO a este correo o escríbenos por WhatsApp ([enlace de WhatsApp de la academia con «SUSTO» ya escrito, lo pone Ester]) antes de esa hora.\n\nDespués no se renueva.",
+      "condicion": "REGLA DE NOVIEMBRE: el precio de la oferta NO va en público ni se enlaza la página vieja. Quien responde o escribe al WhatsApp recibe el precio y la mini landing de la oferta. Precio y forma de nombrarlo: los decide Ester.",
       "contenido": {
         "id": "nov-correo-1101-susto-cierre",
         "grupo": "Correos",
@@ -5802,16 +5824,16 @@
         "segmento": "Quien abrió el correo del 30 y no compró",
         "hook": "Cierre honesto del flash",
         "cuerpo": [
-          "Hoy a las 23:59 (hora de Ecuador) vence el cupón SUSTO.",
-          "Naves Industriales PRO y los demás cursos de bajo costo: https://funnel.dgdesignmodeling.com/naves-industriales-pro-page-574823",
-          "Después vuelven a su precio normal."
+          "Hoy a las 23:59 (hora de Ecuador) vence la oferta de Halloween en los cursos de bajo costo.",
+          "Si la quieres, responde SUSTO a este correo o escríbenos por WhatsApp ([enlace de WhatsApp de la academia con «SUSTO» ya escrito, lo pone Ester]) antes de esa hora.",
+          "Después no se renueva."
         ],
         "eje": "NÚCLEO-BIM",
         "cta": {
           "email": "Botón del correo"
         },
-        "condicion": "",
-        "notas_produccion": "",
+        "condicion": "REGLA DE NOVIEMBRE: el precio de la oferta NO va en público ni se enlaza la página vieja. Quien responde o escribe al WhatsApp recibe el precio y la mini landing de la oferta. Precio y forma de nombrarlo: los decide Ester.",
+        "notas_produccion": "REGLA DE NOVIEMBRE: el precio de la oferta NO va en público ni se enlaza la página vieja. Quien responde o escribe al WhatsApp recibe el precio y la mini landing de la oferta. Precio y forma de nombrarlo: los decide Ester.",
         "origen": "matriz noviembre 2026",
         "cta_por_red": {
           "email": "Botón del correo"
@@ -5973,8 +5995,8 @@
       "preencabezado": "Solo para la lista, hasta el domingo 22.",
       "segmento": "Registrados al workshop + compradores de cursos de bajo costo",
       "objetivo": "Ventas de Acero y cursos en la lista anticipada",
-      "cuerpo": "Gracias por estar ayer (o por registrarte). Como prometimos, abrimos el acceso anticipado de Black Friday antes que a nadie, hasta el domingo 22 a las 23:59 (hora de Ecuador).\n\nEspecialización en Acero con Tutor IA: [PRECIO BF, propuesta $179 en lugar de $225] + un curso de bajo costo de regalo.\n\nCursos de bajo costo: [PRECIO BF, propuesta pack de 3 por $49].\n\nTemario de Acero: https://designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero\n\nSi quieres hablar con una persona antes de decidir, responde este correo.",
-      "condicion": "Precios propuestos: los confirma Dayana. Si se usa la grabación del workshop, se manda aquí por 72 h.",
+      "cuerpo": "Gracias por estar ayer (o por registrarte). Como prometimos, abrimos el acceso anticipado de Black Friday antes que a nadie, hasta el domingo 22 a las 23:59 (hora de Ecuador).\n\nEntra la Especialización en Acero con Tutor IA (con un curso de bajo costo de regalo) y los cursos de bajo costo.\n\nEl precio no está en la web: es solo para la lista. Responde LISTA a este correo o escríbenos por WhatsApp ([enlace de WhatsApp de la academia con «LISTA» ya escrito, lo pone Ester]) y te mandamos el precio y el enlace.\n\nTemario de Acero: https://designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero",
+      "condicion": "Precios propuestos: los confirma Dayana. Si se usa la grabación del workshop, se manda aquí por 72 h. REGLA DE NOVIEMBRE: el precio de la oferta NO va en público ni se enlaza la página vieja. Quien responde o escribe al WhatsApp recibe el precio y la mini landing de la oferta. Precio y forma de nombrarlo: los decide Ester.",
       "contenido": {
         "id": "nov-correo-1118-lista",
         "grupo": "Correos",
@@ -5997,17 +6019,16 @@
         "hook": "Ventas de Acero y cursos en la lista anticipada",
         "cuerpo": [
           "Gracias por estar ayer (o por registrarte). Como prometimos, abrimos el acceso anticipado de Black Friday antes que a nadie, hasta el domingo 22 a las 23:59 (hora de Ecuador).",
-          "Especialización en Acero con Tutor IA: [PRECIO BF, propuesta $179 en lugar de $225] + un curso de bajo costo de regalo.",
-          "Cursos de bajo costo: [PRECIO BF, propuesta pack de 3 por $49].",
-          "Temario de Acero: https://designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero",
-          "Si quieres hablar con una persona antes de decidir, responde este correo."
+          "Entra la Especialización en Acero con Tutor IA (con un curso de bajo costo de regalo) y los cursos de bajo costo.",
+          "El precio no está en la web: es solo para la lista. Responde LISTA a este correo o escríbenos por WhatsApp ([enlace de WhatsApp de la academia con «LISTA» ya escrito, lo pone Ester]) y te mandamos el precio y el enlace.",
+          "Temario de Acero: https://designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero"
         ],
         "eje": "NÚCLEO-BIM",
         "cta": {
           "email": "Botón del correo"
         },
-        "condicion": "Precios propuestos: los confirma Dayana. Si se usa la grabación del workshop, se manda aquí por 72 h.",
-        "notas_produccion": "Precios propuestos: los confirma Dayana. Si se usa la grabación del workshop, se manda aquí por 72 h.",
+        "condicion": "Precios propuestos: los confirma Dayana. Si se usa la grabación del workshop, se manda aquí por 72 h. REGLA DE NOVIEMBRE: el precio de la oferta NO va en público ni se enlaza la página vieja. Quien responde o escribe al WhatsApp recibe el precio y la mini landing de la oferta. Precio y forma de nombrarlo: los decide Ester.",
+        "notas_produccion": "Precios propuestos: los confirma Dayana. Si se usa la grabación del workshop, se manda aquí por 72 h. REGLA DE NOVIEMBRE: el precio de la oferta NO va en público ni se enlaza la página vieja. Quien responde o escribe al WhatsApp recibe el precio y la mini landing de la oferta. Precio y forma de nombrarlo: los decide Ester.",
         "origen": "matriz noviembre 2026",
         "cta_por_red": {
           "email": "Botón del correo"
@@ -6071,8 +6092,8 @@
       "preencabezado": "Hasta el lunes 30 a las 23:59.",
       "segmento": "Lista general",
       "objetivo": "Ventas de la Black Week",
-      "cuerpo": "Empieza la semana de Black Friday. Sin letra pequeña:\n\nEspecialización en Acero con Tutor IA: [PRECIO BF, propuesta $179] (normal $225).\n\nCursos de bajo costo: [PRECIO BF, propuesta pack de 3 por $49].\n\nMáster por bloques: si empiezas un bloque esta semana, te llevas un bono de regalo. Agenda 20 minutos: https://api.leadconnectorhq.com/widget/booking/bIVuNHNojGEgH3gf6yXe\n\nCierra el lunes 30 a las 23:59 (hora de Ecuador) y no se reabre.",
-      "condicion": "El Máster no lleva precio. El bono lo confirma Dayana (propuesta: Acero con Tutor IA y Naves PRO).",
+      "cuerpo": "Empieza la semana de Black Friday. Sin letra pequeña:\n\nEspecialización en Acero con Tutor IA y cursos de bajo costo, con precio de Black Friday.\n\nLa oferta no está en la web: responde BLACK a este correo o escríbenos por WhatsApp ([enlace de WhatsApp de la academia con «BLACK» ya escrito, lo pone Ester]) y te mandamos el precio y el enlace.\n\nMáster por bloques: si empiezas un bloque esta semana, te llevas un bono de regalo. Agenda 20 minutos: https://api.leadconnectorhq.com/widget/booking/bIVuNHNojGEgH3gf6yXe\n\nCierra el lunes 30 a las 23:59 (hora de Ecuador) y no se reabre.",
+      "condicion": "El Máster no lleva precio. El bono lo confirma Dayana (propuesta: Acero con Tutor IA y Naves PRO). REGLA DE NOVIEMBRE: el precio de la oferta NO va en público ni se enlaza la página vieja. Quien responde o escribe al WhatsApp recibe el precio y la mini landing de la oferta. Precio y forma de nombrarlo: los decide Ester.",
       "contenido": {
         "id": "nov-correo-1123-blackweek",
         "grupo": "Correos",
@@ -6095,8 +6116,8 @@
         "hook": "Ventas de la Black Week",
         "cuerpo": [
           "Empieza la semana de Black Friday. Sin letra pequeña:",
-          "Especialización en Acero con Tutor IA: [PRECIO BF, propuesta $179] (normal $225).",
-          "Cursos de bajo costo: [PRECIO BF, propuesta pack de 3 por $49].",
+          "Especialización en Acero con Tutor IA y cursos de bajo costo, con precio de Black Friday.",
+          "La oferta no está en la web: responde BLACK a este correo o escríbenos por WhatsApp ([enlace de WhatsApp de la academia con «BLACK» ya escrito, lo pone Ester]) y te mandamos el precio y el enlace.",
           "Máster por bloques: si empiezas un bloque esta semana, te llevas un bono de regalo. Agenda 20 minutos: https://api.leadconnectorhq.com/widget/booking/bIVuNHNojGEgH3gf6yXe",
           "Cierra el lunes 30 a las 23:59 (hora de Ecuador) y no se reabre."
         ],
@@ -6104,8 +6125,8 @@
         "cta": {
           "email": "Botón del correo"
         },
-        "condicion": "El Máster no lleva precio. El bono lo confirma Dayana (propuesta: Acero con Tutor IA y Naves PRO).",
-        "notas_produccion": "El Máster no lleva precio. El bono lo confirma Dayana (propuesta: Acero con Tutor IA y Naves PRO).",
+        "condicion": "El Máster no lleva precio. El bono lo confirma Dayana (propuesta: Acero con Tutor IA y Naves PRO). REGLA DE NOVIEMBRE: el precio de la oferta NO va en público ni se enlaza la página vieja. Quien responde o escribe al WhatsApp recibe el precio y la mini landing de la oferta. Precio y forma de nombrarlo: los decide Ester.",
+        "notas_produccion": "El Máster no lleva precio. El bono lo confirma Dayana (propuesta: Acero con Tutor IA y Naves PRO). REGLA DE NOVIEMBRE: el precio de la oferta NO va en público ni se enlaza la página vieja. Quien responde o escribe al WhatsApp recibe el precio y la mini landing de la oferta. Precio y forma de nombrarlo: los decide Ester.",
         "origen": "matriz noviembre 2026",
         "cta_por_red": {
           "email": "Botón del correo"
@@ -6170,8 +6191,8 @@
       "preencabezado": "Si lo tuyo es diseñar acero en software, es hoy.",
       "segmento": "Lista general",
       "objetivo": "Pico de ventas",
-      "cuerpo": "Hoy es Black Friday. Especialización en Acero con Tutor IA: [PRECIO BF] (normal $225). Cursos de bajo costo: [PRECIO BF].\n\nTemario: https://designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero\n\nCierra el lunes 30 a las 23:59 (hora de Ecuador).",
-      "condicion": "Ecuador: silencio electoral del 27 al 29 (no aplica a comunicación comercial, pero se baja la pauta en Ecuador).",
+      "cuerpo": "Hoy es Black Friday. Si lo tuyo es diseñar acero en software, es el mejor momento del año para empezar la Especialización en Acero con Tutor IA.\n\nResponde BLACK a este correo o escríbenos por WhatsApp ([enlace de WhatsApp de la academia con «BLACK» ya escrito, lo pone Ester]) y te mandamos el precio y el enlace. Lo mismo para los cursos de bajo costo.\n\nCierra el lunes 30 a las 23:59 (hora de Ecuador).",
+      "condicion": "Ecuador: silencio electoral del 27 al 29 (no aplica a comunicación comercial, pero se baja la pauta en Ecuador). REGLA DE NOVIEMBRE: el precio de la oferta NO va en público ni se enlaza la página vieja. Quien responde o escribe al WhatsApp recibe el precio y la mini landing de la oferta. Precio y forma de nombrarlo: los decide Ester.",
       "contenido": {
         "id": "nov-correo-1127-bf",
         "grupo": "Correos",
@@ -6193,16 +6214,16 @@
         "segmento": "Lista general",
         "hook": "Pico de ventas",
         "cuerpo": [
-          "Hoy es Black Friday. Especialización en Acero con Tutor IA: [PRECIO BF] (normal $225). Cursos de bajo costo: [PRECIO BF].",
-          "Temario: https://designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero",
+          "Hoy es Black Friday. Si lo tuyo es diseñar acero en software, es el mejor momento del año para empezar la Especialización en Acero con Tutor IA.",
+          "Responde BLACK a este correo o escríbenos por WhatsApp ([enlace de WhatsApp de la academia con «BLACK» ya escrito, lo pone Ester]) y te mandamos el precio y el enlace. Lo mismo para los cursos de bajo costo.",
           "Cierra el lunes 30 a las 23:59 (hora de Ecuador)."
         ],
         "eje": "NÚCLEO-BIM",
         "cta": {
           "email": "Botón del correo"
         },
-        "condicion": "Ecuador: silencio electoral del 27 al 29 (no aplica a comunicación comercial, pero se baja la pauta en Ecuador).",
-        "notas_produccion": "Ecuador: silencio electoral del 27 al 29 (no aplica a comunicación comercial, pero se baja la pauta en Ecuador).",
+        "condicion": "Ecuador: silencio electoral del 27 al 29 (no aplica a comunicación comercial, pero se baja la pauta en Ecuador). REGLA DE NOVIEMBRE: el precio de la oferta NO va en público ni se enlaza la página vieja. Quien responde o escribe al WhatsApp recibe el precio y la mini landing de la oferta. Precio y forma de nombrarlo: los decide Ester.",
+        "notas_produccion": "Ecuador: silencio electoral del 27 al 29 (no aplica a comunicación comercial, pero se baja la pauta en Ecuador). REGLA DE NOVIEMBRE: el precio de la oferta NO va en público ni se enlaza la página vieja. Quien responde o escribe al WhatsApp recibe el precio y la mini landing de la oferta. Precio y forma de nombrarlo: los decide Ester.",
         "origen": "matriz noviembre 2026",
         "cta_por_red": {
           "email": "Botón del correo"
@@ -6218,8 +6239,8 @@
       "preencabezado": "No se reabre.",
       "segmento": "Quien hizo clic esta semana y no compró",
       "objetivo": "Cierre",
-      "cuerpo": "Hoy a las 23:59 (hora de Ecuador) termina la Black Week. No se reabre.\n\nEspecialización en Acero con Tutor IA: [PRECIO BF]. Cursos de bajo costo: [PRECIO BF].\n\nTemario: https://designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero",
-      "condicion": "",
+      "cuerpo": "Hoy a las 23:59 (hora de Ecuador) termina la Black Week. No se reabre.\n\nSi todavía la quieres, responde BLACK a este correo o escríbenos por WhatsApp ([enlace de WhatsApp de la academia con «BLACK» ya escrito, lo pone Ester]) antes de esa hora.",
+      "condicion": "REGLA DE NOVIEMBRE: el precio de la oferta NO va en público ni se enlaza la página vieja. Quien responde o escribe al WhatsApp recibe el precio y la mini landing de la oferta. Precio y forma de nombrarlo: los decide Ester.",
       "contenido": {
         "id": "nov-correo-1130-cierre",
         "grupo": "Correos",
@@ -6242,15 +6263,14 @@
         "hook": "Cierre",
         "cuerpo": [
           "Hoy a las 23:59 (hora de Ecuador) termina la Black Week. No se reabre.",
-          "Especialización en Acero con Tutor IA: [PRECIO BF]. Cursos de bajo costo: [PRECIO BF].",
-          "Temario: https://designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero"
+          "Si todavía la quieres, responde BLACK a este correo o escríbenos por WhatsApp ([enlace de WhatsApp de la academia con «BLACK» ya escrito, lo pone Ester]) antes de esa hora."
         ],
         "eje": "NÚCLEO-BIM",
         "cta": {
           "email": "Botón del correo"
         },
-        "condicion": "",
-        "notas_produccion": "",
+        "condicion": "REGLA DE NOVIEMBRE: el precio de la oferta NO va en público ni se enlaza la página vieja. Quien responde o escribe al WhatsApp recibe el precio y la mini landing de la oferta. Precio y forma de nombrarlo: los decide Ester.",
+        "notas_produccion": "REGLA DE NOVIEMBRE: el precio de la oferta NO va en público ni se enlaza la página vieja. Quien responde o escribe al WhatsApp recibe el precio y la mini landing de la oferta. Precio y forma de nombrarlo: los decide Ester.",
         "origen": "matriz noviembre 2026",
         "cta_por_red": {
           "email": "Botón del correo"

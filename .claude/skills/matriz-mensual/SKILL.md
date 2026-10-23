@@ -86,7 +86,44 @@ real en `historico-2026.json`.
 - **Pauta:** primero se corrige lo que el diagnóstico del mes dice que hace
   perder leads, y después los anuncios nuevos entran **como reemplazo** de los
   cansados. Va un texto por ángulo y en una sola campaña. El Máster no lleva
-  precio. ACERO lleva $225 solo en pauta y en correo a la lista propia.
+  precio. ACERO lleva $225 solo en pauta y en correo a la lista propia (en meses
+  con oferta manda la regla de abajo: la oferta va solo por WhatsApp).
+
+- **Ofertas: solo por WhatsApp (desde noviembre de 2026, Dayana).** Ninguna
+  pieza pública lleva el precio de la promo ni enlaza la página vieja de pago.
+  La pieza dice que hay oferta, hasta cuándo y cómo pedirla (responder la
+  historia, escribir la palabra al WhatsApp o responder el correo). Por
+  WhatsApp va el precio y la **mini landing** de esa oferta. Los anuncios de
+  oferta llevan «Enviar mensaje». Los precios y cómo se nombran los decide
+  **Ester**: Claude propone y no fija. El bloque `estrategia_comercial.reglas`
+  del calendario lo deja escrito para el equipo.
+
+### Formatos en prueba: se revisan cada mes
+
+Cada formato de video nuevo (pizarra, chuleta visual, motion de Gabriel, el que
+venga) entra al calendario como **prueba**, no como fijo. El bloque
+`formatos_prueba` del calendario lista cada formato, su plantilla y sus piezas
+(con `shortCode` cuando ya salió, y `whatsapp_14d` y `ventas_14d` cuando Ester
+los anota desde GHL).
+
+```bash
+python3 scripts/formatos_prueba.py --mes AAAA-MM   # → auditorias/AAAA-MM-formatos-prueba.md
+```
+
+Mide contra la mediana de reels de los 90 días anteriores:
+
+| Qué | Umbral |
+|---|---|
+| Interés | vistas ≥ 1,5× la mediana |
+| Interacción | (comentarios + guardados + compartidos)/1.000 ≥ 2× la mediana y comentarios/1.000 ≥ la mediana |
+| Venta | ≥ 10 al WhatsApp o a la palabra en 14 días y ≥ 1 venta |
+
+**3 de 3 en 2 piezas → entra fijo · 2 de 3 → se repite una vez con otro tema ·
+0-1 → sale.** Nunca con una sola pieza ni con piezas de menos de 7 días. Un
+formato que da vistas pero no ventas **no** entra fijo: «Simbología de niveles»
+sacó 57.230 vistas en octubre, y eso todavía no dice si vende. Al armar el mes
+siguiente, la primera tarea es correr este script y llevar sus veredictos a la
+matriz.
 
 ### Los cinco grupos (calendario en modo `grupos`)
 

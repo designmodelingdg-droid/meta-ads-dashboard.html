@@ -439,6 +439,23 @@ if(Array.isArray(CAL.reglas_del_mes) && CAL.reglas_del_mes.length){
 }
 push(note("Regla de oro: al menos el 60% del contenido debe ser NUCLEO (BIM · IA · modelado · acero), no obra."));
 
+/* Cómo se habla de la oferta y formatos en prueba: los fija el calendario del mes */
+const EC=CAL.estrategia_comercial||{};
+if(Array.isArray(EC.reglas) && EC.reglas.length){
+  push(H2("Cómo se habla de la oferta este mes"));
+  if(EC.nota) push(P(EC.nota,{run:{color:GREY,italics:true}}));
+  EC.reglas.forEach(r=>push(bul(r)));
+}
+const FP=CAL.formatos_prueba;
+if(FP && Array.isArray(FP.formatos)){
+  push(H2("Formatos en prueba (se revisan cada mes)"));
+  if(FP.nota) push(P(FP.nota,{run:{color:GREY,italics:true}}));
+  push(tbl(["Qué se mide","Umbral","De dónde sale"],FP.criterios||[],[1800,5200,3600]));
+  (FP.decision||[]).forEach(r=>push(bul(r)));
+  push(tbl(["Formato","Estado","Piezas"],FP.formatos.map(x=>[x.formato,x.estado||'—',
+    x.piezas.map(p=>p.id+(p.shortCode?` (${p.shortCode})`:'')).join(', ')+(x.control?` · control: ${x.control}`:'')]),[3000,3000,4600]));
+}
+
 /* ═══════════════════════════════ 2 · CTAs ═══════════════════════════════ */
 push(H1("2 · Los CTA de este mes"));
 push(P("Todo apunta a dos productos. Cada pieza lleva el CTA que le corresponde:"));
