@@ -4821,72 +4821,6 @@
      "para_que": "cuantos eventos de cada tipo llegaron",
      "filas": [
       {
-       "start_time": "2026-09-25T11:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "PageView",
-         "count": 2
-        },
-        {
-         "value": "ViewContent",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-09-25T12:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "PageView",
-         "count": 3
-        },
-        {
-         "value": "ViewContent",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-09-25T13:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "PageView",
-         "count": 4
-        },
-        {
-         "value": "ViewContent",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-09-25T14:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "PageView",
-         "count": 16
-        }
-       ]
-      },
-      {
-       "start_time": "2026-09-25T15:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "PageView",
-         "count": 16
-        },
-        {
-         "value": "ViewContent",
-         "count": 7
-        }
-       ]
-      },
-      {
        "start_time": "2026-09-25T16:00:00+0000",
        "aggregation": "event",
        "data": [
@@ -9324,56 +9258,6 @@
      "para_que": "WEB_ONLY vs SERVER_ONLY — asi se detecta si la CAPI vive",
      "filas": [
       {
-       "start_time": "2026-09-25T11:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "BROWSER",
-         "count": 3
-        }
-       ]
-      },
-      {
-       "start_time": "2026-09-25T12:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "BROWSER",
-         "count": 5
-        }
-       ]
-      },
-      {
-       "start_time": "2026-09-25T13:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "BROWSER",
-         "count": 5
-        }
-       ]
-      },
-      {
-       "start_time": "2026-09-25T14:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "BROWSER",
-         "count": 16
-        }
-       ]
-      },
-      {
-       "start_time": "2026-09-25T15:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "BROWSER",
-         "count": 23
-        }
-       ]
-      },
-      {
        "start_time": "2026-09-25T16:00:00+0000",
        "aggregation": "event_source",
        "data": [
@@ -12978,136 +12862,6 @@
     "match_keys": {
      "para_que": "que parametros de emparejamiento se envian (insumo del EMQ)",
      "filas": [
-      {
-       "start_time": "2026-09-25T11:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "PageView",
-         "value": "pdid",
-         "count": 2
-        },
-        {
-         "event": "ViewContent",
-         "value": "pdid",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-09-25T12:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "PageView",
-         "value": "pdid",
-         "count": 3
-        },
-        {
-         "event": "ViewContent",
-         "value": "pdid",
-         "count": 2
-        },
-        {
-         "event": "PageView",
-         "value": "c_user_cookie",
-         "count": 1
-        },
-        {
-         "event": "PageView",
-         "value": "fr_cookie",
-         "count": 1
-        },
-        {
-         "event": "ViewContent",
-         "value": "c_user_cookie",
-         "count": 1
-        },
-        {
-         "event": "ViewContent",
-         "value": "fr_cookie",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-09-25T13:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "PageView",
-         "value": "pdid",
-         "count": 4
-        },
-        {
-         "event": "PageView",
-         "value": "raw_fr_cookie",
-         "count": 1
-        },
-        {
-         "event": "ViewContent",
-         "value": "pdid",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-09-25T14:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "PageView",
-         "value": "pdid",
-         "count": 16
-        }
-       ]
-      },
-      {
-       "start_time": "2026-09-25T15:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "PageView",
-         "value": "pdid",
-         "count": 16
-        },
-        {
-         "event": "ViewContent",
-         "value": "pdid",
-         "count": 7
-        },
-        {
-         "event": "PageView",
-         "value": "raw_fr_cookie",
-         "count": 3
-        },
-        {
-         "event": "ViewContent",
-         "value": "raw_fr_cookie",
-         "count": 3
-        },
-        {
-         "event": "PageView",
-         "value": "c_user_cookie",
-         "count": 1
-        },
-        {
-         "event": "PageView",
-         "value": "fr_cookie",
-         "count": 1
-        },
-        {
-         "event": "ViewContent",
-         "value": "c_user_cookie",
-         "count": 1
-        },
-        {
-         "event": "ViewContent",
-         "value": "fr_cookie",
-         "count": 1
-        }
-       ]
-      },
       {
        "start_time": "2026-09-25T16:00:00+0000",
        "aggregation": "match_keys",
@@ -23890,76 +23644,6 @@
      "para_que": "reparto por dispositivo",
      "filas": [
       {
-       "start_time": "2026-09-25T11:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 2
-        },
-        {
-         "value": "mobile_iphone",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-09-25T12:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 5
-        }
-       ]
-      },
-      {
-       "start_time": "2026-09-25T13:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 4
-        },
-        {
-         "value": "mobile_android_phone",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-09-25T14:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 15
-        },
-        {
-         "value": "mobile_iphone",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-09-25T15:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 16
-        },
-        {
-         "value": "mobile_android_phone",
-         "count": 6
-        },
-        {
-         "value": "mobile_iphone",
-         "count": 1
-        }
-       ]
-      },
-      {
        "start_time": "2026-09-25T16:00:00+0000",
        "aggregation": "device_type",
        "data": [
@@ -28076,92 +27760,6 @@
     "browser_type": {
      "para_que": "reparto por navegador",
      "filas": [
-      {
-       "start_time": "2026-09-25T11:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Chrome Desktop",
-         "count": 2
-        },
-        {
-         "value": "Mobile Safari",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-09-25T12:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Edge (Chromium Based)",
-         "count": 3
-        },
-        {
-         "value": "Chrome Desktop",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-09-25T13:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Edge (Chromium Based)",
-         "count": 3
-        },
-        {
-         "value": "Chrome Mobile",
-         "count": 1
-        },
-        {
-         "value": "Chrome Desktop",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-09-25T14:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Chrome Desktop",
-         "count": 15
-        },
-        {
-         "value": "Chrome for iOS",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-09-25T15:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Chrome Desktop",
-         "count": 14
-        },
-        {
-         "value": "Chrome Mobile",
-         "count": 4
-        },
-        {
-         "value": "Safari",
-         "count": 2
-        },
-        {
-         "value": "XiaoMi/MiuiBrowser",
-         "count": 2
-        },
-        {
-         "value": "Mobile Safari",
-         "count": 1
-        }
-       ]
-      },
       {
        "start_time": "2026-09-25T16:00:00+0000",
        "aggregation": "browser_type",
@@ -32546,7 +32144,7 @@
     }
    },
    "eventos_servidor": 0,
-   "eventos_navegador": 2316,
+   "eventos_navegador": 2264,
    "capi_detectada": false,
    "nota_capi": "Cero eventos de servidor en la ventana. Si el pixel si dispara, la CAPI no esta desplegada — es el check M02, critico, y Meta cifra la perdida de datos sin el en 30-40%."
   },
@@ -32569,42 +32167,6 @@
     "event": {
      "para_que": "cuantos eventos de cada tipo llegaron",
      "filas": [
-      {
-       "start_time": "2026-09-25T12:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "PageView",
-         "count": 3
-        },
-        {
-         "value": "Schedule",
-         "count": 2
-        },
-        {
-         "value": "CompleteRegistration",
-         "count": 1
-        },
-        {
-         "value": "Lead",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-09-25T15:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "CompleteRegistration",
-         "count": 2
-        },
-        {
-         "value": "Lead",
-         "count": 1
-        }
-       ]
-      },
       {
        "start_time": "2026-09-25T17:00:00+0000",
        "aggregation": "event",
@@ -36725,30 +36287,6 @@
      "para_que": "WEB_ONLY vs SERVER_ONLY — asi se detecta si la CAPI vive",
      "filas": [
       {
-       "start_time": "2026-09-25T12:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "BROWSER",
-         "count": 4
-        },
-        {
-         "value": "SERVER",
-         "count": 3
-        }
-       ]
-      },
-      {
-       "start_time": "2026-09-25T15:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "SERVER",
-         "count": 3
-        }
-       ]
-      },
-      {
        "start_time": "2026-09-25T17:00:00+0000",
        "aggregation": "event_source",
        "data": [
@@ -40285,204 +39823,6 @@
     "match_keys": {
      "para_que": "que parametros de emparejamiento se envian (insumo del EMQ)",
      "filas": [
-      {
-       "start_time": "2026-09-25T12:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "PageView",
-         "value": "pdid",
-         "count": 3
-        },
-        {
-         "event": "PageView",
-         "value": "true_fr_cookie",
-         "count": 2
-        },
-        {
-         "event": "PageView",
-         "value": "raw_fr_cookie",
-         "count": 2
-        },
-        {
-         "event": "PageView",
-         "value": "fr_cookie",
-         "count": 2
-        },
-        {
-         "event": "PageView",
-         "value": "c_user_cookie",
-         "count": 2
-        },
-        {
-         "event": "Schedule",
-         "value": "email",
-         "count": 1
-        },
-        {
-         "event": "Schedule",
-         "value": "phone",
-         "count": 1
-        },
-        {
-         "event": "Schedule",
-         "value": "ln",
-         "count": 1
-        },
-        {
-         "event": "Schedule",
-         "value": "fn",
-         "count": 1
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "country",
-         "count": 1
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "email",
-         "count": 1
-        },
-        {
-         "event": "Lead",
-         "value": "zip",
-         "count": 1
-        },
-        {
-         "event": "Lead",
-         "value": "phone",
-         "count": 1
-        },
-        {
-         "event": "Lead",
-         "value": "ln",
-         "count": 1
-        },
-        {
-         "event": "Lead",
-         "value": "fn",
-         "count": 1
-        },
-        {
-         "event": "Lead",
-         "value": "email",
-         "count": 1
-        },
-        {
-         "event": "Lead",
-         "value": "country",
-         "count": 1
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "phone",
-         "count": 1
-        },
-        {
-         "event": "Schedule",
-         "value": "country",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-09-25T13:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "Schedule",
-         "value": "c_user_cookie",
-         "count": 1
-        },
-        {
-         "event": "Schedule",
-         "value": "email",
-         "count": 1
-        },
-        {
-         "event": "Schedule",
-         "value": "fr_cookie",
-         "count": 1
-        },
-        {
-         "event": "Schedule",
-         "value": "ln",
-         "count": 1
-        },
-        {
-         "event": "Schedule",
-         "value": "pdid",
-         "count": 1
-        },
-        {
-         "event": "Schedule",
-         "value": "phone",
-         "count": 1
-        },
-        {
-         "event": "Schedule",
-         "value": "true_fr_cookie",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-09-25T15:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "CompleteRegistration",
-         "value": "country",
-         "count": 2
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "email",
-         "count": 2
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "phone",
-         "count": 2
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "fn",
-         "count": 1
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "ln",
-         "count": 1
-        },
-        {
-         "event": "Lead",
-         "value": "country",
-         "count": 1
-        },
-        {
-         "event": "Lead",
-         "value": "email",
-         "count": 1
-        },
-        {
-         "event": "Lead",
-         "value": "fn",
-         "count": 1
-        },
-        {
-         "event": "Lead",
-         "value": "ln",
-         "count": 1
-        },
-        {
-         "event": "Lead",
-         "value": "phone",
-         "count": 1
-        }
-       ]
-      },
       {
        "start_time": "2026-09-25T17:00:00+0000",
        "aggregation": "match_keys",
@@ -53423,30 +52763,6 @@
      "para_que": "reparto por dispositivo",
      "filas": [
       {
-       "start_time": "2026-09-25T12:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "mobile_android_phone",
-         "count": 5
-        },
-        {
-         "value": "desktop",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-09-25T15:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 3
-        }
-       ]
-      },
-      {
        "start_time": "2026-09-25T17:00:00+0000",
        "aggregation": "device_type",
        "data": [
@@ -57007,34 +56323,6 @@
     "browser_type": {
      "para_que": "reparto por navegador",
      "filas": [
-      {
-       "start_time": "2026-09-25T12:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Facebook for Android",
-         "count": 4
-        },
-        {
-         "value": "Unknown",
-         "count": 2
-        },
-        {
-         "value": "Instagram IAB for Android",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-09-25T15:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Unknown",
-         "count": 3
-        }
-       ]
-      },
       {
        "start_time": "2026-09-25T17:00:00+0000",
        "aggregation": "browser_type",
@@ -60964,10 +60252,10 @@
      ]
     }
    },
-   "eventos_servidor": 546,
-   "eventos_navegador": 306,
+   "eventos_servidor": 540,
+   "eventos_navegador": 302,
    "capi_detectada": true,
-   "nota_capi": "Hay 546 eventos de SERVIDOR contra 306 de navegador: la Conversions API esta enviando."
+   "nota_capi": "Hay 540 eventos de SERVIDOR contra 302 de navegador: la Conversions API esta enviando."
   }
  ],
  "fallos": []

@@ -3,74 +3,159 @@
  "nota": "Agregados de conversaciones para perfilar leads. NO contiene nombres, telefonos ni correos: los fragmentos pasan por un limpiador antes de escribirse.",
  "conversaciones_traidas": 300,
  "con_mensajes_revisadas": 300,
- "menciona_master": 35,
+ "menciona_master": 38,
  "mensajes_por_conversacion": {
-  "mediana": 14,
-  "media": 32.2,
-  "solo_un_mensaje": 3
+  "mediana": 17,
+  "media": 34.4,
+  "solo_un_mensaje": 1
  },
  "quien_habla_ultimo": {
-  "nosotros": 287,
-  "la persona (quedó sin responder)": 13
+  "la persona (quedó sin responder)": 11,
+  "nosotros": 289
  },
- "quedaron_sin_responder": 13,
+ "quedaron_sin_responder": 11,
  "canales": {
   "TYPE_PHONE": 300
  },
  "temas_todas": {
-  "software": 97,
-  "perfil_propio": 89,
-  "precio": 79,
-  "duracion": 60,
-  "inicio": 44,
-  "temario": 42,
+  "software": 109,
+  "perfil_propio": 91,
+  "precio": 85,
+  "duracion": 58,
+  "temario": 50,
+  "inicio": 46,
   "certificado": 42,
-  "empleo": 31,
-  "modalidad": 27,
+  "modalidad": 30,
+  "empleo": 29,
   "requisitos": 15
  },
  "temas_solo_master": {
-  "perfil_propio": 29,
-  "certificado": 26,
-  "precio": 25,
-  "duracion": 25,
-  "software": 21,
+  "perfil_propio": 32,
+  "precio": 28,
+  "software": 28,
+  "certificado": 27,
+  "duracion": 23,
+  "temario": 19,
   "modalidad": 18,
   "empleo": 16,
-  "temario": 13,
-  "inicio": 5,
+  "inicio": 10,
   "requisitos": 3
  },
  "ejemplos_anonimos": [
   {
-   "mensajes": 100,
-   "quedo_sin_responder": false,
-   "primer_mensaje": "Y me dá licencia para impartir clases?"
-  },
-  {
-   "mensajes": 23,
-   "quedo_sin_responder": false,
+   "mensajes": 42,
+   "quedo_sin_responder": true,
    "primer_mensaje": "Hola, me interesa el Master Internacional en Preventa ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: Aprende BIM desde cero y certifícate con 50% OFF 🔗 Description: ¿Quién liderará la revolución en construcción con BIM y"
   },
   {
-   "mensajes": 99,
+   "mensajes": 100,
+   "quedo_sin_responder": false,
+   "primer_mensaje": "👤 [nombre] ([telefono]) @[telefono] no se le dio continuidad…"
+  },
+  {
+   "mensajes": 12,
+   "quedo_sin_responder": false,
+   "primer_mensaje": "¡Hola! Completé el formulario y me gustaría obtener más información sobre el negocio. ¿Has cursado estudios universitarios en áreas relacionadas con construcción/ingeniería/arquitectura?: Sí, soy graduado ¿A qué rubro pe"
+  },
+  {
+   "mensajes": 100,
+   "quedo_sin_responder": true,
+   "primer_mensaje": "👤 [nombre] ([telefono]) Buenos días equipo! 🖐️ Muy feliz incio de semana 🎉 que tengan excelente jornada, quedamos atentos a lo que necesiten 💪 📱 [Received on Design Modeling Academy ([telefono])]"
+  },
+  {
+   "mensajes": 100,
+   "quedo_sin_responder": false,
+   "primer_mensaje": "¿Has cursado estudios universitarios en áreas relacionadas con construcción/ingeniería/arquitectura?: Sí, soy graduado ¿A qué rubro perteneces?: Ingeniero civil / estructural Actualmente te encuentras:: Empleado en una e"
+  },
+  {
+   "mensajes": 100,
+   "quedo_sin_responder": true,
+   "primer_mensaje": "👤 [nombre] ([telefono]) *AGENDA-HOY 13/10 ✅* * Lead: José Juan Santillán * Fecha: Jueves 15 de octubre * Hora: 7pm Ecuador * Asignado a: @[telefono] * Master 📱 [Received on Design Modeling Academy ([telefono])]"
+  },
+  {
+   "mensajes": 85,
+   "quedo_sin_responder": false,
+   "primer_mensaje": "¿Has cursado estudios universitarios en áreas relacionadas con construcción/ingeniería/arquitectura?: Sí, soy graduado ¿A qué rubro perteneces?: Arquitecto Actualmente te encuentras:: Dueño de empresa / independiente ¿Cu"
+  },
+  {
+   "mensajes": 58,
+   "quedo_sin_responder": false,
+   "primer_mensaje": "Si"
+  },
+  {
+   "mensajes": 83,
+   "quedo_sin_responder": false,
+   "primer_mensaje": "Full name: [nombre] Phone number: [telefono] Email: [correo] ¿Tienes experiencia utilizando software técnico (ejemplo: AutoCAD, Revit, SAP2000, etc.)?: Sí, manejo avanzado ¿A qué rubro perteneces?: Dueño de empresa const"
+  },
+  {
+   "mensajes": 69,
+   "quedo_sin_responder": true,
+   "primer_mensaje": "👤 [nombre] ([telefono]) [enlace] 📱 [Received on Design Modeling Academy ([telefono])]"
+  },
+  {
+   "mensajes": 100,
+   "quedo_sin_responder": true,
+   "primer_mensaje": "👤 [nombre] ([telefono] o 8pm? 📱 [Received on Design Modeling Academy ([telefono])]"
+  },
+  {
+   "mensajes": 12,
+   "quedo_sin_responder": true,
+   "primer_mensaje": "👤 [nombre] ([telefono]) >IMAGE< ¿En qué nivel BIM estás realmente? 👇 \"Yo manejo Revit\" no dice nada de lo que puedes sostener en un proyecto real: modelas precioso pero te trabas federando tres disciplinas, o coordinas b"
+  },
+  {
+   "mensajes": 29,
+   "quedo_sin_responder": false,
+   "primer_mensaje": "¡Hola! Completé el formulario y me gustaría obtener más información sobre el negocio. Full name: [nombre] Phone number: [telefono] Email: [correo] ¿A qué rubro perteneces?: Arquitecto ¿Has cursado estudios universitarios"
+  },
+  {
+   "mensajes": 27,
+   "quedo_sin_responder": false,
+   "primer_mensaje": "👤 [nombre] ([telefono]) 😮 📱 [Received on Design Modeling Academy ([telefono])]"
+  },
+  {
+   "mensajes": 41,
+   "quedo_sin_responder": false,
+   "primer_mensaje": "👤 [nombre] ([telefono]) [enlace] 📱 [Received on Design Modeling Academy ([telefono])]"
+  },
+  {
+   "mensajes": 40,
+   "quedo_sin_responder": false,
+   "primer_mensaje": "Hola, me interesa el Master Internacional en Preventa ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: 🎓 Máster BIM + IA con título USA 🔗 Description: ¿Sabías que los mejores sueldos en construcción ya no son para quienes "
+  },
+  {
+   "mensajes": 100,
+   "quedo_sin_responder": false,
+   "primer_mensaje": "Saludos son Jaime"
+  },
+  {
+   "mensajes": 26,
+   "quedo_sin_responder": false,
+   "primer_mensaje": "👤 [nombre] ([telefono]) OCTUBRE 20 - Atención al cliente y acceso a comunidades. - Coordinación con Gabriel para reuniones el día miércoles y viernes. - Migración completa del Diplomado Universitario Internacional BIM: E"
+  },
+  {
+   "mensajes": 100,
+   "quedo_sin_responder": false,
+   "primer_mensaje": "👤 [nombre] ([telefono]) Ok ahí les respondió Santiago 📱 [Received on Design Modeling Academy ([telefono])]"
+  },
+  {
+   "mensajes": 54,
+   "quedo_sin_responder": false,
+   "primer_mensaje": "Buenos días, me gustaría saber sobre el curso de coordinador, manager y especialista BIM Gracias • automatedGreetingMessageShown: true • body: ¿Estás listo para liderar la construcción digital en 2026? Olvida saber solo "
+  },
+  {
+   "mensajes": 100,
+   "quedo_sin_responder": false,
+   "primer_mensaje": "👤 [nombre] ([telefono]) @[telefono] no se si me puedas ayudar aca te comento que todas las llamadas que empiezan con el código 504 de Honduras no entran no se conectan ya he tenido varios clientes de ese país y se me com"
+  },
+  {
+   "mensajes": 100,
    "quedo_sin_responder": false,
    "primer_mensaje": "Hola, me interesa la especialización de estructuras de Acero ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: 💥 Precio especial: $199 USD por tiempo limitado. 🔗 Description: 📲 Escríbenos y te enviamos el programa completo "
   },
   {
    "mensajes": 100,
-   "quedo_sin_responder": true,
-   "primer_mensaje": "👤 [nombre] ([telefono]) Buen día equipo excelente jornada 🫡 📱 [Received on Design Modeling Academy ([telefono])]"
-  },
-  {
-   "mensajes": 100,
    "quedo_sin_responder": false,
    "primer_mensaje": "Hola, me interesa la especialización de estructuras de Acero ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: 💥 Precio especial: $199 USD por tiempo limitado. 🔗 Description: ¿Quieres dominar el diseño de estructuras metáli"
-  },
-  {
-   "mensajes": 100,
-   "quedo_sin_responder": true,
-   "primer_mensaje": "👤 [nombre] ([telefono]) Okey 📱 [Received on Design Modeling Academy ([telefono])]"
   },
   {
    "mensajes": 58,
@@ -81,91 +166,6 @@
    "mensajes": 96,
    "quedo_sin_responder": false,
    "primer_mensaje": "Hola, me interesa la Especialización en Diseño Estructural en Acero BIM"
-  },
-  {
-   "mensajes": 100,
-   "quedo_sin_responder": true,
-   "primer_mensaje": "👤 [nombre] ([telefono]) >IMAGE< Equipo buen dia, @[telefono] ayudame por favor con casos asi o similares, este lead envia y envia cosas pero no esta interesado en comprar, podemos hacer que le bot detecte y se pause solo"
-  },
-  {
-   "mensajes": 100,
-   "quedo_sin_responder": false,
-   "primer_mensaje": "Voy a revisar bien y te confirmo Received on 📱[Design Modeling DG]"
-  },
-  {
-   "mensajes": 22,
-   "quedo_sin_responder": true,
-   "primer_mensaje": "👤 [nombre] ([telefono]) >IMAGE< Carlos Anibal Bustos Ponce [correo] 📱 [Received on Design Modeling Academy ([telefono])]"
-  },
-  {
-   "mensajes": 100,
-   "quedo_sin_responder": true,
-   "primer_mensaje": "👤 [nombre] ([telefono]) justo que ando haciendo seguimientos lo vi 📱 [Received on Design Modeling Academy ([telefono])]"
-  },
-  {
-   "mensajes": 40,
-   "quedo_sin_responder": true,
-   "primer_mensaje": "Necesito información buen día • adContextPreviewDismissed: false • automatedGreetingMessageShown: false • body: Si tu estrategia para llegar a BIM Manager es ver tutoriales sueltos de YouTube, ya sabes cómo termina: sabe"
-  },
-  {
-   "mensajes": 95,
-   "quedo_sin_responder": true,
-   "primer_mensaje": "👤 [nombre] ([telefono]) @[telefono] @[telefono] 📱 [Received on Design Modeling Academy ([telefono])]"
-  },
-  {
-   "mensajes": 100,
-   "quedo_sin_responder": false,
-   "primer_mensaje": "Nombre: [nombre] Cédula: [telefono] Correo electrónico: [correo] 📱 [Received on Design Modeling Academy ([telefono])]"
-  },
-  {
-   "mensajes": 100,
-   "quedo_sin_responder": true,
-   "primer_mensaje": "👤 [nombre] ([telefono]) Buenas tardes grupo e iba comentar un pequeño fallo que vi de el whatsaap es que estaba conversando con un cliente que entro el día de hoy y de la nada salió el bloqueo de las 24 horas y no se por"
-  },
-  {
-   "mensajes": 38,
-   "quedo_sin_responder": false,
-   "primer_mensaje": "Hola, me interesa el Master Internacional en Preventa ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: 🎓 Máster BIM + IA con título USA 🔗 Description: ¿Sabías que los mejores sueldos en construcción ya no son para quienes "
-  },
-  {
-   "mensajes": 100,
-   "quedo_sin_responder": false,
-   "primer_mensaje": "Saludos son Jaime"
-  },
-  {
-   "mensajes": 4,
-   "quedo_sin_responder": false,
-   "primer_mensaje": "¡Hola! Completé el formulario y me gustaría obtener más información sobre el negocio. ¿Has cursado estudios universitarios en áreas relacionadas con construcción/ingeniería/arquitectura?: Sí, soy graduado ¿A qué rubro pe"
-  },
-  {
-   "mensajes": 15,
-   "quedo_sin_responder": false,
-   "primer_mensaje": "Por favor información • adContextPreviewDismissed: false • automatedGreetingMessageShown: false • body: Si tu estrategia para llegar a BIM Manager es ver tutoriales sueltos de YouTube, ya sabes cómo termina: sabes más co"
-  },
-  {
-   "mensajes": 17,
-   "quedo_sin_responder": false,
-   "primer_mensaje": "Buen dia • adContextPreviewDismissed: false • automatedGreetingMessageShown: false • body: Esta es una de las preguntas que más nos dejan quienes quieren dar el salto al BIM 👇 Y la verdad, es normal tener dudas antes de "
-  },
-  {
-   "mensajes": 58,
-   "quedo_sin_responder": false,
-   "primer_mensaje": "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿A qué te dedicas?: Proyectista, dibujante o modelador BIM Full name: [nombre] Phone number: [telefono] Con las estructuras de acero, "
-  },
-  {
-   "mensajes": 34,
-   "quedo_sin_responder": false,
-   "primer_mensaje": "Hola, me interesa el Master Internacional en Preventa ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: Aprende BIM desde cero y certifícate con 50% OFF 🔗 Description: ¿Quién liderará la revolución en construcción con BIM y"
-  },
-  {
-   "mensajes": 14,
-   "quedo_sin_responder": false,
-   "primer_mensaje": "¡Hola! Completé el formulario y me gustaría obtener más información sobre el negocio. ¿Has cursado estudios universitarios en áreas relacionadas con construcción/ingeniería/arquitectura?: Sí, soy graduado ¿A qué rubro pe"
-  },
-  {
-   "mensajes": 92,
-   "quedo_sin_responder": false,
-   "primer_mensaje": "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. Full name: [nombre] Phone number: [telefono] Email: [correo] ¿A qué rubro perteneces?: Ingeniero de obra ¿Has cursado estudios univers"
   }
  ],
  "limite_aplicado": 300,
