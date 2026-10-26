@@ -1,7 +1,7 @@
 {
  "generado": "2026-09-30",
  "nota": "Contenido COMPLETO de cada pieza (hook, slides palabra por palabra con su dirección visual, guion de reel segundo a segundo, caption, CTA por red y copy de pauta). La app debe leer ESTE archivo para generar el post correcto sin inventar. Incluye las 3 secuencias de VENTA de historias (jueves), cuyo frame de cierre pide responder con una palabra clave para que lo recoja el bot en vez de depender de responder a mano.",
- "total": 237,
+ "total": 239,
  "piezas": [
   {
    "id": "jul-mito-render-ia",
@@ -12394,6 +12394,82 @@
    },
    "condicion": "SIN PRECIO (regla del Máster). Destino: formulario instantáneo del Máster (el mismo de [29SEP]). Va como anuncio nuevo dentro de la campaña del Máster, no como campaña aparte. Lo monta Olympus.",
    "notas_produccion": "VIDEO LISTO: rama vimeo-clips → vimeo-clips/editados/pauta/master-ruta/ (9:16 1080×1920 y 16:9 1920×1080, 34 s, con portada). Hecho con Motion Architect + la marca DMA: logos reales de Revit, Navisworks, Dynamo y Python y las microcredenciales DQ del Drive.",
+   "origen": "matriz noviembre 2026"
+  },
+  {
+   "id": "nov-ads-coleccion-ruta",
+   "grupo": "Pauta Meta",
+   "formato": "anuncio",
+   "formato_detalle": "ANUNCIO Meta en video (9:16 para Reels e historias; 16:9 para YouTube y feed)",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "red_principal": "instagram",
+   "fecha": "Lun 2 nov",
+   "fecha_iso": "2026-11-02",
+   "semana": "Semana 1 (2-8 nov)",
+   "tipo": "anuncio",
+   "producto": "Colección Autodesk con IA",
+   "estado": "COMPLETA",
+   "titulo": "Colección Autodesk con IA: los 12 cursos (video animado)",
+   "campana": "COLECCIÓN AUTODESK CON IA · cómo funciona (2 al 22-nov), sin precio",
+   "hook": "¿Qué es la Colección Autodesk con Inteligencia Artificial? Doce cursos para trabajar más rápido en Revit.",
+   "texto_principal": "¿Qué es la Colección Autodesk con Inteligencia Artificial? Doce cursos para trabajar más rápido en Revit.\n\nAutomatización: herramientas nativas, add-ins, asistentes de IA y familias paramétricas.\nDatos: dashboards con Power BI, planillas y cantidades, diagramas técnicos.\nColaboración y presentación: Autodesk Construction Cloud, render y presentaciones técnicas.\nGestión: plantillas, IA para el BIM Manager e interpretación de normativas.\n\nCada curso dura de 15 a 20 horas, con clase en vivo y su propio certificado. Empieza por el que necesitas hoy.",
+   "titular": "Colección Autodesk con IA: 12 cursos",
+   "descripcion": "15 a 20 h por curso · clase en vivo · certificado",
+   "boton": "Enviar mensaje",
+   "publico_sugerido": "Interacción con la cuenta en 90 días + leads de cursos de Revit y del Máster que no compraron. Excluir alumnos de la colección.",
+   "que_medir": "Conversaciones de WhatsApp iniciadas y costo por conversación; retención del video a 3 s y a 15 s.",
+   "creativo": "Video animado (36 s, voz IA de Gabriel): 9:16 → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/coleccion-ruta/coleccion-ruta-9x16.mp4 · 16:9 → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/coleccion-ruta/coleccion-ruta-16x9.mp4 · portada → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/coleccion-ruta/coleccion-ruta-portada.png",
+   "video": "https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/coleccion-ruta/coleccion-ruta-9x16.mp4",
+   "eje": "NÚCLEO-BIM",
+   "cta": {
+    "anuncio": "Enviar mensaje"
+   },
+   "cta_por_red": {
+    "anuncio": "Enviar mensaje"
+   },
+   "condicion": "SIN PRECIO en el anuncio. Destino: WhatsApp (botón «Enviar mensaje»); por WhatsApp se envía la información y el precio. Del 23 al 30-nov lo reemplaza la pauta de Black Week. Lo monta Olympus.",
+   "notas_produccion": "VIDEO LISTO: rama vimeo-clips → vimeo-clips/editados/pauta/coleccion-ruta/ (9:16 y 16:9, 36 s, con portada). Motion Architect + marca DMA, logos reales del Drive.",
+   "origen": "matriz noviembre 2026"
+  },
+  {
+   "id": "nov-ads-especializaciones-ruta",
+   "grupo": "Pauta Meta",
+   "formato": "anuncio",
+   "formato_detalle": "ANUNCIO Meta en video (9:16 para Reels e historias; 16:9 para YouTube y feed)",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "red_principal": "instagram",
+   "fecha": "Lun 2 nov",
+   "fecha_iso": "2026-11-02",
+   "semana": "Semana 1 (2-8 nov)",
+   "tipo": "anuncio",
+   "producto": "Especializaciones",
+   "estado": "COMPLETA",
+   "titulo": "Especializaciones: cómo funcionan (video animado)",
+   "campana": "ESPECIALIZACIONES · cómo funcionan (2 al 17-nov), sin precio",
+   "hook": "¿Cómo funcionan las especializaciones de Design Modeling? De dos a cuatro cursos encadenados.",
+   "texto_principal": "¿Cómo funcionan las especializaciones de Design Modeling? De dos a cuatro cursos encadenados.\n\nCada una se enfoca en un software o en un tipo de estructura: acero, hormigón armado, cimentaciones o tanques. Avanzas curso por curso, en el orden que conviene, durante 2 a 4 meses, y terminas con una certificación internacional con código QR de verificación.\n\nHay 9 especializaciones. Elige la tuya.",
+   "titular": "9 especializaciones: elige la tuya",
+   "descripcion": "2 a 4 cursos · 80 a 135 horas",
+   "boton": "Enviar mensaje",
+   "publico_sugerido": "Interacción con la cuenta en 90 días + leads de cursos de cálculo estructural (Robot, ETABS, SAP2000) + interacción con las chuletas de acero y concreto.",
+   "que_medir": "Conversaciones de WhatsApp iniciadas y costo por conversación; qué especialización piden en el chat (anotarlo en GHL).",
+   "creativo": "Video animado (31 s, voz IA de Gabriel): 9:16 → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/especializaciones-ruta/especializaciones-ruta-9x16.mp4 · 16:9 → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/especializaciones-ruta/especializaciones-ruta-16x9.mp4 · portada → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/especializaciones-ruta/especializaciones-ruta-portada.png",
+   "video": "https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/especializaciones-ruta/especializaciones-ruta-9x16.mp4",
+   "eje": "NÚCLEO-BIM",
+   "cta": {
+    "anuncio": "Enviar mensaje"
+   },
+   "cta_por_red": {
+    "anuncio": "Enviar mensaje"
+   },
+   "condicion": "SIN PRECIO en el anuncio. Destino: WhatsApp (botón «Enviar mensaje»). Del 18-nov en adelante la pauta de Acero pasa a la de Black Friday. Lo monta Olympus.",
+   "notas_produccion": "VIDEO LISTO: rama vimeo-clips → vimeo-clips/editados/pauta/especializaciones-ruta/ (9:16 y 16:9, 31 s, con portada). Motion Architect + marca DMA, logos reales del Drive.",
    "origen": "matriz noviembre 2026"
   },
   {

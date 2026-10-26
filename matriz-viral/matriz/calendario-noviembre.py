@@ -119,6 +119,8 @@ ADS = {
     "CURSOS DE BAJO COSTO · Halloween (30-oct al 1-nov) y Black Week": ["nov-ads-cursos-bf"],
     "MÁSTER · bono de Black Week (23 al 30-nov), sin precio": ["nov-ads-master-bono"],
     "MÁSTER · la ruta en 4 bloques (siempre activa desde el 2-nov), sin precio": ["nov-ads-master-ruta"],
+    "COLECCIÓN AUTODESK CON IA · cómo funciona (2 al 22-nov), sin precio": ["nov-ads-coleccion-ruta"],
+    "ESPECIALIZACIONES · cómo funcionan (2 al 17-nov), sin precio": ["nov-ads-especializaciones-ruta"],
 }
 
 DECISIONES_PAUTA = [
