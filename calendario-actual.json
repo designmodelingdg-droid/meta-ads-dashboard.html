@@ -505,6 +505,105 @@
       "condicion": "SIN PRECIO (regla del Máster). Destino: formulario instantáneo del Máster (el mismo de [29SEP]). Va como anuncio nuevo dentro de la campaña del Máster, no como campaña aparte. Lo monta Olympus."
      }
     ]
+   },
+   {
+    "nombre": "COLECCIÓN AUTODESK CON IA · cómo funciona (2 al 22-nov), sin precio",
+    "piezas": [
+     {
+      "id": "nov-ads-coleccion-ruta",
+      "titulo": "Colección Autodesk con IA: los 12 cursos (video animado)",
+      "campana": "COLECCIÓN AUTODESK CON IA · cómo funciona (2 al 22-nov), sin precio",
+      "precio": "sin precio (regla del Máster)",
+      "formato": "ANUNCIO Meta en video (9:16 para Reels e historias; 16:9 para YouTube y feed)",
+      "hook": "¿Qué es la Colección Autodesk con Inteligencia Artificial? Doce cursos para trabajar más rápido en Revit.",
+      "cuerpo": "¿Qué es la Colección Autodesk con Inteligencia Artificial? Doce cursos para trabajar más rápido en Revit.\n\nAutomatización: herramientas nativas, add-ins, asistentes de IA y familias paramétricas.\nDatos: dashboards con Power BI, planillas y cantidades, diagramas técnicos.\nColaboración y presentación: Autodesk Construction Cloud, render y presentaciones técnicas.\nGestión: plantillas, IA para el BIM Manager e interpretación de normativas.\n\nCada curso dura de 15 a 20 horas, con clase en vivo y su propio certificado. Empieza por el que necesitas hoy.",
+      "titular": "Colección Autodesk con IA: 12 cursos",
+      "descripcion": "15 a 20 h por curso · clase en vivo · certificado",
+      "creativo": "Video animado (36 s, voz IA de Gabriel): 9:16 → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/coleccion-ruta/coleccion-ruta-9x16.mp4 · 16:9 → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/coleccion-ruta/coleccion-ruta-16x9.mp4 · portada → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/coleccion-ruta/coleccion-ruta-portada.png",
+      "prompt": "",
+      "cfg": [
+       [
+        "Botón",
+        "Enviar mensaje"
+       ],
+       [
+        "Público",
+        "Interacción con la cuenta en 90 días + leads de cursos de Revit y del Máster que no compraron. Excluir alumnos de la colección."
+       ],
+       [
+        "Qué medir",
+        "Conversaciones de WhatsApp iniciadas y costo por conversación; retención del video a 3 s y a 15 s."
+       ]
+      ],
+      "condicion": "SIN PRECIO en el anuncio. Destino: WhatsApp (botón «Enviar mensaje»); por WhatsApp se envía la información y el precio. Del 23 al 30-nov lo reemplaza la pauta de Black Week. Lo monta Olympus."
+     }
+    ]
+   },
+   {
+    "nombre": "ESPECIALIZACIONES · cómo funcionan (2 al 17-nov), sin precio",
+    "piezas": [
+     {
+      "id": "nov-ads-especializaciones-ruta",
+      "titulo": "Especializaciones: cómo funcionan (video animado)",
+      "campana": "ESPECIALIZACIONES · cómo funcionan (2 al 17-nov), sin precio",
+      "precio": "sin precio (regla del Máster)",
+      "formato": "ANUNCIO Meta en video (9:16 para Reels e historias; 16:9 para YouTube y feed)",
+      "hook": "¿Cómo funcionan las especializaciones de Design Modeling? De dos a cuatro cursos encadenados.",
+      "cuerpo": "¿Cómo funcionan las especializaciones de Design Modeling? De dos a cuatro cursos encadenados.\n\nCada una se enfoca en un software o en un tipo de estructura: acero, hormigón armado, cimentaciones o tanques. Avanzas curso por curso, en el orden que conviene, durante 2 a 4 meses, y terminas con una certificación internacional con código QR de verificación.\n\nHay 9 especializaciones. Elige la tuya.",
+      "titular": "9 especializaciones: elige la tuya",
+      "descripcion": "2 a 4 cursos · 80 a 135 horas",
+      "creativo": "Video animado (31 s, voz IA de Gabriel): 9:16 → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/especializaciones-ruta/especializaciones-ruta-9x16.mp4 · 16:9 → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/especializaciones-ruta/especializaciones-ruta-16x9.mp4 · portada → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/especializaciones-ruta/especializaciones-ruta-portada.png",
+      "prompt": "",
+      "cfg": [
+       [
+        "Botón",
+        "Enviar mensaje"
+       ],
+       [
+        "Público",
+        "Interacción con la cuenta en 90 días + leads de cursos de cálculo estructural (Robot, ETABS, SAP2000) + interacción con las chuletas de acero y concreto."
+       ],
+       [
+        "Qué medir",
+        "Conversaciones de WhatsApp iniciadas y costo por conversación; qué especialización piden en el chat (anotarlo en GHL)."
+       ]
+      ],
+      "condicion": "SIN PRECIO en el anuncio. Destino: WhatsApp (botón «Enviar mensaje»). Del 18-nov en adelante la pauta de Acero pasa a la de Black Friday. Lo monta Olympus."
+     }
+    ]
+   },
+   {
+    "nombre": "ACERO · la especialización en video (2 al 17-nov), sin precio",
+    "piezas": [
+     {
+      "id": "nov-ads-acero-ruta",
+      "titulo": "Especialización de Acero: los 4 cursos y el certificado de Autodesk (video animado)",
+      "campana": "ACERO · la especialización en video (2 al 17-nov), sin precio",
+      "precio": "sin precio (regla del Máster)",
+      "formato": "ANUNCIO Meta en video (9:16 para Reels e historias; 16:9 para YouTube y feed)",
+      "hook": "Diseño Estructural BIM en Acero: cuatro cursos para dominar las estructuras metálicas, de principio a fin.",
+      "cuerpo": "Diseño Estructural BIM en Acero: cuatro cursos para dominar las estructuras metálicas, de principio a fin.\n\n1 · Análisis modal, fuerzas sísmicas y diseño de elementos de acero en Robot.\n2 · Cálculo de naves industriales con cerchas y marcos rígidos.\n3 · Teoría y cálculo de uniones metálicas, con el detalle en Advance Steel.\n4 · Modelado BIM en Revit: planos, familias y listas de materiales.\n\nCon Tutor IA y 4 sesiones 1 a 1 con tu instructor. Al terminar recibes el certificado de Design Modeling y el certificado de Autodesk (somos Authorized Training Center). 120 horas en 4 meses.",
+      "titular": "Acero con Tutor IA + certificado de Autodesk",
+      "descripcion": "4 cursos · 120 horas · 4 meses",
+      "creativo": "Video animado (39 s, voz IA de Gabriel): 9:16 → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/acero-ruta/acero-ruta-9x16.mp4 · 16:9 → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/acero-ruta/acero-ruta-16x9.mp4 · portada → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/acero-ruta/acero-ruta-portada.png",
+      "prompt": "",
+      "cfg": [
+       [
+        "Botón",
+        "Enviar mensaje"
+       ],
+       [
+        "Público",
+        "Leads de Acero de 90 días + interacción con las chuletas de acero + seguidores interesados en Robot/Revit estructural."
+       ],
+       [
+        "Qué medir",
+        "Conversaciones de WhatsApp iniciadas, costo por conversación y ventas de Acero en GHL; retención del video a 3 s y a 15 s."
+       ]
+      ],
+      "condicion": "SIN PRECIO en el anuncio. Destino: WhatsApp. Del 18 al 30-nov este mismo video sirve de creativo para «ACERO · Black Friday» (el precio va solo por WhatsApp). Lo monta Olympus."
+     }
+    ]
    }
   ],
   "indicaciones": [
