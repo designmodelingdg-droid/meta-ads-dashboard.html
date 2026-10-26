@@ -43,6 +43,9 @@ estado: 🔴 pendiente · 🟡 en curso · 🟢 hecho · ⚫ descartada (con el 
 | 25 | **Las piezas de producto llevan palabra viva y pregunta.** El carrusel del tutor del Diplomado pedía DIPLOMADO o DM, palabra que no está montada, y quedó en 0 comentarios con 3.230 vistas | Revisión 12-oct | Contenido | 🔴 |
 | 26 | **Comprobar que los 21 comentarios COTIZA del carrusel del Jue 15 recibieron el cotizador.** COTIZA no tiene campaña en OpenReply y GHL solo sumó 1 contacto del bot en 7 días. Crear la campaña de Instagram en OpenReply (la arma Dayana) y mandar el enlace a mano a quienes comentaron sin respuesta | Revisión 19-oct | Dayana | 🔴 |
 | 27 | **Los reels de valor de la semana del 26 salen con la edición ganadora del nicho** (demo en pantalla con titular fijo, `matriz/EDICION-GANADORA-NICHO.md`) y cierran con pregunta directa + palabra. Los tres reels de octubre suman 2 comentarios en Instagram | Revisión 19-oct | Gabriel / Daniela | 🔴 |
+| 28 | **Limitar el disparador de NIVEL a la palabra exacta y solo en las piezas que la piden.** Sumó 416 contactos en 7 días (la semana anterior, 2) con 26 accesos al test (6 %). Coincide con «Simbología de niveles»: quien responde «nivel…» al reel recibe el bot y entra como lead del Máster | Revisión 26-oct | Ester / Patricio | 🔴 |
+| 29 | **El post «Perdió el concurso» (Vie 23) no salió.** Pasarlo al banco de reserva o a un hueco de noviembre que no choque con el workshop | Revisión 26-oct | Daniela | 🔴 |
+| 30 | **Cada chuleta se publica cuidada también en Facebook.** «Simbología de niveles» sacó 627 comentarios en FB contra 331 en IG | Revisión 26-oct | Daniela | 🔴 |
 | 16 | **Tres piezas del calendario siguen sin salir:** `pauta-guia` (Mar 8, reel), `lm-revit-chatgpt-feed` (Jue 10, carrusel) y `reel-advertencias` (Vie 18, reel). El del Jue 10 no necesita cámara | Revisión 21-sep | Contenido | 🔴 |
 
 ---
@@ -65,6 +68,7 @@ Estas ya no se discuten cada semana. Salieron de medir.
 | **Las piezas de evento no llevan CTA de producto** y se miden por alcance, no por comentarios | Civil 3D: 5.469 views, 0 comentarios, 0 guardados. Es presencia |
 | **Facebook es canal propio, no espejo.** Cada pieza fuerte se publica cuidada en FB | 9.103 de las 11.193 views del ganador vinieron de Facebook |
 | **Anunciar el producto, solo, no conversa.** Toda pieza de producto lleva una palabra viva y una pregunta al lector | 3 semanas seguidas. 21-sep y 28-sep: tutor 2 comentarios, Máster 1. 5-oct: tutor del Diplomado 3.230 vistas y 0 comentarios. 12-oct: post de las clases grabadas del Diplomado, 946 vistas y 0 en todo. En las mismas semanas, los datos de cálculo con palabra hicieron 10 (deriva) y los recursos MEMORIA 82 |
+| 🆕 **El clip de clase de los sábados no conversa.** Los sábados van para la chuleta o se dejan libres | 3 semanas seguidas. 10-oct: clips de 936 a 1.177 vistas con 0 a 2 comentarios. 17-oct: OneFilter 787 y 0. 24-oct: add-in 967 y 0 |
 
 ### Pauta
 
@@ -92,6 +96,10 @@ Estas ya no se discuten cada semana. Salieron de medir.
 ---
 
 ## Historial
+
+### 26-oct-2026 · Revisión semanal (19–25 oct)
+
+**Las chuletas se llevan la semana:** «Simbología de niveles» (Mar 20) hizo 67.573 vistas, 331 comentarios en IG y **627 en Facebook**, 2.939 guardados y 900 compartidos; «5 tipos de cimentación» (Lun 19) 9.314 y 77. Juntas son el 81 % de las vistas y 408 de los 457 comentarios de IG. **Corrige la lección del 19-oct:** el reel sí conversa cuando es chuleta; lo que no conversa es el clip de clase (tercera semana → regla permanente), el testimonio (4.612 vistas, 2 comentarios) y la objeción del certificado (0). **NIVEL se dispara solo:** 416 contactos en 7 días con 6 % de acceso al test. Salieron 6 de 7 piezas del calendario; falta «Perdió el concurso». → recomendaciones #28, #29 y #30.
 
 ### 19-oct-2026 · Revisión semanal (12–18 oct)
 
