@@ -118,6 +118,7 @@ ADS = {
     "ACERO · Black Friday (18 al 30-nov)": ["nov-ads-acero-bf"],
     "CURSOS DE BAJO COSTO · Halloween (30-oct al 1-nov) y Black Week": ["nov-ads-cursos-bf"],
     "MÁSTER · bono de Black Week (23 al 30-nov), sin precio": ["nov-ads-master-bono"],
+    "MÁSTER · la ruta en 4 bloques (siempre activa desde el 2-nov), sin precio": ["nov-ads-master-ruta"],
 }
 
 DECISIONES_PAUTA = [

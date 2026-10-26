@@ -1,7 +1,7 @@
 {
  "generado": "2026-09-30",
  "nota": "Contenido COMPLETO de cada pieza (hook, slides palabra por palabra con su dirección visual, guion de reel segundo a segundo, caption, CTA por red y copy de pauta). La app debe leer ESTE archivo para generar el post correcto sin inventar. Incluye las 3 secuencias de VENTA de historias (jueves), cuyo frame de cierre pide responder con una palabra clave para que lo recoja el bot en vez de depender de responder a mano.",
- "total": 236,
+ "total": 237,
  "piezas": [
   {
    "id": "jul-mito-render-ia",
@@ -12357,6 +12357,44 @@
    "cta_por_red": {
     "anuncio": "Reservar"
    }
+  },
+  {
+   "id": "nov-ads-master-ruta",
+   "grupo": "Pauta Meta",
+   "formato": "anuncio",
+   "formato_detalle": "ANUNCIO Meta en video (9:16 para Reels e historias; 16:9 para YouTube y feed)",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "red_principal": "instagram",
+   "fecha": "Lun 2 nov",
+   "fecha_iso": "2026-11-02",
+   "semana": "Semana 1 (2-8 nov)",
+   "tipo": "anuncio",
+   "producto": "Máster",
+   "estado": "COMPLETA",
+   "titulo": "Máster: cómo funciona la ruta (video animado)",
+   "campana": "MÁSTER · la ruta en 4 bloques (siempre activa), sin precio",
+   "hook": "¿Cómo funciona el Máster en BIM Management e IA? Cuatro bloques, en orden.",
+   "texto_principal": "¿Cómo funciona el Máster en BIM Management e IA? Cuatro bloques, en orden.\n\n1 · BIM Professional: comprendes, estructuras e implementas BIM.\n2 · BIM Coordination: integras modelos, coordinas disciplinas y resuelves interferencias.\n3 · BIM Management: planificas tiempo y costos, y diriges el proyecto.\n4 · BIM + IA: automatizas con Dynamo, Python e inteligencia artificial.\n\nCada módulo aprobado te da una microcredencial y cada bloque, una insignia de especialista. Puedes cursarlos por separado y suman hacia el título del Máster.",
+   "titular": "Máster BIM Management e IA: la ruta en 4 bloques",
+   "descripcion": "12 meses · 4 bloques · proyecto final",
+   "boton": "Más información",
+   "publico_sugerido": "Mismo público del conjunto que mejor funciona del Máster [29SEP] (CPL $0,60–0,75) + interacción con la cuenta en 90 días. Excluir alumnos actuales del Máster.",
+   "que_medir": "CPL del formulario frente al anuncio actual del Máster [29SEP]; retención del video a 3 s y a 15 s; citas agendadas en GHL. Si a los 5 días su CPL es mayor que el del anuncio actual, se deja solo como retargeting.",
+   "creativo": "Video animado «La ruta del Máster» (34 s, voz IA de Gabriel): 9:16 → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/master-ruta/master-ruta-9x16.mp4 · 16:9 → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/master-ruta/master-ruta-16x9.mp4 · portada → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/master-ruta/master-ruta-portada.png",
+   "video": "https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/master-ruta/master-ruta-9x16.mp4",
+   "eje": "NÚCLEO-BIM",
+   "cta": {
+    "anuncio": "Más información"
+   },
+   "cta_por_red": {
+    "anuncio": "Más información"
+   },
+   "condicion": "SIN PRECIO (regla del Máster). Destino: formulario instantáneo del Máster (el mismo de [29SEP]). Va como anuncio nuevo dentro de la campaña del Máster, no como campaña aparte. Lo monta Olympus.",
+   "notas_produccion": "VIDEO LISTO: rama vimeo-clips → vimeo-clips/editados/pauta/master-ruta/ (9:16 1080×1920 y 16:9 1920×1080, 34 s, con portada). Hecho con Motion Architect + la marca DMA: logos reales de Revit, Navisworks, Dynamo y Python y las microcredenciales DQ del Drive.",
+   "origen": "matriz noviembre 2026"
   },
   {
    "id": "nov-ia-revit-3-pasos-reel",
