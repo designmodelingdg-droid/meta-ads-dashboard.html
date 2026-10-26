@@ -593,3 +593,43 @@ Los comentarios se recuperan frente a la semana pasada, pero todos vienen de tre
 - ACERO sumó 21 contactos del bot y 21 leads, pero solo 3 accesos (14 %). El disparador ya funciona; la caída sigue en el formulario.
 - COTIZA sumó 1 contacto del bot con 21 comentarios en el carrusel. No hay campaña de COTIZA en OpenReply. Hay que comprobar quién recibió el cotizador.
 - NIVEL sumó 2. MEMORIA y ZAPATA casi en cero: no hubo piezas que los pidieran.
+
+## Actualización 2026-10-26 · semana 19–25 oct: las chuletas se llevan el 81 % de las vistas, y NIVEL se dispara solo
+
+Datos de la Graph API (Instagram). De Facebook llegan comentarios y likes, no vistas.
+
+| Fecha | Pieza | Formato | Vistas IG | Coment. IG | Coment. FB | Guardados | Compartidos |
+|---|---|---|---|---|---|---|---|
+| Mar 20 | «Simbología de niveles» (fuera del calendario) | reel · chuleta sin voz | **67.573** | **331** | **627** | **2.939** | **900** |
+| Lun 19 | «5 tipos de cimentación» (fuera del calendario) | reel · pizarra con voz | 9.314 | 77 | 0 | 320 | 86 |
+| Vie 23 | Testimonio de alumno de Acero | reel | 4.612 | 2 | 0 | 21 | 3 |
+| Mar 20 | Pandeo lateral-torsional (CTA ACERO) | carrusel | 3.464 | 20 | 0 | 12 | 4 |
+| Lun 19 | Ranking «¿en qué fila estás?» (CTA NIVEL) | carrusel | 2.355 | 4 | 0 | 7 | 2 |
+| Jue 22 | «¿Ese certificado sirve fuera de tu país?» (CTA NIVEL) | carrusel | 2.332 | 0 | 0 | 5 | 0 |
+| Mié 21 | «Sabes montar una nave…» (CTA ACERO) | carrusel | 2.066 | 20 | 2 | 4 | 0 |
+| Mié 21 | Carrusel del workshop (fuera del calendario) | carrusel | 1.658 | 3 | 3 | 8 | 1 |
+| Sáb 24 | Clip de clase: «tu add-in no piensa por ti» (CTA GUIA) | reel | 967 | 0 | 0 | 1 | 0 |
+
+**Medianas por pieza:**
+
+| Periodo | Vistas | Comentarios | Guardados |
+|---|---|---|---|
+| Esta semana (9 piezas) | 2.355 | 4 | 8 |
+| 30 días anteriores (25 piezas) | 2.167 | 6 | 8 |
+
+La semana sumó 94.341 vistas. Las dos chuletas hicieron 76.887 (81 %), 408 de los 457 comentarios de Instagram y 3.259 de los 3.317 guardados.
+
+**Lecciones**
+1. **Corrección de la semana pasada: el reel sí conversa cuando es chuleta.** Dijimos «los reels no conversan este mes». Lo que no conversa son los clips de clase, el testimonio y el reel de opinión. Las dos chuletas (lista visual y pizarra con voz) son las piezas con más comentarios del año. Noviembre ya abre la serie Chuleta (4 reels, uno por semana); con este dato se confirma.
+2. **Facebook vuelve a pesar más que Instagram en conversación.** «Simbología de niveles» sacó 627 comentarios en Facebook contra 331 en Instagram. Cada chuleta se publica cuidada en Facebook (regla permanente).
+3. **El bot de NIVEL se está disparando con palabras sueltas.** NIVEL sumó 416 contactos en 7 días (la semana anterior, 2), con solo 26 accesos al test (6 %). Coincide con «Simbología de niveles»: la gente responde «nivel…» a la pregunta del reel. Probablemente esto también llena a los asesores de contactos que no pidieron nada. Hay que limitar el disparador de NIVEL a la palabra exacta y solo en las piezas que la piden.
+4. **Las objeciones de producto no conversan.** El carrusel del certificado: 2.332 vistas y 0 comentarios. Es la misma familia que «anunciar el producto» (regla permanente desde el 19-oct). El dolor técnico con palabra (pandeo, naves) sí conversa: 20 comentarios cada uno.
+5. **El clip de clase de los sábados no conversa, tercera semana seguida** (OneFilter 787 vistas y 0 comentarios; add-in 967 y 0). Pasa a regla permanente: los sábados se usan para la chuleta o se dejan libres.
+
+**Plan contra lo publicado:**
+- Salieron 6 de las 7 piezas del feed de la semana. No salió el post «Perdió el concurso» (Vie 23).
+- Fuera del calendario salieron las dos chuletas (las ganadoras) y el carrusel viejo del workshop.
+
+**Historias:** 15 frames en 6 días, 17 respuestas. Retención entre 76 % y 90 %, por encima de la semana anterior (64-71 %) y en línea con la referencia (77 %). El martes 20 fue el mejor: 608 de alcance y 11 respuestas.
+
+**Embudos (7 días):** ZAPATA 38 contactos del bot y 7 accesos. ACERO 15 contactos y 3 accesos: la caída sigue en el formulario. NIVEL 416 contactos y 26 accesos (ver lección 3).
