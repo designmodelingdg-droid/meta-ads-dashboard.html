@@ -1,8 +1,8 @@
 # Inventario de correos — GoHighLevel
 
-Generado el 2026-10-23.
+Generado el 2026-10-26.
 
-**459 plantillas** en **57 carpetas**. 459 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
+**461 plantillas** en **58 carpetas**. 461 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
 
 > Lo que NO sale por API: que workflow usa que plantilla. El endpoint de automatizaciones devuelve solo metadatos. En esta cuenta las plantillas estan nombradas por su flujo, asi que el cruce se puede hacer leyendo.
 
@@ -10416,6 +10416,60 @@ Se registrar&aacute;n d&iacute;as de retraso por mora y el recargo correspondien
 Si tienes alguna pregunta o necesitas asistencia adicional, no dudes en contactarnos.
 Saludos cordiales,
 Design Modeling Academy
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+## ✅ PAGINA WEB DG/DMA
+
+### ✅ Solicitud Recibida Academia WEB
+
+- **id:** `6adb9dadc1dda9a62a382724`
+- **tipo:** html
+- **actualizada:** 2026-10-23T17:47:45.438Z
+- **Cuerpo:**
+
+```
+Marketing -> Correos -> Plantillas -> Code Editor (Ctrl+A, Ctrl+V)
+Variables: {{contact.first_name}} y la baja (pie)
+-->
+Un asesor acad&eacute;mico te escribe hoy mismo.
+Solicitud de informaci&oacute;n
+Recibimos tu solicitud de informaci&oacute;n
+Hola {{contact.first_name}} ,
+Gracias por tu inter&eacute;s en Design Modeling Academy . Ya tenemos tus datos y un asesor acad&eacute;mico revisar&aacute; tu consulta para orientarte sobre el programa que mejor va con tu perfil.
+Pr&oacute;ximo paso
+Un asesor te escribe hoy mismo
+Mientras tanto, puedes
+conocer nuestros programas aqu&iacute;
+Un saludo,
+Equipo Design Modeling Academy
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Solicitud Recibida Consultoria WEB
+
+- **id:** `6adb96877445c6c40d504a4e`
+- **tipo:** html
+- **actualizada:** 2026-10-23T17:17:41.298Z
+- **Cuerpo:**
+
+```
+Marketing -> Correos -> Plantillas -> Code Editor (Ctrl+A, Ctrl+V)
+Variables: {{contact.first_name}} y la baja (pie)
+-->
+Te respondemos en menos de 24 horas h&aacute;biles.
+Solicitud recibida
+Recibimos tu solicitud
+Hola {{contact.first_name}} ,
+Gracias por escribir a Design Modeling DG .
+Tiempo de respuesta
+Te respondemos en menos de 24 horas h&aacute;biles
+Un saludo,
+Equipo Design Modeling
 Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
 designmodelingacademy.com
 {{unsubscribe_url}}

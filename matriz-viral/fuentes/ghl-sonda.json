@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-23",
+  "generado": "2026-10-26",
   "location": "nkKbOarn5IwHeMv48uY9",
   "nota": "Sonda: comprueba QUE endpoints responden con nuestro token. No baja datos de negocio. Lo importante es si abren 'cursos · productos' y 'membresias': ahi vive el progreso de los alumnos, que Windsor NO expone.",
   "resultados": {
@@ -88,7 +88,7 @@
     "formularios": {
       "ok": true,
       "http": 200,
-      "registros": 56,
+      "registros": 57,
       "claves": [
         "forms",
         "total",
@@ -121,7 +121,7 @@
     "workflows": {
       "ok": true,
       "http": 200,
-      "registros": "139+",
+      "registros": "142+",
       "claves": [
         "traceId",
         "workflows"
@@ -131,7 +131,7 @@
     "etiquetas": {
       "ok": true,
       "http": 200,
-      "registros": "578+",
+      "registros": "585+",
       "claves": [
         "tags",
         "traceId"
@@ -141,7 +141,7 @@
     "campos propios": {
       "ok": true,
       "http": 200,
-      "registros": "113+",
+      "registros": "114+",
       "claves": [
         "customFields",
         "traceId"
@@ -151,7 +151,7 @@
     "conversaciones": {
       "ok": true,
       "http": 200,
-      "registros": 27329,
+      "registros": 27742,
       "claves": [
         "conversations",
         "total",
@@ -221,13 +221,37 @@
         "updatedAt",
         "version"
       ],
-      "total": 139,
+      "total": 142,
       "lista": [
         {
-          "nombre": "New Workflow : 1788478848748",
-          "estado": "draft",
+          "nombre": "MASTER V7 · Evento CitaMaster (Subscribe)",
+          "estado": "published",
           "actualizado": "2026-10-23",
-          "id": "0d683282-8508-4abf-949b-d3bb04a61f05"
+          "id": "f9177b1a-e171-4706-86d5-f22df5d3e822"
+        },
+        {
+          "nombre": "MASTER V7 · Evento LeadCalificado (StartTrial)",
+          "estado": "published",
+          "actualizado": "2026-10-23",
+          "id": "c2ebf59c-9498-4f27-bcb7-5f1d4882a7dd"
+        },
+        {
+          "nombre": "MASTER V7 · calificación",
+          "estado": "published",
+          "actualizado": "2026-10-23",
+          "id": "77f89996-a70b-47f4-ad18-7b8a098889bd"
+        },
+        {
+          "nombre": "✅ Interesados Academia WEB",
+          "estado": "published",
+          "actualizado": "2026-10-23",
+          "id": "496c04a2-2ff6-4466-8fce-8e512c41c855"
+        },
+        {
+          "nombre": "✅ Interesados Consultoria WEB",
+          "estado": "published",
+          "actualizado": "2026-10-23",
+          "id": "ca03497b-852c-422e-8947-4346825e8e9b"
         },
         {
           "nombre": "✅ Workshop - Conecta la IA a Autodesk Revit",
@@ -660,12 +684,6 @@
           "estado": "published",
           "actualizado": "2026-09-04",
           "id": "f82b8625-799f-46db-93c4-7cd780e41261"
-        },
-        {
-          "nombre": "Consultoría BIM + IA - DG",
-          "estado": "published",
-          "actualizado": "2026-09-03",
-          "id": "ca03497b-852c-422e-8947-4346825e8e9b"
         },
         {
           "nombre": "GHL CONTACTOS WHATSAPP",
