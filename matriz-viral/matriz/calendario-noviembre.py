@@ -247,6 +247,8 @@ CHECKLIST = [
     {"tarea": "Pedir el corte de Stripe y PayPal de noviembre de 2025 (no hay dato del Black Friday pasado).", "desbloquea": "La meta de Black Friday", "cuando": "antes del 10-nov", "para": "Dayana"},
     {"tarea": "Pauta: apagar «Resto» de ACERO WSP, las 2 campañas LEAD MAGNETS y ACERO TEST GANCHOS; subir la campaña de registro del workshop (2 al 16-nov).", "desbloquea": "Leads más baratos y registros al workshop", "cuando": "lun 2-nov", "para": "Olympus"},
     {"tarea": "La guía de regalo «conectar la IA a tu Revit» (la promete la landing y el mensaje del 16-nov) tiene que existir antes del workshop. Definir quién la hace.", "desbloquea": "Promesa del workshop", "cuando": "antes del lun 16-nov", "para": "Dayana (asigna)"},
+    {"tarea": "Juntar las pruebas reales para las historias de venta (frame 2): 3 o 4 mensajes de alumnos con permiso o con el nombre tapado, el testimonio del alumno de Acero, una nave en SAP2000 de Naves PRO, un reporte de interferencias de Navisworks y una captura del Tutor IA de Acero.", "desbloquea": "Las 12 historias de venta en 3 tiempos", "cuando": "antes del lun 2-nov", "para": "Daniela / Ester"},
+    {"tarea": "Gabriel confirma lo que dice a cámara en las historias de venta («me tomó años…», «he visto a muchos ingenieros…») y revisa los datos técnicos de las historias de valor (perfiles, recubrimiento ACI, cerchas, uniones).", "desbloquea": "Que nada de lo que se publica sea inexacto", "cuando": "antes de la sesión de grabación", "para": "Gabriel"},
     {"tarea": "Cada viernes, guardar las historias de la semana en su destacada; el 2-nov quitar SUSTO y el 1-dic quitar todo lo de Black Friday.", "desbloquea": "Destacadas al día", "cuando": "viernes 6, 13, 20 y 27", "para": "Daniela"},
     {"tarea": "Publicar los 4 blogs (6, 13, 20 y 27) con su post de anuncio.", "desbloquea": "G3 del mes", "cuando": "cada viernes", "para": "equipo de contenido"},
 ]
@@ -306,7 +308,7 @@ def main():
              "calendario": filas_de("GRUPO 4")},
             {"n": 5, "nombre": "GRUPO 5 · Historias de Instagram (y Facebook stories)",
              "descripcion": f"Lunes a viernes (y Halloween), 3-4 frames. {ventas} días de venta y {gab} con Gabriel a cámara.",
-             "reglas": ["El sticker es el CTA.", "Precio nunca en la historia: va por DM o WhatsApp, con la mini landing de la oferta.", "Máximo 4 frames.", "Las respuestas llegan como DM: se contestan a mano."],
+             "reglas": ["DÍAS DE VENTA, en 3 tiempos: 1) curiosidad (la pieza que falta), 2) prueba REAL con captura, 3) «Respóndeme X si estás cansado de… y de…».", "DÍAS DE VALOR, en 3 tiempos: 1) curiosidad, 2) el dato o el tip, 3) «Respóndeme X y te mando [recurso gratis]» o el enlace del workshop.", "La apertura del frame 1 no se repite: cada historia arranca distinto.", "La prueba nunca se inventa: mensajes de alumnos (nombre tapado si no hay permiso), modelos o resultados reales.", "Precio nunca en la historia: va por DM o WhatsApp, con la mini landing de la oferta.", "Máximo 4 frames.", "Las respuestas llegan como DM: se contestan a mano el mismo día."],
              "calendario": [{**x, **({"destacada": DESTACADA_DE[x["id"]]} if x["id"] in DESTACADA_DE else {})} for x in hist]},
         ],
         "lead_magnets": {
