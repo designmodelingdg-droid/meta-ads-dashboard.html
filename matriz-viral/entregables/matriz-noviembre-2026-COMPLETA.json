@@ -2,7 +2,7 @@
   "_meta": {
     "titulo": "Matriz de contenido — Design Modeling Academy — noviembre 2026",
     "periodo": "Del miércoles 28 de octubre al lunes 30 de noviembre",
-    "generado": "2026-10-23",
+    "generado": "2026-10-28",
     "como_se_regenera": "python3 matriz-viral/matriz/calendario-noviembre.py && python3 scripts/build_matriz_mes.py --mes 2026-11",
     "origen": "calendario-noviembre.json (orden) + guiones-completos.json (contenido de cada pieza)",
     "fuente_de_datos": "Métricas de Instagram por Meta Graph API (matriz.json, Action «Métricas semanales») y Apify para referentes; histórico en historico-2026.json; compradores en COMPRADORES-VS-NO.md."
@@ -105,6 +105,18 @@
       "desbloquea": "Promesa del workshop",
       "cuando": "antes del lun 16-nov",
       "para": "Dayana (asigna)"
+    },
+    {
+      "tarea": "Juntar las pruebas reales para las historias de venta (frame 2): 3 o 4 mensajes de alumnos con permiso o con el nombre tapado, el testimonio del alumno de Acero, una nave en SAP2000 de Naves PRO, un reporte de interferencias de Navisworks y una captura del Tutor IA de Acero.",
+      "desbloquea": "Las 12 historias de venta en 3 tiempos",
+      "cuando": "antes del lun 2-nov",
+      "para": "Daniela / Ester"
+    },
+    {
+      "tarea": "Gabriel confirma lo que dice a cámara en las historias de venta («me tomó años…», «he visto a muchos ingenieros…») y revisa los datos técnicos de las historias de valor (perfiles, recubrimiento ACI, cerchas, uniones).",
+      "desbloquea": "Que nada de lo que se publica sea inexacto",
+      "cuando": "antes de la sesión de grabación",
+      "para": "Gabriel"
     },
     {
       "tarea": "Cada viernes, guardar las historias de la semana en su destacada; el 2-nov quitar SUSTO y el 1-dic quitar todo lo de Black Friday.",
@@ -3633,10 +3645,13 @@
       "nombre": "GRUPO 5 · Historias de Instagram (y Facebook stories)",
       "descripcion": "Lunes a viernes (y Halloween), 3-4 frames. 12 días de venta y 8 con Gabriel a cámara.",
       "reglas": [
-        "El sticker es el CTA.",
+        "DÍAS DE VENTA, en 3 tiempos: 1) curiosidad (la pieza que falta), 2) prueba REAL con captura, 3) «Respóndeme X si estás cansado de… y de…».",
+        "DÍAS DE VALOR, en 3 tiempos: 1) curiosidad, 2) el dato o el tip, 3) «Respóndeme X y te mando [recurso gratis]» o el enlace del workshop.",
+        "La apertura del frame 1 no se repite: cada historia arranca distinto.",
+        "La prueba nunca se inventa: mensajes de alumnos (nombre tapado si no hay permiso), modelos o resultados reales.",
         "Precio nunca en la historia: va por DM o WhatsApp, con la mini landing de la oferta.",
         "Máximo 4 frames.",
-        "Las respuestas llegan como DM: se contestan a mano."
+        "Las respuestas llegan como DM: se contestan a mano el mismo día."
       ],
       "calendario": [
         {
@@ -3650,7 +3665,7 @@
           "idea": {
             "titulo": "Halloween: el modelo más terrorífico",
             "formato": "HISTORIAS (4 frames)",
-            "desarrollo": "Lo más terrorífico de Halloween no es un fantasma: es un modelo sin revisar interferencias. 🎃"
+            "desarrollo": "Lo que más miedo da en un proyecto no es un fantasma: es descubrir en obra el error que el modelo ya tenía. 🎃"
           },
           "venta": true,
           "destacada": "🎁 HERRAMIENTAS",
@@ -3673,33 +3688,33 @@
             "estado": "COMPLETA",
             "titulo": "Halloween: el modelo más terrorífico",
             "eje": "NÚCLEO-BIM",
-            "hook": "Lo más terrorífico de Halloween no es un fantasma: es un modelo sin revisar interferencias. 🎃",
+            "hook": "Lo que más miedo da en un proyecto no es un fantasma: es descubrir en obra el error que el modelo ya tenía. 🎃",
             "destacada": "🎁 HERRAMIENTAS",
             "gabriel_a_camara": false,
             "historias": [
               {
                 "n": 1,
                 "visual": "Texto sobre azul con una calabaza de líneas técnicas naranjas.",
-                "texto": "Lo más terrorífico de Halloween no es un fantasma: es un modelo sin revisar interferencias. 🎃",
-                "sticker": "ENCUESTA: «Me ha pasado» / «Todavía no»"
+                "texto": "Lo que más miedo da en un proyecto no es un fantasma: es descubrir en obra el error que el modelo ya tenía. 🎃",
+                "sticker": "Ninguno."
               },
               {
                 "n": 2,
                 "visual": "Captura REAL de Navisworks con una interferencia viga-ducto en rojo.",
-                "texto": "Pesadilla en obra: la viga que atraviesa el ducto.",
+                "texto": "Esto se ve en 5 minutos si sabes dónde mirar. En obra cuesta semanas.",
                 "sticker": "Ninguno."
               },
               {
                 "n": 3,
-                "visual": "Arte de la promo (fondo azul, cupón SUSTO en naranja).",
-                "texto": "Solo este fin de semana: cursos de bajo costo con precio de Halloween. Cupón SUSTO hasta el domingo a las 23:59.",
-                "sticker": "CUENTA REGRESIVA hasta el dom 1-nov 23:59."
+                "visual": "Arte de la promo Halloween 9:16 (promo-halloween-9x16.png).",
+                "texto": "Este fin de semana eliges tu curso con el código SUSTO. Solo 3 noches.",
+                "sticker": "CUENTA REGRESIVA al dom 1-nov 23:59."
               },
               {
                 "n": 4,
-                "visual": "Texto sobre azul.",
-                "texto": "Respóndeme SUSTO y te paso el enlace con el descuento.",
-                "sticker": "RESPONDER CON «SUSTO» (se contesta a mano y se manda la oferta por WhatsApp)."
+                "visual": "Cierre invertido ámbar (texto azul sobre ámbar).",
+                "texto": "Respóndeme SUSTO si estás cansado de aprender a punta de errores en obra y de cursos que nunca terminas. Te mando el enlace. 👻",
+                "sticker": "RESPONDER CON «SUSTO» (se contesta a mano con el enlace https://funnel.dgdesignmodeling.com/promo-halloween-cursos)."
               }
             ],
             "cta": {
@@ -3707,11 +3722,12 @@
               "facebook": "Respóndeme SUSTO"
             },
             "origen": "matriz noviembre 2026",
-            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. HALLOWEEN FLASH (propuesta, la confirma Dayana): solo cursos de bajo costo (Naves Industriales PRO y los demás de ~$26,99) a precio especial con el cupón SUSTO, del vie 30-oct 00:00 al dom 1-nov 23:59 (hora de Ecuador). Precio propuesto: $19,99. Cierra a la hora dicha y NO se reabre. En historias no va el precio: va en el DM y en el correo. 31-oct es sábado y feriado largo en Ecuador (puente al 3-nov): historias cortas. La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja.",
+            "notas_produccion": "ESTRUCTURA DE VENTA EN 3 TIEMPOS (28-oct): curiosidad → prueba real → «Respóndeme X si estás cansado de…». La prueba del frame 2 es SIEMPRE una captura real (mensaje de alumno con nombre tapado si no hay permiso, modelo, resultado); nada inventado. Cada «Respóndeme X» llega como DM y NO lo contesta el bot: alguien del equipo responde el mismo día, con el nombre de la persona y una pregunta al final (HISTORIAS-VENTA.md §4). Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. HALLOWEEN FLASH (propuesta, la confirma Dayana): solo cursos de bajo costo (Naves Industriales PRO y los demás de ~$26,99) a precio especial con el cupón SUSTO, del vie 30-oct 00:00 al dom 1-nov 23:59 (hora de Ecuador). Precio propuesto: $19,99. Cierra a la hora dicha y NO se reabre. En historias no va el precio: va en el DM y en el correo. 31-oct es sábado y feriado largo en Ecuador (puente al 3-nov): historias cortas. La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja.",
             "cta_por_red": {
               "instagram": "Respóndeme SUSTO",
               "facebook": "Respóndeme SUSTO"
-            }
+            },
+            "estructura_historia": "venta 3 tiempos"
           }
         },
         {
@@ -3725,7 +3741,7 @@
           "idea": {
             "titulo": "Halloween: últimas horas del cupón SUSTO",
             "formato": "HISTORIAS (3 frames)",
-            "desarrollo": "Últimas horas del cupón SUSTO: cierra hoy a las 23:59 (Ecuador) y no vuelve."
+            "desarrollo": "¿Cuántos cursos llevas guardando «para después»? Hoy es el último día para empezar uno con SUSTO. ⏳"
           },
           "venta": true,
           "destacada": "🎁 HERRAMIENTAS",
@@ -3748,27 +3764,27 @@
             "estado": "COMPLETA",
             "titulo": "Halloween: últimas horas del cupón SUSTO",
             "eje": "NÚCLEO-BIM",
-            "hook": "Últimas horas del cupón SUSTO: cierra hoy a las 23:59 (Ecuador) y no vuelve.",
+            "hook": "¿Cuántos cursos llevas guardando «para después»? Hoy es el último día para empezar uno con SUSTO. ⏳",
             "destacada": "🎁 HERRAMIENTAS",
             "gabriel_a_camara": false,
             "historias": [
               {
                 "n": 1,
                 "visual": "Arte de la promo con «ÚLTIMAS HORAS».",
-                "texto": "Últimas horas del cupón SUSTO: cierra hoy a las 23:59 (Ecuador) y no vuelve.",
+                "texto": "¿Cuántos cursos llevas guardando «para después»? Hoy es el último día para empezar uno con SUSTO. ⏳",
                 "sticker": "CUENTA REGRESIVA hasta las 23:59."
               },
               {
                 "n": 2,
-                "visual": "Captura REAL del curso Naves Industriales PRO (lista de lecciones).",
-                "texto": "Naves Industriales PRO: modelas y calculas una nave completa paso a paso.",
+                "visual": "Captura REAL: mensaje de un alumno de un curso corto (nombre tapado) o la lista de lecciones de Naves Industriales PRO.",
+                "texto": "Un curso corto terminado vale más que tres a medias.",
                 "sticker": "Ninguno."
               },
               {
                 "n": 3,
-                "visual": "Texto sobre azul.",
-                "texto": "Respóndeme SUSTO y te paso el enlace.",
-                "sticker": "RESPONDER CON «SUSTO»."
+                "visual": "Cierre invertido ámbar (texto azul sobre ámbar).",
+                "texto": "Respóndeme SUSTO si estás cansado de postergar y quieres empezar hoy. Cierra a las 23:59 (Ecuador).",
+                "sticker": "RESPONDER CON «SUSTO» (se contesta a mano con el enlace https://funnel.dgdesignmodeling.com/promo-halloween-cursos)."
               }
             ],
             "cta": {
@@ -3776,11 +3792,12 @@
               "facebook": "Respóndeme SUSTO"
             },
             "origen": "matriz noviembre 2026",
-            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. HALLOWEEN FLASH (propuesta, la confirma Dayana): solo cursos de bajo costo (Naves Industriales PRO y los demás de ~$26,99) a precio especial con el cupón SUSTO, del vie 30-oct 00:00 al dom 1-nov 23:59 (hora de Ecuador). Precio propuesto: $19,99. Cierra a la hora dicha y NO se reabre. En historias no va el precio: va en el DM y en el correo. La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja.",
+            "notas_produccion": "ESTRUCTURA DE VENTA EN 3 TIEMPOS (28-oct): curiosidad → prueba real → «Respóndeme X si estás cansado de…». La prueba del frame 2 es SIEMPRE una captura real (mensaje de alumno con nombre tapado si no hay permiso, modelo, resultado); nada inventado. Cada «Respóndeme X» llega como DM y NO lo contesta el bot: alguien del equipo responde el mismo día, con el nombre de la persona y una pregunta al final (HISTORIAS-VENTA.md §4). Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. HALLOWEEN FLASH (propuesta, la confirma Dayana): solo cursos de bajo costo (Naves Industriales PRO y los demás de ~$26,99) a precio especial con el cupón SUSTO, del vie 30-oct 00:00 al dom 1-nov 23:59 (hora de Ecuador). Precio propuesto: $19,99. Cierra a la hora dicha y NO se reabre. En historias no va el precio: va en el DM y en el correo. La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja.",
             "cta_por_red": {
               "instagram": "Respóndeme SUSTO",
               "facebook": "Respóndeme SUSTO"
-            }
+            },
+            "estructura_historia": "venta 3 tiempos"
           }
         },
         {
@@ -3794,7 +3811,7 @@
           "idea": {
             "titulo": "Aquí descansan los hábitos que el BIM enterró",
             "formato": "HISTORIAS (3 frames)",
-            "desarrollo": "Hoy en el feed: 6 hábitos que el BIM ya enterró. ¿Cuántos siguen vivos en tu oficina?"
+            "desarrollo": "Hay hábitos que el BIM enterró hace años… y siguen vivos en muchas oficinas. 🪦"
           },
           "destacada": "🎯 BIM + IA",
           "contenido": {
@@ -3815,26 +3832,26 @@
             "estado": "COMPLETA",
             "titulo": "Aquí descansan los hábitos que el BIM enterró",
             "eje": "NÚCLEO-BIM",
-            "hook": "Hoy en el feed: 6 hábitos que el BIM ya enterró. ¿Cuántos siguen vivos en tu oficina?",
+            "hook": "Hay hábitos que el BIM enterró hace años… y siguen vivos en muchas oficinas. 🪦",
             "destacada": "🎯 BIM + IA",
             "gabriel_a_camara": false,
             "historias": [
               {
                 "n": 1,
                 "visual": "Captura de la portada del carrusel del día compartida en historia.",
-                "texto": "Hoy en el feed: 6 hábitos que el BIM ya enterró. ¿Cuántos siguen vivos en tu oficina?",
+                "texto": "Hay hábitos que el BIM enterró hace años… y siguen vivos en muchas oficinas. 🪦",
                 "sticker": "Ninguno (se toca y lleva al post)."
               },
               {
                 "n": 2,
                 "visual": "Texto sobre azul.",
-                "texto": "¿Cuál es el que más te cuesta soltar?",
-                "sticker": "ENCUESTA: «Contar a mano» / «Exportar a Excel»"
+                "texto": "El más caro: contar y revisar a mano lo que el modelo ya sabe. ¿Te pasa?",
+                "sticker": "ENCUESTA: «Todavía lo hago» / «Ya no»"
               },
               {
                 "n": 3,
-                "visual": "Texto sobre azul.",
-                "texto": "Si quieres saber en qué nivel BIM estás, respóndeme NIVEL.",
+                "visual": "Cierre invertido ámbar (texto azul sobre ámbar).",
+                "texto": "Respóndeme NIVEL si quieres saber qué te falta para dar el salto y te mando gratis el test de nivel BIM (5 minutos).",
                 "sticker": "RESPONDER CON «NIVEL» (se contesta a mano con el enlace del test)."
               }
             ],
@@ -3843,11 +3860,12 @@
               "facebook": "Respóndeme NIVEL"
             },
             "origen": "matriz noviembre 2026",
-            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 2-nov: Día de Difuntos (Ecuador, Bolivia, Colombia) y Día de Muertos (México). Historias livianas.",
+            "notas_produccion": "ESTRUCTURA DE VALOR EN 3 TIEMPOS (28-oct): curiosidad → el dato o el tip → «Respóndeme X y te mando [recurso gratis]». El dato técnico lo revisa Gabriel antes de publicar. Cada «Respóndeme X» llega como DM y NO lo contesta el bot: alguien del equipo responde el mismo día, con el nombre de la persona y una pregunta al final (HISTORIAS-VENTA.md §4). Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 2-nov: Día de Difuntos (Ecuador, Bolivia, Colombia) y Día de Muertos (México). Historias livianas.",
             "cta_por_red": {
               "instagram": "Respóndeme NIVEL",
               "facebook": "Respóndeme NIVEL"
-            }
+            },
+            "estructura_historia": "valor 3 tiempos"
           }
         },
         {
@@ -3861,7 +3879,7 @@
           "idea": {
             "titulo": "Gabriel: por qué el Máster va por bloques",
             "formato": "HISTORIAS (4 frames)",
-            "desarrollo": "«Me preguntan mucho si tienen que hacer el Máster completo. No: empiezas por el bloque que te pide tu trabajo.»"
+            "desarrollo": "«Casi todos los que llegan al Máster cometen el mismo error: creen que tienen que estudiar todo BIM de golpe. Me tomó años ver que no funciona así.»"
           },
           "gabriel_a_camara": true,
           "venta": true,
@@ -3885,45 +3903,46 @@
             "estado": "COMPLETA",
             "titulo": "Gabriel: por qué el Máster va por bloques",
             "eje": "NÚCLEO-BIM",
-            "hook": "«Me preguntan mucho si tienen que hacer el Máster completo. No: empiezas por el bloque que te pide tu trabajo.»",
+            "hook": "«Casi todos los que llegan al Máster cometen el mismo error: creen que tienen que estudiar todo BIM de golpe. Me tomó años ver que no funciona así.»",
             "destacada": "🎯 BIM + IA",
             "gabriel_a_camara": true,
             "historias": [
               {
                 "n": 1,
                 "visual": "🎥 Gabriel a cámara (selfie).",
-                "texto": "«Me preguntan mucho si tienen que hacer el Máster completo. No: empiezas por el bloque que te pide tu trabajo.»",
+                "texto": "«Casi todos los que llegan al Máster cometen el mismo error: creen que tienen que estudiar todo BIM de golpe. Me tomó años ver que no funciona así.»",
                 "sticker": "Ninguno."
               },
               {
                 "n": 2,
-                "visual": "Texto sobre azul con los 4 bloques en lista.",
-                "texto": "BIM Professional · BIM Coordination · BIM Management · BIM + IA. Cada uno con su certificación.",
-                "sticker": "ENCUESTA: «¿Cuál sería tu primero?» Professional / Coordination (2.ª encuesta en el siguiente frame si hace falta)"
+                "visual": "Captura REAL: mensaje de un alumno que empezó por un solo bloque (nombre tapado) o su microcredencial.",
+                "texto": "Hoy se empieza por el bloque que te pide tu trabajo: Professional, Coordination, Management o BIM + IA.",
+                "sticker": "Ninguno."
               },
               {
                 "n": 3,
-                "visual": "Texto sobre azul.",
-                "texto": "¿Quieres que te digamos por cuál empezar? Agenda 20 minutos con un asesor, con tu diagnóstico.",
-                "sticker": "ENLACE a la agenda (calendario del Máster)."
+                "visual": "Cierre invertido ámbar (texto azul sobre ámbar).",
+                "texto": "Respóndeme MÁSTER si estás cansado de ver tutoriales sueltos sin saber por dónde empezar y de sentir que Revit se te quedó corto.",
+                "sticker": "RESPONDER CON «MÁSTER» (se contesta a mano; si quiere, se le agenda la llamada de 20 minutos. Nunca precio por DM)."
               },
               {
                 "n": 4,
                 "visual": "Captura de la portada del carrusel «5 preguntas» del día.",
-                "texto": "Y hoy en el feed: las 5 preguntas que le hice a mi modelo. Workshop gratis el 17.",
+                "texto": "Y hoy en el feed: 5 preguntas que se le pueden hacer a un modelo de Revit. Workshop gratis el 17.",
                 "sticker": "Ninguno."
               }
             ],
             "cta": {
-              "instagram": "Agenda 20 minutos",
-              "facebook": "Agenda 20 minutos"
+              "instagram": "Respóndeme MÁSTER",
+              "facebook": "Respóndeme MÁSTER"
             },
             "origen": "matriz noviembre 2026",
-            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 🎥 GABRIEL A CÁMARA (Dayana, 23-oct: al menos 2 veces por semana). Selfie vertical, 10-15 s, luz de ventana, sin guion leído: dice la idea con sus palabras. Se graban todas las de la semana en la sesión con Daniela. VENTA del Máster sin precio: el precio lo da el asesor en la llamada. 3-nov feriado de Cuenca. Enlace: el calendario de citas del Máster (bIVuNHNojGEgH3gf6yXe). La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja.",
+            "notas_produccion": "ESTRUCTURA DE VENTA EN 3 TIEMPOS (28-oct): curiosidad → prueba real → «Respóndeme X si estás cansado de…». La prueba del frame 2 es SIEMPRE una captura real (mensaje de alumno con nombre tapado si no hay permiso, modelo, resultado); nada inventado. Cada «Respóndeme X» llega como DM y NO lo contesta el bot: alguien del equipo responde el mismo día, con el nombre de la persona y una pregunta al final (HISTORIAS-VENTA.md §4). Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 🎥 GABRIEL A CÁMARA (Dayana, 23-oct: al menos 2 veces por semana). Selfie vertical, 10-15 s, luz de ventana, sin guion leído: dice la idea con sus palabras. Se graban todas las de la semana en la sesión con Daniela. VENTA del Máster sin precio: el precio lo da el asesor en la llamada. 3-nov feriado de Cuenca. Enlace: el calendario de citas del Máster (bIVuNHNojGEgH3gf6yXe). La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja.",
             "cta_por_red": {
-              "instagram": "Agenda 20 minutos",
-              "facebook": "Agenda 20 minutos"
-            }
+              "instagram": "Respóndeme MÁSTER",
+              "facebook": "Respóndeme MÁSTER"
+            },
+            "estructura_historia": "venta 3 tiempos"
           }
         },
         {
@@ -3937,7 +3956,7 @@
           "idea": {
             "titulo": "Chuleta: perfiles de acero",
             "formato": "HISTORIAS (3 frames)",
-            "desarrollo": "Hoy en el feed: perfiles de acero y dónde se usa cada uno."
+            "desarrollo": "¿Por qué en las naves casi siempre ves vigas IPE y columnas de tubo? Hay una razón que casi nadie explica. 🤔"
           },
           "destacada": "🔩 ACERO",
           "contenido": {
@@ -3958,26 +3977,26 @@
             "estado": "COMPLETA",
             "titulo": "Chuleta: perfiles de acero",
             "eje": "NÚCLEO-BIM",
-            "hook": "Hoy en el feed: perfiles de acero y dónde se usa cada uno.",
+            "hook": "¿Por qué en las naves casi siempre ves vigas IPE y columnas de tubo? Hay una razón que casi nadie explica. 🤔",
             "destacada": "🔩 ACERO",
             "gabriel_a_camara": false,
             "historias": [
               {
                 "n": 1,
                 "visual": "Captura del reel de la chuleta del día.",
-                "texto": "Hoy en el feed: perfiles de acero y dónde se usa cada uno.",
+                "texto": "¿Por qué en las naves casi siempre ves vigas IPE y columnas de tubo? Hay una razón que casi nadie explica. 🤔",
                 "sticker": "Ninguno."
               },
               {
                 "n": 2,
                 "visual": "Texto sobre azul.",
-                "texto": "¿Cuál usas más en tus proyectos?",
+                "texto": "El IPE rinde mejor a flexión en un sentido; el tubo HSS trabaja bien a compresión en cualquier dirección. Por eso vigas de IPE y columnas de tubo.",
                 "sticker": "ENCUESTA: «IPE / HEA» / «Tubo HSS»"
               },
               {
                 "n": 3,
                 "visual": "Arte del workshop (9:16).",
-                "texto": "Martes 17 de noviembre: le hablo a mi modelo de Revit en vivo. Gratis.",
+                "texto": "¿Y si una IA revisara tu modelo por ti? El martes 17 lo hago en vivo. Gratis.",
                 "sticker": "ENLACE a la landing del workshop (https://funnel.dgdesignmodeling.com/workshop-ia-revit-autodesk-registro)."
               }
             ],
@@ -3986,11 +4005,12 @@
               "facebook": "Enlace al workshop"
             },
             "origen": "matriz noviembre 2026",
-            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. Primer empuje del workshop en historias (en octubre no se había anunciado en ninguna historia: análisis del 23-oct).",
+            "notas_produccion": "ESTRUCTURA DE VALOR EN 3 TIEMPOS (28-oct): curiosidad → el dato o el tip → «Respóndeme X y te mando [recurso gratis]». El dato técnico lo revisa Gabriel antes de publicar. Cada «Respóndeme X» llega como DM y NO lo contesta el bot: alguien del equipo responde el mismo día, con el nombre de la persona y una pregunta al final (HISTORIAS-VENTA.md §4). Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. Primer empuje del workshop en historias (en octubre no se había anunciado en ninguna historia: análisis del 23-oct).",
             "cta_por_red": {
               "instagram": "Enlace al workshop",
               "facebook": "Enlace al workshop"
-            }
+            },
+            "estructura_historia": "valor 3 tiempos"
           }
         },
         {
@@ -4004,7 +4024,7 @@
           "idea": {
             "titulo": "Gabriel: lo que hace un ingeniero de acero que nadie enseña",
             "formato": "HISTORIAS (3 frames)",
-            "desarrollo": "«Saber dónde está el botón en Robot no te hace diseñador de acero. Lo que te hace diseñador es el orden: qué calculas, qué verificas y qué entregas.»"
+            "desarrollo": "«Hay una pieza que nadie te enseña en la universidad: el orden. Qué calculas, qué verificas y qué entregas.»"
           },
           "gabriel_a_camara": true,
           "venta": true,
@@ -4028,27 +4048,27 @@
             "estado": "COMPLETA",
             "titulo": "Gabriel: lo que hace un ingeniero de acero que nadie enseña",
             "eje": "NÚCLEO-BIM",
-            "hook": "«Saber dónde está el botón en Robot no te hace diseñador de acero. Lo que te hace diseñador es el orden: qué calculas, qué verificas y qué entregas.»",
+            "hook": "«Hay una pieza que nadie te enseña en la universidad: el orden. Qué calculas, qué verificas y qué entregas.»",
             "destacada": "🔩 ACERO",
             "gabriel_a_camara": true,
             "historias": [
               {
                 "n": 1,
                 "visual": "🎥 Gabriel a cámara (selfie).",
-                "texto": "«Saber dónde está el botón en Robot no te hace diseñador de acero. Lo que te hace diseñador es el orden: qué calculas, qué verificas y qué entregas.»",
+                "texto": "«Hay una pieza que nadie te enseña en la universidad: el orden. Qué calculas, qué verificas y qué entregas.»",
                 "sticker": "Ninguno."
               },
               {
                 "n": 2,
-                "visual": "Captura REAL del Tutor IA de Acero respondiendo con lección y minuto.",
-                "texto": "En la Especialización en Acero aprendes ese orden con una nave completa, y un tutor de IA te dice en qué lección y minuto se explicó cada cosa.",
+                "visual": "Captura REAL: una nave terminada en Robot o Advance Steel, o el Tutor IA de Acero respondiendo con lección y minuto.",
+                "texto": "Con ese orden, una nave completa deja de ser una pesadilla. En la Especialización lo aprendes con una nave real y un tutor de IA.",
                 "sticker": "Ninguno."
               },
               {
                 "n": 3,
-                "visual": "Texto sobre azul.",
-                "texto": "¿Lo tuyo es diseñar acero en software? Respóndeme ACERO y te paso el temario.",
-                "sticker": "RESPONDER CON «ACERO» (se contesta a mano con el temario y, si pregunta, el precio)."
+                "visual": "Cierre invertido ámbar (texto azul sobre ámbar).",
+                "texto": "Respóndeme ACERO si estás cansado de depender de otro para el cálculo y de dudar de cada perfil que eliges.",
+                "sticker": "RESPONDER CON «ACERO» (se contesta a mano con el temario; el precio solo si lo pregunta)."
               }
             ],
             "cta": {
@@ -4056,11 +4076,12 @@
               "facebook": "Respóndeme ACERO"
             },
             "origen": "matriz noviembre 2026",
-            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 🎥 GABRIEL A CÁMARA (Dayana, 23-oct: al menos 2 veces por semana). Selfie vertical, 10-15 s, luz de ventana, sin guion leído: dice la idea con sus palabras. Se graban todas las de la semana en la sesión con Daniela. VENTA de Acero: el precio solo por DM. A quien diga que quiere fabricar o soldar, se le dice con honestidad que Acero no es para eso. Mismo día del reel «Para quién es el workshop». La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja.",
+            "notas_produccion": "ESTRUCTURA DE VENTA EN 3 TIEMPOS (28-oct): curiosidad → prueba real → «Respóndeme X si estás cansado de…». La prueba del frame 2 es SIEMPRE una captura real (mensaje de alumno con nombre tapado si no hay permiso, modelo, resultado); nada inventado. Cada «Respóndeme X» llega como DM y NO lo contesta el bot: alguien del equipo responde el mismo día, con el nombre de la persona y una pregunta al final (HISTORIAS-VENTA.md §4). Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 🎥 GABRIEL A CÁMARA (Dayana, 23-oct: al menos 2 veces por semana). Selfie vertical, 10-15 s, luz de ventana, sin guion leído: dice la idea con sus palabras. Se graban todas las de la semana en la sesión con Daniela. VENTA de Acero: el precio solo por DM. A quien diga que quiere fabricar o soldar, se le dice con honestidad que Acero no es para eso. Mismo día del reel «Para quién es el workshop». La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja.",
             "cta_por_red": {
               "instagram": "Respóndeme ACERO",
               "facebook": "Respóndeme ACERO"
-            }
+            },
+            "estructura_historia": "venta 3 tiempos"
           }
         },
         {
@@ -4074,7 +4095,7 @@
           "idea": {
             "titulo": "Dato: 40 mm de recubrimiento",
             "formato": "HISTORIAS (3 frames)",
-            "desarrollo": "40 mm: el recubrimiento que más se discute en obra."
+            "desarrollo": "40 mm. El número que más discusiones causa en obra… y casi nadie sabe de dónde sale. 🧱"
           },
           "destacada": "🎁 HERRAMIENTAS",
           "contenido": {
@@ -4095,27 +4116,27 @@
             "estado": "COMPLETA",
             "titulo": "Dato: 40 mm de recubrimiento",
             "eje": "NÚCLEO-BIM",
-            "hook": "40 mm: el recubrimiento que más se discute en obra.",
+            "hook": "40 mm. El número que más discusiones causa en obra… y casi nadie sabe de dónde sale. 🧱",
             "destacada": "🎁 HERRAMIENTAS",
             "gabriel_a_camara": false,
             "historias": [
               {
                 "n": 1,
                 "visual": "Captura del post del día.",
-                "texto": "40 mm: el recubrimiento que más se discute en obra.",
+                "texto": "40 mm. El número que más discusiones causa en obra… y casi nadie sabe de dónde sale. 🧱",
                 "sticker": "Ninguno."
               },
               {
                 "n": 2,
                 "visual": "Texto sobre azul.",
-                "texto": "¿Dónde lo revisas tú?",
-                "sticker": "ENCUESTA: «En el modelo» / «En obra»"
+                "texto": "Depende de la exposición: 40 mm es para vigas y columnas protegidas; una zapata vaciada contra el suelo pide 75 mm (ACI 318-19).",
+                "sticker": "ENCUESTA: «Lo reviso en el modelo» / «Lo veo en obra»"
               },
               {
                 "n": 3,
-                "visual": "Texto sobre azul.",
-                "texto": "Si diseñas cimentaciones, respóndeme ZAPATA y te mando la calculadora gratis.",
-                "sticker": "RESPONDER CON «ZAPATA»."
+                "visual": "Cierre invertido ámbar (texto azul sobre ámbar).",
+                "texto": "Respóndeme ZAPATA si diseñas cimentaciones y te mando gratis la calculadora de zapatas.",
+                "sticker": "RESPONDER CON «ZAPATA» (se contesta a mano con el enlace de la calculadora)."
               }
             ],
             "cta": {
@@ -4123,11 +4144,12 @@
               "facebook": "Respóndeme ZAPATA"
             },
             "origen": "matriz noviembre 2026",
-            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. ",
+            "notas_produccion": "ESTRUCTURA DE VALOR EN 3 TIEMPOS (28-oct): curiosidad → el dato o el tip → «Respóndeme X y te mando [recurso gratis]». El dato técnico lo revisa Gabriel antes de publicar. Cada «Respóndeme X» llega como DM y NO lo contesta el bot: alguien del equipo responde el mismo día, con el nombre de la persona y una pregunta al final (HISTORIAS-VENTA.md §4). Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó.",
             "cta_por_red": {
               "instagram": "Respóndeme ZAPATA",
               "facebook": "Respóndeme ZAPATA"
-            }
+            },
+            "estructura_historia": "valor 3 tiempos"
           }
         },
         {
@@ -4141,7 +4163,7 @@
           "idea": {
             "titulo": "Perú ya exige BIM",
             "formato": "HISTORIAS (3 frames)",
-            "desarrollo": "Perú ya exige BIM en 14 tipos de obra pública. ¿Y en tu país?"
+            "desarrollo": "Perú ya exige BIM en obra pública. La pregunta no es si llega a tu país, sino cuándo. 🌎"
           },
           "destacada": "🎯 BIM + IA",
           "contenido": {
@@ -4162,26 +4184,26 @@
             "estado": "COMPLETA",
             "titulo": "Perú ya exige BIM",
             "eje": "NÚCLEO-BIM",
-            "hook": "Perú ya exige BIM en 14 tipos de obra pública. ¿Y en tu país?",
+            "hook": "Perú ya exige BIM en obra pública. La pregunta no es si llega a tu país, sino cuándo. 🌎",
             "destacada": "🎯 BIM + IA",
             "gabriel_a_camara": false,
             "historias": [
               {
                 "n": 1,
                 "visual": "Captura del carrusel del día.",
-                "texto": "Perú ya exige BIM en 14 tipos de obra pública. ¿Y en tu país?",
+                "texto": "Perú ya exige BIM en obra pública. La pregunta no es si llega a tu país, sino cuándo. 🌎",
                 "sticker": "Ninguno."
               },
               {
                 "n": 2,
                 "visual": "Texto sobre azul.",
-                "texto": "¿Desde dónde nos ves?",
-                "sticker": "ENCUESTA: «Perú / Ecuador» / «Otro país» (o sticker de preguntas «¿De qué país eres?»)"
+                "texto": "Cuando se vuelve obligatorio no basta con modelar: piden coordinar, documentar y revisar el modelo.",
+                "sticker": "ENCUESTA: «¿Ya te lo piden?» Sí / Todavía no"
               },
               {
                 "n": 3,
                 "visual": "Arte del workshop.",
-                "texto": "Faltan 8 días para el workshop gratis: IA conectada a Revit 2027.",
+                "texto": "Faltan 8 días: el martes 17 te muestro cómo una IA revisa un modelo real. Gratis.",
                 "sticker": "ENLACE a la landing (https://funnel.dgdesignmodeling.com/workshop-ia-revit-autodesk-registro)."
               }
             ],
@@ -4190,11 +4212,12 @@
               "facebook": "Enlace al workshop"
             },
             "origen": "matriz noviembre 2026",
-            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. ",
+            "notas_produccion": "ESTRUCTURA DE VALOR EN 3 TIEMPOS (28-oct): curiosidad → el dato o el tip → «Respóndeme X y te mando [recurso gratis]». El dato técnico lo revisa Gabriel antes de publicar. Cada «Respóndeme X» llega como DM y NO lo contesta el bot: alguien del equipo responde el mismo día, con el nombre de la persona y una pregunta al final (HISTORIAS-VENTA.md §4). Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó.",
             "cta_por_red": {
               "instagram": "Enlace al workshop",
               "facebook": "Enlace al workshop"
-            }
+            },
+            "estructura_historia": "valor 3 tiempos"
           }
         },
         {
@@ -4208,7 +4231,7 @@
           "idea": {
             "titulo": "Gabriel: Naves Industriales PRO, el curso corto",
             "formato": "HISTORIAS (3 frames)",
-            "desarrollo": "«Si quieres empezar con naves sin meterte todavía en una especialización, empieza por Naves Industriales PRO: una nave completa en pocas horas.»"
+            "desarrollo": "«He visto a muchos ingenieros decir que no a proyectos de naves porque no sabían calcularlas. El día que aprendes, cambia lo que puedes cobrar.»"
           },
           "gabriel_a_camara": true,
           "venta": true,
@@ -4232,39 +4255,40 @@
             "estado": "COMPLETA",
             "titulo": "Gabriel: Naves Industriales PRO, el curso corto",
             "eje": "NÚCLEO-BIM",
-            "hook": "«Si quieres empezar con naves sin meterte todavía en una especialización, empieza por Naves Industriales PRO: una nave completa en pocas horas.»",
+            "hook": "«He visto a muchos ingenieros decir que no a proyectos de naves porque no sabían calcularlas. El día que aprendes, cambia lo que puedes cobrar.»",
             "destacada": "🎁 HERRAMIENTAS",
             "gabriel_a_camara": true,
             "historias": [
               {
                 "n": 1,
                 "visual": "🎥 Gabriel a cámara (selfie).",
-                "texto": "«Si quieres empezar con naves sin meterte todavía en una especialización, empieza por Naves Industriales PRO: una nave completa en pocas horas.»",
+                "texto": "«He visto a muchos ingenieros decir que no a proyectos de naves porque no sabían calcularlas. El día que aprendes, cambia lo que puedes cobrar.»",
                 "sticker": "Ninguno."
               },
               {
                 "n": 2,
-                "visual": "Captura REAL del curso (lista de lecciones o una pantalla del modelo).",
-                "texto": "Modelas, calculas y documentas una nave industrial paso a paso.",
+                "visual": "Captura REAL del modelo de nave en SAP2000 del curso o de su lista de lecciones.",
+                "texto": "Naves Industriales PRO: una nave completa, modelada, calculada y documentada paso a paso, en 30 horas.",
                 "sticker": "Ninguno."
               },
               {
                 "n": 3,
-                "visual": "Texto sobre azul.",
-                "texto": "Respóndeme NAVES y te paso el enlace para entrar hoy.",
-                "sticker": "RESPONDER CON «NAVES» (o ENLACE directo al funnel de Naves PRO)."
+                "visual": "Cierre invertido ámbar (texto azul sobre ámbar).",
+                "texto": "Respóndeme NAVES si estás cansado de rechazar proyectos de naves y de perder horas en hojas de cálculo.",
+                "sticker": "RESPONDER CON «NAVES» (se contesta a mano con el enlace; el precio por DM o WhatsApp)."
               }
             ],
             "cta": {
-              "instagram": "Respóndeme NAVES / enlace al funnel",
-              "facebook": "Respóndeme NAVES / enlace al funnel"
+              "instagram": "Respóndeme NAVES",
+              "facebook": "Respóndeme NAVES"
             },
             "origen": "matriz noviembre 2026",
-            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 🎥 GABRIEL A CÁMARA (Dayana, 23-oct: al menos 2 veces por semana). Selfie vertical, 10-15 s, luz de ventana, sin guion leído: dice la idea con sus palabras. Se graban todas las de la semana en la sesión con Daniela. VENTA del curso de bajo costo (las historias de Naves PRO del 19-oct llamaron la atención). Enlace: https://funnel.dgdesignmodeling.com/naves-industriales-pro-page-574823. NAVES por DM lo contesta UNA sola automatización (OpenReply o el bot de Pato, no las dos). La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja.",
+            "notas_produccion": "ESTRUCTURA DE VENTA EN 3 TIEMPOS (28-oct): curiosidad → prueba real → «Respóndeme X si estás cansado de…». La prueba del frame 2 es SIEMPRE una captura real (mensaje de alumno con nombre tapado si no hay permiso, modelo, resultado); nada inventado. Cada «Respóndeme X» llega como DM y NO lo contesta el bot: alguien del equipo responde el mismo día, con el nombre de la persona y una pregunta al final (HISTORIAS-VENTA.md §4). Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 🎥 GABRIEL A CÁMARA (Dayana, 23-oct: al menos 2 veces por semana). Selfie vertical, 10-15 s, luz de ventana, sin guion leído: dice la idea con sus palabras. Se graban todas las de la semana en la sesión con Daniela. VENTA del curso de bajo costo (las historias de Naves PRO del 19-oct llamaron la atención). Enlace: https://funnel.dgdesignmodeling.com/naves-industriales-pro-page-574823. NAVES por DM lo contesta UNA sola automatización (OpenReply o el bot de Pato, no las dos). La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja.",
             "cta_por_red": {
-              "instagram": "Respóndeme NAVES / enlace al funnel",
-              "facebook": "Respóndeme NAVES / enlace al funnel"
-            }
+              "instagram": "Respóndeme NAVES",
+              "facebook": "Respóndeme NAVES"
+            },
+            "estructura_historia": "venta 3 tiempos"
           }
         },
         {
@@ -4278,7 +4302,7 @@
           "idea": {
             "titulo": "Chuleta: tipos de cercha",
             "formato": "HISTORIAS (3 frames)",
-            "desarrollo": "¿Viste la chuleta de cerchas? Pratt, Howe, Warren o alma llena."
+            "desarrollo": "Pratt, Howe, Warren… ¿por qué hay tantas formas de cercha si todas hacen lo mismo?"
           },
           "destacada": "🔩 ACERO",
           "contenido": {
@@ -4299,39 +4323,40 @@
             "estado": "COMPLETA",
             "titulo": "Chuleta: tipos de cercha",
             "eje": "NÚCLEO-BIM",
-            "hook": "¿Viste la chuleta de cerchas? Pratt, Howe, Warren o alma llena.",
+            "hook": "Pratt, Howe, Warren… ¿por qué hay tantas formas de cercha si todas hacen lo mismo?",
             "destacada": "🔩 ACERO",
             "gabriel_a_camara": false,
             "historias": [
               {
                 "n": 1,
-                "visual": "Captura del reel de la chuleta (del martes).",
-                "texto": "¿Viste la chuleta de cerchas? Pratt, Howe, Warren o alma llena.",
+                "visual": "Captura del reel de la chuleta de cerchas (del martes).",
+                "texto": "Pratt, Howe, Warren… ¿por qué hay tantas formas de cercha si todas hacen lo mismo?",
                 "sticker": "Ninguno."
               },
               {
                 "n": 2,
                 "visual": "Texto sobre azul.",
-                "texto": "¿Cuál usas en tus naves?",
-                "sticker": "QUIZ / ENCUESTA con 4 opciones"
+                "texto": "Porque cambian qué barra trabaja a tracción y cuál a compresión. Elegir bien ahorra acero.",
+                "sticker": "QUIZ: «En una cercha Pratt con carga hacia abajo, las diagonales trabajan a…» Tracción (correcta) / Compresión"
               },
               {
                 "n": 3,
                 "visual": "Arte del workshop.",
-                "texto": "En 6 días: le hablo a mi modelo de Revit en vivo.",
-                "sticker": "CUENTA REGRESIVA nativa al 17-nov 20:00 (avisa sola)."
+                "texto": "En 6 días: una IA revisando un modelo real, en vivo. ¿Te lo vas a perder?",
+                "sticker": "CUENTA REGRESIVA nativa al 17-nov 20:00 + ENLACE a la landing (https://funnel.dgdesignmodeling.com/workshop-ia-revit-autodesk-registro)."
               }
             ],
             "cta": {
-              "instagram": "Recordatorio del workshop",
-              "facebook": "Recordatorio del workshop"
+              "instagram": "Enlace al workshop",
+              "facebook": "Enlace al workshop"
             },
             "origen": "matriz noviembre 2026",
-            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. ",
+            "notas_produccion": "ESTRUCTURA DE VALOR EN 3 TIEMPOS (28-oct): curiosidad → el dato o el tip → «Respóndeme X y te mando [recurso gratis]». El dato técnico lo revisa Gabriel antes de publicar. Cada «Respóndeme X» llega como DM y NO lo contesta el bot: alguien del equipo responde el mismo día, con el nombre de la persona y una pregunta al final (HISTORIAS-VENTA.md §4). Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó.",
             "cta_por_red": {
-              "instagram": "Recordatorio del workshop",
-              "facebook": "Recordatorio del workshop"
-            }
+              "instagram": "Enlace al workshop",
+              "facebook": "Enlace al workshop"
+            },
+            "estructura_historia": "valor 3 tiempos"
           }
         },
         {
@@ -4345,7 +4370,7 @@
           "idea": {
             "titulo": "Gabriel: lo que reviso antes de entregar un modelo",
             "formato": "HISTORIAS (3 frames)",
-            "desarrollo": "«Hoy es el Día Mundial de la Calidad, y la revisión que más devuelven es esta: parámetros vacíos que pedía el cliente.»"
+            "desarrollo": "«Hay algo que separa a un modelador de un BIM Manager, y no es saber más comandos. Hoy, Día Mundial de la Calidad, te lo cuento.»"
           },
           "gabriel_a_camara": true,
           "venta": true,
@@ -4369,39 +4394,40 @@
             "estado": "COMPLETA",
             "titulo": "Gabriel: lo que reviso antes de entregar un modelo",
             "eje": "NÚCLEO-BIM",
-            "hook": "«Hoy es el Día Mundial de la Calidad, y la revisión que más devuelven es esta: parámetros vacíos que pedía el cliente.»",
+            "hook": "«Hay algo que separa a un modelador de un BIM Manager, y no es saber más comandos. Hoy, Día Mundial de la Calidad, te lo cuento.»",
             "destacada": "🎯 BIM + IA",
             "gabriel_a_camara": true,
             "historias": [
               {
                 "n": 1,
                 "visual": "🎥 Gabriel a cámara (selfie).",
-                "texto": "«Hoy es el Día Mundial de la Calidad, y la revisión que más devuelven es esta: parámetros vacíos que pedía el cliente.»",
+                "texto": "«Hay algo que separa a un modelador de un BIM Manager, y no es saber más comandos. Hoy, Día Mundial de la Calidad, te lo cuento.»",
                 "sticker": "Ninguno."
               },
               {
                 "n": 2,
-                "visual": "Captura del carrusel del checklist.",
-                "texto": "El checklist completo está en el feed.",
+                "visual": "Captura REAL: reporte de interferencias de Navisworks o el checklist de entrega aplicado a un modelo.",
+                "texto": "Es revisar antes de entregar: parámetros, interferencias y lo que pidió el cliente. Con método son minutos, no días. El checklist completo está en el feed.",
                 "sticker": "Ninguno."
               },
               {
                 "n": 3,
-                "visual": "Texto sobre azul.",
-                "texto": "Si quieres armar tu ruta BIM, agenda 20 minutos con un asesor.",
-                "sticker": "ENLACE a la agenda del Máster."
+                "visual": "Cierre invertido ámbar (texto azul sobre ámbar).",
+                "texto": "Respóndeme MÁSTER si estás cansado de que te devuelvan el modelo con observaciones y de que siempre otro decida qué se modela.",
+                "sticker": "RESPONDER CON «MÁSTER» (se contesta a mano; si quiere, se le agenda la llamada de 20 minutos)."
               }
             ],
             "cta": {
-              "instagram": "Agenda 20 minutos",
-              "facebook": "Agenda 20 minutos"
+              "instagram": "Respóndeme MÁSTER",
+              "facebook": "Respóndeme MÁSTER"
             },
             "origen": "matriz noviembre 2026",
-            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 🎥 GABRIEL A CÁMARA (Dayana, 23-oct: al menos 2 veces por semana). Selfie vertical, 10-15 s, luz de ventana, sin guion leído: dice la idea con sus palabras. Se graban todas las de la semana en la sesión con Daniela. VENTA del Máster sin precio. 12-nov: World Quality Day. La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja.",
+            "notas_produccion": "ESTRUCTURA DE VENTA EN 3 TIEMPOS (28-oct): curiosidad → prueba real → «Respóndeme X si estás cansado de…». La prueba del frame 2 es SIEMPRE una captura real (mensaje de alumno con nombre tapado si no hay permiso, modelo, resultado); nada inventado. Cada «Respóndeme X» llega como DM y NO lo contesta el bot: alguien del equipo responde el mismo día, con el nombre de la persona y una pregunta al final (HISTORIAS-VENTA.md §4). Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 🎥 GABRIEL A CÁMARA (Dayana, 23-oct: al menos 2 veces por semana). Selfie vertical, 10-15 s, luz de ventana, sin guion leído: dice la idea con sus palabras. Se graban todas las de la semana en la sesión con Daniela. VENTA del Máster sin precio. 12-nov: World Quality Day. La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja.",
             "cta_por_red": {
-              "instagram": "Agenda 20 minutos",
-              "facebook": "Agenda 20 minutos"
-            }
+              "instagram": "Respóndeme MÁSTER",
+              "facebook": "Respóndeme MÁSTER"
+            },
+            "estructura_historia": "venta 3 tiempos"
           }
         },
         {
@@ -4415,7 +4441,7 @@
           "idea": {
             "titulo": "Workshop: falta poco",
             "formato": "HISTORIAS (3 frames)",
-            "desarrollo": "El martes le hablo a mi modelo de Revit en vivo. Gratis, 90 minutos."
+            "desarrollo": "¿Cuántas horas a la semana pierdes revisando un modelo a mano? El martes te enseño otra forma."
           },
           "destacada": "🎯 BIM + IA",
           "contenido": {
@@ -4436,26 +4462,26 @@
             "estado": "COMPLETA",
             "titulo": "Workshop: falta poco",
             "eje": "NÚCLEO-IA",
-            "hook": "El martes le hablo a mi modelo de Revit en vivo. Gratis, 90 minutos.",
+            "hook": "¿Cuántas horas a la semana pierdes revisando un modelo a mano? El martes te enseño otra forma.",
             "destacada": "🎯 BIM + IA",
             "gabriel_a_camara": false,
             "historias": [
               {
                 "n": 1,
                 "visual": "Arte de recordatorio del workshop (9:16).",
-                "texto": "El martes le hablo a mi modelo de Revit en vivo. Gratis, 90 minutos.",
+                "texto": "¿Cuántas horas a la semana pierdes revisando un modelo a mano? El martes te enseño otra forma.",
                 "sticker": "CUENTA REGRESIVA al 17-nov 20:00."
               },
               {
                 "n": 2,
                 "visual": "Texto sobre azul.",
-                "texto": "¿Qué le preguntarías tú a tu modelo?",
-                "sticker": "CAJA DE PREGUNTAS (las mejores se usan en vivo)."
+                "texto": "Una IA conectada a Revit puede listar, contar y auditar elementos en segundos. Lo que no puede: firmar por ti.",
+                "sticker": "CAJA DE PREGUNTAS: «¿Qué le preguntarías a tu modelo?» (las mejores se usan en vivo)"
               },
               {
                 "n": 3,
-                "visual": "Texto sobre azul.",
-                "texto": "Regístrate aquí y te llega el Zoom por correo y WhatsApp.",
+                "visual": "Cierre invertido ámbar (texto azul sobre ámbar).",
+                "texto": "Regístrate gratis y te llega el Zoom por correo y WhatsApp.",
                 "sticker": "ENLACE a la landing (https://funnel.dgdesignmodeling.com/workshop-ia-revit-autodesk-registro)."
               }
             ],
@@ -4464,11 +4490,12 @@
               "facebook": "Enlace al workshop"
             },
             "origen": "matriz noviembre 2026",
-            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 13-17 nov: Buen Fin en México. Para México: «tu Buen Fin es gratis: workshop el martes».",
+            "notas_produccion": "ESTRUCTURA DE VALOR EN 3 TIEMPOS (28-oct): curiosidad → el dato o el tip → «Respóndeme X y te mando [recurso gratis]». El dato técnico lo revisa Gabriel antes de publicar. Cada «Respóndeme X» llega como DM y NO lo contesta el bot: alguien del equipo responde el mismo día, con el nombre de la persona y una pregunta al final (HISTORIAS-VENTA.md §4). Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 13-17 nov: Buen Fin en México. Para México: «tu Buen Fin es gratis: workshop el martes».",
             "cta_por_red": {
               "instagram": "Enlace al workshop",
               "facebook": "Enlace al workshop"
-            }
+            },
+            "estructura_historia": "valor 3 tiempos"
           }
         },
         {
@@ -4482,7 +4509,7 @@
           "idea": {
             "titulo": "Gabriel: mañana es el workshop",
             "formato": "HISTORIAS (3 frames)",
-            "desarrollo": "«Mañana conecto una IA a un modelo real de Revit, en vivo, y te muestro dónde se equivoca. Te espero.»"
+            "desarrollo": "«Mañana te muestro algo que le ahorra horas a cualquiera que revisa modelos: una IA conectada a un modelo real de Revit.»"
           },
           "gabriel_a_camara": true,
           "destacada": "🎯 BIM + IA",
@@ -4504,20 +4531,20 @@
             "estado": "COMPLETA",
             "titulo": "Gabriel: mañana es el workshop",
             "eje": "NÚCLEO-IA",
-            "hook": "«Mañana conecto una IA a un modelo real de Revit, en vivo, y te muestro dónde se equivoca. Te espero.»",
+            "hook": "«Mañana te muestro algo que le ahorra horas a cualquiera que revisa modelos: una IA conectada a un modelo real de Revit.»",
             "destacada": "🎯 BIM + IA",
             "gabriel_a_camara": true,
             "historias": [
               {
                 "n": 1,
                 "visual": "🎥 Gabriel a cámara (selfie) con Revit detrás.",
-                "texto": "«Mañana conecto una IA a un modelo real de Revit, en vivo, y te muestro dónde se equivoca. Te espero.»",
+                "texto": "«Mañana te muestro algo que le ahorra horas a cualquiera que revisa modelos: una IA conectada a un modelo real de Revit.»",
                 "sticker": "Ninguno."
               },
               {
                 "n": 2,
                 "visual": "Captura del carrusel del día.",
-                "texto": "Si todavía revisas parámetros a mano, mañana te va a interesar.",
+                "texto": "Si todavía revisas parámetros elemento por elemento, mañana te va a interesar. Y también te muestro dónde se equivoca la IA.",
                 "sticker": "Ninguno."
               },
               {
@@ -4532,11 +4559,12 @@
               "facebook": "Enlace al workshop"
             },
             "origen": "matriz noviembre 2026",
-            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 🎥 GABRIEL A CÁMARA (Dayana, 23-oct: al menos 2 veces por semana). Selfie vertical, 10-15 s, luz de ventana, sin guion leído: dice la idea con sus palabras. Se graban todas las de la semana en la sesión con Daniela. 16-nov: descanso en México y festivo en Colombia. Ecuador: el décimo tercer sueldo público se paga este día.",
+            "notas_produccion": "ESTRUCTURA DE VALOR EN 3 TIEMPOS (28-oct): curiosidad → el dato o el tip → «Respóndeme X y te mando [recurso gratis]». El dato técnico lo revisa Gabriel antes de publicar. Cada «Respóndeme X» llega como DM y NO lo contesta el bot: alguien del equipo responde el mismo día, con el nombre de la persona y una pregunta al final (HISTORIAS-VENTA.md §4). Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 🎥 GABRIEL A CÁMARA (Dayana, 23-oct: al menos 2 veces por semana). Selfie vertical, 10-15 s, luz de ventana, sin guion leído: dice la idea con sus palabras. Se graban todas las de la semana en la sesión con Daniela. 16-nov: descanso en México y festivo en Colombia. Ecuador: el décimo tercer sueldo público se paga este día.",
             "cta_por_red": {
               "instagram": "Enlace al workshop",
               "facebook": "Enlace al workshop"
-            }
+            },
+            "estructura_historia": "valor 3 tiempos"
           }
         },
         {
@@ -4623,7 +4651,7 @@
           "idea": {
             "titulo": "Gabriel: gracias + lista de acceso anticipado",
             "formato": "HISTORIAS (4 frames)",
-            "desarrollo": "«Gracias a todos los que estuvieron ayer. Y a los que no llegaron: hoy abrimos el acceso anticipado de Black Friday solo para la lista.»"
+            "desarrollo": "«Ayer vimos en vivo lo que la IA hace bien… y dónde se equivoca. Gracias a todos los que estuvieron.»"
           },
           "gabriel_a_camara": true,
           "venta": true,
@@ -4647,33 +4675,33 @@
             "estado": "COMPLETA",
             "titulo": "Gabriel: gracias + lista de acceso anticipado",
             "eje": "NÚCLEO-BIM",
-            "hook": "«Gracias a todos los que estuvieron ayer. Y a los que no llegaron: hoy abrimos el acceso anticipado de Black Friday solo para la lista.»",
+            "hook": "«Ayer vimos en vivo lo que la IA hace bien… y dónde se equivoca. Gracias a todos los que estuvieron.»",
             "destacada": "🔩 ACERO",
             "gabriel_a_camara": true,
             "historias": [
               {
                 "n": 1,
                 "visual": "🎥 Gabriel a cámara (selfie).",
-                "texto": "«Gracias a todos los que estuvieron ayer. Y a los que no llegaron: hoy abrimos el acceso anticipado de Black Friday solo para la lista.»",
+                "texto": "«Ayer vimos en vivo lo que la IA hace bien… y dónde se equivoca. Gracias a todos los que estuvieron.»",
                 "sticker": "Ninguno."
               },
               {
                 "n": 2,
-                "visual": "Captura REAL de un momento del workshop.",
-                "texto": "Lo que más preguntaron: dónde se equivoca la IA. Está en el feed de hoy.",
+                "visual": "Captura REAL de un momento del workshop o de un comentario del chat.",
+                "texto": "Lo que más preguntaron: ¿por dónde empiezo para trabajar así? Esa es la pieza que falta.",
                 "sticker": "Ninguno."
               },
               {
                 "n": 3,
                 "visual": "Arte de acceso anticipado (fondo azul, «lista anticipada»).",
-                "texto": "Acceso anticipado de Black Friday: Especialización en Acero y cursos de bajo costo, hasta el domingo 22.",
+                "texto": "Para la lista abrimos antes el acceso de Black Friday: Especialización en Acero y cursos cortos, hasta el domingo 22.",
                 "sticker": "Ninguno."
               },
               {
                 "n": 4,
-                "visual": "Texto sobre azul.",
-                "texto": "Respóndeme LISTA y te paso las condiciones por mensaje.",
-                "sticker": "RESPONDER CON «LISTA» (se contesta a mano y se manda la oferta por WhatsApp)."
+                "visual": "Cierre invertido ámbar (texto azul sobre ámbar).",
+                "texto": "Respóndeme LISTA si estás cansado de aprender por tu cuenta sin orden y quieres entrar antes que nadie.",
+                "sticker": "RESPONDER CON «LISTA» (se contesta a mano y la oferta va por WhatsApp)."
               }
             ],
             "cta": {
@@ -4681,11 +4709,12 @@
               "facebook": "Respóndeme LISTA"
             },
             "origen": "matriz noviembre 2026",
-            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 🎥 GABRIEL A CÁMARA (Dayana, 23-oct: al menos 2 veces por semana). Selfie vertical, 10-15 s, luz de ventana, sin guion leído: dice la idea con sus palabras. Se graban todas las de la semana en la sesión con Daniela. VENTA · ACCESO ANTICIPADO (propuesta: 18 al 22-nov, mismos precios que la Black Week + un bono). Precios en DM y correo, nunca en la historia. La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja.",
+            "notas_produccion": "ESTRUCTURA DE VENTA EN 3 TIEMPOS (28-oct): curiosidad → prueba real → «Respóndeme X si estás cansado de…». La prueba del frame 2 es SIEMPRE una captura real (mensaje de alumno con nombre tapado si no hay permiso, modelo, resultado); nada inventado. Cada «Respóndeme X» llega como DM y NO lo contesta el bot: alguien del equipo responde el mismo día, con el nombre de la persona y una pregunta al final (HISTORIAS-VENTA.md §4). Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 🎥 GABRIEL A CÁMARA (Dayana, 23-oct: al menos 2 veces por semana). Selfie vertical, 10-15 s, luz de ventana, sin guion leído: dice la idea con sus palabras. Se graban todas las de la semana en la sesión con Daniela. VENTA · ACCESO ANTICIPADO (propuesta: 18 al 22-nov, mismos precios que la Black Week + un bono). Precios en DM y correo, nunca en la historia. La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja.",
             "cta_por_red": {
               "instagram": "Respóndeme LISTA",
               "facebook": "Respóndeme LISTA"
-            }
+            },
+            "estructura_historia": "venta 3 tiempos"
           }
         },
         {
@@ -4699,7 +4728,7 @@
           "idea": {
             "titulo": "Pregunta del workshop: ¿la IA modela sola?",
             "formato": "HISTORIAS (3 frames)",
-            "desarrollo": "La pregunta que más se repitió en el workshop: ¿la IA modela sola?"
+            "desarrollo": "La pregunta que más se repitió en el workshop: ¿la IA modela sola? 🤖"
           },
           "destacada": "🎯 BIM + IA",
           "contenido": {
@@ -4720,39 +4749,40 @@
             "estado": "COMPLETA",
             "titulo": "Pregunta del workshop: ¿la IA modela sola?",
             "eje": "NÚCLEO-IA",
-            "hook": "La pregunta que más se repitió en el workshop: ¿la IA modela sola?",
+            "hook": "La pregunta que más se repitió en el workshop: ¿la IA modela sola? 🤖",
             "destacada": "🎯 BIM + IA",
             "gabriel_a_camara": false,
             "historias": [
               {
                 "n": 1,
                 "visual": "Texto sobre azul.",
-                "texto": "La pregunta que más se repitió en el workshop: ¿la IA modela sola?",
+                "texto": "La pregunta que más se repitió en el workshop: ¿la IA modela sola? 🤖",
                 "sticker": "Ninguno."
               },
               {
                 "n": 2,
                 "visual": "Texto sobre azul.",
-                "texto": "Hoy no: el servidor de Revit lee, revisa y reporta, pero no modela. Por eso el criterio sigue siendo tuyo.",
+                "texto": "Hoy no: lee, revisa y reporta, pero no modela. Por eso quien sabe BIM de verdad vale más, no menos.",
                 "sticker": "Ninguno."
               },
               {
                 "n": 3,
-                "visual": "Texto sobre azul.",
-                "texto": "¿Qué otra duda te quedó?",
-                "sticker": "CAJA DE PREGUNTAS."
+                "visual": "Cierre invertido ámbar (texto azul sobre ámbar).",
+                "texto": "Respóndeme NIVEL si quieres saber en qué nivel BIM estás y te mando gratis el test (5 minutos).",
+                "sticker": "RESPONDER CON «NIVEL» (se contesta a mano con el enlace del test)."
               }
             ],
             "cta": {
-              "instagram": "Caja de preguntas",
-              "facebook": "Caja de preguntas"
+              "instagram": "Respóndeme NIVEL",
+              "facebook": "Respóndeme NIVEL"
             },
             "origen": "matriz noviembre 2026",
-            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. Dato verificado en la documentación de Autodesk (Revit Public MCP Server: solo lectura).",
+            "notas_produccion": "ESTRUCTURA DE VALOR EN 3 TIEMPOS (28-oct): curiosidad → el dato o el tip → «Respóndeme X y te mando [recurso gratis]». El dato técnico lo revisa Gabriel antes de publicar. Cada «Respóndeme X» llega como DM y NO lo contesta el bot: alguien del equipo responde el mismo día, con el nombre de la persona y una pregunta al final (HISTORIAS-VENTA.md §4). Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. Dato verificado en la documentación de Autodesk (Revit Public MCP Server: solo lectura).",
             "cta_por_red": {
-              "instagram": "Caja de preguntas",
-              "facebook": "Caja de preguntas"
-            }
+              "instagram": "Respóndeme NIVEL",
+              "facebook": "Respóndeme NIVEL"
+            },
+            "estructura_historia": "valor 3 tiempos"
           }
         },
         {
@@ -4766,7 +4796,7 @@
           "idea": {
             "titulo": "Black Friday Ecuador",
             "formato": "HISTORIAS (3 frames)",
-            "desarrollo": "Hoy es feriado y Black Friday en Ecuador: el acceso anticipado sigue abierto hasta el domingo."
+            "desarrollo": "Hoy es feriado en Ecuador… y el mejor día para empezar lo que llevas meses posponiendo."
           },
           "venta": true,
           "destacada": "🔩 ACERO",
@@ -4789,26 +4819,26 @@
             "estado": "COMPLETA",
             "titulo": "Black Friday Ecuador",
             "eje": "NÚCLEO-BIM",
-            "hook": "Hoy es feriado y Black Friday en Ecuador: el acceso anticipado sigue abierto hasta el domingo.",
+            "hook": "Hoy es feriado en Ecuador… y el mejor día para empezar lo que llevas meses posponiendo.",
             "destacada": "🔩 ACERO",
             "gabriel_a_camara": false,
             "historias": [
               {
                 "n": 1,
                 "visual": "Arte «Black Friday Ecuador» (azul y naranja).",
-                "texto": "Hoy es feriado y Black Friday en Ecuador: el acceso anticipado sigue abierto hasta el domingo.",
+                "texto": "Hoy es feriado en Ecuador… y el mejor día para empezar lo que llevas meses posponiendo.",
                 "sticker": "CUENTA REGRESIVA al dom 22-nov 23:59."
               },
               {
                 "n": 2,
                 "visual": "Captura del carrusel del día (Acero módulo por módulo).",
-                "texto": "Especialización en Acero: lo que vas a poder hacer al terminar, módulo por módulo.",
+                "texto": "Esto es lo que vas a poder hacer al terminar la Especialización en Acero, módulo por módulo.",
                 "sticker": "Ninguno."
               },
               {
                 "n": 3,
-                "visual": "Texto sobre azul.",
-                "texto": "Respóndeme LISTA y te paso el precio de Black Friday por mensaje.",
+                "visual": "Cierre invertido ámbar (texto azul sobre ámbar).",
+                "texto": "Respóndeme LISTA si estás cansado de dudar en cada nave que diseñas. Te paso las condiciones de Black Friday por mensaje.",
                 "sticker": "RESPONDER CON «LISTA»."
               }
             ],
@@ -4817,11 +4847,12 @@
               "facebook": "Respóndeme LISTA"
             },
             "origen": "matriz noviembre 2026",
-            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 20-nov: día libre en Ecuador (Decreto 507) y Black Friday ecuatoriano, adelantado una semana por las elecciones (Primicias, 30-sep-2026). Mismo precio de la lista: no hay un tercer precio. La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja.",
+            "notas_produccion": "ESTRUCTURA DE VENTA EN 3 TIEMPOS (28-oct): curiosidad → prueba real → «Respóndeme X si estás cansado de…». La prueba del frame 2 es SIEMPRE una captura real (mensaje de alumno con nombre tapado si no hay permiso, modelo, resultado); nada inventado. Cada «Respóndeme X» llega como DM y NO lo contesta el bot: alguien del equipo responde el mismo día, con el nombre de la persona y una pregunta al final (HISTORIAS-VENTA.md §4). Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 20-nov: día libre en Ecuador (Decreto 507) y Black Friday ecuatoriano, adelantado una semana por las elecciones (Primicias, 30-sep-2026). Mismo precio de la lista: no hay un tercer precio. La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja.",
             "cta_por_red": {
               "instagram": "Respóndeme LISTA",
               "facebook": "Respóndeme LISTA"
-            }
+            },
+            "estructura_historia": "venta 3 tiempos"
           }
         },
         {
@@ -4835,7 +4866,7 @@
           "idea": {
             "titulo": "Gabriel: abre la Black Week",
             "formato": "HISTORIAS (4 frames)",
-            "desarrollo": "«Empieza la semana de Black Friday. Te digo lo que entra y hasta cuándo, sin letra pequeña.»"
+            "desarrollo": "«Me tomó años armar un sistema para que un ingeniero pase de modelar a diseñar y coordinar. Esta semana lo abrimos con la mejor condición del año.»"
           },
           "gabriel_a_camara": true,
           "venta": true,
@@ -4859,32 +4890,32 @@
             "estado": "COMPLETA",
             "titulo": "Gabriel: abre la Black Week",
             "eje": "NÚCLEO-BIM",
-            "hook": "«Empieza la semana de Black Friday. Te digo lo que entra y hasta cuándo, sin letra pequeña.»",
+            "hook": "«Me tomó años armar un sistema para que un ingeniero pase de modelar a diseñar y coordinar. Esta semana lo abrimos con la mejor condición del año.»",
             "destacada": "🔩 ACERO",
             "gabriel_a_camara": true,
             "historias": [
               {
                 "n": 1,
                 "visual": "🎥 Gabriel a cámara (selfie).",
-                "texto": "«Empieza la semana de Black Friday. Te digo lo que entra y hasta cuándo, sin letra pequeña.»",
+                "texto": "«Me tomó años armar un sistema para que un ingeniero pase de modelar a diseñar y coordinar. Esta semana lo abrimos con la mejor condición del año.»",
                 "sticker": "Ninguno."
               },
               {
                 "n": 2,
-                "visual": "Arte de la Black Week (tres columnas: Acero · Cursos · Máster).",
-                "texto": "Acero y cursos de bajo costo con precio de Black Friday. En el Máster, un bono si empiezas un bloque esta semana.",
-                "sticker": "CUENTA REGRESIVA al lun 30-nov 23:59."
-              },
-              {
-                "n": 3,
-                "visual": "Captura del carrusel «¿En qué bloque estás?».",
-                "texto": "¿No sabes por qué bloque del Máster empezar? Está en el feed.",
+                "visual": "Captura REAL: mensaje o resultado de un alumno (nombre tapado si no hay permiso).",
+                "texto": "Esto nos escribió un alumno al terminar.",
                 "sticker": "Ninguno."
               },
               {
+                "n": 3,
+                "visual": "Arte de la Black Week (tres columnas: Acero · Cursos · Máster).",
+                "texto": "Acero y cursos cortos con precio de Black Friday. En el Máster, un bono si empiezas un bloque esta semana.",
+                "sticker": "CUENTA REGRESIVA al lun 30-nov 23:59."
+              },
+              {
                 "n": 4,
-                "visual": "Texto sobre azul.",
-                "texto": "Respóndeme BLACK y te mando todo por mensaje.",
+                "visual": "Cierre invertido ámbar (texto azul sobre ámbar).",
+                "texto": "Respóndeme BLACK si estás cansado de postergar tu formación y quieres empezar con la condición de esta semana.",
                 "sticker": "RESPONDER CON «BLACK»."
               }
             ],
@@ -4893,11 +4924,12 @@
               "facebook": "Respóndeme BLACK"
             },
             "origen": "matriz noviembre 2026",
-            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 🎥 GABRIEL A CÁMARA (Dayana, 23-oct: al menos 2 veces por semana). Selfie vertical, 10-15 s, luz de ventana, sin guion leído: dice la idea con sus palabras. Se graban todas las de la semana en la sesión con Daniela. VENTA · BLACK WEEK (23 al 30-nov, cierre lun 30 23:59 Ecuador, no se reabre). Máster: solo el bono, nunca el precio. Elecciones en Ecuador el dom 29 (silencio electoral 27-29): no afecta el orgánico comercial. La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja.",
+            "notas_produccion": "ESTRUCTURA DE VENTA EN 3 TIEMPOS (28-oct): curiosidad → prueba real → «Respóndeme X si estás cansado de…». La prueba del frame 2 es SIEMPRE una captura real (mensaje de alumno con nombre tapado si no hay permiso, modelo, resultado); nada inventado. Cada «Respóndeme X» llega como DM y NO lo contesta el bot: alguien del equipo responde el mismo día, con el nombre de la persona y una pregunta al final (HISTORIAS-VENTA.md §4). Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 🎥 GABRIEL A CÁMARA (Dayana, 23-oct: al menos 2 veces por semana). Selfie vertical, 10-15 s, luz de ventana, sin guion leído: dice la idea con sus palabras. Se graban todas las de la semana en la sesión con Daniela. VENTA · BLACK WEEK (23 al 30-nov, cierre lun 30 23:59 Ecuador, no se reabre). Máster: solo el bono, nunca el precio. Elecciones en Ecuador el dom 29 (silencio electoral 27-29): no afecta el orgánico comercial. La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja.",
             "cta_por_red": {
               "instagram": "Respóndeme BLACK",
               "facebook": "Respóndeme BLACK"
-            }
+            },
+            "estructura_historia": "venta 3 tiempos"
           }
         },
         {
@@ -4911,7 +4943,7 @@
           "idea": {
             "titulo": "Chuleta: uniones en acero",
             "formato": "HISTORIAS (3 frames)",
-            "desarrollo": "Uniones en acero: ¿soldada o empernada?"
+            "desarrollo": "¿Soldada o empernada? La respuesta correcta casi nunca es «la más barata». 🔩"
           },
           "destacada": "🔩 ACERO",
           "contenido": {
@@ -4932,39 +4964,40 @@
             "estado": "COMPLETA",
             "titulo": "Chuleta: uniones en acero",
             "eje": "NÚCLEO-BIM",
-            "hook": "Uniones en acero: ¿soldada o empernada?",
+            "hook": "¿Soldada o empernada? La respuesta correcta casi nunca es «la más barata». 🔩",
             "destacada": "🔩 ACERO",
             "gabriel_a_camara": false,
             "historias": [
               {
                 "n": 1,
                 "visual": "Captura del reel de la chuleta del día.",
-                "texto": "Uniones en acero: ¿soldada o empernada?",
+                "texto": "¿Soldada o empernada? La respuesta correcta casi nunca es «la más barata». 🔩",
                 "sticker": "Ninguno."
               },
               {
                 "n": 2,
                 "visual": "Texto sobre azul.",
-                "texto": "¿Cuál usas más?",
+                "texto": "Empernada: rápida de montar y de revisar en obra. Soldada: rígida, pero exige control de calidad. Se elige por el montaje, no solo por el cálculo.",
                 "sticker": "ENCUESTA: «Empernada» / «Soldada»"
               },
               {
                 "n": 3,
-                "visual": "Texto sobre azul.",
-                "texto": "Si quieres aprender a verificarlas en software, la Especialización en Acero tiene precio de Black Friday hasta el lunes.",
-                "sticker": "ENLACE o RESPONDER CON «BLACK»."
+                "visual": "Cierre invertido ámbar (texto azul sobre ámbar).",
+                "texto": "Respóndeme ACERO y te mando gratis la guía de las 5 verificaciones en acero que no puedes saltarte.",
+                "sticker": "RESPONDER CON «ACERO» (se contesta a mano con la guía y el verificador)."
               }
             ],
             "cta": {
-              "instagram": "Respóndeme BLACK",
-              "facebook": "Respóndeme BLACK"
+              "instagram": "Respóndeme ACERO",
+              "facebook": "Respóndeme ACERO"
             },
             "origen": "matriz noviembre 2026",
-            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. Valor con mención suave de la oferta (no cuenta como venta).",
+            "notas_produccion": "ESTRUCTURA DE VALOR EN 3 TIEMPOS (28-oct): curiosidad → el dato o el tip → «Respóndeme X y te mando [recurso gratis]». El dato técnico lo revisa Gabriel antes de publicar. Cada «Respóndeme X» llega como DM y NO lo contesta el bot: alguien del equipo responde el mismo día, con el nombre de la persona y una pregunta al final (HISTORIAS-VENTA.md §4). Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. Valor con mención suave de la oferta (no cuenta como venta).",
             "cta_por_red": {
-              "instagram": "Respóndeme BLACK",
-              "facebook": "Respóndeme BLACK"
-            }
+              "instagram": "Respóndeme ACERO",
+              "facebook": "Respóndeme ACERO"
+            },
+            "estructura_historia": "valor 3 tiempos"
           }
         },
         {
@@ -4978,7 +5011,7 @@
           "idea": {
             "titulo": "Preguntas frecuentes de la Black Week",
             "formato": "HISTORIAS (4 frames)",
-            "desarrollo": "Las 3 preguntas que más nos hicieron esta semana 👇"
+            "desarrollo": "Antes de decidir, casi todos nos hacen las mismas 3 preguntas. 👇"
           },
           "venta": true,
           "destacada": "🔩 ACERO",
@@ -5001,45 +5034,46 @@
             "estado": "COMPLETA",
             "titulo": "Preguntas frecuentes de la Black Week",
             "eje": "NÚCLEO-BIM",
-            "hook": "Las 3 preguntas que más nos hicieron esta semana 👇",
+            "hook": "Antes de decidir, casi todos nos hacen las mismas 3 preguntas. 👇",
             "destacada": "🔩 ACERO",
             "gabriel_a_camara": false,
             "historias": [
               {
                 "n": 1,
                 "visual": "Texto sobre azul.",
-                "texto": "Las 3 preguntas que más nos hicieron esta semana 👇",
+                "texto": "Antes de decidir, casi todos nos hacen las mismas 3 preguntas. 👇",
                 "sticker": "Ninguno."
               },
               {
                 "n": 2,
                 "visual": "Texto sobre azul.",
-                "texto": "¿Las clases son en vivo? Son grabadas, a tu ritmo, y el acceso no caduca.",
+                "texto": "¿Son en vivo? Son grabadas, a tu ritmo. ¿Necesito saber Robot? Para Acero conviene saber Revit; Robot se aprende en el programa.",
                 "sticker": "Ninguno."
               },
               {
                 "n": 3,
-                "visual": "Texto sobre azul.",
-                "texto": "¿Necesito saber Robot? Para Acero, conviene saber Revit; Robot se aprende en el programa.",
+                "visual": "Captura REAL del Tutor IA de Acero respondiendo con lección y minuto.",
+                "texto": "Y si te trabas, el tutor de IA te dice en qué lección y minuto está la respuesta.",
                 "sticker": "Ninguno."
               },
               {
                 "n": 4,
-                "visual": "Texto sobre azul.",
-                "texto": "¿Me queda alguna duda? Respóndeme y te contesta una persona del equipo.",
-                "sticker": "CAJA DE PREGUNTAS."
+                "visual": "Cierre invertido ámbar (texto azul sobre ámbar).",
+                "texto": "Respóndeme BLACK si te queda una duda: te contesta una persona del equipo, no un bot.",
+                "sticker": "RESPONDER CON «BLACK»."
               }
             ],
             "cta": {
-              "instagram": "Caja de preguntas",
-              "facebook": "Caja de preguntas"
+              "instagram": "Respóndeme BLACK",
+              "facebook": "Respóndeme BLACK"
             },
             "origen": "matriz noviembre 2026",
-            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. VENTA (resolver objeciones). Confirmar las respuestas con Dayana antes de publicar (acceso que no caduca y requisitos de Acero, como dice la comunidad del 29-oct). La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja.",
+            "notas_produccion": "ESTRUCTURA DE VENTA EN 3 TIEMPOS (28-oct): curiosidad → prueba real → «Respóndeme X si estás cansado de…». La prueba del frame 2 es SIEMPRE una captura real (mensaje de alumno con nombre tapado si no hay permiso, modelo, resultado); nada inventado. Cada «Respóndeme X» llega como DM y NO lo contesta el bot: alguien del equipo responde el mismo día, con el nombre de la persona y una pregunta al final (HISTORIAS-VENTA.md §4). Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. VENTA (resolver objeciones). Confirmar las respuestas con Dayana antes de publicar (acceso que no caduca y requisitos de Acero, como dice la comunidad del 29-oct). La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja.",
             "cta_por_red": {
-              "instagram": "Caja de preguntas",
-              "facebook": "Caja de preguntas"
-            }
+              "instagram": "Respóndeme BLACK",
+              "facebook": "Respóndeme BLACK"
+            },
+            "estructura_historia": "venta 3 tiempos"
           }
         },
         {
@@ -5053,7 +5087,7 @@
           "idea": {
             "titulo": "Respondemos: ¿por qué no hay descuento en el Máster?",
             "formato": "HISTORIAS (3 frames)",
-            "desarrollo": "Nos preguntaron: «¿Por qué el Máster no tiene descuento de Black Friday?»"
+            "desarrollo": "¿Por qué el Máster no tiene descuento de Black Friday? Nos lo preguntaron varias veces esta semana."
           },
           "destacada": "🎯 BIM + IA",
           "contenido": {
@@ -5074,26 +5108,26 @@
             "estado": "COMPLETA",
             "titulo": "Respondemos: ¿por qué no hay descuento en el Máster?",
             "eje": "NÚCLEO-BIM",
-            "hook": "Nos preguntaron: «¿Por qué el Máster no tiene descuento de Black Friday?»",
+            "hook": "¿Por qué el Máster no tiene descuento de Black Friday? Nos lo preguntaron varias veces esta semana.",
             "destacada": "🎯 BIM + IA",
             "gabriel_a_camara": false,
             "historias": [
               {
                 "n": 1,
                 "visual": "Texto sobre azul.",
-                "texto": "Nos preguntaron: «¿Por qué el Máster no tiene descuento de Black Friday?»",
+                "texto": "¿Por qué el Máster no tiene descuento de Black Friday? Nos lo preguntaron varias veces esta semana.",
                 "sticker": "Ninguno."
               },
               {
                 "n": 2,
                 "visual": "Texto sobre azul.",
-                "texto": "Porque el precio depende del bloque y de tu caso. En vez de descuento, esta semana va con un bono de regalo si empiezas un bloque.",
+                "texto": "Porque cada bloque se arma según tu caso. En vez de descuento, esta semana va con un bono de regalo si empiezas un bloque.",
                 "sticker": "Ninguno."
               },
               {
                 "n": 3,
-                "visual": "Texto sobre azul.",
-                "texto": "Agenda 20 minutos y te decimos cuál te conviene.",
+                "visual": "Cierre invertido ámbar (texto azul sobre ámbar).",
+                "texto": "Agenda 20 minutos y te decimos por qué bloque empezar.",
                 "sticker": "ENLACE a la agenda del Máster."
               }
             ],
@@ -5102,11 +5136,12 @@
               "facebook": "Agenda 20 minutos"
             },
             "origen": "matriz noviembre 2026",
-            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. Sin precio. El bono lo confirma Dayana (propuesta: Acero con Tutor IA y Naves PRO de regalo).",
+            "notas_produccion": "ESTRUCTURA DE VALOR EN 3 TIEMPOS (28-oct): curiosidad → el dato o el tip → «Respóndeme X y te mando [recurso gratis]». El dato técnico lo revisa Gabriel antes de publicar. Cada «Respóndeme X» llega como DM y NO lo contesta el bot: alguien del equipo responde el mismo día, con el nombre de la persona y una pregunta al final (HISTORIAS-VENTA.md §4). Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. Sin precio. El bono lo confirma Dayana (propuesta: Acero con Tutor IA y Naves PRO de regalo).",
             "cta_por_red": {
               "instagram": "Agenda 20 minutos",
               "facebook": "Agenda 20 minutos"
-            }
+            },
+            "estructura_historia": "valor 3 tiempos"
           }
         },
         {
@@ -5120,7 +5155,7 @@
           "idea": {
             "titulo": "Gabriel: hoy es Black Friday",
             "formato": "HISTORIAS (4 frames)",
-            "desarrollo": "«Hoy es Black Friday. Si lo tuyo es diseñar acero en software, es el mejor momento del año para empezar.»"
+            "desarrollo": "«Hay un momento en que dejas de depender de otro para el cálculo. Hoy es el día del año en que empezar cuesta menos.»"
           },
           "gabriel_a_camara": true,
           "venta": true,
@@ -5144,20 +5179,20 @@
             "estado": "COMPLETA",
             "titulo": "Gabriel: hoy es Black Friday",
             "eje": "NÚCLEO-BIM",
-            "hook": "«Hoy es Black Friday. Si lo tuyo es diseñar acero en software, es el mejor momento del año para empezar.»",
+            "hook": "«Hay un momento en que dejas de depender de otro para el cálculo. Hoy es el día del año en que empezar cuesta menos.»",
             "destacada": "🔩 ACERO",
             "gabriel_a_camara": true,
             "historias": [
               {
                 "n": 1,
                 "visual": "🎥 Gabriel a cámara (selfie).",
-                "texto": "«Hoy es Black Friday. Si lo tuyo es diseñar acero en software, es el mejor momento del año para empezar.»",
+                "texto": "«Hay un momento en que dejas de depender de otro para el cálculo. Hoy es el día del año en que empezar cuesta menos.»",
                 "sticker": "Ninguno."
               },
               {
                 "n": 2,
-                "visual": "Captura del post «Black Friday sin letra pequeña».",
-                "texto": "Lo que incluye cada opción, sin letra pequeña.",
+                "visual": "Captura REAL del testimonio del alumno de Acero (reel del 23-oct).",
+                "texto": "Esto nos contó un alumno de la Especialización en Acero.",
                 "sticker": "Ninguno."
               },
               {
@@ -5168,8 +5203,8 @@
               },
               {
                 "n": 4,
-                "visual": "Texto sobre azul.",
-                "texto": "Respóndeme BLACK y te paso el precio y el enlace.",
+                "visual": "Cierre invertido ámbar (texto azul sobre ámbar).",
+                "texto": "Respóndeme BLACK si estás cansado de dudar de cada perfil y quieres empezar con el precio de hoy.",
                 "sticker": "RESPONDER CON «BLACK»."
               }
             ],
@@ -5178,11 +5213,12 @@
               "facebook": "Respóndeme BLACK"
             },
             "origen": "matriz noviembre 2026",
-            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 🎥 GABRIEL A CÁMARA (Dayana, 23-oct: al menos 2 veces por semana). Selfie vertical, 10-15 s, luz de ventana, sin guion leído: dice la idea con sus palabras. Se graban todas las de la semana en la sesión con Daniela. VENTA · BLACK FRIDAY (27-nov). La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja.",
+            "notas_produccion": "ESTRUCTURA DE VENTA EN 3 TIEMPOS (28-oct): curiosidad → prueba real → «Respóndeme X si estás cansado de…». La prueba del frame 2 es SIEMPRE una captura real (mensaje de alumno con nombre tapado si no hay permiso, modelo, resultado); nada inventado. Cada «Respóndeme X» llega como DM y NO lo contesta el bot: alguien del equipo responde el mismo día, con el nombre de la persona y una pregunta al final (HISTORIAS-VENTA.md §4). Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 🎥 GABRIEL A CÁMARA (Dayana, 23-oct: al menos 2 veces por semana). Selfie vertical, 10-15 s, luz de ventana, sin guion leído: dice la idea con sus palabras. Se graban todas las de la semana en la sesión con Daniela. VENTA · BLACK FRIDAY (27-nov). La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja.",
             "cta_por_red": {
               "instagram": "Respóndeme BLACK",
               "facebook": "Respóndeme BLACK"
-            }
+            },
+            "estructura_historia": "venta 3 tiempos"
           }
         },
         {
@@ -5196,7 +5232,7 @@
           "idea": {
             "titulo": "Cyber Monday: cierra hoy",
             "formato": "HISTORIAS (3 frames)",
-            "desarrollo": "Hoy cierra la Black Week: 23:59 hora de Ecuador."
+            "desarrollo": "Dentro de un año vas a desear haber empezado hoy. ⏳"
           },
           "venta": true,
           "destacada": "🔩 ACERO",
@@ -5219,26 +5255,26 @@
             "estado": "COMPLETA",
             "titulo": "Cyber Monday: cierra hoy",
             "eje": "NÚCLEO-BIM",
-            "hook": "Hoy cierra la Black Week: 23:59 hora de Ecuador.",
+            "hook": "Dentro de un año vas a desear haber empezado hoy. ⏳",
             "destacada": "🔩 ACERO",
             "gabriel_a_camara": false,
             "historias": [
               {
                 "n": 1,
                 "visual": "Arte «Cierra hoy 23:59».",
-                "texto": "Hoy cierra la Black Week: 23:59 hora de Ecuador.",
+                "texto": "Dentro de un año vas a desear haber empezado hoy. ⏳",
                 "sticker": "CUENTA REGRESIVA a las 23:59."
               },
               {
                 "n": 2,
-                "visual": "Texto sobre azul.",
-                "texto": "Especialización en Acero y cursos de bajo costo con precio de Black Friday hasta esta noche.",
+                "visual": "Captura REAL del Tutor IA o de un modelo del curso de Acero.",
+                "texto": "Acero y cursos cortos con la condición de Black Friday, solo hasta esta noche.",
                 "sticker": "Ninguno."
               },
               {
                 "n": 3,
-                "visual": "Texto sobre azul.",
-                "texto": "Respóndeme BLACK y te paso el enlace.",
+                "visual": "Cierre invertido ámbar (texto azul sobre ámbar).",
+                "texto": "Respóndeme BLACK si no quieres esperar otro año. Te paso el enlace.",
                 "sticker": "RESPONDER CON «BLACK»."
               }
             ],
@@ -5247,11 +5283,12 @@
               "facebook": "Respóndeme BLACK"
             },
             "origen": "matriz noviembre 2026",
-            "notas_produccion": "Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. VENTA · CYBER MONDAY. A las 23:59 se apagan los enlaces y no se reabre. La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja.",
+            "notas_produccion": "ESTRUCTURA DE VENTA EN 3 TIEMPOS (28-oct): curiosidad → prueba real → «Respóndeme X si estás cansado de…». La prueba del frame 2 es SIEMPRE una captura real (mensaje de alumno con nombre tapado si no hay permiso, modelo, resultado); nada inventado. Cada «Respóndeme X» llega como DM y NO lo contesta el bot: alguien del equipo responde el mismo día, con el nombre de la persona y una pregunta al final (HISTORIAS-VENTA.md §4). Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. VENTA · CYBER MONDAY. A las 23:59 se apagan los enlaces y no se reabre. La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja.",
             "cta_por_red": {
               "instagram": "Respóndeme BLACK",
               "facebook": "Respóndeme BLACK"
-            }
+            },
+            "estructura_historia": "venta 3 tiempos"
           }
         }
       ]
@@ -5601,6 +5638,290 @@
               "cta_por_red": {
                 "anuncio": "Reservar"
               }
+            }
+          }
+        ]
+      },
+      {
+        "nombre": "MÁSTER · la ruta en 4 bloques (siempre activa desde el 2-nov), sin precio",
+        "piezas": [
+          {
+            "id": "nov-ads-master-ruta",
+            "titulo": "Máster: cómo funciona la ruta (video animado)",
+            "campana": "MÁSTER · la ruta en 4 bloques (siempre activa desde el 2-nov), sin precio",
+            "precio": "sin precio (regla del Máster)",
+            "formato": "ANUNCIO Meta en video (9:16 para Reels e historias; 16:9 para YouTube y feed)",
+            "hook": "¿Cómo funciona el Máster en BIM Management e IA? Cuatro bloques, en orden.",
+            "cuerpo": "¿Cómo funciona el Máster en BIM Management e IA? Cuatro bloques, en orden.\n\n1 · BIM Professional: comprendes, estructuras e implementas BIM.\n2 · BIM Coordination: integras modelos, coordinas disciplinas y resuelves interferencias.\n3 · BIM Management: planificas tiempo y costos, y diriges el proyecto.\n4 · BIM + IA: automatizas con Dynamo, Python e inteligencia artificial.\n\nCada módulo aprobado te da una microcredencial y cada bloque, una insignia de especialista. Puedes cursarlos por separado y suman hacia el título del Máster.",
+            "titular": "Máster BIM Management e IA: la ruta en 4 bloques",
+            "descripcion": "12 meses · 4 bloques · proyecto final",
+            "creativo": "Video animado «La ruta del Máster» (34 s, voz IA de Gabriel): 9:16 → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/master-ruta/master-ruta-9x16.mp4 · 16:9 → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/master-ruta/master-ruta-16x9.mp4 · portada → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/master-ruta/master-ruta-portada.png",
+            "prompt": "",
+            "cfg": [
+              [
+                "Botón",
+                "Más información"
+              ],
+              [
+                "Público",
+                "Mismo público del conjunto que mejor funciona del Máster [29SEP] (CPL $0,60–0,75) + interacción con la cuenta en 90 días. Excluir alumnos actuales del Máster."
+              ],
+              [
+                "Qué medir",
+                "CPL del formulario frente al anuncio actual del Máster [29SEP]; retención del video a 3 s y a 15 s; citas agendadas en GHL. Si a los 5 días su CPL es mayor que el del anuncio actual, se deja solo como retargeting."
+              ]
+            ],
+            "condicion": "SIN PRECIO (regla del Máster). Destino: formulario instantáneo del Máster (el mismo de [29SEP]). Va como anuncio nuevo dentro de la campaña del Máster, no como campaña aparte. Lo monta Olympus.",
+            "contenido": {
+              "id": "nov-ads-master-ruta",
+              "grupo": "Pauta Meta",
+              "formato": "anuncio",
+              "formato_detalle": "ANUNCIO Meta en video (9:16 para Reels e historias; 16:9 para YouTube y feed)",
+              "redes": [
+                "instagram",
+                "facebook"
+              ],
+              "red_principal": "instagram",
+              "fecha": "Lun 2 nov",
+              "fecha_iso": "2026-11-02",
+              "semana": "Semana 1 (2-8 nov)",
+              "tipo": "anuncio",
+              "producto": "Máster",
+              "estado": "COMPLETA",
+              "titulo": "Máster: cómo funciona la ruta (video animado)",
+              "campana": "MÁSTER · la ruta en 4 bloques (siempre activa), sin precio",
+              "hook": "¿Cómo funciona el Máster en BIM Management e IA? Cuatro bloques, en orden.",
+              "texto_principal": "¿Cómo funciona el Máster en BIM Management e IA? Cuatro bloques, en orden.\n\n1 · BIM Professional: comprendes, estructuras e implementas BIM.\n2 · BIM Coordination: integras modelos, coordinas disciplinas y resuelves interferencias.\n3 · BIM Management: planificas tiempo y costos, y diriges el proyecto.\n4 · BIM + IA: automatizas con Dynamo, Python e inteligencia artificial.\n\nCada módulo aprobado te da una microcredencial y cada bloque, una insignia de especialista. Puedes cursarlos por separado y suman hacia el título del Máster.",
+              "titular": "Máster BIM Management e IA: la ruta en 4 bloques",
+              "descripcion": "12 meses · 4 bloques · proyecto final",
+              "boton": "Más información",
+              "publico_sugerido": "Mismo público del conjunto que mejor funciona del Máster [29SEP] (CPL $0,60–0,75) + interacción con la cuenta en 90 días. Excluir alumnos actuales del Máster.",
+              "que_medir": "CPL del formulario frente al anuncio actual del Máster [29SEP]; retención del video a 3 s y a 15 s; citas agendadas en GHL. Si a los 5 días su CPL es mayor que el del anuncio actual, se deja solo como retargeting.",
+              "creativo": "Video animado «La ruta del Máster» (34 s, voz IA de Gabriel): 9:16 → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/master-ruta/master-ruta-9x16.mp4 · 16:9 → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/master-ruta/master-ruta-16x9.mp4 · portada → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/master-ruta/master-ruta-portada.png",
+              "video": "https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/master-ruta/master-ruta-9x16.mp4",
+              "eje": "NÚCLEO-BIM",
+              "cta": {
+                "anuncio": "Más información"
+              },
+              "cta_por_red": {
+                "anuncio": "Más información"
+              },
+              "condicion": "SIN PRECIO (regla del Máster). Destino: formulario instantáneo del Máster (el mismo de [29SEP]). Va como anuncio nuevo dentro de la campaña del Máster, no como campaña aparte. Lo monta Olympus.",
+              "notas_produccion": "VIDEO LISTO: rama vimeo-clips → vimeo-clips/editados/pauta/master-ruta/ (9:16 1080×1920 y 16:9 1920×1080, 34 s, con portada). Hecho con Motion Architect + la marca DMA: logos reales de Revit, Navisworks, Dynamo y Python y las microcredenciales DQ del Drive.",
+              "origen": "matriz noviembre 2026"
+            }
+          }
+        ]
+      },
+      {
+        "nombre": "COLECCIÓN AUTODESK CON IA · cómo funciona (2 al 22-nov), sin precio",
+        "piezas": [
+          {
+            "id": "nov-ads-coleccion-ruta",
+            "titulo": "Colección Autodesk con IA: los 12 cursos (video animado)",
+            "campana": "COLECCIÓN AUTODESK CON IA · cómo funciona (2 al 22-nov), sin precio",
+            "precio": "sin precio (regla del Máster)",
+            "formato": "ANUNCIO Meta en video (9:16 para Reels e historias; 16:9 para YouTube y feed)",
+            "hook": "¿Qué es la Colección Autodesk con Inteligencia Artificial? Doce cursos para trabajar más rápido en Revit.",
+            "cuerpo": "¿Qué es la Colección Autodesk con Inteligencia Artificial? Doce cursos para trabajar más rápido en Revit.\n\nAutomatización: herramientas nativas, add-ins, asistentes de IA y familias paramétricas.\nDatos: dashboards con Power BI, planillas y cantidades, diagramas técnicos.\nColaboración y presentación: Autodesk Construction Cloud, render y presentaciones técnicas.\nGestión: plantillas, IA para el BIM Manager e interpretación de normativas.\n\nCada curso dura de 15 a 20 horas, con clase en vivo y su propio certificado. Empieza por el que necesitas hoy.",
+            "titular": "Colección Autodesk con IA: 12 cursos",
+            "descripcion": "15 a 20 h por curso · clase en vivo · certificado",
+            "creativo": "Video animado (36 s, voz IA de Gabriel): 9:16 → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/coleccion-ruta/coleccion-ruta-9x16.mp4 · 16:9 → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/coleccion-ruta/coleccion-ruta-16x9.mp4 · portada → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/coleccion-ruta/coleccion-ruta-portada.png",
+            "prompt": "",
+            "cfg": [
+              [
+                "Botón",
+                "Enviar mensaje"
+              ],
+              [
+                "Público",
+                "Interacción con la cuenta en 90 días + leads de cursos de Revit y del Máster que no compraron. Excluir alumnos de la colección."
+              ],
+              [
+                "Qué medir",
+                "Conversaciones de WhatsApp iniciadas y costo por conversación; retención del video a 3 s y a 15 s."
+              ]
+            ],
+            "condicion": "SIN PRECIO en el anuncio. Destino: WhatsApp (botón «Enviar mensaje»); por WhatsApp se envía la información y el precio. Del 23 al 30-nov lo reemplaza la pauta de Black Week. Lo monta Olympus.",
+            "contenido": {
+              "id": "nov-ads-coleccion-ruta",
+              "grupo": "Pauta Meta",
+              "formato": "anuncio",
+              "formato_detalle": "ANUNCIO Meta en video (9:16 para Reels e historias; 16:9 para YouTube y feed)",
+              "redes": [
+                "instagram",
+                "facebook"
+              ],
+              "red_principal": "instagram",
+              "fecha": "Lun 2 nov",
+              "fecha_iso": "2026-11-02",
+              "semana": "Semana 1 (2-8 nov)",
+              "tipo": "anuncio",
+              "producto": "Colección Autodesk con IA",
+              "estado": "COMPLETA",
+              "titulo": "Colección Autodesk con IA: los 12 cursos (video animado)",
+              "campana": "COLECCIÓN AUTODESK CON IA · cómo funciona (2 al 22-nov), sin precio",
+              "hook": "¿Qué es la Colección Autodesk con Inteligencia Artificial? Doce cursos para trabajar más rápido en Revit.",
+              "texto_principal": "¿Qué es la Colección Autodesk con Inteligencia Artificial? Doce cursos para trabajar más rápido en Revit.\n\nAutomatización: herramientas nativas, add-ins, asistentes de IA y familias paramétricas.\nDatos: dashboards con Power BI, planillas y cantidades, diagramas técnicos.\nColaboración y presentación: Autodesk Construction Cloud, render y presentaciones técnicas.\nGestión: plantillas, IA para el BIM Manager e interpretación de normativas.\n\nCada curso dura de 15 a 20 horas, con clase en vivo y su propio certificado. Empieza por el que necesitas hoy.",
+              "titular": "Colección Autodesk con IA: 12 cursos",
+              "descripcion": "15 a 20 h por curso · clase en vivo · certificado",
+              "boton": "Enviar mensaje",
+              "publico_sugerido": "Interacción con la cuenta en 90 días + leads de cursos de Revit y del Máster que no compraron. Excluir alumnos de la colección.",
+              "que_medir": "Conversaciones de WhatsApp iniciadas y costo por conversación; retención del video a 3 s y a 15 s.",
+              "creativo": "Video animado (36 s, voz IA de Gabriel): 9:16 → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/coleccion-ruta/coleccion-ruta-9x16.mp4 · 16:9 → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/coleccion-ruta/coleccion-ruta-16x9.mp4 · portada → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/coleccion-ruta/coleccion-ruta-portada.png",
+              "video": "https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/coleccion-ruta/coleccion-ruta-9x16.mp4",
+              "eje": "NÚCLEO-BIM",
+              "cta": {
+                "anuncio": "Enviar mensaje"
+              },
+              "cta_por_red": {
+                "anuncio": "Enviar mensaje"
+              },
+              "condicion": "SIN PRECIO en el anuncio. Destino: WhatsApp (botón «Enviar mensaje»); por WhatsApp se envía la información y el precio. Del 23 al 30-nov lo reemplaza la pauta de Black Week. Lo monta Olympus.",
+              "notas_produccion": "VIDEO LISTO: rama vimeo-clips → vimeo-clips/editados/pauta/coleccion-ruta/ (9:16 y 16:9, 36 s, con portada). Motion Architect + marca DMA, logos reales del Drive.",
+              "origen": "matriz noviembre 2026"
+            }
+          }
+        ]
+      },
+      {
+        "nombre": "ESPECIALIZACIONES · cómo funcionan (2 al 17-nov), sin precio",
+        "piezas": [
+          {
+            "id": "nov-ads-especializaciones-ruta",
+            "titulo": "Especializaciones: cómo funcionan (video animado)",
+            "campana": "ESPECIALIZACIONES · cómo funcionan (2 al 17-nov), sin precio",
+            "precio": "sin precio (regla del Máster)",
+            "formato": "ANUNCIO Meta en video (9:16 para Reels e historias; 16:9 para YouTube y feed)",
+            "hook": "¿Cómo funcionan las especializaciones de Design Modeling? De dos a cuatro cursos encadenados.",
+            "cuerpo": "¿Cómo funcionan las especializaciones de Design Modeling? De dos a cuatro cursos encadenados.\n\nCada una se enfoca en un software o en un tipo de estructura: acero, hormigón armado, cimentaciones o tanques. Avanzas curso por curso, en el orden que conviene, durante 2 a 4 meses, y terminas con una certificación internacional con código QR de verificación.\n\nHay 9 especializaciones. Elige la tuya.",
+            "titular": "9 especializaciones: elige la tuya",
+            "descripcion": "2 a 4 cursos · 80 a 135 horas",
+            "creativo": "Video animado (31 s, voz IA de Gabriel): 9:16 → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/especializaciones-ruta/especializaciones-ruta-9x16.mp4 · 16:9 → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/especializaciones-ruta/especializaciones-ruta-16x9.mp4 · portada → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/especializaciones-ruta/especializaciones-ruta-portada.png",
+            "prompt": "",
+            "cfg": [
+              [
+                "Botón",
+                "Enviar mensaje"
+              ],
+              [
+                "Público",
+                "Interacción con la cuenta en 90 días + leads de cursos de cálculo estructural (Robot, ETABS, SAP2000) + interacción con las chuletas de acero y concreto."
+              ],
+              [
+                "Qué medir",
+                "Conversaciones de WhatsApp iniciadas y costo por conversación; qué especialización piden en el chat (anotarlo en GHL)."
+              ]
+            ],
+            "condicion": "SIN PRECIO en el anuncio. Destino: WhatsApp (botón «Enviar mensaje»). Del 18-nov en adelante la pauta de Acero pasa a la de Black Friday. Lo monta Olympus.",
+            "contenido": {
+              "id": "nov-ads-especializaciones-ruta",
+              "grupo": "Pauta Meta",
+              "formato": "anuncio",
+              "formato_detalle": "ANUNCIO Meta en video (9:16 para Reels e historias; 16:9 para YouTube y feed)",
+              "redes": [
+                "instagram",
+                "facebook"
+              ],
+              "red_principal": "instagram",
+              "fecha": "Lun 2 nov",
+              "fecha_iso": "2026-11-02",
+              "semana": "Semana 1 (2-8 nov)",
+              "tipo": "anuncio",
+              "producto": "Especializaciones",
+              "estado": "COMPLETA",
+              "titulo": "Especializaciones: cómo funcionan (video animado)",
+              "campana": "ESPECIALIZACIONES · cómo funcionan (2 al 17-nov), sin precio",
+              "hook": "¿Cómo funcionan las especializaciones de Design Modeling? De dos a cuatro cursos encadenados.",
+              "texto_principal": "¿Cómo funcionan las especializaciones de Design Modeling? De dos a cuatro cursos encadenados.\n\nCada una se enfoca en un software o en un tipo de estructura: acero, hormigón armado, cimentaciones o tanques. Avanzas curso por curso, en el orden que conviene, durante 2 a 4 meses, y terminas con una certificación internacional con código QR de verificación.\n\nHay 9 especializaciones. Elige la tuya.",
+              "titular": "9 especializaciones: elige la tuya",
+              "descripcion": "2 a 4 cursos · 80 a 135 horas",
+              "boton": "Enviar mensaje",
+              "publico_sugerido": "Interacción con la cuenta en 90 días + leads de cursos de cálculo estructural (Robot, ETABS, SAP2000) + interacción con las chuletas de acero y concreto.",
+              "que_medir": "Conversaciones de WhatsApp iniciadas y costo por conversación; qué especialización piden en el chat (anotarlo en GHL).",
+              "creativo": "Video animado (31 s, voz IA de Gabriel): 9:16 → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/especializaciones-ruta/especializaciones-ruta-9x16.mp4 · 16:9 → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/especializaciones-ruta/especializaciones-ruta-16x9.mp4 · portada → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/especializaciones-ruta/especializaciones-ruta-portada.png",
+              "video": "https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/especializaciones-ruta/especializaciones-ruta-9x16.mp4",
+              "eje": "NÚCLEO-BIM",
+              "cta": {
+                "anuncio": "Enviar mensaje"
+              },
+              "cta_por_red": {
+                "anuncio": "Enviar mensaje"
+              },
+              "condicion": "SIN PRECIO en el anuncio. Destino: WhatsApp (botón «Enviar mensaje»). Del 18-nov en adelante la pauta de Acero pasa a la de Black Friday. Lo monta Olympus.",
+              "notas_produccion": "VIDEO LISTO: rama vimeo-clips → vimeo-clips/editados/pauta/especializaciones-ruta/ (9:16 y 16:9, 31 s, con portada). Motion Architect + marca DMA, logos reales del Drive.",
+              "origen": "matriz noviembre 2026"
+            }
+          }
+        ]
+      },
+      {
+        "nombre": "ACERO · la especialización en video (2 al 17-nov), sin precio",
+        "piezas": [
+          {
+            "id": "nov-ads-acero-ruta",
+            "titulo": "Especialización de Acero: los 4 cursos y el certificado de Autodesk (video animado)",
+            "campana": "ACERO · la especialización en video (2 al 17-nov), sin precio",
+            "precio": "sin precio (regla del Máster)",
+            "formato": "ANUNCIO Meta en video (9:16 para Reels e historias; 16:9 para YouTube y feed)",
+            "hook": "Diseño Estructural BIM en Acero: cuatro cursos para dominar las estructuras metálicas, de principio a fin.",
+            "cuerpo": "Diseño Estructural BIM en Acero: cuatro cursos para dominar las estructuras metálicas, de principio a fin.\n\n1 · Análisis modal, fuerzas sísmicas y diseño de elementos de acero en Robot.\n2 · Cálculo de naves industriales con cerchas y marcos rígidos.\n3 · Teoría y cálculo de uniones metálicas, con el detalle en Advance Steel.\n4 · Modelado BIM en Revit: planos, familias y listas de materiales.\n\nCon Tutor IA y 4 sesiones 1 a 1 con tu instructor. Al terminar recibes el certificado de Design Modeling y el certificado de Autodesk (somos Authorized Training Center). 120 horas en 4 meses.",
+            "titular": "Acero con Tutor IA + certificado de Autodesk",
+            "descripcion": "4 cursos · 120 horas · 4 meses",
+            "creativo": "Video animado (39 s, voz IA de Gabriel): 9:16 → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/acero-ruta/acero-ruta-9x16.mp4 · 16:9 → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/acero-ruta/acero-ruta-16x9.mp4 · portada → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/acero-ruta/acero-ruta-portada.png",
+            "prompt": "",
+            "cfg": [
+              [
+                "Botón",
+                "Enviar mensaje"
+              ],
+              [
+                "Público",
+                "Leads de Acero de 90 días + interacción con las chuletas de acero + seguidores interesados en Robot/Revit estructural."
+              ],
+              [
+                "Qué medir",
+                "Conversaciones de WhatsApp iniciadas, costo por conversación y ventas de Acero en GHL; retención del video a 3 s y a 15 s."
+              ]
+            ],
+            "condicion": "SIN PRECIO en el anuncio. Destino: WhatsApp. Del 18 al 30-nov este mismo video sirve de creativo para «ACERO · Black Friday» (el precio va solo por WhatsApp). Lo monta Olympus.",
+            "contenido": {
+              "id": "nov-ads-acero-ruta",
+              "grupo": "Pauta Meta",
+              "formato": "anuncio",
+              "formato_detalle": "ANUNCIO Meta en video (9:16 para Reels e historias; 16:9 para YouTube y feed)",
+              "redes": [
+                "instagram",
+                "facebook"
+              ],
+              "red_principal": "instagram",
+              "fecha": "Lun 2 nov",
+              "fecha_iso": "2026-11-02",
+              "semana": "Semana 1 (2-8 nov)",
+              "tipo": "anuncio",
+              "producto": "Especialización en estructuras metálicas (sin precio hasta el 17-nov)",
+              "estado": "COMPLETA",
+              "titulo": "Especialización de Acero: los 4 cursos y el certificado de Autodesk (video animado)",
+              "campana": "ACERO · la especialización en video (2 al 17-nov), sin precio",
+              "hook": "Diseño Estructural BIM en Acero: cuatro cursos para dominar las estructuras metálicas, de principio a fin.",
+              "texto_principal": "Diseño Estructural BIM en Acero: cuatro cursos para dominar las estructuras metálicas, de principio a fin.\n\n1 · Análisis modal, fuerzas sísmicas y diseño de elementos de acero en Robot.\n2 · Cálculo de naves industriales con cerchas y marcos rígidos.\n3 · Teoría y cálculo de uniones metálicas, con el detalle en Advance Steel.\n4 · Modelado BIM en Revit: planos, familias y listas de materiales.\n\nCon Tutor IA y 4 sesiones 1 a 1 con tu instructor. Al terminar recibes el certificado de Design Modeling y el certificado de Autodesk (somos Authorized Training Center). 120 horas en 4 meses.",
+              "titular": "Acero con Tutor IA + certificado de Autodesk",
+              "descripcion": "4 cursos · 120 horas · 4 meses",
+              "boton": "Enviar mensaje",
+              "publico_sugerido": "Leads de Acero de 90 días + interacción con las chuletas de acero + seguidores interesados en Robot/Revit estructural.",
+              "que_medir": "Conversaciones de WhatsApp iniciadas, costo por conversación y ventas de Acero en GHL; retención del video a 3 s y a 15 s.",
+              "creativo": "Video animado (39 s, voz IA de Gabriel): 9:16 → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/acero-ruta/acero-ruta-9x16.mp4 · 16:9 → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/acero-ruta/acero-ruta-16x9.mp4 · portada → https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/acero-ruta/acero-ruta-portada.png",
+              "video": "https://raw.githubusercontent.com/designmodelingdg-droid/meta-ads-dashboard.html/vimeo-clips/vimeo-clips/editados/pauta/acero-ruta/acero-ruta-9x16.mp4",
+              "eje": "NÚCLEO-BIM",
+              "cta": {
+                "anuncio": "Enviar mensaje"
+              },
+              "cta_por_red": {
+                "anuncio": "Enviar mensaje"
+              },
+              "condicion": "SIN PRECIO en el anuncio. Destino: WhatsApp. Del 18 al 30-nov este mismo video sirve de creativo para «ACERO · Black Friday» (el precio va solo por WhatsApp). Lo monta Olympus.",
+              "notas_produccion": "VIDEO LISTO: rama vimeo-clips → vimeo-clips/editados/pauta/acero-ruta/ (9:16 y 16:9, 39 s, con portada). Incluye los certificados reales de muestra (Design Modeling y Autodesk, con el nombre del alumno difuminado), el logo de Autodesk Authorized Training Center y una toma real del Tutor IA.",
+              "origen": "matriz noviembre 2026"
             }
           }
         ]
