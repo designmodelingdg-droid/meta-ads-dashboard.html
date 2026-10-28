@@ -102,6 +102,18 @@
    "para": "Dayana (asigna)"
   },
   {
+   "tarea": "Juntar las pruebas reales para las historias de venta (frame 2): 3 o 4 mensajes de alumnos con permiso o con el nombre tapado, el testimonio del alumno de Acero, una nave en SAP2000 de Naves PRO, un reporte de interferencias de Navisworks y una captura del Tutor IA de Acero.",
+   "desbloquea": "Las 12 historias de venta en 3 tiempos",
+   "cuando": "antes del lun 2-nov",
+   "para": "Daniela / Ester"
+  },
+  {
+   "tarea": "Gabriel confirma lo que dice a cámara en las historias de venta («me tomó años…», «he visto a muchos ingenieros…») y revisa los datos técnicos de las historias de valor (perfiles, recubrimiento ACI, cerchas, uniones).",
+   "desbloquea": "Que nada de lo que se publica sea inexacto",
+   "cuando": "antes de la sesión de grabación",
+   "para": "Gabriel"
+  },
+  {
    "tarea": "Cada viernes, guardar las historias de la semana en su destacada; el 2-nov quitar SUSTO y el 1-dic quitar todo lo de Black Friday.",
    "desbloquea": "Destacadas al día",
    "cuando": "viernes 6, 13, 20 y 27",
@@ -1338,10 +1350,13 @@
    "nombre": "GRUPO 5 · Historias de Instagram (y Facebook stories)",
    "descripcion": "Lunes a viernes (y Halloween), 3-4 frames. 12 días de venta y 8 con Gabriel a cámara.",
    "reglas": [
-    "El sticker es el CTA.",
+    "DÍAS DE VENTA, en 3 tiempos: 1) curiosidad (la pieza que falta), 2) prueba REAL con captura, 3) «Respóndeme X si estás cansado de… y de…».",
+    "DÍAS DE VALOR, en 3 tiempos: 1) curiosidad, 2) el dato o el tip, 3) «Respóndeme X y te mando [recurso gratis]» o el enlace del workshop.",
+    "La apertura del frame 1 no se repite: cada historia arranca distinto.",
+    "La prueba nunca se inventa: mensajes de alumnos (nombre tapado si no hay permiso), modelos o resultados reales.",
     "Precio nunca en la historia: va por DM o WhatsApp, con la mini landing de la oferta.",
     "Máximo 4 frames.",
-    "Las respuestas llegan como DM: se contestan a mano."
+    "Las respuestas llegan como DM: se contestan a mano el mismo día."
    ],
    "calendario": [
     {
@@ -1355,7 +1370,7 @@
      "idea": {
       "titulo": "Halloween: el modelo más terrorífico",
       "formato": "HISTORIAS (4 frames)",
-      "desarrollo": "Lo más terrorífico de Halloween no es un fantasma: es un modelo sin revisar interferencias. 🎃"
+      "desarrollo": "Lo que más miedo da en un proyecto no es un fantasma: es descubrir en obra el error que el modelo ya tenía. 🎃"
      },
      "venta": true,
      "destacada": "🎁 HERRAMIENTAS"
@@ -1371,7 +1386,7 @@
      "idea": {
       "titulo": "Halloween: últimas horas del cupón SUSTO",
       "formato": "HISTORIAS (3 frames)",
-      "desarrollo": "Últimas horas del cupón SUSTO: cierra hoy a las 23:59 (Ecuador) y no vuelve."
+      "desarrollo": "¿Cuántos cursos llevas guardando «para después»? Hoy es el último día para empezar uno con SUSTO. ⏳"
      },
      "venta": true,
      "destacada": "🎁 HERRAMIENTAS"
@@ -1387,7 +1402,7 @@
      "idea": {
       "titulo": "Aquí descansan los hábitos que el BIM enterró",
       "formato": "HISTORIAS (3 frames)",
-      "desarrollo": "Hoy en el feed: 6 hábitos que el BIM ya enterró. ¿Cuántos siguen vivos en tu oficina?"
+      "desarrollo": "Hay hábitos que el BIM enterró hace años… y siguen vivos en muchas oficinas. 🪦"
      },
      "destacada": "🎯 BIM + IA"
     },
@@ -1402,7 +1417,7 @@
      "idea": {
       "titulo": "Gabriel: por qué el Máster va por bloques",
       "formato": "HISTORIAS (4 frames)",
-      "desarrollo": "«Me preguntan mucho si tienen que hacer el Máster completo. No: empiezas por el bloque que te pide tu trabajo.»"
+      "desarrollo": "«Casi todos los que llegan al Máster cometen el mismo error: creen que tienen que estudiar todo BIM de golpe. Me tomó años ver que no funciona así.»"
      },
      "gabriel_a_camara": true,
      "venta": true,
@@ -1419,7 +1434,7 @@
      "idea": {
       "titulo": "Chuleta: perfiles de acero",
       "formato": "HISTORIAS (3 frames)",
-      "desarrollo": "Hoy en el feed: perfiles de acero y dónde se usa cada uno."
+      "desarrollo": "¿Por qué en las naves casi siempre ves vigas IPE y columnas de tubo? Hay una razón que casi nadie explica. 🤔"
      },
      "destacada": "🔩 ACERO"
     },
@@ -1434,7 +1449,7 @@
      "idea": {
       "titulo": "Gabriel: lo que hace un ingeniero de acero que nadie enseña",
       "formato": "HISTORIAS (3 frames)",
-      "desarrollo": "«Saber dónde está el botón en Robot no te hace diseñador de acero. Lo que te hace diseñador es el orden: qué calculas, qué verificas y qué entregas.»"
+      "desarrollo": "«Hay una pieza que nadie te enseña en la universidad: el orden. Qué calculas, qué verificas y qué entregas.»"
      },
      "gabriel_a_camara": true,
      "venta": true,
@@ -1451,7 +1466,7 @@
      "idea": {
       "titulo": "Dato: 40 mm de recubrimiento",
       "formato": "HISTORIAS (3 frames)",
-      "desarrollo": "40 mm: el recubrimiento que más se discute en obra."
+      "desarrollo": "40 mm. El número que más discusiones causa en obra… y casi nadie sabe de dónde sale. 🧱"
      },
      "destacada": "🎁 HERRAMIENTAS"
     },
@@ -1466,7 +1481,7 @@
      "idea": {
       "titulo": "Perú ya exige BIM",
       "formato": "HISTORIAS (3 frames)",
-      "desarrollo": "Perú ya exige BIM en 14 tipos de obra pública. ¿Y en tu país?"
+      "desarrollo": "Perú ya exige BIM en obra pública. La pregunta no es si llega a tu país, sino cuándo. 🌎"
      },
      "destacada": "🎯 BIM + IA"
     },
@@ -1481,7 +1496,7 @@
      "idea": {
       "titulo": "Gabriel: Naves Industriales PRO, el curso corto",
       "formato": "HISTORIAS (3 frames)",
-      "desarrollo": "«Si quieres empezar con naves sin meterte todavía en una especialización, empieza por Naves Industriales PRO: una nave completa en pocas horas.»"
+      "desarrollo": "«He visto a muchos ingenieros decir que no a proyectos de naves porque no sabían calcularlas. El día que aprendes, cambia lo que puedes cobrar.»"
      },
      "gabriel_a_camara": true,
      "venta": true,
@@ -1498,7 +1513,7 @@
      "idea": {
       "titulo": "Chuleta: tipos de cercha",
       "formato": "HISTORIAS (3 frames)",
-      "desarrollo": "¿Viste la chuleta de cerchas? Pratt, Howe, Warren o alma llena."
+      "desarrollo": "Pratt, Howe, Warren… ¿por qué hay tantas formas de cercha si todas hacen lo mismo?"
      },
      "destacada": "🔩 ACERO"
     },
@@ -1513,7 +1528,7 @@
      "idea": {
       "titulo": "Gabriel: lo que reviso antes de entregar un modelo",
       "formato": "HISTORIAS (3 frames)",
-      "desarrollo": "«Hoy es el Día Mundial de la Calidad, y la revisión que más devuelven es esta: parámetros vacíos que pedía el cliente.»"
+      "desarrollo": "«Hay algo que separa a un modelador de un BIM Manager, y no es saber más comandos. Hoy, Día Mundial de la Calidad, te lo cuento.»"
      },
      "gabriel_a_camara": true,
      "venta": true,
@@ -1530,7 +1545,7 @@
      "idea": {
       "titulo": "Workshop: falta poco",
       "formato": "HISTORIAS (3 frames)",
-      "desarrollo": "El martes le hablo a mi modelo de Revit en vivo. Gratis, 90 minutos."
+      "desarrollo": "¿Cuántas horas a la semana pierdes revisando un modelo a mano? El martes te enseño otra forma."
      },
      "destacada": "🎯 BIM + IA"
     },
@@ -1545,7 +1560,7 @@
      "idea": {
       "titulo": "Gabriel: mañana es el workshop",
       "formato": "HISTORIAS (3 frames)",
-      "desarrollo": "«Mañana conecto una IA a un modelo real de Revit, en vivo, y te muestro dónde se equivoca. Te espero.»"
+      "desarrollo": "«Mañana te muestro algo que le ahorra horas a cualquiera que revisa modelos: una IA conectada a un modelo real de Revit.»"
      },
      "gabriel_a_camara": true,
      "destacada": "🎯 BIM + IA"
@@ -1576,7 +1591,7 @@
      "idea": {
       "titulo": "Gabriel: gracias + lista de acceso anticipado",
       "formato": "HISTORIAS (4 frames)",
-      "desarrollo": "«Gracias a todos los que estuvieron ayer. Y a los que no llegaron: hoy abrimos el acceso anticipado de Black Friday solo para la lista.»"
+      "desarrollo": "«Ayer vimos en vivo lo que la IA hace bien… y dónde se equivoca. Gracias a todos los que estuvieron.»"
      },
      "gabriel_a_camara": true,
      "venta": true,
@@ -1593,7 +1608,7 @@
      "idea": {
       "titulo": "Pregunta del workshop: ¿la IA modela sola?",
       "formato": "HISTORIAS (3 frames)",
-      "desarrollo": "La pregunta que más se repitió en el workshop: ¿la IA modela sola?"
+      "desarrollo": "La pregunta que más se repitió en el workshop: ¿la IA modela sola? 🤖"
      },
      "destacada": "🎯 BIM + IA"
     },
@@ -1608,7 +1623,7 @@
      "idea": {
       "titulo": "Black Friday Ecuador",
       "formato": "HISTORIAS (3 frames)",
-      "desarrollo": "Hoy es feriado y Black Friday en Ecuador: el acceso anticipado sigue abierto hasta el domingo."
+      "desarrollo": "Hoy es feriado en Ecuador… y el mejor día para empezar lo que llevas meses posponiendo."
      },
      "venta": true,
      "destacada": "🔩 ACERO"
@@ -1624,7 +1639,7 @@
      "idea": {
       "titulo": "Gabriel: abre la Black Week",
       "formato": "HISTORIAS (4 frames)",
-      "desarrollo": "«Empieza la semana de Black Friday. Te digo lo que entra y hasta cuándo, sin letra pequeña.»"
+      "desarrollo": "«Me tomó años armar un sistema para que un ingeniero pase de modelar a diseñar y coordinar. Esta semana lo abrimos con la mejor condición del año.»"
      },
      "gabriel_a_camara": true,
      "venta": true,
@@ -1641,7 +1656,7 @@
      "idea": {
       "titulo": "Chuleta: uniones en acero",
       "formato": "HISTORIAS (3 frames)",
-      "desarrollo": "Uniones en acero: ¿soldada o empernada?"
+      "desarrollo": "¿Soldada o empernada? La respuesta correcta casi nunca es «la más barata». 🔩"
      },
      "destacada": "🔩 ACERO"
     },
@@ -1656,7 +1671,7 @@
      "idea": {
       "titulo": "Preguntas frecuentes de la Black Week",
       "formato": "HISTORIAS (4 frames)",
-      "desarrollo": "Las 3 preguntas que más nos hicieron esta semana 👇"
+      "desarrollo": "Antes de decidir, casi todos nos hacen las mismas 3 preguntas. 👇"
      },
      "venta": true,
      "destacada": "🔩 ACERO"
@@ -1672,7 +1687,7 @@
      "idea": {
       "titulo": "Respondemos: ¿por qué no hay descuento en el Máster?",
       "formato": "HISTORIAS (3 frames)",
-      "desarrollo": "Nos preguntaron: «¿Por qué el Máster no tiene descuento de Black Friday?»"
+      "desarrollo": "¿Por qué el Máster no tiene descuento de Black Friday? Nos lo preguntaron varias veces esta semana."
      },
      "destacada": "🎯 BIM + IA"
     },
@@ -1687,7 +1702,7 @@
      "idea": {
       "titulo": "Gabriel: hoy es Black Friday",
       "formato": "HISTORIAS (4 frames)",
-      "desarrollo": "«Hoy es Black Friday. Si lo tuyo es diseñar acero en software, es el mejor momento del año para empezar.»"
+      "desarrollo": "«Hay un momento en que dejas de depender de otro para el cálculo. Hoy es el día del año en que empezar cuesta menos.»"
      },
      "gabriel_a_camara": true,
      "venta": true,
@@ -1704,7 +1719,7 @@
      "idea": {
       "titulo": "Cyber Monday: cierra hoy",
       "formato": "HISTORIAS (3 frames)",
-      "desarrollo": "Hoy cierra la Black Week: 23:59 hora de Ecuador."
+      "desarrollo": "Dentro de un año vas a desear haber empezado hoy. ⏳"
      },
      "venta": true,
      "destacada": "🔩 ACERO"
