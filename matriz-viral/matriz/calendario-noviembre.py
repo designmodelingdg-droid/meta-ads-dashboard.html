@@ -122,6 +122,7 @@ ADS = {
     "COLECCIÓN AUTODESK CON IA · cómo funciona (2 al 22-nov), sin precio": ["nov-ads-coleccion-ruta"],
     "ESPECIALIZACIONES · cómo funcionan (2 al 17-nov), sin precio": ["nov-ads-especializaciones-ruta"],
     "ACERO · la especialización en video (2 al 17-nov), sin precio": ["nov-ads-acero-ruta"],
+    "DIPLOMADO CÁLCULO ESTRUCTURAL · en video (2 al 22-nov), sin precio": ["nov-ads-diplomado-calculo-ruta"],
 }
 
 DECISIONES_PAUTA = [
