@@ -42,7 +42,7 @@
       "para": "Gabriel y Daniela"
     },
     {
-      "tarea": "Editar las 4 chuletas (perfiles de acero, cerchas, LOD, uniones) con los formatos de los reels del 19 y 20-oct que funcionaron: la 1, la 3 y la 4 como «Simbología de niveles» (lista visual sin voz) y la 2 como «5 tipos de cimentación» (pizarra con voz). Gabriel revisa cada lámina técnica antes de publicar.",
+      "tarea": "Editar las 4 chuletas (cerchas 10-nov, LOD 17-nov, uniones 24-nov y perfiles de acero 30-nov) con los formatos de los reels del 19 y 20-oct que funcionaron: LOD, uniones y perfiles como «Simbología de niveles» (lista visual sin voz) y cerchas como «5 tipos de cimentación» (pizarra con voz). El 4-nov sale el video ya editado de las 6 uniones viga-columna. Gabriel revisa cada lámina técnica antes de publicar.",
       "desbloquea": "La serie que se llevó octubre",
       "cuando": "una por semana, 2 días antes",
       "para": "Daniela / Dayana"
@@ -462,19 +462,21 @@
           "fecha": "Mié 4",
           "fecha_iso": "2026-11-04",
           "semana": "Semana 1 (2-8 nov)",
-          "id": "nov-chuleta-1-perfiles-acero-reel",
-          "titulo": "Chuleta 1 · Perfiles de acero: ¿cuál usas más?",
+          "id": "nov-valor-6-uniones-viga-columna-reel",
+          "titulo": "6 formas de unir una viga de acero a una columna de hormigón",
           "tipo": "problema",
-          "formato_publicacion": "REEL (18-22 s)",
+          "formato_publicacion": "REEL (video listo de octubre)",
           "intencion": "problema",
           "producto": "Acero",
           "cta": "Comenta ACERO",
-          "estado": "POR EDITAR",
-          "nota": "SERIE CHULETA 1/4. El formato que se llevó octubre: 2 reels fuera de matriz = 44 % de las vistas y 71 % de los guardados del mes.",
+          "estado": "LISTO (editado en octubre, solo falta subir)",
+          "nota": "Chuleta visual ya editada (6 uniones viga de acero–columna de hormigón; en octubre se anotó como oct-uniones-acero-hormigon-reel y no se subió). Abre la semana de acero (Dayana, 30-oct).",
+          "fuera_de_cuota": true,
           "contenido": {
-            "id": "nov-chuleta-1-perfiles-acero-reel",
+            "id": "nov-valor-6-uniones-viga-columna-reel",
             "grupo": "GRUPO 1 · Feed",
             "formato": "reel",
+            "formato_detalle": "REEL (video listo de octubre)",
             "redes": [
               "instagram",
               "facebook",
@@ -486,74 +488,22 @@
             "semana": "Semana 1 (2-8 nov)",
             "tipo": "problema",
             "producto": "Acero",
-            "audiencia": "Ingeniero que diseña o calcula estructuras de acero en software (no el que solo monta)",
-            "estado": "POR EDITAR",
-            "titulo": "Chuleta 1 · Perfiles de acero: ¿cuál usas más?",
+            "audiencia": "Ingeniero estructural que diseña uniones en acero",
+            "estado": "LISTO (editado en octubre, solo falta subir)",
+            "titulo": "6 formas de unir una viga de acero a una columna de hormigón",
             "eje": "NÚCLEO-BIM",
-            "pilar": "Serie Chuleta del ingeniero · 1 de 4",
-            "hook": "Perfiles de acero 👇 ¿Cuál usas más?",
+            "pilar": "Video de valor pendiente de octubre",
+            "hook": "6 formas de unir una viga de acero a una columna de hormigón",
             "cta": {
               "instagram": "Comenta ACERO",
               "facebook": "Comenta ACERO",
               "tiktok": "Pregunta abierta, sin palabra clave",
               "youtube_shorts": "Pregunta abierta, sin palabra clave"
             },
-            "origen": "matriz noviembre 2026",
-            "guion_columnas": [
-              "tiempo",
-              "plano",
-              "voz",
-              "texto_en_pantalla"
-            ],
-            "guion": [
-              [
-                "0:00-0:02",
-                "Lámina 1: título grande «PERFILES DE ACERO» y «¿Cuál usas más? 👇»",
-                "(música en tendencia)",
-                "PERFILES DE ACERO · ¿CUÁL USAS MÁS? 👇"
-              ],
-              [
-                "0:02-0:05",
-                "Lámina 2: sección IPE dibujada a línea, con su uso típico",
-                "",
-                "1 · IPE — vigas de entrepiso con luces medias"
-              ],
-              [
-                "0:05-0:08",
-                "Lámina 3: sección HEA/HEB",
-                "",
-                "2 · HEA / HEB — columnas y vigas cargadas"
-              ],
-              [
-                "0:08-0:11",
-                "Lámina 4: tubo cuadrado/rectangular (HSS)",
-                "",
-                "3 · Tubo HSS — columnas esbeltas y arriostres"
-              ],
-              [
-                "0:11-0:14",
-                "Lámina 5: perfil C / canal y correa Z",
-                "",
-                "4 · C y Z — correas de cubierta"
-              ],
-              [
-                "0:14-0:17",
-                "Lámina 6: ángulo L doble",
-                "",
-                "5 · Ángulos — cerchas y arriostramientos"
-              ],
-              [
-                "0:17-0:22",
-                "Lámina final con los 5 en fila y número grande",
-                "",
-                "¿CUÁL USAS TÚ? 1, 2, 3, 4 o 5 · COMENTA ACERO Y TE MANDO LAS 5 VERIFICACIONES"
-              ]
-            ],
-            "caption": "Perfiles de acero y dónde se usa cada uno 👇\n\n1 · IPE · 2 · HEA/HEB · 3 · Tubo HSS · 4 · C y Z · 5 · Ángulos\n\n¿Cuál usas más en tus proyectos? Dinos el número.\n\nY si quieres revisar que tu perfil de verdad aguanta, comenta ACERO y te mandamos gratis la guía de las 5 verificaciones en acero.",
-            "version_tiktok": "Mismo montaje. Cierre: «¿Cuál usas tú? Te leo.»",
-            "notas_produccion": "SERIE «CHULETA DEL INGENIERO» (nace de los dos reels fuera de matriz de octubre: «Simbología de niveles en planos ¿Cuál usas más?», 20-oct, 57.230 vistas, 220 comentarios, 2.455 guardados y 705 compartidos, el más compartido de la cuenta; y «5 tipos de cimentación», 19-oct, 8.598 vistas, 7,33 comentarios por 1.000). Formato: reel de 15-25 s armado con láminas limpias (fondo blanco, trazo técnico, una opción por lámina, numeradas), música en tendencia, texto grande, SIN voz o con voz mínima. Termina con «¿Cuál usas tú?» para que comenten la opción. La palabra va en el caption y en la última lámina. Se arma en edición, no hace falta grabar a Gabriel. Usos típicos generales: Gabriel revisa en 2 minutos que cada uso esté bien dicho antes de publicar (regla 0: nada técnico sin verificar).",
-            "condicion": "SERIE «CHULETA DEL INGENIERO» (nace de los dos reels fuera de matriz de octubre: «Simbología de niveles en planos ¿Cuál usas más?», 20-oct, 57.230 vistas, 220 comentarios, 2.455 guardados y 705 compartidos, el más compartido de la cuenta; y «5 tipos de cimentación», 19-oct, 8.598 vistas, 7,33 comentarios por 1.000). Formato: reel de 15-25 s armado con láminas limpias (fondo blanco, trazo técnico, una opción por lámina, numeradas), música en tendencia, texto grande, SIN voz o con voz mínima. Termina con «¿Cuál usas tú?» para que comenten la opción. La palabra va en el caption y en la última lámina. Se arma en edición, no hace falta grabar a Gabriel. Usos típicos generales: Gabriel revisa en 2 minutos que cada uso esté bien dicho antes de publicar (regla 0: nada técnico sin verificar).",
-            "formato_detalle": "REEL (18-22 s)",
+            "caption": "6 formas de unir una viga de acero a una columna de hormigón 🔩 ¿Cuál usas tú?\n\nComenta ACERO y te enviamos la guía de verificación de acero 👇\n\n#EstructurasDeAcero #IngenieriaCivil #UnionesMetalicas #DiseñoEstructural #DesignModelingAcademy",
+            "origen": "videos pendientes de octubre (Drive de Dayana, 30-oct)",
+            "video": "https://drive.google.com/file/d/1COC4vDQBcMx6yLum_NcCkCWpCSLP60ul/view",
+            "notas_produccion": "Video ya editado en octubre que quedó sin subir. Archivo en Drive: VALOR 4 6 UNIONES VIGA DE ACERO.mp4 (https://drive.google.com/file/d/1COC4vDQBcMx6yLum_NcCkCWpCSLP60ul/view). Copy tal cual del documento «Copys» de esa carpeta. Es de valor: ACERO entrega la guía de las 5 verificaciones (correcto aquí). Abre la semana de acero el 4-nov (Dayana, 30-oct): ya está editada; la chuleta de perfiles pasa al 30-nov. Es la misma pieza que en octubre se anotó como oct-uniones-acero-hormigon-reel y nunca se subió.",
             "red_principal": "instagram",
             "cta_por_red": {
               "instagram": "Comenta ACERO",
@@ -561,43 +511,7 @@
               "tiktok": "Pregunta abierta, sin palabra clave",
               "youtube_shorts": "Pregunta abierta, sin palabra clave"
             },
-            "guion_reel": [
-              {
-                "tiempo": "0:00-0:02",
-                "accion": "Lámina 1: título grande «PERFILES DE ACERO» y «¿Cuál usas más? 👇» · En pantalla: PERFILES DE ACERO · ¿CUÁL USAS MÁS? 👇",
-                "voz": "(música en tendencia)"
-              },
-              {
-                "tiempo": "0:02-0:05",
-                "accion": "Lámina 2: sección IPE dibujada a línea, con su uso típico · En pantalla: 1 · IPE — vigas de entrepiso con luces medias",
-                "voz": ""
-              },
-              {
-                "tiempo": "0:05-0:08",
-                "accion": "Lámina 3: sección HEA/HEB · En pantalla: 2 · HEA / HEB — columnas y vigas cargadas",
-                "voz": ""
-              },
-              {
-                "tiempo": "0:08-0:11",
-                "accion": "Lámina 4: tubo cuadrado/rectangular (HSS) · En pantalla: 3 · Tubo HSS — columnas esbeltas y arriostres",
-                "voz": ""
-              },
-              {
-                "tiempo": "0:11-0:14",
-                "accion": "Lámina 5: perfil C / canal y correa Z · En pantalla: 4 · C y Z — correas de cubierta",
-                "voz": ""
-              },
-              {
-                "tiempo": "0:14-0:17",
-                "accion": "Lámina 6: ángulo L doble · En pantalla: 5 · Ángulos — cerchas y arriostramientos",
-                "voz": ""
-              },
-              {
-                "tiempo": "0:17-0:22",
-                "accion": "Lámina final con los 5 en fila y número grande · En pantalla: ¿CUÁL USAS TÚ? 1, 2, 3, 4 o 5 · COMENTA ACERO Y TE MANDO LAS 5 VERIFICACIONES",
-                "voz": ""
-              }
-            ]
+            "video_archivo": "VALOR 4 6 UNIONES VIGA DE ACERO.mp4"
           }
         },
         {
@@ -918,14 +832,14 @@
           "fecha_iso": "2026-11-10",
           "semana": "Semana 2 (9-15 nov)",
           "id": "nov-chuleta-2-cerchas-reel",
-          "titulo": "Chuleta 2 · Tipos de cercha: ¿cuál usas en tus naves?",
+          "titulo": "Chuleta 1 · Tipos de cercha: ¿cuál usas en tus naves?",
           "tipo": "problema",
           "formato_publicacion": "REEL (20-23 s)",
           "intencion": "problema",
           "producto": "Acero · Naves PRO",
           "cta": "Comenta ACERO",
           "estado": "POR EDITAR",
-          "nota": "SERIE CHULETA 2/4 · EFEMÉRIDE: Día Mundial de la Ciencia (UNESCO).",
+          "nota": "SERIE CHULETA 1/4 · EFEMÉRIDE: Día Mundial de la Ciencia (UNESCO).",
           "contenido": {
             "id": "nov-chuleta-2-cerchas-reel",
             "grupo": "GRUPO 1 · Feed",
@@ -943,9 +857,9 @@
             "producto": "Acero · Naves PRO",
             "audiencia": "Ingeniero que diseña naves industriales en software",
             "estado": "POR EDITAR",
-            "titulo": "Chuleta 2 · Tipos de cercha: ¿cuál usas en tus naves?",
+            "titulo": "Chuleta 1 · Tipos de cercha: ¿cuál usas en tus naves?",
             "eje": "NÚCLEO-BIM",
-            "pilar": "Serie Chuleta del ingeniero · 2 de 4 · Día Mundial de la Ciencia (10-nov)",
+            "pilar": "Serie Chuleta del ingeniero · 1 de 4 · Día Mundial de la Ciencia (10-nov)",
             "hook": "Tipos de cercha para naves 👇 ¿Cuál usas más?",
             "cta": {
               "instagram": "Comenta ACERO",
@@ -1465,14 +1379,14 @@
           "fecha_iso": "2026-11-17",
           "semana": "Semana 3 (16-22 nov) · workshop y Black Friday Ecuador",
           "id": "nov-chuleta-3-lod-reel",
-          "titulo": "Chuleta 3 · LOD 100 a 500: ¿en cuál trabajas?",
+          "titulo": "Chuleta 2 · LOD 100 a 500: ¿en cuál trabajas?",
           "tipo": "problema",
           "formato_publicacion": "REEL (18-22 s)",
           "intencion": "problema",
           "producto": "Máster",
           "cta": "Comenta WORKSHOP",
           "estado": "POR EDITAR",
-          "nota": "SERIE CHULETA 3/4 · DÍA DEL WORKSHOP (8:00 PM Ecuador).",
+          "nota": "SERIE CHULETA 2/4 · DÍA DEL WORKSHOP (8:00 PM Ecuador).",
           "contenido": {
             "id": "nov-chuleta-3-lod-reel",
             "grupo": "GRUPO 1 · Feed",
@@ -1490,9 +1404,9 @@
             "producto": "Máster",
             "audiencia": "Modelador o coordinador BIM",
             "estado": "POR EDITAR",
-            "titulo": "Chuleta 3 · LOD 100 a 500: ¿en cuál trabajas?",
+            "titulo": "Chuleta 2 · LOD 100 a 500: ¿en cuál trabajas?",
             "eje": "NÚCLEO-BIM",
-            "pilar": "Serie Chuleta del ingeniero · 3 de 4 · día del workshop",
+            "pilar": "Serie Chuleta del ingeniero · 2 de 4 · día del workshop",
             "hook": "Niveles de desarrollo LOD 👇 ¿En cuál trabajas tú?",
             "cta": {
               "instagram": "Comenta WORKSHOP",
@@ -2113,14 +2027,14 @@
           "fecha_iso": "2026-11-24",
           "semana": "Semana 4 (23-30 nov) · Black Week",
           "id": "nov-chuleta-4-uniones-reel",
-          "titulo": "Chuleta 4 · Uniones en acero: ¿soldada o empernada?",
+          "titulo": "Chuleta 3 · Uniones en acero: ¿soldada o empernada?",
           "tipo": "problema",
           "formato_publicacion": "REEL (20-23 s)",
           "intencion": "problema",
           "producto": "Acero",
           "cta": "Comenta ACERO",
           "estado": "POR EDITAR",
-          "nota": "SERIE CHULETA 4/4.",
+          "nota": "SERIE CHULETA 3/4.",
           "contenido": {
             "id": "nov-chuleta-4-uniones-reel",
             "grupo": "GRUPO 1 · Feed",
@@ -2138,9 +2052,9 @@
             "producto": "Acero",
             "audiencia": "Ingeniero que diseña estructuras de acero en software",
             "estado": "POR EDITAR",
-            "titulo": "Chuleta 4 · Uniones en acero: ¿soldada o empernada?",
+            "titulo": "Chuleta 3 · Uniones en acero: ¿soldada o empernada?",
             "eje": "NÚCLEO-BIM",
-            "pilar": "Serie Chuleta del ingeniero · 4 de 4",
+            "pilar": "Serie Chuleta del ingeniero · 3 de 4",
             "hook": "Uniones en acero 👇 ¿Cuál usas más?",
             "cta": {
               "instagram": "Comenta ACERO",
@@ -2612,21 +2526,19 @@
           "fecha": "Lun 30",
           "fecha_iso": "2026-11-30",
           "semana": "Semana 4 (23-30 nov) · Black Week",
-          "id": "nov-valor-6-uniones-viga-columna-reel",
-          "titulo": "6 formas de unir una viga de acero a una columna de hormigón",
+          "id": "nov-chuleta-1-perfiles-acero-reel",
+          "titulo": "Chuleta 4 · Perfiles de acero: ¿cuál usas más?",
           "tipo": "problema",
-          "formato_publicacion": "REEL (video listo de octubre)",
+          "formato_publicacion": "REEL (18-22 s)",
           "intencion": "problema",
           "producto": "Acero",
           "cta": "Comenta ACERO",
-          "estado": "LISTO (editado en octubre, solo falta subir)",
-          "nota": "Video de valor pendiente de octubre. ACERO entrega la guía de las 5 verificaciones (es de valor). 6 días después de la Chuleta 4 de uniones.",
-          "fuera_de_cuota": true,
+          "estado": "POR EDITAR",
+          "nota": "SERIE CHULETA 4/4: cierra la serie. Estaba el 4-nov; pasó aquí para que ese día salga el video ya editado de las 6 uniones (Dayana, 30-oct).",
           "contenido": {
-            "id": "nov-valor-6-uniones-viga-columna-reel",
+            "id": "nov-chuleta-1-perfiles-acero-reel",
             "grupo": "GRUPO 1 · Feed",
             "formato": "reel",
-            "formato_detalle": "REEL (video listo de octubre)",
             "redes": [
               "instagram",
               "facebook",
@@ -2638,22 +2550,74 @@
             "semana": "Semana 4 (23-30 nov) · Black Week",
             "tipo": "problema",
             "producto": "Acero",
-            "audiencia": "Ingeniero estructural que diseña uniones en acero",
-            "estado": "LISTO (editado en octubre, solo falta subir)",
-            "titulo": "6 formas de unir una viga de acero a una columna de hormigón",
+            "audiencia": "Ingeniero que diseña o calcula estructuras de acero en software (no el que solo monta)",
+            "estado": "POR EDITAR",
+            "titulo": "Chuleta 4 · Perfiles de acero: ¿cuál usas más?",
             "eje": "NÚCLEO-BIM",
-            "pilar": "Video de valor pendiente de octubre",
-            "hook": "6 formas de unir una viga de acero a una columna de hormigón",
+            "pilar": "Serie Chuleta del ingeniero · 4 de 4",
+            "hook": "Perfiles de acero 👇 ¿Cuál usas más?",
             "cta": {
               "instagram": "Comenta ACERO",
               "facebook": "Comenta ACERO",
               "tiktok": "Pregunta abierta, sin palabra clave",
               "youtube_shorts": "Pregunta abierta, sin palabra clave"
             },
-            "caption": "6 formas de unir una viga de acero a una columna de hormigón 🔩 ¿Cuál usas tú?\n\nComenta ACERO y te enviamos la guía de verificación de acero 👇\n\n#EstructurasDeAcero #IngenieriaCivil #UnionesMetalicas #DiseñoEstructural #DesignModelingAcademy",
-            "origen": "videos pendientes de octubre (Drive de Dayana, 30-oct)",
-            "video": "https://drive.google.com/file/d/1COC4vDQBcMx6yLum_NcCkCWpCSLP60ul/view",
-            "notas_produccion": "Video ya editado en octubre que quedó sin subir. Archivo en Drive: VALOR 4 6 UNIONES VIGA DE ACERO.mp4 (https://drive.google.com/file/d/1COC4vDQBcMx6yLum_NcCkCWpCSLP60ul/view). Copy tal cual del documento «Copys» de esa carpeta. Es de valor: ACERO entrega la guía de las 5 verificaciones (correcto aquí). Va 6 días después de la Chuleta 4 de uniones para no repetir el tema seguido.",
+            "origen": "matriz noviembre 2026",
+            "guion_columnas": [
+              "tiempo",
+              "plano",
+              "voz",
+              "texto_en_pantalla"
+            ],
+            "guion": [
+              [
+                "0:00-0:02",
+                "Lámina 1: título grande «PERFILES DE ACERO» y «¿Cuál usas más? 👇»",
+                "(música en tendencia)",
+                "PERFILES DE ACERO · ¿CUÁL USAS MÁS? 👇"
+              ],
+              [
+                "0:02-0:05",
+                "Lámina 2: sección IPE dibujada a línea, con su uso típico",
+                "",
+                "1 · IPE — vigas de entrepiso con luces medias"
+              ],
+              [
+                "0:05-0:08",
+                "Lámina 3: sección HEA/HEB",
+                "",
+                "2 · HEA / HEB — columnas y vigas cargadas"
+              ],
+              [
+                "0:08-0:11",
+                "Lámina 4: tubo cuadrado/rectangular (HSS)",
+                "",
+                "3 · Tubo HSS — columnas esbeltas y arriostres"
+              ],
+              [
+                "0:11-0:14",
+                "Lámina 5: perfil C / canal y correa Z",
+                "",
+                "4 · C y Z — correas de cubierta"
+              ],
+              [
+                "0:14-0:17",
+                "Lámina 6: ángulo L doble",
+                "",
+                "5 · Ángulos — cerchas y arriostramientos"
+              ],
+              [
+                "0:17-0:22",
+                "Lámina final con los 5 en fila y número grande",
+                "",
+                "¿CUÁL USAS TÚ? 1, 2, 3, 4 o 5 · COMENTA ACERO Y TE MANDO LAS 5 VERIFICACIONES"
+              ]
+            ],
+            "caption": "Perfiles de acero y dónde se usa cada uno 👇\n\n1 · IPE · 2 · HEA/HEB · 3 · Tubo HSS · 4 · C y Z · 5 · Ángulos\n\n¿Cuál usas más en tus proyectos? Dinos el número.\n\nY si quieres revisar que tu perfil de verdad aguanta, comenta ACERO y te mandamos gratis la guía de las 5 verificaciones en acero.",
+            "version_tiktok": "Mismo montaje. Cierre: «¿Cuál usas tú? Te leo.»",
+            "notas_produccion": "SERIE «CHULETA DEL INGENIERO» (nace de los dos reels fuera de matriz de octubre: «Simbología de niveles en planos ¿Cuál usas más?», 20-oct, 57.230 vistas, 220 comentarios, 2.455 guardados y 705 compartidos, el más compartido de la cuenta; y «5 tipos de cimentación», 19-oct, 8.598 vistas, 7,33 comentarios por 1.000). Formato: reel de 15-25 s armado con láminas limpias (fondo blanco, trazo técnico, una opción por lámina, numeradas), música en tendencia, texto grande, SIN voz o con voz mínima. Termina con «¿Cuál usas tú?» para que comenten la opción. La palabra va en el caption y en la última lámina. Se arma en edición, no hace falta grabar a Gabriel. Usos típicos generales: Gabriel revisa en 2 minutos que cada uso esté bien dicho antes de publicar (regla 0: nada técnico sin verificar). MOVIDA AL 30-NOV (Dayana, 30-oct): el 4-nov sale el video ya editado de las 6 uniones viga-columna; esta chuleta cierra la serie.",
+            "condicion": "SERIE «CHULETA DEL INGENIERO» (nace de los dos reels fuera de matriz de octubre: «Simbología de niveles en planos ¿Cuál usas más?», 20-oct, 57.230 vistas, 220 comentarios, 2.455 guardados y 705 compartidos, el más compartido de la cuenta; y «5 tipos de cimentación», 19-oct, 8.598 vistas, 7,33 comentarios por 1.000). Formato: reel de 15-25 s armado con láminas limpias (fondo blanco, trazo técnico, una opción por lámina, numeradas), música en tendencia, texto grande, SIN voz o con voz mínima. Termina con «¿Cuál usas tú?» para que comenten la opción. La palabra va en el caption y en la última lámina. Se arma en edición, no hace falta grabar a Gabriel. Usos típicos generales: Gabriel revisa en 2 minutos que cada uso esté bien dicho antes de publicar (regla 0: nada técnico sin verificar).",
+            "formato_detalle": "REEL (18-22 s)",
             "red_principal": "instagram",
             "cta_por_red": {
               "instagram": "Comenta ACERO",
@@ -2661,7 +2625,43 @@
               "tiktok": "Pregunta abierta, sin palabra clave",
               "youtube_shorts": "Pregunta abierta, sin palabra clave"
             },
-            "video_archivo": "VALOR 4 6 UNIONES VIGA DE ACERO.mp4"
+            "guion_reel": [
+              {
+                "tiempo": "0:00-0:02",
+                "accion": "Lámina 1: título grande «PERFILES DE ACERO» y «¿Cuál usas más? 👇» · En pantalla: PERFILES DE ACERO · ¿CUÁL USAS MÁS? 👇",
+                "voz": "(música en tendencia)"
+              },
+              {
+                "tiempo": "0:02-0:05",
+                "accion": "Lámina 2: sección IPE dibujada a línea, con su uso típico · En pantalla: 1 · IPE — vigas de entrepiso con luces medias",
+                "voz": ""
+              },
+              {
+                "tiempo": "0:05-0:08",
+                "accion": "Lámina 3: sección HEA/HEB · En pantalla: 2 · HEA / HEB — columnas y vigas cargadas",
+                "voz": ""
+              },
+              {
+                "tiempo": "0:08-0:11",
+                "accion": "Lámina 4: tubo cuadrado/rectangular (HSS) · En pantalla: 3 · Tubo HSS — columnas esbeltas y arriostres",
+                "voz": ""
+              },
+              {
+                "tiempo": "0:11-0:14",
+                "accion": "Lámina 5: perfil C / canal y correa Z · En pantalla: 4 · C y Z — correas de cubierta",
+                "voz": ""
+              },
+              {
+                "tiempo": "0:14-0:17",
+                "accion": "Lámina 6: ángulo L doble · En pantalla: 5 · Ángulos — cerchas y arriostramientos",
+                "voz": ""
+              },
+              {
+                "tiempo": "0:17-0:22",
+                "accion": "Lámina final con los 5 en fila y número grande · En pantalla: ¿CUÁL USAS TÚ? 1, 2, 3, 4 o 5 · COMENTA ACERO Y TE MANDO LAS 5 VERIFICACIONES",
+                "voz": ""
+              }
+            ]
           }
         }
       ]
@@ -2780,8 +2780,8 @@
           }
         },
         {
-          "fecha": "Mar 3",
-          "fecha_iso": "2026-11-03",
+          "fecha": "Mié 4",
+          "fecha_iso": "2026-11-04",
           "semana": "Semana 1 (2-8 nov)",
           "id": "nov-comu-1103-workshop",
           "titulo": "Workshop: las 5 preguntas",
@@ -2805,8 +2805,8 @@
               "ghl"
             ],
             "red_principal": "whatsapp",
-            "fecha": "Mar 3 nov",
-            "fecha_iso": "2026-11-03",
+            "fecha": "Mié 4 nov",
+            "fecha_iso": "2026-11-04",
             "semana": "Semana 1 (2-8 nov)",
             "tipo": "comunidad",
             "producto": "Máster · workshop",
@@ -2824,7 +2824,7 @@
             "cta": {
               "comunidades": "Post completo, igual en todas las redes. Enlace dentro del post. Pregunta abierta al final."
             },
-            "notas_produccion": "El mismo post completo en todos los canales y grupos. Si hay regalo o registro, el enlace va directo en el post: nada de «respóndeme X» ni enlace en el primer comentario. Sin hashtags. Del plan del workshop.",
+            "notas_produccion": "El mismo post completo en todos los canales y grupos. Si hay regalo o registro, el enlace va directo en el post: nada de «respóndeme X» ni enlace en el primer comentario. Sin hashtags. Del plan del workshop. MOVIDA del martes 3 (feriado) al miércoles 4 (Dayana, 30-oct): en feriado no se publica en comunidades.",
             "origen": "matriz noviembre 2026",
             "cta_por_red": {
               "comunidades": "Post completo, igual en todas las redes. Enlace dentro del post. Pregunta abierta al final."
@@ -2836,13 +2836,13 @@
           "fecha_iso": "2026-11-05",
           "semana": "Semana 1 (2-8 nov)",
           "id": "nov-comu-1105-acero-perfiles",
-          "titulo": "Chuleta: perfiles de acero",
+          "titulo": "Chuleta: 6 uniones viga de acero–columna de hormigón",
           "tipo": "comunidad",
           "formato_publicacion": "MENSAJE A COMUNIDADES (post completo + arte)",
           "idea": {
-            "titulo": "Chuleta: perfiles de acero",
+            "titulo": "Chuleta: 6 uniones viga de acero–columna de hormigón",
             "formato": "MENSAJE A COMUNIDADES (post completo + arte)",
-            "desarrollo": "¿Qué perfil de acero usas más en tus proyectos? IPE, HEA/HEB, tubo HSS, C y Z o ángulos."
+            "desarrollo": "¿Cómo unes una viga de acero a una columna de hormigón?"
           },
           "contenido": {
             "id": "nov-comu-1105-acero-perfiles",
@@ -2863,16 +2863,16 @@
             "tipo": "comunidad",
             "producto": "Acero",
             "estado": "COMPLETA",
-            "titulo": "Chuleta: perfiles de acero",
+            "titulo": "Chuleta: 6 uniones viga de acero–columna de hormigón",
             "eje": "NÚCLEO-BIM",
-            "hook": "¿Qué perfil de acero usas más en tus proyectos? IPE, HEA/HEB, tubo HSS, C y Z o ángulos.",
+            "hook": "¿Cómo unes una viga de acero a una columna de hormigón?",
             "mensajes": [
               {
                 "canal": "Todos: canales y grupos de WhatsApp, canal de Instagram, grupos de Facebook, comunidad de YouTube y comunidades GHL (el mismo post)",
-                "texto": "¿Qué perfil de acero usas más en tus proyectos? IPE, HEA/HEB, tubo HSS, C y Z o ángulos.\n\nEsta semana publicamos la chuleta con el uso típico de cada uno. Y si quieres comprobar que tu perfil de verdad aguanta, aquí tienes gratis la guía de las 5 verificaciones en acero antes de dar un diseño por bueno:\nhttps://funnel.dgdesignmodeling.com/acceso-gratis-verificacion-acero-form\n\nCuéntanos: ¿cuál usas más y para qué?"
+                "texto": "¿Cómo unes una viga de acero a una columna de hormigón?\n\nHay al menos 6 formas, y no todas trabajan igual: no es lo mismo una unión que solo pasa cortante que una que tiene que transmitir momento. Esta semana publicamos la chuleta con las 6. Y si quieres comprobar que tu unión de verdad aguanta, aquí tienes gratis la guía de las 5 verificaciones en acero antes de dar un diseño por bueno:\nhttps://funnel.dgdesignmodeling.com/acceso-gratis-verificacion-acero-form\n\nCuéntanos: ¿cuál usas tú?"
               }
             ],
-            "arte": "Captura de la chuleta del miércoles 4",
+            "arte": "Captura del reel del miércoles 4 (6 uniones viga-columna)",
             "cta": {
               "comunidades": "Post completo, igual en todas las redes. Enlace dentro del post. Pregunta abierta al final."
             },
@@ -4002,13 +4002,13 @@
           "fecha_iso": "2026-11-04",
           "semana": "Semana 1 (2-8 nov)",
           "id": "nov-hist-1104",
-          "titulo": "Chuleta: perfiles de acero",
+          "titulo": "Chuleta: 6 uniones viga de acero–columna de hormigón",
           "tipo": "valor",
           "formato_publicacion": "HISTORIAS (3 frames)",
           "idea": {
-            "titulo": "Chuleta: perfiles de acero",
+            "titulo": "Chuleta: 6 uniones viga de acero–columna de hormigón",
             "formato": "HISTORIAS (3 frames)",
-            "desarrollo": "¿Por qué en las naves casi siempre ves vigas IPE y columnas de tubo? Hay una razón que casi nadie explica. 🤔"
+            "desarrollo": "¿Cómo unes una viga de acero a una columna de hormigón? Hay 6 formas, y no todas trabajan igual. 🔩"
           },
           "destacada": "🔩 ACERO",
           "contenido": {
@@ -4027,23 +4027,23 @@
             "tipo": "valor",
             "producto": "Acero",
             "estado": "COMPLETA",
-            "titulo": "Chuleta: perfiles de acero",
+            "titulo": "Chuleta: 6 uniones viga de acero–columna de hormigón",
             "eje": "NÚCLEO-BIM",
-            "hook": "¿Por qué en las naves casi siempre ves vigas IPE y columnas de tubo? Hay una razón que casi nadie explica. 🤔",
+            "hook": "¿Cómo unes una viga de acero a una columna de hormigón? Hay 6 formas, y no todas trabajan igual. 🔩",
             "destacada": "🔩 ACERO",
             "gabriel_a_camara": false,
             "historias": [
               {
                 "n": 1,
-                "visual": "Captura del reel de la chuleta del día.",
-                "texto": "¿Por qué en las naves casi siempre ves vigas IPE y columnas de tubo? Hay una razón que casi nadie explica. 🤔",
+                "visual": "Captura del reel del día (6 uniones viga de acero–columna de hormigón).",
+                "texto": "¿Cómo unes una viga de acero a una columna de hormigón? Hay 6 formas, y no todas trabajan igual. 🔩",
                 "sticker": "Ninguno."
               },
               {
                 "n": 2,
                 "visual": "Texto sobre azul.",
-                "texto": "El IPE rinde mejor a flexión en un sentido; el tubo HSS trabaja bien a compresión en cualquier dirección. Por eso vigas de IPE y columnas de tubo.",
-                "sticker": "ENCUESTA: «IPE / HEA» / «Tubo HSS»"
+                "texto": "La unión no se elige por costumbre: depende de si la viga solo descarga cortante o también tiene que pasarle momento a la columna.",
+                "sticker": "ENCUESTA: «¿Cuál usas más?» Placa con pernos / Otra"
               },
               {
                 "n": 3,
