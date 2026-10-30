@@ -50,7 +50,7 @@ FEED = [
     ("2026-11-10", "nov-chuleta-2-cerchas-reel", "problema", "Acero · Naves PRO", "Comenta ACERO",
      "SERIE CHULETA 2/4 · EFEMÉRIDE: Día Mundial de la Ciencia (UNESCO)."),
     ("2026-11-11", "nov-valor-5-suelos-zapata-reel", "problema", "Diplomado · Estructuras", "Comenta ZAPATA",
-     "Video de valor pendiente de octubre. OJO: el archivo se llama «5 PISOS SOBRE UNA ZAPATA» y el copy dice «5 suelos bajo una zapata»: confirmar antes de subir."),
+     "Video de valor pendiente de octubre. Título igual al del video: «5 pisos sobre una zapata»."),
     ("2026-11-12", "nov-calidad-checklist-modelo-carrusel", "solución", "Máster", "Comenta NIVEL", "EFEMÉRIDE: World Quality Day."),
     ("2026-11-13", "nov-obj-master-bloques-post", "objeción", "Máster", "Comenta NIVEL",
      "Dar a conocer el Máster por bloques (Dayana, 23-oct). Sin precio. Sale con el blog del viernes."),
@@ -328,7 +328,7 @@ def main():
              "calendario": filas_de("GRUPO 4")},
             {"n": 5, "nombre": "GRUPO 5 · Historias de Instagram (y Facebook stories)",
              "descripcion": f"Lunes a viernes (y Halloween), 3-4 frames. {ventas} días de venta y {gab} con Gabriel a cámara.",
-             "reglas": ["DÍAS DE VENTA, en 3 tiempos: 1) curiosidad (la pieza que falta), 2) prueba REAL con captura, 3) «Respóndeme X si estás cansado de… y de…».", "DÍAS DE VALOR, en 3 tiempos: 1) curiosidad, 2) el dato o el tip, 3) «Respóndeme X y te mando [recurso gratis]» o el enlace del workshop.", "La apertura del frame 1 no se repite: cada historia arranca distinto.", "La prueba nunca se inventa: mensajes de alumnos (nombre tapado si no hay permiso), modelos o resultados reales.", "Precio nunca en la historia: va por DM o WhatsApp, con la mini landing de la oferta.", "Máximo 4 frames.", "Las respuestas llegan como DM: se contestan a mano el mismo día.", "SIN HISTORIAS sábados, domingos ni feriados (lunes 2 y martes 3 de noviembre). Si hay una promo el fin de semana, va UN solo frame programado: repost del post o el arte, con el enlace (nadie contesta DMs a mano)."],
+             "reglas": ["DÍAS DE VENTA, en 3 tiempos: 1) curiosidad (la pieza que falta), 2) prueba REAL con captura, 3) «Respóndeme X si estás cansado de… y de…».", "DÍAS DE VALOR, en 3 tiempos: 1) curiosidad, 2) el dato o el tip, 3) «Respóndeme X y te mando [recurso gratis]» o el enlace del workshop.", "La apertura del frame 1 no se repite: cada historia arranca distinto.", "La prueba nunca se inventa: mensajes de alumnos (nombre tapado si no hay permiso), modelos o resultados reales.", "Precio nunca en la historia: va por DM o WhatsApp, con la mini landing de la oferta.", "Máximo 4 frames.", "Las respuestas llegan como DM: se contestan a mano el mismo día.", "SIN HISTORIAS sábados, domingos ni feriados (lunes 2 y martes 3 de noviembre). Si hay una promo el fin de semana, va UN solo frame programado: repost del post o el arte, con su «Respóndeme X» solo si la palabra la contesta una automatización."],
              "calendario": [{**x, **({"destacada": DESTACADA_DE[x["id"]]} if x["id"] in DESTACADA_DE else {})} for x in hist]},
         ],
         "lead_magnets": {
