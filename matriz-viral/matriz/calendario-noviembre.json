@@ -37,7 +37,7 @@
    "para": "Gabriel y Daniela"
   },
   {
-   "tarea": "Editar las 4 chuletas (perfiles de acero, cerchas, LOD, uniones) con los formatos de los reels del 19 y 20-oct que funcionaron: la 1, la 3 y la 4 como «Simbología de niveles» (lista visual sin voz) y la 2 como «5 tipos de cimentación» (pizarra con voz). Gabriel revisa cada lámina técnica antes de publicar.",
+   "tarea": "Editar las 4 chuletas (cerchas 10-nov, LOD 17-nov, uniones 24-nov y perfiles de acero 30-nov) con los formatos de los reels del 19 y 20-oct que funcionaron: LOD, uniones y perfiles como «Simbología de niveles» (lista visual sin voz) y cerchas como «5 tipos de cimentación» (pizarra con voz). El 4-nov sale el video ya editado de las 6 uniones viga-columna. Gabriel revisa cada lámina técnica antes de publicar.",
    "desbloquea": "La serie que se llevó octubre",
    "cuando": "una por semana, 2 días antes",
    "para": "Daniela / Dayana"
@@ -273,7 +273,7 @@
       "shortCode": "DeubXmFlIDE"
      },
      {
-      "id": "oct-uniones-acero-hormigon-reel"
+      "id": "nov-valor-6-uniones-viga-columna-reel"
      },
      {
       "id": "nov-chuleta-1-perfiles-acero-reel"
@@ -303,7 +303,7 @@
       "id": "nov-chuleta-2-cerchas-reel"
      }
     ],
-    "que_falta_saber": "«¿La IA te va a reemplazar?» dio 0 comentarios en julio. Esta versión acusa 4 hábitos concretos, que es el patrón que sí funciona. Si no pasa la mediana, la chuleta 2 dice si falló el tema o el formato."
+    "que_falta_saber": "«¿La IA te va a reemplazar?» dio 0 comentarios en julio. Esta versión acusa 4 hábitos concretos, que es el patrón que sí funciona. Si no pasa la mediana, la chuleta de cerchas dice si falló el tema o el formato."
    },
    {
     "formato": "Gabriel + motion cromado (estilo 10)",
@@ -319,7 +319,7 @@
    }
   ],
   "revisiones": [
-   "lun 9-nov: las piezas de octubre (uniones, IA, chuleta 1) ya tienen 7 días",
+   "lun 9-nov: la de IA de octubre; las 6 uniones (4-nov) llevan 5 días, lectura preliminar (la regla pide 7)",
    "lun 30-nov: cierre del mes y decisión para diciembre"
   ]
  },
@@ -740,15 +740,16 @@
      "fecha": "Mié 4",
      "fecha_iso": "2026-11-04",
      "semana": "Semana 1 (2-8 nov)",
-     "id": "nov-chuleta-1-perfiles-acero-reel",
-     "titulo": "Chuleta 1 · Perfiles de acero: ¿cuál usas más?",
+     "id": "nov-valor-6-uniones-viga-columna-reel",
+     "titulo": "6 formas de unir una viga de acero a una columna de hormigón",
      "tipo": "problema",
-     "formato_publicacion": "REEL (18-22 s)",
+     "formato_publicacion": "REEL (video listo de octubre)",
      "intencion": "problema",
      "producto": "Acero",
      "cta": "Comenta ACERO",
-     "estado": "POR EDITAR",
-     "nota": "SERIE CHULETA 1/4. El formato que se llevó octubre: 2 reels fuera de matriz = 44 % de las vistas y 71 % de los guardados del mes."
+     "estado": "LISTO (editado en octubre, solo falta subir)",
+     "nota": "Chuleta visual ya editada (6 uniones viga de acero–columna de hormigón; en octubre se anotó como oct-uniones-acero-hormigon-reel y no se subió). Abre la semana de acero (Dayana, 30-oct).",
+     "fuera_de_cuota": true
     },
     {
      "fecha": "Jue 5",
@@ -812,14 +813,14 @@
      "fecha_iso": "2026-11-10",
      "semana": "Semana 2 (9-15 nov)",
      "id": "nov-chuleta-2-cerchas-reel",
-     "titulo": "Chuleta 2 · Tipos de cercha: ¿cuál usas en tus naves?",
+     "titulo": "Chuleta 1 · Tipos de cercha: ¿cuál usas en tus naves?",
      "tipo": "problema",
      "formato_publicacion": "REEL (20-23 s)",
      "intencion": "problema",
      "producto": "Acero · Naves PRO",
      "cta": "Comenta ACERO",
      "estado": "POR EDITAR",
-     "nota": "SERIE CHULETA 2/4 · EFEMÉRIDE: Día Mundial de la Ciencia (UNESCO)."
+     "nota": "SERIE CHULETA 1/4 · EFEMÉRIDE: Día Mundial de la Ciencia (UNESCO)."
     },
     {
      "fecha": "Mié 11",
@@ -897,14 +898,14 @@
      "fecha_iso": "2026-11-17",
      "semana": "Semana 3 (16-22 nov) · workshop y Black Friday Ecuador",
      "id": "nov-chuleta-3-lod-reel",
-     "titulo": "Chuleta 3 · LOD 100 a 500: ¿en cuál trabajas?",
+     "titulo": "Chuleta 2 · LOD 100 a 500: ¿en cuál trabajas?",
      "tipo": "problema",
      "formato_publicacion": "REEL (18-22 s)",
      "intencion": "problema",
      "producto": "Máster",
      "cta": "Comenta WORKSHOP",
      "estado": "POR EDITAR",
-     "nota": "SERIE CHULETA 3/4 · DÍA DEL WORKSHOP (8:00 PM Ecuador)."
+     "nota": "SERIE CHULETA 2/4 · DÍA DEL WORKSHOP (8:00 PM Ecuador)."
     },
     {
      "fecha": "Mié 18",
@@ -981,14 +982,14 @@
      "fecha_iso": "2026-11-24",
      "semana": "Semana 4 (23-30 nov) · Black Week",
      "id": "nov-chuleta-4-uniones-reel",
-     "titulo": "Chuleta 4 · Uniones en acero: ¿soldada o empernada?",
+     "titulo": "Chuleta 3 · Uniones en acero: ¿soldada o empernada?",
      "tipo": "problema",
      "formato_publicacion": "REEL (20-23 s)",
      "intencion": "problema",
      "producto": "Acero",
      "cta": "Comenta ACERO",
      "estado": "POR EDITAR",
-     "nota": "SERIE CHULETA 4/4."
+     "nota": "SERIE CHULETA 3/4."
     },
     {
      "fecha": "Mié 25",
@@ -1051,16 +1052,15 @@
      "fecha": "Lun 30",
      "fecha_iso": "2026-11-30",
      "semana": "Semana 4 (23-30 nov) · Black Week",
-     "id": "nov-valor-6-uniones-viga-columna-reel",
-     "titulo": "6 formas de unir una viga de acero a una columna de hormigón",
+     "id": "nov-chuleta-1-perfiles-acero-reel",
+     "titulo": "Chuleta 4 · Perfiles de acero: ¿cuál usas más?",
      "tipo": "problema",
-     "formato_publicacion": "REEL (video listo de octubre)",
+     "formato_publicacion": "REEL (18-22 s)",
      "intencion": "problema",
      "producto": "Acero",
      "cta": "Comenta ACERO",
-     "estado": "LISTO (editado en octubre, solo falta subir)",
-     "nota": "Video de valor pendiente de octubre. ACERO entrega la guía de las 5 verificaciones (es de valor). 6 días después de la Chuleta 4 de uniones.",
-     "fuera_de_cuota": true
+     "estado": "POR EDITAR",
+     "nota": "SERIE CHULETA 4/4: cierra la serie. Estaba el 4-nov; pasó aquí para que ese día salga el video ya editado de las 6 uniones (Dayana, 30-oct)."
     }
    ]
   },
@@ -1102,8 +1102,8 @@
      }
     },
     {
-     "fecha": "Mar 3",
-     "fecha_iso": "2026-11-03",
+     "fecha": "Mié 4",
+     "fecha_iso": "2026-11-04",
      "semana": "Semana 1 (2-8 nov)",
      "id": "nov-comu-1103-workshop",
      "titulo": "Workshop: las 5 preguntas",
@@ -1120,13 +1120,13 @@
      "fecha_iso": "2026-11-05",
      "semana": "Semana 1 (2-8 nov)",
      "id": "nov-comu-1105-acero-perfiles",
-     "titulo": "Chuleta: perfiles de acero",
+     "titulo": "Chuleta: 6 uniones viga de acero–columna de hormigón",
      "tipo": "comunidad",
      "formato_publicacion": "MENSAJE A COMUNIDADES (post completo + arte)",
      "idea": {
-      "titulo": "Chuleta: perfiles de acero",
+      "titulo": "Chuleta: 6 uniones viga de acero–columna de hormigón",
       "formato": "MENSAJE A COMUNIDADES (post completo + arte)",
-      "desarrollo": "¿Qué perfil de acero usas más en tus proyectos? IPE, HEA/HEB, tubo HSS, C y Z o ángulos."
+      "desarrollo": "¿Cómo unes una viga de acero a una columna de hormigón?"
      }
     },
     {
@@ -1492,13 +1492,13 @@
      "fecha_iso": "2026-11-04",
      "semana": "Semana 1 (2-8 nov)",
      "id": "nov-hist-1104",
-     "titulo": "Chuleta: perfiles de acero",
+     "titulo": "Chuleta: 6 uniones viga de acero–columna de hormigón",
      "tipo": "valor",
      "formato_publicacion": "HISTORIAS (3 frames)",
      "idea": {
-      "titulo": "Chuleta: perfiles de acero",
+      "titulo": "Chuleta: 6 uniones viga de acero–columna de hormigón",
       "formato": "HISTORIAS (3 frames)",
-      "desarrollo": "¿Por qué en las naves casi siempre ves vigas IPE y columnas de tubo? Hay una razón que casi nadie explica. 🤔"
+      "desarrollo": "¿Cómo unes una viga de acero a una columna de hormigón? Hay 6 formas, y no todas trabajan igual. 🔩"
      },
      "destacada": "🔩 ACERO"
     },
