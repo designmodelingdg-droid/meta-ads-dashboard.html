@@ -2,7 +2,7 @@
   "_meta": {
     "titulo": "Matriz de contenido — Design Modeling Academy — noviembre 2026",
     "periodo": "Del miércoles 28 de octubre al lunes 30 de noviembre",
-    "generado": "2026-10-28",
+    "generado": "2026-10-30",
     "como_se_regenera": "python3 matriz-viral/matriz/calendario-noviembre.py && python3 scripts/build_matriz_mes.py --mes 2026-11",
     "origen": "calendario-noviembre.json (orden) + guiones-completos.json (contenido de cada pieza)",
     "fuente_de_datos": "Métricas de Instagram por Meta Graph API (matriz.json, Action «Métricas semanales») y Apify para referentes; histórico en historico-2026.json; compradores en COMPRADORES-VS-NO.md."
@@ -16,6 +16,7 @@
     "HISTORIAS CON MÁS VENTA Y CON GABRIEL (Dayana, 23-oct): 12 historias de venta en el mes (2 por semana hasta el workshop, más en la Black Week) y Gabriel a cámara en 8 días (al menos 2 por semana), grabadas en una sola sesión con Daniela.",
     "DAR A CONOCER LOS PROGRAMAS: el Máster por bloques (BIM Professional · Coordination · Management · BIM + IA) y la Especialización en Acero se explican con piezas propias (13, 20 y 23-nov), siempre desde el problema y sin precio en el feed.",
     "PALABRAS DE COMENTARIO: NIVEL (Máster), ACERO, ZAPATA y WORKSHOP (hasta el 17-nov). En historias, las respuestas (SUSTO, NAVES, LISTA, BLACK) llegan por DM y las contesta una persona. No hay lead magnet nuevo este mes.",
+    "LAS PIEZAS DE VENTA NO USAN PALABRAS DE LEAD MAGNET (Dayana, 30-oct): ACERO, NIVEL y ZAPATA disparan la automatización del recurso gratis (ACERO manda la guía de las 5 verificaciones). Para pedir la información de un curso: TEMARIO (Especialización en Acero), MÁSTER, NAVES; para las ofertas: SUSTO, LISTA y BLACK. Las piezas de valor siguen con la palabra de su recurso.",
     "LA PROMO SOLO POR WHATSAPP (Dayana, 23-oct): ninguna pieza pública lleva el precio de la oferta ni enlaza la página vieja. Quien responde o escribe al WhatsApp recibe el precio y la mini landing de su oferta. Ester decide los precios y cómo se nombran. El Máster nunca lleva precio. Toda oferta cierra a la hora dicha (Ecuador) y NO se reabre.",
     "FORMATOS EN PRUEBA: chuleta visual sin voz, pizarra con voz de Gabriel (estilo 9) y Gabriel con motion cromado (estilo 10). Se revisan el 9 y el 30-nov. Un formato entra fijo solo si genera interés, interacción y ventas (pestaña Resumen).",
     "Visuales = capturas reales de Revit/Robot/Navisworks y cámara de Gabriel. Nada técnico se publica sin que Gabriel lo revise (regla 0).",
@@ -59,7 +60,7 @@
       "para": "Ester (decide y crea)"
     },
     {
-      "tarea": "Respuestas a las palabras de historias, correos y comunidades (SUSTO, LISTA, BLACK, NAVES, NIVEL, ACERO, ZAPATA): las contesta una persona; las de oferta pasan a WhatsApp, donde va el precio y la mini landing. Dejar plantillas listas en la bandeja.",
+      "tarea": "Respuestas a las palabras de historias, correos y comunidades (SUSTO, LISTA, BLACK, NAVES, TEMARIO, MÁSTER, NIVEL, ACERO, ZAPATA): las contesta una persona; las de oferta pasan a WhatsApp, donde va el precio y la mini landing. Dejar plantillas listas en la bandeja.",
       "desbloquea": "Que las historias de venta conviertan",
       "cuando": "antes del 30-oct",
       "para": "Ester y Aylin"
@@ -138,6 +139,7 @@
       "descripcion": "4-5 piezas por semana. La serie Chuleta sale martes o miércoles; el workshop ocupa su carrusel y sus dos videos; la Black Week va sin precios en el feed.",
       "reglas": [
         "Cada pieza lleva el CTA de su producto: Máster → NIVEL; ACERO → ACERO; concreto → ZAPATA; workshop → WORKSHOP (hasta el 17).",
+        "Si la pieza VENDE la especialización (no regala un recurso), la palabra es TEMARIO; en la Black Week, BLACK. ACERO entrega la guía gratis, no la información del curso.",
         "En TikTok y YouTube Shorts, sin palabra clave: pregunta abierta."
       ],
       "calendario": [
@@ -1847,7 +1849,7 @@
           "formato_publicacion": "CARRUSEL (7 láminas)",
           "intencion": "objeción",
           "producto": "Acero",
-          "cta": "Comenta ACERO",
+          "cta": "Comenta TEMARIO",
           "estado": "POR DISEÑAR",
           "nota": "BLACK FRIDAY ECUADOR (20-nov, feriado). El feed explica el programa sin precio; la oferta va en historias, correo y pauta.",
           "contenido": {
@@ -1872,8 +1874,8 @@
             "pilar": "Dar a conocer el programa · objeción «¿me sirve?» · Black Friday Ecuador (20-nov)",
             "hook": "Antes de preguntar el precio, pregúntate esto: ¿qué vas a poder hacer al terminar?",
             "cta": {
-              "instagram": "Comenta ACERO",
-              "facebook": "Comenta ACERO",
+              "instagram": "Comenta TEMARIO",
+              "facebook": "Comenta TEMARIO",
               "tiktok": "Pregunta abierta, sin palabra clave",
               "youtube_shorts": "Pregunta abierta, sin palabra clave"
             },
@@ -1911,19 +1913,19 @@
               },
               {
                 "n": 7,
-                "texto": "No es para fabricar o soldar: es para diseñar y calcular en software. · Comenta ACERO y te mando el temario y la guía de las 5 verificaciones.",
+                "texto": "No es para fabricar o soldar: es para diseñar y calcular en software. · Comenta TEMARIO y te mando el temario de la especialización.",
                 "visual": "Cierre."
               }
             ],
-            "caption": "Antes de preguntar el precio, pregúntate qué vas a poder hacer al terminar.\n\nEn la Especialización en Acero: modelar la nave en Revit, calcularla en Robot, verificar las uniones en Advance Steel y sacar los planos. Con un tutor de IA que te dice en qué lección y minuto se explicó cada cosa.\n\nY lo decimos claro: no es para fabricar o soldar, es para diseñar y calcular en software.\n\n¿Qué módulo te hace más falta hoy? 👇\n\nComenta ACERO y te mandamos el temario y la guía de las 5 verificaciones.",
+            "caption": "Antes de preguntar el precio, pregúntate qué vas a poder hacer al terminar.\n\nEn la Especialización en Acero: modelar la nave en Revit, calcularla en Robot, verificar las uniones en Advance Steel y sacar los planos. Con un tutor de IA que te dice en qué lección y minuto se explicó cada cosa.\n\nY lo decimos claro: no es para fabricar o soldar, es para diseñar y calcular en software.\n\n¿Qué módulo te hace más falta hoy? 👇\n\nComenta TEMARIO y te mandamos el temario de la especialización.",
             "notas_produccion": "SIN PRECIO en el feed (regla de noviembre: ningún precio en público; la oferta va solo por WhatsApp). Confirmar con Dayana los nombres reales de los 4 módulos antes de diseñar. 20-nov: feriado y Black Friday en Ecuador (Primicias, 30-sep-2026): las historias y el correo de ese día llevan la oferta; el feed se queda en el valor.",
             "condicion": "SIN PRECIO en el feed (regla de noviembre: ningún precio en público; la oferta va solo por WhatsApp). Confirmar con Dayana los nombres reales de los 4 módulos antes de diseñar. 20-nov: feriado y Black Friday en Ecuador (Primicias, 30-sep-2026): las historias y el correo de ese día llevan la oferta; el feed se queda en el valor.",
             "prompt_imagenes": "",
             "formato_detalle": "CARRUSEL (7 láminas)",
             "red_principal": "instagram",
             "cta_por_red": {
-              "instagram": "Comenta ACERO",
-              "facebook": "Comenta ACERO",
+              "instagram": "Comenta TEMARIO",
+              "facebook": "Comenta TEMARIO",
               "tiktok": "Pregunta abierta, sin palabra clave",
               "youtube_shorts": "Pregunta abierta, sin palabra clave"
             }
@@ -2266,7 +2268,7 @@
           "formato_publicacion": "REEL (28-30 s)",
           "intencion": "objeción",
           "producto": "Acero",
-          "cta": "Comenta ACERO",
+          "cta": "Comenta TEMARIO",
           "estado": "POR GRABAR",
           "nota": "Gabriel a cámara: honestidad en la Black Week.",
           "contenido": {
@@ -2291,8 +2293,8 @@
             "pilar": "Gabriel a cámara · objeción dinero · Black Week (honestidad)",
             "hook": "Esta semana todos te van a vender cursos con descuento. Antes de comprar uno, incluso el nuestro, hazte estas tres preguntas.",
             "cta": {
-              "instagram": "Comenta ACERO",
-              "facebook": "Comenta ACERO",
+              "instagram": "Comenta TEMARIO",
+              "facebook": "Comenta TEMARIO",
               "tiktok": "Pregunta abierta, sin palabra clave",
               "youtube_shorts": "Pregunta abierta, sin palabra clave"
             },
@@ -2331,19 +2333,19 @@
               [
                 "0:22-0:30",
                 "Primer plano, CTA",
-                "Si respondiste que sí a las tres y lo tuyo es diseñar acero en software, comenta ACERO y te cuento qué incluye la especialización.",
-                "COMENTA ACERO"
+                "Si respondiste que sí a las tres y lo tuyo es diseñar acero en software, comenta TEMARIO y te cuento qué incluye la especialización.",
+                "COMENTA TEMARIO"
               ]
             ],
-            "caption": "Esta semana todos te van a vender cursos con descuento. Antes de comprar uno, incluso el nuestro, hazte tres preguntas:\n\n1 · ¿Qué voy a poder hacer al terminar que hoy no puedo?\n2 · ¿Dónde lo voy a usar en los próximos tres meses?\n3 · ¿Tengo una o dos horas al día para estudiarlo?\n\nSi alguna es «no», ningún descuento lo hace barato.\n\nSi respondiste que sí a las tres y lo tuyo es diseñar acero en software, comenta ACERO y te contamos qué incluye la especialización.",
+            "caption": "Esta semana todos te van a vender cursos con descuento. Antes de comprar uno, incluso el nuestro, hazte tres preguntas:\n\n1 · ¿Qué voy a poder hacer al terminar que hoy no puedo?\n2 · ¿Dónde lo voy a usar en los próximos tres meses?\n3 · ¿Tengo una o dos horas al día para estudiarlo?\n\nSi alguna es «no», ningún descuento lo hace barato.\n\nSi respondiste que sí a las tres y lo tuyo es diseñar acero en software, comenta TEMARIO y te contamos qué incluye la especialización.",
             "version_tiktok": "Sin palabra. Cierre: «¿Cuál de las tres te frena? Te leo.»",
             "notas_produccion": "PRUEBA DE FORMATO (estilo 10 · Gabriel + motion cromado). El control es «el error que más veo» (14-nov), Gabriel a cámara sin motion. Plantilla: video-recursos/plantillas/gabriel-motion-cromado. Gabriel a cámara (pedido de Dayana: más Gabriel). Objeción de dinero sin precio. La honestidad es el ángulo: en octubre la objeción de tiempo resolvió 3 de 5 casos (COMPRADORES-VS-NO.md).",
             "condicion": "Gabriel a cámara (pedido de Dayana: más Gabriel). Objeción de dinero sin precio. La honestidad es el ángulo: en octubre la objeción de tiempo resolvió 3 de 5 casos (COMPRADORES-VS-NO.md).",
             "formato_detalle": "REEL (28-30 s)",
             "red_principal": "instagram",
             "cta_por_red": {
-              "instagram": "Comenta ACERO",
-              "facebook": "Comenta ACERO",
+              "instagram": "Comenta TEMARIO",
+              "facebook": "Comenta TEMARIO",
               "tiktok": "Pregunta abierta, sin palabra clave",
               "youtube_shorts": "Pregunta abierta, sin palabra clave"
             },
@@ -2370,8 +2372,8 @@
               },
               {
                 "tiempo": "0:22-0:30",
-                "accion": "Primer plano, CTA · En pantalla: COMENTA ACERO",
-                "voz": "Si respondiste que sí a las tres y lo tuyo es diseñar acero en software, comenta ACERO y te cuento qué incluye la especialización."
+                "accion": "Primer plano, CTA · En pantalla: COMENTA TEMARIO",
+                "voz": "Si respondiste que sí a las tres y lo tuyo es diseñar acero en software, comenta TEMARIO y te cuento qué incluye la especialización."
               }
             ],
             "formato_prueba": "estilo 10 · Gabriel + motion cromado"
@@ -2387,7 +2389,7 @@
           "formato_publicacion": "POST (1 imagen 4:5)",
           "intencion": "objeción",
           "producto": "Acero · cursos",
-          "cta": "Comenta ACERO",
+          "cta": "Comenta BLACK",
           "estado": "POR DISEÑAR",
           "nota": "BLACK FRIDAY. Sin precios en el feed: van en DM, correo y anuncio.",
           "contenido": {
@@ -2412,8 +2414,8 @@
             "pilar": "Black Friday (27-nov) · objeción «¿qué me llevo?»",
             "hook": "Black Friday sin letra pequeña: esto es lo que incluye cada opción, y para quién es.",
             "cta": {
-              "instagram": "Comenta ACERO",
-              "facebook": "Comenta ACERO",
+              "instagram": "Comenta BLACK",
+              "facebook": "Comenta BLACK",
               "tiktok": "Pregunta abierta, sin palabra clave",
               "youtube_shorts": "Pregunta abierta, sin palabra clave"
             },
@@ -2425,14 +2427,14 @@
                 "visual": "Post 4:5 con tres columnas limpias (Acero · Cursos · Máster), cada una con «para quién es»; sello «cierra lun 30, 23:59» en naranja. Sin precios."
               }
             ],
-            "caption": "Black Friday sin letra pequeña.\n\n🔩 Especialización en Acero: para diseñar, calcular y verificar naves en software, con tutor de IA.\n🎯 Cursos de bajo costo: una herramienta concreta en pocas horas.\n🎓 Máster por bloques: lo vemos en una llamada de 20 minutos, según tu caso.\n\nLa oferta cierra el lunes 30 a las 23:59 (Ecuador) y no se reabre.\n\nComenta ACERO y te mandamos lo que incluye y el precio de Black Friday por mensaje.",
+            "caption": "Black Friday sin letra pequeña.\n\n🔩 Especialización en Acero: para diseñar, calcular y verificar naves en software, con tutor de IA.\n🎯 Cursos de bajo costo: una herramienta concreta en pocas horas.\n🎓 Máster por bloques: lo vemos en una llamada de 20 minutos, según tu caso.\n\nLa oferta cierra el lunes 30 a las 23:59 (Ecuador) y no se reabre.\n\nComenta BLACK y te mandamos lo que incluye y el precio de Black Friday por mensaje.",
             "notas_produccion": "SIN PRECIOS en el feed: el precio de Black Friday va en DM, correo y anuncio. Los precios los fija Dayana (propuesta en la sección Black Friday). Escasez real: cierre el 30-nov 23:59 y NO se reabre (riesgo legal y de confianza de reabrir).",
             "condicion": "SIN PRECIOS en el feed: el precio de Black Friday va en DM, correo y anuncio. Los precios los fija Dayana (propuesta en la sección Black Friday). Escasez real: cierre el 30-nov 23:59 y NO se reabre (riesgo legal y de confianza de reabrir).",
             "formato_detalle": "POST (1 imagen 4:5)",
             "red_principal": "instagram",
             "cta_por_red": {
-              "instagram": "Comenta ACERO",
-              "facebook": "Comenta ACERO",
+              "instagram": "Comenta BLACK",
+              "facebook": "Comenta BLACK",
               "tiktok": "Pregunta abierta, sin palabra clave",
               "youtube_shorts": "Pregunta abierta, sin palabra clave"
             }
@@ -4067,19 +4069,19 @@
               {
                 "n": 3,
                 "visual": "Cierre invertido ámbar (texto azul sobre ámbar).",
-                "texto": "Respóndeme ACERO si estás cansado de depender de otro para el cálculo y de dudar de cada perfil que eliges.",
-                "sticker": "RESPONDER CON «ACERO» (se contesta a mano con el temario; el precio solo si lo pregunta)."
+                "texto": "Respóndeme TEMARIO si estás cansado de depender de otro para el cálculo y de dudar de cada perfil que eliges.",
+                "sticker": "RESPONDER CON «TEMARIO» (se contesta a mano con el temario; el precio solo si lo pregunta)."
               }
             ],
             "cta": {
-              "instagram": "Respóndeme ACERO",
-              "facebook": "Respóndeme ACERO"
+              "instagram": "Respóndeme TEMARIO",
+              "facebook": "Respóndeme TEMARIO"
             },
             "origen": "matriz noviembre 2026",
-            "notas_produccion": "ESTRUCTURA DE VENTA EN 3 TIEMPOS (28-oct): curiosidad → prueba real → «Respóndeme X si estás cansado de…». La prueba del frame 2 es SIEMPRE una captura real (mensaje de alumno con nombre tapado si no hay permiso, modelo, resultado); nada inventado. Cada «Respóndeme X» llega como DM y NO lo contesta el bot: alguien del equipo responde el mismo día, con el nombre de la persona y una pregunta al final (HISTORIAS-VENTA.md §4). Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 🎥 GABRIEL A CÁMARA (Dayana, 23-oct: al menos 2 veces por semana). Selfie vertical, 10-15 s, luz de ventana, sin guion leído: dice la idea con sus palabras. Se graban todas las de la semana en la sesión con Daniela. VENTA de Acero: el precio solo por DM. A quien diga que quiere fabricar o soldar, se le dice con honestidad que Acero no es para eso. Mismo día del reel «Para quién es el workshop». La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja.",
+            "notas_produccion": "ESTRUCTURA DE VENTA EN 3 TIEMPOS (28-oct): curiosidad → prueba real → «Respóndeme X si estás cansado de…». La prueba del frame 2 es SIEMPRE una captura real (mensaje de alumno con nombre tapado si no hay permiso, modelo, resultado); nada inventado. Cada «Respóndeme X» llega como DM y NO lo contesta el bot: alguien del equipo responde el mismo día, con el nombre de la persona y una pregunta al final (HISTORIAS-VENTA.md §4). Máximo 4 frames. Las respuestas a historias llegan como DM y NO las contesta el bot: alguien del equipo responde a mano, con el nombre de la persona y una pregunta al final. Votos de encuesta: se revisan el mismo día y se escribe por DM a quien votó. 🎥 GABRIEL A CÁMARA (Dayana, 23-oct: al menos 2 veces por semana). Selfie vertical, 10-15 s, luz de ventana, sin guion leído: dice la idea con sus palabras. Se graban todas las de la semana en la sesión con Daniela. VENTA de Acero: el precio solo por DM. A quien diga que quiere fabricar o soldar, se le dice con honestidad que Acero no es para eso. Mismo día del reel «Para quién es el workshop». La oferta (precio + mini landing) se manda por DM o WhatsApp solo a quien responde; nunca se enlaza la página vieja. Palabra de venta: TEMARIO (no ACERO). ACERO dispara la automatización de la guía gratis de las 5 verificaciones; TEMARIO le dice al bot y a Ester que quieren la información de la especialización (30-oct, Dayana).",
             "cta_por_red": {
-              "instagram": "Respóndeme ACERO",
-              "facebook": "Respóndeme ACERO"
+              "instagram": "Respóndeme TEMARIO",
+              "facebook": "Respóndeme TEMARIO"
             },
             "estructura_historia": "venta 3 tiempos"
           }
@@ -5991,8 +5993,18 @@
       },
       {
         "palabra": "ACERO",
-        "fecha": "4, 10, 19, 20, 24, 25 y 27-nov",
-        "producto": "Acero"
+        "fecha": "4, 10, 19 y 24-nov",
+        "producto": "Guía de las 5 verificaciones (lead magnet)"
+      },
+      {
+        "palabra": "TEMARIO",
+        "fecha": "historia del 5-nov, 20 y 25-nov",
+        "producto": "Información de la Especialización en Acero (venta)"
+      },
+      {
+        "palabra": "BLACK",
+        "fecha": "27-nov (feed) y historias de la Black Week",
+        "producto": "Oferta de Black Friday"
       },
       {
         "palabra": "ZAPATA",
