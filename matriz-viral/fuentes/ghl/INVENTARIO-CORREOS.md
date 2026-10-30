@@ -1,8 +1,8 @@
 # Inventario de correos — GoHighLevel
 
-Generado el 2026-10-26.
+Generado el 2026-10-30.
 
-**461 plantillas** en **58 carpetas**. 461 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
+**465 plantillas** en **58 carpetas**. 465 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
 
 > Lo que NO sale por API: que workflow usa que plantilla. El endpoint de automatizaciones devuelve solo metadatos. En esta cuenta las plantillas estan nombradas por su flujo, asi que el cruce se puede hacer leyendo.
 
@@ -3875,6 +3875,41 @@ Agendar una cita
 &iquest;Prefieres preguntarnos primero?
 Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
 Hablar por WhatsApp
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ Halloween promo cursos
+
+- **id:** `6ae20aeeebf815b19e5aea35`
+- **tipo:** html
+- **actualizada:** 2026-10-28T15:03:15.153Z
+- **Cuerpo:**
+
+```
+Marketing -> Correos -> Plantillas -> Code Editor (Ctrl+A, Ctrl+V)
+Variables: {{contact.first_name}} y la baja (pie)
+-->
+Del 30 oct al 1 nov. Acceso por 1 mes y certificado DMA.
+&#127875; Promo Halloween &#128376;&#65039;
+Lo &uacute;nico que deber&iacute;a darte miedo es seguir calculando a ciegas
+Hola {{contact.first_name}} ,
+Este Halloween tienes 35 cursos BIM a elecci&oacute;n de dise&ntilde;o estructural, cimentaciones, acero y BIM. Eliges el que quieras y te lo llevas a $19.99 USD cada uno , en lugar de $154.99 . Solo escribe el c&oacute;digo al pagar.
+C&oacute;digo
+SUSTO
+Escr&iacute;belo en el campo de cup&oacute;n al pagar cada curso
+&#10003;
+35 cursos BIM a elecci&oacute;n, a $19.99 USD cada uno
+&#10003;
+Acceso por 1 mes
+&#10003;
+Certificado DMA con c&oacute;digo QR
+&#10003;
+Material descargable
+&#128197; Solo del viernes 30 de octubre al domingo 1 de noviembre
+VER LOS 35 CURSOS &#8594;
+&iquest;DUDAS? ESCR&Iacute;BENOS
 Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
 designmodelingacademy.com
 {{unsubscribe_url}}
@@ -7871,26 +7906,185 @@ Ing. Gabriel Pantoja
 ¡AGENDA TU CITA AQUÍ!
 ```
 
+### ✅ CITA Agendada Diplomado
+
+- **id:** `6ae4ac0096c503e784cf08a9`
+- **tipo:** html
+- **actualizada:** 2026-10-30T15:36:27.654Z
+- **Cuerpo:**
+
+```
+Marketing -> Correos -> Plantillas -> Code Editor (Ctrl+A, Ctrl+V)
+-->
+Antes de la llamada, revisa el temario y anota tus dudas.
+Tu cita est&aacute; agendada
+Gracias por
+agendar tu cita para el Diplomado BIM
+Listo
+{{contact.first_name}} &#128075;
+Gracias por agendar
+tu cita para el Diplomado Universitario Internacional BIM .
+Tu cita
+{{appointment.only_start_date}} &middot; {{appointment.only_start_time}}
+En la llamada,
+nuestro asesor {{appointment.user.name}} te explica c&oacute;mo
+funciona el programa y resolvemos tus dudas.
+&#128204; Antes de la cita: revisa el temario del
+diplomado que te interesa y anota tus preguntas. As&iacute; aprovechamos al m&aacute;ximo tu
+espacio.
+Elige el temario de
+tu diplomado
+Diplomado BIM &middot; Estructuras
+Edificaciones de Acero Estructural y Hormig&oacute;n Armado
+Ver el temario
+Diplomado BIM &middot; Arquitectura
+Modelado
+y Renderizado de Proyectos Arquitect&oacute;nicos
+Ver el temario
+&iquest;Tienes problemas con tu cita?
+Si
+necesitas reprogramar o algo no te funciona, escr&iacute;benos y lo resolvemos.
+Escribir por WhatsApp
+Un
+saludo,
+Equipo Design Modeling
+Design Modeling DG
+&middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ CITA Reagendada Diplomado
+
+- **id:** `6ae4acb680bccb24ecc5794b`
+- **tipo:** html
+- **actualizada:** 2026-10-30T15:42:56.456Z
+- **Cuerpo:**
+
+```
+Marketing -> Correos -> Plantillas -> Code Editor (Ctrl+A, Ctrl+V)
+-->
+Tu espacio estaba reservado. Elige un nuevo horario aquí.
+Diplomado BIM
+&iquest;Reagendamos tu cita?
+Hola,
+{{contact.first_name}}
+Espero que todo
+est&eacute; bien.
+Hoy ten&iacute;amos
+tu espacio reservado para explicarte el
+Diplomado Universitario Internacional BIM , pero no pudimos
+conectar. Entiendo que surgen imprevistos.
+Las citas gratuitas
+con asesor son limitadas cada semana, as&iacute; que quiero ayudarte a reagendar pronto. Elige el
+d&iacute;a y la hora en que puedas asistir con seguridad:
+Reagendar mi cita &#8594;
+Cita gratuita con un asesor
+acad&eacute;mico
+Mientras tanto,
+revisa el temario
+Diplomado BIM &middot; Estructuras
+Edificaciones de Acero Estructural y Hormig&oacute;n Armado
+Ver el temario
+Diplomado BIM &middot; Arquitectura
+Modelado
+y Renderizado de Proyectos Arquitect&oacute;nicos
+Ver el temario
+Quedo a tu
+disposici&oacute;n,
+Ing. Gabriel Pantoja
+Design Modeling DG
+&middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅ REGALO Cita Diplomado
+
+- **id:** `6ae4ac38c1b5e7ddc0824284`
+- **tipo:** html
+- **actualizada:** 2026-10-30T15:43:52.496Z
+- **Cuerpo:**
+
+```
+Marketing -> Correos -> Plantillas -> Code Editor (Ctrl+A, Ctrl+V)
+-->
+Te dejamos el temario para que lo revises con calma.
+Diplomado BIM &middot; Gracias por asistir
+Gracias por
+tu tiempo
+{{contact.first_name}} &#128075;
+Gracias por asistir
+a la cita del Diplomado Universitario Internacional BIM . Como
+vimos en la llamada, te dejamos el temario para que lo tengas a mano y lo revises con calma.
+Revisa el temario de
+tu diplomado
+Diplomado BIM &middot; Estructuras
+Edificaciones de Acero Estructural y Hormig&oacute;n Armado
+Ver el temario
+Diplomado BIM &middot; Arquitectura
+Modelado
+y Renderizado de Proyectos Arquitect&oacute;nicos
+Ver el temario
+Lo que obtienes al terminar
+Titulaci&oacute;n con respaldo internacional
+Autodesk
+Uno por
+m&oacute;dulo
+Design Modeling
+Al finalizar
+Doctrina
+Qualitas
+Al finalizar
+Sabal
+University
+Estados Unidos
+Univ. de las
+Naciones
+M&eacute;xico
+&#128179; Recuerda: puedes pagar el diplomado en
+2 cuotas de USD 250 .
+&iquest;Qu&eacute; te pareci&oacute; lo que vimos?
+Cualquier duda, escr&iacute;benos y la revisamos contigo.
+Escribir por WhatsApp
+Un
+saludo,
+Equipo Design Modeling
+Design Modeling DG
+&middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
 ### ✅ REGALO Cita Máster
 
 - **id:** `6a87485bda320347a24b3acd`
 - **tipo:** html
-- **actualizada:** 2026-09-18T15:08:29.183Z
+- **actualizada:** 2026-10-29T17:23:54.141Z
 - **Cuerpo:**
 
 ```
-Tu ruta de credenciales reconocida y tu acceso de regalo al Modulo 1 del Diplomado BIM.
-Regalo exclusivo &middot; 100% gratis
-Gracias por acompa&ntilde;arnos
+Marketing -> Correos -> Plantillas -> Code Editor (Ctrl+A, Ctrl+V)
+Variables: {{contact.first_name}} y la baja (pie)
+-->
+Tu progreso reconocido en cada etapa del M&aacute;ster.
+M&aacute;ster BIM + IA &middot; Ruta de credenciales
+Gracias por
+tu tiempo
 {{contact.first_name}} &#128075;
-Gracias por asistir a la cita del M&aacute;ster BIM con Inteligencia Artificial . Por ac&aacute; te dejamos la siguiente imagen con tu progreso reconocido en cada etapa.
-Y como lo prometido es deuda &#128229; aqu&iacute; tienes tu acceso de regalo al M&oacute;dulo 1 del Diplomado BIM en Estructuras : el m&oacute;dulo completo, con sus clases y sus archivos de pr&aacute;ctica, sin costo y sin compromiso.
-ACCEDER A MI REGALO &#8594;
-Acceso 100% gratuito &middot; al completarlo recibes tu certificado
-&iquest;No puedes entrar?
-Revisa primero spam y promociones. Si aun as&iacute; no aparece, escr&iacute;benos y te damos el acceso al instante.
+Gracias por asistir
+a la cita del M&aacute;ster BIM con Inteligencia Artificial . Por
+ac&aacute; te dejamos la siguiente imagen con tu progreso reconocido en cada etapa.
+&iquest;Te
+qued&oacute; alguna duda?
+Escr&iacute;benos
+por WhatsApp y la revisamos contigo.
 Escribir por WhatsApp
-Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+Un
+saludo,
+Equipo Design Modeling
+Design Modeling DG
+&middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
 designmodelingacademy.com
 {{unsubscribe_url}}
 ```
@@ -8076,7 +8270,7 @@ designmodelingacademy.com
 
 - **id:** `6a9ee9a9f439a0e05ca1ff75`
 - **tipo:** html
-- **actualizada:** 2026-09-07T16:47:58.301Z
+- **actualizada:** 2026-10-29T17:17:50.732Z
 - **Cuerpo:**
 
 ```
@@ -9664,7 +9858,7 @@ designmodelingacademy.com
 
 - **id:** `6aad8bc5cbcc9427cbd3b83f`
 - **tipo:** html
-- **actualizada:** 2026-09-18T19:25:56.062Z
+- **actualizada:** 2026-10-29T15:54:33.096Z
 - **Cuerpo:**
 
 ```
