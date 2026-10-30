@@ -43,12 +43,14 @@ FEED = [
     ("2026-11-05", "nov-ws-para-quien-reel", "objeción", "Máster · workshop", "Comenta WORKSHOP", "Workshop · video 2 (filtra a quien empieza de cero)."),
     ("2026-11-06", "nov-dato-recubrimiento-post", "problema", "Diplomado · Estructuras", "Comenta ZAPATA",
      "Dato de cálculo verificable (formato que más guarda). Sale con el blog del viernes."),
-    ("2026-11-07", "nov-ia-revit-3-pasos-reel", "solución", "Máster · workshop", "Comenta WORKSHOP",
-     "REFERENTE: adaptación del reel casi viral de @lexmrbim (98.570 vistas, 3.162 comentarios). Tutorial de 3 pasos con el celular sobre el monitor y recurso por palabra; DMA dice lo que el servidor oficial NO hace."),
+    ("2026-11-07", "nov-valor-sismo-cimentaciones-reel", "problema", "Diplomado · Estructuras", "Comenta ZAPATA",
+     "Video de valor pendiente de octubre (Drive de Dayana, 30-oct): ya está editado. Entra en lugar del reel «IA + Revit en 3 pasos», que es justo lo que se hace en el workshop y pasa al 28-nov como clip."),
     ("2026-11-09", "nov-peru-bim-obligatorio-carrusel", "problema", "Máster", "Comenta NIVEL",
      "TENDENCIA: BIM obligatorio en Perú desde el 14-ago-2026 (MEF). Va también a LinkedIn."),
     ("2026-11-10", "nov-chuleta-2-cerchas-reel", "problema", "Acero · Naves PRO", "Comenta ACERO",
      "SERIE CHULETA 2/4 · EFEMÉRIDE: Día Mundial de la Ciencia (UNESCO)."),
+    ("2026-11-11", "nov-valor-5-suelos-zapata-reel", "problema", "Diplomado · Estructuras", "Comenta ZAPATA",
+     "Video de valor pendiente de octubre. Título igual al del video: «5 pisos sobre una zapata»."),
     ("2026-11-12", "nov-calidad-checklist-modelo-carrusel", "solución", "Máster", "Comenta NIVEL", "EFEMÉRIDE: World Quality Day."),
     ("2026-11-13", "nov-obj-master-bloques-post", "objeción", "Máster", "Comenta NIVEL",
      "Dar a conocer el Máster por bloques (Dayana, 23-oct). Sin precio. Sale con el blog del viernes."),
@@ -65,7 +67,13 @@ FEED = [
     ("2026-11-23", "nov-master-que-bloque-carrusel", "problema", "Máster", "Comenta NIVEL", "Abre la Black Week. Máster por bloques sin precio."),
     ("2026-11-24", "nov-chuleta-4-uniones-reel", "problema", "Acero", "Comenta ACERO", "SERIE CHULETA 4/4."),
     ("2026-11-25", "nov-gabriel-no-compres-descuento-reel", "objeción", "Acero", "Comenta TEMARIO", "Gabriel a cámara: honestidad en la Black Week."),
+    ("2026-11-26", "nov-valor-grava-zapata-reel", "problema", "Diplomado · Estructuras", "Comenta ZAPATA",
+     "Video de valor pendiente de octubre: un respiro de valor en la Black Week."),
     ("2026-11-27", "nov-bf-incluye-post", "objeción", "Acero · cursos", "Comenta BLACK", "BLACK FRIDAY. Sin precios en el feed: van en DM, correo y anuncio."),
+    ("2026-11-28", "nov-ia-revit-3-pasos-reel", "solución", "Máster", "Comenta NIVEL",
+     "CLIP DESTACADO DEL WORKSHOP (W+11): se corta de la grabación del 17-nov el momento de los 3 pasos. Antes estaba el 7-nov; se movió porque mostrarlo antes del workshop le quitaba sentido (Dayana, 30-oct)."),
+    ("2026-11-30", "nov-valor-6-uniones-viga-columna-reel", "problema", "Acero", "Comenta ACERO",
+     "Video de valor pendiente de octubre. ACERO entrega la guía de las 5 verificaciones (es de valor). 6 días después de la Chuleta 4 de uniones."),
 ]
 
 
@@ -73,7 +81,15 @@ def fila_feed(f, pid, intencion, producto, cta, nota):
     p = pieza(pid)
     return {"fecha": etiqueta(f), "fecha_iso": f, "semana": p.get("semana"), "id": pid,
             "titulo": p.get("titulo"), "tipo": p.get("tipo"), "formato_publicacion": p.get("formato_detalle") or p.get("formato"),
-            "intencion": intencion, "producto": producto, "cta": cta, "estado": p.get("estado"), "nota": nota}
+            "intencion": intencion, "producto": producto, "cta": cta, "estado": p.get("estado"), "nota": nota,
+            **({"fuera_de_cuota": True} if pid in FUERA_DE_CUOTA else {})}
+
+
+# Videos de valor que quedaron editados en octubre sin subir (Drive de Dayana, 30-oct).
+# Se publican en noviembre, pero no cuentan en el reparto 40/40/20 ni 50/20/30 del mes:
+# son 4 reels de «problema» que no se planificaron con esas cuotas.
+FUERA_DE_CUOTA = {"nov-valor-sismo-cimentaciones-reel", "nov-valor-5-suelos-zapata-reel",
+                  "nov-valor-grava-zapata-reel", "nov-valor-6-uniones-viga-columna-reel"}
 
 
 def filas_de(grupo_prefijo):
@@ -223,7 +239,7 @@ DESTACADAS = [
      "agregar": ["nov-hist-1104", "nov-hist-1105", "nov-hist-1111", "nov-hist-1118", "nov-hist-1120", "nov-hist-1123", "nov-hist-1124", "nov-hist-1125", "nov-hist-1127", "nov-hist-1130"],
      "quitar": "El 1-dic: todos los frames con precio, cuenta regresiva o «Black Friday» (vencidos)."},
     {"destacada": "🎯 BIM + IA", "que_va": "Máster por bloques, workshop, Perú BIM, checklist de calidad y preguntas sobre la IA.",
-     "agregar": ["nov-hist-1102", "nov-hist-1103", "nov-hist-1109", "nov-hist-1112", "nov-hist-1113", "nov-hist-1116", "nov-hist-1117", "nov-hist-1119", "nov-hist-1126"],
+     "agregar": ["nov-hist-1109", "nov-hist-1112", "nov-hist-1113", "nov-hist-1116", "nov-hist-1117", "nov-hist-1119", "nov-hist-1126"],
      "quitar": "Después del 17-nov, los frames de cuenta regresiva y registro del workshop (dejar solo el resumen del 19)."},
     {"destacada": "🎁 HERRAMIENTAS", "que_va": "Recursos gratis (zapatas, 5 verificaciones, test de nivel) y cursos de bajo costo.",
      "agregar": ["nov-hist-1031", "nov-hist-1101", "nov-hist-1106", "nov-hist-1110"],
@@ -236,7 +252,7 @@ DESTACADA_DE = {i: d["destacada"] for d in DESTACADAS for i in d["agregar"]}
 CHECKLIST = [
     {"tarea": "Revisar el post del 21-oct (DexigJZl5mA): su caption abre con el texto del carrusel cancelado del workshop, que decía «Jueves 22 de octubre». Si quedó la fecha vieja, editarlo.", "desbloquea": "Que nadie llegue al workshop con la fecha equivocada", "cuando": "ya", "para": "Daniela"},
     {"tarea": "WORKSHOP: montar y probar la palabra en GHL con una cuenta ajena (IG y FB), y confirmar que solo GHL la contesta.", "desbloquea": "Reel del 31-oct y todo el feed del workshop", "cuando": "antes del vie 30-oct", "para": "Ester"},
-    {"tarea": "Grabar en UNA sesión con Daniela: demo y «para quién es» del workshop, el reel «conectar la IA a Revit en 3 pasos» y «tu nave a ojo» (celular sobre el monitor, como el referente), el reel «el error que más veo», el reel «no compres por el descuento» y los selfies de Gabriel para historias (3, 5, 10, 12, 16, 18, 23 y 27-nov). Lista de pantallas en grabaciones-pantalla-gabriel.pdf.", "desbloquea": "6 reels y 8 historias con Gabriel a cámara", "cuando": "antes del jue 29-oct (lo del workshop) y del vie 13-nov (el resto)", "para": "Gabriel y Daniela"},
+    {"tarea": "Grabar en UNA sesión con Daniela: demo y «para quién es» del workshop, «tu nave a ojo» (celular sobre el monitor, como el referente), el reel «el error que más veo», el reel «no compres por el descuento» y los selfies de Gabriel para historias (3, 5, 10, 12, 16, 18, 23 y 27-nov). Lista de pantallas en grabaciones-pantalla-gabriel.pdf.", "desbloquea": "6 reels y 8 historias con Gabriel a cámara", "cuando": "antes del jue 29-oct (lo del workshop) y del vie 13-nov (el resto)", "para": "Gabriel y Daniela"},
     {"tarea": "Editar las 4 chuletas (perfiles de acero, cerchas, LOD, uniones) con los formatos de los reels del 19 y 20-oct que funcionaron: la 1, la 3 y la 4 como «Simbología de niveles» (lista visual sin voz) y la 2 como «5 tipos de cimentación» (pizarra con voz). Gabriel revisa cada lámina técnica antes de publicar.", "desbloquea": "La serie que se llevó octubre", "cuando": "una por semana, 2 días antes", "para": "Daniela / Dayana"},
     {"tarea": "Auditar el disparador de NIVEL: 110 disparos en 3 días contra 9 tests terminados (análisis del 23-oct). Comprobar si responde a cualquier comentario con la palabra «nivel» y avisar al setter.", "desbloquea": "Las 8 piezas que piden NIVEL", "cuando": "antes del lun 2-nov", "para": "Ester / Patricio"},
     {"tarea": "Decidir precios, bonos y cómo se nombra cada oferta de Halloween y Black Friday (propuesta en la pestaña Resumen). La promo va SOLO por WhatsApp: no se cambia la página vieja. Crear los cupones, las 3 mini landings (SUSTO; BLACK · Acero; BLACK · cursos) y el enlace de WhatsApp con cada palabra ya escrita, y ponerlo donde las piezas dicen [enlace de WhatsApp…].", "desbloquea": "Halloween (30-oct) y Black Week (18-nov)", "cuando": "Halloween antes del jue 29-oct; Black Friday antes del lun 16-nov", "para": "Ester (decide y crea)"},
@@ -257,9 +273,10 @@ CHECKLIST = [
 
 def main():
     feed = [fila_feed(*f) for f in FEED]
+    cuota = [x for x in feed if not x.get("fuera_de_cuota")]
     fmt = Counter("reel" if "REEL" in (x["formato_publicacion"] or "").upper() else
-                  "carrusel" if "CARRUSEL" in (x["formato_publicacion"] or "").upper() else "post" for x in feed)
-    inten = Counter("objeción/testimonio" if x["intencion"] in ("objeción", "testimonio") else x["intencion"] for x in feed)
+                  "carrusel" if "CARRUSEL" in (x["formato_publicacion"] or "").upper() else "post" for x in cuota)
+    inten = Counter("objeción/testimonio" if x["intencion"] in ("objeción", "testimonio") else x["intencion"] for x in cuota)
     hist = filas_de("GRUPO 5")
     ventas = sum(1 for x in hist if x.get("venta"))
     gab = sum(1 for x in hist if x.get("gabriel_a_camara"))
@@ -271,7 +288,7 @@ def main():
             "LO QUE APRENDIMOS EN OCTUBRE (análisis del 23-oct): dos reels que NO estaban en la matriz —«Simbología de niveles en planos ¿Cuál usas más?» (57.230 vistas, 220 comentarios, 2.455 guardados, 705 compartidos, el más compartido de la cuenta) y «5 tipos de cimentación» (8.598 vistas, 7,33 comentarios por 1.000)— se llevaron el 44 % de las vistas y el 71 % de los guardados del mes. Por eso noviembre abre la SERIE CHULETA: 4 reels, uno por semana.",
             "REFERENTES (Graph API, 23-oct; Apify sin crédito este mes): el reel DeGtyhfoXar de @lexmrbim («Conecta Revit + IA paso a paso») sacó 98.570 vistas y 3.162 comentarios. Su mediana de reels (5.224) es casi la nuestra (5.306): lo que lo separa es que CADA tutorial termina en un recurso por palabra (reels con palabra: 14 comentarios por 1.000; sin palabra: 0). Se adapta en dos reels (7 y 19-nov). @aecode.ai: lo que le funciona son carruseles comparativos con un problema de obra en el gancho.",
             "LO QUE NO FUNCIONÓ: los anuncios de producto sueltos en el feed (tutor, certificado, carrusel del workshop: 0 comentarios) y los reels de opinión sobre la IA y los clips de clase de los sábados (936 a 1.177 vistas, 0 a 2 comentarios). Cada producto entra detrás de un problema o de un dato. El workshop no tuvo registros porque todavía no se había promocionado: no hay anuncio y ninguna historia lo mencionaba.",
-            f"FEED: {len(feed)} piezas · formato {fmt['reel']} reels / {fmt['carrusel']} carruseles / {fmt['post']} posts · intención {inten['problema']} problema / {inten['solución']} solución / {inten['objeción/testimonio']} objeción.",
+            f"FEED: {len(cuota)} piezas + {len(feed) - len(cuota)} videos de valor pendientes de octubre (fuera de cuota, ya editados) · formato {fmt['reel']} reels / {fmt['carrusel']} carruseles / {fmt['post']} posts · intención {inten['problema']} problema / {inten['solución']} solución / {inten['objeción/testimonio']} objeción.",
             "EFEMÉRIDES Y TENDENCIAS ENTRAN AL CALENDARIO (pedido de Dayana, 23-oct): Día de Difuntos y de Muertos, Día de la Ciencia, World Quality Day, Buen Fin, Black Friday de Ecuador (20-nov) e internacional (27-nov), Cyber Monday, y la tendencia del sector: BIM obligatorio en Perú. Tabla completa en la pestaña Resumen.",
             f"HISTORIAS CON MÁS VENTA Y CON GABRIEL (Dayana, 23-oct): {ventas} historias de venta en el mes (2 por semana hasta el workshop, más en la Black Week) y Gabriel a cámara en {gab} días (al menos 2 por semana), grabadas en una sola sesión con Daniela.",
             "DAR A CONOCER LOS PROGRAMAS: el Máster por bloques (BIM Professional · Coordination · Management · BIM + IA) y la Especialización en Acero se explican con piezas propias (13, 20 y 23-nov), siempre desde el problema y sin precio en el feed.",
@@ -311,7 +328,7 @@ def main():
              "calendario": filas_de("GRUPO 4")},
             {"n": 5, "nombre": "GRUPO 5 · Historias de Instagram (y Facebook stories)",
              "descripcion": f"Lunes a viernes (y Halloween), 3-4 frames. {ventas} días de venta y {gab} con Gabriel a cámara.",
-             "reglas": ["DÍAS DE VENTA, en 3 tiempos: 1) curiosidad (la pieza que falta), 2) prueba REAL con captura, 3) «Respóndeme X si estás cansado de… y de…».", "DÍAS DE VALOR, en 3 tiempos: 1) curiosidad, 2) el dato o el tip, 3) «Respóndeme X y te mando [recurso gratis]» o el enlace del workshop.", "La apertura del frame 1 no se repite: cada historia arranca distinto.", "La prueba nunca se inventa: mensajes de alumnos (nombre tapado si no hay permiso), modelos o resultados reales.", "Precio nunca en la historia: va por DM o WhatsApp, con la mini landing de la oferta.", "Máximo 4 frames.", "Las respuestas llegan como DM: se contestan a mano el mismo día."],
+             "reglas": ["DÍAS DE VENTA, en 3 tiempos: 1) curiosidad (la pieza que falta), 2) prueba REAL con captura, 3) «Respóndeme X si estás cansado de… y de…».", "DÍAS DE VALOR, en 3 tiempos: 1) curiosidad, 2) el dato o el tip, 3) «Respóndeme X y te mando [recurso gratis]» o el enlace del workshop.", "La apertura del frame 1 no se repite: cada historia arranca distinto.", "La prueba nunca se inventa: mensajes de alumnos (nombre tapado si no hay permiso), modelos o resultados reales.", "Precio nunca en la historia: va por DM o WhatsApp, con la mini landing de la oferta.", "Máximo 4 frames.", "Las respuestas llegan como DM: se contestan a mano el mismo día.", "SIN HISTORIAS sábados, domingos ni feriados (lunes 2 y martes 3 de noviembre). Si hay una promo el fin de semana, va UN solo frame programado: repost del post o el arte, con su «Respóndeme X» solo si la palabra la contesta una automatización."],
              "calendario": [{**x, **({"destacada": DESTACADA_DE[x["id"]]} if x["id"] in DESTACADA_DE else {})} for x in hist]},
         ],
         "lead_magnets": {
@@ -320,12 +337,12 @@ def main():
             "respaldo": [{"nombre": "5 verificaciones en acero", "palabra": "ACERO", "por_que": "CTA de las chuletas de acero y de Acero."},
                          {"nombre": "Test de Nivel BIM", "palabra": "NIVEL", "por_que": "Puerta al Máster. Auditar el disparador antes del 2-nov."},
                          {"nombre": "Calculadora de Zapatas", "palabra": "ZAPATA", "por_que": "Subió de 181 a 214 etiquetados tras las chuletas de octubre."}],
-            "mapa_cta": [{"palabra": "WORKSHOP", "fecha": "31-oct, 3, 5, 7, 16 y 17-nov", "producto": "Registro al workshop"},
-                         {"palabra": "NIVEL", "fecha": "2, 9, 12, 13, 14, 18, 21 y 23-nov", "producto": "Máster"},
-                         {"palabra": "ACERO", "fecha": "4, 10, 19 y 24-nov", "producto": "Guía de las 5 verificaciones (lead magnet)"},
+            "mapa_cta": [{"palabra": "WORKSHOP", "fecha": "31-oct, 3, 5, 16 y 17-nov", "producto": "Registro al workshop"},
+                         {"palabra": "NIVEL", "fecha": "2, 9, 12, 13, 14, 18, 21, 23 y 28-nov", "producto": "Máster"},
+                         {"palabra": "ACERO", "fecha": "4, 10, 19, 24 y 30-nov", "producto": "Guía de las 5 verificaciones (lead magnet)"},
                          {"palabra": "TEMARIO", "fecha": "historia del 5-nov, 20 y 25-nov", "producto": "Información de la Especialización en Acero (venta)"},
                          {"palabra": "BLACK", "fecha": "27-nov (feed) y historias de la Black Week", "producto": "Oferta de Black Friday"},
-                         {"palabra": "ZAPATA", "fecha": "6-nov", "producto": "Calculadora de zapatas"}],
+                         {"palabra": "ZAPATA", "fecha": "6, 7, 11 y 26-nov", "producto": "Calculadora de zapatas"}],
         },
         "destacadas": {"responsable": "Daniela", "nota": "Se alimentan cada viernes; lo vencido (SUSTO, cuenta regresiva del workshop, Black Friday) se quita al día siguiente de cerrar.", "lista": DESTACADAS},
         "correos_nota": "A la lista propia: Halloween (2), workshop (3) y Black Friday (6).",
