@@ -95,7 +95,10 @@ def main():
     malas = [p["id"] for p in G.values() for k in ("slides", "historias", "guion_reel") if k in p and not isinstance(p[k], list)]
     informe("FALLA" if malas else "OK", "slides / historias / guion_reel son listas", ", ".join(malas))
 
-    feed = cal["grupos"][0]["calendario"]
+    fuera = [e["id"] for e in cal["grupos"][0]["calendario"] if e.get("fuera_de_cuota")]
+    if fuera:
+        informe("AVISO", f"{len(fuera)} pieza(s) del feed fuera de cuota (no cuentan en el reparto)", ", ".join(fuera))
+    feed = [e for e in cal["grupos"][0]["calendario"] if not e.get("fuera_de_cuota")]
     n = len(feed)
     fmt = Counter("reel" if "REEL" in (e.get("formato_publicacion") or "").upper() else
                   "carrusel" if "CARRUSEL" in (e.get("formato_publicacion") or "").upper() else "post" for e in feed)
