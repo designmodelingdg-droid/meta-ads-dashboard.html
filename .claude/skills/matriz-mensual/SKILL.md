@@ -80,6 +80,12 @@ real en `historico-2026.json`.
 - **Palabras vivas:** NIVEL (Máster), ACERO, ZAPATA, MEMORIA, COTIZA y, en los
   lanzamientos, DIPLOMADO. CHATGPT está retirada. Antes de usar una palabra, se
   mira `campanas.json`.
+- **Las piezas de venta no piden palabras de lead magnet** (Dayana, 30-oct). ACERO,
+  NIVEL y ZAPATA disparan la automatización del recurso gratis: «Respóndeme ACERO» en
+  una historia de venta mandaba la guía de las 5 verificaciones en vez de la
+  información del curso. Para vender se usa una palabra de curso que ninguna
+  automatización escucha: TEMARIO (Especialización en Acero), MÁSTER, NAVES, y las de
+  la oferta del mes (SUSTO, LISTA, BLACK). `verificar_matriz_mes.py` lo comprueba.
 - **Lead magnets:** como máximo uno nuevo al mes. Los demás son de respaldo y
   ya existen. Si uno no genera DM en la semana 2, se cambia por otro de
   respaldo, no por uno nuevo.
