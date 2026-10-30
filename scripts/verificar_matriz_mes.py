@@ -31,7 +31,7 @@ from historico_matriz import ya_usado  # noqa: E402
 M = pathlib.Path("matriz-viral/matriz")
 MESES = {"10": "octubre", "11": "noviembre", "12": "diciembre", "09": "septiembre"}
 PALABRAS_VIVAS = {"NIVEL", "ACERO", "ZAPATA", "MEMORIA", "COTIZA", "DIPLOMADO", "BIM", "IA",
-                  "GUIA", "WORKSHOP"}  # GUIA: OpenReply, campaña «Guía Revit» (reel del Mié 7, cambio del 5-oct) · WORKSHOP: GHL, se monta antes del 19-oct (checklist)
+                  "GUIA", "WORKSHOP", "TEMARIO", "BLACK"}  # GUIA: OpenReply, campaña «Guía Revit» (reel del Mié 7, cambio del 5-oct) · WORKSHOP: GHL, se monta antes del 19-oct (checklist)
 PRECIO_MASTER = re.compile(r"2[.,]?699|\$\s?499|\$\s?500\b|\$\s?160\b|12 cuotas", re.I)
 
 resultado = {"FALLA": 0, "AVISO": 0}
@@ -137,6 +137,22 @@ def main():
                 if w not in PALABRAS_VIVAS:
                     malas_pal.append(f"{i}: {w}")
     informe("FALLA" if malas_pal else "OK", "Palabras de comentario en la lista viva", "; ".join(sorted(set(malas_pal))))
+
+    # Las piezas de venta no piden una palabra de lead magnet (30-oct, Dayana): «Respóndeme
+    # ACERO» en la historia de venta del 5-nov mandaba la guía gratis de verificación en
+    # vez de la información del curso. Venta = TEMARIO / MÁSTER / NAVES / ofertas.
+    PALABRAS_LEAD_MAGNET = {"ACERO", "NIVEL", "ZAPATA", "MEMORIA", "COTIZA", "DYNAMO", "GUIA", "TUTOR", "TUTORIAL", "RUTA"}
+    venta_lm = []
+    for gr in cal.get("grupos", []):
+        for e in gr.get("calendario", []):
+            p = G.get(e.get("id"), {})
+            if e.get("tipo") != "venta" and not str(p.get("estructura_historia", "")).startswith("venta"):
+                continue
+            t_venta = json.dumps({k: p.get(k) for k in ("cta", "cta_por_red", "historias", "caption")}, ensure_ascii=False)
+            for w in re.findall(r"(?:[Rr]esp[oó]ndeme|[Cc]omenta|[Ee]scr[ií]beme)\s+«?([A-ZÁÉÍÓÚ]{2,})", t_venta):
+                if w in PALABRAS_LEAD_MAGNET:
+                    venta_lm.append(f"{e.get('id')}: {w}")
+    informe("FALLA" if venta_lm else "OK", "Las piezas de venta no piden palabras de lead magnet", "; ".join(sorted(set(venta_lm))))
 
     # Una palabra, una automatización (auditoría de septiembre: MEMORIA y DYNAMO
     # escuchadas a la vez por OpenReply y GHL, 34 DM fallidos).
