@@ -130,7 +130,7 @@ def ficha_anuncio(pid, campana):
 
 
 ADS = {
-    "WORKSHOP · registro (2 al 16-nov, parte de los 59 USD del plan)": ["nov-ads-ws-demo", "nov-ads-ws-5-preguntas"],
+    "WORKSHOP · registro (2 al 16-nov, parte de los 59 USD del plan)": ["nov-ads-ws-demo", "nov-ads-ws-5-preguntas", "nov-ads-ws-taller-gratis"],
     "ACERO · Black Friday (18 al 30-nov)": ["nov-ads-acero-bf"],
     "CURSOS DE BAJO COSTO · Halloween (30-oct al 1-nov) y Black Week": ["nov-ads-cursos-bf"],
     "MÁSTER · bono de Black Week (23 al 30-nov), sin precio": ["nov-ads-master-bono"],
