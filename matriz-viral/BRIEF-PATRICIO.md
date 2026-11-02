@@ -633,3 +633,55 @@ La semana sumó 94.341 vistas. Las dos chuletas hicieron 76.887 (81 %), 408 de l
 **Historias:** 15 frames en 6 días, 17 respuestas. Retención entre 76 % y 90 %, por encima de la semana anterior (64-71 %) y en línea con la referencia (77 %). El martes 20 fue el mejor: 608 de alcance y 11 respuestas.
 
 **Embudos (7 días):** ZAPATA 38 contactos del bot y 7 accesos. ACERO 15 contactos y 3 accesos: la caída sigue en el formulario. NIVEL 416 contactos y 26 accesos (ver lección 3).
+
+## Actualización 2026-11-02 · semana 26 oct – 1 nov: semana de objeciones y del puente, la conversación cae a cero
+
+Datos: Graph API (Action «Métricas semanales» del 2-nov), historias y embudos de GHL. Las piezas tienen entre 1 y 7 días: las vistas todavía crecen, pero los comentarios casi siempre llegan en los primeros 2 días.
+
+| Fecha | Pieza | Formato | Vistas | Coment. | Guard. | Comp. |
+|---|---|---|---|---|---|---|
+| Dom 1-nov | «Lo caro no es el curso» (objeción dinero) | post | 3.758 | 2 | 5 | 1 |
+| Jue 30 | Ranking de software estructural | reel | 1.551 | 0 | 17 | 7 |
+| Jue 30 | Halloween / cupón SUSTO | post | 1.393 | 3 | 2 | 1 |
+| Lun 27 | «¿Cuánto cobras por hora a 5 USD el m²?» (COTIZA) | reel | 1.238 | 11 | 7 | 1 |
+| Sáb 31 | «¿La IA te va a reemplazar?» (pizarra con voz IA) | reel | 1.086 | 0 | 5 | 1 |
+| Lun 26 | «No tengo tiempo» (objeción) | reel | 811 | 0 | 0 | 0 |
+| Jue 29 | «Ver tutoriales no es perder el tiempo» (objeción) | reel | 662 | 0 | 1 | 0 |
+| Sáb 31 | Demo del workshop (WORKSHOP) | reel | 640 | 0 | 4 | 0 |
+
+**Medianas por pieza**
+
+| Periodo | Vistas | Comentarios | Guardados |
+|---|---|---|---|
+| Esta semana (8 piezas) | 1.162 | 0 | 4,5 |
+| 4 semanas anteriores (25 piezas) | 2.910 | 6 | 9 |
+
+**Lecciones**
+1. **Cinco de ocho piezas eran objeciones o producto, y ninguna conversó.** Tiempo, tutoriales, «la IA te va a reemplazar» y la demo del workshop tuvieron 0 comentarios. La única pieza con conversación fue la que acusa un hábito concreto («cobras 5 USD por m²»: 11 comentarios, y COTIZA tuvo 9 contactos al bot). Es la regla de siempre. Una semana con casi todo objeción se cae entera, así que conviene mezclar: máximo una objeción por cada dos piezas de dato o acusación.
+2. **La prueba de la pizarra con voz IA no se puede leer todavía.** «¿La IA te va a reemplazar?» sacó 0 comentarios y 5 guardados, frente a 87 y 346 de «5 tipos de cimentación» con el mismo formato. El tema ya había fallado en julio (0 comentarios). La chuleta de cerchas (10-nov), que sale en pizarra, dirá si el problema es el formato o el tema.
+3. **El ranking guarda, como la chuleta.** «Ranking de software estructural» fue lo más guardado (17) y compartido (7). Es otro formato de lista que la gente guarda para después. Encaja con la serie Chuleta.
+4. **La demo del workshop no generó comentarios con WORKSHOP en 2 días.** El 3, el 5 y el 16 vuelven a pedir WORKSHOP, así que hay que mirar los registros por la landing y no solo los comentarios. Si al 9-nov siguen bajos, se refuerza con la pauta de registro.
+5. **El error de la app publicó de golpe lo aprobado (30-oct).** Se archivaron dos posts y «Lo caro no es el curso» salió el 1-nov. Fue la pieza más vista de la semana (3.758 en 1 día), pero solo tuvo 2 comentarios.
+
+**Plan contra lo publicado (feed)**
+- Salieron 6 de las 7 piezas planificadas entre el 26 y el 31. No salió «La IA ordena, tú decides» (27-oct).
+- «Cotiza» salió un día antes (27 en vez de 28) y «Lo caro no es el curso» dos días después (1-nov).
+- Fuera del plan del feed salieron el post de Halloween y «¿La IA te va a reemplazar?» (pieza de la prueba de formatos).
+
+**Historias:** 16 frames en 7 días, 20 respuestas en total y 239 de alcance promedio. El mejor día fue el lunes 27 (11 respuestas en un frame). Sábado y domingo se publicaron 3 frames con 0 respuestas, lo que confirma la regla nueva: sin historias el fin de semana, salvo una promo en un solo frame.
+
+**Embudos (7 días)**
+
+| Embudo | Contactos al bot | Accesos |
+|---|---|---|
+| ZAPATA | 12 | 37 |
+| ACERO | 11 | 21 |
+| MEMORIA | 6 | 24 |
+| COTIZA | 9 | 5 |
+| NIVEL | 224 | 32 |
+
+NIVEL sigue disparándose con palabras sueltas: 224 contactos y solo 32 accesos al test. Esto viene de la lección 3 de la semana pasada y sigue pendiente.
+
+**Ajustes que se aplican**
+- Ningún cambio de formato en el calendario: esta semana ningún formato ganó claro.
+- Noviembre ya cambió por pedido de Dayana: sin historias en feriados ni fines de semana, las 6 uniones el 4-nov y 4 videos de valor de octubre. Eso sube la proporción de dato técnico frente a objeción, que es justo lo que pide la lección 1.
