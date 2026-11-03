@@ -13,6 +13,7 @@
   "PALABRAS DE COMENTARIO: NIVEL (Máster), ACERO, ZAPATA y WORKSHOP (hasta el 17-nov). En historias, las respuestas (SUSTO, NAVES, COMBO, BLACK) llegan por DM y las contesta una persona. No hay lead magnet nuevo este mes.",
   "LAS PIEZAS DE VENTA NO USAN PALABRAS DE LEAD MAGNET (Dayana, 30-oct): ACERO, NIVEL y ZAPATA disparan la automatización del recurso gratis (ACERO manda la guía de las 5 verificaciones). Para pedir la información de un curso: TEMARIO (Especialización en Acero), MÁSTER, NAVES; para las ofertas: SUSTO, COMBO y BLACK. Las piezas de valor siguen con la palabra de su recurso.",
   "COMBO Y BLACK FRIDAY (Dayana, 3-nov, cierre de octubre): del vie 6 al jue 26 corre el combo (Especialización a precio normal $225 + Diplomado por $50; la llave es SOLO una especialización). Black Friday de 24 horas en todos los programas: vie 20 solo Ecuador y vie 27 todos (propuesta: cursos −50 %, especializaciones y diplomados −40 %, Máster −25 % en el bloque, sin precio). Se quitan el acceso anticipado, la Black Week y el Cyber Monday. Los números los confirma Ester.",
+  "ACERO A $225 SÍ O SÍ (Dayana, 3-nov): la Especialización en Acero con Tutor IA se vende a $225 todo noviembre, sin $199,99 ni descuentos sueltos (en octubre ninguna venta pagó los $225). La única excepción es el Black Friday de 24 horas (20 Ecuador · 27 todos).",
   "LA PROMO SOLO POR WHATSAPP (Dayana, 23-oct): ninguna pieza pública lleva el precio de la oferta ni enlaza la página vieja (excepción del 3-nov: el «diplomado por $50» del combo sí se dice en anuncio, correo, historias y comunidades; el feed sigue sin precios). Quien responde o escribe al WhatsApp recibe el precio y la mini landing de su oferta. Ester decide los precios y cómo se nombran. El Máster nunca lleva precio. Toda oferta cierra a la hora dicha (Ecuador) y NO se reabre.",
   "FORMATOS EN PRUEBA: chuleta visual sin voz, pizarra con voz de Gabriel (estilo 9) y Gabriel con motion cromado (estilo 10). Se revisan el 9 y el 30-nov. Un formato entra fijo solo si genera interés, interacción y ventas (pestaña Resumen).",
   "Visuales = capturas reales de Revit/Robot/Navisworks y cámara de Gabriel. Nada técnico se publica sin que Gabriel lo revise (regla 0).",
@@ -50,10 +51,10 @@
    "para": "Ester / Patricio"
   },
   {
-   "tarea": "COMBO DEL MES (3-nov): confirmar qué diplomados entran, su precio de referencia y el costo del certificado universitario por alumno; crear la mini landing COMBO, el enlace de WhatsApp con «COMBO» ya escrito y la etiqueta combo-nov en GHL. Ponerlo donde las piezas dicen [enlace de WhatsApp…].",
+   "tarea": "COMBO DEL MES (3-nov): Ester confirma qué diplomados entran y su precio de referencia (los $50 cubren el certificado: confirmado por Dayana). Ester y Daniela montan la mini landing COMBO, el enlace de WhatsApp con «COMBO» ya escrito, la etiqueta combo-nov en GHL y la campaña COMBO en OpenReply (una sola automatización: si va en OpenReply, no se monta también en GHL). Ponerlo donde las piezas dicen [enlace de WhatsApp…].",
    "desbloquea": "El correo, las comunidades y el anuncio del vie 6-nov",
-   "cuando": "antes del jue 5-nov",
-   "para": "Ester (decide y crea)"
+   "cuando": "todo montado el vie 6-nov",
+   "para": "Ester y Daniela"
   },
   {
    "tarea": "BLACK FRIDAY de 24 horas (vie 20 Ecuador · vie 27 todos): confirmar los % (propuesta: cursos −50 %, especializaciones y diplomados −40 %, Máster −25 % en el bloque), si se suma con el combo, la mini landing BLACK y los enlaces de pago que se apagan a las 23:59.",
@@ -62,10 +63,16 @@
    "para": "Ester (decide y crea)"
   },
   {
-   "tarea": "Grabar con Gabriel el anuncio del combo («Un diplomado de $500 por $50…», 15 s) y cambiar los selfies del 10, 23 y 27-nov por los textos nuevos del combo y del Black Friday de 24 horas.",
+   "tarea": "Grabar con Gabriel el anuncio del combo («Un diplomado completo por $50…», 15 s, 9:16 y 4:5) y los selfies del 10, 23 y 27-nov con los textos nuevos del combo y del Black Friday de 24 horas.",
    "desbloquea": "Anuncio del combo y 3 historias con Gabriel",
-   "cuando": "antes del vie 6-nov (anuncio) y del lun 9-nov (selfies)",
-   "para": "Gabriel y Daniela"
+   "cuando": "jue 5-nov",
+   "para": "Dayana y Gabriel"
+  },
+  {
+   "tarea": "Actualizar la información del bot de ventas: combo del mes, Acero a $225 todo noviembre, Black Friday de 24 horas (20 Ecuador · 27 todos) y que COMBO y BLACK pasen a una persona. Se le pide por el grupo de Soporte TECH el jue 5.",
+   "desbloquea": "Que el bot no dé precios viejos",
+   "cuando": "jue 5-nov",
+   "para": "Patricio"
   },
   {
    "tarea": "Respuestas a las palabras de historias, correos y comunidades (SUSTO, COMBO, BLACK, NAVES, TEMARIO, MÁSTER, NIVEL, ACERO, ZAPATA): las contesta una persona; las de oferta pasan a WhatsApp, donde va el precio y la mini landing. Dejar plantillas listas en la bandeja.",
@@ -227,6 +234,7 @@
    "Por WhatsApp una persona manda el precio y la mini landing de esa oferta. Una mini landing por oferta (SUSTO · cursos; COMBO · especialización + diplomado; BLACK · todos los programas); no se publica ni se enlaza en abierto.",
    "Los anuncios de Halloween y Black Friday llevan el botón «Enviar mensaje» y van a WhatsApp, no a la página.",
    "El Máster no lleva precio en ningún lado: en Black Friday se dice «−25 % en tu bloque» y el precio se da en la llamada.",
+   "ACERO SE VENDE A $225 TODO NOVIEMBRE (Dayana, 3-nov): en octubre ninguna venta pagó los $225 (se vendió a $199,99 por PayPal). Nadie ofrece $199,99 ni descuentos sueltos; la única excepción es el Black Friday de 24 horas.",
    "El combo y el Black Friday no se suman (propuesta; lo decide Ester): el combo cierra el jue 26 a las 23:59 y el Black Friday empieza el vie 27 a las 00:00.",
    "Ester decide: el precio final, si el descuento se dice en % o en $, si la mini landing muestra el precio normal tachado, los bonos y si entran los Diplomados."
   ],
@@ -263,7 +271,7 @@
    ]
   ],
   "falta_para_decidir": [
-   "Ester: qué diplomados entran al combo y su precio de referencia, y el costo del certificado universitario por alumno (que $50 lo cubra). Antes del jue 5-nov.",
+   "Ester: qué diplomados entran al combo y su precio de referencia. Los $50 cubren el certificado (Dayana, 3-nov). Todo montado el vie 6-nov con Daniela.",
    "Ester: los % finales del Black Friday y si el combo se suma o no. Antes del lun 16-nov.",
    "Ester: las mini landings (COMBO; BLACK), los cupones en GHL y el enlace de WhatsApp con cada palabra ya escrita, que reemplaza los corchetes de las piezas.",
    "Ester y Aylin: las plantillas de respuesta por WhatsApp con el precio y la mini landing de cada oferta.",
@@ -477,7 +485,7 @@
         "Conversaciones de WhatsApp, costo por conversación y combos vendidos (GHL: etiqueta combo-nov). Revisar el lun 16: si hay menos de 3 combos, cambiar el creativo, no la oferta."
        ]
       ],
-      "condicion": "Destino: WhatsApp (botón «Enviar mensaje»), con la mini landing COMBO. Valor de referencia del diplomado (si se muestra, lo fija Ester con el precio real de cada diplomado) y lista de diplomados que entran: los confirma Ester. Revisar el costo del certificado universitario por alumno antes de lanzar. REGLA DEL 3-NOV (Dayana): el combo del mes (Especialización a precio normal + Diplomado por $50) puede decir «$50» en anuncios, correos, historias y comunidades; el feed sigue sin precios. Los descuentos de Black Friday se dicen en %, nunca con el precio final del Máster. La compra se cierra por WhatsApp con la mini landing de cada oferta. Ester confirma los números."
+      "condicion": "Destino: WhatsApp (botón «Enviar mensaje»), con la mini landing COMBO. Valor de referencia del diplomado (si se muestra, lo fija Ester con el precio real de cada diplomado) y lista de diplomados que entran: los confirma Ester. Los $50 cubren el certificado (Dayana, 3-nov). Acero va a $225 todo noviembre. REGLA DEL 3-NOV (Dayana): el combo del mes (Especialización a precio normal + Diplomado por $50) puede decir «$50» en anuncios, correos, historias y comunidades; el feed sigue sin precios. Los descuentos de Black Friday se dicen en %, nunca con el precio final del Máster. La compra se cierra por WhatsApp con la mini landing de cada oferta. Ester confirma los números."
      }
     ]
    },
@@ -741,6 +749,10 @@
    [
     "6 · Lead magnets",
     "Cierre de octubre (3-nov): las campañas de visitas al perfil gastaron $58 sin leads (3.063 visitas a $0,019). Se apagan y ese dinero pasa al combo y a pautar la chuleta ganadora («Simbología de niveles», 79.800 vistas) con su palabra clave."
+   ],
+   [
+    "7 · Acero a $225",
+    "Todo noviembre a $225 (Dayana, 3-nov). Los anuncios de Acero dicen $225 o no dicen precio; ninguno dice $199,99. Solo el Black Friday baja el precio."
    ],
    [
     "REGLA DE ORO",
