@@ -125,11 +125,18 @@ def correos():
 def ficha_anuncio(pid, campana):
     p = pieza(pid)
     cfg = [["Botón", p.get("boton", "")], ["Público", p.get("publico_sugerido", "")], ["Qué medir", p.get("que_medir", "")]]
+    if p.get("banda_fija"):
+        cfg.append(["Banda fija (todo el video)", p["banda_fija"]])
+    if p.get("variantes_gancho"):
+        cfg.append(["Variantes de gancho", " · ".join(p["variantes_gancho"])])
+    if p.get("guion"):
+        cfg.append(["Guion del video", " | ".join(f"{t[0]}: {t[2]} [{t[3]}]" for t in p["guion"])])
     return {"id": pid, "titulo": p.get("titulo"), "campana": campana,
             "precio": "sin precio (regla del Máster): solo el %" if (p.get("producto") or "").startswith("Máster")
-            else "combo: especialización $225 + diplomado $50" if "Diplomados" in (p.get("producto") or "") and "Especializaciones" in (p.get("producto") or "")
-            else "% de Black Friday (los confirma Ester)" if "Todos" in (p.get("producto") or "")
+            else "visible: especialización $225 + diplomado ̶$̶5̶0̶0̶ $50 (−90 %)" if "Diplomados" in (p.get("producto") or "") and "Especializaciones" in (p.get("producto") or "")
+            else "visible: precio tachado, precio de hoy y % (Ester confirma los de lista)" if "Todos" in (p.get("producto") or "")
             else "sin precio",
+
             "formato": p.get("formato_detalle") or "anuncio", "hook": p.get("hook"), "cuerpo": p.get("texto_principal"),
             "titular": p.get("titular"), "descripcion": p.get("descripcion"), "creativo": p.get("creativo"),
             "prompt": p.get("prompt_imagenes", ""), "cfg": cfg, "condicion": p.get("condicion", "")}
@@ -159,7 +166,8 @@ DECISIONES_PAUTA = [
     ["5 · Ecuador y las elecciones", "Ecuador tiene su Black Friday el vie 20 (24 horas). Del 27 al 29 se baja la pauta en Ecuador (silencio electoral y elecciones seccionales del dom 29-nov)."],
     ["6 · Lead magnets", "Cierre de octubre (3-nov): las campañas de visitas al perfil gastaron $58 sin leads (3.063 visitas a $0,019). Acordado con Olympus el 2-nov: se deciden el lun 9-nov con los UTM, y les pedimos optimizarlas a vistas de la página de destino con el píxel en las landings. Si siguen sin traer leads, se apagan y ese dinero pasa al combo y a pautar la chuleta ganadora («Simbología de niveles», 79.800 vistas) con su palabra clave."],
     ["7 · Acero a $225", "Todo noviembre a $225 (Dayana, 3-nov). Los anuncios de Acero dicen $225 o no dicen precio; ninguno dice $199,99. Solo el Black Friday baja el precio."],
-    ["REGLA DE ORO", "El Máster no lleva precio en ninguna pieza: en Black Friday solo se dice el %. El combo dice «$50» en anuncio, correo, historias y comunidades; el feed va sin precios. El combo cierra el jue 26 a las 23:59 y el Black Friday dura 24 horas (Ecuador): no se reabre."],
+    ["8 · Anuncios que convierten (Taller Lap)", "Los anuncios del combo y del Black Friday siguen la fórmula de los anuncios con 293-432 días activos (EDICION-GANADORA-NICHO.md): Gabriel a cámara, la oferta con precio tachado → precio final y % en una banda fija abajo todo el video, prueba en pantalla, 30-45 s y 3-4 variantes que solo cambian el gancho. Se apagan las variantes que no rinden a los 3-4 días."],
+    ["REGLA DE ORO", "Los anuncios de descuento muestran precio tachado, precio final y %. El Máster no lleva precio en ninguna pieza: en Black Friday solo se dice el %. El combo dice «$50» en anuncio, correo, historias y comunidades; el feed va sin precios. El combo cierra el jue 26 a las 23:59 y el Black Friday dura 24 horas (Ecuador): no se reabre."],
 ]
 
 EFEMERIDES = [
@@ -182,7 +190,7 @@ EFEMERIDES = [
 ESTRATEGIA_COMERCIAL = {
     "nota": "Actualizado el 3-nov (Dayana, en el cierre de octubre): todo noviembre corre el COMBO (Especialización a precio normal + Diplomado por $50, del 6 al 26) y el Black Friday pasa a ser de 24 horas con descuento en TODOS los programas, incluido el Máster (−25 % en el bloque, sin precio): vie 20 para Ecuador y vie 27 para todos. Se quitan el acceso anticipado (LISTA), la Black Week del 23 al 30 y el Cyber Monday. Nota anterior (23-oct): las decisiones de precio y de cómo se nombra cada oferta las toma ESTER. Los números de abajo son solo la propuesta de partida. La promo la recibe únicamente quien responde o escribe al WhatsApp: la página vieja no se toca (dejará de servir cuando salga la nueva) y cada oferta tiene su mini landing, que se manda solo por WhatsApp. Principios que siguen: escasez real (fecha y hora de cierre, no se reabre), bonos antes que descuentos grandes en lo caro, el Máster nunca con precio.",
     "reglas": [
-        "Ninguna pieza pública (feed, historias, comunidades, LinkedIn, blog, anuncios ni correos) lleva el precio de la oferta ni enlaza la página vieja de pago.",
+        "Ninguna pieza pública enlaza la página vieja de pago. EXCEPCIÓN DEL 3-NOV (Dayana): los ANUNCIOS de descuento (combo y Black Friday) SÍ llevan el precio tachado, el precio final y el % de descuento (p. ej., Acero ̶$̶2̶2̶5̶ $135, −40 %). El Máster va solo con el %.",
         "Las piezas dicen que HAY oferta, hasta cuándo y cómo pedirla: responder la historia, escribir la palabra por WhatsApp (SUSTO, COMBO, BLACK) o responder el correo.",
         "Excepción del combo (3-nov): el «diplomado por $50» SÍ se dice en anuncio, correo, historias, comunidades y en UNA publicación del feed (vie 6, «Un diplomado completo por $50»), porque es el gancho. El resto del feed sigue sin precios.",
         "GUION DE WHATSAPP (Dayana, 3-nov): a TODO el que llega preguntando por una especialización se le ofrece el combo, lo atienda el bot o una persona: «Si te inscribes en la especialización a su precio normal, por solo $50 más te llevas el diplomado completo. Es solo este mes y quedan [X] de 10 cupos». Ester lleva la cuenta de cupos con la etiqueta combo-nov.",

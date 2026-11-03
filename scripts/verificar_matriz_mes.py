@@ -185,7 +185,11 @@ def main():
     for i in set(ids):
         p = G.get(i, {})
         t = texto({k: v for k, v in p.items() if k not in ("condicion", "notas_produccion", "por_que", "que_medir")})
-        if PRECIO_MASTER.search(t):
+        # 3-nov: el diplomado se anuncia a «$̶5̶0̶0̶ $50», así que el precio del Máster se busca
+        # en las frases que hablan del Máster, no en toda la pieza.
+        frases = re.split(r"[\n.·•|]", t)
+        if any(PRECIO_MASTER.search(f) for f in frases if re.search(r"m[áa]ster", f, re.I)) or \
+                ("Máster" in str(G.get(i, {}).get("producto", "")) and PRECIO_MASTER.search(t)):
             pm.append(i)
         if re.search(r"\$\s?225|225\s?(USD|dólares)", t) and p.get("formato") not in ("anuncio", "correo"):
             acero.append(i)
