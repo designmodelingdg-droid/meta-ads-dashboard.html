@@ -234,7 +234,7 @@
  "estrategia_comercial": {
   "nota": "Actualizado el 3-nov (Dayana, en el cierre de octubre): todo noviembre corre el COMBO (Especialización a precio normal + Diplomado por $50, del 6 al 26) y el Black Friday pasa a ser de 24 horas con descuento en TODOS los programas, incluido el Máster (−25 % en el bloque, sin precio): vie 20 para Ecuador y vie 27 para todos. Se quitan el acceso anticipado (LISTA), la Black Week del 23 al 30 y el Cyber Monday. Nota anterior (23-oct): las decisiones de precio y de cómo se nombra cada oferta las toma ESTER. Los números de abajo son solo la propuesta de partida. La promo la recibe únicamente quien responde o escribe al WhatsApp: la página vieja no se toca (dejará de servir cuando salga la nueva) y cada oferta tiene su mini landing, que se manda solo por WhatsApp. Principios que siguen: escasez real (fecha y hora de cierre, no se reabre), bonos antes que descuentos grandes en lo caro, el Máster nunca con precio.",
   "reglas": [
-   "Ninguna pieza pública (feed, historias, comunidades, LinkedIn, blog, anuncios ni correos) lleva el precio de la oferta ni enlaza la página vieja de pago.",
+   "Ninguna pieza pública enlaza la página vieja de pago. EXCEPCIÓN DEL 3-NOV (Dayana): los ANUNCIOS de descuento (combo y Black Friday) SÍ llevan el precio tachado, el precio final y el % de descuento (p. ej., Acero ̶$̶2̶2̶5̶ $135, −40 %). El Máster también lleva precio, pero SOLO en el Black Friday (bloques ̶$̶7̶5̶0̶ $562,50 · ̶$̶6̶0̶0̶ $450 · ̶$̶9̶0̶0̶ $675). Precios de lista tomados de la web el 3-nov.",
    "Las piezas dicen que HAY oferta, hasta cuándo y cómo pedirla: responder la historia, escribir la palabra por WhatsApp (SUSTO, COMBO, BLACK) o responder el correo.",
    "Excepción del combo (3-nov): el «diplomado por $50» SÍ se dice en anuncio, correo, historias, comunidades y en UNA publicación del feed (vie 6, «Un diplomado completo por $50»), porque es el gancho. El resto del feed sigue sin precios.",
    "GUION DE WHATSAPP (Dayana, 3-nov): a TODO el que llega preguntando por una especialización se le ofrece el combo, lo atienda el bot o una persona: «Si te inscribes en la especialización a su precio normal, por solo $50 más te llevas el diplomado completo. Es solo este mes y quedan [X] de 10 cupos». Ester lleva la cuenta de cupos con la etiqueta combo-nov.",
@@ -284,6 +284,77 @@
    "Ester: las mini landings (COMBO; BLACK), los cupones en GHL y el enlace de WhatsApp con cada palabra ya escrita, que reemplaza los corchetes de las piezas.",
    "Ester y Aylin: las plantillas de respuesta por WhatsApp con el precio y la mini landing de cada oferta.",
    "Dayana: el corte de Stripe y PayPal de noviembre de 2025 (no hay dato del Black Friday pasado; en GHL solo existe el formulario «Registro BlackFriday 2025»)."
+  ]
+ },
+ "actualizar_por_canal": {
+  "nota": "Lista de lo que cambia en cada canal y quién lo hace. La web se revisó el 3-nov: en Eventos solo aparece el workshop del 17-nov; los precios de la web coinciden con la matriz (Acero USD 225 con tachado de 464,99, diplomados desde USD 499,99, bloques del Máster USD 750 / 750 / 600 / 900). El precio del combo y del Black Friday NO se cambia en la web: se manda por WhatsApp con la mini landing.",
+  "filas": [
+   [
+    "Web · Eventos",
+    "Agregar «Combo de noviembre: especialización + diplomado por $50 (6 al 26-nov, 10 cupos)» y «Black Friday 24 horas: vie 20 (Ecuador) y vie 27». Después del 17-nov, el workshop pasa a «Últimos eventos» con el enlace a la grabación o al resumen.",
+    "vie 6 · mié 18 · lun 23",
+    "Daniela (sube) · Ester (textos)"
+   ],
+   [
+    "Web · banner de la portada",
+    "6 al 26-nov: banner del combo con el botón de WhatsApp «COMBO». 23 al 27-nov: aviso del Black Friday. Vie 20: banner solo para Ecuador si la web lo permite; si no, en la portada «Black Friday Ecuador: escríbenos». 28-nov: quitar todo.",
+    "vie 6 · lun 23 · sáb 28",
+    "Daniela"
+   ],
+   [
+    "Web · fichas de producto",
+    "No se cambian los precios. Solo un aviso en las fichas de especializaciones y diplomados: «Este mes, el diplomado por $50 con tu especialización (10 cupos)». Se quita al llenarse los cupos o el 27.",
+    "vie 6",
+    "Daniela"
+   ],
+   [
+    "Historias",
+    "Combo: 10, 18, 23 y 25-nov · Black Friday Ecuador: 20 · Máster con precio: 26 · Black Friday: 27 · valor: 30. Destacadas: quitar el combo el 27 y el Black Friday el 28.",
+    "según el calendario",
+    "Daniela"
+   ],
+   [
+    "Correos (GHL)",
+    "6: lanzamiento del combo · 15: workshop · 18: gracias + combo (asistentes) · 20: Black Friday solo Ecuador · 23: aviso del Black Friday · 25: preguntas · 27: Black Friday. Revisar que las automatizaciones viejas de Black Week o de Acero a $199,99 estén apagadas.",
+    "cada fecha",
+    "Ester · Aylin"
+   ],
+   [
+    "Grupos de WhatsApp (envíos programados)",
+    "Grupo del workshop: 6, 9, 12, 13 y 16 ya programados; el 17 se programa con el link del Zoom. Comunidad 1, 2 y Clientes: workshop el 10 y 16 ya programados. Falta programar en las 3 comunidades el combo (6 o 9) y el Black Friday (23 y 27).",
+    "vie 6 · lun 23 · vie 27",
+    "Claude (programa) · Dayana (aprueba los textos)"
+   ],
+   [
+    "Comunidades (canal de IG, grupos de FB, YouTube, comunidad GHL)",
+    "El mismo post: 6 combo · 13 Máster por bloques · 16 y 17 workshop · 18 gracias + combo · 23 aviso Black Friday · 27 Black Friday.",
+    "según el calendario",
+    "Daniela"
+   ],
+   [
+    "Bot de WhatsApp",
+    "Combo (ofrecerlo a todo el que pregunta por una especialización, 10 cupos), Acero a $225, Black Friday de 24 horas con precios; COMBO y BLACK pasan a una persona. Ester avisa cuando se llenan los 10 cupos.",
+    "jue 5 (mensaje programado a Patricio)",
+    "Patricio"
+   ],
+   [
+    "OpenReply y GHL",
+    "Campaña COMBO en OpenReply (solo ahí); etiqueta combo-nov en GHL; mini landings COMBO y BLACK; enlaces de pago que se apagan a las 23:59 del Black Friday.",
+    "vie 6 (combo) · lun 16 (Black Friday)",
+    "Ester · Daniela"
+   ],
+   [
+    "Meta Ads",
+    "Anuncio del combo con 4 variantes (vie 6); Black Friday Ecuador (jue 19 y vie 20); Black Friday (jue 26 para agendar el Máster y vie 27); apagar las variantes que no rinden a los 3-4 días; decidir lead magnets el lun 9.",
+    "vie 6 · lun 9 · jue 19 · jue 26",
+    "Olympus"
+   ],
+   [
+    "LinkedIn",
+    "Sin ofertas ni precios: 10 Perú BIM · 12 checklist · 16 parámetros · 18 resultados del workshop · 20 Acero · 24 bloques · 26 cómo elegir un programa.",
+    "según el calendario",
+    "Daniela"
+   ]
   ]
  },
  "formatos_prueba": {
@@ -382,7 +453,7 @@
       "id": "nov-ads-ws-demo",
       "titulo": "Workshop: la demo",
       "campana": "WORKSHOP · registro (2 al 16-nov, parte de los 59 USD del plan)",
-      "precio": "sin precio (regla del Máster): solo el %",
+      "precio": "sin precio (regla del Máster)",
       "formato": "ANUNCIO Meta (4:5 y 9:16)",
       "hook": "Le pregunté a mi modelo de Revit qué puertas no tienen resistencia al fuego.",
       "cuerpo": "Le pregunté a mi modelo de Revit qué puertas no tienen resistencia al fuego. Contestó en segundos.\n\nEl martes 17 de noviembre a las 8:00 PM (Ecuador) lo hago en vivo: IA conectada a un modelo real de Revit 2027, y dónde se equivoca. Gratis, por Zoom.",
@@ -410,7 +481,7 @@
       "id": "nov-ads-ws-5-preguntas",
       "titulo": "Workshop: las 5 preguntas",
       "campana": "WORKSHOP · registro (2 al 16-nov, parte de los 59 USD del plan)",
-      "precio": "sin precio (regla del Máster): solo el %",
+      "precio": "sin precio (regla del Máster)",
       "formato": "ANUNCIO Meta (4:5 y 9:16)",
       "hook": "Deja de exportar a Excel. Pregúntale al modelo.",
       "cuerpo": "Deja de exportar a Excel. Pregúntale al modelo.\n\nWorkshop gratis el martes 17 de noviembre a las 8:00 PM (Ecuador): 5 preguntas a un modelo real de Revit 2027, en vivo.",
@@ -438,7 +509,7 @@
       "id": "nov-ads-ws-taller-gratis",
       "titulo": "Workshop: invitación de Gabriel con bandas fijas (estructura de un anuncio que lleva 1 año activo)",
       "campana": "WORKSHOP · registro (2 al 16-nov, parte de los 59 USD del plan)",
-      "precio": "sin precio (regla del Máster): solo el %",
+      "precio": "sin precio (regla del Máster)",
       "formato": "ANUNCIO Meta en video, Gabriel a cámara (4:5 para feed y 9:16 para Reels e historias), 45-50 s",
       "hook": "¿Sabías que hoy le puedes preguntar a tu modelo de Revit qué puertas no tienen resistencia al fuego… y te contesta en segundos?",
       "cuerpo": "¿Sabías que hoy le puedes preguntar a tu modelo de Revit qué puertas no tienen resistencia al fuego? Contesta en segundos.\n\nEl martes 17 de noviembre a las 8:00 PM (Ecuador) lo hago en vivo: IA conectada a un modelo real de Revit 2027, y dónde se equivoca. Gratis, por Zoom.",
@@ -458,6 +529,10 @@
        [
         "Qué medir",
         "Costo por registro frente a «la demo» y «las 5 preguntas»; retención a 3 s y a 15 s; versión A contra versión B (solo cambia el gancho)."
+       ],
+       [
+        "Guion del video",
+        "0:00-0:07: ¿Sabías que hoy le puedes preguntar a tu modelo de Revit qué puertas no tienen resistencia al fuego… y te contesta en segundos? [LE PREGUNTO **AL MODELO**] | 0:07-0:20: La IA conectada a Revit revisa el modelo por ti: qué falta, qué no cumple, qué hay que corregir. Sin exportar a Excel y sin revisar elemento por elemento. [SIN EXPORTAR **A EXCEL**] | 0:20-0:26: Pero también se equivoca, y hay que saber dónde. [Y DÓNDE **SE EQUIVOCA**] | 0:26-0:30: Si quieres verlo con un modelo real, te invito a mi workshop gratuito. [TE INVITO] | 0:30-0:42: Es el martes 17 de noviembre a las 8 de la noche, hora de Ecuador, en vivo por Zoom. Te muestro cómo conectar la IA a Revit 2027 y qué le puedes preguntar desde el primer día, aunque nunca hayas usado inteligencia artificial. [MARTES 17 · **8 PM** · EN VIVO] | 0:42-0:48: Regístrate en el botón de aquí abajo. Nos vemos el martes. [REGÍSTRATE **GRATIS**]"
        ]
       ],
       "condicion": "Se graba esta semana para que entre en pauta antes del 9-nov. Lo monta Olympus dentro del presupuesto del workshop."
@@ -471,13 +546,13 @@
       "id": "nov-ads-acero-bf",
       "titulo": "Combo: Especialización + Diplomado por $50",
       "campana": "COMBO DEL MES · Especialización + Diplomado por $50 (6 al 26-nov)",
-      "precio": "combo: especialización $225 + diplomado $50",
-      "formato": "ANUNCIO Meta (4:5 y 9:16)",
-      "hook": "Un diplomado completo por $50. La condición: empezar una especialización.",
-      "cuerpo": "Un diplomado completo por $50. La condición: empezar una especialización.\n\nInscríbete en la Especialización en Diseño Estructural BIM en Acero con Tutor IA a su precio normal ($225) y súmale un Diplomado completo por solo $50 más.\n\nSolo 10 cupos este mes, hasta el jueves 26 de noviembre. Escríbenos y te decimos qué diplomado combina con tu especialización.",
-      "titular": "Especialización + Diplomado por $50",
+      "precio": "visible: especialización $225 + diplomado ̶$̶5̶0̶0̶ $50 (−90 %)",
+      "formato": "ANUNCIO Meta · video de Gabriel 30-40 s (9:16 y 4:5) + imagen 4:5 · 4 variantes de gancho",
+      "hook": "Un diplomado de $499,99 por solo $50.",
+      "cuerpo": "Un diplomado de $499,99 por solo $50. 🎓\n\nLa condición: inscribirte en una especialización a su precio normal.\n\n✅ Especialización en Diseño Estructural BIM en Acero con Tutor IA: $225\n✅ Diplomado completo: ̶$̶4̶9̶9̶,̶9̶9̶ $50 (−90 %)\n👉 Total: $275 por las dos formaciones\n\n🔒 Solo 10 cupos este mes · hasta el jueves 26 de noviembre.\nEscríbenos y te decimos qué diplomado combina con tu especialización.",
+      "titular": "Diplomado $̶4̶9̶9̶,̶9̶9̶ → $50 con tu especialización",
       "descripcion": "Solo 10 cupos · hasta el jue 26-nov",
-      "creativo": "DOS FORMATOS (Dayana, 3-nov): 1) video de Gabriel a cámara, 15 s, 9:16 y 4:5: «Un diplomado completo por $50… la condición es empezar una especialización… solo 10 cupos»; 2) imagen 4:5 con «DIPLOMADO COMPLETO · $50» grande y la condición debajo. Se graba el jue 5.",
+      "creativo": "Video de Gabriel (guion arriba) con la banda fija, se graba el jue 5; 4 variantes de gancho con el mismo cuerpo. Imagen 4:5: «DIPLOMADO $̶4̶9̶9̶,̶9̶9̶ $50» enorme en naranja, debajo «con tu especialización ($225)», sello «SOLO 10 CUPOS».",
       "prompt": "",
       "cfg": [
        [
@@ -491,9 +566,21 @@
        [
         "Qué medir",
         "Conversaciones de WhatsApp, costo por conversación y combos vendidos (GHL: etiqueta combo-nov). Revisar el lun 16: si hay menos de 3 combos, cambiar el creativo, no la oferta."
+       ],
+       [
+        "Banda fija (todo el video)",
+        "Abajo, todo el video: «ESPECIALIZACIÓN $225 + DIPLOMADO $̶4̶9̶9̶,̶9̶9̶ $50 · SOLO 10 CUPOS · HASTA EL 26-NOV»"
+       ],
+       [
+        "Variantes de gancho",
+        "V1 · «Un diplomado de $499,99 por solo $50.» (el precio como gancho) · V2 · «¿Ibas a comprar una especialización? Por $50 más te llevas el diplomado completo.» (para quien ya pregunta por Acero) · V3 · «$225 + $50: especialización y diplomado completo. Solo 10 cupos.» (la suma directa) · V4 · Gabriel: «Este mes hicimos algo que nunca habíamos hecho…» (el que mejor rinde en octubre es Gabriel a cámara)"
+       ],
+       [
+        "Guion del video",
+        "0:00-0:03: [Gancho de la variante] «Un diplomado de 499 dólares… por 50.» [DIPLOMADO **$50**] | 0:03-0:15: Este mes, si te inscribes en una especialización a su precio normal, el diplomado completo te sale en 50 dólares. La especialización te da la herramienta para cobrar; el diplomado, la base completa. [ESPECIALIZACIÓN **+ DIPLOMADO**] | 0:15-0:25: Por ejemplo: la especialización en acero con tutor de inteligencia artificial, 225, más el diplomado en cálculo estructural por 50. Las dos por 275. [$225 **+ $50**] | 0:25-0:35: Son solo 10 cupos en el mes y cierra el jueves 26. Escríbeme y te digo qué diplomado combina con lo que quieres hacer. [SOLO **10 CUPOS**]"
        ]
       ],
-      "condicion": "Destino: WhatsApp (botón «Enviar mensaje»), con la mini landing COMBO. Valor de referencia del diplomado (si se muestra, lo fija Ester con el precio real de cada diplomado) y lista de diplomados que entran: los confirma Ester. Los $50 cubren el certificado (Dayana, 3-nov). Acero va a $225 todo noviembre. REGLA DEL 3-NOV (Dayana): el combo del mes (Especialización a precio normal + Diplomado por $50) puede decir «$50» en anuncios, correos, historias y comunidades; el feed sigue sin precios. Los descuentos de Black Friday se dicen en %, nunca con el precio final del Máster. La compra se cierra por WhatsApp con la mini landing de cada oferta. Ester confirma los números. TOPE: 10 cupos en el mes (Dayana, 3-nov). Ester lleva la cuenta con la etiqueta combo-nov; al llegar a 10 se apaga el anuncio y se dice «cupos agotados»."
+      "condicion": "Destino: WhatsApp (botón «Enviar mensaje»), con la mini landing COMBO. Valor de referencia del diplomado (si se muestra, lo fija Ester con el precio real de cada diplomado) y lista de diplomados que entran: los confirma Ester. Los $50 cubren el certificado (Dayana, 3-nov). Acero va a $225 todo noviembre. REGLA DEL 3-NOV (Dayana): el combo del mes (Especialización a precio normal + Diplomado por $50) puede decir «$50» en anuncios, correos, historias y comunidades; el feed sigue sin precios. Los descuentos de Black Friday se dicen en %, nunca con el precio final del Máster. La compra se cierra por WhatsApp con la mini landing de cada oferta. Ester confirma los números. TOPE: 10 cupos en el mes (Dayana, 3-nov). Ester lleva la cuenta con la etiqueta combo-nov; al llegar a 10 se apaga el anuncio y se dice «cupos agotados». REGLA DEL 3-NOV (Dayana): los anuncios de descuento (combo y Black Friday) llevan el PRECIO TACHADO, el PRECIO FINAL y el % de descuento. El Máster sigue solo con % (el precio se da en la llamada). Los precios de lista los confirma Ester. FÓRMULA DE LOS ANUNCIOS QUE CONVIERTEN (Taller Lap: 293 a 432 días activos, EDICION-GANADORA-NICHO.md): persona real (Gabriel), la oferta en una BANDA FIJA abajo de principio a fin, subtítulos de 1-2 palabras con la palabra clave en caja naranja, prueba en pantalla (Revit/Robot real o el Tutor IA), 30-45 s explicativo y 3-4 variantes del MISMO cuerpo que solo cambian el gancho. Se apagan las variantes que no rinden. Precio de lista del diplomado según la web (3-nov): USD 499,99 (Cálculo Estructural, Modelador BIM, Acero y Hormigón); Arquitectura USD 399,99."
      }
     ]
    },
@@ -504,13 +591,13 @@
       "id": "nov-ads-cursos-bf",
       "titulo": "Black Friday 24 horas: todos los programas",
       "campana": "BLACK FRIDAY · 24 horas en todos los programas (vie 20 Ecuador · vie 27 todos)",
-      "precio": "% de Black Friday (los confirma Ester)",
-      "formato": "ANUNCIO Meta (4:5 y 9:16)",
-      "hook": "Black Friday de Design Modeling Academy: 24 horas de descuento en todos los programas.",
-      "cuerpo": "Black Friday de Design Modeling Academy: 24 horas de descuento en todos los programas.\n\nCursos −50 % · Especializaciones −40 % · Diplomados −40 % · Máster −25 % en tu bloque.\n\nSolo hoy, hasta las 23:59 (hora de Ecuador). Escríbenos y te mandamos el precio y el enlace.",
-      "titular": "Black Friday · solo 24 horas",
-      "descripcion": "Hasta hoy 23:59 (Ecuador)",
-      "creativo": "Arte con 4 columnas (Cursos · Especializaciones · Diplomados · Máster) + versión de Gabriel a cámara «hoy es el día».",
+      "precio": "visible: precio tachado, precio de hoy y % (Ester confirma los de lista)",
+      "formato": "ANUNCIO Meta · video de Gabriel 30 s + imagen 4:5 + carrusel de 4 tarjetas (una por programa) · 3 variantes de gancho",
+      "hook": "Black Friday: solo hoy, hasta 50 % de descuento en todos nuestros programas.",
+      "cuerpo": "Black Friday: solo hoy, hasta 50 % de descuento en todos nuestros programas. ⏳\n\n🎯 Cursos cortos (Naves Industriales PRO y más): ̶$̶2̶6̶,̶9̶9̶ $13,49 (−50 %)\n🔩 Especialización en Acero con Tutor IA: ̶$̶2̶2̶5̶ $135 (−40 %)\n🔩 Demás especializaciones: ̶$̶1̶9̶9̶,̶9̶9̶ $119,99 (−40 %)\n🎓 Diplomados: desde ̶$̶4̶9̶9̶,̶9̶9̶ $299,99 (−40 %)\n🏗️ Máster BIM + IA por bloques (−25 %): Bloque 1 ̶$̶7̶5̶0̶ $562,50 · Bloque 2 ̶$̶7̶5̶0̶ $562,50 · Bloque 3 ̶$̶6̶0̶0̶ $450 · Bloque 4 ̶$̶9̶0̶0̶ $675\n\nCierra hoy a las 23:59 (hora de Ecuador) y no se reabre. Escríbenos y te mandamos el enlace.",
+      "titular": "Black Friday · hasta −50 % · solo hoy",
+      "descripcion": "Cierra hoy 23:59 (Ecuador)",
+      "creativo": "Video de Gabriel 30 s con la banda fija de cajas (estructura Taller Lap). Imagen 4:5 con columnas y precios tachados. Carrusel de 5 tarjetas: cursos, Acero, especializaciones, diplomados y Máster (los 4 bloques), cada una con precio de lista tachado, precio de hoy y %; la última, «solo hoy, 23:59».",
       "prompt": "",
       "cfg": [
        [
@@ -524,9 +611,17 @@
        [
         "Qué medir",
         "Conversaciones de WhatsApp y ventas del día por producto (GHL)"
+       ],
+       [
+        "Banda fija (todo el video)",
+        "Abajo, todo el video: las cajas con precio tachado → precio de hoy y % (Cursos $13,49 · Acero $135 · Diplomados desde $299,99 · Máster desde $450) + «SOLO HOY · 23:59»"
+       ],
+       [
+        "Variantes de gancho",
+        "V1 · «Solo hoy: hasta 50 % de descuento en todos nuestros programas.» · V2 · «Acero con Tutor IA a $135. Solo hoy.» (el producto que más vendemos) · V3 · «Un bloque del Máster desde $450. Solo hoy.» (para el público del Máster) · V4 · Gabriel: «Hoy es el único día del año en que empezar cuesta menos.»"
        ]
       ],
-      "condicion": "Dos días de 24 horas: vie 20 (Ecuador) y vie 27 (todos). El Máster solo en %, nunca el precio final. Destino: WhatsApp. REGLA DEL 3-NOV (Dayana): el combo del mes (Especialización a precio normal + Diplomado por $50) puede decir «$50» en anuncios, correos, historias y comunidades; el feed sigue sin precios. Los descuentos de Black Friday se dicen en %, nunca con el precio final del Máster. La compra se cierra por WhatsApp con la mini landing de cada oferta. Ester confirma los números."
+      "condicion": "Dos días de 24 horas: vie 20 (solo Ecuador) y vie 27 (los demás). REGLA DEL 3-NOV (Dayana): los anuncios de descuento (combo y Black Friday) llevan el PRECIO TACHADO, el PRECIO FINAL y el % de descuento. El Máster sigue solo con % (el precio se da en la llamada). Los precios de lista los confirma Ester. Precios de lista según la web (3-nov): especialización Acero USD 225 (tachado 464,99), demás especializaciones USD 199,99, diplomados USD 499,99 (Arquitectura 399,99), Máster: bloques USD 750 / 750 / 600 / 900; cursos cortos: precio de venta USD 26,99 (la web lista 154,99: Ester decide cuál se tacha). MÁSTER CON PRECIO SOLO EN BLACK FRIDAY (Dayana, 3-nov)."
      }
     ]
    },
@@ -537,11 +632,11 @@
       "id": "nov-ads-master-bono",
       "titulo": "Máster: −25 % en tu bloque, solo el Black Friday",
       "campana": "MÁSTER · −25 % en el bloque, solo el Black Friday, sin precio",
-      "precio": "sin precio (regla del Máster): solo el %",
+      "precio": "visible solo en Black Friday: bloques ̶$̶7̶5̶0̶ $562,50 · ̶$̶6̶0̶0̶ $450 · ̶$̶9̶0̶0̶ $675 (−25 %)",
       "formato": "ANUNCIO Meta (4:5 y 9:16)",
-      "hook": "Solo por 24 horas: −25 % en el bloque del Máster con el que empieces.",
-      "cuerpo": "Solo por 24 horas: −25 % en el bloque del Máster con el que empieces.\n\nBIM Professional, BIM Coordination, BIM Management o BIM + IA: te ayudamos a elegir en 20 minutos, con tu diagnóstico, y te damos el precio en la llamada.",
-      "titular": "Máster BIM + IA por bloques · −25 % hoy",
+      "hook": "Solo por 24 horas: un bloque del Máster desde $450 (−25 %).",
+      "cuerpo": "Solo por 24 horas: −25 % en el bloque del Máster con el que empieces.\n\nBloque 1 · Modelador BIM Profesional: ̶$̶7̶5̶0̶ $562,50\nBloque 2 · Coordinador BIM: ̶$̶7̶5̶0̶ $562,50\nBloque 3 · BIM Manager 4D-5D: ̶$̶6̶0̶0̶ $450\nBloque 4 · Especialista BIM + IA: ̶$̶9̶0̶0̶ $675\n\nAgenda 20 minutos y te ayudamos a elegir por cuál empezar.",
+      "titular": "Máster BIM + IA por bloques · −25 % solo hoy",
       "descripcion": "Agenda 20 minutos con un asesor",
       "creativo": "Carrusel «¿En qué bloque estás?»",
       "prompt": "",
@@ -559,7 +654,7 @@
         "Citas agendadas y asistidas"
        ]
       ],
-      "condicion": "SIN PRECIO FINAL (regla del Máster): solo el %. Se pauta el jue 26 (agendar para el viernes) y el vie 27; en Ecuador, el jue 19 y el vie 20. REGLA DEL 3-NOV (Dayana): el combo del mes (Especialización a precio normal + Diplomado por $50) puede decir «$50» en anuncios, correos, historias y comunidades; el feed sigue sin precios. Los descuentos de Black Friday se dicen en %, nunca con el precio final del Máster. La compra se cierra por WhatsApp con la mini landing de cada oferta. Ester confirma los números."
+      "condicion": "MÁSTER CON PRECIO SOLO EN BLACK FRIDAY (Dayana, 3-nov): precio de lista tachado, precio con −25 % y el %. Precios de lista de la web: bloques USD 750 / 750 / 600 / 900. Se pauta el jue 26 (agendar para el viernes) y el vie 27; en Ecuador, el jue 19 y el vie 20. Fuera del Black Friday, el Máster sigue sin precio."
      }
     ]
    },
@@ -570,7 +665,7 @@
       "id": "nov-ads-master-ruta",
       "titulo": "Máster: cómo funciona la ruta (video animado)",
       "campana": "MÁSTER · la ruta en 4 bloques (siempre activa desde el 2-nov), sin precio",
-      "precio": "sin precio (regla del Máster): solo el %",
+      "precio": "sin precio (regla del Máster)",
       "formato": "ANUNCIO Meta en video (9:16 para Reels e historias; 16:9 para YouTube y feed)",
       "hook": "¿Cómo funciona el Máster en BIM Management e IA? Cuatro bloques, en orden.",
       "cuerpo": "¿Cómo funciona el Máster en BIM Management e IA? Cuatro bloques, en orden.\n\n1 · BIM Professional: comprendes, estructuras e implementas BIM.\n2 · BIM Coordination: integras modelos, coordinas disciplinas y resuelves interferencias.\n3 · BIM Management: planificas tiempo y costos, y diriges el proyecto.\n4 · BIM + IA: automatizas con Dynamo, Python e inteligencia artificial.\n\nCada módulo aprobado te da una microcredencial y cada bloque, una insignia de especialista. Puedes cursarlos por separado y suman hacia el título del Máster.",
@@ -763,8 +858,12 @@
     "Todo noviembre a $225 (Dayana, 3-nov). Los anuncios de Acero dicen $225 o no dicen precio; ninguno dice $199,99. Solo el Black Friday baja el precio."
    ],
    [
+    "8 · Anuncios que convierten (Taller Lap)",
+    "Los anuncios del combo y del Black Friday siguen la fórmula de los anuncios con 293-432 días activos (EDICION-GANADORA-NICHO.md): Gabriel a cámara, la oferta con precio tachado → precio final y % en una banda fija abajo todo el video, prueba en pantalla, 30-45 s y 3-4 variantes que solo cambian el gancho. Se apagan las variantes que no rinden a los 3-4 días."
+   ],
+   [
     "REGLA DE ORO",
-    "El Máster no lleva precio en ninguna pieza: en Black Friday solo se dice el %. El combo dice «$50» en anuncio, correo, historias y comunidades; el feed va sin precios. El combo cierra el jue 26 a las 23:59 y el Black Friday dura 24 horas (Ecuador): no se reabre."
+    "Los anuncios de descuento muestran precio tachado, precio final y %. El Máster solo lleva precio en el Black Friday (−25 %); el resto del mes, sin precio. El combo dice «$50» en anuncio, correo, historias y comunidades; el feed va sin precios. El combo cierra el jue 26 a las 23:59 y el Black Friday dura 24 horas (Ecuador): no se reabre."
    ]
   ]
  },

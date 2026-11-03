@@ -367,6 +367,11 @@ class Mes:
                      + ("<h3 class=\"camp\">Cómo se habla de la oferta</h3><ul class=\"reglas\">" + "".join(f"<li>{e(x)}</li>" for x in ec["reglas"]) + "</ul>" if ec.get("reglas") else "")
                      + tabla(["Ventana", "Cuándo", "Qué se ofrece", "Dónde se comunica"], ec.get("ventanas", []))
                      + ("<ul class=\"reglas\">" + "".join(f"<li>{e(x)}</li>" for x in ec.get("falta_para_decidir", [])) + "</ul>" if ec.get("falta_para_decidir") else ""))
+        if c.get("actualizar_por_canal"):
+            ap = c["actualizar_por_canal"]
+            o.append("<h2>Qué hay que actualizar en cada canal</h2>"
+                     + (f'<p class="intro">{e(ap.get("nota", ""))}</p>' if ap.get("nota") else "")
+                     + tabla(["Canal", "Qué se actualiza", "Cuándo", "Quién"], ap.get("filas", [])))
         if c.get("formatos_prueba"):
             fp = c["formatos_prueba"]
             o.append("<h2>Formatos en prueba · se revisan cada mes</h2>" + (f'<p class="intro">{e(fp.get("nota", ""))}</p>' if fp.get("nota") else "")

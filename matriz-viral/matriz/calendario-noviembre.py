@@ -125,11 +125,19 @@ def correos():
 def ficha_anuncio(pid, campana):
     p = pieza(pid)
     cfg = [["Botón", p.get("boton", "")], ["Público", p.get("publico_sugerido", "")], ["Qué medir", p.get("que_medir", "")]]
+    if p.get("banda_fija"):
+        cfg.append(["Banda fija (todo el video)", p["banda_fija"]])
+    if p.get("variantes_gancho"):
+        cfg.append(["Variantes de gancho", " · ".join(p["variantes_gancho"])])
+    if p.get("guion"):
+        cfg.append(["Guion del video", " | ".join(f"{t[0]}: {t[2]} [{t[3]}]" for t in p["guion"])])
     return {"id": pid, "titulo": p.get("titulo"), "campana": campana,
-            "precio": "sin precio (regla del Máster): solo el %" if (p.get("producto") or "").startswith("Máster")
-            else "combo: especialización $225 + diplomado $50" if "Diplomados" in (p.get("producto") or "") and "Especializaciones" in (p.get("producto") or "")
-            else "% de Black Friday (los confirma Ester)" if "Todos" in (p.get("producto") or "")
+            "precio": "visible solo en Black Friday: bloques ̶$̶7̶5̶0̶ $562,50 · ̶$̶6̶0̶0̶ $450 · ̶$̶9̶0̶0̶ $675 (−25 %)" if (p.get("producto") or "").startswith("Máster") and p.get("precio_master_autorizado")
+            else "sin precio (regla del Máster)" if (p.get("producto") or "").startswith("Máster")
+            else "visible: especialización $225 + diplomado ̶$̶5̶0̶0̶ $50 (−90 %)" if "Diplomados" in (p.get("producto") or "") and "Especializaciones" in (p.get("producto") or "")
+            else "visible: precio tachado, precio de hoy y % (Ester confirma los de lista)" if "Todos" in (p.get("producto") or "")
             else "sin precio",
+
             "formato": p.get("formato_detalle") or "anuncio", "hook": p.get("hook"), "cuerpo": p.get("texto_principal"),
             "titular": p.get("titular"), "descripcion": p.get("descripcion"), "creativo": p.get("creativo"),
             "prompt": p.get("prompt_imagenes", ""), "cfg": cfg, "condicion": p.get("condicion", "")}
@@ -159,7 +167,8 @@ DECISIONES_PAUTA = [
     ["5 · Ecuador y las elecciones", "Ecuador tiene su Black Friday el vie 20 (24 horas). Del 27 al 29 se baja la pauta en Ecuador (silencio electoral y elecciones seccionales del dom 29-nov)."],
     ["6 · Lead magnets", "Cierre de octubre (3-nov): las campañas de visitas al perfil gastaron $58 sin leads (3.063 visitas a $0,019). Acordado con Olympus el 2-nov: se deciden el lun 9-nov con los UTM, y les pedimos optimizarlas a vistas de la página de destino con el píxel en las landings. Si siguen sin traer leads, se apagan y ese dinero pasa al combo y a pautar la chuleta ganadora («Simbología de niveles», 79.800 vistas) con su palabra clave."],
     ["7 · Acero a $225", "Todo noviembre a $225 (Dayana, 3-nov). Los anuncios de Acero dicen $225 o no dicen precio; ninguno dice $199,99. Solo el Black Friday baja el precio."],
-    ["REGLA DE ORO", "El Máster no lleva precio en ninguna pieza: en Black Friday solo se dice el %. El combo dice «$50» en anuncio, correo, historias y comunidades; el feed va sin precios. El combo cierra el jue 26 a las 23:59 y el Black Friday dura 24 horas (Ecuador): no se reabre."],
+    ["8 · Anuncios que convierten (Taller Lap)", "Los anuncios del combo y del Black Friday siguen la fórmula de los anuncios con 293-432 días activos (EDICION-GANADORA-NICHO.md): Gabriel a cámara, la oferta con precio tachado → precio final y % en una banda fija abajo todo el video, prueba en pantalla, 30-45 s y 3-4 variantes que solo cambian el gancho. Se apagan las variantes que no rinden a los 3-4 días."],
+    ["REGLA DE ORO", "Los anuncios de descuento muestran precio tachado, precio final y %. El Máster solo lleva precio en el Black Friday (−25 %); el resto del mes, sin precio. El combo dice «$50» en anuncio, correo, historias y comunidades; el feed va sin precios. El combo cierra el jue 26 a las 23:59 y el Black Friday dura 24 horas (Ecuador): no se reabre."],
 ]
 
 EFEMERIDES = [
@@ -179,10 +188,29 @@ EFEMERIDES = [
     ["27-29 nov", "Ecuador: silencio electoral; elecciones seccionales el dom 29", "Bajar la pauta en Ecuador"],
 ]
 
+# Qué hay que actualizar en cada canal para el combo, el workshop y el Black Friday
+# (pedido de Dayana, 3-nov). Web revisada el 3-nov: academia-web (vercel).
+ACTUALIZAR_POR_CANAL = {
+    "nota": "Lista de lo que cambia en cada canal y quién lo hace. La web se revisó el 3-nov: en Eventos solo aparece el workshop del 17-nov; los precios de la web coinciden con la matriz (Acero USD 225 con tachado de 464,99, diplomados desde USD 499,99, bloques del Máster USD 750 / 750 / 600 / 900). El precio del combo y del Black Friday NO se cambia en la web: se manda por WhatsApp con la mini landing.",
+    "filas": [
+        ["Web · Eventos", "Agregar «Combo de noviembre: especialización + diplomado por $50 (6 al 26-nov, 10 cupos)» y «Black Friday 24 horas: vie 20 (Ecuador) y vie 27». Después del 17-nov, el workshop pasa a «Últimos eventos» con el enlace a la grabación o al resumen.", "vie 6 · mié 18 · lun 23", "Daniela (sube) · Ester (textos)"],
+        ["Web · banner de la portada", "6 al 26-nov: banner del combo con el botón de WhatsApp «COMBO». 23 al 27-nov: aviso del Black Friday. Vie 20: banner solo para Ecuador si la web lo permite; si no, en la portada «Black Friday Ecuador: escríbenos». 28-nov: quitar todo.", "vie 6 · lun 23 · sáb 28", "Daniela"],
+        ["Web · fichas de producto", "No se cambian los precios. Solo un aviso en las fichas de especializaciones y diplomados: «Este mes, el diplomado por $50 con tu especialización (10 cupos)». Se quita al llenarse los cupos o el 27.", "vie 6", "Daniela"],
+        ["Historias", "Combo: 10, 18, 23 y 25-nov · Black Friday Ecuador: 20 · Máster con precio: 26 · Black Friday: 27 · valor: 30. Destacadas: quitar el combo el 27 y el Black Friday el 28.", "según el calendario", "Daniela"],
+        ["Correos (GHL)", "6: lanzamiento del combo · 15: workshop · 18: gracias + combo (asistentes) · 20: Black Friday solo Ecuador · 23: aviso del Black Friday · 25: preguntas · 27: Black Friday. Revisar que las automatizaciones viejas de Black Week o de Acero a $199,99 estén apagadas.", "cada fecha", "Ester · Aylin"],
+        ["Grupos de WhatsApp (envíos programados)", "Grupo del workshop: 6, 9, 12, 13 y 16 ya programados; el 17 se programa con el link del Zoom. Comunidad 1, 2 y Clientes: workshop el 10 y 16 ya programados. Falta programar en las 3 comunidades el combo (6 o 9) y el Black Friday (23 y 27).", "vie 6 · lun 23 · vie 27", "Claude (programa) · Dayana (aprueba los textos)"],
+        ["Comunidades (canal de IG, grupos de FB, YouTube, comunidad GHL)", "El mismo post: 6 combo · 13 Máster por bloques · 16 y 17 workshop · 18 gracias + combo · 23 aviso Black Friday · 27 Black Friday.", "según el calendario", "Daniela"],
+        ["Bot de WhatsApp", "Combo (ofrecerlo a todo el que pregunta por una especialización, 10 cupos), Acero a $225, Black Friday de 24 horas con precios; COMBO y BLACK pasan a una persona. Ester avisa cuando se llenan los 10 cupos.", "jue 5 (mensaje programado a Patricio)", "Patricio"],
+        ["OpenReply y GHL", "Campaña COMBO en OpenReply (solo ahí); etiqueta combo-nov en GHL; mini landings COMBO y BLACK; enlaces de pago que se apagan a las 23:59 del Black Friday.", "vie 6 (combo) · lun 16 (Black Friday)", "Ester · Daniela"],
+        ["Meta Ads", "Anuncio del combo con 4 variantes (vie 6); Black Friday Ecuador (jue 19 y vie 20); Black Friday (jue 26 para agendar el Máster y vie 27); apagar las variantes que no rinden a los 3-4 días; decidir lead magnets el lun 9.", "vie 6 · lun 9 · jue 19 · jue 26", "Olympus"],
+        ["LinkedIn", "Sin ofertas ni precios: 10 Perú BIM · 12 checklist · 16 parámetros · 18 resultados del workshop · 20 Acero · 24 bloques · 26 cómo elegir un programa.", "según el calendario", "Daniela"],
+    ],
+}
+
 ESTRATEGIA_COMERCIAL = {
     "nota": "Actualizado el 3-nov (Dayana, en el cierre de octubre): todo noviembre corre el COMBO (Especialización a precio normal + Diplomado por $50, del 6 al 26) y el Black Friday pasa a ser de 24 horas con descuento en TODOS los programas, incluido el Máster (−25 % en el bloque, sin precio): vie 20 para Ecuador y vie 27 para todos. Se quitan el acceso anticipado (LISTA), la Black Week del 23 al 30 y el Cyber Monday. Nota anterior (23-oct): las decisiones de precio y de cómo se nombra cada oferta las toma ESTER. Los números de abajo son solo la propuesta de partida. La promo la recibe únicamente quien responde o escribe al WhatsApp: la página vieja no se toca (dejará de servir cuando salga la nueva) y cada oferta tiene su mini landing, que se manda solo por WhatsApp. Principios que siguen: escasez real (fecha y hora de cierre, no se reabre), bonos antes que descuentos grandes en lo caro, el Máster nunca con precio.",
     "reglas": [
-        "Ninguna pieza pública (feed, historias, comunidades, LinkedIn, blog, anuncios ni correos) lleva el precio de la oferta ni enlaza la página vieja de pago.",
+        "Ninguna pieza pública enlaza la página vieja de pago. EXCEPCIÓN DEL 3-NOV (Dayana): los ANUNCIOS de descuento (combo y Black Friday) SÍ llevan el precio tachado, el precio final y el % de descuento (p. ej., Acero ̶$̶2̶2̶5̶ $135, −40 %). El Máster también lleva precio, pero SOLO en el Black Friday (bloques ̶$̶7̶5̶0̶ $562,50 · ̶$̶6̶0̶0̶ $450 · ̶$̶9̶0̶0̶ $675). Precios de lista tomados de la web el 3-nov.",
         "Las piezas dicen que HAY oferta, hasta cuándo y cómo pedirla: responder la historia, escribir la palabra por WhatsApp (SUSTO, COMBO, BLACK) o responder el correo.",
         "Excepción del combo (3-nov): el «diplomado por $50» SÍ se dice en anuncio, correo, historias, comunidades y en UNA publicación del feed (vie 6, «Un diplomado completo por $50»), porque es el gancho. El resto del feed sigue sin precios.",
         "GUION DE WHATSAPP (Dayana, 3-nov): a TODO el que llega preguntando por una especialización se le ofrece el combo, lo atienda el bot o una persona: «Si te inscribes en la especialización a su precio normal, por solo $50 más te llevas el diplomado completo. Es solo este mes y quedan [X] de 10 cupos». Ester lleva la cuenta de cupos con la etiqueta combo-nov.",
@@ -325,6 +353,7 @@ def main():
         "checklist_tareas": CHECKLIST,
         "efemerides": EFEMERIDES,
         "estrategia_comercial": ESTRATEGIA_COMERCIAL,
+        "actualizar_por_canal": ACTUALIZAR_POR_CANAL,
         "formatos_prueba": FORMATOS_PRUEBA,
         "publicidad": {
             "nota": "Primero se apaga lo que no trae nada; después entran la campaña de registro del workshop y las de Black Friday.",
