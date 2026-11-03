@@ -5,7 +5,9 @@
 
 Igual que octubre: el calendario solo ORDENA piezas; el contenido vive en
 guiones-completos.json. Noviembre va del miércoles 28 de octubre (arranque del
-workshop y Halloween, «semana 0») al lunes 30 de noviembre (Cyber Monday).
+workshop y Halloween, «semana 0») al lunes 30 de noviembre. Desde el 6-nov
+(Dayana, 3-nov): combo del mes (6 al 26) y Black Friday de 24 horas (vie 20
+Ecuador · vie 27 todos).
 """
 import datetime
 import json
@@ -62,14 +64,14 @@ FEED = [
     ("2026-11-19", "nov-nave-a-ojo-reel", "problema", "Acero", "Comenta ACERO",
      "REFERENTE: misma mecánica de @lexmrbim aplicada a Acero (3 verificaciones en pantalla y las otras 2 por la palabra)."),
     ("2026-11-20", "nov-acero-modulo-a-modulo-carrusel", "objeción", "Acero", "Comenta TEMARIO",
-     "BLACK FRIDAY ECUADOR (20-nov, feriado). El feed explica el programa sin precio; la oferta va en historias, correo y pauta."),
+     "BLACK FRIDAY ECUADOR (vie 20-nov, feriado, 24 horas). El feed explica el programa sin precio; el descuento va en historias, correo y pauta."),
     ("2026-11-21", "nov-ws-clip-demo-reel", "problema", "Máster", "Comenta NIVEL", "Clip del workshop (W+4)."),
-    ("2026-11-23", "nov-master-que-bloque-carrusel", "problema", "Máster", "Comenta NIVEL", "Abre la Black Week. Máster por bloques sin precio."),
+    ("2026-11-23", "nov-master-que-bloque-carrusel", "problema", "Máster", "Comenta NIVEL", "Semana del Black Friday (vie 27, 24 horas) y últimos días del combo (hasta el jue 26). Máster por bloques sin precio."),
     ("2026-11-24", "nov-chuleta-4-uniones-reel", "problema", "Acero", "Comenta ACERO", "SERIE CHULETA 3/4."),
-    ("2026-11-25", "nov-gabriel-no-compres-descuento-reel", "objeción", "Acero", "Comenta TEMARIO", "Gabriel a cámara: honestidad en la Black Week."),
+    ("2026-11-25", "nov-gabriel-no-compres-descuento-reel", "objeción", "Acero", "Comenta TEMARIO", "Gabriel a cámara: honestidad en la semana del Black Friday."),
     ("2026-11-26", "nov-valor-grava-zapata-reel", "problema", "Diplomado · Estructuras", "Comenta ZAPATA",
-     "Video de valor pendiente de octubre: un respiro de valor en la Black Week."),
-    ("2026-11-27", "nov-bf-incluye-post", "objeción", "Acero · cursos", "Comenta BLACK", "BLACK FRIDAY. Sin precios en el feed: van en DM, correo y anuncio."),
+     "Video de valor pendiente de octubre: un respiro de valor antes del Black Friday."),
+    ("2026-11-27", "nov-bf-incluye-post", "objeción", "Acero · cursos", "Comenta BLACK", "BLACK FRIDAY · 24 horas, todos los países. Sin precios en el feed: los % van en historias, correo y anuncio."),
     ("2026-11-28", "nov-ia-revit-3-pasos-reel", "solución", "Máster", "Comenta NIVEL",
      "CLIP DESTACADO DEL WORKSHOP (W+11): se corta de la grabación del 17-nov el momento de los 3 pasos. Antes estaba el 7-nov; se movió porque mostrarlo antes del workshop le quitaba sentido (Dayana, 30-oct)."),
     ("2026-11-30", "nov-chuleta-1-perfiles-acero-reel", "problema", "Acero", "Comenta ACERO",
@@ -122,8 +124,10 @@ def ficha_anuncio(pid, campana):
     p = pieza(pid)
     cfg = [["Botón", p.get("boton", "")], ["Público", p.get("publico_sugerido", "")], ["Qué medir", p.get("que_medir", "")]]
     return {"id": pid, "titulo": p.get("titulo"), "campana": campana,
-            "precio": "precio de Black Friday (lo confirma Dayana)" if "Acero" in (p.get("producto") or "") or "Cursos" in (p.get("producto") or "")
-            else "sin precio (regla del Máster)",
+            "precio": "sin precio (regla del Máster): solo el %" if (p.get("producto") or "").startswith("Máster")
+            else "combo: especialización $225 + diplomado $50" if "Diplomados" in (p.get("producto") or "") and "Especializaciones" in (p.get("producto") or "")
+            else "% de Black Friday (los confirma Ester)" if "Todos" in (p.get("producto") or "")
+            else "sin precio",
             "formato": p.get("formato_detalle") or "anuncio", "hook": p.get("hook"), "cuerpo": p.get("texto_principal"),
             "titular": p.get("titular"), "descripcion": p.get("descripcion"), "creativo": p.get("creativo"),
             "prompt": p.get("prompt_imagenes", ""), "cfg": cfg, "condicion": p.get("condicion", "")}
@@ -131,9 +135,9 @@ def ficha_anuncio(pid, campana):
 
 ADS = {
     "WORKSHOP · registro (2 al 16-nov, parte de los 59 USD del plan)": ["nov-ads-ws-demo", "nov-ads-ws-5-preguntas", "nov-ads-ws-taller-gratis"],
-    "ACERO · Black Friday (18 al 30-nov)": ["nov-ads-acero-bf"],
-    "CURSOS DE BAJO COSTO · Halloween (30-oct al 1-nov) y Black Week": ["nov-ads-cursos-bf"],
-    "MÁSTER · bono de Black Week (23 al 30-nov), sin precio": ["nov-ads-master-bono"],
+    "COMBO DEL MES · Especialización + Diplomado por $50 (6 al 26-nov)": ["nov-ads-acero-bf"],
+    "BLACK FRIDAY · 24 horas en todos los programas (vie 20 Ecuador · vie 27 todos)": ["nov-ads-cursos-bf"],
+    "MÁSTER · −25 % en el bloque, solo el Black Friday, sin precio": ["nov-ads-master-bono"],
     "MÁSTER · la ruta en 4 bloques (siempre activa desde el 2-nov), sin precio": ["nov-ads-master-ruta"],
     "COLECCIÓN AUTODESK CON IA · cómo funciona (2 al 22-nov), sin precio": ["nov-ads-coleccion-ruta"],
     "ESPECIALIZACIONES · cómo funcionan (2 al 17-nov), sin precio": ["nov-ads-especializaciones-ruta"],
@@ -149,9 +153,11 @@ DECISIONES_PAUTA = [
     ["2 · Concentrar el Máster en [29SEP]", "Y reactivar «MÁSTER CITA» ($0,63) solo si GHL confirma que esos leads agendan."],
     ["3 · Workshop: registro del 2 al 16-nov",
      "Hoy no hay ningún anuncio del workshop. Los 59 USD del plan van a quien interactuó con la cuenta: las chuletas de octubre alcanzaron unas 55.000 cuentas (puede contar a la misma persona dos veces). Medir registros reales en GHL el 3 y el 10-nov."],
-    ["4 · Black Friday", "Acero y cursos de bajo costo con precio de Black Friday del 18 al 30-nov (acceso anticipado 18-22). Máster: solo el bono, sin precio. Un solo enlace de pago por producto."],
-    ["5 · Ecuador y las elecciones", "Concentrar la pauta de Ecuador del 18 al 26 y bajarla del 27 al 29 (silencio electoral y elecciones seccionales del dom 29-nov)."],
-    ["REGLA DE ORO", "El Máster no lleva precio en ninguna pieza. Los precios de Black Friday van solo en pauta, correo y DM. La oferta cierra el lun 30-nov a las 23:59 (Ecuador) y NO se reabre."],
+    ["4 · Combo y Black Friday (3-nov, Dayana)", "Del 6 al 26-nov: anuncio del combo (Especialización a $225 + Diplomado por $50), con Gabriel a cámara y botón a WhatsApp; se financia con lo que se apaga de lead magnets. Black Friday de 24 horas: vie 20 solo Ecuador y vie 27 todos los demás (cursos −50 %, especializaciones y diplomados −40 %, Máster −25 % en el bloque, sin precio). Un solo enlace de pago por producto."],
+    ["5 · Ecuador y las elecciones", "Ecuador tiene su Black Friday el vie 20 (24 horas). Del 27 al 29 se baja la pauta en Ecuador (silencio electoral y elecciones seccionales del dom 29-nov)."],
+    ["6 · Lead magnets", "Cierre de octubre (3-nov): las campañas de visitas al perfil gastaron $58 sin leads (3.063 visitas a $0,019). Se apagan y ese dinero pasa al combo y a pautar la chuleta ganadora («Simbología de niveles», 79.800 vistas) con su palabra clave."],
+    ["7 · Acero a $225", "Todo noviembre a $225 (Dayana, 3-nov). Los anuncios de Acero dicen $225 o no dicen precio; ninguno dice $199,99. Solo el Black Friday baja el precio."],
+    ["REGLA DE ORO", "El Máster no lleva precio en ninguna pieza: en Black Friday solo se dice el %. El combo dice «$50» en anuncio, correo, historias y comunidades; el feed va sin precios. El combo cierra el jue 26 a las 23:59 y el Black Friday dura 24 horas (Ecuador): no se reabre."],
 ]
 
 EFEMERIDES = [
@@ -164,31 +170,37 @@ EFEMERIDES = [
     ["13-17 nov", "Buen Fin en México (termina el día del workshop) · lun 16 descanso en México y festivo en Colombia", "«Tu Buen Fin es gratis: workshop el martes»"],
     ["Lun 16-nov", "Ecuador: pago del décimo tercer sueldo del sector público", "Último empujón del workshop"],
     ["Mar 17-nov", "WORKSHOP · 8:00 PM Ecuador", "Recordatorios ya hechos (PR #137)"],
-    ["Vie 20-nov", "Ecuador: día libre (Decreto 507) y Black Friday ecuatoriano, adelantado por las elecciones", "Acceso anticipado: historias y correo solo a Ecuador"],
-    ["Lun 23-nov", "Argentina: feriado de la Soberanía Nacional", "Abre la Black Week"],
-    ["Jue 26 · Vie 27 · Lun 30-nov", "Thanksgiving · Black Friday (Chile: BF del 27 al 30) · Cyber Monday", "Pico de venta y cierre definitivo el 30 a las 23:59"],
+    ["Vie 20-nov", "Ecuador: día libre (Decreto 507) y Black Friday ecuatoriano, adelantado por las elecciones", "Black Friday de 24 horas solo para Ecuador"],
+    ["Lun 23-nov", "Argentina: feriado de la Soberanía Nacional", "Aviso del Black Friday del viernes y últimos días del combo"],
+    ["Jue 26 · Vie 27-nov", "Thanksgiving · Black Friday (Chile: BF del 27 al 30)", "Cierra el combo (jue 26, 23:59) · Black Friday de 24 horas (vie 27)"],
+    ["Lun 30-nov", "Cyber Monday", "Sin oferta: la chuleta de perfiles de acero cierra la serie"],
     ["27-29 nov", "Ecuador: silencio electoral; elecciones seccionales el dom 29", "Bajar la pauta en Ecuador"],
 ]
 
 ESTRATEGIA_COMERCIAL = {
-    "nota": "Actualizado el 23-oct (Dayana): las decisiones de precio y de cómo se nombra cada oferta las toma ESTER. Los números de abajo son solo la propuesta de partida. La promo la recibe únicamente quien responde o escribe al WhatsApp: la página vieja no se toca (dejará de servir cuando salga la nueva) y cada oferta tiene su mini landing, que se manda solo por WhatsApp. Principios que siguen: escasez real (fecha y hora de cierre, no se reabre), bonos antes que descuentos grandes en lo caro, el Máster nunca con precio.",
+    "nota": "Actualizado el 3-nov (Dayana, en el cierre de octubre): todo noviembre corre el COMBO (Especialización a precio normal + Diplomado por $50, del 6 al 26) y el Black Friday pasa a ser de 24 horas con descuento en TODOS los programas, incluido el Máster (−25 % en el bloque, sin precio): vie 20 para Ecuador y vie 27 para todos. Se quitan el acceso anticipado (LISTA), la Black Week del 23 al 30 y el Cyber Monday. Nota anterior (23-oct): las decisiones de precio y de cómo se nombra cada oferta las toma ESTER. Los números de abajo son solo la propuesta de partida. La promo la recibe únicamente quien responde o escribe al WhatsApp: la página vieja no se toca (dejará de servir cuando salga la nueva) y cada oferta tiene su mini landing, que se manda solo por WhatsApp. Principios que siguen: escasez real (fecha y hora de cierre, no se reabre), bonos antes que descuentos grandes en lo caro, el Máster nunca con precio.",
     "reglas": [
         "Ninguna pieza pública (feed, historias, comunidades, LinkedIn, blog, anuncios ni correos) lleva el precio de la oferta ni enlaza la página vieja de pago.",
-        "Las piezas dicen que HAY oferta, hasta cuándo y cómo pedirla: responder la historia, escribir la palabra por WhatsApp (SUSTO, LISTA, BLACK) o responder el correo.",
-        "Por WhatsApp una persona manda el precio y la mini landing de esa oferta. Una mini landing por oferta (SUSTO · cursos; BLACK · Acero; BLACK · cursos); no se publica ni se enlaza en abierto.",
+        "Las piezas dicen que HAY oferta, hasta cuándo y cómo pedirla: responder la historia, escribir la palabra por WhatsApp (SUSTO, COMBO, BLACK) o responder el correo.",
+        "Excepción del combo (3-nov): el «diplomado por $50» SÍ se dice en anuncio, correo, historias y comunidades porque es el gancho. El feed sigue sin precios.",
+        "Por WhatsApp una persona manda el precio y la mini landing de esa oferta. Una mini landing por oferta (SUSTO · cursos; COMBO · especialización + diplomado; BLACK · todos los programas); no se publica ni se enlaza en abierto.",
         "Los anuncios de Halloween y Black Friday llevan el botón «Enviar mensaje» y van a WhatsApp, no a la página.",
-        "El Máster no lleva precio en ningún lado: en la Black Week va con bono y se habla en llamada.",
+        "El Máster no lleva precio en ningún lado: en Black Friday se dice «−25 % en tu bloque» y el precio se da en la llamada.",
+        "ACERO SE VENDE A $225 TODO NOVIEMBRE (Dayana, 3-nov): en octubre ninguna venta pagó los $225 (se vendió a $199,99 por PayPal). Nadie ofrece $199,99 ni descuentos sueltos; la única excepción es el Black Friday de 24 horas.",
+        "El combo y el Black Friday no se suman (propuesta; lo decide Ester): el combo cierra el jue 26 a las 23:59 y el Black Friday empieza el vie 27 a las 00:00.",
         "Ester decide: el precio final, si el descuento se dice en % o en $, si la mini landing muestra el precio normal tachado, los bonos y si entran los Diplomados.",
     ],
     "ventanas": [
         ["Halloween flash", "vie 30-oct 00:00 → dom 1-nov 23:59 (Ecuador)", "Propuesta: cursos de bajo costo (~$26,99) a $19,99 con el cupón SUSTO", "Historias 31-oct y 1-nov, comunidades 30-oct, correos 30-oct y 1-nov, anuncio corto → todo termina en WhatsApp (SUSTO)"],
         ["Calentamiento + workshop", "2 → 17 nov", "Sin oferta: valor (chuletas, dato, Perú BIM, calidad) y registro al workshop", "Feed, historias, comunidades, correos 2, 10 y 15-nov, pauta de registro"],
-        ["Acceso anticipado", "mié 18 → dom 22-nov", "Para registrados al workshop, compradores de cursos y Ecuador (su Black Friday es el 20)", "Historias 18 y 20, correos 18 y 20, comunidades 18 → WhatsApp (LISTA)"],
-        ["Black Week", "lun 23 → lun 30-nov 23:59", "Propuesta: Acero con Tutor IA $179 (normal $225) · sin Tutor $159 · pack de 3 cursos de bajo costo $49 · Diplomados −15 a −20 % o bono · Máster: «Bono Black» (Acero con Tutor IA + Naves PRO) al empezar un bloque, solo en llamada", "Historias casi diarias, correos 23, 25, 27 y 30, comunidades 23, 27 y 30, pauta → WhatsApp (BLACK)"],
+        ["Combo del mes", "vie 6 → jue 26-nov 23:59", "Especialización a precio normal ($225) + un Diplomado por $50 más (valor de referencia $500). Total $275 por un valor de $725. La llave es SOLO una especialización: con un curso de $27 el diplomado saldría en $77 (decisión de Dayana, 3-nov)", "Correo y comunidades 6-nov, historias 10, 18, 23 y 25, correos 18, 23 y 25, anuncio con Gabriel a cámara → WhatsApp (COMBO)"],
+        ["Black Friday Ecuador", "vie 20-nov, 24 horas", "Propuesta: cursos −50 % · especializaciones y diplomados −40 % · Máster −25 % en el bloque (sin precio). Solo Ecuador (su Black Friday, adelantado por las elecciones)", "Historia y correo del 20 + anuncio segmentado a Ecuador → WhatsApp (BLACK)"],
+        ["Black Friday", "vie 27-nov, 24 horas", "Los mismos % para todos los países (Ecuador ya tuvo el suyo y está en silencio electoral). Máster: se pauta y se agenda desde el jue 26", "Aviso 23 (historia, correo, comunidades), Máster 26 (historia), BF 27 (feed, historia, correo, comunidades, anuncios) → WhatsApp (BLACK)"],
     ],
     "falta_para_decidir": [
-        "Ester: precios finales, bonos y cómo se nombran. Halloween antes del jue 29-oct; Black Friday antes del lun 16-nov.",
-        "Ester: las 3 mini landings, los cupones en GHL y el enlace de WhatsApp con cada palabra ya escrita (SUSTO, LISTA, BLACK), que reemplaza los corchetes de las piezas.",
+        "Ester: qué diplomados entran al combo y su precio de referencia. Los $50 cubren el certificado (Dayana, 3-nov). Todo montado el vie 6-nov con Daniela.",
+        "Ester: los % finales del Black Friday y si el combo se suma o no. Antes del lun 16-nov.",
+        "Ester: las mini landings (COMBO; BLACK), los cupones en GHL y el enlace de WhatsApp con cada palabra ya escrita, que reemplaza los corchetes de las piezas.",
         "Ester y Aylin: las plantillas de respuesta por WhatsApp con el precio y la mini landing de cada oferta.",
         "Dayana: el corte de Stripe y PayPal de noviembre de 2025 (no hay dato del Black Friday pasado; en GHL solo existe el formulario «Registro BlackFriday 2025»).",
     ],
@@ -235,14 +247,14 @@ FORMATOS_PRUEBA = {
 }
 
 DESTACADAS = [
-    {"destacada": "🔩 ACERO", "que_va": "Chuletas de acero, Gabriel sobre el orden del diseño, acceso anticipado y Black Week de Acero.",
-     "agregar": ["nov-hist-1104", "nov-hist-1105", "nov-hist-1111", "nov-hist-1118", "nov-hist-1120", "nov-hist-1123", "nov-hist-1124", "nov-hist-1125", "nov-hist-1127", "nov-hist-1130"],
-     "quitar": "El 1-dic: todos los frames con precio, cuenta regresiva o «Black Friday» (vencidos)."},
+    {"destacada": "🔩 ACERO", "que_va": "Chuletas de acero, Gabriel sobre el orden del diseño, el combo del mes y el Black Friday.",
+     "agregar": ["nov-hist-1104", "nov-hist-1105", "nov-hist-1110", "nov-hist-1111", "nov-hist-1118", "nov-hist-1120", "nov-hist-1123", "nov-hist-1124", "nov-hist-1125", "nov-hist-1127", "nov-hist-1130"],
+     "quitar": "El vie 27 a medianoche: los frames del combo. El 28-nov: todo lo que tenga % de Black Friday o cuenta regresiva (vencido)."},
     {"destacada": "🎯 BIM + IA", "que_va": "Máster por bloques, workshop, Perú BIM, checklist de calidad y preguntas sobre la IA.",
      "agregar": ["nov-hist-1109", "nov-hist-1112", "nov-hist-1113", "nov-hist-1116", "nov-hist-1117", "nov-hist-1119", "nov-hist-1126"],
      "quitar": "Después del 17-nov, los frames de cuenta regresiva y registro del workshop (dejar solo el resumen del 19)."},
     {"destacada": "🎁 HERRAMIENTAS", "que_va": "Recursos gratis (zapatas, 5 verificaciones, test de nivel) y cursos de bajo costo.",
-     "agregar": ["nov-hist-1031", "nov-hist-1101", "nov-hist-1106", "nov-hist-1110"],
+     "agregar": ["nov-hist-1031", "nov-hist-1101", "nov-hist-1106"],
      "quitar": "El 2-nov: los frames del cupón SUSTO (vencido)."},
     {"destacada": "👥 COMUNIDAD", "que_va": "Detrás de cámara de la grabación con Daniela y del workshop.", "agregar": [], "quitar": "Recaps de más de 3 meses."},
     {"destacada": "⭐ ALUMNOS", "que_va": "Testimonios reales con permiso.", "agregar": [], "quitar": "Nada, salvo que un alumno retire su permiso."},
@@ -255,18 +267,22 @@ CHECKLIST = [
     {"tarea": "Grabar en UNA sesión con Daniela: demo y «para quién es» del workshop, «tu nave a ojo» (celular sobre el monitor, como el referente), el reel «el error que más veo», el reel «no compres por el descuento» y los selfies de Gabriel para historias (3, 5, 10, 12, 16, 18, 23 y 27-nov). Lista de pantallas en grabaciones-pantalla-gabriel.pdf.", "desbloquea": "6 reels y 8 historias con Gabriel a cámara", "cuando": "antes del jue 29-oct (lo del workshop) y del vie 13-nov (el resto)", "para": "Gabriel y Daniela"},
     {"tarea": "Editar las 4 chuletas (cerchas 10-nov, LOD 17-nov, uniones 24-nov y perfiles de acero 30-nov) con los formatos de los reels del 19 y 20-oct que funcionaron: LOD, uniones y perfiles como «Simbología de niveles» (lista visual sin voz) y cerchas como «5 tipos de cimentación» (pizarra con voz). El 4-nov sale el video ya editado de las 6 uniones viga-columna. Gabriel revisa cada lámina técnica antes de publicar.", "desbloquea": "La serie que se llevó octubre", "cuando": "una por semana, 2 días antes", "para": "Daniela / Dayana"},
     {"tarea": "Auditar el disparador de NIVEL: 110 disparos en 3 días contra 9 tests terminados (análisis del 23-oct). Comprobar si responde a cualquier comentario con la palabra «nivel» y avisar al setter.", "desbloquea": "Las 8 piezas que piden NIVEL", "cuando": "antes del lun 2-nov", "para": "Ester / Patricio"},
-    {"tarea": "Decidir precios, bonos y cómo se nombra cada oferta de Halloween y Black Friday (propuesta en la pestaña Resumen). La promo va SOLO por WhatsApp: no se cambia la página vieja. Crear los cupones, las 3 mini landings (SUSTO; BLACK · Acero; BLACK · cursos) y el enlace de WhatsApp con cada palabra ya escrita, y ponerlo donde las piezas dicen [enlace de WhatsApp…].", "desbloquea": "Halloween (30-oct) y Black Week (18-nov)", "cuando": "Halloween antes del jue 29-oct; Black Friday antes del lun 16-nov", "para": "Ester (decide y crea)"},
-    {"tarea": "Respuestas a las palabras de historias, correos y comunidades (SUSTO, LISTA, BLACK, NAVES, TEMARIO, MÁSTER, NIVEL, ACERO, ZAPATA): las contesta una persona; las de oferta pasan a WhatsApp, donde va el precio y la mini landing. Dejar plantillas listas en la bandeja.", "desbloquea": "Que las historias de venta conviertan", "cuando": "antes del 30-oct", "para": "Ester y Aylin"},
+    {"tarea": "COMBO DEL MES (3-nov): Ester confirma qué diplomados entran y su precio de referencia (los $50 cubren el certificado: confirmado por Dayana). Ester y Daniela montan la mini landing COMBO, el enlace de WhatsApp con «COMBO» ya escrito, la etiqueta combo-nov en GHL y la campaña COMBO en OpenReply (una sola automatización: si va en OpenReply, no se monta también en GHL). Ponerlo donde las piezas dicen [enlace de WhatsApp…].", "desbloquea": "El correo, las comunidades y el anuncio del vie 6-nov", "cuando": "todo montado el vie 6-nov", "para": "Ester y Daniela"},
+    {"tarea": "BLACK FRIDAY de 24 horas (vie 20 Ecuador · vie 27 todos): confirmar los % (propuesta: cursos −50 %, especializaciones y diplomados −40 %, Máster −25 % en el bloque), si se suma con el combo, la mini landing BLACK y los enlaces de pago que se apagan a las 23:59.", "desbloquea": "Las piezas del 20, 23, 26 y 27-nov", "cuando": "antes del lun 16-nov", "para": "Ester (decide y crea)"},
+    {"tarea": "Grabar con Gabriel el anuncio del combo («Un diplomado completo por $50…», 15 s, 9:16 y 4:5) y los selfies del 10, 23 y 27-nov con los textos nuevos del combo y del Black Friday de 24 horas.", "desbloquea": "Anuncio del combo y 3 historias con Gabriel", "cuando": "jue 5-nov", "para": "Dayana y Gabriel"},
+    {"tarea": "Actualizar la información del bot de ventas: combo del mes, Acero a $225 todo noviembre, Black Friday de 24 horas (20 Ecuador · 27 todos) y que COMBO y BLACK pasen a una persona. Se le pide por el grupo de Soporte TECH el jue 5.", "desbloquea": "Que el bot no dé precios viejos", "cuando": "jue 5-nov", "para": "Patricio"},
+    {"tarea": "Respuestas a las palabras de historias, correos y comunidades (SUSTO, COMBO, BLACK, NAVES, TEMARIO, MÁSTER, NIVEL, ACERO, ZAPATA): las contesta una persona; las de oferta pasan a WhatsApp, donde va el precio y la mini landing. Dejar plantillas listas en la bandeja.", "desbloquea": "Que las historias de venta conviertan", "cuando": "antes del 30-oct", "para": "Ester y Aylin"},
     {"tarea": "Publicar los 2 reels de prueba ya editados («6 uniones acero-hormigón» y «¿La IA te va a reemplazar?») antes del 31-oct, y anotar su enlace para la revisión de formatos.", "desbloquea": "La revisión de formatos del 9-nov", "cuando": "antes del sáb 31-oct", "para": "Daniela"},
     {"tarea": "Producir la chuleta 2 (cerchas) en estilo 9, pizarra con voz, y «no compres por el descuento» en estilo 10, motion cromado. Son las piezas de prueba de formato del mes.", "desbloquea": "Comparar formatos con el mismo tipo de tema", "cuando": "2 días antes de cada fecha", "para": "Daniela / Dayana"},
     {"tarea": "Revisión de formatos en prueba: correr scripts/formatos_prueba.py --mes 2026-11 y anotar en el calendario, por pieza, cuántos llegaron al WhatsApp y cuántas ventas salieron en 14 días (GHL).", "desbloquea": "Qué formato entra fijo en diciembre", "cuando": "lun 9-nov y lun 30-nov", "para": "Ester (datos de GHL) · Dayana (decide)"},
     {"tarea": "Confirmar con Dayana los nombres de los 4 bloques del Máster y qué certificación da cada uno, y los nombres de los 4 módulos de Acero.", "desbloquea": "Post del 13, carrusel del 20 y del 23-nov", "cuando": "antes del lun 9-nov", "para": "Dayana"},
     {"tarea": "Pedir el corte de Stripe y PayPal de noviembre de 2025 (no hay dato del Black Friday pasado).", "desbloquea": "La meta de Black Friday", "cuando": "antes del 10-nov", "para": "Dayana"},
     {"tarea": "Pauta: apagar «Resto» de ACERO WSP, las 2 campañas LEAD MAGNETS y ACERO TEST GANCHOS; subir la campaña de registro del workshop (2 al 16-nov).", "desbloquea": "Leads más baratos y registros al workshop", "cuando": "lun 2-nov", "para": "Olympus"},
+    {"tarea": "Pauta del combo (6 al 26-nov) y del Black Friday (vie 20 solo Ecuador, vie 27 los demás; Máster desde el jue 26). Decidir el lun 9-nov si sigue la prueba del formulario de calificación del Máster, por citas y costo por cita.", "desbloquea": "Las ventas del combo y del Black Friday", "cuando": "vie 6, lun 9, jue 19 y jue 26-nov", "para": "Olympus"},
     {"tarea": "La guía de regalo «conectar la IA a tu Revit» (la promete la landing y el mensaje del 16-nov) tiene que existir antes del workshop. Definir quién la hace.", "desbloquea": "Promesa del workshop", "cuando": "antes del lun 16-nov", "para": "Dayana (asigna)"},
     {"tarea": "Juntar las pruebas reales para las historias de venta (frame 2): 3 o 4 mensajes de alumnos con permiso o con el nombre tapado, el testimonio del alumno de Acero, una nave en SAP2000 de Naves PRO, un reporte de interferencias de Navisworks y una captura del Tutor IA de Acero.", "desbloquea": "Las 12 historias de venta en 3 tiempos", "cuando": "antes del lun 2-nov", "para": "Daniela / Ester"},
     {"tarea": "Gabriel confirma lo que dice a cámara en las historias de venta («me tomó años…», «he visto a muchos ingenieros…») y revisa los datos técnicos de las historias de valor (perfiles, recubrimiento ACI, cerchas, uniones).", "desbloquea": "Que nada de lo que se publica sea inexacto", "cuando": "antes de la sesión de grabación", "para": "Gabriel"},
-    {"tarea": "Cada viernes, guardar las historias de la semana en su destacada; el 2-nov quitar SUSTO y el 1-dic quitar todo lo de Black Friday.", "desbloquea": "Destacadas al día", "cuando": "viernes 6, 13, 20 y 27", "para": "Daniela"},
+    {"tarea": "Cada viernes, guardar las historias de la semana en su destacada; el 2-nov quitar SUSTO, el 27 el combo y el 28 todo lo de Black Friday.", "desbloquea": "Destacadas al día", "cuando": "viernes 6, 13, 20 y 27", "para": "Daniela"},
     {"tarea": "Publicar los 4 blogs (6, 13, 20 y 27) con su post de anuncio.", "desbloquea": "G3 del mes", "cuando": "cada viernes", "para": "equipo de contenido"},
 ]
 
@@ -282,19 +298,21 @@ def main():
     gab = sum(1 for x in hist if x.get("gabriel_a_camara"))
     cal = {
         "mes": "2026-11",
-        "subtitulo": "Del miércoles 28 de octubre al lunes 30 de noviembre · Halloween, workshop del 17-nov y Black Friday · escrita para vender Máster por bloques y Especialización en ACERO",
+        "subtitulo": "Del miércoles 28 de octubre al lunes 30 de noviembre · Halloween, workshop del 17-nov, combo del mes (6 al 26) y Black Friday de 24 horas (20 Ecuador · 27 todos) · escrita para vender Máster por bloques y Especialización en ACERO",
         "ventas_por_semana_max": 4,
         "reglas_del_mes": [
             "LO QUE APRENDIMOS EN OCTUBRE (análisis del 23-oct): dos reels que NO estaban en la matriz —«Simbología de niveles en planos ¿Cuál usas más?» (57.230 vistas, 220 comentarios, 2.455 guardados, 705 compartidos, el más compartido de la cuenta) y «5 tipos de cimentación» (8.598 vistas, 7,33 comentarios por 1.000)— se llevaron el 44 % de las vistas y el 71 % de los guardados del mes. Por eso noviembre abre la SERIE CHULETA: 4 reels, uno por semana.",
             "REFERENTES (Graph API, 23-oct; Apify sin crédito este mes): el reel DeGtyhfoXar de @lexmrbim («Conecta Revit + IA paso a paso») sacó 98.570 vistas y 3.162 comentarios. Su mediana de reels (5.224) es casi la nuestra (5.306): lo que lo separa es que CADA tutorial termina en un recurso por palabra (reels con palabra: 14 comentarios por 1.000; sin palabra: 0). Se adapta en dos reels (7 y 19-nov). @aecode.ai: lo que le funciona son carruseles comparativos con un problema de obra en el gancho.",
             "LO QUE NO FUNCIONÓ: los anuncios de producto sueltos en el feed (tutor, certificado, carrusel del workshop: 0 comentarios) y los reels de opinión sobre la IA y los clips de clase de los sábados (936 a 1.177 vistas, 0 a 2 comentarios). Cada producto entra detrás de un problema o de un dato. El workshop no tuvo registros porque todavía no se había promocionado: no hay anuncio y ninguna historia lo mencionaba.",
             f"FEED: {len(cuota)} piezas + {len(feed) - len(cuota)} videos de valor pendientes de octubre (fuera de cuota, ya editados) · formato {fmt['reel']} reels / {fmt['carrusel']} carruseles / {fmt['post']} posts · intención {inten['problema']} problema / {inten['solución']} solución / {inten['objeción/testimonio']} objeción.",
-            "EFEMÉRIDES Y TENDENCIAS ENTRAN AL CALENDARIO (pedido de Dayana, 23-oct): Día de Difuntos y de Muertos, Día de la Ciencia, World Quality Day, Buen Fin, Black Friday de Ecuador (20-nov) e internacional (27-nov), Cyber Monday, y la tendencia del sector: BIM obligatorio en Perú. Tabla completa en la pestaña Resumen.",
-            f"HISTORIAS CON MÁS VENTA Y CON GABRIEL (Dayana, 23-oct): {ventas} historias de venta en el mes (2 por semana hasta el workshop, más en la Black Week) y Gabriel a cámara en {gab} días (al menos 2 por semana), grabadas en una sola sesión con Daniela.",
+            "EFEMÉRIDES Y TENDENCIAS ENTRAN AL CALENDARIO (pedido de Dayana, 23-oct): Día de Difuntos y de Muertos, Día de la Ciencia, World Quality Day, Buen Fin, Black Friday de Ecuador (20-nov) e internacional (27-nov), y la tendencia del sector: BIM obligatorio en Perú. Tabla completa en la pestaña Resumen.",
+            f"HISTORIAS CON MÁS VENTA Y CON GABRIEL (Dayana, 23-oct): {ventas} historias de venta en el mes (2 por semana hasta el workshop; después, el combo y el Black Friday) y Gabriel a cámara en {gab} días (al menos 2 por semana), grabadas en una sola sesión con Daniela.",
             "DAR A CONOCER LOS PROGRAMAS: el Máster por bloques (BIM Professional · Coordination · Management · BIM + IA) y la Especialización en Acero se explican con piezas propias (13, 20 y 23-nov), siempre desde el problema y sin precio en el feed.",
-            "PALABRAS DE COMENTARIO: NIVEL (Máster), ACERO, ZAPATA y WORKSHOP (hasta el 17-nov). En historias, las respuestas (SUSTO, NAVES, LISTA, BLACK) llegan por DM y las contesta una persona. No hay lead magnet nuevo este mes.",
-            "LAS PIEZAS DE VENTA NO USAN PALABRAS DE LEAD MAGNET (Dayana, 30-oct): ACERO, NIVEL y ZAPATA disparan la automatización del recurso gratis (ACERO manda la guía de las 5 verificaciones). Para pedir la información de un curso: TEMARIO (Especialización en Acero), MÁSTER, NAVES; para las ofertas: SUSTO, LISTA y BLACK. Las piezas de valor siguen con la palabra de su recurso.",
-            "LA PROMO SOLO POR WHATSAPP (Dayana, 23-oct): ninguna pieza pública lleva el precio de la oferta ni enlaza la página vieja. Quien responde o escribe al WhatsApp recibe el precio y la mini landing de su oferta. Ester decide los precios y cómo se nombran. El Máster nunca lleva precio. Toda oferta cierra a la hora dicha (Ecuador) y NO se reabre.",
+            "PALABRAS DE COMENTARIO: NIVEL (Máster), ACERO, ZAPATA y WORKSHOP (hasta el 17-nov). En historias, las respuestas (SUSTO, NAVES, COMBO, BLACK) llegan por DM y las contesta una persona. No hay lead magnet nuevo este mes.",
+            "LAS PIEZAS DE VENTA NO USAN PALABRAS DE LEAD MAGNET (Dayana, 30-oct): ACERO, NIVEL y ZAPATA disparan la automatización del recurso gratis (ACERO manda la guía de las 5 verificaciones). Para pedir la información de un curso: TEMARIO (Especialización en Acero), MÁSTER, NAVES; para las ofertas: SUSTO, COMBO y BLACK. Las piezas de valor siguen con la palabra de su recurso.",
+            "COMBO Y BLACK FRIDAY (Dayana, 3-nov, cierre de octubre): del vie 6 al jue 26 corre el combo (Especialización a precio normal $225 + Diplomado por $50; la llave es SOLO una especialización). Black Friday de 24 horas en todos los programas: vie 20 solo Ecuador y vie 27 todos (propuesta: cursos −50 %, especializaciones y diplomados −40 %, Máster −25 % en el bloque, sin precio). Se quitan el acceso anticipado, la Black Week y el Cyber Monday. Los números los confirma Ester.",
+            "ACERO A $225 SÍ O SÍ (Dayana, 3-nov): la Especialización en Acero con Tutor IA se vende a $225 todo noviembre, sin $199,99 ni descuentos sueltos (en octubre ninguna venta pagó los $225). La única excepción es el Black Friday de 24 horas (20 Ecuador · 27 todos).",
+            "LA PROMO SOLO POR WHATSAPP (Dayana, 23-oct): ninguna pieza pública lleva el precio de la oferta ni enlaza la página vieja (excepción del 3-nov: el «diplomado por $50» del combo sí se dice en anuncio, correo, historias y comunidades; el feed sigue sin precios). Quien responde o escribe al WhatsApp recibe el precio y la mini landing de su oferta. Ester decide los precios y cómo se nombran. El Máster nunca lleva precio. Toda oferta cierra a la hora dicha (Ecuador) y NO se reabre.",
             "FORMATOS EN PRUEBA: chuleta visual sin voz, pizarra con voz de Gabriel (estilo 9) y Gabriel con motion cromado (estilo 10). Se revisan el 9 y el 30-nov. Un formato entra fijo solo si genera interés, interacción y ventas (pestaña Resumen).",
             "Visuales = capturas reales de Revit/Robot/Navisworks y cámara de Gabriel. Nada técnico se publica sin que Gabriel lo revise (regla 0).",
             "Mínimo 60 % en el NÚCLEO. Cero OBRA. Ninguna pieza repite un id o un gancho ya usado.",
@@ -310,13 +328,13 @@ def main():
         },
         "grupos": [
             {"n": 1, "nombre": "GRUPO 1 · Feed principal — Instagram, Facebook, TikTok, YouTube Shorts",
-             "descripcion": "4-5 piezas por semana. La serie Chuleta sale martes o miércoles; el workshop ocupa su carrusel y sus dos videos; la Black Week va sin precios en el feed.",
+             "descripcion": "4-5 piezas por semana. La serie Chuleta sale martes o miércoles; el workshop ocupa su carrusel y sus dos videos; el Black Friday va sin precios en el feed.",
              "reglas": ["Cada pieza lleva el CTA de su producto: Máster → NIVEL; ACERO → ACERO; concreto → ZAPATA; workshop → WORKSHOP (hasta el 17).",
-                        "Si la pieza VENDE la especialización (no regala un recurso), la palabra es TEMARIO; en la Black Week, BLACK. ACERO entrega la guía gratis, no la información del curso.",
+                        "Si la pieza VENDE la especialización (no regala un recurso), la palabra es TEMARIO; el combo, COMBO; el Black Friday, BLACK. ACERO entrega la guía gratis, no la información del curso.",
                         "En TikTok y YouTube Shorts, sin palabra clave: pregunta abierta."],
              "calendario": feed},
             {"n": 2, "nombre": "GRUPO 2 · Comunidades — WhatsApp, canal de IG, grupos de FB, comunidad de YouTube, comunidades GHL",
-             "descripcion": "Un solo post completo, el mismo en todos los canales: 6 del workshop (plan), Halloween, Acero, Máster por bloques y 4 de Black Friday.",
+             "descripcion": "Un solo post completo, el mismo en todos los canales: 6 del workshop (plan), Halloween, Acero, Máster por bloques, 2 del combo y 2 del Black Friday.",
              "reglas": ["Si hay regalo o registro, el enlace va directo en el post. Nada de «respóndeme X». Sin hashtags.", "Si es oferta, el único enlace es el de WhatsApp con la palabra ya escrita. Nunca el precio ni la página vieja."],
              "calendario": filas_de("GRUPO 2")},
             {"n": 3, "nombre": "GRUPO 3 · Blog de Design Modeling Academy",
@@ -341,11 +359,12 @@ def main():
                          {"palabra": "NIVEL", "fecha": "2, 9, 12, 13, 14, 18, 21, 23 y 28-nov", "producto": "Máster"},
                          {"palabra": "ACERO", "fecha": "4, 10, 19, 24 y 30-nov", "producto": "Guía de las 5 verificaciones (lead magnet)"},
                          {"palabra": "TEMARIO", "fecha": "historia del 5-nov, 20 y 25-nov", "producto": "Información de la Especialización en Acero (venta)"},
-                         {"palabra": "BLACK", "fecha": "27-nov (feed) y historias de la Black Week", "producto": "Oferta de Black Friday"},
+                         {"palabra": "COMBO", "fecha": "6-nov (correo y comunidades), historias 10, 18, 23 y 25-nov", "producto": "Combo del mes: especialización + diplomado por $50 (venta)"},
+                         {"palabra": "BLACK", "fecha": "20-nov (Ecuador) y 27-nov (feed, historias, correo, comunidades)", "producto": "Black Friday de 24 horas (venta)"},
                          {"palabra": "ZAPATA", "fecha": "6, 7, 11 y 26-nov", "producto": "Calculadora de zapatas"}],
         },
         "destacadas": {"responsable": "Daniela", "nota": "Se alimentan cada viernes; lo vencido (SUSTO, cuenta regresiva del workshop, Black Friday) se quita al día siguiente de cerrar.", "lista": DESTACADAS},
-        "correos_nota": "A la lista propia: Halloween (2), workshop (3) y Black Friday (6).",
+        "correos_nota": "A la lista propia: Halloween (2), workshop (3), combo (2: 6 y 18-nov) y Black Friday (4: 20 Ecuador, 23, 25 y 27).",
         "piezas": [], "pauta": [],
         "banco_reserva": [i for i in ["oct-tutor-dip-reel", "ago-tip-revit-ia"] if i in G],
         "correos": correos(),
