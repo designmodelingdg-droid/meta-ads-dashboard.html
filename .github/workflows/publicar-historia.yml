@@ -1,0 +1,64 @@
+name: Publicar historia (Instagram / Facebook)
+
+# Publica una historia en @design_modeling_dg y/o en la página de Facebook, con
+# el token del System User «Design Modeling - Ads CLI» (META_TOKEN).
+#
+# Dos pasos, como el envío a los grupos de WhatsApp:
+#   1. modo=previa   → NO publica: revisa el archivo y deja en el resumen qué se
+#                      publicaría, dónde, cuándo y su HUELLA.
+#   2. modo=publicar → solo con esa huella y después del «sí» de Dayana.
+#                      Con a_las espera hasta esa hora (máx. 5 h 50 min).
+#
+# El archivo tiene que estar en una URL pública (p. ej. raw de la rama
+# vimeo-clips). La API de Meta no permite stickers: ni enlace, ni cuenta
+# regresiva, ni encuesta; para el enlace se usa «Responde PALABRA».
+
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: "URL pública del video (.mp4 9:16, 3-60 s) o imagen"
+        required: true
+      red:
+        description: "Dónde publicar"
+        type: choice
+        options: [instagram, facebook, ambas]
+        default: instagram
+      modo:
+        description: "previa (no publica) o publicar"
+        type: choice
+        options: [previa, publicar]
+        default: previa
+      huella:
+        description: "Para modo=publicar: la huella que dio la previa"
+        required: false
+        default: ""
+      a_las:
+        description: "Opcional: hora de publicación, p. ej. 2026-11-04T09:30-05:00"
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+concurrency:
+  group: publicar-historia
+  cancel-in-progress: false
+
+jobs:
+  historia:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+      - name: Historia
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN }}
+          URL: ${{ inputs.url }}
+          RED: ${{ inputs.red }}
+          MODO: ${{ inputs.modo }}
+          HUELLA: ${{ inputs.huella }}
+          A_LAS: ${{ inputs.a_las }}
+        run: python3 scripts/publicar_historia.py --url "$URL" --red "$RED" --modo "$MODO" --huella "$HUELLA" --a-las "$A_LAS"
