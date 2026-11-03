@@ -339,6 +339,13 @@ class Mes:
             for x in lm.get("nuevo", []):
                 o.append(f'<div class="lm-nuevo"><h4>{e(x["nombre"])} <span class="lm-pal">NUEVO · «{e(x["palabra"])}»</span></h4>'
                          + "".join(f"<p><b>{e(k.replace('_', ' '))}:</b> {valor_corto(v)}</p>" for k, v in x.items() if k not in ("nombre", "palabra")) + "</div>")
+            if lm.get("plan_noviembre") or lm.get("plan"):
+                pl = lm.get("plan_noviembre") or lm.get("plan")
+                o.append('<h3 class="camp">Plan para los lead magnets</h3>')
+                if pl.get("problema"):
+                    o.append(f'<p class="intro">{e(pl["problema"])}</p>')
+                if pl.get("acciones"):
+                    o.append(valor([{"Qué": a[0], "Cómo": a[1], "Quién": a[2], "Cuándo": a[3]} for a in pl["acciones"]]))
             if lm.get("respaldo"):
                 o.append('<h3 class="camp">De respaldo (ya existen)</h3>' + valor(lm["respaldo"]))
             if lm.get("retirados"):
