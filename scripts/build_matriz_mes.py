@@ -456,13 +456,18 @@ class Mes:
         def con(x):
             d = dict(x)
             if x.get("id") in self.gui:
-                d["contenido"] = self.gui[x["id"]]
+                d["contenido"] = dict(self.gui[x["id"]])
+                # La app (dg-contenido-ia) toma la fecha de cada pieza de contenido.fecha_iso; sin ella
+                # deduce el año del texto «Sáb 31 oct» y manda las piezas del mes anterior al año siguiente.
+                if x.get("fecha_iso"):
+                    d["contenido"]["fecha_iso"] = x["fecha_iso"]
+                    d["contenido"]["fecha"] = x["fecha_iso"]  # las historias leen contenido.fecha antes que fecha_iso
             return d
         c = self.cal
         datos = {
             "_meta": {
                 "titulo": f"Matriz de contenido — Design Modeling Academy — {self.nombre} {self.mes[:4]}",
-                "periodo": c.get("subtitulo", "").split(" · ")[0],
+                "periodo": f"{self.nombre} {self.mes[:4]} · " + c.get("subtitulo", "").split(" · ")[0],
                 "generado": date.today().isoformat(),
                 "como_se_regenera": f"python3 matriz-viral/matriz/calendario-{self.nombre}.py && python3 scripts/build_matriz_mes.py --mes {self.mes}",
                 "origen": f"calendario-{self.nombre}.json (orden) + guiones-completos.json (contenido de cada pieza)",
