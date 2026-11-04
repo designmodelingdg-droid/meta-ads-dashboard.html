@@ -193,7 +193,8 @@ def main():
         if any(PRECIO_MASTER.search(f) for f in frases if re.search(r"m[áa]ster", f, re.I)) or \
                 ("Máster" in str(G.get(i, {}).get("producto", "")) and not G.get(i, {}).get("precio_master_autorizado") and PRECIO_MASTER.search(t)):
             pm.append(i)
-        if re.search(r"\$\s?225|225\s?(USD|dólares)", t) and p.get("formato") not in ("anuncio", "correo"):
+        if re.search(r"\$\s?225|225\s?(USD|dólares)", t) and p.get("formato") not in ("anuncio", "correo") \
+                and not G.get(i, {}).get("precio_master_autorizado"):  # pieza de Black Friday con precios (Dayana, 4-nov)
             acero.append(i)
     informe("FALLA" if pm else "OK", "El Máster nunca lleva precio", ", ".join(sorted(pm)))
     informe("FALLA" if acero else "OK", "ACERO $225 solo en pauta y correo", ", ".join(sorted(acero)))
