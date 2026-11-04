@@ -265,7 +265,7 @@ EQUIPO_COMERCIAL = {
         ["BLACKFRIDAY + CYBERMONDAY", "NUEVA", "vie 27 → lun 30-nov", "50 % off cursos BIM · 40 % off especializaciones · 40 % off diplomados · 25 % off en bloques del Máster"],
     ],
     "precios_black_friday": [
-        ["Cursos BIM (todos)", "$154,99", "−50 %", "$77,49"],
+        ["Cursos BIM (todos; suben al precio original de $154,99 y sobre él va el −50 %)", "$154,99", "−50 %", "$77,49"],
         ["Especialización en Acero con Tutor IA", "$225", "−40 %", "$135"],
         ["Otras especializaciones", "$199,99", "−40 %", "$119,99"],
         ["Diplomado de Estructuras", "$500", "−40 %", "$300"],
@@ -282,7 +282,7 @@ EQUIPO_COMERCIAL = {
         ["Combo del mes (lun 9 → jue 26)", "Especialización a precio normal + $50 → diplomado de Estructuras o de Arquitectura, a elección. Solo 10 cupos", "No se suma: el combo cierra el jue 26", "Todo el que pregunta por una especialización", "«Por solo $50 más te llevas el diplomado completo de Estructuras o de Arquitectura, el que elijas. Es solo este mes y quedan X de 10 cupos.» Un curso NO activa el combo."],
         ["Especialización en Acero con Tutor IA", "$225 todo noviembre (nunca $199,99)", "−40 %", "Leads de Acero (WhatsApp y formulario) y quien descargó la guía ACERO", "Se vende el tutor de IA: dudas resueltas a cualquier hora mientras cursas. Con el combo, sube a diplomado."],
         ["Otras especializaciones", "$199,99", "−40 %", "Quien pregunta por otra especialización", "Igual que Acero: se ofrece el combo."],
-        ["Cursos BIM", "Valor inicial $154,99", "−50 %", "Compradores de cursos y quien quiere una herramienta concreta", "Después de la compra, ofrecer subir a especialización (y al combo)."],
+        ["Cursos BIM", "Precio original $154,99 (Dayana, 4-nov: todos los cursos suben a ese precio y sobre él se aplica el descuento)", "−50 % sobre $154,99 = $77,49", "Compradores de cursos y quien quiere una herramienta concreta", "Después de la compra, ofrecer subir a especialización (y al combo)."],
         ["Workshop gratis (mar 17-nov, 8:00 PM Ecuador)", "Gratis", "—", "Registrados al workshop", "Sirve para vender el Máster: del 18 al 20 se llama a los asistentes para la cita de 20 minutos."],
     ],
     "guiones": [
@@ -402,6 +402,7 @@ CHECKLIST = [
     {"tarea": "REUNIÓN DEL 4-NOV · Medir los recordatorios automáticos de cita (activos desde el 30-oct: el mismo día, 1 hora y 15 minutos antes, y reagendar a quien faltó). Cada lunes: citas, asistencias y no show.", "desbloquea": "Saber si basta con automatizar o hace falta seguimiento extra", "cuando": "cada lunes", "para": "Olympus · Ester"},
     {"tarea": "REUNIÓN DEL 4-NOV · Nuevas artes de pauta para refrescar los anuncios (fatiga), con los ganchos que funcionaron en octubre («Si todavía…», bloque 1 del Máster, Acero con Tutor IA y la imagen «Tu próximo caso no se aprende en un tutorial»).", "desbloquea": "Anuncios nuevos (no hay desde el 22-oct)", "cuando": "lun 9-nov", "para": "Ester · Daniela"},
     {"tarea": "REUNIÓN DEL 4-NOV · Coordinar los videos nuevos de Acero y del Máster para la pauta de noviembre, cuando regrese Daniela.", "desbloquea": "Pauta del Máster y de Acero con creativos nuevos", "cuando": "semana del 9-nov", "para": "Dayana · Gabriel · Daniela"},
+    {"tarea": "PRECIO DE LOS CURSOS PARA EL BLACK FRIDAY (Dayana, 4-nov): todos los cursos BIM suben a su precio original de $154,99 (web, fichas y enlaces de pago) y sobre ese precio se aplica el −50 % ($77,49) del vie 27 al lun 30. El mar 1-dic se revisa el precio de los cursos.", "desbloquea": "Que el −50 % de los cursos sea real y coincida con lo que se cobra", "cuando": "antes del jue 26-nov", "para": "Ester"},
     {"tarea": "REUNIÓN DEL 4-NOV · RECONTACTO UNO A UNO antes del Black Friday: llamar o escribir a cada lead del Máster, de especializaciones y de diplomados que no compró (lista y guion en la pestaña Equipo comercial), contarle el precio del Black Friday y reservarle el cupo para el 27.", "desbloquea": "Que los que ya conocen el programa entren este mes", "cuando": "lun 23 → jue 26-nov (y seguimiento del 27 al 30)", "para": "Sandra · Franklin · Eber"},
     {"tarea": "Revisar el post del 21-oct (DexigJZl5mA): su caption abre con el texto del carrusel cancelado del workshop, que decía «Jueves 22 de octubre». Si quedó la fecha vieja, editarlo.", "desbloquea": "Que nadie llegue al workshop con la fecha equivocada", "cuando": "ya", "para": "Daniela"},
     {"tarea": "WORKSHOP: montar y probar la palabra en GHL con una cuenta ajena (IG y FB), y confirmar que solo GHL la contesta.", "desbloquea": "Reel del 31-oct y todo el feed del workshop", "cuando": "antes del vie 30-oct", "para": "Ester"},
