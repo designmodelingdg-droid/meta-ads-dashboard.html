@@ -419,11 +419,17 @@ class Mes:
         o = ["<h2>Equipo comercial: qué se vende y cómo</h2>", f'<p class="intro">{e(c.get("nota", ""))}</p>']
         if c.get("fechas"):
             o.append('<h3 class="camp">Fechas que tiene que saber el equipo</h3>' + tabla(["Cuándo", "Qué pasa"], c["fechas"]))
+        if c.get("campanas"):
+            o.append('<h3 class="camp">Campañas de noviembre</h3>' + tabla(["Campaña", "Estado", "Cuándo", "Qué ofrece"], c["campanas"]))
+        if c.get("precios_black_friday"):
+            o.append('<h3 class="camp">Precios del Black Friday (solo para el equipo)</h3>'
+                     + (f'<p class="intro">{e(c.get("nota_precios", ""))}</p>' if c.get("nota_precios") else "")
+                     + tabla(["Programa", "Valor inicial", "Descuento", "Precio en Black Friday"], c["precios_black_friday"]))
         if c.get("quien"):
             o.append('<h3 class="camp">Quién hace qué</h3>' + tabla(["Persona", "Rol", "Qué hace este mes", "Meta"], c["quien"]))
         if c.get("que_vender"):
             o.append('<h3 class="camp">Qué se vende en noviembre</h3>'
-                     + tabla(["Programa", "Precio en noviembre", "Black Friday (27 al 30)", "A quién", "Cómo se presenta"], c["que_vender"]))
+                     + tabla(["Programa", "Precio en noviembre", "Descuento Black Friday (27 al 30)", "A quién", "Cómo se presenta"], c["que_vender"]))
         if c.get("guiones"):
             o.append('<h3 class="camp">Guiones listos para copiar</h3>')
             for titulo, para, texto in c["guiones"]:
