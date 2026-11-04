@@ -414,6 +414,35 @@ class Mes:
                             for p in hist["mejores_por_comentarios"][:8]]))
         return "\n".join(o)
 
+    def tab_comercial(self):
+        c = self.cal["equipo_comercial"]
+        o = ["<h2>Equipo comercial: qué se vende y cómo</h2>", f'<p class="intro">{e(c.get("nota", ""))}</p>']
+        if c.get("fechas"):
+            o.append('<h3 class="camp">Fechas que tiene que saber el equipo</h3>' + tabla(["Cuándo", "Qué pasa"], c["fechas"]))
+        if c.get("quien"):
+            o.append('<h3 class="camp">Quién hace qué</h3>' + tabla(["Persona", "Rol", "Qué hace este mes", "Meta"], c["quien"]))
+        if c.get("que_vender"):
+            o.append('<h3 class="camp">Qué se vende en noviembre</h3>'
+                     + tabla(["Programa", "Precio en noviembre", "Black Friday (27 al 30)", "A quién", "Cómo se presenta"], c["que_vender"]))
+        if c.get("guiones"):
+            o.append('<h3 class="camp">Guiones listos para copiar</h3>')
+            for titulo, para, texto in c["guiones"]:
+                o.append(f"<h4>{e(titulo)} <small>· {e(para)}</small></h4>{pegar(texto)}")
+        r = c.get("recontacto")
+        if r:
+            o.append("<h2>Recontacto uno a uno antes del Black Friday</h2>" + f'<p class="intro">{e(r.get("nota", ""))}</p>')
+            o.append(tabla(["Cuándo", "Qué se hace", "Quién"], r.get("pasos", [])))
+            o.append('<h3 class="camp">A quién se llama y qué se le ofrece</h3>' + tabla(["Grupo", "Qué se le ofrece", "Quién llama"], r.get("segmentos", [])))
+            if r.get("mensaje"):
+                o.append('<h4>Mensaje de recontacto (se personaliza con el nombre, el programa y su precio)</h4>' + pegar(r["mensaje"]))
+        b = c.get("bot")
+        if b:
+            o.append("<h2>Cómo responde el bot este mes</h2>" + f'<p class="intro">{e(b.get("nota", ""))}</p>'
+                     + tabla(["Situación", "Qué hace el bot", "Quién sigue"], b.get("filas", [])))
+        if c.get("reglas"):
+            o.append("<h2>Reglas del equipo comercial</h2><ul class=\"reglas\">" + "".join(f"<li>{e(x)}</li>" for x in c["reglas"]) + "</ul>")
+        return "\n".join(o)
+
     def pestanas(self):
         t = [("resumen", "Resumen", self.tab_resumen)]
         for i, g in enumerate(self.cal["grupos"]):
@@ -422,6 +451,8 @@ class Mes:
                       (lambda i=i: self.tab_grupo(i))))
         t.append(("correos", "Correos", self.tab_correos))
         t.append(("pauta", "Publicidad", self.tab_pauta))
+        if self.cal.get("equipo_comercial"):
+            t.append(("comercial", "Equipo comercial", self.tab_comercial))
         t.append(("compra", "Quién compra", self.tab_quien_compra))
         return t
 
@@ -480,6 +511,7 @@ class Mes:
             "publicidad": {**c.get("publicidad", {}),
                            "campanas": [{**cp, "piezas": [con(a) for a in cp["piezas"]]} for cp in c.get("publicidad", {}).get("campanas", [])]},
             "lead_magnets": c.get("lead_magnets", {}),
+            "equipo_comercial": c.get("equipo_comercial", {}),
             "destacadas": c.get("destacadas", {}),
             "correos": [con(x) for x in c.get("correos", [])],
             "banco_reserva": [con({"id": i}) for i in c.get("banco_reserva", [])],
