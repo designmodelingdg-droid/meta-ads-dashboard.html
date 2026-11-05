@@ -16,6 +16,12 @@ description: >
 > (workflow de creativos + matriz organica) y los conectores **Windsor.ai** (GHL)
 > y **Gamma**. Si la conversacion no tiene el repo, añadirlo/clonarlo PRIMERO;
 > si falta un conector, avisar a Dayana que lo active en claude.ai antes de seguir.
+>
+> **Repos de contexto** (añadir si el cierre lo necesita):
+> `dma-sales-assistant` — bot de ventas/soporte, LMS y auditorías operativas
+> (ej. `AUDITORIA_CURSOS_JUL2026.md`: ofertas de la plataforma, precios, workflows
+> de acceso, incidente de emails GHL). `control-financiero-dg` y `dma-finanzas` —
+> dashboards financieros. `dg-contenido-ia` — contenido (org design-modeling-academy).
 
 Método oficial validado con Dayana (agosto 2026). El resultado final es una
 presentación en Gamma + PPTX/PDF con los números REALES del mes.
@@ -77,6 +83,36 @@ falta ningún token a mano.
   vigentes. **Eso es ingreso recurrente, no captación nueva**, y hay que
   separarlo o la meta del mes siguiente sale mal planteada.
 - Los correos permiten cruzar cobro contra persona contra oportunidad del CRM.
+
+## 1b. DOS LÍNEAS DE NEGOCIO: Academia y Consultoría — NUNCA mezclarlas
+
+**Regla fijada por Dayana en el cierre de octubre 2026.** Design Modeling son
+dos negocios: la **Academia** (Máster, especializaciones, diplomados, cursos
+lowcost, matrículas recurrentes) y la **Consultoría** (proyectos corporativos
+B2B para empresas/constructoras). Todo cobro se clasifica en una de las dos
+ANTES de reportar cualquier total.
+
+**Cómo se reconoce la consultoría:** clientes empresa, tickets grandes y
+pagos por transferencia/cuotas fuera del embudo de pauta. Confirmados:
+`grosales@lcconstructora.com` (LC Constructora) y `cmcconstru@gmail.com`
+(CMC Construcciones — fue consultoría desde agosto 2026, aunque en los
+primeros cierres se contó como Máster: serie ya reclasificada). Ante un
+correo corporativo nuevo o un cobro atípico (>$700 sin producto claro),
+**preguntar a Dayana a qué línea va** antes de clasificarlo.
+
+**Lo que obliga esta regla:**
+- La diapositiva de la foto del mes muestra DOS bloques separados
+  (Consultoría / Academia) que suman al total.
+- La serie histórica comparativa es SOLO de la academia (referencia
+  reclasificada: jul $4,935 · ago $8,475 · sep $4,343 · oct $4,364 — la
+  consultoría: ago $1,350 · sep $350 · oct $22,168).
+- Las metas son POR LÍNEA: academia con cuota mensual ($10,000 salvo que
+  Dayana la cambie); consultoría como pipeline (cierres por trimestre y
+  cuotas por cobrar), nunca como cuota mensual.
+- Pauta, leads, closer/setter, orgánico y ROAS son métricas DE LA ACADEMIA:
+  no se diluyen ni se inflan con dinero de consultoría.
+- En GHL la consultoría lleva su propio pipeline, separado de los de la
+  academia.
 
 ## 2. Composición y atribución (GoHighLevel vía Windsor.ai)
 
@@ -247,13 +283,16 @@ Cuatro cosas que agosto enseñó sobre el método mismo:
    GoHighLevel sirve para la mezcla y la atribución, jamás como el ingreso del
    mes: en agosto la diferencia fue de más de seis mil dólares y la cifra baja
    llegó a una presentación de equipo.
-2. **Separar recurrente de captación nueva** antes de plantear la meta del mes
+2. **Academia y Consultoría se miden por separado, siempre** (sección 1b).
+   Ningún total, serie histórica, meta o ROAS mezcla las dos líneas; un cliente
+   corporativo nuevo se clasifica preguntándole a Dayana.
+3. **Separar recurrente de captación nueva** antes de plantear la meta del mes
    siguiente. Un multiplicador calculado sobre caja total exige un esfuerzo
    distinto al calculado sobre captación.
-3. Nunca presentar el total de "ganados" crudo: siempre depurado (duplicados,
+4. Nunca presentar el total de "ganados" crudo: siempre depurado (duplicados,
    pruebas, $0, recurrentes) y validado por Dayana.
-4. Todos los números de la presentación deben ser reales y trazables a GHL,
+5. Todos los números de la presentación deben ser reales y trazables a GHL,
    Meta API o la matriz del repo. Nada estimado sin marcarlo como estimado.
-5. La lista de higiene del CRM (sin monto / duplicados / sin fuente / cruzados)
+6. La lista de higiene del CRM (sin monto / duplicados / sin fuente / cruzados)
    va SIEMPRE, con nombres, como tarea del equipo.
-6. Idioma: español. Tono: directo, de reunión de equipo.
+7. Idioma: español. Tono: directo, de reunión de equipo.
