@@ -294,6 +294,15 @@ class Mes:
             for k, v in pub["indicaciones"]:
                 o.append(f"<p><b>{e(k)}.</b> {e(v)}</p>")
             o.append("</div>")
+        pp = self.cal.get("plan_pauta")
+        if pp:
+            o.append(f'<h3 class="camp">{e(pp["titulo"])}</h3><p class="intro">{e(pp.get("nota", ""))} '
+                     f'<a href="{e(pp["url"])}" target="_blank" rel="noopener">Abrir el plan de Olympus</a></p>')
+            o.append(tabla(["Línea", "Por día", "Cuándo", "Total"], pp.get("presupuesto", [])))
+            if pp.get("ajustes"):
+                o.append('<h3 class="camp">Lo que hay que ajustar en el plan</h3><ul class="reglas">' + "".join(f"<li>{e(x)}</li>" for x in pp["ajustes"]) + "</ul>")
+            o.append('<h3 class="camp">Seguimiento del plan</h3>' + tabla(["Cuándo", "Qué", "Quién", "Estado"], pp.get("seguimiento", [])))
+            o.append('<h3 class="camp">Reglas para apagar y premiar</h3>' + tabla(["Línea", "Se apaga si…", "Se premia si…"], pp.get("reglas", [])))
         o.append(self.avance())
         for c in pub.get("campanas", []):
             o.append(f'<h3 class="camp">{e(c["nombre"])}</h3>')
@@ -518,6 +527,7 @@ class Mes:
                            "campanas": [{**cp, "piezas": [con(a) for a in cp["piezas"]]} for cp in c.get("publicidad", {}).get("campanas", [])]},
             "lead_magnets": c.get("lead_magnets", {}),
             "equipo_comercial": c.get("equipo_comercial", {}),
+            "plan_pauta": c.get("plan_pauta", {}),
             "destacadas": c.get("destacadas", {}),
             "correos": [con(x) for x in c.get("correos", [])],
             "banco_reserva": [con({"id": i}) for i in c.get("banco_reserva", [])],

@@ -792,6 +792,158 @@
    ]
   ]
  },
+ "plan_pauta": {
+  "titulo": "Plan de pauta de Olympus · 5-nov al 5-dic",
+  "url": "https://claude.ai/artifact/3XFVXrFSSwcT7WqQsEcqJ9",
+  "nota": "Lo compartió Patricio en Estrategia General el 5-nov. Tope del mes: USD 1.200 (USD 1.125 proyectados + USD 75 de reserva). Se juzga por citas y ventas, no por costo por lead. Desde aquí se le hace seguimiento cada lunes.",
+  "presupuesto": [
+   [
+    "Máster (formulario + prueba)",
+    "USD 11",
+    "31 días",
+    "USD 341"
+   ],
+   [
+    "Acero (WhatsApp + formulario)",
+    "USD 15",
+    "31 días",
+    "USD 465"
+   ],
+   [
+    "Workshop (saldo)",
+    "—",
+    "hasta el 17-nov",
+    "USD 29"
+   ],
+   [
+    "Lead magnets",
+    "USD 2",
+    "hasta el lun 9",
+    "USD 10"
+   ],
+   [
+    "Combo (campaña nueva)",
+    "USD 10",
+    "lun 9 → jue 26",
+    "USD 180"
+   ],
+   [
+    "Black Friday",
+    "USD 20",
+    "jue 26 → lun 30",
+    "USD 100"
+   ],
+   [
+    "Reserva para lo que venda",
+    "—",
+    "—",
+    "USD 75"
+   ]
+  ],
+  "seguimiento": [
+   [
+    "dom 8",
+    "Fabián revisa si la asistencia llega a Meta y si los compradores están excluidos; deja armada la campaña del combo sin publicar",
+    "Fabián",
+    "pendiente"
+   ],
+   [
+    "dom 8",
+    "Marcar las 13 citas de octubre sin resultado",
+    "Eber · Franklin · Sandra",
+    "pendiente"
+   ],
+   [
+    "jue 5",
+    "Grabar el video del combo con Gabriel",
+    "Dayana · Gabriel",
+    "pendiente"
+   ],
+   [
+    "lun 9",
+    "Las 7 acciones: pausar ACERO 1 WhatsApp (EC y MX), MX Acero WSP $5,50 → $4,50, EC $4,00 → $4,80, sumar OCT V1 y V2 a Acero WSP, sumar Bloques V2 y el video de la ruta al Máster FORM y crear la campaña del combo ($10 al día)",
+    "Fabián",
+    "pendiente"
+   ],
+   [
+    "lun 9",
+    "Decidir la prueba del formulario del Máster (gana con 3 citas) y los lead magnets (si los UTM no traen leads, sus $2 al día pasan al combo)",
+    "Olympus · Dayana",
+    "pendiente"
+   ],
+   [
+    "lun 9",
+    "Entregar las 3 artes nuevas («El que calcula, decide», «Modelar bonito no consigue proyectos», «Sabes más comandos. Nadie te pone a cargo.»)",
+    "Ester · Daniela",
+    "pendiente"
+   ],
+   [
+    "jue 12",
+    "Revisar el combo",
+    "Fabián",
+    "pendiente"
+   ],
+   [
+    "lun 16",
+    "Subir las artes nuevas, aplicar las reglas de apagado, decidir ACERO 1 en formulario y el segundo paso de México a Ecuador. Si el combo lleva menos de 3 ventas, se cambia el creativo (no la oferta)",
+    "Fabián · Olympus",
+    "pendiente"
+   ],
+   [
+    "lun 16",
+    "Confirmar los precios del Black Friday (los porcentajes ya están: cursos −50 %, especializaciones −40 %, diplomados −40 %, Máster −25 %)",
+    "Ester",
+    "pendiente"
+   ],
+   [
+    "17 al 22",
+    "Cerrar la campaña del workshop y dejar listos los anuncios del Black Friday (solo con %)",
+    "Fabián",
+    "pendiente"
+   ],
+   [
+    "jue 26",
+    "Cerrar el combo a las 23:59 y activar el Máster del Black Friday",
+    "Fabián",
+    "pendiente"
+   ],
+   [
+    "27 al 30",
+    "Revisar cada día y mover presupuesto a lo que venda",
+    "Fabián",
+    "pendiente"
+   ],
+   [
+    "1 al 5-dic",
+    "Apagar las promos, volver a la pauta normal e informe final con propuesta para diciembre (sáb 5)",
+    "Fabián · Olympus",
+    "pendiente"
+   ]
+  ],
+  "reglas": [
+   [
+    "Acero WhatsApp",
+    "Gasta USD 10 y cada conversación cuesta más de USD 1,50",
+    "Trae una compra: se queda aunque sea más caro"
+   ],
+   [
+    "Máster",
+    "Gasta USD 35 sin ninguna cita",
+    "Consigue citas a USD 13 o menos, con asistencia"
+   ],
+   [
+    "Combo",
+    "Llega a 10 cupos: se apaga el mismo día",
+    "3 combos al lun 16: recibe parte de la reserva"
+   ]
+  ],
+  "ajustes": [
+   "Black Friday: el plan dice «Máster sin precio, salvo Black Friday» y «usa los precios de la matriz». Desde el 4-nov (Dayana) el Black Friday va SOLO con porcentajes en todos los anuncios, Máster incluido: ningún precio exacto.",
+   "Diplomados del combo: ya está decidido (Dayana, 4-nov): el de Estructuras o el de Arquitectura, a elección. Ester no tiene que confirmarlo.",
+   "Proyección de cursos en Black Friday: el plan usa $13,49. Ahora los cursos suben a su precio original de $154,99 y el −50 % los deja en $77,49, así que esa línea de la proyección queda corta.",
+   "Diplomados en Black Friday: el plan usa $300 (Estructuras). Arquitectura queda en $240."
+  ]
+ },
  "formatos_prueba": {
   "nota": "Pedido de Dayana (23-oct): los formatos nuevos se prueban y se revisan cada mes. Un formato entra fijo a la matriz solo si genera las tres cosas: interés, interacción y ventas. Que tenga vistas no basta. Lo calcula scripts/formatos_prueba.py --mes 2026-11 contra la mediana de reels de los 90 días anteriores.",
   "criterios": [
