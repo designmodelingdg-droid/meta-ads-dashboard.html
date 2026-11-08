@@ -1,0 +1,1817 @@
+WEBVTT
+
+1
+00:00:02.190 --> 00:00:05.505
+Buenas noches, estimados. ¿Cómo están? ¿Cómo se encuentran?
+
+2
+00:00:05.580 --> 00:00:08.700
+Espero que estén muy
+
+3
+00:00:10.590 --> 00:00:15.360
+bien. Resumen rápido, fíjense.
+
+4
+00:00:16.831 --> 00:00:22.260
+Mañana termino de cargar todo: las sesiones, los temas, para que este fin de semana
+
+5
+00:00:22.410 --> 00:00:26.189
+y en el transcurso de los días se vayan actualizando y vayan avanzando.
+
+6
+00:00:27.810 --> 00:00:29.580
+El objetivo es que la próxima semana
+
+7
+00:00:31.381 --> 00:00:37.350
+cerremos con Python y ahí cerraríamos lo que son las
+
+8
+00:00:37.380 --> 00:00:38.490
+clases de este módulo.
+
+9
+00:00:39.840 --> 00:00:44.460
+Para el proyecto final, ya les indicaré la fecha, pero vuelvo y repito:
+
+10
+00:00:46.800 --> 00:00:51.151
+la particularidad es que vamos a tener una fecha para el proyecto final del módulo
+
+11
+00:00:51.210 --> 00:00:56.821
+cuatro, pero a medida que ustedes vayan avanzando con los siguientes
+
+12
+00:00:56.880 --> 00:01:02.745
+módulos, cinco, seis, etcétera, igual van a tener
+
+13
+00:01:02.850 --> 00:01:04.336
+tiempo para entregar el proyecto final.
+
+14
+00:01:05.040 --> 00:01:10.815
+Recuerden que en el módulo cinco comenzamos lo que es nuestra tesis, así que ya nos
+
+15
+00:01:10.830 --> 00:01:16.321
+vamos a tener que ir preparando para seleccionar los proyectos. Comencemos.
+
+16
+00:01:16.650 --> 00:01:18.765
+Consulta hasta acá: ¿cómo les ha ido con el módulo?
+
+17
+00:01:19.230 --> 00:01:23.250
+Albino, Gustavo, Luis, Rafael, Samuel, ¿cómo están?
+
+18
+00:01:26.580 --> 00:01:29.250
+No lo he subido, Albino. Eso ya lo subo
+
+19
+00:01:31.110 --> 00:01:34.545
+con toda la información y
+
+20
+00:01:35.790 --> 00:01:36.510
+las directrices,
+
+21
+00:01:38.130 --> 00:01:41.730
+para que ustedes, a partir de la próxima semana, se dediquen al proyecto final.
+
+22
+00:01:41.820 --> 00:01:47.700
+Lo voy a subir en
+
+23
+00:01:47.730 --> 00:01:53.220
+la plataforma y se los voy a subir en la comunidad. Perfecto.
+
+24
+00:01:53.280 --> 00:01:55.080
+Ya listo, Luis. ¿Qué
+
+25
+00:02:00.240 --> 00:02:05.700
+vamos a hacer hoy? Hoy, básicamente, lo que vamos a
+
+26
+00:02:07.290 --> 00:02:13.020
+realizar o generar, en nuestro caso, es lo que nos
+
+27
+00:02:13.050 --> 00:02:16.500
+habíamos quedado en la primera sesión de refuerzo.
+
+28
+00:02:18.720 --> 00:02:24.660
+Ahí lo que vamos a generar es la práctica.
+
+29
+00:02:25.530 --> 00:02:31.380
+Fíjense. Lo que nosotros debemos buscar, y en el punto donde
+
+30
+00:02:31.470 --> 00:02:35.851
+estamos, es haber llegado a tener la estructura del framing,
+
+31
+00:02:37.590 --> 00:02:41.610
+categoría, y esto nos muestra el listado de amigas, bien responsable y de
+
+32
+00:02:41.700 --> 00:02:44.820
+estructura. Eso era todo lo que teníamos hasta este punto.
+
+33
+00:02:44.910 --> 00:02:50.880
+Listo, Albino, ahí la
+
+34
+00:02:51.120 --> 00:02:56.730
+escribes y ya, yo la leo. El caso que vamos a hacer, a diferencia de que iba a ser
+
+35
+00:02:56.760 --> 00:03:01.440
+el caso de los muros, pero para mantener la
+
+36
+00:03:03.360 --> 00:03:05.460
+sintaxis con la que venimos trabajando,
+
+37
+00:03:07.050 --> 00:03:07.770
+yo les voy a
+
+38
+00:03:09.330 --> 00:03:10.080
+compartir
+
+39
+00:03:11.970 --> 00:03:15.226
+primero una guía, la van a tener en las sesiones,
+
+40
+00:03:16.351 --> 00:03:22.291
+del proyecto final. Es una guía sencilla de
+
+41
+00:03:22.860 --> 00:03:26.580
+qué se va a evaluar, cuáles son los pasos que tienen que tomar en cuenta.
+
+42
+00:03:27.510 --> 00:03:29.580
+Paso dos, combinar el caso completo.
+
+43
+00:03:30.210 --> 00:03:35.970
+Paso tres, identificar casos no compatibles, que debemos auditar, los entregables
+
+44
+00:03:36.031 --> 00:03:41.880
+de la parte uno que estamos evaluando, criterios de evaluación, puente
+
+45
+00:03:41.970 --> 00:03:45.480
+siete en cuatro, etcétera. Eso yo se los voy a compartir.
+
+46
+00:03:47.220 --> 00:03:52.320
+Déjenme cerrar, tengo varias cosas que quiero mostrarles.
+
+47
+00:03:52.500 --> 00:03:57.990
+Además de eso, lo otro en lo que
+
+48
+00:03:58.260 --> 00:04:03.000
+vamos a trabajar, voy a mostrarles un momento
+
+49
+00:04:04.380 --> 00:04:05.910
+lo que les voy a compartir.
+
+50
+00:04:07.201 --> 00:04:12.541
+Este es el auditor, el laboratorio.
+
+51
+00:04:16.380 --> 00:04:18.300
+Son estas dos, nada más.
+
+52
+00:04:20.940 --> 00:04:21.781
+En definitiva,
+
+53
+00:04:23.400 --> 00:04:26.100
+aquí lo que ustedes
+
+54
+00:04:27.330 --> 00:04:31.635
+tienen o lo que vamos a generar a continuación es la práctica.
+
+55
+00:04:32.250 --> 00:04:35.940
+Vean que aquí no estamos comenzando desde cero, es lo que teníamos.
+
+56
+00:04:36.000 --> 00:04:40.560
+Vamos a trabajar con el caso uno. En esta guía van a tener todos los casos.
+
+57
+00:04:40.890 --> 00:04:44.430
+Fíjense, van a ver cuál es el caso uno, caso dos, caso tres, que es lo mismo que
+
+58
+00:04:44.490 --> 00:04:45.300
+vimos en la clase
+
+59
+00:04:46.860 --> 00:04:47.220
+pasada.
+
+60
+00:04:48.841 --> 00:04:54.240
+Yo voy a poner en práctica lo que es el caso uno.
+
+61
+00:04:55.531 --> 00:04:59.730
+En este caso uno, ya nosotros habíamos generado
+
+62
+00:05:01.380 --> 00:05:05.490
+lo que es las categorías, el nodo dos y los streams que estábamos
+
+63
+00:05:09.091 --> 00:05:11.820
+generando, stream, bien responsable y las estructuras.
+
+64
+00:05:12.360 --> 00:05:18.270
+Recuerden que en este caso, valga la redundancia, el objetivo es que no
+
+65
+00:05:18.330 --> 00:05:24.210
+puede quedar ningún parámetro por invasión. ¿Cuál es el paso uno?
+
+66
+00:05:24.570 --> 00:05:30.105
+Comprobar lo que ya tenemos. Básicamente, es lo que ya hemos generado,
+
+67
+00:05:31.680 --> 00:05:35.010
+que vimos en la primera sesión de refuerzo y que está en la plataforma,
+
+68
+00:05:36.240 --> 00:05:41.850
+es conectar todos los elementos, "elements category", a un nodo Watch para
+
+69
+00:05:41.880 --> 00:05:46.440
+verificar que Dynamo obtiene las vigas del modelo.
+
+70
+00:05:48.720 --> 00:05:52.650
+Aquí, si ustedes se dan cuenta, en Dynamo,
+
+71
+00:05:55.980 --> 00:05:57.960
+si colocamos un nodo Watch.
+
+72
+00:06:00.300 --> 00:06:02.910
+A ver si me deja. ¿Por qué no me deja?
+
+73
+00:06:05.760 --> 00:06:07.140
+Listo.
+
+74
+00:06:09.045 --> 00:06:13.951
+¿Por qué no me deja buscar?
+
+75
+00:06:16.531 --> 00:06:21.690
+Aquí está. Vamos a poner nodo Watch.
+
+76
+00:06:23.400 --> 00:06:24.779
+Voy a colocarlo.
+
+77
+00:06:28.920 --> 00:06:29.279
+Ahí está.
+
+78
+00:06:31.081 --> 00:06:36.630
+Básicamente, si yo tengo este nodo Watch y lo conecto aquí, piensen que
+
+79
+00:06:36.660 --> 00:06:39.120
+efectivamente estoy teniendo todo.
+
+80
+00:06:41.280 --> 00:06:46.260
+Simplemente, cuando haces la corrida, fíjate que en la parte inferior, tú puedes
+
+81
+00:06:46.290 --> 00:06:51.540
+ver automático o manual. Es bueno que esté
+
+82
+00:06:52.831 --> 00:06:55.155
+en manual y que ustedes corran.
+
+83
+00:06:56.520 --> 00:07:00.540
+Yo lo voy a dejar en automático para agilizar la clase, pero sería bueno que
+
+84
+00:07:00.600 --> 00:07:01.710
+siempre esté en
+
+85
+00:07:02.970 --> 00:07:05.220
+manual para que ustedes vean cada vez q*e l* d*n "run",
+
+86
+00:07:06.975 --> 00:07:09.870
+que esté corriendo de la manera adecuada. Esto lo voy a poner por acá.
+
+87
+00:07:09.885 --> 00:07:14.070
+Con esto me estoy asegurando de que efectivamente está tomando el listado que es.
+
+88
+00:07:14.370 --> 00:07:17.670
+Si ustedes se dan cuenta, 43 elementos, estamos en lo correcto.
+
+89
+00:07:18.030 --> 00:07:21.570
+Y vamos a agregar
+
+90
+00:07:23.430 --> 00:07:28.500
+un list.count para conocer el número total de
+
+91
+00:07:29.040 --> 00:07:34.110
+elementos. En nuestra relación metodológica, esto viene a ser el input.
+
+92
+00:07:34.140 --> 00:07:37.350
+Recuerden que trabajamos con el proceso IPO:
+
+93
+00:07:38.550 --> 00:07:43.770
+input, process y output. Si yo coloco aquí un
+
+94
+00:07:43.860 --> 00:07:45.630
+list.count,
+
+95
+00:07:47.730 --> 00:07:48.076
+Revit,
+
+96
+00:07:51.510 --> 00:07:53.850
+list.count,
+
+97
+00:07:59.010 --> 00:08:00.690
+que
+
+98
+00:08:00.750 --> 00:08:05.581
+es este. Este que está acá.
+
+99
+00:08:08.820 --> 00:08:10.380
+¿Dónde fue que se me fue?
+
+100
+00:08:13.860 --> 00:08:18.240
+Ahí está. Se me fue doble. Este list.count
+
+101
+00:08:18.841 --> 00:08:22.980
+básicamente me va a permitir ver toda la lista.
+
+102
+00:08:23.040 --> 00:08:24.975
+Cuando yo le dé clic acá,
+
+103
+00:08:27.841 --> 00:08:33.480
+ustedes pueden visualizar. Aquí yo tengo mi lista y fíjense que me da los
+
+104
+00:08:33.720 --> 00:08:34.290
+43
+
+105
+00:08:36.181 --> 00:08:39.841
+que estábamos generando. Vean que aquí está.
+
+106
+00:08:39.990 --> 00:08:43.591
+Lo voy a fijar, el solo base, y tengo 43 elementos.
+
+107
+00:08:46.110 --> 00:08:51.840
+Básicamente, hasta acá simplemente estoy infiriendo en mi input la
+
+108
+00:08:51.901 --> 00:08:56.700
+data.
+
+109
+00:09:00.151 --> 00:09:04.620
+A partir de allí, fíjense que lo siguiente que nosotros debemos trabajar
+
+110
+00:09:06.420 --> 00:09:11.010
+o debemos desarrollar, vean que voy a mostrar un ejemplo, que 20, en nuestro caso
+
+111
+00:09:11.100 --> 00:09:11.940
+son 43
+
+112
+00:09:14.370 --> 00:09:18.000
+Una vez que nosotros nos aseguramos
+
+113
+00:09:18.450 --> 00:09:23.070
+de que ya
+
+114
+00:09:23.340 --> 00:09:28.380
+tenemos bien fijado el listado, quiénes son.
+
+115
+00:09:28.440 --> 00:09:33.390
+Yo encontré que inclusive esto está exagerado. Déjenme cerrar aquí.
+
+116
+00:09:34.260 --> 00:09:38.820
+Esto está exagerado. Súper exagerado.
+
+117
+00:09:40.050 --> 00:09:45.300
+Pero es importante que mantengamos una buena logística.
+
+118
+00:09:48.061 --> 00:09:50.820
+Lo siguiente que nosotros vamos a hacer es añadir el nodo
+
+119
+00:09:51.000 --> 00:09:56.670
+Element.GetParameterValueByName. Voy a colocarlo aquí.
+
+120
+00:09:56.700 --> 00:09:57.750
+Ustedes ya lo saben.
+
+121
+00:09:59.370 --> 00:10:26.835
+Element.GetParameterValueByName.
+
+122
+00:10:29.970 --> 00:10:34.770
+Aquí lo tenemos. Y realizamos las siguientes conexiones.
+
+123
+00:10:36.931 --> 00:10:41.311
+En estas siguientes conexiones, fíjense que me está indicando, tengo Add Element of
+
+124
+00:10:41.401 --> 00:10:41.850
+Category,
+
+125
+00:10:43.651 --> 00:10:47.250
+conectamos al String BIM piso responsable.
+
+126
+00:10:49.995 --> 00:10:53.670
+Y la salida del Watch, el flujo comienza a crecer y ya podemos leer los valores del
+
+127
+00:10:53.700 --> 00:10:56.850
+parámetro en cualquier momento, esto ya lo sabemos.
+
+128
+00:10:59.130 --> 00:11:03.660
+Pero necesito básicamente hacer este flujo.
+
+129
+00:11:04.500 --> 00:11:09.645
+Entonces, ustedes acá, es donde nosotros vamos a comenzar a utilizar,
+
+130
+00:11:13.410 --> 00:11:17.130
+voy a ponerlo así rápidamente para que no
+
+131
+00:11:18.960 --> 00:11:22.979
+me demore tanto. Lo primero que tienen que hacer es darle prompt.
+
+132
+00:11:23.401 --> 00:11:25.965
+Vamos a trabajar con nuestro Video System prompt.
+
+133
+00:11:27.090 --> 00:11:32.520
+Entonces, ¿cuál es el prompt correcto o que yo debería estar trabajando
+
+134
+00:11:33.090 --> 00:11:36.420
+o visualizando? En este caso, fíjense.
+
+135
+00:11:37.200 --> 00:11:41.760
+Recuerden que estamos trabajando con el caso uno.
+
+136
+00:11:44.640 --> 00:11:47.490
+Vamos a ponerlo acá e indicarle.
+
+137
+00:11:49.440 --> 00:11:50.730
+Estoy trabajando
+
+138
+00:11:51.990 --> 00:11:53.520
+como auditor
+
+139
+00:11:55.590 --> 00:11:56.340
+de un caso
+
+140
+00:11:57.840 --> 00:11:58.320
+donde
+
+141
+00:12:00.061 --> 00:12:04.710
+debemos actuar como BIM Manager,
+
+142
+00:12:07.920 --> 00:12:11.550
+trabajando la metodología IPO.
+
+143
+00:12:14.340 --> 00:12:19.681
+Y lo que necesito es auditar
+
+144
+00:12:19.740 --> 00:12:24.420
+primero que los parámetros BIM
+
+145
+00:12:25.710 --> 00:12:26.189
+piso
+
+146
+00:12:27.630 --> 00:12:28.439
+responsable
+
+147
+00:12:32.700 --> 00:12:33.210
+no
+
+148
+00:12:35.520 --> 00:12:37.110
+estén vacíos
+
+149
+00:12:39.450 --> 00:12:43.740
+y me genere conformes o no conformes.
+
+150
+00:12:47.280 --> 00:12:47.910
+Ay, perdón.
+
+151
+00:12:50.220 --> 00:12:51.090
+No conformes, ya.
+
+152
+00:12:52.784 --> 00:12:55.411
+¿Ven?
+
+153
+00:12:59.040 --> 00:13:01.681
+Entonces, ¿aquí me indica el proceso IPO?
+
+154
+00:13:02.520 --> 00:13:08.161
+Ya
+
+155
+00:13:08.220 --> 00:13:12.390
+te contesto. Aquí genero todo el proceso IPO.
+
+156
+00:13:14.520 --> 00:13:20.130
+Da toda la explicación, los filtros y demás, pero a mí lo que me
+
+157
+00:13:20.161 --> 00:13:21.000
+interesa es
+
+158
+00:13:22.801 --> 00:13:26.700
+la parte práctica de Dynamo.
+
+159
+00:13:29.401 --> 00:13:32.730
+Actualmente, tengo dispuesto
+
+160
+00:13:34.860 --> 00:13:35.520
+lo siguiente.
+
+161
+00:13:36.931 --> 00:13:40.440
+Entonces, acá vamos a colocarle
+
+162
+00:13:42.810 --> 00:13:43.770
+lo que tenemos.
+
+163
+00:13:51.151 --> 00:13:52.080
+Vamos a copiar
+
+164
+00:13:55.621 --> 00:13:56.551
+lo siguiente
+
+165
+00:13:57.960 --> 00:14:03.420
+y según mi proceso IPO, este
+
+166
+00:14:03.960 --> 00:14:06.030
+sería mi input.
+
+167
+00:14:08.070 --> 00:14:13.080
+Yo te indicaré el siguiente paso de acción,
+
+168
+00:14:15.600 --> 00:14:19.681
+que trabajaremos con un parámetro
+
+169
+00:14:20.970 --> 00:14:28.560
+Element.GetParameterValues.
+
+170
+00:14:34.260 --> 00:14:34.801
+Que cargue.
+
+171
+00:14:37.140 --> 00:14:41.161
+En el análisis de acá, ya tenemos el input, el siguiente paso con
+
+172
+00:14:41.220 --> 00:14:46.815
+Element.GetParameterValueByName será ya entrar al process, porque empezaremos a
+
+173
+00:14:46.830 --> 00:14:51.270
+extraer y evaluar el dato BIM piso responsable.
+
+174
+00:14:51.901 --> 00:14:56.670
+La secuencia que construiremos será: ya tenemos estructural Element of Category,
+
+175
+00:14:56.730 --> 00:15:02.250
+tenemos los elementos. En los 43 elementos vamos a colocar esto.
+
+176
+00:15:02.911 --> 00:15:08.776
+Y allí colocamos el string. Un detalle importante para que la
+
+177
+00:15:08.776 --> 00:15:12.570
+demo funcione correctamente, en Element.GetParameterValues tendrás dos entradas:
+
+178
+00:15:13.110 --> 00:15:18.931
+Element, la lista de elementos, nombre del parámetro BIM piso responsable.
+
+179
+00:15:19.020 --> 00:15:23.190
+Entonces, con este proceso, yo le puedo indicar, refléjame
+
+180
+00:15:25.200 --> 00:15:31.080
+el esquema, cómo quedaría en una imagen tomando mi
+
+181
+00:15:31.110 --> 00:15:36.600
+base inicial. Y mientras esto, le respondo a Albino.
+
+182
+00:15:36.676 --> 00:15:41.084
+¿Qué sucede si yo sistematizo todos los parámetros del modelo de construcción bajo
+
+183
+00:15:41.130 --> 00:15:45.165
+el enfoque IPO? ¿Qué impacto tiene como BIM Manager?
+
+184
+00:15:45.315 --> 00:15:48.810
+¿Qué busco como BIM Manager en cuanto a automatización? Listo, Albino.
+
+185
+00:15:48.871 --> 00:15:54.360
+Cuando haces esto y lo haces bajo un enfoque IPO,
+
+186
+00:15:54.871 --> 00:16:00.090
+sí o sí, lo que estás haciendo es que estás llevando todo a
+
+187
+00:16:00.121 --> 00:16:06.000
+automatizaciones en Dynamo. Ahora, automatizaciones por parte del
+
+188
+00:16:06.030 --> 00:16:06.630
+BIM Manager.
+
+189
+00:16:09.420 --> 00:16:15.360
+Pregunta lógica para todos, pero sencilla: ¿para utilizar Dynamo qué necesito?
+
+190
+00:16:20.310 --> 00:16:25.380
+Revit. Por lo tanto, si yo necesito
+
+191
+00:16:26.100 --> 00:16:32.040
+Revit, básicamente mi flujo de información en nativo, Albino, lo
+
+192
+00:16:32.056 --> 00:16:37.020
+estoy llevando a que sea en Revit y luego la visualización en IFC.
+
+193
+00:16:38.490 --> 00:16:41.551
+El resultado agregado, ¿qué valor me da?
+
+194
+00:16:41.911 --> 00:16:46.020
+Básicamente, la identificación automática de la gestión de información de los
+
+195
+00:16:46.051 --> 00:16:47.040
+parámetros vacíos,
+
+196
+00:16:48.570 --> 00:16:49.845
+de los errores que se cometan.
+
+197
+00:16:51.360 --> 00:16:56.070
+Es hacer la verificación y lo ven en cada uno de estos casos, de no hacerlo a mano.
+
+198
+00:16:58.440 --> 00:17:03.720
+Y que inmediatamente se pueda realizar la corrección de dichos parámetros, que aquí
+
+199
+00:17:03.750 --> 00:17:08.340
+quedan dos opciones: queda la opción de registrarlo, reportarlo, que es lo que
+
+200
+00:17:08.355 --> 00:17:12.421
+vamos a ver en la siguiente clase, o queda la opción de tomar la decisión
+
+201
+00:17:13.950 --> 00:17:18.181
+de inclusive poder hacer la readecuación de esos parámetros.
+
+202
+00:17:19.770 --> 00:17:25.290
+Exactamente. Eso, ¿qué ahorra? En esto último que dijiste,
+
+203
+00:17:25.380 --> 00:17:27.871
+automatizar el inicio de todos los parámetros de reino.
+
+204
+00:17:27.885 --> 00:17:30.450
+¿Qué ahorra eso, básicamente? El tiempo.
+
+205
+00:17:31.680 --> 00:17:37.500
+Porque lo más común es decir: "Estos parámetros están, se envía información,
+
+206
+00:17:37.890 --> 00:17:42.960
+etcétera". Es buscar automatización y generar tiempo.
+
+207
+00:17:42.975 --> 00:17:48.150
+¿Estamos claros hasta
+
+208
+00:17:48.165 --> 00:17:52.500
+aquí? Tranquilos, vamos paso a
+
+209
+00:17:53.190 --> 00:17:54.720
+paso.
+
+210
+00:17:56.415 --> 00:17:58.260
+¿Alguna consulta? ¿Están claros hasta acá?
+
+211
+00:18:00.121 --> 00:18:05.940
+Me comentan, por favor. Entonces sí, esto es muy mecánico, pero lo que me ahorra es
+
+212
+00:18:05.970 --> 00:18:09.150
+tiempo, porque yo lo que quiero es gestionar información.
+
+213
+00:18:10.380 --> 00:18:13.470
+Aquí me dejó esta imagen
+
+214
+00:18:16.608 --> 00:18:22.278
+Que ustedes pueden generar con BIM System, que básicamente les da el paso a
+
+215
+00:18:22.339 --> 00:18:28.277
+paso. A mí no me interesa que ustedes aprendan cuál es nodo uno,
+
+216
+00:18:28.368 --> 00:18:32.598
+nodo dos, nodo tres, sino la metodología IPO y que la vaya reflejando.
+
+217
+00:18:33.589 --> 00:18:37.968
+La regla que ya establecimos al inicio de la clase, el input y el proceso.
+
+218
+00:18:39.468 --> 00:18:42.228
+Vean que tenemos un BIM piso responsable.
+
+219
+00:18:43.458 --> 00:18:48.589
+Estamos en el input. Tenemos un BIM piso responsable.
+
+220
+00:18:49.458 --> 00:18:53.238
+Este se va a conectar a mi string. Vean.
+
+221
+00:18:57.258 --> 00:18:59.298
+Este string ya lo habíamos colocado en otra clase.
+
+222
+00:19:00.858 --> 00:19:04.757
+Y esto básicamente conecta de acá a acá.
+
+223
+00:19:07.548 --> 00:19:11.448
+De allí, si ustedes ven y visualizan mi imagen.
+
+224
+00:19:13.788 --> 00:19:17.418
+Recuerden que tenemos un watch, que es el listado de
+
+225
+00:19:17.448 --> 00:19:22.248
+mis 43 parámetros.
+
+226
+00:19:24.288 --> 00:19:28.848
+Este watch que está acá es el mismo que ustedes están viendo, que son los 43
+
+227
+00:19:30.108 --> 00:19:33.438
+parámetros que yo puedo conectar a mis distintas variables.
+
+228
+00:19:33.589 --> 00:19:35.899
+Ahora, fíjense lo siguiente.
+
+229
+00:19:37.728 --> 00:19:40.578
+Y esto lo estoy haciendo adrede, a propósito.
+
+230
+00:19:41.418 --> 00:19:46.818
+Por eso tienen que ir entendiendo e indagando todo lo que se hace.
+
+231
+00:19:47.328 --> 00:19:52.983
+Entonces, estamos en el proceso. ¿Cuál es el parámetro en el string que se va a
+
+232
+00:19:53.089 --> 00:19:58.968
+leer? El BIM piso responsable. Pero si yo veo el parámetro name,
+
+233
+00:19:59.149 --> 00:20:01.007
+lo conecto a un watch, no tiene sentido.
+
+234
+00:20:01.818 --> 00:20:07.698
+Los watch significan únicamente para visualizar mis
+
+235
+00:20:07.758 --> 00:20:08.538
+categorías.
+
+236
+00:20:09.798 --> 00:20:12.798
+En cambio, aquí lo que quiero es fijar un nuevo parámetro.
+
+237
+00:20:13.428 --> 00:20:18.168
+Entonces ustedes dirán: "Okey, ¿y ahora qué hago si aquí yo me he equivocado?"
+
+238
+00:20:19.008 --> 00:20:22.563
+Sencillo. Fíjense, cuando yo hago esto, yo rápidamente
+
+239
+00:20:23.958 --> 00:20:28.608
+le puedo colocar acá en mi herramienta y decirle:
+
+240
+00:20:32.839 --> 00:20:33.948
+"Tengo un
+
+241
+00:20:36.258 --> 00:20:42.378
+error
+
+242
+00:20:42.528 --> 00:20:43.578
+al conectar
+
+243
+00:20:45.288 --> 00:20:45.858
+mi nodo
+
+244
+00:20:47.508 --> 00:20:52.068
+de este parámetro que está acá, environment.parameterByName,
+
+245
+00:20:52.728 --> 00:20:54.888
+a mi
+
+246
+00:20:56.688 --> 00:20:57.078
+watch,
+
+247
+00:20:58.578 --> 00:20:59.058
+porque
+
+248
+00:21:02.028 --> 00:21:06.288
+la idea es que yo quiero
+
+249
+00:21:08.268 --> 00:21:10.188
+poder identificar
+
+250
+00:21:13.488 --> 00:21:15.198
+los parámetros vacíos".
+
+251
+00:21:18.409 --> 00:21:27.468
+Para
+
+252
+00:21:27.528 --> 00:21:29.988
+tu caso, Victoria, primero una forma más simple.
+
+253
+00:21:31.098 --> 00:21:36.918
+Fíjense, aquí, una vez que está en addElementOfCategory, lo conecto
+
+254
+00:21:38.089 --> 00:21:38.928
+y el error es
+
+255
+00:21:40.578 --> 00:21:44.058
+cuando yo conecto aquí. Vamos a eliminar este que está acá.
+
+256
+00:21:45.468 --> 00:21:46.728
+Voy a poner este que está aquí.
+
+257
+00:21:54.589 --> 00:21:57.768
+No sé por qué no me deja eliminar.
+
+258
+00:21:59.028 --> 00:21:59.808
+Este que está acá.
+
+259
+00:22:02.058 --> 00:22:07.758
+Cuando yo conecto de addElementOfCategory a un elemento, fíjense lo que
+
+260
+00:22:07.818 --> 00:22:13.608
+sucede, que yo voy a tener un parámetro nombre, que es mi BIM
+
+261
+00:22:13.638 --> 00:22:18.858
+piso responsable. Allí, una vez que yo hago esto,
+
+262
+00:22:19.848 --> 00:22:25.218
+este tipo de conexión, para que se entienda, y obviamente ustedes lo vayan haciendo
+
+263
+00:22:25.278 --> 00:22:31.248
+con el proceso IPO. Lo que yo estoy diciendo es: tengo las categorías, tengo todas
+
+264
+00:22:31.278 --> 00:22:35.748
+las categorías, todos estos elementos que están acá.
+
+265
+00:22:36.138 --> 00:22:41.089
+Yo inclusive, si yo deseo, este watch no lo utilizo porque los watch simplemente
+
+266
+00:22:41.149 --> 00:22:44.538
+son visualizadores. Y este control ya lo hice.
+
+267
+00:22:45.288 --> 00:22:47.508
+Era para visualizar cuántos habría.
+
+268
+00:22:48.048 --> 00:22:53.958
+Cuando yo conecto de esta manera, yo lo que estoy diciendo es: ahora, todas
+
+269
+00:22:54.048 --> 00:22:57.078
+estas categorías vamos a obtener
+
+270
+00:22:58.308 --> 00:23:01.668
+cuáles tienen el nombre BIM piso responsable.
+
+271
+00:23:02.284 --> 00:23:07.638
+Todos estos elementos, básicamente los estoy transfiriendo acá y de aquí,
+
+272
+00:23:07.938 --> 00:23:13.368
+fíjense que ahora a mí me sale, si yo me acerco aquí con sumo cuidado,
+
+273
+00:23:14.149 --> 00:23:17.718
+a mí me sale mi listado. Y si yo lo fijo,
+
+274
+00:23:19.638 --> 00:23:24.528
+yo puedo saber cuáles tienen ahorita,
+
+275
+00:23:24.708 --> 00:23:28.488
+actualmente, modelador uno, tienen todos.
+
+276
+00:23:29.688 --> 00:23:32.688
+Si yo hago algún cambio, vean, aquí, fíjense.
+
+277
+00:23:32.718 --> 00:23:34.623
+Ahorita todas las vigas tienen modelador uno.
+
+278
+00:23:37.278 --> 00:23:43.159
+Todas las vigas. Aquí, BIM piso responsable tenemos modelador
+
+279
+00:23:43.218 --> 00:23:43.353
+uno.
+
+280
+00:23:46.128 --> 00:23:51.589
+Exacto. El watch básicamente significa para
+
+281
+00:23:51.649 --> 00:23:54.228
+colocarlo como un nodo aparte y yo ver el listado.
+
+282
+00:23:54.438 --> 00:23:59.958
+Pero
+
+283
+00:24:00.708 --> 00:24:05.793
+que ese watch me va a conectar para generar una acción, no, es solo un
+
+284
+00:24:05.868 --> 00:24:07.909
+visualizador. Por eso se llama watch.
+
+285
+00:24:09.198 --> 00:24:12.948
+Entonces, si yo agarro acá y le quito, por ejemplo,
+
+286
+00:24:15.138 --> 00:24:18.858
+estas que están aquí
+
+287
+00:24:21.198 --> 00:24:26.208
+y las voy a eliminar a todas. Es más, vamos a hacerlo.
+
+288
+00:24:26.298 --> 00:24:30.228
+Las voy a eliminar a todas. Seleccionar todas las instancias visibles en vista.
+
+289
+00:24:33.918 --> 00:24:36.558
+Vamos a seleccionar todas las vigas, mejor.
+
+290
+00:24:37.998 --> 00:24:40.578
+Chequear ninguno, mis vigas son 43.
+
+291
+00:24:41.839 --> 00:24:47.328
+Eso.
+
+292
+00:24:47.927 --> 00:24:49.428
+Y vamos a eliminar acá.
+
+293
+00:24:50.688 --> 00:24:56.628
+La categoría no está, era BIM piso responsable y eliminamos. Y le doy a aplicar.
+
+294
+00:24:58.638 --> 00:25:02.988
+Eliminar y le doy a aplicar. Cuando yo me vaya acá, desaparece.
+
+295
+00:25:07.578 --> 00:25:13.278
+Si están entendiendo el flujo, fíjense, mi input era estructura de frame, todos los
+
+296
+00:25:13.308 --> 00:25:16.548
+elementos de la categoría. Yo conecto el elemento.
+
+297
+00:25:16.698 --> 00:25:22.067
+Básicamente, estoy transfiriendo toda la data para ver los valores acá, qué nombre
+
+298
+00:25:22.128 --> 00:25:25.878
+o a qué parámetro, perdón, a BIM piso responsable.
+
+299
+00:25:27.198 --> 00:25:32.778
+Y aquí me va a generar el listado. Si yo hubiese conectado acá un watch, iba a ser
+
+300
+00:25:32.808 --> 00:25:38.508
+lo mismo. ¿Cuál era el error? El error
+
+301
+00:25:38.658 --> 00:25:43.818
+era que yo estaba conectando un watch al nombre parámetro. ¿Está claro?
+
+302
+00:25:44.973 --> 00:25:49.683
+¿Sí lo ven? Vean qué sencillo. Esta no es una programación tan compleja, solo es ir
+
+303
+00:25:49.758 --> 00:25:50.748
+siguiendo los pasos.
+
+304
+00:25:52.578 --> 00:25:53.358
+Sí.
+
+305
+00:25:55.488 --> 00:25:56.493
+Ya te respondo eso,
+
+306
+00:25:57.978 --> 00:26:00.318
+Miriam. Y ahí me comentas, Mel, si me pudiste seguir.
+
+307
+00:26:01.938 --> 00:26:07.788
+Ahora, fíjense que acá él indica que yo puedo colocar un
+
+308
+00:26:07.878 --> 00:26:08.208
+watch.
+
+309
+00:26:11.598 --> 00:26:14.688
+El del string. Yo pudiera colocar acá,
+
+310
+00:26:15.889 --> 00:26:18.378
+vamos a colocarlo para que lo vean.
+
+311
+00:26:19.548 --> 00:26:20.223
+Un
+
+312
+00:26:23.178 --> 00:26:23.899
+watch.
+
+313
+00:26:26.808 --> 00:26:28.548
+Y
+
+314
+00:26:31.608 --> 00:26:34.279
+fíjense que aquí sale BIM piso responsable
+
+315
+00:26:36.468 --> 00:26:40.578
+y luego este me va a generar todo el
+
+316
+00:26:41.748 --> 00:26:45.589
+listado, pero automáticamente lo voy a tener acá.
+
+317
+00:26:45.618 --> 00:26:48.858
+Entonces este watch no es tan necesario.
+
+318
+00:26:49.848 --> 00:26:54.708
+Es más, si yo conectara, fíjense que porque los watch solo son para
+
+319
+00:26:54.738 --> 00:26:59.073
+visualizar. Si yo colocara este watch acá en la variable,
+
+320
+00:27:00.348 --> 00:27:02.089
+fíjense que es el mismo listado.
+
+321
+00:27:04.848 --> 00:27:08.628
+Entonces, si yo elimino este,
+
+322
+00:27:10.548 --> 00:27:13.218
+lo quito fijo y me voy a
+
+323
+00:27:15.678 --> 00:27:16.068
+Revit
+
+324
+00:27:18.408 --> 00:27:21.978
+Me voy acá a Revit. Fíjense cómo está.
+
+325
+00:27:22.279 --> 00:27:26.958
+Le coloco un piso responsable y lo coloco solo en estas
+
+326
+00:27:27.108 --> 00:27:28.608
+estructuras.
+
+327
+00:27:29.298 --> 00:27:37.639
+Ahora
+
+328
+00:27:37.669 --> 00:27:38.628
+le voy a colocar
+
+329
+00:27:39.858 --> 00:27:44.058
+DP piso estructuras
+
+330
+00:27:46.428 --> 00:27:47.149
+y le doy a "apply".
+
+331
+00:27:49.248 --> 00:27:53.508
+Me voy acá y me indica cuáles tienen DP piso estructuras.
+
+332
+00:27:54.018 --> 00:27:55.698
+Vean lo rápido, esta secuencia.
+
+333
+00:27:57.169 --> 00:28:01.968
+Este "stream" básicamente lo estoy dejando para un poco más adelante.
+
+334
+00:28:02.419 --> 00:28:07.848
+Hasta aquí estamos bien.
+
+335
+00:28:11.868 --> 00:28:16.068
+Lo que necesitamos es la lógica de nuestro proceso.
+
+336
+00:28:17.178 --> 00:28:18.693
+Vean,
+
+337
+00:28:21.408 --> 00:28:23.568
+aquí estamos con la lógica correcta
+
+338
+00:28:25.339 --> 00:28:28.428
+y vean lo rápido que es esto, solo copio esta imagen.
+
+339
+00:28:31.308 --> 00:28:32.718
+Ya identifiqué
+
+340
+00:28:34.818 --> 00:28:37.578
+qué parámetros están llenos
+
+341
+00:28:38.839 --> 00:28:41.478
+con DG piso estructuras
+
+342
+00:28:43.218 --> 00:28:47.089
+y cuáles están vacíos.
+
+343
+00:28:48.468 --> 00:28:53.748
+Ahora necesito llegar a mi resultado
+
+344
+00:28:54.288 --> 00:28:56.298
+conforme o no conforme.
+
+345
+00:29:01.488 --> 00:29:03.858
+Ojo, mientras lo realiza,
+
+346
+00:29:05.178 --> 00:29:09.198
+todas estas indicaciones y todos estos problemas, ¿de dónde me los estoy sacando?
+
+347
+00:29:10.218 --> 00:29:15.618
+Es porque sé programación o ya yo me sé Dynamo y me sé los
+
+348
+00:29:15.708 --> 00:29:16.698
+nodos.
+
+349
+00:29:18.408 --> 00:29:23.208
+¿Por qué estoy gestionando estos paso a paso? ¿De dónde creen que me voy?
+
+350
+00:29:23.958 --> 00:29:28.548
+Quizás lo tienen que manejar así. ¿De dónde sale?
+
+351
+00:29:39.348 --> 00:29:43.038
+Ahí me lo ponen. Fíjense, voy a ver otra imagen. Quiero que me respondan eso.
+
+352
+00:29:43.758 --> 00:29:48.558
+Así estamos en la parte del proceso.
+
+353
+00:29:50.868 --> 00:29:56.163
+Ahora necesito crear, fíjense si se ve la imagen, un "true" y un "false".
+
+354
+00:29:57.738 --> 00:30:03.078
+Ojo, las imágenes que se generan en BIM System son de referencia.
+
+355
+00:30:03.828 --> 00:30:09.048
+Creo que ya se dieron cuenta. El criterio para hacer la conexión adecuada va
+
+356
+00:30:10.188 --> 00:30:15.678
+con el script y la metodología IPO, que nosotros estamos trabajando, y luego el
+
+357
+00:30:15.708 --> 00:30:16.908
+criterio que nosotros tenemos.
+
+358
+00:30:19.038 --> 00:30:22.654
+Aquí me indica, si ustedes se dan cuenta, vamos a un "true" y un "false".
+
+359
+00:30:22.938 --> 00:30:26.988
+Eso lo dijo Melvin la clase pasada, que ese es el conforme o no conforme.
+
+360
+00:30:28.353 --> 00:30:34.308
+¿Dónde? "True" es cuando es vacío, pero si no es conforme, es lo que yo no
+
+361
+00:30:34.339 --> 00:30:39.828
+quiero. Y "false" tiene valor, es cuando es conforme.
+
+362
+00:30:41.568 --> 00:30:43.368
+Este es el siguiente paso.
+
+363
+00:30:45.048 --> 00:30:50.073
+Si se están dando cuenta, primero es el input, los
+
+364
+00:30:51.258 --> 00:30:57.228
+datos. Luego es el proceso, que es básicamente identificar qué está lleno y qué no
+
+365
+00:30:57.288 --> 00:31:02.208
+lo está. Luego viene la lógica y siempre vamos a llegar al conforme o no conforme.
+
+366
+00:31:02.868 --> 00:31:04.968
+Allí, con esa lógica,
+
+367
+00:31:06.198 --> 00:31:07.399
+yo me voy a venir acá
+
+368
+00:31:09.018 --> 00:31:14.178
+y genero la conexión
+
+369
+00:31:14.868 --> 00:31:19.068
+paso a paso de conforme o no conforme
+
+370
+00:31:21.169 --> 00:31:22.308
+con el "true"
+
+371
+00:31:25.068 --> 00:31:25.728
+y "false",
+
+372
+00:31:27.649 --> 00:31:31.608
+con los nodos que ya tengo.
+
+373
+00:31:33.078 --> 00:31:35.958
+Pásame el escritorio por acá.
+
+374
+00:31:40.758 --> 00:31:44.779
+Aquí en Dynamo, el catálogo de conceptos sí toma.
+
+375
+00:31:45.423 --> 00:31:48.078
+José Luis, ¿a qué se refiere el catálogo de conceptos?
+
+376
+00:31:50.149 --> 00:31:52.068
+Entonces, fíjense.
+
+377
+00:31:52.188 --> 00:31:57.738
+Tenemos categoría, element, el
+
+378
+00:31:57.828 --> 00:32:02.598
+piso responsable. Ahora agrega estos nodos en este orden.
+
+379
+00:32:02.688 --> 00:32:06.108
+Vamos a agregar uno que es "string is null or empty".
+
+380
+00:32:12.139 --> 00:32:12.978
+Yo voy acá.
+
+381
+00:32:14.238 --> 00:32:19.368
+"String is
+
+382
+00:32:20.389 --> 00:32:20.958
+null".
+
+383
+00:32:26.868 --> 00:32:30.348
+Hay uno que es la neta de string.
+
+384
+00:32:31.728 --> 00:32:32.358
+Un segundo.
+
+385
+00:32:38.268 --> 00:32:40.218
+Perdón, es STR.
+
+386
+00:32:41.718 --> 00:32:42.108
+STR.
+
+387
+00:32:54.618 --> 00:33:00.408
+Siempre se me olvida este nombre. Aquí está.
+
+388
+00:33:03.288 --> 00:33:04.743
+Vean, se llama "is null".
+
+389
+00:33:06.214 --> 00:33:07.458
+Cuando tengan alguna duda
+
+390
+00:33:11.718 --> 00:33:15.228
+de cuál es este nodo, me pueden preguntar,
+
+391
+00:33:16.518 --> 00:33:19.323
+porque son un montón de nodos. No me acuerdo de todos, son tantos.
+
+392
+00:33:20.178 --> 00:33:22.698
+Entonces, "string", ustedes lo colocan acá
+
+393
+00:33:26.298 --> 00:33:30.843
+y vean que si en su catálogo, su librería,
+
+394
+00:33:32.118 --> 00:33:35.538
+no aparece de primero,
+
+395
+00:33:37.908 --> 00:33:39.108
+van a irse por lo segundo,
+
+396
+00:33:40.339 --> 00:33:42.708
+que básicamente es utilizar
+
+397
+00:33:45.348 --> 00:33:47.642
+"is null",
+
+398
+00:33:48.978 --> 00:33:49.218
+uno,
+
+399
+00:33:50.567 --> 00:33:53.149
+"is empty".
+
+400
+00:33:56.868 --> 00:34:03.169
+En
+
+401
+00:34:03.228 --> 00:34:08.538
+este caso, el inspector, porque el que me interesa es el inspector.
+
+402
+00:34:13.248 --> 00:34:13.608
+Acá.
+
+403
+00:34:17.298 --> 00:34:19.008
+No me está dejando seleccionar.
+
+404
+00:34:20.808 --> 00:34:22.158
+Entonces, tenemos:
+
+405
+00:34:23.928 --> 00:34:25.699
+el objeto es nulo
+
+406
+00:34:27.258 --> 00:34:28.098
+o está vacío.
+
+407
+00:34:30.558 --> 00:34:36.199
+Tenemos estos dos. Ahora, si ustedes tienen alguna
+
+408
+00:34:36.319 --> 00:34:41.958
+duda, pueden inclusive hacer la
+
+409
+00:34:42.018 --> 00:34:46.518
+consulta del caso de cuál es este o cuál es este.
+
+410
+00:34:46.758 --> 00:34:52.578
+Y lo vamos a conectar. Entonces, tenemos "string is null or empty"
+
+411
+00:34:53.718 --> 00:34:56.808
+y luego, en el output, vamos a tener "true" o "false".
+
+412
+00:34:58.038 --> 00:35:03.168
+El primer paso es que ya nosotros creamos este, vamos a tener dos.
+
+413
+00:35:03.828 --> 00:35:09.738
+Ahora, la
+
+414
+00:35:09.798 --> 00:35:12.438
+salida será una lista "true/false".
+
+415
+00:35:12.558 --> 00:35:16.713
+La lógica para tu intuición es: "true", el parámetro está vacío; "false", el
+
+416
+00:35:16.758 --> 00:35:21.888
+parámetro está conforme. Y luego vamos a trabajar con un nodo "if".
+
+417
+00:35:22.308 --> 00:35:23.748
+Este nodo tiene tres entradas,
+
+418
+00:35:24.978 --> 00:35:26.118
+que es básicamente
+
+419
+00:35:27.648 --> 00:35:33.618
+testeo, verdadero o falso. Estos se nos van a conectar a los dos, que
+
+420
+00:35:33.678 --> 00:35:38.208
+es "is null or empty", y vamos a colocar
+
+421
+00:35:40.248 --> 00:35:45.708
+dos opciones: cuando esté no conforme y cuando esté conforme, y lo vamos a conectar
+
+422
+00:35:45.738 --> 00:35:46.279
+a ese "if".
+
+423
+00:35:47.958 --> 00:35:53.148
+Finalmente, rápidamente, en el listado con Watch vamos a saber cuáles están
+
+424
+00:35:53.178 --> 00:35:58.728
+conforme o no conformes. Cuando sea conforme, nosotros vamos a entender que está
+
+425
+00:36:00.138 --> 00:36:04.368
+vacío y cuando sea no conforme, vamos a entender que está lleno.
+
+426
+00:36:05.779 --> 00:36:07.188
+Y allí nosotros vamos a hacer:
+
+427
+00:36:09.438 --> 00:36:13.548
+esto está bien. ¿Por qué? Ustedes me dirán: "Bueno, pero aquí en el listado
+
+428
+00:36:14.478 --> 00:36:15.798
+nosotros pudimos ver,
+
+429
+00:36:17.718 --> 00:36:23.688
+lo sabemos una por una". Pero ojo, esto porque son 42 filas nada más, y
+
+430
+00:36:23.718 --> 00:36:26.088
+cuando son 150 filas
+
+431
+00:36:28.848 --> 00:36:29.478
+es complicado.
+
+432
+00:36:31.938 --> 00:36:36.078
+Luego de que sabemos qué es conforme o no conforme, es donde nosotros vamos a tomar
+
+433
+00:36:36.138 --> 00:36:41.808
+la decisión de adecuar con el parámetro y llenar desde piso
+
+434
+00:36:41.838 --> 00:36:42.529
+estructuras.
+
+435
+00:36:43.938 --> 00:36:48.138
+Esto es lo que vamos a hacer en la siguiente clase y en simultáneo lo vamos a
+
+436
+00:36:48.199 --> 00:36:49.728
+combinar con otro caso.
+
+437
+00:36:52.699 --> 00:36:55.218
+Aquí en
+
+438
+00:36:57.228 --> 00:37:00.949
+el catálogo de conceptos de la etapa que desincluye, sí.
+
+439
+00:37:02.658 --> 00:37:06.738
+Y lo puedes ver en las distintas etapas. José Luis.
+
+440
+00:37:07.608 --> 00:37:12.949
+Un parámetro vacío no conforme implica un IFC deficiente. Sí, al menos. ¿Por qué?
+
+441
+00:37:12.978 --> 00:37:16.128
+Porque el IFC tienes que extraer toda la información.
+
+442
+00:37:16.758 --> 00:37:20.568
+Tener parámetros vacíos en un IFC del que yo quiero extraer información
+
+443
+00:37:21.798 --> 00:37:27.738
+no sirve de nada. El IFC no es para ver cómo se ve solo el modelo, sino
+
+444
+00:37:27.768 --> 00:37:30.708
+para poder revisar la información y extraer.
+
+445
+00:37:32.404 --> 00:37:36.228
+¿Quedamos claros hasta acá?
+
+446
+00:37:39.003 --> 00:37:40.158
+¿Lo que vamos a ver en la siguiente clase?
+
+447
+00:37:41.928 --> 00:37:43.848
+¿Estamos en el caso uno, efecto final?
+
+448
+00:37:45.273 --> 00:37:46.368
+¿El resto?
+
+449
+00:37:49.383 --> 00:37:49.878
+¿Hasta acá?
+
+450
+00:37:52.368 --> 00:37:58.008
+Exactamente. Entonces, nos vamos a ver el martes.
+
+451
+00:37:58.128 --> 00:37:58.668
+Por favor,
+
+452
+00:38:00.738 --> 00:38:01.443
+continúen,
+
+453
+00:38:02.868 --> 00:38:05.388
+sigan y no duerman para ir cerrando este módulo cuatro.
+
+454
+00:38:07.608 --> 00:38:09.978
+Tengan una excelente noche. Cuídense mucho

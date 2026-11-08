@@ -1,0 +1,1529 @@
+WEBVTT
+
+1
+00:00:02.910 --> 00:00:04.890
+Hola, estimados. Buenas noches, ¿cómo están?
+
+2
+00:00:05.100 --> 00:00:10.230
+Bienvenidos a una sesión de refuerzo del
+
+3
+00:00:10.291 --> 00:00:11.190
+módulo
+
+4
+00:00:14.670 --> 00:00:15.000
+cinco.
+
+5
+00:00:17.340 --> 00:00:22.380
+Es una clase de 30 minutos en la que seguimos retomando la sesión introductoria.
+
+6
+00:00:22.530 --> 00:00:27.210
+No avanzaremos con respecto al contenido de la semana pasada, pero hoy ya
+
+7
+00:00:27.300 --> 00:00:30.480
+arrancamos a entrar y ahondar en
+
+8
+00:00:34.200 --> 00:00:34.590
+materia.
+
+9
+00:00:37.890 --> 00:00:43.680
+Vamos a estar 30 minutos y antes de cerrar les explico la pregunta de José Luis,
+
+10
+00:00:43.740 --> 00:00:46.590
+también la de Gustavo, para que vayan entendiendo.
+
+11
+00:00:47.490 --> 00:00:49.350
+Es importante también que ustedes se planifiquen,
+
+12
+00:00:52.740 --> 00:00:54.540
+ya con mucha más organización y
+
+13
+00:00:56.761 --> 00:01:00.810
+aprendiendo de la experiencia pasada de migración de la plataforma.
+
+14
+00:01:01.500 --> 00:01:06.450
+A partir del módulo seis van a poder ver toda nuestra nueva
+
+15
+00:01:07.080 --> 00:01:12.840
+plataforma, que actualmente está en ese proceso de migración.
+
+16
+00:01:14.280 --> 00:01:18.510
+Sesión de refuerzo dos. Vamos a hablar un poco de la construcción y validación del
+
+17
+00:01:18.571 --> 00:01:19.470
+prompt maestro BIM.
+
+18
+00:01:22.440 --> 00:01:26.670
+La sesión de refuerzo uno fue muy introductoria, haciendo un repaso de
+
+19
+00:01:27.900 --> 00:01:28.560
+todo un poco.
+
+20
+00:01:30.450 --> 00:01:33.360
+Entendimos cuál era el objetivo de este módulo cinco.
+
+21
+00:01:33.930 --> 00:01:36.420
+Para refrescarles un poquito
+
+22
+00:01:37.830 --> 00:01:43.260
+la memoria, lo que vamos a buscar en este módulo es terminar de
+
+23
+00:01:43.351 --> 00:01:44.400
+generar
+
+24
+00:01:49.080 --> 00:01:50.160
+nuestro primer agente.
+
+25
+00:01:51.690 --> 00:01:53.490
+Ustedes van a generar su primer agente
+
+26
+00:01:55.680 --> 00:02:01.590
+de IA. También van a poder usar un poco de lo que son aplicaciones
+
+27
+00:02:01.650 --> 00:02:06.870
+de IA para extracción de datos en el ámbito
+
+28
+00:02:07.620 --> 00:02:08.700
+o en el mundo BIM.
+
+29
+00:02:11.370 --> 00:02:11.730
+Vamos
+
+30
+00:02:14.280 --> 00:02:19.110
+a entrar con esta primera sesión de refuerzo, que va a durar 30 minutos.
+
+31
+00:02:21.780 --> 00:02:25.980
+Estos 30 minutos van a estar organizados en cinco bloques.
+
+32
+00:02:26.790 --> 00:02:31.620
+Vamos a generar una introducción que venimos platicando
+
+33
+00:02:32.580 --> 00:02:34.141
+desde hace cinco minutos.
+
+34
+00:02:38.190 --> 00:02:42.630
+Luego vamos a entrar a lo que es la anatomía del prompt maestro, una construcción
+
+35
+00:02:42.690 --> 00:02:43.320
+práctica,
+
+36
+00:02:44.641 --> 00:02:48.690
+luego vamos a entrar a la primera validación y vamos a ir cerrando con lo
+
+37
+00:02:48.720 --> 00:02:51.510
+entregable y cierre.
+
+38
+00:02:53.250 --> 00:02:57.930
+En este primer bloque vamos a entender,
+
+39
+00:02:59.460 --> 00:03:04.650
+y lo estábamos viendo en la sesión de refuerzo anterior, lo que sucedía cuando
+
+40
+00:03:04.710 --> 00:03:09.780
+nosotros utilizábamos prompts genéricos versus prompt maestro.
+
+41
+00:03:09.810 --> 00:03:10.740
+¿Cuál era la diferencia?
+
+42
+00:03:12.510 --> 00:03:18.451
+El criterio, porque nosotros vamos a guiar la IA con nuestro criterio, no
+
+43
+00:03:18.510 --> 00:03:24.090
+al revés. En ningún escenario nosotros nos podemos dejar guiar por la IA, porque
+
+44
+00:03:25.110 --> 00:03:30.660
+el resultado va a ser desastroso, en el sentido de que la IA básicamente va
+
+45
+00:03:30.750 --> 00:03:34.740
+replicando nuestro conocimiento y nuestro criterio.
+
+46
+00:03:34.740 --> 00:03:39.090
+Entonces, si nosotros no tenemos bajo criterio y bajo conocimiento, ¿qué va a hacer
+
+47
+00:03:39.150 --> 00:03:45.060
+la IA? Nos va a ir llevando un barco sin deriva y el resultado final no
+
+48
+00:03:45.090 --> 00:03:47.791
+va a ser muy amigable.
+
+49
+00:03:49.291 --> 00:03:53.070
+Entonces, el objetivo, vuelvo y repito, lo que vamos
+
+50
+00:03:56.671 --> 00:04:02.250
+a comenzar a desarrollar con nuestra tesis es entender cómo comunicar ese
+
+51
+00:04:02.281 --> 00:04:05.070
+problema correctamente en inteligencia artificial.
+
+52
+00:04:06.390 --> 00:04:12.210
+Es decir, una consulta genérica puede ofrecernos ideas, pero un prompt maestro nos
+
+53
+00:04:12.240 --> 00:04:18.150
+permitirá establecer un contexto profesional, un objetivo, unas reglas y
+
+54
+00:04:18.210 --> 00:04:23.160
+un formato de respuesta. Un prompt maestro BIM es una instrucción
+
+55
+00:04:25.320 --> 00:04:31.230
+estructurada y reutilizable que establece cómo debe asistir la IA dentro de
+
+56
+00:04:31.260 --> 00:04:36.210
+un proyecto y bajo qué condiciones deben generarse sus respuestas.
+
+57
+00:04:36.781 --> 00:04:41.640
+No es una pregunta aislada, es la base para consultas técnicas con contexto
+
+58
+00:04:41.670 --> 00:04:42.240
+coherente.
+
+59
+00:04:46.260 --> 00:04:49.650
+Entonces, el objetivo es todo lo que ustedes han aprendido en los cuatro módulos
+
+60
+00:04:49.740 --> 00:04:53.520
+anteriores, esa parte ya práctica, conceptual,
+
+61
+00:04:55.230 --> 00:04:56.640
+de entendimiento, de
+
+62
+00:04:57.990 --> 00:04:59.640
+concepción de lo que es la
+
+63
+00:05:01.770 --> 00:05:01.920
+IA,
+
+64
+00:05:04.140 --> 00:05:09.510
+o lo que vamos a terminar de concebir con la IA, va a ser en este módulo.
+
+65
+00:05:10.650 --> 00:05:14.430
+Nosotros necesitamos una instrucción estructurada que
+
+66
+00:05:14.550 --> 00:05:19.050
+establezca a nuestro asistente de IA
+
+67
+00:05:20.790 --> 00:05:26.610
+dentro de qué condiciones y qué respuestas deben generarse para que los
+
+68
+00:05:26.670 --> 00:05:30.750
+pasos que nosotros podamos dar sean mucho más rápidos y
+
+69
+00:05:33.690 --> 00:05:34.500
+eficientes.
+
+70
+00:05:36.091 --> 00:05:40.500
+Vamos a entender un poquito la anatomía del prompt maestro.
+
+71
+00:05:41.790 --> 00:05:47.100
+Un prompt, básicamente, para simplificarlo, si ustedes están hablando con ChatGPT,
+
+72
+00:05:47.400 --> 00:05:52.560
+con Claude, con Gemini, cualquier herramienta de inteligencia artificial,
+
+73
+00:05:53.610 --> 00:05:56.430
+y ustedes hacen un requerimiento.
+
+74
+00:05:56.670 --> 00:06:00.930
+Ese requerimiento muchas veces puede ser conversacional, porque depende mucho de
+
+75
+00:06:00.990 --> 00:06:02.220
+los riesgos y alcances
+
+76
+00:06:09.869 --> 00:06:13.050
+o el contexto que se esté ejecutando. A qué voy.
+
+77
+00:06:13.080 --> 00:06:15.510
+No es lo mismo que yo le pregunte a ChatGPT
+
+78
+00:06:18.390 --> 00:06:21.810
+cuántas calorías tiene mi almuerzo, a
+
+79
+00:06:23.160 --> 00:06:29.130
+que yo le pregunte cómo debería generar el plan de ejecución BEP a partir de
+
+80
+00:06:29.160 --> 00:06:34.170
+una información y un EAR, perdón, que tengo un requerimiento de un cliente.
+
+81
+00:06:35.130 --> 00:06:37.140
+Entonces, el contexto,
+
+82
+00:06:39.390 --> 00:06:44.341
+los prompts y las instrucciones, realmente, porque para nosotros el prompt va a ser
+
+83
+00:06:44.401 --> 00:06:47.160
+una instrucción superimportante.
+
+84
+00:06:48.750 --> 00:06:54.180
+Lo primero que nosotros debemos entender en este ámbito es el rol.
+
+85
+00:06:55.020 --> 00:07:00.210
+Nosotros tenemos acá siete puntos válidos que nos vamos a cimentar en
+
+86
+00:07:01.951 --> 00:07:07.770
+este módulo. Uno, ¿qué función debe
+
+87
+00:07:07.831 --> 00:07:13.500
+asumir la IA? Es muy importante. Es decir, la
+
+88
+00:07:13.651 --> 00:07:18.930
+IA como rol va a ser nuestro asistente, pero no es lo mismo un asistente de un
+
+89
+00:07:18.960 --> 00:07:22.651
+modelador BIM, no es lo mismo un asistente de un coordinador BIM, no es lo mismo un
+
+90
+00:07:22.710 --> 00:07:27.540
+asistente de un BIM management, no es lo mismo un asistente
+
+91
+00:07:27.630 --> 00:07:32.970
+del dueño de una empresa o un CEO. Cambia.
+
+92
+00:07:33.811 --> 00:07:38.100
+Entonces, nosotros lo que vamos a hacer con la IA es básicamente entrenarla y
+
+93
+00:07:38.160 --> 00:07:44.010
+adaptarla y generarle esa capacidad, porque la IA termina
+
+94
+00:07:44.070 --> 00:07:49.831
+siendo el resultado de N cantidad de algoritmos y aritméticas
+
+95
+00:07:50.520 --> 00:07:56.100
+que, en función de lo que nosotros le vamos indicando, él lo va reproduciendo y va
+
+96
+00:07:56.130 --> 00:08:01.470
+aprendiendo. Y básicamente, cada vez vamos a poder ir afinando las
+
+97
+00:08:01.500 --> 00:08:02.160
+respuestas.
+
+98
+00:08:04.020 --> 00:08:09.270
+Cuando llegó la respuesta, el input va a ser nuestra instrucción, el process es lo
+
+99
+00:08:09.300 --> 00:08:13.980
+que estamos buscando, que nos acompañe la IA y el output va a ser el resultado
+
+100
+00:08:14.040 --> 00:08:18.091
+final. Si ustedes se recuerdan, que aprendimos en el módulo cuatro de Dynamic
+
+101
+00:08:18.151 --> 00:08:21.451
+Python, IPO, input, process, output.
+
+102
+00:08:24.180 --> 00:08:29.490
+Eso es lo que nosotros buscamos, cómo vamos a generar ese rol de la IA.
+
+103
+00:08:30.240 --> 00:08:34.230
+Contexto. Es siempre importante dar contexto.
+
+104
+00:08:34.530 --> 00:08:40.170
+No es lo mismo que yo diga: actúa como BIM management para un proyecto de una casa
+
+105
+00:08:40.201 --> 00:08:45.931
+de dos niveles, a que yo indique: actúa como BIM management para un proyecto de 50
+
+106
+00:08:45.960 --> 00:08:51.931
+niveles, donde las disciplinas principales son... Es decir, el contexto cambia.
+
+107
+00:08:52.681 --> 00:08:57.870
+Al cambiar el contexto, también cambian los tipos de respuesta o el
+
+108
+00:08:58.290 --> 00:09:00.390
+output final que nosotros vamos a recibir
+
+109
+00:09:02.202 --> 00:09:03.012
+De nuestra IA.
+
+110
+00:09:04.272 --> 00:09:09.642
+El objetivo. Nosotros no solo usamos la IA para decir que estamos usando la IA.
+
+111
+00:09:10.152 --> 00:09:14.142
+Eso no tiene ningún tipo de sentido y créanme que es más común de lo que creen en
+
+112
+00:09:14.202 --> 00:09:18.012
+el ámbito profesional. Está pasando algo muy curioso, que
+
+113
+00:09:20.022 --> 00:09:24.642
+para sugerir que mi trabajo es mucho más
+
+114
+00:09:25.481 --> 00:09:26.952
+eficiente y de calidad,
+
+115
+00:09:28.182 --> 00:09:30.582
+solo indico que estoy utilizando la IA.
+
+116
+00:09:31.512 --> 00:09:35.292
+Perfecto, pero si yo no tengo un objetivo claro, estamos utilizando la IA de manera
+
+117
+00:09:35.622 --> 00:09:38.562
+inadecuada. Necesito que tener un objetivo.
+
+118
+00:09:38.592 --> 00:09:44.052
+Es decir, si yo defino el rol, defino el contexto, pero no tengo un objetivo claro
+
+119
+00:09:44.142 --> 00:09:49.782
+de: lo que yo quiero es crear familias paramétricas con IA, lo que yo quiero
+
+120
+00:09:49.902 --> 00:09:53.802
+es generar un plan de ejecución BIM en función de una IA que me acaba de entregar
+
+121
+00:09:53.863 --> 00:09:59.022
+un cliente y que esto esté estandarizado según el código ISO 19650 y que la
+
+122
+00:09:59.082 --> 00:10:03.042
+redacción sea clara, profesional, pero al mismo tiempo sea entendible para mi
+
+123
+00:10:03.102 --> 00:10:05.113
+modelador, coordinador. O
+
+124
+00:10:06.732 --> 00:10:11.082
+sea, el objetivo cambia el resultado final.
+
+125
+00:10:11.412 --> 00:10:14.742
+Si nosotros no tenemos objetivo claro y solo es usar la IA, por usar la IA,
+
+126
+00:10:16.302 --> 00:10:17.802
+no tiene ningún tipo de sentido.
+
+127
+00:10:19.902 --> 00:10:25.332
+Datos disponibles. La IA se va a retroalimentar de nuestros datos, de nuestra
+
+128
+00:10:25.363 --> 00:10:26.202
+información.
+
+129
+00:10:28.752 --> 00:10:34.092
+Esto va de la mano con el contexto. Mientras nosotros le demos menos información,
+
+130
+00:10:34.662 --> 00:10:39.792
+menos contexto, el objetivo final no se va a cumplir, el resultado final no se va a
+
+131
+00:10:39.852 --> 00:10:43.062
+cumplir, el output final no va a ser el adecuado.
+
+132
+00:10:45.133 --> 00:10:50.802
+Eso no significa que tenemos que sobresaturar de datos a la IA. No.
+
+133
+00:10:52.332 --> 00:10:58.212
+Es decir, con los datos suficientes que nosotros podamos entregar, y eso lo
+
+134
+00:10:58.242 --> 00:10:59.052
+vamos a aprender,
+
+135
+00:11:00.883 --> 00:11:05.202
+esto va a ir de la mano del contexto, va a ir de la mano del objetivo y lo vamos a
+
+136
+00:11:05.202 --> 00:11:08.772
+aprovechar de una manera adecuada. Instrucciones.
+
+137
+00:11:08.952 --> 00:11:11.712
+Recuerden que un prompt termina siendo una instrucción.
+
+138
+00:11:13.002 --> 00:11:18.312
+Muchas veces, el error común es que se crea en el primer prompt una instrucción
+
+139
+00:11:18.372 --> 00:11:23.383
+perfecto de 20 líneas y etcétera. Pero recuerden que
+
+140
+00:11:23.742 --> 00:11:26.892
+básicamente la IA funciona como un proceso de
+
+141
+00:11:28.602 --> 00:11:29.202
+iteración.
+
+142
+00:11:33.942 --> 00:11:38.202
+Iteración de repetir y de interacción, las dos cosas utiliza.
+
+143
+00:11:38.712 --> 00:11:44.442
+Entonces, en ese proceso de iteración vamos a tener que ir generando N cantidad de
+
+144
+00:11:44.472 --> 00:11:45.492
+instrucciones.
+
+145
+00:11:49.363 --> 00:11:50.292
+Y yo les
+
+146
+00:11:51.672 --> 00:11:54.792
+invito, mientras estén en este nuevo módulo.
+
+147
+00:11:59.383 --> 00:12:05.322
+No sé si les ha pasado, y esto ocurre mucho en el ámbito profesional, no tanto
+
+148
+00:12:05.352 --> 00:12:08.532
+en las cuestiones personales que nos puede ayudar la IA, pero sobre todo en el
+
+149
+00:12:08.562 --> 00:12:09.552
+ámbito profesional,
+
+150
+00:12:10.842 --> 00:12:15.491
+que si yo no tengo muy claro el objetivo y qué instrucciones darle, es decir, si yo
+
+151
+00:12:15.522 --> 00:12:17.921
+le doy un prompt maestro, que es nuestro primer prompt,
+
+152
+00:12:19.512 --> 00:12:23.863
+yo tengo que seguir con las derivaciones de esas instrucciones hasta llegar a mi
+
+153
+00:12:23.922 --> 00:12:28.302
+objetivo final. Si no tengo claro ese proceso, ustedes pueden estar dos días,
+
+154
+00:12:29.262 --> 00:12:34.032
+créanme, tres, cuatro, cinco días trabajando con la IA y no van a llegar a ningún
+
+155
+00:12:34.092 --> 00:12:34.482
+lado.
+
+156
+00:12:37.332 --> 00:12:38.922
+Por ejemplo, el tema de un plan de ejecución BIM.
+
+157
+00:12:39.552 --> 00:12:43.212
+Yo lo puedo hacer con la IA, nuestro famoso BEP, ustedes ya lo saben hacer.
+
+158
+00:12:45.222 --> 00:12:50.562
+Si yo tengo el objetivo claro, el BEP se puede volver tan abstracto desde 200
+
+159
+00:12:50.623 --> 00:12:51.432
+páginas de un BEP,
+
+160
+00:12:54.072 --> 00:12:55.812
+o se puede volver algo inentendible,
+
+161
+00:12:57.102 --> 00:12:59.322
+o se puede volver algo donde el objetivo no está claro.
+
+162
+00:13:00.462 --> 00:13:04.842
+Eso depende mucho de las instrucciones. ¿Qué tarea tiene que realizar la IA?
+
+163
+00:13:05.682 --> 00:13:09.613
+Porque nosotros la estamos usando como un asistente y como todo asistente, las
+
+164
+00:13:09.912 --> 00:13:14.742
+funciones, tareas o especificaciones que nosotros le demos deben estar,
+
+165
+00:13:16.692 --> 00:13:17.623
+en la mayoría
+
+166
+00:13:19.333 --> 00:13:23.083
+de nuestras posibilidades, lo más claro posible.
+
+167
+00:13:24.972 --> 00:13:27.192
+Restricciones que no se debe hacer.
+
+168
+00:13:27.583 --> 00:13:32.412
+Por ejemplo, a mí no me interesa que tenga una doble función,
+
+169
+00:13:34.182 --> 00:13:38.623
+que actúe como modelador y al mismo tiempo actúe como BIM manager.
+
+170
+00:13:38.833 --> 00:13:42.882
+Eso no es posible. Entonces, ahí tenemos una restricción.
+
+171
+00:13:44.202 --> 00:13:50.053
+Una restricción: qué nivel de detalle yo puedo trabajar con mi información,
+
+172
+00:13:50.262 --> 00:13:54.792
+LOD 350, 400, 450, como en Illinois.
+
+173
+00:13:56.382 --> 00:14:00.102
+Hay restricciones. Y el número siete es
+
+174
+00:14:02.682 --> 00:14:05.983
+formato y validación. Es decir, cómo yo quiero que me entregue la respuesta.
+
+175
+00:14:07.092 --> 00:14:12.972
+Yo quiero que me la genere desde una imagen, desde un PDF, desde un
+
+176
+00:14:13.062 --> 00:14:13.812
+escrito.
+
+177
+00:14:15.432 --> 00:14:19.062
+Es decir, cómo yo quiero que maneje nuestras respuestas.
+
+178
+00:14:20.262 --> 00:14:22.962
+Cómo yo quiero en este formato de validación.
+
+179
+00:14:28.782 --> 00:14:29.262
+Entonces,
+
+180
+00:14:30.492 --> 00:14:30.852
+aquí
+
+181
+00:14:32.562 --> 00:14:34.902
+básicamente lo que hacemos es pegar
+
+182
+00:14:37.632 --> 00:14:42.792
+o alinear lo que es la metodología IPO del módulo cuatro
+
+183
+00:14:45.762 --> 00:14:46.632
+a nuestra IA.
+
+184
+00:14:48.252 --> 00:14:51.072
+El input, ¿cuál era? Contexto, objetivo y datos disponibles.
+
+185
+00:14:55.002 --> 00:14:55.692
+Contexto,
+
+186
+00:14:57.402 --> 00:14:59.892
+datos disponibles, objetivo,
+
+187
+00:15:02.532 --> 00:15:07.123
+rol. El proceso son las instrucciones, reglas y restricciones.
+
+188
+00:15:08.083 --> 00:15:10.602
+El output es la respuesta estructurada y verificada.
+
+189
+00:15:11.863 --> 00:15:16.002
+Entonces, por ejemplo, en el módulo cuatro estructuramos reglas para Dynamic
+
+190
+00:15:16.062 --> 00:15:19.602
+Python, y eso lo hice a propósito para que ustedes ya tuvieran una lógica al
+
+191
+00:15:19.662 --> 00:15:24.312
+momento de utilizar la IA. Es muy similar a lo que hicieron en el módulo cuatro,
+
+192
+00:15:25.002 --> 00:15:27.072
+ahora lo van a hacer en el módulo cinco, pero con la IA.
+
+193
+00:15:29.113 --> 00:15:31.722
+Entonces, aquí vamos a utilizar ese mismo
+
+194
+00:15:33.012 --> 00:15:34.301
+formato o esencia
+
+195
+00:15:35.502 --> 00:15:38.262
+para estructurar instrucciones.
+
+196
+00:15:39.792 --> 00:15:44.053
+Entonces, el profesional debe definir correctamente qué necesitamos obtener.
+
+197
+00:15:45.042 --> 00:15:50.502
+Y aquí es imperante y superimportante la validación
+
+198
+00:15:50.562 --> 00:15:51.162
+humana.
+
+199
+00:15:52.782 --> 00:15:54.912
+Es decir, todo dato,
+
+200
+00:15:57.042 --> 00:15:57.972
+toda gestión,
+
+201
+00:15:59.352 --> 00:16:00.373
+todo resultado,
+
+202
+00:16:01.752 --> 00:16:07.123
+toda confirmación tiene que ser validada. ¿Por quién?
+
+203
+00:16:07.182 --> 00:16:11.652
+Por nosotros, por el BIM manager. Es decir, nosotros no podemos entregar un reporte
+
+204
+00:16:11.682 --> 00:16:13.812
+gráfico sin antes validarlo, por ejemplo.
+
+205
+00:16:16.902 --> 00:16:21.342
+O la verificación de una matriz QA, no hay otra opción QA QC,
+
+206
+00:16:23.562 --> 00:16:28.662
+a través de Quality Control. Si no está validada, no tiene sentido.
+
+207
+00:16:28.722 --> 00:16:28.962
+Es decir,
+
+208
+00:16:30.672 --> 00:16:35.202
+ojo con la línea fina de utilizar la IA sin comprobar los resultados que se
+
+209
+00:16:35.262 --> 00:16:35.742
+obtienen.
+
+210
+00:16:37.873 --> 00:16:39.762
+Y eso es lo que vamos a aprender acá.
+
+211
+00:16:44.142 --> 00:16:45.042
+Ahora vamos a ver
+
+212
+00:16:47.292 --> 00:16:50.113
+un caso demostrativo, que es lo que nos va a arrancar a nosotros
+
+213
+00:16:54.492 --> 00:16:55.722
+para este módulo cinco.
+
+214
+00:16:59.652 --> 00:17:03.642
+Si ustedes se dan cuenta, ahí tenemos un edificio.
+
+215
+00:17:05.532 --> 00:17:10.032
+Tenemos un problema bien cimentado, que va a ser el modelado, que es que tenemos
+
+216
+00:17:10.123 --> 00:17:14.232
+falta de estandarización y control de parámetros informativos en elementos
+
+217
+00:17:14.292 --> 00:17:18.133
+estructurales. ¿Cuál es el objetivo que nosotros buscamos con la IA?
+
+218
+00:17:18.702 --> 00:17:23.712
+Es utilizar la IA para apoyar la definición de requisitos, QA QC, organizar
+
+219
+00:17:23.742 --> 00:17:25.513
+controles y preparar una metodología de
+
+220
+00:17:27.133 --> 00:17:30.702
+revisión de información BIM. Es decir, un poco lo que hicieron en el módulo tres,
+
+221
+00:17:31.752 --> 00:17:32.592
+pero ahora con la IA.
+
+222
+00:17:34.842 --> 00:17:37.452
+Ese es un poco el objetivo en este caso de ejemplo.
+
+223
+00:17:39.432 --> 00:17:43.752
+Entonces, hoy vamos a ver solo la parte de cómo se va a ir generando.
+
+224
+00:17:46.482 --> 00:17:50.803
+Y claro, ya la próxima semana vemos parte práctica y así vamos cerrando las
+
+225
+00:17:50.832 --> 00:17:55.332
+próximas tres semanas. Entonces, tenemos un rol. ¿Cuál es el rol?
+
+226
+00:17:55.452 --> 00:17:59.053
+Actúa como asistente especializado en BIM manager y QA QC BIM.
+
+227
+00:17:59.622 --> 00:18:03.102
+Tu función es apoyar análisis técnico sin sustituir al BIM manager.
+
+228
+00:18:03.822 --> 00:18:09.553
+¿Cuál es el contexto? Edificio residencial Problema: falta de estandarización y
+
+229
+00:18:09.612 --> 00:18:12.162
+control de parámetros informativos en elementos estructurales.
+
+230
+00:18:12.732 --> 00:18:16.992
+El objetivo: definir una metodología de revisión BIM y proponer controles QAC
+
+231
+00:18:17.022 --> 00:18:19.122
+verificables. ¿Cuáles son los datos?
+
+232
+00:18:19.452 --> 00:18:21.792
+Descripción general del proyecto y del problema.
+
+233
+00:18:22.662 --> 00:18:26.952
+Sin modelos Revit, matrices ni resultados de auditoría.
+
+234
+00:18:27.852 --> 00:18:31.931
+Instrucciones: lo que buscamos es que analice el problema planteado y que cite tres
+
+235
+00:18:31.992 --> 00:18:33.792
+posibles requisitos de información.
+
+236
+00:18:38.292 --> 00:18:42.222
+Además, propongo una regla QAC verificable para cada requisito, que explique qué
+
+237
+00:18:42.252 --> 00:18:43.932
+datos y modelos serían necesarios.
+
+238
+00:18:45.132 --> 00:18:49.602
+Sugiere cómo validar cada regla, señala la información adicional necesaria,
+
+239
+00:18:49.752 --> 00:18:53.263
+restricciones de método, parámetros, resultados y requisitos aprobados, y propone
+
+240
+00:18:53.412 --> 00:18:57.642
+datos confirmados. Formato: la entrega es una tabla con problema, requisito,
+
+241
+00:18:57.702 --> 00:18:59.112
+parámetro, regla QAC,
+
+242
+00:19:00.732 --> 00:19:02.232
+evidencia y método de validación.
+
+243
+00:19:02.322 --> 00:19:04.272
+Termina con preguntas
+
+244
+00:19:05.502 --> 00:19:09.432
+pendientes. ¿Qué pasa?
+
+245
+00:19:12.522 --> 00:19:18.282
+Este problema está muy específico, pero quiero que desde el inicio sea así.
+
+246
+00:19:18.522 --> 00:19:23.172
+¿Por qué? Para que ustedes se acostumbren al momento de desarrollar un prompt con
+
+247
+00:19:23.562 --> 00:19:29.472
+función completa, vaya desde el rol, el contexto, los objetivos, datos disponibles,
+
+248
+00:19:29.532 --> 00:19:31.362
+instrucciones, restricciones y formato.
+
+249
+00:19:32.142 --> 00:19:34.513
+A medida que ustedes van avanzando
+
+250
+00:19:37.422 --> 00:19:43.242
+y siendo más asertivos con la
+
+251
+00:19:43.272 --> 00:19:49.122
+manera de usar la IA, ya no necesitan colocar rol, contexto, sino que van
+
+252
+00:19:49.182 --> 00:19:49.602
+creando
+
+253
+00:19:51.852 --> 00:19:56.952
+una presentación de interacción,
+
+254
+00:19:58.452 --> 00:20:01.032
+mucho más fluida.
+
+255
+00:20:03.252 --> 00:20:09.162
+Pero que es fluida sin tener esta estructura
+
+256
+00:20:09.222 --> 00:20:13.782
+de rol, contexto, objetivos, datos, problemas, instrucciones, restricciones
+
+257
+00:20:13.841 --> 00:20:15.732
+y formato. ¿Qué
+
+258
+00:20:18.912 --> 00:20:19.272
+pasa?
+
+259
+00:20:20.682 --> 00:20:25.662
+Una vez que se ejecuta el prompt, esto lo vamos a ver en la parte práctica la
+
+260
+00:20:25.692 --> 00:20:26.532
+próxima semana,
+
+261
+00:20:30.642 --> 00:20:32.562
+vamos a tener distintos resultados.
+
+262
+00:20:32.682 --> 00:20:33.912
+Vamos a tener nuestra primera
+
+263
+00:20:36.042 --> 00:20:40.242
+iteración, es decir, vamos a tener nuestro primer resultado, entre comillas.
+
+264
+00:20:41.742 --> 00:20:46.303
+Y también vamos a tener nuestra primera interacción nuevamente ahora, post-prompt
+
+265
+00:20:46.332 --> 00:20:47.832
+maestro, que seríamos nosotros.
+
+266
+00:20:49.242 --> 00:20:54.102
+Lo que va a suceder allí es que tenemos que ser muy delicados en este proceso de
+
+267
+00:20:54.732 --> 00:20:56.502
+interacción versus iteración.
+
+268
+00:20:58.152 --> 00:21:02.112
+Iteración va a ser las veces que sea necesario
+
+269
+00:21:03.822 --> 00:21:07.842
+generar instrucciones o prompts hasta llegar al resultado.
+
+270
+00:21:08.532 --> 00:21:12.942
+Interacción es la forma en que yo lo hago. Son dos cosas distintas.
+
+271
+00:21:13.992 --> 00:21:17.172
+Es importante encontrar una balanza y que yo
+
+272
+00:21:18.763 --> 00:21:20.022
+pueda identificar
+
+273
+00:21:21.972 --> 00:21:26.772
+cuántas iteraciones deben ser necesarias y con qué tipo de interacción yo debo
+
+274
+00:21:26.832 --> 00:21:32.803
+responder. Es decir, yo luego que hago mi prompt maestro, no puedo estar en
+
+275
+00:21:32.862 --> 00:21:35.382
+cada instrucción, en cada prompt que
+
+276
+00:21:39.492 --> 00:21:45.432
+le proceda a este, generar 40 prompts maestros, porque lo que estoy
+
+277
+00:21:45.462 --> 00:21:49.602
+haciendo es sobrecargar y que no sea fluido, y eso lo vamos a aprender.
+
+278
+00:21:54.192 --> 00:21:57.852
+Dicho esto, la validación de un prompt maestro,
+
+279
+00:21:59.292 --> 00:21:59.472
+y
+
+280
+00:22:01.542 --> 00:22:05.562
+esto va a ser muy chocante para ustedes: no porque la IA les dé una respuesta,
+
+281
+00:22:05.622 --> 00:22:07.212
+significa que el prompt estuvo bien.
+
+282
+00:22:09.972 --> 00:22:13.542
+Así de sencillo. Inclusive la IA le ponen puntico y me la responde.
+
+283
+00:22:14.322 --> 00:22:18.792
+Bueno, podemos hacer acá, porque la IA le responda significa que está bien.
+
+284
+00:22:20.263 --> 00:22:24.102
+Entonces, nosotros tenemos una especie de checklist donde
+
+285
+00:22:25.692 --> 00:22:28.482
+podemos decir: ¿la IA realmente comprendió el problema?
+
+286
+00:22:29.232 --> 00:22:31.572
+¿La respuesta se mantiene en el contexto del proyecto?
+
+287
+00:22:32.322 --> 00:22:34.513
+¿Propuso requisitos y reglas verificables?
+
+288
+00:22:35.172 --> 00:22:39.702
+¿Diferenció propuestas de información confirmada? ¿No inventó datos del modelo?
+
+289
+00:22:40.332 --> 00:22:42.972
+¿Indicó cómo validar técnicamente los resultados?
+
+290
+00:22:43.662 --> 00:22:45.522
+¿Presentó información en el formato solicitado?
+
+291
+00:22:46.122 --> 00:22:48.732
+En este checklist, si yo me doy cuenta de que
+
+292
+00:22:50.532 --> 00:22:54.882
+la interacción de la IA, las respuestas que estoy obteniendo de mí IA, se mantienen
+
+293
+00:22:54.942 --> 00:22:59.652
+en esta estructura, significa que mi respuesta es útil, coherente y técnicamente
+
+294
+00:22:59.682 --> 00:23:00.462
+verificable.
+
+295
+00:23:09.702 --> 00:23:12.642
+Cuando nosotros tenemos una respuesta muy general,
+
+296
+00:23:15.763 --> 00:23:19.122
+siempre vamos a tener prompts de ajuste, que son los que le proceden al prompt
+
+297
+00:23:19.182 --> 00:23:19.752
+inicial.
+
+298
+00:23:23.142 --> 00:23:27.942
+El éxito está no tanto en el prompt inicial, porque yo siento que el prompt inicial
+
+299
+00:23:28.002 --> 00:23:31.602
+es muy rígido, está siempre con la misma estructura.
+
+300
+00:23:32.112 --> 00:23:37.842
+Yo siento que el éxito está con los siguientes prompts, que no son prompts
+
+301
+00:23:37.902 --> 00:23:41.592
+maestros, son prompts de corrección o de mejora.
+
+302
+00:23:43.272 --> 00:23:46.513
+Porque dependiendo de cómo yo maneje los siguientes prompts y en función de las
+
+303
+00:23:46.572 --> 00:23:50.892
+respuestas, que yo entienda las respuestas, que esté el criterio, no es solo
+
+304
+00:23:50.952 --> 00:23:55.782
+entender o hacer ese checklist que les mostré, sino que está teniendo criterio lo
+
+305
+00:23:55.812 --> 00:23:59.322
+que yo estoy haciendo. Si en todo momento se mantiene ese criterio, como BIM
+
+306
+00:23:59.382 --> 00:24:04.212
+manager, por ejemplo, créanme que el resultado final va a ser verificable y lo que
+
+307
+00:24:04.242 --> 00:24:08.053
+nosotros apliquemos va a ser mucho más eficiente, se va a exponencializar, pero
+
+308
+00:24:09.282 --> 00:24:12.763
+siempre nosotros teniendo el control.
+
+309
+00:24:14.832 --> 00:24:19.932
+Entonces, del tema uno de esta semana, lo que van a tener es este primer
+
+310
+00:24:19.992 --> 00:24:24.732
+entregable, que es identificación de proyecto, un prompt maestro, evidencia de
+
+311
+00:24:24.732 --> 00:24:27.822
+ejecución, checklist de validación y observaciones.
+
+312
+00:24:28.902 --> 00:24:33.011
+Nosotros nos vamos a ver el jueves, y el jueves vamos a tener un poquito más de
+
+313
+00:24:33.072 --> 00:24:36.822
+algo, unos 40, 45 minutos, y vamos a hacer esta primera parte
+
+314
+00:24:40.511 --> 00:24:41.142
+práctica.
+
+315
+00:24:42.702 --> 00:24:46.932
+Entonces, vamos a entrar con nuestro BIM System Prompt y vamos a comenzar por aquí.
+
+316
+00:24:47.772 --> 00:24:52.362
+Esto va a ir teniendo sentido a medida que ya tenemos BIM System Prompt, vamos a
+
+317
+00:24:52.392 --> 00:24:55.992
+conectarlo a un caso real de un modelo o un proyecto.
+
+318
+00:24:57.342 --> 00:25:00.042
+Y luego, ¿cómo yo creo un agente para que
+
+319
+00:25:01.692 --> 00:25:06.432
+podamos trabajarlo de la mano y en conjunto con los tres pilares que vemos aquí?
+
+320
+00:25:06.522 --> 00:25:11.592
+Entonces, en esta parte uno, lo que aprendieron hoy es del problema a la
+
+321
+00:25:11.622 --> 00:25:15.222
+instrucción. Pasamos de identificar un problema a BIM construir una instrucción.
+
+322
+00:25:15.282 --> 00:25:20.682
+Vieron cuál es el armado de la instrucción, los siete componentes
+
+323
+00:25:22.122 --> 00:25:26.622
+y el límite de la IA. La IA no puede sustituir los requisitos reales del proyecto
+
+324
+00:25:26.892 --> 00:25:28.212
+ni las decisiones del BIM manager.
+
+325
+00:25:28.303 --> 00:25:32.682
+Nosotros no podemos unir datos con la IA, ni tampoco podemos sustituir nuestro
+
+326
+00:25:32.742 --> 00:25:33.252
+criterio.
+
+327
+00:25:35.652 --> 00:25:38.022
+Tampoco un BIM manager usa la IA como si fuese un Google,
+
+328
+00:25:39.492 --> 00:25:43.513
+porque si no, básicamente significa que ese criterio no está cimentado, no está
+
+329
+00:25:43.542 --> 00:25:48.703
+fortalecido, sino que lo que buscamos es, nuevamente, diseñar instrucciones,
+
+330
+00:25:48.792 --> 00:25:51.552
+establecer criterios y validar
+
+331
+00:25:53.563 --> 00:25:56.862
+resultados. Entonces, en la parte dos vamos a ver la parte práctica,
+
+332
+00:26:00.552 --> 00:26:01.842
+que será el día jueves.
+
+333
+00:26:03.732 --> 00:26:06.462
+Lo que les comentaba: diseñar instrucciones, establecer criterios, validamos
+
+334
+00:26:06.522 --> 00:26:12.462
+resultados. Y, en resumen, el próximo paso es que vamos a una tarea BIM
+
+335
+00:26:12.552 --> 00:26:16.063
+real. Vamos a utilizar BIM System Prompt, que es el que veremos utilizando
+
+336
+00:26:18.972 --> 00:26:23.652
+desde el módulo cuatro, pero ya quiero que se vayan empapando de cómo utilizar un
+
+337
+00:26:23.712 --> 00:26:24.703
+asistente de IA.
+
+338
+00:26:25.992 --> 00:26:27.222
+En realidad, esto es un GPT,
+
+339
+00:26:28.422 --> 00:26:34.362
+el BIM System Prompt, pero la gente BIM tiene esa esencia similar a lo que
+
+340
+00:26:34.482 --> 00:26:38.742
+es un GPT. Pero si no podemos utilizar un GPT,
+
+341
+00:26:40.632 --> 00:26:43.992
+o no nos acostumbramos a utilizar un GPT, mucho menos nos vamos a acostumbrar a
+
+342
+00:26:44.052 --> 00:26:47.742
+utilizar una gente de IA. Yo quiero que primero se acostumbren con el GPT.
+
+343
+00:26:52.362 --> 00:26:56.232
+Ya yo mañana les hago la carga del tema uno, porque es correspondiente a esta
+
+344
+00:26:56.292 --> 00:26:58.212
+semana, son cuatro temas otra vez este módulo,
+
+345
+00:27:01.002 --> 00:27:02.442
+y ¿dónde se los voy a dejar?
+
+346
+00:27:03.643 --> 00:27:04.872
+Por favor, fix.
+
+347
+00:27:06.192 --> 00:27:08.592
+Nosotros estamos mirando la nueva plataforma.
+
+348
+00:27:09.763 --> 00:27:13.272
+Ustedes ya se han ido pasando y para no tener el mismo inconveniente de la vez
+
+349
+00:27:13.332 --> 00:27:16.513
+pasada, ni retrasos, ni nada por el estilo,
+
+350
+00:27:19.063 --> 00:27:24.192
+seguimos utilizando nuestra plataforma, la que ustedes utilizaban cuando iniciaron
+
+351
+00:27:24.313 --> 00:27:24.432
+el
+
+352
+00:27:25.662 --> 00:27:29.412
+módulo uno. Después se me afronta: ¿y módulo cuatro dónde está? Bueno, aquí está.
+
+353
+00:27:31.783 --> 00:27:32.172
+Ahora,
+
+354
+00:27:33.882 --> 00:27:39.522
+esto solo va a ser hasta este módulo cinco, porque luego solo vamos utilizando una
+
+355
+00:27:39.582 --> 00:27:43.063
+plataforma, que eso ya yo se los explicaré con tiempo.
+
+356
+00:27:43.092 --> 00:27:45.313
+Entonces, en este caso,
+
+357
+00:27:46.842 --> 00:27:51.252
+tanto para José Luis y Gustavo, utilizamos esta.
+
+358
+00:27:53.352 --> 00:27:57.132
+Cuando yo les diga: "Está 100 % ya migrado toda la información
+
+359
+00:27:58.513 --> 00:28:01.602
+de la plataforma nueva", ya yo les voy a hacer la presentación, les voy a decir
+
+360
+00:28:01.632 --> 00:28:03.492
+cómo es la plataforma nueva, etcétera.
+
+361
+00:28:03.552 --> 00:28:08.203
+Pero hasta que ya terminemos esa migración, que ya la terminemos
+
+362
+00:28:10.872 --> 00:28:13.152
+por fin este mes. Fueron
+
+363
+00:28:14.772 --> 00:28:20.502
+migrar aproximadamente 50 cursos, más unos 10 diplomados y dos másters.
+
+364
+00:28:20.533 --> 00:28:21.942
+O sea, fue un montón.
+
+365
+00:28:23.263 --> 00:28:28.122
+Pero hasta que no terminemos al 100 %, y yo esté tranquilo con él, seguimos acá.
+
+366
+00:28:29.203 --> 00:28:34.302
+Y de igual manera, creo que Gustavo fue quien hizo la consulta.
+
+367
+00:28:35.412 --> 00:28:40.422
+Entonces, aquí yo voy a habilitar el módulo cinco, va a estar acá.
+
+368
+00:28:40.872 --> 00:28:44.563
+Ahora estoy en el módulo cuatro, que es este de inteligencia artificial, y va a
+
+369
+00:28:44.563 --> 00:28:46.632
+estar la sesión de refuerzo y esta semana el
+
+370
+00:28:48.643 --> 00:28:49.212
+tema uno.
+
+371
+00:28:50.802 --> 00:28:54.192
+Y el jueves, lo que vamos a hacer, el tema uno tiene que ver con lo que vimos hoy.
+
+372
+00:28:55.182 --> 00:28:56.682
+Y el jueves vamos a hacer la parte práctica.
+
+373
+00:28:57.042 --> 00:28:58.692
+Las sesiones asincrónicas, concepto
+
+374
+00:29:00.492 --> 00:29:05.563
+y en las sesiones de refuerzo hacemos más que nada parte práctica.
+
+375
+00:29:05.622 --> 00:29:08.292
+¿Está claro hasta acá con la clase de hoy?
+
+376
+00:29:12.072 --> 00:29:15.192
+¿El resto? ¿Si entendieron?
+
+377
+00:29:17.143 --> 00:29:19.393
+Créanme, yo se los voy a simplificar de la mejor manera.
+
+378
+00:29:21.372 --> 00:29:24.042
+Perfecto, chicos. Nos vemos el jueves.
+
+379
+00:29:24.703 --> 00:29:28.692
+El jueves volvemos a estar unos 40 minutos.
+
+380
+00:29:30.643 --> 00:29:32.502
+Parte dos de la sesión de refuerzos.
+
+381
+00:29:33.792 --> 00:29:38.502
+Nos vemos el jueves. Tengan una bonita semana y cuídense mucho.
+
+382
+00:29:39.252 --> 00:29:40.122
+Hasta el jueves.

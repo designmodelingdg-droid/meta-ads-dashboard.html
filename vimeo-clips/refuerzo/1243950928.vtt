@@ -1,0 +1,1477 @@
+WEBVTT
+
+1
+00:00:08.490 --> 00:00:11.670
+Buenas noches, estimados. ¿Cómo están? Espero que se encuentren bien.
+
+2
+00:00:12.270 --> 00:00:14.941
+Bienvenidos a la sesión de refuerzo
+
+3
+00:00:16.951 --> 00:00:17.820
+tres, parte uno.
+
+4
+00:00:18.150 --> 00:00:23.640
+Les dejé
+
+5
+00:00:24.300 --> 00:00:27.510
+la información ayer, aunque creo que no se les visualiza.
+
+6
+00:00:28.170 --> 00:00:32.460
+Ya corrijo eso para que puedan ver mañana todas las sesiones de refuerzo y el tema
+
+7
+00:00:32.491 --> 00:00:32.640
+uno.
+
+8
+00:00:36.780 --> 00:00:42.690
+Estaba arreglando toda la información y la data, por eso no se les ha
+
+9
+00:00:42.750 --> 00:00:47.430
+terminado de alojar, pero ya el día de mañana la tendrán para que puedan repasar
+
+10
+00:00:47.490 --> 00:00:51.090
+todo el fin de semana y empiecen a trabajar con los prompts.
+
+11
+00:00:51.360 --> 00:00:54.060
+Me interesa que hagan práctica de prompts.
+
+12
+00:00:58.470 --> 00:01:04.200
+Ya vieron la importancia la clase pasada de los prompts maestros y también
+
+13
+00:01:04.289 --> 00:01:05.760
+de tener una buena inducción
+
+14
+00:01:11.760 --> 00:01:12.840
+con nuestro GPT.
+
+15
+00:01:19.590 --> 00:01:22.980
+Denme un momento para pasar un poco de la clase.
+
+16
+00:01:30.120 --> 00:01:34.620
+Consulta: ¿han podido practicar un poco con el GPT, con los prompts?
+
+17
+00:01:34.770 --> 00:01:40.470
+¿Han hecho algunas pruebas? Sé que apenas estamos
+
+18
+00:01:40.500 --> 00:01:41.130
+comenzando.
+
+19
+00:01:42.601 --> 00:01:43.980
+Hemos arrancado dos clases
+
+20
+00:01:45.330 --> 00:01:45.750
+y
+
+21
+00:01:48.120 --> 00:01:52.470
+sé que apenas nos vimos el martes, pero ¿han hecho algunas pruebas con los prompts
+
+22
+00:01:53.700 --> 00:01:54.570
+con el GPT?
+
+23
+00:02:01.650 --> 00:02:05.070
+No pasa nada, porque sé que apenas lo vimos el martes.
+
+24
+00:02:05.490 --> 00:02:11.400
+Lo que quiero es que durante el fin de semana, en el tiempo que tengan,
+
+25
+00:02:11.550 --> 00:02:15.450
+no les va a tomar más de 15 minutos, empiecen a hacer pruebas con prompts.
+
+26
+00:02:16.830 --> 00:02:20.070
+Porque la única manera de manejar bien los prompts es con la práctica.
+
+27
+00:02:20.851 --> 00:02:24.960
+Lo que no quiero es que tengan
+
+28
+00:02:29.340 --> 00:02:32.130
+un papel de copia al lado. En Venezuela
+
+29
+00:02:34.440 --> 00:02:37.080
+le decíamos chuleta,
+
+30
+00:02:39.840 --> 00:02:40.141
+no sé por
+
+31
+00:02:42.210 --> 00:02:47.760
+qué, pero no quiero que tengan al lado un papel que diga: los
+
+32
+00:02:47.851 --> 00:02:50.490
+siete pilares para formar el prompt.
+
+33
+00:02:52.980 --> 00:02:58.020
+Quiero que ustedes se acostumbren y, sin darse cuenta, que el rol, las
+
+34
+00:02:58.080 --> 00:03:03.000
+instrucciones, las restricciones, lo hagan orgánicamente.
+
+35
+00:03:05.010 --> 00:03:09.540
+Entonces, vayan haciendo esa prueba.
+
+36
+00:03:09.780 --> 00:03:14.851
+¿Qué vamos a ver hoy?
+
+37
+00:03:16.139 --> 00:03:22.050
+Lo que van a ver en tema uno y tema dos es la parte teórica y
+
+38
+00:03:23.460 --> 00:03:26.220
+práctica de prompts. No tiene mucha ciencia.
+
+39
+00:03:26.760 --> 00:03:30.840
+En menos de dos horas se ven esos primeros dos temas que van a repasar este fin de
+
+40
+00:03:30.900 --> 00:03:31.291
+semana.
+
+41
+00:03:32.760 --> 00:03:36.330
+Les pido máximo dos horitas para que lo vean este fin de semana.
+
+42
+00:03:38.880 --> 00:03:43.080
+Y si no lo ven el fin de semana, se programan, ven un poquito el sábado, otro poco
+
+43
+00:03:43.140 --> 00:03:44.370
+el domingo y el lunes.
+
+44
+00:03:46.351 --> 00:03:48.031
+Buenas noches, José Luis, ¿cómo estás?
+
+45
+00:03:50.520 --> 00:03:56.400
+A partir de que ya entienden la teoría de la IA y la práctica de cómo
+
+46
+00:03:56.460 --> 00:03:57.570
+generar los
+
+47
+00:03:59.340 --> 00:03:59.760
+prompts,
+
+48
+00:04:03.031 --> 00:04:06.031
+ahora vamos a entender cómo funciona el BIM Assistant Pro.
+
+49
+00:04:07.560 --> 00:04:08.820
+Es decir, vamos a entender
+
+50
+00:04:10.620 --> 00:04:14.820
+cómo funciona nuestro agente. Ya entendimos el prompt.
+
+51
+00:04:16.560 --> 00:04:17.731
+Ahora vamos a entender
+
+52
+00:04:19.320 --> 00:04:21.841
+al agente que nosotros vamos a crear.
+
+53
+00:04:23.160 --> 00:04:28.650
+Y va a haber una diferencia entre lo que es el GPT que yo les compartí y un agente,
+
+54
+00:04:28.710 --> 00:04:34.320
+que es el que ustedes crean. El GPT, básicamente, o cualquier
+
+55
+00:04:34.380 --> 00:04:34.890
+GPT
+
+56
+00:04:38.970 --> 00:04:44.160
+que creen en cloud o en Gemini, es tener
+
+57
+00:04:44.400 --> 00:04:48.540
+un chat personalizado con instrucciones.
+
+58
+00:04:52.201 --> 00:04:56.400
+La diferencia con el agente es que el agente también puede ejecutar.
+
+59
+00:04:58.860 --> 00:05:03.360
+Es decir, en el GPT o en el BIM Assistant Pro, ustedes se encuentran en el módulo
+
+60
+00:05:03.420 --> 00:05:06.750
+cuatro, van trabajando, pero la ejecución es de ustedes.
+
+61
+00:05:07.740 --> 00:05:11.730
+Por ejemplo, los cambios en Dynamo los hacían ustedes, todo lo hacen ustedes.
+
+62
+00:05:11.790 --> 00:05:15.420
+La diferencia con el agente es que puede ejecutar cambios.
+
+63
+00:05:18.420 --> 00:05:22.710
+Al BIM Manager le interesa que la ejecución de esos cambios sean en gestión de
+
+64
+00:05:22.740 --> 00:05:28.201
+etapa y gestión de información. No le interesa que sean cambios en la parte de que
+
+65
+00:05:28.230 --> 00:05:31.860
+al agente le cambie el modelo. Eso es otra cosa.
+
+66
+00:05:34.500 --> 00:05:39.750
+Esa es la diferencia principal. Primero vamos a ver el BIM Assistant Pro como el
+
+67
+00:05:39.810 --> 00:05:42.600
+GPT. Ya entendieron los prompts maestros.
+
+68
+00:05:42.630 --> 00:05:43.920
+Ahora vamos a entender cómo
+
+69
+00:05:46.531 --> 00:05:50.490
+se generarán estas instrucciones.
+
+70
+00:05:55.500 --> 00:06:00.810
+Vamos a tomar como partida los casos de prompt que vimos el martes.
+
+71
+00:06:01.080 --> 00:06:04.080
+No se preocupen, lo pueden repasar este fin de semana.
+
+72
+00:06:06.570 --> 00:06:11.820
+Pero lo que necesito es que ya nosotros no queremos que la IA simplemente nos
+
+73
+00:06:11.880 --> 00:06:12.960
+responda preguntas,
+
+74
+00:06:14.730 --> 00:06:20.490
+sino que además comprenda el contexto y los resultados sean
+
+75
+00:06:20.520 --> 00:06:26.460
+validables. Yo les hice la pregunta el día martes: ¿cuál creen ustedes
+
+76
+00:06:26.490 --> 00:06:31.710
+que sea la diferencia entre un GPT, un chat normal, y un GPT
+
+77
+00:06:31.740 --> 00:06:36.390
+especializado? Y ustedes contestaron muy bien, que es en las instrucciones y en la
+
+78
+00:06:36.420 --> 00:06:39.510
+información que tiene alojada ese GPT.
+
+79
+00:06:40.860 --> 00:06:45.540
+Entonces, vamos a entender un poquito cómo funciona el BIM Assistant Pro.
+
+80
+00:06:48.030 --> 00:06:50.401
+Para eso, ustedes la próxima semana,
+
+81
+00:06:51.750 --> 00:06:57.360
+en el tema tres, van a tener cuatro lecciones
+
+82
+00:06:58.951 --> 00:07:03.420
+que van a estar enfocadas en qué es un BIM Assistant, cuáles son las consultas
+
+83
+00:07:03.480 --> 00:07:07.500
+técnicas estructuradas, contexto, pregunta, respuesta, evidencia y validación,
+
+84
+00:07:08.370 --> 00:07:13.380
+cuáles son las fuentes y conocimientos especializados y cómo van a utilizar el BIM
+
+85
+00:07:13.440 --> 00:07:15.420
+Assistant aplicado al proyecto de tesis.
+
+86
+00:07:15.811 --> 00:07:21.570
+¿Qué es un BIM Assistant? En
+
+87
+00:07:21.630 --> 00:07:22.740
+cualquier contexto, yo
+
+88
+00:07:24.091 --> 00:07:28.020
+le doy la definición de BIM Assistant, o sea, asistente de inteligencia artificial
+
+89
+00:07:28.081 --> 00:07:28.290
+BIM.
+
+90
+00:07:30.360 --> 00:07:35.010
+Un BIM Assistant es un asistente de inteligencia artificial orientado a apoyar
+
+91
+00:07:35.070 --> 00:07:38.341
+tareas de gestión, análisis y documentación BIM,
+
+92
+00:07:40.050 --> 00:07:42.270
+así como cualquier GPT que ustedes creen.
+
+93
+00:07:42.300 --> 00:07:45.660
+Por ejemplo, yo quiero crear un GPT
+
+94
+00:07:49.740 --> 00:07:55.110
+que gestione mis finanzas personales como lo haría un
+
+95
+00:07:55.170 --> 00:08:00.720
+administrador de empresa. ¿Cuál es la diferencia entre ese GPT y un GPT BIM?
+
+96
+00:08:01.831 --> 00:08:05.520
+El concepto es el mismo. Ambos son GPT, ambos van a tener una información
+
+97
+00:08:05.550 --> 00:08:07.620
+especializada. Pero, ¿cuál es la diferencia?
+
+98
+00:08:07.680 --> 00:08:13.170
+¿Qué hace un GPT del administrador de mis finanzas personales
+
+99
+00:08:13.680 --> 00:08:14.581
+a un GPT BIM,
+
+100
+00:08:16.320 --> 00:08:21.061
+en un BIM Assistant? ¿Cuál sería la diferencia principal
+
+101
+00:08:22.230 --> 00:08:27.331
+entre estos dos? ¿Qué lo haría diferente?
+
+102
+00:08:27.841 --> 00:08:33.811
+¿Que utilice GPT, cloud, Gemini? ¿O qué hace diferente que utilice un GPT de
+
+103
+00:08:35.431 --> 00:08:38.220
+administrador de mis finanzas personales a un GPT BIM?
+
+104
+00:08:40.081 --> 00:08:45.061
+La información que se le suministre, las instrucciones específicas. Efectivamente.
+
+105
+00:08:46.410 --> 00:08:50.311
+Nuevas clases, me gusta. El entrenamiento, exactamente.
+
+106
+00:08:53.160 --> 00:08:56.460
+Significa que ustedes van a hacer aquí un agente,
+
+107
+00:08:58.320 --> 00:09:02.340
+pero el día de mañana pueden hacer un agente para lo que sea, porque las
+
+108
+00:09:02.401 --> 00:09:03.901
+instrucciones que yo le dé
+
+109
+00:09:05.280 --> 00:09:10.080
+El entrenamiento que tiene ese GPT, la información que yo le suministre es lo que
+
+110
+00:09:10.170 --> 00:09:15.720
+hace que sea un GPTing, o sea un GPT de finanzas personales, o sea un GPT
+
+111
+00:09:15.780 --> 00:09:16.920
+experto de
+
+112
+00:09:18.151 --> 00:09:22.590
+las leyes del Ecuador para defensa de juicios penales.
+
+113
+00:09:22.710 --> 00:09:28.050
+Ahora, es muy importante.
+
+114
+00:09:28.710 --> 00:09:32.910
+La información que se le suministre, las instrucciones específicas, el
+
+115
+00:09:32.970 --> 00:09:35.520
+entrenamiento, etcétera, ¿de quién depende?
+
+116
+00:09:42.901 --> 00:09:43.800
+De nosotros.
+
+117
+00:09:45.000 --> 00:09:50.880
+Y, por lo tanto, ¿de qué depende el criterio que esté detrás? Exactamente.
+
+118
+00:09:52.410 --> 00:09:54.061
+Porque yo puedo crear,
+
+119
+00:09:56.130 --> 00:09:57.181
+y créanme que lo intenté,
+
+120
+00:09:58.830 --> 00:10:02.760
+una aplicación de finanzas, de contabilidad, etcétera.
+
+121
+00:10:04.440 --> 00:10:08.250
+Y yo le di vueltas y vueltas para hacer cierres de caja,
+
+122
+00:10:10.590 --> 00:10:15.210
+pero llegaba un punto en que me encontraba con una limitación, ya que no soy
+
+123
+00:10:15.240 --> 00:10:20.760
+contador. Puedo tener nociones y, como todo buen ingeniero, le encontramos la
+
+124
+00:10:20.790 --> 00:10:26.460
+vuelta, pero por más que quería, llegaba un punto donde no había punto de
+
+125
+00:10:26.490 --> 00:10:29.700
+equilibrio ni cierre de caja, ingresos versus egresos.
+
+126
+00:10:31.410 --> 00:10:37.230
+Luego le pasé la misma aplicación con agente especializado a nuestra contadora y lo
+
+127
+00:10:37.260 --> 00:10:41.311
+hizo en dos días. ¿Por qué? Porque ella sí tiene criterio.
+
+128
+00:10:44.431 --> 00:10:48.420
+Capaz no puede manejar la parte de inteligencia artificial, GPT, pero sí tiene
+
+129
+00:10:48.450 --> 00:10:54.300
+criterio. Entonces, un GPTing lo tenemos que crear
+
+130
+00:10:54.360 --> 00:10:58.320
+nosotros como BIM Manager. Y eso es lo que hace la diferencia.
+
+131
+00:10:58.980 --> 00:11:01.530
+Lamentablemente, crear un agente con IA
+
+132
+00:11:02.790 --> 00:11:08.610
+desde cero depende, digo lamentablemente entre comillas, porque para nosotros no es
+
+133
+00:11:08.610 --> 00:11:11.640
+lamentable, porque tenemos el criterio, depende de nosotros.
+
+134
+00:11:11.820 --> 00:11:17.610
+¿Qué pasa? En ese proceso de entrenamiento, cada vez que
+
+135
+00:11:17.640 --> 00:11:23.070
+ustedes hagan una versión del agente, es superinteresante, porque al inicio, el
+
+136
+00:11:23.130 --> 00:11:26.280
+agente en su versión beta aprende de nosotros,
+
+137
+00:11:28.530 --> 00:11:29.700
+de nuestro criterio.
+
+138
+00:11:31.290 --> 00:11:36.450
+Pero cuando hacemos un upgrade o una versión mejorada de ese agente,
+
+139
+00:11:37.620 --> 00:11:39.990
+el agente no solo aprende de
+
+140
+00:11:41.490 --> 00:11:43.350
+nuestro criterio, sino ¿de quién más?
+
+141
+00:11:47.280 --> 00:11:50.160
+Porque sí, créanme que funciona la IA, les va a sorprender.
+
+142
+00:11:51.390 --> 00:11:54.360
+Ya en la nueva versión que usted hizo, actualización de su agente,
+
+143
+00:11:56.520 --> 00:12:01.980
+en la versión 1.0, una vez que utilizaron el agente, le dieron información y demás,
+
+144
+00:12:02.040 --> 00:12:03.510
+cuando le hacen una nueva versión,
+
+145
+00:12:05.790 --> 00:12:09.870
+el nuevo agente aprende, no solo de su criterio, sino ¿de qué más?
+
+146
+00:12:10.050 --> 00:12:11.460
+¿Qué otro componente entra?
+
+147
+00:12:21.600 --> 00:12:22.830
+Les dejo el gráfico acá.
+
+148
+00:12:24.750 --> 00:12:30.630
+De las instrucciones, sí, pero también aprende del entrenamiento
+
+149
+00:12:30.690 --> 00:12:34.080
+y la experiencia que tiene el agente en su versión cero.
+
+150
+00:12:34.710 --> 00:12:40.320
+Básicamente, el nuevo agente aprende del criterio, instrucciones que yo le indique,
+
+151
+00:12:41.070 --> 00:12:45.450
+pero también del entrenamiento que le dimos al agente en su versión beta.
+
+152
+00:12:47.970 --> 00:12:52.470
+No sé si me explico. Es decir, voy a llamar agente versión cero.
+
+153
+00:12:53.850 --> 00:12:57.060
+Este depende exclusivamente de nosotros,
+
+154
+00:13:00.600 --> 00:13:04.411
+de nuestro criterio. Pero cuando hacemos una actualización,
+
+155
+00:13:06.780 --> 00:13:12.480
+digamos que ya tenemos dos, tres, cuatro, cinco meses y empezamos a entender cómo
+
+156
+00:13:12.510 --> 00:13:17.970
+va funcionando nuestro agente, creamos una versión uno, y en esa versión uno ya no
+
+157
+00:13:18.060 --> 00:13:21.000
+solo depende del criterio que se inserta,
+
+158
+00:13:22.950 --> 00:13:28.560
+sino que ya aprende también de toda la expertiz,
+
+159
+00:13:28.681 --> 00:13:34.080
+entrenamiento y conocimiento que se le ha inducido en la versión cero.
+
+160
+00:13:37.080 --> 00:13:39.030
+Y cuando ya hagan una versión dos,
+
+161
+00:13:40.411 --> 00:13:43.710
+ya no solo aprende de la versión cero y del criterio de nosotros, sino también de
+
+162
+00:13:43.740 --> 00:13:44.431
+la versión uno.
+
+163
+00:13:44.460 --> 00:13:51.871
+¿Sí
+
+164
+00:13:51.931 --> 00:13:56.911
+se entiende esta parte? Trato de simplificarlo, yo no quiero entrar en términos de
+
+165
+00:13:56.970 --> 00:14:02.280
+IA, tampoco soy especialista en IA ni nada por el estilo, pero se lo simplifico en
+
+166
+00:14:02.640 --> 00:14:05.880
+términos coloquiales. ¿Sí se entiende?
+
+167
+00:14:06.480 --> 00:14:11.100
+Porque lo que ustedes van a buscar es este proceso iterativo, siempre con su
+
+168
+00:14:11.130 --> 00:14:16.530
+criterio. Si yo en la versión uno le quito criterio, básicamente no vamos a tener
+
+169
+00:14:16.590 --> 00:14:18.780
+nada. Siempre con nuestro criterio.
+
+170
+00:14:19.590 --> 00:14:24.420
+Pueden ser las instrucciones o la información, pero él va aprendiendo conocimiento
+
+171
+00:14:24.510 --> 00:14:25.470
+de exploración.
+
+172
+00:14:27.690 --> 00:14:30.240
+Estos días vi una analogía que me pareció interesante
+
+173
+00:14:31.530 --> 00:14:35.130
+y no sé si algunos jugaron a Zelda, un famoso juego de Nintendo,
+
+174
+00:14:36.480 --> 00:14:41.970
+que cuando ustedes arrancaban un mundo o en cualquier ámbito, cualquier videojuego,
+
+175
+00:14:42.750 --> 00:14:44.820
+ustedes entran en un proceso de exploración.
+
+176
+00:14:45.270 --> 00:14:51.121
+Entonces, ustedes decían: "Ah, bueno, si yo me meto por este camino y le doy a este
+
+177
+00:14:51.181 --> 00:14:55.230
+botón, hago esto". Y así duraban dos, tres días.
+
+178
+00:14:56.940 --> 00:15:02.100
+Ya cuando a los dos, tres días tenían un conocimiento del recorrido, ¿qué sucedía?
+
+179
+00:15:02.310 --> 00:15:07.200
+Empezaban a explorar más y más y más, y empezaban a conocer el recorrido.
+
+180
+00:15:07.740 --> 00:15:08.730
+La IA funciona igual.
+
+181
+00:15:11.070 --> 00:15:16.290
+El criterio va siendo de nosotros, pero la exploración
+
+182
+00:15:17.250 --> 00:15:22.681
+de la IA entra en juego y cada vez se potencia más el criterio y la eficiencia del
+
+183
+00:15:22.740 --> 00:15:23.280
+agente.
+
+184
+00:15:26.520 --> 00:15:32.190
+Eso, José Luis, así. Tal cual. Así funciona la IA y así van a funcionar
+
+185
+00:15:32.220 --> 00:15:37.679
+nuestros agentes. Entonces, ¿cuál es nuestro papel?
+
+186
+00:15:37.769 --> 00:15:43.651
+Que en la versión cero dar la mayor cantidad de información posible y
+
+187
+00:15:43.710 --> 00:15:49.530
+de criterio y de instrucciones para que al momento de actualizar a la versión uno,
+
+188
+00:15:50.371 --> 00:15:56.340
+este agente pueda tener la mayor exploración y adecuación al criterio que nosotros
+
+189
+00:15:56.371 --> 00:15:56.940
+tenemos.
+
+190
+00:16:00.871 --> 00:16:01.651
+Eso es básicamente lo
+
+191
+00:16:03.210 --> 00:16:03.960
+que buscamos.
+
+192
+00:16:07.740 --> 00:16:08.340
+Entonces,
+
+193
+00:16:10.320 --> 00:16:15.060
+un asistente orientado a gestión y análisis, por ejemplo, interpreta matriz, lo que
+
+194
+00:16:15.090 --> 00:16:16.140
+vimos en la clase pasada.
+
+195
+00:16:17.490 --> 00:16:23.280
+Limitación clave que nosotros vamos a buscar, que ya se hace, pero yo no lo
+
+196
+00:16:23.310 --> 00:16:24.901
+busco en este máster porque
+
+197
+00:16:28.560 --> 00:16:31.801
+a mí me interesa primero que se mantenga el criterio.
+
+198
+00:16:31.890 --> 00:16:36.270
+Si yo hago la conexión directamente a Revit, ustedes se me van a ir por ese camino,
+
+199
+00:16:36.330 --> 00:16:38.580
+se pierde criterio y se va a perder todo lo que sea.
+
+200
+00:16:40.411 --> 00:16:45.931
+Repito, limitación. Acá, y ustedes de esto se encargarán más adelante.
+
+201
+00:16:47.850 --> 00:16:52.710
+Yo necesito que siempre el contexto lo propongan ustedes.
+
+202
+00:16:55.500 --> 00:17:00.750
+Que la gestión de información la propongan ustedes, el agente los va a acompañar.
+
+203
+00:17:01.440 --> 00:17:02.371
+Más adelante,
+
+204
+00:17:03.901 --> 00:17:09.090
+si ustedes ya lo quieren conectar a las herramientas como Revit y extraer datas y
+
+205
+00:17:09.121 --> 00:17:10.681
+demás, eso es otra cosa.
+
+206
+00:17:17.490 --> 00:17:20.671
+Y seguramente me van a preguntar por qué no lo conectamos entonces a Revit y
+
+207
+00:17:20.700 --> 00:17:23.940
+sacamos información. Porque si lo hacemos de una vez, ustedes se van a concentrar
+
+208
+00:17:23.970 --> 00:17:25.651
+en eso y se les va a olvidar el criterio.
+
+209
+00:17:27.570 --> 00:17:32.371
+Y básicamente va a ser la IA trabajando
+
+210
+00:17:38.850 --> 00:17:43.470
+o reemplazando su criterio. Y eso no lo quiero.
+
+211
+00:17:47.190 --> 00:17:50.460
+Exactamente, José Luis. Tomando la analogía, así es.
+
+212
+00:17:52.020 --> 00:17:55.861
+Básicamente, quien estaba detrás del juego en esta analogía que hice de Zelda,
+
+213
+00:17:55.980 --> 00:17:56.640
+nosotros.
+
+214
+00:18:00.510 --> 00:18:05.400
+Yo necesito que ustedes siempre tomen esa directriz
+
+215
+00:18:07.111 --> 00:18:12.162
+y que en ese proceso siempre ustedes estén detrás con su criterio ¿Qué sucede
+
+216
+00:18:12.252 --> 00:18:16.152
+ahora? La IA está llegando a un punto en que, en esta analogía que estoy haciendo,
+
+217
+00:18:16.752 --> 00:18:21.882
+es como si tú le enseñaras a la IA los recorridos, las rutas, y llega un punto
+
+218
+00:18:21.942 --> 00:18:27.222
+donde ya tú sueltas el mando y básicamente la IA empieza a recorrer los mundos por
+
+219
+00:18:27.282 --> 00:18:29.982
+ti. Eso yo no lo quiero ahorita. ¿Por qué?
+
+220
+00:18:30.013 --> 00:18:33.972
+Porque si hacemos eso, ustedes básicamente se me van del criterio y lo van a ver
+
+221
+00:18:34.032 --> 00:18:36.732
+como: "Bueno, ya la IA trabaja por mí y yo no hago nada".
+
+222
+00:18:38.082 --> 00:18:43.692
+Y eso es muy delicado. Entonces, por lo menos en esta versión del máster, capaz en
+
+223
+00:18:43.782 --> 00:18:47.832
+un año esto va a cambiar completamente, pero en esta versión del máster yo quiero
+
+224
+00:18:47.862 --> 00:18:50.502
+que ustedes manejen el control y el criterio de la IA.
+
+225
+00:18:52.662 --> 00:18:54.402
+Es decir, que nunca suelten el mando.
+
+226
+00:18:58.272 --> 00:19:01.303
+Dicho esto, al entender esta analogía,
+
+227
+00:19:03.013 --> 00:19:07.062
+nos vamos al tema de cómo es la consulta técnica estructurada.
+
+228
+00:19:07.212 --> 00:19:09.312
+Es decir, toda interacción
+
+229
+00:19:17.053 --> 00:19:19.392
+con el BIM Assistant debe seguir una secuencia:
+
+230
+00:19:21.162 --> 00:19:26.712
+un contexto, consulta, debemos buscar una solución o propuesta
+
+231
+00:19:26.803 --> 00:19:27.162
+clara,
+
+232
+00:19:28.422 --> 00:19:33.282
+tener una evidencia, es decir, datos, referencias y trazabilidad, y la validación.
+
+233
+00:19:33.342 --> 00:19:38.892
+Es decir, todo va a concluir con nuestra revisión humana y verificación, es decir,
+
+234
+00:19:38.952 --> 00:19:44.562
+con nuestra aprobación. ¿Qué pasa actualmente con la
+
+235
+00:19:44.592 --> 00:19:47.322
+evolución de la IA? Esto se está saltando.
+
+236
+00:19:50.382 --> 00:19:54.522
+Y básicamente, la propiedad nos da contexto, una consulta, nos da la respuesta,
+
+237
+00:19:55.062 --> 00:19:58.932
+ella misma encuentra la evidencia, pero no hay revisión humana ni verificación, y
+
+238
+00:19:58.962 --> 00:19:59.712
+eso es peligroso.
+
+239
+00:20:01.872 --> 00:20:06.372
+Por eso quiero que sigamos esta secuencia, y esta secuencia garantiza que cada
+
+240
+00:20:06.432 --> 00:20:09.822
+respuesta puede ser auditada y validada por el profesional BIM responsable.
+
+241
+00:20:12.522 --> 00:20:15.612
+De aquí nos vamos a las fuentes y conocimiento especializado
+
+242
+00:20:15.702 --> 00:20:21.013
+para que entiendan nuestro opinion system.
+
+243
+00:20:22.602 --> 00:20:23.622
+Hay dos partes:
+
+244
+00:20:29.892 --> 00:20:32.263
+la parte de las instrucciones y la información.
+
+245
+00:20:33.342 --> 00:20:37.932
+Las instrucciones y la información son ambas igualmente importantes, porque yo le
+
+246
+00:20:37.992 --> 00:20:43.602
+puedo subir información y descargarme todos los archivos, habidos y por haber, de
+
+247
+00:20:43.662 --> 00:20:49.632
+la ISO y de los proyectos, y cómo se hace un IAR, y el BEP, y los reportes y la
+
+248
+00:20:49.662 --> 00:20:55.332
+matriz, y en la instrucción le digo nada más: actúa como un asistente de
+
+249
+00:20:55.422 --> 00:20:56.412
+BIM y Assistant.
+
+250
+00:20:59.022 --> 00:21:02.053
+Y créanme que les va a salir cualquier cosa, por más que tenga todo el
+
+251
+00:21:02.112 --> 00:21:02.772
+conocimiento.
+
+252
+00:21:06.072 --> 00:21:11.892
+Entonces, básicamente, voy a hacer otra analogía. Esto es como un diccionario.
+
+253
+00:21:12.972 --> 00:21:15.162
+En el diccionario tenemos las definiciones.
+
+254
+00:21:17.112 --> 00:21:17.712
+Es decir,
+
+255
+00:21:19.962 --> 00:21:25.602
+por la letra A, aro significa esto, ala esto, por la letra B, y así funciona el
+
+256
+00:21:25.631 --> 00:21:27.912
+diccionario, y ahí tienes la cantidad de información.
+
+257
+00:21:31.752 --> 00:21:32.112
+Ahora,
+
+258
+00:21:34.152 --> 00:21:39.792
+el diccionario no sería diccionario si tuviéramos un índice donde nos
+
+259
+00:21:39.852 --> 00:21:44.892
+indica: este diccionario está organizado de esta manera y los pronombres y lo que
+
+260
+00:21:44.922 --> 00:21:47.803
+está entre paréntesis son adjetivos.
+
+261
+00:21:49.782 --> 00:21:50.682
+Funciona lo mismo.
+
+262
+00:21:52.362 --> 00:21:57.702
+Vamos a tener toda la cantidad de información, pero para que esa cantidad de
+
+263
+00:21:57.732 --> 00:22:01.752
+información sea ejecutada y organizada
+
+264
+00:22:02.712 --> 00:22:08.652
+y tenga lógica y criterio, necesitamos que la instrucción que nosotros le demos a
+
+265
+00:22:08.712 --> 00:22:14.232
+nuestro asistente, a nuestro agente, que vamos a crear,
+
+266
+00:22:14.442 --> 00:22:15.252
+tenga lógica.
+
+267
+00:22:17.202 --> 00:22:19.932
+Y la lógica es de nuestro criterio.
+
+268
+00:22:22.902 --> 00:22:27.822
+Vuelvo y repito: no sirve de nada que ustedes le carguen 50 000 archivos y en la
+
+269
+00:22:27.882 --> 00:22:30.553
+instrucción le coloquen cualquier cosa. No funciona.
+
+270
+00:22:30.612 --> 00:22:35.352
+Y viceversa, no sirve de nada si ustedes le dan una excelente instrucción, un
+
+271
+00:22:35.382 --> 00:22:40.962
+criterio, pero solo le sirven el IAR, el BEP. ¿Qué va a pasar?
+
+272
+00:22:41.082 --> 00:22:42.792
+A él le va a faltar información.
+
+273
+00:22:44.712 --> 00:22:49.722
+Porque recuerden que son dos cosas distintas: el prompt, que es lo que nosotros le
+
+274
+00:22:49.752 --> 00:22:50.382
+escribimos,
+
+275
+00:22:51.702 --> 00:22:53.562
+a cómo él va a actuar.
+
+276
+00:22:55.332 --> 00:22:59.742
+Básicamente, cuando creamos nuestro asistente, tenemos que indicarle cuál es su
+
+277
+00:22:59.832 --> 00:23:01.452
+lógica de criterio.
+
+278
+00:23:03.553 --> 00:23:09.252
+Mientras que lo otro son los prompts, es decir, los casos, el contexto,
+
+279
+00:23:09.312 --> 00:23:15.282
+el problema que yo tengo. ¿Sí
+
+280
+00:23:15.342 --> 00:23:15.792
+se entiende
+
+281
+00:23:18.642 --> 00:23:19.212
+la diferencia
+
+282
+00:23:20.712 --> 00:23:21.612
+entre uno y lo otro?
+
+283
+00:23:27.432 --> 00:23:29.232
+Perfecto. Entonces,
+
+284
+00:23:30.732 --> 00:23:31.362
+para cerrar,
+
+285
+00:23:33.042 --> 00:23:37.152
+lo que vamos a hacer el martes. Bueno, primero van a tener una lección de
+
+286
+00:23:37.182 --> 00:23:40.692
+aplicación, pero las lecciones del tema tres son la próxima semana, no se
+
+287
+00:23:40.722 --> 00:23:43.902
+preocupen. Esta fin de semana creo que están en una y quemados.
+
+288
+00:23:45.492 --> 00:23:46.092
+Para cerrar,
+
+289
+00:23:47.352 --> 00:23:51.763
+lo que yo necesito, y ténganme en la aplicación de su proyecto tipo tesis,
+
+290
+00:23:53.382 --> 00:23:59.112
+es que van a utilizar el asistente para definición de requisitos BIM y la propuesta
+
+291
+00:23:59.142 --> 00:24:02.382
+de reglas de control QAC aplicadas al modelo del proyecto.
+
+292
+00:24:03.132 --> 00:24:08.832
+Esto lo voy a profundizar en la última sesión de refuerzo.
+
+293
+00:24:09.882 --> 00:24:12.553
+Recuerden que esta es la sesión de refuerzo tres, parte uno.
+
+294
+00:24:13.242 --> 00:24:17.142
+La parte dos es la práctica, que vamos a hablar de cómo se insertan las
+
+295
+00:24:17.202 --> 00:24:22.513
+instrucciones, los documentos, etcétera. Lo vamos a ver el martes.
+
+296
+00:24:23.592 --> 00:24:24.582
+El jueves,
+
+297
+00:24:26.892 --> 00:24:31.422
+que es la sesión de refuerzo cuatro, parte uno, que también es práctica, empezamos
+
+298
+00:24:31.452 --> 00:24:36.342
+a ver esto, cómo lo van a hacer en su proyecto tipo tesis y cómo crean el agente.
+
+299
+00:24:38.412 --> 00:24:41.892
+Que crear el agente tampoco es complicado, porque ya con la IA es superrápido.
+
+300
+00:24:42.101 --> 00:24:45.702
+Entonces, ya el camino está claro.
+
+301
+00:24:47.053 --> 00:24:50.562
+Lo que necesitan ustedes es crear un agente,
+
+302
+00:24:51.822 --> 00:24:57.792
+el cual va a tener cierta cantidad de instrucciones con cierta información
+
+303
+00:24:58.513 --> 00:25:04.422
+para su proyecto, que va a definir requisitos BIM y propuestas de reglas de control
+
+304
+00:25:04.482 --> 00:25:05.232
+QAC.
+
+305
+00:25:06.462 --> 00:25:09.222
+Para el proyecto, yo solo necesito esto.
+
+306
+00:25:09.553 --> 00:25:12.402
+Cuando digo el proyecto para su tesis, yo necesito esto.
+
+307
+00:25:12.612 --> 00:25:17.832
+¿Por qué solo le pido esto? ¿Por qué solo le pido esta parte, nada más?
+
+308
+00:25:17.862 --> 00:25:22.572
+¿Por qué solo le estoy solicitando esta parte?
+
+309
+00:25:22.572 --> 00:25:27.882
+¿Por qué solo les pido algo en específico?
+
+310
+00:25:33.612 --> 00:25:38.953
+Con esto cerramos. ¿Por qué creen que solo le estoy pidiendo esto en específico?
+
+311
+00:25:38.953 --> 00:25:46.212
+¿Qué
+
+312
+00:25:46.242 --> 00:25:52.152
+se les ocurre? ¿Por qué solo le estoy pidiendo que el agente, en su
+
+313
+00:25:52.182 --> 00:25:53.982
+caso, solo haga esto?
+
+314
+00:25:56.802 --> 00:25:59.592
+Porque es el punto de partida del proyecto. Sí.
+
+315
+00:25:59.832 --> 00:26:01.152
+Y además, José Luis,
+
+316
+00:26:02.712 --> 00:26:08.622
+porque básicamente necesito que ustedes comprueben con este punto de partida
+
+317
+00:26:08.712 --> 00:26:11.832
+y su agente, la funcionalidad de la misma.
+
+318
+00:26:13.302 --> 00:26:15.972
+Porque, ¿qué creen si yo les pido
+
+319
+00:26:17.232 --> 00:26:22.813
+que su agente revise todas las etapas del proyecto en una versión cero, llamemos
+
+320
+00:26:22.962 --> 00:26:24.972
+una versión beta? ¿Qué creen que va a pasar?
+
+321
+00:26:36.822 --> 00:26:40.902
+Vuelvo y repito, que su agente, en una versión cero, en una versión beta, revise
+
+322
+00:26:40.962 --> 00:26:43.662
+todo, absolutamente todo. ¿Qué ocurriría?
+
+323
+00:26:57.102 --> 00:27:02.712
+Con esto cerramos. ¿Qué ocurre si yo les pido que su agente revise todas las etapas
+
+324
+00:27:02.742 --> 00:27:03.372
+del proyecto
+
+325
+00:27:04.662 --> 00:27:05.893
+y haga matriz Noi, y haga
+
+326
+00:27:07.542 --> 00:27:12.283
+lo otro, en una versión cero? ¿Qué puede ocurrir?
+
+327
+00:27:17.208 --> 00:27:19.308
+No lo haría bien. ¿Y por qué no lo haría bien?
+
+328
+00:27:20.149 --> 00:27:24.558
+Porque básicamente, recuerden que, como les puse en el esquema,
+
+329
+00:27:25.848 --> 00:27:30.438
+estamos en una versión cero que yo necesito que se especialice
+
+330
+00:27:32.029 --> 00:27:33.438
+en una muestra de data,
+
+331
+00:27:34.818 --> 00:27:37.008
+que es definición de registro PIN o QAC.
+
+332
+00:27:38.208 --> 00:27:43.068
+Cuando es especialista en esto, se entrene y tenga la lógica,
+
+333
+00:27:44.658 --> 00:27:48.948
+en la siguiente versión le digo: "Bueno, ahora créame matriz no".
+
+334
+00:27:49.938 --> 00:27:51.919
+Y así voy escalando.
+
+335
+00:27:54.798 --> 00:27:57.438
+Yo necesito comprobar, creo que lo dijo Albino.
+
+336
+00:27:59.538 --> 00:28:01.068
+Primero que sea fiable
+
+337
+00:28:03.078 --> 00:28:07.758
+y a partir de allí voy incrementando las siguientes versiones.
+
+338
+00:28:08.718 --> 00:28:10.308
+Así tienen que trabajar con la IA.
+
+339
+00:28:12.139 --> 00:28:13.848
+Básicamente, aquí les estoy enseñando
+
+340
+00:28:15.198 --> 00:28:19.399
+fundamentos básicos que no solo les van a servir en las masters, sino de aquí en
+
+341
+00:28:19.458 --> 00:28:25.279
+adelante. ¿Se entiende? Porque me habían hecho la
+
+342
+00:28:25.308 --> 00:28:28.008
+pregunta: "Pero no vamos a hacer una aplicación".
+
+343
+00:28:32.328 --> 00:28:36.048
+No. Porque primero necesito que ustedes fundamenten su conocimiento, su criterio y
+
+344
+00:28:36.078 --> 00:28:39.468
+estén en ese proceso. Y segundo, que
+
+345
+00:28:40.848 --> 00:28:45.018
+les funcione en algo en específico, por más básico que sea lo que les estoy
+
+346
+00:28:45.078 --> 00:28:48.288
+solicitando, funciona eso en algo específico y después ya pueden evolucionar.
+
+347
+00:28:49.998 --> 00:28:53.358
+Nos vemos el martes para ver esta parte práctica y
+
+348
+00:28:55.758 --> 00:28:58.848
+ya les aviso por el grupo cuando esté habilitado, por favor, las lecciones.
+
+349
+00:28:59.328 --> 00:29:01.578
+Lo único que me falta editar, estoy yo a la par.
+
+350
+00:29:02.568 --> 00:29:03.738
+Pero bueno, ya nos quedarían
+
+351
+00:29:05.358 --> 00:29:09.438
+dos semanas más para ir cerrando este módulo cinco.
+
+352
+00:29:09.468 --> 00:29:13.218
+Recuerden que en este módulo cinco no hay proyecto, hay avances de tesis.
+
+353
+00:29:13.308 --> 00:29:17.178
+Es decir, con la tesis que ya seleccionaron, la primera parte que les voy a
+
+354
+00:29:17.238 --> 00:29:19.728
+solicitar es lo que acaban de ver.
+
+355
+00:29:21.618 --> 00:29:26.389
+Sí, lo revisé Albino. Tengo un montón de correos, pero
+
+356
+00:29:27.858 --> 00:29:30.078
+ya con calma, yo la próxima semana
+
+357
+00:29:30.139 --> 00:29:35.988
+los estoy ordenando y
+
+358
+00:29:36.048 --> 00:29:41.029
+les voy respondiendo a cada uno. De nada, chicos, sigan avanzando.
+
+359
+00:29:41.868 --> 00:29:45.738
+Vean cómo les estoy simplificando la IA. No hay que complicarnos.
+
+360
+00:29:46.488 --> 00:29:49.308
+El buen uso de la IA con criterio, créanme que los hace
+
+361
+00:29:50.718 --> 00:29:53.328
+mejores profesionales. En vez de ser un profesional
+
+362
+00:29:55.458 --> 00:29:59.238
+1.0, se convierte en un profesional 2.0, pero con criterio.
+
+363
+00:29:59.448 --> 00:30:05.118
+Nunca desplazan la esencia de su
+
+364
+00:30:05.178 --> 00:30:09.889
+criterio y eso es lo importante. Porque si no se acostumbran a usar la IA como si
+
+365
+00:30:09.948 --> 00:30:15.348
+fuese una cajita mágica de solución, y
+
+366
+00:30:15.438 --> 00:30:20.839
+no funciona así. Entonces, el día de mañana, el profesional que vale actualmente
+
+367
+00:30:24.318 --> 00:30:28.098
+no es el que no use la IA, sino es el que use la IA con criterio.
+
+368
+00:30:28.608 --> 00:30:29.807
+Es el profesional que vale.
+
+369
+00:30:32.147 --> 00:30:34.998
+Nos vemos el martes. Tengan un excelente fin de semana y cuídense mucho.

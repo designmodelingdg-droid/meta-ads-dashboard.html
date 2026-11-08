@@ -1,0 +1,1649 @@
+WEBVTT
+
+1
+00:00:07.980 --> 00:00:11.550
+Buenas noches, estimados, ¿cómo están? Espero que se encuentren bien.
+
+2
+00:00:11.610 --> 00:00:16.831
+Disculpen un poquito la demora. Justo antes de comenzar la
+
+3
+00:00:19.440 --> 00:00:25.020
+clase me entró una llamada de índole personal y tuve que atenderla antes de la
+
+4
+00:00:25.050 --> 00:00:25.320
+clase.
+
+5
+00:00:26.550 --> 00:00:32.070
+Bienvenidos al módulo cinco, donde vamos a estar trabajando lo que es la
+
+6
+00:00:32.100 --> 00:00:34.950
+inteligencia artificial aplicada al BIM management.
+
+7
+00:00:36.360 --> 00:00:42.180
+Paréntesis: ya hemos ido entregando, son varias, el
+
+8
+00:00:42.240 --> 00:00:42.690
+tema de
+
+9
+00:00:44.760 --> 00:00:48.630
+los diplomas de Sabal. Mañana seguiremos con otra parte.
+
+10
+00:00:52.500 --> 00:00:57.990
+Pero ya nos llegaron y ya los estamos liberando, porque son másters,
+
+11
+00:00:58.051 --> 00:00:59.370
+diplomados, son de varios
+
+12
+00:01:00.720 --> 00:01:05.040
+estudiantes, pero ya los estamos liberando para que ustedes lo puedan decir.
+
+13
+00:01:06.120 --> 00:01:08.730
+Cierro paréntesis. El objetivo de esta clase
+
+14
+00:01:08.850 --> 00:01:14.821
+de 30 minutos es que podamos entender lo que vamos a
+
+15
+00:01:14.850 --> 00:01:17.071
+desarrollar en las próximas tres semanas.
+
+16
+00:01:19.530 --> 00:01:23.370
+Vamos a utilizar un componente de inteligencia artificial, el primer módulo que
+
+17
+00:01:23.551 --> 00:01:25.530
+empezamos a utilizar formalmente.
+
+18
+00:01:26.370 --> 00:01:30.330
+Bueno, no el primer módulo, en el módulo cuatro ya con Dynamo y Python utilizamos
+
+19
+00:01:30.390 --> 00:01:36.060
+inteligencia artificial, pero aquí ya es nada más inteligencia artificial.
+
+20
+00:01:39.090 --> 00:01:43.920
+El objetivo de este módulo es integrar la inteligencia artificial a nuestro entorno
+
+21
+00:01:43.980 --> 00:01:44.160
+BIM.
+
+22
+00:01:48.780 --> 00:01:53.250
+No utilizarlo como lo venimos realizando en el módulo cuatro, que era como nuestro
+
+23
+00:01:53.310 --> 00:01:58.230
+asistente, como nuestro consultor, por así decirlo, sino que va a estar integrado.
+
+24
+00:01:58.589 --> 00:02:00.450
+Es decir, va a analizar nuestra data
+
+25
+00:02:01.740 --> 00:02:07.230
+y el objetivo, aparte de que analice esa data, es que nosotros podamos guiar
+
+26
+00:02:08.280 --> 00:02:12.270
+o complementar con inteligencia artificial los siguientes pasos.
+
+27
+00:02:14.730 --> 00:02:19.530
+Siguientes pasos que se empiezan a complementar desde el módulo seis, siete,
+
+28
+00:02:19.590 --> 00:02:20.250
+etcétera.
+
+29
+00:02:24.150 --> 00:02:29.730
+El objetivo es arrancar el módulo cinco formalmente y
+
+30
+00:02:30.000 --> 00:02:35.101
+comentarles un poquito lo que vamos a hacer en estos cuatro temas del módulo
+
+31
+00:02:35.970 --> 00:02:41.490
+cinco y la conexión con lo que venimos aprendiendo desde el módulo cuatro.
+
+32
+00:02:43.260 --> 00:02:48.210
+Buscamos demostrar la IA en BIM. Esto va a estar muy interesante, porque
+
+33
+00:02:49.230 --> 00:02:54.360
+estoy seguro de que la gran mayoría de ustedes hasta el momento no ha tenido un
+
+34
+00:02:54.421 --> 00:02:56.310
+contacto directo con la IA en BIM.
+
+35
+00:02:59.160 --> 00:03:03.240
+Yo sé que algunos de ustedes ya lo tienen, porque también están en los cursos de
+
+36
+00:03:03.270 --> 00:03:06.630
+inteligencia artificial, pero
+
+37
+00:03:08.610 --> 00:03:14.281
+aquí sí damos el paso formal. Aquí ya nos convertimos en esta especie de BIM
+
+38
+00:03:14.340 --> 00:03:15.421
+management magia.
+
+39
+00:03:17.550 --> 00:03:18.570
+Iniciamos la tesis.
+
+40
+00:03:20.580 --> 00:03:21.990
+Antes de que me pregunten: ¿cómo iniciamos?
+
+41
+00:03:23.940 --> 00:03:26.550
+Calma, vamos a tener tres semanas para eso.
+
+42
+00:03:26.940 --> 00:03:32.550
+Recuerden que al finalizar este módulo, ustedes tienen hasta el
+
+43
+00:03:32.760 --> 00:03:37.380
+30 de octubre para poder indicar cuál es el proyecto de tesis que ustedes van a
+
+44
+00:03:37.410 --> 00:03:41.610
+trabajar, si el proyecto opción A, opción B o si es la opción de un proyecto
+
+45
+00:03:41.671 --> 00:03:47.281
+personal. Eso yo se los dejé. Repito, en la comunidad antes de cerrar les vuelvo
+
+46
+00:03:47.339 --> 00:03:49.171
+a explicar dónde tienen esa información.
+
+47
+00:03:50.460 --> 00:03:54.270
+Ese es el objetivo del módulo, que integremos la inteligencia
+
+48
+00:03:55.830 --> 00:04:00.960
+artificial. Entonces, para ello ya hemos dado la bienvenida, la introducción a este
+
+49
+00:04:01.020 --> 00:04:04.260
+módulo cinco. Ahora vamos a ver cómo utilizaremos la IA en BIM.
+
+50
+00:04:05.281 --> 00:04:09.541
+Vamos a ver algunas demostraciones prácticas sencillas, cómo va a iniciar el
+
+51
+00:04:09.570 --> 00:04:14.520
+proyecto de tesis y algunos entregables que ustedes van a ir desarrollando.
+
+52
+00:04:15.870 --> 00:04:19.260
+En el módulo cuatro, ustedes aprendieron a automatizar.
+
+53
+00:04:20.220 --> 00:04:24.690
+Aprender a automatizar la gestión de información, automatizar procesos mediante
+
+54
+00:04:24.750 --> 00:04:29.701
+Dynamo y Python. Eso es lo que ustedes desarrollaron en el módulo cuatro, vieron
+
+55
+00:04:29.730 --> 00:04:35.250
+las reglas CUAC, auditaron información y básicamente ahora
+
+56
+00:04:35.281 --> 00:04:36.031
+incorporamos un
+
+57
+00:04:36.060 --> 00:04:41.640
+nuevo
+
+58
+00:04:41.701 --> 00:04:44.370
+componente, valga la redundancia, que es la inteligencia
+
+59
+00:04:44.400 --> 00:04:48.240
+artificial.
+
+60
+00:04:49.830 --> 00:04:55.470
+Antes de que yo continúe con esta sesión introductoria, ¿cómo creen que usamos
+
+61
+00:04:55.531 --> 00:04:59.790
+nosotros como BIM management el enfoque de este máster de inteligencia artificial?
+
+62
+00:05:01.680 --> 00:05:06.960
+Es decir, ¿cómo deberíamos incorporar la inteligencia artificial para que nos
+
+63
+00:05:07.020 --> 00:05:09.630
+modele, para que nos coordine?
+
+64
+00:05:10.920 --> 00:05:14.400
+Nosotros como BIM management, desde el punto de vista del BIM management, ¿qué
+
+65
+00:05:14.460 --> 00:05:18.781
+debería ser la inteligencia artificial o cómo deberíamos utilizar la inteligencia
+
+66
+00:05:18.810 --> 00:05:20.310
+artificial? ¿Cómo se lo imaginan?
+
+67
+00:05:34.080 --> 00:05:35.610
+A ver, leo su respuesta:
+
+68
+00:05:37.440 --> 00:05:38.341
+como asistente.
+
+69
+00:05:39.960 --> 00:05:45.060
+¿Y qué debería ser un buen asistente? Aquí está.
+
+70
+00:05:46.050 --> 00:05:51.600
+Analizar información,
+
+71
+00:05:51.841 --> 00:05:55.650
+diseñar soluciones, mejorar nuestros procesos BIM.
+
+72
+00:05:59.010 --> 00:06:03.060
+Entonces, durante estas tres semanas vamos a aprender cuatro aspectos
+
+73
+00:06:03.120 --> 00:06:07.591
+fundamentales, todos conectados con el proyecto final tipo tesis.
+
+74
+00:06:07.860 --> 00:06:13.770
+¿Cuáles son esos cuatro temas que nosotros vamos
+
+75
+00:06:13.860 --> 00:06:14.010
+a
+
+76
+00:06:15.510 --> 00:06:21.091
+desarrollar? Uno, los fundamentos de IA. Primero tenemos que entender la IA.
+
+77
+00:06:22.170 --> 00:06:28.081
+Y no desde el punto de vista de ChatGPT, Pregunto, Cloud, Gemini
+
+78
+00:06:28.140 --> 00:06:30.451
+o la que salga en las próximas tres semanas.
+
+79
+00:06:32.970 --> 00:06:38.520
+Sino que la inteligencia artificial utilizarse como un gestor de información que no
+
+80
+00:06:38.610 --> 00:06:43.320
+solo aplica para lo que es el BIM management, sino que debería aplicar para
+
+81
+00:06:43.350 --> 00:06:47.190
+cualquier proceso profesional que nosotros queramos ejecutar de la mano de la IA.
+
+82
+00:06:49.081 --> 00:06:54.451
+Gestionar la información, gestionar los procesos, estructurar esa información,
+
+83
+00:06:55.110 --> 00:07:00.420
+que desde la complejidad que yo pueda tener un proyecto, simplificarlo.
+
+84
+00:07:00.750 --> 00:07:01.201
+Es decir,
+
+85
+00:07:02.460 --> 00:07:07.470
+una característica que tiene que tener todo buen BIM management es estructurar todo
+
+86
+00:07:07.500 --> 00:07:13.140
+proceso paso a paso, donde paso uno, paso dos, paso tres, paso cuatro.
+
+87
+00:07:14.490 --> 00:07:18.451
+Existen inconvenientes, se solucionan inconvenientes, paso cinco.
+
+88
+00:07:19.710 --> 00:07:22.561
+Todo debe estar estructurado. ¿Por qué?
+
+89
+00:07:22.591 --> 00:07:28.201
+Porque si no estructuramos nuestros proyectos BIM, básicamente estamos improvisando
+
+90
+00:07:28.260 --> 00:07:34.110
+y la improvisación en el ámbito BIM no existe o no debería existir, a menos
+
+91
+00:07:34.201 --> 00:07:35.760
+que esa improvisación
+
+92
+00:07:37.201 --> 00:07:42.780
+sea a través de problemas que se van generando propios del proyecto, pero no desde
+
+93
+00:07:42.811 --> 00:07:44.040
+nuestra planificación.
+
+94
+00:07:45.331 --> 00:07:50.401
+El fundamento de la IA es identificar oportunidades de aplicación en BIM.
+
+95
+00:07:51.331 --> 00:07:56.910
+En qué etapas o en qué procesos yo puedo insertar la inteligencia
+
+96
+00:07:56.970 --> 00:08:01.770
+artificial para que mi función como BIM management sea útil.
+
+97
+00:08:04.230 --> 00:08:07.860
+Vamos a ver lo que es un prompt engineering, que es básicamente dar instrucciones
+
+98
+00:08:07.890 --> 00:08:10.081
+técnicas claras y estructuradas a la IA.
+
+99
+00:08:11.581 --> 00:08:15.660
+Vamos a ver algo muy similar a lo que veníamos trabajando en el módulo cuatro, pero
+
+100
+00:08:15.720 --> 00:08:19.591
+vamos a cambiar el sentido de "haz esto y haz lo otro".
+
+101
+00:08:19.710 --> 00:08:24.540
+No, sino que las instrucciones desde el inicio, desde nuestros prompt, desde
+
+102
+00:08:24.600 --> 00:08:25.620
+nuestra estructura
+
+103
+00:08:27.151 --> 00:08:30.180
+de procesos, tienen que ser muy claras.
+
+104
+00:08:30.600 --> 00:08:36.390
+Todo prompt, en el caso del BIM, tiene una estructura bien demarcada que
+
+105
+00:08:36.451 --> 00:08:42.181
+debemos llevar a cabo y no utilizar la inteligencia artificial como si fuese un
+
+106
+00:08:42.270 --> 00:08:48.000
+Google o como si fuese nuestro ChatGPT normal, que yo le pregunto dónde queda el
+
+107
+00:08:48.030 --> 00:08:51.480
+mejor pediatra de la ciudad o el mejor restaurante. No.
+
+108
+00:08:53.250 --> 00:08:58.830
+Es estructurarlo desde un punto de vista de prompt engineering, es decir, con el
+
+109
+00:08:59.940 --> 00:09:04.470
+raciocinio y con el pensamiento crítico de
+
+110
+00:09:06.120 --> 00:09:06.960
+un BIM manager.
+
+111
+00:09:08.994 --> 00:09:13.434
+Vamos a utilizar luego una tercera etapa, el BIM System Pro, para validar
+
+112
+00:09:13.494 --> 00:09:19.014
+información. Y lo cuarto es que ustedes deben diseñar un agente BIM.
+
+113
+00:09:21.444 --> 00:09:25.014
+El objetivo de este módulo es que ustedes diseñen un agente BIM.
+
+114
+00:09:25.825 --> 00:09:30.834
+No se preocupen, capaz que están pensando: "uy, y ahora qué tengo que programar".
+
+115
+00:09:31.075 --> 00:09:35.034
+No, créanme que es mucho más sencillo de lo que se imaginan, pero yo necesito que
+
+116
+00:09:35.094 --> 00:09:40.974
+ustedes sepan diseñar un agente BIM para un proyecto que sea capaz
+
+117
+00:09:41.064 --> 00:09:46.194
+de entender el contexto del proyecto, les dé soluciones, tenga pensamiento
+
+118
+00:09:46.224 --> 00:09:52.104
+estructurado y que tenga una capacidad de raciocinio que los acompañe
+
+119
+00:09:52.164 --> 00:09:55.464
+donde la última decisión y el criterio sea del BIM Manager.
+
+120
+00:09:55.734 --> 00:09:56.874
+Son los cuatro fundamentos.
+
+121
+00:09:58.104 --> 00:10:03.144
+La IA es un mundo
+
+122
+00:10:05.004 --> 00:10:06.894
+muy amplio, muy grande
+
+123
+00:10:10.494 --> 00:10:14.274
+y se puede hacer un montón de cosas, pero yo lo que necesito que ustedes entiendan
+
+124
+00:10:14.304 --> 00:10:18.894
+de este módulo es cuáles son los fundamentos de IA, cómo se estructura un BIM
+
+125
+00:10:18.955 --> 00:10:22.974
+prompt, cómo se consulta y valida información, cómo pueden crear un agente BIM.
+
+126
+00:10:23.994 --> 00:10:24.384
+Punto.
+
+127
+00:10:26.964 --> 00:10:32.784
+Y les hago la pregunta: al momento de crear ese agente BIM, ¿cómo los va a ayudar?
+
+128
+00:10:34.614 --> 00:10:39.234
+Cuando ustedes terminen de crear este agente BIM, ¿en qué consideran que lo van a
+
+129
+00:10:39.234 --> 00:10:43.674
+ayudar más allá de ser asistente? ¿Este agente BIM en qué los va a ayudar?
+
+130
+00:10:45.624 --> 00:10:50.994
+Y los leo con la tesis. Y si los ayuda a mí con la tesis, ¿en qué los está
+
+131
+00:10:51.024 --> 00:10:54.384
+ayudando? Con el proyecto de ejecución, porque vamos a hacer un proyecto.
+
+132
+00:10:55.944 --> 00:10:59.154
+Yo los estoy ubicando que van a crear su propio,
+
+133
+00:11:01.854 --> 00:11:06.804
+entre comillas, asistente, pero es un agente que los va a acompañar en cada
+
+134
+00:11:06.834 --> 00:11:12.684
+desarrollo y en cada paso. ¿Cuál es el valor en el futuro de que
+
+135
+00:11:12.744 --> 00:11:14.634
+ustedes creen su propio agente BIM
+
+136
+00:11:17.154 --> 00:11:17.994
+en proyectos
+
+137
+00:11:19.464 --> 00:11:22.854
+que ustedes ahora lo van a poder utilizar en sus proyectos profesionales?
+
+138
+00:11:27.804 --> 00:11:32.394
+Esto va a tener varias etapas, cada vez lo van a ir mejorando, pero yo lo que
+
+139
+00:11:32.455 --> 00:11:35.154
+necesito es la base de que ustedes sepan crear su propio agente BIM.
+
+140
+00:11:35.874 --> 00:11:39.234
+Ese es el objetivo de este módulo, que ustedes sepan crear su propio agente BIM.
+
+141
+00:11:41.575 --> 00:11:45.864
+Es muy similar a lo que ustedes han visto en el GPT, BIM System Pro, pero un agente
+
+142
+00:11:45.955 --> 00:11:50.424
+distinto, porque va a estar ligado a una aplicación, porque se puede conectar a su
+
+143
+00:11:50.484 --> 00:11:53.575
+proyecto. Tiene ciertas diferencias.
+
+144
+00:11:53.634 --> 00:11:57.624
+Vamos a partir de la base de nuestro BIM System Pro y ustedes crean su agente.
+
+145
+00:11:57.624 --> 00:12:02.455
+¿Está claro el alcance de este módulo? ¿Se entiende?
+
+146
+00:12:08.514 --> 00:12:08.634
+Sí.
+
+147
+00:12:10.584 --> 00:12:14.034
+Por lo tanto, por eso es que tienen que ya definir hasta el 30 de octubre con qué
+
+148
+00:12:14.064 --> 00:12:19.014
+proyecto van a trabajar, porque no sirve nada que tengan el agente y no tengan el
+
+149
+00:12:19.075 --> 00:12:23.575
+proyecto todavía, no hayan decidido si es el proyecto A, el proyecto B o es el
+
+150
+00:12:23.604 --> 00:12:24.504
+proyecto personal.
+
+151
+00:12:25.284 --> 00:12:30.684
+¿Cómo
+
+152
+00:12:30.714 --> 00:12:35.034
+utilizaremos la IA en BIM? Vamos a tener una guía generativa que ayuda a analizar
+
+153
+00:12:35.424 --> 00:12:38.874
+requisitos, organizar información y redactar documentación técnica.
+
+154
+00:12:39.624 --> 00:12:43.554
+Vamos a utilizar lo que son prompts, instrucción que damos a la IA para obtener un
+
+155
+00:12:43.614 --> 00:12:45.205
+resultado específico y útil.
+
+156
+00:12:46.554 --> 00:12:52.015
+Créanme que esta parte la gran mayoría de profesionales la desprecia porque
+
+157
+00:12:52.704 --> 00:12:57.384
+dice: "Bueno, pero si yo hablo todos los días con ChatGPT y
+
+158
+00:12:58.795 --> 00:13:04.075
+le pregunto de todo, ¿qué diferencia hay con
+
+159
+00:13:05.124 --> 00:13:08.304
+los prompts que tengo que hacer para mi
+
+160
+00:13:10.674 --> 00:13:13.825
+agente BIM?" Bastante.
+
+161
+00:13:15.624 --> 00:13:16.075
+Porque
+
+162
+00:13:17.695 --> 00:13:22.314
+las instrucciones que nosotros damos crean un proceso algorítmico y de lógica
+
+163
+00:13:23.515 --> 00:13:28.614
+en nuestros agentes de IA. No es lo mismo que yo le diga: "Tengo este proyecto,
+
+164
+00:13:28.945 --> 00:13:32.304
+actúa como BIM manager y resuélveme la matriz Noi".
+
+165
+00:13:33.445 --> 00:13:39.174
+A que yo le diga: "Actúa como un BIM manager experto en la codificación, ta, ta,
+
+166
+00:13:39.384 --> 00:13:41.724
+ta, ta". Y le damos una lógica.
+
+167
+00:13:44.244 --> 00:13:50.124
+Son dos cosas totalmente distintas y la gran mayoría falla acá, aunque
+
+168
+00:13:50.184 --> 00:13:51.445
+suene mitoto.
+
+169
+00:13:53.364 --> 00:13:57.204
+Vamos a utilizar el BIM System Pro para ir entendiendo cómo es el asistente
+
+170
+00:13:57.265 --> 00:14:01.765
+especializado y de allí ustedes van a crear su agente BIM, que es un sistema
+
+171
+00:14:01.795 --> 00:14:05.064
+diseñado para seguir un flujo de trabajo y cumplir un objetivo definido.
+
+172
+00:14:07.224 --> 00:14:09.054
+Lo que van a aprender en este módulo es oro.
+
+173
+00:14:11.814 --> 00:14:15.534
+Y ya lo que ustedes lleguen a hacer con este agente BIM quedará
+
+174
+00:14:17.545 --> 00:14:21.204
+ya en función de sus capacidades.
+
+175
+00:14:23.844 --> 00:14:27.265
+Hay que entender las capacidades y límites de la IA hablando de capacidades,
+
+176
+00:14:28.075 --> 00:14:28.434
+porque,
+
+177
+00:14:29.904 --> 00:14:34.945
+por ejemplo, un BIM manager necesita revisar la información incompleta en un modelo
+
+178
+00:14:34.974 --> 00:14:39.624
+estructural. La IA puede ayudarle a identificar posibles reglas, estructuras de
+
+179
+00:14:39.654 --> 00:14:41.664
+reporte y proponer acciones.
+
+180
+00:14:43.224 --> 00:14:48.234
+Pero la IA no puede afirmar qué elementos incumplen sin contar con los datos reales
+
+181
+00:14:48.265 --> 00:14:51.954
+del modelo. Siempre requiere validación humana.
+
+182
+00:14:53.814 --> 00:14:59.604
+Aquí lo primero que vamos a aprender es que no vamos a usar la IA como si fuese
+
+183
+00:14:59.724 --> 00:15:05.575
+mágica y no van a depender de la IA. Es decir, mi criterio no puede
+
+184
+00:15:05.634 --> 00:15:06.835
+depender de la IA.
+
+185
+00:15:09.924 --> 00:15:14.634
+Porque si mi criterio depende de la IA, todo lo que hemos construido hasta este
+
+186
+00:15:14.724 --> 00:15:16.614
+punto se viene abajo.
+
+187
+00:15:18.054 --> 00:15:24.024
+Y es muy fácil llegar a un punto donde mi criterio
+
+188
+00:15:24.085 --> 00:15:29.814
+lo borro y lo cambio con la IA. Ya no quiero tener capacidad de decisión, sino que
+
+189
+00:15:29.874 --> 00:15:32.124
+todo lo haga la IA. Créanme que es muy
+
+190
+00:15:33.564 --> 00:15:39.024
+fácil caer en eso. Entonces, tenemos que tener no una línea muy fina, sino un muro,
+
+191
+00:15:39.384 --> 00:15:44.994
+una pared donde se separa mi criterio y mi decisión técnica
+
+192
+00:15:45.744 --> 00:15:48.265
+versus lo que yo quiero de la IA.
+
+193
+00:15:50.994 --> 00:15:56.004
+El BIM manager define el problema, la IA apoya el análisis y el profesional valida
+
+194
+00:15:56.064 --> 00:15:57.054
+los resultados.
+
+195
+00:16:01.015 --> 00:16:05.604
+Por ejemplo, aquí vemos una demostración de lo que yo les hablaba de los prompts.
+
+196
+00:16:08.754 --> 00:16:11.394
+Y vuelvo y repito, créanme que
+
+197
+00:16:14.154 --> 00:16:18.024
+un porcentaje importante de usar bien la IA se basa en el prompt.
+
+198
+00:16:19.974 --> 00:16:25.945
+Y más allá de que ustedes aprendan la estructura de un prompt, porque esto lo
+
+199
+00:16:25.974 --> 00:16:29.964
+vamos a aprender acá, hay unos fundamentos de lo que tiene que tener un prompt.
+
+200
+00:16:30.534 --> 00:16:33.054
+Realmente, ¿qué diferencia a un buen prompt?
+
+201
+00:16:33.714 --> 00:16:38.154
+A pesar de que ahorita no se conozca la estructura, ¿qué hace un buen prompt?
+
+202
+00:16:40.524 --> 00:16:45.894
+Y no es que le escriban 20 líneas ni que le tengan que decir al detalle.
+
+203
+00:16:45.984 --> 00:16:49.914
+Es decir, ¿qué hace la diferencia en un buen prompt?
+
+204
+00:16:50.154 --> 00:16:54.054
+Un prompt es la instrucción que vamos a utilizar y asignarle a la IA.
+
+205
+00:16:54.054 --> 00:16:57.054
+¿Qué hace la diferencia en esta instrucción?
+
+206
+00:16:57.054 --> 00:17:02.575
+¿Que sea largo, que tenga 20 líneas?
+
+207
+00:17:03.144 --> 00:17:08.064
+¿Qué hace la diferencia? ¿Qué creen ustedes que es el fundamento principal al
+
+208
+00:17:08.124 --> 00:17:13.825
+momento del prompt, al momento de darle esta instrucción a la IA?
+
+209
+00:17:13.825 --> 00:17:20.335
+¿Qué
+
+210
+00:17:20.364 --> 00:17:21.024
+se les ocurre?
+
+211
+00:17:33.624 --> 00:17:34.194
+Criterio.
+
+212
+00:17:35.934 --> 00:17:37.404
+Todavía nadie me respondió. El criterio.
+
+213
+00:17:39.054 --> 00:17:44.094
+Si yo tengo criterio y yo conozco cómo funciona una matriz Noi, conozco los niveles
+
+214
+00:17:44.094 --> 00:17:49.704
+de información, conozco los niveles de detalle, yo sé que es un IAR, yo sé que es
+
+215
+00:17:50.934 --> 00:17:53.544
+un BEP, entiendo que es un BEP vivo,
+
+216
+00:17:54.984 --> 00:18:00.294
+entiendo automatizaciones como aprendieron en Dynamo y Python, entiendo la gestión
+
+217
+00:18:00.324 --> 00:18:00.984
+de información,
+
+218
+00:18:02.394 --> 00:18:03.414
+entiendo los roles BIM,
+
+219
+00:18:05.334 --> 00:18:09.114
+entiendo las etapas de un entorno común de datos.
+
+220
+00:18:10.494 --> 00:18:16.254
+Créanme que entendiendo un poquito los conceptos de la estructura del prompt, el
+
+221
+00:18:16.314 --> 00:18:19.225
+criterio hace la diferencia, porque tienen el conocimiento
+
+222
+00:18:20.928 --> 00:18:22.399
+Esa es la diferencia sustancial.
+
+223
+00:18:25.608 --> 00:18:30.138
+Porque si yo no tengo el conocimiento, seguramente les ha pasado.
+
+224
+00:18:31.038 --> 00:18:33.978
+Por ejemplo, el día de mañana a la IA
+
+225
+00:18:35.268 --> 00:18:40.068
+yo le pregunto y le digo: "Mira, quiero plantar un árbol de 10 metros".
+
+226
+00:18:41.598 --> 00:18:47.418
+Y la IA me va a decir paso a paso lo que tengo que hacer, pero si la IA me empieza
+
+227
+00:18:47.448 --> 00:18:52.909
+a hablar de la raíz profunda y el tipo del suelo y demás, y yo no tengo ni idea de
+
+228
+00:18:52.968 --> 00:18:56.328
+lo que me está hablando, solo lo que voy a hacer es seguir los pasos que me va
+
+229
+00:18:56.358 --> 00:18:57.258
+indicando la IA.
+
+230
+00:18:59.298 --> 00:19:04.998
+Y la IA puede estar llevándome a un camino que es equivocado, y no por culpa de la
+
+231
+00:19:05.058 --> 00:19:08.659
+IA en sí, sino que yo no la estoy guiando con mi criterio.
+
+232
+00:19:09.617 --> 00:19:10.998
+Y eso es lo que van a aprender acá.
+
+233
+00:19:13.188 --> 00:19:17.628
+Y yo creo que hasta este punto, este módulo cinco, ustedes tienen un muy buen
+
+234
+00:19:17.688 --> 00:19:23.208
+criterio, porque ya han pasado por el IAR, por el LOG, por un montón de
+
+235
+00:19:23.238 --> 00:19:23.718
+cosas.
+
+236
+00:19:25.698 --> 00:19:30.528
+Entonces, en esta demostración se puede ver cómo puedo mejorar mi proyecto BIM.
+
+237
+00:19:32.388 --> 00:19:37.758
+Es una consulta muy genérica. Actúa como un asesor de BIM Management.
+
+238
+00:19:37.788 --> 00:19:41.089
+Estamos desarrollando un edificio y necesitamos mejorar el control de información
+
+239
+00:19:41.149 --> 00:19:44.358
+de los elementos estructurales. Identifica para cada problema y propone un
+
+240
+00:19:44.388 --> 00:19:46.698
+requisito. ¿Cuál es la diferencia entre uno y el otro?
+
+241
+00:19:46.848 --> 00:19:50.748
+¿Uno es más largo que el otro? No, sino que esto tiene un criterio.
+
+242
+00:19:51.738 --> 00:19:51.828
+Y
+
+243
+00:19:55.668 --> 00:19:58.848
+eso los voy a estar comiendo la cabeza hasta
+
+244
+00:19:58.907 --> 00:20:02.538
+el final.
+
+245
+00:20:08.508 --> 00:20:10.548
+Anatomía del prompt estructurado.
+
+246
+00:20:15.108 --> 00:20:16.188
+Vamos con rol.
+
+247
+00:20:17.688 --> 00:20:19.608
+Tú le tienes que decir cuál es tu rol.
+
+248
+00:20:22.368 --> 00:20:25.638
+Vas a actuar como BIM Manager, como modelador, porque el criterio cambia.
+
+249
+00:20:25.668 --> 00:20:29.058
+El criterio de un modelador no es el mismo de un BIM Manager, no es el mismo de un
+
+250
+00:20:29.089 --> 00:20:33.708
+BIM Coordinator. Tienes que darle un contexto y tienes que darle un objetivo.
+
+251
+00:20:34.368 --> 00:20:37.848
+Tienes que darle restricciones y tienes que darle un resultado.
+
+252
+00:20:39.768 --> 00:20:42.649
+Seguramente les ha pasado cuando hablan con ChatGPT.
+
+253
+00:20:43.068 --> 00:20:47.089
+Si a ChatGPT tú no le das, por ejemplo, o con Claude, con cualquier IA,
+
+254
+00:20:49.098 --> 00:20:51.438
+no le indicas qué quieres tú de resultado,
+
+255
+00:20:53.118 --> 00:20:58.968
+tú puedes pasar horas y horas y horas y
+
+256
+00:20:59.058 --> 00:21:04.698
+horas y das vuelta y vuelta y vuelta y nunca llegas a nada.
+
+257
+00:21:07.218 --> 00:21:12.048
+Aquí no nos sirve de nada la IA si no nos da un resultado.
+
+258
+00:21:13.758 --> 00:21:15.288
+Y eso lo marcamos nosotros.
+
+259
+00:21:21.168 --> 00:21:26.418
+Esto lo vamos a aprender en el tema dos, donde cada quien va a aprender su
+
+260
+00:21:28.038 --> 00:21:29.238
+propio prompt maestro.
+
+261
+00:21:31.218 --> 00:21:31.938
+Y sobre todo,
+
+262
+00:21:33.738 --> 00:21:38.178
+van a ver la capacidad de razonar y decir: "Esta respuesta está bien, esta
+
+263
+00:21:38.238 --> 00:21:43.098
+respuesta está mal. Por aquí no, por aquí sí". Eso depende del criterio.
+
+264
+00:21:44.058 --> 00:21:48.168
+Entonces, ¿cuál es la primera actividad
+
+265
+00:21:49.818 --> 00:21:54.048
+que ustedes van a tener? Actividad corta y sencilla.
+
+266
+00:21:58.188 --> 00:22:01.128
+De este módulo van a tener tres actividades,
+
+267
+00:22:02.688 --> 00:22:04.458
+que los va a llevar al primer entregable.
+
+268
+00:22:04.818 --> 00:22:07.668
+La primera actividad es la identificación del problema de tesis.
+
+269
+00:22:09.409 --> 00:22:15.318
+Son tres pasos guiados donde ustedes primero tienen que identificar el proyecto,
+
+270
+00:22:15.708 --> 00:22:17.988
+si es opción A, opción B, opción C.
+
+271
+00:22:19.578 --> 00:22:21.138
+Por favor, les voy a pedir,
+
+272
+00:22:22.518 --> 00:22:27.798
+porque nos han llegado un par así. Si van a hacer un proyecto propio, está bien,
+
+273
+00:22:29.089 --> 00:22:33.798
+pero me tienen que justificar el proyecto propio con los estándares que estaban en
+
+274
+00:22:33.858 --> 00:22:39.589
+la comunidad. Es decir, no me pueden decir: "Sí, yo voy a hacer un proyecto propio,
+
+275
+00:22:41.899 --> 00:22:43.098
+que es un edificio".
+
+276
+00:22:45.558 --> 00:22:46.548
+No me están diciendo nada.
+
+277
+00:22:48.798 --> 00:22:53.238
+No es que me tienen que hacer una defensa de su proyecto propio, pero yo les dejé
+
+278
+00:22:53.298 --> 00:22:59.058
+unos estándares, unos lineamientos en la comunidad, ya se los voy a mostrar, para
+
+279
+00:22:59.118 --> 00:23:00.498
+la selección del proyecto propio.
+
+280
+00:23:01.308 --> 00:23:04.818
+Hasta que esos lineamientos no estén claros, no se aprueba el proyecto propio.
+
+281
+00:23:06.258 --> 00:23:09.258
+Los estándares eran sencillos, ahorita lo vamos a ver.
+
+282
+00:23:10.188 --> 00:23:13.998
+Entonces, el paso uno es qué proyecto van a trabajar.
+
+283
+00:23:15.138 --> 00:23:15.888
+El paso dos:
+
+284
+00:23:17.118 --> 00:23:21.948
+qué problema o proceso BIM me gustaría mejorar dentro de este proyecto.
+
+285
+00:23:23.748 --> 00:23:28.128
+Formación incompleta, revisión de documentación, clasificación de incidencias,
+
+286
+00:23:28.188 --> 00:23:29.628
+coordinación y reportes.
+
+287
+00:23:31.399 --> 00:23:34.188
+Hay falta de criterios, parámetros BIM, procesos manuales.
+
+288
+00:23:34.188 --> 00:23:34.668
+Es decir,
+
+289
+00:23:35.868 --> 00:23:37.668
+cuál va a ser su planteamiento del problema.
+
+290
+00:23:37.968 --> 00:23:41.628
+Como toda tesis, toda tesis se basa en qué: en un problema,
+
+291
+00:23:43.068 --> 00:23:45.348
+cuál va a ser su solución y
+
+292
+00:23:46.818 --> 00:23:47.538
+la conclusión.
+
+293
+00:23:49.698 --> 00:23:54.858
+Ojo, yo la tesis no la voy a marcar en algo muy académico,
+
+294
+00:23:54.978 --> 00:24:00.198
+como si ustedes se imaginan su tesis de que estuvieron en pregrado o en posgrado,
+
+295
+00:24:00.288 --> 00:24:05.839
+no. Es más esto práctico, pero debe tener un problema.
+
+296
+00:24:06.589 --> 00:24:09.738
+No es presentar un proyecto, aquí está el proyecto
+
+297
+00:24:11.028 --> 00:24:15.348
+y no hay ningún problema. No, porque todo proyecto que se realiza en la práctica
+
+298
+00:24:15.409 --> 00:24:17.089
+profesional parte de un problema.
+
+299
+00:24:19.668 --> 00:24:22.788
+Y el paso tres, definir la oportunidad de IA.
+
+300
+00:24:24.168 --> 00:24:30.018
+Es decir, tenemos un proyecto, hay un problema, proceso, aplicación de
+
+301
+00:24:30.078 --> 00:24:33.948
+IA, que va a ser nuestro agente, y vamos a generar un resultado X.
+
+302
+00:24:37.038 --> 00:24:37.548
+Entonces,
+
+303
+00:24:41.928 --> 00:24:45.589
+al seleccionar se proporciona este proyecto.
+
+304
+00:24:48.258 --> 00:24:49.938
+Vuelvo y repito, tiene que estar 30 octavos.
+
+305
+00:24:49.997 --> 00:24:53.028
+Pueden seleccionar la opción A o opción B, se proporciona.
+
+306
+00:24:55.578 --> 00:24:57.708
+Y si es propio, lo tienen que justificar.
+
+307
+00:24:57.768 --> 00:25:01.428
+Pero vuelvo y repito, no es la justificación: "Voy a hacer un proyecto de un
+
+308
+00:25:01.458 --> 00:25:01.968
+edificio".
+
+309
+00:25:04.548 --> 00:25:09.348
+Qué tipo de edificio, con qué condiciones, tiene que estar bien claro eso.
+
+310
+00:25:10.548 --> 00:25:12.378
+Entonces, esto lo vamos a desarrollar.
+
+311
+00:25:12.678 --> 00:25:16.098
+¿Esta actividad cuándo la vamos a desarrollar? A partir de la próxima semana.
+
+312
+00:25:19.399 --> 00:25:23.988
+Desde el lunes yo les empiezo a cargar las sesiones asincrónicas, las sesiones
+
+313
+00:25:24.018 --> 00:25:25.248
+asincrónicas del módulo cinco,
+
+314
+00:25:26.508 --> 00:25:30.078
+y la próxima semana vamos a definir esta primera actividad.
+
+315
+00:25:33.438 --> 00:25:34.488
+Por poner un ejemplo:
+
+316
+00:25:35.688 --> 00:25:39.018
+yo voy a hacer un edificio residencial que trabaje en Design Model.
+
+317
+00:25:39.468 --> 00:25:43.279
+El problema es revisión manual de parámetros BIM que estuvieron incompletos.
+
+318
+00:25:43.728 --> 00:25:47.358
+El proceso a mejorar es un control de calidad de información estructural.
+
+319
+00:25:47.779 --> 00:25:52.368
+Mi aplicación de IA va a interpretar los resultados del QA/QC y estructurar
+
+320
+00:25:52.428 --> 00:25:56.538
+informes. Y el resultado esperado es que es una propuesta de un flujo de auditoría
+
+321
+00:25:56.868 --> 00:25:58.698
+y reporte con validación humana.
+
+322
+00:26:01.878 --> 00:26:03.708
+Ahí estamos identificando problema.
+
+323
+00:26:04.639 --> 00:26:08.058
+Proceso a mejorar, aplicación de IA y resultado esperado.
+
+324
+00:26:09.919 --> 00:26:14.958
+Entonces,
+
+325
+00:26:17.808 --> 00:26:18.139
+acá,
+
+326
+00:26:19.698 --> 00:26:21.738
+déjenme ir un momento.
+
+327
+00:26:23.419 --> 00:26:24.558
+Ustedes están acá.
+
+328
+00:26:26.328 --> 00:26:26.899
+Máster.
+
+329
+00:26:28.758 --> 00:26:32.149
+Yo les pasé, vuelvo y repito, el enlace de la comunidad.
+
+330
+00:26:39.618 --> 00:26:41.238
+Este enlace lo voy a abrir desde
+
+331
+00:26:46.339 --> 00:26:50.029
+aquí, a ver si lo puedo abrir acá. Un segundo.
+
+332
+00:26:53.899 --> 00:26:54.018
+Ya.
+
+333
+00:27:00.678 --> 00:27:06.558
+Ahí está. Entonces, ustedes acá en la comunidad, módulo cinco, que es
+
+334
+00:27:06.558 --> 00:27:10.548
+donde estamos actualmente. Recuerden que en el módulo cuatro no está el proyecto,
+
+335
+00:27:10.908 --> 00:27:14.089
+módulo cinco. El proyecto del módulo cuatro, me refiero.
+
+336
+00:27:14.598 --> 00:27:18.529
+Aquí en el módulo cinco está: selección del proyecto final tipo tesis.
+
+337
+00:27:19.128 --> 00:27:24.738
+Y aquí ya les coloqué opción uno, es un edificio residencial. Opción dos.
+
+338
+00:27:28.308 --> 00:27:28.669
+Se me fue
+
+339
+00:27:33.612 --> 00:27:34.092
+Aquí está.
+
+340
+00:27:35.563 --> 00:27:39.703
+Opción dos es un edificio industrial, opción tres, proyecto propio.
+
+341
+00:27:40.632 --> 00:27:45.492
+Entonces, aquí ustedes colocan nombre, profesión, país, correo, número de contacto,
+
+342
+00:27:45.522 --> 00:27:51.462
+opción seleccionada, nombre de identificación del proyecto, tipología, si es
+
+343
+00:27:51.492 --> 00:27:53.263
+que están en la parte del proyecto propio,
+
+344
+00:27:54.492 --> 00:27:58.992
+breve descripción, motivo de selección y objetivo general que es para desarrollar
+
+345
+00:27:59.533 --> 00:28:03.522
+durante ese proyecto final. Eso lo colocan en asunto del correo, selección,
+
+346
+00:28:03.552 --> 00:28:05.802
+proyecto final, tipología y nombre y apellido.
+
+347
+00:28:06.942 --> 00:28:12.072
+Pero si no se coloca tipología, ni breve descripción, ni motivo de selección, ni
+
+348
+00:28:12.132 --> 00:28:14.502
+objetivo, en el proyecto propio, básicamente, no
+
+349
+00:28:16.722 --> 00:28:18.732
+se puede aprobar el proyecto propio.
+
+350
+00:28:18.852 --> 00:28:22.182
+Necesito saber un poquito la tipología del proyecto, una descripción y motivo de
+
+351
+00:28:22.242 --> 00:28:27.432
+selección. ¿Está clara esta parte?
+
+352
+00:28:30.612 --> 00:28:32.292
+Igual les envío el enlace a la comunidad.
+
+353
+00:28:33.042 --> 00:28:36.432
+Lo voy a volver a enviar para acá, para que ustedes lo tengan.
+
+354
+00:28:40.092 --> 00:28:42.732
+Perfecto. Entonces,
+
+355
+00:28:47.112 --> 00:28:52.692
+para cerrar. ¿Dónde quedaba yo? Aquí, disculpen.
+
+356
+00:28:55.302 --> 00:28:58.272
+La próxima semana, el lunes, empiezan las lecciones asincrónicas.
+
+357
+00:28:59.022 --> 00:29:00.162
+Vamos a estar tres semanas.
+
+358
+00:29:01.692 --> 00:29:07.362
+Nos vamos a ver martes y jueves, como hicimos igual que el módulo
+
+359
+00:29:07.422 --> 00:29:13.393
+cuatro. Martes, jueves. Mañana que es fiesta
+
+360
+00:29:13.421 --> 00:29:17.292
+y el jueves se complicó todo un montón, pero yo les voy a agendar las clases para
+
+361
+00:29:17.322 --> 00:29:22.783
+que les llegue a sus correos. Esta no les llegó porque se difundía un poquito entre
+
+362
+00:29:22.842 --> 00:29:27.432
+que nos llegó las titulaciones y que hay que hacer entregas y lo demás, pero
+
+363
+00:29:28.542 --> 00:29:33.882
+yo les voy a agendar que las próximas tres semanas, martes y jueves y las horas, y
+
+364
+00:29:33.942 --> 00:29:35.022
+siempre lo voy a decir por el
+
+365
+00:29:39.132 --> 00:29:44.682
+grupo. La próxima semana van a empezar las lecciones asincrónicas y en las sesiones
+
+366
+00:29:44.712 --> 00:29:48.972
+de refuerzo en vivo me voy a concentrar más en la parte de los entregables que
+
+367
+00:29:49.033 --> 00:29:50.322
+empiezan para su tesis.
+
+368
+00:29:55.572 --> 00:29:55.842
+Hoy
+
+369
+00:29:57.283 --> 00:29:59.322
+entendimos lo que vamos a generar.
+
+370
+00:30:00.462 --> 00:30:04.302
+La sesión del refuerzo dos va a ser construir y empezar a validar los prompts
+
+371
+00:30:04.362 --> 00:30:08.893
+maestros. La sesión de refuerzo tres es aplicar bien el sistema por el proyecto.
+
+372
+00:30:09.763 --> 00:30:14.082
+La sesión de refuerzo cuatro es diseñar el agente bien conceptual y construir
+
+373
+00:30:16.513 --> 00:30:17.742
+lo que es nuestro entregable
+
+374
+00:30:19.482 --> 00:30:20.502
+del módulo cinco.
+
+375
+00:30:22.632 --> 00:30:25.332
+Las sesiones de refuerzo van a tener parte A y parte B.
+
+376
+00:30:25.422 --> 00:30:30.283
+Es decir, esta sesión de refuerzo dos va a tener parte A martes,
+
+377
+00:30:31.063 --> 00:30:36.192
+parte B jueves. Todas las sesiones de refuerzo van a tener dos partes, martes y
+
+378
+00:30:36.252 --> 00:30:38.322
+jueves. Una el martes, la otra el jueves.
+
+379
+00:30:38.832 --> 00:30:43.572
+En la segunda semana, la sesión de refuerzo tres, parte A el martes, parte B el
+
+380
+00:30:43.602 --> 00:30:47.922
+jueves. Es decir, para que ustedes lo vayan desarrollando paso a paso.
+
+381
+00:30:47.982 --> 00:30:51.162
+No es que yo les voy a lanzar toda la información por la cabeza, acabamos un módulo
+
+382
+00:30:51.192 --> 00:30:54.852
+y pasamos al siguiente, porque hay que terminar. No, jamás.
+
+383
+00:30:58.872 --> 00:31:03.852
+La idea es una progresión clara sin sobrecarga, como hicimos en el módulo cuatro.
+
+384
+00:31:04.302 --> 00:31:09.763
+Vean que el módulo cuatro hubiese parecido un principio que era Dynamo y
+
+385
+00:31:09.822 --> 00:31:15.763
+Python, y al final todos lo entendieron de la manera práctica posible, con su
+
+386
+00:31:15.822 --> 00:31:19.453
+conceptual y con su práctica que desarrollamos en vivo.
+
+387
+00:31:20.172 --> 00:31:25.932
+Nos vamos a ver el próximo martes. Esta
+
+388
+00:31:25.992 --> 00:31:27.882
+clase ya la subo a la plataforma.
+
+389
+00:31:30.522 --> 00:31:31.212
+El objetivo
+
+390
+00:31:33.462 --> 00:31:38.232
+no es comenzar con ChatGPT o con Cloud, sino que tenemos que entender cuál es el
+
+391
+00:31:38.292 --> 00:31:42.522
+problema para que realmente tenga sentido lo que vamos a resolver.
+
+392
+00:31:43.692 --> 00:31:48.672
+Nosotros definimos el problema con precisión técnica, la AI assist en análisis y la
+
+393
+00:31:48.703 --> 00:31:52.572
+estructuración, y nosotros validamos los resultados con criterios.
+
+394
+00:31:52.632 --> 00:31:55.572
+Ese es el objetivo. Y que hagan su primer agente.
+
+395
+00:31:55.632 --> 00:31:58.122
+Si no lo han hecho, lo van a hacer conmigo.
+
+396
+00:31:58.122 --> 00:32:01.002
+¿Está claro
+
+397
+00:32:02.652 --> 00:32:04.842
+lo que nos viene, el camino que vamos a recorrer
+
+398
+00:32:09.462 --> 00:32:11.533
+las próximas tres semanas? Martes, jueves.
+
+399
+00:32:21.462 --> 00:32:24.372
+Nos vemos el martes. Nos vemos el martes, chicos,
+
+400
+00:32:25.752 --> 00:32:28.962
+vayan preparándose, sigan trabajando el módulo cuatro.
+
+401
+00:32:28.992 --> 00:32:34.122
+Recuerden que la entrega del proyecto del módulo cuatro no tiene fecha límite,
+
+402
+00:32:34.962 --> 00:32:40.362
+pero sí tienen que entregar el proyecto antes de que se acabe el máster.
+
+403
+00:32:40.453 --> 00:32:44.982
+Es decir, si ustedes hayan entregado todos los avances de tesis, pero les queda
+
+404
+00:32:45.042 --> 00:32:49.542
+todavía entregar el proyecto del módulo cuatro, eso va a ser un requisito que va a
+
+405
+00:32:49.572 --> 00:32:52.722
+pesar. Tienen que entregar el proyecto del módulo cuatro.
+
+406
+00:32:54.612 --> 00:32:58.122
+Traten de irlo desarrollando poco a poco, terminarlo.
+
+407
+00:32:58.182 --> 00:33:01.122
+Es un proyecto más sencillo, considero yo, que los tres adicionales.
+
+408
+00:33:02.322 --> 00:33:06.522
+Solo viendo las sesiones de refuerzo y viendo las sesiones asincrónicas, lo sacan.
+
+409
+00:33:09.313 --> 00:33:12.192
+Nos vemos el martes, que tengan un excelente fin de semana.
+
+410
+00:33:12.732 --> 00:33:14.742
+Arrancamos oficialmente el módulo cinco
+
+411
+00:33:16.872 --> 00:33:20.472
+y vamos a tener un agente de IA. Vamos a comprometernos para que todos hagamos un
+
+412
+00:33:20.472 --> 00:33:24.432
+agente de IA. Cuídense mucho. Nos vemos el martes.

@@ -1,0 +1,1957 @@
+WEBVTT
+
+1
+00:00:02.670 --> 00:00:07.051
+Buenas noches, estimados, ¿cómo están?
+
+2
+00:00:07.140 --> 00:00:08.760
+Espero que se encuentren muy bien.
+
+3
+00:00:10.260 --> 00:00:14.130
+Esta va a ser nuestra primera sesión, un poquito después de resetear lo que
+
+4
+00:00:14.160 --> 00:00:15.331
+estuvimos hablando el
+
+5
+00:00:16.951 --> 00:00:19.440
+martes, que hablamos largo y tendido.
+
+6
+00:00:21.510 --> 00:00:26.911
+Voy a utilizar esto como las sesiones, parte práctica.
+
+7
+00:00:27.030 --> 00:00:31.680
+Y esta sesión yo la voy a utilizar como sesión de refuerzo, proyecto final, parte
+
+8
+00:00:31.800 --> 00:00:34.231
+uno, para aterrizar
+
+9
+00:00:35.490 --> 00:00:41.370
+base. De este módulo vamos a tener cuatro sesiones de refuerzo al proyecto final.
+
+10
+00:00:41.580 --> 00:00:42.510
+Esta será la primera.
+
+11
+00:00:43.740 --> 00:00:46.140
+Esta primera va a tener una duración de 40 minutos.
+
+12
+00:00:47.820 --> 00:00:51.571
+Luego, la próxima semana vamos a tener dos
+
+13
+00:00:53.160 --> 00:00:58.860
+y la de arriba uno. Y con eso ustedes van a presentarme el proyecto final, tanto en
+
+14
+00:00:58.890 --> 00:01:00.090
+Dynamo como en Python.
+
+15
+00:01:02.761 --> 00:01:03.856
+Antes de comenzar,
+
+16
+00:01:05.371 --> 00:01:06.270
+déjenme
+
+17
+00:01:06.285 --> 00:01:11.880
+mostrarles
+
+18
+00:01:11.940 --> 00:01:15.330
+acá un poco cómo vamos.
+
+19
+00:01:16.801 --> 00:01:22.620
+Para ponerlos en contexto. Este no es.
+
+20
+00:01:23.160 --> 00:01:28.560
+Aquí tengo el enlace de la
+
+21
+00:01:28.590 --> 00:01:29.400
+comunidad.
+
+22
+00:01:31.950 --> 00:01:32.640
+Este que está acá.
+
+23
+00:01:35.880 --> 00:01:41.400
+Vamos a colocar este tema de la clase y fíjense en el módulo
+
+24
+00:01:41.580 --> 00:01:46.830
+cuatro, ustedes pueden ver el cronograma de
+
+25
+00:01:47.370 --> 00:01:50.521
+clases. Módulo cuatro de la comunidad.
+
+26
+00:01:53.610 --> 00:01:57.630
+Básicamente, hoy tenemos la parte del tema dos.
+
+27
+00:01:58.351 --> 00:02:03.780
+Las actividades prácticas yo se las voy a estar subiendo en la misma comunidad, lo
+
+28
+00:02:03.810 --> 00:02:05.940
+que me interesa es que vayan visualizando
+
+29
+00:02:08.010 --> 00:02:08.790
+los videos.
+
+30
+00:02:11.610 --> 00:02:15.645
+Vean lo siguiente. Con ese cronograma, si ustedes se van a entrar,
+
+31
+00:02:17.130 --> 00:02:21.960
+justo antes de la clase he estado habilitando los videos.
+
+32
+00:02:22.020 --> 00:02:27.300
+Me faltan dos más por habilitar. Pero ya pueden ver en la plataforma,
+
+33
+00:02:28.020 --> 00:02:29.130
+en el módulo cuatro,
+
+34
+00:02:30.570 --> 00:02:32.775
+en el tema uno, las cuatro sesiones.
+
+35
+00:02:32.880 --> 00:02:35.370
+Tema dos son cinco sesiones, faltan dos por habilitar.
+
+36
+00:02:35.970 --> 00:02:39.601
+Las habilito a las ocho de la noche, siempre las voy a habilitar ocho de la noche,
+
+37
+00:02:39.870 --> 00:02:45.330
+hora Ecuador, de lunes a jueves. Vuelvo y repito: esta es la carga sincrónica del
+
+38
+00:02:45.391 --> 00:02:47.430
+curso para que ustedes puedan ir avanzando.
+
+39
+00:02:47.730 --> 00:02:51.840
+Las sesiones en vivo son el termómetro para irlos preparando.
+
+40
+00:02:52.560 --> 00:02:57.240
+En este caso, el módulo cuatro ya es el proyecto final y a partir del módulo cinco,
+
+41
+00:02:57.391 --> 00:02:58.171
+su tesis.
+
+42
+00:02:59.550 --> 00:03:03.510
+Entonces, ya pueden comenzar con la revisión de las lecciones, por favor.
+
+43
+00:03:04.320 --> 00:03:10.290
+Y estas dos que me faltan, yo creo que los días de clase o se las subo más
+
+44
+00:03:10.320 --> 00:03:10.950
+temprano,
+
+45
+00:03:12.781 --> 00:03:16.320
+creo que va a ser para que no me choque justo en la cara cuando tengo que darles la
+
+46
+00:03:17.910 --> 00:03:23.760
+clase. Pero esto ya lo pueden revisar y también, no
+
+47
+00:03:23.910 --> 00:03:27.451
+sé si me pueden contestar por el chat, si ya accedieron al GPT.
+
+48
+00:03:27.720 --> 00:03:32.520
+Yo se los puse acá en el módulo cuatro, en Bing Assistant Pro.
+
+49
+00:03:33.360 --> 00:03:37.320
+No sé si pudieron acceder al asistente virtual.
+
+50
+00:03:38.940 --> 00:03:43.620
+Ahí me van confirmando si ya pudieron acceder.
+
+51
+00:03:45.435 --> 00:03:50.880
+Lo compartí, está en la comunidad y también se los compartí por WhatsApp.
+
+52
+00:03:51.541 --> 00:03:52.620
+A ver, José Luis, sí.
+
+53
+00:03:54.031 --> 00:03:58.620
+Okey, ya. Perfecto. Déjenme aquí.
+
+54
+00:04:00.510 --> 00:04:03.180
+Okey. Entonces,
+
+55
+00:04:05.370 --> 00:04:07.110
+genial. Listo.
+
+56
+00:04:08.190 --> 00:04:13.320
+Consulta para todos, ¿cuál es el objetivo del asistente?
+
+57
+00:04:14.685 --> 00:04:17.880
+¿En qué piensan que vamos a estar utilizando este asistente?
+
+58
+00:04:27.180 --> 00:04:31.320
+Consulta rápido. ¿Qué creen que vamos a estar utilizando este asistente?
+
+59
+00:04:35.820 --> 00:04:40.110
+Este asistente lo van a usar para el seguimiento de las clases y tener guías para
+
+60
+00:04:40.140 --> 00:04:42.420
+poder automatizar. Exactamente.
+
+61
+00:04:43.410 --> 00:04:43.966
+Y para
+
+62
+00:04:45.480 --> 00:04:47.580
+luego ir a la parte de inteligencia artificial.
+
+63
+00:04:47.670 --> 00:04:50.281
+En el siguiente módulo vamos a hacer una conexión que
+
+64
+00:04:52.980 --> 00:04:56.580
+va a estar bastante interesante, pero es una guía no solo para automatizar
+
+65
+00:04:57.360 --> 00:05:02.520
+y también trabajar de forma más rápida, sino
+
+66
+00:05:02.610 --> 00:05:03.390
+básicamente,
+
+67
+00:05:04.740 --> 00:05:10.410
+en vez de consultarme, por ejemplo a mí, 24/7, tienen acá cargado básicamente
+
+68
+00:05:12.690 --> 00:05:18.360
+toda la información del máster 24/7. Como si tuvieran un profesor particular.
+
+69
+00:05:19.125 --> 00:05:23.190
+¿Cuál es la diferencia entre este GPT y un GPT normal?
+
+70
+00:05:23.341 --> 00:05:28.140
+Es la capacidad de raciocinio. Porque este tiene una capacidad de raciocinio
+
+71
+00:05:28.170 --> 00:05:33.091
+analítica de lo que, realmente, si falta información de lo que ustedes le están
+
+72
+00:05:33.120 --> 00:05:34.770
+preguntando, él se las va a detectar.
+
+73
+00:05:36.240 --> 00:05:41.760
+Así que tienen que utilizarlo. Y si no utilizan GPT, no importa, tienen que
+
+74
+00:05:41.790 --> 00:05:45.300
+acostumbrarse a utilizarlo, porque si van a hacer un "bim management"
+
+75
+00:05:46.770 --> 00:05:50.550
+con inteligencia artificial, sí o sí, tienen que hacer uso de estas herramientas.
+
+76
+00:05:51.570 --> 00:05:52.110
+¿Está claro?
+
+77
+00:05:53.610 --> 00:05:58.951
+Repito, si van a hacer "bim management" con inteligencia artificial, esto no es
+
+78
+00:05:58.980 --> 00:06:02.940
+negociable. Tienen que hacer uso de estas herramientas.
+
+79
+00:06:03.570 --> 00:06:06.750
+Dicho esto, ¿qué vamos a hacer en la primera parte del proyecto de hoy?
+
+80
+00:06:07.320 --> 00:06:13.020
+Si yo les muestro esto así, capaz se van a asustar, pero les aseguro que generar
+
+81
+00:06:13.050 --> 00:06:14.400
+esta programación visual
+
+82
+00:06:15.660 --> 00:06:19.980
+que se está viendo en este momento, es lo más sencillo posible.
+
+83
+00:06:20.190 --> 00:06:23.895
+Uno, ya cuando empiecen a ver las lecciones lo van a entender porque van a tener un
+
+84
+00:06:23.895 --> 00:06:28.439
+"background", y dos, porque vamos a trabajar con nuestro asistente.
+
+85
+00:06:29.910 --> 00:06:34.980
+El objetivo aquí de Dynamo es que yo no quiero llenarlos de
+
+86
+00:06:38.070 --> 00:06:43.936
+un conocimiento de programador, no, porque el objetivo del "bim management"
+
+87
+00:06:44.010 --> 00:06:49.860
+es verificar modelos de calidad. Y un modelo de calidad no es desde el
+
+88
+00:06:49.890 --> 00:06:54.570
+punto de vista geométrico, sino de información. Ese es nuestro objetivo.
+
+89
+00:06:54.600 --> 00:07:00.151
+Por eso Dynamo está enfocado en revisión de QAC, parámetros de vacío,
+
+90
+00:07:00.240 --> 00:07:01.995
+control de calidad, etcétera.
+
+91
+00:07:03.300 --> 00:07:09.255
+Vamos a hacer lo siguiente, fíjense, para nosotros llegar aquí, voy a
+
+92
+00:07:09.331 --> 00:07:10.020
+eliminar esto,
+
+93
+00:07:11.910 --> 00:07:12.510
+así como está.
+
+94
+00:07:15.091 --> 00:07:19.500
+Y cómo nosotros entrábamos a Dynamo, si ustedes bien se recuerdan,
+
+95
+00:07:19.591 --> 00:07:24.780
+estos cambios que están acá los voy a
+
+96
+00:07:25.050 --> 00:07:25.831
+guardar
+
+97
+00:07:27.841 --> 00:07:29.940
+así como está, los voy a cerrar.
+
+98
+00:07:31.470 --> 00:07:37.110
+Y nosotros teníamos este modelo. Este modelo se los voy a alojar también en la
+
+99
+00:07:37.410 --> 00:07:43.350
+comunidad. Me falta alojarlo en las lecciones prácticas que tienen en la lección
+
+100
+00:07:43.410 --> 00:07:44.341
+1.4 del
+
+101
+00:07:45.720 --> 00:07:49.500
+tema uno. Este es un modelo sencillo y en este modelo
+
+102
+00:07:51.120 --> 00:07:53.460
+se había creado un parámetro bien responsable.
+
+103
+00:07:53.760 --> 00:07:56.430
+Esto ya lo habíamos generado,
+
+104
+00:07:57.630 --> 00:08:01.140
+pero vamos a partir nuevamente desde cero para
+
+105
+00:08:04.530 --> 00:08:06.420
+hacerlo paso a paso. Lo hagamos juntos.
+
+106
+00:08:06.720 --> 00:08:12.570
+Yo en el proyecto final de este módulo cuatro, les voy a dar 10
+
+107
+00:08:12.660 --> 00:08:18.300
+casos de automatización que tienen que gestionar como "bim manager" para
+
+108
+00:08:18.331 --> 00:08:21.870
+verificar matriz NOI y verificar QAC.
+
+109
+00:08:22.500 --> 00:08:27.540
+Son 10 casos sencillos, pero tienen que resolver esos 10 casos, porque resolver
+
+110
+00:08:27.570 --> 00:08:32.280
+esos 10 casos, créanme que esos son 10 casos representativos que van el día de
+
+111
+00:08:32.311 --> 00:08:35.790
+mañana a poderlo aplicar en automatización. Es el proyecto final.
+
+112
+00:08:37.260 --> 00:08:40.050
+En las sesiones en vivo vamos a ver un caso.
+
+113
+00:08:41.850 --> 00:08:45.825
+Bueno, yo voy a tratar de que veamos tres casos, pero representativamente vamos a
+
+114
+00:08:45.901 --> 00:08:49.110
+ver un caso incluyendo hasta la parte de Python.
+
+115
+00:08:49.350 --> 00:08:54.270
+¿Qué sucede? Yo aquí les traje esta
+
+116
+00:08:54.300 --> 00:09:00.120
+presentación de automatización QAC en Revit
+
+117
+00:09:00.151 --> 00:09:03.480
+con Dynamo. Esta va a ser la parte uno.
+
+118
+00:09:03.540 --> 00:09:06.181
+Son cuatro partes nuestro proyecto final.
+
+119
+00:09:08.545 --> 00:09:13.464
+¿De qué trata esto? Va del control y actualización del parámetro BIM responsable en
+
+120
+00:09:13.494 --> 00:09:15.384
+vigas estructurales mediante un flujo
+
+121
+00:09:15.894 --> 00:09:21.564
+automatizado de
+
+122
+00:09:21.594 --> 00:09:26.604
+verificación y corrección. Pregunta: ¿por qué son tan importantes los parámetros o
+
+123
+00:09:26.634 --> 00:09:29.664
+atributos para nosotros como BIM manager
+
+124
+00:09:31.344 --> 00:09:35.064
+en cualquier modelo de las disciplinas de estructuras, arquitectura o MEP?
+
+125
+00:09:35.394 --> 00:09:40.374
+Porque para nosotros, como BIM manager, los parámetros son fundamentales.
+
+126
+00:09:43.884 --> 00:09:48.325
+Es decir, un BIM manager que no puede revisar parámetros, básicamente, no es BIM
+
+127
+00:09:48.354 --> 00:09:53.934
+manager. ¿Por qué son tan importantes los parámetros para
+
+128
+00:09:53.994 --> 00:09:55.404
+nosotros como BIM manager?
+
+129
+00:10:01.734 --> 00:10:05.004
+Después de haber visto tres módulos, la respuesta tiene que ser…
+
+130
+00:10:07.674 --> 00:10:08.619
+Le tienen que tener,
+
+131
+00:10:10.014 --> 00:10:10.404
+¿por qué?
+
+132
+00:10:12.594 --> 00:10:17.934
+Porque nos da información y con ello se toman decisiones.
+
+133
+00:10:18.264 --> 00:10:20.979
+Perfecto. ¿Están de acuerdo con Dennis?
+
+134
+00:10:23.154 --> 00:10:28.764
+Es decir, si nosotros no podemos gestionar los parámetros o la
+
+135
+00:10:28.795 --> 00:10:34.284
+información de dichos parámetros, no podemos: uno, tomar
+
+136
+00:10:34.314 --> 00:10:38.634
+decisiones; dos, verificar
+
+137
+00:10:40.344 --> 00:10:45.864
+todo lo que nosotros hicimos en el BEP, por ejemplo, o todo lo que
+
+138
+00:10:46.614 --> 00:10:48.114
+ustedes hicieron en la matriz Noi.
+
+139
+00:10:49.509 --> 00:10:50.694
+¿Se acuerdan de la matriz Noi?
+
+140
+00:10:51.955 --> 00:10:53.274
+Después vamos a cambiar a otro
+
+141
+00:10:54.774 --> 00:10:57.234
+data exchange, que es el OE, etcétera.
+
+142
+00:10:58.539 --> 00:11:01.434
+Pero si nosotros no sabemos verificar parámetros,
+
+143
+00:11:03.714 --> 00:11:09.564
+básicamente, ni vamos a aplicar el BEP, no podemos ver matriz Noi y no
+
+144
+00:11:09.654 --> 00:11:11.455
+podemos verificar QaQC.
+
+145
+00:11:13.944 --> 00:11:17.244
+Por eso, uno de los casos sustanciales va en parámetros.
+
+146
+00:11:17.274 --> 00:11:22.075
+A nosotros no nos interesa hacer automatizaciones en Dynamo de cambiar columnas.
+
+147
+00:11:22.374 --> 00:11:25.554
+Nos interesa gestionar la información de los parámetros.
+
+148
+00:11:26.124 --> 00:11:28.194
+Y ese es el primer caso que vamos a ver el día de hoy.
+
+149
+00:11:28.914 --> 00:11:33.924
+Ustedes ya saben qué son los parámetros. El contexto es el siguiente.
+
+150
+00:11:35.424 --> 00:11:40.914
+Objetivo principal: construir una automatización básica de QaQC en Dynamo
+
+151
+00:11:41.004 --> 00:11:45.804
+aplicado a un modelo de Revit, convirtiendo una necesidad BIM en un flujo de
+
+152
+00:11:45.834 --> 00:11:51.264
+control estructurado. La regla de calidad: todas las vigas estructurales deben
+
+153
+00:11:51.354 --> 00:11:55.284
+tener informado el parámetro BIM piso responsable.
+
+154
+00:11:55.825 --> 00:12:00.984
+Si una viga no tiene información, Dynamo la identificará como no conforme y
+
+155
+00:12:01.045 --> 00:12:05.904
+asignará automáticamente el valor de G piso estructuras.
+
+156
+00:12:05.934 --> 00:12:10.974
+Por lo tanto, tenemos que identificar, consultar, verificar, clasificar y corregir.
+
+157
+00:12:12.504 --> 00:12:15.205
+Básicamente, yo como BIM manager necesito,
+
+158
+00:12:16.614 --> 00:12:18.744
+por producción de vigas,
+
+159
+00:12:20.754 --> 00:12:24.564
+el detallado de refuerzo de cada una de las vigas, de cómo se va a trabajar en
+
+160
+00:12:24.654 --> 00:12:24.955
+obra.
+
+161
+00:12:26.904 --> 00:12:32.364
+Necesito saber quién es el responsable de esa viga, quién se va a encargar:
+
+162
+00:12:32.634 --> 00:12:35.080
+modelador uno, modelador dos, modelador tres.
+
+163
+00:12:35.274 --> 00:12:36.804
+Digamos que es un proyecto a gran escala.
+
+164
+00:12:37.164 --> 00:12:37.374
+Si
+
+165
+00:12:39.444 --> 00:12:44.724
+ese parámetro se encuentra vacío, no va a tener responsable.
+
+166
+00:12:44.754 --> 00:12:48.234
+Por lo tanto, yo no sé quién se está encargando del detallado de esa viga, por
+
+167
+00:12:48.265 --> 00:12:49.284
+poner un ejemplo.
+
+168
+00:12:50.979 --> 00:12:56.723
+¿Si se escucha? Confirmen.
+
+169
+00:12:58.344 --> 00:12:59.515
+¿Sí me están escuchando?
+
+170
+00:13:02.545 --> 00:13:08.304
+Aló, ¿ahí
+
+171
+00:13:08.484 --> 00:13:09.384
+sí me están escuchando?
+
+172
+00:13:12.984 --> 00:13:18.188
+Sí, okey, ya, listo. Tienes que
+
+173
+00:13:20.184 --> 00:13:21.579
+verificar el audio, José Luis.
+
+174
+00:13:22.404 --> 00:13:29.335
+Entienden
+
+175
+00:13:29.364 --> 00:13:34.914
+el contexto, ¿no? Necesito saber quién se encarga de cada viga para el detallado de
+
+176
+00:13:34.945 --> 00:13:36.835
+la misma. Ahora,
+
+177
+00:13:38.904 --> 00:13:39.114
+si
+
+178
+00:13:40.554 --> 00:13:44.754
+el parámetro está vacío, no puedo hacer QaQC y no puedo hacer las modificaciones
+
+179
+00:13:44.814 --> 00:13:45.474
+respectivas.
+
+180
+00:13:47.454 --> 00:13:51.234
+Ese es el proceso en Dynamo. Entonces, todo el proceso en Dynamo tiene que tener un
+
+181
+00:13:51.265 --> 00:13:53.768
+objetivo, porque si no, ¿para qué utilizo Dynamo?
+
+182
+00:13:55.195 --> 00:14:00.414
+Si es un proceso a gran escala y repetitivo, entonces induzco la automatización.
+
+183
+00:14:00.534 --> 00:14:03.295
+Ahora, consulta, ¿cuál es el primer paso?
+
+184
+00:14:04.164 --> 00:14:08.004
+Antes de que ingrese a Dynamo, ¿cuál debería ser mi primer paso?
+
+185
+00:14:13.134 --> 00:14:17.784
+Yo no he ingresado a Dynamo. Necesito un primer paso sustancial. ¿Cuál es?
+
+186
+00:14:18.174 --> 00:14:19.224
+Tengo que crear el parámetro
+
+187
+00:14:22.254 --> 00:14:23.454
+BIM piso responsable.
+
+188
+00:14:25.344 --> 00:14:27.445
+Porque si no, en Dynamo, ¿cómo voy a verificar?
+
+189
+00:14:29.424 --> 00:14:32.124
+Entonces, ¿cómo hacemos eso? Es rápido.
+
+190
+00:14:33.234 --> 00:14:36.744
+Lo primero que vamos a hacer, ustedes ya lo conocen, ya lo han trabajado.
+
+191
+00:14:37.704 --> 00:14:41.484
+Vamos al manage. Aquí, como no voy a compartir estos parámetros, no lo voy a dejar
+
+192
+00:14:41.515 --> 00:14:43.734
+como parámetro de proyecto, va a ser interno.
+
+193
+00:14:44.964 --> 00:14:50.934
+Y voy a crear un parámetro, que es importante que defina muy bien el
+
+194
+00:14:50.994 --> 00:14:56.124
+nombre. Ojo, es decir, BIM piso responsable.
+
+195
+00:14:57.204 --> 00:15:01.524
+Vean cómo lo estoy escribiendo. Disciplina común para que aplique a todas.
+
+196
+00:15:01.914 --> 00:15:05.124
+Es el tipo de data es texto, que esto ustedes ya lo saben.
+
+197
+00:15:05.484 --> 00:15:09.504
+Yo lo voy a colocar como un dato de identidad
+
+198
+00:15:10.974 --> 00:15:12.295
+y la categoría es
+
+199
+00:15:13.585 --> 00:15:14.904
+estructura fuerte. Estamos analizando vigas.
+
+200
+00:15:15.354 --> 00:15:20.575
+Si estamos analizando vigas, ¿cuál es la categoría? Estructura fuerte.
+
+201
+00:15:20.994 --> 00:15:25.644
+Y le damos a ok. Listo.
+
+202
+00:15:26.874 --> 00:15:30.804
+¿Qué tengo que verificar? Ojo, es importante
+
+203
+00:15:32.004 --> 00:15:36.204
+que vean, a pesar de que me salté esta
+
+204
+00:15:37.494 --> 00:15:40.434
+etapa, que esto es un parámetro instancia.
+
+205
+00:15:41.589 --> 00:15:46.464
+¿Por qué es un parámetro instancia y no un parámetro tipo?
+
+206
+00:15:48.414 --> 00:15:49.914
+Tenemos que analizarlo como BIM manager.
+
+207
+00:15:50.019 --> 00:15:53.814
+¿Por qué está definido como un parámetro instancia y no un parámetro tipo?
+
+208
+00:15:58.795 --> 00:16:04.554
+¿Cuál es la diferencia? La diferencia es la siguiente: imagínense que yo selecciono
+
+209
+00:16:04.570 --> 00:16:04.884
+acá
+
+210
+00:16:06.295 --> 00:16:11.814
+tres vigas. Las tres vigas tienen las mismas dimensiones, 0,25 por 0,20.
+
+211
+00:16:13.045 --> 00:16:18.594
+Pero puede ocurrir que la viga del nivel superior la va a
+
+212
+00:16:18.654 --> 00:16:22.254
+detallar el modelador dos o modelador tres,
+
+213
+00:16:23.515 --> 00:16:27.789
+la viga del nivel intermedio el modelador dos y la viga del nivel intermedio el
+
+214
+00:16:27.864 --> 00:16:28.494
+modelador uno.
+
+215
+00:16:31.854 --> 00:16:37.464
+Si yo lo dejo como un parámetro tipo, básicamente, todas las vigas de esa
+
+216
+00:16:37.494 --> 00:16:37.960
+sección,
+
+217
+00:16:39.804 --> 00:16:43.704
+el nombre que yo coloque a ese parámetro va a aplicar a las tres vigas; es un
+
+218
+00:16:43.765 --> 00:16:48.954
+parámetro tipo. Si yo lo dejo como un parámetro instancia, va a ser por viga,
+
+219
+00:16:50.634 --> 00:16:52.164
+más allá de que sea en la misma sección.
+
+220
+00:16:53.034 --> 00:16:57.700
+Por lo tanto, siempre al momento de analizar esto lo vamos a dejar como parámetro
+
+221
+00:16:57.714 --> 00:17:01.524
+instancia. ¿Está clara esa parte?
+
+222
+00:17:02.814 --> 00:17:06.265
+Esto, haciendo un repaso, que ya vieron el módulo tres, lo deberían saber.
+
+223
+00:17:07.404 --> 00:17:12.325
+Ahora, ¿qué verifico acá? Que cuando yo seleccione mi viga, me voy a ir a
+
+224
+00:17:13.464 --> 00:17:14.785
+las propiedades de
+
+225
+00:17:18.234 --> 00:17:21.295
+identity data y me tiene que salir BIM responsable.
+
+226
+00:17:21.384 --> 00:17:26.335
+En todas las vigas, todo lo que sea viga. BIM responsable, que ahorita está vacío.
+
+227
+00:17:29.964 --> 00:17:35.274
+Entonces, tenemos que pensar antes de entrar en Dynamo.
+
+228
+00:17:39.594 --> 00:17:40.374
+Si nosotros
+
+229
+00:17:42.774 --> 00:17:44.154
+no lo hiciéramos con Dynamo,
+
+230
+00:17:46.374 --> 00:17:48.624
+¿cómo ustedes llenarían sus parámetros
+
+231
+00:17:50.034 --> 00:17:54.144
+en Revit? Hay dos opciones. Una opción es
+
+232
+00:17:55.644 --> 00:17:56.589
+seleccionar la viga,
+
+233
+00:17:59.515 --> 00:18:00.475
+escribir el nombre,
+
+234
+00:18:02.814 --> 00:18:04.524
+pero tengo que ir seleccionando viga por viga.
+
+235
+00:18:06.054 --> 00:18:09.129
+O si no, hubiese ido al
+
+236
+00:18:11.064 --> 00:18:14.574
+view, hubiese creado una tabla, un schedule
+
+237
+00:18:17.304 --> 00:18:21.234
+Que la categoría fuese estructura framing,
+
+238
+00:18:22.464 --> 00:18:25.614
+hubiese agregado el parámetro BIM responsable en la tabla y empiezo a escribir
+
+239
+00:18:25.674 --> 00:18:27.804
+manualmente. Esos son los dos caminos.
+
+240
+00:18:28.614 --> 00:18:30.699
+Pero en ambos caminos hay algo
+
+241
+00:18:32.154 --> 00:18:36.265
+que es la lógica, y eso es lo que explican las clases, normalmente conocidas
+
+242
+00:18:36.294 --> 00:18:40.704
+teóricas, que es lo primero que hacemos: seleccionar la viga.
+
+243
+00:18:40.734 --> 00:18:44.844
+Pero la viga viene, ¿de qué? De una categoría.
+
+244
+00:18:45.144 --> 00:18:49.914
+Lo primero que uno le indica a Dynamo es la categoría.
+
+245
+00:18:52.015 --> 00:18:57.984
+De la categoría, que es la estructura framing, le indicamos a qué elementos de esa
+
+246
+00:18:58.074 --> 00:18:58.689
+categoría,
+
+247
+00:19:00.174 --> 00:19:04.914
+y que le identifique y me liste todo completamente.
+
+248
+00:19:05.424 --> 00:19:11.064
+Ese es el primer paso antes de comenzar a definir los parámetros de BIM
+
+249
+00:19:11.154 --> 00:19:11.934
+responsable.
+
+250
+00:19:14.454 --> 00:19:18.384
+Eso siempre va a ser algo básico en los 10 casos que ustedes van a manejar.
+
+251
+00:19:18.789 --> 00:19:23.859
+¿Cómo entramos a Dynamo? Sencillo: "manage", "Dynamo".
+
+252
+00:19:31.704 --> 00:19:33.024
+Fíjense que inclusive
+
+253
+00:19:36.475 --> 00:19:40.989
+yo voy a seleccionar acá un workspace completamente desde cero.
+
+254
+00:19:42.504 --> 00:19:46.134
+Y cuando yo comience, por ejemplo, a agregar mi primera
+
+255
+00:19:47.994 --> 00:19:53.693
+modificación, etcétera. Mi primera
+
+256
+00:19:53.754 --> 00:19:57.265
+modificación, voy a comenzar a trabajar.
+
+257
+00:19:57.429 --> 00:20:03.084
+¿Cómo funciona Dynamo? Dynamo Workspace es el espacio de
+
+258
+00:20:03.144 --> 00:20:06.624
+trabajo que va a estar conectado al modelo.
+
+259
+00:20:07.734 --> 00:20:12.204
+Son cuatro fundamentos que a nosotros como BIM manager nos interesan.
+
+260
+00:20:12.444 --> 00:20:13.584
+Nos interesa el workspace,
+
+261
+00:20:14.874 --> 00:20:19.914
+nos interesa la librería, que contiene los nodos,
+
+262
+00:20:21.534 --> 00:20:26.274
+que son los que van a generar al conectarlo a través de unos cables.
+
+263
+00:20:27.684 --> 00:20:30.834
+Y cuando yo tengo un nodo conectado a un cable, estoy
+
+264
+00:20:30.894 --> 00:20:36.774
+transfiriendo información. Y básicamente,
+
+265
+00:20:36.894 --> 00:20:42.054
+cada nodo va a ser un paso secuencial para yo obtener un resultado.
+
+266
+00:20:43.104 --> 00:20:43.704
+Entonces,
+
+267
+00:20:46.015 --> 00:20:50.784
+aquí tenemos los nodos, aquí los buscamos y en la parte
+
+268
+00:20:52.104 --> 00:20:55.584
+inferior tenemos la opción de "run".
+
+269
+00:20:56.259 --> 00:21:01.704
+"Run" es la ejecución de esos pasos para que básicamente lo que yo voy haciendo
+
+270
+00:21:01.765 --> 00:21:03.954
+acá, también lo voy verificando en Revit.
+
+271
+00:21:04.254 --> 00:21:09.954
+En la parte del "run" inferior izquierda lo pueden hacer automático o lo
+
+272
+00:21:10.044 --> 00:21:15.594
+pueden generar manual. Lo ideal es que nosotros lo tengamos manual
+
+273
+00:21:16.614 --> 00:21:21.924
+para controlar cada etapa, porque si yo lo dejo automático,
+
+274
+00:21:22.434 --> 00:21:28.225
+cada nodo que yo vaya generando y conectando automáticamente lo hace en Revit sin
+
+275
+00:21:28.344 --> 00:21:29.904
+esperar que yo le dé "run".
+
+276
+00:21:31.404 --> 00:21:37.314
+Lo voy a dejar automático para que ustedes vean que solo se va a actualizar en
+
+277
+00:21:37.344 --> 00:21:37.824
+Revit.
+
+278
+00:21:40.284 --> 00:21:41.064
+Dicho esto,
+
+279
+00:21:43.284 --> 00:21:49.134
+nosotros necesitamos entender que en Dynamo vamos a utilizar una
+
+280
+00:21:49.194 --> 00:21:54.774
+metodología que se llama IPO, o nosotros personalmente como BIM management,
+
+281
+00:21:55.225 --> 00:22:00.294
+vamos a utilizar una metodología que se llama IPO: input,
+
+282
+00:22:00.504 --> 00:22:06.444
+process y output. Es decir, nosotros vamos a tener acá
+
+283
+00:22:06.504 --> 00:22:08.515
+un input. Vamos a verlo en Dynamo.
+
+284
+00:22:09.864 --> 00:22:11.004
+Un input acá.
+
+285
+00:22:16.044 --> 00:22:18.054
+Vamos a tener un proceso
+
+286
+00:22:19.314 --> 00:22:24.594
+y vamos a tener un output. En el output es conseguir mi objetivo
+
+287
+00:22:24.624 --> 00:22:30.564
+principal. En el input, yo meto mis datos de entrada, valga la redundancia, y en
+
+288
+00:22:30.594 --> 00:22:34.794
+el process son todos los pasos que me van a llevar a mi resultado
+
+289
+00:22:34.824 --> 00:22:40.074
+principal. Por ejemplo, para que ustedes lo entiendan de una mejor manera,
+
+290
+00:22:41.515 --> 00:22:43.374
+vámonos con el BIM Assistant.
+
+291
+00:22:45.024 --> 00:22:47.814
+Ya yo lo tengo seteado antes de la clase
+
+292
+00:22:49.704 --> 00:22:54.204
+con este ejemplo, para que me explique una vez con
+
+293
+00:22:55.404 --> 00:23:01.134
+este ejemplo de la primera parte del proyecto final.
+
+294
+00:23:03.714 --> 00:23:06.594
+Explícame la metodología
+
+295
+00:23:08.754 --> 00:23:09.054
+IPO.
+
+296
+00:23:11.334 --> 00:23:14.094
+Vuelvo y repito: input, process, output.
+
+297
+00:23:16.015 --> 00:23:20.214
+Con el ejemplo de BIM responsable, la metodología IPO se entiende mejor si dejamos
+
+298
+00:23:20.274 --> 00:23:24.774
+pensar primero en nodos y pensamos en datos, reglas y resultados.
+
+299
+00:23:25.390 --> 00:23:28.944
+Datos, input, reglas, process, resultados, el output.
+
+300
+00:23:29.515 --> 00:23:30.624
+Para que lo entiendan mucho mejor.
+
+301
+00:23:32.304 --> 00:23:34.719
+Input, ¿qué necesita Dynamo para comenzar?
+
+302
+00:23:35.515 --> 00:23:39.114
+El input son los datos y criterios que necesita nuestro proceso.
+
+303
+00:23:40.254 --> 00:23:45.954
+El input es la categoría, estructura framing, qué parámetro
+
+304
+00:23:46.015 --> 00:23:49.644
+necesito controlar, BIM responsable y cuál es el valor de
+
+305
+00:23:49.734 --> 00:23:55.674
+corrección. La primera pregunta como BIM manager es sobre qué elementos y qué
+
+306
+00:23:55.704 --> 00:23:57.834
+información quiero realizar el control.
+
+307
+00:23:58.734 --> 00:24:04.284
+Por eso empezamos categories, structural framing y después definimos mediante
+
+308
+00:24:04.374 --> 00:24:09.954
+string, BIM responsable. Más adelante también introducimos BG piso estructura
+
+309
+00:24:10.704 --> 00:24:14.604
+como valor que utilizaremos para corregir los incumplimientos.
+
+310
+00:24:15.774 --> 00:24:18.038
+Process, ¿qué debe hacer Dynamo?
+
+311
+00:24:19.404 --> 00:24:23.784
+El process no es un nodo concreto, es la secuencia lógica de operaciones necesarias
+
+312
+00:24:23.814 --> 00:24:26.049
+para transformar nuestras entradas en un resultado.
+
+313
+00:24:26.709 --> 00:24:31.734
+Es el paso a paso, la estructura framing, contra todas las vigas, leer BIM
+
+314
+00:24:31.794 --> 00:24:36.864
+responsable, que está vacío, que es el true false, separar las vigas conformes, no
+
+315
+00:24:36.894 --> 00:24:39.204
+conformes y corregir las no conformes.
+
+316
+00:24:41.574 --> 00:24:43.254
+Los nodos implementan esa lógica.
+
+317
+00:24:43.284 --> 00:24:48.054
+Por ejemplo, cuando ya vayamos al elements category, encuentro todos los elementos
+
+318
+00:24:48.114 --> 00:24:53.604
+sobre los que aplica mi regla. Y después vienen ciertos nodos, es decir, tenemos un
+
+319
+00:24:53.664 --> 00:24:58.134
+orden y el output es el resultado que yo quiero obtener. ¿Cuál es el resultado?
+
+320
+00:24:58.734 --> 00:25:04.614
+Si ya identifico los BIM responsables, que me indica cuáles están
+
+321
+00:25:04.674 --> 00:25:07.914
+vacíos y cuáles vigas están corregidas.
+
+322
+00:25:09.024 --> 00:25:14.994
+Lo primero que voy a hacer para que el ejemplo sea aplicable
+
+323
+00:25:15.084 --> 00:25:18.850
+es que si todas las vigas están vacías, no tiene sentido lo que estamos haciendo.
+
+324
+00:25:18.864 --> 00:25:23.634
+Entonces, por ejemplo, estas vigas que están acá, seleccionar todas las instancias,
+
+325
+00:25:23.694 --> 00:25:28.899
+tengo tres vigas, les voy a colocar BIM piso responsable y voy a colocar aquí BG
+
+326
+00:25:29.154 --> 00:25:30.144
+piso estructuras.
+
+327
+00:25:32.034 --> 00:25:37.554
+Ahora, esto es una lógica, que es lo que se va
+
+328
+00:25:37.614 --> 00:25:38.725
+explicando en las
+
+329
+00:25:40.614 --> 00:25:46.465
+sesiones teóricas asincrónicas, pero yo puedo hacer esto: quiero que
+
+330
+00:25:46.524 --> 00:25:51.324
+me lo expliques como BIM manager
+
+331
+00:25:54.024 --> 00:25:58.614
+para entender primero la lógica
+
+332
+00:26:00.864 --> 00:26:04.404
+y luego nos vamos paso a paso.
+
+333
+00:26:06.624 --> 00:26:12.564
+Todo lo que hagan, por favor, siempre busquen la lógica desde el punto de
+
+334
+00:26:12.654 --> 00:26:18.415
+vista IPO, input, process, output, y luego desde el
+
+335
+00:26:18.475 --> 00:26:20.784
+punto de vista del BIM manager.
+
+336
+00:26:23.784 --> 00:26:26.995
+Fíjense cómo se lo va a explicar acá,
+
+337
+00:26:28.254 --> 00:26:32.559
+donde lo consulté aquí arriba. Como BIM manager, pensaría primero en la regla de
+
+338
+00:26:32.574 --> 00:26:33.234
+información.
+
+339
+00:26:35.514 --> 00:26:38.754
+Asegurar que todas las vigas estructurales tengan correctamente informado el
+
+340
+00:26:38.784 --> 00:26:42.954
+parámetro BIM. Este es el objetivo, esta es nuestra lógica.
+
+341
+00:26:43.014 --> 00:26:44.799
+Si nosotros no planteamos la lógica,
+
+342
+00:26:46.254 --> 00:26:51.804
+no tiene sentido. Es más, si ustedes no entienden la
+
+343
+00:26:51.834 --> 00:26:57.654
+lógica, es decir, el objetivo principal, Dynamo no funciona como en
+
+344
+00:26:57.715 --> 00:27:01.674
+Revit, que yo empiezo a modelar. No, Dynamo funciona es con una lógica.
+
+345
+00:27:02.919 --> 00:27:07.344
+Primero entiendo la lógica como BIM manager. ¿Sí se entiende esta parte?
+
+346
+00:27:07.359 --> 00:27:11.484
+Es superimportante en los 10 casos que van a aplicar.
+
+347
+00:27:11.544 --> 00:27:14.694
+Si ustedes no entienden el objetivo principal, no tiene sentido que trabajen en
+
+348
+00:27:14.725 --> 00:27:17.409
+Dynamo. ¿Se entiende
+
+349
+00:27:20.394 --> 00:27:20.814
+hasta acá?
+
+350
+00:27:29.178 --> 00:27:33.858
+En esta primera parte, ¿qué necesito controlar?
+
+351
+00:27:35.839 --> 00:27:41.718
+Me va a dar el input, me va a explicar el process y me va a explicar en
+
+352
+00:27:41.779 --> 00:27:43.458
+este caso el output.
+
+353
+00:27:46.608 --> 00:27:52.279
+La idea es verificar, uno,
+
+354
+00:27:52.728 --> 00:27:58.669
+que el input es que el Dynamo identifique las vigas, en el proceso pueda separar
+
+355
+00:27:59.118 --> 00:28:04.774
+qué parámetros están vacíos o qué parámetros están llenos, y el output es cambiar
+
+356
+00:28:04.818 --> 00:28:06.529
+los parámetros vacíos por
+
+357
+00:28:07.848 --> 00:28:11.178
+la información que yo necesito. Esa es la lógica.
+
+358
+00:28:11.928 --> 00:28:17.328
+Aquí van a ver la lógica completa con la metodología IPO.
+
+359
+00:28:19.728 --> 00:28:24.529
+IPO no es una metodología para decir nodos, es una metodología para enseñar la
+
+360
+00:28:24.649 --> 00:28:27.589
+lógica, para que ustedes entiendan la lógica.
+
+361
+00:28:29.298 --> 00:28:34.518
+A partir de allí, a mí no me interesa en este módulo explicarles nodo por nodo, lo
+
+362
+00:28:35.208 --> 00:28:36.723
+que significa cada
+
+363
+00:28:38.029 --> 00:28:43.669
+nodo. Eso lo podemos ayudar con el BIM
+
+364
+00:28:43.758 --> 00:28:48.708
+Assistant. A mí lo que me interesa es que ustedes entiendan la lógica de los
+
+365
+00:28:48.738 --> 00:28:54.198
+procesos, ya luego el paso a paso, cómo se ejecuta en Dynamo nos podemos apoyar en
+
+366
+00:28:54.214 --> 00:28:59.748
+el BIM Assistant. Perfecto. Vamos
+
+367
+00:29:00.948 --> 00:29:04.248
+con el paso a paso en Dynamo
+
+368
+00:29:05.628 --> 00:29:08.389
+en la etapa de input,
+
+369
+00:29:10.998 --> 00:29:14.718
+que es lo que haremos el día de hoy y que es lo que ustedes tienen que entregar.
+
+370
+00:29:16.848 --> 00:29:19.878
+Paso uno: crear la categoría de trabajo.
+
+371
+00:29:21.048 --> 00:29:25.788
+Ustedes se van a ir acá y van a buscar categories.
+
+372
+00:29:28.788 --> 00:29:32.688
+Ustedes dirán: "¿De dónde me estoy sacando categories?" Estoy trabajando con el BIM
+
+373
+00:29:32.718 --> 00:29:33.347
+Assistant.
+
+374
+00:29:34.998 --> 00:29:37.218
+Tengo que identificar categorías.
+
+375
+00:29:38.419 --> 00:29:42.243
+De esa categoría, fíjense que me indica dentro del desplegable, seleccione
+
+376
+00:29:42.243 --> 00:29:46.578
+estructura de framing, que le doy clic acá y vamos a
+
+377
+00:29:46.669 --> 00:29:48.649
+buscar
+
+378
+00:29:51.438 --> 00:29:53.868
+por la S structural.
+
+379
+00:29:55.788 --> 00:29:56.688
+Aquí está, structural
+
+380
+00:30:02.029 --> 00:30:03.408
+framing.
+
+381
+00:30:07.068 --> 00:30:12.828
+Hasta ahí, básicamente estoy identificando todas las vigas.
+
+382
+00:30:13.488 --> 00:30:18.408
+No estoy haciendo nada especial. Vean que si yo me desplazo acá, me indica: "Okey,
+
+383
+00:30:18.738 --> 00:30:22.428
+quieres trabajar con vigas". Eso es todo.
+
+384
+00:30:24.258 --> 00:30:25.098
+A partir de allí,
+
+385
+00:30:26.688 --> 00:30:30.708
+este nodo responde a la pregunta BIM sobre qué elemento quiero aplicar mi control o
+
+386
+00:30:30.738 --> 00:30:32.089
+acusé. Punto uno.
+
+387
+00:30:33.618 --> 00:30:36.948
+Luego, vamos a definir un parámetro que se va a llamar string.
+
+388
+00:30:37.399 --> 00:30:42.649
+Los parámetros string, y lo van a ver en los 10 casos, son parámetros de revisión.
+
+389
+00:30:44.297 --> 00:30:48.468
+Repito, los parámetros string son parámetros de revisión.
+
+390
+00:30:49.218 --> 00:30:50.988
+Entonces, yo acá
+
+391
+00:30:52.248 --> 00:30:55.339
+vamos a colocar string
+
+392
+00:30:58.788 --> 00:31:04.399
+y en el parámetro string voy a escribir así: BIM piso
+
+393
+00:31:05.808 --> 00:31:08.268
+responsable, así como está.
+
+394
+00:31:11.808 --> 00:31:14.958
+Esto tiene que coincidir con lo que está en
+
+395
+00:31:14.988 --> 00:31:20.448
+Revit. Con lo que está en Revit me refiero al parámetro.
+
+396
+00:31:20.764 --> 00:31:24.768
+¿Coincidir en qué? En el nombre, porque si yo modifico el nombre o no lo escribo
+
+397
+00:31:24.828 --> 00:31:30.649
+bien, tal cual como está en Dynamo, luego no va a generar la automatización.
+
+398
+00:31:32.958 --> 00:31:36.258
+Este string no busca todavía el parámetro, simplemente define el nombre exacto.
+
+399
+00:31:36.318 --> 00:31:38.478
+Dynamo utilizará más adelante para consultarlo.
+
+400
+00:31:40.008 --> 00:31:44.868
+Paso tres: definir el valor que usaremos para corregir.
+
+401
+00:31:45.649 --> 00:31:49.428
+Vamos a insertar un segundo nodo que se va a llamar string.
+
+402
+00:31:49.863 --> 00:31:52.698
+Entonces, todos los parámetros string son de revisión.
+
+403
+00:31:53.253 --> 00:31:58.728
+Es o para buscar un parámetro existente, o para luego
+
+404
+00:31:58.788 --> 00:32:01.248
+modificar el parámetro del nombre que yo quiero.
+
+405
+00:32:03.649 --> 00:32:06.858
+Es decir, el valor. En este caso, el valor es
+
+406
+00:32:08.808 --> 00:32:13.669
+DG piso estructuras, creo que le colocamos, ¿verdad? Sí.
+
+407
+00:32:15.018 --> 00:32:19.698
+Entonces volvemos a darle clic acá y aquí coloco DG
+
+408
+00:32:20.568 --> 00:32:23.419
+piso estructuras.
+
+409
+00:32:26.238 --> 00:32:29.748
+El que busco y el valor del parámetro.
+
+410
+00:32:30.348 --> 00:32:32.688
+El nombre del parámetro y el valor del parámetro.
+
+411
+00:32:34.518 --> 00:32:38.478
+Este será el valor que posteriormente utilizaremos en las vigas que resulten no
+
+412
+00:32:38.538 --> 00:32:39.228
+conformes.
+
+413
+00:32:40.488 --> 00:32:46.308
+La lógica es DG piso estructura. La pregunta BIM sería: si encuentro una viga sin
+
+414
+00:32:46.368 --> 00:32:48.288
+responsable, ¿qué valor debe recibir?
+
+415
+00:32:49.968 --> 00:32:52.639
+¿Cómo queda nuestro primer bloque?
+
+416
+00:32:53.358 --> 00:32:55.998
+Categories, string, DG estructuras.
+
+417
+00:32:57.378 --> 00:32:59.779
+Y lo que me gusta de esto es que ustedes le pueden colocar:
+
+418
+00:33:01.068 --> 00:33:06.018
+"Hazme primero una imagen
+
+419
+00:33:06.348 --> 00:33:07.068
+visual
+
+420
+00:33:08.808 --> 00:33:14.478
+de cómo queda mi primera etapa en el
+
+421
+00:33:14.598 --> 00:33:15.108
+input".
+
+422
+00:33:22.998 --> 00:33:23.779
+Vamos a esperar.
+
+423
+00:33:40.578 --> 00:33:42.768
+Y mientras lo va generando,
+
+424
+00:33:44.808 --> 00:33:49.098
+les hago la pregunta: ¿cómo funcionan los nodos?
+
+425
+00:33:49.218 --> 00:33:49.264
+Yo
+
+426
+00:33:53.058 --> 00:33:54.139
+tengo nodos sueltos.
+
+427
+00:33:55.562 --> 00:33:57.452
+¿Cómo deberían funcionar estos nodos?
+
+428
+00:34:00.437 --> 00:34:04.669
+Tengo los nodos, que son las distintas etapas. ¿Cómo funcionan?
+
+429
+00:34:05.748 --> 00:34:11.598
+Hay que unirlos. ¿Los
+
+430
+00:34:11.688 --> 00:34:14.328
+tengo que unir de manera arbitraria?
+
+431
+00:34:14.569 --> 00:34:20.538
+Es decir, yo ahorita agarro y empiezo a conectar este con este y conecto este
+
+432
+00:34:20.598 --> 00:34:26.449
+con este, o conecto este con este, ¿da lo mismo? No. ¿Qué tiene que tener?
+
+433
+00:34:26.748 --> 00:34:32.478
+Una secuencia lógica. Los nodos son los pasos, el cable
+
+434
+00:34:32.658 --> 00:34:38.328
+es la secuencia lógica. Porque si no, no tiene sentido, puede ser
+
+435
+00:34:38.388 --> 00:34:40.503
+nodos arbitrarios. Y
+
+436
+00:34:43.548 --> 00:34:48.169
+vean cómo yo le estoy resumiendo Dynamo a su lógica de BIM manager.
+
+437
+00:34:49.248 --> 00:34:53.358
+No estoy resumiendo Dynamo a una programación. Entonces, fíjense lo siguiente.
+
+438
+00:34:54.199 --> 00:34:57.348
+Si ustedes se apoyan con el BIM Assistant, ¿qué sucede?
+
+439
+00:34:57.858 --> 00:35:01.188
+Les da hasta cómo les deberían quedar en el tablero.
+
+440
+00:35:04.218 --> 00:35:09.783
+Este BIM Assistant tiene cargada toda la información, no solo del
+
+441
+00:35:09.828 --> 00:35:13.218
+máster, sino cómo debe actuar un BIM manager.
+
+442
+00:35:16.668 --> 00:35:20.328
+Les van a sacar el potencial si ustedes lo utilizan de la manera correcta.
+
+443
+00:35:20.358 --> 00:35:22.938
+Yo les digo: perfecto.
+
+444
+00:35:25.998 --> 00:35:28.188
+Ahora vamos al process.
+
+445
+00:35:32.598 --> 00:35:37.908
+En el process, el siguiente paso, estos son los datos de entrada,
+
+446
+00:35:38.868 --> 00:35:44.268
+es decir, que voy a controlar a las vigas, que me lea los parámetros BIM
+
+447
+00:35:44.298 --> 00:35:46.848
+responsable y que me cambie el string.
+
+448
+00:35:49.128 --> 00:35:49.938
+En el process
+
+449
+00:35:51.768 --> 00:35:55.758
+vamos a trabajar con
+
+450
+00:35:58.428 --> 00:36:01.998
+la lógica, por eso se los voy explicando.
+
+451
+00:36:02.808 --> 00:36:05.868
+Entonces, en el process también empezamos escribiendo desde piso a estructura,
+
+452
+00:36:05.988 --> 00:36:10.308
+primero debemos buscar, leer, evaluar y clasificar. Aquí les voy a explicar.
+
+453
+00:36:11.328 --> 00:36:15.408
+El paso uno: usamos add element of category.
+
+454
+00:36:15.949 --> 00:36:16.428
+Entonces,
+
+455
+00:36:18.888 --> 00:36:21.348
+aquí, add element
+
+456
+00:36:23.568 --> 00:36:24.529
+of category.
+
+457
+00:36:24.738 --> 00:36:30.678
+Para
+
+458
+00:36:30.708 --> 00:36:32.779
+que sea más fácil, ustedes pueden hacer esto.
+
+459
+00:36:32.838 --> 00:36:33.258
+Copian
+
+460
+00:36:34.878 --> 00:36:35.868
+y lo pegan acá.
+
+461
+00:36:39.168 --> 00:36:39.588
+Ahí está.
+
+462
+00:36:41.838 --> 00:36:46.818
+Entonces, para cerrar, esto es lo que yo quiero que me hagan hasta el martes.
+
+463
+00:36:49.893 --> 00:36:55.788
+Ojo, sin todavía ver lo que me dice el BIM Assistant, si usamos la
+
+464
+00:36:55.818 --> 00:37:00.633
+lógica, ¿dónde conecto el add element of category?
+
+465
+00:37:02.223 --> 00:37:08.178
+¿Lo debería conectar a alguno de los strings o lo debería conectar a la
+
+466
+00:37:08.238 --> 00:37:11.523
+categoría? ¿Cuál es la lógica de add element category?
+
+467
+00:37:11.538 --> 00:37:16.279
+Que básicamente activa todos los elementos de una categoría. ¿A dónde lo conecto?
+
+468
+00:37:19.773 --> 00:37:24.918
+¿Al string o a la categoría?
+
+469
+00:37:27.348 --> 00:37:28.038
+A la categoría.
+
+470
+00:37:29.748 --> 00:37:32.688
+Entonces, genero mi primera conexión.
+
+471
+00:37:33.378 --> 00:37:36.618
+Y cuando yo genero mi primera conexión, adivinen qué sucede.
+
+472
+00:37:37.218 --> 00:37:39.228
+Aquí sale la lista de todas las vigas.
+
+473
+00:37:40.068 --> 00:37:45.949
+Le he dicho a Dynamo: quiero a todas las vigas,
+
+474
+00:37:49.038 --> 00:37:52.293
+que son 43, y a partir de ahora
+
+475
+00:37:54.108 --> 00:37:57.753
+vamos a comenzar a conectarlo a los parámetros de BIM responsable y cambiarlo a
+
+476
+00:37:57.798 --> 00:37:58.608
+estructuras.
+
+477
+00:38:02.449 --> 00:38:06.348
+Para el martes necesito, por favor, que lleguen hasta acá tal cual.
+
+478
+00:38:08.238 --> 00:38:11.748
+Porque además el proceso es mucho más complejo, solo han visto cuatro nodos.
+
+479
+00:38:13.458 --> 00:38:17.808
+Pero para el martes necesito que lleguen hasta acá y se vean todo tema uno y todo
+
+480
+00:38:17.868 --> 00:38:18.408
+tema dos.
+
+481
+00:38:19.758 --> 00:38:21.438
+Porque esto al final lo van a hacer conmigo.
+
+482
+00:38:23.193 --> 00:38:27.018
+¿Está claro? ¿Se entiende cómo van a trabajar con BIM Assistant y con
+
+483
+00:38:32.658 --> 00:38:34.518
+estas sesiones en vivo?
+
+484
+00:38:36.438 --> 00:38:40.638
+Okey, listo. Entonces nos vemos el día martes.
+
+485
+00:38:41.029 --> 00:38:44.568
+Por favor, repasen esto y lleguen hasta acá.
+
+486
+00:38:45.648 --> 00:38:48.888
+Vamos a seguir trabajando en Dynamo, vamos a sacar esos 10 casos, también vamos a
+
+487
+00:38:48.949 --> 00:38:53.493
+tener Python. Aprovéchene al máximo este módulo.
+
+488
+00:38:54.918 --> 00:38:58.998
+La plataforma. En sesiones en vivo mañana se les abre la plataforma, José Luis.
+
+489
+00:39:04.308 --> 00:39:07.188
+Sí, por supuesto, Meli. Esta forma es parte del proyecto final.
