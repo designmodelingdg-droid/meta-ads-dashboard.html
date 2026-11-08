@@ -46,7 +46,7 @@ concurrency:
 jobs:
   clips:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
 
@@ -89,7 +89,17 @@ jobs:
           VIDEO: ${{ inputs.video }}
           DESDE: ${{ inputs.desde }}
           HASTA: ${{ inputs.hasta }}
-        run: python3 /tmp/vimeo_clips.py recortar --video "$VIDEO" --desde "$DESDE" --hasta "$HASTA"
+        run: |
+          cp scripts/vimeo_tramos.py /tmp/vimeo_tramos.py
+          cd /tmp && python3 /tmp/vimeo_tramos.py "$VIDEO"
+
+      - name: Subir tramos como artefacto
+        if: ${{ inputs.modo == 'recortar' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: tramos
+          path: /tmp/tramos/
+          retention-days: 7
 
       - name: Guardar en la rama vimeo-clips
         run: |
