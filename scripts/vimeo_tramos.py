@@ -7,12 +7,13 @@ los sube como artefacto (no se guardan en git).
 Cada tramo: nombre=video@desde-hasta, máximo 15 min.
 """
 import os, subprocess, sys
+from concurrent.futures import ThreadPoolExecutor
 sys.path.insert(0, os.path.dirname(__file__))
 from vimeo_clips import api, elegir_archivo, a_segundos  # noqa: E402
 
 def main(spec):
     os.makedirs('tramos', exist_ok=True)
-    links = {}
+    links, trabajos = {}, []
     for parte in [p.strip() for p in spec.split(';') if p.strip()]:
         nombre, resto = parte.split('=')
         video, rango = resto.split('@')
@@ -25,13 +26,20 @@ def main(spec):
             if not link:
                 sys.exit(f'ERROR: Vimeo no da archivo descargable para {video}.')
             links[video] = link
-            print(f'→ {video} «{v.get("name","")}» desde {alto}p')
+            print(f'→ {video} «{v.get("name","")}» desde {alto}p', flush=True)
+        trabajos.append((nombre, video, d, h))
+
+    def bajar(t):
+        nombre, video, d, h = t
         salida = f'tramos/{nombre}.mp4'
         subprocess.run(['ffmpeg', '-v', 'error', '-y', '-ss', f'{d:.2f}', '-to', f'{h:.2f}', '-i', links[video],
-                        '-vf', 'scale=-2:720', '-c:v', 'libx264', '-preset', 'medium', '-crf', '21',
+                        '-vf', 'scale=-2:720', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20',
                         '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '160k', '-movflags', '+faststart', salida],
                        check=True)
-        print(f'  {nombre}: {os.path.getsize(salida)/1e6:.1f} MB')
+        print(f'  {nombre}: {os.path.getsize(salida)/1e6:.1f} MB', flush=True)
+
+    with ThreadPoolExecutor(max_workers=int(os.environ.get('TRAMOS_PARALELO', '3'))) as ex:
+        list(ex.map(bajar, trabajos))
 
 if __name__ == '__main__':
     main(sys.argv[1])
