@@ -1,0 +1,477 @@
+WEBVTT
+
+1
+00:00:02.880 --> 00:00:06.600
+¡Saludos, colegas! Sean bienvenidos a esta nueva lección de Automatización
+
+2
+00:00:06.680 --> 00:00:10.020
+con IA dentro del control de un clic.
+
+3
+00:00:10.120 --> 00:00:13.880
+Y ya hemos visto que-- cómo funcionan los Add-Ins o una pequeña
+
+4
+00:00:13.960 --> 00:00:15.799
+parte de él, que vamos por
+
+5
+00:00:16.380 --> 00:00:20.100
+etapas. Entonces, la idea es establecer una
+
+6
+00:00:20.140 --> 00:00:24.060
+mentalidad, criterio y arquitectura de automatización aplicada a flujos BIM
+
+7
+00:00:24.260 --> 00:00:26.800
+reales. Darles una idea, ¿ok?
+
+8
+00:00:27.740 --> 00:00:31.720
+Eh, el índice de esta lección, eh, se maneja desde el contexto y
+
+9
+00:00:31.760 --> 00:00:34.620
+evolución, dónde estamos, hacia dónde vamos,
+
+10
+00:00:35.480 --> 00:00:39.120
+qué es la IA en este curso, aclaración importante sobre el alcance
+
+11
+00:00:39.440 --> 00:00:43.430
+preliminar, las rutinas de automatización, definición y
+
+12
+00:00:43.460 --> 00:00:47.260
+estructura de una rutina, y el un
+
+13
+00:00:47.360 --> 00:00:49.980
+clic, entender cómo, cómo
+
+14
+00:00:50.060 --> 00:00:53.800
+funciona, entregables y equipos,
+
+15
+00:00:53.820 --> 00:00:54.260
+¿ok?
+
+16
+00:00:55.120 --> 00:00:57.900
+Eh, básicamente, ¿dónde estamos ahora?
+
+17
+00:00:57.920 --> 00:01:00.070
+Hemos recorrido un camino sólido en la gestión BIM.
+
+18
+00:01:00.100 --> 00:01:02.520
+Antes de avanzar, conviene recordar lo que ya dominamos.
+
+19
+00:01:03.520 --> 00:01:07.000
+Hasta ahora hemos trabajado todo lo que es Revit nativo,
+
+20
+00:01:07.020 --> 00:01:10.570
+automatizar tareas directamente de las
+
+21
+00:01:10.600 --> 00:01:14.340
+herramientas integradas de Revit, Add-Ins, que aceleran
+
+22
+00:01:14.380 --> 00:01:17.260
+procesos con complementos de especialidad, especializados,
+
+23
+00:01:17.300 --> 00:01:21.220
+perdón, que amplían las capacidades del software y las
+
+24
+00:01:21.260 --> 00:01:24.940
+plantillas, ¿ok? Eh,
+
+25
+00:01:24.960 --> 00:01:28.820
+ahora entramos a IA aplicada a flujos BIM reales,
+
+26
+00:01:28.840 --> 00:01:31.790
+¿ok? Vamos a ver la parte de inteligencia artificial.
+
+27
+00:01:31.800 --> 00:01:35.780
+Recuerden que, obviamente, vamos a seguir profundizando en los
+
+28
+00:01:35.820 --> 00:01:39.740
+Add-Ins, vamos a seguir profundizando en estos conceptos de,
+
+29
+00:01:39.780 --> 00:01:43.540
+de las herramientas nativas, pero la idea es que ya sentar las bases
+
+30
+00:01:43.600 --> 00:01:46.100
+también a lo que vamos a trabajar con la inteligencia artificial.
+
+31
+00:01:47.740 --> 00:01:51.330
+La evolución natural, cada etapa anterior nos preparó para este momento.
+
+32
+00:01:51.340 --> 00:01:55.280
+La IA no es un salto al vacío, es la capa de coordinación que une a todo lo que ya
+
+33
+00:01:55.320 --> 00:01:58.840
+construimos. Un principio clave: la IA no reemplaza el
+
+34
+00:01:58.900 --> 00:02:02.780
+sistema, lo coordina. No se trata de delegar el trabajo, sino
+
+35
+00:02:02.820 --> 00:02:06.720
+de, de orquestar, perdón, de forma inteligente los procesos que ya
+
+36
+00:02:06.740 --> 00:02:10.640
+tenemos bien definidos. ¿Qué entendemos
+
+37
+00:02:10.680 --> 00:02:14.380
+por IA en este curso? La IA no significa modelar por ti,
+
+38
+00:02:14.400 --> 00:02:17.200
+diseñar estructura, pensar sin criterio propio.
+
+39
+00:02:17.240 --> 00:02:20.740
+La IA sí significa automatizar decisiones repetitivas,
+
+40
+00:02:21.080 --> 00:02:24.240
+orquestar procesos encadenados, reducir pasos manuales
+
+41
+00:02:24.260 --> 00:02:26.580
+innecesarios, ¿ok?
+
+42
+00:02:27.880 --> 00:02:30.350
+¿Qué es una rutina de automatización con IA?
+
+43
+00:02:30.380 --> 00:02:34.000
+Una secuencia de tareas bien definidas que se ejecutan de forma
+
+44
+00:02:34.040 --> 00:02:37.280
+automática con mínima intervención del usuario.
+
+45
+00:02:38.920 --> 00:02:41.160
+Anatomía de una rutina de automatización.
+
+46
+00:02:41.260 --> 00:02:43.280
+La idea es que tengamos un modelo ordenado.
+
+47
+00:02:43.340 --> 00:02:46.320
+La base de datos BIM debe estar limpia y estructurada.
+
+48
+00:02:46.360 --> 00:02:49.500
+Parámetros claros: cada elemento debe tener sus propiedades correctamente
+
+49
+00:02:49.540 --> 00:02:53.440
+definidas. Add-Ins ejecutables: las herramientas complementarias
+
+50
+00:02:53.460 --> 00:02:55.880
+deben estar listas para ser invocadas.
+
+51
+00:02:55.900 --> 00:02:59.820
+Y la IA coordinadora, que la IA decide cuándo y cómo lanzar cada
+
+52
+00:02:59.960 --> 00:03:03.780
+acción del flujo. El un clic no es
+
+53
+00:03:03.840 --> 00:03:06.420
+magia, es resultado de pensar bien el proceso,
+
+54
+00:03:07.240 --> 00:03:11.160
+revisar el modelo, ajustar parámetros, generar vistas y crear
+
+55
+00:03:11.220 --> 00:03:14.120
+láminas, todo con una sola acción,
+
+56
+00:03:14.140 --> 00:03:17.860
+¿ok? Eh, el un clic encaja en,
+
+57
+00:03:18.620 --> 00:03:22.000
+eh, tareas ejecutadas con un único proceso
+
+58
+00:03:22.040 --> 00:03:25.380
+coordinado. Entonces, es lo que venimos trabajando, pero le vamos a
+
+59
+00:03:25.420 --> 00:03:28.060
+incorporar la, la IA,
+
+60
+00:03:28.120 --> 00:03:31.930
+básicamente. Eh, el un clic no es una magia,
+
+61
+00:03:31.940 --> 00:03:35.880
+es diseño. Lo que parece simple, un solo botón, que
+
+62
+00:03:35.940 --> 00:03:39.920
+desencadena un flujo completo de trabajo, parece casi mágico para quien lo usa por
+
+63
+00:03:39.980 --> 00:03:43.010
+primera vez, pero es el resultado de pensar bien.
+
+64
+00:03:43.020 --> 00:03:46.380
+Detrás de ese clic hay horas de diseño de proceso, identificar
+
+65
+00:03:46.520 --> 00:03:50.359
+pasos, ordenarlos, eliminar fricciones y definir
+
+66
+00:03:50.520 --> 00:03:54.500
+condiciones de éxito. El criterio humano es el que hace
+
+67
+00:03:54.580 --> 00:03:57.460
+posible la automatización inteligente.
+
+68
+00:03:58.820 --> 00:04:02.760
+Automatización de entregables. Una de las aplicaciones más valiosas de la IA en,
+
+69
+00:04:02.780 --> 00:04:05.380
+en BIM es la generación automática de entregables.
+
+70
+00:04:05.420 --> 00:04:07.580
+Esto es lo que se puede automatizar.
+
+71
+00:04:08.100 --> 00:04:09.880
+¿Qué se puede automatizar en los entregables?
+
+72
+00:04:09.900 --> 00:04:13.760
+La creación de láminas, la asignación de vistas, la nomenclatura, la
+
+73
+00:04:13.780 --> 00:04:17.661
+exportación de archivos, que es lo que nos vamos a focalizar
+
+74
+00:04:18.120 --> 00:04:20.320
+en esta primera parte del curso,
+
+75
+00:04:21.120 --> 00:04:24.920
+algo muy similar a lo que vimos en Sheet Generator, pero con la IA,
+
+76
+00:04:25.020 --> 00:04:27.600
+¿ok? El rol de la IA en los entregables.
+
+77
+00:04:27.620 --> 00:04:29.620
+La IA no solo ejecuta, también valida.
+
+78
+00:04:29.640 --> 00:04:33.520
+Su función va más allá de lanzar comandos. Decidir qué ejecutar.
+
+79
+00:04:33.560 --> 00:04:37.160
+La IA evalúa el estado del modelo y determina qué acciones son necesarias
+
+80
+00:04:37.540 --> 00:04:41.280
+en cada momento del flujo. Validar que el modelo esté listo.
+
+81
+00:04:41.340 --> 00:04:44.400
+Antes de generar entregables, verifica que los datos están completos y
+
+82
+00:04:44.460 --> 00:04:47.510
+correctamente estructurados. Y reducir errores humanos.
+
+83
+00:04:47.540 --> 00:04:51.300
+Eliminar pasos manuales repetitivos minimiza los errores de
+
+84
+00:04:51.310 --> 00:04:55.120
+omisión y las inconsistencias. La
+
+85
+00:04:55.140 --> 00:04:56.670
+estandarización para equipos BIM.
+
+86
+00:04:56.700 --> 00:04:59.950
+Cuando varios profesionales trabajan en un mismo proyecto, la variabilidad es el
+
+87
+00:04:59.980 --> 00:05:03.720
+enemigo de la calidad. El problema real de los
+
+88
+00:05:03.760 --> 00:05:07.659
+equipos BIM sin estandarización, cada persona trabaja de forma distinta, resultados
+
+89
+00:05:07.800 --> 00:05:11.680
+inconsistentes entre modelos, mucho retrabajo y correcciones, dificultad
+
+90
+00:05:11.720 --> 00:05:15.320
+para coordinar entregas. Ahora, con la IA, tenemos rutinas
+
+91
+00:05:15.480 --> 00:05:19.460
+estándar para todos los miembros, procesos guiados paso a paso y decisiones
+
+92
+00:05:19.520 --> 00:05:22.900
+repetibles y auditables. La IA no controla personas,
+
+93
+00:05:22.960 --> 00:05:26.300
+controla procesos. La IA como garante de la
+
+94
+00:05:26.380 --> 00:05:30.260
+consistencia, equipo variable, vamos a hacer rutinas IA y resultados
+
+95
+00:05:30.460 --> 00:05:34.220
+consistentes. ¿Qué no haremos todavía?
+
+96
+00:05:34.260 --> 00:05:35.740
+Mantener el criterio es fundamental.
+
+97
+00:05:35.780 --> 00:05:39.040
+Avanzar demasiado rápido y sin bases sólidas genera automatizaciones
+
+98
+00:05:39.480 --> 00:05:43.440
+frágiles. No haremos com, eh, script complejos, no
+
+99
+00:05:43.480 --> 00:05:46.690
+automatizaremos diseño, no delegaremos decisiones
+
+100
+00:05:46.760 --> 00:05:50.660
+críticas. Esto todavía no, ¿ok? Primero, procesos
+
+101
+00:05:50.740 --> 00:05:54.540
+sólidos, luego inteligencia. Entonces, vamos paso a paso.
+
+102
+00:05:54.600 --> 00:05:58.120
+Recuerden que esto es un camino y un recorrido largo de doce
+
+103
+00:05:58.280 --> 00:06:01.740
+cursos. Entonces, la jerarquía, la jerarquía, perdón, del
+
+104
+00:06:01.780 --> 00:06:05.240
+aprendizaje es Revit nativo, plantillas,
+
+105
+00:06:05.300 --> 00:06:09.200
+Add-Ins. Esto lo hemos estado desarrollando, eso lo vamos a
+
+106
+00:06:09.220 --> 00:06:13.120
+seguir desarrollando, vamos a seguir profundizando para que
+
+107
+00:06:13.160 --> 00:06:17.070
+podamos trabajar con la IA de la mejor manera posible,
+
+108
+00:06:17.070 --> 00:06:17.410
+¿ok?
+
+109
+00:06:18.840 --> 00:06:22.520
+Entonces, lo que viene en la parte B es, vamos a ver rutinas reales, ¿ok?
+
+110
+00:06:22.540 --> 00:06:26.010
+Ejemplos completos aplicados a proyectos BIM, vamos a hacer la
+
+111
+00:06:26.040 --> 00:06:28.780
+automatización, un clic, entregables
+
+112
+00:06:29.540 --> 00:06:32.960
+automáticos y flujos para, para equipos.
+
+113
+00:06:32.980 --> 00:06:36.400
+Eso es lo que vamos a ver en la siguiente, eh, sesión,
+
+114
+00:06:37.000 --> 00:06:40.920
+para que luego ya en, en las lecciones cinco y seis, en la lección cinco
+
+115
+00:06:40.980 --> 00:06:44.440
+vamos a trabajar temas de, de plantillas y luego la lección seis son las
+
+116
+00:06:44.480 --> 00:06:48.060
+conclusiones finales, para que ustedes puedan presentar un proyecto con lo que
+
+117
+00:06:48.080 --> 00:06:51.340
+hemos ido desarrollando en esta primera parte del
+
+118
+00:06:51.360 --> 00:06:53.780
+curso. Así que los espero en la parte B.
+
+119
+00:06:53.790 --> 00:06:57.340
+Aquí les habla el ingeniero Gabriel Pantoja. Saludos.

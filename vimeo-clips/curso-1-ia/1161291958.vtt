@@ -1,0 +1,2297 @@
+WEBVTT
+
+1
+00:00:02.410 --> 00:00:05.130
+Saludos, colega, se han bienvenido a esta primera lección
+
+2
+00:00:05.600 --> 00:00:08.410
+introductoria automatización en Revit con
+
+3
+00:00:09.630 --> 00:00:13.650
+que básicamente da el inicio a las le a las sesiones
+
+4
+00:00:13.650 --> 00:00:16.410
+lecciones a sincrónicas de automatización en Revit con
+
+5
+00:00:16.410 --> 00:00:17.610
+inteligencia artificial.
+
+6
+00:00:18.430 --> 00:00:20.970
+La idea esta lección, todavía no vamos a trabajar con Revit,
+
+7
+00:00:21.230 --> 00:00:23.730
+eh, spoiler rápido.
+
+8
+00:00:23.960 --> 00:00:27.130
+Así que les voy a quitar un poquito esa ilusión,
+
+9
+00:00:27.640 --> 00:00:30.290
+pero no desde el punto de vista negativo, sino
+
+10
+00:00:30.990 --> 00:00:34.290
+que lo positivo va a hacer entender primero que vamos a
+
+11
+00:00:34.290 --> 00:00:35.650
+hacer, okey, eh?
+
+12
+00:00:35.650 --> 00:00:37.930
+Son seis lecciones que vamos a estar realizando.
+
+13
+00:00:37.930 --> 00:00:39.690
+Vamos a estar generando de 30 minutos.
+
+14
+00:00:40.210 --> 00:00:43.480
+Y en esas seis lecciones, lo que yo busco es, eh,
+
+15
+00:00:43.910 --> 00:00:46.600
+generar y un proceso de
+
+16
+00:00:47.340 --> 00:00:50.520
+materialización de lo que podemos trabajar de la
+
+17
+00:00:50.520 --> 00:00:52.960
+inteligencia artificial con revista, eh,
+
+18
+00:00:52.960 --> 00:00:54.360
+la inteligencia artificial.
+
+19
+00:00:54.360 --> 00:00:59.080
+Vamos a ver que no es un reemplazo a lo que es el usuario,
+
+20
+00:00:59.140 --> 00:01:00.920
+el profesional que tiene criterio,
+
+21
+00:01:01.150 --> 00:01:04.120
+sino básicamente es una herramienta que nosotros vamos a
+
+22
+00:01:04.120 --> 00:01:05.720
+tener para ser mucho más eficiente,
+
+23
+00:01:06.260 --> 00:01:08.320
+no solo nuestros trabajos, sino
+
+24
+00:01:09.080 --> 00:01:12.360
+y cada uno de los procesos que podamos desarrollar dentro de
+
+25
+00:01:12.360 --> 00:01:13.880
+la herramienta de de red.
+
+26
+00:01:14.160 --> 00:01:17.840
+Entonces, el mantra que vamos a manejar en esta lección es
+
+27
+00:01:17.840 --> 00:01:20.120
+cómo trabajar menos en tareas repetitivas
+
+28
+00:01:20.970 --> 00:01:22.810
+y más en decisiones profesionales.
+
+29
+00:01:22.880 --> 00:01:25.810
+Okey? Entonces, la idea de la inteligencia artificial,
+
+30
+00:01:27.640 --> 00:01:29.490
+viéndolo desde un punto de vista
+
+31
+00:01:30.570 --> 00:01:33.130
+o aterrizando lo más coloquial posible
+
+32
+00:01:33.750 --> 00:01:36.330
+es que la inteligencia artificial nos elimine todo
+
+33
+00:01:36.330 --> 00:01:37.410
+lo fastidioso.
+
+34
+00:01:37.480 --> 00:01:41.210
+Todo lo te que es el trabajo operativo que podamos realizar
+
+35
+00:01:41.210 --> 00:01:45.130
+en y nosotros enfocarnos es en la toma de decisiones o a
+
+36
+00:01:45.200 --> 00:01:48.730
+interpretar los resultados de dicho modelado.
+
+37
+00:01:48.730 --> 00:01:50.810
+Okey, entonces, eh,
+
+38
+00:01:50.810 --> 00:01:53.890
+vamos a arrancar primero voy a colocar acá mi
+
+39
+00:01:55.230 --> 00:01:59.410
+mi mi visual y con el la bienvenida propósito de la elección
+
+40
+00:01:59.410 --> 00:02:00.410
+que este es el punta pie.
+
+41
+00:02:00.410 --> 00:02:01.570
+Recuerda que son seis lecciones.
+
+42
+00:02:01.810 --> 00:02:04.610
+Entonces esta lección no es técnica, lo vamos a modelar.
+
+43
+00:02:04.610 --> 00:02:07.970
+Vamos a cambiar la forma de pensar sobre cómo trabajamos en
+
+44
+00:02:07.970 --> 00:02:10.730
+Revit y cómo podemos optimizar nuestros procesos diarios.
+
+45
+00:02:11.110 --> 00:02:14.050
+El objetivo es prepararte mentalmente para optar una nueva
+
+46
+00:02:14.050 --> 00:02:16.370
+metodología de trabajo que transforma tu práctica
+
+47
+00:02:16.370 --> 00:02:17.930
+profesional en b, okey.
+
+48
+00:02:18.410 --> 00:02:20.170
+Entonces aquí y la idea
+
+49
+00:02:21.070 --> 00:02:23.490
+es que antes de automatizar Revit,
+
+50
+00:02:23.590 --> 00:02:25.970
+hay que automatizar la forma de trabajar.
+
+51
+00:02:26.070 --> 00:02:27.890
+Eso es más importante que
+
+52
+00:02:28.470 --> 00:02:31.810
+en meternos de cabeza y lanzarnos por un precipicio,
+
+53
+00:02:31.810 --> 00:02:35.450
+inteligencia artificial rab y entrar en una, eh,
+
+54
+00:02:35.910 --> 00:02:37.970
+una vorágine que nos vamos a salir.
+
+55
+00:02:38.650 --> 00:02:41.930
+Entonces es mucho mejor antes de automatizar rabbit,
+
+56
+00:02:42.270 --> 00:02:45.210
+hay que automatizar la forma de trabajar.
+
+57
+00:02:45.240 --> 00:02:46.950
+Okey? Entonces,
+
+58
+00:02:47.400 --> 00:02:50.590
+cuál es el problema real en el día a día a b?
+
+59
+00:02:50.690 --> 00:02:53.990
+Por qué ustedes están ingresando un curso de revco de
+
+60
+00:02:53.990 --> 00:02:55.030
+inteligencia artificial?
+
+61
+00:02:55.670 --> 00:03:00.120
+Y por qué hay un módulo o este primer curso desarrollado en
+
+62
+00:03:01.940 --> 00:03:03.200
+automatizaciones en rev?
+
+63
+00:03:03.590 --> 00:03:07.200
+Okey, entonces esto tiene una razón de ser esto viene a ser
+
+64
+00:03:07.220 --> 00:03:12.120
+una solución a un problema más común de lo que
+
+65
+00:03:13.280 --> 00:03:17.280
+y podemos encontrar como usuarios de rev, okey, y que
+
+66
+00:03:18.460 --> 00:03:21.480
+no lo internacionalizamos porque pensamos que solo con el
+
+67
+00:03:21.580 --> 00:03:24.600
+uso de la herramienta de Revit, los comando, los atajos,
+
+68
+00:03:24.620 --> 00:03:26.560
+el modelado, etc, etcétera.
+
+69
+00:03:26.600 --> 00:03:28.400
+Y todas las fases que podemos trabajar en Revit,
+
+70
+00:03:29.200 --> 00:03:32.120
+consideramos que con la propia herramienta del c en per se
+
+71
+00:03:32.120 --> 00:03:35.160
+podemos desarrollar todo lo que queramos.
+
+72
+00:03:35.550 --> 00:03:39.280
+Pero el tema está que no sólo el objetivo de reír es
+
+73
+00:03:39.280 --> 00:03:41.800
+desarrollar todo lo que queramos, sino ser eficientes.
+
+74
+00:03:42.680 --> 00:03:44.880
+Y esa palabra, eh, eh,
+
+75
+00:03:45.180 --> 00:03:47.240
+ese calificativo es lo que da respuesta
+
+76
+00:03:48.340 --> 00:03:51.840
+al problema de que no somos deficientes en rev,
+
+77
+00:03:51.980 --> 00:03:55.400
+la mayoría de casos y nos demoramos un montón en tareas
+
+78
+00:03:55.430 --> 00:03:57.560
+repetitivas que no nos llevan a ningún lado
+
+79
+00:03:58.280 --> 00:04:02.200
+y que la calidad del modelado gracias a ello disminuye.
+
+80
+00:04:02.390 --> 00:04:04.680
+Okey. Y cuando digo la calidad del modelado,
+
+81
+00:04:04.680 --> 00:04:08.960
+no digo el modelado en sí, sino, eh, el resultado final
+
+82
+00:04:09.660 --> 00:04:11.880
+de un punto a un punto b se vuelve tedioso.
+
+83
+00:04:12.660 --> 00:04:15.120
+Nos perdemos en el camino tareas repetitivas
+
+84
+00:04:15.120 --> 00:04:16.320
+repetitivas repetitivas.
+
+85
+00:04:16.320 --> 00:04:17.800
+Y eso no tiene ningún tipo de sentido.
+
+86
+00:04:18.520 --> 00:04:20.240
+Entonces, qué buscamos nosotros cuando
+
+87
+00:04:20.350 --> 00:04:21.800
+automatizamos en Revit?
+
+88
+00:04:22.100 --> 00:04:23.880
+Lo que buscamos es uno,
+
+89
+00:04:25.700 --> 00:04:29.240
+evitar el tiempo perdido mucho tiempo invertido en en tareas
+
+90
+00:04:29.240 --> 00:04:31.480
+repetitivas que no portan valor al diseño.
+
+91
+00:04:31.550 --> 00:04:35.180
+Okey que eso lo podemos evitar con la inteligencia
+
+92
+00:04:35.180 --> 00:04:36.980
+artificial o las automatizaciones.
+
+93
+00:04:37.090 --> 00:04:40.060
+Okey, a mi me gusta hablar más automatizaciones en rabbit en
+
+94
+00:04:40.060 --> 00:04:44.420
+este módulo porque ya vamos a ver otros otros conceptos de
+
+95
+00:04:44.420 --> 00:04:46.180
+lo que es inteligencia artificial, que son tres
+
+96
+00:04:46.730 --> 00:04:49.740
+cambios manuales, modificaciones uno por uno que consumen
+
+97
+00:04:49.740 --> 00:04:51.140
+horas de trabajo productivo.
+
+98
+00:04:51.310 --> 00:04:53.220
+Estos son los problemas. No lo estoy enumerando.
+
+99
+00:04:53.980 --> 00:04:55.220
+Entonces, tiempos perdido,
+
+100
+00:04:56.100 --> 00:04:59.550
+cambios manuales in consistencias entreg que varían en
+
+101
+00:04:59.550 --> 00:05:02.670
+formato y calidad entre proyectos, errores frecuentes,
+
+102
+00:05:02.690 --> 00:05:04.950
+son fallos humanos que se repiten por falta de
+
+103
+00:05:04.950 --> 00:05:06.110
+procesos est estandarizados.
+
+104
+00:05:06.590 --> 00:05:08.870
+Y esto es sencillo cuando ella tenemos tanto tiempo perdido,
+
+105
+00:05:09.060 --> 00:05:12.110
+hacemos cambios manuales constantes y tenemos
+
+106
+00:05:12.110 --> 00:05:15.030
+inconsistencias, eso nos lleva sidos y errores frecuentes.
+
+107
+00:05:16.190 --> 00:05:18.030
+Y esto no tiene vuelvo y repito,
+
+108
+00:05:18.030 --> 00:05:21.070
+nada que ver con el nivel de manejo que ustedes tengan en el
+
+109
+00:05:21.070 --> 00:05:23.150
+programa, inclusive con su criterio profesional,
+
+110
+00:05:23.820 --> 00:05:27.110
+sino que cuando algo se vuelve tan repetitivo y en
+
+111
+00:05:27.350 --> 00:05:30.430
+proyectos, digamos dónde participan las tres disciplinas
+
+112
+00:05:30.580 --> 00:05:35.190
+principal, arquitectura, estructuras y eh, me, eh,
+
+113
+00:05:35.390 --> 00:05:38.110
+mecánica electric and Plumbing, eh,
+
+114
+00:05:40.030 --> 00:05:41.260
+suele ser abrumador.
+
+115
+00:05:41.650 --> 00:05:45.300
+Okey. Y repito, no, no es desde el punto de vista
+
+116
+00:05:46.560 --> 00:05:50.290
+de no manejo del todo bien Revit,
+
+117
+00:05:50.290 --> 00:05:54.850
+sino del punto de vista que ya son tantas las tareas que
+
+118
+00:05:55.510 --> 00:05:58.160
+entras en esa vo y d tiempo perdido.
+
+119
+00:05:58.190 --> 00:06:00.880
+Cambios manuales in consistencias, errores frecuentes.
+
+120
+00:06:01.080 --> 00:06:05.120
+Entonces, por qué vamos a automatizar en red para esto?
+
+121
+00:06:05.540 --> 00:06:08.360
+Sí, automatizar en red no es porque quiero,
+
+122
+00:06:09.540 --> 00:06:12.080
+no quiero obtener perdón, un nuevo conocimiento,
+
+123
+00:06:12.320 --> 00:06:13.360
+y quiero estar de moda.
+
+124
+00:06:13.580 --> 00:06:17.800
+No es para dar respuesta una solución y para dar respuesta,
+
+125
+00:06:18.900 --> 00:06:21.120
+ah, perdón, la respuesta, una problemática.
+
+126
+00:06:21.400 --> 00:06:23.120
+Y para respuesta una problemática,
+
+127
+00:06:23.150 --> 00:06:25.200
+primero hay que identificar la problemática.
+
+128
+00:06:25.310 --> 00:06:28.520
+Okey? Entonces la mayoría del tiempo no se pierde diseñando
+
+129
+00:06:28.520 --> 00:06:30.480
+se pierde repitiendo.
+
+130
+00:06:30.480 --> 00:06:33.320
+Okey. Entonces, cuál es el gran error
+
+131
+00:06:33.980 --> 00:06:35.760
+que yo planteo esta primera elección?
+
+132
+00:06:35.930 --> 00:06:40.020
+Creer que vime solo modelar, no. Entonces es solo una parte.
+
+133
+00:06:40.410 --> 00:06:44.540
+Recuerden que en el bien, existen siete dimensiones tres d,
+
+134
+00:06:44.540 --> 00:06:46.380
+que es modelado cuatro d
+
+135
+00:06:47.530 --> 00:06:50.930
+y de tiempo sin d costo seis de sostenibilidad siete
+
+136
+00:06:51.130 --> 00:06:52.410
+d parte operativa.
+
+137
+00:06:52.850 --> 00:06:55.970
+Entonces, qué pasa? La realidad del beam no es simplemente
+
+138
+00:06:56.040 --> 00:06:58.370
+dibujar en tres d y en realidad no dibujamos,
+
+139
+00:06:58.600 --> 00:07:01.250
+modelamos en tres d vimes información.
+
+140
+00:07:01.250 --> 00:07:03.170
+Recuerden que las tres letras del be es Bill
+
+141
+00:07:03.170 --> 00:07:04.250
+information modeling.
+
+142
+00:07:04.750 --> 00:07:07.690
+No me quiero ir por el camino de explicar la metodología
+
+143
+00:07:08.040 --> 00:07:10.690
+vimi y todos los beneficios y
+
+144
+00:07:10.690 --> 00:07:11.770
+en realidad que es la metodología.
+
+145
+00:07:11.770 --> 00:07:14.170
+Bien, porque para eso tenemos un máster que que que se
+
+146
+00:07:14.170 --> 00:07:16.330
+encarga de eso desde el puto de vista management.
+
+147
+00:07:16.650 --> 00:07:18.250
+Tenemos diplomados de modeladores b y demás.
+
+148
+00:07:19.280 --> 00:07:22.890
+Esta ruta educativa que usted está queriendo y cursos de
+
+149
+00:07:22.890 --> 00:07:24.250
+inteligencia artificial de todas.
+
+150
+00:07:24.250 --> 00:07:28.010
+Ese es otra cosa, okey, es, es como la parte práctica.
+
+151
+00:07:28.490 --> 00:07:31.250
+Entonces, bien, información estructurada vi la information
+
+152
+00:07:31.250 --> 00:07:33.330
+model, es decir que a partir de un modelado
+
+153
+00:07:33.990 --> 00:07:36.890
+ok de un proyecto que puede ser de una edificación, nosotros
+
+154
+00:07:37.400 --> 00:07:38.650
+extraemos información.
+
+155
+00:07:39.370 --> 00:07:42.130
+Y en ese proceso para poder extraer información,
+
+156
+00:07:42.290 --> 00:07:44.210
+tienen que participar todas las disciplinas.
+
+157
+00:07:44.530 --> 00:07:47.090
+Y las dos características principales del beam es tras
+
+158
+00:07:47.650 --> 00:07:50.690
+y coordinación, coordinar con otras disciplinas y distintos
+
+159
+00:07:50.690 --> 00:07:54.610
+profesionales en una escala de valores donde yo voy a tener
+
+160
+00:07:54.630 --> 00:07:58.210
+al modelador beam coordinador beam y b management.
+
+161
+00:07:59.170 --> 00:08:01.050
+Y la tras es que
+
+162
+00:08:01.770 --> 00:08:04.400
+todos estemos alineados al
+
+163
+00:08:04.950 --> 00:08:07.520
+entorno de los usos beam
+
+164
+00:08:08.640 --> 00:08:11.680
+a la gestión de la información y a los entregadores que
+
+165
+00:08:11.680 --> 00:08:13.960
+debemos y y
+
+166
+00:08:15.830 --> 00:08:18.860
+valar la redundancia tener como resultado final, okey?
+
+167
+00:08:20.140 --> 00:08:23.220
+Y entonces modelarse un proceso automatizados,
+
+168
+00:08:23.220 --> 00:08:25.580
+es volver al cat en tres d, bonito,
+
+169
+00:08:25.690 --> 00:08:27.900
+pero ineficiente operativamente.
+
+170
+00:08:28.100 --> 00:08:30.100
+Entonces vino no es dibujar en d.
+
+171
+00:08:31.600 --> 00:08:33.780
+Vin es información más procesos.
+
+172
+00:08:34.260 --> 00:08:36.500
+Y en ese apartado es que entre el modelado,
+
+173
+00:08:37.280 --> 00:08:39.940
+la verdadera potencia está en cómo gestionamos los datos
+
+174
+00:08:40.620 --> 00:08:43.580
+a pesar de que aquí no tienen un papel de un be management,
+
+175
+00:08:43.580 --> 00:08:45.660
+sino que están viendo la parte operativa aquí,
+
+176
+00:08:45.700 --> 00:08:47.260
+lo que se hace intrínsicamente.
+
+177
+00:08:47.260 --> 00:08:49.940
+Así que ustedes se den cuenta, es
+
+178
+00:08:50.710 --> 00:08:55.220
+poder gestionar datos, un modelo sin procesos automatizados.
+
+179
+00:08:55.460 --> 00:08:59.560
+Es solo un dibujo bonito, ske, AutoCAD,
+
+180
+00:09:01.140 --> 00:09:03.430
+rino, etc, etcétera, etcétera.
+
+181
+00:09:05.420 --> 00:09:06.640
+Si nosotros trabajamos, rev,
+
+182
+00:09:07.700 --> 00:09:09.480
+es esta manera solo como un modelado,
+
+183
+00:09:09.780 --> 00:09:12.400
+lo estamos convirtiendo como los demás programas.
+
+184
+00:09:12.600 --> 00:09:14.080
+Y rabino, es solo eso, okey?
+
+185
+00:09:15.200 --> 00:09:17.760
+Entonces, qué es automatizar en Revit?
+
+186
+00:09:18.970 --> 00:09:21.050
+Pregunta importante por esta primera elección, respuesta.
+
+187
+00:09:21.120 --> 00:09:24.010
+Automatizar en Revit va mucho más allá de usar scripts
+
+188
+00:09:24.050 --> 00:09:25.090
+o plu complejos.
+
+189
+00:09:25.670 --> 00:09:29.370
+Es una filosofía de trabajo que transforman la manera en que
+
+190
+00:09:29.490 --> 00:09:32.050
+abordamos cada proyecto y cada tarea del entorno vin.
+
+191
+00:09:32.650 --> 00:09:36.130
+Entonces, ya cuando nosotros tenemos esta perspectiva
+
+192
+00:09:36.950 --> 00:09:41.450
+de que debemos automatizar en Revit o no debemos, sino que
+
+193
+00:09:42.150 --> 00:09:45.170
+al memento de yo trabajar con mi herramienta bibit
+
+194
+00:09:45.170 --> 00:09:48.930
+principalmente que es la base de de la mayoría de los
+
+195
+00:09:48.930 --> 00:09:50.490
+modeladores b en auto des,
+
+196
+00:09:51.420 --> 00:09:53.890
+tengo que entender que hay una filosofía de trabajo.
+
+197
+00:09:54.550 --> 00:09:57.410
+Esa filosofía de trabajo no es solo modelar en si en el
+
+198
+00:09:57.410 --> 00:10:01.010
+programa, sino también pensar en procesos de automatización.
+
+199
+00:10:02.430 --> 00:10:04.770
+Pensar en procesos de automatización tiene
+
+200
+00:10:05.430 --> 00:10:09.050
+una lógica que es un input, un desarrollo y un auto.
+
+201
+00:10:10.010 --> 00:10:14.990
+Entonces, nosotros debemos entender que input,
+
+202
+00:10:14.990 --> 00:10:16.670
+voy a desarrollar que datos de entrada,
+
+203
+00:10:17.240 --> 00:10:19.550
+cuál es el desarrollo y cuál es el output?
+
+204
+00:10:19.710 --> 00:10:22.390
+Entonces tengo que ya antes de modelar en rev,
+
+205
+00:10:22.390 --> 00:10:26.750
+tener como embudo informático, ok, no se preocupen,
+
+206
+00:10:26.750 --> 00:10:29.150
+esto no es una programación avanzada, es sencilla,
+
+207
+00:10:29.540 --> 00:10:31.270
+pero con estos tres pasos o
+
+208
+00:10:31.270 --> 00:10:32.670
+estándares, les va a ir muy bien.
+
+209
+00:10:33.310 --> 00:10:36.590
+Entonces, qué es lo que yo quiero automatizar en rabbit?
+
+210
+00:10:36.850 --> 00:10:39.990
+Yo lo que quiero automatizar en rabbit es poder
+
+211
+00:10:40.540 --> 00:10:42.550
+reducir tareas repetitivas, o sea,
+
+212
+00:10:42.550 --> 00:10:45.110
+eliminar acciones manuales que se repiten constantemente.
+
+213
+00:10:45.910 --> 00:10:48.830
+Y ese es eliminar acciones manuales y repetitivas,
+
+214
+00:10:49.130 --> 00:10:52.030
+ese granito de arena, aunque al principio
+
+215
+00:10:52.730 --> 00:10:55.030
+no lo van a ver como un impacto
+
+216
+00:10:55.610 --> 00:10:58.390
+tan significativo a corto plazo, créame,
+
+217
+00:10:58.390 --> 00:11:01.910
+que a corto plazo es un pacto muy considerable porque
+
+218
+00:11:02.450 --> 00:11:04.990
+porque cada vez que yo trabaja en Revit,
+
+219
+00:11:05.290 --> 00:11:07.670
+operativamente ocho horas al día, por ejemplo,
+
+220
+00:11:07.890 --> 00:11:11.030
+si yo soy un modelador be y yo me estoy eliminando tareas
+
+221
+00:11:11.060 --> 00:11:13.110
+repetitivas al principio,
+
+222
+00:11:13.170 --> 00:11:15.510
+podré estar eliminando tareas repetitivas que me
+
+223
+00:11:15.510 --> 00:11:16.550
+ahorre 30 minutos.
+
+224
+00:11:16.810 --> 00:11:18.830
+Si yo lo veo desde una visión micro,
+
+225
+00:11:20.170 --> 00:11:21.710
+me estoy ahorrando solo 30 minutos,
+
+226
+00:11:21.740 --> 00:11:23.750
+sigo trabajando siete horas y medias al día, no,
+
+227
+00:11:24.420 --> 00:11:28.630
+pero cuando yo lo veo en una visión macro semanal, ya son,
+
+228
+00:11:29.330 --> 00:11:32.590
+eh, 30, 60, 90, 120,
+
+229
+00:11:32.930 --> 00:11:35.830
+150 minutos son dos horas y medias.
+
+230
+00:11:36.850 --> 00:11:39.890
+Y si eso ya lo multiplicas por las cuatro semanas que
+
+231
+00:11:39.890 --> 00:11:41.290
+empiezas a hacer 10 horas de trabajo,
+
+232
+00:11:42.110 --> 00:11:43.800
+qué hora de trabajo que te estás ahorrando?
+
+233
+00:11:44.220 --> 00:11:47.640
+Sí, muy importante es andar procesos,
+
+234
+00:11:47.650 --> 00:11:49.840
+crear metodologías uniformes para todo el equipo,
+
+235
+00:11:50.280 --> 00:11:51.440
+asegurar consistencia,
+
+236
+00:11:51.440 --> 00:11:54.000
+garantizar resultados previsibles en cada entregarle,
+
+237
+00:11:54.280 --> 00:11:56.880
+aumentar control, mantener dominio total
+
+238
+00:11:56.880 --> 00:11:58.200
+sobre la calidad del proyecto.
+
+239
+00:11:58.640 --> 00:12:00.560
+Entonces esos son los cuatro fundamentos.
+
+240
+00:12:00.670 --> 00:12:05.200
+Automatizar es decidir una vez y ejecutar muchas okey, eh?
+
+241
+00:12:06.450 --> 00:12:10.120
+Dicho esto, lo que no es automatizar para eliminar
+
+242
+00:12:11.470 --> 00:12:14.900
+mitos, automatizar no es programar en DNA avanzado.
+
+243
+00:12:16.040 --> 00:12:18.500
+No es que se imaginan esta película como matriz que se van a
+
+244
+00:12:18.500 --> 00:12:22.300
+estar ahí programando y la lógica y el if,
+
+245
+00:12:22.820 --> 00:12:25.620
+y no eso no, no tiene nada que algunos nosotros, okey,
+
+246
+00:12:26.620 --> 00:12:30.980
+y no es saber payo no es hacer script complejos o pro
+
+247
+00:12:31.090 --> 00:12:33.140
+complejos, y no es perder el control.
+
+248
+00:12:33.770 --> 00:12:36.300
+Okey. Entonces, lo que no es automatizar,
+
+249
+00:12:36.890 --> 00:12:40.580
+rompiendo mitos comunes, existe una Perce, una percepción,
+
+250
+00:12:40.580 --> 00:12:43.780
+perdón errónea de que la automatización en Revit requiere
+
+251
+00:12:43.780 --> 00:12:47.820
+conocimientos avanzados de programación o depende de scripts
+
+252
+00:12:47.820 --> 00:12:49.900
+complejos que están fuera del cáncer del
+
+253
+00:12:49.900 --> 00:12:50.980
+profesional promedio.
+
+254
+00:12:50.980 --> 00:12:53.140
+Mentira. La realidad es muy diferente.
+
+255
+00:12:53.250 --> 00:12:55.660
+Este curso está diseñado para profesionales que quieren
+
+256
+00:12:55.660 --> 00:12:57.340
+optimizar su trabajo sin necesidad de
+
+257
+00:12:57.340 --> 00:12:58.540
+convertirse pro programadores.
+
+258
+00:12:59.760 --> 00:13:02.060
+Yo les doy dando las herramientas, esas herramientas,
+
+259
+00:13:02.060 --> 00:13:04.540
+vamos a agarrarles como piezas de rompe cabezas.
+
+260
+00:13:04.640 --> 00:13:07.220
+Yo le voy a indicar dónde van las piezas de ese rompe
+
+261
+00:13:07.220 --> 00:13:08.660
+rompecabezas, lo armamos y listo.
+
+262
+00:13:09.700 --> 00:13:12.220
+Entonces eso es sencillo. Entonces, para ustedes,
+
+263
+00:13:12.220 --> 00:13:13.620
+yo tengo un mensaje tranquilizado.
+
+264
+00:13:13.730 --> 00:13:16.820
+Este curso no es para programadores para profesionales que
+
+265
+00:13:16.820 --> 00:13:18.700
+buscan trabajar de una manera más eficiente.
+
+266
+00:13:19.820 --> 00:13:23.180
+Trabajar más duro no significa trabajo inteligente,
+
+267
+00:13:23.240 --> 00:13:25.940
+un trabajo inteligente, un trabajo in eficiente,
+
+268
+00:13:26.560 --> 00:13:30.740
+un trabajo eficiente, dónde sostienes o aumentas la calidad
+
+269
+00:13:30.740 --> 00:13:32.700
+de tu trabajo en un menor tiempo posible.
+
+270
+00:13:33.000 --> 00:13:36.020
+Eso es trabajar inteligentemente y no a revés,
+
+271
+00:13:36.440 --> 00:13:39.140
+es trabajar duro, mayor cantidad de horas,
+
+272
+00:13:39.190 --> 00:13:40.260
+mayor cantidad de horas.
+
+273
+00:13:40.660 --> 00:13:43.700
+Y la calidad va a ir disminuyendo porque somos humanos,
+
+274
+00:13:43.760 --> 00:13:46.220
+nos cansamos, cometemos errores, okey,
+
+275
+00:13:47.380 --> 00:13:51.180
+entonces no necesitas programar en dynamo avanzado.
+
+276
+00:13:51.480 --> 00:13:52.820
+Tú que estás viendo esta lección,
+
+277
+00:13:53.200 --> 00:13:55.820
+no necesitas ser experto en programación visual.
+
+278
+00:13:56.390 --> 00:13:59.620
+Saber Payton no requiere conocimientos de lenguaje de
+
+279
+00:13:59.620 --> 00:14:01.620
+programación, escribir complejos,
+
+280
+00:14:01.720 --> 00:14:04.020
+no dependes de códigos difícil de manejar,
+
+281
+00:14:04.700 --> 00:14:06.260
+y no tienes que perder el control.
+
+282
+00:14:06.280 --> 00:14:08.460
+No sacrificas el dominio sobre tu modelo.
+
+283
+00:14:08.460 --> 00:14:10.100
+No es que, eh,
+
+284
+00:14:10.770 --> 00:14:13.580
+automatizar ahora es una especie de
+
+285
+00:14:14.130 --> 00:14:18.140
+puro programar y que solito me va a modelar en revenue.
+
+286
+00:14:18.320 --> 00:14:20.220
+No, eso no, no es verdad. Okey.
+
+287
+00:14:21.500 --> 00:14:23.140
+Entonces este,
+
+288
+00:14:23.210 --> 00:14:25.540
+cuáles son los niveles de automatización en rev?
+
+289
+00:14:25.720 --> 00:14:28.380
+La automatización en Revit no es un concepto único,
+
+290
+00:14:28.380 --> 00:14:32.340
+sino un espectro de posibilidades que van desde herramientas
+
+291
+00:14:32.450 --> 00:14:35.260
+nativas hasta soluciones asistidas por
+
+292
+00:14:35.260 --> 00:14:36.420
+inteligencia artificial.
+
+293
+00:14:37.100 --> 00:14:40.180
+Comprender estos niveles te permitirá elegir la estrategia
+
+294
+00:14:40.200 --> 00:14:41.500
+adecua en cada situación.
+
+295
+00:14:42.380 --> 00:14:44.740
+Entonces nosotros nos vamos a tener, digamos,
+
+296
+00:14:44.770 --> 00:14:47.820
+así tres niveles, okey, desde la capa superficial,
+
+297
+00:14:47.820 --> 00:14:50.180
+vamos a ir hasta el núcleo hasta lo más profundo.
+
+298
+00:14:50.650 --> 00:14:53.600
+Empezamos automatización con inteligencia artificial,
+
+299
+00:14:53.660 --> 00:14:57.520
+que es como un soporte tipo chat bot tipo open.
+
+300
+00:14:57.800 --> 00:15:00.400
+Y hay cha gpt para re.
+
+301
+00:15:00.410 --> 00:15:02.400
+Bueno, algo similar que van a estar viendo
+
+302
+00:15:03.460 --> 00:15:04.640
+es algo superficial.
+
+303
+00:15:04.700 --> 00:15:08.520
+Nos ayuda así desde el punto de vista que tienes un cha gpt
+
+304
+00:15:08.520 --> 00:15:11.720
+particular entre comidas para tu red que te ayudó en todo.
+
+305
+00:15:11.720 --> 00:15:15.850
+Te lo vas preguntando ahora, desde mi punto de vista,
+
+306
+00:15:15.850 --> 00:15:18.490
+es lo único que necesitas de automatización inteligente
+
+307
+00:15:18.580 --> 00:15:22.770
+artificial, no porque básicamente, eh, con ese chat bot,
+
+308
+00:15:22.870 --> 00:15:26.970
+no puedes programar, okey, ese chat bot elimina,
+
+309
+00:15:26.990 --> 00:15:31.810
+por ejemplo, si ustedes aprendían hace unos, qué será,
+
+310
+00:15:33.310 --> 00:15:35.450
+eh, cinco o seis años en rabbit?
+
+311
+00:15:36.960 --> 00:15:41.050
+Tenías que ver un montón de tutoriales en youtube, eh?
+
+312
+00:15:41.270 --> 00:15:45.730
+En el mismo auto des eh, en curso especializaciones
+
+313
+00:15:46.710 --> 00:15:47.810
+ya no es del todo así.
+
+314
+00:15:47.910 --> 00:15:49.050
+Oh, si tenías una duda,
+
+315
+00:15:49.080 --> 00:15:52.130
+tenías que esperar a a un profesional que te
+
+316
+00:15:52.340 --> 00:15:54.090
+capacitara o o no.
+
+317
+00:15:54.090 --> 00:15:58.330
+Tendrías muchos espacios donde resolver las las dudas. Okey.
+
+318
+00:15:59.220 --> 00:16:02.390
+Ahora Si seguimos
+
+319
+00:16:03.140 --> 00:16:04.630
+profundizando un poquito más,
+
+320
+00:16:04.920 --> 00:16:07.910
+vamos a entrar en la automatización con ATS,
+
+321
+00:16:08.300 --> 00:16:10.990
+plugins y extensiones especializadas que esas
+
+322
+00:16:12.140 --> 00:16:15.190
+esas si ya empiezan a ser complemento interesante.
+
+323
+00:16:15.700 --> 00:16:17.910
+Pero lo más profundo que vamos a aprender
+
+324
+00:16:18.630 --> 00:16:21.430
+y que va a ser un conocimiento que les va a enriquecer
+
+325
+00:16:21.450 --> 00:16:24.550
+específicamente a este primer curso es la automatización
+
+326
+00:16:24.550 --> 00:16:27.310
+nativa, las herramientas integradas de recto,
+
+327
+00:16:27.530 --> 00:16:30.750
+automatización nativa significa que viene del propio Revit,
+
+328
+00:16:30.810 --> 00:16:33.390
+que no necesito un componente externo.
+
+329
+00:16:34.290 --> 00:16:38.530
+Y eso es interesante porque nos da a entender que Revit
+
+330
+00:16:39.100 --> 00:16:42.380
+tiene muchísimas ventajas
+
+331
+00:16:43.000 --> 00:16:44.980
+que si yo lo empiezo a conocer en a profundidad,
+
+332
+00:16:44.980 --> 00:16:48.940
+me voy a dar cuenta que tiene herramientas dentro de su
+
+333
+00:16:48.940 --> 00:16:53.670
+misma esencia que me van a permitir como tal, eh,
+
+334
+00:16:53.880 --> 00:16:57.830
+poder integrar y automatizar y eliminar todo
+
+335
+00:16:58.650 --> 00:16:59.910
+lo que hemos.
+
+336
+00:17:00.930 --> 00:17:04.750
+Em, hemos desarrollado hasta esta
+
+337
+00:17:05.280 --> 00:17:07.790
+hasta este punto, no, y que vamos a desarrollar ya
+
+338
+00:17:09.540 --> 00:17:09.660
+Y
+
+339
+00:17:14.270 --> 00:17:16.980
+vamos a ver los distintos niveles, okey?
+
+340
+00:17:18.070 --> 00:17:19.850
+Porque nosotros nos vamos a enfocar
+
+341
+00:17:20.680 --> 00:17:23.860
+lo que es la automatización no nativa sobre todo ahí.
+
+342
+00:17:23.860 --> 00:17:25.940
+Yo voy a hacer, eh, énfasis, no?
+
+343
+00:17:26.820 --> 00:17:28.500
+Entonces nosotros tenemos una base fundamental.
+
+344
+00:17:28.880 --> 00:17:31.460
+El primer nivel de automatización ya está integrado en reg.
+
+345
+00:17:31.510 --> 00:17:32.780
+Estas herramientas nativas
+
+346
+00:17:32.780 --> 00:17:35.020
+Son la base, Cualquier flujo de trabajo eficiente
+
+347
+00:17:35.660 --> 00:17:38.060
+y representa el percent de las oportunidades de
+
+348
+00:17:38.060 --> 00:17:40.060
+automatización que la mayoría de los usuarios
+
+349
+00:17:40.060 --> 00:17:41.340
+no aprovechen completamente.
+
+350
+00:17:42.820 --> 00:17:44.520
+Eso va desde lo que son
+
+351
+00:17:44.540 --> 00:17:48.400
+Las vistas Y los filtros.
+
+352
+00:17:48.790 --> 00:17:52.420
+Okey? Si lo primero que vamos a ver, se la base,
+
+353
+00:17:52.420 --> 00:17:55.660
+ser fundamental, o sea, antes de ustedes, pensar en dinamo,
+
+354
+00:17:55.680 --> 00:17:57.380
+Payton, etcétera, etc, etcétera.
+
+355
+00:17:57.610 --> 00:18:00.300
+Primero vamos aprender cuáles son las herramientas
+
+356
+00:18:00.300 --> 00:18:01.380
+nativas que me ahorran.
+
+357
+00:18:01.380 --> 00:18:04.740
+El tiempo en red es básicamente conocer a red a
+
+358
+00:18:04.740 --> 00:18:05.860
+una mayor oportunidad.
+
+359
+00:18:06.010 --> 00:18:09.420
+Okey? Entonces tenemos las vistas configuración,
+
+360
+00:18:09.450 --> 00:18:12.220
+este inteligente vistas del proyecto, filtros,
+
+361
+00:18:12.280 --> 00:18:14.740
+reglas automáticas para visualización y control de
+
+362
+00:18:14.740 --> 00:18:18.540
+elementos, parámetros que son los datos personalizados que
+
+363
+00:18:18.540 --> 00:18:21.740
+automatizan información del modelo y plantillas que son
+
+364
+00:18:21.980 --> 00:18:24.660
+configuraciones predefinidas que garantiza consistencia.
+
+365
+00:18:24.780 --> 00:18:27.140
+Entonces, ustedes, antes de meterse con la inteligencia
+
+366
+00:18:27.140 --> 00:18:31.560
+artificial, si manejan vistas, filtros, parámetros,
+
+367
+00:18:31.610 --> 00:18:35.440
+plantillas, le felicito porque sin darse cuenta,
+
+368
+00:18:35.580 --> 00:18:38.680
+ya están trabajando con herramientas de automatización
+
+369
+00:18:38.740 --> 00:18:40.240
+en nativas.
+
+370
+00:18:40.300 --> 00:18:44.040
+El propio programa, el 60 por percent del automatización.
+
+371
+00:18:44.260 --> 00:18:46.720
+Repito, el 60 por percent de la automatización
+
+372
+00:18:47.020 --> 00:18:48.200
+ya vive dentro de red.
+
+373
+00:18:48.700 --> 00:18:51.960
+Ya a veces nosotros pensamos que d to los at
+
+374
+00:18:53.070 --> 00:18:56.320
+etcétera externos nos van a salvar un poquito nuestro,
+
+375
+00:18:56.630 --> 00:19:00.560
+nuestro modelo y y la vida, y no conocemos bien red,
+
+376
+00:19:01.170 --> 00:19:02.320
+vamos a tener problema.
+
+377
+00:19:03.050 --> 00:19:06.040
+Luego nosotros nos vamos a un nivel dos en nivel dos,
+
+378
+00:19:06.100 --> 00:19:09.920
+es la automatización con at in que son plugins externos.
+
+379
+00:19:10.120 --> 00:19:13.050
+Espero que se conectan directos a entonces,
+
+380
+00:19:13.670 --> 00:19:14.770
+que es un at ins.
+
+381
+00:19:14.790 --> 00:19:18.170
+Los atins son extensiones que amplíen las capacidades
+
+382
+00:19:18.170 --> 00:19:21.490
+nativas de rev, permitiendo automatizar tareas específicas
+
+383
+00:19:21.490 --> 00:19:24.930
+que de otra manera consumiría horas de trabajo manual.
+
+384
+00:19:25.590 --> 00:19:28.050
+No se trata de reemplazar tu criterio profesional,
+
+385
+00:19:28.160 --> 00:19:32.130
+sino de potenciarlo eliminando el trabajo de Dios.
+
+386
+00:19:32.480 --> 00:19:35.890
+Okey. Entonces, para que usamos los actings,
+
+387
+00:19:36.990 --> 00:19:38.970
+ya conocemos las capacidades nativas,
+
+388
+00:19:38.970 --> 00:19:40.450
+conocemos réa profundidad.
+
+389
+00:19:40.450 --> 00:19:42.810
+Te estoy básicamente como un esteroide para red.
+
+390
+00:19:43.310 --> 00:19:46.010
+Lo que va a hacer es incrementar y
+
+391
+00:19:46.570 --> 00:19:49.730
+y y generar cuatro aspectos, ahorro de tiempo,
+
+392
+00:19:49.830 --> 00:19:52.810
+tareas que tomar un hora completo en minutos menos de
+
+393
+00:19:52.810 --> 00:19:55.530
+errores, reducción drástica de falles por intervención
+
+394
+00:19:55.530 --> 00:19:57.530
+manual, flujos más rápidos,
+
+395
+00:19:57.530 --> 00:19:59.370
+procesos optimizados de principio, fin
+
+396
+00:19:59.930 --> 00:20:04.210
+y mejor documentación, entregarle consistentes y profesión.
+
+397
+00:20:04.920 --> 00:20:07.450
+Nada es okey, eh?
+
+398
+00:20:07.730 --> 00:20:10.130
+Y nos damos a un tercer nivel que básicamente lo que vamos
+
+399
+00:20:10.350 --> 00:20:14.690
+en todo el en en en todo el curso,
+
+400
+00:20:14.690 --> 00:20:16.810
+no en esta es 15 horas en total.
+
+401
+00:20:16.970 --> 00:20:19.410
+Entonces la inteligencia artificial representa el nivel más
+
+402
+00:20:19.410 --> 00:20:23.690
+avanzado de automatización y pero no de la manera que muchos
+
+403
+00:20:23.810 --> 00:20:26.890
+imaginan la ahí no trabaja de forma independiente ni toma
+
+404
+00:20:27.130 --> 00:20:28.370
+decisiones técnicas por ti.
+
+405
+00:20:28.830 --> 00:20:31.810
+Eso me encanta. Su verdadero valor está en asistir,
+
+406
+00:20:31.810 --> 00:20:34.410
+acelerar y me mejorar tu trabajo por los datos.
+
+407
+00:20:34.720 --> 00:20:37.930
+Mejoramos el trabajo. La ahí actúa como un copiloto
+
+408
+00:20:37.930 --> 00:20:40.410
+inteligente que te ayen a procesos complejos,
+
+409
+00:20:40.650 --> 00:20:42.130
+entender problemas más rápidamente.
+
+410
+00:20:43.010 --> 00:20:46.330
+Y eh, documentar decisiones de manera más eficiente.
+
+411
+00:20:46.590 --> 00:20:50.560
+No reemplaza tu experiencia, la amplifica de ahí.
+
+412
+00:20:50.560 --> 00:20:54.280
+No trabajas sola, trabaja con nosotros, tomamos la decisión,
+
+413
+00:20:54.280 --> 00:20:55.400
+la ella nos ayuda en eso.
+
+414
+00:20:56.080 --> 00:20:58.720
+Entonces son cuatro aspectos fundamentales explicar,
+
+415
+00:20:58.720 --> 00:21:00.880
+clarificar conceptos y procesos complejos,
+
+416
+00:21:01.030 --> 00:21:03.880
+sugerir proponer soluciones basadas en mejores prácticas,
+
+417
+00:21:04.320 --> 00:21:07.160
+analizar, identificar patrones y oportunidades de mejora,
+
+418
+00:21:07.680 --> 00:21:11.960
+documentar, generar reportes y explicaciones automáticas.
+
+419
+00:21:11.960 --> 00:21:13.570
+Okey? Entonces,
+
+420
+00:21:13.840 --> 00:21:15.930
+cuáles son las expectativas reales sobre la ahí?
+
+421
+00:21:15.950 --> 00:21:18.450
+La idea, si puede acelerar procesos,
+
+422
+00:21:19.530 --> 00:21:21.700
+reducir el tiempo en tareas de anal y documentación,
+
+423
+00:21:21.920 --> 00:21:23.260
+ayudar a entender errores,
+
+424
+00:21:23.410 --> 00:21:25.540
+explica problemas técnicos de manera clara.
+
+425
+00:21:26.160 --> 00:21:29.140
+Apoyar decisiones proporciona información revelante para el
+
+426
+00:21:29.140 --> 00:21:32.100
+línea mejor, generar contenido, crear texto,
+
+427
+00:21:32.100 --> 00:21:33.860
+explicaciones y reportes estructurados.
+
+428
+00:21:34.370 --> 00:21:37.060
+Optimizar flujos sugiere mejores en procesos.
+
+429
+00:21:37.370 --> 00:21:40.740
+Existen que no puede hacer la ahí ni mode por nosotros,
+
+430
+00:21:41.200 --> 00:21:44.460
+ni decide técnicamente ni nos reemplaza como profesional
+
+431
+00:21:45.040 --> 00:21:47.020
+ni garantiza precisión absoluta.
+
+432
+00:21:47.200 --> 00:21:50.420
+Ni él tiene el contexto completo. Okey?
+
+433
+00:21:50.920 --> 00:21:52.700
+Por qué hemos nos modela por nosotros?
+
+434
+00:21:52.700 --> 00:21:54.700
+Porque no creas que me tiene inventos re review
+
+435
+00:21:54.700 --> 00:21:57.180
+automáticamente no decir por nosotros porque
+
+436
+00:21:57.180 --> 00:21:58.300
+no tiene nuestro criterio.
+
+437
+00:21:58.840 --> 00:22:00.980
+No reemplaza profesional porque no sustituye nuestra
+
+438
+00:22:00.980 --> 00:22:04.700
+experiencia y conocimiento y requiere supervisión y
+
+439
+00:22:04.700 --> 00:22:07.900
+validación para ver si es lo que nosotros estamos generando.
+
+440
+00:22:08.100 --> 00:22:10.540
+Entonces, cuál es nuestro EMB?
+
+441
+00:22:10.560 --> 00:22:13.580
+Bu informático, un imput remos, dar unos datos,
+
+442
+00:22:14.080 --> 00:22:18.300
+un desarrollo y un auto es sin bu informático.
+
+443
+00:22:18.300 --> 00:22:20.500
+Quién lo genera? La inteligencia artificial a nosotros
+
+444
+00:22:20.820 --> 00:22:22.940
+nosotros, nosotros, okey.
+
+445
+00:22:23.980 --> 00:22:26.060
+Entonces enología clave.
+
+446
+00:22:26.060 --> 00:22:27.860
+La ahí es un poco piloto en el piloto.
+
+447
+00:22:27.860 --> 00:22:30.740
+Tú no tienes el control y responsabilidad sobre las
+
+448
+00:22:30.940 --> 00:22:33.420
+decisiones del proyecto.
+
+449
+00:22:33.490 --> 00:22:37.340
+Okey, eh, automatización no es solo velocidad.
+
+450
+00:22:37.400 --> 00:22:40.140
+Existe un mal esto todo me gusta.
+
+451
+00:22:43.260 --> 00:22:47.230
+Okey, sólo le ocurre automatización. No es solo velocidad.
+
+452
+00:22:47.230 --> 00:22:51.120
+Existe un mal malentendido común sobre la automatización.
+
+453
+00:22:51.620 --> 00:22:53.800
+Muchos creen que se trata únicamente de hacer
+
+454
+00:22:53.800 --> 00:22:54.920
+las cosas más rápidos.
+
+455
+00:22:55.220 --> 00:22:57.080
+Ese es solo uno de los aspectos.
+
+456
+00:22:57.340 --> 00:22:59.560
+Sin embargo, la verdad del la automatización profesional va
+
+457
+00:22:59.560 --> 00:23:01.920
+mucho más allá de la velocidad, eh?
+
+458
+00:23:02.860 --> 00:23:05.120
+Lo que se genera es,
+
+459
+00:23:05.120 --> 00:23:07.600
+es establecer un sistema que garantice calidad de
+
+460
+00:23:07.600 --> 00:23:10.440
+consistencia y control, o sea, la inteligencia artificial,
+
+461
+00:23:10.440 --> 00:23:12.800
+en pocas palabras, no es que solo hace el
+
+462
+00:23:12.800 --> 00:23:14.520
+trabajo que sea eficiente.
+
+463
+00:23:14.620 --> 00:23:17.160
+Es rápido, sino que es organizado.
+
+464
+00:23:17.870 --> 00:23:22.550
+No organiza el trabajo con consistencia, calidad, control.
+
+465
+00:23:23.230 --> 00:23:26.190
+Entonces, control, porque nosotros ahora podemos tener dos
+
+466
+00:23:26.190 --> 00:23:28.750
+minutos tal sobre procesos y resultados del proyecto
+
+467
+00:23:29.580 --> 00:23:32.710
+calidad para los estándares elevados mantenidos de forma
+
+468
+00:23:32.740 --> 00:23:37.230
+consistente repet capacidad de replicar resultados exitosos
+
+469
+00:23:37.410 --> 00:23:40.160
+una y otra vez en estando el profesional.
+
+470
+00:23:40.280 --> 00:23:43.760
+Y ve de excelencia reconocido y rápido, sin control.
+
+471
+00:23:43.980 --> 00:23:46.000
+Es solo cometer verdad más rápido.
+
+472
+00:23:46.270 --> 00:23:50.160
+Solo es improvisar y improvisación como profesionales,
+
+473
+00:23:51.290 --> 00:23:52.640
+sobre todo en este aspecto.
+
+474
+00:23:52.960 --> 00:23:55.640
+Modelado, metodología pinta inteligencia artificial.
+
+475
+00:23:56.380 --> 00:23:57.600
+No es lo mejor.
+
+476
+00:23:57.990 --> 00:24:02.170
+Okey, por qué la automatización te hace valioso?
+
+477
+00:24:02.170 --> 00:24:06.010
+Primero tienes menos detrajo entregarle consistentes,
+
+478
+00:24:06.420 --> 00:24:09.370
+mayor confiabilidad y mejor percepción.
+
+479
+00:24:09.520 --> 00:24:12.650
+Okey, entonces menos re retrajo irrupción drástica de
+
+480
+00:24:12.650 --> 00:24:15.650
+correcciones y revision necesarias entregarle consistentes,
+
+481
+00:24:15.650 --> 00:24:17.770
+calidad de uniforme en todos los proyectos y documentos
+
+482
+00:24:17.860 --> 00:24:18.930
+mayor confiabilidad,
+
+483
+00:24:19.430 --> 00:24:21.410
+cumplo predecible de plazos y estándares.
+
+484
+00:24:21.680 --> 00:24:24.210
+Esto permite mejor percepción ante clientes,
+
+485
+00:24:24.210 --> 00:24:26.850
+reputación profesional sólida y diferenciada.
+
+486
+00:24:27.030 --> 00:24:29.090
+Las empresas pagan por resultados consistentes,
+
+487
+00:24:29.150 --> 00:24:30.290
+no por una fuente de pre.
+
+488
+00:24:30.360 --> 00:24:32.450
+Okey. Entonces, eh,
+
+489
+00:24:32.640 --> 00:24:35.330
+esta lección que es conceptual nos está preparando para que
+
+490
+00:24:35.490 --> 00:24:38.250
+nosotros rev visemos en en
+
+491
+00:24:39.070 --> 00:24:43.130
+el número dos en adelante, las automatizaciones nativas,
+
+492
+00:24:45.060 --> 00:24:47.440
+las automatizaciones con at ins
+
+493
+00:24:49.640 --> 00:24:53.680
+y automatización asistida por inteligencia artificial.
+
+494
+00:24:53.950 --> 00:24:56.400
+Okey, entonces, eh,
+
+495
+00:24:56.660 --> 00:24:59.080
+ya cerrar esta lección para no extenderla
+
+496
+00:24:59.080 --> 00:25:00.200
+tanto, son 30 minutos.
+
+497
+00:25:00.210 --> 00:25:01.720
+Cómo debes enfrentar este curs
+
+498
+00:25:01.800 --> 00:25:06.200
+so la mentalidad correcta por el aprendizaje es este curso,
+
+499
+00:25:06.200 --> 00:25:07.240
+requiere un cambio, mentalidad.
+
+500
+00:25:07.240 --> 00:25:09.120
+No se trata de memorizar com andos o seguir
+
+501
+00:25:09.120 --> 00:25:10.560
+tutoriales, darle qui aquí.
+
+502
+00:25:10.780 --> 00:25:14.800
+Eso es muy sencillo, sino desarrolla desarrollar una nueva
+
+503
+00:25:14.810 --> 00:25:16.880
+forma de pensar sobre tu trabajo en re.
+
+504
+00:25:16.900 --> 00:25:19.080
+Mi objetivo es que tú tengas un criterio para eso,
+
+505
+00:25:19.480 --> 00:25:20.640
+identificando oportunidad de auto
+
+506
+00:25:20.640 --> 00:25:22.040
+automatización tu practicaría.
+
+507
+00:25:22.540 --> 00:25:25.200
+Por lo tanto, por eso se necesita pensar en procesos,
+
+508
+00:25:25.620 --> 00:25:28.440
+buscar, eh, patrones repetitivos, aplicar a tu realidad.
+
+509
+00:25:28.440 --> 00:25:29.560
+Eso es lo que vamos a tener acá.
+
+510
+00:25:29.710 --> 00:25:33.720
+Okey, este curso no se memoriza, se adopta.
+
+511
+00:25:34.580 --> 00:25:36.620
+Entonces, qué vienen las siguientes lecciones en las
+
+512
+00:25:36.700 --> 00:25:38.660
+siguientes lecciones, vamos a trabajar con las herramientas
+
+513
+00:25:38.660 --> 00:25:40.660
+nativas, que es el dominio completo de
+
+514
+00:25:40.660 --> 00:25:41.900
+capacidades integradas en rev.
+
+515
+00:25:42.230 --> 00:25:44.460
+Luego vamos a ver los at ins reales.
+
+516
+00:25:44.510 --> 00:25:48.580
+Vamos a ver flujos prácticos y automatización aplicada e
+
+517
+00:25:48.580 --> 00:25:50.620
+implementación productos reales del mundo profesional.
+
+518
+00:25:51.380 --> 00:25:53.580
+Entonces, en las siguientes lecciones que son,
+
+519
+00:25:53.580 --> 00:25:55.900
+se en total cinco colecciones que nos queda.
+
+520
+00:25:56.260 --> 00:25:59.500
+Básicamente, lo que vamos a hacer es profundizar en esas
+
+521
+00:25:59.500 --> 00:26:00.740
+herramientas nativas.
+
+522
+00:26:00.840 --> 00:26:03.860
+Es el nivel uno, el nivel 12 acting real.
+
+523
+00:26:04.500 --> 00:26:06.940
+Y en el nivel tres de flujos prácticos de automatización
+
+524
+00:26:06.940 --> 00:26:11.020
+aplicada con inteligencia artificial son 12 cursos.
+
+525
+00:26:11.050 --> 00:26:13.980
+Así que imagínese, son 15 o 20 horas por curso.
+
+526
+00:26:14.210 --> 00:26:18.500
+12 cursos son más de 150 horas que vamos a estar acá 150,
+
+527
+00:26:18.500 --> 00:26:20.220
+200 horas en total.
+
+528
+00:26:20.220 --> 00:26:22.140
+Imagínense ustedes lo que vamos a desar. Okey.
+
+529
+00:26:22.940 --> 00:26:26.300
+Entonces la idea es que ustedes también puedan identificar
+
+530
+00:26:27.430 --> 00:26:28.750
+y las tareas repetitivas,
+
+531
+00:26:29.190 --> 00:26:32.950
+diseñar siempre planificar un proceso automatizado ideal,
+
+532
+00:26:33.740 --> 00:26:36.710
+optimizar, refinar y mejorar continuamente todos los
+
+533
+00:26:36.710 --> 00:26:40.390
+procesos e implementar que es aplicar herramientas y flujos
+
+534
+00:26:40.610 --> 00:26:42.630
+de auto automat estación, okey?
+
+535
+00:26:43.720 --> 00:26:45.680
+Y cuál va a ser el impacto real en tu carrera?
+
+536
+00:26:45.820 --> 00:26:48.360
+Lo pueden ver en las siguientes estadísticas, como siempre,
+
+537
+00:26:48.360 --> 00:26:51.080
+también estas diapositivas y todas van a estar
+
+538
+00:26:51.080 --> 00:26:52.520
+compartidas para su encarga.
+
+539
+00:26:53.400 --> 00:26:56.000
+Vean todo lo que es reducción de tiempo, errores,
+
+540
+00:26:56.000 --> 00:26:58.280
+productividad y satisfacción del cliente.
+
+541
+00:26:58.470 --> 00:27:01.520
+Okey? Entonces la idea es que reducir tiempo come,
+
+542
+00:27:01.560 --> 00:27:04.960
+tengo más errores, somos más productivos ahí.
+
+543
+00:27:04.960 --> 00:27:06.400
+Finalmente está más satisfecho.
+
+544
+00:27:06.590 --> 00:27:11.400
+Todo es una cadena, todo está concatenada no?
+
+545
+00:27:12.600 --> 00:27:16.360
+Y entonces, eh, solo las de hora. Siguientes preguntas.
+
+546
+00:27:16.550 --> 00:27:20.920
+Okey que vamos a ir re, eh, revisando la la primera semana,
+
+547
+00:27:21.150 --> 00:27:23.400
+esta primera semana en que tengamos clases son cuatro en
+
+548
+00:27:23.400 --> 00:27:27.520
+clases en vivo y les des indico qué tareas rep repites.
+
+549
+00:27:27.560 --> 00:27:29.400
+Y obviamente en rabbit que te consumen más tiempo.
+
+550
+00:27:30.390 --> 00:27:32.550
+Cuántas veces has tenido que rehacer trabajo
+
+551
+00:27:32.690 --> 00:27:33.750
+por in consistencia?
+
+552
+00:27:34.500 --> 00:27:37.390
+Qué procesos en tu flu actual te generan más situación?
+
+553
+00:27:37.660 --> 00:27:40.670
+Cuánto tiempo dedicas a tareas que me peren en tu criterio
+
+554
+00:27:40.670 --> 00:27:42.830
+profesional y que te impía actualmente
+
+555
+00:27:42.830 --> 00:27:44.310
+entregar proyectos más rápidos?
+
+556
+00:27:44.610 --> 00:27:46.790
+Si tú reflexionas en estas preguntas,
+
+557
+00:27:46.810 --> 00:27:49.030
+en realidad estás en el curso correcto.
+
+558
+00:27:49.250 --> 00:27:51.390
+Porque esto es lo que va a hacer es
+
+559
+00:27:52.650 --> 00:27:55.680
+ayudarte con estas punto, okey?
+
+560
+00:27:56.800 --> 00:28:01.470
+Y entonces recuerden que
+
+561
+00:28:02.450 --> 00:28:06.870
+en en total, nosotros vamos a estar y
+
+562
+00:28:07.940 --> 00:28:12.630
+desarrollando un compromiso poco a poco alargó plazo
+
+563
+00:28:13.450 --> 00:28:15.550
+que la idea es que después del mes número cuatro,
+
+564
+00:28:15.560 --> 00:28:17.830
+usted puede automatizar avanzado y con
+
+565
+00:28:17.830 --> 00:28:19.750
+resultados es mi idea.
+
+566
+00:28:21.030 --> 00:28:23.870
+Y no solo mi idea es mi objetivo con usted, okey?
+
+567
+00:28:24.830 --> 00:28:26.910
+Entonces, como siempre quien sale el ingeniero,
+
+568
+00:28:26.910 --> 00:28:29.950
+que en todas les ve presidente reflexión de esta elección,
+
+569
+00:28:30.090 --> 00:28:34.870
+no se trata de trabajar más rápida, se trata se trabajar.
+
+570
+00:28:36.040 --> 00:28:39.110
+Mira, esta de positiva va va a estar disponible
+
+571
+00:28:39.110 --> 00:28:40.190
+en la sección de recursos.
+
+572
+00:28:40.190 --> 00:28:43.630
+Primera elección, nos vemos en la segunda elección y en la
+
+573
+00:28:43.630 --> 00:28:46.350
+primera sección de refuerzos que les haga el antoja,
+
+574
+00:28:46.890 --> 00:28:50.150
+que tenga un buen día, una buena tarde, una buena la noche.

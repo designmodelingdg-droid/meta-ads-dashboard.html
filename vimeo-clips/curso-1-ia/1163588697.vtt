@@ -1,0 +1,3649 @@
+WEBVTT
+
+1
+00:00:02.910 --> 00:00:05.310
+Saludos, colegas, se han bienvenidos a esta elección.
+
+2
+00:00:05.330 --> 00:00:06.350
+Dos parte b,
+
+3
+00:00:06.480 --> 00:00:09.390
+donde vamos a seguir profundizando en la práctica de lo que
+
+4
+00:00:09.390 --> 00:00:13.630
+es escalar la automatización nativa en en re.
+
+5
+00:00:13.720 --> 00:00:17.950
+Vamos a estar en una, una lección un poquito más, eh,
+
+6
+00:00:18.020 --> 00:00:22.230
+más extendida en lo que se refiere la la parte práctica, ok,
+
+7
+00:00:22.290 --> 00:00:23.550
+por decirlo de alguna manera.
+
+8
+00:00:24.630 --> 00:00:29.070
+Y la idea de esta lección es que ahora nos podemos
+
+9
+00:00:30.020 --> 00:00:31.590
+manejar o nos podemos a
+
+10
+00:00:32.950 --> 00:00:36.590
+a a desarrollar como tal en todo lo que tiene que ver.
+
+11
+00:00:37.430 --> 00:00:40.950
+Y la parte de los parámetros,
+
+12
+00:00:42.290 --> 00:00:47.110
+eh, la parte de los filtros y también las las
+
+13
+00:00:47.110 --> 00:00:48.870
+plantillas de de vista, no.
+
+14
+00:00:49.110 --> 00:00:50.910
+Entonces es lección dos, parte
+
+15
+00:00:51.550 --> 00:00:56.030
+b de lo que es que la automatización nativa eno, okey?
+
+16
+00:00:56.030 --> 00:00:57.990
+Porque una parte b, eh?
+
+17
+00:00:57.990 --> 00:00:59.390
+Básicamente la parte a
+
+18
+00:01:00.110 --> 00:01:02.340
+aprendimos automatizar corre remontas nativas,
+
+19
+00:01:02.370 --> 00:01:04.900
+usar parámetros, filtros y vistas en la parte b.
+
+20
+00:01:04.900 --> 00:01:08.260
+Vamos a profundizar en cómo estructurar bien el modelo
+
+21
+00:01:08.350 --> 00:01:12.620
+prepararlo, eh, para escalar con plantillas y at ins.
+
+22
+00:01:13.290 --> 00:01:16.540
+Recuerden lo siguiente automatizar tareas
+
+23
+00:01:17.400 --> 00:01:19.580
+no es diseñar un sistema, okey,
+
+24
+00:01:19.580 --> 00:01:21.100
+hay es distinto diseñar un sistema.
+
+25
+00:01:21.170 --> 00:01:24.380
+Automatizar de verdad significa construir un sistema que
+
+26
+00:01:24.380 --> 00:01:27.540
+funcione de manera consistente y reutilizable sin
+
+27
+00:01:27.620 --> 00:01:29.100
+depender del usuario individual.
+
+28
+00:01:29.960 --> 00:01:32.940
+La consistencia temporal es que el modelo funcione
+
+29
+00:01:32.940 --> 00:01:33.980
+igual o y mañana.
+
+30
+00:01:34.280 --> 00:01:37.260
+La independencia del usuario es que no dependamos de quien
+
+31
+00:01:37.260 --> 00:01:39.300
+lo pere, la reutilización,
+
+32
+00:01:39.680 --> 00:01:42.980
+que el sistema sea aplicable en múltiples proyectos.
+
+33
+00:01:43.320 --> 00:01:47.780
+La automatización real no se rehace proyecto a proyecto.
+
+34
+00:01:48.140 --> 00:01:52.060
+Entonces, vamos a a partir otra vez de los parámetros.
+
+35
+00:01:52.090 --> 00:01:53.860
+Pero ahora vamos a, eh,
+
+36
+00:01:53.910 --> 00:01:56.660
+visualizar tres tipos los a los tres tipos.
+
+37
+00:01:56.660 --> 00:01:59.020
+Vamos a profundizar los tres tipos de parámetros, okey?
+
+38
+00:01:59.360 --> 00:02:01.980
+Porque qué? Porque para escalar la automatización es que
+
+39
+00:02:02.220 --> 00:02:04.860
+entender qué tipo de parámetro usar según el objetivo,
+
+40
+00:02:05.210 --> 00:02:08.540
+cada uno cumple una función distinta en ecosistema bing.
+
+41
+00:02:08.930 --> 00:02:11.460
+Recuerden que ya tenemos los parámetros de proyecto,
+
+42
+00:02:12.260 --> 00:02:16.220
+tenemos los parámetros compartidos y los parámetros globales
+
+43
+00:02:16.680 --> 00:02:19.260
+en los parámetros de proyecto existen solo
+
+44
+00:02:19.440 --> 00:02:20.820
+dentro del proyecto actual.
+
+45
+00:02:21.220 --> 00:02:24.700
+Y vamos a comenzar con los parámetros de de proyecto.
+
+46
+00:02:25.860 --> 00:02:27.900
+Y es la primera práctica,
+
+47
+00:02:27.900 --> 00:02:30.340
+nuevamente que vamos a hacer luego vamos con los parámetros
+
+48
+00:02:30.340 --> 00:02:33.460
+compartidos que definidos externamente reutilizable entre
+
+49
+00:02:33.660 --> 00:02:36.540
+proyectos y los parámetros globales que controlan el
+
+50
+00:02:36.540 --> 00:02:40.060
+comportamiento y geometría del del modelo.
+
+51
+00:02:40.380 --> 00:02:42.380
+Entonces, vamos primero con los parámetros del proyecto.
+
+52
+00:02:42.560 --> 00:02:46.860
+Ya esto lo vimos en en la parte, eh, a
+
+53
+00:02:47.460 --> 00:02:50.460
+y los parámetros que existen solo dentro del proyecto actual
+
+54
+00:02:50.610 --> 00:02:53.140
+para que sirve en clasificación interna,
+
+55
+00:02:53.290 --> 00:02:57.380
+estados de elementos, control visual, automatización rápida,
+
+56
+00:02:57.890 --> 00:03:01.200
+limitación, no viajan entre proyectos y no son ideales para
+
+57
+00:03:01.220 --> 00:03:03.200
+flujos externos o intercambio información.
+
+58
+00:03:03.200 --> 00:03:06.360
+Es decir, solo son únicos en el proyecto que estemos
+
+59
+00:03:06.360 --> 00:03:09.720
+desarrollando rápidos y útiles, pero locales,
+
+60
+00:03:09.820 --> 00:03:11.000
+esa es su limitación.
+
+61
+00:03:11.270 --> 00:03:14.240
+Solo se pueden utilizar vuelvo y repito,
+
+62
+00:03:14.660 --> 00:03:17.680
+dentro de ese proyecto, pero ya no se pueden, eh,
+
+63
+00:03:17.790 --> 00:03:21.120
+generar como plantillas o se pueden utilizar por otros
+
+64
+00:03:21.400 --> 00:03:24.560
+usuarios o en o en un nuevo proyecto como tal.
+
+65
+00:03:24.760 --> 00:03:28.730
+Entonces, vámonos primero a en este caso, Revit.
+
+66
+00:03:31.230 --> 00:03:32.270
+Entonces, aquí en Revit,
+
+67
+00:03:32.270 --> 00:03:35.670
+vamos a explicar nuevamente lo que son o o vamos a
+
+68
+00:03:35.670 --> 00:03:36.910
+generar un parámetro del proyecto.
+
+69
+00:03:37.790 --> 00:03:40.070
+Entonces, en este modelo que nosotros vamos a venir
+
+70
+00:03:40.070 --> 00:03:42.350
+desarrollando, vámonos al nivel uno, okey,
+
+71
+00:03:42.640 --> 00:03:44.150
+vamos a ver aquí el nivel uno,
+
+72
+00:03:44.950 --> 00:03:46.630
+y vamos a crear un nuevo muro.
+
+73
+00:03:46.730 --> 00:03:50.190
+Sí, voy a a estar trabajando constantemente con este
+
+74
+00:03:50.970 --> 00:03:52.030
+con este nivel uno.
+
+75
+00:03:52.030 --> 00:03:54.750
+Sí. Entonces vámonos aquí en la parte arquitectura
+
+76
+00:03:55.340 --> 00:03:56.670
+muro arquitectónico.
+
+77
+00:03:58.210 --> 00:04:00.380
+Okay, vamos a esperar que cargue acá.
+
+78
+00:04:00.860 --> 00:04:02.980
+Entonces yo voy a tener este muro arquitectónico.
+
+79
+00:04:03.310 --> 00:04:05.220
+Vamos a desarrollarlo desde le g.
+
+80
+00:04:06.670 --> 00:04:08.360
+Okey, vamos a desarrollarlo aquí.
+
+81
+00:04:09.950 --> 00:04:12.590
+Y vamos a tener este este saliente aquí.
+
+82
+00:04:12.590 --> 00:04:17.230
+Vamos a dejarlo aproximadamente unos tres metros. Okey?
+
+83
+00:04:17.590 --> 00:04:19.630
+Fíjense que si yo coloco aquí colores coherentes,
+
+84
+00:04:19.630 --> 00:04:20.710
+podemos ver el muro.
+
+85
+00:04:21.050 --> 00:04:22.270
+Si nos vamos al d,
+
+86
+00:04:22.270 --> 00:04:24.590
+estamos viendo este muro saliente para que
+
+87
+00:04:24.590 --> 00:04:25.670
+tenga mayor relevancia.
+
+88
+00:04:25.670 --> 00:04:27.190
+Vamos a seleccionar este muro
+
+89
+00:04:27.950 --> 00:04:30.590
+y este muro siempre en sus propiedades.
+
+90
+00:04:30.860 --> 00:04:34.470
+Podemos ver que tenemos una restricción base de nivel uno,
+
+91
+00:04:35.150 --> 00:04:39.510
+y vamos a ir no hasta el nivel del dos, okey, hasta acá.
+
+92
+00:04:39.740 --> 00:04:41.950
+Okey, este es el muro que vamos a trabajar.
+
+93
+00:04:42.870 --> 00:04:45.550
+Entonces, fíjense en este nivel uno,
+
+94
+00:04:45.550 --> 00:04:47.310
+lo que vamos a a generar,
+
+95
+00:04:48.120 --> 00:04:51.630
+vamos a trabajar con eh con puertas.
+
+96
+00:04:51.770 --> 00:04:54.190
+Sí, vamos a generarle puertas y ventanas.
+
+97
+00:04:54.590 --> 00:04:56.870
+Entonces puede crear aquí una puerta, okey?
+
+98
+00:04:57.590 --> 00:05:01.150
+Y esta puerta, vamos a generarla acá como una puerta
+
+99
+00:05:01.190 --> 00:05:03.550
+sencilla, una familia de puerta sencilla.
+
+100
+00:05:03.680 --> 00:05:06.270
+Vamos a colocarle su puerta sencilla por acá.
+
+101
+00:05:06.990 --> 00:05:09.910
+Y vamos a colocarle acá en arquitectura.
+
+102
+00:05:10.410 --> 00:05:13.630
+Una ventana también sencilla una una ventana aquí
+
+103
+00:05:14.650 --> 00:05:16.230
+sin mucho tema.
+
+104
+00:05:16.230 --> 00:05:18.750
+Podemos hacer una ventana fija. Okey.
+
+105
+00:05:19.810 --> 00:05:23.050
+Entonces vamos a crear dos parámetros
+
+106
+00:05:23.990 --> 00:05:28.010
+de de proyecto, inclusive esta puerta.
+
+107
+00:05:29.930 --> 00:05:34.340
+Y vamos a crear un parámetro de proyecto en conjunto
+
+108
+00:05:35.580 --> 00:05:36.980
+y un parámetro de proyecto individual.
+
+109
+00:05:37.300 --> 00:05:38.820
+Entonces, cómo vamos a crear
+
+110
+00:05:38.820 --> 00:05:40.300
+parámetros de proyecto en conjunto?
+
+111
+00:05:40.960 --> 00:05:44.460
+Fácil, nos vamos a ir a la parte superior en gestionar.
+
+112
+00:05:45.040 --> 00:05:48.900
+Nos vamos a ir en este caso, la parte de, eh,
+
+113
+00:05:48.900 --> 00:05:51.980
+parámetros de proyecto, como venimos trabajando,
+
+114
+00:05:52.150 --> 00:05:55.460
+vamos a crear un nuevo proyecto acá, un nuevo parámetro,
+
+115
+00:05:56.520 --> 00:05:57.730
+y le vamos a colocar el nombre.
+
+116
+00:05:58.410 --> 00:06:01.970
+Y este va a ser apertura,
+
+117
+00:06:04.250 --> 00:06:05.900
+okey, disciplina común.
+
+118
+00:06:06.120 --> 00:06:08.180
+El tipo de datos va a ser texto.
+
+119
+00:06:08.860 --> 00:06:12.060
+Y fíjense a a mí me gusta desarrollarlo acá,
+
+120
+00:06:13.090 --> 00:06:17.260
+agruparlo en otra, o sea, o en datos de identidad.
+
+121
+00:06:17.780 --> 00:06:20.100
+A mi me gusta específicamente datos de identidad.
+
+122
+00:06:20.590 --> 00:06:22.700
+Otros usuarios prefieren Arlo en otro.
+
+123
+00:06:23.260 --> 00:06:24.460
+A mi me gusta hacerlo así.
+
+124
+00:06:24.750 --> 00:06:28.580
+Datos de identidad, vamos a editar la información por si
+
+125
+00:06:28.580 --> 00:06:29.740
+este proyecto lo abre.
+
+126
+00:06:29.740 --> 00:06:32.660
+Un usuario externo y y apertura
+
+127
+00:06:33.720 --> 00:06:38.570
+indica el lado de la apertura
+
+128
+00:06:43.710 --> 00:06:47.750
+hacia adentro hacia afuera.
+
+129
+00:06:48.990 --> 00:06:50.130
+Son los dos tipos, no?
+
+130
+00:06:51.090 --> 00:06:52.970
+Entonces lo vamos a aplicar en conjunto.
+
+131
+00:06:53.000 --> 00:06:57.050
+Recuerden que en ejemplar, okey en ejemplar.
+
+132
+00:06:58.050 --> 00:07:02.920
+Y eh, básicamente podemos trabajar no,
+
+133
+00:07:02.980 --> 00:07:05.600
+no con la discreción por tipo de familia,
+
+134
+00:07:05.600 --> 00:07:08.880
+sino que ejemplar podemos trabajar para varios elementos
+
+135
+00:07:09.380 --> 00:07:10.440
+de la misma familia.
+
+136
+00:07:11.480 --> 00:07:15.040
+Y la idea es que lo vamos a categorizar con,
+
+137
+00:07:15.700 --> 00:07:17.920
+eh, dos categorías.
+
+138
+00:07:18.140 --> 00:07:19.360
+Una de ellas va a hacer
+
+139
+00:07:20.230 --> 00:07:24.170
+las puertas y la otra va a ser las ventanas.
+
+140
+00:07:24.230 --> 00:07:28.090
+Le damos a aceptar, le damos a aceptar, okey.
+
+141
+00:07:28.890 --> 00:07:31.730
+Entonces aquí simplemente seleccionamos la puerta.
+
+142
+00:07:32.710 --> 00:07:34.850
+Les damos la apertura, le vamos a colocar
+
+143
+00:07:35.520 --> 00:07:38.400
+adentro, okey?
+
+144
+00:07:39.160 --> 00:07:43.760
+Y aquí a la ventana, fíjense aquí en apertura.
+
+145
+00:07:43.820 --> 00:07:45.680
+La vamos a colocar afuera.
+
+146
+00:07:46.310 --> 00:07:50.040
+Okey, entonces adquirió, le puedo dar el sentido.
+
+147
+00:07:50.440 --> 00:07:54.520
+Y luego yo, para qué utilizamos los parámetros del proyecto
+
+148
+00:07:55.480 --> 00:07:56.880
+y los parámetros del proyecto?
+
+149
+00:07:56.980 --> 00:08:00.880
+Nos terminamos utilizando realmente aquí en la parte de
+
+150
+00:08:00.930 --> 00:08:05.460
+vista, en la parte de, eh,
+
+151
+00:08:05.670 --> 00:08:07.580
+tabla de planificación de cantidades.
+
+152
+00:08:08.540 --> 00:08:13.220
+Y por ejemplo, vamos a ver acá, eh, las ventanas. Sí.
+
+153
+00:08:13.860 --> 00:08:18.180
+Entonces, si yo tengo aquí una ventana y yo puedo tomar
+
+154
+00:08:18.710 --> 00:08:23.370
+desde el tipo, podemos darle, eh,
+
+155
+00:08:24.270 --> 00:08:29.100
+la al ancho, la altura.
+
+156
+00:08:29.900 --> 00:08:32.780
+Y aquí vamos a tomar en cuenta nuestra apertura.
+
+157
+00:08:33.420 --> 00:08:35.540
+Entonces, cuando nosotros vayamos a clasificar,
+
+158
+00:08:35.680 --> 00:08:38.540
+lo vamos a hacer por tipo y por apertura,
+
+159
+00:08:39.300 --> 00:08:42.740
+quitamos acá de tall cada ejemplar formato.
+
+160
+00:08:42.740 --> 00:08:44.780
+Bueno, inclusive vamos a tomar la
+
+161
+00:08:46.150 --> 00:08:49.070
+y vamos a hacerle un recuento, okey?
+
+162
+00:08:49.870 --> 00:08:53.350
+Y aquí el formato para recuento. Le vamos calcular totales.
+
+163
+00:08:53.670 --> 00:08:54.830
+Entonces le vamos a dar aceptar.
+
+164
+00:08:56.900 --> 00:09:01.180
+Entonces, qué va a pasar fíes en función de la apertura?
+
+165
+00:09:01.320 --> 00:09:03.700
+Yo puedo tener vea afuera.
+
+166
+00:09:03.900 --> 00:09:05.980
+Entonces yo puedo colocar aquí afuera,
+
+167
+00:09:08.290 --> 00:09:10.540
+okey y adentro.
+
+168
+00:09:10.700 --> 00:09:14.100
+Entonces, los parámetros de proyecto son parámetros discrets
+
+169
+00:09:14.400 --> 00:09:18.620
+que fíjense que y a mí personalmente me gusta que se
+
+170
+00:09:18.750 --> 00:09:21.420
+visualicen en la parte de datos de identidad.
+
+171
+00:09:22.400 --> 00:09:25.260
+Hay otros usuarios que les gusta se vean en la parte de
+
+172
+00:09:25.290 --> 00:09:28.220
+otro, okey, porque saben que todo lo que está clasificado en
+
+173
+00:09:28.220 --> 00:09:30.740
+otro significa que es creado por el usuario.
+
+174
+00:09:31.360 --> 00:09:34.340
+Si tienen alguna duda o quieren recordarse que ustedes
+
+175
+00:09:34.340 --> 00:09:36.980
+crearon este parámetro, también pueden hacer lo siguiente.
+
+176
+00:09:36.980 --> 00:09:39.620
+Ustedes se van acá a gestionar
+
+177
+00:09:40.540 --> 00:09:45.360
+y podemos irnos acá a, eh, parámetros de proyecto
+
+178
+00:09:47.250 --> 00:09:50.110
+editar cuando un parámetro se crea ya,
+
+179
+00:09:50.110 --> 00:09:51.310
+yo no le puedo cambiar.
+
+180
+00:09:52.190 --> 00:09:56.950
+Y digamos, si es tipo ejemplar, o sea,
+
+181
+00:09:57.530 --> 00:10:00.030
+si ya se creo desde el inicio ejemplar, se va a quedar así.
+
+182
+00:10:00.340 --> 00:10:01.670
+Pero si le puedo cambiar el nombre,
+
+183
+00:10:01.830 --> 00:10:04.390
+entonces yo le puedo crear acá apertura,
+
+184
+00:10:04.740 --> 00:10:06.990
+piso usuario a mi me gusta colocarle así.
+
+185
+00:10:07.150 --> 00:10:09.670
+Entonces, todo lo que digo usuario aceptar,
+
+186
+00:10:09.930 --> 00:10:13.630
+yo sé que son parámetros creados por, eh, mi persona.
+
+187
+00:10:14.070 --> 00:10:16.310
+Entonces acá yo lo busco en datos de identidad.
+
+188
+00:10:16.870 --> 00:10:19.310
+Y aquí fíjense que si yo le doy acá
+
+189
+00:10:21.800 --> 00:10:26.400
+y acá perdón, donde dice apertura, usuario
+
+190
+00:10:27.420 --> 00:10:29.400
+indica el lado de la apertura,
+
+191
+00:10:29.480 --> 00:10:34.320
+o sea la la la descripción que que yo le di ok hacia
+
+192
+00:10:34.320 --> 00:10:36.360
+adentro, hacia afuera y acá.
+
+193
+00:10:36.680 --> 00:10:38.160
+Fíjense que yo puedo seleccionar.
+
+194
+00:10:39.040 --> 00:10:40.640
+Y lo mismo sucede con las ventanas.
+
+195
+00:10:40.760 --> 00:10:44.680
+Entonces son parámetros discrets afuera, afuera, adentro.
+
+196
+00:10:45.200 --> 00:10:49.120
+Entonces yo lo puedo filtrar acá vamos a filtrar.
+
+197
+00:10:49.800 --> 00:10:54.680
+Y yo puedo filtrar por aperto usuario que sea igual afuera,
+
+198
+00:10:55.110 --> 00:10:57.120
+aceptarte, me a dar todas las ventanas
+
+199
+00:10:57.840 --> 00:11:00.320
+e inclusive puedo hacer un conteo total aquí
+
+200
+00:11:00.940 --> 00:11:02.960
+en la clasificación agrupación.
+
+201
+00:11:04.550 --> 00:11:06.610
+Yo le puedo colocar aquí totales generales.
+
+202
+00:11:06.730 --> 00:11:09.330
+Entonces me dice cuántas hay son cuatro en total,
+
+203
+00:11:10.350 --> 00:11:11.610
+sí, hacia afuera.
+
+204
+00:11:11.880 --> 00:11:12.970
+Esos son parámetros.
+
+205
+00:11:12.970 --> 00:11:15.530
+Los parámetros de proyectos son parámetros discret izados
+
+206
+00:11:15.990 --> 00:11:17.970
+que tienen dos razones para las tablas de cantidad.
+
+207
+00:11:18.130 --> 00:11:21.490
+Y la otra es para dar información como para dar información
+
+208
+00:11:21.630 --> 00:11:24.010
+cuando nosotros necesitemos información ahí.
+
+209
+00:11:24.010 --> 00:11:26.010
+Sí, podemos utilizar la opción de tipo.
+
+210
+00:11:26.470 --> 00:11:28.450
+Es decir, nos vamos a ir aquí
+
+211
+00:11:29.030 --> 00:11:32.930
+en la parte de de gestionar.
+
+212
+00:11:35.010 --> 00:11:37.450
+Y vamos a a crear uno nuevo
+
+213
+00:11:39.450 --> 00:11:44.260
+y este le podemos dar y, por ejemplo, y
+
+214
+00:11:47.210 --> 00:11:51.550
+código de puertas, okey, le vamos a dar tipo.
+
+215
+00:11:52.980 --> 00:11:57.500
+Entonces acá vamos a colocar puerta, okey?
+
+216
+00:11:57.650 --> 00:12:01.140
+Solo las puertas, y va a ser un parámetro de
+
+217
+00:12:01.850 --> 00:12:03.570
+número, okey?
+
+218
+00:12:04.740 --> 00:12:07.020
+Y lo vamos a agrupar, eh,
+
+219
+00:12:08.630 --> 00:12:10.060
+aquí en datos de identidad.
+
+220
+00:12:10.340 --> 00:12:14.480
+Y luego voy a calcar código de puerta, pis usuario, okey,
+
+221
+00:12:14.620 --> 00:12:15.680
+le damos a aceptar.
+
+222
+00:12:16.080 --> 00:12:18.000
+Entonces, cuál es la diferencia?
+
+223
+00:12:18.200 --> 00:12:20.400
+Fíjense que todas las puertas
+
+224
+00:12:21.220 --> 00:12:25.120
+que yo tenga con estas dimensiones cuando yo le doy a editar
+
+225
+00:12:25.120 --> 00:12:28.440
+tipo, ahí es donde me va a salir el parámetro.
+
+226
+00:12:28.680 --> 00:12:31.310
+Entonces acá vamos a buscarlo.
+
+227
+00:12:33.540 --> 00:12:36.290
+Vamos a verla acá en datos de identidad
+
+228
+00:12:37.780 --> 00:12:39.020
+y código.
+
+229
+00:12:39.400 --> 00:12:42.540
+Yo le puse código de puerto usuario acá.
+
+230
+00:12:42.820 --> 00:12:44.060
+Entonces yo le voy a poner un número.
+
+231
+00:12:44.110 --> 00:12:47.420
+Vamos a ponerle un código que puede estar redo,
+
+232
+00:12:47.440 --> 00:12:52.060
+no en nuestro, en nuestro catálogo, por ejemplo, código 56.
+
+233
+00:12:52.770 --> 00:12:56.150
+Le vamos a aceptar. Entonces, como es un código,
+
+234
+00:12:56.760 --> 00:13:00.350
+todas las puertas que yo estoy utilizando,
+
+235
+00:13:00.350 --> 00:13:03.310
+inclusive fíjense, yo puedo copiar otra puerta de acá acá,
+
+236
+00:13:03.970 --> 00:13:07.630
+no importa, vean, no importa que yo le cambie el sentido.
+
+237
+00:13:07.910 --> 00:13:11.790
+Fíjense que ahora y estás adentro adentro,
+
+238
+00:13:12.260 --> 00:13:13.710
+esta puede ser afuera.
+
+239
+00:13:14.150 --> 00:13:16.710
+Fíjense este ya la puedo cambiar a
+
+240
+00:13:18.350 --> 00:13:20.820
+afuera, verdad?
+
+241
+00:13:21.820 --> 00:13:24.050
+Lemos a aplicar y,
+
+242
+00:13:24.440 --> 00:13:27.170
+pero el tipo va a ser el mismo código.
+
+243
+00:13:27.830 --> 00:13:32.170
+Sí, código de puerta cinco, dos seis por poner un ejemplo.
+
+244
+00:13:33.290 --> 00:13:36.370
+Entonces, cuando nosotros vayamos a la parte de las tablas
+
+245
+00:13:36.370 --> 00:13:39.770
+de cantidades acá en gestionar,
+
+246
+00:13:39.890 --> 00:13:41.970
+vámonos a la parte de tablas de cantidades.
+
+247
+00:13:41.990 --> 00:13:44.450
+Sí, vámonos acá, eh?
+
+248
+00:13:46.000 --> 00:13:50.740
+Gestionar, no, perdono en vista.
+
+249
+00:13:51.150 --> 00:13:55.340
+Vamos a crear ahora una nueva que va a ser de puertas.
+
+250
+00:13:56.180 --> 00:13:57.260
+Entonces ve la diferencia.
+
+251
+00:13:59.180 --> 00:14:04.060
+Vamos a a aceptar y vamos a
+
+252
+00:14:04.080 --> 00:14:08.960
+buscar lo mismo por tipo, eh, que me dé su altura,
+
+253
+00:14:09.460 --> 00:14:11.000
+me dé su ancho,
+
+254
+00:14:12.260 --> 00:14:15.720
+me de el código de eh por acá.
+
+255
+00:14:15.740 --> 00:14:16.720
+Lo podemos ver
+
+256
+00:14:21.330 --> 00:14:21.550
+pa.
+
+257
+00:14:22.730 --> 00:14:26.150
+Ah, ba aquí me dé un recuento.
+
+258
+00:14:29.040 --> 00:14:31.650
+Okey? Y fíjense la
+
+259
+00:14:32.960 --> 00:14:35.330
+acá de diferencia acá.
+
+260
+00:14:35.630 --> 00:14:40.380
+Si yo busco lo que es la parte de del código
+
+261
+00:14:41.870 --> 00:14:43.660
+aquí, yo la tengo código de puerta,
+
+262
+00:14:45.210 --> 00:14:47.650
+y vamos a ordenarlo así.
+
+263
+00:14:47.650 --> 00:14:49.850
+Vamos a darle hacia arriba para que recu sea el
+
+264
+00:14:49.850 --> 00:14:50.930
+último y lo mismo acá.
+
+265
+00:14:51.070 --> 00:14:54.880
+Formato, eh, recuento,
+
+266
+00:14:55.000 --> 00:14:56.320
+calcular totales.
+
+267
+00:14:57.720 --> 00:15:02.240
+Y vamos a dejar la aceptar. Okey?
+
+268
+00:15:02.440 --> 00:15:05.760
+Entonces vean y se clasifica
+
+269
+00:15:06.380 --> 00:15:09.000
+por código de puerta cinco, dos ahí.
+
+270
+00:15:09.000 --> 00:15:12.720
+Y también lo estoy clasificando o lo pudiera, eh?
+
+271
+00:15:13.040 --> 00:15:17.910
+Clasificar por el, eh, el sentido por la apertura.
+
+272
+00:15:18.650 --> 00:15:22.240
+Sí. O sea, yo lo pudiera clasificar por apertura.
+
+273
+00:15:22.920 --> 00:15:25.800
+Entonces yo pudiera clasificar lo que estén
+
+274
+00:15:26.470 --> 00:15:27.800
+adentro y afuera.
+
+275
+00:15:28.680 --> 00:15:32.810
+Sí. Entonces cuando yo vayase al filtro, yo me voy a quedar,
+
+276
+00:15:35.030 --> 00:15:37.850
+voy a filtrar por código de puerto usuario,
+
+277
+00:15:37.850 --> 00:15:39.490
+que sea igual cinco, seis
+
+278
+00:15:40.800 --> 00:15:44.880
+y código de y por apertura que se han iguales a afuera.
+
+279
+00:15:45.790 --> 00:15:49.960
+Entonces él me va a mostrar este tipo. Cuántos hay?
+
+280
+00:15:51.070 --> 00:15:54.680
+Okey? Entonces eso son los parámetros del proyecto.
+
+281
+00:15:54.780 --> 00:15:56.840
+Yo puedo crear cualquier parámetro del proyecto.
+
+282
+00:15:57.560 --> 00:16:00.120
+Fíjense que cre uno de número cre uno de texto.
+
+283
+00:16:00.770 --> 00:16:02.680
+Ahora vamos a cambiar un poquito de la situación.
+
+284
+00:16:02.890 --> 00:16:07.370
+Vamos a regresarnos acá y vamos a
+
+285
+00:16:09.210 --> 00:16:12.570
+a, vamos a cambiar aquí el Cher para que sea,
+
+286
+00:16:13.270 --> 00:16:14.410
+eh, toda la pantalla.
+
+287
+00:16:16.450 --> 00:16:20.210
+Y vamos a hablar ahora de los parámetros compartidos.
+
+288
+00:16:20.430 --> 00:16:21.850
+Los parámetros compartidos.
+
+289
+00:16:21.850 --> 00:16:23.450
+Bueno, ya entienden los parámetros de proyectos.
+
+290
+00:16:23.450 --> 00:16:24.810
+Creo que que es súper claro. Ahora,
+
+291
+00:16:24.810 --> 00:16:26.490
+qué pasa con los parámetros compartidos?
+
+292
+00:16:26.910 --> 00:16:29.570
+Los parámetros compartidos son definidos de un archivo
+
+293
+00:16:29.570 --> 00:16:32.850
+externos reutilizables entre proyectos y fundamentales para
+
+294
+00:16:32.850 --> 00:16:33.970
+intercam de información.
+
+295
+00:16:34.260 --> 00:16:36.050
+Cuál es la diferencia entre en un proyecto?
+
+296
+00:16:36.530 --> 00:16:39.290
+Y hubo un compartido que el proyecto no se comparte
+
+297
+00:16:39.680 --> 00:16:40.970
+como tal estos parámetros.
+
+298
+00:16:40.970 --> 00:16:42.370
+Yo no lo puedo utilizar en otro proyecto.
+
+299
+00:16:42.430 --> 00:16:46.960
+Es de cero, pero y en los compartidos, sí, sí,
+
+300
+00:16:46.960 --> 00:16:48.240
+esa la diferencia, okey.
+
+301
+00:16:48.300 --> 00:16:50.760
+En la información que debe viajar, datos que necesitan
+
+302
+00:16:51.350 --> 00:16:55.050
+compartirse entre el proyectos, planillas y exportaciones
+
+303
+00:16:56.050 --> 00:16:57.290
+y eh, además,
+
+304
+00:16:57.290 --> 00:16:59.810
+los compartidos son los que podemos integrar con at in
+
+305
+00:16:59.810 --> 00:17:01.090
+inteligencia artificial.
+
+306
+00:17:02.690 --> 00:17:05.530
+Y vamos a tener algunos parámetros compartidos para que
+
+307
+00:17:05.530 --> 00:17:07.370
+puedan entender el ejemplo sustancial,
+
+308
+00:17:07.750 --> 00:17:10.330
+la diferencia sustancial de los parámetros compartidos que
+
+309
+00:17:10.330 --> 00:17:13.550
+sobre todo se utilizan para etiquetas, okey,
+
+310
+00:17:13.850 --> 00:17:15.790
+se terminan utilizando para etiquetas.
+
+311
+00:17:16.030 --> 00:17:20.930
+Entonces, vamos a, vamos a hacer eso,
+
+312
+00:17:20.930 --> 00:17:23.850
+vamos a a irnos a a a re.
+
+313
+00:17:24.280 --> 00:17:28.590
+Okey, y eh, en Revit.
+
+314
+00:17:28.680 --> 00:17:31.230
+Ahora vamos a crear un parámetro compartido.
+
+315
+00:17:31.510 --> 00:17:35.750
+Entonces, fíjense lo siguiente y vamos a ir acá a nivel uno.
+
+316
+00:17:36.430 --> 00:17:39.510
+Y lo que voy a hacer es que en este mismo nivel uno,
+
+317
+00:17:39.530 --> 00:17:41.390
+voy a agarrar este mismo mur que está acá.
+
+318
+00:17:41.970 --> 00:17:45.870
+Sí, y este mismo muro que está acá, lo voy a,
+
+319
+00:17:46.160 --> 00:17:47.310
+vamos a copiarlo.
+
+320
+00:17:47.370 --> 00:17:49.070
+Sí, yo lo puedo copiar de acá.
+
+321
+00:17:51.420 --> 00:17:54.130
+Vamos a copiarlo, eh?
+
+322
+00:17:54.780 --> 00:17:57.850
+Vamos a mantener y la
+
+323
+00:17:59.760 --> 00:18:04.310
+la horizontalidad, quien restringirse la verticalidad.
+
+324
+00:18:04.310 --> 00:18:07.040
+Perdón ahí. Okey, entonces,
+
+325
+00:18:07.880 --> 00:18:09.600
+y vamos a quitarle esta ventana.
+
+326
+00:18:10.410 --> 00:18:13.950
+Vamos a quitarle esto. Okey?
+
+327
+00:18:15.050 --> 00:18:17.090
+Y vamos a colocar una nueva puerta.
+
+328
+00:18:17.090 --> 00:18:19.690
+Vamos, arquitectura, vamos a puerta. Okey.
+
+329
+00:18:20.860 --> 00:18:25.610
+Y vamos a cambiar el tipo de, no sé de puerta.
+
+330
+00:18:25.790 --> 00:18:28.450
+Sí, okey, las otra puerta.
+
+331
+00:18:28.880 --> 00:18:31.090
+Esto ya no tiene parámetros de proyecto.
+
+332
+00:18:31.450 --> 00:18:32.450
+Vean, perdón,
+
+333
+00:18:32.550 --> 00:18:34.610
+si tiene un parámetro proyecto que es el usuario,
+
+334
+00:18:35.380 --> 00:18:37.170
+vamos a querer un Paramento compartido.
+
+335
+00:18:37.330 --> 00:18:41.290
+Entonces gestionar ustedes se van a ir acá a este apartado
+
+336
+00:18:41.310 --> 00:18:43.450
+que hice parámetros compartidos.
+
+337
+00:18:43.450 --> 00:18:47.770
+Ustedes le dan clic. Entonces vamos a suprimir esto
+
+338
+00:18:48.440 --> 00:18:51.810
+para que esto pueda hacer desde cero.
+
+339
+00:18:53.370 --> 00:18:56.170
+Y y vamos a crear uno nuevo. Sí.
+
+340
+00:18:56.850 --> 00:18:59.330
+Entonces, y voy a decirle que sí.
+
+341
+00:19:00.410 --> 00:19:04.330
+Entonces voy a suprimirlo, vamos a acá en la parte superior.
+
+342
+00:19:04.470 --> 00:19:07.170
+Lo primero que vamos a hacer es crear un grupo de parámetros
+
+343
+00:19:07.170 --> 00:19:08.770
+compartidos desde cero.
+
+344
+00:19:09.390 --> 00:19:12.170
+Yo como esto, lo voy a utilizar otro usuario.
+
+345
+00:19:12.430 --> 00:19:14.970
+Yo puedo utilizar lo mismo que es el código de puertas.
+
+346
+00:19:15.210 --> 00:19:18.570
+Entonces vamos a irnos acá a la parte crear.
+
+347
+00:19:19.930 --> 00:19:21.210
+Y le voy a decir que no,
+
+348
+00:19:23.460 --> 00:19:25.540
+y vamos a crear un parámetro de puertas, no?
+
+349
+00:19:26.020 --> 00:19:27.940
+Entonces yo le voy a colocar
+
+350
+00:19:29.300 --> 00:19:31.510
+código de puerta.
+
+351
+00:19:32.930 --> 00:19:36.230
+Yo lo voy a colocar en cualquier lugar, el archivo de texto.
+
+352
+00:19:37.030 --> 00:19:41.190
+Entonces ahí y al crearlo,
+
+353
+00:19:41.880 --> 00:19:43.430
+vamos ahora a crear un grupo,
+
+354
+00:19:44.090 --> 00:19:47.430
+un grupo de parámetro con compartido que se vas a llamar,
+
+355
+00:19:48.250 --> 00:19:51.310
+eh, puertas usuarios,
+
+356
+00:19:53.090 --> 00:19:57.610
+y la vamos a aceptar dentro de ese grupo.
+
+357
+00:19:58.030 --> 00:20:00.810
+Yo voy a crear todos los parámetros que yo quisiera
+
+358
+00:20:00.920 --> 00:20:03.890
+compartir y que se van a guardar en ese archivo de texto.
+
+359
+00:20:04.010 --> 00:20:07.050
+Entonces yo le voy a dar nuevo y voy a crear o más a crear
+
+360
+00:20:07.050 --> 00:20:09.130
+dos uno que se llama código de puerta,
+
+361
+00:20:10.270 --> 00:20:13.570
+que va a ser de número hombre aquí.
+
+362
+00:20:13.570 --> 00:20:17.890
+Número, y vamos a crear otro que sea,
+
+363
+00:20:19.310 --> 00:20:23.020
+eh, bisagra que sea
+
+364
+00:20:23.570 --> 00:20:25.980
+acá común para que se me todas las disciplinas.
+
+365
+00:20:26.300 --> 00:20:29.900
+Y aquí podemos colocar texto, la vamos a aceptar
+
+366
+00:20:30.660 --> 00:20:33.580
+y vamos a aceptar, okey, ahora,
+
+367
+00:20:34.500 --> 00:20:38.740
+y qué va a suceder que vamos a
+
+368
+00:20:39.380 --> 00:20:41.860
+a a a seleccionar, por ejemplo, acá.
+
+369
+00:20:42.440 --> 00:20:47.280
+Sí. Y fíjense que aquí todavía no,
+
+370
+00:20:47.540 --> 00:20:49.600
+no estoy viendo los parámetros porque
+
+371
+00:20:49.600 --> 00:20:50.640
+vamos a hacer lo siguiente.
+
+372
+00:20:51.890 --> 00:20:54.570
+Y hay dos razones, yo lo puedo utilizar en etiquetas.
+
+373
+00:20:54.790 --> 00:20:58.290
+Yo me voy aquí en anotar etiquetar por tengo útil, eh?
+
+374
+00:20:58.290 --> 00:21:00.730
+Por categoría, perdón y fíjense,
+
+375
+00:21:00.790 --> 00:21:03.290
+voy a hacer una etiqueta normal aquí.
+
+376
+00:21:03.520 --> 00:21:06.290
+Esta okey, la que viene por defa
+
+377
+00:21:07.410 --> 00:21:09.210
+y esta etiqueta la voy a seleccionar,
+
+378
+00:21:10.590 --> 00:21:11.850
+voy a editar su familia.
+
+379
+00:21:16.250 --> 00:21:20.290
+Y esta etiqueta de puerta que ya está seleccionada, okey,
+
+380
+00:21:20.430 --> 00:21:21.570
+yo la puedo agarrar.
+
+381
+00:21:21.740 --> 00:21:26.090
+Vamos a agarrar esta etiqueta y la puedo eliminar o vamos a
+
+382
+00:21:26.090 --> 00:21:27.130
+hacer algo más práctico.
+
+383
+00:21:27.170 --> 00:21:29.730
+Vamos a salirnos, decirle que no.
+
+384
+00:21:33.880 --> 00:21:36.040
+Y vamos a crear una etiqueta de cero. Sí.
+
+385
+00:21:36.480 --> 00:21:39.600
+Entonces los parámetros compartidos sirven para etiquetas y
+
+386
+00:21:39.600 --> 00:21:43.400
+también para utilizar parámetros en cualquier proyecto.
+
+387
+00:21:43.700 --> 00:21:45.560
+Voy nuevo, símbolo de anotación.
+
+388
+00:21:48.020 --> 00:21:51.150
+Okey, vamos a utilizar esta que dice etiquetas
+
+389
+00:21:51.150 --> 00:21:52.190
+genérica métrica.
+
+390
+00:21:52.290 --> 00:21:53.310
+Le vamos a dar a abrir,
+
+391
+00:22:00.100 --> 00:22:01.430
+esperar ahí que cargue.
+
+392
+00:22:02.610 --> 00:22:04.730
+Entonces esto lo vamos a eliminar.
+
+393
+00:22:05.290 --> 00:22:07.850
+Y vamos a aquí donde hice crear,
+
+394
+00:22:08.780 --> 00:22:11.290
+vamos a parámetros y categorías de familia.
+
+395
+00:22:12.210 --> 00:22:14.850
+Y le vamos a dar la etiqueta.
+
+396
+00:22:14.850 --> 00:22:17.330
+El parámetro va hacer etiqueta de puerta porque
+
+397
+00:22:17.330 --> 00:22:18.490
+estamos trabajando en la puerta.
+
+398
+00:22:18.490 --> 00:22:22.130
+Claro está, seleccionamos la, vamos a aceptar, okey.
+
+399
+00:22:22.290 --> 00:22:25.290
+Y aquí donde dice texto de etiqueta, le damos click,
+
+400
+00:22:25.830 --> 00:22:26.890
+le vamos a colocar acá.
+
+401
+00:22:28.130 --> 00:22:30.370
+Entonces acá fíjense que
+
+402
+00:22:31.010 --> 00:22:35.130
+y todavía yo no estoy visualizando mi mi parámetro.
+
+403
+00:22:35.660 --> 00:22:38.050
+Bueno, no me va a salir, yo le voy a dar aquí.
+
+404
+00:22:39.880 --> 00:22:42.520
+Y acá donde dice tipo de parámetro,
+
+405
+00:22:42.520 --> 00:22:44.600
+tiene que ser compartido para etiqueta.
+
+406
+00:22:44.600 --> 00:22:47.520
+Sólo puede ser compartido. Yo lo voy a seleccionar.
+
+407
+00:22:48.240 --> 00:22:52.920
+Y vamos a seleccionar código de puerta, aceptar, aceptar.
+
+408
+00:22:54.000 --> 00:22:56.880
+Y ahí lo seleccionamos y lo añadimos
+
+409
+00:22:57.720 --> 00:22:58.990
+sólo con código de puerta.
+
+410
+00:22:59.290 --> 00:23:03.230
+Sí. Entonces yo le doy aplicar aceptar.
+
+411
+00:23:04.710 --> 00:23:07.710
+Entonces ahora lo vamos a cargar en el proyecto.
+
+412
+00:23:13.660 --> 00:23:15.650
+Listo. Entonces, ahora fin,
+
+413
+00:23:15.790 --> 00:23:18.570
+yo se le voy a seleccionar esta etiqueta existente.
+
+414
+00:23:19.410 --> 00:23:22.000
+Vamos a seleccionarla y vamos a cambiarla.
+
+415
+00:23:22.780 --> 00:23:24.400
+Ya no quiero que sea etiqueta de puerta,
+
+416
+00:23:24.430 --> 00:23:26.480
+sino la familia uno que acabamos de crear.
+
+417
+00:23:26.860 --> 00:23:29.240
+Me sale un signo de interrogación. No pasa nada.
+
+418
+00:23:29.350 --> 00:23:31.360
+Este signo de interrogación, nosotros lo
+
+419
+00:23:32.140 --> 00:23:35.200
+eh me me está saliendo porque todavía no tengo
+
+420
+00:23:35.860 --> 00:23:36.880
+el código de la puerta.
+
+421
+00:23:37.300 --> 00:23:40.200
+Sí, fíjense que aquí no tengo el código de la puerta,
+
+422
+00:23:40.590 --> 00:23:41.840
+pero no me está saliendo.
+
+423
+00:23:42.550 --> 00:23:45.520
+Qué pasa? Un parámetro convertido se convierte en un
+
+424
+00:23:45.520 --> 00:23:46.520
+parámetro de proyecto.
+
+425
+00:23:47.020 --> 00:23:50.840
+Es decir que ustedes se van a gestionar acá selecciona
+
+426
+00:23:52.400 --> 00:23:55.680
+y van a darle acá nuevo parámetro.
+
+427
+00:23:56.990 --> 00:24:00.110
+Y acá en vez de parámetro de proyecto, usted le van a decir,
+
+428
+00:24:00.110 --> 00:24:01.350
+ya va, es que yo tengo un parámetro
+
+429
+00:24:01.350 --> 00:24:02.550
+compartido de otro proyecto.
+
+430
+00:24:03.250 --> 00:24:07.330
+Yo selecciono, y aquí está código de puerta.
+
+431
+00:24:09.400 --> 00:24:12.060
+Ya esto viene definido aquí lo podemos colocar
+
+432
+00:24:12.060 --> 00:24:13.420
+como datos de identidad.
+
+433
+00:24:14.540 --> 00:24:17.940
+Y se lo añadimos a nuestra puerta, no la categoría.
+
+434
+00:24:18.740 --> 00:24:22.550
+Le damos a aceptar y aceptar.
+
+435
+00:24:23.630 --> 00:24:24.950
+Y ahora aquí me va a salir.
+
+436
+00:24:26.370 --> 00:24:31.270
+Y los datos de perdón de
+
+437
+00:24:31.270 --> 00:24:34.230
+la puerta aquí, seleccionemos esta puerta por fa.
+
+438
+00:24:34.700 --> 00:24:37.990
+Ahí está en los datos de de identidad, código de puerta.
+
+439
+00:24:38.090 --> 00:24:42.800
+Yo le puedo poner cinco seis dos y va a salir. Ahí está.
+
+440
+00:24:43.520 --> 00:24:47.520
+Y así yo puede titar todo. Sí, por ejemplo.
+
+441
+00:24:47.760 --> 00:24:50.760
+Entonces, si yo vengo acá a notar et quitar por categoría,
+
+442
+00:24:50.760 --> 00:24:53.240
+como ya cree en mi parámetro compartido, fíjense,
+
+443
+00:24:53.240 --> 00:24:55.040
+vamos con esta puerta que está acá.
+
+444
+00:24:55.760 --> 00:24:57.240
+Entonces esta puerta que está acá
+
+445
+00:24:58.170 --> 00:25:01.240
+tiene un código de puerta que puede ser seis, tres, dos
+
+446
+00:25:03.330 --> 00:25:06.730
+y está y así voy trabajando con con todo, no.
+
+447
+00:25:08.250 --> 00:25:12.810
+Y entonces los parámetros compartidos se utilizan, es el,
+
+448
+00:25:13.310 --> 00:25:15.290
+es la misma base del parámetro del proyecto,
+
+449
+00:25:15.940 --> 00:25:18.210
+sólo que lo puedes utilizar en nuevos proyectos.
+
+450
+00:25:18.470 --> 00:25:20.570
+Sí. Es decir, fíjese, yo voy a cerrar esto,
+
+451
+00:25:23.170 --> 00:25:24.480
+vamos a cerrar esto.
+
+452
+00:25:26.660 --> 00:25:28.160
+Yo pudiera cerrar esto acá.
+
+453
+00:25:28.340 --> 00:25:31.640
+No decirle que no,
+
+454
+00:25:34.480 --> 00:25:35.870
+vamos acá.
+
+455
+00:25:37.120 --> 00:25:40.950
+Vamos a cerrar todo. Puede decir que no.
+
+456
+00:25:43.560 --> 00:25:46.360
+Entonces yo puedo abrir el proyecto. Imagínense.
+
+457
+00:25:47.620 --> 00:25:49.480
+Yo estoy comenzando mi proyecto.
+
+458
+00:25:49.540 --> 00:25:51.720
+Yo Gabriel pantoja como modelador,
+
+459
+00:25:51.720 --> 00:25:53.240
+estoy comenzando este nuevo proyecto.
+
+460
+00:25:54.080 --> 00:25:56.400
+Y yo siempre utilizo las mismas etiquetas de puerta.
+
+461
+00:25:57.120 --> 00:25:59.040
+Entonces, para no volver a repetir esto,
+
+462
+00:25:59.560 --> 00:26:03.720
+entonces yo lo que hago es que aquí, por ejemplo,
+
+463
+00:26:03.720 --> 00:26:05.240
+aquí ya tenemos una puerta, verdad?
+
+464
+00:26:05.720 --> 00:26:10.450
+Entonces acá nos vamos a gestionar y perdón,
+
+465
+00:26:10.960 --> 00:26:12.370
+parámetros compartidos.
+
+466
+00:26:13.500 --> 00:26:16.910
+Y fíjense que ya yo tengo el parámetro es acá.
+
+467
+00:26:17.820 --> 00:26:19.900
+Y si no lo encuentre a usted, se van a examinar
+
+468
+00:26:20.940 --> 00:26:24.220
+y van a buscar ese archivo de texto y lo cargan esta código
+
+469
+00:26:24.220 --> 00:26:26.780
+de puerta le van a abril y les va a salir todo lo que está
+
+470
+00:26:26.940 --> 00:26:29.220
+configurando y ya no tienen que estar creando todos sus
+
+471
+00:26:29.220 --> 00:26:31.700
+parámetros parámetros compartidos.
+
+472
+00:26:32.820 --> 00:26:35.100
+Entonces es un parámetro de proyecto,
+
+473
+00:26:35.570 --> 00:26:37.460
+pero que otros usuarios ya lo pueden abrir.
+
+474
+00:26:37.710 --> 00:26:39.460
+Sirve para etiquetas, sí,
+
+475
+00:26:39.460 --> 00:26:41.620
+lo traes para las cantidades y priorización,
+
+476
+00:26:41.620 --> 00:26:44.560
+pero principalmente para que se pueda compartir
+
+477
+00:26:45.350 --> 00:26:47.240
+como vas en todos mis proyectos.
+
+478
+00:26:47.390 --> 00:26:51.260
+Okey? Y ahora vamos a,
+
+479
+00:26:52.580 --> 00:26:57.220
+y en este caso, vámonos a
+
+480
+00:26:59.080 --> 00:27:02.310
+obviamente aquí en en screen
+
+481
+00:27:03.190 --> 00:27:05.750
+y vámonos ahora al último parámetro.
+
+482
+00:27:06.260 --> 00:27:08.790
+Okey, qué es el parámetro global?
+
+483
+00:27:09.750 --> 00:27:11.950
+Y básicamente los parámetros globales
+
+484
+00:27:12.580 --> 00:27:14.990
+controlan el comportamiento del modelo, okey?
+
+485
+00:27:15.470 --> 00:27:18.310
+Y básicamente lo vamos a usar para control geométrico y
+
+486
+00:27:18.310 --> 00:27:20.230
+reglas dimensionales, okey?
+
+487
+00:27:20.310 --> 00:27:23.350
+O sea más que todo para cot, yo lo utilizo,
+
+488
+00:27:23.350 --> 00:27:26.280
+es para acotaciones y le sugiero que
+
+489
+00:27:26.280 --> 00:27:27.400
+lo utilizan para acotaciones.
+
+490
+00:27:27.400 --> 00:27:30.280
+Muchos usuarios lo utilizan para formulaciones y demás,
+
+491
+00:27:30.950 --> 00:27:34.000
+pero eso ya yo lo dejo con los atins y la inteligencia
+
+492
+00:27:34.000 --> 00:27:36.560
+artificial cuando quieran utilizar fórmulas y demás,
+
+493
+00:27:37.180 --> 00:27:39.760
+yo realmente lo utilizó como control geométrico y reglas
+
+494
+00:27:39.760 --> 00:27:43.640
+dimensionales, principalmente en cotas y principalmente en
+
+495
+00:27:43.640 --> 00:27:46.480
+restricciones de distancias para que me entiendan,
+
+496
+00:27:47.010 --> 00:27:51.480
+vamos a regresar nuevamente a a Revit, okey?
+
+497
+00:27:53.290 --> 00:27:56.820
+Y vámonos a ca a Revit.
+
+498
+00:27:59.140 --> 00:28:02.070
+Okey. Entonces fíjense lo siguiente,
+
+499
+00:28:03.090 --> 00:28:06.070
+voy a crear acá varios muros, arquitectura,
+
+500
+00:28:06.820 --> 00:28:07.990
+muro arquitectónico.
+
+501
+00:28:10.610 --> 00:28:14.120
+Vamos a crear varios muros ya y pa, perdón,
+
+502
+00:28:15.300 --> 00:28:17.010
+vamos a crear varios muros.
+
+503
+00:28:17.010 --> 00:28:20.370
+Dame un segundo. Entonces voy a crear así
+
+504
+00:28:21.290 --> 00:28:22.410
+a crear un muro acá.
+
+505
+00:28:24.490 --> 00:28:28.290
+Y este muro que está aquí, yo lo voy a copiar,
+
+506
+00:28:29.410 --> 00:28:31.110
+por ejemplo, así.
+
+507
+00:28:32.790 --> 00:28:34.430
+Y lo voy a alternar.
+
+508
+00:28:34.550 --> 00:28:37.550
+O sea, vamos a cambiar aquí la parte restring.
+
+509
+00:28:37.870 --> 00:28:41.420
+Entonces vuelo alternando, okey.
+
+510
+00:28:44.730 --> 00:28:47.810
+Entonces fíjese, yo voy a tomar aquí una cota a
+
+511
+00:28:47.860 --> 00:28:49.450
+notar cota alineada.
+
+512
+00:28:50.410 --> 00:28:54.050
+Entonces voy a tomar esta cota de acá acaba y uno,
+
+513
+00:28:55.130 --> 00:28:58.090
+y digamos que acá acaba otro
+
+514
+00:29:00.080 --> 00:29:01.720
+y acá acaba otro.
+
+515
+00:29:02.680 --> 00:29:05.140
+Sí. Entonces, cómo funciona esto?
+
+516
+00:29:06.690 --> 00:29:09.150
+Y vean que acá
+
+517
+00:29:10.410 --> 00:29:12.970
+y yo puedo agarrar aquí cuando yo agarro una
+
+518
+00:29:13.040 --> 00:29:14.970
+cota aquí hay una opción qui.
+
+519
+00:29:14.970 --> 00:29:18.410
+Hice texto de etiqueta. Sí, me sale ninguno.
+
+520
+00:29:18.970 --> 00:29:21.210
+Y si yo le doy acá crear,
+
+521
+00:29:22.030 --> 00:29:23.700
+yo puedo crear un parámetro global.
+
+522
+00:29:24.400 --> 00:29:29.180
+Ese parámetro global se va a llamar cota tipo.
+
+523
+00:29:30.180 --> 00:29:32.710
+Okey, eh? Es de cota.
+
+524
+00:29:34.400 --> 00:29:37.750
+Vamos a darle aquí. Le puedo dar aquí la información.
+
+525
+00:29:38.380 --> 00:29:43.360
+Cota igual muros,
+
+526
+00:29:45.100 --> 00:29:46.310
+aceptar, aceptar.
+
+527
+00:29:46.310 --> 00:29:47.790
+Okey. Entonces, como funcion,
+
+528
+00:29:48.310 --> 00:29:50.750
+fíjense que cuando yo le di este la pis que sé que
+
+529
+00:29:50.810 --> 00:29:52.870
+genera, esa cota tiene un valor.
+
+530
+00:29:53.270 --> 00:29:54.430
+Entonces yo puedo agarrar aquí.
+
+531
+00:29:54.990 --> 00:29:57.030
+Y esto puede cambiar a seis metros.
+
+532
+00:29:57.170 --> 00:29:58.710
+Le voy a aplicar y aceptar.
+
+533
+00:29:59.510 --> 00:30:01.710
+Entonces, qué me va a generar cuando yo tengo un proyecto
+
+534
+00:30:01.850 --> 00:30:04.670
+tan repetitivo y tan tedioso que tengo que estar haciendo
+
+535
+00:30:04.690 --> 00:30:07.590
+las cotas y que esas cotas tienen que ser equitativas
+
+536
+00:30:08.190 --> 00:30:11.510
+y para yo no estar copiando seis metros y metros y metros.
+
+537
+00:30:11.690 --> 00:30:16.070
+Yo puedo hacer esto. Yo puedo agarrar esto con tecla tecla
+
+538
+00:30:17.590 --> 00:30:20.770
+y estos valores, darle la cotati
+
+539
+00:30:22.050 --> 00:30:24.130
+y se van a cambiar todos a seis metros.
+
+540
+00:30:24.900 --> 00:30:28.250
+Usted irán? No, pero es lo mismo cuando hacen varias, eh?
+
+541
+00:30:28.710 --> 00:30:31.170
+Eh, REIT tiene una opción que si yo hago
+
+542
+00:30:31.200 --> 00:30:33.950
+esto, le doy copiar.
+
+543
+00:30:35.660 --> 00:30:38.580
+Entonces yo vamos a mantener la parte restring
+
+544
+00:30:38.580 --> 00:30:40.500
+Hill restringir, no.
+
+545
+00:30:40.780 --> 00:30:42.820
+Entonces cuando yo tomo una cota aquí,
+
+546
+00:30:43.780 --> 00:30:46.340
+fíjense que vamos a tomar, por ejemplo, acá
+
+547
+00:30:47.280 --> 00:30:48.420
+una cota de acá acá.
+
+548
+00:30:49.640 --> 00:30:51.080
+Y son cotas sucesivas, no?
+
+549
+00:30:51.800 --> 00:30:53.720
+Y repitiendo una opción que si yo le doy
+
+550
+00:30:53.730 --> 00:30:55.080
+igual, él las iguala.
+
+551
+00:30:55.540 --> 00:30:57.400
+Sí, el igual a las cotas, pero no,
+
+552
+00:30:57.580 --> 00:30:59.840
+no la d están uno ni a la distancia que yo quiera.
+
+553
+00:30:59.840 --> 00:31:03.120
+Hay dos. Tienen que estar alineadas en cambio aquí no.
+
+554
+00:31:03.810 --> 00:31:05.730
+Entonces, cuando tengo un pleo que tienen que tener toda la
+
+555
+00:31:05.850 --> 00:31:09.450
+distribución equitativa y sucede un motón en los proyectos,
+
+556
+00:31:09.660 --> 00:31:12.130
+puede utilizar un parámetro global de esta manera
+
+557
+00:31:13.070 --> 00:31:14.430
+controlo las dimensiones.
+
+558
+00:31:14.860 --> 00:31:18.310
+Para eso se se se utilizan los
+
+559
+00:31:18.890 --> 00:31:20.590
+los parámetros globales ya.
+
+560
+00:31:21.650 --> 00:31:25.950
+Eh? Otra opción que se utilizan los parámetros globales es
+
+561
+00:31:25.950 --> 00:31:29.510
+para hacer restricciones de de alturas.
+
+562
+00:31:29.890 --> 00:31:34.870
+Por ejemplo, acá, si yo tomo una quien,
+
+563
+00:31:34.870 --> 00:31:38.750
+donde dice notar una cota alineada por poner un ejemplo de
+
+564
+00:31:38.750 --> 00:31:42.160
+acá acá, vamos a ponerla de acá
+
+565
+00:31:42.710 --> 00:31:44.320
+acá hasta esta barandilla.
+
+566
+00:31:45.580 --> 00:31:48.640
+Si yo quiero mantener que independientemente
+
+567
+00:31:49.300 --> 00:31:52.800
+de el cambio de la barandilla, sigan siendo los cero,
+
+568
+00:31:53.720 --> 00:31:56.200
+o sea para yo restringir espacios ess,
+
+569
+00:31:56.480 --> 00:32:00.120
+fíjense aquí lo mismo anotar cuando yo quiero restringir ess
+
+570
+00:32:01.060 --> 00:32:05.440
+de acá, por ejemplo, de esta distancia hasta la puerta,
+
+571
+00:32:08.030 --> 00:32:10.970
+yo quiero mantener un espa.
+
+572
+00:32:11.750 --> 00:32:12.930
+Se pueden crear etiquetas.
+
+573
+00:32:13.050 --> 00:32:14.570
+Fíjense, vamos a crear una para las puertas.
+
+574
+00:32:14.800 --> 00:32:19.490
+Ustedes selecciona aquí, le dan crear parámetro
+
+575
+00:32:20.420 --> 00:32:23.940
+y vamos a colocarle cota a puerta que esto funciona o co o
+
+576
+00:32:23.940 --> 00:32:26.580
+con las ventanas, funciona un montón también
+
+577
+00:32:27.250 --> 00:32:29.180
+cota puerta le d a aceptar.
+
+578
+00:32:30.710 --> 00:32:32.990
+Entonces, y ese valor
+
+579
+00:32:34.380 --> 00:32:38.360
+de cota cuando yo lo vaya a editar, fíjense que es un valor
+
+580
+00:32:38.950 --> 00:32:43.760
+acá y no
+
+581
+00:32:43.780 --> 00:32:45.880
+lo tienen que editar acá en el lápiz siempre.
+
+582
+00:32:46.600 --> 00:32:50.720
+Entonces dice que si yo le digo 30
+
+583
+00:32:51.950 --> 00:32:55.400
+aplicar a aceptar, vean que se va a igualar.
+
+584
+00:32:55.560 --> 00:32:58.280
+Entonces todas las puertas que yo quiero que estén a 30
+
+585
+00:32:58.280 --> 00:33:00.160
+centímetros, le aplico el mismo.
+
+586
+00:33:00.420 --> 00:33:03.880
+Si, o sea, lo único que tendría que hacer es copiarle la
+
+587
+00:33:03.910 --> 00:33:08.140
+cota, o sea yo venir por acá de aquí
+
+588
+00:33:09.010 --> 00:33:11.020
+acá, entonces dice cero, dos.
+
+589
+00:33:11.220 --> 00:33:15.140
+Entonces yo agarro esta cota y aquí en texto de etiqueta,
+
+590
+00:33:15.200 --> 00:33:18.020
+lo cambio, coto puerto y se va a cambiar solito.
+
+591
+00:33:18.020 --> 00:33:20.500
+Ese otro. Ahí está, vea
+
+592
+00:33:21.380 --> 00:33:23.730
+automatizo los procesos, eh?
+
+593
+00:33:24.370 --> 00:33:25.450
+Y me da las restricciones.
+
+594
+00:33:25.450 --> 00:33:29.730
+Por ejemplo, esta que está aquí, yo quiero que se llame,
+
+595
+00:33:30.970 --> 00:33:31.190
+eh,
+
+596
+00:33:32.790 --> 00:33:37.790
+restricción
+
+597
+00:33:38.490 --> 00:33:40.160
+Vamos a poner decir o restricción.
+
+598
+00:33:40.160 --> 00:33:43.480
+Vamos a darle restricción. Le vamos dejar aceptar. Sí.
+
+599
+00:33:43.880 --> 00:33:48.560
+Entonces, qué pasa si yo cambia este valor, que es lo mismo?
+
+600
+00:33:49.590 --> 00:33:50.850
+Voy a desplazar el muro ose.
+
+601
+00:33:50.850 --> 00:33:53.930
+Si yo le coloco el le voy a aplicar a aceptar
+
+602
+00:33:55.380 --> 00:33:56.470
+ahí se va a desplazar.
+
+603
+00:33:57.620 --> 00:34:01.070
+Pero qué pasa si yo cambio ahora, por ejemplo,
+
+604
+00:34:01.620 --> 00:34:04.590
+esta baranda que está acá y cambio en 900,
+
+605
+00:34:06.760 --> 00:34:10.730
+ahora la baranda como tal siguen siendo los mismo,
+
+606
+00:34:11.280 --> 00:34:13.010
+pero se modifica la barandilla.
+
+607
+00:34:13.190 --> 00:34:16.570
+Sí, entonces, y o sea,
+
+608
+00:34:16.670 --> 00:34:20.090
+la barandilla no se restringe.
+
+609
+00:34:20.090 --> 00:34:21.850
+O sea, pasa los en realidad.
+
+610
+00:34:22.690 --> 00:34:26.010
+Entonces que quiero que esta barandilla cada vez que yo la
+
+611
+00:34:26.110 --> 00:34:28.450
+cambie y manténgalo.
+
+612
+00:34:29.350 --> 00:34:33.040
+Sí. Entonces aquí podemos crear y
+
+613
+00:34:34.010 --> 00:34:38.800
+donde tenemos la la cota, hay una opción acá.
+
+614
+00:34:39.790 --> 00:34:43.200
+Vamos a crear y upset
+
+615
+00:34:43.900 --> 00:34:45.760
+sí, upset fijo.
+
+616
+00:34:46.690 --> 00:34:47.910
+Le vamos a dar a aceptar.
+
+617
+00:34:48.680 --> 00:34:51.320
+Entonces es que vamos a hacer yo esta cota.
+
+618
+00:34:51.320 --> 00:34:53.880
+La voy a bloquear esta cota que está acá
+
+619
+00:34:55.170 --> 00:34:56.650
+y la vamos a bloquear.
+
+620
+00:34:57.030 --> 00:35:01.250
+Sí. Y para y bloquearla,
+
+621
+00:35:01.250 --> 00:35:03.570
+vamos a eliminar la cota nuevamente.
+
+622
+00:35:03.580 --> 00:35:08.050
+Vamos a anular esa restricción. Vamos a hablar aquí.
+
+623
+00:35:08.480 --> 00:35:10.090
+Cota de acá acá.
+
+624
+00:35:12.010 --> 00:35:15.320
+Puede ser la cota metida de acá.
+
+625
+00:35:17.100 --> 00:35:21.470
+Vamos a me ir la de de aquí, aquí,
+
+626
+00:35:23.330 --> 00:35:25.760
+hasta esta de mitad ahí.
+
+627
+00:35:26.100 --> 00:35:28.280
+Sí. Y la vamos a bloquear. Sí.
+
+628
+00:35:29.360 --> 00:35:32.520
+Entonces esta cota que estamos bloqueando,
+
+629
+00:35:33.640 --> 00:35:38.010
+vamos a a a
+
+630
+00:35:38.550 --> 00:35:40.210
+esa misma cota que bloqueamos perdón,
+
+631
+00:35:41.870 --> 00:35:45.810
+les vamos a colocar restricción.
+
+632
+00:35:45.910 --> 00:35:49.100
+No lo voy a aceptar
+
+633
+00:35:50.600 --> 00:35:51.920
+a poner restricción nueva.
+
+634
+00:35:53.150 --> 00:35:57.020
+Le vamos a aceptar. Entonces, y
+
+635
+00:35:57.800 --> 00:36:00.780
+cuando le demos a quién editar, okey,
+
+636
+00:36:02.310 --> 00:36:06.300
+lo que vamos a hacer es que vamos a crear una nueva
+
+637
+00:36:07.130 --> 00:36:10.420
+okey que se llame no variable
+
+638
+00:36:12.550 --> 00:36:14.010
+de longitud todo igual.
+
+639
+00:36:14.650 --> 00:36:17.330
+Y en la fórmula, lo que le vamos a decir acá
+
+640
+00:36:18.820 --> 00:36:22.120
+es que en vez de valor para que no, c el la cote
+
+641
+00:36:22.910 --> 00:36:26.130
+siempre se quede fija con la opción
+
+642
+00:36:27.250 --> 00:36:30.180
+restricción nueva.
+
+643
+00:36:32.690 --> 00:36:35.610
+Y le vamos a aplicar acept y que va a suceder.
+
+644
+00:36:36.470 --> 00:36:38.730
+Si yo agarro esta que está acá
+
+645
+00:36:39.880 --> 00:36:44.440
+y va a quedar como restricción, eh, nueva,
+
+646
+00:36:45.400 --> 00:36:47.330
+cada vez que yo cambie la barandilla,
+
+647
+00:36:47.350 --> 00:36:51.010
+lo que va a suceder es que a pesar de que yo cambie la
+
+648
+00:36:51.010 --> 00:36:55.130
+barandilla o cambie el elemento, vamos a, bueno, este,
+
+649
+00:36:55.390 --> 00:36:56.610
+le cambié mucho de la barandilla.
+
+650
+00:36:56.610 --> 00:36:59.010
+Vamos a cambiarle a en vez de,
+
+651
+00:36:59.340 --> 00:37:01.090
+vamos a ponerle, por ejemplo, una tubería.
+
+652
+00:37:02.240 --> 00:37:04.320
+Entonces, a pesar de que yo cambie la tubería,
+
+653
+00:37:04.480 --> 00:37:06.640
+fíjense que cambia, se mantiene la cota.
+
+654
+00:37:07.510 --> 00:37:10.290
+La cota no va a variar porque la restricción la
+
+655
+00:37:10.290 --> 00:37:11.330
+estoy haciendo desde abajo.
+
+656
+00:37:11.380 --> 00:37:13.690
+Obviamente, si yo cambia el muro, si va a variar,
+
+657
+00:37:13.690 --> 00:37:17.050
+porque el muro tiene otra configuración, okey?
+
+658
+00:37:18.370 --> 00:37:20.730
+Y yo lo estoy haciendo desde arriba, la cota,
+
+659
+00:37:20.730 --> 00:37:23.010
+los estoy tomando desde arriba hacia abajo, okey,
+
+660
+00:37:23.910 --> 00:37:27.090
+si yo quisiera que al cambiar el muro no se modifique la
+
+661
+00:37:27.090 --> 00:37:28.650
+cota, tendría que hacerlo al revés.
+
+662
+00:37:28.650 --> 00:37:31.450
+Hubiese tomado la cota de ese este punto hasta acá ya.
+
+663
+00:37:33.010 --> 00:37:35.290
+Y por ejemplo, me funciona también para los
+
+664
+00:37:35.960 --> 00:37:37.050
+para los alzados.
+
+665
+00:37:37.480 --> 00:37:38.850
+Mira esto que está acá.
+
+666
+00:37:40.010 --> 00:37:42.590
+Yo puedo colocar aquí vamos a ver un alzado donde
+
+667
+00:37:43.200 --> 00:37:44.470
+tenga varias ventanas.
+
+668
+00:37:44.530 --> 00:37:49.310
+No sé aquí. Entonces yo tomar acá una cota
+
+669
+00:37:49.310 --> 00:37:53.930
+alineada de acá acá y que esta cota
+
+670
+00:37:55.350 --> 00:37:58.830
+y yo la puedo bloquear.
+
+671
+00:37:59.490 --> 00:38:04.070
+Se que en cero, 69 y crearle un nuevo
+
+672
+00:38:04.200 --> 00:38:05.510
+texto que se llama ventana.
+
+673
+00:38:07.200 --> 00:38:08.220
+Te vamos a aceptar.
+
+674
+00:38:09.340 --> 00:38:14.310
+Entonces, cuando vayamos a editar cota alineada
+
+675
+00:38:15.480 --> 00:38:17.800
+y vamos a colocarle, por ejemplo,
+
+676
+00:38:20.570 --> 00:38:22.950
+no sé, me invento este que está acá.
+
+677
+00:38:23.250 --> 00:38:26.540
+La ventana que está aquí está acá acá. Sí.
+
+678
+00:38:26.540 --> 00:38:29.620
+Bueno, este sigue siendo CE los 69. No, no, no, aplica.
+
+679
+00:38:29.940 --> 00:38:34.020
+Quisiera que, eh, fuera de acá, sea, se mantenga los celos.
+
+680
+00:38:34.020 --> 00:38:35.560
+69, CE 42.
+
+681
+00:38:35.920 --> 00:38:38.760
+Entonces este que está acá, yo le puedo dar
+
+682
+00:38:39.780 --> 00:38:42.680
+la y la cota.
+
+683
+00:38:43.320 --> 00:38:44.800
+Fíjense que, bueno, está bloqueada.
+
+684
+00:38:44.800 --> 00:38:47.040
+Vamos a liberarla esta cota que está acá.
+
+685
+00:38:48.400 --> 00:38:51.290
+Podemos hago a agarrar una,
+
+686
+00:38:52.860 --> 00:38:54.610
+vamos a darle cota a puerta.
+
+687
+00:38:57.240 --> 00:39:00.810
+Mm-hmm. Corta puerta, sí. Okey.
+
+688
+00:39:01.930 --> 00:39:04.210
+Y vamos a acotar esta de acá acá.
+
+689
+00:39:07.220 --> 00:39:09.910
+Perdón, dónde? Acá, acá. Entonces tengo, vean.
+
+690
+00:39:10.110 --> 00:39:13.870
+Entonces tengo éste que está aquí y este que está acá se
+
+691
+00:39:13.870 --> 00:39:15.150
+puede cambiar por cota puerta.
+
+692
+00:39:16.350 --> 00:39:18.080
+Pues cuando yo agarre cota puerta,
+
+693
+00:39:18.560 --> 00:39:20.280
+fíjense que se va a tomar los cero.
+
+694
+00:39:22.200 --> 00:39:24.520
+Y lo mismo aquí, si yo esta ventana al abajo,
+
+695
+00:39:24.610 --> 00:39:29.240
+vamos a bajarla y ya no tiene los celos 69.
+
+696
+00:39:30.000 --> 00:39:31.680
+Y tomo esta cota alineada
+
+697
+00:39:32.890 --> 00:39:35.650
+y yo la agarro de este.
+
+698
+00:39:36.200 --> 00:39:40.250
+Este extremo aquí tiene el 80, no?
+
+699
+00:39:40.650 --> 00:39:44.860
+Entonces acá yo esta no la no la
+
+700
+00:39:44.860 --> 00:39:45.940
+cre como cota ventana.
+
+701
+00:39:47.860 --> 00:39:52.060
+Sí, vamos, aar, restricción. Vamos a ponerle de acá acá.
+
+702
+00:39:55.770 --> 00:39:58.700
+Ajá. Y esta le creamos cota ventana?
+
+703
+00:39:58.920 --> 00:40:01.730
+No, ahí está.
+
+704
+00:40:02.150 --> 00:40:05.050
+Yo le puedo poner ventana informe y vean que ésta
+
+705
+00:40:06.930 --> 00:40:08.090
+y puede ser ventana inform.
+
+706
+00:40:08.230 --> 00:40:09.850
+Yo le coloc que ventana informe.
+
+707
+00:40:10.370 --> 00:40:14.090
+Y esta ventana no es que no se
+
+708
+00:40:14.090 --> 00:40:15.130
+me va quedar que ventana inform.
+
+709
+00:40:15.450 --> 00:40:18.090
+Tenemos que crear una nueva que se llam ventana,
+
+710
+00:40:18.390 --> 00:40:21.190
+me importa ventana.
+
+711
+00:40:23.240 --> 00:40:24.800
+Ahí está. Okey.
+
+712
+00:40:25.240 --> 00:40:29.380
+Entonces todo lo que sea ventana, le podemos dar el
+
+713
+00:40:31.030 --> 00:40:34.560
+aplicar a aceptar la ventana se va a bajar y vea que
+
+714
+00:40:34.560 --> 00:40:35.600
+esta también se va a bajar.
+
+715
+00:40:36.350 --> 00:40:38.890
+Sí. Entonces cuando yo creo lo que aquí ventana también
+
+716
+00:40:38.890 --> 00:40:42.610
+tiene el 80, y cuando yo agarra esta cota que está acá
+
+717
+00:40:43.770 --> 00:40:48.670
+de este punto de este punto, seleccionamos ventana
+
+718
+00:40:49.370 --> 00:40:51.710
+el 80, entonces empieza a linear.
+
+719
+00:40:51.980 --> 00:40:55.230
+Okey. Entonces ese es el objetivo principal,
+
+720
+00:40:55.420 --> 00:40:58.030
+parámetros globales es para restricción de media medidas.
+
+721
+00:40:58.250 --> 00:40:59.350
+Lo acaba de demostrar acá.
+
+722
+00:40:59.950 --> 00:41:04.230
+Y entonces acá han visto los tres tipos de parámetro.
+
+723
+00:41:04.260 --> 00:41:08.540
+Okey, ahora, eh, vamos a
+
+724
+00:41:09.540 --> 00:41:11.740
+a regresarnos para para cerrar el video
+
+725
+00:41:13.590 --> 00:41:16.750
+con la parte de bueno,
+
+726
+00:41:16.750 --> 00:41:19.590
+la comparación de los tres tipos proyecto se clasifica
+
+727
+00:41:19.590 --> 00:41:22.510
+dentro el proyecto compartidos solo se comparte la
+
+728
+00:41:22.510 --> 00:41:25.550
+información y puedes utilizarlo como multi proyecto
+
+729
+00:41:26.430 --> 00:41:29.470
+y global en realidad aplica a ambos, okey,
+
+730
+00:41:29.570 --> 00:41:32.150
+ya van a ver que también se puede compartir los proyectos y
+
+731
+00:41:32.150 --> 00:41:33.840
+global restring ya.
+
+732
+00:41:34.490 --> 00:41:37.200
+Ahora vamos a terminar viendo los filtros a nivel de
+
+733
+00:41:37.200 --> 00:41:38.480
+sistema, okey.
+
+734
+00:41:39.560 --> 00:41:44.080
+Y donde los errores comunes que nosotros tenemos son los
+
+735
+00:41:44.080 --> 00:41:45.080
+filtros por selección,
+
+736
+00:41:45.180 --> 00:41:48.720
+filtro sin parámetro base y demasiado filtros sin criterio.
+
+737
+00:41:49.360 --> 00:41:51.480
+Entonces es que vamos a hacer ver, voy a agarrar aquí un
+
+738
+00:41:51.480 --> 00:41:53.520
+nivel uno nuevamente.
+
+739
+00:41:54.650 --> 00:41:59.360
+Entonces vamos a agarrar todo esto que está acá, todo, todo,
+
+740
+00:41:59.670 --> 00:42:01.600
+todo, todo, todo, todo, todo que está acá.
+
+741
+00:42:01.750 --> 00:42:03.960
+Okey, vamos a agarrar.
+
+742
+00:42:04.080 --> 00:42:08.240
+Entonces yo agarro aquí, vea en arquitectura muro.
+
+743
+00:42:08.620 --> 00:42:10.960
+Voy a ser un muro aquí arquitectónico. Sí.
+
+744
+00:42:12.040 --> 00:42:14.760
+Y entonces yo voy a agarrar este muro aquí
+
+745
+00:42:16.010 --> 00:42:20.490
+y se van a imaginar que yo estoy haciendo una división.
+
+746
+00:42:20.510 --> 00:42:23.450
+No vamos a agarrar el muro aquí.
+
+747
+00:42:23.930 --> 00:42:28.010
+Entonces se mantenga igual
+
+748
+00:42:30.240 --> 00:42:34.970
+en los 90 grados aquí
+
+749
+00:42:35.480 --> 00:42:36.930
+colocamos el muro así.
+
+750
+00:42:43.430 --> 00:42:45.260
+Vamos a ponerlo así.
+
+751
+00:42:50.180 --> 00:42:52.060
+Y vamos a colocarlo
+
+752
+00:42:52.290 --> 00:42:56.180
+así ahí.
+
+753
+00:42:58.470 --> 00:43:02.320
+Y vamos a cerrarlo acá. Okey? Ay, okey.
+
+754
+00:43:03.210 --> 00:43:05.280
+Estos son los muros, mi perímetro exterior.
+
+755
+00:43:05.480 --> 00:43:08.410
+Y iba a tener un muro, okey,
+
+756
+00:43:08.910 --> 00:43:10.530
+que también va a ser mi perímetro.
+
+757
+00:43:10.610 --> 00:43:14.600
+Llamemos, no sé interior, o sea algo así.
+
+758
+00:43:15.790 --> 00:43:20.200
+Okey? Entonces, cómo va a funcionar esto si yo, yo,
+
+759
+00:43:20.200 --> 00:43:23.400
+lo que quiero es primero hacer un filtro por colores donde
+
+760
+00:43:23.540 --> 00:43:26.200
+tengan los muros exteriores y los muros interiores,
+
+761
+00:43:26.200 --> 00:43:29.320
+los muros exteriores de un color azul y los muros interiores
+
+762
+00:43:29.320 --> 00:43:31.080
+de un color rojo por filtro.
+
+763
+00:43:31.490 --> 00:43:34.000
+Cómo hacemos? Bueno, y
+
+764
+00:43:35.340 --> 00:43:39.150
+cada vez que yo agarro aquí un muro y le damos editar tipo,
+
+765
+00:43:39.650 --> 00:43:41.070
+yo puedo ver una función,
+
+766
+00:43:42.170 --> 00:43:45.540
+sí que dice exterior o interior.
+
+767
+00:43:46.540 --> 00:43:49.060
+Entonces, qué pasa si yo coloco acá
+
+768
+00:43:50.020 --> 00:43:51.860
+interior y le voy a aplicar a aceptar?
+
+769
+00:43:52.780 --> 00:43:57.740
+Vean que acá ahora todos los muros que yo agarre de este
+
+770
+00:43:57.740 --> 00:43:59.660
+mismo tipo van a ser interiores.
+
+771
+00:43:59.880 --> 00:44:02.220
+No me funciono un parámetro tipo acá.
+
+772
+00:44:02.620 --> 00:44:04.380
+Entonces que voy a hacer acá aquí,
+
+773
+00:44:04.380 --> 00:44:08.380
+voy a crear un parámetro que se va a llamar y
+
+774
+00:44:10.300 --> 00:44:13.880
+función de muro ose, función, función, pis,
+
+775
+00:44:14.030 --> 00:44:17.080
+usuario de tipo.
+
+776
+00:44:17.670 --> 00:44:20.600
+Okay, vamos a ponerle texto.
+
+777
+00:44:21.710 --> 00:44:26.280
+Okay, y eh, para los muros, okey, así como está,
+
+778
+00:44:26.510 --> 00:44:30.200
+pero va a ser por exemplar y lo vamos a tener texto.
+
+779
+00:44:30.860 --> 00:44:33.880
+No voy a, y tal información, ya vamos a dejarlo así
+
+780
+00:44:34.590 --> 00:44:37.880
+tipo de estos texto a grupo product texto, okey, aceptar.
+
+781
+00:44:38.680 --> 00:44:41.480
+Entonces yo voy agarrar todo el perímetro exterior.
+
+782
+00:44:43.550 --> 00:44:45.410
+Sí, todo el perímetro exterior
+
+783
+00:44:46.450 --> 00:44:51.370
+y su función acá donde dice bueno,
+
+784
+00:44:51.430 --> 00:44:55.450
+lo co, lo que fue en texto, no importa, lo coloqué en texto.
+
+785
+00:44:55.750 --> 00:44:59.130
+No, no le edité. Vamos a editarlo aquí.
+
+786
+00:44:59.130 --> 00:45:00.770
+Un memento rapidito, nuevo
+
+787
+00:45:03.740 --> 00:45:08.540
+función usuario y que quede en datos de identidad.
+
+788
+00:45:08.620 --> 00:45:11.220
+A mí me gusta que queden datos de identidad. Okey?
+
+789
+00:45:11.660 --> 00:45:15.020
+Entonces vamos a seleccionar todo el exterior.
+
+790
+00:45:16.140 --> 00:45:18.400
+Sí, todo, todo, todo el exterior.
+
+791
+00:45:19.840 --> 00:45:24.630
+Y aquí donde dice datos de identidad, sea
+
+792
+00:45:25.990 --> 00:45:29.480
+y exterior así, eh equité, no pasa nada.
+
+793
+00:45:30.280 --> 00:45:33.270
+Y estos sean y
+
+794
+00:45:33.450 --> 00:45:36.070
+net, vamos a aplicar.
+
+795
+00:45:36.710 --> 00:45:38.990
+Entonces comando bw,
+
+796
+00:45:39.880 --> 00:45:42.750
+aquí vamos a la parte de los filtros.
+
+797
+00:45:43.590 --> 00:45:47.590
+Y aquí yo voy a a unir lo que mos en la lección pasada.
+
+798
+00:45:48.080 --> 00:45:51.590
+Vamos a crear un nuevo filtro y
+
+799
+00:45:52.600 --> 00:45:56.430
+vamos a poner acá sure toda la pantalla.
+
+800
+00:45:57.070 --> 00:46:00.790
+Entonces vamos a crear un nuevo, un nuevo filtro.
+
+801
+00:46:01.090 --> 00:46:03.550
+Ese filtro se va a llamar y
+
+802
+00:46:05.450 --> 00:46:06.490
+función muos.
+
+803
+00:46:08.140 --> 00:46:10.070
+Okey, vamos, vamos a aceptar.
+
+804
+00:46:10.950 --> 00:46:13.150
+Entonces, función muros va a aplicar para qué?
+
+805
+00:46:13.150 --> 00:46:15.790
+Solo para los muros. Buscamos acá muros.
+
+806
+00:46:16.670 --> 00:46:21.410
+Y yo quiero que sea donde dice función usuario,
+
+807
+00:46:22.470 --> 00:46:25.490
+sea igual a exteriores.
+
+808
+00:46:25.830 --> 00:46:27.610
+Yo creo que aquí lo van a captar.
+
+809
+00:46:28.250 --> 00:46:32.290
+Entonces yo aquí le doy añadir funcion, muros, aceptar.
+
+810
+00:46:33.530 --> 00:46:37.650
+Y entonces los patrones que sea es más,
+
+811
+00:46:38.800 --> 00:46:40.110
+vamos a aquí editar.
+
+812
+00:46:40.900 --> 00:46:43.880
+Le vamos a colocar que sea igual a exterior.
+
+813
+00:46:45.090 --> 00:46:46.970
+Sí, y.
+
+814
+00:46:47.650 --> 00:46:49.770
+Y además, vamos a
+
+815
+00:46:50.490 --> 00:46:53.140
+duplicar este.
+
+816
+00:46:53.140 --> 00:46:55.220
+Vamos a cambiar el nombre, funcion, muros
+
+817
+00:46:56.420 --> 00:46:59.050
+exterior y funcion.
+
+818
+00:46:59.540 --> 00:47:01.770
+Muros interior.
+
+819
+00:47:03.970 --> 00:47:05.790
+Le voy a dar aceptar. Okey.
+
+820
+00:47:07.180 --> 00:47:11.500
+Entonces la del exterior, ojo está que está acá.
+
+821
+00:47:12.280 --> 00:47:16.760
+La del exterior va a aplicar a los muros al exterior
+
+822
+00:47:17.160 --> 00:47:19.880
+y la del interior va a cambiar solo al interior.
+
+823
+00:47:20.100 --> 00:47:23.320
+Le vamos a aplicar a aceptar. Entonces vamos a ayudar.
+
+824
+00:47:23.670 --> 00:47:26.040
+Añadí perdón, la exterior y la interior.
+
+825
+00:47:26.360 --> 00:47:29.340
+Y aquí le vamos a cambiar. Quedamos color azul.
+
+826
+00:47:29.480 --> 00:47:32.500
+El exterior se vamos a poner aquí su azul
+
+827
+00:47:37.240 --> 00:47:39.240
+y quedamos color rojo
+
+828
+00:47:41.610 --> 00:47:42.990
+la la interior, no.
+
+829
+00:47:43.190 --> 00:47:48.150
+Entonces aquí colocamos relleno, color rojo, aceptar,
+
+830
+00:47:49.340 --> 00:47:54.070
+relleno, color rojo, aceptar que damos aceptar,
+
+831
+00:47:54.740 --> 00:47:56.430
+aplicar, aceptar.
+
+832
+00:47:57.100 --> 00:47:59.710
+Ahí está. Pero qué pasa?
+
+833
+00:48:00.030 --> 00:48:02.110
+Fíjense, bueno, ya aquí aplicamos lo que son los
+
+834
+00:48:02.110 --> 00:48:03.150
+conceptos de filtros.
+
+835
+00:48:03.150 --> 00:48:05.750
+Ahora organización de plantillas de vista es importante.
+
+836
+00:48:06.320 --> 00:48:09.630
+Bueno, siguiente, si yo quisiera llevarme esto al nivel,
+
+837
+00:48:10.330 --> 00:48:12.110
+yo selecciono estos muros, verdad?
+
+838
+00:48:12.290 --> 00:48:14.190
+Lo más común es que yo le de copiar
+
+839
+00:48:15.340 --> 00:48:18.260
+alineada con niveles seleccionados y me lo lleve el nivel.
+
+840
+00:48:20.100 --> 00:48:23.260
+Entonces, cuando yo abre el nivel, ahí está los muros,
+
+841
+00:48:23.260 --> 00:48:24.860
+pero no están con el filtro de color.
+
+842
+00:48:26.140 --> 00:48:28.060
+Entonces yo tendría que hacer ww
+
+843
+00:48:29.540 --> 00:48:32.140
+y volver a aplicar nuevamente lo mismo.
+
+844
+00:48:32.170 --> 00:48:35.500
+Pero va a ser un poquito engorroso,
+
+845
+00:48:35.500 --> 00:48:39.260
+no estar trabajándolo cada rato, no crear el filtro.
+
+846
+00:48:39.320 --> 00:48:41.900
+Me voy a tardar como lo podemos automatizar.
+
+847
+00:48:41.900 --> 00:48:46.580
+Bueno, acá en el nivel uno, es una opción que dice y
+
+848
+00:48:48.210 --> 00:48:51.260
+duplica, eh, crear plantilla de vista a partir de esta vista
+
+849
+00:48:51.350 --> 00:48:53.820
+aquí, crear plantilla de vista a partir de esta vista.
+
+850
+00:48:54.340 --> 00:48:56.740
+Entonces aquí le vamos a colocar plantilla,
+
+851
+00:48:57.540 --> 00:49:00.990
+función mu, la vamos a aceptar.
+
+852
+00:49:01.790 --> 00:49:03.310
+Y de acá esta plantilla,
+
+853
+00:49:03.310 --> 00:49:06.230
+yo puedo trabajar con todas las escalas, toda tal cual.
+
+854
+00:49:06.820 --> 00:49:09.270
+Pero a mí lo que me interesa es
+
+855
+00:49:10.930 --> 00:49:15.460
+únicamente los filtros, okey, me interesa solo el filtro.
+
+856
+00:49:17.770 --> 00:49:22.320
+Vamos a quitarlo, quitarlo ta, ta, ta filtros.
+
+857
+00:49:25.590 --> 00:49:27.760
+Okey, los filtro estos, yo le doy y acepta aceptar.
+
+858
+00:49:28.220 --> 00:49:29.800
+Se va a llamar plantillas funcionemos.
+
+859
+00:49:31.000 --> 00:49:34.960
+Y ahora ésta está trabajando con la plantilla
+
+860
+00:49:35.550 --> 00:49:37.840
+funcion muros aquí donde dice plantilla de vista,
+
+861
+00:49:38.060 --> 00:49:39.800
+la dejo plantilla, funcion muros.
+
+862
+00:49:40.560 --> 00:49:43.160
+Y ahora me ahorro el trabajo porque cuando yo vaya al nivel
+
+863
+00:49:43.180 --> 00:49:46.720
+dos, donde dice plantilla de vista, seleccionó plantilla,
+
+864
+00:49:46.720 --> 00:49:50.060
+funcion, muros igual a, ahí está.
+
+865
+00:49:51.510 --> 00:49:53.070
+Vean lo rápido que se puede trabajar en
+
+866
+00:49:53.070 --> 00:49:55.690
+revista automatizaciones.
+
+867
+00:49:55.690 --> 00:49:57.010
+Señores, eso es lo importante.
+
+868
+00:49:57.770 --> 00:50:00.570
+Entonces, ya, bueno, con esto cerramos este video.
+
+869
+00:50:02.950 --> 00:50:06.680
+Qué pasa si yo quiero transferir toda esta información?
+
+870
+00:50:09.190 --> 00:50:13.320
+Y y es lo que vamos a a dar paso, eh,
+
+871
+00:50:13.320 --> 00:50:15.720
+en el siguiente video, no a los atins.
+
+872
+00:50:16.450 --> 00:50:19.220
+Pero primero ver la configuración de las plantillas, no?
+
+873
+00:50:19.730 --> 00:50:22.820
+Qué pasa si yo quiero transferir toda esta información?
+
+874
+00:50:22.960 --> 00:50:24.500
+Porque en el memento que yo
+
+875
+00:50:25.170 --> 00:50:28.320
+quieras en el otro proyecto y quieras los mismos filtros,
+
+876
+00:50:30.850 --> 00:50:32.110
+los mismos parámetros,
+
+877
+00:50:32.530 --> 00:50:35.870
+la misma configuración de las plantillas que tendría que
+
+878
+00:50:35.870 --> 00:50:40.470
+hacer, lo vamos aprender en elección tres como la previa,
+
+879
+00:50:41.110 --> 00:50:43.030
+y vamos a cerrar con los atunes.
+
+880
+00:50:43.060 --> 00:50:45.510
+Okey? Por lo tanto, eh,
+
+881
+00:50:46.710 --> 00:50:51.110
+cerrando este video de casi eh, 50 minutos.
+
+882
+00:50:52.240 --> 00:50:55.940
+La idea es que las vistas como herramientas, bing,
+
+883
+00:50:56.930 --> 00:51:00.190
+nos cambié la mentalidad de cómo estamos generando todo
+
+884
+00:51:00.300 --> 00:51:01.670
+esto, los parámetros,
+
+885
+00:51:01.840 --> 00:51:03.870
+cómo generamos el filtro de las vistas,
+
+886
+00:51:04.290 --> 00:51:06.790
+la organización que ya no lo volví a explicar en este video
+
+887
+00:51:06.790 --> 00:51:11.210
+porque ya ustedes saben un poquito como como,
+
+888
+00:51:11.300 --> 00:51:13.130
+cómo se desarrolla la organización?
+
+889
+00:51:13.130 --> 00:51:16.050
+Es sencilla, es cómo se van organizando lo que se imprime,
+
+890
+00:51:16.050 --> 00:51:17.570
+lo que no se imprime para eso,
+
+891
+00:51:17.570 --> 00:51:20.330
+pueden ver la elección de la parte a, okey.
+
+892
+00:51:21.450 --> 00:51:23.650
+Y la idea es acá
+
+893
+00:51:24.600 --> 00:51:27.460
+de lo que vamos a hacer en la siguiente elección es guardar
+
+894
+00:51:27.560 --> 00:51:31.060
+la inteligencia de plantillas de de proyectos, okey,
+
+895
+00:51:31.060 --> 00:51:34.940
+darle continuidad esta elección y explicarles los atins o el
+
+896
+00:51:35.000 --> 00:51:36.060
+uso de los Atkins.
+
+897
+00:51:36.060 --> 00:51:39.740
+Okey. Entonces la idea es que sigamos trabajando
+
+898
+00:51:39.840 --> 00:51:41.620
+de de esta manera.
+
+899
+00:51:41.940 --> 00:51:46.020
+Y lo que estamos preparando el terreno es a los at ins
+
+900
+00:51:46.720 --> 00:51:50.260
+que no corrigen errores, no piensan por nosotros.
+
+901
+00:51:51.100 --> 00:51:55.460
+Y además aceleran y reglas definidas decir nosotros les
+
+902
+00:51:55.460 --> 00:51:56.660
+vamos a indicar las reglas.
+
+903
+00:51:57.740 --> 00:52:00.820
+Nosotros necesitamos un modelo bien estructurado.
+
+904
+00:52:01.660 --> 00:52:04.620
+Y nosotros de bebemos a cerrar esas reglas definidas.
+
+905
+00:52:05.260 --> 00:52:07.980
+Entonces aquí lo que aprendieron es dominar los tres tipos
+
+906
+00:52:07.980 --> 00:52:10.540
+de parámetros, diseño, filtros y vistas.
+
+907
+00:52:11.340 --> 00:52:16.280
+Y vamos a entender el valor estratégico de la plantilla
+
+908
+00:52:17.650 --> 00:52:21.470
+que profund salmos en la lección tres con sus respectivos te
+
+909
+00:52:21.920 --> 00:52:23.070
+quien les habla, como siempre,
+
+910
+00:52:23.090 --> 00:52:25.310
+el ingeniero pantoja, las espero, por favor.
+
+911
+00:52:25.310 --> 00:52:29.400
+En el siguiente b, veo, eh
+
+912
+00:52:29.980 --> 00:52:31.880
+que vamos a estar desarrollando.

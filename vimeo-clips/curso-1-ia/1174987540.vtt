@@ -1,0 +1,2181 @@
+WEBVTT
+
+1
+00:00:02.320 --> 00:00:05.520
+Saludos colegas, sean bienvenidos a esta lección corta
+
+2
+00:00:06.080 --> 00:00:09.980
+donde vamos a estar, eh, dándole continuidad a lo que es el tema de la
+
+3
+00:00:10.060 --> 00:00:13.260
+arquitectura BIM inteligente, parte B.
+
+4
+00:00:13.280 --> 00:00:17.240
+Vamos a ver los cinco pasos claves que nosotros necesitamos y que se van
+
+5
+00:00:17.250 --> 00:00:19.480
+a desarrollar en el curso número dos
+
+6
+00:00:20.840 --> 00:00:24.240
+, para entender lo que nosotros desarrollamos o lo que
+
+7
+00:00:24.280 --> 00:00:28.220
+podemos llegar a desarrollar de la plantilla a la IA,
+
+8
+00:00:28.260 --> 00:00:30.980
+cómo diseñar un sistema BIM automatizado que trabaje por
+
+9
+00:00:31.080 --> 00:00:34.980
+ti. Entonces, nosotros tenemos el sistema versus la
+
+10
+00:00:35.000 --> 00:00:38.300
+plantilla. Lo que enseña el video es cómo hacer una plantilla eficiente en Revit,
+
+11
+00:00:38.340 --> 00:00:42.000
+organizar vistas, aplicar estilos, nombrar elementos, que es un repaso de todo lo
+
+12
+00:00:42.080 --> 00:00:46.000
+que hemos hecho, ¿ok? Y lo que van a aprender acá o, o lo que
+
+13
+00:00:46.020 --> 00:00:48.760
+ustedes aprenderán acá es cómo diseñar un sistema BIM
+
+14
+00:00:48.800 --> 00:00:52.780
+automatizado, una estructura replicable,
+
+15
+00:00:52.820 --> 00:00:56.250
+inteligente y consistente para cualquier proyecto.
+
+16
+00:00:56.280 --> 00:01:00.080
+El diferencial no está en saber usar Revit, está en saber diseñar
+
+17
+00:01:00.200 --> 00:01:02.440
+el sistema que lo gobierna.
+
+18
+00:01:03.360 --> 00:01:05.500
+Entonces, ¿cuáles son los cinco sist-- eh, pasos?
+
+19
+00:01:05.740 --> 00:01:09.720
+Organizar, que es donde se define el sistema, ya lo
+
+20
+00:01:09.740 --> 00:01:13.520
+vamos a ver. Vistas, separar trabajos versus entregas, los
+
+21
+00:01:13.560 --> 00:01:16.720
+templates, los filtros y crear estándares
+
+22
+00:01:16.820 --> 00:01:20.750
+BIM. Cada paso construye sobre el anterior, transformando un modelo estático en
+
+23
+00:01:20.780 --> 00:01:24.200
+un sistema inteligente y automatizado
+
+24
+00:01:26.100 --> 00:01:29.200
+. Entonces, el paso uno es organizar el sistema del project browser.
+
+25
+00:01:29.220 --> 00:01:32.820
+Vamos a irnos un poquito a la, a la práctica para que lo
+
+26
+00:01:32.860 --> 00:01:36.340
+puedan entender, ¿ok? Entonces, lo
+
+27
+00:01:36.360 --> 00:01:39.560
+primero es que van a trabajar con cualquier plantilla.
+
+28
+00:01:39.600 --> 00:01:42.080
+Ustedes van a definir primero la disciplina.
+
+29
+00:01:42.140 --> 00:01:42.640
+Es decir,
+
+30
+00:01:43.460 --> 00:01:46.660
+si yo estoy arrancando un proyecto con
+
+31
+00:01:46.700 --> 00:01:50.210
+arquitectura, voy a buscar trabajar con una plantilla base de
+
+32
+00:01:50.220 --> 00:01:52.100
+arquitectura. Entonces, acá
+
+33
+00:01:53.100 --> 00:01:56.860
+vamos a ir a la parte de, eh, eh,
+
+34
+00:01:56.880 --> 00:02:00.520
+superior, dándole clic aquí, ¿ok?
+
+35
+00:02:00.560 --> 00:02:04.500
+Vamos a ponerlo por acá. Entonces, le vamos
+
+36
+00:02:04.560 --> 00:02:07.940
+a dar clic acá en la parte superior, ¿verdad?
+
+37
+00:02:07.960 --> 00:02:11.260
+Entonces, le damos clic acá. Vean, si le dan clic aquí, se
+
+38
+00:02:11.320 --> 00:02:15.240
+regresa. File o archivos, se
+
+39
+00:02:15.280 --> 00:02:18.240
+van a la parte de las opciones, luego van a File
+
+40
+00:02:18.250 --> 00:02:22.140
+Locations y en Más van a buscar,
+
+41
+00:02:22.240 --> 00:02:24.980
+eh... Yo en este video les voy a dejar
+
+42
+00:02:26.280 --> 00:02:30.240
+una carpeta por default de plantillas que, que
+
+43
+00:02:30.460 --> 00:02:31.640
+van a,
+
+44
+00:02:32.760 --> 00:02:35.100
+eh, pueden conseguir, mejor dicho.
+
+45
+00:02:35.700 --> 00:02:39.670
+Esto lo pueden buscar luego en lo que es, eh, en este
+
+46
+00:02:39.680 --> 00:02:43.180
+equipo, disco local C, el Program Data
+
+47
+00:02:44.220 --> 00:02:47.840
+y luego se van a ir acá a Autodesk y lo pueden dejar
+
+48
+00:02:47.900 --> 00:02:51.640
+acá. Yo le voy a colocar y tienen. Esto es una familia que he
+
+49
+00:02:51.660 --> 00:02:54.000
+usado en nuestros distintos diplomados
+
+50
+00:02:54.860 --> 00:02:58.440
+y va a ser los family y va a ser los templates, ¿ok?
+
+51
+00:02:58.480 --> 00:03:01.920
+Lo pueden utilizar como base. Entonces, por ejemplo, yo voy a partir de
+
+52
+00:03:02.640 --> 00:03:04.700
+estructuras. Entonces, voy a utilizar acá
+
+53
+00:03:05.640 --> 00:03:09.180
+el Structural Analysis Default Metric
+
+54
+00:03:09.300 --> 00:03:12.859
+y SP. Este que está acá. Le voy a dar a abrir
+
+55
+00:03:13.280 --> 00:03:15.960
+y le voy a colocar «plantilla
+
+56
+00:03:18.820 --> 00:03:21.920
+base estructuras», ¿ok?
+
+57
+00:03:22.940 --> 00:03:26.400
+Lo voy a dejar con ese nombre, le vamos a dar Ok.
+
+58
+00:03:26.440 --> 00:03:29.760
+¿Y qué vamos a hacer? Nos vamos a regresar de nuevo, vamos
+
+59
+00:03:29.840 --> 00:03:31.180
+a, eh, New
+
+60
+00:03:32.000 --> 00:03:35.520
+y en Nuevo vamos a seleccionar el project template y este que está acá,
+
+61
+00:03:35.540 --> 00:03:36.880
+plantilla base estructuras
+
+62
+00:03:38.220 --> 00:03:40.220
+. Entonces, lo primero, esto ustedes ya lo han visto.
+
+63
+00:03:40.710 --> 00:03:44.400
+Vuelvo y repito, estoy haciendo un repaso de todo lo que hemos hecho, ¿ok?
+
+64
+00:03:44.460 --> 00:03:48.020
+Y de lo que vamos a profundizar en el segundo curso, que son
+
+65
+00:03:48.140 --> 00:03:51.740
+los, eh, en la lección uno B, específicamente,
+
+66
+00:03:51.760 --> 00:03:55.040
+¿ok? Que es, vamos a volver a ver BIM Roots y PyRevit a
+
+67
+00:03:55.060 --> 00:03:58.940
+profundidad y allí vamos a conectar lo que son las plantillas y automatiz-- y
+
+68
+00:03:59.000 --> 00:04:00.600
+automatizaciones BIM, ¿ok?
+
+69
+00:04:01.880 --> 00:04:05.360
+Entonces, nada, cuando nosotros llegamos acá, lo primero que vamos a
+
+70
+00:04:05.380 --> 00:04:09.320
+hacer es, eh, en el project browser,
+
+71
+00:04:09.440 --> 00:04:11.520
+recuerden que ustedes lo pueden ver acá en View
+
+72
+00:04:13.320 --> 00:04:17.221
+, eh, aquí hay una opción que es User Interface y pueden ver
+
+73
+00:04:17.280 --> 00:04:21.140
+todo esto, ¿no? Entonces, a mí me interesa acá, fíjense que si yo quito
+
+74
+00:04:21.280 --> 00:04:22.680
+Status Bar Worksets,
+
+75
+00:04:23.980 --> 00:04:27.620
+eh, no voy a ver la parte que está acá, ¿ok?
+
+76
+00:04:27.660 --> 00:04:30.500
+Entonces, siempre utilicemos los
+
+77
+00:04:30.510 --> 00:04:33.960
+Worksets, ¿ok? Que es el status que tenemos en la parte
+
+78
+00:04:34.000 --> 00:04:37.860
+inferior. Y el project browser, si yo lo oculto, no se va a
+
+79
+00:04:37.880 --> 00:04:39.800
+ver, así que vamos a trabajarlo aquí.
+
+80
+00:04:39.820 --> 00:04:43.060
+A mí me gusta tenerlo integrado acá, ustedes lo pueden trabajar como ustedes
+
+81
+00:04:43.100 --> 00:04:46.780
+quieran, ¿ok? Entonces, aquí, eh, en el project
+
+82
+00:04:46.820 --> 00:04:50.600
+browser, está la parte de estructuras, ¿sí? Structural plan.
+
+83
+00:04:50.620 --> 00:04:54.420
+Entonces, yo lo voy a ir organizando y eso ya depende de lo que
+
+84
+00:04:54.440 --> 00:04:58.080
+ustedes están buscando. Por dar un ejemplo, como vimos en el
+
+85
+00:04:58.140 --> 00:05:01.320
+video de, de este primer curso, aquí hay una opción que
+
+86
+00:05:01.460 --> 00:05:04.650
+es crear un parámetro de proyecto, que es lo primero que vamos a
+
+87
+00:05:04.680 --> 00:05:08.580
+hacer. Entonces, nos vamos a Manage, vamos acá a
+
+88
+00:05:08.600 --> 00:05:12.420
+esta opción de Project Parameters, parámetros del
+
+89
+00:05:12.440 --> 00:05:16.160
+proyecto, y vamos a crear uno nuevo acá que se va a
+
+90
+00:05:16.200 --> 00:05:16.599
+llamar
+
+91
+00:05:17.400 --> 00:05:21.360
+«grupos de vistas», ¿ok? Entonces, yo
+
+92
+00:05:21.400 --> 00:05:24.860
+voy a organizar esto porque estoy pensando en que lo voy a
+
+93
+00:05:24.900 --> 00:05:28.600
+organizar en los planos que se presentan y los
+
+94
+00:05:28.680 --> 00:05:32.600
+planos que no se presentan, ¿ok? Entonces, esto lo voy a colocar
+
+95
+00:05:32.700 --> 00:05:36.640
+para todas las disciplinas y va a ser un texto y
+
+96
+00:05:36.680 --> 00:05:38.870
+lo voy a colocar en...
+
+97
+00:05:40.600 --> 00:05:44.460
+Podemos colocarlo acá en Otros. A mí siempre
+
+98
+00:05:44.540 --> 00:05:47.800
+me gusta colocarlo en Otros para saber que está.
+
+99
+00:05:47.900 --> 00:05:50.120
+Y aquí lo vamos a colocar
+
+100
+00:05:51.160 --> 00:05:55.040
+en las vistas, ¿ok? Ok.
+
+101
+00:05:55.100 --> 00:05:58.580
+Grupos de vistas, le damos Ok. Entonces, ¿qué va a pasar?
+
+102
+00:05:58.600 --> 00:06:02.160
+Que aquí en el project browser, eh, cada vista que yo le
+
+103
+00:06:02.200 --> 00:06:05.780
+dé, o sea, por ejemplo, no sé, este nivel uno, cuando yo vea las
+
+104
+00:06:05.840 --> 00:06:09.692
+propiedades, aquí está el grupo de vistas, ¿ok?A partir de
+
+105
+00:06:09.732 --> 00:06:13.552
+allí, luego vamos a generar la organización, que esto ya ustedes lo saben.
+
+106
+00:06:13.572 --> 00:06:16.572
+Estoy haciendo un repaso de cómo ustedes lo deben trabajar.
+
+107
+00:06:16.592 --> 00:06:20.312
+Entonces, le vamos a dar clic acá, botón secundario, y
+
+108
+00:06:20.852 --> 00:06:23.702
+aquí en 'Views', perdón, 'Browser Organization'.
+
+109
+00:06:23.712 --> 00:06:26.432
+Y recuerden que aquí uno lo puede organizar de distintas formas.
+
+110
+00:06:26.452 --> 00:06:29.312
+Yo voy a crear una que se va a llamar 'Grupo de
+
+111
+00:06:29.332 --> 00:06:33.062
+vistas', ¿okey? Le voy a dar a
+
+112
+00:06:33.072 --> 00:06:36.152
+Okey. Aquí nos vamos a la parte
+
+113
+00:06:36.332 --> 00:06:39.932
+de, y, de los grupos de
+
+114
+00:06:39.952 --> 00:06:40.352
+vistas
+
+115
+00:06:41.231 --> 00:06:43.452
+y lo voy a editar, lo voy a activar y lo voy a editar
+
+116
+00:06:44.592 --> 00:06:47.982
+y lo voy a filtrar. Fíjense que le voy a decir: mira, lo vas a filtrar por grupo de
+
+117
+00:06:47.992 --> 00:06:51.862
+vistas y aquí en el grupo 'Uncertain' quiero que lo filtres
+
+118
+00:06:51.992 --> 00:06:55.652
+por tu, tu, tu, tu, eh, grupo de
+
+119
+00:06:55.692 --> 00:06:59.672
+vistas, ¿okey? Y luego en la parte de, bueno, eh,
+
+120
+00:06:59.712 --> 00:07:03.312
+la ascendencia de cómo se va a ver, eh, puede ser por el
+
+121
+00:07:03.332 --> 00:07:05.432
+nombre, ¿okey? Y le vamos a dar Okey,
+
+122
+00:07:06.252 --> 00:07:10.092
+le vamos a dar Aplicar, Okey. Y entonces fíjense que aquí dice 'Grupo de
+
+123
+00:07:10.152 --> 00:07:13.872
+vistas'. No tiene nombre esto, ¿okey?
+
+124
+00:07:13.912 --> 00:07:17.732
+Pero ¿por qué? Por ejemplo, yo voy a agarrar, mira este 'Estructural
+
+125
+00:07:17.792 --> 00:07:21.772
+plan nivel uno', yo voy a crear dos, entonces lo voy a
+
+126
+00:07:21.832 --> 00:07:25.612
+duplicar. Vamos a duplicarlo. Entonces, voy a tener uno
+
+127
+00:07:25.652 --> 00:07:29.512
+duplicado que va a ser 'Rename' y voy a colocar acá
+
+128
+00:07:30.572 --> 00:07:34.432
+'Presentación'. ¿Okey? Los
+
+129
+00:07:34.512 --> 00:07:37.512
+analíticos los elimino, no me van a servir.
+
+130
+00:07:37.552 --> 00:07:40.092
+Los de emplazamiento siempre los voy a dejar porque es el...
+
+131
+00:07:40.112 --> 00:07:44.011
+ya, eso lo van a ver cuando unamos el, eh, coordinemos
+
+132
+00:07:44.092 --> 00:07:45.692
+rápidamente distintas disciplinas.
+
+133
+00:07:45.892 --> 00:07:48.512
+Entonces, el emplazamiento sí lo podemos dejar.
+
+134
+00:07:48.532 --> 00:07:52.232
+Y entonces, este que está acá le voy a dar 'Rename'
+
+135
+00:07:52.752 --> 00:07:56.322
+y le vamos a colocar 'Modelo'. Este que está
+
+136
+00:07:56.352 --> 00:08:00.212
+acá, sí, vamos a decir que sí. Este que está acá vamos a 'Rename' y
+
+137
+00:08:00.252 --> 00:08:01.172
+vamos a colocarlo
+
+138
+00:08:02.192 --> 00:08:03.452
+'Modelo'.
+
+139
+00:08:05.292 --> 00:08:08.812
+Vamos a decirle que sí y vamos a duplicar la
+
+140
+00:08:08.852 --> 00:08:12.352
+vista, ¿okey? Y este duplicado le vamos a dar
+
+141
+00:08:12.392 --> 00:08:14.752
+'Rename' y va a ser 'Presentación'.
+
+142
+00:08:14.772 --> 00:08:18.752
+Entonces, voy a tener vistas que solo son de modelo y vistas que
+
+143
+00:08:18.832 --> 00:08:22.342
+nada más son para presentación. Eso es lo mínimo que tienen que ustedes tener
+
+144
+00:08:22.372 --> 00:08:26.062
+organizados. Lo mismo aquí en el 3D, este analítico lo eliminamos
+
+145
+00:08:27.412 --> 00:08:29.572
+y vamos a crear uno nuevo aquí en la parte superior.
+
+146
+00:08:29.612 --> 00:08:33.612
+Le damos clic, '3D View', vamos a 'Rename', va a haber un
+
+147
+00:08:33.872 --> 00:08:34.393
+3D
+
+148
+00:08:36.752 --> 00:08:39.952
+que va a ser 'Rename', '3D
+
+149
+00:08:40.632 --> 00:08:42.332
+modelo'
+
+150
+00:08:43.692 --> 00:08:47.192
+y vamos a duplicar y vamos a tener, vamos a
+
+151
+00:08:47.202 --> 00:08:50.192
+'Rename', vamos a tener un
+
+152
+00:08:51.892 --> 00:08:55.792
+'Duplicar vista', 'Duplicate', 'Rename' y vamos
+
+153
+00:08:55.812 --> 00:08:58.192
+a tener aquí una '3D
+
+154
+00:08:59.252 --> 00:09:00.672
+presentación'.
+
+155
+00:09:02.052 --> 00:09:05.212
+Perfecto, ¿okey? Ahora, ¿cómo vamos a organizar todo
+
+156
+00:09:05.252 --> 00:09:09.172
+esto? Eh, de la siguiente manera. Entonces, estas que
+
+157
+00:09:09.192 --> 00:09:13.012
+dicen acá 'Modelo', yo las voy a seleccionar todas las que
+
+158
+00:09:13.032 --> 00:09:15.312
+dicen 'Modelo'. Ah, perdón, esta es
+
+159
+00:09:15.352 --> 00:09:18.552
+presentación. Vamos a quitarle rápidamente
+
+160
+00:09:18.572 --> 00:09:22.512
+aquí. Listo. Entonces, esta que es
+
+161
+00:09:22.572 --> 00:09:23.992
+modelo, nos vamos a los
+
+162
+00:09:24.012 --> 00:09:27.992
+'Properties'. Y entonces todas
+
+163
+00:09:28.032 --> 00:09:32.012
+las que digan acá 'Grupo de vistas', yo le voy a colocar 'Modelo' y vamos
+
+164
+00:09:32.052 --> 00:09:35.122
+a dar 'Apply', ¿okey? Vamos a
+
+165
+00:09:35.122 --> 00:09:38.292
+'Apply'. Entonces me regreso acá.
+
+166
+00:09:38.312 --> 00:09:42.092
+Entonces aquí yo empiezo a tener las que son de modelo y las que
+
+167
+00:09:42.132 --> 00:09:43.432
+son de,
+
+168
+00:09:44.592 --> 00:09:47.672
+de presentación, ¿sí? Lo puse
+
+169
+00:09:47.732 --> 00:09:50.752
+aquí. Vamos a quitar esta.
+
+170
+00:09:51.772 --> 00:09:55.552
+Este que está acá, 'Properties', esta es de...
+
+171
+00:09:56.772 --> 00:09:58.912
+Vamos a cambiarle el nombre, esta es de '3D
+
+172
+00:09:59.912 --> 00:10:01.331
+presentación'.
+
+173
+00:10:03.232 --> 00:10:05.392
+Vamos a darle a 'Apply'. Entonces acá voy a colocarle
+
+174
+00:10:05.452 --> 00:10:09.452
+'Presentación'.
+
+175
+00:10:11.472 --> 00:10:12.452
+'Apply'.
+
+176
+00:10:14.732 --> 00:10:18.632
+Okey. Entonces, de esa manera, fíjense que yo voy a tener
+
+177
+00:10:19.332 --> 00:10:22.702
+modelo y presentación. Le doy a 'Apply' y esta se va a quedar como presentación.
+
+178
+00:10:23.172 --> 00:10:26.572
+Entonces, cuando yo vaya al 'Project Browser', voy a empezar a filtrar y tener
+
+179
+00:10:26.712 --> 00:10:29.692
+grupos de vistas por modelo y presentación.
+
+180
+00:10:29.702 --> 00:10:33.032
+¿Qué hacemos acá? Aquí lo que vamos a hacer en el Proje-- el 'Project
+
+181
+00:10:33.052 --> 00:10:36.692
+Browser', mmm, aquí
+
+182
+00:10:36.932 --> 00:10:40.892
+en 'Grupo de vistas', ¿okey? Nos filtraremos acá, vamos
+
+183
+00:10:40.952 --> 00:10:44.892
+a darle Okey, vamos a darle 'Apply' y ahí me va a salir
+
+184
+00:10:44.902 --> 00:10:48.692
+'Modelo presentación', ¿sí? Entonces, ¿qué va a pasar?
+
+185
+00:10:48.752 --> 00:10:51.312
+Fíjense que todas las que sean modelo
+
+186
+00:10:52.492 --> 00:10:55.802
+ya están como modelo y todas las que sean presentación me van a quedar como
+
+187
+00:10:55.872 --> 00:10:59.632
+presentación. Entonces, selecciono estas dos y vamos a colocar esta
+
+188
+00:10:59.712 --> 00:11:03.212
+acá como presentación. Le doy a 'Apply'
+
+189
+00:11:03.832 --> 00:11:06.272
+y ahí se van organizando. Tengo modelo y
+
+190
+00:11:06.372 --> 00:11:09.412
+presentación. Esta que está acá es
+
+191
+00:11:09.452 --> 00:11:12.932
+modelo. Entonces, vamos a crear acá y vamos a
+
+192
+00:11:12.992 --> 00:11:14.252
+darle,
+
+193
+00:11:15.272 --> 00:11:18.192
+eh, aquí en 'Properties', 'Grupo de vistas' y vamos a
+
+194
+00:11:18.272 --> 00:11:21.752
+colocarle 'Presentación'. Bueno, esta que está acá,
+
+195
+00:11:22.572 --> 00:11:22.932
+¿sí?
+
+196
+00:11:24.112 --> 00:11:27.752
+Entonces, tengo presentación, presentación. Ah, este es modelo.
+
+197
+00:11:27.772 --> 00:11:29.652
+Me faltó. Entonces aquí
+
+198
+00:11:30.792 --> 00:11:33.772
+vamos a abrir esta, 'Modelo' y le damos
+
+199
+00:11:33.782 --> 00:11:37.032
+'Apply'. Okey, entonces tenemos modelo, modelo,
+
+200
+00:11:37.072 --> 00:11:41.011
+presentación, ¿okey? Y además
+
+201
+00:11:41.092 --> 00:11:44.982
+yo también, inclusive, como solo estoy partiendo estructura, cuando yo vaya a
+
+202
+00:11:45.012 --> 00:11:48.472
+organizar acá, estas van a ser de alzados,
+
+203
+00:11:48.482 --> 00:11:51.592
+¿okey? Entonces yo puedo colocar esta
+
+204
+00:11:52.972 --> 00:11:56.872
+en que dice 'Grupo de vistas', es decir, 'Alzados'.
+
+205
+00:11:56.892 --> 00:11:59.592
+Le doy a 'Apply'. 'Project Browser'.
+
+206
+00:11:59.612 --> 00:12:02.452
+Entonces todas estas van a ser
+
+207
+00:12:03.332 --> 00:12:07.272
+alzados. Le doy a 'Apply' y listo. Entonces las
+
+208
+00:12:07.352 --> 00:12:11.052
+tengo, vean, organizadas por alzados y esta que está acá
+
+209
+00:12:11.832 --> 00:12:12.812
+la voy a organizar
+
+210
+00:12:12.992 --> 00:12:16.888
+porSite. Ya van a ver qué es el
+
+211
+00:12:16.948 --> 00:12:20.788
+site, eso lo explicaré en otro curso, pero básicamente para que entiendan,
+
+212
+00:12:21.248 --> 00:12:23.248
+el site es el punto de coordinación
+
+213
+00:12:24.108 --> 00:12:27.628
+o de origen, por decirlo así, donde podemos integrar todas las
+
+214
+00:12:27.668 --> 00:12:30.448
+disciplinas. Entonces vean que yo lo tengo así,
+
+215
+00:12:32.308 --> 00:12:35.568
+por grupos de vistas, de alzados, las que son de
+
+216
+00:12:35.608 --> 00:12:39.448
+modelo, las vistas en planta, presentación y site.
+
+217
+00:12:39.488 --> 00:12:43.258
+Eso es una organización. Además, ¿qué pasa?
+
+218
+00:12:43.348 --> 00:12:45.048
+Eh, por ejemplo,
+
+219
+00:12:46.128 --> 00:12:49.048
+yo puedo tener acá, digamos,
+
+220
+00:12:50.368 --> 00:12:53.968
+una nueva vista 3D, no sé. Estas son de, de estructura.
+
+221
+00:12:53.988 --> 00:12:57.808
+Vamos a ver, floor plan de arquitectura cuando se integren, que aquí
+
+222
+00:12:57.888 --> 00:13:01.628
+yo creé un floor plan para el nivel uno de modelo,
+
+223
+00:13:01.648 --> 00:13:05.068
+¿okey? Le demos Okey. Y aquí
+
+224
+00:13:05.948 --> 00:13:09.438
+puedo ver en los properties que, eeeh,
+
+225
+00:13:10.428 --> 00:13:12.468
+esta vista puede pertenecer
+
+226
+00:13:13.428 --> 00:13:16.758
+a la disciplina... Vamos a ver, aquí está.
+
+227
+00:13:17.268 --> 00:13:19.788
+En vez de ser disciplina estructura, pertenezca a la disciplina de
+
+228
+00:13:19.827 --> 00:13:22.328
+arquitectura. Vamos a ponerle aquí
+
+229
+00:13:23.228 --> 00:13:26.648
+arquitectura y le doy a apply. Entonces, me voy al project browser
+
+230
+00:13:27.428 --> 00:13:28.828
+y luego acá,
+
+231
+00:13:30.428 --> 00:13:34.268
+y aquí mismo, en browser organization, puedo
+
+232
+00:13:34.348 --> 00:13:38.288
+colocarle en el grupo de vista, fíjense que no tengo disciplina, pero
+
+233
+00:13:38.308 --> 00:13:42.028
+tengo grupo de vistas, y si yo cambio disciplina y le doy a apply,
+
+234
+00:13:42.088 --> 00:13:44.598
+fíjense que voy a tener arquitectura, vamos a ver,
+
+235
+00:13:44.608 --> 00:13:48.208
+okey. Tengo arquitectura, los floor
+
+236
+00:13:48.268 --> 00:13:52.208
+plans, nivel uno modelo y las estructuras organizadas, pero
+
+237
+00:13:52.288 --> 00:13:56.008
+pierdo mi personalización. Entonces, ¿qué hago?
+
+238
+00:13:56.028 --> 00:13:59.328
+Browser organization, vuelvo acá a grupo de
+
+239
+00:13:59.348 --> 00:14:00.708
+vistas, edito
+
+240
+00:14:01.908 --> 00:14:04.748
+y puedo decir: mira, vas a agrupar,
+
+241
+00:14:05.508 --> 00:14:09.428
+¿verdad?, por los grupos de vistas y después también me
+
+242
+00:14:09.448 --> 00:14:12.888
+vas a agrupar por disciplina, acá.
+
+243
+00:14:12.928 --> 00:14:16.908
+Y le doy Okey. Le damos a apply, le doy Okey.
+
+244
+00:14:16.948 --> 00:14:20.888
+Entonces, fíjense que yo tengo por site,
+
+245
+00:14:21.048 --> 00:14:24.567
+que son las estructuras, presentación, las
+
+246
+00:14:24.608 --> 00:14:27.908
+estructuras, modelo, las estructuras,
+
+247
+00:14:27.928 --> 00:14:31.488
+alzados, las estructuras. Y este que está acá dice
+
+248
+00:14:31.568 --> 00:14:33.938
+arquitectura, pero tengo que definir a dónde pertenece.
+
+249
+00:14:33.968 --> 00:14:37.208
+Entonces, yo le puedo decir: mira, este floor plan pertenece a modelo.
+
+250
+00:14:37.228 --> 00:14:41.088
+Entonces, me voy acá al grupo de vista, coloco modelo, le doy a apply,
+
+251
+00:14:41.468 --> 00:14:45.077
+listo. Entonces, lo genial de esto, que ahora lo tengo así.
+
+252
+00:14:45.108 --> 00:14:48.508
+Los planos que se presentan, lo que se modela, lo que se coordina en el
+
+253
+00:14:48.608 --> 00:14:51.888
+site, los alzados y también los tengo por disciplina.
+
+254
+00:14:51.898 --> 00:14:55.748
+Están las estructuras, está arquitectura estructura, esta es la mejor
+
+255
+00:14:55.808 --> 00:14:58.028
+organización que ustedes pueden tener, ¿okey?
+
+256
+00:14:58.848 --> 00:15:01.168
+Desde mi perspectiva, lo mínimo necesario.
+
+257
+00:15:01.188 --> 00:15:04.808
+Entonces, luego, esto que está acá, esta
+
+258
+00:15:04.928 --> 00:15:07.618
+mínima organización, ustedes van a agarrar
+
+259
+00:15:07.988 --> 00:15:11.828
+file, guardar como, como plantilla.
+
+260
+00:15:11.868 --> 00:15:13.268
+Lo guardan como plantilla
+
+261
+00:15:14.568 --> 00:15:17.188
+y allí ustedes le pueden colocar el nombre que deseen.
+
+262
+00:15:17.208 --> 00:15:21.068
+Por ejemplo, yo lo voy a guardar aquí en los cursos de IA,
+
+263
+00:15:21.088 --> 00:15:25.058
+automatizaciones en Revit, nuevo, esta plantilla la vamos a
+
+264
+00:15:25.058 --> 00:15:26.988
+usar más adelante, plantilla base
+
+265
+00:15:28.348 --> 00:15:30.988
+Revit, ¿okey?
+
+266
+00:15:32.608 --> 00:15:36.248
+Así, ¿okey? Y colocamos la fecha, la
+
+267
+00:15:36.308 --> 00:15:40.168
+fecha, eh, que ustedes quieran o si no, tienen que tener una
+
+268
+00:15:40.188 --> 00:15:43.988
+esquematización, en metodología BIM hay que utilizar códigos y
+
+269
+00:15:44.028 --> 00:15:47.768
+demás, pero bueno. Y voy a colocarle aquí plantilla
+
+270
+00:15:48.168 --> 00:15:48.848
+base.
+
+271
+00:15:50.248 --> 00:15:53.828
+Voy a poner design model. Digamos que es para su
+
+272
+00:15:53.868 --> 00:15:56.588
+organización, GP de Gabriel Pantoja,
+
+273
+00:15:57.108 --> 00:15:58.828
+salvo.
+
+274
+00:16:00.108 --> 00:16:04.058
+Y listo, ¿okey? Entonces, en el mismo
+
+275
+00:16:04.168 --> 00:16:06.828
+orden de,
+
+276
+00:16:07.748 --> 00:16:11.508
+de, de ideas, ¿okey? Siguiendo el mismo
+
+277
+00:16:11.568 --> 00:16:15.228
+orden de ideas, eso es lo primero que ustedes tienen que hacer, ¿okey?
+
+278
+00:16:15.238 --> 00:16:17.628
+Que es la estructura del browser, ¿okey?
+
+279
+00:16:17.708 --> 00:16:18.188
+Ahora,
+
+280
+00:16:19.128 --> 00:16:23.098
+luego, crear vistas base. Se crean vistas duplicadas, diferenciadas para trabajo
+
+281
+00:16:23.128 --> 00:16:25.928
+interno, coordinación y revisión. Esto ya lo saben.
+
+282
+00:16:25.948 --> 00:16:29.508
+Esta parte también es importante, lo que es sheet, láminas de entrega al final.
+
+283
+00:16:29.548 --> 00:16:33.128
+Estas láminas, bueno, ya lo han visto con Dyroots, esto lo vamos a profundizar.
+
+284
+00:16:33.968 --> 00:16:37.768
+Personalmente, a mí me gusta siempre irla personalizando a medida que vamos
+
+285
+00:16:37.788 --> 00:16:40.148
+avanzando, pero bueno, aquí ustedes en los sheets,
+
+286
+00:16:41.328 --> 00:16:44.648
+eh, cuando crean un new sheet, ustedes pueden crear su
+
+287
+00:16:44.728 --> 00:16:47.548
+cajetín, tenerlo listo, cuando le den Okey
+
+288
+00:16:47.588 --> 00:16:50.668
+acá y ustedes lo pueden organizar.
+
+289
+00:16:51.068 --> 00:16:54.628
+A mí me gusta trabajarlo esta parte con los add-ins de Dyroots, que
+
+290
+00:16:54.728 --> 00:16:58.428
+básicamente ustedes ya lo conocen, en Dyroots y en la parte de sheet
+
+291
+00:16:58.568 --> 00:17:02.368
+generator, ¿sí? Que aquí recopilan la información y lo pueden
+
+292
+00:17:02.408 --> 00:17:05.888
+trabajar acá. Algo rápido de los
+
+293
+00:17:05.969 --> 00:17:09.568
+add-ins, ¿okey? Eeeh, eso
+
+294
+00:17:09.788 --> 00:17:11.578
+por ese lado ya.
+
+295
+00:17:12.449 --> 00:17:16.248
+Eh, bueno, continuemos. Vamos al paso dos, las
+
+296
+00:17:16.308 --> 00:17:20.108
+vistas ya las creamos, trabajo versus entrega, ya
+
+297
+00:17:20.148 --> 00:17:21.018
+decimos.
+
+298
+00:17:22.108 --> 00:17:25.459
+Los view templates es el paso tres, que es la parte importante.
+
+299
+00:17:25.459 --> 00:17:29.328
+¿Qué pasa con los view templates? En los view templates, ustedes van a crear
+
+300
+00:17:29.368 --> 00:17:33.308
+las plantillas de vistas, ¿okey? Ustedes si se dan cuenta, por
+
+301
+00:17:33.348 --> 00:17:37.088
+ejemplo, voy a crear una plantilla de vista de nivel uno, modelo.
+
+302
+00:17:37.148 --> 00:17:40.938
+Aquí dice view template. Inclusive, ustedes la pueden ver acá,
+
+303
+00:17:41.108 --> 00:17:44.628
+si no estoy mal, es en la parte, siempre me lo sé por acá, pero en el
+
+304
+00:17:44.668 --> 00:17:45.208
+manage
+
+305
+00:17:46.088 --> 00:17:47.228
+hay una opción.
+
+306
+00:17:48.428 --> 00:17:52.348
+Estos son los project, shared parameters, estos los parámetros
+
+307
+00:17:52.388 --> 00:17:54.288
+globales que ustedes han visto.
+
+308
+00:17:55.968 --> 00:17:58.088
+Pa, pa, pa, pa, view.
+
+309
+00:17:59.668 --> 00:18:01.108
+Aquí, está por
+
+310
+00:18:01.168 --> 00:18:04.468
+acá. Pero la verdad,
+
+311
+00:18:04.488 --> 00:18:06.828
+siempre, o sea, siempre lo he hecho por acá.
+
+312
+00:18:06.838 --> 00:18:10.048
+Aquí, perdón, view templates, ¿sí?
+
+313
+00:18:10.088 --> 00:18:13.188
+Entonces, acá puedes crear desde una vista.
+
+314
+00:18:13.208 --> 00:18:17.108
+Entonces, aquí yo le doy clic, crear template from current view de nivel
+
+315
+00:18:17.148 --> 00:18:20.608
+uno. Entonces, le voy a crear plantilla base
+
+316
+00:18:20.988 --> 00:18:25.016
+modelo...Estructura.
+
+317
+00:18:25.116 --> 00:18:27.896
+¿Okay? Fíjense que digo modelo
+
+318
+00:18:28.716 --> 00:18:29.596
+estructura
+
+319
+00:18:30.416 --> 00:18:33.936
+y le doy okay. Y aquí ustedes pueden
+
+320
+00:18:34.176 --> 00:18:37.476
+crear una desde cero. Hay distintas plantillas.
+
+321
+00:18:37.796 --> 00:18:41.596
+Este, este es para, para floor structure, área y plans, o sea,
+
+322
+00:18:41.636 --> 00:18:44.236
+como se ve, pero pueden crear una acá
+
+323
+00:18:45.516 --> 00:18:47.936
+y completamente desde,
+
+324
+00:18:49.076 --> 00:18:52.496
+desde cero o duplicarla, ¿okay? Ustedes pueden
+
+325
+00:18:52.536 --> 00:18:56.196
+inclusive colocar todas. Hay un montón,
+
+326
+00:18:56.216 --> 00:18:59.776
+¿no? Entonces vean esta que dice plantilla, vamos de nuevo
+
+327
+00:18:59.816 --> 00:19:03.666
+acá y manage view plantillas. Aquí
+
+328
+00:19:03.666 --> 00:19:06.776
+está plantilla base modelo estructura.
+
+329
+00:19:06.796 --> 00:19:10.716
+Entonces aquí yo puedo ver las distintas opciones, puedo ver las
+
+330
+00:19:10.776 --> 00:19:13.976
+escalas, cómo se va a ver el modelo, el nivel de
+
+331
+00:19:13.996 --> 00:19:17.976
+detalle, la visibilidad. Puedo ver
+
+332
+00:19:18.056 --> 00:19:20.676
+las visibility and graphics que quiero que se
+
+333
+00:19:20.696 --> 00:19:24.576
+visualicen y quiero ver las anotaciones,
+
+334
+00:19:25.196 --> 00:19:29.036
+quiero ver las partes analíticas, quiero ver
+
+335
+00:19:29.076 --> 00:19:32.916
+los filtros de trabajo, que eso ya vamos a ir, y así
+
+336
+00:19:32.996 --> 00:19:36.656
+sucesivamente. Entonces, voy a crear una para modelo estructura y ustedes la
+
+337
+00:19:36.776 --> 00:19:40.736
+personalizan. Vean que el grupo de vistas es modelo, aquí yo
+
+338
+00:19:40.756 --> 00:19:44.576
+lo pudiera cambiar y ahora voy a cambiar una, voy
+
+339
+00:19:44.586 --> 00:19:48.236
+a duplicar que va a ser plantilla base
+
+340
+00:19:49.396 --> 00:19:50.316
+presentación
+
+341
+00:19:51.496 --> 00:19:54.496
+. Estructura,
+
+342
+00:19:54.506 --> 00:19:58.476
+¿okay? Y lo, eh, y lo único que voy a cambiar acá es el grupo
+
+343
+00:19:58.496 --> 00:20:01.216
+de vista que va a ser para presentación, ¿okay?
+
+344
+00:20:01.256 --> 00:20:04.616
+O sea, tiene que estar con el grupo de vista presentación.
+
+345
+00:20:04.656 --> 00:20:07.896
+Y simplemente le voy a dar okay. Entonces, ¿qué pasa?
+
+346
+00:20:07.996 --> 00:20:11.516
+Y todo lo que sea, fíjense, view template,
+
+347
+00:20:11.576 --> 00:20:15.556
+acá, identity data, yo le voy a decir-- lo pueden hacer desde aquí
+
+348
+00:20:15.796 --> 00:20:19.166
+o simplemente le dan view, apply properties to current view y yo le puedo decir:
+
+349
+00:20:19.196 --> 00:20:22.996
+mira, estas, todas las que sean nivel uno modelo, agarras
+
+350
+00:20:23.036 --> 00:20:26.966
+plantilla base modelo estructura, le das a aplicar propiedad, le das a
+
+351
+00:20:27.016 --> 00:20:30.036
+okay. Entonces, esta ya tiene el view template
+
+352
+00:20:31.156 --> 00:20:32.316
+nivel uno modelo
+
+353
+00:20:33.156 --> 00:20:35.846
+y vamos a darle otra vez .
+
+354
+00:20:35.856 --> 00:20:39.516
+Plantilla modelo estructura,
+
+355
+00:20:39.576 --> 00:20:43.356
+aplicar, okay, listo.
+
+356
+00:20:43.376 --> 00:20:46.466
+Entonces, tiene view name nivel uno y aquí la vuelven a seleccionar.
+
+357
+00:20:46.496 --> 00:20:47.036
+Entonces, yo le digo
+
+358
+00:20:48.496 --> 00:20:52.036
+esta que está acá, plantilla estructura, aplicamos,
+
+359
+00:20:52.316 --> 00:20:56.156
+okay. Tiene que salir acá, ¿sí? No sé por qué aquí siempre cuando
+
+360
+00:20:56.176 --> 00:20:58.916
+uno quiere sacarla no le da, mejor lo hacen por acá.
+
+361
+00:20:58.936 --> 00:21:01.956
+Pero para que sea mucho más rápido, yo les tengo una solución.
+
+362
+00:21:01.976 --> 00:21:04.276
+Ustedes seleccionan aquí modelo.
+
+363
+00:21:04.336 --> 00:21:07.836
+Solo dan modelo, fíjense, modelo.
+
+364
+00:21:07.936 --> 00:21:11.876
+Y, y lo que van a hacer aquí en modelo, seleccionan
+
+365
+00:21:12.576 --> 00:21:16.076
+esta, esta y esta con la tecla control, se van a las propiedades
+
+366
+00:21:16.936 --> 00:21:18.356
+y acá donde dice view template,
+
+367
+00:21:19.396 --> 00:21:23.196
+le dan acá, plantilla base, pa, pa, pa,
+
+368
+00:21:23.256 --> 00:21:27.216
+modelo, aplicamos el filtro, le damos okay.
+
+369
+00:21:27.236 --> 00:21:30.796
+Entonces, todas estas tienen el mismo filtro y los de presentación
+
+370
+00:21:31.456 --> 00:21:35.256
+seleccionamos con la tecla control, nos vamos al properties y
+
+371
+00:21:35.476 --> 00:21:36.056
+acá
+
+372
+00:21:36.876 --> 00:21:37.956
+en el view template
+
+373
+00:21:38.776 --> 00:21:42.136
+seleccionamos presentación, le damos a aplicar y okay
+
+374
+00:21:43.756 --> 00:21:46.836
+. Okay. Es en el caso de las que son de
+
+375
+00:21:46.916 --> 00:21:50.876
+presentación, ¿sí? Y en el caso del 3D,
+
+376
+00:21:51.456 --> 00:21:55.396
+que es este que está acá, que son los 3D, también tiene su 3D para
+
+377
+00:21:55.436 --> 00:21:58.836
+presentación y estructural. Obviamente, los 3D sí
+
+378
+00:21:59.296 --> 00:22:02.506
+sería bueno que ustedes tengan una nada más, ¿okay?
+
+379
+00:22:02.536 --> 00:22:06.176
+Para ese 3D. Ahí ustedes lo pueden seleccionar.
+
+380
+00:22:06.716 --> 00:22:10.516
+Eh, pero la idea es que ustedes vayan personalizando. ¿Qué se personaliza?
+
+381
+00:22:10.556 --> 00:22:13.715
+Bueno, básicamente ustedes se acaban de dar cuenta que lo que se
+
+382
+00:22:13.736 --> 00:22:17.516
+personaliza, en este caso, es todo
+
+383
+00:22:17.616 --> 00:22:20.856
+esto, hasta la escala. Obviamente, ustedes luego la escala la pueden ir
+
+384
+00:22:20.896 --> 00:22:24.796
+personalizando. La escala yo lo dejo a libre albedrío, porque cuando hacemos
+
+385
+00:22:24.816 --> 00:22:27.606
+la presentación de un plano, esa, esa escala la podemos modificar.
+
+386
+00:22:27.616 --> 00:22:31.156
+Pero lo que sí importa es que tengan todo esto de la misma
+
+387
+00:22:31.236 --> 00:22:34.376
+manera y la parte que ustedes ya han visto de los
+
+388
+00:22:34.456 --> 00:22:38.156
+filtros, ¿okay? Ese sería el paso número
+
+389
+00:22:38.356 --> 00:22:40.856
+tres. Vámonos al paso número
+
+390
+00:22:41.416 --> 00:22:45.165
+cuatro. O ese mismo paso, en consecuencia del paso
+
+391
+00:22:45.236 --> 00:22:48.936
+número tres. Consistencia visual, eficiencia, control visual
+
+392
+00:22:50.236 --> 00:22:52.416
+y los filtros de automatizaciones visuales.
+
+393
+00:22:52.836 --> 00:22:56.796
+Ya ustedes saben cómo crear los filtros, esto sí,
+
+394
+00:22:56.876 --> 00:22:57.096
+y
+
+395
+00:22:58.356 --> 00:23:01.816
+se los dejo a su, a su criterio, en los videos lo han
+
+396
+00:23:01.856 --> 00:23:05.656
+visto. Cre-- recuerden que para crear un filtro se van aquí en el manage, aquí hay
+
+397
+00:23:05.696 --> 00:23:06.676
+una opción que es
+
+398
+00:23:07.916 --> 00:23:08.916
+edit selection.
+
+399
+00:23:09.936 --> 00:23:13.876
+Y aquí ustedes pueden crear nuevos filtros, new,
+
+400
+00:23:13.916 --> 00:23:17.616
+los crean como reglas, filtros de
+
+401
+00:23:17.636 --> 00:23:20.256
+estructuras, por ejemplo,
+
+402
+00:23:21.416 --> 00:23:23.636
+colores, ¿verdad?
+
+403
+00:23:25.836 --> 00:23:27.235
+Le damos okay
+
+404
+00:23:28.036 --> 00:23:31.436
+y digamos que este filtro de estructuras colores lo van a
+
+405
+00:23:31.446 --> 00:23:35.296
+aplicar, digamos, para columnas
+
+406
+00:23:35.376 --> 00:23:38.416
+y para, ah, ah,
+
+407
+00:23:38.476 --> 00:23:41.986
+ah, ah, ah, ah, digamos, columnas...
+
+408
+00:23:42.036 --> 00:23:44.656
+Este arqui-- perdón, tiene que ser estructura.
+
+409
+00:23:44.716 --> 00:23:48.336
+Aquí, columns y no sé,
+
+410
+00:23:48.376 --> 00:23:49.356
+busquemos otro
+
+411
+00:23:51.336 --> 00:23:54.516
+. Eh, structural framing, vigas, un ejemplo, ¿no?
+
+412
+00:23:54.556 --> 00:23:58.296
+Para esto solo, a explicar. Entonces, tú vas a decir que mira, para este filtro de
+
+413
+00:23:58.416 --> 00:24:01.056
+colores yo quiero que,
+
+414
+00:24:01.476 --> 00:24:05.336
+eh, lo hagas para todos los
+
+415
+00:24:05.396 --> 00:24:07.576
+elementos que tengan cierta marca
+
+416
+00:24:08.616 --> 00:24:12.536
+y que sean iguales a... ya la vamos a, a
+
+417
+00:24:12.576 --> 00:24:15.916
+definir, ¿sí? Entonces, le damos acá
+
+418
+00:24:17.456 --> 00:24:19.256
+y le voy a dar acá, ¿okay?
+
+419
+00:24:20.136 --> 00:24:23.776
+Entonces, por ejemplo, si yo coloco una
+
+420
+00:24:24.476 --> 00:24:28.296
+columna, ¿sí? Digamos que voy a colocar solo
+
+421
+00:24:29.476 --> 00:24:33.424
+esta columnaQue está acá, ¿sí? Y esa
+
+422
+00:24:33.524 --> 00:24:37.054
+columna vamos a buscarla, por ejemplo, en la columna de
+
+423
+00:24:37.064 --> 00:24:40.404
+hormigón. Y esa columna cuando yo la
+
+424
+00:24:40.464 --> 00:24:44.384
+coloque, ahí está, ¿sí? Esa columna cuando yo la
+
+425
+00:24:44.404 --> 00:24:47.243
+coloque va a tener una marca y va a decir rojo,
+
+426
+00:24:48.124 --> 00:24:52.064
+o no, va a decir presentación, ¿sí?
+
+427
+00:24:54.044 --> 00:24:57.904
+Y además, eeeh, voy a colocar una viga,
+
+428
+00:24:58.604 --> 00:25:01.464
+aquí cualquiera, y esa viga cuando yo la
+
+429
+00:25:01.504 --> 00:25:05.234
+coloque, y esta que está acá va a
+
+430
+00:25:05.304 --> 00:25:09.104
+decir también marca presentación.
+
+431
+00:25:10.764 --> 00:25:14.104
+Estoy inventando, ¿no? Entonces acá ustedes se van a ir
+
+432
+00:25:14.964 --> 00:25:18.744
+PG, perdón, vamos a volver a al
+
+433
+00:25:18.784 --> 00:25:19.204
+manage,
+
+434
+00:25:20.764 --> 00:25:21.944
+vamos a volver al filtro
+
+435
+00:25:23.264 --> 00:25:26.324
+y vamos a aquí en new. Ay, no lo
+
+436
+00:25:26.364 --> 00:25:28.924
+guardé. No, sí, aquí está, aquí está.
+
+437
+00:25:28.964 --> 00:25:30.254
+Este que está acá lo vamos a editar
+
+438
+00:25:31.904 --> 00:25:34.484
+y va a ser igual ahora todo lo que sea presentación.
+
+439
+00:25:34.494 --> 00:25:38.424
+Le damos a aplicar, le damos ok. Entonces, en el
+
+440
+00:25:38.444 --> 00:25:41.744
+template, que es el template de presentación,
+
+441
+00:25:41.784 --> 00:25:44.984
+PG, digamos que estamos aquí en presentación.
+
+442
+00:25:45.584 --> 00:25:48.904
+Y-- o vámonos acá al, al
+
+443
+00:25:48.944 --> 00:25:51.804
+manage y-- o el view, perdón, view
+
+444
+00:25:51.824 --> 00:25:55.564
+templates. Vamos al manage y aquí los que son de
+
+445
+00:25:55.604 --> 00:25:59.544
+presentación en los filtros, aquí, override
+
+446
+00:25:59.624 --> 00:26:03.284
+filters, acá añadimos uno que sea estructuras por
+
+447
+00:26:03.364 --> 00:26:06.624
+colores. El patrón sea, por ejemplo, todos los de
+
+448
+00:26:06.664 --> 00:26:09.224
+presentación tengan un color
+
+449
+00:26:10.364 --> 00:26:13.824
+rojo, por poner un ejemplo, ¿no? Da
+
+450
+00:26:14.384 --> 00:26:18.104
+color rojo. ¿Sí?
+
+451
+00:26:18.824 --> 00:26:22.684
+Eh, entonces, le doy ok, le damos a aplicar, le
+
+452
+00:26:22.704 --> 00:26:24.424
+damos ok, ok.
+
+453
+00:26:25.604 --> 00:26:29.504
+Entonces, ¿qué va a suceder? Que, eh,
+
+454
+00:26:29.524 --> 00:26:33.424
+bueno, ahorita estamos en el 3D, vámonos a-- puede ser
+
+455
+00:26:33.464 --> 00:26:36.804
+una vista, aquí. Ahí
+
+456
+00:26:36.824 --> 00:26:40.283
+está. Entonces, cuando nosotros queramos aplicar este
+
+457
+00:26:40.344 --> 00:26:44.284
+filtro, ¿sí? Vean que este filtro es de estructura,
+
+458
+00:26:44.364 --> 00:26:48.244
+se está aplicando todas las marcas que tengan
+
+459
+00:26:48.304 --> 00:26:52.264
+esta parte, el mark, ¿ok? Entonces, me voy aquí a PG,
+
+460
+00:26:52.344 --> 00:26:54.624
+filtro, vamos a editar
+
+461
+00:26:55.904 --> 00:26:57.744
+este que está acá.
+
+462
+00:26:58.704 --> 00:27:01.764
+Y que sea
+
+463
+00:27:01.844 --> 00:27:05.464
+presentación, ok, le doy ok. Y
+
+464
+00:27:05.504 --> 00:27:06.024
+aquí
+
+465
+00:27:06.964 --> 00:27:07.084
+en
+
+466
+00:27:07.964 --> 00:27:11.264
+esta parte, en la marca, vean, dice presentación.
+
+467
+00:27:11.304 --> 00:27:13.824
+Entonces, ¿qué va a pasar? Cuando yo lo vaya a llevar
+
+468
+00:27:15.304 --> 00:27:16.544
+a,
+
+469
+00:27:17.484 --> 00:27:21.314
+a un modelo... Porque ojo, esto es una plantilla, aquí se va a ver.
+
+470
+00:27:21.324 --> 00:27:24.544
+Cuando yo lo vaya a llevar a este nivel uno
+
+471
+00:27:24.644 --> 00:27:28.064
+modelo, vamos a, a llevarlo, perdón,
+
+472
+00:27:28.224 --> 00:27:29.054
+esa,
+
+473
+00:27:31.004 --> 00:27:34.944
+ah, pa, pa, pa, nivel uno presentación, este,
+
+474
+00:27:34.954 --> 00:27:38.904
+¿ok? Entonces, cuando nosotros lo, lo va-- lo empecemos a
+
+475
+00:27:38.944 --> 00:27:42.633
+trabajar de distintas formas, esto se va a empezar a visualizar según los colores
+
+476
+00:27:42.644 --> 00:27:45.234
+de la plantilla que yo esté aplicando, ¿ok?
+
+477
+00:27:45.284 --> 00:27:48.284
+Cuando yo lo trabaje, ¿sí? Entonces, ¿qué va a
+
+478
+00:27:48.344 --> 00:27:52.044
+pasar? Nosotros vamos a seguir y ustedes siguen
+
+479
+00:27:52.124 --> 00:27:53.544
+organizando de esta manera
+
+480
+00:27:54.564 --> 00:27:57.004
+y luego viene la parte de estandarización.
+
+481
+00:27:57.044 --> 00:28:01.004
+Esta parte de estandarización la vamos a ver en el siguiente curso, pero la idea es
+
+482
+00:28:01.024 --> 00:28:03.924
+que vamos a trabajar con un sistema de nomenclatura,
+
+483
+00:28:03.934 --> 00:28:07.904
+¿ok? Esto que yo acabo de hacer es lo mínimo necesario que
+
+484
+00:28:07.944 --> 00:28:10.784
+ustedes deben tra-- tener para una plantilla inteligente.
+
+485
+00:28:10.864 --> 00:28:14.764
+Organizar filtros, los templates y las vistas,
+
+486
+00:28:14.784 --> 00:28:18.064
+¿ok? ¿Qué pasa? Si nosotros tenemos esta
+
+487
+00:28:18.084 --> 00:28:19.844
+organización, ya para cerrar
+
+488
+00:28:21.004 --> 00:28:24.644
+este video, nos vamos a dar cuenta de lo siguiente, fíjense.
+
+489
+00:28:24.684 --> 00:28:25.684
+Yo voy a eliminar esto.
+
+490
+00:28:26.974 --> 00:28:30.644
+Vamos a, a guardar. Fíjense que aquí se me fue
+
+491
+00:28:31.224 --> 00:28:34.564
+este nivel uno. Este nivel uno no es
+
+492
+00:28:34.604 --> 00:28:35.883
+modelo.
+
+493
+00:28:37.044 --> 00:28:39.834
+Eh, pa, pa, pa, pa. Este view
+
+494
+00:28:39.924 --> 00:28:43.584
+name. Sí, este es nivel uno modelo, pero
+
+495
+00:28:43.604 --> 00:28:46.024
+está en presentación.
+
+496
+00:28:46.824 --> 00:28:50.804
+Entonces, vamos a, vamos a cambiarlo, vamos a abrir,
+
+497
+00:28:50.844 --> 00:28:53.164
+vamos a abrir otro.
+
+498
+00:28:54.144 --> 00:28:56.724
+Ajá, ok. Entonces, voy a agarrar
+
+499
+00:28:56.764 --> 00:28:58.784
+este.
+
+500
+00:28:59.904 --> 00:29:03.364
+Y todos los que están acá en properties
+
+501
+00:29:04.924 --> 00:29:08.404
+van a presentación. Ok, está bien, solo que le coloqué el nombre
+
+502
+00:29:08.464 --> 00:29:10.064
+mal. Este
+
+503
+00:29:10.444 --> 00:29:14.224
+es... este va hacia
+
+504
+00:29:14.244 --> 00:29:18.224
+arriba. Ok, vamos a ponerlo acá
+
+505
+00:29:19.004 --> 00:29:19.014
+.
+
+506
+00:29:20.984 --> 00:29:24.604
+Este es de modelo, perdón, aquí, este es
+
+507
+00:29:24.664 --> 00:29:27.184
+modelo. Aplicar, ok.
+
+508
+00:29:27.724 --> 00:29:29.144
+Listo. Ya.
+
+509
+00:29:29.964 --> 00:29:32.964
+Ok, entonces, nivel uno, presentación.
+
+510
+00:29:33.124 --> 00:29:35.604
+Y, eh, estos son los de
+
+511
+00:29:35.664 --> 00:29:39.624
+modelo. Entonces, ya va. Vamos a seleccionar todo
+
+512
+00:29:39.684 --> 00:29:41.804
+lo que sea modelo
+
+513
+00:29:42.944 --> 00:29:42.954
+.
+
+514
+00:29:44.904 --> 00:29:45.904
+Todos los que sean modelo
+
+515
+00:29:47.064 --> 00:29:48.604
+van con la parte de,
+
+516
+00:29:49.944 --> 00:29:53.644
+de modelo, que es lo que está pasando.
+
+517
+00:29:53.744 --> 00:29:54.184
+Ok
+
+518
+00:29:56.024 --> 00:29:56.144
+.
+
+519
+00:29:57.024 --> 00:30:00.864
+Listo. Y todos los que sean presentación van
+
+520
+00:30:00.904 --> 00:30:04.264
+con la parte de presentación
+
+521
+00:30:06.604 --> 00:30:06.614
+.
+
+522
+00:30:08.344 --> 00:30:11.123
+Aquí es presentación, grupos de vistas
+
+523
+00:30:13.364 --> 00:30:13.424
+.
+
+524
+00:30:14.704 --> 00:30:18.624
+Ok. Entonces, vamos a sacarlo un momento.
+
+525
+00:30:18.644 --> 00:30:22.064
+Acá. Ya. Entonces, eh, ¿qué vamos a
+
+526
+00:30:22.084 --> 00:30:26.044
+hacer? Fíjense, una vez que nosotros tenemos esto, uno
+
+527
+00:30:26.104 --> 00:30:29.664
+guarda su plantilla y la próxima vez que ustedes arranquen un
+
+528
+00:30:29.724 --> 00:30:30.264
+proyecto
+
+529
+00:30:31.244 --> 00:30:33.204
+le van a dar a new
+
+530
+00:30:34.224 --> 00:30:34.234
+,
+
+531
+00:30:36.144 --> 00:30:40.024
+plantilla base estructuras, que ya la tienen, o
+
+532
+00:30:40.124 --> 00:30:41.064
+le dan en browse
+
+533
+00:30:42.384 --> 00:30:45.464
+y la van a buscar. Yo la coloqué aquí en curso
+
+534
+00:30:45.564 --> 00:30:49.124
+preventa, ta, ta, ta, ta, ta. Curso preventa
+
+535
+00:30:49.164 --> 00:30:52.724
+magia, aquí en automatizaciones en Revit, plantilla
+
+536
+00:30:52.804 --> 00:30:55.184
+base y esta es la que yo utilizo
+
+537
+00:30:57.044 --> 00:31:00.804
+. ¿Ok? Y ahora vean
+
+538
+00:31:01.344 --> 00:31:05.104
+desde dónde yo parto, lo que ya yo tengo, ¿sí?
+
+539
+00:31:05.144 --> 00:31:08.804
+Entonces, cuando yo empiece a modelar, ya eso va a tener mis
+
+540
+00:31:08.844 --> 00:31:12.584
+filtros, etcétera, etcétera. Y esos filtros va a aplicar los
+
+541
+00:31:12.644 --> 00:31:15.764
+colores, la organización y las vistas.
+
+542
+00:31:15.804 --> 00:31:19.504
+Y así tienen que trabajar, ¿ok? Entonces, el curso
+
+543
+00:31:19.724 --> 00:31:21.464
+número dos va a estar muy interesante.
+
+544
+00:31:21.504 --> 00:31:25.284
+Les dejo ya para la última lección, lección número seis del proyecto
+
+545
+00:31:25.344 --> 00:31:28.104
+final.

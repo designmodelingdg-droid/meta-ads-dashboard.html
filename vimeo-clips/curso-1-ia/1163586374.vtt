@@ -1,0 +1,1013 @@
+WEBVTT
+
+1
+00:00:02.520 --> 00:00:06.320
+Saludos, colega, sean bienvenidos a esta tercera lección
+
+2
+00:00:06.820 --> 00:00:08.960
+de at ins en Revit.
+
+3
+00:00:09.160 --> 00:00:10.360
+Y vamos a explicar un poquito
+
+4
+00:00:11.310 --> 00:00:14.640
+esta lección va a tener una parte más que nada conceptual,
+
+5
+00:00:14.770 --> 00:00:17.560
+donde vamos a hablar
+
+6
+00:00:18.300 --> 00:00:21.760
+del motivo de por usar at ins en
+
+7
+00:00:22.440 --> 00:00:25.280
+y cuando hacerlo, cuándo sería conveniente de hacerlo?
+
+8
+00:00:26.300 --> 00:00:30.360
+Eh, que es básicamente entender el ro de los atins
+
+9
+00:00:30.500 --> 00:00:31.800
+dentro de un sistema b?
+
+10
+00:00:31.830 --> 00:00:33.840
+Bien, bien estructurado.
+
+11
+00:00:33.840 --> 00:00:37.560
+Okey, antes de eso, quiero em,
+
+12
+00:00:38.800 --> 00:00:41.440
+o de incursionar con lo que es los Atkins.
+
+13
+00:00:41.440 --> 00:00:44.920
+Ustedes deben saber algo fundamental que es como transferir
+
+14
+00:00:45.660 --> 00:00:46.920
+una plantilla de proyecto,
+
+15
+00:00:47.150 --> 00:00:50.880
+okey o cómo transferir toda la data, todos los parámetros,
+
+16
+00:00:50.880 --> 00:00:53.160
+filtros y vistas que ustedes desarrollan
+
+17
+00:00:54.720 --> 00:00:59.320
+y que quieren conservar a un nuevo proyecto que ya han
+
+18
+00:00:59.320 --> 00:01:02.240
+desarrollado y ahora lo quieren trasladar un nuevo proyecto.
+
+19
+00:01:02.520 --> 00:01:06.220
+Entonces, eh, cómo funcionaría eso?
+
+20
+00:01:06.540 --> 00:01:10.860
+Fíjense, nosotros nos quedamos y acá.
+
+21
+00:01:12.720 --> 00:01:15.680
+Y básicamente vimos los filtros,
+
+22
+00:01:15.680 --> 00:01:18.680
+hemos visto los parámetros de proyecto, etcétera, etcétera.
+
+23
+00:01:18.920 --> 00:01:21.320
+Entonces, si yo quisiera transferir a esto primero,
+
+24
+00:01:21.820 --> 00:01:23.000
+hay dos alternativas.
+
+25
+00:01:24.040 --> 00:01:25.610
+Ustedes pueden guardar esto
+
+26
+00:01:26.430 --> 00:01:29.450
+en en la opción guardar cómo plantilla de proyecto.
+
+27
+00:01:30.150 --> 00:01:33.410
+No me gusta esta opción y no la voy a enseñar porque siento
+
+28
+00:01:33.470 --> 00:01:35.450
+que no es una opción práctica porque igual
+
+29
+00:01:36.010 --> 00:01:38.930
+tienen que alimentar, eh, eliminar un montón de cosas.
+
+30
+00:01:40.010 --> 00:01:44.770
+Y en esa li en eliminar el proyecto, las vistas y demás,
+
+31
+00:01:45.510 --> 00:01:48.810
+eh, se pierde la practicidad.
+
+32
+00:01:49.320 --> 00:01:51.650
+Okey, qué es la más práctico?
+
+33
+00:01:51.850 --> 00:01:54.930
+Fíjense tal cual, como ustedes tienen acá este proyecto,
+
+34
+00:01:54.930 --> 00:01:58.210
+inclusive lo pueden guardar y lo puede ir archivo,
+
+35
+00:01:58.210 --> 00:02:01.130
+guardar como no lo van a guardar como plantilla.
+
+36
+00:02:01.150 --> 00:02:04.370
+Yo les voy a enseñar el método que yo considero
+
+37
+00:02:04.990 --> 00:02:06.410
+que va automatizar todo.
+
+38
+00:02:06.410 --> 00:02:08.690
+Una manera mucho más rápida, guardar el proyecto.
+
+39
+00:02:09.850 --> 00:02:12.450
+Entonces, cuando ustedes quieren guardar los parámetros,
+
+40
+00:02:12.450 --> 00:02:15.050
+filtros, todo, okey y trasladar un nuevo proyecto,
+
+41
+00:02:15.350 --> 00:02:18.690
+van a colocar, por ejemplo, aquí el nombre y
+
+42
+00:02:19.850 --> 00:02:24.470
+configuración, y vamos a ponerlos a tipo
+
+43
+00:02:25.430 --> 00:02:27.000
+proyecto, okey?
+
+44
+00:02:29.010 --> 00:02:30.290
+Y coloque acá piso,
+
+45
+00:02:30.290 --> 00:02:33.170
+transferencia para que ustedes sepan que van a transferir
+
+46
+00:02:33.170 --> 00:02:34.730
+toda esa configuración, no?
+
+47
+00:02:36.210 --> 00:02:37.530
+Entonces, qué sucede?
+
+48
+00:02:37.930 --> 00:02:40.610
+Fíjense, van a abrir ese proyecto, lo van a tener abierto.
+
+49
+00:02:41.270 --> 00:02:45.750
+Yo le acabo de guardar. Y
+
+50
+00:02:46.170 --> 00:02:49.820
+eh, vamos a esperar que carga.
+
+51
+00:02:56.190 --> 00:02:58.740
+Listo. Entonces, imaginemos
+
+52
+00:02:58.770 --> 00:03:01.360
+Acá vamos a a cerrar todo
+
+53
+00:03:02.680 --> 00:03:06.740
+que ustedes están arrancando o ya tienen un proyecto, eh,
+
+54
+00:03:07.490 --> 00:03:11.460
+realizado no vamos a a decir que ustedes ya tienen acá.
+
+55
+00:03:11.460 --> 00:03:14.620
+Bueno, ya tengo aquí mi proyecto y van a trabajar con otro
+
+56
+00:03:14.860 --> 00:03:17.950
+proyecto, digamos otro proyecto aquí.
+
+57
+00:03:23.310 --> 00:03:24.450
+Voy a esperar que abra.
+
+58
+00:03:24.870 --> 00:03:26.770
+Se están trabajando con nuevo proyecto y quieren
+
+59
+00:03:26.970 --> 00:03:28.010
+transferir toda la data.
+
+60
+00:03:28.120 --> 00:03:30.810
+Todo lo que vimos con todo lo que hemos aprendido hasta
+
+61
+00:03:30.810 --> 00:03:32.690
+ahora de las herramientas nativas de revista.
+
+62
+00:03:33.050 --> 00:03:34.810
+Entonces aquí hay opción que dice
+
+63
+00:03:35.450 --> 00:03:38.650
+y van ir a la parte de de gestionar.
+
+64
+00:03:39.650 --> 00:03:42.050
+Y aquí en la parte es gestionar una opción que dice
+
+65
+00:03:42.330 --> 00:03:43.730
+transferir normas de proyecto.
+
+66
+00:03:43.860 --> 00:03:45.450
+Aquí está y la lic.
+
+67
+00:03:47.290 --> 00:03:51.370
+Entonces van a seleccionar todo todo, okey, aquí
+
+68
+00:03:52.070 --> 00:03:53.250
+no discreteen nada,
+
+69
+00:03:53.630 --> 00:03:57.210
+porque inclusive están los parámetros globales, parámetros
+
+70
+00:03:58.110 --> 00:04:00.210
+de proyecto, ya los compartidos.
+
+71
+00:04:00.210 --> 00:04:03.690
+Recuerden que, eh, como tal,
+
+72
+00:04:05.220 --> 00:04:06.680
+buscan el archivo de texto.
+
+73
+00:04:06.900 --> 00:04:09.680
+Eso sería el único. Simplemente le van a dar que aceptar.
+
+74
+00:04:13.220 --> 00:04:16.820
+Y aquí se comparte absolutamente todo desde las familias
+
+75
+00:04:17.920 --> 00:04:19.800
+y los tipos de familias.
+
+76
+00:04:20.260 --> 00:04:23.360
+La configuración, vamos a darle aquí sobre escribir la
+
+77
+00:04:23.520 --> 00:04:26.600
+configuración que nosotros estamos manejando de de los
+
+78
+00:04:26.630 --> 00:04:29.920
+niveles, las pistas, la organización, todo.
+
+79
+00:04:31.030 --> 00:04:32.880
+Absolutamente todo.
+
+80
+00:04:34.200 --> 00:04:39.120
+Entonces, eh, esto nos ayuda a hacer mucho más prácticos.
+
+81
+00:04:39.740 --> 00:04:43.040
+Nos ayuda a a
+
+82
+00:04:44.070 --> 00:04:48.230
+a no empezar y configurar un proyecto siempre desde cero.
+
+83
+00:04:48.700 --> 00:04:51.590
+Esta es la verdadera automatización de de revista,
+
+84
+00:04:51.590 --> 00:04:55.630
+la automatización nativa de revista, okey y bueno,
+
+85
+00:04:55.730 --> 00:04:57.750
+en ese proceso ya vamos a terminar
+
+86
+00:04:57.750 --> 00:04:58.950
+que haga la transferencia.
+
+87
+00:04:59.390 --> 00:05:02.770
+Y mientras hace la transferencia ahí,
+
+88
+00:05:02.770 --> 00:05:04.690
+ustedes le van a salir algunos avisos
+
+89
+00:05:05.710 --> 00:05:07.570
+de familias que se pueden duplicar.
+
+90
+00:05:07.570 --> 00:05:09.850
+Pero por ejemplo, aquí que me interesa,
+
+91
+00:05:10.190 --> 00:05:12.650
+si ustedes se van a la parte de plantillas de vista,
+
+92
+00:05:13.200 --> 00:05:16.470
+adivina qué plantillas les va a salir la plantillas,
+
+93
+00:05:16.470 --> 00:05:19.800
+funcion muros, okey,
+
+94
+00:05:20.200 --> 00:05:24.350
+adivinen que ya yo puedo aplicar mis filtros.
+
+95
+00:05:25.920 --> 00:05:28.080
+Ahí está. Okey,
+
+96
+00:05:28.470 --> 00:05:31.960
+inclusive si ya yo hubiese organizado mi navegador de
+
+97
+00:05:32.120 --> 00:05:33.480
+proyectos, también hubiese hecho,
+
+98
+00:05:33.900 --> 00:05:36.160
+si ustedes se recuerdan acá en la organización del
+
+99
+00:05:36.160 --> 00:05:39.720
+navegador, si yo hubiese creado una nueva no
+
+100
+00:05:41.430 --> 00:05:44.680
+organización personal,
+
+101
+00:05:45.660 --> 00:05:50.000
+lo hubiese hecho, no desde la, el modelo original
+
+102
+00:05:50.880 --> 00:05:53.130
+hubiese aplicado, no, yo hubiese puesto aquí
+
+103
+00:05:55.140 --> 00:05:56.600
+la agrupación y clasificación
+
+104
+00:05:56.820 --> 00:05:58.660
+Por, eh,
+
+105
+00:06:00.200 --> 00:06:03.140
+lo podemos hacer por family tipo, pero vamos a,
+
+106
+00:06:03.430 --> 00:06:06.940
+vamos a ponerla acá, que sea organización personal.
+
+107
+00:06:07.790 --> 00:06:12.060
+Vamos a editar. Y aquí en la agrupación
+
+108
+00:06:12.300 --> 00:06:17.260
+clasificación, entonces uno puede ir agrupando
+
+109
+00:06:17.260 --> 00:06:20.500
+como, como decimos, queridos, no tal cual como, como,
+
+110
+00:06:20.810 --> 00:06:25.460
+como las enseñe, no tal cual como, como, como las enseñe,
+
+111
+00:06:25.490 --> 00:06:28.300
+inclusive ese creado un nuevo parámetro que se llamé
+
+112
+00:06:28.350 --> 00:06:32.100
+plantillas o algo por el estilo no em.
+
+113
+00:06:33.300 --> 00:06:35.340
+Entonces esa es la manera de transferir la
+
+114
+00:06:35.380 --> 00:06:36.500
+manera más práctica.
+
+115
+00:06:36.520 --> 00:06:39.700
+No me gusta la parte de plantillas de proyecto porque
+
+116
+00:06:40.560 --> 00:06:44.060
+hay que ser ciertas condiciones de eliminar elementos y
+
+117
+00:06:44.060 --> 00:06:47.620
+demás que quien no, no considero que sea lo más práctica.
+
+118
+00:06:47.740 --> 00:06:50.060
+Entonces, aquí, lo genial
+
+119
+00:06:51.520 --> 00:06:54.220
+es que en esta plantilla tipo, ustedes,
+
+120
+00:06:54.640 --> 00:06:57.580
+lo que organizan acá y un navegador de proyectos como les
+
+121
+00:06:57.580 --> 00:07:01.220
+enseñan la lección, entonces también se los pudieran haber
+
+122
+00:07:01.220 --> 00:07:02.820
+llevado con esta transferencia.
+
+123
+00:07:03.050 --> 00:07:04.540
+Okey, eh?
+
+124
+00:07:04.750 --> 00:07:07.260
+Ahora con todo esto que ya sabemos,
+
+125
+00:07:07.430 --> 00:07:09.620
+ahora podemos trabajar los ATS.
+
+126
+00:07:09.810 --> 00:07:12.380
+Okey, eh, de igual forma,
+
+127
+00:07:12.630 --> 00:07:17.200
+antes de trabajar y desarrollar los atunes en en
+
+128
+00:07:18.210 --> 00:07:20.830
+en la siguiente elección en la parte b de esta elección
+
+129
+00:07:20.830 --> 00:07:23.270
+tres, también les voy a mostrar cómo,
+
+130
+00:07:24.180 --> 00:07:27.990
+como hacer una configuración buena de lo que son plantillas,
+
+131
+00:07:28.270 --> 00:07:31.470
+familias y librerías, pero se los vamos a ver antes
+
+132
+00:07:32.050 --> 00:07:34.590
+de quería trabajar la parte práctica de los atens.
+
+133
+00:07:35.000 --> 00:07:37.310
+Aquí vamos a ver una pequeña parte conceptual.
+
+134
+00:07:37.790 --> 00:07:41.110
+Y lo que buscamos en esta parte a es automatizar con rea,
+
+135
+00:07:41.110 --> 00:07:42.310
+escalar con atens.
+
+136
+00:07:42.730 --> 00:07:43.830
+En las lecciones anteriores,
+
+137
+00:07:43.830 --> 00:07:45.950
+aprendimos automatizar con herramientas nativas,
+
+138
+00:07:45.950 --> 00:07:47.630
+diseñar reglas con parámetros,
+
+139
+00:07:48.020 --> 00:07:52.030
+filtros y vistas y guardar inteligencia en plantillas a.
+
+140
+00:07:52.030 --> 00:07:53.070
+Ahora damos el siguiente paso,
+
+141
+00:07:53.390 --> 00:07:56.470
+acelerar ese sistema con at, eh.
+
+142
+00:07:56.770 --> 00:07:58.390
+En lo que es la automatización nativa
+
+143
+00:07:59.330 --> 00:08:02.230
+nos permite her herramientas y reglas básicas en los que es
+
+144
+00:08:02.230 --> 00:08:03.430
+parámetros y filtros.
+
+145
+00:08:04.130 --> 00:08:07.910
+Eh, nos permite diseñar reglas inteligentes en lo que son
+
+146
+00:08:07.910 --> 00:08:09.070
+plantillas estructuradas.
+
+147
+00:08:09.470 --> 00:08:12.350
+O sea, nos permite guardar conocimiento del sistema
+
+148
+00:08:12.890 --> 00:08:16.550
+en lo que son at ins aceleradores multiplica la velocidad
+
+149
+00:08:16.850 --> 00:08:20.990
+del del flujo porque existen los atins permiten ahorrar
+
+150
+00:08:20.990 --> 00:08:23.510
+tiempo, reducir errores y ejecutar en masa,
+
+151
+00:08:23.550 --> 00:08:26.310
+ejecutar tareas en segundos que tomarían horas manualmente.
+
+152
+00:08:26.820 --> 00:08:30.030
+Automatizar procesos eliminados que elimina fallos
+
+153
+00:08:30.030 --> 00:08:31.150
+humanos repetitivos.
+
+154
+00:08:31.680 --> 00:08:34.710
+Ejecutaré masa que permite aplicar cambios a cientos de
+
+155
+00:08:34.710 --> 00:08:35.950
+elementos simultáneamente.
+
+156
+00:08:36.330 --> 00:08:40.990
+Un at no piensa, ejecuta, nosotros somos los responsables
+
+157
+00:08:41.810 --> 00:08:43.670
+que hacíamos antes, sin ATS.
+
+158
+00:08:43.670 --> 00:08:46.070
+Hasta ahora aprendimos a clasificar información de fin,
+
+159
+00:08:46.130 --> 00:08:48.270
+reglas y automatizar respuestas del modelo.
+
+160
+00:08:48.540 --> 00:08:50.790
+Todo esto es correcto, profesional y necesario.
+
+161
+00:08:51.250 --> 00:08:53.790
+Sin embargo, es lento en proyectos grandes,
+
+162
+00:08:54.520 --> 00:08:57.360
+repetitivo cuando se escala y
+
+163
+00:08:58.200 --> 00:08:59.880
+y manual en tareas masivas.
+
+164
+00:09:00.420 --> 00:09:03.400
+El límite de lo nativo es que las herramientas nativas debit
+
+165
+00:09:03.420 --> 00:09:05.520
+son potentes, pero tienen límites de velocidad.
+
+166
+00:09:05.520 --> 00:09:08.840
+Cuando el proyecto cree lo que vamos a hacer con los at es
+
+167
+00:09:09.040 --> 00:09:10.080
+aumentar la velocidad.
+
+168
+00:09:10.140 --> 00:09:12.880
+Eso es básicamente, pero el principio de las herramientas
+
+169
+00:09:12.880 --> 00:09:17.240
+nativas la vamos a seguir utilizando que hacen los actings.
+
+170
+00:09:17.350 --> 00:09:19.800
+Realmente ejecutan reglas más rápidas,
+
+171
+00:09:19.800 --> 00:09:24.000
+aplican criterios definidos a velocidad multiplicada, los
+
+172
+00:09:25.480 --> 00:09:28.240
+y los at in aceleran reglas bien definidas,
+
+173
+00:09:28.240 --> 00:09:31.360
+pero no corren un mal modelo ni el fin en criterios.
+
+174
+00:09:32.160 --> 00:09:34.880
+Entonces, cuál es la diferencia entre una automatización
+
+175
+00:09:34.880 --> 00:09:39.840
+nativa versus un atins cuando nos at en modelos desordenados
+
+176
+00:09:41.540 --> 00:09:45.700
+y en parámetros confusos sin reglas claras para arreglar
+
+177
+00:09:45.700 --> 00:09:49.380
+errores, un at in sobre un modelo mal estructurado
+
+178
+00:09:49.890 --> 00:09:53.380
+acelera el caos, eh?
+
+179
+00:09:55.110 --> 00:09:57.380
+Vamos a ver otro acá
+
+180
+00:09:59.230 --> 00:10:03.530
+cuando si usar y lo vamos a usar cuando las reglas estén
+
+181
+00:10:03.710 --> 00:10:05.810
+claras, las tareas sean repetitivas.
+
+182
+00:10:06.470 --> 00:10:08.490
+El proyecto se está escalando, es decir,
+
+183
+00:10:08.490 --> 00:10:11.970
+cuando los procesos que se ejecuta muchas veces y cuando el
+
+184
+00:10:11.970 --> 00:10:16.090
+volumen de trabajo aumenta con cable,
+
+185
+00:10:16.920 --> 00:10:19.770
+okey, entonces, primero criterio, luego velocidad,
+
+186
+00:10:20.230 --> 00:10:21.450
+ya les enseñé el criterio.
+
+187
+00:10:21.450 --> 00:10:22.610
+Ahora vamos con la velocidad.
+
+188
+00:10:23.350 --> 00:10:25.690
+La relación entre los at en los parámetros los
+
+189
+00:10:26.210 --> 00:10:28.130
+dependen completamente de la calidad de los
+
+190
+00:10:28.130 --> 00:10:29.210
+parámetros del modelo.
+
+191
+00:10:29.640 --> 00:10:32.970
+Leen información, modifican datos y ejecutan acciones
+
+192
+00:10:33.040 --> 00:10:35.970
+masivas basándose en la estructura de parámetros existentes.
+
+193
+00:10:36.350 --> 00:10:37.930
+Por eso sin buenos parámetros,
+
+194
+00:10:37.950 --> 00:10:40.250
+el at in falla o produce resultados
+
+195
+00:10:40.250 --> 00:10:41.810
+incorrectos, que es lo que vamos a ver.
+
+196
+00:10:42.250 --> 00:10:45.530
+Entonces nosotros nos vamos a basar en buenos parámetros at
+
+197
+00:10:45.590 --> 00:10:46.730
+in que leen datos,
+
+198
+00:10:47.050 --> 00:10:50.690
+procesan y ejecutan esta conexión va a reforzar lo aprendido
+
+199
+00:10:50.690 --> 00:10:52.410
+en la lección dos parte b,
+
+200
+00:10:54.630 --> 00:10:57.550
+y nos vamos a basar en los at imp plantillas de proyectos.
+
+201
+00:10:57.680 --> 00:11:00.230
+Vamos a crear plantillas bien definidas con
+
+202
+00:11:00.230 --> 00:11:01.310
+una base estructuradas.
+
+203
+00:11:01.600 --> 00:11:04.510
+Vamos a crear parámetros definidos con criterios claros.
+
+204
+00:11:04.510 --> 00:11:06.510
+Vamos a establecer reglas lógicas
+
+205
+00:11:07.030 --> 00:11:09.270
+y los at nos van acelerar todo.
+
+206
+00:11:09.910 --> 00:11:12.510
+O sea, vamos a seguirlo con los mismos procesos de
+
+207
+00:11:12.510 --> 00:11:16.230
+automatización, solo que los at nos van acelerar todo.
+
+208
+00:11:16.260 --> 00:11:18.310
+Absolutamente. Entonces,
+
+209
+00:11:18.580 --> 00:11:20.630
+qué vamos aprender en la próxima elección?
+
+210
+00:11:20.630 --> 00:11:22.630
+Vamos a utilizar distintos at.
+
+211
+00:11:23.020 --> 00:11:25.790
+Okey, vamos a configurar bien esas plantillas.
+
+212
+00:11:26.000 --> 00:11:28.030
+Vamos a darle continuar lo que vimos en la primera
+
+213
+00:11:28.040 --> 00:11:29.310
+parte de de esta clase.
+
+214
+00:11:29.470 --> 00:11:31.310
+O sea en los primeros minutos de esta clase con las
+
+215
+00:11:31.310 --> 00:11:33.470
+plantillas o yo no llamo plantillas,
+
+216
+00:11:33.470 --> 00:11:34.910
+sino la configuración del proyecto.
+
+217
+00:11:35.480 --> 00:11:38.110
+Vamos a aplicar sobre modelados bien estructurados.
+
+218
+00:11:38.120 --> 00:11:40.310
+Vamos a automatizar tareas concretas.
+
+219
+00:11:40.810 --> 00:11:44.750
+Nos vamos a improvisar y no se trabajan los
+
+220
+00:11:45.330 --> 00:11:46.790
+por modo popularidad.
+
+221
+00:11:47.570 --> 00:11:49.310
+No son funciones sin criterio, claro.
+
+222
+00:11:49.350 --> 00:11:52.670
+Y tampoco son herramientas sin un criterio te fi. Entonces
+
+223
+00:11:53.790 --> 00:11:55.560
+Esto, eh da paso
+
+224
+00:11:57.300 --> 00:11:59.940
+a los distintos tipos de attin que
+
+225
+00:12:01.210 --> 00:12:02.670
+que que utilizaremos.
+
+226
+00:12:03.150 --> 00:12:06.430
+Y en este caso tenemos por productividad.
+
+227
+00:12:06.820 --> 00:12:08.270
+Okay, eh,
+
+228
+00:12:08.490 --> 00:12:11.110
+que hacen las tareas cotidianas y repetidas del modelo
+
+229
+00:12:11.430 --> 00:12:13.950
+tenemos de control y gestión que verifican la calidad y
+
+230
+00:12:13.950 --> 00:12:15.150
+consistencia del modelo.
+
+231
+00:12:16.030 --> 00:12:18.670
+Tenemos además automatización,
+
+232
+00:12:20.090 --> 00:12:21.510
+eh, ligera.
+
+233
+00:12:22.140 --> 00:12:26.150
+Okay, que esa automatización simplifica proceso sin
+
+234
+00:12:26.150 --> 00:12:27.710
+complejidad accesible.
+
+235
+00:12:27.710 --> 00:12:31.910
+Okey, entonces, eh, nada, eh?
+
+236
+00:12:31.910 --> 00:12:33.230
+Todo esto nos va a ayudar
+
+237
+00:12:33.910 --> 00:12:36.590
+y y nos va a permitir entender un poco
+
+238
+00:12:38.130 --> 00:12:39.630
+lo que son los at in.
+
+239
+00:12:39.630 --> 00:12:41.910
+Le estoy dejando un resume en cortito igual.
+
+240
+00:12:41.910 --> 00:12:46.030
+Les voy a dejar una una diapositiva al al respecto.
+
+241
+00:12:46.730 --> 00:12:50.030
+La idea es que ustedes hayan entendido cómo es la creación
+
+242
+00:12:50.030 --> 00:12:51.830
+de la plantilla y cómo nos va a servir.
+
+243
+00:12:52.050 --> 00:12:55.750
+Los atens van a ver esta diapositiva ahí como
+
+244
+00:12:56.930 --> 00:12:58.670
+eh, como repaso,
+
+245
+00:12:59.930 --> 00:13:03.940
+pero esto básicamente es un abrevo de lo que utilizaremos en
+
+246
+00:13:03.940 --> 00:13:06.340
+la siguiente parte que va a estar muy, muy interesante.
+
+247
+00:13:06.340 --> 00:13:10.380
+Que verdad vamos a automatizar con la ayuda de at ins que
+
+248
+00:13:10.380 --> 00:13:13.580
+son complementos externos que vamos a poder visualizar
+
+249
+00:13:14.120 --> 00:13:15.980
+la gran mayoría en la parte de
+
+250
+00:13:16.620 --> 00:13:18.900
+complementos y herramientas externas.
+
+251
+00:13:19.400 --> 00:13:21.020
+La espera la siguiente elección que va a estar muy
+
+252
+00:13:21.020 --> 00:13:22.620
+interesante, quien les habla al ingeniero,
+
+253
+00:13:22.620 --> 00:13:24.300
+ver el pantoja saludos.
