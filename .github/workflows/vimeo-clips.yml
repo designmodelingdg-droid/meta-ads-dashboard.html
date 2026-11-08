@@ -61,6 +61,7 @@ jobs:
       - name: Preparar la rama vimeo-clips
         run: |
           cp scripts/vimeo_clips.py /tmp/vimeo_clips.py
+          cp scripts/vimeo_tramos.py /tmp/vimeo_tramos.py
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           if git ls-remote --exit-code origin refs/heads/vimeo-clips >/dev/null; then
@@ -89,9 +90,7 @@ jobs:
           VIDEO: ${{ inputs.video }}
           DESDE: ${{ inputs.desde }}
           HASTA: ${{ inputs.hasta }}
-        run: |
-          cp scripts/vimeo_tramos.py /tmp/vimeo_tramos.py
-          cd /tmp && python3 /tmp/vimeo_tramos.py "$VIDEO"
+        run: cd /tmp && python3 /tmp/vimeo_tramos.py "$VIDEO"
 
       - name: Subir tramos como artefacto
         if: ${{ inputs.modo == 'recortar' }}
