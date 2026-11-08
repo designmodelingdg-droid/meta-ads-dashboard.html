@@ -1,0 +1,2821 @@
+WEBVTT
+
+1
+00:00:02.150 --> 00:00:04.890
+Colega, sean bienvenidos a esta segunda lección.
+
+2
+00:00:05.440 --> 00:00:09.490
+Esta lección número dos va a tener dos partes, okey,
+
+3
+00:00:10.080 --> 00:00:12.690
+esta va a ser la primera, va a estar dividida
+
+4
+00:00:13.550 --> 00:00:18.530
+específicamente en 30 minutos aproximadamente y 30 minutos.
+
+5
+00:00:18.590 --> 00:00:19.970
+La segunda parte, okey.
+
+6
+00:00:20.730 --> 00:00:24.050
+Entonces vamos a hablar un poco en esta lección dos de las
+
+7
+00:00:24.050 --> 00:00:26.490
+herramientas nativas de Revit por automatización.
+
+8
+00:00:27.150 --> 00:00:30.930
+En esta primera parte, vamos a hablar de los conceptos de
+
+9
+00:00:31.560 --> 00:00:35.770
+parámetros, filtros y vistas que nos va a permitir la
+
+10
+00:00:35.770 --> 00:00:38.570
+organización que nos va a permitir la parte
+
+11
+00:00:39.880 --> 00:00:43.890
+organizas organizacional, por así decirlo, organizativa
+
+12
+00:00:45.030 --> 00:00:46.290
+de de lo que es.
+
+13
+00:00:46.720 --> 00:00:48.830
+Okey. Ahora,
+
+14
+00:00:48.940 --> 00:00:51.750
+primero vamos a ver un poquito de la parte conceptual y
+
+15
+00:00:51.750 --> 00:00:53.990
+luego nos vamos a la práctica en la práctica,
+
+16
+00:00:54.280 --> 00:00:57.350
+tanto en parámetros vistas y filtros.
+
+17
+00:00:57.350 --> 00:01:00.470
+Vamos a ver y lo más básico,
+
+18
+00:01:00.470 --> 00:01:04.110
+lo más rápido que se necesita en configuración de proyectos.
+
+19
+00:01:04.630 --> 00:01:05.750
+Y luego en la segunda parte,
+
+20
+00:01:06.580 --> 00:01:09.110
+esto va a ser la lección dos parte a.
+
+21
+00:01:09.230 --> 00:01:12.710
+Y en la lección dos parte b, vamos a estar y
+
+22
+00:01:13.270 --> 00:01:17.270
+visualizando como tal la profundización de ya cuando se
+
+23
+00:01:17.430 --> 00:01:18.750
+configura la plantilla de proyecto.
+
+24
+00:01:19.670 --> 00:01:21.350
+Y eh, todo lo que vemos en
+
+25
+00:01:21.350 --> 00:01:22.710
+parámetros, filtros y vistas, okey?
+
+26
+00:01:22.740 --> 00:01:25.350
+Así que comencemos, eh,
+
+27
+00:01:25.350 --> 00:01:27.070
+primero que van a lograr en esta lección,
+
+28
+00:01:27.070 --> 00:01:29.590
+esta lección es para comprender que revilla es una
+
+29
+00:01:29.590 --> 00:01:32.150
+herramienta automatización potente, eh?
+
+30
+00:01:32.150 --> 00:01:35.150
+Sirve para identificar qué tareas automatizar primero en
+
+31
+00:01:35.560 --> 00:01:38.990
+flujo de trabajo y dominar lo que son vistas,
+
+32
+00:01:38.990 --> 00:01:41.390
+filtros y parámetros como base bien profesional
+
+33
+00:01:42.070 --> 00:01:46.150
+y prepararse para escalar a in eh e inteligencia artificial
+
+34
+00:01:46.490 --> 00:01:47.950
+que son en las próximas clases,
+
+35
+00:01:48.010 --> 00:01:50.550
+que es en en la elección tres en adelante.
+
+36
+00:01:50.550 --> 00:01:53.710
+Recuerden que esta lección dos va a tener dos partes, eh?
+
+37
+00:01:54.020 --> 00:01:57.120
+Esta es la primera. Entonces, qué sucede?
+
+38
+00:01:57.450 --> 00:02:00.160
+Cuál es la potencia de la automatización nativa
+
+39
+00:02:01.020 --> 00:02:04.600
+de de de Revit como tal antes de usar atunes
+
+40
+00:02:04.720 --> 00:02:05.840
+o inteligencia artificial?
+
+41
+00:02:06.100 --> 00:02:08.800
+Hay que dominar la automatización que ya vive dentro de re.
+
+42
+00:02:08.990 --> 00:02:12.080
+Okey, la automatización nativa son las reglas internas del
+
+43
+00:02:12.080 --> 00:02:13.960
+modelo que trabajan por ti.
+
+44
+00:02:15.020 --> 00:02:17.600
+Eso nos va a generar tres aspectos fundamentales,
+
+45
+00:02:18.000 --> 00:02:22.150
+información ordenada y reglas claras y
+
+46
+00:02:22.210 --> 00:02:23.590
+modelo inteligente.
+
+47
+00:02:23.850 --> 00:02:26.390
+La información ordenada nos va a permitir datos
+
+48
+00:02:26.390 --> 00:02:28.830
+estructurados que permiten decisiones automáticas,
+
+49
+00:02:29.450 --> 00:02:31.270
+reglas claras porque eh,
+
+50
+00:02:31.270 --> 00:02:34.270
+criterios definidos que puede interpretar
+
+51
+00:02:34.830 --> 00:02:37.710
+y un modelo inteligente que el proyecto responde solo cuando
+
+52
+00:02:37.710 --> 00:02:38.750
+cambia la información.
+
+53
+00:02:40.260 --> 00:02:42.940
+Entonces la arregla de oro que nosotros vamos a manejar en
+
+54
+00:02:42.940 --> 00:02:46.100
+todo este primer curso es si una tarea la hace más de tres
+
+55
+00:02:46.100 --> 00:02:49.460
+veces debe automatizar que si es muy repetitiva,
+
+56
+00:02:49.460 --> 00:02:51.860
+esa tarea te diosa fastidiosa, nos quita tiempo,
+
+57
+00:02:52.240 --> 00:02:54.540
+hay que automatizarla al principio simple,
+
+58
+00:02:54.540 --> 00:02:56.260
+transforma tu flujo de trabajo, bien,
+
+59
+00:02:56.540 --> 00:02:59.840
+identifica patrones repetitivos y convié en reglas
+
+60
+00:02:59.840 --> 00:03:02.160
+automáticas que Revit ejecuta por ti.
+
+61
+00:03:02.960 --> 00:03:04.680
+Entonces, cuál va a ser nuestro recorrido de hoy?
+
+62
+00:03:04.680 --> 00:03:06.560
+Estoy hablando en los primeros cinco minutos,
+
+63
+00:03:06.560 --> 00:03:08.480
+ya llevamos aproximadamente tres de este
+
+64
+00:03:08.480 --> 00:03:10.080
+video del marco teórico.
+
+65
+00:03:10.080 --> 00:03:11.720
+Qué es lo que estoy indicando a continuación?
+
+66
+00:03:12.600 --> 00:03:15.000
+Y luego vamos a hablar un poquito de los alcances.
+
+67
+00:03:15.640 --> 00:03:19.000
+Y luego vamos a hacer tres prácticas sencillas.
+
+68
+00:03:19.620 --> 00:03:22.680
+La práctica de parámetros, la práctica de filtros,
+
+69
+00:03:22.820 --> 00:03:24.200
+la práctica de vistas.
+
+70
+00:03:24.240 --> 00:03:25.280
+Y hacemos un cierre,
+
+71
+00:03:25.420 --> 00:03:27.120
+la duración aproximadamente 30
+
+72
+00:03:27.150 --> 00:03:28.640
+minutos de esta primera parte.
+
+73
+00:03:28.640 --> 00:03:32.860
+Okey, de la lección dos, qué no vamos a hacer hoy hoy?
+
+74
+00:03:32.860 --> 00:03:35.780
+No vamos a trabajar ni con dinamo ni con inteligencia
+
+75
+00:03:35.780 --> 00:03:37.180
+artificial y con scripts.
+
+76
+00:03:37.180 --> 00:03:38.340
+Okey, eh,
+
+77
+00:03:38.960 --> 00:03:41.660
+dinamo para programación para programación visual
+
+78
+00:03:41.680 --> 00:03:42.820
+va a ser más adelante.
+
+79
+00:03:43.500 --> 00:03:46.620
+Y la inteligencia artificial llegaremos en lecciones futuras
+
+80
+00:03:46.740 --> 00:03:49.020
+y en los des scripts, códigos y auto automatización
+
+81
+00:03:49.020 --> 00:03:50.260
+avanzada será más adelante.
+
+82
+00:03:50.260 --> 00:03:53.740
+Okey, qué vamos a ver aquí en esta primera le, eh,
+
+83
+00:03:53.740 --> 00:03:56.300
+lección dos parte a, lección dos, parte b.
+
+84
+00:03:56.300 --> 00:03:57.540
+Vamos a ver control visual,
+
+85
+00:03:58.540 --> 00:04:01.260
+clasificación automática y cambios masivos.
+
+86
+00:04:01.300 --> 00:04:02.900
+O sea, eso es lo que vamos a ir desarrollando.
+
+87
+00:04:02.900 --> 00:04:05.380
+No vamos a generar una gestión inteligente,
+
+88
+00:04:05.380 --> 00:04:08.140
+visualización una clasificación automática que es la
+
+89
+00:04:08.140 --> 00:04:11.060
+organización que responde reglas y cambios más, eh,
+
+90
+00:04:11.170 --> 00:04:15.380
+masivos sin re retrajo ni ajustes manuales.
+
+91
+00:04:15.410 --> 00:04:20.040
+Okey, entonces, y vamos a comenzar con los paramentos.
+
+92
+00:04:20.070 --> 00:04:22.840
+Okey, desde lo más sencillo, vamos a ver cómo,
+
+93
+00:04:23.390 --> 00:04:27.040
+como nosotros podemos crear en este caso aquí,
+
+94
+00:04:27.040 --> 00:04:30.960
+yo voy a estar visualizando las los apuntes que prepare para
+
+95
+00:04:30.960 --> 00:04:34.370
+esta clase en la parte en la parte práctica
+
+96
+00:04:34.440 --> 00:04:35.650
+para que me puedan seguir.
+
+97
+00:04:35.760 --> 00:04:38.490
+Okey, entonces, eh, la base de la automatización,
+
+98
+00:04:38.490 --> 00:04:41.170
+un parámetro es información asociada a los elementos del
+
+99
+00:04:41.170 --> 00:04:44.410
+modelo que permite reinterpretar decisiones y aplicar
+
+100
+00:04:44.410 --> 00:04:45.610
+reglas automáticamente.
+
+101
+00:04:45.790 --> 00:04:48.450
+No es solo un dato, es la base para la automatización,
+
+102
+00:04:48.450 --> 00:04:49.930
+el control y la estandar.
+
+103
+00:04:50.590 --> 00:04:51.930
+Los parámetros son el lenguaje.
+
+104
+00:04:51.930 --> 00:04:54.570
+Cuál que Revit entiende tus reglas, okey,
+
+105
+00:04:55.770 --> 00:04:57.590
+es nuestro primer paso, okey?
+
+106
+00:04:58.150 --> 00:05:01.110
+Entonces, y vamos a generar un parámetro,
+
+107
+00:05:01.200 --> 00:05:02.750
+cuál es el objetivo del parámetro?
+
+108
+00:05:02.820 --> 00:05:06.070
+Generar información asociada, elementos, okey,
+
+109
+00:05:06.940 --> 00:05:09.030
+esto lo vamos a ir profundizando mucho más
+
+110
+00:05:09.030 --> 00:05:10.110
+en la siguiente elección.
+
+111
+00:05:10.610 --> 00:05:13.910
+Yo quiero darle los los tres primeros aspectos de
+
+112
+00:05:14.010 --> 00:05:15.670
+automatización nativa en Revit.
+
+113
+00:05:15.670 --> 00:05:17.070
+Y luego profundizamos en eso.
+
+114
+00:05:17.950 --> 00:05:19.510
+Entonces vamos a empezar comprmes,
+
+115
+00:05:19.610 --> 00:05:21.870
+que es la información asociada a los elementos.
+
+116
+00:05:22.350 --> 00:05:24.830
+Entonces, los parámetros son el lenguaje con el que Revit va
+
+117
+00:05:24.830 --> 00:05:28.910
+a entender básicamente nuestra configuración inicial antes
+
+118
+00:05:28.910 --> 00:05:32.350
+de un modelar lo que vamos a ver al inicio antes de utilizar
+
+119
+00:05:33.250 --> 00:05:36.830
+la inteligencia artificial y demás es básicamente como una
+
+120
+00:05:37.190 --> 00:05:40.510
+configuración preliminar pero automatizada, ok,
+
+121
+00:05:40.820 --> 00:05:43.030
+pero automatizada para ello,
+
+122
+00:05:43.030 --> 00:05:46.630
+nos vamos a encontrar además que vamos a tener dos tipos de
+
+123
+00:05:46.670 --> 00:05:48.350
+condiciones en los parámetros.
+
+124
+00:05:48.990 --> 00:05:51.150
+O sea, hay varios tipos de parámetros.
+
+125
+00:05:51.150 --> 00:05:55.590
+Esta el parámetro que vamos a realizar que en este caso es
+
+126
+00:05:55.770 --> 00:05:57.680
+en los parámetros del proyecto, okey,
+
+127
+00:05:58.400 --> 00:05:59.480
+y lo estoy leyendo acá.
+
+128
+00:06:00.560 --> 00:06:01.640
+Y además, eh,
+
+129
+00:06:01.920 --> 00:06:05.560
+tenemos también lo que es parámetros globales y parámetros
+
+130
+00:06:05.560 --> 00:06:07.720
+compartidos, parámetros globales y compartidos.
+
+131
+00:06:07.720 --> 00:06:09.000
+Lo vamos a ver en la siguiente lección.
+
+132
+00:06:09.300 --> 00:06:11.080
+Lo que vamos a hacer el día de hoy son
+
+133
+00:06:11.830 --> 00:06:13.000
+parámetros de proyecto.
+
+134
+00:06:13.680 --> 00:06:14.880
+Entonces vuelvo y repito,
+
+135
+00:06:14.880 --> 00:06:19.440
+lo que vamos a definir son parámetros de proyecto, okey?
+
+136
+00:06:19.980 --> 00:06:22.440
+Los parámetros de proyecto se clasifican en dos.
+
+137
+00:06:22.620 --> 00:06:25.800
+Están los parámetros tipo y los parámetros ejemplares.
+
+138
+00:06:26.220 --> 00:06:28.320
+Los parámetros tipo afectan todos los
+
+139
+00:06:28.320 --> 00:06:29.480
+elementos del mismo tipo.
+
+140
+00:06:29.860 --> 00:06:32.240
+Un solo cambio impacta en múltiples
+
+141
+00:06:33.190 --> 00:06:36.320
+elementos ideal para estand legalización y control global.
+
+142
+00:06:36.520 --> 00:06:41.090
+O sea que si yo tengo y ya van a ver a la categorización,
+
+143
+00:06:41.090 --> 00:06:42.330
+si yo tengo muros,
+
+144
+00:06:43.360 --> 00:06:45.420
+no importa el tipo de sección del muro que
+
+145
+00:06:45.420 --> 00:06:46.460
+ustedes hayan modelado.
+
+146
+00:06:47.510 --> 00:06:49.730
+Si yo hago un cambio en los parámetros,
+
+147
+00:06:49.870 --> 00:06:51.690
+aplica todos los muros, okey?
+
+148
+00:06:51.910 --> 00:06:53.010
+Cuando se usa,
+
+149
+00:06:53.150 --> 00:06:55.610
+cuando quiero que todos los elementos sean iguales,
+
+150
+00:06:55.610 --> 00:06:57.330
+okey o la mayoría de elementos son iguales,
+
+151
+00:06:57.610 --> 00:07:01.330
+mientras que el a parámetro ejemplar afecta solo el elemento
+
+152
+00:07:01.330 --> 00:07:03.210
+que se selecciona más allá que sean de la
+
+153
+00:07:03.210 --> 00:07:04.330
+misma categoría de muros.
+
+154
+00:07:04.590 --> 00:07:07.010
+Si yo tengo un muro de hormigón y un muro de acero,
+
+155
+00:07:07.010 --> 00:07:09.570
+el parámetro solo puede aplicar el muro de hormigón o sólo
+
+156
+00:07:09.570 --> 00:07:11.010
+puede aplicar el muro de acero.
+
+157
+00:07:11.010 --> 00:07:15.450
+Okey, esto nos va a dar decisiones individuales ideal para
+
+158
+00:07:15.730 --> 00:07:17.530
+clasificación a estado, control puntual.
+
+159
+00:07:17.530 --> 00:07:19.890
+Lo vamos a usar cuando cada elemento pueda
+
+160
+00:07:19.890 --> 00:07:21.170
+tener una condición distinta.
+
+161
+00:07:21.410 --> 00:07:23.170
+Entonces, vamos a hacer nuestra primera práctica,
+
+162
+00:07:23.390 --> 00:07:25.370
+que es la parte de y
+
+163
+00:07:26.440 --> 00:07:31.090
+parámetros es importante, ojo que y vue lui.
+
+164
+00:07:31.110 --> 00:07:34.250
+Repito, hay tres tipos de parámetros, los de proyecto,
+
+165
+00:07:35.070 --> 00:07:37.410
+los los de proyectos, perdón en plural,
+
+166
+00:07:38.070 --> 00:07:41.170
+los globales y los compartidos globales y compartidos.
+
+167
+00:07:41.170 --> 00:07:42.490
+Vamos a ver en la siguiente el lección.
+
+168
+00:07:43.330 --> 00:07:46.210
+Y la idea es que todo automatización
+
+169
+00:07:46.210 --> 00:07:47.410
+empieza indicando Revit.
+
+170
+00:07:47.410 --> 00:07:49.410
+Qué condición debe cumplir un elemento?
+
+171
+00:07:50.000 --> 00:07:51.740
+Por eso vamos a hacer los parámetros del proyecto.
+
+172
+00:07:52.200 --> 00:07:54.820
+Se crean con un propósito, un parámetro existe porque
+
+173
+00:07:55.560 --> 00:07:58.620
+activa filtros, vistas o flujos automatizados.
+
+174
+00:07:59.060 --> 00:08:01.460
+Y primero la lógica es,
+
+175
+00:08:02.710 --> 00:08:04.690
+yo voy a condicionar y luego
+
+176
+00:08:05.310 --> 00:08:07.690
+voy a tener el resultado de esa condición,
+
+177
+00:08:07.690 --> 00:08:09.410
+no primero lógica, luego reacción
+
+178
+00:08:10.100 --> 00:08:11.770
+antes de ver colores o cambios visuales,
+
+179
+00:08:11.770 --> 00:08:13.850
+organizamos la información del modelo.
+
+180
+00:08:13.970 --> 00:08:15.650
+Entonces los parámetros vuelvo y, repito,
+
+181
+00:08:16.270 --> 00:08:17.970
+son la información del modelo.
+
+182
+00:08:18.960 --> 00:08:21.030
+Luego vamos a continuar con los filtros.
+
+183
+00:08:21.030 --> 00:08:24.770
+Pero pausa rápida, vamos a irnos a rev.
+
+184
+00:08:29.130 --> 00:08:32.250
+Entonces, fíjense lo siguiente, eh, yo
+
+185
+00:08:32.830 --> 00:08:36.570
+en esta lección tienen un recurso de un modelo sanitario que
+
+186
+00:08:36.570 --> 00:08:37.850
+se llama modelo sanitario.
+
+187
+00:08:38.040 --> 00:08:42.330
+Deje, vamos a darle click, okey, lo van a abrir ojo.
+
+188
+00:08:42.330 --> 00:08:45.330
+Recuerden que estos son cursos de integración,
+
+189
+00:08:45.330 --> 00:08:46.730
+programación, inteligencia artificial.
+
+190
+00:08:46.730 --> 00:08:48.210
+Estos no son cursos de modelado.
+
+191
+00:08:48.630 --> 00:08:51.290
+Si ustedes quieren saber como se modela en arquitectura,
+
+192
+00:08:51.290 --> 00:08:53.130
+estructura en instalaciones,
+
+193
+00:08:53.440 --> 00:08:55.480
+ustedes pueden adquirir luego con con nosotros las
+
+194
+00:08:55.600 --> 00:08:58.560
+especializaciones de modelado esto, este automatización ojo.
+
+195
+00:08:59.360 --> 00:09:03.240
+Y entonces ya nosotros abrimos nuestro modelo,
+
+196
+00:09:03.880 --> 00:09:05.520
+nosotros vamos a tener en la configuración del
+
+197
+00:09:05.520 --> 00:09:06.600
+no medor de proyectos.
+
+198
+00:09:06.720 --> 00:09:09.120
+Y además, vamos a tener la configuración de lo que
+
+199
+00:09:09.120 --> 00:09:10.200
+es las propiedades.
+
+200
+00:09:10.820 --> 00:09:12.880
+Si ustedes no lo tienen configurados,
+
+201
+00:09:12.880 --> 00:09:16.200
+sencillamente se pueden ir a la parte superior.
+
+202
+00:09:16.380 --> 00:09:18.880
+Lo que voy a hacer es, voy a ocultarme mi video
+
+203
+00:09:19.150 --> 00:09:20.320
+acá para que lo moleste.
+
+204
+00:09:21.080 --> 00:09:25.080
+Y vamos a ir acá a la parte de vista interfaz de usuario.
+
+205
+00:09:25.160 --> 00:09:26.880
+Y pueden activar siempre, por favor,
+
+206
+00:09:27.150 --> 00:09:29.480
+propiedades y navegador de proyectos
+
+207
+00:09:30.080 --> 00:09:31.880
+nosotros para los parámetros de proyecto,
+
+208
+00:09:32.100 --> 00:09:34.560
+nos vamos a ir con las propiedades que básicamente las
+
+209
+00:09:34.560 --> 00:09:39.460
+propiedades es el id con el cual trabajamos en en revenue,
+
+210
+00:09:39.600 --> 00:09:42.660
+no donde configuramos los parámetros de proyecto.
+
+211
+00:09:42.980 --> 00:09:44.260
+Entonces, cuál es el objetivo?
+
+212
+00:09:44.540 --> 00:09:46.340
+A ver, yo quiero este objetivo.
+
+213
+00:09:46.780 --> 00:09:49.980
+A continuación, claro, en mi proyecto, quiero poder
+
+214
+00:09:50.490 --> 00:09:54.500
+indicar cuáles son los muros que están, eh,
+
+215
+00:09:54.600 --> 00:09:55.940
+por ejemplo, en la habitación.
+
+216
+00:09:56.280 --> 00:09:59.980
+Sí, yo voy a decir que estos muros que están en la parte
+
+217
+00:10:00.300 --> 00:10:05.140
+superior, fíjense que y yo tengo muro básico albañilería.
+
+218
+00:10:05.230 --> 00:10:07.300
+Estos son muros básicos de tabiquería,
+
+219
+00:10:08.120 --> 00:10:10.020
+son la misma categoría, son muros,
+
+220
+00:10:10.170 --> 00:10:11.900
+pero la familia son distintas.
+
+221
+00:10:12.160 --> 00:10:15.460
+Si. Entonces, y si yo lo hago por tipo,
+
+222
+00:10:16.910 --> 00:10:19.430
+entonces el parámetro va a aplicar a todos los muros más
+
+223
+00:10:19.520 --> 00:10:22.750
+allá que haya de albañilería o tabiquería.
+
+224
+00:10:23.330 --> 00:10:26.230
+Si yo lo hago por ejemplar, entonces en ejemplar,
+
+225
+00:10:26.230 --> 00:10:28.510
+voy a tener uno albañilería y otro tabiquería.
+
+226
+00:10:29.150 --> 00:10:33.830
+Entonces lo hacemos por ejemplar. Es lo más eh, pertinente.
+
+227
+00:10:34.390 --> 00:10:36.990
+Entonces, para ello, nos vamos a ir a la parte de acá de
+
+228
+00:10:37.060 --> 00:10:40.070
+gestionar, nos vamos a ir a la parte superior acá.
+
+229
+00:10:40.490 --> 00:10:43.030
+Repito, gestionar yo estoy trabajando con Rob,
+
+230
+00:10:43.930 --> 00:10:45.870
+el curso lo pueden trabajar con cualquier versión de red,
+
+231
+00:10:46.860 --> 00:10:49.350
+explica lo mismo y se van a ir a parámetros del proyecto.
+
+232
+00:10:50.010 --> 00:10:52.670
+Le van a dar click y en parámetros de proyecto,
+
+233
+00:10:52.800 --> 00:10:55.950
+vamos a crear uno que se va a llamar ubicación porque yo
+
+234
+00:10:55.950 --> 00:10:57.910
+quiero ubicar las zonas de los muros.
+
+235
+00:10:58.470 --> 00:11:01.510
+Entonces le damos click en nuevo parámetro
+
+236
+00:11:02.710 --> 00:11:05.830
+y vamos a colocar acá que se llame ubicación.
+
+237
+00:11:06.500 --> 00:11:08.990
+Okey, va a ser de ejemplar.
+
+238
+00:11:09.280 --> 00:11:11.030
+Disciplina común es que
+
+239
+00:11:11.770 --> 00:11:14.390
+yo todavía no estoy catando por disciplinas.
+
+240
+00:11:14.750 --> 00:11:16.230
+Entonces, como es una disciplina común,
+
+241
+00:11:16.370 --> 00:11:18.030
+va a aplicar para todos, o sea, los muros,
+
+242
+00:11:18.030 --> 00:11:20.950
+los voy a ver en todas las disciplinas, tipo de datos.
+
+243
+00:11:21.010 --> 00:11:24.030
+Va a ser un texto porque vamos a colocar el el nombre de la
+
+244
+00:11:24.030 --> 00:11:28.430
+ubicación y además acá y lo vamos a agrupar
+
+245
+00:11:29.800 --> 00:11:31.620
+en lo que se llama datos de identidad.
+
+246
+00:11:31.670 --> 00:11:33.140
+Todos los parámetros del proyecto,
+
+247
+00:11:33.240 --> 00:11:35.860
+la gran mayoría se van a agrupar en datos de identidad.
+
+248
+00:11:36.310 --> 00:11:39.020
+Datos de identidad es la información, okey?
+
+249
+00:11:39.560 --> 00:11:41.620
+La respuesta a la ubicación.
+
+250
+00:11:41.940 --> 00:11:44.980
+Entonces yo le voy a dar acá en editar información de
+
+251
+00:11:44.980 --> 00:11:46.580
+herramientas, por qué?
+
+252
+00:11:46.580 --> 00:11:49.220
+Porque si este archivo lo va a abrir un colega
+
+253
+00:11:49.860 --> 00:11:53.840
+y quiere entender para que sirve este parámetro proyecto que
+
+254
+00:11:53.840 --> 00:11:56.360
+yo estoy generando, entonces yo le voy a explicar este
+
+255
+00:11:56.570 --> 00:12:01.450
+parámetro sirve para
+
+256
+00:12:01.920 --> 00:12:06.280
+identificar la ubicación de los elementos.
+
+257
+00:12:08.490 --> 00:12:11.230
+En este caso, yo lo voy a hacer solo para muros.
+
+258
+00:12:11.410 --> 00:12:12.910
+Se puede hacer para todos los elementos.
+
+259
+00:12:12.910 --> 00:12:14.750
+Ahora, como yo lo categorize aquí,
+
+260
+00:12:14.750 --> 00:12:16.390
+me van a salir todos los elementos.
+
+261
+00:12:16.910 --> 00:12:18.070
+Entonces yo en la categoría,
+
+262
+00:12:18.130 --> 00:12:21.270
+voy a buscar acá la que se llama muros.
+
+263
+00:12:21.620 --> 00:12:25.670
+Okey, le vamos a dar aceptar, le vamos a dar aceptar.
+
+264
+00:12:26.030 --> 00:12:27.710
+Entonces, vean lo genial de esto aquí.
+
+265
+00:12:27.890 --> 00:12:30.150
+Yo puedo seleccionar este muro que está acá
+
+266
+00:12:31.150 --> 00:12:34.270
+y este muro que está acá en la ubicación, ve,
+
+267
+00:12:34.270 --> 00:12:35.430
+me voy a datos de identidad.
+
+268
+00:12:35.430 --> 00:12:37.550
+Me salió ubicación. Y aquí yo le
+
+269
+00:12:37.550 --> 00:12:38.630
+voy a poner en la ubicación.
+
+270
+00:12:39.350 --> 00:12:42.590
+Y por ejemplo, balcon
+
+271
+00:12:43.670 --> 00:12:48.150
+y le voy a aplicar, ya lo voy a tener cada vez que yo los
+
+272
+00:12:48.150 --> 00:12:51.390
+seleccione, es balcón y todos los muros que estén
+
+273
+00:12:51.870 --> 00:12:53.910
+relacionados acá o que yo quiere que se relacionen
+
+274
+00:12:53.910 --> 00:12:54.990
+por la ubicación de balcón.
+
+275
+00:12:55.300 --> 00:12:59.240
+Solo le coloco aquí balcon y aplicar.
+
+276
+00:12:59.320 --> 00:13:01.800
+O sea, seleccione todos los muros al mismo tiempo para
+
+277
+00:13:01.800 --> 00:13:03.400
+seleccionar varios muros al mismo tiempo.
+
+278
+00:13:03.490 --> 00:13:07.640
+Dejan la tecla control pisada y selecciona no sencillo.
+
+279
+00:13:08.800 --> 00:13:11.760
+Y ahora quiero uno para el cuarto o para la terraza.
+
+280
+00:13:11.760 --> 00:13:13.880
+Vamos a hacer uno para terraza, no ese que está acá.
+
+281
+00:13:14.360 --> 00:13:17.520
+Entonces seleccionó este con la tecla contro.
+
+282
+00:13:17.520 --> 00:13:20.600
+Voy a seleccionar toda la terraza, okey?
+
+283
+00:13:21.480 --> 00:13:24.520
+Y acá donde dice ubicación, le voy a colocar
+
+284
+00:13:25.230 --> 00:13:27.080
+terraza, aplicar.
+
+285
+00:13:28.130 --> 00:13:29.450
+Entonces, para qué va a servir esto?
+
+286
+00:13:29.450 --> 00:13:32.690
+Esto nos va a servir más adelante cuando nosotros vayamos o
+
+287
+00:13:32.690 --> 00:13:35.370
+la o por qué utilizamos parámetros de proyecto
+
+288
+00:13:36.050 --> 00:13:38.450
+y darle información, darle identidad,
+
+289
+00:13:38.510 --> 00:13:41.370
+porque nosotros vamos a documentar cuando nosotros
+
+290
+00:13:41.570 --> 00:13:44.250
+documentamos en vista tabla de planificación,
+
+291
+00:13:45.310 --> 00:13:48.370
+si yo busco la categoría de muros igual esto lo
+
+292
+00:13:48.370 --> 00:13:49.410
+vamos a ver más adelante.
+
+293
+00:13:50.430 --> 00:13:51.890
+Yo, yo le voy a dar a aceptar.
+
+294
+00:13:52.610 --> 00:13:53.930
+Fíjense que va a salir
+
+295
+00:13:54.450 --> 00:13:58.650
+y un campo disponible que se va a llamar y ubicación
+
+296
+00:14:00.520 --> 00:14:03.200
+y yo luego lo voy a poder clasificar, por ejemplo,
+
+297
+00:14:03.500 --> 00:14:05.680
+no solo por ubicación, sino familia y tipo.
+
+298
+00:14:06.750 --> 00:14:09.160
+Esto es un mare voca. Esto lo van a ver más adelante.
+
+299
+00:14:09.720 --> 00:14:11.000
+Entonces yo le doy a aceptar.
+
+300
+00:14:11.240 --> 00:14:13.240
+Y cuando genere la tabla de cantidades,
+
+301
+00:14:13.620 --> 00:14:17.560
+me sale familia y tipo, y yo le puedo indicar, mira,
+
+302
+00:14:17.560 --> 00:14:20.730
+sólo muéstrame todo lo que sea
+
+303
+00:14:21.680 --> 00:14:23.090
+balcón y terraza.
+
+304
+00:14:23.290 --> 00:14:27.460
+Y yo a quien los filtros, yo le puedo decir
+
+305
+00:14:28.490 --> 00:14:31.880
+ubicación y contiene
+
+306
+00:14:33.100 --> 00:14:37.510
+y vamos a colocar acá o es igual a balcón
+
+307
+00:14:38.770 --> 00:14:43.610
+y ya no solo sea balcón, por ejemplo, y le doy a aceptar.
+
+308
+00:14:44.290 --> 00:14:46.650
+Entonces ahora me va a mostrar todos los muros de balcón.
+
+309
+00:14:46.650 --> 00:14:48.490
+Y ahí le puedo sacar las áreas cantidad y más.
+
+310
+00:14:48.880 --> 00:14:50.610
+Así se automatiza de manera rápida.
+
+311
+00:14:51.650 --> 00:14:56.150
+Primer punto, parámetros de proyecto con este ejemplo,
+
+312
+00:14:56.240 --> 00:14:58.710
+obviamente, cuando vayamos a la parte práctica
+
+313
+00:14:59.510 --> 00:15:01.130
+que son también en las clases en vivo,
+
+314
+00:15:02.170 --> 00:15:04.210
+y lo vamos a ver en la segunda parte de este video,
+
+315
+00:15:04.650 --> 00:15:06.210
+seguimos profundizando en esto,
+
+316
+00:15:06.210 --> 00:15:09.290
+pero estos parámetros de proyecto ya acaba de enseñar algo
+
+317
+00:15:09.290 --> 00:15:11.810
+que les va a solucionar la vida porque pueden crear
+
+318
+00:15:11.810 --> 00:15:13.170
+cualquier tipo de parámetro proyecto.
+
+319
+00:15:13.790 --> 00:15:16.770
+Nos vamos al siguiente y
+
+320
+00:15:17.390 --> 00:15:19.050
+la siguiente práctica que es filtros.
+
+321
+00:15:23.580 --> 00:15:24.770
+Ahora manejemos un poquito.
+
+322
+00:15:25.240 --> 00:15:26.890
+Déjeme que vuelva a parecer aquí mi cámara
+
+323
+00:15:27.410 --> 00:15:29.730
+y manejemos un poquito el concepto de los filtro.
+
+324
+00:15:29.730 --> 00:15:32.650
+Okey, ya sabemos para qué es los parámetros del proyecto.
+
+325
+00:15:33.270 --> 00:15:35.050
+Repito, los parámetros del proyecto,
+
+326
+00:15:35.110 --> 00:15:39.170
+los que nos permite como tal aquí lo podemos ver, es em,
+
+327
+00:15:40.630 --> 00:15:43.690
+la base de automatizar es darle información a nuestros
+
+328
+00:15:43.690 --> 00:15:45.650
+elementos, esos un parámetro de proyectos.
+
+329
+00:15:46.230 --> 00:15:47.410
+Yo me inventé ubicación,
+
+330
+00:15:47.410 --> 00:15:48.930
+pero podemos generar cualquier tipo de
+
+331
+00:15:48.930 --> 00:15:51.010
+parámetros y de proyecto.
+
+332
+00:15:51.790 --> 00:15:54.210
+Por lo general, casi todos los parámetros de proyectos los
+
+333
+00:15:54.210 --> 00:15:56.530
+agrupamos en datos de identidad.
+
+334
+00:15:56.800 --> 00:15:58.290
+Okey, eh?
+
+335
+00:15:59.010 --> 00:16:01.530
+Entonces vamos a lo siguiente,
+
+336
+00:16:02.020 --> 00:16:04.450
+vamos a hablar de lo que son los filtros en la segunda
+
+337
+00:16:04.860 --> 00:16:08.770
+etapa, los filtros es una regla visual automática que le
+
+338
+00:16:08.810 --> 00:16:10.610
+indica Revit como mostrar elementos.
+
+339
+00:16:10.610 --> 00:16:15.010
+Me permite, es como un filtro visual, okey, para
+
+340
+00:16:15.520 --> 00:16:19.370
+ocultar o mostrar elementos o ejemplificar por colores.
+
+341
+00:16:19.630 --> 00:16:21.130
+Eso es básicamente los filtros.
+
+342
+00:16:21.850 --> 00:16:24.650
+Tenemos filtros por reglas que se basa en parámetros
+
+343
+00:16:25.270 --> 00:16:27.650
+que reaccionan automáticamente cuando cambie un valor,
+
+344
+00:16:28.000 --> 00:16:31.130
+escalan a todo el modelo ideal para automatización vin.
+
+345
+00:16:31.390 --> 00:16:35.770
+Ok, filtro por regla es como muy en específico y filtro por
+
+346
+00:16:35.770 --> 00:16:37.130
+selección es más genérico.
+
+347
+00:16:37.130 --> 00:16:39.530
+Yo selecciono los elementos para ese filtro.
+
+348
+00:16:39.890 --> 00:16:42.530
+Entonces, filtro por regla está muy categorizado.
+
+349
+00:16:42.780 --> 00:16:46.210
+Puede ser tuberías, nada más puede ser, eh, muros,
+
+350
+00:16:46.730 --> 00:16:49.010
+aparatos eléctricos, aparatos sanitarios.
+
+351
+00:16:49.450 --> 00:16:52.810
+Mientras que los filtros por selección pueden ser varios
+
+352
+00:16:52.920 --> 00:16:54.890
+elementos de distintas categorías.
+
+353
+00:16:54.990 --> 00:16:56.530
+Esa es la diferencia principal.
+
+354
+00:16:57.020 --> 00:16:59.370
+Vamos a la práctica para que lo vean mucho mejor.
+
+355
+00:17:01.870 --> 00:17:03.390
+Entonces, vamos a hacer un filtro por selección.
+
+356
+00:17:03.390 --> 00:17:05.030
+Cómo funciona el filtro por selección?
+
+357
+00:17:05.030 --> 00:17:07.270
+Ustedes se van a ir a la parte de gestionar,
+
+358
+00:17:07.690 --> 00:17:09.630
+van a ir a la parte superior, eh?
+
+359
+00:17:09.630 --> 00:17:11.870
+Perdón acá donde dice selección, okey,
+
+360
+00:17:12.500 --> 00:17:15.550
+hice editar selección, digamos click.
+
+361
+00:17:16.590 --> 00:17:20.510
+Entonces, eh? Los archivos o la gran mayoría de archivos
+
+362
+00:17:20.510 --> 00:17:23.430
+deben trabajar o o seguramente tienen filtros por reglas
+
+363
+00:17:23.430 --> 00:17:25.990
+sobre todos los archivos de disciplinas.
+
+364
+00:17:25.990 --> 00:17:28.390
+Me, eh sanrio eléctricos mecánicos
+
+365
+00:17:29.090 --> 00:17:32.150
+porque se necesita trabajar con filtros turia,
+
+366
+00:17:32.150 --> 00:17:33.710
+agua fría turia, agua caliente,
+
+367
+00:17:34.070 --> 00:17:35.550
+interiores exteriores, etcétera.
+
+368
+00:17:36.000 --> 00:17:39.050
+Ahora yo voy a crear primero filtro de selección,
+
+369
+00:17:39.050 --> 00:17:40.970
+que es el genérico, ese filtro que yo
+
+370
+00:17:40.970 --> 00:17:42.130
+puedo meter lo que yo desea.
+
+371
+00:17:42.690 --> 00:17:44.810
+Entonces vamos a darle acá nuevo.
+
+372
+00:17:45.590 --> 00:17:47.490
+Le vamos a decir que es por selección.
+
+373
+00:17:48.090 --> 00:17:51.480
+Y le voy a colocar filtro personalizado
+
+374
+00:17:52.320 --> 00:17:53.600
+y le vamos a dar a aceptar.
+
+375
+00:17:54.680 --> 00:17:57.000
+Entonces yo le voy a decir que ese filtro personalizado
+
+376
+00:17:57.000 --> 00:17:59.320
+quiero que se vea y
+
+377
+00:18:00.510 --> 00:18:03.080
+toda la parte de la fachada.
+
+378
+00:18:03.500 --> 00:18:05.000
+Sí. Entonces, como yo,
+
+379
+00:18:05.000 --> 00:18:09.040
+solo quiero que se vea la parte de la entrada, sí, o sea,
+
+380
+00:18:09.180 --> 00:18:10.720
+yo quiero que se vea toda la parte
+
+381
+00:18:11.820 --> 00:18:13.480
+de la entrada esta puerta.
+
+382
+00:18:13.530 --> 00:18:15.360
+Vamos a irlo seleccionando, vea,
+
+383
+00:18:15.360 --> 00:18:18.920
+ustedes pueden ir seleccionando yo quiero que se vea esto
+
+384
+00:18:20.420 --> 00:18:24.310
+esto y vean cómo voy seleccionando estoy inventando, no,
+
+385
+00:18:24.970 --> 00:18:26.910
+yo quiero que solo se vea esta parte.
+
+386
+00:18:29.010 --> 00:18:30.470
+Voy a ser que me acá ahí.
+
+387
+00:18:31.000 --> 00:18:35.420
+Quiero que se vea toda la fachada con la puerta
+
+388
+00:18:36.470 --> 00:18:39.950
+aquí acá.
+
+389
+00:18:42.490 --> 00:18:47.370
+Y puede ser esto, okey? Y le damos finalizar selección ahí.
+
+390
+00:18:47.370 --> 00:18:49.410
+Yo tengo un filtro personalizado. Eso es todo.
+
+391
+00:18:49.470 --> 00:18:52.810
+Le vamos a aceptar. Y con el atajo bbe
+
+392
+00:18:53.480 --> 00:18:57.370
+colocar así bbe, teclean literalmente BV
+
+393
+00:18:58.850 --> 00:19:01.850
+y se van a la parte de filtros aquí en los filtros.
+
+394
+00:19:01.850 --> 00:19:05.670
+Le van a dar añadir al filtro personalizado.
+
+395
+00:19:06.130 --> 00:19:10.350
+Le van a aceptar. Y ese filtro personalizado acá,
+
+396
+00:19:10.370 --> 00:19:12.110
+por ejemplo, yo puedo modificar las
+
+397
+00:19:12.110 --> 00:19:13.230
+proyecciones de superficie.
+
+398
+00:19:13.810 --> 00:19:16.350
+Por ejemplo, voy a querer las líneas que se vean sólidas
+
+399
+00:19:16.890 --> 00:19:20.640
+con un color verde y un grosor.
+
+400
+00:19:20.670 --> 00:19:22.200
+Perdón, no le di el color, verdad?
+
+401
+00:19:22.200 --> 00:19:26.080
+Aquí un color verde en aceptar
+
+402
+00:19:26.640 --> 00:19:29.360
+y un grosor dos, okey.
+
+403
+00:19:30.240 --> 00:19:34.160
+Y en los pates, el patrón cuando se dice patrón
+
+404
+00:19:34.740 --> 00:19:36.920
+es el patrón del del elemento.
+
+405
+00:19:37.120 --> 00:19:38.960
+O sea, si yo tengo una par en una pared,
+
+406
+00:19:38.960 --> 00:19:42.840
+las líneas son los bordes y el patrón es la pared como tal.
+
+407
+00:19:43.200 --> 00:19:46.520
+Entonces acá vamos a colocar que sea relleno uniforme.
+
+408
+00:19:46.840 --> 00:19:51.010
+Y vamos a colocarnos este color. Vamos a ponerlo aquí.
+
+409
+00:19:51.280 --> 00:19:55.640
+Este que está aquí en aceptar relleno uniforme.
+
+410
+00:19:56.270 --> 00:19:58.840
+Este le vamos a aceptar aceptar.
+
+411
+00:19:59.480 --> 00:20:02.320
+Y vamos a darle una transparencia. Okey, eh?
+
+412
+00:20:02.320 --> 00:20:05.120
+La diferencia entre proyección y superficie es que esto se
+
+413
+00:20:05.120 --> 00:20:08.520
+ven en el d y el corte es cuando ustedes lo colocan en
+
+414
+00:20:08.520 --> 00:20:10.320
+planta y le hacen un corte, el elemento,
+
+415
+00:20:10.630 --> 00:20:12.440
+okey, una parte práctica.
+
+416
+00:20:12.440 --> 00:20:13.960
+Vamos a ver dicho ejemplo.
+
+417
+00:20:14.360 --> 00:20:16.920
+Entonces yo le voy a dar aplicar, aceptar. Okey?
+
+418
+00:20:17.960 --> 00:20:20.640
+Entonces, qué va a suceder cuando yo le de bebé?
+
+419
+00:20:20.930 --> 00:20:25.400
+Vamos a los filtros, okey, fíjense que yo puedo acá
+
+420
+00:20:26.180 --> 00:20:31.120
+sí, donde dice activar filtro, le quito la visibilidad
+
+421
+00:20:32.350 --> 00:20:33.350
+y le doy a aplicar.
+
+422
+00:20:34.330 --> 00:20:35.400
+Desaparece el filtro.
+
+423
+00:20:36.080 --> 00:20:37.960
+Entonces ahora yo puedo ver el interior
+
+424
+00:20:38.760 --> 00:20:39.920
+y puedo jugar con eso.
+
+425
+00:20:40.460 --> 00:20:44.520
+Yo le doy bebé, pero aquí bebé,
+
+426
+00:20:45.100 --> 00:20:48.990
+le doy filtro, le doy visibilidad,
+
+427
+00:20:49.130 --> 00:20:52.110
+le doy aplicar, le doy a aceptar y fíjense que ya el
+
+428
+00:20:52.110 --> 00:20:53.150
+filtro se visualiza.
+
+429
+00:20:54.740 --> 00:20:57.220
+Entonces, cuando yo selecciona este elemento, okey,
+
+430
+00:20:57.820 --> 00:21:01.100
+fíjense que, eh, este elemento como tal
+
+431
+00:21:02.620 --> 00:21:06.280
+no me permite filtrar acá valga de redundancia por datos
+
+432
+00:21:06.320 --> 00:21:07.360
+de identidad, no?
+
+433
+00:21:07.990 --> 00:21:12.480
+Pero en cambio, si yo le doy bebé filtros,
+
+434
+00:21:13.870 --> 00:21:15.100
+vamos a ocultarlo.
+
+435
+00:21:15.320 --> 00:21:17.420
+Les doy aplicar y aceptar.
+
+436
+00:21:17.420 --> 00:21:21.660
+Me permite manejarlo como un filtro por colores para
+
+437
+00:21:21.660 --> 00:21:25.020
+visualización o, eh, simplemente
+
+438
+00:21:25.640 --> 00:21:29.220
+le doy visibilidad y le doy aplicar y listo, okey?
+
+439
+00:21:30.100 --> 00:21:33.020
+Y así funcionan los pero esto no,
+
+440
+00:21:33.020 --> 00:21:34.420
+esto es categorías, importa.
+
+441
+00:21:34.490 --> 00:21:38.320
+Así funcionan los filtros, okey, es para visualización. Sí.
+
+442
+00:21:38.920 --> 00:21:43.680
+Entonces aquí estoy detallando cómo se visualiza el filtro?
+
+443
+00:21:43.680 --> 00:21:47.560
+No, ahora yo puedo trabajar con un filtro personalizado,
+
+444
+00:21:48.020 --> 00:21:49.240
+que es el siguiente filtro.
+
+445
+00:21:49.240 --> 00:21:52.960
+Por regla, atajo bebé, nos vamos a los filtros.
+
+446
+00:21:53.320 --> 00:21:55.080
+Y aquí donde dice editar nuevo,
+
+447
+00:21:55.080 --> 00:21:57.360
+vamos a ocultar esto para que no les moleste
+
+448
+00:21:57.360 --> 00:21:59.770
+mi mi imagen, no?
+
+449
+00:22:00.450 --> 00:22:03.350
+Y vamos a editar acá nuevo.
+
+450
+00:22:04.720 --> 00:22:08.880
+Y vamos a en esta parte,
+
+451
+00:22:10.440 --> 00:22:13.470
+vamos a crear un filtro basado en regla lemos acá
+
+452
+00:22:13.600 --> 00:22:15.750
+nuevo, definir regla.
+
+453
+00:22:15.870 --> 00:22:20.150
+Entonces voy a colocar y muros filtro de muros. Okey?
+
+454
+00:22:21.150 --> 00:22:24.270
+Entonces acá primero elijo de la categoría que yo
+
+455
+00:22:24.270 --> 00:22:25.550
+quiero que estén en ese filtro.
+
+456
+00:22:25.550 --> 00:22:28.300
+Yo quiero que sean todos los muros y yo quiero
+
+457
+00:22:28.320 --> 00:22:29.460
+que sea los muros.
+
+458
+00:22:29.540 --> 00:22:32.300
+Y le voy a dar una regla. Hay dos tipos de regla.
+
+459
+00:22:32.300 --> 00:22:34.900
+Está la regla que todas sean verdaderas o que
+
+460
+00:22:34.900 --> 00:22:35.980
+cualquiera se cumpla.
+
+461
+00:22:36.460 --> 00:22:41.070
+Pero un ejemplo, voy a colocar todos los muros que sean por
+
+462
+00:22:41.530 --> 00:22:43.310
+eh tipo que me da el nombre.
+
+463
+00:22:43.310 --> 00:22:47.310
+Vamos a buscar acá tipo tipo tipo tipo a ti de beber
+
+464
+00:22:48.090 --> 00:22:51.770
+uno que se llame por nombre.
+
+465
+00:22:51.860 --> 00:22:56.810
+Vamos a ver marca de tipo
+
+466
+00:23:00.900 --> 00:23:05.030
+funcion y tu nombre aquí, perdón, nombre de tipo este,
+
+467
+00:23:06.460 --> 00:23:09.000
+ok, este que dice nombre de tipo, se me fue acá.
+
+468
+00:23:09.000 --> 00:23:12.540
+Nombre de tipo, si, que sea igual.
+
+469
+00:23:13.240 --> 00:23:17.460
+Ah, entonces yo quiero que seleccione todos los que sean de
+
+470
+00:23:17.650 --> 00:23:21.070
+albañilería, pero yo también puedo hacer esto.
+
+471
+00:23:21.260 --> 00:23:25.590
+Añadí regla y que también trabaje con todos los muros
+
+472
+00:23:26.330 --> 00:23:29.110
+que y tengan el material
+
+473
+00:23:29.890 --> 00:23:31.350
+que sean igual a,
+
+474
+00:23:32.920 --> 00:23:37.520
+por ejemplo, ladrillo común.
+
+475
+00:23:39.290 --> 00:23:41.970
+Entonces se me va a resaltar todos los muros de albañilería,
+
+476
+00:23:41.970 --> 00:23:44.730
+pero también todos los muros que sean de ladrillo común con
+
+477
+00:23:44.730 --> 00:23:46.080
+un material de ladrillo común.
+
+478
+00:23:46.740 --> 00:23:48.560
+Les voy a aplicar aceptar.
+
+479
+00:23:49.300 --> 00:23:53.250
+Les damos añadir aquí y
+
+480
+00:23:54.390 --> 00:23:56.290
+filtro muros le d a aceptar.
+
+481
+00:23:56.660 --> 00:24:01.580
+Vamos a poner un patrón así. Solo rojo.
+
+482
+00:24:02.360 --> 00:24:06.200
+Les damos a aceptar rojo, perdón,
+
+483
+00:24:06.630 --> 00:24:08.080
+relleno uniforme rojo.
+
+484
+00:24:08.180 --> 00:24:09.240
+Le vamos a aceptar.
+
+485
+00:24:09.810 --> 00:24:12.080
+Vamos a colocarle un poquito de transparencia.
+
+486
+00:24:12.260 --> 00:24:16.100
+Un hay un die percent.
+
+487
+00:24:16.280 --> 00:24:18.380
+Le damos a aplicar aceptar.
+
+488
+00:24:19.230 --> 00:24:23.780
+Y ahora todos los muros, vamos a verla acá que est.
+
+489
+00:24:23.870 --> 00:24:26.930
+Vamos a aquí, bebé, filtros.
+
+490
+00:24:27.890 --> 00:24:31.330
+Y vamos a colocar vamos a quitar este y
+
+491
+00:24:31.330 --> 00:24:32.410
+solo vamos a ver esto.
+
+492
+00:24:33.320 --> 00:24:37.370
+Okey? Entonces esos muros que están ahí
+
+493
+00:24:37.990 --> 00:24:39.570
+se me van a resaltar.
+
+494
+00:24:39.580 --> 00:24:42.090
+Deben estar por acá, esto que están aquí.
+
+495
+00:24:43.190 --> 00:24:44.580
+Vamos a llamarlo.
+
+496
+00:24:45.880 --> 00:24:50.710
+Mira, estos no son de albañilería pur básico a bañera.
+
+497
+00:24:50.870 --> 00:24:52.870
+Entonces vamos bebé, vean lo que sucede.
+
+498
+00:24:53.090 --> 00:24:55.030
+No se me resalta el del albañilería.
+
+499
+00:24:55.250 --> 00:24:56.630
+Te voy a ir aquí a los filtros.
+
+500
+00:24:57.870 --> 00:25:00.860
+Vamos a seleccionar este editar.
+
+501
+00:25:01.580 --> 00:25:03.140
+Y qué pasa como toda las reglas,
+
+502
+00:25:03.140 --> 00:25:07.380
+debe ser verdaderas para que se resalte el muro como tal,
+
+503
+00:25:07.390 --> 00:25:09.500
+tiene que tener dos características.
+
+504
+00:25:10.160 --> 00:25:12.140
+Uno que sea el mañería y ladrillo común.
+
+505
+00:25:12.520 --> 00:25:15.850
+Yo le voy a decir no cualquiera que se cumpla,
+
+506
+00:25:15.850 --> 00:25:17.970
+que sea albañilería o ladrillo común.
+
+507
+00:25:18.290 --> 00:25:22.840
+Y le voy a dar, aplicar a aceptar y aceptar.
+
+508
+00:25:23.160 --> 00:25:24.200
+Y ahí está, ve.
+
+509
+00:25:24.640 --> 00:25:27.040
+Entonces, ahora sí se me resaltan los que sean de
+
+510
+00:25:27.040 --> 00:25:29.320
+albañilería y ladrillo es común.
+
+511
+00:25:30.730 --> 00:25:33.380
+Esos son los filtros para resaltar los elementos
+
+512
+00:25:33.400 --> 00:25:34.580
+son filtros visuales.
+
+513
+00:25:35.490 --> 00:25:37.060
+Qué vamos a hacer nosotros?
+
+514
+00:25:37.150 --> 00:25:39.020
+Vamos a trabajar de una manera que
+
+515
+00:25:39.990 --> 00:25:42.700
+estos filtros como tal me sirven para la
+
+516
+00:25:42.820 --> 00:25:44.180
+configuración de las plantillas.
+
+517
+00:25:44.760 --> 00:25:47.180
+Si las plantillas de proyecto que vamos a ver en la
+
+518
+00:25:47.260 --> 00:25:49.940
+siguiente elección, que todo esto va a venir configurado.
+
+519
+00:25:49.970 --> 00:25:52.860
+Esto sirve sobre todo para las disciplinas, eh,
+
+520
+00:25:53.480 --> 00:25:55.900
+de instalaciones y eh,
+
+521
+00:25:56.080 --> 00:25:58.140
+la disciplina de arquitectura en estructura.
+
+522
+00:25:58.280 --> 00:26:02.460
+No trabajamos tanto con filtros y ya para cerrar
+
+523
+00:26:03.120 --> 00:26:04.540
+vue a aparecer yo por acá.
+
+524
+00:26:05.180 --> 00:26:08.980
+Y vamos a cerrar con, bueno, aquí está la comparación,
+
+525
+00:26:09.200 --> 00:26:11.940
+filtro por regla, ver su selección, okey?
+
+526
+00:26:12.980 --> 00:26:15.420
+Y vamos a cerrar este video con las vistas
+
+527
+00:26:16.410 --> 00:26:19.660
+automatizadas control sin re retrajo.
+
+528
+00:26:20.220 --> 00:26:23.580
+Entonces, qué buscamos que en las vistas automatizadas,
+
+529
+00:26:23.740 --> 00:26:26.020
+nosotros vamos a tener distintas tipos de vistas vistas en
+
+530
+00:26:26.260 --> 00:26:28.580
+d, alzados, plantas, etc.
+
+531
+00:26:29.500 --> 00:26:33.980
+Entonces, la idea es que la vista recuerde las reglas,
+
+532
+00:26:34.210 --> 00:26:37.540
+filtros aplicados, colores, estilos vici por categoría,
+
+533
+00:26:37.980 --> 00:26:41.020
+o sea lo que venimos trabajando de los de los parametros de
+
+534
+00:26:41.180 --> 00:26:45.800
+proyecto y el filtro como tal, que es más que nada visual.
+
+535
+00:26:46.610 --> 00:26:49.160
+Ahora tenemos que organizarlo por
+
+536
+00:26:50.610 --> 00:26:52.010
+y por las vistas.
+
+537
+00:26:52.510 --> 00:26:54.450
+Ya lo hicimos por proyecto filtro.
+
+538
+00:26:54.450 --> 00:26:58.490
+Ahora lo hacemos por vista y que la vista me permite que el
+
+539
+00:26:58.490 --> 00:27:01.930
+modelo vaya cambiando la información se vaya recopilando en
+
+540
+00:27:02.130 --> 00:27:03.450
+distintas vistas, okey?
+
+541
+00:27:03.810 --> 00:27:05.890
+Y que la vista se mantenga coherente.
+
+542
+00:27:06.090 --> 00:27:08.930
+Entonces, una vista automatizada es una vista configurada
+
+543
+00:27:08.930 --> 00:27:10.730
+con reglas claras, filtros,
+
+544
+00:27:10.730 --> 00:27:13.890
+estilos y criterios que se comporta siempre igual sin
+
+545
+00:27:13.890 --> 00:27:15.930
+necesidad de ajustes manuales cada vez.
+
+546
+00:27:16.110 --> 00:27:18.570
+Una sólo una vista guardada es una herramienta de
+
+547
+00:27:18.570 --> 00:27:20.530
+control vin, okey?
+
+548
+00:27:21.700 --> 00:27:25.420
+Entonces, y cuál es la idea que una vista manual
+
+549
+00:27:26.210 --> 00:27:28.700
+depende de ajustes repetitivos?
+
+550
+00:27:28.840 --> 00:27:31.060
+Es propensa errores, depende del usuario,
+
+551
+00:27:31.120 --> 00:27:34.460
+no tiene escala mientras las vistas automatizadas son reglas
+
+552
+00:27:34.460 --> 00:27:37.220
+predefinidas consistente y confiable porque ya está
+
+553
+00:27:37.230 --> 00:27:40.460
+precargada, depende del modelo y se escala todo el proyecto.
+
+554
+00:27:40.760 --> 00:27:42.700
+Por lo tanto, una vista bien configurada es una
+
+555
+00:27:42.700 --> 00:27:44.620
+automatización silenciosa.
+
+556
+00:27:45.070 --> 00:27:46.500
+Vamos a la parte práctica.
+
+557
+00:27:49.540 --> 00:27:51.340
+Entonces, cómo se organizan las vistas?
+
+558
+00:27:51.400 --> 00:27:53.580
+Las vistas primero se organizan desde el la navegador de
+
+559
+00:27:53.780 --> 00:27:55.540
+proyectos de proyectos.
+
+560
+00:27:55.540 --> 00:27:56.500
+Ustedes lo pueden tener, la parte
+
+561
+00:27:56.500 --> 00:27:57.740
+izquierda derecha es igual.
+
+562
+00:27:58.320 --> 00:27:59.620
+Si ustedes se dan cuenta desde re,
+
+563
+00:28:00.740 --> 00:28:03.540
+nosotros podemos ver o visualizar que vistas ya están
+
+564
+00:28:03.540 --> 00:28:06.460
+aplicando planos, que son todas estas
+
+565
+00:28:07.040 --> 00:28:09.060
+las que están en azul y que vistas no.
+
+566
+00:28:09.620 --> 00:28:13.820
+Entonces yo ahorita voy a hacer una parte organizativa de
+
+567
+00:28:14.520 --> 00:28:17.340
+planos de presentación versus planos que no están en
+
+568
+00:28:17.340 --> 00:28:19.500
+presentación y que me organize si las vistas,
+
+569
+00:28:20.040 --> 00:28:22.620
+las vistas se pueden organizar principalmente si ustedes se
+
+570
+00:28:22.620 --> 00:28:25.860
+van a la parte superior botón secundario,
+
+571
+00:28:25.860 --> 00:28:29.420
+organización del navegador, se organizan por disciplina
+
+572
+00:28:29.980 --> 00:28:33.340
+o por fase, en qué cambia fases constructiva?
+
+573
+00:28:34.160 --> 00:28:36.900
+No en planos te muestra la que no están en planos,
+
+574
+00:28:37.770 --> 00:28:40.860
+tipo o disciplina y todo,
+
+575
+00:28:41.530 --> 00:28:44.020
+todo te muestra de manera un poquito desorganizada.
+
+576
+00:28:44.240 --> 00:28:46.980
+Por lo general, lo recomendarle es Arlo por disciplina,
+
+577
+00:28:47.450 --> 00:28:50.460
+pero nosotros podemos crear nuestras propias vistas.
+
+578
+00:28:51.780 --> 00:28:56.020
+Entonces, para eso, el primer paso como tal es en gestionar,
+
+579
+00:28:56.080 --> 00:28:58.420
+hay una opción que dice, eh, vamos acá
+
+580
+00:28:59.760 --> 00:29:01.360
+y crear un parámetro de proyecto,
+
+581
+00:29:01.380 --> 00:29:02.480
+lo que hemos hecho en este video.
+
+582
+00:29:03.360 --> 00:29:06.720
+Entonces vamos a crear un parámetro de proyecto nuevo
+
+583
+00:29:07.540 --> 00:29:10.480
+que se va a llamar grupo, perdón acá,
+
+584
+00:29:11.940 --> 00:29:13.050
+grupo de vista,
+
+585
+00:29:15.910 --> 00:29:19.450
+Tu tú pod de vista, va a ser un parámetro tipo texto.
+
+586
+00:29:20.570 --> 00:29:23.770
+Y vamos a editar la información del nuevo y le vamos a decir
+
+587
+00:29:24.160 --> 00:29:28.210
+este parámetro es par agrupar
+
+588
+00:29:28.750 --> 00:29:30.570
+vistas de planos de
+
+589
+00:29:30.680 --> 00:29:35.680
+presentación Presentación.
+
+590
+00:29:39.620 --> 00:29:41.480
+Entonces acá le vamos a colocar
+
+591
+00:29:42.360 --> 00:29:44.560
+y vamos a buscar la categoría vistas
+
+592
+00:29:46.520 --> 00:29:47.920
+y va a ser ejemplar.
+
+593
+00:29:48.010 --> 00:29:51.120
+Vamos a dejar si todo tal cual como está y vamos a dejar
+
+594
+00:29:51.190 --> 00:29:55.400
+aceptar vamos a dar a aceptar y a tenemos nuestro parámetro
+
+595
+00:29:56.140 --> 00:29:57.520
+con este parámetro.
+
+596
+00:29:57.850 --> 00:30:01.520
+Ahora vamos a ir aquí, organización del navegador,
+
+597
+00:30:02.350 --> 00:30:06.540
+vamos a crear un nuevo y que se va a llamar por ejemplo.
+
+598
+00:30:07.580 --> 00:30:12.430
+Y vamos a colocarle planos de presentación para saber
+
+599
+00:30:12.460 --> 00:30:13.870
+cuáles son de presentación.
+
+600
+00:30:14.800 --> 00:30:18.140
+Sí? Y vamos a agruparlo
+
+601
+00:30:19.030 --> 00:30:21.600
+primero por el grupo de vista,
+
+602
+00:30:21.620 --> 00:30:24.080
+lo que estoy creando y también por family y tipo
+
+603
+00:30:25.300 --> 00:30:29.000
+eso me va a organizar a partir del de la disciplina.
+
+604
+00:30:29.380 --> 00:30:31.880
+Se va a clasificar por nombre de vista ascendente.
+
+605
+00:30:31.910 --> 00:30:33.040
+Todo lo dejamos igual.
+
+606
+00:30:33.340 --> 00:30:36.840
+Le damos a aceptar, dejamos planos de presentación,
+
+607
+00:30:36.910 --> 00:30:37.960
+aplicar y aceptar.
+
+608
+00:30:38.760 --> 00:30:41.880
+Entonces va a salir acá en esta organización de carpeta
+
+609
+00:30:41.990 --> 00:30:45.380
+principal y sus sub adyacentes,
+
+610
+00:30:46.120 --> 00:30:49.260
+las disciplinas clasificadas, no planos estructurales, etc.
+
+611
+00:30:50.170 --> 00:30:53.260
+Pero ninguna fíjense que está con signos de interrogación
+
+612
+00:30:53.260 --> 00:30:54.420
+porque no lo ha calificado.
+
+613
+00:30:54.780 --> 00:30:57.460
+Entonces es que vamos a hacer me voy a los planos de planta.
+
+614
+00:30:57.500 --> 00:30:58.700
+Entonces, todo lo que estén azul,
+
+615
+00:30:58.800 --> 00:31:00.580
+yo sé que son los planos de presentación.
+
+616
+00:31:01.340 --> 00:31:02.960
+Sí, cómo yo lo sé.
+
+617
+00:31:03.060 --> 00:31:05.840
+Si ustedes se van acá a planos y le dan doble clic,
+
+618
+00:31:07.290 --> 00:31:09.570
+vean que quizás en los planos de presentación y cuáles son
+
+619
+00:31:09.570 --> 00:31:12.690
+las vistas, si ustedes le dan a una por ejemplo,
+
+620
+00:31:13.030 --> 00:31:16.250
+le damos doble click a la hacer uno se ve el plano de
+
+621
+00:31:16.250 --> 00:31:17.450
+presentación ya.
+
+622
+00:31:18.570 --> 00:31:21.410
+Entonces todos los que estén azul,
+
+623
+00:31:21.550 --> 00:31:23.770
+me encargo que se vaya plano de presentación.
+
+624
+00:31:24.190 --> 00:31:27.960
+Por ejemplo, yo con la tecla contre, puedo seleccionar
+
+625
+00:31:29.040 --> 00:31:32.990
+todas las que están en azul y acá donde diga
+
+626
+00:31:34.990 --> 00:31:38.710
+y ah, aquí en el parámetro,
+
+627
+00:31:38.710 --> 00:31:40.150
+vamos a corregirlo un memento.
+
+628
+00:31:41.200 --> 00:31:44.670
+Vamos a corregir aquí en gestionar grupo de vista,
+
+629
+00:31:45.280 --> 00:31:48.270
+vamos a editarlo aquí nos faltó que es datos
+
+630
+00:31:48.270 --> 00:31:49.310
+de identidad, sí?
+
+631
+00:31:49.420 --> 00:31:50.550
+Para que sea editable,
+
+632
+00:31:51.160 --> 00:31:54.790
+vamos a agrupar en datos de identidad aquí
+
+633
+00:31:55.420 --> 00:31:57.420
+y la vamos a aceptar, okey?
+
+634
+00:31:57.660 --> 00:31:59.300
+Y la vamos a aceptar. Listo.
+
+635
+00:31:59.500 --> 00:32:04.410
+Entonces aquí me va a salir la opción de eh,
+
+636
+00:32:04.760 --> 00:32:08.570
+esta es la escala gráfico, plantillas de vista.
+
+637
+00:32:09.060 --> 00:32:11.970
+Aquí está grupo de vista. Está en los datos de identidad.
+
+638
+00:32:12.060 --> 00:32:13.450
+Está clasificado en trato.
+
+639
+00:32:14.410 --> 00:32:17.330
+Entonces acá yo le voy a colocar planos
+
+640
+00:32:22.090 --> 00:32:26.870
+de, eh, planos de impresión.
+
+641
+00:32:26.870 --> 00:32:29.030
+Por ejemplo, no sé aquí, planos de impresión,
+
+642
+00:32:30.470 --> 00:32:31.550
+y le vamos a dar a aplicar.
+
+643
+00:32:32.590 --> 00:32:35.700
+Entonces ahora voy a tener una vista para
+
+644
+00:32:35.920 --> 00:32:37.100
+planos de presentación.
+
+645
+00:32:37.340 --> 00:32:40.000
+Entonces ya tengo una sub carpeta que es plano de impresión
+
+646
+00:32:40.920 --> 00:32:43.000
+y yo sé que todo lo demás que no esté aquí,
+
+647
+00:32:43.580 --> 00:32:47.920
+yo puedo agarrar esto inclusive puedo, no,
+
+648
+00:32:47.920 --> 00:32:50.400
+no lo puedo seleccionar todo tiene que seleccionarlo así.
+
+649
+00:32:51.260 --> 00:32:52.280
+Yo puedo hacer así.
+
+650
+00:32:55.730 --> 00:32:57.390
+Voy a agarrarlo todo lo que tenga aquí.
+
+651
+00:32:57.900 --> 00:33:01.980
+Así con la tecla control, seleccionó todo.
+
+652
+00:33:02.460 --> 00:33:03.500
+Y aquí le coloco
+
+653
+00:33:04.940 --> 00:33:07.600
+modelo y lo voy a aplicar.
+
+654
+00:33:08.610 --> 00:33:12.870
+Entonces ya lo tengo organizado en modelo y planos de
+
+655
+00:33:12.870 --> 00:33:15.470
+impresión y así sucesivamente.
+
+656
+00:33:15.530 --> 00:33:20.390
+Voy trabajando, okey. Entonces es mantener una organización.
+
+657
+00:33:20.750 --> 00:33:23.310
+Y esto se puede aplicar con todo, por ejemplo,
+
+658
+00:33:24.100 --> 00:33:26.270
+acá al principio, si yo ley,
+
+659
+00:33:26.270 --> 00:33:28.830
+organización del navegador y cambio, disciplina,
+
+660
+00:33:29.060 --> 00:33:30.670
+aplicar, aceptar.
+
+661
+00:33:32.190 --> 00:33:35.070
+Fíjense que tengo tres disciplinas, no,
+
+662
+00:33:35.890 --> 00:33:40.590
+yo pudiera acá cuando nosotros nos vamos aquí a un plano x.
+
+663
+00:33:40.780 --> 00:33:44.910
+Este que está aquí, ja, cocina, duplicar la vista,
+
+664
+00:33:45.310 --> 00:33:46.590
+duplicar con detalles.
+
+665
+00:33:47.250 --> 00:33:50.830
+Se va a duplicar acá y acá donde
+
+666
+00:33:51.510 --> 00:33:54.190
+nosotros vemos aquí sale el nombre de la vista,
+
+667
+00:33:55.080 --> 00:33:59.320
+grupo de vista disciplina
+
+668
+00:34:00.130 --> 00:34:01.280
+aquí en la disciplina.
+
+669
+00:34:02.160 --> 00:34:04.130
+Yo puedo, por ejemplo,
+
+670
+00:34:04.800 --> 00:34:07.590
+cambiar ese plano a otra disciplina.
+
+671
+00:34:08.380 --> 00:34:11.880
+Sí, cómo puedo también crear más disciplina?
+
+672
+00:34:11.880 --> 00:34:15.280
+Organización del navegador, cambiar nombres, perdón, editar
+
+673
+00:34:17.000 --> 00:34:18.530
+agrupación y clasificación.
+
+674
+00:34:18.730 --> 00:34:20.250
+Entonces cambiar la agrupación.
+
+675
+00:34:21.130 --> 00:34:25.120
+Okey, puedo cambiar la agrupación. Sí.
+
+676
+00:34:25.680 --> 00:34:30.170
+Entonces, y en vez que se agrupe por disciplina,
+
+677
+00:34:30.170 --> 00:34:33.650
+yo le puedo cambiar que se agrupe por por ti, por ejemplo.
+
+678
+00:34:34.530 --> 00:34:37.180
+Okey. Y esto es importante,
+
+679
+00:34:37.720 --> 00:34:42.100
+no porque nos va a ir ayuda entendiendo y como,
+
+680
+00:34:43.350 --> 00:34:47.020
+cómo podemos trabajar de la manera, eh, correcta?
+
+681
+00:34:47.160 --> 00:34:51.020
+Sí. Entonces, ya para cerrar y la idea,
+
+682
+00:34:51.600 --> 00:34:56.210
+vuelvo a parecer yo por acá es que ustedes,
+
+683
+00:34:56.710 --> 00:34:59.770
+al terminar esta primera parte de la lección,
+
+684
+00:34:59.770 --> 00:35:03.850
+y la segunda lección es entender que ella se en
+
+685
+00:35:04.880 --> 00:35:06.850
+aplicar reglas simples con impacto real,
+
+686
+00:35:07.310 --> 00:35:10.490
+ver resultados inmediatos, perder mi automatizar
+
+687
+00:35:11.250 --> 00:35:14.490
+y la idea de que estén listos para utilizar las at Instant
+
+688
+00:35:14.490 --> 00:35:19.010
+inteligencia artificial próximos pasos y
+
+689
+00:35:19.010 --> 00:35:22.130
+reflexión les de una sólo una reflexión
+
+690
+00:35:23.010 --> 00:35:26.090
+identifi una tarea repetitiva de tu trabajo diario y pi.
+
+691
+00:35:26.240 --> 00:35:28.930
+Esto se puede resolver con parámetros, filtros y vistas.
+
+692
+00:35:29.520 --> 00:35:33.210
+Piensen que yo he trabajado en Revit que yo me hubiese
+
+693
+00:35:33.210 --> 00:35:36.490
+ahorrado un montón con parámetros de proyectos, filtros,
+
+694
+00:35:37.140 --> 00:35:39.960
+ya sean los filtros de selección o los filtros de de regla
+
+695
+00:35:40.800 --> 00:35:43.040
+y la parte de la organización de las vistas,
+
+696
+00:35:43.040 --> 00:35:44.080
+qué pudiera hacer?
+
+697
+00:35:45.080 --> 00:35:47.800
+Entonces, les dejo para la segunda el lección de este video,
+
+698
+00:35:47.800 --> 00:35:49.080
+donde vamos a profundizar con los
+
+699
+00:35:49.120 --> 00:35:50.160
+distintos tipos de parámetros.
+
+700
+00:35:50.160 --> 00:35:52.040
+Vamos a ver la parte de configuración
+
+701
+00:35:52.040 --> 00:35:53.120
+de plantillas de proyectos.
+
+702
+00:35:53.120 --> 00:35:54.880
+Vamos a seguir trabajando con los filtros
+
+703
+00:35:55.600 --> 00:35:59.080
+y y la organización de las vistas
+
+704
+00:35:59.080 --> 00:36:00.120
+quien les habla el ingeniero.
+
+705
+00:36:00.220 --> 00:36:03.200
+Pon todas las pero en la segunda parte de esta lección.

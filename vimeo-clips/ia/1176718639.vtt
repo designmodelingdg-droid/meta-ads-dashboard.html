@@ -1,0 +1,465 @@
+WEBVTT
+
+1
+00:00:02.760 --> 00:00:05.800
+Bienvenidos a otra lección, lección 2A.
+
+2
+00:00:06.100 --> 00:00:09.240
+En esta ocasión vamos a estar hablando un poquito de los prompt de IA para BIM,
+
+3
+00:00:09.500 --> 00:00:13.360
+inteligencia artificial. Voy a empezar con algo básico, primero la
+
+4
+00:00:13.380 --> 00:00:15.200
+parte conceptual, luego la parte práctica.
+
+5
+00:00:16.300 --> 00:00:19.060
+Vamos a ir entendiendo esto un poco cada vez más.
+
+6
+00:00:19.100 --> 00:00:23.040
+El salto que estamos dando ahora es: antes ustedes ejecutaban tareas,
+
+7
+00:00:24.040 --> 00:00:25.020
+acciones manuales,
+
+8
+00:00:25.980 --> 00:00:29.840
+procesos repetitivos, automatizaciones básicas, y ahora
+
+9
+00:00:29.860 --> 00:00:31.460
+están tomando decisiones con IA.
+
+10
+00:00:32.360 --> 00:00:35.980
+Esa es la parte que van a desarrollar ahora, una inteligencia aplicada,
+
+11
+00:00:36.980 --> 00:00:39.600
+un criterio profesional, resultados
+
+12
+00:00:39.640 --> 00:00:43.260
+estratégicos. Ya vimos automatizaciones y add-ins,
+
+13
+00:00:43.500 --> 00:00:46.500
+ahora vamos a integrar inteligencia.
+
+14
+00:00:48.350 --> 00:00:51.140
+¿Qué es un prompt? Definición simple: un prompt es una estructura,
+
+15
+00:00:53.440 --> 00:00:57.000
+o mejor dicho, es una instrucción que le das a la IA para obtener un
+
+16
+00:00:57.060 --> 00:00:58.080
+resultado concreto.
+
+17
+00:00:59.260 --> 00:01:03.100
+A nivel profesional, es la forma en la que estructuras tu pensamiento para extraer
+
+18
+00:01:03.140 --> 00:01:06.160
+el máximo valor de la IA. Y de allí la importancia de por qué
+
+19
+00:01:07.460 --> 00:01:08.000
+yo,
+
+20
+00:01:09.980 --> 00:01:10.860
+básicamente,
+
+21
+00:01:14.220 --> 00:01:18.180
+todo lo que venimos desarrollando,
+
+22
+00:01:21.260 --> 00:01:25.000
+armé la parte de las herramientas nativas y los add-ins, por lo
+
+23
+00:01:25.080 --> 00:01:27.960
+menos con Dirots y PyRevit, para que ustedes entiendan el proceso.
+
+24
+00:01:29.540 --> 00:01:32.760
+Y al entender el proceso, ustedes pueden generar un mejor prompt, una mejor
+
+25
+00:01:32.800 --> 00:01:34.440
+instrucción que le vamos a dar a la IA
+
+26
+00:01:35.440 --> 00:01:37.880
+y podemos obtener un resultado concreto.
+
+27
+00:01:38.420 --> 00:01:41.860
+La calidad de la respuesta depende de la calidad de la pregunta, de la
+
+28
+00:01:41.880 --> 00:01:42.560
+instrucción.
+
+29
+00:01:44.880 --> 00:01:45.960
+El error más común:
+
+30
+00:01:47.280 --> 00:01:48.180
+hazme una plantilla en Revit.
+
+31
+00:01:49.900 --> 00:01:52.740
+Resultado genérico, poco útil, no aplicable al proyecto, no sirve.
+
+32
+00:01:55.960 --> 00:01:59.900
+El prompt profesional. El prompt estructurado actúa como BIM manager y
+
+33
+00:01:59.940 --> 00:02:03.620
+genera una estructura de plantilla en Revit para un proyecto
+
+34
+00:02:03.660 --> 00:02:04.320
+residencial,
+
+35
+00:02:05.860 --> 00:02:08.920
+incluyendo parámetros, filtros, vistas y organizaciones del navegador.
+
+36
+00:02:09.301 --> 00:02:10.361
+Incluso a este le falta aún más.
+
+37
+00:02:11.260 --> 00:02:15.080
+Pero repito, un prompt estructurado bien ejecutado indica
+
+38
+00:02:15.220 --> 00:02:18.700
+cómo va a actuar la IA, qué va a generar, en este caso una
+
+39
+00:02:18.720 --> 00:02:22.460
+estructura, y esa estructura de plantilla, qué
+
+40
+00:02:22.520 --> 00:02:23.300
+debe contener,
+
+41
+00:02:24.580 --> 00:02:27.800
+cómo debe actuar, qué debe generar y qué debe
+
+42
+00:02:27.900 --> 00:02:29.980
+contener para el resultado final.
+
+43
+00:02:30.980 --> 00:02:34.520
+Aplicable: es directamente usable en el proyecto, es
+
+44
+00:02:34.560 --> 00:02:38.480
+estructurado con orden lógico y profesional y es útil, nos
+
+45
+00:02:38.500 --> 00:02:41.600
+da resultados concretos y accionables.
+
+46
+00:02:43.680 --> 00:02:45.180
+En la estructura de un prompt pro
+
+47
+00:02:46.460 --> 00:02:50.340
+tenemos cuatro puntos principales de
+
+48
+00:02:50.480 --> 00:02:54.440
+lo que acabamos de ver. El rol, que es generar BIM manager, el contexto, por
+
+49
+00:02:54.480 --> 00:02:58.240
+ejemplo, un proyecto residencial, la tarea, que es la estructura de
+
+50
+00:02:58.300 --> 00:03:01.440
+plantilla y el resultado, organización, parámetros y
+
+51
+00:03:01.700 --> 00:03:02.420
+vistas.
+
+52
+00:03:03.980 --> 00:03:06.320
+Tipos de prompt en BIM. Está el de diseño,
+
+53
+00:03:07.540 --> 00:03:11.100
+que crea las plantillas, estructuras y workflows
+
+54
+00:03:11.200 --> 00:03:12.380
+adaptados al proyecto.
+
+55
+00:03:13.700 --> 00:03:17.560
+Está la optimización, que mejora procesos, reducir tiempos y
+
+56
+00:03:17.620 --> 00:03:19.180
+perfeccionar la organización.
+
+57
+00:03:20.329 --> 00:03:23.460
+El análisis, que permite revisar errores, detectar
+
+58
+00:03:23.620 --> 00:03:25.459
+inconsistencias y auditar modelos.
+
+59
+00:03:26.280 --> 00:03:30.260
+Está la parte de la documentación, que genera memorias, reportes y
+
+60
+00:03:30.280 --> 00:03:32.580
+descripciones técnicas automáticamente.
+
+61
+00:03:35.500 --> 00:03:39.300
+Y está la IA como copiloto BIM. Te guía,
+
+62
+00:03:39.580 --> 00:03:42.220
+te sugiere, te corrige, te acelera.
+
+63
+00:03:42.660 --> 00:03:46.260
+La IA no reemplaza al profesional, lo potencia.
+
+64
+00:03:49.700 --> 00:03:53.500
+Las conexiones que hemos visto con los add-ins, por ejemplo, Dirots y
+
+65
+00:03:53.880 --> 00:03:57.460
+PyRevit. En ejecución, los add-ins
+
+66
+00:03:58.140 --> 00:04:01.600
+ejecutan las acciones dentro de Revit de forma automatizada.
+
+67
+00:04:02.520 --> 00:04:06.320
+En la parte de inteligencia artificial, tenemos una decisión donde la IA optimiza
+
+68
+00:04:06.340 --> 00:04:08.720
+el criterio, la estrategia y la calidad del resultado.
+
+69
+00:04:09.620 --> 00:04:12.560
+Optimización IA, decisiones y estrategias mejoradas.
+
+70
+00:04:12.960 --> 00:04:15.020
+Dirots automatiza las tareas en Revit.
+
+71
+00:04:15.820 --> 00:04:19.560
+PyRevit extiende y ejecuta script, ejecución de
+
+72
+00:04:19.601 --> 00:04:22.041
+tareas con acciones automatizadas dentro de Revit.
+
+73
+00:04:22.089 --> 00:04:24.780
+Entonces, en lo que nos vamos a enfocar es en estas dos.
+
+74
+00:04:25.200 --> 00:04:27.120
+Estas ya tienen un conocimiento al respecto,
+
+75
+00:04:28.020 --> 00:04:30.260
+tienen un video anterior que le precede a este,
+
+76
+00:04:32.740 --> 00:04:32.880
+de
+
+77
+00:04:33.980 --> 00:04:37.700
+70 minutos, donde se ven todos los beneficios tanto de Dirots como
+
+78
+00:04:38.500 --> 00:04:41.680
+de PyRevit. Yo los vengo preparando para este momento.
+
+79
+00:04:43.160 --> 00:04:46.460
+Ejemplos reales de prompts. Plantilla BIM: optimiza una plantilla BIM para
+
+80
+00:04:46.480 --> 00:04:49.980
+documentación en Revit. Filtros de instalaciones: ¿qué filtro debería usar
+
+81
+00:04:49.990 --> 00:04:52.040
+para controlar instalaciones sanitarias?
+
+82
+00:04:52.520 --> 00:04:56.400
+Navegador de proyecto: ¿cómo organizar un navegador de proyecto
+
+83
+00:04:56.420 --> 00:04:57.620
+BIM eficiente?
+
+84
+00:04:58.740 --> 00:05:00.240
+Ejemplos reales de prompt en BIM.
+
+85
+00:05:02.340 --> 00:05:05.820
+Básico versus profesional. Un prompt básico es una pregunta
+
+86
+00:05:05.840 --> 00:05:09.720
+generalizada, un resultado genérico, no aplicable al proyecto y
+
+87
+00:05:10.020 --> 00:05:13.680
+sin rol ni contexto. Mientras que en la parte profesional se
+
+88
+00:05:13.720 --> 00:05:16.980
+genera una pregunta estructurada con un resultado útil y concreto,
+
+89
+00:05:17.480 --> 00:05:21.400
+directamente aplicable y un rol más contexto, más tarea,
+
+90
+00:05:21.540 --> 00:05:22.560
+más resultado.
+
+91
+00:05:26.740 --> 00:05:29.720
+Ahora, lo que vamos a hacer en la lección 2B, como yo les dije, las primeras partes
+
+92
+00:05:29.740 --> 00:05:32.080
+van a ser conceptuales o introductorias.
+
+93
+00:05:32.880 --> 00:05:36.480
+Vamos a ver un prompt, que vamos a construir y probar prompts en tiempo real.
+
+94
+00:05:37.160 --> 00:05:41.140
+Vamos a optimizar, aplicar mejoras concretas sobre casos BIM reales y
+
+95
+00:05:41.180 --> 00:05:44.900
+lo vamos a conectar con Revit, integrarás los prompt directamente en tu flujo de
+
+96
+00:05:44.980 --> 00:05:48.620
+trabajo en Revit. Hoy aprenderás a pensar, en la siguiente clase
+
+97
+00:05:48.660 --> 00:05:51.260
+vas a ejecutar.
+
+98
+00:05:52.840 --> 00:05:55.040
+Resultados de esta lección. Van a entender qué es un
+
+99
+00:05:55.080 --> 00:05:58.860
+prompt. Definición clara
+
+100
+00:05:58.880 --> 00:06:00.620
+aplicada en el entorno BIM profesional.
+
+101
+00:06:03.960 --> 00:06:05.040
+Vamos a ponerle aquí, check.
+
+102
+00:06:06.040 --> 00:06:09.620
+Sabes estructurarlo, rol más contexto, más tarea, más resultado esperado.
+
+103
+00:06:10.680 --> 00:06:13.910
+Conoces los tipos de prompt, están los de diseño, optimización, análisis y
+
+104
+00:06:13.940 --> 00:06:14.680
+documentación.
+
+105
+00:06:15.960 --> 00:06:16.660
+Ves cómo
+
+106
+00:06:17.560 --> 00:06:21.180
+aplicar IA en BIM, como copiloto que guía,
+
+107
+00:06:21.300 --> 00:06:23.080
+sugiere, corrige y acelera tu trabajo.
+
+108
+00:06:23.900 --> 00:06:27.719
+Ya estás listo para la práctica 2, prompts e IAs
+
+109
+00:06:28.100 --> 00:06:31.440
+en Revit. Igual, en la sesión de refuerzo número uno,
+
+110
+00:06:32.880 --> 00:06:36.460
+ya sea que estuviste en la clase en vivo o que lo vas a visualizar de manera
+
+111
+00:06:36.470 --> 00:06:40.120
+asincrónica, vamos a hacer un repaso de estas tres primeras lecciones y
+
+112
+00:06:40.160 --> 00:06:43.240
+focalizando mucho en la parte de los add-ins en esta parte.
+
+113
+00:06:45.640 --> 00:06:47.620
+Como siempre les dejo un mensaje:
+
+114
+00:06:49.080 --> 00:06:53.000
+la IA no es poderosa por sí sola, es poderosa cuando sabes
+
+115
+00:06:53.060 --> 00:06:55.400
+usarla. Los espero en la lección
+
+116
+00:06:55.820 --> 00:06:57.260
+2B.

@@ -1,0 +1,1885 @@
+WEBVTT
+
+1
+00:00:03.770 --> 00:00:08.180
+Saludos, colegas, muy buenas noches o buenas tardes,
+
+2
+00:00:08.180 --> 00:00:09.580
+dependiendo de donde se encuentren.
+
+3
+00:00:10.380 --> 00:00:13.180
+Y déjeme ir aceptando acá a los participantes
+
+4
+00:00:14.260 --> 00:00:16.820
+y quien les hable y quien les saluda el ingeniero Gabriel
+
+5
+00:00:17.050 --> 00:00:21.980
+pantoja, damos la bienvenida y el comienzo a los
+
+6
+00:00:22.130 --> 00:00:25.540
+12 cursos que vamos a tener de inteligencia artificial
+
+7
+00:00:25.970 --> 00:00:27.540
+más Revit.
+
+8
+00:00:28.180 --> 00:00:30.380
+Y yo sería el coordinador de estos 12 cursos.
+
+9
+00:00:31.040 --> 00:00:34.020
+Yo básicamente llevaré a cabo estos 12 cursos.
+
+10
+00:00:34.020 --> 00:00:35.580
+Yo soy especialista bien para los
+
+11
+00:00:36.340 --> 00:00:38.980
+participantes que no me conocen de igual forma,
+
+12
+00:00:38.990 --> 00:00:40.660
+vamos a estar platicando y
+
+13
+00:00:42.220 --> 00:00:44.940
+y nos vamos a estar conociendo durante todo este año.
+
+14
+00:00:46.490 --> 00:00:49.500
+Así que arrancamos con una nueva ruta de aprendizaje,
+
+15
+00:00:49.600 --> 00:00:53.900
+una ruta que que considero que van a aprender
+
+16
+00:00:54.460 --> 00:00:56.020
+y la van a aprovechar al máximo.
+
+17
+00:00:56.780 --> 00:00:58.660
+Y esa es la idea, esa es la idea, sí.
+
+18
+00:00:58.770 --> 00:01:00.060
+Así que en la sala,
+
+19
+00:01:01.320 --> 00:01:05.220
+les doy la bienvenida álvaro Ana gustavo Fernando matilde
+
+20
+00:01:05.220 --> 00:01:08.020
+también a todos los participantes que están en el grupo de
+
+21
+00:01:08.020 --> 00:01:12.180
+whatsapp inscritos y que están viendo este video bueno que
+
+22
+00:01:12.280 --> 00:01:15.220
+se está conectando, que están viendo este video de manera
+
+23
+00:01:15.560 --> 00:01:17.020
+pre grabada.
+
+24
+00:01:17.090 --> 00:01:20.540
+Okey, entonces, bueno, el primer curso que nosotros,
+
+25
+00:01:20.610 --> 00:01:23.060
+esto es una pequeña sesión introductoria que va a dar
+
+26
+00:01:23.100 --> 00:01:27.500
+arranque a cuatro sesiones en vivo, okey, de este curso,
+
+27
+00:01:28.400 --> 00:01:33.210
+eh, seis horas de
+
+28
+00:01:34.800 --> 00:01:39.020
+de lecciones entre conceptuales y prácticas pre grabadas
+
+29
+00:01:39.620 --> 00:01:42.260
+y cinco horas de desarrollo del proyecto que tienen
+
+30
+00:01:42.360 --> 00:01:43.860
+que que entregar.
+
+31
+00:01:44.170 --> 00:01:46.180
+Okey, ya les voy a explicar si.
+
+32
+00:01:46.980 --> 00:01:50.620
+Y entonces esta sesión introductoria es cortita de 30
+
+33
+00:01:50.690 --> 00:01:54.820
+minutos a partir de acá y comenzamos es con el c,
+
+34
+00:01:54.820 --> 00:01:56.540
+cronograma de las lecciones pre grabadas.
+
+35
+00:01:57.020 --> 00:01:59.180
+Y a partir de acá también nos vamos a ver
+
+36
+00:02:00.340 --> 00:02:03.280
+en vivo durante las próximas cuatro semanas una vez por
+
+37
+00:02:03.280 --> 00:02:04.600
+semana, una hora.
+
+38
+00:02:04.820 --> 00:02:07.680
+Ok, cuál es el objetivo de este primer módulo?
+
+39
+00:02:07.740 --> 00:02:10.440
+Es trabajar automatizaciones en Revit con inteligencia
+
+40
+00:02:10.440 --> 00:02:15.080
+artificial para los participantes que sé que es la la
+
+41
+00:02:15.080 --> 00:02:16.200
+primera duda que tienen,
+
+42
+00:02:16.260 --> 00:02:19.560
+si es necesario o es indispensable y el manejo de red en
+
+43
+00:02:19.560 --> 00:02:24.520
+este caso, no, porque la idea es darles a conocer
+
+44
+00:02:24.620 --> 00:02:28.360
+ya casos que se van generando en rev y como generar
+
+45
+00:02:28.580 --> 00:02:31.600
+automatizaciones, ese es el objetivo.
+
+46
+00:02:31.870 --> 00:02:35.520
+Okey, entonces aquí necesitan dos componentes,
+
+47
+00:02:36.150 --> 00:02:40.160
+necesitan el componente de Revit y necesitan además tener
+
+48
+00:02:40.180 --> 00:02:44.000
+acceso a nuestra plataforma para eso el día de mañana,
+
+49
+00:02:44.000 --> 00:02:45.320
+el ingeniero Kevin Solís,
+
+50
+00:02:45.320 --> 00:02:48.560
+que es mi soporte técnico en academia en los máster
+
+51
+00:02:48.720 --> 00:02:51.560
+especializaciones diplomados en todo los participantes que
+
+52
+00:02:51.560 --> 00:02:53.680
+están en el máster, lo sabrán, eh?
+
+53
+00:02:54.580 --> 00:02:56.640
+Les va a enviar por el grupo de whatsapp.
+
+54
+00:02:56.700 --> 00:02:58.560
+El grupo de whatsapp es este que está acá.
+
+55
+00:02:58.900 --> 00:03:02.320
+Si es este que que está acá donde ustedes están.
+
+56
+00:03:02.660 --> 00:03:06.080
+Si en este grupo de whatsapp se va a enviar el día de mañana
+
+57
+00:03:06.100 --> 00:03:10.720
+un formulario, si no tienen REIT, okey, y un formulario
+
+58
+00:03:11.880 --> 00:03:16.520
+y de de lo que es el acceso a la
+
+59
+00:03:16.520 --> 00:03:19.520
+plataforma, si todavía no tienen acceso a la plataforma,
+
+60
+00:03:19.590 --> 00:03:23.640
+okey, eh, la plataforma que nosotros vamos a utilizar
+
+61
+00:03:24.200 --> 00:03:27.000
+y que vamos a a manejar
+
+62
+00:03:27.540 --> 00:03:30.360
+es nuestra plataforma donde ustedes acceden acá en nuestra
+
+63
+00:03:30.360 --> 00:03:35.240
+página web el día de mañana que se encargará de de darle los
+
+64
+00:03:35.350 --> 00:03:36.880
+accesos respectivos.
+
+65
+00:03:36.910 --> 00:03:40.960
+Okey? Porque con eso vamos a empezar sobre la
+
+66
+00:03:40.960 --> 00:03:42.200
+versión de Revit álvaro.
+
+67
+00:03:42.200 --> 00:03:44.840
+Podemos usar desde la 24 hasta la 26,
+
+68
+00:03:44.980 --> 00:03:47.080
+las últimas tres versiones, okey,
+
+69
+00:03:47.230 --> 00:03:49.200
+podemos utilizar las últimas tres versiones.
+
+70
+00:03:49.200 --> 00:03:51.120
+No hay ningún tipo de problema ya.
+
+71
+00:03:52.000 --> 00:03:55.160
+Y si ya poseen Revit, no es necesario que
+
+72
+00:03:55.900 --> 00:03:57.440
+tengan que volver a instalarse.
+
+73
+00:03:57.940 --> 00:04:00.520
+No hay problema, es en caso de que no tengan la licencia.
+
+74
+00:04:00.620 --> 00:04:04.920
+Si. Entonces acá ustedes van a tener acceso a nuestra
+
+75
+00:04:05.010 --> 00:04:08.560
+plataforma, el curso no se ha creado el curso.
+
+76
+00:04:08.560 --> 00:04:10.760
+Yo todavía no le he creado, lo voy a crear,
+
+77
+00:04:10.760 --> 00:04:12.200
+es a partir del cronograma.
+
+78
+00:04:12.200 --> 00:04:14.320
+Así que no se preocupen, pero bueno,
+
+79
+00:04:14.320 --> 00:04:19.240
+básicamente cuando ustedes entren a la a la plataforma,
+
+80
+00:04:19.660 --> 00:04:21.720
+sí, la idea es que
+
+81
+00:04:22.780 --> 00:04:27.430
+ustedes puedan acceder de la mejor manera posible.
+
+82
+00:04:28.240 --> 00:04:30.270
+Estoy dando un ejemplo de cómo,
+
+83
+00:04:30.640 --> 00:04:32.310
+cómo lo van a visualizar aquí.
+
+84
+00:04:32.350 --> 00:04:35.830
+Van a estar todos va es por mes, o sea,
+
+85
+00:04:35.980 --> 00:04:38.710
+primero vamos a arrancar con el curso de
+
+86
+00:04:38.770 --> 00:04:40.030
+automatizaciones en red.
+
+87
+00:04:40.260 --> 00:04:42.950
+Solo se van a enfocar en automatizaciones en red. Sí.
+
+88
+00:04:43.070 --> 00:04:45.030
+Entonces ustedes van a tener acceso a la plataforma
+
+89
+00:04:45.670 --> 00:04:47.070
+a partir del día de mañana
+
+90
+00:04:48.230 --> 00:04:51.270
+y en la plataforma va a estar esta sesión en vivo y van a
+
+91
+00:04:51.270 --> 00:04:53.070
+estar todas las sesiones en vivo que
+
+92
+00:04:53.070 --> 00:04:54.310
+vamos a tener por semana.
+
+93
+00:04:54.970 --> 00:04:57.790
+Ok, entonces el primer requisito mañana,
+
+94
+00:04:57.790 --> 00:04:59.830
+el ingeniero Kevin les va a enviar un formulario.
+
+95
+00:04:59.890 --> 00:05:02.630
+Si tienen el programa de revenue donde necesitan ayuda en
+
+96
+00:05:02.630 --> 00:05:04.590
+caso de necesitar ayuda a Kevin se encarga.
+
+97
+00:05:04.950 --> 00:05:07.510
+Y el segundo requisito es que se les envío un formulario.
+
+98
+00:05:07.550 --> 00:05:11.230
+Y en ese formulario, si no tienen el acceso a la plataforma,
+
+99
+00:05:11.230 --> 00:05:13.510
+todavía se les provee que una vez,
+
+100
+00:05:13.980 --> 00:05:18.240
+okey, eso es lo primero.
+
+101
+00:05:19.100 --> 00:05:23.320
+Eso es lo primero dudas hasta acá con estos dos, eh,
+
+102
+00:05:23.320 --> 00:05:27.520
+directrices de formulario y de acceso a la plataforma que se
+
+103
+00:05:27.520 --> 00:05:29.040
+les da atrás del grupo de whatsapp.
+
+104
+00:05:29.040 --> 00:05:33.220
+Hasta ahí vamos. Bien, estamos claros ahí.
+
+105
+00:05:33.220 --> 00:05:37.180
+Me van comentando, okey? Y puede responder por el chat.
+
+106
+00:05:37.580 --> 00:05:40.180
+Y la idea es que las clases en vivo van a ser interactivas.
+
+107
+00:05:40.180 --> 00:05:42.420
+Sí, a mi gusta que sean interactiva para que no sean
+
+108
+00:05:42.420 --> 00:05:44.380
+tan tan tediosas.
+
+109
+00:05:44.800 --> 00:05:49.340
+Ya. Claro. Perfecto, Fernando y todo claro.
+
+110
+00:05:49.450 --> 00:05:53.570
+Okey, acá fíjense de qué va el curso.
+
+111
+00:05:54.240 --> 00:05:56.530
+Este curso está diseñado para profesionales desde desde la
+
+112
+00:05:56.530 --> 00:05:58.360
+arquitectura, ingeniería de construcción que busquen
+
+113
+00:05:58.360 --> 00:06:00.960
+resultados inmediatos en proyectos reales en el enfoque.
+
+114
+00:06:00.960 --> 00:06:03.080
+Es completamente práctico con flujo de trabajo
+
+115
+00:06:04.280 --> 00:06:05.760
+y aplicar desde el primer día,
+
+116
+00:06:05.760 --> 00:06:08.200
+aprenderás a utilizar herramientas nativas de Revit
+
+117
+00:06:08.740 --> 00:06:10.360
+in inteligentes y el apoyo,
+
+118
+00:06:10.360 --> 00:06:12.400
+la inteligencia artificial para transformar tu manera.
+
+119
+00:06:12.900 --> 00:06:13.960
+Un entorno bien ose.
+
+120
+00:06:13.960 --> 00:06:16.960
+Básicamente vamos a utilizar las propias herramientas que
+
+121
+00:06:16.960 --> 00:06:18.880
+están dentro de Revit y vamos a conectar
+
+122
+00:06:19.430 --> 00:06:22.880
+ciertos plugins o ciertos at in que les va a permitir
+
+123
+00:06:23.640 --> 00:06:28.080
+ejecutar ciertas tareas de una manera mucho más rápida de lo
+
+124
+00:06:28.080 --> 00:06:29.800
+que se puede hacer con Revit.
+
+125
+00:06:29.960 --> 00:06:32.280
+O sea solo con la interfaz de REIT.
+
+126
+00:06:32.520 --> 00:06:34.840
+Entonces vamos a potenciar esa interfaz de Revit.
+
+127
+00:06:35.060 --> 00:06:36.720
+Ese es el objetivo de este primer curso.
+
+128
+00:06:36.810 --> 00:06:40.080
+Cómo potenciar la interfaz de Revit a través de
+
+129
+00:06:40.080 --> 00:06:41.400
+herramientas de automatización.
+
+130
+00:06:41.790 --> 00:06:44.960
+Okey, eh, cuál es la estructura del curso?
+
+131
+00:06:45.120 --> 00:06:48.400
+Fíjense el curso, son 15 horas. Los cursos son cortos.
+
+132
+00:06:48.770 --> 00:06:51.200
+Estos 12 cursos son de 15 a 20 horas.
+
+133
+00:06:51.460 --> 00:06:54.480
+Eso va a ir variando, pero son cortos.
+
+134
+00:06:55.540 --> 00:06:58.920
+No significa que que no tengan contenido.
+
+135
+00:06:59.100 --> 00:07:02.360
+No son cortos en el sentido de que son prácticos y
+
+136
+00:07:02.360 --> 00:07:03.400
+directos al grano.
+
+137
+00:07:03.870 --> 00:07:08.680
+Cada curso les va a ir llevando un llamemos c,
+
+138
+00:07:09.500 --> 00:07:12.960
+una habilidad de, en un sentido
+
+139
+00:07:13.660 --> 00:07:14.960
+que ya lo pueden aplicar.
+
+140
+00:07:15.190 --> 00:07:17.160
+Okey, eh? Sí, Fernando,
+
+141
+00:07:19.690 --> 00:07:21.700
+Hola, Gabriel, cómo estás? Si se me escucha?
+
+142
+00:07:21.960 --> 00:07:23.780
+Sí, si te escucho, Fernando, cómo vas
+
+143
+00:07:24.550 --> 00:07:25.550
+Todavía? Muy bien, sólo
+
+144
+00:07:25.550 --> 00:07:26.430
+una consulta.
+
+145
+00:07:26.430 --> 00:07:29.990
+Tal vez en este en este curso vamos a usar algo de dinamo.
+
+146
+00:07:30.260 --> 00:07:31.310
+Algo ley de macros.
+
+147
+00:07:31.970 --> 00:07:33.910
+Sí, sí, sí, eh,
+
+148
+00:07:34.010 --> 00:07:37.910
+en este vamos a usar un cachito y en los otros que porque
+
+149
+00:07:38.010 --> 00:07:39.270
+va son varios módulos.
+
+150
+00:07:39.610 --> 00:07:43.070
+Hay uno nada más de DNA muy pay que ese es el que los va a
+
+151
+00:07:43.070 --> 00:07:44.230
+graduar en DNA muy pay.
+
+152
+00:07:44.610 --> 00:07:48.630
+Si este es dar el arranca de como hacer automatizaciones,
+
+153
+00:07:48.890 --> 00:07:51.350
+porque a mí me importa que primero sepan hacer
+
+154
+00:07:51.350 --> 00:07:55.270
+automatizaciones antes de usar dina muy pyon porque si no
+
+155
+00:07:55.270 --> 00:07:57.990
+saben hacer automatizaciones cuando entren con dina muy
+
+156
+00:07:58.050 --> 00:08:01.110
+python, van a sentir que estamos hablando un lenguaje
+
+157
+00:08:02.450 --> 00:08:03.910
+de la NASA cuando no es así.
+
+158
+00:08:04.180 --> 00:08:05.180
+Okey,
+
+159
+00:08:06.320 --> 00:08:07.110
+Listo. Gracias.
+
+160
+00:08:07.480 --> 00:08:09.430
+Listo, listo, Fernando, muy buena pregunta.
+
+161
+00:08:10.030 --> 00:08:11.830
+Entonces, cómo se dividen las 15 horas?
+
+162
+00:08:11.970 --> 00:08:13.190
+Cuatro horas son en vivo.
+
+163
+00:08:13.770 --> 00:08:15.910
+Ya les indico que que días nos vamos a ver.
+
+164
+00:08:15.940 --> 00:08:18.870
+Creo que por ahí Kevin les pasó al grupo
+
+165
+00:08:19.820 --> 00:08:23.150
+seis horas son lecciones grabadas y de elecciones grabadas.
+
+166
+00:08:23.150 --> 00:08:24.190
+Son 12 en total.
+
+167
+00:08:24.790 --> 00:08:27.390
+Entonces son dos elecciones de seis horas, muy prácticas.
+
+168
+00:08:27.680 --> 00:08:30.310
+Tiene parte conceptual y tiene parte de
+
+169
+00:08:30.360 --> 00:08:31.750
+muchísima practicidad.
+
+170
+00:08:31.900 --> 00:08:34.870
+Okey, entonces son seis horas ya grabadas.
+
+171
+00:08:35.130 --> 00:08:37.590
+Cuatro horas que nos vemos en vivo una por semana
+
+172
+00:08:38.310 --> 00:08:41.230
+y cinco horas donde ustedes desarrollan un proyecto, okey,
+
+173
+00:08:43.080 --> 00:08:44.580
+Es muy dirigible el curso.
+
+174
+00:08:44.700 --> 00:08:47.620
+Entonces, porque son 10 horas y cinco horas de va a depender
+
+175
+00:08:47.620 --> 00:08:51.980
+de ustedes, okey, el proyecto les toma
+
+176
+00:08:52.450 --> 00:08:53.820
+exactamente cinco horas.
+
+177
+00:08:54.240 --> 00:08:55.680
+Eso es un estándar, okey?
+
+178
+00:08:55.820 --> 00:08:58.360
+Podrá tomarle menos o podrá tomarle más.
+
+179
+00:08:58.360 --> 00:09:00.920
+Pero eso es un promedio que yo considero que es aceptable
+
+180
+00:09:00.920 --> 00:09:02.360
+para la realización del proyecto.
+
+181
+00:09:02.790 --> 00:09:06.920
+Qué significa que el proyecto lo vamos a empezar a realizar
+
+182
+00:09:07.400 --> 00:09:09.720
+y lo realizamos en las sesiones en vivo ya yo
+
+183
+00:09:09.720 --> 00:09:10.840
+se los voy explicando.
+
+184
+00:09:10.840 --> 00:09:14.080
+Lo vamos haciendo porque yo lo que no quiero es que de la
+
+185
+00:09:14.080 --> 00:09:16.200
+noche a la mañana, le damos el último
+
+186
+00:09:16.230 --> 00:09:17.520
+día de la lección en vivo.
+
+187
+00:09:17.520 --> 00:09:19.720
+Les digo, bueno, tienen dos semanas para hacer el proyecto.
+
+188
+00:09:19.900 --> 00:09:22.640
+No, no va a funcionar así.
+
+189
+00:09:22.710 --> 00:09:26.050
+Okey, sí, sí, sí, estim valor. Quedan grabadas.
+
+190
+00:09:27.060 --> 00:09:30.370
+Estas sesiones como esta y quedan en la
+
+191
+00:09:30.370 --> 00:09:31.650
+plataforma, quedan grabadas.
+
+192
+00:09:31.760 --> 00:09:32.930
+Okey, está se graban.
+
+193
+00:09:33.190 --> 00:09:35.890
+La asistencia no es obligatoria para, para,
+
+194
+00:09:38.190 --> 00:09:40.840
+para probar el okey perfecto para probar este primer
+
+195
+00:09:41.010 --> 00:09:42.200
+curso ya listo.
+
+196
+00:09:42.200 --> 00:09:45.280
+Listo. Entonces ese es el y esta temática,
+
+197
+00:09:45.300 --> 00:09:47.440
+yo lo voy a manejar en todos los cursos.
+
+198
+00:09:47.640 --> 00:09:49.240
+O sea, los cursos que vamos ver mensual
+
+199
+00:09:50.030 --> 00:09:52.250
+en el dinamo en los que vayamos avanzando.
+
+200
+00:09:53.170 --> 00:09:55.010
+Y voy a manejar esta distribución.
+
+201
+00:09:55.010 --> 00:09:57.970
+Algunos serán 20, otros serán 15, eso va variando,
+
+202
+00:09:57.970 --> 00:10:02.290
+pero es una una temática muy digerible a su ritmo que
+
+203
+00:10:02.350 --> 00:10:03.570
+puedan ir aprobando.
+
+204
+00:10:03.570 --> 00:10:06.610
+Y cuando terminan los 12 cursos se van a dar cuenta, ok,
+
+205
+00:10:06.630 --> 00:10:09.610
+ya hacer, hacer, ya sé hacer perdón,
+
+206
+00:10:09.910 --> 00:10:13.410
+un montón de automatizaciones ya hace manejar un poquito de
+
+207
+00:10:13.410 --> 00:10:14.490
+la inteligencia artificial.
+
+208
+00:10:15.190 --> 00:10:16.850
+Ya puedo realizar proyectos, no?
+
+209
+00:10:17.810 --> 00:10:19.810
+Entonces este es la sesión de introductoria.
+
+210
+00:10:19.830 --> 00:10:20.890
+Yo le había puesto una hora,
+
+211
+00:10:20.890 --> 00:10:22.450
+pero después me di cuenta que una hora de
+
+212
+00:10:22.450 --> 00:10:24.010
+exagerado son 30 minutos.
+
+213
+00:10:24.790 --> 00:10:28.050
+Es nada más dar la bienvenida el arranque y estén
+
+214
+00:10:28.620 --> 00:10:32.210
+pilas que ya está la información, eh?
+
+215
+00:10:34.140 --> 00:10:37.140
+Entonces ese es el objetivo de esta sesión introductoria.
+
+216
+00:10:37.140 --> 00:10:40.460
+Okey, cuáles son las seis lecciones? Eh? Las seis lecciones.
+
+217
+00:10:40.700 --> 00:10:42.860
+Nosotros vamos a hablar de la introducción
+
+218
+00:10:42.860 --> 00:10:44.220
+automatización en rabbit.
+
+219
+00:10:44.330 --> 00:10:46.500
+Okey, qué significa automatizar?
+
+220
+00:10:46.920 --> 00:10:49.340
+Porque cuando uno escucha inteligencia artificial,
+
+221
+00:10:49.340 --> 00:10:50.660
+qué es lo primero que se les viene?
+
+222
+00:10:51.200 --> 00:10:54.780
+Les hago la pregunta cuando escuchan inteligencia
+
+223
+00:10:54.780 --> 00:10:58.750
+artificial, qué es lo primero que se les viene a la
+
+224
+00:10:59.430 --> 00:11:00.950
+a la mente con estas herramientas?
+
+225
+00:11:02.820 --> 00:11:05.270
+Qué piensa que que de qué va esto?
+
+226
+00:11:05.370 --> 00:11:07.110
+Si yo digo inteligencia artificial,
+
+227
+00:11:08.950 --> 00:11:11.320
+chat gpt exactamente.
+
+228
+00:11:11.420 --> 00:11:14.610
+Eso es lo que piensa la gran mayoría no
+
+229
+00:11:15.230 --> 00:11:16.970
+en Revit, eh?
+
+230
+00:11:18.700 --> 00:11:23.140
+Inteligencia artificial es automatizar,
+
+231
+00:11:24.160 --> 00:11:27.420
+es generar una tarea que tiene un input.
+
+232
+00:11:27.610 --> 00:11:32.100
+Unos datos. Okey, exacto, álvaro, exacto.
+
+233
+00:11:32.340 --> 00:11:33.620
+Nosotros vamos a dar un input.
+
+234
+00:11:34.210 --> 00:11:37.890
+Okey, que son datos esos datos,
+
+235
+00:11:38.050 --> 00:11:40.690
+nosotros lo vamos a ingresar en rev, pero
+
+236
+00:11:41.410 --> 00:11:43.610
+nosotros tenemos que definir lo que se llama un prom.
+
+237
+00:11:43.710 --> 00:11:48.410
+Un pro es cuando ustedes entran acha gpt y le dice, eh,
+
+238
+00:11:48.590 --> 00:11:52.170
+simula que es, soy un ingeniero civil y bla bla, bla, eso.
+
+239
+00:11:52.550 --> 00:11:55.440
+Ok, entonces nosotros tenemos que tener un pro muy claro.
+
+240
+00:11:56.330 --> 00:11:58.450
+Y tenemos que tener claro cuál es el output.
+
+241
+00:11:58.590 --> 00:12:01.490
+El output es los resultados de lo que va a hacer la
+
+242
+00:12:01.490 --> 00:12:02.490
+inteligencia artificial.
+
+243
+00:12:03.540 --> 00:12:05.990
+Qué significa que la inteligencia artificial es una
+
+244
+00:12:06.180 --> 00:12:09.030
+herramienta para ser eficiente?
+
+245
+00:12:09.890 --> 00:12:14.230
+Muchas tareas sean tareas repetitivas, sean tareas para
+
+246
+00:12:15.340 --> 00:12:19.390
+generar documentación, sean tareas para generar modelado,
+
+247
+00:12:20.020 --> 00:12:22.070
+sean tareas, sobre todo para que no,
+
+248
+00:12:22.890 --> 00:12:25.590
+no se nos vuelva tedioso el modelado en Revit
+
+249
+00:12:25.670 --> 00:12:26.710
+o trabajar en Revit.
+
+250
+00:12:27.750 --> 00:12:31.150
+Entonces, una herramienta complementaria, por lo tanto,
+
+251
+00:12:31.210 --> 00:12:34.550
+la inteligencia artificial no es agarrar y decirle,
+
+252
+00:12:34.890 --> 00:12:37.270
+quiero el modelo de hormigón armado de una
+
+253
+00:12:37.270 --> 00:12:38.390
+vivienda de dos niveles.
+
+254
+00:12:38.410 --> 00:12:40.710
+No les tengo la mala noticia. No funciona así.
+
+255
+00:12:41.010 --> 00:12:44.480
+No funciona con mucha gpt. Por qué?
+
+256
+00:12:44.480 --> 00:12:46.240
+Porque quién va a tener el criterio,
+
+257
+00:12:47.470 --> 00:12:49.730
+quién va a decidir y quién va
+
+258
+00:12:50.410 --> 00:12:53.530
+a tomar decisiones a partir de los resultados que nos puede
+
+259
+00:12:53.530 --> 00:12:54.810
+ayudar la inteligencia artificial,
+
+260
+00:12:54.870 --> 00:12:56.170
+el profesional en cuestión.
+
+261
+00:12:56.730 --> 00:12:59.130
+Entonces yo los voy a convertir en profesionales
+
+262
+00:12:59.750 --> 00:13:02.370
+con criterio de la herramienta.
+
+263
+00:13:02.790 --> 00:13:05.210
+No los voy a convertir en profesionales
+
+264
+00:13:06.280 --> 00:13:08.860
+que no sean profesionales si no son usuarios del programa,
+
+265
+00:13:09.160 --> 00:13:11.660
+ok, esa es la diferencia que vamos a tener nuestros cursos.
+
+266
+00:13:11.840 --> 00:13:14.820
+Ok? Por ejemplo batirle comentada achapt
+
+267
+00:13:15.760 --> 00:13:18.620
+es como que yo agarre y diga cha gt,
+
+268
+00:13:18.620 --> 00:13:21.100
+quiero que me hagas el cálculo de una vivienda de dos
+
+269
+00:13:21.100 --> 00:13:23.890
+niveles en hormigón armado
+
+270
+00:13:25.820 --> 00:13:30.710
+a que yo diga tengo una vivienda de
+
+271
+00:13:30.710 --> 00:13:34.110
+dos niveles las cuales tiene una distribución irregular
+
+272
+00:13:35.330 --> 00:13:39.830
+que acentúa un fuerte comportamiento torsional a partir
+
+273
+00:13:40.410 --> 00:13:44.350
+de un análisis modal y sus vibraciones propias no forzadas.
+
+274
+00:13:46.250 --> 00:13:48.060
+Este comportamiento irregular,
+
+275
+00:13:49.010 --> 00:13:52.920
+tengo que atenuarlo a través de elementos que pueden
+
+276
+00:13:52.920 --> 00:13:55.800
+incrementar los momentos de inercia en los extremos,
+
+277
+00:13:57.410 --> 00:14:01.660
+tomando en cuenta que debo cumplir y mantener el diseño
+
+278
+00:14:01.660 --> 00:14:04.060
+funcional que está propuesto en la arquitectura
+
+279
+00:14:05.450 --> 00:14:08.270
+en un inicio, tengo una distribución estructural
+
+280
+00:14:08.870 --> 00:14:10.150
+y bla, bla, bla.
+
+281
+00:14:10.820 --> 00:14:12.690
+Cuál es la diferencia entre lo primero y lo segundo?
+
+282
+00:14:14.260 --> 00:14:15.320
+Les hago la consulta.
+
+283
+00:14:15.320 --> 00:14:18.280
+Cuál es la diferencia entre lo primero que yo cabe decir,
+
+284
+00:14:18.280 --> 00:14:21.040
+cha, calcule unas vividas de único armado
+
+285
+00:14:21.560 --> 00:14:23.640
+a lo que yo acabo de decir con lo segundo de darle
+
+286
+00:14:24.810 --> 00:14:26.580
+toda esa instrucción.
+
+287
+00:14:29.240 --> 00:14:32.730
+Qué es la hace la diferencia entre lo primero y lo
+
+288
+00:14:32.730 --> 00:14:37.730
+segundo más detallado.
+
+289
+00:14:39.560 --> 00:14:41.800
+Y yo lo voy a convertir el criterio.
+
+290
+00:14:44.560 --> 00:14:47.380
+Yo estoy utilizando exactamente Fernando,
+
+291
+00:14:47.480 --> 00:14:50.180
+lo estoy utilizando con criterio porque yo sé los res.
+
+292
+00:14:50.380 --> 00:14:53.040
+O sea, no sé el percent, los resultados que voy a obtener,
+
+293
+00:14:53.040 --> 00:14:54.400
+porque si no me utilizar tremenda,
+
+294
+00:14:54.510 --> 00:14:56.200
+pero yo sé que resultados, voy a esperar.
+
+295
+00:14:56.280 --> 00:14:58.640
+O sea, yo estoy comprobando mi criterio.
+
+296
+00:14:59.400 --> 00:15:02.990
+Okey, lo estoy parametric
+
+297
+00:15:05.040 --> 00:15:06.540
+le estoy dando un input.
+
+298
+00:15:06.960 --> 00:15:09.020
+Le estoy dando un desarrollo parametric
+
+299
+00:15:09.860 --> 00:15:11.340
+y le estoy dando un output.
+
+300
+00:15:12.280 --> 00:15:13.680
+Entonces yo estoy armando una estructura
+
+301
+00:15:15.740 --> 00:15:17.980
+y la inteligencia artificial cuando uno hace eso
+
+302
+00:15:18.860 --> 00:15:21.020
+rápidamente lo reconoce y se
+
+303
+00:15:21.080 --> 00:15:22.980
+alinea a lo que uno está haciendo.
+
+304
+00:15:23.810 --> 00:15:26.420
+Qué? Con este ejemplo que yo acabo de dar,
+
+305
+00:15:26.420 --> 00:15:28.380
+es lo mismo que vamos a hacer en cada uno de los cursos.
+
+306
+00:15:29.490 --> 00:15:31.540
+Esto no es programación avanzada,
+
+307
+00:15:31.540 --> 00:15:33.300
+no se imagino en la película de matrix.
+
+308
+00:15:33.320 --> 00:15:37.100
+Yo siempre he hecho esta historia, no de no se imaginen a
+
+309
+00:15:37.700 --> 00:15:42.340
+a cuando estaba, eh, ahí neo con la super pantalla y
+
+310
+00:15:42.860 --> 00:15:46.540
+y todas las letras verdes, no, eso no es, es
+
+311
+00:15:47.060 --> 00:15:49.580
+fomentar un buen criterio, un input.
+
+312
+00:15:49.580 --> 00:15:50.740
+Cuáles son los datos de entrada?
+
+313
+00:15:51.270 --> 00:15:54.580
+Cuál va a ser el desarrollo y cuál va a ser el output?
+
+314
+00:15:54.720 --> 00:15:56.660
+Eso es lo que vamos a hacer en todos los cursos.
+
+315
+00:15:56.810 --> 00:15:58.740
+Okey, dicho esto,
+
+316
+00:15:59.940 --> 00:16:02.140
+y vamos a ver las herramientas nativas de Revit,
+
+317
+00:16:02.470 --> 00:16:04.020
+vamos a ver los atins.
+
+318
+00:16:04.190 --> 00:16:06.260
+Vamos a ver rutinas de automatización.
+
+319
+00:16:06.710 --> 00:16:09.940
+Vamos a ver plantillas y pro con inteligencia artificial.
+
+320
+00:16:10.110 --> 00:16:11.820
+Vamos a hacer un pequeño proyecto final.
+
+321
+00:16:12.370 --> 00:16:15.580
+Este primer curso los empieza a preparar a los siguientes.
+
+322
+00:16:15.900 --> 00:16:18.260
+Y básicamente después que terminen los dos, se cursos
+
+323
+00:16:19.160 --> 00:16:20.620
+ese ejemplo que yo acabo de hacer,
+
+324
+00:16:20.680 --> 00:16:22.860
+lo van a poder llevar a cualquier ámbito
+
+325
+00:16:24.110 --> 00:16:26.530
+porque ya internacionalizan cómo funcionan
+
+326
+00:16:26.530 --> 00:16:27.650
+la inteligencia artificial.
+
+327
+00:16:29.150 --> 00:16:33.320
+Okey, entonces son estas seis lecciones, eh?
+
+328
+00:16:34.090 --> 00:16:37.840
+Estas seis lecciones se van a dividir en dos semanas.
+
+329
+00:16:38.180 --> 00:16:40.640
+La semana uno arranca el dos al 8 de febrero
+
+330
+00:16:41.300 --> 00:16:42.600
+del dos al 8 de febrero.
+
+331
+00:16:42.600 --> 00:16:44.680
+Van a tener habilidad las primeras tres lecciones
+
+332
+00:16:45.680 --> 00:16:48.080
+y yo les avisaré por el grupo de whatsapp los días.
+
+333
+00:16:48.260 --> 00:16:50.720
+Es muy probable que los días sean lunes, miércoles, viernes,
+
+334
+00:16:50.720 --> 00:16:52.840
+yo le voy a subir lunes, miércoles, viernes,
+
+335
+00:16:53.500 --> 00:16:55.440
+las primeras tres lecciones y las semana dos,
+
+336
+00:16:55.440 --> 00:16:57.600
+la voy a subir lunes, miércoles, viernes,
+
+337
+00:16:58.380 --> 00:17:00.800
+la lección cuatro a las seis, okey.
+
+338
+00:17:01.800 --> 00:17:06.120
+Y en esas, eh, además de esas dos semanas, vamos a tener
+
+339
+00:17:06.920 --> 00:17:08.050
+sesión de refuerzo.
+
+340
+00:17:08.050 --> 00:17:10.930
+Número uno, sesión de refuerzo número dos.
+
+341
+00:17:11.770 --> 00:17:13.490
+Y en la semana tres a la semana cuatro,
+
+342
+00:17:13.490 --> 00:17:14.730
+vamos a hacer el proyecto final.
+
+343
+00:17:15.440 --> 00:17:17.450
+Así está distribuida, okey?
+
+344
+00:17:17.610 --> 00:17:20.850
+O sea, es una distribución bien pensada y organizada para
+
+345
+00:17:20.850 --> 00:17:24.090
+que la aprovechen al máximo, eh?
+
+346
+00:17:24.590 --> 00:17:28.130
+Las sesiones van a ser todos los días miércoles de ocho.
+
+347
+00:17:29.550 --> 00:17:30.970
+En realidad yo le estimo una hora,
+
+348
+00:17:31.000 --> 00:17:34.450
+pero le coloco dos horas por si hay preguntas, consultas,
+
+349
+00:17:34.770 --> 00:17:37.930
+feedback, lo que sea, okey, entonces
+
+350
+00:17:38.870 --> 00:17:41.610
+van a tener distribuido estas dos sesiones, okey?
+
+351
+00:17:42.850 --> 00:17:45.490
+Y que son las sesiones, eh?
+
+352
+00:17:45.590 --> 00:17:47.090
+Con la parte de las lecciones,
+
+353
+00:17:48.080 --> 00:17:51.310
+y luego van a tener dos sesiones adicionales que es para ya
+
+354
+00:17:51.310 --> 00:17:54.230
+la parte de del proyecto.
+
+355
+00:17:54.730 --> 00:17:56.830
+Si que vamos a hablar del proyecto que se entre,
+
+356
+00:17:58.550 --> 00:18:00.070
+entonces es un proyecto final.
+
+357
+00:18:00.250 --> 00:18:02.990
+El proyecto final va a ser la aplicación integral de todo el
+
+358
+00:18:02.990 --> 00:18:05.790
+aprendido en el curso que es desarrollado automatizaciones
+
+359
+00:18:05.850 --> 00:18:09.030
+reales en revista, básicamente, okey, los espíritus finales,
+
+360
+00:18:09.030 --> 00:18:11.390
+todo lo que se ve en el curso y
+
+361
+00:18:13.050 --> 00:18:16.020
+los beneficios, vamos, ahorrar tiempo,
+
+362
+00:18:16.710 --> 00:18:19.060
+vamos a aprender a estandarizar procesos.
+
+363
+00:18:19.750 --> 00:18:21.340
+Vamos empezar a utilizarla.
+
+364
+00:18:21.340 --> 00:18:23.140
+Idea como copiloto técnico, o sea,
+
+365
+00:18:23.160 --> 00:18:25.540
+la ahí utilizada con criterio es una
+
+366
+00:18:25.540 --> 00:18:26.740
+herramienta super poderosa.
+
+367
+00:18:28.140 --> 00:18:29.800
+Van a ser todo muchísimo más rápido.
+
+368
+00:18:30.100 --> 00:18:32.040
+Van a poder tomar decisiones mucho más rápido.
+
+369
+00:18:32.360 --> 00:18:36.800
+Y al tomar decisiones y hacer todo más rápido con criterio
+
+370
+00:18:37.420 --> 00:18:39.160
+que pasa, ahorras tiempos,
+
+371
+00:18:39.230 --> 00:18:41.560
+ahorras costos, un montón de cosas.
+
+372
+00:18:42.000 --> 00:18:45.200
+Entonces yo les voy a enseñar que como se utiliza obviamente
+
+373
+00:18:45.200 --> 00:18:46.640
+en las herramientas de autodesk,
+
+374
+00:18:47.430 --> 00:18:49.000
+pero después que terminan el curso,
+
+375
+00:18:49.000 --> 00:18:51.200
+les aseguro que se lo van a llevar a otros ámbitos.
+
+376
+00:18:51.200 --> 00:18:54.600
+Se lo van a llevar ámbitos de presentaciones de
+
+377
+00:18:55.780 --> 00:18:57.880
+el día a día con cha g pet ya les va a
+
+378
+00:18:57.880 --> 00:18:58.920
+cambiar la perspectiva.
+
+379
+00:18:59.140 --> 00:19:02.120
+Ya lo van a empezar a entrenar inclusive para
+
+380
+00:19:02.630 --> 00:19:03.960
+para su ámbito profesional.
+
+381
+00:19:05.220 --> 00:19:07.560
+Esa es la idea, okey y aplicación inmediata,
+
+382
+00:19:07.840 --> 00:19:09.000
+ejemplos prácticos.
+
+383
+00:19:09.000 --> 00:19:12.760
+Okey. Entonces eso es lo que vamos a ver en este primer y
+
+384
+00:19:14.100 --> 00:19:15.760
+eh, primer curso, okey.
+
+385
+00:19:16.840 --> 00:19:21.560
+Y las fechas 2 de febrero se arranca el contenido sincrónico
+
+386
+00:19:21.760 --> 00:19:24.040
+y el 28 de febrero es que se cierra la fa,
+
+387
+00:19:24.100 --> 00:19:25.640
+la fecha máxima del proyecto final.
+
+388
+00:19:25.790 --> 00:19:28.520
+Okey. Entonces, recomendación
+
+389
+00:19:29.100 --> 00:19:32.320
+que no esperen a que terminen las cuatro semanas para hacer
+
+390
+00:19:32.520 --> 00:19:36.330
+proyecto final, sino que a medida que voy subiendo las
+
+391
+00:19:36.330 --> 00:19:39.490
+lecciones las van repasando porque cada lección es un
+
+392
+00:19:39.640 --> 00:19:40.810
+cachito o un pasito,
+
+393
+00:19:40.830 --> 00:19:42.210
+lo que van a hacer en el proyecto final.
+
+394
+00:19:42.870 --> 00:19:44.890
+Si que no les voy a complicar la vida.
+
+395
+00:19:44.890 --> 00:19:49.210
+A mí me interesa, es que aprenda no una evaluación de
+
+396
+00:19:50.870 --> 00:19:52.110
+avanzada de conocimientos.
+
+397
+00:19:52.110 --> 00:19:54.790
+No a mí me interesa, es que aprendan, okey,
+
+398
+00:19:56.310 --> 00:19:58.710
+y eso sería, así va estar estar distribuido.
+
+399
+00:19:59.130 --> 00:20:03.030
+Las clases envío van a ser así. Pueden ser muy dinámicas.
+
+400
+00:20:03.250 --> 00:20:06.710
+Voy a tratar de que no se aburran a ser muy participativas.
+
+401
+00:20:07.710 --> 00:20:11.990
+Y quiero formar un grupo de profesionales que
+
+402
+00:20:12.100 --> 00:20:14.590
+intercambio sus opiniones,
+
+403
+00:20:14.770 --> 00:20:16.510
+lo que les parece lo que no les parece,
+
+404
+00:20:17.130 --> 00:20:20.590
+porque en metodología de aprendizaje y dos factores uno,
+
+405
+00:20:20.710 --> 00:20:23.190
+absorber el conocimiento es verse las lecciones,
+
+406
+00:20:23.580 --> 00:20:24.870
+ponerlo en práctica demás.
+
+407
+00:20:25.380 --> 00:20:28.150
+Pero el segundo factor y el más importante es
+
+408
+00:20:29.030 --> 00:20:33.230
+fortizar fortalecer el intercambio de ese criterio a través
+
+409
+00:20:33.250 --> 00:20:35.430
+de debates a través de idea,
+
+410
+00:20:35.970 --> 00:20:38.830
+porque ahí es donde se empieza a fortalecer el conocimiento.
+
+411
+00:20:38.950 --> 00:20:40.670
+Y eso es lo que vamos a hacer en las lecciones en vivo.
+
+412
+00:20:42.850 --> 00:20:45.660
+Consultas, dudas, qué les parece?
+
+413
+00:20:47.980 --> 00:20:49.090
+Está claro la estructura,
+
+414
+00:20:49.090 --> 00:20:51.090
+porque esta es la misma estructura que vamos a copiar
+
+415
+00:20:52.340 --> 00:20:53.760
+de la mitología aprendiza en
+
+416
+00:20:54.300 --> 00:20:56.390
+todo el año en con todos los cursos.
+
+417
+00:21:01.370 --> 00:21:02.480
+Super perfecto.
+
+418
+00:21:03.080 --> 00:21:06.160
+Disculpa, eh? Cab Gabriel dura un año.
+
+419
+00:21:06.390 --> 00:21:08.800
+Cada cada curso es de un mes. O sea, son dos cada ah,
+
+420
+00:21:08.800 --> 00:21:10.000
+Sí, sí, sí, duro un año.
+
+421
+00:21:10.240 --> 00:21:11.920
+Entonces, la idea es que cuando terminen en el año,
+
+422
+00:21:12.120 --> 00:21:13.920
+Fernando, ya sean,
+
+423
+00:21:14.540 --> 00:21:17.000
+no voy a decir unos máster de inteligencia artificial,
+
+424
+00:21:17.030 --> 00:21:20.040
+pero si profesionales con criterio e inteligencia
+
+425
+00:21:20.040 --> 00:21:22.400
+artificial, eso sí se los aseguro. Okey,
+
+426
+00:21:23.150 --> 00:21:24.290
+De acuerdo, gracias.
+
+427
+00:21:24.700 --> 00:21:26.050
+Listo, listo.
+
+428
+00:21:26.210 --> 00:21:30.090
+Entonces, mañana que me por les va a pasar el ingeniero
+
+429
+00:21:30.090 --> 00:21:34.090
+Kevin es básicamente nuestro ingeniero en soporte técnico.
+
+430
+00:21:34.950 --> 00:21:36.770
+Él va a estar enviando toda la información.
+
+431
+00:21:36.910 --> 00:21:40.410
+Yo me encargo de todo el año porque básicamente
+
+432
+00:21:41.750 --> 00:21:43.610
+lo hago lo mismo en la empresa en llevar toda la
+
+433
+00:21:43.610 --> 00:21:44.650
+parte inter inteligencia artificial.
+
+434
+00:21:44.650 --> 00:21:46.410
+Así que está en buenas manos conmigo.
+
+435
+00:21:47.330 --> 00:21:50.370
+Entonces nada, nos vemos el próximo miércoles.
+
+436
+00:21:50.750 --> 00:21:53.050
+El día lunes se sube la primera elección
+
+437
+00:21:54.110 --> 00:21:56.210
+son lecciones digeribles de 30 minutos.
+
+438
+00:21:56.490 --> 00:21:59.510
+Entonces traten de yo.
+
+439
+00:21:59.510 --> 00:22:02.070
+Sé que con las ocupaciones laborales, la familia
+
+440
+00:22:02.690 --> 00:22:03.870
+es cosas muy importantes.
+
+441
+00:22:04.010 --> 00:22:07.070
+Lo sé, pero sólo aparten 30 minutos de su tiempo.
+
+442
+00:22:07.540 --> 00:22:10.510
+Okey, eh, las horas de las cargas.
+
+443
+00:22:11.010 --> 00:22:12.310
+Yo también se las voy a dejar.
+
+444
+00:22:12.570 --> 00:22:16.270
+No he definido que hora le cargo las lecciones, eh?
+
+445
+00:22:16.770 --> 00:22:18.110
+Si es en la mañana, en la tarde,
+
+446
+00:22:18.530 --> 00:22:20.950
+voy a tratar de que sea siempre en las mañanas para que
+
+447
+00:22:20.950 --> 00:22:22.310
+ustedes lo puedan ver en todo el día.
+
+448
+00:22:22.310 --> 00:22:23.830
+Okey? Pero eso yo se lo da.
+
+449
+00:22:23.830 --> 00:22:25.870
+Hago saber con el ingeniero Kevin, sí.
+
+450
+00:22:26.750 --> 00:22:28.830
+Y mañana por fa, eh?
+
+451
+00:22:28.850 --> 00:22:32.470
+Me contestan el formulario si tienen Revit o no tienen
+
+452
+00:22:32.470 --> 00:22:33.590
+rabbit para ayudarles.
+
+453
+00:22:33.950 --> 00:22:36.630
+Y si tienen o no tienen el acceso a la plataforma,
+
+454
+00:22:36.840 --> 00:22:38.990
+todas las sesiones en vivo van a estar en la
+
+455
+00:22:38.990 --> 00:22:40.870
+plataforma igual en ingeniero.
+
+456
+00:22:40.870 --> 00:22:43.910
+Kevin les va a grabar pequeños videos lus de cómo se
+
+457
+00:22:43.910 --> 00:22:45.030
+accede la plataforma.
+
+458
+00:22:45.030 --> 00:22:46.670
+De dónde ven las lecciones? Es algo sencillo.
+
+459
+00:22:46.670 --> 00:22:50.630
+La plataforma es súper súper sencilla. Okey y nada.
+
+460
+00:22:50.650 --> 00:22:51.870
+Nos vemos primero.
+
+461
+00:22:51.980 --> 00:22:55.430
+Dios, el próximo miércoles a las ocho de la noche,
+
+462
+00:22:55.480 --> 00:22:59.070
+todos los miércoles de febrero para nuestro primer curso de
+
+463
+00:23:00.090 --> 00:23:04.070
+automatizaciones en REIT con inteligencia artificial.
+
+464
+00:23:04.210 --> 00:23:05.230
+Sé que les va a gustar.
+
+465
+00:23:05.990 --> 00:23:08.430
+Entonces nada nos ve mal el próximo miércoles.
+
+466
+00:23:09.090 --> 00:23:10.470
+Que tengan un buen fin de semana
+
+467
+00:23:11.350 --> 00:23:13.430
+y estamos platicando mañana por el grupo de whatsapp.
+
+468
+00:23:13.500 --> 00:23:14.500
+Okey,
+
+469
+00:23:15.450 --> 00:23:16.450
+Muchas gracias.
+
+470
+00:23:17.100 --> 00:23:19.150
+Gracias a ustedes. Que tengan una excelente noche.
+
+471
+00:23:19.700 --> 00:23:23.170
+Gracias. Feliz noci. Hasta luego. Gracias.

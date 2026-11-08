@@ -1,0 +1,4829 @@
+WEBVTT
+
+1
+00:00:02.700 --> 00:00:05.080
+Saludos, colegas. Sean bienvenidos a esta lección 1B,
+
+2
+00:00:06.380 --> 00:00:10.040
+creo que va a ser una de las lecciones más interesantes que vamos a tener
+
+3
+00:00:11.160 --> 00:00:11.820
+hasta la fecha,
+
+4
+00:00:14.380 --> 00:00:16.620
+desde lo que venimos trabajando desde la lección
+
+5
+00:00:17.920 --> 00:00:21.380
+1A, y no solo de este curso dos, sino lo que venimos trabajando ya desde el
+
+6
+00:00:21.480 --> 00:00:22.240
+curso
+
+7
+00:00:24.460 --> 00:00:25.740
+anterior, el curso número uno.
+
+8
+00:00:26.960 --> 00:00:30.680
+Entonces, lección 1B: "Add-ins inteligentes de la automatización e inteligencia
+
+9
+00:00:30.700 --> 00:00:33.960
+artificial, cómo Diribbs y PyRevit transforman tu flujo de trabajo BIM".
+
+10
+00:00:34.080 --> 00:00:35.780
+Nos vamos a enfocar mucho en ello.
+
+11
+00:00:36.600 --> 00:00:40.220
+Básicamente, voy a hacer un rayo X y yo
+
+12
+00:00:40.500 --> 00:00:44.000
+quiero que presten mucha atención a esta lección, tomen apuntes,
+
+13
+00:00:44.520 --> 00:00:48.420
+lo pongan en práctica y luego piensen a futuro
+
+14
+00:00:48.480 --> 00:00:51.220
+cómo lo pueden llevar a cabo en sus proyectos.
+
+15
+00:00:52.220 --> 00:00:55.880
+Entonces, ¿dónde estamos? Hemos recorrido un camino sólido, ahora es
+
+16
+00:00:55.920 --> 00:00:59.140
+momento de dar el siguiente: automatización nativa, parámetros y filtros,
+
+17
+00:00:59.200 --> 00:01:03.010
+plantillas inteligentes. Ahora, el siguiente nivel es add-ins como
+
+18
+00:01:03.040 --> 00:01:05.800
+aceleradores del sistema BIM, profundización de ello.
+
+19
+00:01:05.880 --> 00:01:08.580
+Principalmente, yo me enfoco en Diribbs, PyRevit.
+
+20
+00:01:08.680 --> 00:01:12.610
+Hay un montón de add-ins, pero considero que estos dos son los
+
+21
+00:01:14.020 --> 00:01:17.280
+necesarios para que ustedes lo puedan llevar a cabo y
+
+22
+00:01:17.760 --> 00:01:21.440
+tengan una transformación real en su flujo BIM o en su
+
+23
+00:01:21.480 --> 00:01:22.560
+modelado BIM
+
+24
+00:01:23.640 --> 00:01:27.000
+y a partir de allí dar paso a lo que es la inteligencia artificial
+
+25
+00:01:27.040 --> 00:01:27.800
+oficialmente.
+
+26
+00:01:29.220 --> 00:01:33.020
+Con automatización nativa dominamos las herramientas base de Revit para automatizar
+
+27
+00:01:33.080 --> 00:01:36.840
+tareas esenciales, ya lo saben. Parámetros y filtros, ya lo saben.
+
+28
+00:01:37.020 --> 00:01:40.700
+Plantillas inteligentes. Hemos construido plantillas
+
+29
+00:01:41.620 --> 00:01:43.400
+que estandarizan y aceleran la producción.
+
+30
+00:01:44.800 --> 00:01:48.400
+Ahora vienen los add-ins. La
+
+31
+00:01:48.440 --> 00:01:49.820
+automatización, hacemos las tareas
+
+32
+00:01:51.000 --> 00:01:54.520
+nativas y repetitivas; en la IA,
+
+33
+00:01:54.560 --> 00:01:56.580
+optimización y decisiones inteligentes; y
+
+34
+00:01:58.620 --> 00:02:02.460
+con los add-ins, aceleración y flujo, extensión del flujo.
+
+35
+00:02:04.000 --> 00:02:07.770
+Vamos a empezar con Diribbs. Diribbs, básicamente, su capacidad
+
+36
+00:02:07.880 --> 00:02:11.840
+está en generar sheets automáticamente, organizar vistas y crear documentación
+
+37
+00:02:11.860 --> 00:02:14.560
+masiva. Vimos los filtros avanzados de One Filter,
+
+38
+00:02:15.420 --> 00:02:19.160
+exportar datos estructurados, reduce horas de trabajo manual
+
+39
+00:02:19.180 --> 00:02:22.400
+significativamente, estandariza entregables en
+
+40
+00:02:22.540 --> 00:02:26.390
+todo el proyecto. Vamos a ir ahora a
+
+41
+00:02:26.420 --> 00:02:28.280
+una parte práctica fundamental
+
+42
+00:02:29.080 --> 00:02:29.780
+en PyRevit.
+
+43
+00:02:30.620 --> 00:02:32.480
+Aquí lo tengo anotado cómo lo dividí.
+
+44
+00:02:32.780 --> 00:02:35.780
+Vamos a empezar con Sheet Link, luego vamos con el Sheet Generator,
+
+45
+00:02:36.160 --> 00:02:39.780
+Reordering, Param Manager, View Manager, Family
+
+46
+00:02:39.820 --> 00:02:41.380
+Raiser, One Filter
+
+47
+00:02:42.240 --> 00:02:44.740
+y Table Generator. Vamos a hacer un repaso general.
+
+48
+00:02:44.960 --> 00:02:47.680
+Obviamente, la idea es que esto lo van a
+
+49
+00:02:47.760 --> 00:02:51.720
+profundizar en una parte del proyecto
+
+50
+00:02:51.740 --> 00:02:55.400
+que van a entregar a este curso número dos y todo lo demás va a ser IA.
+
+51
+00:02:55.620 --> 00:02:59.060
+Entonces, vámonos a Revit en esta
+
+52
+00:02:59.280 --> 00:03:01.240
+ocasión. Para eso voy a
+
+53
+00:03:02.340 --> 00:03:06.160
+cambiar la pantalla. Vámonos
+
+54
+00:03:06.240 --> 00:03:09.520
+acá a lo que es Revit como tal.
+
+55
+00:03:10.000 --> 00:03:13.380
+Entonces, aquí están visualizando
+
+56
+00:03:13.420 --> 00:03:15.730
+lo que es
+
+57
+00:03:16.840 --> 00:03:19.840
+Revit. Vamos a seguir trabajando con nuestro modelo de sanitaria, que está en el
+
+58
+00:03:19.860 --> 00:03:21.700
+curso número uno, como ejemplo.
+
+59
+00:03:22.740 --> 00:03:24.040
+Se llama Modelo
+
+60
+00:03:26.400 --> 00:03:27.739
+Sanitaria de Gel.
+
+61
+00:03:28.960 --> 00:03:29.460
+Entonces,
+
+62
+00:03:30.520 --> 00:03:34.140
+vamos a seguir con Diribbs. Ustedes ya saben la parte de instalación, me voy a
+
+63
+00:03:34.220 --> 00:03:38.020
+saltar esa parte. Vamos a la parte superior en Diribbs One.
+
+64
+00:03:38.540 --> 00:03:42.420
+Aquí algo importante. Vamos a empezar con el primero, que se llama Sheet
+
+65
+00:03:42.480 --> 00:03:45.720
+Link. Diribbs tiene varios, está Panel Link,
+
+66
+00:03:47.960 --> 00:03:49.840
+tiene varias opciones, pero
+
+67
+00:03:50.820 --> 00:03:53.920
+yo me voy a enfocar en los que yo considero
+
+68
+00:03:54.060 --> 00:03:57.840
+que son los fundamentales y esenciales en su flujo de
+
+69
+00:03:57.940 --> 00:04:00.240
+trabajo. Vamos a empezar con Sheet Link.
+
+70
+00:04:01.820 --> 00:04:03.980
+Este me encanta porque podemos hacer un montón de cosas.
+
+71
+00:04:04.640 --> 00:04:07.320
+Voy a tratar de que este video sea lo más resumido posible.
+
+72
+00:04:11.380 --> 00:04:14.020
+Se va a extender lo que tenga que extenderse.
+
+73
+00:04:14.800 --> 00:04:18.161
+Entonces, vamos con Sheet Link. Una vez que le dan clic, ojo, para que esté
+
+74
+00:04:18.171 --> 00:04:19.481
+habilitado Sheet Link,
+
+75
+00:04:21.000 --> 00:04:24.820
+es muy probable que estas opciones o estas pestañas no las tengan habilitadas.
+
+76
+00:04:24.860 --> 00:04:25.150
+Yo tengo
+
+77
+00:04:26.120 --> 00:04:27.130
+la versión de Diribbs
+
+78
+00:04:27.140 --> 00:04:30.320
+2.6.3.0.
+
+79
+00:04:31.180 --> 00:04:33.940
+Entonces, es muy probable que no la tengan habilitada.
+
+80
+00:04:33.980 --> 00:04:35.540
+Para que la tengan habilitada,
+
+81
+00:04:36.780 --> 00:04:39.940
+en la parte superior va a haber una opción que dice
+
+82
+00:04:40.120 --> 00:04:40.980
+"iniciar
+
+83
+00:04:41.860 --> 00:04:42.560
+licencia".
+
+84
+00:04:43.480 --> 00:04:47.180
+Y van a pedir el período gratuito. El período gratuito les cubre un buen tiempo.
+
+85
+00:04:47.680 --> 00:04:51.160
+No sé qué tiempo exactamente, eso yo se los voy a conversar en las clases en vivo,
+
+86
+00:04:52.120 --> 00:04:54.860
+pero sí les cubre ese tiempo.
+
+87
+00:04:55.600 --> 00:04:57.440
+Entonces,
+
+88
+00:04:58.340 --> 00:05:01.300
+si ustedes cierran sesión, yo le puedo dar a "aceptar",
+
+89
+00:05:02.500 --> 00:05:03.400
+no les va a permitir
+
+90
+00:05:04.640 --> 00:05:06.560
+trabajar con las opciones categorías de modelo.
+
+91
+00:05:06.570 --> 00:05:08.820
+Entonces, yo quiero que trabajen con esas opciones.
+
+92
+00:05:09.380 --> 00:05:12.820
+Le van a dar clic acá y ustedes le pueden iniciar sesión,
+
+93
+00:05:12.860 --> 00:05:16.780
+necesitan una licencia. Le dan clic. Ya yo la creé.
+
+94
+00:05:17.660 --> 00:05:20.680
+En su caso, le van a dar aquí en "solicitar prueba".
+
+95
+00:05:21.880 --> 00:05:25.060
+Entonces, empezamos. Yo voy a colocar mi
+
+96
+00:05:26.140 --> 00:05:26.680
+licencia.
+
+97
+00:05:29.960 --> 00:05:32.000
+Design Modeling.
+
+98
+00:05:32.980 --> 00:05:35.440
+Mi correo. Ustedes colocarán su correo.
+
+99
+00:05:36.140 --> 00:05:38.020
+Una vez que le dan aquí "solicitar prueba",
+
+100
+00:05:39.840 --> 00:05:43.580
+colocan la clave que ustedes hayan generado y dan
+
+101
+00:05:43.590 --> 00:05:44.330
+"iniciar sesión".
+
+102
+00:05:47.440 --> 00:05:49.500
+A ver, ¿lo estoy colocando bien?
+
+103
+00:05:51.020 --> 00:05:54.160
+Es que no sé si coloqué la licencia que era.
+
+104
+00:05:56.800 --> 00:05:57.260
+Vamos a ver.
+
+105
+00:05:58.500 --> 00:06:02.236
+Listo, ahora sí.Estaba colocando una contraseña mal.
+
+106
+00:06:02.245 --> 00:06:06.156
+Una vez que ustedes ingresan, todas estas opciones se les van a activar.
+
+107
+00:06:07.296 --> 00:06:08.046
+Voy a enfocarme en lo
+
+108
+00:06:09.616 --> 00:06:13.516
+que puedo hacer con el Sheet Link. El Sheet Link lo que me permite es trabajar
+
+109
+00:06:13.816 --> 00:06:16.096
+y actualizar la hoja de Excel y que lo que
+
+110
+00:06:16.936 --> 00:06:20.676
+yo actualice en la hoja de Excel se pueda
+
+111
+00:06:20.696 --> 00:06:22.216
+actualizar al mismo tiempo en Revit.
+
+112
+00:06:23.116 --> 00:06:26.416
+Esto para entornos de trabajo entre modeladores,
+
+113
+00:06:26.496 --> 00:06:29.016
+coordinadores, BIM manager y demás,
+
+114
+00:06:29.876 --> 00:06:33.476
+es lo máximo. Es el que más me gusta.
+
+115
+00:06:33.496 --> 00:06:36.916
+Por ejemplo, voy a trabajar con los
+
+116
+00:06:38.336 --> 00:06:41.816
+Walls, aquí en categorías de modelo. Le voy a dar clic.
+
+117
+00:06:43.856 --> 00:06:47.716
+Me va a recopilar los datos. Aquí en los datos ustedes van a ver
+
+118
+00:06:47.756 --> 00:06:51.696
+que tienen color verde, es instancia; color amarillo, es
+
+119
+00:06:51.756 --> 00:06:52.156
+tipo;
+
+120
+00:06:53.036 --> 00:06:56.976
+y color rojo, es solo lectura. Los que son color rojo son parámetros que no se
+
+121
+00:06:57.076 --> 00:07:00.556
+pueden modificar. Los de verde y amarillo sí se pueden
+
+122
+00:07:00.596 --> 00:07:04.376
+modificar. Entonces, yo pensando en mi tabla de cantidades, por ejemplo,
+
+123
+00:07:05.056 --> 00:07:06.176
+quiero definir
+
+124
+00:07:07.236 --> 00:07:08.256
+el área total.
+
+125
+00:07:09.876 --> 00:07:13.676
+Pero al mismo tiempo lo quiero ver por el tipo de elemento y quiero
+
+126
+00:07:13.716 --> 00:07:17.506
+darle una marca de comentario, un time mark, por
+
+127
+00:07:17.516 --> 00:07:17.916
+ejemplo,
+
+128
+00:07:18.876 --> 00:07:22.596
+y poderlos ir modificando para que el
+
+129
+00:07:22.636 --> 00:07:25.396
+entorno colaborativo que yo tenga lo pueda saber.
+
+130
+00:07:26.096 --> 00:07:28.676
+Entonces, acá vamos a empezar por el nombre,
+
+131
+00:07:30.096 --> 00:07:31.616
+luego por
+
+132
+00:07:33.076 --> 00:07:36.436
+restricción superior, restricción inferior
+
+133
+00:07:37.636 --> 00:07:40.596
+y vamos a ver acá uno que se llama Type
+
+134
+00:07:41.516 --> 00:07:42.836
+Comments, comentarios.
+
+135
+00:07:43.976 --> 00:07:47.516
+Recuerden, tanto los verdes como los amarillos se pueden modificar, los rojos no.
+
+136
+00:07:48.316 --> 00:07:51.096
+Y me va a quedar el área.
+
+137
+00:07:51.596 --> 00:07:54.076
+¿Por qué hay algunos que no se pueden modificar?
+
+138
+00:07:54.276 --> 00:07:55.436
+Porque el área es de cálculo,
+
+139
+00:07:56.256 --> 00:07:59.996
+el time name es como se configura en la familia, eso no se puede modificar,
+
+140
+00:08:01.456 --> 00:08:03.276
+pero esto sí. Voy
+
+141
+00:08:04.076 --> 00:08:04.256
+a
+
+142
+00:08:06.876 --> 00:08:08.136
+cerrar acá
+
+143
+00:08:10.156 --> 00:08:12.376
+mi imagen para que no moleste.
+
+144
+00:08:12.406 --> 00:08:15.516
+Vamos a poner esto
+
+145
+00:08:15.616 --> 00:08:16.836
+en grande
+
+146
+00:08:17.896 --> 00:08:21.596
+y en la parte inferior, voy a
+
+147
+00:08:21.676 --> 00:08:24.536
+poner acá mi cámara de este lado para que no moleste,
+
+148
+00:08:25.956 --> 00:08:27.336
+sale acá
+
+149
+00:08:30.156 --> 00:08:33.437
+lo que viene a ser la opción de exportar.
+
+150
+00:08:35.136 --> 00:08:36.576
+Entonces, yo le voy a dar a exportar.
+
+151
+00:08:38.076 --> 00:08:41.516
+Y fíjense que yo lo puedo exportar con Excel y una hoja de Google,
+
+152
+00:08:42.297 --> 00:08:45.056
+que si ustedes le dan a la hoja de Google, me encanta esto,
+
+153
+00:08:45.936 --> 00:08:48.576
+porque ustedes lo pueden subir entonces a su drive.
+
+154
+00:08:49.156 --> 00:08:51.876
+Yo lo puedo subir a mi drive de design modeling.
+
+155
+00:08:52.766 --> 00:08:56.526
+Aquí hay una
+
+156
+00:08:56.556 --> 00:08:56.976
+opción
+
+157
+00:08:58.616 --> 00:09:00.536
+para que ustedes la tengan en cuenta.
+
+158
+00:09:01.916 --> 00:09:05.836
+Antes tienen que desbloquear en la parte de su
+
+159
+00:09:06.756 --> 00:09:09.056
+ordenador o en
+
+160
+00:09:11.616 --> 00:09:15.176
+el firewall para que no se bloquee esta
+
+161
+00:09:16.456 --> 00:09:17.116
+aplicación.
+
+162
+00:09:20.056 --> 00:09:23.916
+Eso yo se los puedo explicar en la sesión en vivo, inclusive pueden ver un video al
+
+163
+00:09:23.956 --> 00:09:27.496
+respecto, no es el objetivo de esta lección, pero sí lo pueden hacer.
+
+164
+00:09:27.716 --> 00:09:31.216
+Aquí, porque yo lo estoy tratando de conectar
+
+165
+00:09:31.596 --> 00:09:35.516
+y no dejé habilitado como
+
+166
+00:09:35.616 --> 00:09:38.826
+tal el tema del
+
+167
+00:09:43.696 --> 00:09:45.476
+enlace. Por eso no se ve todavía.
+
+168
+00:09:46.916 --> 00:09:47.556
+No pasa nada.
+
+169
+00:09:48.676 --> 00:09:52.256
+Vamos a regresarnos. Entonces yo le voy a decir: "Se agotó el tiempo de espera".
+
+170
+00:09:52.476 --> 00:09:53.256
+No pasa nada.
+
+171
+00:09:54.156 --> 00:09:56.296
+Vamos a regresar acá a
+
+172
+00:09:57.756 --> 00:09:58.356
+Revit.
+
+173
+00:09:59.596 --> 00:10:03.136
+Y aquí lo voy a hacer de la siguiente manera.
+
+174
+00:10:03.596 --> 00:10:07.516
+Uno puede iniciar sesión, seguir todos
+
+175
+00:10:07.556 --> 00:10:09.876
+estos pasos, pero lo va a hacer más práctico.
+
+176
+00:10:10.416 --> 00:10:14.196
+Prefiero que lo hagamos acá. Exportamos, le damos a
+
+177
+00:10:14.216 --> 00:10:14.556
+Excel,
+
+178
+00:10:15.716 --> 00:10:17.056
+lo guardamos dentro de
+
+179
+00:10:18.776 --> 00:10:22.315
+nuestro ordenador. Entonces, yo lo voy a colocar "muros
+
+180
+00:10:23.036 --> 00:10:23.976
+comentarios".
+
+181
+00:10:26.596 --> 00:10:29.096
+Ahí se va a abrir un Excel.
+
+182
+00:10:31.536 --> 00:10:34.336
+Vamos a cambiar aquí el share para que puedan ver el Excel.
+
+183
+00:10:36.676 --> 00:10:40.156
+Entonces, acá en el Excel, fíjense que yo lo que
+
+184
+00:10:40.176 --> 00:10:44.096
+quiero es esta parte, donde dice Type Comments.
+
+185
+00:10:44.816 --> 00:10:45.896
+Esto les va a salir en
+
+186
+00:10:48.576 --> 00:10:52.536
+blanco. Entonces, ¿qué se hace? Por ejemplo,
+
+187
+00:10:52.576 --> 00:10:53.536
+aquí yo coloco, mira.
+
+188
+00:10:54.656 --> 00:10:58.496
+Yo voy a ir ordenando aquí en los nombres, este es el ID,
+
+189
+00:10:58.996 --> 00:11:00.396
+aquí es el área,
+
+190
+00:11:01.516 --> 00:11:02.816
+y este es el nombre, time name.
+
+191
+00:11:03.656 --> 00:11:05.516
+Entonces, en el time name, fíjense que
+
+192
+00:11:06.756 --> 00:11:08.316
+no me salen todavía los
+
+193
+00:11:09.156 --> 00:11:10.116
+nombres como tal.
+
+194
+00:11:11.096 --> 00:11:13.705
+Entonces, en vez de time name, vamos a cerrar,
+
+195
+00:11:14.516 --> 00:11:15.205
+esta no me gustó,
+
+196
+00:11:16.196 --> 00:11:19.386
+vamos a colocar solo Type. Este,
+
+197
+00:11:20.136 --> 00:11:21.455
+no time name, Type.
+
+198
+00:11:22.946 --> 00:11:26.896
+Y vamos a subir el Type hacia arriba y el time name
+
+199
+00:11:26.936 --> 00:11:30.396
+lo vamos a eliminar. Botón secundario, o solo seleccionan suprimir,
+
+200
+00:11:31.516 --> 00:11:33.556
+o lo mandan a la izquierda, como ustedes deseen.
+
+201
+00:11:34.716 --> 00:11:37.156
+Y nuevamente lo voy a exportar, Excel.
+
+202
+00:11:38.836 --> 00:11:42.336
+Vamos nuevamente aquí a
+
+203
+00:11:42.876 --> 00:11:46.736
+los documentos y voy a colocar "muros comentarios", le doy Guardar,
+
+204
+00:11:47.296 --> 00:11:47.996
+Sobrescribir
+
+205
+00:11:49.596 --> 00:11:50.896
+y se va a abrir el Excel.
+
+206
+00:11:55.476 --> 00:11:58.926
+Fíjense. Voy a
+
+207
+00:11:59.016 --> 00:12:01.496
+compartir mejor toda la pantalla para que esto no
+
+208
+00:12:01.516 --> 00:12:04.148
+molesteScreen Share.
+
+209
+00:12:05.068 --> 00:12:09.048
+Cuando yo cambio aquí, que lo acabo de hacer, fíjense, el cambio que hice fue
+
+210
+00:12:09.128 --> 00:12:10.988
+en vez de Type Name coloque Type.
+
+211
+00:12:12.748 --> 00:12:14.288
+Y el Type Name lo mandé a la izquierda.
+
+212
+00:12:14.988 --> 00:12:18.648
+Cuando quieren mandar un elemento, fíjense, este estaba así, simplemente lo que
+
+213
+00:12:18.668 --> 00:12:20.428
+hacen es seleccionan y lo mandan a la izquierda.
+
+214
+00:12:21.668 --> 00:12:25.448
+Entonces voy a regresarme aquí al
+
+215
+00:12:27.128 --> 00:12:27.588
+Excel
+
+216
+00:12:28.468 --> 00:12:29.088
+que yo tengo
+
+217
+00:12:29.988 --> 00:12:32.828
+y en este Excel ahora sí me salen los nombres por Type.
+
+218
+00:12:33.588 --> 00:12:37.528
+Y voy a colocar, por ejemplo, todo lo que sea
+
+219
+00:12:37.668 --> 00:12:40.388
+en este apartado,
+
+220
+00:12:41.368 --> 00:12:44.248
+todo lo que sea tabiquería,
+
+221
+00:12:44.828 --> 00:12:48.648
+va a tener
+
+222
+00:12:48.688 --> 00:12:51.868
+un fabricante, por ejemplo, lo voy a poner acá.
+
+223
+00:12:56.768 --> 00:12:57.808
+Vamos a darle a OK.
+
+224
+00:12:58.948 --> 00:13:01.668
+Entonces, todo lo que sea tabiquería, aquí me faltó el
+
+225
+00:13:01.688 --> 00:13:04.168
+bañería.
+
+226
+00:13:05.628 --> 00:13:09.548
+Todo lo que sea tabiquería va a tener un fabricante, que le voy a colocar
+
+227
+00:13:09.568 --> 00:13:10.328
+aquí en el nombre,
+
+228
+00:13:12.068 --> 00:13:13.928
+Fabricante
+
+229
+00:13:15.228 --> 00:13:15.628
+Quito.
+
+230
+00:13:18.308 --> 00:13:18.408
+Lo
+
+231
+00:13:21.208 --> 00:13:22.988
+voy a copiar y lo voy a pegar.
+
+232
+00:13:25.808 --> 00:13:27.468
+Y ahora el resto,
+
+233
+00:13:28.948 --> 00:13:31.528
+seleccionamos todos y quitamos tabiquería.
+
+234
+00:13:34.188 --> 00:13:37.248
+Lo voy a seleccionar.
+
+235
+00:13:38.548 --> 00:13:39.388
+Vamos a eliminarlo.
+
+236
+00:13:40.268 --> 00:13:43.328
+Va a ser, en este caso, Fabricante
+
+237
+00:13:46.648 --> 00:13:47.288
+Guayaquil.
+
+238
+00:13:53.268 --> 00:13:54.168
+Copiamos.
+
+239
+00:13:55.408 --> 00:13:57.708
+Vean que todo lo que está en amarillo se puede modificar.
+
+240
+00:13:59.488 --> 00:14:01.868
+Fabricante Guayaquil, perfecto.
+
+241
+00:14:02.988 --> 00:14:06.828
+Ahí tengo las áreas. Fíjense que aquí puedo ver hasta las áreas de una vez, la
+
+242
+00:14:06.848 --> 00:14:07.768
+exporto a Excel.
+
+243
+00:14:09.208 --> 00:14:12.088
+Y lo que puedo modificar es el Top Offset, el Top Constraint.
+
+244
+00:14:12.188 --> 00:14:15.048
+Entonces, todo lo que sea la parte de
+
+245
+00:14:17.148 --> 00:14:17.768
+tabiquería,
+
+246
+00:14:19.208 --> 00:14:21.588
+estos dos.
+
+247
+00:14:22.528 --> 00:14:26.368
+Fíjense que yo, si quisiera, solo vamos a ver tabiquería 10 centímetros.
+
+248
+00:14:27.728 --> 00:14:28.828
+Vamos a dejar tabiquería 10
+
+249
+00:14:28.838 --> 00:14:34.948
+centímetros.
+
+250
+00:14:35.668 --> 00:14:38.628
+Si yo quisiera, yo le puedo cambiar los niveles.
+
+251
+00:14:39.408 --> 00:14:41.888
+Por ejemplo, este que está acá, en vez de nivel dos,
+
+252
+00:14:43.008 --> 00:14:46.408
+yo quiero que la base sea nivel tres.
+
+253
+00:14:48.048 --> 00:14:49.648
+Que todo sea nivel tres.
+
+254
+00:14:51.228 --> 00:14:52.188
+Nivel tres,
+
+255
+00:14:53.248 --> 00:14:54.268
+nivel tres,
+
+256
+00:14:55.528 --> 00:14:56.928
+nivel tres
+
+257
+00:14:57.848 --> 00:14:58.668
+y nivel tres.
+
+258
+00:15:00.268 --> 00:15:03.768
+Y el Offset como tal,
+
+259
+00:15:04.168 --> 00:15:06.628
+todo sea -2. Entonces, yo agarro aquí,
+
+260
+00:15:07.548 --> 00:15:09.048
+copio y pego.
+
+261
+00:15:10.248 --> 00:15:12.748
+Y ahora voy a guardar, vamos a quitarle aquí
+
+262
+00:15:14.688 --> 00:15:16.048
+el filtro, seleccionamos todo,
+
+263
+00:15:17.308 --> 00:15:18.368
+guardamos esto.
+
+264
+00:15:20.748 --> 00:15:21.528
+Cerramos.
+
+265
+00:15:22.888 --> 00:15:25.508
+Ahora nos vamos nuevamente a SheetLink
+
+266
+00:15:26.788 --> 00:15:30.768
+y aquí en SheetLink, aquí donde dice Importar, le damos importar desde
+
+267
+00:15:30.808 --> 00:15:31.188
+Excel,
+
+268
+00:15:33.348 --> 00:15:36.648
+muros comentarios, le damos
+
+269
+00:15:36.658 --> 00:15:37.648
+abrir.
+
+270
+00:15:40.088 --> 00:15:42.408
+Y vean lo excelente de esto, lo rápido.
+
+271
+00:15:43.588 --> 00:15:47.468
+Hay un elemento que me dice que no puede ser unido con nivel dos,
+
+272
+00:15:47.488 --> 00:15:48.808
+nivel tres, con los Constraints.
+
+273
+00:15:50.148 --> 00:15:52.148
+Yo puedo guardar el reporte, le digo: "No pasa nada",
+
+274
+00:15:53.048 --> 00:15:56.748
+pero, ¿qué va a pasar? Fíjense. Aquí, todo lo que era tabiquería, yo puedo
+
+275
+00:15:56.768 --> 00:16:00.348
+agarrar esto, que me encanta, el SheetLink,
+
+276
+00:16:01.288 --> 00:16:04.717
+y esto que está acá, yo le puedo decir aislar
+
+277
+00:16:04.848 --> 00:16:05.388
+selección.
+
+278
+00:16:06.288 --> 00:16:09.748
+Que son todos los tipos.
+
+279
+00:16:10.248 --> 00:16:14.068
+Entonces, cuando yo le dé aislar selección, vamos a poner esto así,
+
+280
+00:16:14.548 --> 00:16:15.808
+me muestra solo los muros.
+
+281
+00:16:17.128 --> 00:16:20.967
+Y aquí, a mí el que me interesa por elemento
+
+282
+00:16:22.108 --> 00:16:22.888
+es la tabiquería.
+
+283
+00:16:24.328 --> 00:16:28.248
+Entonces, yo acá rápidamente en la
+
+284
+00:16:28.368 --> 00:16:29.188
+parte de
+
+285
+00:16:30.188 --> 00:16:32.928
+categorías de anotación, elementos,
+
+286
+00:16:34.308 --> 00:16:36.708
+Walls.
+
+287
+00:16:36.788 --> 00:16:40.568
+Este es Base Wall tabiquería de 10
+
+288
+00:16:40.628 --> 00:16:42.068
+centímetros y tabiquería.
+
+289
+00:16:43.488 --> 00:16:47.288
+Yo le puedo restablecer aislar selección, entonces me va a
+
+290
+00:16:47.348 --> 00:16:47.788
+mostrar
+
+291
+00:16:48.608 --> 00:16:52.308
+solo la tabiquería, lo excelente que es esto, lo rápido que yo lo puedo hacer.
+
+292
+00:16:52.568 --> 00:16:54.167
+Esto en proyectos grandes es un hitazo.
+
+293
+00:16:55.568 --> 00:16:55.688
+Y
+
+294
+00:16:56.628 --> 00:16:57.008
+ahora,
+
+295
+00:16:58.628 --> 00:17:01.928
+aquí, cuando yo seleccione la tabiquería,
+
+296
+00:17:02.328 --> 00:17:03.128
+fíjense que
+
+297
+00:17:04.388 --> 00:17:07.028
+acá en Edit Types,
+
+298
+00:17:08.429 --> 00:17:10.768
+en los Type Comments, fabricante Quito.
+
+299
+00:17:12.949 --> 00:17:16.868
+Y cuando yo seleccione los de tabiquería,
+
+300
+00:17:16.998 --> 00:17:19.429
+¿esta es tabiquería? ¿Esta es la de 10 centímetros? ¿Será esta?
+
+301
+00:17:20.469 --> 00:17:20.709
+No.
+
+302
+00:17:21.808 --> 00:17:24.308
+Esta, la de 10 centímetros, Edit Type,
+
+303
+00:17:26.008 --> 00:17:27.128
+vean, fabricante Quito.
+
+304
+00:17:29.288 --> 00:17:32.088
+Y la otra, que teníamos creo que como fabricante.
+
+305
+00:17:32.608 --> 00:17:35.107
+Ya me di cuenta.
+
+306
+00:17:36.548 --> 00:17:40.408
+Aquí le hicimos fabricante Quito y se mantiene solo fabricante Quito
+
+307
+00:17:40.428 --> 00:17:44.368
+porque es por tipo y el tipo se mantiene igual,
+
+308
+00:17:44.408 --> 00:17:48.248
+o sea, no va a cambiar. Aquí lo que tendríamos que hacer es
+
+309
+00:17:48.328 --> 00:17:51.988
+generar una marca, por
+
+310
+00:17:52.108 --> 00:17:52.508
+marca.
+
+311
+00:17:54.748 --> 00:17:57.388
+Por marca o por comentario externo.
+
+312
+00:17:58.308 --> 00:18:00.028
+Eso lo pueden solucionar con el SheetLink.
+
+313
+00:18:00.248 --> 00:18:03.968
+Pero lo que quiero mostrarles es esto y la parte
+
+314
+00:18:04.408 --> 00:18:07.156
+que yo puedo modificarY
+
+315
+00:18:08.396 --> 00:18:10.556
+como yo quería las tabiquerías,
+
+316
+00:18:11.596 --> 00:18:15.556
+fíjense que todas las alturas yo las modifiqué
+
+317
+00:18:16.736 --> 00:18:19.836
+tal cual con el Excel. ¿Cómo quedó?
+
+318
+00:18:20.676 --> 00:18:21.116
+Entonces,
+
+319
+00:18:22.096 --> 00:18:24.956
+el SheetLink funciona para eso, para actualizar los
+
+320
+00:18:25.016 --> 00:18:28.836
+datos y también no solo los datos, sino inclusive
+
+321
+00:18:28.876 --> 00:18:31.696
+las tablas de planificación. Por ejemplo, en esta tabla de planificación
+
+322
+00:18:32.656 --> 00:18:35.416
+yo tengo una de accesorios que ya está creada.
+
+323
+00:18:35.676 --> 00:18:39.316
+Todas las tablas de planificación que se crean acá, yo las puedo arrastrar acá
+
+324
+00:18:40.236 --> 00:18:42.716
+y estas las puedo exportar
+
+325
+00:18:45.056 --> 00:18:48.076
+en la opción exportar a Excel,
+
+326
+00:18:50.416 --> 00:18:51.416
+ponerle accesorios
+
+327
+00:18:52.376 --> 00:18:53.115
+y ahí se va a abrir.
+
+328
+00:18:56.716 --> 00:19:00.556
+Ahorita todas están de color rojo y no hay parámetros en esa parte de accesorios.
+
+329
+00:19:01.076 --> 00:19:04.576
+Si ustedes se dan cuenta, véanse aquí en la parte de tabla de accesorios, no hay
+
+330
+00:19:04.616 --> 00:19:08.536
+nada. Pero, por ejemplo, la tabla de uniones o tabla de aparatos sanitarios
+
+331
+00:19:08.556 --> 00:19:12.036
+sí tiene. Entonces, yo me voy al SheetLink
+
+332
+00:19:13.256 --> 00:19:16.676
+y le agarro esta de aparatos sanitarios,
+
+333
+00:19:18.276 --> 00:19:19.016
+exporto,
+
+334
+00:19:20.296 --> 00:19:20.756
+Excel,
+
+335
+00:19:22.776 --> 00:19:23.316
+guardar.
+
+336
+00:19:25.736 --> 00:19:29.536
+Y todas estas tablas se pueden convertir esa hoja de Google Drive y todos los
+
+337
+00:19:29.576 --> 00:19:33.176
+cambios que se vayan haciendo en el Revit se actualizan
+
+338
+00:19:33.196 --> 00:19:33.946
+automáticamente acá,
+
+339
+00:19:35.216 --> 00:19:36.066
+lo cual es excelente y
+
+340
+00:19:36.996 --> 00:19:39.956
+genial. Esa es la primera.
+
+341
+00:19:41.056 --> 00:19:41.436
+Ahora
+
+342
+00:19:42.616 --> 00:19:43.756
+vamos con la siguiente,
+
+343
+00:19:45.496 --> 00:19:49.176
+que es Sheet Generator. Esa sí no la voy a explicar, ya ustedes lo saben
+
+344
+00:19:50.956 --> 00:19:54.136
+desde el curso uno. Sheet Generator para
+
+345
+00:19:55.856 --> 00:19:56.716
+hojas masivas.
+
+346
+00:19:57.976 --> 00:19:59.736
+No es necesario que vuelva a
+
+347
+00:20:00.816 --> 00:20:02.656
+explicar esta de Sheet Generator.
+
+348
+00:20:03.196 --> 00:20:05.776
+Entonces, esta me la voy a saltar.
+
+349
+00:20:06.816 --> 00:20:09.936
+Luego vamos con Reordering, que me encanta.
+
+350
+00:20:10.096 --> 00:20:13.956
+Como punto siguiente, vámonos al
+
+351
+00:20:14.136 --> 00:20:17.056
+3D. Vamos a quitar acá, vamos a restablecer
+
+352
+00:20:17.936 --> 00:20:21.796
+y vámonos a una vista en planta. Vámonos a una vista en planta,
+
+353
+00:20:22.336 --> 00:20:23.455
+aquí. Vámonos a
+
+354
+00:20:24.876 --> 00:20:28.636
+este nivel uno. O vámonos a un nivel tres,
+
+355
+00:20:28.896 --> 00:20:29.456
+mejor dicho.
+
+356
+00:20:31.016 --> 00:20:33.416
+Vámonos a un nivel tres y esto entra como
+
+357
+00:20:34.376 --> 00:20:35.756
+furniture. Perfecto. Entonces,
+
+358
+00:20:36.616 --> 00:20:40.276
+yo quiero reordenar por colores y por numeración
+
+359
+00:20:40.356 --> 00:20:43.936
+rápida ciertos elementos que están en la misma
+
+360
+00:20:43.976 --> 00:20:47.856
+categoría. Por ejemplo, esto sucede mucho con los mobiliarios, mucho en la
+
+361
+00:20:47.936 --> 00:20:50.156
+parte de arquitectura. Entonces, yo le voy a dar a Reordering.
+
+362
+00:20:51.956 --> 00:20:55.536
+Vamos a
+
+363
+00:20:55.616 --> 00:21:05.936
+cerrar
+
+364
+00:21:05.976 --> 00:21:06.716
+esto un momento.
+
+365
+00:21:08.136 --> 00:21:11.096
+Vamos a reiniciar, voy a abrir otro. One parameter.
+
+366
+00:21:11.916 --> 00:21:13.056
+No, one parameter no.
+
+367
+00:21:14.496 --> 00:21:16.376
+Ya, vamos a cerrar.
+
+368
+00:21:18.996 --> 00:21:22.556
+Este no me deja cerrar, esto es un dolor de cabeza.
+
+369
+00:21:23.296 --> 00:21:23.996
+Moverla.
+
+370
+00:21:25.416 --> 00:21:26.676
+Denme aquí un segundo.
+
+371
+00:21:28.876 --> 00:21:31.776
+A ver, ahí está, Reorder. Voy a cerrarla.
+
+372
+00:21:32.516 --> 00:21:36.216
+Y cuando ustedes no sepan para qué funciona cada elemento del
+
+373
+00:21:36.296 --> 00:21:39.696
+roots, ustedes se van a ir aquí y se emplea inteligente para agregar
+
+374
+00:21:39.716 --> 00:21:42.056
+dinámicamente una numeración automática de los objetos.
+
+375
+00:21:43.196 --> 00:21:43.596
+Entonces,
+
+376
+00:21:45.036 --> 00:21:46.516
+yo quiero los furniture
+
+377
+00:21:47.536 --> 00:21:47.876
+de acá.
+
+378
+00:21:49.256 --> 00:21:52.276
+Entonces, de esos furniture vamos a
+
+379
+00:21:53.216 --> 00:21:55.776
+seleccionar esta vista.
+
+380
+00:21:57.296 --> 00:22:00.376
+Siempre cuando se les mueva un poquito, le dan clic aquí y listo.
+
+381
+00:22:00.416 --> 00:22:01.676
+Entonces, le dicen vista actual,
+
+382
+00:22:02.496 --> 00:22:04.576
+o sea, la vista donde estoy, que es esta.
+
+383
+00:22:06.076 --> 00:22:07.156
+Nivel tres.
+
+384
+00:22:08.096 --> 00:22:08.536
+Y
+
+385
+00:22:10.056 --> 00:22:13.956
+obviamente ustedes pueden ir seleccionando todas las categorías, pueden inclusive
+
+386
+00:22:13.996 --> 00:22:16.216
+colocar todo el modelo si quisieran.
+
+387
+00:22:17.716 --> 00:22:20.436
+Vean que si yo coloco todo el modelo y le doy furniture,
+
+388
+00:22:21.736 --> 00:22:23.396
+me va a salir todo
+
+389
+00:22:25.076 --> 00:22:28.876
+el modelo, o en realidad vista activa,
+
+390
+00:22:29.516 --> 00:22:31.596
+que es esta vista que está acá, yo le doy furniture
+
+391
+00:22:32.456 --> 00:22:36.096
+y ahí me va a salir. La verdad, a mí me gusta porque esto
+
+392
+00:22:37.296 --> 00:22:40.296
+tarda, él piensa un poquito hasta poder seleccionar.
+
+393
+00:22:40.386 --> 00:22:41.956
+A mí me gusta con esta selección actual.
+
+394
+00:22:43.096 --> 00:22:46.636
+¿Por qué? Porque con la selección actual, yo con la tecla control
+
+395
+00:22:46.696 --> 00:22:47.596
+selecciono este,
+
+396
+00:22:48.426 --> 00:22:50.036
+tecla control selecciono este,
+
+397
+00:22:51.056 --> 00:22:52.736
+le doy clic acá y se activa.
+
+398
+00:22:53.696 --> 00:22:57.336
+Entonces me dice: estos son los que quieres trabajar.
+
+399
+00:22:57.496 --> 00:22:58.196
+Perfecto.
+
+400
+00:22:59.376 --> 00:23:03.256
+Inclusive yo en la vista para hacerlo más rápido, selecciono aquí, me voy
+
+401
+00:23:03.276 --> 00:23:07.116
+a Filtro, y yo quiero trabajar todos los furniture, todos los que estén en este
+
+402
+00:23:07.136 --> 00:23:11.016
+nivel. Le doy clic acá, Apply, le doy clic aquí, le doy clic acá,
+
+403
+00:23:11.896 --> 00:23:13.196
+se actualiza y ahí está.
+
+404
+00:23:14.236 --> 00:23:17.836
+Y yo le voy a colocar un prefijo. El prefijo va a ser A,
+
+405
+00:23:19.016 --> 00:23:22.136
+inicia en uno y el paso es uno, o sea, de uno en uno.
+
+406
+00:23:23.336 --> 00:23:26.816
+Y el sufijo vamos a colocarle
+
+407
+00:23:27.976 --> 00:23:29.336
+MOB de mobiliario.
+
+408
+00:23:30.196 --> 00:23:34.036
+Y le vamos a dar acá a esta opción.
+
+409
+00:23:34.196 --> 00:23:36.816
+A mí me gusta
+
+410
+00:23:37.016 --> 00:23:40.916
+mano. A mano es de la
+
+411
+00:23:40.996 --> 00:23:42.796
+siguiente forma: yo voy seleccionando.
+
+412
+00:23:43.356 --> 00:23:47.256
+Yo quiero que se organice uno, dos.
+
+413
+00:23:49.076 --> 00:23:50.656
+Aquí de este mismo nivel
+
+414
+00:23:52.076 --> 00:23:54.636
+vamos a ver cuáles más seleccionar.
+
+415
+00:23:56.416 --> 00:23:57.536
+Vamos a hacer esto
+
+416
+00:23:59.596 --> 00:24:03.556
+un momento. Voy a seleccionar todo, Filtro, chequear
+
+417
+00:24:03.596 --> 00:24:06.496
+ninguno, furniture, Apply, ok.
+
+418
+00:24:07.456 --> 00:24:11.442
+Vamos a aislar elementos. Ahí estáVamos a
+
+419
+00:24:11.452 --> 00:24:12.892
+poner ahí colores coherentes
+
+420
+00:24:14.132 --> 00:24:16.332
+y vamos seleccionando. De nuevo.
+
+421
+00:24:18.032 --> 00:24:20.832
+Este va a ser el primero. Entonces vamos a
+
+422
+00:24:22.832 --> 00:24:23.782
+darle a reordering,
+
+423
+00:24:26.592 --> 00:24:27.012
+a mano,
+
+424
+00:24:28.472 --> 00:24:30.431
+y comenzamos: uno.
+
+425
+00:24:32.132 --> 00:24:33.732
+Tocale de nuevo. Reordering,
+
+426
+00:24:35.872 --> 00:24:36.392
+a mano.
+
+427
+00:24:37.592 --> 00:24:40.232
+Uno, dos. Entonces yo puedo ir, por ejemplo,
+
+428
+00:24:41.112 --> 00:24:42.612
+en sentido
+
+429
+00:24:44.032 --> 00:24:45.772
+horario.
+
+430
+00:24:46.592 --> 00:24:47.292
+Ta,
+
+431
+00:24:48.092 --> 00:24:50.702
+ta, ta, ta. Le damos a finalizar.
+
+432
+00:24:52.412 --> 00:24:52.752
+Listo.
+
+433
+00:24:53.852 --> 00:24:55.492
+Y una vez que ya yo tenga esto,
+
+434
+00:24:56.772 --> 00:24:58.512
+le voy a decir a aplicar.
+
+435
+00:25:00.412 --> 00:25:01.232
+Le doy de acuerdo.
+
+436
+00:25:02.132 --> 00:25:04.432
+Cuando yo le doy de acuerdo, fíjense qué
+
+437
+00:25:06.052 --> 00:25:09.972
+vamos a poner acá. Cuando yo seleccione uno, fíjense que me
+
+438
+00:25:10.012 --> 00:25:13.632
+dice: a uno, mobiliario; a dos,
+
+439
+00:25:13.752 --> 00:25:14.312
+mobiliario;
+
+440
+00:25:15.192 --> 00:25:15.292
+a
+
+441
+00:25:17.212 --> 00:25:20.532
+tres, mobiliario; a cuatro, mobiliario; a cinco. ¿Y en qué me funciona esto?
+
+442
+00:25:20.612 --> 00:25:23.052
+Para las tablas de cantidades, para tener un orden.
+
+443
+00:25:23.712 --> 00:25:26.772
+Entonces, cuando yo le dé aquí a
+
+444
+00:25:27.932 --> 00:25:28.372
+reset,
+
+445
+00:25:29.352 --> 00:25:33.332
+ahí no se me va a ver. Entonces vamos a quitar esto por un momento en
+
+446
+00:25:33.372 --> 00:25:35.972
+wireframe y lo que voy a hacer es lo
+
+447
+00:25:38.572 --> 00:25:39.792
+siguiente: reordering.
+
+448
+00:25:40.712 --> 00:25:43.112
+Y yo le puedo colocar colores.
+
+449
+00:25:44.532 --> 00:25:45.852
+Yo puedo colocar aquí
+
+450
+00:25:46.692 --> 00:25:50.552
+aplicar colores. Fíjense que acá yo igual puedo configurar
+
+451
+00:25:50.732 --> 00:25:53.652
+los tipos de colores como yo quiero. No pasa nada.
+
+452
+00:25:54.692 --> 00:25:56.112
+Vamos a darle a aplicar colores.
+
+453
+00:25:58.152 --> 00:25:59.732
+Perfecto. Aplicamos.
+
+454
+00:26:01.612 --> 00:26:02.292
+Cerramos.
+
+455
+00:26:04.052 --> 00:26:05.892
+Colores coherentes. Y ahí está.
+
+456
+00:26:07.232 --> 00:26:08.572
+Uno, dos.
+
+457
+00:26:09.412 --> 00:26:12.232
+Si yo selecciono aquí, para que esté superclaro
+
+458
+00:26:13.092 --> 00:26:13.832
+nuevamente,
+
+459
+00:26:15.792 --> 00:26:18.132
+vamos aquí,
+
+460
+00:26:19.132 --> 00:26:21.892
+en el mismo reordering, aislar selección,
+
+461
+00:26:23.952 --> 00:26:25.272
+y ahí me va a salir
+
+462
+00:26:27.612 --> 00:26:30.472
+con la configuración. Esto está genial,
+
+463
+00:26:30.672 --> 00:26:32.032
+excelente.
+
+464
+00:26:33.752 --> 00:26:37.652
+Eso, básicamente, es reordering, cómo lo
+
+465
+00:26:37.712 --> 00:26:40.312
+pueden usar. También pueden crear leyendas.
+
+466
+00:26:40.332 --> 00:26:43.672
+Ustedes le dan a crear leyenda, le colocan el nombre y crean la leyenda.
+
+467
+00:26:43.712 --> 00:26:45.612
+Ya ustedes saben cómo se crean esas leyendas.
+
+468
+00:26:47.432 --> 00:26:50.212
+Vamos al siguiente, que me encanta: parameter.
+
+469
+00:26:51.092 --> 00:26:52.532
+Parameter significa
+
+470
+00:26:54.152 --> 00:26:57.872
+que nosotros acá podemos modificar los parámetros del proyecto.
+
+471
+00:26:59.872 --> 00:27:01.432
+Esto les va a volar la cabeza. ¿Por qué?
+
+472
+00:27:01.532 --> 00:27:04.292
+Porque si yo tengo que estar creando parámetros de proyecto
+
+473
+00:27:05.152 --> 00:27:08.292
+uno por uno, me voy a demorar. Entonces, ¿qué pasa?
+
+474
+00:27:08.372 --> 00:27:12.112
+Si yo aquí añado un parámetro, por ejemplo, vamos a colocarle
+
+475
+00:27:12.192 --> 00:27:12.972
+parámetro
+
+476
+00:27:15.752 --> 00:27:19.832
+fabricante
+
+477
+00:27:22.192 --> 00:27:22.672
+muro.
+
+478
+00:27:24.292 --> 00:27:27.632
+Yo decido cómo es el parámetro: que sea compartido,
+
+479
+00:27:28.252 --> 00:27:32.132
+de disciplina común, tipo texto, se agrupe
+
+480
+00:27:32.272 --> 00:27:36.092
+en parámetros, instancia. Entonces, yo le voy a
+
+481
+00:27:36.192 --> 00:27:37.932
+dar aquí a aplicar.
+
+482
+00:27:39.012 --> 00:27:42.532
+Y me dice: "Tienes que seleccionar una o más categorías".
+
+483
+00:27:42.832 --> 00:27:43.132
+Acá
+
+484
+00:27:44.032 --> 00:27:44.192
+no
+
+485
+00:27:45.072 --> 00:27:47.692
+sale. Fíjense, tengo que seleccionar la categoría.
+
+486
+00:27:48.132 --> 00:27:51.412
+Entonces, yo le selecciono la categoría y le digo: "Mira, este de muro,
+
+487
+00:27:51.672 --> 00:27:55.132
+obviamente, es para muros".
+
+488
+00:27:55.652 --> 00:27:57.972
+Le doy de acuerdo, le doy a aplicar.
+
+489
+00:27:59.572 --> 00:28:00.092
+Listo.
+
+490
+00:28:01.052 --> 00:28:04.512
+¿Qué va a pasar? Que cuando yo agarre aquí
+
+491
+00:28:05.092 --> 00:28:07.192
+en 3D para los muros
+
+492
+00:28:08.032 --> 00:28:08.812
+y seleccione,
+
+493
+00:28:09.632 --> 00:28:12.172
+va a haber uno que va a ser
+
+494
+00:28:14.152 --> 00:28:14.692
+muro.
+
+495
+00:28:16.292 --> 00:28:17.432
+Este es muro.
+
+496
+00:28:17.912 --> 00:28:21.632
+Entonces va a haber uno que se llame
+
+497
+00:28:21.912 --> 00:28:23.612
+fabricante muro. Así de rápido.
+
+498
+00:28:25.072 --> 00:28:29.051
+Y además, después, esto es genial, porque créanme
+
+499
+00:28:29.092 --> 00:28:31.272
+que en un proyecto crear esto manual es un dolor de cabeza.
+
+500
+00:28:31.792 --> 00:28:34.972
+Aquí en manage ustedes van a ver todos los parámetros
+
+501
+00:28:35.012 --> 00:28:36.832
+compartidos y
+
+502
+00:28:37.812 --> 00:28:40.812
+no les va a salir como tal. Después los tienen que crear.
+
+503
+00:28:41.012 --> 00:28:44.912
+En los parámetros de proyecto se les genera y cuando
+
+504
+00:28:44.952 --> 00:28:46.632
+ustedes lo modifican es un parámetro
+
+505
+00:28:46.732 --> 00:28:50.612
+compartido. Ahí están
+
+506
+00:28:50.652 --> 00:28:51.272
+los valores.
+
+507
+00:28:52.142 --> 00:28:56.012
+¿Y qué tienen que hacer luego para que lo puedan compartir,
+
+508
+00:28:56.052 --> 00:28:57.892
+los archivos de texto y toda la cuestión?
+
+509
+00:28:58.012 --> 00:28:58.932
+Simplemente acá
+
+510
+00:29:00.912 --> 00:29:03.112
+seleccionan parámetros compartidos,
+
+511
+00:29:04.132 --> 00:29:04.812
+crean uno
+
+512
+00:29:06.052 --> 00:29:08.032
+y yo le voy a decir: parámetros
+
+513
+00:29:08.872 --> 00:29:09.692
+proyecto
+
+514
+00:29:10.812 --> 00:29:11.172
+BG.
+
+515
+00:29:12.572 --> 00:29:14.692
+Y de ahí
+
+516
+00:29:15.412 --> 00:29:18.632
+creamos uno nuevo:
+
+517
+00:29:19.952 --> 00:29:21.912
+parámetros muros.
+
+518
+00:29:22.932 --> 00:29:23.492
+Le damos ok
+
+519
+00:29:27.012 --> 00:29:29.152
+y le damos acá en new.
+
+520
+00:29:31.512 --> 00:29:33.552
+Entonces aquí coloco parámetros
+
+521
+00:29:34.792 --> 00:29:38.712
+muros. Por ejemplo,
+
+522
+00:29:38.772 --> 00:29:40.292
+que sea texto.
+
+523
+00:29:41.592 --> 00:29:42.032
+Entonces
+
+524
+00:29:42.932 --> 00:29:43.592
+le doy ok
+
+525
+00:29:45.732 --> 00:29:46.212
+y le doy ok.
+
+526
+00:29:47.072 --> 00:29:49.772
+Entonces es lo mismo cuando yo vaya a crear un parámetro de proyecto.
+
+527
+00:29:50.552 --> 00:29:52.092
+Por ejemplo, edito este
+
+528
+00:29:53.332 --> 00:29:53.552
+y
+
+529
+00:29:55.492 --> 00:29:58.072
+acá vamos a seleccionar uno nuevo.
+
+530
+00:29:58.852 --> 00:30:01.932
+Cuando uno seleccionaba uno nuevo, tenía que agarrar acá,
+
+531
+00:30:02.912 --> 00:30:05.492
+seleccionaba el parámetro muro, etcétera.
+
+532
+00:30:05.892 --> 00:30:09.672
+Pero lo interesante de esto, que este que se creó
+
+533
+00:30:09.732 --> 00:30:10.012
+por
+
+534
+00:30:11.472 --> 00:30:15.452
+Droots, simplemente le damos aquí a editar y le
+
+535
+00:30:15.472 --> 00:30:19.328
+damos a exportarEntonces: "The parameter
+
+536
+00:30:19.368 --> 00:30:22.968
+will be exported to the current shared parameter file in the parameter group
+
+537
+00:30:23.108 --> 00:30:26.798
+'Exported parameters'". Le doy a Aceptar y luego a
+
+538
+00:30:26.798 --> 00:30:29.028
+Ok. Cuando voy a
+
+539
+00:30:31.188 --> 00:30:32.308
+Parámetros compartidos,
+
+540
+00:30:33.228 --> 00:30:34.188
+hay uno que se llama
+
+541
+00:30:35.788 --> 00:30:37.508
+Parámetros exportados
+
+542
+00:30:39.188 --> 00:30:40.468
+y tiene fabricante muro.
+
+543
+00:30:42.868 --> 00:30:45.068
+Esto es genial, nos ahorra
+
+544
+00:30:46.368 --> 00:30:50.268
+un montón de tiempo, porque en vez de estar creando uno por uno
+
+545
+00:30:50.328 --> 00:30:53.848
+en Revit, lo único que hacemos es
+
+546
+00:30:53.888 --> 00:30:57.548
+crearlo de esta
+
+547
+00:30:57.608 --> 00:30:57.968
+manera.
+
+548
+00:30:59.168 --> 00:31:00.108
+Y listo, eso es todo.
+
+549
+00:31:01.068 --> 00:31:04.868
+Vean que tiene categorías, transferir, y en esta
+
+550
+00:31:04.908 --> 00:31:08.168
+opción de transferir yo puedo seleccionar
+
+551
+00:31:08.408 --> 00:31:11.928
+una familia. Seleccionamos familias, por ejemplo,
+
+552
+00:31:12.008 --> 00:31:13.808
+cama, estas que están acá.
+
+553
+00:31:15.868 --> 00:31:19.788
+Luego que selecciono la familia, estas familias se pueden
+
+554
+00:31:19.848 --> 00:31:20.008
+ir
+
+555
+00:31:20.868 --> 00:31:21.768
+al bloque.
+
+556
+00:31:22.728 --> 00:31:24.488
+Entonces, yo le puedo decir: "Bueno, sí, está bien".
+
+557
+00:31:25.228 --> 00:31:27.568
+Te vas a seleccionar para acá y le doy a Aplicar.
+
+558
+00:31:29.128 --> 00:31:32.448
+Tengo que seleccionar aquí uno o dos parámetros.
+
+559
+00:31:33.288 --> 00:31:37.248
+Voy a
+
+560
+00:31:37.308 --> 00:31:39.468
+seleccionar esta familia.
+
+561
+00:31:41.168 --> 00:31:42.688
+Estas familias que están acá
+
+562
+00:31:44.428 --> 00:31:46.818
+ya las voy a aplicar. Estas que están aquí, yo
+
+563
+00:31:47.928 --> 00:31:51.348
+las meto dentro de esta familia.
+
+564
+00:31:52.838 --> 00:31:56.148
+Entonces, yo le digo: "Por favor, seleccione uno o dos parámetros, tienen que
+
+565
+00:31:56.168 --> 00:31:57.568
+coincidir". Vamos a ver.
+
+566
+00:31:59.008 --> 00:32:01.048
+Seleccione una o dos familias.
+
+567
+00:32:05.408 --> 00:32:07.868
+Aquí, no. Este tiene que coincidir.
+
+568
+00:32:08.738 --> 00:32:10.348
+No es tan práctico, la verdad.
+
+569
+00:32:11.868 --> 00:32:15.788
+Tenemos que hacer coincidir. Tiene que hacerse a M hormiga viga
+
+570
+00:32:15.868 --> 00:32:19.268
+rectangular. Entonces, yo tengo que buscar M piso
+
+571
+00:32:22.648 --> 00:32:26.348
+por la H, viga rectangular y darle a
+
+572
+00:32:26.358 --> 00:32:26.807
+Aplicar.
+
+573
+00:32:29.108 --> 00:32:29.468
+Pero
+
+574
+00:32:30.708 --> 00:32:34.428
+no va a quedar bien. Inclusive, yo pudiera seleccionar todas las
+
+575
+00:32:34.448 --> 00:32:35.388
+familias y le doy a Aplicar,
+
+576
+00:32:36.248 --> 00:32:38.808
+y me sigue seleccionando cuántos parámetros son.
+
+577
+00:32:38.848 --> 00:32:40.248
+Entonces, esta de transferir
+
+578
+00:32:41.608 --> 00:32:43.528
+no es tan práctica, la verdad.
+
+579
+00:32:44.408 --> 00:32:47.268
+Ahí hace la transferencia, seleccionando aquí y acá.
+
+580
+00:32:47.728 --> 00:32:51.688
+Lo que va a transferir es esta familia que se acaba de crear a todas las familias
+
+581
+00:32:51.748 --> 00:32:52.368
+por defecto.
+
+582
+00:32:55.108 --> 00:32:57.748
+Podría utilizarse, pero no.
+
+583
+00:32:58.828 --> 00:33:02.708
+Vamos a ver otro, vamos a cerrar este, que vamos a usar de una mejor
+
+584
+00:33:02.768 --> 00:33:06.308
+manera, que es View Manager. Repaso
+
+585
+00:33:06.408 --> 00:33:08.648
+rápido: el View Manager les permite
+
+586
+00:33:09.688 --> 00:33:11.408
+ver todas las
+
+587
+00:33:12.808 --> 00:33:13.608
+vistas del modelo.
+
+588
+00:33:15.008 --> 00:33:18.748
+Y con todas las vistas del modelo,
+
+589
+00:33:19.608 --> 00:33:21.708
+vean que ahí sigue. Vamos a esperar.
+
+590
+00:33:23.968 --> 00:33:26.748
+Vamos a esperar, porque si no se va a poner mucho más lento.
+
+591
+00:33:26.828 --> 00:33:27.528
+Estábamos en
+
+592
+00:33:30.748 --> 00:33:31.348
+Parameter Manager.
+
+593
+00:33:36.148 --> 00:33:38.368
+Y Parameter Manager todavía está cargando.
+
+594
+00:33:39.268 --> 00:33:42.948
+Todavía está cargando
+
+595
+00:33:44.048 --> 00:33:45.048
+en la opción Transferir.
+
+596
+00:33:47.278 --> 00:33:48.288
+Ya. Okey,
+
+597
+00:33:49.488 --> 00:33:51.388
+listo. Vamos a cerrar.
+
+598
+00:33:57.328 --> 00:34:00.028
+Listo. Tuve que cerrar un momento el modelo porque se había colgado.
+
+599
+00:34:00.068 --> 00:34:01.808
+Entonces, nos vamos al View Manager.
+
+600
+00:34:01.848 --> 00:34:05.408
+Este View Manager es básicamente un manager de las
+
+601
+00:34:05.448 --> 00:34:09.188
+vistas. Por
+
+602
+00:34:09.228 --> 00:34:11.488
+ejemplo, fíjense que yo tengo todas mis vistas.
+
+603
+00:34:12.248 --> 00:34:16.069
+Acá yo lo que puedo hacer es lo
+
+604
+00:34:16.129 --> 00:34:18.169
+siguiente. Aquí está el nombre de la vista.
+
+605
+00:34:18.669 --> 00:34:21.868
+Aquí dice todas vistas 3D.
+
+606
+00:34:22.888 --> 00:34:26.268
+Aquí yo las puedo filtrar con plan de ingeniería, los planos de techo.
+
+607
+00:34:26.728 --> 00:34:30.688
+Yo puedo ir filtrando, coloco todas, pero realmente, ¿qué puedo hacer con
+
+608
+00:34:30.728 --> 00:34:31.368
+esto? Uno,
+
+609
+00:34:32.169 --> 00:34:32.948
+puedo renombrar.
+
+610
+00:34:34.187 --> 00:34:36.187
+Entonces, yo le digo: "Mira, yo quiero renombrar esta".
+
+611
+00:34:38.109 --> 00:34:39.067
+Y le cambio el nombre.
+
+612
+00:34:40.308 --> 00:34:43.169
+O puedo colocar todas las vistas y trabajarlas con un
+
+613
+00:34:44.089 --> 00:34:46.728
+grupo que pudiera ser, fíjense, esta, esta, esta.
+
+614
+00:34:47.589 --> 00:34:51.158
+Le damos renombrar. Yo le puedo utilizar un prefijo
+
+615
+00:34:51.609 --> 00:34:53.968
+A, sufijo
+
+616
+00:34:57.488 --> 00:34:58.608
+BZ, por ejemplo,
+
+617
+00:34:59.888 --> 00:35:00.088
+y
+
+618
+00:35:00.948 --> 00:35:01.868
+reemplazar
+
+619
+00:35:02.728 --> 00:35:04.108
+3D con
+
+620
+00:35:05.528 --> 00:35:07.488
+vista. Y le doy a acuerdo.
+
+621
+00:35:10.068 --> 00:35:11.808
+Entonces, ahora fíjense cómo todo cambió.
+
+622
+00:35:13.328 --> 00:35:17.268
+Lo mismo con los parámetros. Esos son parámetros que yo puedo
+
+623
+00:35:17.328 --> 00:35:20.207
+ir agregando si quiero cambiar, por ejemplo, la disciplina.
+
+624
+00:35:21.408 --> 00:35:22.168
+Le doy de acuerdo.
+
+625
+00:35:23.168 --> 00:35:26.648
+Aquí yo puedo ir cambiando las disciplinas a las cuales pertenecen.
+
+626
+00:35:27.188 --> 00:35:29.868
+Parámetros. Yo puedo cambiar el view templates.
+
+627
+00:35:30.508 --> 00:35:34.408
+Entonces, aquí en el view template, yo puedo cambiar el template que yo
+
+628
+00:35:34.488 --> 00:35:37.968
+quiero de manera rápida, las vistas, sin necesidad de ir uno por uno.
+
+629
+00:35:38.488 --> 00:35:40.008
+Esto es genial.
+
+630
+00:35:40.048 --> 00:35:43.848
+Por ejemplo, estas son
+
+631
+00:35:43.868 --> 00:35:47.508
+plantillas. Acá, en el alzado arquitectónico,
+
+632
+00:35:47.648 --> 00:35:51.588
+todas las disciplinas y me dice todos los tipos de vista,
+
+633
+00:35:52.468 --> 00:35:56.428
+las vistas asociadas. Entonces, yo puedo ver qué plantilla
+
+634
+00:35:56.508 --> 00:36:00.268
+se está utilizando aquí en el alzado arquitectónico o la plantilla
+
+635
+00:36:00.288 --> 00:36:04.228
+como tal, y a qué vistas se aplican, es hacer la inversa de
+
+636
+00:36:04.268 --> 00:36:07.468
+acá. Y está la transferencia de plantilla, que
+
+637
+00:36:07.508 --> 00:36:10.728
+básicamente es, por ejemplo, alzado arquitectónico.
+
+638
+00:36:11.908 --> 00:36:13.968
+Yo quiero del alzado arquitectónico,
+
+639
+00:36:16.568 --> 00:36:17.288
+esta que está acá,
+
+640
+00:36:18.948 --> 00:36:22.348
+copies la propiedad de, por ejemplo, la
+
+641
+00:36:22.388 --> 00:36:26.172
+disciplinaAl alzado de estructura y este se
+
+642
+00:36:26.212 --> 00:36:29.512
+cambia ahora a alzado arquitectónico y le das a aplicar.
+
+643
+00:36:30.932 --> 00:36:34.132
+Cuando yo hago eso, vamos a ver acá
+
+644
+00:36:35.052 --> 00:36:36.272
+todas las vistas que,
+
+645
+00:36:38.332 --> 00:36:39.312
+aquí en el View Manager,
+
+646
+00:36:40.852 --> 00:36:44.092
+sean con el template, aquí en los
+
+647
+00:36:44.212 --> 00:36:44.952
+parámetros,
+
+648
+00:36:45.912 --> 00:36:46.632
+View Template,
+
+649
+00:36:47.472 --> 00:36:48.092
+agregamos.
+
+650
+00:36:50.412 --> 00:36:51.812
+Por ejemplo, esta de
+
+651
+00:36:55.212 --> 00:36:58.852
+nivel uno, plano de
+
+652
+00:36:58.952 --> 00:37:02.072
+planta, que sea alzado arquitectónico y nivel uno,
+
+653
+00:37:03.272 --> 00:37:06.932
+plan de techo, sea alzado de estructura. Le damos a aplicar.
+
+654
+00:37:07.932 --> 00:37:11.832
+Entonces ahora
+
+655
+00:37:11.932 --> 00:37:12.832
+cuando yo me vaya acá
+
+656
+00:37:14.112 --> 00:37:14.692
+a nivel uno
+
+657
+00:37:16.392 --> 00:37:19.972
+de Structural Plan, vamos a ver que
+
+658
+00:37:20.332 --> 00:37:21.212
+su template
+
+659
+00:37:22.272 --> 00:37:25.572
+era plano de
+
+660
+00:37:25.692 --> 00:37:26.332
+planta.
+
+661
+00:37:29.472 --> 00:37:31.312
+Uno era Floor Plan, que era nivel uno.
+
+662
+00:37:33.372 --> 00:37:34.092
+Este de
+
+663
+00:37:34.932 --> 00:37:35.472
+nivel uno
+
+664
+00:37:37.592 --> 00:37:41.332
+aplica su template de alzado arquitectónico. Aquí está.
+
+665
+00:37:42.852 --> 00:37:46.532
+Y
+
+666
+00:37:46.612 --> 00:37:49.972
+también le he transferido al de techo, nivel uno,
+
+667
+00:37:52.092 --> 00:37:55.812
+el property, que sea alzado de estructura, pero
+
+668
+00:37:55.852 --> 00:37:58.932
+alzado de estructura tiene la configuración del plano de techo
+
+669
+00:37:59.472 --> 00:38:00.212
+arquitectónico.
+
+670
+00:38:01.852 --> 00:38:03.792
+Vean lo genial que puedo hacer con esto.
+
+671
+00:38:05.212 --> 00:38:09.052
+Y ya está la otra de One Filter, eso yo creo que ya se lo saben de memoria, aquí ya
+
+672
+00:38:09.112 --> 00:38:10.392
+no creo que vuelva a
+
+673
+00:38:11.552 --> 00:38:14.092
+repetir, sería un exabrupto.
+
+674
+00:38:15.372 --> 00:38:18.732
+Y para cerrar, una de las que más me gusta es esta de
+
+675
+00:38:19.432 --> 00:38:21.172
+Table Generator, le damos clic,
+
+676
+00:38:23.012 --> 00:38:26.712
+que esta es sencilla, fíjense. Acá yo le voy a dar a añadir
+
+677
+00:38:26.832 --> 00:38:30.772
+tabla. Entonces, yo tengo que buscar la
+
+678
+00:38:30.852 --> 00:38:32.822
+ruta del archivo. Entonces, ¿cómo hacemos?
+
+679
+00:38:33.482 --> 00:38:36.812
+¿Para qué funciona este? Este funciona de la siguiente manera.
+
+680
+00:38:36.912 --> 00:38:43.812
+Vamos
+
+681
+00:38:43.852 --> 00:38:45.332
+a ver si está compartiendo bien.
+
+682
+00:38:46.892 --> 00:38:50.792
+Digamos que yo tengo esto. Tabla de aparato sanitario.
+
+683
+00:38:52.772 --> 00:38:55.392
+Vamos a hacer una desde cero. Esta.
+
+684
+00:38:56.552 --> 00:38:57.772
+Yo tengo acá
+
+685
+00:38:59.032 --> 00:39:00.672
+esta de accesorios que estoy creando.
+
+686
+00:39:01.212 --> 00:39:05.052
+Yo coloco aquí elemento y le
+
+687
+00:39:05.072 --> 00:39:07.172
+colocamos un ID, 2356,
+
+688
+00:39:08.092 --> 00:39:11.072
+clasificación del sistema, digamos que es
+
+689
+00:39:12.652 --> 00:39:13.052
+MEP,
+
+690
+00:39:15.072 --> 00:39:15.792
+familia,
+
+691
+00:39:17.892 --> 00:39:18.752
+tuberías,
+
+692
+00:39:19.732 --> 00:39:20.392
+tamaño
+
+693
+00:39:21.412 --> 00:39:23.832
+12 milímetros, recuento cinco.
+
+694
+00:39:25.072 --> 00:39:26.212
+Y esto lo copio
+
+695
+00:39:28.112 --> 00:39:30.912
+varias veces. Lo voy a copiar varias veces para que se vea.
+
+696
+00:39:34.932 --> 00:39:36.232
+Y este le voy a poner
+
+697
+00:39:37.092 --> 00:39:40.792
+ST para que cambie, RQ para que cambie, MEP.
+
+698
+00:39:41.552 --> 00:39:43.052
+ST le voy a colocar
+
+699
+00:39:44.252 --> 00:39:47.012
+columna. Columna aquí le coloco 30
+
+700
+00:39:47.052 --> 00:39:50.692
+centímetros y el de arquitectura le coloco
+
+701
+00:39:50.812 --> 00:39:53.132
+puerta y el tamaño le coloco
+
+702
+00:39:54.232 --> 00:39:55.672
+un metro por
+
+703
+00:39:56.492 --> 00:39:58.172
+1.50 metros
+
+704
+00:39:59.372 --> 00:40:01.672
+y en el recuento aquí le cambio seis.
+
+705
+00:40:02.152 --> 00:40:06.032
+Ustedes se crean su hoja de Excel. Y yo voy a seleccionar
+
+706
+00:40:06.112 --> 00:40:06.532
+todo esto.
+
+707
+00:40:07.482 --> 00:40:09.932
+Cuando yo lo seleccione, yo le voy a colocar un nombre a esto.
+
+708
+00:40:09.972 --> 00:40:11.462
+Esto se va a llamar, por ejemplo,
+
+709
+00:40:13.552 --> 00:40:14.092
+Tabla
+
+710
+00:40:15.612 --> 00:40:16.012
+Plano.
+
+711
+00:40:20.792 --> 00:40:22.932
+Vamos a quitar lo de los filtros.
+
+712
+00:40:25.712 --> 00:40:28.792
+Listo. Vamos a seleccionar. Ahora sí.
+
+713
+00:40:31.012 --> 00:40:31.532
+Aquí.
+
+714
+00:40:35.652 --> 00:40:36.272
+Entonces,
+
+715
+00:40:37.352 --> 00:40:38.472
+yo le voy a colocar aquí
+
+716
+00:40:39.892 --> 00:40:40.372
+Tabla.
+
+717
+00:40:42.672 --> 00:40:44.532
+Listo. Así como está, Tabla.
+
+718
+00:40:46.612 --> 00:40:50.092
+Cuando yo seleccione aquí, selecciono todo esto,
+
+719
+00:40:51.512 --> 00:40:52.652
+le coloco el nombre de Tabla
+
+720
+00:40:53.712 --> 00:40:56.032
+y así lo voy a guardar. File, Save as,
+
+721
+00:40:57.472 --> 00:40:59.492
+en Browse, no importa.
+
+722
+00:41:00.592 --> 00:41:04.132
+Ahí en documento de accesorio, guardo, le digo que sí, que lo
+
+723
+00:41:04.172 --> 00:41:04.732
+reemplace.
+
+724
+00:41:06.732 --> 00:41:10.092
+Y cierro. Entonces me voy aquí a Revit
+
+725
+00:41:10.992 --> 00:41:13.072
+y voy a añadir tabla.
+
+726
+00:41:17.132 --> 00:41:17.792
+No estoy.
+
+727
+00:41:19.232 --> 00:41:22.252
+No me quiere abrir Revit.
+
+728
+00:41:27.052 --> 00:41:29.372
+Se pegó ahí el programa, se colgó un momento.
+
+729
+00:41:29.812 --> 00:41:30.852
+Cosas que pasan cuando
+
+730
+00:41:31.912 --> 00:41:32.932
+se graba en vivo.
+
+731
+00:41:33.732 --> 00:41:35.012
+Voy a pausar un momento.
+
+732
+00:41:38.352 --> 00:41:41.692
+Entonces volvemos a Dirbots. Estábamos en Table
+
+733
+00:41:41.712 --> 00:41:42.392
+Generator.
+
+734
+00:41:44.832 --> 00:41:47.672
+Aquí está la parte de la prueba, okey, no pasa nada.
+
+735
+00:41:49.172 --> 00:41:51.632
+Entonces, aquí van a añadir la tabla.
+
+736
+00:41:52.032 --> 00:41:54.132
+Le dan clic
+
+737
+00:41:55.092 --> 00:41:57.152
+y fuente Excel, tipo.
+
+738
+00:41:58.892 --> 00:42:01.972
+Lo pueden colocar tipo mesa, que es editable, o imagen.
+
+739
+00:42:02.832 --> 00:42:05.312
+Ustedes ahí lo seleccionan. Lo voy a dejar así como está.
+
+740
+00:42:05.942 --> 00:42:08.272
+Accesorios, le doy abrir
+
+741
+00:42:09.212 --> 00:42:10.892
+y fíjense que dice: región de la tabla,
+
+742
+00:42:12.052 --> 00:42:14.552
+tabla, la que yo coloqué, le damos de acuerdo
+
+743
+00:42:15.552 --> 00:42:19.452
+y ahí está. Entonces dice tipo, accesorios, nombre de vista, como se
+
+744
+00:42:19.472 --> 00:42:22.172
+va a tener nombre, uno le puede cambiar el nombre si uno desea,
+
+745
+00:42:22.932 --> 00:42:26.832
+seleccione de región página, todo lo que dice accesorios,
+
+746
+00:42:27.312 --> 00:42:31.076
+todo lo que dice tablaPerfecto. Y con esto
+
+747
+00:42:31.196 --> 00:42:34.156
+fíjense que inclusive nosotros podemos
+
+748
+00:42:35.256 --> 00:42:38.616
+generarla tipo leyenda o planificación de cantidades.
+
+749
+00:42:38.656 --> 00:42:40.676
+Vamos a crear primero leyenda. Le doy a aplicar.
+
+750
+00:42:44.656 --> 00:42:46.806
+Ahí se va a generar. Le doy en de acuerdo,
+
+751
+00:42:47.756 --> 00:42:51.606
+aquí en "legends" le doy doble clic, ahí está, accesorios uno, como
+
+752
+00:42:51.636 --> 00:42:52.916
+una tabla tipo leyenda.
+
+753
+00:42:53.816 --> 00:42:54.776
+Y esta tabla es editable.
+
+754
+00:42:56.156 --> 00:42:59.876
+La pueden copiar. Esto está genial. No hay que hacer ya tantas cosas.
+
+755
+00:43:01.756 --> 00:43:03.586
+Ahora, si yo la copiara tipo imagen,
+
+756
+00:43:04.916 --> 00:43:07.716
+vamos a cambiarle el nombre, se va a llamar accesorios
+
+757
+00:43:09.876 --> 00:43:13.255
+dos. Le damos a aplicar.
+
+758
+00:43:16.056 --> 00:43:16.816
+Estamos de acuerdo.
+
+759
+00:43:18.136 --> 00:43:21.756
+Ahí se me va a crear y se me va a actualizar accesorios dos, pero con una
+
+760
+00:43:21.776 --> 00:43:22.176
+imagen.
+
+761
+00:43:25.536 --> 00:43:29.436
+Esta es la escala. Otra parte que
+
+762
+00:43:29.456 --> 00:43:30.656
+nosotros podemos generar,
+
+763
+00:43:32.216 --> 00:43:36.016
+que en vez como vista de leyenda, aquí la tenemos que quitar como
+
+764
+00:43:36.036 --> 00:43:37.276
+imagen, mesa
+
+765
+00:43:39.816 --> 00:43:41.816
+y tabla.
+
+766
+00:43:42.856 --> 00:43:45.096
+Aquí ya se bloqueó, hay que seleccionarla.
+
+767
+00:43:45.436 --> 00:43:46.716
+A
+
+768
+00:43:46.776 --> 00:43:50.116
+esta que está acá
+
+769
+00:43:51.416 --> 00:43:53.636
+vamos a eliminarla. Le voy a decir que sí.
+
+770
+00:43:55.096 --> 00:43:56.556
+Y volvemos a añadir una nueva tabla.
+
+771
+00:43:57.936 --> 00:44:01.916
+Y en esta nueva tabla hacemos lo mismo: ruta de archivos, accesorios,
+
+772
+00:44:01.956 --> 00:44:02.396
+abrir,
+
+773
+00:44:03.556 --> 00:44:07.056
+tabla, de acuerdo. Y en esta parte le vamos a
+
+774
+00:44:07.116 --> 00:44:09.576
+colocar como planificación de cantidades.
+
+775
+00:44:10.376 --> 00:44:11.076
+Le damos a aplicar,
+
+776
+00:44:12.856 --> 00:44:13.356
+de acuerdo.
+
+777
+00:44:14.186 --> 00:44:15.076
+Ahora
+
+778
+00:44:15.876 --> 00:44:18.316
+va a salir accesorios cero uno y adivinen,
+
+779
+00:44:20.136 --> 00:44:23.816
+es total la cantidades, y la pueden editar y pueden formular parámetros, pueden
+
+780
+00:44:23.856 --> 00:44:26.846
+añadirles más. Aquí en las propiedades, por ejemplo, esta que está
+
+781
+00:44:26.856 --> 00:44:29.836
+acá, yo le digo campos y yo le
+
+782
+00:44:29.936 --> 00:44:32.596
+puedo seguir añadiendo campos y editándolos.
+
+783
+00:44:34.096 --> 00:44:36.156
+Esto es otro hitazo.
+
+784
+00:44:37.056 --> 00:44:39.356
+Hasta ahí hemos trabajado con Dirrots.
+
+785
+00:44:41.356 --> 00:44:44.576
+Si quieren, en esta parte del video se toman un descanso,
+
+786
+00:44:45.276 --> 00:44:49.016
+procesan toda esta información y ahora nos vamos con
+
+787
+00:44:49.276 --> 00:44:51.656
+PyRevit. No voy a dividir el video en dos,
+
+788
+00:44:53.036 --> 00:44:55.056
+sino lo que voy a hacer es que
+
+789
+00:44:55.876 --> 00:44:57.836
+le voy a seguir dando continuidad.
+
+790
+00:44:57.996 --> 00:45:01.016
+Por favor, pausen aquí, se toman un respiro y siguen
+
+791
+00:45:01.056 --> 00:45:03.196
+ahora con PyRevit.
+
+792
+00:45:05.556 --> 00:45:09.336
+Acá en PyRevit vamos a hacer algo para que
+
+793
+00:45:09.376 --> 00:45:10.016
+ustedes vean
+
+794
+00:45:12.476 --> 00:45:16.456
+qué es PyRevit. Fíjense, PyRevit, y la diferencia que tiene con Dirrots,
+
+795
+00:45:16.776 --> 00:45:17.176
+es que
+
+796
+00:45:18.716 --> 00:45:22.496
+lo utilizamos más que nada para prepararnos a los scripting con
+
+797
+00:45:22.576 --> 00:45:25.776
+Python, ejecutar herramientas avanzadas y automatizar tareas
+
+798
+00:45:25.836 --> 00:45:29.216
+repetitivas, además de cosas que ya hemos visto con
+
+799
+00:45:29.236 --> 00:45:33.036
+Manify y Colored Tabs, y lo que hace es mejorar la
+
+800
+00:45:33.056 --> 00:45:36.496
+productividad del equipo, ordena y optimiza el entorno de trabajo.
+
+801
+00:45:37.636 --> 00:45:39.216
+Entonces, ¿qué
+
+802
+00:45:41.616 --> 00:45:44.516
+vamos a hacer? Aquí en Revit vamos a
+
+803
+00:45:45.996 --> 00:45:48.556
+cerrar esta pestaña.
+
+804
+00:45:49.756 --> 00:45:50.796
+Vamos a cerrar esto.
+
+805
+00:45:51.736 --> 00:45:55.656
+Y vamos a terminar con Dirrots y vamos a
+
+806
+00:45:55.676 --> 00:45:59.096
+entrar en PyRevit. Yo en PyRevit puedo hacer un
+
+807
+00:45:59.156 --> 00:46:03.016
+montón de opciones. Voy a tratar
+
+808
+00:46:03.056 --> 00:46:06.656
+de indicarles las que yo considero son las más
+
+809
+00:46:06.736 --> 00:46:09.396
+útiles y que a ustedes les van a ayudar a organizarse.
+
+810
+00:46:10.236 --> 00:46:13.836
+Vamos a empezar con esta. La primera va a ser el pattern maker,
+
+811
+00:46:14.956 --> 00:46:18.516
+que básicamente es un patrón de trabajo que se desarrolla
+
+812
+00:46:19.656 --> 00:46:23.476
+y es para rellenos. Imagínense que ustedes quieren crear su propio patrón de
+
+813
+00:46:23.536 --> 00:46:26.956
+trabajo de rellenos. Para eso van a utilizar aquí en "annotate",
+
+814
+00:46:27.316 --> 00:46:29.956
+línea de detalle, su propio patrón.
+
+815
+00:46:31.776 --> 00:46:34.256
+Ahí
+
+816
+00:46:36.856 --> 00:46:38.296
+su propio patrón de trabajo.
+
+817
+00:46:41.496 --> 00:46:43.956
+Digamos que el patrón de trabajo es así.
+
+818
+00:46:44.336 --> 00:46:48.236
+Este patrón o hash, como ustedes lo quieran
+
+819
+00:46:48.256 --> 00:46:52.186
+conocer, ustedes se van a ir a PyRevit, van a seleccionar este patrón
+
+820
+00:46:52.196 --> 00:46:56.106
+de trabajo, se van a PyRevit y le dan clic acá en crear
+
+821
+00:46:56.196 --> 00:47:00.015
+patrón. Al darle clic en patrón, le van a poner
+
+822
+00:47:00.036 --> 00:47:02.136
+acá patrón
+
+823
+00:47:03.016 --> 00:47:06.956
+de prueba. Va a ser un patrón de detalle con crear
+
+824
+00:47:06.996 --> 00:47:09.116
+región rellena y le van a dar crear
+
+825
+00:47:09.256 --> 00:47:12.816
+patrón. Siempre el patrón lo
+
+826
+00:47:12.836 --> 00:47:16.716
+encierran en un rectángulo para que vaya de este vértice
+
+827
+00:47:16.896 --> 00:47:18.116
+y recorra este vértice.
+
+828
+00:47:19.116 --> 00:47:22.536
+Le dan a aceptar. Entonces, cuando ustedes creen su propio hash
+
+829
+00:47:23.116 --> 00:47:26.896
+en región, fill region, lo que va a servir esto
+
+830
+00:47:27.056 --> 00:47:28.676
+es que nosotros generamos un patrón,
+
+831
+00:47:29.476 --> 00:47:33.116
+le damos finalizar y este patrón generado, que ustedes lo pueden
+
+832
+00:47:33.156 --> 00:47:36.956
+modificar aquí en properties, se pueden ir a la parte de
+
+833
+00:47:37.896 --> 00:47:39.556
+patrón de prueba. Ahí está.
+
+834
+00:47:41.276 --> 00:47:42.416
+Ya tienen un patrón de trabajo.
+
+835
+00:47:43.976 --> 00:47:47.896
+Simplificando y automatizando. El siguiente ya lo
+
+836
+00:47:47.956 --> 00:47:51.876
+saben, yo lo tenía anotado acá, el Colored Tab, ya saben cómo
+
+837
+00:47:51.976 --> 00:47:53.576
+trabajar las pestañas con colores.
+
+838
+00:47:54.456 --> 00:47:56.706
+Vamos a Preflight Check, que es este que está acá,
+
+839
+00:47:57.916 --> 00:48:00.276
+en PyRevit, este que dice verificaciones previas.
+
+840
+00:48:00.856 --> 00:48:02.836
+Primero le van a dar shift
+
+841
+00:48:03.976 --> 00:48:07.916
+y clic. Todo lo que tenga un puntito tiene una opción de shift
+
+842
+00:48:07.956 --> 00:48:09.416
+y clic. Todo lo que tenga un puntito.
+
+843
+00:48:09.676 --> 00:48:11.436
+Este que tiene un puntito, entonces shift y clic.
+
+844
+00:48:12.656 --> 00:48:14.936
+Y van a seleccionar cualquier hoja de Excel.
+
+845
+00:48:15.616 --> 00:48:17.636
+Por ejemplo, esta que dice critical warnings.
+
+846
+00:48:19.356 --> 00:48:20.176
+No tiene que ser
+
+847
+00:48:21.476 --> 00:48:23.656
+en un archivo exacto, solo esta hoja de Excel.
+
+848
+00:48:24.276 --> 00:48:28.096
+Pueden crearse una hoja de Excel desde cero, no pasa nada. Y le dan abrir.
+
+849
+00:48:29.556 --> 00:48:33.532
+Le dicen que síY van
+
+850
+00:48:33.632 --> 00:48:35.732
+a seleccionar una carpeta donde lo van a guardar.
+
+851
+00:48:36.492 --> 00:48:39.832
+Aquí en Preflight Checks, seleccionan carpeta
+
+852
+00:48:41.592 --> 00:48:41.632
+y
+
+853
+00:48:41.932 --> 00:48:48.172
+solo
+
+854
+00:48:48.212 --> 00:48:49.952
+le dan clic, porque ya se guardó.
+
+855
+00:48:49.962 --> 00:48:53.972
+Una
+
+856
+00:48:54.052 --> 00:48:56.902
+vez q*e l* d*n clic, ustedes van a decir: "mira, yo quiero hacer una auditoría".
+
+857
+00:48:57.032 --> 00:49:00.092
+Esto es lo que es Preflight Checks, verificaciones previas.
+
+858
+00:49:00.112 --> 00:49:03.272
+Por ejemplo, puede ser una verificación de todos los elementos
+
+859
+00:49:03.672 --> 00:49:06.772
+vinculados. Se puede verificar la calidad del modelo.
+
+860
+00:49:07.232 --> 00:49:11.212
+Vamos
+
+861
+00:49:11.252 --> 00:49:11.892
+a verificar
+
+862
+00:49:13.032 --> 00:49:14.612
+solo la calidad del modelo.
+
+863
+00:49:15.792 --> 00:49:16.932
+Ejecutamos verificación,
+
+864
+00:49:18.092 --> 00:49:18.632
+le digo que sí.
+
+865
+00:49:20.052 --> 00:49:21.512
+Vean esto que está acá.
+
+866
+00:49:22.432 --> 00:49:24.432
+Esto me va a decir, por ejemplo,
+
+867
+00:49:27.072 --> 00:49:30.461
+cuántas vistas tengo, cuántos templates se están usando,
+
+868
+00:49:30.832 --> 00:49:34.792
+cuántas tablas, cuántas hojas, cuántos warnings, cuántos critical
+
+869
+00:49:34.852 --> 00:49:38.392
+warnings. Aquí en los warnings y critical warnings, si ustedes le dan clic,
+
+870
+00:49:40.032 --> 00:49:43.972
+él va a generar un resumen. No me voy a meter ahí porque si
+
+871
+00:49:44.032 --> 00:49:44.232
+no
+
+872
+00:49:45.212 --> 00:49:47.672
+se va a tardar. Vean, aquí está y les dice.
+
+873
+00:49:51.532 --> 00:49:51.932
+Ahí está.
+
+874
+00:49:53.392 --> 00:49:56.912
+Básicamente, eso
+
+875
+00:49:57.032 --> 00:49:58.772
+es lo que hace
+
+876
+00:50:02.332 --> 00:50:04.432
+Preflight Checks. Simplemente, le dan clic acá
+
+877
+00:50:05.472 --> 00:50:07.552
+y ustedes pueden seleccionar cualquiera de estas opciones.
+
+878
+00:50:08.272 --> 00:50:10.232
+Me gusta para la verificación de modelos.
+
+879
+00:50:11.012 --> 00:50:11.792
+El Color Shaper
+
+880
+00:50:12.932 --> 00:50:16.432
+es genial. Por ejemplo, en este 3D yo le doy Color Shaper o
+
+881
+00:50:16.592 --> 00:50:18.412
+Splasher, perdón, no Shaper, Splasher.
+
+882
+00:50:20.492 --> 00:50:21.332
+Y acá
+
+883
+00:50:22.312 --> 00:50:26.002
+yo selecciono una categoría, por ejemplo, son walls, selecciono un
+
+884
+00:50:26.012 --> 00:50:27.512
+parámetro por type.
+
+885
+00:50:29.912 --> 00:50:32.832
+Voy a seleccionarlos todos. Yo puedo establecer los colores
+
+886
+00:50:33.772 --> 00:50:33.852
+y
+
+887
+00:50:37.292 --> 00:50:40.552
+se visualizan. Si yo quisiera otros colores, le doy clic y voy seleccionando.
+
+888
+00:50:41.292 --> 00:50:42.972
+Además, puedo crear leyendas.
+
+889
+00:50:44.572 --> 00:50:48.212
+Para que uno necesite tener al menos una, acá vamos a crear una
+
+890
+00:50:48.232 --> 00:50:48.652
+leyenda.
+
+891
+00:50:49.992 --> 00:50:52.472
+Donde dice leyenda, legends, new legend.
+
+892
+00:50:54.852 --> 00:50:58.752
+Le damos OK, no importa, ahí está. Creamos
+
+893
+00:50:58.792 --> 00:50:59.312
+una leyenda.
+
+894
+00:51:04.572 --> 00:51:06.452
+Ahora sí, creamos la leyenda
+
+895
+00:51:07.752 --> 00:51:11.432
+y las leyendas ahí van a estar con sus
+
+896
+00:51:11.472 --> 00:51:15.312
+visualizaciones. Vamos a cerrar esto y
+
+897
+00:51:15.352 --> 00:51:18.092
+vamos a volverle a dar acá Color Splasher.
+
+898
+00:51:23.392 --> 00:51:24.652
+Seleccionamos categoría,
+
+899
+00:51:25.472 --> 00:51:27.112
+walls, parámetro,
+
+900
+00:51:31.272 --> 00:51:31.792
+type
+
+901
+00:51:33.192 --> 00:51:34.612
+y creamos la leyenda.
+
+902
+00:51:35.552 --> 00:51:38.752
+Y ahí está, ahí se crea. Entonces tenemos una leyenda para Color
+
+903
+00:51:38.852 --> 00:51:40.912
+Splasher con los colores que yo quiero.
+
+904
+00:51:41.492 --> 00:51:42.892
+Sirve para los planos.
+
+905
+00:51:46.112 --> 00:51:49.832
+Pueden aplicar el patrón de fondo, establecer colores, eso funciona,
+
+906
+00:51:50.512 --> 00:51:53.632
+puede ser colores aleatorios y también pueden crear filtros de vistas.
+
+907
+00:51:54.272 --> 00:51:57.562
+Esta, la verdad, nunca me ha funcionado de la mejor manera, si les soy sincero,
+
+908
+00:51:58.312 --> 00:52:01.392
+porque entiendo que aquí se crea el 3D
+
+909
+00:52:02.552 --> 00:52:03.872
+y yo cuando le doy BG
+
+910
+00:52:05.172 --> 00:52:07.092
+en los filtros, vean que no
+
+911
+00:52:08.132 --> 00:52:08.612
+se me crea.
+
+912
+00:52:09.672 --> 00:52:13.372
+Y he buscado todas las alternativas, así que no sé si en
+
+913
+00:52:13.512 --> 00:52:17.112
+otras versiones se aplicará, pero bueno, igual lo
+
+914
+00:52:17.152 --> 00:52:20.632
+saben. Luego está el Batch Sheet Maker, que este es
+
+915
+00:52:20.812 --> 00:52:21.792
+generación de hojas.
+
+916
+00:52:23.052 --> 00:52:24.912
+Yo aquí puedo generar hojas por lotes.
+
+917
+00:52:25.032 --> 00:52:28.892
+Esto es genial porque fíjense, yo solo coloco aquí A102
+
+918
+00:52:29.952 --> 00:52:31.632
+guion, guion y le coloco
+
+919
+00:52:31.712 --> 00:52:34.812
+techo o
+
+920
+00:52:36.992 --> 00:52:39.392
+guion, guion, tabulador.
+
+921
+00:52:45.692 --> 00:52:49.682
+No, perdón, estoy
+
+922
+00:52:49.692 --> 00:52:52.972
+mal. Guion, guion, empieza de A102 a
+
+923
+00:52:53.012 --> 00:52:53.762
+A106,
+
+924
+00:52:54.712 --> 00:52:57.632
+tabulador, y ahí coloco, por ejemplo,
+
+925
+00:52:58.332 --> 00:52:59.452
+estructuras.
+
+926
+00:53:00.772 --> 00:53:04.492
+Empieza desde el plano 101, 106. Le doy crear.
+
+927
+00:53:08.672 --> 00:53:09.192
+Elijo acá,
+
+928
+00:53:10.892 --> 00:53:11.412
+selecciono
+
+929
+00:53:12.672 --> 00:53:13.732
+y ya se me crean los planos.
+
+930
+00:53:14.602 --> 00:53:18.072
+¿Esta con qué la van a combinar? Ya ustedes lo saben con cuál la van a combinar,
+
+931
+00:53:18.132 --> 00:53:19.832
+con el Sheet Generator, porque aquí en los sheets,
+
+932
+00:53:20.792 --> 00:53:24.452
+cuando le den clic, aquí está. Esto ustedes lo combinan con el
+
+933
+00:53:24.552 --> 00:53:28.332
+filtro de deroutes del Sheet Generator y hace
+
+934
+00:53:28.392 --> 00:53:28.712
+magia.
+
+935
+00:53:30.112 --> 00:53:31.732
+Y así de manera rápida trabajan.
+
+936
+00:53:33.472 --> 00:53:36.912
+Opciones que tenemos. Lo otro es el Match,
+
+937
+00:53:38.112 --> 00:53:41.992
+que es igual a un Match Property. Este Match está
+
+938
+00:53:42.212 --> 00:53:42.672
+acá.
+
+939
+00:53:43.752 --> 00:53:47.732
+Líneas superpuestas, que siempre se me
+
+940
+00:53:47.752 --> 00:53:48.912
+pierde. Aquí, coincidir.
+
+941
+00:53:49.652 --> 00:53:53.612
+Digamos que yo tengo este patrón, entonces
+
+942
+00:53:53.672 --> 00:53:56.232
+yo le doy clic y coincido este
+
+943
+00:53:58.072 --> 00:54:01.632
+patrón, este patrón, este patrón y este patrón, y le doy enter
+
+944
+00:54:02.512 --> 00:54:05.572
+y hago coincidir o patrones en muros.
+
+945
+00:54:07.532 --> 00:54:09.692
+Vamos a poner aquí colores consistentes.
+
+946
+00:54:11.532 --> 00:54:15.172
+Entonces vamos a ver dónde cambia. Este cambia con este.
+
+947
+00:54:15.182 --> 00:54:18.892
+Entonces yo le doy coincidir este que está acá
+
+948
+00:54:19.312 --> 00:54:20.192
+y cambia con este.
+
+949
+00:54:21.512 --> 00:54:23.032
+Es un igualar propiedades.
+
+950
+00:54:24.052 --> 00:54:27.292
+El otro es copiar leyendas. Copiar leyendas ya lo saben hacer.
+
+951
+00:54:27.812 --> 00:54:31.492
+Tienen varios
+
+952
+00:54:31.512 --> 00:54:34.772
+proyectos y aquí donde dice grupo,
+
+953
+00:54:34.992 --> 00:54:37.052
+sobreescribir, editar, ¿dónde es que
+
+954
+00:54:37.092 --> 00:54:40.768
+está?Tablas, leyendas.
+
+955
+00:54:41.128 --> 00:54:43.208
+Está copiar leyendas a otros documentos.
+
+956
+00:54:43.288 --> 00:54:45.007
+Entonces, yo me puedo abrir otro documento.
+
+957
+00:54:47.548 --> 00:54:49.128
+Abro este, por ejemplo.
+
+958
+00:54:51.488 --> 00:54:54.148
+En el documento siempre tiene que haber una leyenda existente.
+
+959
+00:54:54.308 --> 00:54:55.787
+Entonces vamos a crear una.
+
+960
+00:54:57.188 --> 00:54:57.708
+Digo que sí.
+
+961
+00:54:59.068 --> 00:55:02.648
+Y simplemente aquí agarro 3D, by
+
+962
+00:55:02.708 --> 00:55:05.808
+Revit, le damos acá a
+
+963
+00:55:06.188 --> 00:55:09.328
+leyendas, copiar leyendas a otros documentos.
+
+964
+00:55:10.248 --> 00:55:12.968
+Yo digo que la quiero copiar a esto.
+
+965
+00:55:13.688 --> 00:55:14.828
+Le doy okey
+
+966
+00:55:15.988 --> 00:55:19.528
+y quiero copiar esta leyenda y simplemente le doy seleccionar.
+
+967
+00:55:21.508 --> 00:55:23.248
+Listo. Damos aceptar.
+
+968
+00:55:24.088 --> 00:55:26.008
+Y ahora básicamente aquí
+
+969
+00:55:27.308 --> 00:55:30.128
+me va a salir el color splash, la misma leyenda.
+
+970
+00:55:32.888 --> 00:55:35.608
+Eso por ese lado.
+
+971
+00:55:37.408 --> 00:55:40.008
+Tenemos sincronizar vista, ustedes ya lo vieron.
+
+972
+00:55:41.448 --> 00:55:44.848
+Tenemos también quién hizo, quién realizó el trabajo.
+
+973
+00:55:45.268 --> 00:55:49.088
+Por ejemplo, si hay un muro que alguien lo modificó en un proyecto
+
+974
+00:55:49.148 --> 00:55:53.068
+coordinado, si ustedes le dan a esta opción que dice quién hizo eso
+
+975
+00:55:54.148 --> 00:55:57.748
+y yo le digo quién creó este elemento y le doy clic.
+
+976
+00:56:00.008 --> 00:56:01.628
+Vámonos acá.
+
+977
+00:56:02.888 --> 00:56:05.768
+Este que está acá. Es que el modelo este no está compartido.
+
+978
+00:56:05.828 --> 00:56:06.888
+Vamos a ver si me deja.
+
+979
+00:56:08.168 --> 00:56:11.738
+¿Quién creó este elemento? No, es que el modelo no está compartido, no me va a
+
+980
+00:56:11.738 --> 00:56:14.448
+dejar. Cuando esto sea un modelo compartido
+
+981
+00:56:15.868 --> 00:56:19.708
+sí me va a dejar, pero si yo le doy quién hizo eso, quién
+
+982
+00:56:19.748 --> 00:56:22.628
+creó esta vista, entonces, por ejemplo, me dice el nombre de la persona.
+
+983
+00:56:23.928 --> 00:56:25.598
+Pero cuando esto sea un modelo compartido,
+
+984
+00:56:27.068 --> 00:56:30.928
+ustedes, si son o trabajan como BIM coordinator, lo sabrán.
+
+985
+00:56:31.688 --> 00:56:35.008
+Ustedes acá pueden saber quién creó ese
+
+986
+00:56:35.348 --> 00:56:36.268
+elemento.
+
+987
+00:56:37.328 --> 00:56:39.348
+Como no es un modelo compartido, no sale.
+
+988
+00:56:40.838 --> 00:56:42.568
+"Wipe", este que está acá, es limpiar.
+
+989
+00:56:43.368 --> 00:56:45.668
+No lo recomiendo mucho, porque muchas veces
+
+990
+00:56:46.548 --> 00:56:49.948
+termina eliminando cosas que uno no quiere.
+
+991
+00:56:49.968 --> 00:56:51.858
+Por ejemplo, yo quiero seleccionar familias.
+
+992
+00:56:53.928 --> 00:56:55.138
+Yo quiero seleccionar
+
+993
+00:56:56.428 --> 00:56:58.368
+todas las instancias visibles en la vista.
+
+994
+00:56:59.068 --> 00:57:02.928
+Y si yo le doy acá todo esto, no
+
+995
+00:57:02.968 --> 00:57:06.128
+solo voy a eliminar el elemento, sino a su familia.
+
+996
+00:57:06.138 --> 00:57:08.288
+Entonces, hay que tener mucho cuidado.
+
+997
+00:57:10.348 --> 00:57:10.708
+Vean.
+
+998
+00:57:12.328 --> 00:57:15.308
+Porque elimina no el elemento, sino la familia.
+
+999
+00:57:15.358 --> 00:57:19.028
+Esta es una familia.
+
+1000
+00:57:20.728 --> 00:57:24.508
+Steak wall. Ya no me va a salir nuevamente esa familia
+
+1001
+00:57:24.568 --> 00:57:26.548
+steak wall cuando la quiera trabajar.
+
+1002
+00:57:27.748 --> 00:57:31.448
+"Pick" es muy interesante, elegir,
+
+1003
+00:57:31.548 --> 00:57:35.228
+simplemente yo le doy clic acá y por ejemplo, fíjense que
+
+1004
+00:57:35.968 --> 00:57:37.748
+yo quiero seleccionar
+
+1005
+00:57:39.068 --> 00:57:42.948
+puertas, selecciono todo, es como un filtro
+
+1006
+00:57:43.028 --> 00:57:43.388
+rápido.
+
+1007
+00:57:45.548 --> 00:57:48.068
+Yo quiero seleccionar puertas.
+
+1008
+00:57:50.548 --> 00:57:51.308
+Selecciono todo
+
+1009
+00:57:52.228 --> 00:57:53.708
+y solo me selecciona las puertas.
+
+1010
+00:57:56.828 --> 00:57:57.368
+Excelente.
+
+1011
+00:58:00.148 --> 00:58:04.008
+Manuel lo conoce, este que está acá es interesante, el
+
+1012
+00:58:04.748 --> 00:58:06.528
+sincronizar, porque ustedes le dan
+
+1013
+00:58:07.668 --> 00:58:08.628
+shift y clic,
+
+1014
+00:58:10.088 --> 00:58:14.008
+y ustedes pueden decir cierra
+
+1015
+00:58:14.028 --> 00:58:16.908
+todas, le doy okey.
+
+1016
+00:58:19.028 --> 00:58:21.468
+Entonces, va cerrando todas las vistas que no
+
+1017
+00:58:22.368 --> 00:58:23.068
+estoy utilizando.
+
+1018
+00:58:24.328 --> 00:58:26.848
+Por ejemplo, vamos de nuevo. Yo le doy sincronizar.
+
+1019
+00:58:29.028 --> 00:58:36.688
+Entonces,
+
+1020
+00:58:36.748 --> 00:58:39.368
+todas estas vistas las va a cerrar luego de un día,
+
+1021
+00:58:40.548 --> 00:58:43.648
+o estas "Don't touch my views", no te va a dejar cerrar las vistas.
+
+1022
+00:58:44.348 --> 00:58:44.737
+Y esto,
+
+1023
+00:58:45.948 --> 00:58:49.088
+si yo lo cierro, le doy okey, entonces las va a cerrar
+
+1024
+00:58:50.468 --> 00:58:50.538
+y a
+
+1025
+00:58:52.328 --> 00:58:53.388
+pesar de que yo las cierre,
+
+1026
+00:58:54.528 --> 00:58:57.108
+cuando yo vuelva a abrir, me van a salir las tres vistas.
+
+1027
+00:58:58.548 --> 00:59:02.308
+"Show view range", este que está acá, mostrar rango de vista es
+
+1028
+00:59:02.348 --> 00:59:05.908
+interesante para poderle indicar a un cliente cómo son los rangos de vistas.
+
+1029
+00:59:06.448 --> 00:59:09.798
+Aquí, por ejemplo, la idea es que tienen que tener activo el crop view, por
+
+1030
+00:59:09.828 --> 00:59:10.788
+ejemplo, este 3D,
+
+1031
+00:59:11.948 --> 00:59:14.088
+y aquí donde dice crop view.
+
+1032
+00:59:14.488 --> 00:59:16.408
+Entonces,
+
+1033
+00:59:19.898 --> 00:59:21.568
+dícele plan observation view.
+
+1034
+00:59:26.428 --> 00:59:26.988
+Vamos de nuevo.
+
+1035
+00:59:32.848 --> 00:59:35.028
+Entonces, yo digo: "mira, yo quiero ver el 3D
+
+1036
+00:59:36.688 --> 00:59:36.708
+o
+
+1037
+00:59:38.208 --> 00:59:39.988
+nivel uno". Vamos a ver el nivel uno.
+
+1038
+00:59:40.688 --> 00:59:44.048
+Entonces, del nivel uno activo el crop
+
+1039
+00:59:44.128 --> 00:59:45.988
+view
+
+1040
+00:59:48.388 --> 00:59:48.988
+y ahí se ven
+
+1041
+00:59:50.928 --> 00:59:52.248
+los rangos y profundidades.
+
+1042
+00:59:52.538 --> 00:59:56.968
+¿Qué
+
+1043
+00:59:57.008 --> 00:59:59.788
+más? Las notas, esto no notas claves.
+
+1044
+01:00:00.738 --> 01:00:04.408
+Estas notas claves, ustedes agarran cualquier archivo de texto, se crean un archivo
+
+1045
+01:00:04.448 --> 01:00:05.228
+primero de texto
+
+1046
+01:00:06.288 --> 01:00:09.968
+y con ese archivo de texto, por ejemplo, le voy a dar aquí abrir y van creando
+
+1047
+01:00:09.988 --> 01:00:13.408
+notas claves. Notas claves para que se revisen en el proyecto, por ejemplo, aquí
+
+1048
+01:00:13.448 --> 01:00:17.208
+creo una nota clave que va a decir muros.
+
+1049
+01:00:19.608 --> 01:00:23.088
+Entonces, en muros seleccionamos.
+
+1050
+01:00:24.908 --> 01:00:28.798
+Perdón. Primero la categoría. Necesito crear
+
+1051
+01:00:28.868 --> 01:00:31.648
+una categoría. Vamos a poner muros.
+
+1052
+01:00:32.528 --> 01:00:36.308
+Agrego categoría. La categoría debe tener una clave
+
+1053
+01:00:36.388 --> 01:00:37.928
+única. Muros es cero
+
+1054
+01:00:38.088 --> 01:00:41.796
+unoTener una
+
+1055
+01:00:41.876 --> 01:00:42.716
+clave única.
+
+1056
+01:00:43.876 --> 01:00:44.176
+Así:
+
+1057
+01:00:45.336 --> 01:00:46.436
+muros E01.
+
+1058
+01:00:48.196 --> 01:00:48.836
+No me deja.
+
+1059
+01:00:50.936 --> 01:00:51.996
+Minúsculas.
+
+1060
+01:00:53.686 --> 01:00:55.476
+Aquí está. Ingrese clave única,
+
+1061
+01:00:56.356 --> 01:01:00.256
+E01. Le damos E01, muros E01 y agrego la
+
+1062
+01:01:00.296 --> 01:01:03.176
+categoría. Este es muro E01.
+
+1063
+01:01:04.036 --> 01:01:06.766
+Agrego la nota clave, crear nota clave,
+
+1064
+01:01:06.836 --> 01:01:09.156
+ingrese una clave única.
+
+1065
+01:01:10.116 --> 01:01:11.596
+Yo quiero que esté en
+
+1066
+01:01:12.056 --> 01:01:14.366
+E01.1.
+
+1067
+01:01:15.236 --> 01:01:15.836
+Le doy ok.
+
+1068
+01:01:16.636 --> 01:01:19.136
+Entonces, ahí escribo: esto es revisión,
+
+1069
+01:01:21.696 --> 01:01:25.656
+y le doy agregar nota clave, y así sucesivamente.
+
+1070
+01:01:26.196 --> 01:01:29.296
+Puedo inclusive agregar subnotas, editar,
+
+1071
+01:01:31.016 --> 01:01:33.656
+agregar una nota dentro de la nota, por ejemplo,
+
+1072
+01:01:34.156 --> 01:01:41.296
+E01.1.12,
+
+1073
+01:01:41.336 --> 01:01:43.906
+y colocar aquí completado,
+
+1074
+01:01:45.236 --> 01:01:46.296
+agregar nota clave.
+
+1075
+01:01:47.296 --> 01:01:49.676
+Le damos actualizar modelo.
+
+1076
+01:01:51.476 --> 01:01:55.036
+Cada vez que se gestionen las notas claves y abran este modelo y
+
+1077
+01:01:55.056 --> 01:01:56.596
+utilizando PyRevit al mismo tiempo,
+
+1078
+01:01:57.436 --> 01:01:58.236
+se pueden editar.
+
+1079
+01:01:58.696 --> 01:02:02.636
+Eso
+
+1080
+01:02:02.676 --> 01:02:04.616
+por ese lado, en este tema de
+
+1081
+01:02:06.576 --> 01:02:07.636
+las notas claves.
+
+1082
+01:02:10.176 --> 01:02:13.816
+Nos van a quedar inspeccionar las familias, el tamaño de las familias
+
+1083
+01:02:14.856 --> 01:02:18.256
+en esta opción de inspección, aquí hay un montón, pero yo, por ejemplo, puedo
+
+1084
+01:02:18.596 --> 01:02:22.536
+indicar cuál es el tamaño de todas las familias para saber el peso de
+
+1085
+01:02:22.556 --> 01:02:23.076
+mi modelo
+
+1086
+01:02:23.976 --> 01:02:27.526
+o estimar el peso de mi modelo, o saber qué familias realmente están
+
+1087
+01:02:27.536 --> 01:02:29.875
+pesadas y que le está generando el peso al modelo.
+
+1088
+01:02:29.896 --> 01:02:33.056
+Eso nos sucede mucho, sobre todo en elementos coordinados.
+
+1089
+01:02:33.536 --> 01:02:36.756
+Ahí en la parte superior pueden ver cómo va cargando.
+
+1090
+01:02:38.536 --> 01:02:41.736
+Y ahorita se va a mostrar. Ya solo cerraríamos con
+
+1091
+01:02:43.056 --> 01:02:46.736
+Line Type View Count, que son los tipos de líneas por
+
+1092
+01:02:46.796 --> 01:02:49.076
+vista, conteo de líneas por vistas
+
+1093
+01:02:50.356 --> 01:02:50.535
+y
+
+1094
+01:02:51.636 --> 01:02:54.016
+Bundle Creator, que ya les voy a mostrar.
+
+1095
+01:02:54.356 --> 01:02:56.135
+Con eso cerramos.
+
+1096
+01:02:58.216 --> 01:02:58.976
+Vamos a esperar.
+
+1097
+01:03:04.506 --> 01:03:06.616
+Está cargando la parte superior.
+
+1098
+01:03:08.956 --> 01:03:11.236
+Voy a pausar un momento el video hasta que se cargue.
+
+1099
+01:03:14.456 --> 01:03:17.536
+Listo, fíjense que me dice la cantidad de familias, el
+
+1100
+01:03:17.596 --> 01:03:19.856
+creador y
+
+1101
+01:03:21.556 --> 01:03:22.436
+el conteo total.
+
+1102
+01:03:23.336 --> 01:03:24.196
+Básicamente me dice todo.
+
+1103
+01:03:24.796 --> 01:03:28.696
+Otra que me funciona en el
+
+1104
+01:03:28.736 --> 01:03:32.576
+inspector es la de contar
+
+1105
+01:03:32.716 --> 01:03:36.306
+líneas. A ver, detector de colisiones, detector de enlaces, detector de
+
+1106
+01:03:36.316 --> 01:03:37.116
+elementos,
+
+1107
+01:03:37.936 --> 01:03:41.656
+contador de líneas por vista. Este me gusta mucho, porque
+
+1108
+01:03:42.956 --> 01:03:44.576
+las líneas son las líneas de detalle
+
+1109
+01:03:45.556 --> 01:03:48.976
+y que si en un objeto 3D hay muchas líneas de
+
+1110
+01:03:49.016 --> 01:03:52.976
+detalle, significa que el modelo BIM está siendo alterado.
+
+1111
+01:03:55.126 --> 01:03:58.976
+Un modelo 3D tiene que tener pocas líneas de detalle o un modelo general,
+
+1112
+01:03:59.176 --> 01:04:01.116
+modelo BIM como tal.
+
+1113
+01:04:02.176 --> 01:04:02.936
+Entonces, por ejemplo,
+
+1114
+01:04:04.136 --> 01:04:05.856
+en esta vista tiene siete líneas,
+
+1115
+01:04:06.936 --> 01:04:07.876
+que es la del nivel
+
+1116
+01:04:12.116 --> 01:04:12.456
+cero.
+
+1117
+01:04:13.836 --> 01:04:16.976
+Pero la idea es que no haya tantas líneas.
+
+1118
+01:04:18.256 --> 01:04:22.236
+Ya para cerrar, estas dos que me
+
+1119
+01:04:22.256 --> 01:04:22.676
+gustan.
+
+1120
+01:04:24.696 --> 01:04:28.586
+Se van a ir acá a PyRevit, se van a ir aquí, PyRevit, se van a ir a
+
+1121
+01:04:28.616 --> 01:04:29.936
+la parte de extensiones
+
+1122
+01:04:31.656 --> 01:04:34.976
+y en la parte de extensiones van a tener activo esta de Bundle.
+
+1123
+01:04:35.456 --> 01:04:39.246
+Ahorita está deshabilitado. Lo que hacen es:
+
+1124
+01:04:40.216 --> 01:04:40.856
+seleccionan
+
+1125
+01:04:41.976 --> 01:04:42.176
+y
+
+1126
+01:04:43.256 --> 01:04:44.076
+le dan habilitar.
+
+1127
+01:04:44.456 --> 01:04:50.136
+Vamos
+
+1128
+01:04:50.176 --> 01:04:54.056
+a trabajar con Manage Files. Voy a ordenar las vistas,
+
+1129
+01:04:54.076 --> 01:04:55.716
+porque si no esto es un
+
+1130
+01:04:57.936 --> 01:05:01.816
+desorden. Aquí me va a salir. Vamos a buscar aquí Manage
+
+1131
+01:05:01.836 --> 01:05:03.096
+Files para que me salga.
+
+1132
+01:05:05.136 --> 01:05:08.056
+Y aquí está, PyRevit Bundles y yo puedo crear botones.
+
+1133
+01:05:08.396 --> 01:05:10.016
+Este es su primer ejercicio
+
+1134
+01:05:11.556 --> 01:05:14.856
+de crear nuevos botones con script.
+
+1135
+01:05:14.876 --> 01:05:18.866
+Por ejemplo, le puedo poner aquí Menu Panel y yo puedo empezar a
+
+1136
+01:05:18.956 --> 01:05:22.776
+crear con scripts acá. Primer paso para trabajar
+
+1137
+01:05:22.796 --> 01:05:23.476
+con la IA.
+
+1138
+01:05:24.376 --> 01:05:26.696
+Y no quería dejar de lado
+
+1139
+01:05:27.776 --> 01:05:33.316
+EFS
+
+1140
+01:05:33.376 --> 01:05:33.896
+Tools,
+
+1141
+01:05:34.836 --> 01:05:35.696
+que es bastante.
+
+1142
+01:05:36.136 --> 01:05:40.076
+Ustedes
+
+1143
+01:05:40.116 --> 01:05:44.096
+pueden ir profundizando, porque si no fuese un curso solo de PyRevit, yo
+
+1144
+01:05:44.116 --> 01:05:47.636
+les estoy mostrando las que yo considero más
+
+1145
+01:05:47.676 --> 01:05:51.636
+importantes. La verdad, la gran mayoría se duplica, pero una
+
+1146
+01:05:51.656 --> 01:05:54.766
+de las más importantes es esta, que se pueden copiar
+
+1147
+01:05:54.916 --> 01:05:56.316
+filtros de vistas,
+
+1148
+01:05:57.816 --> 01:06:01.096
+de una vista a otra, muy similar a la de--
+
+1149
+01:06:02.356 --> 01:06:04.216
+fíjense que aquí yo tengo los filtros
+
+1150
+01:06:06.356 --> 01:06:07.276
+y yo puedo decir: "Mira,
+
+1151
+01:06:08.216 --> 01:06:08.876
+este
+
+1152
+01:06:09.776 --> 01:06:11.776
+filtro o template que está acá
+
+1153
+01:06:13.036 --> 01:06:16.316
+lo vas a copiar". Yo voy a seleccionar
+
+1154
+01:06:17.276 --> 01:06:19.876
+de esta vista 3D este filtro
+
+1155
+01:06:21.156 --> 01:06:24.736
+y yo quiero que me selecciones
+
+1156
+01:06:25.696 --> 01:06:26.316
+a qué vista
+
+1157
+01:06:27.136 --> 01:06:30.616
+de una manera más rápida, muy similar al de
+
+1158
+01:06:30.626 --> 01:06:34.316
+Dyroots. Y también tienen la opción de, por
+
+1159
+01:06:34.376 --> 01:06:34.896
+ejemplo,
+
+1160
+01:06:36.336 --> 01:06:37.316
+duplicar vistas.
+
+1161
+01:06:38.196 --> 01:06:39.376
+Yo puedo seleccionar esta
+
+1162
+01:06:40.736 --> 01:06:44.676
+y empezar a duplicar vistasYo la puedo duplicar de manera mucho más
+
+1163
+01:06:44.716 --> 01:06:47.476
+rápida en vez de hacer una por una. Hay un montón
+
+1164
+01:06:48.136 --> 01:06:48.756
+interesante.
+
+1165
+01:06:49.636 --> 01:06:53.576
+Está "Unhide", que yo puedo darle ocultar todos
+
+1166
+01:06:53.596 --> 01:06:54.516
+los elementos de la vista.
+
+1167
+01:06:55.596 --> 01:06:58.476
+Entonces, si yo puedo seleccionar, selecciono esto,
+
+1168
+01:06:59.616 --> 01:07:02.496
+me voy a IF Tools y le doy un "hide".
+
+1169
+01:07:05.036 --> 01:07:08.436
+Esto se va a ocultar ahora en todas las
+
+1170
+01:07:08.496 --> 01:07:09.036
+vistas.
+
+1171
+01:07:10.556 --> 01:07:14.396
+¿Cómo se trabaja o cómo lo
+
+1172
+01:07:14.416 --> 01:07:17.956
+pueden visualizar? Tienen un generator, IF Sheet
+
+1173
+01:07:18.036 --> 01:07:21.796
+Generator, que básicamente es muy similar al de
+
+1174
+01:07:21.916 --> 01:07:25.726
+Di roots, por eso no lo enseño. Entonces, no lo voy a
+
+1175
+01:07:25.736 --> 01:07:26.836
+enseñar dos veces lo mismo.
+
+1176
+01:07:28.166 --> 01:07:31.676
+¿Y cómo se trabaja el IF Tools? Acá en
+
+1177
+01:07:31.736 --> 01:07:33.255
+Extensions, le dan clic en Revit,
+
+1178
+01:07:34.236 --> 01:07:36.656
+Revit, Extensiones.
+
+1179
+01:07:39.636 --> 01:07:41.676
+Aquí hay uno que dice
+
+1180
+01:07:42.736 --> 01:07:44.916
+IF Tools. Si
+
+1181
+01:07:46.376 --> 01:07:50.316
+no lo tienen instalado, aquí les va a salir una opción que dice instalar en esta
+
+1182
+01:07:50.356 --> 01:07:50.636
+parte,
+
+1183
+01:07:51.516 --> 01:07:53.516
+le dan clic instalar y listo, eso es todo.
+
+1184
+01:07:54.276 --> 01:07:56.446
+Les va a salir en la ruta. Recuerden
+
+1185
+01:07:56.696 --> 01:08:03.276
+tenerlo
+
+1186
+01:08:05.136 --> 01:08:08.716
+bien organizado con el Manage, las tabs, las
+
+1187
+01:08:08.776 --> 01:08:09.276
+pestañas.
+
+1188
+01:08:11.296 --> 01:08:15.076
+Vean, lección, yo sé que están terminando este video, están cansados,
+
+1189
+01:08:15.256 --> 01:08:15.476
+pero
+
+1190
+01:08:16.356 --> 01:08:19.637
+créanme que este es el primer paso para que ustedes lo lleven a la
+
+1191
+01:08:19.996 --> 01:08:22.536
+práctica. Yo les voy a dejar aquí las diapositivas para
+
+1192
+01:08:23.516 --> 01:08:25.436
+que ustedes vean la comparación.
+
+1193
+01:08:26.396 --> 01:08:29.637
+Lo importante no es el botón, sino el modelo, vista, sheet,
+
+1194
+01:08:29.696 --> 01:08:30.666
+automatización.
+
+1195
+01:08:31.547 --> 01:08:35.236
+¿Dónde entra la guía? A partir de la siguiente lección,
+
+1196
+01:08:36.416 --> 01:08:39.076
+2.A, en prompts de IA para BIM,
+
+1197
+01:08:40.456 --> 01:08:42.896
+de herramientas a sistemas inteligentes.
+
+1198
+01:08:43.496 --> 01:08:46.196
+Voy a volver aquí a activar mi
+
+1199
+01:08:47.456 --> 01:08:50.816
+cámara para hacer el cierre final y ustedes me puedan
+
+1200
+01:08:50.896 --> 01:08:51.837
+visualizar.
+
+1201
+01:08:55.416 --> 01:08:56.337
+Creo que me pueden ver.
+
+1202
+01:08:57.257 --> 01:09:00.916
+La idea es que un profesional BIM no se mide por lo que modela, sino cómo es
+
+1203
+01:09:01.177 --> 01:09:04.536
+eficiente su proceso. Contexto claro, nivel estratégico,
+
+1204
+01:09:05.036 --> 01:09:07.196
+mentalidad de IA, eso es lo que ustedes van a aplicar.
+
+1205
+01:09:07.797 --> 01:09:10.156
+Nos vemos en la siguiente lección. Ya, parte conceptual.
+
+1206
+01:09:11.016 --> 01:09:12.637
+Como siempre, aquí les habla el ingeniero Gabriel Pantoja.
+
+1207
+01:09:13.456 --> 01:09:14.215
+Saludos.

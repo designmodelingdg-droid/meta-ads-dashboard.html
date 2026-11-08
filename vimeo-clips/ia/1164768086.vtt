@@ -1,0 +1,4729 @@
+WEBVTT
+
+1
+00:00:02.380 --> 00:00:04.490
+¡Saludos, colegas! Muy buenas noches.
+
+2
+00:00:04.520 --> 00:00:07.900
+Espero que estén muy bien el día de hoy.
+
+3
+00:00:08.380 --> 00:00:12.360
+Nuestra tercera sesión de refuerzo, esta ya tiene
+
+4
+00:00:12.400 --> 00:00:16.281
+que ver con los temas, cerrando la parte de herramientas nativas
+
+5
+00:00:16.360 --> 00:00:19.860
+y también, eh, lo que vamos a ver los
+
+6
+00:00:20.080 --> 00:00:23.030
+add-ins, ¿okey? Un segundo para revisar por el
+
+7
+00:00:23.040 --> 00:00:26.320
+grupo, eh, para
+
+8
+00:00:27.320 --> 00:00:27.720
+que vayan
+
+9
+00:00:27.780 --> 00:00:32.159
+entrando.
+
+10
+00:00:52.300 --> 00:00:56.210
+Okey, listo. Entonces, eh, tercera sesión de refuerzo.
+
+11
+00:00:56.240 --> 00:01:00.060
+Sean bienvenidos, Álvaro, Ana, Fernando, Matilde, Rubén, espero se
+
+12
+00:01:00.080 --> 00:01:04.060
+encuentren muy bien. Y bueno, ya mientras se van añadiendo más
+
+13
+00:01:04.080 --> 00:01:05.500
+participantes a la sala,
+
+14
+00:01:06.500 --> 00:01:10.320
+eh, sesión de refuerzo que tiene que ver y ya cerrar la parte de las herramientas
+
+15
+00:01:10.360 --> 00:01:14.080
+nativas y dar paso a lo que vamos a utilizar con los add-ins,
+
+16
+00:01:14.100 --> 00:01:17.980
+¿okey? Eh... voy a presentar acá
+
+17
+00:01:19.160 --> 00:01:23.040
+un poquito lo que vamos a ver en el, en el día de hoy.
+
+18
+00:01:23.080 --> 00:01:27.040
+Fíjense que esta sesión de refuerzo conceptual y demostrativa
+
+19
+00:01:27.100 --> 00:01:28.880
+va desde la automatización nativa
+
+20
+00:01:29.900 --> 00:01:32.880
+a los add-ins en Revit. Vamos a seguir
+
+21
+00:01:33.120 --> 00:01:37.000
+profundizando y vamos ya a, eh, limpiar lo
+
+22
+00:01:37.080 --> 00:01:39.700
+que son las automatizaciones,
+
+23
+00:01:40.780 --> 00:01:43.700
+eh, de herramientas nativas en Revit, ¿okey?
+
+24
+00:01:44.060 --> 00:01:47.740
+Para dar paso ahora a los add-ins. Si se recuerdan, en
+
+25
+00:01:47.800 --> 00:01:51.480
+clase, en la, la semana pasada, vimos que hay distintos niveles, ¿no?
+
+26
+00:01:51.500 --> 00:01:55.040
+Primero está el nivel de las herramientas nativas, luego está el nivel de los
+
+27
+00:01:55.180 --> 00:01:59.040
+add-ins y luego está el nivel de, de la inteligencia artificial.
+
+28
+00:01:59.060 --> 00:02:03.020
+Entonces, este curso se focaliza principalmente en las herramientas nativas
+
+29
+00:02:03.180 --> 00:02:06.440
+y add-ins, y a medida que vayamos avanzando en todo el
+
+30
+00:02:06.480 --> 00:02:09.880
+paquete, también vamos a trabajar con inteligencia artificial,
+
+31
+00:02:09.900 --> 00:02:13.460
+¿okey? Eh, antes de comenzar, repaso rápido, por
+
+32
+00:02:13.560 --> 00:02:15.580
+favor, del contenido que está en la,
+
+33
+00:02:16.700 --> 00:02:20.640
+eh, en la plataforma. Aquí, bueno,
+
+34
+00:02:20.700 --> 00:02:24.680
+con ChatGPT les hice un, un resumen, eh,
+
+35
+00:02:24.720 --> 00:02:27.560
+que ya se los voy a po..., eh, se los voy a pasar, ¿okey?
+
+36
+00:02:27.860 --> 00:02:30.780
+Se lo voy a subir también a la, a la, a la
+
+37
+00:02:30.840 --> 00:02:34.680
+plataforma. Eh, entonces,
+
+38
+00:02:34.940 --> 00:02:37.440
+fíjense aquí, eh,
+
+39
+00:02:38.400 --> 00:02:41.920
+si visualizamos, ¿okey?
+
+40
+00:02:41.960 --> 00:02:48.150
+Déjeme...
+
+41
+00:02:50.420 --> 00:02:53.780
+Okey, ya leo. Si visualizamos, ya tienen la lección dos,
+
+42
+00:02:54.320 --> 00:02:58.079
+eh, B y la lección tres A. Mañana les voy a colgar la lección tres B
+
+43
+00:02:58.720 --> 00:03:02.700
+y la lección cuatro, parte A. Son seis en total, significa que ya,
+
+44
+00:03:03.300 --> 00:03:06.100
+eh, hoy es jueves, ya
+
+45
+00:03:06.200 --> 00:03:09.640
+entre... bueno, ya revisamos, pero el
+
+46
+00:03:09.760 --> 00:03:13.000
+lunes, si no estoy mal, si mi memoria no me falla, ya cerramos las lecciones
+
+47
+00:03:13.020 --> 00:03:16.269
+asincrónicas, lunes o miércoles, la próxima semana, si mi memoria no me falla,
+
+48
+00:03:16.280 --> 00:03:20.240
+¿okey? Eh, entonces,
+
+49
+00:03:20.340 --> 00:03:23.720
+antes de ir con la clase, consultas sobre lo, eh, las
+
+50
+00:03:23.760 --> 00:03:26.840
+lecciones. ¿Tienen alguna duda sobre la lección,
+
+51
+00:03:27.640 --> 00:03:30.960
+eh, dos B y la lección tres A? ¿Tienen alguna
+
+52
+00:03:31.020 --> 00:03:34.720
+duda hasta el momento? Si no, voy de una vez con la
+
+53
+00:03:34.760 --> 00:03:38.620
+clase, va a ser muy práctica. Eh, ¿tienen alguna
+
+54
+00:03:38.640 --> 00:03:41.940
+duda con el material que han revisado? ¿Está claro?
+
+55
+00:03:46.840 --> 00:03:49.940
+Ahí me avisan, los leo.
+
+56
+00:03:50.840 --> 00:03:54.720
+Eh, y bueno, mientras leo su chat, eh, fíjense, por
+
+57
+00:03:54.820 --> 00:03:58.780
+favor, el modelo que yo estoy trabajando acá, o que
+
+58
+00:03:58.820 --> 00:04:02.760
+se ve en las lecciones, se lo subí, por favor, al apartado de
+
+59
+00:04:02.820 --> 00:04:06.609
+recursos. ¿Okey? Se lo subí al apartado de recursos.
+
+60
+00:04:06.620 --> 00:04:09.280
+Gracias, Fernando, por contestar. Muchas gracias.
+
+61
+00:04:09.300 --> 00:04:13.280
+Entonces, aquí en el apartado de recursos, ustedes le dan clic, recursos,
+
+62
+00:04:13.320 --> 00:04:17.200
+recursos, y les sale el modelo que, que se está trabajando.
+
+63
+00:04:17.839 --> 00:04:21.779
+Para el proyecto final, yo les voy a colgar un modelo muy similar a este y ustedes
+
+64
+00:04:21.800 --> 00:04:25.680
+van a hacer las auto..., las automatizaciones, perdón, de herramientas
+
+65
+00:04:25.740 --> 00:04:29.620
+nativas, add-ins y plantillas automáticas, que es lo que me interesa en este
+
+66
+00:04:29.640 --> 00:04:33.200
+primer curso, ¿okey? Eh, entonces, ahí lo van a
+
+67
+00:04:33.220 --> 00:04:36.300
+encontrar y esta sesión de refuerzo la van a encontrar
+
+68
+00:04:36.580 --> 00:04:40.460
+disponible el día de mañana como sesión de refuerzo, eh,
+
+69
+00:04:40.520 --> 00:04:44.440
+número tres. Gracias. Listo, listo, Eddie,
+
+70
+00:04:44.480 --> 00:04:45.280
+muchas gracias.
+
+71
+00:04:46.280 --> 00:04:50.260
+Y me excuso, el día, esto fue el miércoles o martes, no me
+
+72
+00:04:50.280 --> 00:04:52.880
+acuerdo, que les dije que se subía la información.
+
+73
+00:04:52.900 --> 00:04:56.800
+Teníamos problemas con, con la plataforma y, y no podía
+
+74
+00:04:56.820 --> 00:05:00.800
+cargar. Entonces, estaba un poquito con esa desesperación,
+
+75
+00:05:00.840 --> 00:05:04.340
+pero bueno, ya se solucionó y ya seguiremos trabajando sin ningún inconveniente,
+
+76
+00:05:04.350 --> 00:05:08.280
+¿okey? Dicho esto, herramientas
+
+77
+00:05:08.320 --> 00:05:11.240
+nativas, vean cómo vamos a seguir profundizando.
+
+78
+00:05:11.320 --> 00:05:13.420
+Eh, pregunta para todos:
+
+79
+00:05:15.820 --> 00:05:19.800
+después de lo que han visto hasta ahora, ¿qué consideran entonces que es
+
+80
+00:05:19.840 --> 00:05:21.560
+una automatización nativa en Revit?
+
+81
+00:05:21.580 --> 00:05:24.420
+Les hago la pregunta para todos, me lo dicen por el chat.
+
+82
+00:05:24.440 --> 00:05:28.200
+De lo que han visto ya en las clases y ahora con la parte práctica, ¿qué
+
+83
+00:05:28.260 --> 00:05:31.060
+considerarían entonces que es una automatización,
+
+84
+00:05:32.280 --> 00:05:34.140
+eh, nativa de Revit?
+
+85
+00:05:35.820 --> 00:05:39.750
+¿Cuál es la diferencia entre los add-ins y la inteligencia artificial, según lo
+
+86
+00:05:39.820 --> 00:05:43.760
+que ya vieron, eh, en las clases? ¿Qué,
+
+87
+00:05:43.840 --> 00:05:47.550
+qué... por qué las herramientas nativas en Revit? Y los voy leyendo, ¿okey?
+
+88
+00:05:47.550 --> 00:05:50.920
+Los voy leyendo. Eh, para generar un
+
+89
+00:05:50.960 --> 00:05:54.640
+poquito el debate: por qué las herramientas nativas de
+
+90
+00:05:54.680 --> 00:05:57.000
+Revit, por qué tenemos que conocerlas.
+
+91
+00:05:57.400 --> 00:06:00.280
+Eh, objetivo de esta sesión: nuestra meta es consolí,
+
+92
+00:06:00.300 --> 00:06:03.920
+consolidar, perdón, la lógica del sistema BIM y
+
+93
+00:06:03.960 --> 00:06:07.486
+prepararnos para la automatización acelerada....
+
+94
+00:06:07.496 --> 00:06:11.356
+Y esta sesió-, esta sesión conecta todo lo aprendido hasta ahora y te
+
+95
+00:06:11.396 --> 00:06:14.596
+prepara para usar add-ins de forma profesional.
+
+96
+00:06:14.616 --> 00:06:17.656
+No es un repaso simple, es la construcción de una mentalidad estratégica.
+
+97
+00:06:17.666 --> 00:06:21.516
+Aprenderás a distinguir cuándo automatizar, cómo estructurar tu modelo
+
+98
+00:06:21.596 --> 00:06:24.376
+y por qué los add-ins son herramientas de ejecución,
+
+99
+00:06:25.656 --> 00:06:29.576
+no de pensamiento. Los leo, automatizar
+
+100
+00:06:29.616 --> 00:06:33.356
+procesos dentro de Revit empleando parámetros, filtros y cantidades, lo
+
+101
+00:06:33.436 --> 00:06:36.846
+cual permite modelar más rápido, exactamente para optimización del
+
+102
+00:06:36.896 --> 00:06:40.736
+tiempo y trabajo. Exactamente, Brenda, ¿alguien más que
+
+103
+00:06:40.756 --> 00:06:43.816
+pueda ir aportando su opinión? Yo agregaría que
+
+104
+00:06:43.856 --> 00:06:47.476
+básicamente, y lo pueden ver así, eh, las
+
+105
+00:06:47.496 --> 00:06:51.376
+herramientas nativas de Revit es toda la configuración inicial que necesitamos
+
+106
+00:06:51.936 --> 00:06:55.736
+y que la gran mayoría que utiliza Revit no, no, no lo hace,
+
+107
+00:06:55.796 --> 00:06:59.736
+siempre lo trabaja, eh, en cada proyecto,
+
+108
+00:06:59.746 --> 00:07:03.696
+¿no? Y eso lo hace un poquito, un poquito más lento, ¿ok?
+
+109
+00:07:03.706 --> 00:07:07.016
+¿Dónde estamos y por qué importa? Actualmente, vamos a buscar una
+
+110
+00:07:07.026 --> 00:07:09.896
+alineación, visión y base sólida de lo que hemos
+
+111
+00:07:09.956 --> 00:07:13.476
+aprendido. Y la idea es estar en la, en la misma
+
+112
+00:07:13.556 --> 00:07:16.856
+sintonía, entender el sistema completo y lo aprendido es
+
+113
+00:07:16.996 --> 00:07:20.696
+fundamento, no previo. Fíjense que vamos a estar doce meses, un año
+
+114
+00:07:20.716 --> 00:07:24.316
+completo, con estos cursos cortos, pero que yo los voy preparando para que
+
+115
+00:07:24.456 --> 00:07:24.796
+puedan
+
+116
+00:07:25.636 --> 00:07:28.596
+trabajar con las automatizaciones y la inteligencia artificial de una
+
+117
+00:07:28.636 --> 00:07:32.576
+manera, eh, adecuada, ¿ok? ¿Y cuál es
+
+118
+00:07:32.596 --> 00:07:35.916
+el mensaje clave?, por qué les hacía la pregunta por el, el, el
+
+119
+00:07:36.876 --> 00:07:38.496
+chat de Zoom. Y
+
+120
+00:07:39.436 --> 00:07:43.406
+la idea es que automatizar no es usar herramientas al azar, requiere
+
+121
+00:07:43.436 --> 00:07:46.486
+estrategia y comprensión del sistema completo.
+
+122
+00:07:46.516 --> 00:07:48.656
+Automatizar es diseñar un sistema
+
+123
+00:07:49.476 --> 00:07:52.126
+y cada decisión debe responder a una lógica estructurada.
+
+124
+00:07:52.176 --> 00:07:55.936
+Si ustedes se dan cuenta, las herramientas nativas de Revit tienen un
+
+125
+00:07:56.056 --> 00:07:58.936
+sentido, tienen un porqué, tienen un propósito.
+
+126
+00:07:59.076 --> 00:08:02.036
+Toda herramienta nativa de Revit tiene un propósito y
+
+127
+00:08:02.116 --> 00:08:05.976
+nosotros, eh, como profesionales y
+
+128
+00:08:06.296 --> 00:08:10.256
+con mucho criterio, debemos conocer ese propósito para poderle sacar
+
+129
+00:08:10.296 --> 00:08:14.196
+el provecho. La idea, eh, no es usar las
+
+130
+00:08:14.236 --> 00:08:17.815
+herramientas nativas por usar o sentir que porque utilizo una
+
+131
+00:08:17.836 --> 00:08:19.856
+herramienta nativa, ya estoy automatizando.
+
+132
+00:08:19.876 --> 00:08:23.816
+No, automatizamos cuando diseñamos un sistema
+
+133
+00:08:23.836 --> 00:08:26.976
+y ese sistema le encontramos un, un propósito.
+
+134
+00:08:26.996 --> 00:08:30.936
+Por ejemplo, lo vamos a ver con, con, con los parámetros, ¿ok?
+
+135
+00:08:31.036 --> 00:08:34.756
+Y, ojo, aquí no se aprende Revit más rápido,
+
+136
+00:08:34.817 --> 00:08:37.976
+aquí no se aprende a modelar Revit, aquí se aprende a
+
+137
+00:08:37.996 --> 00:08:41.635
+utilizar Revit como una herramienta para
+
+138
+00:08:41.645 --> 00:08:45.436
+agilizar lo que ya, eh, trabajamos con el
+
+139
+00:08:45.496 --> 00:08:48.776
+modelado. Estamos aprendiendo a pensar mejor el
+
+140
+00:08:48.816 --> 00:08:52.646
+modelo, no modelar automático, hacer tareas repetitivas,
+
+141
+00:08:52.676 --> 00:08:56.616
+sino cómo puedo mej-, mmm, mejorar el modelo y
+
+142
+00:08:56.656 --> 00:09:00.536
+cómo puedo ser más eficiente y cómo puedo mantener, eh, los,
+
+143
+00:09:00.556 --> 00:09:03.276
+los estándares, ¿no? Entonces, vamos a empezar.
+
+144
+00:09:03.356 --> 00:09:07.296
+Eh, este es el último repaso que le vamos a dar a los parámetros de proyecto.
+
+145
+00:09:07.316 --> 00:09:10.936
+Creo que le hemos dado un buen repaso, pero un, un muy, muy buen
+
+146
+00:09:10.996 --> 00:09:14.936
+repaso. Y obviamente, cuando ustedes entren en el proyecto final o
+
+147
+00:09:14.956 --> 00:09:18.486
+cuando hagamos la simulación del proyecto final, que esa simulación la vamos a
+
+148
+00:09:18.486 --> 00:09:21.456
+hacer dentro de dos semanas, eh, la idea es que
+
+149
+00:09:21.496 --> 00:09:25.376
+ustedes, eh, ya manejen esto a profundidad,
+
+150
+00:09:25.396 --> 00:09:29.376
+porque los parámetros, eh, es un no negociable,
+
+151
+00:09:29.415 --> 00:09:33.296
+esto tenemos que trabajarlo sí o sí, ¿ok?
+
+152
+00:09:33.316 --> 00:09:37.236
+Entonces, dicho esto, tenemos tres parámetros: están los parámetros de
+
+153
+00:09:37.296 --> 00:09:40.816
+proyecto, están los parámetros compartidos y están los parámetros
+
+154
+00:09:40.836 --> 00:09:44.545
+globales. Aquí les voy a mostrar un-- rápidamente, voy a
+
+155
+00:09:44.736 --> 00:09:46.376
+hacer un repaso de
+
+156
+00:09:48.816 --> 00:09:52.336
+, de, de, de, de lo que...
+
+157
+00:09:54.636 --> 00:09:57.096
+hemos visto, ¿no? en las lecciones.
+
+158
+00:09:57.136 --> 00:10:00.656
+Y luego que haga el repaso rápido de los proyec-- parámetros de proyecto,
+
+159
+00:10:00.696 --> 00:10:04.636
+parámetros compartidos, parámetros globales, quiero que ustedes, en el chat, me
+
+160
+00:10:04.676 --> 00:10:05.116
+indiquen
+
+161
+00:10:06.096 --> 00:10:07.716
+la diferencia entre
+
+162
+00:10:09.336 --> 00:10:12.496
+proyecto, compartir y globales, después que vean la práctica, ¿no?
+
+163
+00:10:12.516 --> 00:10:15.016
+Entonces, vamos a un momento a Revit, ¿ok?
+
+164
+00:10:15.716 --> 00:10:19.006
+Eh, este es un modelo sencillo, vuelvo y repito, que lo encuentran en la sección de
+
+165
+00:10:19.056 --> 00:10:22.336
+recursos, como les mostré al, al inicio.
+
+166
+00:10:22.356 --> 00:10:26.175
+Vamos a salirnos de acá. Entonces, vean lo siguiente: tengo
+
+167
+00:10:26.216 --> 00:10:29.456
+este modelo, vamos a utilizar parámetros de
+
+168
+00:10:29.536 --> 00:10:33.336
+proyecto, ¿ok? Entonces, voy a agarrar
+
+169
+00:10:33.376 --> 00:10:33.696
+acá
+
+170
+00:10:34.856 --> 00:10:37.856
+y fíjense, en este parámetro de, de, de
+
+171
+00:10:38.276 --> 00:10:42.136
+proyecto, lo vamos a utilizar de manera simultánea, tanto
+
+172
+00:10:42.196 --> 00:10:45.516
+para puertas como para ventanas, ¿ok?
+
+173
+00:10:45.536 --> 00:10:49.456
+Entonces, aquí nosotros tenemos una puerta referenciada y por
+
+174
+00:10:49.516 --> 00:10:52.896
+acá, si no estoy mal, tenemos una ventana referenciada, ¿ok?
+
+175
+00:10:52.906 --> 00:10:56.076
+¿Cómo yo puedo saber las categorías de mis elementos?
+
+176
+00:10:56.096 --> 00:10:59.776
+Simplemente, cuando ustedes seleccionen acá, vamos a quitarle los colores
+
+177
+00:10:59.836 --> 00:11:03.436
+coherentes, ustedes seleccionan una puerta, siempre lo
+
+178
+00:11:03.456 --> 00:11:07.425
+primero que van a visualizar, y con cualquier elemento en general, es
+
+179
+00:11:07.436 --> 00:11:11.296
+cuál es su categoría. La categoría va a salir acá, en la parte derecha, en
+
+180
+00:11:11.336 --> 00:11:14.696
+las propiedades, dice Puertas. Ya yo sé que es puertas.
+
+181
+00:11:14.756 --> 00:11:17.596
+La categoría agrupa las familias, no las discretiza.
+
+182
+00:11:17.616 --> 00:11:21.516
+Yo sé que esto es una puerta, esto es otra puerta, a pesar de que las dimensiones
+
+183
+00:11:21.596 --> 00:11:23.915
+cambian. Y lo mismo sucede con la ventana.
+
+184
+00:11:23.936 --> 00:11:27.716
+Aquí hay una ventana, yo sé... Bueno, no, perdón, esto es una
+
+185
+00:11:27.776 --> 00:11:30.356
+puerta también. ¿Dónde lo podemos encontrar?
+
+186
+00:11:30.376 --> 00:11:33.456
+Por acá debe haber una ventana. A
+
+187
+00:11:33.516 --> 00:11:37.366
+ver, esto es un muro, bla, bla, bla.
+
+188
+00:11:37.366 --> 00:11:40.836
+Vamos a ver si conseguimos aquí. ¿Esta es una ventana?
+
+189
+00:11:40.896 --> 00:11:44.675
+Sí, sí, acá, por ejemplo, aquí conseguimos una ventana, ¿ok?
+
+190
+00:11:44.716 --> 00:11:48.675
+Fíjense que aquí está la ventana. Tips rápido, por ejemplo, de un
+
+191
+00:11:48.776 --> 00:11:51.626
+proyecto de un nivel, si ustedes quieren, eh, poder
+
+192
+00:11:51.696 --> 00:11:54.656
+ejemplificar o poder seleccionar de manera
+
+193
+00:11:54.716 --> 00:11:58.636
+rápida, eh, todas las puertas y ventanas de ese mismo nivel,
+
+194
+00:11:59.276 --> 00:12:03.196
+truco: seleccionan todo, se van a los filtros, capaz se lo saben, pero
+
+195
+00:12:03.376 --> 00:12:03.796
+este es
+
+196
+00:12:04.876 --> 00:12:08.236
+interesante, y ustedes van a colocar puertas, van a
+
+197
+00:12:08.296 --> 00:12:11.812
+colocar ventanas.... y le van a dar a Aplicar
+
+198
+00:12:12.472 --> 00:12:16.092
+y Aceptar. Y acá, en la parte inferior, donde está estos
+
+199
+00:12:16.172 --> 00:12:18.252
+lentes, le van a dar a arreglar elementos.
+
+200
+00:12:18.271 --> 00:12:22.072
+Entonces, ahí pueden ver todas las puertas y ventanas que tiene,
+
+201
+00:12:22.692 --> 00:12:25.692
+tiene ese nivel, ¿sí? Si ustedes le colocan aquí colores coherentes, lo van a
+
+202
+00:12:25.771 --> 00:12:29.372
+poder, bueno, ya, ya, ya, ya se ve aquí.
+
+203
+00:12:29.391 --> 00:12:32.872
+Entonces, tiene acá las ventanas, ventanas, puertas,
+
+204
+00:12:32.912 --> 00:12:36.852
+puertas, y es mucho más rápido identificarlas para no estar seleccionando uno por
+
+205
+00:12:36.912 --> 00:12:37.302
+uno.
+
+206
+00:12:38.592 --> 00:12:42.462
+Pero, eh, a lo que voy, fíjense, inclusive lo voy a hacer con,
+
+207
+00:12:42.472 --> 00:12:46.412
+con la vista aislada. Yo voy a crear un parámetro simultáneo, vean
+
+208
+00:12:46.452 --> 00:12:49.492
+que lo hemos hecho hasta ahora, parámetros de proyecto simultáneo,
+
+209
+00:12:49.532 --> 00:12:53.472
+¿ok? En ese parámetro de proyecto, eh,
+
+210
+00:12:53.632 --> 00:12:56.992
+simultáneo, ¿ok?, eh, vamos a colocar
+
+211
+00:12:57.552 --> 00:13:01.072
+un parámetro que se denomina apertura, que es el que expliqué en las lecciones,
+
+212
+00:13:02.172 --> 00:13:05.832
+y vamos a, eh, generar otro
+
+213
+00:13:06.072 --> 00:13:10.052
+parámetro de, de proyecto para que entendamos la
+
+214
+00:13:10.092 --> 00:13:13.832
+diferencia también entre un parámetro tipo y un parámetro ejemplar, ¿ok?, de
+
+215
+00:13:14.092 --> 00:13:17.992
+proyecto. Entonces, el paso a paso era sencillo: nos
+
+216
+00:13:18.072 --> 00:13:21.312
+íbamos a Gestionar, luego de Gestionar nos vamos a
+
+217
+00:13:22.372 --> 00:13:26.312
+Parámetros de proyecto, y acá en los Parámetros de proyecto le vamos a dar
+
+218
+00:13:26.372 --> 00:13:30.052
+aquí donde dice, eh, Nuevo parámetro.
+
+219
+00:13:30.372 --> 00:13:33.232
+Ahí le vamos a colocar el nombre, Apertura.
+
+220
+00:13:33.252 --> 00:13:37.152
+Entonces, aquí dejamos seleccionado Parámetro
+
+221
+00:13:37.172 --> 00:13:41.072
+de proyecto, lo vamos a trabajar con ejemplar, ya van a ver la diferencia
+
+222
+00:13:41.132 --> 00:13:45.072
+con tipo. Disciplina común, y como es un texto, lo que yo
+
+223
+00:13:45.092 --> 00:13:48.592
+voy a indicar, ¿ok? Ahí vamos a escribir apertura.
+
+224
+00:13:48.652 --> 00:13:52.112
+Agrupar parámetro en... A mí me gusta mucho
+
+225
+00:13:52.132 --> 00:13:56.012
+agruparlos, yo les dije, o en datos de identidad, que
+
+226
+00:13:56.072 --> 00:13:59.672
+son todos los que salen aquí en las propiedades, son como las categorías, y
+
+227
+00:13:59.732 --> 00:14:02.972
+agruparlos, si no, en la opción Otro, en
+
+228
+00:14:03.072 --> 00:14:06.932
+Otros. Yo sé, esto es internamente, eh,
+
+229
+00:14:07.052 --> 00:14:10.912
+ustedes, inclusive, les invito a que lo puedan internalizar de esta manera.
+
+230
+00:14:10.972 --> 00:14:14.852
+Otro, todo lo que esté en parámetro, en Otro, yo signi-- eh, significa que fue
+
+231
+00:14:14.932 --> 00:14:18.132
+uno que yo creé, significa que es uno que yo estoy
+
+232
+00:14:18.172 --> 00:14:21.652
+configurando, ¿ok? Entonces, aquí en Editar información de
+
+233
+00:14:21.712 --> 00:14:25.412
+herramientas, como este modelo lo pueden visualizar otros usuarios a través de la
+
+234
+00:14:25.432 --> 00:14:28.222
+metodología BIM de un proyecto que estemos aplicando, yo puedo colocar
+
+235
+00:14:28.232 --> 00:14:31.732
+acá: Parámetro,
+
+236
+00:14:31.771 --> 00:14:35.592
+Apertura, y aquí le vamos a colocar:
+
+237
+00:14:35.732 --> 00:14:38.852
+eh... Apertura
+
+238
+00:14:40.212 --> 00:14:43.531
+adentro, afuera, ¿ok? Para saber el
+
+239
+00:14:43.572 --> 00:14:46.952
+sentido. Le vamos a dar a Aceptar, va a ser
+
+240
+00:14:47.031 --> 00:14:50.672
+ejemplar, y vean que aquí yo sí puedo trabajar con ambos
+
+241
+00:14:50.682 --> 00:14:54.582
+paráme-- eh, los parámetros de proyecto, pueden, pueden calzar en una o
+
+242
+00:14:54.652 --> 00:14:57.992
+más categorías, no, no tiene que ser una a propósito, ¿no?
+
+243
+00:14:58.052 --> 00:15:01.392
+Por ejemplo, aquí puedo colocar puertas y aquí puedo colocar
+
+244
+00:15:01.452 --> 00:15:03.152
+ventanas y darle a Aceptar,
+
+245
+00:15:04.312 --> 00:15:07.892
+y darle a Aceptar, y ese parámetro va a aplicar tanto a puertas a
+
+246
+00:15:07.932 --> 00:15:11.612
+ventanas. ¿Cómo lo sé? Yo voy a seleccionar aquí, fíjense
+
+247
+00:15:11.652 --> 00:15:15.531
+aquí, la puerta, ¿sí? Y fíjense que todos salen con el parámetro de
+
+248
+00:15:15.612 --> 00:15:19.552
+apertura. E inclusive, fíjense, voy a seleccionar,
+
+249
+00:15:19.562 --> 00:15:23.531
+voy a filtrar, solo selecciono puertas y fíjense que
+
+250
+00:15:23.592 --> 00:15:26.972
+ahora todas las puertas tienen acá, en Otro, la, el tema de
+
+251
+00:15:27.012 --> 00:15:30.992
+apertura. Si yo dejo el clic o el cursor ahí sin darle
+
+252
+00:15:32.112 --> 00:15:35.872
+ningún clic, vean que me indica de, de qué trata el
+
+253
+00:15:35.912 --> 00:15:39.682
+parámetro, ¿sí? Y lo mismo sucede con las, con las
+
+254
+00:15:39.732 --> 00:15:43.492
+ventanas, ¿no? Entonces, es sencillo, yo puedo agarrar acá y poner
+
+255
+00:15:43.512 --> 00:15:47.412
+esta puerta, que está aquí. Vamos a seleccionar aquí, vamos a hacer
+
+256
+00:15:47.472 --> 00:15:49.912
+esto. Voy a seleccionar todo,
+
+257
+00:15:50.112 --> 00:15:52.872
+filtro, no seleccionar
+
+258
+00:15:52.912 --> 00:15:56.432
+ninguno, aplicar, aceptar, solo las
+
+259
+00:15:56.552 --> 00:16:00.342
+puertas y fíjense, todas las puertas les
+
+260
+00:16:00.472 --> 00:16:03.972
+voy a colocar... adentro,
+
+261
+00:16:05.031 --> 00:16:08.472
+¿ok? Vamos a dar Aceptar.
+
+262
+00:16:09.812 --> 00:16:13.092
+Y solo esta puerta, ¿ok?
+
+263
+00:16:13.212 --> 00:16:13.962
+Y...
+
+264
+00:16:14.892 --> 00:16:18.771
+¿esta es una puerta? Sí, esta puerta, que es deslizante, esa también.
+
+265
+00:16:18.792 --> 00:16:22.531
+No, esta es ventana. Entonces, esta puerta y esta puerta van a
+
+266
+00:16:22.632 --> 00:16:23.092
+quedar
+
+267
+00:16:23.972 --> 00:16:27.462
+aquí, ya tienen adentro, entonces voy a colocar aquí
+
+268
+00:16:27.462 --> 00:16:30.892
+afuera, ¿ok?, para la apertura.
+
+269
+00:16:32.111 --> 00:16:35.952
+Y acá, eh, para las ventanas, lo mismo, las ventanas
+
+270
+00:16:36.031 --> 00:16:39.892
+voy a seleccionar, botón secundario, todos los ejemplares, solo hay dos, y
+
+271
+00:16:39.912 --> 00:16:43.752
+aquí voy a colocar afuera. Entonces, ¿en qué
+
+272
+00:16:43.791 --> 00:16:45.472
+quedamos de los parámetros del proyecto?
+
+273
+00:16:45.492 --> 00:16:48.031
+Los parámetros del proyecto nos dan dos cosas.
+
+274
+00:16:48.072 --> 00:16:52.002
+Nos dan, eh, el sentido de información
+
+275
+00:16:53.092 --> 00:16:57.051
+para las propiedades de cualquier usuario que quiera visualizar el modelo,
+
+276
+00:16:57.062 --> 00:17:00.992
+¿ok? Y que no está en los parámetros por default, entonces
+
+277
+00:17:01.012 --> 00:17:04.331
+yo creo un parámetro de proyecto. Y además sirve para
+
+278
+00:17:04.492 --> 00:17:08.322
+categorizar las cantidades, por eso sirven los parámetros de proyecto.
+
+279
+00:17:08.472 --> 00:17:12.152
+Es decir, yo me voy a ir acá a la parte de,
+
+280
+00:17:13.291 --> 00:17:17.021
+eh, Vista, eh,
+
+281
+00:17:17.051 --> 00:17:20.593
+Tabla de planificación cantidades, y si yo hago, por
+
+282
+00:17:20.633 --> 00:17:24.512
+ejemplo, vamos a hacer el de puertas, ¿verdad?
+
+283
+00:17:24.531 --> 00:17:28.012
+Buscamos puertas, le damos a Aceptar.
+
+284
+00:17:28.892 --> 00:17:30.492
+Entonces, yo selecciono aquí,
+
+285
+00:17:31.492 --> 00:17:35.331
+eh, el tipo, ¿ok? Y vamos a
+
+286
+00:17:35.392 --> 00:17:38.752
+seleccionar su ancho, su alto, para tener las
+
+287
+00:17:38.772 --> 00:17:39.732
+dimensiones
+
+288
+00:17:40.572 --> 00:17:43.012
+y vamos a categorizar por el
+
+289
+00:17:43.092 --> 00:17:47.052
+parámetro, eh, apertura. Aquí está, vean
+
+290
+00:17:47.092 --> 00:17:51.072
+que aquí sale. Y además, aquí vamos a
+
+291
+00:17:51.212 --> 00:17:54.092
+recontar para saber cuántas puertas hay.
+
+292
+00:17:54.112 --> 00:17:57.752
+Entonces, aquí yo me voy a Formato y en el recuento yo
+
+293
+00:17:57.772 --> 00:17:59.072
+calculo los totales,
+
+294
+00:17:59.892 --> 00:18:03.872
+¿sí? Y en la clasificación agrupación lo hacemos por tipo y que
+
+295
+00:18:03.892 --> 00:18:07.681
+me clasifique por apertura, que me calcule el total y le damos a
+
+296
+00:18:07.692 --> 00:18:11.312
+Aceptar. Entonces, me sirve para categorizar en las
+
+297
+00:18:11.372 --> 00:18:14.331
+cantidades, ¿sí? Entonces, vean, aquí yo me puedo dar
+
+298
+00:18:14.472 --> 00:18:17.896
+cuenta-... que hay diecinueve
+
+299
+00:18:17.996 --> 00:18:21.316
+puertas, falta esta puerta P9, fíjense que no
+
+300
+00:18:21.336 --> 00:18:24.636
+está. Entonces, ¿cómo yo puedo identificar en el proyecto?
+
+301
+00:18:24.676 --> 00:18:27.976
+Vean, esto es otro truco. Ustedes seleccionan acá, la
+
+302
+00:18:28.096 --> 00:18:32.056
+fila, se van al 3D, le dan clic acá en
+
+303
+00:18:32.095 --> 00:18:35.956
+la parte superior, el cuadro de selección, te va a aislar la puerta.
+
+304
+00:18:35.996 --> 00:18:39.606
+Fíjense que es esta puerta, ¿sí? Y, y en
+
+305
+00:18:39.676 --> 00:18:41.976
+apertura, lo puedo colocar aquí,
+
+306
+00:18:41.996 --> 00:18:43.856
+apertura,
+
+307
+00:18:45.056 --> 00:18:48.976
+no aplica, ¿sí? Entonces, aquí en la tabla de
+
+308
+00:18:49.016 --> 00:18:51.576
+planificación de puertas se actualiza.
+
+309
+00:18:51.596 --> 00:18:54.616
+Entonces, aquí viene lo interesante, porque yo puedo filtrar.
+
+310
+00:18:54.656 --> 00:18:58.616
+Yo puedo filtrar aquí en clasificación o agrupación,
+
+311
+00:18:58.756 --> 00:19:02.636
+eh... aquí
+
+312
+00:19:02.646 --> 00:19:03.716
+era clasificar por
+
+313
+00:19:04.756 --> 00:19:07.976
+apertura. Y aquí, eh,
+
+314
+00:19:09.336 --> 00:19:13.296
+en el filtro, yo puedo colocar: a ver, muéstrame aquí en la apertura, todas
+
+315
+00:19:13.336 --> 00:19:17.286
+las que yo haya puesto afuera. Entonces, me va a dar aceptar y ahí
+
+316
+00:19:17.396 --> 00:19:19.276
+me las va a indicar. Fíjense que tengo
+
+317
+00:19:20.176 --> 00:19:23.956
+dos tipos de puertas, unas M1, otras P2, con
+
+318
+00:19:23.996 --> 00:19:26.896
+anchuras y alturas distintas, y dos abren hacia
+
+319
+00:19:26.916 --> 00:19:30.196
+afuera. Me sirve para discretizar
+
+320
+00:19:30.296 --> 00:19:32.876
+rápidamente las cantidades. ¿Por qué?
+
+321
+00:19:32.916 --> 00:19:36.716
+Porque, eh, en las categorías no siempre vamos a
+
+322
+00:19:36.736 --> 00:19:40.466
+tener los campos que necesitamos, los campos pueden variar, ¿ok?
+
+323
+00:19:40.496 --> 00:19:44.416
+Entonces, los, estos campos que aparecen acá disponibles están por
+
+324
+00:19:44.436 --> 00:19:46.556
+default, pero no siempre los que están por default
+
+325
+00:19:47.416 --> 00:19:50.616
+me van a servir. Entonces, por eso yo creo un parámetro de proyecto,
+
+326
+00:19:50.636 --> 00:19:51.516
+¿ok?
+
+327
+00:19:52.816 --> 00:19:53.256
+Ahora,
+
+328
+00:19:54.276 --> 00:19:57.496
+si ustedes se dieron cuenta, cuando yo creé
+
+329
+00:19:57.636 --> 00:20:00.236
+el... vamos a quitar acá.
+
+330
+00:20:02.036 --> 00:20:03.766
+Para quitar, eh,
+
+331
+00:20:05.256 --> 00:20:08.576
+el, la caja de sección,
+
+332
+00:20:08.656 --> 00:20:11.636
+simplemente deseleccionan aquí, ¿sí?
+
+333
+00:20:11.656 --> 00:20:14.916
+Dan a aplicar y listo. Eh, que les iba a
+
+334
+00:20:14.976 --> 00:20:18.796
+decir... ¡Ah! ¿Cuál es la diferencia entre un parámetro tipo y un
+
+335
+00:20:18.816 --> 00:20:22.276
+parámetro de, de apertura? Eh, un parámetro de
+
+336
+00:20:22.356 --> 00:20:25.996
+ejemplar, perdón, de proyecto. Si ustedes se dieron cuenta, lo creamos
+
+337
+00:20:26.015 --> 00:20:28.516
+como, eh, como
+
+338
+00:20:28.525 --> 00:20:32.496
+ejemplar. ¿Qué pasa? Si ustedes se van acá nuevamente a
+
+339
+00:20:32.516 --> 00:20:33.096
+Gestionar
+
+340
+00:20:33.916 --> 00:20:37.816
+y Parámetro de proyecto, y le vamos a crear uno que se
+
+341
+00:20:37.836 --> 00:20:39.656
+llame bisagra,
+
+342
+00:20:40.816 --> 00:20:44.696
+¿sí? Bisagra tipo común, y vamos a
+
+343
+00:20:44.776 --> 00:20:48.756
+colocarle un número, agrupamos en otra y
+
+344
+00:20:48.796 --> 00:20:51.936
+le voy a cambiar el ejemplar, ¿sí? Le voy a cambiar el
+
+345
+00:20:51.976 --> 00:20:55.936
+ejemplar, le voy a colocar tipo y solo va a ser para
+
+346
+00:20:55.956 --> 00:20:59.856
+las puertas, ¿ok? Entonces, ¿cuál es la diferencia?
+
+347
+00:20:59.865 --> 00:21:03.356
+¿Qué pasa? Vamos a darle a Aceptar, que
+
+348
+00:21:03.416 --> 00:21:06.776
+cuando yo seleccione una puerta, por ejemplo, mira,
+
+349
+00:21:07.356 --> 00:21:11.296
+esta puerta es P4, esta puerta que está acá es P5, o
+
+350
+00:21:11.356 --> 00:21:11.616
+sea,
+
+351
+00:21:12.496 --> 00:21:16.156
+son puertas P4, P5, pero, pero
+
+352
+00:21:17.216 --> 00:21:20.776
+vamos a ver si son, cuáles son de la misma familia, quiero mostrarles eso.
+
+353
+00:21:21.316 --> 00:21:22.136
+Simple ras,
+
+354
+00:21:23.576 --> 00:21:24.536
+simple ras,
+
+355
+00:21:25.676 --> 00:21:26.996
+simple visión a ras,
+
+356
+00:21:28.076 --> 00:21:32.056
+decorativo... Esta, por ejemplo,
+
+357
+00:21:32.116 --> 00:21:35.536
+esta puerta y esta puerta vienen de la misma familia.
+
+358
+00:21:36.356 --> 00:21:39.156
+¿Sí? De la misma familia, vean. ¿Cómo lo sé?
+
+359
+00:21:39.176 --> 00:21:41.916
+¿Cómo sé cuáles son las familias? Acá, esta es la
+
+360
+00:21:41.976 --> 00:21:43.716
+familia. ¿Sí?
+
+361
+00:21:44.596 --> 00:21:48.516
+Este que está acá, que dice M, simple, visión a ras, es la familia,
+
+362
+00:21:48.576 --> 00:21:52.176
+y el tipo es este nombre que está acá, ¿ok?
+
+363
+00:21:52.196 --> 00:21:55.476
+Entonces, yo puedo tener varias puertas en una misma familia,
+
+364
+00:21:55.486 --> 00:21:59.416
+¿ok? Pero que cambie el tipo. ¿Cuándo
+
+365
+00:21:59.436 --> 00:22:03.116
+cambia el tipo? Cambian las dimensiones, a pesar de que es la misma puerta, de
+
+366
+00:22:03.196 --> 00:22:06.606
+familia, de madera, por ejemplo, una puerta de madera, solo cambia sus dimensiones,
+
+367
+00:22:06.916 --> 00:22:10.856
+solo estoy cambiando el, el tipo. Entonces, esta es P5 y esta que
+
+368
+00:22:10.876 --> 00:22:14.336
+está acá es P7. ¿Qué pasa? Si yo lo hago con
+
+369
+00:22:14.396 --> 00:22:17.976
+tipo y acá nos vamos a la parte
+
+370
+00:22:18.136 --> 00:22:18.936
+de,
+
+371
+00:22:19.036 --> 00:22:22.956
+eh... dónde lo
+
+372
+00:22:22.996 --> 00:22:26.876
+coloqué ya va, no me acuerdo dónde, dónde lo
+
+373
+00:22:26.936 --> 00:22:29.736
+coloqué. Aquí, bisagra, vamos a
+
+374
+00:22:29.756 --> 00:22:33.055
+editar. Lo coloqué en tipo,
+
+375
+00:22:34.316 --> 00:22:37.196
+disciplina común, otra,
+
+376
+00:22:37.256 --> 00:22:40.836
+pero... creo que no lo coloqué
+
+377
+00:22:41.036 --> 00:22:44.616
+en-- me faltó colocarlo puertas. Ah, vean lo
+
+378
+00:22:44.656 --> 00:22:48.116
+siguiente, cuando crea un parámetro de proyecto, ya no lo, ya no les permite
+
+379
+00:22:48.176 --> 00:22:49.156
+cambiar.
+
+380
+00:22:50.076 --> 00:22:50.936
+Vean, acá dice
+
+381
+00:22:51.836 --> 00:22:54.196
+bisagra tipo, y ya acá
+
+382
+00:22:55.096 --> 00:22:59.076
+no me permite cambiar ejemplar, más sin embargo, está en tipo, ¿no?
+
+383
+00:22:59.616 --> 00:23:03.416
+Entonces, ahí está. Ah, sí, sí, sí, está aquí en, en la
+
+384
+00:23:03.516 --> 00:23:06.866
+parte de puertas. Vamos a cambiar los datos de
+
+385
+00:23:06.876 --> 00:23:09.096
+identidad, no importa.
+
+386
+00:23:09.116 --> 00:23:13.036
+Ok, ok, listo, ¿ok?
+
+387
+00:23:14.136 --> 00:23:17.356
+Entonces, eh, toda puerta que yo,
+
+388
+00:23:18.136 --> 00:23:22.036
+eh, yo, yo seleccione como tal,
+
+389
+00:23:22.116 --> 00:23:25.916
+fíjense que no me va a salir acá. Si ustedes se dan cuenta, no me sale acá,
+
+390
+00:23:25.936 --> 00:23:29.416
+porque todo lo que salga acá es para ejemplares.
+
+391
+00:23:29.436 --> 00:23:32.806
+Para ver los parámetros de proyecto en tipo, tengo que entrar al
+
+392
+00:23:32.916 --> 00:23:36.466
+tipo. Esa es la diferencia. Entonces, ¿qué pasa?
+
+393
+00:23:36.476 --> 00:23:39.716
+Que cuando yo entre a esa puerta
+
+394
+00:23:40.056 --> 00:23:43.756
+P7, le doy a editar tipo, que es visión a ras,
+
+395
+00:23:44.356 --> 00:23:47.936
+y aquí en datos de identidad me pide bisagra tipo.
+
+396
+00:23:48.996 --> 00:23:52.816
+Y la bisagra tipo la vamos a codificar, cada número va a tener su tipo de
+
+397
+00:23:52.836 --> 00:23:56.776
+bisagra. Entonces, yo le digo bisagra cero, cero, uno,
+
+398
+00:23:56.816 --> 00:23:59.566
+por poner un ejemplo, y le doy a aplicar y, y
+
+399
+00:23:59.596 --> 00:24:03.476
+aceptar. ¿Qué va a suceder? Que cuando yo seleccione
+
+400
+00:24:03.556 --> 00:24:06.956
+esta P7, y cuando yo
+
+401
+00:24:07.016 --> 00:24:10.976
+seleccione esta que está acá, la P5,
+
+402
+00:24:11.576 --> 00:24:13.876
+fíjense que, eh, la,
+
+403
+00:24:15.496 --> 00:24:19.036
+la, eh, el tipo voy a tener que estar etiquetándolo
+
+404
+00:24:19.176 --> 00:24:21.896
+dentro de cada uno. Yo tendría que estar
+
+405
+00:24:21.936 --> 00:24:25.664
+creando...... nuevas, es decir, si yo agarro
+
+406
+00:24:25.724 --> 00:24:28.984
+aquí, esta que está acá, que es
+
+407
+00:24:29.063 --> 00:24:29.793
+laaa,
+
+408
+00:24:30.783 --> 00:24:33.603
+la P7 y yo la copio.
+
+409
+00:24:35.103 --> 00:24:37.603
+Voy a copiarla aquí, y yo copio esta puerta.
+
+410
+00:24:38.704 --> 00:24:42.244
+Esta puerta, a pesar de que es otra puerta que está
+
+411
+00:24:42.303 --> 00:24:45.803
+copiada, va a seguir teniendo el mismo código de
+
+412
+00:24:45.823 --> 00:24:46.424
+bisagra.
+
+413
+00:24:48.184 --> 00:24:52.063
+Mientras que con los ejemplares no pasa esto, fíjense que esto es un
+
+414
+00:24:52.123 --> 00:24:55.984
+ejemplar, P4, y yo puedo copiar la misma puerta que está acá, voy a
+
+415
+00:24:56.004 --> 00:24:59.793
+ponerla por acá. Bueno, vamos a rodarla un poquito, vamos a
+
+416
+00:24:59.863 --> 00:25:03.283
+copiarle y voy a rodarla un poquito por acá
+
+417
+00:25:06.783 --> 00:25:09.823
+. Eh, vamos a, a verla aquí.
+
+418
+00:25:10.783 --> 00:25:14.113
+Vamos a verla aquí, porque si no, no, no se ve la puerta.
+
+419
+00:25:14.264 --> 00:25:18.063
+Aquí, esta. Esta que está acá, que es P4, yo la puedo
+
+420
+00:25:18.103 --> 00:25:22.063
+copiar y me la voy a llevar de acá, y no sé, la
+
+421
+00:25:22.083 --> 00:25:25.083
+voy a poner por aquí, ¿okey? Y
+
+422
+00:25:25.103 --> 00:25:29.023
+entonces, esta, eh, puerta como
+
+423
+00:25:29.063 --> 00:25:32.754
+tal, o esta que está aquí, no me deja copiar porque tiene que ser a juro en un
+
+424
+00:25:32.823 --> 00:25:33.174
+muro.
+
+425
+00:25:34.244 --> 00:25:37.764
+Ahí está, fíjense. Entonces, esta puerta, a pesar de que es la misma,
+
+426
+00:25:37.803 --> 00:25:38.524
+P5
+
+427
+00:25:39.404 --> 00:25:43.184
+y P5, esta P5 yo le coloqué
+
+428
+00:25:43.264 --> 00:25:47.004
+apertura adentro, es la misma, entonces yo le puedo
+
+429
+00:25:47.024 --> 00:25:49.384
+cambiar, yo le puedo decir pa' afuera.
+
+430
+00:25:50.303 --> 00:25:54.204
+Esta que está acá, le voy a aplicar, y esta es afuera, y esta que está
+
+431
+00:25:54.244 --> 00:25:57.164
+acá es adentro, y sigue siendo la misma.
+
+432
+00:25:57.184 --> 00:26:01.004
+En cambio, cuando lo hago por tipo, ya condeno que todos los tipos de
+
+433
+00:26:01.024 --> 00:26:04.123
+esa puerta tengan el mismo parámetro de proyecto.
+
+434
+00:26:04.144 --> 00:26:06.724
+¿Cuándo usar uno, cuándo usar el otro?
+
+435
+00:26:06.783 --> 00:26:10.283
+Eso ya queda a su criterio, por eso ahí viene la lógica.
+
+436
+00:26:10.363 --> 00:26:14.323
+Usamos el de ejemplar cuando sepamos que hay
+
+437
+00:26:14.384 --> 00:26:18.303
+distintas condiciones y discretizaciones de la
+
+438
+00:26:18.343 --> 00:26:21.964
+misma, eh, familia. En cambio, con el
+
+439
+00:26:22.043 --> 00:26:25.964
+tipo, utilizamos, eh, parámetros de proyecto tipo,
+
+440
+00:26:26.083 --> 00:26:29.884
+cuando sabemos que esa puerta, siempre, a pesar de que esté en el nivel uno o
+
+441
+00:26:29.964 --> 00:26:33.323
+nivel dos, copiada a tres metros, copiada a un
+
+442
+00:26:33.384 --> 00:26:36.984
+metro, siempre va a tener la misma discretización,
+
+443
+00:26:37.924 --> 00:26:41.643
+¿okey? Eso es importante. Y con este concepto, ustedes
+
+444
+00:26:41.704 --> 00:26:45.664
+pueden crear cualquier tipo de parámetro de proyecto, el
+
+445
+00:26:45.783 --> 00:26:48.724
+que les guste, el que deseen, solo tienen que
+
+446
+00:26:48.823 --> 00:26:52.123
+entender para qué lo van a usar, ¿okey?
+
+447
+00:26:53.384 --> 00:26:56.004
+Ahora vamos a parámetros compartidos.
+
+448
+00:26:56.083 --> 00:26:59.474
+Y, ¿claro con parámetros de proyecto hasta acá?
+
+449
+00:27:04.264 --> 00:27:06.454
+Con los dos parámetros del proyecto, el tipo de
+
+450
+00:27:06.484 --> 00:27:10.362
+ejemplar. Todo claro. Okey, vamos al
+
+451
+00:27:10.404 --> 00:27:13.504
+siguiente. Eh, ahora hay un parámetro
+
+452
+00:27:14.563 --> 00:27:17.543
+que se llama parámetro compartido, este que está acá.
+
+453
+00:27:19.024 --> 00:27:22.823
+El parámetro compartido...
+
+454
+00:27:22.864 --> 00:27:25.884
+tiene la misma idiosincrasia o la misma
+
+455
+00:27:25.924 --> 00:27:29.864
+sintaxis que el parámetro de proyecto, pero lo diferencia
+
+456
+00:27:29.984 --> 00:27:33.884
+algo. Un parámetro de proyecto solo se crea
+
+457
+00:27:33.904 --> 00:27:35.063
+de manera local,
+
+458
+00:27:36.323 --> 00:27:40.184
+mientras, o sea, solo se crea de manera local, a menos que yo
+
+459
+00:27:40.204 --> 00:27:44.083
+haga una transferencia de plantilla de proyecto, que ya
+
+460
+00:27:44.103 --> 00:27:46.884
+vamos a ver. Pero un parámetro
+
+461
+00:27:47.103 --> 00:27:48.244
+compartido
+
+462
+00:27:49.224 --> 00:27:50.664
+es un parámetro que
+
+463
+00:27:52.043 --> 00:27:55.563
+yo puedo enviarle a cualquiera de ustedes, y ustedes lo pueden
+
+464
+00:27:55.603 --> 00:27:58.664
+incrustar en Revit y entender ese
+
+465
+00:27:58.684 --> 00:28:02.332
+parámetro, que sigue siendo el mismo sentido del
+
+466
+00:28:02.424 --> 00:28:06.224
+proyecto, solo que ahora se comparte entre usuarios o entre
+
+467
+00:28:06.283 --> 00:28:09.984
+modeladores. Para que me entiendan, fíjense, vamos a ver acá.
+
+468
+00:28:10.684 --> 00:28:14.444
+Aquí estamos teniendo el mismo, el mismo proyecto,
+
+469
+00:28:14.464 --> 00:28:18.244
+¿okey? Entonces, ahora vamos a, eeeh,
+
+470
+00:28:20.283 --> 00:28:23.143
+indicar un parámetro que me diga tipos de
+
+471
+00:28:23.224 --> 00:28:26.944
+fregadero, ¿okey? Entonces, este va a ser el tipo
+
+472
+00:28:27.043 --> 00:28:27.384
+uno
+
+473
+00:28:28.204 --> 00:28:31.934
+y va a tener asociado un costo, y este va a ser el tipo dos y va a tener
+
+474
+00:28:32.004 --> 00:28:35.664
+asociado un costo. Y ya por nosotros lo podemos-- está predefinido el
+
+475
+00:28:35.684 --> 00:28:39.024
+catálogo, ya sabemos la nomenclatura de tipo uno y
+
+476
+00:28:39.103 --> 00:28:42.444
+tipo, tipo dos con los costos. Pero, ¿qué
+
+477
+00:28:42.623 --> 00:28:46.224
+pasa? Eso yo se lo tengo que compartir a, a uno de mis
+
+478
+00:28:46.264 --> 00:28:48.004
+modeladores para que
+
+479
+00:28:48.984 --> 00:28:49.884
+este mismo,
+
+480
+00:28:50.823 --> 00:28:54.264
+eh, este mismo sistema lo pueda aplicar en otros
+
+481
+00:28:54.303 --> 00:28:56.664
+proyectos. Entonces, ¿qué hacemos?
+
+482
+00:28:56.704 --> 00:29:00.484
+Primero vamos a crear ese parámetro, aquí en Gestionar, le damos
+
+483
+00:29:00.543 --> 00:29:03.964
+clic y fíjense que el archivo de códigos le vamos a
+
+484
+00:29:03.984 --> 00:29:07.944
+cerrar. Entonces, ¿qué pasa? Aquí vamos a
+
+485
+00:29:07.984 --> 00:29:11.783
+crear uno nuevo, desde cero, aquí donde dice Crear,
+
+486
+00:29:11.793 --> 00:29:15.684
+¿okey? Entonces, simplemente le damos Crear y vamos a
+
+487
+00:29:15.744 --> 00:29:19.504
+crear un archivo de texto. Entonces, yo le voy a colocar aquí:
+
+488
+00:29:19.543 --> 00:29:21.323
+códigos de
+
+489
+00:29:22.724 --> 00:29:24.404
+lavamanos o
+
+490
+00:29:24.484 --> 00:29:26.744
+fregaderos.
+
+491
+00:29:27.843 --> 00:29:28.984
+Y le voy a dar Guardar.
+
+492
+00:29:30.623 --> 00:29:34.424
+Cuando le doy Guardar, estoy adjuntando
+
+493
+00:29:34.484 --> 00:29:37.924
+una base de datos que puede ser compartida en un archivo de
+
+494
+00:29:37.944 --> 00:29:41.614
+texto. Entonces, simplemente ahora creo un nuevo grupo que se va a
+
+495
+00:29:41.623 --> 00:29:42.014
+llamar
+
+496
+00:29:42.904 --> 00:29:46.664
+Fregadero, y yo sé que dentro de ese grupo
+
+497
+00:29:46.783 --> 00:29:49.843
+Fregadero, yo voy a crear todos los parámetros de proyectos
+
+498
+00:29:50.643 --> 00:29:54.364
+compartidos. Entonces, vamos a crear un parámetro nuevo,
+
+499
+00:29:55.103 --> 00:29:58.643
+que se va a llamar, eh,
+
+500
+00:29:58.664 --> 00:30:01.163
+Tipo, disciplina común y va a
+
+501
+00:30:01.244 --> 00:30:05.164
+ser, eh, texto. Vamos a ver
+
+502
+00:30:05.224 --> 00:30:09.123
+aquí, Texto. Y aquí vamos
+
+503
+00:30:09.164 --> 00:30:11.264
+a, a colocar: aquí se
+
+504
+00:30:11.303 --> 00:30:15.024
+define, para que seguimos la
+
+505
+00:30:15.033 --> 00:30:18.904
+orden, el tipo de parámetro, y le damos a
+
+506
+00:30:18.914 --> 00:30:22.864
+Aceptar. Aceptar. Y vamos a crear otro, que va
+
+507
+00:30:22.884 --> 00:30:26.424
+a ser costo.... Disciplina común
+
+508
+00:30:26.464 --> 00:30:29.603
+asociada a, eh,
+
+509
+00:30:30.684 --> 00:30:34.343
+podemos colocarle una divisa o simplemente un
+
+510
+00:30:34.384 --> 00:30:38.264
+número. Vamos a darle un número, no pasa nada, está el número, número, aquí.
+
+511
+00:30:39.884 --> 00:30:40.764
+Este parámetro
+
+512
+00:30:43.524 --> 00:30:45.884
+se asocia al costo
+
+513
+00:30:46.103 --> 00:30:49.783
+unitario. Aceptar, aceptar,
+
+514
+00:30:50.184 --> 00:30:54.144
+y le voy a dar a Aceptar. Entonces, ¿qué tiene que hacer el usuario
+
+515
+00:30:54.384 --> 00:30:58.103
+de Revit, que yo le estoy compartiendo esta información de parámetros?
+
+516
+00:30:58.124 --> 00:31:00.144
+Yo le tengo que pasar el archivo de texto
+
+517
+00:31:01.004 --> 00:31:01.124
+y
+
+518
+00:31:02.103 --> 00:31:05.843
+el usuario tiene que ingresar a los parámetros compartidos, darle clic
+
+519
+00:31:05.904 --> 00:31:09.704
+aquí en Examinar, cargar el archivo de texto y ya le carga estos
+
+520
+00:31:09.744 --> 00:31:13.024
+parámetros automáticamente. Es decir, nosotros
+
+521
+00:31:13.303 --> 00:31:17.283
+inclusive podemos estandarizar estos parámetros y toda nuestra empresa va a
+
+522
+00:31:17.323 --> 00:31:19.904
+usar esos mismos parámetros, ¿okey?
+
+523
+00:31:19.924 --> 00:31:23.593
+Entonces, le damos a Aceptar y ahora, como yo lo quiero
+
+524
+00:31:23.783 --> 00:31:27.654
+incursionar, fíjense, al proyecto, simplemente lo que hacemos
+
+525
+00:31:27.803 --> 00:31:31.484
+es acá donde dice Parámetro de proyecto, porque es un parámetro de
+
+526
+00:31:31.543 --> 00:31:34.984
+proyecto, creamos uno nuevo que se va a llamar
+
+527
+00:31:36.024 --> 00:31:38.144
+Parámetro compartido.
+
+528
+00:31:39.063 --> 00:31:42.904
+Le damos Seleccionar, aquí me sale el costo y el tipo, empecemos con
+
+529
+00:31:42.984 --> 00:31:46.684
+tipo, le doy a Aceptar y eso va a aplicar.
+
+530
+00:31:46.704 --> 00:31:49.464
+Aquí yo le tengo que definir, bueno, esto va a, a
+
+531
+00:31:49.644 --> 00:31:53.583
+aplicar, si no estoy mal, esto es de los aparatos
+
+532
+00:31:53.644 --> 00:31:54.764
+sanitarios.
+
+533
+00:31:56.343 --> 00:31:59.864
+Aparatos sanitarios, ¿okey? Va a ser de
+
+534
+00:31:59.873 --> 00:32:01.484
+ejemplar, le doy a Aceptar.
+
+535
+00:32:02.644 --> 00:32:06.283
+Y luego vamos a crear otro que se va a llamar Parámetro
+
+536
+00:32:06.323 --> 00:32:09.583
+compartido, seleccionamos Costo, vean como ya está definido,
+
+537
+00:32:10.384 --> 00:32:13.724
+y acá, eh... igual, va a aplicar a
+
+538
+00:32:13.783 --> 00:32:16.454
+parámetros, a apa-- aparatos, perdón,
+
+539
+00:32:16.454 --> 00:32:19.803
+sanitarios. Le doy a Aceptar. Entonces, ¿qué hago yo aquí?
+
+540
+00:32:19.843 --> 00:32:23.674
+Fíjense, lo agarro acá, espero que, sí, el
+
+541
+00:32:23.724 --> 00:32:26.603
+fregadero está en aparatos sanitarios y vea, aquí veo la categoría.
+
+542
+00:32:27.583 --> 00:32:30.944
+Cuando no sepan la categoría, solo seleccionan el elemento y ya saben.
+
+543
+00:32:30.984 --> 00:32:34.583
+Este, por ejemplo, dice Equipo especializado, este es de otro. Entonces, ¿qué pasa?
+
+544
+00:32:34.603 --> 00:32:36.164
+No, no pasa nada, yo lo puedo agarrar
+
+545
+00:32:37.684 --> 00:32:41.283
+en, en Gestionar. Yo puedo crear dos
+
+546
+00:32:41.323 --> 00:32:43.924
+categorías a la vez, ¿no? Entonces, aquí el costo
+
+547
+00:32:45.364 --> 00:32:49.264
+y me busco equipos especializados por la E, equipos
+
+548
+00:32:49.283 --> 00:32:51.864
+especializados. Y el
+
+549
+00:32:51.944 --> 00:32:54.364
+tipo, lo mismo, equipo
+
+550
+00:32:54.384 --> 00:32:57.823
+especializado. Equipo
+
+551
+00:32:57.843 --> 00:33:01.744
+especializado, ¿okey? Le damos a Aceptar y
+
+552
+00:33:01.823 --> 00:33:03.364
+ahí viene el parámetro de proyecto.
+
+553
+00:33:03.373 --> 00:33:04.424
+Entonces, yo agarro acá,
+
+554
+00:33:05.323 --> 00:33:06.364
+fíjense que aquí está,
+
+555
+00:33:07.323 --> 00:33:10.924
+y este parámetro de proyecto me va a salir acá el
+
+556
+00:33:10.964 --> 00:33:14.603
+costo. ¿Sí? Me va a salir el
+
+557
+00:33:14.674 --> 00:33:17.244
+costo y el otro
+
+558
+00:33:17.364 --> 00:33:21.184
+era... Eh,
+
+559
+00:33:21.204 --> 00:33:24.864
+ah, lo colocamos en texto. Ya no lo podemos,
+
+560
+00:33:25.244 --> 00:33:28.884
+creo que ya no lo podemos cambiar, se nos fue en texto, aquí en el
+
+561
+00:33:28.924 --> 00:33:32.543
+parámetro compartido.
+
+562
+00:33:32.664 --> 00:33:34.783
+Eh, bueno, aquí podemos ver las
+
+563
+00:33:34.864 --> 00:33:38.343
+propiedades, pero,
+
+564
+00:33:38.504 --> 00:33:41.144
+ay, aquí en el
+
+565
+00:33:41.303 --> 00:33:44.553
+tipo, vamos a agruparlo como
+
+566
+00:33:44.623 --> 00:33:48.404
+otro. Y ahí me va a salir.
+
+567
+00:33:48.424 --> 00:33:51.524
+Entonces, este que está acá, yo le voy a colocar tipo
+
+568
+00:33:53.764 --> 00:33:57.583
+A, y nosotros debemos tener una descrip-- una descripción para los tipo
+
+569
+00:33:57.603 --> 00:34:01.134
+A, eh, y un costo asociado, no sé, voy a
+
+570
+00:34:01.204 --> 00:34:01.884
+colocar mil
+
+571
+00:34:03.204 --> 00:34:06.444
+y le voy a dar a Aplicar. ¿Sí? Y lo mismo acá,
+
+572
+00:34:07.264 --> 00:34:10.203
+este que está acá va a ser un tipo
+
+573
+00:34:10.265 --> 00:34:11.765
+B.
+
+574
+00:34:13.044 --> 00:34:16.404
+Y el costo, vamos a colocar de quinientos.
+
+575
+00:34:16.424 --> 00:34:20.004
+Le voy a dar a Aplicar. Le estoy dando información, ¿y qué estoy haciendo
+
+576
+00:34:20.044 --> 00:34:22.765
+también? Aquí, cuando vayamos a la parte de,
+
+577
+00:34:24.723 --> 00:34:27.765
+de, eh, Vista, Tabla de planificación,
+
+578
+00:34:27.784 --> 00:34:31.464
+cantidades. Entonces, acá, yo
+
+579
+00:34:31.583 --> 00:34:35.524
+puedo, aquí seleccionar Aparatos sanitarios,
+
+580
+00:34:35.603 --> 00:34:38.924
+pero, ojo, importante
+
+581
+00:34:38.984 --> 00:34:42.444
+esto. Yo voy a hacer o equipos
+
+582
+00:34:42.464 --> 00:34:45.444
+especializados o aparatos sanitarios.
+
+583
+00:34:45.484 --> 00:34:49.274
+Por lo tanto, también, enseñanza, cuando vamos a
+
+584
+00:34:49.364 --> 00:34:52.643
+generar tablas de cantidades, tiene que ser por una categoría.
+
+585
+00:34:54.424 --> 00:34:58.224
+¿Sí? Por una categoría. ¿Por qué? Porque si lo hago acá,
+
+586
+00:34:58.264 --> 00:35:00.604
+Tabla de planificación de cantidades, no me va a dejar.
+
+587
+00:35:00.624 --> 00:35:03.784
+Aquí hay otra que se llama Cómputo de materiales.
+
+588
+00:35:03.844 --> 00:35:06.424
+La de Cómputos de materiales voy a dejar la opción
+
+589
+00:35:06.464 --> 00:35:08.743
+Multicategoría. ¿Sí?
+
+590
+00:35:08.754 --> 00:35:12.604
+Multicategoría. Le voy a dar a Aceptar, y
+
+591
+00:35:12.644 --> 00:35:16.224
+aquí, fíjense que yo he creado
+
+592
+00:35:16.324 --> 00:35:20.224
+este, que se llama Costo, que es parámetro del proyecto compartido,
+
+593
+00:35:21.304 --> 00:35:24.984
+y el otro se llamaba Tipo. Entonces,
+
+594
+00:35:24.993 --> 00:35:28.084
+¿cuál agarro? Este, que dice Parámetro compartido.
+
+595
+00:35:28.154 --> 00:35:32.034
+Entonces, aquí, si los meto en, en Tabla de cómputo de materiales, sí puedo
+
+596
+00:35:32.064 --> 00:35:35.924
+hacer dos categorías o más. En Tabla de, de cantidades normal,
+
+597
+00:35:35.964 --> 00:35:39.364
+solo puede hacer una categoría. Eh, aquí le vamos a
+
+598
+00:35:39.444 --> 00:35:42.304
+colocar, además, el
+
+599
+00:35:42.344 --> 00:35:46.264
+tipo. Ustedes me van a decir: "Pero no entiendo, tipo y
+
+600
+00:35:46.324 --> 00:35:49.644
+tipo, el que viene por default y el que creamos, ¿cuál es la diferencia?" Ya lo
+
+601
+00:35:49.683 --> 00:35:53.624
+vamos a ver. Y vamos a colocarle recuento.
+
+602
+00:35:54.924 --> 00:35:57.514
+¿Sí? Entonces, este vamos a
+
+603
+00:35:57.544 --> 00:36:00.484
+subirlo, este va hacia
+
+604
+00:36:00.504 --> 00:36:04.404
+abajo, este hacia arriba, clasificamos
+
+605
+00:36:04.544 --> 00:36:04.884
+por
+
+606
+00:36:06.044 --> 00:36:09.743
+tipo, eh, totales generales y en
+
+607
+00:36:09.804 --> 00:36:12.743
+formato vamos a sacar un costo
+
+608
+00:36:12.804 --> 00:36:16.584
+total, donde dice Costo, ¿okey?
+
+609
+00:36:16.724 --> 00:36:18.054
+Eh...
+
+610
+00:36:21.344 --> 00:36:25.104
+Aquí, en Recuento, perdón, vamos a calcular el total
+
+611
+00:36:25.203 --> 00:36:28.964
+y, eh, vamos a usar esta configuración y vamos a dar a
+
+612
+00:36:28.974 --> 00:36:32.816
+Aceptar.... ¡Ah! Y el material me
+
+613
+00:36:32.876 --> 00:36:35.396
+faltó. Siempre hay que incluir el
+
+614
+00:36:35.436 --> 00:36:37.236
+material.
+
+615
+00:36:37.296 --> 00:36:39.756
+Material,
+
+616
+00:36:40.636 --> 00:36:40.976
+nombre,
+
+617
+00:36:41.856 --> 00:36:45.356
+¿sí? Y vamos a subir. Y aquí vamos a
+
+618
+00:36:45.436 --> 00:36:47.076
+clasificarlo por material.
+
+619
+00:36:48.216 --> 00:36:52.176
+Le damos a Aceptar. Ahí está.
+
+620
+00:36:52.216 --> 00:36:56.156
+Entonces, aquí me van a salir todos, pero a mí el que
+
+621
+00:36:56.236 --> 00:36:57.136
+me interesa
+
+622
+00:36:58.096 --> 00:37:01.936
+es el que... este
+
+623
+00:37:01.996 --> 00:37:05.476
+varía en tipo y costo. Entonces, vamos a filtrar,
+
+624
+00:37:07.776 --> 00:37:11.396
+y vamos a, eh, filtrar
+
+625
+00:37:12.236 --> 00:37:13.976
+por tipo, que sea igual
+
+626
+00:37:14.176 --> 00:37:17.716
+a... tipo B, por
+
+627
+00:37:17.736 --> 00:37:21.616
+ejemplo, le doy a Aceptar, entonces me va a filtrar los tipo B.
+
+628
+00:37:21.676 --> 00:37:24.156
+Aquí están.
+
+629
+00:37:24.816 --> 00:37:27.576
+¿Sí? Y lo mismo, si yo quisiera los tipo
+
+630
+00:37:27.676 --> 00:37:30.016
+A,
+
+631
+00:37:30.976 --> 00:37:32.116
+eh, los tipo A,
+
+632
+00:37:33.076 --> 00:37:34.816
+aquí, bueno, no son tipo B.
+
+633
+00:37:36.076 --> 00:37:39.766
+Vamos a hacerlo por un costo. Si yo lo quisiera hacer ahora por el costo, entonces
+
+634
+00:37:39.796 --> 00:37:41.636
+yo también los filtro por el costo y así voy,
+
+635
+00:37:42.456 --> 00:37:45.556
+¿sí? Entonces, la idea es
+
+636
+00:37:46.176 --> 00:37:49.696
+utilizar los parámetros compartidos para que otros usuarios
+
+637
+00:37:49.736 --> 00:37:53.016
+también, eh, puedan intercambiar la información.
+
+638
+00:37:53.036 --> 00:37:56.896
+Esos parámetros compartidos nosotros los podemos configurar y llevarlos
+
+639
+00:37:57.076 --> 00:37:57.256
+a
+
+640
+00:37:58.536 --> 00:38:01.876
+que otros usuarios, y
+
+641
+00:38:02.496 --> 00:38:06.216
+podamos intercambiar la información, e inclusive utilizarlos en otros proyectos con
+
+642
+00:38:06.236 --> 00:38:10.036
+ese archivo de texto. ¿Por qué? Porque simplemente lo que hacen es, ya no se
+
+643
+00:38:10.076 --> 00:38:12.296
+crean otro de los parámetros compartidos, sino que
+
+644
+00:38:13.216 --> 00:38:17.016
+aquí, con su archivo de texto y todos los parámetros que se hayan creado, lo
+
+645
+00:38:17.056 --> 00:38:19.656
+vuelven a cargar. ¿Ok?
+
+646
+00:38:21.036 --> 00:38:24.816
+Y ya vamos a cerrar con los parámetros globales, para ir dándole
+
+647
+00:38:24.856 --> 00:38:27.736
+sentido a la clase y luego explicarles lo de, que veremos en las
+
+648
+00:38:27.796 --> 00:38:30.106
+pins. Claro, con parámetros
+
+649
+00:38:30.136 --> 00:38:32.115
+compartidos.
+
+650
+00:38:34.166 --> 00:38:36.996
+¿Se entiende? Yo tengo una duda. Sí.
+
+651
+00:38:37.096 --> 00:38:41.016
+Eh, los pa..., las categorías es lo mismo que familias o
+
+652
+00:38:41.096 --> 00:38:44.636
+tienen alguna diferencia? Tienen una diferencia, sí, te, te explico
+
+653
+00:38:44.676 --> 00:38:47.536
+acá, eh, Fernando. Por ejemplo, fíjate.
+
+654
+00:38:47.656 --> 00:38:50.256
+Eh, por ejemplo,
+
+655
+00:38:51.676 --> 00:38:55.056
+esto que está acá, nosotros sabemos que es un mobiliario,
+
+656
+00:38:56.076 --> 00:38:59.356
+y esto que está acá también es un mobiliario.
+
+657
+00:38:59.436 --> 00:39:02.536
+La familia es la misma, porque tienen el mismo sentido.
+
+658
+00:39:02.556 --> 00:39:06.036
+Eh, perdón, la categoría es la misma, porque es un
+
+659
+00:39:06.056 --> 00:39:10.036
+mobiliario. Una mesa es un mobiliario y una silla es un mobiliario.
+
+660
+00:39:10.496 --> 00:39:14.136
+Su categoría es mobiliario, pero la
+
+661
+00:39:14.196 --> 00:39:17.706
+familia cambia. Uno es una familia de sillas
+
+662
+00:39:18.176 --> 00:39:18.956
+esta,
+
+663
+00:39:19.896 --> 00:39:23.096
+y la otra es una familia de mesas,
+
+664
+00:39:23.576 --> 00:39:27.496
+¿ven? Son distintos. Entonces, la categoría lo que
+
+665
+00:39:27.536 --> 00:39:31.356
+hace es agrupar a un conjunto de familias que tengan
+
+666
+00:39:32.016 --> 00:39:35.776
+una característica similar, ¿sí?
+
+667
+00:39:35.916 --> 00:39:39.056
+Esa es la diferencia. Muchas gracias.
+
+668
+00:39:39.076 --> 00:39:41.256
+Listo, listo, Fernando. Muy buena pregunta.
+
+669
+00:39:41.296 --> 00:39:44.036
+El resto, ¿si está claro?
+
+670
+00:39:45.476 --> 00:39:48.916
+Si ven esa diferencia, porque es sustancial, esa diferencia les permite hacer los
+
+671
+00:39:48.936 --> 00:39:52.056
+parámetros del proyecto. Los parámetros del proyecto se trabajan
+
+672
+00:39:52.736 --> 00:39:56.016
+con categorías, nunca con familias, ¿sí?
+
+673
+00:39:56.076 --> 00:39:59.016
+Es importante. Parámetros del proyecto se trabajan con
+
+674
+00:39:59.096 --> 00:40:00.956
+categorías.
+
+675
+00:40:01.986 --> 00:40:02.356
+¿Ok?
+
+676
+00:40:03.896 --> 00:40:06.216
+Ahí me comentan si está claro, ¿ya?
+
+677
+00:40:07.556 --> 00:40:10.156
+Vamos al último, que ya yo dejo ahí.
+
+678
+00:40:10.196 --> 00:40:12.416
+No, no voy a explicar tanto porque está en,
+
+679
+00:40:13.416 --> 00:40:16.516
+en la lección, que son los parámetros globales.
+
+680
+00:40:17.736 --> 00:40:21.636
+A diferencia de proyecto y compartidos, que tienen esa similitud,
+
+681
+00:40:21.676 --> 00:40:25.096
+solo que uno se trabaja local, los, los parámetros del proyecto
+
+682
+00:40:25.896 --> 00:40:29.765
+y el compartido te permite visualizar con otros,
+
+683
+00:40:29.896 --> 00:40:30.376
+eh,
+
+684
+00:40:31.476 --> 00:40:34.296
+con otros archi..., cargar con otros archivos, con otros
+
+685
+00:40:34.476 --> 00:40:38.416
+usuarios. Los globales, lo que para mí, lo defino así
+
+686
+00:40:38.496 --> 00:40:42.136
+rápido, es control de geometría, ¿sí?
+
+687
+00:40:42.216 --> 00:40:45.756
+En la lección hay tres tipos que ustedes ven, pero el más
+
+688
+00:40:45.836 --> 00:40:49.436
+sustancial y el más rápido, que les va a salvar la vida, es el
+
+689
+00:40:49.515 --> 00:40:50.076
+siguiente.
+
+690
+00:40:51.036 --> 00:40:54.016
+Fíjense que ustedes tienen un proyecto y en el proyecto les
+
+691
+00:40:54.056 --> 00:40:57.986
+indico: bueno, Ana, eh, por poner un
+
+692
+00:40:57.996 --> 00:41:00.556
+ejemplo, o Fernando,
+
+693
+00:41:01.516 --> 00:41:03.456
+o Gustavo, acá
+
+694
+00:41:04.376 --> 00:41:08.076
+la distancia que tiene que haber siempre
+
+695
+00:41:08.276 --> 00:41:09.456
+de las puertas
+
+696
+00:41:10.696 --> 00:41:13.816
+al muro, al eje del muro, tiene que ser veintiún centímetros
+
+697
+00:41:14.916 --> 00:41:18.716
+o tiene que ser, por ejemplo, veinticinco centímetros.
+
+698
+00:41:18.756 --> 00:41:20.396
+Y nosotros nos damos cuenta que,
+
+699
+00:41:21.376 --> 00:41:24.776
+eh, hacer eso significa que yo tengo que agarrar esto que está
+
+700
+00:41:24.786 --> 00:41:28.456
+acá, tengo que moverlo o modificar la cota
+
+701
+00:41:28.496 --> 00:41:31.236
+manualmente. Y si es un proyecto
+
+702
+00:41:32.816 --> 00:41:35.476
+de un centro comercial, ahí viene el dolor de cabeza.
+
+703
+00:41:35.496 --> 00:41:38.096
+¿Cómo podemos automatizar? Las
+
+704
+00:41:38.196 --> 00:41:42.036
+cotas, ¿ok?, se pueden controlar con
+
+705
+00:41:42.096 --> 00:41:44.736
+parámetros globales. Yo selecciono esta
+
+706
+00:41:44.776 --> 00:41:48.436
+cota, le vamos a dar clic aquí en la parte
+
+707
+00:41:48.496 --> 00:41:52.076
+superior, Crear parámetro. Yo le puedo decir: Parámetro
+
+708
+00:41:52.956 --> 00:41:56.896
+cota fija puerta. Vean que
+
+709
+00:41:56.916 --> 00:41:58.276
+dice Parámetro global.
+
+710
+00:41:59.456 --> 00:42:02.516
+Ya él identifica que es de longitud cota, no tengo que hacer
+
+711
+00:42:02.536 --> 00:42:06.136
+nada, le doy a Aceptar, y una vez que le doy a Aceptar, sale este
+
+712
+00:42:06.156 --> 00:42:10.096
+lapicito aquí, ¿ok? Este lápiz de control, que
+
+713
+00:42:10.156 --> 00:42:14.076
+yo le doy clic a este lápiz de control, y aquí era decir: bueno, ¿cuánto
+
+714
+00:42:14.116 --> 00:42:17.056
+es que me estaban pidiendo? Cero veinticinco.
+
+715
+00:42:17.096 --> 00:42:20.376
+Le doy a Aplicar y Aceptar, ¿y qué va a suceder?
+
+716
+00:42:20.436 --> 00:42:24.366
+Automáticamente se va a modificar y ahora todas
+
+717
+00:42:24.456 --> 00:42:27.056
+las cotas, fíjense que tengan la misma
+
+718
+00:42:27.116 --> 00:42:30.956
+condición, que ya estén acotadas con ello, de
+
+719
+00:42:30.976 --> 00:42:32.136
+acá a acá,
+
+720
+00:42:33.016 --> 00:42:36.556
+cero quince. Entonces, yo lo que hago es, vea,
+
+721
+00:42:36.636 --> 00:42:37.176
+esta
+
+722
+00:42:38.036 --> 00:42:40.566
+voy a hacerla con......
+
+723
+00:42:40.566 --> 00:42:44.236
+cooon tres cotas al mismo tiempo, esta que está
+
+724
+00:42:44.276 --> 00:42:47.006
+acá y vamos a hacer esta que está
+
+725
+00:42:47.056 --> 00:42:49.296
+acá.
+
+726
+00:42:50.576 --> 00:42:52.776
+Aquí, ¿sí? Entonces, ¿qué hago yo?
+
+727
+00:42:52.796 --> 00:42:56.696
+Yo, con la tecla Control, selecciono esta cota, esta cota
+
+728
+00:42:59.076 --> 00:43:02.696
+y, eh, esta cota, y aquí le voy a
+
+729
+00:43:02.756 --> 00:43:06.566
+colocar cota fija puerta. Cuando yo haga eso,
+
+730
+00:43:06.576 --> 00:43:10.476
+automáticamente, la cota de todooo el proyecto
+
+731
+00:43:10.536 --> 00:43:14.116
+con la puerta asociada se van a desplazar.
+
+732
+00:43:16.016 --> 00:43:19.676
+Por eso se llaman parámetros globales, porque es un control global de geometría que
+
+733
+00:43:19.716 --> 00:43:22.216
+estoy haciendo. En la lección ven
+
+734
+00:43:22.816 --> 00:43:25.656
+parte, dos, tres ejemplos. La verdad,
+
+735
+00:43:26.576 --> 00:43:30.016
+hay un montón de parámetros globales que utilizan hasta con fórmula.
+
+736
+00:43:30.096 --> 00:43:30.856
+Eso yo
+
+737
+00:43:31.716 --> 00:43:35.176
+no lo sugiero porque es complicar la vida,
+
+738
+00:43:35.216 --> 00:43:38.576
+porque ya eso lo podemos utilizar con add-ins o inteligencia
+
+739
+00:43:38.596 --> 00:43:42.276
+artificial, pero este parámetro global, específicamente
+
+740
+00:43:42.286 --> 00:43:46.156
+para cotas y para control de offset, que ya les
+
+741
+00:43:46.196 --> 00:43:49.996
+voy a mostrar, son excelentes, porque fíjense cómo automáticamente todas
+
+742
+00:43:50.036 --> 00:43:50.866
+las puertas se,
+
+743
+00:43:51.776 --> 00:43:53.676
+se, se alinearon a lo que yo quiero,
+
+744
+00:43:54.636 --> 00:43:58.376
+¿sí? Y me tengo que estar desplazando una puerta por una, no.
+
+745
+00:43:58.396 --> 00:44:01.556
+Por ejemplo, en un alzado, ¿verdad?
+
+746
+00:44:02.216 --> 00:44:06.036
+En la mayoría de alzados, por lo general, vamos a tener
+
+747
+00:44:06.096 --> 00:44:09.936
+una disposición, digamos, de las, de las ventanas,
+
+748
+00:44:10.016 --> 00:44:13.816
+que esta ventana, desde la cota superior, tiene que tener un
+
+749
+00:44:13.896 --> 00:44:17.806
+offset, eh, por lo general, que le dejan de cero
+
+750
+00:44:17.936 --> 00:44:21.496
+noventa la altura. Fíjense que aquí dice: altura cero
+
+751
+00:44:21.576 --> 00:44:23.216
+noventa, ¿sí?
+
+752
+00:44:24.136 --> 00:44:27.716
+Y yo tengo que asegurarme que eso suceda con todo el proyecto.
+
+753
+00:44:27.796 --> 00:44:31.086
+Y para hacerlo, entonces tendría que agarrar la ventana, copiarla, o sea,
+
+754
+00:44:31.176 --> 00:44:33.876
+alinearla. Me va a tomar tiempo. ¿Qué
+
+755
+00:44:33.916 --> 00:44:37.376
+hacemos? Aquí nos vamos a anotar cota
+
+756
+00:44:37.396 --> 00:44:41.236
+alineada, seleccionamos de acá a acá, esto es cero
+
+757
+00:44:41.336 --> 00:44:45.236
+ochenta y nueve. Entonces, acá la seleccionamos, le
+
+758
+00:44:45.276 --> 00:44:46.456
+damos clic acá,
+
+759
+00:44:47.956 --> 00:44:49.256
+nombre y colocamos
+
+760
+00:44:50.376 --> 00:44:54.156
+cota ventana. Le damos a
+
+761
+00:44:54.166 --> 00:44:57.396
+Aceptar, ¿okey? ¿Y qué va a pasar
+
+762
+00:44:57.456 --> 00:45:01.296
+ahora? Yo aquí, en la cota alineada, que tome,
+
+763
+00:45:01.336 --> 00:45:04.696
+por ejemplo, no sé, de esta ventana a acá,
+
+764
+00:45:05.676 --> 00:45:08.036
+fíjense, tengo cero ochenta y nueve, entonces vamos a buscar otra que no tenga cero
+
+765
+00:45:08.045 --> 00:45:09.366
+ochenta y nueve, por ejemplo, de acá a acá.
+
+766
+00:45:10.316 --> 00:45:12.876
+Cero ochenta y cinco tiene esta, ¿sí?
+
+767
+00:45:12.896 --> 00:45:14.256
+Entonces, simplemente,
+
+768
+00:45:15.136 --> 00:45:19.016
+yo selecciono aquí esta cota ventana y esta yo la puedo convertir en cota
+
+769
+00:45:19.036 --> 00:45:22.676
+ventana, que ahí se convierte en cero ochenta y nueve y se
+
+770
+00:45:22.716 --> 00:45:26.696
+desplaza. Y lo puedo hacer no solo en
+
+771
+00:45:26.716 --> 00:45:30.196
+las ventanas del mismo nivel, sino con cualquier tipo de ventana, a ver.
+
+772
+00:45:30.216 --> 00:45:34.156
+Por ejemplo, aquí me está indicando, eh, que
+
+773
+00:45:34.166 --> 00:45:37.616
+eso lo tengo que aplicar en todo el proyecto, ¿sí? Y en todas las vistas.
+
+774
+00:45:37.896 --> 00:45:41.416
+Sencillo, aquí le das alinea, de acá
+
+775
+00:45:42.256 --> 00:45:46.016
+a acá. Como estas son cotas que voy a trabajar, simplemente selecciono cota
+
+776
+00:45:46.116 --> 00:45:47.836
+ventana.
+
+777
+00:45:49.896 --> 00:45:51.296
+Vean lo rápido que es,
+
+778
+00:45:52.176 --> 00:45:54.656
+tengo que mover, copiar y desplazar.
+
+779
+00:45:54.696 --> 00:45:57.716
+Esto sirve para controlar offsets,
+
+780
+00:45:57.876 --> 00:46:01.736
+geometría y, sobre todo, para, eh...
+
+781
+00:46:01.776 --> 00:46:03.536
+Ahí tienen un ejemplo que lo pueden ver,
+
+782
+00:46:04.776 --> 00:46:08.485
+eh, que, por ejemplo, acá, yo quiero mantener...
+
+783
+00:46:08.496 --> 00:46:11.336
+lo pueden ver en las lecciones, eso sí lo dejo para que lo vean.
+
+784
+00:46:11.376 --> 00:46:15.336
+Yo quiero mantener esta cota fija de cero cincuenta y ocho, más allá que yo
+
+785
+00:46:15.376 --> 00:46:19.096
+cambie el, eh, las barandillas.
+
+786
+00:46:19.156 --> 00:46:22.636
+Entonces, ahí van a ver el procedimiento, que se bloquea la
+
+787
+00:46:22.676 --> 00:46:26.276
+cota, ¿okey? Se le crea el
+
+788
+00:46:26.356 --> 00:46:30.156
+nombre cota barandilla y luego se crea
+
+789
+00:46:30.196 --> 00:46:33.496
+una nueva cota de control, donde se iguala la
+
+790
+00:46:33.536 --> 00:46:37.516
+formulación, ¿sí? Que simplemente es, se bloquea esto,
+
+791
+00:46:37.556 --> 00:46:41.256
+creamos esta actividad cota barandilla,
+
+792
+00:46:42.716 --> 00:46:46.556
+¿verdad? Y, eh, acá,
+
+793
+00:46:46.616 --> 00:46:50.476
+como vamos a hacer una, una restricción, nos vamos a ir
+
+794
+00:46:50.516 --> 00:46:53.596
+aquí a Gestionar, aquí en Parámetro
+
+795
+00:46:53.656 --> 00:46:57.455
+global, y vamos a crear uno nuevo, que se va a
+
+796
+00:46:57.476 --> 00:46:57.856
+llamar
+
+797
+00:46:59.276 --> 00:47:00.036
+cota,
+
+798
+00:47:00.916 --> 00:47:03.286
+eh, restringida. Lo ponemos, no sé,
+
+799
+00:47:04.376 --> 00:47:07.636
+que va a ser disciplina común, cotas, perfecto.
+
+800
+00:47:07.656 --> 00:47:10.956
+Y aquí en la fórmula vamos a colocar que esto sea igual a
+
+801
+00:47:10.976 --> 00:47:14.736
+cota barandilla. Le vamos a dar a Aplicar y
+
+802
+00:47:14.746 --> 00:47:17.276
+Aceptar. ¿Sí? Entonces, ¿qué va a pasar?
+
+803
+00:47:17.296 --> 00:47:21.196
+Que cuando ustedes cambien los tipos de barandilla, o pueden hacerlo hasta con
+
+804
+00:47:21.256 --> 00:47:25.156
+pared, lo que quieran, siempre se va a mantener esta misma distancia, más
+
+805
+00:47:25.176 --> 00:47:28.996
+allá de que esto cambie el, el ancho.
+
+806
+00:47:29.036 --> 00:47:32.216
+Para eso funcionan los parámetros globales: control de
+
+807
+00:47:32.296 --> 00:47:35.716
+geometría, ¿okey? Control de
+
+808
+00:47:35.736 --> 00:47:38.876
+geometría. Eh,
+
+809
+00:47:40.136 --> 00:47:43.976
+perfecto, estamos, sí, me queda todavía tiempo para explicarles
+
+810
+00:47:44.236 --> 00:47:47.016
+resumen de filtros, vistas y las
+
+811
+00:47:47.076 --> 00:47:50.976
+plantillas. Ahora, les hago la pregunta.
+
+812
+00:47:52.516 --> 00:47:54.206
+Entonces, para ustedes, ¿cuál es la diferencia?
+
+813
+00:47:54.216 --> 00:47:58.016
+Y sí me gustaría que alguien me ayudara contestando cuál es la
+
+814
+00:47:58.036 --> 00:48:01.796
+diferencia entre pr-- parámetros del proyecto, parámetros
+
+815
+00:48:01.816 --> 00:48:05.516
+compartidos y parámetros globales.
+
+816
+00:48:05.536 --> 00:48:09.516
+En un resumen sencillo, en un par de palabras, ustedes me
+
+817
+00:48:09.556 --> 00:48:13.296
+indiquen esa diferencia, y los leo para darles
+
+818
+00:48:13.516 --> 00:48:16.956
+el cierre final, ¿okey? ¿Cuál es la diferencia?
+
+819
+00:48:16.976 --> 00:48:20.756
+Vuelvo y repito, según lo que acaban de ver entre esto,
+
+820
+00:48:20.876 --> 00:48:24.396
+esto y esto. Por
+
+821
+00:48:24.576 --> 00:48:26.056
+favor, los leo.
+
+822
+00:48:27.276 --> 00:48:31.176
+Y mientras los leo... bueno, ya en la parte de
+
+823
+00:48:31.296 --> 00:48:35.256
+filtros y, y, y vistas
+
+824
+00:48:35.276 --> 00:48:38.996
+como sistema, sí, ya no voy a, no voy a volver
+
+825
+00:48:39.056 --> 00:48:43.026
+a, a, a repetir lo mismo que se vimos en la lección pasada y que so--
+
+826
+00:48:43.056 --> 00:48:46.764
+y sobre todo, lo está, lo, lo-... lo tienen en la lección dos
+
+827
+00:48:46.884 --> 00:48:49.344
+B, pero sí quisiera contar lo
+
+828
+00:48:49.424 --> 00:48:53.244
+siguiente. Repito: ¿cuál es la diferencia entre un parámetro de
+
+829
+00:48:53.284 --> 00:48:56.084
+proyecto, parámetro compartido y parámetro
+
+830
+00:48:56.624 --> 00:49:00.614
+global? Esta, hago énfasis en los parámetros porque son las
+
+831
+00:49:00.644 --> 00:49:04.404
+herramientas nativas o va a ser la herramienta nativa que más van a usar, inclusive
+
+832
+00:49:04.424 --> 00:49:07.784
+hasta más que filtros y vistas, ¿sí?
+
+833
+00:49:07.824 --> 00:49:10.304
+Entonces, por ejemplo, fíjense, voy a hacer lo siguiente.
+
+834
+00:49:10.324 --> 00:49:13.944
+Voy a agarrar acá y los leo, por favor, alguien que me diga esa
+
+835
+00:49:13.964 --> 00:49:17.813
+diferencia. Te voy a crear un muro arquitectónico, así.
+
+836
+00:49:18.104 --> 00:49:21.744
+Voy a agarrar este muro... entonces estamos creando nuestro
+
+837
+00:49:21.764 --> 00:49:25.564
+proyecto, como siempre, ¿no? Estamos desarrollando y lo
+
+838
+00:49:25.584 --> 00:49:26.984
+estamos trabajando,
+
+839
+00:49:28.404 --> 00:49:30.484
+¿ok? Ahí
+
+840
+00:49:32.584 --> 00:49:35.264
+estamos metiendo todo el cariño en el proyecto
+
+841
+00:49:36.804 --> 00:49:40.564
+y, eh, como le estamos metiendo todo el cariño al proyecto, yo
+
+842
+00:49:40.784 --> 00:49:43.484
+necesito saber que en la muestra de
+
+843
+00:49:43.564 --> 00:49:47.124
+colores, eh, tenga un filtro que
+
+844
+00:49:47.164 --> 00:49:47.944
+diferencie
+
+845
+00:49:49.324 --> 00:49:52.564
+las paredes externas con las paredes internas, ¿ok?
+
+846
+00:49:52.584 --> 00:49:56.184
+Porque las paredes internas van a tener un tratamiento distinto a las paredes
+
+847
+00:49:56.504 --> 00:49:59.644
+externas. ¿Cómo hago
+
+848
+00:49:59.744 --> 00:50:01.484
+esto? Bueno,
+
+849
+00:50:02.344 --> 00:50:05.744
+filtros de vista, eh, eh, y también parámetros de
+
+850
+00:50:05.924 --> 00:50:08.824
+proyecto y plantillas de vista. Vamos a usar todo de una
+
+851
+00:50:08.904 --> 00:50:12.804
+sola. Entonces, acá, las exteriores, cuando ustedes
+
+852
+00:50:12.844 --> 00:50:16.104
+seleccionan una pared, si se dan cuenta, dice función
+
+853
+00:50:16.224 --> 00:50:17.544
+exterior.
+
+854
+00:50:18.864 --> 00:50:22.344
+Función exterior, pero lo malo de esto es que si yo cambio acá la
+
+855
+00:50:22.444 --> 00:50:26.344
+función, si yo digo: bueno, esta es
+
+856
+00:50:26.484 --> 00:50:30.184
+interior. Vamos a poner aquí,
+
+857
+00:50:30.284 --> 00:50:33.494
+interior. Entonces, para todo se va a cambiar a
+
+858
+00:50:33.524 --> 00:50:36.984
+interior, ¿sí? Y en la parte externa de
+
+859
+00:50:37.084 --> 00:50:38.264
+ejemplar no hay
+
+860
+00:50:39.564 --> 00:50:41.964
+uno que se llame función. ¿Qué tengo que crear?
+
+861
+00:50:41.984 --> 00:50:45.944
+Parámetro de proyecto. Entonces, nos vamos a gestionar,
+
+862
+00:50:47.344 --> 00:50:48.364
+le damos clic acá
+
+863
+00:50:49.564 --> 00:50:52.284
+y le voy a colocar. Cuando utilicen
+
+864
+00:50:53.223 --> 00:50:55.584
+un parámetro que tiene el mismo nombre de uno
+
+865
+00:50:55.604 --> 00:50:59.464
+existente, colóquenle así: función, piso,
+
+866
+00:50:59.474 --> 00:51:02.284
+usuario, disciplina
+
+867
+00:51:02.364 --> 00:51:04.264
+común.
+
+868
+00:51:05.944 --> 00:51:08.524
+Eh, a ver, está
+
+869
+00:51:10.124 --> 00:51:13.624
+acá. El texto
+
+870
+00:51:15.264 --> 00:51:15.984
+y otro.
+
+871
+00:51:17.744 --> 00:51:21.184
+Recuerden la diferencia, ¿quién me ayuda con la diferencia?
+
+872
+00:51:21.204 --> 00:51:25.184
+Y aquí le colocamos muros, ¿sí? Porque es para
+
+873
+00:51:25.224 --> 00:51:28.754
+muros, esa es la categoría. Le damos a Aceptar.
+
+874
+00:51:29.884 --> 00:51:33.544
+Entonces, ¿qué va a pasar? Que todo lo que yo seleccione de
+
+875
+00:51:33.604 --> 00:51:35.944
+manera externa va a ser
+
+876
+00:51:37.684 --> 00:51:39.884
+exterior, voy a ponerle XT,
+
+877
+00:51:41.284 --> 00:51:44.704
+y todo lo que yo seleccione de manera interna va a ser X
+
+878
+00:51:45.864 --> 00:51:46.824
+límite.
+
+879
+00:51:48.204 --> 00:51:51.964
+Ya yo sé que le estoy dando información y que me va a discretizar en la, la
+
+880
+00:51:52.024 --> 00:51:54.644
+tabla de cantidades, ¿sí?
+
+881
+00:51:54.744 --> 00:51:58.004
+Ahora, lo quiero hacer con,
+
+882
+00:51:58.104 --> 00:51:59.204
+eh...
+
+883
+00:52:01.584 --> 00:52:05.144
+con filtro de colores. ¿Cómo hago eso? ¿Cómo hago eso?
+
+884
+00:52:05.164 --> 00:52:07.564
+Bueno, simplemente acá,
+
+885
+00:52:08.544 --> 00:52:11.654
+doble B, ¿y ven? Pequeño dos
+
+886
+00:52:11.664 --> 00:52:15.444
+veces, y se van a ir acá a donde
+
+887
+00:52:15.464 --> 00:52:18.724
+dice Categorías, Filtros. Vamos a darle a
+
+888
+00:52:18.733 --> 00:52:22.334
+Añadir. ¿Y ustedes se acuerdan cómo se crean los filtros?
+
+889
+00:52:22.344 --> 00:52:26.064
+Habían filtros de selección y filtros con reglas.
+
+890
+00:52:26.084 --> 00:52:29.964
+Los filtros con selección funcionan, pero siempre yo les recomiendo crear un filtro
+
+891
+00:52:29.984 --> 00:52:33.744
+en regla. Entonces, le van a dar acá,
+
+892
+00:52:33.884 --> 00:52:34.404
+en
+
+893
+00:52:35.384 --> 00:52:39.344
+Editar nuevo. Editar nuevo. Vamos
+
+894
+00:52:39.364 --> 00:52:42.464
+a crear uno nuevo, que es por regla, y vamos a colocar
+
+895
+00:52:43.084 --> 00:52:44.964
+función exterior,
+
+896
+00:52:45.544 --> 00:52:48.124
+¿sí? Que va a ser para
+
+897
+00:52:48.164 --> 00:52:51.914
+muros, la categoría, y aquí en la regla va a
+
+898
+00:52:52.024 --> 00:52:52.904
+ser muros
+
+899
+00:52:54.584 --> 00:52:58.284
+de función usuario que sea igual a
+
+900
+00:52:58.364 --> 00:53:01.724
+exterior. Le damos a Aplicar,
+
+901
+00:53:02.404 --> 00:53:03.544
+y este mismo que está acá
+
+902
+00:53:04.924 --> 00:53:08.564
+lo vamos a duplicar, le vamos a cambiar el nombre y le vamos a
+
+903
+00:53:08.644 --> 00:53:10.344
+colocar Interior,
+
+904
+00:53:11.264 --> 00:53:11.624
+¿sí?
+
+905
+00:53:12.644 --> 00:53:16.244
+Y vamos a ir a la parte de Muros, y aquí le cambiamos
+
+906
+00:53:16.864 --> 00:53:20.284
+Interior. Le damos a Aplicar, Aceptar.
+
+907
+00:53:20.294 --> 00:53:24.124
+¿Y qué me va a ayudar esto? Que vamos a agregar tanto el exterior y el
+
+908
+00:53:24.204 --> 00:53:28.054
+interior, y uno va a ser de un color, no sé,
+
+909
+00:53:28.084 --> 00:53:30.784
+digamos, azul,
+
+910
+00:53:32.754 --> 00:53:35.564
+¿verdad? Y el otro va a ser de color
+
+911
+00:53:36.944 --> 00:53:37.344
+rojo,
+
+912
+00:53:38.704 --> 00:53:42.534
+¿sí? Ay, perdón, no me va a quedar bien, era azul,
+
+913
+00:53:42.584 --> 00:53:46.124
+azul, ¿ok? Y lo otro vamos a
+
+914
+00:53:46.164 --> 00:53:49.884
+hacerlo, eh... relleno uniforme,
+
+915
+00:53:49.944 --> 00:53:50.734
+relleno uniforme.
+
+916
+00:53:51.584 --> 00:53:52.324
+Lo mismo acá,
+
+917
+00:53:53.364 --> 00:53:54.824
+relleno uniforme,
+
+918
+00:53:56.284 --> 00:53:59.904
+relleno uniforme, color rojo,
+
+919
+00:54:01.284 --> 00:54:02.344
+color rojo,
+
+920
+00:54:03.864 --> 00:54:07.424
+Aceptar, Aplicar, Aceptar. Entonces, vean, ahí
+
+921
+00:54:07.504 --> 00:54:08.024
+está.
+
+922
+00:54:10.224 --> 00:54:13.734
+Pero, ¿qué pasa? Seguramente, si yo agarro esto
+
+923
+00:54:14.864 --> 00:54:17.364
+y lo copio en nivel dos, bueno, yo agarro estos muros, como es
+
+924
+00:54:17.404 --> 00:54:20.784
+repetitivo, me los llevo acá en la opción de
+
+925
+00:54:20.864 --> 00:54:24.564
+Copiar, alineado con niveles seleccionados, y me lo llevo al nivel
+
+926
+00:54:24.604 --> 00:54:25.084
+dos.
+
+927
+00:54:26.264 --> 00:54:30.064
+Pero, ¿cuál va a ser el problema? Vamos a cerrar todo esto.
+
+928
+00:54:30.104 --> 00:54:31.864
+Que cuando yo me lo lleve al nivel
+
+929
+00:54:31.884 --> 00:54:35.644
+dos... y coloque
+
+930
+00:54:35.653 --> 00:54:39.404
+colores coherentes, ¡ah!, no se ve, no se ve con los
+
+931
+00:54:39.424 --> 00:54:43.404
+colores que yo quiero. Entonces, si yo le doy BB en
+
+932
+00:54:43.444 --> 00:54:45.694
+los filtros, tengo que volver a hacer lo mismo.
+
+933
+00:54:45.764 --> 00:54:49.724
+Imagínense una edificación de diez niveles haciendo y repitiendo esto a cada
+
+934
+00:54:49.764 --> 00:54:53.334
+rato.... y ahí es donde entra, ya hicimos
+
+935
+00:54:53.404 --> 00:54:55.444
+filtro, vamos a organizar vistas.
+
+936
+00:54:56.444 --> 00:54:59.244
+En las vistas hay algo que se llama plantilla de
+
+937
+00:54:59.284 --> 00:55:02.904
+vista, y esto les va a salvar la vida de todos los
+
+938
+00:55:03.004 --> 00:55:06.044
+proyectos. ¿Cómo así? Ustedes colocan
+
+939
+00:55:06.084 --> 00:55:08.024
+acá plantilla de vista
+
+940
+00:55:08.904 --> 00:55:12.684
+y lo que van a hacer es lo siguiente: aquí donde dice nivel uno, botón
+
+941
+00:55:12.694 --> 00:55:16.244
+secundario, crear plantilla de vista a partir de esta
+
+942
+00:55:16.284 --> 00:55:19.834
+vista. Le voy a colocar aquí: plantilla
+
+943
+00:55:24.944 --> 00:55:28.504
+, función muros. Le damos a aceptar.
+
+944
+00:55:28.524 --> 00:55:31.144
+Y aquí me voy a quedar únicamente, como es de
+
+945
+00:55:31.204 --> 00:55:35.174
+filtro, ¿sí? Yo me pudiera quedar con todas, pero como es
+
+946
+00:55:35.184 --> 00:55:38.873
+de filtro, solo me quedo con la parte de filtros, esta que está acá .
+
+947
+00:55:41.924 --> 00:55:44.204
+¿Ok? Solo me quedo con
+
+948
+00:55:44.304 --> 00:55:47.714
+filtro. Se llama función muros, le doy a
+
+949
+00:55:47.714 --> 00:55:51.584
+aceptar. Entonces, me voy a nivel dos y aquí, ¿qué
+
+950
+00:55:51.704 --> 00:55:52.444
+coloco?
+
+951
+00:55:53.584 --> 00:55:57.244
+Plantilla función muros, aplicar, aceptar,
+
+952
+00:55:57.254 --> 00:56:01.144
+¡bingo! Ahora, en cualquier vista,
+
+953
+00:56:01.204 --> 00:56:03.564
+yo puedo tener esta configuración.
+
+954
+00:56:03.584 --> 00:56:07.264
+Y no solo puedo tener configuración de filtros de vista, que acabamos de hacer de
+
+955
+00:56:07.284 --> 00:56:10.784
+colores, sino que también podemos hacer de, de escalas,
+
+956
+00:56:11.704 --> 00:56:14.884
+de los textos, de lo que yo quiera.
+
+957
+00:56:14.924 --> 00:56:16.864
+Entonces, ustedes pueden hacer esto.
+
+958
+00:56:16.904 --> 00:56:19.504
+Nivel uno, ustedes pueden duplicar vista
+
+959
+00:56:21.324 --> 00:56:25.304
+y la duplican sola, y pueden cambiar
+
+960
+00:56:25.664 --> 00:56:29.564
+esto. Eh... plantilla
+
+961
+00:56:31.464 --> 00:56:33.444
+nivel uno,
+
+962
+00:56:34.744 --> 00:56:38.704
+modelo, y esta que está acá, le pueden cambiar el nombre
+
+963
+00:56:38.744 --> 00:56:39.834
+y colocar nivel uno
+
+964
+00:56:41.164 --> 00:56:43.664
+y... impresión.
+
+965
+00:56:45.084 --> 00:56:47.684
+Entonces, ya saben que todas las modificaciones que hagan aquí
+
+966
+00:56:48.824 --> 00:56:52.514
+del modelo no tiene que ser a juro con los colores, con las escalas y demás, sino
+
+967
+00:56:52.584 --> 00:56:56.164
+con la de nivel uno impresión. Y esta, la que diga nivel uno
+
+968
+00:56:56.204 --> 00:56:59.564
+impresión, es la que ustedes le van a colocar la plantilla de
+
+969
+00:56:59.584 --> 00:57:03.424
+vista. Y así van a trabajar de
+
+970
+00:57:03.444 --> 00:57:04.104
+una manera
+
+971
+00:57:04.964 --> 00:57:08.824
+excelente en Revit, se los aseguro, si no lo utilizan así.
+
+972
+00:57:08.844 --> 00:57:12.164
+Y claro, ahí le meten la parte de organización de vista, que eso lo vimos en la
+
+973
+00:57:12.204 --> 00:57:14.584
+clase pasada y lo vimos en la lección dos A.
+
+974
+00:57:15.644 --> 00:57:19.584
+¿Ok? Vean lo que podemos hacer. Hemos combinado parámetros del
+
+975
+00:57:19.644 --> 00:57:23.544
+proyecto con filtros, plantillas de vista y organización
+
+976
+00:57:23.564 --> 00:57:26.944
+de vista .
+
+977
+00:57:29.644 --> 00:57:33.164
+Última pregunta para cerrar. Bueno, no me respondió nadie,
+
+978
+00:57:34.064 --> 00:57:34.414
+espero que al
+
+979
+00:57:35.304 --> 00:57:38.304
+terminar me responda. ¿Qué diferencia vieron?
+
+980
+00:57:38.344 --> 00:57:42.034
+Parámetro de proyecto, parámetro...
+
+981
+00:57:42.084 --> 00:57:45.784
+Eh, eso, gracias, Fernando. Parámetros de proyecto son
+
+982
+00:57:45.824 --> 00:57:48.124
+locales, permiten filtrar y organizar la información.
+
+983
+00:57:48.144 --> 00:57:51.704
+Parámetros compartidos realizan básicamente lo mismo que los parámetros del
+
+984
+00:57:51.724 --> 00:57:54.904
+proyecto, pero se pueden emplear en diferentes proyectos y familias.
+
+985
+00:57:54.944 --> 00:57:57.684
+Parámetros globales imponen reglas en todo el proyecto.
+
+986
+00:57:57.744 --> 00:58:00.154
+Eso es correcto, y yo agregaría:
+
+987
+00:58:01.044 --> 00:58:02.804
+imponer reglas de geometría,
+
+988
+00:58:03.624 --> 00:58:06.414
+control de geometría. Muy bien, muy
+
+989
+00:58:06.444 --> 00:58:08.654
+bien. Y...
+
+990
+00:58:10.724 --> 00:58:11.184
+ahora,
+
+991
+00:58:12.464 --> 00:58:15.124
+pregunta para todos sin que lo sepan
+
+992
+00:58:15.164 --> 00:58:17.064
+todavía,
+
+993
+00:58:17.884 --> 00:58:21.784
+eh, si me han visto la lección tres A, pero...
+
+994
+00:58:24.044 --> 00:58:27.104
+si yo tengo tres proyectos
+
+995
+00:58:28.304 --> 00:58:30.644
+donde voy a utilizar mi mismo estándar.
+
+996
+00:58:32.784 --> 00:58:35.924
+Estándar de los filtros, las mismas plantillas, los mismos
+
+997
+00:58:35.964 --> 00:58:39.844
+parámetros, porque son proyectos similares, pero al final son distintos.
+
+998
+00:58:39.884 --> 00:58:41.804
+Son tres proyectos distintos, pero similares.
+
+999
+00:58:42.824 --> 00:58:45.364
+Yo voy a utilizar mi estandarización.
+
+1000
+00:58:46.744 --> 00:58:50.284
+Les hago la pregunta: ¿cómo harían para
+
+1001
+00:58:51.904 --> 00:58:54.944
+que en cada proyecto no tengan que estar repitiendo esto a cada
+
+1002
+00:58:55.004 --> 00:58:57.884
+rato? ¿Qué se les ocurre?
+
+1003
+00:58:59.164 --> 00:59:02.224
+O sea, si yo abro un nuevo proyecto, ¿cómo
+
+1004
+00:59:02.264 --> 00:59:06.293
+hago...
+
+1005
+00:59:06.304 --> 00:59:08.924
+para que no tenga que hacer otra vez esto desde cero?
+
+1006
+00:59:08.944 --> 00:59:10.504
+Porque si no,
+
+1007
+00:59:11.744 --> 00:59:13.724
+¿para qué aprendí lo que aprendí, no?
+
+1008
+00:59:13.764 --> 00:59:15.964
+Si tengo que estar haciendo todo desde cero.
+
+1009
+00:59:15.974 --> 00:59:19.144
+¿Qué se les ocurre? Vamos a cerrar
+
+1010
+00:59:19.224 --> 00:59:21.644
+acá.
+
+1011
+00:59:23.524 --> 00:59:27.004
+Y voy a abrir un nuevo proyecto mientras tanto, que va a ser aquí.
+
+1012
+00:59:29.204 --> 00:59:32.444
+Generar una plantilla de proyecto, sí.
+
+1013
+00:59:32.504 --> 00:59:36.324
+Ustedes pueden generar una plantilla de proyecto, Fernando,
+
+1014
+00:59:36.364 --> 00:59:39.464
+pero no soy partidario de ello y ya les explico el porqué, ¿sí?
+
+1015
+00:59:39.484 --> 00:59:42.684
+Ya les explico el porqué, ¿ok? Pero va por ahí.
+
+1016
+00:59:42.704 --> 00:59:44.764
+Tener plantillas compartidas guardadas, sí,
+
+1017
+00:59:45.624 --> 00:59:49.444
+pero yo le voy a dar un, un, un, un twist, una vuelta a eso.
+
+1018
+00:59:49.484 --> 00:59:53.114
+Fíjense, ustedes abren un nuevo proyecto, no lo van a abrir como plantilla de
+
+1019
+00:59:53.124 --> 00:59:56.744
+proyecto, sino desde cero, ¿sí? Desde cero, así como está,
+
+1020
+00:59:56.754 --> 01:00:00.304
+¿ya? Eh, y lo
+
+1021
+01:00:00.464 --> 01:00:03.404
+que vamos a hacer
+
+1022
+01:00:04.244 --> 01:00:06.564
+es lo siguiente:
+
+1023
+01:00:07.704 --> 01:00:11.144
+con el proyecto base, que ustedes se mataron
+
+1024
+01:00:11.224 --> 01:00:12.464
+configurando todo,
+
+1025
+01:00:13.964 --> 01:00:17.684
+van a agarrar, lo van a tener abierto y van a tener el nuevo
+
+1026
+01:00:17.724 --> 01:00:18.264
+proyecto.
+
+1027
+01:00:19.544 --> 01:00:22.764
+Y lo que van a hacer es lo siguiente: se van a ir acá, en
+
+1028
+01:00:22.844 --> 01:00:26.784
+Gestionar, aquí, el proyecto que está configurado,
+
+1029
+01:00:26.824 --> 01:00:30.724
+y aquí hay una opción que se llama Transferir normas de proyectos, que
+
+1030
+01:00:31.224 --> 01:00:35.064
+con este solo botoncito les va a solucionar toda la
+
+1031
+01:00:35.104 --> 01:00:38.584
+vida. ¿Por qué? Porque van a
+
+1032
+01:00:38.684 --> 01:00:42.644
+copiar desde acá, ¿ok? Y van a
+
+1033
+01:00:42.724 --> 01:00:46.444
+copiar no solo la configuración de los
+
+1034
+01:00:46.504 --> 01:00:49.494
+parámetros del proyecto, aquí están los parámetros del proyecto, vean.
+
+1035
+01:00:51.384 --> 01:00:54.611
+Sí, parámetros del proyecto.... Obviamente, los parámetros
+
+1036
+01:00:54.651 --> 01:00:58.412
+compartidos tienen que tener su archivo de texto, pero los parámetros del proyecto
+
+1037
+01:00:58.432 --> 01:01:01.812
+que crean, se los pueden llevar, las plantillas de vista
+
+1038
+01:01:03.551 --> 01:01:06.932
+y los tipos de familias, todos los tipos de
+
+1039
+01:01:06.991 --> 01:01:07.692
+familia,
+
+1040
+01:01:08.712 --> 01:01:12.071
+hasta las rejillas, hasta la configuración del
+
+1041
+01:01:12.131 --> 01:01:15.571
+navegador. Y ustedes simplemente le van a decir:
+
+1042
+01:01:15.631 --> 01:01:17.111
+Aceptar.
+
+1043
+01:01:18.471 --> 01:01:22.212
+Le van a decir: Sobreescribir.
+
+1044
+01:01:23.912 --> 01:01:24.452
+¿Ok?
+
+1045
+01:01:26.551 --> 01:01:30.372
+Ah, creo que lo hice donde es. Cometí un pequeño
+
+1046
+01:01:30.412 --> 01:01:32.991
+error, ahí les voy a decir el porqué.
+
+1047
+01:01:33.091 --> 01:01:33.491
+Era en el
+
+1048
+01:01:34.412 --> 01:01:36.151
+abriendo el proyecto nuevo, pero bueno, ya
+
+1049
+01:01:37.031 --> 01:01:39.952
+el procedimiento es el mismo.
+
+1050
+01:01:42.352 --> 01:01:45.332
+Ok, es aquí, disculpen, es aquí que lo tienen
+
+1051
+01:01:45.392 --> 01:01:48.971
+que-- aquí es que lo tienen que hacer. Disculpen, disculpen.
+
+1052
+01:01:49.031 --> 01:01:51.611
+Acá donde dice Gestionar,
+
+1053
+01:01:52.432 --> 01:01:55.832
+Transferir normas de proyecto, lo voy a copiar
+
+1054
+01:01:55.872 --> 01:01:57.912
+desde este modelo, que es el que estoy
+
+1055
+01:01:57.932 --> 01:02:00.591
+utilizando. Le van a dar a
+
+1056
+01:02:00.602 --> 01:02:04.082
+Aceptar. Le dan a
+
+1057
+01:02:04.111 --> 01:02:05.671
+Sobreescribir.
+
+1058
+01:02:10.401 --> 01:02:12.171
+Y ahora van a tener
+
+1059
+01:02:13.611 --> 01:02:17.111
+toda la configuración allí, ¿ok?
+
+1060
+01:02:17.952 --> 01:02:21.591
+Entonces, de esa manera, ¿qué están haciendo ustedes?
+
+1061
+01:02:21.631 --> 01:02:25.002
+Es, lo que están haciendo es, es extrapolar lo que estaba acá
+
+1062
+01:02:25.651 --> 01:02:28.491
+y llevarlo aquí. Entonces, ¿qué les recomiendo yo?
+
+1063
+01:02:28.511 --> 01:02:32.171
+Que cuando ustedes terminen un proyecto y lo guarden, lo van a guardar no como
+
+1064
+01:02:32.272 --> 01:02:35.772
+plantilla, sino proyecto, que les voy a indicar la diferencia, y le van a
+
+1065
+01:02:35.812 --> 01:02:39.091
+colocar Modelo,
+
+1066
+01:02:40.232 --> 01:02:43.872
+eh... Modelo
+
+1067
+01:02:45.591 --> 01:02:47.531
+Configuración.
+
+1068
+01:02:48.712 --> 01:02:52.392
+Y con eso se van a quedar. Y van a guardar eso, y van a guardar sus
+
+1069
+01:02:52.432 --> 01:02:54.772
+archivos de textos de, de parámetros
+
+1070
+01:02:54.832 --> 01:02:58.792
+compartidos. Y cada vez que arranquen
+
+1071
+01:02:58.852 --> 01:03:02.631
+un proyecto, entran en el nuevo proyecto, le dan Gestionar,
+
+1072
+01:03:02.671 --> 01:03:03.470
+Transferir,
+
+1073
+01:03:04.392 --> 01:03:07.952
+y ya se les va a solucionar todo, todo, todo,
+
+1074
+01:03:08.071 --> 01:03:11.031
+absolutamente todo, porque ahora ya no tienen que volver
+
+1075
+01:03:11.091 --> 01:03:14.892
+a, a crear todo desde cero, inclusive se les va a
+
+1076
+01:03:14.932 --> 01:03:17.361
+copiar hasta las mismas familias, o sea,
+
+1077
+01:03:17.511 --> 01:03:20.651
+todo. ¿Por qué yo lo hago así?
+
+1078
+01:03:20.671 --> 01:03:23.272
+Porque, ¿cuál es la diferencia con plantilla de proyecto?
+
+1079
+01:03:23.292 --> 01:03:26.752
+Con plantilla de proyecto, la diferencia está
+
+1080
+01:03:27.051 --> 01:03:31.011
+es que ustedes tienen que eliminar todos los elementos
+
+1081
+01:03:31.051 --> 01:03:34.872
+del modelo del proyecto. Todos, todos, todos.
+
+1082
+01:03:34.892 --> 01:03:38.352
+¿Y qué pasa? Eh, cuando no los
+
+1083
+01:03:38.392 --> 01:03:42.332
+eliminan todos de la manera correcta, porque siempre queda algo,
+
+1084
+01:03:42.432 --> 01:03:46.281
+la plantilla de proyecto se va a arrastrar, eh,
+
+1085
+01:03:46.332 --> 01:03:47.631
+esos elementos.
+
+1086
+01:03:48.511 --> 01:03:51.432
+Y hay veces que uno no va a utilizar esos elementos, ¿ok?
+
+1087
+01:03:51.892 --> 01:03:55.452
+Uno lo único que quiere es arrastrarse las plantillas de
+
+1088
+01:03:55.511 --> 01:03:59.091
+vista, y puedes arrastrarte las familias, no hay
+
+1089
+01:03:59.131 --> 01:04:02.981
+problema, pero lo que interesa a uno es los parámetros, las planti--
+
+1090
+01:04:03.031 --> 01:04:06.591
+eh, las plantillas de vista y la configuración general
+
+1091
+01:04:06.671 --> 01:04:10.111
+de... del organizador, del navegador,
+
+1092
+01:04:10.192 --> 01:04:13.491
+de, de los parámetros del proyecto, etcétera,
+
+1093
+01:04:13.511 --> 01:04:16.912
+etcétera. Entonces, para mí es mucho más práctico que
+
+1094
+01:04:17.591 --> 01:04:21.131
+simplemente tengan un modelo guardado con su
+
+1095
+01:04:21.171 --> 01:04:25.131
+configuración y siempre que arranquen un proyecto, lo que único que hacen
+
+1096
+01:04:25.171 --> 01:04:26.611
+es transferir las normas y listo.
+
+1097
+01:04:28.491 --> 01:04:31.392
+Es más sencillo, mucho, mucho más sencillo,
+
+1098
+01:04:31.412 --> 01:04:35.272
+¿sí? Automatizar. ¿Qué están haciendo
+
+1099
+01:04:35.312 --> 01:04:39.051
+allí? Ahí se están ahorrando horas de trabajo, trabajan mucho más
+
+1100
+01:04:39.091 --> 01:04:41.522
+rápido, trabajan con los mismos estándares y
+
+1101
+01:04:41.591 --> 01:04:45.102
+calidad, trabajan con los mismos parámetros de
+
+1102
+01:04:45.171 --> 01:04:49.031
+proyecto, ¿ok?
+
+1103
+01:04:51.412 --> 01:04:54.571
+Ya para cerrar, eeeh,
+
+1104
+01:04:56.352 --> 01:04:58.551
+vamos a hablar de lo que viene en la lección tres B.
+
+1105
+01:04:59.412 --> 01:05:02.692
+La lección tres A yo la expliqué para qué se utilizan los add-ins.
+
+1106
+01:05:02.712 --> 01:05:06.011
+Los add-ins básicamente es una herramienta que nosotros dis-- o sea,
+
+1107
+01:05:06.111 --> 01:05:09.830
+usamos. El, el add-in necesita un trigger, ese trigger somos
+
+1108
+01:05:09.852 --> 01:05:13.692
+nosotros, los accionadores somos nosotros, quien mantiene el criterio
+
+1109
+01:05:13.752 --> 01:05:16.772
+somos nosotros. No todos los add-ins son convenientes.
+
+1110
+01:05:17.152 --> 01:05:20.442
+Utilizar los add-ins sin estrategia es...
+
+1111
+01:05:20.452 --> 01:05:23.892
+no tiene sentido, ¿ok? ¿Y qué pasa?
+
+1112
+01:05:23.912 --> 01:05:27.551
+Yo le estoy induciendo primero el concepto de cómo automatizar, porque al momento
+
+1113
+01:05:27.562 --> 01:05:31.432
+de utilizar el add-ins, ya saben qué esperar de él y ya saben
+
+1114
+01:05:31.471 --> 01:05:35.432
+por qué lo van a usar, ¿ok? Entonces, eso es lo que van a ver la
+
+1115
+01:05:35.471 --> 01:05:38.491
+parte práctica en la lección tres, tres B.
+
+1116
+01:05:38.571 --> 01:05:42.171
+Se van a ver pro, eh, tres tipos de add-ins, principalmente:
+
+1117
+01:05:42.192 --> 01:05:46.102
+productividad y cambios masivos, control y revisión del modelo y estandarización y
+
+1118
+01:05:46.111 --> 01:05:49.372
+repetibilidad, que es lo que nosotros necesitamos en un buen, buen
+
+1119
+01:05:49.432 --> 01:05:50.792
+modelo, ¿ok?
+
+1120
+01:05:52.071 --> 01:05:54.491
+Eso es lo que veremos en la lección tres B.
+
+1121
+01:05:54.611 --> 01:05:58.372
+Eh... no se va a ver add-ins por, por
+
+1122
+01:05:58.432 --> 01:06:00.281
+moda, sino los que se utilizan.
+
+1123
+01:06:01.652 --> 01:06:05.471
+Y en la lección cuatro en adelante, vamos a ver la automatización de plantillas.
+
+1124
+01:06:05.491 --> 01:06:08.531
+O sea, ok, ya ustedes ahorita aprendieron cómo
+
+1125
+01:06:08.591 --> 01:06:12.412
+transferir, pero cómo podemos empezar a automatizar y damos
+
+1126
+01:06:12.591 --> 01:06:16.502
+paso ya o el abreboca,
+
+1127
+01:06:16.531 --> 01:06:18.611
+a lo que puede ser, eh,
+
+1128
+01:06:20.071 --> 01:06:22.892
+la primera inducción de inteligencia artificial con
+
+1129
+01:06:22.952 --> 01:06:26.312
+Revit. Eh, la lección tres,
+
+1130
+01:06:26.912 --> 01:06:30.792
+eh, yo les confirmo, bueno, se las estaría subiendo mañana en el transcurso
+
+1131
+01:06:30.852 --> 01:06:34.711
+del día. Eh... ya
+
+1132
+01:06:34.792 --> 01:06:38.071
+no vamos a tener el mismo problema con la plataforma, así que no se preocupen.
+
+1133
+01:06:38.091 --> 01:06:40.971
+Entonces, mañana les subo tres B y cuatro A.
+
+1134
+01:06:41.732 --> 01:06:45.591
+La próxima semana vamos a repasar todo
+
+1135
+01:06:45.631 --> 01:06:47.991
+lo que-- nos faltan dos sesiones de refuerzo.
+
+1136
+01:06:48.011 --> 01:06:51.912
+Entonces, la próxima semana, el miércoles, vamos a repasar todo
+
+1137
+01:06:51.952 --> 01:06:54.171
+lo que es add-ins y plantillas
+
+1138
+01:06:54.232 --> 01:06:58.048
+automatizadas.... y la última semana vamos a
+
+1139
+01:06:58.127 --> 01:07:02.107
+repasar la introducción a inteligencia artificial y
+
+1140
+01:07:02.168 --> 01:07:05.107
+el proyecto final que tienen que entregar.
+
+1141
+01:07:05.148 --> 01:07:09.107
+Vean que son cursos cortos, pero son cursos enriquecedores, que
+
+1142
+01:07:09.148 --> 01:07:10.538
+cuando ustedes sumen las,
+
+1143
+01:07:11.688 --> 01:07:15.668
+la, los doce cursos, son más de ciento cincuenta
+
+1144
+01:07:15.688 --> 01:07:16.248
+horas de,
+
+1145
+01:07:17.148 --> 01:07:18.248
+de aprendizaje,
+
+1146
+01:07:19.228 --> 01:07:22.748
+más las horas que le dediquen, un montón, ¿okey?
+
+1147
+01:07:22.848 --> 01:07:24.888
+Eso es lo que vamos a hacer la próxima semana.
+
+1148
+01:07:25.087 --> 01:07:26.567
+Ahora,
+
+1149
+01:07:28.008 --> 01:07:30.848
+¿si se va entendiendo, si me van siguiendo, alguna
+
+1150
+01:07:30.948 --> 01:07:32.087
+consulta,
+
+1151
+01:07:33.268 --> 01:07:36.718
+duda? ¿Se entendió la clase de hoy?
+
+1152
+01:07:36.718 --> 01:07:39.548
+¿Se va entendiendo el criterio? ¿Estamos
+
+1153
+01:07:39.587 --> 01:07:43.528
+bien? Ya faltan dos semanas y terminamos el primer curso, así que
+
+1154
+01:07:45.627 --> 01:07:49.567
+la idea es que sean constantes. ¿Estamos bien hasta acá? ¿Alguna consulta?
+
+1155
+01:07:51.127 --> 01:07:54.368
+Fernando, todo claro. Perfecto, gracias, Fernando.
+
+1156
+01:07:54.488 --> 01:07:57.808
+El resto, Ana, Brendi, eh, Brenda, perdón,
+
+1157
+01:07:57.888 --> 01:08:00.487
+Eddie, Gustavo, Matilde,
+
+1158
+01:08:01.567 --> 01:08:03.837
+Ricardo, Rubén, ¿está claro, alguna
+
+1159
+01:08:03.908 --> 01:08:05.708
+consulta?
+
+1160
+01:08:06.708 --> 01:08:07.888
+Si se va entendiendo
+
+1161
+01:08:11.788 --> 01:08:14.528
+.
+
+1162
+01:08:20.268 --> 01:08:22.788
+Todo bien, okey, okey.
+
+1163
+01:08:23.989 --> 01:08:26.428
+Entonces, eh, nada, muchachos,
+
+1164
+01:08:26.529 --> 01:08:30.348
+el-- nos vamos a ver el próximo miércoles, vamos a ver
+
+1165
+01:08:30.388 --> 01:08:33.567
+AdSense, opciones automatizadas.
+
+1166
+01:08:33.648 --> 01:08:33.909
+Y
+
+1167
+01:08:35.808 --> 01:08:38.808
+cuando ya les suba la lección tres B y cuatro A, también les aviso por el
+
+1168
+01:08:38.827 --> 01:08:42.489
+grupo. Y ya la próxima semana, o
+
+1169
+01:08:42.548 --> 01:08:46.428
+sea, el cronograma rápido. Recuerden que son seis lecciones
+
+1170
+01:08:46.449 --> 01:08:50.008
+con sus dos partes, ¿no? Eh, ya yo la próxima semana
+
+1171
+01:08:50.668 --> 01:08:54.468
+se termina ya las lecciones asincrónicas, hasta la lección seis
+
+1172
+01:08:55.808 --> 01:08:59.788
+y B, ¿okey? Entonces, eh, les voy a dejar
+
+1173
+01:08:59.827 --> 01:09:02.878
+esta semana para que se pongan al día hasta la lección cuatro A.
+
+1174
+01:09:02.989 --> 01:09:06.827
+Entonces, qué necesito para la próxima semana, por favor, tienen que estar al día
+
+1175
+01:09:06.837 --> 01:09:10.657
+hasta la lección cuatro A. Igual esto yo les voy a mandar el mensaje por el
+
+1176
+01:09:10.688 --> 01:09:14.048
+grupo de WhatsApp, ¿okey? Para que aprovechen la próxima clase.
+
+1177
+01:09:14.088 --> 01:09:17.768
+Que tengan excelente fin de semana o, bueno,
+
+1178
+01:09:18.068 --> 01:09:21.188
+es que es miércoles y estoy pensando en el fin de semana.
+
+1179
+01:09:21.208 --> 01:09:24.388
+Que tengan un buen cierre de semana, ¿okey? Un buen cierre de semana.
+
+1180
+01:09:24.409 --> 01:09:25.588
+Cuídense mucho.
+
+1181
+01:09:27.148 --> 01:09:29.018
+Gracias. Gracias, que estén bien,
+
+1182
+01:09:29.029 --> 01:09:32.367
+cuídense.
