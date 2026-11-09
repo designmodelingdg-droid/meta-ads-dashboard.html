@@ -685,3 +685,52 @@ NIVEL sigue disparándose con palabras sueltas: 224 contactos y solo 32 accesos 
 **Ajustes que se aplican**
 - Ningún cambio de formato en el calendario: esta semana ningún formato ganó claro.
 - Noviembre ya cambió por pedido de Dayana: sin historias en feriados ni fines de semana, las 6 uniones el 4-nov y 4 videos de valor de octubre. Eso sube la proporción de dato técnico frente a objeción, que es justo lo que pide la lección 1.
+
+## Actualización 2026-11-09 · semana 2–8 nov: el dato técnico de estructuras vuelve a conversar y el workshop sigue sin hacerlo
+
+Datos: Graph API (Action «Métricas semanales» del 9-nov), historias y embudos de GHL. Las piezas tienen entre 2 y 7 días.
+
+| Fecha | Pieza | Formato | Vistas | Coment. IG | Coment. FB | Guard. | Comp. |
+|---|---|---|---|---|---|---|---|
+| Sáb 7 | «Mismo sismo, 3 cimentaciones» (ZAPATA) | reel | 5.311 | 18 | 4 | 22 | 7 |
+| Mié 4 | 6 uniones viga de acero–columna de hormigón (ACERO) | reel | 2.070 | 8 | 9 | 42 | 8 |
+| Mar 3 | «Le hice 5 preguntas a mi modelo de Revit» (WORKSHOP) | carrusel | 1.873 | 6 | 0 | 2 | 2 |
+| Vie 6 | 40 mm de recubrimiento (ZAPATA) | post | 9.597 | 1 | 0 | 35 | 3 |
+| Lun 2 | «Perdió el concurso antes de presentar» (fuera del plan) | imagen | 3.666 | 0 | 2 | 13 | 0 |
+| Lun 2 | Día de Difuntos: 6 hábitos que el BIM enterró (NIVEL) | carrusel | 2.379 | 0 | 0 | 8 | 0 |
+| Jue 5 | Para quién es el workshop (WORKSHOP) | reel | 628 | 0 | 0 | 2 | 1 |
+
+**Medianas por pieza**
+
+| Periodo | Vistas | Comentarios | Guardados |
+|---|---|---|---|
+| Esta semana (7 piezas) | 2.379 | 1 | 13 |
+| 4 semanas anteriores (27 piezas) | 2.500 | 2 | 7 |
+
+**Lecciones**
+1. **Los dos videos de estructuras se llevaron la conversación.** «Mismo sismo, 3 cimentaciones» (18 comentarios, 4× la mediana de reels) y las 6 uniones (8 comentarios, 42 guardados, 9 comentarios en Facebook) juntan 39 de los 48 comentarios de la semana contando Facebook. Cimentaciones repite lo del 19-oct. El dato técnico de estructuras con una pregunta concreta es lo que conversa; no hace falta producir un formato nuevo para eso.
+2. **El post de 40 mm tuvo el mayor alcance (9.597) pero solo 1 comentario.** Se guarda (35), pero no invita a responder. Un dato suelto necesita una pregunta que acuse un hábito («¿cuánto le pones tú?») para convertir vistas en conversación.
+3. **Las piezas del workshop siguen sin conversar en reel.** «Para quién es» sacó 628 vistas y 0 comentarios, como la demo del 31-oct. El carrusel de las 5 preguntas sí tuvo 6 comentarios. Al workshop le sirve mostrar lo que hace la IA, no explicar el evento. Los registros se miden en la landing y la pauta, no en los comentarios.
+4. **La efeméride no funcionó.** El carrusel de Día de Difuntos quedó por debajo de la mediana de carruseles de octubre (2.379 vistas y 0 comentarios contra 3.047 y 6).
+5. **Se publicó todo lo planificado.** Salieron las 6 piezas del plan del 2 al 7-nov en su día, más 1 imagen fuera del plan. Esta semana el cuello de botella no fue publicar.
+
+**Plan contra lo publicado (feed):** 6 de 6 piezas planificadas, todas en su fecha. Fuera del plan salió «Perdió el concurso antes de presentar» (2-nov).
+
+**Historias:** 11 frames en la semana y 19 respuestas, 17 de ellas en un solo frame del domingo 8 (1.256 de alcance). De lunes a viernes salieron 10 frames con 2 respuestas: los días hábiles casi no conversaron.
+
+**Embudos (7 días, contactos nuevos al bot / accesos nuevos)**
+
+| Embudo | Bot | Accesos |
+|---|---|---|
+| ZAPATA | 15 | 9 |
+| ACERO | 9 | 4 |
+| NIVEL | 92 | 5 |
+| MEMORIA | 0 | 0 |
+| COTIZA | 0 | 1 |
+
+ZAPATA y ACERO suben con las piezas de estructuras de la semana. NIVEL sigue con muchos contactos y pocos accesos al test (92 contra 5): sigue pendiente revisar qué palabras sueltas lo disparan.
+
+**Ajustes que se aplican**
+- Ningún cambio de formato en el calendario: los dos ganadores son videos de valor de octubre que ya estaban dentro de noviembre.
+- A la chuleta visual le falta una segunda pieza con 7 días para decidir. Las 6 uniones entran en la revisión del 30-nov junto a la chuleta de perfiles.
+- Para el workshop, de aquí al 17 conviene reforzar con piezas que muestren la IA respondiendo, al estilo del carrusel de las 5 preguntas, y no con reels que expliquen el evento.
