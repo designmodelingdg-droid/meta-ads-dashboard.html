@@ -16,6 +16,9 @@ def main():
         md.append(f"\n## {c['name']} ({len(vs)} videos, {hms(sum(v['dur'] for v in vs))})\n")
         md += [f"- {v['id']} · {hms(v['dur'])} · {v['name']}" for v in sorted(vs, key=lambda v: v['creado'])]
         print(f"{c['name']}: {len(vs)}", flush=True)
+    todos = paginar('/me/videos', 'uri,name,duration,created_time', 6000)
+    md.append(f"\n## TODOS LOS VIDEOS ({len(todos)})\n")
+    md += [f"- {v['uri'].split('/')[-1]} · {hms(v.get('duration',0))} · {v.get('created_time','')[:10]} · {v['name']}" for v in sorted(todos, key=lambda v: v.get('created_time',''))]
     json.dump(out, open('vimeo-clips/indice/carpetas.json', 'w'), ensure_ascii=False, indent=1)
     open('vimeo-clips/indice/carpetas.md', 'w').write('\n'.join(md) + '\n')
 
