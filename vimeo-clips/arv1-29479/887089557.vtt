@@ -1,0 +1,9145 @@
+WEBVTT
+
+1
+00:00:02.540 --> 00:00:04.360
+Buenas noches estimados como están,
+
+2
+00:00:04.390 --> 00:00:07.320
+pero se encuentren muy, muy bien el día de hoy,
+
+3
+00:00:07.320 --> 00:00:12.160
+30 de mayo de para nuestra clase número tres,
+
+4
+00:00:12.660 --> 00:00:16.120
+la sé que hemos ido desarrollando un proyecto que hemos.
+
+5
+00:00:16.610 --> 00:00:19.720
+Hemos ido desarrollando perdón, eh,
+
+6
+00:00:21.000 --> 00:00:23.760
+a partir de la clase del día, domingo antes,
+
+7
+00:00:23.980 --> 00:00:25.440
+por favor de comenzar.
+
+8
+00:00:25.440 --> 00:00:29.240
+Como siempre hago la la consulta
+
+9
+00:00:29.780 --> 00:00:31.560
+se está visualizando la pantalla.
+
+10
+00:00:31.560 --> 00:00:33.600
+Me están escuchando sin ningún problema.
+
+11
+00:00:36.690 --> 00:00:40.650
+A ver. Buenas noches, Samuel.
+
+12
+00:00:41.350 --> 00:00:43.050
+Buenas noches. Algo perfecto.
+
+13
+00:00:43.130 --> 00:00:46.650
+Buenas noches, Julián unas noches a a todos.
+
+14
+00:00:47.880 --> 00:00:49.930
+Carmela Jonathan y todo lo que
+
+15
+00:00:52.120 --> 00:00:54.010
+alumnos que se encuentran en la sala.
+
+16
+00:00:55.020 --> 00:00:59.450
+Listo. Perfecto. Gracias por confirma okey y todo en orden.
+
+17
+00:00:59.450 --> 00:01:02.450
+Perfecto, rub, buena, buenas noches, be bilingües.
+
+18
+00:01:02.450 --> 00:01:03.930
+Noches Daniel. Buenas noches,
+
+19
+00:01:04.630 --> 00:01:07.570
+eh, continuamos.
+
+20
+00:01:07.570 --> 00:01:10.290
+Continuamos con lo que habíamos desarrollado ojo o quiero
+
+21
+00:01:11.260 --> 00:01:13.530
+antes de arrancar, porque yo sé que varios me estaba
+
+22
+00:01:13.730 --> 00:01:17.090
+haciendo la pregunta con respecto a, eh,
+
+23
+00:01:17.390 --> 00:01:21.110
+de me que un segundo, voy a pausar esto
+
+24
+00:01:22.510 --> 00:01:23.670
+y voy a ahora.
+
+25
+00:01:23.670 --> 00:01:26.990
+Sí, eh? Me han estado haciendo la pregunta con respecto a lo
+
+26
+00:01:26.990 --> 00:01:31.590
+que es el tema de de el modelo
+
+27
+00:01:32.090 --> 00:01:33.190
+ojo en modelo.
+
+28
+00:01:33.190 --> 00:01:35.630
+Yo lo estoy trabajando. Estas primeras sesiones en la
+
+29
+00:01:35.630 --> 00:01:39.070
+versión ya, eh?
+
+30
+00:01:40.730 --> 00:01:43.750
+No lo voy a subir al class run todavía el modelo en reg
+
+31
+00:01:44.170 --> 00:01:48.110
+porque uno lo tengo que pasar una versión antigua dos
+
+32
+00:01:48.970 --> 00:01:52.110
+porque yo quiero que ustedes poco a poco vayan desarrollando
+
+33
+00:01:52.110 --> 00:01:53.310
+su modelo desde cero.
+
+34
+00:01:53.930 --> 00:01:57.590
+No se preocupe si todavía no están en este punto como tal
+
+35
+00:01:58.440 --> 00:01:59.910
+igual queda mucho tiempo.
+
+36
+00:02:00.270 --> 00:02:03.990
+Y también yo voy desarrollando progresivamente los elementos
+
+37
+00:02:03.990 --> 00:02:05.670
+del domingo armado ya
+
+38
+00:02:06.360 --> 00:02:10.350
+luego de que aproximadamente tengamos una o lleguemos a la
+
+39
+00:02:10.350 --> 00:02:11.470
+mitad de la formación ahí.
+
+40
+00:02:11.470 --> 00:02:13.510
+Yo voy a compartir el modelo para que ustedes
+
+41
+00:02:14.110 --> 00:02:16.790
+comparen con lo que hayan desarrollado hasta el memento.
+
+42
+00:02:16.980 --> 00:02:20.230
+Unas noches salina y buenas noches, Gerardo.
+
+43
+00:02:20.830 --> 00:02:23.070
+Entonces esa es la idea. Eso es un poco la idea.
+
+44
+00:02:23.100 --> 00:02:26.470
+Okay, de igual forma, no se preocupe, vuelvo y repito,
+
+45
+00:02:26.850 --> 00:02:29.470
+no és necesariamente tienen que ir todas las clases en
+
+46
+00:02:29.470 --> 00:02:30.550
+la instancia que yo voy.
+
+47
+00:02:30.890 --> 00:02:34.470
+La idea es que ustedes presten mucha atención a lo que yo
+
+48
+00:02:34.470 --> 00:02:36.870
+voy desarrollando y luego lo van practicando, pero
+
+49
+00:02:37.650 --> 00:02:41.510
+la práctica dicen por ahí que la práctica el maestro y eso
+
+50
+00:02:41.690 --> 00:02:46.310
+es verdad, eso es un, digamos, eso es innegable.
+
+51
+00:02:46.470 --> 00:02:49.270
+Entonces, más allá de que quieran ir a la par en las
+
+52
+00:02:49.270 --> 00:02:52.990
+sesiones en vivo, mi recomendación es que ustedes con calma
+
+53
+00:02:52.990 --> 00:02:56.270
+lo vayan desarrollando igual de igual manera.
+
+54
+00:02:56.270 --> 00:02:57.990
+Recuerden que todas las clases son
+
+55
+00:02:57.990 --> 00:02:59.490
+compartidas en el virtual.
+
+56
+00:03:00.000 --> 00:03:03.840
+Entonces no, no se tienen que preocupar por esto. Okey?
+
+57
+00:03:05.080 --> 00:03:06.840
+Entonces, dicho esto, nos habíamos quedado
+
+58
+00:03:07.790 --> 00:03:09.640
+este punto en la clase del día.
+
+59
+00:03:11.660 --> 00:03:15.110
+Esto fue la clase del día domingo, sí, domingo
+
+60
+00:03:16.470 --> 00:03:20.560
+domingo, que fue domingo 29 de mayo, okey?
+
+61
+00:03:21.000 --> 00:03:23.280
+O sea, hoy 31 de mayo, vamos a continuar.
+
+62
+00:03:23.850 --> 00:03:26.200
+Ahora habíamos hecho lo que son las cimentaciones.
+
+63
+00:03:26.200 --> 00:03:28.320
+Yo voy a trabajar con varios modelos de tipos de
+
+64
+00:03:28.320 --> 00:03:31.400
+cimentaciones zapatas excéntricas, eh?
+
+65
+00:03:31.440 --> 00:03:35.000
+Y cimentaciones excéntricas o colindantes.
+
+66
+00:03:35.000 --> 00:03:38.810
+También vamos a trabajar con lo que viene a hacer la
+
+67
+00:03:39.600 --> 00:03:42.610
+losa de cimentación cimentaciones con vigas de equilibrio
+
+68
+00:03:42.610 --> 00:03:44.930
+vigas de cimentaciones así vamos a estar trabajando con
+
+69
+00:03:44.930 --> 00:03:48.290
+varios modelos que nos van a permitir desarrollar
+
+70
+00:03:49.040 --> 00:03:51.730
+nuestro proyecto de una mejor manera ya.
+
+71
+00:03:52.490 --> 00:03:54.650
+Entonces, qué pasa, por ejemplo,
+
+72
+00:03:54.880 --> 00:03:56.370
+todo lo que están viendo acá,
+
+73
+00:03:56.790 --> 00:04:01.410
+si todo lo que están viendo acá, yo este hemos desarrollado,
+
+74
+00:04:02.050 --> 00:04:04.890
+básicamente fue este eje,
+
+75
+00:04:06.220 --> 00:04:09.400
+si estaba acá y este ya
+
+76
+00:04:10.320 --> 00:04:12.770
+desarrollamos las zapatos de esas dos,
+
+77
+00:04:12.770 --> 00:04:16.170
+intercepciones lo que viene a hacer, voy a regresarme aquí
+
+78
+00:04:16.870 --> 00:04:19.090
+lo que viene a hacer como tal o perdón.
+
+79
+00:04:19.400 --> 00:04:21.850
+Mira este eje corrijo,
+
+80
+00:04:22.520 --> 00:04:25.010
+esta zapata y estos zapata estos puntos.
+
+81
+00:04:25.640 --> 00:04:28.650
+Okey, eh, si ustedes se dan cuenta,
+
+82
+00:04:29.950 --> 00:04:31.530
+son los elementos que tenemos.
+
+83
+00:04:32.130 --> 00:04:34.410
+F, f, f, c
+
+84
+00:04:35.370 --> 00:04:37.370
+y f ocho.
+
+85
+00:04:38.580 --> 00:04:41.250
+Ahora yo voy a seguir desarrollando varios elementos.
+
+86
+00:04:41.250 --> 00:04:44.450
+Yo voy a desarrollar ahora y las zapatas.
+
+87
+00:04:44.550 --> 00:04:47.850
+Voy a continuar con que las zapatas de esta,
+
+88
+00:04:49.040 --> 00:04:51.870
+estas zapatas y esta zapata van a hacer las mismas
+
+89
+00:04:51.870 --> 00:04:54.510
+dimensiones que hemos ido desarrollando.
+
+90
+00:04:54.510 --> 00:04:56.750
+Ya van a ver el sentido que yo le voy a ir dando.
+
+91
+00:04:56.900 --> 00:05:01.750
+Okay, entonces las zapatas f, cinco, f y f
+
+92
+00:05:05.150 --> 00:05:08.230
+y c 10 van a tener la misma dimensión con las cuales hemos
+
+93
+00:05:08.390 --> 00:05:09.750
+ido trabajando, desarrollando,
+
+94
+00:05:10.130 --> 00:05:12.750
+que fue la que desarrollemos en la clase interior que tenía
+
+95
+00:05:12.770 --> 00:05:15.150
+uno 80 por uno 50 por cero 40.
+
+96
+00:05:16.530 --> 00:05:20.820
+Entonces este zapata que está acá, yo la voy a copiar.
+
+97
+00:05:21.320 --> 00:05:24.260
+Sí, y la voy seleccionar primero o la
+
+98
+00:05:24.260 --> 00:05:25.340
+voy a seleccionar primero.
+
+99
+00:05:26.130 --> 00:05:27.700
+Okay, estoy en el mismo nivel,
+
+100
+00:05:28.280 --> 00:05:31.300
+la voy a seleccionar primero y la voy a copiar de este
+
+101
+00:05:31.300 --> 00:05:32.940
+punto a este punto.
+
+102
+00:05:33.810 --> 00:05:37.500
+Okey, mi segundo, mientras sigo emitiendo los participantes,
+
+103
+00:05:38.130 --> 00:05:41.940
+esas zapatas adicionalmente la voy a copiar
+
+104
+00:05:42.570 --> 00:05:46.620
+para los puntos nueve y 10.
+
+105
+00:05:48.230 --> 00:05:49.640
+Okay, eh? Es decir,
+
+106
+00:05:49.650 --> 00:05:52.800
+estoy obteniendo las zapatas de esta zona cinco,
+
+107
+00:05:54.400 --> 00:05:56.060
+la nueve y la 10.
+
+108
+00:05:56.110 --> 00:05:59.460
+Estas tres zapatas que nos hacían, eh falta.
+
+109
+00:05:59.880 --> 00:06:03.460
+Ok, entonces, adicionalmente, ahora lo que voy a hacer,
+
+110
+00:06:03.570 --> 00:06:06.060
+esas mismas zapatas que he copiado en el eje
+
+111
+00:06:07.530 --> 00:06:08.750
+eh, f.
+
+112
+00:06:09.120 --> 00:06:11.670
+Ahora lo voy a hacer en el e g c,
+
+113
+00:06:11.970 --> 00:06:15.830
+que fueron ver estas zapatas que están acá para seleccionar
+
+114
+00:06:15.910 --> 00:06:19.990
+varios elementos al mismo tiempo con la tecla control,
+
+115
+00:06:20.130 --> 00:06:22.870
+van a dejar presionado la tecla control, ok?
+
+116
+00:06:23.190 --> 00:06:24.750
+Y van ahí dando click, click,
+
+117
+00:06:24.750 --> 00:06:27.190
+click para seleccionar varios elementos al mismo tiempo.
+
+118
+00:06:27.880 --> 00:06:30.350
+Dejan presionado la tecla control. Sí?
+
+119
+00:06:30.750 --> 00:06:34.030
+Y vean que puedo seleccionar más de un elemento al mismo
+
+120
+00:06:34.070 --> 00:06:38.200
+tiempo y más de un elemento al mismo tiempo.
+
+121
+00:06:38.480 --> 00:06:42.600
+Entonces seleccionó las zapatas y copio de este
+
+122
+00:06:42.600 --> 00:06:44.000
+punto a este punto.
+
+123
+00:06:44.670 --> 00:06:49.000
+Okey, esto es solo un tipo ojo de zapata,
+
+124
+00:06:49.000 --> 00:06:51.200
+que es la zapata céntrica.
+
+125
+00:06:51.260 --> 00:06:54.280
+Es la zapata donde nosotros tenemos la zapata y la
+
+126
+00:06:54.280 --> 00:06:55.600
+columna está centrada.
+
+127
+00:06:56.170 --> 00:06:58.520
+Estal está centrado. Sí.
+
+128
+00:06:59.250 --> 00:07:04.230
+Ahora, qué sucede una vez que yo sé que este es mi tipo de
+
+129
+00:07:04.250 --> 00:07:07.070
+zapato, vamos a ir desarrollando primero la zapata ci,
+
+130
+00:07:07.180 --> 00:07:09.190
+casi estos zapatas que están viendo acá.
+
+131
+00:07:10.530 --> 00:07:13.240
+Ahora voy a desarrollar lo que es el tema de las
+
+132
+00:07:13.360 --> 00:07:15.240
+columnas o pedestales.
+
+133
+00:07:15.240 --> 00:07:19.280
+Recuerden que una zapata o un sistema de zapata aislada se
+
+134
+00:07:19.280 --> 00:07:22.160
+compone de la misma zapata, pero también se compone
+
+135
+00:07:22.780 --> 00:07:25.440
+de la columna o pedestal que se encuentra por
+
+136
+00:07:26.210 --> 00:07:29.150
+debajo de la cota del terreno,
+
+137
+00:07:29.290 --> 00:07:30.990
+no por debajo de la cota CE CE.
+
+138
+00:07:31.660 --> 00:07:36.510
+Okey. Entonces vamos a generar estas columnas, okey?
+
+139
+00:07:42.060 --> 00:07:44.560
+Sí, sí, sí, Samuel, eso ya lo vamos a.
+
+140
+00:07:45.190 --> 00:07:48.800
+Creo que y yo no sé si fuiste tú, Samuel, otro
+
+141
+00:07:49.670 --> 00:07:51.680
+otro alumno que también co comentó lo del
+
+142
+00:07:53.060 --> 00:07:54.360
+el hormigón de limpieza.
+
+143
+00:07:54.670 --> 00:07:56.040
+Okey. Pero si lo vamos a ver,
+
+144
+00:07:56.100 --> 00:07:58.200
+ya lo vamos desarrollando con carro ya.
+
+145
+00:07:58.880 --> 00:08:01.600
+Y es mejor copiar o hacerlas una por una.
+
+146
+00:08:01.600 --> 00:08:06.090
+Tiene alguna ventaja? No, no, Daniel es lo mismo, eh?
+
+147
+00:08:06.190 --> 00:08:07.570
+Puedes hacerla una por una.
+
+148
+00:08:07.630 --> 00:08:11.410
+Puedes copiarlas como te sientas más cómodo o sea más
+
+149
+00:08:11.410 --> 00:08:14.130
+eficiente para ti, pero no existe
+
+150
+00:08:14.790 --> 00:08:18.330
+una diferencia sustancial entre un método o el otro o que
+
+151
+00:08:18.430 --> 00:08:20.690
+exista un ahorro de tiempo, por decirlo así.
+
+152
+00:08:21.230 --> 00:08:22.650
+No, eh, llegamos a lo mismo.
+
+153
+00:08:23.200 --> 00:08:26.010
+Okey, real méto llegamos a lo mismo. Sí.
+
+154
+00:08:27.090 --> 00:08:31.970
+Entonces, cómo te sientas más cómodo o copiando o generando
+
+155
+00:08:31.970 --> 00:08:33.210
+la una por una?
+
+156
+00:08:33.800 --> 00:08:37.930
+Okey, eh, ahora listo, Daniel.
+
+157
+00:08:38.410 --> 00:08:40.250
+Y ahí también contesto, bueno,
+
+158
+00:08:40.310 --> 00:08:43.520
+ya vamos a contestar también la pregunta esa muy ven,
+
+159
+00:08:43.710 --> 00:08:45.840
+primero vamos a generar estas columnas.
+
+160
+00:08:46.780 --> 00:08:49.840
+Sí. Entonces yo voy a generar estas columnas ojo.
+
+161
+00:08:49.960 --> 00:08:53.480
+Vean que yo tengo una columna rectangular
+
+162
+00:08:55.200 --> 00:08:56.500
+en todos los puntos.
+
+163
+00:08:56.780 --> 00:09:01.020
+Y también tengo, adicionalmente, voy a alejarme un poco
+
+164
+00:09:02.610 --> 00:09:04.070
+que lo pueden ver, eh?
+
+165
+00:09:04.370 --> 00:09:09.360
+Adicionalmente, si yo tengo, eh, una columna circular,
+
+166
+00:09:10.150 --> 00:09:14.810
+es decir, en el eje f ojo en estos es uno,
+
+167
+00:09:14.810 --> 00:09:16.290
+dos y tres, ya lo vamos a trabajar.
+
+168
+00:09:16.290 --> 00:09:21.050
+Pero en el e f desde el e cuatro al eje 10, tengo
+
+169
+00:09:22.330 --> 00:09:25.470
+cuatro columnas rectangulares y una circular.
+
+170
+00:09:25.670 --> 00:09:27.150
+Y en el fc es lo mismo.
+
+171
+00:09:27.150 --> 00:09:29.310
+Tengo cuatro columnas rectangulares
+
+172
+00:09:31.120 --> 00:09:32.200
+y una circular.
+
+173
+00:09:32.930 --> 00:09:36.380
+Estas sons circular una circular, okey.
+
+174
+00:09:37.340 --> 00:09:39.460
+Entonces, como las columnas, fíjense,
+
+175
+00:09:39.460 --> 00:09:42.460
+van a tener la misma dimensión en el e g
+
+176
+00:09:43.020 --> 00:09:45.060
+f y en ELC.
+
+177
+00:09:45.580 --> 00:09:48.940
+Entonces, primero creo las columnas del g y luego lo que
+
+178
+00:09:48.940 --> 00:09:53.140
+hago, esc, copiar y da exactamente lo mismo.
+
+179
+00:09:53.140 --> 00:09:56.060
+Si yo creara las columnas en el BC, sí,
+
+180
+00:09:56.200 --> 00:09:58.420
+en este caso las voy a copiar porque son de la
+
+181
+00:09:58.420 --> 00:09:59.580
+misma dimensión.
+
+182
+00:10:00.610 --> 00:10:03.150
+Yo voy a trabajar con estas columnas.
+
+183
+00:10:04.050 --> 00:10:07.710
+Voy a mantener lo que es la sección que es de 40
+
+184
+00:10:07.890 --> 00:10:09.270
+por 40, okey?
+
+185
+00:10:09.910 --> 00:10:14.430
+Y si ustedes se dan cuenta, déjenme lo cara acá,
+
+186
+00:10:14.850 --> 00:10:18.640
+no voy a borrar.
+
+187
+00:10:20.650 --> 00:10:22.060
+Este es mi cero cero.
+
+188
+00:10:22.730 --> 00:10:25.510
+Okay, tengo el nivel acá
+
+189
+00:10:26.770 --> 00:10:31.190
+de uno como c uno como, okay,
+
+190
+00:10:31.600 --> 00:10:33.950
+tengo tal lo que es las zapatas.
+
+191
+00:10:35.660 --> 00:10:38.060
+Y tengo tal lo que es la columna golpe,
+
+192
+00:10:38.480 --> 00:10:40.180
+tal o que se conoce como pesta
+
+193
+00:10:40.810 --> 00:10:43.660
+este pedestal en una de las dimensiones.
+
+194
+00:10:43.720 --> 00:10:48.170
+La sección rectangular va a ser de por okey.
+
+195
+00:10:48.230 --> 00:10:52.330
+Es decir, vamos a tener una columna así rectangular por
+
+196
+00:10:53.490 --> 00:10:55.490
+y en otras de las dimensiones.
+
+197
+00:10:55.490 --> 00:11:00.010
+Va a ser una columna circular de diámetro 40. Sí, sé 40.
+
+198
+00:11:00.030 --> 00:11:03.050
+Es decir, tengo un diámetro de 40.
+
+199
+00:11:03.340 --> 00:11:05.890
+Todas las dimensiones son centímetros.
+
+200
+00:11:05.900 --> 00:11:09.450
+Estoy hablando de centímetro estilamos en las estructuras de
+
+201
+00:11:09.450 --> 00:11:11.660
+hormigón a, eh?
+
+202
+00:11:11.720 --> 00:11:14.300
+Las dimensiones en las secciones transversales expresarlas
+
+203
+00:11:14.300 --> 00:11:17.460
+en centímetros, en la estructura de cero es otro mundo.
+
+204
+00:11:17.520 --> 00:11:21.300
+Es otro tema. Pero en hormigón estilamos comúnmente ojo no
+
+205
+00:11:21.300 --> 00:11:24.300
+es una regla fija, pero comúnmente manejamos las dimensiones
+
+206
+00:11:24.960 --> 00:11:26.300
+en centímetros, okey?
+
+207
+00:11:26.460 --> 00:11:27.540
+Y eso es lo que vamos a hacer.
+
+208
+00:11:28.770 --> 00:11:31.450
+Entonces, como yo genero, fíjense que tengo acá
+
+209
+00:11:32.390 --> 00:11:33.790
+y los elementos.
+
+210
+00:11:34.350 --> 00:11:39.190
+Fíjense que la única columna que varía es la columna del e g
+
+211
+00:11:39.450 --> 00:11:40.510
+que son circulares.
+
+212
+00:11:40.570 --> 00:11:42.070
+Las demás son rectangulares.
+
+213
+00:11:42.490 --> 00:11:45.350
+Es como yo genero las columnas, las columnas,
+
+214
+00:11:45.350 --> 00:11:47.990
+yo la genero en la parte superior, ojo
+
+215
+00:11:48.910 --> 00:11:51.250
+en la parte superior, eh?
+
+216
+00:11:51.250 --> 00:11:54.760
+Donde dice estructura, sí, o sea,
+
+217
+00:11:54.760 --> 00:11:57.760
+nos vamos a repetir dos veces la pestaña estructura,
+
+218
+00:11:58.530 --> 00:12:00.560
+estructura y pilar.
+
+219
+00:12:01.220 --> 00:12:03.720
+El atajo de pilar es c l.
+
+220
+00:12:04.640 --> 00:12:06.820
+Sí, ya los atajos, por favor.
+
+221
+00:12:07.160 --> 00:12:09.420
+El día de mañana, ya les comparto la lista de todos los
+
+222
+00:12:09.420 --> 00:12:10.940
+atajos para que yo lo vayan chequeando.
+
+223
+00:12:10.970 --> 00:12:12.180
+Creo que no la compartir,
+
+224
+00:12:12.180 --> 00:12:14.940
+pero lo voy a compartir para que vayan chequeando todas
+
+225
+00:12:14.940 --> 00:12:16.100
+las listas de atajos.
+
+226
+00:12:16.810 --> 00:12:19.740
+Okey? Entonces, si ustedes quieren modelar una columna
+
+227
+00:12:21.250 --> 00:12:24.530
+o en la traducción que le hace rebi al al español,
+
+228
+00:12:24.580 --> 00:12:29.330
+castellano pilar es el atajo, cl o lo buscan en estructura,
+
+229
+00:12:29.330 --> 00:12:31.330
+estructura y click en pilar.
+
+230
+00:12:31.750 --> 00:12:36.040
+Las dos opciones son completamente, eh, válidas ya.
+
+231
+00:12:37.080 --> 00:12:40.520
+Entonces, fíjense cuando yo le doy click en pilar,
+
+232
+00:12:41.020 --> 00:12:42.880
+ya se me habilitas.
+
+233
+00:12:43.620 --> 00:12:47.680
+Ah, ojo que no quiero seguir hasta lleguemos a esto.
+
+234
+00:12:48.780 --> 00:12:50.230
+Creo que no lo he comentado.
+
+235
+00:12:50.670 --> 00:12:53.030
+Y si no lo co, y si lo coé, lo vuelvo a repetir,
+
+236
+00:12:53.030 --> 00:12:55.470
+guardar el proyecto es súper importante.
+
+237
+00:12:56.010 --> 00:13:00.270
+Hey, guardar el proyecto es súper, súper importante, okey?
+
+238
+00:13:01.020 --> 00:13:04.430
+Para poder guardar el proyecto como todo programa.
+
+239
+00:13:04.770 --> 00:13:07.350
+Sí, en general, como todo software, eh,
+
+240
+00:13:07.390 --> 00:13:08.550
+informático en general,
+
+241
+00:13:09.210 --> 00:13:11.430
+en la parte superior donde dice archivo,
+
+242
+00:13:11.430 --> 00:13:14.070
+hay una opción que dice guardar y guardar cómo?
+
+243
+00:13:14.810 --> 00:13:18.310
+Sí, yo siempre recomiendo la primera vez que ustedes van a
+
+244
+00:13:18.310 --> 00:13:22.270
+guardar un archivo antes de continuar archivo, guardar cómo.
+
+245
+00:13:22.750 --> 00:13:24.390
+Y aquí hay opción que dice proyecto,
+
+246
+00:13:26.110 --> 00:13:27.970
+no lo vamos a abordar como plantilla,
+
+247
+00:13:27.970 --> 00:13:29.890
+sino lo vamos a abordar como un proyecto,
+
+248
+00:13:30.110 --> 00:13:31.650
+un proyecto de Revit.
+
+249
+00:13:32.030 --> 00:13:35.530
+La diferencia entre proyecto y plantilla es que plantilla me
+
+250
+00:13:35.530 --> 00:13:38.690
+permite hacer ciertas configuraciones ojo
+
+251
+00:13:39.990 --> 00:13:44.130
+cuando este tipo de modelo que yo estoy desarrollando se va
+
+252
+00:13:44.130 --> 00:13:47.730
+a repetir en futuras ocasiones con la tipología de la
+
+253
+00:13:47.730 --> 00:13:49.850
+estructura, por ejemplo, como le comenten los
+
+254
+00:13:49.850 --> 00:13:51.050
+sistemas constructivos.
+
+255
+00:13:51.680 --> 00:13:55.170
+Pero si es un proyecto que a priori,
+
+256
+00:13:55.170 --> 00:13:58.330
+yo no sé si lo voy a volver a desarrollar en fu en el futuro
+
+257
+00:13:58.330 --> 00:14:01.330
+con las mismas características, se guarda como proyecto.
+
+258
+00:14:02.090 --> 00:14:03.810
+Y al darle c click aquí en proyecto,
+
+259
+00:14:05.460 --> 00:14:07.640
+van a ir a la carpeta de su preferencia.
+
+260
+00:14:07.750 --> 00:14:09.760
+Esto es indistinto, yo lo voy a guardar acá
+
+261
+00:14:10.280 --> 00:14:11.400
+y lo voy a guardar acá.
+
+262
+00:14:11.400 --> 00:14:13.920
+Voy a poner acá modelo Revit.
+
+263
+00:14:17.390 --> 00:14:20.890
+Sí, a mí me gusta mucho hacer esto, colocar la fecha.
+
+264
+00:14:21.360 --> 00:14:23.970
+Esto ya es cuestión de cada bien, pero a mí me gusta
+
+265
+00:14:25.180 --> 00:14:27.050
+revis hormigón armado.
+
+266
+00:14:27.050 --> 00:14:31.700
+Vamos a poner acá y voy a coloc.
+
+267
+00:14:31.810 --> 00:14:34.920
+Cree esto, ve uno de versión uno ya.
+
+268
+00:14:34.920 --> 00:14:37.640
+Luego va a entender por qué yo le colocó p uno.
+
+269
+00:14:37.760 --> 00:14:40.160
+Y porque se puede modificar varias versiones al mismo
+
+270
+00:14:40.160 --> 00:14:41.320
+tiempo, eh?
+
+271
+00:14:42.090 --> 00:14:44.360
+Luego aquí les va a salir la extensión.
+
+272
+00:14:44.420 --> 00:14:48.840
+La extensión de los archivos Revit es r bt.
+
+273
+00:14:49.980 --> 00:14:53.830
+Si esa la extensión de archivos de rev y hasta ojo,
+
+274
+00:14:54.770 --> 00:14:57.270
+si ustedes se dan cuenta, hay una opción que dice opciones
+
+275
+00:14:58.030 --> 00:15:00.270
+y le doy click aquí en opciones.
+
+276
+00:15:00.570 --> 00:15:04.470
+Me indica cuántas copias de seguridad yo quiero guardar
+
+277
+00:15:05.430 --> 00:15:06.710
+o los famosos bacao.
+
+278
+00:15:07.260 --> 00:15:09.240
+Qué significa? Cada vez que yo le de guardar
+
+279
+00:15:10.000 --> 00:15:11.160
+a mi archivo de REIT?
+
+280
+00:15:11.220 --> 00:15:14.360
+Se van degenerando copias, copias automáticas? Sí.
+
+281
+00:15:14.860 --> 00:15:18.800
+Es decir, por ejemplo, a las ocho y media de la noche,
+
+282
+00:15:18.940 --> 00:15:20.320
+yo le vuelvo a dar, eh,
+
+283
+00:15:20.320 --> 00:15:24.680
+guardar y se generan tres archivos de respaldo con esa hora.
+
+284
+00:15:25.600 --> 00:15:28.440
+Y si yo, a las nueve y medio de la noche, una hora después,
+
+285
+00:15:28.540 --> 00:15:33.240
+le vuelvo a de guardar, entonces básicamente otra vez,
+
+286
+00:15:33.240 --> 00:15:36.720
+me va a generar tres archivos de copias de seguridad a las
+
+287
+00:15:36.810 --> 00:15:39.280
+media la noche y así sucesivamente.
+
+288
+00:15:39.870 --> 00:15:42.280
+Para mí, tres archivos es mucho la verdad.
+
+289
+00:15:42.380 --> 00:15:46.320
+Yo trabajo con uno con un archivo de seguridad de respaldo.
+
+290
+00:15:46.320 --> 00:15:47.880
+Está bien, porque es un baca,
+
+291
+00:15:47.880 --> 00:15:50.400
+pues es una copia de la chivo original, okey?
+
+292
+00:15:50.960 --> 00:15:54.130
+Y le damos a aceptar y le damos guardar.
+
+293
+00:15:54.950 --> 00:15:58.490
+Sí, cuando le damos guardar en la parte superior,
+
+294
+00:15:58.730 --> 00:16:00.410
+vean que va a salir guardando el archivo
+
+295
+00:16:00.950 --> 00:16:05.210
+en la parte superior donde dice la fecha ya, eh,
+
+296
+00:16:05.520 --> 00:16:07.010
+perdón, donde sale el nombre,
+
+297
+00:16:07.010 --> 00:16:08.970
+tiene que salir el nombre del archivo.
+
+298
+00:16:10.380 --> 00:16:12.240
+Eso significa que ya se guardó el archivo.
+
+299
+00:16:12.600 --> 00:16:15.160
+Y adicionalmente, si ustedes van a la carpeta,
+
+300
+00:16:16.570 --> 00:16:21.130
+me buscara acá la carpeta donde yo lo
+
+301
+00:16:21.270 --> 00:16:24.850
+guarde, que fue esta carpeta acá.
+
+302
+00:16:25.400 --> 00:16:28.930
+Vean que ahorita no me sale el archivo de baca.
+
+303
+00:16:29.430 --> 00:16:33.010
+Cuando yo, en algún memento le vuelva a dar guardar
+
+304
+00:16:33.690 --> 00:16:35.450
+y empiezan los archivos de respaldo.
+
+305
+00:16:35.880 --> 00:16:38.330
+Okey? Sí. Si yo le vuelvo a dar guardar un poco más
+
+306
+00:16:38.490 --> 00:16:41.090
+adelante, aquí empiezan los archivos de respaldo.
+
+307
+00:16:41.840 --> 00:16:44.850
+Esos archivos de respaldo tienen el nombre original
+
+308
+00:16:45.810 --> 00:16:48.530
+y tienen una nomenclatura uno,
+
+309
+00:16:49.700 --> 00:16:51.200
+ese fue el primer archivo de respaldo.
+
+310
+00:16:51.200 --> 00:16:53.880
+Ustedes le vuelvan a dar vuelta a dar guardar, perdón,
+
+311
+00:16:54.500 --> 00:16:57.200
+dos horas después, va a salir el mismo nombre y
+
+312
+00:16:58.700 --> 00:17:00.440
+dos y así sucesivamente.
+
+313
+00:17:00.900 --> 00:17:04.000
+Sí, fíjense que los archivos debit el tamaño.
+
+314
+00:17:05.340 --> 00:17:07.120
+Yo no he hecho mucho hasta el memento
+
+315
+00:17:08.060 --> 00:17:10.200
+en cuestión de elementos, pero REIT,
+
+316
+00:17:10.420 --> 00:17:14.360
+los archivos son pesados, aunque apenas ya sin hacer mucho,
+
+317
+00:17:14.360 --> 00:17:17.080
+tengo kilo, vais okey?
+
+318
+00:17:17.080 --> 00:17:21.760
+En los siete mega mientras el modelo se va cargando,
+
+319
+00:17:22.030 --> 00:17:24.640
+este tamaño va a ir incrementando lógicamente.
+
+320
+00:17:24.720 --> 00:17:28.060
+Y puede llegar a, eh, ocupar
+
+321
+00:17:29.240 --> 00:17:32.140
+considerablemente espacio en su disco.
+
+322
+00:17:32.300 --> 00:17:34.620
+Entonces, cuando estén trabajando en revis,
+
+323
+00:17:34.760 --> 00:17:37.700
+por lo menos dejen dos, tres gigs va de espacio
+
+324
+00:17:38.320 --> 00:17:41.420
+porque se van a sorprender que hay archivos que pueden
+
+325
+00:17:41.420 --> 00:17:43.940
+llegar inclusive hasta un del peso.
+
+326
+00:17:44.680 --> 00:17:46.980
+Ok, entonces ojo con eso,
+
+327
+00:17:47.040 --> 00:17:48.980
+por porque si yo estoy guardando y no,
+
+328
+00:17:48.980 --> 00:17:51.310
+y no tengo espacio en el disco duro o en la unidad donde
+
+329
+00:17:51.310 --> 00:17:52.430
+estoy guardando el archivo,
+
+330
+00:17:53.200 --> 00:17:55.120
+entonces no me va a permitir guardar el archivo.
+
+331
+00:17:55.320 --> 00:17:57.360
+Y básicamente no estoy haciendo nada ya.
+
+332
+00:17:57.560 --> 00:18:00.800
+Entonces, tomar en cuenta el peso de los archivos que puedes
+
+333
+00:18:00.800 --> 00:18:04.800
+generar rev de ejemplo, lo general, un mínimo mínimo,
+
+334
+00:18:05.070 --> 00:18:09.120
+unos dos gig bye o unos tres gig va despacio.
+
+335
+00:18:09.580 --> 00:18:13.760
+Por qué? Porque los baos también tienen el mismo peso de la
+
+336
+00:18:13.760 --> 00:18:14.920
+archivo original un poquito menos,
+
+337
+00:18:14.920 --> 00:18:16.640
+pero tienen el mismo peso de la archi original.
+
+338
+00:18:17.460 --> 00:18:20.240
+Si tienen 20,000 kilo, lo va
+
+339
+00:18:21.020 --> 00:18:23.240
+en el cheal en la copia,
+
+340
+00:18:23.240 --> 00:18:25.320
+va a ser otros 20,000 kilo lovaas así.
+
+341
+00:18:25.560 --> 00:18:27.400
+Entonces va comiendo un poquito en la memoria.
+
+342
+00:18:27.870 --> 00:18:32.240
+Okey, quise comentar esto antes que se me pasar el tema
+
+343
+00:18:32.240 --> 00:18:34.000
+porque no había guardado el archi ya.
+
+344
+00:18:35.040 --> 00:18:37.360
+Entonces regresamos a la opción a acá de estructura
+
+345
+00:18:38.480 --> 00:18:39.920
+y le damos click en pilar.
+
+346
+00:18:39.920 --> 00:18:42.120
+Pero qué pasa esto?
+
+347
+00:18:43.070 --> 00:18:47.830
+Debemos entender yo personalmente la mayoría de los
+
+348
+00:18:47.830 --> 00:18:51.830
+elementos no modelo en planta, columnas, vigas, zapatas,
+
+349
+00:18:51.940 --> 00:18:55.070
+todo va a ver ciertos elementos que lo voy modelar en tres b
+
+350
+00:18:55.390 --> 00:18:57.270
+y que les voy a mostrar cómo se modela tres d
+
+351
+00:18:57.270 --> 00:18:58.670
+inclusive lo va a hacer con las vigas.
+
+352
+00:18:59.260 --> 00:19:01.230
+Pero lo que es zapatas y columnas,
+
+353
+00:19:01.250 --> 00:19:03.430
+yo lo modelo en planta es mucho más fácil.
+
+354
+00:19:03.770 --> 00:19:06.310
+El modelado es mucho más práctico ya
+
+355
+00:19:08.890 --> 00:19:11.200
+donde ustedes van a modelar elementos,
+
+356
+00:19:11.200 --> 00:19:13.480
+es donde se tienen que ubicar en el nivel.
+
+357
+00:19:13.960 --> 00:19:18.900
+Entonces yo acá me voy a ubicar en
+
+358
+00:19:18.900 --> 00:19:20.100
+el nivel planta baja.
+
+359
+00:19:20.180 --> 00:19:22.700
+Y voy a entender que el cero cero
+
+360
+00:19:23.760 --> 00:19:28.180
+es donde yo voy a estar parado ubicado y va a llegar hasta
+
+361
+00:19:28.180 --> 00:19:31.960
+el nivel de desplante de f, sí.
+
+362
+00:19:33.250 --> 00:19:36.850
+Y luego tengo que hacer ciertas o ojos ciertas,
+
+363
+00:19:37.200 --> 00:19:40.090
+ciertos cambios o pequeños cambios.
+
+364
+00:19:40.520 --> 00:19:44.290
+Okey que ya vamos a entender cómo se manejan esos cambios.
+
+365
+00:19:44.670 --> 00:19:48.730
+Ok, entonces la columna va ir del CE CE hasta el nivel de
+
+366
+00:19:48.730 --> 00:19:51.290
+desplante que esto no es del todo cierto,
+
+367
+00:19:51.400 --> 00:19:52.890
+pero lo voy a dejar así.
+
+368
+00:19:53.170 --> 00:19:54.530
+Y luego lo vamos a modificar.
+
+369
+00:19:55.330 --> 00:19:56.570
+Entonces vamos del cero cero,
+
+370
+00:19:56.570 --> 00:19:58.410
+planta baja hasta nivel de desplante.
+
+371
+00:19:58.530 --> 00:20:02.100
+Perfecto. Las columnas que tengo que modelar,
+
+372
+00:20:02.720 --> 00:20:06.420
+sí que va a ser el pedestal, van a ser en el e cuatro
+
+373
+00:20:08.250 --> 00:20:09.270
+en el e g.
+
+374
+00:20:14.390 --> 00:20:17.970
+Ahora tienen que estar muy,
+
+375
+00:20:18.030 --> 00:20:20.770
+muy atentos que la columna que yo vaya a modelar en el ej
+
+376
+00:20:21.470 --> 00:20:25.170
+es la columna circular, el resto rectangular ya.
+
+377
+00:20:26.010 --> 00:20:29.650
+Entonces le damos c click aquí en pilar y automáticamente se
+
+378
+00:20:29.650 --> 00:20:32.740
+despliegue una opción acá en la parte superior,
+
+379
+00:20:33.160 --> 00:20:36.070
+que son las familias de sistemas, es decir,
+
+380
+00:20:36.090 --> 00:20:40.280
+las que vienen por defecto en red y vienen acá.
+
+381
+00:20:40.940 --> 00:20:43.040
+Mmm, dos familias principales
+
+382
+00:20:43.680 --> 00:20:48.590
+perfiles de hacer universales que son los perfiles y
+
+383
+00:20:49.230 --> 00:20:53.150
+w los perfiles y no comúnmente conocidos
+
+384
+00:20:53.990 --> 00:20:55.470
+y los perfiles en hormigón.
+
+385
+00:20:56.040 --> 00:20:57.550
+Estos son las dos familias de
+
+386
+00:20:57.550 --> 00:20:58.950
+sistemas que vienen por defecto.
+
+387
+00:21:00.660 --> 00:21:04.990
+Digamos, tenemos la suerte ahorita que estos dos, eh,
+
+388
+00:21:05.170 --> 00:21:07.550
+que la familia de hormigón rectangular me sirve
+
+389
+00:21:08.310 --> 00:21:10.170
+porque básicamente les voy a cambiar.
+
+390
+00:21:10.170 --> 00:21:12.410
+Le la dimensión una columna de 40.
+
+391
+00:21:12.430 --> 00:21:13.770
+Por entonces,
+
+392
+00:21:13.770 --> 00:21:16.370
+cualquiera de estos tres familias por sistema me sirve.
+
+393
+00:21:16.660 --> 00:21:18.250
+Sólo le cambio la dimensión.
+
+394
+00:21:18.830 --> 00:21:22.690
+Por ejemplo, selecciono uno y le do y editar tipo
+
+395
+00:21:24.150 --> 00:21:28.150
+y en editar tipo, voy duplicar porque a mí no me interesa
+
+396
+00:21:28.990 --> 00:21:32.550
+trabajar con las familias de sistema porque luego en otro
+
+397
+00:21:32.830 --> 00:21:35.350
+proyecto me va a salir las mismas dimensiones que
+
+398
+00:21:35.350 --> 00:21:36.510
+yo haya modificado acá.
+
+399
+00:21:36.510 --> 00:21:38.110
+Yo no quiero eso. Por lo tanto,
+
+400
+00:21:38.110 --> 00:21:40.670
+siempre siempre lo que hacemos es duplicar.
+
+401
+00:21:41.210 --> 00:21:42.870
+Ya lo que hacemos es duplicar.
+
+402
+00:21:43.310 --> 00:21:45.230
+Y al darle click en duplicar,
+
+403
+00:21:46.190 --> 00:21:49.160
+colocamos un nombre representativo, por ejemplo, se uno,
+
+404
+00:21:51.470 --> 00:21:54.730
+le doy a aceptar y cambiamos la base CE
+
+405
+00:21:56.600 --> 00:22:01.320
+y la altura cero, entendiendo que si hacemos un corte
+
+406
+00:22:01.420 --> 00:22:03.600
+de la columna rectangular, esta es la base
+
+407
+00:22:04.500 --> 00:22:06.450
+de la altura, okey?
+
+408
+00:22:08.190 --> 00:22:12.910
+Y le voy a dar click acá en aplicar aceptar.
+
+409
+00:22:13.650 --> 00:22:17.190
+Sí, y si yo me acerco, me sale esta columna. Sí.
+
+410
+00:22:18.030 --> 00:22:19.070
+Y ahora la columna,
+
+411
+00:22:19.490 --> 00:22:23.550
+yo la voy a conectar por profundidad porque por profundidad,
+
+412
+00:22:24.500 --> 00:22:28.680
+cuando yo voy a modelar la columna de arriba hacia abajo,
+
+413
+00:22:28.860 --> 00:22:32.120
+es profundidad de abajo hacia arriba, es altura.
+
+414
+00:22:33.450 --> 00:22:36.330
+Entonces yo la estoy conectando de planta baja nivel
+
+415
+00:22:36.570 --> 00:22:39.730
+superior a nivel inferior, es por profundidad
+
+416
+00:22:40.670 --> 00:22:42.330
+el le doy click aquí, profundidad.
+
+417
+00:22:42.530 --> 00:22:44.810
+Y lo voy a conectar al nivel de desplantes.
+
+418
+00:22:44.810 --> 00:22:47.950
+Este nivel de desplante que está acá, okey?
+
+419
+00:22:49.350 --> 00:22:51.230
+Y vamos a darle click
+
+420
+00:22:51.810 --> 00:22:55.790
+ojo cuando se resalten los dos ejes y será el e g cuatro,
+
+421
+00:22:57.450 --> 00:23:01.670
+el e g, a ver siete
+
+422
+00:23:03.560 --> 00:23:07.070
+l e g no siete, no, perdón, me equivoqué.
+
+423
+00:23:07.530 --> 00:23:09.870
+Ya lo voy a eliminar el g l.
+
+424
+00:23:10.070 --> 00:23:14.590
+G y el le doy en escape para combinar la acción.
+
+425
+00:23:15.290 --> 00:23:19.030
+Si yo coloco, como vimos en zapatas, colores coherentes,
+
+426
+00:23:19.430 --> 00:23:21.110
+fíjense que se ven ahí las columnas.
+
+427
+00:23:21.880 --> 00:23:24.970
+Ahora, si ustedes se llegan a equivocar,
+
+428
+00:23:24.990 --> 00:23:28.970
+que hay un elemento que no va ahí como tal es elemento,
+
+429
+00:23:29.040 --> 00:23:31.170
+únicamente los seleccionan
+
+430
+00:23:31.970 --> 00:23:35.090
+y pueden ir en la parte superior donde dice suprimir o
+
+431
+00:23:35.090 --> 00:23:36.450
+únicamente le dan suprimir.
+
+432
+00:23:36.470 --> 00:23:41.110
+Di con su teclado y listo. Okey.
+
+433
+00:23:42.030 --> 00:23:43.790
+Y esto mismo que estamos haciendo,
+
+434
+00:23:44.560 --> 00:23:46.640
+vamos a seleccionar todas las columnas.
+
+435
+00:23:47.230 --> 00:23:49.720
+Otra manera de seleccionar todas las columnas de manera
+
+436
+00:23:49.720 --> 00:23:54.600
+rápida y no con la tecla control es botón secundario,
+
+437
+00:23:55.230 --> 00:23:57.320
+seleccionar todos los ejemplares
+
+438
+00:23:58.330 --> 00:24:00.050
+visibles en la vista y vean cómo se
+
+439
+00:24:00.050 --> 00:24:01.130
+seleccionen las columnas.
+
+440
+00:24:02.300 --> 00:24:05.620
+Y en vez de yo volver a hacer click, click, click, copio,
+
+441
+00:24:05.850 --> 00:24:07.860
+copi de este gvm.
+
+442
+00:24:07.860 --> 00:24:10.300
+Pueden copiar de g a g.
+
+443
+00:24:11.280 --> 00:24:14.310
+Le doy en escape y fíjense como queda.
+
+444
+00:24:16.350 --> 00:24:20.090
+Si yo me voy ahora a lo que es el
+
+445
+00:24:21.820 --> 00:24:23.890
+el tres d, okey,
+
+446
+00:24:24.210 --> 00:24:26.570
+vean cómo va quedando el tema de las columnas.
+
+447
+00:24:27.840 --> 00:24:29.750
+Ahora aquí hay un problema.
+
+448
+00:24:30.890 --> 00:24:34.360
+Aquí hay un problema que debemos solucionar.
+
+449
+00:24:36.230 --> 00:24:39.130
+El desplante de la zapata tiene que ser
+
+450
+00:24:39.360 --> 00:24:41.590
+acá igual.
+
+451
+00:24:41.650 --> 00:24:45.520
+Uno tiene que ser acá porque este es el nivel
+
+452
+00:24:45.820 --> 00:24:46.840
+uno más 50.
+
+453
+00:24:47.400 --> 00:24:48.800
+Entonces tenemos que aprender algo,
+
+454
+00:24:49.260 --> 00:24:52.990
+todo lo que son elementos zapatas, los de cimentación,
+
+455
+00:24:53.180 --> 00:24:55.670
+elementos, áreas y elementos vigas
+
+456
+00:24:56.370 --> 00:24:59.030
+se modelan a partir desde el nivel en la cara superior.
+
+457
+00:25:00.570 --> 00:25:04.190
+Sí. Si yo modelo una zapata uno 50, una viga 50
+
+458
+00:25:04.830 --> 00:25:05.990
+o una loso unos 50,
+
+459
+00:25:06.050 --> 00:25:09.270
+se va a modelar a partir de la cara superior hacia abajo.
+
+460
+00:25:12.270 --> 00:25:14.990
+Entonces debo corregir esto que está acá
+
+461
+00:25:16.460 --> 00:25:17.500
+y ya lo vamos a corregir.
+
+462
+00:25:17.500 --> 00:25:19.300
+Pero ya debo entender que, por ejemplo,
+
+463
+00:25:19.360 --> 00:25:20.460
+el tema de las zapatas,
+
+464
+00:25:20.790 --> 00:25:24.300
+estas zapatas no están en la ubicación y yo deseo,
+
+465
+00:25:25.710 --> 00:25:30.110
+okey, no están en la ubicación que yo deseo déjenmele acá
+
+466
+00:25:31.910 --> 00:25:34.150
+y puede repetir, por favor, ese paso anterior.
+
+467
+00:25:34.370 --> 00:25:39.030
+Sí. Sí, Daniel, eh, el paso de copiar las columnas
+
+468
+00:25:39.590 --> 00:25:42.150
+o el paso de modelar las columnas
+
+469
+00:25:47.210 --> 00:25:51.760
+de modelar, claro, voy a seleccionar todo rápidamente.
+
+470
+00:25:52.560 --> 00:25:56.070
+Y luego voy a repetir, pasa nada.
+
+471
+00:25:56.870 --> 00:25:58.100
+Vea primero,
+
+472
+00:25:58.480 --> 00:26:01.300
+nos ubicamos en el nivel de planta baja hacia abajo.
+
+473
+00:26:02.050 --> 00:26:04.890
+Le doy click en pilar. Sí.
+
+474
+00:26:05.650 --> 00:26:10.340
+Y en pilar primero tenemos que indicar que es profundidad.
+
+475
+00:26:10.340 --> 00:26:14.100
+Vamos de arriba hacia abajo y lo vamos a conectar a
+
+476
+00:26:14.280 --> 00:26:15.460
+el nivel de desplantes.
+
+477
+00:26:15.700 --> 00:26:18.350
+A dónde va ir la columna? Y luego
+
+478
+00:26:19.250 --> 00:26:20.870
+al seleccionar la columna,
+
+479
+00:26:21.780 --> 00:26:24.830
+recuerden que seleccionamos la familia de sistema.
+
+480
+00:26:25.330 --> 00:26:27.590
+Sí, y le cambiamos las dimensiones
+
+481
+00:26:28.160 --> 00:26:29.470
+antes de cambiar las dimensiones,
+
+482
+00:26:29.640 --> 00:26:32.950
+duplicamos y con loamos el nombre de la sección y luego
+
+483
+00:26:33.580 --> 00:26:34.910
+colocamos las dimensiones.
+
+484
+00:26:35.960 --> 00:26:38.880
+Y sencillamente lo único que tenemos que hacer al igual como
+
+485
+00:26:38.970 --> 00:26:41.360
+pasó con zapatas, es darle click.
+
+486
+00:26:43.450 --> 00:26:45.090
+Ah, inclusive de, fíjense que
+
+487
+00:26:47.410 --> 00:26:49.160
+estoy en planta baja así.
+
+488
+00:26:49.160 --> 00:26:52.960
+Si estamos bien, voy tara de nuevo, d que empar.
+
+489
+00:26:55.300 --> 00:26:58.940
+Y voy a darle click. Voy a darle click ahorita.
+
+490
+00:26:59.330 --> 00:27:02.140
+Ahorita me va a decir elementos idénticos. Vamos a ver.
+
+491
+00:27:02.200 --> 00:27:05.690
+Ah, mira, ya
+
+492
+00:27:06.030 --> 00:27:07.250
+no las había limitado.
+
+493
+00:27:07.250 --> 00:27:11.410
+Perdón. Voy de nuevo para repetir el paso en segundo.
+
+494
+00:27:11.990 --> 00:27:14.170
+No las había eliminado. Ahora sí.
+
+495
+00:27:15.610 --> 00:27:17.930
+Y donde estaba planto baja acá. Ahora sí.
+
+496
+00:27:18.570 --> 00:27:22.790
+Entonces, pilar y
+
+497
+00:27:22.980 --> 00:27:26.830
+únicamente, una vez que tengo la propiedad, le damos click.
+
+498
+00:27:28.760 --> 00:27:31.100
+Le doy ahora click al eje
+
+499
+00:27:35.260 --> 00:27:40.020
+y 10 es y
+
+500
+00:27:40.020 --> 00:27:41.260
+podemos copiar.
+
+501
+00:27:41.410 --> 00:27:45.180
+Otra forma rápida es seguir dando click este eje este,
+
+502
+00:27:45.890 --> 00:27:49.790
+este eje y este vean, por ejemplo,
+
+503
+00:27:50.540 --> 00:27:54.310
+acá me pude haber equivocado acá.
+
+504
+00:27:54.310 --> 00:27:56.270
+Me pude haber equivocado. No pasa nada.
+
+505
+00:27:56.330 --> 00:27:59.470
+Si yo veo en el d, no se modeló la columna.
+
+506
+00:28:00.090 --> 00:28:03.270
+Si no se modeló la columna, porque no le di clic donde era
+
+507
+00:28:03.980 --> 00:28:07.990
+sencillamente selecciona la columna y copia este punto.
+
+508
+00:28:08.460 --> 00:28:11.190
+Este punto listo, pueden copiar.
+
+509
+00:28:11.490 --> 00:28:14.790
+Ese es una opción o copiando como vel una por
+
+510
+00:28:14.810 --> 00:28:16.430
+una, son las dos opciones.
+
+511
+00:28:17.830 --> 00:28:20.090
+Lo que ahora me está un poco
+
+512
+00:28:22.330 --> 00:28:24.370
+haciendo ruido en la cabeza es el tema del
+
+513
+00:28:24.370 --> 00:28:25.650
+desplante de la zapata.
+
+514
+00:28:25.990 --> 00:28:30.210
+Cuando se desplanta la zapata es en la cara inferior de la
+
+515
+00:28:30.390 --> 00:28:32.610
+zapata, no en la cara superior.
+
+516
+00:28:33.290 --> 00:28:36.930
+Entonces esto debo corregirlo y ya lo vamos a corregir.
+
+517
+00:28:37.400 --> 00:28:40.970
+Okey, eh, así sería. Okey.
+
+518
+00:28:40.990 --> 00:28:42.330
+Sí, sería antes de
+
+519
+00:28:43.890 --> 00:28:46.680
+pasar lo que es las columnas circulares rápidamente.
+
+520
+00:28:47.100 --> 00:28:49.120
+Si estamos bien hasta acá, si me van siguiendo
+
+521
+00:28:53.100 --> 00:28:56.830
+para pasar la columna circular en este punto y este punto,
+
+522
+00:28:57.620 --> 00:29:00.660
+estamos bien hasta aquí, a ver.
+
+523
+00:29:02.680 --> 00:29:06.740
+Sí, listo, listo. Perfecto. Perfecto. Ni el perfecto.
+
+524
+00:29:06.740 --> 00:29:07.860
+Gracias por contestar, Julia.
+
+525
+00:29:09.270 --> 00:29:11.930
+Ah, la vista aquí, albi en el
+
+526
+00:29:12.480 --> 00:29:14.900
+tres d en el d.
+
+527
+00:29:15.160 --> 00:29:19.240
+Si no lo comento, lo comento. Fíjense que hay un youtube.
+
+528
+00:29:19.700 --> 00:29:23.990
+Si han trabajado con con auto pack,
+
+529
+00:29:24.410 --> 00:29:26.070
+les va a ser muy, muy, muy familiar.
+
+530
+00:29:26.330 --> 00:29:29.470
+Sí. Este youtube me permite ver distintas vistas.
+
+531
+00:29:30.760 --> 00:29:32.750
+Valga la redundancia en el d.
+
+532
+00:29:33.210 --> 00:29:35.190
+Por ejemplo, si yo le doy click acá,
+
+533
+00:29:36.480 --> 00:29:40.830
+tengo una vista frontal o acá tengo una vista derecha.
+
+534
+00:29:41.210 --> 00:29:44.640
+Tengo una vista posterior. Tengo una vista superior.
+
+535
+00:29:45.380 --> 00:29:48.200
+Sí, fíjate muy similar a lo que pasa en autocat.
+
+536
+00:29:48.630 --> 00:29:50.360
+Okey, este es el famoso view youtube,
+
+537
+00:29:51.460 --> 00:29:54.340
+o si no puedo ver una vista tres de por defecto aquí donde
+
+538
+00:29:54.340 --> 00:29:57.540
+está la casita de que ese inicio y él sea una vista tres de
+
+539
+00:29:57.540 --> 00:29:59.500
+por defecto, okey,
+
+540
+00:30:00.130 --> 00:30:03.380
+esto únicamente les va a salir siempre y cuando estén
+
+541
+00:30:03.380 --> 00:30:05.860
+trabajando en la vista de que activamos en la clase
+
+542
+00:30:06.100 --> 00:30:09.570
+anterior, ya listo?
+
+543
+00:30:09.750 --> 00:30:14.210
+No te preocupes. Entonces la circular, la circular no
+
+544
+00:30:15.030 --> 00:30:16.570
+es sencilla, entre comillas.
+
+545
+00:30:16.990 --> 00:30:18.370
+Por qué? Qué pasa?
+
+546
+00:30:18.680 --> 00:30:20.810
+Este son los problemas que a veces nos suceden.
+
+547
+00:30:21.110 --> 00:30:24.200
+Si yo le doy click aquí en pilar y yo me voy,
+
+548
+00:30:24.220 --> 00:30:26.200
+la opción de las propiedades no me sale,
+
+549
+00:30:26.900 --> 00:30:29.400
+no me sale una familia circular.
+
+550
+00:30:30.640 --> 00:30:34.080
+Entonces, por ejemplo, ya podemos entender que los pilares
+
+551
+00:30:34.410 --> 00:30:37.120
+circulares, los pilares circulares
+
+552
+00:30:38.070 --> 00:30:41.710
+comienzan a hacer familias bles que debo cargar.
+
+553
+00:30:43.020 --> 00:30:44.860
+Dónde puedo encontrar esta familia?
+
+554
+00:30:45.560 --> 00:30:49.940
+Uno le van a dar click acá donde dice modo, cargar familia.
+
+555
+00:30:51.690 --> 00:30:55.160
+Sí, le dan click encargar familia.
+
+556
+00:30:55.880 --> 00:30:58.760
+Y cuando le dan click encargar familia,
+
+557
+00:30:58.940 --> 00:31:02.040
+van a buscar la carpeta que corresponda.
+
+558
+00:31:02.630 --> 00:31:05.280
+Okey? Entonces vamos a hacer lo siguiente.
+
+559
+00:31:05.530 --> 00:31:07.360
+Vamos a ir a mi PC.
+
+560
+00:31:08.100 --> 00:31:11.640
+Se recuerdan la ubicación de la carpeta que el día domingo?
+
+561
+00:31:11.640 --> 00:31:13.200
+Sí, fue el domingo que configuramos?
+
+562
+00:31:13.200 --> 00:31:14.760
+Bueno, vamos a buscar esa carpeta.
+
+563
+00:31:16.770 --> 00:31:19.990
+Yo la coloqué en la siguiente dirección o le recomendé que
+
+564
+00:31:19.990 --> 00:31:21.390
+las colocara en la dirección.
+
+565
+00:31:21.530 --> 00:31:25.190
+Mi PC disco alcé por gran data
+
+566
+00:31:26.670 --> 00:31:30.210
+autod rt personalizada.
+
+567
+00:31:30.270 --> 00:31:32.580
+Le coloqué yo archivo rev
+
+568
+00:31:33.620 --> 00:31:38.420
+y van a entrar en esta carpeta spanish y NL library
+
+569
+00:31:39.160 --> 00:31:40.780
+en la librería de familias.
+
+570
+00:31:40.810 --> 00:31:43.430
+Esta que es acá, ok,
+
+571
+00:31:44.330 --> 00:31:46.280
+aquí van a encontrar las familias.
+
+572
+00:31:46.700 --> 00:31:50.880
+Le doy click y van a buscar la carpeta que dice
+
+573
+00:31:52.630 --> 00:31:56.760
+piar estructural no pilares, sino pilar estructural.
+
+574
+00:31:56.910 --> 00:32:00.420
+Esta que está acá. Le dan doble click
+
+575
+00:32:01.100 --> 00:32:04.520
+y van a buscar hormigón, eh?
+
+576
+00:32:05.030 --> 00:32:08.800
+Hormigón. Y en hormigón le dan doble click.
+
+577
+00:32:09.940 --> 00:32:11.640
+Hay una familia.
+
+578
+00:32:11.880 --> 00:32:13.160
+Vean que el tipo es redid family,
+
+579
+00:32:13.580 --> 00:32:16.650
+que es redondo este que está acá.
+
+580
+00:32:17.640 --> 00:32:21.560
+Este es mi familia, okey?
+
+581
+00:32:22.750 --> 00:32:26.040
+Y al seleccionarlo, le damos abrir.
+
+582
+00:32:28.550 --> 00:32:32.630
+Entonces, automáticamente en la parte derecha se
+
+583
+00:32:32.830 --> 00:32:34.310
+modifica la familia.
+
+584
+00:32:34.570 --> 00:32:36.990
+Ya no solo le saleen la familia rectangular,
+
+585
+00:32:38.290 --> 00:32:42.100
+sino que ahora le sale la familia de pilares redondo.
+
+586
+00:32:42.100 --> 00:32:43.940
+Lo denomina redondo. Sí.
+
+587
+00:32:44.420 --> 00:32:46.260
+Y lo único que necesitan estos pilares,
+
+588
+00:32:46.430 --> 00:32:48.540
+cualquiera va a seleccionar este de 300.
+
+589
+00:32:49.400 --> 00:32:50.620
+Le doy a editar tipo.
+
+590
+00:32:51.620 --> 00:32:54.780
+Y lo único que hay que modificar es uno,
+
+591
+00:32:55.310 --> 00:32:57.540
+duplicamos y cambiemos el nombre por loco.
+
+592
+00:32:57.680 --> 00:33:00.350
+Sé 40 le de aceptar.
+
+593
+00:33:01.630 --> 00:33:03.670
+Y lo que hay que cambiar es esta cota b.
+
+594
+00:33:04.260 --> 00:33:06.670
+Esta cota b es el diámetro.
+
+595
+00:33:07.300 --> 00:33:12.040
+Esta cota b, repito, es el diámetro. En nuestro caso es 40.
+
+596
+00:33:12.670 --> 00:33:15.290
+Este caso es un diámetro 40,
+
+597
+00:33:16.480 --> 00:33:17.890
+okey, 40 centímetros.
+
+598
+00:33:18.740 --> 00:33:20.420
+Entonces acá colocamos
+
+599
+00:33:24.550 --> 00:33:27.190
+y le damos a aplicar y le damos aceptar.
+
+600
+00:33:28.420 --> 00:33:32.140
+Y ese pilar únicamente dando click en la posición.
+
+601
+00:33:33.460 --> 00:33:36.740
+Y f ses y
+
+602
+00:33:37.770 --> 00:33:40.660
+respaldando, verificando que diga por profundidad
+
+603
+00:33:41.220 --> 00:33:43.380
+y por desplantes.
+
+604
+00:33:43.380 --> 00:33:47.020
+O sea que se conecta el nivel de desplantes y le doy click a
+
+605
+00:33:47.020 --> 00:33:48.540
+acá y click act.
+
+606
+00:33:49.840 --> 00:33:52.020
+Le doy escape para salir de la acción.
+
+607
+00:33:52.660 --> 00:33:54.180
+Y cuando yo me vaya el tres d,
+
+608
+00:33:54.630 --> 00:33:56.780
+ahora están los pilares circulares
+
+609
+00:33:57.520 --> 00:33:59.140
+que esto no lo ha hecho una formaciones
+
+610
+00:33:59.160 --> 00:34:00.300
+de red vida anteriores.
+
+611
+00:34:00.300 --> 00:34:03.660
+Pero vamos a detallar un un pilar circular es si vamos a
+
+612
+00:34:03.660 --> 00:34:05.780
+hacer la forma de los suns circulares,
+
+613
+00:34:06.540 --> 00:34:07.840
+no es interesante hacerlo?
+
+614
+00:34:08.500 --> 00:34:12.000
+Sí. Entonces cuando yo voy a la vista frontal, ahora tengo
+
+615
+00:34:12.520 --> 00:34:15.010
+Profesor. Sí,
+
+616
+00:34:15.550 --> 00:34:16.550
+Sí, luis, cuéntame.
+
+617
+00:34:18.910 --> 00:34:22.150
+Disculpe, buenas noches. Buenas noches. Luis Cué, eh,
+
+618
+00:34:24.130 --> 00:34:28.590
+Voy a hacer, no sé, no quiero que se mal interpret.
+
+619
+00:34:30.180 --> 00:34:33.280
+Pero eh, el pilar
+
+620
+00:34:34.120 --> 00:34:37.160
+circular que estamos colocando, eh, para
+
+621
+00:34:38.970 --> 00:34:43.260
+para la enseñanza del del uso del REIT.
+
+622
+00:34:43.800 --> 00:34:47.430
+Sí. Que la impresión. Sí, porque da la impresión.
+
+623
+00:34:47.430 --> 00:34:51.430
+No es cierto de que, eh, pilares rectangulares? No, cierto.
+
+624
+00:34:52.230 --> 00:34:53.230
+Y si coloca a lo mejor,
+
+625
+00:34:53.330 --> 00:34:56.870
+el arquitecto se le ocurre colocar pilar circular.
+
+626
+00:34:57.790 --> 00:35:01.630
+Entonces, el centro de masa con el centro de rigidez, eh,
+
+627
+00:35:02.090 --> 00:35:06.670
+se corre un poco con las entonces en esa esa parte, eh?
+
+628
+00:35:07.330 --> 00:35:12.150
+No sé, eh, es por razones de enseñanza del rev.
+
+629
+00:35:12.690 --> 00:35:15.390
+Sí, sí, es, es, Es decir, claro,
+
+630
+00:35:15.440 --> 00:35:16.440
+Claro, claro.
+
+631
+00:35:16.620 --> 00:35:18.030
+Ninguno de estos elementos.
+
+632
+00:35:18.300 --> 00:35:22.910
+Luis eh, por ejemplo, acá, eh, yo
+
+633
+00:35:23.490 --> 00:35:26.590
+voy a colocar ahorita una losa cimentación y después
+
+634
+00:35:26.650 --> 00:35:27.670
+una losa ex, eh?
+
+635
+00:35:27.770 --> 00:35:29.790
+Una los una zapata excéntrica.
+
+636
+00:35:30.390 --> 00:35:34.230
+Y luego voy a colocar vigas de cimentación con distintos
+
+637
+00:35:34.230 --> 00:35:35.230
+tipos de pilares.
+
+638
+00:35:35.620 --> 00:35:39.240
+Pero el motivo es de enseñanza. Ya no tiene un motivo.
+
+639
+00:35:39.420 --> 00:35:41.800
+Ojo de cálculo que en el ojo en el cálculo,
+
+640
+00:35:41.850 --> 00:35:43.200
+deben seguir esto.
+
+641
+00:35:43.340 --> 00:35:45.320
+No. Porque, eh,
+
+642
+00:35:46.340 --> 00:35:48.400
+hay muchas consideraciones que no está aprendiendo,
+
+643
+00:35:48.400 --> 00:35:49.600
+inclusive en las formación.
+
+644
+00:35:49.600 --> 00:35:52.880
+Es luis de la importancia del centro de masas
+
+645
+00:35:52.880 --> 00:35:54.040
+centro de rigideces.
+
+646
+00:35:54.680 --> 00:35:59.300
+Entonces, y colocar este pilar circular antes de
+
+647
+00:35:59.300 --> 00:36:02.860
+colocarlo de debe tener un motivo primero,
+
+648
+00:36:03.680 --> 00:36:05.140
+si es arquitectónico.
+
+649
+00:36:05.140 --> 00:36:06.180
+Y segundo, más que todo,
+
+650
+00:36:06.180 --> 00:36:09.060
+estructura porque el pilar esar okey.
+
+651
+00:36:09.620 --> 00:36:12.740
+Entonces, en realidad es por enseñanza para que vean cómo se
+
+652
+00:36:12.770 --> 00:36:15.980
+detalla un pilar circular en realidad.
+
+653
+00:36:15.980 --> 00:36:18.660
+Por eso los estoy colocando para que vean como el día de
+
+654
+00:36:18.660 --> 00:36:20.900
+mañana les toca detallar un pilar circular.
+
+655
+00:36:21.030 --> 00:36:25.640
+Sepan hacerlo. Okey, ya. Gracias por eso.
+
+656
+00:36:26.250 --> 00:36:30.080
+Listo, ya ya. Listo, listo, lui. No, no te preocupes.
+
+657
+00:36:30.080 --> 00:36:32.280
+Válida. Tu tu pregunta no te preocupes.
+
+658
+00:36:33.670 --> 00:36:38.260
+Y ahora, cómo yo soluciono esto?
+
+659
+00:36:38.920 --> 00:36:43.350
+Cómo yo soluciono esto? No, el nivel de desplante Revit.
+
+660
+00:36:43.370 --> 00:36:46.470
+Si ustedes se dan cuenta cuando seleccionan, por ejemplo,
+
+661
+00:36:46.970 --> 00:36:51.310
+una columna le dan click en las propiedades, sale el id,
+
+662
+00:36:51.310 --> 00:36:54.430
+no sale un id con todas sus características.
+
+663
+00:36:55.030 --> 00:36:58.470
+Y lo más importante es esta zona que dice restricciones.
+
+664
+00:36:59.050 --> 00:37:01.220
+Sí, eh?
+
+665
+00:37:01.760 --> 00:37:05.100
+Los construyen o las restricciones acá me indicta que
+
+666
+00:37:05.880 --> 00:37:09.020
+el nivel base es el nivel de desplante, está bien.
+
+667
+00:37:09.660 --> 00:37:13.460
+Y el nivel superior es tanta baja
+
+668
+00:37:13.630 --> 00:37:14.900
+hasta ahí estamos bien.
+
+669
+00:37:15.260 --> 00:37:20.110
+Perfecto. Y me indica una opción que dice de fase de base de
+
+670
+00:37:20.340 --> 00:37:25.170
+fase superior, me permite hacer de fases, okey,
+
+671
+00:37:25.560 --> 00:37:29.450
+qué significa de fase de fase o una especie como los
+
+672
+00:37:30.230 --> 00:37:34.220
+no manejaba, por ejemplo, en autocat que yo puedo
+
+673
+00:37:35.100 --> 00:37:37.460
+a partir del nivel base, por ejemplo,
+
+674
+00:37:38.210 --> 00:37:42.980
+indicar que se separe la columna hacia arriba o hacia abajo,
+
+675
+00:37:43.560 --> 00:37:45.300
+la distancia que yo requiera.
+
+676
+00:37:46.790 --> 00:37:51.250
+Sí, si yo hago un desface hacia arriba de la columna en la
+
+677
+00:37:51.250 --> 00:37:52.610
+base es positivo.
+
+678
+00:37:54.000 --> 00:37:56.200
+Y si yo hago un desfase hacia abajo de la
+
+679
+00:37:56.200 --> 00:37:57.800
+columna, es negativo.
+
+680
+00:37:58.460 --> 00:38:01.120
+Lo mismo sucede en la parte superior.
+
+681
+00:38:01.940 --> 00:38:04.120
+Si yo hago un desfase en la parte superior
+
+682
+00:38:04.650 --> 00:38:06.800
+hacia arriba, es positivo.
+
+683
+00:38:07.200 --> 00:38:12.080
+Y si yo hago un desfase hacia abajo en la parte inferior,
+
+684
+00:38:12.180 --> 00:38:15.380
+es negativo, y que es
+
+685
+00:38:16.320 --> 00:38:20.260
+lo bueno que que puede traer rabbit,
+
+686
+00:38:20.800 --> 00:38:23.140
+que rabbit entiende que esto es
+
+687
+00:38:23.720 --> 00:38:27.420
+un pedestal que está conectado a la zapata.
+
+688
+00:38:28.020 --> 00:38:30.520
+Y como esto es un pedestal, una columna,
+
+689
+00:38:30.540 --> 00:38:31.760
+una que está la zapata.
+
+690
+00:38:31.980 --> 00:38:36.440
+Si yo esta columna lo de faso, 30 centímetros,
+
+691
+00:38:36.670 --> 00:38:38.000
+80 centímetros,
+
+692
+00:38:38.140 --> 00:38:40.560
+un metro hacia arriba o un metro hacia abajo,
+
+693
+00:38:41.020 --> 00:38:42.880
+la zapata se va desfasar
+
+694
+00:38:44.390 --> 00:38:47.370
+en conjunto para que entienda, por ejemplo,
+
+695
+00:38:49.320 --> 00:38:52.300
+si yo le doy click acá y en de fase,
+
+696
+00:38:52.310 --> 00:38:54.340
+vamos con el de fase de la base.
+
+697
+00:38:55.210 --> 00:38:59.960
+Y yo le doy positivo
+
+698
+00:39:00.790 --> 00:39:05.260
+y le doy a aplicar y le doy a aceptar, me sale un mensaje,
+
+699
+00:39:05.280 --> 00:39:08.660
+un aviso, las cimentación estructural en la sala se moverá
+
+700
+00:39:08.660 --> 00:39:10.100
+la parte inferior del pilar.
+
+701
+00:39:10.240 --> 00:39:12.940
+Le voy a aceptar y vean lo que sucede.
+
+702
+00:39:13.880 --> 00:39:17.740
+Sí, voy a acá, vean cómo se levanta las zapatos.
+
+703
+00:39:19.070 --> 00:39:23.370
+Sí, la zapatas está desfasando en función de cómo se
+
+704
+00:39:23.370 --> 00:39:24.530
+desfasa la base de la columna.
+
+705
+00:39:25.230 --> 00:39:27.840
+Se conectan estos elementos ya.
+
+706
+00:39:28.800 --> 00:39:31.960
+Entonces, realmente si yo regreso acá,
+
+707
+00:39:32.430 --> 00:39:35.080
+cuánto debería ser el de fase?
+
+708
+00:39:36.530 --> 00:39:39.630
+Ojo de mi columna
+
+709
+00:39:40.250 --> 00:39:43.350
+en la base hacia arriba para que llegue
+
+710
+00:39:44.930 --> 00:39:48.190
+con la cara del nivel desplante, sería esta altura,
+
+711
+00:39:49.180 --> 00:39:50.640
+la altura de CE,
+
+712
+00:39:52.900 --> 00:39:54.240
+la altura de la zapata,
+
+713
+00:39:56.020 --> 00:39:59.540
+okey, en rabbit.
+
+714
+00:40:01.640 --> 00:40:04.280
+Y si no les ojo fabia antes de verificar,
+
+715
+00:40:04.280 --> 00:40:08.090
+si no sale esa opción acá donde dice puede salir así,
+
+716
+00:40:08.720 --> 00:40:09.730
+okey oculto.
+
+717
+00:40:09.830 --> 00:40:13.810
+Muchas veces salen así y dándole con la feita si abajo
+
+718
+00:40:14.390 --> 00:40:16.090
+se despliegan todas las opciones.
+
+719
+00:40:17.010 --> 00:40:21.500
+Sí, si es que no se está visualizando muchas veces por eso,
+
+720
+00:40:23.080 --> 00:40:25.620
+okey, me me me,
+
+721
+00:40:25.920 --> 00:40:28.380
+si quedas y y me avisas ya.
+
+722
+00:40:30.970 --> 00:40:34.210
+Entonces, eh, dónde estábamos?
+
+723
+00:40:34.930 --> 00:40:36.650
+Entonces, el de fase tiene que ser cero.
+
+724
+00:40:37.990 --> 00:40:42.650
+Piense que si yo ahora listo,
+
+725
+00:40:42.740 --> 00:40:45.360
+listo, eh, ojo,
+
+726
+00:40:45.660 --> 00:40:48.440
+si las opciones le salen así, fíjense.
+
+727
+00:40:49.360 --> 00:40:51.860
+Es muy pos que no, no es que no le salga,
+
+728
+00:40:51.860 --> 00:40:55.700
+sino le dan las flittas y se van desplegando si le aquí en
+
+729
+00:40:55.780 --> 00:40:57.580
+las feita donde ya.
+
+730
+00:40:58.720 --> 00:41:00.840
+Entonces, cuánto tiene que ser el nivel
+
+731
+00:41:02.450 --> 00:41:05.160
+de fase que le tengo que dar 40?
+
+732
+00:41:05.460 --> 00:41:10.010
+La lectura de la zapata. Si yo vengo acá, okey.
+
+733
+00:41:10.890 --> 00:41:14.850
+Y al seleccionar mi columna,
+
+734
+00:41:15.790 --> 00:41:17.490
+le doy un fase de cero.
+
+735
+00:41:18.590 --> 00:41:21.250
+Le doy a y le doy a aceptar.
+
+736
+00:41:22.750 --> 00:41:25.280
+Vean dónde ahora está ojo.
+
+737
+00:41:25.280 --> 00:41:28.320
+Aquí está la la zapata con la columna.
+
+738
+00:41:28.640 --> 00:41:33.480
+Vean dónde está, qué pasa si yo hago a una
+
+739
+00:41:33.480 --> 00:41:37.160
+vista frontal, esto puede generar confusión,
+
+740
+00:41:37.160 --> 00:41:40.920
+no que aquí yo básicamente lo que estoy haciendo es cuál es
+
+741
+00:41:40.920 --> 00:41:42.880
+la zapata realmente que selecciona bueno,
+
+742
+00:41:43.070 --> 00:41:46.160
+ustedes se llegan a confundir puede hacer esto,
+
+743
+00:41:46.160 --> 00:41:48.680
+vamos a empezar utilizar las herramientas de Reddy.
+
+744
+00:41:48.900 --> 00:41:53.260
+Si yo selecciono la columna y con selecciono las zapata
+
+745
+00:41:53.960 --> 00:41:57.340
+en la parte inferior, hay unos lente sitios estos lentes.
+
+746
+00:41:57.680 --> 00:42:02.360
+Sí. Estos lentes me permiten aislar los elementos. Sí.
+
+747
+00:42:03.360 --> 00:42:06.440
+Entonces yo voy a seleccionar la columna la zapata y con
+
+748
+00:42:06.440 --> 00:42:09.110
+control, el nivel sí.
+
+749
+00:42:09.950 --> 00:42:14.730
+Y voy a darle los y le voy a dar la opción a aislar
+
+750
+00:42:14.760 --> 00:42:19.550
+elementos, aislar elementos y le do sí.
+
+751
+00:42:20.270 --> 00:42:21.750
+Y vean que cuando yo lo conozco,
+
+752
+00:42:21.750 --> 00:42:26.390
+una vista frontal ahí se denota así deben ir las zapatas,
+
+753
+00:42:26.600 --> 00:42:29.430
+todas las zapatas, okey?
+
+754
+00:42:30.080 --> 00:42:34.150
+Donde la cara inferior de las zapatas, el desplante
+
+755
+00:42:35.040 --> 00:42:36.940
+es a ras del del nivel.
+
+756
+00:42:38.390 --> 00:42:42.980
+Okey. Ahora, claro,
+
+757
+00:42:43.400 --> 00:42:44.540
+vuelvo a hacerlo.
+
+758
+00:42:45.000 --> 00:42:49.620
+Voy a rest establecer acá con control,
+
+759
+00:42:49.620 --> 00:42:51.540
+selecciono la columna control,
+
+760
+00:42:52.400 --> 00:42:54.220
+la tecla control, siempre presionada.
+
+761
+00:42:54.650 --> 00:42:56.980
+Seleccionó la zapata, la tecla de control,
+
+762
+00:42:57.070 --> 00:43:01.810
+selecciona el nivel y leí estos lentes aislar
+
+763
+00:43:02.930 --> 00:43:04.890
+y seleccionamos a aislar elementos
+
+764
+00:43:05.410 --> 00:43:07.090
+y ahí en la parte superior,
+
+765
+00:43:07.320 --> 00:43:09.850
+dice aislar ocultar temporalmente ya.
+
+766
+00:43:11.420 --> 00:43:14.680
+Entonces, cuando yo venga aquí y lo coloque una vista
+
+767
+00:43:14.680 --> 00:43:17.360
+frontal, Isabel el elemento solo el que yo necesito,
+
+768
+00:43:17.360 --> 00:43:20.600
+no he eliminado los elementos, solo estoy aislando, okey,
+
+769
+00:43:21.270 --> 00:43:22.320
+ahí para verificar.
+
+770
+00:43:22.910 --> 00:43:24.680
+Así es el proceso. Perfecto. Vale.
+
+771
+00:43:25.320 --> 00:43:27.920
+Y ahora para yo, devolverme a la vista original.
+
+772
+00:43:28.180 --> 00:43:31.480
+Le volvemos a los lecito y quizá restablecer
+
+773
+00:43:32.660 --> 00:43:37.440
+le damos restablecer y ahora regreso a la historia original.
+
+774
+00:43:39.040 --> 00:43:42.590
+Ahora yo necesito hacer esto para todas las zapatas,
+
+775
+00:43:43.100 --> 00:43:44.110
+zapatas y columnas.
+
+776
+00:43:45.260 --> 00:43:48.500
+Entonces, qué se puede hacer si lo quieren hacer todo
+
+777
+00:43:49.060 --> 00:43:52.900
+rápidamente aquí les voy con otro tip que les va a
+
+778
+00:43:52.900 --> 00:43:53.940
+servir un montón.
+
+779
+00:43:54.620 --> 00:43:57.410
+Y ahora en adelante, vean lo que voy a hacer.
+
+780
+00:43:58.460 --> 00:44:00.000
+Yo voy a seleccionar todo,
+
+781
+00:44:00.000 --> 00:44:02.640
+dejando clip principal de izquierda, derecha, todo,
+
+782
+00:44:02.790 --> 00:44:05.480
+todo el seleccioné todo aquí.
+
+783
+00:44:05.480 --> 00:44:07.320
+Me indican la parte derecha donde dice común,
+
+784
+00:44:07.500 --> 00:44:10.800
+me sale un número 27, seleccioné 27 elementos,
+
+785
+00:44:10.830 --> 00:44:14.160
+todo seleccioné niveles, zapatas, seleccioné todo.
+
+786
+00:44:15.200 --> 00:44:17.960
+Y voy a filtro en la parte superior.
+
+787
+00:44:18.870 --> 00:44:23.010
+Sí, y en filtro, yo me voy a quedar solo con los pilares
+
+788
+00:44:24.240 --> 00:44:25.370
+solo con los pilares.
+
+789
+00:44:26.090 --> 00:44:30.730
+Y le voy a dar click en aplicar y aceptar.
+
+790
+00:44:32.650 --> 00:44:36.010
+Y acá fíjense que él seleccionó solo los pilares
+
+791
+00:44:36.570 --> 00:44:37.770
+y me indica que tengo 10.
+
+792
+00:44:37.840 --> 00:44:39.970
+Este es el número de pilares seleccionados 10.
+
+793
+00:44:40.850 --> 00:44:45.370
+Y estos pilares donde dice de fase de base de fase de base.
+
+794
+00:44:46.030 --> 00:44:48.490
+Yo le voy a colocar cero
+
+795
+00:44:51.170 --> 00:44:52.710
+y le doy a aplicar,
+
+796
+00:44:54.510 --> 00:44:58.850
+me va a salir un mensaje de advertencia que se desplazan las
+
+797
+00:44:58.880 --> 00:45:03.170
+zapatos y le doy a aceptar y automáticamente.
+
+798
+00:45:04.100 --> 00:45:08.050
+Ahora fíjense que todos los elementos
+
+799
+00:45:09.050 --> 00:45:12.890
+tienen la cara del nivel de desplante como tal
+
+800
+00:45:14.050 --> 00:45:16.120
+arras este nivel que está aquí,
+
+801
+00:45:19.850 --> 00:45:24.020
+okey, y no solo las zapatas, las zapatas, perdón,
+
+802
+00:45:24.120 --> 00:45:25.700
+no son las columnas rectangulares,
+
+803
+00:45:26.010 --> 00:45:27.980
+sino que las columnas circulares.
+
+804
+00:45:30.650 --> 00:45:33.680
+Ahora vamos a hacer algo interesante que va a hacer lo que
+
+805
+00:45:33.680 --> 00:45:36.160
+me estuvieran comentando de rep plantillo.
+
+806
+00:45:36.160 --> 00:45:40.200
+Le voy a mostrar una manera de trabajar con el replant dicho
+
+807
+00:45:40.580 --> 00:45:44.120
+eh, antes de ir con el rep plantillo, eh?
+
+808
+00:45:46.300 --> 00:45:48.360
+Sí, las columnas todas, todas.
+
+809
+00:45:48.780 --> 00:45:51.360
+Al darle el te fase como una selección de todas Daniel
+
+810
+00:45:51.940 --> 00:45:54.520
+se ajustaron automáticamente a la longitud.
+
+811
+00:45:55.280 --> 00:46:00.020
+Fíjate que la longitud acá en las características y
+
+812
+00:46:00.870 --> 00:46:02.460
+bueno, no sale las caracter.
+
+813
+00:46:02.460 --> 00:46:05.260
+Y les voy a mencionar cómo ver las características.
+
+814
+00:46:05.890 --> 00:46:10.270
+Pero si te das cuenta y yo selecciono una columna y la isla
+
+815
+00:46:11.110 --> 00:46:14.370
+con el nivel con control, la columna y el nivel,
+
+816
+00:46:15.590 --> 00:46:17.110
+y le doy es aire elemento.
+
+817
+00:46:19.360 --> 00:46:22.320
+Fíjate que este espacio vacío está acá,
+
+818
+00:46:22.660 --> 00:46:25.470
+es la zapato, okey?
+
+819
+00:46:26.640 --> 00:46:27.950
+Aquí es donde está la zapato.
+
+820
+00:46:28.790 --> 00:46:31.190
+Entonces la longitud ya no es uno,
+
+821
+00:46:31.580 --> 00:46:34.510
+sino que es unos uno 10.
+
+822
+00:46:35.060 --> 00:46:38.130
+Este okey,
+
+823
+00:46:38.450 --> 00:46:40.130
+grabamos con el tema de rep plantillo
+
+824
+00:46:41.500 --> 00:46:43.090
+antes de ir con el tema del
+
+825
+00:46:44.040 --> 00:46:47.050
+replant de un segundo acá para restablecer
+
+826
+00:46:47.670 --> 00:46:50.250
+si estamos bien hasta aquí, si van siguiendo
+
+827
+00:46:51.790 --> 00:46:52.890
+el tema del modelado,
+
+828
+00:46:52.990 --> 00:46:54.850
+yo luego voy haciendo por orden para que
+
+829
+00:46:55.990 --> 00:46:57.330
+me vayan entendiendo.
+
+830
+00:46:58.230 --> 00:47:00.570
+Sí. Okey, vamos, perfecto,
+
+831
+00:47:00.570 --> 00:47:03.250
+gracias por contestar aquí vamos con el rep plantillo.
+
+832
+00:47:03.500 --> 00:47:05.330
+Listo, listo. Okey, gracias por contestar.
+
+833
+00:47:05.330 --> 00:47:06.370
+Yo voy siempre preguntando,
+
+834
+00:47:06.370 --> 00:47:08.050
+no por fastidioso un señor para así.
+
+835
+00:47:08.430 --> 00:47:09.450
+Si me voy entendiendo.
+
+836
+00:47:10.410 --> 00:47:12.690
+Y el rep plantillo hay una manera,
+
+837
+00:47:12.690 --> 00:47:15.010
+yo le voy a mostrar una manera de hacer el rep plantillo
+
+838
+00:47:15.980 --> 00:47:17.100
+y luego, más adelante,
+
+839
+00:47:17.100 --> 00:47:18.660
+cuando estemos en la tabla de cantidades,
+
+840
+00:47:18.660 --> 00:47:20.900
+le voy a mostrar otra manera, no?
+
+841
+00:47:21.180 --> 00:47:22.620
+O cuando generamos los planos.
+
+842
+00:47:22.730 --> 00:47:27.610
+Otra manera de hacer el rep plantillo una manera es que,
+
+843
+00:47:27.610 --> 00:47:28.770
+por ejemplo, el rep plantillo,
+
+844
+00:47:28.770 --> 00:47:33.230
+yo lo voy a trabajar con un concreto simple de 180,
+
+845
+00:47:33.230 --> 00:47:34.430
+no 180 kilo.
+
+846
+00:47:34.430 --> 00:47:36.470
+Logramos por centímetro cuadrado.
+
+847
+00:47:40.560 --> 00:47:44.560
+Entonces, qué vamos a hacer primero antes de
+
+848
+00:47:45.110 --> 00:47:47.360
+generar lo que es el rep plantillo,
+
+849
+00:47:47.360 --> 00:47:50.830
+yo voy a seleccionar todas las columnas todas otra vez,
+
+850
+00:47:51.630 --> 00:47:56.500
+como les enseñé iqui el derecho seleccionó todo filtro.
+
+851
+00:47:57.080 --> 00:48:00.700
+No selecciona ninguno pilares estructurales aplicar.
+
+852
+00:48:01.580 --> 00:48:03.140
+Y qué voy a hacer ahorita el material?
+
+853
+00:48:03.650 --> 00:48:05.780
+Recuerden que debemos ir cambiando el material.
+
+854
+00:48:05.840 --> 00:48:07.420
+Ya yo lo hice para las zapatas.
+
+855
+00:48:07.470 --> 00:48:09.300
+Ahora lo voy a hacer para las columnas.
+
+856
+00:48:10.040 --> 00:48:13.660
+Le doy a los tres puntos y buscamos hormigón moldeado en
+
+857
+00:48:13.660 --> 00:48:14.820
+situ 200.
+
+858
+00:48:15.740 --> 00:48:19.470
+Y le voy aceptado listo.
+
+859
+00:48:20.200 --> 00:48:24.560
+Y ahora me voy a ir a la parte, voy a ocultar esto.
+
+860
+00:48:24.780 --> 00:48:27.320
+Me voy a ir a la parte superior donde dice
+
+861
+00:48:27.830 --> 00:48:30.120
+gestionar materiales.
+
+862
+00:48:31.730 --> 00:48:34.860
+Sí? Y en gestionar materiales.
+
+863
+00:48:35.520 --> 00:48:40.310
+Voy a crear ahora voy a copiar este que dice hormigón
+
+864
+00:48:40.310 --> 00:48:41.430
+mol de este.
+
+865
+00:48:41.430 --> 00:48:43.930
+Está bien. Y lo voy a duplicar.
+
+866
+00:48:44.770 --> 00:48:47.700
+Sí, y lo voy a llamar
+
+867
+00:48:48.410 --> 00:48:53.140
+hormigón f prima c 180 más allá que ahorita.
+
+868
+00:48:53.140 --> 00:48:55.540
+No le voy a cambiar la resistencia al hormigón
+
+869
+00:48:56.120 --> 00:48:59.660
+ni las características de los materiales, sino de manera
+
+870
+00:49:01.370 --> 00:49:02.820
+ahorita memorial.
+
+871
+00:49:03.010 --> 00:49:07.460
+Nada más. Le cambié la resistencia y le doy aplicar,
+
+872
+00:49:09.780 --> 00:49:12.200
+eh, y aceptar.
+
+873
+00:49:12.400 --> 00:49:13.400
+Y lo que es muy guardado,
+
+874
+00:49:13.400 --> 00:49:16.160
+porque porque rep plantillo es otra resistencia de hormigón
+
+875
+00:49:16.520 --> 00:49:20.240
+y en las cantidades para determinar los volúmenes, eh?
+
+876
+00:49:21.760 --> 00:49:25.660
+El aspecto diferenciar va a ser el tipo de material y en el
+
+877
+00:49:25.660 --> 00:49:28.700
+hormigón, lo que diferencia un hormigón de otro de hormigón,
+
+878
+00:49:28.700 --> 00:49:31.620
+por ejemplo, es la resistencia a compresión.
+
+879
+00:49:31.620 --> 00:49:36.020
+El le fue prima c. Ya me voy a ir a un alzado.
+
+880
+00:49:36.020 --> 00:49:38.710
+Por ejemplo, el alzado oeste, este que está acá,
+
+881
+00:49:39.300 --> 00:49:40.830
+cualquier alzado ojo,
+
+882
+00:49:41.050 --> 00:49:44.190
+pueden irse al norte al que ustedes yo me voy alzado este.
+
+883
+00:49:44.830 --> 00:49:48.020
+Y por los momentos voy a crear, entre comillas,
+
+884
+00:49:48.040 --> 00:49:49.740
+un nivel ficticio.
+
+885
+00:49:50.730 --> 00:49:53.810
+Y van a entender porque en realidad
+
+886
+00:49:54.470 --> 00:49:56.810
+es un nivel ficticio que luego no voy a usar.
+
+887
+00:49:58.070 --> 00:50:00.330
+Iba a ser el nivel de rep plantillo.
+
+888
+00:50:01.480 --> 00:50:04.780
+Sí, un nivel acá ficticio que va a ser el nivel de rep
+
+889
+00:50:04.780 --> 00:50:06.500
+plantillo, por ejemplo,
+
+890
+00:50:06.880 --> 00:50:10.540
+la capa de rep plantillo como tal yo la voy a hacer de 10
+
+891
+00:50:10.540 --> 00:50:13.500
+centímetros y es centímetros.
+
+892
+00:50:14.850 --> 00:50:18.900
+Qué significa que el nivel que debo tener
+
+893
+00:50:19.950 --> 00:50:21.660
+aquí en la profundidad de
+
+894
+00:50:24.060 --> 00:50:26.560
+de desplante, este nivel que tengo acá
+
+895
+00:50:28.620 --> 00:50:29.680
+de unos 50,
+
+896
+00:50:30.100 --> 00:50:32.840
+el nivel de rep plantilla entonces debe estar a menos.
+
+897
+00:50:35.140 --> 00:50:36.940
+Y eso va a ser el nivel de rep plantillo.
+
+898
+00:50:37.690 --> 00:50:39.940
+Okey, entonces voy a colocar acá,
+
+899
+00:50:40.080 --> 00:50:43.140
+va a ser un nivel ficticio entre comillas que voy a usar
+
+900
+00:50:43.250 --> 00:50:44.940
+nada más para modelar rep plantillo.
+
+901
+00:50:45.020 --> 00:50:46.940
+Y luego cuando esté en la parte de planos,
+
+902
+00:50:47.400 --> 00:50:51.340
+en realidad ese nivel se oculta o básicamente no usamos ya,
+
+903
+00:50:51.890 --> 00:50:54.140
+pero necesito ahorita para modelar rep plantillo.
+
+904
+00:50:55.440 --> 00:50:58.240
+Entonces, como hacemos primero en un nivel,
+
+905
+00:50:58.380 --> 00:51:02.240
+ya sea este norte, oeste o sur, nos vamos a estructura,
+
+906
+00:51:03.680 --> 00:51:06.590
+vamos a nivel donde se referencia, nos vamos a nivel
+
+907
+00:51:07.190 --> 00:51:11.390
+y le damos click y vamos a modelar acá, fíjense
+
+908
+00:51:12.170 --> 00:51:15.950
+de referencia a partir del nivel hacia abajo, cuanto es
+
+909
+00:51:18.060 --> 00:51:21.560
+sí, cero, o si quieren, ustedes lo escriben cero,
+
+910
+00:51:23.340 --> 00:51:27.390
+le dan enter y lo vamos a encuadrar acá
+
+911
+00:51:28.290 --> 00:51:29.530
+y le voy a dar escape.
+
+912
+00:51:31.600 --> 00:51:34.740
+Repito, esto va a ser un nivel ficticio entre comillas,
+
+913
+00:51:34.740 --> 00:51:38.490
+que luego vamos a ocultar, lo voy a un poquito a
+
+914
+00:51:39.730 --> 00:51:40.850
+acomodar esto.
+
+915
+00:51:41.070 --> 00:51:42.770
+Lo voy a seleccionar hacia acá.
+
+916
+00:51:43.390 --> 00:51:47.450
+Voy a activar la simbología hacia la derecha, culto acá.
+
+917
+00:51:48.290 --> 00:51:51.130
+Y este nivel que lo denomina d f.
+
+918
+00:51:52.590 --> 00:51:56.690
+Le voy a dar click y se va a llamar o lo voy a denominar
+
+919
+00:51:57.790 --> 00:52:01.770
+replant y listo,
+
+920
+00:52:02.310 --> 00:52:05.370
+vuelvo y repito, esto va a ser un nivel ficticio que va a
+
+921
+00:52:05.370 --> 00:52:06.810
+tener una diferencia de 10 cent tipo.
+
+922
+00:52:08.260 --> 00:52:13.090
+Ahora yo me voy a ir a ta al tres d, sí,
+
+923
+00:52:13.230 --> 00:52:14.530
+me voy a ir al tres d.
+
+924
+00:52:16.190 --> 00:52:19.070
+Y lo que voy a hacer ahora es un copi y pegar entre niveles.
+
+925
+00:52:20.170 --> 00:52:23.430
+Sí, por qué? Por qué dimensiones?
+
+926
+00:52:23.550 --> 00:52:24.790
+Y hago la pregunta rápida,
+
+927
+00:52:25.680 --> 00:52:28.010
+qué dimensiones debe tener el rep?
+
+928
+00:52:28.010 --> 00:52:30.650
+Plantillo las mismas dimensiones un poco más
+
+929
+00:52:30.700 --> 00:52:32.090
+ancho que la zapata.
+
+930
+00:52:33.500 --> 00:52:38.160
+Sí. Es decir, vuelvo y repito, el rep plantillo debe tener
+
+931
+00:52:38.780 --> 00:52:42.720
+las mismas dimensiones de la zapata un poco más ancho
+
+932
+00:52:44.760 --> 00:52:46.660
+con el espesor de 10 centímetros.
+
+933
+00:52:47.480 --> 00:52:48.500
+Ese es el rep plantillo.
+
+934
+00:52:48.860 --> 00:52:52.700
+Entonces yo puedo crear una zapata, por ejemplo aquí uno
+
+935
+00:52:53.570 --> 00:52:56.630
+que esa zapa, eh, no la va a llamar uno.
+
+936
+00:52:56.690 --> 00:53:00.190
+Voy a llamarlo r de rep plantillo.
+
+937
+00:53:00.790 --> 00:53:05.030
+Y las dimensiones van a ser 90
+
+938
+00:53:09.680 --> 00:53:13.180
+pora por sí.
+
+939
+00:53:14.290 --> 00:53:16.750
+Es decir, va a ser un poquito más ancho porque cuando
+
+940
+00:53:16.750 --> 00:53:21.510
+hagamos es, se hace la excavación como tal de la zanja,
+
+941
+00:53:21.810 --> 00:53:24.270
+el rep plantillo vacuo y toda esas sanja, en cambio,
+
+942
+00:53:24.290 --> 00:53:29.240
+las zapata es menos hacer un poco menos angosta.
+
+943
+00:53:29.240 --> 00:53:30.440
+Perdón que rep plantillo.
+
+944
+00:53:31.490 --> 00:53:34.220
+Okey, pero en realidad esto es una zapata.
+
+945
+00:53:34.290 --> 00:53:36.100
+Esto son las condiciones de una zapata.
+
+946
+00:53:36.190 --> 00:53:37.980
+Estos son las condiciones de una zapata.
+
+947
+00:53:38.730 --> 00:53:41.060
+Okey, lo único que el espesor es de cero como
+
+948
+00:53:41.130 --> 00:53:42.620
+10, eso es lo único.
+
+949
+00:53:43.530 --> 00:53:47.470
+Sí. Entonces, como ya yo tengo estas zapatas creadas,
+
+950
+00:53:48.520 --> 00:53:53.200
+yo lo que voy a hacer es lo siguiente, voy a seleccionarlas
+
+951
+00:53:54.220 --> 00:53:55.330
+todas las zapatos.
+
+952
+00:53:55.590 --> 00:53:58.970
+Pueden hacerlo con control o seleccionan todo como las
+
+953
+00:53:58.970 --> 00:54:03.590
+enseñé filtro, no selecciona ninguno.
+
+954
+00:54:03.750 --> 00:54:07.110
+Y donde dice cimentación, todas las que dicen cimentación
+
+955
+00:54:08.870 --> 00:54:11.610
+le dan aplicar, le dan aceptar.
+
+956
+00:54:12.590 --> 00:54:14.230
+Y ahora qué vamos a hacer?
+
+957
+00:54:15.150 --> 00:54:19.700
+Estas zapatas es seleccionado en la parte superior.
+
+958
+00:54:20.080 --> 00:54:22.480
+Hay una opción que dice em
+
+959
+00:54:24.270 --> 00:54:26.250
+por tap papeles que es copiar.
+
+960
+00:54:26.310 --> 00:54:30.370
+Es como un control c no es cómo, perdón,
+
+961
+00:54:30.630 --> 00:54:31.810
+es un control c.
+
+962
+00:54:32.650 --> 00:54:35.700
+Y ustedes le dan click y le dan en pegar.
+
+963
+00:54:36.260 --> 00:54:37.580
+Y cuando yo lo voy a pegar,
+
+964
+00:54:37.650 --> 00:54:39.980
+desplazando con la flech hacia abajo, repito,
+
+965
+00:54:39.980 --> 00:54:42.180
+le dan copiar acá o control c.
+
+966
+00:54:42.700 --> 00:54:44.540
+Y luego le dan esta flech hacia abajo
+
+967
+00:54:45.510 --> 00:54:48.310
+y van a pegar donde hice alineado con niveles
+
+968
+00:54:48.420 --> 00:54:51.280
+seleccionados y le doy click.
+
+969
+00:54:53.030 --> 00:54:55.990
+Y en donde yo quiero alinearle alinear
+
+970
+00:54:56.920 --> 00:54:58.270
+estas, eh?
+
+971
+00:55:01.980 --> 00:55:06.310
+Perdón, alinear estas zapatas en el rep plantillo en el
+
+972
+00:55:06.350 --> 00:55:09.390
+nivel que cree y le doy a aceptar.
+
+973
+00:55:11.030 --> 00:55:15.180
+Sí. Entonces fíjense que aquí está,
+
+974
+00:55:16.200 --> 00:55:20.390
+aquí está el tema de rep plantillo que pasa que
+
+975
+00:55:20.950 --> 00:55:22.390
+tienen las mismas dimensiones de la
+
+976
+00:55:22.410 --> 00:55:23.830
+zapata y esas dimensiones.
+
+977
+00:55:24.000 --> 00:55:26.550
+Tengo que cambiar. Tengo que cambiarle, por ejemplo,
+
+978
+00:55:26.570 --> 00:55:29.940
+el espesor, y tengo que cambiarle las dimensiones.
+
+979
+00:55:30.820 --> 00:55:35.580
+Entonces estas cimentaciones que están copiadas y
+
+980
+00:55:35.580 --> 00:55:40.450
+pegadas, le doyen editar tipo y le doy duplicar
+
+981
+00:55:41.090 --> 00:55:42.770
+y coloco el nombre, por ejemplo, r
+
+982
+00:55:47.650 --> 00:55:50.550
+por y le di aceptar.
+
+983
+00:55:52.060 --> 00:55:54.980
+Y el grosor no es cero. 40. Cuál va a ser el grosor?
+
+984
+00:55:55.130 --> 00:55:57.140
+Cero 10, el grosor de rep, plantilla,
+
+985
+00:55:57.680 --> 00:56:00.940
+la anchura y la longitud.
+
+986
+00:56:03.500 --> 00:56:07.800
+Y le doy a aplicar y le voy a aceptar. Sí.
+
+987
+00:56:09.380 --> 00:56:14.360
+Ahora, qué pasa? Vean que rep plantillo se está generando
+
+988
+00:56:15.020 --> 00:56:17.860
+ojo con un desfase de altura
+
+989
+00:56:18.660 --> 00:56:21.000
+porque se copiaron con desfase.
+
+990
+00:56:21.000 --> 00:56:23.360
+Yo no quiero ningún desfase por los momentos.
+
+991
+00:56:23.740 --> 00:56:25.240
+Yo quiero, era un desfase cero.
+
+992
+00:56:25.680 --> 00:56:28.840
+Y le voy a aplicar y en dónde está rep?
+
+993
+00:56:28.840 --> 00:56:32.640
+Plantillo ahora está en la parte inferior. Bueno, ahí se ve.
+
+994
+00:56:34.280 --> 00:56:39.110
+Y yo les hago la pregunta cuánto debería ser el de fase
+
+995
+00:56:39.460 --> 00:56:42.510
+para que el rep plantillo obviamente esté aquí
+
+996
+00:56:42.890 --> 00:56:46.070
+inmediatamente en la cara, influir de la zapata.
+
+997
+00:56:46.200 --> 00:56:47.990
+Cuál debería ser ese de fase?
+
+998
+00:56:52.470 --> 00:56:54.670
+Y los leo, cuál debería ser ese de fase
+
+999
+00:56:56.340 --> 00:56:57.840
+se 10, eh?
+
+1000
+00:56:58.020 --> 00:57:01.160
+Al igual hi en la zapata. Perfecto. Me están siguiendo.
+
+1001
+00:57:01.670 --> 00:57:04.270
+Okay, se lo 10. Entonces que hago
+
+1002
+00:57:05.620 --> 00:57:08.990
+para no complicarme la vida y seleccionar todos los replants
+
+1003
+00:57:09.450 --> 00:57:11.590
+le doy click, botón secundario,
+
+1004
+00:57:12.100 --> 00:57:15.350
+seleccionar todos los ejemplares visibles en la vista.
+
+1005
+00:57:16.560 --> 00:57:18.760
+Y acá el de fase va ser cero.
+
+1006
+00:57:20.280 --> 00:57:23.840
+Y le voy a pitar, está rep plantillo
+
+1007
+00:57:25.520 --> 00:57:26.810
+esta la capa de rep plantillo.
+
+1008
+00:57:26.930 --> 00:57:31.660
+Vea un poco más ancha y con la capa de 10 centímetros.
+
+1009
+00:57:32.810 --> 00:57:35.800
+Ahora lo otro que yo debo
+
+1010
+00:57:36.470 --> 00:57:39.840
+modificar como tal es el tema del material.
+
+1011
+00:57:41.030 --> 00:57:43.600
+Esto está con un material de dos 10.
+
+1012
+00:57:44.460 --> 00:57:48.640
+No tiene que ser con un material de 180, la resistencia
+
+1013
+00:57:48.860 --> 00:57:50.440
+so ya yo lo debo de indicar.
+
+1014
+00:57:51.460 --> 00:57:54.340
+Entonces, que hago botón secunda, selecciono perdón,
+
+1015
+00:57:55.080 --> 00:57:57.220
+un repent botón secundario,
+
+1016
+00:57:57.870 --> 00:58:00.180
+todos los ejemplares visibles en la vista.
+
+1017
+00:58:00.620 --> 00:58:03.380
+Y cambió el material aquí donde dicen material estructural.
+
+1018
+00:58:03.840 --> 00:58:06.680
+Le doy a los tres puntos y acá
+
+1019
+00:58:07.330 --> 00:58:10.840
+selecciona el hormigón 100 o sí.
+
+1020
+00:58:11.520 --> 00:58:14.720
+Y vean lo siguiente, por ejemplo, acá en los
+
+1021
+00:58:16.100 --> 00:58:20.760
+en los gráficos para no visualizar ahorita
+
+1022
+00:58:21.060 --> 00:58:23.800
+el rep plantillo como un hormigón de color gris.
+
+1023
+00:58:25.210 --> 00:58:28.910
+Voy a darle click acá y lo voy a cambiar a otro color.
+
+1024
+00:58:29.450 --> 00:58:31.390
+Ojo, otro color por los momentos.
+
+1025
+00:58:31.850 --> 00:58:32.870
+Voy a hacer cualquier color.
+
+1026
+00:58:32.970 --> 00:58:36.590
+Por ejemplo, puede ser este color pastel, y le voy a aceptar
+
+1027
+00:58:37.450 --> 00:58:40.450
+en los gráficos y en la apariencia
+
+1028
+00:58:41.680 --> 00:58:44.870
+donde dice el hormigón, el color, le doy click
+
+1029
+00:58:45.510 --> 00:58:47.630
+y este color pastel aceptar.
+
+1030
+00:58:48.870 --> 00:58:53.610
+Le doy aplicar le do y aceptar y vean.
+
+1031
+00:58:53.610 --> 00:58:56.730
+Ahora, obviamente aquí exageré como tal
+
+1032
+00:58:57.750 --> 00:59:01.010
+el color del del rep plantillo, no el rep plantillo vuelo.
+
+1033
+00:59:01.010 --> 00:59:03.450
+Y repito, no es ese color pastel,
+
+1034
+00:59:04.580 --> 00:59:08.790
+sino que el rep plantillo como tal lo que quiero ahorita es
+
+1035
+00:59:09.620 --> 00:59:11.590
+separar rep plantillo.
+
+1036
+00:59:11.610 --> 00:59:13.150
+Con respecto a las zapatas, quiero
+
+1037
+00:59:13.750 --> 00:59:16.710
+identificar y ser muy claro en la apariencia ne gráfico
+
+1038
+00:59:17.290 --> 00:59:18.830
+que esto es rep plantillo.
+
+1039
+00:59:19.660 --> 00:59:23.400
+Esto es zapata y no confundirlo, okey,
+
+1040
+00:59:25.380 --> 00:59:26.760
+si estamos claro hasta aquí,
+
+1041
+00:59:27.140 --> 00:59:29.280
+si se ve el tema de rep plantillo
+
+1042
+00:59:30.900 --> 00:59:31.900
+Acá.
+
+1043
+00:59:40.240 --> 00:59:44.140
+Sí, okey, Sí,
+
+1044
+00:59:44.330 --> 00:59:48.420
+acá yo le di las dimensiones Julián de lo voy a seleccionar
+
+1045
+00:59:48.420 --> 00:59:51.540
+de nuevo de por CE.
+
+1046
+00:59:51.540 --> 00:59:55.920
+Lo 10, es decir, tienen, si lo vemos en planta, Julián,
+
+1047
+00:59:57.530 --> 00:59:59.970
+tienen cinco centímetros hacia la izquierda,
+
+1048
+01:00:01.140 --> 01:00:03.450
+hacia la derecha y hacia arriba, arriba de abajo.
+
+1049
+01:00:04.180 --> 01:00:06.830
+Mira un poco, porque cuando se hace la zanja como tal
+
+1050
+01:00:07.730 --> 01:00:11.150
+de de la excavación, en realidad como eh,
+
+1051
+01:00:11.450 --> 01:00:14.990
+es una zanja irregular y es un poco más ancha de lo que
+
+1052
+01:00:15.130 --> 01:00:16.310
+se emplaza la zapata.
+
+1053
+01:00:16.430 --> 01:00:19.610
+Entonces re plantillo cubre todo eso. Okey.
+
+1054
+01:00:20.450 --> 01:00:23.370
+Entonces por eso es un poquito más ancha que las dimensiones
+
+1055
+01:00:23.370 --> 01:00:24.490
+como tal de la zapata.
+
+1056
+01:00:24.550 --> 01:00:28.930
+Sí, entonces sería y pora 10.
+
+1057
+01:00:29.560 --> 01:00:33.290
+Bien. Y creo ser así porque muchas veces,
+
+1058
+01:00:33.290 --> 01:00:37.140
+aunque no lo crean, en realidad solo se toma rep plantillo
+
+1059
+01:00:37.140 --> 01:00:38.900
+con las mismas dimensiones de la zapatos.
+
+1060
+01:00:39.020 --> 01:00:42.780
+Perfecto. Pero por ejemplo, si yo tengo 100 excavaciones,
+
+1061
+01:00:43.000 --> 01:00:45.980
+aunque no lo crean, estos pequeños volúmenes,
+
+1062
+01:00:45.980 --> 01:00:48.700
+no estos pequeños de fases van sumando sumando,
+
+1063
+01:00:48.700 --> 01:00:51.940
+van sumando y es un costo al final de cuenta ya.
+
+1064
+01:00:53.060 --> 01:00:56.060
+Entonces, aquí ya tengo el tema de vean cimentaciones con
+
+1065
+01:00:56.060 --> 01:01:01.020
+zapatas aisladas, columna zapata y de pillo.
+
+1066
+01:01:01.710 --> 01:01:03.740
+Ahora vamos a hacer otro tipo de zapata
+
+1067
+01:01:04.580 --> 01:01:06.300
+o otro tipo no tipo de zapata.
+
+1068
+01:01:06.300 --> 01:01:11.050
+Vamos hacer otro tipo de cimentación, eh? Vamos a hacer acá.
+
+1069
+01:01:11.110 --> 01:01:12.890
+Voy a regresarme una vista en planta.
+
+1070
+01:01:14.150 --> 01:01:18.560
+Voy a ir a la vista en planta, que será la
+
+1071
+01:01:19.450 --> 01:01:20.680
+vista en planta baja.
+
+1072
+01:01:20.750 --> 01:01:22.520
+Esta vista en planta baja. Sí.
+
+1073
+01:01:23.790 --> 01:01:26.050
+Okey, triste en plano,
+
+1074
+01:01:26.270 --> 01:01:29.030
+ya, eh?
+
+1075
+01:01:29.370 --> 01:01:32.750
+Sí, sí, se puede modelar la ojo.
+
+1076
+01:01:32.770 --> 01:01:35.550
+La el tema de excavación. Ojo.
+
+1077
+01:01:36.130 --> 01:01:37.790
+Eso sí, ya lleva otras consideraciones.
+
+1078
+01:01:37.800 --> 01:01:39.830
+Está a aunado mucho a la parte
+
+1079
+01:01:41.090 --> 01:01:44.230
+que pudiera hacerla así no la parte je técnica, pero sí,
+
+1080
+01:01:44.230 --> 01:01:48.270
+la parte de taludes y demás llev algunas consideraciones
+
+1081
+01:01:48.550 --> 01:01:52.030
+especiales, pero sí se puede en realidad
+
+1082
+01:01:54.690 --> 01:01:56.540
+para nuestra parte estructural.
+
+1083
+01:01:56.540 --> 01:01:59.260
+Yo lo que hago es para no complicarme tanto la vida de
+
+1084
+01:01:59.260 --> 01:02:02.940
+generar un talud, no por el estilo, es tomar un desperdicio,
+
+1085
+01:02:02.940 --> 01:02:04.420
+decir, haciendo un poco más ancho,
+
+1086
+01:02:04.420 --> 01:02:06.340
+lo que es el el rep plantillo.
+
+1087
+01:02:07.330 --> 01:02:11.260
+Sí, pero bueno, sí, sí, efectivamente se puede.
+
+1088
+01:02:12.190 --> 01:02:15.850
+Okey, Ahora, eh,
+
+1089
+01:02:17.430 --> 01:02:18.860
+tipos de cimentaciones por ejemplo.
+
+1090
+01:02:18.920 --> 01:02:21.080
+Ejemplo, veamos qué pasa con una losa de cimentación.
+
+1091
+01:02:21.760 --> 01:02:25.250
+Qué pasa con una losa de cimentación que voy a ser ahorita?
+
+1092
+01:02:26.340 --> 01:02:28.240
+Voy a generar ojo,
+
+1093
+01:02:28.540 --> 01:02:31.480
+voy a generar ahorita tenemos todas estas columnas.
+
+1094
+01:02:31.780 --> 01:02:36.330
+Sí, che, che, che, che y che.
+
+1095
+01:02:37.570 --> 01:02:40.680
+Ahora vamos a generar una losa de cimentación.
+
+1096
+01:02:40.750 --> 01:02:41.800
+Otro tipo ojo.
+
+1097
+01:02:43.060 --> 01:02:46.480
+No es muy factible que yo en una edificación trabaje con
+
+1098
+01:02:46.690 --> 01:02:49.960
+cinco tipos de cimentaciones yo lo estoy haciendo como,
+
+1099
+01:02:49.990 --> 01:02:54.940
+bien, hizo la la pregunta y luisi fue
+
+1100
+01:02:55.090 --> 01:02:57.340
+luis por motivos de enseñanza.
+
+1101
+01:02:57.370 --> 01:02:59.660
+Okey, por eso yo estoy siendo muchas variaciones.
+
+1102
+01:03:00.420 --> 01:03:04.300
+Entonces acá voy a crear una losa cimentación.
+
+1103
+01:03:05.020 --> 01:03:09.640
+Sí, una losa de cimentación que va abarcar lo que vendría a
+
+1104
+01:03:09.640 --> 01:03:14.380
+ser elg b y el g a desde el g
+
+1105
+01:03:15.180 --> 01:03:17.300
+b a y va abarcar el
+
+1106
+01:03:19.270 --> 01:03:21.580
+desde el hasta el el g.
+
+1107
+01:03:24.880 --> 01:03:27.300
+Sí, voy a trabajar con una losa de cimentación.
+
+1108
+01:03:29.060 --> 01:03:32.510
+Esta losa de cimentación nos va a permitir ver cómo se
+
+1109
+01:03:32.510 --> 01:03:35.790
+modelan las losas primero menos en re y que pasa con las
+
+1110
+01:03:35.790 --> 01:03:36.790
+losas de cimentación.
+
+1111
+01:03:37.540 --> 01:03:42.190
+Okey, entonces del g b entre el gba a
+
+1112
+01:03:42.430 --> 01:03:46.740
+y del g al l, g y
+
+1113
+01:03:48.090 --> 01:03:51.420
+10, perdón del g al LJ.
+
+1114
+01:03:51.890 --> 01:03:56.170
+Okey. Entonces voy a regresarme
+
+1115
+01:03:56.170 --> 01:03:58.370
+acá y vean acá.
+
+1116
+01:03:58.750 --> 01:04:01.650
+Si ustedes se dan cuenta en el nivel de profundidad de
+
+1117
+01:04:01.650 --> 01:04:04.330
+desplante, voy a crear esa losa de cimentación,
+
+1118
+01:04:05.510 --> 01:04:06.890
+esa losa de cimentación.
+
+1119
+01:04:07.070 --> 01:04:09.450
+Lo primero que yo voy a hacer es es,
+
+1120
+01:04:10.510 --> 01:04:11.930
+voy a hacer un bosquejo,
+
+1121
+01:04:11.950 --> 01:04:15.210
+una especie de bosquejo o de esquema de dónde?
+
+1122
+01:04:15.250 --> 01:04:17.370
+A dónde va a ir sa losa de cimentación.
+
+1123
+01:04:18.040 --> 01:04:19.890
+Okey, repito que, por ejemplo,
+
+1124
+01:04:19.950 --> 01:04:22.490
+las dimensiones de una de los cimentación deben provenir de
+
+1125
+01:04:22.490 --> 01:04:26.250
+un cálculo yo de verificar temas de diseño,
+
+1126
+01:04:26.250 --> 01:04:27.730
+flexión temas de funcionamiento.
+
+1127
+01:04:27.930 --> 01:04:31.410
+Y por eso se trabaja con el espesor, eh,
+
+1128
+01:04:31.800 --> 01:04:33.690
+requerido que tenga celosa de cimentación.
+
+1129
+01:04:33.770 --> 01:04:36.670
+Y también se va a trabajar con, eh,
+
+1130
+01:04:36.670 --> 01:04:39.030
+las dimensiones por área de la losa de cimentación,
+
+1131
+01:04:39.220 --> 01:04:42.190
+partiendo de que los esfuerzos que se transmiten un terreno
+
+1132
+01:04:42.370 --> 01:04:44.270
+es esfuerzo igual la carga entre área,
+
+1133
+01:04:44.840 --> 01:04:46.630
+mayor área disminuyen los
+
+1134
+01:04:46.710 --> 01:04:47.990
+esfuerzos que se transmiten al terreno.
+
+1135
+01:04:48.130 --> 01:04:50.550
+Por eso, mientras mayor salen las dimensiones,
+
+1136
+01:04:50.550 --> 01:04:52.910
+la losa de cimentación menor son los
+
+1137
+01:04:53.030 --> 01:04:54.070
+esfuerzos que se transmiten al terreno.
+
+1138
+01:04:54.210 --> 01:04:59.190
+Son un poquito la y ese es un poquito,
+
+1139
+01:05:02.040 --> 01:05:03.500
+la la, la premisa ya
+
+1140
+01:05:08.960 --> 01:05:10.980
+es, eh, no de arriba hacia abajo.
+
+1141
+01:05:11.240 --> 01:05:13.580
+Daniel, tu pregunta, por ejemplo,
+
+1142
+01:05:13.680 --> 01:05:15.860
+si yo me paro en el nivel de desplante,
+
+1143
+01:05:16.450 --> 01:05:19.720
+todo lo que haga la cara de la loa ahorita lo vamos a ver,
+
+1144
+01:05:20.300 --> 01:05:23.280
+va a ser desde el nivel hacia abajo.
+
+1145
+01:05:24.010 --> 01:05:26.690
+Y por eso le dimos un defa, el tema de las columnas.
+
+1146
+01:05:27.980 --> 01:05:30.040
+Okey, ya listo.
+
+1147
+01:05:30.200 --> 01:05:32.280
+Entonces, perfecto, no te preocupes de nivel.
+
+1148
+01:05:32.480 --> 01:05:36.890
+Entonces estoy acá uno de los errores que cuando se va a
+
+1149
+01:05:36.890 --> 01:05:41.730
+dibujar una losa de cimentación y esa losa de cimentación
+
+1150
+01:05:42.770 --> 01:05:46.400
+tiene, por ejemplo, un de fase, es decir,
+
+1151
+01:05:46.660 --> 01:05:49.560
+no tengo un eje como tal no decir no comienzan un eje y
+
+1152
+01:05:49.560 --> 01:05:53.110
+termina un eje uno de los errores es que se comienza a
+
+1153
+01:05:53.110 --> 01:05:57.770
+modelar la losa después un poco complicado, no poder, eh,
+
+1154
+01:05:58.360 --> 01:06:01.480
+definir como tal donde vas a los yo.
+
+1155
+01:06:01.480 --> 01:06:05.400
+Lo que voy a hacer acá es que le voy a dar un desfase de un
+
+1156
+01:06:05.410 --> 01:06:06.480
+metro hacia la izquierda,
+
+1157
+01:06:08.600 --> 01:06:11.340
+un metro hacia un metro hacia la derecha,
+
+1158
+01:06:12.520 --> 01:06:15.940
+un metro hacia arriba y un metro hacia abajo ya.
+
+1159
+01:06:18.210 --> 01:06:21.730
+Y para esto, vamos a usar las líneas de detalle
+
+1160
+01:06:22.710 --> 01:06:25.750
+en revvit, como sucede mucho en autocar,
+
+1161
+01:06:25.750 --> 01:06:28.350
+podemos dibujar líneas bevis lo permite también.
+
+1162
+01:06:28.910 --> 01:06:31.910
+Y eso se denomina líneas de detalle o guitar lines.
+
+1163
+01:06:32.770 --> 01:06:34.830
+El atajo es de l.
+
+1164
+01:06:36.390 --> 01:06:39.090
+Las líneas de detalle me permite hacer muchas cosas
+
+1165
+01:06:40.110 --> 01:06:41.970
+rer poder, eh?
+
+1166
+01:06:43.110 --> 01:06:45.610
+El memento de modelar un elemento que yo
+
+1167
+01:06:46.440 --> 01:06:49.090
+indique una línea y hasta esa línea va a ir en elemento.
+
+1168
+01:06:49.090 --> 01:06:51.250
+Es decir, básicamente me permite muchas cosas
+
+1169
+01:06:51.820 --> 01:06:52.890
+hasta hacer tablas.
+
+1170
+01:06:53.070 --> 01:06:54.810
+Muchas, muchas cosas que vamos ir viendo,
+
+1171
+01:06:55.240 --> 01:06:57.890
+pero ahorita me va a permitir como una referencia.
+
+1172
+01:06:58.410 --> 01:07:01.290
+O sea, básicamente ahorita la línea de detalle me va a
+
+1173
+01:07:01.410 --> 01:07:05.450
+permitir dibujar un rectángulo, sí, dibujar un rectángulo.
+
+1174
+01:07:06.560 --> 01:07:08.080
+Y cuando yo vaya a dibujar la losa,
+
+1175
+01:07:08.200 --> 01:07:12.960
+entonces ya yo tengo esta este contorno y dibujo la losa
+
+1176
+01:07:12.960 --> 01:07:14.240
+sobre contorno y listo.
+
+1177
+01:07:15.410 --> 01:07:20.150
+El atajo es de l y también lo con lo consiguen como icono en
+
+1178
+01:07:20.150 --> 01:07:24.120
+la parte de anotar y en la parte detalle.
+
+1179
+01:07:24.460 --> 01:07:28.180
+Línea de detalle. Sí, repito,
+
+1180
+01:07:28.480 --> 01:07:30.910
+anotar línea de detalle.
+
+1181
+01:07:31.830 --> 01:07:33.290
+Entonces le vamos a dar click.
+
+1182
+01:07:33.410 --> 01:07:36.610
+Y esto básicamente es dibujar una línea.
+
+1183
+01:07:37.030 --> 01:07:39.890
+Me permite dibujar una línea, un rectángulo,
+
+1184
+01:07:40.550 --> 01:07:42.570
+un polígono, eh?
+
+1185
+01:07:42.830 --> 01:07:44.570
+Me permite dibujar un arco.
+
+1186
+01:07:44.670 --> 01:07:45.850
+Me permite dibujar,
+
+1187
+01:07:46.550 --> 01:07:48.970
+elipse circunstancia y me permite dibujar varias cosas,
+
+1188
+01:07:49.030 --> 01:07:51.370
+la verdad, pero ya me enfocar en línea ahorita.
+
+1189
+01:07:51.370 --> 01:07:51.730
+Vamos a ver,
+
+1190
+01:07:52.430 --> 01:07:56.860
+sí y listo.
+
+1191
+01:07:56.980 --> 01:08:01.500
+Rodrigo, no, no, no te preocupes. Cualquier cosa. Si, si.
+
+1192
+01:08:01.500 --> 01:08:02.860
+Yo sé que te sales de la reunión,
+
+1193
+01:08:02.960 --> 01:08:04.460
+yo te justifico la asistencia.
+
+1194
+01:08:04.460 --> 01:08:06.330
+No, no te preocupes ya.
+
+1195
+01:08:06.930 --> 01:08:10.410
+Entonces, acá un metro a partir del ej,
+
+1196
+01:08:11.250 --> 01:08:14.330
+a partir del ej y a partir del e i b.
+
+1197
+01:08:15.160 --> 01:08:18.440
+Entonces, a partir del yo, voy a colocar acá
+
+1198
+01:08:19.010 --> 01:08:22.720
+hacia la izquierda, vea dando click como referencia,
+
+1199
+01:08:22.720 --> 01:08:27.680
+vuelvo y repito, anotar línea de detalle acá
+
+1200
+01:08:28.830 --> 01:08:32.450
+dibujo la línea y en el punto de intercepción del
+
+1201
+01:08:33.140 --> 01:08:34.970
+hacia la izquierda, un metro.
+
+1202
+01:08:35.750 --> 01:08:38.460
+Le doy escape, eh?
+
+1203
+01:08:39.780 --> 01:08:42.660
+Y lo que voy a hacer ahora, fíjense es
+
+1204
+01:08:43.480 --> 01:08:46.180
+de esa misma línea de detalle.
+
+1205
+01:08:47.320 --> 01:08:49.180
+Voy a modelar hacia arriba este.
+
+1206
+01:08:50.460 --> 01:08:53.460
+Y para salir de la acción, le dan escape
+
+1207
+01:08:54.140 --> 01:08:55.940
+y le dan click hasta est.
+
+1208
+01:08:55.940 --> 01:09:00.410
+Este esta línea y le vuelva a dar un desfase
+
+1209
+01:09:02.690 --> 01:09:05.050
+y le vuelva a dar un desfase como tal,
+
+1210
+01:09:06.650 --> 01:09:08.270
+eh, de l.
+
+1211
+01:09:08.820 --> 01:09:11.950
+Pues ya pueden escribir atrás automáticamente línea de
+
+1212
+01:09:11.950 --> 01:09:15.830
+detalle y un metro hacia arriba
+
+1213
+01:09:19.100 --> 01:09:20.820
+y un metro hacia abajo.
+
+1214
+01:09:22.410 --> 01:09:24.470
+Voy a escribir, inclusive el valor de uno.
+
+1215
+01:09:24.930 --> 01:09:28.530
+Le dan entro, son líneas, ojo, son líneas.
+
+1216
+01:09:28.950 --> 01:09:33.860
+Si yo le doy dos veces escape, me salgo básicamente de de la
+
+1217
+01:09:35.250 --> 01:09:36.910
+la parte de dibujo.
+
+1218
+01:09:37.290 --> 01:09:40.870
+Ya le vuelvo a dar el at tajo de l y se activa
+
+1219
+01:09:40.890 --> 01:09:42.960
+automáticamente, eh?
+
+1220
+01:09:43.480 --> 01:09:46.760
+Y voy de nuevo, un metro hacia la derecha.
+
+1221
+01:09:49.830 --> 01:09:52.250
+Le doy escape y le do a escape.
+
+1222
+01:09:52.610 --> 01:09:55.130
+Y le doy click un metro hacia arriba
+
+1223
+01:09:56.640 --> 01:10:00.360
+y un metro hacia abajo, eh?
+
+1224
+01:10:02.200 --> 01:10:03.840
+Y básicamente de l
+
+1225
+01:10:05.110 --> 01:10:08.250
+ya puede unir este punto con este punto.
+
+1226
+01:10:09.250 --> 01:10:12.690
+Y este punto con este punto le di escape.
+
+1227
+01:10:14.430 --> 01:10:17.370
+Por ejemplo, esta línea que está acá, yo la puedo eliminar.
+
+1228
+01:10:17.810 --> 01:10:19.730
+Y esta línea que está acá, yo la puedo eliminar.
+
+1229
+01:10:20.250 --> 01:10:21.690
+Y esta va ser el contorno.
+
+1230
+01:10:22.310 --> 01:10:24.170
+Va a estar melosa, melosa de cimentación.
+
+1231
+01:10:25.510 --> 01:10:30.210
+Sí, este solo única y exclusivamente es para yo saber
+
+1232
+01:10:30.390 --> 01:10:33.130
+el contorno de la losa de cimentación.
+
+1233
+01:10:35.420 --> 01:10:39.950
+Okey, lo básicamente estoy dibujando lo que uno hacen auto
+
+1234
+01:10:39.950 --> 01:10:43.950
+total siempre en anotar línea de detalle.
+
+1235
+01:10:45.040 --> 01:10:47.640
+Sí. Y luego estas líneas de detalle,
+
+1236
+01:10:48.460 --> 01:10:51.000
+si yo quiero que salgan en el plano, pueden salir.
+
+1237
+01:10:51.180 --> 01:10:53.280
+Si yo quiero que no salgan, no salen en el plano.
+
+1238
+01:10:53.280 --> 01:10:55.720
+Estoy viendo muy hirviendo, pero yo lo utilizo más que
+
+1239
+01:10:55.720 --> 01:10:56.840
+todo para referencia.
+
+1240
+01:10:57.390 --> 01:10:59.880
+Okey, que me sirvan de referencia, por ejemplo,
+
+1241
+01:10:59.880 --> 01:11:02.160
+cuando de detallemos los elementos de hormigón armado,
+
+1242
+01:11:02.160 --> 01:11:04.080
+esto lo vamos a usar un montón porque me sirve de
+
+1243
+01:11:04.080 --> 01:11:05.240
+referencia ya.
+
+1244
+01:11:06.660 --> 01:11:10.220
+Entonces ahora voy a ir a la parte de estructura.
+
+1245
+01:11:10.860 --> 01:11:11.900
+Y hay dos opciones.
+
+1246
+01:11:13.850 --> 01:11:18.750
+Está la opción de suelo y está la opción de, eh,
+
+1247
+01:11:19.820 --> 01:11:21.790
+losa en cimentación.
+
+1248
+01:11:22.650 --> 01:11:24.440
+Cuál es la diferencia entre uno y la otro?
+
+1249
+01:11:25.390 --> 01:11:29.000
+Esta de suelo en que se suena contradictorio es para losas
+
+1250
+01:11:29.100 --> 01:11:32.180
+de entre piso, losas de nivel?
+
+1251
+01:11:32.840 --> 01:11:34.770
+Sí, en cambio,
+
+1252
+01:11:35.120 --> 01:11:37.970
+esta es para losas de cimentación porque está en la
+
+1253
+01:11:37.970 --> 01:11:39.170
+categoría de cimentación.
+
+1254
+01:11:40.130 --> 01:11:42.080
+Ambas se modelan de la misma manera.
+
+1255
+01:11:42.080 --> 01:11:44.320
+Ya van a ver que cuando modelemos una losa maciza,
+
+1256
+01:11:44.580 --> 01:11:48.040
+que no sea losa de cimentación, es exactamente lo mismo.
+
+1257
+01:11:48.420 --> 01:11:50.160
+Se modela de la misma manera.
+
+1258
+01:11:51.200 --> 01:11:55.140
+Lo que varía realmente es para las tablas de cantidades,
+
+1259
+01:11:55.140 --> 01:11:56.140
+cómo se discret?
+
+1260
+01:11:56.140 --> 01:11:58.460
+Dicen las tablas de cantidades, pero el modelo es igual,
+
+1261
+01:11:59.480 --> 01:12:02.610
+pero como estamos en lamentación, entonces trabajamos acá.
+
+1262
+01:12:04.210 --> 01:12:06.670
+Entonces, vamos a hacer lo siguiente.
+
+1263
+01:12:09.390 --> 01:12:11.250
+Voy a dar la CLI aquí donde dice losa,
+
+1264
+01:12:12.010 --> 01:12:14.950
+y vamos a trabajar con cimentación estructural.
+
+1265
+01:12:15.050 --> 01:12:16.670
+Le doy en esta flech hacia abajo,
+
+1266
+01:12:16.670 --> 01:12:20.490
+cimentación estructural aquí.
+
+1267
+01:12:20.510 --> 01:12:23.690
+Me va a salir una familia de sistema por defecto
+
+1268
+01:12:24.270 --> 01:12:25.970
+que vamos a darle, editar tipo.
+
+1269
+01:12:26.170 --> 01:12:28.250
+O sea, salen varias losas de cimentación
+
+1270
+01:12:29.050 --> 01:12:32.110
+y yo voy a darle cl, editar tipo, duplicar.
+
+1271
+01:12:33.380 --> 01:12:37.060
+Y vamos a colocar acá losa espesor,
+
+1272
+01:12:37.290 --> 01:12:38.660
+30 centímetros.
+
+1273
+01:12:40.270 --> 01:12:44.090
+Te dije aceptar. Y a diferencia de lo que sucede con las
+
+1274
+01:12:44.130 --> 01:12:48.440
+columnas y con las zapatas que las potas,
+
+1275
+01:12:48.440 --> 01:12:53.000
+básicamente me permite modificarlas, eh, en este apartado,
+
+1276
+01:12:53.000 --> 01:12:54.440
+en las propiedades acá,
+
+1277
+01:12:54.440 --> 01:12:56.480
+tengo que ingresar a la parte de estructura
+
+1278
+01:12:57.400 --> 01:12:58.400
+y le voy a editar.
+
+1279
+01:12:59.990 --> 01:13:03.250
+Sí. Y aquí en editar, voy a cambiar dos parámetros,
+
+1280
+01:13:03.630 --> 01:13:05.410
+grosor y material.
+
+1281
+01:13:06.640 --> 01:13:10.890
+Sí. Entonces le doy click aquí y va a ser cero.
+
+1282
+01:13:12.250 --> 01:13:14.780
+Y aquí en material, le doy estos tres puntos
+
+1283
+01:13:15.500 --> 01:13:17.980
+y vamos a seleccionar el 210.
+
+1284
+01:13:18.890 --> 01:13:23.340
+Le doy aceptar, aceptar, aplicar,
+
+1285
+01:13:23.930 --> 01:13:27.280
+aceptar, y para modelarle losamos hirviendo
+
+1286
+01:13:27.960 --> 01:13:30.000
+distintas alternativas en la los entrepiso.
+
+1287
+01:13:30.000 --> 01:13:31.840
+Pero esta para losa de cimentación.
+
+1288
+01:13:32.500 --> 01:13:36.720
+Lo que vamos a hacer es que aquella una opción
+
+1289
+01:13:38.030 --> 01:13:39.810
+en la parte superior es por rectángulo,
+
+1290
+01:13:40.200 --> 01:13:42.210
+dice rectángulo, y lo hay click.
+
+1291
+01:13:42.970 --> 01:13:46.130
+Y yo lo voy a dar desde este primer punto
+
+1292
+01:13:47.680 --> 01:13:51.960
+y dejando presionado al clip principal hasta el vert puesto
+
+1293
+01:13:52.130 --> 01:13:54.400
+hasta donde va a llegar la losa de cimentación.
+
+1294
+01:13:55.490 --> 01:13:57.580
+Y le doy click. Sí.
+
+1295
+01:13:59.020 --> 01:14:02.140
+Y acá en la parte superior donde hice finalizar
+
+1296
+01:14:02.650 --> 01:14:05.900
+modo de edición, decir que está check, el contorno,
+
+1297
+01:14:06.040 --> 01:14:11.000
+le doy click, le doy en escape y vean que ahí está
+
+1298
+01:14:11.180 --> 01:14:12.480
+la losa de cimentación.
+
+1299
+01:14:14.640 --> 01:14:18.470
+Okey, les va a salir esta lita,
+
+1300
+01:14:18.610 --> 01:14:23.310
+que es una simbología para los detallados esta flech.
+
+1301
+01:14:23.370 --> 01:14:25.670
+Si ustedes quieren la dejan la verdad,
+
+1302
+01:14:25.820 --> 01:14:28.430
+este símbolo lo pueden eliminar porque nosotros vamos a
+
+1303
+01:14:28.430 --> 01:14:31.790
+hacer un detallado de las losas y demás necesariamente.
+
+1304
+01:14:32.050 --> 01:14:34.940
+No, no tiene que ir la simbología.
+
+1305
+01:14:35.940 --> 01:14:37.380
+Nosotros lo vamos a hacer, eh?
+
+1306
+01:14:37.560 --> 01:14:42.060
+Lo selecciono, le doy click, le doy dle.
+
+1307
+01:14:42.860 --> 01:14:46.510
+O en la parte superior le tiene la x, okey?
+
+1308
+01:14:47.550 --> 01:14:49.470
+Y cuando yo me voy al tres d,
+
+1309
+01:14:50.760 --> 01:14:53.600
+ahí está la losa, eh?
+
+1310
+01:14:54.110 --> 01:14:57.240
+Ahí está la losa. Ahora, cuál es el problema
+
+1311
+01:14:58.260 --> 01:14:59.400
+que se está dibujando?
+
+1312
+01:14:59.400 --> 01:15:03.080
+Como hizo la pregunta de Daniel desde la cara superior,
+
+1313
+01:15:05.300 --> 01:15:07.380
+y tiene que ir al desplante, decir,
+
+1314
+01:15:07.380 --> 01:15:10.260
+tiene que la cara inferior de es que tendría que hacer
+
+1315
+01:15:10.650 --> 01:15:13.170
+hacerle un de fácil hacer de fácil.
+
+1316
+01:15:13.170 --> 01:15:14.690
+Es fácil. Sí.
+
+1317
+01:15:19.470 --> 01:15:23.410
+Ah, listo, eh, Henry, para que salga el hash.
+
+1318
+01:15:23.910 --> 01:15:26.730
+Ok, igual esto lo va viviendo con calm en materiales.
+
+1319
+01:15:26.730 --> 01:15:28.730
+Le voy a mostrar muchas cosas interesantes los materiales,
+
+1320
+01:15:28.730 --> 01:15:32.130
+pero dándote una una previa a quién materiales.
+
+1321
+01:15:33.800 --> 01:15:36.740
+Hay una opción que dice en gráficos
+
+1322
+01:15:37.970 --> 01:15:40.690
+y dice eh, patrón dice patrón.
+
+1323
+01:15:41.710 --> 01:15:45.310
+Y hasta en los patrones les puedes ir dando los patrones.
+
+1324
+01:15:45.310 --> 01:15:47.190
+Por ejemplo, ahorita este tiene arena que no debería esa
+
+1325
+01:15:47.190 --> 01:15:50.790
+arena, pero puedes darle arena hormigón ahí.
+
+1326
+01:15:50.790 --> 01:15:55.670
+Le das, los has para primer plano y para patrones de corte.
+
+1327
+01:15:58.650 --> 01:16:01.130
+Entonces, por ejemplo, si yo cambia acá y le coloco el de
+
+1328
+01:16:01.130 --> 01:16:05.280
+hormigón, que es el que corresponde, entonces ahí cambia.
+
+1329
+01:16:06.060 --> 01:16:07.360
+Sí, ahí se ve de hormigón
+
+1330
+01:16:12.870 --> 01:16:16.580
+listo dentro hay problema por si tú imagino que debe llevar
+
+1331
+01:16:16.580 --> 01:16:17.820
+juntas a dilatación unión.
+
+1332
+01:16:18.080 --> 01:16:20.260
+Esa se dibujan con líneas o se colocan?
+
+1333
+01:16:20.320 --> 01:16:23.580
+No, esa es la y las vamos a detallar Daniel en los
+
+1334
+01:16:23.580 --> 01:16:25.300
+planos, en los planos.
+
+1335
+01:16:26.080 --> 01:16:29.540
+No, no, no se muda, sino que se detalla con una especie de
+
+1336
+01:16:29.540 --> 01:16:32.180
+break line que básicamente aquí vamos a
+
+1337
+01:16:33.020 --> 01:16:35.860
+a resaltar donde es la junta dilatación y como
+
+1338
+01:16:36.840 --> 01:16:39.980
+se identifica en el plano, modelarlo como tal.
+
+1339
+01:16:39.980 --> 01:16:41.380
+No, no, no se modela.
+
+1340
+01:16:43.010 --> 01:16:47.840
+Okey, listo, listo. Perfecto, Daniel.
+
+1341
+01:16:48.640 --> 01:16:51.660
+Y y vean qué tenemos que hacer acá.
+
+1342
+01:16:52.880 --> 01:16:53.940
+No, no te preocupes, Daniel.
+
+1343
+01:16:54.160 --> 01:16:58.260
+No te preocupes, Henry a ti tendría que darle
+
+1344
+01:16:58.920 --> 01:17:00.300
+el de fase.
+
+1345
+01:17:00.960 --> 01:17:04.420
+Sí. Y aquí para las losas es más sencillo el de
+
+1346
+01:17:04.430 --> 01:17:05.700
+fases a partir de un nivel.
+
+1347
+01:17:06.740 --> 01:17:10.920
+Entonces, si yo le doy cero punto, por ejemplo, menos
+
+1348
+01:17:13.380 --> 01:17:14.640
+el des fa es hacia abajo.
+
+1349
+01:17:15.400 --> 01:17:17.900
+Sí. Pero si yo le doy positivo,
+
+1350
+01:17:20.000 --> 01:17:22.300
+que es el espesor de la losa aplicar,
+
+1351
+01:17:22.900 --> 01:17:27.360
+vean que ahora si ubica en la cara del nivel de estancia,
+
+1352
+01:17:27.640 --> 01:17:29.120
+y ahí está los alimentación,
+
+1353
+01:17:31.170 --> 01:17:33.750
+okey, es mucho más sencillo.
+
+1354
+01:17:33.750 --> 01:17:35.270
+Aquí los del tema es fácil.
+
+1355
+01:17:36.560 --> 01:17:39.470
+Ahora vamos a colocarle los elementos, columnas,
+
+1356
+01:17:40.410 --> 01:17:42.350
+los elementos columnas antes de empezar
+
+1357
+01:17:42.350 --> 01:17:43.470
+los elementos columnas.
+
+1358
+01:17:44.700 --> 01:17:46.580
+Y si estamos claros hasta aquí,
+
+1359
+01:17:46.680 --> 01:17:50.540
+ven como ya vamos avanzando muy bien a este.
+
+1360
+01:17:50.540 --> 01:17:53.020
+Sí, voy a enviar tema de rep plantillo y demás
+
+1361
+01:17:53.600 --> 01:17:56.940
+ya un poco el tema rep plantillo sería más de lo mismo,
+
+1362
+01:17:58.360 --> 01:18:00.610
+pero ya le hice la explicación y yo
+
+1363
+01:18:00.610 --> 01:18:01.730
+creo que aquí lo pueden aplicar.
+
+1364
+01:18:01.730 --> 01:18:02.930
+Sí. Sí, vamos bien, hasta aquí
+
+1365
+01:18:04.060 --> 01:18:07.600
+para que vayamos a hablar con columnas, eh?
+
+1366
+01:18:07.770 --> 01:18:09.880
+Vamos a aplicar los puntos de apoyo de la pluma.
+
+1367
+01:18:10.100 --> 01:18:13.960
+Sí, sobre, tenemos siete minutos. Ay.
+
+1368
+01:18:14.700 --> 01:18:19.360
+Va a ver esta clase dura siete nueve día. No estamos bien.
+
+1369
+01:18:19.360 --> 01:18:23.080
+En siete minutos. Tomamos el break, por favor. Ya.
+
+1370
+01:18:23.980 --> 01:18:25.280
+Ya que media pasado, por favor.
+
+1371
+01:18:25.300 --> 01:18:27.520
+Las ocho y media en siete minutos, tomamos el break
+
+1372
+01:18:28.700 --> 01:18:31.480
+que vamos a colocar inmediatamente los puntos.
+
+1373
+01:18:32.220 --> 01:18:36.640
+Si los puntos de las columnas vamos a colocar, fíjense
+
+1374
+01:18:37.530 --> 01:18:38.920
+estos cuatro.
+
+1375
+01:18:39.050 --> 01:18:40.680
+Bueno, no son cuatro, son más de cuatro.
+
+1376
+01:18:41.260 --> 01:18:45.520
+Iba a decir cuatro, son uno, dos, tres, cuatro, cinco,
+
+1377
+01:18:46.350 --> 01:18:47.800
+seis, siete.
+
+1378
+01:18:48.660 --> 01:18:50.330
+Todos tienen la misma dimensión.
+
+1379
+01:18:50.550 --> 01:18:52.330
+Una columna de 40 por 40,
+
+1380
+01:18:52.590 --> 01:18:55.010
+ya nosotros creamos la columna de 40 por 40.
+
+1381
+01:18:55.080 --> 01:18:58.490
+Qué podemos hacer copiar? Ya podemos copiar.
+
+1382
+01:18:59.070 --> 01:19:02.290
+Me voy a ir acá vamos. Ir al nivel planta baja.
+
+1383
+01:19:02.470 --> 01:19:06.650
+Lo vamos a modelar de arriba hacia abajo. Si hacia abajo.
+
+1384
+01:19:08.200 --> 01:19:13.120
+Y van a hacer en elv vamos a ver en elv va a ser desde
+
+1385
+01:19:13.120 --> 01:19:17.870
+el hasta el 10 menos seis siete,
+
+1386
+01:19:17.870 --> 01:19:21.070
+porque ahí tengo un muro que vamos ir modelando una caja del
+
+1387
+01:19:21.070 --> 01:19:22.070
+ascensor que vamos ir igual.
+
+1388
+01:19:22.580 --> 01:19:26.030
+Okey? Entonces, sencillamente lo que vamos a hacer es,
+
+1389
+01:19:26.680 --> 01:19:28.110
+selecciona una de las columnas
+
+1390
+01:19:28.200 --> 01:19:29.910
+existentes que ya me va a servir.
+
+1391
+01:19:31.080 --> 01:19:34.000
+Y lo voy a copiar de este punto
+
+1392
+01:19:35.940 --> 01:19:37.170
+hasta este punto.
+
+1393
+01:19:38.380 --> 01:19:41.780
+Vean que cuando yo activo la opción de restringir sólo me
+
+1394
+01:19:41.780 --> 01:19:44.940
+permite copiar en sentido vertical horizontal,
+
+1395
+01:19:45.870 --> 01:19:48.160
+pero no me permite copiar o llegar al
+
+1396
+01:19:48.340 --> 01:19:49.960
+gb que tengo que hacer.
+
+1397
+01:19:50.130 --> 01:19:54.080
+Desactivar la opción de ortogonal y ya me permite cualquier
+
+1398
+01:19:54.080 --> 01:19:55.280
+otro tipo de ángulo.
+
+1399
+01:19:57.080 --> 01:20:01.860
+Entonces aquí copio el g b y va a estar en el e
+
+1400
+01:20:02.440 --> 01:20:05.140
+cuatro, cinco,
+
+1401
+01:20:11.020 --> 01:20:13.900
+ocho, nueve y 10.
+
+1402
+01:20:14.880 --> 01:20:18.740
+Le doy en escape para cerrar la acción. Ok?
+
+1403
+01:20:20.930 --> 01:20:24.940
+Y ahora vamos a ir al tres d y qué va a pasar ahora?
+
+1404
+01:20:25.340 --> 01:20:28.100
+Fíjense que esas columnas que yo he copiado
+
+1405
+01:20:28.900 --> 01:20:30.700
+o esas columnas que copiamos
+
+1406
+01:20:31.320 --> 01:20:33.540
+ya vienen con un de fase de cero 40.
+
+1407
+01:20:34.970 --> 01:20:37.850
+Sí, cuál debería ser el de fase?
+
+1408
+01:20:38.100 --> 01:20:40.690
+Ahora el espesor de la los es CE.
+
+1409
+01:20:43.090 --> 01:20:46.690
+Entonces, en vez de ser cero, cuál debería ser el de fase?
+
+1410
+01:20:47.000 --> 01:20:50.970
+Este de la losa siempre donde se apoye la columna se va ser
+
+1411
+01:20:50.970 --> 01:20:55.510
+el de fácil 30 como lo cambiamos de manera rápida.
+
+1412
+01:20:56.380 --> 01:20:59.670
+Podemos ir acá al nivel planta abajo
+
+1413
+01:21:00.410 --> 01:21:02.350
+con la tecla control seleccionada,
+
+1414
+01:21:02.350 --> 01:21:03.910
+selecciona todas estas columnas
+
+1415
+01:21:06.880 --> 01:21:08.680
+y cambio el de facia.
+
+1416
+01:21:10.180 --> 01:21:14.190
+Le doy a aplicar cuando yo me vaya el tres d, ahí está.
+
+1417
+01:21:16.230 --> 01:21:21.010
+Ojo. Otro dato para que ustedes puedan desplazar la pa,
+
+1418
+01:21:21.110 --> 01:21:23.890
+la la pantalla, sí, hacia arriba, hacia abajo.
+
+1419
+01:21:23.890 --> 01:21:26.770
+Si les quiera derecha, ustedes dejan presionado la scroll
+
+1420
+01:21:27.000 --> 01:21:30.730
+ahorita el maz lo dejan presionado y desplazan hacia la
+
+1421
+01:21:30.730 --> 01:21:33.250
+izquierda, derecha abajo hacia arriba.
+
+1422
+01:21:33.590 --> 01:21:35.810
+No significa que están moviendo el elemento.
+
+1423
+01:21:35.810 --> 01:21:39.530
+Solo están desplazando la pantalla para mover el elemento es
+
+1424
+01:21:39.530 --> 01:21:40.850
+conmover en la parte superior.
+
+1425
+01:21:42.180 --> 01:21:46.520
+Sí, voy ale, click en escape y fíjense que ahora
+
+1426
+01:21:48.240 --> 01:21:51.130
+acá yo tengo las columnas y solo me faltaría
+
+1427
+01:21:52.210 --> 01:21:55.470
+en el eje entre el g.
+
+1428
+01:21:57.190 --> 01:22:00.520
+Y entonces yo acá selecciono,
+
+1429
+01:22:01.220 --> 01:22:04.200
+le doy copiar y copio este.
+
+1430
+01:22:04.960 --> 01:22:09.270
+Y este como esto ya vienen con el de fase, ya van a estar
+
+1431
+01:22:10.140 --> 01:22:12.640
+automáticamente acomodados, no estos que están aquí
+
+1432
+01:22:13.480 --> 01:22:15.360
+y ven que ahí están los puntos de apoyo.
+
+1433
+01:22:16.690 --> 01:22:18.910
+Ok, me lo sabe cimentación.
+
+1434
+01:22:20.890 --> 01:22:22.970
+Y déjenme leer la pregunta.
+
+1435
+01:22:24.060 --> 01:22:26.640
+Hay una pregunta Astrid, buenas noches, astri y gener
+
+1436
+01:22:26.700 --> 01:22:29.480
+so manera consultar de rev también trabaja con curvas de
+
+1437
+01:22:29.480 --> 01:22:33.480
+nivel en caso de que las fundaciones no estén, sí, sí, sí.
+
+1438
+01:22:33.480 --> 01:22:36.570
+Trabaja con curvas de nivel, eh?
+
+1439
+01:22:37.430 --> 01:22:41.890
+Es una especie de blue jeans que at in o blue jean que que
+
+1440
+01:22:41.890 --> 01:22:45.450
+se trabaja en rev que permite trabajar con curvas de
+
+1441
+01:22:45.990 --> 01:22:48.850
+de nivel esto más que toda en la parte topográfica
+
+1442
+01:22:49.410 --> 01:22:51.610
+o que es interesante la parte topográfica.
+
+1443
+01:22:52.240 --> 01:22:57.010
+Okey, pero para que yo no lo lo tengan ahí en mente.
+
+1444
+01:22:57.510 --> 01:22:59.050
+Sí, lo tengan ahí en en me.
+
+1445
+01:23:01.150 --> 01:23:04.910
+Y ahora fíjense que ya tenemos,
+
+1446
+01:23:06.420 --> 01:23:09.400
+eh, la mayoría de los elementos con esta losa dei
+
+1447
+01:23:09.400 --> 01:23:11.320
+alimentación, ya tenemos la mayoría de los elementos
+
+1448
+01:23:11.320 --> 01:23:12.360
+de punto de apoyo.
+
+1449
+01:23:12.960 --> 01:23:14.600
+Y ahora lo que vamos a hacer es,
+
+1450
+01:23:14.600 --> 01:23:19.280
+vamos a trabajar ahora con zapatas exentes o medianeras.
+
+1451
+01:23:20.170 --> 01:23:22.950
+Es decir, voy a tomar el caso, por ejemplo,
+
+1452
+01:23:23.250 --> 01:23:25.710
+aunque voy haciendo muchos casos al mismo tiempo de que
+
+1453
+01:23:25.710 --> 01:23:28.280
+tengo un lindero acá.
+
+1454
+01:23:28.880 --> 01:23:33.690
+Y adicionalmente tengo un Linder acá, ojo, ojo
+
+1455
+01:23:34.320 --> 01:23:35.490
+para que me entienda.
+
+1456
+01:23:36.850 --> 01:23:39.680
+Luego yo voy a añadir una una escalera.
+
+1457
+01:23:40.930 --> 01:23:42.390
+Sí, una escalera.
+
+1458
+01:23:43.270 --> 01:23:45.630
+Y esta escalera obviamente va a superar los
+
+1459
+01:23:45.630 --> 01:23:46.750
+límites del lindero.
+
+1460
+01:23:46.750 --> 01:23:50.190
+Pero en un principio, repito que voy a asumir que, bueno,
+
+1461
+01:23:50.210 --> 01:23:53.050
+nos olvidamos de la escalera y tengo
+
+1462
+01:23:53.720 --> 01:23:58.140
+lindero en la parte superior acá y lindero
+
+1463
+01:23:58.960 --> 01:24:03.200
+en esta, eh, en el y en el g.
+
+1464
+01:24:04.660 --> 01:24:09.020
+Entonces eso me va o me induce que mis elementos,
+
+1465
+01:24:09.020 --> 01:24:12.140
+si este es el lindero, mi elemento zapata,
+
+1466
+01:24:13.020 --> 01:24:17.150
+este ras del lindero y por lo tanto el punto de apoyo
+
+1467
+01:24:17.730 --> 01:24:21.950
+ya tiene que estar también consecuente con el lindero.
+
+1468
+01:24:22.270 --> 01:24:25.310
+Y esto va a generar una excentricidad,
+
+1469
+01:24:27.260 --> 01:24:30.960
+sí, donde este es el centro de masa de la zapata y por lo
+
+1470
+01:24:30.960 --> 01:24:32.880
+tanto, es una zapata excéntrica.
+
+1471
+01:24:33.810 --> 01:24:37.210
+Y esa zapata la vamos a conectar con vigas de cimentación.
+
+1472
+01:24:38.260 --> 01:24:41.570
+Eso lo vamos a hacer después de del break.
+
+1473
+01:24:42.280 --> 01:24:44.410
+Okey, eso lo hacemos después del break y
+
+1474
+01:24:46.740 --> 01:24:51.290
+antes de ir y déjeme la última ación zapata está un nivel
+
+1475
+01:24:51.490 --> 01:24:53.850
+inferior de decir dónde fase 50 centímetros de Silver
+
+1476
+01:24:58.790 --> 01:25:03.250
+ya, eh, Roberto, cuando suceden, eh, estos casos
+
+1477
+01:25:03.870 --> 01:25:08.630
+ojo que, por ejemplo, quieras trabajar con una, sí,
+
+1478
+01:25:08.730 --> 01:25:11.790
+una una zapata, digamos, entre comillas,
+
+1479
+01:25:13.160 --> 01:25:15.990
+inclinadas en la definición de los niveles
+
+1480
+01:25:16.530 --> 01:25:18.190
+ojo en la definición de los niveles
+
+1481
+01:25:19.580 --> 01:25:22.640
+se va a trabajar por ejemplo, o si
+
+1482
+01:25:23.770 --> 01:25:27.350
+lo lo generamos, tienes que trabajar, digamos,
+
+1483
+01:25:27.490 --> 01:25:30.150
+si el de fase es de 50 centímetros, bueno,
+
+1484
+01:25:30.410 --> 01:25:31.990
+va a generar un nivel en cero
+
+1485
+01:25:32.590 --> 01:25:35.560
+y un nivel en 50 sí.
+
+1486
+01:25:36.820 --> 01:25:38.940
+Y Revit permite
+
+1487
+01:25:40.200 --> 01:25:43.530
+generar este nivel inclinado y que el memento de general al
+
+1488
+01:25:43.530 --> 01:25:45.730
+nivel inclinado, bueno, la zapata esté en este
+
+1489
+01:25:45.730 --> 01:25:47.530
+sentido inclinada.
+
+1490
+01:25:48.120 --> 01:25:49.970
+Okey, em,
+
+1491
+01:25:51.220 --> 01:25:54.170
+vamos a ver cómo seguimos avanzando y se los muestro.
+
+1492
+01:25:54.430 --> 01:25:56.730
+No sé si en esta clase me alcanza el tiempo,
+
+1493
+01:25:57.120 --> 01:25:59.210
+sino en principio de la otra para que vean, por ejemplo,
+
+1494
+01:25:59.280 --> 01:26:02.770
+como cómo modelar un elemento inclinado, ya no sea zapata,
+
+1495
+01:26:02.770 --> 01:26:06.560
+sino por ejemplo, puede hacer una viga una, los etcétera,
+
+1496
+01:26:07.290 --> 01:26:10.580
+okey, para que lo puedan visualizar mucho mejor ya
+
+1497
+01:26:12.400 --> 01:26:13.680
+y antes del rápido.
+
+1498
+01:26:14.520 --> 01:26:17.670
+Y estamos bien hasta acá
+
+1499
+01:26:18.410 --> 01:26:19.830
+con la primera parte de la clase.
+
+1500
+01:26:20.340 --> 01:26:22.230
+Bien, contestando la pregunta de Roberto,
+
+1501
+01:26:22.310 --> 01:26:26.590
+vamos a si me alcanza para mostrarte Roberto en esta clase,
+
+1502
+01:26:26.590 --> 01:26:29.830
+sino principio de la de la otra cuando ya terminemos la
+
+1503
+01:26:29.830 --> 01:26:32.110
+parte de todas las cimentaciones que yo tenía previsto.
+
+1504
+01:26:32.300 --> 01:26:36.000
+Okey, tenemos bien hasta acá para que vayamos a un proceso.
+
+1505
+01:26:40.680 --> 01:26:45.620
+Sí, la losa de
+
+1506
+01:26:46.280 --> 01:26:48.980
+ya ya fabia igualmente
+
+1507
+01:26:49.520 --> 01:26:52.900
+cuando lo vayas a hacer de manera usted practicando fabia,
+
+1508
+01:26:53.600 --> 01:26:55.220
+si tienes una confusión,
+
+1509
+01:26:55.220 --> 01:26:57.940
+tú me escribes y yo lo claro la la duda
+
+1510
+01:26:58.640 --> 01:27:01.820
+cuando estés practicando de manera preada sí, si hay,
+
+1511
+01:27:02.170 --> 01:27:04.900
+creo que no, no te concuerda, ya sea,
+
+1512
+01:27:04.900 --> 01:27:06.900
+vamos a tomar listo ni problema.
+
+1513
+01:27:06.900 --> 01:27:08.020
+Vamos a tomar 10 minutos.
+
+1514
+01:27:08.020 --> 01:27:11.340
+Si, como siempre, por favor escriben su
+
+1515
+01:27:12.000 --> 01:27:14.820
+su nombre de apellido para la asistencia 10 minutos
+
+1516
+01:27:14.820 --> 01:27:15.940
+son las ocho y 32.
+
+1517
+01:27:16.550 --> 01:27:18.420
+Regresamos 42. Okey,
+
+1518
+01:27:24.170 --> 01:27:24.830
+buenas noche.
+
+1519
+01:27:24.830 --> 01:27:28.150
+Nos estimados para esta segunda parte de la clase,
+
+1520
+01:27:28.730 --> 01:27:31.670
+por favor, antes de continuar con esta clase,
+
+1521
+01:27:32.530 --> 01:27:34.230
+me confirman que todo esto cae,
+
+1522
+01:27:34.230 --> 01:27:36.110
+que ya están visualizando mi pantalla
+
+1523
+01:27:41.810 --> 01:27:43.210
+a ver listo.
+
+1524
+01:27:43.210 --> 01:27:45.130
+Perfecto. Gracias por confirmar.
+
+1525
+01:27:45.730 --> 01:27:50.170
+Perfecto Antonio, listo, listo. Me lo fabre, eh?
+
+1526
+01:27:51.890 --> 01:27:56.340
+Okey. Ahora créame que ahora con lo del tema de lo que vamos
+
+1527
+01:27:56.420 --> 01:27:59.380
+a manejar de la colinda, no, yo estoy haciendo vuelo.
+
+1528
+01:27:59.380 --> 01:28:02.300
+Y repito, dejarlo claro, eh?
+
+1529
+01:28:02.560 --> 01:28:05.660
+En un proyecto real edificación,
+
+1530
+01:28:05.680 --> 01:28:07.980
+no buscamos tener tantos tipos de
+
+1531
+01:28:09.210 --> 01:28:12.030
+de cimentaciones tanto en tu tipo de columnas.
+
+1532
+01:28:12.180 --> 01:28:15.230
+Okey, eh?
+
+1533
+01:28:15.910 --> 01:28:17.510
+Escribir el nombre por acá por el chat.
+
+1534
+01:28:17.860 --> 01:28:19.710
+Okey, escribir el nombre por el chat.
+
+1535
+01:28:20.330 --> 01:28:21.910
+Sí, eh,
+
+1536
+01:28:23.470 --> 01:28:25.930
+nombre de apellido acá por el chat de zoom y listo.
+
+1537
+01:28:26.790 --> 01:28:28.310
+Entonces, eh, la
+
+1538
+01:28:28.890 --> 01:28:31.990
+la idea no es tener un montón de tipos de segmentaciones,
+
+1539
+01:28:31.990 --> 01:28:35.830
+sino que la la idea es estandarizar,
+
+1540
+01:28:36.740 --> 01:28:39.510
+optimizar procesos, optimizar los elementos.
+
+1541
+01:28:39.930 --> 01:28:44.030
+Yo estoy haciendo distintos tipos de sistemas,
+
+1542
+01:28:44.030 --> 01:28:46.750
+elementos demás, porque les sirve de ustedes como,
+
+1543
+01:28:46.940 --> 01:28:49.590
+como en enseñanza, sobre todo, no.
+
+1544
+01:28:50.270 --> 01:28:52.950
+Entonces, qué pasa si yo tengo una colinda ojo,
+
+1545
+01:28:52.950 --> 01:28:57.190
+yo voy a tomar la colinda a partir de acá y acá.
+
+1546
+01:28:57.890 --> 01:29:02.480
+Sí. Entonces yo tengo toda esa, eh,
+
+1547
+01:29:02.790 --> 01:29:03.880
+toda esa colinda.
+
+1548
+01:29:04.200 --> 01:29:05.480
+Entonces, cómo funcionaría?
+
+1549
+01:29:05.910 --> 01:29:08.960
+Primero voy a definir un tipo de cimentación.
+
+1550
+01:29:09.280 --> 01:29:12.160
+Y yo voy a definir un tipo de cimentación en este sentido.
+
+1551
+01:29:12.300 --> 01:29:15.640
+Por ejemplo, que esta cimentación tenga un metro
+
+1552
+01:29:16.600 --> 01:29:18.840
+y acá tenga uno con más 50.
+
+1553
+01:29:19.560 --> 01:29:23.400
+Y el espesor también se de cero coma y cinco, okay,
+
+1554
+01:29:24.510 --> 01:29:26.800
+cero como, perdón, el espesor ya.
+
+1555
+01:29:27.680 --> 01:29:30.120
+Y las voy a rotar en este sentido,
+
+1556
+01:29:31.170 --> 01:29:32.750
+las que voy a rotar en este sentido,
+
+1557
+01:29:33.320 --> 01:29:37.230
+estas y las que estén en el sentido eh superior.
+
+1558
+01:29:37.630 --> 01:29:40.390
+Entonces van a estar rotadas así ya ya lo vamos hirviendo
+
+1559
+01:29:40.390 --> 01:29:42.070
+para que me puedan comprender.
+
+1560
+01:29:42.220 --> 01:29:45.110
+Okey? Entonces, por ejemplo, esto es sencillo.
+
+1561
+01:29:45.810 --> 01:29:49.510
+Voy a ir a la parte nuevamente, estructura y en estructura.
+
+1562
+01:29:49.650 --> 01:29:52.790
+Voy a ir a la parte de, eh, cimentación,
+
+1563
+01:29:53.070 --> 01:29:54.670
+y voy nuevamente a zapata aislada,
+
+1564
+01:29:54.670 --> 01:29:56.630
+porque esto es el principio de una zapata aislada.
+
+1565
+01:29:57.190 --> 01:29:59.520
+Y le doy click y al darle click,
+
+1566
+01:29:59.540 --> 01:30:01.720
+le voy a dar ahora en editar tipo
+
+1567
+01:30:03.260 --> 01:30:05.630
+como ya va a cambiar las dimensiones de la zapata,
+
+1568
+01:30:05.630 --> 01:30:06.630
+lo voy a duplicar.
+
+1569
+01:30:07.270 --> 01:30:09.830
+Y ahora vamos a trabajar con una zapata dos de
+
+1570
+01:30:11.610 --> 01:30:13.430
+por por CE.
+
+1571
+01:30:14.990 --> 01:30:18.070
+Y le voy a aceptar el grosor de la cimentación
+
+1572
+01:30:18.070 --> 01:30:21.200
+es el ancho.
+
+1573
+01:30:21.340 --> 01:30:24.240
+Voy a dejarlo en la longitud uno
+
+1574
+01:30:25.260 --> 01:30:27.700
+y le doy a aplicar de aceptar.
+
+1575
+01:30:28.740 --> 01:30:31.140
+Entonces, cuando yo voy a colocar acá la zapata,
+
+1576
+01:30:31.340 --> 01:30:32.620
+fíjense que sucede algo.
+
+1577
+01:30:33.380 --> 01:30:38.150
+Yo estoy ubicado en el nivel de planta baja. Primer error.
+
+1578
+01:30:38.970 --> 01:30:41.830
+Sí, yo no voy a colocar la zapata en planta baja.
+
+1579
+01:30:41.890 --> 01:30:45.300
+Por lo tanto, vamos a hacer lo siguiente.
+
+1580
+01:30:47.290 --> 01:30:49.680
+Vamos a ir a nivel de desplante.
+
+1581
+01:30:49.760 --> 01:30:51.880
+Y ahí es donde yo voy a colocar mis zapatas.
+
+1582
+01:30:52.220 --> 01:30:54.360
+Sí, ahí es donde yo voy a colocar mis zapatos.
+
+1583
+01:30:54.880 --> 01:30:58.840
+Entonces, nuevamente, zapata aislada, como ya se creó,
+
+1584
+01:30:58.980 --> 01:31:00.240
+no hay ningún problema.
+
+1585
+01:31:00.720 --> 01:31:03.720
+Y lo primero que tenemos que hacer es rotar como se rotan
+
+1586
+01:31:03.720 --> 01:31:06.280
+las zapatas, como yo les comenté antes de darle click
+
+1587
+01:31:06.840 --> 01:31:11.600
+o la tecla espacio espacio, empiezo a rotar en 90 grados,
+
+1588
+01:31:11.780 --> 01:31:13.240
+yo lo roto en 90 grados.
+
+1589
+01:31:13.800 --> 01:31:15.880
+Y lo voy a dejar acá y click.
+
+1590
+01:31:16.460 --> 01:31:19.490
+Le vi en escape y que sucede
+
+1591
+01:31:20.160 --> 01:31:22.170
+esta zapata que yo estoy colocando,
+
+1592
+01:31:22.540 --> 01:31:24.090
+tengo que respetar el Linder.
+
+1593
+01:31:24.250 --> 01:31:25.770
+Entonces la tengo que desplazar.
+
+1594
+01:31:25.870 --> 01:31:29.690
+La tengo que desplazar de este punto, digamos
+
+1595
+01:31:30.400 --> 01:31:32.090
+acá hasta este punto.
+
+1596
+01:31:33.400 --> 01:31:36.410
+Okay, este es el desplazamiento para eso,
+
+1597
+01:31:36.410 --> 01:31:39.330
+vamos a utilizar la opción de mover desplazar.
+
+1598
+01:31:39.760 --> 01:31:42.010
+Ustedes seleccionan primero la zapata
+
+1599
+01:31:42.530 --> 01:31:45.210
+y le dan click acá en mover o desplazar
+
+1600
+01:31:46.170 --> 01:31:49.010
+y desplazan del punto hasta final
+
+1601
+01:31:49.620 --> 01:31:51.490
+hasta la intercepción punto medio.
+
+1602
+01:31:52.290 --> 01:31:56.850
+Y ahí, básicamente eso es, eh, desplazar la zapata.
+
+1603
+01:31:58.580 --> 01:32:02.600
+Esta zapata que yo estoy desplazando, la vamos a copiar.
+
+1604
+01:32:03.320 --> 01:32:06.280
+Y yo la voy a copiar de este punto ley,
+
+1605
+01:32:06.280 --> 01:32:10.680
+click a la parte superior, copiar de este punto, este punto
+
+1606
+01:32:11.660 --> 01:32:14.330
+hasta este punto, le doy en escape.
+
+1607
+01:32:15.140 --> 01:32:18.890
+Ahora que sucede a tallo, debo respetar ahora.
+
+1608
+01:32:19.170 --> 01:32:21.970
+Y este Linder está restricción que yo le estoy dando.
+
+1609
+01:32:22.690 --> 01:32:26.450
+Y sencillamente lo que tengo que hacer es eleccion y ahora
+
+1610
+01:32:27.100 --> 01:32:31.250
+muevo o desplazo de este punto hasta ta.
+
+1611
+01:32:32.000 --> 01:32:34.110
+Le voy escape, si.
+
+1612
+01:32:36.520 --> 01:32:40.880
+Y ahora las mismas zapatas van a ir en los ejes cuatro,
+
+1613
+01:32:42.790 --> 01:32:46.870
+ocho, nueve y 10, cuatro, perdón,
+
+1614
+01:32:46.980 --> 01:32:51.670
+dije cuatro, cinco y 10, ok,
+
+1615
+01:32:51.670 --> 01:32:53.670
+cuatro, cinco, nueve y 10.
+
+1616
+01:32:54.260 --> 01:32:57.430
+Pero hay una diferencia ya las zapatas no van a ir en este
+
+1617
+01:32:57.430 --> 01:33:00.830
+sentido, sino que tengo que rolas y colocarlas ahora en este
+
+1618
+01:33:00.830 --> 01:33:02.190
+sentido ya.
+
+1619
+01:33:03.030 --> 01:33:05.190
+Entonces, lo que yo voy a hacer ese eleccion
+
+1620
+01:33:07.090 --> 01:33:09.830
+le doy copiar de este punto.
+
+1621
+01:33:10.070 --> 01:33:12.960
+A este punto le doy escape.
+
+1622
+01:33:13.840 --> 01:33:16.880
+Y hay una manera de derrotarlo rápido rápido.
+
+1623
+01:33:17.020 --> 01:33:20.720
+Las zapatas seleccionan y le dan con la tela espacio. Sí.
+
+1624
+01:33:21.100 --> 01:33:23.560
+Repito, seleccionan, le dan con la tela espacio.
+
+1625
+01:33:25.750 --> 01:33:29.660
+Ahora esta zapata tiene que ir del punto medio
+
+1626
+01:33:30.920 --> 01:33:32.990
+hasta acá de la intercepción.
+
+1627
+01:33:34.120 --> 01:33:37.500
+No sé, se le, eh, utilizamos la la opción de mover o
+
+1628
+01:33:37.500 --> 01:33:38.660
+desplazar selección.
+
+1629
+01:33:38.680 --> 01:33:41.900
+No le doy mover del punto medio
+
+1630
+01:33:42.980 --> 01:33:47.260
+e o punto final hasta este punto ya.
+
+1631
+01:33:47.620 --> 01:33:49.580
+Y luego lo único que tengo que hacer es copiar.
+
+1632
+01:33:49.640 --> 01:33:51.100
+Le doy click aquí en copiar
+
+1633
+01:33:51.780 --> 01:33:55.620
+y copio de este punto a este punto a este punto,
+
+1634
+01:33:56.610 --> 01:34:00.540
+este punto y este punto, le doy en escape
+
+1635
+01:34:01.180 --> 01:34:02.780
+y tengo las zapatas en colinda.
+
+1636
+01:34:04.550 --> 01:34:06.450
+Sí, te tengo las zapatas en Colin.
+
+1637
+01:34:06.550 --> 01:34:09.790
+Es decir, tengo todo esto ya.
+
+1638
+01:34:12.450 --> 01:34:15.360
+Ahora que tengo que tomar en cuenta,
+
+1639
+01:34:15.620 --> 01:34:18.440
+lo que debo tomar ahora en cuenta es que lo mismo que yo
+
+1640
+01:34:18.450 --> 01:34:21.480
+acabo de hacer, debo hacerlo o a implementarlo
+
+1641
+01:34:21.540 --> 01:34:22.720
+con las columnas.
+
+1642
+01:34:23.180 --> 01:34:25.520
+Porque si yo modelo la columna aquí,
+
+1643
+01:34:26.750 --> 01:34:30.410
+la columna va a estar por fuera como tal de mi colinda.
+
+1644
+01:34:32.360 --> 01:34:35.460
+Sí. Entonces tengo que hacer lo mismo, desplazar la columna,
+
+1645
+01:34:36.040 --> 01:34:40.620
+lo vean que es muy similar a lo que se hace con las zapatos
+
+1646
+01:34:41.300 --> 01:34:44.260
+y en realidad del modelo es el mismo, sean las zapatas.
+
+1647
+01:34:44.260 --> 01:34:46.100
+Pero lo que hago es cambiar la posición.
+
+1648
+01:34:46.800 --> 01:34:50.060
+Sí, si yo me voy, el d, bueno, así está quedando.
+
+1649
+01:34:50.980 --> 01:34:53.400
+Hey, si yo me voy, el d así está quedando,
+
+1650
+01:34:53.610 --> 01:34:58.430
+obviamente yo tengo que modificar acá el tema de,
+
+1651
+01:34:59.250 --> 01:35:01.790
+eh, los desfase.
+
+1652
+01:35:01.790 --> 01:35:05.920
+Pero para eso primero cambio, perdón para eso.
+
+1653
+01:35:05.980 --> 01:35:09.320
+Modelo no cambio para eso. Primero modelo las columnas.
+
+1654
+01:35:10.020 --> 01:35:13.920
+Sí, para las columnas sencillo, me voy al nivel
+
+1655
+01:35:14.760 --> 01:35:19.420
+de planta baja y en el nivel de planta baja como
+
+1656
+01:35:19.560 --> 01:35:24.420
+tal, tengo que modelar la columna acá, acá, acá
+
+1657
+01:35:25.500 --> 01:35:29.820
+y en cuatro, cinco, ocho, nueve y 10.
+
+1658
+01:35:29.880 --> 01:35:31.060
+Lo que hemos estado haciendo,
+
+1659
+01:35:32.030 --> 01:35:36.270
+déjenme chequear a ver la dimensión, por ejemplo, a que
+
+1660
+01:35:37.310 --> 01:35:40.690
+en estas columnas que están acá, estas dos que están aquí,
+
+1661
+01:35:40.690 --> 01:35:44.290
+lo voy a hacer un poquito especial porque van a tener, eh,
+
+1662
+01:35:44.550 --> 01:35:49.130
+una sección de por para que vean también el detallado de una
+
+1663
+01:35:49.130 --> 01:35:50.210
+columna rectangular.
+
+1664
+01:35:51.150 --> 01:35:53.960
+Okey. Entonces, eh, esta columna
+
+1665
+01:35:55.020 --> 01:35:57.760
+que va a estar en el l c y f del
+
+1666
+01:35:58.860 --> 01:36:01.840
+van a ser de por en este sentido,
+
+1667
+01:36:03.040 --> 01:36:05.360
+ya es sencillo.
+
+1668
+01:36:05.890 --> 01:36:07.880
+Tengo que crear una columna nuevamente,
+
+1669
+01:36:07.910 --> 01:36:10.360
+pero ya la familia ya está definida.
+
+1670
+01:36:10.380 --> 01:36:14.140
+Le doy en pilar editar
+
+1671
+01:36:14.450 --> 01:36:15.540
+acá y bus.
+
+1672
+01:36:15.540 --> 01:36:18.620
+Tengo que buscar mi familia rectangular.
+
+1673
+01:36:20.710 --> 01:36:22.580
+Selecciono editar tipo.
+
+1674
+01:36:22.940 --> 01:36:26.580
+Y ahora esto sería duplicar columna dos,
+
+1675
+01:36:30.570 --> 01:36:34.290
+aceptar la base va a ser de
+
+1676
+01:36:34.970 --> 01:36:37.090
+40 y la altura de 30 cero.
+
+1677
+01:36:38.500 --> 01:36:41.300
+Les voy a aplicar, por ejemplo,
+
+1678
+01:36:41.440 --> 01:36:45.420
+si yo no estoy seguro de cuál es la orientación con la tecla
+
+1679
+01:36:45.840 --> 01:36:49.460
+ojo espacio, voy brotando y voy viendo la ubicación.
+
+1680
+01:36:49.600 --> 01:36:50.780
+Sí, mira, ahí voy, rotar.
+
+1681
+01:36:51.400 --> 01:36:56.250
+Estaba ser la ubicación ya por profundidad.
+
+1682
+01:36:56.300 --> 01:36:58.170
+Nivel de es planta. Esto no cambia.
+
+1683
+01:36:58.250 --> 01:37:01.990
+Y coloco pa acá y coloco a acá,
+
+1684
+01:37:03.120 --> 01:37:07.010
+le doy en escape, tengo que respetar la colinda.
+
+1685
+01:37:07.610 --> 01:37:12.450
+Entonces con control, selecciono esta columna, esta columna,
+
+1686
+01:37:13.410 --> 01:37:14.650
+y le doy a desplazar,
+
+1687
+01:37:15.770 --> 01:37:18.470
+le doy a mover y voy a mover de este punto.
+
+1688
+01:37:19.110 --> 01:37:22.860
+A este punto, le doy en escape, eh?
+
+1689
+01:37:23.400 --> 01:37:27.860
+Si yo me voy el d, van a ver, ah, la coloqué en el,
+
+1690
+01:37:27.860 --> 01:37:31.580
+dije que no era, la coloqué en el bueno,
+
+1691
+01:37:31.580 --> 01:37:33.220
+no pasa nada, me equivoqué.
+
+1692
+01:37:33.640 --> 01:37:37.540
+La coloqué en el l y era en el bueno con control.
+
+1693
+01:37:38.230 --> 01:37:42.740
+Selecciono y le doy mover de este punto a este punto.
+
+1694
+01:37:43.940 --> 01:37:47.120
+Sí. Y yo me voy al tres de ahí ahora sí, ahí está.
+
+1695
+01:37:49.080 --> 01:37:53.600
+Okey. Y el resto de columna se va mantener la sección
+
+1696
+01:37:53.600 --> 01:37:54.680
+de 40 por 40.
+
+1697
+01:37:54.780 --> 01:37:56.800
+Por lo tanto, como ya yo tengo esa sección,
+
+1698
+01:37:56.800 --> 01:37:57.800
+lo que hago a esc copiar.
+
+1699
+01:37:58.480 --> 01:38:00.200
+Entonces copio de este punto
+
+1700
+01:38:02.400 --> 01:38:04.470
+medio a este punto que está acá.
+
+1701
+01:38:06.390 --> 01:38:09.780
+Sí, tengo que respetar la colinda.
+
+1702
+01:38:09.910 --> 01:38:12.580
+Tengo colinda en este sentido en este sentido.
+
+1703
+01:38:13.180 --> 01:38:15.660
+Entonces, lo que tengo que hacer ahora es que esta columna
+
+1704
+01:38:16.550 --> 01:38:20.180
+selecciono y la desplazo de acá acá primero
+
+1705
+01:38:21.140 --> 01:38:24.900
+y luego la desplazo de este punto, este punto listo.
+
+1706
+01:38:25.860 --> 01:38:30.060
+Y esta columna que está acá, le doy copiar copi de que acá.
+
+1707
+01:38:31.840 --> 01:38:36.000
+Y lo que voy a hacer es selecciono y desplazo de este punto,
+
+1708
+01:38:36.230 --> 01:38:40.700
+este punto tape y lo único que tengo que hacer es copiar
+
+1709
+01:38:41.130 --> 01:38:44.660
+este g, este g, este g
+
+1710
+01:38:45.580 --> 01:38:47.660
+y este y escape.
+
+1711
+01:38:48.260 --> 01:38:52.820
+Y cuando yo vaya el d y tengo mis columnas que tengo que
+
+1712
+01:38:52.850 --> 01:38:56.060
+modificar las condiciones ojo,
+
+1713
+01:38:56.440 --> 01:38:59.220
+las condiciones del de fase que ya lo vamos a modificar.
+
+1714
+01:38:59.810 --> 01:39:01.830
+Okey, eh?
+
+1715
+01:39:01.830 --> 01:39:05.430
+Porque va en función ojo albin ahorita ya les voy a ir
+
+1716
+01:39:05.460 --> 01:39:07.650
+mostrando, eh?
+
+1717
+01:39:07.940 --> 01:39:12.560
+Vamos, vamos a ver una, una clase, okey,
+
+1718
+01:39:12.750 --> 01:39:16.400
+como tal que va a ser el tema de los rangos de vista.
+
+1719
+01:39:16.510 --> 01:39:20.490
+Esta que esta casta tiene una opción que dice,
+
+1720
+01:39:21.190 --> 01:39:22.930
+eh, rango de vista.
+
+1721
+01:39:23.660 --> 01:39:27.520
+Sí. Y los rangos de vista por defecto van variando.
+
+1722
+01:39:27.540 --> 01:39:29.280
+Hay algunos rangos de vista que muestra
+
+1723
+01:39:29.320 --> 01:39:30.760
+elemento y no muestra elemento.
+
+1724
+01:39:31.280 --> 01:39:33.910
+Y vamos aprender, por ejemplo,
+
+1725
+01:39:35.300 --> 01:39:38.510
+qué rango de vista quiero en la parte superior y en la parte
+
+1726
+01:39:38.790 --> 01:39:41.430
+inferior en función del nivel que yo estoy para que se
+
+1727
+01:39:41.430 --> 01:39:42.550
+muestren los elementos.
+
+1728
+01:39:43.740 --> 01:39:47.920
+Sí, porque básicamente él los va mostrando de manera
+
+1729
+01:39:48.110 --> 01:39:50.880
+aleatoria, sí, en la planta baja
+
+1730
+01:39:51.740 --> 01:39:54.560
+en el nivel de fase y así sucesivamente.
+
+1731
+01:39:54.990 --> 01:39:58.040
+Pero vamos aprender como yo, eh,
+
+1732
+01:39:59.150 --> 01:40:00.720
+optimizar el rango de vista.
+
+1733
+01:40:01.120 --> 01:40:02.320
+Y adicionalmente,
+
+1734
+01:40:02.750 --> 01:40:05.880
+como estos elementos todavía yo no les he dado el
+
+1735
+01:40:05.910 --> 01:40:07.120
+desfase, no van a salir.
+
+1736
+01:40:07.580 --> 01:40:09.360
+Sí, yo tengo que darle el desfase para que
+
+1737
+01:40:09.380 --> 01:40:11.120
+salgan las cimentaciones.
+
+1738
+01:40:12.170 --> 01:40:14.380
+Okey. Entonces se conjugan aquí dos,
+
+1739
+01:40:15.660 --> 01:40:19.120
+dos, dos cosas.
+
+1740
+01:40:19.700 --> 01:40:23.000
+Uno que no le daba el de fase dos que tengo que
+
+1741
+01:40:23.540 --> 01:40:26.280
+ya definir o aprender a definir el rango de vista,
+
+1742
+01:40:26.280 --> 01:40:27.480
+esas dos cosas, okey?
+
+1743
+01:40:27.870 --> 01:40:29.440
+Pero ya ya lo vamos a ver con calma.
+
+1744
+01:40:29.440 --> 01:40:33.880
+Una vez que ya tengamos columnas los a cimentación
+
+1745
+01:40:34.820 --> 01:40:36.340
+y vigas en un solo nivel,
+
+1746
+01:40:36.420 --> 01:40:38.300
+o sea que ya hemos modelado un nivel completo,
+
+1747
+01:40:38.300 --> 01:40:39.940
+les enseño el gran we vista ya.
+
+1748
+01:40:40.930 --> 01:40:42.640
+Listo, listo, okey.
+
+1749
+01:40:43.970 --> 01:40:45.650
+Entonces, como soluciono esto,
+
+1750
+01:40:45.990 --> 01:40:48.290
+yo tengo que solucionar esto de la misma manera,
+
+1751
+01:40:48.290 --> 01:40:51.890
+como yo he solucionado para toda las cimentaciones
+
+1752
+01:40:52.710 --> 01:40:55.480
+la columna tiene que tener el nivel de de fase.
+
+1753
+01:40:55.480 --> 01:40:59.920
+Tú ya lo aprendimos de la zapata, la zapata,
+
+1754
+01:40:59.930 --> 01:41:02.720
+todas las zapatas tienen un nivel de de fase
+
+1755
+01:41:04.670 --> 01:41:06.270
+y un espesor de cero 40.
+
+1756
+01:41:06.470 --> 01:41:09.350
+Entonces tengo que trabajar con el nivel de fase de cero 40.
+
+1757
+01:41:10.400 --> 01:41:13.520
+Entonces, cuando yo selecciona acá con control,
+
+1758
+01:41:14.190 --> 01:41:18.960
+esta columna, esta columna, esta columna, esta columna,
+
+1759
+01:41:19.990 --> 01:41:22.760
+esta esta esta y esta
+
+1760
+01:41:23.920 --> 01:41:28.760
+y le de click acá donde dice de fase de base y le
+
+1761
+01:41:28.790 --> 01:41:32.520
+colocó el espesor CE 40 a aplicar
+
+1762
+01:41:33.500 --> 01:41:34.580
+y le doy a aceptar.
+
+1763
+01:41:36.830 --> 01:41:41.390
+Fíjense que ya acá tengo el tema de ah, bueno, aquí no me la
+
+1764
+01:41:45.050 --> 01:41:49.150
+Mmm Nivel superior ya
+
+1765
+01:41:51.940 --> 01:41:53.090
+aquí no me la modeló.
+
+1766
+01:41:53.900 --> 01:41:56.160
+Me ver qué está sucediendo para porque esta
+
+1767
+01:41:56.160 --> 01:41:57.360
+ya me las acomodó.
+
+1768
+01:41:58.610 --> 01:42:01.890
+Y esta que esta está me la está modelando desde
+
+1769
+01:42:08.030 --> 01:42:08.690
+de 21.
+
+1770
+01:42:08.690 --> 01:42:11.360
+Segundo, pero ver algo, ah,
+
+1771
+01:42:11.380 --> 01:42:13.640
+ya vean esto que sucede ya ya lo ve.
+
+1772
+01:42:13.800 --> 01:42:17.290
+Vean esto que sucede muchas veces ojo.
+
+1773
+01:42:17.290 --> 01:42:20.180
+Hay que estar atentos, eh?
+
+1774
+01:42:22.320 --> 01:42:26.380
+Sí, se puede trabajar a los al fusión de los niveles Julián.
+
+1775
+01:42:27.110 --> 01:42:30.320
+Pero qué pasa nosotros siempre trabajamos con, por ejemplo,
+
+1776
+01:42:30.340 --> 01:42:31.680
+un nivel arquitectónico.
+
+1777
+01:42:31.800 --> 01:42:36.270
+Y ya voy a a terminar de modelar las columnas.
+
+1778
+01:42:36.270 --> 01:42:38.710
+Pero para responder la la pregunta, Julián,
+
+1779
+01:42:39.030 --> 01:42:41.790
+nosotros siempre trabajamos con un nivel definido.
+
+1780
+01:42:41.790 --> 01:42:45.510
+Por ejemplo, el nivel de desplante acá es,
+
+1781
+01:42:47.410 --> 01:42:51.420
+sí, pero el por defecto siempre re revy
+
+1782
+01:42:52.270 --> 01:42:53.450
+lo modela así.
+
+1783
+01:42:54.340 --> 01:42:55.780
+Y por eso es que se hace el de fácil.
+
+1784
+01:42:57.260 --> 01:42:59.160
+Si yo quisiera que esté al nivel,
+
+1785
+01:42:59.520 --> 01:43:02.560
+entonces el nivel de desplante no sería uno 50,
+
+1786
+01:43:02.870 --> 01:43:07.240
+sino que sería uno 20, eh,
+
+1787
+01:43:08.290 --> 01:43:09.380
+para que quede así.
+
+1788
+01:43:10.180 --> 01:43:12.830
+Pero el problema es que nosotros es la representación de los
+
+1789
+01:43:12.830 --> 01:43:14.190
+detallados en los planos.
+
+1790
+01:43:14.830 --> 01:43:16.990
+Nosotros no referencia como tal este nivel,
+
+1791
+01:43:16.990 --> 01:43:18.990
+sino el nivel de desplante este.
+
+1792
+01:43:19.630 --> 01:43:24.220
+Y por eso es que se hace el de fase ya en cambio,
+
+1793
+01:43:24.720 --> 01:43:27.180
+en lo que son niveles de entrepiso,
+
+1794
+01:43:27.180 --> 01:43:31.020
+no hay que estar dando de fase porque, por ejemplo,
+
+1795
+01:43:31.120 --> 01:43:32.580
+la viga se representa así.
+
+1796
+01:43:32.580 --> 01:43:35.060
+Si coincide cuando yo tengo un nivel aquí, cuatro,
+
+1797
+01:43:35.880 --> 01:43:39.570
+la viga se representa acá, o sea, y no tengo problema,
+
+1798
+01:43:39.570 --> 01:43:42.410
+no tengo que hacer ningún de, pero en las zapatas sí,
+
+1799
+01:43:43.030 --> 01:43:45.850
+por la representación que yo estoy haciendo es por ese
+
+1800
+01:43:45.850 --> 01:43:48.130
+motivo solo en las zapatas o en las
+
+1801
+01:43:48.130 --> 01:43:49.610
+cimentaciones en general.
+
+1802
+01:43:50.310 --> 01:43:54.470
+Ya listo, Julia, y vean esto que les puede suceder.
+
+1803
+01:43:54.530 --> 01:43:56.910
+Genial, que esto suceden las sesiones en vivo.
+
+1804
+01:43:58.240 --> 01:44:01.920
+Vean, yo popé y vean lo que sucedió acá.
+
+1805
+01:44:02.760 --> 01:44:05.060
+El nivel base me está indicando que es
+
+1806
+01:44:05.920 --> 01:44:10.820
+la profundidad de plante y el nivel superior, eh,
+
+1807
+01:44:11.000 --> 01:44:15.020
+que que yo estoy seleccionando es planta baja.
+
+1808
+01:44:16.300 --> 01:44:19.310
+Okey, entonces yo tengo que estar muy,
+
+1809
+01:44:19.370 --> 01:44:22.790
+muy claro que el memento de trabajar con los eventos.
+
+1810
+01:44:23.250 --> 01:44:26.870
+Sí. Si yo aquí le quito le coloco cero
+
+1811
+01:44:27.390 --> 01:44:30.750
+y le doy aplicar, vean que automáticamente
+
+1812
+01:44:31.690 --> 01:44:34.150
+automáticamente él ya trabaja
+
+1813
+01:44:34.930 --> 01:44:37.050
+con la posición.
+
+1814
+01:44:38.070 --> 01:44:42.510
+Sí, pero qué pasa lamentablemente aquí
+
+1815
+01:44:43.210 --> 01:44:46.670
+al trabajar con este elemento ojo, estos elementos
+
+1816
+01:44:47.210 --> 01:44:51.230
+no se me está conectando la zapata y sucede a veces o algo.
+
+1817
+01:44:51.250 --> 01:44:53.950
+Repito, si yo selecciona todos, todos estos elementos
+
+1818
+01:44:54.570 --> 01:44:55.710
+le colocó cero.
+
+1819
+01:44:56.760 --> 01:45:00.610
+Le voy a aplicar y yo le vuelvo a dar el desfase cero
+
+1820
+01:45:02.600 --> 01:45:06.800
+y le voy a aceptar, ahí es donde él identifica como tal
+
+1821
+01:45:07.820 --> 01:45:09.520
+la conexión con la zapata.
+
+1822
+01:45:10.550 --> 01:45:15.250
+Sí. Entonces, cuando le suceda esto, como acaba de suceder,
+
+1823
+01:45:15.950 --> 01:45:20.710
+que básicamente la zapata ojo cuando le suceda esto,
+
+1824
+01:45:20.990 --> 01:45:25.230
+básicamente que la zapata no se está elevando a su nivel,
+
+1825
+01:45:26.160 --> 01:45:30.870
+es porque por la copia que hicimos o algún motivo que
+
+1826
+01:45:30.870 --> 01:45:35.270
+hicimos en la copia, él nos reconoció que esta columna ah
+
+1827
+01:45:35.980 --> 01:45:37.430
+conectada con las zapatas.
+
+1828
+01:45:38.280 --> 01:45:40.260
+Cuando le sucede esto para solucionar,
+
+1829
+01:45:40.330 --> 01:45:43.220
+ustedes seleccionan las columnas que están quedando en el
+
+1830
+01:45:43.380 --> 01:45:47.610
+aire y le colocan nuevamente cero, le van a aplicar.
+
+1831
+01:45:48.330 --> 01:45:52.110
+Y cuando vuelvan a seleccionar las columnas
+
+1832
+01:45:53.530 --> 01:45:58.280
+y le coloque en cero y aplica y aceptar ahí,
+
+1833
+01:45:58.300 --> 01:46:03.180
+si lo reconoce, esto es un pequeño tips.
+
+1834
+01:46:03.460 --> 01:46:06.420
+A veces suceden que sucede en la sesión en vivo
+
+1835
+01:46:07.320 --> 01:46:11.180
+de que cuando no reconoce este automáticamente todo empla
+
+1836
+01:46:11.830 --> 01:46:13.500
+desde la zapata a la columna.
+
+1837
+01:46:14.460 --> 01:46:16.660
+Entonces tienen que devolverlo a cero.
+
+1838
+01:46:19.030 --> 01:46:20.910
+Y nuevamente, tienen que volverle
+
+1839
+01:46:20.910 --> 01:46:21.990
+a hacer el desfase de cero.
+
+1840
+01:46:21.990 --> 01:46:26.970
+Correcto, eh? Por qué sucede esto?
+
+1841
+01:46:26.970 --> 01:46:30.330
+La verdad? No? O sea, si es un
+
+1842
+01:46:31.500 --> 01:46:34.840
+un motivo de cuando yo copio las columnas o la conexión o
+
+1843
+01:46:34.840 --> 01:46:37.360
+algo por el estilo, pero para solucionarnos de manera
+
+1844
+01:46:37.360 --> 01:46:40.800
+rápida, es lo devuelven a cero y vuelven a colocarle cero
+
+1845
+01:46:42.270 --> 01:46:44.930
+ya ahí se le soluciona ese, ese pequeño inconveniente
+
+1846
+01:46:45.650 --> 01:46:47.650
+a veces sucede, no es todo el tiempo, okey,
+
+1847
+01:46:47.650 --> 01:46:50.840
+pero genial que sucede aquí en la sesión en vivo.
+
+1848
+01:46:51.670 --> 01:46:56.370
+Okey. Ahora, antes de modelar,
+
+1849
+01:46:56.430 --> 01:46:59.730
+por ejemplo, vigas de cimentación que son interesantes,
+
+1850
+01:47:01.220 --> 01:47:03.440
+si estamos claros hasta aquí, si, si estamos bien,
+
+1851
+01:47:03.940 --> 01:47:08.570
+me van siguiendo, por ejemplo, con esta última parte,
+
+1852
+01:47:08.570 --> 01:47:10.490
+no sé si me di explicar con esta última parte.
+
+1853
+01:47:10.590 --> 01:47:14.670
+Si se entendió esta última parte, si
+
+1854
+01:47:15.450 --> 01:47:18.910
+ya listo, listo sobre todo, la última parte no se asusten.
+
+1855
+01:47:18.910 --> 01:47:21.470
+Si no sucede, bueno, vuelvan a ser y vuelvan a
+
+1856
+01:47:21.470 --> 01:47:22.630
+colocarle de fácil ya.
+
+1857
+01:47:23.270 --> 01:47:26.230
+Perfecto. Entonces se vean cómo va quedando va,
+
+1858
+01:47:26.230 --> 01:47:28.590
+va quedando aquí un sistema completo.
+
+1859
+01:47:29.310 --> 01:47:32.480
+Y yo le sigo agregando más, más tapas.
+
+1860
+01:47:32.660 --> 01:47:36.020
+Por ejemplo, qué pasa si yo tengo acá una viga?
+
+1861
+01:47:37.440 --> 01:47:41.110
+Si yo tengo una viga, si yo tengo aquí una viga de
+
+1862
+01:47:41.110 --> 01:47:43.470
+cimentación o lo que se denomina viga de equilibrio,
+
+1863
+01:47:43.470 --> 01:47:45.790
+vamos a modelar una viga
+
+1864
+01:47:46.390 --> 01:47:48.870
+completa acá por todo el perímetro.
+
+1865
+01:47:49.450 --> 01:47:53.050
+Sí, esta viga va a ir simulando ojo.
+
+1866
+01:47:53.110 --> 01:47:56.330
+En realidad debería modelarla toda completa para conectarla.
+
+1867
+01:47:56.640 --> 01:48:00.420
+Pero esta viga va a estar a la altura de mi zapata.
+
+1868
+01:48:00.770 --> 01:48:03.140
+Okey, va a hacer una viga de equilibrio.
+
+1869
+01:48:03.140 --> 01:48:05.180
+Esta viga de equilibrio se utilizan sobre todo con los que
+
+1870
+01:48:05.180 --> 01:48:06.660
+excentricidad en la zapata.
+
+1871
+01:48:06.800 --> 01:48:09.780
+Sí, para atenuar este tema de
+
+1872
+01:48:10.520 --> 01:48:14.060
+de los esfuerzos no de equilibrar equiparar los esfuerzos,
+
+1873
+01:48:14.100 --> 01:48:17.260
+funciona como una viga de de equilibrio ya.
+
+1874
+01:48:18.600 --> 01:48:21.480
+Y tal cual, como vamos a modelar ahorita esta viga de
+
+1875
+01:48:21.480 --> 01:48:24.280
+equilibrio viga de cimentación es como se modelan las vigas
+
+1876
+01:48:24.300 --> 01:48:26.850
+de de entrepiso.
+
+1877
+01:48:26.850 --> 01:48:30.050
+La verdad, la tal tal cual es que se modelan las vigas de
+
+1878
+01:48:30.050 --> 01:48:34.770
+entre piso es que pasa, fíjense los siguientes uno.
+
+1879
+01:48:35.910 --> 01:48:39.770
+Yo voy a ir acá donde dice viga, sí, la parte superior.
+
+1880
+01:48:40.070 --> 01:48:42.210
+Repito, vamos a ir al nivel de desplantes.
+
+1881
+01:48:42.210 --> 01:48:43.730
+Estamos en nivel de desplante, ojo,
+
+1882
+01:48:44.250 --> 01:48:46.930
+dónde va a ir la viga de cimentación al nivel de desplantes?
+
+1883
+01:48:46.930 --> 01:48:51.290
+Yo tengo ti, mis zapatas. Y voy a ir acá, eh?
+
+1884
+01:48:52.300 --> 01:48:57.290
+Entonces vamos a ir donde dices viga, y
+
+1885
+01:48:58.180 --> 01:48:59.890
+vamos a utilizar la familia de sistema
+
+1886
+01:49:00.440 --> 01:49:02.730
+así como sucedió en columnas.
+
+1887
+01:49:03.190 --> 01:49:05.330
+Lo mismo sucede en
+
+1888
+01:49:10.130 --> 01:49:12.190
+en vigas con respecto a la familia.
+
+1889
+01:49:12.410 --> 01:49:16.070
+Ya si se dan cuenta que yo tengo dos vigas y dos, perdón,
+
+1890
+01:49:16.540 --> 01:49:18.870
+tres familias, tres familias de sistema
+
+1891
+01:49:20.250 --> 01:49:22.470
+que es viga rectangular de hormigón,
+
+1892
+01:49:23.410 --> 01:49:27.580
+tubo rectangular cuadrado y vigas universit universales.
+
+1893
+01:49:27.580 --> 01:49:31.740
+Estos son perfiles HSS americanos que son los tubos
+
+1894
+01:49:31.740 --> 01:49:34.980
+cuadrados rectangulares, eh, cuadrados o rectangulares.
+
+1895
+01:49:34.980 --> 01:49:36.940
+Y estas son las vigas univers universales.
+
+1896
+01:49:36.940 --> 01:49:38.180
+Todavía esto no lo vamos a usar.
+
+1897
+01:49:38.180 --> 01:49:40.660
+Vamos a usar las vigas rectangulares. Ya.
+
+1898
+01:49:41.290 --> 01:49:43.020
+Esto me sirve una viga rectangular.
+
+1899
+01:49:43.470 --> 01:49:46.380
+Vamos a utilizar una viga de cimentación con las dimensiones
+
+1900
+01:49:46.380 --> 01:49:50.360
+mínimas de de por no hay menciones mínimas posible.
+
+1901
+01:49:51.690 --> 01:49:54.530
+Y le voy a dar click en editar. Voy a utilizar esta familia.
+
+1902
+01:49:55.560 --> 01:49:59.590
+Le doy en editar y le voy a dar click en duplicar.
+
+1903
+01:49:59.590 --> 01:50:02.110
+Siempre duplicamos b.
+
+1904
+01:50:04.730 --> 01:50:08.670
+Le voy a aceptar donde la sección transversal ojo,
+
+1905
+01:50:08.820 --> 01:50:10.990
+esto es 25, y esto es 30.
+
+1906
+01:50:11.730 --> 01:50:14.380
+Ya. Entonces la
+
+1907
+01:50:14.380 --> 01:50:18.620
+base y la altura.
+
+1908
+01:50:20.320 --> 01:50:22.900
+Le doy aplicar, le doy aceptar.
+
+1909
+01:50:24.350 --> 01:50:28.310
+Entonces, qué pasa si yo trato demorar yo modelo
+
+1910
+01:50:28.930 --> 01:50:32.070
+de este eje a este eje, mi viga,
+
+1911
+01:50:32.850 --> 01:50:34.090
+y le doy en escape.
+
+1912
+01:50:35.700 --> 01:50:37.980
+Y yo voy a tener varios inconvenientes
+
+1913
+01:50:43.780 --> 01:50:46.500
+y ya te respondo, ya te respondo y ya te respondo.
+
+1914
+01:50:46.680 --> 01:50:49.860
+Voy a terminar esta idea de las vigas y te
+
+1915
+01:50:49.860 --> 01:50:51.460
+respondo con mucho gusto.
+
+1916
+01:50:51.880 --> 01:50:56.760
+Sí, eh? Vea esta vida que estoy modelando.
+
+1917
+01:50:56.760 --> 01:50:58.360
+Tiene varios inconvenientes aquí.
+
+1918
+01:50:58.360 --> 01:51:01.190
+Lo podemos ver a prior uno de los inconvenientes.
+
+1919
+01:51:01.690 --> 01:51:03.630
+Uno, me estoy pasando de la colinda.
+
+1920
+01:51:04.820 --> 01:51:07.960
+Sí, cómo lo puedo solucionar? Ah, perfecto.
+
+1921
+01:51:07.980 --> 01:51:09.600
+Yo soy, selecciona esta liga.
+
+1922
+01:51:11.240 --> 01:51:15.760
+Y aquí donde dice mover, yo desplazo,
+
+1923
+01:51:16.600 --> 01:51:19.800
+por ejemplo, de este punto a este punto,
+
+1924
+01:51:22.650 --> 01:51:23.650
+y le do en escape.
+
+1925
+01:51:23.810 --> 01:51:26.450
+Perfecto. Solucioné el tema de Colin,
+
+1926
+01:51:27.480 --> 01:51:32.170
+pero hay varios temas que voy a ir el tres b para que lo
+
+1927
+01:51:32.170 --> 01:51:36.550
+entiendan solucionar, eh?
+
+1928
+01:51:36.730 --> 01:51:40.150
+Sí, pero voy a utilizar ángel, el comando alinear
+
+1929
+01:51:40.910 --> 01:51:45.730
+y este que está acá modify lo voy a utilizar más que todo.
+
+1930
+01:51:46.370 --> 01:51:50.250
+Y cuando estemos en las nervaduras, el les muestro realmente
+
+1931
+01:51:52.780 --> 01:51:55.850
+cómo utilizar correctamente este comando, el de alinear,
+
+1932
+01:51:56.320 --> 01:51:58.490
+okey, cuando están las nervaduras que
+
+1933
+01:51:59.070 --> 01:52:01.670
+van a varios tipos de cómo se alinea, no hay un solo tipo,
+
+1934
+01:52:02.120 --> 01:52:05.390
+está las ne en las nervaduras a lo de las los as nevadas,
+
+1935
+01:52:05.410 --> 01:52:07.390
+los aligeradas ya.
+
+1936
+01:52:09.440 --> 01:52:12.210
+Pero adelantándome un poquito, si se puede utilizar,
+
+1937
+01:52:12.210 --> 01:52:14.210
+pero yo lo utilizo realmente para dos
+
+1938
+01:52:15.030 --> 01:52:16.810
+las nervaduras para que hagan su función.
+
+1939
+01:52:17.400 --> 01:52:22.080
+Okey? Y entonces yo, yo me voy a ir aquí el tres d.
+
+1940
+01:52:22.990 --> 01:52:25.950
+Y hay ve inconvenientes grandes.
+
+1941
+01:52:26.990 --> 01:52:29.210
+Uno de los inconvenientes uno,
+
+1942
+01:52:32.330 --> 01:52:34.790
+la viga de cimentación está por debajo de las zapatas.
+
+1943
+01:52:34.810 --> 01:52:36.830
+No está cumpliendo ninguna función.
+
+1944
+01:52:38.360 --> 01:52:40.820
+Sí, está cumpliendo ninguna función.
+
+1945
+01:52:42.550 --> 01:52:44.790
+Entonces, qué se hace primero?
+
+1946
+01:52:45.070 --> 01:52:47.680
+Debo darle un de fase, esta vida de cimentación,
+
+1947
+01:52:49.120 --> 01:52:50.550
+cuál sería el de fase?
+
+1948
+01:52:50.690 --> 01:52:53.270
+Ojo? Este es nada más en el caso de vi cimentación ya
+
+1949
+01:52:53.270 --> 01:52:55.590
+ahorita voy, eh, vamos a ir subiendo a nivel.
+
+1950
+01:52:56.110 --> 01:52:57.990
+Y ya no hay que estar haciendo ya de fases
+
+1951
+01:52:58.110 --> 01:52:59.190
+a menos que se requiera.
+
+1952
+01:53:00.330 --> 01:53:02.780
+Pero en el caso de zapatas vigas de cimentación, sí.
+
+1953
+01:53:03.340 --> 01:53:06.540
+Y yo le voy a dar en desfase de que de la altura la zapata,
+
+1954
+01:53:06.540 --> 01:53:09.170
+cuál es la altura de la zapata CE?
+
+1955
+01:53:10.430 --> 01:53:12.800
+Les voy a aplicar. Sí.
+
+1956
+01:53:14.180 --> 01:53:18.030
+Y vean que automáticamente automáticamente,
+
+1957
+01:53:19.680 --> 01:53:24.120
+si yo selecciono aquí, voy a ir al d, selecciono la viga,
+
+1958
+01:53:24.170 --> 01:53:26.840
+selecciono las zapatas, selecciono las zapatas
+
+1959
+01:53:27.870 --> 01:53:31.910
+y le doy click acá en los lente sitios donde dice ocultar,
+
+1960
+01:53:32.070 --> 01:53:34.670
+aislar, le doy click y le doy aislar.
+
+1961
+01:53:35.770 --> 01:53:36.890
+Vean cómo queda.
+
+1962
+01:53:38.220 --> 01:53:42.470
+Sí, qué pasa con esto
+
+1963
+01:53:43.300 --> 01:53:48.010
+que cuando yo no le doy el de fase,
+
+1964
+01:53:49.560 --> 01:53:52.200
+básicamente primero la viga queda por debajo.
+
+1965
+01:53:52.600 --> 01:53:56.680
+Y segundo, la viga está llegando acá y acá. Sí.
+
+1966
+01:53:58.380 --> 01:54:00.940
+Y deben tener mucho, mucho cuidado.
+
+1967
+01:54:02.490 --> 01:54:04.560
+Revit reconoce
+
+1968
+01:54:07.310 --> 01:54:09.770
+las caras físicas de los elementos
+
+1969
+01:54:11.090 --> 01:54:12.470
+que me refiero.
+
+1970
+01:54:13.340 --> 01:54:15.990
+Laga como tal va de cara
+
+1971
+01:54:17.530 --> 01:54:19.450
+a cara de zapata.
+
+1972
+01:54:20.420 --> 01:54:23.990
+No puede ir. Centro a centro.
+
+1973
+01:54:26.450 --> 01:54:30.830
+Sí. Porque si yo extiendo mi viga, por ejemplo, hasta acá
+
+1974
+01:54:31.470 --> 01:54:34.700
+y hasta acá tengo mi viga, no?
+
+1975
+01:54:35.960 --> 01:54:40.620
+Si yo la extiendo hasta acá, básicamente esta zona que voy a
+
+1976
+01:54:41.820 --> 01:54:46.260
+subrayar, toda esta zona que estoy subrayando se va duplicar
+
+1977
+01:54:46.260 --> 01:54:47.460
+el volumen del hormigón.
+
+1978
+01:54:48.120 --> 01:54:53.060
+Sí. Y yo debo separar,
+
+1979
+01:54:54.020 --> 01:54:56.120
+yo debo separar en las cantidades,
+
+1980
+01:54:56.140 --> 01:55:00.120
+lo que es volumen de zapata con volumen de viga con volumen
+
+1981
+01:55:00.120 --> 01:55:03.520
+de columna con volumen de losa, así sucesivamente.
+
+1982
+01:55:04.120 --> 01:55:05.760
+Entonces yo debo evitar que
+
+1983
+01:55:06.740 --> 01:55:10.400
+hay una super posición de los elementos siempre
+
+1984
+01:55:11.620 --> 01:55:13.420
+y de me va a ayudar en eso.
+
+1985
+01:55:13.490 --> 01:55:18.340
+Pero hay ocasiones que vamos a ver que yo tengo que definir
+
+1986
+01:55:18.550 --> 01:55:20.460
+hasta donde va a llegar el elemento.
+
+1987
+01:55:20.460 --> 01:55:22.260
+Por ejemplo, cuando veamos losas
+
+1988
+01:55:23.940 --> 01:55:26.940
+y se modela la losa y está la columna y losas,
+
+1989
+01:55:26.960 --> 01:55:30.580
+yo debo definir hasta donde como y cuando debe llegar el
+
+1990
+01:55:30.580 --> 01:55:34.690
+elemento por eso, en este caso, el automáticamente
+
+1991
+01:55:35.230 --> 01:55:39.090
+define dónde va a llegar la viga hasta la cara.
+
+1992
+01:55:41.000 --> 01:55:42.260
+Sí, porque si no
+
+1993
+01:55:43.020 --> 01:55:46.120
+se van a duplicar los volúmenes de hormigón y al duplicar
+
+1994
+01:55:46.120 --> 01:55:47.120
+los volúmenes de hormigón, entonces
+
+1995
+01:55:47.120 --> 01:55:48.360
+empezó que meter errores.
+
+1996
+01:55:49.460 --> 01:55:51.750
+Okey, exactamente.
+
+1997
+01:55:51.750 --> 01:55:54.830
+Daniel la dibujamos de centro a centro y rev las recorta de
+
+1998
+01:55:54.830 --> 01:55:56.390
+cara a cara y lo vuelvo a repetir.
+
+1999
+01:55:56.970 --> 01:56:00.590
+Por ejemplo, acá voy a dar click le do restablecer.
+
+2000
+01:56:01.570 --> 01:56:05.920
+Me voy al nivel de profundidad y lo vuelvo a dibujar ojo,
+
+2001
+01:56:06.350 --> 01:56:08.440
+pero siempre debemos ir verificando.
+
+2002
+01:56:09.020 --> 01:56:12.430
+Le doy en estructura viga. Sí.
+
+2003
+01:56:13.380 --> 01:56:16.940
+Y acá ya, yo lo tengo seleccionado. Le doy el primer punto.
+
+2004
+01:56:17.220 --> 01:56:20.180
+Vean de este centro. Puedo dibujar lo
+
+2005
+01:56:20.300 --> 01:56:21.340
+vean que aquí yo no tengo.
+
+2006
+01:56:22.510 --> 01:56:24.090
+Sí, un punto de referencia.
+
+2007
+01:56:24.710 --> 01:56:26.130
+Lo voy a dibujar, por ejemplo,
+
+2008
+01:56:26.380 --> 01:56:27.890
+hasta acá hasta la intercepción.
+
+2009
+01:56:28.630 --> 01:56:32.480
+Le doy escape, selecciono la viga.
+
+2010
+01:56:34.250 --> 01:56:37.110
+La desplazo es lo primero de este punto, este punto.
+
+2011
+01:56:38.380 --> 01:56:41.060
+Y luego le tengo que dar el de fase cero.
+
+2012
+01:56:42.700 --> 01:56:44.770
+Y le doy a aplicar, sí.
+
+2013
+01:56:45.170 --> 01:56:47.610
+Y vean como automáticamente lo re reporte.
+
+2014
+01:56:49.970 --> 01:56:52.350
+Sí, el automáticamente lo recorto,
+
+2015
+01:56:53.730 --> 01:56:57.100
+pero siempre debo ir verificando porque no sucede siempre.
+
+2016
+01:56:57.320 --> 01:57:01.100
+Por ejemplo, cuando digamos losa, pues, y repito, o que
+
+2017
+01:57:02.000 --> 01:57:05.100
+hay casos que debo superponer, no s por elemento,
+
+2018
+01:57:05.100 --> 01:57:07.780
+sino que va a ir un elemento en específico
+
+2019
+01:57:08.510 --> 01:57:11.420
+donde Revit lo puede tomar con una superposición.
+
+2020
+01:57:11.420 --> 01:57:14.460
+Yo debo ir verificando esto para separar
+
+2021
+01:57:15.100 --> 01:57:16.580
+cantidades de volumen de hormigón.
+
+2022
+01:57:18.080 --> 01:57:21.550
+Sí. Y lo vuelvo, lo voy a ver a repetir.
+
+2023
+01:57:21.840 --> 01:57:24.750
+Vamos a hacer toda esta, esta línea completa.
+
+2024
+01:57:25.190 --> 01:57:26.830
+Entonces acá viga,
+
+2025
+01:57:27.530 --> 01:57:30.610
+vamos de este punto hasta acá.
+
+2026
+01:57:31.950 --> 01:57:34.430
+Y sigo dibujando toda la viga completa.
+
+2027
+01:57:34.430 --> 01:57:37.870
+Bien, hasta acá, hasta acá y hasta acá.
+
+2028
+01:57:38.630 --> 01:57:39.750
+Y hoy en escape,
+
+2029
+01:57:40.570 --> 01:57:43.750
+lo primero que tengo que hacer es seleccionar toda
+
+2030
+01:57:43.930 --> 01:57:45.030
+la línea de las vigas.
+
+2031
+01:57:45.670 --> 01:57:46.830
+Entonces, con control,
+
+2032
+01:57:46.930 --> 01:57:51.140
+voy seleccionando las vigas con control.
+
+2033
+01:57:51.140 --> 01:57:53.720
+Voy seleccionando las vigas, eh?
+
+2034
+01:57:54.560 --> 01:57:58.560
+Y luego lo que hago es desplazar desplazo de acá
+
+2035
+01:57:59.170 --> 01:58:00.880
+está perfecto.
+
+2036
+01:58:01.400 --> 01:58:06.120
+Y luego con logo acá, valor de fases CE, aplicar
+
+2037
+01:58:06.920 --> 01:58:10.280
+y vean como él automáticamente las corta.
+
+2038
+01:58:11.270 --> 01:58:15.960
+Bien, cuando yo voy, el d se verifica que están separados,
+
+2039
+01:58:15.980 --> 01:58:19.240
+lo que es viga que llega la cara a lo que zapata.
+
+2040
+01:58:19.920 --> 01:58:23.660
+Y por eso él separa también las columnas para que no se
+
+2041
+01:58:23.660 --> 01:58:26.340
+duplique la columna no puede llegar hasta cada
+
+2042
+01:58:27.710 --> 01:58:31.170
+porque si no se va duplicar todo este segmento,
+
+2043
+01:58:31.240 --> 01:58:35.290
+todo este volumen, si esto lo multiplicó por 100, bueno,
+
+2044
+01:58:35.450 --> 01:58:38.050
+y tengo un volumen duplicado y no va, no va,
+
+2045
+01:58:41.130 --> 01:58:44.190
+okey, inclusive para hacerlo simétrico.
+
+2046
+01:58:44.530 --> 01:58:47.430
+Voy a hacerlo acá para qué quede simétrico.
+
+2047
+01:58:48.030 --> 01:58:51.590
+Entonces, acá en el nivel de profundidad, plantea viga.
+
+2048
+01:58:53.530 --> 01:58:55.910
+Sí, voy a hacer de aquí,
+
+2049
+01:58:58.030 --> 01:59:00.610
+acá y hasta aquí.
+
+2050
+01:59:00.610 --> 01:59:01.810
+Para qué? Acá de simétrico.
+
+2051
+01:59:03.460 --> 01:59:07.100
+Entonces selecciono, selecciono con control los dos,
+
+2052
+01:59:07.900 --> 01:59:10.970
+valor de fases, 40 aplicar.
+
+2053
+01:59:13.080 --> 01:59:15.540
+Sí. Ahora vean acá lo que sucedió
+
+2054
+01:59:16.680 --> 01:59:18.380
+en el ya nivel de plan.
+
+2055
+01:59:18.900 --> 01:59:22.580
+Vean lo que aquí sucedió, eh,
+
+2056
+01:59:22.720 --> 01:59:26.220
+yo le di valor de fase en y por eso se desplazó a y
+
+2057
+01:59:26.800 --> 01:59:28.100
+les tengo que estar muy atento,
+
+2058
+01:59:28.100 --> 01:59:33.060
+que es valor de fa en y es valor de fase en z, este cero.
+
+2059
+01:59:33.900 --> 01:59:37.990
+Y aqui era cero. Le voy a aplicar, eh?
+
+2060
+01:59:38.630 --> 01:59:41.990
+Y este que estaba acá también era cero. Y a aquí era cero.
+
+2061
+01:59:42.330 --> 01:59:44.670
+Me equivoqué. Era valor de fa en z.
+
+2062
+01:59:45.590 --> 01:59:50.020
+Y ahí está cuando yo me voy, el d ahí queda,
+
+2063
+01:59:51.480 --> 01:59:52.630
+tiene la conexión.
+
+2064
+01:59:54.680 --> 01:59:59.120
+Entonces, es muy importante entender cómo ubicar el elemento
+
+2065
+02:00:00.040 --> 02:00:04.750
+y verificar de dónde, de qué punto de inicio,
+
+2066
+02:00:04.910 --> 02:00:07.990
+a qué punto final va a ir en el de mí.
+
+2067
+02:00:08.750 --> 02:00:10.450
+Sí, sobre todo con el tema de
+
+2068
+02:00:11.070 --> 02:00:14.090
+de vigas y y lo se va a ver mucho más claro cuando estemos
+
+2069
+02:00:14.510 --> 02:00:16.450
+con las losas de entre piso, por ejemplo,
+
+2070
+02:00:16.990 --> 02:00:18.770
+las nervaduras, etcétera, etcétera.
+
+2071
+02:00:19.260 --> 02:00:22.930
+Cómo darle la prioridad y el orden de unión adecuada a las
+
+2072
+02:00:23.130 --> 02:00:24.570
+cantidades del hormigo okey.
+
+2073
+02:00:36.920 --> 02:00:40.960
+Y sí, también lo pueden hacer de esa manera. Pero qué pasa?
+
+2074
+02:00:41.610 --> 02:00:45.900
+Qué pasa que cuando hagamos los cortes,
+
+2075
+02:00:46.340 --> 02:00:50.150
+Jonathan y de las secciones?
+
+2076
+02:00:50.770 --> 02:00:54.790
+Sí, ese nivel me va a salir en todas las secciones, todas,
+
+2077
+02:00:54.920 --> 02:00:57.310
+todas, todas las secciones que yo hagan los cortes.
+
+2078
+02:00:57.850 --> 02:01:02.190
+Sí. Entonces voy a tener que estar ocultando, por ejemplo,
+
+2079
+02:01:02.300 --> 02:01:05.270
+para el corte de que yo haga de de las vigas,
+
+2080
+02:01:05.450 --> 02:01:06.950
+voy a tener que estar ocultando los niveles,
+
+2081
+02:01:06.950 --> 02:01:08.230
+niveles nivel en loses.
+
+2082
+02:01:08.230 --> 02:01:11.150
+Voy a ocultar muchos niveles y capaz en uno de esos cortes
+
+2083
+02:01:11.150 --> 02:01:14.910
+se me puede pasar porque no significa que yo lo ocultar.
+
+2084
+02:01:15.650 --> 02:01:17.670
+Ojo, un nivel en tres de se va a
+
+2085
+02:01:17.670 --> 02:01:18.790
+ocultar en todas las vistas.
+
+2086
+02:01:18.890 --> 02:01:22.250
+No? Si yo oculto este nivel acá en planta
+
+2087
+02:01:22.250 --> 02:01:24.180
+baja, sí.
+
+2088
+02:01:24.440 --> 02:01:26.060
+Por ejemplo, que lo acabo de ocultar
+
+2089
+02:01:26.980 --> 02:01:30.220
+o selecciono o tan secundario ocultar elementos.
+
+2090
+02:01:31.280 --> 02:01:33.700
+Eso no significa que no me va a salir.
+
+2091
+02:01:33.880 --> 02:01:35.380
+Por ejemplo, en los alzados.
+
+2092
+02:01:37.480 --> 02:01:39.120
+Sí, a quién al alzado me sale.
+
+2093
+02:01:40.220 --> 02:01:43.660
+Entonces tendría que crear dos niveles que tendría que estar
+
+2094
+02:01:43.660 --> 02:01:47.580
+ocultando, ocultando, ocultando, ocultando sí, un cambio.
+
+2095
+02:01:47.580 --> 02:01:50.660
+Me replant y yo como es solo replant yo es mucho más
+
+2096
+02:01:50.660 --> 02:01:51.820
+fácil de ocultar.
+
+2097
+02:01:53.640 --> 02:01:55.020
+Exacto. Ya no sale ahorro.
+
+2098
+02:01:55.180 --> 02:01:58.730
+Entonces, okey, eh?
+
+2099
+02:02:00.790 --> 02:02:03.990
+Y no igual es una muy buena pregunta. Habla aquí.
+
+2100
+02:02:05.200 --> 02:02:07.100
+Ah, esto que no lo mostré con esto.
+
+2101
+02:02:07.290 --> 02:02:08.780
+Creo que hasta aquí lo voy a dejar porque
+
+2102
+02:02:09.070 --> 02:02:10.140
+hemos avanzado bastante.
+
+2103
+02:02:10.380 --> 02:02:13.580
+Vimos hasta vigas para contestar la pregunta de
+
+2104
+02:02:15.950 --> 02:02:17.810
+de fue Roberto Roberto, ya
+
+2105
+02:02:18.850 --> 02:02:22.020
+fíjense cuando ustedes ocultan un elemento y
+
+2106
+02:02:24.710 --> 02:02:26.650
+ya ya te contesto también esa pregunta, gente,
+
+2107
+02:02:26.830 --> 02:02:31.010
+cuando ustedes ocultan un elemento, si, que fue el nivel,
+
+2108
+02:02:31.750 --> 02:02:34.770
+la pregunta sería y cómo muestro el nivel ahora?
+
+2109
+02:02:34.770 --> 02:02:38.060
+Cómo muestro el elemento así como aquí podemos
+
+2110
+02:02:38.380 --> 02:02:39.460
+aislar en los lecito.
+
+2111
+02:02:39.810 --> 02:02:43.980
+Podemos mostrar en este bombillo en la parte inferior,
+
+2112
+02:02:44.680 --> 02:02:48.650
+si ustedes le dan cl, mostrar elementos ocultos, sí,
+
+2113
+02:02:49.110 --> 02:02:51.930
+van a salir todos los elementos ocultos con este color
+
+2114
+02:02:52.120 --> 02:02:55.250
+especie pastel o rosado.
+
+2115
+02:02:55.510 --> 02:02:56.970
+Sí o morado, no.
+
+2116
+02:02:58.130 --> 02:03:00.690
+Y ustedes con control, por ejemplo,
+
+2117
+02:03:00.720 --> 02:03:03.410
+seleccionan estos dos elementos que acabo de ocultar
+
+2118
+02:03:04.880 --> 02:03:07.520
+y en la parca superior les sale mostrar elementos.
+
+2119
+02:03:08.920 --> 02:03:11.540
+Le dan click, le dan a la x
+
+2120
+02:03:12.100 --> 02:03:13.700
+y vuelvan a parecer los elementos.
+
+2121
+02:03:14.460 --> 02:03:16.540
+Entonces, muchas veces veces, sin querer ustedes pueden
+
+2122
+02:03:16.540 --> 02:03:19.540
+haber ocultado un elemento y están ahí rascándose la cabeza
+
+2123
+02:03:19.670 --> 02:03:23.700
+donde está donde está únicamente le dan click acá de mostrar
+
+2124
+02:03:24.260 --> 02:03:26.180
+y les muestre los elementos ocultos.
+
+2125
+02:03:27.020 --> 02:03:32.000
+Y luego le dan a la x. Ok, sobre tu pregunta, John.
+
+2126
+02:03:32.900 --> 02:03:35.770
+Yo Henry, eh,
+
+2127
+02:03:35.920 --> 02:03:38.610
+esos elementos es porque primero verifica que no estés
+
+2128
+02:03:38.610 --> 02:03:40.650
+trabajando en un tres de analítico y segundo,
+
+2129
+02:03:41.120 --> 02:03:43.210
+acá donde están los bombi gritos,
+
+2130
+02:03:43.950 --> 02:03:47.890
+apagas lo el modelo analítico con es con esos es y franjas
+
+2131
+02:03:47.890 --> 02:03:51.170
+de colores donde está acá con
+
+2132
+02:03:51.910 --> 02:03:54.770
+la parte inferior izquierda donde está ese bombillo que dice
+
+2133
+02:03:55.150 --> 02:03:57.730
+modelo analítico que no aparezca en color.
+
+2134
+02:03:58.090 --> 02:04:00.930
+O sea que no parezca encendido, sino que lo ocultes.
+
+2135
+02:04:02.330 --> 02:04:06.610
+Okey, eh? No, y no, no hiciste nada mal. No te preocupes ya.
+
+2136
+02:04:08.040 --> 02:04:10.520
+Y ro listo. Henry, eh?
+
+2137
+02:04:12.280 --> 02:04:14.840
+Y Roberto, sí, eh?
+
+2138
+02:04:17.060 --> 02:04:20.760
+Va a ser sincero cuando se recibe un archivo y fc, okey,
+
+2139
+02:04:21.700 --> 02:04:24.760
+uno lo puede abrir acá en eh,
+
+2140
+02:04:27.430 --> 02:04:30.940
+está la parte de abril y sale abrir un archivo fc.
+
+2141
+02:04:33.030 --> 02:04:36.280
+Depende mucho donde se trabajó ese archivo fc.
+
+2142
+02:04:36.340 --> 02:04:38.920
+Por ejemplo, la competencia de, digamos,
+
+2143
+02:04:39.120 --> 02:04:42.360
+director re es tecla sí, también es muy potente.
+
+2144
+02:04:43.700 --> 02:04:47.240
+Mmm. Digamos que tecla y Revit
+
+2145
+02:04:47.780 --> 02:04:49.480
+al pasar de las últimas versiones,
+
+2146
+02:04:49.700 --> 02:04:50.960
+no es que se están poniendo de acuerdo,
+
+2147
+02:04:50.960 --> 02:04:52.760
+pero están buscando la manera de que
+
+2148
+02:04:53.500 --> 02:04:55.480
+al trabajar con archi wec,
+
+2149
+02:04:55.660 --> 02:04:58.560
+que para que se entienda un archivo y fc
+
+2150
+02:04:59.180 --> 02:05:00.880
+es un archivo de formato libre.
+
+2151
+02:05:02.340 --> 02:05:04.960
+Por ejemplo, el archivo que se está guardando de revvit
+
+2152
+02:05:04.960 --> 02:05:07.440
+siempre tiene la extensión rt.
+
+2153
+02:05:08.380 --> 02:05:09.880
+Sí o rt.
+
+2154
+02:05:09.880 --> 02:05:14.530
+Si no estoy mal rt, lo que es ya rt,
+
+2155
+02:05:14.840 --> 02:05:17.690
+esto es un archivo que abre rev,
+
+2156
+02:05:17.790 --> 02:05:19.970
+la extensión de rev y solo se puede abrir en rev
+
+2157
+02:05:20.590 --> 02:05:22.170
+lo si yo quiero, por ejemplo,
+
+2158
+02:05:22.900 --> 02:05:26.530
+abrir un archivo de otro programa de modelo vin como es
+
+2159
+02:05:26.580 --> 02:05:29.330
+tecla, tengo que utilizar una extensión y
+
+2160
+02:05:29.510 --> 02:05:30.690
+fc desde que está acá.
+
+2161
+02:05:31.560 --> 02:05:34.100
+Es muy similar a lo que sucede con d wj.
+
+2162
+02:05:34.160 --> 02:05:38.620
+De jefe autocar cuando yo lo abro en IFC,
+
+2163
+02:05:38.620 --> 02:05:42.050
+que tiene formato libre, eh?
+
+2164
+02:05:42.690 --> 02:05:45.610
+Anteriormente era un poquito, un desastre, la verdad,
+
+2165
+02:05:46.190 --> 02:05:47.930
+los archivos tenían muchos errores.
+
+2166
+02:05:48.190 --> 02:05:52.050
+Sí, se lo tenía muchos, muchos errores, pero un poco
+
+2167
+02:05:53.030 --> 02:05:56.210
+rei ahí incorporando opciones, okey?
+
+2168
+02:05:56.840 --> 02:05:59.730
+Para que en la configuración, en las opciones de
+
+2169
+02:06:00.290 --> 02:06:04.010
+importación, no tener tantos errores mas.
+
+2170
+02:06:04.030 --> 02:06:07.930
+Sin embargo, Roberto de mi punto de vista, mm, siga viendo
+
+2171
+02:06:08.790 --> 02:06:11.810
+porque inclusive hace poco abrir un archiv fc que venía de
+
+2172
+02:06:11.820 --> 02:06:15.610
+tecla sigue existiendo ciertos errores de, por ejemplo,
+
+2173
+02:06:15.750 --> 02:06:18.810
+que los elementos no están unidos o no están conectados.
+
+2174
+02:06:19.610 --> 02:06:24.490
+Entonces hace falta mucho todavía de mi punto de vista, pero
+
+2175
+02:06:25.110 --> 02:06:28.330
+ya se ha ido minimizando lo que es el tema de los
+
+2176
+02:06:30.290 --> 02:06:33.150
+de los errores de un archivo fc de formato libre.
+
+2177
+02:06:33.770 --> 02:06:37.220
+Sí, eh, eso es un poquito.
+
+2178
+02:06:37.320 --> 02:06:39.700
+Lo que te puede ir comentando y cómo se abre?
+
+2179
+02:06:39.700 --> 02:06:41.100
+Bueno, de esta manera acá.
+
+2180
+02:06:41.800 --> 02:06:44.420
+Sí, sabré de esta manera aquí en archivo, abrir
+
+2181
+02:06:45.060 --> 02:06:46.460
+y abres el archivo fc.
+
+2182
+02:06:46.970 --> 02:06:49.990
+Okey, em, eh,
+
+2183
+02:06:54.680 --> 02:06:55.430
+listo, listo.
+
+2184
+02:06:55.570 --> 02:06:59.230
+Oh, por ejemplo, cp también. C, decir sí, tecla.
+
+2185
+02:06:59.270 --> 02:07:03.270
+Y vale, lo voy a dejar hasta acá.
+
+2186
+02:07:03.830 --> 02:07:05.110
+Fíjense que ya tenemos listos.
+
+2187
+02:07:05.120 --> 02:07:08.480
+Temas de de de
+
+2188
+02:07:08.480 --> 02:07:10.880
+cimentaciones em.
+
+2189
+02:07:12.360 --> 02:07:16.480
+Y lo que vamos a hacer ahora es, vamos con y la otra clase
+
+2190
+02:07:17.800 --> 02:07:20.870
+vigas y vamos a ir subiendo los niveles y vamos a empezar
+
+2191
+02:07:20.870 --> 02:07:22.150
+inclusive modelar escaleras.
+
+2192
+02:07:22.310 --> 02:07:26.930
+Entonces, entre la otra clase, que es la clase número cuatro
+
+2193
+02:07:27.490 --> 02:07:32.410
+y la clase número cinco, ya tendríamos modelado ya.
+
+2194
+02:07:32.410 --> 02:07:34.330
+Yo tengo estipulado que van a tener, eh,
+
+2195
+02:07:34.910 --> 02:07:36.480
+inclusive clase número cuatro.
+
+2196
+02:07:36.540 --> 02:07:38.440
+Ya van a tener modelado lo que es
+
+2197
+02:07:40.000 --> 02:07:44.520
+básicamente el 60 70% de los elementos de nuestra
+
+2198
+02:07:44.560 --> 02:07:45.800
+edificación, no?
+
+2199
+02:07:47.370 --> 02:07:50.190
+Eh? Y contesto la última pregunta que tan bueno malo es
+
+2200
+02:07:50.350 --> 02:07:54.460
+trabajar en tres de directamente es cuestión de gusto
+
+2201
+02:07:55.130 --> 02:07:56.140
+para para gustos.
+
+2202
+02:07:56.140 --> 02:08:00.270
+Hay colores, por ejemplo, y para gusto ahí de todos colores,
+
+2203
+02:08:00.270 --> 02:08:01.470
+perdón, eh?
+
+2204
+02:08:02.110 --> 02:08:05.750
+Y lo voy a mostrar. Uno puede modelar una viga en el d.
+
+2205
+02:08:06.900 --> 02:08:08.560
+Hay usuarios que le gusta hacerlo así.
+
+2206
+02:08:08.560 --> 02:08:11.440
+Y las columnas, estoy en el d, pero que pasa
+
+2207
+02:08:12.080 --> 02:08:13.840
+a pesar de que sí, que rey
+
+2208
+02:08:14.840 --> 02:08:17.080
+ido incorporando en las últimas versiones
+
+2209
+02:08:17.620 --> 02:08:19.600
+que se pueda mostrar la rejilla,
+
+2210
+02:08:20.390 --> 02:08:23.440
+realmente la exactitud uno lo obtiene en las
+
+2211
+02:08:23.500 --> 02:08:24.800
+vistas en los alzados.
+
+2212
+02:08:26.170 --> 02:08:30.030
+Sí. Y el d, yo lo utilizo más que todo
+
+2213
+02:08:30.720 --> 02:08:32.430
+referencia, eh?
+
+2214
+02:08:32.580 --> 02:08:36.680
+Como referencial, perdón para palabras,
+
+2215
+02:08:36.680 --> 02:08:39.920
+más palabras menos visualizar cómo va quedando la estructura
+
+2216
+02:08:40.120 --> 02:08:42.240
+y si tengo algún error o interferencia.
+
+2217
+02:08:42.790 --> 02:08:45.800
+Pero la exactitud de la posición del elemento para mí es
+
+2218
+02:08:45.800 --> 02:08:48.440
+mucho mejor en una planta o un alzado.
+
+2219
+02:08:49.850 --> 02:08:54.230
+Okey? Pero ya vamos a ver el tema de del d con las vigas.
+
+2220
+02:08:54.230 --> 02:08:56.270
+Vamos a mud vigas en d para que un
+
+2221
+02:08:56.270 --> 02:08:57.710
+poco se se pueda entender.
+
+2222
+02:08:58.710 --> 02:09:02.640
+Okey? Y luego voy a dejar hasta acá.
+
+2223
+02:09:03.160 --> 02:09:05.280
+Vean que ya tenemos cimentaciones
+
+2224
+02:09:05.280 --> 02:09:06.640
+varios tipos de cimentaciones.
+
+2225
+02:09:07.640 --> 02:09:11.270
+Y en la siguiente clase, vamos a ir avanzando,
+
+2226
+02:09:11.560 --> 02:09:13.150
+replicando todos los niveles.
+
+2227
+02:09:13.160 --> 02:09:17.630
+Vamos a incorporarlos maciza, nervaduras, losas, aligeradas
+
+2228
+02:09:18.750 --> 02:09:20.510
+y escaleras, eh?
+
+2229
+02:09:21.190 --> 02:09:24.830
+Y muros muros. Se me olviden, no muros, muros, escaleras,
+
+2230
+02:09:24.930 --> 02:09:26.510
+los maciza, los ligers es lo que
+
+2231
+02:09:26.510 --> 02:09:27.630
+vienen en las próximas clases.
+
+2232
+02:09:27.700 --> 02:09:31.310
+Okey, para comenzar con refuerzo de hacer ya,
+
+2233
+02:09:32.810 --> 02:09:35.470
+eh pilotas, cómo se realizaría em
+
+2234
+02:09:37.560 --> 02:09:41.730
+para pilotes, si me alcanza el tiempo a mostrarle, okey,
+
+2235
+02:09:41.750 --> 02:09:45.050
+una familia que yo puedo trabajar aquí está estructura.
+
+2236
+02:09:46.290 --> 02:09:50.170
+Y está la opción de eh, cuando le doy aislada, por ejemplo,
+
+2237
+02:09:50.430 --> 02:09:53.680
+no le voy a dar aislada ya que hay en opción,
+
+2238
+02:09:53.680 --> 02:09:57.130
+quise cargar familia y encargar familia.
+
+2239
+02:09:57.430 --> 02:10:02.230
+Nos vamos a ir a a a mi PC
+
+2240
+02:10:03.120 --> 02:10:07.470
+disco local c, pero gran data donde ustedes hayan copiado.
+
+2241
+02:10:07.470 --> 02:10:10.660
+Pero auto es la familia, el
+
+2242
+02:10:11.980 --> 02:10:15.380
+personalizado y libraries no el de libraries.
+
+2243
+02:10:15.540 --> 02:10:17.580
+Y vamos a ir a cimentación estructural.
+
+2244
+02:10:18.980 --> 02:10:21.860
+Y aquí sale pilotes, por ejemplo,
+
+2245
+02:10:22.220 --> 02:10:23.340
+distintos tipos de pilotos.
+
+2246
+02:10:23.600 --> 02:10:25.140
+Por ejemplo, un conjunto de seis.
+
+2247
+02:10:26.080 --> 02:10:30.950
+Le digo y abrir, te y
+
+2248
+02:10:30.980 --> 02:10:33.280
+luego voy a colocar acá, le voy en escape.
+
+2249
+02:10:33.400 --> 02:10:35.440
+Y esto es un conjunto de pilotes.
+
+2250
+02:10:36.050 --> 02:10:39.360
+Ahora, si tu conjunto de pilotes tiene una forma distinta
+
+2251
+02:10:39.450 --> 02:10:42.640
+extra, familia, eres mayor número de pilotes, etcétera,
+
+2252
+02:10:42.640 --> 02:10:46.080
+etcétera, lo puedes modelar como el encabezado,
+
+2253
+02:10:46.300 --> 02:10:50.500
+una losa y los pilotes como una columna circular.
+
+2254
+02:10:51.880 --> 02:10:53.610
+Okey, te tiene estas dos opciones.
+
+2255
+02:10:54.510 --> 02:10:56.810
+Nos selecciones acá y le vas en editar
+
+2256
+02:10:58.600 --> 02:11:01.880
+y te permite cambiar los sor de cimentación, anchura,
+
+2257
+02:11:01.960 --> 02:11:05.360
+longitud, límite, espacio libre, okey?
+
+2258
+02:11:06.080 --> 02:11:08.880
+Y todas estas características te van a pedir, eh,
+
+2259
+02:11:09.280 --> 02:11:11.680
+permitir modificar las condiciones del pilote.
+
+2260
+02:11:12.700 --> 02:11:15.870
+Okey, hay pilote, estés de diámetro 400.
+
+2261
+02:11:15.930 --> 02:11:18.630
+En este caso, hay varios tipos de de pilotas.
+
+2262
+02:11:19.060 --> 02:11:23.640
+Esas están esas dos opciones. Te lo voy a dejar hasta acá.
+
+2263
+02:11:23.750 --> 02:11:26.000
+Continuamos en la siguiente clase. Okey.
+
+2264
+02:11:26.840 --> 02:11:30.960
+Entonces cualquier, dudo pregunta, me van comentando?
+
+2265
+02:11:30.960 --> 02:11:32.160
+No hay ningún inconveniente.
+
+2266
+02:11:32.780 --> 02:11:35.240
+Yo subo la clase el día de mañana, eh?
+
+2267
+02:11:35.480 --> 02:11:36.840
+Entonces nos vemos en la clase número.
+
+2268
+02:11:37.360 --> 02:11:38.440
+Estaría en la clase monitor.
+
+2269
+02:11:38.540 --> 02:11:42.240
+Nos vemos en la clase número what en la asistencia.
+
+2270
+02:11:42.240 --> 02:11:45.040
+Yo les comenté que deben escribir siempre acá por el chat.
+
+2271
+02:11:45.300 --> 02:11:46.920
+Astrid, eh?
+
+2272
+02:11:47.260 --> 02:11:50.200
+Su número de apellido en el break, un número de apellido,
+
+2273
+02:11:50.200 --> 02:11:52.440
+inclusive lo pues, lo ahorita.
+
+2274
+02:11:53.030 --> 02:11:55.440
+Loas tu nombre de apellido y listo, eh?
+
+2275
+02:11:56.970 --> 02:12:01.690
+Y porque la cantidad de participantes para no
+
+2276
+02:12:01.690 --> 02:12:02.810
+confundirlos con un link,
+
+2277
+02:12:03.130 --> 02:12:05.490
+prefiero que me escribe acá en el chat, nombre y aplique.
+
+2278
+02:12:06.220 --> 02:12:07.760
+Sí, eh?
+
+2279
+02:12:08.110 --> 02:12:10.240
+Solo para las personas que no lo hicieron en el break.
+
+2280
+02:12:11.020 --> 02:12:12.000
+Si ya ustedes lo hicieron,
+
+2281
+02:12:12.000 --> 02:12:13.120
+el break no tenga volver a escribir.
+
+2282
+02:12:14.800 --> 02:12:15.840
+Entonces nos vemos en la siguiente.
+
+2283
+02:12:15.840 --> 02:12:17.520
+Perfecto, ni perfecto, Astrid,
+
+2284
+02:12:17.740 --> 02:12:18.800
+nos vemos en la siguiente clase.
+
+2285
+02:12:19.020 --> 02:12:20.720
+Sí, que tengan una buena noche.
+
+2286
+02:12:20.720 --> 02:12:23.440
+Y como siempre, gracias por su atención. Estén bien,
