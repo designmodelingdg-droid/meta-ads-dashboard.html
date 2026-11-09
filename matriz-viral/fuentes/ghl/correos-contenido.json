@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-06",
+ "generado": "2026-11-09",
  "carpetas": [
   {
    "id": "674fcf2563dbf77bbc1ae87d",
@@ -4484,7 +4484,7 @@
   "fallos": 0,
   "sin_enlace": 0
  },
- "workflows_en_la_cuenta": 147,
+ "workflows_en_la_cuenta": 153,
  "flujos": [
   {
    "id": "95e839ad-2cb0-4ed9-8a7a-2f5c935f7a87",
@@ -4503,6 +4503,42 @@
    "nombre": "AVISO NUEVA PLATAFORMA - SMS GOTEO",
    "estado": "draft",
    "actualizado": "2026-09-28T01:41:33.001Z"
+  },
+  {
+   "id": "77c9cd35-1416-43c5-b71f-86841b4db703",
+   "nombre": "CAMPUS DMA · Aviso al equipo: canje de recompensa",
+   "estado": "published",
+   "actualizado": "2026-11-07T23:25:08.922Z"
+  },
+  {
+   "id": "a228400e-e38c-46e0-b93c-aa357af97ce2",
+   "nombre": "CAMPUS DMA · Aviso al equipo: logro para certificar",
+   "estado": "published",
+   "actualizado": "2026-11-07T20:38:45.827Z"
+  },
+  {
+   "id": "b6933323-7bdf-404d-bf1e-31c956f8dd1d",
+   "nombre": "CAMPUS DMA · Curso del mes (3 días gratis)",
+   "estado": "published",
+   "actualizado": "2026-11-07T19:06:33.804Z"
+  },
+  {
+   "id": "bc545df3-cf6d-4ce8-a650-0ad60d5b171b",
+   "nombre": "CAMPUS DMA · Curso del mes: abrir automático (día 1)",
+   "estado": "draft",
+   "actualizado": "2026-11-07T18:18:02.706Z"
+  },
+  {
+   "id": "1b1c2027-ca39-4aa1-af5c-93aafb04b614",
+   "nombre": "CAMPUS DMA · Racha: reiniciar recordatorio",
+   "estado": "published",
+   "actualizado": "2026-11-07T19:05:58.216Z"
+  },
+  {
+   "id": "4e265fa3-183a-40a9-8a7c-21f4409576f4",
+   "nombre": "CAMPUS DMA · Recordatorio de racha (SMS)",
+   "estado": "published",
+   "actualizado": "2026-11-07T19:05:00.973Z"
   },
   {
    "id": "381695fd-5427-47fa-961c-4845459ad48b",
@@ -5370,8 +5406,8 @@
   }
  ],
  "flujos_por_estado": {
-  "published": 68,
-  "draft": 79
+  "published": 73,
+  "draft": 80
  },
  "limite_conocido": "La API no dice que workflow usa que plantilla: GET /workflows/ solo devuelve metadatos."
 }

@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-06",
+  "generado": "2026-11-09",
   "location": "nkKbOarn5IwHeMv48uY9",
   "nota": "Sonda: comprueba QUE endpoints responden con nuestro token. No baja datos de negocio. Lo importante es si abren 'cursos · productos' y 'membresias': ahi vive el progreso de los alumnos, que Windsor NO expone.",
   "resultados": {
@@ -121,7 +121,7 @@
     "workflows": {
       "ok": true,
       "http": 200,
-      "registros": "147+",
+      "registros": "153+",
       "claves": [
         "traceId",
         "workflows"
@@ -131,7 +131,7 @@
     "etiquetas": {
       "ok": true,
       "http": 200,
-      "registros": "607+",
+      "registros": "608+",
       "claves": [
         "tags",
         "traceId"
@@ -151,7 +151,7 @@
     "conversaciones": {
       "ok": true,
       "http": 200,
-      "registros": 28322,
+      "registros": 28443,
       "claves": [
         "conversations",
         "total",
@@ -184,7 +184,7 @@
     "pagos · transacciones": {
       "ok": true,
       "http": 200,
-      "registros": 473,
+      "registros": 475,
       "claves": [
         "data",
         "totalCount",
@@ -221,8 +221,44 @@
         "updatedAt",
         "version"
       ],
-      "total": 147,
+      "total": 153,
       "lista": [
+        {
+          "nombre": "CAMPUS DMA · Aviso al equipo: canje de recompensa",
+          "estado": "published",
+          "actualizado": "2026-11-07",
+          "id": "77c9cd35-1416-43c5-b71f-86841b4db703"
+        },
+        {
+          "nombre": "CAMPUS DMA · Aviso al equipo: logro para certificar",
+          "estado": "published",
+          "actualizado": "2026-11-07",
+          "id": "a228400e-e38c-46e0-b93c-aa357af97ce2"
+        },
+        {
+          "nombre": "CAMPUS DMA · Curso del mes (3 días gratis)",
+          "estado": "published",
+          "actualizado": "2026-11-07",
+          "id": "b6933323-7bdf-404d-bf1e-31c956f8dd1d"
+        },
+        {
+          "nombre": "CAMPUS DMA · Curso del mes: abrir automático (día 1)",
+          "estado": "draft",
+          "actualizado": "2026-11-07",
+          "id": "bc545df3-cf6d-4ce8-a650-0ad60d5b171b"
+        },
+        {
+          "nombre": "CAMPUS DMA · Racha: reiniciar recordatorio",
+          "estado": "published",
+          "actualizado": "2026-11-07",
+          "id": "1b1c2027-ca39-4aa1-af5c-93aafb04b614"
+        },
+        {
+          "nombre": "CAMPUS DMA · Recordatorio de racha (SMS)",
+          "estado": "published",
+          "actualizado": "2026-11-07",
+          "id": "4e265fa3-183a-40a9-8a7c-21f4409576f4"
+        },
         {
           "nombre": "✅ (SMS) FACEBOOK FORM DIPLOMADO",
           "estado": "published",
