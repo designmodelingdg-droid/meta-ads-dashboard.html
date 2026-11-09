@@ -14,7 +14,7 @@ on:
       modo:
         description: "Qué hacer"
         type: choice
-        options: [transcribir, recortar, listar]
+        options: [transcribir, recortar, listar, whisper]
         default: transcribir
       tema:
         description: "transcribir · tema a buscar en los nombres (p. ej. conexiones, naves, Revit IA)"
@@ -44,7 +44,50 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  plan:
+    if: ${{ inputs.modo == 'whisper' }}
+    runs-on: ubuntu-latest
+    outputs:
+      ids: ${{ steps.p.outputs.ids }}
+    steps:
+      - id: p
+        env:
+          VIDEO: ${{ inputs.video }}
+        run: echo "ids=$(python3 -c 'import json,os;print(json.dumps([x.strip() for x in os.environ["VIDEO"].split(",") if x.strip()]))')" >> "$GITHUB_OUTPUT"
+
+  whisper:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        id: ${{ fromJSON(needs.plan.outputs.ids) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: scripts/vimeo_whisper.py
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg && pip install -q faster-whisper==1.1.1
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: whisper-small
+      - name: Transcribir
+        env:
+          VIMEO_TOKEN: ${{ secrets.VIMEO_TOKEN }}
+        run: python3 scripts/vimeo_whisper.py "${{ matrix.id }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: whisper-${{ matrix.id }}
+          path: whisper/
+          retention-days: 14
+
   clips:
+    if: ${{ inputs.modo != 'whisper' }}
     runs-on: ubuntu-latest
     timeout-minutes: 300
     steps:
