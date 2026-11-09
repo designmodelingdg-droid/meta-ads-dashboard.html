@@ -708,7 +708,7 @@ Datos: Graph API (Action «Métricas semanales» del 9-nov), historias y embudos
 | 4 semanas anteriores (27 piezas) | 2.500 | 2 | 7 |
 
 **Lecciones**
-1. **Los dos videos de estructuras se llevaron la conversación.** «Mismo sismo, 3 cimentaciones» (18 comentarios, 4× la mediana de reels) y las 6 uniones (8 comentarios, 42 guardados, 9 comentarios en Facebook) juntan 39 de los 45 comentarios de la semana contando Facebook. Cimentaciones repite lo del 19-oct. El dato técnico de estructuras con una pregunta concreta es lo que conversa; no hace falta producir un formato nuevo para eso.
+1. **Los dos videos de estructuras se llevaron la conversación.** «Mismo sismo, 3 cimentaciones» (18 comentarios, 4× la mediana de reels) y las 6 uniones (8 comentarios, 42 guardados, 9 comentarios en Facebook) juntan 39 de los 48 comentarios de la semana contando Facebook. Cimentaciones repite lo del 19-oct. El dato técnico de estructuras con una pregunta concreta es lo que conversa; no hace falta producir un formato nuevo para eso.
 2. **El post de 40 mm tuvo el mayor alcance (9.597) pero solo 1 comentario.** Se guarda (35), pero no invita a responder. Un dato suelto necesita una pregunta que acuse un hábito («¿cuánto le pones tú?») para convertir vistas en conversación.
 3. **Las piezas del workshop siguen sin conversar en reel.** «Para quién es» sacó 628 vistas y 0 comentarios, como la demo del 31-oct. El carrusel de las 5 preguntas sí tuvo 6 comentarios. Al workshop le sirve mostrar lo que hace la IA, no explicar el evento. Los registros se miden en la landing y la pauta, no en los comentarios.
 4. **La efeméride no funcionó.** El carrusel de Día de Difuntos quedó por debajo de la mediana de carruseles de octubre (2.379 vistas y 0 comentarios contra 3.047 y 6).
