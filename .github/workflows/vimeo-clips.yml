@@ -185,7 +185,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
-      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg && pip install -q faster-whisper==1.1.1 requests opencv-python-headless pillow numpy
+      - run: |
+          (curl -sL https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz | tar xJ -C /tmp && sudo cp /tmp/ffmpeg-*-static/ffmpeg /tmp/ffmpeg-*-static/ffprobe /usr/local/bin/) || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+          ffmpeg -version | head -1
+          pip install -q faster-whisper==1.1.1 requests opencv-python-headless pillow numpy
       - uses: actions/cache@v4
         with:
           path: ~/.cache/huggingface
