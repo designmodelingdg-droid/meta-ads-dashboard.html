@@ -1,0 +1,59 @@
+name: Acero — lecciones cortas
+
+# Arma las lecciones cortas de la Especialización de Acero (plan en acero/plan.json).
+# Solo LEE de Vimeo. Los videos salen cifrados con acero/cert.pem porque el repo es público.
+
+on:
+  workflow_dispatch:
+    inputs:
+      lotes:
+        description: "Lotes de lecciones separados por punto y coma (p. ej. 1-12;13-24)"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      lotes: ${{ steps.p.outputs.lotes }}
+    steps:
+      - id: p
+        env:
+          LOTES: ${{ inputs.lotes }}
+        run: echo "lotes=$(python3 -c 'import json,os;print(json.dumps([x.strip() for x in os.environ["LOTES"].split(";") if x.strip()]))')" >> "$GITHUB_OUTPUT"
+
+  armar:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        lote: ${{ fromJSON(needs.plan.outputs.lotes) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg && pip install -q faster-whisper==1.1.1 requests opencv-python-headless pillow numpy
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: whisper-small
+      - run: mkdir -p trabajo && cd trabajo && npm init -y >/dev/null && npm i -s playwright@1.48.2 && npx playwright install --with-deps chromium
+      - name: Armar
+        env:
+          VIMEO_TOKEN: ${{ secrets.VIMEO_TOKEN }}
+        run: python3 acero/pipeline.py "${{ matrix.lote }}"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: acero-${{ matrix.lote }}
+          path: trabajo/out/
+          retention-days: 3
