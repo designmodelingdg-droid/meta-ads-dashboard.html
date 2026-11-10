@@ -14,7 +14,9 @@ def main(vid):
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', link, '-vn', '-ac', '1', '-ar', '16000', '/tmp/a.wav'], check=True)
     from faster_whisper import WhisperModel
     m = WhisperModel(os.environ.get('MODELO', 'small'), compute_type='int8', cpu_threads=os.cpu_count())
-    segs, _ = m.transcribe('/tmp/a.wav', language='es', word_timestamps=True, vad_filter=True,
+    import wave, numpy as np
+    wf = wave.open('/tmp/a.wav'); au = np.frombuffer(wf.readframes(wf.getnframes()), np.int16).astype(np.float32) / 32768
+    segs, _ = m.transcribe(au, language='es', word_timestamps=True, vad_filter=True,
                            initial_prompt='Clase de ingeniería estructural en Revit, Robot Structural Analysis y Advance Steel: vigas, columnas, zapatas, losas, acero, hormigón armado, conexiones, cerchas, galpones.')
     words, out = [], []
     for s in segs:
