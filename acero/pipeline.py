@@ -5,6 +5,8 @@ import json, os, re, subprocess, sys, unicodedata
 AQ = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(AQ, '..', 'scripts'))
 from vimeo_clips import api, elegir_archivo  # noqa: E402
+sys.path.insert(0, AQ)
+import tapar  # noqa: E402
 
 def rango(s):
     out = []
@@ -35,6 +37,12 @@ for n in sel:
         tr = f'{n:03d}_{k}'
         subprocess.run(['ffmpeg', '-v', 'error', '-y', '-ss', str(a), '-to', str(b), '-i', links[vid], '-vf', 'scale=1280:720',
                         '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '16', '-c:a', 'aac', '-b:a', '128k', f'{W}/tramos/{tr}.mp4'], check=True)
+        if PRE != 'acero':  # privacidad: tapar la tira de participantes de Zoom cuando aparece
+            iv = tapar.intervalos(f'{W}/tramos/{tr}.mp4')
+            if iv:
+                print('TAPAR', tr, iv, flush=True)
+                subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', f'{W}/tramos/{tr}.mp4', '-vf', tapar.filtro(iv), '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '15', '-c:a', 'copy', f'{W}/tramos/{tr}_t.mp4'], check=True)
+                os.replace(f'{W}/tramos/{tr}_t.mp4', f'{W}/tramos/{tr}.mp4')
         segs.append([tr, 0, round(b - a, 2)])
     cu['lecciones'].append(l); ref[str(n)] = segs
     if l.get('mute'): mute[f'{n:03d}'] = l['mute']
