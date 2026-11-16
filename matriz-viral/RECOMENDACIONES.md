@@ -46,6 +46,9 @@ estado: 🔴 pendiente · 🟡 en curso · 🟢 hecho · ⚫ descartada (con el 
 | 28 | **Limitar el disparador de NIVEL a la palabra exacta y solo en las piezas que la piden.** Sumó 416 contactos en 7 días (la semana anterior, 2) con 26 accesos al test (6 %). Coincide con «Simbología de niveles»: quien responde «nivel…» al reel recibe el bot y entra como lead del Máster | Revisión 26-oct | Ester / Patricio | 🔴 |
 | 29 | **El post «Perdió el concurso» (Vie 23) no salió.** Pasarlo al banco de reserva o a un hueco de noviembre que no choque con el workshop | Revisión 26-oct | Daniela | 🔴 |
 | 30 | **Cada chuleta se publica cuidada también en Facebook.** «Simbología de niveles» sacó 627 comentarios en FB contra 331 en IG | Revisión 26-oct | Daniela | 🔴 |
+| 31 | **Las chuletas que quedan (17, 24 y 30-nov) abren acusando un error o pidiendo criterio**, no con «Tipos de…». La de cerchas (10-nov) sacó 0 comentarios con 1.139 vistas | Revisión 16-nov | Daniela / Patricio | 🔴 |
+| 32 | **Probar la entrega de ZAPATA con una cuenta ajena:** 37 contactos nuevos al bot en 7 días y 6 accesos nuevos a la calculadora. Es una alerta, no una tasa: el conteo solo mira contactos creados en la semana | Revisión 16-nov | Ester | 🔴 |
+| 33 | **Grabar el reel de Gabriel «el error que más veo» (planificado el sáb 14)** junto con el del 25-nov; si no se graba esta semana, pasa al banco de reserva | Revisión 16-nov | Gabriel / Daniela | 🔴 |
 | 16 | **Tres piezas del calendario siguen sin salir:** `pauta-guia` (Mar 8, reel), `lm-revit-chatgpt-feed` (Jue 10, carrusel) y `reel-advertencias` (Vie 18, reel). El del Jue 10 no necesita cámara | Revisión 21-sep | Contenido | 🔴 |
 
 ---
@@ -96,6 +99,10 @@ Estas ya no se discuten cada semana. Salieron de medir.
 ---
 
 ## Historial
+
+### 16-nov-2026 · Revisión semanal (9–15 nov)
+
+**Una sola pieza conversó:** el video de cimentaciones con ZAPATA (Mié 11) sacó 69 comentarios, 52 guardados y 37 contactos al bot; las otras 5 piezas quedaron en 0 comentarios (mediana 1.885 vistas, 0 comentarios y 12 guardados, contra 2.472 / 2 / 8,5 de las 4 semanas anteriores). Los 3 posts con NIVEL sacaron 0 comentarios en IG; los 85 contactos nuevos de NIVEL siguen entrando por «Simbología de niveles» (#28). La promo estática (combo de $50 y Máster por bloques) no conversa, y la efeméride falla por segunda vez. Salieron 6 de 7 piezas: el reel de Gabriel no se grabó. ZAPATA: 37 contactos nuevos al bot y 6 accesos nuevos; conviene probar la entrega. → recomendaciones #31, #32 y #33.
 
 ### 26-oct-2026 · Revisión semanal (19–25 oct)
 

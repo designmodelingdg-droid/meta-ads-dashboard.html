@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-13",
+  "generado": "2026-11-16",
   "location": "nkKbOarn5IwHeMv48uY9",
   "nota": "Sonda: comprueba QUE endpoints responden con nuestro token. No baja datos de negocio. Lo importante es si abren 'cursos · productos' y 'membresias': ahi vive el progreso de los alumnos, que Windsor NO expone.",
   "resultados": {
@@ -80,7 +80,7 @@
     "citas agendadas": {
       "ok": false,
       "http": 422,
-      "detalle": "{\"message\":[\"Either of userId, calendarId or groupId is required\",\"startTime must be a string\",\"endTime must be a string\"],\"error\":\"Unprocessable Entity\",\"statu",
+      "detalle": "{\"message\":[\"Either of userId, calendarId or groupId is required\",\"startTime must be epoch milliseconds, e.g. 1680373800000\",\"startTime must be a string\",\"endTi",
       "lectura": "la ruta existe y el token entra: faltan parámetros",
       "bloqueo_cloudflare": false,
       "ruta": "/calendars/events?locationId=nkKbOarn5IwHeMv48uY9"
@@ -151,7 +151,7 @@
     "conversaciones": {
       "ok": true,
       "http": 200,
-      "registros": 28634,
+      "registros": 28761,
       "claves": [
         "conversations",
         "total",
