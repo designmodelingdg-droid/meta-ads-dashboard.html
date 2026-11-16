@@ -43,7 +43,7 @@ json.dump(ref, open(f'{W}/plan/refinado.json', 'w')); json.dump(mute, open(f'{W}
 # portadas
 js = """const {chromium}=require('playwright');const C=require('./plan/curso.json');
 (async()=>{const b=await chromium.launch();const p=await b.newPage({viewport:{width:1280,height:720}});
-for(const l of C.lecciones){const n=String(l.n).padStart(3,'0');const m='Módulo '+l.mod+' · '+C.modulos[l.mod-1];
+for(const l of C.lecciones){const n=String(l.n).padStart(3,'0');const m=C.modulos.length>1?'Módulo '+l.mod+' · '+C.modulos[l.mod-1]:(l.clase||'');
 await p.goto('file://'+__dirname+'/portadas/portada.html?n='+String(l.n).padStart(2,'0')+'&m='+encodeURIComponent(m)+'&t='+encodeURIComponent(l.t)+'&c='+encodeURIComponent(C.curso)+'&i='+encodeURIComponent(l.instr||''));
 await p.waitForTimeout(300);await p.screenshot({path:__dirname+'/portadas/p'+n+'.png'});}
 await b.close();})();"""

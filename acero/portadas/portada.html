@@ -20,6 +20,6 @@ body{width:1280px;height:720px;overflow:hidden;background:radial-gradient(ellips
 const q=new URLSearchParams(location.search);
 document.getElementById('mod').textContent=q.get('m');document.getElementById('cur').textContent=q.get('c');
 document.getElementById('num').textContent='LECCIÓN '+q.get('n');
-if(q.get('i'))document.getElementById('foot').textContent=q.get('i')+' · Lección en video';const t=q.get('t');document.getElementById('t').textContent=t;
+document.getElementById('foot').textContent=q.get('i')?q.get('i')+' · Lección en video':'Lección en video';const t=q.get('t');document.getElementById('t').textContent=t;
 document.querySelector('.t').style.setProperty('--fs',(t.length>48?68:t.length>34?80:92)+'px');
 </script></body></html>
