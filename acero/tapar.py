@@ -12,15 +12,17 @@ def cajas(fr):
     out = []
     for i in range(1, n):
         x, y, w, h, a = st[i]
-        vert = 50 <= w <= 115 and h >= 30
-        horiz = 30 <= h <= 65 and w >= 55
-        if not (vert or horiz) or w * h > SW * SH * 0.2: continue
+        # la tira de Zoom tiene un ancho fijo (~148 px a 1280) y recuadros negros neutros con el nombre en blanco
+        if not (66 <= w <= 82 and h >= 30): continue
+        if x < SW * 0.7: continue  # la tira siempre queda en el borde derecho
+        if y + h > SH * 0.93: continue  # barra de tareas o franja de subtítulos
         roi = g[y:y + h, x:x + w]
-        # el texto blanco queda dentro del recuadro: se cuenta sobre la caja completa
         fill = (roi < 52).mean(); br = (roi > 170).mean()
         if fill < 0.72 or not (0.002 <= br <= 0.12): continue
-        if y + h > SH * 0.93: continue  # barra de tareas o franja de subtítulos
-        out.append((x, y, w, h))
+        px = fr[y:y + h, x:x + w].reshape(-1, 3).astype(int); px = px[px.max(axis=1) < 52]
+        med = np.median(px, axis=0)
+        if med.max() > 40 or med.max() - med.min() > 7: continue  # AutoCAD y renders oscuros no son negro neutro
+        out.append((x, y, w, h + 44))
     return out
 
 def intervalos(path, fps=1.0, pad=2.5):
