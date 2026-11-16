@@ -13,7 +13,7 @@ def cajas(fr):
     for i in range(1, n):
         x, y, w, h, a = st[i]
         # la tira de Zoom tiene un ancho fijo (~148 px a 1280) y recuadros negros neutros con el nombre en blanco
-        if not (66 <= w <= 82 and h >= 30): continue
+        if not (62 <= w <= 92 and h >= 30): continue
         if x < SW * 0.7: continue  # la tira siempre queda en el borde derecho
         if y + h > SH * 0.93: continue  # barra de tareas o franja de subtítulos
         roi = g[y:y + h, x:x + w]
