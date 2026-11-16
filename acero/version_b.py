@@ -26,7 +26,7 @@ if not os.path.exists(cues_f):
     M=WhisperModel('small',compute_type='int8',cpu_threads=os.cpu_count())
     subprocess.run(['ffmpeg','-v','error','-y','-i',mid,'-ac','1','-ar','16000','tmpB/a.wav'],check=True)
     wf=wave.open('tmpB/a.wav');au=np.frombuffer(wf.readframes(wf.getnframes()),np.int16).astype(np.float32)/32768
-    sg,_=M.transcribe(au,language='es',word_timestamps=True,initial_prompt='Revit Structure, BIM, metodología BIM, AutoCAD, Robot Structural Analysis, Advance Steel, zapatas, columnas, vigas, ejes, niveles, hormigón armado, acero estructural.')
+    sg,_=M.transcribe(au,language='es',word_timestamps=True,initial_prompt='Revit Structure, BIM, metodología BIM, AutoCAD, Robot Structural Analysis, Advance Steel, zapatas, columnas, vigas, ejes, niveles, hormigón armado, acero estructural, muros, puertas, ventanas, cubiertas, suelos, techos, familias, tablas de planificación, armaduras.')
     W=[(w.word.strip(),w.start,w.end) for s in sg for w in s.words if w.word.strip()]
     cues=[];cur=[]
     for w in W:

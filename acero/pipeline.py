@@ -16,12 +16,15 @@ def slug(t):
     t = unicodedata.normalize('NFD', t.lower()); t = ''.join(c for c in t if unicodedata.category(c) != 'Mn')
     return re.sub(r'-+', '-', re.sub(r'[^a-z0-9]+', '-', t)).strip('-')
 
-P = json.load(open(os.path.join(AQ, 'plan.json')))
+ARG = sys.argv[1]; PRE = 'acero'
+if '@' in ARG: PRE, ARG = ARG.split('@', 1)  # p. ej. arq1@1-12 -> acero/plan-arq1.json
+assert re.fullmatch(r'[a-z0-9]+', PRE), PRE
+P = json.load(open(os.path.join(AQ, 'plan.json' if PRE == 'acero' else f'plan-{PRE}.json')))
 W = os.path.abspath('trabajo'); os.makedirs(W, exist_ok=True)
 for d in ['plan', 'tramos', 'portadas', 'fonts', 'tmpB', 'out']: os.makedirs(os.path.join(W, d), exist_ok=True)
 subprocess.run(f'cp {AQ}/portadas/* {W}/portadas/ && cp {AQ}/fonts/* {W}/fonts/ && cp {AQ}/cur_*.png {AQ}/version_b.py {AQ}/enc2.py {W}/', shell=True, check=True)
 L = {l['n']: l for l in P['lecciones']}
-sel = [n for n in rango(sys.argv[1]) if n in L]
+sel = [n for n in rango(ARG) if n in L]
 links = {}
 cu = {'curso': P['curso'], 'modulos': P['modulos'], 'lecciones': []}; ref = {}; mute = {}
 for n in sel:
@@ -47,7 +50,7 @@ await b.close();})();"""
 open(f'{W}/render.cjs', 'w').write(js)
 subprocess.run(['node', 'render.cjs'], cwd=W, check=True)
 for n in sel:
-    l = L[n]; les = f'{n:03d}'; name = f'acero-{les}-{slug(l["t"])}.mp4'
+    l = L[n]; les = f'{n:03d}'; name = f'{PRE}-{les}-{slug(l["t"])}.mp4'
     subprocess.run(['python3', 'version_b.py', les], cwd=W, check=True)
     subprocess.run(['python3', 'enc2.py', f'tmpB/{les}hq.mkv', f'tmpB/{name}'], cwd=W, check=True)
     subprocess.run(['openssl', 'cms', '-encrypt', '-binary', '-aes256', '-in', f'tmpB/{name}', '-outform', 'DER', '-out', f'out/{name}.cms', os.path.join(AQ, 'cert.pem')], cwd=W, check=True)
