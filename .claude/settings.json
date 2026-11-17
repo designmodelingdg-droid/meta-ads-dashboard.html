@@ -13,7 +13,15 @@
   },
   "permissions": {
     "allow": [
-      "mcp__Supabase__execute_sql"
+      "mcp__Supabase__execute_sql",
+      "mcp__AI_GHL__search_operations",
+      "mcp__AI_GHL__describe_operation",
+      "mcp__AI_GHL__execute_operation",
+      "mcp__AI_GHL__list_locations",
+      "mcp__IA_GHL__search_operations",
+      "mcp__IA_GHL__describe_operation",
+      "mcp__IA_GHL__execute_operation",
+      "mcp__IA_GHL__list_locations"
     ]
   }
 }
