@@ -55,6 +55,11 @@ for a in ads:
                             "campana": a.get("campaign_id"), "estado": a.get("effective_status"),
                             "creado": a.get("created_time"), "actualizado": a.get("updated_time"),
                             "linea1": texto.split("\n")[0][:200], "largo_linea1": len(texto.split("\n")[0])})
-print("===ESTADO_JSON===")
-print(json.dumps(out, ensure_ascii=False))
-print("===FIN_JSON===")
+VIVOS = {"ACTIVE", "PAUSED", "CAMPAIGN_PAUSED", "ADSET_PAUSED", "IN_PROCESS",
+         "PENDING_REVIEW", "WITH_ISSUES", "DISAPPROVED", "PREAPPROVED", "PENDING_BILLING_INFO"}
+# Una línea JSON por fila: el log de Actions corta las líneas muy largas.
+for tipo, filas in out.items():
+    for f in filas:
+        if f["estado"] in VIVOS:
+            print("FILA", json.dumps({"tipo": tipo, **f}, ensure_ascii=False))
+print("FIN_ESTADO", {k: len(v) for k, v in out.items()})
