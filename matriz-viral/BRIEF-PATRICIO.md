@@ -734,3 +734,54 @@ ZAPATA y ACERO suben con las piezas de estructuras de la semana. NIVEL sigue con
 - Ningún cambio de formato en el calendario: los dos ganadores son videos de valor de octubre que ya estaban dentro de noviembre.
 - A la chuleta visual le falta una segunda pieza con 7 días para decidir. Las 6 uniones entran en la revisión del 30-nov junto a la chuleta de perfiles.
 - Para el workshop, de aquí al 17 conviene reforzar con piezas que muestren la IA respondiendo, al estilo del carrusel de las 5 preguntas, y no con reels que expliquen el evento.
+
+## Actualización 2026-11-16 · semana 9–15 nov: la zapata se lleva toda la conversación y el resto de la semana queda en cero
+
+Datos: Graph API (Action «Métricas semanales» del 16-nov), historias y embudos de GHL. Las piezas tienen entre 3 y 7 días.
+
+| Fecha | Pieza | Formato | Vistas | Coment. IG | Coment. FB | Guard. | Comp. |
+|---|---|---|---|---|---|---|---|
+| Mié 11 | «La misma zapata no se comporta igual en arcilla, arena, limo…» (ZAPATA) | reel | 3.555 | 69 | 2 | 52 | 17 |
+| Lun 9 | «Perú ya exige BIM» (NIVEL) | carrusel | 3.534 | 0 | — | 11 | 2 |
+| Jue 12 | Día Mundial de la Calidad: checklist del modelo (NIVEL) | imagen | 2.442 | 0 | — | 16 | 4 |
+| Vie 13 | ¿Máster completo o por bloques? (NIVEL) | imagen | 1.327 | 0 | — | 1 | 0 |
+| Vie 13 | Combo: especialización + diplomado por $50 (COMBO) | imagen | 1.148 | 0 | — | 0 | 0 |
+| Mar 10 | Chuleta 2 · tipos de cercha (ACERO) | reel | 1.139 | 0 | — | 13 | 4 |
+
+**Medianas por pieza**
+
+| Periodo | Vistas | Comentarios | Guardados |
+|---|---|---|---|
+| Esta semana (6 piezas) | 1.885 | 0 | 12 |
+| 4 semanas anteriores (30 piezas) | 2.472 | 2 | 8,5 |
+
+**Lecciones**
+1. **El video de cimentaciones con ZAPATA es el único que conversó.** 69 de los 69 comentarios de la semana en Instagram, 52 guardados y 37 contactos nuevos al bot de ZAPATA en 7 días. Es la segunda semana seguida en que cimentaciones + palabra de recurso gana (el 9-nov fue «Mismo sismo, 3 cimentaciones»). Si la del 23-nov repite, pasa a regla permanente.
+2. **Los tres posts que pedían NIVEL sacaron 0 comentarios en Instagram.** Aun así el bot de NIVEL sumó 85 contactos en 7 días con 14 accesos al test. Esos contactos no vinieron de las piezas de la semana: siguen entrando por «Simbología de niveles», que dispara NIVEL con cualquier respuesta que diga «nivel» (recomendación #28, sigue abierta).
+3. **Explicar el producto en el feed sigue sin conversar.** El combo de $50 y el Máster por bloques sacaron 0 comentarios y 4 y 1 me gusta. Ya es regla: la oferta se mueve por pauta, historias y DM; en el feed solo entra pegada a un dato útil.
+4. **La chuleta de lista no conversa.** La de cerchas abrió con «Tipos de cercha para naves industriales 👇», sin acusar un error ni pedir criterio, y quedó en 0 comentarios. Las chuletas que conversaron en octubre traían un error o una decisión.
+5. **La efeméride falla por segunda vez.** El checklist del Día de la Calidad (0 comentarios) repite lo del Día de Difuntos (2-nov).
+
+**Plan contra lo publicado (feed):** salieron 6 de las 7 piezas planificadas.
+- El reel de Gabriel «el error que más veo» (Sáb 14) no salió porque estaba POR GRABAR: fue falta de producción, no de publicación.
+- El combo se planificó para el lun 9 y salió el vie 13.
+- El checklist de la calidad se planificó como carrusel de 9 láminas y salió como una sola imagen.
+
+**Historias:** 16 frames entre el lunes y el viernes, con un alcance mediano de 123 y 2 respuestas en total. Es la semana más floja en historias desde septiembre.
+
+**Embudos (7 días, contactos nuevos al bot / accesos nuevos)**
+
+| Embudo | Bot | Accesos |
+|---|---|---|
+| ZAPATA | 37 | 6 |
+| NIVEL | 85 | 14 |
+| ACERO | 6 | 2 |
+| MEMORIA | 1 | 2 |
+| COTIZA | 0 | 0 |
+
+ZAPATA trae la gente: 37 contactos nuevos al bot contra 6 accesos nuevos a la calculadora. El conteo de 7 días solo mira contactos creados en la semana, así que no es una tasa comparable con el 71 % de octubre (que medía a todos los que la pidieron). Sirve como alerta para probar la entrega, no como conclusión.
+
+**Ajustes que se aplican**
+- No cambia el formato del calendario: el video ganador ya tiene su par en el calendario (`nov-valor-grava-zapata-reel`, jue 26).
+- Las chuletas que quedan (LOD el 17, uniones el 24 y perfiles el 30) abren con un gancho que acuse un error o pida criterio («¿Sigues usando la misma cercha para todo?»), no con «Tipos de…».
+- El reel de Gabriel pendiente se graba junto con «no compres por el descuento» (25-nov). Si no se graba esta semana, pasa al banco de reserva.
