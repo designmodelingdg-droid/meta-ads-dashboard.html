@@ -298,3 +298,6 @@ Queda anotado para que la próxima auditoría no lo vuelva a marcar como fuga.
 Lo que sí sigue siendo cierto es lo otro: el flujo enrola mucha gente, así que
 si algún día se reconecta una API de mensajería, **este es el primero que hay
 que revisar antes de encenderla**.
+
+### 2026-11-17 · Diciembre: contenido sintomático (Dayana)
+Dayana pidió apuntar diciembre a «contenido problemático»: piezas que describen el síntoma que vive el comprador. Referencia: reel de @fedecaball (11,5 comentarios por 1.000 vistas). Es la misma regla que ya ganaba en la cuenta («acusar un hábito»: 8,61 contra 0,54), abierta por el síntoma. Reparto de intención propuesto para diciembre: 60/15/25. Detalle, estructura y banco de síntomas por perfil en `BRIEF-DICIEMBRE-SINTOMATICO.md`.
