@@ -81,6 +81,23 @@ lámina 5 = la causa; lámina 6 = qué hacer; última = palabra clave.
 
 ---
 
+## 4b. Piezas que ya están: clips del workshop (18-nov)
+
+Cuatro reels de menos de 60 s sacados de la grabación completa del workshop IA
+conectada a Revit (17-nov). Están en `guiones-completos.json` con id `dic-ws-clip-*`
+y se arman con `matriz-viral/clips-workshop-1117/build.py`.
+
+| id | Gancho | Intención |
+|---|---|---|
+| dic-ws-clip-niveles-duplicados-reel | La IA encontró 3 niveles a la misma altura | problema-síntoma |
+| dic-ws-clip-muros-reel | Le pregunté a mi modelo cuántos muros tiene | solución |
+| dic-ws-clip-niveles-reel | Deja de abrir tablas: pregúntale al modelo | solución |
+| dic-ws-clip-conexion-reel | Así conectamos la IA a un modelo de Revit | solución |
+
+Antes de publicarlas faltan tres cosas: los subtítulos, escuchar el audio completo y confirmar la palabra clave.
+
+---
+
 ## 5. Lo que hay que resolver ANTES de armar diciembre
 
 | Pendiente | Por qué importa | Quién |
