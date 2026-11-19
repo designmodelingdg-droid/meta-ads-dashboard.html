@@ -127,7 +127,7 @@ Dayana aprobó el 19/11/2026 este formato fijo para un WhatsApp diario a su núm
 *Ojo:* …
 ```
 
-Todavía NO se envía: Dayana no quiere que salga por el WhatsApp de la Academy en GoHighLevel (ahí lo lee el equipo) y pidió que salga por el número del asistente al que ella manda los comprobantes. Falta que pase ese número, el suyo y el de Gabriel, y comprobar que hay una herramienta que pueda enviar desde ese número (iZap no tiene número conectado; el conector LetsBot no conectó el 19/11). Mientras no esté resuelto, el informe va solo en la conversación. Nunca mandarlo por GoHighLevel.
+Todavía NO se envía: Dayana no quiere que salga por el WhatsApp de la Academy en GoHighLevel (ahí lo lee el equipo) y pidió que salga por el número del asistente al que ella manda los comprobantes. Dayana pasó los tres números el 19/11 (no se guardan completos aquí): el «Asistente DMA» termina en 9166, el personal de Dayana en 1210 y el de Gabriel en 9060; los números completos están en la conversación de ese día. Falta una herramienta que pueda enviar desde el número del asistente: iZap tiene una sola cuenta («designmodelingdg») sin ningún número conectado, y el conector LetsBot respondió error 502 en todos los intentos del 19/11. Al empezar cada corrida, prueba otra vez LetsBot con ToolSearch; si conecta y permite enviar desde el número terminado en 9166, manda el resumen con el formato aprobado a los dos números personales y dilo en el informe. Si no conecta, el informe va solo en la conversación. Nunca mandarlo por GoHighLevel. Al ser un número de WhatsApp Business, fuera de las 24 horas desde el último mensaje del destinatario solo se puede enviar con una plantilla aprobada.
 
 ## Preguntas abiertas al 19/11/2026
 
