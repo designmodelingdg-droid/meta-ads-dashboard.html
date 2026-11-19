@@ -98,9 +98,68 @@ Los tres buzones mandan sus avisos y la app los anota sola. Revisa `dg.ingesta_e
 
 ### 5. Clasificar lo evidente
 
+**Por qué importa (Dayana, 19/11/2026):** llegó a haber 395 movimientos «por clasificar» porque cada línea de un estado de cuenta y cada aviso de correo entra así y nadie los clasificaba. Ella pidió que el agente decida solo si algo es personal o de la empresa con lo que ya se sabe, y que pregunte solo lo que de verdad no se puede saber. Regla de trabajo: clasifica todo lo que encaje en la lista de abajo; pregunta por PERSONA (una respuesta sirve para todos sus movimientos), nunca movimiento por movimiento; y cada respuesta de Dayana o Gabriel se agrega a «Quién es quién».
+
+Reglas ya aplicadas el 19/11/2026 (aplícalas siempre, en períodos abiertos):
+
+| Si el concepto dice | Rubro | Ámbito |
+|---|---|---|
+| Anthropic, Claude, OpenRouter, OpenAI | R030 | empresarial |
+| Vercel, Railway, Render, Hostinger, Vimeo | R028 | empresarial |
+| Facebook, Meta, Google Ads | R034 | empresarial |
+| Sharp CRM, Inflect, GoGHL | R025 | empresarial |
+| Apple, Google One, iCloud | R021 | personal |
+| Spotify, Netflix, DGO, NBA | R022 | personal |
+| PedidosYa (comida, supermercado, propina), Megamaxi, Supermaxi, Hipermarket, Titán, restaurantes y cafeterías | R001 | personal |
+| Farmacias, PedidosYa farmacia | R011 | personal |
+| Gasolineras (Ponceano, Primax…) | R014 | personal |
+| Parqueaderos | R015 | personal |
+| Metro, transporte, centros comerciales, entradas, TodoHogar, Sukasa, De Prati, Estuardo Sánchez | R010 | personal |
+| Tigo, Movistar, Claro | R016 | personal |
+| Luz (Servicio Eléctrico), agua (EPMAPS), Netlife | R005 / R004 / R017 | personal |
+| Cargos y comisiones del banco | R054 | el de la cuenta |
+| Intereses que paga el banco | R048 | personal |
+| SENAE, SRI, municipio | R038 | empresarial |
+| Transferencia a una persona por $20 o menos (tiendas, taxis, almuerzos) | R010 | personal |
+
+Al clasificar, deja el concepto como «<qué es> — <texto original sin "(por clasificar)">».
+
+### Quién es quién (se llena con lo que respondan)
+
+| Persona | Qué es | Rubro |
+|---|---|---|
+| Ester Celeste Álvarez Torres | Asistente de la empresa | R035 empresarial |
+| Aylin Tapia | Empleada (se le paga por Global 66) | R035 empresarial |
+| Consulting Groupeg / Erika Guerra | Contadora | R031 empresarial |
+| Priscila (hermana de Dayana) | Familia | R010 personal |
+| Berderrama, Rodríguez Castrillo | Favores: dinero de terceros | R049 |
+| Arianny (Ariadne) Gabriela Pantoja Linares | Familiar de Gabriel; NO es cuenta propia | por definir |
+| Jorge Rax | Cliente de consultoría | R046 empresarial |
+| Vladimir Mijail Mayorga Guayasamín | Empleado de la consultoría: sueldo | R035 empresarial |
+| Sthep Varela | Arrendador de la vivienda de Dayana y Gabriel | R002 personal (si devuelve algo: R049) |
+| Pilar Augusta Dávalos | Ex secretaria de Gabriel: liquidación | R035 empresarial |
+| Daniela Alejandra Jiménez Casal | Marketing y diseño de la empresa | R033 empresarial |
+| Francis Jaaziel Bayas Mosquera | Vendedor de DMA | R036 empresarial |
+| Arianny (Ariadne) Pantoja Linares | Diseñó una página web: servicio pagado | R039 empresarial |
+| Yarahis Ruocco | Préstamo que hizo Dayana ($500.85, 14/10); lo devuelve en enero | Salida R045 personal; al cobrar, R049 |
+| Paul Iturralde, Ruth Granda | Pagos de Gabriel, sin más detalle | R010 personal, responsable Gabriel |
+| Ángel Amaguaya, Iván Pincay, Gabriela Romero, Nicole Vivanco, Flor Galarza, Víctor Perugachi, Miguel Vera, Anderson Bautista | Alumnos: sus transferencias son cobros | R046 empresarial |
+| «TRIBUTO» (restaurante) | Almuerzo de negocios | R040 empresarial |
+| Nicole Recalde Salazar | Psicóloga de Dayana ($30 por sesión) | R011 personal |
+| Joselyn Castillo Vasco, Dubreixy Luna Palomino, Marilyn Cedeño Level | Gente que trabajó para Dayana y se le paga | R039 empresarial (si devuelven algo: R049) |
+| Adriana Carrillo, María Magdalena Cabascango, Zulmi Mujica, Pamela Proaño Chiriboga, Sara Salgado Loyola, Brandon Zambrano Guerrero, Eduardo Pérez Hernández, Dayana Heldeuvier Peña | Dayana dijo «los demás también» son gente que le trabajó (no los nombró uno por uno) | R039 empresarial |
+| Joel Germán Ortiz Herrera, Rosa Mercedes Moreira Anchundia | Pagos personales de Dayana y Gabriel, sin más detalle | R010 personal |
+| «Pago Club Pycca» desde Banco Pichincha GP | Es el pago de la tarjeta Pycca de Dayana | Paso de dinero a «Pycca Dayana» (id a8d8ca7b-7cd1-499c-be0a-c73a31820f86), no gasto |
+| Amazon / Amazon Prime (consumo internacional con débito) | Compra personal de Dayana | R010 personal |
+| Megamaxi, Supermaxi | Supermercado | R001 personal |
+
+Aclarado por Dayana el 19/11/2026 (segunda ronda): Joel Ortiz y Rosa Moreira eran pagos personales; el «SALDO INICIAL TC» de $2,658.43 de la TDC Internacional era la deuda de arranque repetida como gasto (ya estaba en el saldo inicial de la tarjeta) y se anuló con su motivo; el pago de $100 «servicios varios cash» en Produbanco eran ahorros suyos (R048 personal). La fila anterior de Arianny («por definir») queda reemplazada por la de servicio de diseño. Quedan 17 abiertos sin dueño claro ($985.14): 5 «Regularización de transacción» de Pichincha, 4 «Pago sin descripción» del 19/10, nota de crédito de la Coop. Tulcán ($280.72), una interbancaria recibida en Pichincha GP ($131.95), Importadora G&G Fashion ($40.48), «AJUSTE» en Sukasa Gabriel ($36.07), ONE CARD ($19.34), un consumo en línea ($13.49) y dos transferencias a Gabriel que no aparecen recibidas ($11). Pycca Dayana quedó con $12.18 a favor: probablemente falta anotar una compra hecha con esa tarjeta.
+
+Decidido por Dayana el 19/11/2026: las líneas que el banco trae sin nombre («TRANSFERENCIA INTERNET», «INTERBANCARIA ENVIADA / RECIBIDA») anteriores al 12/10/2026 se cierran en bloque como «sin detalle» (salidas R010 personal, entradas R048 personal), y los retiros de cajero como «gasto personal en efectivo, sin detalle» (R010 personal). Ya se aplicó a 157 movimientos; si aparece otro igual de esas fechas, aplícalo sin preguntar. Quedan 49 movimientos «por clasificar» ($3,999.44) dentro de períodos que Erika ya cerró: Dayana decidió el 19/11 dejarlos como están. No los preguntes ni pidas reabrir; no los cuentes como pendientes, solo menciónalos en una línea si alguien pregunta por el total. Entre ellos hay pagos ya identificados (sueldo de Mayorga del 30/10, liquidación de Pilar, un arriendo, un pago a Francis y tres de alumnos).
+
 Para los movimientos de los últimos 4 días que estén en R052 o R053, clasifica SOLO lo que no deje duda: Facebook/Meta y Google Ads → R034 empresarial; Sharp CRM / Inflect → R025; OpenRouter, Anthropic, Claude → R030; Vimeo, Vercel, Railway, Render, Hostinger → R028; Google One, iCloud → R021; Spotify, Netflix → R022 personal; supermercados y PedidosYa → R001 personal; gasolineras → R014; Consulting Groupeg → R031. Lo demás se queda como está y entra en las preguntas.
 
-Retiros de cajero (regla de Dayana, 19/11/2026): un retiro en efectivo NO se deja como «paso a Efectivo», porque nadie anota después en qué se gastó y la cuenta «Efectivo / Western Union» (id 010bc059-7eec-4b26-8b36-3dfc5278b88a) acumula plata que no existe. La app todavía lo anota así cuando llega el aviso del banco. En cada corrida, convierte toda transferencia de un banco hacia esa cuenta en un gasto del banco: `tipo='egreso'`, `cuenta_destino_id=null`, rubro R052, ámbito personal, concepto «Retiro de efectivo en cajero (por clasificar: ¿en qué se gastó?)». Si la base responde que el período está cerrado, déjalo y dilo en «Ojo». Esa cuenta debe quedar en $0; si no, dilo. Pendiente de código: cambiar `planMovimiento` (caso «retiro») en `src/lib/ingesta/clasificar.ts` de control-financiero-dg para que nazca ya como gasto, y volver a desplegar la función.
+Retiros de cajero (regla de Dayana, 19/11/2026): un retiro en efectivo NO se deja como «paso a Efectivo», porque nadie anota después en qué se gastó y la cuenta «Efectivo / Western Union» (id 010bc059-7eec-4b26-8b36-3dfc5278b88a) acumula plata que no existe. La app todavía lo anota así cuando llega el aviso del banco. En cada corrida, convierte toda transferencia de un banco hacia esa cuenta en un gasto del banco: `tipo='egreso'`, `cuenta_destino_id=null`, rubro R010, ámbito personal, concepto «Retiro de efectivo en cajero · gasto personal en efectivo, sin detalle» (así lo decidió Dayana el 19/11; no preguntes en qué se gastó). Si la base responde que el período está cerrado, déjalo y dilo en «Ojo». Esa cuenta debe quedar en $0; si no, dilo. Pendiente de código: cambiar `planMovimiento` (caso «retiro») en `src/lib/ingesta/clasificar.ts` de control-financiero-dg para que nazca ya como gasto, y volver a desplegar la función.
 
 Favores que NO son ingresos ni gastos de ellos (confirmado por Dayana): lo que llega de «Berderrama» o de «Rodríguez Castrillo» va a R049; los canjes con Ariadne (Arianny) Pantoja Linares van a R045 o R049. Arianny Gabriela Pantoja Linares NO es Gabriel: una transferencia a ella nunca es traspaso entre cuentas propias. Lo que Dayana le pasa a su hermana Priscila es gasto personal (R010).
 
