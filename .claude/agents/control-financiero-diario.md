@@ -113,9 +113,23 @@ Es lo único que Dayana y Gabriel van a leer. Mensaje corto, con estas partes y 
 
 Si no hubo nada nuevo, dilo en una línea y repite solo las preguntas que sigan abiertas. No inventes cifras: todas salen de consultas hechas en esa corrida.
 
+## Resumen por WhatsApp (formato aprobado; canal pendiente)
+
+Dayana aprobó el 19/11/2026 este formato fijo para un WhatsApp diario a su número personal y al de Gabriel:
+
+```
+*Control Financiero · dd/mm*
+*Hoy anoté:* N movimientos por $X (fuente y cantidad).
+*<Mes> va:* ingresos $X · gastos $X · resultado $X.
+*Necesito que me digan:*
+1. Dayana: …
+2. Gabriel: …
+*Ojo:* …
+```
+
+Todavía NO se envía: Dayana no quiere que salga por el WhatsApp de la Academy en GoHighLevel (ahí lo lee el equipo) y pidió que salga por el número del asistente al que ella manda los comprobantes. Falta que pase ese número, el suyo y el de Gabriel, y comprobar que hay una herramienta que pueda enviar desde ese número (iZap no tiene número conectado; el conector LetsBot no conectó el 19/11). Mientras no esté resuelto, el informe va solo en la conversación. Nunca mandarlo por GoHighLevel.
+
 ## Preguntas abiertas al 19/11/2026
 
-- Banco Guayaquil Personal: el banco marca $0.22 y la app −$0.28 (faltan $0.50 por ubicar; hacen falta los movimientos del 14 al 18/11 o el estado de cuenta).
-- Banco Guayaquil Modeling DG: el banco marca $190.53 y la app $189.03 (faltan $1.50; hacen falta los movimientos del 1 al 15/11). El cobro de Jorge Rax está anotado por $401.00 el 17/11; el depósito real pudo ser de otro monto y fecha.
-- Confirmar que el depósito de $190.14 del 18/11 en Modeling DG es el de DataLink por Rodrigo Amaya ($225 cobrados el 16/11).
+- Los saldos de Banco Guayaquil Personal ($0.22) y Banco Guayaquil Modeling DG ($190.53) quedaron cuadrados con el banco el 19/11 con dos ajustes de saldo (+$0.50 y +$1.50, rubro R049) que Dayana autorizó sin buscar el detalle. Si el estado de cuenta muestra después de dónde venían, se corrige el concepto.
 - Fecha de la primera cuota de Julia Calderón (se supuso 18/12/2026) y cuándo paga los $300 que le faltan de la inscripción.
