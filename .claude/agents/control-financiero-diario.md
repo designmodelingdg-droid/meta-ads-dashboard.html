@@ -135,10 +135,20 @@ Al clasificar, deja el concepto como «<qué es> — <texto original sin "(por c
 | Berderrama, Rodríguez Castrillo | Favores: dinero de terceros | R049 |
 | Arianny (Ariadne) Gabriela Pantoja Linares | Familiar de Gabriel; NO es cuenta propia | por definir |
 | Jorge Rax | Cliente de consultoría | R046 empresarial |
+| Vladimir Mijail Mayorga Guayasamín | Empleado de la consultoría: sueldo | R035 empresarial |
+| Sthep Varela | Arrendador de la vivienda de Dayana y Gabriel | R002 personal (si devuelve algo: R049) |
+| Pilar Augusta Dávalos | Ex secretaria de Gabriel: liquidación | R035 empresarial |
+| Daniela Alejandra Jiménez Casal | Marketing y diseño de la empresa | R033 empresarial |
+| Francis Jaaziel Bayas Mosquera | Vendedor de DMA | R036 empresarial |
+| Arianny (Ariadne) Pantoja Linares | Diseñó una página web: servicio pagado | R039 empresarial |
+| Yarahis Ruocco | Préstamo que hizo Dayana ($500.85, 14/10); lo devuelve en enero | Salida R045 personal; al cobrar, R049 |
+| Paul Iturralde, Ruth Granda | Pagos de Gabriel, sin más detalle | R010 personal, responsable Gabriel |
+| Ángel Amaguaya, Iván Pincay, Gabriela Romero, Nicole Vivanco, Flor Galarza, Víctor Perugachi, Miguel Vera, Anderson Bautista | Alumnos: sus transferencias son cobros | R046 empresarial |
+| «TRIBUTO» (restaurante) | Almuerzo de negocios | R040 empresarial |
 
-Pendientes de que Dayana o Gabriel digan quiénes son (19/11/2026): Vladimir Mayorga, Sthep Varela, Joel Ortiz Herrera, Rosa Mercedes Moreira, Pilar Dávalos, Yarahis Ruocco, Daniela Jiménez Casal, Francis Bayas, Paul Iturralde, Ruth Granda; y de quién son los ingresos de Ángel Amaguaya, Iván Pincay, Gabriela Romero, Nicole Vivanco, Flor Galarza y Víctor Perugachi (parecen alumnos por los montos: crúzalos con el grupo Administración antes de preguntar).
+Pendientes de aclarar (19/11/2026): Joel Germán Ortiz Herrera ($966, 16/10) y Rosa Mercedes Moreira Anchundia ($612.68, 9/11). Dayana creyó que eran ingresos de consultoría, pero en el banco son SALIDAS de su cuenta: hay que volver a preguntarle a quién le pagó. La fila anterior de Arianny («por definir») queda reemplazada por la de servicio de diseño.
 
-Lo que NO se puede aclarar persona por persona: 139 líneas de agosto al 8 de octubre que el banco trae sin nombre («TRANSFERENCIA INTERNET», «INTERBANCARIA ENVIADA / RECIBIDA») y 29 retiros de cajero. Espera la decisión de Dayana sobre cerrarlos en bloque como «sin detalle»; no los preguntes uno por uno. Los movimientos de períodos que Erika ya cerró no se pueden cambiar: no insistas.
+Decidido por Dayana el 19/11/2026: las líneas que el banco trae sin nombre («TRANSFERENCIA INTERNET», «INTERBANCARIA ENVIADA / RECIBIDA») anteriores al 12/10/2026 se cierran en bloque como «sin detalle» (salidas R010 personal, entradas R048 personal), y los retiros de cajero como «gasto personal en efectivo, sin detalle» (R010 personal). Ya se aplicó a 157 movimientos; si aparece otro igual de esas fechas, aplícalo sin preguntar. Quedan 49 movimientos «por clasificar» ($3,999.44) dentro de períodos que Erika ya cerró: no se pueden cambiar sin que ella reabra, así que no insistas ni los preguntes; solo cuéntalos en «Ojo». Entre ellos hay pagos ya identificados (sueldo de Mayorga del 30/10, liquidación de Pilar, un arriendo, un pago a Francis y tres de alumnos).
 
 Para los movimientos de los últimos 4 días que estén en R052 o R053, clasifica SOLO lo que no deje duda: Facebook/Meta y Google Ads → R034 empresarial; Sharp CRM / Inflect → R025; OpenRouter, Anthropic, Claude → R030; Vimeo, Vercel, Railway, Render, Hostinger → R028; Google One, iCloud → R021; Spotify, Netflix → R022 personal; supermercados y PedidosYa → R001 personal; gasolineras → R014; Consulting Groupeg → R031. Lo demás se queda como está y entra en las preguntas.
 
