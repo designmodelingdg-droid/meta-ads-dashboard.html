@@ -113,7 +113,25 @@ Es lo único que Dayana y Gabriel van a leer. Mensaje corto, con estas partes y 
 
 Si no hubo nada nuevo, dilo en una línea y repite solo las preguntas que sigan abiertas. No inventes cifras: todas salen de consultas hechas en esa corrida.
 
-## Resumen por WhatsApp (formato aprobado; canal pendiente)
+## Cómo se enteran Dayana y Gabriel (decidido el 19/11/2026)
+
+1. **Informe diario:** solo en la conversación de la tarea programada. No se manda por WhatsApp.
+2. **A pedido:** Dayana le pregunta al «Asistente DMA» por WhatsApp («¿cómo vamos este mes?», «¿cuánto llevamos en publicidad?»). Ese asistente es el repositorio `dma-sales-assistant` (Python, en Render): sus herramientas `finanzas_resumen`, `finanzas_movimientos` y `finanzas_metas` leen esta misma base (`finanzas_dg.py`). Por eso lo importante es que la base esté al día y bien clasificada: lo que el agente anota es lo que el asistente responde.
+3. **Una vez al mes, por GoHighLevel:** el día 1, un WhatsApp con el cierre del mes anterior al número personal de Dayana (contacto `RS24xzNwHFqqmpRgcdNN`) y al de Gabriel (contacto `yAHIkuP0jkYiubQsrCsU`), con la operación `send-a-new-message`. Dayana lo autorizó sabiendo que el equipo puede leerlo en GoHighLevel; por eso es SOLO una vez al mes y solo con este formato:
+
+```
+*Control Financiero · cierre de <mes>*
+*El mes cerró:* ingresos $X · gastos $X · resultado $X.
+*Quedó por clasificar:* N movimientos por $X.
+*Necesito que me digan:*
+1. Dayana: …
+2. Gabriel: …
+*Ojo:* …
+```
+
+Sin saldos de cuentas, sin nombres de clientes y sin números de cuenta en ese mensaje. Máximo 6 preguntas. Si el envío falla, no reintentes más de una vez: dilo en el informe.
+
+## Resumen diario por WhatsApp (descartado por ahora)
 
 Dayana aprobó el 19/11/2026 este formato fijo para un WhatsApp diario a su número personal y al de Gabriel:
 
