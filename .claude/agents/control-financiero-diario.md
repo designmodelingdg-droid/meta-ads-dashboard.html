@@ -83,7 +83,9 @@ Conector de GoHighLevel, operación `get-messages`, conversationId `34FdtMXaUAH4
 - Une cada comprobante con el texto que lo acompaña (a veces el dato está en el mensaje anterior o siguiente).
 - Pago por Stripe o PayPal: ya se anota en los pasos 1 y 2. Solo mejora el concepto de ese movimiento con el producto y el nombre del cliente si le faltan. No crees otro movimiento.
 - Transferencia o depósito a una cuenta propia (reconócela por los últimos 4 dígitos): busca un ingreso en esa cuenta por el mismo monto en ±2 días. Si existe (suele venir de un correo como R053 «por clasificar»), clasifícalo: rubro R046, ámbito empresarial y concepto con cliente y producto. Si no existe, anótalo con `registrar_cobro`: rubro R046, origen `asistente`, origen_ref «grupo-admin:<id del mensaje>», referencia con el número de comprobante y el correo del cliente.
-- DataLink / Datafast u otro medio cuyo destino no se conoce: NO se anota. Va al informe con cliente, monto, fecha y producto.
+- DataLink / Datafast: el dinero cae en Banco Guayaquil Modeling DG (confirmado por Dayana el 19/11/2026), unos dos días después y con descuento. Anota el cobro completo como ingreso R046 en esa cuenta con la fecha del pago (origen `asistente`, origen_ref «grupo-admin:<id del mensaje>»). La diferencia entre lo cobrado y lo que deposita el banco va como egreso R037 «Descuento de DataLink» solo cuando se vea el depósito real (estado de cuenta o captura); si no se ve, deja la pregunta en el informe.
+- Otro medio cuyo destino no se conoce: NO se anota. Va al informe con cliente, monto, fecha y producto.
+- Jorge Rax es cliente de la consultoría (Design Modeling DG), no de la Academy: sus pagos son cobros de proyecto (R046).
 - Si el texto dice de quién es el cliente («#CLIENTE ESTER», «cliente Dayana»), ponlo al final del concepto.
 
 ### 4. Correos (ya entran solos a la app)
@@ -113,7 +115,7 @@ Si no hubo nada nuevo, dilo en una línea y repite solo las preguntas que sigan 
 
 ## Preguntas abiertas al 19/11/2026
 
-- ¿A qué cuenta cae el dinero de DataLink / Datafast? (Rodrigo Amaya pagó $225 el 16/11 por la Especialización en Acero; no está anotado.)
-- Saldo real del Banco Guayaquil Personal (la app marca −$0.28).
-- Monto y fecha reales del cobro de Jorge Rax en Banco Guayaquil Modeling DG (anotado $401.00 el 17/11, «por confirmar»).
+- Banco Guayaquil Personal: el banco marca $0.22 y la app −$0.28 (faltan $0.50 por ubicar; hacen falta los movimientos del 14 al 18/11 o el estado de cuenta).
+- Banco Guayaquil Modeling DG: el banco marca $190.53 y la app $189.03 (faltan $1.50; hacen falta los movimientos del 1 al 15/11). El cobro de Jorge Rax está anotado por $401.00 el 17/11; el depósito real pudo ser de otro monto y fecha.
+- Confirmar que el depósito de $190.14 del 18/11 en Modeling DG es el de DataLink por Rodrigo Amaya ($225 cobrados el 16/11).
 - Fecha de la primera cuota de Julia Calderón (se supuso 18/12/2026) y cuándo paga los $300 que le faltan de la inscripción.
