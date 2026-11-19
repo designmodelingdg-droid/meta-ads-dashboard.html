@@ -370,10 +370,12 @@
 ## Fase 5 - Videos editados (0 videos, 0:00)
 
 
-## Grabaciones DMA — equipo (2 videos, 9:15)
+## Grabaciones DMA — equipo (4 videos, 13:49)
 
 - 1245220881 · 2:49 · Grabación del 9 nov, 14:26
 - 1245273014 · 6:26 · Grabación del 9 nov, 17:42
+- 1245288337 · 0:00 · Grabación del 9 nov, 18:56
+- 1246312483 · 4:34 · Grabación del 12 nov, 10:31
 
 ## Intro. DisMod. BIM Arq. (11 videos, 26:36:45)
 
@@ -619,7 +621,7 @@
 ## Vimeo Create (0 videos, 0:00)
 
 
-## TODOS LOS VIDEOS (1399)
+## TODOS LOS VIDEOS (1401)
 
 - 475707035 · 1:42:25 · 2020-11-05 · Clase I SAP2000m1
 - 475708111 · 1:51:53 · 2020-11-05 · Clase 2 SAP2000m1
@@ -2020,3 +2022,5 @@
 - 1243970973 · 10:04 · 2026-11-05 · Lección 1.2-M5.mp4
 - 1245220881 · 2:49 · 2026-11-09 · Grabación del 9 nov, 14:26
 - 1245273014 · 6:26 · 2026-11-09 · Grabación del 9 nov, 17:42
+- 1245288337 · 0:00 · 2026-11-09 · Grabación del 9 nov, 18:56
+- 1246312483 · 4:34 · 2026-11-12 · Grabación del 12 nov, 10:31
