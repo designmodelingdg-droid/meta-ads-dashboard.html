@@ -1,705 +1,583 @@
 {
- "generado": "2026-10-12T13:48Z",
+ "generado": "2026-11-19T15:53Z",
  "nota": "Agregados y ejemplos anonimizados (nombre del contacto, correos, teléfonos y enlaces tapados). Muestra de las conversaciones más recientes, no el total.",
  "conversaciones_traidas": 400,
- "conversaciones_revisadas": 352,
+ "conversaciones_revisadas": 234,
  "tipos_de_conversacion": {
   "TYPE_PHONE": 400
  },
  "tipos_de_mensaje": {
-  "TYPE_CUSTOM_SMS": 9266,
-  "TYPE_ACTIVITY_OPPORTUNITY": 2980,
-  "TYPE_EMAIL": 2552,
-  "TYPE_WHATSAPP": 416,
-  "TYPE_INSTAGRAM": 221,
-  "TYPE_CUSTOM_PROVIDER_SMS": 92,
-  "TYPE_CALL": 89,
-  "TYPE_ACTIVITY_APPOINTMENT": 58,
-  "TYPE_FACEBOOK": 42,
-  "TYPE_INTERNAL_COMMENT": 30,
-  "TYPE_INSTAGRAM_COMMENT": 22,
-  "TYPE_ACTIVITY_EMPLOYEE_ACTION_LOG": 17,
-  "TYPE_FACEBOOK_COMMENT": 17,
-  "TYPE_TIKTOK": 10,
-  "TYPE_SMS_REVIEW_REQUEST": 8,
-  "TYPE_WEBCHAT": 6,
-  "TYPE_ACTIVITY_CONTACT": 6,
-  "TYPE_LIVE_CHAT_INFO_MESSAGE": 3,
-  "TYPE_TIKTOK_COMMENT": 2,
-  "TYPE_LIVE_CHAT": 1,
-  "TYPE_CUSTOM_EMAIL": 1
+  "TYPE_CUSTOM_SMS": 6890,
+  "TYPE_EMAIL": 6461,
+  "TYPE_ACTIVITY_OPPORTUNITY": 2027,
+  "TYPE_WHATSAPP": 232,
+  "TYPE_CALL": 132,
+  "TYPE_INSTAGRAM": 97,
+  "TYPE_ACTIVITY_APPOINTMENT": 96,
+  "TYPE_INTERNAL_COMMENT": 46,
+  "TYPE_FACEBOOK": 41,
+  "TYPE_LIVE_CHAT": 38,
+  "TYPE_CUSTOM_PROVIDER_SMS": 29,
+  "TYPE_LIVE_CHAT_INFO_MESSAGE": 15,
+  "TYPE_ACTIVITY_EMPLOYEE_ACTION_LOG": 13,
+  "TYPE_FACEBOOK_COMMENT": 9,
+  "TYPE_SMS_REVIEW_REQUEST": 3,
+  "TYPE_INSTAGRAM_COMMENT": 2,
+  "TYPE_WEBCHAT": 2,
+  "TYPE_CUSTOM_EMAIL": 1,
+  "TYPE_ACTIVITY_PAYMENT": 1,
+  "TYPE_ACTIVITY_INVOICE": 1
  },
- "terminan_con_mensaje_nuestro": 332,
- "con_etiqueta_de_compra": 72,
- "conversaciones_con_propuesta_de_llamada": 89,
- "conversaciones_con_enlace_de_pago": 41,
+ "terminan_con_mensaje_nuestro": 219,
+ "con_etiqueta_de_compra": 102,
+ "conversaciones_con_propuesta_de_llamada": 154,
+ "conversaciones_con_enlace_de_pago": 33,
  "fuente_de_los_mensajes_salientes": {
-  "api": 4998,
-  "workflow": 1750,
-  "app": 351,
-  "bulk_actions": 1
+  "api": 3150,
+  "workflow": 1684,
+  "app": 198
  },
  "largo_mensajes_bot": {
-  "mediana": 143,
-  "p90": 296,
-  "n": 7100
+  "mediana": 156,
+  "p90": 455,
+  "n": 5032
  },
  "como_terminan_los_mensajes_del_bot": {
-  "pregunta": 2182,
-  "da_opciones": 907,
-  "menciona_precio": 872,
-  "temario_o_pdf": 485,
-  "propone_llamada": 395,
-  "revisalo_y_me_cuentas": 228,
-  "enlace_de_pago": 68
+  "pregunta": 1209,
+  "propone_llamada": 776,
+  "menciona_precio": 563,
+  "temario_o_pdf": 445,
+  "da_opciones": 352,
+  "revisalo_y_me_cuentas": 179,
+  "enlace_de_pago": 64
  },
  "ultimo_mensaje_nuestro_de_cada_conversacion": {
-  "sin_pregunta_ni_paso": 165,
-  "pregunta": 165,
-  "menciona_precio": 88,
-  "da_opciones": 53,
-  "propone_llamada": 13,
-  "revisalo_y_me_cuentas": 8,
+  "pregunta": 99,
+  "propone_llamada": 82,
+  "sin_pregunta_ni_paso": 79,
+  "menciona_precio": 44,
+  "revisalo_y_me_cuentas": 14,
+  "da_opciones": 11,
   "temario_o_pdf": 6,
-  "enlace_de_pago": 2
+  "enlace_de_pago": 1
  },
  "objeciones": {
-  "lo_pienso": 55,
-  "pide_descuento": 51,
-  "clases_grabadas": 19,
-  "tiempo": 17,
-  "confianza": 13,
-  "es_un_bot": 9,
+  "pide_descuento": 37,
+  "es_un_bot": 27,
+  "clases_grabadas": 23,
+  "tiempo": 11,
+  "lo_pienso": 8,
+  "confianza": 7,
+  "sin_presupuesto": 5,
   "cuotas": 5,
-  "precio_caro": 4,
-  "sin_presupuesto": 2
+  "precio_caro": 2
  },
  "ejemplos_de_objecion": {
-  "es_un_bot": [
-   "Equipo, update de DG 📊 (avances de estos días) ✅ LISTO • Panel de DG ahora muestra las [nombre] del CRM: compras, plata, CPA y ROAS por producto, país y anuncio. Abre directo en \"Ventas reales (CRM)\".",
-   "👤 [nombre] ([telefono]) Gracias [nombre] , ya lo revisé. Fernando era un lead de agosto que tenía marcado que alguien le había respondido desde el teléfono, y el bot respetaba esa marca aunque había p",
-   "👤 [nombre] ([telefono]) Buen dia equipo @[telefono] por aca te envio 2 PDF actualizados para la información del Especializacion de Acero que es importante que el bot tenga, lo ideal siempre es enviar ",
-   "👤 [nombre] ([telefono]) ¡Gracias [nombre] ! 🙌 Listo, el bot ya tiene los dos PDF nuevos de Acero: manda siempre el brochure y el temario detallado solo cuando lo piden. Una confirmación: el brochure d",
-   "👤 [nombre] ([telefono]) ¡Gracias [nombre] ! 🙌 Listo, el bot ya manda el brochure corregido y no ofrece el certificado DQ en Acero. El temario detallado lo manda solo cuando lo piden.",
-   "👤 [nombre] ([telefono]) Hola [nombre] 🙌 Ya quedaron aplicadas las 9 correcciones. Encontramos la causa de fondo: cada mensaje que entra por el número de WhatsApp trae un texto técnico al final, y el b"
+  "confianza": [
+   "Costo? Modalidad de pago? Requisitos? Garantía, gracias. Quedo a la espera... 👍🏽",
+   "Tratare ahora que tengo mas tiempo de ver si logro avanzar y de ser posible terminar el Diplomad, para seguir con los otros curso. Y cuando los termines ver que otro curso puedo realizar con ustedes. ",
+   "Así es como lo coordinamos",
+   "👤 [nombre] ([telefono]) >VIDEO< 📋 *Así se saca hoy una tabla de puertas con su resistencia al fuego:* crear la tabla en Revit, elegir los campos, exportarla, abrir Excel, acomodarla… *más de 3 minutos",
+   "Sí, me interesa: la oferta de Planos BIM Arquitectónicos y Estructurales ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: Chatea con nosotros 🔗 Description: ¿Cuántas veces entregaste un plano y luego de",
+   "Sí, me interesa: la oferta de Planos BIM Arquitectónicos y Estructurales ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: Chatea con nosotros 🔗 Description: ¿Cuántas veces entregaste un plano y luego de"
   ],
   "pide_descuento": [
-   "les hice un pequeño descuento para apoyarles un poco mientras se recuperan",
-   "Hola, quiero info de la Colección BIM + IA 2026 con descuento Autodesk ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: Chatea con nosotros 🔗 Description: ¿Estás listo para liderar la construcción digit",
-   "Hola, me interesa la especialización de estructuras de Acero ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: 🔥 ¡Precio especial: $199 USD! 🔗 Description: ¿Quieres dominar el diseño de estructuras metál",
-   "Hola, me interesa la especialización de estructuras de Acero ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: 💥 Precio especial: $199 USD por tiempo limitado. 🔗 Description: 📲 Escríbenos y te enviamos e",
-   "Hola, quiero info de la Colección BIM + IA 2026 con descuento Autodesk • body: ¿Estás listo para liderar la construcción digital en 2026? Olvida saber solo Revit... El futuro es BIM + Inteligencia Art",
-   "Hay algún descuento para antiguos estudiantes"
-  ],
-  "confianza": [
-   "1 Juan 2 24 Lo que habéis oído desde el principio, permanezca en vosotros. Si lo que habéis oído desde el principio permanece en vosotros, también vosotros permaneceréis en el Hijo y en el Padre. 25 Y",
-   "1 Juan 3 19 Y en esto conocemos que somos de la verdad, y aseguraremos nuestros corazones delante de él; 20 pues si nuestro corazón nos reprende, mayor que nuestro corazón es Dios, y él sabe todas las",
-   "1 Juan 4 15 Todo aquel que confiese que Jesús es el Hijo de Dios, Dios permanece en él, y él en Dios. 16 Y nosotros hemos conocido y creído el amor que Dios tiene para con nosotros. Dios es amor; y el",
-   "Filipenses 1 19 Porque sé que por vuestra oración y la suministración del Espíritu de Jesucristo, esto resultará en mi liberación, 20 conforme a mi anhelo y esperanza de que en nada seré avergonzado; ",
-   "Filipenses 1 25 Y confiado en esto, sé que quedaré, que aún permaneceré con todos vosotros, para vuestro provecho y gozo de la fe, 26 para que abunde vuestra gloria de mí en Cristo Jesús por mi presen",
-   "Y estar mas confiado"
-  ],
-  "tiempo": [
-   "El otro problema creo el más difícil sería el costo, y horarios",
-   "Lamentablemente tengo poco tiempo para praxticar",
-   "En orden de prioridades 1)que lo aprendido tenga demanda real de campo 2) que los horarios me permitan continuar mi trabajo 3) que tenga acreditación nacional y internacional valida",
-   "Ayuda con horarios fechas y métodos de pago",
-   "Tengo 3 preguntas: - En cuánto tiempo se desarrolla todo el programa ? - Cuántos días a la semana y horario? - cuánto cuesta ?",
-   "Estas sesiones son personales o grupales?"
+   "Hola, me interesa el Master Internacional en Preventa ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: Aprende BIM desde cero y certifícate con 50% OFF 🔗 Description: ¿Quién liderará la revolución en co",
+   "Hola, me interesa el Master Internacional en Preventa ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: Aprende BIM desde cero y certifícate con 50% OFF 🔗 Description: ¿Quién liderará la revolución en co",
+   "Hola, me interesa el Master Internacional en Preventa ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: Aprende BIM desde cero y certifícate con 50% OFF 🔗 Description: ¿Quién liderará la revolución en co",
+   "👤 [nombre] ([telefono]) Dentro del CTA y la venta, será muy similar a Susto, solo que sin codigo, el descuento ya estan aplicado en cada enlace, asi que aca te dejo la landing page. donde vamos a redi",
+   "¡Hola! 👋 Quiero más info sobre las especializaciones en promo NAVIDAD ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: Chatea con nosotros 🔗 Description: 🎄✨Esta Navidad no regales cosas: regala crecimie",
+   "Estoy muy interesado ✨ Facebook Ad Data ✨ 🔗 Link: [enlace] 🔗 Title: 💥 Precio especial: $199 USD por tiempo limitado. 🔗 Description: 📲 Escríbenos y te enviamos el programa completo + pasos para inscrib"
   ],
   "precio_caro": [
-   "Me podrías ayudar a gestionar el certificado del M3 porfa, porque en su momento cuando lo publicaron yo no lo pude sacar. Ayúdame con eso por favor",
-   "Cómo te digo es empírico,calculo al ojo,quiero optimizar material últimamente le he estado preguntándole a la IA pero me vuelvo muy caro",
-   "No se me acomoda, lo siento un poco caro",
-   "no se si pertenece a su equipo o se equivocaron"
+   "👤 [nombre] ([telefono]) Y esto Ester por fa para verlo mañana @[telefono]",
+   "👤 [nombre] ([telefono]) Hola [nombre] y Dayana, ya lo revisamos 🙌 El bot está funcionando bien: todo mensaje que llega al CRM tiene respuesta. A Darwin, por ejemplo, le contestó en 1 minuto. El proble"
   ],
-  "clases_grabadas": [
-   "desde cuando empieza las clases, y si las mismas son grabadas, confirme",
-   "es en vivo , o solo son grabadas",
-   "Puedes escribir un script en Python que me ayude a clasificar las clases grabadas y el contenido del curso",
-   "Ambas. Otra consulta, quisiera saber si en el proceso tengo dudas, por ejemplo en el curso se ven naves industriales con angulos y canales, pero yo quisiera saber si alguien me podría un tutor real me",
-   "Hola otra vez, me estoy dando cuenta que el recibo de pago tambien dice periodo noviembre, deberia decir marzo? No estoy segura si hoy teniamos clase y me perdi alguna clase en vivo",
-   "Tendrán el curso de diseño de tanques elevados pregrabado?"
-  ],
-  "lo_pienso": [
-   "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿A qué te dedicas?: Soldadura, herrería, construcción u obra Full name: [nombre] Phone number: [telefono] Con las ",
-   "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿A qué te dedicas?: Arquitecto(a) Full name: [nombre] Phone number: [telefono] Con las estructuras de acero, ¿qué ",
-   "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿A qué te dedicas?: Ingeniero(a) civil o estructural Full name: [nombre] Phone number: [telefono] Con las estructu",
-   "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿A qué te dedicas?: Ingeniero(a) civil o estructural Full name: [nombre] Phone number: [telefono] Con las estructu",
-   "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿A qué te dedicas?: Ingeniero(a) civil o estructural Con las estructuras [nombre] acero, ¿qué quieres hacer?: Dise",
-   "Ok ¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿A qué te dedicas?: Estudiante de ingeniería o arquitectura Full name: [nombre] Phone number: [telefono] Con la"
-  ],
-  "cuotas": [
-   "Buen dia mi estimado, me quedare con la opcion de pago inicial de $500 y las mensualidades de $160",
-   "Buen día mi estimado tengo una pregunta a las 12 cuotas a cancelar a partir de qué fecha inician el pago de la primera o hay una candelarizacion?",
-   "Algun mejor precio de los $ 199,",
-   "Este pero con un mejor precio,",
-   "Tipo $ 75 dos cuotas"
+  "es_un_bot": [
+   "👤 [nombre] ([telefono]) Y esto Ester por fa para verlo mañana @[telefono]",
+   "👤 [nombre] ([telefono]) Revisamos los 4 puntos en Meta 👇 1️⃣ Combo: Ester dio en el clavo. Dos anuncios del combo (ComboNOV1-1v5, el que más conversaciones trae, y ComboNOV1-1v2) llegan al WhatsApp co",
+   "👤 [nombre] ([telefono]) Listo, ya quedó todo lo de la tarea 💪 Combo: corregimos el mensaje de WhatsApp en todos los anuncios y apagamos el Hook 3. Acero: apagamos el formulario de Ecuador y esa plata ",
+   "eres una IA?",
+   "👤 [nombre] ([telefono]) Ah ok ok jajaj pensé que era el bot",
+   "👤 [nombre] ([telefono]) >IMAGE< todos los cursos estan disponible @[telefono] porf avor revisar el bot en este mensaje"
   ],
   "sin_presupuesto": [
-   "Actual mente no trabajo en proyectos de acero, quisiera reforzar el conocimiento que tengo para poder brindar un mejor servicio",
-   "Hola buenas tardes saludos como estas amigo. Disculpe por ahora no tengo el dinero para pagar el curso pero tal vez para el próximo mes si pueda. Estaré en contacto con usted muchas gracias 🙏🏽 bendici"
+   "👤 [nombre] ([telefono]) Buen día! Sí, el formulario V7 del Máster ya está probado y funcionando con leads reales. Desde que partió han pasado 53 contactos por la calificación y en GHL quedan con su et",
+   "Full name: [nombre] Phone number: [telefono] Email: [correo] ¿Tienes experiencia utilizando software técnico (ejemplo: AutoCAD, Revit, SAP2000, etc.)?: Sí, manejo básico ¿A qué rubro perteneces?: Arqu",
+   "¿Tienes experiencia utilizando software técnico (ejemplo: AutoCAD, Revit, SAP2000, etc.)?: Sí, manejo básico ¿A qué rubro perteneces?: Ingeniero civil / estructural ¿Has cursado estudios universitario",
+   "Full name: [nombre] ¿Has cursado estudios universitarios en áreas relacionadas con construcción/ingeniería/arquitectura?: Sí, soy graduado ¿Tienes experiencia utilizando software técnico (ejemplo: Aut",
+   "Me interesa pero ahora no tengo el dinero Received on 📱[Design Modeling [nombre] ]"
+  ],
+  "lo_pienso": [
+   "primero veré el video y luego te cuento",
+   "Mas adelante",
+   "veré si mas adelante tengo los recursos para poder tomarlo personalmente",
+   "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿A qué te dedicas?: Ingeniero(a) civil o estructural Full name: [nombre] Phone number: [telefono] Con las estructu",
+   "Si pero en este momento no tengo la disponibilidad para tomarlo más adelante lo retomaria",
+   "¡Hola! Completé el formulario y me gustaría obtener más información sobre tu negocio. ¿A qué te dedicas?: Arquitecto(a) Full name: [nombre] Phone number: [telefono] Con las estructuras de acero, ¿qué "
+  ],
+  "clases_grabadas": [
+   "También las sesiones grabadas son descargables? Received on 📱[Design Modeling [nombre] ]",
+   "Estas sesiones son personales o grupales?",
+   "Listo muchas gracias",
+   "Bueno días sería en vivo o es pregrabadi",
+   "Es pregrabadi",
+   "dado que el curso es pregrabado"
+  ],
+  "tiempo": [
+   "Tengo 3 preguntas: - En cuánto tiempo se desarrolla todo el programa ? - Cuántos días a la semana y horario? - cuánto cuesta ?",
+   "Estas sesiones son personales o grupales?",
+   "Gracias, te confirmo mañana el horario para la cita",
+   "Tal vez el horario y la fecha de inicio.",
+   "Disculpe y costo y horarios",
+   "Este está disponible casi no tengo tiempo"
+  ],
+  "cuotas": [
+   "Hola [nombre] si estoy interesado Pero he tenido problemas financieros Pero al ratito sino es está vez será la próxima primero Dios.",
+   "Quiero saber si se puede pagar el curso en dos cuotas.",
+   "👤 [nombre] ([telefono]) quieren pagar 4 cuotas de los 225 puedo?",
+   "👤 [nombre] ([telefono]) Monton en Paypal: *386.47 USD* contamos con cupo disponible para las proximas 3 cuotas aprox 9-10 días ✅",
+   "👤 [nombre] ([telefono]) Monton en Paypal: *301.08 USD* contamos con cupo disponible para las proximas 2 cuotas aprox 6-7 días ✅ Último cobro automatico 104 USD el 30/10 viernes"
   ]
  },
  "respuesta_justo_despues_de_una_objecion": {
-  "n": 167,
-  "largo_mediana": 112,
-  "terminan_en_pregunta": 33,
+  "n": 110,
+  "largo_mediana": 170,
+  "terminan_en_pregunta": 25,
   "tipos": {
-   "sin_pregunta_ni_paso": 113,
-   "pregunta": 33,
-   "da_opciones": 18,
-   "menciona_precio": 16,
+   "sin_pregunta_ni_paso": 62,
+   "pregunta": 25,
+   "da_opciones": 17,
+   "menciona_precio": 15,
+   "enlace_de_pago": 8,
    "temario_o_pdf": 8,
-   "propone_llamada": 2,
-   "enlace_de_pago": 2,
-   "revisalo_y_me_cuentas": 2
+   "revisalo_y_me_cuentas": 4,
+   "propone_llamada": 4
   }
  },
  "fallas_12_oct": {
   "nota": "Conversaciones con cada falla (una vez por conversación). «Sin contestar» = el último mensaje es del cliente y lleva más de 30 min.",
-  "saludo_repetido_3_o_mas": 142,
-  "dos_mensajes_nuestros_casi_iguales_seguidos": 81,
-  "pide_soporte": 25,
-  "pide_soporte_sin_etiqueta_soporte_aylin": 25,
-  "texto_tecnico_filtrado": 23,
-  "respuesta_del_cliente_sin_contestar": 19,
-  "ofrece_una_persona_del_equipo": 1
+  "saludo_repetido_3_o_mas": 169,
+  "dos_mensajes_nuestros_casi_iguales_seguidos": 43,
+  "texto_tecnico_filtrado": 24,
+  "pide_soporte": 24,
+  "pide_soporte_sin_etiqueta_soporte_aylin": 24,
+  "respuesta_del_cliente_sin_contestar": 12
  },
  "ejemplos_de_falla": {
-  "texto_tecnico_filtrado": [
-   "ah oko entonces no muevo nada va Sent from 📱[Ester Alvarez - Sales Team]",
-   "Hola @Patricio, por favor 🙏 necesito tu ayuda urgente corrigiendo estos errores del bot 👇🏼 En el PDF adjunto está todo: cada falla con su captura, qué se arregla en el prompt y qué en GHL, y en los an",
-   "Buenas tardes [nombre], me comento daya que meli ya no estará trabajando, ella me ayudaba mensualmente a darme una factura por la licencia que pago a la empresa Sent from 📱[Ester Alvarez - Sales Team]",
-   "[nombre], parece que el mensaje llegó con un campo sin completar. ¿Me confirmas si quieres empezar ya con la Especialización en Acero ($225 USD, pago único) y dejamos Hormigón para la asesoría?",
-   "Buenos días [nombre] [nombre] Te saluda el Equipo de *Design Modeling [nombre] * ¡El día de hoy tenemos los últimos 2 cupos en promoción disponibles! 👉 *Automatización en Revit con IA & Add-ins* Inclu",
-   "Veo que el mensaje se cortó, ¿qué información buscas? ¿Es sobre algún curso o especialización en particular, o quieres conocer qué opciones tenemos?"
-  ],
   "saludo_repetido_3_o_mas": [
-   "¡Hola! 🎉 Soy el Supervisor Académico de Design Modeling [nombre] ¡Bienvenido/a! Tu pago quedó confirmado y ya activamos tu acceso ✅ Entra a la plataforma de Design Modeling [nombre] aquí 👉 [enlace] In",
-   "Hola [nombre] muchas gracias",
-   "Hola [nombre], ¿cómo estás? Te iba a preguntar qué posibilidad hay ya de que puedas añadir el bot a la plataforma de DG Operaciones. Fíjate que tiene un montón de fallas que quería corregir este fin d",
-   "Buenos días [nombre], ¿cómo estás? Fíjate, varias cosas urgentes que vi el fin de semana con las automatizaciones, para que las pauses: 1. Necesito reunirme contigo hoy unos 20 min para explicarte y d",
-   "Buenos días, [nombre] lo que pasó con tu estructura 🙏",
-   "¡Hola [nombre]! 🙌 Qué bueno que te interese la Especialización en Acero."
+   "Hola [nombre], en una cita sin costo vemos tu caso y te damos el diagnóstico de nivel BIM incluido. Así sabes por dónde empezar el Máster. ¿Te agendo?",
+   "Hola [nombre], si ya tienes experiencia, no hace falta empezar desde cero. En una cita vemos qué bloque te toca, ¿te la agendo?",
+   "Hola, lo más fácil es que lo hablemos en una cita sin costo. Te quedan claras tus dudas y sabes qué bloque te conviene. ¿Te reservo uno?",
+   "Hola, ¿aún tienes dudas? En una llamada corta las resolvemos y ves tus resultados de nivel BIM. Los espacios son pocos cada semana, ¿te agendo?",
+   "Hola [nombre] 👋 Te escribo de parte de Dayana. Porfa, cuéntanos cuándo empezamos o cuándo vemos el tema del reporte de cómo vamos. Si puedes, mándanoslo por WhatsApp, porque necesitamos saber cómo est",
+   "Hola [nombre] 👋🏼 ¡Tu cita del Máster BIM+IA esta por comenzar! En 30 minutos iniciamos con nuestra cita agendada. Aquí tienes el enlace de la reunión 👇🏼 [enlace]"
   ],
   "dos_mensajes_nuestros_casi_iguales_seguidos": [
-   "ya reviso Sent from 📱[Ester Alvarez - Sales Team]",
-   "Tienes un Lead a la espera de una respuesta, por favor responder de inmediato. Sus datos son: James [telefono]",
-   "Hola, [nombre] 👋🏼 Quería ayudarte a impulsar tu carrera enviándote nuestro curso gratuito sobre INTRODUCCIÓN A LA [nombre] EN [nombre] 🎁 Serán 8 sesiones de clases vistas desde nuestra plataforma. Ade",
-   "↪︎ Sinceramente la estoy pensando Excelente estimado, fíjate te comento",
-   "Hola, [nombre] 👋🏼 Quería ayudarte a impulsar tu carrera enviándote nuestro curso gratuito sobre INTRODUCCIÓN A LA [nombre] EN [nombre] 🎁 Serán 8 sesiones de clases vistas desde nuestra plataforma. Ade",
-   "Hola [nombre] [nombre], Hace algún tiempo participaste en nuestro Workshop de Revit BIM + Inteligencia Artificial y queríamos saber si aún estás interesado en especializarte en esta área para fortalec"
+   "Hola [nombre] , como estas? Espero te vaya bien. Me comentas si pudiste revisar la información recuerdas que la facilidad de pago es hasta mañana. Saludos 🤝🏼",
+   "Buenos día colega, te saluda Ester de Design Modeling [nombre] , he visualizado tu interes en la Especialización en Modelado BIM en Arquitectura y MEP ¿Tienes alguna duda?",
+   "[nombre], ¿te comparto el temario del Máster? Así ves los 4 bloques y lo que trae cada uno.",
+   "Hola [nombre], Hace algún tiempo participaste en nuestro Workshop de Revit BIM + Inteligencia Artificial y queríamos saber si aún estás interesado en especializarte en esta área para fortalecer tu per",
+   "Hola👋 ¡Gracias por tu compra y bienvenido a la 𝗖𝗼𝗺𝘂𝗻𝗶𝗱𝗮𝗱 𝗱𝗲 𝗘𝘀𝘁𝘂𝗱𝗶𝗮𝗻𝘁𝗲𝘀 𝗱𝗲 𝗗𝗲𝘀𝗶𝗴𝗻 𝗠𝗼𝗱𝗲𝗹𝗶𝗻𝗴! 🎓 Tu acceso ya está activo y puedes ingresar en el siguiente enlace",
+   "[enlace]"
+  ],
+  "texto_tecnico_filtrado": [
+   "Buenas tardes [nombre], me comento daya que meli ya no estará trabajando, ella me ayudaba mensualmente a darme una factura por la licencia que pago a la empresa Sent from 📱[Ester Alvarez - Sales Team]",
+   "Buenas tardes, te saluda tu asesor comercial asignado de Design Modeling, para ayudarte en todo momento. Sent from 📱[Design Modeling [nombre] ]",
+   "Veo que estas buscando informacion del master en BIM, correcto? Sent from 📱[Design Modeling [nombre] ]",
+   "Buenos días [nombre] [nombre] Te saluda el Equipo de *Design Modeling [nombre] * ¡El día de hoy tenemos los últimos 2 cupos en promoción disponibles! 👉 *Automatización en Revit con IA & Add-ins* Inclu",
+   "Buenos días [nombre] NazarenoTe saluda el Equipo de *Design Modeling [nombre] * ¡El día de hoy tenemos los últimos 2 cupos en promoción disponibles! 👉 *Automatización en Revit con IA & Add-ins* Incluy",
+   "Buenos Días, te saluda tu asesor comercial asignado de Design Modeling, para ayudarte en todo momento. Sent from 📱[Ester Alvarez - Sales Team]"
   ],
   "respuesta_del_cliente_sin_contestar": [
-   "👤 [nombre] ([telefono]) Buenos días equipo! 🖐️ Muy feliz incio de semana 🎉 que tengan excelente jornada, quedamos atentos a lo que necesiten 💪",
-   "Filipenses 2 19 Espero en el Señor Jesús enviaros pronto a Timoteo, para que yo también esté de buen ánimo al saber de vuestro estado; 20 pues a ninguno tengo del mismo ánimo, y que tan sinceramente s",
-   "Quedo atento!",
-   "Si tenía incluido el diseño de concreto",
-   "No estoy segura que pueda continuar, tengo otras asignaciones de las que tengo que salir antes de fin de año",
-   "5"
+   "Feliz día Pily",
+   "Si ya estoy activo en la plataforma.",
+   ">DOCUMENT< Solicitud Desing [nombre] pdf",
+   "Buen dia Gracias",
+   "Gracias",
+   "Muchas gracias, buen fin de semana"
   ]
  },
  "frases_del_bot_mas_repetidas": [
   [
-   "¡Solo por hoy, [nombre]! Al inscribirte hoy en la Especialización de Acero Estructural te llevas el curso de Cimentaciones BIM sin costo adicional. 🎁 y el Tutor IA 24/7 incluido 🤖 Es la oportunidad ideal para dominar ambas áreas con una sola inversión. ¿Te ayudo con tu inscripción?",
-   127
+   "[nombre], quedó confirmada tu inscripción al workshop de IA en Revit. ✅ Nos vemos el martes 17 de noviembre a las 8:00 PM (hora de Ecuador). Los avisos van por este grupo: [enlace]",
+   48
   ],
   [
-   "¡Solo por hoy, [nombre]! Al inscribirte hoy en la Especialización de Acero Estructural te llevas el curso de Cimentaciones BIM sin costo adicional. 🎁 Es la oportunidad ideal para dominar ambas áreas con una sola inversión. ¿Te ayudo con tu inscripción?",
-   104
+   "Hola [nombre], tu cupo en el workshop gratis \"IA conectada a Autodesk Revit\" está reservado ✅ Martes 17 de noviembre, 8:00 PM (Ecuador), por Zoom. Únete al grupo del workshop para los avisos: [enlace]",
+   35
   ],
   [
-   "Esperamos ser parte de su crecimiento profesional en un futuro🫱🏻‍🫲🏼 ¡Pero no te vas con las manos vacias! 🎁 Te obsequiamos un curso introductorio BIM dentro de nuestra Comunidad Design Premium DG 🎓 Tu acceso ya está activo y puedes ingresar en el siguiente enlace [enlace]",
-   104
+   "Buenos días 👋 te saluda tu asesor comercial asignado de Design Modeling. [nombre] para acompañarte en todo el proceso.",
+   33
   ],
   [
-   "[nombre], algo que muchos no saben 👇 la Especialización en Acero Estructural incluye un Tutor IA 24/7 que resuelve tus dudas mientras estudias, a la hora que sea. Solo aplica al tomar la especialización completa. ¿Te cuento cómo funciona?",
-   98
+   "Nuevo programa 𝗔𝗨𝗧𝗢𝗗𝗘𝗦𝗞 𝗜𝗡𝗧𝗘𝗟𝗜𝗚𝗘𝗡𝗖𝗜𝗔 𝗔𝗥𝗧𝗜𝗙𝗜𝗖𝗜𝗔𝗟 – 12 Cursos Avanzados de 𝗕𝗜𝗠 + 𝗜𝗔 por solo $𝟮𝟵𝟵.𝟵𝟵 𝗨𝗦𝗗 (valor real $2399.99).🔥",
+   30
   ],
   [
-   "Últimos cupos ⏳ [nombre] aún estás a tiempo de aprovechar el 2x1 en la Especialización de Acero Estructural. El día de hoy cerramos todos los cupos disponibles en promoción. Respóndeme y aseguro tu lugar de inmediato.",
-   98
+   "Si te interesa me avisas, ya que son únicamente 𝟭𝟬 𝗽𝗹𝗮𝘇𝗮𝘀 disponibles👍",
+   30
   ],
   [
-   "¿Qué tal, [nombre]? Quería saber si lograste revisar la información que te envié sobre la Especialización en Acero Estructural. Cualquier duda sobre el temario, horarios o inversión, te la resuelvo por aquí mismo.",
-   83
+   "Veo que te interesa nuestra Especialización en Acero Estructural BIM ¿es correcto?",
+   29
   ],
   [
-   "¡Hola [nombre]! 🙌 Vimos tu interés en nuestra Especialización en Acero Estructural BIM ¿Tienes 5 minutos ahora para contarte cómo funciona? 🎯",
-   82
+   "¡Hola ! 👋🏼⏰ ¡Ya casi estamos listos para comenzar el Máster BIM+IA! Empezamos en Marzo 2026🗓️. ¿𝗧𝘂𝘃𝗶𝘀𝘁𝗲 𝗰𝗵𝗮𝗻𝗰𝗲 𝗱𝗲 𝗿𝗲𝘃𝗶𝘀𝗮𝗿 el PDF “Personal Project IA Pro” 𝗾𝘂𝗲 𝘁𝗲 𝗲𝗻𝘃𝗶𝗲́? 😊 Me encantaría saber tu opinión.",
+   24
   ],
   [
-   "Hola [nombre] 👋 ¿Sigues interesado en la Especialización en Acero Estructural? Puedo enviarte el temario completo ahora mismo con todos los módulos detallados. ¿Te lo comparto?",
-   70
+   "¡Hola ! 👋🏼 ¿Listo para dar el salto profesional que mereces? 🚀 Con el Máster BIM+IA ya puedes certificarte internacionalmente y abrir nuevas oportunidades. 🌎 ⏰ Empezamos en Marzo 2026 ¡𝗔𝗴𝗲𝗻𝗱𝗮 𝘁𝘂 𝗶𝗻𝘀𝗰𝗿𝗶𝗽𝗰𝗶𝗼́𝗻 hoy en PREVENTA!",
+   24
   ],
   [
    "Adicional colgea, me gustaría mostrarte como son nuestras clases y plataforma, puedes verlo en el enlace 🔗👇🏼 [enlace]",
-   20
+   24
   ],
   [
-   "¿Cómo lo ves? 🤔 ¿Te explico la metodología de estudio y los beneficios?",
-   20
+   "Hola [nombre]👋🏼, ¿cómo estas? Estamos con una 𝗽𝗿𝗲𝘃𝗲𝗻𝘁𝗮 𝗲𝘅𝗰𝗹𝘂𝘀𝗶𝘃𝗮 de todos los cursos que lanzaremos para el año 𝟮𝟬𝟮𝟲. Ideal para cualquier perfil profesional.🏆",
+   23
+  ],
+  [
+   "[nombre], ¿te comparto el temario del Máster? Así ves los 4 bloques y lo que trae cada uno.",
+   21
   ],
   [
    "🎓 Al completar cada curso obtendrás certificaciones oficiales de Autodesk y Design Modeling [nombre]",
    19
   ],
   [
-   "¡Hola [nombre]👋! Vimos tu interés en nuestra Especialización en Acero Estructural BIM ¿Tienes 5 minutos ahora para contarte cómo funciona? 🎯",
-   19
-  ],
-  [
-   "Hola [nombre], 👋🏼 Gracias por tu interés en el Master BIM+IA y por llenar los datos del formulario. En unos minutos, se comunicará contigo tu asesor asignado. ¿Puedes recibir una llamada en este momento?",
+   "Hola [nombre] 👋 ¿Sigues interesado en el Máster BIM+IA? Puedo enviarte el temario completo ahora mismo con todos los módulos detallados ¿Te lo comparto?",
    18
   ],
   [
-   "Super, acá te dejo el PDF para que revises a detalle todo el contenido de la especialización 👇",
+   "¡Hola ! 😊 No olvides agendar tu cita para el Máster BIM+IA 🏗️, ¡una excelente oportunidad para transformar tus proyectos! 🎁 Descarga gratis el PDF “Personal Project IA Pro”. 👉🏼 [enlace] [nombre] tu cita aquí 👉🏼 [enlace] Si no pudiste asistir antes, ¿qué pasó? ¡Estoy aquí para ayudarte! 😊",
+   18
+  ],
+  [
+   "¡Hola ! 👋🏼 ¿𝗦𝗶𝗴𝘂𝗲𝘀 𝗶𝗻𝘁𝗲𝗿𝗲𝘀𝗮𝗱𝗼 𝗲𝗻 𝗲𝗹 Máster BIM+IA? 🏗️ Mira cómo otros profesionales transformaron su carrera con nosotros 👉 [enlace] ¿𝗧𝗲 𝗴𝘂𝘀𝘁𝗮𝗿í𝗮 𝘃𝗶𝘃𝗶𝗿 𝗹𝗼 𝗺𝗶𝘀𝗺𝗼? ⏳ ¡Comenzamos en Marzo 2026🗓️! ¡No pierdas tu lugar! 𝗔𝗴𝗲𝗻𝗱𝗮 𝘁𝘂 𝗰𝗶𝘁𝗮 👉🏼 [enlace] ¡Te espero! 😊",
+   18
+  ],
+  [
+   "¡Hola ! 👋🏼 Espero que estés bien. 😊 Quiero saber si ya decidiste sobre el Máster BIM+IA, 𝗼𝗯𝘁𝗲𝗻𝗱𝗿𝗮́𝘀: ✔️ Certificaciones Autodesk ✔️ Títulos en EE.UU. y Europa ✔️ Bolsa de trabajo a nivel de LATAM ¿Te gustaría que te ayude a resolver cualquier duda o saber qué te ha detenido? ¡Estoy aquí para ayudarte! 😊 𝗗𝗲𝘀𝗰𝘂𝗯𝗿𝗲 𝗺𝗮́𝘀 aquí 👉🏼 [enlace]",
    18
   ],
   [
    "La especialización se desarrolla en 4 módulos principales 🎓 y al completar cada curso obtienes certificaciones oficiales de Autodesk.",
-   18
-  ],
-  [
-   "Nuevo programa 𝗔𝗨𝗧𝗢𝗗𝗘𝗦𝗞 𝗜𝗡𝗧𝗘𝗟𝗜𝗚𝗘𝗡𝗖𝗜𝗔 𝗔𝗥𝗧𝗜𝗙𝗜𝗖𝗜𝗔𝗟 – 12 Cursos Avanzados de 𝗕𝗜𝗠 + 𝗜𝗔 por solo $𝟮𝟵𝟵.𝟵𝟵 𝗨𝗦𝗗 (valor real $2399.99).🔥",
-   17
-  ],
-  [
-   "Si te interesa me avisas, ya que son únicamente 𝟭𝟬 𝗽𝗹𝗮𝘇𝗮𝘀 disponibles👍",
-   17
-  ],
-  [
-   "Buenos Días, te saluda tu asesor comercial asignado de Design Modeling, para ayudarte en todo momento.",
    16
   ],
   [
-   "Buenos días 👋 te saluda tu asesor comercial asignado de Design Modeling. [nombre] para acompañarte en todo el proceso.",
+   "¿Cómo lo ves? 🤔 ¿Te explico la metodología de estudio y los beneficios?",
+   16
+  ],
+  [
+   "Buenos Días, te saluda tu asesor comercial asignado de Design Modeling, para ayudarte en todo momento.",
    15
   ],
   [
-   "👆🏼 Adicional te dejo aca la siguiente imagen para que puedas ver la estructura del Máster Internacional BIM+IA",
-   15
-  ],
-  [
-   "Veo que estás interesado en nuestra especialización en Acero Estructural ¿Es correcto?",
-   15
-  ],
-  [
-   "¡Solo por hoy, [nombre]! 🎁 El día de hoy cerramos los cupos de inscripción con ofertas. Aún estás a tiempo de conseguir el Curso de Automatización en Revit por tan solo $149.99 USD. ¿Te animas con la inscripción? .",
-   15
-  ],
-  [
-   "Te comento los principales beneficios que incluye 👇",
+   "[nombre], el Máster tiene 4 bloques y no todos necesitan los mismos. ¿Vemos cuál es el tuyo en una cita sin costo?",
    14
-  ],
-  [
-   "Últimos cupos, [nombre] ⏳ Este será mi último mensaje de seguimiento sobre su interés en el curso de Naves Industriales en SAP2000. Cuénteme, ¿sigue interesado en tomarlo? Si la respuesta es sí, con gusto le ayudo con todo el proceso.",
-   14
-  ],
-  [
-   "¿Cómo lo ves? ¿Te parece si avanzamos con tu inscripción? Te acompaño en el proceso paso a paso 🙌",
-   13
-  ],
-  [
-   "¡Hola ! 👋🏼⏰ ¡Ya casi estamos listos para comenzar el Máster BIM+IA! Empezamos en Marzo 2026🗓️. ¿𝗧𝘂𝘃𝗶𝘀𝘁𝗲 𝗰𝗵𝗮𝗻𝗰𝗲 𝗱𝗲 𝗿𝗲𝘃𝗶𝘀𝗮𝗿 el PDF “Personal Project IA Pro” 𝗾𝘂𝗲 𝘁𝗲 𝗲𝗻𝘃𝗶𝗲́? 😊 Me encantaría saber tu opinión.",
-   13
-  ],
-  [
-   "¡Hola ! 👋🏼 ¿Listo para dar el salto profesional que mereces? 🚀 Con el Máster BIM+IA ya puedes certificarte internacionalmente y abrir nuevas oportunidades. 🌎 ⏰ Empezamos en Marzo 2026 ¡𝗔𝗴𝗲𝗻𝗱𝗮 𝘁𝘂 𝗶𝗻𝘀𝗰𝗿𝗶𝗽𝗰𝗶𝗼́𝗻 hoy en PREVENTA!",
-   13
   ],
   [
    "¿Te envío el temario detallado?",
+   14
+  ],
+  [
+   "[nombre], ¡ES HOY! 📌 Workshop IA conectada a Autodesk Revit, 8:00 PM (Ecuador). El enlace de Zoom te llega por correo y por el grupo antes de empezar. ¿Te esperamos esta noche?",
+   14
+  ],
+  [
+   "Hola [nombre], lo más fácil es que lo hablemos en una cita sin costo. Te quedan claras tus dudas y sabes qué bloque te conviene. ¿Te reservo uno?",
    13
   ],
   [
-   "Hola [nombre]👋🏼, ¿cómo estas? Estamos con una 𝗽𝗿𝗲𝘃𝗲𝗻𝘁𝗮 𝗲𝘅𝗰𝗹𝘂𝘀𝗶𝘃𝗮 de todos los cursos que lanzaremos para el año 𝟮𝟬𝟮𝟲. Ideal para cualquier perfil profesional.🏆",
-   12
+   "Super, acá te dejo el PDF para que revises a detalle todo el contenido de la especialización 👇",
+   13
   ],
   [
-   "Acá te comparto el siguiente PDF para que puedas revisar a detalle el temario de la especialización",
-   12
+   "¡Hola [nombre]! 🙌 Me llegó que te interesa la Especialización en Acero Estructural BIM. ¿Tienes unos minutitos ahora? Te cuento rápido cómo funciona y resolvemos tus dudas. Te enviamos toda la info por Whatsapp",
+   13
   ],
   [
    "Buenas tardes colega, cuéntame ¿Lograste revisar la información que le envié?",
    12
   ],
   [
-   "Veo que te interesa nuestra Especialización en Acero Estructural BIM ¿es correcto?",
+   "Veo que estás interesado en nuestra especialización en Acero Estructural ¿Es correcto?",
    12
   ],
   [
-   "Últimos cupos, [nombre] ⏳ Este será mi último mensaje de seguimiento sobre su interés en el curso de Autodesk con IA. Cuénteme, ¿sigue interesado en tomarlo? Si la respuesta es sí, con gusto le ayudo con todo el proceso.",
+   "Hola [nombre], 👋🏼 Si te interesa aprender metodología BIM y ponerla en práctica en tus proyectos, puedes empezar por conocer ¿Qué es un modelador BIM? y que funciones realiza, cuanto debe cobrar por sus servicios y mucho más 👇🏼 [enlace] Además, un 🎁 BONO Adicional sobre cómo nuestro Diplomado Internacional BIM te sirve para continuar tus estudios en EE. UU. y Europa👇🏼 [enlace]",
    12
   ],
   [
-   "Ese valor incluye las 4 formaciones certificadas, con todos los beneficios y certificaciones que te comenté.",
+   "¡Solo por hoy, [nombre]! Al inscribirte hoy en la Especialización de Acero Estructural te llevas el curso de Cimentaciones BIM sin costo adicional. 🎁 Es la oportunidad ideal para dominar ambas áreas con una sola inversión. ¿Te ayudo con tu inscripción?",
+   12
+  ],
+  [
+   "Hola [nombre], algo nuevo: la Especialización en Acero Estructural ahora trae un Tutor IA que te resuelve dudas 24/7. ¿Te cuento cómo funciona?",
+   12
+  ],
+  [
+   "¡Hola! 👋 Soy Cami de Design Modeling [nombre] que te interesó nuestro Máster Internacional BIM + IA 🤖🏗️ ¿Te gustaría que te cuente un poquito más? 😊",
    11
   ],
   [
-   "¡Hola! Gracias por elegir 𝗗𝗲𝘀𝗶𝗴𝗻 𝗠𝗼𝗱𝗲𝗹𝗶𝗻𝗴 𝗔𝗰𝗮𝗱𝗲𝗺𝘆.💻🏆 ¿Te gustaría tomarte 30 segundos para dejarnos una reseña rápida?👉🏼 En el siguiente enlace lo puedes hacer 𝗺𝘂𝘆 𝗳𝗮́𝗰𝗶𝗹: [enlace]",
+   "Acá te comparto el siguiente PDF para que puedas revisar a detalle el temario de la especialización",
    11
   ],
   [
-   "Mira, si tomas cada módulo de la especialización por separado, el valor sería de $154.99 USD cada uno.",
+   "¡Hola ! 😊 No olvides agendar tu cita para el 𝗗𝗶𝗽𝗹𝗼𝗺𝗮𝗱𝗼 𝗕𝗜𝗠 🏗️, ¡una excelente oportunidad para transformar tus proyectos! 🎁 Descarga gratis la Guía \"𝟱 𝗠𝗲𝗷𝗼𝗿𝗲𝘀 𝗣𝗿𝗮́𝗰𝘁𝗶𝗰𝗮𝘀 𝗕𝗜𝗠\" 👉🏼 [enlace] [nombre] tu cita aquí 👉🏼 [enlace] Si no pudiste asistir antes, ¿qué pasó? ¡Estoy aquí para ayudarte! 😊",
+   11
+  ],
+  [
+   "[nombre] [nombre], quedó confirmada tu inscripción al workshop de IA en Revit. ✅ Nos vemos el martes 17 de noviembre a las 8:00 PM (hora de Ecuador). Los avisos van por este grupo: [enlace]",
+   11
+  ],
+  [
+   "Hola [nombre], ¿qué te pareció el temario? Cuéntame qué bloque te llamó más la atención.",
+   11
+  ],
+  [
+   "Hola [nombre], ¿qué tal? Vi que te interesó la Especialización en Acero Estructural. Tengo el temario completo con cada módulo, ¿quieres que te lo envíe?",
+   11
+  ],
+  [
+   "Todo es 100% práctico, orientado a proyectos reales y productividad profesional.",
    10
   ],
   [
-   "Pero hoy puedes acceder a la especialización completa por $199.99 USD en un único pago, válido durante las próximas 48 horas ⏳",
+   "[nombre], ¿aún tienes dudas? En una llamada corta las resolvemos y ves tus resultados de nivel BIM. Los espacios son pocos cada semana, ¿te agendo?",
    10
   ],
   [
-   "¡Hola ! 😊 No olvides agendar tu cita para el Máster BIM+IA 🏗️, ¡una excelente oportunidad para transformar tus proyectos! 🎁 Descarga gratis el PDF “Personal Project IA Pro”. 👉🏼 [enlace] [nombre] tu cita aquí 👉🏼 [enlace] Si no pudiste asistir antes, ¿qué pasó? ¡Estoy aquí para ayudarte! 😊",
+   "Perfecto, primero te comento de qué va la especialización.",
    10
   ],
   [
-   "Está organizada en módulos que te llevan de 0 a 100 en el manejo de los programas de diseño y cálculo, aplicado a proyectos reales de ingeniería estructural.",
+   "¡Hola ! 👋🏼 ¿𝗦𝗶𝗴𝘂𝗲𝘀 𝗶𝗻𝘁𝗲𝗿𝗲𝘀𝗮𝗱𝗼 𝗲𝗻 𝗲𝗹 𝗗𝗶𝗽𝗹𝗼𝗺𝗮𝗱𝗼 𝗕𝗜𝗠? 🏗️ 📽️ Mira cómo Albino Piñero aumentó sus ingresos con BIM 👉🏼 [enlace] ⏳ ¡Comenzamos este 05 de febrero de 2026! ¡No pierdas tu lugar! 𝗔𝗴𝗲𝗻𝗱𝗮 𝘁𝘂 𝗰𝗶𝘁𝗮 👉🏼 [enlace] ¡Te espero! 😊",
    10
-  ],
-  [
-   "¡Hola [nombre]! 🙌 Qué bueno que te interese la Especialización en Acero.",
-   9
   ]
  ],
  "ejemplos_final_de_conversacion": [
   {
-   "mensajes": 96,
+   "mensajes": 88,
    "compro_por_etiqueta": true,
    "final": [
     {
      "de": "bot",
-     "texto": "Te paso por el grupo Pato. Igual me avisas si hay posibilidad de hacerlo así para nosotros poder corregir si tú no estás"
-    },
-    {
-     "de": "persona",
-     "texto": "claro en ese caso conviene ya mejor traspasarte todo a tu entorno"
+     "texto": "Hola [nombre] 👋 ¿Sigues interesado en el Máster BIM+IA? Puedo enviarte el temario completo ahora mismo con todos los módulos detallados ¿Te lo comparto?"
     },
     {
      "de": "bot",
-     "texto": "Si se puede poner ahí en DG operaciones"
+     "texto": "[nombre], ¿te comparto el temario del Máster? Así ves los 4 bloques y lo que trae cada uno."
     },
     {
-     "de": "persona",
-     "texto": "cómo? un chatbot que te levante las modificaciones o que te traspase la app a tu etorno de github, vercel y supabase?"
+     "de": "bot",
+     "texto": "Hola [nombre], el diagnóstico de nivel BIM te dice por dónde empezar el Máster. Lo revisamos juntos en una cita sin costo, ¿te parece?"
+    },
+    {
+     "de": "bot",
+     "texto": "Hola [nombre], en una cita sin costo vemos tu caso y te damos el diagnóstico de nivel BIM incluido. Así sabes por dónde empezar el Máster. ¿Te agendo?"
     }
    ]
   },
   {
-   "mensajes": 51,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "persona",
-     "texto": "👤 [nombre] ([telefono]) >IMAGE<"
-    },
-    {
-     "de": "persona",
-     "texto": "👤 [nombre] ([telefono]) Y sigue mandando que no ve el mensaje @[telefono]"
-    },
-    {
-     "de": "bot",
-     "texto": ">IMAGE< Y estos otros casos donde el cliente no tiene el presupuesto aquí el bot debería leer los campos y solo pasarle el pdf y preguntar si tiene o no el presupuesto a ver si seguimos o dejamos de gastar estos tokens"
-    },
-    {
-     "de": "bot",
-     "texto": "@[telefono]"
-    }
-   ]
-  },
-  {
-   "mensajes": 4,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "persona",
-     "texto": "¡Hola! Completé el formulario y me gustaría obtener más información sobre el negocio. Full name: [nombre] Phone number: [telefono] Email: [correo] ¿A qué rubro perteneces?: Arquitecto ¿Has cursado estudios universitarios en áreas relacionad"
-    },
-    {
-     "de": "bot",
-     "texto": "[nombre], con tu perfil de arquitecto y tu experiencia en Revit, el Diplomado BIM en Arquitectura es un buen primer paso: más directo y accesible, con la misma calidad y avales."
-    },
-    {
-     "de": "bot",
-     "texto": "Te dejo el temario para que veas el contenido 👉 [enlace]"
-    },
-    {
-     "de": "bot",
-     "texto": "¿Lo que más te interesa es modelar mejor en tu trabajo actual o llevar proyectos BIM de punta a punta?"
-    }
-   ]
-  },
-  {
-   "mensajes": 95,
+   "mensajes": 31,
    "compro_por_etiqueta": false,
    "final": [
     {
      "de": "bot",
-     "texto": "Con eso en mente, la Especialización en Acero te sirve porque aprendes a verificar en Robot con el método completo, desde cargas hasta conexiones, y a dejar el respaldo listo para presentar al cliente."
+     "texto": "Hola [nombre] 👋 ¿Sigues interesado en el Máster BIM+IA? Puedo enviarte el temario completo ahora mismo con todos los módulos detallados ¿Te lo comparto?"
     },
     {
      "de": "bot",
-     "texto": "¿Cuántas horas a la semana podrías darle al programa, 3 o 5?"
-    },
-    {
-     "de": "persona",
-     "texto": "3"
+     "texto": "[nombre], ¿te comparto el temario del Máster? Así ves los 4 bloques y lo que trae cada uno."
     },
     {
      "de": "bot",
-     "texto": "Con 3 horas a la semana terminas toda la Especialización en unos 9 meses, y el primer curso, el de Robot, en 2 o 3. ¿Te paso el enlace para empezar esta semana?"
+     "texto": "Hola [nombre], si ya tienes experiencia, no hace falta empezar desde cero. En una cita vemos qué bloque te toca, ¿te la agendo?"
+    },
+    {
+     "de": "bot",
+     "texto": "[nombre], la cita es sin costo y es personalizada. Te hacemos el diagnóstico de nivel BIM y te decimos qué bloque del Máster te conviene. ¿Te reservo un espacio?"
     }
    ]
   },
   {
-   "mensajes": 53,
+   "mensajes": 24,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "Hola [nombre] 👋 ¿Estas interesado en el Máster BIM+IA? Puedo enviarte el temario completo ahora mismo con todos los módulos detallados ¿Te lo comparto?"
+    },
+    {
+     "de": "bot",
+     "texto": "Hola, ¿te comparto el temario del Máster? Así ves los 4 bloques y lo que trae cada uno."
+    },
+    {
+     "de": "bot",
+     "texto": "Hola, ¿alcanzaste a ver la info del Máster? Si tienes dudas, te las resuelvo por aquí."
+    },
+    {
+     "de": "bot",
+     "texto": "Hola, lo más fácil es que lo hablemos en una cita sin costo. Te quedan claras tus dudas y sabes qué bloque te conviene. ¿Te reservo uno?"
+    }
+   ]
+  },
+  {
+   "mensajes": 58,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "Hola, ¿sigues pensando en el Máster BIM+IA? Te puedo pasar el temario completo, ¿te lo envío?"
+    },
+    {
+     "de": "bot",
+     "texto": "Hola, ¿te comparto el temario del Máster? Así ves los 4 bloques y lo que trae cada uno."
+    },
+    {
+     "de": "bot",
+     "texto": "J.O.F., ¿sabes en qué nivel BIM estás? Con un diagnóstico de 5 minutos lo vemos, y en la cita te digo qué bloque necesitas. ¿Te reservo un espacio?"
+    },
+    {
+     "de": "bot",
+     "texto": "Hola, ¿aún tienes dudas? En una llamada corta las resolvemos y ves tus resultados de nivel BIM. Los espacios son pocos cada semana, ¿te agendo?"
+    }
+   ]
+  },
+  {
+   "mensajes": 99,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "persona",
+     "texto": "👤 [nombre] ([telefono]) Hola [nombre] , si la campaña del worshop finalizó… como les fue?"
+    },
+    {
+     "de": "persona",
+     "texto": "👤 [nombre] ([telefono]) Por otro lado yo hago esa campaña de testeo, gracias 🤩"
+    },
+    {
+     "de": "persona",
+     "texto": "👤 [nombre] ([telefono]) Con gusto, te comento que tuvimos la rededor de 300 registros, y un 35% de asistencia, en volumen de registro nos fue bastante bien, mejoraremos cosas para aumentar el % de asistencia para el proximo evento! Excelent"
+    },
+    {
+     "de": "persona",
+     "texto": "👤 [nombre] ([telefono]) Dale me avisas"
+    }
+   ]
+  },
+  {
+   "mensajes": 65,
    "compro_por_etiqueta": true,
    "final": [
     {
-     "de": "bot",
-     "texto": "gracias! Sent from 📱[Ester Alvarez - Sales Team]"
-    },
-    {
-     "de": "bot",
-     "texto": "Hola [nombre], porfa no te olvides de enviarme o avisarme cómo va el tema de la solicitud que me pidieron de Datafast."
+     "de": "persona",
+     "texto": "Hola [nombre] ayer hable con Gabriel me dijo q para reunirnos presencial el lunes por que estabas un poco malita de gripe"
     },
     {
      "de": "persona",
-     "texto": "Daya buenos días no tranquila hoy veo eso"
+     "texto": "ya esta cuadrado todo ahorita"
     },
     {
      "de": "bot",
-     "texto": "Hola [nombre] muchas gracias"
+     "texto": "Ah bueno listo [nombre] lo vemos el lunes entonces"
+    },
+    {
+     "de": "persona",
+     "texto": "Listo"
     }
    ]
   },
   {
-   "mensajes": 5,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "persona",
-     "texto": "👍🏼"
-    },
-    {
-     "de": "bot",
-     "texto": "{WA#1} Indicame por mi whatsapp que enlace te llego, y se abre este enlace"
-    },
-    {
-     "de": "bot",
-     "texto": "{WA#1} Indicame por mi whatsapp que enlace te llego, y se abre este enlace [enlace]"
-    },
-    {
-     "de": "bot",
-     "texto": "Hola [nombre], porfa revisa uno por uno qué clientes están para soporte: llegaron varios este fin de semana, además de Helen, que está solicitando su certificado. Porfa."
-    }
-   ]
-  },
-  {
-   "mensajes": 5,
+   "mensajes": 72,
    "compro_por_etiqueta": false,
    "final": [
     {
      "de": "bot",
-     "texto": "Hola [nombre] [nombre], ¿cómo estás? 😊 Te saluda [nombre], asesor de Design Modeling [nombre] comunicarme contigo hace unos minutos, pero la llamada entró como **línea ocupada**. ¿Tienes unos minutos ahora o prefieres que te llame en otro h"
+     "texto": "Perfecto, le informo al equipo que este pendiente. Si nos confrimas ya habalmos de la reserva de tu cupo.[nombre] te queda alguna duda o alguna consulta antes de ingresar a formarte en la Academia?"
+    },
+    {
+     "de": "persona",
+     "texto": "Mmm pues hasta el momento no pero cualquier cosa te comento mañana, muchas gracias"
     },
     {
      "de": "bot",
-     "texto": "Buenos días 👋 te saluda tu asesor comercial asignado de Design Modeling. [nombre] para acompañarte en todo el proceso."
+     "texto": "Dale, estamos en contacto.Que tengas un buen dia. Saludos"
     },
     {
-     "de": "bot",
-     "texto": "Veo que te interesa nuestro Máster Internacional BIM Management con Inteligencia Artificial ¿es correcto?"
-    },
-    {
-     "de": "bot",
-     "texto": "Hola [nombre], ¿cómo estás? Te iba a preguntar qué posibilidad hay ya de que puedas añadir el bot a la plataforma de DG Operaciones. Fíjate que tiene un montón de fallas que quería corregir este fin de semana y me dio pena molestarte, pero "
+     "de": "persona",
+     "texto": "Muchas gracias, igualmente para ti"
     }
    ]
   },
   {
-   "mensajes": 68,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "persona",
-     "texto": "👤 [nombre] ([telefono]) Ya te mando comprobante"
-    },
-    {
-     "de": "persona",
-     "texto": "👤 [nombre] ([telefono]) >IMAGE< de echo ese ya tiene conversaciones"
-    },
-    {
-     "de": "persona",
-     "texto": "👤 [nombre] ([telefono]) Genial Fabi gracias 🙏 @[telefono]"
-    },
-    {
-     "de": "persona",
-     "texto": "👤 [nombre] ([telefono]) Buenos días equipo! 🖐️ Muy feliz incio de semana 🎉 que tengan excelente jornada, quedamos atentos a lo que necesiten 💪"
-    }
-   ]
-  },
-  {
-   "mensajes": 90,
-   "compro_por_etiqueta": true,
-   "final": [
-    {
-     "de": "bot",
-     "texto": "{WA#1} Tienes un nuevo Lead calificado por el BOT a la espera de cierre de venta, por favor responder de inmediato. Sus datos son: Santiago O. [telefono] [correo]"
-    },
-    {
-     "de": "bot",
-     "texto": "Tienes un Lead a la espera de una respuesta, por favor responder de inmediato. Sus datos son: [correo] [telefono] [correo]"
-    },
-    {
-     "de": "bot",
-     "texto": "Tienes un Lead a la espera de una respuesta, por favor responder de inmediato. Sus datos son: Antonio Flores [telefono]"
-    },
-    {
-     "de": "bot",
-     "texto": "Buenos días [nombre], ¿cómo estás? Fíjate, varias cosas urgentes que vi el fin de semana con las automatizaciones, para que las pauses: 1. Necesito reunirme contigo hoy unos 20 min para explicarte y darte el acceso a los enlaces de pago de "
-    }
-   ]
-  },
-  {
-   "mensajes": 100,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "persona",
-     "texto": ">DOCUMENT< CAP IV RIGIDECES-[nombre] C. SISMICAS.xlsx"
-    },
-    {
-     "de": "persona",
-     "texto": ">DOCUMENT< [nombre]-[nombre]-P (version 1).xls"
-    },
-    {
-     "de": "bot",
-     "texto": "Recibí los archivos, José. Lo del CD3 a $30 no lo puedo confirmar desde aquí, así que lo paso con Ester para que te den la respuesta exacta."
-    },
-    {
-     "de": "bot",
-     "texto": "Ella revisa los ejercicios de vigas altas, costos y el modelo del edificio. ¿Te escribe por este mismo chat o prefieres una llamada corta hoy?"
-    }
-   ]
-  },
-  {
-   "mensajes": 25,
+   "mensajes": 18,
    "compro_por_etiqueta": false,
    "final": [
     {
      "de": "bot",
-     "texto": "Buenísimo, una nave industrial es justo lo que más se pide en acero 🏗️"
+     "texto": "[nombre], ¿te comparto el temario del Máster? Así ves los 4 bloques y lo que trae cada uno."
     },
     {
      "de": "bot",
-     "texto": "Con la Especialización en Acero aprendes a calcular la nave en Robot y a llevarla a Revit con planos, en unos 4 meses con tus 3 horas semanales."
+     "texto": "¿Qué tal, [nombre]? ¿Alcanzaste a ver la info del Máster? Si tienes dudas, te las resuelvo por aquí."
     },
     {
      "de": "bot",
-     "texto": "Está en $225 USD (normalmente $499.99) e incluye el Tutor IA. ¿Te paso el enlace para pagar con tarjeta o prefieres PayPal?"
+     "texto": "[nombre], el Máster tiene 4 bloques y no todos necesitan los mismos. ¿Vemos cuál es el tuyo en una cita sin costo?"
     },
     {
      "de": "bot",
-     "texto": "[nombre], pensando en tu nave industrial: lo que más se valora es que la calcules en Robot y la entregues modelada en Revit, y eso lo practicas desde las primeras clases del programa. Aquí tienes el enlace para inscribirte hoy 👉 [enlace] ¿T"
+     "texto": "Hola [nombre], en una cita sin costo vemos tu caso y te damos el diagnóstico de nivel BIM incluido. Así sabes por dónde empezar el Máster. ¿Te agendo?"
     }
    ]
   },
   {
-   "mensajes": 3,
+   "mensajes": 15,
    "compro_por_etiqueta": false,
    "final": [
     {
-     "de": "persona",
-     "texto": "¡Hola! Completé el formulario y me gustaría obtener más información sobre el negocio. ¿Has cursado estudios universitarios en áreas relacionadas con construcción/ingeniería/arquitectura?: Sí, soy graduado ¿A qué rubro perteneces?: Arquitect"
+     "de": "bot",
+     "texto": "[nombre], ¿te comparto el temario del Máster? Así ves los 4 bloques y lo que trae cada uno."
     },
     {
      "de": "bot",
-     "texto": "Hola [nombre], 👋🏼 Gracias por tu interés en el Master BIM+IA y por llenar los datos del formulario. En unos minutos, se comunicará contigo tu asesor asignado. ¿Puedes recibir una llamada en este momento?"
+     "texto": "[nombre], ¿te comparto el temario del Máster? Así ves los 4 bloques y lo que trae cada uno."
     },
     {
      "de": "bot",
-     "texto": "👆🏼 Adicional te dejo aca la siguiente imagen para que puedas ver la estructura del Máster Internacional BIM+IA"
+     "texto": "Hola [nombre], el diagnóstico de nivel BIM te dice por dónde empezar el Máster. Lo revisamos juntos en una cita sin costo, ¿te parece?"
+    },
+    {
+     "de": "bot",
+     "texto": "Hola, la cita es sin costo y es personalizada. Te hacemos el diagnóstico de nivel BIM y te decimos qué bloque del Máster te conviene. ¿Te reservo un espacio?"
     }
    ]
   },
   {
-   "mensajes": 3,
+   "mensajes": 39,
    "compro_por_etiqueta": false,
    "final": [
     {
-     "de": "persona",
-     "texto": ". • adContextPreviewDismissed: false • automatedGreetingMessageShown: false • body: Esta es una de las preguntas que más nos dejan quienes quieren dar el salto al BIM 👇 Y la verdad, es normal tener dudas antes de invertir en tu formación. P"
+     "de": "bot",
+     "texto": "Hola [nombre], ¿sigues pensando en el Máster BIM+IA? Te puedo pasar el temario completo, ¿te lo envío?"
     },
     {
      "de": "bot",
-     "texto": "¡Hola [nombre]! 👋 Vi que llegaste desde nuestro anuncio del Máster BIM + IA."
+     "texto": "[nombre], ¿te comparto el temario del Máster? Así ves los 4 bloques y lo que trae cada uno."
     },
     {
      "de": "bot",
-     "texto": "¿En qué área trabajas hoy y qué te gustaría lograr con BIM en los próximos meses?"
-    }
-   ]
-  },
-  {
-   "mensajes": 10,
-   "compro_por_etiqueta": true,
-   "final": [
-    {
-     "de": "bot",
-     "texto": "[nombre], quedo pendiente tu respuesta: trabajas en algun proyecto de acero ahora o buscas diferenciarte en el mercado? Con eso te digo por donde arrancar. La especializacion completa esta en 225 dolares con Tutor IA 24h y 4 certificados Au"
-    },
-    {
-     "de": "persona",
-     "texto": "Hola, me interesa la especialización de estructuras de Acero"
+     "texto": "[nombre], el Máster tiene 4 bloques y no todos necesitan los mismos. ¿Vemos cuál es el tuyo en una cita sin costo?"
     },
     {
      "de": "bot",
-     "texto": "¡Hola [nombre]! 🙌 Qué bueno que te interese la Especialización en Acero."
-    },
-    {
-     "de": "bot",
-     "texto": "Antes de pasarte el detalle, cuéntame: ¿buscas aplicarla en proyectos que ya tienes entre manos o quieres abrirte camino en el mercado?"
-    }
-   ]
-  },
-  {
-   "mensajes": 3,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "persona",
-     "texto": "buen dia no se usar revit solo se usar civil cad 3d aqui enseñan cierto?"
-    },
-    {
-     "de": "bot",
-     "texto": "Please share contact details"
-    },
-    {
-     "de": "bot",
-     "texto": "Your chat has ended"
-    }
-   ]
-  },
-  {
-   "mensajes": 61,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "persona",
-     "texto": "Filipenses 2 1 Por tanto, si hay alguna consolación en Cristo, si algún consuelo de amor, si alguna comunión del Espíritu, si algún afecto entrañable, si alguna misericordia, 2 completad mi gozo, sintiendo lo mismo, teniendo el mismo amor, "
-    },
-    {
-     "de": "persona",
-     "texto": "Filipenses 2 7 sino que se despojó a sí mismo, tomando forma de siervo, hecho semejante a los hombres; 8 y estando en la condición de hombre, se humilló a sí mismo, haciéndose obediente hasta la muerte, y muerte de cruz. 9 Por lo cual Dios "
-    },
-    {
-     "de": "persona",
-     "texto": "Filipenses 2 13 porque Dios es el que en vosotros produce así el querer como el hacer, por su buena voluntad. 14 Haced todo sin murmuraciones y contiendas, 15 para que seáis irreprensibles y sencillos, hijos de Dios sin mancha en medio de u"
-    },
-    {
-     "de": "persona",
-     "texto": "Filipenses 2 19 Espero en el Señor Jesús enviaros pronto a Timoteo, para que yo también esté de buen ánimo al saber de vuestro estado; 20 pues a ninguno tengo del mismo ánimo, y que tan sinceramente se interese por vosotros. 21 Porque todos"
+     "texto": "Hola [nombre], lo más fácil es que lo hablemos en una cita sin costo. Te quedan claras tus dudas y sabes qué bloque te conviene. ¿Te reservo uno?"
     }
    ]
   },
@@ -708,34 +586,254 @@
    "compro_por_etiqueta": false,
    "final": [
     {
-     "de": "persona",
-     "texto": "Hago las dos cosas"
+     "de": "bot",
+     "texto": "Hola [nombre] 👋 ¿Sigues interesado en el Máster BIM+IA? Puedo enviarte el temario completo ahora mismo con todos los módulos detallados ¿Te lo comparto?"
     },
     {
      "de": "bot",
-     "texto": "Entonces modelas y calculas tú, [nombre]. Eso es justo lo que trabaja el programa."
+     "texto": "[nombre], ¿te comparto el temario del Máster? Así ves los 4 bloques y lo que trae cada uno."
     },
     {
      "de": "bot",
-     "texto": "¿Qué te cuesta más hoy: que el cálculo te tome demasiado tiempo, o que tus modelos no te estén abriendo proyectos?"
+     "texto": "[nombre], el Máster tiene 4 bloques y no todos necesitan los mismos. ¿Vemos cuál es el tuyo en una cita sin costo?"
     },
     {
      "de": "bot",
-     "texto": "Y el mensaje se te cortó al final (solo veo \"📱 [\"). ¿Me lo escribes de nuevo?"
+     "texto": "[nombre], ¿aún tienes dudas? En una llamada corta las resolvemos y ves tus resultados de nivel BIM. Los espacios son pocos cada semana, ¿te agendo?"
     }
    ]
   },
   {
-   "mensajes": 36,
+   "mensajes": 18,
+   "compro_por_etiqueta": true,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "[nombre], ¿te comparto el temario del Máster? Así ves los 4 bloques y lo que trae cada uno."
+    },
+    {
+     "de": "bot",
+     "texto": "¿Qué tal, [nombre]? ¿Alcanzaste a ver la info del Máster? Si tienes dudas, te las resuelvo por aquí."
+    },
+    {
+     "de": "bot",
+     "texto": "Hola [nombre], el diagnóstico de nivel BIM te dice por dónde empezar el Máster. Lo revisamos juntos en una cita sin costo, ¿te parece?"
+    },
+    {
+     "de": "bot",
+     "texto": "Hola [nombre], en una cita sin costo vemos tu caso y te damos el diagnóstico de nivel BIM incluido. Así sabes por dónde empezar el Máster. ¿Te agendo?"
+    }
+   ]
+  },
+  {
+   "mensajes": 20,
    "compro_por_etiqueta": false,
    "final": [
     {
      "de": "bot",
-     "texto": "¡Hola ! 👋🏼⏰ ¡Ya casi estamos listos para comenzar el Máster BIM+IA! Empezamos en Marzo 2026🗓️. ¿𝗧𝘂𝘃𝗶𝘀𝘁𝗲 𝗰𝗵𝗮𝗻𝗰𝗲 𝗱𝗲 𝗿𝗲𝘃𝗶𝘀𝗮𝗿 el PDF “Personal Project IA Pro” 𝗾𝘂𝗲 𝘁𝗲 𝗲𝗻𝘃𝗶𝗲́? 😊 Me encantaría saber tu opinión."
+     "texto": "Hola [nombre], ¿sigues pensando en el Máster BIM+IA? Te puedo pasar el temario completo, ¿te lo envío?"
     },
     {
      "de": "bot",
-     "texto": "¡Hola ! 👋🏼 ¿Listo para dar el salto profesional que mereces? 🚀 Con el Máster BIM+IA ya puedes certificarte internacionalmente y abrir nuevas oportunidades. 🌎 ⏰ Empezamos en Marzo 2026 ¡𝗔𝗴𝗲𝗻𝗱𝗮 𝘁𝘂 𝗶𝗻𝘀𝗰𝗿𝗶𝗽𝗰𝗶𝗼́𝗻 hoy en PREVENTA!"
+     "texto": "[nombre], ¿te comparto el temario del Máster? Así ves los 4 bloques y lo que trae cada uno."
+    },
+    {
+     "de": "bot",
+     "texto": "[nombre], ¿sabes en qué nivel BIM estás? Con un diagnóstico de 5 minutos lo vemos, y en la cita te digo qué bloque necesitas. ¿Te reservo un espacio?"
+    },
+    {
+     "de": "bot",
+     "texto": "[nombre], la cita es sin costo y es personalizada. Te hacemos el diagnóstico de nivel BIM y te decimos qué bloque del Máster te conviene. ¿Te reservo un espacio?"
+    }
+   ]
+  },
+  {
+   "mensajes": 40,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "[nombre], ¿te comparto el temario del Máster? Así ves los 4 bloques y lo que trae cada uno."
+    },
+    {
+     "de": "bot",
+     "texto": "¿Qué tal, [nombre]? ¿Alcanzaste a ver la info del Máster? Si tienes dudas, te las resuelvo por aquí."
+    },
+    {
+     "de": "bot",
+     "texto": "[nombre]., el Máster tiene 4 bloques y no todos necesitan los mismos. ¿Vemos cuál es el tuyo en una cita sin costo?"
+    },
+    {
+     "de": "bot",
+     "texto": "Hola [nombre], lo más fácil es que lo hablemos en una cita sin costo. Te quedan claras tus dudas y sabes qué bloque te conviene. ¿Te reservo uno?"
+    }
+   ]
+  },
+  {
+   "mensajes": 20,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "Hola, ¿sigues pensando en el Máster BIM+IA? Te puedo pasar el temario completo, ¿te lo envío?"
+    },
+    {
+     "de": "bot",
+     "texto": "Hola, ¿te comparto el temario del Máster? Así ves los 4 bloques y lo que trae cada uno."
+    },
+    {
+     "de": "bot",
+     "texto": "[correo]💫, el Máster tiene 4 bloques y no todos necesitan los mismos. ¿Vemos cuál es el tuyo en una cita sin costo?"
+    },
+    {
+     "de": "bot",
+     "texto": "Hola, ¿aún tienes dudas? En una llamada corta las resolvemos y ves tus resultados de nivel BIM. Los espacios son pocos cada semana, ¿te agendo?"
+    }
+   ]
+  },
+  {
+   "mensajes": 4,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "[nombre], quedó confirmada tu inscripción al workshop de IA en Revit. ✅ Nos vemos el martes 17 de noviembre a las 8:00 PM (hora de Ecuador). Los avisos van por este grupo: [enlace]"
+    },
+    {
+     "de": "bot",
+     "texto": "Hola [nombre] tenemos una cita programada para el día de hoy a las 3pm Las citas que coordinamos son personalizadas y reservamos ese tiempo exclusivamente para brindarte la asesoría, por lo que necesitamos que, nos ayudes con la confirmació"
+    },
+    {
+     "de": "bot",
+     "texto": "[nombre], hoy teníamos tu espacio reservado y tu diagnóstico listo para revisar. Las citas gratuitas con asesor son limitadas cada semana, así que quiero ayudarte a reagendar pronto. ¿Qué día y hora puedes asistir con seguridad?"
+    },
+    {
+     "de": "bot",
+     "texto": "¡Hola, [nombre]! Te saluda Eber Martínez, director de Ingresos de los programas de BIM Internacional. Nos dejaste tus datos solicitando información sobre nuestra formación y quería contactarte personalmente para conocerte. En caso de que ya"
+    }
+   ]
+  },
+  {
+   "mensajes": 16,
+   "compro_por_etiqueta": true,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "👋🏼𝗛𝗼𝗹𝗮 [nombre] [nombre] [nombre] [nombre], Hemos notado que aún no has completado tu inscripción. Por eso, queremos contarte más sobre nuestras 𝗖𝗲𝗿𝘁𝗶𝗳𝗶𝗰𝗮𝗰𝗶𝗼𝗻𝗲𝘀 𝗜𝗻𝘁𝗲𝗿𝗻𝗮𝗰𝗶𝗼𝗻𝗮𝗹𝗲𝘀 y 𝗗𝗶𝗽𝗹𝗼𝗺𝗮𝘀 𝗨𝗻𝗶𝘃𝗲𝗿𝘀𝗶𝘁𝗮𝗿𝗶𝗼𝘀 que obtendrás al finalizar la formaci"
+    },
+    {
+     "de": "bot",
+     "texto": "Hola, [nombre] 👋🏼 Quería ayudarte a impulsar tu carrera enviándote nuestro curso gratuito sobre INTRODUCCIÓN A LA [nombre] EN [nombre] 🎁 Serán 8 sesiones de clases vistas desde nuestra plataforma. Además, estarás en la capacidad de manejar "
+    },
+    {
+     "de": "bot",
+     "texto": "Adicional colgea, me gustaría mostrarte como son nuestras clases y plataforma, puedes verlo en el enlace 🔗👇🏼 [enlace]"
+    },
+    {
+     "de": "bot",
+     "texto": "[nombre], quedó confirmada tu inscripción al workshop de IA en Revit. ✅ Nos vemos el martes 17 de noviembre a las 8:00 PM (hora de Ecuador). Los avisos van por este grupo: [enlace]"
+    }
+   ]
+  },
+  {
+   "mensajes": 22,
+   "compro_por_etiqueta": true,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "¡Hola ! ⚠️ ¿Estás listo para dar el siguiente paso en tu carrera con el Diplomado BIM? 🏗️ ¡𝗤𝘂𝗲𝗱𝗮𝗻 𝗦𝗢𝗟𝗢 𝟱 𝗰𝘂𝗽𝗼𝘀! ✅ 9 Certificaciones Internacionales ✅ Títulos universitarios ✅ Bolsa de Trabajo 💲 Inversión: 1999.99 USD (pago en cuotas). 👉🏼 De"
+    },
+    {
+     "de": "bot",
+     "texto": "¡Hola ! 👋🏼⏰ ¡Ya casi estamos listos para comenzar el 𝗗𝗶𝗽𝗹𝗼𝗺𝗮𝗱𝗼 𝗕𝗜𝗠! Empezamos este 05 de febrero de 2026 🗓️. ¿𝗧𝘂𝘃𝗶𝘀𝘁𝗲 𝗰𝗵𝗮𝗻𝗰𝗲 𝗱𝗲 𝗿𝗲𝘃𝗶𝘀𝗮𝗿 𝗹𝗮 𝗴𝘂í𝗮 𝘀𝗼𝗯𝗿𝗲 𝗺𝗲𝘁𝗼𝗱𝗼𝗹𝗼𝗴í𝗮 𝗕𝗜𝗠 𝗾𝘂𝗲 𝘁𝗲 𝗲𝗻𝘃𝗶𝗲́? 😊 Me encantaría saber tu opinión."
+    },
+    {
+     "de": "bot",
+     "texto": "¡Hola ! 👋🏼 ¿𝗟𝗶𝘀𝘁𝗼 𝗽𝗮𝗿𝗮 𝗱𝗮𝗿 𝗲𝗹 𝘀𝗮𝗹𝘁𝗼 𝗽𝗿𝗼𝗳𝗲𝘀𝗶𝗼𝗻𝗮𝗹 𝗾𝘂𝗲 𝗺𝗲𝗿𝗲𝗰𝗲𝘀? 🚀 Con el Diplomado BIM puedes certificarte internacionalmente y abrir nuevas oportunidades. 🌎 ⏰ Empezamos este 05 de febrero de 2026. ¡𝗔𝗴𝗲𝗻𝗱𝗮 𝘁𝘂 𝗶𝗻𝘀𝗰𝗿𝗶𝗽𝗰𝗶𝗼́𝗻 hoy! 👉🏼 [enlace]"
+    },
+    {
+     "de": "bot",
+     "texto": "[nombre], quedó confirmada tu inscripción al workshop de IA en Revit. ✅ Nos vemos el martes 17 de noviembre a las 8:00 PM (hora de Ecuador). Los avisos van por este grupo: [enlace]"
+    }
+   ]
+  },
+  {
+   "mensajes": 27,
+   "compro_por_etiqueta": true,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "¿Qué tal [nombre]? ¿Alguna duda con el curso o algo que te frene?"
+    },
+    {
+     "de": "bot",
+     "texto": "Design Modeling [nombre] , [nombre] 👋 Te saluda el equipo de Design Modeling [nombre] algún tiempo participaste en nuestro Workshop de Revit BIM + Inteligencia Artificial y queríamos saber si aún estás interesado en especializarte en esta á"
+    },
+    {
+     "de": "bot",
+     "texto": "Hola [nombre], Hace algún tiempo participaste en nuestro Workshop de Revit BIM + Inteligencia Artificial y queríamos saber si aún estás interesado en especializarte en esta área para fortalecer tu perfil profesional. *Como agradecimiento po"
+    },
+    {
+     "de": "bot",
+     "texto": "[nombre], quedó confirmada tu inscripción al workshop de IA en Revit. ✅ Nos vemos el martes 17 de noviembre a las 8:00 PM (hora de Ecuador). Los avisos van por este grupo: [enlace]"
+    }
+   ]
+  },
+  {
+   "mensajes": 55,
+   "compro_por_etiqueta": true,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "Hola [nombre] Jesus, te saludamos de Design Modeling [nombre] contarte una gran noticia: estrenamos [nombre] de estudio y tu curso ya fue migrado alli. Desde ahora tus clases, tu progreso y tu comunidad estaran en este nuevo espacio. Entra "
+    },
+    {
+     "de": "bot",
+     "texto": "Hola, [nombre]. 👋 Te saluda Pily de Design Modeling [nombre] escribo rapidito porque incorporamos un tutor con IA para la Especialización en Acero que te va a ahorrar muchísimo tiempo al repasar tus clases. ¿Te gustaría que tu tiempo rinda "
+    },
+    {
+     "de": "bot",
+     "texto": "[enlace]"
+    },
+    {
+     "de": "bot",
+     "texto": "Hola [nombre], tu cupo en el workshop gratis \"IA conectada a Autodesk Revit\" está reservado ✅ Martes 17 de noviembre, 8:00 PM (Ecuador), por Zoom. Únete al grupo del workshop para los avisos: [enlace]"
+    }
+   ]
+  },
+  {
+   "mensajes": 24,
+   "compro_por_etiqueta": true,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "[nombre], el requisito principal es tener formación o interés en construcción, ingeniería o arquitectura, y como estás por terminar civil encajas bien. No pides experiencia previa avanzada, y puedes entrar por el bloque que más necesites. E"
+    },
+    {
+     "de": "persona",
+     "texto": "Por las tardes"
+    },
+    {
+     "de": "bot",
+     "texto": "Atendemos de lunes a viernes, hasta las 7 de la noche, hora Ecuador. ¿Qué día y a qué hora de la tarde te acomoda?"
+    },
+    {
+     "de": "bot",
+     "texto": "[nombre], quedó confirmada tu inscripción al workshop de IA en Revit. ✅ Nos vemos el martes 17 de noviembre a las 8:00 PM (hora de Ecuador). Los avisos van por este grupo: [enlace]"
+    }
+   ]
+  },
+  {
+   "mensajes": 5,
+   "compro_por_etiqueta": false,
+   "final": [
+    {
+     "de": "persona",
+     "texto": "¿A qué rubro perteneces?: Arquitecto ¿Has cursado estudios universitarios en áreas relacionadas con construcción/ingeniería/arquitectura?: Sí, soy graduado ¿Tienes experiencia utilizando software técnico (ejemplo: AutoCAD, Revit, SAP2000, e"
+    },
+    {
+     "de": "bot",
+     "texto": "✅ [nombre] Construcciones 𝗧𝗨 𝗥𝗘𝗚𝗜𝗦𝗧𝗥𝗢 𝗛𝗔 𝗦𝗜𝗗𝗢 𝗖𝗢𝗡𝗙𝗜𝗥𝗠𝗔𝗗𝗢. Gracias por unirte a nuestro evento \"Workshop: El Primer Paso Inteligente para tu 2026 Profesional\". Estamos emocionados de contar contigo. Detalles del evento: 📅 Fecha: 27 de enero "
     },
     {
      "de": "bot",
@@ -748,254 +846,178 @@
    ]
   },
   {
-   "mensajes": 6,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "persona",
-     "texto": "ok Received on 📱[Design Modeling [nombre] ]"
-    },
-    {
-     "de": "bot",
-     "texto": "Buenas tardes, te saluda tu asesor comercial asignado de Design Modeling, para ayudarte en todo momento."
-    },
-    {
-     "de": "bot",
-     "texto": "Veo que estás interesado en nuestra especialización en Acero Estructural ¿Es correcto?"
-    },
-    {
-     "de": "bot",
-     "texto": "Design Modeling [nombre] [nombre] 👋 ¿Sigues interesado en la *Especialización en Acero Estructural?* Puedo enviarte el temario completo ahora mismo con todos los módulos detallados. *¿Te lo comparto?*"
-    }
-   ]
-  },
-  {
-   "mensajes": 13,
+   "mensajes": 27,
    "compro_por_etiqueta": true,
    "final": [
     {
      "de": "bot",
-     "texto": "Hola, [nombre] 👋🏼 Quería ayudarte a impulsar tu carrera enviándote nuestro curso gratuito sobre INTRODUCCIÓN A LA [nombre] EN [nombre] 🎁 Serán 8 sesiones de clases vistas desde nuestra plataforma. Además, estarás en la capacidad de manejar "
+     "texto": "Hola, [nombre] [nombre]. Soy Pily. No me has comentado qué te pareció la idea de adquirir el tutor IA. ¡Está de locos! 🤯 Y este mes lo tenemos con 10% de descuento. Te dejo un video que grabó Gabriel para que lo mires. 🎥 [enlace]"
+    },
+    {
+     "de": "persona",
+     "texto": "[nombre]"
     },
     {
      "de": "bot",
-     "texto": "Hola, [nombre] 👋🏼 Quería ayudarte a impulsar tu carrera enviándote nuestro curso gratuito sobre INTRODUCCIÓN A LA [nombre] EN [nombre] 🎁 Serán 8 sesiones de clases vistas desde nuestra plataforma. Además, estarás en la capacidad de manejar "
+     "texto": "Te cuento superrápido cómo funciona: Es un buscador inteligente entrenado solo con las clases de tu curso. Le haces cualquier pregunta y te responde al instante diciéndote la sesión y el minuto exacto del video donde el instructor lo explic"
     },
     {
      "de": "bot",
-     "texto": "👋🏼 ¡Hola colega! ¿Cómo has estado? Te escribo porque estuvimos revisando tus registros anteriores y queríamos saber si sigues interesado(a) en formarte en BIM con nuestras especializaciones. 🎄Justo ahora por esta Navidad tenemos una [nombre"
-    },
-    {
-     "de": "bot",
-     "texto": "¡Hola! Gracias por elegir 𝗗𝗲𝘀𝗶𝗴𝗻 𝗠𝗼𝗱𝗲𝗹𝗶𝗻𝗴 𝗔𝗰𝗮𝗱𝗲𝗺𝘆.💻🏆 ¿Te gustaría tomarte 30 segundos para dejarnos una reseña rápida?👉🏼 En el siguiente enlace lo puedes hacer 𝗺𝘂𝘆 𝗳𝗮́𝗰𝗶𝗹: [enlace]"
+     "texto": "[enlace] y te dejo un vide que te explica con más detalle."
     }
    ]
   },
   {
-   "mensajes": 96,
+   "mensajes": 81,
    "compro_por_etiqueta": true,
    "final": [
     {
      "de": "persona",
-     "texto": "Hola, me interesa la especialización de estructuras de Acero • adContextPreviewDismissed: false • automatedGreetingMessageShown: true • body: ¿Modelas estructuras de acero en BIM… pero dependes de otro para el cálculo? Entonces todavía eres"
+     "texto": "te agradezco por el descuento, pero mejor esperare cuando tengan otra promoción similar a la del fin de semana pasado"
     },
     {
      "de": "bot",
-     "texto": "Qué bueno que te interese la Especialización en Acero. Es para quien calcula, diseña o modela estructuras metálicas en Robot y Revit."
+     "texto": "Entiendo, [nombre] que tenga un buen dia"
     },
-    {
-     "de": "bot",
-     "texto": "Ahora incluye un Tutor IA dentro de las lecciones que resuelve tus dudas las 24 horas 🤖"
-    },
-    {
-     "de": "bot",
-     "texto": "¿Tu trabajo está en ingeniería, arquitectura o construcción, y lo quieres aprender desde cero o profundizar lo que ya usas?"
-    }
-   ]
-  },
-  {
-   "mensajes": 44,
-   "compro_por_etiqueta": true,
-   "final": [
     {
      "de": "persona",
-     "texto": "Cálculo en sap"
+     "texto": "Muchas gracias"
     },
-    {
-     "de": "bot",
-     "texto": "[nombre], SAP2000 es una buena base para trabajar estructuras metálicas 👍"
-    },
-    {
-     "de": "bot",
-     "texto": "Entonces, si entiendo bien: calculas en SAP, pero quieres poder diseñar y verificar el acero tú mismo, sin depender de otro, ¿es así?"
-    },
-    {
-     "de": "bot",
-     "texto": "¿Qué te cuesta más hoy: las verificaciones de perfiles o pasar ese modelo a planos en Revit?"
-    }
-   ]
-  },
-  {
-   "mensajes": 3,
-   "compro_por_etiqueta": false,
-   "final": [
     {
      "de": "persona",
-     "texto": "¡Hola! Completé el formulario y me gustaría obtener más información sobre el negocio. ¿A qué te dedicas?: Ingeniero(a) civil o estructural Full name: [nombre] Phone number: [telefono] Con las estructuras de acero, ¿qué quieres hacer?: Diseñ"
-    },
-    {
-     "de": "bot",
-     "texto": "¡Hola! 🙌 Qué bueno que escribes. Veo que eres ingeniero civil o estructural y que quieres diseñar, modelar o calcular estructuras de acero, y además quieres empezar este mes."
-    },
-    {
-     "de": "bot",
-     "texto": "Antes de mostrarte nada, ¿qué te está frenando hoy para hacerlo en software: no tener tiempo para practicar, no saber por dónde empezar, o depender de alguien más para el cálculo?"
+     "texto": "Feliz día Pily"
     }
    ]
   },
   {
-   "mensajes": 14,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "persona",
-     "texto": "Quiero conocer temas, costos y modalidad"
-    },
-    {
-     "de": "bot",
-     "texto": "Claro, [nombre]. Aquí tienes el brochure con temas y módulos 👉 [enlace]"
-    },
-    {
-     "de": "bot",
-     "texto": "Es 100% online, con clases grabadas, a tu ritmo y con acceso de por vida. Hoy está en $225 USD (normalmente $499.99) e incluye el Tutor IA."
-    },
-    {
-     "de": "bot",
-     "texto": "¿Cuántas horas a la semana podrías darle al curso?"
-    }
-   ]
-  },
-  {
-   "mensajes": 97,
+   "mensajes": 18,
    "compro_por_etiqueta": true,
    "final": [
     {
      "de": "bot",
-     "texto": "Como te fue [nombre] ?"
+     "texto": "Recuerda lo que incluye el curso 👇 ✅ Certificado oficial Autodesk 🏅 Microcredencial NFT verificable en blockchain ♾️ Acceso ilimitado al contenido. El precio especial cierra muy pronto. ¿Te ayudo con la inscripción?"
     },
     {
      "de": "bot",
-     "texto": "Fíjate. Ya conversé con el equipo"
+     "texto": "Buenos días [nombre] NazarenoTe saluda el Equipo de *Design Modeling [nombre] * ¡El día de hoy tenemos los últimos 2 cupos en promoción disponibles! 👉 *Automatización en Revit con IA & Add-ins* Incluye tu primera Micro Credencial NFT ✨ ¿Te "
     },
     {
      "de": "bot",
-     "texto": "Podemos otorgarte el acceso a acero y hormigón también con un descuento adicional. Te querían en 299,99 dólares ambas especialidades"
+     "texto": "Hola [nombre] @gmail.com, Hace algún tiempo participaste en nuestro Workshop de Revit BIM + Inteligencia Artificial y queríamos saber si aún estás interesado en especializarte en esta área para fortalecer tu perfil profesional. *Como agrade"
     },
     {
      "de": "bot",
-     "texto": "Por favor me confirmas si deseas adquirir y te envío el enlace 🔗 de pago o la cuenta por favor 👍🏼"
+     "texto": "[nombre], quedó confirmada tu inscripción al workshop de IA en Revit. ✅ Nos vemos el martes 17 de noviembre a las 8:00 PM (hora de Ecuador). Los avisos van por este grupo: [enlace]"
     }
    ]
   },
   {
-   "mensajes": 3,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "persona",
-     "texto": "¡Hola! Completé el formulario y me gustaría obtener más información sobre el negocio. ¿A qué te dedicas?: Arquitecto(a) Full name: [nombre] Phone number: [telefono] Con las estructuras de acero, ¿qué quieres hacer?: Diseñarlas, modelarlas o"
-    },
-    {
-     "de": "bot",
-     "texto": "¡Hola [nombre]! 🙌 Vi que eres arquitecto y que quieres empezar este mes a diseñar, modelar o calcular estructuras de acero."
-    },
-    {
-     "de": "bot",
-     "texto": "¿Ese interés viene de algún proyecto que tienes ahora, o buscas crecer en tu trabajo?"
-    }
-   ]
-  },
-  {
-   "mensajes": 14,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "persona",
-     "texto": "Para el proximo año la verdad"
-    },
-    {
-     "de": "bot",
-     "texto": "Me parece bien planificarlo, [nombre] 🙌"
-    },
-    {
-     "de": "bot",
-     "texto": "Por tu perfil en arquitectura y construcción, un Diplomado en BIM para Arquitectura puede ser un primer paso más accesible, con la misma calidad y avales."
-    },
-    {
-     "de": "bot",
-     "texto": "¿Quieres que te envíe su temario para verlo con calma antes del próximo año?"
-    }
-   ]
-  },
-  {
-   "mensajes": 3,
+   "mensajes": 4,
    "compro_por_etiqueta": false,
    "final": [
     {
      "de": "bot",
-     "texto": "Hola! 👋 Aquí está tu acceso a la Calculadora de Zapatas GRATIS 👉 [enlace] Regístrate (20 segundos) y la usas de inmediato desde el celular: dimensiones, verificaciones y acero de tu zapata en 2 minutos. Mientras la pruebas, cuéntame ¿a qué "
+     "texto": "Hola [nombre], tu cupo en el workshop gratis \"IA conectada a Autodesk Revit\" está reservado ✅ Martes 17 de noviembre, 8:00 PM (Ecuador), por Zoom. Únete al grupo del workshop para los avisos: [enlace]"
     },
     {
      "de": "bot",
-     "texto": "¡Hola! 👋 Vi tu comentario y aquí tienes acceso gratuito a las 5 Verificaciones en Acero + la herramienta de cálculo que mencionamos. Entra con este enlace 👇 [enlace] Para recomendarte bien y no marearte con info que no te sirve: ¿quieres us"
+     "texto": "Hola [nombre] veo que estas interesado en nuestro Máster BIM +IA te gustaría recibir más información? En que horario te queda bien recibir una llamada para asesorarte mejor?"
     },
     {
      "de": "bot",
-     "texto": "¡Hola [nombre]! 👋 Aquí está tu acceso a la Verificación de Aceros GRATIS. Llena el siguiente formulario en menos de 2 minutos y obtén tu recurso gratuito ahora 🎁 [enlace]"
+     "texto": "🔥 [nombre], hoy todavía no entras a tu Campus Design Modeling [nombre] (tu academia de BIM, Revit e IA). Haz una lección cortita y no pierdas tu racha: [enlace]"
+    },
+    {
+     "de": "bot",
+     "texto": "[nombre], tu racha en el Campus Design Modeling [nombre] se apagó 😢 Vuelve hoy con una lección y empieza una nueva: [enlace]"
     }
    ]
   },
   {
-   "mensajes": 5,
-   "compro_por_etiqueta": false,
-   "final": [
-    {
-     "de": "bot",
-     "texto": "Hola [nombre], 👋🏼 Gracias por tu interés en el Master BIM+IA y por llenar los datos del formulario. En unos minutos, se comunicará contigo tu asesor asignado. ¿Puedes recibir una llamada en este momento?"
-    },
-    {
-     "de": "bot",
-     "texto": "👆🏼 Adicional te dejo aca la siguiente imagen para que puedas ver la estructura del Máster Internacional BIM+IA"
-    },
-    {
-     "de": "bot",
-     "texto": "¡Hola [nombre]! Ya activé tu acceso al Master. Por favor, ingresa a la plataforma de Design Modeling [nombre] con tu correo y encontrarás el curso en \"Mis cursos\". Si en unos minutos aún no te aparece, me avisas para revisar de nuevo."
-    },
-    {
-     "de": "bot",
-     "texto": "Hola [nombre], ¡un gusto saludarte! Ya reactivé tu acceso al Máster Internacional BIM + IA. Por favor, ingresa a la plataforma de Design Modeling [nombre] con tu correo registrado y dirígete a la sección \"Mis cursos\". Si en unos minutos aún"
-    }
-   ]
-  },
-  {
-   "mensajes": 39,
+   "mensajes": 21,
    "compro_por_etiqueta": true,
    "final": [
     {
      "de": "bot",
-     "texto": "Perfecto 🙌 Mientras tanto, si ya decides pagar, el enlace de PayPal sigue activo arriba y tu acceso queda registrado con tu correo."
+     "texto": "¡Hola ! ⚠️ ¡𝗬𝗮 𝗰𝗮𝘀𝗶 𝗲𝗺𝗽𝗲𝘇𝗮𝗺𝗼𝘀! 🏗️ ¿Estás listo para dar el siguiente paso en tu carrera con el Máster BIM+IA? ¡𝗤𝘂𝗲𝗱𝗮𝗻 𝗦𝗢𝗟𝗢 𝟱 𝗰𝘂𝗽𝗼𝘀! para el Máster BIM+IA ! 🎓 ✅ Acceso Inmediato e Ilimitado ✅ Contenido 100% Original ✅ Licencias Estudiantiles"
     },
     {
      "de": "bot",
-     "texto": "Y cuando pagues, mándame el comprobante por aquí para que el equipo te active el acceso."
+     "texto": "¡Hola ! 👋🏼⏰ ¡Ya casi estamos listos para comenzar el Máster BIM+IA! Empezamos en Marzo 2026🗓️. ¿𝗧𝘂𝘃𝗶𝘀𝘁𝗲 𝗰𝗵𝗮𝗻𝗰𝗲 𝗱𝗲 𝗿𝗲𝘃𝗶𝘀𝗮𝗿 el PDF “Personal Project IA Pro” 𝗾𝘂𝗲 𝘁𝗲 𝗲𝗻𝘃𝗶𝗲́? 😊 Me encantaría saber tu opinión."
     },
     {
      "de": "bot",
-     "texto": "[nombre], como vas, conversando, como es un curso LowCost, el costo mínimo es $26,99 ya que tiene el descuento aplicado"
+     "texto": "¡Hola ! 👋🏼 ¿Listo para dar el salto profesional que mereces? 🚀 Con el Máster BIM+IA ya puedes certificarte internacionalmente y abrir nuevas oportunidades. 🌎 ⏰ Empezamos en Marzo 2026 ¡𝗔𝗴𝗲𝗻𝗱𝗮 𝘁𝘂 𝗶𝗻𝘀𝗰𝗿𝗶𝗽𝗰𝗶𝗼́𝗻 hoy en PREVENTA!"
     },
     {
      "de": "bot",
-     "texto": "Si lo vas adquirir por favor me comentas"
+     "texto": "[nombre], quedó confirmada tu inscripción al workshop de IA en Revit. ✅ Nos vemos el martes 17 de noviembre a las 8:00 PM (hora de Ecuador). Los avisos van por este grupo: [enlace]"
+    }
+   ]
+  },
+  {
+   "mensajes": 64,
+   "compro_por_etiqueta": true,
+   "final": [
+    {
+     "de": "persona",
+     "texto": ">IMAGE< Sticker"
+    },
+    {
+     "de": "bot",
+     "texto": "¡Jaja, qué energía! 🎉 Me alegra que estés feliz con el proceso. Mañana te escribimos con todas las directrices del Máster y el Diplomado para que empieces con todo. ¿Ya pudiste entrar al campus con el acceso que te activamos?"
+    },
+    {
+     "de": "persona",
+     "texto": "Buen día."
+    },
+    {
+     "de": "persona",
+     "texto": "Si ya estoy activo en la plataforma."
+    }
+   ]
+  },
+  {
+   "mensajes": 20,
+   "compro_por_etiqueta": true,
+   "final": [
+    {
+     "de": "bot",
+     "texto": "Listo, está bien explorar. Mira, te dejo el temario completo del Diplomado para que veas exactamente qué incluye y decides si te animas 👉 [enlace]"
+    },
+    {
+     "de": "bot",
+     "texto": "Revísalo con calma y me dices si te surgen dudas o si quieres saber más de algo específico."
+    },
+    {
+     "de": "bot",
+     "texto": "Esperamos ser parte de su crecimiento profesional en un futuro🫱🏻‍🫲🏼 ¡Pero no te vas con las manos vacias! 🎁 Te obsequiamos un curso introductorio BIM dentro de nuestra Comunidad Design Premium DG 🎓 Tu acceso ya está activo y puedes ingresar"
+    },
+    {
+     "de": "bot",
+     "texto": "[nombre], quedó confirmada tu inscripción al workshop de IA en Revit. ✅ Nos vemos el martes 17 de noviembre a las 8:00 PM (hora de Ecuador). Los avisos van por este grupo: [enlace]"
+    }
+   ]
+  },
+  {
+   "mensajes": 76,
+   "compro_por_etiqueta": true,
+   "final": [
+    {
+     "de": "persona",
+     "texto": ">AUDIO<"
+    },
+    {
+     "de": "bot",
+     "texto": "Hola [nombre], buen día 😊 ya le pasamos tu audio con tu duda al Ing. [nombre] para que lo revise. En cuanto nos responda te escribimos por aquí."
+    },
+    {
+     "de": "persona",
+     "texto": "Gracias"
+    },
+    {
+     "de": "persona",
+     "texto": ">DOCUMENT< Solicitud Desing [nombre] pdf"
     }
    ]
   }
