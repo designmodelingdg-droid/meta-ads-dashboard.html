@@ -172,3 +172,27 @@ pasos, en este orden, y el 23-sep se falló en los tres:**
 **Y una respuesta a historia NO es un comentario.** Llega como DM. Un
 workflow «Comentario X» no la ve. Si la historia pide «Responde X», el
 workflow de X necesita también un disparador por mensaje.
+
+
+## Cruce con la matriz del mes (desde octubre de 2026)
+
+Cada revisión semanal compara lo publicado contra `calendario-<mes>.json` y
+contra su ficha en `guiones-completos.json`. Se anota:
+
+- **Qué pieza rindió y cuál no**, por intención (problema / solución /
+  objeción). Si en la semana 2 una intención va muy por debajo, se ajusta el
+  reparto de las semanas 3 y 4, pero sin romper el 50/20/30 del mes.
+- **Si el lead magnet de la semana generó DM** (`campanas.json` y
+  `embudo-leadmagnets.json`). Si no generó, en la semana siguiente se cambia por
+  uno de respaldo del calendario (`lead_magnets.respaldo`), no por uno nuevo.
+- **Si una pieza publicada ya aparece en `historico-2026.json`.** Al cerrar el
+  mes se corre `python3 scripts/historico_matriz.py`, para que el mes siguiente
+  no la repita.
+
+Después de cualquier cambio al calendario:
+
+```bash
+python3 matriz-viral/matriz/calendario-<mes>.py
+python3 scripts/verificar_matriz_mes.py --mes AAAA-MM
+python3 scripts/build_matriz_mes.py --mes AAAA-MM
+```

@@ -1,0 +1,41 @@
+name: Auditoría del bot de ventas (GHL)
+
+# Solo lee GHL: cómo escribe y cómo cierra el agente de WhatsApp en las
+# conversaciones más recientes. Corre al cambiar el script (desde cualquier
+# rama) o a mano. Guarda agregados y ejemplos anonimizados.
+
+on:
+  push:
+    paths:
+      - scripts/ghl_auditoria_bot.py
+      - .github/workflows/auditoria-bot.yml
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: auditoria-bot-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  auditar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Leer las conversaciones del bot
+        env:
+          GHL_TOKEN: ${{ secrets.GHL_TOKEN }}
+        run: python3 scripts/ghl_auditoria_bot.py --limite 400
+      - name: Commit si cambió
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add matriz-viral/fuentes/ghl/auditoria-bot-ventas.json
+          git diff --staged --quiet && echo "Nada nuevo." && exit 0
+          git commit -m "Auditoría del bot de ventas (lectura de GHL)"
+          for i in 1 2 3; do git pull --rebase -q && git push && exit 0; sleep 5; done
+          exit 1

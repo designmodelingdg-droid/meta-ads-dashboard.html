@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cotizador de Honorarios Estructurales · Design Modeling Academy</title>
+<meta name="description" content="Calcula cuántas horas lleva tu proyecto estructural, cuánto cobras de verdad por hora y arma la propuesta en PDF con alcance, exclusiones, pagos e impuestos de tu país.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@500;600;700;800;900&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#003e5c; --navy2:#001e30; --medio:#0a5a80; --orange:#ca7520; --orange-d:#e8a04a; --palido:#f7e8cc;
+    --card:#ffffff; --ink:#27323d; --ink2:#5a6b7b; --line:#e2e7ed; --crema:#fafaf7;
+    --ok:#17754e; --bad:#b0302f; --chip-ok:#e4f6ee; --chip-bad:#fdeaea;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  [hidden]{display:none!important}
+  body{font-family:'Nunito',system-ui,sans-serif;background:linear-gradient(135deg,var(--navy2) 0%,var(--navy) 100%);min-height:100vh;color:var(--ink)}
+  h1,h2,h3,h4{font-family:'Overpass',sans-serif}
+  .wrap{max-width:1120px;margin:0 auto;padding:24px 16px 64px}
+  header{color:#fff;text-align:center;padding:18px 0 26px}
+  header .logo-img{height:52px;width:auto;margin:0 auto 10px;display:block}
+  header .logo{font-family:'Overpass',sans-serif;font-weight:800;letter-spacing:.12em;font-size:.8rem;color:var(--orange-d);text-transform:uppercase}
+  header h1{font-size:clamp(1.5rem,4vw,2.2rem);font-weight:800;margin-top:6px;text-wrap:balance}
+  header p{color:#b9c6d2;margin:6px auto 0;font-size:.98rem;max-width:62ch}
+  .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,440px);gap:20px;align-items:start}
+  @media (max-width:940px){.grid{grid-template-columns:1fr}}
+  .col{display:flex;flex-direction:column;gap:16px}
+  .card{background:var(--card);border-radius:14px;padding:20px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+  .card h2{font-size:1rem;font-weight:800;color:var(--navy);display:flex;align-items:center;gap:8px;margin-bottom:6px}
+  .card h2 .n{background:#9a5412;color:#fff;border-radius:8px;width:26px;height:26px;display:inline-flex;align-items:center;justify-content:center;font-size:.85rem;flex:none}
+  .card .sub{font-size:.84rem;color:var(--ink2);margin-bottom:14px;max-width:62ch}
+  .f{display:grid;grid-template-columns:1fr 130px 58px;gap:6px 8px;align-items:center;margin-bottom:8px}
+  .f label{font-size:.84rem;color:var(--ink2)}
+  .f .u{font-size:.78rem;color:var(--ink2)}
+  input,select,textarea{width:100%;padding:7px 9px;border:1px solid var(--line);border-radius:8px;font:inherit;font-size:.9rem;background:#fbfcfe;color:var(--ink)}
+  input:focus,select:focus,textarea:focus{outline:2px solid var(--orange);border-color:var(--orange)}
+  .f2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  @media (max-width:520px){.f2{grid-template-columns:1fr}.f{grid-template-columns:1fr 110px 48px}}
+  .fld label{display:block;font-size:.8rem;color:var(--ink2);margin-bottom:4px}
+  .seg{display:flex;gap:6px;margin-bottom:12px;flex-wrap:wrap}
+  .seg button{flex:1;padding:8px 10px;border:1px solid var(--line);background:#f4f7fa;border-radius:9px;font:inherit;font-size:.82rem;cursor:pointer;color:var(--ink2);min-width:110px}
+  .seg button.on{background:var(--navy);color:#fff;border-color:var(--navy);font-weight:700}
+  .hint{font-size:.8rem;color:var(--ink2);background:#f2f6fa;border-left:3px solid var(--orange);padding:8px 10px;border-radius:0 8px 8px 0;margin:10px 0}
+  .btn{display:inline-block;width:100%;padding:12px;border:0;border-radius:10px;background:var(--navy);color:#fff;font:inherit;font-weight:800;font-size:.95rem;cursor:pointer;margin-top:6px;text-align:center;text-decoration:none}
+  .btn:hover{background:var(--medio)}
+  .btn.warm{background:#a95d15}
+  .btn.warm:hover{background:var(--orange)}
+  .btn.ghost{background:#eef2f6;color:var(--navy);font-weight:700}
+  .btn.mini{width:auto;padding:6px 12px;font-size:.8rem;margin:0}
+  .sec{border-top:1px solid var(--line);margin-top:14px;padding-top:14px}
+  .sec h3{font-size:.85rem;font-weight:800;color:var(--navy);margin-bottom:10px}
+  /* tabla de entregables */
+  .tbl{width:100%;border-collapse:collapse;font-size:.86rem}
+  .tbl th{font:700 .72rem 'Overpass',sans-serif;letter-spacing:.04em;text-transform:uppercase;color:var(--ink2);text-align:left;padding:6px 6px;border-bottom:1px solid var(--line)}
+  .tbl td{padding:6px;border-bottom:1px dashed var(--line);vertical-align:middle}
+  .tbl td.num{width:78px}
+  .tbl td.h{width:64px;text-align:right;font-weight:700;color:var(--navy);font-variant-numeric:tabular-nums}
+  .tbl input[type=number]{padding:5px 6px}
+  .tbl .nom{display:flex;gap:8px;align-items:center}
+  .tbl .nom input[type=checkbox]{width:16px;height:16px;flex:none;accent-color:var(--navy)}
+  .tbl tfoot td{font-weight:800;color:var(--navy);border-bottom:0;padding-top:10px}
+  .tblwrap{overflow-x:auto}
+  .niveles{display:flex;flex-direction:column;gap:6px;margin-bottom:8px}
+  .nivel{display:grid;grid-template-columns:90px 1fr 34px;gap:8px;align-items:center;font-size:.84rem;color:var(--ink2)}
+  .nivel button{border:0;background:#f4f7fa;border-radius:8px;height:32px;cursor:pointer;color:var(--bad);font-size:1rem}
+  .chk{display:flex;gap:8px;align-items:flex-start;font-size:.85rem;color:var(--ink);margin:6px 0;cursor:pointer}
+  .chk input{width:16px;height:16px;margin-top:2px;flex:none;accent-color:var(--navy)}
+  .chk small{display:block;color:var(--ink2);font-size:.76rem}
+  /* resultados */
+  .res .row{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px dashed var(--line);font-size:.9rem}
+  .res .row b{color:var(--navy);font-variant-numeric:tabular-nums;white-space:nowrap}
+  .res .row span{color:var(--ink2)}
+  .res .row.tot{border-bottom:0;padding-top:10px}
+  .res .row.tot span,.res .row.tot b{color:var(--navy);font-weight:800;font-size:1rem}
+  .chip{display:inline-flex;align-items:center;gap:6px;font-size:.78rem;font-weight:800;padding:3px 10px;border-radius:99px}
+  .chip.ok{background:var(--chip-ok);color:var(--ok)}
+  .chip.bad{background:var(--chip-bad);color:var(--bad)}
+  .golpe{background:linear-gradient(135deg,var(--navy2),var(--navy));color:#fff;border-radius:12px;padding:18px;margin:4px 0 14px}
+  .golpe .et{font:800 .72rem 'Overpass',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--orange-d)}
+  .golpe .big{font:900 2.4rem/1.05 'Overpass',sans-serif;margin:6px 0 4px;font-variant-numeric:tabular-nums}
+  .golpe p{color:#c9d6e2;font-size:.9rem}
+  .golpe p b{color:#fff}
+  .golpe .chip{margin-top:10px}
+  .sticky{position:sticky;top:12px}
+  @media (max-width:940px){.sticky{position:static}}
+  footer{color:#8fa2b3;text-align:center;font-size:.78rem;margin-top:34px}
+  footer a{color:var(--orange-d)}
+  .warn{font-size:.76rem;color:var(--ink2);margin-top:12px;line-height:1.5}
+  #lock{position:fixed;inset:0;background:rgba(10,27,43,.96);z-index:50;display:flex;align-items:center;justify-content:center;padding:20px}
+  #lock[hidden]{display:none}
+  #lock .card{max-width:420px;text-align:center}
+  #lock h2{justify-content:center}
+  /* ===== propuesta imprimible ===== */
+  #propuesta{display:none}
+  @media print{
+    @page{size:A4;margin:16mm 16mm 18mm}
+    body{background:#fff}
+    .wrap,#lock{display:none!important}
+    #propuesta{display:block;color:#1d2733;font-size:10.5pt;line-height:1.45}
+    #propuesta h1{font:900 20pt 'Overpass',sans-serif;color:#0E2438;margin:2mm 0 1mm}
+    #propuesta .eyebrow{font:800 8pt 'Overpass',sans-serif;letter-spacing:.14em;color:#C96A1C;text-transform:uppercase}
+    #propuesta h2{font:800 11.5pt 'Overpass',sans-serif;color:#0E2438;margin:6mm 0 2mm;padding-bottom:1mm;border-bottom:1.5px solid #0E2438}
+    #propuesta table{width:100%;border-collapse:collapse;margin:2mm 0}
+    #propuesta th{background:#0E2438;color:#fff;font:700 8.5pt 'Overpass',sans-serif;text-align:left;padding:2mm 3mm}
+    #propuesta td{border-bottom:.5px solid #c9d2db;padding:1.8mm 3mm;vertical-align:top}
+    #propuesta td.r{text-align:right;white-space:nowrap}
+    #propuesta .ficha td{border:0;padding:.8mm 0}
+    #propuesta .ficha td:first-child{color:#5A6B7B;width:38mm}
+    #propuesta .total td{font-weight:800;border-top:1.5px solid #0E2438}
+    #propuesta ul{margin:1mm 0 1mm 5mm}
+    #propuesta .nota{font-size:8.5pt;color:#5A6B7B}
+    #propuesta .pie{margin-top:8mm;font-size:7.5pt;color:#8a97a4;border-top:.5px solid #c9d2db;padding-top:2mm}
+    #propuesta .firma{margin-top:14mm;width:70mm;border-top:.8px solid #1d2733;padding-top:1.5mm;font-size:9pt}
+  }
+</style>
+</head>
+<body>
+<div id="lock" hidden>
+  <div class="card">
+    <h2>🔒 Acceso al cotizador</h2>
+    <p style="font-size:.9rem;color:var(--ink2);margin-bottom:14px">Para usar el Cotizador de Honorarios de <b>Design Modeling Academy</b> primero regístrate gratis. Te toma 20 segundos.</p>
+    <a class="btn warm" id="lockBtn" href="./index.html">Registrarme y entrar</a>
+  </div>
+</div>
+
+<div class="wrap">
+  <header>
+    <img class="logo-img" src="https://assets.cdn.filesafe.space/nkKbOarn5IwHeMv48uY9/media/6a04bbc1fa8afa3be0bb00d8.png" alt="Design Modeling Academy">
+    <div class="logo">Design Modeling Academy</div>
+    <h1>Cotizador de Honorarios Estructurales</h1>
+    <p>Cuántas horas te lleva el proyecto, cuánto cobras de verdad por hora y la propuesta lista en PDF, con los impuestos de tu país.</p>
+  </header>
+
+  <div class="grid">
+    <!-- ================= ENTRADAS ================= -->
+    <div class="col">
+
+      <div class="card">
+        <h2><span class="n">1</span> Tu tarifa mínima por hora</h2>
+        <p class="sub">Lo que necesitas ganar al mes, más lo que te cuesta trabajar, dividido entre las horas que de verdad cobras. Las horas de correos, llamadas y trámites no las paga nadie.</p>
+        <div class="f"><label for="ingreso">Ingreso neto que quieres al mes</label><input id="ingreso" type="number" min="0" step="50" value="1500"><span class="u mon">USD</span></div>
+        <div class="f"><label for="costos">Costos fijos al mes (licencias, equipo, internet, contador, seguro)</label><input id="costos" type="number" min="0" step="10" value="300"><span class="u mon">USD</span></div>
+        <div class="f"><label for="horasSem">Horas que trabajas a la semana</label><input id="horasSem" type="number" min="1" step="1" value="40"><span class="u">h</span></div>
+        <div class="f"><label for="pctFact">De esas, cuántas cobras a un cliente</label><input id="pctFact" type="number" min="1" max="100" step="5" value="60"><span class="u">%</span></div>
+        <div class="hint" id="tarifaHint"></div>
+      </div>
+
+      <div class="card">
+        <h2><span class="n">2</span> El proyecto</h2>
+        <div class="f2" style="margin-bottom:10px">
+          <div class="fld"><label for="pais">País (moneda e impuestos)</label>
+            <select id="pais">
+              <option value="EC" selected>Ecuador · USD</option>
+              <option value="MX">México · MXN</option>
+              <option value="CO">Colombia · COP</option>
+              <option value="PE">Perú · PEN</option>
+              <option value="DO">República Dominicana · DOP</option>
+              <option value="XX">Otro país</option>
+            </select>
+          </div>
+          <div class="fld"><label for="sistema">Sistema estructural</label>
+            <select id="sistema">
+              <option>Hormigón armado aporticado</option>
+              <option>Estructura de acero</option>
+              <option>Mixta (hormigón y acero)</option>
+              <option>Mampostería confinada</option>
+              <option>Otro</option>
+            </select>
+          </div>
+        </div>
+        <h3 style="font-size:.85rem;color:var(--navy);margin:6px 0 8px">Área por nivel</h3>
+        <div class="niveles" id="niveles"></div>
+        <button class="btn ghost mini" id="addNivel" type="button">＋ Agregar nivel</button>
+        <div class="f" style="margin-top:12px"><label for="sotN">Sótanos</label><input id="sotN" type="number" min="0" step="1" value="0"><span class="u">u</span></div>
+        <div class="f"><label for="sotA">Área de cada sótano</label><input id="sotA" type="number" min="0" step="10" value="0"><span class="u">m²</span></div>
+        <div class="hint" id="areaHint"></div>
+      </div>
+
+      <div class="card">
+        <h2><span class="n">3</span> Qué entregas y cuántas horas lleva</h2>
+        <p class="sub"><b>Las horas que vienen cargadas son un ejemplo</b>, no un estándar. Cámbialas por las tuyas: horas fijas del entregable, más las que suma cada 100 m².</p>
+        <div class="tblwrap"><table class="tbl" id="tblEnt">
+          <thead><tr><th>Entregable</th><th>Fijas</th><th>Por 100 m²</th><th style="text-align:right">Horas</th></tr></thead>
+          <tbody></tbody>
+          <tfoot><tr><td colspan="3">Horas del alcance</td><td class="h" id="hAlcance">0</td></tr></tfoot>
+        </table></div>
+        <div class="sec">
+          <h3>Revisiones y obra</h3>
+          <div class="f"><label for="revN">Rondas de revisión incluidas</label><input id="revN" type="number" min="0" step="1" value="2"><span class="u">u</span></div>
+          <div class="f"><label for="revH">Horas por cada ronda</label><input id="revH" type="number" min="0" step="1" value="4"><span class="u">h</span></div>
+          <div class="f"><label for="visN">Visitas de obra incluidas</label><input id="visN" type="number" min="0" step="1" value="0"><span class="u">u</span></div>
+          <div class="f"><label for="visH">Horas por visita (con traslado)</label><input id="visH" type="number" min="0" step="1" value="4"><span class="u">h</span></div>
+          <div class="f"><label for="cont">Imprevistos sobre el total de horas</label><input id="cont" type="number" min="0" max="100" step="5" value="15"><span class="u">%</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2><span class="n">4</span> Tu precio</h2>
+        <div class="seg" id="modoSeg">
+          <button type="button" data-modo="m2" class="on">Por m²</button>
+          <button type="button" data-modo="fijo">Monto único</button>
+          <button type="button" data-modo="horas">Desde mis horas</button>
+        </div>
+        <div id="modoM2"><div class="f"><label for="precioM2">Precio que pensabas cobrar por m²</label><input id="precioM2" type="number" min="0" step="0.5" value="5"><span class="u mon">USD</span></div></div>
+        <div id="modoFijo" hidden><div class="f"><label for="precioFijo">Monto único que pensabas cobrar</label><input id="precioFijo" type="number" min="0" step="50" value="1800"><span class="u mon">USD</span></div></div>
+        <div id="modoHoras" hidden><div class="hint">El precio sale de tus horas por tu tarifa mínima. Es el piso: debajo de eso pierdes.</div></div>
+        <button class="btn ghost" id="ajustar" type="button">↥ Ajustar al precio mínimo</button>
+      </div>
+
+      <div class="card">
+        <h2><span class="n">5</span> Impuestos y retenciones</h2>
+        <label class="chk"><input type="checkbox" id="cobraIva" checked><span><span id="ivaLbl">Cobro IVA</span><small id="ivaNota"></small></span></label>
+        <div class="f" id="ivaManual" hidden><label for="ivaPct">Tasa del impuesto</label><input id="ivaPct" type="number" min="0" max="100" step="0.5" value="0"><span class="u">%</span></div>
+        <div class="sec" style="margin-top:8px">
+          <h3>Lo que te retiene el cliente</h3>
+          <div id="retenciones"></div>
+          <div class="f"><label for="retOtra">Otra retención sobre el subtotal</label><input id="retOtra" type="number" min="0" max="100" step="0.5" value="0"><span class="u">%</span></div>
+          <p class="warn" style="margin-top:4px">Tasas verificadas el 30-sep-2026 en fuentes públicas. Las retenciones dependen de quién es tu cliente y de cómo facturas: confírmalas con tu contador.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2><span class="n">6</span> La propuesta</h2>
+        <p class="sub">Lo que no está escrito en la propuesta es lo que después te piden gratis.</p>
+        <div class="f2">
+          <div class="fld"><label for="pNombre">Proyecto</label><input id="pNombre" value="Vivienda de 3 niveles"></div>
+          <div class="fld"><label for="pCliente">Cliente</label><input id="pCliente" placeholder="Nombre del cliente"></div>
+          <div class="fld"><label for="pUbic">Ubicación</label><input id="pUbic" placeholder="Ciudad, provincia"></div>
+          <div class="fld"><label for="pNum">N.º de propuesta</label><input id="pNum" value="001"></div>
+          <div class="fld"><label for="yoNombre">Tu nombre o empresa</label><input id="yoNombre" placeholder="Ing. Nombre Apellido"></div>
+          <div class="fld"><label for="yoReg">Registro profesional</label><input id="yoReg" placeholder="N.º de registro"></div>
+          <div class="fld"><label for="yoCont">Contacto</label><input id="yoCont" placeholder="Correo · teléfono"></div>
+          <div class="fld"><label for="plazo">Entrega (días hábiles)</label><input id="plazo" type="number" min="1" value="30"></div>
+          <div class="fld"><label for="valid">Validez de la oferta (días)</label><input id="valid" type="number" min="1" value="15"></div>
+          <div class="fld"><label for="hitos">Hitos de pago (%, separados por coma)</label><input id="hitos" value="40, 40, 20"></div>
+        </div>
+        <div class="sec">
+          <h3>No incluye</h3>
+          <div id="exclusiones"></div>
+        </div>
+        <label class="chk" style="margin-top:10px"><input type="checkbox" id="desglose"><span>Mostrar al cliente el monto por entregable<small>Se reparte el precio según las horas de cada uno. Las horas no aparecen.</small></span></label>
+      </div>
+    </div>
+
+    <!-- ================= RESULTADOS ================= -->
+    <div class="col sticky">
+      <div class="card res" id="resCard">
+        <h2><span class="n">✓</span> Tu resultado</h2>
+        <div id="resBody"></div>
+        <button class="btn warm" id="imprimir" type="button">Descargar la propuesta en PDF</button>
+        <p class="warn">Herramienta educativa de <b>Design Modeling Academy</b>. No fija honorarios mínimos de ningún colegio profesional ni reemplaza a tu contador. Todas las cifras salen de lo que escribes, salvo las tasas de impuestos.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © Design Modeling Academy · BIM + IA para construcción ·
+    <a href="./index.html">¿Cómo funciona este cotizador?</a>
+  </footer>
+</div>
+
+<div id="propuesta" aria-hidden="true"></div>
+
+<script>
+/* ============ CONFIGURACIÓN DE ACCESO ============
+   Igual que la Calculadora de Zapatas: la landing agrega ?acceso=TOKEN y la
+   marca queda en localStorage. REQUIERE_REGISTRO=false quita el candado. */
+const REQUIERE_REGISTRO = true;
+const TOKEN_ACCESO = 'dm2026';
+const URL_LANDING = './index.html';
+
+(function gate(){
+  if(!REQUIERE_REGISTRO) return;
+  const p = new URLSearchParams(location.search);
+  if(p.get('acceso') === TOKEN_ACCESO){ try{localStorage.setItem('dm_cotiza_acceso', TOKEN_ACCESO);}catch(e){} return; }
+  try{ if(localStorage.getItem('dm_cotiza_acceso') === TOKEN_ACCESO) return; }catch(e){}
+  document.getElementById('lock').hidden = false;
+  document.getElementById('lockBtn').href = URL_LANDING;
+})();
+
+/* ============ IMPUESTOS POR PAÍS ============
+   Verificado el 30-sep-2026:
+   · EC  IVA 15 % (SRI, circular NAC-DGECCGC25-00000006). Retención IR 10 % a
+         honorarios de personas naturales donde prima el intelecto (tabla SRI
+         vigente desde el 1-mar-2026).
+   · MX  IVA 16 %. Persona moral que paga honorarios a persona física: retiene
+         ISR 10 % y 2/3 del IVA (LIVA art. 1-A).
+   · CO  IVA 19 % (tarifa general). Retenciones: manuales.
+   · PE  IGV 18 % (15,5 % IGV + 2,5 % IPM en 2026, Ley 32387). Retenciones: manuales.
+   · DO  ITBIS 18 %. Desde el 1-jul-2026 (Ley 30-26, art. 309 CT) la retención
+         de ISR a servicios de personas físicas es 15 % (antes 10 %). La empresa
+         que contrata a una persona física retiene el 100 % del ITBIS. */
+const PAISES = {
+  EC:{mon:'USD', imp:'IVA',   tasa:15, nota:'IVA 15 %, tarifa general vigente (SRI).',
+      ret:[{id:'ec_ir', n:'Retención de Impuesto a la Renta 10 %', det:'Honorarios a personas naturales. La aplica el cliente obligado a retener.', pct:10, base:'sub'}]},
+  MX:{mon:'MXN', imp:'IVA',   tasa:16, nota:'IVA 16 %.',
+      ret:[{id:'mx_isr', n:'Retención de ISR 10 %', det:'Si facturas como persona física a una persona moral.', pct:10, base:'sub'},
+           {id:'mx_iva', n:'Retención de 2/3 del IVA', det:'Misma condición: la persona moral retiene dos terceras partes del IVA.', pct:200/3, base:'iva'}]},
+  CO:{mon:'COP', imp:'IVA',   tasa:19, nota:'IVA 19 %, tarifa general. Si no eres responsable de IVA, desmárcalo.', ret:[]},
+  PE:{mon:'PEN', imp:'IGV',   tasa:18, nota:'IGV 18 % (15,5 % + 2,5 % IPM). Con recibo por honorarios no se cobra IGV: desmárcalo.', ret:[]},
+  DO:{mon:'DOP', imp:'ITBIS', tasa:18, nota:'ITBIS 18 %.',
+      ret:[{id:'do_isr', n:'Retención de ISR 15 %', det:'Servicios de personas físicas, desde el 1-jul-2026 (Ley 30-26). Antes era 10 %.', pct:15, base:'sub'},
+           {id:'do_itbis', n:'Retención del 100 % del ITBIS', det:'Cuando una empresa contrata a una persona física.', pct:100, base:'iva'}]},
+  XX:{mon:'USD', imp:'Impuesto', tasa:null, nota:'Escribe la tasa de tu país.', ret:[]},
+};
+
+/* Entregables con horas de EJEMPLO (no son un estándar: ver DISEÑO.md) */
+const ENTREGABLES = [
+  {id:'modelo',   n:'Modelo y análisis estructural',          on:true,  fijas:8, por100:6},
+  {id:'diseno',   n:'Diseño de elementos y cimentación',      on:true,  fijas:6, por100:5},
+  {id:'planos',   n:'Planos estructurales (Revit)',           on:true,  fijas:8, por100:6},
+  {id:'memoria',  n:'Memoria de cálculo',                     on:true,  fijas:4, por100:2},
+  {id:'planilla', n:'Planilla de acero y cantidades',         on:false, fijas:2, por100:2},
+  {id:'coord',    n:'Coordinación con arquitectura e instalaciones', on:true, fijas:4, por100:0},
+];
+const EXCLUSIONES = [
+  'Estudio de suelos y topografía',
+  'Diseño de instalaciones eléctricas, sanitarias y mecánicas',
+  'Dirección técnica y fiscalización de obra',
+  'Cambios de arquitectura después de aprobado el anteproyecto',
+  'Trámites y tasas municipales',
+  'Visitas de obra adicionales a las incluidas',
+];
+
+/* CALC-START */
+/* ============ NÚCLEO DE CÁLCULO ============
+   Todo sale de lo que escribe el usuario, salvo las tasas de impuestos.
+   Semanas por mes = 52/12. */
+function calcularCotizacion(inp){
+  const r = {};
+  // 1. Tarifa mínima por hora
+  r.horasFactMes = inp.horasSemana * 52/12 * inp.pctFacturable/100;
+  r.tarifaMin = r.horasFactMes > 0 ? (inp.ingresoMensual + inp.costosFijos) / r.horasFactMes : NaN;
+  // 2. Área
+  r.areaNiveles = inp.niveles.reduce((s,a)=> s + (a>0 ? a : 0), 0);
+  r.areaSotanos = Math.max(0, inp.sotanosN) * Math.max(0, inp.sotanosArea);
+  r.area = r.areaNiveles + r.areaSotanos;
+  // 3. Horas del alcance: fijas + por cada 100 m²
+  r.entregables = inp.entregables.map(e => ({...e, horas: e.on ? e.fijas + e.por100 * r.area/100 : 0}));
+  r.horasAlcance = r.entregables.reduce((s,e)=> s + e.horas, 0);
+  r.horasRevision = inp.revisionesN * inp.revisionesH;
+  r.horasVisitas = inp.visitasN * inp.visitasH;
+  r.horasBase = r.horasAlcance + r.horasRevision + r.horasVisitas;
+  r.horasTotal = r.horasBase * (1 + inp.contingencia/100);
+  // 4. Precio mínimo (piso) y precio elegido
+  r.precioMin = r.horasTotal * r.tarifaMin;
+  r.precioMinM2 = r.area > 0 ? r.precioMin / r.area : NaN;
+  r.precio = inp.modo === 'm2' ? inp.precioM2 * r.area
+           : inp.modo === 'fijo' ? inp.precioFijo
+           : r.precioMin;
+  r.tarifaReal = r.horasTotal > 0 ? r.precio / r.horasTotal : NaN;
+  r.cubre = r.precio >= r.precioMin - 1e-9;
+  r.diferencia = r.precio - r.precioMin;
+  // 5. Impuestos
+  r.subtotal = r.precio;
+  r.iva = inp.cobraIva ? r.subtotal * inp.ivaTasa/100 : 0;
+  r.total = r.subtotal + r.iva;
+  r.retenciones = inp.retenciones.filter(x => x.on).map(x => ({...x, monto: (x.base === 'iva' ? r.iva : r.subtotal) * x.pct/100}));
+  r.retenido = r.retenciones.reduce((s,x)=> s + x.monto, 0);
+  r.recibes = r.total - r.retenido;
+  // 6. Hitos de pago sobre el total facturado
+  r.hitosSuma = inp.hitos.reduce((s,h)=> s + h, 0);
+  r.hitos = inp.hitos.map(h => ({pct:h, monto: r.total * h/100}));
+  // 7. Reparto del precio por entregable, proporcional a las horas (para la propuesta)
+  r.reparto = r.entregables.filter(e => e.on).map(e => ({n:e.n, monto: r.horasBase > 0 ? r.precio * e.horas / r.horasBase : 0}));
+  if(r.horasRevision > 0) r.reparto.push({n:'Rondas de revisión', monto: r.precio * r.horasRevision / r.horasBase});
+  if(r.horasVisitas > 0)  r.reparto.push({n:'Visitas de obra',   monto: r.precio * r.horasVisitas / r.horasBase});
+  return r;
+}
+/* CALC-END */
+
+/* ============ UI ============ */
+const $ = id => document.getElementById(id);
+let modo = 'm2';
+let niveles = [120, 120, 120];
+
+function renderNiveles(){
+  $('niveles').innerHTML = niveles.map((a,i)=>`
+    <div class="nivel"><label for="niv${i}">Nivel ${i+1}</label>
+      <input id="niv${i}" type="number" min="0" step="5" value="${a}" data-i="${i}">
+      ${niveles.length>1?`<button type="button" data-del="${i}" aria-label="Quitar nivel ${i+1}">✕</button>`:'<span></span>'}
+    </div>`).join('');
+  $('niveles').querySelectorAll('input').forEach(el=> el.addEventListener('input', e=>{ niveles[+e.target.dataset.i] = +e.target.value; run(); }));
+  $('niveles').querySelectorAll('button').forEach(b=> b.onclick = ()=>{ niveles.splice(+b.dataset.del,1); renderNiveles(); run(); });
+}
+$('addNivel').onclick = ()=>{ niveles.push(niveles[niveles.length-1] || 100); renderNiveles(); run(); };
+
+function renderEntregables(){
+  $('tblEnt').querySelector('tbody').innerHTML = ENTREGABLES.map((e,i)=>`
+    <tr><td><label class="nom"><input type="checkbox" data-i="${i}" data-k="on" ${e.on?'checked':''}>${e.n}</label></td>
+      <td class="num"><input type="number" min="0" step="1" value="${e.fijas}" data-i="${i}" data-k="fijas" aria-label="Horas fijas: ${e.n}"></td>
+      <td class="num"><input type="number" min="0" step="0.5" value="${e.por100}" data-i="${i}" data-k="por100" aria-label="Horas por 100 m²: ${e.n}"></td>
+      <td class="h" id="h_${e.id}">0</td></tr>`).join('');
+  $('tblEnt').querySelectorAll('input').forEach(el=> el.addEventListener('input', ev=>{
+    const t = ev.target, e = ENTREGABLES[+t.dataset.i];
+    e[t.dataset.k] = t.type === 'checkbox' ? t.checked : +t.value; run();
+  }));
+}
+
+function renderExclusiones(){
+  $('exclusiones').innerHTML = EXCLUSIONES.map((x,i)=>`<label class="chk"><input type="checkbox" data-ex="${i}" checked><span>${x}</span></label>`).join('');
+  $('exclusiones').querySelectorAll('input').forEach(el=> el.addEventListener('input', runProp));
+}
+
+let retOn = {};
+function renderPais(){
+  const P = PAISES[$('pais').value];
+  document.querySelectorAll('.mon').forEach(el=> el.textContent = P.mon);
+  $('ivaLbl').textContent = `Cobro ${P.imp}` + (P.tasa!=null ? ` (${P.tasa} %)` : '');
+  $('ivaNota').textContent = P.nota;
+  $('ivaManual').hidden = P.tasa != null;
+  $('retenciones').innerHTML = P.ret.length ? P.ret.map(x=>`<label class="chk"><input type="checkbox" data-ret="${x.id}" ${retOn[x.id]?'checked':''}><span>${x.n}<small>${x.det}</small></span></label>`).join('')
+    : '<p class="warn" style="margin:0 0 8px">Para este país no traemos retenciones cargadas: si tu cliente te retiene, escríbela abajo.</p>';
+  $('retenciones').querySelectorAll('input').forEach(el=> el.addEventListener('input', e=>{ retOn[e.target.dataset.ret] = e.target.checked; run(); }));
+}
+$('pais').addEventListener('input', ()=>{ renderPais(); run(); });
+
+document.querySelectorAll('#modoSeg button').forEach(b=> b.onclick = ()=>{
+  modo = b.dataset.modo;
+  document.querySelectorAll('#modoSeg button').forEach(x=> x.classList.toggle('on', x===b));
+  $('modoM2').hidden = modo!=='m2'; $('modoFijo').hidden = modo!=='fijo'; $('modoHoras').hidden = modo!=='horas';
+  run();
+});
+
+function leer(){
+  const P = PAISES[$('pais').value];
+  const ret = P.ret.map(x=> ({...x, on: !!retOn[x.id]}));
+  const otra = +$('retOtra').value;
+  if(otra > 0) ret.push({id:'otra', n:`Otra retención ${otra} %`, pct:otra, base:'sub', on:true});
+  return {
+    ingresoMensual:+$('ingreso').value, costosFijos:+$('costos').value,
+    horasSemana:+$('horasSem').value, pctFacturable:+$('pctFact').value,
+    niveles:[...niveles], sotanosN:+$('sotN').value, sotanosArea:+$('sotA').value,
+    entregables:ENTREGABLES.map(e=>({...e})),
+    revisionesN:+$('revN').value, revisionesH:+$('revH').value,
+    visitasN:+$('visN').value, visitasH:+$('visH').value, contingencia:+$('cont').value,
+    modo, precioM2:+$('precioM2').value, precioFijo:+$('precioFijo').value,
+    cobraIva:$('cobraIva').checked, ivaTasa: P.tasa!=null ? P.tasa : +$('ivaPct').value,
+    retenciones:ret,
+    hitos:$('hitos').value.split(',').map(s=> parseFloat(s.replace(/[^\d.]/g,''))).filter(x=> x>0),
+  };
+}
+
+const monedaFmt = () => PAISES[$('pais').value].mon;
+const din = x => isFinite(x) ? (Math.round(x*100)/100).toLocaleString('es', {minimumFractionDigits:2, maximumFractionDigits:2}) + ' ' + monedaFmt() : '—';
+const num = (x,d=1) => isFinite(x) ? (Math.round(x*10**d)/10**d).toLocaleString('es', {maximumFractionDigits:d}) : '—';
+const esc = s => String(s).replace(/[&<>"]/g, c=> ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+let ultimo = null;
+function run(){
+  const inp = leer();
+  const r = calcularCotizacion(inp); ultimo = {inp, r};
+  $('tarifaHint').innerHTML = isFinite(r.tarifaMin)
+    ? `Cobras <b>${num(r.horasFactMes,0)} horas al mes</b>. Tu tarifa mínima es <b>${din(r.tarifaMin)} por hora</b>.`
+    : 'Completa horas y porcentaje facturable.';
+  $('areaHint').innerHTML = `Área total: <b>${num(r.area,1)} m²</b>` + (r.areaSotanos>0 ? ` (${num(r.areaNiveles,1)} en niveles + ${num(r.areaSotanos,1)} en sótanos)` : '');
+  r.entregables.forEach(e=> { const c = $('h_'+e.id); if(c) c.textContent = num(e.horas,1); });
+  $('hAlcance').textContent = num(r.horasAlcance,1);
+
+  if(!(r.area > 0) || !isFinite(r.tarifaMin) || !(r.horasTotal > 0)){
+    $('resBody').innerHTML = '<p class="hint">Completa tu tarifa, el área y al menos un entregable para ver el resultado.</p>'; return;
+  }
+  const rows = [];
+  const golpe = modo === 'horas'
+    ? `<div class="golpe"><div class="et">Tu precio mínimo</div><div class="big">${din(r.precioMin)}</div>
+        <p>Son <b>${num(r.horasTotal,1)} horas</b> a <b>${din(r.tarifaMin)}</b>. Equivale a <b>${din(r.precioMinM2)} por m²</b>.</p></div>`
+    : `<div class="golpe"><div class="et">Con este precio cobras</div><div class="big">${din(r.tarifaReal)} <span style="font-size:1rem;font-weight:700">por hora</span></div>
+        <p>Tu mínimo es <b>${din(r.tarifaMin)}</b>. Para cubrirlo, este proyecto pide <b>${din(r.precioMinM2)} por m²</b>${modo==='m2' ? ` y no ${din(inp.precioM2)}` : ''}.</p>
+        <span class="chip ${r.cubre?'ok':'bad'}">${r.cubre ? '✔ CUBRE TU TARIFA' : '✖ NO CUBRE TU TARIFA'}</span></div>`;
+  rows.push(`<div class="row"><span>Horas del alcance</span><b>${num(r.horasAlcance,1)} h</b></div>`);
+  if(r.horasRevision>0) rows.push(`<div class="row"><span>Revisiones (${inp.revisionesN} × ${inp.revisionesH} h)</span><b>${num(r.horasRevision,1)} h</b></div>`);
+  if(r.horasVisitas>0) rows.push(`<div class="row"><span>Visitas de obra (${inp.visitasN} × ${inp.visitasH} h)</span><b>${num(r.horasVisitas,1)} h</b></div>`);
+  rows.push(`<div class="row"><span>Total con ${num(inp.contingencia,0)} % de imprevistos</span><b>${num(r.horasTotal,1)} h</b></div>`);
+  rows.push(`<div class="row"><span>Precio mínimo</span><b>${din(r.precioMin)}</b></div>`);
+  if(modo!=='horas') rows.push(`<div class="row"><span>${r.cubre?'Por encima del mínimo':'Te faltan'}</span><b style="color:${r.cubre?'var(--ok)':'var(--bad)'}">${din(Math.abs(r.diferencia))}</b></div>`);
+  rows.push(`<div class="row" style="margin-top:8px"><span>Honorarios (subtotal)</span><b>${din(r.subtotal)}</b></div>`);
+  if(inp.cobraIva) rows.push(`<div class="row"><span>${PAISES[$('pais').value].imp} ${num(inp.ivaTasa,2)} %</span><b>${din(r.iva)}</b></div>`);
+  rows.push(`<div class="row tot"><span>Total a facturar</span><b>${din(r.total)}</b></div>`);
+  r.retenciones.forEach(x=> rows.push(`<div class="row"><span>− ${esc(x.n)}</span><b>${din(x.monto)}</b></div>`));
+  if(r.retenciones.length) rows.push(`<div class="row tot"><span>Lo que te llega a la cuenta</span><b>${din(r.recibes)}</b></div>`);
+  if(Math.abs(r.hitosSuma-100) > 0.01) rows.push(`<p class="hint" style="border-left-color:var(--bad)">Los hitos de pago suman ${num(r.hitosSuma,1)} %. Tienen que sumar 100 %.</p>`);
+  $('resBody').innerHTML = golpe + rows.join('');
+  runProp();
+}
+
+$('ajustar').onclick = ()=>{
+  const r = calcularCotizacion(leer());
+  if(!isFinite(r.precioMin)) return;
+  if(modo === 'fijo') $('precioFijo').value = Math.ceil(r.precioMin);
+  else { if(modo==='horas') document.querySelector('#modoSeg [data-modo=m2]').click(); $('precioM2').value = (Math.ceil(r.precioMinM2*100)/100).toFixed(2); }
+  run();
+};
+
+/* ============ PROPUESTA (vista de impresión) ============ */
+function runProp(){
+  if(!ultimo) return;
+  const {inp, r} = ultimo, P = PAISES[$('pais').value];
+  const v = id => esc($(id).value.trim());
+  const hoy = new Date().toLocaleDateString('es', {day:'numeric', month:'long', year:'numeric'});
+  const excl = [...$('exclusiones').querySelectorAll('input:checked')].map(el=> EXCLUSIONES[+el.dataset.ex])
+    .map(x=> x === 'Visitas de obra adicionales a las incluidas' && !(inp.visitasN > 0) ? 'Visitas de obra' : x);
+  const alcance = r.entregables.filter(e=> e.on).map(e=> e.n);
+  const tablaHon = $('desglose').checked
+    ? r.reparto.map(x=> `<tr><td>${esc(x.n)}</td><td class="r">${din(x.monto)}</td></tr>`).join('')
+    : `<tr><td>Diseño estructural según el alcance descrito (${num(r.area,1)} m²)</td><td class="r">${din(r.subtotal)}</td></tr>`;
+  $('propuesta').innerHTML = `
+    <div class="eyebrow">Propuesta de honorarios · Diseño estructural</div>
+    <h1>${v('pNombre') || 'Proyecto'}</h1>
+    <table class="ficha">
+      <tr><td>Cliente</td><td>${v('pCliente') || '—'}</td></tr>
+      <tr><td>Ubicación</td><td>${v('pUbic') || '—'}</td></tr>
+      <tr><td>Sistema estructural</td><td>${esc($('sistema').value)}</td></tr>
+      <tr><td>Área total</td><td>${num(r.area,1)} m²${r.areaSotanos>0?` (incluye ${num(r.areaSotanos,1)} m² de sótanos)`:''} · ${inp.niveles.length} nivel${inp.niveles.length>1?'es':''}</td></tr>
+      <tr><td>Propuesta N.º</td><td>${v('pNum') || '—'} · ${hoy}</td></tr>
+      <tr><td>Elaborada por</td><td>${v('yoNombre') || '—'}${v('yoReg') ? ' · Registro ' + v('yoReg') : ''}${v('yoCont') ? ' · ' + v('yoCont') : ''}</td></tr>
+    </table>
+    <h2>Alcance</h2>
+    <ul>${alcance.map(a=> `<li>${esc(a)}</li>`).join('')}
+      <li>${inp.revisionesN} ronda${inp.revisionesN===1?'':'s'} de revisión incluida${inp.revisionesN===1?'':'s'}</li>
+      ${inp.visitasN>0 ? `<li>${inp.visitasN} visita${inp.visitasN===1?'':'s'} de obra</li>` : ''}</ul>
+    ${excl.length ? `<h2>No incluye</h2><ul>${excl.map(x=> `<li>${esc(x)}</li>`).join('')}</ul>` : ''}
+    <h2>Honorarios</h2>
+    <table><thead><tr><th>Concepto</th><th style="text-align:right">Monto</th></tr></thead><tbody>
+      ${tablaHon}
+      <tr><td>Subtotal</td><td class="r">${din(r.subtotal)}</td></tr>
+      ${inp.cobraIva ? `<tr><td>${P.imp} ${num(inp.ivaTasa,2)} %</td><td class="r">${din(r.iva)}</td></tr>` : ''}
+      <tr class="total"><td>Total</td><td class="r">${din(r.total)}</td></tr>
+    </tbody></table>
+    ${r.retenciones.length ? `<p class="nota">Retenciones que corresponden al cliente: ${r.retenciones.map(x=> esc(x.n) + ' (' + din(x.monto) + ')').join(' · ')}.</p>` : ''}
+    <h2>Forma de pago</h2>
+    <table><thead><tr><th>Hito</th><th style="text-align:right">%</th><th style="text-align:right">Monto</th></tr></thead><tbody>
+      ${r.hitos.map((h,i)=> `<tr><td>${i===0 ? 'A la firma' : i===r.hitos.length-1 ? 'A la entrega final' : 'Pago ' + (i+1)}</td><td class="r">${num(h.pct,1)} %</td><td class="r">${din(h.monto)}</td></tr>`).join('')}
+    </tbody></table>
+    <h2>Condiciones</h2>
+    <ul>
+      <li>Plazo de entrega: ${esc($('plazo').value)} días hábiles desde la firma y la entrega de la arquitectura aprobada y el estudio de suelos.</li>
+      <li>Incluye ${inp.revisionesN} ronda${inp.revisionesN===1?'':'s'} de revisión. Las revisiones adicionales o los cambios de alcance se cotizan aparte.</li>
+      <li>Validez de esta propuesta: ${esc($('valid').value)} días.</li>
+    </ul>
+    <div class="firma">${v('yoNombre') || 'Firma del profesional'}</div>
+    <div class="pie">Propuesta elaborada con el Cotizador de Honorarios de Design Modeling Academy.</div>`;
+}
+['pNombre','pCliente','pUbic','pNum','yoNombre','yoReg','yoCont','plazo','valid','sistema','desglose'].forEach(id=> $(id).addEventListener('input', runProp));
+$('imprimir').onclick = ()=>{ runProp(); window.print(); };
+
+/* Datos del profesional: se recuerdan en este navegador */
+['yoNombre','yoReg','yoCont'].forEach(id=>{
+  try{ const v = localStorage.getItem('dm_cotiza_'+id); if(v) $(id).value = v; }catch(e){}
+  $(id).addEventListener('input', ()=>{ try{ localStorage.setItem('dm_cotiza_'+id, $(id).value); }catch(e){} });
+});
+
+document.querySelectorAll('input:not([data-i]):not([data-ret]):not([data-ex]), select').forEach(el=> el.addEventListener('input', run));
+renderNiveles(); renderEntregables(); renderExclusiones(); renderPais(); run();
+</script>
+</body>
+</html>

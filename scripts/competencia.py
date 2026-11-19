@@ -38,6 +38,7 @@ CUENTAS = [
     "academiabim",         # Chile — ATC Autodesk
     "bimchile",            # Chile
     "bimschool",           # LatAm — el mejor engagement del sector (1.56%)
+    "aecode.ai",           # LatAm — BIM+IA; carrusel «Deja de usar IA en BIM» con 40 comentarios (sep-2026)
     # Referentes y medios
     "bimpure",             # Canadá/EEUU — referente BIM+IA
     "arquitecturayempresa",# España — medio, engagement alto

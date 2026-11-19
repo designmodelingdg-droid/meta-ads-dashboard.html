@@ -1,0 +1,74 @@
+name: Comentarios de Instagram y Facebook (orgánico y anuncios)
+
+# Lee y responde los comentarios de @design_modeling_dg y de la página de
+# Facebook, incluidos los de los anuncios, con META_TOKEN (System User
+# «Design Modeling - Ads CLI»). Nunca imprime el token.
+#
+#   modo=listar     no publica: deja en el log los comentarios de los últimos
+#                   N días que no tienen respuesta nuestra.
+#   modo=responder  publica las respuestas del JSON (comment_id + texto). Antes
+#                   de cada una mira si ya respondimos, así que no duplica.
+#
+# También corre al hacer push de matriz-viral/comentarios/orden.json, con el
+# modo, los días y las respuestas que diga ese archivo.
+
+on:
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: "listar (no publica) o responder"
+        type: choice
+        options: [listar, responder]
+        default: listar
+      dias:
+        description: "Ventana en días"
+        required: false
+        default: "7"
+      respuestas:
+        description: 'Para modo=responder: [{"red":"instagram","comment_id":"...","texto":"..."}]'
+        required: false
+        default: "[]"
+  push:
+    paths:
+      - matriz-viral/comentarios/orden.json
+
+permissions:
+  contents: read
+
+concurrency:
+  group: comentarios-meta
+  cancel-in-progress: false
+
+jobs:
+  comentarios:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Orden
+        id: orden
+        env:
+          EVENTO: ${{ github.event_name }}
+          IN_MODO: ${{ inputs.modo }}
+          IN_DIAS: ${{ inputs.dias }}
+          IN_RESP: ${{ inputs.respuestas }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          if os.environ["EVENTO"] == "push":
+              o = json.load(open("matriz-viral/comentarios/orden.json"))
+              modo, dias, resp = o.get("modo", "listar"), str(o.get("dias", 7)), o.get("respuestas", [])
+          else:
+              modo, dias = os.environ.get("IN_MODO") or "listar", os.environ.get("IN_DIAS") or "7"
+              resp = json.loads(os.environ.get("IN_RESP") or "[]")
+          print("MODO:", modo, "| DÍAS:", dias, "| respuestas:", len(resp))
+          with open(os.environ["GITHUB_ENV"], "a") as f:
+              f.write(f"MODO={modo}\nDIAS={dias}\n")
+          json.dump(resp, open("/tmp/respuestas.json", "w"), ensure_ascii=False)
+          PY
+      - name: Comentarios
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN }}
+        run: |
+          export RESPUESTAS="$(cat /tmp/respuestas.json)"
+          python3 scripts/comentarios_meta.py

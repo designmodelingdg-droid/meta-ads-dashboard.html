@@ -490,3 +490,298 @@ propósito, bien; si no, es un medidor apagado.
 se ven en la UI de Insights. No es un detalle: el ganador de julio sacó 9.103
 de sus 11.193 vistas en Facebook. Sin ese dato, las tres cifras de arriba son
 solo la mitad de Instagram.
+
+## Actualización 2026-10-05 — semana 28 sep – 4 oct · MEMORIA y Facebook se llevan la conversación
+
+Datos de la Graph API (Instagram; de Facebook solo hay comentarios, la API no da sus vistas).
+
+| Fecha | Pieza | Formato | Vistas IG | Coment. IG | Coment. FB | Guardados |
+|---|---|---|---|---|---|---|
+| Jue 1 | Post de MEMORIA («hipótesis que no se declararon») | post | 3.599 | 32 | **192** | 19 |
+| Mar 29 | Reel de MEMORIA («la memoria no vuelve por el cálculo») | reel | 1.853 | **50** | 2 | 5 |
+| Vie 2 | Dato: fórmula para estimar el acero de un presupuesto | post | **3.813** | 10 | — | **91** |
+| Mié 30 | «400 avisos sin leer» | reel | 1.926 | 8 | 7 | 19 |
+| Lun 28 | Tutor IA («la duda de las 11 p.m.») | post | 1.357 | 2 | — | 2 |
+| Mar 29 | «El Máster cambió de estructura» | post | 1.299 | 1 | — | 5 |
+
+Mediana de la semana: 1.890 vistas, 9 comentarios y 12 guardados por pieza. Septiembre (6-27): 2.217 / 13 / 8. Agosto: 3.015 / 3 / 4.
+
+**Lecciones**
+1. **El recurso con palabra sigue siendo el formato ganador.** Las dos piezas de MEMORIA sumaron 82 comentarios en Instagram y 194 en Facebook, y el bot sumó 104 contactos de MEMORIA en 7 días.
+2. **Facebook trajo 6 veces más comentarios que Instagram en el mismo post** (192 contra 32). Facebook es canal propio: el post del recurso se publica cuidado ahí y hay que comprobar que esos comentarios reciben el DM.
+3. **El dato verificable es lo más guardado (91), pero sin palabra no conversa** (10 comentarios). El calendario pedía la varilla Ø12; salió otra fórmula, igual de buena. A cada dato de cálculo hay que ponerle una palabra de recurso al final.
+4. **Anunciar el producto solo no conversa, por segunda semana seguida:** tutor 2 comentarios, Máster 1. El lunes 28 el calendario pedía un carrusel condicionado y salió un post plano.
+
+**Plan contra lo publicado:** salieron las 4 piezas del calendario de la semana 4 (Lun 28, Mar 29, Jue 1, Vie 2), más 2 fuera de calendario (Máster y «400 avisos»). Esta semana el cuello de botella no fue publicar.
+
+**Historias:** el 29-sep (CTA de MEMORIA) tuvo 27 respuestas con 75 % de retención. Los otros días, 0 respuestas: no tenían CTA.
+
+## Actualización 2026-10-12 · semana 5–11 oct: el dato de cálculo gana; anunciar el producto sigue sin conversar
+
+Datos de la Graph API (Instagram). De Facebook solo llegan los comentarios: la API no da sus vistas.
+
+| Fecha | Pieza | Formato | Vistas IG | Coment. IG | Coment. FB | Guardados | Visitas al perfil |
+|---|---|---|---|---|---|---|---|
+| Vie 9 | Dato: «¿Y la deriva, la revisaste?» (CTA ACERO) | post | 2.852 | **10** | — | **19** | 4 |
+| Lun 5 | Tutor IA del Diplomado (CTA DIPLOMADO) | carrusel | **3.230** | 0 | — | 2 | 4 |
+| Jue 8 | «Hola, soy Gabriel» (CTA NIVEL) | carrusel | 2.833 | 2 | 2 | 11 | **14** |
+| Mié 7 | «Una IA no sabe cuándo no sabe» (CTA GUIA) | reel | 491 | 2 | — | 2 | — |
+
+**Medianas por pieza:**
+
+| Periodo | Vistas | Comentarios | Guardados |
+|---|---|---|---|
+| Esta semana | 2.843 | **2** | 7 |
+| Septiembre (7-sep a 4-oct) | 2.224 | 11 | 8 |
+
+Más vistas que septiembre y muchos menos comentarios.
+
+**Lecciones**
+1. **El dato de cálculo verificable con palabra volvió a ganar.** La deriva sacó 10 comentarios y 19 guardados con menos vistas que el carrusel del tutor. Es la misma regla de DM168 y de la fórmula del acero.
+2. **Anunciar el producto no conversa, por tercera semana seguida.** El tutor del Diplomado tuvo la mayor cantidad de vistas (3.230) y 0 comentarios. El CTA pedía DIPLOMADO o DM, y no hay ninguna palabra montada que lo recoja. Desde ya, toda pieza de producto lleva una palabra viva y una pregunta al lector.
+3. **El reel de opinión sobre la IA es el peor formato de la cuenta:** 491 vistas y 2 comentarios. Lo que gana en el nicho es la demo en pantalla con titular fijo arriba («Tres bandas», ver `matriz/EDICION-GANADORA-NICHO.md`), no la frase de opinión.
+4. **La historia del creador presenta, pero no vende.** Trajo 14 visitas al perfil, el máximo de la semana, y solo 4 comentarios entre IG y FB. Funciona como pieza de confianza; no hay que medirla por comentarios.
+
+**Plan contra lo publicado:**
+- De las 5 piezas del feed de la semana 1 salieron 4 (Lun 5, Mié 7, Jue 8 y Vie 9).
+- No salió el reel del sábado 10 (`oct-clase-chatgpt-seguidor-reel`), que estaba EDITADO y listo para publicar. **Esa falta es de publicación, no de producción.**
+
+**Historias:** 15 frames en 4 días con 2 respuestas en total. El jueves 8, día de venta (tutor), tuvo 0 respuestas, con 66 % de retención. La mejor retención fue la del viernes 9 (76 %, 1 respuesta).
+
+**Embudos:**
+- **ACERO no sumó ningún contacto en 7 días**, aunque el post de la deriva que pedía ACERO sacó 10 comentarios. Hay que revisar que el disparador de GHL escuche ese post.
+- NIVEL sumó 1.
+- MEMORIA siguió sola con 24 contactos nuevos.
+
+## Actualización 2026-10-19 · semana 12–18 oct: el gancho que acusa y el recurso con palabra se llevan todo; los reels no conversan
+
+Datos de la Graph API (Instagram). De Facebook solo llegan comentarios y likes: la API no da sus vistas.
+
+| Fecha | Pieza | Formato | Vistas IG | Coment. IG | Guardados | Compartidos | Seguidores nuevos |
+|---|---|---|---|---|---|---|---|
+| Lun 12 | «La IA no te sirve para calcular por ti» (CTA NIVEL) | post | **9.945** | 13 | **144** | **28** | **14** |
+| Jue 15 | COTIZA: «Lo que no está escrito te lo piden gratis» | post | 3.835 | **21** | 45 | 9 | 1 |
+| Vie 16 | «¿A cuántas naves dijiste que no?» (CTA ACERO) | post | 3.933 | 18 | 15 | 0 | 2 |
+| Mié 14 | Reel «me recomendó la opción A» (fuera del calendario) | reel | 1.041 | 0 (4 en FB) | 3 | 0 | — |
+| Jue 15 | Clases grabadas del Diplomado (tutor IA) | post | 946 | 0 | 0 | 0 | 0 |
+| Sáb 17 | Clase real: OneFilter (CTA NIVEL) | reel | 787 | 0 | 2 | 0 | — |
+
+**Medianas por pieza:**
+
+| Periodo | Vistas | Comentarios | Guardados |
+|---|---|---|---|
+| Esta semana (6 piezas) | 2.438 | **6,5** | 9 |
+| Semana anterior (5–11 oct) | 3.405 | 4 | 8,5 |
+| Septiembre | 2.224 | 8,5 | 7 |
+
+Los comentarios se recuperan frente a la semana pasada, pero todos vienen de tres posts. Los dos reels y el post del producto sacaron 0.
+
+**Lecciones**
+1. **La pieza más grande de octubre acusa un hábito y da el trabajo útil de alrededor.** «La IA no te sirve para calcular por ti»: 9.945 vistas, 144 guardados, 28 compartidos y 14 seguidores nuevos. Igual que DM168, se guarda más de lo que se comenta: es contenido de consulta. La palabra NIVEL recogió solo 2 contactos nuevos, así que a los datos de consulta les conviene una palabra de recurso concreto, no el test.
+2. **El recurso gratis con palabra es lo que más conversa.** COTIZA (21 comentarios) y las naves rechazadas con ACERO (18) hicieron 39 de los 52 comentarios de la semana. Es lo mismo que pasó con la deriva (semana pasada) y con MEMORIA (la anterior).
+3. **Los reels no conversan este mes.** Los tres reels de octubre suman 2 comentarios en Instagram (491, 1.041 y 787 vistas). Los que vienen la semana del 26 tienen que salir con la edición ganadora del nicho (demo en pantalla con titular fijo, `matriz/EDICION-GANADORA-NICHO.md`) y cerrar con una pregunta directa más la palabra. El reel de opinión sobre la IA no se repite.
+4. **Anunciar el producto no conversa, cuarta semana seguida.** El post de las clases grabadas del Diplomado: 946 vistas y 0 en todo. Pasa a regla permanente.
+
+**Plan contra lo publicado:**
+- Salieron 5 de las 6 piezas del feed de la semana (Lun 12, Jue 15 ×2, Vie 16, Sáb 17). El post del tutor se corrió del Mié 14 al Jue 15 y compartió día con COTIZA.
+- El testimonio de Acero del Mar 13 no salió; ya está editado y pasa al Vie 23 (cambio del 17-oct).
+- El Mié 14 salió un reel que no estaba en el calendario.
+
+**Historias:** 18 frames en 5 días, 10 respuestas en total. Retención entre 64 % y 71 % (la referencia es 77 %), salvo el jueves 15: 94 %, pero con solo 102 personas de alcance. El primer frame es donde más se van, todos los días (90 salidas el lunes, 137 el viernes): el arranque tiene que enganchar más.
+
+**Embudos (7 días):**
+- ACERO sumó 21 contactos del bot y 21 leads, pero solo 3 accesos (14 %). El disparador ya funciona; la caída sigue en el formulario.
+- COTIZA sumó 1 contacto del bot con 21 comentarios en el carrusel. No hay campaña de COTIZA en OpenReply. Hay que comprobar quién recibió el cotizador.
+- NIVEL sumó 2. MEMORIA y ZAPATA casi en cero: no hubo piezas que los pidieran.
+
+## Actualización 2026-10-26 · semana 19–25 oct: las chuletas se llevan el 81 % de las vistas, y NIVEL se dispara solo
+
+Datos de la Graph API (Instagram). De Facebook llegan comentarios y likes, no vistas.
+
+| Fecha | Pieza | Formato | Vistas IG | Coment. IG | Coment. FB | Guardados | Compartidos |
+|---|---|---|---|---|---|---|---|
+| Mar 20 | «Simbología de niveles» (fuera del calendario) | reel · chuleta sin voz | **67.573** | **331** | **627** | **2.939** | **900** |
+| Lun 19 | «5 tipos de cimentación» (fuera del calendario) | reel · pizarra con voz | 9.314 | 77 | 0 | 320 | 86 |
+| Vie 23 | Testimonio de alumno de Acero | reel | 4.612 | 2 | 0 | 21 | 3 |
+| Mar 20 | Pandeo lateral-torsional (CTA ACERO) | carrusel | 3.464 | 20 | 0 | 12 | 4 |
+| Lun 19 | Ranking «¿en qué fila estás?» (CTA NIVEL) | carrusel | 2.355 | 4 | 0 | 7 | 2 |
+| Jue 22 | «¿Ese certificado sirve fuera de tu país?» (CTA NIVEL) | carrusel | 2.332 | 0 | 0 | 5 | 0 |
+| Mié 21 | «Sabes montar una nave…» (CTA ACERO) | carrusel | 2.066 | 20 | 2 | 4 | 0 |
+| Mié 21 | Carrusel del workshop (fuera del calendario) | carrusel | 1.658 | 3 | 3 | 8 | 1 |
+| Sáb 24 | Clip de clase: «tu add-in no piensa por ti» (CTA GUIA) | reel | 967 | 0 | 0 | 1 | 0 |
+
+**Medianas por pieza:**
+
+| Periodo | Vistas | Comentarios | Guardados |
+|---|---|---|---|
+| Esta semana (9 piezas) | 2.355 | 4 | 8 |
+| 30 días anteriores (25 piezas) | 2.167 | 6 | 8 |
+
+La semana sumó 94.341 vistas. Las dos chuletas hicieron 76.887 (81 %), 408 de los 457 comentarios de Instagram y 3.259 de los 3.317 guardados.
+
+**Lecciones**
+1. **Corrección de la semana pasada: el reel sí conversa cuando es chuleta.** Dijimos «los reels no conversan este mes». Lo que no conversa son los clips de clase, el testimonio y el reel de opinión. Las dos chuletas (lista visual y pizarra con voz) son las piezas con más comentarios del año. Noviembre ya abre la serie Chuleta (4 reels, uno por semana); con este dato se confirma.
+2. **Facebook vuelve a pesar más que Instagram en conversación.** «Simbología de niveles» sacó 627 comentarios en Facebook contra 331 en Instagram. Cada chuleta se publica cuidada en Facebook (regla permanente).
+3. **El bot de NIVEL se está disparando con palabras sueltas.** NIVEL sumó 416 contactos en 7 días (la semana anterior, 2), con solo 26 accesos al test (6 %). Coincide con «Simbología de niveles»: la gente responde «nivel…» a la pregunta del reel. Probablemente esto también llena a los asesores de contactos que no pidieron nada. Hay que limitar el disparador de NIVEL a la palabra exacta y solo en las piezas que la piden.
+4. **Las objeciones de producto no conversan.** El carrusel del certificado: 2.332 vistas y 0 comentarios. Es la misma familia que «anunciar el producto» (regla permanente desde el 19-oct). El dolor técnico con palabra (pandeo, naves) sí conversa: 20 comentarios cada uno.
+5. **El clip de clase de los sábados no conversa, tercera semana seguida** (OneFilter 787 vistas y 0 comentarios; add-in 967 y 0). Pasa a regla permanente: los sábados se usan para la chuleta o se dejan libres.
+
+**Plan contra lo publicado:**
+- Salieron 6 de las 7 piezas del feed de la semana. No salió el post «Perdió el concurso» (Vie 23).
+- Fuera del calendario salieron las dos chuletas (las ganadoras) y el carrusel viejo del workshop.
+
+**Historias:** 15 frames en 6 días, 17 respuestas. Retención entre 76 % y 90 %, por encima de la semana anterior (64-71 %) y en línea con la referencia (77 %). El martes 20 fue el mejor: 608 de alcance y 11 respuestas.
+
+**Embudos (7 días):** ZAPATA 38 contactos del bot y 7 accesos. ACERO 15 contactos y 3 accesos: la caída sigue en el formulario. NIVEL 416 contactos y 26 accesos (ver lección 3).
+
+## Actualización 2026-11-02 · semana 26 oct – 1 nov: semana de objeciones y del puente, la conversación cae a cero
+
+Datos: Graph API (Action «Métricas semanales» del 2-nov), historias y embudos de GHL. Las piezas tienen entre 1 y 7 días: las vistas todavía crecen, pero los comentarios casi siempre llegan en los primeros 2 días.
+
+| Fecha | Pieza | Formato | Vistas | Coment. | Guard. | Comp. |
+|---|---|---|---|---|---|---|
+| Dom 1-nov | «Lo caro no es el curso» (objeción dinero) | post | 3.758 | 2 | 5 | 1 |
+| Jue 30 | Ranking de software estructural | reel | 1.551 | 0 | 17 | 7 |
+| Jue 30 | Halloween / cupón SUSTO | post | 1.393 | 3 | 2 | 1 |
+| Lun 27 | «¿Cuánto cobras por hora a 5 USD el m²?» (COTIZA) | reel | 1.238 | 11 | 7 | 1 |
+| Sáb 31 | «¿La IA te va a reemplazar?» (pizarra con voz IA) | reel | 1.086 | 0 | 5 | 1 |
+| Lun 26 | «No tengo tiempo» (objeción) | reel | 811 | 0 | 0 | 0 |
+| Jue 29 | «Ver tutoriales no es perder el tiempo» (objeción) | reel | 662 | 0 | 1 | 0 |
+| Sáb 31 | Demo del workshop (WORKSHOP) | reel | 640 | 0 | 4 | 0 |
+
+**Medianas por pieza**
+
+| Periodo | Vistas | Comentarios | Guardados |
+|---|---|---|---|
+| Esta semana (8 piezas) | 1.162 | 0 | 4,5 |
+| 4 semanas anteriores (25 piezas) | 2.910 | 6 | 9 |
+
+**Lecciones**
+1. **Cinco de ocho piezas eran objeciones o producto, y ninguna conversó.** Tiempo, tutoriales, «la IA te va a reemplazar» y la demo del workshop tuvieron 0 comentarios. La única pieza con conversación fue la que acusa un hábito concreto («cobras 5 USD por m²»: 11 comentarios, y COTIZA tuvo 9 contactos al bot). Es la regla de siempre. Una semana con casi todo objeción se cae entera, así que conviene mezclar: máximo una objeción por cada dos piezas de dato o acusación.
+2. **La prueba de la pizarra con voz IA no se puede leer todavía.** «¿La IA te va a reemplazar?» sacó 0 comentarios y 5 guardados, frente a 87 y 346 de «5 tipos de cimentación» con el mismo formato. El tema ya había fallado en julio (0 comentarios). La chuleta de cerchas (10-nov), que sale en pizarra, dirá si el problema es el formato o el tema.
+3. **El ranking guarda, como la chuleta.** «Ranking de software estructural» fue lo más guardado (17) y compartido (7). Es otro formato de lista que la gente guarda para después. Encaja con la serie Chuleta.
+4. **La demo del workshop no generó comentarios con WORKSHOP en 2 días.** El 3, el 5 y el 16 vuelven a pedir WORKSHOP, así que hay que mirar los registros por la landing y no solo los comentarios. Si al 9-nov siguen bajos, se refuerza con la pauta de registro.
+5. **El error de la app publicó de golpe lo aprobado (30-oct).** Se archivaron dos posts y «Lo caro no es el curso» salió el 1-nov. Fue la pieza más vista de la semana (3.758 en 1 día), pero solo tuvo 2 comentarios.
+
+**Plan contra lo publicado (feed)**
+- Salieron 6 de las 7 piezas planificadas entre el 26 y el 31. No salió «La IA ordena, tú decides» (27-oct).
+- «Cotiza» salió un día antes (27 en vez de 28) y «Lo caro no es el curso» dos días después (1-nov).
+- Fuera del plan del feed salieron el post de Halloween y «¿La IA te va a reemplazar?» (pieza de la prueba de formatos).
+
+**Historias:** 16 frames en 7 días, 20 respuestas en total y 239 de alcance promedio. El mejor día fue el lunes 27 (11 respuestas en un frame). Sábado y domingo se publicaron 3 frames con 0 respuestas, lo que confirma la regla nueva: sin historias el fin de semana, salvo una promo en un solo frame.
+
+**Embudos (7 días)**
+
+| Embudo | Contactos al bot | Accesos |
+|---|---|---|
+| ZAPATA | 12 | 37 |
+| ACERO | 11 | 21 |
+| MEMORIA | 6 | 24 |
+| COTIZA | 9 | 5 |
+| NIVEL | 224 | 32 |
+
+NIVEL sigue disparándose con palabras sueltas: 224 contactos y solo 32 accesos al test. Esto viene de la lección 3 de la semana pasada y sigue pendiente.
+
+**Ajustes que se aplican**
+- Ningún cambio de formato en el calendario: esta semana ningún formato ganó claro.
+- Noviembre ya cambió por pedido de Dayana: sin historias en feriados ni fines de semana, las 6 uniones el 4-nov y 4 videos de valor de octubre. Eso sube la proporción de dato técnico frente a objeción, que es justo lo que pide la lección 1.
+
+## Actualización 2026-11-09 · semana 2–8 nov: el dato técnico de estructuras vuelve a conversar y el workshop sigue sin hacerlo
+
+Datos: Graph API (Action «Métricas semanales» del 9-nov), historias y embudos de GHL. Las piezas tienen entre 2 y 7 días.
+
+| Fecha | Pieza | Formato | Vistas | Coment. IG | Coment. FB | Guard. | Comp. |
+|---|---|---|---|---|---|---|---|
+| Sáb 7 | «Mismo sismo, 3 cimentaciones» (ZAPATA) | reel | 5.311 | 18 | 4 | 22 | 7 |
+| Mié 4 | 6 uniones viga de acero–columna de hormigón (ACERO) | reel | 2.070 | 8 | 9 | 42 | 8 |
+| Mar 3 | «Le hice 5 preguntas a mi modelo de Revit» (WORKSHOP) | carrusel | 1.873 | 6 | 0 | 2 | 2 |
+| Vie 6 | 40 mm de recubrimiento (ZAPATA) | post | 9.597 | 1 | 0 | 35 | 3 |
+| Lun 2 | «Perdió el concurso antes de presentar» (fuera del plan) | imagen | 3.666 | 0 | 2 | 13 | 0 |
+| Lun 2 | Día de Difuntos: 6 hábitos que el BIM enterró (NIVEL) | carrusel | 2.379 | 0 | 0 | 8 | 0 |
+| Jue 5 | Para quién es el workshop (WORKSHOP) | reel | 628 | 0 | 0 | 2 | 1 |
+
+**Medianas por pieza**
+
+| Periodo | Vistas | Comentarios | Guardados |
+|---|---|---|---|
+| Esta semana (7 piezas) | 2.379 | 1 | 13 |
+| 4 semanas anteriores (27 piezas) | 2.500 | 2 | 7 |
+
+**Lecciones**
+1. **Los dos videos de estructuras se llevaron la conversación.** «Mismo sismo, 3 cimentaciones» (18 comentarios, 4× la mediana de reels) y las 6 uniones (8 comentarios, 42 guardados, 9 comentarios en Facebook) juntan 39 de los 48 comentarios de la semana contando Facebook. Cimentaciones repite lo del 19-oct. El dato técnico de estructuras con una pregunta concreta es lo que conversa; no hace falta producir un formato nuevo para eso.
+2. **El post de 40 mm tuvo el mayor alcance (9.597) pero solo 1 comentario.** Se guarda (35), pero no invita a responder. Un dato suelto necesita una pregunta que acuse un hábito («¿cuánto le pones tú?») para convertir vistas en conversación.
+3. **Las piezas del workshop siguen sin conversar en reel.** «Para quién es» sacó 628 vistas y 0 comentarios, como la demo del 31-oct. El carrusel de las 5 preguntas sí tuvo 6 comentarios. Al workshop le sirve mostrar lo que hace la IA, no explicar el evento. Los registros se miden en la landing y la pauta, no en los comentarios.
+4. **La efeméride no funcionó.** El carrusel de Día de Difuntos quedó por debajo de la mediana de carruseles de octubre (2.379 vistas y 0 comentarios contra 3.047 y 6).
+5. **Se publicó todo lo planificado.** Salieron las 6 piezas del plan del 2 al 7-nov en su día, más 1 imagen fuera del plan. Esta semana el cuello de botella no fue publicar.
+
+**Plan contra lo publicado (feed):** 6 de 6 piezas planificadas, todas en su fecha. Fuera del plan salió «Perdió el concurso antes de presentar» (2-nov).
+
+**Historias:** 11 frames en la semana y 19 respuestas, 17 de ellas en un solo frame del domingo 8 (1.256 de alcance). De lunes a viernes salieron 10 frames con 2 respuestas: los días hábiles casi no conversaron.
+
+**Embudos (7 días, contactos nuevos al bot / accesos nuevos)**
+
+| Embudo | Bot | Accesos |
+|---|---|---|
+| ZAPATA | 15 | 9 |
+| ACERO | 9 | 4 |
+| NIVEL | 92 | 5 |
+| MEMORIA | 0 | 0 |
+| COTIZA | 0 | 1 |
+
+ZAPATA y ACERO suben con las piezas de estructuras de la semana. NIVEL sigue con muchos contactos y pocos accesos al test (92 contra 5): sigue pendiente revisar qué palabras sueltas lo disparan.
+
+**Ajustes que se aplican**
+- Ningún cambio de formato en el calendario: los dos ganadores son videos de valor de octubre que ya estaban dentro de noviembre.
+- A la chuleta visual le falta una segunda pieza con 7 días para decidir. Las 6 uniones entran en la revisión del 30-nov junto a la chuleta de perfiles.
+- Para el workshop, de aquí al 17 conviene reforzar con piezas que muestren la IA respondiendo, al estilo del carrusel de las 5 preguntas, y no con reels que expliquen el evento.
+
+## Actualización 2026-11-16 · semana 9–15 nov: la zapata se lleva toda la conversación y el resto de la semana queda en cero
+
+Datos: Graph API (Action «Métricas semanales» del 16-nov), historias y embudos de GHL. Las piezas tienen entre 3 y 7 días.
+
+| Fecha | Pieza | Formato | Vistas | Coment. IG | Coment. FB | Guard. | Comp. |
+|---|---|---|---|---|---|---|---|
+| Mié 11 | «La misma zapata no se comporta igual en arcilla, arena, limo…» (ZAPATA) | reel | 3.555 | 69 | 2 | 52 | 17 |
+| Lun 9 | «Perú ya exige BIM» (NIVEL) | carrusel | 3.534 | 0 | — | 11 | 2 |
+| Jue 12 | Día Mundial de la Calidad: checklist del modelo (NIVEL) | imagen | 2.442 | 0 | — | 16 | 4 |
+| Vie 13 | ¿Máster completo o por bloques? (NIVEL) | imagen | 1.327 | 0 | — | 1 | 0 |
+| Vie 13 | Combo: especialización + diplomado por $50 (COMBO) | imagen | 1.148 | 0 | — | 0 | 0 |
+| Mar 10 | Chuleta 2 · tipos de cercha (ACERO) | reel | 1.139 | 0 | — | 13 | 4 |
+
+**Medianas por pieza**
+
+| Periodo | Vistas | Comentarios | Guardados |
+|---|---|---|---|
+| Esta semana (6 piezas) | 1.885 | 0 | 12 |
+| 4 semanas anteriores (30 piezas) | 2.472 | 2 | 8,5 |
+
+**Lecciones**
+1. **El video de cimentaciones con ZAPATA es el único que conversó.** 69 de los 69 comentarios de la semana en Instagram, 52 guardados y 37 contactos nuevos al bot de ZAPATA en 7 días. Es la segunda semana seguida en que cimentaciones + palabra de recurso gana (el 9-nov fue «Mismo sismo, 3 cimentaciones»). Si la del 23-nov repite, pasa a regla permanente.
+2. **Los tres posts que pedían NIVEL sacaron 0 comentarios en Instagram.** Aun así el bot de NIVEL sumó 85 contactos en 7 días con 14 accesos al test. Esos contactos no vinieron de las piezas de la semana: siguen entrando por «Simbología de niveles», que dispara NIVEL con cualquier respuesta que diga «nivel» (recomendación #28, sigue abierta).
+3. **Explicar el producto en el feed sigue sin conversar.** El combo de $50 y el Máster por bloques sacaron 0 comentarios y 4 y 1 me gusta. Ya es regla: la oferta se mueve por pauta, historias y DM; en el feed solo entra pegada a un dato útil.
+4. **La chuleta de lista no conversa.** La de cerchas abrió con «Tipos de cercha para naves industriales 👇», sin acusar un error ni pedir criterio, y quedó en 0 comentarios. Las chuletas que conversaron en octubre traían un error o una decisión.
+5. **La efeméride falla por segunda vez.** El checklist del Día de la Calidad (0 comentarios) repite lo del Día de Difuntos (2-nov).
+
+**Plan contra lo publicado (feed):** salieron 6 de las 7 piezas planificadas.
+- El reel de Gabriel «el error que más veo» (Sáb 14) no salió porque estaba POR GRABAR: fue falta de producción, no de publicación.
+- El combo se planificó para el lun 9 y salió el vie 13.
+- El checklist de la calidad se planificó como carrusel de 9 láminas y salió como una sola imagen.
+
+**Historias:** 16 frames entre el lunes y el viernes, con un alcance mediano de 123 y 2 respuestas en total. Es la semana más floja en historias desde septiembre.
+
+**Embudos (7 días, contactos nuevos al bot / accesos nuevos)**
+
+| Embudo | Bot | Accesos |
+|---|---|---|
+| ZAPATA | 37 | 6 |
+| NIVEL | 85 | 14 |
+| ACERO | 6 | 2 |
+| MEMORIA | 1 | 2 |
+| COTIZA | 0 | 0 |
+
+ZAPATA trae la gente: 37 contactos nuevos al bot contra 6 accesos nuevos a la calculadora. El conteo de 7 días solo mira contactos creados en la semana, así que no es una tasa comparable con el 71 % de octubre (que medía a todos los que la pidieron). Sirve como alerta para probar la entrega, no como conclusión.
+
+**Ajustes que se aplican**
+- No cambia el formato del calendario: el video ganador ya tiene su par en el calendario (`nov-valor-grava-zapata-reel`, jue 26).
+- Las chuletas que quedan (LOD el 17, uniones el 24 y perfiles el 30) abren con un gancho que acuse un error o pida criterio («¿Sigues usando la misma cercha para todo?»), no con «Tipos de…».
+- El reel de Gabriel pendiente se graba junto con «no compres por el descuento» (25-nov). Si no se graba esta semana, pasa al banco de reserva.

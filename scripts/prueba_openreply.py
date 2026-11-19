@@ -126,7 +126,7 @@ comprobar("ausente: MEMORIA no existe en ninguna campaña de OpenReply",
 comprobar("y NO se afirma que el comentario se quede sin respuesta",
           "GoHighLevel" in por["MEMORIA"]["lectura"],
           "los disparadores de la matriz viven en GHL, que esto no ve")
-comprobar("se listan las seis palabras de la matriz", len(filas) == 6)
+comprobar("se listan las siete palabras de la matriz (las seis + COTIZA)", len(filas) == 7)
 comprobar("las de OpenReply que la matriz no declara salen aparte CON sus números",
           [f["palabra"] for f in otras] == ["BIM", "IA"]
           and all("dms_enviados" in f for f in otras),

@@ -1,0 +1,207 @@
+#!/usr/bin/env python3
+"""Revisa que la matriz de un mes cumpla las reglas antes de pasarla al equipo.
+
+    python3 scripts/verificar_matriz_mes.py --mes 2026-10
+
+Lee matriz-viral/matriz/calendario-<mes>.json, guiones-completos.json e
+historico-2026.json. Imprime cada regla con OK / FALLA / AVISO y sale con
+código 1 si alguna FALLA. No arregla nada: dice qué pieza y por qué.
+
+Reglas (de COMPRADORES-VS-NO.md, HISTORICO-JUL-SEP.md y la casa):
+  · todo id del calendario, de la pauta y de banco_reserva existe en guiones;
+  · slides / historias / guion_reel son listas (la app de Daniela lo exige);
+  · feed 40/40/20 de formato y 50/20/30 de intención (±10 puntos);
+  · ninguna pieza de OBRA en el feed;
+  · a lo sumo una venta por semana en historias;
+  · ningún id ya usado y ningún gancho casi igual a uno ya usado;
+  · las palabras de comentario están en la lista viva;
+  · anuncios: primera línea ≤ 125 caracteres, «WhatsApp» solo con botón de WhatsApp;
+  · el Máster nunca lleva precio; ACERO $225 solo en pauta y correo.
+"""
+import argparse
+import json
+import pathlib
+import re
+import sys
+from collections import Counter
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from historico_matriz import ya_usado  # noqa: E402
+
+M = pathlib.Path("matriz-viral/matriz")
+MESES = {"10": "octubre", "11": "noviembre", "12": "diciembre", "09": "septiembre"}
+PALABRAS_VIVAS = {"NIVEL", "ACERO", "ZAPATA", "MEMORIA", "COTIZA", "DIPLOMADO", "BIM", "IA",
+                  "GUIA", "WORKSHOP", "TEMARIO", "BLACK", "COMBO"}  # GUIA: OpenReply, campaña «Guía Revit» (reel del Mié 7, cambio del 5-oct) · WORKSHOP: GHL, se monta antes del 19-oct (checklist)
+PRECIO_MASTER = re.compile(r"2[.,]?699|\$\s?499|\$\s?500\b|\$\s?160\b|12 cuotas", re.I)
+
+resultado = {"FALLA": 0, "AVISO": 0}
+
+
+def informe(estado, regla, detalle=""):
+    if estado in resultado:
+        resultado[estado] += 1
+    print(f"[{estado:5}] {regla}" + (f"\n        {detalle}" if detalle else ""))
+
+
+def texto(p):
+    return json.dumps(p, ensure_ascii=False)
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--mes", required=True, help="AAAA-MM, p. ej. 2026-10")
+    a = ap.parse_args()
+    nombre = MESES.get(a.mes[5:7])
+    cal = json.load(open(M / f"calendario-{nombre}.json", encoding="utf-8"))
+    G = {p["id"]: p for p in json.load(open(M / "guiones-completos.json", encoding="utf-8"))["piezas"]}
+    hist = json.load(open(M / "historico-2026.json", encoding="utf-8"))
+
+    grupos = {g["n"]: [e for e in g["calendario"] if e.get("id")] for g in cal["grupos"]}
+    ads = [x["id"] for c in cal.get("publicidad", {}).get("campanas", []) for x in c["piezas"]]
+    ids = [e["id"] for es in grupos.values() for e in es] + ads + list(cal.get("banco_reserva", []))
+    ids += [c["id"] for c in cal.get("correos", []) if c.get("id")]
+
+    faltan = sorted({i for i in ids if i not in G})
+    informe("FALLA" if faltan else "OK", "Todo id existe en guiones-completos.json", ", ".join(faltan))
+
+    # La app de contenido sincroniza también los paquetes del mes (lanzamiento-*,
+    # angulos-*, carruseles-*, leadmagnet-*), no solo el calendario. El 6-oct se
+    # movieron piezas en el calendario y no en los paquetes, y el 14-oct la app
+    # mostró esas piezas duplicadas y con la fecha vieja.
+    fecha_cal = {}
+
+    def _fechas(o, destino):
+        if isinstance(o, dict):
+            if o.get("id") and o.get("fecha_iso"):
+                destino.setdefault(o["id"], set()).add(o["fecha_iso"])
+            for v in o.values():
+                _fechas(v, destino)
+        elif isinstance(o, list):
+            for v in o:
+                _fechas(v, destino)
+
+    _fechas(cal, fecha_cal)
+    desfasadas = []
+    for pq in sorted(M.glob(f"*-{nombre}.json")):
+        if pq.name.startswith("calendario-"):
+            continue
+        en_pq = {}
+        _fechas(json.load(open(pq, encoding="utf-8")), en_pq)
+        desfasadas += [f"{i} ({pq.name}: {', '.join(sorted(f))} · calendario: {', '.join(sorted(fecha_cal[i]))})"
+                       for i, f in en_pq.items() if i in fecha_cal and f - fecha_cal[i]]
+    informe("FALLA" if desfasadas else "OK", "Las fechas de los paquetes del mes coinciden con el calendario",
+            "; ".join(desfasadas))
+
+    malas = [p["id"] for p in G.values() for k in ("slides", "historias", "guion_reel") if k in p and not isinstance(p[k], list)]
+    informe("FALLA" if malas else "OK", "slides / historias / guion_reel son listas", ", ".join(malas))
+
+    fuera = [e["id"] for e in cal["grupos"][0]["calendario"] if e.get("fuera_de_cuota")]
+    if fuera:
+        informe("AVISO", f"{len(fuera)} pieza(s) del feed fuera de cuota (no cuentan en el reparto)", ", ".join(fuera))
+    feed = [e for e in cal["grupos"][0]["calendario"] if not e.get("fuera_de_cuota")]
+    n = len(feed)
+    fmt = Counter("reel" if "REEL" in (e.get("formato_publicacion") or "").upper() else
+                  "carrusel" if "CARRUSEL" in (e.get("formato_publicacion") or "").upper() else "post" for e in feed)
+    pct = {k: round(100 * v / n) for k, v in fmt.items()}
+    ok = abs(pct.get("reel", 0) - 40) <= 10 and abs(pct.get("carrusel", 0) - 40) <= 10 and abs(pct.get("post", 0) - 20) <= 10
+    informe("OK" if ok else "FALLA", f"Feed 40/40/20 de formato ({n} piezas)", str(pct))
+
+    inten = Counter("objeción/testimonio" if e.get("intencion") in ("objeción", "testimonio") else e.get("intencion") for e in feed)
+    pi = {k: round(100 * v / n) for k, v in inten.items()}
+    ok = abs(pi.get("problema", 0) - 50) <= 10 and abs(pi.get("solución", 0) - 20) <= 10 and abs(pi.get("objeción/testimonio", 0) - 30) <= 10
+    informe("OK" if ok else "FALLA", "Feed 50/20/30 de intención", str(pi))
+
+    obra = [e["id"] for e in feed if "OBRA" in str(G.get(e["id"], {}).get("eje", "")).upper()]
+    informe("FALLA" if obra else "OK", "Cero piezas de OBRA en el feed", ", ".join(obra))
+
+    ventas = Counter()
+    for e in grupos.get(5, []):
+        p = G.get(e["id"], {})
+        if p.get("venta") or "VENTA" in str(p.get("tipo", "")).upper():
+            ventas[e.get("semana")] += 1
+    # Hasta octubre: una venta por semana (jueves). 23-oct (Dayana): más venta en
+    # historias; el calendario fija su tope con «ventas_por_semana_max».
+    tope = int(cal.get("ventas_por_semana_max", 1))
+    exceso = {k: v for k, v in ventas.items() if v > tope}
+    informe("FALLA" if exceso else ("OK" if ventas else "AVISO"),
+            f"A lo sumo {tope} venta(s) por semana en historias", str(dict(ventas)) if ventas else "No hay historias marcadas como venta.")
+
+    usados = set(hist["usados_ids"])
+    rep = [i for i in ids if i in usados]
+    informe("FALLA" if rep else "OK", "Ningún id ya usado en julio–septiembre", ", ".join(rep))
+    parecidos = [e["id"] for e in feed if ya_usado(G.get(e["id"], {}).get("hook", ""), hist)]
+    informe("AVISO" if parecidos else "OK", "Ningún gancho del feed casi igual a uno ya usado", ", ".join(parecidos))
+
+    malas_pal = []
+    for i in set(ids):
+        p = G.get(i, {})
+        for v in (p.get("cta") or {}).values() if isinstance(p.get("cta"), dict) else []:
+            for w in re.findall(r"(?:[Cc]omenta|con)\s+«?([A-ZÁÉÍÓÚ]{2,})", str(v)):
+                if w not in PALABRAS_VIVAS:
+                    malas_pal.append(f"{i}: {w}")
+    informe("FALLA" if malas_pal else "OK", "Palabras de comentario en la lista viva", "; ".join(sorted(set(malas_pal))))
+
+    # Las piezas de venta no piden una palabra de lead magnet (30-oct, Dayana): «Respóndeme
+    # ACERO» en la historia de venta del 5-nov mandaba la guía gratis de verificación en
+    # vez de la información del curso. Venta = TEMARIO / MÁSTER / NAVES / ofertas.
+    PALABRAS_LEAD_MAGNET = {"ACERO", "NIVEL", "ZAPATA", "MEMORIA", "COTIZA", "DYNAMO", "GUIA", "TUTOR", "TUTORIAL", "RUTA"}
+    venta_lm = []
+    for gr in cal.get("grupos", []):
+        for e in gr.get("calendario", []):
+            p = G.get(e.get("id"), {})
+            if e.get("tipo") != "venta" and not str(p.get("estructura_historia", "")).startswith("venta"):
+                continue
+            t_venta = json.dumps({k: p.get(k) for k in ("cta", "cta_por_red", "historias", "caption")}, ensure_ascii=False)
+            for w in re.findall(r"(?:[Rr]esp[oó]ndeme|[Cc]omenta|[Ee]scr[ií]beme)\s+«?([A-ZÁÉÍÓÚ]{2,})", t_venta):
+                if w in PALABRAS_LEAD_MAGNET:
+                    venta_lm.append(f"{e.get('id')}: {w}")
+    informe("FALLA" if venta_lm else "OK", "Las piezas de venta no piden palabras de lead magnet", "; ".join(sorted(set(venta_lm))))
+
+    # Una palabra, una automatización (auditoría de septiembre: MEMORIA y DYNAMO
+    # escuchadas a la vez por OpenReply y GHL, 34 DM fallidos).
+    orp = json.load(open("matriz-viral/fuentes/openreply/campanas.json", encoding="utf-8")) if pathlib.Path("matriz-viral/fuentes/openreply/campanas.json").exists() else {}
+    en_or = {p for c in orp.get("campanas", []) if c.get("activa") for p in c.get("palabras", [])}
+    en_ghl = {p for p, w in ((orp.get("workflows_ghl") or {}).get("por_palabra") or {}).items() if w.get("publicados")}
+    pedidas = set()
+    for i in set(ids):
+        for v in (G.get(i, {}).get("cta") or {}).values() if isinstance(G.get(i, {}).get("cta"), dict) else []:
+            pedidas |= set(re.findall(r"(?:[Cc]omenta|con)\s+«?([A-ZÁÉÍÓÚ]{2,})", str(v)))
+    dobles = sorted(p for p in pedidas if p in en_or and p in en_ghl)
+    informe("AVISO" if dobles else "OK", "Cada palabra que pide el mes la contesta UNA sola automatización (OpenReply o GHL)",
+            ("Montadas en las dos: " + ", ".join(dobles) + ". Dejar una antes de publicar.") if dobles else "")
+
+    largas, wa = [], []
+    for i in ads:
+        p = G.get(i, {})
+        primera = str(p.get("texto_principal", "")).split("\n")[0]
+        if len(primera) > 125:
+            largas.append(f"{i} ({len(primera)})")
+        if "whatsapp" in str(p.get("texto_principal", "")).lower() and not re.search(r"whatsapp|mensaje", str(p.get("boton", "")), re.I):
+            wa.append(i)
+    informe("FALLA" if largas else "OK", "Anuncios: primera línea ≤ 125 caracteres", ", ".join(largas))
+    informe("FALLA" if wa else "OK", "Anuncios: «WhatsApp» en el texto solo con botón de WhatsApp", ", ".join(wa))
+
+    pm, acero = [], []
+    for i in set(ids):
+        p = G.get(i, {})
+        t = texto({k: v for k, v in p.items() if k not in ("condicion", "notas_produccion", "por_que", "que_medir")})
+        # 3-nov: el diplomado se anuncia a «$̶5̶0̶0̶ $50», así que el precio del Máster se busca
+        # en las frases que hablan del Máster, no en toda la pieza.
+        frases = re.split(r"[\n.·•|]", t)
+        if G.get(i, {}).get("precio_master_autorizado"):
+            frases = []  # excepción decidida por Dayana y anotada en la pieza (Black Friday, 3-nov)
+        if any(PRECIO_MASTER.search(f) for f in frases if re.search(r"m[áa]ster", f, re.I)) or \
+                ("Máster" in str(G.get(i, {}).get("producto", "")) and not G.get(i, {}).get("precio_master_autorizado") and PRECIO_MASTER.search(t)):
+            pm.append(i)
+        if re.search(r"\$\s?225|225\s?(USD|dólares)", t) and p.get("formato") not in ("anuncio", "correo") \
+                and not G.get(i, {}).get("precio_master_autorizado"):  # pieza de Black Friday con precios (Dayana, 4-nov)
+            acero.append(i)
+    informe("FALLA" if pm else "OK", "El Máster nunca lleva precio", ", ".join(sorted(pm)))
+    informe("FALLA" if acero else "OK", "ACERO $225 solo en pauta y correo", ", ".join(sorted(acero)))
+
+    print(f"\n{resultado['FALLA']} fallas · {resultado['AVISO']} avisos")
+    sys.exit(1 if resultado["FALLA"] else 0)
+
+
+if __name__ == "__main__":
+    main()

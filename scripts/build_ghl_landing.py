@@ -37,6 +37,11 @@ DOMINIO = "https://funnel.dgdesignmodeling.com"
 # «test-nivel-bim/gracias». Inventar la URL rompe la página que hoy funciona.
 # Carpeta que no esté aquí conserva sus enlaces a GitHub Pages, que existen.
 FUNNEL_POR_CARPETA = {
+    # Slugs acordados el 30-sep-2026 en cotizador-honorarios/GUIA-MONTAJE.md:
+    # las páginas se crean en GHL con EXACTAMENTE estos nombres.
+    "cotizador-honorarios": {
+        "gracias-agenda.html": f"{DOMINIO}/acceso-gratis-cotizador-honorarios-gracias",
+    },
     "test-nivel-bim": {
         "gracias-agenda.html": f"{DOMINIO}/acceso-gratis-test-nivel-bim-gracias",
         "app.html": f"{DOMINIO}/test-nivel-bim/test",

@@ -1,0 +1,43 @@
+name: Permisos del token de Meta (solo lectura)
+
+# Dice qué permisos tiene META_TOKEN (System User «Design Modeling - Ads CLI»)
+# y si puede publicar en Instagram (historias incluidas). No publica nada y
+# nunca imprime el token: solo la lista de permisos y una consulta de lectura.
+on:
+  workflow_dispatch: {}
+  push:
+    paths:
+      - .github/workflows/permisos-meta.yml
+
+permissions:
+  contents: read
+
+jobs:
+  permisos:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Permisos y prueba de publicación (lectura)
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN }}
+          IG_ID: "17841404048578200"
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.request, urllib.parse
+          T = os.environ["META_TOKEN"]; IG = os.environ["IG_ID"]
+          def get(path, **q):
+              q["access_token"] = T
+              url = f"https://graph.facebook.com/v21.0/{path}?" + urllib.parse.urlencode(q)
+              try:
+                  return json.load(urllib.request.urlopen(url, timeout=30))
+              except urllib.error.HTTPError as e:
+                  return {"error": json.loads(e.read() or b"{}").get("error", {}).get("message", str(e))}
+          d = get("debug_token", input_token=T).get("data", {})
+          print("Tipo:", d.get("type"), "| válido:", d.get("is_valid"), "| expira:", d.get("expires_at"))
+          print("Permisos:", ", ".join(sorted(d.get("scopes", []))))
+          for g in d.get("granular_scopes", []):
+              print("  ", g.get("scope"), "→", len(g.get("target_ids", [])), "cuentas")
+          r = get(f"{IG}/content_publishing_limit", fields="config,quota_usage")
+          print("Instagram content_publishing_limit:", json.dumps(r, ensure_ascii=False)[:300])
+          r = get(IG, fields="username,name")
+          print("Cuenta IG:", json.dumps(r, ensure_ascii=False)[:200])
+          PY

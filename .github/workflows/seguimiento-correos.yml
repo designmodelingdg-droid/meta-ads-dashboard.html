@@ -1,0 +1,41 @@
+name: Seguimiento por correo de los lead magnets (GHL)
+
+# Solo lee GHL: cuenta los correos que de verdad recibieron los contactos más
+# recientes de cada lead magnet. Corre al cambiar el script (desde cualquier
+# rama) o a mano. Guarda cuentas y asuntos, sin datos personales.
+
+on:
+  push:
+    paths:
+      - scripts/seguimiento_correos_lm.py
+      - .github/workflows/seguimiento-correos.yml
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: seguimiento-correos-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  revisar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Contar los correos de seguimiento
+        env:
+          GHL_TOKEN: ${{ secrets.GHL_TOKEN }}
+        run: python3 scripts/seguimiento_correos_lm.py --muestra 20
+      - name: Commit si cambió
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add matriz-viral/fuentes/ghl/seguimiento-correos-lm.json
+          git diff --staged --quiet && echo "Nada nuevo." && exit 0
+          git commit -m "Seguimiento por correo de los lead magnets (lectura de GHL)"
+          for i in 1 2 3; do git pull --rebase -q && git push && exit 0; sleep 5; done
+          exit 1

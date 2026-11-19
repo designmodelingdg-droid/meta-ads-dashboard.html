@@ -158,7 +158,7 @@
     <div class="n">SCRIPT 01</div>
     <h2>Auditoría de advertencias → CSV<span class="lee solo">SOLO LEE</span></h2>
     <h3>Qué hace</h3><p>Saca todas las advertencias del modelo a un CSV con su texto, su gravedad y los ID de los elementos que las causan.</p>
-    <h3>Por qué está en el pack</h3><p>El cuadro de advertencias de Revit no se puede ordenar, ni filtrar, ni pasarle a nadie. En CSV sí. Y un modelo con 400 avisos sin leer no es un modelo grande: es un presupuesto con 400 sorpresas dentro.</p>
+    <h3>Por qué está en el pack</h3><p>El cuadro de advertencias de Revit las agrupa por tipo, pero no te deja ordenarlas por gravedad ni filtrarlas. Revit sí las exporta, en un HTML que hay que limpiar antes de trabajar con él. En CSV salen listas: una fila por advertencia, con su gravedad y los ID, para ordenar, filtrar y mandar a quien modeló. Y un modelo con 400 avisos sin leer no es un modelo grande: es un presupuesto con 400 sorpresas dentro.</p>
     <h3>Lo que conviene saber antes de correrlo</h3><p>El CSV sale en UTF-8 con BOM. Sin el BOM, Excel en Windows abre los acentos rotos y parece que el script falló.</p>
   </section>
 

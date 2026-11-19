@@ -8,15 +8,15 @@ es su **dato**, igual que se trae el de Stripe, PayPal o Meta Ads.
 
 ## Por qué
 
-La matriz lleva seis palabras activas —ZAPATA, ACERO, NIVEL, CHATGPT, MEMORIA,
-DYNAMO— y el estado de cada una es **una casilla que alguien tiene que acordarse
+La matriz lleva siete palabras activas —ZAPATA, ACERO, NIVEL, CHATGPT, MEMORIA,
+DYNAMO y, desde el 30-sep, COTIZA (Cotizador de Honorarios)— y el estado de cada una es **una casilla que alguien tiene que acordarse
 de marcar**. «Montar el disparador CHATGPT en GHL» lleva semanas sin marcar y
 nadie sabe si está puesto o no.
 
 OpenReply sí lo sabe: es quien recibe el comentario y decide si casa. Conectado,
 «el disparador está montado» deja de ser una casilla y pasa a ser un hecho
 medido — y aparece además lo que la casilla nunca iba a decir: **cuál de las
-seis palabras convierte**.
+siete palabras convierte**.
 
 El cruce distingue cuatro estados, y los cuatro se leen distinto:
 

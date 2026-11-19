@@ -128,7 +128,7 @@ tocan el modelo. Los otros dos avisan antes de escribir.
 
 ### El momento «wow»
 El script 01 corriendo: el cuadro de advertencias de Revit —que no se puede
-ordenar ni filtrar ni pasarle a nadie— convertido en un CSV ordenable con 400
+ordenar por gravedad ni filtrar, y cuya exportación nativa es un HTML que hay que limpiar— convertido en un CSV ordenable con 400
 filas. **La frase que va encima:** «un modelo con 400 avisos sin leer no es un
 modelo grande, es un presupuesto con 400 sorpresas dentro».
 

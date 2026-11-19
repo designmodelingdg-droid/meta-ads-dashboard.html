@@ -307,6 +307,22 @@ Cosas que ya costaron una corrida. No repetirlas:
 
 ## 12. La matriz mensual, de principio a fin
 
+> **Desde octubre de 2026 el mes se arma con el método de la sección 0b de
+> `matriz-mensual`**:
+> - histórico jul–sep (`historico-2026.json`), con métricas reales de Instagram
+>   por Meta Graph API y referentes por Apify;
+> - quién compra y quién no (`COMPRADORES-VS-NO.md`);
+> - feed 40/40/20 de formato y 50/20/30 de intención (problema, solución y
+>   objeciones o testimonios);
+> - los cinco grupos G1–G5, correos y pauta;
+> - como máximo un lead magnet nuevo al mes;
+> - `verificar_matriz_mes.py` con 0 fallas;
+> - `build_matriz_mes.py`, que saca el artefacto y el JSON COMPLETO para la app,
+>   más el Word.
+>
+> Lo que sigue es el sistema de base.
+
+
 Cuando Dayana pide «la matriz del mes» o «qué publico en septiembre», el skill
 es **`matriz-mensual`**. Estas son las cinco piezas encadenadas, que conviene
 tener claras aunque el skill haga el trabajo:

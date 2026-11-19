@@ -32,9 +32,23 @@ estado: 🔴 pendiente · 🟡 en curso · 🟢 hecho · ⚫ descartada (con el 
 | 13 | **ACERO es solo el 20 % de las historias** (3 de 15) siendo el producto de mejor CPL. Subir a 6 | Auditoría historias 14-ago | Dayana | 🔴 |
 | 14 | **Decidir si ACERO abre cohorte este mes** y con cuántos cupos reales. Sin ese dato, la secuencia de cuenta regresiva no se publica | Auditoría historias 14-ago | Dayana | 🔴 |
 | 15 | ~~Los workflows CHATGPT y DYNAMO de GHL nunca dispararon~~ · **Resuelto, y la alarma era falsa en parte:** los recursos salen por **OpenReply**. CHATGPT se entrega con TUTORIAL (42) y GUIA; DYNAMO tiene campaña desde el 23-sep 16:27 UTC. Se concluyó con datos de OpenReply de dos días atrás: desde hoy se leen cada 4 h | Embudo 23-sep | — | 🟢 |
-| 17 | **Decidir si la campaña MEMORIA DE CÁLCULO de OpenReply se reactiva.** Está pausada ahí mientras su workflow de GHL sigue publicado: el comentario se contesta, pero sin DM ni medición por OpenReply | Revisión 21-sep | Dayana | 🔴 |
+| 17 | ~~Decidir si la campaña MEMORIA DE CÁLCULO de OpenReply se reactiva~~ · **Descartada:** el 30-sep se decidió «una palabra, una automatización» y MEMORIA vive en GHL | Revisión 21-sep | — | ⚫ |
 | 18 | **Las 13 personas que respondieron DYNAMO a la historia del 22-sep no recibieron nada automático:** la campaña PACK DYNAMO se creó 19 h después. Mandarles el pack a mano desde el buzón de Instagram. Desde ahora PACK DYNAMO dispara también por DM, así que las respuestas a historia ya quedan cubiertas | Historias 23-sep | Dayana / quien atienda el buzón | 🔴 |
 | 19 | **El carrusel del Jue 24 pide COMENTA DYNAMO y PACK DYNAMO solo escucha el reel** (`matchAnyPost` apagado, atada a `/reel/Ddm_IPUCh-C/`). En cuanto se publique el carrusel, añadirlo a la campaña o activar «cualquier publicación»; si no, sus comentarios no reciben nada | Campañas 23-sep | quien monte OpenReply | 🔴 |
+| 20 | **Ponerle palabra de recurso a cada dato de cálculo.** El de la fórmula del acero (2-oct) fue lo más guardado de la semana (91) y solo sacó 10 comentarios | Revisión 5-oct | Contenido | 🔴 |
+| 21 | **Comprobar que los comentarios de Facebook reciben el DM.** El post de MEMORIA del 1-oct sacó 192 comentarios en FB (6 veces Instagram). Si el workflow de GHL solo escucha Instagram, esa gente se queda sin el recurso | Revisión 5-oct | Patricio / Dayana | 🔴 |
+| 22 | **Conectar el seguimiento por correo de MEMORIA.** Entraron 104 contactos en 7 días y después del acceso no reciben nada | Revisión 5-oct | Ester | 🔴 |
+| 23 | ~~El embudo ACERO no sumaba a nadie~~ · **Resuelto:** en la semana del 12 al 18 sumó 21 contactos del bot y 21 leads (el post de las naves pidió ACERO y sacó 18 comentarios). Lo que queda es el formulario: solo 3 accesos (14 %), ya en el checklist de octubre | Revisión 12-oct → 19-oct | — | 🟢 |
+| 24 | **Publicar el reel del sábado 10 (`oct-clase-chatgpt-seguidor-reel`)**, que está editado y no salió. Si ya no cabe, pasarlo al banco de reserva | Revisión 12-oct | Contenido | 🔴 |
+| 25 | **Las piezas de producto llevan palabra viva y pregunta.** El carrusel del tutor del Diplomado pedía DIPLOMADO o DM, palabra que no está montada, y quedó en 0 comentarios con 3.230 vistas | Revisión 12-oct | Contenido | 🔴 |
+| 26 | **Comprobar que los 21 comentarios COTIZA del carrusel del Jue 15 recibieron el cotizador.** COTIZA no tiene campaña en OpenReply y GHL solo sumó 1 contacto del bot en 7 días. Crear la campaña de Instagram en OpenReply (la arma Dayana) y mandar el enlace a mano a quienes comentaron sin respuesta | Revisión 19-oct | Dayana | 🔴 |
+| 27 | **Los reels de valor de la semana del 26 salen con la edición ganadora del nicho** (demo en pantalla con titular fijo, `matriz/EDICION-GANADORA-NICHO.md`) y cierran con pregunta directa + palabra. Los tres reels de octubre suman 2 comentarios en Instagram | Revisión 19-oct | Gabriel / Daniela | 🔴 |
+| 28 | **Limitar el disparador de NIVEL a la palabra exacta y solo en las piezas que la piden.** Sumó 416 contactos en 7 días (la semana anterior, 2) con 26 accesos al test (6 %). Coincide con «Simbología de niveles»: quien responde «nivel…» al reel recibe el bot y entra como lead del Máster | Revisión 26-oct | Ester / Patricio | 🔴 |
+| 29 | **El post «Perdió el concurso» (Vie 23) no salió.** Pasarlo al banco de reserva o a un hueco de noviembre que no choque con el workshop | Revisión 26-oct | Daniela | 🔴 |
+| 30 | **Cada chuleta se publica cuidada también en Facebook.** «Simbología de niveles» sacó 627 comentarios en FB contra 331 en IG | Revisión 26-oct | Daniela | 🔴 |
+| 31 | **Las chuletas que quedan (17, 24 y 30-nov) abren acusando un error o pidiendo criterio**, no con «Tipos de…». La de cerchas (10-nov) sacó 0 comentarios con 1.139 vistas | Revisión 16-nov | Daniela / Patricio | 🔴 |
+| 32 | **Probar la entrega de ZAPATA con una cuenta ajena:** 37 contactos nuevos al bot en 7 días y 6 accesos nuevos a la calculadora. Es una alerta, no una tasa: el conteo solo mira contactos creados en la semana | Revisión 16-nov | Ester | 🔴 |
+| 33 | **Grabar el reel de Gabriel «el error que más veo» (planificado el sáb 14)** junto con el del 25-nov; si no se graba esta semana, pasa al banco de reserva | Revisión 16-nov | Gabriel / Daniela | 🔴 |
 | 16 | **Tres piezas del calendario siguen sin salir:** `pauta-guia` (Mar 8, reel), `lm-revit-chatgpt-feed` (Jue 10, carrusel) y `reel-advertencias` (Vie 18, reel). El del Jue 10 no necesita cámara | Revisión 21-sep | Contenido | 🔴 |
 
 ---
@@ -56,6 +70,8 @@ Estas ya no se discuten cada semana. Salieron de medir.
 | **Lo institucional va a historias, no a feed** | «Somos el equipo detrás»: 2.164 views, 7 likes, 0 guardados |
 | **Las piezas de evento no llevan CTA de producto** y se miden por alcance, no por comentarios | Civil 3D: 5.469 views, 0 comentarios, 0 guardados. Es presencia |
 | **Facebook es canal propio, no espejo.** Cada pieza fuerte se publica cuidada en FB | 9.103 de las 11.193 views del ganador vinieron de Facebook |
+| **Anunciar el producto, solo, no conversa.** Toda pieza de producto lleva una palabra viva y una pregunta al lector | 3 semanas seguidas. 21-sep y 28-sep: tutor 2 comentarios, Máster 1. 5-oct: tutor del Diplomado 3.230 vistas y 0 comentarios. 12-oct: post de las clases grabadas del Diplomado, 946 vistas y 0 en todo. En las mismas semanas, los datos de cálculo con palabra hicieron 10 (deriva) y los recursos MEMORIA 82 |
+| 🆕 **El clip de clase de los sábados no conversa.** Los sábados van para la chuleta o se dejan libres | 3 semanas seguidas. 10-oct: clips de 936 a 1.177 vistas con 0 a 2 comentarios. 17-oct: OneFilter 787 y 0. 24-oct: add-in 967 y 0 |
 
 ### Pauta
 
@@ -83,6 +99,29 @@ Estas ya no se discuten cada semana. Salieron de medir.
 ---
 
 ## Historial
+
+### 16-nov-2026 · Revisión semanal (9–15 nov)
+
+**Una sola pieza conversó:** el video de cimentaciones con ZAPATA (Mié 11) sacó 69 comentarios, 52 guardados y 37 contactos al bot; las otras 5 piezas quedaron en 0 comentarios (mediana 1.885 vistas, 0 comentarios y 12 guardados, contra 2.472 / 2 / 8,5 de las 4 semanas anteriores). Los 3 posts con NIVEL sacaron 0 comentarios en IG; los 85 contactos nuevos de NIVEL siguen entrando por «Simbología de niveles» (#28). La promo estática (combo de $50 y Máster por bloques) no conversa, y la efeméride falla por segunda vez. Salieron 6 de 7 piezas: el reel de Gabriel no se grabó. ZAPATA: 37 contactos nuevos al bot y 6 accesos nuevos; conviene probar la entrega. → recomendaciones #31, #32 y #33.
+
+### 26-oct-2026 · Revisión semanal (19–25 oct)
+
+**Las chuletas se llevan la semana:** «Simbología de niveles» (Mar 20) hizo 67.573 vistas, 331 comentarios en IG y **627 en Facebook**, 2.939 guardados y 900 compartidos; «5 tipos de cimentación» (Lun 19) 9.314 y 77. Juntas son el 81 % de las vistas y 408 de los 457 comentarios de IG. **Corrige la lección del 19-oct:** el reel sí conversa cuando es chuleta; lo que no conversa es el clip de clase (tercera semana → regla permanente), el testimonio (4.612 vistas, 2 comentarios) y la objeción del certificado (0). **NIVEL se dispara solo:** 416 contactos en 7 días con 6 % de acceso al test. Salieron 6 de 7 piezas del calendario; falta «Perdió el concurso». → recomendaciones #28, #29 y #30.
+
+### 19-oct-2026 · Revisión semanal (12–18 oct)
+
+**La pieza más grande de octubre:** «La IA no te sirve para calcular por ti» (Lun 12) con 9.945 vistas, 144 guardados, 28 compartidos y 14 seguidores nuevos: gancho que acusa un hábito + el trabajo útil de alrededor. **Los recursos con palabra se llevaron la conversación:** COTIZA (21 comentarios) y las naves con ACERO (18) suman 39 de los 52 comentarios. **Los reels no conversan:** el de OneFilter y uno fuera del calendario, 0 comentarios cada uno. El post del producto (clases grabadas) volvió a 0, cuarta semana. Mediana: 2.438 vistas, 6,5 comentarios y 9 guardados (septiembre: 2.224 / 8,5 / 7). Salieron 5 de 6 piezas; el testimonio pasa al Vie 23. ACERO ya suma contactos (21 en 7 días) pero solo 3 accesos. → recomendaciones #23 (🟢), #26 y #27.
+
+### 12-oct-2026 · Revisión semanal (5–11 oct)
+
+**El dato de cálculo con palabra volvió a ganar.** La deriva (Vie 9) sacó 10 comentarios y 19 guardados. **Anunciar el producto no conversa por tercera semana seguida:** el tutor del Diplomado tuvo 3.230 vistas y 0 comentarios, y su CTA pedía una palabra que no está montada. El peor fue el reel de opinión sobre la IA (491 vistas). Mediana de la semana: 2.843 vistas, 2 comentarios y 7 guardados, contra 2.224 / 11 / 8 de septiembre. Salieron 4 de las 5 piezas; el reel del sábado estaba editado y no se publicó. → recomendaciones #23, #24 y #25.
+
+### 5-oct-2026 · Revisión semanal (28 sep – 4 oct)
+
+**MEMORIA y Facebook se llevan la conversación.** Las dos piezas del recurso sumaron 82 comentarios en Instagram y **194 en Facebook**; el post del 1-oct tuvo 192 comentarios en FB contra 32 en IG. El bot sumó 104 contactos de MEMORIA en 7 días. Salieron las 4 piezas del calendario de la semana, así que esta vez el cuello de botella no fue publicar.
+
+**Lo que no funcionó:** los dos anuncios de producto (tutor y Máster) quedaron en 2 y 1 comentarios, por segunda semana seguida. El dato de cálculo de la fórmula del acero fue lo más guardado (91), pero sin palabra solo hizo 10 comentarios. → recomendaciones #20, #21 y #22.
+
 
 ### 23-sep-2026 · Historias por API, y dos bots que nunca dispararon
 

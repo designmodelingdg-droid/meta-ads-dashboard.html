@@ -53,6 +53,7 @@ CRITICOS = {
     "https://funnel.dgdesignmodeling.com/acceso-gratis-calculadora-zapatas-form": "palabra ZAPATA",
     "https://designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero":
         "palabra ACERO",
+    "https://funnel.dgdesignmodeling.com/acceso-gratis-cotizador-honorarios-form": "palabra COTIZA",
 }
 
 # Los respaldos en GitHub Pages: si el destino principal cae, estos siguen
@@ -62,6 +63,8 @@ RESPALDOS = {
         "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/test-nivel-bim/",
     "https://funnel.dgdesignmodeling.com/acceso-gratis-calculadora-zapatas-form":
         "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/calculadora-zapatas/",
+    "https://funnel.dgdesignmodeling.com/acceso-gratis-cotizador-honorarios-form":
+        "https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/cotizador-honorarios/",
 }
 
 DOMINIOS = ("funnel.dgdesignmodeling.com", "designmodelingacademy.com",

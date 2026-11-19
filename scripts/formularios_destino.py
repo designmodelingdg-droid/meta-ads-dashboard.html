@@ -32,6 +32,7 @@ LANDINGS = [
     "acceso-gratis-verificacion-acero-form",
     "acceso-gratis-calculadora-zapatas-form",
     "acceso-gratis-test-nivel-bim-form",
+    "acceso-gratis-cotizador-honorarios-form",
     "acceso-gratis-curso-introductorio-bim-form",
     "acceso-gratis-modulo-diplomado-bim-form",
     "descarga-gratis-ebook-bim-form",

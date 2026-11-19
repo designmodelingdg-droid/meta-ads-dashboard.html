@@ -1,7 +1,7 @@
 {
- "generado": "2026-09-25T16:18Z",
- "ventana_7d_desde": "2026-09-18T16:18:49Z",
- "tocados_desde": "2026-09-18T16:18:49Z",
+ "generado": "2026-11-19T13:05Z",
+ "ventana_7d_desde": "2026-11-12T13:05:38Z",
+ "tocados_desde": "2026-11-12T13:05:38Z",
  "nota": "Solo cuentas, ningún dato personal. «tocados_desde» es una cota: GHL no guarda cuándo se puso cada etiqueta.",
  "embudos": {
   "DYNAMO": {
@@ -9,21 +9,21 @@
    "etapas": {
     "bot": {
      "etiqueta": "origen-bot-dynamo",
-     "total": 5,
-     "nuevos_7d": 2,
-     "tocados_desde": 5
+     "total": 19,
+     "nuevos_7d": 0,
+     "tocados_desde": 2
     },
     "lead": {
      "etiqueta": "lead-dynamo",
-     "total": 5,
-     "nuevos_7d": 2,
-     "tocados_desde": 5
+     "total": 16,
+     "nuevos_7d": 0,
+     "tocados_desde": 0
     },
     "acceso": {
      "etiqueta": "acceso-script-dynamo",
-     "total": 4,
-     "nuevos_7d": 2,
-     "tocados_desde": 4
+     "total": 8,
+     "nuevos_7d": 0,
+     "tocados_desde": 1
     }
    }
   },
@@ -32,7 +32,7 @@
    "etapas": {
     "bot": {
      "etiqueta": "origen-bot-chatgpt",
-     "total": 0,
+     "total": 1,
      "nuevos_7d": 0,
      "tocados_desde": 0
     },
@@ -44,9 +44,9 @@
     },
     "acceso": {
      "etiqueta": "acceso-guia-revitchatgpt",
-     "total": 11,
-     "nuevos_7d": 1,
-     "tocados_desde": 3
+     "total": 12,
+     "nuevos_7d": 0,
+     "tocados_desde": 0
     }
    }
   },
@@ -55,20 +55,20 @@
    "etapas": {
     "bot": {
      "etiqueta": "origen-bot-memoria",
-     "total": 12,
-     "nuevos_7d": 6,
-     "tocados_desde": 11
+     "total": 189,
+     "nuevos_7d": 0,
+     "tocados_desde": 6
     },
     "lead": {
      "etiqueta": "lead-memoria",
-     "total": 12,
-     "nuevos_7d": 6,
-     "tocados_desde": 11
+     "total": 175,
+     "nuevos_7d": 0,
+     "tocados_desde": 4
     },
     "acceso": {
      "etiqueta": "acceso-memoria-calculo",
-     "total": 13,
-     "nuevos_7d": 1,
+     "total": 109,
+     "nuevos_7d": 0,
      "tocados_desde": 8
     }
    }
@@ -78,21 +78,44 @@
    "etapas": {
     "bot": {
      "etiqueta": "origen-bot-zapata",
-     "total": 168,
-     "nuevos_7d": 2,
-     "tocados_desde": 8
+     "total": 303,
+     "nuevos_7d": 25,
+     "tocados_desde": 38
     },
     "lead": {
      "etiqueta": "lead-calculadora-zapatas",
-     "total": 164,
-     "nuevos_7d": 2,
-     "tocados_desde": 5
+     "total": 279,
+     "nuevos_7d": 24,
+     "tocados_desde": 37
     },
     "acceso": {
-     "etiqueta": "guia-zapata",
-     "total": 0,
-     "nuevos_7d": 0,
-     "tocados_desde": 0
+     "etiqueta": "acceso-calculadora",
+     "total": 184,
+     "nuevos_7d": 5,
+     "tocados_desde": 24
+    }
+   }
+  },
+  "ACERO": {
+   "recurso": "5 verificaciones en acero",
+   "etapas": {
+    "bot": {
+     "etiqueta": "origen-bot-acero",
+     "total": 263,
+     "nuevos_7d": 8,
+     "tocados_desde": 11
+    },
+    "lead": {
+     "etiqueta": "lead-acero-verificaciones",
+     "total": 242,
+     "nuevos_7d": 8,
+     "tocados_desde": 9
+    },
+    "acceso": {
+     "etiqueta": "acceso-verificacion",
+     "total": 78,
+     "nuevos_7d": 1,
+     "tocados_desde": 9
     }
    }
   },
@@ -101,21 +124,44 @@
    "etapas": {
     "bot": {
      "etiqueta": "origen-bot-nivel",
-     "total": 2,
-     "nuevos_7d": 1,
-     "tocados_desde": 2
+     "total": 880,
+     "nuevos_7d": 74,
+     "tocados_desde": 86
     },
     "lead": {
      "etiqueta": "lead-test-nivel",
-     "total": 1,
+     "total": 863,
+     "nuevos_7d": 74,
+     "tocados_desde": 82
+    },
+    "acceso": {
+     "etiqueta": "acceso-nivelbim",
+     "total": 101,
+     "nuevos_7d": 12,
+     "tocados_desde": 46
+    }
+   }
+  },
+  "COTIZA": {
+   "recurso": "Cotizador de Honorarios Estructurales",
+   "etapas": {
+    "bot": {
+     "etiqueta": "origen-bot-cotiza",
+     "total": 17,
      "nuevos_7d": 0,
      "tocados_desde": 1
     },
-    "acceso": {
-     "etiqueta": "acceso-test-nivel",
-     "total": 0,
+    "lead": {
+     "etiqueta": "lead-cotizador",
+     "total": 25,
      "nuevos_7d": 0,
-     "tocados_desde": 0
+     "tocados_desde": 3
+    },
+    "acceso": {
+     "etiqueta": "acceso-cotizador-honorarios",
+     "total": 18,
+     "nuevos_7d": 0,
+     "tocados_desde": 3
     }
    }
   }
