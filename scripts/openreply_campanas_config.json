@@ -1,0 +1,85 @@
+{
+  "_comentario": "Una palabra, una automatización. Cuando sale un post cuyo caption pide comentar una de estas palabras, scripts/openreply_auto_campanas.py le crea la campaña en OpenReply con esta configuración. 'variantes' son formas mal escritas que también disparan. Los botones y respuestas tienen máximo 20 caracteres.",
+  "instagramAccountId": "cmtxlizf4000004jwnkhcfwjy",
+  "respuestas_publicas": [
+    "¡Te lo mandé por DM! 📩 Revisa tus mensajes.",
+    "Listo 🙌 Ya está en tu bandeja.",
+    "Te escribí por privado con el acceso ✅",
+    "¡Ahí va! Mira tus DM 📩",
+    "Enviado 📨 Si no lo ves, revisa solicitudes de mensajes."
+  ],
+  "reprompt": "Veo que aún no me sigues 👀 Sígueme y vuelve aquí, toma dos segundos.",
+  "boton_seguir": "Ya te sigo ✅",
+  "palabras": {
+    "NIVEL": {
+      "variantes": ["NIBEL"],
+      "recurso": "Test de Nivel BIM",
+      "enlace": "https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form",
+      "boton": "Hacer el test",
+      "dm": "¡Hola {username}! 👋 Aquí está tu acceso al Test de Nivel BIM GRATIS. Llena el siguiente formulario en menos de 2 minutos y obtén tu recurso gratuito ahora 🎁 {link}",
+      "seguir": "¡Hola {username}! 👋 Antes de mandarte el Test de Nivel BIM, sígueme en @design_modeling_dg. Toca el botón cuando ya me sigas y te lo envío al instante.",
+      "pregunta": "Mientras haces el test, cuéntame: ¿hoy trabajas con BIM en tu empresa, o lo estás aprendiendo por tu cuenta? 🏗️",
+      "respuestas": ["Trabajo con BIM", "Lo estoy aprendiendo"]
+    },
+    "ACERO": {
+      "variantes": ["ASERO"],
+      "recurso": "Guía de las 5 verificaciones en acero",
+      "enlace": "https://funnel.dgdesignmodeling.com/acceso-gratis-verificacion-acero-form",
+      "boton": "Descargar la guía",
+      "dm": "¡Hola {username}! 👋 Aquí tienes la guía gratis de las 5 verificaciones en acero, con la herramienta para revisarlas en tu propio proyecto. Toca el botón y descárgala 🎁 {link}",
+      "seguir": "¡Hola {username}! 👋 Antes de mandarte la guía de las 5 verificaciones en acero, sígueme en @design_modeling_dg. Toca el botón cuando ya me sigas y te la envío al instante.",
+      "pregunta": "Cuéntame: ¿ya diseñas estructuras de acero en tu trabajo, o te estás formando en eso? 🏗️",
+      "respuestas": ["Ya diseño en acero", "Me estoy formando"]
+    },
+    "ZAPATA": {
+      "variantes": ["ZAPATAS", "SAPATA"],
+      "recurso": "Calculadora de zapatas aisladas",
+      "enlace": "https://funnel.dgdesignmodeling.com/acceso-gratis-calculadora-zapatas-form",
+      "boton": "Abrir calculadora",
+      "dm": "¡Hola {username}! 👋 Aquí tienes la Calculadora de Zapatas Aisladas gratis: dimensiona y verifica tu zapata en minutos, con las comprobaciones que pide la norma. Toca el botón y entra 🎁 {link}",
+      "seguir": "¡Hola {username}! 👋 Antes de mandarte la calculadora de zapatas, sígueme en @design_modeling_dg. Toca el botón cuando ya me sigas y te la envío al instante.",
+      "pregunta": "Cuéntame: ¿ya calculas cimentaciones en tu trabajo, o te estás formando en eso? 🏗️",
+      "respuestas": ["Ya calculo", "Me estoy formando"]
+    },
+    "MEMORIA": {
+      "variantes": [],
+      "recurso": "Memoria de cálculo",
+      "enlace": "https://funnel.dgdesignmodeling.com/acceso-gratis-memoria-calculo-form",
+      "boton": "Descargar Memoria",
+      "dm": "¡Listo {username}! 🙌 Gracias por seguirme. Aquí tienes la estructura completa de la memoria de cálculo con la plantilla en Word: las 12 secciones en el orden real y los 6 errores por los que una memoria vuelve a tu escritorio. Toca el botón y descárgala. {link}",
+      "seguir": "¡Hola {username}! 👋 Antes de mandarte la plantilla de memoria de cálculo, sígueme en @design_modeling_dg. Toca el botón cuando ya me sigas y te la envío al instante.",
+      "pregunta": "¿Ya calculas estructuras en tu trabajo, o te estás formando en eso? 🏗️",
+      "respuestas": ["Ya calculo", "Me estoy formando"]
+    },
+    "GUIA": {
+      "variantes": [],
+      "recurso": "Guía Revit + ChatGPT",
+      "enlace": "https://funnel.dgdesignmodeling.com/acceso-gratis-guia-revit-chatgpt-form",
+      "boton": "Descargar la guía",
+      "dm": "¡Listo {username}! 🙌 Gracias por seguirme. Aquí tienes la Guía Revit + IA: los 10 errores de Revit que más tiempo hacen perder, con el prompt exacto para resolver cada uno. Toca el botón y descárgala. {link}",
+      "seguir": "¡Hola {username}! 👋 Antes de mandarte la guía, sígueme en @design_modeling_dg. Toca el botón cuando ya me sigas y te la envío al instante.",
+      "pregunta": "¿La pediste para agilizar los proyectos que ya haces, o para dar el salto a un cargo como BIM Manager? 🚀",
+      "respuestas": ["Agilizar proyectos", "Saltar a BIM Manager"]
+    },
+    "DYNAMO": {
+      "variantes": ["DINAMO"],
+      "recurso": "Pack de scripts de Dynamo",
+      "enlace": "https://funnel.dgdesignmodeling.com/acceso-gratis-script-dynamo-form",
+      "boton": "Descargar el pack",
+      "dm": "¡Listo {username}! 🙌 Gracias por seguirme. Aquí tienes el pack de 5 scripts de Dynamo, con el código comentado para que puedas cambiarlo, no solo ejecutarlo. Toca el botón y descárgalo. {link}",
+      "seguir": "¡Hola {username}! 👋 Antes de mandarte el pack de scripts de Dynamo, sígueme en @design_modeling_dg. Toca el botón cuando ya me sigas y te lo envío al instante.",
+      "pregunta": "¿Ya usas Dynamo en tus proyectos, o este sería tu primer script? ⚙️",
+      "respuestas": ["Ya uso Dynamo", "Sería el primero"]
+    },
+    "RUTA": {
+      "variantes": [],
+      "recurso": "Test de Nivel BIM",
+      "enlace": "https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form",
+      "boton": "Hacer el test",
+      "dm": "¡Listo {username}! 🙌 Gracias por seguirme. Para decirte cuál es tu puerta necesito saber en qué etapa estás, y eso lo resuelve el Test de Nivel BIM: 3 minutos, gratis. Toca el botón y hazlo ahora. {link}",
+      "seguir": "¡Hola {username}! 👋 Antes de decirte cuál es tu puerta, sígueme en @design_modeling_dg. Toca el botón cuando ya me sigas y te mando el test de nivel al instante.",
+      "pregunta": "Mientras haces el test, cuéntame: ¿hoy trabajas con BIM en tu empresa, o lo estás aprendiendo por tu cuenta? 🚪",
+      "respuestas": ["Trabajo con BIM", "Lo estoy aprendiendo"]
+    }
+  }
+}
