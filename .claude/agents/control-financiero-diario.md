@@ -72,7 +72,7 @@ Mira siempre los últimos 4 días; el índice único evita duplicar.
 
 ### 2. PayPal
 
-- Lista las transacciones de los últimos 4 días. Por cada una que no exista (`origen='paypal' and origen_ref=<id>`): cobro recibido → ingreso R047 en la cuenta PayPal; comisión → egreso R037 con origen_ref «<id>:fee»; pagos a Meta/Facebook → egreso R034 empresarial; otros pagos → egreso R052 con el nombre del destinatario en el concepto.
+- Lista las transacciones de los últimos 4 días. Por cada una que no exista (`origen='paypal' and origen_ref=<id>`, y además ningún movimiento de la cuenta PayPal cuya `referencia` contenga ese id: los que se anotaron a mano lo llevan ahí como «PayPal <id>»): cobro recibido → ingreso R047 en la cuenta PayPal; comisión → egreso R037 con origen_ref «<id>:fee»; pagos a Meta/Facebook → egreso R034 empresarial; otros pagos → egreso R052 con el nombre del destinatario en el concepto.
 - Compara el saldo real con `dg.saldo_al` de PayPal.
 
 ### 3. Grupo de WhatsApp «Administración - DM» (GoHighLevel)
@@ -92,7 +92,7 @@ Conector de GoHighLevel, operación `get-messages`, conversationId `34FdtMXaUAH4
 
 Los tres buzones mandan sus avisos y la app los anota sola. Revisa `dg.ingesta_entradas` de los últimos 4 días:
 
-- Entradas tipo `aviso` en estado `pendiente` con nota «no se pudo leer» o «sin cuenta de origen»: lee su `texto`. Si el movimiento queda claro (cuenta por últimos 4 dígitos, monto, fecha), comprueba que no exista y anótalo con origen `asistente` y origen_ref «ingesta:<id de la entrada>»; luego marca la entrada: estado `confirmado`, destino «movimiento:<id>» y una nota que diga que lo anotó el agente diario. Si ya existía, solo enlázala.
+- Entradas tipo `aviso` en estado `pendiente` con nota «no se pudo leer» o «sin cuenta de origen»: lee su `texto`. Si el movimiento queda claro (cuenta por últimos 4 dígitos, monto, fecha), comprueba que no exista y anótalo con origen `asistente` y origen_ref «ingesta:<id de la entrada>»; luego marca la entrada: estado `confirmado`, destino «movimiento:<id>» y una nota que diga que lo anotó el agente diario. Si ya existía, solo enlázala. Si el aviso no mueve dinero (pago rechazado por falta de fondos, publicidad del banco, recordatorio de pago), márcalo como descartado con una nota que diga por qué; nunca lo borres.
 - Si un buzón lleva más de 2 días sin ninguna entrada nueva, dilo en el informe (puede haberse caído el envío desde Gmail).
 - Cuenta cuántas facturas y estados de cuenta siguen pendientes de revisar; solo el número, no los proceses.
 
@@ -143,7 +143,8 @@ Al clasificar, deja el concepto como «<qué es> — <texto original sin "(por c
 | Arianny (Ariadne) Pantoja Linares | Diseñó una página web: servicio pagado | R039 empresarial |
 | Yarahis Ruocco | Préstamo que hizo Dayana ($500.85, 14/10); lo devuelve en enero | Salida R045 personal; al cobrar, R049 |
 | Paul Iturralde, Ruth Granda | Pagos de Gabriel, sin más detalle | R010 personal, responsable Gabriel |
-| Ángel Amaguaya, Iván Pincay, Gabriela Romero, Nicole Vivanco, Flor Galarza, Víctor Perugachi, Miguel Vera, Anderson Bautista | Alumnos: sus transferencias son cobros | R046 empresarial |
+| Ángel Amaguaya, Iván Pincay, Gabriela Romero, Nicole Vivanco, Víctor Perugachi, Miguel Vera, Anderson Bautista | Alumnos: sus transferencias son cobros | R046 empresarial |
+| Flor Galarza | No es la alumna: paga por Edisson Chávez (Especialización en Acero + Tutor IA, cliente de Ester) | R046 empresarial, a nombre de Edisson Chávez |
 | «TRIBUTO» (restaurante) | Almuerzo de negocios | R040 empresarial |
 | Nicole Recalde Salazar | Psicóloga de Dayana ($30 por sesión) | R011 personal |
 | Joselyn Castillo Vasco, Dubreixy Luna Palomino, Marilyn Cedeño Level | Gente que trabajó para Dayana y se le paga | R039 empresarial (si devuelven algo: R049) |
