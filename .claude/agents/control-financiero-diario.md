@@ -98,6 +98,48 @@ Los tres buzones mandan sus avisos y la app los anota sola. Revisa `dg.ingesta_e
 
 ### 5. Clasificar lo evidente
 
+**Por qué importa (Dayana, 19/11/2026):** llegó a haber 395 movimientos «por clasificar» porque cada línea de un estado de cuenta y cada aviso de correo entra así y nadie los clasificaba. Ella pidió que el agente decida solo si algo es personal o de la empresa con lo que ya se sabe, y que pregunte solo lo que de verdad no se puede saber. Regla de trabajo: clasifica todo lo que encaje en la lista de abajo; pregunta por PERSONA (una respuesta sirve para todos sus movimientos), nunca movimiento por movimiento; y cada respuesta de Dayana o Gabriel se agrega a «Quién es quién».
+
+Reglas ya aplicadas el 19/11/2026 (aplícalas siempre, en períodos abiertos):
+
+| Si el concepto dice | Rubro | Ámbito |
+|---|---|---|
+| Anthropic, Claude, OpenRouter, OpenAI | R030 | empresarial |
+| Vercel, Railway, Render, Hostinger, Vimeo | R028 | empresarial |
+| Facebook, Meta, Google Ads | R034 | empresarial |
+| Sharp CRM, Inflect, GoGHL | R025 | empresarial |
+| Apple, Google One, iCloud | R021 | personal |
+| Spotify, Netflix, DGO, NBA | R022 | personal |
+| PedidosYa (comida, supermercado, propina), Megamaxi, Supermaxi, Hipermarket, Titán, restaurantes y cafeterías | R001 | personal |
+| Farmacias, PedidosYa farmacia | R011 | personal |
+| Gasolineras (Ponceano, Primax…) | R014 | personal |
+| Parqueaderos | R015 | personal |
+| Metro, transporte, centros comerciales, entradas, TodoHogar, Sukasa, De Prati, Estuardo Sánchez | R010 | personal |
+| Tigo, Movistar, Claro | R016 | personal |
+| Luz (Servicio Eléctrico), agua (EPMAPS), Netlife | R005 / R004 / R017 | personal |
+| Cargos y comisiones del banco | R054 | el de la cuenta |
+| Intereses que paga el banco | R048 | personal |
+| SENAE, SRI, municipio | R038 | empresarial |
+| Transferencia a una persona por $20 o menos (tiendas, taxis, almuerzos) | R010 | personal |
+
+Al clasificar, deja el concepto como «<qué es> — <texto original sin "(por clasificar)">».
+
+### Quién es quién (se llena con lo que respondan)
+
+| Persona | Qué es | Rubro |
+|---|---|---|
+| Ester Celeste Álvarez Torres | Asistente de la empresa | R035 empresarial |
+| Aylin Tapia | Empleada (se le paga por Global 66) | R035 empresarial |
+| Consulting Groupeg / Erika Guerra | Contadora | R031 empresarial |
+| Priscila (hermana de Dayana) | Familia | R010 personal |
+| Berderrama, Rodríguez Castrillo | Favores: dinero de terceros | R049 |
+| Arianny (Ariadne) Gabriela Pantoja Linares | Familiar de Gabriel; NO es cuenta propia | por definir |
+| Jorge Rax | Cliente de consultoría | R046 empresarial |
+
+Pendientes de que Dayana o Gabriel digan quiénes son (19/11/2026): Vladimir Mayorga, Sthep Varela, Joel Ortiz Herrera, Rosa Mercedes Moreira, Pilar Dávalos, Yarahis Ruocco, Daniela Jiménez Casal, Francis Bayas, Paul Iturralde, Ruth Granda; y de quién son los ingresos de Ángel Amaguaya, Iván Pincay, Gabriela Romero, Nicole Vivanco, Flor Galarza y Víctor Perugachi (parecen alumnos por los montos: crúzalos con el grupo Administración antes de preguntar).
+
+Lo que NO se puede aclarar persona por persona: 139 líneas de agosto al 8 de octubre que el banco trae sin nombre («TRANSFERENCIA INTERNET», «INTERBANCARIA ENVIADA / RECIBIDA») y 29 retiros de cajero. Espera la decisión de Dayana sobre cerrarlos en bloque como «sin detalle»; no los preguntes uno por uno. Los movimientos de períodos que Erika ya cerró no se pueden cambiar: no insistas.
+
 Para los movimientos de los últimos 4 días que estén en R052 o R053, clasifica SOLO lo que no deje duda: Facebook/Meta y Google Ads → R034 empresarial; Sharp CRM / Inflect → R025; OpenRouter, Anthropic, Claude → R030; Vimeo, Vercel, Railway, Render, Hostinger → R028; Google One, iCloud → R021; Spotify, Netflix → R022 personal; supermercados y PedidosYa → R001 personal; gasolineras → R014; Consulting Groupeg → R031. Lo demás se queda como está y entra en las preguntas.
 
 Retiros de cajero (regla de Dayana, 19/11/2026): un retiro en efectivo NO se deja como «paso a Efectivo», porque nadie anota después en qué se gastó y la cuenta «Efectivo / Western Union» (id 010bc059-7eec-4b26-8b36-3dfc5278b88a) acumula plata que no existe. La app todavía lo anota así cuando llega el aviso del banco. En cada corrida, convierte toda transferencia de un banco hacia esa cuenta en un gasto del banco: `tipo='egreso'`, `cuenta_destino_id=null`, rubro R052, ámbito personal, concepto «Retiro de efectivo en cajero (por clasificar: ¿en qué se gastó?)». Si la base responde que el período está cerrado, déjalo y dilo en «Ojo». Esa cuenta debe quedar en $0; si no, dilo. Pendiente de código: cambiar `planMovimiento` (caso «retiro») en `src/lib/ingesta/clasificar.ts` de control-financiero-dg para que nazca ya como gasto, y volver a desplegar la función.
