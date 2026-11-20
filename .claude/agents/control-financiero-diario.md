@@ -72,7 +72,7 @@ Mira siempre los últimos 4 días; el índice único evita duplicar.
 
 ### 2. PayPal
 
-- Lista las transacciones de los últimos 4 días. Por cada una que no exista (`origen='paypal' and origen_ref=<id>`): cobro recibido → ingreso R047 en la cuenta PayPal; comisión → egreso R037 con origen_ref «<id>:fee»; pagos a Meta/Facebook → egreso R034 empresarial; otros pagos → egreso R052 con el nombre del destinatario en el concepto.
+- Lista las transacciones de los últimos 4 días. Por cada una que no exista (`origen='paypal' and origen_ref=<id>`, y además ningún movimiento de la cuenta PayPal cuya `referencia` contenga ese id: los que se anotaron a mano lo llevan ahí como «PayPal <id>»): cobro recibido → ingreso R047 en la cuenta PayPal; comisión → egreso R037 con origen_ref «<id>:fee»; pagos a Meta/Facebook → egreso R034 empresarial; otros pagos → egreso R052 con el nombre del destinatario en el concepto.
 - Compara el saldo real con `dg.saldo_al` de PayPal.
 
 ### 3. Grupo de WhatsApp «Administración - DM» (GoHighLevel)
@@ -92,7 +92,7 @@ Conector de GoHighLevel, operación `get-messages`, conversationId `34FdtMXaUAH4
 
 Los tres buzones mandan sus avisos y la app los anota sola. Revisa `dg.ingesta_entradas` de los últimos 4 días:
 
-- Entradas tipo `aviso` en estado `pendiente` con nota «no se pudo leer» o «sin cuenta de origen»: lee su `texto`. Si el movimiento queda claro (cuenta por últimos 4 dígitos, monto, fecha), comprueba que no exista y anótalo con origen `asistente` y origen_ref «ingesta:<id de la entrada>»; luego marca la entrada: estado `confirmado`, destino «movimiento:<id>» y una nota que diga que lo anotó el agente diario. Si ya existía, solo enlázala.
+- Entradas tipo `aviso` en estado `pendiente` con nota «no se pudo leer» o «sin cuenta de origen»: lee su `texto`. Si el movimiento queda claro (cuenta por últimos 4 dígitos, monto, fecha), comprueba que no exista y anótalo con origen `asistente` y origen_ref «ingesta:<id de la entrada>»; luego marca la entrada: estado `confirmado`, destino «movimiento:<id>» y una nota que diga que lo anotó el agente diario. Si ya existía, solo enlázala. Si el aviso no mueve dinero (pago rechazado por falta de fondos, publicidad del banco, recordatorio de pago), márcalo como descartado con una nota que diga por qué; nunca lo borres.
 - Si un buzón lleva más de 2 días sin ninguna entrada nueva, dilo en el informe (puede haberse caído el envío desde Gmail).
 - Cuenta cuántas facturas y estados de cuenta siguen pendientes de revisar; solo el número, no los proceses.
 
@@ -143,7 +143,8 @@ Al clasificar, deja el concepto como «<qué es> — <texto original sin "(por c
 | Arianny (Ariadne) Pantoja Linares | Diseñó una página web: servicio pagado | R039 empresarial |
 | Yarahis Ruocco | Préstamo que hizo Dayana ($500.85, 14/10); lo devuelve en enero | Salida R045 personal; al cobrar, R049 |
 | Paul Iturralde, Ruth Granda | Pagos de Gabriel, sin más detalle | R010 personal, responsable Gabriel |
-| Ángel Amaguaya, Iván Pincay, Gabriela Romero, Nicole Vivanco, Flor Galarza, Víctor Perugachi, Miguel Vera, Anderson Bautista | Alumnos: sus transferencias son cobros | R046 empresarial |
+| Ángel Amaguaya, Iván Pincay, Gabriela Romero, Nicole Vivanco, Víctor Perugachi, Miguel Vera, Anderson Bautista | Alumnos: sus transferencias son cobros | R046 empresarial |
+| Flor Galarza | No es la alumna: paga por Edisson Chávez (Especialización en Acero + Tutor IA, cliente de Ester) | R046 empresarial, a nombre de Edisson Chávez |
 | «TRIBUTO» (restaurante) | Almuerzo de negocios | R040 empresarial |
 | Nicole Recalde Salazar | Psicóloga de Dayana ($30 por sesión) | R011 personal |
 | Joselyn Castillo Vasco, Dubreixy Luna Palomino, Marilyn Cedeño Level | Gente que trabajó para Dayana y se le paga | R039 empresarial (si devuelven algo: R049) |
@@ -153,7 +154,15 @@ Al clasificar, deja el concepto como «<qué es> — <texto original sin "(por c
 | Amazon / Amazon Prime (consumo internacional con débito) | Compra personal de Dayana | R010 personal |
 | Megamaxi, Supermaxi | Supermercado | R001 personal |
 
-Aclarado por Dayana el 19/11/2026 (segunda ronda): Joel Ortiz y Rosa Moreira eran pagos personales; el «SALDO INICIAL TC» de $2,658.43 de la TDC Internacional era la deuda de arranque repetida como gasto (ya estaba en el saldo inicial de la tarjeta) y se anuló con su motivo; el pago de $100 «servicios varios cash» en Produbanco eran ahorros suyos (R048 personal). La fila anterior de Arianny («por definir») queda reemplazada por la de servicio de diseño. Los 17 que quedaban abiertos sin dueño claro ($985.14: regularizaciones de Pichincha, pagos sin descripción, nota de crédito de la Coop. Tulcán, etc.) se cerraron el 19/11 como «sin detalle» por indicación de Dayana («son consumos súper viejos»): salidas R010 personal, entradas R048 personal, y el «AJUSTE» de Sukasa Gabriel en R049. No queda ningún movimiento abierto por clasificar; lo nuevo que llegue sí se clasifica o se pregunta. Pycca Dayana quedó con $12.18 a favor: probablemente falta anotar una compra hecha con esa tarjeta.
+Aclarado por Dayana el 19/11/2026 (segunda ronda): Joel Ortiz y Rosa Moreira eran pagos personales; el «SALDO INICIAL TC» de $2,658.43 de la TDC Internacional era la deuda de arranque repetida como gasto (ya estaba en el saldo inicial de la tarjeta) y se anuló con su motivo; el pago de $100 «servicios varios cash» en Produbanco eran ahorros suyos (R048 personal). La fila anterior de Arianny («por definir») queda reemplazada por la de servicio de diseño. Los 17 que quedaban abiertos sin dueño claro ($985.14: regularizaciones de Pichincha, pagos sin descripción, nota de crédito de la Coop. Tulcán, etc.) se cerraron el 19/11 como «sin detalle» por indicación de Dayana («son consumos súper viejos»): salidas R010 personal, entradas R048 personal, y el «AJUSTE» de Sukasa Gabriel en R049. No queda ningún movimiento abierto por clasificar; lo nuevo que llegue sí se clasifica o se pregunta. Pycca Dayana ya está en $0: Dayana pidió anotar los $12.18 como deuda que tenía y que se pagó el 4/11.
+
+Aclarado por Dayana el 19/11/2026 (tercera ronda, no volver a preguntar):
+
+- Gabriela Romero (Romero Cisneros Gabriela Geovanna): alumna del Diplomado de Arquitectura. La entrada de $131.95 del 10/11 en Pichincha GP era su pago de $130. Sus transferencias son cobros R046 empresarial. No tiene matrícula en la app.
+- Janneth Quizhpe Sinchire: Máster BIM + IA, inscripción de $500 pagada el 11/11 y 12 cuotas de $160 los días 11, desde el 11/12/2026. Ya tiene matrícula; sus cobros se enlazan a ella.
+- Julia Calderón: la primera cuota de $160 es el 19/12/2026 y paga los 19.
+- Banco del Pacífico Gabriel: por ahí se cobra el seguro de Dayana y de Gabriel (unos $200 al mes). No llegan avisos de ese banco, así que esos cobros no están anotados. El saldo se dejó en $0 con un saldo de arranque estimado (lo dice la nota de la cuenta). No preguntes por el saldo; si aparece un estado de cuenta o un aviso de ese banco, anota el seguro como gasto personal y dilo en «Ojo».
+- Banco Internacional Dayana (cuenta de banco, no la tarjeta): no tiene dinero ni movimientos. Si llega un cargo «Internacional», va a la tarjeta «TDC Internacional Dayana». El cargo «Apple Gabriel + Drive Gabriel» de $6.90 (9/11) se pasó a la tarjeta; puede estar repetido en parte con el cargo de Apple de $3.44 del 8–9/11 que trajo el extracto: se confirma al revisar el estado de cuenta de la tarjeta.
 
 Decidido por Dayana el 19/11/2026: las líneas que el banco trae sin nombre («TRANSFERENCIA INTERNET», «INTERBANCARIA ENVIADA / RECIBIDA») anteriores al 12/10/2026 se cierran en bloque como «sin detalle» (salidas R010 personal, entradas R048 personal), y los retiros de cajero como «gasto personal en efectivo, sin detalle» (R010 personal). Ya se aplicó a 157 movimientos; si aparece otro igual de esas fechas, aplícalo sin preguntar. Quedan 49 movimientos «por clasificar» ($3,999.44) dentro de períodos que Erika ya cerró: Dayana decidió el 19/11 dejarlos como están. No los preguntes ni pidas reabrir; no los cuentes como pendientes, solo menciónalos en una línea si alguien pregunta por el total. Entre ellos hay pagos ya identificados (sueldo de Mayorga del 30/10, liquidación de Pilar, un arriendo, un pago a Francis y tres de alumnos).
 
