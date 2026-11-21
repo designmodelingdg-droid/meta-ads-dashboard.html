@@ -88,6 +88,16 @@ Conector de GoHighLevel, operación `get-messages`, conversationId `34FdtMXaUAH4
 - Jorge Rax es cliente de la consultoría (Design Modeling DG), no de la Academy: sus pagos son cobros de proyecto (R046).
 - Si el texto dice de quién es el cliente («#CLIENTE ESTER», «cliente Dayana»), ponlo al final del concepto.
 
+### 3b. Ventas ganadas en GoHighLevel (pedido de Dayana, 21/11/2026)
+
+Dayana quiere que lo anotado se cruce con las ventas que el equipo marca como ganadas en el CRM, además del grupo.
+
+- Operación `search-opportunity` (locationId `nkKbOarn5IwHeMv48uY9`) con `status: "won"`, `limit: 100`, `order: "added_desc"`. Quédate con las que tengan `lastStatusChangeAt` en los últimos 4 días.
+- Por cada una, busca en la app un ingreso en ±3 días que coincida por nombre o correo del contacto, o por monto (`monetaryValue`). Si existe, nada más.
+- Si NO existe, NO anotes nada: una oportunidad ganada no es plata recibida. Ponla en el informe bajo «Ventas ganadas sin cobro anotado» con nombre, monto y vendedor, para que Dayana diga si ya pagó y por dónde.
+- Al revés: si hay un cobro de cliente de estos días que no aparece ni en el grupo ni como oportunidad ganada, dilo en «Ojo» (solo el nombre y el monto).
+- Solo lectura: no cambies oportunidades ni contactos.
+
 ### 4. Correos (ya entran solos a la app)
 
 Los tres buzones mandan sus avisos y la app los anota sola. Revisa `dg.ingesta_entradas` de los últimos 4 días:
@@ -153,6 +163,7 @@ Al clasificar, deja el concepto como «<qué es> — <texto original sin "(por c
 | «Pago Club Pycca» desde Banco Pichincha GP | Gabriel paga las dos Pycca. Se reconoce por el monto: ≈$61.24 es la de Dayana, $12.16 es la de Gabriel | Paso de dinero a «Pycca Dayana» (id a8d8ca7b-7cd1-499c-be0a-c73a31820f86) o a «Pycca Gabriel» (id 12f8ef53-d96f-4c95-b55c-f264ee1d8094), no gasto |
 | Amazon / Amazon Prime (consumo internacional con débito) | Compra personal de Dayana | R010 personal |
 | Megamaxi, Supermaxi | Supermercado | R001 personal |
+| «Pago de servicio ONE CARD» / «One Card» desde Banco Pichincha GP | Es el pago de la tarjeta Roland (Credicorp) de Gabriel; el monto coincide con el «total a pagar» del estado de Roland | Paso de dinero a «Roland Gabriel» (id fe9b1ec1-edb4-4c0b-9ed2-36c615ed3275), no gasto |
 
 Aclarado por Dayana el 19/11/2026 (segunda ronda): Joel Ortiz y Rosa Moreira eran pagos personales; el «SALDO INICIAL TC» de $2,658.43 de la TDC Internacional era la deuda de arranque repetida como gasto (ya estaba en el saldo inicial de la tarjeta) y se anuló con su motivo; el pago de $100 «servicios varios cash» en Produbanco eran ahorros suyos (R048 personal). La fila anterior de Arianny («por definir») queda reemplazada por la de servicio de diseño. Los 17 que quedaban abiertos sin dueño claro ($985.14: regularizaciones de Pichincha, pagos sin descripción, nota de crédito de la Coop. Tulcán, etc.) se cerraron el 19/11 como «sin detalle» por indicación de Dayana («son consumos súper viejos»): salidas R010 personal, entradas R048 personal, y el «AJUSTE» de Sukasa Gabriel en R049. No queda ningún movimiento abierto por clasificar; lo nuevo que llegue sí se clasifica o se pregunta. Corrección del 20/11/2026: el pago de $12.16 del 4/11 era de la Pycca de Gabriel (su cuota mensual es $12.16), no de la de Dayana; el consumo de $12.18 que se había inventado para cuadrar se anuló.
 
