@@ -14,7 +14,7 @@ on:
       modo:
         description: "Qué hacer"
         type: choice
-        options: [transcribir, recortar, listar, whisper, acero]
+        options: [transcribir, recortar, listar, whisper, acero, silencios]
         default: transcribir
       tema:
         description: "transcribir · tema a buscar en los nombres (p. ej. conexiones, naves, Revit IA)"
@@ -45,7 +45,7 @@ concurrency:
 
 jobs:
   plan:
-    if: ${{ inputs.modo == 'whisper' }}
+    if: ${{ inputs.modo == 'whisper' || inputs.modo == 'silencios' }}
     runs-on: ubuntu-latest
     outputs:
       ids: ${{ steps.p.outputs.ids }}
@@ -79,7 +79,8 @@ jobs:
       - name: Transcribir
         env:
           VIMEO_TOKEN: ${{ secrets.VIMEO_TOKEN }}
-        run: python3 scripts/vimeo_whisper.py "${{ matrix.id }}"
+        run: |
+          if [ "${{ inputs.modo }}" = "silencios" ]; then pip install -q numpy; python3 scripts/vimeo_silencios.py "${{ matrix.id }}"; else python3 scripts/vimeo_whisper.py "${{ matrix.id }}"; fi
       - uses: actions/upload-artifact@v4
         with:
           name: whisper-${{ matrix.id }}
@@ -87,7 +88,7 @@ jobs:
           retention-days: 14
 
   clips:
-    if: ${{ inputs.modo != 'whisper' && inputs.modo != 'acero' }}
+    if: ${{ inputs.modo != 'whisper' && inputs.modo != 'acero' && inputs.modo != 'silencios' }}
     runs-on: ubuntu-latest
     timeout-minutes: 300
     steps:
