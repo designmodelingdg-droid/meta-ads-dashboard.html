@@ -1,7 +1,7 @@
 {
  "generado": "2026-09-30",
  "nota": "Contenido COMPLETO de cada pieza (hook, slides palabra por palabra con su dirección visual, guion de reel segundo a segundo, caption, CTA por red y copy de pauta). La app debe leer ESTE archivo para generar el post correcto sin inventar. Incluye las 3 secuencias de VENTA de historias (jueves), cuyo frame de cierre pide responder con una palabra clave para que lo recoja el bot en vez de depender de responder a mano.",
- "total": 313,
+ "total": 318,
  "piezas": [
   {
    "id": "jul-mito-render-ia",
@@ -13614,13 +13614,13 @@
    "pilar": "Contenido sintomático · acusar un hábito",
    "hook": "Llevas años en BIM y sigues siendo «el que modela».",
    "cta": {
-    "instagram": "Comenta NIVEL",
-    "facebook": "Comenta NIVEL",
+    "instagram": "Comenta NIVEL · Si quieres más información de nuestro Máster por bloques, comenta MÁSTER.",
+    "facebook": "Comenta NIVEL · Si quieres más información de nuestro Máster por bloques, comenta MÁSTER.",
     "linkedin": "Sin palabra clave: pregunta abierta",
     "threads": "Pregunta abierta, sin palabra clave"
    },
-   "caption": "Llevas años en BIM y sigues siendo «el que modela» 👇\n\nTe pasa si:\n1 · Te mandan el modelo para pasar a limpio lo que otros decidieron en una reunión a la que no te invitaron.\n2 · Encuentras los choques en tu pantalla, pero el reporte de interferencias lo firma otro.\n3 · Haces cualquier familia en Revit, pero no sabrías escribir el plan de ejecución BIM (BEP) del proyecto.\n4 · Cuando cambia el proyecto, eres el que trabaja el fin de semana, no el que decide el cambio.\n\nNo es Revit. Es que nadie te enseñó a gestionar la información: quién entrega qué, cuándo y con qué nivel de detalle.\n\n¿Cuántas de las 4 te pasan? Responde con el número 👇\n\nComenta NIVEL y te mando el test para ver en qué bloque estás.\n\n#BIM #Revit #BIMManager #Coordinacion #DesignModelingAcademy",
-   "notas_produccion": "Abre el mes y la semana. Estructura sintomática del brief (portada = síntoma, 2-5 = señales, 6 = causa, 7 = palabra). La pregunta pide un NÚMERO (1 a 4), no la palabra «nivel», para que el disparador no confunda respuestas con pedidos del test. Le habla al perfil «ingeniero empleado» del banco de síntomas (sección 4 del brief).",
+   "caption": "Llevas años en BIM y sigues siendo «el que modela» 👇\n\nTe pasa si:\n1 · Te mandan el modelo para pasar a limpio lo que otros decidieron en una reunión a la que no te invitaron.\n2 · Encuentras los choques en tu pantalla, pero el reporte de interferencias lo firma otro.\n3 · Haces cualquier familia en Revit, pero no sabrías escribir el plan de ejecución BIM (BEP) del proyecto.\n4 · Cuando cambia el proyecto, eres el que trabaja el fin de semana, no el que decide el cambio.\n\nNo es Revit. Es que nadie te enseñó a gestionar la información: quién entrega qué, cuándo y con qué nivel de detalle.\n\n¿Cuántas de las 4 te pasan? Responde con el número 👇\n\nComenta NIVEL y te mando el test para ver en qué bloque estás.\n\nSi quieres más información de nuestro Máster por bloques, comenta MÁSTER.\n\n#BIM #Revit #BIMManager #Coordinacion #DesignModelingAcademy",
+   "notas_produccion": "Abre el mes y la semana. Estructura sintomática del brief (portada = síntoma, 2-5 = señales, 6 = causa, 7 = palabra). La pregunta pide un NÚMERO (1 a 4), no la palabra «nivel», para que el disparador no confunda respuestas con pedidos del test. Le habla al perfil «ingeniero empleado» del banco de síntomas (sección 4 del brief). VENTA SUAVE POR INFORMACIÓN (Dayana, 23-nov): el cierre suma «Si quieres más información de nuestro Máster por bloques, comenta MÁSTER.». MÁSTER es palabra de venta: su DM lleva a WhatsApp para agendar (cohorte de febrero, sin precio).",
    "embudo": {
     "palabra": "NIVEL",
     "lead_magnet": "Test de nivel BIM (5 minutos, gratis)",
@@ -13628,7 +13628,18 @@
     "dm_texto": "¡Hola! 👋 Aquí tienes el test de nivel BIM (5 minutos): [ENLACE]\n\nTe dice en qué bloque estás hoy: modelado, coordinación, gestión o BIM + IA. Si sales en coordinación, el salto no es aprender más Revit: es aprender a dirigir la información del proyecto.\n\nMientras lo haces, cuéntame: ¿en tu trabajo actual quién arma el BEP y quién dirige las reuniones de coordinación?",
     "producto_destino": "Máster BIM Management + IA por bloques (solo se invita a agendar; nunca precio)",
     "canal_dm": "OpenReply",
-    "nuevo_lead_magnet": false
+    "nuevo_lead_magnet": false,
+    "cta_info": {
+     "palabra": "MÁSTER",
+     "lead_magnet": "Información del Máster por bloques + cita de 20 minutos por WhatsApp (venta, sin precio)",
+     "enlace": "https://wa.me/593984372010",
+     "dm_texto": "¡Hola! Gracias por tu interés en el Máster por bloques 🙌\n\nVa por bloques (modelado, coordinación, gestión y BIM + IA) y empiezas por el que resuelve tu problema de hoy. La próxima cohorte empieza en febrero.\n\nEscríbenos por WhatsApp y agendamos 20 minutos para ver qué bloque te toca: [ENLACE]\n\nPara orientarte desde ya: ¿en qué trabajas hoy y qué te gustaría estar haciendo a fin de 2027?",
+     "producto_destino": "Máster BIM Management + IA por bloques (cohorte de febrero; agendar, nunca precio)",
+     "canal_dm": "OpenReply",
+     "nuevo_lead_magnet": false,
+     "nota": "Venta suave: el DM lleva a WhatsApp para agendar; el precio del Máster nunca va por contenido ni por chat.",
+     "texto_cierre": "Si quieres más información de nuestro Máster por bloques, comenta MÁSTER."
+    }
    },
    "prompt_imagenes": "Portada 4:5: captura real de Revit con el modelo en gris y una etiqueta «el que modela» sobre el usuario; tipografía de marca.",
    "origen": "matriz diciembre 2026 / enero 2027",
@@ -13665,14 +13676,14 @@
     },
     {
      "n": 7,
-     "texto": "¿Cuántas de las 4 te pasan? Responde con el número 👇 · Comenta NIVEL y te mando el test para ver en qué bloque estás.",
+     "texto": "¿Cuántas de las 4 te pasan? Responde con el número 👇 · Comenta NIVEL y te mando el test para ver en qué bloque estás. · Si quieres más información de nuestro Máster por bloques, comenta MÁSTER.",
      "visual": "Cierre invertido ámbar."
     }
    ],
    "red_principal": "instagram",
    "cta_por_red": {
-    "instagram": "Comenta NIVEL",
-    "facebook": "Comenta NIVEL",
+    "instagram": "Comenta NIVEL · Si quieres más información de nuestro Máster por bloques, comenta MÁSTER.",
+    "facebook": "Comenta NIVEL · Si quieres más información de nuestro Máster por bloques, comenta MÁSTER.",
     "linkedin": "Sin palabra clave: pregunta abierta",
     "threads": "Pregunta abierta, sin palabra clave"
    }
@@ -13784,14 +13795,14 @@
    "pilar": "Re-edición de ganador con gancho de problema",
    "hook": "La viga pasó la verificación. La unión fue la que falló.",
    "cta": {
-    "instagram": "Comenta ACERO",
-    "facebook": "Comenta ACERO",
+    "instagram": "Comenta ACERO · Si quieres más información de la Especialización en Acero, comenta TEMARIO.",
+    "facebook": "Comenta ACERO · Si quieres más información de la Especialización en Acero, comenta TEMARIO.",
     "tiktok": "Pregunta abierta, sin palabra clave",
     "youtube_shorts": "Pregunta abierta, sin palabra clave",
     "linkedin": "Sin palabra clave: pregunta abierta"
    },
-   "caption": "La viga pasó la verificación. La unión fue la que falló 👇\n\nHay al menos 6 formas de unir una viga de acero a una columna de hormigón, y no transmiten lo mismo: unas solo pasan cortante y otras también momento. Si en el modelo la unión es rígida y en obra se construye una que solo pasa cortante, el cálculo de la viga ya no describe lo que se construyó.\n\n¿Cuál de las 6 usas tú? Dinos el número 👇\n\nComenta ACERO y te mando las 5 verificaciones que hago antes de dar por buena una estructura de acero.\n\n#EstructurasDeAcero #IngenieriaEstructural #NavesIndustriales #DesignModelingAcademy",
-   "notas_produccion": "RE-EDICIÓN. Fuente: reel DfU1jwSj6g6 del 4-nov «6 formas de unir una viga de acero a una columna de hormigón» (2.516 vistas, 55 guardados: el más guardado de noviembre). GANCHO NUEVO (0-3 s, texto sobre el primer cuadro): «LA VIGA PASÓ. LA UNIÓN NO.». CIERRE NUEVO: «¿Cuál usas tú? Dinos el número» + COMENTA ACERO. Mismo video, sin grabar. REGLA 0: Gabriel revisa cada dato técnico contra la norma citada antes de publicar. (rígida/articulada según la unión que se ve en el video).",
+   "caption": "La viga pasó la verificación. La unión fue la que falló 👇\n\nHay al menos 6 formas de unir una viga de acero a una columna de hormigón, y no transmiten lo mismo: unas solo pasan cortante y otras también momento. Si en el modelo la unión es rígida y en obra se construye una que solo pasa cortante, el cálculo de la viga ya no describe lo que se construyó.\n\n¿Cuál de las 6 usas tú? Dinos el número 👇\n\nComenta ACERO y te mando las 5 verificaciones que hago antes de dar por buena una estructura de acero.\n\nSi quieres más información de la Especialización en Acero, comenta TEMARIO.\n\n#EstructurasDeAcero #IngenieriaEstructural #NavesIndustriales #DesignModelingAcademy",
+   "notas_produccion": "RE-EDICIÓN. Fuente: reel DfU1jwSj6g6 del 4-nov «6 formas de unir una viga de acero a una columna de hormigón» (2.516 vistas, 55 guardados: el más guardado de noviembre). GANCHO NUEVO (0-3 s, texto sobre el primer cuadro): «LA VIGA PASÓ. LA UNIÓN NO.». CIERRE NUEVO: «¿Cuál usas tú? Dinos el número» + COMENTA ACERO. Mismo video, sin grabar. REGLA 0: Gabriel revisa cada dato técnico contra la norma citada antes de publicar. (rígida/articulada según la unión que se ve en el video). VENTA SUAVE POR INFORMACIÓN (Dayana, 23-nov): el cierre suma «Si quieres más información de la Especialización en Acero, comenta TEMARIO.». TEMARIO es palabra de venta: su DM lleva al temario de Acero y a WhatsApp.",
    "embudo": {
     "palabra": "ACERO",
     "lead_magnet": "Guía de las 5 verificaciones de una nave de acero (gratis)",
@@ -13799,7 +13810,19 @@
     "dm_texto": "¡Hola! 🔩 Aquí tienes las 5 verificaciones que reviso antes de dar por buena una estructura de acero: [ENLACE]\n\nUna de las que más se salta es comprobar que la unión que modelaste (rígida o articulada) es la que de verdad se va a construir.\n\n¿Qué estás diseñando ahora: una nave, un entrepiso o una estructura mixta con hormigón?",
     "producto_destino": "Especialización en Acero con Tutor IA",
     "canal_dm": "OpenReply",
-    "nuevo_lead_magnet": false
+    "nuevo_lead_magnet": false,
+    "cta_info": {
+     "palabra": "TEMARIO",
+     "lead_magnet": "Temario de la Especialización en Acero (PDF, sin precio)",
+     "enlace": "https://drive.google.com/file/d/1K0cRiCofWt__tw-Yge21nJ2Wg25EpHlC/view?usp=sharing",
+     "enlace_secundario": "https://designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero",
+     "dm_texto": "¡Hola! Gracias por tu interés en la Especialización en Acero con Tutor IA 🔩\n\nAquí tienes el temario módulo a módulo: [ENLACE]\nEs 100 % asincrónica: avanzas a tu ritmo, con tutor de IA y sesiones uno a uno con tu instructor.\n\nSi prefieres que te lo expliquemos, escríbenos por WhatsApp: https://wa.me/593984372010\n\nUna pregunta para orientarte: ¿hoy diseñas acero en algún software (Robot, SAP2000, ETABS) o estás empezando?",
+     "producto_destino": "Especialización en Acero con Tutor IA",
+     "canal_dm": "OpenReply",
+     "nuevo_lead_magnet": false,
+     "nota": "Venta suave: temario + WhatsApp https://wa.me/593984372010. Temario: «2026-EspAcero Temario» (PDF en Drive), el mismo que manda el bot de ventas (/home/user/dma-sales-assistant/config.py, PDF_TEMARIOS) + la página de la especialización (BOT-HISTORIAS-GHL.md).",
+     "texto_cierre": "Si quieres más información de la Especialización en Acero, comenta TEMARIO."
+    }
    },
    "prompt_imagenes": "",
    "origen": "matriz diciembre 2026 / enero 2027",
@@ -13816,7 +13839,7 @@
     },
     {
      "tiempo": "0:38-0:44",
-     "accion": "Lámina de cierre · En pantalla: ¿CUÁL USAS TÚ? DINOS EL NÚMERO · COMENTA ACERO",
+     "accion": "Lámina de cierre · En pantalla: ¿CUÁL USAS TÚ? DINOS EL NÚMERO · COMENTA ACERO · En pantalla (segunda línea): MÁS INFORMACIÓN → COMENTA TEMARIO",
      "voz": ""
     }
    ],
@@ -13830,8 +13853,8 @@
    "gancho_nuevo": "La viga pasó la verificación. La unión fue la que falló.",
    "red_principal": "instagram",
    "cta_por_red": {
-    "instagram": "Comenta ACERO",
-    "facebook": "Comenta ACERO",
+    "instagram": "Comenta ACERO · Si quieres más información de la Especialización en Acero, comenta TEMARIO.",
+    "facebook": "Comenta ACERO · Si quieres más información de la Especialización en Acero, comenta TEMARIO.",
     "tiktok": "Pregunta abierta, sin palabra clave",
     "youtube_shorts": "Pregunta abierta, sin palabra clave",
     "linkedin": "Sin palabra clave: pregunta abierta"
@@ -13857,42 +13880,43 @@
    "intencion_dic": "venta",
    "producto": "Especialización en Acero con Tutor IA",
    "audiencia": "Consultor independiente que rechaza proyectos de acero (COMPRADORES-VS-NO)",
-   "estado": "ESPERA TESTIMONIO (confirmar con Dayana)",
-   "titulo": "Testimonio de un alumno de Acero: antes y después",
+   "estado": "POR DISEÑAR (testimonio guardado del 23-oct)",
+   "titulo": "«Ustedes han sido una gran solución»: un alumno de Acero",
    "eje": "NÚCLEO-BIM",
    "pilar": "Prueba social · testimonio real",
-   "hook": "«[Frase textual del alumno sobre el problema que tenía antes de la especialización]»",
+   "hook": "«Ustedes han sido una gran solución.»",
    "cta": {
-    "instagram": "Escríbenos TEMARIO por DM",
-    "facebook": "Escríbenos TEMARIO por Messenger",
+    "instagram": "Comenta TEMARIO",
+    "facebook": "Comenta TEMARIO",
     "linkedin": "Sin palabra clave: pregunta abierta",
     "threads": "Pregunta abierta, sin palabra clave"
    },
-   "caption": "«[Frase textual del alumno] (confirmar con Dayana)» — [nombre], [país], alumno de la Especialización en Acero.\n\nLo que más escuchamos antes de empezar: «rechazo proyectos de acero porque no sé si mi cálculo aguanta la revisión». Lo que cambia no es el software: es tener un orden de verificación y alguien que te revise.\n\n¿Qué proyecto de acero rechazaste este año? 👇\n\nEscríbenos TEMARIO por DM y te mandamos el temario módulo a módulo.\n\n#EstructurasDeAcero #IngenieriaEstructural #NavesIndustriales #DesignModelingAcademy",
-   "notas_produccion": "PIEZA DE VENTA (no pide palabra de lead magnet: TEMARIO). Testimonio REAL con permiso: nombre, país, frase textual y una captura de lo que entregó. Si no hay testimonio con permiso antes del jue 3-dic, la pieza se cambia por la reserva y se avisa. SIN PRECIO. (confirmar con Dayana: qué alumno, frase y permiso). Acompaña la historia de venta del jueves 3.",
+   "caption": "«Ustedes han sido una gran solución» 🙌 — alumno de la Especialización en Acero con Tutor IA.\n\nLo que más escuchamos antes de empezar: «rechazo proyectos de acero porque no sé si mi cálculo aguanta la revisión». Lo que cambia no es el software: es tener un orden de verificación y alguien que te revise.\n\n¿Qué proyecto de acero rechazaste este año? 👇\n\nSi quieres más información de la Especialización en Acero, comenta TEMARIO.\n\n#EstructurasDeAcero #IngenieriaEstructural #NavesIndustriales #DesignModelingAcademy",
+   "notas_produccion": "PIEZA DE VENTA (no pide palabra de lead magnet: TEMARIO). TESTIMONIO GUARDADO (no hay testimonios nuevos, Dayana 23-nov): reel publicado el 23-oct-2026, https://www.instagram.com/reel/De2JwdYlfH9/ (matriz.json: 5.156 vistas, 22 guardados; BRIEF-PATRICIO.md: «Vie 23 · Testimonio de alumno de Acero»; guion y permiso en oct-testimonio-acero-reel). La frase es el título con que se publicó el reel: Daniela confirma en el video que la dice el alumno; si no, se usa otra frase textual del mismo video. Nada se escribe en boca del alumno. SIN PRECIO.",
    "embudo": {
     "palabra": "TEMARIO",
-    "lead_magnet": "Temario de la Especialización en Acero, módulo a módulo (sin precio en público)",
-    "enlace": "(confirmar con Dayana: enlace o PDF del temario)",
-    "dm_texto": "¡Hola! Gracias por escribir 🙌 Aquí tienes el temario de la Especialización en Acero con Tutor IA: [ENLACE]\n\nEstá ordenado como se diseña una estructura real: cargas, análisis, verificaciones y uniones.\n\nPara orientarte mejor: ¿hoy diseñas acero en algún software (Robot, SAP2000, ETABS) o lo estás empezando?",
+    "lead_magnet": "Temario de la Especialización en Acero (PDF, sin precio)",
+    "enlace": "https://drive.google.com/file/d/1K0cRiCofWt__tw-Yge21nJ2Wg25EpHlC/view?usp=sharing",
+    "enlace_secundario": "https://designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero",
+    "dm_texto": "¡Hola! Gracias por tu interés en la Especialización en Acero con Tutor IA 🔩\n\nAquí tienes el temario módulo a módulo: [ENLACE]\nEs 100 % asincrónica: avanzas a tu ritmo, con tutor de IA y sesiones uno a uno con tu instructor.\n\nSi prefieres que te lo expliquemos, escríbenos por WhatsApp: https://wa.me/593984372010\n\nUna pregunta para orientarte: ¿hoy diseñas acero en algún software (Robot, SAP2000, ETABS) o estás empezando?",
     "producto_destino": "Especialización en Acero con Tutor IA",
     "canal_dm": "OpenReply",
     "nuevo_lead_magnet": false,
-    "nota": "Lo recibe OpenReply y pasa a una persona del equipo comercial (venta, no recurso gratis)."
+    "nota": "Venta suave: temario + WhatsApp https://wa.me/593984372010. Temario: «2026-EspAcero Temario» (PDF en Drive), el mismo que manda el bot de ventas (/home/user/dma-sales-assistant/config.py, PDF_TEMARIOS) + la página de la especialización (BOT-HISTORIAS-GHL.md)."
    },
    "prompt_imagenes": "",
    "origen": "matriz diciembre 2026 / enero 2027",
    "slides": [
     {
      "n": 1,
-     "texto": "«[FRASE TEXTUAL DEL ALUMNO]» · [Nombre], [país] · Especialización en Acero con Tutor IA",
-     "visual": "Foto o captura real del proyecto del alumno + la cita en grande. (confirmar con Dayana)"
+     "texto": "«USTEDES HAN SIDO UNA GRAN SOLUCIÓN» · Alumno de la Especialización en Acero con Tutor IA",
+     "visual": "Fotograma del alumno sacado del reel testimonio del 23-oct (De2JwdYlfH9) + la cita en grande. Nombre de pila solo si aparece en ese video."
     }
    ],
    "red_principal": "instagram",
    "cta_por_red": {
-    "instagram": "Escríbenos TEMARIO por DM",
-    "facebook": "Escríbenos TEMARIO por Messenger",
+    "instagram": "Comenta TEMARIO",
+    "facebook": "Comenta TEMARIO",
     "linkedin": "Sin palabra clave: pregunta abierta",
     "threads": "Pregunta abierta, sin palabra clave"
    }
@@ -14175,13 +14199,13 @@
    "pilar": "Contenido sintomático · acusar un hábito",
    "hook": "Ganaste el proyecto. Perdiste plata en la tercera ronda de revisión.",
    "cta": {
-    "instagram": "Comenta COTIZA",
-    "facebook": "Comenta COTIZA",
+    "instagram": "Comenta COTIZA · Si quieres más información de la Especialización en Acero, comenta TEMARIO.",
+    "facebook": "Comenta COTIZA · Si quieres más información de la Especialización en Acero, comenta TEMARIO.",
     "linkedin": "Sin palabra clave: pregunta abierta",
     "threads": "Pregunta abierta, sin palabra clave"
    },
-   "caption": "Ganaste el proyecto. Perdiste plata en la tercera ronda de revisión 👇\n\nCotizaste por m². El cliente cambió la arquitectura dos veces. Cada cambio fue un recálculo que nadie te pagó.\n\nTe pasa si tu propuesta:\n· no dice cuántas rondas de revisión incluye;\n· no separa cálculo, planos y memoria;\n· no tiene precio para «cambio de arquitectura después de aprobado».\n\nLo que funciona: cotizar por entregable, dejar escritas las rondas incluidas y ponerle precio a la siguiente antes de firmar.\n\n¿Cuántas rondas de revisión incluyes tú: 0, 1, 2 o «las que pidan»? 👇\n\nComenta COTIZA y te mando el cotizador de honorarios.\n\n#Honorarios #IngenieriaEstructural #Consultoria #DesignModelingAcademy",
-   "notas_produccion": "Banco de síntomas del brief (consultor independiente). Antecedente: «¿Cobras 5 USD por m²?» fue la única pieza con conversación de su semana (11 comentarios, 9 contactos a COTIZA). La recomendación de «2 rondas incluidas» es criterio de la casa, no norma: Gabriel la confirma o la cambia.",
+   "caption": "Ganaste el proyecto. Perdiste plata en la tercera ronda de revisión 👇\n\nCotizaste por m². El cliente cambió la arquitectura dos veces. Cada cambio fue un recálculo que nadie te pagó.\n\nTe pasa si tu propuesta:\n· no dice cuántas rondas de revisión incluye;\n· no separa cálculo, planos y memoria;\n· no tiene precio para «cambio de arquitectura después de aprobado».\n\nLo que funciona: cotizar por entregable, dejar escritas las rondas incluidas y ponerle precio a la siguiente antes de firmar.\n\n¿Cuántas rondas de revisión incluyes tú: 0, 1, 2 o «las que pidan»? 👇\n\nComenta COTIZA y te mando el cotizador de honorarios.\n\nSi quieres más información de la Especialización en Acero, comenta TEMARIO.\n\n#Honorarios #IngenieriaEstructural #Consultoria #DesignModelingAcademy",
+   "notas_produccion": "Banco de síntomas del brief (consultor independiente). Antecedente: «¿Cobras 5 USD por m²?» fue la única pieza con conversación de su semana (11 comentarios, 9 contactos a COTIZA). La recomendación de «2 rondas incluidas» es criterio de la casa, no norma: Gabriel la confirma o la cambia. VENTA SUAVE POR INFORMACIÓN (Dayana, 23-nov): el cierre suma «Si quieres más información de la Especialización en Acero, comenta TEMARIO.». TEMARIO es palabra de venta: su DM lleva al temario de Acero y a WhatsApp.",
    "embudo": {
     "palabra": "COTIZA",
     "lead_magnet": "Cotizador de honorarios (gratis)",
@@ -14189,7 +14213,19 @@
     "dm_texto": "¡Hola! 💼 Aquí tienes el cotizador de honorarios: [ENLACE]\n\nTe ayuda a separar la cotización por entregables (cálculo, planos, memoria) y a ponerle precio a las revisiones extra antes de firmar.\n\n¿Qué tipo de proyectos cotizas más: vivienda, edificios o naves de acero?",
     "producto_destino": "Especialización en Acero con Tutor IA",
     "canal_dm": "OpenReply",
-    "nuevo_lead_magnet": false
+    "nuevo_lead_magnet": false,
+    "cta_info": {
+     "palabra": "TEMARIO",
+     "lead_magnet": "Temario de la Especialización en Acero (PDF, sin precio)",
+     "enlace": "https://drive.google.com/file/d/1K0cRiCofWt__tw-Yge21nJ2Wg25EpHlC/view?usp=sharing",
+     "enlace_secundario": "https://designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero",
+     "dm_texto": "¡Hola! Gracias por tu interés en la Especialización en Acero con Tutor IA 🔩\n\nAquí tienes el temario módulo a módulo: [ENLACE]\nEs 100 % asincrónica: avanzas a tu ritmo, con tutor de IA y sesiones uno a uno con tu instructor.\n\nSi prefieres que te lo expliquemos, escríbenos por WhatsApp: https://wa.me/593984372010\n\nUna pregunta para orientarte: ¿hoy diseñas acero en algún software (Robot, SAP2000, ETABS) o estás empezando?",
+     "producto_destino": "Especialización en Acero con Tutor IA",
+     "canal_dm": "OpenReply",
+     "nuevo_lead_magnet": false,
+     "nota": "Venta suave: temario + WhatsApp https://wa.me/593984372010. Temario: «2026-EspAcero Temario» (PDF en Drive), el mismo que manda el bot de ventas (/home/user/dma-sales-assistant/config.py, PDF_TEMARIOS) + la página de la especialización (BOT-HISTORIAS-GHL.md).",
+     "texto_cierre": "Si quieres más información de la Especialización en Acero, comenta TEMARIO."
+    }
    },
    "prompt_imagenes": "",
    "origen": "matriz diciembre 2026 / enero 2027",
@@ -14226,14 +14262,14 @@
     },
     {
      "n": 7,
-     "texto": "¿Cuántas rondas incluyes tú: 0, 1, 2 o «las que pidan»? 👇 · Comenta COTIZA y te mando el cotizador de honorarios.",
+     "texto": "¿Cuántas rondas incluyes tú: 0, 1, 2 o «las que pidan»? 👇 · Comenta COTIZA y te mando el cotizador de honorarios. · Si quieres más información de la Especialización en Acero, comenta TEMARIO.",
      "visual": "Cierre invertido ámbar."
     }
    ],
    "red_principal": "instagram",
    "cta_por_red": {
-    "instagram": "Comenta COTIZA",
-    "facebook": "Comenta COTIZA",
+    "instagram": "Comenta COTIZA · Si quieres más información de la Especialización en Acero, comenta TEMARIO.",
+    "facebook": "Comenta COTIZA · Si quieres más información de la Especialización en Acero, comenta TEMARIO.",
     "linkedin": "Sin palabra clave: pregunta abierta",
     "threads": "Pregunta abierta, sin palabra clave"
    }
@@ -14359,14 +14395,14 @@
    "pilar": "Contenido sintomático · Gabriel a cámara",
    "hook": "Tu modelo en Robot da ratios de 1,4… y no sabes si es la sección o los apoyos.",
    "cta": {
-    "instagram": "Comenta ACERO",
-    "facebook": "Comenta ACERO",
+    "instagram": "Comenta ACERO · Si quieres más información de la Especialización en Acero, comenta TEMARIO.",
+    "facebook": "Comenta ACERO · Si quieres más información de la Especialización en Acero, comenta TEMARIO.",
     "tiktok": "Pregunta abierta, sin palabra clave",
     "youtube_shorts": "Pregunta abierta, sin palabra clave",
     "linkedin": "Sin palabra clave: pregunta abierta"
    },
-   "caption": "Tu modelo en Robot da ratios de 1,4… y no sabes si es la sección o los apoyos 👇\n\nAntes de subir el perfil, revisa tres cosas del modelo:\n1 · Los apoyos: ¿empotrado o articulado, como se va a construir?\n2 · Las longitudes de pandeo que le diste a cada barra.\n3 · Que el viento entró con la dirección y el signo correctos.\n\nSi al corregir el modelo los ratios bajan, el perfil estaba bien. Si no bajan, ahí sí: sección.\n\n¿Cuál fue el ratio más alto que te dio tu último modelo? 👇\n\nComenta ACERO y te mando las 5 verificaciones que hago antes de cambiar un perfil.\n\n#EstructurasDeAcero #IngenieriaEstructural #NavesIndustriales #DesignModelingAcademy",
-   "notas_produccion": "GRABACIÓN NUEVA DE GABRIEL (G-02): antes del mar 8-dic. Pantalla real de Robot Structural Analysis (verificación de barras con ratios en rojo) grabada con el celular sobre el monitor. Caso real de un alumno (brief: «caso real de Mark»): NO se dice el nombre sin permiso (confirmar con Dayana). REGLA 0: Gabriel revisa cada dato técnico contra la norma citada antes de publicar.",
+   "caption": "Tu modelo en Robot da ratios de 1,4… y no sabes si es la sección o los apoyos 👇\n\nAntes de subir el perfil, revisa tres cosas del modelo:\n1 · Los apoyos: ¿empotrado o articulado, como se va a construir?\n2 · Las longitudes de pandeo que le diste a cada barra.\n3 · Que el viento entró con la dirección y el signo correctos.\n\nSi al corregir el modelo los ratios bajan, el perfil estaba bien. Si no bajan, ahí sí: sección.\n\n¿Cuál fue el ratio más alto que te dio tu último modelo? 👇\n\nComenta ACERO y te mando las 5 verificaciones que hago antes de cambiar un perfil.\n\nSi quieres más información de la Especialización en Acero, comenta TEMARIO.\n\n#EstructurasDeAcero #IngenieriaEstructural #NavesIndustriales #DesignModelingAcademy",
+   "notas_produccion": "GRABACIÓN NUEVA DE GABRIEL (G-02): antes del mar 8-dic. Pantalla real de Robot Structural Analysis (verificación de barras con ratios en rojo) grabada con el celular sobre el monitor. Caso real de un alumno (brief: «caso real de Mark»): NO se dice el nombre sin permiso (confirmar con Dayana). REGLA 0: Gabriel revisa cada dato técnico contra la norma citada antes de publicar. VENTA SUAVE POR INFORMACIÓN (Dayana, 23-nov): el cierre suma «Si quieres más información de la Especialización en Acero, comenta TEMARIO.». TEMARIO es palabra de venta: su DM lleva al temario de Acero y a WhatsApp.",
    "embudo": {
     "palabra": "ACERO",
     "lead_magnet": "Guía de las 5 verificaciones de una nave de acero (gratis)",
@@ -14374,7 +14410,19 @@
     "dm_texto": "¡Hola! 🔩 Aquí tienes las 5 verificaciones que hago antes de cambiar un perfil: [ENLACE]\n\nEmpieza por los apoyos y las longitudes de pandeo: es donde más ratios inflados encuentro.\n\n¿En qué software estás modelando (Robot, SAP2000, ETABS) y qué ratio te está dando ahora?",
     "producto_destino": "Especialización en Acero con Tutor IA",
     "canal_dm": "OpenReply",
-    "nuevo_lead_magnet": false
+    "nuevo_lead_magnet": false,
+    "cta_info": {
+     "palabra": "TEMARIO",
+     "lead_magnet": "Temario de la Especialización en Acero (PDF, sin precio)",
+     "enlace": "https://drive.google.com/file/d/1K0cRiCofWt__tw-Yge21nJ2Wg25EpHlC/view?usp=sharing",
+     "enlace_secundario": "https://designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero",
+     "dm_texto": "¡Hola! Gracias por tu interés en la Especialización en Acero con Tutor IA 🔩\n\nAquí tienes el temario módulo a módulo: [ENLACE]\nEs 100 % asincrónica: avanzas a tu ritmo, con tutor de IA y sesiones uno a uno con tu instructor.\n\nSi prefieres que te lo expliquemos, escríbenos por WhatsApp: https://wa.me/593984372010\n\nUna pregunta para orientarte: ¿hoy diseñas acero en algún software (Robot, SAP2000, ETABS) o estás empezando?",
+     "producto_destino": "Especialización en Acero con Tutor IA",
+     "canal_dm": "OpenReply",
+     "nuevo_lead_magnet": false,
+     "nota": "Venta suave: temario + WhatsApp https://wa.me/593984372010. Temario: «2026-EspAcero Temario» (PDF en Drive), el mismo que manda el bot de ventas (/home/user/dma-sales-assistant/config.py, PDF_TEMARIOS) + la página de la especialización (BOT-HISTORIAS-GHL.md).",
+     "texto_cierre": "Si quieres más información de la Especialización en Acero, comenta TEMARIO."
+    }
    },
    "prompt_imagenes": "",
    "origen": "matriz diciembre 2026 / enero 2027",
@@ -14401,15 +14449,15 @@
     },
     {
      "tiempo": "0:47-0:57",
-     "accion": "Gabriel a cámara, cierre · En pantalla: COMENTA ACERO",
+     "accion": "Gabriel a cámara, cierre · En pantalla: COMENTA ACERO · En pantalla (segunda línea): MÁS INFORMACIÓN → COMENTA TEMARIO",
      "voz": "¿Cuál fue tu ratio más alto? Comenta ACERO y te mando las 5 verificaciones que hago antes de cambiar un perfil."
     }
    ],
    "gabriel_a_camara": true,
    "red_principal": "instagram",
    "cta_por_red": {
-    "instagram": "Comenta ACERO",
-    "facebook": "Comenta ACERO",
+    "instagram": "Comenta ACERO · Si quieres más información de la Especialización en Acero, comenta TEMARIO.",
+    "facebook": "Comenta ACERO · Si quieres más información de la Especialización en Acero, comenta TEMARIO.",
     "tiktok": "Pregunta abierta, sin palabra clave",
     "youtube_shorts": "Pregunta abierta, sin palabra clave",
     "linkedin": "Sin palabra clave: pregunta abierta"
@@ -14441,22 +14489,22 @@
    "pilar": "Objeción real · tiempo",
    "hook": "«No tengo tiempo» es la razón más honesta para no estudiar. Y la que más se puede ordenar.",
    "cta": {
-    "instagram": "Escríbenos MÁSTER por DM",
-    "facebook": "Escríbenos MÁSTER por Messenger",
+    "instagram": "Comenta MÁSTER",
+    "facebook": "Comenta MÁSTER",
     "linkedin": "Sin palabra clave: pregunta abierta",
     "threads": "Pregunta abierta, sin palabra clave"
    },
-   "caption": "«No tengo tiempo» es la razón más honesta para no estudiar. Y la que más se puede ordenar 👇\n\nEn las llamadas que revisamos, 3 de cada 5 personas que sí empezaron dudaron por lo mismo: el tiempo. Lo que les funcionó fue 1 a 2 horas al día, a su ritmo, y empezar por el bloque que resuelve su problema de hoy (modelado, coordinación, gestión o IA), no por «un máster de un año».\n\nNo te vamos a decir que es fácil. Es trabajo. Pero cabe en una semana normal.\n\n¿Cuántas horas a la semana podrías darle de verdad: 2, 5 o 10? 👇\n\nEscríbenos MÁSTER por DM y agendamos 20 minutos para ver qué bloque te toca.\n\n#BIM #Revit #BIMManager #Coordinacion #DesignModelingAcademy",
-   "notas_produccion": "PIEZA DE VENTA (objeción). SIN PRECIO, solo invitar a agendar. El dato «3 de 5» sale de COMPRADORES-VS-NO.md (40 llamadas de Fathom, 5 compraron). Fecha de la próxima cohorte: (confirmar con Dayana); si no hay fecha, la lámina 6 no la menciona. MÁSTER la contesta una persona o el bot de ventas (no es recurso gratis).",
+   "caption": "«No tengo tiempo» es la razón más honesta para no estudiar. Y la que más se puede ordenar 👇\n\nEn las llamadas que revisamos, 3 de cada 5 personas que sí empezaron dudaron por lo mismo: el tiempo. Lo que les funcionó fue 1 a 2 horas al día, a su ritmo, y empezar por el bloque que resuelve su problema de hoy (modelado, coordinación, gestión o IA), no por «un máster de un año».\n\nNo te vamos a decir que es fácil. Es trabajo. Pero cabe en una semana normal.\n\n¿Cuántas horas a la semana podrías darle de verdad: 2, 5 o 10? 👇\n\nLa próxima cohorte empieza en febrero. Si quieres más información de nuestro Máster por bloques, comenta MÁSTER. Te escribimos y agendamos 20 minutos para ver qué bloque te toca.\n\n#BIM #Revit #BIMManager #Coordinacion #DesignModelingAcademy",
+   "notas_produccion": "PIEZA DE VENTA (objeción). SIN PRECIO, solo invitar a agendar. El dato «3 de 5» sale de COMPRADORES-VS-NO.md (40 llamadas de Fathom, 5 compraron). Próxima cohorte: febrero de 2027 (sin día exacto; Dayana, 23-nov). MÁSTER la contesta una persona o el bot de ventas (no es recurso gratis).",
    "embudo": {
     "palabra": "MÁSTER",
-    "lead_magnet": "Llamada de diagnóstico de 20 minutos con un asesor",
-    "enlace": "(confirmar con Dayana: enlace de agenda del Máster)",
-    "dm_texto": "¡Hola! Gracias por escribir 🙌 Te dejo el enlace para agendar 20 minutos con un asesor: [ENLACE]\n\nEn la llamada vemos qué bloque te toca según tu trabajo actual y cuántas horas reales tienes.\n\nAntes de agendar, cuéntame: ¿cuántas horas a la semana podrías dedicarle y en qué trabajas hoy?",
-    "producto_destino": "Máster BIM Management + IA por bloques (agendar; nunca precio)",
+    "lead_magnet": "Información del Máster por bloques + cita de 20 minutos por WhatsApp (venta, sin precio)",
+    "enlace": "https://wa.me/593984372010",
+    "dm_texto": "¡Hola! Gracias por tu interés en el Máster por bloques 🙌\n\nVa por bloques (modelado, coordinación, gestión y BIM + IA) y empiezas por el que resuelve tu problema de hoy. La próxima cohorte empieza en febrero.\n\nEscríbenos por WhatsApp y agendamos 20 minutos para ver qué bloque te toca: [ENLACE]\n\nAntes de agendar, cuéntame: ¿cuántas horas a la semana podrías dedicarle y en qué trabajas hoy?",
+    "producto_destino": "Máster BIM Management + IA por bloques (cohorte de febrero; agendar, nunca precio)",
     "canal_dm": "OpenReply",
     "nuevo_lead_magnet": false,
-    "nota": "Venta: sin precio en el DM. El asesor no da el precio del Máster por chat; se ve en la llamada."
+    "nota": "Venta suave: el DM lleva a WhatsApp para agendar; el precio del Máster nunca va por contenido ni por chat."
    },
    "prompt_imagenes": "",
    "origen": "matriz diciembre 2026 / enero 2027",
@@ -14488,14 +14536,14 @@
     },
     {
      "n": 6,
-     "texto": "¿Cuántas horas a la semana podrías darle: 2, 5 o 10? 👇 · Escríbenos MÁSTER por DM y agendamos 20 minutos. Próxima cohorte: (confirmar con Dayana)",
+     "texto": "¿Cuántas horas a la semana podrías darle: 2, 5 o 10? 👇 · Próxima cohorte: febrero. · Si quieres más información de nuestro Máster por bloques, comenta MÁSTER.",
      "visual": "Cierre invertido ámbar."
     }
    ],
    "red_principal": "instagram",
    "cta_por_red": {
-    "instagram": "Escríbenos MÁSTER por DM",
-    "facebook": "Escríbenos MÁSTER por Messenger",
+    "instagram": "Comenta MÁSTER",
+    "facebook": "Comenta MÁSTER",
     "linkedin": "Sin palabra clave: pregunta abierta",
     "threads": "Pregunta abierta, sin palabra clave"
    }
@@ -14695,13 +14743,13 @@
    "pilar": "Contenido sintomático · acusar un hábito",
    "hook": "Te pidieron coordinar el proyecto y nadie te enseñó a dirigir una reunión de interferencias.",
    "cta": {
-    "instagram": "Comenta NIVEL",
-    "facebook": "Comenta NIVEL",
+    "instagram": "Comenta NIVEL · Si quieres más información de nuestro Máster por bloques, comenta MÁSTER.",
+    "facebook": "Comenta NIVEL · Si quieres más información de nuestro Máster por bloques, comenta MÁSTER.",
     "linkedin": "Sin palabra clave: pregunta abierta",
     "threads": "Pregunta abierta, sin palabra clave"
    },
-   "caption": "Te pidieron coordinar el proyecto y nadie te enseñó a dirigir una reunión de interferencias 👇\n\nTe pasa si:\n· llevas 300 choques a la reunión y nadie sabe por cuál empezar;\n· los choques se discuten, pero nadie sale con un responsable y una fecha;\n· en la siguiente reunión aparecen los mismos.\n\nCoordinar no es correr Navisworks. Es filtrar los choques con tolerancias, agruparlos por nivel y sistema, y llevar a la mesa solo los que necesitan una decisión, con su responsable.\n\n¿Cuántos choques llevaste a tu última reunión? 👇\n\nComenta NIVEL y te mando el test para ver si ya estás listo para coordinar.\n\n#BIM #Revit #BIMManager #Coordinacion #DesignModelingAcademy",
-   "notas_produccion": "Semana de fiestas. Banco de síntomas («Te pidieron coordinar y nadie te enseñó…»). REGLA 0: Gabriel revisa cada dato técnico contra la norma citada antes de publicar. (Clash Detective de Navisworks: tolerancias y agrupación de resultados).",
+   "caption": "Te pidieron coordinar el proyecto y nadie te enseñó a dirigir una reunión de interferencias 👇\n\nTe pasa si:\n· llevas 300 choques a la reunión y nadie sabe por cuál empezar;\n· los choques se discuten, pero nadie sale con un responsable y una fecha;\n· en la siguiente reunión aparecen los mismos.\n\nCoordinar no es correr Navisworks. Es filtrar los choques con tolerancias, agruparlos por nivel y sistema, y llevar a la mesa solo los que necesitan una decisión, con su responsable.\n\n¿Cuántos choques llevaste a tu última reunión? 👇\n\nComenta NIVEL y te mando el test para ver si ya estás listo para coordinar.\n\nSi quieres más información de nuestro Máster por bloques, comenta MÁSTER.\n\n#BIM #Revit #BIMManager #Coordinacion #DesignModelingAcademy",
+   "notas_produccion": "Semana de fiestas. Banco de síntomas («Te pidieron coordinar y nadie te enseñó…»). REGLA 0: Gabriel revisa cada dato técnico contra la norma citada antes de publicar. (Clash Detective de Navisworks: tolerancias y agrupación de resultados). VENTA SUAVE POR INFORMACIÓN (Dayana, 23-nov): el cierre suma «Si quieres más información de nuestro Máster por bloques, comenta MÁSTER.». MÁSTER es palabra de venta: su DM lleva a WhatsApp para agendar (cohorte de febrero, sin precio).",
    "embudo": {
     "palabra": "NIVEL",
     "lead_magnet": "Test de nivel BIM (5 minutos, gratis)",
@@ -14709,7 +14757,18 @@
     "dm_texto": "¡Hola! 🧩 Aquí tienes el test de nivel BIM (5 minutos): [ENLACE]\n\nUn truco para tu próxima reunión: agrupa los choques por nivel y sistema y lleva solo los que necesitan una decisión. Los demás se resuelven por correo.\n\n¿Coordinas tú las reuniones de interferencias en tu trabajo o te toca preparar el modelo para otra persona?",
     "producto_destino": "Máster BIM Management + IA por bloques (solo se invita a agendar; nunca precio)",
     "canal_dm": "OpenReply",
-    "nuevo_lead_magnet": false
+    "nuevo_lead_magnet": false,
+    "cta_info": {
+     "palabra": "MÁSTER",
+     "lead_magnet": "Información del Máster por bloques + cita de 20 minutos por WhatsApp (venta, sin precio)",
+     "enlace": "https://wa.me/593984372010",
+     "dm_texto": "¡Hola! Gracias por tu interés en el Máster por bloques 🙌\n\nVa por bloques (modelado, coordinación, gestión y BIM + IA) y empiezas por el que resuelve tu problema de hoy. La próxima cohorte empieza en febrero.\n\nEscríbenos por WhatsApp y agendamos 20 minutos para ver qué bloque te toca: [ENLACE]\n\nPara orientarte desde ya: ¿en qué trabajas hoy y qué te gustaría estar haciendo a fin de 2027?",
+     "producto_destino": "Máster BIM Management + IA por bloques (cohorte de febrero; agendar, nunca precio)",
+     "canal_dm": "OpenReply",
+     "nuevo_lead_magnet": false,
+     "nota": "Venta suave: el DM lleva a WhatsApp para agendar; el precio del Máster nunca va por contenido ni por chat.",
+     "texto_cierre": "Si quieres más información de nuestro Máster por bloques, comenta MÁSTER."
+    }
    },
    "prompt_imagenes": "",
    "origen": "matriz diciembre 2026 / enero 2027",
@@ -14746,14 +14805,14 @@
     },
     {
      "n": 7,
-     "texto": "¿Cuántos choques llevaste a tu última reunión? 👇 · Comenta NIVEL y te mando el test para ver si estás listo para coordinar.",
+     "texto": "¿Cuántos choques llevaste a tu última reunión? 👇 · Comenta NIVEL y te mando el test para ver si estás listo para coordinar. · Si quieres más información de nuestro Máster por bloques, comenta MÁSTER.",
      "visual": "Cierre invertido ámbar."
     }
    ],
    "red_principal": "instagram",
    "cta_por_red": {
-    "instagram": "Comenta NIVEL",
-    "facebook": "Comenta NIVEL",
+    "instagram": "Comenta NIVEL · Si quieres más información de nuestro Máster por bloques, comenta MÁSTER.",
+    "facebook": "Comenta NIVEL · Si quieres más información de nuestro Máster por bloques, comenta MÁSTER.",
     "linkedin": "Sin palabra clave: pregunta abierta",
     "threads": "Pregunta abierta, sin palabra clave"
    }
@@ -14848,13 +14907,13 @@
     "linkedin": "Sin palabra clave: pregunta abierta",
     "threads": "Pregunta abierta, sin palabra clave"
    },
-   "caption": "«Hice tres cursos de Revit y sigo sin poder entregar un proyecto en BIM.» 👇\n\nEs de las frases que más escuchamos. Y casi siempre tiene la misma causa: los cursos enseñan botones, y un proyecto no se entrega con botones, sino con un orden: qué se modela, con qué información y para quién.\n\nAntes de pagar otro curso, pruébalo. ¿Cuántos cursos llevas este año? 👇\n\nComenta DIPLOMADO y te mando gratis el primer módulo del Diplomado BIM.\n\n#BIM #Revit #BIMManager #Coordinacion #DesignModelingAcademy",
-   "notas_produccion": "PIEZA DE VENTA blanda (objeción) del regreso de fiestas: deja probar antes de pagar. SIN PRECIO. Objeción real de COMPRADORES-VS-NO («vi muchos cursos y ninguno me sirvió»). Fecha de inicio del Diplomado BIM: (confirmar con Dayana) si se quiere nombrar en el DM.",
+   "caption": "«Hice tres cursos de Revit y sigo sin poder entregar un proyecto en BIM.» 👇\n\nEs de las frases que más escuchamos. Y casi siempre tiene la misma causa: los cursos enseñan botones, y un proyecto no se entrega con botones, sino con un orden: qué se modela, con qué información y para quién.\n\nEl Diplomado BIM es grabado: no esperas una fecha de inicio, empiezas hoy y avanzas a tu ritmo. «Capacitación actualizada y flexible para profesionales en ejercicio», nos escribió Jorge Aguirre, ingeniero mecánico.\n\nAntes de pagar otro curso, pruébalo. ¿Cuántos cursos llevas este año? 👇\n\nComenta DIPLOMADO y te mando gratis el primer módulo del Diplomado BIM.\n\n#BIM #Revit #BIMManager #Coordinacion #DesignModelingAcademy",
+   "notas_produccion": "PIEZA DE VENTA blanda (objeción) del regreso de fiestas: deja probar antes de pagar. SIN PRECIO. Objeción real de COMPRADORES-VS-NO («vi muchos cursos y ninguno me sirvió»). El Diplomado BIM es grabado y se empieza en cualquier momento (Dayana, 23-nov): la ventaja es «empiezas hoy». Cita de Jorge Aguirre: correo GHL «✅ Seg 05 - Testimonios cierre» (fuentes/ghl/INVENTARIO-CORREOS.md), transcrita de la página de testimonios; no se dice de qué programa es porque el correo no lo dice.",
    "embudo": {
     "palabra": "DIPLOMADO",
     "lead_magnet": "Primer módulo del Diplomado BIM (gratis)",
     "enlace": "https://funnel.dgdesignmodeling.com/acceso-gratis-modulo-diplomado-bim-form",
-    "dm_texto": "¡Hola! 🎓 Aquí tienes el primer módulo del Diplomado BIM, gratis: [ENLACE]\n\nHazlo como si fuera tu proyecto: si al terminar el módulo sabes qué modelar y con qué información, el diplomado es para ti. Si no, nos dices y te orientamos.\n\n¿Qué cursos hiciste antes y qué fue lo que no te sirvió?",
+    "dm_texto": "¡Hola! 🎓 Aquí tienes el primer módulo del Diplomado BIM, gratis: [ENLACE]\n\nEl diplomado es grabado: si te gusta, empiezas hoy mismo, sin esperar una fecha. Hazlo como si fuera tu proyecto.\n\n¿Qué cursos hiciste antes y qué fue lo que no te sirvió?",
     "producto_destino": "Diplomado BIM",
     "canal_dm": "OpenReply",
     "nuevo_lead_magnet": false
@@ -14864,7 +14923,7 @@
    "slides": [
     {
      "n": 1,
-     "texto": "«HICE TRES CURSOS DE REVIT Y SIGO SIN PODER ENTREGAR UN PROYECTO EN BIM.» · Pruébalo antes de pagar: comenta DIPLOMADO",
+     "texto": "«HICE TRES CURSOS DE REVIT Y SIGO SIN PODER ENTREGAR UN PROYECTO EN BIM.» · Diplomado BIM grabado: empiezas hoy · Pruébalo antes de pagar: comenta DIPLOMADO",
      "visual": "Post 4:5: la frase en grande, tres certificados apilados y un plano en blanco al lado."
     }
    ],
@@ -14896,42 +14955,42 @@
    "intencion_dic": "venta",
    "producto": "Máster BIM Management + IA por bloques",
    "audiencia": "Ingeniero civil empleado que quiere pasar de modelador a coordinador (COMPRADORES-VS-NO)",
-   "estado": "ESPERA TESTIMONIO (confirmar con Dayana)",
-   "titulo": "Testimonio del Máster: de modelar a coordinar",
+   "estado": "POR DISEÑAR (testimonio guardado)",
+   "titulo": "«La mejor decisión»: del Diplomado BIM al Máster por bloques",
    "eje": "NÚCLEO-BIM",
    "pilar": "Prueba social · testimonio real",
-   "hook": "«[Frase textual del egresado sobre lo que cambió en su trabajo]»",
+   "hook": "«La mejor decisión que he tomado en mi formación profesional.»",
    "cta": {
-    "instagram": "Escríbenos MÁSTER por DM",
-    "facebook": "Escríbenos MÁSTER por Messenger",
+    "instagram": "Comenta MÁSTER",
+    "facebook": "Comenta MÁSTER",
     "linkedin": "Sin palabra clave: pregunta abierta",
     "threads": "Pregunta abierta, sin palabra clave"
    },
-   "caption": "«[Frase textual del egresado] (confirmar con Dayana)» — [nombre], [cargo], [país], egresado del Máster.\n\nLo que más se repite entre los que terminan: dejan de ser «el que modela» y pasan a estar en la mesa donde se decide el proyecto.\n\n¿En qué bloque te ves empezando 2027: modelado, coordinación, gestión o IA? 👇\n\nEscríbenos MÁSTER por DM y agendamos 20 minutos para verlo juntos.\n\n#BIM #Revit #BIMManager #Coordinacion #DesignModelingAcademy",
-   "notas_produccion": "PIEZA DE VENTA (testimonio). SIN PRECIO; solo invitar a agendar. Testimonio REAL con permiso (confirmar con Dayana: egresado, frase, cargo y permiso). Si hay fecha de la próxima cohorte (confirmar con Dayana), se dice en el DM, no en el post. Cierra el período 1-dic → 6-ene.",
+   "caption": "«La mejor decisión que he tomado en mi formación profesional.» — Albino Piñeiro, egresado del Diplomado BIM.\n\n«Aprendí muchísimo sobre el modelado estructural con metodología BIM y lo mejor es que todo fue muy práctico y aplicable al trabajo real.»\n\nSi ya tienes la base, el siguiente paso es pasar de modelar a coordinar y dirigir: el Máster por bloques. La próxima cohorte empieza en febrero.\n\n¿En qué bloque te ves empezando 2027: modelado, coordinación, gestión o IA? 👇\n\nSi quieres más información de nuestro Máster por bloques, comenta MÁSTER.\n\n#BIM #Revit #BIMManager #Coordinacion #DesignModelingAcademy",
+   "notas_produccion": "PIEZA DE VENTA (testimonio). SIN PRECIO; solo invitar a agendar. TESTIMONIO GUARDADO: Albino Piñeiro, egresado del Diplomado BIM. Cita literal del correo GHL «✅ Seg 05 - Testimonios cierre» (matriz-viral/fuentes/ghl/INVENTARIO-CORREOS.md, id 6a91acd31606a985ad2fcfa6), transcrita de la página https://funnel.dgdesignmodeling.com/testimonio-estudiantes-egresados-diplomado (captura del 11-ago-2026, seguimiento/secuencia-A-zapatas-acero.md). El correo «🟢MASTER2RC - Seguimiento 3» ya usa su video para invitar al Máster («si ya terminaste tu Diplomado, este es tu siguiente paso»). No hay testimonio guardado de un egresado del Máster: el post dice que es del Diplomado y no lo presenta como alumno del Máster. Cohorte: febrero de 2027.",
    "embudo": {
     "palabra": "MÁSTER",
-    "lead_magnet": "Llamada de diagnóstico de 20 minutos con un asesor",
-    "enlace": "(confirmar con Dayana: enlace de agenda del Máster)",
-    "dm_texto": "¡Hola! 🙌 Te dejo el enlace para agendar 20 minutos con un asesor: [ENLACE]\n\nEn la llamada vemos en qué bloque te conviene empezar según tu trabajo actual.\n\nPara preparar la llamada: ¿qué haces hoy en tus proyectos y qué te gustaría estar haciendo a fin de año?",
-    "producto_destino": "Máster BIM Management + IA por bloques (agendar; nunca precio)",
+    "lead_magnet": "Información del Máster por bloques + cita de 20 minutos por WhatsApp (venta, sin precio)",
+    "enlace": "https://wa.me/593984372010",
+    "dm_texto": "¡Hola! Gracias por tu interés en el Máster por bloques 🙌\n\nVa por bloques (modelado, coordinación, gestión y BIM + IA) y empiezas por el que resuelve tu problema de hoy. La próxima cohorte empieza en febrero.\n\nEscríbenos por WhatsApp y agendamos 20 minutos para ver qué bloque te toca: [ENLACE]\n\nPara orientarte desde ya: ¿en qué trabajas hoy y qué te gustaría estar haciendo a fin de 2027?",
+    "producto_destino": "Máster BIM Management + IA por bloques (cohorte de febrero; agendar, nunca precio)",
     "canal_dm": "OpenReply",
     "nuevo_lead_magnet": false,
-    "nota": "Venta: sin precio en el DM; el precio del Máster nunca va por contenido ni por chat."
+    "nota": "Venta suave: el DM lleva a WhatsApp para agendar; el precio del Máster nunca va por contenido ni por chat."
    },
    "prompt_imagenes": "",
    "origen": "matriz diciembre 2026 / enero 2027",
    "slides": [
     {
      "n": 1,
-     "texto": "«[FRASE TEXTUAL DEL EGRESADO]» · [Nombre], [cargo], [país] · Egresado del Máster BIM Management + IA",
-     "visual": "Foto real del egresado (con permiso) o captura de su modelo + la cita. (confirmar con Dayana)"
+     "texto": "«LA MEJOR DECISIÓN QUE HE TOMADO EN MI FORMACIÓN PROFESIONAL.» · Albino Piñeiro, egresado del Diplomado BIM · El siguiente paso: Máster por bloques, cohorte de febrero",
+     "visual": "Fotograma de Albino de su testimonio en video (página de testimonios) + la cita. Abajo, los 4 bloques del Máster."
     }
    ],
    "red_principal": "instagram",
    "cta_por_red": {
-    "instagram": "Escríbenos MÁSTER por DM",
-    "facebook": "Escríbenos MÁSTER por Messenger",
+    "instagram": "Comenta MÁSTER",
+    "facebook": "Comenta MÁSTER",
     "linkedin": "Sin palabra clave: pregunta abierta",
     "threads": "Pregunta abierta, sin palabra clave"
    }
@@ -14998,7 +15057,7 @@
    "cta": {
     "youtube": "Enlace al test de nivel en la descripción y pregunta abierta en el video (sin palabra clave)"
    },
-   "notas_produccion": "VIDEO LARGO 1/4. Tramos tomados de clips.json (c3-conexion: 2775-2798, 2915-2926, 3425-3448, 3464-3476 s) ampliados a 16:9 con el contexto que en el clip vertical se cortó. Versión 16:9 de la grabación (no el corte vertical). Subtítulos en español. La intro y el cierre de Gabriel están en «Grabaciones de Gabriel» (G-05). REGLA 0: Gabriel revisa cada dato técnico contra la norma citada antes de publicar. Cualquier afirmación sobre Revit y el servidor MCP de Autodesk se dice igual que en noviembre: vista previa técnica y de solo lectura (lee el modelo, no lo modifica).",
+   "notas_produccion": "VIDEO LARGO 1/4. Tramos tomados de clips.json (c3-conexion: 2775-2798, 2915-2926, 3425-3448, 3464-3476 s) ampliados a 16:9 con el contexto que en el clip vertical se cortó. Versión 16:9 de la grabación (no el corte vertical). Subtítulos en español. La intro y el cierre de Gabriel están en «Grabaciones de Gabriel» (G-05). REGLA 0: Gabriel revisa cada dato técnico contra la norma citada antes de publicar. Lo que se usó en el workshop se dice así: un servidor MCP de código abierto sobre pyRevit y NonicaTab AI Connector. No decir «servidor MCP de Autodesk» ni «Revit 2027».",
    "origen": "matriz diciembre 2026 / enero 2027",
    "red_principal": "youtube",
    "cta_por_red": {
@@ -15061,7 +15120,7 @@
    "cta": {
     "youtube": "Enlace al test de nivel en la descripción y pregunta abierta en el video (sin palabra clave)"
    },
-   "notas_produccion": "VIDEO LARGO 2/4. Tramos de clips.json: c2-niveles (3518-3600 s) y c1-muros (3912-3936 y 3946-3990 s), en 16:9 y con el audio completo revisado. Versión 16:9 de la grabación (no el corte vertical). Subtítulos en español. La intro y el cierre de Gabriel están en «Grabaciones de Gabriel» (G-05). REGLA 0: Gabriel revisa cada dato técnico contra la norma citada antes de publicar. Cualquier afirmación sobre Revit y el servidor MCP de Autodesk se dice igual que en noviembre: vista previa técnica y de solo lectura (lee el modelo, no lo modifica).",
+   "notas_produccion": "VIDEO LARGO 2/4. Tramos de clips.json: c2-niveles (3518-3600 s) y c1-muros (3912-3936 y 3946-3990 s), en 16:9 y con el audio completo revisado. Versión 16:9 de la grabación (no el corte vertical). Subtítulos en español. La intro y el cierre de Gabriel están en «Grabaciones de Gabriel» (G-05). REGLA 0: Gabriel revisa cada dato técnico contra la norma citada antes de publicar. Lo que se usó en el workshop se dice así: un servidor MCP de código abierto sobre pyRevit y NonicaTab AI Connector. No decir «servidor MCP de Autodesk» ni «Revit 2027».",
    "origen": "matriz diciembre 2026 / enero 2027",
    "red_principal": "youtube",
    "cta_por_red": {
@@ -15124,7 +15183,7 @@
    "cta": {
     "youtube": "Enlace al test de nivel en la descripción y pregunta abierta en el video (sin palabra clave)"
    },
-   "notas_produccion": "VIDEO LARGO 3/4. Tramos de clips.json (c4-niveles-duplicados: 4576-4600 y 4636-4685 s). Sale en la semana de fiestas (29-dic), sin venta. Versión 16:9 de la grabación (no el corte vertical). Subtítulos en español. La intro y el cierre de Gabriel están en «Grabaciones de Gabriel» (G-05). REGLA 0: Gabriel revisa cada dato técnico contra la norma citada antes de publicar. Cualquier afirmación sobre Revit y el servidor MCP de Autodesk se dice igual que en noviembre: vista previa técnica y de solo lectura (lee el modelo, no lo modifica).",
+   "notas_produccion": "VIDEO LARGO 3/4. Tramos de clips.json (c4-niveles-duplicados: 4576-4600 y 4636-4685 s). Sale en la semana de fiestas (29-dic), sin venta. Versión 16:9 de la grabación (no el corte vertical). Subtítulos en español. La intro y el cierre de Gabriel están en «Grabaciones de Gabriel» (G-05). REGLA 0: Gabriel revisa cada dato técnico contra la norma citada antes de publicar. Lo que se usó en el workshop se dice así: un servidor MCP de código abierto sobre pyRevit y NonicaTab AI Connector. No decir «servidor MCP de Autodesk» ni «Revit 2027».",
    "origen": "matriz diciembre 2026 / enero 2027",
    "red_principal": "youtube",
    "cta_por_red": {
@@ -15177,7 +15236,7 @@
    "cta": {
     "youtube": "Enlace al test de nivel en la descripción y pregunta abierta en el video (sin palabra clave)"
    },
-   "notas_produccion": "VIDEO LARGO 4/4. Si en el workshop la IA no se equivocó en ningún momento, este video NO se publica con un error inventado: se cambia por un corte de las preguntas del público (nada inventado, regla 1). Mismo bloque que usó el carrusel «Dónde se equivocó la IA» de noviembre. Versión 16:9 de la grabación (no el corte vertical). Subtítulos en español. La intro y el cierre de Gabriel están en «Grabaciones de Gabriel» (G-05). REGLA 0: Gabriel revisa cada dato técnico contra la norma citada antes de publicar. Cualquier afirmación sobre Revit y el servidor MCP de Autodesk se dice igual que en noviembre: vista previa técnica y de solo lectura (lee el modelo, no lo modifica).",
+   "notas_produccion": "VIDEO LARGO 4/4. Si en el workshop la IA no se equivocó en ningún momento, este video NO se publica con un error inventado: se cambia por un corte de las preguntas del público (nada inventado, regla 1). Mismo bloque que usó el carrusel «Dónde se equivocó la IA» de noviembre. Versión 16:9 de la grabación (no el corte vertical). Subtítulos en español. La intro y el cierre de Gabriel están en «Grabaciones de Gabriel» (G-05). REGLA 0: Gabriel revisa cada dato técnico contra la norma citada antes de publicar. Lo que se usó en el workshop se dice así: un servidor MCP de código abierto sobre pyRevit y NonicaTab AI Connector. No decir «servidor MCP de Autodesk» ni «Revit 2027».",
    "origen": "matriz diciembre 2026 / enero 2027",
    "red_principal": "youtube",
    "cta_por_red": {
@@ -15233,10 +15292,15 @@
    },
    "estructura_historia": "valor 3 tiempos",
    "origen": "matriz diciembre 2026 / enero 2027",
-   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. Primer día del mes: Daniela limpia antes las destacadas de noviembre (Black Friday, combo).",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. Primer día del mes: Daniela limpia antes las destacadas de noviembre (Black Friday, combo). PRODUCCIÓN: RutaMaster-vertical · Frame 2: recorte de 5 s del Bloque 2 «Integras modelos, coordinas disciplinas» de fondo bajo la encuesta. Frame 1: repost del carrusel.",
    "cta_por_red": {
     "instagram": "Respóndeme NIVEL",
     "facebook": "Respóndeme NIVEL"
+   },
+   "produccion": {
+    "proyecto_remotion": "/home/user/videos-dma/proyectos/historias-dma",
+    "composicion": "RutaMaster-vertical",
+    "uso": "Frame 2: recorte de 5 s del Bloque 2 «Integras modelos, coordinas disciplinas» de fondo bajo la encuesta. Frame 1: repost del carrusel."
    }
   },
   {
@@ -15288,10 +15352,15 @@
    },
    "estructura_historia": "valor 3 tiempos",
    "origen": "matriz diciembre 2026 / enero 2027",
-   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. El quiz lo revisa Gabriel (regla 0).",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. El quiz lo revisa Gabriel (regla 0). PRODUCCIÓN: ninguna · Repost del reel y quiz sobre foto: sin Remotion.",
    "cta_por_red": {
     "instagram": "Respóndeme ZAPATA",
     "facebook": "Respóndeme ZAPATA"
+   },
+   "produccion": {
+    "proyecto_remotion": "/home/user/videos-dma/proyectos/historias-dma",
+    "composicion": "ninguna",
+    "uso": "Repost del reel y quiz sobre foto: sin Remotion."
    }
   },
   {
@@ -15326,8 +15395,8 @@
     },
     {
      "n": 2,
-     "visual": "Prueba REAL: captura de un alumno (nombre tapado si no hay permiso) o del Tutor IA de Acero revisando una verificación.",
-     "texto": "Así revisa su nave un alumno de la Especialización en Acero, con un tutor que le corrige el orden de verificación.",
+     "visual": "3 s del alumno a cámara sacados del reel testimonio del 23-oct (De2JwdYlfH9), con su frase en grande.",
+     "texto": "«Ustedes han sido una gran solución.» Lo dice un alumno de la Especialización en Acero.",
      "sticker": "Ninguno."
     },
     {
@@ -15343,11 +15412,17 @@
    },
    "estructura_historia": "venta 3 tiempos",
    "origen": "matriz diciembre 2026 / enero 2027",
-   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. VENTA DEL JUEVES (semana 1). Sin precio. Oferta de diciembre: ninguna (confirmar con Dayana); si Dayana define una, se agrega el frame con su fecha.",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. VENTA DEL JUEVES (semana 1). Sin precio. Oferta de diciembre: PENDIENTE (la pasa Dayana); su slot es la historia del jue 17-dic. PRODUCCIÓN: Story-vertical (selfie de Gabriel con subtítulos palabra por palabra: se cambia public/gabriel.mp4 por la selfie nueva y src/words.json por su transcripción; ajustar la lista KEY de palabras en cobre) · Frame 1: selfie de Gabriel (G-03a). Frame 2: 3 s del alumno del reel testimonio del 23-oct (De2JwdYlfH9). Alternativa al frame 2: RutaAcero-vertical (recorte de 8 s: tutor de IA y 4 sesiones uno a uno). Testimonio guardado: reel del 23-oct (De2JwdYlfH9). Oferta de diciembre: PENDIENTE (la pasa Dayana); su slot es la historia del jue 17-dic.",
    "venta": true,
    "cta_por_red": {
     "instagram": "Respóndeme TEMARIO",
     "facebook": "Respóndeme TEMARIO"
+   },
+   "produccion": {
+    "proyecto_remotion": "/home/user/videos-dma/proyectos/historias-dma",
+    "composicion": "Story-vertical (selfie de Gabriel con subtítulos palabra por palabra: se cambia public/gabriel.mp4 por la selfie nueva y src/words.json por su transcripción; ajustar la lista KEY de palabras en cobre)",
+    "uso": "Frame 1: selfie de Gabriel (G-03a). Frame 2: 3 s del alumno del reel testimonio del 23-oct (De2JwdYlfH9). Alternativa al frame 2: RutaAcero-vertical (recorte de 8 s: tutor de IA y 4 sesiones uno a uno).",
+    "selfie": "G-03a"
    }
   },
   {
@@ -15393,10 +15468,15 @@
    },
    "estructura_historia": "valor 3 tiempos",
    "origen": "matriz diciembre 2026 / enero 2027",
-   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final.",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. PRODUCCIÓN: ninguna · Repost del post del testimonio + caja de preguntas.",
    "cta_por_red": {
     "instagram": "Caja de preguntas",
     "facebook": "Caja de preguntas"
+   },
+   "produccion": {
+    "proyecto_remotion": "/home/user/videos-dma/proyectos/historias-dma",
+    "composicion": "ninguna",
+    "uso": "Repost del post del testimonio + caja de preguntas."
    }
   },
   {
@@ -15454,10 +15534,15 @@
    },
    "estructura_historia": "valor 3 tiempos",
    "origen": "matriz diciembre 2026 / enero 2027",
-   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final.",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. PRODUCCIÓN: ninguna · Repost del carrusel; respuestas de la caja en lámina de marca.",
    "cta_por_red": {
     "instagram": "Respóndeme MEMORIA",
     "facebook": "Respóndeme MEMORIA"
+   },
+   "produccion": {
+    "proyecto_remotion": "/home/user/videos-dma/proyectos/historias-dma",
+    "composicion": "ninguna",
+    "uso": "Repost del carrusel; respuestas de la caja en lámina de marca."
    }
   },
   {
@@ -15509,10 +15594,15 @@
    },
    "estructura_historia": "valor 3 tiempos",
    "origen": "matriz diciembre 2026 / enero 2027",
-   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. 8-dic: feriado en Colombia, Perú, Argentina y Chile (no en Ecuador): historias normales.",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. 8-dic: feriado en Colombia, Perú, Argentina y Chile (no en Ecuador): historias normales. PRODUCCIÓN: ninguna · Repost del reel de simbología.",
    "cta_por_red": {
     "instagram": "Respóndeme NIVEL",
     "facebook": "Respóndeme NIVEL"
+   },
+   "produccion": {
+    "proyecto_remotion": "/home/user/videos-dma/proyectos/historias-dma",
+    "composicion": "ninguna",
+    "uso": "Repost del reel de simbología."
    }
   },
   {
@@ -15564,10 +15654,15 @@
    },
    "estructura_historia": "valor 3 tiempos",
    "origen": "matriz diciembre 2026 / enero 2027",
-   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. Gabriel ya sale en el reel: no hace falta selfie nueva.",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. Gabriel ya sale en el reel: no hace falta selfie nueva. PRODUCCIÓN: ninguna · Repost del reel de Gabriel (ya es selfie de cámara).",
    "cta_por_red": {
     "instagram": "Respóndeme MEMORIA",
     "facebook": "Respóndeme MEMORIA"
+   },
+   "produccion": {
+    "proyecto_remotion": "/home/user/videos-dma/proyectos/historias-dma",
+    "composicion": "ninguna",
+    "uso": "Repost del reel de Gabriel (ya es selfie de cámara)."
    }
   },
   {
@@ -15602,15 +15697,15 @@
     },
     {
      "n": 2,
-     "visual": "Prueba REAL: mensaje de un alumno del Máster (nombre tapado si no hay permiso) o captura del test de nivel con su resultado.",
-     "texto": "Así empezó un alumno: hizo el test, salió en coordinación y empezó por ese bloque.",
+     "visual": "RutaMaster-vertical (31 s): los 4 bloques del Máster y sus microcredenciales.",
+     "texto": "4 bloques en orden. Empiezas por el que resuelve tu problema de hoy. Próxima cohorte: febrero.",
      "sticker": "Ninguno."
     },
     {
      "n": 3,
      "visual": "Cierre invertido ámbar.",
-     "texto": "Respóndeme MÁSTER si estás cansado de ser el que modela y de enterarte tarde de los cambios. Agendamos 20 minutos.",
-     "sticker": "RESPONDER CON «MÁSTER» (lo contesta una persona con el enlace de agenda)."
+     "texto": "Respóndeme MÁSTER si estás cansado de ser el que modela y de enterarte tarde de los cambios. Te escribimos por WhatsApp y agendamos 20 minutos.",
+     "sticker": "RESPONDER CON «MÁSTER» (lo contesta una persona con el WhatsApp https://wa.me/593984372010)."
     }
    ],
    "cta": {
@@ -15619,11 +15714,17 @@
    },
    "estructura_historia": "venta 3 tiempos",
    "origen": "matriz diciembre 2026 / enero 2027",
-   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. VENTA DEL JUEVES (semana 2). SIN PRECIO: solo agendar. Fecha de la próxima cohorte: (confirmar con Dayana).",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. VENTA DEL JUEVES (semana 2). SIN PRECIO: solo agendar. Próxima cohorte: febrero de 2027. PRODUCCIÓN: Story-vertical (selfie de Gabriel con subtítulos palabra por palabra: se cambia public/gabriel.mp4 por la selfie nueva y src/words.json por su transcripción; ajustar la lista KEY de palabras en cobre) · Frame 1: selfie de Gabriel (G-03b). Frame 2: RutaMaster-vertical completo (31 s; los 4 bloques y las microcredenciales) en lugar de la captura.",
    "venta": true,
    "cta_por_red": {
     "instagram": "Respóndeme MÁSTER",
     "facebook": "Respóndeme MÁSTER"
+   },
+   "produccion": {
+    "proyecto_remotion": "/home/user/videos-dma/proyectos/historias-dma",
+    "composicion": "Story-vertical (selfie de Gabriel con subtítulos palabra por palabra: se cambia public/gabriel.mp4 por la selfie nueva y src/words.json por su transcripción; ajustar la lista KEY de palabras en cobre)",
+    "uso": "Frame 1: selfie de Gabriel (G-03b). Frame 2: RutaMaster-vertical completo (31 s; los 4 bloques y las microcredenciales) en lugar de la captura.",
+    "selfie": "G-03b"
    }
   },
   {
@@ -15681,10 +15782,15 @@
    },
    "estructura_historia": "valor 3 tiempos",
    "origen": "matriz diciembre 2026 / enero 2027",
-   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final.",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. PRODUCCIÓN: ninguna · Repost del carrusel de honorarios.",
    "cta_por_red": {
     "instagram": "Respóndeme COTIZA",
     "facebook": "Respóndeme COTIZA"
+   },
+   "produccion": {
+    "proyecto_remotion": "/home/user/videos-dma/proyectos/historias-dma",
+    "composicion": "ninguna",
+    "uso": "Repost del carrusel de honorarios."
    }
   },
   {
@@ -15742,10 +15848,15 @@
    },
    "estructura_historia": "valor 3 tiempos",
    "origen": "matriz diciembre 2026 / enero 2027",
-   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. El quiz lo confirma Gabriel contra la tabla 1604.3 del IBC 2021 (regla 0).",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. El quiz lo confirma Gabriel contra la tabla 1604.3 del IBC 2021 (regla 0). PRODUCCIÓN: ninguna · Repost del carrusel de deflexiones + quiz.",
    "cta_por_red": {
     "instagram": "Respóndeme ACERO",
     "facebook": "Respóndeme ACERO"
+   },
+   "produccion": {
+    "proyecto_remotion": "/home/user/videos-dma/proyectos/historias-dma",
+    "composicion": "ninguna",
+    "uso": "Repost del carrusel de deflexiones + quiz."
    }
   },
   {
@@ -15797,10 +15908,15 @@
    },
    "estructura_historia": "valor 3 tiempos",
    "origen": "matriz diciembre 2026 / enero 2027",
-   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. Gabriel sale en el reel: no hace falta selfie nueva.",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. Gabriel sale en el reel: no hace falta selfie nueva. PRODUCCIÓN: AnatomyConexion-vertical · Frame 2: los 13 s de la conexión viga-columna a momento como fondo del texto (apoyos y uniones). Frame 1: repost del reel.",
    "cta_por_red": {
     "instagram": "Respóndeme ACERO",
     "facebook": "Respóndeme ACERO"
+   },
+   "produccion": {
+    "proyecto_remotion": "/home/user/videos-dma/proyectos/historias-dma",
+    "composicion": "AnatomyConexion-vertical",
+    "uso": "Frame 2: los 13 s de la conexión viga-columna a momento como fondo del texto (apoyos y uniones). Frame 1: repost del reel."
    }
   },
   {
@@ -15852,10 +15968,15 @@
    },
    "estructura_historia": "valor 3 tiempos",
    "origen": "matriz diciembre 2026 / enero 2027",
-   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final.",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. PRODUCCIÓN: ninguna · Repost del clip del workshop.",
    "cta_por_red": {
     "instagram": "Respóndeme NIVEL",
     "facebook": "Respóndeme NIVEL"
+   },
+   "produccion": {
+    "proyecto_remotion": "/home/user/videos-dma/proyectos/historias-dma",
+    "composicion": "ninguna",
+    "uso": "Repost del clip del workshop."
    }
   },
   {
@@ -15890,14 +16011,14 @@
     },
     {
      "n": 2,
-     "visual": "Prueba REAL: captura de una memoria de un alumno del Diplomado (datos tapados) o del Tutor IA corrigiendo una verificación.",
-     "texto": "Así entrega su memoria un alumno del Diplomado: cada número con su norma y su artículo.",
+     "visual": "Tarjeta con la cita sobre RutaDiplomado-vertical (sin voz).",
+     "texto": "«Una inversión clave para mantenerse vigente en la ingeniería moderna.» — Luis Fernández, Durán (Ecuador), alumno del diplomado.",
      "sticker": "Ninguno."
     },
     {
      "n": 3,
      "visual": "Cierre invertido ámbar.",
-     "texto": "Respóndeme ESTRUCTURAS si estás cansado de las memorias devueltas y de calcular solo. Te cuento cómo funciona el Diplomado.",
+     "texto": "Respóndeme ESTRUCTURAS si estás cansado de las memorias devueltas y de calcular solo. Es grabado: empiezas hoy. Te cuento cómo funciona.",
      "sticker": "RESPONDER CON «ESTRUCTURAS» (lo contesta una persona)."
     }
    ],
@@ -15907,11 +16028,17 @@
    },
    "estructura_historia": "venta 3 tiempos",
    "origen": "matriz diciembre 2026 / enero 2027",
-   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. VENTA DEL JUEVES (semana 3). Sin precio. Fecha de inicio del Diplomado: (confirmar con Dayana). ESTRUCTURAS es palabra de venta (como NAVES en noviembre): no la escucha ninguna automatización; la contesta una persona. (confirmar con Dayana)",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. VENTA DEL JUEVES (semana 3). Sin precio. Grabado: empiezas hoy (Dayana, 23-nov). ESTRUCTURAS es palabra de venta (como NAVES en noviembre): no la escucha ninguna automatización; la contesta una persona. (confirmar con Dayana) PRODUCCIÓN: Story-vertical (selfie de Gabriel con subtítulos palabra por palabra: se cambia public/gabriel.mp4 por la selfie nueva y src/words.json por su transcripción; ajustar la lista KEY de palabras en cobre) · Frame 1: selfie de Gabriel (G-03c). Frame 2: RutaDiplomado-vertical (recorte de los módulos 3 y 4: hormigón armado y detallado del refuerzo) con la cita de Luis Fernández encima. OJO: la voz de RutaDiplomado dice «200 horas en 4 meses» y «clase magistral en vivo»; si choca con «empiezas hoy», usar solo imagen sin voz. Testimonio guardado: Luis Fernández (Durán, Ecuador), correo GHL «✅ Seg 05 - Testimonios cierre» (fuentes/ghl/INVENTARIO-CORREOS.md), transcrito de la página de testimonios. SLOT DE OFERTA DE DICIEMBRE: si Dayana pasa una oferta, va en esta historia (semana 3) y en el correo del 16-dic; si la oferta es de otro producto, la historia cambia de producto.",
    "venta": true,
    "cta_por_red": {
     "instagram": "Respóndeme ESTRUCTURAS",
     "facebook": "Respóndeme ESTRUCTURAS"
+   },
+   "produccion": {
+    "proyecto_remotion": "/home/user/videos-dma/proyectos/historias-dma",
+    "composicion": "Story-vertical (selfie de Gabriel con subtítulos palabra por palabra: se cambia public/gabriel.mp4 por la selfie nueva y src/words.json por su transcripción; ajustar la lista KEY de palabras en cobre)",
+    "uso": "Frame 1: selfie de Gabriel (G-03c). Frame 2: RutaDiplomado-vertical (recorte de los módulos 3 y 4: hormigón armado y detallado del refuerzo) con la cita de Luis Fernández encima. OJO: la voz de RutaDiplomado dice «200 horas en 4 meses» y «clase magistral en vivo»; si choca con «empiezas hoy», usar solo imagen sin voz.",
+    "selfie": "G-03c"
    }
   },
   {
@@ -15963,10 +16090,16 @@
    },
    "estructura_historia": "valor 3 tiempos",
    "origen": "matriz diciembre 2026 / enero 2027",
-   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. Horario de atención en fiestas: (confirmar con Dayana).",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. Horario de atención en fiestas: (confirmar con Dayana). PRODUCCIÓN: Faltan-vertical (plantilla de selfie corta de 6 s) · Frame 3 (horario de fiestas): selfie corta de Gabriel con su voz, en la plantilla Faltan cambiando gabriel8.mp4 y words8.json; si no hay selfie, lámina simple.",
    "cta_por_red": {
     "instagram": "Caja de preguntas",
     "facebook": "Caja de preguntas"
+   },
+   "produccion": {
+    "proyecto_remotion": "/home/user/videos-dma/proyectos/historias-dma",
+    "composicion": "Faltan-vertical (plantilla de selfie corta de 6 s)",
+    "uso": "Frame 3 (horario de fiestas): selfie corta de Gabriel con su voz, en la plantilla Faltan cambiando gabriel8.mp4 y words8.json; si no hay selfie, lámina simple.",
+    "selfie": "G-03e (opcional)"
    }
   },
   {
@@ -16012,10 +16145,15 @@
    },
    "estructura_historia": "fiestas · liviana",
    "origen": "matriz diciembre 2026 / enero 2027",
-   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final.",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. PRODUCCIÓN: RutaMaster-vertical · Frame 1: recorte de 5 s del Bloque 1 «BIM Professional» bajo la encuesta.",
    "cta_por_red": {
     "instagram": "Respóndeme BIM",
     "facebook": "Respóndeme BIM"
+   },
+   "produccion": {
+    "proyecto_remotion": "/home/user/videos-dma/proyectos/historias-dma",
+    "composicion": "RutaMaster-vertical",
+    "uso": "Frame 1: recorte de 5 s del Bloque 1 «BIM Professional» bajo la encuesta."
    }
   },
   {
@@ -16055,10 +16193,15 @@
    },
    "estructura_historia": "fiestas · liviana",
    "origen": "matriz diciembre 2026 / enero 2027",
-   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. Historia de conversación, sin palabra. Se escribe por DM a quien votó «Sí, entrega» para preguntarle qué entrega.",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. Historia de conversación, sin palabra. Se escribe por DM a quien votó «Sí, entrega» para preguntarle qué entrega. PRODUCCIÓN: ninguna · Encuesta sobre azul de marca.",
    "cta_por_red": {
     "instagram": "Encuesta",
     "facebook": "Encuesta"
+   },
+   "produccion": {
+    "proyecto_remotion": "/home/user/videos-dma/proyectos/historias-dma",
+    "composicion": "ninguna",
+    "uso": "Encuesta sobre azul de marca."
    }
   },
   {
@@ -16104,10 +16247,15 @@
    },
    "estructura_historia": "fiestas · liviana",
    "origen": "matriz diciembre 2026 / enero 2027",
-   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. Último día de historias antes de Navidad. Sin venta.",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. Último día de historias antes de Navidad. Sin venta. PRODUCCIÓN: ninguna · Repost del reel de 5 cimentaciones.",
    "cta_por_red": {
     "instagram": "Respóndeme ZAPATA",
     "facebook": "Respóndeme ZAPATA"
+   },
+   "produccion": {
+    "proyecto_remotion": "/home/user/videos-dma/proyectos/historias-dma",
+    "composicion": "ninguna",
+    "uso": "Repost del reel de 5 cimentaciones."
    }
   },
   {
@@ -16153,10 +16301,15 @@
    },
    "estructura_historia": "fiestas · liviana",
    "origen": "matriz diciembre 2026 / enero 2027",
-   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final.",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. PRODUCCIÓN: RutaMaster-vertical · Frame 1: recorte de 5 s del Bloque 2 «Resuelves interferencias» bajo el slider.",
    "cta_por_red": {
     "instagram": "Respóndeme NIVEL",
     "facebook": "Respóndeme NIVEL"
+   },
+   "produccion": {
+    "proyecto_remotion": "/home/user/videos-dma/proyectos/historias-dma",
+    "composicion": "RutaMaster-vertical",
+    "uso": "Frame 1: recorte de 5 s del Bloque 2 «Resuelves interferencias» bajo el slider."
    }
   },
   {
@@ -16202,10 +16355,15 @@
    },
    "estructura_historia": "fiestas · liviana",
    "origen": "matriz diciembre 2026 / enero 2027",
-   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. 0,888 kg/m × 12 m = 10,66 kg (lo confirma Gabriel).",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. 0,888 kg/m × 12 m = 10,66 kg (lo confirma Gabriel). PRODUCCIÓN: ninguna · Quiz sobre foto de varillas + enlace al video de YouTube.",
    "cta_por_red": {
     "instagram": "Quiz",
     "facebook": "Quiz"
+   },
+   "produccion": {
+    "proyecto_remotion": "/home/user/videos-dma/proyectos/historias-dma",
+    "composicion": "ninguna",
+    "uso": "Quiz sobre foto de varillas + enlace al video de YouTube."
    }
   },
   {
@@ -16251,10 +16409,15 @@
    },
    "estructura_historia": "fiestas · liviana",
    "origen": "matriz diciembre 2026 / enero 2027",
-   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. Las respuestas de la caja se guardan para la matriz de enero-febrero.",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. Las respuestas de la caja se guardan para la matriz de enero-febrero. PRODUCCIÓN: ninguna · Repost del post de la tabla + caja de preguntas.",
    "cta_por_red": {
     "instagram": "Caja de preguntas",
     "facebook": "Caja de preguntas"
+   },
+   "produccion": {
+    "proyecto_remotion": "/home/user/videos-dma/proyectos/historias-dma",
+    "composicion": "ninguna",
+    "uso": "Repost del post de la tabla + caja de preguntas."
    }
   },
   {
@@ -16290,7 +16453,7 @@
     {
      "n": 2,
      "visual": "Cierre invertido ámbar.",
-     "texto": "Respóndeme DIPLOMADO y te mando gratis el primer módulo del Diplomado BIM. Pruébalo antes de pagar.",
+     "texto": "Respóndeme DIPLOMADO y te mando gratis el primer módulo del Diplomado BIM. Es grabado: si te gusta, empiezas hoy.",
      "sticker": "RESPONDER CON «DIPLOMADO»."
     }
    ],
@@ -16300,10 +16463,15 @@
    },
    "estructura_historia": "fiestas · liviana",
    "origen": "matriz diciembre 2026 / enero 2027",
-   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. Regreso de fiestas.",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. Regreso de fiestas. PRODUCCIÓN: RutaDiplomado-vertical · Frame 2: recorte sin voz de los módulos como fondo de «empiezas hoy».",
    "cta_por_red": {
     "instagram": "Respóndeme DIPLOMADO",
     "facebook": "Respóndeme DIPLOMADO"
+   },
+   "produccion": {
+    "proyecto_remotion": "/home/user/videos-dma/proyectos/historias-dma",
+    "composicion": "RutaDiplomado-vertical",
+    "uso": "Frame 2: recorte sin voz de los módulos como fondo de «empiezas hoy»."
    }
   },
   {
@@ -16338,15 +16506,15 @@
     },
     {
      "n": 2,
-     "visual": "Prueba REAL: resultado del test de nivel de un alumno o mensaje de un egresado (con permiso).",
-     "texto": "Así decidió un alumno su primer bloque: test de 5 minutos y una llamada de 20.",
+     "visual": "Tarjeta con la cita de Albino Piñeiro sobre RutaMaster-vertical (recorte de 6 s).",
+     "texto": "«La mejor decisión que he tomado en mi formación profesional.» — Albino Piñeiro, egresado del Diplomado BIM. Su siguiente paso: el Máster.",
      "sticker": "Ninguno."
     },
     {
      "n": 3,
      "visual": "Cierre invertido ámbar.",
-     "texto": "Respóndeme MÁSTER si estás cansado de ver pasar las oportunidades de coordinar. Agendamos 20 minutos.",
-     "sticker": "RESPONDER CON «MÁSTER» (lo contesta una persona con el enlace de agenda)."
+     "texto": "Respóndeme MÁSTER si estás cansado de ver pasar las oportunidades de coordinar. La cohorte empieza en febrero: agendamos 20 minutos por WhatsApp.",
+     "sticker": "RESPONDER CON «MÁSTER» (lo contesta una persona con el WhatsApp https://wa.me/593984372010)."
     }
    ],
    "cta": {
@@ -16355,11 +16523,17 @@
    },
    "estructura_historia": "venta 3 tiempos",
    "origen": "matriz diciembre 2026 / enero 2027",
-   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. VENTA de la semana del regreso (no hay jueves en el período). SIN PRECIO. Próxima cohorte y si hay oferta de enero: (confirmar con Dayana).",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. VENTA de la semana del regreso (no hay jueves en el período). SIN PRECIO. Próxima cohorte: febrero de 2027. Oferta de enero: pendiente (la pasa Dayana). Testimonio guardado de Albino Piñeiro (correo GHL «Seg 05 - Testimonios cierre»). PRODUCCIÓN: Story-vertical (selfie de Gabriel con subtítulos palabra por palabra: se cambia public/gabriel.mp4 por la selfie nueva y src/words.json por su transcripción; ajustar la lista KEY de palabras en cobre) · Frame 1: selfie de Gabriel (G-03d). Frame 2: tarjeta con la cita de Albino Piñeiro sobre RutaMaster-vertical (recorte de 6 s, «los cuatro suman hacia el título del Máster»).",
    "venta": true,
    "cta_por_red": {
     "instagram": "Respóndeme MÁSTER",
     "facebook": "Respóndeme MÁSTER"
+   },
+   "produccion": {
+    "proyecto_remotion": "/home/user/videos-dma/proyectos/historias-dma",
+    "composicion": "Story-vertical (selfie de Gabriel con subtítulos palabra por palabra: se cambia public/gabriel.mp4 por la selfie nueva y src/words.json por su transcripción; ajustar la lista KEY de palabras en cobre)",
+    "uso": "Frame 1: selfie de Gabriel (G-03d). Frame 2: tarjeta con la cita de Albino Piñeiro sobre RutaMaster-vertical (recorte de 6 s, «los cuatro suman hacia el título del Máster»).",
+    "selfie": "G-03d"
    }
   },
   {
@@ -16405,10 +16579,15 @@
    },
    "estructura_historia": "fiestas · liviana",
    "origen": "matriz diciembre 2026 / enero 2027",
-   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. Se escribe por DM a cada persona que votó, con el enlace del test de nivel.",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. Se escribe por DM a cada persona que votó, con el enlace del test de nivel. PRODUCCIÓN: RutaMaster-vertical · Frame 1: repost del post del testimonio. Frame 2: RutaMaster-vertical completo bajo la encuesta de bloques.",
    "cta_por_red": {
     "instagram": "Encuesta",
     "facebook": "Encuesta"
+   },
+   "produccion": {
+    "proyecto_remotion": "/home/user/videos-dma/proyectos/historias-dma",
+    "composicion": "RutaMaster-vertical",
+    "uso": "Frame 1: repost del post del testimonio. Frame 2: RutaMaster-vertical completo bajo la encuesta de bloques."
    }
   },
   {
@@ -16638,14 +16817,14 @@
    "mensajes": [
     {
      "canal": "Todos: canales y grupos de WhatsApp, canal de Instagram, grupos de Facebook, comunidad de YouTube y comunidades GHL (el mismo post)",
-     "texto": "Si en 2027 quieres dejar de ser «el que modela», empieza por saber dónde estás.\n\n1 · Haz el test de nivel BIM (5 minutos, gratis): https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form\n2 · Si quieres que lo veamos juntos, agenda 20 minutos con un asesor: (confirmar con Dayana: enlace de agenda)\n\nEl Máster va por bloques: empiezas por el que resuelve tu problema de hoy. Próxima cohorte: (confirmar con Dayana).\n\n¿En qué bloque te ves empezando?"
+     "texto": "Si en 2027 quieres dejar de ser «el que modela», empieza por saber dónde estás.\n\n1 · Haz el test de nivel BIM (5 minutos, gratis): https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form\n2 · Si quieres que lo veamos juntos, agenda 20 minutos con un asesor: https://wa.me/593984372010\n\nEl Máster va por bloques: empiezas por el que resuelve tu problema de hoy. La próxima cohorte empieza en febrero.\n\n¿En qué bloque te ves empezando?"
     }
    ],
    "arte": "1:1 con los 4 bloques",
    "cta": {
     "comunidades": "Post completo, igual en todas las redes. Enlace dentro del post. Pregunta abierta al final."
    },
-   "notas_produccion": "El mismo post en todos los canales. Si hay regalo, el enlace va directo en el post: nada de «respóndeme X». Sin hashtags. Venta blanda del regreso. SIN PRECIO. Enlace de agenda y fecha de cohorte: (confirmar con Dayana).",
+   "notas_produccion": "El mismo post en todos los canales. Si hay regalo, el enlace va directo en el post: nada de «respóndeme X». Sin hashtags. Venta blanda del regreso. SIN PRECIO. Agenda por WhatsApp; cohorte de febrero (Dayana, 23-nov).",
    "origen": "matriz diciembre 2026 / enero 2027",
    "cta_por_red": {
     "comunidades": "Post completo, igual en todas las redes. Enlace dentro del post. Pregunta abierta al final."
@@ -17014,12 +17193,12 @@
    "cta": {
     "email": "Botón del correo"
    },
-   "condicion": "Sin precio y sin oferta: diciembre no tiene promo definida (confirmar con Dayana antes de agregar una).",
+   "condicion": "Sin precio y sin oferta. La oferta de diciembre está PENDIENTE (la pasa Dayana) y su correo es el del mié 16-dic.",
    "origen": "matriz diciembre 2026 / enero 2027",
    "cta_por_red": {
     "email": "Botón del correo"
    },
-   "notas_produccion": "Sin precio y sin oferta: diciembre no tiene promo definida (confirmar con Dayana antes de agregar una)."
+   "notas_produccion": "Sin precio y sin oferta. La oferta de diciembre está PENDIENTE (la pasa Dayana) y su correo es el del mié 16-dic."
   },
   {
    "id": "dic-correo-1209-memoria",
@@ -17054,12 +17233,12 @@
    "cta": {
     "email": "Botón del correo"
    },
-   "condicion": "Sin precio y sin oferta: diciembre no tiene promo definida (confirmar con Dayana antes de agregar una).",
+   "condicion": "Sin precio y sin oferta. La oferta de diciembre está PENDIENTE (la pasa Dayana) y su correo es el del mié 16-dic.",
    "origen": "matriz diciembre 2026 / enero 2027",
    "cta_por_red": {
     "email": "Botón del correo"
    },
-   "notas_produccion": "Sin precio y sin oferta: diciembre no tiene promo definida (confirmar con Dayana antes de agregar una)."
+   "notas_produccion": "Sin precio y sin oferta. La oferta de diciembre está PENDIENTE (la pasa Dayana) y su correo es el del mié 16-dic."
   },
   {
    "id": "dic-correo-1216-acero",
@@ -17088,18 +17267,18 @@
     "Antes, revisa tres cosas: cómo modelaste los apoyos, las longitudes de pandeo de cada barra y si el viento entró con la dirección correcta. Si al corregir el modelo los ratios bajan, el perfil estaba bien.",
     "Estas y otras dos están en las 5 verificaciones que hacemos antes de dar por buena una nave:",
     "Botón: Ver las 5 verificaciones → https://funnel.dgdesignmodeling.com/acceso-gratis-verificacion-acero-form",
-    "Y si quieres el temario de la Especialización en Acero con Tutor IA, responde este correo con la palabra TEMARIO."
+    "Y si quieres más información de la Especialización en Acero con Tutor IA, responde este correo con la palabra TEMARIO y te mando el temario módulo a módulo."
    ],
    "eje": "NÚCLEO-BIM",
    "cta": {
     "email": "Botón del correo"
    },
-   "condicion": "Sin precio de Acero en este correo: el precio de diciembre está por confirmar (confirmar con Dayana).",
+   "condicion": "Sin precio de Acero en este correo. SLOT DE OFERTA DE DICIEMBRE: si Dayana pasa una oferta, se agrega aquí (solo % en público; precio por WhatsApp). Temario: https://drive.google.com/file/d/1K0cRiCofWt__tw-Yge21nJ2Wg25EpHlC/view?usp=sharing",
    "origen": "matriz diciembre 2026 / enero 2027",
    "cta_por_red": {
     "email": "Botón del correo"
    },
-   "notas_produccion": "Sin precio de Acero en este correo: el precio de diciembre está por confirmar (confirmar con Dayana)."
+   "notas_produccion": "Sin precio de Acero en este correo. SLOT DE OFERTA DE DICIEMBRE: si Dayana pasa una oferta, se agrega aquí (solo % en público; precio por WhatsApp). Temario: https://drive.google.com/file/d/1K0cRiCofWt__tw-Yge21nJ2Wg25EpHlC/view?usp=sharing"
   },
   {
    "id": "dic-correo-1222-revision-fin-de-ano",
@@ -17207,20 +17386,378 @@
    "cuerpo": [
     "Si en 2027 quieres dejar de ser «el que modela», el primer paso no es inscribirte en nada. Es saber dónde estás.",
     "1 · Haz el test de nivel BIM (5 minutos): https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form",
-    "2 · Si quieres verlo con un asesor, agenda 20 minutos: (confirmar con Dayana: enlace de agenda)",
-    "El Máster va por bloques: modelado, coordinación, gestión e IA. Empiezas por el que resuelve tu problema de hoy. Próxima cohorte: (confirmar con Dayana).",
+    "2 · Si quieres verlo con un asesor, agenda 20 minutos: https://wa.me/593984372010",
+    "El Máster va por bloques: modelado, coordinación, gestión e IA. Empiezas por el que resuelve tu problema de hoy. La próxima cohorte empieza en febrero.",
     "Responde este correo con tu resultado del test y te digo por dónde empezaría yo."
    ],
    "eje": "NÚCLEO-BIM",
    "cta": {
     "email": "Botón del correo"
    },
-   "condicion": "SIN PRECIO del Máster (regla fija). Fecha de cohorte, enlace de agenda y si hay oferta de enero: (confirmar con Dayana).",
+   "condicion": "SIN PRECIO del Máster (regla fija). Cohorte: febrero de 2027. Oferta de enero: pendiente (la pasa Dayana).",
    "origen": "matriz diciembre 2026 / enero 2027",
    "cta_por_red": {
     "email": "Botón del correo"
    },
-   "notas_produccion": "SIN PRECIO del Máster (regla fija). Fecha de cohorte, enlace de agenda y si hay oferta de enero: (confirmar con Dayana)."
+   "notas_produccion": "SIN PRECIO del Máster (regla fija). Cohorte: febrero de 2027. Oferta de enero: pendiente (la pasa Dayana)."
+  },
+  {
+   "id": "dic-selfie-chatgpt-firma-reel",
+   "grupo": "GRUPO 1 · Feed",
+   "formato": "reel",
+   "formato_detalle": "REEL SELFIE (Gabriel con el teléfono, 25-35 s)",
+   "redes": [
+    "instagram",
+    "facebook",
+    "tiktok",
+    "youtube",
+    "linkedin"
+   ],
+   "fecha": "2026-12-10T15:00:00Z",
+   "fecha_iso": "2026-12-10",
+   "fecha_etiqueta": "Jue 10 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 2 (7-13 dic)",
+   "tipo": "problema",
+   "intencion_dic": "problema",
+   "producto": "Diplomado de Cálculo Estructural",
+   "audiencia": "Calculista que ya usa IA (banco de síntomas: «Le preguntas a ChatGPT y te da un número… que lleva tu firma»)",
+   "estado": "POR GRABAR (selfie, antes del lun 7-dic)",
+   "titulo": "Le preguntaste a ChatGPT y el número lleva tu firma",
+   "eje": "NÚCLEO-IA",
+   "pilar": "Formato selfie · síntoma",
+   "hook": "Le preguntaste a ChatGPT cuánto acero lleva tu viga… y ese número va a salir con tu firma.",
+   "cta": {
+    "instagram": "Comenta MEMORIA",
+    "facebook": "Comenta MEMORIA",
+    "tiktok": "Pregunta abierta, sin palabra clave",
+    "youtube_shorts": "Pregunta abierta, sin palabra clave",
+    "linkedin": "Sin palabra clave: pregunta abierta"
+   },
+   "caption": "Le preguntaste a ChatGPT cuánto acero lleva tu viga… y ese número va a salir con tu firma 👇\n\nLa IA te puede ordenar el cálculo, pero no sabe con qué norma te van a revisar ni qué combinación gobierna. Si el número no dice de dónde sale, el revisor te lo devuelve, y con razón.\n\n¿Ya usas IA para calcular? Sí o no 👇\n\nComenta MEMORIA y te mando la plantilla de memoria de cálculo verificable.\n\n#IngenieriaCivil #CalculoEstructural #InteligenciaArtificial #DesignModelingAcademy",
+   "guion_reel": [
+    {
+     "tiempo": "0:00-0:04",
+     "accion": "Selfie, Gabriel ya hablando al abrir el video · En pantalla: ¿CHATGPT? · TU FIRMA",
+     "voz": "Le preguntaste a ChatGPT cuánto acero lleva tu viga… y ese número va a salir con tu firma."
+    },
+    {
+     "tiempo": "0:04-0:16",
+     "accion": "Selfie · En pantalla: NO SABE QUÉ NORMA",
+     "voz": "Mira, la IA te puede ordenar el cálculo, pero no sabe con qué norma te van a revisar ni qué combinación gobierna. Si el número no dice de dónde sale, el revisor te lo devuelve. Y con razón."
+    },
+    {
+     "tiempo": "0:16-0:24",
+     "accion": "Selfie · En pantalla: CADA NÚMERO CON SU NORMA",
+     "voz": "Yo lo que hago es esto: cada número de la memoria lleva al lado su norma y su artículo."
+    },
+    {
+     "tiempo": "0:24-0:32",
+     "accion": "Selfie, cierre · En pantalla: COMENTA MEMORIA",
+     "voz": "Comenta MEMORIA y te mando la plantilla. Y dime: ¿tú ya usas IA para calcular?"
+    }
+   ],
+   "notas_produccion": "FORMATO SELFIE (Dayana, 23-nov): Gabriel se graba con el teléfono en vertical, sin trípode ni saludo, y empieza a hablar con el problema en la primera frase. Una sola toma, sin cortes de producción; solo subtítulos de 1-2 palabras y el logo. Se edita en /home/user/videos-dma/proyectos/historias-dma con la composición Story-vertical (cambiar gabriel.mp4 y words.json). Se graba antes del lun 7-dic (lista «Grabaciones de Gabriel», G-06). Síntoma del banco del brief. No es «la IA te va a reemplazar»: es la responsabilidad de la firma.",
+   "embudo": {
+    "palabra": "MEMORIA",
+    "lead_magnet": "Plantilla de memoria de cálculo verificable (gratis)",
+    "enlace": "https://funnel.dgdesignmodeling.com/acceso-gratis-memoria-calculo-form",
+    "dm_texto": "¡Hola! 📄 Aquí tienes la plantilla de memoria de cálculo verificable: [ENLACE]\n\nSi usas IA para calcular, úsala así: la IA ordena, y tú pones al lado de cada número la norma y el artículo. Eso es lo que firma un ingeniero.\n\n¿Para qué usas hoy la IA en tus cálculos: cargas, verificaciones o la redacción de la memoria?",
+    "producto_destino": "Diplomado de Cálculo Estructural",
+    "canal_dm": "OpenReply",
+    "nuevo_lead_magnet": false
+   },
+   "gabriel_a_camara": true,
+   "prompt_imagenes": "",
+   "origen": "matriz diciembre 2026 / enero 2027 (revisión de Dayana, 23-nov)",
+   "red_principal": "instagram",
+   "cta_por_red": {
+    "instagram": "Comenta MEMORIA",
+    "facebook": "Comenta MEMORIA",
+    "tiktok": "Pregunta abierta, sin palabra clave",
+    "youtube_shorts": "Pregunta abierta, sin palabra clave",
+    "linkedin": "Sin palabra clave: pregunta abierta"
+   }
+  },
+  {
+   "id": "dic-selfie-revit-no-bim-reel",
+   "grupo": "GRUPO 1 · Feed",
+   "formato": "reel",
+   "formato_detalle": "REEL SELFIE (Gabriel con el teléfono, 25-35 s)",
+   "redes": [
+    "instagram",
+    "facebook",
+    "tiktok",
+    "youtube",
+    "linkedin"
+   ],
+   "fecha": "2026-12-18T15:00:00Z",
+   "fecha_iso": "2026-12-18",
+   "fecha_etiqueta": "Vie 18 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 3 (14-20 dic)",
+   "tipo": "problema",
+   "intencion_dic": "problema",
+   "producto": "Máster · Bloque 1 BIM Professional",
+   "audiencia": "Ingeniero empleado al que le exigen BIM (banco de síntomas: «Sabes Revit, pero no sabes BIM»)",
+   "estado": "POR GRABAR (selfie, antes del lun 7-dic)",
+   "titulo": "Sabes Revit, pero no sabes BIM",
+   "eje": "NÚCLEO-BIM",
+   "pilar": "Formato selfie · síntoma",
+   "hook": "Sabes Revit, pero no sabes BIM. Y no es lo mismo.",
+   "cta": {
+    "instagram": "Comenta NIVEL · Si quieres más información de nuestro Máster por bloques, comenta MÁSTER.",
+    "facebook": "Comenta NIVEL · Si quieres más información de nuestro Máster por bloques, comenta MÁSTER.",
+    "tiktok": "Pregunta abierta, sin palabra clave",
+    "youtube_shorts": "Pregunta abierta, sin palabra clave",
+    "linkedin": "Sin palabra clave: pregunta abierta"
+   },
+   "caption": "Sabes Revit, pero no sabes BIM. Y no es lo mismo 👇\n\nRevit es el programa. BIM es saber qué información lleva cada elemento, quién la usa y cuándo se entrega. Por eso hay gente que modela increíble y nunca la sientan a coordinar.\n\n¿Tú eres de Revit o de BIM? 👇\n\nComenta NIVEL y te mando el test para ver en qué bloque estás.\n\nSi quieres más información de nuestro Máster por bloques, comenta MÁSTER.\n\n#BIM #Revit #BIMManager #DesignModelingAcademy",
+   "guion_reel": [
+    {
+     "tiempo": "0:00-0:03",
+     "accion": "Selfie, Gabriel ya hablando · En pantalla: SABES REVIT ≠ SABES BIM",
+     "voz": "Sabes Revit, pero no sabes BIM. Y no es lo mismo."
+    },
+    {
+     "tiempo": "0:03-0:15",
+     "accion": "Selfie · En pantalla: REVIT = PROGRAMA · BIM = INFORMACIÓN",
+     "voz": "Revit es el programa. BIM es saber qué información lleva cada elemento, quién la va a usar y cuándo se entrega."
+    },
+    {
+     "tiempo": "0:15-0:22",
+     "accion": "Selfie · En pantalla: NUNCA TE SIENTAN A COORDINAR",
+     "voz": "Por eso hay gente que modela increíble… y nunca la sientan a coordinar."
+    },
+    {
+     "tiempo": "0:22-0:34",
+     "accion": "Selfie, cierre · En pantalla: COMENTA NIVEL · MÁS INFO: COMENTA MÁSTER",
+     "voz": "Comenta NIVEL y te mando el test para ver en qué bloque estás. Y si quieres más información de nuestro Máster por bloques, comenta MÁSTER. ¿Tú eres de Revit o de BIM?"
+    }
+   ],
+   "notas_produccion": "FORMATO SELFIE (Dayana, 23-nov): Gabriel se graba con el teléfono en vertical, sin trípode ni saludo, y empieza a hablar con el problema en la primera frase. Una sola toma, sin cortes de producción; solo subtítulos de 1-2 palabras y el logo. Se edita en /home/user/videos-dma/proyectos/historias-dma con la composición Story-vertical (cambiar gabriel.mp4 y words.json). Se graba antes del lun 7-dic (lista «Grabaciones de Gabriel», G-06). VENTA SUAVE POR INFORMACIÓN: cierre con MÁSTER (DM a WhatsApp, cohorte de febrero, sin precio).",
+   "embudo": {
+    "palabra": "NIVEL",
+    "lead_magnet": "Test de nivel BIM (5 minutos, gratis)",
+    "enlace": "https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form",
+    "dm_texto": "¡Hola! 🧱 Aquí tienes el test de nivel BIM (5 minutos): [ENLACE]\n\nTe dice si hoy estás en modelado, coordinación, gestión o BIM + IA. Si sales en modelado aunque sepas mucho Revit, es justo lo del video: falta la parte de información.\n\n¿Hoy en tu trabajo solo modelas o también decides qué información lleva el modelo?",
+    "producto_destino": "Máster por bloques · Bloque 1 (agendar; nunca precio)",
+    "canal_dm": "OpenReply",
+    "nuevo_lead_magnet": false,
+    "cta_info": {
+     "palabra": "MÁSTER",
+     "lead_magnet": "Información del Máster por bloques + cita de 20 minutos por WhatsApp (venta, sin precio)",
+     "enlace": "https://wa.me/593984372010",
+     "dm_texto": "¡Hola! Gracias por tu interés en el Máster por bloques 🙌\n\nVa por bloques (modelado, coordinación, gestión y BIM + IA) y empiezas por el que resuelve tu problema de hoy. La próxima cohorte empieza en febrero.\n\nEscríbenos por WhatsApp y agendamos 20 minutos para ver qué bloque te toca: [ENLACE]\n\nPara orientarte desde ya: ¿en qué trabajas hoy y qué te gustaría estar haciendo a fin de 2027?",
+     "producto_destino": "Máster BIM Management + IA por bloques (cohorte de febrero; agendar, nunca precio)",
+     "canal_dm": "OpenReply",
+     "nuevo_lead_magnet": false,
+     "nota": "Venta suave: el DM lleva a WhatsApp para agendar; el precio del Máster nunca va por contenido ni por chat.",
+     "texto_cierre": "Si quieres más información de nuestro Máster por bloques, comenta MÁSTER."
+    }
+   },
+   "gabriel_a_camara": true,
+   "prompt_imagenes": "",
+   "origen": "matriz diciembre 2026 / enero 2027 (revisión de Dayana, 23-nov)",
+   "red_principal": "instagram",
+   "cta_por_red": {
+    "instagram": "Comenta NIVEL · Si quieres más información de nuestro Máster por bloques, comenta MÁSTER.",
+    "facebook": "Comenta NIVEL · Si quieres más información de nuestro Máster por bloques, comenta MÁSTER.",
+    "tiktok": "Pregunta abierta, sin palabra clave",
+    "youtube_shorts": "Pregunta abierta, sin palabra clave",
+    "linkedin": "Sin palabra clave: pregunta abierta"
+   }
+  },
+  {
+   "id": "ene-selfie-acero-en-enero-reel",
+   "grupo": "GRUPO 1 · Feed",
+   "formato": "reel",
+   "formato_detalle": "REEL SELFIE (Gabriel con el teléfono, 25-35 s)",
+   "redes": [
+    "instagram",
+    "facebook",
+    "tiktok",
+    "youtube",
+    "linkedin"
+   ],
+   "fecha": "2027-01-05T15:00:00Z",
+   "fecha_iso": "2027-01-05",
+   "fecha_etiqueta": "Mar 5 ene",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 6 (4-6 ene) · regreso",
+   "tipo": "objeción",
+   "intencion_dic": "venta",
+   "producto": "Especialización en Acero con Tutor IA",
+   "audiencia": "Consultor o calculista que pospone estudiar acero por el horario (objeción de tiempo, COMPRADORES-VS-NO)",
+   "estado": "POR GRABAR (selfie, antes del lun 7-dic)",
+   "titulo": "«En enero empiezo con acero»… y ya es enero",
+   "eje": "NÚCLEO-BIM",
+   "pilar": "Formato selfie · objeción real (tiempo)",
+   "hook": "Llevas un año diciendo «en enero empiezo con acero»… y ya es enero.",
+   "cta": {
+    "instagram": "Comenta TEMARIO",
+    "facebook": "Comenta TEMARIO",
+    "tiktok": "Pregunta abierta, sin palabra clave",
+    "youtube_shorts": "Pregunta abierta, sin palabra clave",
+    "linkedin": "Sin palabra clave: pregunta abierta"
+   },
+   "caption": "Llevas un año diciendo «en enero empiezo con acero»… y ya es enero 👇\n\nCasi siempre la excusa es el horario. La Especialización en Acero es 100 % asincrónica: las clases están grabadas, avanzas a tu ritmo, y tienes un tutor de IA y sesiones uno a uno con tu instructor para las dudas.\n\n¿Qué te frenó en 2026? 👇\n\nSi quieres más información de la Especialización en Acero, comenta TEMARIO.\n\n#EstructurasDeAcero #IngenieriaEstructural #NavesIndustriales #DesignModelingAcademy",
+   "guion_reel": [
+    {
+     "tiempo": "0:00-0:04",
+     "accion": "Selfie, Gabriel ya hablando · En pantalla: «EN ENERO EMPIEZO»",
+     "voz": "Llevas un año diciendo «en enero empiezo con acero»… y ya es enero."
+    },
+    {
+     "tiempo": "0:04-0:18",
+     "accion": "Selfie · En pantalla: 100 % ASINCRÓNICA",
+     "voz": "Casi siempre la excusa es el horario. Mira: la especialización en acero es cien por ciento asincrónica. Las clases están grabadas y avanzas a tu ritmo."
+    },
+    {
+     "tiempo": "0:18-0:25",
+     "accion": "Selfie · En pantalla: TUTOR IA + SESIONES 1 A 1",
+     "voz": "Y no estás solo: tienes un tutor de inteligencia artificial y sesiones uno a uno con tu instructor."
+    },
+    {
+     "tiempo": "0:25-0:34",
+     "accion": "Selfie, cierre · En pantalla: COMENTA TEMARIO",
+     "voz": "Si quieres más información de la Especialización en Acero, comenta TEMARIO y te mando el temario. ¿Qué te frenó en 2026?"
+    }
+   ],
+   "notas_produccion": "FORMATO SELFIE (Dayana, 23-nov): Gabriel se graba con el teléfono en vertical, sin trípode ni saludo, y empieza a hablar con el problema en la primera frase. Una sola toma, sin cortes de producción; solo subtítulos de 1-2 palabras y el logo. Se edita en /home/user/videos-dma/proyectos/historias-dma con la composición Story-vertical (cambiar gabriel.mp4 y words.json). Se graba antes del lun 7-dic (lista «Grabaciones de Gabriel», G-06). PIEZA DE VENTA SUAVE (objeción de tiempo). SIN PRECIO. Datos: «100 % asincrónico» (BOT-HISTORIAS-GHL.md, palabra ACERO) y «4 sesiones uno a uno con tu instructor» + tutor de IA (voz de RutaAcero en historias-dma). Temario: «2026-EspAcero Temario» (PDF en Drive), el mismo que manda el bot de ventas (/home/user/dma-sales-assistant/config.py, PDF_TEMARIOS) + la página de la especialización (BOT-HISTORIAS-GHL.md).",
+   "embudo": {
+    "palabra": "TEMARIO",
+    "lead_magnet": "Temario de la Especialización en Acero (PDF, sin precio)",
+    "enlace": "https://drive.google.com/file/d/1K0cRiCofWt__tw-Yge21nJ2Wg25EpHlC/view?usp=sharing",
+    "enlace_secundario": "https://designmodelingacademy.com/es/especializacion/diseno-estructural-bim-acero",
+    "dm_texto": "¡Hola! Gracias por tu interés en la Especialización en Acero con Tutor IA 🔩\n\nAquí tienes el temario módulo a módulo: [ENLACE]\nEs 100 % asincrónica: avanzas a tu ritmo, con tutor de IA y sesiones uno a uno con tu instructor.\n\nSi prefieres que te lo expliquemos, escríbenos por WhatsApp: https://wa.me/593984372010\n\nUna pregunta para orientarte: ¿hoy diseñas acero en algún software (Robot, SAP2000, ETABS) o estás empezando?",
+    "producto_destino": "Especialización en Acero con Tutor IA",
+    "canal_dm": "OpenReply",
+    "nuevo_lead_magnet": false,
+    "nota": "Venta suave: temario + WhatsApp https://wa.me/593984372010. Temario: «2026-EspAcero Temario» (PDF en Drive), el mismo que manda el bot de ventas (/home/user/dma-sales-assistant/config.py, PDF_TEMARIOS) + la página de la especialización (BOT-HISTORIAS-GHL.md)."
+   },
+   "gabriel_a_camara": true,
+   "prompt_imagenes": "",
+   "origen": "matriz diciembre 2026 / enero 2027 (revisión de Dayana, 23-nov)",
+   "red_principal": "instagram",
+   "cta_por_red": {
+    "instagram": "Comenta TEMARIO",
+    "facebook": "Comenta TEMARIO",
+    "tiktok": "Pregunta abierta, sin palabra clave",
+    "youtube_shorts": "Pregunta abierta, sin palabra clave",
+    "linkedin": "Sin palabra clave: pregunta abierta"
+   }
+  },
+  {
+   "id": "dic-navidad-post",
+   "grupo": "GRUPO 1 · Feed",
+   "formato": "post",
+   "formato_detalle": "POST (1 imagen 4:5, saludo de marca DG 2026)",
+   "redes": [
+    "instagram",
+    "facebook",
+    "linkedin",
+    "threads"
+   ],
+   "fecha": "2026-12-25T15:00:00Z",
+   "fecha_iso": "2026-12-25",
+   "fecha_etiqueta": "Vie 25 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 4 (21-27 dic) · fiestas",
+   "tipo": "comunidad",
+   "intencion_dic": "saludo de marca",
+   "producto": "Marca Design Modeling",
+   "audiencia": "Toda la comunidad",
+   "estado": "POR DISEÑAR",
+   "titulo": "Feliz Navidad de parte de Design Modeling",
+   "eje": "COMUNIDAD",
+   "pilar": "Fecha especial · saludo de marca (sin venta)",
+   "hook": "Gracias por cada modelo, cada cálculo y cada pregunta de este 2026.",
+   "cta": {
+    "instagram": "Pregunta abierta, sin palabra clave",
+    "facebook": "Pregunta abierta, sin palabra clave",
+    "linkedin": "Sin palabra clave: pregunta abierta",
+    "threads": "Pregunta abierta, sin palabra clave"
+   },
+   "caption": "Gracias por cada modelo, cada cálculo y cada pregunta que compartiste con nosotros este 2026 🎄\n\nDe parte de Gabriel y de todo el equipo de Design Modeling Academy: que esta Navidad sea de descanso, de familia y sin planos pendientes.\n\n¿Desde qué país nos lees hoy? 👇\n\n#FelizNavidad #DesignModelingAcademy #DesignModelingDG",
+   "slides": [
+    {
+     "n": 1,
+     "texto": "FELIZ NAVIDAD · Gracias por construir este 2026 con nosotros · Design Modeling Academy",
+     "visual": "Imagen de marca DG 2026: fondo azul marino de la marca, logo Design Modeling, un modelo BIM de una casa con luces cálidas en las ventanas y «2026» discreto en una esquina. Sin Papá Noel ni stock genérico."
+    }
+   ],
+   "prompt_imagenes": "Imagen de marca DG 2026 (skill imagen-marca-dma): modelo BIM isométrico de una vivienda en blanco y azul marino, ventanas con luz cálida ámbar, nieve leve, logo Design Modeling arriba, texto «Feliz Navidad» y «2026».",
+   "notas_produccion": "FECHA ESPECIAL pedida por Dayana (23-nov). Saludo cálido de marca, SIN VENTA y sin palabra clave. Va FUERA DE CUOTA (no cuenta en 40/40/20 ni en la intención). Se programa el vie 25-dic a las 10:00; el equipo no contesta comentarios ese día.",
+   "fuera_de_cuota": true,
+   "origen": "matriz diciembre 2026 / enero 2027 (revisión de Dayana, 23-nov)",
+   "red_principal": "instagram",
+   "cta_por_red": {
+    "instagram": "Pregunta abierta, sin palabra clave",
+    "facebook": "Pregunta abierta, sin palabra clave",
+    "linkedin": "Sin palabra clave: pregunta abierta",
+    "threads": "Pregunta abierta, sin palabra clave"
+   }
+  },
+  {
+   "id": "dic-fin-de-ano-post",
+   "grupo": "GRUPO 1 · Feed",
+   "formato": "post",
+   "formato_detalle": "POST (1 imagen 4:5, cierre de año DG 2026)",
+   "redes": [
+    "instagram",
+    "facebook",
+    "linkedin",
+    "threads"
+   ],
+   "fecha": "2026-12-31T15:00:00Z",
+   "fecha_iso": "2026-12-31",
+   "fecha_etiqueta": "Jue 31 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 5 (28 dic-3 ene) · fiestas",
+   "tipo": "comunidad",
+   "intencion_dic": "saludo de marca",
+   "producto": "Marca Design Modeling",
+   "audiencia": "Toda la comunidad",
+   "estado": "POR DISEÑAR",
+   "titulo": "Cierre de 2026: ¿cuál es tu propósito profesional?",
+   "eje": "COMUNIDAD",
+   "pilar": "Fecha especial · cierre de año (sin venta dura)",
+   "hook": "Antes de las doce: ¿qué quieres estar haciendo en tus proyectos a fin de 2027?",
+   "cta": {
+    "instagram": "Pregunta abierta · Comenta NIVEL (opcional)",
+    "facebook": "Pregunta abierta · Comenta NIVEL (opcional)",
+    "linkedin": "Sin palabra clave: pregunta abierta",
+    "threads": "Pregunta abierta, sin palabra clave"
+   },
+   "caption": "Antes de las doce, una pregunta: ¿qué quieres estar haciendo en tus proyectos a fin de 2027? 👇\n\nModelar, coordinar, dirigir o automatizar. Escríbelo aquí: lo que se escribe se cumple más.\n\nSi tu propósito es dejar de ser «el que modela», el primer paso es saber dónde estás: comenta NIVEL y te mando el test (5 minutos).\n\nFeliz año nuevo de parte de todo el equipo de Design Modeling Academy 🥂\n\n#FelizAñoNuevo #BIM #DesignModelingAcademy",
+   "slides": [
+    {
+     "n": 1,
+     "texto": "2026 → 2027 · ¿Qué quieres estar haciendo en tus proyectos a fin de año? · Design Modeling Academy",
+     "visual": "Imagen de marca DG 2026: «2026» en azul marino que pasa a «2027» en ámbar sobre una retícula de plano; logo Design Modeling."
+    }
+   ],
+   "prompt_imagenes": "Imagen de marca DG 2026 (skill imagen-marca-dma): retícula de plano blanca, «2026» en azul marino tachado con una línea de cota y «2027» en ámbar, logo Design Modeling.",
+   "notas_produccion": "FECHA ESPECIAL pedida por Dayana (23-nov). Cierre de año y propósito, SIN VENTA DURA: solo la pregunta y el test gratis como opción. FUERA DE CUOTA. Se programa el jue 31-dic a las 10:00.",
+   "embudo": {
+    "palabra": "NIVEL",
+    "lead_magnet": "Test de nivel BIM (5 minutos, gratis)",
+    "enlace": "https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form",
+    "dm_texto": "¡Hola! 🥂 Aquí tienes el test de nivel BIM (5 minutos): [ENLACE]\n\nEs un buen primer paso para el propósito de 2027: saber en qué bloque estás hoy.\n\n¿Qué te gustaría estar haciendo en tus proyectos a fin de 2027?",
+    "producto_destino": "Máster por bloques (agendar; nunca precio)",
+    "canal_dm": "OpenReply",
+    "nuevo_lead_magnet": false
+   },
+   "fuera_de_cuota": true,
+   "origen": "matriz diciembre 2026 / enero 2027 (revisión de Dayana, 23-nov)",
+   "red_principal": "instagram",
+   "cta_por_red": {
+    "instagram": "Pregunta abierta · Comenta NIVEL (opcional)",
+    "facebook": "Pregunta abierta · Comenta NIVEL (opcional)",
+    "linkedin": "Sin palabra clave: pregunta abierta",
+    "threads": "Pregunta abierta, sin palabra clave"
+   }
   }
  ],
  "historias_rutina": {
