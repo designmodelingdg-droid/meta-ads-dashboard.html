@@ -1,0 +1,34 @@
+name: Referentes por cuenta (Apify)
+# Trae las publicaciones recientes de las cuentas de referencia cuando cambia
+# matriz-viral/pedidos/referentes-cuentas.json. Se dispara por push para que
+# funcione desde cualquier rama. Tope duro de gasto: 1 USD por corrida.
+on:
+  push:
+    paths:
+      - matriz-viral/pedidos/referentes-cuentas.json
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: referentes-cuentas-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  traer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Traer las cuentas
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+        run: python3 scripts/referentes_cuentas.py matriz-viral/pedidos/referentes-cuentas.json
+      - name: Commit si cambió
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add matriz-viral/fuentes/referentes/ || true
+          git diff --staged --quiet && echo "Nada nuevo que guardar." && exit 0
+          git commit -m "Referentes por cuenta traídos con Apify"
+          for i in 1 2 3; do git pull --rebase -q && git push && exit 0; sleep 5; done
