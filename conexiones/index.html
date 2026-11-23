@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<title>Conexión de redes · DMA</title>
+<style>
+  :root{
+    --bg:#f3f5f9; --card:#ffffff; --ink:#0f1b33; --muted:#55627a; --line:#d9dfea;
+    --brand:#0b2a5b; --ok:#0f7a4f; --okbg:#e6f5ee; --err:#a3261b; --errbg:#fbeae8;
+    --code:#eef2f8;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0b1220; --card:#121b2e; --ink:#e7ecf5; --muted:#9aa7bf; --line:#24314d;
+      --brand:#7fa7e6; --ok:#5fd3a0; --okbg:#10291f; --err:#ff8f84; --errbg:#2e1513;
+      --code:#0e1626;
+    }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+       padding-inline:16px;padding-block:40px}
+  main{max-width:560px;margin:0 auto;background:var(--card);border:1px solid var(--line);
+       border-radius:12px;padding:28px 24px}
+  .eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+  h1{font-size:22px;line-height:1.25;margin:0 0 14px;color:var(--brand);text-wrap:balance}
+  p{margin:0 0 12px}
+  .estado{border-radius:8px;padding:12px 14px;margin:16px 0}
+  .ok{background:var(--okbg);color:var(--ok)}
+  .err{background:var(--errbg);color:var(--err)}
+  .codigo{display:block;width:100%;background:var(--code);border:1px solid var(--line);
+          border-radius:8px;padding:12px;font:14px/1.4 ui-monospace,Menlo,Consolas,monospace;
+          color:var(--ink);word-break:break-all;resize:none;min-height:84px}
+  button{margin-top:10px;background:var(--brand);color:var(--card);border:0;border-radius:8px;
+         padding:10px 16px;font:600 15px system-ui,sans-serif;cursor:pointer}
+  button:focus-visible{outline:3px solid var(--ok);outline-offset:2px}
+  ol{padding-left:20px;margin:8px 0 0}
+  li{margin-bottom:6px}
+  small{color:var(--muted)}
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">Design Modeling Academy · uso interno</p>
+  <h1 id="titulo">Conexión de redes</h1>
+
+  <div id="vacio">
+    <p>Esta página recibe la autorización cuando conectas la cuenta de TikTok o la página de LinkedIn con nuestra app de comentarios.</p>
+    <p><small>Si llegaste aquí sin pasar por TikTok o LinkedIn, no hay nada que hacer.</small></p>
+  </div>
+
+  <div id="error" class="estado err" hidden></div>
+
+  <div id="exito" hidden>
+    <div class="estado ok">Autorización recibida de <strong id="red"></strong>.</div>
+    <p>Este es el código. <strong>Caduca en pocos minutos</strong> y sirve una sola vez:</p>
+    <textarea id="codigo" class="codigo" readonly aria-label="Código de autorización"></textarea>
+    <button id="copiar" type="button">Copiar código</button>
+    <ol>
+      <li>Ve a GitHub: repositorio <em>meta-ads-dashboard.html</em> → Settings → Secrets and variables → Actions → New repository secret.</li>
+      <li>Nombre: <strong id="secreto"></strong>. Valor: pega el código.</li>
+      <li>Avísale a Claude «ya está el código» para que lo canjee enseguida.</li>
+    </ol>
+    <p><small>No pegues el código en el chat ni en WhatsApp. Esta página no guarda ni envía nada: solo lo muestra.</small></p>
+  </div>
+</main>
+<script>
+(function(){
+  var q = new URLSearchParams(location.search);
+  var codigo = q.get('auth_code') || q.get('code');
+  var estado = (q.get('state') || '').toLowerCase();
+  var fallo = q.get('error_description') || q.get('error');
+  var red = estado.indexOf('linkedin') === 0 ? 'LinkedIn'
+          : estado.indexOf('tiktok') === 0 ? 'TikTok'
+          : (q.has('auth_code') ? 'TikTok' : 'la red');
+  var secreto = red === 'LinkedIn' ? 'LINKEDIN_AUTH_CODE' : 'TIKTOK_AUTH_CODE';
+
+  // Quita el código de la barra de direcciones y del historial.
+  if (codigo || fallo) { history.replaceState(null, '', location.pathname); }
+
+  if (fallo) {
+    document.getElementById('vacio').hidden = true;
+    var e = document.getElementById('error');
+    e.hidden = false;
+    e.textContent = red + ' no dio la autorización: ' + fallo + '. Vuelve a abrir el enlace de autorización y acepta los permisos.';
+    return;
+  }
+  if (!codigo) { return; }
+
+  document.getElementById('vacio').hidden = true;
+  document.getElementById('exito').hidden = false;
+  document.getElementById('titulo').textContent = 'Cuenta conectada';
+  document.getElementById('red').textContent = red;
+  document.getElementById('secreto').textContent = secreto;
+  var caja = document.getElementById('codigo');
+  caja.value = codigo;
+
+  document.getElementById('copiar').addEventListener('click', function(){
+    var b = this;
+    function listo(){ b.textContent = 'Copiado'; setTimeout(function(){ b.textContent = 'Copiar código'; }, 2000); }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(codigo).then(listo, function(){ caja.select(); document.execCommand('copy'); listo(); });
+    } else { caja.select(); document.execCommand('copy'); listo(); }
+  });
+})();
+</script>
+</body>
+</html>
