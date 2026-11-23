@@ -80,7 +80,7 @@ jobs:
         env:
           VIMEO_TOKEN: ${{ secrets.VIMEO_TOKEN }}
         run: |
-          if [ "${{ inputs.modo }}" = "silencios" ]; then pip install -q numpy; GAPS=acero/gaps-eia1.json python3 scripts/vimeo_silencios.py "${{ matrix.id }}"; else python3 scripts/vimeo_whisper.py "${{ matrix.id }}"; fi
+          if [ "${{ inputs.modo }}" = "silencios" ]; then pip install -q numpy; GAPS=acero/gaps-${{ inputs.tema != '' && inputs.tema || 'eia1' }}.json python3 scripts/vimeo_silencios.py "${{ matrix.id }}"; else python3 scripts/vimeo_whisper.py "${{ matrix.id }}"; fi
       - uses: actions/upload-artifact@v4
         with:
           name: whisper-${{ matrix.id }}
