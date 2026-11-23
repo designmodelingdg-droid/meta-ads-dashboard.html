@@ -339,7 +339,7 @@ def main():
              "calendario": hist},
             {"n": 6, "nombre": "GRUPO 6 · YouTube — videos largos (2-5 min, no Shorts)",
              "descripcion": f"{len(yt)} videos con lo mejor del workshop del 17-nov, con intro y cierre de Gabriel.",
-             "reglas": ["Título que abre con el problema.", "En la descripción: capítulos y el enlace al test de nivel.", "Revit 2027 + servidor MCP de Autodesk: vista previa técnica y de solo lectura, dicho así."],
+             "reglas": ["Título que abre con el problema.", "En la descripción: capítulos y el enlace al test de nivel.", "Lo que se usó en el workshop, dicho así: un servidor MCP de código abierto sobre pyRevit y NonicaTab AI Connector. No decir «Revit» ni «servidor MCP de Autodesk»."],
              "calendario": filas_de("GRUPO 6")},
         ],
         "lead_magnets": {
