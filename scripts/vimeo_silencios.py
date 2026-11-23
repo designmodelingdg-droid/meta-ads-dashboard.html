@@ -22,7 +22,11 @@ def main(vid):
     ini = [float(x) for x in re.findall(r'silence_start: ([\d.]+)', o)]
     fin = [float(x) for x in re.findall(r'silence_end: ([\d.]+)', o)]
     out = []
-    for s, e in zip(ini, fin):
+    cand = list(zip(ini, fin))
+    gp = os.environ.get('GAPS', '')
+    if gp and os.path.exists(gp):
+        cand = [tuple(x) for x in json.load(open(gp)).get(str(vid), [])]
+    for s, e in cand:
         d = e - s
         F = [cuadro('/tmp/v.mp4', s + 0.6 + i * (d - 1.2) / 4) for i in range(5)]
         if any(x is None for x in F):
