@@ -1,7 +1,7 @@
 {
  "generado": "2026-09-30",
  "nota": "Contenido COMPLETO de cada pieza (hook, slides palabra por palabra con su dirección visual, guion de reel segundo a segundo, caption, CTA por red y copy de pauta). La app debe leer ESTE archivo para generar el post correcto sin inventar. Incluye las 3 secuencias de VENTA de historias (jueves), cuyo frame de cierre pide responder con una palabra clave para que lo recoja el bot en vez de depender de responder a mano.",
- "total": 247,
+ "total": 313,
  "piezas": [
   {
    "id": "jul-mito-render-ia",
@@ -13543,37 +13543,3684 @@
     "youtube",
     "linkedin"
    ],
-   "fecha": "Por asignar",
-   "semana": "Por asignar",
+   "fecha": "2026-12-16T15:00:00Z",
+   "semana": "Semana 3 (14-20 dic)",
    "producto": "Máster (Bloque 4 · Especialista BIM + IA)",
    "audiencia": "Ingeniero o arquitecto que trabaja en Revit y quiere usar IA sobre su modelo",
-   "estado": "BORRADOR editado (18-nov): falta subtitular y revisar el audio",
+   "estado": "BORRADOR editado (18-nov): falta subtitular, escuchar el audio completo y cambiar el cierre a la pregunta",
    "eje": "NÚCLEO-IA",
    "pilar": "Clips del workshop IA conectada a Revit (17-nov)",
-   "origen": "Grabación completa del workshop 17-nov (Drive de Dayana, 18-nov)",
+   "origen": "Grabación completa del workshop 17-nov (Drive de Dayana, 18-nov) · matriz diciembre 2026 / enero 2027",
    "video": "https://drive.google.com/file/d/1XTW8r7X6yoVNHGpKnjdZ7OVAIrv0hS6A/view",
    "red_principal": "instagram",
    "id": "dic-ws-clip-niveles-duplicados-reel",
    "tipo": "problema",
    "titulo": "La IA encontró 3 niveles a la misma altura",
    "hook": "Tu modelo tiene errores que no ves: la IA encontró 3 niveles a la misma altura",
-   "caption": "Le pedimos a la IA un resumen de un modelo de Revit y avisó algo que a simple vista no se ve: 3 niveles a la misma altura (8,70 m). Puede ser intencional, pero es una duplicación típica que conviene revisar.\n\nEso es usar la IA como copiloto del BIM Manager.\n\nComenta NIVEL y te mandamos el test de nivel BIM 👇\n\n#Revit #BIM #BIMManager #ControlDeCalidad #DesignModelingAcademy",
+   "caption": "Tu modelo tiene errores que no ves 👇\n\nLe pedimos a la IA un resumen de un modelo real de Revit y avisó algo que a simple vista no se ve: 3 niveles a la misma altura (8,70 m). Puede ser intencional, pero es una duplicación típica que conviene revisar antes de entregar.\n\n¿Revisas niveles duplicados antes de entregar un modelo? Sí o no 👇\n\nComenta NIVEL y te mando el test para ver en qué nivel BIM estás.\n\n#Revit #BIM #BIMManager #ControlDeCalidad #DesignModelingAcademy",
    "video_archivo": "c4-niveles-duplicados.mp4",
    "cta": {
-    "instagram": "Comenta NIVEL (confirmar)",
-    "facebook": "Comenta NIVEL (confirmar)",
+    "instagram": "Comenta NIVEL",
+    "facebook": "Comenta NIVEL",
     "tiktok": "Pregunta abierta, sin palabra clave",
     "youtube_shorts": "Pregunta abierta, sin palabra clave",
-    "linkedin": "Sin palabra clave"
+    "linkedin": "Sin palabra clave: pregunta abierta"
    },
    "cta_por_red": {
-    "instagram": "Comenta NIVEL (confirmar)",
-    "facebook": "Comenta NIVEL (confirmar)",
+    "instagram": "Comenta NIVEL",
+    "facebook": "Comenta NIVEL",
     "tiktok": "Pregunta abierta, sin palabra clave",
     "youtube_shorts": "Pregunta abierta, sin palabra clave",
-    "linkedin": "Sin palabra clave"
+    "linkedin": "Sin palabra clave: pregunta abierta"
    },
-   "notas_produccion": "Clip de 52 s sacado de la grabación del workshop (https://drive.google.com/file/d/1XTW8r7X6yoVNHGpKnjdZ7OVAIrv0hS6A/view), tramos 76:16–76:40 (Revit + AI Connector) + 77:16–78:05 (Claude). Ya está cortado en vertical 1080×1920 con el gancho arriba, sin la barra lateral de chats y sin silencios largos. Antes de publicar: 1) subtitular (falta la transcripción); 2) escuchar el audio completo, porque los cortes se hicieron por silencios y no se oyó lo que dice Gabriel; 3) confirmar la palabra clave del CTA. Se arma de nuevo con matriz-viral/clips-workshop-1117/build.py."
+   "notas_produccion": "Clip de 52 s sacado de la grabación del workshop (https://drive.google.com/file/d/1XTW8r7X6yoVNHGpKnjdZ7OVAIrv0hS6A/view), tramos 76:16–76:40 (Revit + AI Connector) + 77:16–78:05 (Claude). Ya está cortado en vertical 1080×1920 con el gancho arriba, sin la barra lateral de chats y sin silencios largos. Antes de publicar: 1) subtitular (falta la transcripción); 2) escuchar el audio completo, porque los cortes se hicieron por silencios y no se oyó lo que dice Gabriel; 3) confirmar la palabra clave del CTA. Se arma de nuevo con matriz-viral/clips-workshop-1117/build.py. MATRIZ DIC (23-nov): entra al feed el mié 16-dic como pieza de PROBLEMA (es el único de los 4 clips con síntoma; los otros 3 quedan en reserva y en los videos largos de YouTube, porque en noviembre las piezas de «IA en Revit» sin problema no conversaron). Palabra confirmada: NIVEL (modelo que no sirve → test de nivel → Máster). Cambiar el cierre del clip a la pregunta «¿Revisas niveles duplicados antes de entregar?» + COMENTA NIVEL. Sigue pendiente: subtítulos y escuchar el audio completo antes de publicar.",
+   "fecha_iso": "2026-12-16",
+   "fecha_etiqueta": "Mié 16 dic",
+   "hora_ecuador": "10:00",
+   "intencion_dic": "problema",
+   "embudo": {
+    "palabra": "NIVEL",
+    "lead_magnet": "Test de nivel BIM (5 minutos, gratis)",
+    "enlace": "https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form",
+    "dm_texto": "¡Hola! 👀 Aquí tienes el test de nivel BIM (5 minutos): [ENLACE]\n\nY una revisión que puedes hacer hoy: abre la vista de alzado, muestra todos los niveles y busca dos con la misma cota. En el workshop la IA encontró 3 a 8,70 m.\n\n¿Quién revisa la calidad del modelo antes de entregar en tu equipo: tú u otra persona?",
+    "producto_destino": "Máster BIM Management + IA por bloques (solo se invita a agendar; nunca precio)",
+    "canal_dm": "OpenReply",
+    "nuevo_lead_magnet": false
+   }
+  },
+  {
+   "id": "dic-sigues-modelando-carrusel",
+   "grupo": "GRUPO 1 · Feed",
+   "formato": "carrusel",
+   "formato_detalle": "CARRUSEL (7 láminas, 4:5)",
+   "redes": [
+    "instagram",
+    "facebook",
+    "linkedin",
+    "threads"
+   ],
+   "fecha": "2026-12-01T15:00:00Z",
+   "fecha_iso": "2026-12-01",
+   "fecha_etiqueta": "Mar 1 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 1 (1-6 dic)",
+   "tipo": "problema",
+   "intencion_dic": "problema",
+   "producto": "Máster · Bloque 2 BIM Coordination",
+   "audiencia": "Ingeniero civil empleado al que su trabajo le exige BIM (COMPRADORES-VS-NO)",
+   "estado": "POR DISEÑAR",
+   "titulo": "Llevas años en BIM y sigues siendo «el que modela»",
+   "eje": "NÚCLEO-BIM",
+   "pilar": "Contenido sintomático · acusar un hábito",
+   "hook": "Llevas años en BIM y sigues siendo «el que modela».",
+   "cta": {
+    "instagram": "Comenta NIVEL",
+    "facebook": "Comenta NIVEL",
+    "linkedin": "Sin palabra clave: pregunta abierta",
+    "threads": "Pregunta abierta, sin palabra clave"
+   },
+   "caption": "Llevas años en BIM y sigues siendo «el que modela» 👇\n\nTe pasa si:\n1 · Te mandan el modelo para pasar a limpio lo que otros decidieron en una reunión a la que no te invitaron.\n2 · Encuentras los choques en tu pantalla, pero el reporte de interferencias lo firma otro.\n3 · Haces cualquier familia en Revit, pero no sabrías escribir el plan de ejecución BIM (BEP) del proyecto.\n4 · Cuando cambia el proyecto, eres el que trabaja el fin de semana, no el que decide el cambio.\n\nNo es Revit. Es que nadie te enseñó a gestionar la información: quién entrega qué, cuándo y con qué nivel de detalle.\n\n¿Cuántas de las 4 te pasan? Responde con el número 👇\n\nComenta NIVEL y te mando el test para ver en qué bloque estás.\n\n#BIM #Revit #BIMManager #Coordinacion #DesignModelingAcademy",
+   "notas_produccion": "Abre el mes y la semana. Estructura sintomática del brief (portada = síntoma, 2-5 = señales, 6 = causa, 7 = palabra). La pregunta pide un NÚMERO (1 a 4), no la palabra «nivel», para que el disparador no confunda respuestas con pedidos del test. Le habla al perfil «ingeniero empleado» del banco de síntomas (sección 4 del brief).",
+   "embudo": {
+    "palabra": "NIVEL",
+    "lead_magnet": "Test de nivel BIM (5 minutos, gratis)",
+    "enlace": "https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form",
+    "dm_texto": "¡Hola! 👋 Aquí tienes el test de nivel BIM (5 minutos): [ENLACE]\n\nTe dice en qué bloque estás hoy: modelado, coordinación, gestión o BIM + IA. Si sales en coordinación, el salto no es aprender más Revit: es aprender a dirigir la información del proyecto.\n\nMientras lo haces, cuéntame: ¿en tu trabajo actual quién arma el BEP y quién dirige las reuniones de coordinación?",
+    "producto_destino": "Máster BIM Management + IA por bloques (solo se invita a agendar; nunca precio)",
+    "canal_dm": "OpenReply",
+    "nuevo_lead_magnet": false
+   },
+   "prompt_imagenes": "Portada 4:5: captura real de Revit con el modelo en gris y una etiqueta «el que modela» sobre el usuario; tipografía de marca.",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "slides": [
+    {
+     "n": 1,
+     "texto": "LLEVAS AÑOS EN BIM Y SIGUES SIENDO «EL QUE MODELA» · 4 señales →",
+     "visual": "Portada: captura real de Revit desaturada y el texto grande en azul marino. Nada de stock."
+    },
+    {
+     "n": 2,
+     "texto": "Señal 1 · Te mandan el modelo para «pasar a limpio» lo que otros decidieron en una reunión a la que no te invitaron.",
+     "visual": "Ícono de reunión con una silla vacía."
+    },
+    {
+     "n": 3,
+     "texto": "Señal 2 · Encuentras los choques en tu pantalla… pero el reporte de interferencias lo firma otro.",
+     "visual": "Captura de un choque marcado en rojo."
+    },
+    {
+     "n": 4,
+     "texto": "Señal 3 · Haces cualquier familia en Revit, pero no sabrías escribir el plan de ejecución BIM (BEP) del proyecto.",
+     "visual": "Documento BEP en blanco con el cursor parpadeando."
+    },
+    {
+     "n": 5,
+     "texto": "Señal 4 · Cuando cambia el proyecto, eres el que trabaja el fin de semana, no el que decide el cambio.",
+     "visual": "Calendario con sábado y domingo marcados."
+    },
+    {
+     "n": 6,
+     "texto": "La causa · No es Revit. Nadie te enseñó a gestionar la información: quién entrega qué, cuándo y con qué nivel de detalle (ISO 19650).",
+     "visual": "Lámina de texto, fondo blanco."
+    },
+    {
+     "n": 7,
+     "texto": "¿Cuántas de las 4 te pasan? Responde con el número 👇 · Comenta NIVEL y te mando el test para ver en qué bloque estás.",
+     "visual": "Cierre invertido ámbar."
+    }
+   ],
+   "red_principal": "instagram",
+   "cta_por_red": {
+    "instagram": "Comenta NIVEL",
+    "facebook": "Comenta NIVEL",
+    "linkedin": "Sin palabra clave: pregunta abierta",
+    "threads": "Pregunta abierta, sin palabra clave"
+   }
+  },
+  {
+   "id": "dic-reedit-zapata-suelos-reel",
+   "grupo": "GRUPO 1 · Feed",
+   "formato": "reel",
+   "formato_detalle": "REEL (re-edición del ganador del 11-nov, 45-55 s)",
+   "redes": [
+    "instagram",
+    "facebook",
+    "tiktok",
+    "youtube",
+    "linkedin"
+   ],
+   "fecha": "2026-12-02T15:00:00Z",
+   "fecha_iso": "2026-12-02",
+   "fecha_etiqueta": "Mié 2 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 1 (1-6 dic)",
+   "tipo": "problema",
+   "intencion_dic": "problema",
+   "producto": "Diplomado de Cálculo Estructural",
+   "audiencia": "Calculista o ingeniero civil que diseña cimentaciones (COMPRADORES-VS-NO)",
+   "estado": "POR EDITAR (re-edición, sin grabar)",
+   "titulo": "Copiaste la zapata del proyecto anterior (y el suelo era otro)",
+   "eje": "NÚCLEO-BIM",
+   "pilar": "Re-edición de ganador con gancho de problema",
+   "hook": "Copiaste la zapata del proyecto anterior… y el suelo no era el mismo.",
+   "cta": {
+    "instagram": "Comenta ZAPATA",
+    "facebook": "Comenta ZAPATA",
+    "tiktok": "Pregunta abierta, sin palabra clave",
+    "youtube_shorts": "Pregunta abierta, sin palabra clave",
+    "linkedin": "Sin palabra clave: pregunta abierta"
+   },
+   "caption": "Copiaste la zapata del proyecto anterior… y el suelo no era el mismo 👇\n\nLa misma zapata no se comporta igual en arcilla, arena, limo o grava. Cambia la capacidad del suelo, cambia cómo se asienta y cambia lo que tienes que verificar. Por eso las dimensiones salen del estudio de suelos de ESE terreno, no del proyecto que ya tenías en la carpeta.\n\n¿En qué suelo cimentaste tu último proyecto: arcilla, arena, limo o grava? 👇\n\nComenta ZAPATA y te mando la calculadora de zapatas gratis.\n\n#IngenieriaCivil #CalculoEstructural #Cimentaciones #DesignModelingAcademy",
+   "notas_produccion": "RE-EDICIÓN. Fuente: reel DfmwQgAjiDk del 11-nov «La misma zapata no se comporta igual en arcilla, arena, limo, grava…» (3.853 vistas, 81 comentarios: el que más conversó en noviembre). Se usa el mismo video y la misma voz; cambian el gancho y el cierre. GANCHO NUEVO (0-3 s, texto grande sobre el primer plano, sin grabar nada): «COPIASTE LA ZAPATA DEL PROYECTO ANTERIOR». CIERRE NUEVO (últimos 5 s): la pregunta «¿En qué suelo cimentaste tu último proyecto?» + «COMENTA ZAPATA». Si el video original dura más de 55 s, se recorta el tramo más largo, no el de los suelos. Edita Daniela. Embudo: ZAPATA es la única palabra que sigue en GHL.",
+   "embudo": {
+    "palabra": "ZAPATA",
+    "lead_magnet": "Calculadora de zapatas (gratis)",
+    "enlace": "https://funnel.dgdesignmodeling.com/acceso-gratis-calculadora-zapatas-form",
+    "dm_texto": "¡Hola! 👷 Aquí tienes la calculadora de zapatas gratis: [ENLACE]\n\nUn consejo antes de usarla: mete la capacidad admisible del estudio de suelos de ESE terreno, no la del proyecto anterior. Con eso te da las dimensiones y las verificaciones en un par de minutos.\n\n¿Qué estás cimentando ahora (vivienda, edificio o nave) y ya tienes el estudio de suelos?",
+    "producto_destino": "Diplomado de Cálculo Estructural",
+    "canal_dm": "GHL",
+    "nuevo_lead_magnet": false
+   },
+   "prompt_imagenes": "",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "guion_reel": [
+    {
+     "tiempo": "0:00-0:03",
+     "accion": "Primer plano del video original con texto grande arriba · En pantalla: COPIASTE LA ZAPATA DEL PROYECTO ANTERIOR",
+     "voz": "(sin voz nueva; entra el audio original en el segundo 1)"
+    },
+    {
+     "tiempo": "0:03-0:45",
+     "accion": "Video original completo (arcilla, arena, limo, grava) · En pantalla: los subtítulos originales",
+     "voz": "(voz original del reel del 11-nov)"
+    },
+    {
+     "tiempo": "0:45-0:52",
+     "accion": "Lámina de cierre · En pantalla: ¿EN QUÉ SUELO CIMENTASTE TU ÚLTIMO PROYECTO? · COMENTA ZAPATA",
+     "voz": ""
+    }
+   ],
+   "fuente_video": {
+    "shortCode": "DfmwQgAjiDk",
+    "fecha": "2026-11-11",
+    "vistas": 3853,
+    "comentarios": 81,
+    "guardados": 57
+   },
+   "gancho_nuevo": "Copiaste la zapata del proyecto anterior… y el suelo no era el mismo.",
+   "red_principal": "instagram",
+   "cta_por_red": {
+    "instagram": "Comenta ZAPATA",
+    "facebook": "Comenta ZAPATA",
+    "tiktok": "Pregunta abierta, sin palabra clave",
+    "youtube_shorts": "Pregunta abierta, sin palabra clave",
+    "linkedin": "Sin palabra clave: pregunta abierta"
+   }
+  },
+  {
+   "id": "dic-reedit-uniones-viga-columna-reel",
+   "grupo": "GRUPO 1 · Feed",
+   "formato": "reel",
+   "formato_detalle": "REEL (re-edición de la chuleta del 4-nov, 35-45 s)",
+   "redes": [
+    "instagram",
+    "facebook",
+    "tiktok",
+    "youtube",
+    "linkedin"
+   ],
+   "fecha": "2026-12-03T15:00:00Z",
+   "fecha_iso": "2026-12-03",
+   "fecha_etiqueta": "Jue 3 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 1 (1-6 dic)",
+   "tipo": "problema",
+   "intencion_dic": "problema",
+   "producto": "Especialización en Acero con Tutor IA",
+   "audiencia": "Consultor independiente o calculista que diseña naves y estructuras mixtas (COMPRADORES-VS-NO)",
+   "estado": "POR EDITAR (re-edición, sin grabar)",
+   "titulo": "La viga pasó la verificación. La unión fue la que falló",
+   "eje": "NÚCLEO-BIM",
+   "pilar": "Re-edición de ganador con gancho de problema",
+   "hook": "La viga pasó la verificación. La unión fue la que falló.",
+   "cta": {
+    "instagram": "Comenta ACERO",
+    "facebook": "Comenta ACERO",
+    "tiktok": "Pregunta abierta, sin palabra clave",
+    "youtube_shorts": "Pregunta abierta, sin palabra clave",
+    "linkedin": "Sin palabra clave: pregunta abierta"
+   },
+   "caption": "La viga pasó la verificación. La unión fue la que falló 👇\n\nHay al menos 6 formas de unir una viga de acero a una columna de hormigón, y no transmiten lo mismo: unas solo pasan cortante y otras también momento. Si en el modelo la unión es rígida y en obra se construye una que solo pasa cortante, el cálculo de la viga ya no describe lo que se construyó.\n\n¿Cuál de las 6 usas tú? Dinos el número 👇\n\nComenta ACERO y te mando las 5 verificaciones que hago antes de dar por buena una estructura de acero.\n\n#EstructurasDeAcero #IngenieriaEstructural #NavesIndustriales #DesignModelingAcademy",
+   "notas_produccion": "RE-EDICIÓN. Fuente: reel DfU1jwSj6g6 del 4-nov «6 formas de unir una viga de acero a una columna de hormigón» (2.516 vistas, 55 guardados: el más guardado de noviembre). GANCHO NUEVO (0-3 s, texto sobre el primer cuadro): «LA VIGA PASÓ. LA UNIÓN NO.». CIERRE NUEVO: «¿Cuál usas tú? Dinos el número» + COMENTA ACERO. Mismo video, sin grabar. REGLA 0: Gabriel revisa cada dato técnico contra la norma citada antes de publicar. (rígida/articulada según la unión que se ve en el video).",
+   "embudo": {
+    "palabra": "ACERO",
+    "lead_magnet": "Guía de las 5 verificaciones de una nave de acero (gratis)",
+    "enlace": "https://funnel.dgdesignmodeling.com/acceso-gratis-verificacion-acero-form",
+    "dm_texto": "¡Hola! 🔩 Aquí tienes las 5 verificaciones que reviso antes de dar por buena una estructura de acero: [ENLACE]\n\nUna de las que más se salta es comprobar que la unión que modelaste (rígida o articulada) es la que de verdad se va a construir.\n\n¿Qué estás diseñando ahora: una nave, un entrepiso o una estructura mixta con hormigón?",
+    "producto_destino": "Especialización en Acero con Tutor IA",
+    "canal_dm": "OpenReply",
+    "nuevo_lead_magnet": false
+   },
+   "prompt_imagenes": "",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "guion_reel": [
+    {
+     "tiempo": "0:00-0:03",
+     "accion": "Primer cuadro de la chuleta con texto grande · En pantalla: LA VIGA PASÓ. LA UNIÓN NO.",
+     "voz": "(sin voz nueva)"
+    },
+    {
+     "tiempo": "0:03-0:38",
+     "accion": "Chuleta original: las 6 uniones viga de acero-columna de hormigón · En pantalla: numeración 1 a 6 grande para que respondan con el número",
+     "voz": "(audio original)"
+    },
+    {
+     "tiempo": "0:38-0:44",
+     "accion": "Lámina de cierre · En pantalla: ¿CUÁL USAS TÚ? DINOS EL NÚMERO · COMENTA ACERO",
+     "voz": ""
+    }
+   ],
+   "fuente_video": {
+    "shortCode": "DfU1jwSj6g6",
+    "fecha": "2026-11-04",
+    "vistas": 2516,
+    "comentarios": 10,
+    "guardados": 55
+   },
+   "gancho_nuevo": "La viga pasó la verificación. La unión fue la que falló.",
+   "red_principal": "instagram",
+   "cta_por_red": {
+    "instagram": "Comenta ACERO",
+    "facebook": "Comenta ACERO",
+    "tiktok": "Pregunta abierta, sin palabra clave",
+    "youtube_shorts": "Pregunta abierta, sin palabra clave",
+    "linkedin": "Sin palabra clave: pregunta abierta"
+   }
+  },
+  {
+   "id": "dic-testimonio-acero-post",
+   "grupo": "GRUPO 1 · Feed",
+   "formato": "post",
+   "formato_detalle": "POST (1 imagen 4:5 con cita real)",
+   "redes": [
+    "instagram",
+    "facebook",
+    "linkedin",
+    "threads"
+   ],
+   "fecha": "2026-12-04T15:00:00Z",
+   "fecha_iso": "2026-12-04",
+   "fecha_etiqueta": "Vie 4 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 1 (1-6 dic)",
+   "tipo": "testimonio",
+   "intencion_dic": "venta",
+   "producto": "Especialización en Acero con Tutor IA",
+   "audiencia": "Consultor independiente que rechaza proyectos de acero (COMPRADORES-VS-NO)",
+   "estado": "ESPERA TESTIMONIO (confirmar con Dayana)",
+   "titulo": "Testimonio de un alumno de Acero: antes y después",
+   "eje": "NÚCLEO-BIM",
+   "pilar": "Prueba social · testimonio real",
+   "hook": "«[Frase textual del alumno sobre el problema que tenía antes de la especialización]»",
+   "cta": {
+    "instagram": "Escríbenos TEMARIO por DM",
+    "facebook": "Escríbenos TEMARIO por Messenger",
+    "linkedin": "Sin palabra clave: pregunta abierta",
+    "threads": "Pregunta abierta, sin palabra clave"
+   },
+   "caption": "«[Frase textual del alumno] (confirmar con Dayana)» — [nombre], [país], alumno de la Especialización en Acero.\n\nLo que más escuchamos antes de empezar: «rechazo proyectos de acero porque no sé si mi cálculo aguanta la revisión». Lo que cambia no es el software: es tener un orden de verificación y alguien que te revise.\n\n¿Qué proyecto de acero rechazaste este año? 👇\n\nEscríbenos TEMARIO por DM y te mandamos el temario módulo a módulo.\n\n#EstructurasDeAcero #IngenieriaEstructural #NavesIndustriales #DesignModelingAcademy",
+   "notas_produccion": "PIEZA DE VENTA (no pide palabra de lead magnet: TEMARIO). Testimonio REAL con permiso: nombre, país, frase textual y una captura de lo que entregó. Si no hay testimonio con permiso antes del jue 3-dic, la pieza se cambia por la reserva y se avisa. SIN PRECIO. (confirmar con Dayana: qué alumno, frase y permiso). Acompaña la historia de venta del jueves 3.",
+   "embudo": {
+    "palabra": "TEMARIO",
+    "lead_magnet": "Temario de la Especialización en Acero, módulo a módulo (sin precio en público)",
+    "enlace": "(confirmar con Dayana: enlace o PDF del temario)",
+    "dm_texto": "¡Hola! Gracias por escribir 🙌 Aquí tienes el temario de la Especialización en Acero con Tutor IA: [ENLACE]\n\nEstá ordenado como se diseña una estructura real: cargas, análisis, verificaciones y uniones.\n\nPara orientarte mejor: ¿hoy diseñas acero en algún software (Robot, SAP2000, ETABS) o lo estás empezando?",
+    "producto_destino": "Especialización en Acero con Tutor IA",
+    "canal_dm": "OpenReply",
+    "nuevo_lead_magnet": false,
+    "nota": "Lo recibe OpenReply y pasa a una persona del equipo comercial (venta, no recurso gratis)."
+   },
+   "prompt_imagenes": "",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "slides": [
+    {
+     "n": 1,
+     "texto": "«[FRASE TEXTUAL DEL ALUMNO]» · [Nombre], [país] · Especialización en Acero con Tutor IA",
+     "visual": "Foto o captura real del proyecto del alumno + la cita en grande. (confirmar con Dayana)"
+    }
+   ],
+   "red_principal": "instagram",
+   "cta_por_red": {
+    "instagram": "Escríbenos TEMARIO por DM",
+    "facebook": "Escríbenos TEMARIO por Messenger",
+    "linkedin": "Sin palabra clave: pregunta abierta",
+    "threads": "Pregunta abierta, sin palabra clave"
+   }
+  },
+  {
+   "id": "dic-cuantia-aci-nec-carrusel",
+   "grupo": "GRUPO 1 · Feed",
+   "formato": "carrusel",
+   "formato_detalle": "CARRUSEL (7 láminas, 4:5)",
+   "redes": [
+    "instagram",
+    "facebook",
+    "linkedin",
+    "threads"
+   ],
+   "fecha": "2026-12-07T15:00:00Z",
+   "fecha_iso": "2026-12-07",
+   "fecha_etiqueta": "Lun 7 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 2 (7-13 dic)",
+   "tipo": "solución",
+   "intencion_dic": "referencia",
+   "producto": "Diplomado de Cálculo Estructural",
+   "audiencia": "Calculista al que le devuelven la memoria (COMPRADORES-VS-NO)",
+   "estado": "POR DISEÑAR",
+   "titulo": "8 % o 3 %: la cuantía de columnas según ACI y NEC",
+   "eje": "NÚCLEO-BIM",
+   "pilar": "Referencia técnica comparativa (guardable)",
+   "hook": "El ACI te deja llegar al 8 % de acero en una columna. La NEC, al 3 %. ¿Con cuál diseñaste?",
+   "cta": {
+    "instagram": "Comenta MEMORIA",
+    "facebook": "Comenta MEMORIA",
+    "linkedin": "Sin palabra clave: pregunta abierta",
+    "threads": "Pregunta abierta, sin palabra clave"
+   },
+   "caption": "El ACI te deja llegar al 8 % de acero en una columna. La NEC, al 3 %. ¿Con cuál diseñaste? 👇\n\nColumnas, mínimo: 1 % del área bruta en las dos.\nColumnas, máximo: 8 % en el ACI 318-19 (10.6.1.1), 6 % en pórticos especiales (18.7.4.1) y 3 % en la NEC-SE-HM.\nVigas, mínimo (ACI 318-19, 9.6.1.2): el mayor de 0,25√f'c/fy y 1,4/fy.\nLosas, retracción y temperatura (ACI 318-19, 24.4.3.2): 0,0018 del área bruta.\n\nCuando te devuelven la memoria «con el cálculo bien», casi siempre es esto: no dice con qué norma ni con qué artículo.\n\n¿Con qué norma te revisan a ti: ACI o NEC? 👇\n\nComenta MEMORIA y te mando la plantilla de memoria de cálculo verificable.\n\n#IngenieriaCivil #CalculoEstructural #Cimentaciones #DesignModelingAcademy",
+   "notas_produccion": "REFERENCIA COMPARATIVA (formato del ganador «El 1 % de cuantía», 152 comentarios y 765 guardados). REGLA 0: Gabriel revisa cada dato técnico contra la norma citada antes de publicar. Artículos a confirmar: ACI 318-19 10.6.1.1 (columnas 1-8 %), 18.7.4.1 (columnas de pórtico especial 1-6 %), 9.6.1.2 (vigas, mínimo), 18.6.3.1 (vigas de pórtico especial, máximo 2,5 %), 24.4.3.2 (losas 0,0018); NEC-SE-HM 4.3.3 (columnas 1-3 %). Si un valor no se confirma, se quita la fila, no se redondea.",
+   "embudo": {
+    "palabra": "MEMORIA",
+    "lead_magnet": "Plantilla de memoria de cálculo verificable (gratis)",
+    "enlace": "https://funnel.dgdesignmodeling.com/acceso-gratis-memoria-calculo-form",
+    "dm_texto": "¡Hola! 📄 Aquí tienes la plantilla de memoria de cálculo verificable: [ENLACE]\n\nEstá armada para que cada número diga de dónde sale: norma, artículo y combinación. Así el revisor no tiene que adivinar.\n\nPregunta rápida: ¿con qué norma te revisan tus proyectos, ACI 318 o NEC, y cuántas veces te han devuelto una memoria este año?",
+    "producto_destino": "Diplomado de Cálculo Estructural",
+    "canal_dm": "OpenReply",
+    "nuevo_lead_magnet": false
+   },
+   "prompt_imagenes": "",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "slides": [
+    {
+     "n": 1,
+     "texto": "8 % O 3 % · La cuantía de acero en columnas según el ACI 318-19 y la NEC-SE-HM →",
+     "visual": "Portada: corte de columna con varillas; «8 %» y «3 %» enormes en dos colores."
+    },
+    {
+     "n": 2,
+     "texto": "Columnas · MÍNIMO · ACI 318-19 (10.6.1.1): 1 % · NEC-SE-HM: 1 %. Aquí coinciden.",
+     "visual": "Tabla de dos columnas: ACI | NEC."
+    },
+    {
+     "n": 3,
+     "texto": "Columnas · MÁXIMO · ACI 318-19: 8 % (10.6.1.1) y 6 % en pórticos especiales (18.7.4.1) · NEC-SE-HM: 3 %. Aquí está la diferencia que te devuelven.",
+     "visual": "Misma tabla con la fila del máximo en naranja."
+    },
+    {
+     "n": 4,
+     "texto": "Vigas · MÍNIMO (ACI 318-19, 9.6.1.2): el mayor de 0,25√f'c/fy y 1,4/fy. Con fy = 420 MPa y f'c hasta 31 MPa manda 1,4/fy ≈ 0,33 %. Pórticos especiales: máximo 2,5 % (18.6.3.1).",
+     "visual": "Corte de viga con el acero inferior marcado."
+    },
+    {
+     "n": 5,
+     "texto": "Losas · retracción y temperatura (ACI 318-19, 24.4.3.2): 0,0018 del área bruta.",
+     "visual": "Planta de losa con la malla."
+    },
+    {
+     "n": 6,
+     "texto": "Por qué te devuelven la memoria · No es el número: la memoria no dice qué norma ni qué artículo usaste. Si citas 8 % y te revisan con la NEC, el cálculo «estaba bien» y vuelve igual.",
+     "visual": "Lámina de texto con un sello «DEVUELTO»."
+    },
+    {
+     "n": 7,
+     "texto": "¿Con qué norma te revisan a ti: ACI o NEC? 👇 · Comenta MEMORIA y te mando la plantilla de memoria verificable.",
+     "visual": "Cierre invertido ámbar."
+    }
+   ],
+   "red_principal": "instagram",
+   "cta_por_red": {
+    "instagram": "Comenta MEMORIA",
+    "facebook": "Comenta MEMORIA",
+    "linkedin": "Sin palabra clave: pregunta abierta",
+    "threads": "Pregunta abierta, sin palabra clave"
+   }
+  },
+  {
+   "id": "dic-reedit-simbologia-niveles-reel",
+   "grupo": "GRUPO 1 · Feed",
+   "formato": "reel",
+   "formato_detalle": "REEL (re-edición del ganador del 20-oct, 30-40 s)",
+   "redes": [
+    "instagram",
+    "facebook",
+    "tiktok",
+    "youtube",
+    "linkedin"
+   ],
+   "fecha": "2026-12-08T15:00:00Z",
+   "fecha_iso": "2026-12-08",
+   "fecha_etiqueta": "Mar 8 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 2 (7-13 dic)",
+   "tipo": "problema",
+   "intencion_dic": "problema",
+   "producto": "Máster · Bloque 2 BIM Coordination",
+   "audiencia": "Ingeniero civil empleado que coordina planos de varias disciplinas (COMPRADORES-VS-NO)",
+   "estado": "POR EDITAR (re-edición, sin grabar)",
+   "titulo": "Arquitectura dice N+3,00 y estructura N+2,95: ¿cuál vale?",
+   "eje": "NÚCLEO-BIM",
+   "pilar": "Re-edición de ganador con gancho de problema",
+   "hook": "El plano de arquitectura dice N+3,00 y el de estructura N+2,95. ¿Cuál vale?",
+   "cta": {
+    "instagram": "Comenta NIVEL",
+    "facebook": "Comenta NIVEL",
+    "tiktok": "Pregunta abierta, sin palabra clave",
+    "youtube_shorts": "Pregunta abierta, sin palabra clave",
+    "linkedin": "Sin palabra clave: pregunta abierta"
+   },
+   "caption": "El plano de arquitectura dice N+3,00 y el de estructura N+2,95. ¿Cuál vale? 👇\n\nLos dos, si cada plano dice qué está midiendo: arquitectura suele acotar el nivel de piso terminado y estructura el de la losa, sin el acabado. El problema es cuando el símbolo no lo dice y en obra cada uno mide desde donde quiere.\n\n¿Qué símbolo de nivel usas tú en tus planos? Dinos la letra 👇\n\nComenta NIVEL y te mando el test para ver si estás listo para coordinar disciplinas.\n\n#BIM #Revit #BIMManager #Coordinacion #DesignModelingAcademy",
+   "notas_produccion": "RE-EDICIÓN. Fuente: reel DeubXmFlIDE del 20-oct «Simbología de niveles en planos ¿Cuál usas más?» (97.736 vistas, 603 comentarios, 4.391 guardados: el más comentado de la cuenta en 2026). GANCHO NUEVO (0-3 s, texto sobre el primer cuadro): «ARQUITECTURA: N+3,00 · ESTRUCTURA: N+2,95 · ¿CUÁL VALE?». CIERRE NUEVO: «¿Qué símbolo usas tú? Dinos la letra» + COMENTA NIVEL. Se le pone una LETRA a cada símbolo del video original para que respondan con la letra y no con la palabra «nivel» (auditoría del disparador de NIVEL: responde a cualquier comentario con esa palabra). REGLA 0: Gabriel revisa cada dato técnico contra la norma citada antes de publicar.",
+   "embudo": {
+    "palabra": "NIVEL",
+    "lead_magnet": "Test de nivel BIM (5 minutos, gratis)",
+    "enlace": "https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form",
+    "dm_texto": "¡Hola! 📐 Aquí tienes el test de nivel BIM (5 minutos): [ENLACE]\n\nEl problema de los N+3,00 y N+2,95 casi nunca es de dibujo: es de coordinación. En un modelo bien coordinado, el nivel de piso terminado y el de losa viven en el mismo archivo y nadie los adivina.\n\n¿En tu proyecto actual quién coordina los niveles entre arquitectura y estructura: tú u otra persona?",
+    "producto_destino": "Máster BIM Management + IA por bloques (solo se invita a agendar; nunca precio)",
+    "canal_dm": "OpenReply",
+    "nuevo_lead_magnet": false
+   },
+   "prompt_imagenes": "",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "guion_reel": [
+    {
+     "tiempo": "0:00-0:03",
+     "accion": "Primer cuadro del video original con dos cotas superpuestas · En pantalla: ARQUITECTURA N+3,00 · ESTRUCTURA N+2,95 · ¿CUÁL VALE?",
+     "voz": "(sin voz nueva)"
+    },
+    {
+     "tiempo": "0:03-0:32",
+     "accion": "Video original de la simbología, con una letra grande (A, B, C…) junto a cada símbolo · En pantalla: letras",
+     "voz": "(audio original)"
+    },
+    {
+     "tiempo": "0:32-0:38",
+     "accion": "Lámina de cierre · En pantalla: ¿CUÁL USAS TÚ? DINOS LA LETRA · COMENTA NIVEL",
+     "voz": ""
+    }
+   ],
+   "fuente_video": {
+    "shortCode": "DeubXmFlIDE",
+    "fecha": "2026-10-20",
+    "vistas": 97736,
+    "comentarios": 603,
+    "guardados": 4391
+   },
+   "gancho_nuevo": "El plano de arquitectura dice N+3,00 y el de estructura N+2,95. ¿Cuál vale?",
+   "red_principal": "instagram",
+   "cta_por_red": {
+    "instagram": "Comenta NIVEL",
+    "facebook": "Comenta NIVEL",
+    "tiktok": "Pregunta abierta, sin palabra clave",
+    "youtube_shorts": "Pregunta abierta, sin palabra clave",
+    "linkedin": "Sin palabra clave: pregunta abierta"
+   }
+  },
+  {
+   "id": "dic-gabriel-memoria-devuelta-reel",
+   "grupo": "GRUPO 1 · Feed",
+   "formato": "reel",
+   "formato_detalle": "REEL (Gabriel a cámara, 50-60 s)",
+   "redes": [
+    "instagram",
+    "facebook",
+    "tiktok",
+    "youtube",
+    "linkedin"
+   ],
+   "fecha": "2026-12-09T15:00:00Z",
+   "fecha_iso": "2026-12-09",
+   "fecha_etiqueta": "Mié 9 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 2 (7-13 dic)",
+   "tipo": "problema",
+   "intencion_dic": "problema",
+   "producto": "Diplomado de Cálculo Estructural",
+   "audiencia": "Calculista (COMPRADORES-VS-NO · banco de síntomas: «Te devolvieron la memoria y el cálculo estaba bien»)",
+   "estado": "POR GRABAR (Gabriel, antes del lun 7-dic)",
+   "titulo": "Te devolvieron la memoria… y el cálculo estaba bien",
+   "eje": "NÚCLEO-BIM",
+   "pilar": "Contenido sintomático · Gabriel a cámara",
+   "hook": "Te devolvieron la memoria de cálculo… y el cálculo estaba bien.",
+   "cta": {
+    "instagram": "Comenta MEMORIA",
+    "facebook": "Comenta MEMORIA",
+    "tiktok": "Pregunta abierta, sin palabra clave",
+    "youtube_shorts": "Pregunta abierta, sin palabra clave",
+    "linkedin": "Sin palabra clave: pregunta abierta"
+   },
+   "caption": "Te devolvieron la memoria de cálculo… y el cálculo estaba bien 👇\n\nCasi nunca es el cálculo. Es que la memoria no se puede seguir: no dice qué norma usaste, qué combinación gobierna ni de dónde sale cada carga. El revisor no tiene por qué adivinar, así que la devuelve.\n\nCuando cada número dice su origen, la revisión deja de ser una discusión.\n\n¿Cuántas veces te devolvieron una memoria este año? 👇\n\nComenta MEMORIA y te mando la plantilla de memoria de cálculo verificable.\n\n#IngenieriaCivil #CalculoEstructural #Cimentaciones #DesignModelingAcademy",
+   "notas_produccion": "GRABACIÓN NUEVA DE GABRIEL (lista «Grabaciones de Gabriel», G-01): grabar antes del lun 7-dic. Estructura sintomática de 5 tramos del brief. El tramo «espejo» lo cuenta Gabriel con SU caso real: si el ejemplo del guion no le pasó, lo cambia por uno que sí. Subtítulos de 1-2 palabras.",
+   "embudo": {
+    "palabra": "MEMORIA",
+    "lead_magnet": "Plantilla de memoria de cálculo verificable (gratis)",
+    "enlace": "https://funnel.dgdesignmodeling.com/acceso-gratis-memoria-calculo-form",
+    "dm_texto": "¡Hola! 📄 Aquí tienes la plantilla de memoria de cálculo verificable: [ENLACE]\n\nÚsala así: cada carga, combinación y resultado lleva al lado de dónde sale (norma y artículo). Es lo primero que busca un revisor.\n\n¿Qué es lo que más te observan cuando te devuelven una memoria: cargas, combinaciones o el formato?",
+    "producto_destino": "Diplomado de Cálculo Estructural",
+    "canal_dm": "OpenReply",
+    "nuevo_lead_magnet": false
+   },
+   "prompt_imagenes": "",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "guion_reel": [
+    {
+     "tiempo": "0:00-0:03",
+     "accion": "Gabriel a cámara, plano medio, la memoria impresa en la mano · En pantalla: TE DEVOLVIERON LA MEMORIA",
+     "voz": "Te devolvieron la memoria de cálculo… y el cálculo estaba bien."
+    },
+    {
+     "tiempo": "0:03-0:15",
+     "accion": "Gabriel a cámara · En pantalla: A MÍ TAMBIÉN ME PASÓ",
+     "voz": "A mí me pasó: [caso real de Gabriel: el revisor no encontró de dónde salía una carga y, en vez de preguntar, la devolvió]. Dos semanas perdidas por una línea."
+    },
+    {
+     "tiempo": "0:15-0:32",
+     "accion": "Corte a pantalla: una página de memoria sin referencias y la misma con «NEC-SE-CG», «ACI 318-19 · 5.3.1» al margen · En pantalla: NO ES EL CÁLCULO",
+     "voz": "No es el cálculo. Es que la memoria no se puede seguir: no dice qué norma usaste, qué combinación gobierna ni de dónde sale cada carga. El revisor no tiene por qué adivinar."
+    },
+    {
+     "tiempo": "0:32-0:45",
+     "accion": "Gabriel a cámara · En pantalla: CADA NÚMERO CON SU ORIGEN",
+     "voz": "Cuando cada número dice su origen —norma, artículo, combinación—, la revisión deja de ser una discusión y pasa a ser una lectura."
+    },
+    {
+     "tiempo": "0:45-0:55",
+     "accion": "Gabriel a cámara, cierre · En pantalla: COMENTA MEMORIA",
+     "voz": "¿Cuántas veces te la devolvieron este año? Comenta MEMORIA y te mando la plantilla que usamos."
+    }
+   ],
+   "gabriel_a_camara": true,
+   "red_principal": "instagram",
+   "cta_por_red": {
+    "instagram": "Comenta MEMORIA",
+    "facebook": "Comenta MEMORIA",
+    "tiktok": "Pregunta abierta, sin palabra clave",
+    "youtube_shorts": "Pregunta abierta, sin palabra clave",
+    "linkedin": "Sin palabra clave: pregunta abierta"
+   }
+  },
+  {
+   "id": "dic-honorarios-revisiones-carrusel",
+   "grupo": "GRUPO 1 · Feed",
+   "formato": "carrusel",
+   "formato_detalle": "CARRUSEL (7 láminas, 4:5)",
+   "redes": [
+    "instagram",
+    "facebook",
+    "linkedin",
+    "threads"
+   ],
+   "fecha": "2026-12-11T15:00:00Z",
+   "fecha_iso": "2026-12-11",
+   "fecha_etiqueta": "Vie 11 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 2 (7-13 dic)",
+   "tipo": "problema",
+   "intencion_dic": "problema",
+   "producto": "Especialización en Acero con Tutor IA",
+   "audiencia": "Consultor independiente que quiere formalizarse (COMPRADORES-VS-NO)",
+   "estado": "POR DISEÑAR",
+   "titulo": "Ganaste el proyecto y perdiste plata en la tercera revisión",
+   "eje": "NÚCLEO-BIM",
+   "pilar": "Contenido sintomático · acusar un hábito",
+   "hook": "Ganaste el proyecto. Perdiste plata en la tercera ronda de revisión.",
+   "cta": {
+    "instagram": "Comenta COTIZA",
+    "facebook": "Comenta COTIZA",
+    "linkedin": "Sin palabra clave: pregunta abierta",
+    "threads": "Pregunta abierta, sin palabra clave"
+   },
+   "caption": "Ganaste el proyecto. Perdiste plata en la tercera ronda de revisión 👇\n\nCotizaste por m². El cliente cambió la arquitectura dos veces. Cada cambio fue un recálculo que nadie te pagó.\n\nTe pasa si tu propuesta:\n· no dice cuántas rondas de revisión incluye;\n· no separa cálculo, planos y memoria;\n· no tiene precio para «cambio de arquitectura después de aprobado».\n\nLo que funciona: cotizar por entregable, dejar escritas las rondas incluidas y ponerle precio a la siguiente antes de firmar.\n\n¿Cuántas rondas de revisión incluyes tú: 0, 1, 2 o «las que pidan»? 👇\n\nComenta COTIZA y te mando el cotizador de honorarios.\n\n#Honorarios #IngenieriaEstructural #Consultoria #DesignModelingAcademy",
+   "notas_produccion": "Banco de síntomas del brief (consultor independiente). Antecedente: «¿Cobras 5 USD por m²?» fue la única pieza con conversación de su semana (11 comentarios, 9 contactos a COTIZA). La recomendación de «2 rondas incluidas» es criterio de la casa, no norma: Gabriel la confirma o la cambia.",
+   "embudo": {
+    "palabra": "COTIZA",
+    "lead_magnet": "Cotizador de honorarios (gratis)",
+    "enlace": "https://funnel.dgdesignmodeling.com/acceso-gratis-cotizador-honorarios-form",
+    "dm_texto": "¡Hola! 💼 Aquí tienes el cotizador de honorarios: [ENLACE]\n\nTe ayuda a separar la cotización por entregables (cálculo, planos, memoria) y a ponerle precio a las revisiones extra antes de firmar.\n\n¿Qué tipo de proyectos cotizas más: vivienda, edificios o naves de acero?",
+    "producto_destino": "Especialización en Acero con Tutor IA",
+    "canal_dm": "OpenReply",
+    "nuevo_lead_magnet": false
+   },
+   "prompt_imagenes": "",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "slides": [
+    {
+     "n": 1,
+     "texto": "GANASTE EL PROYECTO Y PERDISTE PLATA · el error está en la cotización, no en el cálculo →",
+     "visual": "Portada: contrato firmado con una calculadora en rojo."
+    },
+    {
+     "n": 2,
+     "texto": "Así pasa · Cotizaste por m². El cliente cambió la arquitectura dos veces. Cada cambio fue un recálculo que nadie te pagó.",
+     "visual": "Línea de tiempo: firma → cambio 1 → cambio 2 → entrega."
+    },
+    {
+     "n": 3,
+     "texto": "Señal 1 · Tu propuesta no dice cuántas rondas de revisión incluye.",
+     "visual": "Propuesta con un hueco resaltado."
+    },
+    {
+     "n": 4,
+     "texto": "Señal 2 · No separaste el cálculo de los planos, ni los planos de la memoria.",
+     "visual": "Tres cajas sueltas: cálculo, planos, memoria."
+    },
+    {
+     "n": 5,
+     "texto": "Señal 3 · No hay precio para «cambio de arquitectura después de aprobado».",
+     "visual": "Plano con una nube de revisión."
+    },
+    {
+     "n": 6,
+     "texto": "Qué hacer · Cotiza por entregable, deja escritas las rondas incluidas y ponle precio a la siguiente antes de firmar.",
+     "visual": "Lámina de texto con 3 checks."
+    },
+    {
+     "n": 7,
+     "texto": "¿Cuántas rondas incluyes tú: 0, 1, 2 o «las que pidan»? 👇 · Comenta COTIZA y te mando el cotizador de honorarios.",
+     "visual": "Cierre invertido ámbar."
+    }
+   ],
+   "red_principal": "instagram",
+   "cta_por_red": {
+    "instagram": "Comenta COTIZA",
+    "facebook": "Comenta COTIZA",
+    "linkedin": "Sin palabra clave: pregunta abierta",
+    "threads": "Pregunta abierta, sin palabra clave"
+   }
+  },
+  {
+   "id": "dic-deflexiones-l360-carrusel",
+   "grupo": "GRUPO 1 · Feed",
+   "formato": "carrusel",
+   "formato_detalle": "CARRUSEL (8 láminas, 4:5)",
+   "redes": [
+    "instagram",
+    "facebook",
+    "linkedin",
+    "threads"
+   ],
+   "fecha": "2026-12-14T15:00:00Z",
+   "fecha_iso": "2026-12-14",
+   "fecha_etiqueta": "Lun 14 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 3 (14-20 dic)",
+   "tipo": "solución",
+   "intencion_dic": "referencia",
+   "producto": "Especialización en Acero con Tutor IA",
+   "audiencia": "Calculista o consultor que diseña naves y entrepisos de acero (COMPRADORES-VS-NO)",
+   "estado": "POR DISEÑAR",
+   "titulo": "L/360, L/240 o L/180: ¿cuál le toca a cada elemento?",
+   "eje": "NÚCLEO-BIM",
+   "pilar": "Referencia técnica comparativa (guardable)",
+   "hook": "L/360, L/240, L/180. Si usas el mismo límite de deflexión para todo, alguno está mal.",
+   "cta": {
+    "instagram": "Comenta ACERO",
+    "facebook": "Comenta ACERO",
+    "linkedin": "Sin palabra clave: pregunta abierta",
+    "threads": "Pregunta abierta, sin palabra clave"
+   },
+   "caption": "L/360, L/240, L/180. Si usas el mismo límite de deflexión para todo, alguno está mal 👇\n\nSegún el IBC 2021 (tabla 1604.3):\n· Entrepisos: L/360 con carga viva · L/240 con carga total.\n· Cubierta con cielo raso de yeso o enlucido: L/360 · L/240.\n· Cubierta con otro cielo raso: L/240 · L/180.\n· Cubierta sin cielo raso (lo típico de una nave): L/180 · L/120.\n\nEl error típico: correas de nave con L/360 «por seguridad» (sobredimensionas) o vigas de entrepiso con L/180 (vibra y fisura los acabados). Y en la memoria, di de dónde sale el límite que usas.\n\n¿Qué límite usas tú para las correas de una nave? 👇\n\nComenta ACERO y te mando las 5 verificaciones que hago antes de dar por buena una nave.\n\n#EstructurasDeAcero #IngenieriaEstructural #NavesIndustriales #DesignModelingAcademy",
+   "notas_produccion": "REFERENCIA COMPARATIVA guardable. REGLA 0: Gabriel revisa cada dato técnico contra la norma citada antes de publicar. Fuente a confirmar: IBC 2021, tabla 1604.3 (miembros de entrepiso: L/360 viva, L/240 total; cubierta con cielo raso de yeso: L/360, L/240; cielo raso que no es de yeso: L/240, L/180; sin cielo raso: L/180, L/120). No se dice qué exige la NEC: si Gabriel quiere citar la norma ecuatoriana, la confirma antes.",
+   "embudo": {
+    "palabra": "ACERO",
+    "lead_magnet": "Guía de las 5 verificaciones de una nave de acero (gratis)",
+    "enlace": "https://funnel.dgdesignmodeling.com/acceso-gratis-verificacion-acero-form",
+    "dm_texto": "¡Hola! 🔩 Aquí tienes las 5 verificaciones que hago antes de dar por buena una nave de acero: [ENLACE]\n\nLa de deflexiones está ahí: primero decides qué límite le toca a cada elemento y después revisas el perfil, no al revés.\n\n¿Estás diseñando una nave ahora? ¿De qué luz?",
+    "producto_destino": "Especialización en Acero con Tutor IA",
+    "canal_dm": "OpenReply",
+    "nuevo_lead_magnet": false
+   },
+   "prompt_imagenes": "",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "slides": [
+    {
+     "n": 1,
+     "texto": "L/360 · L/240 · L/180 → ¿cuál le toca a cada elemento? (IBC 2021, tabla 1604.3)",
+     "visual": "Portada: viga deformada con las tres fracciones en grande."
+    },
+    {
+     "n": 2,
+     "texto": "Entrepisos · L/360 con carga viva · L/240 con carga total.",
+     "visual": "Tabla: elemento | viva | total."
+    },
+    {
+     "n": 3,
+     "texto": "Cubierta con cielo raso de yeso o enlucido · L/360 · L/240.",
+     "visual": "Misma tabla, fila 2."
+    },
+    {
+     "n": 4,
+     "texto": "Cubierta con cielo raso que no es de yeso · L/240 · L/180.",
+     "visual": "Misma tabla, fila 3."
+    },
+    {
+     "n": 5,
+     "texto": "Cubierta sin cielo raso (lo típico de una nave) · L/180 · L/120.",
+     "visual": "Misma tabla, fila 4, con una nave de fondo."
+    },
+    {
+     "n": 6,
+     "texto": "El error típico · Correas de nave con L/360 «por seguridad»: sobredimensionas. Vigas de entrepiso con L/180: vibra y fisura los acabados.",
+     "visual": "Dos íconos: billete y fisura."
+    },
+    {
+     "n": 7,
+     "texto": "En la memoria · Di de dónde sale el límite que usas (IBC, norma local o pliego del cliente). Si no lo dices, te lo preguntan.",
+     "visual": "Lámina de texto."
+    },
+    {
+     "n": 8,
+     "texto": "¿Qué límite usas tú para las correas de una nave? 👇 · Comenta ACERO y te mando las 5 verificaciones.",
+     "visual": "Cierre invertido ámbar."
+    }
+   ],
+   "red_principal": "instagram",
+   "cta_por_red": {
+    "instagram": "Comenta ACERO",
+    "facebook": "Comenta ACERO",
+    "linkedin": "Sin palabra clave: pregunta abierta",
+    "threads": "Pregunta abierta, sin palabra clave"
+   }
+  },
+  {
+   "id": "dic-gabriel-ratios-robot-reel",
+   "grupo": "GRUPO 1 · Feed",
+   "formato": "reel",
+   "formato_detalle": "REEL (Gabriel a cámara + pantalla de Robot, 50-60 s)",
+   "redes": [
+    "instagram",
+    "facebook",
+    "tiktok",
+    "youtube",
+    "linkedin"
+   ],
+   "fecha": "2026-12-15T15:00:00Z",
+   "fecha_iso": "2026-12-15",
+   "fecha_etiqueta": "Mar 15 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 3 (14-20 dic)",
+   "tipo": "problema",
+   "intencion_dic": "problema",
+   "producto": "Especialización en Acero con Tutor IA",
+   "audiencia": "Calculista (banco de síntomas: «Tu modelo en Robot da ratios de 1,4…», caso real de un alumno)",
+   "estado": "POR GRABAR (Gabriel, antes del mar 8-dic)",
+   "titulo": "Tu modelo da ratios de 1,4: ¿es la sección o los apoyos?",
+   "eje": "NÚCLEO-BIM",
+   "pilar": "Contenido sintomático · Gabriel a cámara",
+   "hook": "Tu modelo en Robot da ratios de 1,4… y no sabes si es la sección o los apoyos.",
+   "cta": {
+    "instagram": "Comenta ACERO",
+    "facebook": "Comenta ACERO",
+    "tiktok": "Pregunta abierta, sin palabra clave",
+    "youtube_shorts": "Pregunta abierta, sin palabra clave",
+    "linkedin": "Sin palabra clave: pregunta abierta"
+   },
+   "caption": "Tu modelo en Robot da ratios de 1,4… y no sabes si es la sección o los apoyos 👇\n\nAntes de subir el perfil, revisa tres cosas del modelo:\n1 · Los apoyos: ¿empotrado o articulado, como se va a construir?\n2 · Las longitudes de pandeo que le diste a cada barra.\n3 · Que el viento entró con la dirección y el signo correctos.\n\nSi al corregir el modelo los ratios bajan, el perfil estaba bien. Si no bajan, ahí sí: sección.\n\n¿Cuál fue el ratio más alto que te dio tu último modelo? 👇\n\nComenta ACERO y te mando las 5 verificaciones que hago antes de cambiar un perfil.\n\n#EstructurasDeAcero #IngenieriaEstructural #NavesIndustriales #DesignModelingAcademy",
+   "notas_produccion": "GRABACIÓN NUEVA DE GABRIEL (G-02): antes del mar 8-dic. Pantalla real de Robot Structural Analysis (verificación de barras con ratios en rojo) grabada con el celular sobre el monitor. Caso real de un alumno (brief: «caso real de Mark»): NO se dice el nombre sin permiso (confirmar con Dayana). REGLA 0: Gabriel revisa cada dato técnico contra la norma citada antes de publicar.",
+   "embudo": {
+    "palabra": "ACERO",
+    "lead_magnet": "Guía de las 5 verificaciones de una nave de acero (gratis)",
+    "enlace": "https://funnel.dgdesignmodeling.com/acceso-gratis-verificacion-acero-form",
+    "dm_texto": "¡Hola! 🔩 Aquí tienes las 5 verificaciones que hago antes de cambiar un perfil: [ENLACE]\n\nEmpieza por los apoyos y las longitudes de pandeo: es donde más ratios inflados encuentro.\n\n¿En qué software estás modelando (Robot, SAP2000, ETABS) y qué ratio te está dando ahora?",
+    "producto_destino": "Especialización en Acero con Tutor IA",
+    "canal_dm": "OpenReply",
+    "nuevo_lead_magnet": false
+   },
+   "prompt_imagenes": "",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "guion_reel": [
+    {
+     "tiempo": "0:00-0:03",
+     "accion": "Celular sobre el monitor: verificación de barras en Robot con ratios en rojo · En pantalla: RATIO 1,4 · ¿SECCIÓN O APOYOS?",
+     "voz": "Tu modelo en Robot da ratios de 1,4… y no sabes si es la sección o los apoyos."
+    },
+    {
+     "tiempo": "0:03-0:12",
+     "accion": "Gabriel a cámara · En pantalla: CASO REAL",
+     "voz": "Un alumno me mandó exactamente esto: una nave con ratios de 1,4 en las columnas. Su primera idea fue subir el perfil."
+    },
+    {
+     "tiempo": "0:12-0:35",
+     "accion": "Pantalla: 1) apoyos en el modelo, 2) longitudes de pandeo de la barra, 3) caso de viento · En pantalla: 1 APOYOS · 2 PANDEO · 3 VIENTO",
+     "voz": "Antes de cambiar la sección, revisa tres cosas: cómo modelaste los apoyos, las longitudes de pandeo que le diste a cada barra y si el viento entró con la dirección correcta. Un apoyo mal definido te cambia los momentos de toda la columna."
+    },
+    {
+     "tiempo": "0:35-0:47",
+     "accion": "Gabriel a cámara · En pantalla: SI BAJAN, EL PERFIL ESTABA BIEN",
+     "voz": "Si al corregir el modelo los ratios bajan, el perfil estaba bien. Si no bajan, ahí sí: sección."
+    },
+    {
+     "tiempo": "0:47-0:57",
+     "accion": "Gabriel a cámara, cierre · En pantalla: COMENTA ACERO",
+     "voz": "¿Cuál fue tu ratio más alto? Comenta ACERO y te mando las 5 verificaciones que hago antes de cambiar un perfil."
+    }
+   ],
+   "gabriel_a_camara": true,
+   "red_principal": "instagram",
+   "cta_por_red": {
+    "instagram": "Comenta ACERO",
+    "facebook": "Comenta ACERO",
+    "tiktok": "Pregunta abierta, sin palabra clave",
+    "youtube_shorts": "Pregunta abierta, sin palabra clave",
+    "linkedin": "Sin palabra clave: pregunta abierta"
+   }
+  },
+  {
+   "id": "dic-obj-tiempo-master-carrusel",
+   "grupo": "GRUPO 1 · Feed",
+   "formato": "carrusel",
+   "formato_detalle": "CARRUSEL (6 láminas, 4:5)",
+   "redes": [
+    "instagram",
+    "facebook",
+    "linkedin",
+    "threads"
+   ],
+   "fecha": "2026-12-17T15:00:00Z",
+   "fecha_iso": "2026-12-17",
+   "fecha_etiqueta": "Jue 17 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 3 (14-20 dic)",
+   "tipo": "objeción",
+   "intencion_dic": "venta",
+   "producto": "Máster BIM Management + IA por bloques",
+   "audiencia": "Ingeniero civil empleado con jornada completa (COMPRADORES-VS-NO · objeción principal de quien compra: el tiempo)",
+   "estado": "POR DISEÑAR",
+   "titulo": "«No tengo tiempo»: cómo estudian BIM los que trabajan 10 horas",
+   "eje": "NÚCLEO-BIM",
+   "pilar": "Objeción real · tiempo",
+   "hook": "«No tengo tiempo» es la razón más honesta para no estudiar. Y la que más se puede ordenar.",
+   "cta": {
+    "instagram": "Escríbenos MÁSTER por DM",
+    "facebook": "Escríbenos MÁSTER por Messenger",
+    "linkedin": "Sin palabra clave: pregunta abierta",
+    "threads": "Pregunta abierta, sin palabra clave"
+   },
+   "caption": "«No tengo tiempo» es la razón más honesta para no estudiar. Y la que más se puede ordenar 👇\n\nEn las llamadas que revisamos, 3 de cada 5 personas que sí empezaron dudaron por lo mismo: el tiempo. Lo que les funcionó fue 1 a 2 horas al día, a su ritmo, y empezar por el bloque que resuelve su problema de hoy (modelado, coordinación, gestión o IA), no por «un máster de un año».\n\nNo te vamos a decir que es fácil. Es trabajo. Pero cabe en una semana normal.\n\n¿Cuántas horas a la semana podrías darle de verdad: 2, 5 o 10? 👇\n\nEscríbenos MÁSTER por DM y agendamos 20 minutos para ver qué bloque te toca.\n\n#BIM #Revit #BIMManager #Coordinacion #DesignModelingAcademy",
+   "notas_produccion": "PIEZA DE VENTA (objeción). SIN PRECIO, solo invitar a agendar. El dato «3 de 5» sale de COMPRADORES-VS-NO.md (40 llamadas de Fathom, 5 compraron). Fecha de la próxima cohorte: (confirmar con Dayana); si no hay fecha, la lámina 6 no la menciona. MÁSTER la contesta una persona o el bot de ventas (no es recurso gratis).",
+   "embudo": {
+    "palabra": "MÁSTER",
+    "lead_magnet": "Llamada de diagnóstico de 20 minutos con un asesor",
+    "enlace": "(confirmar con Dayana: enlace de agenda del Máster)",
+    "dm_texto": "¡Hola! Gracias por escribir 🙌 Te dejo el enlace para agendar 20 minutos con un asesor: [ENLACE]\n\nEn la llamada vemos qué bloque te toca según tu trabajo actual y cuántas horas reales tienes.\n\nAntes de agendar, cuéntame: ¿cuántas horas a la semana podrías dedicarle y en qué trabajas hoy?",
+    "producto_destino": "Máster BIM Management + IA por bloques (agendar; nunca precio)",
+    "canal_dm": "OpenReply",
+    "nuevo_lead_magnet": false,
+    "nota": "Venta: sin precio en el DM. El asesor no da el precio del Máster por chat; se ve en la llamada."
+   },
+   "prompt_imagenes": "",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "slides": [
+    {
+     "n": 1,
+     "texto": "«NO TENGO TIEMPO» · cómo estudian BIM los que trabajan 10 horas en obra →",
+     "visual": "Portada: reloj de obra y casco sobre el escritorio."
+    },
+    {
+     "n": 2,
+     "texto": "El dato · En las llamadas que revisamos, 3 de cada 5 personas que sí empezaron dudaron por lo mismo: el tiempo.",
+     "visual": "Cifra grande «3 de 5»."
+    },
+    {
+     "n": 3,
+     "texto": "Lo que les funcionó · 1 a 2 horas al día, a su ritmo, con clases grabadas y sesiones en vivo.",
+     "visual": "Semana con bloques de 1-2 h marcados."
+    },
+    {
+     "n": 4,
+     "texto": "Por bloques · No empiezas «un máster de un año»: empiezas el bloque que resuelve tu problema de hoy (modelado, coordinación, gestión o IA).",
+     "visual": "Los 4 bloques como escalera."
+    },
+    {
+     "n": 5,
+     "texto": "Lo que no te vamos a decir · Que es fácil. Es trabajo. Pero cabe en una semana normal.",
+     "visual": "Lámina de texto."
+    },
+    {
+     "n": 6,
+     "texto": "¿Cuántas horas a la semana podrías darle: 2, 5 o 10? 👇 · Escríbenos MÁSTER por DM y agendamos 20 minutos. Próxima cohorte: (confirmar con Dayana)",
+     "visual": "Cierre invertido ámbar."
+    }
+   ],
+   "red_principal": "instagram",
+   "cta_por_red": {
+    "instagram": "Escríbenos MÁSTER por DM",
+    "facebook": "Escríbenos MÁSTER por Messenger",
+    "linkedin": "Sin palabra clave: pregunta abierta",
+    "threads": "Pregunta abierta, sin palabra clave"
+   }
+  },
+  {
+   "id": "dic-doble-trabajo-autocad-excel-carrusel",
+   "grupo": "GRUPO 1 · Feed",
+   "formato": "carrusel",
+   "formato_detalle": "CARRUSEL (7 láminas, 4:5)",
+   "redes": [
+    "instagram",
+    "facebook",
+    "linkedin",
+    "threads"
+   ],
+   "fecha": "2026-12-21T15:00:00Z",
+   "fecha_iso": "2026-12-21",
+   "fecha_etiqueta": "Lun 21 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 4 (21-27 dic) · fiestas",
+   "tipo": "problema",
+   "intencion_dic": "problema",
+   "producto": "Máster · Bloque 1 BIM Professional",
+   "audiencia": "Ingeniero contratista que trabaja con AutoCAD y Excel (COMPRADORES-VS-NO)",
+   "estado": "POR DISEÑAR",
+   "titulo": "Haces todo dos veces: el plano en AutoCAD y las cantidades en Excel",
+   "eje": "NÚCLEO-BIM",
+   "pilar": "Contenido sintomático · acusar un hábito",
+   "hook": "Haces todo dos veces: el plano en AutoCAD y las cantidades en Excel.",
+   "cta": {
+    "instagram": "Comenta BIM",
+    "facebook": "Comenta BIM",
+    "linkedin": "Sin palabra clave: pregunta abierta",
+    "threads": "Pregunta abierta, sin palabra clave"
+   },
+   "caption": "Haces todo dos veces: el plano en AutoCAD y las cantidades en Excel 👇\n\nTe pasa si:\n· cada cambio en el plano te obliga a volver a medir a mano;\n· tu Excel de cantidades tiene una columna que se llama «ajuste»;\n· cuando el cliente pregunta «¿cuánto sube si cambio esto?», tardas un día en contestar.\n\nLa causa: el dibujo y el dato viven en dos archivos. En un modelo BIM la cantidad sale del mismo elemento que dibujas: cambias el muro y la tabla de cantidades se actualiza.\n\n¿Cuántas horas a la semana se te van en volver a medir? 👇\n\nComenta BIM y te mando el curso introductorio gratis.\n\n#BIM #Revit #BIMManager #Coordinacion #DesignModelingAcademy",
+   "notas_produccion": "Semana de fiestas: abre la semana. Banco de síntomas (contratista con AutoCAD + Excel). REGLA 0: Gabriel revisa cada dato técnico contra la norma citada antes de publicar. (las tablas de cantidades de Revit se actualizan con el modelo).",
+   "embudo": {
+    "palabra": "BIM",
+    "lead_magnet": "Curso introductorio BIM (gratis)",
+    "enlace": "https://funnel.dgdesignmodeling.com/acceso-gratis-curso-introductorio-bim-form",
+    "dm_texto": "¡Hola! 🧱 Aquí tienes el curso introductorio BIM gratis: [ENLACE]\n\nMira primero la parte de tablas de cantidades: es donde se ve que el plano y el metrado salen del mismo modelo.\n\n¿Hoy trabajas con AutoCAD y Excel en obra, en una constructora o por tu cuenta?",
+    "producto_destino": "Máster por bloques · Bloque 1 BIM Professional (agendar; nunca precio)",
+    "canal_dm": "OpenReply",
+    "nuevo_lead_magnet": false
+   },
+   "prompt_imagenes": "",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "slides": [
+    {
+     "n": 1,
+     "texto": "HACES TODO DOS VECES · el plano en AutoCAD y las cantidades en Excel →",
+     "visual": "Portada: pantalla partida AutoCAD | Excel con flechas de ida y vuelta."
+    },
+    {
+     "n": 2,
+     "texto": "Te pasa si… · cada cambio en el plano te obliga a volver a medir a mano.",
+     "visual": "Plano con nube de revisión y una regla."
+    },
+    {
+     "n": 3,
+     "texto": "Te pasa si… · tu Excel de cantidades tiene una columna que se llama «ajuste».",
+     "visual": "Captura de Excel con la columna «ajuste» marcada."
+    },
+    {
+     "n": 4,
+     "texto": "Te pasa si… · cuando el cliente pregunta «¿cuánto sube si cambio esto?», tardas un día en contestar.",
+     "visual": "Chat de WhatsApp con la pregunta del cliente."
+    },
+    {
+     "n": 5,
+     "texto": "La causa · El dibujo y el dato viven en dos archivos. En BIM la cantidad sale del mismo elemento que dibujas: cambias el muro y la tabla se actualiza.",
+     "visual": "Captura real de Revit: muro seleccionado y tabla de cantidades al lado."
+    },
+    {
+     "n": 6,
+     "texto": "Por dónde empezar · Antes que otro software: aprender a modelar con información.",
+     "visual": "Lámina de texto."
+    },
+    {
+     "n": 7,
+     "texto": "¿Cuántas horas a la semana se te van en volver a medir? 👇 · Comenta BIM y te mando el curso introductorio gratis.",
+     "visual": "Cierre invertido ámbar."
+    }
+   ],
+   "red_principal": "instagram",
+   "cta_por_red": {
+    "instagram": "Comenta BIM",
+    "facebook": "Comenta BIM",
+    "linkedin": "Sin palabra clave: pregunta abierta",
+    "threads": "Pregunta abierta, sin palabra clave"
+   }
+  },
+  {
+   "id": "dic-reedit-5-cimentaciones-reel",
+   "grupo": "GRUPO 1 · Feed",
+   "formato": "reel",
+   "formato_detalle": "REEL (re-edición del ganador del 19-oct, 40-55 s)",
+   "redes": [
+    "instagram",
+    "facebook",
+    "tiktok",
+    "youtube",
+    "linkedin"
+   ],
+   "fecha": "2026-12-23T15:00:00Z",
+   "fecha_iso": "2026-12-23",
+   "fecha_etiqueta": "Mié 23 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 4 (21-27 dic) · fiestas",
+   "tipo": "solución",
+   "intencion_dic": "referencia",
+   "producto": "Diplomado de Cálculo Estructural",
+   "audiencia": "Calculista o ingeniero civil que elige y diseña cimentaciones (COMPRADORES-VS-NO)",
+   "estado": "POR EDITAR (re-edición, sin grabar)",
+   "titulo": "Elegiste la cimentación por costumbre: estas son las 5 y cuándo va cada una",
+   "eje": "NÚCLEO-BIM",
+   "pilar": "Re-edición de ganador · referencia comparativa",
+   "hook": "¿Elegiste la cimentación por costumbre o por el estudio de suelos?",
+   "cta": {
+    "instagram": "Comenta ZAPATA",
+    "facebook": "Comenta ZAPATA",
+    "tiktok": "Pregunta abierta, sin palabra clave",
+    "youtube_shorts": "Pregunta abierta, sin palabra clave",
+    "linkedin": "Sin palabra clave: pregunta abierta"
+   },
+   "caption": "¿Elegiste la cimentación por costumbre o por el estudio de suelos? 👇\n\nEstas son 5 y cuándo se usa cada una. Guárdalo para tu próximo proyecto.\n\n¿Cuál usaste en tu último proyecto? Dinos el número 👇\n\nComenta ZAPATA y te mando la calculadora de zapatas gratis.\n\n#IngenieriaCivil #CalculoEstructural #Cimentaciones #DesignModelingAcademy",
+   "notas_produccion": "RE-EDICIÓN. Fuente: reel Der2lsgjwu5 del 19-oct «5 tipos de cimentación y cuándo se usa cada una» (10.322 vistas, 103 comentarios, 362 guardados). GANCHO NUEVO (0-3 s, texto sobre el primer cuadro): «¿LA ELEGISTE POR COSTUMBRE O POR EL ESTUDIO DE SUELOS?». CIERRE NUEVO: número 1-5 junto a cada tipo y «¿Cuál usaste? Dinos el número» + COMENTA ZAPATA. Sale el 23 (antes de Navidad, sin venta): pieza de guardado para la semana de fiestas.",
+   "embudo": {
+    "palabra": "ZAPATA",
+    "lead_magnet": "Calculadora de zapatas (gratis)",
+    "enlace": "https://funnel.dgdesignmodeling.com/acceso-gratis-calculadora-zapatas-form",
+    "dm_texto": "¡Hola! 👷 Aquí tienes la calculadora de zapatas gratis: [ENLACE]\n\nSi el estudio de suelos te deja usar zapatas aisladas, te da las dimensiones y las verificaciones en un par de minutos.\n\n¿Qué cimentación usaste en tu último proyecto y por qué esa?",
+    "producto_destino": "Diplomado de Cálculo Estructural",
+    "canal_dm": "GHL",
+    "nuevo_lead_magnet": false
+   },
+   "prompt_imagenes": "",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "guion_reel": [
+    {
+     "tiempo": "0:00-0:03",
+     "accion": "Primer cuadro del video original · En pantalla: ¿LA ELEGISTE POR COSTUMBRE O POR EL ESTUDIO DE SUELOS?",
+     "voz": "(sin voz nueva)"
+    },
+    {
+     "tiempo": "0:03-0:47",
+     "accion": "Video original de los 5 tipos, con el número 1 a 5 grande junto a cada uno · En pantalla: números",
+     "voz": "(audio original)"
+    },
+    {
+     "tiempo": "0:47-0:53",
+     "accion": "Lámina de cierre · En pantalla: ¿CUÁL USASTE? DINOS EL NÚMERO · COMENTA ZAPATA",
+     "voz": ""
+    }
+   ],
+   "fuente_video": {
+    "shortCode": "Der2lsgjwu5",
+    "fecha": "2026-10-19",
+    "vistas": 10322,
+    "comentarios": 103,
+    "guardados": 362
+   },
+   "gancho_nuevo": "¿Elegiste la cimentación por costumbre o por el estudio de suelos?",
+   "red_principal": "instagram",
+   "cta_por_red": {
+    "instagram": "Comenta ZAPATA",
+    "facebook": "Comenta ZAPATA",
+    "tiktok": "Pregunta abierta, sin palabra clave",
+    "youtube_shorts": "Pregunta abierta, sin palabra clave",
+    "linkedin": "Sin palabra clave: pregunta abierta"
+   }
+  },
+  {
+   "id": "dic-coordinar-sin-saber-carrusel",
+   "grupo": "GRUPO 1 · Feed",
+   "formato": "carrusel",
+   "formato_detalle": "CARRUSEL (7 láminas, 4:5)",
+   "redes": [
+    "instagram",
+    "facebook",
+    "linkedin",
+    "threads"
+   ],
+   "fecha": "2026-12-28T15:00:00Z",
+   "fecha_iso": "2026-12-28",
+   "fecha_etiqueta": "Lun 28 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 5 (28 dic-3 ene) · fiestas",
+   "tipo": "problema",
+   "intencion_dic": "problema",
+   "producto": "Máster · Bloque 2 BIM Coordination",
+   "audiencia": "Ingeniero civil empleado al que le piden coordinar (COMPRADORES-VS-NO)",
+   "estado": "POR DISEÑAR",
+   "titulo": "Te pidieron coordinar y nadie te enseñó a dirigir una reunión de interferencias",
+   "eje": "NÚCLEO-BIM",
+   "pilar": "Contenido sintomático · acusar un hábito",
+   "hook": "Te pidieron coordinar el proyecto y nadie te enseñó a dirigir una reunión de interferencias.",
+   "cta": {
+    "instagram": "Comenta NIVEL",
+    "facebook": "Comenta NIVEL",
+    "linkedin": "Sin palabra clave: pregunta abierta",
+    "threads": "Pregunta abierta, sin palabra clave"
+   },
+   "caption": "Te pidieron coordinar el proyecto y nadie te enseñó a dirigir una reunión de interferencias 👇\n\nTe pasa si:\n· llevas 300 choques a la reunión y nadie sabe por cuál empezar;\n· los choques se discuten, pero nadie sale con un responsable y una fecha;\n· en la siguiente reunión aparecen los mismos.\n\nCoordinar no es correr Navisworks. Es filtrar los choques con tolerancias, agruparlos por nivel y sistema, y llevar a la mesa solo los que necesitan una decisión, con su responsable.\n\n¿Cuántos choques llevaste a tu última reunión? 👇\n\nComenta NIVEL y te mando el test para ver si ya estás listo para coordinar.\n\n#BIM #Revit #BIMManager #Coordinacion #DesignModelingAcademy",
+   "notas_produccion": "Semana de fiestas. Banco de síntomas («Te pidieron coordinar y nadie te enseñó…»). REGLA 0: Gabriel revisa cada dato técnico contra la norma citada antes de publicar. (Clash Detective de Navisworks: tolerancias y agrupación de resultados).",
+   "embudo": {
+    "palabra": "NIVEL",
+    "lead_magnet": "Test de nivel BIM (5 minutos, gratis)",
+    "enlace": "https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form",
+    "dm_texto": "¡Hola! 🧩 Aquí tienes el test de nivel BIM (5 minutos): [ENLACE]\n\nUn truco para tu próxima reunión: agrupa los choques por nivel y sistema y lleva solo los que necesitan una decisión. Los demás se resuelven por correo.\n\n¿Coordinas tú las reuniones de interferencias en tu trabajo o te toca preparar el modelo para otra persona?",
+    "producto_destino": "Máster BIM Management + IA por bloques (solo se invita a agendar; nunca precio)",
+    "canal_dm": "OpenReply",
+    "nuevo_lead_magnet": false
+   },
+   "prompt_imagenes": "",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "slides": [
+    {
+     "n": 1,
+     "texto": "TE PIDIERON COORDINAR · y nadie te enseñó a dirigir una reunión de interferencias →",
+     "visual": "Portada: mesa de reunión con un reporte de 300 choques."
+    },
+    {
+     "n": 2,
+     "texto": "Señal 1 · Llevas 300 choques a la reunión y nadie sabe por cuál empezar.",
+     "visual": "Captura real de Navisworks con la lista de resultados."
+    },
+    {
+     "n": 3,
+     "texto": "Señal 2 · Los choques se discuten, pero nadie sale con un responsable y una fecha.",
+     "visual": "Acta vacía."
+    },
+    {
+     "n": 4,
+     "texto": "Señal 3 · En la siguiente reunión aparecen los mismos choques.",
+     "visual": "Los mismos IDs de choque en dos fechas."
+    },
+    {
+     "n": 5,
+     "texto": "La causa · Coordinar no es correr Navisworks: es filtrar, agrupar por nivel y sistema y asignar quién resuelve y cuándo.",
+     "visual": "Lámina de texto."
+    },
+    {
+     "n": 6,
+     "texto": "Qué hacer · Antes de la reunión: tolerancias, grupos por nivel y sistema, y solo los choques que necesitan una decisión.",
+     "visual": "Captura de Clash Detective con grupos."
+    },
+    {
+     "n": 7,
+     "texto": "¿Cuántos choques llevaste a tu última reunión? 👇 · Comenta NIVEL y te mando el test para ver si estás listo para coordinar.",
+     "visual": "Cierre invertido ámbar."
+    }
+   ],
+   "red_principal": "instagram",
+   "cta_por_red": {
+    "instagram": "Comenta NIVEL",
+    "facebook": "Comenta NIVEL",
+    "linkedin": "Sin palabra clave: pregunta abierta",
+    "threads": "Pregunta abierta, sin palabra clave"
+   }
+  },
+  {
+   "id": "dic-peso-varilla-post",
+   "grupo": "GRUPO 1 · Feed",
+   "formato": "post",
+   "formato_detalle": "POST (1 imagen 4:5, tabla)",
+   "redes": [
+    "instagram",
+    "facebook",
+    "linkedin",
+    "threads"
+   ],
+   "fecha": "2026-12-30T15:00:00Z",
+   "fecha_iso": "2026-12-30",
+   "fecha_etiqueta": "Mié 30 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 5 (28 dic-3 ene) · fiestas",
+   "tipo": "solución",
+   "intencion_dic": "referencia",
+   "producto": "Máster · Bloque 3 BIM Manager 4D-5D",
+   "audiencia": "Ingeniero contratista que arma presupuestos (COMPRADORES-VS-NO)",
+   "estado": "POR DISEÑAR",
+   "titulo": "¿Cuánto pesa cada varilla? La tabla para no cuantificar a ojo",
+   "eje": "NÚCLEO-BIM",
+   "pilar": "Referencia técnica (guardable)",
+   "hook": "Si cuantificas el acero por número de varillas y no por kilos, tu presupuesto ya está mal.",
+   "cta": {
+    "instagram": "Comenta NIVEL",
+    "facebook": "Comenta NIVEL",
+    "linkedin": "Sin palabra clave: pregunta abierta",
+    "threads": "Pregunta abierta, sin palabra clave"
+   },
+   "caption": "Si cuantificas el acero por número de varillas y no por kilos, tu presupuesto ya está mal 👇\n\nPeso por metro (kg/m) = 0,00617 × d² (d en mm):\n8 mm · 0,395\n10 mm · 0,617\n12 mm · 0,888\n14 mm · 1,208\n16 mm · 1,578\n18 mm · 1,998\n20 mm · 2,466\n22 mm · 2,984\n25 mm · 3,853\n28 mm · 4,834\n32 mm · 6,313\n\nUna varilla de 12 mm y 12 m pesa 10,66 kg. Multiplica eso por los traslapes que nadie metió en el Excel.\n\nGuárdalo. ¿Con qué diámetro trabajas más? 👇\n\nComenta NIVEL y te mando el test para ver si ya estás listo para sacar cantidades del modelo.",
+   "notas_produccion": "REFERENCIA guardable para la semana de Año Nuevo (sin venta). REGLA 0: Gabriel revisa cada dato técnico contra la norma citada antes de publicar. Fórmula: peso = π/4 · d² · 7.850 kg/m³ ≈ 0,006165 · d² kg/m; los valores son los de la tabla usual de varillas corrugadas. Sale el 30-dic, no el 31.",
+   "embudo": {
+    "palabra": "NIVEL",
+    "lead_magnet": "Test de nivel BIM (5 minutos, gratis)",
+    "enlace": "https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form",
+    "dm_texto": "¡Hola! 📊 Aquí tienes el test de nivel BIM (5 minutos): [ENLACE]\n\nSi sales en el bloque de cantidades (5D), es justo esto: que el acero, los traslapes y el metrado salgan del modelo y no de un Excel aparte.\n\n¿Cómo sacas hoy las cantidades de acero de tus proyectos: a mano, en Excel o desde un software?",
+    "producto_destino": "Máster BIM Management + IA por bloques (solo se invita a agendar; nunca precio)",
+    "canal_dm": "OpenReply",
+    "nuevo_lead_magnet": false
+   },
+   "prompt_imagenes": "",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "slides": [
+    {
+     "n": 1,
+     "texto": "¿CUÁNTO PESA CADA VARILLA? · kg/m = 0,00617 × d² · 8 mm 0,395 · 10 mm 0,617 · 12 mm 0,888 · 14 mm 1,208 · 16 mm 1,578 · 18 mm 1,998 · 20 mm 2,466 · 22 mm 2,984 · 25 mm 3,853 · 28 mm 4,834 · 32 mm 6,313",
+     "visual": "Post 4:5 tipo ficha técnica: tabla limpia en dos columnas, varillas dibujadas a escala a la izquierda, fondo blanco con retícula de plano."
+    }
+   ],
+   "red_principal": "instagram",
+   "cta_por_red": {
+    "instagram": "Comenta NIVEL",
+    "facebook": "Comenta NIVEL",
+    "linkedin": "Sin palabra clave: pregunta abierta",
+    "threads": "Pregunta abierta, sin palabra clave"
+   }
+  },
+  {
+   "id": "ene-obj-cursos-no-sirvieron-post",
+   "grupo": "GRUPO 1 · Feed",
+   "formato": "post",
+   "formato_detalle": "POST (1 imagen 4:5, frase)",
+   "redes": [
+    "instagram",
+    "facebook",
+    "linkedin",
+    "threads"
+   ],
+   "fecha": "2027-01-04T15:00:00Z",
+   "fecha_iso": "2027-01-04",
+   "fecha_etiqueta": "Lun 4 ene",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 6 (4-6 ene) · regreso",
+   "tipo": "objeción",
+   "intencion_dic": "venta",
+   "producto": "Diplomado BIM",
+   "audiencia": "Quien «vio muchos cursos y ninguno le sirvió» (COMPRADORES-VS-NO)",
+   "estado": "POR DISEÑAR",
+   "titulo": "«Hice tres cursos de Revit y sigo sin poder entregar un proyecto»",
+   "eje": "NÚCLEO-BIM",
+   "pilar": "Objeción real · «ya hice cursos»",
+   "hook": "«Hice tres cursos de Revit y sigo sin poder entregar un proyecto en BIM.»",
+   "cta": {
+    "instagram": "Comenta DIPLOMADO",
+    "facebook": "Comenta DIPLOMADO",
+    "linkedin": "Sin palabra clave: pregunta abierta",
+    "threads": "Pregunta abierta, sin palabra clave"
+   },
+   "caption": "«Hice tres cursos de Revit y sigo sin poder entregar un proyecto en BIM.» 👇\n\nEs de las frases que más escuchamos. Y casi siempre tiene la misma causa: los cursos enseñan botones, y un proyecto no se entrega con botones, sino con un orden: qué se modela, con qué información y para quién.\n\nAntes de pagar otro curso, pruébalo. ¿Cuántos cursos llevas este año? 👇\n\nComenta DIPLOMADO y te mando gratis el primer módulo del Diplomado BIM.\n\n#BIM #Revit #BIMManager #Coordinacion #DesignModelingAcademy",
+   "notas_produccion": "PIEZA DE VENTA blanda (objeción) del regreso de fiestas: deja probar antes de pagar. SIN PRECIO. Objeción real de COMPRADORES-VS-NO («vi muchos cursos y ninguno me sirvió»). Fecha de inicio del Diplomado BIM: (confirmar con Dayana) si se quiere nombrar en el DM.",
+   "embudo": {
+    "palabra": "DIPLOMADO",
+    "lead_magnet": "Primer módulo del Diplomado BIM (gratis)",
+    "enlace": "https://funnel.dgdesignmodeling.com/acceso-gratis-modulo-diplomado-bim-form",
+    "dm_texto": "¡Hola! 🎓 Aquí tienes el primer módulo del Diplomado BIM, gratis: [ENLACE]\n\nHazlo como si fuera tu proyecto: si al terminar el módulo sabes qué modelar y con qué información, el diplomado es para ti. Si no, nos dices y te orientamos.\n\n¿Qué cursos hiciste antes y qué fue lo que no te sirvió?",
+    "producto_destino": "Diplomado BIM",
+    "canal_dm": "OpenReply",
+    "nuevo_lead_magnet": false
+   },
+   "prompt_imagenes": "",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "slides": [
+    {
+     "n": 1,
+     "texto": "«HICE TRES CURSOS DE REVIT Y SIGO SIN PODER ENTREGAR UN PROYECTO EN BIM.» · Pruébalo antes de pagar: comenta DIPLOMADO",
+     "visual": "Post 4:5: la frase en grande, tres certificados apilados y un plano en blanco al lado."
+    }
+   ],
+   "red_principal": "instagram",
+   "cta_por_red": {
+    "instagram": "Comenta DIPLOMADO",
+    "facebook": "Comenta DIPLOMADO",
+    "linkedin": "Sin palabra clave: pregunta abierta",
+    "threads": "Pregunta abierta, sin palabra clave"
+   }
+  },
+  {
+   "id": "ene-testimonio-master-post",
+   "grupo": "GRUPO 1 · Feed",
+   "formato": "post",
+   "formato_detalle": "POST (1 imagen 4:5 con cita real)",
+   "redes": [
+    "instagram",
+    "facebook",
+    "linkedin",
+    "threads"
+   ],
+   "fecha": "2027-01-06T15:00:00Z",
+   "fecha_iso": "2027-01-06",
+   "fecha_etiqueta": "Mié 6 ene",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 6 (4-6 ene) · regreso",
+   "tipo": "testimonio",
+   "intencion_dic": "venta",
+   "producto": "Máster BIM Management + IA por bloques",
+   "audiencia": "Ingeniero civil empleado que quiere pasar de modelador a coordinador (COMPRADORES-VS-NO)",
+   "estado": "ESPERA TESTIMONIO (confirmar con Dayana)",
+   "titulo": "Testimonio del Máster: de modelar a coordinar",
+   "eje": "NÚCLEO-BIM",
+   "pilar": "Prueba social · testimonio real",
+   "hook": "«[Frase textual del egresado sobre lo que cambió en su trabajo]»",
+   "cta": {
+    "instagram": "Escríbenos MÁSTER por DM",
+    "facebook": "Escríbenos MÁSTER por Messenger",
+    "linkedin": "Sin palabra clave: pregunta abierta",
+    "threads": "Pregunta abierta, sin palabra clave"
+   },
+   "caption": "«[Frase textual del egresado] (confirmar con Dayana)» — [nombre], [cargo], [país], egresado del Máster.\n\nLo que más se repite entre los que terminan: dejan de ser «el que modela» y pasan a estar en la mesa donde se decide el proyecto.\n\n¿En qué bloque te ves empezando 2027: modelado, coordinación, gestión o IA? 👇\n\nEscríbenos MÁSTER por DM y agendamos 20 minutos para verlo juntos.\n\n#BIM #Revit #BIMManager #Coordinacion #DesignModelingAcademy",
+   "notas_produccion": "PIEZA DE VENTA (testimonio). SIN PRECIO; solo invitar a agendar. Testimonio REAL con permiso (confirmar con Dayana: egresado, frase, cargo y permiso). Si hay fecha de la próxima cohorte (confirmar con Dayana), se dice en el DM, no en el post. Cierra el período 1-dic → 6-ene.",
+   "embudo": {
+    "palabra": "MÁSTER",
+    "lead_magnet": "Llamada de diagnóstico de 20 minutos con un asesor",
+    "enlace": "(confirmar con Dayana: enlace de agenda del Máster)",
+    "dm_texto": "¡Hola! 🙌 Te dejo el enlace para agendar 20 minutos con un asesor: [ENLACE]\n\nEn la llamada vemos en qué bloque te conviene empezar según tu trabajo actual.\n\nPara preparar la llamada: ¿qué haces hoy en tus proyectos y qué te gustaría estar haciendo a fin de año?",
+    "producto_destino": "Máster BIM Management + IA por bloques (agendar; nunca precio)",
+    "canal_dm": "OpenReply",
+    "nuevo_lead_magnet": false,
+    "nota": "Venta: sin precio en el DM; el precio del Máster nunca va por contenido ni por chat."
+   },
+   "prompt_imagenes": "",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "slides": [
+    {
+     "n": 1,
+     "texto": "«[FRASE TEXTUAL DEL EGRESADO]» · [Nombre], [cargo], [país] · Egresado del Máster BIM Management + IA",
+     "visual": "Foto real del egresado (con permiso) o captura de su modelo + la cita. (confirmar con Dayana)"
+    }
+   ],
+   "red_principal": "instagram",
+   "cta_por_red": {
+    "instagram": "Escríbenos MÁSTER por DM",
+    "facebook": "Escríbenos MÁSTER por Messenger",
+    "linkedin": "Sin palabra clave: pregunta abierta",
+    "threads": "Pregunta abierta, sin palabra clave"
+   }
+  },
+  {
+   "id": "dic-yt-conectar-ia-revit",
+   "grupo": "GRUPO 6 · YouTube (videos largos)",
+   "formato": "video youtube",
+   "formato_detalle": "VIDEO LARGO DE YOUTUBE (16:9, 2-5 min; NO es Short)",
+   "redes": [
+    "youtube"
+   ],
+   "fecha": "2026-12-11T15:00:00Z",
+   "fecha_iso": "2026-12-11",
+   "fecha_etiqueta": "Vie 11 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 2 (7-13 dic)",
+   "tipo": "problema",
+   "producto": "Máster · Bloque 4 BIM + IA",
+   "estado": "POR EDITAR (de la grabación del workshop 17-nov)",
+   "titulo": "Exportas el modelo a Excel para contar puertas: conecté una IA a Revit 2027 y se lo pregunté directo",
+   "eje": "NÚCLEO-IA",
+   "pilar": "Highlights del workshop IA conectada a Revit (17-nov)",
+   "hook": "Exportas el modelo a Excel solo para contar puertas o revisar un parámetro.",
+   "youtube": {
+    "titulo": "Exportas el modelo a Excel para contar puertas: conecté una IA a Revit 2027 y se lo pregunté directo",
+    "descripcion": "¿Cuántas veces exportaste un modelo de Revit a Excel solo para contar puertas o revisar un parámetro?\n\nEn este video, tomado del workshop en vivo del 17 de noviembre, el Ing. Gabriel Pantoja conecta un asistente de IA a un modelo real de Revit 2027 con el servidor MCP de Autodesk (vista previa técnica, de solo lectura) y le hace preguntas sin exportar nada. También verás lo que no hace: no modela ni modifica el modelo.\n\n¿Quieres saber en qué nivel BIM estás? Test gratis de 5 minutos: https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form\n\nCapítulos:\n0:00 El problema: exportar para preguntar\n0:30 Qué se necesita (Revit 2027 + servidor MCP)\n1:30 Conectar el asistente\n2:40 La primera pregunta al modelo\n3:40 Lo que NO hace\n4:20 Cierre\n\n#Revit #BIM #InteligenciaArtificial #RevitMCP #DesignModelingAcademy",
+    "miniatura_texto": "DEJA DE EXPORTAR A EXCEL",
+    "capitulos": [
+     "0:00 El problema",
+     "0:30 Qué se necesita",
+     "1:30 Conectar el asistente",
+     "2:40 Primera pregunta",
+     "3:40 Lo que NO hace",
+     "4:20 Cierre"
+    ],
+    "duracion_objetivo": "4-5 min",
+    "tramos_grabacion": [
+     [
+      "46:15",
+      "46:38",
+      "chat"
+     ],
+     [
+      "48:35",
+      "48:46",
+      "chat"
+     ],
+     [
+      "57:05",
+      "57:56",
+      "revit + chat"
+     ],
+     [
+      "(Daniela)",
+      "",
+      "tramo donde Gabriel explica qué se instala; ubicarlo entre 40:00 y 46:00"
+     ]
+    ],
+    "video_fuente": "https://drive.google.com/file/d/1XTW8r7X6yoVNHGpKnjdZ7OVAIrv0hS6A/view",
+    "intro_gabriel": "¿Cuántas veces exportaste el modelo a Excel solo para contar algo? En el workshop del 17 lo resolvimos en vivo. Te muestro lo que se necesita, cómo se conecta y lo que todavía no hace.",
+    "cierre_gabriel": "Si te sirvió, dime en los comentarios qué le preguntarías tú a tu modelo. Y en la descripción tienes el test de nivel BIM, gratis."
+   },
+   "cta": {
+    "youtube": "Enlace al test de nivel en la descripción y pregunta abierta en el video (sin palabra clave)"
+   },
+   "notas_produccion": "VIDEO LARGO 1/4. Tramos tomados de clips.json (c3-conexion: 2775-2798, 2915-2926, 3425-3448, 3464-3476 s) ampliados a 16:9 con el contexto que en el clip vertical se cortó. Versión 16:9 de la grabación (no el corte vertical). Subtítulos en español. La intro y el cierre de Gabriel están en «Grabaciones de Gabriel» (G-05). REGLA 0: Gabriel revisa cada dato técnico contra la norma citada antes de publicar. Cualquier afirmación sobre Revit 2027 y el servidor MCP de Autodesk se dice igual que en noviembre: vista previa técnica y de solo lectura (lee el modelo, no lo modifica).",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "red_principal": "youtube",
+   "cta_por_red": {
+    "youtube": "Enlace al test de nivel en la descripción y pregunta abierta en el video (sin palabra clave)"
+   }
+  },
+  {
+   "id": "dic-yt-preguntas-al-modelo",
+   "grupo": "GRUPO 6 · YouTube (videos largos)",
+   "formato": "video youtube",
+   "formato_detalle": "VIDEO LARGO DE YOUTUBE (16:9, 2-5 min; NO es Short)",
+   "redes": [
+    "youtube"
+   ],
+   "fecha": "2026-12-18T15:00:00Z",
+   "fecha_iso": "2026-12-18",
+   "fecha_etiqueta": "Vie 18 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 3 (14-20 dic)",
+   "tipo": "problema",
+   "producto": "Máster · Bloque 4 BIM + IA",
+   "estado": "POR EDITAR (de la grabación del workshop 17-nov)",
+   "titulo": "¿Cuántos muros tiene tu modelo? Se lo pregunté a la IA y lo comprobé en Revit",
+   "eje": "NÚCLEO-IA",
+   "pilar": "Highlights del workshop IA conectada a Revit (17-nov)",
+   "hook": "Abres tablas y filtros para contestar una pregunta simple sobre tu modelo.",
+   "youtube": {
+    "titulo": "¿Cuántos muros tiene tu modelo? Se lo pregunté a la IA y lo comprobé en Revit",
+    "descripcion": "Le preguntamos a un modelo real de Revit cuántos muros, puertas y niveles tiene. La IA respondió en segundos… y después lo comprobamos en Revit, número por número.\n\nTomado del workshop en vivo IA conectada a Revit (17-nov) con el Ing. Gabriel Pantoja. Revit 2027 + servidor MCP de Autodesk (vista previa técnica, de solo lectura).\n\nTest de nivel BIM gratis (5 minutos): https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form\n\nCapítulos:\n0:00 Abrir tablas para una pregunta simple\n0:25 Los niveles del modelo\n1:40 Muros y puertas: la respuesta\n2:30 La comprobación en Revit\n3:20 Cuándo confiar y cuándo no\n\n#Revit #BIM #InteligenciaArtificial #ControlDeCalidad #DesignModelingAcademy",
+    "miniatura_texto": "¿CUÁNTOS MUROS? · 4 SEGUNDOS",
+    "capitulos": [
+     "0:00 El problema",
+     "0:25 Los niveles",
+     "1:40 Muros y puertas",
+     "2:30 La comprobación",
+     "3:20 Cuándo confiar"
+    ],
+    "duracion_objetivo": "3-4 min",
+    "tramos_grabacion": [
+     [
+      "58:38",
+      "60:00",
+      "chat (niveles)"
+     ],
+     [
+      "65:12",
+      "65:36",
+      "chat (muros y puertas)"
+     ],
+     [
+      "65:46",
+      "66:30",
+      "revit (comprobación)"
+     ]
+    ],
+    "video_fuente": "https://drive.google.com/file/d/1XTW8r7X6yoVNHGpKnjdZ7OVAIrv0hS6A/view",
+    "intro_gabriel": "Para contestar cuántos muros tiene un modelo, normalmente abres una tabla, filtras y cuentas. Aquí se lo preguntamos directo al modelo, y después lo comprobamos en Revit.",
+    "cierre_gabriel": "La IA ordena, pero el número lo firma el ingeniero: por eso siempre comprobamos. ¿Qué le preguntarías tú a tu modelo? Te leo en los comentarios."
+   },
+   "cta": {
+    "youtube": "Enlace al test de nivel en la descripción y pregunta abierta en el video (sin palabra clave)"
+   },
+   "notas_produccion": "VIDEO LARGO 2/4. Tramos de clips.json: c2-niveles (3518-3600 s) y c1-muros (3912-3936 y 3946-3990 s), en 16:9 y con el audio completo revisado. Versión 16:9 de la grabación (no el corte vertical). Subtítulos en español. La intro y el cierre de Gabriel están en «Grabaciones de Gabriel» (G-05). REGLA 0: Gabriel revisa cada dato técnico contra la norma citada antes de publicar. Cualquier afirmación sobre Revit 2027 y el servidor MCP de Autodesk se dice igual que en noviembre: vista previa técnica y de solo lectura (lee el modelo, no lo modifica).",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "red_principal": "youtube",
+   "cta_por_red": {
+    "youtube": "Enlace al test de nivel en la descripción y pregunta abierta en el video (sin palabra clave)"
+   }
+  },
+  {
+   "id": "dic-yt-niveles-duplicados",
+   "grupo": "GRUPO 6 · YouTube (videos largos)",
+   "formato": "video youtube",
+   "formato_detalle": "VIDEO LARGO DE YOUTUBE (16:9, 2-5 min; NO es Short)",
+   "redes": [
+    "youtube"
+   ],
+   "fecha": "2026-12-29T15:00:00Z",
+   "fecha_iso": "2026-12-29",
+   "fecha_etiqueta": "Mar 29 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 5 (28 dic-3 ene) · fiestas",
+   "tipo": "problema",
+   "producto": "Máster · Bloque 4 BIM + IA",
+   "estado": "POR EDITAR (de la grabación del workshop 17-nov)",
+   "titulo": "3 niveles a la misma altura: el error que tu modelo esconde y la IA encontró",
+   "eje": "NÚCLEO-IA",
+   "pilar": "Highlights del workshop IA conectada a Revit (17-nov)",
+   "hook": "Tu modelo tiene errores que no se ven a simple vista.",
+   "youtube": {
+    "titulo": "3 niveles a la misma altura: el error que tu modelo esconde y la IA encontró",
+    "descripcion": "Le pedimos a la IA un resumen de un modelo real de Revit y avisó algo que no se ve a simple vista: 3 niveles a la misma altura (8,70 m). Puede ser intencional, pero es una duplicación típica que conviene revisar antes de entregar.\n\nTomado del workshop en vivo IA conectada a Revit (17-nov) con el Ing. Gabriel Pantoja.\n\nTest de nivel BIM gratis (5 minutos): https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form\n\nCapítulos:\n0:00 El error que no se ve\n0:30 El resumen del modelo\n1:30 3 niveles a 8,70 m\n2:20 Cómo revisarlo en Revit\n3:00 Revisión de fin de año\n\n#Revit #BIM #BIMManager #ControlDeCalidad #DesignModelingAcademy",
+    "miniatura_texto": "3 NIVELES · MISMA ALTURA",
+    "capitulos": [
+     "0:00 El error que no se ve",
+     "0:30 El resumen",
+     "1:30 3 niveles a 8,70 m",
+     "2:20 Cómo revisarlo",
+     "3:00 Cierre"
+    ],
+    "duracion_objetivo": "3 min",
+    "tramos_grabacion": [
+     [
+      "76:16",
+      "76:40",
+      "Revit + AI Connector"
+     ],
+     [
+      "77:16",
+      "78:05",
+      "Claude"
+     ],
+     [
+      "(Daniela)",
+      "",
+      "1-2 min de contexto antes del 76:16 (cómo se pidió el resumen)"
+     ]
+    ],
+    "video_fuente": "https://drive.google.com/file/d/1XTW8r7X6yoVNHGpKnjdZ7OVAIrv0hS6A/view",
+    "intro_gabriel": "Antes de cerrar el año, revisa esto en tu modelo. En el workshop la IA encontró 3 niveles a la misma altura y nadie lo había visto.",
+    "cierre_gabriel": "¿Lo revisaste en tu modelo? Cuéntame en los comentarios si encontraste algo. El test de nivel BIM está en la descripción."
+   },
+   "cta": {
+    "youtube": "Enlace al test de nivel en la descripción y pregunta abierta en el video (sin palabra clave)"
+   },
+   "notas_produccion": "VIDEO LARGO 3/4. Tramos de clips.json (c4-niveles-duplicados: 4576-4600 y 4636-4685 s). Sale en la semana de fiestas (29-dic), sin venta. Versión 16:9 de la grabación (no el corte vertical). Subtítulos en español. La intro y el cierre de Gabriel están en «Grabaciones de Gabriel» (G-05). REGLA 0: Gabriel revisa cada dato técnico contra la norma citada antes de publicar. Cualquier afirmación sobre Revit 2027 y el servidor MCP de Autodesk se dice igual que en noviembre: vista previa técnica y de solo lectura (lee el modelo, no lo modifica).",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "red_principal": "youtube",
+   "cta_por_red": {
+    "youtube": "Enlace al test de nivel en la descripción y pregunta abierta en el video (sin palabra clave)"
+   }
+  },
+  {
+   "id": "ene-yt-donde-se-equivoca",
+   "grupo": "GRUPO 6 · YouTube (videos largos)",
+   "formato": "video youtube",
+   "formato_detalle": "VIDEO LARGO DE YOUTUBE (16:9, 2-5 min; NO es Short)",
+   "redes": [
+    "youtube"
+   ],
+   "fecha": "2027-01-05T15:00:00Z",
+   "fecha_iso": "2027-01-05",
+   "fecha_etiqueta": "Mar 5 ene",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 6 (4-6 ene) · regreso",
+   "tipo": "problema",
+   "producto": "Máster · Bloque 4 BIM + IA",
+   "estado": "POR EDITAR (de la grabación del workshop 17-nov)",
+   "titulo": "Dónde se equivoca la IA cuando lee tu modelo de Revit (y cómo darte cuenta)",
+   "eje": "NÚCLEO-IA",
+   "pilar": "Highlights del workshop IA conectada a Revit (17-nov)",
+   "hook": "Le crees a la IA porque contesta rápido y seguro.",
+   "youtube": {
+    "titulo": "Dónde se equivoca la IA cuando lee tu modelo de Revit (y cómo darte cuenta)",
+    "descripcion": "La IA contesta rápido y seguro. Eso no significa que tenga razón. En este bloque del workshop en vivo del 17-nov, el Ing. Gabriel Pantoja muestra dónde se equivoca un asistente conectado a Revit y cómo comprobar cada respuesta antes de usarla.\n\nTest de nivel BIM gratis (5 minutos): https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form\n\nCapítulos:\n0:00 Rápido no es correcto\n0:30 La pregunta\n1:30 La respuesta que falló\n2:40 Cómo nos dimos cuenta\n3:40 La regla: el número lo firma el ingeniero\n\n#Revit #BIM #InteligenciaArtificial #BIMManager #DesignModelingAcademy",
+    "miniatura_texto": "LA IA SE EQUIVOCÓ AQUÍ",
+    "capitulos": [
+     "0:00 Rápido no es correcto",
+     "0:30 La pregunta",
+     "1:30 La respuesta que falló",
+     "2:40 Cómo nos dimos cuenta",
+     "3:40 La regla"
+    ],
+    "duracion_objetivo": "4 min",
+    "tramos_grabacion": [
+     [
+      "(Daniela)",
+      "",
+      "bloque «Dónde se equivoca la IA» de la grabación: ubicar inicio y fin (está en la segunda mitad del workshop)"
+     ]
+    ],
+    "video_fuente": "https://drive.google.com/file/d/1XTW8r7X6yoVNHGpKnjdZ7OVAIrv0hS6A/view",
+    "intro_gabriel": "La IA te contesta en segundos y con mucha seguridad. En el workshop le encontramos dónde se equivoca. Te lo muestro para que no te pase con tu firma.",
+    "cierre_gabriel": "El número lo firma el ingeniero, no la IA. ¿Te pasó alguna vez que una IA te diera un dato equivocado? Cuéntamelo abajo."
+   },
+   "cta": {
+    "youtube": "Enlace al test de nivel en la descripción y pregunta abierta en el video (sin palabra clave)"
+   },
+   "notas_produccion": "VIDEO LARGO 4/4. Si en el workshop la IA no se equivocó en ningún momento, este video NO se publica con un error inventado: se cambia por un corte de las preguntas del público (nada inventado, regla 1). Mismo bloque que usó el carrusel «Dónde se equivocó la IA» de noviembre. Versión 16:9 de la grabación (no el corte vertical). Subtítulos en español. La intro y el cierre de Gabriel están en «Grabaciones de Gabriel» (G-05). REGLA 0: Gabriel revisa cada dato técnico contra la norma citada antes de publicar. Cualquier afirmación sobre Revit 2027 y el servidor MCP de Autodesk se dice igual que en noviembre: vista previa técnica y de solo lectura (lee el modelo, no lo modifica).",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "red_principal": "youtube",
+   "cta_por_red": {
+    "youtube": "Enlace al test de nivel en la descripción y pregunta abierta en el video (sin palabra clave)"
+   }
+  },
+  {
+   "id": "dic-hist-1201",
+   "grupo": "GRUPO 5 · Historias (IG/FB)",
+   "formato": "historias",
+   "formato_detalle": "HISTORIAS (3 frames)",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "red_principal": "instagram",
+   "fecha": "2026-12-01T14:00:00Z",
+   "fecha_iso": "2026-12-01",
+   "fecha_etiqueta": "Mar 1 dic",
+   "hora_ecuador": "09:00",
+   "semana": "Semana 1 (1-6 dic)",
+   "tipo": "valor",
+   "producto": "Máster",
+   "estado": "COMPLETA",
+   "titulo": "Sigues siendo el que modela",
+   "eje": "NÚCLEO-BIM",
+   "hook": "Llevas años en BIM y sigues siendo «el que modela». 👀",
+   "destacada": "🎯 BIM + IA",
+   "gabriel_a_camara": false,
+   "historias": [
+    {
+     "n": 1,
+     "visual": "Repost de la portada del carrusel del día.",
+     "texto": "Llevas años en BIM y sigues siendo «el que modela». 👀",
+     "sticker": "Ninguno (se toca y lleva al post)."
+    },
+    {
+     "n": 2,
+     "visual": "Texto sobre azul.",
+     "texto": "¿Te invitan a las reuniones donde se decide el modelo?",
+     "sticker": "ENCUESTA: «Sí, siempre» / «Me mandan lo que decidieron»"
+    },
+    {
+     "n": 3,
+     "visual": "Cierre invertido ámbar.",
+     "texto": "Respóndeme NIVEL y te mando el test (5 minutos) para ver en qué bloque estás.",
+     "sticker": "RESPONDER CON «NIVEL»."
+    }
+   ],
+   "cta": {
+    "instagram": "Respóndeme NIVEL",
+    "facebook": "Respóndeme NIVEL"
+   },
+   "estructura_historia": "valor 3 tiempos",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. Primer día del mes: Daniela limpia antes las destacadas de noviembre (Black Friday, combo).",
+   "cta_por_red": {
+    "instagram": "Respóndeme NIVEL",
+    "facebook": "Respóndeme NIVEL"
+   }
+  },
+  {
+   "id": "dic-hist-1202",
+   "grupo": "GRUPO 5 · Historias (IG/FB)",
+   "formato": "historias",
+   "formato_detalle": "HISTORIAS (3 frames)",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "red_principal": "instagram",
+   "fecha": "2026-12-02T14:00:00Z",
+   "fecha_iso": "2026-12-02",
+   "fecha_etiqueta": "Mié 2 dic",
+   "hora_ecuador": "09:00",
+   "semana": "Semana 1 (1-6 dic)",
+   "tipo": "valor",
+   "producto": "Diplomado de Cálculo Estructural",
+   "estado": "COMPLETA",
+   "titulo": "La zapata del proyecto anterior",
+   "eje": "NÚCLEO-BIM",
+   "hook": "¿Copiaste alguna vez la zapata del proyecto anterior? 🙋",
+   "destacada": "🎁 HERRAMIENTAS",
+   "gabriel_a_camara": false,
+   "historias": [
+    {
+     "n": 1,
+     "visual": "Repost del reel del día.",
+     "texto": "¿Copiaste alguna vez la zapata del proyecto anterior? 🙋",
+     "sticker": "ENCUESTA: «Sí, confieso» / «Nunca»"
+    },
+    {
+     "n": 2,
+     "visual": "Texto sobre foto real de una excavación (banco de imágenes).",
+     "texto": "La misma zapata no trabaja igual en arcilla que en grava. Las dimensiones salen del estudio de suelos de ESE terreno.",
+     "sticker": "QUIZ: «¿Qué suelo se asienta más a largo plazo?» Arcilla ✅ / Grava / Arena"
+    },
+    {
+     "n": 3,
+     "visual": "Cierre invertido ámbar.",
+     "texto": "Respóndeme ZAPATA y te mando la calculadora de zapatas gratis.",
+     "sticker": "RESPONDER CON «ZAPATA» (la contesta GHL)."
+    }
+   ],
+   "cta": {
+    "instagram": "Respóndeme ZAPATA",
+    "facebook": "Respóndeme ZAPATA"
+   },
+   "estructura_historia": "valor 3 tiempos",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. El quiz lo revisa Gabriel (regla 0).",
+   "cta_por_red": {
+    "instagram": "Respóndeme ZAPATA",
+    "facebook": "Respóndeme ZAPATA"
+   }
+  },
+  {
+   "id": "dic-hist-1203",
+   "grupo": "GRUPO 5 · Historias (IG/FB)",
+   "formato": "historias",
+   "formato_detalle": "HISTORIAS (3 frames)",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "red_principal": "instagram",
+   "fecha": "2026-12-03T14:00:00Z",
+   "fecha_iso": "2026-12-03",
+   "fecha_etiqueta": "Jue 3 dic",
+   "hora_ecuador": "09:00",
+   "semana": "Semana 1 (1-6 dic)",
+   "tipo": "venta",
+   "producto": "Especialización en Acero con Tutor IA",
+   "estado": "COMPLETA",
+   "titulo": "Venta · Acero: ¿rechazas proyectos de acero?",
+   "eje": "NÚCLEO-BIM",
+   "hook": "¿Cuántos proyectos de acero rechazaste este año porque no estabas seguro de tu cálculo?",
+   "destacada": "🔩 ACERO",
+   "gabriel_a_camara": true,
+   "historias": [
+    {
+     "n": 1,
+     "visual": "Gabriel a cámara (selfie 10-15 s, G-03).",
+     "texto": "¿Cuántos proyectos de acero rechazaste este año porque no estabas seguro de tu cálculo?",
+     "sticker": "Ninguno."
+    },
+    {
+     "n": 2,
+     "visual": "Prueba REAL: captura de un alumno (nombre tapado si no hay permiso) o del Tutor IA de Acero revisando una verificación.",
+     "texto": "Así revisa su nave un alumno de la Especialización en Acero, con un tutor que le corrige el orden de verificación.",
+     "sticker": "Ninguno."
+    },
+    {
+     "n": 3,
+     "visual": "Cierre invertido ámbar.",
+     "texto": "Respóndeme TEMARIO si estás cansado de decir que no a las naves y de calcular con miedo a la revisión. Te mando el temario.",
+     "sticker": "RESPONDER CON «TEMARIO» (lo contesta una persona)."
+    }
+   ],
+   "cta": {
+    "instagram": "Respóndeme TEMARIO",
+    "facebook": "Respóndeme TEMARIO"
+   },
+   "estructura_historia": "venta 3 tiempos",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. VENTA DEL JUEVES (semana 1). Sin precio. Oferta de diciembre: ninguna (confirmar con Dayana); si Dayana define una, se agrega el frame con su fecha.",
+   "venta": true,
+   "cta_por_red": {
+    "instagram": "Respóndeme TEMARIO",
+    "facebook": "Respóndeme TEMARIO"
+   }
+  },
+  {
+   "id": "dic-hist-1204",
+   "grupo": "GRUPO 5 · Historias (IG/FB)",
+   "formato": "historias",
+   "formato_detalle": "HISTORIAS (2 frames)",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "red_principal": "instagram",
+   "fecha": "2026-12-04T14:00:00Z",
+   "fecha_iso": "2026-12-04",
+   "fecha_etiqueta": "Vie 4 dic",
+   "hora_ecuador": "09:00",
+   "semana": "Semana 1 (1-6 dic)",
+   "tipo": "valor",
+   "producto": "Especialización en Acero con Tutor IA",
+   "estado": "COMPLETA",
+   "titulo": "Caja de preguntas de los viernes",
+   "eje": "NÚCLEO-BIM",
+   "hook": "Lo que cambió para un alumno de Acero. 👉",
+   "destacada": "⭐ ALUMNOS",
+   "gabriel_a_camara": false,
+   "historias": [
+    {
+     "n": 1,
+     "visual": "Repost del post del testimonio del día.",
+     "texto": "Lo que cambió para un alumno de Acero. 👉",
+     "sticker": "Ninguno (se toca y lleva al post)."
+    },
+    {
+     "n": 2,
+     "visual": "Texto sobre azul.",
+     "texto": "¿En qué estás atascado esta semana con tu cálculo?",
+     "sticker": "CAJA DE PREGUNTAS. Las 3 mejores se contestan el lunes."
+    }
+   ],
+   "cta": {
+    "instagram": "Caja de preguntas",
+    "facebook": "Caja de preguntas"
+   },
+   "estructura_historia": "valor 3 tiempos",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final.",
+   "cta_por_red": {
+    "instagram": "Caja de preguntas",
+    "facebook": "Caja de preguntas"
+   }
+  },
+  {
+   "id": "dic-hist-1207",
+   "grupo": "GRUPO 5 · Historias (IG/FB)",
+   "formato": "historias",
+   "formato_detalle": "HISTORIAS (4 frames)",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "red_principal": "instagram",
+   "fecha": "2026-12-07T14:00:00Z",
+   "fecha_iso": "2026-12-07",
+   "fecha_etiqueta": "Lun 7 dic",
+   "hora_ecuador": "09:00",
+   "semana": "Semana 2 (7-13 dic)",
+   "tipo": "valor",
+   "producto": "Diplomado de Cálculo Estructural",
+   "estado": "COMPLETA",
+   "titulo": "8 % o 3 %",
+   "eje": "NÚCLEO-BIM",
+   "hook": "El ACI te deja 8 % de acero en columnas. La NEC, 3 %. 👀",
+   "destacada": "🎁 HERRAMIENTAS",
+   "gabriel_a_camara": false,
+   "historias": [
+    {
+     "n": 1,
+     "visual": "Repost de la portada del carrusel del día.",
+     "texto": "El ACI te deja 8 % de acero en columnas. La NEC, 3 %. 👀",
+     "sticker": "Ninguno."
+    },
+    {
+     "n": 2,
+     "visual": "Texto sobre azul.",
+     "texto": "¿Con qué norma te revisan a ti?",
+     "sticker": "ENCUESTA: «ACI» / «NEC»"
+    },
+    {
+     "n": 3,
+     "visual": "Respuestas de la caja del viernes (3 mejores) en una lámina.",
+     "texto": "Respondí 3 de sus preguntas del viernes 👇",
+     "sticker": "Ninguno."
+    },
+    {
+     "n": 4,
+     "visual": "Cierre invertido ámbar.",
+     "texto": "Respóndeme MEMORIA y te mando la plantilla de memoria de cálculo verificable.",
+     "sticker": "RESPONDER CON «MEMORIA»."
+    }
+   ],
+   "cta": {
+    "instagram": "Respóndeme MEMORIA",
+    "facebook": "Respóndeme MEMORIA"
+   },
+   "estructura_historia": "valor 3 tiempos",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final.",
+   "cta_por_red": {
+    "instagram": "Respóndeme MEMORIA",
+    "facebook": "Respóndeme MEMORIA"
+   }
+  },
+  {
+   "id": "dic-hist-1208",
+   "grupo": "GRUPO 5 · Historias (IG/FB)",
+   "formato": "historias",
+   "formato_detalle": "HISTORIAS (3 frames)",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "red_principal": "instagram",
+   "fecha": "2026-12-08T14:00:00Z",
+   "fecha_iso": "2026-12-08",
+   "fecha_etiqueta": "Mar 8 dic",
+   "hora_ecuador": "09:00",
+   "semana": "Semana 2 (7-13 dic)",
+   "tipo": "valor",
+   "producto": "Máster",
+   "estado": "COMPLETA",
+   "titulo": "¿Cuál símbolo usas?",
+   "eje": "NÚCLEO-BIM",
+   "hook": "Arquitectura dice N+3,00. Estructura dice N+2,95. ¿Cuál vale?",
+   "destacada": "🎯 BIM + IA",
+   "gabriel_a_camara": false,
+   "historias": [
+    {
+     "n": 1,
+     "visual": "Repost del reel del día.",
+     "texto": "Arquitectura dice N+3,00. Estructura dice N+2,95. ¿Cuál vale?",
+     "sticker": "QUIZ: «Los dos, si dicen qué miden» ✅ / «Arquitectura» / «Estructura»"
+    },
+    {
+     "n": 2,
+     "visual": "Texto sobre azul.",
+     "texto": "Uno mide piso terminado y el otro la losa. El problema es cuando el plano no lo dice.",
+     "sticker": "Ninguno."
+    },
+    {
+     "n": 3,
+     "visual": "Cierre invertido ámbar.",
+     "texto": "Respóndeme NIVEL y te mando el test para ver si ya estás listo para coordinar disciplinas.",
+     "sticker": "RESPONDER CON «NIVEL»."
+    }
+   ],
+   "cta": {
+    "instagram": "Respóndeme NIVEL",
+    "facebook": "Respóndeme NIVEL"
+   },
+   "estructura_historia": "valor 3 tiempos",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. 8-dic: feriado en Colombia, Perú, Argentina y Chile (no en Ecuador): historias normales.",
+   "cta_por_red": {
+    "instagram": "Respóndeme NIVEL",
+    "facebook": "Respóndeme NIVEL"
+   }
+  },
+  {
+   "id": "dic-hist-1209",
+   "grupo": "GRUPO 5 · Historias (IG/FB)",
+   "formato": "historias",
+   "formato_detalle": "HISTORIAS (3 frames)",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "red_principal": "instagram",
+   "fecha": "2026-12-09T14:00:00Z",
+   "fecha_iso": "2026-12-09",
+   "fecha_etiqueta": "Mié 9 dic",
+   "hora_ecuador": "09:00",
+   "semana": "Semana 2 (7-13 dic)",
+   "tipo": "valor",
+   "producto": "Diplomado de Cálculo Estructural",
+   "estado": "COMPLETA",
+   "titulo": "La memoria devuelta",
+   "eje": "NÚCLEO-BIM",
+   "hook": "Te devolvieron la memoria… y el cálculo estaba bien. 😤",
+   "destacada": "🎁 HERRAMIENTAS",
+   "gabriel_a_camara": true,
+   "historias": [
+    {
+     "n": 1,
+     "visual": "Repost del reel de Gabriel del día.",
+     "texto": "Te devolvieron la memoria… y el cálculo estaba bien. 😤",
+     "sticker": "Ninguno."
+    },
+    {
+     "n": 2,
+     "visual": "Texto sobre azul.",
+     "texto": "¿Cuántas veces te la devolvieron este año?",
+     "sticker": "ENCUESTA: «0» / «1-2» / «Perdí la cuenta»"
+    },
+    {
+     "n": 3,
+     "visual": "Cierre invertido ámbar.",
+     "texto": "Respóndeme MEMORIA y te mando la plantilla para que cada número diga de dónde sale.",
+     "sticker": "RESPONDER CON «MEMORIA»."
+    }
+   ],
+   "cta": {
+    "instagram": "Respóndeme MEMORIA",
+    "facebook": "Respóndeme MEMORIA"
+   },
+   "estructura_historia": "valor 3 tiempos",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. Gabriel ya sale en el reel: no hace falta selfie nueva.",
+   "cta_por_red": {
+    "instagram": "Respóndeme MEMORIA",
+    "facebook": "Respóndeme MEMORIA"
+   }
+  },
+  {
+   "id": "dic-hist-1210",
+   "grupo": "GRUPO 5 · Historias (IG/FB)",
+   "formato": "historias",
+   "formato_detalle": "HISTORIAS (3 frames)",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "red_principal": "instagram",
+   "fecha": "2026-12-10T14:00:00Z",
+   "fecha_iso": "2026-12-10",
+   "fecha_etiqueta": "Jue 10 dic",
+   "hora_ecuador": "09:00",
+   "semana": "Semana 2 (7-13 dic)",
+   "tipo": "venta",
+   "producto": "Máster BIM Management + IA por bloques",
+   "estado": "COMPLETA",
+   "titulo": "Venta · Máster: ¿en qué bloque empiezas?",
+   "eje": "NÚCLEO-BIM",
+   "hook": "Si llevas años modelando y no te sientan en la mesa, no te falta Revit. Te falta otra cosa.",
+   "destacada": "🎯 BIM + IA",
+   "gabriel_a_camara": true,
+   "historias": [
+    {
+     "n": 1,
+     "visual": "Gabriel a cámara (selfie 10-15 s, G-03).",
+     "texto": "Si llevas años modelando y no te sientan en la mesa, no te falta Revit. Te falta otra cosa.",
+     "sticker": "Ninguno."
+    },
+    {
+     "n": 2,
+     "visual": "Prueba REAL: mensaje de un alumno del Máster (nombre tapado si no hay permiso) o captura del test de nivel con su resultado.",
+     "texto": "Así empezó un alumno: hizo el test, salió en coordinación y empezó por ese bloque.",
+     "sticker": "Ninguno."
+    },
+    {
+     "n": 3,
+     "visual": "Cierre invertido ámbar.",
+     "texto": "Respóndeme MÁSTER si estás cansado de ser el que modela y de enterarte tarde de los cambios. Agendamos 20 minutos.",
+     "sticker": "RESPONDER CON «MÁSTER» (lo contesta una persona con el enlace de agenda)."
+    }
+   ],
+   "cta": {
+    "instagram": "Respóndeme MÁSTER",
+    "facebook": "Respóndeme MÁSTER"
+   },
+   "estructura_historia": "venta 3 tiempos",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. VENTA DEL JUEVES (semana 2). SIN PRECIO: solo agendar. Fecha de la próxima cohorte: (confirmar con Dayana).",
+   "venta": true,
+   "cta_por_red": {
+    "instagram": "Respóndeme MÁSTER",
+    "facebook": "Respóndeme MÁSTER"
+   }
+  },
+  {
+   "id": "dic-hist-1211",
+   "grupo": "GRUPO 5 · Historias (IG/FB)",
+   "formato": "historias",
+   "formato_detalle": "HISTORIAS (4 frames)",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "red_principal": "instagram",
+   "fecha": "2026-12-11T14:00:00Z",
+   "fecha_iso": "2026-12-11",
+   "fecha_etiqueta": "Vie 11 dic",
+   "hora_ecuador": "09:00",
+   "semana": "Semana 2 (7-13 dic)",
+   "tipo": "valor",
+   "producto": "Especialización en Acero con Tutor IA",
+   "estado": "COMPLETA",
+   "titulo": "¿Cuántas rondas de revisión incluyes?",
+   "eje": "NÚCLEO-BIM",
+   "hook": "Ganaste el proyecto. Perdiste plata en la tercera revisión. 💸",
+   "destacada": "🎁 HERRAMIENTAS",
+   "gabriel_a_camara": false,
+   "historias": [
+    {
+     "n": 1,
+     "visual": "Repost de la portada del carrusel del día.",
+     "texto": "Ganaste el proyecto. Perdiste plata en la tercera revisión. 💸",
+     "sticker": "Ninguno."
+    },
+    {
+     "n": 2,
+     "visual": "Texto sobre azul.",
+     "texto": "¿Cuántas rondas de revisión incluyes en tus cotizaciones?",
+     "sticker": "ENCUESTA: «0-1» / «2» / «Las que pidan»"
+    },
+    {
+     "n": 3,
+     "visual": "Texto sobre azul.",
+     "texto": "¿En qué estás atascado esta semana?",
+     "sticker": "CAJA DE PREGUNTAS."
+    },
+    {
+     "n": 4,
+     "visual": "Cierre invertido ámbar.",
+     "texto": "Respóndeme COTIZA y te mando el cotizador de honorarios.",
+     "sticker": "RESPONDER CON «COTIZA»."
+    }
+   ],
+   "cta": {
+    "instagram": "Respóndeme COTIZA",
+    "facebook": "Respóndeme COTIZA"
+   },
+   "estructura_historia": "valor 3 tiempos",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final.",
+   "cta_por_red": {
+    "instagram": "Respóndeme COTIZA",
+    "facebook": "Respóndeme COTIZA"
+   }
+  },
+  {
+   "id": "dic-hist-1214",
+   "grupo": "GRUPO 5 · Historias (IG/FB)",
+   "formato": "historias",
+   "formato_detalle": "HISTORIAS (4 frames)",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "red_principal": "instagram",
+   "fecha": "2026-12-14T14:00:00Z",
+   "fecha_iso": "2026-12-14",
+   "fecha_etiqueta": "Lun 14 dic",
+   "hora_ecuador": "09:00",
+   "semana": "Semana 3 (14-20 dic)",
+   "tipo": "valor",
+   "producto": "Especialización en Acero con Tutor IA",
+   "estado": "COMPLETA",
+   "titulo": "L/360, L/240 o L/180",
+   "eje": "NÚCLEO-BIM",
+   "hook": "¿Usas el mismo límite de deflexión para todo? 🤔",
+   "destacada": "🔩 ACERO",
+   "gabriel_a_camara": false,
+   "historias": [
+    {
+     "n": 1,
+     "visual": "Repost de la portada del carrusel del día.",
+     "texto": "¿Usas el mismo límite de deflexión para todo? 🤔",
+     "sticker": "Ninguno."
+    },
+    {
+     "n": 2,
+     "visual": "Texto sobre azul.",
+     "texto": "Correas de una nave sin cielo raso, carga viva (IBC 2021):",
+     "sticker": "QUIZ: «L/180» ✅ / «L/360» / «L/240»"
+    },
+    {
+     "n": 3,
+     "visual": "Respuestas de la caja del viernes (3 mejores).",
+     "texto": "Respondí 3 de sus preguntas del viernes 👇",
+     "sticker": "Ninguno."
+    },
+    {
+     "n": 4,
+     "visual": "Cierre invertido ámbar.",
+     "texto": "Respóndeme ACERO y te mando las 5 verificaciones que hago antes de dar por buena una nave.",
+     "sticker": "RESPONDER CON «ACERO»."
+    }
+   ],
+   "cta": {
+    "instagram": "Respóndeme ACERO",
+    "facebook": "Respóndeme ACERO"
+   },
+   "estructura_historia": "valor 3 tiempos",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. El quiz lo confirma Gabriel contra la tabla 1604.3 del IBC 2021 (regla 0).",
+   "cta_por_red": {
+    "instagram": "Respóndeme ACERO",
+    "facebook": "Respóndeme ACERO"
+   }
+  },
+  {
+   "id": "dic-hist-1215",
+   "grupo": "GRUPO 5 · Historias (IG/FB)",
+   "formato": "historias",
+   "formato_detalle": "HISTORIAS (3 frames)",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "red_principal": "instagram",
+   "fecha": "2026-12-15T14:00:00Z",
+   "fecha_iso": "2026-12-15",
+   "fecha_etiqueta": "Mar 15 dic",
+   "hora_ecuador": "09:00",
+   "semana": "Semana 3 (14-20 dic)",
+   "tipo": "valor",
+   "producto": "Especialización en Acero con Tutor IA",
+   "estado": "COMPLETA",
+   "titulo": "Ratios de 1,4",
+   "eje": "NÚCLEO-BIM",
+   "hook": "Ratio 1,4. ¿Subes el perfil o revisas el modelo? 🔩",
+   "destacada": "🔩 ACERO",
+   "gabriel_a_camara": true,
+   "historias": [
+    {
+     "n": 1,
+     "visual": "Repost del reel de Gabriel del día.",
+     "texto": "Ratio 1,4. ¿Subes el perfil o revisas el modelo? 🔩",
+     "sticker": "ENCUESTA: «Subo el perfil» / «Reviso el modelo»"
+    },
+    {
+     "n": 2,
+     "visual": "Texto sobre azul.",
+     "texto": "Antes de cambiar la sección: apoyos, longitudes de pandeo y viento.",
+     "sticker": "Ninguno."
+    },
+    {
+     "n": 3,
+     "visual": "Cierre invertido ámbar.",
+     "texto": "Respóndeme ACERO y te mando las 5 verificaciones.",
+     "sticker": "RESPONDER CON «ACERO»."
+    }
+   ],
+   "cta": {
+    "instagram": "Respóndeme ACERO",
+    "facebook": "Respóndeme ACERO"
+   },
+   "estructura_historia": "valor 3 tiempos",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. Gabriel sale en el reel: no hace falta selfie nueva.",
+   "cta_por_red": {
+    "instagram": "Respóndeme ACERO",
+    "facebook": "Respóndeme ACERO"
+   }
+  },
+  {
+   "id": "dic-hist-1216",
+   "grupo": "GRUPO 5 · Historias (IG/FB)",
+   "formato": "historias",
+   "formato_detalle": "HISTORIAS (3 frames)",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "red_principal": "instagram",
+   "fecha": "2026-12-16T14:00:00Z",
+   "fecha_iso": "2026-12-16",
+   "fecha_etiqueta": "Mié 16 dic",
+   "hora_ecuador": "09:00",
+   "semana": "Semana 3 (14-20 dic)",
+   "tipo": "valor",
+   "producto": "Máster",
+   "estado": "COMPLETA",
+   "titulo": "La IA encontró 3 niveles a la misma altura",
+   "eje": "NÚCLEO-BIM",
+   "hook": "La IA encontró 3 niveles a la misma altura en un modelo real. 👀",
+   "destacada": "🎯 BIM + IA",
+   "gabriel_a_camara": false,
+   "historias": [
+    {
+     "n": 1,
+     "visual": "Repost del clip del workshop del día.",
+     "texto": "La IA encontró 3 niveles a la misma altura en un modelo real. 👀",
+     "sticker": "Ninguno."
+    },
+    {
+     "n": 2,
+     "visual": "Texto sobre azul.",
+     "texto": "¿Revisas niveles duplicados antes de entregar?",
+     "sticker": "ENCUESTA: «Siempre» / «Nunca lo pensé»"
+    },
+    {
+     "n": 3,
+     "visual": "Cierre invertido ámbar.",
+     "texto": "Respóndeme NIVEL y te mando el test de nivel BIM.",
+     "sticker": "RESPONDER CON «NIVEL»."
+    }
+   ],
+   "cta": {
+    "instagram": "Respóndeme NIVEL",
+    "facebook": "Respóndeme NIVEL"
+   },
+   "estructura_historia": "valor 3 tiempos",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final.",
+   "cta_por_red": {
+    "instagram": "Respóndeme NIVEL",
+    "facebook": "Respóndeme NIVEL"
+   }
+  },
+  {
+   "id": "dic-hist-1217",
+   "grupo": "GRUPO 5 · Historias (IG/FB)",
+   "formato": "historias",
+   "formato_detalle": "HISTORIAS (3 frames)",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "red_principal": "instagram",
+   "fecha": "2026-12-17T14:00:00Z",
+   "fecha_iso": "2026-12-17",
+   "fecha_etiqueta": "Jue 17 dic",
+   "hora_ecuador": "09:00",
+   "semana": "Semana 3 (14-20 dic)",
+   "tipo": "venta",
+   "producto": "Diplomado de Cálculo Estructural",
+   "estado": "COMPLETA",
+   "titulo": "Venta · Diplomado de Cálculo Estructural",
+   "eje": "NÚCLEO-BIM",
+   "hook": "Este año, ¿cuántas veces te devolvieron un cálculo que estaba bien?",
+   "destacada": "🎁 HERRAMIENTAS",
+   "gabriel_a_camara": true,
+   "historias": [
+    {
+     "n": 1,
+     "visual": "Gabriel a cámara (selfie 10-15 s, G-03).",
+     "texto": "Este año, ¿cuántas veces te devolvieron un cálculo que estaba bien?",
+     "sticker": "Ninguno."
+    },
+    {
+     "n": 2,
+     "visual": "Prueba REAL: captura de una memoria de un alumno del Diplomado (datos tapados) o del Tutor IA corrigiendo una verificación.",
+     "texto": "Así entrega su memoria un alumno del Diplomado: cada número con su norma y su artículo.",
+     "sticker": "Ninguno."
+    },
+    {
+     "n": 3,
+     "visual": "Cierre invertido ámbar.",
+     "texto": "Respóndeme ESTRUCTURAS si estás cansado de las memorias devueltas y de calcular solo. Te cuento cómo funciona el Diplomado.",
+     "sticker": "RESPONDER CON «ESTRUCTURAS» (lo contesta una persona)."
+    }
+   ],
+   "cta": {
+    "instagram": "Respóndeme ESTRUCTURAS",
+    "facebook": "Respóndeme ESTRUCTURAS"
+   },
+   "estructura_historia": "venta 3 tiempos",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. VENTA DEL JUEVES (semana 3). Sin precio. Fecha de inicio del Diplomado: (confirmar con Dayana). ESTRUCTURAS es palabra de venta (como NAVES en noviembre): no la escucha ninguna automatización; la contesta una persona. (confirmar con Dayana)",
+   "venta": true,
+   "cta_por_red": {
+    "instagram": "Respóndeme ESTRUCTURAS",
+    "facebook": "Respóndeme ESTRUCTURAS"
+   }
+  },
+  {
+   "id": "dic-hist-1218",
+   "grupo": "GRUPO 5 · Historias (IG/FB)",
+   "formato": "historias",
+   "formato_detalle": "HISTORIAS (3 frames)",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "red_principal": "instagram",
+   "fecha": "2026-12-18T14:00:00Z",
+   "fecha_iso": "2026-12-18",
+   "fecha_etiqueta": "Vie 18 dic",
+   "hora_ecuador": "09:00",
+   "semana": "Semana 3 (14-20 dic)",
+   "tipo": "valor",
+   "producto": "Máster",
+   "estado": "COMPLETA",
+   "titulo": "Cierre del año y horario de fiestas",
+   "eje": "NÚCLEO-BIM",
+   "hook": "Antes de cerrar el año: ¿qué te tocó rehacer más veces en 2026?",
+   "destacada": "👥 COMUNIDAD",
+   "gabriel_a_camara": false,
+   "historias": [
+    {
+     "n": 1,
+     "visual": "Texto sobre azul.",
+     "texto": "Antes de cerrar el año: ¿qué te tocó rehacer más veces en 2026?",
+     "sticker": "CAJA DE PREGUNTAS."
+    },
+    {
+     "n": 2,
+     "visual": "Repost del video de YouTube del día.",
+     "texto": "Nuevo video largo en YouTube: le preguntamos a un modelo cuántos muros tiene y lo comprobamos. 👉",
+     "sticker": "ENLACE al video de YouTube."
+    },
+    {
+     "n": 3,
+     "visual": "Lámina simple.",
+     "texto": "Del 24 al 25 y del 31 al 1 el equipo descansa. El resto de días respondemos como siempre.",
+     "sticker": "Ninguno."
+    }
+   ],
+   "cta": {
+    "instagram": "Caja de preguntas",
+    "facebook": "Caja de preguntas"
+   },
+   "estructura_historia": "valor 3 tiempos",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. Horario de atención en fiestas: (confirmar con Dayana).",
+   "cta_por_red": {
+    "instagram": "Caja de preguntas",
+    "facebook": "Caja de preguntas"
+   }
+  },
+  {
+   "id": "dic-hist-1221",
+   "grupo": "GRUPO 5 · Historias (IG/FB)",
+   "formato": "historias",
+   "formato_detalle": "HISTORIAS (2 frames)",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "red_principal": "instagram",
+   "fecha": "2026-12-21T14:00:00Z",
+   "fecha_iso": "2026-12-21",
+   "fecha_etiqueta": "Lun 21 dic",
+   "hora_ecuador": "09:00",
+   "semana": "Semana 4 (21-27 dic) · fiestas",
+   "tipo": "valor",
+   "producto": "Máster",
+   "estado": "COMPLETA",
+   "titulo": "Haces todo dos veces",
+   "eje": "NÚCLEO-BIM",
+   "hook": "¿Plano en AutoCAD y cantidades en Excel? Haces todo dos veces. 😮‍💨",
+   "destacada": "🎯 BIM + IA",
+   "gabriel_a_camara": false,
+   "historias": [
+    {
+     "n": 1,
+     "visual": "Repost de la portada del carrusel del día.",
+     "texto": "¿Plano en AutoCAD y cantidades en Excel? Haces todo dos veces. 😮‍💨",
+     "sticker": "ENCUESTA: «Así trabajo» / «Ya no»"
+    },
+    {
+     "n": 2,
+     "visual": "Cierre invertido ámbar.",
+     "texto": "Respóndeme BIM y te mando el curso introductorio gratis.",
+     "sticker": "RESPONDER CON «BIM»."
+    }
+   ],
+   "cta": {
+    "instagram": "Respóndeme BIM",
+    "facebook": "Respóndeme BIM"
+   },
+   "estructura_historia": "fiestas · liviana",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final.",
+   "cta_por_red": {
+    "instagram": "Respóndeme BIM",
+    "facebook": "Respóndeme BIM"
+   }
+  },
+  {
+   "id": "dic-hist-1222",
+   "grupo": "GRUPO 5 · Historias (IG/FB)",
+   "formato": "historias",
+   "formato_detalle": "HISTORIAS (1 frame)",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "red_principal": "instagram",
+   "fecha": "2026-12-22T14:00:00Z",
+   "fecha_iso": "2026-12-22",
+   "fecha_etiqueta": "Mar 22 dic",
+   "hora_ecuador": "09:00",
+   "semana": "Semana 4 (21-27 dic) · fiestas",
+   "tipo": "valor",
+   "producto": "Máster",
+   "estado": "COMPLETA",
+   "titulo": "¿Trabajas en fiestas?",
+   "eje": "NÚCLEO-BIM",
+   "hook": "Sincero: ¿te toca entregar algo entre Navidad y Año Nuevo?",
+   "destacada": "👥 COMUNIDAD",
+   "gabriel_a_camara": false,
+   "historias": [
+    {
+     "n": 1,
+     "visual": "Texto sobre azul.",
+     "texto": "Sincero: ¿te toca entregar algo entre Navidad y Año Nuevo?",
+     "sticker": "ENCUESTA: «Sí, entrega» / «Descanso»"
+    }
+   ],
+   "cta": {
+    "instagram": "Encuesta",
+    "facebook": "Encuesta"
+   },
+   "estructura_historia": "fiestas · liviana",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. Historia de conversación, sin palabra. Se escribe por DM a quien votó «Sí, entrega» para preguntarle qué entrega.",
+   "cta_por_red": {
+    "instagram": "Encuesta",
+    "facebook": "Encuesta"
+   }
+  },
+  {
+   "id": "dic-hist-1223",
+   "grupo": "GRUPO 5 · Historias (IG/FB)",
+   "formato": "historias",
+   "formato_detalle": "HISTORIAS (2 frames)",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "red_principal": "instagram",
+   "fecha": "2026-12-23T14:00:00Z",
+   "fecha_iso": "2026-12-23",
+   "fecha_etiqueta": "Mié 23 dic",
+   "hora_ecuador": "09:00",
+   "semana": "Semana 4 (21-27 dic) · fiestas",
+   "tipo": "valor",
+   "producto": "Diplomado de Cálculo Estructural",
+   "estado": "COMPLETA",
+   "titulo": "5 cimentaciones para guardar",
+   "eje": "NÚCLEO-BIM",
+   "hook": "Las 5 cimentaciones y cuándo va cada una. Guárdalo. 📌",
+   "destacada": "🎁 HERRAMIENTAS",
+   "gabriel_a_camara": false,
+   "historias": [
+    {
+     "n": 1,
+     "visual": "Repost del reel del día.",
+     "texto": "Las 5 cimentaciones y cuándo va cada una. Guárdalo. 📌",
+     "sticker": "Ninguno."
+    },
+    {
+     "n": 2,
+     "visual": "Cierre invertido ámbar.",
+     "texto": "Respóndeme ZAPATA y te mando la calculadora de zapatas gratis.",
+     "sticker": "RESPONDER CON «ZAPATA» (la contesta GHL)."
+    }
+   ],
+   "cta": {
+    "instagram": "Respóndeme ZAPATA",
+    "facebook": "Respóndeme ZAPATA"
+   },
+   "estructura_historia": "fiestas · liviana",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. Último día de historias antes de Navidad. Sin venta.",
+   "cta_por_red": {
+    "instagram": "Respóndeme ZAPATA",
+    "facebook": "Respóndeme ZAPATA"
+   }
+  },
+  {
+   "id": "dic-hist-1228",
+   "grupo": "GRUPO 5 · Historias (IG/FB)",
+   "formato": "historias",
+   "formato_detalle": "HISTORIAS (2 frames)",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "red_principal": "instagram",
+   "fecha": "2026-12-28T14:00:00Z",
+   "fecha_iso": "2026-12-28",
+   "fecha_etiqueta": "Lun 28 dic",
+   "hora_ecuador": "09:00",
+   "semana": "Semana 5 (28 dic-3 ene) · fiestas",
+   "tipo": "valor",
+   "producto": "Máster",
+   "estado": "COMPLETA",
+   "titulo": "300 choques en la reunión",
+   "eje": "NÚCLEO-BIM",
+   "hook": "¿Cuántos choques llevaste a tu última reunión de coordinación? 🧩",
+   "destacada": "🎯 BIM + IA",
+   "gabriel_a_camara": false,
+   "historias": [
+    {
+     "n": 1,
+     "visual": "Repost de la portada del carrusel del día.",
+     "texto": "¿Cuántos choques llevaste a tu última reunión de coordinación? 🧩",
+     "sticker": "SLIDER «de 0 a 300+»"
+    },
+    {
+     "n": 2,
+     "visual": "Cierre invertido ámbar.",
+     "texto": "Respóndeme NIVEL y te mando el test para ver si estás listo para coordinar.",
+     "sticker": "RESPONDER CON «NIVEL»."
+    }
+   ],
+   "cta": {
+    "instagram": "Respóndeme NIVEL",
+    "facebook": "Respóndeme NIVEL"
+   },
+   "estructura_historia": "fiestas · liviana",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final.",
+   "cta_por_red": {
+    "instagram": "Respóndeme NIVEL",
+    "facebook": "Respóndeme NIVEL"
+   }
+  },
+  {
+   "id": "dic-hist-1229",
+   "grupo": "GRUPO 5 · Historias (IG/FB)",
+   "formato": "historias",
+   "formato_detalle": "HISTORIAS (2 frames)",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "red_principal": "instagram",
+   "fecha": "2026-12-29T14:00:00Z",
+   "fecha_iso": "2026-12-29",
+   "fecha_etiqueta": "Mar 29 dic",
+   "hora_ecuador": "09:00",
+   "semana": "Semana 5 (28 dic-3 ene) · fiestas",
+   "tipo": "valor",
+   "producto": "Máster",
+   "estado": "COMPLETA",
+   "titulo": "¿Cuánto pesa una varilla de 12?",
+   "eje": "NÚCLEO-BIM",
+   "hook": "¿Cuánto pesa una varilla de 12 mm de 12 m?",
+   "destacada": "🎁 HERRAMIENTAS",
+   "gabriel_a_camara": false,
+   "historias": [
+    {
+     "n": 1,
+     "visual": "Texto sobre foto real de varillas (banco de imágenes).",
+     "texto": "¿Cuánto pesa una varilla de 12 mm de 12 m?",
+     "sticker": "QUIZ: «10,66 kg» ✅ / «8 kg» / «12 kg»"
+    },
+    {
+     "n": 2,
+     "visual": "Repost del video de YouTube del día.",
+     "texto": "Y en YouTube: el error de los 3 niveles a la misma altura. 👉",
+     "sticker": "ENLACE al video de YouTube."
+    }
+   ],
+   "cta": {
+    "instagram": "Quiz",
+    "facebook": "Quiz"
+   },
+   "estructura_historia": "fiestas · liviana",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. 0,888 kg/m × 12 m = 10,66 kg (lo confirma Gabriel).",
+   "cta_por_red": {
+    "instagram": "Quiz",
+    "facebook": "Quiz"
+   }
+  },
+  {
+   "id": "dic-hist-1230",
+   "grupo": "GRUPO 5 · Historias (IG/FB)",
+   "formato": "historias",
+   "formato_detalle": "HISTORIAS (2 frames)",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "red_principal": "instagram",
+   "fecha": "2026-12-30T14:00:00Z",
+   "fecha_iso": "2026-12-30",
+   "fecha_etiqueta": "Mié 30 dic",
+   "hora_ecuador": "09:00",
+   "semana": "Semana 5 (28 dic-3 ene) · fiestas",
+   "tipo": "valor",
+   "producto": "Máster",
+   "estado": "COMPLETA",
+   "titulo": "La tabla de varillas",
+   "eje": "NÚCLEO-BIM",
+   "hook": "La tabla de pesos por varilla. Para tu primer presupuesto de 2027. 📌",
+   "destacada": "👥 COMUNIDAD",
+   "gabriel_a_camara": false,
+   "historias": [
+    {
+     "n": 1,
+     "visual": "Repost del post del día.",
+     "texto": "La tabla de pesos por varilla. Para tu primer presupuesto de 2027. 📌",
+     "sticker": "Ninguno."
+    },
+    {
+     "n": 2,
+     "visual": "Texto sobre azul.",
+     "texto": "¿Qué quieres aprender en 2027?",
+     "sticker": "CAJA DE PREGUNTAS (insumo para la matriz de enero)."
+    }
+   ],
+   "cta": {
+    "instagram": "Caja de preguntas",
+    "facebook": "Caja de preguntas"
+   },
+   "estructura_historia": "fiestas · liviana",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. Las respuestas de la caja se guardan para la matriz de enero-febrero.",
+   "cta_por_red": {
+    "instagram": "Caja de preguntas",
+    "facebook": "Caja de preguntas"
+   }
+  },
+  {
+   "id": "ene-hist-0104",
+   "grupo": "GRUPO 5 · Historias (IG/FB)",
+   "formato": "historias",
+   "formato_detalle": "HISTORIAS (2 frames)",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "red_principal": "instagram",
+   "fecha": "2027-01-04T14:00:00Z",
+   "fecha_iso": "2027-01-04",
+   "fecha_etiqueta": "Lun 4 ene",
+   "hora_ecuador": "09:00",
+   "semana": "Semana 6 (4-6 ene) · regreso",
+   "tipo": "valor",
+   "producto": "Diplomado BIM",
+   "estado": "COMPLETA",
+   "titulo": "¿Cuántos cursos hiciste en 2026?",
+   "eje": "NÚCLEO-BIM",
+   "hook": "«Hice tres cursos de Revit y sigo sin poder entregar un proyecto.» ¿Te suena?",
+   "destacada": "🎯 BIM + IA",
+   "gabriel_a_camara": false,
+   "historias": [
+    {
+     "n": 1,
+     "visual": "Repost del post del día.",
+     "texto": "«Hice tres cursos de Revit y sigo sin poder entregar un proyecto.» ¿Te suena?",
+     "sticker": "ENCUESTA: «Me pasa» / «No»"
+    },
+    {
+     "n": 2,
+     "visual": "Cierre invertido ámbar.",
+     "texto": "Respóndeme DIPLOMADO y te mando gratis el primer módulo del Diplomado BIM. Pruébalo antes de pagar.",
+     "sticker": "RESPONDER CON «DIPLOMADO»."
+    }
+   ],
+   "cta": {
+    "instagram": "Respóndeme DIPLOMADO",
+    "facebook": "Respóndeme DIPLOMADO"
+   },
+   "estructura_historia": "fiestas · liviana",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. Regreso de fiestas.",
+   "cta_por_red": {
+    "instagram": "Respóndeme DIPLOMADO",
+    "facebook": "Respóndeme DIPLOMADO"
+   }
+  },
+  {
+   "id": "ene-hist-0105",
+   "grupo": "GRUPO 5 · Historias (IG/FB)",
+   "formato": "historias",
+   "formato_detalle": "HISTORIAS (3 frames)",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "red_principal": "instagram",
+   "fecha": "2027-01-05T14:00:00Z",
+   "fecha_iso": "2027-01-05",
+   "fecha_etiqueta": "Mar 5 ene",
+   "hora_ecuador": "09:00",
+   "semana": "Semana 6 (4-6 ene) · regreso",
+   "tipo": "venta",
+   "producto": "Máster BIM Management + IA por bloques",
+   "estado": "COMPLETA",
+   "titulo": "Venta · Máster: el bloque de 2027",
+   "eje": "NÚCLEO-BIM",
+   "hook": "Si en 2027 quieres dejar de ser el que modela, no esperes a marzo para decidir por dónde empezar.",
+   "destacada": "🎯 BIM + IA",
+   "gabriel_a_camara": true,
+   "historias": [
+    {
+     "n": 1,
+     "visual": "Gabriel a cámara (selfie 10-15 s, G-03).",
+     "texto": "Si en 2027 quieres dejar de ser el que modela, no esperes a marzo para decidir por dónde empezar.",
+     "sticker": "Ninguno."
+    },
+    {
+     "n": 2,
+     "visual": "Prueba REAL: resultado del test de nivel de un alumno o mensaje de un egresado (con permiso).",
+     "texto": "Así decidió un alumno su primer bloque: test de 5 minutos y una llamada de 20.",
+     "sticker": "Ninguno."
+    },
+    {
+     "n": 3,
+     "visual": "Cierre invertido ámbar.",
+     "texto": "Respóndeme MÁSTER si estás cansado de ver pasar las oportunidades de coordinar. Agendamos 20 minutos.",
+     "sticker": "RESPONDER CON «MÁSTER» (lo contesta una persona con el enlace de agenda)."
+    }
+   ],
+   "cta": {
+    "instagram": "Respóndeme MÁSTER",
+    "facebook": "Respóndeme MÁSTER"
+   },
+   "estructura_historia": "venta 3 tiempos",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. VENTA de la semana del regreso (no hay jueves en el período). SIN PRECIO. Próxima cohorte y si hay oferta de enero: (confirmar con Dayana).",
+   "venta": true,
+   "cta_por_red": {
+    "instagram": "Respóndeme MÁSTER",
+    "facebook": "Respóndeme MÁSTER"
+   }
+  },
+  {
+   "id": "ene-hist-0106",
+   "grupo": "GRUPO 5 · Historias (IG/FB)",
+   "formato": "historias",
+   "formato_detalle": "HISTORIAS (2 frames)",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "red_principal": "instagram",
+   "fecha": "2027-01-06T14:00:00Z",
+   "fecha_iso": "2027-01-06",
+   "fecha_etiqueta": "Mié 6 ene",
+   "hora_ecuador": "09:00",
+   "semana": "Semana 6 (4-6 ene) · regreso",
+   "tipo": "valor",
+   "producto": "Máster",
+   "estado": "COMPLETA",
+   "titulo": "¿Qué bloque te ves empezando?",
+   "eje": "NÚCLEO-BIM",
+   "hook": "De modelar a coordinar: lo que cambió para un egresado del Máster. 👉",
+   "destacada": "⭐ ALUMNOS",
+   "gabriel_a_camara": false,
+   "historias": [
+    {
+     "n": 1,
+     "visual": "Repost del post del testimonio del día.",
+     "texto": "De modelar a coordinar: lo que cambió para un egresado del Máster. 👉",
+     "sticker": "Ninguno."
+    },
+    {
+     "n": 2,
+     "visual": "Texto sobre azul.",
+     "texto": "¿En qué bloque te ves empezando 2027?",
+     "sticker": "ENCUESTA: «Modelado» / «Coordinación» / «Gestión» / «IA»"
+    }
+   ],
+   "cta": {
+    "instagram": "Encuesta",
+    "facebook": "Encuesta"
+   },
+   "estructura_historia": "fiestas · liviana",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. Se escribe por DM a cada persona que votó, con el enlace del test de nivel.",
+   "cta_por_red": {
+    "instagram": "Encuesta",
+    "facebook": "Encuesta"
+   }
+  },
+  {
+   "id": "dic-comu-1202-zapata",
+   "grupo": "GRUPO 2 · Comunidades",
+   "formato": "mensaje",
+   "formato_detalle": "MENSAJE A COMUNIDADES (post completo + arte)",
+   "redes": [
+    "whatsapp",
+    "facebook",
+    "instagram",
+    "youtube",
+    "ghl"
+   ],
+   "red_principal": "whatsapp",
+   "fecha": "2026-12-02T15:00:00Z",
+   "fecha_iso": "2026-12-02",
+   "fecha_etiqueta": "Mié 2 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 1 (1-6 dic)",
+   "tipo": "comunidad",
+   "producto": "Diplomado de Cálculo Estructural",
+   "estado": "COMPLETA",
+   "titulo": "La zapata del proyecto anterior",
+   "eje": "NÚCLEO-BIM",
+   "hook": "¿Alguna vez copiaste la zapata del proyecto anterior?",
+   "mensajes": [
+    {
+     "canal": "Todos: canales y grupos de WhatsApp, canal de Instagram, grupos de Facebook, comunidad de YouTube y comunidades GHL (el mismo post)",
+     "texto": "¿Alguna vez copiaste la zapata del proyecto anterior?\n\nLa misma zapata no trabaja igual en arcilla, arena, limo o grava. Las dimensiones salen del estudio de suelos de ESE terreno, no de la carpeta del proyecto pasado.\n\nPara dimensionarla con sus verificaciones en un par de minutos, te dejamos la calculadora de zapatas gratis:\nhttps://funnel.dgdesignmodeling.com/acceso-gratis-calculadora-zapatas-form\n\n¿En qué suelo estás cimentando ahora?"
+    }
+   ],
+   "arte": "1:1 blanca con la zapata sobre 4 suelos",
+   "cta": {
+    "comunidades": "Post completo, igual en todas las redes. Enlace dentro del post. Pregunta abierta al final."
+   },
+   "notas_produccion": "El mismo post en todos los canales. Si hay regalo, el enlace va directo en el post: nada de «respóndeme X». Sin hashtags.",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "cta_por_red": {
+    "comunidades": "Post completo, igual en todas las redes. Enlace dentro del post. Pregunta abierta al final."
+   }
+  },
+  {
+   "id": "dic-comu-1209-memoria",
+   "grupo": "GRUPO 2 · Comunidades",
+   "formato": "mensaje",
+   "formato_detalle": "MENSAJE A COMUNIDADES (post completo + arte)",
+   "redes": [
+    "whatsapp",
+    "facebook",
+    "instagram",
+    "youtube",
+    "ghl"
+   ],
+   "red_principal": "whatsapp",
+   "fecha": "2026-12-09T15:00:00Z",
+   "fecha_iso": "2026-12-09",
+   "fecha_etiqueta": "Mié 9 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 2 (7-13 dic)",
+   "tipo": "comunidad",
+   "producto": "Diplomado de Cálculo Estructural",
+   "estado": "COMPLETA",
+   "titulo": "La memoria que vuelve",
+   "eje": "NÚCLEO-BIM",
+   "hook": "¿Te devolvieron una memoria de cálculo que estaba bien?",
+   "mensajes": [
+    {
+     "canal": "Todos: canales y grupos de WhatsApp, canal de Instagram, grupos de Facebook, comunidad de YouTube y comunidades GHL (el mismo post)",
+     "texto": "¿Te devolvieron una memoria de cálculo que estaba bien?\n\nCasi siempre pasa lo mismo: la memoria no dice qué norma usaste, qué combinación gobierna ni de dónde sale cada carga. El revisor no tiene por qué adivinar.\n\nTe dejamos gratis la plantilla de memoria de cálculo verificable que usamos:\nhttps://funnel.dgdesignmodeling.com/acceso-gratis-memoria-calculo-form\n\n¿Qué es lo que más te observan cuando te la devuelven?"
+    }
+   ],
+   "arte": "1:1 con una memoria y el sello «DEVUELTO»",
+   "cta": {
+    "comunidades": "Post completo, igual en todas las redes. Enlace dentro del post. Pregunta abierta al final."
+   },
+   "notas_produccion": "El mismo post en todos los canales. Si hay regalo, el enlace va directo en el post: nada de «respóndeme X». Sin hashtags.",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "cta_por_red": {
+    "comunidades": "Post completo, igual en todas las redes. Enlace dentro del post. Pregunta abierta al final."
+   }
+  },
+  {
+   "id": "dic-comu-1215-acero",
+   "grupo": "GRUPO 2 · Comunidades",
+   "formato": "mensaje",
+   "formato_detalle": "MENSAJE A COMUNIDADES (post completo + arte)",
+   "redes": [
+    "whatsapp",
+    "facebook",
+    "instagram",
+    "youtube",
+    "ghl"
+   ],
+   "red_principal": "whatsapp",
+   "fecha": "2026-12-15T15:00:00Z",
+   "fecha_iso": "2026-12-15",
+   "fecha_etiqueta": "Mar 15 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 3 (14-20 dic)",
+   "tipo": "comunidad",
+   "producto": "Especialización en Acero con Tutor IA",
+   "estado": "COMPLETA",
+   "titulo": "Ratios de 1,4 antes de cambiar el perfil",
+   "eje": "NÚCLEO-BIM",
+   "hook": "¿Tu modelo da ratios de 1,4 y no sabes si es la sección o los apoyos?",
+   "mensajes": [
+    {
+     "canal": "Todos: canales y grupos de WhatsApp, canal de Instagram, grupos de Facebook, comunidad de YouTube y comunidades GHL (el mismo post)",
+     "texto": "¿Tu modelo da ratios de 1,4 y no sabes si es la sección o los apoyos?\n\nAntes de subir el perfil, revisa tres cosas: los apoyos (como se van a construir), las longitudes de pandeo de cada barra y la dirección del viento. Si los ratios bajan al corregir el modelo, el perfil estaba bien.\n\nTe dejamos gratis las 5 verificaciones que hacemos antes de dar por buena una nave:\nhttps://funnel.dgdesignmodeling.com/acceso-gratis-verificacion-acero-form\n\n¿Qué ratio te dio tu último modelo?"
+    }
+   ],
+   "arte": "1:1 con la verificación de barras de Robot en rojo",
+   "cta": {
+    "comunidades": "Post completo, igual en todas las redes. Enlace dentro del post. Pregunta abierta al final."
+   },
+   "notas_produccion": "El mismo post en todos los canales. Si hay regalo, el enlace va directo en el post: nada de «respóndeme X». Sin hashtags.",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "cta_por_red": {
+    "comunidades": "Post completo, igual en todas las redes. Enlace dentro del post. Pregunta abierta al final."
+   }
+  },
+  {
+   "id": "dic-comu-1222-nivel",
+   "grupo": "GRUPO 2 · Comunidades",
+   "formato": "mensaje",
+   "formato_detalle": "MENSAJE A COMUNIDADES (post completo + arte)",
+   "redes": [
+    "whatsapp",
+    "facebook",
+    "instagram",
+    "youtube",
+    "ghl"
+   ],
+   "red_principal": "whatsapp",
+   "fecha": "2026-12-22T15:00:00Z",
+   "fecha_iso": "2026-12-22",
+   "fecha_etiqueta": "Mar 22 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 4 (21-27 dic) · fiestas",
+   "tipo": "comunidad",
+   "producto": "Máster",
+   "estado": "COMPLETA",
+   "titulo": "Revisión de fin de año",
+   "eje": "NÚCLEO-BIM",
+   "hook": "Antes de cerrar el año, ¿en qué nivel BIM estás?",
+   "mensajes": [
+    {
+     "canal": "Todos: canales y grupos de WhatsApp, canal de Instagram, grupos de Facebook, comunidad de YouTube y comunidades GHL (el mismo post)",
+     "texto": "Antes de cerrar el año, una pregunta honesta: ¿en qué nivel BIM estás hoy?\n\nModelado, coordinación, gestión o BIM + IA. El test de nivel te lo dice en 5 minutos y es gratis:\nhttps://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form\n\n¿Qué te gustaría estar haciendo en tus proyectos a fin de 2027?"
+    }
+   ],
+   "arte": "1:1 con los 4 niveles como escalera",
+   "cta": {
+    "comunidades": "Post completo, igual en todas las redes. Enlace dentro del post. Pregunta abierta al final."
+   },
+   "notas_produccion": "El mismo post en todos los canales. Si hay regalo, el enlace va directo en el post: nada de «respóndeme X». Sin hashtags. Semana de fiestas: post liviano, sin venta.",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "cta_por_red": {
+    "comunidades": "Post completo, igual en todas las redes. Enlace dentro del post. Pregunta abierta al final."
+   }
+  },
+  {
+   "id": "dic-comu-1229-cotiza",
+   "grupo": "GRUPO 2 · Comunidades",
+   "formato": "mensaje",
+   "formato_detalle": "MENSAJE A COMUNIDADES (post completo + arte)",
+   "redes": [
+    "whatsapp",
+    "facebook",
+    "instagram",
+    "youtube",
+    "ghl"
+   ],
+   "red_principal": "whatsapp",
+   "fecha": "2026-12-29T15:00:00Z",
+   "fecha_iso": "2026-12-29",
+   "fecha_etiqueta": "Mar 29 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 5 (28 dic-3 ene) · fiestas",
+   "tipo": "comunidad",
+   "producto": "Especialización en Acero con Tutor IA",
+   "estado": "COMPLETA",
+   "titulo": "Cotiza 2027 sin perder plata",
+   "eje": "NÚCLEO-BIM",
+   "hook": "¿Ya sabes cuánto vas a cobrar por tus proyectos en 2027?",
+   "mensajes": [
+    {
+     "canal": "Todos: canales y grupos de WhatsApp, canal de Instagram, grupos de Facebook, comunidad de YouTube y comunidades GHL (el mismo post)",
+     "texto": "¿Ya sabes cuánto vas a cobrar por tus proyectos en 2027?\n\nEl error más caro no está en el cálculo: está en cotizar por m² sin decir cuántas rondas de revisión incluyes. Cada cambio de arquitectura después de aprobado termina siendo trabajo gratis.\n\nTe dejamos gratis el cotizador de honorarios:\nhttps://funnel.dgdesignmodeling.com/acceso-gratis-cotizador-honorarios-form\n\n¿Cuántas rondas de revisión incluyes en tus propuestas?"
+    }
+   ],
+   "arte": "1:1 con un contrato y una calculadora",
+   "cta": {
+    "comunidades": "Post completo, igual en todas las redes. Enlace dentro del post. Pregunta abierta al final."
+   },
+   "notas_produccion": "El mismo post en todos los canales. Si hay regalo, el enlace va directo en el post: nada de «respóndeme X». Sin hashtags. Semana de fiestas: post liviano, sin venta.",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "cta_por_red": {
+    "comunidades": "Post completo, igual en todas las redes. Enlace dentro del post. Pregunta abierta al final."
+   }
+  },
+  {
+   "id": "ene-comu-0105-master",
+   "grupo": "GRUPO 2 · Comunidades",
+   "formato": "mensaje",
+   "formato_detalle": "MENSAJE A COMUNIDADES (post completo + arte)",
+   "redes": [
+    "whatsapp",
+    "facebook",
+    "instagram",
+    "youtube",
+    "ghl"
+   ],
+   "red_principal": "whatsapp",
+   "fecha": "2027-01-05T15:00:00Z",
+   "fecha_iso": "2027-01-05",
+   "fecha_etiqueta": "Mar 5 ene",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 6 (4-6 ene) · regreso",
+   "tipo": "comunidad",
+   "producto": "Máster BIM Management + IA por bloques",
+   "estado": "COMPLETA",
+   "titulo": "¿Por qué bloque empiezas 2027?",
+   "eje": "NÚCLEO-BIM",
+   "hook": "Si en 2027 quieres dejar de ser «el que modela», empieza por saber dónde estás.",
+   "mensajes": [
+    {
+     "canal": "Todos: canales y grupos de WhatsApp, canal de Instagram, grupos de Facebook, comunidad de YouTube y comunidades GHL (el mismo post)",
+     "texto": "Si en 2027 quieres dejar de ser «el que modela», empieza por saber dónde estás.\n\n1 · Haz el test de nivel BIM (5 minutos, gratis): https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form\n2 · Si quieres que lo veamos juntos, agenda 20 minutos con un asesor: (confirmar con Dayana: enlace de agenda)\n\nEl Máster va por bloques: empiezas por el que resuelve tu problema de hoy. Próxima cohorte: (confirmar con Dayana).\n\n¿En qué bloque te ves empezando?"
+    }
+   ],
+   "arte": "1:1 con los 4 bloques",
+   "cta": {
+    "comunidades": "Post completo, igual en todas las redes. Enlace dentro del post. Pregunta abierta al final."
+   },
+   "notas_produccion": "El mismo post en todos los canales. Si hay regalo, el enlace va directo en el post: nada de «respóndeme X». Sin hashtags. Venta blanda del regreso. SIN PRECIO. Enlace de agenda y fecha de cohorte: (confirmar con Dayana).",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "cta_por_red": {
+    "comunidades": "Post completo, igual en todas las redes. Enlace dentro del post. Pregunta abierta al final."
+   }
+  },
+  {
+   "id": "dic-li-1202-sigues-modelando",
+   "grupo": "GRUPO 4 · LinkedIn",
+   "formato": "linkedin",
+   "formato_detalle": "LINKEDIN · publicación de texto (página de Design Modeling Academy)",
+   "redes": [
+    "linkedin"
+   ],
+   "red_principal": "linkedin",
+   "cuenta": "Design Modeling Academy",
+   "fecha": "2026-12-02T15:00:00Z",
+   "fecha_iso": "2026-12-02",
+   "fecha_etiqueta": "Mié 2 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 1 (1-6 dic)",
+   "tipo": "linkedin",
+   "estado": "COMPLETA",
+   "titulo": "Del modelado a la gestión de la información",
+   "eje": "NÚCLEO-BIM",
+   "pieza_base": "dic-sigues-modelando-carrusel",
+   "hook": "Muchos profesionales llevan años trabajando en BIM y siguen ocupando el mismo rol: modelar.",
+   "copy": "Muchos profesionales llevan años trabajando en BIM y siguen ocupando el mismo rol: modelar.\n\nLas señales son conocidas: el modelo recibe decisiones que se tomaron en reuniones a las que el modelador no asiste, los conflictos se detectan en su pantalla pero el reporte lo firma otra persona, y el plan de ejecución BIM (BEP) del proyecto lo redacta alguien más.\n\nLa diferencia rara vez es el dominio del software. Es la gestión de la información: quién entrega qué, cuándo y con qué nivel de detalle, como plantea la ISO 19650.\n\nPara identificar en qué etapa se encuentra, puede realizar nuestro test de nivel BIM (5 minutos, gratuito): https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form\n\n¿En su organización, quién redacta el BEP de los proyectos?",
+   "cta": {
+    "linkedin": "Pregunta abierta al cierre. Enlace dentro del post."
+   },
+   "notas_produccion": "Publica Daniela en la página de Design Modeling Academy. Tono formal, sin hashtags ni emojis, sin «comenta la palabra». No sale el mismo día que su pieza base (la imagen del feed ya llega a LinkedIn por la publicación cruzada).",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "cta_por_red": {
+    "linkedin": "Pregunta abierta al cierre. Enlace dentro del post."
+   }
+  },
+  {
+   "id": "dic-li-1209-cuantia",
+   "grupo": "GRUPO 4 · LinkedIn",
+   "formato": "linkedin",
+   "formato_detalle": "LINKEDIN · publicación de texto (página de Design Modeling Academy)",
+   "redes": [
+    "linkedin"
+   ],
+   "red_principal": "linkedin",
+   "cuenta": "Design Modeling Academy",
+   "fecha": "2026-12-09T15:00:00Z",
+   "fecha_iso": "2026-12-09",
+   "fecha_etiqueta": "Mié 9 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 2 (7-13 dic)",
+   "tipo": "linkedin",
+   "estado": "COMPLETA",
+   "titulo": "Cuantía de acero en columnas: ACI 318-19 frente a la NEC",
+   "eje": "NÚCLEO-BIM",
+   "pieza_base": "dic-cuantia-aci-nec-carrusel",
+   "hook": "La cuantía máxima de acero longitudinal en columnas no es la misma en todas las normas.",
+   "copy": "La cuantía máxima de acero longitudinal en columnas no es la misma en todas las normas.\n\nEl ACI 318-19 permite hasta el 8 % del área bruta (10.6.1.1) y hasta el 6 % en pórticos especiales (18.7.4.1). La NEC-SE-HM la limita al 3 %. El mínimo, 1 %, coincide.\n\nCuando una memoria de cálculo no declara la norma y el artículo que aplica, esa diferencia termina en una observación del revisor, aunque el cálculo sea correcto.\n\nCompartimos gratuitamente nuestra plantilla de memoria de cálculo verificable: https://funnel.dgdesignmodeling.com/acceso-gratis-memoria-calculo-form\n\n¿Con qué norma se revisan habitualmente sus proyectos?",
+   "cta": {
+    "linkedin": "Pregunta abierta al cierre. Enlace dentro del post."
+   },
+   "notas_produccion": "Publica Daniela en la página de Design Modeling Academy. Tono formal, sin hashtags ni emojis, sin «comenta la palabra». No sale el mismo día que su pieza base (la imagen del feed ya llega a LinkedIn por la publicación cruzada).",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "cta_por_red": {
+    "linkedin": "Pregunta abierta al cierre. Enlace dentro del post."
+   }
+  },
+  {
+   "id": "dic-li-1216-deflexiones",
+   "grupo": "GRUPO 4 · LinkedIn",
+   "formato": "linkedin",
+   "formato_detalle": "LINKEDIN · publicación de texto (página de Design Modeling Academy)",
+   "redes": [
+    "linkedin"
+   ],
+   "red_principal": "linkedin",
+   "cuenta": "Design Modeling Academy",
+   "fecha": "2026-12-16T15:00:00Z",
+   "fecha_iso": "2026-12-16",
+   "fecha_etiqueta": "Mié 16 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 3 (14-20 dic)",
+   "tipo": "linkedin",
+   "estado": "COMPLETA",
+   "titulo": "Límites de deflexión: no todos los elementos llevan L/360",
+   "eje": "NÚCLEO-BIM",
+   "pieza_base": "dic-deflexiones-l360-carrusel",
+   "hook": "L/360 no es un límite universal.",
+   "copy": "L/360 no es un límite universal.\n\nLa tabla 1604.3 del IBC 2021 distingue: entrepisos, L/360 con carga viva y L/240 con carga total; cubiertas con cielo raso de yeso, L/360 y L/240; con otro cielo raso, L/240 y L/180; y cubiertas sin cielo raso, como la mayoría de naves industriales, L/180 y L/120.\n\nAplicar L/360 a las correas de una nave sobredimensiona la estructura; aplicar L/180 a un entrepiso compromete los acabados.\n\nCompartimos las 5 verificaciones que aplicamos antes de dar por buena una nave de acero: https://funnel.dgdesignmodeling.com/acceso-gratis-verificacion-acero-form\n\n¿Qué límite especifican habitualmente para correas de cubierta?",
+   "cta": {
+    "linkedin": "Pregunta abierta al cierre. Enlace dentro del post."
+   },
+   "notas_produccion": "Publica Daniela en la página de Design Modeling Academy. Tono formal, sin hashtags ni emojis, sin «comenta la palabra». No sale el mismo día que su pieza base (la imagen del feed ya llega a LinkedIn por la publicación cruzada).",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "cta_por_red": {
+    "linkedin": "Pregunta abierta al cierre. Enlace dentro del post."
+   }
+  },
+  {
+   "id": "dic-li-1222-autocad-excel",
+   "grupo": "GRUPO 4 · LinkedIn",
+   "formato": "linkedin",
+   "formato_detalle": "LINKEDIN · publicación de texto (página de Design Modeling Academy)",
+   "redes": [
+    "linkedin"
+   ],
+   "red_principal": "linkedin",
+   "cuenta": "Design Modeling Academy",
+   "fecha": "2026-12-22T15:00:00Z",
+   "fecha_iso": "2026-12-22",
+   "fecha_etiqueta": "Mar 22 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 4 (21-27 dic) · fiestas",
+   "tipo": "linkedin",
+   "estado": "COMPLETA",
+   "titulo": "El costo de medir dos veces",
+   "eje": "NÚCLEO-BIM",
+   "pieza_base": "dic-doble-trabajo-autocad-excel-carrusel",
+   "hook": "En muchas empresas constructoras el plano se dibuja en AutoCAD y las cantidades se calculan en Excel.",
+   "copy": "En muchas empresas constructoras el plano se dibuja en AutoCAD y las cantidades se calculan en Excel.\n\nCada cambio en el plano obliga a volver a medir, y la diferencia se resuelve con una columna de «ajuste». Responder al cliente cuánto cambia el presupuesto puede tomar un día.\n\nEn un modelo BIM la cantidad proviene del mismo elemento que se dibuja: al modificar un muro, la tabla de cantidades se actualiza.\n\nPara empezar, ofrecemos un curso introductorio BIM gratuito: https://funnel.dgdesignmodeling.com/acceso-gratis-curso-introductorio-bim-form\n\n¿Cuánto tiempo dedica su equipo cada semana a volver a medir?",
+   "cta": {
+    "linkedin": "Pregunta abierta al cierre. Enlace dentro del post."
+   },
+   "notas_produccion": "Publica Daniela en la página de Design Modeling Academy. Tono formal, sin hashtags ni emojis, sin «comenta la palabra». No sale el mismo día que su pieza base (la imagen del feed ya llega a LinkedIn por la publicación cruzada).",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "cta_por_red": {
+    "linkedin": "Pregunta abierta al cierre. Enlace dentro del post."
+   }
+  },
+  {
+   "id": "dic-li-1229-coordinacion",
+   "grupo": "GRUPO 4 · LinkedIn",
+   "formato": "linkedin",
+   "formato_detalle": "LINKEDIN · publicación de texto (página de Design Modeling Academy)",
+   "redes": [
+    "linkedin"
+   ],
+   "red_principal": "linkedin",
+   "cuenta": "Design Modeling Academy",
+   "fecha": "2026-12-29T15:00:00Z",
+   "fecha_iso": "2026-12-29",
+   "fecha_etiqueta": "Mar 29 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 5 (28 dic-3 ene) · fiestas",
+   "tipo": "linkedin",
+   "estado": "COMPLETA",
+   "titulo": "Coordinar no es ejecutar Navisworks",
+   "eje": "NÚCLEO-BIM",
+   "pieza_base": "dic-coordinar-sin-saber-carrusel",
+   "hook": "Una reunión de coordinación con 300 conflictos sin clasificar suele terminar sin decisiones.",
+   "copy": "Una reunión de coordinación con 300 conflictos sin clasificar suele terminar sin decisiones.\n\nCoordinar exige filtrar los resultados con tolerancias adecuadas, agruparlos por nivel y sistema, y presentar solo los que requieren una decisión, con un responsable y una fecha.\n\nSi desea evaluar si su perfil está preparado para coordinar, puede realizar nuestro test de nivel BIM: https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form\n\n¿Cuántos conflictos lleva normalmente su equipo a una reunión de coordinación?",
+   "cta": {
+    "linkedin": "Pregunta abierta al cierre. Enlace dentro del post."
+   },
+   "notas_produccion": "Publica Daniela en la página de Design Modeling Academy. Tono formal, sin hashtags ni emojis, sin «comenta la palabra». No sale el mismo día que su pieza base (la imagen del feed ya llega a LinkedIn por la publicación cruzada).",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "cta_por_red": {
+    "linkedin": "Pregunta abierta al cierre. Enlace dentro del post."
+   }
+  },
+  {
+   "id": "ene-li-0105-cursos",
+   "grupo": "GRUPO 4 · LinkedIn",
+   "formato": "linkedin",
+   "formato_detalle": "LINKEDIN · publicación de texto (página de Design Modeling Academy)",
+   "redes": [
+    "linkedin"
+   ],
+   "red_principal": "linkedin",
+   "cuenta": "Design Modeling Academy",
+   "fecha": "2027-01-05T15:00:00Z",
+   "fecha_iso": "2027-01-05",
+   "fecha_etiqueta": "Mar 5 ene",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 6 (4-6 ene) · regreso",
+   "tipo": "linkedin",
+   "estado": "COMPLETA",
+   "titulo": "Por qué tres cursos de Revit no bastan para entregar un proyecto",
+   "eje": "NÚCLEO-BIM",
+   "pieza_base": "ene-obj-cursos-no-sirvieron-post",
+   "hook": "Es frecuente encontrar profesionales con varios cursos de Revit que aún no pueden entregar un proyecto completo en BIM.",
+   "copy": "Es frecuente encontrar profesionales con varios cursos de Revit que aún no pueden entregar un proyecto completo en BIM.\n\nLa causa habitual es que la formación se centra en comandos, mientras que un proyecto exige un orden: qué se modela, con qué información y para quién.\n\nAntes de invertir en otro programa, recomendamos probarlo. El primer módulo de nuestro Diplomado BIM está disponible sin costo: https://funnel.dgdesignmodeling.com/acceso-gratis-modulo-diplomado-bim-form\n\n¿Qué ha echado en falta en los cursos que ha realizado?",
+   "cta": {
+    "linkedin": "Pregunta abierta al cierre. Enlace dentro del post."
+   },
+   "notas_produccion": "Publica Daniela en la página de Design Modeling Academy. Tono formal, sin hashtags ni emojis, sin «comenta la palabra». No sale el mismo día que su pieza base (la imagen del feed ya llega a LinkedIn por la publicación cruzada).",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "cta_por_red": {
+    "linkedin": "Pregunta abierta al cierre. Enlace dentro del post."
+   }
+  },
+  {
+   "id": "dic-blog-zapata-suelos",
+   "grupo": "GRUPO 3 · Blog",
+   "formato": "blog",
+   "formato_detalle": "BLOG (artículo + post de anuncio el mismo sábado)",
+   "redes": [
+    "web"
+   ],
+   "red_principal": "web",
+   "fecha": "2026-12-05T15:00:00Z",
+   "fecha_iso": "2026-12-05",
+   "fecha_etiqueta": "Sáb 5 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 1 (1-6 dic)",
+   "tipo": "blog",
+   "producto": "Diplomado de Cálculo Estructural",
+   "estado": "COMPLETA",
+   "titulo": "La misma zapata no se comporta igual en arcilla, arena, limo o grava",
+   "eje": "NÚCLEO-BIM",
+   "hook": "Copiar la zapata del proyecto anterior es uno de los errores más comunes en cimentaciones pequeñas. Y uno de los más caros.",
+   "seo": {
+    "titulo_seo": "Zapatas en arcilla, arena, limo y grava: qué cambia en el diseño",
+    "slug": "zapata-arcilla-arena-limo-grava",
+    "meta": "Por qué la misma zapata no sirve en cualquier suelo: capacidad admisible, asentamientos y lo que hay que pedirle al estudio de suelos."
+   },
+   "articulo_markdown": "# La misma zapata no se comporta igual en arcilla, arena, limo o grava\n\nCopiar la zapata del proyecto anterior es uno de los errores más comunes en cimentaciones pequeñas. Y uno de los más caros, porque se descubre cuando la estructura ya está construida.\n\n## Qué cambia de un suelo a otro\n\n- **Arcilla:** los asentamientos pueden seguir durante meses o años (consolidación). Una zapata que «pasa» por resistencia puede fallar por asentamiento.\n- **Arena:** asienta sobre todo al cargarse. Si está suelta, la capacidad baja y el asentamiento sube; si está saturada y hay sismo, hay que revisar licuación.\n- **Limo:** sensible al agua. Con humedad cambia mucho su comportamiento.\n- **Grava:** suele dar buena capacidad y asentamientos pequeños, pero no siempre: depende de la compacidad y de lo que haya debajo.\n\n## Qué pedirle al estudio de suelos\n\n1. La capacidad admisible a la profundidad de desplante que vas a usar.\n2. El asentamiento esperado y el diferencial admisible.\n3. El nivel freático.\n4. Las recomendaciones de tipo de cimentación.\n\n## La regla\n\nLas dimensiones de la zapata salen del estudio de suelos de ESE terreno. Lo que tengas en la carpeta sirve como punto de partida, nunca como respuesta.\n\n## Para seguir\n\nCon los datos de tu estudio de suelos, la calculadora de zapatas gratuita te da las dimensiones y las verificaciones en un par de minutos: https://funnel.dgdesignmodeling.com/acceso-gratis-calculadora-zapatas-form",
+   "cta": {
+    "web": "Calculadora de zapatas (recurso gratis)"
+   },
+   "post_anuncio_feed": "Post de anuncio: «¿Copiaste la zapata del proyecto anterior? Lo que cambia en arcilla, arena, limo y grava, en el blog» + enlace.",
+   "notas_produccion": "Sale el sábado con su post de anuncio (enlace en el texto; el anuncio NO cuenta como pieza del feed). REGLA 0: Gabriel revisa cada dato técnico contra la norma citada antes de publicar.",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "cta_por_red": {
+    "web": "Calculadora de zapatas (recurso gratis)"
+   }
+  },
+  {
+   "id": "dic-blog-cuantia-columnas",
+   "grupo": "GRUPO 3 · Blog",
+   "formato": "blog",
+   "formato_detalle": "BLOG (artículo + post de anuncio el mismo sábado)",
+   "redes": [
+    "web"
+   ],
+   "red_principal": "web",
+   "fecha": "2026-12-12T15:00:00Z",
+   "fecha_iso": "2026-12-12",
+   "fecha_etiqueta": "Sáb 12 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 2 (7-13 dic)",
+   "tipo": "blog",
+   "producto": "Diplomado de Cálculo Estructural",
+   "estado": "COMPLETA",
+   "titulo": "Cuantía de acero en columnas: el 1 % del ACI y el 3 % de la NEC",
+   "eje": "NÚCLEO-BIM",
+   "hook": "La cuantía mínima de columnas coincide en el ACI 318-19 y en la NEC. La máxima, no.",
+   "seo": {
+    "titulo_seo": "Cuantía mínima y máxima en columnas: ACI 318-19 vs NEC-SE-HM",
+    "slug": "cuantia-columnas-aci-318-nec",
+    "meta": "Qué cuantía de acero permite el ACI 318-19 en columnas (1 % a 8 %), qué limita la NEC-SE-HM (3 %) y cómo declararlo en la memoria de cálculo."
+   },
+   "articulo_markdown": "# Cuantía de acero en columnas: el 1 % del ACI y el 3 % de la NEC\n\nLa cuantía mínima de columnas coincide en el ACI 318-19 y en la NEC. La máxima, no. Y esa diferencia es una de las razones por las que vuelven memorias de cálculo «con el cálculo bien».\n\n## Lo que dice cada norma\n\n| Elemento | ACI 318-19 | NEC-SE-HM |\n|---|---|---|\n| Columna, mínimo | 1 % (10.6.1.1) | 1 % |\n| Columna, máximo | 8 % (10.6.1.1); 6 % en pórticos especiales (18.7.4.1) | 3 % |\n| Viga, mínimo | el mayor de 0,25√f'c/fy y 1,4/fy (9.6.1.2) | — |\n| Losa, retracción y temperatura | 0,0018 del área bruta (24.4.3.2) | — |\n\n## Por qué importa el máximo\n\nMás acero no es más seguro: complica el vaciado, la vibración y los traslapes. Por eso la NEC es más estricta en columnas.\n\n## Cómo declararlo en la memoria\n\nCada límite que uses va con su norma y su artículo. Si diseñas con el ACI y te revisan con la NEC, el revisor necesita ver qué aplicaste y por qué.\n\n## Para seguir\n\nLa plantilla de memoria de cálculo verificable, gratis: https://funnel.dgdesignmodeling.com/acceso-gratis-memoria-calculo-form",
+   "cta": {
+    "web": "Plantilla de memoria de cálculo verificable (recurso gratis)"
+   },
+   "post_anuncio_feed": "Post de anuncio: «8 % o 3 %: la cuantía de columnas según ACI y NEC, explicada en el blog» + enlace.",
+   "notas_produccion": "Sale el sábado con su post de anuncio (enlace en el texto; el anuncio NO cuenta como pieza del feed). REGLA 0: Gabriel revisa cada dato técnico contra la norma citada antes de publicar.",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "cta_por_red": {
+    "web": "Plantilla de memoria de cálculo verificable (recurso gratis)"
+   }
+  },
+  {
+   "id": "dic-blog-deflexiones",
+   "grupo": "GRUPO 3 · Blog",
+   "formato": "blog",
+   "formato_detalle": "BLOG (artículo + post de anuncio el mismo sábado)",
+   "redes": [
+    "web"
+   ],
+   "red_principal": "web",
+   "fecha": "2026-12-19T15:00:00Z",
+   "fecha_iso": "2026-12-19",
+   "fecha_etiqueta": "Sáb 19 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 3 (14-20 dic)",
+   "tipo": "blog",
+   "producto": "Especialización en Acero con Tutor IA",
+   "estado": "COMPLETA",
+   "titulo": "Deflexiones admisibles: L/360, L/240, L/180 y cuál le toca a cada elemento",
+   "eje": "NÚCLEO-BIM",
+   "hook": "L/360 no es un límite universal. Usarlo para todo sobredimensiona unas piezas y deja cortas otras.",
+   "seo": {
+    "titulo_seo": "Límites de deflexión L/360, L/240, L/180: tabla 1604.3 del IBC",
+    "slug": "limites-deflexion-l360-l240-l180",
+    "meta": "Qué límite de deflexión le corresponde a entrepisos, cubiertas con y sin cielo raso según el IBC 2021, y el error típico en naves de acero."
+   },
+   "articulo_markdown": "# Deflexiones admisibles: L/360, L/240, L/180 y cuál le toca a cada elemento\n\nL/360 no es un límite universal. Usarlo para todo sobredimensiona unas piezas y deja cortas otras.\n\n## La tabla (IBC 2021, tabla 1604.3)\n\n| Elemento | Carga viva | Carga total |\n|---|---|---|\n| Entrepiso | L/360 | L/240 |\n| Cubierta con cielo raso de yeso o enlucido | L/360 | L/240 |\n| Cubierta con otro cielo raso | L/240 | L/180 |\n| Cubierta sin cielo raso | L/180 | L/120 |\n\n## El error típico en naves\n\nLas correas de una nave sin cielo raso no necesitan L/360. Diseñarlas así encarece la estructura sin ganar nada. Al revés, una viga de entrepiso con L/180 vibra y fisura los acabados.\n\n## En la memoria\n\nDi de dónde sale el límite: IBC, norma local o pliego del cliente. Si no lo dices, el revisor te lo va a preguntar.\n\n## Para seguir\n\nLas 5 verificaciones que hacemos antes de dar por buena una nave de acero, gratis: https://funnel.dgdesignmodeling.com/acceso-gratis-verificacion-acero-form",
+   "cta": {
+    "web": "Guía de las 5 verificaciones (recurso gratis)"
+   },
+   "post_anuncio_feed": "Post de anuncio: «L/360 no es para todo: la tabla de deflexiones explicada en el blog» + enlace.",
+   "notas_produccion": "Sale el sábado con su post de anuncio (enlace en el texto; el anuncio NO cuenta como pieza del feed). REGLA 0: Gabriel revisa cada dato técnico contra la norma citada antes de publicar.",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "cta_por_red": {
+    "web": "Guía de las 5 verificaciones (recurso gratis)"
+   }
+  },
+  {
+   "id": "ene-blog-honorarios-2027",
+   "grupo": "GRUPO 3 · Blog",
+   "formato": "blog",
+   "formato_detalle": "BLOG (artículo + post de anuncio el mismo sábado)",
+   "redes": [
+    "web"
+   ],
+   "red_principal": "web",
+   "fecha": "2027-01-02T15:00:00Z",
+   "fecha_iso": "2027-01-02",
+   "fecha_etiqueta": "Sáb 2 ene",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 5 (28 dic-3 ene) · fiestas",
+   "tipo": "blog",
+   "producto": "Especialización en Acero con Tutor IA",
+   "estado": "COMPLETA",
+   "titulo": "Cómo cotizar honorarios de cálculo estructural en 2027 sin regalar las revisiones",
+   "eje": "NÚCLEO-BIM",
+   "hook": "El proyecto que más plata te hizo perder en 2026 probablemente no fue el más difícil. Fue el que cotizaste por m² sin rondas de revisión.",
+   "seo": {
+    "titulo_seo": "Cómo cotizar honorarios de cálculo estructural: entregables y revisiones",
+    "slug": "cotizar-honorarios-calculo-estructural",
+    "meta": "Cómo armar una propuesta de honorarios de cálculo estructural por entregables, con rondas de revisión incluidas y precio para los cambios."
+   },
+   "articulo_markdown": "# Cómo cotizar honorarios de cálculo estructural en 2027 sin regalar las revisiones\n\nEl proyecto que más plata te hizo perder en 2026 probablemente no fue el más difícil. Fue el que cotizaste por m² sin decir cuántas rondas de revisión incluías.\n\n## Tres cosas que tu propuesta tiene que decir\n\n1. **Entregables separados:** cálculo, planos y memoria, cada uno con su alcance.\n2. **Rondas de revisión incluidas:** cuántas, y qué cuenta como revisión.\n3. **Cambios después de aprobado:** cómo se cobran (por hora o por entregable) antes de firmar.\n\n## Por qué el m² solo no alcanza\n\nEl m² sirve para estimar, pero no dice nada del número de cambios. Un cliente que cambia la arquitectura dos veces convierte un proyecto rentable en uno a pérdida.\n\n## Para seguir\n\nEl cotizador de honorarios gratuito te ayuda a separar entregables y ponerle precio a las revisiones: https://funnel.dgdesignmodeling.com/acceso-gratis-cotizador-honorarios-form",
+   "cta": {
+    "web": "Cotizador de honorarios (recurso gratis)"
+   },
+   "post_anuncio_feed": "Post de anuncio: «Cotiza 2027 sin regalar las revisiones: la guía en el blog» + enlace.",
+   "notas_produccion": "Sale el sábado con su post de anuncio (enlace en el texto; el anuncio NO cuenta como pieza del feed). REGLA 0: Gabriel revisa cada dato técnico contra la norma citada antes de publicar.",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "cta_por_red": {
+    "web": "Cotizador de honorarios (recurso gratis)"
+   }
+  },
+  {
+   "id": "dic-correo-1202-zapata",
+   "grupo": "Correos",
+   "formato": "correo",
+   "formato_detalle": "CORREO a la lista propia (GHL)",
+   "redes": [
+    "email"
+   ],
+   "red_principal": "email",
+   "fecha": "2026-12-02T15:00:00Z",
+   "fecha_iso": "2026-12-02",
+   "fecha_etiqueta": "Mié 2 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 1 (1-6 dic)",
+   "tipo": "correo",
+   "producto": "Diplomado de Cálculo Estructural",
+   "estado": "COMPLETA",
+   "titulo": "La zapata del proyecto anterior",
+   "asunto": "¿Copiaste la zapata del proyecto anterior?",
+   "preencabezado": "La misma zapata no trabaja igual en arcilla que en grava.",
+   "segmento": "Lista general",
+   "hook": "Abrir diciembre con un problema técnico y la calculadora",
+   "cuerpo": [
+    "Una pregunta incómoda: ¿alguna vez copiaste la zapata del proyecto anterior?",
+    "La misma zapata no se comporta igual en arcilla, arena, limo o grava. Cambia la capacidad, cambia el asentamiento y cambia lo que hay que verificar.",
+    "Por eso las dimensiones salen del estudio de suelos de ESE terreno. Con esos datos, nuestra calculadora gratuita te da las dimensiones y las verificaciones en un par de minutos.",
+    "Botón: Usar la calculadora → https://funnel.dgdesignmodeling.com/acceso-gratis-calculadora-zapatas-form",
+    "Responde este correo y cuéntame: ¿en qué suelo estás cimentando ahora?"
+   ],
+   "eje": "NÚCLEO-BIM",
+   "cta": {
+    "email": "Botón del correo"
+   },
+   "condicion": "Sin precio y sin oferta: diciembre no tiene promo definida (confirmar con Dayana antes de agregar una).",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "cta_por_red": {
+    "email": "Botón del correo"
+   },
+   "notas_produccion": "Sin precio y sin oferta: diciembre no tiene promo definida (confirmar con Dayana antes de agregar una)."
+  },
+  {
+   "id": "dic-correo-1209-memoria",
+   "grupo": "Correos",
+   "formato": "correo",
+   "formato_detalle": "CORREO a la lista propia (GHL)",
+   "redes": [
+    "email"
+   ],
+   "red_principal": "email",
+   "fecha": "2026-12-09T15:00:00Z",
+   "fecha_iso": "2026-12-09",
+   "fecha_etiqueta": "Mié 9 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 2 (7-13 dic)",
+   "tipo": "correo",
+   "producto": "Diplomado de Cálculo Estructural",
+   "estado": "COMPLETA",
+   "titulo": "La memoria devuelta",
+   "asunto": "Te la devolvieron… y el cálculo estaba bien",
+   "preencabezado": "Lo que casi nunca dice una memoria de cálculo.",
+   "segmento": "Lista general + leads de ZAPATA y MEMORIA",
+   "hook": "Llevar al calculista a la plantilla y de ahí al Diplomado",
+   "cuerpo": [
+    "Te devolvieron la memoria de cálculo. Revisaste todo. El cálculo estaba bien.",
+    "Casi siempre es esto: la memoria no dice qué norma usaste, qué combinación gobierna ni de dónde sale cada carga. Un ejemplo: el ACI 318-19 permite hasta 8 % de acero en columnas; la NEC-SE-HM, 3 %. Si no declaras con cuál diseñaste, vuelve.",
+    "Te dejo la plantilla de memoria verificable que usamos: cada número con su norma y su artículo.",
+    "Botón: Descargar la plantilla → https://funnel.dgdesignmodeling.com/acceso-gratis-memoria-calculo-form",
+    "Responde este correo: ¿qué es lo que más te observan cuando te devuelven una memoria?"
+   ],
+   "eje": "NÚCLEO-BIM",
+   "cta": {
+    "email": "Botón del correo"
+   },
+   "condicion": "Sin precio y sin oferta: diciembre no tiene promo definida (confirmar con Dayana antes de agregar una).",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "cta_por_red": {
+    "email": "Botón del correo"
+   },
+   "notas_produccion": "Sin precio y sin oferta: diciembre no tiene promo definida (confirmar con Dayana antes de agregar una)."
+  },
+  {
+   "id": "dic-correo-1216-acero",
+   "grupo": "Correos",
+   "formato": "correo",
+   "formato_detalle": "CORREO a la lista propia (GHL)",
+   "redes": [
+    "email"
+   ],
+   "red_principal": "email",
+   "fecha": "2026-12-16T15:00:00Z",
+   "fecha_iso": "2026-12-16",
+   "fecha_etiqueta": "Mié 16 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 3 (14-20 dic)",
+   "tipo": "correo",
+   "producto": "Especialización en Acero con Tutor IA",
+   "estado": "COMPLETA",
+   "titulo": "Ratios de 1,4",
+   "asunto": "Antes de subir el perfil, revisa esto",
+   "preencabezado": "Tres cosas del modelo que inflan los ratios.",
+   "segmento": "Lista general + leads de ACERO y COTIZA",
+   "hook": "Llevar al lead de acero a las 5 verificaciones y a la conversación sobre la Especialización",
+   "cuerpo": [
+    "Tu modelo da ratios de 1,4 en las columnas. La primera idea es subir el perfil.",
+    "Antes, revisa tres cosas: cómo modelaste los apoyos, las longitudes de pandeo de cada barra y si el viento entró con la dirección correcta. Si al corregir el modelo los ratios bajan, el perfil estaba bien.",
+    "Estas y otras dos están en las 5 verificaciones que hacemos antes de dar por buena una nave:",
+    "Botón: Ver las 5 verificaciones → https://funnel.dgdesignmodeling.com/acceso-gratis-verificacion-acero-form",
+    "Y si quieres el temario de la Especialización en Acero con Tutor IA, responde este correo con la palabra TEMARIO."
+   ],
+   "eje": "NÚCLEO-BIM",
+   "cta": {
+    "email": "Botón del correo"
+   },
+   "condicion": "Sin precio de Acero en este correo: el precio de diciembre está por confirmar (confirmar con Dayana).",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "cta_por_red": {
+    "email": "Botón del correo"
+   },
+   "notas_produccion": "Sin precio de Acero en este correo: el precio de diciembre está por confirmar (confirmar con Dayana)."
+  },
+  {
+   "id": "dic-correo-1222-revision-fin-de-ano",
+   "grupo": "Correos",
+   "formato": "correo",
+   "formato_detalle": "CORREO a la lista propia (GHL)",
+   "redes": [
+    "email"
+   ],
+   "red_principal": "email",
+   "fecha": "2026-12-22T15:00:00Z",
+   "fecha_iso": "2026-12-22",
+   "fecha_etiqueta": "Mar 22 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 4 (21-27 dic) · fiestas",
+   "tipo": "correo",
+   "producto": "Máster",
+   "estado": "COMPLETA",
+   "titulo": "Revisión de fin de año",
+   "asunto": "3 cosas que revisar en tu modelo antes de cerrar el año",
+   "preencabezado": "Una de ellas la encontró la IA en vivo.",
+   "segmento": "Lista general",
+   "hook": "Valor en semana de fiestas; puerta al test de nivel",
+   "cuerpo": [
+    "Antes de cerrar el año, tres revisiones rápidas a tu modelo:",
+    "1 · Niveles duplicados: en el workshop, la IA encontró 3 niveles a la misma altura en un modelo real.\n2 · Parámetros vacíos en los elementos que se van a cuantificar.\n3 · Que los niveles de arquitectura y de estructura digan qué miden (piso terminado o losa).",
+    "El video largo con el caso de los niveles sale el 29 en nuestro YouTube.",
+    "Si quieres saber en qué nivel BIM cierras el año, el test toma 5 minutos:",
+    "Botón: Hacer el test → https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form",
+    "Felices fiestas de parte de todo el equipo de Design Modeling Academy."
+   ],
+   "eje": "NÚCLEO-BIM",
+   "cta": {
+    "email": "Botón del correo"
+   },
+   "condicion": "Semana de fiestas: correo de valor, sin venta.",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "cta_por_red": {
+    "email": "Botón del correo"
+   },
+   "notas_produccion": "Semana de fiestas: correo de valor, sin venta."
+  },
+  {
+   "id": "dic-correo-1229-honorarios",
+   "grupo": "Correos",
+   "formato": "correo",
+   "formato_detalle": "CORREO a la lista propia (GHL)",
+   "redes": [
+    "email"
+   ],
+   "red_principal": "email",
+   "fecha": "2026-12-29T15:00:00Z",
+   "fecha_iso": "2026-12-29",
+   "fecha_etiqueta": "Mar 29 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 5 (28 dic-3 ene) · fiestas",
+   "tipo": "correo",
+   "producto": "Especialización en Acero con Tutor IA",
+   "estado": "COMPLETA",
+   "titulo": "Cotiza 2027",
+   "asunto": "El proyecto que más plata te hizo perder este año",
+   "preencabezado": "No fue el más difícil.",
+   "segmento": "Lista general + leads de COTIZA y ACERO",
+   "hook": "Valor de fin de año; cotizador",
+   "cuerpo": [
+    "El proyecto que más plata te hizo perder en 2026 probablemente no fue el más difícil.",
+    "Fue el que cotizaste por m² sin decir cuántas rondas de revisión incluías. Cada cambio de arquitectura después de aprobado fue trabajo gratis.",
+    "Para 2027: separa entregables, deja escritas las rondas incluidas y ponle precio a la siguiente antes de firmar.",
+    "Botón: Usar el cotizador → https://funnel.dgdesignmodeling.com/acceso-gratis-cotizador-honorarios-form",
+    "Responde este correo: ¿cuántas rondas de revisión incluyes hoy?"
+   ],
+   "eje": "NÚCLEO-BIM",
+   "cta": {
+    "email": "Botón del correo"
+   },
+   "condicion": "Semana de fiestas: correo de valor, sin venta. No sale el 31 ni el 1.",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "cta_por_red": {
+    "email": "Botón del correo"
+   },
+   "notas_produccion": "Semana de fiestas: correo de valor, sin venta. No sale el 31 ni el 1."
+  },
+  {
+   "id": "ene-correo-0105-bloque-2027",
+   "grupo": "Correos",
+   "formato": "correo",
+   "formato_detalle": "CORREO a la lista propia (GHL)",
+   "redes": [
+    "email"
+   ],
+   "red_principal": "email",
+   "fecha": "2027-01-05T15:00:00Z",
+   "fecha_iso": "2027-01-05",
+   "fecha_etiqueta": "Mar 5 ene",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 6 (4-6 ene) · regreso",
+   "tipo": "correo",
+   "producto": "Máster BIM Management + IA por bloques",
+   "estado": "COMPLETA",
+   "titulo": "¿Por qué bloque empiezas 2027?",
+   "asunto": "¿Por qué bloque empiezas 2027?",
+   "preencabezado": "Un test de 5 minutos y una llamada de 20.",
+   "segmento": "Lista general + leads de NIVEL y BIM",
+   "hook": "Venta blanda del Máster: test + agendar",
+   "cuerpo": [
+    "Si en 2027 quieres dejar de ser «el que modela», el primer paso no es inscribirte en nada. Es saber dónde estás.",
+    "1 · Haz el test de nivel BIM (5 minutos): https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form",
+    "2 · Si quieres verlo con un asesor, agenda 20 minutos: (confirmar con Dayana: enlace de agenda)",
+    "El Máster va por bloques: modelado, coordinación, gestión e IA. Empiezas por el que resuelve tu problema de hoy. Próxima cohorte: (confirmar con Dayana).",
+    "Responde este correo con tu resultado del test y te digo por dónde empezaría yo."
+   ],
+   "eje": "NÚCLEO-BIM",
+   "cta": {
+    "email": "Botón del correo"
+   },
+   "condicion": "SIN PRECIO del Máster (regla fija). Fecha de cohorte, enlace de agenda y si hay oferta de enero: (confirmar con Dayana).",
+   "origen": "matriz diciembre 2026 / enero 2027",
+   "cta_por_red": {
+    "email": "Botón del correo"
+   },
+   "notas_produccion": "SIN PRECIO del Máster (regla fija). Fecha de cohorte, enlace de agenda y si hay oferta de enero: (confirmar con Dayana)."
   }
  ],
  "historias_rutina": {
@@ -13633,5 +17280,5 @@
    "⭐ ALUMNOS — testimonios y casos."
   ]
  },
- "nota_octubre": "28-sep-2026: se suman las piezas de octubre (1-2 oct del G1, lanzamiento del Tutor IA del Diplomado y carruseles/reels «acusación» que graba Gabriel). Cada una trae fecha, fecha_iso, estado y origen (el fichero de la matriz de donde sale). 29-sep-2026: se suman 16 piezas de los ángulos ganadores (8 de feed para Máster y Acero con el reparto 50/20/30, y 8 anuncios de Meta), origen angulos-ganadores-octubre.json. 30-sep-2026: se suma el lanzamiento del Cotizador de Honorarios (palabra COTIZA): reel Mar 13, historias Mar 13 y carrusel Jue 15, origen leadmagnet-cotiza-octubre.json. Historias diarias de octubre (oct-hist-MMDD, 18 jornadas; venta los jueves 15, 22 y 29). Feed extra (dato de deriva NEC-SE-DS, carrusel ACERO pandeo lateral-torsional) y 3 blogs de sábado (17, 24, 31). Comunidades (11), LinkedIn en 3 cuentas (12) y correos semanales a la lista propia (4). Historia del creador (Jue 8), estructura del carrusel de referencia de Juan Lombana. 5-oct-2026: el reel del tutor del Mié 7 queda aplazado (no se grabó) y en su lugar sale «Una IA no sabe cuándo no sabe» (oct-ia-no-sabe-reel, CTA GUIA), que no se promociona en historias; historias del Mar 6 y Mié 7 sin mención al reel; todas las historias a 4 frames como máximo. 6-oct-2026: Daniela viaja y no se graban videos nuevos hasta que vuelva. Testimonio de Acero al Mar 13 y reel de COTIZA al Mié 28 (intercambio), reel del ranking al Vie 23, post de clases grabadas al Mié 14 (Instagram y Facebook). Las historias de la semana 1 se corren un día (el Lun 5 no se subieron) y las del 13, 14, 23, 27 y 28 se ajustan a lo que de verdad sale ese día. 8-oct-2026: el Lun 19 sale el carrusel del workshop «Antes / ahora: Revit con IA» (oct-workshop-antes-ahora-carrusel, formato del post de AECODE del 7-oct, CTA WORKSHOP); el carrusel del ranking pasa a reserva y las historias del Lun 19 promocionan el workshop. 8-oct: 3 clips de clases reales de Vimeo para los sábados 10, 17 y 24 Matriz de noviembre 2026 fix público Máster reels adaptados de @lexmrbim 4 videos de valor pendientes de octubre (Drive de Dayana, 30-oct) 4 clips del workshop IA conectada a Revit (17-nov), borrador"
+ "nota_octubre": "28-sep-2026: se suman las piezas de octubre (1-2 oct del G1, lanzamiento del Tutor IA del Diplomado y carruseles/reels «acusación» que graba Gabriel). Cada una trae fecha, fecha_iso, estado y origen (el fichero de la matriz de donde sale). 29-sep-2026: se suman 16 piezas de los ángulos ganadores (8 de feed para Máster y Acero con el reparto 50/20/30, y 8 anuncios de Meta), origen angulos-ganadores-octubre.json. 30-sep-2026: se suma el lanzamiento del Cotizador de Honorarios (palabra COTIZA): reel Mar 13, historias Mar 13 y carrusel Jue 15, origen leadmagnet-cotiza-octubre.json. Historias diarias de octubre (oct-hist-MMDD, 18 jornadas; venta los jueves 15, 22 y 29). Feed extra (dato de deriva NEC-SE-DS, carrusel ACERO pandeo lateral-torsional) y 3 blogs de sábado (17, 24, 31). Comunidades (11), LinkedIn en 3 cuentas (12) y correos semanales a la lista propia (4). Historia del creador (Jue 8), estructura del carrusel de referencia de Juan Lombana. 5-oct-2026: el reel del tutor del Mié 7 queda aplazado (no se grabó) y en su lugar sale «Una IA no sabe cuándo no sabe» (oct-ia-no-sabe-reel, CTA GUIA), que no se promociona en historias; historias del Mar 6 y Mié 7 sin mención al reel; todas las historias a 4 frames como máximo. 6-oct-2026: Daniela viaja y no se graban videos nuevos hasta que vuelva. Testimonio de Acero al Mar 13 y reel de COTIZA al Mié 28 (intercambio), reel del ranking al Vie 23, post de clases grabadas al Mié 14 (Instagram y Facebook). Las historias de la semana 1 se corren un día (el Lun 5 no se subieron) y las del 13, 14, 23, 27 y 28 se ajustan a lo que de verdad sale ese día. 8-oct-2026: el Lun 19 sale el carrusel del workshop «Antes / ahora: Revit con IA» (oct-workshop-antes-ahora-carrusel, formato del post de AECODE del 7-oct, CTA WORKSHOP); el carrusel del ranking pasa a reserva y las historias del Lun 19 promocionan el workshop. 8-oct: 3 clips de clases reales de Vimeo para los sábados 10, 17 y 24 Matriz de noviembre 2026 fix público Máster reels adaptados de @lexmrbim 4 videos de valor pendientes de octubre (Drive de Dayana, 30-oct) 4 clips del workshop IA conectada a Revit (17-nov), borrador Matriz dic-2026/ene-2027"
 }
