@@ -157,7 +157,7 @@ Al clasificar, deja el concepto como «<qué es> — <texto original sin "(por c
 | Ángel Amaguaya, Iván Pincay, Gabriela Romero, Nicole Vivanco, Víctor Perugachi, Miguel Vera, Anderson Bautista | Alumnos: sus transferencias son cobros | R046 empresarial |
 | Flor Galarza | No es la alumna: paga por Edisson Chávez (Especialización en Acero + Tutor IA, cliente de Ester) | R046 empresarial, a nombre de Edisson Chávez |
 | «TRIBUTO» (restaurante) | Almuerzo de negocios | R040 empresarial |
-| Nicole Recalde Salazar | Psicóloga de Dayana ($30 por sesión) | R011 personal |
+| Nicole Recalde Salazar | Psicóloga de Dayana: $30 cada 15 días. A veces lo pasa en dos transferencias el mismo día ($20 + $10): son la misma quincena, no dos pagos distintos. Si Dayana lo dicta al asistente y además llega el aviso del banco, queda una sola vez (se anula el repetido) | R011 personal |
 | Joselyn Castillo Vasco, Dubreixy Luna Palomino, Marilyn Cedeño Level | Gente que trabajó para Dayana y se le paga | R039 empresarial (si devuelven algo: R049) |
 | Adriana Carrillo, María Magdalena Cabascango, Zulmi Mujica, Pamela Proaño Chiriboga, Sara Salgado Loyola, Brandon Zambrano Guerrero, Eduardo Pérez Hernández | Dayana dijo «los demás también» son gente que le trabajó (no los nombró uno por uno) | R039 empresarial |
 | Joel Germán Ortiz Herrera, Rosa Mercedes Moreira Anchundia | Pagos personales de Dayana y Gabriel, sin más detalle | R010 personal |
@@ -257,6 +257,7 @@ Todavía NO se envía: Dayana no quiere que salga por el WhatsApp de la Academy 
 - **Caja semanal** (bloque 35): el mes de la app (6 → 5) va en 4 semanas: 6–12, 13–19, 20–26 y 27–5. El viernes 27/11 hacen el primer cierre de caja con Erika: antes de esa fecha, que cada cuenta tenga su saldo real y lo menos posible «por confirmar».
 - **Metas** (bloques 36 y 37): Academia $9.700 al mes; Consultoría sin meta. Un ingreso del negocio es de la Academia salvo que el concepto diga «consultoría»: si anotas un cobro de consultoría, pon esa palabra en el concepto.
 - **Topes por rubro**: cargados el 24/11 desde la lista de Gabriel (agosto 2026), con una nota en cada uno que dice qué pagos lo componen. Si un monto cambia, pregúntale a Dayana; no los ajustes por tu cuenta.
+- **Asistente de WhatsApp** (desde el 24/11): tiene `finanzas_semana` (semana, meta, topes pasados y lo que vence en 7 días) y `finanzas_metas`. Usa las mismas semanas y reglas que la app. Solo responde cuando le preguntan; no manda alertas solo.
 - **Cobros reales confirmados por recibo**: Render $7.00 (+IVA) el día 2; Railway $5.00 (+IVA) el día 11, una sola vez al mes; Netflix $11.99 el día 11 con la PacifiCard; Claude $200 al mes desde el 17/11 con la TDC Guayaquil de Dayana; Spotify $8.99; DirecTV Go $19.99 con la TDC Internacional; Higgsfield es software de diseño de la empresa (R027).
 
 ## Preguntas abiertas al 19/11/2026
