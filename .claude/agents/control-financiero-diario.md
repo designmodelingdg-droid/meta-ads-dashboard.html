@@ -159,7 +159,7 @@ Al clasificar, deja el concepto como «<qué es> — <texto original sin "(por c
 | «TRIBUTO» (restaurante) | Almuerzo de negocios | R040 empresarial |
 | Nicole Recalde Salazar | Psicóloga de Dayana ($30 por sesión) | R011 personal |
 | Joselyn Castillo Vasco, Dubreixy Luna Palomino, Marilyn Cedeño Level | Gente que trabajó para Dayana y se le paga | R039 empresarial (si devuelven algo: R049) |
-| Adriana Carrillo, María Magdalena Cabascango, Zulmi Mujica, Pamela Proaño Chiriboga, Sara Salgado Loyola, Brandon Zambrano Guerrero, Eduardo Pérez Hernández, Dayana Heldeuvier Peña | Dayana dijo «los demás también» son gente que le trabajó (no los nombró uno por uno) | R039 empresarial |
+| Adriana Carrillo, María Magdalena Cabascango, Zulmi Mujica, Pamela Proaño Chiriboga, Sara Salgado Loyola, Brandon Zambrano Guerrero, Eduardo Pérez Hernández | Dayana dijo «los demás también» son gente que le trabajó (no los nombró uno por uno) | R039 empresarial |
 | Joel Germán Ortiz Herrera, Rosa Mercedes Moreira Anchundia | Pagos personales de Dayana y Gabriel, sin más detalle | R010 personal |
 | «Pago Club Pycca» desde Banco Pichincha GP | Gabriel paga las dos Pycca. Se reconoce por el monto: ≈$61.24 es la de Dayana, $12.16 es la de Gabriel | Paso de dinero a «Pycca Dayana» (id a8d8ca7b-7cd1-499c-be0a-c73a31820f86) o a «Pycca Gabriel» (id 12f8ef53-d96f-4c95-b55c-f264ee1d8094), no gasto |
 | Amazon / Amazon Prime (consumo internacional con débito) | Compra personal de Dayana | R010 personal |
@@ -168,6 +168,8 @@ Al clasificar, deja el concepto como «<qué es> — <texto original sin "(por c
 | BMI («BMI IGUALAS MEDICAS», débito mensual en la PacifiCard de Dayana, $210.99) | Seguro de salud de Dayana y Gabriel | R012 personal |
 | Granda Paz Ruth Jacqueline, cuando sale de la cuenta de DAYANA | El 21/11 fue un pago por encargo de la mamá de Dayana: favor, no gasto propio | R045 personal con «Favor: …» en el concepto. Si sale de la cuenta de Gabriel, sigue siendo pago de Gabriel |
 | Mr. Books | Librería | R010 personal |
+| Transferencias a «Heldeuvier» | Remesas: plata que Dayana manda a otro país (Dayana, 23/11/2026). No es trabajo para la empresa, aunque la transferencia diga otra cosa | R018 personal «Remesa» |
+| Factura de un tercero que trae el correo o el teléfono de Gabriel (ej. un alquiler de vehículo del 23/11) | Gabriel presta sus datos como favor a clientes que vienen de afuera; no la paga él | No se anota nada. Si no hay un consumo que la respalde, descarta la factura con una nota; no preguntes |
 | «ALMACENES ESTUARDO SÁNCHEZ» / líneas «alessa S-rec-…» en el Pichincha de Gabriel | Pagos del crédito de Estuardo Sánchez (casa de crédito; está a nombre de Dayana, por eso sale su cédula) | Se dejan como gasto R010 personal «Pago del crédito Estuardo Sánchez»: las compras de ese crédito nunca se anotaron |
 | Albin Coy | Alumno; venta de Gabriel | R047 empresarial |
 | Transferencia a «GABRIEL PANTOJA» en BANCO DEL PACÍFICO (ahorros terminada en 5868) | Va a la cuenta «Banco del Pacífico Gabriel» (id 8785973f-7fc0-4ac7-96b4-ce6ef6e7c578), NO al Pichincha de Gabriel. La app la anota mal: corrige el destino cada vez | Paso de dinero |
