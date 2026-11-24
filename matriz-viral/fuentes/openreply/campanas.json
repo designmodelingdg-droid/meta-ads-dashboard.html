@@ -983,6 +983,13 @@
   {
    "estado": "FAILED",
    "pero_si_se_entrego": false,
+   "motivo": "MetaApiError -1: The comment you are trying to reply to, already has a reply. (/v25.0/17841404048578200/messages) [code=-1 sub=2534023 type=IGApiException trace=AlG105Zqrt4jMcxto4qGub7]",
+   "veces": 1,
+   "ultima_vez": "2026-11-24T00:42:10.767"
+  },
+  {
+   "estado": "FAILED",
+   "pero_si_se_entrego": false,
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=AFyi5b2hseCTLfHhJuY1iKO]",
    "veces": 1,
    "ultima_vez": "2026-09-30T04:07:23.164"
@@ -993,13 +1000,6 @@
    "motivo": "MetaApiError 1: An unknown error has occurred. (/v25.0/17841404048578200/messages) [code=1 sub=- type=OAuthException trace=A1ZrUqY-Wb2kHu7asF1TuAe]",
    "veces": 1,
    "ultima_vez": "2026-09-17T13:45:31.018"
-  },
-  {
-   "estado": "FAILED",
-   "pero_si_se_entrego": false,
-   "motivo": "MetaApiError -1: The comment you are trying to reply to, already has a reply. (/v25.0/17841404048578200/messages) [code=-1 sub=2534023 type=IGApiException trace=AVJbwY2wlVSg2tE2Qymhcw3]",
-   "veces": 1,
-   "ultima_vez": "2026-11-24T00:42:10.766"
   },
   {
    "estado": "FAILED",
@@ -1028,13 +1028,6 @@
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=Aneq1P9zHQrbYzyhASSOiFS]",
    "veces": 1,
    "ultima_vez": "2026-09-30T12:57:55.689"
-  },
-  {
-   "estado": "FAILED",
-   "pero_si_se_entrego": false,
-   "motivo": "MetaApiError -1: The comment you are trying to reply to, already has a reply. (/v25.0/17841404048578200/messages) [code=-1 sub=2534023 type=IGApiException trace=A5ppO_NoQ8Ox7_JMi0wGIX8]",
-   "veces": 1,
-   "ultima_vez": "2026-11-24T00:42:10.762"
   },
   {
    "estado": "FAILED",
@@ -1171,6 +1164,13 @@
   },
   {
    "estado": "FAILED",
+   "pero_si_se_entrego": false,
+   "motivo": "MetaApiError -1: The comment you are trying to reply to, already has a reply. (/v25.0/17841404048578200/messages) [code=-1 sub=2534023 type=IGApiException trace=AwXPp8ZsObD_GcNdkJfAyZ1]",
+   "veces": 1,
+   "ultima_vez": "2026-11-24T00:42:10.766"
+  },
+  {
+   "estado": "FAILED",
    "pero_si_se_entrego": true,
    "motivo": "MetaApiError 1: An unknown error has occurred. (/v25.0/17841404048578200/messages) [code=1 sub=- type=OAuthException trace=AZDnjfXD1G9U8-ueKVn7rwo]",
    "veces": 1,
@@ -1284,13 +1284,6 @@
   {
    "estado": "FAILED",
    "pero_si_se_entrego": false,
-   "motivo": "MetaApiError -1: The comment you are trying to reply to, already has a reply. (/v25.0/17841404048578200/messages) [code=-1 sub=2534023 type=IGApiException trace=ANSMXcvW77RgvUk5pT9ljEr]",
-   "veces": 1,
-   "ultima_vez": "2026-11-24T00:42:10.767"
-  },
-  {
-   "estado": "FAILED",
-   "pero_si_se_entrego": false,
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=AQeCqMzI6cHpkwiXzX4qLAW]",
    "veces": 1,
    "ultima_vez": "2026-10-06T10:18:37.858"
@@ -1308,6 +1301,13 @@
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=A3ed7dK4_Y-8zwkdGrw6rvy]",
    "veces": 1,
    "ultima_vez": "2026-09-12T00:16:38.542"
+  },
+  {
+   "estado": "FAILED",
+   "pero_si_se_entrego": false,
+   "motivo": "MetaApiError -1: The comment you are trying to reply to, already has a reply. (/v25.0/17841404048578200/messages) [code=-1 sub=2534023 type=IGApiException trace=ACbg-Pw1s60QohYmaBMjVkg]",
+   "veces": 1,
+   "ultima_vez": "2026-11-24T00:42:10.762"
   },
   {
    "estado": "SKIPPED_DEDUP",
@@ -1761,6 +1761,11 @@
    "cuenta": "design_modeling_dg",
    "fecha": "2026-11-23",
    "seguidores": 82099
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-11-24",
+   "seguidores": 82095
   }
  ],
  "workflows_ghl": {
@@ -1779,8 +1784,8 @@
      }
     ],
     "en_borrador": [],
-    "bot_total": 305,
-    "bot_nuevos_7d": 5
+    "bot_total": 308,
+    "bot_nuevos_7d": 4
    },
    "ACERO": {
     "publicados": [
@@ -1826,8 +1831,8 @@
      }
     ],
     "en_borrador": [],
-    "bot_total": 928,
-    "bot_nuevos_7d": 61
+    "bot_total": 934,
+    "bot_nuevos_7d": 64
    },
    "CHATGPT": {
     "publicados": [
@@ -1874,7 +1879,7 @@
     "bot_nuevos_7d": 0
    }
   },
-  "embudo_generado": "2026-11-23T20:13Z"
+  "embudo_generado": "2026-11-24T04:46Z"
  },
  "cotejo_con_la_matriz": [
   {
