@@ -14,7 +14,7 @@ on:
       modo:
         description: "Qué hacer"
         type: choice
-        options: [transcribir, recortar, listar, whisper, acero, silencios]
+        options: [transcribir, recortar, listar, whisper, acero, silencios, enlaces]
         default: transcribir
       tema:
         description: "transcribir · tema a buscar en los nombres (p. ej. conexiones, naves, Revit IA)"
@@ -88,7 +88,7 @@ jobs:
           retention-days: 14
 
   clips:
-    if: ${{ inputs.modo != 'whisper' && inputs.modo != 'acero' && inputs.modo != 'silencios' }}
+    if: ${{ inputs.modo != 'whisper' && inputs.modo != 'acero' && inputs.modo != 'silencios' && inputs.modo != 'enlaces' }}
     runs-on: ubuntu-latest
     timeout-minutes: 300
     steps:
@@ -205,3 +205,23 @@ jobs:
           name: acero-${{ matrix.lote }}
           path: trabajo/out/
           retention-days: 3
+
+  enlaces:
+    if: ${{ inputs.modo == 'enlaces' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q requests
+      - name: Enlaces cifrados
+        env:
+          VIMEO_TOKEN: ${{ secrets.VIMEO_TOKEN }}
+          VIDEO: ${{ inputs.video }}
+        run: python3 scripts/vimeo_enlaces.py "$VIDEO"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: enlaces
+          path: enl/
+          retention-days: 1
