@@ -32,7 +32,9 @@ M = pathlib.Path("matriz-viral/matriz")
 MESES = {"10": "octubre", "11": "noviembre", "12": "diciembre", "09": "septiembre"}
 PALABRAS_VIVAS = {"NIVEL", "ACERO", "ZAPATA", "MEMORIA", "COTIZA", "DIPLOMADO", "BIM", "IA",
                   "GUIA", "WORKSHOP", "TEMARIO", "BLACK", "COMBO",
-                  "MÁSTER"}  # GUIA: OpenReply, campaña «Guía Revit» (reel del Mié 7, cambio del 5-oct) · WORKSHOP: GHL, se monta antes del 19-oct (checklist)
+                  "MÁSTER", "NAVIDAD"}  # GUIA: OpenReply, campaña «Guía Revit» (reel del Mié 7, cambio del 5-oct) · WORKSHOP: GHL, se monta antes del 19-oct (checklist)
+# NAVIDAD: promo «Los jefes se fueron de vacaciones» (4-dic al 5-ene, plan de Dayana del 25-nov):
+# OpenReply en Instagram y GHL en las demás redes; entrega la landing de la promo.
 # MÁSTER: palabra de venta del Máster por bloques (Dayana, 23-nov: «Si quieres más información de nuestro
 # Máster por bloques, comenta MÁSTER»); el DM lleva a WhatsApp para agendar, sin precio.
 PRECIO_MASTER = re.compile(r"2[.,]?699|\$\s?499|\$\s?500\b|\$\s?160\b|12 cuotas", re.I)
