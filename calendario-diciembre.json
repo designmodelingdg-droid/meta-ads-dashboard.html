@@ -138,12 +138,27 @@
  ],
  "estrategia_comercial": {
   "slot_oferta_diciembre": {
-   "estado": "PENDIENTE: la pasa Dayana",
-   "donde": [
-    "dic-hist-1217 (historia de venta, jue 17-dic)",
-    "dic-correo-1216-acero (correo, mié 16-dic)"
+   "estado": "DEFINIDA por Dayana (25-nov): «Los jefes se fueron de vacaciones»",
+   "oferta": "40 cursos pregrabados (35 de Halloween + 5 de BIM con IA aplicada) a $46.50 cada uno, antes $154.99 (70% OFF, ahorro $108.49). Oferta directa sin cupón, curso por curso.",
+   "vigencia": "vie 4-dic al mar 5-ene, 23:59 (hora de Ecuador)",
+   "incluye": [
+    "1 mes de acceso desde la compra",
+    "nuevo Campus Design Modeling Academy (web + app Android)",
+    "certificado de Design Modeling DG S.A.S.",
+    "se puede regalar"
    ],
-   "regla": "En público solo porcentajes; precio y mini landing por WhatsApp. Ester decide precio y nombre."
+   "cuidado": [
+    "No decir «certificación Autodesk» ni microcredenciales",
+    "Escribir «Design Modeling Academy» completo, no «DMA»",
+    "Nombrar también la ingeniería estructural"
+   ],
+   "ganchos": {
+    "A · La locura": "Los jefes se fueron de vacaciones... y nosotros nos volvimos locos: cursos BIM con IA aplicada a $46.50.",
+    "B · El regalo para ti": "Tenemos un regalo especial para ti esta Navidad: cursos BIM con IA aplicada a $46.50.",
+    "C · Regálalo": "¿No sabes qué regalar esta Navidad? Regala un curso BIM con IA aplicada a $46.50."
+   },
+   "precio_en_publico": "SÍ, por decisión de Dayana (plan del 25-nov): $46.50 y $154.99 tachado van en anuncios, landing, correos y feed. El Máster sigue sin precio público.",
+   "fuente": "PDF «Campaña Navidad DM 2026» de Dayana"
   },
   "nota": "Diciembre todavía no tiene oferta (pendiente). Se vende por conversación: cada pieza de problema abre un DM con pregunta, y el bot y el equipo llevan al producto. Una venta por semana en historias (jueves 3, 10 y 17-dic y mar 5-ene).",
   "reglas": [
@@ -154,12 +169,46 @@
   ]
  },
  "publicidad": {
-  "nota": "Esta matriz no abre campañas nuevas ni inventa ofertas. Propuesta para revisar con Dayana y Olympus (confirmar con Dayana): pautar como anuncio de interacción la re-edición de «Simbología de niveles» (8-dic) y la de la zapata (2-dic), que ya probaron que conversan, con su palabra clave.",
-  "campanas": [],
+  "nota": "Diciembre lleva 3 pautas (Dayana, 25-nov): la oferta de Navidad, el Máster y Acero.",
+  "campanas": [
+   {
+    "nombre": "NAVIDAD · Los jefes se fueron de vacaciones",
+    "objetivo": "Ventas (compras si el píxel de la landing registra el evento; si no, vistas de página de destino)",
+    "presupuesto_diario": 4.0,
+    "dias": 33,
+    "total": 132.0,
+    "vigencia": "4-dic al 5-ene",
+    "publico": "1 conjunto Advantage+, países de habla hispana donde ya vendemos, 20-50 años",
+    "anuncios": "Artes A, B y C (feed 4:5 + historia 9:16) + video «los papeles por todos lados»",
+    "reglas": [
+     "11-dic: apagar los anuncios con el costo por resultado más alto",
+     "Desde el 15-dic: si el gancho C (regálalo) va bien, más peso hasta el 24"
+    ],
+    "responsable": "Fabián (sube el 3-dic; revisión cada lunes)",
+    "ventas_que_cubren_la_pauta": "4 ventas = $186",
+    "piezas": []
+   },
+   {
+    "nombre": "MÁSTER · FORM CALIFICACIÓN (continúa)",
+    "objetivo": "Leads de formulario calificados",
+    "presupuesto_diario": null,
+    "nota": "Sigue la campaña actual. Comparación larga vs corta en curso con Fabián (revisión del 30-nov). Sin precio en público.",
+    "responsable": "Fabián",
+    "piezas": []
+   },
+   {
+    "nombre": "ACERO · Especialización (continúa)",
+    "objetivo": "Conversaciones de WhatsApp / leads",
+    "presupuesto_diario": null,
+    "nota": "Sigue la campaña actual (anuncio «Acero · con voz»). Palabra ACERO con la guía gratis en los comentarios.",
+    "responsable": "Fabián",
+    "piezas": []
+   }
+  ],
   "indicaciones": [
    [
-    "Pauta de diciembre",
-    "(confirmar con Dayana / Olympus): presupuesto, campañas activas y si se pautan las re-ediciones ganadoras."
+    "Presupuesto de Máster y Acero",
+    "pendiente de confirmar con Dayana / Fabián"
    ]
   ]
  },
@@ -452,7 +501,7 @@
     "n": "G-01",
     "que": "Reel «Te devolvieron la memoria… y el cálculo estaba bien» (50-60 s, a cámara + 1 toma de pantalla de una memoria)",
     "pieza": "dic-gabriel-memoria-devuelta-reel",
-    "sale": "mié 9-dic",
+    "sale": "sáb 12-dic",
     "grabar_antes": "lun 7-dic",
     "guion": [
      "0:00-0:03 · Te devolvieron la memoria de cálculo… y el cálculo estaba bien.",
@@ -574,7 +623,7 @@
      "dic-selfie-revit-no-bim-reel",
      "ene-selfie-acero-en-enero-reel"
     ],
-    "sale": "jue 10-dic, vie 18-dic y mar 5-ene",
+    "sale": "jue 10-dic, mar 22-dic y mar 5-ene",
     "grabar_antes": "lun 7-dic",
     "guion": [
      {
@@ -804,6 +853,56 @@
      "fecha_iso": "2026-12-04",
      "hora": "2026-12-04T15:00:00Z",
      "semana": "Semana 1 (1-6 dic)",
+     "id": "nav-lanzamiento-papeles-reel",
+     "titulo": "Los jefes se fueron de vacaciones: lanzamiento",
+     "tipo": "venta",
+     "formato_publicacion": "REEL 12-15 s hecho con IA, sin caras: «los papeles por todos lados»",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "intencion": "venta",
+     "intencion_dic": "venta · campaña de Navidad",
+     "producto": "Promo de Navidad · 40 cursos a $46.50",
+     "cta": "Enlace en la bio / WhatsApp",
+     "palabra": null,
+     "canal_dm": "WhatsApp (bot de Patricio)",
+     "cta_info": null,
+     "estado": "POR DISEÑAR",
+     "nota": "Video 1 del plan de Navidad: hecho con IA, sin caras, solo manos. Música alegre de travesura. Sin Gabriel.",
+     "campana": "navidad-2026",
+     "fuera_de_cuota": true
+    },
+    {
+     "fecha": "Sáb 5 dic",
+     "fecha_iso": "2026-12-05",
+     "hora": "2026-12-05T15:00:00Z",
+     "semana": "Semana 1 (1-6 dic)",
+     "id": "nav-40-cursos-carrusel",
+     "titulo": "Los 40 cursos que entran en la promo",
+     "tipo": "venta",
+     "formato_publicacion": "CARRUSEL 8 láminas 4:5: los 40 cursos por categoría",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "intencion": "venta",
+     "intencion_dic": "venta · campaña de Navidad",
+     "producto": "Promo de Navidad · 40 cursos a $46.50",
+     "cta": "Enlace en la bio / WhatsApp",
+     "palabra": null,
+     "canal_dm": "WhatsApp (bot de Patricio)",
+     "cta_info": null,
+     "estado": "POR DISEÑAR",
+     "nota": "Nombres de los cursos tal como los pasó Dayana en el plan. Falta confirmar el nombre exacto del curso de ACC en Sharp CRM.",
+     "campana": "navidad-2026",
+     "fuera_de_cuota": true
+    },
+    {
+     "fecha": "Dom 6 dic",
+     "fecha_iso": "2026-12-06",
+     "hora": "2026-12-06T15:00:00Z",
+     "semana": "Semana 1 (1-6 dic)",
      "id": "dic-testimonio-acero-post",
      "titulo": "«Ustedes han sido una gran solución»: un alumno de Acero",
      "tipo": "testimonio",
@@ -821,7 +920,7 @@
      "canal_dm": "OpenReply",
      "cta_info": null,
      "estado": "POR DISEÑAR (testimonio guardado del 23-oct)",
-     "nota": "Testimonio GUARDADO de Acero: reel del 23-oct (De2JwdYlfH9), «Ustedes han sido una gran solución». Palabra de venta TEMARIO (DM con el temario de Acero)."
+     "nota": "Testimonio GUARDADO de Acero: reel del 23-oct (De2JwdYlfH9), «Ustedes han sido una gran solución». Palabra de venta TEMARIO (DM con el temario de Acero). · MOVIDA de «Vie 4 dic» a «Dom 6 dic» (25-nov) para dejar el día a la campaña de Navidad y tener un post diario."
     },
     {
      "fecha": "Lun 7 dic",
@@ -877,25 +976,25 @@
      "fecha_iso": "2026-12-09",
      "hora": "2026-12-09T15:00:00Z",
      "semana": "Semana 2 (7-13 dic)",
-     "id": "dic-gabriel-memoria-devuelta-reel",
-     "titulo": "Te devolvieron la memoria… y el cálculo estaba bien",
-     "tipo": "problema",
-     "formato_publicacion": "REEL (Gabriel a cámara, 50-60 s)",
+     "id": "nav-regalo-reel",
+     "titulo": "Tenemos un regalo especial para ti",
+     "tipo": "venta",
+     "formato_publicacion": "REEL 10-15 s hecho con IA, sin caras: «tu regalo de Navidad»",
      "redes": [
       "instagram",
-      "facebook",
-      "tiktok",
-      "youtube"
+      "facebook"
      ],
-     "intencion": "problema",
-     "intencion_dic": "problema",
-     "producto": "Diplomado de Cálculo Estructural",
-     "cta": "Comenta MEMORIA",
-     "palabra": "MEMORIA",
-     "canal_dm": "OpenReply",
+     "intencion": "venta",
+     "intencion_dic": "venta · campaña de Navidad",
+     "producto": "Promo de Navidad · 40 cursos a $46.50",
+     "cta": "Enlace en la bio / WhatsApp",
+     "palabra": null,
+     "canal_dm": "WhatsApp (bot de Patricio)",
      "cta_info": null,
-     "estado": "POR GRABAR (Gabriel, antes del lun 7-dic)",
-     "nota": "Gabriel a cámara (grabación G-01). Síntoma del calculista: «Te devolvieron la memoria y el cálculo estaba bien»."
+     "estado": "POR DISEÑAR",
+     "nota": "Reemplaza al video 2 con Gabriel (pendiente en el plan): Dayana pidió videos que no necesiten a Gabriel.",
+     "campana": "navidad-2026",
+     "fuera_de_cuota": true
     },
     {
      "fecha": "Jue 10 dic",
@@ -927,6 +1026,56 @@
      "fecha_iso": "2026-12-11",
      "hora": "2026-12-11T15:00:00Z",
      "semana": "Semana 2 (7-13 dic)",
+     "id": "nav-que-incluye-carrusel",
+     "titulo": "Qué incluye cada curso de la promo",
+     "tipo": "venta",
+     "formato_publicacion": "CARRUSEL 6 láminas 4:5: qué incluye la promo",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "intencion": "venta",
+     "intencion_dic": "venta · campaña de Navidad",
+     "producto": "Promo de Navidad · 40 cursos a $46.50",
+     "cta": "Enlace en la bio / WhatsApp",
+     "palabra": null,
+     "canal_dm": "WhatsApp (bot de Patricio)",
+     "cta_info": null,
+     "estado": "POR DISEÑAR",
+     "nota": "El certificado es de Design Modeling DG S.A.S.: no decir «certificación Autodesk» ni microcredenciales (plan de Dayana).",
+     "campana": "navidad-2026",
+     "fuera_de_cuota": true
+    },
+    {
+     "fecha": "Sáb 12 dic",
+     "fecha_iso": "2026-12-12",
+     "hora": "2026-12-12T15:00:00Z",
+     "semana": "Semana 2 (7-13 dic)",
+     "id": "dic-gabriel-memoria-devuelta-reel",
+     "titulo": "Te devolvieron la memoria… y el cálculo estaba bien",
+     "tipo": "problema",
+     "formato_publicacion": "REEL (Gabriel a cámara, 50-60 s)",
+     "redes": [
+      "instagram",
+      "facebook",
+      "tiktok",
+      "youtube"
+     ],
+     "intencion": "problema",
+     "intencion_dic": "problema",
+     "producto": "Diplomado de Cálculo Estructural",
+     "cta": "Comenta MEMORIA",
+     "palabra": "MEMORIA",
+     "canal_dm": "OpenReply",
+     "cta_info": null,
+     "estado": "POR GRABAR (Gabriel, antes del lun 7-dic)",
+     "nota": "Gabriel a cámara (grabación G-01). Síntoma del calculista: «Te devolvieron la memoria y el cálculo estaba bien». · MOVIDA de «Mié 9 dic» a «Sáb 12 dic» (25-nov) para dejar el día a la campaña de Navidad y tener un post diario."
+    },
+    {
+     "fecha": "Dom 13 dic",
+     "fecha_iso": "2026-12-13",
+     "hora": "2026-12-13T15:00:00Z",
+     "semana": "Semana 2 (7-13 dic)",
      "id": "dic-honorarios-revisiones-carrusel",
      "titulo": "Ganaste el proyecto y perdiste plata en la tercera revisión",
      "tipo": "problema",
@@ -944,31 +1093,32 @@
      "canal_dm": "OpenReply",
      "cta_info": "TEMARIO",
      "estado": "POR DISEÑAR",
-     "nota": "Síntoma del consultor independiente. Sale el viernes para no pegar 3 videos seguidos. + VENTA SUAVE: «comenta TEMARIO»."
+     "nota": "Síntoma del consultor independiente. Sale el viernes para no pegar 3 videos seguidos. + VENTA SUAVE: «comenta TEMARIO». · MOVIDA de «Vie 11 dic» a «Dom 13 dic» (25-nov) para dejar el día a la campaña de Navidad y tener un post diario."
     },
     {
      "fecha": "Lun 14 dic",
      "fecha_iso": "2026-12-14",
      "hora": "2026-12-14T15:00:00Z",
      "semana": "Semana 3 (14-20 dic)",
-     "id": "dic-deflexiones-l360-carrusel",
-     "titulo": "L/360, L/240 o L/180: ¿cuál le toca a cada elemento?",
-     "tipo": "solución",
-     "formato_publicacion": "CARRUSEL (8 láminas, 4:5)",
+     "id": "nav-fragmento-clase-1-reel",
+     "titulo": "Así se ve por dentro un curso de la promo",
+     "tipo": "venta",
+     "formato_publicacion": "REEL 30-45 s: fragmento de una clase real de un curso de la promo",
      "redes": [
       "instagram",
-      "facebook",
-      "threads"
+      "facebook"
      ],
-     "intencion": "solución",
-     "intencion_dic": "referencia",
-     "producto": "Especialización en Acero con Tutor IA",
-     "cta": "Comenta ACERO",
-     "palabra": "ACERO",
-     "canal_dm": "OpenReply",
+     "intencion": "venta",
+     "intencion_dic": "venta · campaña de Navidad",
+     "producto": "Promo de Navidad · 40 cursos a $46.50",
+     "cta": "Enlace en la bio / WhatsApp",
+     "palabra": null,
+     "canal_dm": "WhatsApp (bot de Patricio)",
      "cta_info": null,
      "estado": "POR DISEÑAR",
-     "nota": "Referencia comparativa (IBC 2021, tabla 1604.3). Regla 0."
+     "nota": "Sale de los clips de clases de Vimeo (skill clips-clases-vimeo). Sin grabación nueva.",
+     "campana": "navidad-2026",
+     "fuera_de_cuota": true
     },
     {
      "fecha": "Mar 15 dic",
@@ -1000,25 +1150,25 @@
      "fecha_iso": "2026-12-16",
      "hora": "2026-12-16T15:00:00Z",
      "semana": "Semana 3 (14-20 dic)",
-     "id": "dic-ws-clip-niveles-duplicados-reel",
-     "titulo": "La IA encontró 3 niveles a la misma altura",
-     "tipo": "problema",
-     "formato_publicacion": "REEL (clip del workshop 17-nov, 9:16)",
+     "id": "nav-que-curso-te-toca-post",
+     "titulo": "¿Qué curso te toca? Arquitecto, ingeniero civil o dibujante",
+     "tipo": "venta",
+     "formato_publicacion": "POST 1 imagen 4:5: ¿qué curso te toca?",
      "redes": [
       "instagram",
-      "facebook",
-      "tiktok",
-      "youtube"
+      "facebook"
      ],
-     "intencion": "problema",
-     "intencion_dic": "problema",
-     "producto": "Máster BIM Management + IA por bloques (solo se invita a agendar; nunca precio)",
-     "cta": "Comenta NIVEL",
-     "palabra": "NIVEL",
-     "canal_dm": "OpenReply",
+     "intencion": "venta",
+     "intencion_dic": "venta · campaña de Navidad",
+     "producto": "Promo de Navidad · 40 cursos a $46.50",
+     "cta": "Enlace en la bio / WhatsApp",
+     "palabra": null,
+     "canal_dm": "WhatsApp (bot de Patricio)",
      "cta_info": null,
-     "estado": "BORRADOR editado (18-nov): falta subtitular, escuchar el audio completo y cambiar el cierre a la pregunta",
-     "nota": "Clip del workshop (brief 4b). El único de los 4 con síntoma; falta subtitular y escuchar el audio."
+     "estado": "POR DISEÑAR",
+     "nota": "",
+     "campana": "navidad-2026",
+     "fuera_de_cuota": true
     },
     {
      "fecha": "Jue 17 dic",
@@ -1049,6 +1199,105 @@
      "fecha_iso": "2026-12-18",
      "hora": "2026-12-18T15:00:00Z",
      "semana": "Semana 3 (14-20 dic)",
+     "id": "nav-regala-carrusel",
+     "titulo": "Regala un curso: cómo comprarlo para otra persona",
+     "tipo": "venta",
+     "formato_publicacion": "CARRUSEL 6 láminas 4:5: regala un curso",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "intencion": "venta",
+     "intencion_dic": "venta · campaña de Navidad",
+     "producto": "Promo de Navidad · 40 cursos a $46.50",
+     "cta": "Enlace en la bio / WhatsApp",
+     "palabra": null,
+     "canal_dm": "WhatsApp (bot de Patricio)",
+     "cta_info": null,
+     "estado": "POR DISEÑAR",
+     "nota": "Gancho C (regálalo). Desde el 15-dic este gancho gana peso en pauta si funciona.",
+     "campana": "navidad-2026",
+     "fuera_de_cuota": true
+    },
+    {
+     "fecha": "Sáb 19 dic",
+     "fecha_iso": "2026-12-19",
+     "hora": "2026-12-19T15:00:00Z",
+     "semana": "Semana 3 (14-20 dic)",
+     "id": "dic-deflexiones-l360-carrusel",
+     "titulo": "L/360, L/240 o L/180: ¿cuál le toca a cada elemento?",
+     "tipo": "solución",
+     "formato_publicacion": "CARRUSEL (8 láminas, 4:5)",
+     "redes": [
+      "instagram",
+      "facebook",
+      "threads"
+     ],
+     "intencion": "solución",
+     "intencion_dic": "referencia",
+     "producto": "Especialización en Acero con Tutor IA",
+     "cta": "Comenta ACERO",
+     "palabra": "ACERO",
+     "canal_dm": "OpenReply",
+     "cta_info": null,
+     "estado": "POR DISEÑAR",
+     "nota": "Referencia comparativa (IBC 2021, tabla 1604.3). Regla 0. · MOVIDA de «Lun 14 dic» a «Sáb 19 dic» (25-nov) para dejar el día a la campaña de Navidad y tener un post diario."
+    },
+    {
+     "fecha": "Dom 20 dic",
+     "fecha_iso": "2026-12-20",
+     "hora": "2026-12-20T15:00:00Z",
+     "semana": "Semana 3 (14-20 dic)",
+     "id": "dic-ws-clip-niveles-duplicados-reel",
+     "titulo": "La IA encontró 3 niveles a la misma altura",
+     "tipo": "problema",
+     "formato_publicacion": "REEL (clip del workshop 17-nov, 9:16)",
+     "redes": [
+      "instagram",
+      "facebook",
+      "tiktok",
+      "youtube"
+     ],
+     "intencion": "problema",
+     "intencion_dic": "problema",
+     "producto": "Máster BIM Management + IA por bloques (solo se invita a agendar; nunca precio)",
+     "cta": "Comenta NIVEL",
+     "palabra": "NIVEL",
+     "canal_dm": "OpenReply",
+     "cta_info": null,
+     "estado": "BORRADOR editado (18-nov): falta subtitular, escuchar el audio completo y cambiar el cierre a la pregunta",
+     "nota": "Clip del workshop (brief 4b). El único de los 4 con síntoma; falta subtitular y escuchar el audio. · MOVIDA de «Mié 16 dic» a «Dom 20 dic» (25-nov) para dejar el día a la campaña de Navidad y tener un post diario."
+    },
+    {
+     "fecha": "Lun 21 dic",
+     "fecha_iso": "2026-12-21",
+     "hora": "2026-12-21T15:00:00Z",
+     "semana": "Semana 4 (21-27 dic) · fiestas",
+     "id": "nav-equipo-escondido-reel",
+     "titulo": "El equipo se esconde de los jefes",
+     "tipo": "venta",
+     "formato_publicacion": "REEL 10-15 s hecho con IA, sin caras: el equipo «escondiéndose» de los jefes",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "intencion": "venta",
+     "intencion_dic": "venta · campaña de Navidad",
+     "producto": "Promo de Navidad · 40 cursos a $46.50",
+     "cta": "Enlace en la bio / WhatsApp",
+     "palabra": null,
+     "canal_dm": "WhatsApp (bot de Patricio)",
+     "cta_info": null,
+     "estado": "POR DISEÑAR",
+     "nota": "Hecho con IA, sin caras.",
+     "campana": "navidad-2026",
+     "fuera_de_cuota": true
+    },
+    {
+     "fecha": "Mar 22 dic",
+     "fecha_iso": "2026-12-22",
+     "hora": "2026-12-22T15:00:00Z",
+     "semana": "Semana 4 (21-27 dic) · fiestas",
      "id": "dic-selfie-revit-no-bim-reel",
      "titulo": "Sabes Revit, pero no sabes BIM",
      "tipo": "problema",
@@ -1067,31 +1316,7 @@
      "canal_dm": "OpenReply",
      "cta_info": "MÁSTER",
      "estado": "POR GRABAR (selfie, antes del lun 7-dic)",
-     "nota": "REEL SELFIE (G-06b). Síntoma: «Sabes Revit, pero no sabes BIM». NIVEL + VENTA SUAVE «comenta MÁSTER». Semana de 5 piezas por el pedido de selfies."
-    },
-    {
-     "fecha": "Lun 21 dic",
-     "fecha_iso": "2026-12-21",
-     "hora": "2026-12-21T15:00:00Z",
-     "semana": "Semana 4 (21-27 dic) · fiestas",
-     "id": "dic-doble-trabajo-autocad-excel-carrusel",
-     "titulo": "Haces todo dos veces: el plano en AutoCAD y las cantidades en Excel",
-     "tipo": "problema",
-     "formato_publicacion": "CARRUSEL (7 láminas, 4:5)",
-     "redes": [
-      "instagram",
-      "facebook",
-      "threads"
-     ],
-     "intencion": "problema",
-     "intencion_dic": "problema",
-     "producto": "Máster por bloques · Bloque 1 BIM Professional (agendar; nunca precio)",
-     "cta": "Comenta BIM",
-     "palabra": "BIM",
-     "canal_dm": "OpenReply",
-     "cta_info": null,
-     "estado": "POR DISEÑAR",
-     "nota": "RITMO DE FIESTAS (2 por semana). Síntoma del contratista con AutoCAD + Excel."
+     "nota": "REEL SELFIE (G-06b). Síntoma: «Sabes Revit, pero no sabes BIM». NIVEL + VENTA SUAVE «comenta MÁSTER». Semana de 5 piezas por el pedido de selfies. · MOVIDA de «Vie 18 dic» a «Mar 22 dic» (25-nov) para dejar el día a la campaña de Navidad y tener un post diario."
     },
     {
      "fecha": "Mié 23 dic",
@@ -1119,6 +1344,31 @@
      "nota": "RE-EDICIÓN del 19-oct (Der2lsgjwu5, 103 comentarios) con gancho nuevo. Pieza de guardado antes de Navidad, sin venta."
     },
     {
+     "fecha": "Jue 24 dic",
+     "fecha_iso": "2026-12-24",
+     "hora": "2026-12-24T15:00:00Z",
+     "semana": "Semana 4 (21-27 dic) · fiestas",
+     "id": "nav-nochebuena-post",
+     "titulo": "Feliz Nochebuena y ¿te falta un regalo?",
+     "tipo": "venta",
+     "formato_publicacion": "POST 1 imagen 4:5: Feliz Nochebuena + ¿te falta un regalo?",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "intencion": "venta",
+     "intencion_dic": "venta · campaña de Navidad",
+     "producto": "Promo de Navidad · 40 cursos a $46.50",
+     "cta": "Enlace en la bio / WhatsApp",
+     "palabra": null,
+     "canal_dm": "WhatsApp (bot de Patricio)",
+     "cta_info": null,
+     "estado": "POR DISEÑAR",
+     "nota": "",
+     "campana": "navidad-2026",
+     "fuera_de_cuota": true
+    },
+    {
      "fecha": "Vie 25 dic",
      "fecha_iso": "2026-12-25",
      "hora": "2026-12-25T15:00:00Z",
@@ -1144,9 +1394,83 @@
      "fuera_de_cuota": true
     },
     {
+     "fecha": "Sáb 26 dic",
+     "fecha_iso": "2026-12-26",
+     "hora": "2026-12-26T15:00:00Z",
+     "semana": "Semana 4 (21-27 dic) · fiestas",
+     "id": "dic-doble-trabajo-autocad-excel-carrusel",
+     "titulo": "Haces todo dos veces: el plano en AutoCAD y las cantidades en Excel",
+     "tipo": "problema",
+     "formato_publicacion": "CARRUSEL (7 láminas, 4:5)",
+     "redes": [
+      "instagram",
+      "facebook",
+      "threads"
+     ],
+     "intencion": "problema",
+     "intencion_dic": "problema",
+     "producto": "Máster por bloques · Bloque 1 BIM Professional (agendar; nunca precio)",
+     "cta": "Comenta BIM",
+     "palabra": "BIM",
+     "canal_dm": "OpenReply",
+     "cta_info": null,
+     "estado": "POR DISEÑAR",
+     "nota": "RITMO DE FIESTAS (2 por semana). Síntoma del contratista con AutoCAD + Excel. · MOVIDA de «Lun 21 dic» a «Sáb 26 dic» (25-nov) para dejar el día a la campaña de Navidad y tener un post diario."
+    },
+    {
+     "fecha": "Dom 27 dic",
+     "fecha_iso": "2026-12-27",
+     "hora": "2026-12-27T15:00:00Z",
+     "semana": "Semana 4 (21-27 dic) · fiestas",
+     "id": "dic-ws-short-s3-reel",
+     "titulo": "Así se conecta ChatGPT a Revit (pyRevit + MCP de código abierto)",
+     "tipo": "problema",
+     "formato_publicacion": "REEL vertical del workshop (ya editado como Short de YouTube)",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "intencion": "problema",
+     "intencion_dic": "problema",
+     "producto": "Máster BIM + IA por bloques",
+     "cta": "Comenta NIVEL",
+     "palabra": "NIVEL",
+     "canal_dm": "OpenReply",
+     "cta_info": null,
+     "estado": "VIDEO LISTO",
+     "nota": "Video ya editado del workshop del 17-nov (s3-conectar-chatgpt), subido a la app. Se publica como reel en Instagram y Facebook para cubrir el día. Sin Gabriel nuevo.",
+     "campana": "navidad-2026",
+     "fuera_de_cuota": true
+    },
+    {
      "fecha": "Lun 28 dic",
      "fecha_iso": "2026-12-28",
      "hora": "2026-12-28T15:00:00Z",
+     "semana": "Semana 5 (28 dic-3 ene) · fiestas",
+     "id": "nav-fragmento-clase-2-reel",
+     "titulo": "Otra clase por dentro: cimentaciones",
+     "tipo": "venta",
+     "formato_publicacion": "REEL 30-45 s: fragmento de otra clase real (cimentaciones)",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "intencion": "venta",
+     "intencion_dic": "venta · campaña de Navidad",
+     "producto": "Promo de Navidad · 40 cursos a $46.50",
+     "cta": "Enlace en la bio / WhatsApp",
+     "palabra": null,
+     "canal_dm": "WhatsApp (bot de Patricio)",
+     "cta_info": null,
+     "estado": "POR DISEÑAR",
+     "nota": "Clip de Vimeo (cimentaciones o naves industriales). Sin grabación nueva.",
+     "campana": "navidad-2026",
+     "fuera_de_cuota": true
+    },
+    {
+     "fecha": "Mar 29 dic",
+     "fecha_iso": "2026-12-29",
+     "hora": "2026-12-29T15:00:00Z",
      "semana": "Semana 5 (28 dic-3 ene) · fiestas",
      "id": "dic-coordinar-sin-saber-carrusel",
      "titulo": "Te pidieron coordinar y nadie te enseñó a dirigir una reunión de interferencias",
@@ -1165,7 +1489,7 @@
      "canal_dm": "OpenReply",
      "cta_info": "MÁSTER",
      "estado": "POR DISEÑAR",
-     "nota": "RITMO DE FIESTAS. Síntoma del que le piden coordinar. + VENTA SUAVE: «comenta MÁSTER»."
+     "nota": "RITMO DE FIESTAS. Síntoma del que le piden coordinar. + VENTA SUAVE: «comenta MÁSTER». · MOVIDA de «Lun 28 dic» a «Mar 29 dic» (25-nov) para dejar el día a la campaña de Navidad y tener un post diario."
     },
     {
      "fecha": "Mié 30 dic",
@@ -1217,10 +1541,35 @@
      "fuera_de_cuota": true
     },
     {
-     "fecha": "Lun 4 ene",
-     "fecha_iso": "2027-01-04",
-     "hora": "2027-01-04T15:00:00Z",
-     "semana": "Semana 6 (4-6 ene) · regreso",
+     "fecha": "Vie 1 ene",
+     "fecha_iso": "2027-01-01",
+     "hora": "2027-01-01T15:00:00Z",
+     "semana": "Semana 5 (28 dic-3 ene) · fiestas",
+     "id": "nav-ano-nuevo-post",
+     "titulo": "Año nuevo, curso nuevo",
+     "tipo": "venta",
+     "formato_publicacion": "POST 1 imagen 4:5: año nuevo, curso nuevo (quedan pocos días)",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "intencion": "venta",
+     "intencion_dic": "venta · campaña de Navidad",
+     "producto": "Promo de Navidad · 40 cursos a $46.50",
+     "cta": "Enlace en la bio / WhatsApp",
+     "palabra": null,
+     "canal_dm": "WhatsApp (bot de Patricio)",
+     "cta_info": null,
+     "estado": "POR DISEÑAR",
+     "nota": "El plan de Dayana ponía «Último del año: quedan 5 días» el 31-dic; ese día ya sale el post de fin de año (pregunta para 2027), así que el aviso pasa al 1-ene.",
+     "campana": "navidad-2026",
+     "fuera_de_cuota": true
+    },
+    {
+     "fecha": "Sáb 2 ene",
+     "fecha_iso": "2027-01-02",
+     "hora": "2027-01-02T15:00:00Z",
+     "semana": "Semana 5 (28 dic-3 ene) · fiestas",
      "id": "ene-obj-cursos-no-sirvieron-post",
      "titulo": "«Hice tres cursos de Revit y sigo sin poder entregar un proyecto»",
      "tipo": "objeción",
@@ -1238,7 +1587,57 @@
      "canal_dm": "OpenReply",
      "cta_info": null,
      "estado": "POR DISEÑAR",
-     "nota": "REGRESO. Objeción «ya hice cursos» → probar el módulo gratis (DIPLOMADO). El Diplomado BIM es grabado: «empiezas hoy». Cita guardada de Jorge Aguirre."
+     "nota": "REGRESO. Objeción «ya hice cursos» → probar el módulo gratis (DIPLOMADO). El Diplomado BIM es grabado: «empiezas hoy». Cita guardada de Jorge Aguirre. · MOVIDA de «Lun 4 ene» a «Sáb 2 ene» (25-nov) para dejar el día a la campaña de Navidad y tener un post diario."
+    },
+    {
+     "fecha": "Dom 3 ene",
+     "fecha_iso": "2027-01-03",
+     "hora": "2027-01-03T15:00:00Z",
+     "semana": "Semana 5 (28 dic-3 ene) · fiestas",
+     "id": "dic-ws-short-s4-reel",
+     "titulo": "Conecté Claude a mi modelo de Revit con NonicaTab",
+     "tipo": "problema",
+     "formato_publicacion": "REEL vertical del workshop (ya editado como Short de YouTube)",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "intencion": "problema",
+     "intencion_dic": "problema",
+     "producto": "Máster BIM + IA por bloques",
+     "cta": "Comenta NIVEL",
+     "palabra": "NIVEL",
+     "canal_dm": "OpenReply",
+     "cta_info": null,
+     "estado": "VIDEO LISTO",
+     "nota": "Video ya editado del workshop del 17-nov (s4-claude-revit), subido a la app. Se publica como reel en Instagram y Facebook para cubrir el día. Sin Gabriel nuevo.",
+     "campana": "navidad-2026",
+     "fuera_de_cuota": true
+    },
+    {
+     "fecha": "Lun 4 ene",
+     "fecha_iso": "2027-01-04",
+     "hora": "2027-01-04T15:00:00Z",
+     "semana": "Semana 6 (4-6 ene) · regreso",
+     "id": "nav-jefes-vuelven-post",
+     "titulo": "Los jefes vuelven mañana",
+     "tipo": "venta",
+     "formato_publicacion": "POST 1 imagen 4:5: «Los jefes vuelven mañana»",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "intencion": "venta",
+     "intencion_dic": "venta · campaña de Navidad",
+     "producto": "Promo de Navidad · 40 cursos a $46.50",
+     "cta": "Enlace en la bio / WhatsApp",
+     "palabra": null,
+     "canal_dm": "WhatsApp (bot de Patricio)",
+     "cta_info": null,
+     "estado": "POR DISEÑAR",
+     "nota": "",
+     "campana": "navidad-2026",
+     "fuera_de_cuota": true
     },
     {
      "fecha": "Mar 5 ene",
@@ -2479,7 +2878,8 @@
   "Palabra de venta ESTRUCTURAS para la historia del jue 17-dic: la contesta una persona, como NAVES en noviembre (confirmar con Dayana o cambiar por la que prefiera).",
   "Permiso para contar el caso del alumno de los ratios de 1,4 (reel del 15-dic) y caso real de Gabriel para el reel de la memoria (confirmar con Dayana / Gabriel).",
   "Horario de atención del equipo del 24 al 25-dic y del 31-dic al 1-ene (historia del 18-dic) (confirmar con Dayana).",
-  "LinkedIn (Dayana, 23-nov): las 6 publicaciones de este grupo se reemplazan por las 8 de la investigación de LinkedIn cuando Dayana las apruebe en la página de aprobación. Gabriel verifica contra la norma las cifras de cuantía del post del 9-dic antes de publicarlo."
+  "LinkedIn (Dayana, 23-nov): las 6 publicaciones de este grupo se reemplazan por las 8 de la investigación de LinkedIn cuando Dayana las apruebe en la página de aprobación. Gabriel verifica contra la norma las cifras de cuantía del post del 9-dic antes de publicarlo.",
+  "Navidad: confirmar enlace de la landing de compra (Ester, 2-dic) para cambiar «enlace en la bio» por el enlace real en la bio y en los correos; confirmar el nombre exacto del curso de ACC en Sharp CRM."
  ],
  "resumen_cierre": "Diciembre-enero: 21 piezas de feed (12 de problema, 4 de referencia comparativa y 5 de venta), 4 re-ediciones de reels ganadores, 2 reels nuevos de Gabriel, 1 clip del workshop, 3 reels selfie, 2 saludos de marca (Navidad y 31-dic), 4 videos largos de YouTube, 23 días de historias (4 de venta, 6 con Gabriel), 6 posts de comunidades, 6 de LinkedIn, 4 blogs y 6 correos. Cada pieza del feed trae su embudo completo. Sin promos inventadas.",
  "pie": "Design Modeling Academy · Matriz de contenido diciembre 2026 (1 dic – 6 ene 2027) · métricas reales de Meta Graph API (matriz.json, 20-nov) y brief de contenido sintomático."
