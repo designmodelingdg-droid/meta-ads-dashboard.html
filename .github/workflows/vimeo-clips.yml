@@ -219,6 +219,7 @@ jobs:
         env:
           VIMEO_TOKEN: ${{ secrets.VIMEO_TOKEN }}
           VIDEO: ${{ inputs.video }}
+          ALTO: "720"
         run: python3 scripts/vimeo_enlaces.py "$VIDEO"
       - uses: actions/upload-artifact@v4
         with:

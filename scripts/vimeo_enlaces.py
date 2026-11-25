@@ -10,6 +10,8 @@ def mejor(v):
         l, h = f.get('link'), f.get('height') or 0
         if l and h in (1080, 720) and (f.get('type', 'video/mp4') == 'video/mp4' or '.mp4' in l):
             c.append((-h, l, h, f.get('size') or 0, f.get('expires') or f.get('link_expiration_time') or ''))
+    pref = int(os.environ.get('ALTO') or 0)
+    if pref and any(x[2] == pref for x in c): c = [x for x in c if x[2] == pref]
     c.sort()
     return c[0][1:] if c else (None, 0, 0, '')
 
