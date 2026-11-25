@@ -1,8 +1,8 @@
 # Inventario de correos — GoHighLevel
 
-Generado el 2026-11-16.
+Generado el 2026-11-20.
 
-**468 plantillas** en **57 carpetas**. 468 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
+**470 plantillas** en **57 carpetas**. 470 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
 
 > Lo que NO sale por API: que workflow usa que plantilla. El endpoint de automatizaciones devuelve solo metadatos. En esta cuenta las plantillas estan nombradas por su flujo, asi que el cruce se puede hacer leyendo.
 
@@ -9943,6 +9943,43 @@ designmodelingacademy.com
 
 ## ✅ ACCESO COMUNIDAD INSCRITOS
 
+### ✅Acceso Campus - General
+
+- **id:** `6afb39e631e0f04d2fa862d8`
+- **tipo:** html
+- **actualizada:** 2026-11-16T17:28:34.369Z
+- **Cuerpo:**
+
+```
+Marketing -> Correos -> Plantillas -> Code Editor (Ctrl+A, Ctrl+V)
+Variables: contact.first_name y el enlace de baja del pie
+-->
+Entra al campus y empieza hoy mismo.
+&#9989; Compra confirmada
+Gracias por tu compra, ya tienes acceso al campus
+Hola {{contact.first_name}} &#128075;
+Gracias por confiar en Design Modeling Academy . Tu compra qued&oacute; registrada y ya puedes entrar al campus para empezar.
+Ah&iacute; encuentras tus clases, el material descargable y tu avance, todo en un solo lugar.
+Entrar al campus &#8594;
+campus.designmodelingacademy.com
+Para empezar
+1
+Entra al campus con el bot&oacute;n de arriba.
+2
+Inicia sesi&oacute;n con el mismo correo con el que hiciste tu compra .
+3
+Abre tu programa y empieza por la primera lecci&oacute;n.
+&#128161; Guarda este correo: aqu&iacute; tienes siempre a mano el enlace del campus.
+&iquest;No puedes entrar o tienes alguna duda?
+Escr&iacute;benos por WhatsApp y te ayudamos con tu acceso.
+Escribir por WhatsApp
+Te damos la bienvenida,
+Equipo Design Modeling
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
 ### ✅Acceso Comunidad - Colección Autodesk + IA
 
 - **id:** `6a75eff196dc697014d6db84`
@@ -9993,7 +10030,7 @@ designmodelingacademy.com
 
 - **id:** `6a75ef5f75d3d22c319df737`
 - **tipo:** html
-- **actualizada:** 2026-09-03T19:19:31.960Z
+- **actualizada:** 2026-11-16T17:06:53.499Z
 - **Cuerpo:**
 
 ```
@@ -10613,6 +10650,74 @@ Material descargable
 &#128197; Solo del viernes 30 de octubre al domingo 1 de noviembre
 VER LOS 35 CURSOS &#8594;
 &iquest;DUDAS? ESCR&Iacute;BENOS
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅BF 03 Inscritos acceso prioritario
+
+- **id:** `6afcaaa45ddb9dde6e7e9356`
+- **tipo:** html
+- **actualizada:** 2026-11-17T19:28:42.447Z
+- **Cuerpo:**
+
+```
+Marketing -> Correos -> Plantillas -> Code Editor (Ctrl+A, Ctrl+V)
+Variables: contact.first_name y el enlace de baja del pie
+-->
+Para ti se abre el jueves 26 a las 00:00, un d&iacute;a antes que para todos.
+&#127873; Acceso anticipado para alumnos &middot; Se abre el jueves 26 de noviembre, 00:00
+&#128197; 26 &ndash; 30 NOV
+&#127891; 62 programas
+&#128279; Sin c&oacute;digo
+&#127873; Regalo para alumnos
+BLACK FRIDAY
+ADELANTADO PARA TI
+hasta 50% OFF
+Por estar inscrito en nuestros cursos, para ti el Black Friday se abre el jueves 26 a las 00:00 , un d&iacute;a antes que para todos. Sin cupones.
+&#9733; Cursos &minus;50% &#9733; Autodesk + IA &minus;50% &#9733; Especializaciones &minus;40% &#9733; Diplomados &minus;40% &#9733; M&aacute;ster por bloques &minus;25% &#9733;
+&#127873; Solo para alumnos DMA
+Te tenemos un regalo: tu Black Friday llega adelantado
+Hola {{contact.first_name}} ,
+Por ser parte de Design Modeling Academy queremos que seas de los primeros. El Black Friday abre para todos el viernes 27, pero para ti se abre el jueves 26 de noviembre a las 00:00 (hora de Ecuador).
+Tienes un d&iacute;a completo de ventaja para elegir con calma tu siguiente curso, especializaci&oacute;n, diplomado o bloque del M&aacute;ster, con el descuento ya aplicado:
+50 %
+OFF
+Cursos y Autodesk + IA
+Formaci&oacute;n puntual con certificado
+40 %
+OFF
+Especializaciones y Diplomados
+Rutas completas por &aacute;rea
+25 %
+OFF
+M&aacute;ster BIM + IA por bloques
+Cada uno de los 4 bloques
+&#9889; Sin c&oacute;digos: el precio ya viene con el descuento aplicado en 62 programas . Entras, eliges y pagas.
+fin: 26/11/2026 00:00 (apertura para alumnos), zona America/Guayaquil (GMT-5),
+fondo #0C0C0E, numeros #FFFFFF, etiquetas #A1A1AA (acento rojo #E3121B), textos: Dias / Horas / Min / Seg.
+2) Copia la URL de la imagen que te da y pegala en TIMER_GIF_URL (abajo).
+3) Quita las marcas de comentario que rodean la etiqueta img de la OPCION A y borra el bloque OPCION B.
+OPCION B (activa por defecto): cierre fijo en cajas tipo contador. Funciona en todos los correos.
+-->
+&#9201;&#65039; Tu acceso anticipado se abre el
+-->
+JUE
+D&iacute;a
+26
+Nov
+00:00
+Hora
+ECU
+GMT-5
+&#128197; Para ti: del jueves 26 de noviembre (00:00) al lunes 30 de noviembre (23:59), hora de Ecuador.
+Para el p&uacute;blico general abre el viernes 27.
+ENTRAR A MI BLACK FRIDAY &#8594;
+Guarda este correo: el bot&oacute;n te lleva directo a los descuentos desde el jueves 26 a las 00:00.
+P.D. Es nuestra forma de agradecerte por confiar en nosotros. Aprov&eacute;chalo antes de que se abra para todos.
+Un saludo,
+Equipo Design Modeling
 Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
 designmodelingacademy.com
 {{unsubscribe_url}}
@@ -14395,7 +14500,7 @@ designmodelingacademy.com
 
 - **id:** `6aa30452083b31666d018660`
 - **tipo:** html
-- **actualizada:** 2026-11-10T16:12:07.298Z
+- **actualizada:** 2026-11-18T20:50:00.935Z
 - **Cuerpo:**
 
 ```
@@ -14418,11 +14523,6 @@ Cada error trae la instrucci&oacute;n exacta para la IA. Cambia solo el dato de 
 03
 Verifica antes de aplicar
 La IA propone la causa; t&uacute; confirmas en el modelo. Ese paso no se salta.
-Tambi&eacute;n es gratis
-&Uacute;nete a la Comunidad Design Premium
-Masterclasses en vivo, plantillas descargables y networking con ingenieros y arquitectos
-de toda Latinoam&eacute;rica. Sin costo y sin tarjeta.
-Entrar gratis a la Comunidad &#8594;
 &iquest;No se abre o no encuentras el archivo?
 Revisa primero las carpetas de spam y promociones. Si aun as&iacute; no aparece, escr&iacute;benos y te lo reenviamos al instante.
 Escribir por WhatsApp
@@ -14435,7 +14535,7 @@ designmodelingacademy.com
 
 - **id:** `6a8f32c54867309f6fb3a862`
 - **tipo:** html
-- **actualizada:** 2026-11-10T16:10:53.654Z
+- **actualizada:** 2026-11-18T20:58:59.625Z
 - **Cuerpo:**
 
 ```
@@ -14451,8 +14551,8 @@ Hola {{contact.first_name}} ,
 Gracias por registrarte. Ya tienes acceso a Las 5 verificaciones en acero que no puedes saltarte : el perfil pasa por resistencia y aun as&iacute; la estructura falla, se mueve o cuesta el doble de lo que deb&iacute;a.
 Y junto a la gu&iacute;a, el verificador de eficiencia: &iquest;cu&aacute;nto acero est&aacute;s pagando de m&aacute;s? Sobredimensionar no es ir por el lado seguro. Es no haber revisado.
 Abrir las 5 verificaciones en acero &#8594;
-Sin costo &middot; se abre en tu comunidad DMA
-&iquest;Cu&aacute;nto acero est&aacute;s pagando de m&aacute;s?
+Sin costo &middot; se abre en el campus DMA
+&iquest;Cu&aacute;nto acero est&aacute;s pagando de m&aacute;s? &#8594;
 Lo que acabas de desbloquear
 Cinco verificaciones, cada una con su cl&aacute;usula de norma.
 01 Pandeo local
@@ -14467,15 +14567,10 @@ L&eacute;elo completo hoy
 Son cinco puntos concretos, no un tratado. Rev&iacute;salos de corrido y qu&eacute;date con el criterio y la cl&aacute;usula de cada verificaci&oacute;n.
 02
 Tenlo a mano al revisar
-Ábrelo cuando revises un modelo o recibas un plano de taller. Queda guardado en tu comunidad DMA, as&iacute; que lo recuperas desde cualquier equipo.
+Ábrelo cuando revises un modelo o recibas un plano de taller. Queda guardado en el campus DMA, as&iacute; que lo recuperas desde cualquier equipo.
 03
 Apl&iacute;calo a tu proyecto actual
 Pasa las cinco verificaciones sobre la estructura que tengas abierta hoy. Si alguna no cierra, ya sabes d&oacute;nde mirar.
-Tambi&eacute;n es gratis
-&Uacute;nete a la Comunidad Design Premium
-Masterclasses en vivo, plantillas descargables y networking con ingenieros y arquitectos
-de toda Latinoam&eacute;rica. Sin costo y sin tarjeta.
-Entrar gratis a la Comunidad &#8594;
 &iquest;No se abre o no encuentras el acceso?
 Revisa primero las carpetas de spam y promociones. Si aun as&iacute; no aparece,
 escr&iacute;benos y te damos el acceso al instante.
@@ -14492,7 +14587,7 @@ designmodelingacademy.com
 
 - **id:** `6a8738c92da68428c02c9971`
 - **tipo:** html
-- **actualizada:** 2026-11-10T16:09:59.477Z
+- **actualizada:** 2026-11-18T20:49:40.566Z
 - **Cuerpo:**
 
 ```
@@ -14507,7 +14602,7 @@ Calculadora de Zapata Aislada
 Hola {{contact.first_name}} ,
 Gracias por registrarte. Ya tienes acceso a la Calculadora de Zapata Aislada : dimensiona y verifica tu zapata paso a paso &mdash; presiones, cortante, punzonamiento y acero.
 Abrir la Calculadora de Zapata Aislada &#8594;
-Se abre en tu comunidad DMA &middot; sin costo y sin tarjeta
+Se abre en el campus DMA &middot; sin costo y sin tarjeta
 Tres pasos para sacarle provecho
 La mayor&iacute;a se registra y nunca la usa. Estos tres pasos son la diferencia.
 01
@@ -14519,11 +14614,6 @@ A&ntilde;ade el enlace a favoritos o a la pantalla de inicio del tel&eacute;fono
 03
 Contrasta el resultado
 Compara la primera corrida con un c&aacute;lculo que ya tengas verificado. Una vez que conf&iacute;as en la herramienta, el ahorro de tiempo es real.
-Tambi&eacute;n es gratis
-&Uacute;nete a la Comunidad Design Premium
-Masterclasses en vivo, plantillas descargables y networking con ingenieros y arquitectos
-de toda Latinoam&eacute;rica. Sin costo y sin tarjeta.
-Entrar gratis a la Comunidad &#8594;
 &iquest;No se abre o no encuentras el acceso?
 Revisa primero las carpetas de spam y promociones. Si aun as&iacute; no aparece,
 escr&iacute;benos y te damos el acceso al instante.
@@ -14537,7 +14627,7 @@ designmodelingacademy.com
 
 - **id:** `6a863214d552428fc1d7b7ca`
 - **tipo:** html
-- **actualizada:** 2026-09-08T15:49:57.591Z
+- **actualizada:** 2026-11-18T20:54:48.040Z
 - **Cuerpo:**
 
 ```
@@ -14552,7 +14642,7 @@ Tu acceso al curso est&aacute; listo
 Hola {{contact.first_name}} ,
 Gracias por registrarte. Ya tienes acceso al curso Introducci&oacute;n a la Metodolog&iacute;a BIM en Proyectos Estructurales : qu&eacute; es BIM, para qu&eacute; sirve y c&oacute;mo encaja en un proyecto estructural real. Avanzas a tu ritmo y al terminar recibes tu certificado.
 Entrar al curso &#8594;
-Se abre en tu comunidad DMA &middot; sin costo y sin tarjeta
+Se abre en el campus DMA &middot; sin costo y sin tarjeta
 Tres pasos para terminarlo
 La mayor&iacute;a se inscribe y nunca entra. Estos tres pasos son la diferencia.
 01
@@ -14564,11 +14654,6 @@ Marca la p&aacute;gina como favorita o gu&aacute;rdate este correo para retomar 
 03
 Term&iacute;nalo y certif&iacute;cate
 Al completar todos los m&oacute;dulos recibes tu certificado de Design Modeling DG, listo para tu hoja de vida y tu perfil de LinkedIn.
-Tambi&eacute;n es gratis
-&Uacute;nete a la Comunidad Design Premium
-Masterclasses en vivo, plantillas descargables y networking con ingenieros y arquitectos
-de toda Latinoam&eacute;rica. Sin costo y sin tarjeta.
-Entrar gratis a la Comunidad &#8594;
 &iquest;No se abre o no encuentras el acceso?
 Revisa primero las carpetas de spam y promociones. Si aun as&iacute; no aparece,
 escr&iacute;benos y te damos el acceso al instante.
@@ -14582,7 +14667,7 @@ designmodelingacademy.com
 
 - **id:** `6aa309166f9d413fbe682c10`
 - **tipo:** html
-- **actualizada:** 2026-11-10T16:11:28.522Z
+- **actualizada:** 2026-11-18T20:50:30.546Z
 - **Cuerpo:**
 
 ```
@@ -14607,11 +14692,6 @@ Ya trae los apartados en orden y los campos de justificaci&oacute;n separados, p
 03
 Cita la hoja de Excel
 Los c&aacute;lculos van en el Excel; en la memoria citas el resultado y de d&oacute;nde sale. As&iacute; se sostiene ante un revisor.
-Tambi&eacute;n es gratis
-&Uacute;nete a la Comunidad Design Premium
-Masterclasses en vivo, plantillas descargables y networking con ingenieros y arquitectos
-de toda Latinoam&eacute;rica. Sin costo y sin tarjeta.
-Entrar gratis a la Comunidad &#8594;
 &iquest;No se abre o no encuentras el archivo?
 Revisa primero las carpetas de spam y promociones. Si aun as&iacute; no aparece, escr&iacute;benos y te lo reenviamos al instante.
 Escribir por WhatsApp
@@ -14624,7 +14704,7 @@ designmodelingacademy.com
 
 - **id:** `6a86325ff05cd00dd3bc4534`
 - **tipo:** html
-- **actualizada:** 2026-09-08T15:50:15.580Z
+- **actualizada:** 2026-11-18T20:54:56.127Z
 - **Cuerpo:**
 
 ```
@@ -14639,7 +14719,7 @@ Tu acceso al M&oacute;dulo 1 est&aacute; listo
 Hola {{contact.first_name}} ,
 Gracias por registrarte. Ya tienes acceso al M&oacute;dulo 1 completo del Diplomado BIM , abierto y sin costo: clases, archivos de pr&aacute;ctica y certificado al completarlo. Es el mismo m&oacute;dulo que cursan los alumnos del diplomado.
 Entrar al M&oacute;dulo 1 &#8594;
-Se abre en tu comunidad DMA &middot; sin costo y sin tarjeta
+Se abre en el campus DMA &middot; sin costo y sin tarjeta
 Tres pasos para terminarlo
 La mayor&iacute;a se inscribe y nunca entra. Estos tres pasos son la diferencia.
 01
@@ -14651,11 +14731,6 @@ El m&oacute;dulo incluye material de pr&aacute;ctica. B&aacute;jalo y tenlo abie
 03
 Term&iacute;nalo y certif&iacute;cate
 Al completar las clases del m&oacute;dulo recibes tu certificado de Design Modeling DG, listo para tu hoja de vida y tu perfil de LinkedIn.
-Tambi&eacute;n es gratis
-&Uacute;nete a la Comunidad Design Premium
-Masterclasses en vivo, plantillas descargables y networking con ingenieros y arquitectos
-de toda Latinoam&eacute;rica. Sin costo y sin tarjeta.
-Entrar gratis a la Comunidad &#8594;
 &iquest;No se abre o no encuentras el acceso?
 Revisa primero las carpetas de spam y promociones. Si aun as&iacute; no aparece,
 escr&iacute;benos y te damos el acceso al instante.
@@ -14669,7 +14744,7 @@ designmodelingacademy.com
 
 - **id:** `6aa30ad196b1ac287473a07e`
 - **tipo:** html
-- **actualizada:** 2026-11-10T16:12:17.517Z
+- **actualizada:** 2026-11-18T20:50:58.579Z
 - **Cuerpo:**
 
 ```
@@ -14708,11 +14783,6 @@ Empieza
 por el script 02
 El detector de
 duplicados. C&oacute;rrelo sobre un proyecto cerrado hace meses: casi siempre aparece algo.
-Tambi&eacute;n es gratis
-&Uacute;nete a la Comunidad Design Premium
-Masterclasses en vivo, plantillas descargables y networking con ingenieros y arquitectos
-de toda Latinoam&eacute;rica. Sin costo y sin tarjeta.
-Entrar gratis a la Comunidad &#8594;
 &iquest;No se abre o
 no encuentras el archivo?
 Revisa primero las
@@ -14728,7 +14798,7 @@ designmodelingacademy.com
 
 - **id:** `6a8738fbb7730838e926bc5e`
 - **tipo:** html
-- **actualizada:** 2026-11-10T16:10:07.331Z
+- **actualizada:** 2026-11-18T20:49:51.806Z
 - **Cuerpo:**
 
 ```
@@ -14743,7 +14813,7 @@ Test de Nivel BIM
 Hola {{contact.first_name}} ,
 Gracias por registrarte. Ya tienes acceso al Test de Nivel BIM : 20 preguntas para descubrir si eres Modelador, Coordinador, BIM Manager 4D-5D o Especialista BIM+IA, y qu&eacute; te falta para el siguiente nivel.
 Hacer el Test de Nivel BIM &#8594;
-Se abre en tu comunidad DMA &middot; sin costo y sin tarjeta
+Se abre en el campus DMA &middot; sin costo y sin tarjeta
 Tres pasos para que te sirva
 Un diagn&oacute;stico solo vale si lo haces en serio. Estos tres pasos son la diferencia.
 01
@@ -14755,11 +14825,6 @@ El test no regala niveles y est&aacute; dise&ntilde;ado para detectar huecos. Ma
 03
 Trabaja el siguiente paso
 Al final recibes tu nivel y la competencia concreta que te toca cerrar. Emp&iacute;ezala esta semana, mientras el diagn&oacute;stico sigue fresco.
-Tambi&eacute;n es gratis
-&Uacute;nete a la Comunidad Design Premium
-Masterclasses en vivo, plantillas descargables y networking con ingenieros y arquitectos
-de toda Latinoam&eacute;rica. Sin costo y sin tarjeta.
-Entrar gratis a la Comunidad &#8594;
 &iquest;No se abre o no encuentras el acceso?
 Revisa primero las carpetas de spam y promociones. Si aun as&iacute; no aparece,
 escr&iacute;benos y te damos el acceso al instante.
@@ -14773,7 +14838,7 @@ designmodelingacademy.com
 
 - **id:** `6a862943962dc01e6689201c`
 - **tipo:** html
-- **actualizada:** 2026-09-08T15:48:59.021Z
+- **actualizada:** 2026-11-18T20:58:25.618Z
 - **Cuerpo:**
 
 ```
@@ -14787,9 +14852,9 @@ Registro confirmado &middot; 100% gratis
 Tu E-Book BIM est&aacute; listo
 Hola {{contact.first_name}} ,
 Gracias por registrarte. Tu E-Book BIM ya est&aacute; disponible: qu&eacute; es BIM realmente y c&oacute;mo se aplica en la construcci&oacute;n, explicado sin humo y con ejemplos de proyectos reales.
-Descargar el E-Book en PDF &#8595;
-Abrir el E-Book en la comunidad
-Se abre en tu comunidad DMA
+Abrir el E-Book en el campus &#8594;
+Se abre en el campus DMA
+Desc&aacute;rgalo aqu&iacute; en PDF &#8595;
 Tres pasos para aprovecharlo
 01
 &Aacute;brelo y gu&aacute;rdalo
@@ -14800,11 +14865,6 @@ Son cap&iacute;tulos cortos. Una sola sentada basta para tener el panorama compl
 03
 Qu&eacute;date con uno
 Identifica el cap&iacute;tulo que m&aacute;s se parece a lo que haces hoy y prof&uacute;ndiza en ese.
-Tambi&eacute;n es gratis
-&Uacute;nete a la Comunidad Design Premium
-Masterclasses en vivo, plantillas descargables y networking con ingenieros y arquitectos
-de toda Latinoam&eacute;rica. Sin costo y sin tarjeta.
-Entrar gratis a la Comunidad &#8594;
 &iquest;No se abre o no encuentras el archivo?
 Revisa primero las carpetas de spam y promociones. Si aun as&iacute; no aparece,
 escr&iacute;benos y te lo reenviamos al instante.
@@ -14818,7 +14878,7 @@ designmodelingacademy.com
 
 - **id:** `6a86299483767c94bdfeff51`
 - **tipo:** html
-- **actualizada:** 2026-09-08T15:49:19.289Z
+- **actualizada:** 2026-11-18T20:58:47.032Z
 - **Cuerpo:**
 
 ```
@@ -14832,9 +14892,9 @@ Registro confirmado &middot; 100% gratis
 Tu recurso AI PRO est&aacute; listo
 Hola {{contact.first_name}} ,
 Gracias por registrarte. Tu recurso AI PRO ya est&aacute; disponible: c&oacute;mo usar la inteligencia artificial en tareas reales de BIM sin perder el criterio t&eacute;cnico, con casos de uso, prompts listos y cu&aacute;ndo no conviene usarla.
-Descargar AI PRO en PDF &#8595;
-Abrir AI PRO en la comunidad
-Se abre en tu comunidad DMA
+Abrir AI PRO en el campus &#8594;
+Se abre en el campus DMA
+Desc&aacute;rgalo aqu&iacute; en PDF &#8595;
 Tres pasos para aprovecharlo
 01
 &Aacute;brelo y gu&aacute;rdalo
@@ -14845,11 +14905,6 @@ Del listado, quédate con el que resuelva algo que hoy te quita tiempo de verdad
 03
 Pru&eacute;balo esta semana
 Aplícalo en el proyecto que tengas abierto. Un prompt bien usado vale m&aacute;s que veinte le&iacute;dos.
-Tambi&eacute;n es gratis
-&Uacute;nete a la Comunidad Design Premium
-Masterclasses en vivo, plantillas descargables y networking con ingenieros y arquitectos
-de toda Latinoam&eacute;rica. Sin costo y sin tarjeta.
-Entrar gratis a la Comunidad &#8594;
 &iquest;No se abre o no encuentras el archivo?
 Revisa primero las carpetas de spam y promociones. Si aun as&iacute; no aparece,
 escr&iacute;benos y te lo reenviamos al instante.
@@ -14863,7 +14918,7 @@ designmodelingacademy.com
 
 - **id:** `6a8628d230b4eda267096f3e`
 - **tipo:** html
-- **actualizada:** 2026-09-08T15:42:42.788Z
+- **actualizada:** 2026-11-18T20:58:37.045Z
 - **Cuerpo:**
 
 ```
@@ -14877,9 +14932,9 @@ Registro confirmado &middot; 100% gratis
 Tu Gu&iacute;a BIM est&aacute; lista
 Hola {{contact.first_name}} ,
 Gracias por registrarte. Tu Gu&iacute;a BIM aplicada a la construcci&oacute;n ya est&aacute; disponible: qu&eacute; hacer en cada etapa del proyecto, en qu&eacute; orden trabajar y qu&eacute; errores evitar. Cuatro bloques directos al grano, sin relleno te&oacute;rico.
-Descargar la Gu&iacute;a en PDF &#8595;
-Abrir la Gu&iacute;a en la comunidad
-Se abre en tu comunidad DMA
+Abrir la Gu&iacute;a en el campus &#8594;
+Se abre en el campus DMA
+Desc&aacute;rgalo aqu&iacute; en PDF &#8595;
 Tres pasos para aprovecharla
 01
 &Aacute;brela y gu&aacute;rdala
@@ -14890,11 +14945,6 @@ No intentes aplicar los cuatro a la vez. Empieza por el que m&aacute;s se parezc
 03
 Apl&iacute;calo esta semana
 &Uacute;salo en el proyecto que tengas abierto ahora. Un cambio a la vez es lo que sostiene el h&aacute;bito.
-Tambi&eacute;n es gratis
-&Uacute;nete a la Comunidad Design Premium
-Masterclasses en vivo, plantillas descargables y networking con ingenieros y arquitectos
-de toda Latinoam&eacute;rica. Sin costo y sin tarjeta.
-Entrar gratis a la Comunidad &#8594;
 &iquest;No se abre o no encuentras el archivo?
 Revisa primero las carpetas de spam y promociones. Si aun as&iacute; no aparece,
 escr&iacute;benos y te lo reenviamos al instante.
@@ -14905,32 +14955,6 @@ designmodelingacademy.com
 ```
 
 ## ✅ WORKSHOP Y EVENTOS > ✅ Conecta la IA con Revit 17/11/26
-
-### Workshop revit ia 04 grabacion
-
-- **id:** `6ada641ad2524647584f7728`
-- **tipo:** html
-- **actualizada:** 2026-10-22T19:29:44.571Z
-- **Cuerpo:**
-
-```
-Marketing -> Correos -> Plantillas -> Code Editor (Ctrl+A, Ctrl+V)
-PENDIENTE (TAREA): el martes 17, al terminar la sesion, subir la grabacion y pegar el enlace en el valor personalizado ws_revit_ia_grabacion.
--->
-Aquí tienes la grabación de IA conectada a Revit
-Grabaci&oacute;n disponible
-La grabaci&oacute;n del workshop
-Hola {{contact.first_name}} ,
-Gracias por inscribirte al workshop &ldquo;IA conectada a Autodesk Revit&rdquo; . Aqu&iacute; tienes la grabaci&oacute;n de la sesi&oacute;n.
-Ver la grabación &#8594;
-La demo empieza en el minuto 20
-Como complemento, haz tu test de nivel BIM gratis (5 minutos) y descubre en qu&eacute; nivel est&aacute;s hoy:
-Hacer mi test de nivel BIM
-Equipo Design Modeling
-Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
-designmodelingacademy.com
-{{unsubscribe_url}}
-```
 
 ### ✅ Workshop revit 06 preguntas frecuentes 
 
@@ -15197,6 +15221,31 @@ Lo que obtienes:
 &#127941; Un entregable para tu portafolio en cada bloque
 &iquest;En cu&aacute;l te toca empezar? Lo vemos en 20 minutos:
 Ver cuál es mi bloque &#8594;
+Equipo Design Modeling
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### ✅Workshop revit ia 04 grabacion
+
+- **id:** `6ada641ad2524647584f7728`
+- **tipo:** html
+- **actualizada:** 2026-11-18T13:15:04.201Z
+- **Cuerpo:**
+
+```
+Marketing -> Correos -> Plantillas -> Code Editor (Ctrl+A, Ctrl+V)
+-->
+Aquí tienes la grabación de IA conectada a Revit
+Grabaci&oacute;n disponible
+La grabaci&oacute;n del workshop
+Hola {{contact.first_name}} ,
+Gracias por inscribirte al workshop &ldquo;IA conectada a Autodesk Revit&rdquo; . Aqu&iacute; tienes la grabaci&oacute;n de la sesi&oacute;n.
+Ver la grabación &#8594;
+La demo empieza en el minuto 20
+Como complemento, haz tu test de nivel BIM gratis (5 minutos) y descubre en qu&eacute; nivel est&aacute;s hoy:
+Hacer mi test de nivel BIM
 Equipo Design Modeling
 Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
 designmodelingacademy.com

@@ -1,0 +1,54 @@
+name: OpenReply · activar campañas de posts nuevos
+
+# Una palabra, una automatización. Cada media hora en horario de publicación
+# mira los posts nuevos de Instagram; si el caption pide comentar una palabra
+# configurada (NIVEL, ACERO, ZAPATA, MEMORIA, GUIA, DYNAMO, RUTA), le crea la
+# campaña en OpenReply con el recurso y los textos de
+# scripts/openreply_campanas_config.json. No duplica: un post con campaña se
+# deja como está.
+#
+# Solo Instagram. Facebook lo contesta GoHighLevel.
+#
+# A mano: Actions → este workflow → Run workflow (con «previa» marcada no crea
+# nada, solo dice qué haría).
+
+on:
+  schedule:
+    # Cada 30 min entre 13:00 y 23:30 UTC (8:00 a 18:30 Ecuador). Las
+    # publicaciones salen a las 10:00 y 12:00 Ecuador; el margen cubre los
+    # posts fuera de horario.
+    - cron: "5,35 13-23 * * *"
+  workflow_dispatch:
+    inputs:
+      previa:
+        description: "Solo mostrar qué haría, sin crear campañas"
+        type: boolean
+        default: false
+      horas:
+        description: "Mirar posts de las últimas N horas"
+        default: "36"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: openreply-campanas
+  cancel-in-progress: false
+
+jobs:
+  activar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Activar campañas
+        env:
+          OPENREPLY_API_KEY: ${{ secrets.OPENREPLY_API_KEY }}
+        run: |
+          args="--horas ${{ inputs.horas || '36' }}"
+          if [ "${{ inputs.previa }}" = "true" ]; then args="$args --dry-run"; fi
+          python3 scripts/openreply_auto_campanas.py $args
