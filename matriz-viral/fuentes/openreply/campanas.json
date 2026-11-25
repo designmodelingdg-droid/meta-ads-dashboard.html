@@ -1102,6 +1102,13 @@
   {
    "estado": "FAILED",
    "pero_si_se_entrego": false,
+   "motivo": "MetaApiError -1: The comment you are trying to reply to, already has a reply. (/v25.0/17841404048578200/messages) [code=-1 sub=2534023 type=IGApiException trace=AXbyzZfF00tt7pwKif9uzTb]",
+   "veces": 1,
+   "ultima_vez": "2026-11-24T00:42:10.762"
+  },
+  {
+   "estado": "FAILED",
+   "pero_si_se_entrego": false,
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=ARyiexKEaFhf0gzVTBxZppt]",
    "veces": 1,
    "ultima_vez": "2026-09-24T02:23:54.339"
@@ -1144,13 +1151,6 @@
   {
    "estado": "FAILED",
    "pero_si_se_entrego": false,
-   "motivo": "MetaApiError -1: The comment you are trying to reply to, already has a reply. (/v25.0/17841404048578200/messages) [code=-1 sub=2534023 type=IGApiException trace=AuQG63KdlbTp9QgkMxbu7uU]",
-   "veces": 1,
-   "ultima_vez": "2026-11-24T00:42:10.767"
-  },
-  {
-   "estado": "FAILED",
-   "pero_si_se_entrego": false,
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=A9LQ8VErbmAY1COtKp4JdG1]",
    "veces": 1,
    "ultima_vez": "2026-09-30T17:34:30.76"
@@ -1186,6 +1186,13 @@
   {
    "estado": "FAILED",
    "pero_si_se_entrego": false,
+   "motivo": "MetaApiError -1: The comment you are trying to reply to, already has a reply. (/v25.0/17841404048578200/messages) [code=-1 sub=2534023 type=IGApiException trace=AbgBH9D6WFs_oSnIjwe3NQc]",
+   "veces": 1,
+   "ultima_vez": "2026-11-24T22:57:14.012"
+  },
+  {
+   "estado": "FAILED",
+   "pero_si_se_entrego": false,
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=AoDH8FEtt2u2dOgccYK5Pyf]",
    "veces": 1,
    "ultima_vez": "2026-10-13T14:58:20.339"
@@ -1210,6 +1217,13 @@
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=Ahe010FLjh8y2MU9lT5znX3]",
    "veces": 1,
    "ultima_vez": "2026-09-30T11:44:38.646"
+  },
+  {
+   "estado": "FAILED",
+   "pero_si_se_entrego": false,
+   "motivo": "MetaApiError -1: The comment you are trying to reply to, already has a reply. (/v25.0/17841404048578200/messages) [code=-1 sub=2534023 type=IGApiException trace=A4qZc8H1qoOEum_vb2adogi]",
+   "veces": 1,
+   "ultima_vez": "2026-11-24T00:42:10.766"
   },
   {
    "estado": "FAILED",
@@ -1255,13 +1269,6 @@
   },
   {
    "estado": "FAILED",
-   "pero_si_se_entrego": false,
-   "motivo": "MetaApiError -1: The comment you are trying to reply to, already has a reply. (/v25.0/17841404048578200/messages) [code=-1 sub=2534023 type=IGApiException trace=AMJdSQhbLAaTn-C_k_kMXm3]",
-   "veces": 1,
-   "ultima_vez": "2026-11-24T00:42:10.762"
-  },
-  {
-   "estado": "FAILED",
    "pero_si_se_entrego": true,
    "motivo": "MetaApiError 1: An unknown error has occurred. (/v25.0/17841404048578200/messages) [code=1 sub=- type=OAuthException trace=ADi07oqxKQLjI2nAPkL9y33]",
    "veces": 1,
@@ -1294,6 +1301,13 @@
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=AjzGJaRYGc207BH0ppPwtxk]",
    "veces": 1,
    "ultima_vez": "2026-09-25T23:21:07.329"
+  },
+  {
+   "estado": "FAILED",
+   "pero_si_se_entrego": false,
+   "motivo": "MetaApiError -1: The comment you are trying to reply to, already has a reply. (/v25.0/17841404048578200/messages) [code=-1 sub=2534023 type=IGApiException trace=AH9yIm0P8Qt1n4GV0cqH1Dy]",
+   "veces": 1,
+   "ultima_vez": "2026-11-24T00:42:10.767"
   },
   {
    "estado": "FAILED",
@@ -1378,20 +1392,6 @@
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=A3ed7dK4_Y-8zwkdGrw6rvy]",
    "veces": 1,
    "ultima_vez": "2026-09-12T00:16:38.542"
-  },
-  {
-   "estado": "SKIPPED_DEDUP",
-   "pero_si_se_entrego": false,
-   "motivo": "This person already received this campaign's DM on an earlier comment",
-   "veces": 1,
-   "ultima_vez": "2026-09-18T18:27:24.854"
-  },
-  {
-   "estado": "FAILED",
-   "pero_si_se_entrego": false,
-   "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=An5yc6TaIDgq-vSGpgnTvT1]",
-   "veces": 1,
-   "ultima_vez": "2026-10-10T20:18:16.317"
   }
  ],
  "enlaces": [
@@ -1860,6 +1860,11 @@
    "cuenta": "design_modeling_dg",
    "fecha": "2026-11-24",
    "seguidores": 82095
+  },
+  {
+   "cuenta": "design_modeling_dg",
+   "fecha": "2026-11-25",
+   "seguidores": 82082
   }
  ],
  "workflows_ghl": {
@@ -1925,7 +1930,7 @@
      }
     ],
     "en_borrador": [],
-    "bot_total": 936,
+    "bot_total": 940,
     "bot_nuevos_7d": 60
    },
    "CHATGPT": {
@@ -1973,7 +1978,7 @@
     "bot_nuevos_7d": 0
    }
   },
-  "embudo_generado": "2026-11-24T19:30Z"
+  "embudo_generado": "2026-11-25T03:31Z"
  },
  "cotejo_con_la_matriz": [
   {
