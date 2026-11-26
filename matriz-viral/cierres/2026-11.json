@@ -1,0 +1,459 @@
+{
+ "mes": "2026-11",
+ "estado": "BORRADOR — pendiente de que Dayana valide la lista nominal de ventas y los cobros sin descripción. No presentar.",
+ "ventana": {
+  "desde": "2026-11-05",
+  "hasta": "2026-12-05"
+ },
+ "corte": "PROVISIONAL con datos hasta el 2026-11-25 (21 días; pasarelas y Meta bajadas el 26-nov, día anterior cerrado). El lunes 30-nov se refresca hasta el 29/30-nov para la reunión del martes 1-dic: cambian todas las cifras de dinero, CRM, pauta y orgánico. El Black Friday (23 → 30-nov) queda casi entero fuera de este corte. Octubre cerró con corte al 2-nov; el 3 y 4-nov no tienen cobros en pasarelas ni ganadas en el CRM, pero sí $60,91 de pauta que no entra en ningún cierre.",
+ "validado_por": "Nadie todavía. Pendiente Dayana: lista nominal, 7 cobros sin identificar ($3.554,05), $320 dudoso (recurrente o venta), $1.650 por banco y Datalink que solo declara el CRM, meta de diciembre y precio de Acero.",
+ "dinero": {
+  "cobrado_pasarelas": 4534.96,
+  "cobrado_pasarelas_nota": "Academy identificado (descripción de la pasarela o correo cruzado con una ganada del CRM). Mismo criterio que octubre: sin consultoría ni cobros sin identificar.",
+  "total_bruto_pasarelas_ventana": 8089.01,
+  "cobros_ventana": 26,
+  "recurrente": 1849.99,
+  "captacion": 2684.97,
+  "recurrente_detalle": "11 cobros: 7 de $160 (Subscription update / Matrícula mensual; uno sin descripción que el CRM tiene en PAGO RECURRENTE), 1 de $140, 1 de $250 (cuota de plan de Diplomado), 1 de $19,99, todos en Stripe = $1.529,99; más $320 por PayPal el 13-nov que parecen 2 cuotas de $160 de un alumno que en octubre pagó su cuota por Stripe (POR CONFIRMAR: el CRM lo marcó ganado como «INSCRITO OTRO»).",
+  "captacion_detalle": "8 cobros de 7 clientes: Máster Bloque 1 $999,99 · Máster matrícula $200 + $300 · Diplomado Estructuras $540 · Acero $225 (Stripe) · Acero $199,99 (PayPal) · Esp. Arquitectura y MEP 40% OFF $119,99 · 2.º pago $100 (PayPal). De esos, $2.039,99 no tienen descripción en Stripe y se cuentan solo porque el CRM los tiene como venta de la Academy.",
+  "por_confirmar": {
+   "total": 3554.05,
+   "nota": "Ni sumados ni descartados. Regla del 23-oct: cobro sin descripción se pregunta.",
+   "cobros": [
+    [
+     "2026-11-10",
+     "stripe",
+     3100.0,
+     "sin descripción; el mismo pagador hizo un cargo de $1 el 9-nov; sin oportunidad en el CRM. Patrón de consultoría DG."
+    ],
+    [
+     "2026-11-09",
+     "stripe",
+     1.0,
+     "cargo de prueba del mismo pagador"
+    ],
+    [
+     "2026-11-25",
+     "stripe",
+     160.0,
+     "sin descripción, pagador nuevo; monto de cuota del Máster"
+    ],
+    [
+     "2026-11-05",
+     "stripe",
+     100.0,
+     "«Subscription creation»; mismo pagador y monto que el 1-oct, que Dayana sacó como venta de software"
+    ],
+    [
+     "2026-11-09",
+     "paypal",
+     100.0,
+     "sin descripción; el correo parece de alguien del equipo (en septiembre un PayPal del equipo fue una prueba)"
+    ],
+    [
+     "2026-11-17",
+     "paypal",
+     80.0,
+     "sin descripción; mismo pagador que los tres cobros de consultoría de octubre ($6.928,75)"
+    ],
+    [
+     "2026-11-18",
+     "paypal",
+     13.05,
+     "sin descripción, sin oportunidad en el CRM"
+    ]
+   ]
+  },
+  "excluido": "Nada excluido por decisión propia: lo dudoso está en por_confirmar.",
+  "cobertura": "Archivos regenerados el 26-nov con ventana 27-oct → 25-nov (Action 45830135637). Stripe: primer cobro de la ventana 5-nov, último 25-nov. PayPal: primer cobro 9-nov, último 24-nov (del 5 al 8-nov no hay cobros por PayPal). El 3 y 4-nov no hay cobros en ninguna pasarela: no hay hueco contra el cierre de octubre. Fechas de Stripe en UTC (un cobro del 20-nov por la noche en Ecuador sale con fecha 21-nov).",
+  "crm_ganadas_depuradas": {
+   "valor": 4654.98,
+   "clientes": 14,
+   "crudo": {
+    "n": 21,
+    "valor": 5494.97
+   },
+   "depuracion": "21 ganadas con cambio de estado entre el 5 y el 25-nov. Fuera: 4 de PAGO RECURRENTE ($640), 2 en $0, 1 de Acero ($199,99) que se marcó ganada el 5-nov pero se cobró por PayPal el 18-oct y ya está en el cierre de octubre. Sin duplicados por cliente y sin pruebas."
+  },
+  "conciliacion": "CRM depurado ($4.654,98) = captación en pasarelas ($2.684,97) + $320 que aquí se trata como recurrente + $1.650 que el CRM declara cobrados fuera de pasarelas (Banco Pichincha $1.425 en 5 ventas, Datalink $225 en 1) + $0,01 de redondeo ($1.000 en el CRM, $999,99 cobrado).",
+  "otras_fuentes": {
+   "verificado_area": "s/d (informe de Ester de noviembre no recibido)",
+   "panel_olympus": "s/d (no consultado en este borrador)",
+   "suma_pipelines_crm": "s/d por API: los agregados del repo se cortan en 1.200 oportunidades y solo noviembre tiene más"
+  },
+  "fuera_de_pasarelas": "Según el campo de medio de pago del CRM, sin verificar en banco: Banco Pichincha $225 (Acero), $400 (Diplomado Arquitectura), $500 (Máster), $200 (Diplomado Estructuras), $100 (otro); Datalink $225 (Acero). Total $1.650."
+ },
+ "comparacion_octubre": {
+  "nota": "Octubre = 5-oct → 2-nov (29 días). Noviembre = 5 → 25-nov (21 días, provisional).",
+  "pasarelas": [
+   4345.41,
+   4534.96
+  ],
+  "captacion": [
+   2922.53,
+   2684.97
+  ],
+  "recurrente": [
+   1422.88,
+   1849.99
+  ],
+  "cobros_captacion": [
+   28,
+   8
+  ],
+  "ticket_captacion": [
+   104.38,
+   335.62
+  ],
+  "crm_depurado": [
+   3061.56,
+   4654.98
+  ],
+  "pauta_gasto": [
+   1090.77,
+   839.99
+  ],
+  "pauta_leads": [
+   1104,
+   697
+  ],
+  "pauta_cpl": [
+   0.99,
+   1.21
+  ],
+  "roas_caja": [
+   3.98,
+   5.4
+  ],
+  "captacion_sobre_pauta": [
+   2.68,
+   3.2
+  ]
+ },
+ "ventas_por_producto": [
+  [
+   "Máster (1 Bloque 1 a $999,99 por Stripe, 1 matrícula $500 por Stripe, 1 matrícula $500 por banco)",
+   3,
+   1999.99
+  ],
+  [
+   "Diplomados (Estructuras $540 por Stripe; Arquitectura $400 y Estructuras $200 por banco)",
+   3,
+   1140.0
+  ],
+  [
+   "Especialización Acero ($225 Stripe, $225 banco, $225 Datalink, $199,99 PayPal)",
+   4,
+   874.99
+  ],
+  [
+   "Otros (Esp. Arquitectura y MEP 40% OFF $119,99; 2.º pago $100 PayPal; $100 por banco sin producto)",
+   3,
+   319.99
+  ],
+  [
+   "Combo especialización + diplomado a $50: ninguna venta identificada en pasarelas ni en el CRM",
+   0,
+   0.0
+  ],
+  [
+   "Total captación del mes al 25-nov: pasarelas $2.684,97 + fuera de pasarelas según CRM $1.650",
+   13,
+   4334.97
+  ]
+ ],
+ "pauta": {
+  "ventana": "2026-11-05 → 2026-11-25",
+  "gasto": 839.99,
+  "leads": 697,
+  "formulario": 185,
+  "whatsapp": 512,
+  "cpl": 1.21,
+  "ctr": 1.91,
+  "criterio_leads": "`lead` (formulario instantáneo + píxel, una sola vez) + `messaging_conversation_started_7d`. No se suma `lead_grouped`, que ya está dentro de `lead`.",
+  "por_campana_columnas": [
+   "campaña",
+   "gasto",
+   "leads",
+   "formulario",
+   "whatsapp",
+   "cpl",
+   "ctr %"
+  ],
+  "por_campana": [
+   [
+    "MÁSTER · FORM CALIFICACIÓN NUEVO",
+    228.01,
+    88,
+    83,
+    5,
+    2.59,
+    1.51
+   ],
+   [
+    "[29SEPT] ACERO - WSP SMS (geo-split)",
+    224.8,
+    371,
+    1,
+    370,
+    0.61,
+    1.75
+   ],
+   [
+    "[09NOV] COMBO NOV - WSP (10 cupos)",
+    160.3,
+    87,
+    0,
+    87,
+    1.84,
+    1.27
+   ],
+   [
+    "[29SEPT]ACERO - FORM (geo-split)",
+    92.54,
+    54,
+    35,
+    19,
+    1.71,
+    1.82
+   ],
+   [
+    "[29SEP] MASTER - FORM (geo-split)",
+    58.97,
+    73,
+    59,
+    14,
+    0.81,
+    1.91
+   ],
+   [
+    "[22OCT] | Workshop | CLIENTE POTENCIAL",
+    28.96,
+    0,
+    0,
+    0,
+    null,
+    1.72
+   ],
+   [
+    "[19NOV] MÁSTER - TESTEO CLIPS (form v7)",
+    12.93,
+    5,
+    5,
+    0,
+    2.59,
+    2.36
+   ],
+   [
+    "[25AGOSTO] LEAD MAGNETS · ACERO",
+    11.63,
+    0,
+    0,
+    0,
+    null,
+    4.27
+   ],
+   [
+    "[25AGOSTO] LEAD MAGNETS · MÁSTER",
+    10.45,
+    0,
+    0,
+    0,
+    null,
+    3.56
+   ],
+   [
+    "[13NOV] MÁSTER - TESTEO VIDEOS (form v7)",
+    5.89,
+    4,
+    2,
+    2,
+    1.47,
+    1.5
+   ],
+   [
+    "[13NOV] ACERO - TESTEO VIDEOS (WSP)",
+    5.51,
+    15,
+    0,
+    15,
+    0.37,
+    2.52
+   ]
+  ],
+  "hueco_3_4_nov": {
+   "gasto": 60.91,
+   "leads": 60,
+   "nota": "El cierre de octubre cortó la pauta el 2-nov y este empieza el 5: esos dos días no están en ningún cierre."
+  },
+  "black_friday": "Ninguna campaña con ese nombre tuvo gasto entre el 5 y el 25-nov. El post orgánico del 23-nov dice Black Friday del lun 23 al lun 30.",
+  "pixel": "El píxel atribuye $7.599,99 en 3 compras a MASTER - FORM y $80 a ACERO - FORM. No coinciden con ningún cobro: son valores declarados, no caja. No se usan.",
+  "roas_caja": 5.4,
+  "roas_adquisicion": 2.82,
+  "roas_adquisicion_nota": "Cobrado en pasarelas y con fuente de pauta en el CRM (etiqueta o fuente; solo una venta trae UTM): $2.364,98 ÷ $839,99. Con las 6 ventas por banco y Datalink que declara el CRM sube a 4,78x, sin verificar. Octubre guardó el 1,93x del panel de Olympus, que es otro criterio.",
+  "captacion_sobre_pauta": 3.2
+ },
+ "ganadores_pauta": {
+  "ventana_archivo": "2026-11-05 → 2026-11-25",
+  "creativos_distintos": 4,
+  "nota": "Los 6 primeros del manifiesto son 4 creativos (md5). Los dos de Acero juntan 349 de los 404 leads del top. El manifiesto cuenta doble los leads de formulario (suma `lead` + `lead_grouped`): aquí van corregidos.",
+  "lista_columnas": [
+   "creativo",
+   "gasto",
+   "leads",
+   "cpl"
+  ],
+  "lista": [
+   [
+    "Acero «con voz» (video, WhatsApp, EC + MX)",
+    110.71,
+    235,
+    0.47
+   ],
+   [
+    "Acero «Sobredimensionar no es ir por el lado seguro» $225 con tutor de IA (imagen, WhatsApp, EC + MX)",
+    86.0,
+    114,
+    0.75
+   ],
+   [
+    "Máster «Si todavía…» (video de Gabriel, formulario; ya ganó en octubre)",
+    24.02,
+    28,
+    0.86
+   ],
+   [
+    "Máster «La ruta del Máster» (video, formulario calificación)",
+    55.14,
+    27,
+    2.04
+   ]
+  ],
+  "imagenes": "matriz-viral/fuentes/ads-creativos/ (01 a 06, manifest.json del 26-nov). Falta copiarlas a cierre-noviembre/img/ para publicarlas por Pages."
+ },
+ "organico": {
+  "lectura": "matriz.json refrescada el 26-nov (Meta Graph API). Solo Instagram: las vistas de Facebook no existen en la API.",
+  "ventana": "publicadas del 5 al 25-nov",
+  "piezas": 28,
+  "vistas": 72136,
+  "comentarios": 279,
+  "guardados": 305,
+  "compartidos": 71,
+  "por_pieza": {
+   "vistas": 2576,
+   "comentarios": 10.0,
+   "guardados": 10.9
+  },
+  "vs_octubre": {
+   "nota": "Octubre recalculado hoy con el mismo método (5-oct → 2-nov, 29 piezas); las piezas de octubre tienen más días acumulados que las de noviembre.",
+   "vistas": [
+    189948,
+    72136
+   ],
+   "comentarios": [
+    876,
+    279
+   ],
+   "guardados": [
+    5211,
+    305
+   ],
+   "compartidos": [
+    1577,
+    71
+   ]
+  },
+  "ganador": "Post «Te devolvieron la memoria de cálculo. Otra vez.» (25-nov, CTA MEMORIA): 101 comentarios en un día, 3.212 vistas, 36 guardados. Antes: reel «La misma zapata no se comporta igual…» (11-nov): 87 comentarios, 63 guardados, 4.090 vistas.",
+  "mas_visto": "Post «40 mm.» (6-nov): 13.289 vistas, 51 guardados, 2 comentarios.",
+  "seguidores_instagram": "81.982 (5-nov) → 82.082 (25-nov): +100 netos. Pico de 82.208 el 16 y 17-nov; desde el 18-nov bajan 126.",
+  "workshop_17_nov": "114 registros en el CRM (etapa REGISTRO EVENTOS, creados del 1 al 25-nov); 69 registros por píxel con $28,96 de pauta en la ventana ($53,31 del 27-oct al 25-nov). Asistentes: s/d. Dos inscripciones al Máster con etiqueta del workshop en las 48 h siguientes ($999,99 + $500 cobrados). Las piezas del workshop en el feed: entre 0 y 5 comentarios cada una.",
+  "palabras_clave": "OpenReply al 26-nov: MEMORIA 62 DM (31 del post del 25-nov, 2 fallidos, 18 clics), TUTORIAL 52, NIVEL 4, ACERO 2, ZAPATA 1 (3 fallidos). Del 5 al 24-nov OpenReply mandó 10 DM en total. NAVIDAD está montada y PAUSADA. Embudo en GHL (etiquetas, acumulado): NIVEL 943 pidieron / 110 con acceso; ZAPATA 311 / 187; ACERO 270 / 80; MEMORIA 222 / 120."
+ },
+ "kpis_area": {
+  "comercial": "s/d (informe de Ester)",
+  "marketing": "s/d (reporte de Olympus no auditado en este borrador)",
+  "administrativo": "s/d"
+ },
+ "meta_noviembre": {
+  "objetivo": 10000,
+  "logrado": 4534.96,
+  "pct": 45,
+  "nota": "Al 25-nov, solo pasarelas identificadas. Con lo que el CRM declara por banco y Datalink ($1.650) serían $6.184,96 (62 %), sin verificar. Faltan 5 días y el Black Friday."
+ },
+ "meta_diciembre": {
+  "objetivo": 10000,
+  "estado": "PROPUESTA sobre la base real de noviembre; la meta por defecto es $10.000 y Dayana la confirma.",
+  "ventana": "5-dic → 5-ene (la promo de Navidad corre del 4-dic al 5-ene, casi la misma ventana)",
+  "mezcla_columnas": [
+   "línea",
+   "ventas",
+   "ticket",
+   "ingreso"
+  ],
+  "mezcla": [
+   [
+    "Recurrente (lo que entró solo en noviembre, sin los $320 dudosos)",
+    10,
+    153,
+    1530
+   ],
+   [
+    "Máster: matrícula o bloque (noviembre: 3 ventas, ticket inicial medio $667)",
+    4,
+    667,
+    2668
+   ],
+   [
+    "Diplomados (noviembre: 3 ventas, primer pago medio $380)",
+    3,
+    380,
+    1140
+   ],
+   [
+    "Especialización Acero (noviembre: 4; precio de diciembre por confirmar, calculado a $225)",
+    6,
+    225,
+    1350
+   ],
+   [
+    "Promo de Navidad a $46,50 (ticket bajo: lo que falta para llegar)",
+    72,
+    46.5,
+    3348
+   ]
+  ],
+  "total_mezcla": 10036,
+  "lectura": "Con los tickets de noviembre, el Máster, los diplomados y Acero llegan a $5.158 de captación. Para cerrar $10.000 la promo de Navidad tiene que vender 72 cursos (2,2 por día en 33 días). Un bloque del Máster equivale a 16-21 cursos de $46,50. Referencia: Halloween vendió 18 cursos a $19,99 en 4 días."
+ },
+ "oferta_diciembre": {
+  "navidad": "«Los jefes se fueron de vacaciones»: 40 cursos a $46,50 (antes $154,99), del 4-dic al 5-ene 23:59, palabra NAVIDAD, primer post el 7-dic. Landing pendiente de Ester (hoy responde 404).",
+  "pauta": "Navidad $4/día del 4-dic al 5-ene ($132; 4 ventas la pagan). Máster y Acero en entrenamiento a $2/día del 4 al 11-dic; el ganador pasa a la campaña inicial.",
+  "master": "Por bloques, cohorte en febrero de 2027, sin precio público.",
+  "acero": "Precio de diciembre por confirmar ($225 era «todo noviembre»)."
+ },
+ "higiene": [
+  "2 ganadas en $0: Eduardo G. (INSCRITO DIPLO EST) y Flor A. (INSCRITO MASTER), ambas del 10-nov",
+  "Abel M.: ganada el 5-nov, cobrada por PayPal el 18-oct (es de octubre)",
+  "4 cuotas recurrentes marcadas como oportunidad ganada ($160 c/u) y 6 cuotas cobradas sin registro en el CRM",
+  "Jorge L. S.: $320 por PayPal en INSCRITO OTRO; parece 2 cuotas del Máster",
+  "Albin C.: $199,99 en INSCRITO ACERO con nombre de oportunidad «Naves Industriales PRO» (Acero costaba $225)",
+  "3 ventas en INSCRITO OTRO sin producto: CZ Construcciones $100, Fernando A. $100 (2.º pago), Cesar S. $119,99 (Stripe dice Esp. Arquitectura y MEP)",
+  "6 de 21 ganadas sin fuente",
+  "2 segundos pagos abiertos en POR PAGAR desde fin de octubre: Ovidio M. $99,99 y Efraín L. $112,50",
+  "7 cobros en pasarelas sin oportunidad en el CRM ($3.554,05)",
+  "6 ventas por banco y Datalink ($1.650) sin comprobante en el repo",
+  "Los diplomados ya no tienen pipeline propio: se registran en etapas del pipeline del Máster (el skill cierre-mes sigue citando pipelines que no existen)",
+  "Arrastradas de octubre sin re-verificar: Santiago O. (pago fallido), Nicole V., Miguel Á. V., Jorge Ch., 11 citas sin estado"
+ ],
+ "fuentes_con_fallo": [
+  "Windsor · gohighlevel: «No gohighlevel accounts are configured». Las oportunidades se leyeron con el conector AI GHL (misma location nkKbOarn5IwHeMv48uY9).",
+  "Action del lunes 23-nov (45297128211): falló al empujar — «CONFLICT (content): Merge conflict in matriz-viral/matriz/matriz.json … No se pudo empujar tras 3 intentos». Por eso los datos del repo estaban al 20-nov.",
+  "scripts/ads_creativos.py y scripts/ads_copys.py cuentan doble los leads de formulario (`lead` + `lead_grouped`), y ads_copys además suma dos tipos de conversación.",
+  "fuentes/ghl/oportunidades.json se corta en 1.200 oportunidades (12 páginas): solo del 5 al 25-nov se crearon 1.206.",
+  "formularios_destino.py: «MAL APUNTADOS: 9 de 9» (exit 1). Los 9 formularios mandan ahora al campus nuevo, que responde 200; falta comprobar con un contacto real que el recurso se entrega.",
+  "Sonda de GHL: membership · 401 «You are not authorized to make this request»."
+ ],
+ "presentaciones": {
+  "gamma": "No generada. Borrador en el scratchpad de la sesión (cierre-nov/borrador.md). Tema previsto: DM-FondoAzul 5tee2tx4zjbm9go."
+ }
+}
