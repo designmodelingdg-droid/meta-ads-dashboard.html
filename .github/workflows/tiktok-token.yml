@@ -131,14 +131,16 @@ jobs:
           lista = (vids.get("data") or {}).get("videos") or []
           print("Prueba de lectura (últimos videos):", len(lista), "| code:", vids.get("code"), vids.get("message"))
           for v in lista:
-              print("  ·", time.strftime("%Y-%m-%d", time.gmtime(v.get("create_time") or 0)),
+              print("  ·", time.strftime("%Y-%m-%d", time.gmtime(int(v.get("create_time") or 0))),
                     "| comentarios:", v.get("comments"), "|", (v.get("share_url") or "")[:80],
                     "|", (v.get("caption") or "")[:60].replace("\n", " "))
           PY
       - name: Guardar token cifrado
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          [ -f matriz-viral/tiktok/token.enc ] || exit 0
           git add matriz-viral/tiktok/token.enc
           if git diff --cached --quiet; then echo "Sin cambios"; exit 0; fi
           git commit -m "TikTok: token cifrado actualizado"
