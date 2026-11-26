@@ -4,7 +4,8 @@ Descarga las imágenes de los anuncios ganadores de la cuenta publicitaria
 (act_1159622151150228) para la presentación de cierre/apertura de mes.
 
 - Consulta insights a nivel de anuncio en la ventana pedida, cuenta leads
-  (lead + mensajes de WhatsApp iniciados) y rankea.
+  (`lead` de formulario + conversaciones de WhatsApp iniciadas, sin duplicar)
+  y rankea.
 - Baja la imagen del creativo (image_url si existe; si no, thumbnail en alta)
   de los TOP_N anuncios a matriz-viral/fuentes/ads-creativos/.
 - Escribe manifest.json con nombre, campaña, gasto, leads, CPL y CTR de cada uno.
@@ -25,8 +26,15 @@ DESDE = os.environ.get("DESDE") or "2026-07-05"
 HASTA = os.environ.get("HASTA") or "2026-08-05"
 TOP_N = int(os.environ.get("TOP_N") or "6")
 
-LEAD_TYPES = {"lead", "onsite_conversion.lead_grouped",
-              "onsite_conversion.messaging_conversation_started_7d"}
+# Un lead por vía, sin duplicar: formulario + WhatsApp.
+#   · `lead` YA es el total de formulario: incluye
+#     `onsite_conversion.lead_grouped` (formulario instantáneo) y
+#     `offsite_conversion.fb_pixel_lead` (píxel). Sumarle `lead_grouped` encima
+#     contaba cada lead de formulario DOS veces (por-dia.json, 21-oct → 19-nov-2026:
+#     lead 346 = lead_grouped 262 + fb_pixel_lead 84).
+#   · WhatsApp es solo `messaging_conversation_started_7d`.
+# La prueba scripts/prueba_ads_copys.py falla si esto vuelve a duplicar.
+LEAD_TYPES = {"lead", "onsite_conversion.messaging_conversation_started_7d"}
 
 
 def api(path, **params):
