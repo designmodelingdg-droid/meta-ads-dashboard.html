@@ -1,0 +1,141 @@
+name: TikTok · canjear código y guardar token
+
+# Conecta la cuenta de TikTok de DMA (@designmodelingdg) con la app
+# «DMA Comentarios» de TikTok API for Business.
+#
+#   modo=canjear  usa el código de TIKTOK_AUTH_CODE (sale en la página
+#                 /conexiones/ después de autorizar) y lo cambia por tokens.
+#   modo=probar   renueva el token guardado y comprueba la cuenta.
+#
+# El refresh token se guarda CIFRADO (AES-256, clave = TIKTOK_APP_SECRET) en
+# matriz-viral/tiktok/token.enc. Nunca se imprime ningún token en el log.
+#
+# Se dispara a mano o al hacer push de matriz-viral/tiktok/orden.json
+# ({"modo": "canjear"} o {"modo": "probar"}).
+
+on:
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: "canjear (código nuevo) o probar (token guardado)"
+        type: choice
+        options: [canjear, probar]
+        default: canjear
+  push:
+    paths:
+      - matriz-viral/tiktok/orden.json
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tiktok-token
+  cancel-in-progress: false
+
+jobs:
+  token:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Canjear o renovar
+        env:
+          EVENTO: ${{ github.event_name }}
+          IN_MODO: ${{ inputs.modo }}
+          APP_ID: ${{ secrets.TIKTOK_APP_ID }}
+          APP_SECRET: ${{ secrets.TIKTOK_APP_SECRET }}
+          AUTH_CODE: ${{ secrets.TIKTOK_AUTH_CODE }}
+          REDIRECT_URI: https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/conexiones/
+        run: |
+          python3 - <<'PY'
+          import json, os, subprocess, sys, time, urllib.request, urllib.parse
+
+          BASE = "https://business-api.tiktok.com/open_api/v1.3"
+          ARCHIVO = "matriz-viral/tiktok/token.enc"
+          APP_ID, APP_SECRET = os.environ.get("APP_ID", ""), os.environ.get("APP_SECRET", "")
+          if not APP_ID or not APP_SECRET:
+              sys.exit("Faltan los secretos TIKTOK_APP_ID o TIKTOK_APP_SECRET.")
+
+          if os.environ["EVENTO"] == "push":
+              modo = json.load(open("matriz-viral/tiktok/orden.json")).get("modo", "probar")
+          else:
+              modo = os.environ.get("IN_MODO") or "canjear"
+          print("MODO:", modo)
+
+          def ocultar(v):
+              if v:
+                  print(f"::add-mask::{v}")
+
+          def post(path, body):
+              req = urllib.request.Request(BASE + path, data=json.dumps(body).encode(),
+                                           headers={"Content-Type": "application/json"})
+              try:
+                  return json.load(urllib.request.urlopen(req, timeout=30))
+              except urllib.error.HTTPError as e:
+                  return {"code": e.code, "message": e.read().decode()[:300]}
+
+          def get(path, token, **q):
+              url = BASE + path + "?" + urllib.parse.urlencode(q)
+              req = urllib.request.Request(url, headers={"Access-Token": token})
+              try:
+                  return json.load(urllib.request.urlopen(req, timeout=30))
+              except urllib.error.HTTPError as e:
+                  return {"code": e.code, "message": e.read().decode()[:300]}
+
+          def cifrar(texto):
+              os.makedirs(os.path.dirname(ARCHIVO), exist_ok=True)
+              subprocess.run(["openssl", "enc", "-aes-256-cbc", "-pbkdf2", "-iter", "200000", "-salt",
+                              "-a", "-A", "-out", ARCHIVO, "-pass", "env:APP_SECRET"],
+                             input=texto.encode(), check=True)
+
+          def descifrar():
+              r = subprocess.run(["openssl", "enc", "-d", "-aes-256-cbc", "-pbkdf2", "-iter", "200000",
+                                  "-a", "-A", "-in", ARCHIVO, "-pass", "env:APP_SECRET"],
+                                 capture_output=True, check=True)
+              return r.stdout.decode()
+
+          if modo == "canjear":
+              code = os.environ.get("AUTH_CODE", "").strip()
+              if not code:
+                  sys.exit("Falta el secreto TIKTOK_AUTH_CODE.")
+              r = post("/tt_user/oauth2/token/", {
+                  "client_id": APP_ID, "client_secret": APP_SECRET,
+                  "grant_type": "authorization_code", "auth_code": code,
+                  "redirect_uri": os.environ["REDIRECT_URI"]})
+          else:
+              if not os.path.exists(ARCHIVO):
+                  sys.exit("No hay token guardado todavía: primero corre modo=canjear.")
+              guardado = json.loads(descifrar())
+              ocultar(guardado.get("refresh_token"))
+              r = post("/tt_user/oauth2/refresh_token/", {
+                  "client_id": APP_ID, "client_secret": APP_SECRET,
+                  "grant_type": "refresh_token", "refresh_token": guardado["refresh_token"]})
+
+          d = r.get("data") or {}
+          ocultar(d.get("access_token")); ocultar(d.get("refresh_token"))
+          if r.get("code") not in (0, None) or not d.get("access_token"):
+              sys.exit(f"TikTok rechazó la solicitud: code={r.get('code')} · {r.get('message')}")
+
+          open_id = d.get("open_id")
+          cifrar(json.dumps({"refresh_token": d["refresh_token"], "open_id": open_id,
+                             "guardado": int(time.time()),
+                             "refresh_expira_en_s": d.get("refresh_token_expires_in")}))
+          print("Token guardado cifrado en", ARCHIVO)
+          print("Permisos:", d.get("scope"))
+          print("Access token válido por (s):", d.get("expires_in"),
+                "| refresh token válido por (s):", d.get("refresh_token_expires_in"))
+
+          info = get("/business/get/", d["access_token"], business_id=open_id,
+                     fields=json.dumps(["username", "display_name", "followers_count"]))
+          di = info.get("data") or {}
+          print("Cuenta conectada:", di.get("username"), "·", di.get("display_name"),
+                "· seguidores:", di.get("followers_count"), "| code:", info.get("code"), info.get("message"))
+          PY
+      - name: Guardar token cifrado
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add matriz-viral/tiktok/token.enc
+          if git diff --cached --quiet; then echo "Sin cambios"; exit 0; fi
+          git commit -m "TikTok: token cifrado actualizado"
+          git push
