@@ -28,9 +28,16 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    # Mismo grupo que el job «metricas» de metricas-semanales.yml: los dos
+    # reescriben matriz.json y no pueden correr a la vez.
+    concurrency:
+      group: escribe-matriz
+      cancel-in-progress: false
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
 
       - name: Refrescar matriz.json
         env:
@@ -49,4 +56,5 @@ jobs:
           git config user.email "actions@github.com"
           git add matriz-viral/matriz/matriz.json
           git commit -m "Refresco automático de la matriz (Apify)"
+          git pull --rebase --autostash origin "$GITHUB_REF_NAME"
           git push
