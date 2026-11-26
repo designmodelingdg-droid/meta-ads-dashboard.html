@@ -40,9 +40,13 @@ CFG = {
       portada=dict(lines=['¿PARA QUÉ', 'CONECTAR LA IA', 'A REVIT?'], accent=1, t=3.0)),
  'nav-fragmento-clase-1-reel': dict(base='whisper_l', edits=[('visual,', 0.5, 'visual')],
       portada=dict(lines=['ASÍ SE VE', 'POR DENTRO', 'UN CURSO DE $46.50'], accent=2, t=12.0, chip='CLASE REAL · SAP2000')),
- 'nav-fragmento-clase-2-reel': dict(base='whisper_l', edits=[('aplicación,', 10.5, 'aplicación'), ('la', 11.8, 'de la'), ('cortantes,', 17.3, 'cortantes.'), ('¿sí?', 18.3, '¿Sí?'),
-      ('ahora', 20.1, 'Ahora'), ('safe', 25.9, 'SAFE'), ('zapata', 28, 'zapata.')],
-      portada=dict(lines=['¿ASÍ DISEÑAS', 'TUS ZAPATAS?'], accent=1, t=20.0, chip='CLASE REAL · SAFE')),
+ # 26-nov: corte nuevo con las pausas recortadas y a 1,1× (prep_clase_corte.py); el «¿Sí?» está en la transcripción de Vimeo y Whisper lo salta
+ 'nav-fragmento-clase-2-reel': dict(base='whisper_l', edits=[('aplicación,', 8.5, 'aplicación'), ('la', 9.0, 'de la'), (None, 0, '¿Sí?', (12.81, 13.11))],
+      portada=dict(lines=['¿ASÍ DISEÑAS', 'TUS ZAPATAS?'], accent=1, t=13.5, chip='CLASE REAL · SAFE')),
+ # reel «La IA encontró 3 niveles a la misma altura» (dic-ws-clip-niveles-duplicados-reel): Gabriel no lo dice en voz alta, sale en la pantalla de Claude → cierre con el acercamiento real
+ 's9-niveles-duplicados': dict(base='whisper_l', edits=[('revisan', 3.2, 'revisa'), ('MCP', 7.8, 'MCP.'), ('y', 8.2, 'Y')],
+      portada=dict(lines=['LA IA ENCONTRÓ', '3 NIVELES', 'A LA MISMA ALTURA'], accent=1, t=12.6), post=7.6,
+      cta=dict(zoom='clip/s9-zoom.jpg', rotulo='LO QUE AVISÓ CLAUDE EN PANTALLA', frase=['3 NIVELES', 'A LA MISMA ALTURA'], pregunta=['¿REVISAS NIVELES', 'DUPLICADOS', 'ANTES DE ENTREGAR?'], boton='COMENTA NIVEL', sub='y te mando el test de nivel BIM')),
 }
 
 
@@ -124,9 +128,9 @@ for sid, c in CFG.items():
     fin = round(d['dur'] - 0.02 if c.get('fin_al_final') else min(d['dur'] - 0.02, max(words[-1]['e'], I[-1][1] if I[-1][1] - words[-1]['e'] < 0.6 else 0) + 0.3), 3)
     kind = 'clase' if sid.startswith('nav-') else 'short'
     po = c['portada']; po.setdefault('chip', 'CLIP DEL WORKSHOP EN VIVO')
-    d.update(words=words, fin=fin, kind=kind, portada=po)
+    d.update(words=words, fin=fin, kind=kind, portada=po); extra = {k: c[k] for k in ('post', 'cta') if k in c}; d.update(extra)
     json.dump(d, open(js, 'w'), ensure_ascii=False, indent=1)
-    clips[sid] = dict(id=sid, kind=kind, fin=fin, empalmes=[e for e in d['empalmes'] if e < fin - 0.3], hook=d['hook'], pie=d['pie'], words=words, portada=po)
+    clips[sid] = dict(id=sid, kind=kind, fin=fin, empalmes=[e for e in d['empalmes'] if e < fin - 0.3], hook=d['hook'], pie=d['pie'], words=words, portada=po, **extra)
     print(f"{sid}: {len(words)} palabras ({mov} recolocadas en su isla) · fin {fin}s de {d['dur']}s")
     print('   ', ' '.join(w['w'] for w in words))
 open(f'{P}/src/clips.ts', 'w').write('// Generado por scripts/finalizar.py — no editar a mano.\nimport type { ClipData } from "./Clip";\nexport const CLIPS: Record<string, ClipData> = '

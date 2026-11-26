@@ -10,8 +10,9 @@ type W = { w: string; s: number; e: number };
 export type ClipData = {
   id: string; kind: "short" | "clase"; fin: number; empalmes: number[]; hook: [string, string]; pie: string; words: W[];
   portada: { lines: string[]; accent: number; chip: string }; keys?: string;
+  post?: number; cta?: { zoom: string; rotulo: string; frase: string[]; pregunta: string[]; boton: string; sub: string };
 };
-export const postOf = (d: ClipData) => (d.kind === "clase" ? 4.0 : 1.8);
+export const postOf = (d: ClipData) => d.post ?? (d.kind === "clase" ? 4.0 : 1.8);
 export const clipDuration = (id: string) => { const d = CLIPS[id]; return Math.round((PRE + d.fin + postOf(d)) * FPS); };
 
 const KICKER = { short: "WORKSHOP · IA CONECTADA A REVIT", clase: "PROMO DE NAVIDAD · CLASE REAL" };
@@ -57,6 +58,29 @@ const Subs: React.FC<{ d: ClipData; t: number }> = ({ d, t }) => {
 const Cierre: React.FC<{ d: ClipData }> = ({ d }) => {
   const f = useCurrentFrame(); const { fps } = useVideoConfig();
   const k = spring({ frame: f - 10, fps, config: { damping: 10 } }); const pulse = 1 + 0.03 * Math.sin(f / 5);
+  if (d.cta) { const c = d.cta; const a = 84;                      // 1) acercamiento real a la pantalla · 2) pregunta y «Comenta NIVEL»
+    const z = interpolate(f, [0, a], [1.0, 1.07], clamp); const box = interpolate(f, [16, 30], [0, 1], clamp); const sal = interpolate(f, [a - 6, a + 4], [0, 1], clamp);
+    const k2 = spring({ frame: f - a - 12, fps, config: { damping: 10 } });
+    return (<AbsoluteFill><Bg />
+      <Logos y={262} h={84} />
+      {f < a + 6 && <AbsoluteFill style={{ opacity: 1 - sal, transform: `translateY(${-sal * 60}px)` }}>
+        <Pop at={2} style={{ position: "absolute", left: 0, right: 0, top: 452, textAlign: "center", fontFamily: MONT, fontWeight: 800, fontSize: 32, letterSpacing: 6, color: OR }}>{c.rotulo}</Pop>
+        <Pop at={4} style={{ position: "absolute", left: 40, right: 40, top: 540 }}>
+          <div style={{ position: "relative", borderRadius: 22, overflow: "hidden", border: `6px solid ${OR}`, background: "#fff", boxShadow: "0 30px 70px rgba(0,0,0,.55)", height: 360 }}>
+            <Img src={staticFile(c.zoom)} style={{ position: "absolute", left: -40, top: 60, width: 1320, transform: `scale(${z})`, transformOrigin: "30% 60%" }} />
+            <div style={{ position: "absolute", left: 22, top: 180, width: 700 * box, height: 62, border: "7px solid #E5252A", borderRadius: 10, opacity: box > 0 ? 1 : 0, boxSizing: "border-box" }} />
+            <div style={{ position: "absolute", right: 0, top: 0, bottom: 0, width: 150, background: "linear-gradient(to right, rgba(255,255,255,0), #fff 85%)" }} /></div></Pop>
+        <Pop at={22} style={{ position: "absolute", left: 30, right: 30, top: 960, textAlign: "center" }}>
+          <div style={{ fontFamily: BEBAS, fontSize: 150, lineHeight: 0.93, color: "#fff", letterSpacing: 1 }}>{c.frase[0]}<div style={{ color: OR }}>{c.frase[1]}</div></div></Pop>
+      </AbsoluteFill>}
+      {f >= a - 4 && <AbsoluteFill style={{ opacity: sal }}>
+        <div style={{ position: "absolute", left: 40, right: 40, top: 470, textAlign: "center", fontFamily: BEBAS, fontSize: 128, lineHeight: 0.94, color: "#fff", letterSpacing: 1, transform: `translateY(${(1 - sal) * 40}px)` }}>
+          {c.pregunta.map((l, i) => <div key={i} style={{ color: i === c.pregunta.length - 1 ? OR : "#fff", whiteSpace: "nowrap" }}>{l}</div>)}</div>
+        <div style={{ position: "absolute", left: 40, right: 40, top: 940, display: "flex", justifyContent: "center", transform: `scale(${(0.8 + 0.2 * k2) * pulse})`, opacity: Math.min(1, k2 * 1.5) }}>
+          <div style={{ background: OR, borderRadius: 999, padding: "34px 56px 22px", fontFamily: BEBAS, fontSize: 130, lineHeight: 1, color: "#fff", border: "5px solid #fff", boxShadow: "0 20px 50px rgba(0,0,0,.45)", letterSpacing: 2, whiteSpace: "nowrap" }}>{c.boton}</div></div>
+        <Pop at={a + 22} style={{ position: "absolute", left: 50, right: 50, top: 1170, textAlign: "center", fontFamily: MONT, fontWeight: 800, fontSize: 40, color: "#fff" }}>{c.sub}</Pop>
+      </AbsoluteFill>}
+    </AbsoluteFill>); }
   if (d.kind === "short") return (<AbsoluteFill><Bg />
     <Pop at={2} style={{ position: "absolute", left: 0, right: 0, top: 760 }}><Logos y={0} h={128} /></Pop>
     <Pop at={8} style={{ position: "absolute", left: 0, right: 0, top: 960, textAlign: "center", fontFamily: MONT, fontWeight: 800, fontSize: 32, letterSpacing: 6, color: OR }}>{KICKER.short}</Pop>
