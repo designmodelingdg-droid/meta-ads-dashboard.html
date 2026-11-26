@@ -162,7 +162,7 @@
   },
   "nota": "Diciembre todavía no tiene oferta (pendiente). Se vende por conversación: cada pieza de problema abre un DM con pregunta, y el bot y el equipo llevan al producto. Una venta por semana en historias (jueves 3, 10 y 17-dic y mar 5-ene).",
   "reglas": [
-   "Ningún precio en público. El Máster, nunca (cohorte de febrero, se invita a agendar por WhatsApp https://wa.me/593984372010); Acero, tampoco este mes.",
+   "Ningún precio en público. El Máster, nunca (cohorte de febrero, se invita a agendar por WhatsApp https://wa.me/593984372010); Acero, $225 solo en pauta y en correo a la lista propia (precio confirmado por Dayana el 26-nov); en el contenido orgánico, sin precio.",
    "Si Dayana define una oferta de diciembre o enero, la nombra y le pone precio Ester; va solo por WhatsApp con su mini landing y en público solo con porcentajes.",
    "Sin venta el 24, 25 y 31-dic ni el 1-ene, en ningún canal.",
    "Quien contesta la pregunta del DM con un problema real pasa a una persona en menos de 30 minutos en horario laboral."
@@ -674,106 +674,121 @@
   ]
  },
  "youtube_largos": {
-  "nota": "Videos normales de YouTube (16:9, 2-5 minutos), NO Shorts, hechos con lo mejor del workshop IA conectada a Revit (17-nov). Título que abre con un problema, descripción con capítulos y el test de nivel, y texto de miniatura corto.",
+  "nota": "PLAN VIGENTE (fichas yt1…yt7 de la página de aprobación, 26-nov): 7 videos largos de YouTube en 16:9, de 3 a 5 minutos, sacados del workshop en vivo «IA conectada a Revit» del 17-nov. Salen a las 10:00 (Ecuador) el 1, 4, 8, 11, 15, 18 y 22-dic. Después del 22-dic no hay video nuevo. Reemplaza al plan anterior de 4 videos (dic-yt-conectar-ia-revit, dic-yt-preguntas-al-modelo, dic-yt-niveles-duplicados y ene-yt-donde-se-equivoca), que ya no se publica. Título, duración y descripción copiados de cada ficha.",
+  "nota_shorts": "Los 8 shorts del workshop (s1…s8) se publican en YouTube Shorts y también como reel de Instagram, cada uno en su fecha: s1 Mié 2 dic; s5 Jue 3 dic; s2 Lun 7 dic; s6 Mié 9 dic; s3 Jue 10 dic; s7 Lun 14 dic; s8 Jue 17 dic; s4 Lun 21 dic.",
   "videos": [
+   {
+    "fecha": "Mar 1 dic",
+    "fecha_iso": "2026-12-01",
+    "hora_ecuador": "10:00",
+    "id": "yt1-ia-no-hace-magia",
+    "titulo": "La IA no hace magia: el criterio del BIM Manager que ningún prompt reemplaza",
+    "duracion": "3:44",
+    "descripcion": "Conectar la IA a Revit es fácil. Saber si lo que te responde está bien, no.\n\nEn este fragmento del workshop en vivo «IA conectada a Revit» (17 de noviembre), el Ing. Gabriel Pantoja explica por qué el flujo deja de ser «buscar, exportar, revisar, reportar» y pasa a ser «consultar, analizar y validar», y por qué la última palabra la sigue teniendo el BIM Manager.\n\n👉 ¿En qué nivel BIM estás hoy? Haz el test gratis de 5 minutos: https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form\n\nSi quieres llevar esto a tus proyectos con método, conoce el Máster BIM Management + IA por bloques de Design Modeling Academy. Escríbenos y te contamos por qué bloque empezar.\n\nCapítulos:\n0:00 El objetivo: criterio + IA\n1:07 ¿Basta con saber conectar la IA?\n1:26 Consultar, analizar y validar\n3:38 ¿En qué nivel BIM estás?\n\nHerramientas del workshop: Revit, ChatGPT y Claude, conectados con un servidor MCP de código abierto sobre pyRevit y con NonicaTab AI Connector. El asistente lee el modelo; no modela ni lo modifica.\n\n#Revit #BIM #InteligenciaArtificial #BIMManager #DesignModelingAcademy"
+   },
+   {
+    "fecha": "Vie 4 dic",
+    "fecha_iso": "2026-12-04",
+    "hora_ecuador": "10:00",
+    "id": "yt2-prompt-maestro",
+    "titulo": "Si entra cualquier cosa, sale cualquier cosa: el prompt maestro para BIM",
+    "duracion": "4:30",
+    "descripcion": "Igual que en un programa de cálculo: si los datos de entrada son cualquier cosa, el resultado es cualquier cosa.\n\nEl Ing. Gabriel Pantoja compara en vivo un prompt de una sola línea con un prompt maestro de 7 pasos (objetivo, fuentes, rol, restricciones, formato…) dentro de un GPT especializado en BIM. Fragmento del workshop en vivo «IA conectada a Revit» del 17 de noviembre.\n\n👉 ¿En qué nivel BIM estás hoy? Haz el test gratis de 5 minutos: https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form\n\nSi quieres llevar esto a tus proyectos con método, conoce el Máster BIM Management + IA por bloques de Design Modeling Academy. Escríbenos y te contamos por qué bloque empezar.\n\nCapítulos:\n0:00 GPT especializado y entrenamiento\n1:14 Qué es el prompt maestro (input, proceso, output)\n1:47 Un prompt de una línea: qué pasa\n2:56 Los 7 pasos y el rol\n3:57 La IA no hace magia\n4:24 ¿En qué nivel BIM estás?\n\nHerramientas del workshop: Revit, ChatGPT y Claude, conectados con un servidor MCP de código abierto sobre pyRevit y con NonicaTab AI Connector. El asistente lee el modelo; no modela ni lo modifica.\n\n#Revit #BIM #InteligenciaArtificial #BIMManager #DesignModelingAcademy"
+   },
+   {
+    "fecha": "Mar 8 dic",
+    "fecha_iso": "2026-12-08",
+    "hora_ecuador": "10:00",
+    "id": "yt3-gpt-especializado",
+    "titulo": "Cómo crear tu GPT especializado de BIM Manager (sin pedirle mil cosas)",
+    "duracion": "4:51",
+    "descripcion": "El error más común al crear un GPT: pedirle mil cosas desde el primer día.\n\nGabriel muestra cómo se configura un GPT especializado como BIM Manager de QA/QC: qué va en las instrucciones, por qué la versión 0 tiene que ser muy específica, cómo mejora en cada versión con la validación del profesional y qué documentos cargarle (por ejemplo, la ISO 19650 y los estándares de tu empresa). Fragmento del workshop en vivo «IA conectada a Revit» del 17 de noviembre.\n\n👉 ¿En qué nivel BIM estás hoy? Haz el test gratis de 5 minutos: https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form\n\nSi quieres llevar esto a tus proyectos con método, conoce el Máster BIM Management + IA por bloques de Design Modeling Academy. Escríbenos y te contamos por qué bloque empezar.\n\nCapítulos:\n0:00 Las instrucciones son el prompt maestro\n0:11 Primero: en qué se especializa\n0:46 ¿50 funciones o pocas?\n1:44 Versión 0, 1 y 2 del GPT\n3:41 Documentos: la memoria del GPT\n4:45 ¿En qué nivel BIM estás?\n\nHerramientas del workshop: Revit, ChatGPT y Claude, conectados con un servidor MCP de código abierto sobre pyRevit y con NonicaTab AI Connector. El asistente lee el modelo; no modela ni lo modifica.\n\n#Revit #BIM #InteligenciaArtificial #BIMManager #DesignModelingAcademy"
+   },
    {
     "fecha": "Vie 11 dic",
     "fecha_iso": "2026-12-11",
-    "id": "dic-yt-conectar-ia-revit",
-    "titulo": "Exportas el modelo a Excel para contar puertas: conecté una IA a mi modelo de Revit y se lo pregunté directo",
-    "miniatura_texto": "DEJA DE EXPORTAR A EXCEL",
-    "duracion": "4-5 min",
-    "descripcion": "¿Cuántas veces exportaste un modelo de Revit a Excel solo para contar puertas o revisar un parámetro?\n\nEn este video, tomado del workshop en vivo del 17 de noviembre, el Ing. Gabriel Pantoja conecta un asistente de IA a un modelo real de Revit con un servidor MCP de código abierto (pyRevit) y NonicaTab AI Connector (vista previa técnica, de solo lectura) y le hace preguntas sin exportar nada. También verás lo que no hace: no modela ni modifica el modelo.\n\n¿Quieres saber en qué nivel BIM estás? Test gratis de 5 minutos: https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form\n\nCapítulos:\n0:00 El problema: exportar para preguntar\n0:30 Qué se necesita (Revit + servidor MCP de código abierto)\n1:30 Conectar el asistente\n2:40 La primera pregunta al modelo\n3:40 Lo que NO hace\n4:20 Cierre\n\n#Revit #BIM #InteligenciaArtificial #RevitMCP #DesignModelingAcademy",
-    "tramos": [
-     [
-      "46:15",
-      "46:38",
-      "chat"
-     ],
-     [
-      "48:35",
-      "48:46",
-      "chat"
-     ],
-     [
-      "57:05",
-      "57:56",
-      "revit + chat"
-     ],
-     [
-      "(Daniela)",
-      "",
-      "tramo donde Gabriel explica qué se instala; ubicarlo entre 40:00 y 46:00"
-     ]
-    ]
+    "hora_ecuador": "10:00",
+    "id": "yt5-chatgpt-revit-pyrevit",
+    "titulo": "Conecté ChatGPT a mi modelo de Revit con pyRevit y un servidor MCP de código abierto",
+    "duracion": "4:48",
+    "descripcion": "¿Todavía exportas el modelo a Excel para revisar niveles o contar elementos?\n\nPaso a paso del workshop en vivo «IA conectada a Revit» (17 de noviembre): requisitos, instalación de pyRevit, el servidor MCP de código abierto que se conecta a Revit y la primera prueba, pedirle a ChatGPT el nombre del proyecto y la lista de niveles con sus elevaciones. Es una conexión de lectura: sirve para consultar y gestionar información, no para modelar.\n\n👉 ¿En qué nivel BIM estás hoy? Haz el test gratis de 5 minutos: https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form\n\nSi quieres llevar esto a tus proyectos con método, conoce el Máster BIM Management + IA por bloques de Design Modeling Academy. Escríbenos y te contamos por qué bloque empezar.\n\nCapítulos:\n0:00 Del chat al modo Work\n0:27 Requisitos y pyRevit\n1:36 Instalar el MCP\n1:49 La pestaña MCP en Revit\n2:42 Primera prueba: lista los niveles\n4:42 ¿En qué nivel BIM estás?\n\nHerramientas del workshop: Revit, ChatGPT y Claude, conectados con un servidor MCP de código abierto sobre pyRevit y con NonicaTab AI Connector. El asistente lee el modelo; no modela ni lo modifica.\n\n#Revit #BIM #InteligenciaArtificial #BIMManager #DesignModelingAcademy"
+   },
+   {
+    "fecha": "Mar 15 dic",
+    "fecha_iso": "2026-12-15",
+    "hora_ecuador": "10:00",
+    "id": "yt4-conectar-o-no",
+    "titulo": "¿Qué cambia si conectas tu GPT a Revit? (y qué NO cambia)",
+    "duracion": "3:08",
+    "descripcion": "Conectar la IA a Revit no te convierte en BIM Manager. Te hace llegar más rápido a la información.\n\nSin conexión, tienes que pasarle capturas y descripciones a la IA. Conectada, lee el modelo directamente. Pero el prompt maestro y la validación del profesional siguen siendo los mismos. Fragmento del workshop en vivo «IA conectada a Revit» del 17 de noviembre con el Ing. Gabriel Pantoja.\n\n👉 ¿En qué nivel BIM estás hoy? Haz el test gratis de 5 minutos: https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form\n\nSi quieres llevar esto a tus proyectos con método, conoce el Máster BIM Management + IA por bloques de Design Modeling Academy. Escríbenos y te contamos por qué bloque empezar.\n\nCapítulos:\n0:00 Gestionar información, no modelar\n0:21 ¿Qué cambia al conectarlo?\n0:37 El criterio no cambia\n2:00 Más rápido, mismo método\n3:02 ¿En qué nivel BIM estás?\n\nHerramientas del workshop: Revit, ChatGPT y Claude, conectados con un servidor MCP de código abierto sobre pyRevit y con NonicaTab AI Connector. El asistente lee el modelo; no modela ni lo modifica.\n\n#Revit #BIM #InteligenciaArtificial #BIMManager #DesignModelingAcademy"
    },
    {
     "fecha": "Vie 18 dic",
     "fecha_iso": "2026-12-18",
-    "id": "dic-yt-preguntas-al-modelo",
-    "titulo": "¿Cuántos muros tiene tu modelo? Se lo pregunté a la IA y lo comprobé en Revit",
-    "miniatura_texto": "¿CUÁNTOS MUROS? · 4 SEGUNDOS",
-    "duracion": "3-4 min",
-    "descripcion": "Le preguntamos a un modelo real de Revit cuántos muros, puertas y niveles tiene. La IA respondió en segundos… y después lo comprobamos en Revit, número por número.\n\nTomado del workshop en vivo IA conectada a Revit (17-nov) con el Ing. Gabriel Pantoja. Revit + servidor MCP de código abierto (pyRevit) y NonicaTab AI Connector (vista previa técnica, de solo lectura).\n\nTest de nivel BIM gratis (5 minutos): https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form\n\nCapítulos:\n0:00 Abrir tablas para una pregunta simple\n0:25 Los niveles del modelo\n1:40 Muros y puertas: la respuesta\n2:30 La comprobación en Revit\n3:20 Cuándo confiar y cuándo no\n\n#Revit #BIM #InteligenciaArtificial #ControlDeCalidad #DesignModelingAcademy",
-    "tramos": [
-     [
-      "58:38",
-      "60:00",
-      "chat (niveles)"
-     ],
-     [
-      "65:12",
-      "65:36",
-      "chat (muros y puertas)"
-     ],
-     [
-      "65:46",
-      "66:30",
-      "revit (comprobación)"
-     ]
-    ]
+    "hora_ecuador": "10:00",
+    "id": "yt6-1880-muros",
+    "titulo": "La IA dijo 1.880 muros. Revit dice 1.859. ¿Quién contó bien?",
+    "duracion": "3:43",
+    "descripcion": "Le preguntamos a la IA cuántas puertas y muros tenía un modelo real de Revit. Después lo comprobamos con un filtro.\n\nLas puertas coincidieron: 75. Los muros, no: la IA dijo 1.880 y el filtro de Revit marcó 1.859. Ahí entra el criterio del BIM Manager. Fragmento del workshop en vivo «IA conectada a Revit» (17 de noviembre), con ChatGPT conectado a Revit mediante pyRevit y un servidor MCP de código abierto.\n\n👉 ¿En qué nivel BIM estás hoy? Haz el test gratis de 5 minutos: https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form\n\nSi quieres llevar esto a tus proyectos con método, conoce el Máster BIM Management + IA por bloques de Design Modeling Academy. Escríbenos y te contamos por qué bloque empezar.\n\nCapítulos:\n0:00 75 puertas y 1.880 muros: lo comprobamos\n1:08 El siguiente paso: el prompt maestro\n2:34 Los componentes del sistema\n3:19 ¿Plan gratis o de pago?\n3:37 ¿En qué nivel BIM estás?\n\nHerramientas del workshop: Revit, ChatGPT y Claude, conectados con un servidor MCP de código abierto sobre pyRevit y con NonicaTab AI Connector. El asistente lee el modelo; no modela ni lo modifica.\n\n#Revit #BIM #InteligenciaArtificial #BIMManager #DesignModelingAcademy"
    },
    {
-    "fecha": "Mar 29 dic",
-    "fecha_iso": "2026-12-29",
-    "id": "dic-yt-niveles-duplicados",
-    "titulo": "3 niveles a la misma altura: el error que tu modelo esconde y la IA encontró",
-    "miniatura_texto": "3 NIVELES · MISMA ALTURA",
-    "duracion": "3 min",
-    "descripcion": "Le pedimos a la IA un resumen de un modelo real de Revit y avisó algo que no se ve a simple vista: 3 niveles a la misma altura (8,70 m). Puede ser intencional, pero es una duplicación típica que conviene revisar antes de entregar.\n\nTomado del workshop en vivo IA conectada a Revit (17-nov) con el Ing. Gabriel Pantoja.\n\nTest de nivel BIM gratis (5 minutos): https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form\n\nCapítulos:\n0:00 El error que no se ve\n0:30 El resumen del modelo\n1:30 3 niveles a 8,70 m\n2:20 Cómo revisarlo en Revit\n3:00 Revisión de fin de año\n\n#Revit #BIM #BIMManager #ControlDeCalidad #DesignModelingAcademy",
-    "tramos": [
-     [
-      "76:16",
-      "76:40",
-      "Revit + AI Connector"
-     ],
-     [
-      "77:16",
-      "78:05",
-      "Claude"
-     ],
-     [
-      "(Daniela)",
-      "",
-      "1-2 min de contexto antes del 76:16 (cómo se pidió el resumen)"
-     ]
-    ]
+    "fecha": "Mar 22 dic",
+    "fecha_iso": "2026-12-22",
+    "hora_ecuador": "10:00",
+    "id": "yt7-claude-revit-nonica",
+    "titulo": "Conectar Claude a Revit con NonicaTab AI Connector (paso a paso)",
+    "duracion": "4:43",
+    "descripcion": "La segunda forma de conectar la IA a Revit: Claude de escritorio y NonicaTab.\n\nGabriel muestra dónde descargar NonicaTab, por qué en el workshop usó una versión de Revit distinta para cada asistente (ChatGPT en Revit 2026 y Claude en Revit 2025), cómo activar el AI Connector y la misma prueba de conexión: pedirle a Claude un resumen del modelo abierto. Fragmento del workshop en vivo «IA conectada a Revit» del 17 de noviembre.\n\n👉 ¿En qué nivel BIM estás hoy? Haz el test gratis de 5 minutos: https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form\n\nSi quieres llevar esto a tus proyectos con método, conoce el Máster BIM Management + IA por bloques de Design Modeling Academy. Escríbenos y te contamos por qué bloque empezar.\n\nCapítulos:\n0:00 Lo que necesitas: NonicaTab\n0:39 Versiones de Revit: una IA por versión\n2:08 Abrir Revit con NonicaTab\n2:48 Activar el AI Connector\n3:19 La misma prueba con Claude\n3:55 El plugin de Revit en Claude\n4:37 ¿En qué nivel BIM estás?\n\nHerramientas del workshop: Revit, ChatGPT y Claude, conectados con un servidor MCP de código abierto sobre pyRevit y con NonicaTab AI Connector. El asistente lee el modelo; no modela ni lo modifica.\n\n#Revit #BIM #InteligenciaArtificial #BIMManager #DesignModelingAcademy"
+   }
+  ],
+  "shorts": [
+   {
+    "fecha": "Mié 2 dic",
+    "fecha_iso": "2026-12-02",
+    "id": "s1-1880-muros",
+    "titulo": "La IA dijo 1.880 muros. Revit dice 1.859 🤔 #Revit #BIM"
    },
    {
-    "fecha": "Mar 5 ene",
-    "fecha_iso": "2027-01-05",
-    "id": "ene-yt-donde-se-equivoca",
-    "titulo": "Dónde se equivoca la IA cuando lee tu modelo de Revit (y cómo darte cuenta)",
-    "miniatura_texto": "LA IA SE EQUIVOCÓ AQUÍ",
-    "duracion": "4 min",
-    "descripcion": "La IA contesta rápido y seguro. Eso no significa que tenga razón. En este bloque del workshop en vivo del 17-nov, el Ing. Gabriel Pantoja muestra dónde se equivoca un asistente conectado a Revit y cómo comprobar cada respuesta antes de usarla.\n\nTest de nivel BIM gratis (5 minutos): https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form\n\nCapítulos:\n0:00 Rápido no es correcto\n0:30 La pregunta\n1:30 La respuesta que falló\n2:40 Cómo nos dimos cuenta\n3:40 La regla: el número lo firma el ingeniero\n\n#Revit #BIM #InteligenciaArtificial #BIMManager #DesignModelingAcademy",
-    "tramos": [
-     [
-      "(Daniela)",
-      "",
-      "bloque «Dónde se equivoca la IA» de la grabación: ubicar inicio y fin (está en la segunda mitad del workshop)"
-     ]
-    ]
+    "fecha": "Jue 3 dic",
+    "fecha_iso": "2026-12-03",
+    "id": "s5-cualquier-cosa",
+    "titulo": "Si entra cualquier cosa, sale cualquier cosa (también con la IA) #BIM #IA"
+   },
+   {
+    "fecha": "Lun 7 dic",
+    "fecha_iso": "2026-12-07",
+    "id": "s2-niveles",
+    "titulo": "Le pregunté a mi modelo de Revit por sus niveles (sin exportar a Excel) #Revit"
+   },
+   {
+    "fecha": "Mié 9 dic",
+    "fecha_iso": "2026-12-09",
+    "id": "s6-no-hace-magia",
+    "titulo": "La IA no hace magia: el criterio sigue siendo tuyo #BIMManager"
+   },
+   {
+    "fecha": "Jue 10 dic",
+    "fecha_iso": "2026-12-10",
+    "id": "s3-conectar-chatgpt",
+    "titulo": "Así se conecta ChatGPT a Revit (pyRevit + MCP de código abierto) #Revit"
+   },
+   {
+    "fecha": "Lun 14 dic",
+    "fecha_iso": "2026-12-14",
+    "id": "s7-mil-cosas",
+    "titulo": "No le pidas mil cosas a tu GPT #IA #BIM"
+   },
+   {
+    "fecha": "Jue 17 dic",
+    "fecha_iso": "2026-12-17",
+    "id": "s8-para-que-conectar",
+    "titulo": "¿Para qué conectar la IA a Revit? (y lo que NO cambia) #BIM"
+   },
+   {
+    "fecha": "Lun 21 dic",
+    "fecha_iso": "2026-12-21",
+    "id": "s4-claude-revit",
+    "titulo": "Conecté Claude a mi modelo de Revit con NonicaTab #Revit #Claude"
    }
   ]
  },
@@ -2967,7 +2982,7 @@
    "preencabezado": "Una de ellas la encontró la IA en vivo.",
    "segmento": "Lista general",
    "objetivo": "Valor en semana de fiestas; puerta al test de nivel",
-   "cuerpo": "Antes de cerrar el año, tres revisiones rápidas a tu modelo:\n\n1 · Niveles duplicados: en el workshop, la IA encontró 3 niveles a la misma altura en un modelo real.\n2 · Parámetros vacíos en los elementos que se van a cuantificar.\n3 · Que los niveles de arquitectura y de estructura digan qué miden (piso terminado o losa).\n\nEl video largo con el caso de los niveles sale el 29 en nuestro YouTube.\n\nSi quieres saber en qué nivel BIM cierras el año, el test toma 5 minutos:\n\nBotón: Hacer el test → https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form\n\nFelices fiestas de parte de todo el equipo de Design Modeling Academy.",
+   "cuerpo": "Antes de cerrar el año, tres revisiones rápidas a tu modelo:\n\n1 · Niveles duplicados: en el workshop, la IA encontró 3 niveles a la misma altura en un modelo real.\n2 · Parámetros vacíos en los elementos que se van a cuantificar.\n3 · Que los niveles de arquitectura y de estructura digan qué miden (piso terminado o losa).\n\nEl video largo con el caso de los niveles sale hoy en nuestro YouTube.\n\nSi quieres saber en qué nivel BIM cierras el año, el test toma 5 minutos:\n\nBotón: Hacer el test → https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form\n\nFelices fiestas de parte de todo el equipo de Design Modeling Academy.",
    "condicion": "Semana de fiestas: correo de valor, sin venta."
   },
   {
@@ -3034,7 +3049,7 @@
  "pendientes": [
   "OFERTA DE DICIEMBRE: la pasa Dayana después. Slot reservado: historia de venta del jue 17-dic y correo del mié 16-dic (si la oferta es de otro producto, la historia cambia de producto). En público solo porcentajes; precio por WhatsApp.",
   "Oferta de enero (historia del 5-ene y correo del 5-ene): la pasa Dayana si la hay.",
-  "Precio vigente de Acero en diciembre para el equipo comercial (el $225 era «todo noviembre»). En público no se dice (confirmar con Dayana).",
+  "RESUELTO (Dayana, 26-nov): el precio de Acero en diciembre es $225. Va solo en pauta (anuncios ACERO A y B) y en correo a lista propia; en orgánico no se dice. · Antes: «Precio vigente de Acero en diciembre para el equipo comercial (el $225 era «todo noviembre»). En público no se dice (confirmar con Dayana).»",
   "Testimonio de Acero (4-dic): Daniela confirma en el reel del 23-oct (De2JwdYlfH9) que el alumno dice «Ustedes han sido una gran solución»; si no, usa otra frase textual del mismo video.",
   "Palabra de venta ESTRUCTURAS para la historia del jue 17-dic: la contesta una persona, como NAVES en noviembre (confirmar con Dayana o cambiar por la que prefiera).",
   "Permiso para contar el caso del alumno de los ratios de 1,4 (reel del 15-dic) (confirmar con Dayana / Gabriel).",
