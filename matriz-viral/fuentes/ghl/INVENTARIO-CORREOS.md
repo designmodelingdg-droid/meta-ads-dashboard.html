@@ -1,8 +1,8 @@
 # Inventario de correos — GoHighLevel
 
-Generado el 2026-11-20.
+Generado el 2026-11-26.
 
-**470 plantillas** en **57 carpetas**. 470 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
+**470 plantillas** en **62 carpetas**. 470 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
 
 > Lo que NO sale por API: que workflow usa que plantilla. El endpoint de automatizaciones devuelve solo metadatos. En esta cuenta las plantillas estan nombradas por su flujo, asi que el cruce se puede hacer leyendo.
 
@@ -10355,7 +10355,7 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
-## ✅ CAMPAÑAS MENSUALES/ANUNCIOS
+## ✅ CAMPAÑAS MENSUALES/ANUNCIOS > Blackfriday 2026
 
 ### ✅ Bf 01 inicio blackfriday
 
@@ -10489,6 +10489,76 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
+### ✅BF 03 Inscritos acceso prioritario
+
+- **id:** `6afcaaa45ddb9dde6e7e9356`
+- **tipo:** html
+- **actualizada:** 2026-11-23T14:10:51.441Z
+- **Cuerpo:**
+
+```
+Marketing -> Correos -> Plantillas -> Code Editor (Ctrl+A, Ctrl+V)
+Variables: contact.first_name y el enlace de baja del pie
+-->
+Para ti ya est&aacute; abierto desde hoy lunes 23, antes que para todos.
+&#127873; Acceso anticipado para la comunidad &middot; Abierto desde hoy lunes 23 de noviembre, 00:00
+&#128197; 23 &ndash; 30 NOV
+&#127891; 62 programas
+&#128279; Sin c&oacute;digo
+&#127873; Regalo para la comunidad
+BLACK FRIDAY
+ADELANTADO PARA TI
+hasta 50% OFF
+Por ser parte de nuestra comunidad, para ti el Black Friday ya est&aacute; abierto desde hoy lunes 23 a las 00:00 , antes que para todos. Sin cupones.
+&#9733; Cursos &minus;50% &#9733; Autodesk + IA &minus;50% &#9733; Especializaciones &minus;40% &#9733; Diplomados &minus;40% &#9733; M&aacute;ster por bloques &minus;25% &#9733;
+&#127873; Solo para la comunidad DMA
+Te tenemos un regalo: tu Black Friday ya empez&oacute;
+Hola {{contact.first_name}} ,
+Por ser parte de Design Modeling Academy queremos que seas de los primeros. El Black Friday abre para todos el viernes 27, pero para ti ya est&aacute; abierto desde hoy lunes 23 de noviembre a las 00:00 (hora de Ecuador).
+Tienes varios d&iacute;as de ventaja para elegir con calma tu siguiente curso, especializaci&oacute;n, diplomado o bloque del M&aacute;ster, con el descuento ya aplicado:
+50 %
+OFF
+Cursos y Autodesk + IA
+Formaci&oacute;n puntual con certificado
+40 %
+OFF
+Especializaciones y Diplomados
+Rutas completas por &aacute;rea
+25 %
+OFF
+M&aacute;ster BIM + IA por bloques
+Cada uno de los 4 bloques
+&#9889; Sin c&oacute;digos: el precio ya viene con el descuento aplicado en 62 programas . Entras, eliges y pagas.
+fin: 30/11/2026 23:59 (cierre), zona America/Guayaquil (GMT-5),
+fondo #0C0C0E, numeros #FFFFFF, etiquetas #A1A1AA (acento rojo #E3121B), textos: Dias / Horas / Min / Seg.
+2) Copia la URL de la imagen que te da y pegala en TIMER_GIF_URL (abajo).
+3) Quita las marcas de comentario que rodean la etiqueta img de la OPCION A y borra el bloque OPCION B.
+OPCION B (activa por defecto): cierre fijo en cajas tipo contador. Funciona en todos los correos.
+-->
+&#9201;&#65039; Tu acceso anticipado ya est&aacute; abierto &middot; cierra el
+-->
+LUN
+D&iacute;a
+30
+Nov
+23:59
+Hora
+ECU
+GMT-5
+&#128197; Para ti: desde hoy lunes 23 de noviembre (00:00) hasta el lunes 30 de noviembre (23:59), hora de Ecuador.
+Para el p&uacute;blico general abre el viernes 27.
+ENTRAR A MI BLACK FRIDAY &#8594;
+El bot&oacute;n te lleva directo a los descuentos, ya activos para ti.
+P.D. Es nuestra forma de agradecerte por confiar en nosotros. Aprov&eacute;chalo antes de que se abra para todos.
+Un saludo,
+Equipo Design Modeling
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+## ✅ CAMPAÑAS MENSUALES/ANUNCIOS > Calendarios
+
 ### ✅ Calendario NOVIEMBRE 2026
 
 - **id:** `6af3409c3f62ac8f7f30550f`
@@ -10559,6 +10629,45 @@ designmodelingacademy.com
 {{unsubscribe_url}}
 ```
 
+## ✅ CAMPAÑAS MENSUALES/ANUNCIOS > Halloween 2026
+
+### ✅ Halloween promo cursos
+
+- **id:** `6ae20aeeebf815b19e5aea35`
+- **tipo:** html
+- **actualizada:** 2026-10-28T15:03:15.153Z
+- **Cuerpo:**
+
+```
+Marketing -> Correos -> Plantillas -> Code Editor (Ctrl+A, Ctrl+V)
+Variables: {{contact.first_name}} y la baja (pie)
+-->
+Del 30 oct al 1 nov. Acceso por 1 mes y certificado DMA.
+&#127875; Promo Halloween &#128376;&#65039;
+Lo &uacute;nico que deber&iacute;a darte miedo es seguir calculando a ciegas
+Hola {{contact.first_name}} ,
+Este Halloween tienes 35 cursos BIM a elecci&oacute;n de dise&ntilde;o estructural, cimentaciones, acero y BIM. Eliges el que quieras y te lo llevas a $19.99 USD cada uno , en lugar de $154.99 . Solo escribe el c&oacute;digo al pagar.
+C&oacute;digo
+SUSTO
+Escr&iacute;belo en el campo de cup&oacute;n al pagar cada curso
+&#10003;
+35 cursos BIM a elecci&oacute;n, a $19.99 USD cada uno
+&#10003;
+Acceso por 1 mes
+&#10003;
+Certificado DMA con c&oacute;digo QR
+&#10003;
+Material descargable
+&#128197; Solo del viernes 30 de octubre al domingo 1 de noviembre
+VER LOS 35 CURSOS &#8594;
+&iquest;DUDAS? ESCR&Iacute;BENOS
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+## ✅ CAMPAÑAS MENSUALES/ANUNCIOS > Productos
+
 ### ✅ Campaña Máster x Bloques
 
 - **id:** `6aac2964bbf4cb7988f74ca9`
@@ -10615,109 +10724,6 @@ Agendar una cita
 &iquest;Prefieres preguntarnos primero?
 Escr&iacute;benos por WhatsApp y un asesor acad&eacute;mico te responde directamente.
 Hablar por WhatsApp
-Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
-designmodelingacademy.com
-{{unsubscribe_url}}
-```
-
-### ✅ Halloween promo cursos
-
-- **id:** `6ae20aeeebf815b19e5aea35`
-- **tipo:** html
-- **actualizada:** 2026-10-28T15:03:15.153Z
-- **Cuerpo:**
-
-```
-Marketing -> Correos -> Plantillas -> Code Editor (Ctrl+A, Ctrl+V)
-Variables: {{contact.first_name}} y la baja (pie)
--->
-Del 30 oct al 1 nov. Acceso por 1 mes y certificado DMA.
-&#127875; Promo Halloween &#128376;&#65039;
-Lo &uacute;nico que deber&iacute;a darte miedo es seguir calculando a ciegas
-Hola {{contact.first_name}} ,
-Este Halloween tienes 35 cursos BIM a elecci&oacute;n de dise&ntilde;o estructural, cimentaciones, acero y BIM. Eliges el que quieras y te lo llevas a $19.99 USD cada uno , en lugar de $154.99 . Solo escribe el c&oacute;digo al pagar.
-C&oacute;digo
-SUSTO
-Escr&iacute;belo en el campo de cup&oacute;n al pagar cada curso
-&#10003;
-35 cursos BIM a elecci&oacute;n, a $19.99 USD cada uno
-&#10003;
-Acceso por 1 mes
-&#10003;
-Certificado DMA con c&oacute;digo QR
-&#10003;
-Material descargable
-&#128197; Solo del viernes 30 de octubre al domingo 1 de noviembre
-VER LOS 35 CURSOS &#8594;
-&iquest;DUDAS? ESCR&Iacute;BENOS
-Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
-designmodelingacademy.com
-{{unsubscribe_url}}
-```
-
-### ✅BF 03 Inscritos acceso prioritario
-
-- **id:** `6afcaaa45ddb9dde6e7e9356`
-- **tipo:** html
-- **actualizada:** 2026-11-17T19:28:42.447Z
-- **Cuerpo:**
-
-```
-Marketing -> Correos -> Plantillas -> Code Editor (Ctrl+A, Ctrl+V)
-Variables: contact.first_name y el enlace de baja del pie
--->
-Para ti se abre el jueves 26 a las 00:00, un d&iacute;a antes que para todos.
-&#127873; Acceso anticipado para alumnos &middot; Se abre el jueves 26 de noviembre, 00:00
-&#128197; 26 &ndash; 30 NOV
-&#127891; 62 programas
-&#128279; Sin c&oacute;digo
-&#127873; Regalo para alumnos
-BLACK FRIDAY
-ADELANTADO PARA TI
-hasta 50% OFF
-Por estar inscrito en nuestros cursos, para ti el Black Friday se abre el jueves 26 a las 00:00 , un d&iacute;a antes que para todos. Sin cupones.
-&#9733; Cursos &minus;50% &#9733; Autodesk + IA &minus;50% &#9733; Especializaciones &minus;40% &#9733; Diplomados &minus;40% &#9733; M&aacute;ster por bloques &minus;25% &#9733;
-&#127873; Solo para alumnos DMA
-Te tenemos un regalo: tu Black Friday llega adelantado
-Hola {{contact.first_name}} ,
-Por ser parte de Design Modeling Academy queremos que seas de los primeros. El Black Friday abre para todos el viernes 27, pero para ti se abre el jueves 26 de noviembre a las 00:00 (hora de Ecuador).
-Tienes un d&iacute;a completo de ventaja para elegir con calma tu siguiente curso, especializaci&oacute;n, diplomado o bloque del M&aacute;ster, con el descuento ya aplicado:
-50 %
-OFF
-Cursos y Autodesk + IA
-Formaci&oacute;n puntual con certificado
-40 %
-OFF
-Especializaciones y Diplomados
-Rutas completas por &aacute;rea
-25 %
-OFF
-M&aacute;ster BIM + IA por bloques
-Cada uno de los 4 bloques
-&#9889; Sin c&oacute;digos: el precio ya viene con el descuento aplicado en 62 programas . Entras, eliges y pagas.
-fin: 26/11/2026 00:00 (apertura para alumnos), zona America/Guayaquil (GMT-5),
-fondo #0C0C0E, numeros #FFFFFF, etiquetas #A1A1AA (acento rojo #E3121B), textos: Dias / Horas / Min / Seg.
-2) Copia la URL de la imagen que te da y pegala en TIMER_GIF_URL (abajo).
-3) Quita las marcas de comentario que rodean la etiqueta img de la OPCION A y borra el bloque OPCION B.
-OPCION B (activa por defecto): cierre fijo en cajas tipo contador. Funciona en todos los correos.
--->
-&#9201;&#65039; Tu acceso anticipado se abre el
--->
-JUE
-D&iacute;a
-26
-Nov
-00:00
-Hora
-ECU
-GMT-5
-&#128197; Para ti: del jueves 26 de noviembre (00:00) al lunes 30 de noviembre (23:59), hora de Ecuador.
-Para el p&uacute;blico general abre el viernes 27.
-ENTRAR A MI BLACK FRIDAY &#8594;
-Guarda este correo: el bot&oacute;n te lleva directo a los descuentos desde el jueves 26 a las 00:00.
-P.D. Es nuestra forma de agradecerte por confiar en nosotros. Aprov&eacute;chalo antes de que se abra para todos.
-Un saludo,
-Equipo Design Modeling
 Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
 designmodelingacademy.com
 {{unsubscribe_url}}

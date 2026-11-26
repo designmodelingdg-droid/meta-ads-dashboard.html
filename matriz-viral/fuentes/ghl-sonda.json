@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-20",
+  "generado": "2026-11-26",
   "location": "nkKbOarn5IwHeMv48uY9",
   "nota": "Sonda: comprueba QUE endpoints responden con nuestro token. No baja datos de negocio. Lo importante es si abren 'cursos · productos' y 'membresias': ahi vive el progreso de los alumnos, que Windsor NO expone.",
   "resultados": {
@@ -121,7 +121,7 @@
     "workflows": {
       "ok": true,
       "http": 200,
-      "registros": "159+",
+      "registros": "158+",
       "claves": [
         "traceId",
         "workflows"
@@ -131,7 +131,7 @@
     "etiquetas": {
       "ok": true,
       "http": 200,
-      "registros": "653+",
+      "registros": "657+",
       "claves": [
         "tags",
         "traceId"
@@ -151,7 +151,7 @@
     "conversaciones": {
       "ok": true,
       "http": 200,
-      "registros": 28969,
+      "registros": 10000,
       "claves": [
         "conversations",
         "total",
@@ -162,7 +162,7 @@
     "pagos · órdenes": {
       "ok": true,
       "http": 200,
-      "registros": 223,
+      "registros": 224,
       "claves": [
         "data",
         "totalCount",
@@ -184,7 +184,7 @@
     "pagos · transacciones": {
       "ok": true,
       "http": 200,
-      "registros": 485,
+      "registros": 486,
       "claves": [
         "data",
         "totalCount",
@@ -221,19 +221,67 @@
         "updatedAt",
         "version"
       ],
-      "total": 159,
+      "total": 158,
       "lista": [
         {
-          "nombre": "Seguimiento Workshop",
+          "nombre": "✅ Lead Recontacto Máster BIM+IA",
           "estado": "published",
-          "actualizado": "2026-11-20",
-          "id": "5c840090-ddb7-4600-b5a2-22b7b85e4074"
+          "actualizado": "2026-11-25",
+          "id": "1239b4c0-cdfc-4fab-a84b-f4e05874a9ea"
         },
         {
-          "nombre": "✅ Seguimiento 5 de Especialización en Acero",
+          "nombre": "✅ Seguimientos 1,2,3 y 4 Especialización Acero",
+          "estado": "draft",
+          "actualizado": "2026-11-25",
+          "id": "87fe06b9-861b-4226-8b97-f79aa95c7109"
+        },
+        {
+          "nombre": "✅ Acceso CAMPUS Curso Colección Autodesk+IA",
           "estado": "published",
-          "actualizado": "2026-11-20",
-          "id": "d0716285-9f49-427c-995e-d5826426feff"
+          "actualizado": "2026-11-23",
+          "id": "2695fdd0-982e-4ea3-8542-ecb33b8f5717"
+        },
+        {
+          "nombre": "✅ Acceso CAMPUS Cursos BIM Catalogo",
+          "estado": "published",
+          "actualizado": "2026-11-23",
+          "id": "0e573a72-937b-46d7-8c33-1e1cfaca47f7"
+        },
+        {
+          "nombre": "✅ Acceso CAMPUS Diplomados + Máster",
+          "estado": "published",
+          "actualizado": "2026-11-23",
+          "id": "ab429e6a-fd8b-44a9-9006-ff43e1b3145d"
+        },
+        {
+          "nombre": "✅ Acceso CAMPUS Especializaciones BIM paquete",
+          "estado": "published",
+          "actualizado": "2026-11-23",
+          "id": "9a03f489-b237-48fc-94ad-091d805dbfbd"
+        },
+        {
+          "nombre": "✅ Comentario BLACK - Blackfriday 2026",
+          "estado": "published",
+          "actualizado": "2026-11-23",
+          "id": "cc5d67c7-64e4-4037-9933-3b79c3ae2f69"
+        },
+        {
+          "nombre": "✅ Palabras Claves en  Estados WS",
+          "estado": "published",
+          "actualizado": "2026-11-23",
+          "id": "573cd148-8abd-4968-b466-8fbec1d4bd15"
+        },
+        {
+          "nombre": "✅ Palabras Claves en Historias IG",
+          "estado": "published",
+          "actualizado": "2026-11-23",
+          "id": "d0430404-2323-4e27-a4d7-28316b6ba8b9"
+        },
+        {
+          "nombre": "✅ TikTok DM – Entrega lead magnets",
+          "estado": "published",
+          "actualizado": "2026-11-23",
+          "id": "ca9f4186-991a-45f7-9dba-184287170adb"
         },
         {
           "nombre": "ACCESO CURSOS LMS",
@@ -342,30 +390,6 @@
           "estado": "published",
           "actualizado": "2026-11-19",
           "id": "1a970dc0-2cd5-40bb-b0ad-612b23fabd7d"
-        },
-        {
-          "nombre": "✅ Acceso CAMPUS Curso Colección Autodesk+IA",
-          "estado": "published",
-          "actualizado": "2026-11-19",
-          "id": "2695fdd0-982e-4ea3-8542-ecb33b8f5717"
-        },
-        {
-          "nombre": "✅ Acceso CAMPUS Cursos BIM Catalogo",
-          "estado": "published",
-          "actualizado": "2026-11-19",
-          "id": "0e573a72-937b-46d7-8c33-1e1cfaca47f7"
-        },
-        {
-          "nombre": "✅ Acceso CAMPUS Diplomados + Máster",
-          "estado": "published",
-          "actualizado": "2026-11-19",
-          "id": "ab429e6a-fd8b-44a9-9006-ff43e1b3145d"
-        },
-        {
-          "nombre": "✅ Acceso CAMPUS Especializaciones BIM paquete",
-          "estado": "published",
-          "actualizado": "2026-11-19",
-          "id": "9a03f489-b237-48fc-94ad-091d805dbfbd"
         },
         {
           "nombre": "✅ Acceso a LEADMAGNETS Gratis",
@@ -524,18 +548,6 @@
           "id": "b198bb30-0f7e-4791-8f74-5efa8b12a8d8"
         },
         {
-          "nombre": "✅ Palabras Claves en  Estados WS",
-          "estado": "published",
-          "actualizado": "2026-11-19",
-          "id": "573cd148-8abd-4968-b466-8fbec1d4bd15"
-        },
-        {
-          "nombre": "✅ Palabras Claves en Historias IG",
-          "estado": "published",
-          "actualizado": "2026-11-19",
-          "id": "d0430404-2323-4e27-a4d7-28316b6ba8b9"
-        },
-        {
           "nombre": "✅ Registro de Compra Halloween 2026",
           "estado": "published",
           "actualizado": "2026-11-19",
@@ -602,12 +614,6 @@
           "id": "e7d15845-02ac-4a13-8bf3-ecce01d43f10"
         },
         {
-          "nombre": "✅ TikTok DM – Entrega lead magnets",
-          "estado": "published",
-          "actualizado": "2026-11-19",
-          "id": "ca9f4186-991a-45f7-9dba-184287170adb"
-        },
-        {
           "nombre": "✅ Workshop - Conecta la IA a Autodesk Revit",
           "estado": "published",
           "actualizado": "2026-11-19",
@@ -636,12 +642,6 @@
           "estado": "draft",
           "actualizado": "2026-11-17",
           "id": "e061dc2e-0af6-479c-a8cd-ca032d7a50a2"
-        },
-        {
-          "nombre": "✅ Seguimientos 1,2,3 y 4 Especialización Acero",
-          "estado": "draft",
-          "actualizado": "2026-11-17",
-          "id": "87fe06b9-861b-4226-8b97-f79aa95c7109"
         },
         {
           "nombre": "✅ Seguimientos 1,2,3 y 4 Naves SAP2000",
@@ -732,12 +732,6 @@
           "estado": "draft",
           "actualizado": "2026-10-15",
           "id": "8e0eeb83-95bd-4cdc-87eb-dca27c45952e"
-        },
-        {
-          "nombre": "✅ Lead Recontacto Máster BIM+IA",
-          "estado": "draft",
-          "actualizado": "2026-10-14",
-          "id": "1239b4c0-cdfc-4fab-a84b-f4e05874a9ea"
         },
         {
           "nombre": "✅ Oportunidad Futura (Comunidad + Nurture + Oferta)",
