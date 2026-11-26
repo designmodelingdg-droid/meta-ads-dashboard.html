@@ -1,0 +1,140 @@
+{
+ "id": "dic-cuantia-aci-nec-carrusel",
+ "tagline": "CALCULA | CITA | ENTREGA",
+ "fin_ultima": "COMENTA MEMORIA",
+ "slides": [
+  {
+   "tipo": "portada",
+   "fondo": "navy",
+   "kicker": "Cuantía de acero en columnas",
+   "titulo": "*8 %* o 3 %",
+   "tam": 170,
+   "sub": "Lo que dice el ~ACI 318-19~ y lo que te exige la ~NEC-SE-HM~ →",
+   "zona_style": "top:230px;bottom:520px",
+   "heroes": [
+    {
+     "src": "img/columnas-t.png",
+     "style": "width:620px;left:230px;top:850px;filter:drop-shadow(0 30px 40px rgba(0,0,0,.45))"
+    }
+   ],
+   "iconos": [
+    {
+     "k": "robot",
+     "x": 890,
+     "y": 1000,
+     "w": 120,
+     "r": 8
+    },
+    {
+     "k": "revit",
+     "x": 80,
+     "y": 1050,
+     "w": 110,
+     "r": -8
+    }
+   ],
+   "pino": "tr"
+  },
+  {
+   "tipo": "dato",
+   "fondo": "crema",
+   "kicker": "Columnas · mínimo",
+   "cards": [
+    {
+     "label": "ACI 318-19",
+     "valor": "1 %",
+     "nota": "art. 10.6.1.1"
+    },
+    {
+     "label": "NEC-SE-HM",
+     "valor": "1 %",
+     "nota": " "
+    }
+   ],
+   "pie": "Aquí *coinciden.*",
+   "pino": "br"
+  },
+  {
+   "tipo": "dato",
+   "fondo": "navy",
+   "kicker": "Columnas · máximo",
+   "cards": [
+    {
+     "label": "ACI 318-19",
+     "valor": "8 %",
+     "nota": "6 % en pórticos especiales (18.7.4.1)"
+    },
+    {
+     "label": "NEC-SE-HM",
+     "valor": "3 %",
+     "nota": " ",
+     "color": "var(--acc)"
+    }
+   ],
+   "pie": "Aquí está *la diferencia que te devuelven.*",
+   "pino": "tr",
+   "heroes": [
+    {
+     "src": "img/columnas-t.png",
+     "style": "width:640px;left:220px;top:880px;filter:drop-shadow(0 30px 40px rgba(0,0,0,.45))"
+    }
+   ],
+   "zona_style": "top:200px;bottom:520px"
+  },
+  {
+   "tipo": "puntos",
+   "fondo": "crema",
+   "kicker": "Vigas · mínimo (ACI 318-19, 9.6.1.2)",
+   "titulo": "El mayor de *0,25√f′c / fy* y *1,4 / fy*",
+   "puntos": [
+    "Con fy = 420 MPa y f′c hasta 31 MPa manda *1,4/fy ≈ 0,33 %*",
+    "Pórticos especiales: máximo *2,5 %* (18.6.3.1)"
+   ],
+   "zona_style": "top:200px;bottom:560px",
+   "heroes": [
+    {
+     "src": "img/viga-t.png",
+     "style": "width:760px;left:160px;top:820px;filter:drop-shadow(0 30px 40px rgba(0,0,0,.45))"
+    }
+   ],
+   "pino": "tr"
+  },
+  {
+   "tipo": "grande",
+   "fondo": "navy",
+   "kicker": "Losas · retracción y temperatura",
+   "titulo": "*0,0018*",
+   "tam": 260,
+   "sub": "del área bruta de concreto\n~ACI 318-19, 24.4.3.2~",
+   "zona_style": "top:200px;bottom:560px",
+   "heroes": [
+    {
+     "src": "img/losa-t.png",
+     "style": "width:920px;left:80px;top:800px;filter:drop-shadow(0 30px 40px rgba(0,0,0,.45))"
+    }
+   ],
+   "pino": "tr"
+  },
+  {
+   "tipo": "puntos",
+   "fondo": "crema",
+   "kicker": "Por qué te devuelven la memoria",
+   "titulo": "No es el número.",
+   "puntos": [
+    "La memoria no dice *qué norma ni qué artículo* usaste.",
+    "Si citas 8 % y te revisan con la NEC, el cálculo «estaba bien»… *y vuelve igual.*"
+   ],
+   "pino": "tr"
+  },
+  {
+   "tipo": "cta",
+   "fondo": "navy",
+   "titulo": "¿Con qué norma\n*te revisan a ti?*",
+   "tam": 124,
+   "sub": "Responde abajo: ~ACI~ o ~NEC~ 👇",
+   "palabra": "MEMORIA",
+   "detalle": "y te mando la plantilla de memoria verificable.",
+   "pino": "tr"
+  }
+ ]
+}

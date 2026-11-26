@@ -1,0 +1,79 @@
+[
+ {
+  "id": "c1-muros",
+  "hook1": "Le pregunté a mi modelo",
+  "hook2": "cuántos muros tiene",
+  "sub": "Respuesta en 4 segundos: 1.880 muros y 75 puertas",
+  "win": [
+   [
+    3912,
+    3936,
+    "chat"
+   ],
+   [
+    3946,
+    3990,
+    "revit"
+   ]
+  ]
+ },
+ {
+  "id": "c2-niveles",
+  "hook1": "Deja de abrir tablas.",
+  "hook2": "Pregúntale al modelo.",
+  "sub": "La IA lee los niveles de un modelo real de Revit",
+  "win": [
+   [
+    3518,
+    3600,
+    "chat"
+   ]
+  ]
+ },
+ {
+  "id": "c3-conexion",
+  "hook1": "Así conectamos la IA",
+  "hook2": "a un modelo de Revit",
+  "sub": "En vivo, durante el workshop",
+  "win": [
+   [
+    2775,
+    2798,
+    "chat"
+   ],
+   [
+    2915,
+    2926,
+    "chat"
+   ],
+   [
+    3425,
+    3448,
+    "revit"
+   ],
+   [
+    3464,
+    3476,
+    "chat"
+   ]
+  ]
+ },
+ {
+  "id": "c4-niveles-duplicados",
+  "hook1": "La IA encontró",
+  "hook2": "3 niveles a la misma altura",
+  "sub": "Algo que en el modelo no se ve a simple vista",
+  "win": [
+   [
+    4576,
+    4600,
+    "full"
+   ],
+   [
+    4636,
+    4685,
+    "claude"
+   ]
+  ]
+ }
+]

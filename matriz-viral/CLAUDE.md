@@ -106,9 +106,12 @@ Dos honestidades del dato, para no leerlo mal:
 ## Una palabra, una automatización (decidido el 30-sep-2026)
 
 Cada palabra la contesta **una sola** herramienta:
-- **GHL:** las palabras con embudo (ZAPATA, ACERO, NIVEL, MEMORIA, DYNAMO) y BIM/IA, que son el bot de ventas del Máster.
-- **OpenReply:** las palabras sueltas (TUTORIAL, GUIA, PARTE) y COTIZA en Instagram.
+- **GHL:** solo **ZAPATA** (calculadora de zapatas).
+- **OpenReply:** todas las demás: NIVEL, MEMORIA, ACERO, COTIZA, BIM, DIPLOMADO, DYNAMO, NAVISWORKS, las palabras sueltas (TUTORIAL, GUIA, PARTE) y las de venta (TEMARIO, MÁSTER).
+- **NIVEL y MEMORIA ya salen solo por OpenReply** (Dayana apagó su disparador en GHL el 23-nov-2026). Las demás pasan a OpenReply al montar su campaña, y en ese momento se apaga su disparador en GHL.
 - **Las campañas de OpenReply las hace Dayana.**
+
+> *Cambio del 23-nov-2026 (Dayana):* hasta esa fecha las palabras con embudo (ZAPATA, ACERO, NIVEL, MEMORIA, DYNAMO) y BIM/IA vivían en GHL. Desde la matriz de diciembre, GHL queda solo con ZAPATA. Si `fuentes/openreply/campanas.json` todavía muestra una palabra en las dos (es una foto de la última corrida), el calendario del mes la anota en `automatizacion_confirmada` y `verificar_matriz_mes.py` lo informa en vez de avisar.
 
 > *De dónde sale esta regla:* en septiembre MEMORIA la escuchaban dos campañas de OpenReply y un workflow de GHL. La primera que contestaba se quedaba con la conversación y las demás fallaban: 30 DM fallidos. DYNAMO falló 4 de 4, y el checklist de Navisworks (BIM/IA) 3 de 5. `verificar_matriz_mes.py` avisa si una palabra del mes está montada en las dos.
 

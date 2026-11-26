@@ -1,0 +1,41 @@
+name: YouTube · canal
+
+# Comprueba el permiso del canal de YouTube y, si se pide, guarda la lista de
+# videos con sus cifras. Solo lee: no cambia nada en el canal.
+on:
+  workflow_dispatch:
+    inputs:
+      accion:
+        description: "verificar (solo comprueba) o videos (guarda la lista en el repositorio)"
+        default: verificar
+        type: choice
+        options: [verificar, videos]
+  push:
+    branches: [claude/apify-reel-stats-matrix-iihc3x]
+    paths: ['.github/workflows/youtube.yml', 'scripts/youtube_api.py']
+
+permissions:
+  contents: write
+
+jobs:
+  youtube:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - name: Consultar el canal
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: python3 scripts/youtube_api.py "${{ inputs.accion || 'verificar' }}"
+      - name: Guardar la lista de videos
+        if: ${{ inputs.accion == 'videos' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add matriz-viral/fuentes/youtube
+          git diff --cached --quiet || git commit -m "YouTube: lista de videos del canal"
+          git pull --rebase origin "${{ github.ref_name }}" || git rebase --abort
+          git push origin "HEAD:${{ github.ref_name }}"

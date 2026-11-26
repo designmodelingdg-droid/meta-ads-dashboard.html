@@ -1,0 +1,3106 @@
+{
+ "mes": "2026-12",
+ "subtitulo": "Del martes 1 de diciembre de 2026 al miércoles 6 de enero de 2027 · contenido sintomático: problema primero, dato comparativo y pregunta que obliga a comentar · ritmo normal hasta el 19-dic y de fiestas del 20-dic al 6-ene",
+ "periodo": {
+  "desde": "2026-12-01",
+  "hasta": "2027-01-06",
+  "nota_enero": "Los días 1 a 6 de enero van en este archivo con su fecha real (ids ene-*): las herramientas del mes (verificar_matriz_mes.py, build_matriz_mes.py) leen un calendario por mes y este período cruza el año."
+ },
+ "ventas_por_semana_max": 1,
+ "automatizacion_confirmada": {
+  "NIVEL": "OpenReply (disparador apagado en GHL, Dayana 23-nov)",
+  "MEMORIA": "OpenReply (disparador apagado en GHL, Dayana 23-nov)"
+ },
+ "reglas_del_mes": [
+  "LO QUE DIJERON LOS DATOS (matriz.json, Meta Graph API, 20-nov): noviembre bajó a 2.877 vistas, 7,3 comentarios y 14 guardados por pieza, contra 7.632 / 36,2 / 213,9 de octubre. Ganaron los PROBLEMAS técnicos concretos: «La misma zapata no se comporta igual en arcilla, arena, limo, grava…» (81 comentarios), «Zapatas en arena suelta, pilotes cortos o hasta el estrato» (34), «6 formas de unir una viga de acero a una columna» (55 guardados) y el post «40 mm.»; y los históricos «Simbología de niveles en planos» (603 comentarios), «5 tipos de cimentación» (103), «El 1 % de cuantía» (152) e «Hipótesis que no se declararon…» (48). Perdieron (0-2 comentarios): efemérides, promos directas, piezas del workshop / IA en Revit sin problema y explicaciones planas (LOD 100-500, tipos de cercha).",
+  "LAS 3 LLAVES DE CADA PIEZA: 1) abre con un error concreto que el ingeniero reconoce y que le cuesta plata o prestigio (acusar un hábito / síntoma); 2) da un dato técnico verificable y comparativo que se guarda; 3) termina con una pregunta que obliga a comentar («¿Cuál usas tú?», «Dinos el número»). La palabra del lead magnet solo es el CTA de cierre, nunca el tema.",
+  "FEED: 22 piezas en cuota + 15 fuera de cuota (campaña de Navidad y saludos de marca) · formato 11 reels / 7 carruseles / 4 posts · intención 12 problema / 5 referencia técnica / 5 venta-testimonio-objeción (55 / 23 / 23 %). Pedido: ~60/20/20; el verificador (50/20/30 ± 10) no deja pasar de 60 % de problema.",
+  "EMBUDO: pieza de problema → «Comenta PALABRA» → DM automático con la mini-solución → el DM termina con una pregunta que abre la conversación → el bot de ventas lleva al producto. ZAPATA en GHL; el resto en OpenReply (NIVEL y MEMORIA ya solo en OpenReply). VENTA SUAVE: 3 piezas del Máster y 3 de Acero suman «si quieres más información… comenta MÁSTER / TEMARIO». Ningún lead magnet nuevo este mes.",
+  "VIDEO (cambio del 26-nov): Dayana rechazó las re-ediciones. Entran 6 reels ANIMADOS nuevos hechos en Remotion, sin grabación (2, 3, 6, 8, 12 y 27-dic), cada uno con un tema que no se había publicado y en la línea de lo que funciona: dato de cálculo verificable, chuleta numerada y pregunta que obliga a elegir. Gabriel graba 1 reel a cámara (ratios en Robot, 15-dic) y 3 reels selfie; 1 clip del workshop (20-dic). Ninguna pieza repite un video de noviembre.",
+  "RITMO: del 1 al 19-dic, 4 piezas de feed por semana (los carruseles abren la semana, los reels van juntos), historias de lunes a viernes con UNA venta el jueves, LinkedIn y correo semanales y blog el sábado. Del 20-dic al 6-ene, 2 piezas de feed por semana (más los 2 saludos de marca), historias livianas (1-2 frames) y NADA de venta el 24, 25 y 31-dic ni el 1-ene. Sin historias el 24, 25, 31 y 1.",
+  "EFEMÉRIDES: solo dos saludos de marca pedidos por Dayana, Navidad (25-dic) y cierre de año (31-dic), con imagen DG 2026, sin venta y fuera de cuota. Ninguna pieza de contenido usa una efeméride como tema (en noviembre dieron 0-2 comentarios).",
+  "SIN PROMOS INVENTADAS: el Black Friday terminó el 30-nov. La OFERTA DE DICIEMBRE está pendiente (la pasa Dayana): su slot es la historia del jue 17-dic y el correo del 16-dic. Máster: próxima cohorte en FEBRERO de 2027. Diplomado BIM: grabado, empiezas hoy. El Máster nunca lleva precio; si Dayana define una promo, va solo en porcentajes y por WhatsApp.",
+  "LAS PIEZAS DE VENTA NO USAN PALABRAS DE LEAD MAGNET (Dayana, 30-oct): TEMARIO (Acero), MÁSTER (agendar), ESTRUCTURAS (Diplomado de Cálculo, historia del 17) y DIPLOMADO (módulo gratis para probar antes de pagar).",
+  "Visuales = capturas reales de Revit, Robot y Navisworks y cámara de Gabriel. Nada técnico se publica sin que Gabriel lo revise (regla 0). Cero OBRA. Ningún id ni gancho repetido."
+ ],
+ "checklist_tareas": [
+  {
+   "tarea": "Limpiar las destacadas antes de publicar el mar 1-dic: quitar Black Friday, combo, cuenta regresiva y todo lo que tenga % o precio de noviembre.",
+   "desbloquea": "Que nadie pida una oferta vencida",
+   "cuando": "lun 30-nov noche / mar 1-dic temprano",
+   "para": "Daniela"
+  },
+  {
+   "tarea": "Montar en OpenReply las campañas de comentario de ACERO, COTIZA, BIM, DIPLOMADO, TEMARIO y MÁSTER con el `dm_texto` de cada pieza (enlace real en [ENLACE] y la pregunta final) y apagar su disparador en GHL; NIVEL y MEMORIA ya están solo en OpenReply (23-nov): actualizar sus textos con los DM de diciembre. ZAPATA se queda en GHL. Probar cada una con una cuenta ajena (IG y FB).",
+   "desbloquea": "El embudo de las piezas del feed",
+   "cuando": "antes del mar 1-dic",
+   "para": "Dayana (campañas OpenReply) · Ester (prueba)"
+  },
+  {
+   "tarea": "Que el bot de ventas tome la conversación cuando la persona contesta la pregunta del DM, y que pase TEMARIO, MÁSTER y ESTRUCTURAS a una persona.",
+   "desbloquea": "Que la pregunta del DM termine en una cita o una venta",
+   "cuando": "antes del mar 1-dic",
+   "para": "Patricio · Ester"
+  },
+  {
+   "tarea": "Sesión de grabación con Gabriel y Daniela (lista «Grabaciones de Gabriel»: G-02 a G-06, con los 3 reels selfie; G-01 ya no se graba). La selfie del 3-dic, antes del mié 2-dic.",
+   "desbloquea": "Reel del 15-dic, 3 reels selfie (10 y 22-dic, 5-ene), 4 historias de venta y los 4 videos largos de YouTube",
+   "cuando": "lun 7-dic (selfie del 3: mié 2-dic)",
+   "para": "Gabriel · Daniela"
+  },
+  {
+   "tarea": "Producir en Remotion los 6 reels animados nuevos (repo videos-dma): zapata que se levanta (2-dic, pizarra dibujada), 6 uniones (3-dic, isométrico), lo que uso con IA en Revit (6-dic, tres bandas con las pantallas del workshop), 3 orígenes de Revit (8-dic, pizarra + 1 captura de Revit), combinaciones que no se mezclan (12-dic, pizarra) y 5 medidas de una zapata (27-dic, isométrico). Voz de Gabriel con IA, sin grabar. NO son re-ediciones: Dayana rechazó las re-ediciones el 26-nov.",
+   "desbloquea": "6 de los 11 reels del período",
+   "cuando": "guion revisado por Gabriel 4 días antes de cada fecha; video 2 días antes",
+   "para": "Daniela (edición) · Gabriel (revisión técnica)"
+  },
+  {
+   "tarea": "Clip del workshop del 16-dic: subtitular, escuchar el audio completo y cambiar el cierre a la pregunta + NIVEL. Los otros 3 clips quedan en reserva.",
+   "desbloquea": "Reel del 16-dic",
+   "cuando": "antes del lun 14-dic",
+   "para": "Daniela"
+  },
+  {
+   "tarea": "Editar los 4 videos largos de YouTube (16:9, 2-5 min) con la intro y el cierre de Gabriel; miniatura con el texto de cada ficha. El 4.º se publica solo si en la grabación hay un error real de la IA.",
+   "desbloquea": "YouTube 11 y 18-dic, 29-dic y 5-ene",
+   "cuando": "2 días antes de cada fecha",
+   "para": "Daniela"
+  },
+  {
+   "tarea": "Gabriel revisa los datos técnicos (regla 0): cuantías ACI/NEC del 7-dic, deflexiones IBC del 14-dic, pesos de varilla del 30-dic, quizzes de historias y los 4 blogs. Y, del replan del 26-nov, los 6 guiones nuevos: excentricidad y núcleo central (2-dic), clasificación AISC de las 6 uniones (3-dic), lo mostrado en el workshop y que usó NonicaTab FREE (6-dic), orígenes de Revit (8-dic), E.060 / NEC-SE-CG / ACI 318-19 (12-dic) y las 5 medidas del ACI 318-19 (27-dic). Cada guion trae `fuentes_tecnicas` con lo que ya está comprobado y lo que falta confirmar con la norma en mano.",
+   "desbloquea": "Que nada de lo que se publica sea inexacto",
+   "cuando": "los del 2, 3 y 6-dic antes del sáb 28-nov; el resto antes del lun 7-dic",
+   "para": "Gabriel"
+  },
+  {
+   "tarea": "Testimonios GUARDADOS (no hay nuevos): sacar el fotograma y la frase del reel de Acero del 23-oct (De2JwdYlfH9) y los videos de Albino Piñeiro, Luis Fernández y Jorge Aguirre de la página de testimonios para el 4-dic, 17-dic, 4-ene, 5-ene y 6-ene.",
+   "desbloquea": "3 piezas de venta y 3 historias de venta",
+   "cuando": "antes del mié 2-dic",
+   "para": "Daniela"
+  },
+  {
+   "tarea": "Editar las historias con Gabriel en /home/user/videos-dma/proyectos/historias-dma: selfies en Story-vertical y explicaciones con RutaMaster, RutaAcero, RutaDiplomado y AnatomyConexion (campo `produccion` de cada historia).",
+   "desbloquea": "Las historias con Gabriel y las de venta",
+   "cuando": "2 días antes de cada fecha",
+   "para": "Daniela"
+  },
+  {
+   "tarea": "Diseñar los 2 posts de fecha especial con imagen de marca DG 2026 (Navidad 25-dic y cierre de año 31-dic) y programarlos: el equipo no está esos días.",
+   "desbloquea": "Las 2 fechas especiales",
+   "cuando": "antes del vie 18-dic",
+   "para": "Daniela"
+  },
+  {
+   "tarea": "Cada lunes: cuántos comentaron cada palabra, cuántos recibieron el DM, cuántos contestaron la pregunta y cuántos agendaron o compraron en 14 días (OpenReply + GHL).",
+   "desbloquea": "Saber qué pregunta del DM abre conversación y cuál no",
+   "cuando": "lunes 7, 14, 21 y 28-dic y 4-ene",
+   "para": "Ester · Dayana"
+  },
+  {
+   "tarea": "Guardar las historias en su destacada cada viernes (4, 11 y 18-dic) y el 30-dic y 6-ene.",
+   "desbloquea": "Destacadas al día",
+   "cuando": "viernes",
+   "para": "Daniela"
+  },
+  {
+   "tarea": "Publicar los 4 blogs de los sábados 5, 12 y 19-dic y 2-ene con su post de anuncio (el 26-dic no hay blog).",
+   "desbloquea": "G3 del período",
+   "cuando": "sábados",
+   "para": "Equipo de contenido"
+  }
+ ],
+ "efemerides": [
+  [
+   "Dom 6-dic",
+   "Fundación de Quito (local, cae en domingo)",
+   "No entra como contenido."
+  ],
+  [
+   "Mar 8-dic",
+   "Inmaculada Concepción: feriado en Colombia, Perú, Argentina y Chile (no en Ecuador)",
+   "Historias normales; el reel del día sale igual."
+  ],
+  [
+   "Jue 24 · Vie 25-dic",
+   "Nochebuena y Navidad",
+   "Solo el post de saludo de Navidad (vie 25, programado). Sin historias y sin venta."
+  ],
+  [
+   "Jue 31-dic · Vie 1-ene",
+   "Fin de año y Año Nuevo",
+   "Solo el post de cierre de año (jue 31, programado). Sin historias y sin venta dura."
+  ],
+  [
+   "Mié 6-ene",
+   "Reyes (en Colombia el feriado pasa al lun 11-ene)",
+   "No entra como contenido."
+  ]
+ ],
+ "estrategia_comercial": {
+  "slot_oferta_diciembre": {
+   "estado": "DEFINIDA por Dayana (25-nov): «Los jefes se fueron de vacaciones»",
+   "oferta": "40 cursos pregrabados (35 de Halloween + 5 de BIM con IA aplicada) a $46.50 cada uno, antes $154.99 (70% OFF, ahorro $108.49). Oferta directa sin cupón, curso por curso.",
+   "vigencia": "vie 4-dic al mar 5-ene, 23:59 (hora de Ecuador)",
+   "incluye": [
+    "1 mes de acceso desde la compra",
+    "nuevo Campus Design Modeling Academy (web + app Android)",
+    "certificado de Design Modeling DG S.A.S.",
+    "se puede regalar"
+   ],
+   "cuidado": [
+    "No decir «certificación Autodesk» ni microcredenciales",
+    "Escribir «Design Modeling Academy» completo, no «DMA»",
+    "Nombrar también la ingeniería estructural"
+   ],
+   "ganchos": {
+    "A · La locura": "Los jefes se fueron de vacaciones... y nosotros nos volvimos locos: cursos BIM con IA aplicada a $46.50.",
+    "B · El regalo para ti": "Tenemos un regalo especial para ti esta Navidad: cursos BIM con IA aplicada a $46.50.",
+    "C · Regálalo": "¿No sabes qué regalar esta Navidad? Regala un curso BIM con IA aplicada a $46.50."
+   },
+   "precio_en_publico": "SÍ, por decisión de Dayana (plan del 25-nov): $46.50 y $154.99 tachado van en anuncios, landing, correos y feed. El Máster sigue sin precio público.",
+   "fuente": "PDF «Campaña Navidad DM 2026» de Dayana"
+  },
+  "nota": "Diciembre todavía no tiene oferta (pendiente). Se vende por conversación: cada pieza de problema abre un DM con pregunta, y el bot y el equipo llevan al producto. Una venta por semana en historias (jueves 3, 10 y 17-dic y mar 5-ene).",
+  "reglas": [
+   "Ningún precio en público. El Máster, nunca (cohorte de febrero, se invita a agendar por WhatsApp https://wa.me/593984372010); Acero, tampoco este mes.",
+   "Si Dayana define una oferta de diciembre o enero, la nombra y le pone precio Ester; va solo por WhatsApp con su mini landing y en público solo con porcentajes.",
+   "Sin venta el 24, 25 y 31-dic ni el 1-ene, en ningún canal.",
+   "Quien contesta la pregunta del DM con un problema real pasa a una persona en menos de 30 minutos en horario laboral."
+  ]
+ },
+ "publicidad": {
+  "nota": "Diciembre lleva 3 pautas (Dayana, 25-nov): la oferta de Navidad, el Máster y Acero.",
+  "campanas": [
+   {
+    "nombre": "NAVIDAD · Los jefes se fueron de vacaciones",
+    "objetivo": "Ventas (compras si el píxel de la landing registra el evento; si no, vistas de página de destino)",
+    "presupuesto_diario": 4.0,
+    "dias": 33,
+    "total": 132.0,
+    "vigencia": "4-dic al 5-ene",
+    "publico": "1 conjunto Advantage+, países de habla hispana donde ya vendemos, 20-50 años",
+    "anuncios": "Artes A (pared), B (monitor) y C (poste, «regálalo») en 4 formatos: cuadrado 1080×1080, feed 1080×1350, historia 1080×1920 y horizontal; + video «los papeles por todos lados» y los 3 videos de Gabriel en versión pauta",
+    "reglas": [
+     "11-dic: apagar los anuncios con el costo por resultado más alto",
+     "Desde el 15-dic: si el gancho C (regálalo) va bien, más peso hasta el 24",
+     "11-dic: el ganador del entrenamiento de Máster y Acero pasa a la campaña inicial"
+    ],
+    "responsable": "Fabián (sube el 3-dic; revisión cada lunes)",
+    "ventas_que_cubren_la_pauta": "4 ventas = $186",
+    "destino": "funnel.dgdesignmodeling.com/promo-navidad-descuentos-cursos",
+    "piezas": []
+   },
+   {
+    "nombre": "MÁSTER · entrenamiento de diciembre + campaña inicial",
+    "objetivo": "Leads de formulario calificados",
+    "presupuesto_diario": 2.0,
+    "nota": "Entrenamiento 1 semana desde el 4-dic a $2/día con los artes y videos de diciembre; el 11-dic el ganador pasa a la campaña inicial (MÁSTER · FORM CALIFICACIÓN). Sin precio en público.",
+    "responsable": "Fabián",
+    "piezas": []
+   },
+   {
+    "nombre": "ACERO · entrenamiento de diciembre + campaña inicial",
+    "objetivo": "Conversaciones de WhatsApp / leads",
+    "presupuesto_diario": 2.0,
+    "nota": "Entrenamiento 1 semana desde el 4-dic a $2/día; el 11-dic el ganador pasa a la campaña inicial.",
+    "responsable": "Fabián",
+    "piezas": []
+   }
+  ],
+  "indicaciones": [
+   [
+    "4-dic",
+    "Fabián verifica que Black Friday, workshop y combo estén terminadas y apagadas"
+   ],
+   [
+    "Entrenamiento",
+    "$4/día en total ($28 la semana) para Máster y Acero"
+   ]
+  ]
+ },
+ "embudo": {
+  "nota": "Pedido de Dayana (23-nov): pieza de problema → «Comenta PALABRA» → DM automático con la mini-solución (lead magnet) → el DM termina con una PREGUNTA que abre la conversación → el bot de ventas toma la conversación y lleva al producto que resuelve el problema completo. Cada pieza del feed trae su bloque `embudo` en guiones-completos.json (palabra, lead_magnet, enlace, dm_texto con [ENLACE], producto_destino, canal_dm). No hay lead magnet nuevo este mes.",
+  "canales": "ZAPATA se queda en GHL. Todas las demás palabras van por OpenReply (decisión del 23-nov). NIVEL y MEMORIA ya salen SOLO por OpenReply: Dayana apagó su disparador en GHL (23-nov). Para las demás, al montar cada campaña en OpenReply se apaga su disparador de comentario en GHL (una palabra, una automatización).",
+  "venta_suave": "Pedido de Dayana (23-nov): 3 piezas del Máster y 3 de Acero cierran además con «Si quieres más información de nuestro Máster por bloques, comenta MÁSTER» / «Si quieres más información de la Especialización en Acero, comenta TEMARIO». MÁSTER lleva a WhatsApp (https://wa.me/593984372010) para agendar, sin precio; TEMARIO, al temario de Acero.",
+  "palabras": [
+   {
+    "palabra": "ZAPATA",
+    "lead_magnet": "Calculadora de zapatas",
+    "enlace": "https://funnel.dgdesignmodeling.com/acceso-gratis-calculadora-zapatas-form",
+    "producto": "Diplomado de Cálculo Estructural",
+    "canal": "GHL"
+   },
+   {
+    "palabra": "ACERO",
+    "lead_magnet": "5 verificaciones de una nave",
+    "enlace": "https://funnel.dgdesignmodeling.com/acceso-gratis-verificacion-acero-form",
+    "producto": "Especialización en Acero con Tutor IA",
+    "canal": "OpenReply"
+   },
+   {
+    "palabra": "MEMORIA",
+    "lead_magnet": "Memoria de cálculo verificable",
+    "enlace": "https://funnel.dgdesignmodeling.com/acceso-gratis-memoria-calculo-form",
+    "producto": "Diplomado de Cálculo Estructural",
+    "canal": "OpenReply"
+   },
+   {
+    "palabra": "COTIZA",
+    "lead_magnet": "Cotizador de honorarios",
+    "enlace": "https://funnel.dgdesignmodeling.com/acceso-gratis-cotizador-honorarios-form",
+    "producto": "Especialización en Acero con Tutor IA",
+    "canal": "OpenReply"
+   },
+   {
+    "palabra": "NIVEL",
+    "lead_magnet": "Test de nivel BIM",
+    "enlace": "https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form",
+    "producto": "Máster por bloques (agendar, nunca precio)",
+    "canal": "OpenReply"
+   },
+   {
+    "palabra": "BIM",
+    "lead_magnet": "Curso introductorio BIM",
+    "enlace": "https://funnel.dgdesignmodeling.com/acceso-gratis-curso-introductorio-bim-form",
+    "producto": "Máster · Bloque 1 (agendar)",
+    "canal": "OpenReply"
+   },
+   {
+    "palabra": "DIPLOMADO",
+    "lead_magnet": "Primer módulo del Diplomado BIM",
+    "enlace": "https://funnel.dgdesignmodeling.com/acceso-gratis-modulo-diplomado-bim-form",
+    "producto": "Diplomado BIM",
+    "canal": "OpenReply"
+   },
+   {
+    "palabra": "TEMARIO",
+    "lead_magnet": "Temario de Acero (venta, no recurso)",
+    "enlace": "https://drive.google.com/file/d/1K0cRiCofWt__tw-Yge21nJ2Wg25EpHlC/view?usp=sharing",
+    "producto": "Especialización en Acero con Tutor IA",
+    "canal": "OpenReply → persona / WhatsApp"
+   },
+   {
+    "palabra": "MÁSTER",
+    "lead_magnet": "Información + cita de 20 minutos por WhatsApp (venta)",
+    "enlace": "https://wa.me/593984372010",
+    "producto": "Máster por bloques (cohorte de febrero)",
+    "canal": "OpenReply → WhatsApp"
+   }
+  ],
+  "no_se_usan_en_dic": "DYNAMO y NAVISWORKS siguen vivas pero no entran este mes: ninguna pieza del feed tiene un síntoma de esos recursos (y el verificador todavía no las tiene en su lista viva).",
+  "por_pieza": [
+   {
+    "fecha": "Mar 1 dic",
+    "id": "dic-sigues-modelando-carrusel",
+    "palabra": "NIVEL",
+    "lead_magnet": "Test de nivel BIM (5 minutos, gratis)",
+    "producto_destino": "Máster BIM Management + IA por bloques (solo se invita a agendar; nunca precio)",
+    "canal_dm": "OpenReply",
+    "cta_info": "MÁSTER"
+   },
+   {
+    "fecha": "Mié 2 dic",
+    "id": "dic-zapata-momento-se-levanta-reel",
+    "palabra": "ZAPATA",
+    "lead_magnet": "Calculadora de zapatas (gratis)",
+    "producto_destino": "Diplomado de Cálculo Estructural",
+    "canal_dm": "GHL",
+    "cta_info": null
+   },
+   {
+    "fecha": "Jue 3 dic",
+    "id": "dic-6-uniones-cuales-pasan-momento-reel",
+    "palabra": "ACERO",
+    "lead_magnet": "Guía de las 5 verificaciones de una nave de acero (gratis)",
+    "producto_destino": "Especialización en Acero con Tutor IA",
+    "canal_dm": "OpenReply",
+    "cta_info": "TEMARIO"
+   },
+   {
+    "fecha": "Vie 4 dic",
+    "id": "dic-testimonio-acero-post",
+    "palabra": "TEMARIO",
+    "lead_magnet": "Temario de la Especialización en Acero (PDF, sin precio)",
+    "producto_destino": "Especialización en Acero con Tutor IA",
+    "canal_dm": "OpenReply",
+    "cta_info": null
+   },
+   {
+    "fecha": "Lun 7 dic",
+    "id": "dic-cuantia-aci-nec-carrusel",
+    "palabra": "MEMORIA",
+    "lead_magnet": "Plantilla de memoria de cálculo verificable (gratis)",
+    "producto_destino": "Diplomado de Cálculo Estructural",
+    "canal_dm": "OpenReply",
+    "cta_info": null
+   },
+   {
+    "fecha": "Dom 6 dic",
+    "id": "dic-lo-que-uso-ia-revit-reel",
+    "palabra": "NIVEL",
+    "lead_magnet": "Test de nivel BIM (5 minutos, gratis)",
+    "producto_destino": "Máster BIM Management + IA por bloques (solo se invita a agendar; nunca precio)",
+    "canal_dm": "OpenReply",
+    "cta_info": "MÁSTER"
+   },
+   {
+    "fecha": "Mar 8 dic",
+    "id": "dic-revit-3-origenes-vinculo-reel",
+    "palabra": "NIVEL",
+    "lead_magnet": "Test de nivel BIM (5 minutos, gratis)",
+    "producto_destino": "Máster BIM Management + IA por bloques (solo se invita a agendar; nunca precio)",
+    "canal_dm": "OpenReply",
+    "cta_info": null
+   },
+   {
+    "fecha": "Sáb 12 dic",
+    "id": "dic-combinaciones-no-se-mezclan-reel",
+    "palabra": "MEMORIA",
+    "lead_magnet": "Plantilla de memoria de cálculo verificable (gratis)",
+    "producto_destino": "Diplomado de Cálculo Estructural",
+    "canal_dm": "OpenReply",
+    "cta_info": null
+   },
+   {
+    "fecha": "Jue 10 dic",
+    "id": "dic-selfie-chatgpt-firma-reel",
+    "palabra": "MEMORIA",
+    "lead_magnet": "Plantilla de memoria de cálculo verificable (gratis)",
+    "producto_destino": "Diplomado de Cálculo Estructural",
+    "canal_dm": "OpenReply",
+    "cta_info": null
+   },
+   {
+    "fecha": "Vie 11 dic",
+    "id": "dic-honorarios-revisiones-carrusel",
+    "palabra": "COTIZA",
+    "lead_magnet": "Cotizador de honorarios (gratis)",
+    "producto_destino": "Especialización en Acero con Tutor IA",
+    "canal_dm": "OpenReply",
+    "cta_info": "TEMARIO"
+   },
+   {
+    "fecha": "Lun 14 dic",
+    "id": "dic-deflexiones-l360-carrusel",
+    "palabra": "ACERO",
+    "lead_magnet": "Guía de las 5 verificaciones de una nave de acero (gratis)",
+    "producto_destino": "Especialización en Acero con Tutor IA",
+    "canal_dm": "OpenReply",
+    "cta_info": null
+   },
+   {
+    "fecha": "Mar 15 dic",
+    "id": "dic-gabriel-ratios-robot-reel",
+    "palabra": "ACERO",
+    "lead_magnet": "Guía de las 5 verificaciones de una nave de acero (gratis)",
+    "producto_destino": "Especialización en Acero con Tutor IA",
+    "canal_dm": "OpenReply",
+    "cta_info": "TEMARIO"
+   },
+   {
+    "fecha": "Mié 16 dic",
+    "id": "dic-ws-clip-niveles-duplicados-reel",
+    "palabra": "NIVEL",
+    "lead_magnet": "Test de nivel BIM (5 minutos, gratis)",
+    "producto_destino": "Máster BIM Management + IA por bloques (solo se invita a agendar; nunca precio)",
+    "canal_dm": "OpenReply",
+    "cta_info": null
+   },
+   {
+    "fecha": "Jue 17 dic",
+    "id": "dic-obj-tiempo-master-carrusel",
+    "palabra": "MÁSTER",
+    "lead_magnet": "Información del Máster por bloques + cita de 20 minutos por WhatsApp (venta, sin precio)",
+    "producto_destino": "Máster BIM Management + IA por bloques (cohorte de febrero; agendar, nunca precio)",
+    "canal_dm": "OpenReply",
+    "cta_info": null
+   },
+   {
+    "fecha": "Vie 18 dic",
+    "id": "dic-selfie-revit-no-bim-reel",
+    "palabra": "NIVEL",
+    "lead_magnet": "Test de nivel BIM (5 minutos, gratis)",
+    "producto_destino": "Máster por bloques · Bloque 1 (agendar; nunca precio)",
+    "canal_dm": "OpenReply",
+    "cta_info": "MÁSTER"
+   },
+   {
+    "fecha": "Lun 21 dic",
+    "id": "dic-doble-trabajo-autocad-excel-carrusel",
+    "palabra": "BIM",
+    "lead_magnet": "Curso introductorio BIM (gratis)",
+    "producto_destino": "Máster por bloques · Bloque 1 BIM Professional (agendar; nunca precio)",
+    "canal_dm": "OpenReply",
+    "cta_info": null
+   },
+   {
+    "fecha": "Dom 27 dic",
+    "id": "dic-zapata-5-medidas-aci-reel",
+    "palabra": "ZAPATA",
+    "lead_magnet": "Calculadora de zapatas (gratis)",
+    "producto_destino": "Diplomado de Cálculo Estructural",
+    "canal_dm": "GHL",
+    "cta_info": null
+   },
+   {
+    "fecha": "Lun 28 dic",
+    "id": "dic-coordinar-sin-saber-carrusel",
+    "palabra": "NIVEL",
+    "lead_magnet": "Test de nivel BIM (5 minutos, gratis)",
+    "producto_destino": "Máster BIM Management + IA por bloques (solo se invita a agendar; nunca precio)",
+    "canal_dm": "OpenReply",
+    "cta_info": "MÁSTER"
+   },
+   {
+    "fecha": "Mié 30 dic",
+    "id": "dic-peso-varilla-post",
+    "palabra": "NIVEL",
+    "lead_magnet": "Test de nivel BIM (5 minutos, gratis)",
+    "producto_destino": "Máster BIM Management + IA por bloques (solo se invita a agendar; nunca precio)",
+    "canal_dm": "OpenReply",
+    "cta_info": null
+   },
+   {
+    "fecha": "Jue 31 dic",
+    "id": "dic-fin-de-ano-post",
+    "palabra": "NIVEL",
+    "lead_magnet": "Test de nivel BIM (5 minutos, gratis)",
+    "producto_destino": "Máster por bloques (agendar; nunca precio)",
+    "canal_dm": "OpenReply",
+    "cta_info": null
+   },
+   {
+    "fecha": "Lun 4 ene",
+    "id": "ene-obj-cursos-no-sirvieron-post",
+    "palabra": "DIPLOMADO",
+    "lead_magnet": "Primer módulo del Diplomado BIM (gratis)",
+    "producto_destino": "Diplomado BIM",
+    "canal_dm": "OpenReply",
+    "cta_info": null
+   },
+   {
+    "fecha": "Mar 5 ene",
+    "id": "ene-selfie-acero-en-enero-reel",
+    "palabra": "TEMARIO",
+    "lead_magnet": "Temario de la Especialización en Acero (PDF, sin precio)",
+    "producto_destino": "Especialización en Acero con Tutor IA",
+    "canal_dm": "OpenReply",
+    "cta_info": null
+   },
+   {
+    "fecha": "Mié 6 ene",
+    "id": "ene-testimonio-master-post",
+    "palabra": "MÁSTER",
+    "lead_magnet": "Información del Máster por bloques + cita de 20 minutos por WhatsApp (venta, sin precio)",
+    "producto_destino": "Máster BIM Management + IA por bloques (cohorte de febrero; agendar, nunca precio)",
+    "canal_dm": "OpenReply",
+    "cta_info": null
+   }
+  ],
+  "conteo": {
+   "NIVEL": 8,
+   "ZAPATA": 2,
+   "ACERO": 3,
+   "TEMARIO": 2,
+   "MEMORIA": 3,
+   "COTIZA": 1,
+   "MÁSTER": 2,
+   "BIM": 1,
+   "DIPLOMADO": 1
+  }
+ },
+ "grabaciones_gabriel": {
+  "nota": "Todo lo que Gabriel tiene que grabar o capturar para que la matriz salga sin huecos. Fecha límite: lunes 7-dic (una sola sesión con Daniela), salvo la selfie del jue 3-dic, que se graba antes del mié 2-dic. Los reels SELFIE (G-06) se graban con el teléfono de Gabriel, en vertical, sin protocolo. CAMBIO DEL 26-nov: las 4 re-ediciones y el reel G-01 se reemplazaron por 6 reels ANIMADOS nuevos (2, 3, 6, 8, 12 y 27-dic) que no necesitan grabación; de Gabriel solo piden la revisión técnica de los guiones (regla 0). Quedan 5 grabaciones: G-02 a G-06. Regla 0: Gabriel confirma cada dato técnico antes de grabarlo, y cambia el ejemplo del «espejo» por su caso real si el del guion no le pasó.",
+  "lista": [
+   {
+    "n": "G-01",
+    "que": "⚫ YA NO SE GRABA (26-nov): el reel «Te devolvieron la memoria…» se reemplazó por un reel animado. Reel «Te devolvieron la memoria… y el cálculo estaba bien» (50-60 s, a cámara + 1 toma de pantalla de una memoria)",
+    "pieza": "dic-combinaciones-no-se-mezclan-reel (animado; no necesita a Gabriel)",
+    "sale": "—",
+    "grabar_antes": "—",
+    "guion": [
+     "0:00-0:03 · Te devolvieron la memoria de cálculo… y el cálculo estaba bien.",
+     "0:03-0:15 · A mí me pasó: [caso real de Gabriel: el revisor no encontró de dónde salía una carga y, en vez de preguntar, la devolvió]. Dos semanas perdidas por una línea.",
+     "0:15-0:32 · No es el cálculo. Es que la memoria no se puede seguir: no dice qué norma usaste, qué combinación gobierna ni de dónde sale cada carga. El revisor no tiene por qué adivinar.",
+     "0:32-0:45 · Cuando cada número dice su origen —norma, artículo, combinación—, la revisión deja de ser una discusión y pasa a ser una lectura.",
+     "0:45-0:55 · ¿Cuántas veces te la devolvieron este año? Comenta MEMORIA y te mando la plantilla que usamos."
+    ],
+    "notas": "No grabar. Se deja en la lista para que quede el rastro."
+   },
+   {
+    "n": "G-02",
+    "que": "Reel «Ratios de 1,4 en Robot: ¿sección o apoyos?» (50-60 s, a cámara + celular grabando el monitor con Robot)",
+    "pieza": "dic-gabriel-ratios-robot-reel",
+    "sale": "mar 15-dic",
+    "grabar_antes": "lun 7-dic",
+    "guion": [
+     "0:00-0:03 · Tu modelo en Robot da ratios de 1,4… y no sabes si es la sección o los apoyos.",
+     "0:03-0:12 · Un alumno me mandó exactamente esto: una nave con ratios de 1,4 en las columnas. Su primera idea fue subir el perfil.",
+     "0:12-0:35 · Antes de cambiar la sección, revisa tres cosas: cómo modelaste los apoyos, las longitudes de pandeo que le diste a cada barra y si el viento entró con la dirección correcta. Un apoyo mal definido te cambia los momentos de toda la columna.",
+     "0:35-0:47 · Si al corregir el modelo los ratios bajan, el perfil estaba bien. Si no bajan, ahí sí: sección.",
+     "0:47-0:57 · ¿Cuál fue tu ratio más alto? Comenta ACERO y te mando las 5 verificaciones que hago antes de cambiar un perfil."
+    ],
+    "notas": "Pantalla real de Robot Structural Analysis: verificación de barras con ratios en rojo, apoyos, longitudes de pandeo y caso de viento. Sin nombre del alumno si no hay permiso (confirmar con Dayana)."
+   },
+   {
+    "n": "G-03",
+    "que": "4 selfies de 10-15 s para las historias de venta (vertical, luz natural, sin producción)",
+    "pieza": [
+     "dic-hist-1203",
+     "dic-hist-1210",
+     "dic-hist-1217",
+     "ene-hist-0105"
+    ],
+    "sale": "3, 10 y 17-dic y 5-ene",
+    "grabar_antes": "mié 2-dic (la del 3) · lun 7-dic (las otras 3)",
+    "guion": [
+     {
+      "historia": "dic-hist-1203",
+      "fecha": "Jue 3 dic",
+      "texto": "¿Cuántos proyectos de acero rechazaste este año porque no estabas seguro de tu cálculo?"
+     },
+     {
+      "historia": "dic-hist-1210",
+      "fecha": "Jue 10 dic",
+      "texto": "Si llevas años modelando y no te sientan en la mesa, no te falta Revit. Te falta otra cosa."
+     },
+     {
+      "historia": "dic-hist-1217",
+      "fecha": "Jue 17 dic",
+      "texto": "Este año, ¿cuántas veces te devolvieron un cálculo que estaba bien?"
+     },
+     {
+      "historia": "ene-hist-0105",
+      "fecha": "Mar 5 ene",
+      "texto": "Si en 2027 quieres dejar de ser el que modela, no esperes a marzo para decidir por dónde empezar."
+     }
+    ],
+    "notas": "Una toma por selfie; si se traba, se repite entera. La del 5-ene no dice «Feliz año»: abre con el problema. Se editan en /home/user/videos-dma/proyectos/historias-dma con la composición Story-vertical (selfie + subtítulos palabra por palabra)."
+   },
+   {
+    "n": "G-04",
+    "que": "Capturas reales de su equipo para 4 carruseles (no se graban, se exportan)",
+    "pieza": [
+     "dic-sigues-modelando-carrusel",
+     "dic-doble-trabajo-autocad-excel-carrusel",
+     "dic-coordinar-sin-saber-carrusel",
+     "dic-gabriel-ratios-robot-reel"
+    ],
+    "sale": "1, 21 y 28-dic",
+    "grabar_antes": "lun 7-dic",
+    "guion": [
+     "Revit: modelo en gris (portada del 1-dic) y un muro seleccionado con su tabla de cantidades al lado (lámina 5 del 21-dic).",
+     "Navisworks: lista de resultados de Clash Detective con muchos choques y la misma lista agrupada por nivel y sistema (láminas 2 y 6 del 28-dic).",
+     "Robot: verificación de barras con ratios en rojo (reel del 15-dic)."
+    ],
+    "notas": "Visuales = capturas reales (regla de la casa). Nada de imágenes de stock de software."
+   },
+   {
+    "n": "G-05",
+    "que": "Intro (20-30 s) y cierre (10-15 s) a cámara para los 4 videos largos de YouTube (horizontal 16:9)",
+    "pieza": [
+     "dic-yt-conectar-ia-revit",
+     "dic-yt-niveles-duplicados",
+     "dic-yt-preguntas-al-modelo",
+     "ene-yt-donde-se-equivoca"
+    ],
+    "sale": "11 y 18-dic, 29-dic y 5-ene",
+    "grabar_antes": "lun 7-dic",
+    "guion": [
+     {
+      "video": "dic-yt-conectar-ia-revit",
+      "intro": "¿Cuántas veces exportaste el modelo a Excel solo para contar algo? En el workshop del 17 lo resolvimos en vivo. Te muestro lo que se necesita, cómo se conecta y lo que todavía no hace.",
+      "cierre": "Si te sirvió, dime en los comentarios qué le preguntarías tú a tu modelo. Y en la descripción tienes el test de nivel BIM, gratis."
+     },
+     {
+      "video": "dic-yt-preguntas-al-modelo",
+      "intro": "Para contestar cuántos muros tiene un modelo, normalmente abres una tabla, filtras y cuentas. Aquí se lo preguntamos directo al modelo, y después lo comprobamos en Revit.",
+      "cierre": "La IA ordena, pero el número lo firma el ingeniero: por eso siempre comprobamos. ¿Qué le preguntarías tú a tu modelo? Te leo en los comentarios."
+     },
+     {
+      "video": "dic-yt-niveles-duplicados",
+      "intro": "Antes de cerrar el año, revisa esto en tu modelo. En el workshop la IA encontró 3 niveles a la misma altura y nadie lo había visto.",
+      "cierre": "¿Lo revisaste en tu modelo? Cuéntame en los comentarios si encontraste algo. El test de nivel BIM está en la descripción."
+     },
+     {
+      "video": "ene-yt-donde-se-equivoca",
+      "intro": "La IA te contesta en segundos y con mucha seguridad. En el workshop le encontramos dónde se equivoca. Te lo muestro para que no te pase con tu firma.",
+      "cierre": "El número lo firma el ingeniero, no la IA. ¿Te pasó alguna vez que una IA te diera un dato equivocado? Cuéntamelo abajo."
+     }
+    ],
+    "notas": "Mismo fondo que la cámara del workshop para que empate con la grabación. Horizontal, no vertical."
+   },
+   {
+    "n": "G-06",
+    "que": "3 reels SELFIE de 25-35 s (Gabriel se graba con el teléfono, vertical, y empieza a hablar sin saludo: el problema va en la primera frase)",
+    "pieza": [
+     "dic-selfie-chatgpt-firma-reel",
+     "dic-selfie-revit-no-bim-reel",
+     "ene-selfie-acero-en-enero-reel"
+    ],
+    "sale": "jue 10-dic, mar 22-dic y mar 5-ene",
+    "grabar_antes": "lun 7-dic",
+    "guion": [
+     {
+      "reel": "dic-selfie-chatgpt-firma-reel",
+      "palabra_por_palabra": [
+       "0:00-0:04 · Le preguntaste a ChatGPT cuánto acero lleva tu viga… y ese número va a salir con tu firma.",
+       "0:04-0:16 · Mira, la IA te puede ordenar el cálculo, pero no sabe con qué norma te van a revisar ni qué combinación gobierna. Si el número no dice de dónde sale, el revisor te lo devuelve. Y con razón.",
+       "0:16-0:24 · Yo lo que hago es esto: cada número de la memoria lleva al lado su norma y su artículo.",
+       "0:24-0:32 · Comenta MEMORIA y te mando la plantilla. Y dime: ¿tú ya usas IA para calcular?"
+      ]
+     },
+     {
+      "reel": "dic-selfie-revit-no-bim-reel",
+      "palabra_por_palabra": [
+       "0:00-0:03 · Sabes Revit, pero no sabes BIM. Y no es lo mismo.",
+       "0:03-0:15 · Revit es el programa. BIM es saber qué información lleva cada elemento, quién la va a usar y cuándo se entrega.",
+       "0:15-0:22 · Por eso hay gente que modela increíble… y nunca la sientan a coordinar.",
+       "0:22-0:34 · Comenta NIVEL y te mando el test para ver en qué bloque estás. Y si quieres más información de nuestro Máster por bloques, comenta MÁSTER. ¿Tú eres de Revit o de BIM?"
+      ]
+     },
+     {
+      "reel": "ene-selfie-acero-en-enero-reel",
+      "palabra_por_palabra": [
+       "0:00-0:04 · Llevas un año diciendo «en enero empiezo con acero»… y ya es enero.",
+       "0:04-0:18 · Casi siempre la excusa es el horario. Mira: la especialización en acero es cien por ciento asincrónica. Las clases están grabadas y avanzas a tu ritmo.",
+       "0:18-0:25 · Y no estás solo: tienes un tutor de inteligencia artificial y sesiones uno a uno con tu instructor.",
+       "0:25-0:34 · Si quieres más información de la Especialización en Acero, comenta TEMARIO y te mando el temario. ¿Qué te frenó en 2026?"
+      ]
+     }
+    ],
+    "notas": "Una sola toma por reel, sin trípode ni luz extra; si se traba, empieza de nuevo. Edición mínima: subtítulos de 1-2 palabras y logo (Story-vertical en historias-dma)."
+   }
+  ]
+ },
+ "youtube_largos": {
+  "nota": "Videos normales de YouTube (16:9, 2-5 minutos), NO Shorts, hechos con lo mejor del workshop IA conectada a Revit (17-nov). Título que abre con un problema, descripción con capítulos y el test de nivel, y texto de miniatura corto.",
+  "videos": [
+   {
+    "fecha": "Vie 11 dic",
+    "fecha_iso": "2026-12-11",
+    "id": "dic-yt-conectar-ia-revit",
+    "titulo": "Exportas el modelo a Excel para contar puertas: conecté una IA a mi modelo de Revit y se lo pregunté directo",
+    "miniatura_texto": "DEJA DE EXPORTAR A EXCEL",
+    "duracion": "4-5 min",
+    "descripcion": "¿Cuántas veces exportaste un modelo de Revit a Excel solo para contar puertas o revisar un parámetro?\n\nEn este video, tomado del workshop en vivo del 17 de noviembre, el Ing. Gabriel Pantoja conecta un asistente de IA a un modelo real de Revit con un servidor MCP de código abierto (pyRevit) y NonicaTab AI Connector (vista previa técnica, de solo lectura) y le hace preguntas sin exportar nada. También verás lo que no hace: no modela ni modifica el modelo.\n\n¿Quieres saber en qué nivel BIM estás? Test gratis de 5 minutos: https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form\n\nCapítulos:\n0:00 El problema: exportar para preguntar\n0:30 Qué se necesita (Revit + servidor MCP de código abierto)\n1:30 Conectar el asistente\n2:40 La primera pregunta al modelo\n3:40 Lo que NO hace\n4:20 Cierre\n\n#Revit #BIM #InteligenciaArtificial #RevitMCP #DesignModelingAcademy",
+    "tramos": [
+     [
+      "46:15",
+      "46:38",
+      "chat"
+     ],
+     [
+      "48:35",
+      "48:46",
+      "chat"
+     ],
+     [
+      "57:05",
+      "57:56",
+      "revit + chat"
+     ],
+     [
+      "(Daniela)",
+      "",
+      "tramo donde Gabriel explica qué se instala; ubicarlo entre 40:00 y 46:00"
+     ]
+    ]
+   },
+   {
+    "fecha": "Vie 18 dic",
+    "fecha_iso": "2026-12-18",
+    "id": "dic-yt-preguntas-al-modelo",
+    "titulo": "¿Cuántos muros tiene tu modelo? Se lo pregunté a la IA y lo comprobé en Revit",
+    "miniatura_texto": "¿CUÁNTOS MUROS? · 4 SEGUNDOS",
+    "duracion": "3-4 min",
+    "descripcion": "Le preguntamos a un modelo real de Revit cuántos muros, puertas y niveles tiene. La IA respondió en segundos… y después lo comprobamos en Revit, número por número.\n\nTomado del workshop en vivo IA conectada a Revit (17-nov) con el Ing. Gabriel Pantoja. Revit + servidor MCP de código abierto (pyRevit) y NonicaTab AI Connector (vista previa técnica, de solo lectura).\n\nTest de nivel BIM gratis (5 minutos): https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form\n\nCapítulos:\n0:00 Abrir tablas para una pregunta simple\n0:25 Los niveles del modelo\n1:40 Muros y puertas: la respuesta\n2:30 La comprobación en Revit\n3:20 Cuándo confiar y cuándo no\n\n#Revit #BIM #InteligenciaArtificial #ControlDeCalidad #DesignModelingAcademy",
+    "tramos": [
+     [
+      "58:38",
+      "60:00",
+      "chat (niveles)"
+     ],
+     [
+      "65:12",
+      "65:36",
+      "chat (muros y puertas)"
+     ],
+     [
+      "65:46",
+      "66:30",
+      "revit (comprobación)"
+     ]
+    ]
+   },
+   {
+    "fecha": "Mar 29 dic",
+    "fecha_iso": "2026-12-29",
+    "id": "dic-yt-niveles-duplicados",
+    "titulo": "3 niveles a la misma altura: el error que tu modelo esconde y la IA encontró",
+    "miniatura_texto": "3 NIVELES · MISMA ALTURA",
+    "duracion": "3 min",
+    "descripcion": "Le pedimos a la IA un resumen de un modelo real de Revit y avisó algo que no se ve a simple vista: 3 niveles a la misma altura (8,70 m). Puede ser intencional, pero es una duplicación típica que conviene revisar antes de entregar.\n\nTomado del workshop en vivo IA conectada a Revit (17-nov) con el Ing. Gabriel Pantoja.\n\nTest de nivel BIM gratis (5 minutos): https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form\n\nCapítulos:\n0:00 El error que no se ve\n0:30 El resumen del modelo\n1:30 3 niveles a 8,70 m\n2:20 Cómo revisarlo en Revit\n3:00 Revisión de fin de año\n\n#Revit #BIM #BIMManager #ControlDeCalidad #DesignModelingAcademy",
+    "tramos": [
+     [
+      "76:16",
+      "76:40",
+      "Revit + AI Connector"
+     ],
+     [
+      "77:16",
+      "78:05",
+      "Claude"
+     ],
+     [
+      "(Daniela)",
+      "",
+      "1-2 min de contexto antes del 76:16 (cómo se pidió el resumen)"
+     ]
+    ]
+   },
+   {
+    "fecha": "Mar 5 ene",
+    "fecha_iso": "2027-01-05",
+    "id": "ene-yt-donde-se-equivoca",
+    "titulo": "Dónde se equivoca la IA cuando lee tu modelo de Revit (y cómo darte cuenta)",
+    "miniatura_texto": "LA IA SE EQUIVOCÓ AQUÍ",
+    "duracion": "4 min",
+    "descripcion": "La IA contesta rápido y seguro. Eso no significa que tenga razón. En este bloque del workshop en vivo del 17-nov, el Ing. Gabriel Pantoja muestra dónde se equivoca un asistente conectado a Revit y cómo comprobar cada respuesta antes de usarla.\n\nTest de nivel BIM gratis (5 minutos): https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form\n\nCapítulos:\n0:00 Rápido no es correcto\n0:30 La pregunta\n1:30 La respuesta que falló\n2:40 Cómo nos dimos cuenta\n3:40 La regla: el número lo firma el ingeniero\n\n#Revit #BIM #InteligenciaArtificial #BIMManager #DesignModelingAcademy",
+    "tramos": [
+     [
+      "(Daniela)",
+      "",
+      "bloque «Dónde se equivoca la IA» de la grabación: ubicar inicio y fin (está en la segunda mitad del workshop)"
+     ]
+    ]
+   }
+  ]
+ },
+ "grupos": [
+  {
+   "n": 1,
+   "nombre": "GRUPO 1 · Feed principal — Instagram, Facebook, LinkedIn, Threads (imágenes) · Instagram, Facebook, TikTok, YouTube Shorts, LinkedIn (reels)",
+   "descripcion": "22 piezas en cuota + 15 fuera de cuota (Navidad y saludos de marca): un post diario del 1-dic al 6-ene. 10:00 Ecuador (15:00 UTC). Cada pieza trae su bloque `embudo`. Los 6 reels del replan del 26-nov son animados y nuevos, no re-ediciones.",
+   "reglas": [
+    "Problema primero, dato comparativo y pregunta que obliga a comentar; la palabra solo cierra.",
+    "Las piezas de venta usan TEMARIO, MÁSTER o DIPLOMADO, nunca ACERO, NIVEL, ZAPATA, MEMORIA ni COTIZA.",
+    "Venta suave: «Si quieres más información de nuestro Máster por bloques, comenta MÁSTER» / «…de la Especialización en Acero, comenta TEMARIO» como segunda línea de cierre.",
+    "En TikTok, YouTube Shorts, LinkedIn y Threads, sin palabra clave: pregunta abierta."
+   ],
+   "calendario": [
+    {
+     "fecha": "Mar 1 dic",
+     "fecha_iso": "2026-12-01",
+     "hora": "2026-12-01T15:00:00Z",
+     "semana": "Semana 1 (1-6 dic)",
+     "id": "dic-sigues-modelando-carrusel",
+     "titulo": "Llevas años en BIM y sigues siendo «el que modela»",
+     "tipo": "problema",
+     "formato_publicacion": "CARRUSEL (7 láminas, 4:5)",
+     "redes": [
+      "instagram",
+      "facebook",
+      "threads"
+     ],
+     "intencion": "problema",
+     "intencion_dic": "problema",
+     "producto": "Máster BIM Management + IA por bloques (solo se invita a agendar; nunca precio)",
+     "cta": "Comenta NIVEL · Si quieres más información de nuestro Máster por bloques, comenta MÁSTER.",
+     "palabra": "NIVEL",
+     "canal_dm": "OpenReply",
+     "cta_info": "MÁSTER",
+     "estado": "POR DISEÑAR",
+     "nota": "Abre el mes. Síntoma del ingeniero empleado (banco del brief). Pregunta con número para no disparar NIVEL por error. + VENTA SUAVE: «comenta MÁSTER» para información."
+    },
+    {
+     "fecha": "Mié 2 dic",
+     "fecha_iso": "2026-12-02",
+     "hora": "2026-12-02T15:00:00Z",
+     "semana": "Semana 1 (1-6 dic)",
+     "id": "dic-zapata-momento-se-levanta-reel",
+     "titulo": "Tu zapata se levanta de un lado (y la calculaste con P/A)",
+     "tipo": "problema",
+     "formato_publicacion": "REEL ANIMADO (a) · pizarra dibujada sin presentador, voz de Gabriel con IA · 44-48 s",
+     "redes": [
+      "instagram",
+      "facebook",
+      "tiktok",
+      "youtube"
+     ],
+     "intencion": "problema",
+     "intencion_dic": "problema",
+     "producto": "Diplomado de Cálculo Estructural",
+     "cta": "Comenta ZAPATA",
+     "palabra": "ZAPATA",
+     "canal_dm": "GHL",
+     "cta_info": null,
+     "estado": "POR PRODUCIR (animación en Remotion, sin grabar) · falta el OK de Dayana y la revisión técnica de Gabriel",
+     "nota": "NUEVA (26-nov). Reemplaza la re-edición del reel de la zapata y los suelos, que Dayana rechazó por repetida. Misma línea que el ganador de noviembre (DfmwQgAjiDk, 89 comentarios) con contenido nuevo: la excentricidad. Reel animado, sin grabar. ZAPATA sigue en GHL.",
+     "produccion": "a · reel animado en Remotion, sin grabación de Gabriel",
+     "reemplaza_a": "dic-reedit-zapata-suelos-reel"
+    },
+    {
+     "fecha": "Jue 3 dic",
+     "fecha_iso": "2026-12-03",
+     "hora": "2026-12-03T15:00:00Z",
+     "semana": "Semana 1 (1-6 dic)",
+     "id": "dic-6-uniones-cuales-pasan-momento-reel",
+     "titulo": "6 formas de unir una viga de acero a una columna: solo 3 pasan momento",
+     "tipo": "problema",
+     "formato_publicacion": "REEL ANIMADO (a) · isométrico que se arma y se desarma, voz de Gabriel con IA · 46-50 s",
+     "redes": [
+      "instagram",
+      "facebook",
+      "tiktok",
+      "youtube"
+     ],
+     "intencion": "problema",
+     "intencion_dic": "problema",
+     "producto": "Especialización en Acero con Tutor IA",
+     "cta": "Comenta ACERO · Si quieres más información de la Especialización en Acero, comenta TEMARIO.",
+     "palabra": "ACERO",
+     "canal_dm": "OpenReply",
+     "cta_info": "TEMARIO",
+     "estado": "POR PRODUCIR (animación en Remotion, sin grabar) · falta el OK de Dayana y la revisión técnica de Gabriel",
+     "nota": "NUEVA (26-nov). Lleva el GANCHO PROPUESTO que eligió Dayana («6 formas de unir una viga de acero a una columna. ¿Cuál usas tú? Dinos el número») sobre un video distinto: columna de acero, voz, piezas que se arman y el reto «solo 3 pasan momento». Reel animado, sin grabar. + VENTA SUAVE: «comenta TEMARIO».",
+     "produccion": "a · reel animado en Remotion, sin grabación de Gabriel",
+     "reemplaza_a": "dic-reedit-uniones-viga-columna-reel"
+    },
+    {
+     "fecha": "Vie 4 dic",
+     "fecha_iso": "2026-12-04",
+     "hora": "2026-12-04T15:00:00Z",
+     "semana": "Semana 1 (1-6 dic)",
+     "id": "dic-testimonio-acero-post",
+     "titulo": "«Ustedes han sido una gran solución»: un alumno de Acero",
+     "tipo": "testimonio",
+     "formato_publicacion": "POST (1 imagen 4:5 con cita real)",
+     "redes": [
+      "instagram",
+      "facebook",
+      "threads"
+     ],
+     "intencion": "testimonio",
+     "intencion_dic": "venta",
+     "producto": "Especialización en Acero con Tutor IA",
+     "cta": "Comenta TEMARIO",
+     "palabra": "TEMARIO",
+     "canal_dm": "OpenReply",
+     "cta_info": null,
+     "estado": "POR DISEÑAR (testimonio guardado del 23-oct)",
+     "nota": "Testimonio GUARDADO de Acero: reel del 23-oct (De2JwdYlfH9), «Ustedes han sido una gran solución». Palabra de venta TEMARIO (DM con el temario de Acero)."
+    },
+    {
+     "fecha": "Sáb 5 dic",
+     "fecha_iso": "2026-12-05",
+     "hora": "2026-12-05T15:00:00Z",
+     "semana": "Semana 1 (1-6 dic)",
+     "id": "dic-cuantia-aci-nec-carrusel",
+     "titulo": "8 % o 3 %: la cuantía de columnas según ACI y NEC",
+     "tipo": "solución",
+     "formato_publicacion": "CARRUSEL (7 láminas, 4:5)",
+     "redes": [
+      "instagram",
+      "facebook",
+      "threads"
+     ],
+     "intencion": "solución",
+     "intencion_dic": "referencia",
+     "producto": "Diplomado de Cálculo Estructural",
+     "cta": "Comenta MEMORIA",
+     "palabra": "MEMORIA",
+     "canal_dm": "OpenReply",
+     "cta_info": null,
+     "estado": "POR DISEÑAR",
+     "nota": "Referencia comparativa ACI 318-19 vs NEC (formato del ganador «El 1 % de cuantía», 152 comentarios). Regla 0. · MOVIDA de «Lun 7 dic» a «Sáb 5 dic» (25-nov) para dejar el día a la campaña de Navidad y tener un post diario."
+    },
+    {
+     "fecha": "Dom 6 dic",
+     "fecha_iso": "2026-12-06",
+     "hora": "2026-12-06T15:00:00Z",
+     "semana": "Semana 1 (1-6 dic)",
+     "id": "dic-lo-que-uso-ia-revit-reel",
+     "titulo": "Lo que uso según lo que necesito: IA + Revit",
+     "tipo": "solución",
+     "formato_publicacion": "REEL (a) · «tres bandas» en Remotion con las pantallas reales del workshop del 17-nov, sin grabación nueva · 48-52 s",
+     "redes": [
+      "instagram",
+      "facebook",
+      "tiktok",
+      "youtube"
+     ],
+     "intencion": "solución",
+     "intencion_dic": "referencia",
+     "producto": "Máster BIM Management + IA por bloques (solo se invita a agendar; nunca precio)",
+     "cta": "Comenta NIVEL · Si quieres más información de nuestro Máster por bloques, comenta MÁSTER.",
+     "palabra": "NIVEL",
+     "canal_dm": "OpenReply",
+     "cta_info": "MÁSTER",
+     "estado": "POR PRODUCIR (animación en Remotion, sin grabar) · falta el OK de Dayana y la revisión técnica de Gabriel",
+     "nota": "NUEVA (26-nov). Es la pieza opcional `opc-lo-que-uso-ia-revit` de la página de aprobación, que no estaba hecha: formato de @lexmrbim «lo que uso según lo que necesito» (357 y 151 comentarios), como reel de tres bandas con las pantallas del workshop. Ocupa el día del short s3, que pasa a reserva para no publicar dos veces el mismo clip. Si Dayana prefiere dejar el short aquí, esta pieza va el mar 22-dic. PRUEBA de formato. + VENTA SUAVE: «comenta MÁSTER».",
+     "produccion": "a · reel animado en Remotion, sin grabación de Gabriel",
+     "reemplaza_a": "dic-ws-short-s3-reel"
+    },
+    {
+     "fecha": "Lun 7 dic",
+     "fecha_iso": "2026-12-07",
+     "hora": "2026-12-07T15:00:00Z",
+     "semana": "Semana 2 (7-13 dic)",
+     "id": "nav-lanzamiento-papeles-reel",
+     "titulo": "Los jefes se fueron de vacaciones: lanzamiento",
+     "tipo": "venta",
+     "formato_publicacion": "REEL 12-15 s hecho con IA, sin caras: «los papeles por todos lados»",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "intencion": "venta",
+     "intencion_dic": "venta · campaña de Navidad",
+     "producto": "Promo de Navidad · 40 cursos a $46.50",
+     "cta": "Comenta NAVIDAD",
+     "palabra": "NAVIDAD",
+     "canal_dm": "OpenReply (Instagram) + GHL (demás redes)",
+     "cta_info": null,
+     "estado": "POR DISEÑAR",
+     "nota": "Video 1 del plan de Navidad: hecho con IA, sin caras, solo manos. Música alegre de travesura. Sin Gabriel.",
+     "campana": "navidad-2026",
+     "fuera_de_cuota": true
+    },
+    {
+     "fecha": "Mar 8 dic",
+     "fecha_iso": "2026-12-08",
+     "hora": "2026-12-08T15:00:00Z",
+     "semana": "Semana 2 (7-13 dic)",
+     "id": "dic-revit-3-origenes-vinculo-reel",
+     "titulo": "Vinculaste estructura y apareció a kilómetros de arquitectura: los 3 orígenes de Revit",
+     "tipo": "problema",
+     "formato_publicacion": "REEL ANIMADO (a) · pizarra dibujada con letras de marca + 1 captura real de Revit, voz de Gabriel con IA · 46-50 s",
+     "redes": [
+      "instagram",
+      "facebook",
+      "tiktok",
+      "youtube"
+     ],
+     "intencion": "problema",
+     "intencion_dic": "problema",
+     "producto": "Máster BIM Management + IA por bloques (solo se invita a agendar; nunca precio)",
+     "cta": "Comenta NIVEL",
+     "palabra": "NIVEL",
+     "canal_dm": "OpenReply",
+     "cta_info": null,
+     "estado": "POR PRODUCIR (animación en Remotion, sin grabar) · falta el OK de Dayana y la revisión técnica de Gabriel",
+     "nota": "NUEVA (26-nov). Reemplaza la re-edición de «Simbología de niveles», rechazada por repetida. Misma línea (símbolos numerados + «¿cuál usas tú?», DeubXmFlIDE: 1.835 comentarios) con contenido nuevo: los 3 orígenes de Revit. Datos comprobados en help.autodesk.com. Falta 1 captura de Revit.",
+     "produccion": "a · reel animado en Remotion, sin grabación de Gabriel",
+     "reemplaza_a": "dic-reedit-simbologia-niveles-reel"
+    },
+    {
+     "fecha": "Mié 9 dic",
+     "fecha_iso": "2026-12-09",
+     "hora": "2026-12-09T15:00:00Z",
+     "semana": "Semana 2 (7-13 dic)",
+     "id": "nav-40-cursos-carrusel",
+     "titulo": "Los 40 cursos que entran en la promo",
+     "tipo": "venta",
+     "formato_publicacion": "CARRUSEL 8 láminas 4:5: los 40 cursos por categoría",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "intencion": "venta",
+     "intencion_dic": "venta · campaña de Navidad",
+     "producto": "Promo de Navidad · 40 cursos a $46.50",
+     "cta": "Comenta NAVIDAD",
+     "palabra": "NAVIDAD",
+     "canal_dm": "OpenReply (Instagram) + GHL (demás redes)",
+     "cta_info": null,
+     "estado": "POR DISEÑAR",
+     "nota": "Nombres de los cursos tal como los pasó Dayana en el plan. Falta confirmar el nombre exacto del curso de ACC en Sharp CRM.",
+     "campana": "navidad-2026",
+     "fuera_de_cuota": true
+    },
+    {
+     "fecha": "Jue 10 dic",
+     "fecha_iso": "2026-12-10",
+     "hora": "2026-12-10T15:00:00Z",
+     "semana": "Semana 2 (7-13 dic)",
+     "id": "dic-selfie-chatgpt-firma-reel",
+     "titulo": "Le preguntaste a ChatGPT y el número lleva tu firma",
+     "tipo": "problema",
+     "formato_publicacion": "REEL SELFIE (Gabriel con el teléfono, 25-35 s)",
+     "redes": [
+      "instagram",
+      "facebook",
+      "tiktok",
+      "youtube"
+     ],
+     "intencion": "problema",
+     "intencion_dic": "problema",
+     "producto": "Diplomado de Cálculo Estructural",
+     "cta": "Comenta MEMORIA",
+     "palabra": "MEMORIA",
+     "canal_dm": "OpenReply",
+     "cta_info": null,
+     "estado": "POR GRABAR (selfie, antes del lun 7-dic)",
+     "nota": "REEL SELFIE (G-06a, Gabriel con el teléfono, sin protocolo). Síntoma: «el número de ChatGPT lleva tu firma». Semana de 5 piezas por el pedido de selfies."
+    },
+    {
+     "fecha": "Vie 11 dic",
+     "fecha_iso": "2026-12-11",
+     "hora": "2026-12-11T15:00:00Z",
+     "semana": "Semana 2 (7-13 dic)",
+     "id": "nav-que-incluye-carrusel",
+     "titulo": "Qué incluye cada curso de la promo",
+     "tipo": "venta",
+     "formato_publicacion": "CARRUSEL 6 láminas 4:5: qué incluye la promo",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "intencion": "venta",
+     "intencion_dic": "venta · campaña de Navidad",
+     "producto": "Promo de Navidad · 40 cursos a $46.50",
+     "cta": "Comenta NAVIDAD",
+     "palabra": "NAVIDAD",
+     "canal_dm": "OpenReply (Instagram) + GHL (demás redes)",
+     "cta_info": null,
+     "estado": "POR DISEÑAR",
+     "nota": "El certificado es de Design Modeling DG S.A.S.: no decir «certificación Autodesk» ni microcredenciales (plan de Dayana).",
+     "campana": "navidad-2026",
+     "fuera_de_cuota": true
+    },
+    {
+     "fecha": "Sáb 12 dic",
+     "fecha_iso": "2026-12-12",
+     "hora": "2026-12-12T15:00:00Z",
+     "semana": "Semana 2 (7-13 dic)",
+     "id": "dic-combinaciones-no-se-mezclan-reel",
+     "titulo": "1,4 y 1,7 o 1,2 y 1,6: lo que no puedes hacer es mezclarlas",
+     "tipo": "problema",
+     "formato_publicacion": "REEL ANIMADO (a) · pizarra dibujada sin presentador, voz de Gabriel con IA · 48-52 s",
+     "redes": [
+      "instagram",
+      "facebook",
+      "tiktok",
+      "youtube"
+     ],
+     "intencion": "problema",
+     "intencion_dic": "problema",
+     "producto": "Diplomado de Cálculo Estructural",
+     "cta": "Comenta MEMORIA",
+     "palabra": "MEMORIA",
+     "canal_dm": "OpenReply",
+     "cta_info": null,
+     "estado": "POR PRODUCIR (animación en Remotion, sin grabar) · falta el OK de Dayana y la revisión técnica de Gabriel",
+     "nota": "NUEVA (26-nov). Reemplaza el reel de Gabriel a cámara «Te devolvieron la memoria…», que Dayana marcó como repetido (el post del 25-nov ya usó ese gancho). Reel animado, sin grabar: la grabación G-01 ya no hace falta. Dato comparativo E.060 / NEC / ACI. OJO: la calculadora de zapatas usa 1,4 y 1,7; el reel no dice que esté mal, dice que no se mezclan.",
+     "produccion": "a · reel animado en Remotion, sin grabación de Gabriel",
+     "reemplaza_a": "dic-gabriel-memoria-devuelta-reel"
+    },
+    {
+     "fecha": "Dom 13 dic",
+     "fecha_iso": "2026-12-13",
+     "hora": "2026-12-13T15:00:00Z",
+     "semana": "Semana 2 (7-13 dic)",
+     "id": "dic-honorarios-revisiones-carrusel",
+     "titulo": "Ganaste el proyecto y perdiste plata en la tercera revisión",
+     "tipo": "problema",
+     "formato_publicacion": "CARRUSEL (7 láminas, 4:5)",
+     "redes": [
+      "instagram",
+      "facebook",
+      "threads"
+     ],
+     "intencion": "problema",
+     "intencion_dic": "problema",
+     "producto": "Especialización en Acero con Tutor IA",
+     "cta": "Comenta COTIZA · Si quieres más información de la Especialización en Acero, comenta TEMARIO.",
+     "palabra": "COTIZA",
+     "canal_dm": "OpenReply",
+     "cta_info": "TEMARIO",
+     "estado": "POR DISEÑAR",
+     "nota": "Síntoma del consultor independiente. Sale el viernes para no pegar 3 videos seguidos. + VENTA SUAVE: «comenta TEMARIO». · MOVIDA de «Vie 11 dic» a «Dom 13 dic» (25-nov) para dejar el día a la campaña de Navidad y tener un post diario."
+    },
+    {
+     "fecha": "Lun 14 dic",
+     "fecha_iso": "2026-12-14",
+     "hora": "2026-12-14T15:00:00Z",
+     "semana": "Semana 3 (14-20 dic)",
+     "id": "nav-fragmento-clase-1-reel",
+     "titulo": "Así se ve por dentro un curso de la promo",
+     "tipo": "venta",
+     "formato_publicacion": "REEL 30-45 s: fragmento de una clase real de un curso de la promo",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "intencion": "venta",
+     "intencion_dic": "venta · campaña de Navidad",
+     "producto": "Promo de Navidad · 40 cursos a $46.50",
+     "cta": "Comenta NAVIDAD",
+     "palabra": "NAVIDAD",
+     "canal_dm": "OpenReply (Instagram) + GHL (demás redes)",
+     "cta_info": null,
+     "estado": "POR DISEÑAR",
+     "nota": "Sale de los clips de clases de Vimeo (skill clips-clases-vimeo). Sin grabación nueva.",
+     "campana": "navidad-2026",
+     "fuera_de_cuota": true
+    },
+    {
+     "fecha": "Mar 15 dic",
+     "fecha_iso": "2026-12-15",
+     "hora": "2026-12-15T15:00:00Z",
+     "semana": "Semana 3 (14-20 dic)",
+     "id": "dic-gabriel-ratios-robot-reel",
+     "titulo": "Tu modelo da ratios de 1,4: ¿es la sección o los apoyos?",
+     "tipo": "problema",
+     "formato_publicacion": "REEL (Gabriel a cámara + pantalla de Robot, 50-60 s)",
+     "redes": [
+      "instagram",
+      "facebook",
+      "tiktok",
+      "youtube"
+     ],
+     "intencion": "problema",
+     "intencion_dic": "problema",
+     "producto": "Especialización en Acero con Tutor IA",
+     "cta": "Comenta ACERO · Si quieres más información de la Especialización en Acero, comenta TEMARIO.",
+     "palabra": "ACERO",
+     "canal_dm": "OpenReply",
+     "cta_info": "TEMARIO",
+     "estado": "POR GRABAR (Gabriel, antes del mar 8-dic)",
+     "nota": "Gabriel + pantalla de Robot (grabación G-02). Caso real de un alumno, sin nombre si no hay permiso. + VENTA SUAVE: «comenta TEMARIO»."
+    },
+    {
+     "fecha": "Mié 16 dic",
+     "fecha_iso": "2026-12-16",
+     "hora": "2026-12-16T15:00:00Z",
+     "semana": "Semana 3 (14-20 dic)",
+     "id": "nav-regalo-reel",
+     "titulo": "Tenemos un regalo especial para ti",
+     "tipo": "venta",
+     "formato_publicacion": "REEL 10-15 s hecho con IA, sin caras: «tu regalo de Navidad»",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "intencion": "venta",
+     "intencion_dic": "venta · campaña de Navidad",
+     "producto": "Promo de Navidad · 40 cursos a $46.50",
+     "cta": "Comenta NAVIDAD",
+     "palabra": "NAVIDAD",
+     "canal_dm": "OpenReply (Instagram) + GHL (demás redes)",
+     "cta_info": null,
+     "estado": "POR DISEÑAR",
+     "nota": "Reemplaza al video 2 con Gabriel (pendiente en el plan): Dayana pidió videos que no necesiten a Gabriel.",
+     "campana": "navidad-2026",
+     "fuera_de_cuota": true
+    },
+    {
+     "fecha": "Jue 17 dic",
+     "fecha_iso": "2026-12-17",
+     "hora": "2026-12-17T15:00:00Z",
+     "semana": "Semana 3 (14-20 dic)",
+     "id": "dic-obj-tiempo-master-carrusel",
+     "titulo": "«No tengo tiempo»: cómo estudian BIM los que trabajan 10 horas",
+     "tipo": "objeción",
+     "formato_publicacion": "CARRUSEL (6 láminas, 4:5)",
+     "redes": [
+      "instagram",
+      "facebook",
+      "threads"
+     ],
+     "intencion": "objeción",
+     "intencion_dic": "venta",
+     "producto": "Máster BIM Management + IA por bloques (cohorte de febrero; agendar, nunca precio)",
+     "cta": "Comenta MÁSTER",
+     "palabra": "MÁSTER",
+     "canal_dm": "OpenReply",
+     "cta_info": null,
+     "estado": "POR DISEÑAR",
+     "nota": "Objeción real («no tengo tiempo», 3 de 5 compradores). Máster sin precio: «comenta MÁSTER» → WhatsApp para agendar. Cohorte de febrero."
+    },
+    {
+     "fecha": "Vie 18 dic",
+     "fecha_iso": "2026-12-18",
+     "hora": "2026-12-18T15:00:00Z",
+     "semana": "Semana 3 (14-20 dic)",
+     "id": "nav-regala-carrusel",
+     "titulo": "Regala un curso: cómo comprarlo para otra persona",
+     "tipo": "venta",
+     "formato_publicacion": "CARRUSEL 6 láminas 4:5: regala un curso",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "intencion": "venta",
+     "intencion_dic": "venta · campaña de Navidad",
+     "producto": "Promo de Navidad · 40 cursos a $46.50",
+     "cta": "Comenta NAVIDAD",
+     "palabra": "NAVIDAD",
+     "canal_dm": "OpenReply (Instagram) + GHL (demás redes)",
+     "cta_info": null,
+     "estado": "POR DISEÑAR",
+     "nota": "Gancho C (regálalo). Desde el 15-dic este gancho gana peso en pauta si funciona.",
+     "campana": "navidad-2026",
+     "fuera_de_cuota": true
+    },
+    {
+     "fecha": "Sáb 19 dic",
+     "fecha_iso": "2026-12-19",
+     "hora": "2026-12-19T15:00:00Z",
+     "semana": "Semana 3 (14-20 dic)",
+     "id": "dic-deflexiones-l360-carrusel",
+     "titulo": "L/360, L/240 o L/180: ¿cuál le toca a cada elemento?",
+     "tipo": "solución",
+     "formato_publicacion": "CARRUSEL (8 láminas, 4:5)",
+     "redes": [
+      "instagram",
+      "facebook",
+      "threads"
+     ],
+     "intencion": "solución",
+     "intencion_dic": "referencia",
+     "producto": "Especialización en Acero con Tutor IA",
+     "cta": "Comenta ACERO",
+     "palabra": "ACERO",
+     "canal_dm": "OpenReply",
+     "cta_info": null,
+     "estado": "POR DISEÑAR",
+     "nota": "Referencia comparativa (IBC 2021, tabla 1604.3). Regla 0. · MOVIDA de «Lun 14 dic» a «Sáb 19 dic» (25-nov) para dejar el día a la campaña de Navidad y tener un post diario."
+    },
+    {
+     "fecha": "Dom 20 dic",
+     "fecha_iso": "2026-12-20",
+     "hora": "2026-12-20T15:00:00Z",
+     "semana": "Semana 3 (14-20 dic)",
+     "id": "dic-ws-clip-niveles-duplicados-reel",
+     "titulo": "La IA encontró 3 niveles a la misma altura",
+     "tipo": "problema",
+     "formato_publicacion": "REEL (clip del workshop 17-nov, 9:16)",
+     "redes": [
+      "instagram",
+      "facebook",
+      "tiktok",
+      "youtube"
+     ],
+     "intencion": "problema",
+     "intencion_dic": "problema",
+     "producto": "Máster BIM Management + IA por bloques (solo se invita a agendar; nunca precio)",
+     "cta": "Comenta NIVEL",
+     "palabra": "NIVEL",
+     "canal_dm": "OpenReply",
+     "cta_info": null,
+     "estado": "BORRADOR editado (18-nov): falta subtitular, escuchar el audio completo y cambiar el cierre a la pregunta",
+     "nota": "Clip del workshop (brief 4b). El único de los 4 con síntoma; falta subtitular y escuchar el audio. · MOVIDA de «Mié 16 dic» a «Dom 20 dic» (25-nov) para dejar el día a la campaña de Navidad y tener un post diario."
+    },
+    {
+     "fecha": "Lun 21 dic",
+     "fecha_iso": "2026-12-21",
+     "hora": "2026-12-21T15:00:00Z",
+     "semana": "Semana 4 (21-27 dic) · fiestas",
+     "id": "nav-equipo-escondido-reel",
+     "titulo": "El equipo se esconde de los jefes",
+     "tipo": "venta",
+     "formato_publicacion": "REEL 10-15 s hecho con IA, sin caras: el equipo «escondiéndose» de los jefes",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "intencion": "venta",
+     "intencion_dic": "venta · campaña de Navidad",
+     "producto": "Promo de Navidad · 40 cursos a $46.50",
+     "cta": "Comenta NAVIDAD",
+     "palabra": "NAVIDAD",
+     "canal_dm": "OpenReply (Instagram) + GHL (demás redes)",
+     "cta_info": null,
+     "estado": "POR DISEÑAR",
+     "nota": "Hecho con IA, sin caras.",
+     "campana": "navidad-2026",
+     "fuera_de_cuota": true
+    },
+    {
+     "fecha": "Mar 22 dic",
+     "fecha_iso": "2026-12-22",
+     "hora": "2026-12-22T15:00:00Z",
+     "semana": "Semana 4 (21-27 dic) · fiestas",
+     "id": "dic-selfie-revit-no-bim-reel",
+     "titulo": "Sabes Revit, pero no sabes BIM",
+     "tipo": "problema",
+     "formato_publicacion": "REEL SELFIE (Gabriel con el teléfono, 25-35 s)",
+     "redes": [
+      "instagram",
+      "facebook",
+      "tiktok",
+      "youtube"
+     ],
+     "intencion": "problema",
+     "intencion_dic": "problema",
+     "producto": "Máster por bloques · Bloque 1 (agendar; nunca precio)",
+     "cta": "Comenta NIVEL · Si quieres más información de nuestro Máster por bloques, comenta MÁSTER.",
+     "palabra": "NIVEL",
+     "canal_dm": "OpenReply",
+     "cta_info": "MÁSTER",
+     "estado": "POR GRABAR (selfie, antes del lun 7-dic)",
+     "nota": "REEL SELFIE (G-06b). Síntoma: «Sabes Revit, pero no sabes BIM». NIVEL + VENTA SUAVE «comenta MÁSTER». Semana de 5 piezas por el pedido de selfies. · MOVIDA de «Vie 18 dic» a «Mar 22 dic» (25-nov) para dejar el día a la campaña de Navidad y tener un post diario."
+    },
+    {
+     "fecha": "Mié 23 dic",
+     "fecha_iso": "2026-12-23",
+     "hora": "2026-12-23T15:00:00Z",
+     "semana": "Semana 4 (21-27 dic) · fiestas",
+     "id": "nav-que-curso-te-toca-post",
+     "titulo": "¿Qué curso te toca? Arquitecto, ingeniero civil o dibujante",
+     "tipo": "venta",
+     "formato_publicacion": "POST 1 imagen 4:5: ¿qué curso te toca?",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "intencion": "venta",
+     "intencion_dic": "venta · campaña de Navidad",
+     "producto": "Promo de Navidad · 40 cursos a $46.50",
+     "cta": "Comenta NAVIDAD",
+     "palabra": "NAVIDAD",
+     "canal_dm": "OpenReply (Instagram) + GHL (demás redes)",
+     "cta_info": null,
+     "estado": "POR DISEÑAR",
+     "nota": "",
+     "campana": "navidad-2026",
+     "fuera_de_cuota": true
+    },
+    {
+     "fecha": "Jue 24 dic",
+     "fecha_iso": "2026-12-24",
+     "hora": "2026-12-24T15:00:00Z",
+     "semana": "Semana 4 (21-27 dic) · fiestas",
+     "id": "nav-nochebuena-post",
+     "titulo": "Feliz Nochebuena",
+     "tipo": "comunidad",
+     "formato_publicacion": "POST 1 imagen 4:5: Feliz Nochebuena + ¿te falta un regalo?",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "intencion": "comunidad",
+     "intencion_dic": "saludo de marca (sin venta)",
+     "producto": "Marca Design Modeling",
+     "cta": "Pregunta abierta",
+     "palabra": null,
+     "canal_dm": null,
+     "cta_info": null,
+     "estado": "POR DISEÑAR",
+     "nota": "Post simbólico SIN VENTA (plan actualizado de Dayana: Navidad, Año Nuevo y Reyes sin venta).",
+     "campana": "navidad-2026",
+     "fuera_de_cuota": true
+    },
+    {
+     "fecha": "Vie 25 dic",
+     "fecha_iso": "2026-12-25",
+     "hora": "2026-12-25T15:00:00Z",
+     "semana": "Semana 4 (21-27 dic) · fiestas",
+     "id": "dic-navidad-post",
+     "titulo": "Feliz Navidad de parte de Design Modeling",
+     "tipo": "comunidad",
+     "formato_publicacion": "POST (1 imagen 4:5, saludo de marca DG 2026)",
+     "redes": [
+      "instagram",
+      "facebook",
+      "threads"
+     ],
+     "intencion": "comunidad",
+     "intencion_dic": "saludo de marca",
+     "producto": "Marca Design Modeling",
+     "cta": "Pregunta abierta, sin palabra clave",
+     "palabra": null,
+     "canal_dm": null,
+     "cta_info": null,
+     "estado": "POR DISEÑAR",
+     "nota": "FECHA ESPECIAL (Dayana, 23-nov): saludo de Navidad cálido, imagen DG 2026, SIN VENTA. Fuera de cuota.",
+     "fuera_de_cuota": true
+    },
+    {
+     "fecha": "Sáb 26 dic",
+     "fecha_iso": "2026-12-26",
+     "hora": "2026-12-26T15:00:00Z",
+     "semana": "Semana 4 (21-27 dic) · fiestas",
+     "id": "dic-doble-trabajo-autocad-excel-carrusel",
+     "titulo": "Haces todo dos veces: el plano en AutoCAD y las cantidades en Excel",
+     "tipo": "problema",
+     "formato_publicacion": "CARRUSEL (7 láminas, 4:5)",
+     "redes": [
+      "instagram",
+      "facebook",
+      "threads"
+     ],
+     "intencion": "problema",
+     "intencion_dic": "problema",
+     "producto": "Máster por bloques · Bloque 1 BIM Professional (agendar; nunca precio)",
+     "cta": "Comenta BIM",
+     "palabra": "BIM",
+     "canal_dm": "OpenReply",
+     "cta_info": null,
+     "estado": "POR DISEÑAR",
+     "nota": "RITMO DE FIESTAS (2 por semana). Síntoma del contratista con AutoCAD + Excel. · MOVIDA de «Lun 21 dic» a «Sáb 26 dic» (25-nov) para dejar el día a la campaña de Navidad y tener un post diario."
+    },
+    {
+     "fecha": "Dom 27 dic",
+     "fecha_iso": "2026-12-27",
+     "hora": "2026-12-27T15:00:00Z",
+     "semana": "Semana 4 (21-27 dic) · fiestas",
+     "id": "dic-zapata-5-medidas-aci-reel",
+     "titulo": "5 medidas de una zapata aislada y dónde se mide cada una",
+     "tipo": "solución",
+     "formato_publicacion": "REEL ANIMADO (a) · isométrico que se arma y se desarma, voz de Gabriel con IA · 40-44 s",
+     "redes": [
+      "instagram",
+      "facebook",
+      "tiktok",
+      "youtube"
+     ],
+     "intencion": "solución",
+     "intencion_dic": "referencia",
+     "producto": "Diplomado de Cálculo Estructural",
+     "cta": "Comenta ZAPATA",
+     "palabra": "ZAPATA",
+     "canal_dm": "GHL",
+     "cta_info": null,
+     "estado": "POR PRODUCIR (animación en Remotion, sin grabar) · falta el OK de Dayana y la revisión técnica de Gabriel",
+     "nota": "NUEVA (26-nov). Reemplaza la re-edición de «5 tipos de cimentación», rechazada por repetida. Chuleta numerada para guardar (ACI 318-19), con pregunta y ZAPATA al cierre. Reel animado, sin grabar. Sin venta.",
+     "produccion": "a · reel animado en Remotion, sin grabación de Gabriel",
+     "reemplaza_a": "dic-reedit-5-cimentaciones-reel"
+    },
+    {
+     "fecha": "Lun 28 dic",
+     "fecha_iso": "2026-12-28",
+     "hora": "2026-12-28T15:00:00Z",
+     "semana": "Semana 5 (28 dic-3 ene) · fiestas",
+     "id": "nav-fragmento-clase-2-reel",
+     "titulo": "Otra clase por dentro: cimentaciones",
+     "tipo": "venta",
+     "formato_publicacion": "REEL 30-45 s: fragmento de otra clase real (cimentaciones)",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "intencion": "venta",
+     "intencion_dic": "venta · campaña de Navidad",
+     "producto": "Promo de Navidad · 40 cursos a $46.50",
+     "cta": "Comenta NAVIDAD",
+     "palabra": "NAVIDAD",
+     "canal_dm": "OpenReply (Instagram) + GHL (demás redes)",
+     "cta_info": null,
+     "estado": "POR DISEÑAR",
+     "nota": "Clip de Vimeo (cimentaciones o naves industriales). Sin grabación nueva.",
+     "campana": "navidad-2026",
+     "fuera_de_cuota": true
+    },
+    {
+     "fecha": "Mar 29 dic",
+     "fecha_iso": "2026-12-29",
+     "hora": "2026-12-29T15:00:00Z",
+     "semana": "Semana 5 (28 dic-3 ene) · fiestas",
+     "id": "dic-coordinar-sin-saber-carrusel",
+     "titulo": "Te pidieron coordinar y nadie te enseñó a dirigir una reunión de interferencias",
+     "tipo": "problema",
+     "formato_publicacion": "CARRUSEL (7 láminas, 4:5)",
+     "redes": [
+      "instagram",
+      "facebook",
+      "threads"
+     ],
+     "intencion": "problema",
+     "intencion_dic": "problema",
+     "producto": "Máster BIM Management + IA por bloques (solo se invita a agendar; nunca precio)",
+     "cta": "Comenta NIVEL · Si quieres más información de nuestro Máster por bloques, comenta MÁSTER.",
+     "palabra": "NIVEL",
+     "canal_dm": "OpenReply",
+     "cta_info": "MÁSTER",
+     "estado": "POR DISEÑAR",
+     "nota": "RITMO DE FIESTAS. Síntoma del que le piden coordinar. + VENTA SUAVE: «comenta MÁSTER». · MOVIDA de «Lun 28 dic» a «Mar 29 dic» (25-nov) para dejar el día a la campaña de Navidad y tener un post diario."
+    },
+    {
+     "fecha": "Mié 30 dic",
+     "fecha_iso": "2026-12-30",
+     "hora": "2026-12-30T15:00:00Z",
+     "semana": "Semana 5 (28 dic-3 ene) · fiestas",
+     "id": "dic-peso-varilla-post",
+     "titulo": "¿Cuánto pesa cada varilla? La tabla para no cuantificar a ojo",
+     "tipo": "solución",
+     "formato_publicacion": "POST (1 imagen 4:5, tabla)",
+     "redes": [
+      "instagram",
+      "facebook",
+      "threads"
+     ],
+     "intencion": "solución",
+     "intencion_dic": "referencia",
+     "producto": "Máster BIM Management + IA por bloques (solo se invita a agendar; nunca precio)",
+     "cta": "Comenta NIVEL",
+     "palabra": "NIVEL",
+     "canal_dm": "OpenReply",
+     "cta_info": null,
+     "estado": "POR DISEÑAR",
+     "nota": "Referencia guardable de Año Nuevo. Sale el 30 (sin venta el 31 y el 1)."
+    },
+    {
+     "fecha": "Jue 31 dic",
+     "fecha_iso": "2026-12-31",
+     "hora": "2026-12-31T15:00:00Z",
+     "semana": "Semana 5 (28 dic-3 ene) · fiestas",
+     "id": "dic-fin-de-ano-post",
+     "titulo": "Cierre de 2026: ¿cuál es tu propósito profesional?",
+     "tipo": "comunidad",
+     "formato_publicacion": "POST (1 imagen 4:5, cierre de año DG 2026)",
+     "redes": [
+      "instagram",
+      "facebook",
+      "threads"
+     ],
+     "intencion": "comunidad",
+     "intencion_dic": "saludo de marca",
+     "producto": "Máster por bloques (agendar; nunca precio)",
+     "cta": "Pregunta abierta · Comenta NIVEL (opcional)",
+     "palabra": "NIVEL",
+     "canal_dm": "OpenReply",
+     "cta_info": null,
+     "estado": "POR DISEÑAR",
+     "nota": "FECHA ESPECIAL (Dayana, 23-nov): cierre de año y propósito 2027, imagen DG 2026, sin venta dura (solo el test de NIVEL opcional). Fuera de cuota.",
+     "fuera_de_cuota": true
+    },
+    {
+     "fecha": "Vie 1 ene",
+     "fecha_iso": "2027-01-01",
+     "hora": "2027-01-01T15:00:00Z",
+     "semana": "Semana 5 (28 dic-3 ene) · fiestas",
+     "id": "nav-ano-nuevo-post",
+     "titulo": "Feliz 2027",
+     "tipo": "comunidad",
+     "formato_publicacion": "POST 1 imagen 4:5: año nuevo, curso nuevo (quedan pocos días)",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "intencion": "comunidad",
+     "intencion_dic": "saludo de marca (sin venta)",
+     "producto": "Marca Design Modeling",
+     "cta": "Pregunta abierta",
+     "palabra": null,
+     "canal_dm": null,
+     "cta_info": null,
+     "estado": "POR DISEÑAR",
+     "nota": "Post simbólico SIN VENTA (Año Nuevo).",
+     "campana": "navidad-2026",
+     "fuera_de_cuota": true
+    },
+    {
+     "fecha": "Sáb 2 ene",
+     "fecha_iso": "2027-01-02",
+     "hora": "2027-01-02T15:00:00Z",
+     "semana": "Semana 5 (28 dic-3 ene) · fiestas",
+     "id": "ene-obj-cursos-no-sirvieron-post",
+     "titulo": "«Hice tres cursos de Revit y sigo sin poder entregar un proyecto»",
+     "tipo": "objeción",
+     "formato_publicacion": "POST (1 imagen 4:5, frase)",
+     "redes": [
+      "instagram",
+      "facebook",
+      "threads"
+     ],
+     "intencion": "objeción",
+     "intencion_dic": "venta",
+     "producto": "Diplomado BIM",
+     "cta": "Comenta DIPLOMADO",
+     "palabra": "DIPLOMADO",
+     "canal_dm": "OpenReply",
+     "cta_info": null,
+     "estado": "POR DISEÑAR",
+     "nota": "REGRESO. Objeción «ya hice cursos» → probar el módulo gratis (DIPLOMADO). El Diplomado BIM es grabado: «empiezas hoy». Cita guardada de Jorge Aguirre. · MOVIDA de «Lun 4 ene» a «Sáb 2 ene» (25-nov) para dejar el día a la campaña de Navidad y tener un post diario."
+    },
+    {
+     "fecha": "Dom 3 ene",
+     "fecha_iso": "2027-01-03",
+     "hora": "2027-01-03T15:00:00Z",
+     "semana": "Semana 5 (28 dic-3 ene) · fiestas",
+     "id": "ene-testimonio-master-post",
+     "titulo": "«La mejor decisión»: del Diplomado BIM al Máster por bloques",
+     "tipo": "testimonio",
+     "formato_publicacion": "POST (1 imagen 4:5 con cita real)",
+     "redes": [
+      "instagram",
+      "facebook",
+      "threads"
+     ],
+     "intencion": "testimonio",
+     "intencion_dic": "venta",
+     "producto": "Máster BIM Management + IA por bloques (cohorte de febrero; agendar, nunca precio)",
+     "cta": "Comenta MÁSTER",
+     "palabra": "MÁSTER",
+     "canal_dm": "OpenReply",
+     "cta_info": null,
+     "estado": "POR DISEÑAR (testimonio guardado)",
+     "nota": "Testimonio GUARDADO de Albino Piñeiro (egresado del Diplomado BIM; correo GHL «Seg 05 - Testimonios cierre»): el siguiente paso es el Máster, cohorte de febrero. Sin precio; «comenta MÁSTER». · MOVIDA de «Mié 6 ene» a «Dom 3 ene» (25-nov) para dejar el día a la campaña de Navidad y tener un post diario."
+    },
+    {
+     "fecha": "Lun 4 ene",
+     "fecha_iso": "2027-01-04",
+     "hora": "2027-01-04T15:00:00Z",
+     "semana": "Semana 6 (4-6 ene) · regreso",
+     "id": "nav-jefes-vuelven-post",
+     "titulo": "Los jefes vuelven mañana",
+     "tipo": "venta",
+     "formato_publicacion": "POST 1 imagen 4:5: «Los jefes vuelven mañana»",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "intencion": "venta",
+     "intencion_dic": "venta · campaña de Navidad",
+     "producto": "Promo de Navidad · 40 cursos a $46.50",
+     "cta": "Comenta NAVIDAD",
+     "palabra": "NAVIDAD",
+     "canal_dm": "OpenReply (Instagram) + GHL (demás redes)",
+     "cta_info": null,
+     "estado": "POR DISEÑAR",
+     "nota": "",
+     "campana": "navidad-2026",
+     "fuera_de_cuota": true
+    },
+    {
+     "fecha": "Mar 5 ene",
+     "fecha_iso": "2027-01-05",
+     "hora": "2027-01-05T15:00:00Z",
+     "semana": "Semana 6 (4-6 ene) · regreso",
+     "id": "ene-selfie-acero-en-enero-reel",
+     "titulo": "«En enero empiezo con acero»… y ya es enero",
+     "tipo": "objeción",
+     "formato_publicacion": "REEL SELFIE (Gabriel con el teléfono, 25-35 s)",
+     "redes": [
+      "instagram",
+      "facebook",
+      "tiktok",
+      "youtube"
+     ],
+     "intencion": "objeción",
+     "intencion_dic": "venta",
+     "producto": "Especialización en Acero con Tutor IA",
+     "cta": "Comenta TEMARIO",
+     "palabra": "TEMARIO",
+     "canal_dm": "OpenReply",
+     "cta_info": null,
+     "estado": "POR GRABAR (selfie, antes del lun 7-dic)",
+     "nota": "REEL SELFIE (G-06c). Objeción de tiempo: «En enero empiezo con acero… y ya es enero». Venta suave: «comenta TEMARIO»."
+    },
+    {
+     "fecha": "Mié 6 ene",
+     "fecha_iso": "2027-01-06",
+     "hora": "2027-01-06T15:00:00Z",
+     "semana": "Semana 6 (4-6 ene) · regreso",
+     "id": "ene-reyes-post",
+     "titulo": "Feliz Día de Reyes",
+     "tipo": "comunidad",
+     "formato_publicacion": "POST 1 imagen 4:5: año nuevo, curso nuevo (quedan pocos días)",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "intencion": "comunidad",
+     "intencion_dic": "saludo de marca (sin venta)",
+     "producto": "Marca Design Modeling",
+     "cta": "Pregunta abierta",
+     "palabra": null,
+     "canal_dm": null,
+     "cta_info": null,
+     "estado": "POR DISEÑAR",
+     "nota": "Post simbólico SIN VENTA (Reyes).",
+     "campana": "navidad-2026",
+     "fuera_de_cuota": true
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "nombre": "GRUPO 2 · Comunidades — WhatsApp, canal de IG, grupos de FB, comunidad de YouTube, comunidades GHL",
+   "descripcion": "Un post completo por semana, el mismo en todos los canales, con el enlace directo al recurso.",
+   "reglas": [
+    "Si hay regalo, el enlace va directo en el post. Nada de «respóndeme X». Sin hashtags.",
+    "Sin precio y sin oferta (no hay oferta definida)."
+   ],
+   "calendario": [
+    {
+     "fecha": "Mié 2 dic",
+     "fecha_iso": "2026-12-02",
+     "hora": "2026-12-02T15:00:00Z",
+     "semana": "Semana 1 (1-6 dic)",
+     "id": "dic-comu-1202-zapata",
+     "titulo": "La zapata del proyecto anterior",
+     "tipo": "comunidad",
+     "formato_publicacion": "MENSAJE A COMUNIDADES (post completo + arte)",
+     "redes": [
+      "whatsapp",
+      "facebook",
+      "instagram",
+      "youtube",
+      "ghl"
+     ],
+     "idea": {
+      "titulo": "La zapata del proyecto anterior",
+      "formato": "MENSAJE A COMUNIDADES (post completo + arte)",
+      "desarrollo": "¿Alguna vez copiaste la zapata del proyecto anterior?"
+     }
+    },
+    {
+     "fecha": "Lun 7 dic",
+     "fecha_iso": "2026-12-07",
+     "hora": "10:00",
+     "semana": "Semana 2 (7-13 dic)",
+     "id": "nav-comu-1207-lanzamiento",
+     "titulo": "Navidad · lanzamiento: los jefes se fueron de vacaciones",
+     "tipo": "comunidad",
+     "formato_publicacion": "MENSAJE A COMUNIDADES (post completo + arte) · campaña de Navidad",
+     "redes": [
+      "whatsapp",
+      "instagram",
+      "facebook",
+      "ghl"
+     ],
+     "idea": "Los jefes se fueron de vacaciones y el equipo quedó a cargo de la academia."
+    },
+    {
+     "fecha": "Mié 9 dic",
+     "fecha_iso": "2026-12-09",
+     "hora": "2026-12-09T15:00:00Z",
+     "semana": "Semana 2 (7-13 dic)",
+     "id": "dic-comu-1209-memoria",
+     "titulo": "La memoria que vuelve",
+     "tipo": "comunidad",
+     "formato_publicacion": "MENSAJE A COMUNIDADES (post completo + arte)",
+     "redes": [
+      "whatsapp",
+      "facebook",
+      "instagram",
+      "youtube",
+      "ghl"
+     ],
+     "idea": {
+      "titulo": "La memoria que vuelve",
+      "formato": "MENSAJE A COMUNIDADES (post completo + arte)",
+      "desarrollo": "¿Te devolvieron una memoria de cálculo que estaba bien?"
+     }
+    },
+    {
+     "fecha": "Jue 10 dic",
+     "fecha_iso": "2026-12-10",
+     "hora": "10:00",
+     "semana": "Semana 2 (7-13 dic)",
+     "id": "nav-comu-1210-categorias",
+     "titulo": "Navidad · las 6 categorías de los 40 cursos",
+     "tipo": "comunidad",
+     "formato_publicacion": "MENSAJE A COMUNIDADES (post completo + arte) · campaña de Navidad",
+     "redes": [
+      "whatsapp",
+      "instagram",
+      "facebook",
+      "ghl"
+     ],
+     "idea": "¿Cuál de los 40 cursos de la promo de Navidad es para ti? Están en 6 grupos:"
+    },
+    {
+     "fecha": "Mar 15 dic",
+     "fecha_iso": "2026-12-15",
+     "hora": "2026-12-15T15:00:00Z",
+     "semana": "Semana 3 (14-20 dic)",
+     "id": "dic-comu-1215-acero",
+     "titulo": "Ratios de 1,4 antes de cambiar el perfil",
+     "tipo": "comunidad",
+     "formato_publicacion": "MENSAJE A COMUNIDADES (post completo + arte)",
+     "redes": [
+      "whatsapp",
+      "facebook",
+      "instagram",
+      "youtube",
+      "ghl"
+     ],
+     "idea": {
+      "titulo": "Ratios de 1,4 antes de cambiar el perfil",
+      "formato": "MENSAJE A COMUNIDADES (post completo + arte)",
+      "desarrollo": "¿Tu modelo da ratios de 1,4 y no sabes si es la sección o los apoyos?"
+     }
+    },
+    {
+     "fecha": "Jue 17 dic",
+     "fecha_iso": "2026-12-17",
+     "hora": "10:00",
+     "semana": "Semana 3 (14-20 dic)",
+     "id": "nav-comu-1217-regalalo",
+     "titulo": "Navidad · regálalo",
+     "tipo": "comunidad",
+     "formato_publicacion": "MENSAJE A COMUNIDADES (post completo + arte) · campaña de Navidad",
+     "redes": [
+      "whatsapp",
+      "instagram",
+      "facebook",
+      "ghl"
+     ],
+     "idea": "¿No sabes qué regalar esta Navidad?"
+    },
+    {
+     "fecha": "Mar 22 dic",
+     "fecha_iso": "2026-12-22",
+     "hora": "2026-12-22T15:00:00Z",
+     "semana": "Semana 4 (21-27 dic) · fiestas",
+     "id": "dic-comu-1222-nivel",
+     "titulo": "Revisión de fin de año",
+     "tipo": "comunidad",
+     "formato_publicacion": "MENSAJE A COMUNIDADES (post completo + arte)",
+     "redes": [
+      "whatsapp",
+      "facebook",
+      "instagram",
+      "youtube",
+      "ghl"
+     ],
+     "idea": {
+      "titulo": "Revisión de fin de año",
+      "formato": "MENSAJE A COMUNIDADES (post completo + arte)",
+      "desarrollo": "Antes de cerrar el año, ¿en qué nivel BIM estás?"
+     }
+    },
+    {
+     "fecha": "Mar 29 dic",
+     "fecha_iso": "2026-12-29",
+     "hora": "2026-12-29T15:00:00Z",
+     "semana": "Semana 5 (28 dic-3 ene) · fiestas",
+     "id": "dic-comu-1229-cotiza",
+     "titulo": "Cotiza 2027 sin perder plata",
+     "tipo": "comunidad",
+     "formato_publicacion": "MENSAJE A COMUNIDADES (post completo + arte)",
+     "redes": [
+      "whatsapp",
+      "facebook",
+      "instagram",
+      "youtube",
+      "ghl"
+     ],
+     "idea": {
+      "titulo": "Cotiza 2027 sin perder plata",
+      "formato": "MENSAJE A COMUNIDADES (post completo + arte)",
+      "desarrollo": "¿Ya sabes cuánto vas a cobrar por tus proyectos en 2027?"
+     }
+    },
+    {
+     "fecha": "Lun 4 ene",
+     "fecha_iso": "2027-01-04",
+     "hora": "10:00",
+     "semana": "Semana 6 (4-6 ene) · regreso",
+     "id": "nav-comu-0104-ultimas-horas",
+     "titulo": "Navidad · últimas horas: los jefes vuelven mañana",
+     "tipo": "comunidad",
+     "formato_publicacion": "MENSAJE A COMUNIDADES (post completo + arte) · campaña de Navidad",
+     "redes": [
+      "whatsapp",
+      "instagram",
+      "facebook",
+      "ghl"
+     ],
+     "idea": "Los jefes vuelven mañana, y con ellos los precios normales."
+    },
+    {
+     "fecha": "Mar 5 ene",
+     "fecha_iso": "2027-01-05",
+     "hora": "2027-01-05T15:00:00Z",
+     "semana": "Semana 6 (4-6 ene) · regreso",
+     "id": "ene-comu-0105-master",
+     "titulo": "¿Por qué bloque empiezas 2027?",
+     "tipo": "comunidad",
+     "formato_publicacion": "MENSAJE A COMUNIDADES (post completo + arte)",
+     "redes": [
+      "whatsapp",
+      "facebook",
+      "instagram",
+      "youtube",
+      "ghl"
+     ],
+     "idea": {
+      "titulo": "¿Por qué bloque empiezas 2027?",
+      "formato": "MENSAJE A COMUNIDADES (post completo + arte)",
+      "desarrollo": "Si en 2027 quieres dejar de ser «el que modela», empieza por saber dónde estás."
+     }
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "nombre": "GRUPO 3 · Blog de Design Modeling Academy",
+   "descripcion": "Un artículo los sábados 5, 12 y 19-dic y 2-ene (el 26-dic no hay), con su post de anuncio.",
+   "reglas": [
+    "El CTA del blog es el recurso gratis de su tema, nunca genérico."
+   ],
+   "calendario": [
+    {
+     "fecha": "Sáb 5 dic",
+     "fecha_iso": "2026-12-05",
+     "hora": "2026-12-05T15:00:00Z",
+     "semana": "Semana 1 (1-6 dic)",
+     "id": "dic-blog-zapata-suelos",
+     "titulo": "La misma zapata no se comporta igual en arcilla, arena, limo o grava",
+     "tipo": "blog",
+     "formato_publicacion": "BLOG (artículo + post de anuncio el mismo sábado)",
+     "redes": [
+      "web"
+     ],
+     "idea": {
+      "titulo": "La misma zapata no se comporta igual en arcilla, arena, limo o grava",
+      "formato": "BLOG (artículo + post de anuncio el mismo sábado)",
+      "desarrollo": "Copiar la zapata del proyecto anterior es uno de los errores más comunes en cimentaciones pequeñas. Y uno de los más caros."
+     }
+    },
+    {
+     "fecha": "Sáb 12 dic",
+     "fecha_iso": "2026-12-12",
+     "hora": "10:00",
+     "semana": "Semana 2 (7-13 dic)",
+     "id": "nav-blog-1212-promo-navidad",
+     "titulo": "Promo de Navidad: 40 cursos de BIM con IA aplicada e ingeniería estructural a $46.50",
+     "tipo": "blog",
+     "formato_publicacion": "BLOG (artículo de campaña + post de anuncio el mismo sábado)",
+     "redes": [
+      "web"
+     ],
+     "idea": "Los jefes se fueron de vacaciones y el equipo dejó cada curso a $46.50. Esto es lo que incluye, cómo se elige y cómo se regala."
+    },
+    {
+     "fecha": "Sáb 12 dic",
+     "fecha_iso": "2026-12-12",
+     "hora": "2026-12-12T15:00:00Z",
+     "semana": "Semana 2 (7-13 dic)",
+     "id": "dic-blog-cuantia-columnas",
+     "titulo": "Cuantía de acero en columnas: el 1 % del ACI y el 3 % de la NEC",
+     "tipo": "blog",
+     "formato_publicacion": "BLOG (artículo + post de anuncio el mismo sábado)",
+     "redes": [
+      "web"
+     ],
+     "idea": {
+      "titulo": "Cuantía de acero en columnas: el 1 % del ACI y el 3 % de la NEC",
+      "formato": "BLOG (artículo + post de anuncio el mismo sábado)",
+      "desarrollo": "La cuantía mínima de columnas coincide en el ACI 318-19 y en la NEC. La máxima, no."
+     }
+    },
+    {
+     "fecha": "Sáb 19 dic",
+     "fecha_iso": "2026-12-19",
+     "hora": "2026-12-19T15:00:00Z",
+     "semana": "Semana 3 (14-20 dic)",
+     "id": "dic-blog-deflexiones",
+     "titulo": "Deflexiones admisibles: L/360, L/240, L/180 y cuál le toca a cada elemento",
+     "tipo": "blog",
+     "formato_publicacion": "BLOG (artículo + post de anuncio el mismo sábado)",
+     "redes": [
+      "web"
+     ],
+     "idea": {
+      "titulo": "Deflexiones admisibles: L/360, L/240, L/180 y cuál le toca a cada elemento",
+      "formato": "BLOG (artículo + post de anuncio el mismo sábado)",
+      "desarrollo": "L/360 no es un límite universal. Usarlo para todo sobredimensiona unas piezas y deja cortas otras."
+     }
+    },
+    {
+     "fecha": "Sáb 2 ene",
+     "fecha_iso": "2027-01-02",
+     "hora": "2027-01-02T15:00:00Z",
+     "semana": "Semana 5 (28 dic-3 ene) · fiestas",
+     "id": "ene-blog-honorarios-2027",
+     "titulo": "Cómo cotizar honorarios de cálculo estructural en 2027 sin regalar las revisiones",
+     "tipo": "blog",
+     "formato_publicacion": "BLOG (artículo + post de anuncio el mismo sábado)",
+     "redes": [
+      "web"
+     ],
+     "idea": {
+      "titulo": "Cómo cotizar honorarios de cálculo estructural en 2027 sin regalar las revisiones",
+      "formato": "BLOG (artículo + post de anuncio el mismo sábado)",
+      "desarrollo": "El proyecto que más plata te hizo perder en 2026 probablemente no fue el más difícil. Fue el que cotizaste por m² sin rondas de revisión."
+     }
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "nombre": "GRUPO 4 · LinkedIn — Design Modeling Academy",
+   "descripcion": "Una publicación de texto por semana en la página de Design Modeling Academy, tono formal, sin hashtags; publica Daniela.",
+   "reglas": [
+    "NUNCA «comenta la palabra»: pregunta abierta al final.",
+    "El enlace va en el primer comentario, nunca dentro del post (Dayana, 23-nov).",
+    "No sale el mismo día que su pieza base del feed.",
+    "LinkedIn ya no recibe las piezas del feed: solo publica lo de este grupo, para no repetir el mismo tema dos veces (Dayana, 23-nov)."
+   ],
+   "calendario": [
+    {
+     "fecha": "Mié 2 dic",
+     "fecha_iso": "2026-12-02",
+     "hora": "2026-12-02T15:00:00Z",
+     "semana": "Semana 1 (1-6 dic)",
+     "id": "dic-li-1202-sigues-modelando",
+     "titulo": "Del modelado a la gestión de la información",
+     "tipo": "linkedin",
+     "formato_publicacion": "LINKEDIN · publicación de texto (página de Design Modeling Academy)",
+     "redes": [
+      "linkedin"
+     ],
+     "idea": {
+      "titulo": "Del modelado a la gestión de la información",
+      "formato": "LINKEDIN · publicación de texto (página de Design Modeling Academy)",
+      "desarrollo": "Muchos profesionales llevan años trabajando en BIM y siguen ocupando el mismo rol: modelar."
+     },
+     "cuenta": "Design Modeling Academy"
+    },
+    {
+     "fecha": "Lun 7 dic",
+     "fecha_iso": "2026-12-07",
+     "hora": "10:00",
+     "semana": "Semana 2 (7-13 dic)",
+     "id": "nav-li-1207-promo-navidad",
+     "titulo": "Campaña de Navidad: 40 cursos a $46.50 hasta el 5 de enero",
+     "tipo": "linkedin",
+     "formato_publicacion": "LINKEDIN · multi-imagen (página de Design Modeling Academy) · campaña de Navidad",
+     "redes": [
+      "linkedin"
+     ],
+     "idea": "Entre el cierre de proyectos y el arranque de enero suelen quedar un par de semanas más tranquilas. Es un buen momento para estudiar lo que el año no dejó.",
+     "cuenta": "Design Modeling Academy"
+    },
+    {
+     "fecha": "Mié 9 dic",
+     "fecha_iso": "2026-12-09",
+     "hora": "2026-12-09T15:00:00Z",
+     "semana": "Semana 2 (7-13 dic)",
+     "id": "dic-li-1209-cuantia",
+     "titulo": "Cuantía de acero en columnas: ACI 318-19 frente a la NEC",
+     "tipo": "linkedin",
+     "formato_publicacion": "LINKEDIN · publicación de texto (página de Design Modeling Academy)",
+     "redes": [
+      "linkedin"
+     ],
+     "idea": {
+      "titulo": "Cuantía de acero en columnas: ACI 318-19 frente a la NEC",
+      "formato": "LINKEDIN · publicación de texto (página de Design Modeling Academy)",
+      "desarrollo": "La cuantía máxima de acero longitudinal en columnas no es la misma en todas las normas."
+     },
+     "cuenta": "Design Modeling Academy"
+    },
+    {
+     "fecha": "Mié 16 dic",
+     "fecha_iso": "2026-12-16",
+     "hora": "2026-12-16T15:00:00Z",
+     "semana": "Semana 3 (14-20 dic)",
+     "id": "dic-li-1216-deflexiones",
+     "titulo": "Límites de deflexión: no todos los elementos llevan L/360",
+     "tipo": "linkedin",
+     "formato_publicacion": "LINKEDIN · publicación de texto (página de Design Modeling Academy)",
+     "redes": [
+      "linkedin"
+     ],
+     "idea": {
+      "titulo": "Límites de deflexión: no todos los elementos llevan L/360",
+      "formato": "LINKEDIN · publicación de texto (página de Design Modeling Academy)",
+      "desarrollo": "L/360 no es un límite universal."
+     },
+     "cuenta": "Design Modeling Academy"
+    },
+    {
+     "fecha": "Mar 22 dic",
+     "fecha_iso": "2026-12-22",
+     "hora": "2026-12-22T15:00:00Z",
+     "semana": "Semana 4 (21-27 dic) · fiestas",
+     "id": "dic-li-1222-autocad-excel",
+     "titulo": "El costo de medir dos veces",
+     "tipo": "linkedin",
+     "formato_publicacion": "LINKEDIN · publicación de texto (página de Design Modeling Academy)",
+     "redes": [
+      "linkedin"
+     ],
+     "idea": {
+      "titulo": "El costo de medir dos veces",
+      "formato": "LINKEDIN · publicación de texto (página de Design Modeling Academy)",
+      "desarrollo": "En muchas empresas constructoras el plano se dibuja en AutoCAD y las cantidades se calculan en Excel."
+     },
+     "cuenta": "Design Modeling Academy"
+    },
+    {
+     "fecha": "Mar 29 dic",
+     "fecha_iso": "2026-12-29",
+     "hora": "2026-12-29T15:00:00Z",
+     "semana": "Semana 5 (28 dic-3 ene) · fiestas",
+     "id": "dic-li-1229-coordinacion",
+     "titulo": "Coordinar no es ejecutar Navisworks",
+     "tipo": "linkedin",
+     "formato_publicacion": "LINKEDIN · publicación de texto (página de Design Modeling Academy)",
+     "redes": [
+      "linkedin"
+     ],
+     "idea": {
+      "titulo": "Coordinar no es ejecutar Navisworks",
+      "formato": "LINKEDIN · publicación de texto (página de Design Modeling Academy)",
+      "desarrollo": "Una reunión de coordinación con 300 conflictos sin clasificar suele terminar sin decisiones."
+     },
+     "cuenta": "Design Modeling Academy"
+    },
+    {
+     "fecha": "Mar 5 ene",
+     "fecha_iso": "2027-01-05",
+     "hora": "2027-01-05T15:00:00Z",
+     "semana": "Semana 6 (4-6 ene) · regreso",
+     "id": "ene-li-0105-cursos",
+     "titulo": "Por qué tres cursos de Revit no bastan para entregar un proyecto",
+     "tipo": "linkedin",
+     "formato_publicacion": "LINKEDIN · publicación de texto (página de Design Modeling Academy)",
+     "redes": [
+      "linkedin"
+     ],
+     "idea": {
+      "titulo": "Por qué tres cursos de Revit no bastan para entregar un proyecto",
+      "formato": "LINKEDIN · publicación de texto (página de Design Modeling Academy)",
+      "desarrollo": "Es frecuente encontrar profesionales con varios cursos de Revit que aún no pueden entregar un proyecto completo en BIM."
+     },
+     "cuenta": "Design Modeling Academy"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "nombre": "GRUPO 5 · Historias de Instagram (y Facebook stories)",
+   "descripcion": "Lunes a viernes, 09:00 Ecuador (14:00 UTC). 23 días: 3-4 frames hasta el 18-dic y 1-2 frames en fiestas. 4 de venta (una por semana) y 6 con Gabriel a cámara. Sin historias el 24, 25 y 31-dic ni el 1-ene.",
+   "reglas": [
+    "Cada historia dice en `produccion` qué composición de /home/user/videos-dma/proyectos/historias-dma usar (RutaMaster, RutaAcero, RutaDiplomado, AnatomyConexion, Story, Faltan) o qué selfie de Gabriel.",
+    "DÍAS DE VENTA, en 3 tiempos: 1) curiosidad, 2) prueba REAL, 3) «Respóndeme X si estás cansado de… y de…».",
+    "DÍAS DE VALOR: 1) curiosidad, 2) el dato o el tip (quiz o encuesta), 3) «Respóndeme X y te mando [recurso gratis]».",
+    "Fiestas: 1-2 frames, sin venta.",
+    "Precio nunca en la historia.",
+    "Máximo 4 frames."
+   ],
+   "calendario": [
+    {
+     "fecha": "Mar 1 dic",
+     "fecha_iso": "2026-12-01",
+     "hora": "2026-12-01T14:00:00Z",
+     "semana": "Semana 1 (1-6 dic)",
+     "id": "dic-hist-1201",
+     "titulo": "Sigues siendo el que modela",
+     "tipo": "valor",
+     "formato_publicacion": "HISTORIAS (3 frames)",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "idea": {
+      "titulo": "Sigues siendo el que modela",
+      "formato": "HISTORIAS (3 frames)",
+      "desarrollo": "Llevas años en BIM y sigues siendo «el que modela». 👀"
+     },
+     "destacada": "🎯 BIM + IA"
+    },
+    {
+     "fecha": "Mié 2 dic",
+     "fecha_iso": "2026-12-02",
+     "hora": "2026-12-02T14:00:00Z",
+     "semana": "Semana 1 (1-6 dic)",
+     "id": "dic-hist-1202",
+     "titulo": "¿Solo P/A o también el momento?",
+     "tipo": "valor",
+     "formato_publicacion": "HISTORIAS (3 frames)",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "idea": {
+      "titulo": "¿Solo P/A o también el momento?",
+      "formato": "HISTORIAS (3 frames)",
+      "desarrollo": "¿Dimensionas tu zapata solo con la carga… o también con el momento? 🙋"
+     },
+     "destacada": "🎁 HERRAMIENTAS"
+    },
+    {
+     "fecha": "Jue 3 dic",
+     "fecha_iso": "2026-12-03",
+     "hora": "2026-12-03T14:00:00Z",
+     "semana": "Semana 1 (1-6 dic)",
+     "id": "dic-hist-1203",
+     "titulo": "Venta · Acero: ¿rechazas proyectos de acero?",
+     "tipo": "venta",
+     "formato_publicacion": "HISTORIAS (3 frames)",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "idea": {
+      "titulo": "Venta · Acero: ¿rechazas proyectos de acero?",
+      "formato": "HISTORIAS (3 frames)",
+      "desarrollo": "¿Cuántos proyectos de acero rechazaste este año porque no estabas seguro de tu cálculo?"
+     },
+     "gabriel_a_camara": true,
+     "venta": true,
+     "destacada": "🔩 ACERO"
+    },
+    {
+     "fecha": "Vie 4 dic",
+     "fecha_iso": "2026-12-04",
+     "hora": "2026-12-04T14:00:00Z",
+     "semana": "Semana 1 (1-6 dic)",
+     "id": "dic-hist-1204",
+     "titulo": "Caja de preguntas de los viernes",
+     "tipo": "valor",
+     "formato_publicacion": "HISTORIAS (2 frames)",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "idea": {
+      "titulo": "Caja de preguntas de los viernes",
+      "formato": "HISTORIAS (2 frames)",
+      "desarrollo": "Lo que cambió para un alumno de Acero. 👉"
+     },
+     "destacada": "⭐ ALUMNOS"
+    },
+    {
+     "fecha": "Lun 7 dic",
+     "fecha_iso": "2026-12-07",
+     "hora": "2026-12-07T14:00:00Z",
+     "semana": "Semana 2 (7-13 dic)",
+     "id": "dic-hist-1207",
+     "titulo": "8 % o 3 %",
+     "tipo": "valor",
+     "formato_publicacion": "HISTORIAS (4 frames)",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "idea": {
+      "titulo": "8 % o 3 %",
+      "formato": "HISTORIAS (4 frames)",
+      "desarrollo": "El ACI te deja 8 % de acero en columnas. La NEC, 3 %. 👀"
+     },
+     "destacada": "🎁 HERRAMIENTAS"
+    },
+    {
+     "fecha": "Mar 8 dic",
+     "fecha_iso": "2026-12-08",
+     "hora": "2026-12-08T14:00:00Z",
+     "semana": "Semana 2 (7-13 dic)",
+     "id": "dic-hist-1208",
+     "titulo": "¿Con cuál origen vinculas?",
+     "tipo": "valor",
+     "formato_publicacion": "HISTORIAS (3 frames)",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "idea": {
+      "titulo": "¿Con cuál origen vinculas?",
+      "formato": "HISTORIAS (3 frames)",
+      "desarrollo": "Vinculaste estructura y apareció a kilómetros de arquitectura. ¿Te pasó?"
+     },
+     "destacada": "🎯 BIM + IA"
+    },
+    {
+     "fecha": "Mié 9 dic",
+     "fecha_iso": "2026-12-09",
+     "hora": "2026-12-09T14:00:00Z",
+     "semana": "Semana 2 (7-13 dic)",
+     "id": "dic-hist-1209",
+     "titulo": "La memoria devuelta",
+     "tipo": "valor",
+     "formato_publicacion": "HISTORIAS (3 frames)",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "idea": {
+      "titulo": "La memoria devuelta",
+      "formato": "HISTORIAS (3 frames)",
+      "desarrollo": "Te devolvieron la memoria… y el cálculo estaba bien. 😤"
+     },
+     "gabriel_a_camara": true,
+     "destacada": "🎁 HERRAMIENTAS"
+    },
+    {
+     "fecha": "Jue 10 dic",
+     "fecha_iso": "2026-12-10",
+     "hora": "2026-12-10T14:00:00Z",
+     "semana": "Semana 2 (7-13 dic)",
+     "id": "dic-hist-1210",
+     "titulo": "Venta · Máster: ¿en qué bloque empiezas?",
+     "tipo": "venta",
+     "formato_publicacion": "HISTORIAS (3 frames)",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "idea": {
+      "titulo": "Venta · Máster: ¿en qué bloque empiezas?",
+      "formato": "HISTORIAS (3 frames)",
+      "desarrollo": "Si llevas años modelando y no te sientan en la mesa, no te falta Revit. Te falta otra cosa."
+     },
+     "gabriel_a_camara": true,
+     "venta": true,
+     "destacada": "🎯 BIM + IA"
+    },
+    {
+     "fecha": "Vie 11 dic",
+     "fecha_iso": "2026-12-11",
+     "hora": "2026-12-11T14:00:00Z",
+     "semana": "Semana 2 (7-13 dic)",
+     "id": "dic-hist-1211",
+     "titulo": "¿Cuántas rondas de revisión incluyes?",
+     "tipo": "valor",
+     "formato_publicacion": "HISTORIAS (4 frames)",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "idea": {
+      "titulo": "¿Cuántas rondas de revisión incluyes?",
+      "formato": "HISTORIAS (4 frames)",
+      "desarrollo": "Ganaste el proyecto. Perdiste plata en la tercera revisión. 💸"
+     },
+     "destacada": "🎁 HERRAMIENTAS"
+    },
+    {
+     "fecha": "Lun 14 dic",
+     "fecha_iso": "2026-12-14",
+     "hora": "2026-12-14T14:00:00Z",
+     "semana": "Semana 3 (14-20 dic)",
+     "id": "dic-hist-1214",
+     "titulo": "L/360, L/240 o L/180",
+     "tipo": "valor",
+     "formato_publicacion": "HISTORIAS (4 frames)",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "idea": {
+      "titulo": "L/360, L/240 o L/180",
+      "formato": "HISTORIAS (4 frames)",
+      "desarrollo": "¿Usas el mismo límite de deflexión para todo? 🤔"
+     },
+     "destacada": "🔩 ACERO"
+    },
+    {
+     "fecha": "Mar 15 dic",
+     "fecha_iso": "2026-12-15",
+     "hora": "2026-12-15T14:00:00Z",
+     "semana": "Semana 3 (14-20 dic)",
+     "id": "dic-hist-1215",
+     "titulo": "Ratios de 1,4",
+     "tipo": "valor",
+     "formato_publicacion": "HISTORIAS (3 frames)",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "idea": {
+      "titulo": "Ratios de 1,4",
+      "formato": "HISTORIAS (3 frames)",
+      "desarrollo": "Ratio 1,4. ¿Subes el perfil o revisas el modelo? 🔩"
+     },
+     "gabriel_a_camara": true,
+     "destacada": "🔩 ACERO"
+    },
+    {
+     "fecha": "Mié 16 dic",
+     "fecha_iso": "2026-12-16",
+     "hora": "2026-12-16T14:00:00Z",
+     "semana": "Semana 3 (14-20 dic)",
+     "id": "dic-hist-1216",
+     "titulo": "La IA encontró 3 niveles a la misma altura",
+     "tipo": "valor",
+     "formato_publicacion": "HISTORIAS (3 frames)",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "idea": {
+      "titulo": "La IA encontró 3 niveles a la misma altura",
+      "formato": "HISTORIAS (3 frames)",
+      "desarrollo": "La IA encontró 3 niveles a la misma altura en un modelo real. 👀"
+     },
+     "destacada": "🎯 BIM + IA"
+    },
+    {
+     "fecha": "Jue 17 dic",
+     "fecha_iso": "2026-12-17",
+     "hora": "2026-12-17T14:00:00Z",
+     "semana": "Semana 3 (14-20 dic)",
+     "id": "dic-hist-1217",
+     "titulo": "Venta · Diplomado de Cálculo Estructural",
+     "tipo": "venta",
+     "formato_publicacion": "HISTORIAS (3 frames)",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "idea": {
+      "titulo": "Venta · Diplomado de Cálculo Estructural",
+      "formato": "HISTORIAS (3 frames)",
+      "desarrollo": "Este año, ¿cuántas veces te devolvieron un cálculo que estaba bien?"
+     },
+     "gabriel_a_camara": true,
+     "venta": true,
+     "destacada": "🎁 HERRAMIENTAS"
+    },
+    {
+     "fecha": "Vie 18 dic",
+     "fecha_iso": "2026-12-18",
+     "hora": "2026-12-18T14:00:00Z",
+     "semana": "Semana 3 (14-20 dic)",
+     "id": "dic-hist-1218",
+     "titulo": "Cierre del año y horario de fiestas",
+     "tipo": "valor",
+     "formato_publicacion": "HISTORIAS (3 frames)",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "idea": {
+      "titulo": "Cierre del año y horario de fiestas",
+      "formato": "HISTORIAS (3 frames)",
+      "desarrollo": "Antes de cerrar el año: ¿qué te tocó rehacer más veces en 2026?"
+     },
+     "destacada": "👥 COMUNIDAD"
+    },
+    {
+     "fecha": "Lun 21 dic",
+     "fecha_iso": "2026-12-21",
+     "hora": "2026-12-21T14:00:00Z",
+     "semana": "Semana 4 (21-27 dic) · fiestas",
+     "id": "dic-hist-1221",
+     "titulo": "Haces todo dos veces",
+     "tipo": "valor",
+     "formato_publicacion": "HISTORIAS (2 frames)",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "idea": {
+      "titulo": "Haces todo dos veces",
+      "formato": "HISTORIAS (2 frames)",
+      "desarrollo": "¿Plano en AutoCAD y cantidades en Excel? Haces todo dos veces. 😮‍💨"
+     },
+     "destacada": "🎯 BIM + IA"
+    },
+    {
+     "fecha": "Mar 22 dic",
+     "fecha_iso": "2026-12-22",
+     "hora": "2026-12-22T14:00:00Z",
+     "semana": "Semana 4 (21-27 dic) · fiestas",
+     "id": "dic-hist-1222",
+     "titulo": "¿Trabajas en fiestas?",
+     "tipo": "valor",
+     "formato_publicacion": "HISTORIAS (1 frame)",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "idea": {
+      "titulo": "¿Trabajas en fiestas?",
+      "formato": "HISTORIAS (1 frame)",
+      "desarrollo": "Sincero: ¿te toca entregar algo entre Navidad y Año Nuevo?"
+     },
+     "destacada": "👥 COMUNIDAD"
+    },
+    {
+     "fecha": "Mié 23 dic",
+     "fecha_iso": "2026-12-23",
+     "hora": "2026-12-23T14:00:00Z",
+     "semana": "Semana 4 (21-27 dic) · fiestas",
+     "id": "dic-hist-1223",
+     "titulo": "5 cimentaciones para guardar",
+     "tipo": "valor",
+     "formato_publicacion": "HISTORIAS (2 frames)",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "idea": {
+      "titulo": "5 cimentaciones para guardar",
+      "formato": "HISTORIAS (2 frames)",
+      "desarrollo": "Las 5 cimentaciones y cuándo va cada una. Guárdalo. 📌"
+     },
+     "destacada": "🎁 HERRAMIENTAS"
+    },
+    {
+     "fecha": "Lun 28 dic",
+     "fecha_iso": "2026-12-28",
+     "hora": "2026-12-28T14:00:00Z",
+     "semana": "Semana 5 (28 dic-3 ene) · fiestas",
+     "id": "dic-hist-1228",
+     "titulo": "300 choques en la reunión",
+     "tipo": "valor",
+     "formato_publicacion": "HISTORIAS (2 frames)",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "idea": {
+      "titulo": "300 choques en la reunión",
+      "formato": "HISTORIAS (2 frames)",
+      "desarrollo": "¿Cuántos choques llevaste a tu última reunión de coordinación? 🧩"
+     },
+     "destacada": "🎯 BIM + IA"
+    },
+    {
+     "fecha": "Mar 29 dic",
+     "fecha_iso": "2026-12-29",
+     "hora": "2026-12-29T14:00:00Z",
+     "semana": "Semana 5 (28 dic-3 ene) · fiestas",
+     "id": "dic-hist-1229",
+     "titulo": "¿Cuánto pesa una varilla de 12?",
+     "tipo": "valor",
+     "formato_publicacion": "HISTORIAS (2 frames)",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "idea": {
+      "titulo": "¿Cuánto pesa una varilla de 12?",
+      "formato": "HISTORIAS (2 frames)",
+      "desarrollo": "¿Cuánto pesa una varilla de 12 mm de 12 m?"
+     },
+     "destacada": "🎁 HERRAMIENTAS"
+    },
+    {
+     "fecha": "Mié 30 dic",
+     "fecha_iso": "2026-12-30",
+     "hora": "2026-12-30T14:00:00Z",
+     "semana": "Semana 5 (28 dic-3 ene) · fiestas",
+     "id": "dic-hist-1230",
+     "titulo": "La tabla de varillas",
+     "tipo": "valor",
+     "formato_publicacion": "HISTORIAS (2 frames)",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "idea": {
+      "titulo": "La tabla de varillas",
+      "formato": "HISTORIAS (2 frames)",
+      "desarrollo": "La tabla de pesos por varilla. Para tu primer presupuesto de 2027. 📌"
+     },
+     "destacada": "👥 COMUNIDAD"
+    },
+    {
+     "fecha": "Lun 4 ene",
+     "fecha_iso": "2027-01-04",
+     "hora": "2027-01-04T14:00:00Z",
+     "semana": "Semana 6 (4-6 ene) · regreso",
+     "id": "ene-hist-0104",
+     "titulo": "¿Cuántos cursos hiciste en 2026?",
+     "tipo": "valor",
+     "formato_publicacion": "HISTORIAS (2 frames)",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "idea": {
+      "titulo": "¿Cuántos cursos hiciste en 2026?",
+      "formato": "HISTORIAS (2 frames)",
+      "desarrollo": "«Hice tres cursos de Revit y sigo sin poder entregar un proyecto.» ¿Te suena?"
+     },
+     "destacada": "🎯 BIM + IA"
+    },
+    {
+     "fecha": "Mar 5 ene",
+     "fecha_iso": "2027-01-05",
+     "hora": "2027-01-05T14:00:00Z",
+     "semana": "Semana 6 (4-6 ene) · regreso",
+     "id": "ene-hist-0105",
+     "titulo": "Venta · Máster: el bloque de 2027",
+     "tipo": "venta",
+     "formato_publicacion": "HISTORIAS (3 frames)",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "idea": {
+      "titulo": "Venta · Máster: el bloque de 2027",
+      "formato": "HISTORIAS (3 frames)",
+      "desarrollo": "Si en 2027 quieres dejar de ser el que modela, no esperes a marzo para decidir por dónde empezar."
+     },
+     "gabriel_a_camara": true,
+     "venta": true,
+     "destacada": "🎯 BIM + IA"
+    },
+    {
+     "fecha": "Mié 6 ene",
+     "fecha_iso": "2027-01-06",
+     "hora": "2027-01-06T14:00:00Z",
+     "semana": "Semana 6 (4-6 ene) · regreso",
+     "id": "ene-hist-0106",
+     "titulo": "¿Qué bloque te ves empezando?",
+     "tipo": "valor",
+     "formato_publicacion": "HISTORIAS (2 frames)",
+     "redes": [
+      "instagram",
+      "facebook"
+     ],
+     "idea": {
+      "titulo": "¿Qué bloque te ves empezando?",
+      "formato": "HISTORIAS (2 frames)",
+      "desarrollo": "De modelar a coordinar: lo que cambió para un egresado del Máster. 👉"
+     },
+     "destacada": "⭐ ALUMNOS"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "nombre": "GRUPO 6 · YouTube — videos largos (2-5 min, no Shorts)",
+   "descripcion": "4 videos con lo mejor del workshop del 17-nov, con intro y cierre de Gabriel.",
+   "reglas": [
+    "Título que abre con el problema.",
+    "En la descripción: capítulos y el enlace al test de nivel.",
+    "Lo que se usó en el workshop, dicho así: un servidor MCP de código abierto sobre pyRevit y NonicaTab AI Connector. No decir «Revit» ni «servidor MCP de Autodesk»."
+   ],
+   "calendario": [
+    {
+     "fecha": "Vie 11 dic",
+     "fecha_iso": "2026-12-11",
+     "hora": "2026-12-11T15:00:00Z",
+     "semana": "Semana 2 (7-13 dic)",
+     "id": "dic-yt-conectar-ia-revit",
+     "titulo": "Exportas el modelo a Excel para contar puertas: conecté una IA a mi modelo de Revit y se lo pregunté directo",
+     "tipo": "problema",
+     "formato_publicacion": "VIDEO LARGO DE YOUTUBE (16:9, 2-5 min; NO es Short)",
+     "redes": [
+      "youtube"
+     ],
+     "idea": {
+      "titulo": "Exportas el modelo a Excel para contar puertas: conecté una IA a mi modelo de Revit y se lo pregunté directo",
+      "formato": "VIDEO LARGO DE YOUTUBE (16:9, 2-5 min; NO es Short)",
+      "desarrollo": "Exportas el modelo a Excel solo para contar puertas o revisar un parámetro."
+     }
+    },
+    {
+     "fecha": "Vie 18 dic",
+     "fecha_iso": "2026-12-18",
+     "hora": "2026-12-18T15:00:00Z",
+     "semana": "Semana 3 (14-20 dic)",
+     "id": "dic-yt-preguntas-al-modelo",
+     "titulo": "¿Cuántos muros tiene tu modelo? Se lo pregunté a la IA y lo comprobé en Revit",
+     "tipo": "problema",
+     "formato_publicacion": "VIDEO LARGO DE YOUTUBE (16:9, 2-5 min; NO es Short)",
+     "redes": [
+      "youtube"
+     ],
+     "idea": {
+      "titulo": "¿Cuántos muros tiene tu modelo? Se lo pregunté a la IA y lo comprobé en Revit",
+      "formato": "VIDEO LARGO DE YOUTUBE (16:9, 2-5 min; NO es Short)",
+      "desarrollo": "Abres tablas y filtros para contestar una pregunta simple sobre tu modelo."
+     }
+    },
+    {
+     "fecha": "Mar 29 dic",
+     "fecha_iso": "2026-12-29",
+     "hora": "2026-12-29T15:00:00Z",
+     "semana": "Semana 5 (28 dic-3 ene) · fiestas",
+     "id": "dic-yt-niveles-duplicados",
+     "titulo": "3 niveles a la misma altura: el error que tu modelo esconde y la IA encontró",
+     "tipo": "problema",
+     "formato_publicacion": "VIDEO LARGO DE YOUTUBE (16:9, 2-5 min; NO es Short)",
+     "redes": [
+      "youtube"
+     ],
+     "idea": {
+      "titulo": "3 niveles a la misma altura: el error que tu modelo esconde y la IA encontró",
+      "formato": "VIDEO LARGO DE YOUTUBE (16:9, 2-5 min; NO es Short)",
+      "desarrollo": "Tu modelo tiene errores que no se ven a simple vista."
+     }
+    },
+    {
+     "fecha": "Mar 5 ene",
+     "fecha_iso": "2027-01-05",
+     "hora": "2027-01-05T15:00:00Z",
+     "semana": "Semana 6 (4-6 ene) · regreso",
+     "id": "ene-yt-donde-se-equivoca",
+     "titulo": "Dónde se equivoca la IA cuando lee tu modelo de Revit (y cómo darte cuenta)",
+     "tipo": "problema",
+     "formato_publicacion": "VIDEO LARGO DE YOUTUBE (16:9, 2-5 min; NO es Short)",
+     "redes": [
+      "youtube"
+     ],
+     "idea": {
+      "titulo": "Dónde se equivoca la IA cuando lee tu modelo de Revit (y cómo darte cuenta)",
+      "formato": "VIDEO LARGO DE YOUTUBE (16:9, 2-5 min; NO es Short)",
+      "desarrollo": "Le crees a la IA porque contesta rápido y seguro."
+     }
+    }
+   ]
+  }
+ ],
+ "lead_magnets": {
+  "nota": "No hay lead magnet nuevo en diciembre. Se usan los que existen, cada uno con su producto. DYNAMO y NAVISWORKS siguen vivas pero no entran este mes.",
+  "nuevo": [],
+  "respaldo": [
+   {
+    "nombre": "Calculadora de zapatas",
+    "palabra": "ZAPATA",
+    "por_que": "Lleva a Diplomado de Cálculo Estructural · GHL"
+   },
+   {
+    "nombre": "5 verificaciones de una nave",
+    "palabra": "ACERO",
+    "por_que": "Lleva a Especialización en Acero con Tutor IA · OpenReply"
+   },
+   {
+    "nombre": "Memoria de cálculo verificable",
+    "palabra": "MEMORIA",
+    "por_que": "Lleva a Diplomado de Cálculo Estructural · OpenReply"
+   },
+   {
+    "nombre": "Cotizador de honorarios",
+    "palabra": "COTIZA",
+    "por_que": "Lleva a Especialización en Acero con Tutor IA · OpenReply"
+   },
+   {
+    "nombre": "Test de nivel BIM",
+    "palabra": "NIVEL",
+    "por_que": "Lleva a Máster por bloques (agendar, nunca precio) · OpenReply"
+   },
+   {
+    "nombre": "Curso introductorio BIM",
+    "palabra": "BIM",
+    "por_que": "Lleva a Máster · Bloque 1 (agendar) · OpenReply"
+   },
+   {
+    "nombre": "Primer módulo del Diplomado BIM",
+    "palabra": "DIPLOMADO",
+    "por_que": "Lleva a Diplomado BIM · OpenReply"
+   }
+  ],
+  "mapa_cta": [
+   {
+    "palabra": "NIVEL",
+    "fecha": "Mar 1 dic, Mar 8 dic, Mié 16 dic, Vie 18 dic, Lun 28 dic, Mié 30 dic, Jue 31 dic",
+    "producto": "Máster BIM Management + IA por bloques (solo se invita a agendar; nunca precio)"
+   },
+   {
+    "palabra": "ZAPATA",
+    "fecha": "Mié 2 dic, Mié 23 dic",
+    "producto": "Diplomado de Cálculo Estructural"
+   },
+   {
+    "palabra": "ACERO",
+    "fecha": "Jue 3 dic, Lun 14 dic, Mar 15 dic",
+    "producto": "Especialización en Acero con Tutor IA"
+   },
+   {
+    "palabra": "TEMARIO",
+    "fecha": "Vie 4 dic, Mar 5 ene",
+    "producto": "Especialización en Acero con Tutor IA"
+   },
+   {
+    "palabra": "MEMORIA",
+    "fecha": "Lun 7 dic, Mié 9 dic, Jue 10 dic",
+    "producto": "Diplomado de Cálculo Estructural"
+   },
+   {
+    "palabra": "COTIZA",
+    "fecha": "Vie 11 dic",
+    "producto": "Especialización en Acero con Tutor IA"
+   },
+   {
+    "palabra": "MÁSTER",
+    "fecha": "Jue 17 dic, Mié 6 ene",
+    "producto": "Máster BIM Management + IA por bloques (cohorte de febrero; agendar, nunca precio)"
+   },
+   {
+    "palabra": "BIM",
+    "fecha": "Lun 21 dic",
+    "producto": "Máster por bloques · Bloque 1 BIM Professional (agendar; nunca precio)"
+   },
+   {
+    "palabra": "DIPLOMADO",
+    "fecha": "Lun 4 ene",
+    "producto": "Diplomado BIM"
+   }
+  ]
+ },
+ "destacadas": {
+  "responsable": "Daniela",
+  "nota": "Se limpian antes del mar 1-dic (todo lo de noviembre con precio, combo o Black Friday) y se alimentan cada viernes.",
+  "lista": [
+   {
+    "destacada": "🎯 BIM + IA",
+    "que_va": "Síntomas del Máster (el que modela, coordinar, niveles) y las ventas del Máster.",
+    "agregar": [
+     "dic-hist-1201",
+     "dic-hist-1208",
+     "dic-hist-1210",
+     "dic-hist-1216",
+     "dic-hist-1221",
+     "dic-hist-1228",
+     "ene-hist-0104",
+     "ene-hist-0105"
+    ],
+    "quitar": "El mar 1-dic, antes de publicar: todo lo de Black Friday, combo y cuenta regresiva (vencido)."
+   },
+   {
+    "destacada": "🔩 ACERO",
+    "que_va": "Uniones, deflexiones, ratios y la venta de Acero del 3-dic.",
+    "agregar": [
+     "dic-hist-1203",
+     "dic-hist-1214",
+     "dic-hist-1215"
+    ],
+    "quitar": "Frames de noviembre con precio o con el combo."
+   },
+   {
+    "destacada": "🎁 HERRAMIENTAS",
+    "que_va": "Recursos gratis (zapatas, memoria, cotizador) y el quiz de la varilla.",
+    "agregar": [
+     "dic-hist-1202",
+     "dic-hist-1207",
+     "dic-hist-1209",
+     "dic-hist-1211",
+     "dic-hist-1217",
+     "dic-hist-1223",
+     "dic-hist-1229"
+    ],
+    "quitar": "Nada."
+   },
+   {
+    "destacada": "👥 COMUNIDAD",
+    "que_va": "Cajas de preguntas, encuestas y el horario de fiestas.",
+    "agregar": [
+     "dic-hist-1218",
+     "dic-hist-1222",
+     "dic-hist-1230"
+    ],
+    "quitar": "El horario de fiestas, el 4-ene."
+   },
+   {
+    "destacada": "⭐ ALUMNOS",
+    "que_va": "Testimonios reales con permiso.",
+    "agregar": [
+     "dic-hist-1204",
+     "ene-hist-0106"
+    ],
+    "quitar": "Nada, salvo que un alumno retire su permiso."
+   }
+  ]
+ },
+ "correos_nota": "Un correo por semana a la lista propia: 2, 9 y 16-dic (valor con recurso), 22 y 29-dic (valor de fiestas, sin venta) y 5-ene (venta blanda del Máster: test + agendar, sin precio).",
+ "piezas": [],
+ "pauta": [],
+ "banco_reserva": [
+  "dic-ws-clip-muros-reel",
+  "dic-ws-clip-niveles-reel",
+  "dic-ws-clip-conexion-reel",
+  "dic-ws-short-s3-reel"
+ ],
+ "correos": [
+  {
+   "fecha": "Mié 2 dic · Semana 1",
+   "fecha_iso": "2026-12-02",
+   "id": "dic-correo-1202-zapata",
+   "nombre": "La zapata del proyecto anterior",
+   "asunto": "¿Copiaste la zapata del proyecto anterior?",
+   "preencabezado": "La misma zapata no trabaja igual en arcilla que en grava.",
+   "segmento": "Lista general",
+   "objetivo": "Abrir diciembre con un problema técnico y la calculadora",
+   "cuerpo": "Una pregunta incómoda: ¿alguna vez copiaste la zapata del proyecto anterior?\n\nLa misma zapata no se comporta igual en arcilla, arena, limo o grava. Cambia la capacidad, cambia el asentamiento y cambia lo que hay que verificar.\n\nPor eso las dimensiones salen del estudio de suelos de ESE terreno. Con esos datos, nuestra calculadora gratuita te da las dimensiones y las verificaciones en un par de minutos.\n\nBotón: Usar la calculadora → https://funnel.dgdesignmodeling.com/acceso-gratis-calculadora-zapatas-form\n\nResponde este correo y cuéntame: ¿en qué suelo estás cimentando ahora?",
+   "condicion": "Sin precio y sin oferta. La oferta de diciembre está PENDIENTE (la pasa Dayana) y su correo es el del mié 16-dic."
+  },
+  {
+   "fecha": "Lun 7 dic · Semana 2",
+   "fecha_iso": "2026-12-07",
+   "id": "nav-correo-1207-lanzamiento",
+   "nombre": "Navidad · lanzamiento",
+   "asunto": "Los jefes se fueron de vacaciones",
+   "preencabezado": "Y el equipo dejó 40 cursos a $46.50 cada uno, hasta el 5 de enero.",
+   "segmento": "Lista general",
+   "objetivo": "Lanzar la campaña de Navidad en la lista propia el mismo día que el feed",
+   "cuerpo": "Los jefes se fueron de vacaciones y dejaron al equipo a cargo de la academia.\n\nEl resultado: hasta el martes 5 de enero, cada uno de nuestros 40 cursos pregrabados está a $46.50. Antes costaban $154.99; es un 70 % menos.\n\nSon cursos de BIM con IA aplicada e ingeniería estructural, y eliges el que te haga falta:\n\n· Acero estructural: 7 cursos\n· Hormigón armado: 11 cursos\n· Cimentaciones, muros y tanques: 8 cursos\n· BIM, CAD y modelado: 6 cursos\n· Costos y puentes: 3 cursos\n· BIM con IA aplicada: 5 cursos (los nuevos)\n\nCon cada curso tienes 1 mes de acceso en el nuevo campus, desde la compu o desde la app para Android, y al terminar recibes tu certificado de Design Modeling DG S.A.S.\n\nPagas con tarjeta o con PayPal y el acceso te llega por correo y WhatsApp.\n\nBotón: Ver los 40 cursos → https://funnel.dgdesignmodeling.com/promo-navidad-descuentos-cursos\n\nLa promo termina el martes 5 de enero a las 23:59 (hora de Ecuador).\n\nResponde este correo y cuéntame qué estás calculando o modelando ahora: te digo cuál de los 40 te sirve más.\n\nBotón: Ver los 40 cursos → https://funnel.dgdesignmodeling.com/promo-navidad-descuentos-cursos",
+   "condicion": "Sale el mismo día y a la misma hora que el reel de lanzamiento del feed (10:00 de Ecuador). Enlace de compra: https://funnel.dgdesignmodeling.com/promo-navidad-descuentos-cursos (al 26-nov da 404: la landing todavía no está publicada; no programar el envío hasta que Ester la publique)."
+  },
+  {
+   "fecha": "Mié 9 dic · Semana 2",
+   "fecha_iso": "2026-12-09",
+   "id": "dic-correo-1209-memoria",
+   "nombre": "La memoria devuelta",
+   "asunto": "Te la devolvieron… y el cálculo estaba bien",
+   "preencabezado": "Lo que casi nunca dice una memoria de cálculo.",
+   "segmento": "Lista general + leads de ZAPATA y MEMORIA",
+   "objetivo": "Llevar al calculista a la plantilla y de ahí al Diplomado",
+   "cuerpo": "Te devolvieron la memoria de cálculo. Revisaste todo. El cálculo estaba bien.\n\nCasi siempre es esto: la memoria no dice qué norma usaste, qué combinación gobierna ni de dónde sale cada carga. Un ejemplo: el ACI 318-19 permite hasta 8 % de acero en columnas; la NEC-SE-HM, 3 %. Si no declaras con cuál diseñaste, vuelve.\n\nTe dejo la plantilla de memoria verificable que usamos: cada número con su norma y su artículo.\n\nBotón: Descargar la plantilla → https://funnel.dgdesignmodeling.com/acceso-gratis-memoria-calculo-form\n\nResponde este correo: ¿qué es lo que más te observan cuando te devuelven una memoria?",
+   "condicion": "Sin precio y sin oferta. La oferta de diciembre está PENDIENTE (la pasa Dayana) y su correo es el del mié 16-dic."
+  },
+  {
+   "fecha": "Mié 16 dic · Semana 3",
+   "fecha_iso": "2026-12-16",
+   "id": "dic-correo-1216-acero",
+   "nombre": "Ratios de 1,4",
+   "asunto": "Antes de subir el perfil, revisa esto",
+   "preencabezado": "Tres cosas del modelo que inflan los ratios.",
+   "segmento": "Lista general + leads de ACERO y COTIZA",
+   "objetivo": "Llevar al lead de acero a las 5 verificaciones y a la conversación sobre la Especialización",
+   "cuerpo": "Tu modelo da ratios de 1,4 en las columnas. La primera idea es subir el perfil.\n\nAntes, revisa tres cosas: cómo modelaste los apoyos, las longitudes de pandeo de cada barra y si el viento entró con la dirección correcta. Si al corregir el modelo los ratios bajan, el perfil estaba bien.\n\nEstas y otras dos están en las 5 verificaciones que hacemos antes de dar por buena una nave:\n\nBotón: Ver las 5 verificaciones → https://funnel.dgdesignmodeling.com/acceso-gratis-verificacion-acero-form\n\nY si quieres más información de la Especialización en Acero con Tutor IA, responde este correo con la palabra TEMARIO y te mando el temario módulo a módulo.",
+   "condicion": "Sin precio de Acero en este correo. SLOT DE OFERTA DE DICIEMBRE: si Dayana pasa una oferta, se agrega aquí (solo % en público; precio por WhatsApp). Temario: https://drive.google.com/file/d/1K0cRiCofWt__tw-Yge21nJ2Wg25EpHlC/view?usp=sharing"
+  },
+  {
+   "fecha": "Mié 16 dic · Semana 3",
+   "fecha_iso": "2026-12-16",
+   "id": "nav-correo-1216-regalalo",
+   "nombre": "Navidad · regálalo",
+   "asunto": "¿No sabes qué regalar esta Navidad?",
+   "preencabezado": "Un curso de BIM con IA aplicada a $46.50, a nombre de quien tú digas.",
+   "segmento": "Lista general",
+   "objetivo": "Vender el curso como regalo de Navidad (gancho C de la campaña)",
+   "cuerpo": "¿Te falta el regalo de un colega, de alguien de tu equipo o de ese familiar que estudia ingeniería o arquitectura?\n\nRegálale un curso. Hasta el martes 5 de enero, cualquiera de nuestros 40 cursos pregrabados de BIM con IA aplicada e ingeniería estructural está a $46.50 (antes $154.99).\n\nSe hace así:\n\n1 · Eliges el curso.\n2 · Al pagar, pones el correo de quien lo va a recibir. Pagas tú, con tarjeta o con PayPal.\n3 · El acceso le llega a esa persona: 1 mes en el nuevo campus, desde la compu o la app para Android.\n4 · Al terminar, recibe su certificado de Design Modeling DG S.A.S.\n\nBotón: Elegir el curso para regalar → https://funnel.dgdesignmodeling.com/promo-navidad-descuentos-cursos\n\nUn detalle: el mes de acceso empieza a contar el día de la compra. Tenlo en cuenta para decidir cuándo comprarlo.\n\nY si el regalo es para ti, también vale.\n\nSi no sabes cuál elegir, responde este correo, dime a qué se dedica esa persona y te recomiendo uno.\n\nBotón: Elegir el curso para regalar → https://funnel.dgdesignmodeling.com/promo-navidad-descuentos-cursos",
+   "condicion": "OJO: el mié 16-dic ya sale el correo dic-correo-1216-acero (10:00). Propuesta: este va el mismo día a las 17:00; si Dayana prefiere un solo correo por día, pasa al jue 17-dic a las 10:00. Enlace de compra: https://funnel.dgdesignmodeling.com/promo-navidad-descuentos-cursos (al 26-nov da 404: la landing todavía no está publicada; no programar el envío hasta que Ester la publique)."
+  },
+  {
+   "fecha": "Mar 22 dic · Semana 4",
+   "fecha_iso": "2026-12-22",
+   "id": "dic-correo-1222-revision-fin-de-ano",
+   "nombre": "Revisión de fin de año",
+   "asunto": "3 cosas que revisar en tu modelo antes de cerrar el año",
+   "preencabezado": "Una de ellas la encontró la IA en vivo.",
+   "segmento": "Lista general",
+   "objetivo": "Valor en semana de fiestas; puerta al test de nivel",
+   "cuerpo": "Antes de cerrar el año, tres revisiones rápidas a tu modelo:\n\n1 · Niveles duplicados: en el workshop, la IA encontró 3 niveles a la misma altura en un modelo real.\n2 · Parámetros vacíos en los elementos que se van a cuantificar.\n3 · Que los niveles de arquitectura y de estructura digan qué miden (piso terminado o losa).\n\nEl video largo con el caso de los niveles sale el 29 en nuestro YouTube.\n\nSi quieres saber en qué nivel BIM cierras el año, el test toma 5 minutos:\n\nBotón: Hacer el test → https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form\n\nFelices fiestas de parte de todo el equipo de Design Modeling Academy.",
+   "condicion": "Semana de fiestas: correo de valor, sin venta."
+  },
+  {
+   "fecha": "Mar 29 dic · Semana 5",
+   "fecha_iso": "2026-12-29",
+   "id": "dic-correo-1229-honorarios",
+   "nombre": "Cotiza 2027",
+   "asunto": "El proyecto que más plata te hizo perder este año",
+   "preencabezado": "No fue el más difícil.",
+   "segmento": "Lista general + leads de COTIZA y ACERO",
+   "objetivo": "Valor de fin de año; cotizador",
+   "cuerpo": "El proyecto que más plata te hizo perder en 2026 probablemente no fue el más difícil.\n\nFue el que cotizaste por m² sin decir cuántas rondas de revisión incluías. Cada cambio de arquitectura después de aprobado fue trabajo gratis.\n\nPara 2027: separa entregables, deja escritas las rondas incluidas y ponle precio a la siguiente antes de firmar.\n\nBotón: Usar el cotizador → https://funnel.dgdesignmodeling.com/acceso-gratis-cotizador-honorarios-form\n\nResponde este correo: ¿cuántas rondas de revisión incluyes hoy?",
+   "condicion": "Semana de fiestas: correo de valor, sin venta. No sale el 31 ni el 1."
+  },
+  {
+   "fecha": "Lun 4 ene · Semana 6",
+   "fecha_iso": "2027-01-04",
+   "id": "nav-correo-0104-ultimas-horas",
+   "nombre": "Navidad · últimas horas",
+   "asunto": "Los jefes vuelven mañana",
+   "preencabezado": "Y con ellos, los precios normales. Tienes hasta el martes a las 23:59.",
+   "segmento": "Lista general (excluir a quienes ya compraron en la promo)",
+   "objetivo": "Cierre de la campaña: últimas horas antes del martes 5 de enero a las 23:59",
+   "cuerpo": "Los jefes vuelven mañana. Y con ellos vuelven los precios normales.\n\nHasta el martes 5 de enero a las 23:59 (hora de Ecuador), cada uno de nuestros 40 cursos pregrabados sigue a $46.50. Después vuelven a su precio normal de $154.99.\n\nLo que te llevas por $46.50:\n\n· Un curso completo de BIM con IA aplicada o de ingeniería estructural, el que tú elijas.\n· 1 mes de acceso en el nuevo campus, desde la compu o la app para Android.\n· Tu certificado de Design Modeling DG S.A.S. al terminar.\n\nPagas con tarjeta o con PayPal. Y si lo vas a regalar, al pagar pones el correo de quien lo recibe.\n\nBotón: Elegir mi curso → https://funnel.dgdesignmodeling.com/promo-navidad-descuentos-cursos\n\nSi dudas entre dos cursos, responde este correo hoy y te ayudo a decidir antes del cierre.\n\nBotón: Elegir mi curso → https://funnel.dgdesignmodeling.com/promo-navidad-descuentos-cursos",
+   "condicion": "Va el lun 4 y no el mar 5 porque el 5 ya sale ene-correo-0105-bloque-2027 (Máster) y así el asunto coincide con el post del feed del mismo día. Enlace de compra: https://funnel.dgdesignmodeling.com/promo-navidad-descuentos-cursos (al 26-nov da 404: la landing todavía no está publicada; no programar el envío hasta que Ester la publique)."
+  },
+  {
+   "fecha": "Mar 5 ene · Semana 6",
+   "fecha_iso": "2027-01-05",
+   "id": "ene-correo-0105-bloque-2027",
+   "nombre": "¿Por qué bloque empiezas 2027?",
+   "asunto": "¿Por qué bloque empiezas 2027?",
+   "preencabezado": "Un test de 5 minutos y una llamada de 20.",
+   "segmento": "Lista general + leads de NIVEL y BIM",
+   "objetivo": "Venta blanda del Máster: test + agendar",
+   "cuerpo": "Si en 2027 quieres dejar de ser «el que modela», el primer paso no es inscribirte en nada. Es saber dónde estás.\n\n1 · Haz el test de nivel BIM (5 minutos): https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form\n\n2 · Si quieres verlo con un asesor, agenda 20 minutos: https://wa.me/593984372010\n\nEl Máster va por bloques: modelado, coordinación, gestión e IA. Empiezas por el que resuelve tu problema de hoy. La próxima cohorte empieza en febrero.\n\nResponde este correo con tu resultado del test y te digo por dónde empezaría yo.",
+   "condicion": "SIN PRECIO del Máster (regla fija). Cohorte: febrero de 2027. Oferta de enero: pendiente (la pasa Dayana)."
+  }
+ ],
+ "auditoria_previa": {
+  "mes": "2026-11",
+  "resumen": "Noviembre (al 20-nov, matriz.json): 2.877 vistas, 7,3 comentarios y 14 guardados por pieza (octubre: 7.632 / 36,2 / 213,9). Lo que conversó: problemas técnicos concretos de cimentaciones y acero. Lo que no: efemérides, promos directas, workshop/IA en Revit sin problema y explicaciones planas."
+ },
+ "kpis_mensuales": {
+  "nota": "De dónde arranca diciembre (matriz.json, Meta Graph API, actualizado el 20-nov).",
+  "por_pieza": {
+   "octubre": {
+    "vistas": 7632,
+    "comentarios": 36.2,
+    "guardados": 213.9
+   },
+   "noviembre": {
+    "vistas": 2877,
+    "comentarios": 7.3,
+    "guardados": 14.1
+   }
+  },
+  "metas_diciembre": [
+   "Comentarios por pieza del feed: volver por encima de 20 (mitad del camino a octubre).",
+   "Cada palabra: cuántos contestan la pregunta del DM (nueva medición del embudo, cada lunes).",
+   "Re-ediciones: cada una por encima de la mediana de reels de 90 días."
+  ]
+ },
+ "pendientes": [
+  "OFERTA DE DICIEMBRE: la pasa Dayana después. Slot reservado: historia de venta del jue 17-dic y correo del mié 16-dic (si la oferta es de otro producto, la historia cambia de producto). En público solo porcentajes; precio por WhatsApp.",
+  "Oferta de enero (historia del 5-ene y correo del 5-ene): la pasa Dayana si la hay.",
+  "Precio vigente de Acero en diciembre para el equipo comercial (el $225 era «todo noviembre»). En público no se dice (confirmar con Dayana).",
+  "Testimonio de Acero (4-dic): Daniela confirma en el reel del 23-oct (De2JwdYlfH9) que el alumno dice «Ustedes han sido una gran solución»; si no, usa otra frase textual del mismo video.",
+  "Palabra de venta ESTRUCTURAS para la historia del jue 17-dic: la contesta una persona, como NAVES en noviembre (confirmar con Dayana o cambiar por la que prefiera).",
+  "Permiso para contar el caso del alumno de los ratios de 1,4 (reel del 15-dic) (confirmar con Dayana / Gabriel).",
+  "Horario de atención del equipo del 24 al 25-dic y del 31-dic al 1-ene (historia del 18-dic) (confirmar con Dayana).",
+  "LinkedIn (Dayana, 23-nov): las 6 publicaciones de este grupo se reemplazan por las 8 de la investigación de LinkedIn cuando Dayana las apruebe en la página de aprobación. Gabriel verifica contra la norma las cifras de cuantía del post del 9-dic antes de publicarlo.",
+  "Navidad: la palabra NAVIDAD tiene que estar activa en OpenReply (Instagram, Dayana) y en GHL para las demás redes (Ester) antes del lun 7-dic, que sale el primer post de la promo. Landing: funnel.dgdesignmodeling.com/promo-navidad-descuentos-cursos. Confirmar el nombre exacto del curso de ACC en Sharp CRM.",
+  "REPLAN 26-nov · Dayana aprueba los 6 reels nuevos (tabla en PLAN-NUEVO.md) y decide el dom 6-dic: el reel «Lo que uso según lo que necesito» (propuesto) o dejar el short s3 y pasar ese reel al mar 22-dic.",
+  "REPLAN 26-nov · Gabriel confirma con la norma en mano los números de artículo que van de memoria: ACI 318-19 §13.2.7.1, §7.4.3.2 y §13.3.1.1; AISC 360-16 B3.4; y los factores de la NEC-SE-CG 3.4.3 (el PDF oficial no abrió el 26-nov).",
+  "REPLAN 26-nov · Una captura de Revit con el cuadro «Vincular Revit» y el desplegable «Posicionamiento» abierto, y otra con los tres puntos de origen visibles (reel del 8-dic e historia del 8-dic). La hace quien tenga Revit.",
+  "REPLAN 26-nov · Las historias del 2 y del 8-dic (dic-hist-1202 y dic-hist-1208) hacían repost de los reels descartados: se reescribieron sus cuadros 1 y 2. Si ya había arte hecho con el texto viejo, hay que rehacerlo."
+ ],
+ "resumen_cierre": "Diciembre-enero: 22 piezas de feed (12 de problema, 5 de referencia técnica y 5 de venta), 6 reels animados nuevos sin grabación (replan del 26-nov; ninguna re-edición), 1 reel de Gabriel a cámara, 1 clip del workshop, 3 reels selfie, 2 saludos de marca (Navidad y 31-dic), 4 videos largos de YouTube, 23 días de historias (4 de venta, 6 con Gabriel), 6 posts de comunidades, 6 de LinkedIn, 4 blogs y 6 correos. Cada pieza del feed trae su embudo completo. Sin promos inventadas.",
+ "pie": "Design Modeling Academy · Matriz de contenido diciembre 2026 (1 dic – 6 ene 2027) · métricas reales de Meta Graph API (matriz.json, 20-nov) y brief de contenido sintomático.",
+ "replan_26nov": {
+  "motivo": "Dayana (26-nov) rechazó los reels orgánicos de diciembre por ser re-ediciones de reels de noviembre con otro título. Pidió videos nuevos en la línea de lo que funciona, investigando @lexmrbim, @aecode.ai y los demás referentes.",
+  "fuente_referentes": "matriz-viral/fuentes/referentes/cuentas-2026-11-23.json (Apify, 210 publicaciones de 7 cuentas; no se volvió a correr Apify).",
+  "cambios": [
+   {
+    "fecha_iso": "2026-12-02",
+    "sale": "dic-reedit-zapata-suelos-reel",
+    "entra": "dic-zapata-momento-se-levanta-reel",
+    "formato": "REEL ANIMADO (a) · pizarra dibujada sin presentador, voz de Gabriel con IA · 44-48 s",
+    "gancho": "Esta zapata se está levantando de un lado… y tu hoja de cálculo dice que cumple.",
+    "por_que": "Misma línea que el mejor reel de noviembre, «La misma zapata en 5 suelos» (DfmwQgAjiDk: 4.090 vistas, 89 comentarios, 63 guardados): un caso de cimentación con tres escenarios y una pregunta que obliga a elegir, con ZAPATA al cierre. Suma el número que se guarda, como «El 1 % de cuantía» (DdJ35DuD7Rk: 154 comentarios, 765 guardados). Contenido nuevo: excentricidad, que nunca se publicó."
+   },
+   {
+    "fecha_iso": "2026-12-03",
+    "sale": "dic-reedit-uniones-viga-columna-reel",
+    "entra": "dic-6-uniones-cuales-pasan-momento-reel",
+    "formato": "REEL ANIMADO (a) · isométrico que se arma y se desarma, voz de Gabriel con IA · 46-50 s",
+    "gancho": "6 formas de unir una viga de acero a una columna. ¿Cuál usas tú? Dinos el número.",
+    "por_que": "Es el gancho que Dayana pidió (el de la chuleta del 4-nov, DfU1jwSj6g6: 55 guardados, el reel más guardado de noviembre, pero solo 19 comentarios). El video es otro: columna de acero en vez de hormigón, voz, piezas que se arman y un reto («solo 3 pasan momento») que el original no tenía. La mecánica «dinos el número» es la de «Simbología de niveles» (DeubXmFlIDE: 1.835 comentarios, 4.391 guardados)."
+   },
+   {
+    "fecha_iso": "2026-12-06",
+    "sale": "dic-ws-short-s3-reel",
+    "entra": "dic-lo-que-uso-ia-revit-reel",
+    "formato": "REEL (a) · «tres bandas» en Remotion con las pantallas reales del workshop del 17-nov, sin grabación nueva · 48-52 s",
+    "gancho": "En Revit no le pido todo a la IA. Esto es lo que uso según lo que necesito.",
+    "por_que": "Es el formato de @lexmrbim que más conversación saca: sus carruseles «lo que uso según lo que necesito» tienen 357 y 151 comentarios (DfVljDMFnFX y Df2CLm-Fr4v) contra una mediana de 8,5 en sus reels, y su reel paso a paso «Revit + ChatGPT» con palabra llegó a 490 comentarios y 28.528 vistas (DeHDZn4BrL-). Nosotros nunca lo hicimos. La diferencia DMA es decir lo que la IA no hace, como AECODE en «La IA saca el número. El ingeniero lo valida» (Dfa1UCRR_F7: 20.451 vistas). Aviso honesto: en noviembre nuestras piezas de IA en Revit sin problema sacaron 0-2 comentarios; esta entra como PRUEBA del formato."
+   },
+   {
+    "fecha_iso": "2026-12-08",
+    "sale": "dic-reedit-simbologia-niveles-reel",
+    "entra": "dic-revit-3-origenes-vinculo-reel",
+    "formato": "REEL ANIMADO (a) · pizarra dibujada con letras de marca + 1 captura real de Revit, voz de Gabriel con IA · 46-50 s",
+    "gancho": "Vinculaste el modelo de estructura… y apareció a kilómetros del de arquitectura.",
+    "por_que": "Sigue la línea del reel más comentado del año, «Simbología de niveles en planos» (DeubXmFlIDE: 97.736 vistas, 1.835 comentarios, 4.391 guardados): símbolos numerados que el ingeniero ve todos los días y una pregunta de «¿cuál usas tú?». Aquí el contenido es otro (los tres orígenes) y lleva un síntoma de coordinación, que es lo que le faltó a «LOD 100 a 500» (Df2GKL4lEaB: 791 vistas, 0 comentarios): allí no había error que discutir."
+   },
+   {
+    "fecha_iso": "2026-12-12",
+    "sale": "dic-gabriel-memoria-devuelta-reel",
+    "entra": "dic-combinaciones-no-se-mezclan-reel",
+    "formato": "REEL ANIMADO (a) · pizarra dibujada sin presentador, voz de Gabriel con IA · 48-52 s",
+    "gancho": "1,4D + 1,7L. ¿De qué norma es esa combinación? Porque en la portada de tu memoria pusiste otra.",
+    "por_que": "La memoria devuelta es el tema que más comentarios por vista saca en la cuenta: «Hipótesis que no se declararon…» (Dd9MzP4FyY6: 288 comentarios, 56,8 por cada 1.000 vistas) y «Te devolvieron la memoria de cálculo. Otra vez.» (DgKzg3kF23W, 25-nov: 101 comentarios, 31,4 por 1.000). Esta pieza no repite ese gancho: entra por un número suelto en la portada, como «40 mm.» (DfahfAnl6TX: 13.289 vistas), y compara normas, como «El 1 % de cuantía» (DdJ35DuD7Rk: 154 comentarios, 765 guardados). Preguntar el país abre el debate Perú / Ecuador / Colombia."
+   },
+   {
+    "fecha_iso": "2026-12-27",
+    "sale": "dic-reedit-5-cimentaciones-reel",
+    "entra": "dic-zapata-5-medidas-aci-reel",
+    "formato": "REEL ANIMADO (a) · isométrico que se arma y se desarma, voz de Gabriel con IA · 40-44 s",
+    "gancho": "¿Dónde revisas el cortante de tu zapata: en la cara de la columna, a d o a d/2?",
+    "por_que": "Es la pieza de guardado de fin de año y sigue a «5 tipos de cimentación y cuándo se usa cada una» (Der2lsgjwu5: 10.322 vistas, 103 comentarios, 362 guardados) y a «40 mm.» (DfahfAnl6TX: 13.289 vistas, 51 guardados): una lista numerada con cifras de norma. A diferencia de «40 mm.», cierra con pregunta y palabra (ese post tuvo 2 comentarios porque no pedía respuesta). Y es la primera vez que el recurso que se regala hace exactamente lo que el video enseña."
+   }
+  ],
+  "descartadas": "Las 5 piezas rechazadas siguen en guiones-completos.json con estado «⚫ DESCARTADA» y su motivo, para no volver a proponerlas."
+ }
+}

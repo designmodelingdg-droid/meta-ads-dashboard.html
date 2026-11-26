@@ -1,0 +1,122 @@
+name: Comentarios de TikTok, LinkedIn y YouTube (APIs oficiales)
+
+# Lee y responde comentarios de TikTok (@designmodelingdg), de las páginas de
+# LinkedIn (Design Modeling Academy y Design Modeling DG) y del canal de
+# YouTube, cada red con su API oficial. Nunca imprime tokens.
+#
+#   modo=listar     no publica: deja en el registro los comentarios de los
+#                   últimos N días que no tienen respuesta nuestra.
+#   modo=responder  publica las respuestas de la orden. Antes de cada una mira
+#                   si ya respondimos, así que no duplica.
+#
+# También corre al hacer push de matriz-viral/comentarios/orden-redes.json:
+#   {"modo": "listar", "dias": 7, "redes": ["tiktok", "linkedin", "youtube"],
+#    "respuestas": [{"red": "youtube", "ref": {...}, "texto": "..."}]}
+# El «ref» de cada comentario sale en el listado.
+
+on:
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: "listar (no publica) o responder"
+        type: choice
+        options: [listar, responder]
+        default: listar
+      dias:
+        description: "Ventana en días"
+        required: false
+        default: "7"
+      redes:
+        description: "Redes, separadas por coma"
+        required: false
+        default: "tiktok,linkedin,youtube"
+      respuestas:
+        description: 'Para modo=responder: [{"red":"youtube","ref":{...},"texto":"..."}]'
+        required: false
+        default: "[]"
+  push:
+    paths:
+      - matriz-viral/comentarios/orden-redes.json
+
+permissions:
+  contents: write
+
+env:
+  EVENTO: ${{ github.event_name }}
+  IN_MODO: ${{ inputs.modo }}
+  IN_DIAS: ${{ inputs.dias }}
+  IN_REDES: ${{ inputs.redes }}
+  IN_RESP: ${{ inputs.respuestas }}
+
+jobs:
+  tiktok:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    concurrency:
+      group: tiktok-token
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - name: TikTok
+        env:
+          TIKTOK_APP_ID: ${{ secrets.TIKTOK_APP_ID }}
+          TIKTOK_APP_SECRET: ${{ secrets.TIKTOK_APP_SECRET }}
+        run: python3 scripts/comentarios_redes.py tiktok
+      - name: Guardar el token si cambió
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add matriz-viral/tiktok/token.enc
+          if git diff --cached --quiet; then echo "Sin cambios"; exit 0; fi
+          git commit -m "TikTok: token cifrado actualizado"
+          for i in 1 2 3 4; do
+            git pull --rebase -q origin "${{ github.ref_name }}" && git push origin "HEAD:${{ github.ref_name }}" && exit 0
+            git rebase --abort 2>/dev/null || true; sleep $((i * 5))
+          done
+          echo "::error::No se pudo guardar el token de TikTok"; exit 1
+
+  linkedin:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    concurrency:
+      group: linkedin-token
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - name: LinkedIn
+        env:
+          LINKEDIN_CLIENT_ID: ${{ secrets.LINKEDIN_CLIENT_ID }}
+          LINKEDIN_CLIENT_SECRET: ${{ secrets.LINKEDIN_CLIENT_SECRET }}
+        run: python3 scripts/comentarios_redes.py linkedin
+      - name: Guardar el token si cambió
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add matriz-viral/linkedin/token.enc
+          if git diff --cached --quiet; then echo "Sin cambios"; exit 0; fi
+          git commit -m "LinkedIn: token cifrado actualizado"
+          for i in 1 2 3 4; do
+            git pull --rebase -q origin "${{ github.ref_name }}" && git push origin "HEAD:${{ github.ref_name }}" && exit 0
+            git rebase --abort 2>/dev/null || true; sleep $((i * 5))
+          done
+          echo "::error::No se pudo guardar el token de LinkedIn"; exit 1
+
+  youtube:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - name: YouTube
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: python3 scripts/comentarios_redes.py youtube

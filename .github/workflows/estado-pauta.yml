@@ -1,0 +1,22 @@
+name: Estado de la pauta (solo lectura)
+
+# Foto de campañas, conjuntos y anuncios con estado y presupuesto, para
+# verificar los cambios que reporta la agencia. Se lanza con un push a
+# matriz-viral/pauta/verificar.json o a mano. No escribe nada.
+on:
+  push:
+    paths: ["matriz-viral/pauta/verificar.json"]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  estado:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Estado actual
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN }}
+        run: python3 scripts/estado_pauta.py

@@ -1,0 +1,32 @@
+name: Comentarios de YouTube, TikTok, Threads y LinkedIn (Apify)
+
+# Solo LEE los comentarios recientes de las redes que GHL no ve (lo que se
+# publica directo en cada red). Se dispara cuando cambia el pedido.
+# Tope duro por actor; el total no pasa de ~0,46 USD por corrida.
+
+on:
+  push:
+    paths:
+      - matriz-viral/comentarios/otras-redes.json
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: comentarios-otras-redes-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  leer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Leer comentarios
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+        run: python3 scripts/comentarios_otras_redes.py matriz-viral/comentarios/otras-redes.json

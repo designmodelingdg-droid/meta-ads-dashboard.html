@@ -785,3 +785,42 @@ ZAPATA trae la gente: 37 contactos nuevos al bot contra 6 accesos nuevos a la ca
 - No cambia el formato del calendario: el video ganador ya tiene su par en el calendario (`nov-valor-grava-zapata-reel`, jue 26).
 - Las chuletas que quedan (LOD el 17, uniones el 24 y perfiles el 30) abren con un gancho que acuse un error o pida criterio («¿Sigues usando la misma cercha para todo?»), no con «Tipos de…».
 - El reel de Gabriel pendiente se graba junto con «no compres por el descuento» (25-nov). Si no se graba esta semana, pasa al banco de reserva.
+
+## Actualización 2026-11-23 · semana 16–22 nov: se publicó todo y casi nada conversó
+
+> Dato de la API al **20-nov** (el refresco de hoy no se pudo lanzar desde la sesión; la Action
+> del lunes lo trae sola). Las piezas tenían entre 0 y 4 días al medir: las **vistas** todavía
+> crecen; los **comentarios** de Instagram casi no cambian después del día 3.
+
+| Semana | Piezas | Vistas/pieza | Comentarios/pieza | Guardados/pieza |
+|---|---|---|---|---|
+| Octubre (referencia) | 28 | 7.632 | 36,2 | 213,9 |
+| 2–8 nov | 7 | 4.533 | 7,4 | 24,0 |
+| 9–15 nov | 6 | 2.448 | 13,5 | 17,0 |
+| **16–22 nov** | **8** | **1.044** | **3,2** | **2,1** |
+
+| Fecha | Pieza | Vistas | Coment. | Guard. |
+|---|---|---|---|---|
+| 16 | Carrusel «300 veces» (parámetros a mano) | 1.655 | 5 | 4 |
+| 17 | Chuleta LOD 100 a 500 | 705 | 0 | 0 |
+| 18 | Post «Ayer le hice preguntas a un modelo real» (carrusel workshop) | 2.541 | 2 | 5 |
+| 18 | Reel combo «Dos formaciones por el precio de una» | 476 | 2 | 0 |
+| 19 | Clip workshop «resumen de un modelo real» | 1.047 | 2 | 0 |
+| 19 | Reel Gabriel «¿Todavía revisas tu nave a ojo?» | 719 | **6** | 2 |
+| 20 | Clip workshop «comprobar la conexión» | 649 | 1 | 5 |
+| 20 | Post «Antes de preguntar el precio…» | 564 | **8** | 1 |
+
+**Lecciones**
+1. **No faltó publicar: faltó conversación.** Salieron las 6 piezas planificadas del 16 al 20 más 2 clips del workshop y el reel del combo. El cuello de botella de agosto (producir sin publicar) no es el problema esta semana.
+2. **La chuleta de LOD salió con el gancho viejo.** Se publicó «Los niveles de desarrollo LOD, de 100 a 500 👇», no «¿Tu modelo es LOD 300… o solo lo parece?», y sacó 0 comentarios, igual que la de cerchas. Antes de subir las de uniones (24) y perfiles (30), hay que mirar que la primera línea sea la que acusa el error.
+3. **Lo que conversó acusa un hábito o responde una duda de compra.** «¿Todavía revisas tu nave a ojo?» (Gabriel a cámara, 6) y «Antes de preguntar el precio…» (8) son los dos mejores. Los clips del workshop quedan en 1–2: muestran, pero no le preguntan nada a quien mira.
+4. **La conversación se fue a la pauta.** En Facebook el anuncio «Acero · con voz» juntó 34 comentarios con ACERO entre el 19 y el 23-nov, más que todo el orgánico de la semana. La API no está trayendo los comentarios de Facebook de las piezas orgánicas nuevas (campo vacío): no es que haya cero, es que no llegan.
+5. **Las vistas caen tres semanas seguidas** (4.533 → 2.448 → 1.044), aunque esta cifra se va a mover con el refresco. Si el viernes las piezas del 16–20 siguen bajo 1.500, la caída es real y no de edad.
+
+**Plan contra lo publicado (feed):** 6 de 6 piezas del 16 al 20, más 3 extra (2 clips del workshop y el reel del combo). El clip del 21 queda para la próxima lectura.
+
+**Ajustes que se aplican**
+- Uniones (24) y perfiles (30): revisar el caption antes de publicar; la primera línea es la que acusa el error (ya está en los prompts del 19-nov).
+- Clips del workshop que quedan: cerrar con una pregunta a quien mira («¿Qué le preguntarías tú a tu modelo?») además de NIVEL.
+- El jueves 26 sale `nov-valor-grava-zapata-reel`: si repite lo de las dos zapatas anteriores, cimentaciones + palabra de recurso pasa a regla permanente.
+- Pendiente técnico: los comentarios de Facebook orgánico no llegan en `meta_organico.py` para las piezas nuevas.

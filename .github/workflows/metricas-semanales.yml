@@ -147,9 +147,19 @@ jobs:
   metricas:
     if: github.event.inputs.solo_creativos != 'true' && github.event.inputs.solo_historias != 'true'
     runs-on: ubuntu-latest
+    # refresh-matriz.yml tiene el mismo cron (lunes 13:00 UTC) y también
+    # reescribe matriz.json entero. Los cuatro lunes de noviembre corrieron a
+    # la vez y el rebase chocó. Con el mismo grupo, uno espera al otro.
+    concurrency:
+      group: escribe-matriz
+      cancel-in-progress: false
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # La punta de la rama al ARRANCAR el job, no el SHA del momento del
+          # disparo: si esperó a refresh-matriz, tiene que partir de su commit.
+          ref: ${{ github.ref_name }}
 
       - name: Traer métricas de Meta
         env:
@@ -279,7 +289,14 @@ jobs:
           # Puede haber commits nuevos desde que arrancó la corrida: se rebasa
           # antes de empujar. Sin esto el push se rechaza y se pierde el dato.
           for i in 1 2 3; do
-            git pull --rebase --autostash origin "$GITHUB_REF_NAME" && git push && exit 0
+            if git pull --rebase --autostash origin "$GITHUB_REF_NAME"; then
+              git push && exit 0
+            else
+              # Un rebase con conflicto deja el repo a medias y los reintentos
+              # siguientes mueren en «unmerged files» sin intentar nada.
+              git status --short | grep -E '^(UU|AA|DU|UD) ' || true
+              git rebase --abort 2>/dev/null || true
+            fi
             echo "Reintento $i…"; sleep 5
           done
           echo "::error::No se pudo empujar tras 3 intentos."; exit 1

@@ -46,6 +46,8 @@ on:
       - cierre-agosto/**
       - cierre-septiembre/**
       - cierre-octubre/**
+      - cierre-noviembre/**
+      - conexiones/**
       - .github/workflows/publish-matriz.yml
   workflow_dispatch: {}                      # permite correrla a mano desde la pestaña Actions
 
@@ -144,6 +146,10 @@ jobs:
           cp -r cierre-agosto public/cierre-agosto
           cp -r cierre-septiembre public/cierre-septiembre
           cp -r cierre-octubre public/cierre-octubre
+          cp -r cierre-noviembre public/cierre-noviembre
+          # Página de redirección de las APIs de TikTok y LinkedIn (solo muestra
+          # el código de autorización; no guarda ni envía nada).
+          cp -r conexiones public/conexiones
           # Entregables descargables: los Word y las plantillas que el equipo
           # abre desde el telefono. Van con URL propia para poder mandarlos por
           # WhatsApp sin adjuntar nada.
