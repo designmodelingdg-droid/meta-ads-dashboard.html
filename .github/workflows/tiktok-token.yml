@@ -125,11 +125,15 @@ jobs:
           print("Access token válido por (s):", d.get("expires_in"),
                 "| refresh token válido por (s):", d.get("refresh_token_expires_in"))
 
-          info = get("/business/get/", d["access_token"], business_id=open_id,
-                     fields=json.dumps(["username", "display_name", "followers_count"]))
-          di = info.get("data") or {}
-          print("Cuenta conectada:", di.get("username"), "·", di.get("display_name"),
-                "· seguidores:", di.get("followers_count"), "| code:", info.get("code"), info.get("message"))
+          vids = get("/business/video/list/", d["access_token"], business_id=open_id,
+                     fields=json.dumps(["item_id", "create_time", "caption", "comments", "share_url"]),
+                     max_count=5)
+          lista = (vids.get("data") or {}).get("videos") or []
+          print("Prueba de lectura (últimos videos):", len(lista), "| code:", vids.get("code"), vids.get("message"))
+          for v in lista:
+              print("  ·", time.strftime("%Y-%m-%d", time.gmtime(v.get("create_time") or 0)),
+                    "| comentarios:", v.get("comments"), "|", (v.get("share_url") or "")[:80],
+                    "|", (v.get("caption") or "")[:60].replace("\n", " "))
           PY
       - name: Guardar token cifrado
         run: |
