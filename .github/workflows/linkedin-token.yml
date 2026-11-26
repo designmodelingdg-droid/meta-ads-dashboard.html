@@ -131,7 +131,17 @@ jobs:
                 "| refresh token:", "sí, válido por (días) " + str(round(int(d.get("refresh_token_expires_in") or 0) / 86400, 1))
                 if d.get("refresh_token") else "no vino (habrá que reautorizar antes de que caduque)")
 
-          acl = api("https://api.linkedin.com/rest/organizationAcls?q=roleAssignee&state=APPROVED", d["access_token"])
+          # LinkedIn solo acepta versiones recientes (YYYYMM): prueba de la más nueva hacia atrás.
+          t = time.gmtime()
+          for k in range(0, 14):
+              y, m = t.tm_year, t.tm_mon - k
+              while m <= 0:
+                  y, m = y - 1, m + 12
+              os.environ["LI_VERSION"] = f"{y}{m:02d}"
+              acl = api("https://api.linkedin.com/rest/organizationAcls?q=roleAssignee&state=APPROVED", d["access_token"])
+              if acl.get("status") != 426:
+                  break
+          print("Versión de la API de LinkedIn:", os.environ["LI_VERSION"])
           els = acl.get("elements") or []
           print("Páginas que administra la cuenta:", len(els), "|", acl.get("status") or "", acl.get("message") or "")
           for e in els:
