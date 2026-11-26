@@ -37,9 +37,21 @@ MIN_GASTO = float(os.environ.get("MIN_GASTO") or "0.5")
 # Un «resultado» no es lo mismo en todas las campañas: las de formulario dan
 # leads y las de WhatsApp dan conversaciones. Se cuentan por separado y el
 # JSON dice cuál es cuál, para no sumar peras con manzanas.
-LEADS = {"lead", "onsite_conversion.lead_grouped", "offsite_conversion.fb_pixel_lead"}
-CONVERS = {"onsite_conversion.messaging_conversation_started_7d",
-           "onsite_conversion.total_messaging_connection"}
+#
+# UN solo action_type por vía. Meta devuelve el mismo lead bajo varios nombres
+# y sumarlos lo cuenta más de una vez:
+#   · `lead` YA es el total de formulario: incluye
+#     `onsite_conversion.lead_grouped` (formulario instantáneo) y
+#     `offsite_conversion.fb_pixel_lead` (píxel). Con los tres en el conjunto,
+#     cada anuncio salía con exactamente 2 × `lead` (por-dia.json,
+#     21-oct → 19-nov-2026: lead 346 = lead_grouped 262 + fb_pixel_lead 84).
+#   · WhatsApp es `messaging_conversation_started_7d`.
+#     `total_messaging_connection` es OTRA métrica de la misma conversación:
+#     sumarla casi la duplicaba.
+# Es el criterio de la casa (cierre-mes, matriz-mensual): formulario +
+# WhatsApp, sin duplicar. scripts/prueba_ads_copys.py falla si se vuelve atrás.
+LEADS = {"lead"}
+CONVERS = {"onsite_conversion.messaging_conversation_started_7d"}
 
 
 def api(path, **params):
@@ -52,6 +64,30 @@ def api(path, **params):
 def suma(row, tipos):
     return sum(float(a.get("value", 0)) for a in (row.get("actions") or [])
                if a.get("action_type") in tipos)
+
+
+def resultados_de(row):
+    """Leads de formulario y conversaciones de WhatsApp de una fila de insights,
+    cada cifra por su lado. Un anuncio puede traer las dos (los de formulario
+    también reciben conversaciones): antes, con un solo lead, las conversaciones
+    se tiraban.
+
+    `resultados` es leads + conversaciones —un prospecto por cada vía, sin
+    duplicar— y `tipo_resultado` dice de qué está hecho. Solo si no hay ni
+    leads ni conversaciones se cae a clics en el enlace, que nunca se suman con
+    lo anterior.
+    """
+    leads, convers = int(suma(row, LEADS)), int(suma(row, CONVERS))
+    if leads and convers:
+        res, tipo = leads + convers, "lead + conversación"
+    elif leads:
+        res, tipo = leads, "lead"
+    elif convers:
+        res, tipo = convers, "conversación"
+    else:
+        res, tipo = int(suma(row, {"link_click"})), "clic"
+    return {"leads": leads, "conversaciones": convers,
+            "resultados": res, "tipo_resultado": tipo}
 
 
 def copy_de(creative):
@@ -136,7 +172,12 @@ def main():
         print(f"AVISO: insights falló ({e.code}): {e.read()[:500]}")
         sys.exit(0)
 
-    filas = [f for f in ins.get("data", []) if float(f.get("spend") or 0) >= MIN_GASTO]
+    # Un anuncio con leads o conversaciones entra aunque gaste menos de
+    # MIN_GASTO: si se quedara fuera, la suma por anuncio dejaría de cuadrar
+    # con el total por campaña de fuentes/ads-insights/por-campana.json.
+    filas = [f for f in ins.get("data", [])
+             if float(f.get("spend") or 0) >= MIN_GASTO
+             or suma(f, LEADS | CONVERS)]
     porid = {f["ad_id"]: f for f in filas}
 
     # Los insights SOLO devuelven anuncios que tuvieron entrega en la ventana.
@@ -171,10 +212,8 @@ def main():
     anuncios, fallos = [], 0
     for f in sorted(filas, key=lambda r: -float(r.get("spend") or 0)):
         gasto = float(f.get("spend") or 0)
-        leads, convers = suma(f, LEADS), suma(f, CONVERS)
-        res, tipo = (leads, "lead") if leads else (convers, "conversación")
-        if not res:
-            res, tipo = suma(f, {"link_click"}), "clic"
+        r = resultados_de(f)
+        res = r["resultados"]
 
         texto, estado = {}, ""
         try:
@@ -202,8 +241,10 @@ def main():
             "frecuencia": round(float(f.get("frequency") or 0), 2),
             "clics_enlace": int(float(f.get("inline_link_clicks") or 0)),
             "ctr": round(float(f.get("ctr") or 0), 2),
-            "resultados": int(res),
-            "tipo_resultado": tipo,
+            "leads": r["leads"],
+            "conversaciones": r["conversaciones"],
+            "resultados": res,
+            "tipo_resultado": r["tipo_resultado"],
             "coste_resultado": round(gasto / res, 2) if res else None,
             "copy": texto,
         })
@@ -218,9 +259,15 @@ def main():
             "creativos_no_leidos": fallos,
             "nota": ("El copy va LITERAL, tal como está en Meta. `cuerpo`, `titular` y "
                      "`descripcion` son listas porque un anuncio Advantage+ puede llevar "
-                     "varios textos que Meta rota. `tipo_resultado` dice si el número de "
-                     "`resultados` son leads de formulario, conversaciones de WhatsApp o "
-                     "clics: no se suman entre sí."),
+                     "varios textos que Meta rota. `leads` son los leads de formulario "
+                     "(action_type `lead`, que ya incluye lead_grouped y fb_pixel_lead) y "
+                     "`conversaciones` las de WhatsApp (messaging_conversation_started_7d); "
+                     "van siempre las dos, cada una por su lado, y sumadas por anuncio "
+                     "cuadran con el total por campaña de ads-insights. `resultados` es "
+                     "leads + conversaciones y `tipo_resultado` dice de qué está hecho: "
+                     "«lead», «conversación» o «lead + conversación». Solo si no hay "
+                     "ninguno de los dos pasa a «clic» (clics en el enlace), que nunca se "
+                     "suma con lo anterior."),
             "anuncios": anuncios,
         }, fh, ensure_ascii=False, indent=2)
     print(f"Listo: {len(anuncios)} anuncios con copy en {OUTDIR}/anuncios.json"

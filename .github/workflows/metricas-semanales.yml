@@ -64,6 +64,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # El extractor de copys y el conteo de leads solo se ven fallar cuando ya
+      # se llamó a la API. Esta prueba no toca red ni token y cubre los DOS
+      # scripts (ads_creativos.py y ads_copys.py): si algo está roto, se para aquí.
+      - name: Probar el extractor de copys y el conteo de leads
+        run: python3 scripts/prueba_ads_copys.py
+
       - name: Bajar imágenes de anuncios ganadores
         env:
           META_TOKEN: ${{ secrets.META_TOKEN }}
@@ -76,11 +82,6 @@ jobs:
             exit 1
           fi
           python3 scripts/ads_creativos.py
-
-      # El extractor de copys solo se ve fallar cuando ya se llamó a la API.
-      # Esta prueba no toca red ni token: si está roto, se para aquí.
-      - name: Probar el extractor de copys
-        run: python3 scripts/prueba_ads_copys.py
 
       - name: Bajar los COPYS de los anuncios
         env:
