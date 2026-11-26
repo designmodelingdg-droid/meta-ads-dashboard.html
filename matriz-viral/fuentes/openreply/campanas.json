@@ -61,21 +61,21 @@
    "creada": "2026-11-25T15:22:28.149",
    "actualizada": "2026-11-25T15:22:37.131",
    "cuenta": "design_modeling_dg",
-   "enviados": 31,
+   "enviados": 32,
    "fallidos": 2,
    "entregados_sin_confirmar": 0,
    "saltados": 0,
    "pendientes": 0,
    "primer_envio": "2026-11-25T15:23:13.307",
-   "ultimo_envio": "2026-11-26T13:07:46.861",
+   "ultimo_envio": "2026-11-26T13:40:51.495",
    "clics": 18,
    "clics_limpios": 18,
    "clics_con_bots": 0,
    "enlaces_rastreados": 1,
    "mide_clics": true,
-   "clics_por_dm": 0.58,
-   "ctr": 0.5806,
-   "lectura_clics": "18 clics limpios sobre 31 DM enviados (58%). Son aperturas, no personas: la misma persona puede contar varias veces."
+   "clics_por_dm": 0.56,
+   "ctr": 0.5625,
+   "lectura_clics": "18 clics limpios sobre 32 DM enviados (56%). Son aperturas, no personas: la misma persona puede contar varias veces."
   },
   {
    "id": "cmun2iawl000004l8habk0hh6",
@@ -913,12 +913,12 @@
    "palabra": "MEMORIA",
    "campana": "MEMORIA · carrusel Te devolvieron la memoria (25-nov)",
    "campana_activa": true,
-   "enviados": 31,
+   "enviados": 32,
    "fallidos": 2,
    "entregados_sin_confirmar": 0,
    "saltados": 0,
    "primer_envio": "2026-11-25T15:23:13.307",
-   "ultimo_envio": "2026-11-26T13:07:46.861"
+   "ultimo_envio": "2026-11-26T13:40:51.495"
   },
   {
    "palabra": "MEMORIA",
@@ -1163,16 +1163,16 @@
   {
    "estado": "FAILED",
    "pero_si_se_entrego": false,
-   "motivo": "MetaApiError -1: The comment you are trying to reply to, already has a reply. (/v25.0/17841404048578200/messages) [code=-1 sub=2534023 type=IGApiException trace=A2gOJ0VAunC7zz4N2TS-lno]",
+   "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=A5PQNo_6fXmhwBPTX0zmPOF]",
    "veces": 1,
-   "ultima_vez": "2026-11-24T00:42:10.762"
+   "ultima_vez": "2026-09-30T11:51:37.669"
   },
   {
    "estado": "FAILED",
    "pero_si_se_entrego": false,
-   "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=A5PQNo_6fXmhwBPTX0zmPOF]",
+   "motivo": "MetaApiError -1: The comment you are trying to reply to, already has a reply. (/v25.0/17841404048578200/messages) [code=-1 sub=2534023 type=IGApiException trace=A_bTPZTct8GCSCPJqLahrk2]",
    "veces": 1,
-   "ultima_vez": "2026-09-30T11:51:37.669"
+   "ultima_vez": "2026-11-24T00:42:10.766"
   },
   {
    "estado": "FAILED",
@@ -1215,13 +1215,6 @@
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=Aneq1P9zHQrbYzyhASSOiFS]",
    "veces": 1,
    "ultima_vez": "2026-09-30T12:57:55.689"
-  },
-  {
-   "estado": "FAILED",
-   "pero_si_se_entrego": false,
-   "motivo": "MetaApiError -1: The comment you are trying to reply to, already has a reply. (/v25.0/17841404048578200/messages) [code=-1 sub=2534023 type=IGApiException trace=AyMZB4zELYh8IM7_3tmTigh]",
-   "veces": 1,
-   "ultima_vez": "2026-11-25T15:27:12.904"
   },
   {
    "estado": "FAILED",
@@ -1303,23 +1296,9 @@
   {
    "estado": "FAILED",
    "pero_si_se_entrego": false,
-   "motivo": "MetaApiError -1: The comment you are trying to reply to, already has a reply. (/v25.0/17841404048578200/messages) [code=-1 sub=2534023 type=IGApiException trace=A7KyquxYNry4w2ql6sCi0DY]",
-   "veces": 1,
-   "ultima_vez": "2026-11-25T15:27:12.895"
-  },
-  {
-   "estado": "FAILED",
-   "pero_si_se_entrego": false,
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=AoDH8FEtt2u2dOgccYK5Pyf]",
    "veces": 1,
    "ultima_vez": "2026-10-13T14:58:20.339"
-  },
-  {
-   "estado": "FAILED",
-   "pero_si_se_entrego": false,
-   "motivo": "MetaApiError -1: The comment you are trying to reply to, already has a reply. (/v25.0/17841404048578200/messages) [code=-1 sub=2534023 type=IGApiException trace=ACUkbNDj29Ebw9qTRdWDR80]",
-   "veces": 1,
-   "ultima_vez": "2026-11-24T00:42:10.767"
   },
   {
    "estado": "FAILED",
@@ -1366,6 +1345,13 @@
   {
    "estado": "FAILED",
    "pero_si_se_entrego": false,
+   "motivo": "MetaApiError -1: The comment you are trying to reply to, already has a reply. (/v25.0/17841404048578200/messages) [code=-1 sub=2534023 type=IGApiException trace=AhbuGftQLU_32w8CDblii-f]",
+   "veces": 1,
+   "ultima_vez": "2026-11-24T00:42:10.762"
+  },
+  {
+   "estado": "FAILED",
+   "pero_si_se_entrego": false,
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=ANX4AZop2otFRN4e69itihB]",
    "veces": 1,
    "ultima_vez": "2026-09-30T06:56:34.6"
@@ -1404,13 +1390,6 @@
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=AqI0z9LD8e4_jpXD0BjeG78]",
    "veces": 1,
    "ultima_vez": "2026-09-30T00:25:19.726"
-  },
-  {
-   "estado": "FAILED",
-   "pero_si_se_entrego": false,
-   "motivo": "MetaApiError -1: The comment you are trying to reply to, already has a reply. (/v25.0/17841404048578200/messages) [code=-1 sub=2534023 type=IGApiException trace=AsXMxrZW_5Z13siFVak-0gg]",
-   "veces": 1,
-   "ultima_vez": "2026-11-24T22:57:14.012"
   },
   {
    "estado": "FAILED",
@@ -1502,6 +1481,27 @@
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=ALlwIzvj5qa8tGmpYhUV7YH]",
    "veces": 1,
    "ultima_vez": "2026-09-30T00:32:12.382"
+  },
+  {
+   "estado": "FAILED",
+   "pero_si_se_entrego": false,
+   "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=A3ed7dK4_Y-8zwkdGrw6rvy]",
+   "veces": 1,
+   "ultima_vez": "2026-09-12T00:16:38.542"
+  },
+  {
+   "estado": "SKIPPED_DEDUP",
+   "pero_si_se_entrego": false,
+   "motivo": "This person already received this campaign's DM on an earlier comment",
+   "veces": 1,
+   "ultima_vez": "2026-09-18T18:27:24.854"
+  },
+  {
+   "estado": "FAILED",
+   "pero_si_se_entrego": false,
+   "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=An5yc6TaIDgq-vSGpgnTvT1]",
+   "veces": 1,
+   "ultima_vez": "2026-10-10T20:18:16.317"
   }
  ],
  "enlaces": [
@@ -1879,7 +1879,7 @@
   },
   {
    "fecha": "2026-11-26",
-   "enviados": 14
+   "enviados": 15
   }
  ],
  "seguidores": [
@@ -2040,8 +2040,8 @@
   }
  ],
  "workflows_ghl": {
-  "generado": "2026-11-26",
-  "total": 158,
+  "generado": "2026-11-20",
+  "total": 159,
   "por_palabra": {
    "ZAPATA": {
     "publicados": [
@@ -2055,11 +2055,15 @@
      }
     ],
     "en_borrador": [],
-    "bot_total": 311,
-    "bot_nuevos_7d": 6
+    "bot_total": 310,
+    "bot_nuevos_7d": 5
    },
    "ACERO": {
     "publicados": [
+     {
+      "nombre": "✅ Seguimiento 5 de Especialización en Acero",
+      "estado": "published"
+     },
      {
       "nombre": "✅ (SMS) FACEBOOK FORM PRE FILTRO ACERO",
       "estado": "published"
@@ -2099,7 +2103,7 @@
     ],
     "en_borrador": [],
     "bot_total": 943,
-    "bot_nuevos_7d": 57
+    "bot_nuevos_7d": 60
    },
    "CHATGPT": {
     "publicados": [
@@ -2120,8 +2124,8 @@
      }
     ],
     "en_borrador": [],
-    "bot_total": 222,
-    "bot_nuevos_7d": 25
+    "bot_total": 209,
+    "bot_nuevos_7d": 13
    },
    "DYNAMO": {
     "publicados": [
@@ -2146,7 +2150,7 @@
     "bot_nuevos_7d": 0
    }
   },
-  "embudo_generado": "2026-11-26T13:37Z"
+  "embudo_generado": "2026-11-26T00:19Z"
  },
  "cotejo_con_la_matriz": [
   {
@@ -2210,8 +2214,8 @@
     "MEMORIA VERIFICABLE",
     "MEMORIA DE CÁLCULO"
    ],
-   "dms_enviados": 62,
-   "lectura": "Viva: 62 DM enviados."
+   "dms_enviados": 63,
+   "lectura": "Viva: 63 DM enviados."
   },
   {
    "palabra": "DYNAMO",

@@ -1,0 +1,164 @@
+name: LinkedIn · canjear código y guardar token
+
+# Conecta la página de LinkedIn de Design Modeling Academy con la app
+# «DMA Community Manager» (Community Management API).
+#
+#   modo=canjear  usa LINKEDIN_AUTH_CODE (sale en /conexiones/ después de
+#                 autorizar) y lo cambia por tokens.
+#   modo=probar   renueva o reutiliza el token guardado y comprueba las páginas.
+#
+# Los tokens se guardan CIFRADOS (AES-256, clave = LINKEDIN_CLIENT_SECRET) en
+# matriz-viral/linkedin/token.enc. Nunca se imprime ningún token en el log.
+#
+# Se dispara a mano o al hacer push de matriz-viral/linkedin/orden.json.
+
+on:
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: "canjear (código nuevo) o probar (token guardado)"
+        type: choice
+        options: [canjear, probar]
+        default: canjear
+  push:
+    paths:
+      - matriz-viral/linkedin/orden.json
+
+permissions:
+  contents: write
+
+concurrency:
+  group: linkedin-token
+  cancel-in-progress: false
+
+jobs:
+  token:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Canjear o renovar
+        env:
+          EVENTO: ${{ github.event_name }}
+          IN_MODO: ${{ inputs.modo }}
+          CLIENT_ID: ${{ secrets.LINKEDIN_CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.LINKEDIN_CLIENT_SECRET }}
+          AUTH_CODE: ${{ secrets.LINKEDIN_AUTH_CODE }}
+          REDIRECT_URI: https://designmodelingdg-droid.github.io/meta-ads-dashboard.html/conexiones/
+          LI_VERSION: "202510"
+        run: |
+          python3 - <<'PY'
+          import json, os, subprocess, sys, time, urllib.request, urllib.parse
+
+          ARCHIVO = "matriz-viral/linkedin/token.enc"
+          CID, CSEC = os.environ.get("CLIENT_ID", "").strip(), os.environ.get("CLIENT_SECRET", "").strip()
+          if not CID or not CSEC:
+              sys.exit("Faltan los secretos LINKEDIN_CLIENT_ID o LINKEDIN_CLIENT_SECRET.")
+          os.environ["CLAVE"] = CSEC
+
+          if os.environ["EVENTO"] == "push":
+              modo = json.load(open("matriz-viral/linkedin/orden.json")).get("modo", "probar")
+          else:
+              modo = os.environ.get("IN_MODO") or "canjear"
+          print("MODO:", modo)
+
+          def ocultar(v):
+              if v:
+                  print(f"::add-mask::{v}")
+
+          def token_post(campos):
+              data = urllib.parse.urlencode(campos).encode()
+              req = urllib.request.Request("https://www.linkedin.com/oauth/v2/accessToken", data=data,
+                                           headers={"Content-Type": "application/x-www-form-urlencoded"})
+              try:
+                  return json.load(urllib.request.urlopen(req, timeout=30))
+              except urllib.error.HTTPError as e:
+                  return {"error": e.code, "error_description": e.read().decode()[:300]}
+
+          def api(url, token):
+              req = urllib.request.Request(url, headers={
+                  "Authorization": f"Bearer {token}", "LinkedIn-Version": os.environ["LI_VERSION"],
+                  "X-Restli-Protocol-Version": "2.0.0"})
+              try:
+                  return json.load(urllib.request.urlopen(req, timeout=30))
+              except urllib.error.HTTPError as e:
+                  return {"status": e.code, "message": e.read().decode()[:300]}
+
+          def cifrar(texto):
+              os.makedirs(os.path.dirname(ARCHIVO), exist_ok=True)
+              subprocess.run(["openssl", "enc", "-aes-256-cbc", "-pbkdf2", "-iter", "200000", "-salt",
+                              "-a", "-A", "-out", ARCHIVO, "-pass", "env:CLAVE"],
+                             input=texto.encode(), check=True)
+
+          def descifrar():
+              r = subprocess.run(["openssl", "enc", "-d", "-aes-256-cbc", "-pbkdf2", "-iter", "200000",
+                                  "-a", "-A", "-in", ARCHIVO, "-pass", "env:CLAVE"],
+                                 capture_output=True, check=True)
+              return json.loads(r.stdout.decode())
+
+          ahora = int(time.time())
+          if modo == "canjear":
+              code = os.environ.get("AUTH_CODE", "").strip()
+              if not code:
+                  sys.exit("Falta el secreto LINKEDIN_AUTH_CODE.")
+              d = token_post({"grant_type": "authorization_code", "code": code,
+                              "redirect_uri": os.environ["REDIRECT_URI"],
+                              "client_id": CID, "client_secret": CSEC})
+          else:
+              if not os.path.exists(ARCHIVO):
+                  sys.exit("No hay token guardado todavía: primero corre modo=canjear.")
+              g = descifrar()
+              ocultar(g.get("access_token")); ocultar(g.get("refresh_token"))
+              if g.get("refresh_token"):
+                  d = token_post({"grant_type": "refresh_token", "refresh_token": g["refresh_token"],
+                                  "client_id": CID, "client_secret": CSEC})
+              else:
+                  d = {"access_token": g["access_token"], "expires_in": g.get("access_expira") - ahora,
+                       "scope": g.get("scope")}
+
+          ocultar(d.get("access_token")); ocultar(d.get("refresh_token"))
+          if not d.get("access_token"):
+              sys.exit(f"LinkedIn rechazó la solicitud: {d.get('error')} · {d.get('error_description')}")
+
+          guardar = {"access_token": d["access_token"], "access_expira": ahora + int(d.get("expires_in") or 0),
+                     "refresh_token": d.get("refresh_token"), "scope": d.get("scope"), "guardado": ahora}
+          if d.get("refresh_token_expires_in"):
+              guardar["refresh_expira"] = ahora + int(d["refresh_token_expires_in"])
+          cifrar(json.dumps(guardar))
+          print("Token guardado cifrado en", ARCHIVO)
+          print("Permisos:", d.get("scope"))
+          print("Access token válido por (días):", round(int(d.get("expires_in") or 0) / 86400, 1),
+                "| refresh token:", "sí, válido por (días) " + str(round(int(d.get("refresh_token_expires_in") or 0) / 86400, 1))
+                if d.get("refresh_token") else "no vino (habrá que reautorizar antes de que caduque)")
+
+          # LinkedIn solo acepta versiones recientes (YYYYMM): prueba de la más nueva hacia atrás.
+          t = time.gmtime()
+          for k in range(0, 14):
+              y, m = t.tm_year, t.tm_mon - k
+              while m <= 0:
+                  y, m = y - 1, m + 12
+              os.environ["LI_VERSION"] = f"{y}{m:02d}"
+              acl = api("https://api.linkedin.com/rest/organizationAcls?q=roleAssignee&state=APPROVED", d["access_token"])
+              if acl.get("status") != 426:
+                  break
+          print("Versión de la API de LinkedIn:", os.environ["LI_VERSION"])
+          els = acl.get("elements") or []
+          print("Páginas que administra la cuenta:", len(els), "|", acl.get("status") or "", acl.get("message") or "")
+          for e in els:
+              org = e.get("organization", "")
+              oid = org.rsplit(":", 1)[-1]
+              info = api(f"https://api.linkedin.com/rest/organizations/{oid}", d["access_token"])
+              nombre = (info.get("localizedName") or info.get("vanityName") or info.get("message") or "")[:80]
+              print("  ·", org, "|", e.get("role"), "|", nombre)
+          PY
+      - name: Guardar token cifrado
+        if: always()
+        run: |
+          [ -f matriz-viral/linkedin/token.enc ] || exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add matriz-viral/linkedin/token.enc
+          if git diff --cached --quiet; then echo "Sin cambios"; exit 0; fi
+          git commit -m "LinkedIn: token cifrado actualizado"
+          git pull --rebase -q
+          git push
