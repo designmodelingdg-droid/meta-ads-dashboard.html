@@ -160,5 +160,9 @@ jobs:
           git add matriz-viral/linkedin/token.enc
           if git diff --cached --quiet; then echo "Sin cambios"; exit 0; fi
           git commit -m "LinkedIn: token cifrado actualizado"
-          git pull --rebase -q
-          git push
+          # Otro flujo puede haber empujado a la misma rama: se reintenta.
+          for i in 1 2 3 4; do
+            git pull --rebase -q origin "${{ github.ref_name }}" && git push origin "HEAD:${{ github.ref_name }}" && exit 0
+            git rebase --abort 2>/dev/null || true; sleep $((i * 5))
+          done
+          echo "::error::No se pudo guardar el token de LinkedIn"; exit 1
