@@ -31,7 +31,10 @@ AJUSTE = {
  's6-no-hace-magia': [[1006.76, 1013.8], [1511.2, 1538.72]],
  's7-mil-cosas': [[1976.0, 2016.1], [2117.3, 2131.24]],
  's8-para-que-conectar': [[2605.3, 2629.0], [2630.3, 2642.6]],
+ 's9-niveles-duplicados': [[4641.92, 4659.66]],   # reel «La IA encontró 3 niveles a la misma altura» (mismo tramo que el 2.º de s4)
 }
+PAUSA = {'s9-niveles-duplicados': 0.4}   # pausa mínima que se recorta, si no es la general
+HOOK = {'s9-niveles-duplicados': ['LA IA ENCONTRÓ 3 NIVELES', 'A LA MISMA ALTURA']}
 CHAT = '1350:830:565:170'
 BW, BH = 1000, 760
 SPEED = 1.1
@@ -170,6 +173,6 @@ def short(sh):
 if __name__ == '__main__':
     ids = sys.argv[1:]
     for sh in SHORTS:
-        if sh['id'].startswith('s9'): continue
+        if sh['id'].startswith('s9') and sh['id'] not in ids: continue
         if not ids or sh['id'] in ids:
-            sh['r'] = AJUSTE.get(sh['id'], sh['r']); short(sh)
+            sh['r'] = AJUSTE.get(sh['id'], sh['r']); PAUSA_MIN = PAUSA.get(sh['id'], 0.6); sh['hook'] = HOOK.get(sh['id'], sh['hook']); short(sh)

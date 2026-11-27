@@ -1,7 +1,7 @@
 {
  "generado": "2026-09-30",
  "nota": "Contenido COMPLETO de cada pieza (hook, slides palabra por palabra con su dirección visual, guion de reel segundo a segundo, caption, CTA por red y copy de pauta). La app debe leer ESTE archivo para generar el post correcto sin inventar. Incluye las 3 secuencias de VENTA de historias (jueves), cuyo frame de cierre pide responder con una palabra clave para que lo recoja el bot en vez de depender de responder a mano.",
- "total": 347,
+ "total": 350,
  "piezas": [
   {
    "id": "jul-mito-render-ia",
@@ -16026,9 +16026,9 @@
     },
     {
      "n": 2,
-     "visual": "Repost del video de YouTube del día.",
-     "texto": "Nuevo video largo en YouTube: le preguntamos a un modelo cuántos muros tiene y lo comprobamos. 👉",
-     "sticker": "ENLACE al video de YouTube."
+     "visual": "Portada del video de YouTube de hoy (yt6).",
+     "texto": "Hoy en YouTube: la IA dijo 1.880 muros y Revit dice 1.859. ¿Quién contó bien? 👉",
+     "sticker": "ENLACE al video «La IA dijo 1.880 muros. Revit dice 1.859. ¿Quién contó bien?» (yt6, sale hoy a las 10:00)."
     },
     {
      "n": 3,
@@ -16043,7 +16043,7 @@
    },
    "estructura_historia": "valor 3 tiempos",
    "origen": "matriz diciembre 2026 / enero 2027",
-   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. Horario de atención en fiestas: (confirmar con Dayana). PRODUCCIÓN: Faltan-vertical (plantilla de selfie corta de 6 s) · Frame 3 (horario de fiestas): selfie corta de Gabriel con su voz, en la plantilla Faltan cambiando gabriel8.mp4 y words8.json; si no hay selfie, lámina simple.",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. Horario de atención en fiestas: (confirmar con Dayana). PRODUCCIÓN: Faltan-vertical (plantilla de selfie corta de 6 s) · Frame 3 (horario de fiestas): selfie corta de Gabriel con su voz, en la plantilla Faltan cambiando gabriel8.mp4 y words8.json; si no hay selfie, lámina simple. CUADRO 2 CAMBIADO el 26-nov: anuncia el video que de verdad sale el 18-dic (yt6). Como la historia sale a las 09:00 y el video a las 10:00, el cuadro 2 se sube cuando el video ya esté público.",
    "cta_por_red": {
     "instagram": "Caja de preguntas",
     "facebook": "Caja de preguntas"
@@ -16053,7 +16053,8 @@
     "composicion": "Faltan-vertical (plantilla de selfie corta de 6 s)",
     "uso": "Frame 3 (horario de fiestas): selfie corta de Gabriel con su voz, en la plantilla Faltan cambiando gabriel8.mp4 y words8.json; si no hay selfie, lámina simple.",
     "selfie": "G-03e (opcional)"
-   }
+   },
+   "pendiente_arte": "Texto de cuadros cambiado: regenerar láminas"
   },
   {
    "id": "dic-hist-1221",
@@ -16297,9 +16298,9 @@
     },
     {
      "n": 2,
-     "visual": "Repost del video de YouTube del día.",
-     "texto": "Y en YouTube: el error de los 3 niveles a la misma altura. 👉",
-     "sticker": "ENLACE al video de YouTube."
+     "visual": "Portada del video de YouTube del 22-dic (yt7).",
+     "texto": "¿Te lo perdiste? En YouTube: cómo conectar Claude a Revit con NonicaTab, paso a paso. 👉",
+     "sticker": "ENLACE al video «Conectar Claude a Revit con NonicaTab AI Connector (paso a paso)» (yt7, publicado el 22-dic)."
     }
    ],
    "cta": {
@@ -16308,7 +16309,7 @@
    },
    "estructura_historia": "fiestas · liviana",
    "origen": "matriz diciembre 2026 / enero 2027",
-   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. 0,888 kg/m × 12 m = 10,66 kg (lo confirma Gabriel). PRODUCCIÓN: ninguna · Quiz sobre foto de varillas + enlace al video de YouTube.",
+   "notas_produccion": "Máximo 4 frames. Las respuestas a la historia llegan como DM: si la palabra la escucha una automatización (OpenReply; ZAPATA en GHL), responde sola; si no, una persona del equipo contesta el mismo día con el nombre y una pregunta al final. 0,888 kg/m × 12 m = 10,66 kg (lo confirma Gabriel). PRODUCCIÓN: ninguna · Quiz sobre foto de varillas + enlace al video de YouTube. CUADRO 2 CAMBIADO el 26-nov: el 29-dic ya no sale video nuevo (el plan termina con yt7 el 22-dic), así que remite al más reciente. Si para esa fecha existe una lista de reproducción del workshop en el canal, el enlace puede ir a la lista.",
    "cta_por_red": {
     "instagram": "Quiz",
     "facebook": "Quiz"
@@ -16317,7 +16318,8 @@
     "proyecto_remotion": "/home/user/videos-dma/proyectos/historias-dma",
     "composicion": "ninguna",
     "uso": "Quiz sobre foto de varillas + enlace al video de YouTube."
-   }
+   },
+   "pendiente_arte": "Texto de cuadros cambiado: regenerar láminas"
   },
   {
    "id": "dic-hist-1230",
@@ -16990,11 +16992,11 @@
    "eje": "NÚCLEO-BIM",
    "hook": "Copiar la zapata del proyecto anterior es uno de los errores más comunes en cimentaciones pequeñas. Y uno de los más caros.",
    "seo": {
-    "titulo_seo": "Zapatas en arcilla, arena, limo y grava: qué cambia en el diseño",
+    "titulo_seo": "Zapatas en arcilla, arena, limo y grava: qué cambia",
     "slug": "zapata-arcilla-arena-limo-grava",
-    "meta": "Por qué la misma zapata no sirve en cualquier suelo: capacidad admisible, asentamientos y lo que hay que pedirle al estudio de suelos."
+    "meta": "Por qué la misma zapata no sirve en cualquier suelo: capacidad admisible, asentamientos y qué pedirle al estudio de suelos antes de dimensionar."
    },
-   "articulo_markdown": "# La misma zapata no se comporta igual en arcilla, arena, limo o grava\n\nCopiar la zapata del proyecto anterior es uno de los errores más comunes en cimentaciones pequeñas. Y uno de los más caros, porque se descubre cuando la estructura ya está construida.\n\n## Qué cambia de un suelo a otro\n\n- **Arcilla:** los asentamientos pueden seguir durante meses o años (consolidación). Una zapata que «pasa» por resistencia puede fallar por asentamiento.\n- **Arena:** asienta sobre todo al cargarse. Si está suelta, la capacidad baja y el asentamiento sube; si está saturada y hay sismo, hay que revisar licuación.\n- **Limo:** sensible al agua. Con humedad cambia mucho su comportamiento.\n- **Grava:** suele dar buena capacidad y asentamientos pequeños, pero no siempre: depende de la compacidad y de lo que haya debajo.\n\n## Qué pedirle al estudio de suelos\n\n1. La capacidad admisible a la profundidad de desplante que vas a usar.\n2. El asentamiento esperado y el diferencial admisible.\n3. El nivel freático.\n4. Las recomendaciones de tipo de cimentación.\n\n## La regla\n\nLas dimensiones de la zapata salen del estudio de suelos de ESE terreno. Lo que tengas en la carpeta sirve como punto de partida, nunca como respuesta.\n\n## Para seguir\n\nCon los datos de tu estudio de suelos, la calculadora de zapatas gratuita te da las dimensiones y las verificaciones en un par de minutos: https://funnel.dgdesignmodeling.com/acceso-gratis-calculadora-zapatas-form",
+   "articulo_markdown": "# La misma zapata no se comporta igual en arcilla, arena, limo o grava\n\nCopiar la zapata del proyecto anterior es uno de los errores más comunes en cimentaciones pequeñas. Y uno de los más caros, porque se descubre cuando la estructura ya está construida.\n\nSuele pasar así: la casa es parecida, las luces son parecidas y las cargas también. En la carpeta hay una zapata de 1,50 × 1,50 m que «siempre ha funcionado», y se vuelve a dibujar. Lo único que nadie comparó es lo que no se parece: el suelo. Y una zapata no trabaja sola, trabaja con el terreno que tiene debajo.\n\nEn este artículo vemos qué cambia de un suelo a otro, cuánto puede cambiar el tamaño de la zapata con un ejemplo numérico y qué hay que pedirle al estudio de suelos antes de dimensionar.\n\n## Las dos preguntas que el suelo contesta distinto\n\nToda zapata tiene que pasar dos revisiones que dependen del terreno:\n\n1. **Resistencia:** la presión que la zapata le transmite al suelo no puede superar la capacidad admisible.\n2. **Asentamiento:** lo que se hunde la zapata, y sobre todo lo que se hunde respecto de la zapata vecina, tiene que quedar dentro de lo que la estructura tolera.\n\nUna zapata puede pasar la primera y fallar la segunda. Por eso no alcanza con que «el suelo aguante».\n\n## Qué cambia de un suelo a otro\n\n- **Arcilla:** los asentamientos pueden seguir durante meses o años (consolidación). Una zapata que «pasa» por resistencia puede fallar por asentamiento. Además, la arcilla se hincha con el agua y se contrae al secarse, y ese movimiento se lo lleva la zapata.\n- **Arena:** drena rápido y asienta sobre todo al cargarse. Si está suelta, la capacidad baja y el asentamiento sube; si está saturada y hay sismo, hay que revisar licuación.\n- **Limo:** es sensible al agua. Con humedad cambia mucho su comportamiento, y mojado pierde resistencia.\n- **Grava:** bien compactada suele dar buena capacidad y asentamientos pequeños, pero no siempre: depende de la compacidad y de lo que haya debajo.\n- **Suelo orgánico:** se comprime con el tiempo. Sobre él no se cimenta.\n\nNinguna de estas diferencias se ve en el plano de la zapata. Todas están en el estudio de suelos.\n\n## Un ejemplo con números\n\nSupón una columna que baja 40 t de carga de servicio. Para simplificar, dejamos fuera el peso propio de la zapata y del relleno.\n\n| Capacidad admisible del suelo | Área necesaria | Zapata cuadrada |\n|---|---|---|\n| 2,0 kg/cm² (20 t/m²) | 40 ÷ 20 = 2,0 m² | 1,45 × 1,45 m |\n| 1,5 kg/cm² (15 t/m²) | 40 ÷ 15 = 2,7 m² | 1,65 × 1,65 m |\n| 1,0 kg/cm² (10 t/m²) | 40 ÷ 10 = 4,0 m² | 2,00 × 2,00 m |\n\nLa misma columna, con la misma carga, pide una zapata con el doble de área cuando el suelo admite la mitad.\n\nAhora el error: copias la zapata de 1,45 m a un terreno que admite 1,0 kg/cm². Esa zapata tiene 2,1 m², así que le pasa al suelo 40 ÷ 2,1 = 19 t/m², es decir, 1,9 kg/cm². Casi el doble de lo que el terreno admite, y en el plano se ve igual de bien que en el proyecto anterior.\n\nDos avisos sobre el ejemplo. Las capacidades de la tabla son valores de ejemplo: las de tu terreno salen del estudio de suelos. Y este cálculo solo cubre la resistencia. El asentamiento se revisa aparte, y en una arcilla puede ser lo que mande.\n\n## Qué pedirle al estudio de suelos\n\nAntes de dimensionar, el informe tiene que darte cuatro datos:\n\n1. La capacidad admisible a la profundidad de desplante que vas a usar.\n2. El asentamiento esperado y el diferencial admisible.\n3. El nivel freático.\n4. Las recomendaciones de tipo de cimentación.\n\nEl primer punto tiene trampa. Si el informe da la capacidad a una profundidad y tú vas a desplantar a otra, ese número no es el tuyo: hay que pedirlo para tu profundidad.\n\nY si el estudio recomienda otro tipo de cimentación, esa recomendación pesa más que la costumbre de resolverlo todo con zapatas aisladas.\n\n## La regla\n\nLas dimensiones de la zapata salen del estudio de suelos de ESE terreno. Lo que tengas en la carpeta sirve como punto de partida, nunca como respuesta.\n\nAntes de reutilizar una zapata, hazte tres preguntas:\n\n- ¿La capacidad admisible de este terreno es igual o mayor que la del proyecto anterior?\n- ¿El tipo de suelo es el mismo, o pasaste de arena a arcilla?\n- ¿El nivel freático y la profundidad de desplante son comparables?\n\nSi alguna respuesta es «no» o «no sé», toca recalcular. Son pocos minutos de trabajo frente a una reparación de cimentación con la estructura ya levantada.\n\n## Para seguir\n\nCon los datos de tu estudio de suelos, la calculadora de zapatas gratuita te da las dimensiones y las verificaciones en un par de minutos: https://funnel.dgdesignmodeling.com/acceso-gratis-calculadora-zapatas-form\n\nY si quieres comparar con un colega: ¿en qué suelo cimentaste tu último proyecto, y de dónde salió el tamaño de la zapata?",
    "cta": {
     "web": "Calculadora de zapatas (recurso gratis)"
    },
@@ -17003,7 +17005,8 @@
    "origen": "matriz diciembre 2026 / enero 2027",
    "cta_por_red": {
     "web": "Calculadora de zapatas (recurso gratis)"
-   }
+   },
+   "notas": "Artículo ampliado el 26-nov a partir del texto aprobado y del reel «La misma zapata no se comporta igual…» (oct-suelos-zapata-reel, publicado el 11-nov). No se añadió ningún dato de norma. [verificar con Gabriel] (1) El ejemplo numérico es aritmética con valores ilustrativos: 40 t de servicio, capacidades admisibles de 1,0 / 1,5 / 2,0 kg/cm², sin peso propio de la zapata ni del relleno. (2) Del reel de octubre, que no estaba en el texto corto del blog: la arcilla se hincha con el agua y se contrae al secarse; la arena drena rápido; el limo mojado pierde resistencia; sobre suelo orgánico no se cimenta. (3) La frase «si el informe da la capacidad a una profundidad y vas a desplantar a otra, hay que pedirla para tu profundidad»."
   },
   {
    "id": "dic-blog-cuantia-columnas",
@@ -17026,11 +17029,11 @@
    "eje": "NÚCLEO-BIM",
    "hook": "La cuantía mínima de columnas coincide en el ACI 318-19 y en la NEC. La máxima, no.",
    "seo": {
-    "titulo_seo": "Cuantía mínima y máxima en columnas: ACI 318-19 vs NEC-SE-HM",
+    "titulo_seo": "Cuantía en columnas: 1 % a 8 % del ACI y 3 % de la NEC",
     "slug": "cuantia-columnas-aci-318-nec",
     "meta": "Qué cuantía de acero permite el ACI 318-19 en columnas (1 % a 8 %), qué limita la NEC-SE-HM (3 %) y cómo declararlo en la memoria de cálculo."
    },
-   "articulo_markdown": "# Cuantía de acero en columnas: el 1 % del ACI y el 3 % de la NEC\n\nLa cuantía mínima de columnas coincide en el ACI 318-19 y en la NEC. La máxima, no. Y esa diferencia es una de las razones por las que vuelven memorias de cálculo «con el cálculo bien».\n\n## Lo que dice cada norma\n\n| Elemento | ACI 318-19 | NEC-SE-HM |\n|---|---|---|\n| Columna, mínimo | 1 % (10.6.1.1) | 1 % |\n| Columna, máximo | 8 % (10.6.1.1); 6 % en pórticos especiales (18.7.4.1) | 3 % |\n| Viga, mínimo | el mayor de 0,25√f'c/fy y 1,4/fy (9.6.1.2) | — |\n| Losa, retracción y temperatura | 0,0018 del área bruta (24.4.3.2) | — |\n\n## Por qué importa el máximo\n\nMás acero no es más seguro: complica el vaciado, la vibración y los traslapes. Por eso la NEC es más estricta en columnas.\n\n## Cómo declararlo en la memoria\n\nCada límite que uses va con su norma y su artículo. Si diseñas con el ACI y te revisan con la NEC, el revisor necesita ver qué aplicaste y por qué.\n\n## Para seguir\n\nLa plantilla de memoria de cálculo verificable, gratis: https://funnel.dgdesignmodeling.com/acceso-gratis-memoria-calculo-form",
+   "articulo_markdown": "# Cuantía de acero en columnas: el 1 % del ACI y el 3 % de la NEC\n\nLa cuantía mínima de columnas coincide en el ACI 318-19 y en la NEC. La máxima, no. Y esa diferencia es una de las razones por las que vuelven memorias de cálculo «con el cálculo bien».\n\nEl caso típico: diseñas con un programa configurado con el ACI 318-19, una columna sale con 4 % de acero longitudinal y el programa la da por buena. El revisor aplica la NEC-SE-HM, ve que pasa de 3 % y devuelve la memoria. Nadie se equivocó en una operación. Faltó comprobar el límite de la norma con la que te revisan, y faltó decir en la memoria con cuál diseñaste.\n\n## Qué es la cuantía\n\nLa cuantía longitudinal de una columna es el área de acero dividida entre el área bruta de la sección, y se expresa en porcentaje. Una columna de 40 × 40 cm tiene 1.600 cm² de área bruta: con 16 cm² de acero está en 1 %.\n\nLas normas le ponen un piso y un techo. En el piso, el ACI 318-19 y la NEC-SE-HM dicen lo mismo. En el techo dejan de coincidir, y ahí está el problema.\n\n## Lo que dice cada norma\n\n| Elemento | ACI 318-19 | NEC-SE-HM |\n|---|---|---|\n| Columna, mínimo | 1 % (10.6.1.1) | 1 % |\n| Columna, máximo | 8 % (10.6.1.1); 6 % en pórticos especiales (18.7.4.1) | 3 % |\n| Viga, mínimo | el mayor de 0,25√f'c/fy y 1,4/fy (9.6.1.2) | — |\n| Viga, máximo en pórticos especiales | 2,5 % (18.6.3.1) | — |\n| Losa, retracción y temperatura | 0,0018 del área bruta (24.4.3.2) | — |\n\nEn vigas, con fy = 420 MPa y f'c hasta 31 MPa manda 1,4/fy, que da aproximadamente 0,33 %.\n\nLas filas de vigas y losas están para tener la referencia completa del ACI. La comparación de este artículo es la de columnas: el mínimo coincide y el máximo no.\n\n## Un ejemplo con números\n\nTomemos la misma columna de 40 × 40 cm (1.600 cm² de área bruta):\n\n| Cuantía | Área de acero | ACI 318-19 | NEC-SE-HM |\n|---|---|---|---|\n| 1 % | 16 cm² | Cumple (es el mínimo) | Cumple (es el mínimo) |\n| 3 % | 48 cm² | Cumple | Cumple (es el máximo) |\n| 4 % | 64 cm² | Cumple | No cumple |\n| 6 % | 96 cm² | Cumple (máximo en pórticos especiales) | No cumple |\n| 8 % | 128 cm² | Cumple solo fuera de pórticos especiales (máximo general) | No cumple |\n\nEn varillas se ve más claro. Ocho varillas de 16 mm suman 16,1 cm²: justo el 1 %. Doce varillas de 25 mm suman 58,9 cm², un 3,7 %: dentro del ACI y fuera de la NEC.\n\nEsa segunda columna es la que vuelve. El programa no marcó ningún error porque, para la norma con la que estaba configurado, no lo hay.\n\n## Por qué importa el máximo\n\nMás acero no es más seguro: complica el vaciado, la vibración y los traslapes. Por eso la NEC es más estricta en columnas.\n\nCon 4 % el armado ya cuesta colocarlo y vibrarlo, los traslapes se amontonan donde la columna más trabaja y el nudo con la viga queda muy cargado de acero. Si todas las varillas se traslapan en la misma sección, en ese tramo hay el doble de varillas ocupando el mismo espacio.\n\nCuando la sección pide más acero del permitido, forzar el límite no es la salida. Lo habitual es agrandar la sección, subir la resistencia del hormigón o revisar el modelo antes de aceptar esa demanda.\n\n## Cómo declararlo en la memoria\n\nCada límite que uses va con su norma y su artículo. Si diseñas con el ACI y te revisan con la NEC, el revisor necesita ver qué aplicaste y por qué.\n\nPara las columnas bastan tres líneas:\n\n1. La norma de diseño y la norma con la que se revisa el proyecto.\n2. La cuantía de cada tipo de columna, con su sección y su área de acero.\n3. El límite con el que se compara y el artículo de donde sale.\n\nCuando te devuelven la memoria «con el cálculo bien», casi siempre es esto: no dice con qué norma ni con qué artículo. Si citas 8 % y te revisan con la NEC, el cálculo estaba bien y la memoria vuelve igual.\n\nUn último cuidado: antes de entregar, revisa la versión vigente de la norma que aplica en tu proyecto. Los artículos de este texto corresponden al ACI 318-19 y a la NEC-SE-HM.\n\n## Para seguir\n\nLa plantilla de memoria de cálculo verificable, gratis: https://funnel.dgdesignmodeling.com/acceso-gratis-memoria-calculo-form\n\nEstá armada para que cada número diga de dónde sale: norma, artículo y combinación. Así el revisor no tiene que adivinar.\n\n¿Con qué norma te revisan a ti, ACI o NEC, y con qué cuantía máxima diseñas de verdad?",
    "cta": {
     "web": "Plantilla de memoria de cálculo verificable (recurso gratis)"
    },
@@ -17039,7 +17042,8 @@
    "origen": "matriz diciembre 2026 / enero 2027",
    "cta_por_red": {
     "web": "Plantilla de memoria de cálculo verificable (recurso gratis)"
-   }
+   },
+   "notas": "Artículo ampliado el 26-nov. Los datos de norma se copiaron del texto aprobado y del carrusel dic-cuantia-aci-nec-carrusel (ACI 318-19: 10.6.1.1, 18.7.4.1, 9.6.1.2, 18.6.3.1 y 24.4.3.2; NEC-SE-HM 1 % y 3 %, sin número de artículo; 1,4/fy ≈ 0,33 % con fy = 420 MPa y f'c hasta 31 MPa). Siguen «a confirmar» por Gabriel según la nota de ese carrusel; aquí no se agregó ninguno nuevo. [verificar con Gabriel] lo que no es dato de norma pero sí técnico: (1) el ejemplo de la columna de 40 × 40 cm (1.600 cm²): 8 varillas de 16 mm = 16,1 cm² (1 %) y 12 de 25 mm = 58,9 cm² (3,7 %); (2) «si todas las varillas se traslapan en la misma sección, ahí hay el doble de varillas»; (3) las salidas cuando la sección pide más acero del permitido: agrandar la sección, subir la resistencia del hormigón o revisar el modelo."
   },
   {
    "id": "dic-blog-deflexiones",
@@ -17062,11 +17066,11 @@
    "eje": "NÚCLEO-BIM",
    "hook": "L/360 no es un límite universal. Usarlo para todo sobredimensiona unas piezas y deja cortas otras.",
    "seo": {
-    "titulo_seo": "Límites de deflexión L/360, L/240, L/180: tabla 1604.3 del IBC",
+    "titulo_seo": "Límites de deflexión L/360, L/240 y L/180 según el IBC",
     "slug": "limites-deflexion-l360-l240-l180",
-    "meta": "Qué límite de deflexión le corresponde a entrepisos, cubiertas con y sin cielo raso según el IBC 2021, y el error típico en naves de acero."
+    "meta": "Qué límite de deflexión le toca a entrepisos y cubiertas con o sin cielo raso según el IBC 2021 (tabla 1604.3), y el error típico en naves de acero."
    },
-   "articulo_markdown": "# Deflexiones admisibles: L/360, L/240, L/180 y cuál le toca a cada elemento\n\nL/360 no es un límite universal. Usarlo para todo sobredimensiona unas piezas y deja cortas otras.\n\n## La tabla (IBC 2021, tabla 1604.3)\n\n| Elemento | Carga viva | Carga total |\n|---|---|---|\n| Entrepiso | L/360 | L/240 |\n| Cubierta con cielo raso de yeso o enlucido | L/360 | L/240 |\n| Cubierta con otro cielo raso | L/240 | L/180 |\n| Cubierta sin cielo raso | L/180 | L/120 |\n\n## El error típico en naves\n\nLas correas de una nave sin cielo raso no necesitan L/360. Diseñarlas así encarece la estructura sin ganar nada. Al revés, una viga de entrepiso con L/180 vibra y fisura los acabados.\n\n## En la memoria\n\nDi de dónde sale el límite: IBC, norma local o pliego del cliente. Si no lo dices, el revisor te lo va a preguntar.\n\n## Para seguir\n\nLas 5 verificaciones que hacemos antes de dar por buena una nave de acero, gratis: https://funnel.dgdesignmodeling.com/acceso-gratis-verificacion-acero-form",
+   "articulo_markdown": "# Deflexiones admisibles: L/360, L/240, L/180 y cuál le toca a cada elemento\n\nL/360 no es un límite universal. Usarlo para todo sobredimensiona unas piezas y deja cortas otras.\n\nLa costumbre se entiende: L/360 es el número que todos recordamos, y aplicarlo a todo «por seguridad» parece prudente. En una nave de acero no lo es, porque encarece las correas sin ganar nada. Y la costumbre contraria, relajar el límite donde hay acabados frágiles, termina en fisuras y en reclamos del cliente.\n\nSi usas el mismo límite de deflexión para todo, alguno está mal. Veamos cuál le toca a cada elemento.\n\n## Qué significa L/360\n\nL es la luz del elemento. L/360 quiere decir que la deflexión máxima admisible es la luz dividida entre 360.\n\nEl límite que corresponde depende de dos cosas:\n\n- **Qué elemento es:** un entrepiso o una cubierta, y qué lleva colgado debajo.\n- **Con qué carga se calcula:** solo la carga viva o la carga total.\n\nPor eso la tabla tiene dos columnas. Un mismo elemento tiene un límite para la carga viva y otro, más holgado, para la carga total.\n\n## La tabla (IBC 2021, tabla 1604.3)\n\n| Elemento | Carga viva | Carga total |\n|---|---|---|\n| Entrepiso | L/360 | L/240 |\n| Cubierta con cielo raso de yeso o enlucido | L/360 | L/240 |\n| Cubierta con otro cielo raso | L/240 | L/180 |\n| Cubierta sin cielo raso | L/180 | L/120 |\n\nLa tabla se ordena por el acabado: mientras más frágil es lo que depende del elemento, menos se le permite deformarse. Un cielo raso de yeso se fisura con poco. Una cubierta de nave sin cielo raso no tiene debajo nada que se rompa.\n\n## Un ejemplo con números\n\nPara un elemento de 6 m de luz (6.000 mm):\n\n| Límite | Deflexión admisible |\n|---|---|\n| L/360 | 16,7 mm |\n| L/240 | 25,0 mm |\n| L/180 | 33,3 mm |\n| L/120 | 50,0 mm |\n\nUna correa de nave sin cielo raso, con carga viva, admite 33,3 mm. Si le exiges L/360, la obligas a quedarse en 16,7 mm: la mitad.\n\nEso tiene un costo directo. En una viga con carga uniforme, la deflexión es inversamente proporcional a la inercia de la sección. Con la misma luz y la misma carga, bajar la deflexión a la mitad pide el doble de inercia. Es un perfil más pesado en cada correa, multiplicado por todas las correas de la nave.\n\nEl caso inverso es igual de malo. Una viga de entrepiso de 6 m revisada con L/180 puede deformarse 33,3 mm con carga viva, cuando el límite que le toca es 16,7 mm.\n\n## El error típico en naves\n\nLas correas de una nave sin cielo raso no necesitan L/360. Diseñarlas así encarece la estructura sin ganar nada. Al revés, una viga de entrepiso con L/180 vibra y fisura los acabados.\n\nLos dos errores vienen del mismo hábito: elegir primero el perfil y comprobar después con el límite que uno recuerda. El orden correcto es el contrario. Primero decides qué límite le toca a cada elemento y después revisas el perfil.\n\nUna forma práctica de hacerlo es armar la lista de elementos antes de abrir el programa:\n\n1. Vigas y viguetas de entrepiso.\n2. Vigas y correas de cubierta con cielo raso de yeso o enlucido.\n3. Vigas y correas de cubierta con otro tipo de cielo raso.\n4. Correas de cubierta sin cielo raso.\n\nCada grupo entra al modelo con su límite para carga viva y su límite para carga total.\n\n## En la memoria\n\nDi de dónde sale el límite: IBC, norma local o pliego del cliente. Si no lo dices, el revisor te lo va a preguntar.\n\nBasta una tabla corta con cuatro columnas: elemento, límite con carga viva, límite con carga total y fuente. Con eso el revisor ve qué criterio aplicaste sin tener que reconstruirlo.\n\nUn aviso importante: este artículo usa la tabla 1604.3 del IBC 2021. Si tu proyecto se revisa con otra norma, o el pliego del cliente fija sus propios límites, mandan esos. Confírmalo antes de dimensionar, no al entregar.\n\n## Para seguir\n\nLas 5 verificaciones que hacemos antes de dar por buena una nave de acero, gratis: https://funnel.dgdesignmodeling.com/acceso-gratis-verificacion-acero-form\n\nSon revisiones que el programa no resuelve solo; entre ellas, el pandeo local y la placa base con sus anclajes.\n\n¿Qué límite usas tú para las correas de una nave, y de dónde lo sacaste?",
    "cta": {
     "web": "Guía de las 5 verificaciones (recurso gratis)"
    },
@@ -17075,7 +17079,8 @@
    "origen": "matriz diciembre 2026 / enero 2027",
    "cta_por_red": {
     "web": "Guía de las 5 verificaciones (recurso gratis)"
-   }
+   },
+   "notas": "Artículo ampliado el 26-nov. Los límites se copiaron del texto aprobado y del carrusel dic-deflexiones-l360-carrusel (IBC 2021, tabla 1604.3); no se dice qué exige la NEC. No se agregó ningún dato de norma. [verificar con Gabriel] lo técnico que es nuevo: (1) el ejemplo con L = 6 m (16,7 / 25,0 / 33,3 / 50,0 mm, aritmética); (2) «con la misma luz y la misma carga uniforme, bajar la deflexión a la mitad pide el doble de inercia»; (3) la lectura de la tabla: «mientras más frágil el acabado, menos deformación se permite». OJO: el cierre ya no dice «la de deflexiones está ahí». La guía de las 5 verificaciones del repo (leadmagnets/GUIA-5-VERIFICACIONES-ACERO.md) trata pandeo local, pandeo lateral-torsional, derivas y P-Δ, coherencia modelo-conexión y placa base: no tiene un punto de deflexiones de vigas."
   },
   {
    "id": "ene-blog-honorarios-2027",
@@ -17098,11 +17103,11 @@
    "eje": "NÚCLEO-BIM",
    "hook": "El proyecto que más plata te hizo perder en 2026 probablemente no fue el más difícil. Fue el que cotizaste por m² sin rondas de revisión.",
    "seo": {
-    "titulo_seo": "Cómo cotizar honorarios de cálculo estructural: entregables y revisiones",
+    "titulo_seo": "Cómo cotizar honorarios de cálculo estructural en 2027",
     "slug": "cotizar-honorarios-calculo-estructural",
     "meta": "Cómo armar una propuesta de honorarios de cálculo estructural por entregables, con rondas de revisión incluidas y precio para los cambios."
    },
-   "articulo_markdown": "# Cómo cotizar honorarios de cálculo estructural en 2027 sin regalar las revisiones\n\nEl proyecto que más plata te hizo perder en 2026 probablemente no fue el más difícil. Fue el que cotizaste por m² sin decir cuántas rondas de revisión incluías.\n\n## Tres cosas que tu propuesta tiene que decir\n\n1. **Entregables separados:** cálculo, planos y memoria, cada uno con su alcance.\n2. **Rondas de revisión incluidas:** cuántas, y qué cuenta como revisión.\n3. **Cambios después de aprobado:** cómo se cobran (por hora o por entregable) antes de firmar.\n\n## Por qué el m² solo no alcanza\n\nEl m² sirve para estimar, pero no dice nada del número de cambios. Un cliente que cambia la arquitectura dos veces convierte un proyecto rentable en uno a pérdida.\n\n## Para seguir\n\nEl cotizador de honorarios gratuito te ayuda a separar entregables y ponerle precio a las revisiones: https://funnel.dgdesignmodeling.com/acceso-gratis-cotizador-honorarios-form",
+   "articulo_markdown": "# Cómo cotizar honorarios de cálculo estructural en 2027 sin regalar las revisiones\n\nEl proyecto que más plata te hizo perder en 2026 probablemente no fue el más difícil. Fue el que cotizaste por m² sin decir cuántas rondas de revisión incluías.\n\nLa historia es conocida. Cotizaste por m². El cliente cambió la arquitectura dos veces. Cada cambio fue un recálculo que nadie te pagó. Ganaste el proyecto y perdiste plata en la tercera ronda de revisión.\n\nEl error no estuvo en el cálculo. Estuvo en la cotización, y se puede corregir antes de mandar la primera propuesta de 2027.\n\n## Por qué el m² solo no alcanza\n\nEl m² sirve para estimar, pero no dice nada del número de cambios. Un cliente que cambia la arquitectura dos veces convierte un proyecto rentable en uno a pérdida.\n\nEl precio por m² mide el tamaño del edificio. Tus horas dependen de otras cosas: cuántos entregables te piden, cuántas veces cambia la arquitectura y cuántas observaciones hay que atender. Dos proyectos con los mismos metros pueden costarte el doble de horas uno que el otro.\n\n## Un ejemplo con números\n\nLos números son de ejemplo; pon los tuyos.\n\n- Vivienda de 300 m², cotizada a 5 USD por m²: 1.500 USD.\n- Horas que estimaste para cálculo, planos y memoria: 60. Sale a 25 USD por hora.\n- El cliente cambia la arquitectura dos veces después de aprobada. Cada cambio te cuesta 25 horas entre recálculo, planos y memoria.\n- Horas reales: 110, por los mismos 1.500 USD. Sale a 13,6 USD por hora.\n\nSin tocar el precio por m², tu hora bajó un 45 %. Y como la propuesta no decía nada sobre cambios, no tienes cómo cobrar la diferencia.\n\nCon el mismo proyecto y una propuesta distinta, las 50 horas extra habrían sido dos cambios cotizados aparte, aceptados por el cliente antes de que los hicieras.\n\n## Tres cosas que tu propuesta tiene que decir\n\n1. **Entregables separados:** cálculo, planos y memoria, cada uno con su alcance.\n2. **Rondas de revisión incluidas:** cuántas, y qué cuenta como revisión.\n3. **Cambios después de aprobado:** cómo se cobran (por hora o por entregable) antes de firmar.\n\nVale la pena ver por qué cada una.\n\n**Entregables separados.** Si todo va en un solo precio, cualquier cambio parece pequeño. Con el cálculo, los planos y la memoria por separado, queda claro qué se toca en cada cambio y cuánto cuesta rehacerlo.\n\n**Rondas incluidas.** Atender una observación sobre tu propio trabajo es parte del servicio. Rehacer el cálculo porque cambió la arquitectura es trabajo nuevo. Si la propuesta no distingue las dos cosas, el cliente tampoco lo hará.\n\n**Cambios después de aprobado.** El precio de la ronda siguiente se acuerda antes de firmar, cuando todavía se está conversando el alcance. Ponerlo sobre la mesa a mitad del proyecto, con la entrega encima, casi siempre termina en hacerlo gratis.\n\n## Cómo queda escrito\n\nNo hace falta un contrato largo. Bastan tres frases en la propuesta, con los números que tú decidas:\n\n- «El servicio incluye tres entregables: cálculo estructural, planos estructurales y memoria de cálculo.»\n- «Cada entregable incluye las rondas de revisión indicadas en esta propuesta. Las rondas adicionales se cotizan aparte.»\n- «Los cambios de arquitectura posteriores a la aprobación del diseño se cotizan por hora o por entregable antes de ejecutarlos.»\n\nY una sección corta con lo que no incluye: lo que no está escrito en tu propuesta te lo piden gratis.\n\n## Antes de mandar la próxima propuesta\n\nRevisa estas cinco preguntas:\n\n1. ¿Sabes cuántas horas te va a tomar, además de cuántos m² tiene?\n2. ¿Dice cuántas rondas de revisión incluye cada entregable?\n3. ¿Separa el cálculo de los planos y los planos de la memoria?\n4. ¿Tiene precio para un cambio de arquitectura después de aprobado?\n5. ¿Dice qué no incluye?\n\nSi alguna respuesta es «no», el precio por m² está cubriendo un riesgo que no has medido.\n\n## Para seguir\n\nEl cotizador de honorarios gratuito te ayuda a separar entregables y ponerle precio a las revisiones: https://funnel.dgdesignmodeling.com/acceso-gratis-cotizador-honorarios-form\n\nTambién te muestra cuánto cobras de verdad por hora cuando cotizas por m². No da precios de mercado ni reemplaza a tu contador: trabaja con tus números.\n\n¿Cuántas rondas de revisión incluyes tú hoy: 0, 1, 2 o «las que pidan»?",
    "cta": {
     "web": "Cotizador de honorarios (recurso gratis)"
    },
@@ -17111,7 +17116,8 @@
    "origen": "matriz diciembre 2026 / enero 2027",
    "cta_por_red": {
     "web": "Cotizador de honorarios (recurso gratis)"
-   }
+   },
+   "notas": "Artículo ampliado el 26-nov a partir del texto aprobado y del carrusel dic-honorarios-revisiones-carrusel. Sin datos de norma. El ejemplo (300 m² a 5 USD/m², 60 horas estimadas, 2 cambios de 25 horas) es ilustrativo y el artículo lo dice; no son precios de mercado (regla del brief del cotizador). Las tres frases modelo de la propuesta son criterio de la casa y no fijan un número de rondas: Gabriel las confirma o las cambia. Lo que se dice del cotizador sale de BRIEF-COTIZADOR-HONORARIOS.md (muestra cuánto se cobra por hora al cotizar por m²; no da precios de mercado ni reemplaza al contador)."
   },
   {
    "id": "dic-correo-1202-zapata",
@@ -17258,7 +17264,7 @@
    "cuerpo": [
     "Antes de cerrar el año, tres revisiones rápidas a tu modelo:",
     "1 · Niveles duplicados: en el workshop, la IA encontró 3 niveles a la misma altura en un modelo real.\n2 · Parámetros vacíos en los elementos que se van a cuantificar.\n3 · Que los niveles de arquitectura y de estructura digan qué miden (piso terminado o losa).",
-    "El video largo con el caso de los niveles sale el 29 en nuestro YouTube.",
+    "El video largo con el caso de los niveles sale hoy en nuestro YouTube.",
     "Si quieres saber en qué nivel BIM cierras el año, el test toma 5 minutos:",
     "Botón: Hacer el test → https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form",
     "Felices fiestas de parte de todo el equipo de Design Modeling Academy."
@@ -19650,6 +19656,100 @@
    "cta_por_red": {
     "linkedin": "Pregunta abierta al cierre. Enlace de compra en el primer comentario: https://funnel.dgdesignmodeling.com/promo-navidad-descuentos-cursos"
    }
+  },
+  {
+   "id": "dic-li-1201-workshop-ia-revit",
+   "grupo": "GRUPO 4 · LinkedIn",
+   "formato": "linkedin",
+   "formato_detalle": "LINKEDIN · Página Design Modeling Academy · Multi-imagen (4 capturas reales del workshop: el modelo en Revit, la respuesta de ChatGPT, el filtro de Revit y el aviso de los 3 niveles)",
+   "redes": [
+    "linkedin"
+   ],
+   "red_principal": "linkedin",
+   "cuenta": "Design Modeling Academy",
+   "fecha": "2026-12-01T15:00:00Z",
+   "fecha_iso": "2026-12-01",
+   "fecha_etiqueta": "Mar 1 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 1 (1-6 dic)",
+   "tipo": "linkedin",
+   "estado": "TEXTO CORREGIDO · para aprobar (página de aprobación, 26-nov)",
+   "titulo": "Evento: la IA dijo 1.880 muros y Revit contó 1.859 (workshop del 17-nov)",
+   "eje": "NÚCLEO-IA",
+   "hook": "La IA dijo 1.880 muros. El filtro de Revit contó 1.859.",
+   "copy": "La IA dijo 1.880 muros. El filtro de Revit contó 1.859.\n\nPasó en vivo el 17 de noviembre, en el workshop «IA conectada a Revit» de Design Modeling Academy.\n\nEl Ing. Gabriel Pantoja conectó dos asistentes a un modelo real de Revit: ChatGPT, con un servidor MCP de código abierto sobre pyRevit, y Claude, con NonicaTab AI Connector. Después les hizo las preguntas que normalmente obligan a abrir tablas o a exportar a Excel: cuántos muros, cuántas puertas y qué niveles tiene el modelo.\n\nLa respuesta llegó en segundos: 1.880 muros y 75 puertas. El paso siguiente fue comprobarla en Revit con un filtro. Las puertas coincidieron. Los muros no: Revit contó 1.859.\n\nPara nosotros fue el momento más útil de la sesión. Una diferencia de 21 muros pasa desapercibida en una conversación y aparece después en la tabla de cantidades.\n\nHubo un segundo hallazgo. Al pedirle un resumen del modelo, Claude avisó de 3 niveles a la misma altura, 8,70 m. Puede ser intencional, pero es una duplicación que no se ve a simple vista.\n\nLa idea con la que cerramos: la IA lee el modelo, y el criterio lo pone el BIM Manager. Preguntar toma segundos. Decidir qué número se entrega sigue siendo trabajo de quien firma.\n\nGracias a las más de 100 personas que se registraron y a todas las que se conectaron ese día.\n\nSi tuvieras que revisar un modelo antes de una entrega, ¿qué le preguntarías primero a la IA y qué no le dejarías revisar sola?",
+   "cta": {
+    "linkedin": "Pregunta abierta al cierre. Sin palabra clave; el enlace va en el primer comentario."
+   },
+   "notas_produccion": "Publicación nueva · publica Daniela en la página de Design Modeling Academy. Sin hashtags y sin «comenta la palabra». FUENTES: Hechos del workshop dados por Dayana (26-nov) y ya usados en las fichas yt6 y s1: ChatGPT con servidor MCP de código abierto sobre pyRevit, Claude con NonicaTab AI Connector, 1.880 muros y 75 puertas según la IA, 1.859 muros según el filtro de Revit, 3 niveles a 8,70 m. «Más de 100 personas que se registraron»: 114 registros en el CRM (cierres/2026-11.json, organico.workshop_17_nov). El número de asistentes en vivo no está en el repo (s/d): por eso no se dice cuántos se conectaron ni por qué canales. No hay enlace a la grabación: el primer comentario lleva el test de nivel BIM.",
+   "origen": "investigación de LinkedIn (página de aprobación) · texto completado el 26-nov-2026, sin huecos",
+   "cta_por_red": {
+    "linkedin": "Pregunta abierta al cierre. Sin palabra clave; el enlace va en el primer comentario."
+   },
+   "primer_comentario": "¿En qué nivel BIM estás hoy? El test es gratuito y toma 5 minutos: https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form"
+  },
+  {
+   "id": "dic-li-1217-egresado",
+   "grupo": "GRUPO 4 · LinkedIn",
+   "formato": "linkedin",
+   "formato_detalle": "LINKEDIN · Perfil personal de Gabriel Pantoja (y la página de Design Modeling Academy comenta, no comparte) · Imagen del testimonio de Albino Piñeiro o clip de 39 s de su ceremonia de certificación",
+   "redes": [
+    "linkedin"
+   ],
+   "red_principal": "linkedin",
+   "cuenta": "Perfil personal de Gabriel Pantoja",
+   "fecha": "2026-12-17T15:00:00Z",
+   "fecha_iso": "2026-12-17",
+   "fecha_etiqueta": "Jue 17 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 3 (14-20 dic)",
+   "tipo": "linkedin",
+   "estado": "TEXTO CORREGIDO · para aprobar (página de aprobación, 26-nov)",
+   "titulo": "Logro de alumno: Albino Piñeiro, egresado del Diplomado BIM y del Máster",
+   "eje": "NÚCLEO-BIM",
+   "hook": "«Eso te da seguridad, te da fortaleza y te da esa nueva visión.»",
+   "copy": "«Eso te da seguridad, te da fortaleza y te da esa nueva visión.»\n\nLo dijo Albino Piñeiro en su ceremonia de certificación. Se lo decía a quien todavía duda si tomar o no el programa.\n\nAlbino es egresado del Diplomado BIM y del Máster de Design Modeling Academy. Recorrió las dos etapas, y por eso su respuesta me importa más que cualquier cosa que yo pueda decir del programa.\n\nMe quedo con las tres palabras que eligió: seguridad, fortaleza y visión. Ninguna es el nombre de un software.\n\nCoincide con lo que intentamos enseñar: que el alumno salga sabiendo defender su número, no solo calcularlo. Las herramientas cambian con cada versión. Poder explicar por qué tomaste una decisión delante de un cliente o de un revisor es lo que se queda.\n\nAlbino, gracias por la constancia y por decirlo con tus palabras.\n\nA quienes terminaron un programa técnico mientras trabajaban: ¿qué fue lo más difícil de sostener y qué te ayudó a no abandonar?",
+   "cta": {
+    "linkedin": "Pregunta abierta al cierre. Sin palabra clave; el enlace va en el primer comentario."
+   },
+   "notas_produccion": "Publicación nueva · publica Gabriel en su perfil y etiqueta a Albino Piñeiro; la página de Design Modeling Academy comenta, no comparte. Sin enlace en el cuerpo. La cita es literal, del clip de su ceremonia de certificación (minuto 21:27 a 22:05 de la grabación). No se le atribuye cargo, empresa ni resultados. FUENTES: Dayana confirmó el 26-nov que el egresado es Albino Piñeiro y que es egresado del Diplomado BIM y también del Máster. Cita literal del clip de su ceremonia de certificación (ficha ene-testimonio-master-post, video del minuto 21:27 a 22:05). No se usa cargo ni país: en el repo solo aparece como dato por defecto de la plantilla de landing de eventos, sin confirmar.",
+   "origen": "investigación de LinkedIn (página de aprobación) · texto completado el 26-nov-2026, sin huecos",
+   "cta_por_red": {
+    "linkedin": "Pregunta abierta al cierre. Sin palabra clave; el enlace va en el primer comentario."
+   },
+   "pendiente_arte": "Egresado confirmado por Dayana (26-nov): Albino Piñeiro. Ya están la imagen de su testimonio y el clip de 39 s de su ceremonia. Falta subtitular el clip y tener su autorización para publicarlo y etiquetarlo."
+  },
+  {
+   "id": "dic-li-1229-cierre-2026",
+   "grupo": "GRUPO 4 · LinkedIn",
+   "formato": "linkedin",
+   "formato_detalle": "LINKEDIN · Página Design Modeling Academy · Multi-imagen (3-4 fotos reales del año: workshop del 17-nov, una sesión en vivo, egresados",
+   "redes": [
+    "linkedin"
+   ],
+   "red_principal": "linkedin",
+   "cuenta": "Design Modeling Academy",
+   "fecha": "2026-12-29T15:00:00Z",
+   "fecha_iso": "2026-12-29",
+   "fecha_etiqueta": "Mar 29 dic",
+   "hora_ecuador": "10:00",
+   "semana": "Semana 5 (28 dic-3 ene) · fiestas",
+   "tipo": "linkedin",
+   "estado": "TEXTO CORREGIDO · para aprobar (página de aprobación, 26-nov)",
+   "titulo": "Cierre de año: 2026 en Design Modeling Academy, y la pregunta para 2027",
+   "eje": "NÚCLEO-BIM",
+   "hook": "2026 en Design Modeling Academy, contado sin adornos.",
+   "copy": "2026 en Design Modeling Academy, contado sin adornos.\n\nPublicamos recursos gratuitos para el trabajo de todos los días: una calculadora de zapatas, un test de nivel BIM, una plantilla de memoria de cálculo, una guía con cinco verificaciones para estructuras de acero y un cotizador de honorarios.\n\nSumamos un tutor de IA a la Especialización en Acero, entrenado con las clases del programa.\n\nEl 17 de noviembre hicimos el workshop «IA conectada a Revit». El Ing. Gabriel Pantoja conectó ChatGPT y Claude a un modelo real y comprobó las respuestas en Revit: la IA contó 1.880 muros y el filtro de Revit, 1.859.\n\nPreparamos la cohorte de febrero de 2027 del Máster en BIM Management e IA, que ahora se cursa por bloques.\n\nY cerramos el año con un campus nuevo, que se usa desde la computadora o desde la aplicación para Android.\n\nLo que más nos enseñó el año: la conversación aparece cuando hablamos de un problema técnico concreto. Una publicación sobre la simbología de niveles en planos pasó de 600 comentarios. Otra, sobre una zapata que no se comporta igual en arcilla que en grava, pasó de 80. Las que solo anunciaban el workshop no pasaron de 5.\n\nGracias a cada alumno, egresado y colega que preguntó, corrigió y discutió con nosotros este año.\n\nPara 2027, ¿qué tarea técnica quieres dejar de hacer a mano?",
+   "cta": {
+    "linkedin": "Pregunta abierta al cierre. Sin palabra clave; el enlace va en el primer comentario."
+   },
+   "notas_produccion": "Reemplaza a: dic-li-1229-coordinacion · publica Daniela en la página de Design Modeling Academy. Sin hashtags, sin «comenta NIVEL» y sin cifras de ingresos ni de ventas. FUENTES: Hitos comprobados en el repo: calculadora de zapatas (BRIEF-CALCULADORA-ZAPATAS.md, julio 2026), test de nivel BIM (BRIEF-TEST-NIVEL-BIM.md, 2-ago-2026), guía de verificaciones en acero (leadmagnets/GUIA-5-VERIFICACIONES-ACERO.md, 25-ago-2026), plantilla de memoria de cálculo (BRIEF-LEADMAGNETS-SEPTIEMBRE.md) y cotizador de honorarios (BRIEF-COTIZADOR-HONORARIOS.md, 30-sep-2026); tutor de IA de Acero (copy de pauta de noviembre y diciembre); workshop del 17-nov (fichas yt6 y s1); Máster por bloques con cohorte en febrero de 2027 y campus nuevo con aplicación para Android (calendario-diciembre.json, plan de Navidad de Dayana del 25-nov). Comentarios: matriz.json al 26-nov, Instagram (simbología de niveles 603; zapata en distintos suelos 87) y cierres/2026-11.json (piezas del workshop en el feed: entre 0 y 5). Se quitó «más de 100 personas se conectaron por Zoom, YouTube, Facebook y LinkedIn»: la asistencia en vivo no está en el repo (s/d).",
+   "origen": "investigación de LinkedIn (página de aprobación) · texto completado el 26-nov-2026, sin huecos",
+   "cta_por_red": {
+    "linkedin": "Pregunta abierta al cierre. Sin palabra clave; el enlace va en el primer comentario."
+   },
+   "primer_comentario": "Los recursos gratuitos de este año, por si te perdiste alguno:\nCalculadora de zapatas: https://funnel.dgdesignmodeling.com/acceso-gratis-calculadora-zapatas-form\nTest de nivel BIM: https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form\nPlantilla de memoria de cálculo: https://funnel.dgdesignmodeling.com/acceso-gratis-memoria-calculo-form\nVerificaciones en acero: https://funnel.dgdesignmodeling.com/acceso-gratis-verificacion-acero-form\nCotizador de honorarios: https://funnel.dgdesignmodeling.com/acceso-gratis-cotizador-honorarios-form",
+   "reemplaza_a": "dic-li-1229-coordinacion"
   }
  ],
  "historias_rutina": {

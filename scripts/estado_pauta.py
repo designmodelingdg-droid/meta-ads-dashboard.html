@@ -30,9 +30,11 @@ def usd(c):
 
 
 camps = todo(f"{CUENTA}/campaigns",
-             fields="id,name,effective_status,daily_budget,lifetime_budget,updated_time")
+             fields="id,name,effective_status,daily_budget,lifetime_budget,updated_time,"
+                    "start_time,stop_time")
 sets = todo(f"{CUENTA}/adsets",
-            fields="id,name,campaign_id,effective_status,daily_budget,updated_time,"
+            fields="id,name,campaign_id,effective_status,daily_budget,lifetime_budget,updated_time,"
+                   "start_time,end_time,"
                    "targeting{geo_locations{countries}}")
 ads = todo(f"{CUENTA}/ads",
            fields="id,name,adset_id,campaign_id,effective_status,created_time,updated_time,"
@@ -41,12 +43,15 @@ ads = todo(f"{CUENTA}/ads",
 out = {"campanas": [], "conjuntos": [], "anuncios": []}
 for c in camps:
     out["campanas"].append({"id": c["id"], "nombre": c["name"], "estado": c.get("effective_status"),
-                            "diario": usd(c.get("daily_budget")), "actualizado": c.get("updated_time")})
+                            "diario": usd(c.get("daily_budget")), "actualizado": c.get("updated_time"),
+                            "inicio": c.get("start_time"), "fin": c.get("stop_time")})
 for s in sets:
     out["conjuntos"].append({"id": s["id"], "nombre": s["name"], "campana": s.get("campaign_id"),
                              "estado": s.get("effective_status"), "diario": usd(s.get("daily_budget")),
                              "paises": ((s.get("targeting") or {}).get("geo_locations") or {}).get("countries"),
-                             "actualizado": s.get("updated_time")})
+                             "actualizado": s.get("updated_time"),
+                             "total": usd(s.get("lifetime_budget")),
+                             "inicio": s.get("start_time"), "fin": s.get("end_time")})
 for a in ads:
     cr = a.get("creative") or {}
     ld = ((cr.get("object_story_spec") or {}).get("link_data") or {})
@@ -62,4 +67,16 @@ for tipo, filas in out.items():
     for f in filas:
         if f["estado"] in VIVOS:
             print("FILA", json.dumps({"tipo": tipo, **f}, ensure_ascii=False))
+# Entrega de HOY por conjunto (día sin cerrar: sirve para saber si algo está
+# saliendo ahora mismo, no para reportar gasto).
+try:
+    hoy = todo(f"{CUENTA}/insights", level="adset", date_preset="today",
+               fields="campaign_name,adset_name,adset_id,spend,impressions")
+    for h in hoy:
+        print("HOY", json.dumps({"campana": h.get("campaign_name"), "conjunto": h.get("adset_name"),
+                                 "id": h.get("adset_id"), "gasto": h.get("spend"),
+                                 "impresiones": h.get("impressions")}, ensure_ascii=False))
+    print("FIN_HOY", len(hoy))
+except Exception as e:  # la foto de estado vale aunque esto falle
+    print("AVISO: no se pudo leer la entrega de hoy:", type(e).__name__)
 print("FIN_ESTADO", {k: len(v) for k, v in out.items()})
