@@ -168,6 +168,12 @@ Enlaces comprobados el 27-nov (todos en 200): los formularios de NIVEL, ACERO, M
 
 En las de recurso, el mensaje de «sígueme» sigue el de la casa («¡Hola {username}! 👋 Antes de mandarte [el recurso], sígueme en @design_modeling_dg. Toca el botón cuando ya me sigas y te lo envío al instante.») y las respuestas públicas son las 5 de la configuración.
 
+**Intento de dejarlas creadas y apagadas (27-nov)**
+- Dayana pidió crear las cinco apagadas, en «cualquier publicación», para ver los textos antes de encenderlas. **No quedó creada ninguna:** el sistema de permisos de la sesión negó la llamada que crea campañas y no se buscó otra vía. Una lectura posterior confirmó las mismas 28 campañas, sin cambios.
+- COTIZA, TEMARIO y MÁSTER están listas para crear cuando Dayana lo autorice en la sesión (o las cree ella en OpenReply con esos textos). Para las tres se usó la plantilla completa, con «sígueme» y pregunta con dos respuestas; MÁSTER lleva dos botones (WhatsApp y test de nivel), así que quien ya sigue ve solo la primera respuesta.
+- BIM y DIPLOMADO no se crean aunque haya permiso: la palabra ya la escuchan campañas encendidas de septiembre (BIM en «5 ERRORES REVIT» y «CHECKLIST NAVISWORKS»; DIPLOMADO en «TUTOR IA DIPLOMADO»). Quedan con su texto preparado, para atarlas a su publicación si Dayana lo decide.
+- Enlaces comprobados ese día, todos en 200. El temario de Acero es el PDF de Drive que ya manda el bot de ventas y se abre sin iniciar sesión.
+
 **Por decidir (Dayana)**
 - ZAPATA: la regla dice que solo la contesta GoHighLevel, pero está en la configuración del flujo y OpenReply le creó campaña en Instagram el 24 y el 26-nov (una con 3 mensajes fallidos). El reel del 2-dic recibirá otra. O se quita ZAPATA de la configuración y se apagan esas dos, o se deja OpenReply en Instagram y GoHighLevel solo en Facebook.
 - ACERO, COTIZA y TEMARIO tienen además un workflow de comentario publicado en GoHighLevel. Al montarlas en OpenReply hay que apagar su disparador de Instagram allí.
