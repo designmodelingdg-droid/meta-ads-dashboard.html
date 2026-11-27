@@ -145,18 +145,18 @@ El detalle paso a paso está en `.claude/agents/programador-dma.md` y los script
 | NIVEL | 1-dic | 1-dic | OpenReply | Por publicación, la crea el flujo | En la configuración del flujo |
 | ZAPATA | 2-dic | 2-dic | GoHighLevel | No se monta en OpenReply | Ver «Por decidir»: OpenReply también le está creando campaña |
 | ACERO | 3-dic | 14-dic | OpenReply | Por publicación, la crea el flujo | En la configuración del flujo |
-| TEMARIO | 4-dic (como segunda llamada, desde el 3-dic) | 3-dic (la contesta una persona) | OpenReply | Una campaña para todo el mes; encender el 2-dic | No existe. Borrador abajo |
+| TEMARIO | 4-dic (como segunda llamada, desde el 3-dic) | 3-dic (la contesta una persona) | OpenReply | Una campaña para todo el mes; encender el 2-dic | Creada y apagada el 27-nov, con el visto bueno de Dayana al texto |
 | MEMORIA | 5-dic | 7-dic | OpenReply | Por publicación, la crea el flujo | En la configuración del flujo |
 | NAVIDAD | 7-dic | — | OpenReply en Instagram, GoHighLevel en las demás | Una campaña para todo el mes | Creada y apagada. Solo se enciende con la landing lista: el 27-nov daba 404. Hay una tarea para el 4-dic |
-| MÁSTER | 17-dic (como segunda llamada, desde el 1-dic) | 10-dic (la contesta una persona) | OpenReply | Una campaña para todo el mes; encender el 30-nov | No existe. Borrador abajo |
-| COTIZA | 13-dic | 11-dic | OpenReply | Por publicación; añadirla a la configuración del flujo | No está en la configuración. Borrador abajo |
+| MÁSTER | 17-dic (como segunda llamada, desde el 1-dic) | 10-dic (la contesta una persona) | OpenReply | Una campaña para todo el mes; encender el 30-nov | Creada y apagada el 27-nov, con el visto bueno de Dayana al texto |
+| COTIZA | 13-dic | 11-dic | OpenReply | Una campaña para todo el mes («cualquier publicación»); encender el 12-dic | Creada y apagada el 27-nov, con el visto bueno de Dayana al texto |
 | ESTRUCTURAS | — | 17-dic | Sin automatización asignada | Pendiente de decidir (la matriz dice «la contesta una persona») | — |
 | BIM | 26-dic | 21-dic | OpenReply | Por publicación, por la API, el día que salga | No puede ir en la configuración (ver lecciones). Borrador abajo |
 | DIPLOMADO | 2-ene | 4-ene | OpenReply | Por publicación; añadirla a la configuración del flujo | No está en la configuración. Borrador abajo |
 
 Enlaces comprobados el 27-nov (todos en 200): los formularios de NIVEL, ACERO, MEMORIA, COTIZA, BIM, DIPLOMADO y ZAPATA, el temario de Acero en Drive y el WhatsApp de ventas. La landing de Navidad, 404.
 
-**Borradores de las campañas que faltan** (misma plantilla que las últimas; falta el «sí» de Dayana a los textos)
+**Borradores de las campañas** (primera versión; COTIZA, TEMARIO y MÁSTER se crearon con el texto final que aprobó Dayana el 27-nov, ver abajo; BIM y DIPLOMADO siguen sin crear)
 
 | Palabra | Enlace (el del bloque `embudo` de la matriz) | Botón | Mensaje directo | Pregunta y respuestas tocables |
 |---|---|---|---|---|
@@ -168,10 +168,19 @@ Enlaces comprobados el 27-nov (todos en 200): los formularios de NIVEL, ACERO, M
 
 En las de recurso, el mensaje de «sígueme» sigue el de la casa («¡Hola {username}! 👋 Antes de mandarte [el recurso], sígueme en @design_modeling_dg. Toca el botón cuando ya me sigas y te lo envío al instante.») y las respuestas públicas son las 5 de la configuración.
 
-**Intento de dejarlas creadas y apagadas (27-nov)**
-- Dayana pidió crear las cinco apagadas, en «cualquier publicación», para ver los textos antes de encenderlas. **No quedó creada ninguna:** el sistema de permisos de la sesión negó la llamada que crea campañas y no se buscó otra vía. Una lectura posterior confirmó las mismas 28 campañas, sin cambios.
-- COTIZA, TEMARIO y MÁSTER están listas para crear cuando Dayana lo autorice en la sesión (o las cree ella en OpenReply con esos textos). Para las tres se usó la plantilla completa, con «sígueme» y pregunta con dos respuestas; MÁSTER lleva dos botones (WhatsApp y test de nivel), así que quien ya sigue ve solo la primera respuesta.
-- BIM y DIPLOMADO no se crean aunque haya permiso: la palabra ya la escuchan campañas encendidas de septiembre (BIM en «5 ERRORES REVIT» y «CHECKLIST NAVISWORKS»; DIPLOMADO en «TUTOR IA DIPLOMADO»). Quedan con su texto preparado, para atarlas a su publicación si Dayana lo decide.
+**Campañas nuevas creadas y apagadas (27-nov)**
+- Primer intento: el sistema de permisos de la sesión negó la llamada al agente y no se buscó otra vía. Se le contó a Dayana y ella confirmó en el chat: «Te confirmo que tú las crees» y «los textos están bien». Con esa confirmación se crearon desde la sesión principal.
+- Quedaron tres, apagadas, en «cualquier publicación», con la plantilla completa (exigir seguir, pregunta con dos respuestas, 5 respuestas públicas), sin precios y sin la certificación Autodesk:
+
+| Palabra | Campaña en OpenReply | Visto bueno de Dayana al texto | Se enciende |
+|---|---|---|---|
+| MÁSTER (y MASTER) | «MÁSTER · Máster por bloques, agendar (dic-2026)» | Sí, 27-nov | 30-nov |
+| TEMARIO | «TEMARIO · Especialización en Acero (dic-2026)» | Sí, 27-nov | 2-dic |
+| COTIZA (y COTISA) | «COTIZA · Cotizador de honorarios (dic-2026)» | Sí, 27-nov | 12-dic |
+
+- MÁSTER lleva dos botones por decisión de Dayana («deja solo 2 botones»): «Agendar por WhatsApp» y «Hacer el test». Con dos botones, quien ya sigue la cuenta ve solo la primera de las dos respuestas tocables.
+- Comprobado después de crear: OpenReply pasó de 28 a 31 campañas, las tres nuevas apagadas y ninguna de las anteriores cambió.
+- BIM y DIPLOMADO no se crearon: la palabra ya la escuchan campañas encendidas de septiembre (BIM en «5 ERRORES REVIT» y «CHECKLIST NAVISWORKS»; DIPLOMADO en «TUTOR IA DIPLOMADO»). Quedan con su texto preparado, para atarlas a su publicación si Dayana lo decide. La tarea diaria no las enciende.
 - Enlaces comprobados ese día, todos en 200. El temario de Acero es el PDF de Drive que ya manda el bot de ventas y se abre sin iniciar sesión.
 
 **Por decidir (Dayana)**
