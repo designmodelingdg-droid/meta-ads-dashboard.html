@@ -26,7 +26,7 @@ if not os.path.exists(cues_f):
     M=WhisperModel('small',compute_type='int8',cpu_threads=os.cpu_count())
     subprocess.run(['ffmpeg','-v','error','-y','-i',mid,'-ac','1','-ar','16000','tmpB/a.wav'],check=True)
     wf=wave.open('tmpB/a.wav');au=np.frombuffer(wf.readframes(wf.getnframes()),np.int16).astype(np.float32)/32768
-    sg,_=M.transcribe(au,language='es',word_timestamps=True,initial_prompt='Revit Structure, BIM, metodología BIM, AutoCAD, Robot Structural Analysis, Advance Steel, zapatas, columnas, vigas, ejes, niveles, hormigón armado, acero estructural, muros, puertas, ventanas, cubiertas, suelos, techos, familias, tablas de planificación, armaduras.')
+    sg,_=M.transcribe(au,language='es',word_timestamps=True,initial_prompt=CU.get('prompt') or 'Revit Structure, BIM, metodología BIM, AutoCAD, Robot Structural Analysis, Advance Steel, zapatas, columnas, vigas, ejes, niveles, hormigón armado, acero estructural, muros, puertas, ventanas, cubiertas, suelos, techos, familias, tablas de planificación, armaduras.')
     W=[(w.word.strip(),w.start,w.end) for s in sg for w in s.words if w.word.strip()]
     cues=[];cur=[]
     for w in W:
@@ -38,6 +38,8 @@ if not os.path.exists(cues_f):
     if cur: cues.append([cur[0][1],cur[-1][2]+0.15,' '.join(x[0] for x in cur)])
     json.dump(cues,open(cues_f,'w'),ensure_ascii=False)
 cues=json.load(open(cues_f))
+for _pat,_rep in CU.get('fix',[]):
+    cues=[[a,b,re.sub(_pat,_rep,t)] for a,b,t in cues]
 # 3) seguimiento del cursor
 # elegir la plantilla de cursor que mejor encaja con esta grabación
 _cap=cv2.VideoCapture(mid);_N=int(_cap.get(7));best=None

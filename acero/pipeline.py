@@ -28,7 +28,7 @@ subprocess.run(f'cp {AQ}/portadas/* {W}/portadas/ && cp {AQ}/fonts/* {W}/fonts/ 
 L = {l['n']: l for l in P['lecciones']}
 sel = [n for n in rango(ARG) if n in L]
 links = {}
-cu = {'curso': P['curso'], 'modulos': P['modulos'], 'lecciones': []}; ref = {}; mute = {}
+cu = {'curso': P['curso'], 'modulos': P['modulos'], 'lecciones': [], **{k: P[k] for k in ('fix', 'prompt') if k in P}}; ref = {}; mute = {}
 for n in sel:
     l = L[n]; segs = []
     for k, (vid, a, b) in enumerate(l['segs']):

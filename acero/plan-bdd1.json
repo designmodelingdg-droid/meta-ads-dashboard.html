@@ -1,0 +1,952 @@
+{
+ "curso": "BIM Data Dashboard (Revit + Power BI + IA)",
+ "modulos": [
+  "BIM Data Dashboard (Revit + Power BI + IA)"
+ ],
+ "lecciones": [
+  {
+   "n": 1,
+   "mod": 1,
+   "t": "Objetivo del curso: el flujo de datos de Revit a Power BI",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 1 · Presentación del curso",
+   "segs": [
+    [
+     "1200603382",
+     121.47,
+     385.89
+    ]
+   ],
+   "dur": 267.4
+  },
+  {
+   "n": 2,
+   "mod": 1,
+   "t": "Qué datos sirven: tablas de planificación y exportación",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 1 · Presentación del curso",
+   "segs": [
+    [
+     "1200603382",
+     416.48,
+     888.29
+    ]
+   ],
+   "dur": 474.8
+  },
+  {
+   "n": 3,
+   "mod": 1,
+   "t": "Dashboards y toma de decisiones en proyectos BIM",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 1 · Presentación del curso",
+   "segs": [
+    [
+     "1200603382",
+     920.97,
+     1241.99
+    ]
+   ],
+   "dur": 324.0,
+   "mute": [
+    [
+     0,
+     152.1,
+     152.56
+    ],
+    [
+     0,
+     176.93,
+     177.55
+    ]
+   ]
+  },
+  {
+   "n": 4,
+   "mod": 1,
+   "t": "El valor de BIM está en la información",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 2 · Fundamentos de BIM Data",
+   "segs": [
+    [
+     "1200598731",
+     76.25,
+     319.28
+    ]
+   ],
+   "dur": 246.0
+  },
+  {
+   "n": 5,
+   "mod": 1,
+   "t": "Dónde viven los datos en Revit: parámetros y categorías",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 2 · Fundamentos de BIM Data",
+   "segs": [
+    [
+     "1200598731",
+     319.3,
+     584.25
+    ]
+   ],
+   "dur": 267.9
+  },
+  {
+   "n": 6,
+   "mod": 1,
+   "t": "Schedules: el modelo como base de datos",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 3 · Extracción de datos desde Revit",
+   "segs": [
+    [
+     "1200599017",
+     54.22,
+     165.66
+    ],
+    [
+     "1200599017",
+     205.96,
+     383.9
+    ]
+   ],
+   "dur": 292.4
+  },
+  {
+   "n": 7,
+   "mod": 1,
+   "t": "Materiales y primera tabla de cantidades estructural",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 4 · Tablas de cantidades estructurales I",
+   "segs": [
+    [
+     "1200599752",
+     40.77,
+     343.55
+    ]
+   ],
+   "dur": 305.8
+  },
+  {
+   "n": 8,
+   "mod": 1,
+   "t": "Totales, formato y marcas de tipo en zapatas",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 4 · Tablas de cantidades estructurales I",
+   "segs": [
+    [
+     "1200599752",
+     345.93,
+     638.87
+    ]
+   ],
+   "dur": 295.9
+  },
+  {
+   "n": 9,
+   "mod": 1,
+   "t": "Tablas de zapatas y de columnas por material",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 4 · Tablas de cantidades estructurales I",
+   "segs": [
+    [
+     "1200599752",
+     648.18,
+     933.87
+    ]
+   ],
+   "dur": 288.7
+  },
+  {
+   "n": 10,
+   "mod": 1,
+   "t": "Tabla de vigas y nervios por nivel",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 4 · Tablas de cantidades estructurales I",
+   "segs": [
+    [
+     "1200599752",
+     935.45,
+     1333.22
+    ]
+   ],
+   "dur": 400.8
+  },
+  {
+   "n": 11,
+   "mod": 1,
+   "t": "Descripción de materiales y volumen total de la estructura",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 4 · Tablas de cantidades estructurales I",
+   "segs": [
+    [
+     "1200599752",
+     1335.86,
+     1629.45
+    ]
+   ],
+   "dur": 296.6
+  },
+  {
+   "n": 12,
+   "mod": 1,
+   "t": "Tabla de volumen y área de losas",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 5 · Tablas de cantidades estructurales II",
+   "segs": [
+    [
+     "1200599823",
+     24.58,
+     408.93
+    ]
+   ],
+   "dur": 387.4
+  },
+  {
+   "n": 13,
+   "mod": 1,
+   "t": "Diámetro y longitud de barras de acero",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 5 · Tablas de cantidades estructurales II",
+   "segs": [
+    [
+     "1200599823",
+     411.99,
+     813.14
+    ]
+   ],
+   "dur": 404.1
+  },
+  {
+   "n": 14,
+   "mod": 1,
+   "t": "Peso del acero de armado con parámetros calculados",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 5 · Tablas de cantidades estructurales II",
+   "segs": [
+    [
+     "1200599823",
+     814.88,
+     1070.91
+    ]
+   ],
+   "dur": 259.0
+  },
+  {
+   "n": 15,
+   "mod": 1,
+   "t": "Planilla de acero: longitud total y peso",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 5 · Tablas de cantidades estructurales II",
+   "segs": [
+    [
+     "1200599823",
+     1072.68,
+     1358.68
+    ]
+   ],
+   "dur": 289.0,
+   "mute": [
+    [
+     0,
+     250.67,
+     251.39
+    ]
+   ]
+  },
+  {
+   "n": 16,
+   "mod": 1,
+   "t": "Escalera con descanso en la planta del altillo",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 6 · Escaleras y muros del modelo arquitectónico",
+   "segs": [
+    [
+     "1200599871",
+     36.25,
+     414.25
+    ]
+   ],
+   "dur": 381.0
+  },
+  {
+   "n": 17,
+   "mod": 1,
+   "t": "Niveles y contrahuellas de la escalera",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 6 · Escaleras y muros del modelo arquitectónico",
+   "segs": [
+    [
+     "1200599871",
+     416.25,
+     755.19
+    ]
+   ],
+   "dur": 341.9
+  },
+  {
+   "n": 18,
+   "mod": 1,
+   "t": "Resolver solapes de la escalera y el descanso",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 6 · Escaleras y muros del modelo arquitectónico",
+   "segs": [
+    [
+     "1200599871",
+     756.21,
+     1180.18
+    ]
+   ],
+   "dur": 427.0
+  },
+  {
+   "n": 19,
+   "mod": 1,
+   "t": "Acceso a la escalera: hueco y muros",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 6 · Escaleras y muros del modelo arquitectónico",
+   "segs": [
+    [
+     "1200599871",
+     1183.37,
+     1459.29
+    ]
+   ],
+   "dur": 278.9
+  },
+  {
+   "n": 20,
+   "mod": 1,
+   "t": "Muros y vacíos alrededor de la escalera",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 6 · Escaleras y muros del modelo arquitectónico",
+   "segs": [
+    [
+     "1200599871",
+     1462.07,
+     1755.05
+    ]
+   ],
+   "dur": 296.0
+  },
+  {
+   "n": 21,
+   "mod": 1,
+   "t": "Enlazar muros a la cubierta del altillo",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 7 · Tablas de cantidades arquitectónicas",
+   "segs": [
+    [
+     "1200599949",
+     31.35,
+     457.43
+    ]
+   ],
+   "dur": 429.1,
+   "mute": [
+    [
+     0,
+     35.53,
+     36.13
+    ]
+   ]
+  },
+  {
+   "n": 22,
+   "mod": 1,
+   "t": "Tabla de cantidades de muros arquitectónicos",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 7 · Tablas de cantidades arquitectónicas",
+   "segs": [
+    [
+     "1200599949",
+     461.97,
+     783.13
+    ]
+   ],
+   "dur": 324.2
+  },
+  {
+   "n": 23,
+   "mod": 1,
+   "t": "Filtrar y clasificar muros por material y nivel",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 7 · Tablas de cantidades arquitectónicas",
+   "segs": [
+    [
+     "1200599949",
+     788.78,
+     1139.99
+    ]
+   ],
+   "dur": 354.2
+  },
+  {
+   "n": 24,
+   "mod": 1,
+   "t": "Áreas, volúmenes y espesor de paredes",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 7 · Tablas de cantidades arquitectónicas",
+   "segs": [
+    [
+     "1200599949",
+     1140.65,
+     1497.24
+    ]
+   ],
+   "dur": 359.6
+  },
+  {
+   "n": 25,
+   "mod": 1,
+   "t": "Qué es Power BI y por qué usarlo con BIM",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 8 · Power BI para profesionales BIM",
+   "segs": [
+    [
+     "1200601294",
+     24.68,
+     327.52
+    ]
+   ],
+   "dur": 305.8
+  },
+  {
+   "n": 26,
+   "mod": 1,
+   "t": "Del dato a la decisión con Power BI",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 8 · Power BI para profesionales BIM",
+   "segs": [
+    [
+     "1200601294",
+     331.36,
+     619.17
+    ]
+   ],
+   "dur": 290.8,
+   "mute": [
+    [
+     0,
+     218.76,
+     219.42
+    ]
+   ]
+  },
+  {
+   "n": 27,
+   "mod": 1,
+   "t": "Programas necesarios y puertas en Revit",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 9 · Primer dashboard BIM: Revit, Excel y Power BI",
+   "segs": [
+    [
+     "1206629847",
+     26.15,
+     399.39
+    ]
+   ],
+   "dur": 376.2,
+   "mute": [
+    [
+     0,
+     146.07,
+     146.55
+    ]
+   ]
+  },
+  {
+   "n": 28,
+   "mod": 1,
+   "t": "Parámetros compartidos de nivel, tipo y cantidad",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 9 · Primer dashboard BIM: Revit, Excel y Power BI",
+   "segs": [
+    [
+     "1206629847",
+     408.56,
+     718.88
+    ]
+   ],
+   "dur": 313.3
+  },
+  {
+   "n": 29,
+   "mod": 1,
+   "t": "Valores de los parámetros y tabla de puertas",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 9 · Primer dashboard BIM: Revit, Excel y Power BI",
+   "segs": [
+    [
+     "1206629847",
+     723.64,
+     1151.19
+    ]
+   ],
+   "dur": 430.6
+  },
+  {
+   "n": 30,
+   "mod": 1,
+   "t": "Exportar la tabla e instalar Power BI",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 9 · Primer dashboard BIM: Revit, Excel y Power BI",
+   "segs": [
+    [
+     "1206629847",
+     1154.33,
+     1496.34
+    ]
+   ],
+   "dur": 345.0
+  },
+  {
+   "n": 31,
+   "mod": 1,
+   "t": "Primer gráfico en Power BI desde Excel",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 9 · Primer dashboard BIM: Revit, Excel y Power BI",
+   "segs": [
+    [
+     "1206629847",
+     1502.12,
+     1895.96
+    ]
+   ],
+   "dur": 396.8
+  },
+  {
+   "n": 32,
+   "mod": 1,
+   "t": "Cuenta y conectores de Speckle",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 10 · Primer dashboard BIM con Speckle",
+   "segs": [
+    [
+     "1206629919",
+     29.22,
+     459.03
+    ]
+   ],
+   "dur": 432.8
+  },
+  {
+   "n": 33,
+   "mod": 1,
+   "t": "Conectar el modelo de Speckle con Power BI",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 10 · Primer dashboard BIM con Speckle",
+   "segs": [
+    [
+     "1206629919",
+     470.67,
+     621.32
+    ],
+    [
+     "1206629919",
+     644.04,
+     821.89
+    ]
+   ],
+   "dur": 331.5
+  },
+  {
+   "n": 34,
+   "mod": 1,
+   "t": "Transformar y filtrar los datos con Power Query",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 10 · Primer dashboard BIM con Speckle",
+   "segs": [
+    [
+     "1206629919",
+     833.23,
+     1144.88
+    ]
+   ],
+   "dur": 314.7
+  },
+  {
+   "n": 35,
+   "mod": 1,
+   "t": "Visualizador 3D de Speckle en el dashboard",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 10 · Primer dashboard BIM con Speckle",
+   "segs": [
+    [
+     "1206629919",
+     1149.18,
+     1550.63
+    ]
+   ],
+   "dur": 404.5
+  },
+  {
+   "n": 36,
+   "mod": 1,
+   "t": "Gráficos interactivos por nivel y tipo",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 10 · Primer dashboard BIM con Speckle",
+   "segs": [
+    [
+     "1206629919",
+     1553.6,
+     1948.93
+    ]
+   ],
+   "dur": 398.3
+  },
+  {
+   "n": 37,
+   "mod": 1,
+   "t": "Tarjetas y selección cruzada con el modelo",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 10 · Primer dashboard BIM con Speckle",
+   "segs": [
+    [
+     "1206629919",
+     1951.45,
+     2268.45
+    ]
+   ],
+   "dur": 320.0
+  },
+  {
+   "n": 38,
+   "mod": 1,
+   "t": "Speckle, Power BI y el modelo de trabajo",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 11 · Sesión complementaria: primer dashboard",
+   "segs": [
+    [
+     "1208602089",
+     80.58,
+     404.12
+    ]
+   ],
+   "dur": 326.5
+  },
+  {
+   "n": 39,
+   "mod": 1,
+   "t": "Parámetros y tabla de puertas para el dashboard",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 11 · Sesión complementaria: primer dashboard",
+   "segs": [
+    [
+     "1208602089",
+     406.18,
+     799.19
+    ]
+   ],
+   "dur": 396.0
+  },
+  {
+   "n": 40,
+   "mod": 1,
+   "t": "Importar desde Excel a Power BI",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 11 · Sesión complementaria: primer dashboard",
+   "segs": [
+    [
+     "1208602089",
+     805.15,
+     1137.65
+    ]
+   ],
+   "dur": 335.5
+  },
+  {
+   "n": 41,
+   "mod": 1,
+   "t": "Del gráfico estático al integrador de Speckle",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 11 · Sesión complementaria: primer dashboard",
+   "segs": [
+    [
+     "1208602089",
+     1140.64,
+     1240.09
+    ],
+    [
+     "1208602089",
+     1256.31,
+     1373.91
+    ],
+    [
+     "1208602089",
+     1401.17,
+     1602.5
+    ]
+   ],
+   "dur": 421.4
+  },
+  {
+   "n": 42,
+   "mod": 1,
+   "t": "Dashboard interactivo con Speckle paso a paso",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 11 · Sesión complementaria: primer dashboard",
+   "segs": [
+    [
+     "1208602089",
+     1614.7,
+     1823.83
+    ],
+    [
+     "1208602089",
+     1837.07,
+     1874.05
+    ],
+    [
+     "1208602089",
+     2003.36,
+     2170.36
+    ]
+   ],
+   "dur": 416.1,
+   "mute": [
+    [
+     0,
+     126.61,
+     127.21
+    ]
+   ]
+  },
+  {
+   "n": 43,
+   "mod": 1,
+   "t": "IA para interpretar un dashboard BIM",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 12 · IA para interpretar datos BIM",
+   "segs": [
+    [
+     "1212439555",
+     50.56,
+     136.91
+    ],
+    [
+     "1212439555",
+     151.29,
+     406.11
+    ]
+   ],
+   "dur": 344.2,
+   "mute": [
+    [
+     1,
+     177.15,
+     177.75
+    ]
+   ]
+  },
+  {
+   "n": 44,
+   "mod": 1,
+   "t": "Preguntas, prompts e informe técnico con IA",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 12 · IA para interpretar datos BIM",
+   "segs": [
+    [
+     "1212439555",
+     407.35,
+     716.87
+    ]
+   ],
+   "dur": 312.5
+  },
+  {
+   "n": 45,
+   "mod": 1,
+   "t": "Del dashboard a la decisión: el rol del BIM Manager",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 13 · BIM Analytics para decidir",
+   "segs": [
+    [
+     "1212447554",
+     10.78,
+     442.84
+    ]
+   ],
+   "dur": 435.1
+  },
+  {
+   "n": 46,
+   "mod": 1,
+   "t": "Decisiones accionables con KPIs e IA",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 13 · BIM Analytics para decidir",
+   "segs": [
+    [
+     "1212447554",
+     444.28,
+     810.81
+    ]
+   ],
+   "dur": 369.5
+  },
+  {
+   "n": 47,
+   "mod": 1,
+   "t": "Comunicar resultados BIM según el público",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 14 · Comunicación ejecutiva de resultados",
+   "segs": [
+    [
+     "1212455166",
+     13.79,
+     321.78
+    ]
+   ],
+   "dur": 311.0
+  },
+  {
+   "n": 48,
+   "mod": 1,
+   "t": "Herramientas y flujo para presentar al cliente",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 14 · Comunicación ejecutiva de resultados",
+   "segs": [
+    [
+     "1212455166",
+     324.64,
+     767.64
+    ]
+   ],
+   "dur": 446.0
+  },
+  {
+   "n": 49,
+   "mod": 1,
+   "t": "Objetivo y etapas del proyecto final",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 15 · Instrucciones del proyecto final",
+   "segs": [
+    [
+     "1212457477",
+     86.19,
+     367.7
+    ]
+   ],
+   "dur": 284.5
+  },
+  {
+   "n": 50,
+   "mod": 1,
+   "t": "Caso práctico: categorías y preguntas del proyecto",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 15 · Instrucciones del proyecto final",
+   "segs": [
+    [
+     "1212457477",
+     369.3,
+     643.66
+    ]
+   ],
+   "dur": 277.4,
+   "mute": [
+    [
+     0,
+     191.3,
+     191.92
+    ]
+   ]
+  },
+  {
+   "n": 51,
+   "mod": 1,
+   "t": "Del prompt a los parámetros y el dashboard",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 15 · Instrucciones del proyecto final",
+   "segs": [
+    [
+     "1212457477",
+     645.76,
+     990.62
+    ]
+   ],
+   "dur": 347.9
+  },
+  {
+   "n": 52,
+   "mod": 1,
+   "t": "Entregables de la etapa 1 y observaciones propias",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 15 · Instrucciones del proyecto final",
+   "segs": [
+    [
+     "1212457477",
+     999.63,
+     1349.93
+    ]
+   ],
+   "dur": 353.3
+  },
+  {
+   "n": 53,
+   "mod": 1,
+   "t": "Interpretación con IA e informe técnico",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 15 · Instrucciones del proyecto final",
+   "segs": [
+    [
+     "1212457477",
+     1355.29,
+     1649.91
+    ]
+   ],
+   "dur": 297.6,
+   "mute": [
+    [
+     0,
+     65.65,
+     66.41
+    ]
+   ]
+  },
+  {
+   "n": 54,
+   "mod": 1,
+   "t": "Plan de acción, comité BIM y presentación final",
+   "instr": "Ing. Gabriel Pantoja",
+   "clase": "Clase 15 · Instrucciones del proyecto final",
+   "segs": [
+    [
+     "1212457477",
+     1653.32,
+     2054.09
+    ]
+   ],
+   "dur": 403.8
+  }
+ ],
+ "prompt": "BIM, BIM Data, Revit, Power BI, Power Query, Speckle, Excel, CSV, dashboard, KPIs, ChatGPT, BIM Manager, tablas de planificación, schedules, parámetros compartidos, zapatas, columnas, vigas, losas, muros, puertas, habitaciones, hormigón armado, acero de armado.",
+ "fix": [
+  [
+   "(?i)sesi[oó]n(es)? de refuerzos?",
+   "sesión complementaria"
+  ],
+  [
+   "(?i)\\brefuerzos?\\b",
+   "armado"
+  ],
+  [
+   "(?i)\\breforzos?\\b",
+   "armado"
+  ],
+  [
+   "\\b(?:PIN|Pin|BIN|Bin|bin|pin|Vim|vim|VIM|Beam|beam|being|Being|Bing|bing)\\b(?= ?[Dd]ata| [Mm]anager| [Aa]nalytics)",
+   "BIM"
+  ],
+  [
+   "\\bREBI\\b|\\bRebi\\b|\\breggae\\b",
+   "Revit"
+  ],
+  [
+   "(?i)\\bspectrum\\b|\\bsparkle\\b|\\bspectral\\b",
+   "Speckle"
+  ],
+  [
+   "\\bDMA\\b",
+   ""
+  ]
+ ]
+}
