@@ -22,7 +22,7 @@ for d in sys.argv[2:]:
 need={};miss=[]
 for f in sorted(glob.glob(f'{B}/db/piezas/*.json')):
     d=json.load(open(f)); d=d.get('data',d)
-    if d.get('grupo') in('pauta','historias','correos','comunidades'): continue
+    if d.get('grupo') in('pauta','correos','comunidades'): continue
     if (d.get('estado_prod') or '').startswith(('DESCARTADA','YA ESCRITA','POR GRABAR','EN RESERVA')): continue
     for im in (d.get('imagenes') or [])+([d['pdf']] if d.get('pdf') else []):
         a=im['u'].split('/')[-1]

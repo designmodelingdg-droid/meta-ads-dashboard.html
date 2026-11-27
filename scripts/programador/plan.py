@@ -62,15 +62,45 @@ def add(d,red,when,typ,summary,media,extra=None,nota=''):
     posts.append({'key':f"{PREF}-{d['id']}-{red}",'pieza':d['id'],'fecha':d['fecha_iso'],'red':red,'nota':nota,'body':body})
 for d in sorted(P.values(),key=lambda d:(d['fecha_iso'],d.get('orden') or 999)):
     if not (DESDE<=d['fecha_iso']<=HASTA): continue
-    g=d['grupo']; ep=d['estado_prod']; i=d['id']
+    g=d['grupo']; ep=d['estado_prod']; i=d['id']; day=d['fecha_iso']
     if g in ('pauta','correos','comunidades','blog'): continue
     if ep.startswith(('DESCARTADA','YA ESCRITA','EN RESERVA')): continue
     if ep.startswith('POR GRABAR'): manual.append((i,d['fecha'],'Falta grabar (Gabriel)')); continue
-    if g=='historias': manual.append((i,d['fecha'],'Historia: se publica a mano por los stickers'+(' · GRABA GABRIEL' if d.get('graba_gabriel') else ''))); continue
+    if g=='historias':
+        # Cuadros estáticos: se programan. Cuadros con sticker interactivo, sin imagen o que graba Gabriel: manuales.
+        cu={}
+        for gl in d.get('guion') or []:
+            m=re.match(r'Cuadro (\d+)',gl)
+            if not m: continue
+            s=re.search(r'Sticker:\s*(.+?)(?:\s·\s|$)',gl); st=s.group(1).strip() if s else ''
+            cu[int(m.group(1))]={'st':st,'img':None,'it':''}
+        for im in d.get('imagenes') or []:
+            m=re.match(r'Cuadro (\d+)',im['t'])
+            if m and int(m.group(1)) in cu: cu[int(m.group(1))].update(img=im['u'].split('/')[-1],it=im['t'])
+        INTER=re.compile(r'(?i)^(ENCUESTA|QUIZ|CAJA|SLIDER|ENLACE|PREGUNTA|CUENTA)')
+        def es_manual(c): return (not c['img']) or bool(INTER.match(c['st'])) or ('sticker' in c['it'].lower())
+        orden=sorted(cu); primero=next((n for n in orden if es_manual(cu[n])),None)
+        k0=k1=0
+        for n in orden:
+            c=cu[n]
+            if es_manual(c):
+                por=('sticker '+c['st'][:45]) if c['img'] else ('lo graba Gabriel' if d.get('graba_gabriel') and n==1 else 'sin imagen: repost o video')
+                manual.append((i,d['fecha'],f'Historia · cuadro {n} a mano ({por})' + (' · subir antes de las 9:30' if n==primero else '')))
+                continue
+            antes=primero is None or n<primero
+            mm=(k0 if antes else 30+k1)
+            if antes: k0+=1
+            else: k1+=1
+            when=f"{day}T14:{mm:02d}:00.000Z" if True else ''
+            u=IMG.get(c['img']) or f"FALTA:{c['img']}"
+            for red in ('instagram','facebook'):
+                body={'accountIds':[ACC[red]],'summary':'','media':M([u],'image/jpeg'),'status':'scheduled','scheduleDate':when,'type':'story','userId':USER,f'{red}PostDetails':{'type':'story'}}
+                posts.append({'key':f"{PREF}-{i}-c{n}-{red}",'pieza':i,'fecha':d['fecha_iso'],'red':red,'nota':f'historia cuadro {n}','body':body})
+        if d.get('video'): manual.append((i,d['fecha'],'Historia · cuadro de video a mano: '+d['video']['t'][:70]))
+        continue
     blob=json.dumps(d,ensure_ascii=False)
     if any(r in i or r in blob for r in RET): hold.append((i,d['fecha'],'Retenida (retener.json)')); continue
     cap=d.get('caption') or ''; fmt=d['formato']; redes=d.get('redes') or []
-    day=d['fecha_iso']
     if g=='feed':
         when=(HORAS.get(i) or [f'{day}T15:00:00Z'])[0].replace('Z','.000Z')
         v=vid_url(d); imgs=img_urls(d)
