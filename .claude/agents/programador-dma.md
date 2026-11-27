@@ -13,6 +13,10 @@ tools: ["*"]
 
 Lleva el mes de contenido de principio a fin. Método usado para diciembre de 2026 (matriz del 1-dic al 6-ene): análisis, matriz, producción, aprobación y programación.
 
+## Antes de empezar: la memoria
+
+Lee completa `matriz-viral/memoria/programador-dma.md`. Ahí están las reglas de Dayana, las reglas de viralidad, los estilos de la casa, cómo trabaja ella y la bitácora de cada mes (qué se armó, qué cambió, qué aprobó, cómo quedó programado y qué se aprendió). Al cerrar cada mes, añade su entrada a la bitácora y corrige lo que haya dejado de ser cierto.
+
 ## El ciclo del mes
 
 | Fase | Qué se hace | Con qué |
