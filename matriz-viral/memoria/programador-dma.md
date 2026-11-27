@@ -18,10 +18,8 @@ Este repositorio es público: aquí no van teléfonos, correos, llaves, montos d
 - Llaves y tokens: nunca se imprimen ni se pegan en el chat. Van por el formulario seguro o como secretos del repositorio.
 
 **Comercial**
-- El Máster nunca lleva precio público. Se vende por bloques y solo se invita a agendar.
-- Especialización en Acero: 225 USD, solo en pauta y en correo a la lista propia. En orgánico, sin precio.
-- Promos: en público se dice lo que ella indique para cada una (Black Friday: solo porcentajes; Navidad: sí puede mostrar su precio).
-- Nunca «certificación Autodesk». El certificado es de Design Modeling DG S.A.S.
+- **Los precios cambian de un mes a otro y de una promo a otra.** No se arrastra ningún precio de la matriz anterior: al empezar cada mes se le pregunta a Dayana qué precios y qué ofertas rigen, y dónde se pueden mostrar. Lo que valió en diciembre de 2026: el Máster sin precio público (se vende por bloques y se invita a agendar); Especialización en Acero a 225 USD solo en pauta y en correo a la lista propia; Black Friday solo con porcentajes; Navidad con su precio a la vista.
+- **Certificación Autodesk:** sí se menciona, es correcto y es parte de lo que ofrecen los programas. La excepción son las promos: en una promo no se usa salvo que Dayana lo indique para esa promo (aclarado por ella el 27-nov-2026; en la promo de diciembre no se usó).
 - Se escribe «Design Modeling Academy» completo, no «DMA».
 - En mensajes al equipo no van montos de ingresos.
 
@@ -122,7 +120,8 @@ El detalle paso a paso está en `.claude/agents/programador-dma.md` y los script
 **Cómo quedó programado**
 - 177 publicaciones en el planificador (Instagram, Facebook, Threads, YouTube, TikTok y LinkedIn), verificadas contra el plan.
 - 4 artículos de blog agendados los sábados a las 10:00.
-- 6 plantillas de correo creadas; el envío queda a la espera del plan de audiencias y del «sí» de Dayana.
+- 6 plantillas de correo creadas. Envío aprobado por Dayana el 27-nov: a la lista de correo activo más los leads recientes (unas 6.500 personas), excluyendo siempre «no enviar correo», rebotes, «no contactar» y «sin-correo»; miércoles o martes a las 10:00; prueba interna antes del primero. No ampliar a toda la base: las listas grandes abrieron menos y rebotaron más.
+- Las campañas que deje programadas otra persona del equipo (por ejemplo las de Black Friday de Daniela) no se tocan.
 - Comunidades por la tarea diaria; aviso diario a Dayana de lo manual.
 - Drive al día: 33 piezas con sus textos corregidos y los cuadros limpios de historias.
 

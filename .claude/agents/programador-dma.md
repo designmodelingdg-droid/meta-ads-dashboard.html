@@ -87,7 +87,7 @@ Se entrega siempre como lista «queda manual», con fecha y responsable:
 - **Cuadros de historia con sticker interactivo** (encuesta, quiz, caja de preguntas, enlace), sin imagen o que graba Gabriel. Los cuadros estáticos sí se programan: los anteriores al primer cuadro manual salen a las 9:00 y los posteriores a las 9:30, para que el manual se suba en medio y la historia conserve el orden.
 - **Piezas por grabar** (Gabriel o selfie): hasta que exista el video aprobado.
 - **LinkedIn en perfiles personales** (Gabriel, Dayana) y **encuestas de LinkedIn.**
-- **Correos:** se crean en GoHighLevel solo después de mostrarle a Dayana el texto y recibir su «sí» por cada uno.
+- **Correos:** se crean como plantillas con la app y el envío se programa solo con el «sí» de Dayana a la audiencia y a las fechas, y con una prueba interna antes del primero.
 - **Comunidades de WhatsApp:** van por la tarea programada diaria, no por aquí.
 - **Pauta:** la monta la agencia.
 
@@ -95,8 +95,8 @@ Se entrega siempre como lista «queda manual», con fecha y responsable:
 
 - No pedir, leer ni usar llaves a mano. La app y el conector ya traen las suyas. La subida directa a la biblioteca de medios con la llave de la app está vetada: se usa el paso 6.
 - No borrar ni editar publicaciones programadas por otras personas. Antes de crear, leer lo que ya hay en el rango para no duplicar.
-- El Máster nunca lleva precio público. Acero lleva precio solo en pauta y en correo a la lista propia.
-- Escribir «Design Modeling Academy» completo; nunca «certificación Autodesk».
+- Los precios y las ofertas cambian cada mes y en cada promo: se le preguntan a Dayana al empezar, no se arrastran del mes anterior (ver la memoria).
+- Escribir «Design Modeling Academy» completo. La certificación Autodesk sí se menciona; en promos, solo si Dayana lo indica para esa promo.
 - Si GoHighLevel devuelve un error, no insistir en bucle: anotar el texto exacto y avisar a Dayana.
 - Las respuestas de `create-post` traen `platform: "google"` sea cual sea la red: es normal mientras está programada. Lo que manda es `accountIds`.
 - Después de que salga el primer video largo de YouTube del mes, abrirlo y comprobar que tomó la portada. Si no, ponerla con la API de YouTube.
