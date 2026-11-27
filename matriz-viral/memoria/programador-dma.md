@@ -185,7 +185,7 @@ En las de recurso, el mensaje de «sígueme» sigue el de la casa («¡Hola {use
 
 **Por decidir (Dayana)**
 - ZAPATA: la regla dice que solo la contesta GoHighLevel, pero está en la configuración del flujo y OpenReply le creó campaña en Instagram el 24 y el 26-nov (una con 3 mensajes fallidos). El reel del 2-dic recibirá otra. O se quita ZAPATA de la configuración y se apagan esas dos, o se deja OpenReply en Instagram y GoHighLevel solo en Facebook.
-- ACERO, COTIZA y TEMARIO tienen además un workflow de comentario publicado en GoHighLevel. Al montarlas en OpenReply hay que apagar su disparador de Instagram allí.
+- ACERO, COTIZA y TEMARIO tienen además un workflow de comentario publicado en GoHighLevel. Al montarlas en OpenReply hay que apagar su disparador de Instagram allí. Dayana los apaga a mano (27-nov: «pásame un recordatorio y apagamos las de GHL»); la tarea diaria de OpenReply le recuerda por WhatsApp el 1-dic (TEMARIO y ACERO) y el 11-dic (COTIZA), y repite al día siguiente si no ha confirmado.
 - ESTRUCTURAS (historia del 17-dic): automatizarla o dejarla a una persona.
 - BIM y DIPLOMADO: confirmar que van atadas a su publicación y no a «cualquier publicación».
 - Historias: confirmar qué palabras tiene el workflow «Palabras Claves en Historias IG» de GoHighLevel.
