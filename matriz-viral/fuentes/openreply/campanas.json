@@ -61,21 +61,21 @@
    "creada": "2026-11-25T15:22:28.149",
    "actualizada": "2026-11-25T15:22:37.131",
    "cuenta": "design_modeling_dg",
-   "enviados": 45,
+   "enviados": 46,
    "fallidos": 3,
    "entregados_sin_confirmar": 0,
    "saltados": 0,
    "pendientes": 0,
    "primer_envio": "2026-11-25T15:23:13.307",
-   "ultimo_envio": "2026-11-28T04:55:33.092",
-   "clics": 29,
-   "clics_limpios": 29,
+   "ultimo_envio": "2026-11-28T11:25:43.283",
+   "clics": 30,
+   "clics_limpios": 30,
    "clics_con_bots": 0,
    "enlaces_rastreados": 1,
    "mide_clics": true,
-   "clics_por_dm": 0.64,
-   "ctr": 0.6444,
-   "lectura_clics": "29 clics limpios sobre 45 DM enviados (64%). Son aperturas, no personas: la misma persona puede contar varias veces."
+   "clics_por_dm": 0.65,
+   "ctr": 0.6522,
+   "lectura_clics": "30 clics limpios sobre 46 DM enviados (65%). Son aperturas, no personas: la misma persona puede contar varias veces."
   },
   {
    "id": "cmun2iawl000004l8habk0hh6",
@@ -1045,12 +1045,12 @@
    "palabra": "MEMORIA",
    "campana": "MEMORIA · carrusel Te devolvieron la memoria (25-nov)",
    "campana_activa": true,
-   "enviados": 45,
+   "enviados": 46,
    "fallidos": 3,
    "entregados_sin_confirmar": 0,
    "saltados": 0,
    "primer_envio": "2026-11-25T15:23:13.307",
-   "ultimo_envio": "2026-11-28T04:55:33.092"
+   "ultimo_envio": "2026-11-28T11:25:43.283"
   },
   {
    "palabra": "MEMORIA",
@@ -1362,13 +1362,6 @@
   {
    "estado": "FAILED",
    "pero_si_se_entrego": false,
-   "motivo": "MetaApiError -1: The comment you are trying to reply to, already has a reply. (/v25.0/17841404048578200/messages) [code=-1 sub=2534023 type=IGApiException trace=AJnF3u_f4mIpX6SipEcZeaz]",
-   "veces": 1,
-   "ultima_vez": "2026-11-27T03:57:09.911"
-  },
-  {
-   "estado": "FAILED",
-   "pero_si_se_entrego": false,
    "motivo": "MetaApiError -1: The comment you are trying to reply to, already has a reply. (/v25.0/17841404048578200/messages) [code=-1 sub=2534023 type=IGApiException trace=ApiD9kPVUMmW_mynWnPzRuG]",
    "veces": 1,
    "ultima_vez": "2026-11-24T00:42:10.767"
@@ -1386,13 +1379,6 @@
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=A63zbmg0dCpFs10uOHoapXH]",
    "veces": 1,
    "ultima_vez": "2026-09-30T03:12:35.837"
-  },
-  {
-   "estado": "FAILED",
-   "pero_si_se_entrego": false,
-   "motivo": "MetaApiError -1: The comment you are trying to reply to, already has a reply. (/v25.0/17841404048578200/messages) [code=-1 sub=2534023 type=IGApiException trace=A6KcZdQozq5iMdj_hmV1OXY]",
-   "veces": 1,
-   "ultima_vez": "2026-11-25T15:27:12.895"
   },
   {
    "estado": "FAILED",
@@ -1435,6 +1421,13 @@
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=AN8IFWL-fImTXSi0bY6YRiT]",
    "veces": 1,
    "ultima_vez": "2026-09-30T21:27:08.002"
+  },
+  {
+   "estado": "FAILED",
+   "pero_si_se_entrego": false,
+   "motivo": "MetaApiError -1: The comment you are trying to reply to, already has a reply. (/v25.0/17841404048578200/messages) [code=-1 sub=2534023 type=IGApiException trace=A8CD6d51TaFpc9UC5mFtPe8]",
+   "veces": 1,
+   "ultima_vez": "2026-11-27T03:57:09.911"
   },
   {
    "estado": "FAILED",
@@ -1522,17 +1515,17 @@
   },
   {
    "estado": "FAILED",
+   "pero_si_se_entrego": false,
+   "motivo": "MetaApiError -1: The comment you are trying to reply to, already has a reply. (/v25.0/17841404048578200/messages) [code=-1 sub=2534023 type=IGApiException trace=AXCZOLW8h6ZZGz5gZkyUXFL]",
+   "veces": 1,
+   "ultima_vez": "2026-11-25T15:27:12.895"
+  },
+  {
+   "estado": "FAILED",
    "pero_si_se_entrego": true,
    "motivo": "MetaApiError 1: An unknown error has occurred. (/v25.0/17841404048578200/messages) [code=1 sub=- type=OAuthException trace=AZDnjfXD1G9U8-ueKVn7rwo]",
    "veces": 1,
    "ultima_vez": "2026-09-17T13:45:31.033"
-  },
-  {
-   "estado": "FAILED",
-   "pero_si_se_entrego": false,
-   "motivo": "MetaApiError -1: The comment you are trying to reply to, already has a reply. (/v25.0/17841404048578200/messages) [code=-1 sub=2534023 type=IGApiException trace=AXIjyDRxyWdC5BuXZRCCxaF]",
-   "veces": 1,
-   "ultima_vez": "2026-11-25T15:27:12.904"
   },
   {
    "estado": "FAILED",
@@ -1547,6 +1540,13 @@
    "motivo": "MetaApiError 1: An unknown error has occurred. (/v25.0/17841404048578200/messages) [code=1 sub=- type=OAuthException trace=ADi07oqxKQLjI2nAPkL9y33]",
    "veces": 1,
    "ultima_vez": "2026-10-06T01:06:53.126"
+  },
+  {
+   "estado": "FAILED",
+   "pero_si_se_entrego": false,
+   "motivo": "MetaApiError -1: The comment you are trying to reply to, already has a reply. (/v25.0/17841404048578200/messages) [code=-1 sub=2534023 type=IGApiException trace=AWK-jbXwIcXS0zPYsJgy6at]",
+   "veces": 1,
+   "ultima_vez": "2026-11-25T15:27:12.904"
   },
   {
    "estado": "FAILED",
@@ -1664,11 +1664,11 @@
    "etiqueta": "Primary campaign link",
    "destino": "https://funnel.dgdesignmodeling.com/acceso-gratis-memoria-calculo-form",
    "campana": "MEMORIA · carrusel Te devolvieron la memoria (25-nov)",
-   "clics": 29,
-   "clics_limpios": 29,
+   "clics": 30,
+   "clics_limpios": 30,
    "clics_con_bots": 0,
    "primer_clic": "2026-11-25T15:24:11.997",
-   "ultimo_clic": "2026-11-28T04:55:59.352"
+   "ultimo_clic": "2026-11-28T17:02:06.328"
   },
   {
    "slug": "vrLviIG6Qg",
@@ -2044,15 +2044,11 @@
   },
   {
    "fecha": "2026-11-28",
-   "clics": 1,
+   "clics": 2,
    "limpio": true
   }
  ],
  "envios_por_dia": [
-  {
-   "fecha": "2026-10-29",
-   "enviados": 1
-  },
   {
    "fecha": "2026-11-05",
    "enviados": 1
@@ -2095,7 +2091,7 @@
   },
   {
    "fecha": "2026-11-28",
-   "enviados": 3
+   "enviados": 4
   }
  ],
  "seguidores": [
@@ -2271,7 +2267,7 @@
      }
     ],
     "en_borrador": [],
-    "bot_total": 314,
+    "bot_total": 315,
     "bot_nuevos_7d": 9
    },
    "ACERO": {
@@ -2313,7 +2309,7 @@
      }
     ],
     "en_borrador": [],
-    "bot_total": 952,
+    "bot_total": 956,
     "bot_nuevos_7d": 47
    },
    "CHATGPT": {
@@ -2335,8 +2331,8 @@
      }
     ],
     "en_borrador": [],
-    "bot_total": 233,
-    "bot_nuevos_7d": 33
+    "bot_total": 235,
+    "bot_nuevos_7d": 34
    },
    "DYNAMO": {
     "publicados": [
@@ -2361,7 +2357,7 @@
     "bot_nuevos_7d": 0
    }
   },
-  "embudo_generado": "2026-11-28T00:02Z"
+  "embudo_generado": "2026-11-28T07:45Z"
  },
  "cotejo_con_la_matriz": [
   {
@@ -2426,8 +2422,8 @@
     "MEMORIA VERIFICABLE",
     "MEMORIA DE CÁLCULO"
    ],
-   "dms_enviados": 76,
-   "lectura": "Viva: 76 DM enviados."
+   "dms_enviados": 77,
+   "lectura": "Viva: 77 DM enviados."
   },
   {
    "palabra": "DYNAMO",
