@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Vista previa · Deflexiones admisibles: L/360, L/240, L/180 y cuál le toca a cada elemento</title>
+<meta name="description" content="Qué límite de deflexión le toca a entrepisos y cubiertas con o sin cielo raso según el IBC 2021 (tabla 1604.3), y el error típico en naves de acero.">
+<style>
+  :root{--navy:#0D1E3A;--cobre:#D78631;--texto:#27313f;--gris:#667085;--borde:#e4e7ec;--fondo:#f6f7f9;}
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--fondo);color:var(--texto);font-family:"Helvetica Neue",Helvetica,Arial,"Segoe UI",Roboto,sans-serif;font-size:18px;line-height:1.7;}
+  .aviso{background:var(--navy);color:#fff;font-size:13px;line-height:1.45;padding:10px 16px;text-align:center;border-bottom:3px solid var(--cobre);overflow-wrap:anywhere}
+  .aviso strong{color:var(--cobre);font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+  .hoja{max-width:860px;margin:28px auto 56px;background:#fff;border:1px solid var(--borde);border-radius:14px;overflow:hidden}
+  .portada{display:block;width:100%;height:auto;aspect-ratio:1200/627;object-fit:cover;background:var(--navy)}
+  .col{max-width:720px;margin:0 auto;padding:36px 24px 56px}
+  .cat{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cobre);margin:0 0 14px}
+  h1{font-family:Georgia,"Times New Roman",serif;font-size:38px;line-height:1.18;color:var(--navy);margin:0 0 18px;font-weight:700;text-wrap:balance}
+  .meta{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:14px;color:var(--gris);padding:0 0 22px;margin:0 0 30px;border-bottom:1px solid var(--borde)}
+  .meta b{color:var(--navy);font-weight:600}
+  .cuerpo p{margin:0 0 20px;overflow-wrap:anywhere}
+  .cuerpo h2{font-family:Georgia,"Times New Roman",serif;font-size:27px;line-height:1.25;color:var(--navy);margin:44px 0 16px;font-weight:700}
+  .cuerpo h3{font-size:21px;line-height:1.3;color:var(--navy);margin:32px 0 12px}
+  .cuerpo ul{margin:0 0 22px;padding-left:22px}
+  .cuerpo li{margin:0 0 10px;overflow-wrap:anywhere}
+  .cuerpo li::marker{color:var(--cobre)}
+  .cuerpo strong{color:var(--navy)}
+  .cuerpo a{color:var(--cobre)}
+  .cuerpo blockquote{margin:0 0 20px;padding:4px 0 4px 18px;border-left:3px solid var(--cobre);color:var(--gris)}
+  .cuerpo figure{margin:26px 0 30px}
+  .cuerpo figure img{display:block;width:100%;height:auto;border-radius:10px;border:1px solid var(--borde)}
+  .cuerpo figcaption{font-size:13.5px;line-height:1.5;color:var(--gris);text-align:center;margin-top:10px}
+  @media (max-width:640px){body{font-size:17px}.hoja{margin:0 0 32px;border-radius:0;border-left:0;border-right:0}.col{padding:26px 20px 44px}h1{font-size:29px}.cuerpo h2{font-size:23px;margin-top:36px}}
+</style>
+</head>
+<body>
+<div class="aviso"><strong>Vista previa</strong> · se publica el sábado 19-dic a las 10:00 en funnel.dgdesignmodeling.com/post/limites-deflexion-l360-l240-l180</div>
+<article class="hoja">
+  <img class="portada" src="https://wykwcbohcsqfojsgkfxp.supabase.co/storage/v1/object/public/brand-assets/externos/imagenes/774d3b4c-5dd4-450a-9d36-bc76b775b360/01-dic-45be4a68ec916e529cc9f0758e2792ed.jpg" alt="Portada del artículo: Deflexiones admisibles: L/360, L/240, L/180 y cuál le toca a cada elemento">
+  <div class="col">
+    <p class="cat">Cálculo Estructural</p>
+    <h1>Deflexiones admisibles: L/360, L/240, L/180 y cuál le toca a cada elemento</h1>
+    <div class="meta"><span>Por <b>Design Modeling Academy</b></span><span>·</span><span>19 de diciembre de 2026</span></div>
+    <div class="cuerpo">
+<!--
+Título: Deflexiones admisibles: L/360, L/240, L/180 y cuál le toca a cada elemento
+Slug: limites-deflexion-l360-l240-l180
+Meta: Qué límite de deflexión le toca a entrepisos y cubiertas con o sin cielo raso según el IBC 2021 (tabla 1604.3), y el error típico en naves de acero.
+Portada: https://wykwcbohcsqfojsgkfxp.supabase.co/storage/v1/object/public/brand-assets/externos/imagenes/774d3b4c-5dd4-450a-9d36-bc76b775b360/01-dic-45be4a68ec916e529cc9f0758e2792ed.jpg
+-->
+<p>L/360 no es un límite universal. Usarlo para todo sobredimensiona unas piezas y deja cortas otras.</p>
+<p>La costumbre se entiende: L/360 es el número que todos recordamos, y aplicarlo a todo «por seguridad» parece prudente. En una nave de acero no lo es, porque encarece las correas sin ganar nada. Y la costumbre contraria, relajar el límite donde hay acabados frágiles, termina en fisuras y en reclamos del cliente.</p>
+<p>Si usas el mismo límite de deflexión para todo, alguno está mal. Veamos cuál le toca a cada elemento.</p>
+<h2>Qué significa L/360</h2>
+<figure class="dg-blog-inline-image"><img src="https://wykwcbohcsqfojsgkfxp.supabase.co/storage/v1/object/public/brand-assets/externos/imagenes/0fd956de-aeb9-421e-a019-ff3065fbb9b3/01-dic-deflexiones-lamina2-recorte.jpg" alt="Entrepisos: L/360 con carga viva y L/240 con carga total" loading="lazy" /><figcaption>Entrepisos: L/360 con carga viva y L/240 con carga total</figcaption></figure>
+<p>L es la luz del elemento. L/360 quiere decir que la deflexión máxima admisible es la luz dividida entre 360.</p>
+<p>El límite que corresponde depende de dos cosas:</p>
+<ul>
+<li><strong>Qué elemento es:</strong> un entrepiso o una cubierta, y qué lleva colgado debajo.</li>
+<li><strong>Con qué carga se calcula:</strong> solo la carga viva o la carga total.</li>
+</ul>
+<p>Por eso la tabla tiene dos columnas. Un mismo elemento tiene un límite para la carga viva y otro, más holgado, para la carga total.</p>
+<h2>La lista (IBC 2021, tabla 1604.3)</h2>
+<ul>
+<li>Elemento: Entrepiso · Carga viva: L/360 · Carga total: L/240</li>
+<li>Elemento: Cubierta con cielo raso de yeso o enlucido · Carga viva: L/360 · Carga total: L/240</li>
+<li>Elemento: Cubierta con otro cielo raso · Carga viva: L/240 · Carga total: L/180</li>
+<li>Elemento: Cubierta sin cielo raso · Carga viva: L/180 · Carga total: L/120</li>
+</ul>
+<p>La lista se ordena por el acabado: mientras más frágil es lo que depende del elemento, menos se le permite deformarse. Un cielo raso de yeso se fisura con poco. Una cubierta de nave sin cielo raso no tiene debajo nada que se rompa.</p>
+<h2>Un ejemplo con números</h2>
+<p>Para un elemento de 6 m de luz (6.000 mm):</p>
+<ul>
+<li>Límite: L/360 · Deflexión admisible: 16,7 mm</li>
+<li>Límite: L/240 · Deflexión admisible: 25,0 mm</li>
+<li>Límite: L/180 · Deflexión admisible: 33,3 mm</li>
+<li>Límite: L/120 · Deflexión admisible: 50,0 mm</li>
+</ul>
+<p>Una correa de nave sin cielo raso, con carga viva, admite 33,3 mm. Si le exiges L/360, la obligas a quedarse en 16,7 mm: la mitad.</p>
+<p>Eso tiene un costo directo. En una viga con carga uniforme, la deflexión es inversamente proporcional a la inercia de la sección. Con la misma luz y la misma carga, bajar la deflexión a la mitad pide el doble de inercia. Es un perfil más pesado en cada correa, multiplicado por todas las correas de la nave.</p>
+<p>El caso inverso es igual de malo. Una viga de entrepiso de 6 m revisada con L/180 puede deformarse 33,3 mm con carga viva, cuando el límite que le toca es 16,7 mm.</p>
+<h2>El error típico en naves</h2>
+<figure class="dg-blog-inline-image"><img src="https://wykwcbohcsqfojsgkfxp.supabase.co/storage/v1/object/public/brand-assets/externos/imagenes/fb47a653-c453-4778-aa21-9089366c4ee2/01-dic-blog-deflexiones-interna-2-error.jpg" alt="Los dos extremos: correas de nave con L/360 «por seguridad» y vigas de entrepiso con L/180" loading="lazy" /><figcaption>Los dos extremos: correas de nave con L/360 «por seguridad» y vigas de entrepiso con L/180</figcaption></figure>
+<p>Las correas de una nave sin cielo raso no necesitan L/360. Diseñarlas así encarece la estructura sin ganar nada. Al revés, una viga de entrepiso con L/180 vibra y fisura los acabados.</p>
+<p>Los dos errores vienen del mismo hábito: elegir primero el perfil y comprobar después con el límite que uno recuerda. El orden correcto es el contrario. Primero decides qué límite le toca a cada elemento y después revisas el perfil.</p>
+<p>Una forma práctica de hacerlo es armar la lista de elementos antes de abrir el programa:</p>
+<ul>
+<li>1) Vigas y viguetas de entrepiso.</li>
+<li>2) Vigas y correas de cubierta con cielo raso de yeso o enlucido.</li>
+<li>3) Vigas y correas de cubierta con otro tipo de cielo raso.</li>
+<li>4) Correas de cubierta sin cielo raso.</li>
+</ul>
+<p>Cada grupo entra al modelo con su límite para carga viva y su límite para carga total.</p>
+<h2>En la memoria</h2>
+<figure class="dg-blog-inline-image"><img src="https://wykwcbohcsqfojsgkfxp.supabase.co/storage/v1/object/public/brand-assets/externos/imagenes/8a121be5-f721-4ffa-a49d-a1e9b47d901a/01-dic-blog-deflexiones-interna-3-memoria.jpg" alt="En la memoria, di de dónde sale el límite: IBC, norma local o pliego del cliente" loading="lazy" /><figcaption>En la memoria, di de dónde sale el límite: IBC, norma local o pliego del cliente</figcaption></figure>
+<p>Di de dónde sale el límite: IBC, norma local o pliego del cliente. Si no lo dices, el revisor te lo va a preguntar.</p>
+<p>Basta una tabla corta con cuatro columnas: elemento, límite con carga viva, límite con carga total y fuente. Con eso el revisor ve qué criterio aplicaste sin tener que reconstruirlo.</p>
+<p>Un aviso importante: este artículo usa la tabla 1604.3 del IBC 2021. Si tu proyecto se revisa con otra norma, o el pliego del cliente fija sus propios límites, mandan esos. Confírmalo antes de dimensionar, no al entregar.</p>
+<h2>Para seguir</h2>
+<p>Las 5 verificaciones que hacemos antes de dar por buena una nave de acero, gratis: <a href="https://funnel.dgdesignmodeling.com/acceso-gratis-verificacion-acero-form">Ver las 5 verificaciones</a></p>
+<p>Son revisiones que el programa no resuelve solo; entre ellas, el pandeo local y la placa base con sus anclajes.</p>
+<p>¿Qué límite usas tú para las correas de una nave, y de dónde lo sacaste?</p>
+    </div>
+  </div>
+</article>
+</body>
+</html>

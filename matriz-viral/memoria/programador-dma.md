@@ -89,6 +89,14 @@ El detalle paso a paso está en `.claude/agents/programador-dma.md` y los script
 - Blog: se agenda desde la app en el blog de GoHighLevel, con portada propia y una imagen interna puesta a mano (si no hay ninguna, la app genera dos con IA). La dirección pública es `/post/<slug>`.
 - Correos: la app crea plantillas en GoHighLevel con la plantilla «genérica»; el envío a la lista se programa aparte, con la audiencia que apruebe Dayana.
 - Comunidades: una tarea diaria manda la pieza del día a los grupos de WhatsApp.
+- Palabras clave: el método está en la «Fase 6b» del agente. Lo que hay que recordar:
+  - OpenReply contesta comentarios de Instagram. Facebook lo contesta GoHighLevel. Las respuestas a historias llegan como mensaje directo y OpenReply no las contesta (ninguna campaña tiene encendido el disparo por mensaje directo; la bandeja es de GoHighLevel).
+  - Las campañas por publicación de las palabras de recurso las crea solo el flujo `openreply-campanas.yml` cuando sale la publicación, con los textos de `scripts/openreply_campanas_config.json`. Esa es «la plantilla de las últimas publicaciones».
+  - Una campaña se puede crear antes de que exista la publicación si escucha «cualquier publicación», y se puede dejar apagada y encender después. Así se montan las palabras de venta y de promo, un día antes de su primera publicación.
+  - Dos campañas encendidas con la misma palabra en la misma publicación responden las dos. Una palabra, una campaña que la escuche.
+  - El flujo no crea nada si el texto pide dos palabras de su configuración. Por eso MÁSTER y TEMARIO no entran en la configuración.
+  - Antes: enlace en 200 y la palabra en una sola herramienta. Después: releer la lista de campañas y `fuentes/openreply/campanas.json`.
+  - La llave de OpenReply la pone el proxy de la sesión. No se borra ninguna campaña y no se tocan las encendidas ni las de otra persona.
 - Después de programar siempre se verifica leyendo el planificador y comparándolo con el plan: texto, archivos, fecha y red.
 - Si el sistema de permisos niega una acción, no se rodea: se le dice a Dayana.
 
@@ -130,7 +138,70 @@ El detalle paso a paso está en `.claude/agents/programador-dma.md` y los script
 - 4 reels y 4 cuadros de historia que graba Gabriel: se editan y programan cuando lleguen.
 - Cuadros de historia con sticker, LinkedIn en perfiles personales y la encuesta de LinkedIn: a mano.
 
+**Palabras clave del mes y quién las contesta** (revisado el 27-nov; el feed sale a las 10:00 y las historias a las 9:00, hora de Ecuador)
+
+| Palabra | Feed de Instagram | Historia | Quién contesta el comentario | Cómo se monta | Estado al 27-nov |
+|---|---|---|---|---|---|
+| NIVEL | 1-dic | 1-dic | OpenReply | Por publicación, la crea el flujo | En la configuración del flujo |
+| ZAPATA | 2-dic | 2-dic | GoHighLevel | No se monta en OpenReply | Ver «Por decidir»: OpenReply también le está creando campaña |
+| ACERO | 3-dic | 14-dic | OpenReply | Por publicación, la crea el flujo | En la configuración del flujo |
+| TEMARIO | 4-dic (como segunda llamada, desde el 3-dic) | 3-dic (la contesta una persona) | OpenReply | Una campaña para todo el mes; encender el 2-dic | Creada y apagada el 27-nov, con el visto bueno de Dayana al texto |
+| MEMORIA | 5-dic | 7-dic | OpenReply | Por publicación, la crea el flujo | En la configuración del flujo |
+| NAVIDAD | 7-dic | — | OpenReply en Instagram, GoHighLevel en las demás | Una campaña para todo el mes | Creada y apagada. Solo se enciende con la landing lista: el 27-nov daba 404. Hay una tarea para el 4-dic |
+| MÁSTER | 17-dic (como segunda llamada, desde el 1-dic) | 10-dic (la contesta una persona) | OpenReply | Una campaña para todo el mes; encender el 30-nov | Creada y apagada el 27-nov, con el visto bueno de Dayana al texto |
+| COTIZA | 13-dic | 11-dic | OpenReply | Una campaña para todo el mes («cualquier publicación»); encender el 12-dic | Creada y apagada el 27-nov, con el visto bueno de Dayana al texto |
+| ESTRUCTURAS | — | 17-dic | Sin automatización asignada | Pendiente de decidir (la matriz dice «la contesta una persona») | — |
+| BIM | 26-dic | 21-dic | OpenReply | Por publicación, por la API, el día que salga | No puede ir en la configuración (ver lecciones). Borrador abajo |
+| DIPLOMADO | 2-ene | 4-ene | OpenReply | Por publicación; añadirla a la configuración del flujo | No está en la configuración. Borrador abajo |
+
+Enlaces comprobados el 27-nov (todos en 200): los formularios de NIVEL, ACERO, MEMORIA, COTIZA, BIM, DIPLOMADO y ZAPATA, el temario de Acero en Drive y el WhatsApp de ventas. La landing de Navidad, 404.
+
+**Borradores de las campañas** (primera versión; COTIZA, TEMARIO y MÁSTER se crearon con el texto final que aprobó Dayana el 27-nov, ver abajo; BIM y DIPLOMADO siguen sin crear)
+
+| Palabra | Enlace (el del bloque `embudo` de la matriz) | Botón | Mensaje directo | Pregunta y respuestas tocables |
+|---|---|---|---|---|
+| COTIZA | Formulario del cotizador de honorarios | Abrir cotizador | «¡Hola {username}! 👋 Aquí tienes el Cotizador de Honorarios gratis: separa tu cotización por entregables (cálculo, planos, memoria) y ponle precio a las revisiones extra antes de firmar. Toca el botón y ábrelo 🎁 {link}» | «Cuéntame: ¿qué proyectos cotizas más? 💼» · Vivienda y edificios / Naves de acero |
+| DIPLOMADO | Formulario del primer módulo del Diplomado BIM | Ver el módulo 1 | «¡Hola {username}! 👋 Aquí tienes el primer módulo del Diplomado BIM, gratis. Es grabado: si te gusta, empiezas hoy mismo, sin esperar una fecha. Toca el botón y entra 🎁 {link}» | «Cuéntame: ¿ya hiciste otros cursos de BIM, o este sería el primero? 🎓» · Ya hice otros cursos / Sería el primero |
+| BIM | Formulario del curso introductorio BIM | Ver el curso | «¡Hola {username}! 👋 Aquí tienes el curso introductorio BIM gratis. Mira primero la parte de tablas de cantidades: ahí se ve que el plano y el metrado salen del mismo modelo. Toca el botón y entra 🎁 {link}» | «¿Hoy trabajas con AutoCAD y Excel, o ya modelas en Revit? 🧱» · AutoCAD y Excel / Ya modelo en Revit |
+| TEMARIO (venta, sin exigir seguir) | Temario de Acero en Drive; segundo botón «Hablar por WhatsApp» | Ver el temario | «¡Hola {username}! Gracias por tu interés en la Especialización en Acero con Tutor IA 🔩 Aquí tienes el temario módulo a módulo. Es 100 % asincrónica: avanzas a tu ritmo, con tutor de IA y sesiones uno a uno con tu instructor. Una pregunta para orientarte: ¿hoy diseñas acero en algún software (Robot, SAP2000, ETABS) o estás empezando? {link}» | Va dentro del mensaje |
+| MÁSTER (venta, sin exigir seguir, sin precio) | WhatsApp de ventas | Agendar por WhatsApp | «¡Hola {username}! Gracias por tu interés en el Máster por bloques 🙌 Va por bloques (modelado, coordinación, gestión y BIM + IA) y empiezas por el que resuelve tu problema de hoy. La próxima cohorte empieza en febrero. Toca el botón, escríbenos por WhatsApp y agendamos 20 minutos para ver qué bloque te toca. Para orientarte desde ya: ¿en qué trabajas hoy? {link}» | Va dentro del mensaje |
+
+En las de recurso, el mensaje de «sígueme» sigue el de la casa («¡Hola {username}! 👋 Antes de mandarte [el recurso], sígueme en @design_modeling_dg. Toca el botón cuando ya me sigas y te lo envío al instante.») y las respuestas públicas son las 5 de la configuración.
+
+**Campañas nuevas creadas y apagadas (27-nov)**
+- Primer intento: el sistema de permisos de la sesión negó la llamada al agente y no se buscó otra vía. Se le contó a Dayana y ella confirmó en el chat: «Te confirmo que tú las crees» y «los textos están bien». Con esa confirmación se crearon desde la sesión principal.
+- Quedaron tres, apagadas, en «cualquier publicación», con la plantilla completa (exigir seguir, pregunta con dos respuestas, 5 respuestas públicas), sin precios y sin la certificación Autodesk:
+
+| Palabra | Campaña en OpenReply | Visto bueno de Dayana al texto | Se enciende |
+|---|---|---|---|
+| MÁSTER (y MASTER) | «MÁSTER · Máster por bloques, agendar (dic-2026)» | Sí, 27-nov | 30-nov |
+| TEMARIO | «TEMARIO · Especialización en Acero (dic-2026)» | Sí, 27-nov | 2-dic |
+| COTIZA (y COTISA) | «COTIZA · Cotizador de honorarios (dic-2026)» | Sí, 27-nov | 12-dic |
+
+- MÁSTER lleva dos botones por decisión de Dayana («deja solo 2 botones»): «Agendar por WhatsApp» y «Hacer el test». Con dos botones, quien ya sigue la cuenta ve solo la primera de las dos respuestas tocables.
+- Comprobado después de crear: OpenReply pasó de 28 a 31 campañas, las tres nuevas apagadas y ninguna de las anteriores cambió.
+- BIM y DIPLOMADO no se crearon: la palabra ya la escuchan campañas encendidas de septiembre (BIM en «5 ERRORES REVIT» y «CHECKLIST NAVISWORKS»; DIPLOMADO en «TUTOR IA DIPLOMADO»). Quedan con su texto preparado, para atarlas a su publicación si Dayana lo decide. La tarea diaria no las enciende.
+- Enlaces comprobados ese día, todos en 200. El temario de Acero es el PDF de Drive que ya manda el bot de ventas y se abre sin iniciar sesión.
+
+**Por decidir (Dayana)**
+- ZAPATA: la regla dice que solo la contesta GoHighLevel, pero está en la configuración del flujo y OpenReply le creó campaña en Instagram el 24 y el 26-nov (una con 3 mensajes fallidos). El reel del 2-dic recibirá otra. O se quita ZAPATA de la configuración y se apagan esas dos, o se deja OpenReply en Instagram y GoHighLevel solo en Facebook.
+- ACERO, COTIZA y TEMARIO tienen además un workflow de comentario publicado en GoHighLevel. Al montarlas en OpenReply hay que apagar su disparador de Instagram allí. Dayana los apaga a mano (27-nov: «pásame un recordatorio y apagamos las de GHL»); la tarea diaria de OpenReply le recuerda por WhatsApp el 1-dic (TEMARIO y ACERO) y el 11-dic (COTIZA), y repite al día siguiente si no ha confirmado.
+- ESTRUCTURAS (historia del 17-dic): automatizarla o dejarla a una persona.
+- BIM y DIPLOMADO: confirmar que van atadas a su publicación y no a «cualquier publicación».
+- Historias: confirmar qué palabras tiene el workflow «Palabras Claves en Historias IG» de GoHighLevel.
+
+**Lo que no se pudo comprobar**
+- Qué palabras escucha en GoHighLevel el workflow de historias y si los disparadores de comentario de cada palabra están encendidos para Instagram, para Facebook o para los dos: el listado solo da nombre y estado.
+- Quién contesta en Facebook «Comenta NIVEL» y «Comenta MEMORIA» ahora que su disparador de GoHighLevel está apagado.
+- Crear o encender una campaña por la API el 27-nov: ese día solo se leyó (28 campañas, respuesta 200). La escritura consta por la campaña de NAVIDAD, creada por esa vía el 25-nov.
+- Si OpenReply podría contestar mensajes directos en esta cuenta: el script lo da por imposible porque la bandeja es de GoHighLevel; no se probó.
+- Que el código leído sea el que está desplegado: se leyó la rama principal del repositorio de OpenReply.
+
 **Lecciones para el mes siguiente**
+- Montar las palabras al programar el mes, no cuando ya salió la pieza: las de venta, apagadas y con fecha de encendido; las de recurso, dentro de la configuración del flujo.
+- Antes de añadir una palabra a la configuración del flujo, probar los textos del mes con `palabra_del_caption`: BIM rompe dos clips de NIVEL («…en qué nivel BIM estás») y MÁSTER o TEMARIO dejan sin campaña a las piezas que piden dos palabras. COTIZA y DIPLOMADO se probaron y no rompen nada.
+- El flujo corre unas dos veces al día (hacia las 17:00 y las 23:00 de Ecuador). La campaña de una pieza de las 10:00 nace por la tarde; según el código de OpenReply, repasa después los comentarios de las últimas 72 horas que nadie contestó.
+- `cotejo_con_la_matriz` solo trae las palabras de recurso declaradas. Para TEMARIO, MÁSTER, BIM o DIPLOMADO hay que mirar `campanas` y `otras_palabras_montadas`.
 - Empezar por una semana, enseñársela a Dayana y soltar el resto con su visto bueno.
 - Fijar la hora de cada pieza en la matriz (LinkedIn y shorts no la traían: se usaron 8:00 y 18:00).
 - Comprobar las landings y las palabras clave antes de programar piezas que dependen de ellas.
