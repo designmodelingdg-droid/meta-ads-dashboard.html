@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-27",
+ "generado": "2026-11-28",
  "ventana_series_dias": 30,
  "fuente": "OpenReply — base propia (Postgres), solo lectura",
  "nota_privacidad": "Solo agregados. No se lee `commenterName`, ni `commentText`, ni `accessToken`. Ningún dato personal sale de la base.",
@@ -61,21 +61,21 @@
    "creada": "2026-11-25T15:22:28.149",
    "actualizada": "2026-11-25T15:22:37.131",
    "cuenta": "design_modeling_dg",
-   "enviados": 42,
+   "enviados": 43,
    "fallidos": 3,
    "entregados_sin_confirmar": 0,
    "saltados": 0,
    "pendientes": 0,
    "primer_envio": "2026-11-25T15:23:13.307",
-   "ultimo_envio": "2026-11-27T17:48:16.18",
+   "ultimo_envio": "2026-11-27T23:53:07.426",
    "clics": 28,
    "clics_limpios": 28,
    "clics_con_bots": 0,
    "enlaces_rastreados": 1,
    "mide_clics": true,
-   "clics_por_dm": 0.67,
-   "ctr": 0.6667,
-   "lectura_clics": "28 clics limpios sobre 42 DM enviados (67%). Son aperturas, no personas: la misma persona puede contar varias veces."
+   "clics_por_dm": 0.65,
+   "ctr": 0.6512,
+   "lectura_clics": "28 clics limpios sobre 43 DM enviados (65%). Son aperturas, no personas: la misma persona puede contar varias veces."
   },
   {
    "id": "cmun2iawl000004l8habk0hh6",
@@ -1045,12 +1045,12 @@
    "palabra": "MEMORIA",
    "campana": "MEMORIA · carrusel Te devolvieron la memoria (25-nov)",
    "campana_activa": true,
-   "enviados": 42,
+   "enviados": 43,
    "fallidos": 3,
    "entregados_sin_confirmar": 0,
    "saltados": 0,
    "primer_envio": "2026-11-25T15:23:13.307",
-   "ultimo_envio": "2026-11-27T17:48:16.18"
+   "ultimo_envio": "2026-11-27T23:53:07.426"
   },
   {
    "palabra": "MEMORIA",
@@ -1097,17 +1097,6 @@
    "ultimo_envio": "2026-10-03T09:47:09.764"
   },
   {
-   "palabra": "ZAPATA",
-   "campana": "UN SUELO SATURADO PIERDE RESISTENCIA ZAPATA",
-   "campana_activa": true,
-   "enviados": 5,
-   "fallidos": 0,
-   "entregados_sin_confirmar": 0,
-   "saltados": 0,
-   "primer_envio": "2026-11-26T22:36:41.3",
-   "ultimo_envio": "2026-11-27T03:43:35.723"
-  },
-  {
    "palabra": "BIM",
    "campana": "5 ERRORES REVIT",
    "campana_activa": true,
@@ -1117,6 +1106,17 @@
    "saltados": 0,
    "primer_envio": "2026-09-22T19:38:56.264",
    "ultimo_envio": "2026-10-04T20:29:06.988"
+  },
+  {
+   "palabra": "ZAPATA",
+   "campana": "UN SUELO SATURADO PIERDE RESISTENCIA ZAPATA",
+   "campana_activa": true,
+   "enviados": 5,
+   "fallidos": 0,
+   "entregados_sin_confirmar": 0,
+   "saltados": 0,
+   "primer_envio": "2026-11-26T22:36:41.3",
+   "ultimo_envio": "2026-11-27T03:43:35.723"
   },
   {
    "palabra": "GUIA",
@@ -1163,28 +1163,6 @@
    "ultimo_envio": "2026-11-20T00:40:17.353"
   },
   {
-   "palabra": "NIVEL",
-   "campana": "IA NIVELES DUPLICADOS NIVEL",
-   "campana_activa": true,
-   "enviados": 1,
-   "fallidos": 0,
-   "entregados_sin_confirmar": 0,
-   "saltados": 0,
-   "primer_envio": "2026-11-19T19:47:32.637",
-   "ultimo_envio": "2026-11-19T19:47:32.637"
-  },
-  {
-   "palabra": "NIVEL",
-   "campana": "CASI TODOS LOS MODELOS QUE NIVEL",
-   "campana_activa": true,
-   "enviados": 1,
-   "fallidos": 0,
-   "entregados_sin_confirmar": 0,
-   "saltados": 0,
-   "primer_envio": "2026-11-23T21:17:14.16",
-   "ultimo_envio": "2026-11-23T21:17:14.16"
-  },
-  {
    "palabra": "GUIA",
    "campana": "Guía Revit copy",
    "campana_activa": true,
@@ -1227,6 +1205,28 @@
    "saltados": 0,
    "primer_envio": "2026-10-02T11:42:39.253",
    "ultimo_envio": "2026-10-02T11:42:39.253"
+  },
+  {
+   "palabra": "NIVEL",
+   "campana": "CASI TODOS LOS MODELOS QUE NIVEL",
+   "campana_activa": true,
+   "enviados": 1,
+   "fallidos": 0,
+   "entregados_sin_confirmar": 0,
+   "saltados": 0,
+   "primer_envio": "2026-11-23T21:17:14.16",
+   "ultimo_envio": "2026-11-23T21:17:14.16"
+  },
+  {
+   "palabra": "NIVEL",
+   "campana": "IA NIVELES DUPLICADOS NIVEL",
+   "campana_activa": true,
+   "enviados": 1,
+   "fallidos": 0,
+   "entregados_sin_confirmar": 0,
+   "saltados": 0,
+   "primer_envio": "2026-11-19T19:47:32.637",
+   "ultimo_envio": "2026-11-19T19:47:32.637"
   },
   {
    "palabra": "NIVEL",
@@ -1316,13 +1316,6 @@
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=A5PQNo_6fXmhwBPTX0zmPOF]",
    "veces": 1,
    "ultima_vez": "2026-09-30T11:51:37.669"
-  },
-  {
-   "estado": "FAILED",
-   "pero_si_se_entrego": false,
-   "motivo": "MetaApiError -1: The comment you are trying to reply to, already has a reply. (/v25.0/17841404048578200/messages) [code=-1 sub=2534023 type=IGApiException trace=AyS9zLmMcuAOVROC2W0f7rD]",
-   "veces": 1,
-   "ultima_vez": "2026-11-27T03:57:09.911"
   },
   {
    "estado": "FAILED",
@@ -1418,6 +1411,13 @@
   {
    "estado": "FAILED",
    "pero_si_se_entrego": false,
+   "motivo": "MetaApiError -1: The comment you are trying to reply to, already has a reply. (/v25.0/17841404048578200/messages) [code=-1 sub=2534023 type=IGApiException trace=AKlLITApqqyfew0UPJqu7_k]",
+   "veces": 1,
+   "ultima_vez": "2026-11-25T15:27:12.895"
+  },
+  {
+   "estado": "FAILED",
+   "pero_si_se_entrego": false,
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=A9LQ8VErbmAY1COtKp4JdG1]",
    "veces": 1,
    "ultima_vez": "2026-09-30T17:34:30.76"
@@ -1453,9 +1453,9 @@
   {
    "estado": "FAILED",
    "pero_si_se_entrego": false,
-   "motivo": "MetaApiError -1: The comment you are trying to reply to, already has a reply. (/v25.0/17841404048578200/messages) [code=-1 sub=2534023 type=IGApiException trace=AA8UsMDF9OGODqQVEsoYzNP]",
+   "motivo": "MetaApiError -1: The comment you are trying to reply to, already has a reply. (/v25.0/17841404048578200/messages) [code=-1 sub=2534023 type=IGApiException trace=AOD-WyG3ss5xddlSKzZc08o]",
    "veces": 1,
-   "ultima_vez": "2026-11-25T15:27:12.904"
+   "ultima_vez": "2026-11-27T03:57:09.911"
   },
   {
    "estado": "FAILED",
@@ -1519,13 +1519,6 @@
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=ANX4AZop2otFRN4e69itihB]",
    "veces": 1,
    "ultima_vez": "2026-09-30T06:56:34.6"
-  },
-  {
-   "estado": "FAILED",
-   "pero_si_se_entrego": false,
-   "motivo": "MetaApiError -1: The comment you are trying to reply to, already has a reply. (/v25.0/17841404048578200/messages) [code=-1 sub=2534023 type=IGApiException trace=AMYmHTn_WyCgi9abgGr9P-K]",
-   "veces": 1,
-   "ultima_vez": "2026-11-25T15:27:12.895"
   },
   {
    "estado": "FAILED",
@@ -1645,6 +1638,13 @@
    "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=AJduw1JrJUkuIhmsTDYUf11]",
    "veces": 1,
    "ultima_vez": "2026-09-30T16:45:43.967"
+  },
+  {
+   "estado": "FAILED",
+   "pero_si_se_entrego": false,
+   "motivo": "PermissionError 100: The action is invalid since it's not the thread owner. (/v25.0/17841404048578200/messages) [code=100 sub=2534037 type=IGApiException trace=AQeCqMzI6cHpkwiXzX4qLAW]",
+   "veces": 1,
+   "ultima_vez": "2026-10-06T10:18:37.858"
   }
  ],
  "enlaces": [
@@ -2086,15 +2086,10 @@
   },
   {
    "fecha": "2026-11-27",
-   "enviados": 6
+   "enviados": 7
   }
  ],
  "seguidores": [
-  {
-   "cuenta": "design_modeling_dg",
-   "fecha": "2026-10-28",
-   "seguidores": 81676
-  },
   {
    "cuenta": "design_modeling_dg",
    "fecha": "2026-10-29",
@@ -2417,8 +2412,8 @@
     "MEMORIA VERIFICABLE",
     "MEMORIA DE CÁLCULO"
    ],
-   "dms_enviados": 73,
-   "lectura": "Viva: 73 DM enviados."
+   "dms_enviados": 74,
+   "lectura": "Viva: 74 DM enviados."
   },
   {
    "palabra": "DYNAMO",
