@@ -1,8 +1,8 @@
 # Inventario de correos — GoHighLevel
 
-Generado el 2026-11-26.
+Generado el 2026-11-27.
 
-**470 plantillas** en **62 carpetas**. 470 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
+**476 plantillas** en **62 carpetas**. 476 con contenido descargado, 0 fallidas, 0 sin enlace de vista previa.
 
 > Lo que NO sale por API: que workflow usa que plantilla. El endpoint de automatizaciones devuelve solo metadatos. En esta cuenta las plantillas estan nombradas por su flujo, asi que el cruce se puede hacer leyendo.
 
@@ -258,6 +258,147 @@ Hey {{communities_contacts.receiverName}}
 Join now to start collaborating!
 Accept Invite
 Link will expire after 30 days.
+```
+
+### DMA App · Genérica · 2026-12-02 · La zapata del proyecto anterior
+
+- **id:** `6b08fe4742d7f077d08422f6`
+- **tipo:** html
+- **actualizada:** 2026-11-27T03:51:35.965Z
+- **Cuerpo:**
+
+```
+Una pregunta incómoda: ¿alguna vez copiaste la zapata del proyecto anterior?
+¿Copiaste la zapata del proyecto anterior?
+Hola {{contact.first_name}} ,
+Una pregunta incómoda: ¿alguna vez copiaste la zapata del proyecto anterior?
+La misma zapata no se comporta igual en arcilla, arena, limo o grava. Cambia la capacidad, cambia el asentamiento y cambia lo que hay que verificar.
+Por eso las dimensiones salen del estudio de suelos de ESE terreno. Con esos datos, nuestra calculadora gratuita te da las dimensiones y las verificaciones en un par de minutos.
+Usar la calculadora &#8594;
+P.D.: Responde este correo y cuéntame: ¿en qué suelo estás cimentando ahora?
+Un abrazo,
+Design Modeling Academy
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### DMA App · Genérica · 2026-12-09 · La memoria devuelta
+
+- **id:** `6b08fe5158f82053240e61f6`
+- **tipo:** html
+- **actualizada:** 2026-11-27T03:51:46.559Z
+- **Cuerpo:**
+
+```
+Te devolvieron la memoria de cálculo. Revisaste todo. El cálculo estaba bien.
+Te la devolvieron… y el cálculo estaba bien
+Hola {{contact.first_name}} ,
+Te devolvieron la memoria de cálculo. Revisaste todo. El cálculo estaba bien.
+Casi siempre es esto: la memoria no dice qué norma usaste, qué combinación gobierna ni de dónde sale cada carga. Un ejemplo: el ACI 318-19 permite hasta 8 % de acero en columnas; la NEC-SE-HM, 3 %. Si no declaras con cuál diseñaste, vuelve.
+Te dejo la plantilla de memoria verificable que usamos: cada número con su norma y su artículo.
+Descargar la plantilla &#8594;
+P.D.: Responde este correo: ¿qué es lo que más te observan cuando te devuelven una memoria?
+Un abrazo,
+Design Modeling Academy
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### DMA App · Genérica · 2026-12-16 · Ratios de 1,4
+
+- **id:** `6b08fe545d417ca6769ee20f`
+- **tipo:** html
+- **actualizada:** 2026-11-27T03:51:49.018Z
+- **Cuerpo:**
+
+```
+Tu modelo da ratios de 1,4 en las columnas. La primera idea es subir el perfil.
+Antes de subir el perfil, revisa esto
+Hola {{contact.first_name}} ,
+Tu modelo da ratios de 1,4 en las columnas. La primera idea es subir el perfil.
+Antes, revisa tres cosas: cómo modelaste los apoyos, las longitudes de pandeo de cada barra y si el viento entró con la dirección correcta. Si al corregir el modelo los ratios bajan, el perfil estaba bien.
+Estas y otras dos están en las 5 verificaciones que hacemos antes de dar por buena una nave:
+Ver las 5 verificaciones &#8594;
+P.D.: Y si quieres más información de la Especialización en Acero con Tutor IA, responde este correo con la palabra TEMARIO y te mando el temario módulo a módulo.
+Un abrazo,
+Design Modeling Academy
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### DMA App · Genérica · 2026-12-22 · Revisión de fin de año
+
+- **id:** `6b08fe573546a9e8d1935564`
+- **tipo:** html
+- **actualizada:** 2026-11-27T03:51:51.903Z
+- **Cuerpo:**
+
+```
+Antes de cerrar el año, tres revisiones rápidas a tu modelo:
+3 cosas que revisar en tu modelo antes de cerrar el año
+Hola {{contact.first_name}} ,
+Antes de cerrar el año, tres revisiones rápidas a tu modelo:
+1 · Niveles duplicados: en el workshop, la IA encontró 3 niveles a la misma altura en un modelo real.
+2 · Parámetros vacíos en los elementos que se van a cuantificar.
+3 · Que los niveles de arquitectura y de estructura digan qué miden (piso terminado o losa).
+El video largo con el caso de los niveles sale hoy en nuestro YouTube.
+Si quieres saber en qué nivel BIM cierras el año, el test toma 5 minutos:
+Hacer el test &#8594;
+P.D.: Felices fiestas de parte de todo el equipo de Design Modeling Academy.
+Un abrazo,
+Design Modeling Academy
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### DMA App · Genérica · 2026-12-29 · Cotiza 2027
+
+- **id:** `6b08fe5958f82053240e6294`
+- **tipo:** html
+- **actualizada:** 2026-11-27T03:51:54.094Z
+- **Cuerpo:**
+
+```
+El proyecto que más plata te hizo perder en 2026 probablemente no fue el más difícil.
+El proyecto que más plata te hizo perder este año
+Hola {{contact.first_name}} ,
+El proyecto que más plata te hizo perder en 2026 probablemente no fue el más difícil.
+Fue el que cotizaste por m² sin decir cuántas rondas de revisión incluías. Cada cambio de arquitectura después de aprobado fue trabajo gratis.
+Para 2027: separa entregables, deja escritas las rondas incluidas y ponle precio a la siguiente antes de firmar.
+Usar el cotizador &#8594;
+P.D.: Responde este correo: ¿cuántas rondas de revisión incluyes hoy?
+Un abrazo,
+Design Modeling Academy
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
+```
+
+### DMA App · Genérica · 2027-01-05 · ¿Por qué bloque empiezas 2027?
+
+- **id:** `6b08fe5b42d7f077d084243b`
+- **tipo:** html
+- **actualizada:** 2026-11-27T03:51:55.778Z
+- **Cuerpo:**
+
+```
+Si en 2027 quieres dejar de ser «el que modela», el primer paso no es inscribirte en nada.
+¿Por qué bloque empiezas 2027?
+Hola {{contact.first_name}} ,
+Si en 2027 quieres dejar de ser «el que modela», el primer paso no es inscribirte en nada. Es saber dónde estás.
+1 · Haz el test de nivel BIM (5 minutos): https://funnel.dgdesignmodeling.com/acceso-gratis-test-nivel-bim-form
+2 · Si quieres verlo con un asesor, agenda 20 minutos: https://wa.me/593984372010
+El Máster va por bloques: modelado, coordinación, gestión e IA. Empiezas por el que resuelve tu problema de hoy. La próxima cohorte empieza en febrero.
+Responde este correo con tu resultado del test y te digo por dónde empezaría yo.
+Un abrazo,
+Design Modeling Academy
+Design Modeling DG &middot; Modeling-DG S.A.S. &middot; Quito, Ecuador
+designmodelingacademy.com
+{{unsubscribe_url}}
 ```
 
 ### DMA App · Leadmagnet · Descarga tu recurso gratuito de BIM + IA

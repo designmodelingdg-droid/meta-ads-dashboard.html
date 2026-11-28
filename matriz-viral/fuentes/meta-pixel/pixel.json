@@ -1,8 +1,8 @@
 {
- "generado": "2026-11-26",
+ "generado": "2026-11-27",
  "ventana": {
-  "desde": "2026-10-27",
-  "hasta": "2026-11-25"
+  "desde": "2026-10-28",
+  "hasta": "2026-11-26"
  },
  "fuente": "Meta Marketing API — nodo AdsPixel y su edge /stats",
  "nota_emq": "El EMQ de Events Manager no esta expuesto en la Marketing API. Lo que hay aqui es match_keys, que es el insumo del EMQ, no el EMQ. No confundirlos en el informe.",
@@ -96,7 +96,7 @@
     "id": "242801670396442",
     "name": "[A] BIM",
     "creation_time": "2020-05-15T06:24:36+0000",
-    "last_fired_time": "2026-11-25T12:51:03+0000",
+    "last_fired_time": "2026-11-26T20:58:05+0000",
     "data_use_setting": "advertising_and_analytics",
     "enable_automatic_matching": true,
     "first_party_cookie_status": "first_party_cookie_enabled",
@@ -111,16 +111,6 @@
      "para_que": "cuantos eventos de cada tipo llegaron",
      "filas": [
       {
-       "start_time": "2026-10-30T20:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "Schedule",
-         "count": 1
-        }
-       ]
-      },
-      {
        "start_time": "2026-10-30T23:00:00+0000",
        "aggregation": "event",
        "data": [
@@ -762,6 +752,36 @@
       },
       {
        "start_time": "2026-11-24T05:00:00+0000",
+       "aggregation": "event",
+       "data": [
+        {
+         "value": "Schedule",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T01:00:00+0000",
+       "aggregation": "event",
+       "data": [
+        {
+         "value": "Schedule",
+         "count": 2
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T05:00:00+0000",
+       "aggregation": "event",
+       "data": [
+        {
+         "value": "Schedule",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T12:00:00+0000",
        "aggregation": "event",
        "data": [
         {
@@ -776,16 +796,6 @@
      "para_que": "WEB_ONLY vs SERVER_ONLY — asi se detecta si la CAPI vive",
      "filas": [
       {
-       "start_time": "2026-10-30T20:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "SERVER",
-         "count": 1
-        }
-       ]
-      },
-      {
        "start_time": "2026-10-30T23:00:00+0000",
        "aggregation": "event_source",
        "data": [
@@ -1434,48 +1444,42 @@
          "count": 1
         }
        ]
+      },
+      {
+       "start_time": "2026-11-25T01:00:00+0000",
+       "aggregation": "event_source",
+       "data": [
+        {
+         "value": "SERVER",
+         "count": 2
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T05:00:00+0000",
+       "aggregation": "event_source",
+       "data": [
+        {
+         "value": "SERVER",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T12:00:00+0000",
+       "aggregation": "event_source",
+       "data": [
+        {
+         "value": "SERVER",
+         "count": 1
+        }
+       ]
       }
      ]
     },
     "match_keys": {
      "para_que": "que parametros de emparejamiento se envian (insumo del EMQ)",
      "filas": [
-      {
-       "start_time": "2026-10-30T20:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "Schedule",
-         "value": "country",
-         "count": 1
-        },
-        {
-         "event": "Schedule",
-         "value": "email",
-         "count": 1
-        },
-        {
-         "event": "Schedule",
-         "value": "fn",
-         "count": 1
-        },
-        {
-         "event": "Schedule",
-         "value": "ln",
-         "count": 1
-        },
-        {
-         "event": "Schedule",
-         "value": "pdid",
-         "count": 1
-        },
-        {
-         "event": "Schedule",
-         "value": "phone",
-         "count": 1
-        }
-       ]
-      },
       {
        "start_time": "2026-10-30T23:00:00+0000",
        "aggregation": "match_keys",
@@ -3670,22 +3674,146 @@
          "count": 1
         }
        ]
+      },
+      {
+       "start_time": "2026-11-25T01:00:00+0000",
+       "aggregation": "match_keys",
+       "data": [
+        {
+         "event": "Schedule",
+         "value": "country",
+         "count": 1
+        },
+        {
+         "event": "Schedule",
+         "value": "email",
+         "count": 1
+        },
+        {
+         "event": "Schedule",
+         "value": "fn",
+         "count": 1
+        },
+        {
+         "event": "Schedule",
+         "value": "ln",
+         "count": 1
+        },
+        {
+         "event": "Schedule",
+         "value": "pdid",
+         "count": 1
+        },
+        {
+         "event": "Schedule",
+         "value": "phone",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T02:00:00+0000",
+       "aggregation": "match_keys",
+       "data": [
+        {
+         "event": "Schedule",
+         "value": "country",
+         "count": 1
+        },
+        {
+         "event": "Schedule",
+         "value": "email",
+         "count": 1
+        },
+        {
+         "event": "Schedule",
+         "value": "fn",
+         "count": 1
+        },
+        {
+         "event": "Schedule",
+         "value": "ln",
+         "count": 1
+        },
+        {
+         "event": "Schedule",
+         "value": "pdid",
+         "count": 1
+        },
+        {
+         "event": "Schedule",
+         "value": "phone",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T05:00:00+0000",
+       "aggregation": "match_keys",
+       "data": [
+        {
+         "event": "Schedule",
+         "value": "country",
+         "count": 1
+        },
+        {
+         "event": "Schedule",
+         "value": "email",
+         "count": 1
+        },
+        {
+         "event": "Schedule",
+         "value": "fn",
+         "count": 1
+        },
+        {
+         "event": "Schedule",
+         "value": "ln",
+         "count": 1
+        },
+        {
+         "event": "Schedule",
+         "value": "phone",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T12:00:00+0000",
+       "aggregation": "match_keys",
+       "data": [
+        {
+         "event": "Schedule",
+         "value": "country",
+         "count": 1
+        },
+        {
+         "event": "Schedule",
+         "value": "email",
+         "count": 1
+        },
+        {
+         "event": "Schedule",
+         "value": "fn",
+         "count": 1
+        },
+        {
+         "event": "Schedule",
+         "value": "ln",
+         "count": 1
+        },
+        {
+         "event": "Schedule",
+         "value": "phone",
+         "count": 1
+        }
+       ]
       }
      ]
     },
     "device_type": {
      "para_que": "reparto por dispositivo",
      "filas": [
-      {
-       "start_time": "2026-10-30T20:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "mobile_iphone",
-         "count": 1
-        }
-       ]
-      },
       {
        "start_time": "2026-10-30T23:00:00+0000",
        "aggregation": "device_type",
@@ -4351,22 +4479,42 @@
          "count": 1
         }
        ]
+      },
+      {
+       "start_time": "2026-11-25T01:00:00+0000",
+       "aggregation": "device_type",
+       "data": [
+        {
+         "value": "mobile_iphone",
+         "count": 2
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T05:00:00+0000",
+       "aggregation": "device_type",
+       "data": [
+        {
+         "value": "mobile_android_phone",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T12:00:00+0000",
+       "aggregation": "device_type",
+       "data": [
+        {
+         "value": "mobile_android_phone",
+         "count": 1
+        }
+       ]
       }
      ]
     },
     "browser_type": {
      "para_que": "reparto por navegador",
      "filas": [
-      {
-       "start_time": "2026-10-30T20:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Instagram IAB for iOS",
-         "count": 1
-        }
-       ]
-      },
       {
        "start_time": "2026-10-30T23:00:00+0000",
        "aggregation": "browser_type",
@@ -5036,14 +5184,44 @@
          "count": 1
         }
        ]
+      },
+      {
+       "start_time": "2026-11-25T01:00:00+0000",
+       "aggregation": "browser_type",
+       "data": [
+        {
+         "value": "Facebook for iOS",
+         "count": 2
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T05:00:00+0000",
+       "aggregation": "browser_type",
+       "data": [
+        {
+         "value": "Instagram IAB for Android",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T12:00:00+0000",
+       "aggregation": "browser_type",
+       "data": [
+        {
+         "value": "Instagram IAB for Android",
+         "count": 1
+        }
+       ]
       }
      ]
     }
    },
-   "eventos_servidor": 71,
+   "eventos_servidor": 74,
    "eventos_navegador": 0,
    "capi_detectada": true,
-   "nota_capi": "Hay 71 eventos de SERVIDOR contra 0 de navegador: la Conversions API esta enviando."
+   "nota_capi": "Hay 74 eventos de SERVIDOR contra 0 de navegador: la Conversions API esta enviando."
   },
   {
    "config": {
@@ -5064,336 +5242,6 @@
     "event": {
      "para_que": "cuantos eventos de cada tipo llegaron",
      "filas": [
-      {
-       "start_time": "2026-10-29T13:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "PageView",
-         "count": 11
-        },
-        {
-         "value": "ViewContent",
-         "count": 3
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T14:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "PageView",
-         "count": 5
-        },
-        {
-         "value": "ViewContent",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T15:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "PageView",
-         "count": 1
-        },
-        {
-         "value": "ViewContent",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T16:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "PageView",
-         "count": 7
-        },
-        {
-         "value": "ViewContent",
-         "count": 5
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T17:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "PageView",
-         "count": 5
-        },
-        {
-         "value": "ViewContent",
-         "count": 3
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T18:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "PageView",
-         "count": 8
-        },
-        {
-         "value": "ViewContent",
-         "count": 5
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T19:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "PageView",
-         "count": 3
-        },
-        {
-         "value": "ViewContent",
-         "count": 3
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T20:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "PageView",
-         "count": 14
-        },
-        {
-         "value": "ViewContent",
-         "count": 4
-        },
-        {
-         "value": "Lead",
-         "count": 3
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T21:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "PageView",
-         "count": 4
-        },
-        {
-         "value": "ViewContent",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T22:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "PageView",
-         "count": 3
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T23:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "PageView",
-         "count": 4
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T00:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "PageView",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T01:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "PageView",
-         "count": 6
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T02:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "PageView",
-         "count": 13
-        },
-        {
-         "value": "ViewContent",
-         "count": 13
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T03:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "PageView",
-         "count": 2
-        },
-        {
-         "value": "ViewContent",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T07:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "PageView",
-         "count": 1
-        },
-        {
-         "value": "ViewContent",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T13:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "PageView",
-         "count": 16
-        },
-        {
-         "value": "ViewContent",
-         "count": 5
-        },
-        {
-         "value": "InitiateCheckout",
-         "count": 2
-        },
-        {
-         "value": "Lead",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T14:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "PageView",
-         "count": 12
-        },
-        {
-         "value": "Purchase",
-         "count": 3
-        },
-        {
-         "value": "ViewContent",
-         "count": 3
-        },
-        {
-         "value": "InitiateCheckout",
-         "count": 2
-        },
-        {
-         "value": "AddPaymentInfo",
-         "count": 1
-        },
-        {
-         "value": "Lead",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T16:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "PageView",
-         "count": 6
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T17:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "PageView",
-         "count": 13
-        },
-        {
-         "value": "ViewContent",
-         "count": 8
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T18:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "PageView",
-         "count": 23
-        },
-        {
-         "value": "ViewContent",
-         "count": 20
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T19:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "PageView",
-         "count": 3
-        },
-        {
-         "value": "ViewContent",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T20:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "PageView",
-         "count": 5
-        },
-        {
-         "value": "ViewContent",
-         "count": 2
-        }
-       ]
-      },
       {
        "start_time": "2026-10-30T21:00:00+0000",
        "aggregation": "event",
@@ -7216,236 +7064,6 @@
      "para_que": "WEB_ONLY vs SERVER_ONLY — asi se detecta si la CAPI vive",
      "filas": [
       {
-       "start_time": "2026-10-29T13:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "BROWSER",
-         "count": 14
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T14:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "BROWSER",
-         "count": 7
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T15:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "BROWSER",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T16:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "BROWSER",
-         "count": 12
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T17:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "BROWSER",
-         "count": 8
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T18:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "BROWSER",
-         "count": 13
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T19:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "BROWSER",
-         "count": 6
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T20:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "BROWSER",
-         "count": 21
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T21:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "BROWSER",
-         "count": 6
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T22:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "BROWSER",
-         "count": 3
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T23:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "BROWSER",
-         "count": 4
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T00:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "BROWSER",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T01:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "BROWSER",
-         "count": 6
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T02:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "BROWSER",
-         "count": 26
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T03:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "BROWSER",
-         "count": 4
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T07:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "BROWSER",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T13:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "BROWSER",
-         "count": 24
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T14:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "BROWSER",
-         "count": 22
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T16:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "BROWSER",
-         "count": 6
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T17:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "BROWSER",
-         "count": 21
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T18:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "BROWSER",
-         "count": 43
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T19:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "BROWSER",
-         "count": 5
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T20:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "BROWSER",
-         "count": 5
-        }
-       ]
-      },
-      {
        "start_time": "2026-10-30T21:00:00+0000",
        "aggregation": "event_source",
        "data": [
@@ -8920,934 +8538,6 @@
     "match_keys": {
      "para_que": "que parametros de emparejamiento se envian (insumo del EMQ)",
      "filas": [
-      {
-       "start_time": "2026-10-29T13:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "PageView",
-         "value": "pdid",
-         "count": 11
-        },
-        {
-         "event": "PageView",
-         "value": "raw_fr_cookie",
-         "count": 11
-        },
-        {
-         "event": "ViewContent",
-         "value": "pdid",
-         "count": 3
-        },
-        {
-         "event": "ViewContent",
-         "value": "raw_fr_cookie",
-         "count": 3
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T14:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "PageView",
-         "value": "pdid",
-         "count": 5
-        },
-        {
-         "event": "PageView",
-         "value": "raw_fr_cookie",
-         "count": 4
-        },
-        {
-         "event": "ViewContent",
-         "value": "pdid",
-         "count": 2
-        },
-        {
-         "event": "ViewContent",
-         "value": "raw_fr_cookie",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T15:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "PageView",
-         "value": "pdid",
-         "count": 1
-        },
-        {
-         "event": "PageView",
-         "value": "raw_fr_cookie",
-         "count": 1
-        },
-        {
-         "event": "ViewContent",
-         "value": "pdid",
-         "count": 1
-        },
-        {
-         "event": "ViewContent",
-         "value": "raw_fr_cookie",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T16:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "PageView",
-         "value": "pdid",
-         "count": 7
-        },
-        {
-         "event": "PageView",
-         "value": "raw_fr_cookie",
-         "count": 7
-        },
-        {
-         "event": "ViewContent",
-         "value": "pdid",
-         "count": 5
-        },
-        {
-         "event": "ViewContent",
-         "value": "raw_fr_cookie",
-         "count": 5
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T17:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "PageView",
-         "value": "pdid",
-         "count": 5
-        },
-        {
-         "event": "PageView",
-         "value": "raw_fr_cookie",
-         "count": 4
-        },
-        {
-         "event": "ViewContent",
-         "value": "pdid",
-         "count": 3
-        },
-        {
-         "event": "ViewContent",
-         "value": "raw_fr_cookie",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T18:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "PageView",
-         "value": "pdid",
-         "count": 8
-        },
-        {
-         "event": "ViewContent",
-         "value": "pdid",
-         "count": 5
-        },
-        {
-         "event": "PageView",
-         "value": "raw_fr_cookie",
-         "count": 2
-        },
-        {
-         "event": "ViewContent",
-         "value": "raw_fr_cookie",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T19:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "PageView",
-         "value": "pdid",
-         "count": 3
-        },
-        {
-         "event": "ViewContent",
-         "value": "pdid",
-         "count": 3
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T20:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "PageView",
-         "value": "pdid",
-         "count": 14
-        },
-        {
-         "event": "PageView",
-         "value": "c_user_cookie",
-         "count": 10
-        },
-        {
-         "event": "PageView",
-         "value": "fr_cookie",
-         "count": 10
-        },
-        {
-         "event": "PageView",
-         "value": "raw_fr_cookie",
-         "count": 10
-        },
-        {
-         "event": "PageView",
-         "value": "true_fr_cookie",
-         "count": 10
-        },
-        {
-         "event": "PageView",
-         "value": "email",
-         "count": 7
-        },
-        {
-         "event": "ViewContent",
-         "value": "pdid",
-         "count": 4
-        },
-        {
-         "event": "Lead",
-         "value": "c_user_cookie",
-         "count": 3
-        },
-        {
-         "event": "Lead",
-         "value": "email",
-         "count": 3
-        },
-        {
-         "event": "Lead",
-         "value": "fr_cookie",
-         "count": 3
-        },
-        {
-         "event": "Lead",
-         "value": "pdid",
-         "count": 3
-        },
-        {
-         "event": "Lead",
-         "value": "raw_fr_cookie",
-         "count": 3
-        },
-        {
-         "event": "Lead",
-         "value": "true_fr_cookie",
-         "count": 3
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T21:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "PageView",
-         "value": "pdid",
-         "count": 4
-        },
-        {
-         "event": "PageView",
-         "value": "c_user_cookie",
-         "count": 3
-        },
-        {
-         "event": "PageView",
-         "value": "fr_cookie",
-         "count": 3
-        },
-        {
-         "event": "PageView",
-         "value": "raw_fr_cookie",
-         "count": 3
-        },
-        {
-         "event": "PageView",
-         "value": "true_fr_cookie",
-         "count": 3
-        },
-        {
-         "event": "ViewContent",
-         "value": "pdid",
-         "count": 2
-        },
-        {
-         "event": "ViewContent",
-         "value": "c_user_cookie",
-         "count": 1
-        },
-        {
-         "event": "ViewContent",
-         "value": "fr_cookie",
-         "count": 1
-        },
-        {
-         "event": "ViewContent",
-         "value": "raw_fr_cookie",
-         "count": 1
-        },
-        {
-         "event": "ViewContent",
-         "value": "true_fr_cookie",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T22:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "PageView",
-         "value": "pdid",
-         "count": 3
-        },
-        {
-         "event": "PageView",
-         "value": "raw_fr_cookie",
-         "count": 3
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T23:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "PageView",
-         "value": "pdid",
-         "count": 4
-        },
-        {
-         "event": "PageView",
-         "value": "raw_fr_cookie",
-         "count": 4
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T00:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "PageView",
-         "value": "fr_cookie",
-         "count": 1
-        },
-        {
-         "event": "PageView",
-         "value": "pdid",
-         "count": 1
-        },
-        {
-         "event": "PageView",
-         "value": "raw_fr_cookie",
-         "count": 1
-        },
-        {
-         "event": "PageView",
-         "value": "true_fr_cookie",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T01:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "PageView",
-         "value": "pdid",
-         "count": 6
-        },
-        {
-         "event": "PageView",
-         "value": "raw_fr_cookie",
-         "count": 5
-        },
-        {
-         "event": "PageView",
-         "value": "c_user_cookie",
-         "count": 2
-        },
-        {
-         "event": "PageView",
-         "value": "email",
-         "count": 2
-        },
-        {
-         "event": "PageView",
-         "value": "fr_cookie",
-         "count": 2
-        },
-        {
-         "event": "PageView",
-         "value": "true_fr_cookie",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T02:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "PageView",
-         "value": "pdid",
-         "count": 13
-        },
-        {
-         "event": "ViewContent",
-         "value": "pdid",
-         "count": 13
-        },
-        {
-         "event": "PageView",
-         "value": "raw_fr_cookie",
-         "count": 1
-        },
-        {
-         "event": "ViewContent",
-         "value": "raw_fr_cookie",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T03:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "PageView",
-         "value": "pdid",
-         "count": 2
-        },
-        {
-         "event": "ViewContent",
-         "value": "pdid",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T07:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "PageView",
-         "value": "pdid",
-         "count": 1
-        },
-        {
-         "event": "ViewContent",
-         "value": "pdid",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T13:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "PageView",
-         "value": "pdid",
-         "count": 16
-        },
-        {
-         "event": "PageView",
-         "value": "c_user_cookie",
-         "count": 12
-        },
-        {
-         "event": "PageView",
-         "value": "true_fr_cookie",
-         "count": 12
-        },
-        {
-         "event": "PageView",
-         "value": "raw_fr_cookie",
-         "count": 12
-        },
-        {
-         "event": "PageView",
-         "value": "fr_cookie",
-         "count": 12
-        },
-        {
-         "event": "PageView",
-         "value": "email",
-         "count": 9
-        },
-        {
-         "event": "ViewContent",
-         "value": "raw_fr_cookie",
-         "count": 5
-        },
-        {
-         "event": "ViewContent",
-         "value": "pdid",
-         "count": 5
-        },
-        {
-         "event": "ViewContent",
-         "value": "fr_cookie",
-         "count": 5
-        },
-        {
-         "event": "ViewContent",
-         "value": "c_user_cookie",
-         "count": 5
-        },
-        {
-         "event": "ViewContent",
-         "value": "true_fr_cookie",
-         "count": 5
-        },
-        {
-         "event": "ViewContent",
-         "value": "email",
-         "count": 4
-        },
-        {
-         "event": "InitiateCheckout",
-         "value": "email",
-         "count": 2
-        },
-        {
-         "event": "InitiateCheckout",
-         "value": "true_fr_cookie",
-         "count": 2
-        },
-        {
-         "event": "InitiateCheckout",
-         "value": "raw_fr_cookie",
-         "count": 2
-        },
-        {
-         "event": "InitiateCheckout",
-         "value": "pdid",
-         "count": 2
-        },
-        {
-         "event": "InitiateCheckout",
-         "value": "fr_cookie",
-         "count": 2
-        },
-        {
-         "event": "InitiateCheckout",
-         "value": "c_user_cookie",
-         "count": 2
-        },
-        {
-         "event": "Lead",
-         "value": "true_fr_cookie",
-         "count": 1
-        },
-        {
-         "event": "Lead",
-         "value": "raw_fr_cookie",
-         "count": 1
-        },
-        {
-         "event": "Lead",
-         "value": "pdid",
-         "count": 1
-        },
-        {
-         "event": "Lead",
-         "value": "fr_cookie",
-         "count": 1
-        },
-        {
-         "event": "Lead",
-         "value": "email",
-         "count": 1
-        },
-        {
-         "event": "Lead",
-         "value": "c_user_cookie",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T14:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "PageView",
-         "value": "pdid",
-         "count": 12
-        },
-        {
-         "event": "PageView",
-         "value": "raw_fr_cookie",
-         "count": 12
-        },
-        {
-         "event": "PageView",
-         "value": "c_user_cookie",
-         "count": 10
-        },
-        {
-         "event": "PageView",
-         "value": "true_fr_cookie",
-         "count": 10
-        },
-        {
-         "event": "PageView",
-         "value": "fr_cookie",
-         "count": 10
-        },
-        {
-         "event": "PageView",
-         "value": "email",
-         "count": 8
-        },
-        {
-         "event": "ViewContent",
-         "value": "email",
-         "count": 3
-        },
-        {
-         "event": "ViewContent",
-         "value": "c_user_cookie",
-         "count": 3
-        },
-        {
-         "event": "Purchase",
-         "value": "true_fr_cookie",
-         "count": 3
-        },
-        {
-         "event": "Purchase",
-         "value": "pdid",
-         "count": 3
-        },
-        {
-         "event": "Purchase",
-         "value": "fr_cookie",
-         "count": 3
-        },
-        {
-         "event": "Purchase",
-         "value": "email",
-         "count": 3
-        },
-        {
-         "event": "Purchase",
-         "value": "c_user_cookie",
-         "count": 3
-        },
-        {
-         "event": "ViewContent",
-         "value": "fr_cookie",
-         "count": 3
-        },
-        {
-         "event": "ViewContent",
-         "value": "pdid",
-         "count": 3
-        },
-        {
-         "event": "ViewContent",
-         "value": "raw_fr_cookie",
-         "count": 3
-        },
-        {
-         "event": "Purchase",
-         "value": "raw_fr_cookie",
-         "count": 3
-        },
-        {
-         "event": "ViewContent",
-         "value": "true_fr_cookie",
-         "count": 3
-        },
-        {
-         "event": "InitiateCheckout",
-         "value": "pdid",
-         "count": 2
-        },
-        {
-         "event": "InitiateCheckout",
-         "value": "fr_cookie",
-         "count": 2
-        },
-        {
-         "event": "InitiateCheckout",
-         "value": "c_user_cookie",
-         "count": 2
-        },
-        {
-         "event": "InitiateCheckout",
-         "value": "true_fr_cookie",
-         "count": 2
-        },
-        {
-         "event": "InitiateCheckout",
-         "value": "raw_fr_cookie",
-         "count": 2
-        },
-        {
-         "event": "InitiateCheckout",
-         "value": "email",
-         "count": 2
-        },
-        {
-         "event": "AddPaymentInfo",
-         "value": "fr_cookie",
-         "count": 1
-        },
-        {
-         "event": "AddPaymentInfo",
-         "value": "pdid",
-         "count": 1
-        },
-        {
-         "event": "AddPaymentInfo",
-         "value": "raw_fr_cookie",
-         "count": 1
-        },
-        {
-         "event": "AddPaymentInfo",
-         "value": "true_fr_cookie",
-         "count": 1
-        },
-        {
-         "event": "AddPaymentInfo",
-         "value": "email",
-         "count": 1
-        },
-        {
-         "event": "Lead",
-         "value": "true_fr_cookie",
-         "count": 1
-        },
-        {
-         "event": "Lead",
-         "value": "c_user_cookie",
-         "count": 1
-        },
-        {
-         "event": "Lead",
-         "value": "email",
-         "count": 1
-        },
-        {
-         "event": "Lead",
-         "value": "fr_cookie",
-         "count": 1
-        },
-        {
-         "event": "Lead",
-         "value": "pdid",
-         "count": 1
-        },
-        {
-         "event": "Lead",
-         "value": "raw_fr_cookie",
-         "count": 1
-        },
-        {
-         "event": "AddPaymentInfo",
-         "value": "c_user_cookie",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T16:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "PageView",
-         "value": "pdid",
-         "count": 6
-        },
-        {
-         "event": "PageView",
-         "value": "raw_fr_cookie",
-         "count": 5
-        },
-        {
-         "event": "PageView",
-         "value": "c_user_cookie",
-         "count": 1
-        },
-        {
-         "event": "PageView",
-         "value": "fr_cookie",
-         "count": 1
-        },
-        {
-         "event": "PageView",
-         "value": "true_fr_cookie",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T17:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "PageView",
-         "value": "pdid",
-         "count": 13
-        },
-        {
-         "event": "PageView",
-         "value": "raw_fr_cookie",
-         "count": 10
-        },
-        {
-         "event": "PageView",
-         "value": "fr_cookie",
-         "count": 8
-        },
-        {
-         "event": "PageView",
-         "value": "true_fr_cookie",
-         "count": 8
-        },
-        {
-         "event": "ViewContent",
-         "value": "pdid",
-         "count": 8
-        },
-        {
-         "event": "ViewContent",
-         "value": "raw_fr_cookie",
-         "count": 5
-        },
-        {
-         "event": "ViewContent",
-         "value": "fr_cookie",
-         "count": 3
-        },
-        {
-         "event": "ViewContent",
-         "value": "true_fr_cookie",
-         "count": 3
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T18:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "PageView",
-         "value": "pdid",
-         "count": 23
-        },
-        {
-         "event": "ViewContent",
-         "value": "pdid",
-         "count": 20
-        },
-        {
-         "event": "PageView",
-         "value": "raw_fr_cookie",
-         "count": 3
-        },
-        {
-         "event": "PageView",
-         "value": "c_user_cookie",
-         "count": 1
-        },
-        {
-         "event": "PageView",
-         "value": "fr_cookie",
-         "count": 1
-        },
-        {
-         "event": "PageView",
-         "value": "true_fr_cookie",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T19:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "PageView",
-         "value": "pdid",
-         "count": 3
-        },
-        {
-         "event": "ViewContent",
-         "value": "pdid",
-         "count": 2
-        },
-        {
-         "event": "PageView",
-         "value": "raw_fr_cookie",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T20:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "PageView",
-         "value": "pdid",
-         "count": 5
-        },
-        {
-         "event": "PageView",
-         "value": "fr_cookie",
-         "count": 3
-        },
-        {
-         "event": "PageView",
-         "value": "raw_fr_cookie",
-         "count": 3
-        },
-        {
-         "event": "PageView",
-         "value": "true_fr_cookie",
-         "count": 3
-        },
-        {
-         "event": "ViewContent",
-         "value": "pdid",
-         "count": 2
-        }
-       ]
-      },
       {
        "start_time": "2026-10-30T21:00:00+0000",
        "aggregation": "match_keys",
@@ -14299,276 +12989,6 @@
      "para_que": "reparto por dispositivo",
      "filas": [
       {
-       "start_time": "2026-10-29T13:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 14
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T14:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 7
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T15:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T16:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 12
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T17:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 5
-        },
-        {
-         "value": "mobile_iphone",
-         "count": 2
-        },
-        {
-         "value": "mobile_android_phone",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T18:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 9
-        },
-        {
-         "value": "mobile_android_phone",
-         "count": 4
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T19:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 6
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T20:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 18
-        },
-        {
-         "value": "mobile_android_phone",
-         "count": 3
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T21:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 6
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T22:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 3
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T23:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 4
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T00:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "mobile_android_phone",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T01:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 6
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T02:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 12
-        },
-        {
-         "value": "mobile_android_phone",
-         "count": 8
-        },
-        {
-         "value": "mobile_iphone",
-         "count": 6
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T03:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 4
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T07:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T13:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 24
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T14:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 22
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T16:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 6
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T17:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 15
-        },
-        {
-         "value": "mobile_android_phone",
-         "count": 4
-        },
-        {
-         "value": "mobile_iphone",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T18:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 31
-        },
-        {
-         "value": "mobile_android_phone",
-         "count": 12
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T19:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 3
-        },
-        {
-         "value": "mobile_android_phone",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T20:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 5
-        }
-       ]
-      },
-      {
        "start_time": "2026-10-30T21:00:00+0000",
        "aggregation": "device_type",
        "data": [
@@ -16247,320 +14667,6 @@
     "browser_type": {
      "para_que": "reparto por navegador",
      "filas": [
-      {
-       "start_time": "2026-10-29T13:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Chrome Desktop",
-         "count": 14
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T14:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Edge (Chromium Based)",
-         "count": 6
-        },
-        {
-         "value": "Chrome Desktop",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T15:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Firefox Desktop",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T16:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Chrome Desktop",
-         "count": 10
-        },
-        {
-         "value": "Safari",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T17:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Edge (Chromium Based)",
-         "count": 2
-        },
-        {
-         "value": "Firefox Desktop",
-         "count": 2
-        },
-        {
-         "value": "Mobile Safari",
-         "count": 2
-        },
-        {
-         "value": "Chrome Mobile",
-         "count": 1
-        },
-        {
-         "value": "Chrome Desktop",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T18:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Chrome Desktop",
-         "count": 9
-        },
-        {
-         "value": "Chrome Mobile",
-         "count": 4
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T19:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Edge (Chromium Based)",
-         "count": 4
-        },
-        {
-         "value": "Firefox Desktop",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T20:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Chrome Desktop",
-         "count": 14
-        },
-        {
-         "value": "Firefox Desktop",
-         "count": 4
-        },
-        {
-         "value": "Chrome Mobile",
-         "count": 3
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T21:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Chrome Desktop",
-         "count": 6
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T22:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Firefox Desktop",
-         "count": 2
-        },
-        {
-         "value": "Chrome Desktop",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T23:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Chrome Desktop",
-         "count": 4
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T00:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Chrome Mobile",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T01:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Chrome Desktop",
-         "count": 6
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T02:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Chrome Desktop",
-         "count": 12
-        },
-        {
-         "value": "Chrome Mobile",
-         "count": 8
-        },
-        {
-         "value": "Mobile Safari",
-         "count": 6
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T03:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Chrome Desktop",
-         "count": 4
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T07:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Chrome Desktop",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T13:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Chrome Desktop",
-         "count": 24
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T14:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Chrome Desktop",
-         "count": 22
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T16:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Firefox Desktop",
-         "count": 5
-        },
-        {
-         "value": "Chrome Desktop",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T17:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Chrome Desktop",
-         "count": 11
-        },
-        {
-         "value": "Chrome Mobile",
-         "count": 4
-        },
-        {
-         "value": "Edge (Chromium Based)",
-         "count": 2
-        },
-        {
-         "value": "Firefox Desktop",
-         "count": 2
-        },
-        {
-         "value": "Mobile Safari",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T18:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Chrome Desktop",
-         "count": 31
-        },
-        {
-         "value": "Chrome Mobile",
-         "count": 12
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T19:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Edge (Chromium Based)",
-         "count": 4
-        },
-        {
-         "value": "Chrome Desktop",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T20:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Edge (Chromium Based)",
-         "count": 5
-        },
-        {
-         "value": "Chrome Desktop",
-         "count": 2
-        }
-       ]
-      },
       {
        "start_time": "2026-10-30T21:00:00+0000",
        "aggregation": "browser_type",
@@ -18393,7 +16499,7 @@
     }
    },
    "eventos_servidor": 0,
-   "eventos_navegador": 1447,
+   "eventos_navegador": 1186,
    "capi_detectada": false,
    "nota_capi": "Cero eventos de servidor en la ventana. Si el pixel si dispara, la CAPI no esta desplegada — es el check M02, critico, y Meta cifra la perdida de datos sin el en 30-40%."
   },
@@ -18402,7 +16508,7 @@
     "id": "1753436978583321",
     "name": "� DG MODELING - INFLECT",
     "creation_time": "2025-05-06T21:18:17+0000",
-    "last_fired_time": "2026-11-25T23:58:06+0000",
+    "last_fired_time": "2026-11-26T23:53:01+0000",
     "data_use_setting": "advertising_and_analytics",
     "enable_automatic_matching": true,
     "first_party_cookie_status": "first_party_cookie_enabled",
@@ -18416,290 +16522,6 @@
     "event": {
      "para_que": "cuantos eventos de cada tipo llegaron",
      "filas": [
-      {
-       "start_time": "2026-10-29T13:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "CompleteRegistration",
-         "count": 2
-        },
-        {
-         "value": "PageView",
-         "count": 2
-        },
-        {
-         "value": "StartTrial",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T14:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "CompleteRegistration",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T16:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "CompleteRegistration",
-         "count": 2
-        },
-        {
-         "value": "Schedule",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T18:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "PageView",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T19:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "CompleteRegistration",
-         "count": 11
-        },
-        {
-         "value": "PageView",
-         "count": 3
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T20:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "PageView",
-         "count": 4
-        },
-        {
-         "value": "Purchase",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T21:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "CompleteRegistration",
-         "count": 3
-        },
-        {
-         "value": "StartTrial",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T23:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "Purchase",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T00:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "Purchase",
-         "count": 2
-        },
-        {
-         "value": "Schedule",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T02:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "CompleteRegistration",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T03:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "CompleteRegistration",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T06:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "CompleteRegistration",
-         "count": 3
-        },
-        {
-         "value": "PageView",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T09:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "CompleteRegistration",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T10:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "CompleteRegistration",
-         "count": 2
-        },
-        {
-         "value": "Lead",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T11:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "CompleteRegistration",
-         "count": 2
-        },
-        {
-         "value": "Lead",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T12:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "CompleteRegistration",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T13:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "CompleteRegistration",
-         "count": 6
-        },
-        {
-         "value": "Lead",
-         "count": 1
-        },
-        {
-         "value": "StartTrial",
-         "count": 1
-        },
-        {
-         "value": "PageView",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T14:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "CompleteRegistration",
-         "count": 6
-        },
-        {
-         "value": "Schedule",
-         "count": 6
-        },
-        {
-         "value": "Purchase",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T15:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "CompleteRegistration",
-         "count": 4
-        },
-        {
-         "value": "Schedule",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T16:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "CompleteRegistration",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T17:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "CompleteRegistration",
-         "count": 3
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T19:00:00+0000",
-       "aggregation": "event",
-       "data": [
-        {
-         "value": "CompleteRegistration",
-         "count": 2
-        }
-       ]
-      },
       {
        "start_time": "2026-10-30T21:00:00+0000",
        "aggregation": "event",
@@ -23129,252 +20951,174 @@
          "count": 1
         }
        ]
+      },
+      {
+       "start_time": "2026-11-25T00:00:00+0000",
+       "aggregation": "event",
+       "data": [
+        {
+         "value": "PageView",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T01:00:00+0000",
+       "aggregation": "event",
+       "data": [
+        {
+         "value": "PageView",
+         "count": 2
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T04:00:00+0000",
+       "aggregation": "event",
+       "data": [
+        {
+         "value": "PageView",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T11:00:00+0000",
+       "aggregation": "event",
+       "data": [
+        {
+         "value": "CompleteRegistration",
+         "count": 2
+        },
+        {
+         "value": "StartTrial",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T12:00:00+0000",
+       "aggregation": "event",
+       "data": [
+        {
+         "value": "Purchase",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T14:00:00+0000",
+       "aggregation": "event",
+       "data": [
+        {
+         "value": "CompleteRegistration",
+         "count": 1
+        },
+        {
+         "value": "StartTrial",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T15:00:00+0000",
+       "aggregation": "event",
+       "data": [
+        {
+         "value": "PageView",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T17:00:00+0000",
+       "aggregation": "event",
+       "data": [
+        {
+         "value": "PageView",
+         "count": 2
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T18:00:00+0000",
+       "aggregation": "event",
+       "data": [
+        {
+         "value": "CompleteRegistration",
+         "count": 2
+        },
+        {
+         "value": "PageView",
+         "count": 2
+        },
+        {
+         "value": "StartTrial",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T19:00:00+0000",
+       "aggregation": "event",
+       "data": [
+        {
+         "value": "CompleteRegistration",
+         "count": 4
+        },
+        {
+         "value": "Purchase",
+         "count": 2
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T20:00:00+0000",
+       "aggregation": "event",
+       "data": [
+        {
+         "value": "Schedule",
+         "count": 2
+        },
+        {
+         "value": "CompleteRegistration",
+         "count": 1
+        },
+        {
+         "value": "StartTrial",
+         "count": 1
+        },
+        {
+         "value": "Purchase",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T21:00:00+0000",
+       "aggregation": "event",
+       "data": [
+        {
+         "value": "PageView",
+         "count": 2
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T23:00:00+0000",
+       "aggregation": "event",
+       "data": [
+        {
+         "value": "PageView",
+         "count": 3
+        }
+       ]
       }
      ]
     },
     "event_source": {
      "para_que": "WEB_ONLY vs SERVER_ONLY — asi se detecta si la CAPI vive",
      "filas": [
-      {
-       "start_time": "2026-10-29T13:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "SERVER",
-         "count": 3
-        },
-        {
-         "value": "BROWSER",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T14:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "SERVER",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T16:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "SERVER",
-         "count": 3
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T18:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "BROWSER",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T19:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "SERVER",
-         "count": 8
-        },
-        {
-         "value": "BROWSER",
-         "count": 3
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T20:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "BROWSER",
-         "count": 4
-        },
-        {
-         "value": "SERVER",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T21:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "SERVER",
-         "count": 4
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T23:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "SERVER",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T00:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "SERVER",
-         "count": 3
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T02:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "SERVER",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T03:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "SERVER",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T06:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "SERVER",
-         "count": 3
-        },
-        {
-         "value": "BROWSER",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T09:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "SERVER",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T10:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "SERVER",
-         "count": 3
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T11:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "SERVER",
-         "count": 4
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T12:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "SERVER",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T13:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "SERVER",
-         "count": 8
-        },
-        {
-         "value": "BROWSER",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T14:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "SERVER",
-         "count": 14
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T15:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "SERVER",
-         "count": 5
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T16:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "SERVER",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T17:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "SERVER",
-         "count": 3
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T19:00:00+0000",
-       "aggregation": "event_source",
-       "data": [
-        {
-         "value": "SERVER",
-         "count": 2
-        }
-       ]
-      },
       {
        "start_time": "2026-10-30T21:00:00+0000",
        "aggregation": "event_source",
@@ -27218,1024 +24962,146 @@
          "count": 2
         }
        ]
+      },
+      {
+       "start_time": "2026-11-25T00:00:00+0000",
+       "aggregation": "event_source",
+       "data": [
+        {
+         "value": "BROWSER",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T01:00:00+0000",
+       "aggregation": "event_source",
+       "data": [
+        {
+         "value": "BROWSER",
+         "count": 2
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T04:00:00+0000",
+       "aggregation": "event_source",
+       "data": [
+        {
+         "value": "BROWSER",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T11:00:00+0000",
+       "aggregation": "event_source",
+       "data": [
+        {
+         "value": "SERVER",
+         "count": 3
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T12:00:00+0000",
+       "aggregation": "event_source",
+       "data": [
+        {
+         "value": "SERVER",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T14:00:00+0000",
+       "aggregation": "event_source",
+       "data": [
+        {
+         "value": "SERVER",
+         "count": 2
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T15:00:00+0000",
+       "aggregation": "event_source",
+       "data": [
+        {
+         "value": "BROWSER",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T17:00:00+0000",
+       "aggregation": "event_source",
+       "data": [
+        {
+         "value": "BROWSER",
+         "count": 2
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T18:00:00+0000",
+       "aggregation": "event_source",
+       "data": [
+        {
+         "value": "SERVER",
+         "count": 3
+        },
+        {
+         "value": "BROWSER",
+         "count": 2
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T19:00:00+0000",
+       "aggregation": "event_source",
+       "data": [
+        {
+         "value": "SERVER",
+         "count": 6
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T20:00:00+0000",
+       "aggregation": "event_source",
+       "data": [
+        {
+         "value": "SERVER",
+         "count": 5
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T21:00:00+0000",
+       "aggregation": "event_source",
+       "data": [
+        {
+         "value": "BROWSER",
+         "count": 2
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T23:00:00+0000",
+       "aggregation": "event_source",
+       "data": [
+        {
+         "value": "BROWSER",
+         "count": 3
+        }
+       ]
       }
      ]
     },
     "match_keys": {
      "para_que": "que parametros de emparejamiento se envian (insumo del EMQ)",
      "filas": [
-      {
-       "start_time": "2026-10-29T13:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "CompleteRegistration",
-         "value": "country",
-         "count": 2
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "email",
-         "count": 2
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "phone",
-         "count": 2
-        },
-        {
-         "event": "PageView",
-         "value": "pdid",
-         "count": 2
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "fn",
-         "count": 1
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "ln",
-         "count": 1
-        },
-        {
-         "event": "StartTrial",
-         "value": "country",
-         "count": 1
-        },
-        {
-         "event": "StartTrial",
-         "value": "email",
-         "count": 1
-        },
-        {
-         "event": "StartTrial",
-         "value": "fn",
-         "count": 1
-        },
-        {
-         "event": "StartTrial",
-         "value": "ln",
-         "count": 1
-        },
-        {
-         "event": "StartTrial",
-         "value": "phone",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T14:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "CompleteRegistration",
-         "value": "country",
-         "count": 2
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "email",
-         "count": 2
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "fn",
-         "count": 2
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "ln",
-         "count": 2
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "phone",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T16:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "CompleteRegistration",
-         "value": "country",
-         "count": 2
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "email",
-         "count": 2
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "phone",
-         "count": 2
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "fn",
-         "count": 1
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "ln",
-         "count": 1
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "pdid",
-         "count": 1
-        },
-        {
-         "event": "Schedule",
-         "value": "country",
-         "count": 1
-        },
-        {
-         "event": "Schedule",
-         "value": "email",
-         "count": 1
-        },
-        {
-         "event": "Schedule",
-         "value": "phone",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T18:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "PageView",
-         "value": "pdid",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T19:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "CompleteRegistration",
-         "value": "country",
-         "count": 11
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "fn",
-         "count": 10
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "phone",
-         "count": 10
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "ln",
-         "count": 6
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "email",
-         "count": 4
-        },
-        {
-         "event": "PageView",
-         "value": "pdid",
-         "count": 3
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T20:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "PageView",
-         "value": "c_user_cookie",
-         "count": 4
-        },
-        {
-         "event": "PageView",
-         "value": "fr_cookie",
-         "count": 4
-        },
-        {
-         "event": "PageView",
-         "value": "pdid",
-         "count": 4
-        },
-        {
-         "event": "PageView",
-         "value": "raw_fr_cookie",
-         "count": 4
-        },
-        {
-         "event": "PageView",
-         "value": "true_fr_cookie",
-         "count": 4
-        },
-        {
-         "event": "Purchase",
-         "value": "country",
-         "count": 1
-        },
-        {
-         "event": "Purchase",
-         "value": "email",
-         "count": 1
-        },
-        {
-         "event": "Purchase",
-         "value": "fn",
-         "count": 1
-        },
-        {
-         "event": "Purchase",
-         "value": "ln",
-         "count": 1
-        },
-        {
-         "event": "Purchase",
-         "value": "phone",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T21:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "CompleteRegistration",
-         "value": "country",
-         "count": 3
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "email",
-         "count": 3
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "phone",
-         "count": 3
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "fn",
-         "count": 2
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "ln",
-         "count": 2
-        },
-        {
-         "event": "StartTrial",
-         "value": "country",
-         "count": 1
-        },
-        {
-         "event": "StartTrial",
-         "value": "email",
-         "count": 1
-        },
-        {
-         "event": "StartTrial",
-         "value": "fn",
-         "count": 1
-        },
-        {
-         "event": "StartTrial",
-         "value": "ln",
-         "count": 1
-        },
-        {
-         "event": "StartTrial",
-         "value": "phone",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T23:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "Purchase",
-         "value": "country",
-         "count": 1
-        },
-        {
-         "event": "Purchase",
-         "value": "email",
-         "count": 1
-        },
-        {
-         "event": "Purchase",
-         "value": "fn",
-         "count": 1
-        },
-        {
-         "event": "Purchase",
-         "value": "ln",
-         "count": 1
-        },
-        {
-         "event": "Purchase",
-         "value": "phone",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T00:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "Purchase",
-         "value": "country",
-         "count": 2
-        },
-        {
-         "event": "Purchase",
-         "value": "email",
-         "count": 2
-        },
-        {
-         "event": "Purchase",
-         "value": "phone",
-         "count": 2
-        },
-        {
-         "event": "Schedule",
-         "value": "country",
-         "count": 1
-        },
-        {
-         "event": "Schedule",
-         "value": "fn",
-         "count": 1
-        },
-        {
-         "event": "Schedule",
-         "value": "ln",
-         "count": 1
-        },
-        {
-         "event": "Schedule",
-         "value": "phone",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T02:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "CompleteRegistration",
-         "value": "country",
-         "count": 1
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "email",
-         "count": 1
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "fn",
-         "count": 1
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "ln",
-         "count": 1
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "phone",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T03:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "CompleteRegistration",
-         "value": "country",
-         "count": 2
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "email",
-         "count": 2
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "phone",
-         "count": 2
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "fn",
-         "count": 1
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "ln",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T06:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "CompleteRegistration",
-         "value": "country",
-         "count": 3
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "email",
-         "count": 3
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "phone",
-         "count": 3
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "fn",
-         "count": 2
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "ln",
-         "count": 2
-        },
-        {
-         "event": "PageView",
-         "value": "pdid",
-         "count": 2
-        },
-        {
-         "event": "PageView",
-         "value": "raw_fr_cookie",
-         "count": 2
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "pdid",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T09:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "CompleteRegistration",
-         "value": "country",
-         "count": 1
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "email",
-         "count": 1
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "fn",
-         "count": 1
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "ln",
-         "count": 1
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "pdid",
-         "count": 1
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "phone",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T10:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "CompleteRegistration",
-         "value": "country",
-         "count": 2
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "email",
-         "count": 2
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "phone",
-         "count": 2
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "fn",
-         "count": 1
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "ln",
-         "count": 1
-        },
-        {
-         "event": "Lead",
-         "value": "country",
-         "count": 1
-        },
-        {
-         "event": "Lead",
-         "value": "email",
-         "count": 1
-        },
-        {
-         "event": "Lead",
-         "value": "fn",
-         "count": 1
-        },
-        {
-         "event": "Lead",
-         "value": "ln",
-         "count": 1
-        },
-        {
-         "event": "Lead",
-         "value": "phone",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T11:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "CompleteRegistration",
-         "value": "country",
-         "count": 2
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "email",
-         "count": 2
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "phone",
-         "count": 2
-        },
-        {
-         "event": "Lead",
-         "value": "country",
-         "count": 2
-        },
-        {
-         "event": "Lead",
-         "value": "email",
-         "count": 2
-        },
-        {
-         "event": "Lead",
-         "value": "fn",
-         "count": 2
-        },
-        {
-         "event": "Lead",
-         "value": "ln",
-         "count": 2
-        },
-        {
-         "event": "Lead",
-         "value": "phone",
-         "count": 2
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "fn",
-         "count": 1
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "ln",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T12:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "CompleteRegistration",
-         "value": "country",
-         "count": 1
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "email",
-         "count": 1
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "phone",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T13:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "CompleteRegistration",
-         "value": "country",
-         "count": 6
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "phone",
-         "count": 6
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "email",
-         "count": 6
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "fn",
-         "count": 4
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "ln",
-         "count": 4
-        },
-        {
-         "event": "StartTrial",
-         "value": "fn",
-         "count": 1
-        },
-        {
-         "event": "PageView",
-         "value": "raw_fr_cookie",
-         "count": 1
-        },
-        {
-         "event": "PageView",
-         "value": "pdid",
-         "count": 1
-        },
-        {
-         "event": "PageView",
-         "value": "fr_cookie",
-         "count": 1
-        },
-        {
-         "event": "PageView",
-         "value": "c_user_cookie",
-         "count": 1
-        },
-        {
-         "event": "StartTrial",
-         "value": "phone",
-         "count": 1
-        },
-        {
-         "event": "StartTrial",
-         "value": "ln",
-         "count": 1
-        },
-        {
-         "event": "Lead",
-         "value": "phone",
-         "count": 1
-        },
-        {
-         "event": "StartTrial",
-         "value": "email",
-         "count": 1
-        },
-        {
-         "event": "StartTrial",
-         "value": "country",
-         "count": 1
-        },
-        {
-         "event": "Lead",
-         "value": "ln",
-         "count": 1
-        },
-        {
-         "event": "Lead",
-         "value": "fn",
-         "count": 1
-        },
-        {
-         "event": "Lead",
-         "value": "email",
-         "count": 1
-        },
-        {
-         "event": "Lead",
-         "value": "country",
-         "count": 1
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "st",
-         "count": 1
-        },
-        {
-         "event": "PageView",
-         "value": "true_fr_cookie",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T14:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "CompleteRegistration",
-         "value": "country",
-         "count": 6
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "phone",
-         "count": 6
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "email",
-         "count": 5
-        },
-        {
-         "event": "Schedule",
-         "value": "country",
-         "count": 4
-        },
-        {
-         "event": "Schedule",
-         "value": "fn",
-         "count": 4
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "fn",
-         "count": 3
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "ln",
-         "count": 2
-        },
-        {
-         "event": "Schedule",
-         "value": "email",
-         "count": 2
-        },
-        {
-         "event": "Schedule",
-         "value": "ln",
-         "count": 2
-        },
-        {
-         "event": "Schedule",
-         "value": "phone",
-         "count": 2
-        },
-        {
-         "event": "Purchase",
-         "value": "country",
-         "count": 2
-        },
-        {
-         "event": "Purchase",
-         "value": "email",
-         "count": 2
-        },
-        {
-         "event": "Purchase",
-         "value": "phone",
-         "count": 2
-        },
-        {
-         "event": "Purchase",
-         "value": "fn",
-         "count": 1
-        },
-        {
-         "event": "Purchase",
-         "value": "ln",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T15:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "CompleteRegistration",
-         "value": "country",
-         "count": 4
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "email",
-         "count": 4
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "fn",
-         "count": 3
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "ln",
-         "count": 3
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "phone",
-         "count": 3
-        },
-        {
-         "event": "Schedule",
-         "value": "country",
-         "count": 3
-        },
-        {
-         "event": "Schedule",
-         "value": "email",
-         "count": 3
-        },
-        {
-         "event": "Schedule",
-         "value": "fn",
-         "count": 2
-        },
-        {
-         "event": "Schedule",
-         "value": "ln",
-         "count": 2
-        },
-        {
-         "event": "Schedule",
-         "value": "pdid",
-         "count": 2
-        },
-        {
-         "event": "Schedule",
-         "value": "phone",
-         "count": 2
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "st",
-         "count": 1
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "pdid",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T16:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "CompleteRegistration",
-         "value": "country",
-         "count": 2
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "email",
-         "count": 2
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "fn",
-         "count": 2
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "ln",
-         "count": 2
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "phone",
-         "count": 2
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "st",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T17:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "CompleteRegistration",
-         "value": "country",
-         "count": 3
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "email",
-         "count": 3
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "fn",
-         "count": 3
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "ln",
-         "count": 3
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "phone",
-         "count": 3
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T19:00:00+0000",
-       "aggregation": "match_keys",
-       "data": [
-        {
-         "event": "CompleteRegistration",
-         "value": "country",
-         "count": 2
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "fn",
-         "count": 2
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "ln",
-         "count": 2
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "phone",
-         "count": 2
-        },
-        {
-         "event": "CompleteRegistration",
-         "value": "email",
-         "count": 1
-        }
-       ]
-      },
       {
        "start_time": "2026-10-30T21:00:00+0000",
        "aggregation": "match_keys",
@@ -42296,280 +39162,495 @@
          "count": 1
         }
        ]
+      },
+      {
+       "start_time": "2026-11-25T00:00:00+0000",
+       "aggregation": "match_keys",
+       "data": [
+        {
+         "event": "PageView",
+         "value": "c_user_cookie",
+         "count": 1
+        },
+        {
+         "event": "PageView",
+         "value": "fr_cookie",
+         "count": 1
+        },
+        {
+         "event": "PageView",
+         "value": "pdid",
+         "count": 1
+        },
+        {
+         "event": "PageView",
+         "value": "raw_fr_cookie",
+         "count": 1
+        },
+        {
+         "event": "PageView",
+         "value": "true_fr_cookie",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T01:00:00+0000",
+       "aggregation": "match_keys",
+       "data": [
+        {
+         "event": "PageView",
+         "value": "pdid",
+         "count": 2
+        },
+        {
+         "event": "PageView",
+         "value": "c_user_cookie",
+         "count": 1
+        },
+        {
+         "event": "PageView",
+         "value": "fr_cookie",
+         "count": 1
+        },
+        {
+         "event": "PageView",
+         "value": "raw_fr_cookie",
+         "count": 1
+        },
+        {
+         "event": "PageView",
+         "value": "true_fr_cookie",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T04:00:00+0000",
+       "aggregation": "match_keys",
+       "data": [
+        {
+         "event": "PageView",
+         "value": "pdid",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T11:00:00+0000",
+       "aggregation": "match_keys",
+       "data": [
+        {
+         "event": "CompleteRegistration",
+         "value": "country",
+         "count": 2
+        },
+        {
+         "event": "CompleteRegistration",
+         "value": "email",
+         "count": 2
+        },
+        {
+         "event": "CompleteRegistration",
+         "value": "fn",
+         "count": 2
+        },
+        {
+         "event": "CompleteRegistration",
+         "value": "ln",
+         "count": 2
+        },
+        {
+         "event": "CompleteRegistration",
+         "value": "phone",
+         "count": 2
+        },
+        {
+         "event": "StartTrial",
+         "value": "country",
+         "count": 1
+        },
+        {
+         "event": "StartTrial",
+         "value": "email",
+         "count": 1
+        },
+        {
+         "event": "StartTrial",
+         "value": "fn",
+         "count": 1
+        },
+        {
+         "event": "StartTrial",
+         "value": "ln",
+         "count": 1
+        },
+        {
+         "event": "StartTrial",
+         "value": "phone",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T12:00:00+0000",
+       "aggregation": "match_keys",
+       "data": [
+        {
+         "event": "Purchase",
+         "value": "country",
+         "count": 1
+        },
+        {
+         "event": "Purchase",
+         "value": "email",
+         "count": 1
+        },
+        {
+         "event": "Purchase",
+         "value": "phone",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T14:00:00+0000",
+       "aggregation": "match_keys",
+       "data": [
+        {
+         "event": "CompleteRegistration",
+         "value": "country",
+         "count": 1
+        },
+        {
+         "event": "CompleteRegistration",
+         "value": "email",
+         "count": 1
+        },
+        {
+         "event": "CompleteRegistration",
+         "value": "fn",
+         "count": 1
+        },
+        {
+         "event": "CompleteRegistration",
+         "value": "ln",
+         "count": 1
+        },
+        {
+         "event": "CompleteRegistration",
+         "value": "phone",
+         "count": 1
+        },
+        {
+         "event": "StartTrial",
+         "value": "country",
+         "count": 1
+        },
+        {
+         "event": "StartTrial",
+         "value": "email",
+         "count": 1
+        },
+        {
+         "event": "StartTrial",
+         "value": "fn",
+         "count": 1
+        },
+        {
+         "event": "StartTrial",
+         "value": "ln",
+         "count": 1
+        },
+        {
+         "event": "StartTrial",
+         "value": "phone",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T15:00:00+0000",
+       "aggregation": "match_keys",
+       "data": [
+        {
+         "event": "PageView",
+         "value": "pdid",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T17:00:00+0000",
+       "aggregation": "match_keys",
+       "data": [
+        {
+         "event": "PageView",
+         "value": "c_user_cookie",
+         "count": 2
+        },
+        {
+         "event": "PageView",
+         "value": "fr_cookie",
+         "count": 2
+        },
+        {
+         "event": "PageView",
+         "value": "pdid",
+         "count": 2
+        },
+        {
+         "event": "PageView",
+         "value": "true_fr_cookie",
+         "count": 2
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T18:00:00+0000",
+       "aggregation": "match_keys",
+       "data": [
+        {
+         "event": "CompleteRegistration",
+         "value": "country",
+         "count": 2
+        },
+        {
+         "event": "CompleteRegistration",
+         "value": "email",
+         "count": 2
+        },
+        {
+         "event": "CompleteRegistration",
+         "value": "fn",
+         "count": 2
+        },
+        {
+         "event": "CompleteRegistration",
+         "value": "ln",
+         "count": 2
+        },
+        {
+         "event": "CompleteRegistration",
+         "value": "phone",
+         "count": 2
+        },
+        {
+         "event": "PageView",
+         "value": "pdid",
+         "count": 2
+        },
+        {
+         "event": "StartTrial",
+         "value": "country",
+         "count": 1
+        },
+        {
+         "event": "StartTrial",
+         "value": "email",
+         "count": 1
+        },
+        {
+         "event": "StartTrial",
+         "value": "fn",
+         "count": 1
+        },
+        {
+         "event": "StartTrial",
+         "value": "ln",
+         "count": 1
+        },
+        {
+         "event": "StartTrial",
+         "value": "phone",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T19:00:00+0000",
+       "aggregation": "match_keys",
+       "data": [
+        {
+         "event": "CompleteRegistration",
+         "value": "country",
+         "count": 4
+        },
+        {
+         "event": "CompleteRegistration",
+         "value": "phone",
+         "count": 4
+        },
+        {
+         "event": "CompleteRegistration",
+         "value": "fn",
+         "count": 2
+        },
+        {
+         "event": "CompleteRegistration",
+         "value": "ln",
+         "count": 2
+        },
+        {
+         "event": "Purchase",
+         "value": "country",
+         "count": 2
+        },
+        {
+         "event": "Purchase",
+         "value": "email",
+         "count": 2
+        },
+        {
+         "event": "Purchase",
+         "value": "phone",
+         "count": 2
+        },
+        {
+         "event": "CompleteRegistration",
+         "value": "email",
+         "count": 1
+        },
+        {
+         "event": "Purchase",
+         "value": "fn",
+         "count": 1
+        },
+        {
+         "event": "Purchase",
+         "value": "ln",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T20:00:00+0000",
+       "aggregation": "match_keys",
+       "data": [
+        {
+         "event": "Schedule",
+         "value": "phone",
+         "count": 2
+        },
+        {
+         "event": "Schedule",
+         "value": "country",
+         "count": 2
+        },
+        {
+         "event": "Schedule",
+         "value": "email",
+         "count": 2
+        },
+        {
+         "event": "CompleteRegistration",
+         "value": "country",
+         "count": 1
+        },
+        {
+         "event": "Purchase",
+         "value": "email",
+         "count": 1
+        },
+        {
+         "event": "Purchase",
+         "value": "country",
+         "count": 1
+        },
+        {
+         "event": "StartTrial",
+         "value": "phone",
+         "count": 1
+        },
+        {
+         "event": "StartTrial",
+         "value": "ln",
+         "count": 1
+        },
+        {
+         "event": "StartTrial",
+         "value": "fn",
+         "count": 1
+        },
+        {
+         "event": "StartTrial",
+         "value": "email",
+         "count": 1
+        },
+        {
+         "event": "Schedule",
+         "value": "st",
+         "count": 1
+        },
+        {
+         "event": "StartTrial",
+         "value": "country",
+         "count": 1
+        },
+        {
+         "event": "CompleteRegistration",
+         "value": "email",
+         "count": 1
+        },
+        {
+         "event": "Schedule",
+         "value": "ln",
+         "count": 1
+        },
+        {
+         "event": "Schedule",
+         "value": "fn",
+         "count": 1
+        },
+        {
+         "event": "CompleteRegistration",
+         "value": "phone",
+         "count": 1
+        },
+        {
+         "event": "CompleteRegistration",
+         "value": "ln",
+         "count": 1
+        },
+        {
+         "event": "CompleteRegistration",
+         "value": "fn",
+         "count": 1
+        },
+        {
+         "event": "Purchase",
+         "value": "phone",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T21:00:00+0000",
+       "aggregation": "match_keys",
+       "data": [
+        {
+         "event": "PageView",
+         "value": "pdid",
+         "count": 2
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T23:00:00+0000",
+       "aggregation": "match_keys",
+       "data": [
+        {
+         "event": "PageView",
+         "value": "pdid",
+         "count": 3
+        }
+       ]
       }
      ]
     },
     "device_type": {
      "para_que": "reparto por dispositivo",
      "filas": [
-      {
-       "start_time": "2026-10-29T13:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 3
-        },
-        {
-         "value": "mobile_android_phone",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T14:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "mobile_android_phone",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T16:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 2
-        },
-        {
-         "value": "mobile_iphone",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T18:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T19:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 8
-        },
-        {
-         "value": "mobile_iphone",
-         "count": 2
-        },
-        {
-         "value": "mobile_android_phone",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T20:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 5
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T21:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 4
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T23:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T00:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 3
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T02:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "mobile_android_phone",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T03:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T06:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 2
-        },
-        {
-         "value": "mobile_android_phone",
-         "count": 2
-        },
-        {
-         "value": "mobile_iphone",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T09:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "mobile_iphone",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T10:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 3
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T11:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 4
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T12:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T13:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 7
-        },
-        {
-         "value": "mobile_android_phone",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T14:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 9
-        },
-        {
-         "value": "mobile_android_phone",
-         "count": 3
-        },
-        {
-         "value": "mobile_iphone",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T15:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 2
-        },
-        {
-         "value": "mobile_android_phone",
-         "count": 2
-        },
-        {
-         "value": "mobile_iphone",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T16:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T17:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "mobile_android_phone",
-         "count": 3
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T19:00:00+0000",
-       "aggregation": "device_type",
-       "data": [
-        {
-         "value": "desktop",
-         "count": 1
-        },
-        {
-         "value": "mobile_android_phone",
-         "count": 1
-        }
-       ]
-      },
       {
        "start_time": "2026-10-30T21:00:00+0000",
        "aggregation": "device_type",
@@ -46577,312 +43658,154 @@
          "count": 2
         }
        ]
+      },
+      {
+       "start_time": "2026-11-25T00:00:00+0000",
+       "aggregation": "device_type",
+       "data": [
+        {
+         "value": "desktop",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T01:00:00+0000",
+       "aggregation": "device_type",
+       "data": [
+        {
+         "value": "desktop",
+         "count": 2
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T04:00:00+0000",
+       "aggregation": "device_type",
+       "data": [
+        {
+         "value": "desktop",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T11:00:00+0000",
+       "aggregation": "device_type",
+       "data": [
+        {
+         "value": "desktop",
+         "count": 3
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T12:00:00+0000",
+       "aggregation": "device_type",
+       "data": [
+        {
+         "value": "desktop",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T14:00:00+0000",
+       "aggregation": "device_type",
+       "data": [
+        {
+         "value": "desktop",
+         "count": 2
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T15:00:00+0000",
+       "aggregation": "device_type",
+       "data": [
+        {
+         "value": "desktop",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T17:00:00+0000",
+       "aggregation": "device_type",
+       "data": [
+        {
+         "value": "desktop",
+         "count": 2
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T18:00:00+0000",
+       "aggregation": "device_type",
+       "data": [
+        {
+         "value": "desktop",
+         "count": 5
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T19:00:00+0000",
+       "aggregation": "device_type",
+       "data": [
+        {
+         "value": "desktop",
+         "count": 6
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T20:00:00+0000",
+       "aggregation": "device_type",
+       "data": [
+        {
+         "value": "desktop",
+         "count": 2
+        },
+        {
+         "value": "mobile_android_phone",
+         "count": 2
+        },
+        {
+         "value": "mobile_iphone",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T21:00:00+0000",
+       "aggregation": "device_type",
+       "data": [
+        {
+         "value": "desktop",
+         "count": 1
+        },
+        {
+         "value": "mobile_iphone",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T23:00:00+0000",
+       "aggregation": "device_type",
+       "data": [
+        {
+         "value": "mobile_android_phone",
+         "count": 3
+        }
+       ]
       }
      ]
     },
     "browser_type": {
      "para_que": "reparto por navegador",
      "filas": [
-      {
-       "start_time": "2026-10-29T13:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Unknown",
-         "count": 3
-        },
-        {
-         "value": "Chrome Mobile",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T14:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Facebook for Android",
-         "count": 1
-        },
-        {
-         "value": "Instagram IAB for Android",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T16:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Unknown",
-         "count": 2
-        },
-        {
-         "value": "Facebook for iOS",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T18:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Chrome Desktop",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T19:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Unknown",
-         "count": 11
-        },
-        {
-         "value": "Instagram IAB for iOS",
-         "count": 2
-        },
-        {
-         "value": "Instagram IAB for Android",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T20:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Chrome Desktop",
-         "count": 4
-        },
-        {
-         "value": "Unknown",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T21:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Unknown",
-         "count": 3
-        },
-        {
-         "value": "Chrome Desktop",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-29T23:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Unknown",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T00:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Unknown",
-         "count": 3
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T02:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Facebook for Android",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T03:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Unknown",
-         "count": 2
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T06:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Facebook for Android",
-         "count": 2
-        },
-        {
-         "value": "Unknown",
-         "count": 2
-        },
-        {
-         "value": "Instagram IAB for iOS",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T09:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Instagram IAB for iOS",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T10:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Unknown",
-         "count": 3
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T11:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Unknown",
-         "count": 4
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T12:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Unknown",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T13:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Unknown",
-         "count": 6
-        },
-        {
-         "value": "Chrome Desktop",
-         "count": 1
-        },
-        {
-         "value": "Facebook for Android",
-         "count": 1
-        },
-        {
-         "value": "Instagram IAB for Android",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T14:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Unknown",
-         "count": 9
-        },
-        {
-         "value": "Instagram IAB for Android",
-         "count": 2
-        },
-        {
-         "value": "Mobile Safari",
-         "count": 2
-        },
-        {
-         "value": "Facebook for Android",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T15:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Facebook for Android",
-         "count": 2
-        },
-        {
-         "value": "Unknown",
-         "count": 2
-        },
-        {
-         "value": "Instagram IAB for iOS",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T16:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Edge (Chromium Based)",
-         "count": 1
-        },
-        {
-         "value": "Unknown",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T17:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Facebook for Android",
-         "count": 2
-        },
-        {
-         "value": "Instagram IAB for Android",
-         "count": 1
-        }
-       ]
-      },
-      {
-       "start_time": "2026-10-30T19:00:00+0000",
-       "aggregation": "browser_type",
-       "data": [
-        {
-         "value": "Facebook for Android",
-         "count": 1
-        },
-        {
-         "value": "Unknown",
-         "count": 1
-        }
-       ]
-      },
       {
        "start_time": "2026-10-30T21:00:00+0000",
        "aggregation": "browser_type",
@@ -51328,14 +48251,164 @@
          "count": 2
         }
        ]
+      },
+      {
+       "start_time": "2026-11-25T00:00:00+0000",
+       "aggregation": "browser_type",
+       "data": [
+        {
+         "value": "Chrome Desktop",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T01:00:00+0000",
+       "aggregation": "browser_type",
+       "data": [
+        {
+         "value": "Chrome Desktop",
+         "count": 1
+        },
+        {
+         "value": "Edge (Chromium Based)",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T04:00:00+0000",
+       "aggregation": "browser_type",
+       "data": [
+        {
+         "value": "Chrome Desktop",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T11:00:00+0000",
+       "aggregation": "browser_type",
+       "data": [
+        {
+         "value": "Unknown",
+         "count": 3
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T12:00:00+0000",
+       "aggregation": "browser_type",
+       "data": [
+        {
+         "value": "Unknown",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T14:00:00+0000",
+       "aggregation": "browser_type",
+       "data": [
+        {
+         "value": "Unknown",
+         "count": 2
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T15:00:00+0000",
+       "aggregation": "browser_type",
+       "data": [
+        {
+         "value": "Chrome Desktop",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T17:00:00+0000",
+       "aggregation": "browser_type",
+       "data": [
+        {
+         "value": "Chrome Desktop",
+         "count": 2
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T18:00:00+0000",
+       "aggregation": "browser_type",
+       "data": [
+        {
+         "value": "Unknown",
+         "count": 3
+        },
+        {
+         "value": "Chrome Desktop",
+         "count": 2
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T19:00:00+0000",
+       "aggregation": "browser_type",
+       "data": [
+        {
+         "value": "Unknown",
+         "count": 6
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T20:00:00+0000",
+       "aggregation": "browser_type",
+       "data": [
+        {
+         "value": "Facebook for Android",
+         "count": 2
+        },
+        {
+         "value": "Unknown",
+         "count": 2
+        },
+        {
+         "value": "Mobile Safari",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T21:00:00+0000",
+       "aggregation": "browser_type",
+       "data": [
+        {
+         "value": "Chrome Desktop",
+         "count": 1
+        },
+        {
+         "value": "Instagram IAB for iOS",
+         "count": 1
+        }
+       ]
+      },
+      {
+       "start_time": "2026-11-25T23:00:00+0000",
+       "aggregation": "browser_type",
+       "data": [
+        {
+         "value": "Samsung Browser",
+         "count": 3
+        }
+       ]
       }
      ]
     }
    },
-   "eventos_servidor": 703,
-   "eventos_navegador": 365,
+   "eventos_servidor": 649,
+   "eventos_navegador": 366,
    "capi_detectada": true,
-   "nota_capi": "Hay 703 eventos de SERVIDOR contra 365 de navegador: la Conversions API esta enviando."
+   "nota_capi": "Hay 649 eventos de SERVIDOR contra 366 de navegador: la Conversions API esta enviando."
   }
  ],
  "fallos": []
